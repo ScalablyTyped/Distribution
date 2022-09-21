@@ -12,7 +12,7 @@ object screenViewMod {
   
   @JSImport("playable/dist/src/modules/ui/screen/screen.view", JSImport.Default)
   @js.native
-  class default protected () extends ScreenView {
+  open class default protected () extends ScreenView {
     def this(config: IScreenViewConfig) = this()
   }
   
@@ -21,47 +21,47 @@ object screenViewMod {
     extends typings.playable.viewMod.default[IScreenViewStyles] {
     
     /* private */ @JSName("_$canvas")
-    var _$canvas: js.Any = js.native
+    var _$canvas: Any = js.native
     
     /* private */ @JSName("_$playbackElement")
-    var _$playbackElement: js.Any = js.native
+    var _$playbackElement: Any = js.native
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
-    /* private */ var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: Any = js.native
     
-    /* private */ var _clearBackground: js.Any = js.native
+    /* private */ var _clearBackground: Any = js.native
     
-    /* private */ var _currentMode: js.Any = js.native
+    /* private */ var _currentMode: Any = js.native
     
-    /* private */ var _drawAreaFromSource: js.Any = js.native
+    /* private */ var _drawAreaFromSource: Any = js.native
     
-    /* private */ var _drawBackground: js.Any = js.native
+    /* private */ var _drawBackground: Any = js.native
     
-    /* private */ var _getCanvasAreas: js.Any = js.native
+    /* private */ var _getCanvasAreas: Any = js.native
     
-    /* private */ var _getSourceAreas: js.Any = js.native
+    /* private */ var _getSourceAreas: Any = js.native
     
-    /* private */ var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: Any = js.native
     
-    /* private */ var _isHorizontalStripes: js.Any = js.native
+    /* private */ var _isHorizontalStripes: Any = js.native
     
-    /* private */ var _requestAnimationFrameID: js.Any = js.native
+    /* private */ var _requestAnimationFrameID: Any = js.native
     
-    /* private */ var _startUpdatingBackground: js.Any = js.native
+    /* private */ var _startUpdatingBackground: Any = js.native
     
-    /* private */ var _stopUpdatingBackground: js.Any = js.native
+    /* private */ var _stopUpdatingBackground: Any = js.native
     
-    /* private */ var _styleNamesByViewMode: js.Any = js.native
+    /* private */ var _styleNamesByViewMode: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
-    /* private */ var _updateBackground: js.Any = js.native
+    /* private */ var _updateBackground: Any = js.native
     
     def destroy(): Unit = js.native
     

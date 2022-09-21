@@ -15,6 +15,11 @@ trait CreateChannelModeratorRequest extends StObject {
     * The ARN of the moderator.
     */
   var ChannelModeratorArn: ChimeArn
+  
+  /**
+    * The AppInstanceUserArn of the user that makes the API call.
+    */
+  var ChimeBearer: js.UndefOr[ChimeArn] = js.undefined
 }
 object CreateChannelModeratorRequest {
   
@@ -28,5 +33,9 @@ object CreateChannelModeratorRequest {
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
     inline def setChannelModeratorArn(value: ChimeArn): Self = StObject.set(x, "ChannelModeratorArn", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearerUndefined: Self = StObject.set(x, "ChimeBearer", js.undefined)
   }
 }

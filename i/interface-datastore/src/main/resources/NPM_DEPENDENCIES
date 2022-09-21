@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "interface-datastore" : "7.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "interface-datastore" : "7.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

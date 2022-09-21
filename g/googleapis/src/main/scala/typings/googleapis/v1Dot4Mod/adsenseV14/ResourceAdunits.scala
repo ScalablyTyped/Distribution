@@ -4,32 +4,21 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Adunits")
 @js.native
-class ResourceAdunits protected () extends StObject {
+open class ResourceAdunits protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
   var customchannels: ResourceAdunitsCustomchannels = js.native
   
-  /**
-    * adsense.adunits.get
-    * @desc Gets the specified ad unit in the specified ad client.
-    * @alias adsense.adunits.get
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.adClientId Ad client for which to get the ad unit.
-    * @param {string} params.adUnitId Ad unit to retrieve.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def get(): GaxiosPromise[SchemaAdUnit] = js.native
   def get(callback: BodyResponseCallback[SchemaAdUnit]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAdUnit] = js.native
@@ -37,8 +26,8 @@ class ResourceAdunits protected () extends StObject {
   def get(params: ParamsResourceAdunitsGet, callback: BodyResponseCallback[SchemaAdUnit]): Unit = js.native
   def get(
     params: ParamsResourceAdunitsGet,
-    options: BodyResponseCallback[SchemaAdUnit],
-    callback: BodyResponseCallback[SchemaAdUnit]
+    options: BodyResponseCallback[Readable | SchemaAdUnit],
+    callback: BodyResponseCallback[Readable | SchemaAdUnit]
   ): Unit = js.native
   def get(params: ParamsResourceAdunitsGet, options: MethodOptions): GaxiosPromise[SchemaAdUnit] = js.native
   def get(
@@ -46,20 +35,77 @@ class ResourceAdunits protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdUnit]
   ): Unit = js.native
-  
   /**
-    * adsense.adunits.getAdCode
-    * @desc Get ad code for the specified ad unit.
-    * @alias adsense.adunits.getAdCode
-    * @memberOf! ()
+    * Gets the specified ad unit in the specified ad client.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/adsense.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.adClientId Ad client with contains the ad unit.
-    * @param {string} params.adUnitId Ad unit to get the code for.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const adsense = google.adsense('v1.4');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/adsense',
+    *       'https://www.googleapis.com/auth/adsense.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await adsense.adunits.get({
+    *     // Ad client for which to get the ad unit.
+    *     adClientId: 'placeholder-value',
+    *     // Ad unit to retrieve.
+    *     adUnitId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "code": "my_code",
+    *   //   "contentAdsSettings": {},
+    *   //   "customStyle": {},
+    *   //   "feedAdsSettings": {},
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "mobileContentAdsSettings": {},
+    *   //   "name": "my_name",
+    *   //   "savedStyleId": "my_savedStyleId",
+    *   //   "status": "my_status"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceAdunitsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceAdunitsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def getAdCode(): GaxiosPromise[SchemaAdCode] = js.native
   def getAdCode(callback: BodyResponseCallback[SchemaAdCode]): Unit = js.native
   def getAdCode(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAdCode] = js.native
@@ -67,8 +113,8 @@ class ResourceAdunits protected () extends StObject {
   def getAdCode(params: ParamsResourceAdunitsGetadcode, callback: BodyResponseCallback[SchemaAdCode]): Unit = js.native
   def getAdCode(
     params: ParamsResourceAdunitsGetadcode,
-    options: BodyResponseCallback[SchemaAdCode],
-    callback: BodyResponseCallback[SchemaAdCode]
+    options: BodyResponseCallback[Readable | SchemaAdCode],
+    callback: BodyResponseCallback[Readable | SchemaAdCode]
   ): Unit = js.native
   def getAdCode(params: ParamsResourceAdunitsGetadcode, options: MethodOptions): GaxiosPromise[SchemaAdCode] = js.native
   def getAdCode(
@@ -76,23 +122,71 @@ class ResourceAdunits protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdCode]
   ): Unit = js.native
-  
   /**
-    * adsense.adunits.list
-    * @desc List all ad units in the specified ad client for this AdSense
-    * account.
-    * @alias adsense.adunits.list
-    * @memberOf! ()
+    * Get ad code for the specified ad unit.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/adsense.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.adClientId Ad client for which to list ad units.
-    * @param {boolean=} params.includeInactive Whether to include inactive ad units. Default: true.
-    * @param {integer=} params.maxResults The maximum number of ad units to include in the response, used for paging.
-    * @param {string=} params.pageToken A continuation token, used to page through ad units. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous response.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const adsense = google.adsense('v1.4');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/adsense',
+    *       'https://www.googleapis.com/auth/adsense.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await adsense.adunits.getAdCode({
+    *     // Ad client with contains the ad unit.
+    *     adClientId: 'placeholder-value',
+    *     // Ad unit to get the code for.
+    *     adUnitId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "adCode": "my_adCode",
+    *   //   "ampBody": "my_ampBody",
+    *   //   "ampHead": "my_ampHead",
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def getAdCode(params: ParamsResourceAdunitsGetadcode, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getAdCode(
+    params: ParamsResourceAdunitsGetadcode,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaAdUnits] = js.native
   def list(callback: BodyResponseCallback[SchemaAdUnits]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAdUnits] = js.native
@@ -100,13 +194,81 @@ class ResourceAdunits protected () extends StObject {
   def list(params: ParamsResourceAdunitsList, callback: BodyResponseCallback[SchemaAdUnits]): Unit = js.native
   def list(
     params: ParamsResourceAdunitsList,
-    options: BodyResponseCallback[SchemaAdUnits],
-    callback: BodyResponseCallback[SchemaAdUnits]
+    options: BodyResponseCallback[Readable | SchemaAdUnits],
+    callback: BodyResponseCallback[Readable | SchemaAdUnits]
   ): Unit = js.native
   def list(params: ParamsResourceAdunitsList, options: MethodOptions): GaxiosPromise[SchemaAdUnits] = js.native
   def list(
     params: ParamsResourceAdunitsList,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAdUnits]
+  ): Unit = js.native
+  /**
+    * List all ad units in the specified ad client for this AdSense account.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/adsense.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const adsense = google.adsense('v1.4');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/adsense',
+    *       'https://www.googleapis.com/auth/adsense.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await adsense.adunits.list({
+    *     // Ad client for which to list ad units.
+    *     adClientId: 'placeholder-value',
+    *     // Whether to include inactive ad units. Default: true.
+    *     includeInactive: 'placeholder-value',
+    *     // The maximum number of ad units to include in the response, used for paging.
+    *     maxResults: 'placeholder-value',
+    *     // A continuation token, used to page through ad units. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous response.
+    *     pageToken: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "items": [],
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceAdunitsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceAdunitsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

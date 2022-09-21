@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TrailInfo extends StObject {
   
   /**
-    * The AWS region in which a trail was created.
+    * The Amazon Web Services Region in which a trail was created.
     */
   var HomeRegion: js.UndefOr[String] = js.undefined
   

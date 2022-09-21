@@ -12,6 +12,11 @@ trait ListChannelMessagesRequest extends StObject {
   var ChannelArn: ChimeArn
   
   /**
+    * The AppInstanceUserArn of the user that makes the API call.
+    */
+  var ChimeBearer: js.UndefOr[ChimeArn] = js.undefined
+  
+  /**
     * The maximum number of messages that you want returned.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.chimeMod.MaxResults] = js.undefined
@@ -24,12 +29,12 @@ trait ListChannelMessagesRequest extends StObject {
   /**
     * The final or ending time stamp for your requested messages.
     */
-  var NotAfter: js.UndefOr[Timestamp] = js.undefined
+  var NotAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The initial or starting time stamp for your requested messages. 
+    * The initial or starting time stamp for your requested messages.
     */
-  var NotBefore: js.UndefOr[Timestamp] = js.undefined
+  var NotBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The order in which you want messages sorted. Default is Descending, based on time created.
@@ -47,6 +52,10 @@ object ListChannelMessagesRequest {
     
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
+    inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearerUndefined: Self = StObject.set(x, "ChimeBearer", js.undefined)
+    
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
@@ -55,11 +64,11 @@ object ListChannelMessagesRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setNotAfter(value: Timestamp): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
+    inline def setNotAfter(value: js.Date): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
     
     inline def setNotAfterUndefined: Self = StObject.set(x, "NotAfter", js.undefined)
     
-    inline def setNotBefore(value: Timestamp): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
+    inline def setNotBefore(value: js.Date): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
     
     inline def setNotBeforeUndefined: Self = StObject.set(x, "NotBefore", js.undefined)
     

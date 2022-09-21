@@ -15,6 +15,11 @@ trait SourceFieldProperties extends StObject {
     *  Indicates whether the field can be returned in a search result. 
     */
   var isRetrievable: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates if this timestamp field can be used for incremental queries.
+    */
+  var isTimestampFieldForIncrementalQueries: js.UndefOr[Boolean] = js.undefined
 }
 object SourceFieldProperties {
   
@@ -32,5 +37,9 @@ object SourceFieldProperties {
     inline def setIsRetrievable(value: Boolean): Self = StObject.set(x, "isRetrievable", value.asInstanceOf[js.Any])
     
     inline def setIsRetrievableUndefined: Self = StObject.set(x, "isRetrievable", js.undefined)
+    
+    inline def setIsTimestampFieldForIncrementalQueries(value: Boolean): Self = StObject.set(x, "isTimestampFieldForIncrementalQueries", value.asInstanceOf[js.Any])
+    
+    inline def setIsTimestampFieldForIncrementalQueriesUndefined: Self = StObject.set(x, "isTimestampFieldForIncrementalQueries", js.undefined)
   }
 }

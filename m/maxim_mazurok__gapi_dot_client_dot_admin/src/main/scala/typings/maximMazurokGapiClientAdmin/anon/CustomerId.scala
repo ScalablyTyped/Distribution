@@ -12,10 +12,10 @@ trait CustomerId extends StObject {
   /** Output only. Object key. Only relevant if entity.type = "OBJECT" Note: external-facing name of report is "Entities" rather than "Objects". */
   var entityId: js.UndefOr[String] = js.undefined
   
-  /** Output only. The user's immutable G Suite profile identifier. */
+  /** Output only. The user's immutable Google Workspace profile identifier. */
   var profileId: js.UndefOr[String] = js.undefined
   
-  /** Output only. The type of item. The value is customer. */
+  /** Output only. The type of item. The value is `user`. */
   var `type`: js.UndefOr[String] = js.undefined
   
   /** Output only. The user's email address. Only relevant if entity.type = "USER" */

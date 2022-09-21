@@ -16,36 +16,36 @@ object parserMod {
   
   @JSImport("antlr4/Parser", "Parser")
   @js.native
-  class Parser protected () extends Recognizer {
+  open class Parser protected () extends Recognizer {
     def this(input: CommonTokenStream) = this()
     
     var _errHandler: ErrorStrategy = js.native
     
-    def addContextToParseTree(): js.Any = js.native
+    def addContextToParseTree(): Any = js.native
     
     def addParseListener(lister: ParseTreeListener): Unit = js.native
     
     var buildParseTrees: Boolean = js.native
     
-    def compileParseTreePattern(pattern: js.Any, patternRuleIndex: js.Any, lexer: Lexer): js.Any = js.native
+    def compileParseTreePattern(pattern: Any, patternRuleIndex: Any, lexer: Lexer): Any = js.native
     
-    def consume(): js.Any = js.native
+    def consume(): Any = js.native
     
     def dumpDFA(): Unit = js.native
     
     def enterOuterAlt(): Unit = js.native
     
-    def enterRecursionRule(localCtx: ParserRuleContext, state: js.Any, ruleIndex: js.Any, precedence: js.Any): Unit = js.native
+    def enterRecursionRule(localCtx: ParserRuleContext, state: Any, ruleIndex: Any, precedence: Any): Unit = js.native
     
-    def enterRule(localCtx: ParserRuleContext, state: js.Any, ruleIndex: Double): Unit = js.native
+    def enterRule(localCtx: ParserRuleContext, state: Any, ruleIndex: Double): Unit = js.native
     
     def exitRule(): Unit = js.native
     
-    def getATNWithBypassAlts(): js.Any = js.native
+    def getATNWithBypassAlts(): Any = js.native
     
     def getCurrentToken(): Token = js.native
     
-    def getDFAStrings(): js.Any = js.native
+    def getDFAStrings(): Any = js.native
     
     def getExpectedTokens(): js.Array[Token] = js.native
     
@@ -53,21 +53,21 @@ object parserMod {
     
     def getInputStream(): InputStream = js.native
     
-    def getInvokingContext(ruleIndex: Double): js.Any = js.native
+    def getInvokingContext(ruleIndex: Double): Any = js.native
     
     def getParseListeners(): js.Array[ParseTreeListener] = js.native
     
-    def getPrecedence(): js.Any = js.native
+    def getPrecedence(): Any = js.native
     
     def getRuleIndex(ruleName: String): Double = js.native
     
-    def getRuleInvocationStack(p: js.Any): js.Any = js.native
+    def getRuleInvocationStack(p: Any): Any = js.native
     
-    def getSourceName(): js.Any = js.native
+    def getSourceName(): Any = js.native
     
-    def getTokenFactory(): js.Any = js.native
+    def getTokenFactory(): Any = js.native
     
-    def getTokenStream(): js.Any = js.native
+    def getTokenStream(): Any = js.native
     
     def isExpectedToken(symbol: Token): Boolean = js.native
     
@@ -75,9 +75,9 @@ object parserMod {
     
     def matchWildcard(): Token = js.native
     
-    def notifyErrorListeners(msg: String, offendingToken: Token, err: js.Any): Unit = js.native
+    def notifyErrorListeners(msg: String, offendingToken: Token, err: Any): Unit = js.native
     
-    def pushNewRecursionContext(localCtx: ParserRuleContext, state: js.Any, ruleIndex: js.Any, precedence: js.Any): Unit = js.native
+    def pushNewRecursionContext(localCtx: ParserRuleContext, state: Any, ruleIndex: Any, precedence: Any): Unit = js.native
     
     def removeParseListener(lister: ParseTreeListener): Unit = js.native
     
@@ -85,9 +85,9 @@ object parserMod {
     
     def reset(): Unit = js.native
     
-    def setTokenFactory(factory: js.Any): Unit = js.native
+    def setTokenFactory(factory: Any): Unit = js.native
     
-    def setTokenStream(stream: js.Any): js.Any = js.native
+    def setTokenStream(stream: Any): Any = js.native
     
     def setTrace(trace: Boolean): Unit = js.native
     

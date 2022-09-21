@@ -52,7 +52,7 @@ object typesListKeyPoliciesOutputMod {
       
       inline def setPolicyNamesUndefined: Self = StObject.set(x, "PolicyNames", js.undefined)
       
-      inline def setPolicyNamesVarargs(value: String*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
+      inline def setPolicyNamesVarargs(value: String*): Self = StObject.set(x, "PolicyNames", js.Array(value*))
       
       inline def setTruncated(value: Boolean): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
       

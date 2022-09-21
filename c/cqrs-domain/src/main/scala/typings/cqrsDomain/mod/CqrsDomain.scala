@@ -1,6 +1,5 @@
 package typings.cqrsDomain.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ trait CqrsDomain extends StObject {
     * @param err The error that occurs.
     * @returns The resulting event.
     */
-  def createCommandRejectedEvent(cmd: js.Any, err: Error): js.Any = js.native
+  def createCommandRejectedEvent(cmd: Any, err: js.Error): Any = js.native
   
   /**
     * Inject definition for command structure.
@@ -41,7 +40,7 @@ trait CqrsDomain extends StObject {
   /**
     * Returns the domain information.
     */
-  def getInfo(): js.Any = js.native
+  def getInfo(): Any = js.native
   
   /**
     * Call this function to let the domain handle it.
@@ -49,14 +48,14 @@ trait CqrsDomain extends StObject {
     * @param callback the function that will be called when this action has finished [optional]
     *                            `function(err, evts, aggregateData, meta){}` evts is of type Array, aggregateData and meta are an object
     */
-  def handle(cmd: js.Any): Unit = js.native
-  def handle(cmd: js.Any, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def handle(cmd: Any): Unit = js.native
+  def handle(cmd: Any, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   def handle(
-    cmd: js.Any,
+    cmd: Any,
     cb: js.Function4[
-      /* err */ Error, 
-      /* events */ js.Array[js.Any], 
-      /* aggregateData */ js.Any, 
+      /* err */ js.Error, 
+      /* events */ js.Array[Any], 
+      /* aggregateData */ Any, 
       /* metaInfos */ HandleMetaInfos, 
       Unit
     ]
@@ -75,7 +74,7 @@ trait CqrsDomain extends StObject {
     * @param callback the function that will be called when this action has finished [optional]
     *                            `function(err, warnings){}`
     */
-  def init(cb: js.Function2[/* err */ Error, /* warnings */ js.Array[Error], Unit]): Unit = js.native
+  def init(cb: js.Function2[/* err */ js.Error, /* warnings */ js.Array[js.Error], Unit]): Unit = js.native
   
   /**
     * Is called when dispatched a command.
@@ -88,16 +87,16 @@ trait CqrsDomain extends StObject {
     *                                    `function(err, evts, aggregateData, meta){}` evts is of type Array, aggregateData and meta are an object
     */
   def onDispatched(
-    cmd: js.Any,
-    err: Error,
-    eventsToDispatch: js.Array[js.Any],
-    aggregateData: js.Any,
-    meta: js.Any,
+    cmd: Any,
+    err: js.Error,
+    eventsToDispatch: js.Array[Any],
+    aggregateData: Any,
+    meta: Any,
     callback: js.Function4[
-      /* err */ Error, 
-      /* evts */ js.Array[js.Any], 
-      /* aggregateData */ js.Any, 
-      /* meta */ js.Any, 
+      /* err */ js.Error, 
+      /* evts */ js.Array[Any], 
+      /* aggregateData */ Any, 
+      /* meta */ Any, 
       Unit
     ]
   ): Unit = js.native
@@ -107,6 +106,6 @@ trait CqrsDomain extends StObject {
     * @param fn the function to be injected
     * @returns to be able to chain...
     */
-  def onEvent(cb: js.Function1[/* evt */ js.Any, Unit]): CqrsDomain = js.native
-  def onEvent(cb: js.Function2[/* evt */ js.Any, /* callback */ js.Function0[Unit], Unit]): CqrsDomain = js.native
+  def onEvent(cb: js.Function1[/* evt */ Any, Unit]): CqrsDomain = js.native
+  def onEvent(cb: js.Function2[/* evt */ Any, /* callback */ js.Function0[Unit], Unit]): CqrsDomain = js.native
 }

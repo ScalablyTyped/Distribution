@@ -9,6 +9,7 @@ trait AuditConfig extends StObject {
   /** The configuration for logging of each type of permission. */
   var auditLogConfigs: js.UndefOr[js.Array[AuditLogConfig]] = js.undefined
   
+  /** This is deprecated and has no effect. Do not use. */
   var exemptedMembers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
@@ -30,13 +31,13 @@ object AuditConfig {
     
     inline def setAuditLogConfigsUndefined: Self = StObject.set(x, "auditLogConfigs", js.undefined)
     
-    inline def setAuditLogConfigsVarargs(value: AuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value :_*))
+    inline def setAuditLogConfigsVarargs(value: AuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value*))
     
     inline def setExemptedMembers(value: js.Array[String]): Self = StObject.set(x, "exemptedMembers", value.asInstanceOf[js.Any])
     
     inline def setExemptedMembersUndefined: Self = StObject.set(x, "exemptedMembers", js.undefined)
     
-    inline def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value :_*))
+    inline def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value*))
     
     inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     

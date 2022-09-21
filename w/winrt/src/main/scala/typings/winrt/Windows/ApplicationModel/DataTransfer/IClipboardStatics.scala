@@ -12,7 +12,7 @@ trait IClipboardStatics extends StObject {
   
   def getContent(): DataPackageView
   
-  var oncontentchanged: js.Any
+  var oncontentchanged: Any
   
   def setContent(content: DataPackage): Unit
 }
@@ -22,7 +22,7 @@ object IClipboardStatics {
     clear: () => Unit,
     flush: () => Unit,
     getContent: () => DataPackageView,
-    oncontentchanged: js.Any,
+    oncontentchanged: Any,
     setContent: DataPackage => Unit
   ): IClipboardStatics = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), flush = js.Any.fromFunction0(flush), getContent = js.Any.fromFunction0(getContent), oncontentchanged = oncontentchanged.asInstanceOf[js.Any], setContent = js.Any.fromFunction1(setContent))
@@ -37,7 +37,7 @@ object IClipboardStatics {
     
     inline def setGetContent(value: () => DataPackageView): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
-    inline def setOncontentchanged(value: js.Any): Self = StObject.set(x, "oncontentchanged", value.asInstanceOf[js.Any])
+    inline def setOncontentchanged(value: Any): Self = StObject.set(x, "oncontentchanged", value.asInstanceOf[js.Any])
     
     inline def setSetContent(value: DataPackage => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
   }

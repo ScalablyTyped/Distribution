@@ -38,7 +38,7 @@ object ListObjectParentsResponse {
     
     inline def setParentLinksUndefined: Self = StObject.set(x, "ParentLinks", js.undefined)
     
-    inline def setParentLinksVarargs(value: ObjectIdentifierAndLinkNameTuple*): Self = StObject.set(x, "ParentLinks", js.Array(value :_*))
+    inline def setParentLinksVarargs(value: ObjectIdentifierAndLinkNameTuple*): Self = StObject.set(x, "ParentLinks", js.Array(value*))
     
     inline def setParents(value: ObjectIdentifierToLinkNameMap): Self = StObject.set(x, "Parents", value.asInstanceOf[js.Any])
     

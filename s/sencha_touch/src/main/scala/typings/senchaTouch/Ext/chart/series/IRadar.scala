@@ -14,7 +14,7 @@ trait IRadar
     * @returns Object An object describing the item, or null if there is no matching item. The exact contents of this object will vary by series type, but should always contain at least the following:
     */
   @JSName("getItemForPoint")
-  var getItemForPoint_IRadar: js.UndefOr[js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getItemForPoint_IRadar: js.UndefOr[js.Function2[/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Any], Any]] = js.undefined
 }
 object IRadar {
   
@@ -25,7 +25,7 @@ object IRadar {
   
   extension [Self <: IRadar](x: Self) {
     
-    inline def setGetItemForPoint(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
+    inline def setGetItemForPoint(value: (/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
     
     inline def setGetItemForPointUndefined: Self = StObject.set(x, "getItemForPoint", js.undefined)
   }

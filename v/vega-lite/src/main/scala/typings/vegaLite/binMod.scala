@@ -1,7 +1,7 @@
 package typings.vegaLite
 
 import typings.vegaLite.channelMod.ExtendedChannel
-import typings.vegaLite.srcSelectionMod.SelectionExtent
+import typings.vegaLite.srcSelectionMod.ParameterExtent
 import typings.vegaLite.vegaLiteBooleans.`true`
 import typings.vegaLite.vegaLiteStrings.binned
 import org.scalablytyped.runtime.StObject
@@ -36,7 +36,7 @@ object binMod {
   
   inline def isBinning_binned(bin: binned): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinning")(bin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isSelectionExtent(extent: BinExtent): /* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectionExtent")(extent.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean]
+  inline def isParameterExtent(extent: BinExtent): /* is vega-lite.vega-lite/build/src/selection.ParameterExtent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParameterExtent")(extent.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.ParameterExtent */ Boolean]
   
   trait BaseBin extends StObject {
     
@@ -139,7 +139,7 @@ object binMod {
       
       inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
       
-      inline def setStepsVarargs(value: Double*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: Double*): Self = StObject.set(x, "steps", js.Array(value*))
     }
   }
   
@@ -151,7 +151,7 @@ object binMod {
   */
   type Bin = _Bin | Boolean | Null
   
-  type BinExtent = (js.Tuple2[Double, Double]) | SelectionExtent
+  type BinExtent = (js.Tuple2[Double, Double]) | ParameterExtent
   
   trait BinParams
     extends StObject

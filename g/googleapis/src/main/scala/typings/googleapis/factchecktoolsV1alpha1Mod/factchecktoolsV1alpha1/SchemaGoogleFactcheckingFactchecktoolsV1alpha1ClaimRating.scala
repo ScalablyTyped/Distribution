@@ -4,41 +4,37 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about the claim rating.
-  */
 trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating extends StObject {
   
   /**
-    * For numeric ratings, the best value possible in the scale from worst to
-    * best.&lt;br&gt; Corresponds to `ClaimReview.reviewRating.bestRating`.
+    * For numeric ratings, the best value possible in the scale from worst to best. Corresponds to `ClaimReview.reviewRating.bestRating`.
     */
-  var bestRating: js.UndefOr[Double] = js.undefined
+  var bestRating: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Corresponds to `ClaimReview.reviewRating.image`.
     */
-  var imageUrl: js.UndefOr[String] = js.undefined
+  var imageUrl: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A numeric rating of this claim, in the range worstRating — bestRating
-    * inclusive.&lt;br&gt; Corresponds to
-    * `ClaimReview.reviewRating.ratingValue`.
+    * Corresponds to `ClaimReview.reviewRating.ratingExplanation`.
     */
-  var ratingValue: js.UndefOr[Double] = js.undefined
+  var ratingExplanation: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The truthfulness rating as a human-readible short word or
-    * phrase.&lt;br&gt; Corresponds to
-    * `ClaimReview.reviewRating.alternateName`.
+    * A numeric rating of this claim, in the range worstRating — bestRating inclusive. Corresponds to `ClaimReview.reviewRating.ratingValue`.
     */
-  var textualRating: js.UndefOr[String] = js.undefined
+  var ratingValue: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * For numeric ratings, the worst value possible in the scale from worst to
-    * best.&lt;br&gt; Corresponds to `ClaimReview.reviewRating.worstRating`.
+    * The truthfulness rating as a human-readible short word or phrase. Corresponds to `ClaimReview.reviewRating.alternateName`.
     */
-  var worstRating: js.UndefOr[Double] = js.undefined
+  var textualRating: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * For numeric ratings, the worst value possible in the scale from worst to best. Corresponds to `ClaimReview.reviewRating.worstRating`.
+    */
+  var worstRating: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating {
   
@@ -51,21 +47,37 @@ object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating {
     
     inline def setBestRating(value: Double): Self = StObject.set(x, "bestRating", value.asInstanceOf[js.Any])
     
+    inline def setBestRatingNull: Self = StObject.set(x, "bestRating", null)
+    
     inline def setBestRatingUndefined: Self = StObject.set(x, "bestRating", js.undefined)
     
     inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
+    inline def setImageUrlNull: Self = StObject.set(x, "imageUrl", null)
+    
     inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
+    inline def setRatingExplanation(value: String): Self = StObject.set(x, "ratingExplanation", value.asInstanceOf[js.Any])
+    
+    inline def setRatingExplanationNull: Self = StObject.set(x, "ratingExplanation", null)
+    
+    inline def setRatingExplanationUndefined: Self = StObject.set(x, "ratingExplanation", js.undefined)
+    
     inline def setRatingValue(value: Double): Self = StObject.set(x, "ratingValue", value.asInstanceOf[js.Any])
+    
+    inline def setRatingValueNull: Self = StObject.set(x, "ratingValue", null)
     
     inline def setRatingValueUndefined: Self = StObject.set(x, "ratingValue", js.undefined)
     
     inline def setTextualRating(value: String): Self = StObject.set(x, "textualRating", value.asInstanceOf[js.Any])
     
+    inline def setTextualRatingNull: Self = StObject.set(x, "textualRating", null)
+    
     inline def setTextualRatingUndefined: Self = StObject.set(x, "textualRating", js.undefined)
     
     inline def setWorstRating(value: Double): Self = StObject.set(x, "worstRating", value.asInstanceOf[js.Any])
+    
+    inline def setWorstRatingNull: Self = StObject.set(x, "worstRating", null)
     
     inline def setWorstRatingUndefined: Self = StObject.set(x, "worstRating", js.undefined)
   }

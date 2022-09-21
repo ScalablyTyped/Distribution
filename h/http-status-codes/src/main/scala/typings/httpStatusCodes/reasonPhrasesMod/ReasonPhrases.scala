@@ -235,6 +235,17 @@ object ReasonPhrases extends StObject {
   /* "Method Not Allowed" */ val METHOD_NOT_ALLOWED: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.METHOD_NOT_ALLOWED & String = js.native
   
   /**
+    * Official Documentation @ https://datatracker.ietf.org/doc/html/rfc7540#section-9.1.2
+    *
+    * Defined in the specification of HTTP/2 to indicate that a server is not able to produce a response for the combination of scheme and authority that are included in the request URI.
+    */
+  @js.native
+  sealed trait MISDIRECTED_REQUEST
+    extends StObject
+       with ReasonPhrases
+  /* "Misdirected Request" */ val MISDIRECTED_REQUEST: typings.httpStatusCodes.reasonPhrasesMod.ReasonPhrases.MISDIRECTED_REQUEST & String = js.native
+  
+  /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.4.2
     *
     * This response code means that URI of requested resource has been changed. Probably, new URI would be given in the response.

@@ -1,6 +1,7 @@
 package typings.ethereumjsUtil
 
-import typings.node.Buffer
+import typings.ethereumjsUtil.externalsMod.BN
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,21 @@ object addressMod {
   
   @JSImport("ethereumjs-util/dist/address", "Address")
   @js.native
-  class Address protected () extends StObject {
+  open class Address protected () extends StObject {
     def this(buf: Buffer) = this()
     
     val buf: Buffer = js.native
+    
+    /**
+      * Is address equal to another.
+      */
+    def equals(address: Address): Boolean = js.native
+    
+    /**
+      * True if address is in the address range defined
+      * by EIP-1352
+      */
+    def isPrecompileOrSystemAddress(): Boolean = js.native
     
     /**
       * Is address zero.
@@ -54,7 +66,7 @@ object addressMod {
       * @param from The address which is creating this new address
       * @param nonce The nonce of the from account
       */
-    inline def generate(from: Address, nonce: typings.bnJs.mod.^): Address = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(from.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Address]
+    inline def generate(from: Address, nonce: BN): Address = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(from.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Address]
     
     /**
       * Generates an address for a contract created using CREATE2.

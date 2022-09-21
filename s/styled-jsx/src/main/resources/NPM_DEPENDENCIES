@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "styled-jsx" : "5.0.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "styled-jsx" : "5.0.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -8,7 +8,7 @@ object xmlCharDataMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlCharData", JSImport.Default)
   @js.native
-  class default[Parent] protected ()
+  open class default[Parent] protected ()
     extends StObject
        with XmlCharData[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlCharDataOptions) = this()
@@ -47,13 +47,13 @@ object xmlCharDataMod {
   @js.native
   trait XmlCharData[Parent] extends StObject {
     
-    /* private */ var _charData: js.Any = js.native
+    /* private */ var _charData: Any = js.native
     
-    /* private */ val _parent: js.Any = js.native
+    /* private */ val _parent: Any = js.native
     
-    /* private */ val _replaceInvalidCharsInCharData: js.Any = js.native
+    /* private */ val _replaceInvalidCharsInCharData: Any = js.native
     
-    /* private */ val _validation: js.Any = js.native
+    /* private */ val _validation: Any = js.native
     
     /**
       * Gets the text of this character data.

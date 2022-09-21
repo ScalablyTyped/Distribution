@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.IslandNodePool")
 @js.native
-class IslandNodePool ()
+open class IslandNodePool ()
   extends typings.p2.mod.IslandNodePool {
   def this(options: PoolOptions) = this()
 }

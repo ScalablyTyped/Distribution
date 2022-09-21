@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WebGLUniformLocation extends StObject {
   
-  var _currentState: js.Any
+  var _currentState: Any
 }
 object WebGLUniformLocation {
   
-  inline def apply(_currentState: js.Any): WebGLUniformLocation = {
+  inline def apply(_currentState: Any): WebGLUniformLocation = {
     val __obj = js.Dynamic.literal(_currentState = _currentState.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLUniformLocation]
   }
   
   extension [Self <: WebGLUniformLocation](x: Self) {
     
-    inline def set_currentState(value: js.Any): Self = StObject.set(x, "_currentState", value.asInstanceOf[js.Any])
+    inline def set_currentState(value: Any): Self = StObject.set(x, "_currentState", value.asInstanceOf[js.Any])
   }
 }

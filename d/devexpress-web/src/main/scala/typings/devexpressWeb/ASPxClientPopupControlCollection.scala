@@ -25,10 +25,10 @@ object ASPxClientPopupControlCollection {
     ControlsInitialized: ASPxClientEvent[ASPxClientControlsInitializedEventHandler[ASPxClientControlCollection]],
     EndCallback: ASPxClientEvent[ASPxClientGlobalEndCallbackEventHandler[ASPxClientControlCollection]],
     ForEachControl: ASPxClientControlAction => Unit,
-    Get: js.Any => js.Any,
-    GetByName: String => js.Any,
-    GetControlsByPredicate: ASPxClientControlPredicate => js.Array[js.Any],
-    GetControlsByType: js.Any => js.Array[js.Any],
+    Get: Any => Any,
+    GetByName: String => Any,
+    GetControlsByPredicate: ASPxClientControlPredicate => js.Array[Any],
+    GetControlsByType: Any => js.Array[Any],
     HideAllWindows: () => Unit,
     ValidationCompleted: ASPxClientEvent[ASPxClientValidationCompletedEventHandler[ASPxClientControlCollection]]
   ): ASPxClientPopupControlCollection = {

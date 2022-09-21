@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-cron
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 A simple cron-like task scheduler for Node.js
@@ -10,10 +10,10 @@ A simple cron-like task scheduler for Node.js
 | ------------------ | :-------------: |
 | Full name          | node-cron |
 | Keywords           | cron, scheduler, schedule, task, job |
-| # releases         | 1 |
-| # dependents       | 318 |
-| # downloads        | 11914139 |
-| # stars            | 49 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1596131.0 |
+| # stars            | 2354.0 |
 
 ## Links
 - [Homepage](https://github.com/merencia/node-cron)

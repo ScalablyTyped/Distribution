@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,13 +123,13 @@ object Ix {
     ): TResult = js.native
     
     def all(predicate: EnumerablePredicate[T]): Boolean = js.native
-    def all(predicate: EnumerablePredicate[T], thisArg: js.Any): Boolean = js.native
+    def all(predicate: EnumerablePredicate[T], thisArg: Any): Boolean = js.native
     
     // alias
     def any(): Boolean = js.native
-    def any(predicate: Unit, thisArg: js.Any): Boolean = js.native
+    def any(predicate: Unit, thisArg: Any): Boolean = js.native
     def any(predicate: EnumerablePredicate[T]): Boolean = js.native
-    def any(predicate: EnumerablePredicate[T], thisArg: js.Any): Boolean = js.native
+    def any(predicate: EnumerablePredicate[T], thisArg: Any): Boolean = js.native
     
     // alias
     def average(): Double = js.native
@@ -139,10 +138,10 @@ object Ix {
     def bufferWithCount(count: Double): Enumerable[T] = js.native
     def bufferWithCount(count: Double, skip: Double): Enumerable[T] = js.native
     
-    def `catch`(handler: js.Function1[/* error */ Error, Enumerable[T]]): Enumerable[T] = js.native
+    def `catch`(handler: js.Function1[/* error */ js.Error, Enumerable[T]]): Enumerable[T] = js.native
     def `catch`(second: Enumerable[T], other: Enumerable[T]*): Enumerable[T] = js.native
     
-    def catchException(handler: js.Function1[/* error */ Error, Enumerable[T]]): Enumerable[T] = js.native
+    def catchException(handler: js.Function1[/* error */ js.Error, Enumerable[T]]): Enumerable[T] = js.native
     def catchException(second: Enumerable[T], other: Enumerable[T]*): Enumerable[T] = js.native
     
     def concat[T](sources: Enumerable[T]*): Enumerable[T] = js.native
@@ -151,9 +150,9 @@ object Ix {
     def contains[TValue](value: TValue, comparer: EqualityComparer[T, TValue]): Boolean = js.native
     
     def count(): Double = js.native
-    def count(predicate: Unit, thisArg: js.Any): Double = js.native
+    def count(predicate: Unit, thisArg: Any): Double = js.native
     def count(predicate: EnumerablePredicate[T]): Double = js.native
-    def count(predicate: EnumerablePredicate[T], thisArg: js.Any): Double = js.native
+    def count(predicate: EnumerablePredicate[T], thisArg: Any): Double = js.native
     
     def defaultIfEmpty(): Enumerable[T] = js.native
     def defaultIfEmpty(defaultValue: T): Enumerable[T] = js.native
@@ -171,20 +170,20 @@ object Ix {
     def distinctUntilChanged[TKey](keySelector: js.Function1[/* item */ T, TKey], comparer: EqualityComparer[TKey, TKey]): Enumerable[T] = js.native
     
     def `do`(onNext: js.Function1[/* value */ T, Unit]): Enumerable[T] = js.native
-    def `do`(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* error */ Error, Unit]): Enumerable[T] = js.native
+    def `do`(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* error */ js.Error, Unit]): Enumerable[T] = js.native
     def `do`(
       onNext: js.Function1[/* value */ T, Unit],
-      onError: js.Function1[/* error */ Error, Unit],
+      onError: js.Function1[/* error */ js.Error, Unit],
       onCompleted: js.Function0[Unit]
     ): Enumerable[T] = js.native
     def `do`(onNext: js.Function1[/* value */ T, Unit], onError: Unit, onCompleted: js.Function0[Unit]): Enumerable[T] = js.native
     def `do`(onbserver: Observer[T]): Enumerable[T] = js.native
     
     def doAction(onNext: js.Function1[/* value */ T, Unit]): Enumerable[T] = js.native
-    def doAction(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* error */ Error, Unit]): Enumerable[T] = js.native
+    def doAction(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* error */ js.Error, Unit]): Enumerable[T] = js.native
     def doAction(
       onNext: js.Function1[/* value */ T, Unit],
-      onError: js.Function1[/* error */ Error, Unit],
+      onError: js.Function1[/* error */ js.Error, Unit],
       onCompleted: js.Function0[Unit]
     ): Enumerable[T] = js.native
     def doAction(onNext: js.Function1[/* value */ T, Unit], onError: Unit, onCompleted: js.Function0[Unit]): Enumerable[T] = js.native
@@ -195,7 +194,7 @@ object Ix {
     def elementAtOrDefault(index: Double): T = js.native
     
     def every(predicate: EnumerablePredicate[T]): Boolean = js.native
-    def every(predicate: EnumerablePredicate[T], thisArg: js.Any): Boolean = js.native
+    def every(predicate: EnumerablePredicate[T], thisArg: Any): Boolean = js.native
     
     def except(second: Enumerable[T]): Enumerable[T] = js.native
     def except[TOther](second: Enumerable[TOther], comparer: EqualityComparer[T, TOther]): Enumerable[T] = js.native
@@ -203,7 +202,7 @@ object Ix {
     def expand(selector: js.Function1[/* item */ T, Enumerable[T]]): Enumerable[T] = js.native
     
     def filter(selector: EnumerablePredicate[T]): Enumerable[T] = js.native
-    def filter(selector: EnumerablePredicate[T], thisArg: js.Any): Enumerable[T] = js.native
+    def filter(selector: EnumerablePredicate[T], thisArg: Any): Enumerable[T] = js.native
     
     // todo: Enumerable<Enumerable<T>>.catch(): Enumerable<T>
     //catch<TInner, T extends Enumerable<TInner>>(): Enumerable<TInner>;
@@ -218,7 +217,7 @@ object Ix {
     def firstOrDefault(predicate: Predicate[T]): T = js.native
     
     def forEach(action: EnumerableFunc[T, Unit]): Unit = js.native
-    def forEach(action: EnumerableFunc[T, Unit], thisArg: js.Any): Unit = js.native
+    def forEach(action: EnumerableFunc[T, Unit], thisArg: Any): Unit = js.native
     
     // base functions
     def getEnumerator(): Enumerator[T] = js.native
@@ -308,7 +307,7 @@ object Ix {
     def lastOrDefault(predicate: Predicate[T]): T = js.native
     
     def map[TResult](selector: EnumerableFunc[T, TResult]): Enumerable[TResult] = js.native
-    def map[TResult](selector: EnumerableFunc[T, TResult], thisArg: js.Any): Enumerable[TResult] = js.native
+    def map[TResult](selector: EnumerableFunc[T, TResult], thisArg: Any): Enumerable[TResult] = js.native
     
     def max(): T = js.native
     def max[TResult](selector: EnumerableFunc[T, TResult]): TResult = js.native
@@ -361,7 +360,7 @@ object Ix {
     def scan[TAccumulate](seed: TAccumulate, accumulate: js.Function2[/* acc */ TAccumulate, /* item */ T, TAccumulate]): Enumerable[TAccumulate] = js.native
     
     def select[TResult](selector: EnumerableFunc[T, TResult]): Enumerable[TResult] = js.native
-    def select[TResult](selector: EnumerableFunc[T, TResult], thisArg: js.Any): Enumerable[TResult] = js.native
+    def select[TResult](selector: EnumerableFunc[T, TResult], thisArg: Any): Enumerable[TResult] = js.native
     
     def selectMany[TCollection](collectionSelector: js.Function2[/* item */ T, /* index */ Double, Enumerable[TCollection]]): Enumerable[TCollection] = js.native
     def selectMany[TCollection, TResult](
@@ -386,12 +385,12 @@ object Ix {
     def skipLast(count: Double): Enumerable[T] = js.native
     
     def skipWhile(selector: EnumerablePredicate[T]): Enumerable[T] = js.native
-    def skipWhile(selector: EnumerablePredicate[T], thisArg: js.Any): Enumerable[T] = js.native
+    def skipWhile(selector: EnumerablePredicate[T], thisArg: Any): Enumerable[T] = js.native
     
     def some(): Boolean = js.native
-    def some(predicate: Unit, thisArg: js.Any): Boolean = js.native
+    def some(predicate: Unit, thisArg: Any): Boolean = js.native
     def some(predicate: EnumerablePredicate[T]): Boolean = js.native
-    def some(predicate: EnumerablePredicate[T], thisArg: js.Any): Boolean = js.native
+    def some(predicate: EnumerablePredicate[T], thisArg: Any): Boolean = js.native
     
     def startWith(values: T*): Enumerable[T] = js.native
     
@@ -403,7 +402,7 @@ object Ix {
     def takeLast(count: Double): Enumerable[T] = js.native
     
     def takeWhile(selector: EnumerablePredicate[T]): Enumerable[T] = js.native
-    def takeWhile(selector: EnumerablePredicate[T], thisArg: js.Any): Enumerable[T] = js.native
+    def takeWhile(selector: EnumerablePredicate[T], thisArg: Any): Enumerable[T] = js.native
     
     def toArray(): js.Array[T] = js.native
     
@@ -439,7 +438,7 @@ object Ix {
     def union(second: Enumerable[T], comparer: EqualityComparer[T, T]): Enumerable[T] = js.native
     
     def where(selector: EnumerablePredicate[T]): Enumerable[T] = js.native
-    def where(selector: EnumerablePredicate[T], thisArg: js.Any): Enumerable[T] = js.native
+    def where(selector: EnumerablePredicate[T], thisArg: Any): Enumerable[T] = js.native
     
     def zip[TRight, TResult](right: Enumerable[TRight], selector: js.Function2[/* left */ T, /* right */ TRight, TResult]): Enumerable[TResult] = js.native
   }
@@ -531,9 +530,9 @@ object Ix {
       defaultSource: Enumerable[T]
     ): Enumerable[T] = js.native
     
-    def `throw`[T](error: Error): Enumerable[T] = js.native
+    def `throw`[T](error: js.Error): Enumerable[T] = js.native
     
-    def throwException[T](error: Error): Enumerable[T] = js.native
+    def throwException[T](error: js.Error): Enumerable[T] = js.native
     
     def `using`[TResource /* <: Disposable */, T](
       resourceFactory: js.Function0[TResource],
@@ -651,7 +650,7 @@ object Ix {
     
     var onCompleted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
     
     var onNext: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
   }
@@ -668,7 +667,7 @@ object Ix {
       
       inline def setOnCompletedUndefined: Self = StObject.set(x, "onCompleted", js.undefined)
       
-      inline def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       

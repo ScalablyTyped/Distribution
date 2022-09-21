@@ -26,7 +26,7 @@ object XFlushable {
     acquire: () => Unit,
     addFlushListener: XFlushListener => Unit,
     flush: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeFlushListener: XFlushListener => Unit
   ): XFlushable = {

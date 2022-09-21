@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Sorts data in rows based on a sort order per column.
-  */
 trait SchemaSortRangeRequest extends StObject {
   
   /**
@@ -15,8 +12,7 @@ trait SchemaSortRangeRequest extends StObject {
   var range: js.UndefOr[SchemaGridRange] = js.undefined
   
   /**
-    * The sort order per column. Later specifications are used when values are
-    * equal in the earlier specifications.
+    * The sort order per column. Later specifications are used when values are equal in the earlier specifications.
     */
   var sortSpecs: js.UndefOr[js.Array[SchemaSortSpec]] = js.undefined
 }
@@ -37,6 +33,6 @@ object SchemaSortRangeRequest {
     
     inline def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
     
-    inline def setSortSpecsVarargs(value: SchemaSortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
+    inline def setSortSpecsVarargs(value: SchemaSortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value*))
   }
 }

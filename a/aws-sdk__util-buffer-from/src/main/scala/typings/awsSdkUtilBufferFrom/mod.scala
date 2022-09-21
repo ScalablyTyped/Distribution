@@ -1,15 +1,6 @@
 package typings.awsSdkUtilBufferFrom
 
-import typings.awsSdkUtilBufferFrom.awsSdkUtilBufferFromStrings.ascii
-import typings.awsSdkUtilBufferFrom.awsSdkUtilBufferFromStrings.base64
-import typings.awsSdkUtilBufferFrom.awsSdkUtilBufferFromStrings.binary
-import typings.awsSdkUtilBufferFrom.awsSdkUtilBufferFromStrings.hex
-import typings.awsSdkUtilBufferFrom.awsSdkUtilBufferFromStrings.latin1
-import typings.awsSdkUtilBufferFrom.awsSdkUtilBufferFromStrings.ucs2
-import typings.awsSdkUtilBufferFrom.awsSdkUtilBufferFromStrings.utf16le
-import typings.awsSdkUtilBufferFrom.awsSdkUtilBufferFromStrings.utf8
 import typings.buffer.mod.Buffer
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,28 +11,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromArrayBuffer(input: ArrayBuffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  inline def fromArrayBuffer(input: ArrayBuffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(input.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  inline def fromArrayBuffer(input: ArrayBuffer, offset: Double, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(input.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  inline def fromArrayBuffer(input: ArrayBuffer, offset: Unit, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(input.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def fromArrayBuffer(input: js.typedarray.ArrayBuffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def fromArrayBuffer(input: js.typedarray.ArrayBuffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(input.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def fromArrayBuffer(input: js.typedarray.ArrayBuffer, offset: Double, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(input.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def fromArrayBuffer(input: js.typedarray.ArrayBuffer, offset: Unit, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(input.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   inline def fromString(input: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  
-  inline def fromString_ascii(input: String, encoding: ascii): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  
-  inline def fromString_base64(input: String, encoding: base64): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  
-  inline def fromString_binary(input: String, encoding: binary): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  
-  inline def fromString_hex(input: String, encoding: hex): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  
-  inline def fromString_latin1(input: String, encoding: latin1): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  
-  inline def fromString_ucs2(input: String, encoding: ucs2): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  
-  inline def fromString_utf16le(input: String, encoding: utf16le): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  
-  inline def fromString_utf8(input: String, encoding: utf8): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def fromString(input: String, encoding: StringEncoding): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkUtilBufferFrom.awsSdkUtilBufferFromStrings.ascii

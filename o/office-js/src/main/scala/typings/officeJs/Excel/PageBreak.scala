@@ -9,6 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -17,9 +18,9 @@ trait PageBreak
      with ClientObject {
   
   /**
+    * Specifies the column index for the page break.
     *
-    * Specifies the column index for the page break
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val columnIndex: Double = js.native
@@ -31,6 +32,7 @@ trait PageBreak
   /**
     * Deletes a page break object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def delete(): Unit = js.native
@@ -38,6 +40,7 @@ trait PageBreak
   /**
     * Gets the first cell after the page break.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def getCellAfterBreak(): Range = js.native
@@ -54,9 +57,9 @@ trait PageBreak
   def load(propertyNames: js.Array[String]): PageBreak = js.native
   
   /**
+    * Specifies the row index for the page break.
     *
-    * Specifies the row index for the page break
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val rowIndex: Double = js.native

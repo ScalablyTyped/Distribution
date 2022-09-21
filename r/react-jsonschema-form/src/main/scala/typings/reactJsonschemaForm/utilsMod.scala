@@ -13,7 +13,6 @@ import typings.reactJsonschemaForm.mod.IdSchema
 import typings.reactJsonschemaForm.mod.PathSchema
 import typings.reactJsonschemaForm.mod.UiSchema
 import typings.reactJsonschemaForm.mod.Widget
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,25 +35,25 @@ object utilsMod {
   inline def computeDefaults[T](
     schema: JSONSchema6,
     parentDefaults: js.Array[js.UndefOr[JSONSchema6Type]],
-    definitions: StringDictionary[js.Any]
+    definitions: StringDictionary[Any]
   ): js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaults")(schema.asInstanceOf[js.Any], parentDefaults.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.UndefOr[JSONSchema6Type]]]
   inline def computeDefaults[T](
     schema: JSONSchema6,
     parentDefaults: js.Array[js.UndefOr[JSONSchema6Type]],
-    definitions: StringDictionary[js.Any],
+    definitions: StringDictionary[Any],
     rawFormData: T
   ): js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaults")(schema.asInstanceOf[js.Any], parentDefaults.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], rawFormData.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.UndefOr[JSONSchema6Type]]]
   inline def computeDefaults[T](
     schema: JSONSchema6,
     parentDefaults: js.Array[js.UndefOr[JSONSchema6Type]],
-    definitions: StringDictionary[js.Any],
+    definitions: StringDictionary[Any],
     rawFormData: T,
     includeUndefinedValues: Boolean
   ): js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaults")(schema.asInstanceOf[js.Any], parentDefaults.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], rawFormData.asInstanceOf[js.Any], includeUndefinedValues.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.UndefOr[JSONSchema6Type]]]
   inline def computeDefaults[T](
     schema: JSONSchema6,
     parentDefaults: js.Array[js.UndefOr[JSONSchema6Type]],
-    definitions: StringDictionary[js.Any],
+    definitions: StringDictionary[Any],
     rawFormData: Unit,
     includeUndefinedValues: Boolean
   ): js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDefaults")(schema.asInstanceOf[js.Any], parentDefaults.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], rawFormData.asInstanceOf[js.Any], includeUndefinedValues.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.UndefOr[JSONSchema6Type]]]
@@ -64,33 +63,29 @@ object utilsMod {
   inline def deepEquals[T](a: T, b: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def getDefaultFormState[T](schema: JSONSchema6, formData: T): T | js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormState")(schema.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[T | js.Array[js.UndefOr[JSONSchema6Type]]]
-  inline def getDefaultFormState[T](schema: JSONSchema6, formData: T, definitions: StringDictionary[js.Any]): T | js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormState")(schema.asInstanceOf[js.Any], formData.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[T | js.Array[js.UndefOr[JSONSchema6Type]]]
+  inline def getDefaultFormState[T](schema: JSONSchema6, formData: T, definitions: StringDictionary[Any]): T | js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormState")(schema.asInstanceOf[js.Any], formData.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[T | js.Array[js.UndefOr[JSONSchema6Type]]]
   inline def getDefaultFormState[T](
     schema: JSONSchema6,
     formData: T,
-    definitions: StringDictionary[js.Any],
+    definitions: StringDictionary[Any],
     includeUndefinedValues: Boolean
   ): T | js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormState")(schema.asInstanceOf[js.Any], formData.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], includeUndefinedValues.asInstanceOf[js.Any])).asInstanceOf[T | js.Array[js.UndefOr[JSONSchema6Type]]]
   inline def getDefaultFormState[T](schema: JSONSchema6, formData: T, definitions: Unit, includeUndefinedValues: Boolean): T | js.Array[js.UndefOr[JSONSchema6Type]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormState")(schema.asInstanceOf[js.Any], formData.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], includeUndefinedValues.asInstanceOf[js.Any])).asInstanceOf[T | js.Array[js.UndefOr[JSONSchema6Type]]]
   
   inline def getDefaultRegistry(): Definitions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultRegistry")().asInstanceOf[Definitions]
   
-  inline def getMatchingOption(formData: js.Any, options: js.Array[JSONSchema6], definitions: StringDictionary[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatchingOption")(formData.asInstanceOf[js.Any], options.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getMatchingOption(formData: Any, options: js.Array[JSONSchema6], definitions: StringDictionary[Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatchingOption")(formData.asInstanceOf[js.Any], options.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def getSchemaType(schema: JSONSchema6): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemaType")(schema.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getUiOptions(uiSchema: UiSchema): js.UndefOr[
-    StringDictionary[Boolean | Double | String | js.Object | js.Array[js.Any] | Null]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUiOptions")(uiSchema.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
-    StringDictionary[Boolean | Double | String | js.Object | js.Array[js.Any] | Null]
-  ]]
+  inline def getUiOptions(uiSchema: UiSchema): js.UndefOr[StringDictionary[Boolean | Double | String | js.Object | js.Array[Any] | Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUiOptions")(uiSchema.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[StringDictionary[Boolean | Double | String | js.Object | js.Array[Any] | Null]]]
   
   inline def getWidget(schema: JSONSchema6, widget: String): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("getWidget")(schema.asInstanceOf[js.Any], widget.asInstanceOf[js.Any])).asInstanceOf[Widget]
   inline def getWidget(schema: JSONSchema6, widget: String, registeredWidgets: StringDictionary[Widget]): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("getWidget")(schema.asInstanceOf[js.Any], widget.asInstanceOf[js.Any], registeredWidgets.asInstanceOf[js.Any])).asInstanceOf[Widget]
   inline def getWidget(schema: JSONSchema6, widget: Widget): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("getWidget")(schema.asInstanceOf[js.Any], widget.asInstanceOf[js.Any])).asInstanceOf[Widget]
   inline def getWidget(schema: JSONSchema6, widget: Widget, registeredWidgets: StringDictionary[Widget]): Widget = (^.asInstanceOf[js.Dynamic].applyDynamic("getWidget")(schema.asInstanceOf[js.Any], widget.asInstanceOf[js.Any], registeredWidgets.asInstanceOf[js.Any])).asInstanceOf[Widget]
   
-  inline def guessType(value: js.Any): JSONSchema6TypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("guessType")(value.asInstanceOf[js.Any]).asInstanceOf[JSONSchema6TypeName]
+  inline def guessType(value: Any): JSONSchema6TypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("guessType")(value.asInstanceOf[js.Any]).asInstanceOf[JSONSchema6TypeName]
   
   inline def hasWidget(schema: JSONSchema6, widget: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasWidget")(schema.asInstanceOf[js.Any], widget.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def hasWidget(schema: JSONSchema6, widget: String, registeredWidgets: StringDictionary[Widget]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasWidget")(schema.asInstanceOf[js.Any], widget.asInstanceOf[js.Any], registeredWidgets.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -100,24 +95,24 @@ object utilsMod {
   inline def isConstant(schema: JSONSchema6): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConstant")(schema.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isFilesArray(schema: JSONSchema6, uiSchema: UiSchema): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFilesArray")(schema.asInstanceOf[js.Any], uiSchema.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def isFilesArray(schema: JSONSchema6, uiSchema: UiSchema, definitions: StringDictionary[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFilesArray")(schema.asInstanceOf[js.Any], uiSchema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isFilesArray(schema: JSONSchema6, uiSchema: UiSchema, definitions: StringDictionary[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFilesArray")(schema.asInstanceOf[js.Any], uiSchema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isFixedItems(schema: JSONSchema6): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFixedItems")(schema.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isMultiSelect(schema: JSONSchema6): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultiSelect")(schema.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def isMultiSelect(schema: JSONSchema6, definitions: StringDictionary[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMultiSelect")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMultiSelect(schema: JSONSchema6, definitions: StringDictionary[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMultiSelect")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def isObject(thing: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(thing.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isObject(thing: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(thing.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isSelect(_schema: JSONSchema6): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelect")(_schema.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def isSelect(_schema: JSONSchema6, definitions: StringDictionary[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSelect")(_schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isSelect(_schema: JSONSchema6, definitions: StringDictionary[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSelect")(_schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def mergeObjects(obj1: js.Object, obj2: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeObjects")(obj1.asInstanceOf[js.Any], obj2.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   inline def mergeObjects(obj1: js.Object, obj2: js.Object, concatArrays: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeObjects")(obj1.asInstanceOf[js.Any], obj2.asInstanceOf[js.Any], concatArrays.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   inline def optionsList(schema: JSONSchema6): js.Array[Label] = ^.asInstanceOf[js.Dynamic].applyDynamic("optionsList")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[Label]]
   
-  inline def orderProperties(properties: js.Array[js.Any], order: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderProperties")(properties.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def orderProperties(properties: js.Array[Any], order: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderProperties")(properties.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   inline def pad(num: Double, size: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(num.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -127,50 +122,50 @@ object utilsMod {
   inline def rangeSpec(schema: JSONSchema6): IRangeSpec = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeSpec")(schema.asInstanceOf[js.Any]).asInstanceOf[IRangeSpec]
   
   inline def resolveSchema[T](schema: JSONSchema6Definition): JSONSchema6 = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[JSONSchema6]
-  inline def resolveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[js.Any]): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
-  inline def resolveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[js.Any], formData: T): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
+  inline def resolveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[Any]): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
+  inline def resolveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[Any], formData: T): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
   inline def resolveSchema[T](schema: JSONSchema6Definition, definitions: Unit, formData: T): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
   
   inline def retrieveSchema[T](schema: JSONSchema6Definition): JSONSchema6 = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieveSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[JSONSchema6]
-  inline def retrieveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[js.Any]): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
-  inline def retrieveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[js.Any], formData: T): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
+  inline def retrieveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[Any]): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
+  inline def retrieveSchema[T](schema: JSONSchema6Definition, definitions: StringDictionary[Any], formData: T): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
   inline def retrieveSchema[T](schema: JSONSchema6Definition, definitions: Unit, formData: T): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieveSchema")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
   
-  inline def setState(instance: Component[js.Object, js.Object, js.Any], state: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setState")(instance.asInstanceOf[js.Any], state.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setState(instance: Component[js.Object, js.Object, Any], state: Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setState")(instance.asInstanceOf[js.Any], state.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def shouldRender(comp: Component[js.Object, js.Object, js.Any], nextProps: js.Any, nextState: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldRender")(comp.asInstanceOf[js.Any], nextProps.asInstanceOf[js.Any], nextState.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shouldRender(comp: Component[js.Object, js.Object, Any], nextProps: Any, nextState: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldRender")(comp.asInstanceOf[js.Any], nextProps.asInstanceOf[js.Any], nextState.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def stubExistingAdditionalProperties[T](schema: JSONSchema6): JSONSchema6 = ^.asInstanceOf[js.Dynamic].applyDynamic("stubExistingAdditionalProperties")(schema.asInstanceOf[js.Any]).asInstanceOf[JSONSchema6]
-  inline def stubExistingAdditionalProperties[T](schema: JSONSchema6, definitions: StringDictionary[js.Any]): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("stubExistingAdditionalProperties")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
-  inline def stubExistingAdditionalProperties[T](schema: JSONSchema6, definitions: StringDictionary[js.Any], formData: T): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("stubExistingAdditionalProperties")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
+  inline def stubExistingAdditionalProperties[T](schema: JSONSchema6, definitions: StringDictionary[Any]): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("stubExistingAdditionalProperties")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
+  inline def stubExistingAdditionalProperties[T](schema: JSONSchema6, definitions: StringDictionary[Any], formData: T): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("stubExistingAdditionalProperties")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
   inline def stubExistingAdditionalProperties[T](schema: JSONSchema6, definitions: Unit, formData: T): JSONSchema6 = (^.asInstanceOf[js.Dynamic].applyDynamic("stubExistingAdditionalProperties")(schema.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[JSONSchema6]
   
-  inline def toConstant(schema: JSONSchema6): js.UndefOr[JSONSchema6Type | Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("toConstant")(schema.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[JSONSchema6Type | Error]]
+  inline def toConstant(schema: JSONSchema6): js.UndefOr[JSONSchema6Type | js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("toConstant")(schema.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[JSONSchema6Type | js.Error]]
   
   inline def toDateString(dateObject: DateObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDateString")(dateObject.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def toDateString(dateObject: DateObject, time: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDateString")(dateObject.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def toIdSchema[T](schema: JSONSchema6Definition, id: String, definitions: StringDictionary[js.Any]): IdSchema[js.Any] | js.Array[IdSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toIdSchema")(schema.asInstanceOf[js.Any], id.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[IdSchema[js.Any] | js.Array[IdSchema[js.Any]]]
-  inline def toIdSchema[T](schema: JSONSchema6Definition, id: String, definitions: StringDictionary[js.Any], formData: T): IdSchema[js.Any] | js.Array[IdSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toIdSchema")(schema.asInstanceOf[js.Any], id.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[IdSchema[js.Any] | js.Array[IdSchema[js.Any]]]
+  inline def toIdSchema[T](schema: JSONSchema6Definition, id: String, definitions: StringDictionary[Any]): IdSchema[Any] | js.Array[IdSchema[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toIdSchema")(schema.asInstanceOf[js.Any], id.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[IdSchema[Any] | js.Array[IdSchema[Any]]]
+  inline def toIdSchema[T](schema: JSONSchema6Definition, id: String, definitions: StringDictionary[Any], formData: T): IdSchema[Any] | js.Array[IdSchema[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toIdSchema")(schema.asInstanceOf[js.Any], id.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[IdSchema[Any] | js.Array[IdSchema[Any]]]
   inline def toIdSchema[T](
     schema: JSONSchema6Definition,
     id: String,
-    definitions: StringDictionary[js.Any],
+    definitions: StringDictionary[Any],
     formData: T,
     idPredix: String
-  ): IdSchema[js.Any] | js.Array[IdSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toIdSchema")(schema.asInstanceOf[js.Any], id.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any], idPredix.asInstanceOf[js.Any])).asInstanceOf[IdSchema[js.Any] | js.Array[IdSchema[js.Any]]]
+  ): IdSchema[Any] | js.Array[IdSchema[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toIdSchema")(schema.asInstanceOf[js.Any], id.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any], idPredix.asInstanceOf[js.Any])).asInstanceOf[IdSchema[Any] | js.Array[IdSchema[Any]]]
   inline def toIdSchema[T](
     schema: JSONSchema6Definition,
     id: String,
-    definitions: StringDictionary[js.Any],
+    definitions: StringDictionary[Any],
     formData: Unit,
     idPredix: String
-  ): IdSchema[js.Any] | js.Array[IdSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toIdSchema")(schema.asInstanceOf[js.Any], id.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any], idPredix.asInstanceOf[js.Any])).asInstanceOf[IdSchema[js.Any] | js.Array[IdSchema[js.Any]]]
+  ): IdSchema[Any] | js.Array[IdSchema[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toIdSchema")(schema.asInstanceOf[js.Any], id.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any], idPredix.asInstanceOf[js.Any])).asInstanceOf[IdSchema[Any] | js.Array[IdSchema[Any]]]
   
-  inline def toPathSchema[T](schema: JSONSchema6Definition, name: String, definitions: StringDictionary[js.Any]): PathSchema[js.Any] | js.Array[PathSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPathSchema")(schema.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[PathSchema[js.Any] | js.Array[PathSchema[js.Any]]]
-  inline def toPathSchema[T](schema: JSONSchema6Definition, name: String, definitions: StringDictionary[js.Any], formData: T): PathSchema[js.Any] | js.Array[PathSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPathSchema")(schema.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[PathSchema[js.Any] | js.Array[PathSchema[js.Any]]]
-  inline def toPathSchema[T](schema: JSONSchema6Definition, name: Unit, definitions: StringDictionary[js.Any]): PathSchema[js.Any] | js.Array[PathSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPathSchema")(schema.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[PathSchema[js.Any] | js.Array[PathSchema[js.Any]]]
-  inline def toPathSchema[T](schema: JSONSchema6Definition, name: Unit, definitions: StringDictionary[js.Any], formData: T): PathSchema[js.Any] | js.Array[PathSchema[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPathSchema")(schema.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[PathSchema[js.Any] | js.Array[PathSchema[js.Any]]]
+  inline def toPathSchema[T](schema: JSONSchema6Definition, name: String, definitions: StringDictionary[Any]): PathSchema[Any] | js.Array[PathSchema[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPathSchema")(schema.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[PathSchema[Any] | js.Array[PathSchema[Any]]]
+  inline def toPathSchema[T](schema: JSONSchema6Definition, name: String, definitions: StringDictionary[Any], formData: T): PathSchema[Any] | js.Array[PathSchema[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPathSchema")(schema.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[PathSchema[Any] | js.Array[PathSchema[Any]]]
+  inline def toPathSchema[T](schema: JSONSchema6Definition, name: Unit, definitions: StringDictionary[Any]): PathSchema[Any] | js.Array[PathSchema[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPathSchema")(schema.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[PathSchema[Any] | js.Array[PathSchema[Any]]]
+  inline def toPathSchema[T](schema: JSONSchema6Definition, name: Unit, definitions: StringDictionary[Any], formData: T): PathSchema[Any] | js.Array[PathSchema[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPathSchema")(schema.asInstanceOf[js.Any], name.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any], formData.asInstanceOf[js.Any])).asInstanceOf[PathSchema[Any] | js.Array[PathSchema[Any]]]
   
   trait DateObject extends StObject {
     

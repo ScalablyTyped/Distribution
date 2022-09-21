@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SqliteDatabase")
 @js.native
-class SqliteDatabase ()
+open class SqliteDatabase ()
   extends StObject
      with typings.fridaGum.SqliteDatabase {
   

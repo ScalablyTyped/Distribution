@@ -7,7 +7,9 @@ import typings.maximMazurokGapiClientOslogin.anon.Alt
 import typings.maximMazurokGapiClientOslogin.anon.Callback
 import typings.maximMazurokGapiClientOslogin.anon.Fields
 import typings.maximMazurokGapiClientOslogin.anon.Key
+import typings.maximMazurokGapiClientOslogin.anon.Name
 import typings.maximMazurokGapiClientOslogin.anon.Oauthtoken
+import typings.maximMazurokGapiClientOslogin.anon.Parent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,7 +62,7 @@ object gapi {
         var sshPublicKeys: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: @maxim_mazurok/gapi.client.oslogin.gapi.client.oslogin.SshPublicKey}
-          */ typings.maximMazurokGapiClientOslogin.maximMazurokGapiClientOsloginStrings.LoginProfile & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientOslogin.maximMazurokGapiClientOsloginStrings.LoginProfile & TopLevel[Any]
               ] = js.undefined
       }
       object LoginProfile {
@@ -80,12 +82,12 @@ object gapi {
           
           inline def setPosixAccountsUndefined: Self = StObject.set(x, "posixAccounts", js.undefined)
           
-          inline def setPosixAccountsVarargs(value: PosixAccount*): Self = StObject.set(x, "posixAccounts", js.Array(value :_*))
+          inline def setPosixAccountsVarargs(value: PosixAccount*): Self = StObject.set(x, "posixAccounts", js.Array(value*))
           
           inline def setSshPublicKeys(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.oslogin.gapi.client.oslogin.SshPublicKey}
-            */ typings.maximMazurokGapiClientOslogin.maximMazurokGapiClientOsloginStrings.LoginProfile & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientOslogin.maximMazurokGapiClientOsloginStrings.LoginProfile & TopLevel[Any]
           ): Self = StObject.set(x, "sshPublicKeys", value.asInstanceOf[js.Any])
           
           inline def setSshPublicKeysUndefined: Self = StObject.set(x, "sshPublicKeys", js.undefined)
@@ -234,6 +236,10 @@ object gapi {
       @js.native
       trait SshPublicKeysResource extends StObject {
         
+        /** Create an SSH public key */
+        def create(request: Alt): Request[SshPublicKey] = js.native
+        def create(request: Callback, body: SshPublicKey): Request[SshPublicKey] = js.native
+        
         /** Deletes an SSH public key. */
         def delete(): Request[js.Object] = js.native
         def delete(request: Accesstoken): Request[js.Object] = js.native
@@ -243,8 +249,8 @@ object gapi {
         def get(request: Accesstoken): Request[SshPublicKey] = js.native
         
         /** Updates an SSH public key and returns the profile information. This method supports patch semantics. */
-        def patch(request: Alt): Request[SshPublicKey] = js.native
-        def patch(request: Callback, body: SshPublicKey): Request[SshPublicKey] = js.native
+        def patch(request: Fields): Request[SshPublicKey] = js.native
+        def patch(request: Key, body: SshPublicKey): Request[SshPublicKey] = js.native
       }
       
       @js.native
@@ -252,11 +258,11 @@ object gapi {
         
         /** Retrieves the profile information used for logging in to a virtual machine on Google Compute Engine. */
         def getLoginProfile(): Request[LoginProfile] = js.native
-        def getLoginProfile(request: Fields): Request[LoginProfile] = js.native
+        def getLoginProfile(request: Name): Request[LoginProfile] = js.native
         
         /** Adds an SSH public key and returns the profile information. Default POSIX account information is set when no username and UID exist as part of the login profile. */
-        def importSshPublicKey(request: Key): Request[ImportSshPublicKeyResponse] = js.native
-        def importSshPublicKey(request: Oauthtoken, body: SshPublicKey): Request[ImportSshPublicKeyResponse] = js.native
+        def importSshPublicKey(request: Oauthtoken): Request[ImportSshPublicKeyResponse] = js.native
+        def importSshPublicKey(request: Parent, body: SshPublicKey): Request[ImportSshPublicKeyResponse] = js.native
         
         var projects: ProjectsResource = js.native
         

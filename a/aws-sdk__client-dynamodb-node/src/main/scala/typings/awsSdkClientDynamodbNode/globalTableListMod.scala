@@ -8,5 +8,5 @@ object globalTableListMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/_GlobalTableList", "_GlobalTableList")
   @js.native
-  val GlobalTableList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val GlobalTableList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

@@ -9,15 +9,13 @@ string contains methods that aren't included in the vanilla JavaScript string su
 | ------------------ | :-------------: |
 | Full name          | string |
 | Keywords           | string, strings, string.js, stringjs, S, s, csv, html, entities, parse, html, tags, strip, trim, encode, decode, escape, unescape |
-| # releases         | 1 |
-| # dependents       | 829 |
-| # downloads        | 4912596 |
-| # stars            | 80 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 373753.3333333333 |
+| # stars            | 1763.0 |
 
 ## Links
 - [Homepage](http://stringjs.com)
-- [Bugs](https://github.com/jprichardson/string.js/issues)
-- [Repository](https://github.com/jprichardson/string.js)
 - [Npm](https://www.npmjs.com/package/string)
     
 

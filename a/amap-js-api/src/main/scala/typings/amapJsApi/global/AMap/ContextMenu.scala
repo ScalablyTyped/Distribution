@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 地图右键菜单
   * @param options 选项
   */
-class ContextMenu[ExtraData] ()
+open class ContextMenu[ExtraData] ()
   extends StObject
      with typings.amapJsApi.AMap.ContextMenu[ExtraData] {
   def this(options: Options) = this()

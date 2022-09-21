@@ -1,6 +1,5 @@
 package typings.std
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,5 +12,5 @@ trait WeakRefConstructor
   * Creates a WeakRef instance for the given target object.
   * @param target The target object for the WeakRef instance.
   */
-Instantiable0[WeakRef[js.Object]]
-     with Instantiable1[/* target */ js.Object, WeakRef[js.Object]]
+/* standard es2021.weakref */
+Instantiable1[/* target */ js.Object, WeakRef[js.Object]]

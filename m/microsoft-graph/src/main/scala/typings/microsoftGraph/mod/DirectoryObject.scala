@@ -8,6 +8,7 @@ trait DirectoryObject
   extends StObject
      with Entity {
   
+  // Date and time when this object was deleted. Always null when the object hasn't been deleted.
   var deletedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DirectoryObject {

@@ -59,6 +59,6 @@ object IRatingConfig {
     
     inline def setTitlesUndefined: Self = StObject.set(x, "titles", js.undefined)
     
-    inline def setTitlesVarargs(value: String*): Self = StObject.set(x, "titles", js.Array(value :_*))
+    inline def setTitlesVarargs(value: String*): Self = StObject.set(x, "titles", js.Array(value*))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.RenderingManager")
 @js.native
-class RenderingManager protected ()
+open class RenderingManager protected ()
   extends StObject
      with typings.babylonjs.BABYLON.RenderingManager {
   /**

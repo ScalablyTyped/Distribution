@@ -22,7 +22,7 @@ object XTransactionBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addTransactionListener: XTransactionListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeTransactionListener: XTransactionListener => Unit
   ): XTransactionBroadcaster = {

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "SphericalHarmonics3")
 @js.native
-class SphericalHarmonics3 ()
-  extends typings.three.sphericalHarmonics3Mod.SphericalHarmonics3
+open class SphericalHarmonics3 ()
+  extends typings.three.threeMod.SphericalHarmonics3
 /* static members */
 object SphericalHarmonics3 {
   

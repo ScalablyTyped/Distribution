@@ -34,6 +34,6 @@ object PaymentGatewayAccountsInfo {
     
     inline def setPaymentGatewayAccountsVarargs(
       value: (/* This object contains details about a payment gateway account. */ PaymentGatewayAccount)*
-    ): Self = StObject.set(x, "paymentGatewayAccounts", js.Array(value :_*))
+    ): Self = StObject.set(x, "paymentGatewayAccounts", js.Array(value*))
   }
 }

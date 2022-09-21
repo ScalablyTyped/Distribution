@@ -25,6 +25,6 @@ object TooltipDisplay {
     
     inline def setTooltipLabel(value: String | js.Array[String]): Self = StObject.set(x, "tooltipLabel", value.asInstanceOf[js.Any])
     
-    inline def setTooltipLabelVarargs(value: String*): Self = StObject.set(x, "tooltipLabel", js.Array(value :_*))
+    inline def setTooltipLabelVarargs(value: String*): Self = StObject.set(x, "tooltipLabel", js.Array(value*))
   }
 }

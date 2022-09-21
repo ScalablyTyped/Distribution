@@ -16,7 +16,7 @@ object mod {
     
     var day: Double
     
-    var events: js.Array[js.Any]
+    var events: js.Array[Any]
     
     var properties: CalendarDayProperties
   }
@@ -26,7 +26,7 @@ object mod {
       classes: String,
       date: Moment,
       day: Double,
-      events: js.Array[js.Any],
+      events: js.Array[Any],
       properties: CalendarDayProperties
     ): CalendarDay = {
       val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
@@ -41,9 +41,9 @@ object mod {
       
       inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      inline def setEvents(value: js.Array[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setEventsVarargs(value: js.Any*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: Any*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setProperties(value: CalendarDayProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
@@ -267,7 +267,7 @@ object mod {
     /**
       * Add events. Note that this triggers a re-render of the calendar.
       */
-    def addEvents(events: js.Array[js.Any]): this.type = js.native
+    def addEvents(events: js.Array[Any]): this.type = js.native
     
     /**
       * Go to the previous month
@@ -305,7 +305,7 @@ object mod {
       * be removed from the calendar. Note that this triggers a re-render of the
       * calendar.
       */
-    def removeEvents(filter: js.Function1[/* event */ js.Any, Boolean]): this.type = js.native
+    def removeEvents(filter: js.Function1[/* event */ Any, Boolean]): this.type = js.native
     
     /**
       * Re-render of the calendar.
@@ -315,7 +315,7 @@ object mod {
     /**
       * Change the events. Note that this triggers a re-render of the calendar.
       */
-    def setEvents(events: js.Array[js.Any]): this.type = js.native
+    def setEvents(events: js.Array[Any]): this.type = js.native
     
     def setMonth(month: String): this.type = js.native
     /**
@@ -382,13 +382,13 @@ object mod {
     var doneRendering: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** an array of event objects */
-    var events: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var events: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Any other data variables you want access to in your template. This gets
       * passed into the template function.
       */
-    var extras: js.UndefOr[js.Any] = js.undefined
+    var extras: js.UndefOr[Any] = js.undefined
     
     /**
       * Always make the calendar six rows tall (42 days) so that every month has
@@ -446,7 +446,7 @@ object mod {
       * Set this, if you want a date to be "selected" (see classes.selected)
       * after plugin init. Defualts to null, no initially selected date.
       */
-    var selectedDate: js.UndefOr[js.Any] = js.undefined
+    var selectedDate: js.UndefOr[Any] = js.undefined
     
     /**
       * show the numbers of days in months adjacent to the current month (and populate them with their events). defaults to true.
@@ -523,19 +523,19 @@ object mod {
       
       inline def setDaysOfTheWeekUndefined: Self = StObject.set(x, "daysOfTheWeek", js.undefined)
       
-      inline def setDaysOfTheWeekVarargs(value: String*): Self = StObject.set(x, "daysOfTheWeek", js.Array(value :_*))
+      inline def setDaysOfTheWeekVarargs(value: String*): Self = StObject.set(x, "daysOfTheWeek", js.Array(value*))
       
       inline def setDoneRendering(value: () => Unit): Self = StObject.set(x, "doneRendering", js.Any.fromFunction0(value))
       
       inline def setDoneRenderingUndefined: Self = StObject.set(x, "doneRendering", js.undefined)
       
-      inline def setEvents(value: js.Array[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      inline def setEventsVarargs(value: js.Any*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: Any*): Self = StObject.set(x, "events", js.Array(value*))
       
-      inline def setExtras(value: js.Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+      inline def setExtras(value: Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
       
       inline def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
       
@@ -573,7 +573,7 @@ object mod {
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      inline def setSelectedDate(value: js.Any): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
+      inline def setSelectedDate(value: Any): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
       
       inline def setSelectedDateUndefined: Self = StObject.set(x, "selectedDate", js.undefined)
       
@@ -698,7 +698,7 @@ object mod {
       
       inline def setDays(value: js.Array[CalendarDay]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: CalendarDay*): Self = StObject.set(x, "days", js.Array(value :_*))
+      inline def setDaysVarargs(value: CalendarDay*): Self = StObject.set(x, "days", js.Array(value*))
       
       inline def setMonth(value: Moment): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     }
@@ -745,15 +745,15 @@ object mod {
     
     var daysOfTheWeek: js.Array[String]
     
-    var eventsLastMonth: js.Array[js.Any]
+    var eventsLastMonth: js.Array[Any]
     
-    var eventsNextMonth: js.Array[js.Any]
+    var eventsNextMonth: js.Array[Any]
     
-    var eventsThisInterval: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var eventsThisInterval: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var eventsThisMonth: js.Array[js.Any]
+    var eventsThisMonth: js.Array[Any]
     
-    var extras: js.UndefOr[js.Any] = js.undefined
+    var extras: js.UndefOr[Any] = js.undefined
     
     var intervalEnd: js.UndefOr[Moment] = js.undefined
     
@@ -772,9 +772,9 @@ object mod {
     inline def apply(
       days: js.Array[CalendarDay],
       daysOfTheWeek: js.Array[String],
-      eventsLastMonth: js.Array[js.Any],
-      eventsNextMonth: js.Array[js.Any],
-      eventsThisMonth: js.Array[js.Any],
+      eventsLastMonth: js.Array[Any],
+      eventsNextMonth: js.Array[Any],
+      eventsThisMonth: js.Array[Any],
       month: String,
       months: js.Array[Month],
       numberOfRows: Double,
@@ -790,29 +790,29 @@ object mod {
       
       inline def setDaysOfTheWeek(value: js.Array[String]): Self = StObject.set(x, "daysOfTheWeek", value.asInstanceOf[js.Any])
       
-      inline def setDaysOfTheWeekVarargs(value: String*): Self = StObject.set(x, "daysOfTheWeek", js.Array(value :_*))
+      inline def setDaysOfTheWeekVarargs(value: String*): Self = StObject.set(x, "daysOfTheWeek", js.Array(value*))
       
-      inline def setDaysVarargs(value: CalendarDay*): Self = StObject.set(x, "days", js.Array(value :_*))
+      inline def setDaysVarargs(value: CalendarDay*): Self = StObject.set(x, "days", js.Array(value*))
       
-      inline def setEventsLastMonth(value: js.Array[js.Any]): Self = StObject.set(x, "eventsLastMonth", value.asInstanceOf[js.Any])
+      inline def setEventsLastMonth(value: js.Array[Any]): Self = StObject.set(x, "eventsLastMonth", value.asInstanceOf[js.Any])
       
-      inline def setEventsLastMonthVarargs(value: js.Any*): Self = StObject.set(x, "eventsLastMonth", js.Array(value :_*))
+      inline def setEventsLastMonthVarargs(value: Any*): Self = StObject.set(x, "eventsLastMonth", js.Array(value*))
       
-      inline def setEventsNextMonth(value: js.Array[js.Any]): Self = StObject.set(x, "eventsNextMonth", value.asInstanceOf[js.Any])
+      inline def setEventsNextMonth(value: js.Array[Any]): Self = StObject.set(x, "eventsNextMonth", value.asInstanceOf[js.Any])
       
-      inline def setEventsNextMonthVarargs(value: js.Any*): Self = StObject.set(x, "eventsNextMonth", js.Array(value :_*))
+      inline def setEventsNextMonthVarargs(value: Any*): Self = StObject.set(x, "eventsNextMonth", js.Array(value*))
       
-      inline def setEventsThisInterval(value: js.Array[js.Any]): Self = StObject.set(x, "eventsThisInterval", value.asInstanceOf[js.Any])
+      inline def setEventsThisInterval(value: js.Array[Any]): Self = StObject.set(x, "eventsThisInterval", value.asInstanceOf[js.Any])
       
       inline def setEventsThisIntervalUndefined: Self = StObject.set(x, "eventsThisInterval", js.undefined)
       
-      inline def setEventsThisIntervalVarargs(value: js.Any*): Self = StObject.set(x, "eventsThisInterval", js.Array(value :_*))
+      inline def setEventsThisIntervalVarargs(value: Any*): Self = StObject.set(x, "eventsThisInterval", js.Array(value*))
       
-      inline def setEventsThisMonth(value: js.Array[js.Any]): Self = StObject.set(x, "eventsThisMonth", value.asInstanceOf[js.Any])
+      inline def setEventsThisMonth(value: js.Array[Any]): Self = StObject.set(x, "eventsThisMonth", value.asInstanceOf[js.Any])
       
-      inline def setEventsThisMonthVarargs(value: js.Any*): Self = StObject.set(x, "eventsThisMonth", js.Array(value :_*))
+      inline def setEventsThisMonthVarargs(value: Any*): Self = StObject.set(x, "eventsThisMonth", js.Array(value*))
       
-      inline def setExtras(value: js.Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+      inline def setExtras(value: Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
       
       inline def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
       
@@ -828,7 +828,7 @@ object mod {
       
       inline def setMonths(value: js.Array[Month]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      inline def setMonthsVarargs(value: Month*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: Month*): Self = StObject.set(x, "months", js.Array(value*))
       
       inline def setNumberOfRows(value: Double): Self = StObject.set(x, "numberOfRows", value.asInstanceOf[js.Any])
       
@@ -842,11 +842,11 @@ object mod {
     
     var element: Element
     
-    var events: js.Array[js.Any]
+    var events: js.Array[Any]
   }
   object Target {
     
-    inline def apply(date: Moment, element: Element, events: js.Array[js.Any]): Target = {
+    inline def apply(date: Moment, element: Element, events: js.Array[Any]): Target = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any])
       __obj.asInstanceOf[Target]
     }
@@ -857,9 +857,9 @@ object mod {
       
       inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      inline def setEvents(value: js.Array[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setEventsVarargs(value: js.Any*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: Any*): Self = StObject.set(x, "events", js.Array(value*))
     }
   }
   

@@ -34,18 +34,18 @@ object SqlApplicationConfiguration {
     
     inline def setInputsUndefined: Self = StObject.set(x, "Inputs", js.undefined)
     
-    inline def setInputsVarargs(value: Input*): Self = StObject.set(x, "Inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: Input*): Self = StObject.set(x, "Inputs", js.Array(value*))
     
     inline def setOutputs(value: Outputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
     inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
-    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value*))
     
     inline def setReferenceDataSources(value: ReferenceDataSources): Self = StObject.set(x, "ReferenceDataSources", value.asInstanceOf[js.Any])
     
     inline def setReferenceDataSourcesUndefined: Self = StObject.set(x, "ReferenceDataSources", js.undefined)
     
-    inline def setReferenceDataSourcesVarargs(value: ReferenceDataSource*): Self = StObject.set(x, "ReferenceDataSources", js.Array(value :_*))
+    inline def setReferenceDataSourcesVarargs(value: ReferenceDataSource*): Self = StObject.set(x, "ReferenceDataSources", js.Array(value*))
   }
 }

@@ -1,9 +1,5 @@
 package typings.googleapis.calendarV3Mod.calendarV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,33 +9,17 @@ trait ParamsResourceEventsPatch
      with StandardParameters {
   
   /**
-    * Whether to always include a value in the email field for the organizer,
-    * creator and attendees, even if no real email is available (i.e. a
-    * generated, non-working value will be provided). The use of this option is
-    * discouraged and should only be used by clients which cannot handle the
-    * absence of an email address value in the mentioned places. Optional. The
-    * default is False.
+    * Deprecated and ignored. A value will always be returned in the email field for the organizer, creator and attendees, even if no real email address is available (i.e. a generated, non-working value will be provided).
     */
   var alwaysIncludeEmail: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Calendar identifier. To retrieve calendar IDs call the calendarList.list
-    * method. If you want to access the primary calendar of the currently
-    * logged in user, use the "primary" keyword.
+    * Calendar identifier. To retrieve calendar IDs call the calendarList.list method. If you want to access the primary calendar of the currently logged in user, use the "primary" keyword.
     */
   var calendarId: js.UndefOr[String] = js.undefined
   
   /**
-    * Version number of conference data supported by the API client. Version 0
-    * assumes no conference data support and ignores conference data in the
-    * event's body. Version 1 enables support for copying of ConferenceData as
-    * well as for creating new conferences using the createRequest field of
-    * conferenceData. The default is 0.
+    * Version number of conference data supported by the API client. Version 0 assumes no conference data support and ignores conference data in the event's body. Version 1 enables support for copying of ConferenceData as well as for creating new conferences using the createRequest field of conferenceData. The default is 0.
     */
   var conferenceDataVersion: js.UndefOr[Double] = js.undefined
   
@@ -49,9 +29,7 @@ trait ParamsResourceEventsPatch
   var eventId: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of attendees to include in the response. If there are
-    * more than the specified number of attendees, only the participant is
-    * returned. Optional.
+    * The maximum number of attendees to include in the response. If there are more than the specified number of attendees, only the participant is returned. Optional.
     */
   var maxAttendees: js.UndefOr[Double] = js.undefined
   
@@ -61,22 +39,19 @@ trait ParamsResourceEventsPatch
   var requestBody: js.UndefOr[SchemaEvent] = js.undefined
   
   /**
-    * Deprecated. Please use sendUpdates instead.  Whether to send
-    * notifications about the event update (for example, description changes,
-    * etc.). Note that some emails might still be sent even if you set the
-    * value to false. The default is false.
+    * Deprecated. Please use sendUpdates instead.
+    *
+    * Whether to send notifications about the event update (for example, description changes, etc.). Note that some emails might still be sent even if you set the value to false. The default is false.
     */
   var sendNotifications: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Guests who should receive notifications about the event update (for
-    * example, title changes, etc.).
+    * Guests who should receive notifications about the event update (for example, title changes, etc.).
     */
   var sendUpdates: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether API client performing operation supports event attachments.
-    * Optional. The default is False.
+    * Whether API client performing operation supports event attachments. Optional. The default is False.
     */
   var supportsAttachments: js.UndefOr[Boolean] = js.undefined
 }
@@ -92,10 +67,6 @@ object ParamsResourceEventsPatch {
     inline def setAlwaysIncludeEmail(value: Boolean): Self = StObject.set(x, "alwaysIncludeEmail", value.asInstanceOf[js.Any])
     
     inline def setAlwaysIncludeEmailUndefined: Self = StObject.set(x, "alwaysIncludeEmail", js.undefined)
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     

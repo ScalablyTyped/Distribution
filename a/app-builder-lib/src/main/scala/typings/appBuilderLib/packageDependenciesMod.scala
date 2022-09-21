@@ -11,8 +11,8 @@ object packageDependenciesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createLazyProductionDeps(projectDir: String): Lazy[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLazyProductionDeps")(projectDir.asInstanceOf[js.Any]).asInstanceOf[Lazy[js.Array[js.Any]]]
-  inline def createLazyProductionDeps(projectDir: String, excludedDependencies: js.Array[String]): Lazy[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLazyProductionDeps")(projectDir.asInstanceOf[js.Any], excludedDependencies.asInstanceOf[js.Any])).asInstanceOf[Lazy[js.Array[js.Any]]]
+  inline def createLazyProductionDeps(projectDir: String): Lazy[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLazyProductionDeps")(projectDir.asInstanceOf[js.Any]).asInstanceOf[Lazy[js.Array[Any]]]
+  inline def createLazyProductionDeps(projectDir: String, excludedDependencies: js.Array[String]): Lazy[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLazyProductionDeps")(projectDir.asInstanceOf[js.Any], excludedDependencies.asInstanceOf[js.Any])).asInstanceOf[Lazy[js.Array[Any]]]
   
   trait NodeModuleDirInfo extends StObject {
     
@@ -31,7 +31,7 @@ object packageDependenciesMod {
       
       inline def setDeps(value: js.Array[NodeModuleInfo]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
-      inline def setDepsVarargs(value: NodeModuleInfo*): Self = StObject.set(x, "deps", js.Array(value :_*))
+      inline def setDepsVarargs(value: NodeModuleInfo*): Self = StObject.set(x, "deps", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     }

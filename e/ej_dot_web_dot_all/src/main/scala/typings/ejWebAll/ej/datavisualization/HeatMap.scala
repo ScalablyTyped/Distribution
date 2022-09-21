@@ -229,7 +229,7 @@ object HeatMap {
     
     /** Returns the specific HeatMap cell
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Value displayed on the cell
       */
@@ -237,7 +237,7 @@ object HeatMap {
     
     /** Returns the HeatMap cell data
       */
-    var source: js.UndefOr[js.Any] = js.undefined
+    var source: js.UndefOr[Any] = js.undefined
   }
   object CellMouseEnterEventArgs {
     
@@ -248,7 +248,7 @@ object HeatMap {
     
     extension [Self <: CellMouseEnterEventArgs](x: Self) {
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
@@ -256,7 +256,7 @@ object HeatMap {
       
       inline def setCellValueUndefined: Self = StObject.set(x, "cellValue", js.undefined)
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
@@ -266,7 +266,7 @@ object HeatMap {
     
     /** Returns the specific HeatMap cell
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Value displayed on the cell
       */
@@ -274,7 +274,7 @@ object HeatMap {
     
     /** Returns the HeatMap cell data
       */
-    var source: js.UndefOr[js.Any] = js.undefined
+    var source: js.UndefOr[Any] = js.undefined
   }
   object CellMouseLeaveEventArgs {
     
@@ -285,7 +285,7 @@ object HeatMap {
     
     extension [Self <: CellMouseLeaveEventArgs](x: Self) {
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
@@ -293,7 +293,7 @@ object HeatMap {
       
       inline def setCellValueUndefined: Self = StObject.set(x, "cellValue", js.undefined)
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
@@ -303,7 +303,7 @@ object HeatMap {
     
     /** Returns the specific HeatMap cell
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Value displayed on the cell
       */
@@ -311,7 +311,7 @@ object HeatMap {
     
     /** Returns the HeatMap cell data
       */
-    var source: js.UndefOr[js.Any] = js.undefined
+    var source: js.UndefOr[Any] = js.undefined
   }
   object CellMouseOverEventArgs {
     
@@ -322,7 +322,7 @@ object HeatMap {
     
     extension [Self <: CellMouseOverEventArgs](x: Self) {
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
@@ -330,7 +330,7 @@ object HeatMap {
       
       inline def setCellValueUndefined: Self = StObject.set(x, "cellValue", js.undefined)
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
@@ -340,7 +340,7 @@ object HeatMap {
     
     /** Returns the specific HeatMap cell
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Value displayed on the cell
       */
@@ -348,7 +348,7 @@ object HeatMap {
     
     /** Returns the HeatMap cell data
       */
-    var source: js.UndefOr[js.Any] = js.undefined
+    var source: js.UndefOr[Any] = js.undefined
   }
   object CellSelectedEventArgs {
     
@@ -359,7 +359,7 @@ object HeatMap {
     
     extension [Self <: CellSelectedEventArgs](x: Self) {
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
@@ -367,7 +367,7 @@ object HeatMap {
       
       inline def setCellValueUndefined: Self = StObject.set(x, "cellValue", js.undefined)
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
@@ -501,7 +501,7 @@ object HeatMap {
     /** Specifies the alignment mode of the heat map column.
       * @Default {ej.HeatMap.TextAlign.Center}
       */
-    var textAlign: js.UndefOr[js.Any] = js.undefined
+    var textAlign: js.UndefOr[Any] = js.undefined
   }
   object DefaultColumnStyle {
     
@@ -520,7 +520,7 @@ object HeatMap {
       
       inline def setTemplateIDUndefined: Self = StObject.set(x, "templateID", js.undefined)
       
-      inline def setTextAlign(value: js.Any): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: Any): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
       inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     }
@@ -567,7 +567,7 @@ object HeatMap {
     /** Specifies the property and display value of the collection of column.
       * @Default {[]}
       */
-    var columnMapping: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var columnMapping: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Column settings for the individual heat map column.
       * @Default {null}
@@ -600,11 +600,11 @@ object HeatMap {
       
       inline def setColumn(value: ItemsMappingColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      inline def setColumnMapping(value: js.Array[js.Any]): Self = StObject.set(x, "columnMapping", value.asInstanceOf[js.Any])
+      inline def setColumnMapping(value: js.Array[Any]): Self = StObject.set(x, "columnMapping", value.asInstanceOf[js.Any])
       
       inline def setColumnMappingUndefined: Self = StObject.set(x, "columnMapping", js.undefined)
       
-      inline def setColumnMappingVarargs(value: js.Any*): Self = StObject.set(x, "columnMapping", js.Array(value :_*))
+      inline def setColumnMappingVarargs(value: Any*): Self = StObject.set(x, "columnMapping", js.Array(value*))
       
       inline def setColumnStyle(value: ItemsMappingColumnStyle): Self = StObject.set(x, "columnStyle", value.asInstanceOf[js.Any])
       
@@ -707,7 +707,7 @@ object HeatMap {
     /** Specifies the property and display value of the header.
       * @Default {null}
       */
-    var columnStyle: js.UndefOr[js.Any] = js.undefined
+    var columnStyle: js.UndefOr[Any] = js.undefined
     
     /** Specifies the value of the column or row.
       */
@@ -726,7 +726,7 @@ object HeatMap {
     
     extension [Self <: ItemsMappingHeaderMapping](x: Self) {
       
-      inline def setColumnStyle(value: js.Any): Self = StObject.set(x, "columnStyle", value.asInstanceOf[js.Any])
+      inline def setColumnStyle(value: Any): Self = StObject.set(x, "columnStyle", value.asInstanceOf[js.Any])
       
       inline def setColumnStyleUndefined: Self = StObject.set(x, "columnStyle", js.undefined)
       
@@ -839,7 +839,7 @@ object HeatMap {
     /** Specifies the width of the heat map.
       * @Default {null}
       */
-    var height: js.UndefOr[js.Any] = js.undefined
+    var height: js.UndefOr[Any] = js.undefined
     
     /** Specifies the name of the heat map.
       * @Default {null}
@@ -859,12 +859,12 @@ object HeatMap {
     /** Specifies the source data of the heat map.
       * @Default {[]}
       */
-    var itemsSource: js.UndefOr[js.Any] = js.undefined
+    var itemsSource: js.UndefOr[Any] = js.undefined
     
     /** Specifies the no of legends can sync with heat map.
       * @Default {[]}
       */
-    var legendCollection: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var legendCollection: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Enables or disables tooltip of heatmap
       * @Default {true}
@@ -878,7 +878,7 @@ object HeatMap {
     /** Specifies the width of the heat map.
       * @Default {null}
       */
-    var width: js.UndefOr[js.Any] = js.undefined
+    var width: js.UndefOr[Any] = js.undefined
   }
   object Model {
     
@@ -909,7 +909,7 @@ object HeatMap {
       
       inline def setColorMappingCollectionUndefined: Self = StObject.set(x, "colorMappingCollection", js.undefined)
       
-      inline def setColorMappingCollectionVarargs(value: ColorMappingCollection*): Self = StObject.set(x, "colorMappingCollection", js.Array(value :_*))
+      inline def setColorMappingCollectionVarargs(value: ColorMappingCollection*): Self = StObject.set(x, "colorMappingCollection", js.Array(value*))
       
       inline def setDefaultColumnStyle(value: DefaultColumnStyle): Self = StObject.set(x, "defaultColumnStyle", value.asInstanceOf[js.Any])
       
@@ -923,7 +923,7 @@ object HeatMap {
       
       inline def setHeatMapCellUndefined: Self = StObject.set(x, "heatMapCell", js.undefined)
       
-      inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
@@ -939,15 +939,15 @@ object HeatMap {
       
       inline def setItemsMappingUndefined: Self = StObject.set(x, "itemsMapping", js.undefined)
       
-      inline def setItemsSource(value: js.Any): Self = StObject.set(x, "itemsSource", value.asInstanceOf[js.Any])
+      inline def setItemsSource(value: Any): Self = StObject.set(x, "itemsSource", value.asInstanceOf[js.Any])
       
       inline def setItemsSourceUndefined: Self = StObject.set(x, "itemsSource", js.undefined)
       
-      inline def setLegendCollection(value: js.Array[js.Any]): Self = StObject.set(x, "legendCollection", value.asInstanceOf[js.Any])
+      inline def setLegendCollection(value: js.Array[Any]): Self = StObject.set(x, "legendCollection", value.asInstanceOf[js.Any])
       
       inline def setLegendCollectionUndefined: Self = StObject.set(x, "legendCollection", js.undefined)
       
-      inline def setLegendCollectionVarargs(value: js.Any*): Self = StObject.set(x, "legendCollection", js.Array(value :_*))
+      inline def setLegendCollectionVarargs(value: Any*): Self = StObject.set(x, "legendCollection", js.Array(value*))
       
       inline def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
       
@@ -957,7 +957,7 @@ object HeatMap {
       
       inline def setTooltipSettingsUndefined: Self = StObject.set(x, "tooltipSettings", js.undefined)
       
-      inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }

@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.anon.Filename
 import typings.babylonjs.anon.GamepadIndices
+import typings.babylonjs.anon.Path
 import typings.babylonjs.anon.Pressed
 import typings.babylonjs.anon.Pulse
 import typings.babylonjs.babylonjsStrings._empty
@@ -31,6 +32,7 @@ object webXRAbstractMotionControllerMod {
       * @param gamepadObject The gamepad object correlating to this controller
       * @param handedness handedness (left/right/none) of this controller
       * @param _doNotLoadControllerMesh set this flag to ignore the mesh loading
+      * @param _controllerCache a cache holding controller models already loaded in this session
       */
     def this(
       scene: Scene,
@@ -55,8 +57,52 @@ object webXRAbstractMotionControllerMod {
       * handedness (left/right/none) of this controller
       */
     handedness: MotionControllerHandedness,
-      _doNotLoadControllerMesh: Boolean
+      /**
+      * @hidden
+      */
+    _doNotLoadControllerMesh: Boolean
     ) = this()
+    def this(
+      scene: Scene,
+      layout: IMotionControllerLayout,
+      /**
+      * The gamepad object correlating to this controller
+      */
+    gamepadObject: IMinimalMotionControllerObject,
+      /**
+      * handedness (left/right/none) of this controller
+      */
+    handedness: MotionControllerHandedness,
+      /**
+      * @hidden
+      */
+    _doNotLoadControllerMesh: Boolean,
+      _controllerCache: js.Array[Filename]
+    ) = this()
+    def this(
+      scene: Scene,
+      layout: IMotionControllerLayout,
+      /**
+      * The gamepad object correlating to this controller
+      */
+    gamepadObject: IMinimalMotionControllerObject,
+      /**
+      * handedness (left/right/none) of this controller
+      */
+    handedness: MotionControllerHandedness,
+      /**
+      * @hidden
+      */
+    _doNotLoadControllerMesh: Unit,
+      _controllerCache: js.Array[Filename]
+    ) = this()
+    
+    /* private */ var _controllerCache: Any = js.native
+    
+    /**
+      * @hidden
+      */
+    var _doNotLoadControllerMesh: Boolean = js.native
     
     /* protected */ def _getChildByName(node: AbstractMesh, name: String): js.UndefOr[AbstractMesh] = js.native
     
@@ -64,11 +110,11 @@ object webXRAbstractMotionControllerMod {
       * Get the filename and path for this controller's model
       * @returns a map of filename and path
       */
-    /* protected */ def _getFilenameAndPath(): Filename = js.native
+    /* protected */ def _getFilenameAndPath(): Path = js.native
     
-    /* private */ var _getGenericFilenameAndPath: js.Any = js.native
+    /* private */ var _getGenericFilenameAndPath: Any = js.native
     
-    /* private */ var _getGenericParentMesh: js.Any = js.native
+    /* private */ var _getGenericParentMesh: Any = js.native
     
     /* protected */ def _getImmediateChildByName(node: AbstractMesh, name: String): js.UndefOr[AbstractMesh] = js.native
     
@@ -80,18 +126,19 @@ object webXRAbstractMotionControllerMod {
       */
     /* protected */ def _getModelLoadingConstraints(): Boolean = js.native
     
-    /* private */ var _initComponent: js.Any = js.native
+    /* private */ var _initComponent: Any = js.native
     
     /**
       * Moves the axis on the controller mesh based on its current state
-      * @param axis the index of the axis
+      * @param axisMap
       * @param axisValue the value of the axis which determines the meshes new position
+      * @param fixValueCoordinates
       * @hidden
       */
     /* protected */ def _lerpTransform(axisMap: IMotionControllerMeshMap, axisValue: Double): Unit = js.native
     /* protected */ def _lerpTransform(axisMap: IMotionControllerMeshMap, axisValue: Double, fixValueCoordinates: Boolean): Unit = js.native
     
-    /* private */ var _modelReady: js.Any = js.native
+    /* private */ var _modelReady: Any = js.native
     
     /**
       * This function will be called after the model was successfully loaded and can be used
@@ -137,7 +184,7 @@ object webXRAbstractMotionControllerMod {
     /**
       * Returns all components of specific type
       * @param type the type to search for
-      * @return an array of components with this type
+      * @returns an array of components with this type
       */
     def getAllComponentsOfType(`type`: MotionControllerComponentType): js.Array[WebXRControllerComponent] = js.native
     
@@ -157,7 +204,7 @@ object webXRAbstractMotionControllerMod {
     /**
       * Get the first component of specific type
       * @param type type of component to find
-      * @return a controller component or null if not found
+      * @returns a controller component or null if not found
       */
     def getComponentOfType(`type`: MotionControllerComponentType): Nullable[WebXRControllerComponent] = js.native
     
@@ -175,7 +222,7 @@ object webXRAbstractMotionControllerMod {
     /**
       * Backwards compatibility due to a deeply-integrated typo
       */
-    def handness: XREye = js.native
+    def handness: MotionControllerHandedness = js.native
     
     /* protected */ var layout: IMotionControllerLayout = js.native
     
@@ -257,17 +304,17 @@ object webXRAbstractMotionControllerMod {
       
       inline def setAxes(value: js.Array[Double]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      inline def setAxesVarargs(value: Double*): Self = StObject.set(x, "axes", js.Array(value :_*))
+      inline def setAxesVarargs(value: Double*): Self = StObject.set(x, "axes", js.Array(value*))
       
       inline def setButtons(value: js.Array[Pressed]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      inline def setButtonsVarargs(value: Pressed*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: Pressed*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setHapticActuators(value: js.Array[Pulse]): Self = StObject.set(x, "hapticActuators", value.asInstanceOf[js.Any])
       
       inline def setHapticActuatorsUndefined: Self = StObject.set(x, "hapticActuators", js.undefined)
       
-      inline def setHapticActuatorsVarargs(value: Pulse*): Self = StObject.set(x, "hapticActuators", js.Array(value :_*))
+      inline def setHapticActuatorsVarargs(value: Pulse*): Self = StObject.set(x, "hapticActuators", js.Array(value*))
     }
   }
   
@@ -444,7 +491,7 @@ object webXRAbstractMotionControllerMod {
       
       inline def setFallbackProfileIds(value: js.Array[String]): Self = StObject.set(x, "fallbackProfileIds", value.asInstanceOf[js.Any])
       
-      inline def setFallbackProfileIdsVarargs(value: String*): Self = StObject.set(x, "fallbackProfileIds", js.Array(value :_*))
+      inline def setFallbackProfileIdsVarargs(value: String*): Self = StObject.set(x, "fallbackProfileIds", js.Array(value*))
       
       inline def setLayouts(value: IMotionControllerLayoutMap): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
       

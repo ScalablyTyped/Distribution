@@ -36,13 +36,13 @@ object baseSelectedItemsListTypesMod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value*))
     }
   }
   
   trait IBaseSelectedItemsListProps[T]
     extends StObject
-       with ClassAttributes[js.Any] {
+       with ClassAttributes[Any] {
     
     /**
       * A callback on whether this item can be deleted
@@ -138,7 +138,7 @@ object baseSelectedItemsListTypesMod {
       
       inline def setDefaultSelectedItemsUndefined: Self = StObject.set(x, "defaultSelectedItems", js.undefined)
       
-      inline def setDefaultSelectedItemsVarargs(value: T*): Self = StObject.set(x, "defaultSelectedItems", js.Array(value :_*))
+      inline def setDefaultSelectedItemsVarargs(value: T*): Self = StObject.set(x, "defaultSelectedItems", js.Array(value*))
       
       inline def setOnChange(value: /* items */ js.UndefOr[js.Array[T]] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
@@ -172,7 +172,7 @@ object baseSelectedItemsListTypesMod {
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
-      inline def setSelectedItemsVarargs(value: T*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+      inline def setSelectedItemsVarargs(value: T*): Self = StObject.set(x, "selectedItems", js.Array(value*))
       
       inline def setSelection(value: Selection[IObjectWithKey]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       

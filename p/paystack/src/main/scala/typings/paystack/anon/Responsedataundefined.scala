@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined paystack.paystack.Response & {  data :undefined} */
 trait Responsedataundefined
   extends StObject
-     with /* others */ StringDictionary[js.Any] {
+     with /* others */ StringDictionary[Any] {
   
-  var data: js.UndefOr[js.Any] & Unit
+  var data: js.UndefOr[Any] & Unit
   
   var message: String
   
@@ -18,14 +18,14 @@ trait Responsedataundefined
 }
 object Responsedataundefined {
   
-  inline def apply(data: js.UndefOr[js.Any] & Unit, message: String, status: Boolean): Responsedataundefined = {
+  inline def apply(data: js.UndefOr[Any] & Unit, message: String, status: Boolean): Responsedataundefined = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Responsedataundefined]
   }
   
   extension [Self <: Responsedataundefined](x: Self) {
     
-    inline def setData(value: js.UndefOr[js.Any] & Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.UndefOr[Any] & Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

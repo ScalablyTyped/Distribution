@@ -10,10 +10,10 @@ JavaScript library to make drawing animation on SVG
 | ------------------ | :-------------: |
 | Full name          | vivus |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 17 |
-| # downloads        | 195515 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 23792.0 |
+| # stars            | 14246.0 |
 
 ## Links
 - [Homepage](https://github.com/maxwellito/vivus)

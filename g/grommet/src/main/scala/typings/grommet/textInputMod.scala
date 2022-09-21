@@ -8,62 +8,30 @@ import typings.grommet.dropMod.DropProps
 import typings.grommet.grommetStrings.full
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
-import typings.grommet.grommetStrings.onSelect
-import typings.grommet.grommetStrings.placeholder
-import typings.grommet.grommetStrings.size
 import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.xlarge
 import typings.grommet.grommetStrings.xsmall
-import typings.grommet.utilsMod.Omit
+import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.PlaceHolderType
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
-import typings.react.mod.DetailedHTMLProps
-import typings.react.mod.InputHTMLAttributes
+import typings.grommet.utilsMod.TextAlignType
+import typings.react.mod.FC
 import typings.react.mod.global.JSX.Element
-import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textInputMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/TextInput", "TextInput")
   @js.native
-  class TextInput protected ()
-    extends Component[
-          TextInputProps & (Omit[
-            DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-            onSelect | size | placeholder
-          ]), 
-          ComponentState, 
-          js.Any
-        ] {
-    def this(props: TextInputProps & (Omit[
-            DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-            onSelect | size | placeholder
-          ])) = this()
-    def this(
-      props: TextInputProps & (Omit[
-            DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-            onSelect | size | placeholder
-          ]),
-      context: js.Any
-    ) = this()
-  }
-  @JSImport("grommet/components/TextInput", "TextInput")
-  @js.native
-  val TextInput: ComponentClass[
-    TextInputProps & (Omit[
-      DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-      onSelect | size | placeholder
-    ]), 
-    ComponentState
-  ] = js.native
+  val TextInput: FC[TextInputProps] = js.native
   
-  trait TextInputProps extends StObject {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'onSelect' | 'size' | 'placeholder'> ]: react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>[P]} */ trait TextInputProps extends StObject {
+    
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
+    
+    var defaultSuggestion: js.UndefOr[Double] = js.undefined
     
     var dropAlign: js.UndefOr[Bottom] = js.undefined
     
@@ -85,6 +53,8 @@ object textInputMod {
     
     var onSelect: js.UndefOr[js.Function1[/* x */ Suggestion, Unit]] = js.undefined
     
+    var onSuggestionSelect: js.UndefOr[js.Function1[/* x */ Suggestion, Unit]] = js.undefined
+    
     var onSuggestionsClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onSuggestionsOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -99,6 +69,8 @@ object textInputMod {
     
     var suggestions: js.UndefOr[js.Array[LabelValue | String]] = js.undefined
     
+    var textAlign: js.UndefOr[TextAlignType] = js.undefined
+    
     var value: js.UndefOr[String | Double] = js.undefined
   }
   object TextInputProps {
@@ -109,6 +81,14 @@ object textInputMod {
     }
     
     extension [Self <: TextInputProps](x: Self) {
+      
+      inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
+      
+      inline def setA11yTitleUndefined: Self = StObject.set(x, "a11yTitle", js.undefined)
+      
+      inline def setDefaultSuggestion(value: Double): Self = StObject.set(x, "defaultSuggestion", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultSuggestionUndefined: Self = StObject.set(x, "defaultSuggestion", js.undefined)
       
       inline def setDropAlign(value: Bottom): Self = StObject.set(x, "dropAlign", value.asInstanceOf[js.Any])
       
@@ -150,6 +130,10 @@ object textInputMod {
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
+      inline def setOnSuggestionSelect(value: /* x */ Suggestion => Unit): Self = StObject.set(x, "onSuggestionSelect", js.Any.fromFunction1(value))
+      
+      inline def setOnSuggestionSelectUndefined: Self = StObject.set(x, "onSuggestionSelect", js.undefined)
+      
       inline def setOnSuggestionsClose(value: () => Unit): Self = StObject.set(x, "onSuggestionsClose", js.Any.fromFunction0(value))
       
       inline def setOnSuggestionsCloseUndefined: Self = StObject.set(x, "onSuggestionsClose", js.undefined)
@@ -178,7 +162,11 @@ object textInputMod {
       
       inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
       
-      inline def setSuggestionsVarargs(value: (LabelValue | String)*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+      inline def setSuggestionsVarargs(value: (LabelValue | String)*): Self = StObject.set(x, "suggestions", js.Array(value*))
+      
+      inline def setTextAlign(value: TextAlignType): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
       inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

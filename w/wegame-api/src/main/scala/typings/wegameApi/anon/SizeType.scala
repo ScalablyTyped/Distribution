@@ -53,11 +53,11 @@ object SizeType {
     
     inline def setSizeType(value: (js.Array[original | compressed]) | (js.Tuple2[original, compressed])): Self = StObject.set(x, "sizeType", value.asInstanceOf[js.Any])
     
-    inline def setSizeTypeVarargs(value: (original | compressed)*): Self = StObject.set(x, "sizeType", js.Array(value :_*))
+    inline def setSizeTypeVarargs(value: (original | compressed)*): Self = StObject.set(x, "sizeType", js.Array(value*))
     
     inline def setSourceType(value: (js.Array[album | camera]) | (js.Tuple2[album, camera])): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
-    inline def setSourceTypeVarargs(value: (album | camera)*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
+    inline def setSourceTypeVarargs(value: (album | camera)*): Self = StObject.set(x, "sourceType", js.Array(value*))
     
     inline def setSuccess(value: /* res */ TempFilePaths => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

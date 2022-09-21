@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColsValue extends StObject {
   
-  var cols: js.Array[js.Any]
+  var cols: js.Array[Any]
   
-  var value: js.Array[js.Any]
+  var value: js.Array[Any]
 }
 object ColsValue {
   
-  inline def apply(cols: js.Array[js.Any], value: js.Array[js.Any]): ColsValue = {
+  inline def apply(cols: js.Array[Any], value: js.Array[Any]): ColsValue = {
     val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColsValue]
   }
   
   extension [Self <: ColsValue](x: Self) {
     
-    inline def setCols(value: js.Array[js.Any]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    inline def setCols(value: js.Array[Any]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
-    inline def setColsVarargs(value: js.Any*): Self = StObject.set(x, "cols", js.Array(value :_*))
+    inline def setColsVarargs(value: Any*): Self = StObject.set(x, "cols", js.Array(value*))
     
-    inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

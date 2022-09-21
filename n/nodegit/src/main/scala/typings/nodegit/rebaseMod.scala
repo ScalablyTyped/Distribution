@@ -15,7 +15,7 @@ object rebaseMod {
   
   @JSImport("nodegit/rebase", "Rebase")
   @js.native
-  class Rebase () extends StObject {
+  open class Rebase () extends StObject {
     
     def abort(): Double = js.native
     

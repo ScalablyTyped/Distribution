@@ -12,8 +12,8 @@ object templateLayoutFactory {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createClass(template: String): IClassConstructor[Base] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClass")(template.asInstanceOf[js.Any]).asInstanceOf[IClassConstructor[Base]]
-  inline def createClass(template: String, overrides: js.Object): IClassConstructor[Base] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClass")(template.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[IClassConstructor[Base]]
-  inline def createClass(template: String, overrides: js.Object, staticMethods: js.Object): IClassConstructor[Base] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClass")(template.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any], staticMethods.asInstanceOf[js.Any])).asInstanceOf[IClassConstructor[Base]]
-  inline def createClass(template: String, overrides: Unit, staticMethods: js.Object): IClassConstructor[Base] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClass")(template.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any], staticMethods.asInstanceOf[js.Any])).asInstanceOf[IClassConstructor[Base]]
+  inline def createClass[O /* <: js.Object */, S /* <: js.Object */](template: String): IClassConstructor[Base & O & S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClass")(template.asInstanceOf[js.Any]).asInstanceOf[IClassConstructor[Base & O & S]]
+  inline def createClass[O /* <: js.Object */, S /* <: js.Object */](template: String, overrides: O): IClassConstructor[Base & O & S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClass")(template.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[IClassConstructor[Base & O & S]]
+  inline def createClass[O /* <: js.Object */, S /* <: js.Object */](template: String, overrides: O, staticMethods: S): IClassConstructor[Base & O & S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClass")(template.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any], staticMethods.asInstanceOf[js.Any])).asInstanceOf[IClassConstructor[Base & O & S]]
+  inline def createClass[O /* <: js.Object */, S /* <: js.Object */](template: String, overrides: Unit, staticMethods: S): IClassConstructor[Base & O & S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClass")(template.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any], staticMethods.asInstanceOf[js.Any])).asInstanceOf[IClassConstructor[Base & O & S]]
 }

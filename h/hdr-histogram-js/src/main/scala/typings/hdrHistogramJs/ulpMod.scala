@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ulpMod {
   
-  @JSImport("hdr-histogram-js/ulp", JSImport.Namespace)
+  @JSImport("hdr-histogram-js/dist/ulp", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

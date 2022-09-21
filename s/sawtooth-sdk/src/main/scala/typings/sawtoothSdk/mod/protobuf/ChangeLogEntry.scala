@@ -6,7 +6,6 @@ import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.ChangeLogEntry.ISuccessor
 import typings.sawtoothSdk.protobufMod.IChangeLogEntry
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ChangeLogEntry.
   * @param [properties] Properties to set
   */
-class ChangeLogEntry ()
+open class ChangeLogEntry ()
   extends typings.sawtoothSdk.protobufMod.ChangeLogEntry {
   def this(properties: IChangeLogEntry) = this()
 }
@@ -35,7 +34,7 @@ object ChangeLogEntry {
     * Constructs a new Successor.
     * @param [properties] Properties to set
     */
-  class Successor ()
+  open class Successor ()
     extends typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor {
     def this(properties: ISuccessor) = this()
   }
@@ -54,6 +53,8 @@ object ChangeLogEntry {
     inline def create(): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor]
     inline def create(properties: ISuccessor): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor]
     /**
       * Decodes a Successor message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -65,9 +66,8 @@ object ChangeLogEntry {
     /* static member */
     inline def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor]
     inline def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor]
-    inline def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor]
-    inline def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor]
     /**
       * Decodes a Successor message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -77,7 +77,6 @@ object ChangeLogEntry {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor]
-    inline def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor]
     
     /**
       * Encodes the specified Successor message. Does not implicitly {@link ChangeLogEntry.Successor.verify|verify} messages.
@@ -105,7 +104,7 @@ object ChangeLogEntry {
       * @returns Successor
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor]
     
     /**
       * Creates a plain object from a Successor message. Also converts values to other types if specified.
@@ -114,8 +113,8 @@ object ChangeLogEntry {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: typings.sawtoothSdk.protobufMod.ChangeLogEntry.Successor, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a Successor message.
@@ -123,7 +122,7 @@ object ChangeLogEntry {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -134,6 +133,8 @@ object ChangeLogEntry {
   inline def create(): typings.sawtoothSdk.protobufMod.ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry]
   inline def create(properties: IChangeLogEntry): typings.sawtoothSdk.protobufMod.ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry]
   
+  inline def decode(reader: js.typedarray.Uint8Array): typings.sawtoothSdk.protobufMod.ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ChangeLogEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry]
   /**
     * Decodes a ChangeLogEntry message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -144,9 +145,8 @@ object ChangeLogEntry {
     */
   inline def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry]
   inline def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ChangeLogEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry]
-  inline def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry]
-  inline def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ChangeLogEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.sawtoothSdk.protobufMod.ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry]
   /**
     * Decodes a ChangeLogEntry message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -155,7 +155,6 @@ object ChangeLogEntry {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry]
-  inline def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry]
   
   /**
     * Encodes the specified ChangeLogEntry message. Does not implicitly {@link ChangeLogEntry.verify|verify} messages.
@@ -180,7 +179,7 @@ object ChangeLogEntry {
     * @param object Plain object
     * @returns ChangeLogEntry
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry]
+  inline def fromObject(`object`: StringDictionary[Any]): typings.sawtoothSdk.protobufMod.ChangeLogEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ChangeLogEntry]
   
   /**
     * Creates a plain object from a ChangeLogEntry message. Also converts values to other types if specified.
@@ -188,13 +187,13 @@ object ChangeLogEntry {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: typings.sawtoothSdk.protobufMod.ChangeLogEntry): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: typings.sawtoothSdk.protobufMod.ChangeLogEntry, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: typings.sawtoothSdk.protobufMod.ChangeLogEntry): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: typings.sawtoothSdk.protobufMod.ChangeLogEntry, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ChangeLogEntry message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

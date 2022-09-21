@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.bigqueryreservation" : "1.0.20201106"
+      "@maxim_mazurok/gapi.client.bigqueryreservation" : "1.0.20220730"
     }
   ],
   "test-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.bigqueryreservation" : "1.0.20201106"
+      "@maxim_mazurok/gapi.client.bigqueryreservation" : "1.0.20220730"
     }
   ],
   "compile-devDependencies" : [

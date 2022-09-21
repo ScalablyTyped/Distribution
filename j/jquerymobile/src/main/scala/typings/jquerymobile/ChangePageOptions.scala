@@ -10,7 +10,7 @@ trait ChangePageOptions extends StObject {
   
   var changeHash: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var dataUrl: js.UndefOr[String] = js.undefined
   
@@ -45,7 +45,7 @@ object ChangePageOptions {
     
     inline def setChangeHashUndefined: Self = StObject.set(x, "changeHash", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

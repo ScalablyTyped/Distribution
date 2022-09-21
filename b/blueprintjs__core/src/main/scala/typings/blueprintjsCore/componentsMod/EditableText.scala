@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.componentsMod
 
-import typings.blueprintjsCore.editableTextMod.IEditableTextProps
+import typings.blueprintjsCore.editableTextMod.EditableTextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "EditableText")
 @js.native
-class EditableText protected ()
+open class EditableText protected ()
   extends typings.blueprintjsCore.editableTextMod.EditableText {
-  def this(props: IEditableTextProps) = this()
-  def this(props: IEditableTextProps, context: js.Any) = this()
+  def this(props: EditableTextProps) = this()
+  def this(props: EditableTextProps, context: Any) = this()
 }
 /* static members */
 object EditableText {
@@ -21,8 +21,8 @@ object EditableText {
   
   @JSImport("@blueprintjs/core/lib/esm/components", "EditableText.defaultProps")
   @js.native
-  def defaultProps: IEditableTextProps = js.native
-  inline def defaultProps_=(x: IEditableTextProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: EditableTextProps = js.native
+  inline def defaultProps_=(x: EditableTextProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core/lib/esm/components", "EditableText.displayName")
   @js.native

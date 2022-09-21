@@ -29,7 +29,7 @@ object NodeOverrides {
     
     inline def setNodePropertyOverridesUndefined: Self = StObject.set(x, "nodePropertyOverrides", js.undefined)
     
-    inline def setNodePropertyOverridesVarargs(value: NodePropertyOverride*): Self = StObject.set(x, "nodePropertyOverrides", js.Array(value :_*))
+    inline def setNodePropertyOverridesVarargs(value: NodePropertyOverride*): Self = StObject.set(x, "nodePropertyOverrides", js.Array(value*))
     
     inline def setNumNodes(value: Integer): Self = StObject.set(x, "numNodes", value.asInstanceOf[js.Any])
     

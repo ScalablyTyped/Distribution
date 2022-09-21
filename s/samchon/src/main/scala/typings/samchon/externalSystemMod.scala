@@ -38,16 +38,16 @@ object externalSystemMod {
     /**
       * @hidden
       */
-    /* private */ var _Handle_close: js.Any = js.native
+    /* private */ var _Handle_close: Any = js.native
     
     /* InferMemberOverrides */
     override def addEventListener(
       `type`: Type,
       listener: Listener[
           ExternalSystemRole, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet<T> */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.Iterator<T> */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.ReverseIterator<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet<T> */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.Iterator<T> */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.ReverseIterator<T> */ Any
         ]
     ): Unit = js.native
     
@@ -67,7 +67,7 @@ object externalSystemMod {
     /**
       * @hidden
       */
-    /* private */ var communicator_ : js.Any = js.native
+    /* private */ var communicator_ : Any = js.native
     
     /**
       * Default Destructor.
@@ -102,9 +102,9 @@ object externalSystemMod {
     override def dispatchEvent(
       event: CollectionEvent[
           ExternalSystemRole, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet<T> */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.Iterator<T> */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.ReverseIterator<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet<T> */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.Iterator<T> */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.ReverseIterator<T> */ Any
         ]
     ): Unit = js.native
     
@@ -136,9 +136,9 @@ object externalSystemMod {
       `type`: Type,
       listener: Listener[
           ExternalSystemRole, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet<T> */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.Iterator<T> */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.ReverseIterator<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet<T> */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.Iterator<T> */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMultiSet.ReverseIterator<T> */ Any
         ]
     ): Unit = js.native
     
@@ -165,6 +165,6 @@ object externalSystemMod {
     /**
       * @hidden
       */
-    /* private */ var system_array_ : js.Any = js.native
+    /* private */ var system_array_ : Any = js.native
   }
 }

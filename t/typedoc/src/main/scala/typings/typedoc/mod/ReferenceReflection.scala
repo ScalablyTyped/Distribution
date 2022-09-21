@@ -6,15 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typedoc", "ReferenceReflection")
 @js.native
-class ReferenceReflection protected ()
-  extends typings.typedoc.reflectionsMod.ReferenceReflection {
+open class ReferenceReflection protected ()
+  extends typings.typedoc.modelsMod.ReferenceReflection {
+  /**
+    * Creates a reference reflection. Should only be used within the factory function.
+    * @param name
+    * @param state
+    * @param parent
+    *
+    * @internal
+    */
   def this(
     name: String,
-    state: /* import warning: importer.ImportType#apply Failed type conversion: typedoc.typedoc/dist/lib/models/reflections/reference.ReferenceReflection['_state'] */ js.Any
+    state: /* import warning: importer.ImportType#apply Failed type conversion: typedoc.typedoc/dist/lib/models/reflections/reference.ReferenceReflection['_target'] */ js.Any
   ) = this()
   def this(
     name: String,
-    state: /* import warning: importer.ImportType#apply Failed type conversion: typedoc.typedoc/dist/lib/models/reflections/reference.ReferenceReflection['_state'] */ js.Any,
+    state: /* import warning: importer.ImportType#apply Failed type conversion: typedoc.typedoc/dist/lib/models/reflections/reference.ReferenceReflection['_target'] */ js.Any,
     parent: typings.typedoc.abstractMod.Reflection
   ) = this()
 }

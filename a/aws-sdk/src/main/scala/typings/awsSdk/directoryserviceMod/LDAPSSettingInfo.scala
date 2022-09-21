@@ -19,7 +19,7 @@ trait LDAPSSettingInfo extends StObject {
   /**
     * The date and time when the LDAPS settings were last updated.
     */
-  var LastUpdatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LastUpdatedDateTime] = js.undefined
+  var LastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
 }
 object LDAPSSettingInfo {
   
@@ -38,7 +38,7 @@ object LDAPSSettingInfo {
     
     inline def setLDAPSStatusUndefined: Self = StObject.set(x, "LDAPSStatus", js.undefined)
     
-    inline def setLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "LastUpdatedDateTime", js.undefined)
   }

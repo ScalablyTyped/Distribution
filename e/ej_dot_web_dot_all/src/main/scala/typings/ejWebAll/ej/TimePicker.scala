@@ -1,6 +1,5 @@
 package typings.ejWebAll.ej
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -432,7 +431,7 @@ object TimePicker {
     /** Specifies the list of time range to be disabled.
       * @Default {{}}
       */
-    var disableTimeRanges: js.UndefOr[js.Any] = js.undefined
+    var disableTimeRanges: js.UndefOr[Any] = js.undefined
     
     /** Specifies the animation behavior in TimePicker.
       * @Default {true}
@@ -481,7 +480,7 @@ object TimePicker {
     /** It allows to define the characteristics of the TimePicker control. It will helps to extend the capability of an HTML element.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Sets the time interval between the two adjacent time values in the popup.
       * @Default {30}
@@ -554,17 +553,17 @@ object TimePicker {
     /** Set the jQuery validation error message in TimePicker.
       * @Default {null}
       */
-    var validationMessages: js.UndefOr[js.Any] = js.undefined
+    var validationMessages: js.UndefOr[Any] = js.undefined
     
     /** Set the jQuery validation rules in TimePicker.
       * @Default {null}
       */
-    var validationRules: js.UndefOr[js.Any] = js.undefined
+    var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Sets a specified time value on the TimePicker.
       * @Default {null}
       */
-    var value: js.UndefOr[String | Date] = js.undefined
+    var value: js.UndefOr[String | js.Date] = js.undefined
     
     /** Specifies the water mark text to be displayed in input text.
       * @Default {select a time}
@@ -612,7 +611,7 @@ object TimePicker {
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      inline def setDisableTimeRanges(value: js.Any): Self = StObject.set(x, "disableTimeRanges", value.asInstanceOf[js.Any])
+      inline def setDisableTimeRanges(value: Any): Self = StObject.set(x, "disableTimeRanges", value.asInstanceOf[js.Any])
       
       inline def setDisableTimeRangesUndefined: Self = StObject.set(x, "disableTimeRanges", js.undefined)
       
@@ -652,7 +651,7 @@ object TimePicker {
       
       inline def setHourIntervalUndefined: Self = StObject.set(x, "hourInterval", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -712,15 +711,15 @@ object TimePicker {
       
       inline def setTimeFormatUndefined: Self = StObject.set(x, "timeFormat", js.undefined)
       
-      inline def setValidationMessages(value: js.Any): Self = StObject.set(x, "validationMessages", value.asInstanceOf[js.Any])
+      inline def setValidationMessages(value: Any): Self = StObject.set(x, "validationMessages", value.asInstanceOf[js.Any])
       
       inline def setValidationMessagesUndefined: Self = StObject.set(x, "validationMessages", js.undefined)
       
-      inline def setValidationRules(value: js.Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      inline def setValidationRules(value: Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
       inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
       
-      inline def setValue(value: String | Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       

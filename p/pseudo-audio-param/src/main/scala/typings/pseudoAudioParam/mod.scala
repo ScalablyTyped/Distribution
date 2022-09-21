@@ -10,7 +10,7 @@ object mod {
   /** Simulate scheduled AudioParam values */
   @JSImport("pseudo-audio-param", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with PseudoAudioParam {
     def this(defaultValue: Double) = this()

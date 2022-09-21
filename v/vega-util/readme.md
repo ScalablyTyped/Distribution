@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-util
 
-Typings are for version 1.16.0
+Typings are for version 1.17.0
 
 ## Library description:
 JavaScript utilities for Vega.
@@ -10,10 +10,10 @@ JavaScript utilities for Vega.
 | ------------------ | :-------------: |
 | Full name          | vega-util |
 | Keywords           | vega, utilities |
-| # releases         | 17 |
-| # dependents       | 34 |
-| # downloads        | 3497289 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1911974.0 |
+| # stars            | 9848.0 |
 
 ## Links
 - [Homepage](https://github.com/vega/vega#readme)

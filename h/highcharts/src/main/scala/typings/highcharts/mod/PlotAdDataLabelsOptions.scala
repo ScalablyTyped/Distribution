@@ -90,9 +90,10 @@ trait PlotAdDataLabelsOptions extends StObject {
     * (Highcharts, Highstock, Gantt) Whether to defer displaying the data
     * labels until the initial series animation has finished. Setting to
     * `false` renders the data label immediately. If set to `true` inherits the
-    * defer time set in plotOptions.series.animation.
+    * defer time set in plotOptions.series.animation. If set to a number, a
+    * defer time is specified in milliseconds.
     */
-  var defer: js.UndefOr[Boolean] = js.undefined
+  var defer: js.UndefOr[Boolean | Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the data
@@ -250,11 +251,11 @@ trait PlotAdDataLabelsOptions extends StObject {
   var y: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The Z index of the data labels.
-    * The default Z index puts it above the series. Use a Z index of 2 to
-    * display it behind the series.
+    * (Highcharts, Highstock, Highmaps, Gantt) The z index of the data labels.
+    * Use a `zIndex` of 6 to display it above the series, or use a `zIndex` of
+    * 2 to display it behind the series.
     */
-  var z: js.UndefOr[Double] = js.undefined
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object PlotAdDataLabelsOptions {
   
@@ -307,7 +308,7 @@ object PlotAdDataLabelsOptions {
     
     inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     
-    inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Boolean | Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
     inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
     
@@ -389,8 +390,8 @@ object PlotAdDataLabelsOptions {
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

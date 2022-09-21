@@ -19,6 +19,7 @@ import typings.antd.antdStrings.decimal
 import typings.antd.antdStrings.descending
 import typings.antd.antdStrings.dialog
 import typings.antd.antdStrings.email
+import typings.antd.antdStrings.environment
 import typings.antd.antdStrings.execute
 import typings.antd.antdStrings.grammar
 import typings.antd.antdStrings.grid
@@ -49,11 +50,13 @@ import typings.antd.antdStrings.text_
 import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.url
+import typings.antd.antdStrings.user
 import typings.antd.antdStrings.vertical
 import typings.antd.antdStrings.yes
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -85,13 +88,14 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<@ant-design/icons.@ant-design/icons/lib/components/AntdIcon.AntdIconProps, 'children' | 'size' | 'cite' | 'data' | 'form' | 'label' | 'slot' | 'span' | 'style' | 'summary' | 'title' | 'pattern' | 'className' | 'value' | 'disabled' | 'dir' | 'max' | 'required' | 'default' | 'high' | 'low' | 'start' | 'open' | 'media' | 'hidden' | 'async' | 'defer' | 'manifest' | 'color' | 'content' | 'wrap' | 'multiple' | 'height' | 'rotate' | 'translate' | 'width' | 'prefix' | 'src' | 'key' | 'list' | 'step' | 'aria-label' | 'spin' | 'accept' | 'acceptCharset' | 'action' | 'allowFullScreen' | 'allowTransparency' | 'alt' | 'as' | 'autoComplete' | 'autoFocus' | 'autoPlay' | 'capture' | 'cellPadding' | 'cellSpacing' | 'charSet' | 'challenge' | 'checked' | 'classID' | 'cols' | 'colSpan' | 'controls' | 'coords' | 'crossOrigin' | 'dateTime' | 'download' | 'encType' | 'formAction' | 'formEncType' | 'formMethod' | 'formNoValidate' | 'formTarget' | 'frameBorder' | 'headers' | 'href' | 'hrefLang' | 'htmlFor' | 'httpEquiv' | 'integrity' | 'keyParams' | 'keyType' | 'kind' | 'loop' | 'marginHeight' | 'marginWidth' | 'maxLength' | 'mediaGroup' | 'method' | 'min' | 'minLength' | 'muted' | 'name' | 'nonce' | 'noValidate' | 'optimum' | 'placeholder' | 'playsInline' | 'poster' | 'preload' | 'readOnly' | 'rel' | 'reversed' | 'rows' | 'rowSpan' | 'sandbox' | 'scope' | 'scoped' | 'scrolling' | 'seamless' | 'selected' | 'shape' | 'sizes' | 'srcDoc' | 'srcLang' | 'srcSet' | 'target' | 'type' | 'useMap' | 'wmode' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'contentEditable' | 'contextMenu' | 'draggable' | 'id' | 'lang' | 'spellCheck' | 'tabIndex' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'twoToneColor'> & react.react.RefAttributes<std.HTMLSpanElement> */
+/* Inlined std.Pick<@ant-design/icons.@ant-design/icons/lib/components/AntdIcon.AntdIconProps, 'children' | 'disabled' | 'value' | 'cite' | 'data' | 'form' | 'label' | 'slot' | 'span' | 'style' | 'summary' | 'title' | 'pattern' | 'size' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'hidden' | 'id' | 'lang' | 'placeholder' | 'spellCheck' | 'tabIndex' | 'translate' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'color' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'wrap' | 'content' | 'start' | 'default' | 'open' | 'multiple' | 'list' | 'height' | 'key' | 'step' | 'width' | 'autoFocus' | 'name' | 'autoComplete' | 'type' | 'useMap' | 'max' | 'required' | 'high' | 'low' | 'media' | 'rotate' | 'acceptCharset' | 'action' | 'method' | 'noValidate' | 'target' | 'nonce' | 'async' | 'manifest' | 'src' | 'accept' | 'allowFullScreen' | 'allowTransparency' | 'alt' | 'as' | 'autoPlay' | 'capture' | 'cellPadding' | 'cellSpacing' | 'charSet' | 'challenge' | 'checked' | 'classID' | 'cols' | 'colSpan' | 'controls' | 'coords' | 'crossOrigin' | 'dateTime' | 'defer' | 'download' | 'encType' | 'formAction' | 'formEncType' | 'formMethod' | 'formNoValidate' | 'formTarget' | 'frameBorder' | 'headers' | 'href' | 'hrefLang' | 'htmlFor' | 'httpEquiv' | 'integrity' | 'keyParams' | 'keyType' | 'kind' | 'loop' | 'marginHeight' | 'marginWidth' | 'maxLength' | 'mediaGroup' | 'min' | 'minLength' | 'muted' | 'optimum' | 'playsInline' | 'poster' | 'preload' | 'readOnly' | 'rel' | 'reversed' | 'rows' | 'rowSpan' | 'sandbox' | 'scope' | 'scoped' | 'scrolling' | 'seamless' | 'selected' | 'shape' | 'sizes' | 'srcDoc' | 'srcLang' | 'srcSet' | 'wmode' | 'spin' | 'twoToneColor'> & react.react.RefAttributes<std.HTMLSpanElement> */
 trait PickAntdIconPropschildren extends StObject {
   
   var default: js.UndefOr[Boolean] = js.undefined
@@ -114,11 +118,11 @@ trait PickAntdIconPropschildren extends StObject {
   
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
   
-  var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+  var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
   
-  var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+  var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
   
@@ -136,21 +140,21 @@ trait PickAntdIconPropschildren extends StObject {
   
   var `aria-details`: js.UndefOr[String] = js.undefined
   
-  var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+  var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
   
   var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
-  var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+  var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-flowto`: js.UndefOr[String] = js.undefined
   
-  var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+  var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
   
-  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+  var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
   
@@ -164,11 +168,11 @@ trait PickAntdIconPropschildren extends StObject {
   
   var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
   
-  var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+  var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+  var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+  var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
   
@@ -180,13 +184,13 @@ trait PickAntdIconPropschildren extends StObject {
   
   var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
   
-  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+  var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-relevant`: js.UndefOr[
     additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text_ | (`text additions`) | (`text removals`)
   ] = js.undefined
   
-  var `aria-required`: js.UndefOr[Boolean] = js.undefined
+  var `aria-required`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-roledescription`: js.UndefOr[String] = js.undefined
   
@@ -196,7 +200,7 @@ trait PickAntdIconPropschildren extends StObject {
   
   var `aria-rowspan`: js.UndefOr[Double] = js.undefined
   
-  var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+  var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-setsize`: js.UndefOr[Double] = js.undefined
   
@@ -226,7 +230,7 @@ trait PickAntdIconPropschildren extends StObject {
   
   var autoSave: js.UndefOr[String] = js.undefined
   
-  var capture: js.UndefOr[Boolean | String] = js.undefined
+  var capture: js.UndefOr[Boolean | user | environment] = js.undefined
   
   var cellPadding: js.UndefOr[Double | String] = js.undefined
   
@@ -282,7 +286,7 @@ trait PickAntdIconPropschildren extends StObject {
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var download: js.UndefOr[js.Any] = js.undefined
+  var download: js.UndefOr[Any] = js.undefined
   
   var draggable: js.UndefOr[Booleanish] = js.undefined
   
@@ -320,7 +324,7 @@ trait PickAntdIconPropschildren extends StObject {
   
   var id: js.UndefOr[String] = js.undefined
   
-  var inlist: js.UndefOr[js.Any] = js.undefined
+  var inlist: js.UndefOr[Any] = js.undefined
   
   var inputMode: js.UndefOr[none | text_ | tel | url | email | numeric | decimal | search] = js.undefined
   
@@ -388,179 +392,179 @@ trait PickAntdIconPropschildren extends StObject {
   
   var onAbort: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onAbortCapture: js.UndefOr[js.Any] = js.undefined
+  var onAbortCapture: js.UndefOr[Any] = js.undefined
   
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onAnimationEndCapture: js.UndefOr[js.Any] = js.undefined
+  var onAnimationEndCapture: js.UndefOr[Any] = js.undefined
   
   var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onAnimationIterationCapture: js.UndefOr[js.Any] = js.undefined
+  var onAnimationIterationCapture: js.UndefOr[Any] = js.undefined
   
   var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onAnimationStartCapture: js.UndefOr[js.Any] = js.undefined
+  var onAnimationStartCapture: js.UndefOr[Any] = js.undefined
   
   var onAuxClick: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onAuxClickCapture: js.UndefOr[js.Any] = js.undefined
+  var onAuxClickCapture: js.UndefOr[Any] = js.undefined
   
   var onBeforeInput: js.UndefOr[FormEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onBeforeInputCapture: js.UndefOr[js.Any] = js.undefined
+  var onBeforeInputCapture: js.UndefOr[Any] = js.undefined
   
   var onBlur: js.UndefOr[FocusEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onBlurCapture: js.UndefOr[js.Any] = js.undefined
+  var onBlurCapture: js.UndefOr[Any] = js.undefined
   
   var onCanPlay: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onCanPlayCapture: js.UndefOr[js.Any] = js.undefined
+  var onCanPlayCapture: js.UndefOr[Any] = js.undefined
   
   var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onCanPlayThroughCapture: js.UndefOr[js.Any] = js.undefined
+  var onCanPlayThroughCapture: js.UndefOr[Any] = js.undefined
   
   var onChange: js.UndefOr[FormEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onChangeCapture: js.UndefOr[js.Any] = js.undefined
+  var onChangeCapture: js.UndefOr[Any] = js.undefined
   
   var onClick: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onClickCapture: js.UndefOr[js.Any] = js.undefined
+  var onClickCapture: js.UndefOr[Any] = js.undefined
   
   var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onCompositionEndCapture: js.UndefOr[js.Any] = js.undefined
+  var onCompositionEndCapture: js.UndefOr[Any] = js.undefined
   
   var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onCompositionStartCapture: js.UndefOr[js.Any] = js.undefined
+  var onCompositionStartCapture: js.UndefOr[Any] = js.undefined
   
   var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onCompositionUpdateCapture: js.UndefOr[js.Any] = js.undefined
+  var onCompositionUpdateCapture: js.UndefOr[Any] = js.undefined
   
   var onContextMenu: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onContextMenuCapture: js.UndefOr[js.Any] = js.undefined
+  var onContextMenuCapture: js.UndefOr[Any] = js.undefined
   
   var onCopy: js.UndefOr[ClipboardEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onCopyCapture: js.UndefOr[js.Any] = js.undefined
+  var onCopyCapture: js.UndefOr[Any] = js.undefined
   
   var onCut: js.UndefOr[ClipboardEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onCutCapture: js.UndefOr[js.Any] = js.undefined
+  var onCutCapture: js.UndefOr[Any] = js.undefined
   
   var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onDoubleClickCapture: js.UndefOr[js.Any] = js.undefined
+  var onDoubleClickCapture: js.UndefOr[Any] = js.undefined
   
   var onDrag: js.UndefOr[DragEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onDragCapture: js.UndefOr[js.Any] = js.undefined
+  var onDragCapture: js.UndefOr[Any] = js.undefined
   
   var onDragEnd: js.UndefOr[DragEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onDragEndCapture: js.UndefOr[js.Any] = js.undefined
+  var onDragEndCapture: js.UndefOr[Any] = js.undefined
   
   var onDragEnter: js.UndefOr[DragEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onDragEnterCapture: js.UndefOr[js.Any] = js.undefined
+  var onDragEnterCapture: js.UndefOr[Any] = js.undefined
   
   var onDragExit: js.UndefOr[DragEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onDragExitCapture: js.UndefOr[js.Any] = js.undefined
+  var onDragExitCapture: js.UndefOr[Any] = js.undefined
   
   var onDragLeave: js.UndefOr[DragEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onDragLeaveCapture: js.UndefOr[js.Any] = js.undefined
+  var onDragLeaveCapture: js.UndefOr[Any] = js.undefined
   
   var onDragOver: js.UndefOr[DragEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onDragOverCapture: js.UndefOr[js.Any] = js.undefined
+  var onDragOverCapture: js.UndefOr[Any] = js.undefined
   
   var onDragStart: js.UndefOr[DragEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onDragStartCapture: js.UndefOr[js.Any] = js.undefined
+  var onDragStartCapture: js.UndefOr[Any] = js.undefined
   
   var onDrop: js.UndefOr[DragEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onDropCapture: js.UndefOr[js.Any] = js.undefined
+  var onDropCapture: js.UndefOr[Any] = js.undefined
   
   var onDurationChange: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onDurationChangeCapture: js.UndefOr[js.Any] = js.undefined
+  var onDurationChangeCapture: js.UndefOr[Any] = js.undefined
   
   var onEmptied: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onEmptiedCapture: js.UndefOr[js.Any] = js.undefined
+  var onEmptiedCapture: js.UndefOr[Any] = js.undefined
   
   var onEncrypted: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onEncryptedCapture: js.UndefOr[js.Any] = js.undefined
+  var onEncryptedCapture: js.UndefOr[Any] = js.undefined
   
   var onEnded: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onEndedCapture: js.UndefOr[js.Any] = js.undefined
+  var onEndedCapture: js.UndefOr[Any] = js.undefined
   
   var onError: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onErrorCapture: js.UndefOr[js.Any] = js.undefined
+  var onErrorCapture: js.UndefOr[Any] = js.undefined
   
   var onFocus: js.UndefOr[FocusEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onFocusCapture: js.UndefOr[js.Any] = js.undefined
+  var onFocusCapture: js.UndefOr[Any] = js.undefined
   
-  var onGotPointerCapture: js.UndefOr[js.Any] = js.undefined
+  var onGotPointerCapture: js.UndefOr[Any] = js.undefined
   
-  var onGotPointerCaptureCapture: js.UndefOr[js.Any] = js.undefined
+  var onGotPointerCaptureCapture: js.UndefOr[Any] = js.undefined
   
   var onInput: js.UndefOr[FormEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onInputCapture: js.UndefOr[js.Any] = js.undefined
+  var onInputCapture: js.UndefOr[Any] = js.undefined
   
   var onInvalid: js.UndefOr[FormEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onInvalidCapture: js.UndefOr[js.Any] = js.undefined
+  var onInvalidCapture: js.UndefOr[Any] = js.undefined
   
   var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onKeyDownCapture: js.UndefOr[js.Any] = js.undefined
+  var onKeyDownCapture: js.UndefOr[Any] = js.undefined
   
   var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onKeyPressCapture: js.UndefOr[js.Any] = js.undefined
+  var onKeyPressCapture: js.UndefOr[Any] = js.undefined
   
   var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onKeyUpCapture: js.UndefOr[js.Any] = js.undefined
+  var onKeyUpCapture: js.UndefOr[Any] = js.undefined
   
   var onLoad: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onLoadCapture: js.UndefOr[js.Any] = js.undefined
+  var onLoadCapture: js.UndefOr[Any] = js.undefined
   
   var onLoadStart: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onLoadStartCapture: js.UndefOr[js.Any] = js.undefined
+  var onLoadStartCapture: js.UndefOr[Any] = js.undefined
   
   var onLoadedData: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onLoadedDataCapture: js.UndefOr[js.Any] = js.undefined
+  var onLoadedDataCapture: js.UndefOr[Any] = js.undefined
   
   var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onLoadedMetadataCapture: js.UndefOr[js.Any] = js.undefined
+  var onLoadedMetadataCapture: js.UndefOr[Any] = js.undefined
   
-  var onLostPointerCapture: js.UndefOr[js.Any] = js.undefined
+  var onLostPointerCapture: js.UndefOr[Any] = js.undefined
   
-  var onLostPointerCaptureCapture: js.UndefOr[js.Any] = js.undefined
+  var onLostPointerCaptureCapture: js.UndefOr[Any] = js.undefined
   
   var onMouseDown: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onMouseDownCapture: js.UndefOr[js.Any] = js.undefined
+  var onMouseDownCapture: js.UndefOr[Any] = js.undefined
   
   var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
   
@@ -568,143 +572,143 @@ trait PickAntdIconPropschildren extends StObject {
   
   var onMouseMove: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onMouseMoveCapture: js.UndefOr[js.Any] = js.undefined
+  var onMouseMoveCapture: js.UndefOr[Any] = js.undefined
   
   var onMouseOut: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onMouseOutCapture: js.UndefOr[js.Any] = js.undefined
+  var onMouseOutCapture: js.UndefOr[Any] = js.undefined
   
   var onMouseOver: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onMouseOverCapture: js.UndefOr[js.Any] = js.undefined
+  var onMouseOverCapture: js.UndefOr[Any] = js.undefined
   
   var onMouseUp: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onMouseUpCapture: js.UndefOr[js.Any] = js.undefined
+  var onMouseUpCapture: js.UndefOr[Any] = js.undefined
   
   var onPaste: js.UndefOr[ClipboardEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onPasteCapture: js.UndefOr[js.Any] = js.undefined
+  var onPasteCapture: js.UndefOr[Any] = js.undefined
   
   var onPause: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onPauseCapture: js.UndefOr[js.Any] = js.undefined
+  var onPauseCapture: js.UndefOr[Any] = js.undefined
   
   var onPlay: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onPlayCapture: js.UndefOr[js.Any] = js.undefined
+  var onPlayCapture: js.UndefOr[Any] = js.undefined
   
   var onPlaying: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onPlayingCapture: js.UndefOr[js.Any] = js.undefined
+  var onPlayingCapture: js.UndefOr[Any] = js.undefined
   
   var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onPointerCancelCapture: js.UndefOr[js.Any] = js.undefined
+  var onPointerCancelCapture: js.UndefOr[Any] = js.undefined
   
   var onPointerDown: js.UndefOr[PointerEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onPointerDownCapture: js.UndefOr[js.Any] = js.undefined
+  var onPointerDownCapture: js.UndefOr[Any] = js.undefined
   
   var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onPointerEnterCapture: js.UndefOr[js.Any] = js.undefined
+  var onPointerEnterCapture: js.UndefOr[Any] = js.undefined
   
   var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onPointerLeaveCapture: js.UndefOr[js.Any] = js.undefined
+  var onPointerLeaveCapture: js.UndefOr[Any] = js.undefined
   
   var onPointerMove: js.UndefOr[PointerEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onPointerMoveCapture: js.UndefOr[js.Any] = js.undefined
+  var onPointerMoveCapture: js.UndefOr[Any] = js.undefined
   
   var onPointerOut: js.UndefOr[PointerEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onPointerOutCapture: js.UndefOr[js.Any] = js.undefined
+  var onPointerOutCapture: js.UndefOr[Any] = js.undefined
   
   var onPointerOver: js.UndefOr[PointerEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onPointerOverCapture: js.UndefOr[js.Any] = js.undefined
+  var onPointerOverCapture: js.UndefOr[Any] = js.undefined
   
   var onPointerUp: js.UndefOr[PointerEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onPointerUpCapture: js.UndefOr[js.Any] = js.undefined
+  var onPointerUpCapture: js.UndefOr[Any] = js.undefined
   
   var onProgress: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onProgressCapture: js.UndefOr[js.Any] = js.undefined
+  var onProgressCapture: js.UndefOr[Any] = js.undefined
   
   var onRateChange: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onRateChangeCapture: js.UndefOr[js.Any] = js.undefined
+  var onRateChangeCapture: js.UndefOr[Any] = js.undefined
   
   var onReset: js.UndefOr[FormEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onResetCapture: js.UndefOr[js.Any] = js.undefined
+  var onResetCapture: js.UndefOr[Any] = js.undefined
   
   var onScroll: js.UndefOr[UIEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onScrollCapture: js.UndefOr[js.Any] = js.undefined
+  var onScrollCapture: js.UndefOr[Any] = js.undefined
   
   var onSeeked: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onSeekedCapture: js.UndefOr[js.Any] = js.undefined
+  var onSeekedCapture: js.UndefOr[Any] = js.undefined
   
   var onSeeking: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onSeekingCapture: js.UndefOr[js.Any] = js.undefined
+  var onSeekingCapture: js.UndefOr[Any] = js.undefined
   
   var onSelect: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onSelectCapture: js.UndefOr[js.Any] = js.undefined
+  var onSelectCapture: js.UndefOr[Any] = js.undefined
   
   var onStalled: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onStalledCapture: js.UndefOr[js.Any] = js.undefined
+  var onStalledCapture: js.UndefOr[Any] = js.undefined
   
   var onSubmit: js.UndefOr[FormEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onSubmitCapture: js.UndefOr[js.Any] = js.undefined
+  var onSubmitCapture: js.UndefOr[Any] = js.undefined
   
   var onSuspend: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onSuspendCapture: js.UndefOr[js.Any] = js.undefined
+  var onSuspendCapture: js.UndefOr[Any] = js.undefined
   
   var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onTimeUpdateCapture: js.UndefOr[js.Any] = js.undefined
+  var onTimeUpdateCapture: js.UndefOr[Any] = js.undefined
   
   var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onTouchCancelCapture: js.UndefOr[js.Any] = js.undefined
+  var onTouchCancelCapture: js.UndefOr[Any] = js.undefined
   
   var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onTouchEndCapture: js.UndefOr[js.Any] = js.undefined
+  var onTouchEndCapture: js.UndefOr[Any] = js.undefined
   
   var onTouchMove: js.UndefOr[TouchEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onTouchMoveCapture: js.UndefOr[js.Any] = js.undefined
+  var onTouchMoveCapture: js.UndefOr[Any] = js.undefined
   
   var onTouchStart: js.UndefOr[TouchEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onTouchStartCapture: js.UndefOr[js.Any] = js.undefined
+  var onTouchStartCapture: js.UndefOr[Any] = js.undefined
   
   var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onTransitionEndCapture: js.UndefOr[js.Any] = js.undefined
+  var onTransitionEndCapture: js.UndefOr[Any] = js.undefined
   
   var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onVolumeChangeCapture: js.UndefOr[js.Any] = js.undefined
+  var onVolumeChangeCapture: js.UndefOr[Any] = js.undefined
   
   var onWaiting: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onWaitingCapture: js.UndefOr[js.Any] = js.undefined
+  var onWaitingCapture: js.UndefOr[Any] = js.undefined
   
   var onWheel: js.UndefOr[WheelEventHandler[HTMLSpanElement]] = js.undefined
   
-  var onWheelCapture: js.UndefOr[js.Any] = js.undefined
+  var onWheelCapture: js.UndefOr[Any] = js.undefined
   
   var open: js.UndefOr[Boolean] = js.undefined
   
@@ -740,7 +744,7 @@ trait PickAntdIconPropschildren extends StObject {
   
   var reversed: js.UndefOr[Boolean] = js.undefined
   
-  var role: js.UndefOr[String] = js.undefined
+  var role: js.UndefOr[AriaRole] = js.undefined
   
   var rotate: js.UndefOr[Double] = js.undefined
   
@@ -869,7 +873,7 @@ object PickAntdIconPropschildren {
     
     inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
     
-    inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+    inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
     
     inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
@@ -877,7 +881,7 @@ object PickAntdIconPropschildren {
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
-    inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+    inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
     
     inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
     
@@ -913,7 +917,7 @@ object PickAntdIconPropschildren {
     
     inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
     
-    inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+    inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
     
     inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
@@ -925,7 +929,7 @@ object PickAntdIconPropschildren {
     
     inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
     
-    inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+    inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
     
     inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
     
@@ -933,7 +937,7 @@ object PickAntdIconPropschildren {
     
     inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
     
-    inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+    inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
     
     inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
@@ -941,7 +945,7 @@ object PickAntdIconPropschildren {
     
     inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
-    inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+    inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
     
     inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
     
@@ -969,15 +973,15 @@ object PickAntdIconPropschildren {
     
     inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
     
-    inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+    inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
     
     inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
     
-    inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+    inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
     
     inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
     
-    inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+    inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
     
     inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
     
@@ -1001,7 +1005,7 @@ object PickAntdIconPropschildren {
     
     inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
     
-    inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+    inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
     
     inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
     
@@ -1011,7 +1015,7 @@ object PickAntdIconPropschildren {
     
     inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
     
-    inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+    inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
     
     inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
     
@@ -1031,7 +1035,7 @@ object PickAntdIconPropschildren {
     
     inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
     
-    inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+    inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
     
     inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
     
@@ -1091,7 +1095,7 @@ object PickAntdIconPropschildren {
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
     
-    inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
@@ -1195,7 +1199,7 @@ object PickAntdIconPropschildren {
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+    inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
     
     inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
@@ -1209,7 +1213,7 @@ object PickAntdIconPropschildren {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
@@ -1285,7 +1289,7 @@ object PickAntdIconPropschildren {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+    inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
     
@@ -1421,7 +1425,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnAbort(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     
-    inline def setOnAbortCapture(value: js.Any): Self = StObject.set(x, "onAbortCapture", value.asInstanceOf[js.Any])
+    inline def setOnAbortCapture(value: Any): Self = StObject.set(x, "onAbortCapture", value.asInstanceOf[js.Any])
     
     inline def setOnAbortCaptureUndefined: Self = StObject.set(x, "onAbortCapture", js.undefined)
     
@@ -1429,7 +1433,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnAnimationEnd(value: AnimationEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
     
-    inline def setOnAnimationEndCapture(value: js.Any): Self = StObject.set(x, "onAnimationEndCapture", value.asInstanceOf[js.Any])
+    inline def setOnAnimationEndCapture(value: Any): Self = StObject.set(x, "onAnimationEndCapture", value.asInstanceOf[js.Any])
     
     inline def setOnAnimationEndCaptureUndefined: Self = StObject.set(x, "onAnimationEndCapture", js.undefined)
     
@@ -1437,7 +1441,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnAnimationIteration(value: AnimationEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
     
-    inline def setOnAnimationIterationCapture(value: js.Any): Self = StObject.set(x, "onAnimationIterationCapture", value.asInstanceOf[js.Any])
+    inline def setOnAnimationIterationCapture(value: Any): Self = StObject.set(x, "onAnimationIterationCapture", value.asInstanceOf[js.Any])
     
     inline def setOnAnimationIterationCaptureUndefined: Self = StObject.set(x, "onAnimationIterationCapture", js.undefined)
     
@@ -1445,7 +1449,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnAnimationStart(value: AnimationEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
     
-    inline def setOnAnimationStartCapture(value: js.Any): Self = StObject.set(x, "onAnimationStartCapture", value.asInstanceOf[js.Any])
+    inline def setOnAnimationStartCapture(value: Any): Self = StObject.set(x, "onAnimationStartCapture", value.asInstanceOf[js.Any])
     
     inline def setOnAnimationStartCaptureUndefined: Self = StObject.set(x, "onAnimationStartCapture", js.undefined)
     
@@ -1453,7 +1457,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnAuxClick(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
     
-    inline def setOnAuxClickCapture(value: js.Any): Self = StObject.set(x, "onAuxClickCapture", value.asInstanceOf[js.Any])
+    inline def setOnAuxClickCapture(value: Any): Self = StObject.set(x, "onAuxClickCapture", value.asInstanceOf[js.Any])
     
     inline def setOnAuxClickCaptureUndefined: Self = StObject.set(x, "onAuxClickCapture", js.undefined)
     
@@ -1461,15 +1465,15 @@ object PickAntdIconPropschildren {
     
     inline def setOnBeforeInput(value: FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
     
-    inline def setOnBeforeInputCapture(value: js.Any): Self = StObject.set(x, "onBeforeInputCapture", value.asInstanceOf[js.Any])
+    inline def setOnBeforeInputCapture(value: Any): Self = StObject.set(x, "onBeforeInputCapture", value.asInstanceOf[js.Any])
     
     inline def setOnBeforeInputCaptureUndefined: Self = StObject.set(x, "onBeforeInputCapture", js.undefined)
     
     inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
     
-    inline def setOnBlur(value: FocusEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: FocusEvent[HTMLSpanElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
-    inline def setOnBlurCapture(value: js.Any): Self = StObject.set(x, "onBlurCapture", value.asInstanceOf[js.Any])
+    inline def setOnBlurCapture(value: Any): Self = StObject.set(x, "onBlurCapture", value.asInstanceOf[js.Any])
     
     inline def setOnBlurCaptureUndefined: Self = StObject.set(x, "onBlurCapture", js.undefined)
     
@@ -1477,13 +1481,13 @@ object PickAntdIconPropschildren {
     
     inline def setOnCanPlay(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
     
-    inline def setOnCanPlayCapture(value: js.Any): Self = StObject.set(x, "onCanPlayCapture", value.asInstanceOf[js.Any])
+    inline def setOnCanPlayCapture(value: Any): Self = StObject.set(x, "onCanPlayCapture", value.asInstanceOf[js.Any])
     
     inline def setOnCanPlayCaptureUndefined: Self = StObject.set(x, "onCanPlayCapture", js.undefined)
     
     inline def setOnCanPlayThrough(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
     
-    inline def setOnCanPlayThroughCapture(value: js.Any): Self = StObject.set(x, "onCanPlayThroughCapture", value.asInstanceOf[js.Any])
+    inline def setOnCanPlayThroughCapture(value: Any): Self = StObject.set(x, "onCanPlayThroughCapture", value.asInstanceOf[js.Any])
     
     inline def setOnCanPlayThroughCaptureUndefined: Self = StObject.set(x, "onCanPlayThroughCapture", js.undefined)
     
@@ -1493,7 +1497,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnChange(value: FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    inline def setOnChangeCapture(value: js.Any): Self = StObject.set(x, "onChangeCapture", value.asInstanceOf[js.Any])
+    inline def setOnChangeCapture(value: Any): Self = StObject.set(x, "onChangeCapture", value.asInstanceOf[js.Any])
     
     inline def setOnChangeCaptureUndefined: Self = StObject.set(x, "onChangeCapture", js.undefined)
     
@@ -1501,7 +1505,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnClick(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    inline def setOnClickCapture(value: js.Any): Self = StObject.set(x, "onClickCapture", value.asInstanceOf[js.Any])
+    inline def setOnClickCapture(value: Any): Self = StObject.set(x, "onClickCapture", value.asInstanceOf[js.Any])
     
     inline def setOnClickCaptureUndefined: Self = StObject.set(x, "onClickCapture", js.undefined)
     
@@ -1509,7 +1513,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnCompositionEnd(value: CompositionEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
     
-    inline def setOnCompositionEndCapture(value: js.Any): Self = StObject.set(x, "onCompositionEndCapture", value.asInstanceOf[js.Any])
+    inline def setOnCompositionEndCapture(value: Any): Self = StObject.set(x, "onCompositionEndCapture", value.asInstanceOf[js.Any])
     
     inline def setOnCompositionEndCaptureUndefined: Self = StObject.set(x, "onCompositionEndCapture", js.undefined)
     
@@ -1517,7 +1521,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnCompositionStart(value: CompositionEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
     
-    inline def setOnCompositionStartCapture(value: js.Any): Self = StObject.set(x, "onCompositionStartCapture", value.asInstanceOf[js.Any])
+    inline def setOnCompositionStartCapture(value: Any): Self = StObject.set(x, "onCompositionStartCapture", value.asInstanceOf[js.Any])
     
     inline def setOnCompositionStartCaptureUndefined: Self = StObject.set(x, "onCompositionStartCapture", js.undefined)
     
@@ -1525,7 +1529,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnCompositionUpdate(value: CompositionEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
     
-    inline def setOnCompositionUpdateCapture(value: js.Any): Self = StObject.set(x, "onCompositionUpdateCapture", value.asInstanceOf[js.Any])
+    inline def setOnCompositionUpdateCapture(value: Any): Self = StObject.set(x, "onCompositionUpdateCapture", value.asInstanceOf[js.Any])
     
     inline def setOnCompositionUpdateCaptureUndefined: Self = StObject.set(x, "onCompositionUpdateCapture", js.undefined)
     
@@ -1533,7 +1537,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnContextMenu(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
     
-    inline def setOnContextMenuCapture(value: js.Any): Self = StObject.set(x, "onContextMenuCapture", value.asInstanceOf[js.Any])
+    inline def setOnContextMenuCapture(value: Any): Self = StObject.set(x, "onContextMenuCapture", value.asInstanceOf[js.Any])
     
     inline def setOnContextMenuCaptureUndefined: Self = StObject.set(x, "onContextMenuCapture", js.undefined)
     
@@ -1541,7 +1545,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnCopy(value: ClipboardEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
     
-    inline def setOnCopyCapture(value: js.Any): Self = StObject.set(x, "onCopyCapture", value.asInstanceOf[js.Any])
+    inline def setOnCopyCapture(value: Any): Self = StObject.set(x, "onCopyCapture", value.asInstanceOf[js.Any])
     
     inline def setOnCopyCaptureUndefined: Self = StObject.set(x, "onCopyCapture", js.undefined)
     
@@ -1549,7 +1553,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnCut(value: ClipboardEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
     
-    inline def setOnCutCapture(value: js.Any): Self = StObject.set(x, "onCutCapture", value.asInstanceOf[js.Any])
+    inline def setOnCutCapture(value: Any): Self = StObject.set(x, "onCutCapture", value.asInstanceOf[js.Any])
     
     inline def setOnCutCaptureUndefined: Self = StObject.set(x, "onCutCapture", js.undefined)
     
@@ -1557,7 +1561,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnDoubleClick(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
     
-    inline def setOnDoubleClickCapture(value: js.Any): Self = StObject.set(x, "onDoubleClickCapture", value.asInstanceOf[js.Any])
+    inline def setOnDoubleClickCapture(value: Any): Self = StObject.set(x, "onDoubleClickCapture", value.asInstanceOf[js.Any])
     
     inline def setOnDoubleClickCaptureUndefined: Self = StObject.set(x, "onDoubleClickCapture", js.undefined)
     
@@ -1565,13 +1569,13 @@ object PickAntdIconPropschildren {
     
     inline def setOnDrag(value: DragEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
-    inline def setOnDragCapture(value: js.Any): Self = StObject.set(x, "onDragCapture", value.asInstanceOf[js.Any])
+    inline def setOnDragCapture(value: Any): Self = StObject.set(x, "onDragCapture", value.asInstanceOf[js.Any])
     
     inline def setOnDragCaptureUndefined: Self = StObject.set(x, "onDragCapture", js.undefined)
     
     inline def setOnDragEnd(value: DragEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
-    inline def setOnDragEndCapture(value: js.Any): Self = StObject.set(x, "onDragEndCapture", value.asInstanceOf[js.Any])
+    inline def setOnDragEndCapture(value: Any): Self = StObject.set(x, "onDragEndCapture", value.asInstanceOf[js.Any])
     
     inline def setOnDragEndCaptureUndefined: Self = StObject.set(x, "onDragEndCapture", js.undefined)
     
@@ -1579,7 +1583,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnDragEnter(value: DragEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
     
-    inline def setOnDragEnterCapture(value: js.Any): Self = StObject.set(x, "onDragEnterCapture", value.asInstanceOf[js.Any])
+    inline def setOnDragEnterCapture(value: Any): Self = StObject.set(x, "onDragEnterCapture", value.asInstanceOf[js.Any])
     
     inline def setOnDragEnterCaptureUndefined: Self = StObject.set(x, "onDragEnterCapture", js.undefined)
     
@@ -1587,7 +1591,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnDragExit(value: DragEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
     
-    inline def setOnDragExitCapture(value: js.Any): Self = StObject.set(x, "onDragExitCapture", value.asInstanceOf[js.Any])
+    inline def setOnDragExitCapture(value: Any): Self = StObject.set(x, "onDragExitCapture", value.asInstanceOf[js.Any])
     
     inline def setOnDragExitCaptureUndefined: Self = StObject.set(x, "onDragExitCapture", js.undefined)
     
@@ -1595,7 +1599,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnDragLeave(value: DragEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
     
-    inline def setOnDragLeaveCapture(value: js.Any): Self = StObject.set(x, "onDragLeaveCapture", value.asInstanceOf[js.Any])
+    inline def setOnDragLeaveCapture(value: Any): Self = StObject.set(x, "onDragLeaveCapture", value.asInstanceOf[js.Any])
     
     inline def setOnDragLeaveCaptureUndefined: Self = StObject.set(x, "onDragLeaveCapture", js.undefined)
     
@@ -1603,7 +1607,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnDragOver(value: DragEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
     
-    inline def setOnDragOverCapture(value: js.Any): Self = StObject.set(x, "onDragOverCapture", value.asInstanceOf[js.Any])
+    inline def setOnDragOverCapture(value: Any): Self = StObject.set(x, "onDragOverCapture", value.asInstanceOf[js.Any])
     
     inline def setOnDragOverCaptureUndefined: Self = StObject.set(x, "onDragOverCapture", js.undefined)
     
@@ -1611,7 +1615,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnDragStart(value: DragEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
-    inline def setOnDragStartCapture(value: js.Any): Self = StObject.set(x, "onDragStartCapture", value.asInstanceOf[js.Any])
+    inline def setOnDragStartCapture(value: Any): Self = StObject.set(x, "onDragStartCapture", value.asInstanceOf[js.Any])
     
     inline def setOnDragStartCaptureUndefined: Self = StObject.set(x, "onDragStartCapture", js.undefined)
     
@@ -1621,7 +1625,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnDrop(value: DragEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
     
-    inline def setOnDropCapture(value: js.Any): Self = StObject.set(x, "onDropCapture", value.asInstanceOf[js.Any])
+    inline def setOnDropCapture(value: Any): Self = StObject.set(x, "onDropCapture", value.asInstanceOf[js.Any])
     
     inline def setOnDropCaptureUndefined: Self = StObject.set(x, "onDropCapture", js.undefined)
     
@@ -1629,7 +1633,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnDurationChange(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
     
-    inline def setOnDurationChangeCapture(value: js.Any): Self = StObject.set(x, "onDurationChangeCapture", value.asInstanceOf[js.Any])
+    inline def setOnDurationChangeCapture(value: Any): Self = StObject.set(x, "onDurationChangeCapture", value.asInstanceOf[js.Any])
     
     inline def setOnDurationChangeCaptureUndefined: Self = StObject.set(x, "onDurationChangeCapture", js.undefined)
     
@@ -1637,7 +1641,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnEmptied(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
     
-    inline def setOnEmptiedCapture(value: js.Any): Self = StObject.set(x, "onEmptiedCapture", value.asInstanceOf[js.Any])
+    inline def setOnEmptiedCapture(value: Any): Self = StObject.set(x, "onEmptiedCapture", value.asInstanceOf[js.Any])
     
     inline def setOnEmptiedCaptureUndefined: Self = StObject.set(x, "onEmptiedCapture", js.undefined)
     
@@ -1645,7 +1649,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnEncrypted(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
     
-    inline def setOnEncryptedCapture(value: js.Any): Self = StObject.set(x, "onEncryptedCapture", value.asInstanceOf[js.Any])
+    inline def setOnEncryptedCapture(value: Any): Self = StObject.set(x, "onEncryptedCapture", value.asInstanceOf[js.Any])
     
     inline def setOnEncryptedCaptureUndefined: Self = StObject.set(x, "onEncryptedCapture", js.undefined)
     
@@ -1653,7 +1657,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnEnded(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
     
-    inline def setOnEndedCapture(value: js.Any): Self = StObject.set(x, "onEndedCapture", value.asInstanceOf[js.Any])
+    inline def setOnEndedCapture(value: Any): Self = StObject.set(x, "onEndedCapture", value.asInstanceOf[js.Any])
     
     inline def setOnEndedCaptureUndefined: Self = StObject.set(x, "onEndedCapture", js.undefined)
     
@@ -1661,23 +1665,23 @@ object PickAntdIconPropschildren {
     
     inline def setOnError(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    inline def setOnErrorCapture(value: js.Any): Self = StObject.set(x, "onErrorCapture", value.asInstanceOf[js.Any])
+    inline def setOnErrorCapture(value: Any): Self = StObject.set(x, "onErrorCapture", value.asInstanceOf[js.Any])
     
     inline def setOnErrorCaptureUndefined: Self = StObject.set(x, "onErrorCapture", js.undefined)
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnFocus(value: FocusEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: FocusEvent[HTMLSpanElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
-    inline def setOnFocusCapture(value: js.Any): Self = StObject.set(x, "onFocusCapture", value.asInstanceOf[js.Any])
+    inline def setOnFocusCapture(value: Any): Self = StObject.set(x, "onFocusCapture", value.asInstanceOf[js.Any])
     
     inline def setOnFocusCaptureUndefined: Self = StObject.set(x, "onFocusCapture", js.undefined)
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
-    inline def setOnGotPointerCapture(value: js.Any): Self = StObject.set(x, "onGotPointerCapture", value.asInstanceOf[js.Any])
+    inline def setOnGotPointerCapture(value: Any): Self = StObject.set(x, "onGotPointerCapture", value.asInstanceOf[js.Any])
     
-    inline def setOnGotPointerCaptureCapture(value: js.Any): Self = StObject.set(x, "onGotPointerCaptureCapture", value.asInstanceOf[js.Any])
+    inline def setOnGotPointerCaptureCapture(value: Any): Self = StObject.set(x, "onGotPointerCaptureCapture", value.asInstanceOf[js.Any])
     
     inline def setOnGotPointerCaptureCaptureUndefined: Self = StObject.set(x, "onGotPointerCaptureCapture", js.undefined)
     
@@ -1685,7 +1689,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnInput(value: FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
     
-    inline def setOnInputCapture(value: js.Any): Self = StObject.set(x, "onInputCapture", value.asInstanceOf[js.Any])
+    inline def setOnInputCapture(value: Any): Self = StObject.set(x, "onInputCapture", value.asInstanceOf[js.Any])
     
     inline def setOnInputCaptureUndefined: Self = StObject.set(x, "onInputCapture", js.undefined)
     
@@ -1693,7 +1697,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnInvalid(value: FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
     
-    inline def setOnInvalidCapture(value: js.Any): Self = StObject.set(x, "onInvalidCapture", value.asInstanceOf[js.Any])
+    inline def setOnInvalidCapture(value: Any): Self = StObject.set(x, "onInvalidCapture", value.asInstanceOf[js.Any])
     
     inline def setOnInvalidCaptureUndefined: Self = StObject.set(x, "onInvalidCapture", js.undefined)
     
@@ -1701,7 +1705,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnKeyDown(value: KeyboardEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
-    inline def setOnKeyDownCapture(value: js.Any): Self = StObject.set(x, "onKeyDownCapture", value.asInstanceOf[js.Any])
+    inline def setOnKeyDownCapture(value: Any): Self = StObject.set(x, "onKeyDownCapture", value.asInstanceOf[js.Any])
     
     inline def setOnKeyDownCaptureUndefined: Self = StObject.set(x, "onKeyDownCapture", js.undefined)
     
@@ -1709,7 +1713,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnKeyPress(value: KeyboardEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
     
-    inline def setOnKeyPressCapture(value: js.Any): Self = StObject.set(x, "onKeyPressCapture", value.asInstanceOf[js.Any])
+    inline def setOnKeyPressCapture(value: Any): Self = StObject.set(x, "onKeyPressCapture", value.asInstanceOf[js.Any])
     
     inline def setOnKeyPressCaptureUndefined: Self = StObject.set(x, "onKeyPressCapture", js.undefined)
     
@@ -1717,7 +1721,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnKeyUp(value: KeyboardEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
     
-    inline def setOnKeyUpCapture(value: js.Any): Self = StObject.set(x, "onKeyUpCapture", value.asInstanceOf[js.Any])
+    inline def setOnKeyUpCapture(value: Any): Self = StObject.set(x, "onKeyUpCapture", value.asInstanceOf[js.Any])
     
     inline def setOnKeyUpCaptureUndefined: Self = StObject.set(x, "onKeyUpCapture", js.undefined)
     
@@ -1725,13 +1729,13 @@ object PickAntdIconPropschildren {
     
     inline def setOnLoad(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
-    inline def setOnLoadCapture(value: js.Any): Self = StObject.set(x, "onLoadCapture", value.asInstanceOf[js.Any])
+    inline def setOnLoadCapture(value: Any): Self = StObject.set(x, "onLoadCapture", value.asInstanceOf[js.Any])
     
     inline def setOnLoadCaptureUndefined: Self = StObject.set(x, "onLoadCapture", js.undefined)
     
     inline def setOnLoadStart(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
     
-    inline def setOnLoadStartCapture(value: js.Any): Self = StObject.set(x, "onLoadStartCapture", value.asInstanceOf[js.Any])
+    inline def setOnLoadStartCapture(value: Any): Self = StObject.set(x, "onLoadStartCapture", value.asInstanceOf[js.Any])
     
     inline def setOnLoadStartCaptureUndefined: Self = StObject.set(x, "onLoadStartCapture", js.undefined)
     
@@ -1741,7 +1745,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnLoadedData(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
     
-    inline def setOnLoadedDataCapture(value: js.Any): Self = StObject.set(x, "onLoadedDataCapture", value.asInstanceOf[js.Any])
+    inline def setOnLoadedDataCapture(value: Any): Self = StObject.set(x, "onLoadedDataCapture", value.asInstanceOf[js.Any])
     
     inline def setOnLoadedDataCaptureUndefined: Self = StObject.set(x, "onLoadedDataCapture", js.undefined)
     
@@ -1749,15 +1753,15 @@ object PickAntdIconPropschildren {
     
     inline def setOnLoadedMetadata(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
     
-    inline def setOnLoadedMetadataCapture(value: js.Any): Self = StObject.set(x, "onLoadedMetadataCapture", value.asInstanceOf[js.Any])
+    inline def setOnLoadedMetadataCapture(value: Any): Self = StObject.set(x, "onLoadedMetadataCapture", value.asInstanceOf[js.Any])
     
     inline def setOnLoadedMetadataCaptureUndefined: Self = StObject.set(x, "onLoadedMetadataCapture", js.undefined)
     
     inline def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
     
-    inline def setOnLostPointerCapture(value: js.Any): Self = StObject.set(x, "onLostPointerCapture", value.asInstanceOf[js.Any])
+    inline def setOnLostPointerCapture(value: Any): Self = StObject.set(x, "onLostPointerCapture", value.asInstanceOf[js.Any])
     
-    inline def setOnLostPointerCaptureCapture(value: js.Any): Self = StObject.set(x, "onLostPointerCaptureCapture", value.asInstanceOf[js.Any])
+    inline def setOnLostPointerCaptureCapture(value: Any): Self = StObject.set(x, "onLostPointerCaptureCapture", value.asInstanceOf[js.Any])
     
     inline def setOnLostPointerCaptureCaptureUndefined: Self = StObject.set(x, "onLostPointerCaptureCapture", js.undefined)
     
@@ -1765,7 +1769,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnMouseDown(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
-    inline def setOnMouseDownCapture(value: js.Any): Self = StObject.set(x, "onMouseDownCapture", value.asInstanceOf[js.Any])
+    inline def setOnMouseDownCapture(value: Any): Self = StObject.set(x, "onMouseDownCapture", value.asInstanceOf[js.Any])
     
     inline def setOnMouseDownCaptureUndefined: Self = StObject.set(x, "onMouseDownCapture", js.undefined)
     
@@ -1781,7 +1785,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnMouseMove(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     
-    inline def setOnMouseMoveCapture(value: js.Any): Self = StObject.set(x, "onMouseMoveCapture", value.asInstanceOf[js.Any])
+    inline def setOnMouseMoveCapture(value: Any): Self = StObject.set(x, "onMouseMoveCapture", value.asInstanceOf[js.Any])
     
     inline def setOnMouseMoveCaptureUndefined: Self = StObject.set(x, "onMouseMoveCapture", js.undefined)
     
@@ -1789,7 +1793,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnMouseOut(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
     
-    inline def setOnMouseOutCapture(value: js.Any): Self = StObject.set(x, "onMouseOutCapture", value.asInstanceOf[js.Any])
+    inline def setOnMouseOutCapture(value: Any): Self = StObject.set(x, "onMouseOutCapture", value.asInstanceOf[js.Any])
     
     inline def setOnMouseOutCaptureUndefined: Self = StObject.set(x, "onMouseOutCapture", js.undefined)
     
@@ -1797,7 +1801,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnMouseOver(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
     
-    inline def setOnMouseOverCapture(value: js.Any): Self = StObject.set(x, "onMouseOverCapture", value.asInstanceOf[js.Any])
+    inline def setOnMouseOverCapture(value: Any): Self = StObject.set(x, "onMouseOverCapture", value.asInstanceOf[js.Any])
     
     inline def setOnMouseOverCaptureUndefined: Self = StObject.set(x, "onMouseOverCapture", js.undefined)
     
@@ -1805,7 +1809,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnMouseUp(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
     
-    inline def setOnMouseUpCapture(value: js.Any): Self = StObject.set(x, "onMouseUpCapture", value.asInstanceOf[js.Any])
+    inline def setOnMouseUpCapture(value: Any): Self = StObject.set(x, "onMouseUpCapture", value.asInstanceOf[js.Any])
     
     inline def setOnMouseUpCaptureUndefined: Self = StObject.set(x, "onMouseUpCapture", js.undefined)
     
@@ -1813,7 +1817,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnPaste(value: ClipboardEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
     
-    inline def setOnPasteCapture(value: js.Any): Self = StObject.set(x, "onPasteCapture", value.asInstanceOf[js.Any])
+    inline def setOnPasteCapture(value: Any): Self = StObject.set(x, "onPasteCapture", value.asInstanceOf[js.Any])
     
     inline def setOnPasteCaptureUndefined: Self = StObject.set(x, "onPasteCapture", js.undefined)
     
@@ -1821,7 +1825,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnPause(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
     
-    inline def setOnPauseCapture(value: js.Any): Self = StObject.set(x, "onPauseCapture", value.asInstanceOf[js.Any])
+    inline def setOnPauseCapture(value: Any): Self = StObject.set(x, "onPauseCapture", value.asInstanceOf[js.Any])
     
     inline def setOnPauseCaptureUndefined: Self = StObject.set(x, "onPauseCapture", js.undefined)
     
@@ -1829,7 +1833,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnPlay(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
     
-    inline def setOnPlayCapture(value: js.Any): Self = StObject.set(x, "onPlayCapture", value.asInstanceOf[js.Any])
+    inline def setOnPlayCapture(value: Any): Self = StObject.set(x, "onPlayCapture", value.asInstanceOf[js.Any])
     
     inline def setOnPlayCaptureUndefined: Self = StObject.set(x, "onPlayCapture", js.undefined)
     
@@ -1837,7 +1841,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnPlaying(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
     
-    inline def setOnPlayingCapture(value: js.Any): Self = StObject.set(x, "onPlayingCapture", value.asInstanceOf[js.Any])
+    inline def setOnPlayingCapture(value: Any): Self = StObject.set(x, "onPlayingCapture", value.asInstanceOf[js.Any])
     
     inline def setOnPlayingCaptureUndefined: Self = StObject.set(x, "onPlayingCapture", js.undefined)
     
@@ -1845,7 +1849,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnPointerCancel(value: PointerEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
     
-    inline def setOnPointerCancelCapture(value: js.Any): Self = StObject.set(x, "onPointerCancelCapture", value.asInstanceOf[js.Any])
+    inline def setOnPointerCancelCapture(value: Any): Self = StObject.set(x, "onPointerCancelCapture", value.asInstanceOf[js.Any])
     
     inline def setOnPointerCancelCaptureUndefined: Self = StObject.set(x, "onPointerCancelCapture", js.undefined)
     
@@ -1853,7 +1857,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnPointerDown(value: PointerEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
     
-    inline def setOnPointerDownCapture(value: js.Any): Self = StObject.set(x, "onPointerDownCapture", value.asInstanceOf[js.Any])
+    inline def setOnPointerDownCapture(value: Any): Self = StObject.set(x, "onPointerDownCapture", value.asInstanceOf[js.Any])
     
     inline def setOnPointerDownCaptureUndefined: Self = StObject.set(x, "onPointerDownCapture", js.undefined)
     
@@ -1861,7 +1865,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnPointerEnter(value: PointerEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
     
-    inline def setOnPointerEnterCapture(value: js.Any): Self = StObject.set(x, "onPointerEnterCapture", value.asInstanceOf[js.Any])
+    inline def setOnPointerEnterCapture(value: Any): Self = StObject.set(x, "onPointerEnterCapture", value.asInstanceOf[js.Any])
     
     inline def setOnPointerEnterCaptureUndefined: Self = StObject.set(x, "onPointerEnterCapture", js.undefined)
     
@@ -1869,7 +1873,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnPointerLeave(value: PointerEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
     
-    inline def setOnPointerLeaveCapture(value: js.Any): Self = StObject.set(x, "onPointerLeaveCapture", value.asInstanceOf[js.Any])
+    inline def setOnPointerLeaveCapture(value: Any): Self = StObject.set(x, "onPointerLeaveCapture", value.asInstanceOf[js.Any])
     
     inline def setOnPointerLeaveCaptureUndefined: Self = StObject.set(x, "onPointerLeaveCapture", js.undefined)
     
@@ -1877,7 +1881,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnPointerMove(value: PointerEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
     
-    inline def setOnPointerMoveCapture(value: js.Any): Self = StObject.set(x, "onPointerMoveCapture", value.asInstanceOf[js.Any])
+    inline def setOnPointerMoveCapture(value: Any): Self = StObject.set(x, "onPointerMoveCapture", value.asInstanceOf[js.Any])
     
     inline def setOnPointerMoveCaptureUndefined: Self = StObject.set(x, "onPointerMoveCapture", js.undefined)
     
@@ -1885,7 +1889,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnPointerOut(value: PointerEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
     
-    inline def setOnPointerOutCapture(value: js.Any): Self = StObject.set(x, "onPointerOutCapture", value.asInstanceOf[js.Any])
+    inline def setOnPointerOutCapture(value: Any): Self = StObject.set(x, "onPointerOutCapture", value.asInstanceOf[js.Any])
     
     inline def setOnPointerOutCaptureUndefined: Self = StObject.set(x, "onPointerOutCapture", js.undefined)
     
@@ -1893,7 +1897,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnPointerOver(value: PointerEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
     
-    inline def setOnPointerOverCapture(value: js.Any): Self = StObject.set(x, "onPointerOverCapture", value.asInstanceOf[js.Any])
+    inline def setOnPointerOverCapture(value: Any): Self = StObject.set(x, "onPointerOverCapture", value.asInstanceOf[js.Any])
     
     inline def setOnPointerOverCaptureUndefined: Self = StObject.set(x, "onPointerOverCapture", js.undefined)
     
@@ -1901,7 +1905,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnPointerUp(value: PointerEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
     
-    inline def setOnPointerUpCapture(value: js.Any): Self = StObject.set(x, "onPointerUpCapture", value.asInstanceOf[js.Any])
+    inline def setOnPointerUpCapture(value: Any): Self = StObject.set(x, "onPointerUpCapture", value.asInstanceOf[js.Any])
     
     inline def setOnPointerUpCaptureUndefined: Self = StObject.set(x, "onPointerUpCapture", js.undefined)
     
@@ -1909,7 +1913,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnProgress(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
     
-    inline def setOnProgressCapture(value: js.Any): Self = StObject.set(x, "onProgressCapture", value.asInstanceOf[js.Any])
+    inline def setOnProgressCapture(value: Any): Self = StObject.set(x, "onProgressCapture", value.asInstanceOf[js.Any])
     
     inline def setOnProgressCaptureUndefined: Self = StObject.set(x, "onProgressCapture", js.undefined)
     
@@ -1917,7 +1921,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnRateChange(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
     
-    inline def setOnRateChangeCapture(value: js.Any): Self = StObject.set(x, "onRateChangeCapture", value.asInstanceOf[js.Any])
+    inline def setOnRateChangeCapture(value: Any): Self = StObject.set(x, "onRateChangeCapture", value.asInstanceOf[js.Any])
     
     inline def setOnRateChangeCaptureUndefined: Self = StObject.set(x, "onRateChangeCapture", js.undefined)
     
@@ -1925,7 +1929,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnReset(value: FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
-    inline def setOnResetCapture(value: js.Any): Self = StObject.set(x, "onResetCapture", value.asInstanceOf[js.Any])
+    inline def setOnResetCapture(value: Any): Self = StObject.set(x, "onResetCapture", value.asInstanceOf[js.Any])
     
     inline def setOnResetCaptureUndefined: Self = StObject.set(x, "onResetCapture", js.undefined)
     
@@ -1933,7 +1937,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnScroll(value: UIEvent[HTMLSpanElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
-    inline def setOnScrollCapture(value: js.Any): Self = StObject.set(x, "onScrollCapture", value.asInstanceOf[js.Any])
+    inline def setOnScrollCapture(value: Any): Self = StObject.set(x, "onScrollCapture", value.asInstanceOf[js.Any])
     
     inline def setOnScrollCaptureUndefined: Self = StObject.set(x, "onScrollCapture", js.undefined)
     
@@ -1941,7 +1945,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnSeeked(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
     
-    inline def setOnSeekedCapture(value: js.Any): Self = StObject.set(x, "onSeekedCapture", value.asInstanceOf[js.Any])
+    inline def setOnSeekedCapture(value: Any): Self = StObject.set(x, "onSeekedCapture", value.asInstanceOf[js.Any])
     
     inline def setOnSeekedCaptureUndefined: Self = StObject.set(x, "onSeekedCapture", js.undefined)
     
@@ -1949,7 +1953,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnSeeking(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
     
-    inline def setOnSeekingCapture(value: js.Any): Self = StObject.set(x, "onSeekingCapture", value.asInstanceOf[js.Any])
+    inline def setOnSeekingCapture(value: Any): Self = StObject.set(x, "onSeekingCapture", value.asInstanceOf[js.Any])
     
     inline def setOnSeekingCaptureUndefined: Self = StObject.set(x, "onSeekingCapture", js.undefined)
     
@@ -1957,7 +1961,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnSelect(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
-    inline def setOnSelectCapture(value: js.Any): Self = StObject.set(x, "onSelectCapture", value.asInstanceOf[js.Any])
+    inline def setOnSelectCapture(value: Any): Self = StObject.set(x, "onSelectCapture", value.asInstanceOf[js.Any])
     
     inline def setOnSelectCaptureUndefined: Self = StObject.set(x, "onSelectCapture", js.undefined)
     
@@ -1965,7 +1969,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnStalled(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
     
-    inline def setOnStalledCapture(value: js.Any): Self = StObject.set(x, "onStalledCapture", value.asInstanceOf[js.Any])
+    inline def setOnStalledCapture(value: Any): Self = StObject.set(x, "onStalledCapture", value.asInstanceOf[js.Any])
     
     inline def setOnStalledCaptureUndefined: Self = StObject.set(x, "onStalledCapture", js.undefined)
     
@@ -1973,7 +1977,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnSubmit(value: FormEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
     
-    inline def setOnSubmitCapture(value: js.Any): Self = StObject.set(x, "onSubmitCapture", value.asInstanceOf[js.Any])
+    inline def setOnSubmitCapture(value: Any): Self = StObject.set(x, "onSubmitCapture", value.asInstanceOf[js.Any])
     
     inline def setOnSubmitCaptureUndefined: Self = StObject.set(x, "onSubmitCapture", js.undefined)
     
@@ -1981,7 +1985,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnSuspend(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
     
-    inline def setOnSuspendCapture(value: js.Any): Self = StObject.set(x, "onSuspendCapture", value.asInstanceOf[js.Any])
+    inline def setOnSuspendCapture(value: Any): Self = StObject.set(x, "onSuspendCapture", value.asInstanceOf[js.Any])
     
     inline def setOnSuspendCaptureUndefined: Self = StObject.set(x, "onSuspendCapture", js.undefined)
     
@@ -1989,7 +1993,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnTimeUpdate(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
     
-    inline def setOnTimeUpdateCapture(value: js.Any): Self = StObject.set(x, "onTimeUpdateCapture", value.asInstanceOf[js.Any])
+    inline def setOnTimeUpdateCapture(value: Any): Self = StObject.set(x, "onTimeUpdateCapture", value.asInstanceOf[js.Any])
     
     inline def setOnTimeUpdateCaptureUndefined: Self = StObject.set(x, "onTimeUpdateCapture", js.undefined)
     
@@ -1997,7 +2001,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnTouchCancel(value: TouchEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
     
-    inline def setOnTouchCancelCapture(value: js.Any): Self = StObject.set(x, "onTouchCancelCapture", value.asInstanceOf[js.Any])
+    inline def setOnTouchCancelCapture(value: Any): Self = StObject.set(x, "onTouchCancelCapture", value.asInstanceOf[js.Any])
     
     inline def setOnTouchCancelCaptureUndefined: Self = StObject.set(x, "onTouchCancelCapture", js.undefined)
     
@@ -2005,7 +2009,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnTouchEnd(value: TouchEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
     
-    inline def setOnTouchEndCapture(value: js.Any): Self = StObject.set(x, "onTouchEndCapture", value.asInstanceOf[js.Any])
+    inline def setOnTouchEndCapture(value: Any): Self = StObject.set(x, "onTouchEndCapture", value.asInstanceOf[js.Any])
     
     inline def setOnTouchEndCaptureUndefined: Self = StObject.set(x, "onTouchEndCapture", js.undefined)
     
@@ -2013,7 +2017,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnTouchMove(value: TouchEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
     
-    inline def setOnTouchMoveCapture(value: js.Any): Self = StObject.set(x, "onTouchMoveCapture", value.asInstanceOf[js.Any])
+    inline def setOnTouchMoveCapture(value: Any): Self = StObject.set(x, "onTouchMoveCapture", value.asInstanceOf[js.Any])
     
     inline def setOnTouchMoveCaptureUndefined: Self = StObject.set(x, "onTouchMoveCapture", js.undefined)
     
@@ -2021,7 +2025,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnTouchStart(value: TouchEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
     
-    inline def setOnTouchStartCapture(value: js.Any): Self = StObject.set(x, "onTouchStartCapture", value.asInstanceOf[js.Any])
+    inline def setOnTouchStartCapture(value: Any): Self = StObject.set(x, "onTouchStartCapture", value.asInstanceOf[js.Any])
     
     inline def setOnTouchStartCaptureUndefined: Self = StObject.set(x, "onTouchStartCapture", js.undefined)
     
@@ -2029,7 +2033,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnTransitionEnd(value: TransitionEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
     
-    inline def setOnTransitionEndCapture(value: js.Any): Self = StObject.set(x, "onTransitionEndCapture", value.asInstanceOf[js.Any])
+    inline def setOnTransitionEndCapture(value: Any): Self = StObject.set(x, "onTransitionEndCapture", value.asInstanceOf[js.Any])
     
     inline def setOnTransitionEndCaptureUndefined: Self = StObject.set(x, "onTransitionEndCapture", js.undefined)
     
@@ -2037,7 +2041,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnVolumeChange(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
     
-    inline def setOnVolumeChangeCapture(value: js.Any): Self = StObject.set(x, "onVolumeChangeCapture", value.asInstanceOf[js.Any])
+    inline def setOnVolumeChangeCapture(value: Any): Self = StObject.set(x, "onVolumeChangeCapture", value.asInstanceOf[js.Any])
     
     inline def setOnVolumeChangeCaptureUndefined: Self = StObject.set(x, "onVolumeChangeCapture", js.undefined)
     
@@ -2045,7 +2049,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnWaiting(value: SyntheticEvent[HTMLSpanElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
     
-    inline def setOnWaitingCapture(value: js.Any): Self = StObject.set(x, "onWaitingCapture", value.asInstanceOf[js.Any])
+    inline def setOnWaitingCapture(value: Any): Self = StObject.set(x, "onWaitingCapture", value.asInstanceOf[js.Any])
     
     inline def setOnWaitingCaptureUndefined: Self = StObject.set(x, "onWaitingCapture", js.undefined)
     
@@ -2053,7 +2057,7 @@ object PickAntdIconPropschildren {
     
     inline def setOnWheel(value: WheelEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
     
-    inline def setOnWheelCapture(value: js.Any): Self = StObject.set(x, "onWheelCapture", value.asInstanceOf[js.Any])
+    inline def setOnWheelCapture(value: Any): Self = StObject.set(x, "onWheelCapture", value.asInstanceOf[js.Any])
     
     inline def setOnWheelCaptureUndefined: Self = StObject.set(x, "onWheelCapture", js.undefined)
     
@@ -2131,7 +2135,7 @@ object PickAntdIconPropschildren {
     
     inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
     
-    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
@@ -2283,7 +2287,7 @@ object PickAntdIconPropschildren {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     
     inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
     

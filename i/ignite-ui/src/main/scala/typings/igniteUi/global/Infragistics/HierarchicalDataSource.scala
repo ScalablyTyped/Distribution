@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.HierarchicalDataSource")
 @js.native
-class HierarchicalDataSource protected ()
+open class HierarchicalDataSource protected ()
   extends StObject
      with typings.igniteUi.Infragistics.HierarchicalDataSource {
   def this(settings: HierarchicalDataSourceSettings) = this()

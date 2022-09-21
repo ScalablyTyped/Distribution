@@ -16,13 +16,13 @@ object zoomifyMod {
   
   @JSImport("ol/source/Zoomify", JSImport.Default)
   @js.native
-  class default protected () extends Zoomify {
+  open class default protected () extends Zoomify {
     def this(opt_options: Options) = this()
   }
   
   @JSImport("ol/source/Zoomify", "CustomTile")
   @js.native
-  class CustomTile protected ()
+  open class CustomTile protected ()
     extends typings.ol.imageTileMod.default {
     def this(
       tileSize: Size,
@@ -49,7 +49,7 @@ object zoomifyMod {
     
     var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[Null | String] = js.undefined
     
     var extent: js.UndefOr[Extent] = js.undefined
     
@@ -88,13 +88,15 @@ object zoomifyMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       
       inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       

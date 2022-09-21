@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Dropbox.AuthError")
 @js.native
-class AuthError protected ()
+open class AuthError protected ()
   extends StObject
      with typings.dropboxjs.Dropbox.AuthError {
   def this(queryString: QueryParams) = this()

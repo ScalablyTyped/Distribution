@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/firestore-types", "Query")
 @js.native
-/* protected */ class Query[T] () extends StObject {
+/* protected */ open class Query[T] () extends StObject {
   
-  def endAt(fieldValues: js.Any*): Query[T] = js.native
-  def endAt(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
+  def endAt(fieldValues: Any*): Query[T] = js.native
+  def endAt(snapshot: DocumentSnapshot[Any]): Query[T] = js.native
   
-  def endBefore(fieldValues: js.Any*): Query[T] = js.native
-  def endBefore(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
+  def endBefore(fieldValues: Any*): Query[T] = js.native
+  def endBefore(snapshot: DocumentSnapshot[Any]): Query[T] = js.native
   
   val firestore: FirebaseFirestore = js.native
   
@@ -67,14 +67,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   def orderBy(fieldPath: FieldPath): Query[T] = js.native
   def orderBy(fieldPath: FieldPath, directionStr: OrderByDirection): Query[T] = js.native
   
-  def startAfter(fieldValues: js.Any*): Query[T] = js.native
-  def startAfter(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
+  def startAfter(fieldValues: Any*): Query[T] = js.native
+  def startAfter(snapshot: DocumentSnapshot[Any]): Query[T] = js.native
   
-  def startAt(fieldValues: js.Any*): Query[T] = js.native
-  def startAt(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
+  def startAt(fieldValues: Any*): Query[T] = js.native
+  def startAt(snapshot: DocumentSnapshot[Any]): Query[T] = js.native
   
-  def where(fieldPath: String, opStr: WhereFilterOp, value: js.Any): Query[T] = js.native
-  def where(fieldPath: FieldPath, opStr: WhereFilterOp, value: js.Any): Query[T] = js.native
+  def where(fieldPath: String, opStr: WhereFilterOp, value: Any): Query[T] = js.native
+  def where(fieldPath: FieldPath, opStr: WhereFilterOp, value: Any): Query[T] = js.native
   
+  def withConverter(converter: Null): Query[DocumentData] = js.native
   def withConverter[U](converter: FirestoreDataConverter[U]): Query[U] = js.native
 }

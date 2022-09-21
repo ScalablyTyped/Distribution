@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@babel/core", "NodePath")
 @js.native
-class NodePath[T] protected ()
+open class NodePath[T] protected ()
   extends typings.babelTraverse.mod.NodePath[T] {
   def this(hub: Hub, parent: typings.babelTypes.mod.Node) = this()
 }

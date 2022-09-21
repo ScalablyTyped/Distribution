@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Selected extends StObject {
   
-  var selected: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var selected: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object Selected {
   
@@ -17,10 +17,10 @@ object Selected {
   
   extension [Self <: Selected](x: Self) {
     
-    inline def setSelected(value: js.Array[js.Any]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: js.Array[Any]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    inline def setSelectedVarargs(value: js.Any*): Self = StObject.set(x, "selected", js.Array(value :_*))
+    inline def setSelectedVarargs(value: Any*): Self = StObject.set(x, "selected", js.Array(value*))
   }
 }

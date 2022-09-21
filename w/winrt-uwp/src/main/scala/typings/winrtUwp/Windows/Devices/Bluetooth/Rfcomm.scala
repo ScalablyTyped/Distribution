@@ -34,13 +34,13 @@ object Rfcomm {
       * Gets the cached SDP attributes of the RFCOMM service instance.
       * @return The SDP attributes of the RFCOMM service instance.
       */
-    def getSdpRawAttributesAsync(): IPromiseWithIAsyncOperation[IMapView[js.Any, js.Any]] = js.native
+    def getSdpRawAttributesAsync(): IPromiseWithIAsyncOperation[IMapView[Any, Any]] = js.native
     /**
       * Gets the SDP attributes of the RFCOMM service instance.
       * @param cacheMode Indicates whether SDP attributes should be retrieved from the cache or from the device.
       * @return The SDP attributes of the RFCOMM service instance.
       */
-    def getSdpRawAttributesAsync(cacheMode: BluetoothCacheMode): IPromiseWithIAsyncOperation[IMapView[js.Any, js.Any]] = js.native
+    def getSdpRawAttributesAsync(cacheMode: BluetoothCacheMode): IPromiseWithIAsyncOperation[IMapView[Any, Any]] = js.native
     
     /** Gets the maximum SocketProtectionLevel supported by this RFCOMM service instance. */
     var maxProtectionLevel: SocketProtectionLevel = js.native

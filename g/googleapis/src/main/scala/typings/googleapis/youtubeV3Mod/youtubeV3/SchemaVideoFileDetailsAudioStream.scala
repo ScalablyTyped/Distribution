@@ -4,31 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about an audio stream.
-  */
 trait SchemaVideoFileDetailsAudioStream extends StObject {
   
   /**
-    * The audio stream&#39;s bitrate, in bits per second.
+    * The audio stream's bitrate, in bits per second.
     */
-  var bitrateBps: js.UndefOr[String] = js.undefined
+  var bitrateBps: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The number of audio channels that the stream contains.
     */
-  var channelCount: js.UndefOr[Double] = js.undefined
+  var channelCount: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The audio codec that the stream uses.
     */
-  var codec: js.UndefOr[String] = js.undefined
+  var codec: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A value that uniquely identifies a video vendor. Typically, the value is
-    * a four-letter vendor code.
+    * A value that uniquely identifies a video vendor. Typically, the value is a four-letter vendor code.
     */
-  var vendor: js.UndefOr[String] = js.undefined
+  var vendor: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaVideoFileDetailsAudioStream {
   
@@ -41,17 +37,25 @@ object SchemaVideoFileDetailsAudioStream {
     
     inline def setBitrateBps(value: String): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
     
+    inline def setBitrateBpsNull: Self = StObject.set(x, "bitrateBps", null)
+    
     inline def setBitrateBpsUndefined: Self = StObject.set(x, "bitrateBps", js.undefined)
     
     inline def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
+    
+    inline def setChannelCountNull: Self = StObject.set(x, "channelCount", null)
     
     inline def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
     
     inline def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
+    inline def setCodecNull: Self = StObject.set(x, "codec", null)
+    
     inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
     inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    
+    inline def setVendorNull: Self = StObject.set(x, "vendor", null)
     
     inline def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
   }

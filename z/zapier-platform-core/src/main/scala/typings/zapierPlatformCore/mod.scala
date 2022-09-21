@@ -1,21 +1,21 @@
 package typings.zapierPlatformCore
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.std.Console
-import typings.std.Error
 import typings.std.Partial
+import typings.std.ReadableStream
 import typings.zapierPlatformCore.anon.Body
 import typings.zapierPlatformCore.anon.CustomStoreKey
+import typings.zapierPlatformCore.anon.Error
 import typings.zapierPlatformCore.anon.Get
 import typings.zapierPlatformCore.anon.HttpRequestOptionsrawtrue
 import typings.zapierPlatformCore.anon.HttpRequestOptionsrawtrueAgent
 import typings.zapierPlatformCore.anon.HttpRequestOptionsurlstri
 import typings.zapierPlatformCore.anon.Id
 import typings.zapierPlatformCore.anon.Inject
-import typings.zapierPlatformCore.anon.IsFillingDynamicDropdown
+import typings.zapierPlatformCore.anon.IsBulkRead
 import typings.zapierPlatformCore.anon.Parse
 import typings.zapierPlatformCore.anon.PartialmethodHttpMethodqu
 import typings.zapierPlatformCore.anon.PartialmethodHttpMethodquContent
@@ -33,38 +33,22 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def createAppTester(appRaw: js.Object): js.Function2[
-    /* func */ js.Function2[
-      /* z */ ZObject, 
-      /* bundle */ Bundle[StringDictionary[js.Any]], 
-      js.Any | js.Promise[js.Any]
-    ], 
-    /* bundle */ js.UndefOr[Partial[Bundle[StringDictionary[js.Any]]]], 
-    js.Promise[js.Any]
+    /* func */ js.Function2[/* z */ ZObject, /* bundle */ Bundle[StringDictionary[Any]], Any | js.Promise[Any]], 
+    /* bundle */ js.UndefOr[Partial[Bundle[StringDictionary[Any]]]], 
+    js.Promise[Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAppTester")(appRaw.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* func */ js.Function2[
-      /* z */ ZObject, 
-      /* bundle */ Bundle[StringDictionary[js.Any]], 
-      js.Any | js.Promise[js.Any]
-    ], 
-    /* bundle */ js.UndefOr[Partial[Bundle[StringDictionary[js.Any]]]], 
-    js.Promise[js.Any]
+    /* func */ js.Function2[/* z */ ZObject, /* bundle */ Bundle[StringDictionary[Any]], Any | js.Promise[Any]], 
+    /* bundle */ js.UndefOr[Partial[Bundle[StringDictionary[Any]]]], 
+    js.Promise[Any]
   ]]
   inline def createAppTester(appRaw: js.Object, options: CustomStoreKey): js.Function2[
-    /* func */ js.Function2[
-      /* z */ ZObject, 
-      /* bundle */ Bundle[StringDictionary[js.Any]], 
-      js.Any | js.Promise[js.Any]
-    ], 
-    /* bundle */ js.UndefOr[Partial[Bundle[StringDictionary[js.Any]]]], 
-    js.Promise[js.Any]
+    /* func */ js.Function2[/* z */ ZObject, /* bundle */ Bundle[StringDictionary[Any]], Any | js.Promise[Any]], 
+    /* bundle */ js.UndefOr[Partial[Bundle[StringDictionary[Any]]]], 
+    js.Promise[Any]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAppTester")(appRaw.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-    /* func */ js.Function2[
-      /* z */ ZObject, 
-      /* bundle */ Bundle[StringDictionary[js.Any]], 
-      js.Any | js.Promise[js.Any]
-    ], 
-    /* bundle */ js.UndefOr[Partial[Bundle[StringDictionary[js.Any]]]], 
-    js.Promise[js.Any]
+    /* func */ js.Function2[/* z */ ZObject, /* bundle */ Bundle[StringDictionary[Any]], Any | js.Promise[Any]], 
+    /* bundle */ js.UndefOr[Partial[Bundle[StringDictionary[Any]]]], 
+    js.Promise[Any]
   ]]
   
   object tools {
@@ -83,7 +67,7 @@ object mod {
   @js.native
   val version: String = js.native
   
-  type AppError = Error
+  type AppError = js.Error
   
   trait BaseHttpResponse extends StObject {
     
@@ -133,13 +117,13 @@ object mod {
     
     var authData: StringDictionary[String]
     
-    var cleanedRequest: js.UndefOr[PartialmethodHttpMethodquContent | js.Any] = js.undefined
+    var cleanedRequest: js.UndefOr[PartialmethodHttpMethodquContent | Any] = js.undefined
     
     var inputData: InputData
     
     var inputDataRaw: StringDictionary[String]
     
-    var meta: IsFillingDynamicDropdown
+    var meta: IsBulkRead
     
     var outputData: js.UndefOr[js.Object] = js.undefined
     
@@ -155,7 +139,7 @@ object mod {
       authData: StringDictionary[String],
       inputData: InputData,
       inputDataRaw: StringDictionary[String],
-      meta: IsFillingDynamicDropdown
+      meta: IsBulkRead
     ): Bundle[InputData] = {
       val __obj = js.Dynamic.literal(authData = authData.asInstanceOf[js.Any], inputData = inputData.asInstanceOf[js.Any], inputDataRaw = inputDataRaw.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bundle[InputData]]
@@ -165,7 +149,7 @@ object mod {
       
       inline def setAuthData(value: StringDictionary[String]): Self = StObject.set(x, "authData", value.asInstanceOf[js.Any])
       
-      inline def setCleanedRequest(value: PartialmethodHttpMethodquContent | js.Any): Self = StObject.set(x, "cleanedRequest", value.asInstanceOf[js.Any])
+      inline def setCleanedRequest(value: PartialmethodHttpMethodquContent | Any): Self = StObject.set(x, "cleanedRequest", value.asInstanceOf[js.Any])
       
       inline def setCleanedRequestUndefined: Self = StObject.set(x, "cleanedRequest", js.undefined)
       
@@ -173,7 +157,7 @@ object mod {
       
       inline def setInputDataRaw(value: StringDictionary[String]): Self = StObject.set(x, "inputDataRaw", value.asInstanceOf[js.Any])
       
-      inline def setMeta(value: IsFillingDynamicDropdown): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: IsBulkRead): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setOutputData(value: js.Object): Self = StObject.set(x, "outputData", value.asInstanceOf[js.Any])
       
@@ -194,14 +178,14 @@ object mod {
   }
   
   type DehydrateFunc = js.Function2[
-    /* func */ js.Function2[/* z */ ZObject, /* bundle */ Bundle[js.Any], js.Any], 
-    /* inputData */ js.Object, 
+    /* func */ js.Function2[/* z */ ZObject, /* bundle */ Bundle[Any], Any], 
+    /* inputData */ Any, 
     String
   ]
   
-  type ExpiredAuthError = Error
+  type ExpiredAuthError = js.Error
   
-  type HaltedError = Error
+  type HaltedError = js.Error
   
   // appTester always returns a promise
   // internal only
@@ -238,7 +222,7 @@ object mod {
     
     var agent: js.UndefOr[Agent] = js.undefined
     
-    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.undefined
+    var body: js.UndefOr[String | Buffer | ReadableStream[Any] | js.Object] = js.undefined
     
     var compress: js.UndefOr[Boolean] = js.undefined
     
@@ -248,7 +232,7 @@ object mod {
     
     var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var json: js.UndefOr[js.Object | js.Array[js.Any]] = js.undefined
+    var json: js.UndefOr[js.Object | js.Array[Any]] = js.undefined
     
     var method: js.UndefOr[HttpMethod] = js.undefined
     
@@ -281,7 +265,7 @@ object mod {
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      inline def setBody(value: String | Buffer | ReadableStream | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | Buffer | ReadableStream[Any] | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -301,11 +285,11 @@ object mod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setJson(value: js.Object | js.Array[js.Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: js.Object | js.Array[Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      inline def setJsonVarargs(value: js.Any*): Self = StObject.set(x, "json", js.Array(value :_*))
+      inline def setJsonVarargs(value: Any*): Self = StObject.set(x, "json", js.Array(value*))
       
       inline def setMethod(value: HttpMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -351,9 +335,9 @@ object mod {
     
     var content: String
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
-    var json: js.UndefOr[js.Any] = js.undefined
+    var json: js.UndefOr[Any] = js.undefined
   }
   object HttpResponse {
     
@@ -374,11 +358,11 @@ object mod {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     }
@@ -388,7 +372,7 @@ object mod {
     extends StObject
        with BaseHttpResponse {
     
-    var body: ReadableStream
+    var body: ReadableStream[Any]
     
     var content: Buffer
     
@@ -397,7 +381,7 @@ object mod {
   object RawHttpResponse {
     
     inline def apply(
-      body: ReadableStream,
+      body: ReadableStream[Any],
       content: Buffer,
       getHeader: String => js.UndefOr[String],
       headers: StringDictionary[String],
@@ -413,7 +397,7 @@ object mod {
     
     extension [Self <: RawHttpResponse](x: Self) {
       
-      inline def setBody(value: ReadableStream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: ReadableStream[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -421,7 +405,9 @@ object mod {
     }
   }
   
-  type RefreshAuthError = Error
+  type RefreshAuthError = js.Error
+  
+  type ThrottledError = js.Error
   
   @js.native
   trait ZObject extends StObject {
@@ -432,16 +418,16 @@ object mod {
     
     var cursor: Get = js.native
     
-    def dehydrate[T](func: js.Function2[/* z */ ZObject, /* bundle */ Bundle[T], js.Any], inputData: js.Object): String = js.native
+    def dehydrate[T](func: js.Function2[/* z */ ZObject, /* bundle */ Bundle[T], Any], inputData: T): String = js.native
     
-    def dehydrateFile[T](func: js.Function2[/* z */ ZObject, /* bundle */ Bundle[T], js.Any], inputData: js.Object): String = js.native
+    def dehydrateFile[T](func: js.Function2[/* z */ ZObject, /* bundle */ Bundle[T], Any], inputData: T): String = js.native
     @JSName("dehydrateFile")
     var dehydrateFile_Original: DehydrateFunc = js.native
     
     @JSName("dehydrate")
     var dehydrate_Original: DehydrateFunc = js.native
     
-    var errors: typings.zapierPlatformCore.anon.Error = js.native
+    var errors: Error = js.native
     
     def generateCallbackUrl(): String = js.native
     
@@ -486,13 +472,13 @@ object mod {
     def stashFile(input: Buffer, knownLength: Unit, filename: String): String = js.native
     def stashFile(input: Buffer, knownLength: Unit, filename: String, contentType: String): String = js.native
     def stashFile(input: Buffer, knownLength: Unit, filename: Unit, contentType: String): String = js.native
-    def stashFile(input: ReadableStream): String = js.native
-    def stashFile(input: ReadableStream, knownLength: Double): String = js.native
-    def stashFile(input: ReadableStream, knownLength: Double, filename: String): String = js.native
-    def stashFile(input: ReadableStream, knownLength: Double, filename: String, contentType: String): String = js.native
-    def stashFile(input: ReadableStream, knownLength: Double, filename: Unit, contentType: String): String = js.native
-    def stashFile(input: ReadableStream, knownLength: Unit, filename: String): String = js.native
-    def stashFile(input: ReadableStream, knownLength: Unit, filename: String, contentType: String): String = js.native
-    def stashFile(input: ReadableStream, knownLength: Unit, filename: Unit, contentType: String): String = js.native
+    def stashFile(input: ReadableStream[Any]): String = js.native
+    def stashFile(input: ReadableStream[Any], knownLength: Double): String = js.native
+    def stashFile(input: ReadableStream[Any], knownLength: Double, filename: String): String = js.native
+    def stashFile(input: ReadableStream[Any], knownLength: Double, filename: String, contentType: String): String = js.native
+    def stashFile(input: ReadableStream[Any], knownLength: Double, filename: Unit, contentType: String): String = js.native
+    def stashFile(input: ReadableStream[Any], knownLength: Unit, filename: String): String = js.native
+    def stashFile(input: ReadableStream[Any], knownLength: Unit, filename: String, contentType: String): String = js.native
+    def stashFile(input: ReadableStream[Any], knownLength: Unit, filename: Unit, contentType: String): String = js.native
   }
 }

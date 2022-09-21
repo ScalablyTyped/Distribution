@@ -30,7 +30,7 @@ object authenticatorMod {
     *
     * @param defaultOptions used to override or add existing defaultOptions.
     */
-  class Authenticator[T /* <: AuthenticatorOptions_[String] */] () extends TOTP[T] {
+  open class Authenticator[T /* <: AuthenticatorOptions_[String] */] () extends TOTP[T] {
     def this(defaultOptions: Partial[T]) = this()
     
     /**
@@ -52,15 +52,15 @@ object authenticatorMod {
   
   inline def authenticatorCheckWithWindow[T /* <: AuthenticatorOptions_[String] */](token: String, secret: Base32SecretKey, options: T): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorCheckWithWindow")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   
-  inline def authenticatorDecoder[T /* <: AuthenticatorOptions_[js.Any] */](secret: Base32SecretKey, options: Pick[T, keyDecoder | encoding]): ReturnType[
+  inline def authenticatorDecoder[T /* <: AuthenticatorOptions_[Any] */](secret: Base32SecretKey, options: Pick[T, keyDecoder | encoding]): ReturnType[
     /* import warning: importer.ImportType#apply Failed type conversion: T['keyDecoder'] */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorDecoder")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
     /* import warning: importer.ImportType#apply Failed type conversion: T['keyDecoder'] */ js.Any
   ]]
   
-  inline def authenticatorDefaultOptions[T /* <: AuthenticatorOptions_[js.Any] */](): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorDefaultOptions")().asInstanceOf[Partial[T]]
+  inline def authenticatorDefaultOptions[T /* <: AuthenticatorOptions_[Any] */](): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorDefaultOptions")().asInstanceOf[Partial[T]]
   
-  inline def authenticatorEncoder[T /* <: AuthenticatorOptions_[js.Any] */](secret: SecretKey, options: Pick[T, keyEncoder | encoding]): ReturnType[
+  inline def authenticatorEncoder[T /* <: AuthenticatorOptions_[Any] */](secret: SecretKey, options: Pick[T, keyEncoder | encoding]): ReturnType[
     /* import warning: importer.ImportType#apply Failed type conversion: T['keyEncoder'] */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorEncoder")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
     /* import warning: importer.ImportType#apply Failed type conversion: T['keyEncoder'] */ js.Any
@@ -68,9 +68,9 @@ object authenticatorMod {
   
   inline def authenticatorGenerateSecret[T /* <: AuthenticatorOptions_[String] */](numberOfBytes: Double, options: Pick[T, keyEncoder | encoding | createRandomBytes]): Base32SecretKey = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorGenerateSecret")(numberOfBytes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Base32SecretKey]
   
-  inline def authenticatorOptionValidator[T /* <: AuthenticatorOptions_[js.Any] */](options: Partial[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorOptionValidator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def authenticatorOptionValidator[T /* <: AuthenticatorOptions_[Any] */](options: Partial[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorOptionValidator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def authenticatorOptions[T /* <: AuthenticatorOptions_[js.Any] */](opt: Partial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorOptions")(opt.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def authenticatorOptions[T /* <: AuthenticatorOptions_[Any] */](opt: Partial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorOptions")(opt.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def authenticatorToken[T /* <: AuthenticatorOptions_[String] */](secret: Base32SecretKey, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorToken")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   

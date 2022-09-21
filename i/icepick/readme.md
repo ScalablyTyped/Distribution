@@ -10,10 +10,10 @@ Utilities for treating frozen JavaScript objects as persistent immutable collect
 | ------------------ | :-------------: |
 | Full name          | icepick |
 | Keywords           | freeze, frozen, immutable, immutability, persistent, collections, structural, sharing, update, redux, flux, store, react, mori, clojure |
-| # releases         | 2 |
-| # dependents       | 17 |
-| # downloads        | 853168 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 109171.66666666667 |
+| # stars            | 402.0 |
 
 ## Links
 - [Homepage](https://github.com/aearly/icepick)

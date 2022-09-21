@@ -4,29 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Reference to a user, group, or domain.
-  */
 trait SchemaPrincipal extends StObject {
   
   /**
-    * This principal is a group identified using an external identity. The name
-    * field must specify the group resource name with this format:
-    * identitysources/{source_id}/groups/{ID}
+    * This principal is a group identified using an external identity. The name field must specify the group resource name with this format: identitysources/{source_id\}/groups/{ID\}
     */
-  var groupResourceName: js.UndefOr[String] = js.undefined
+  var groupResourceName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * This principal is a GSuite user, group or domain.
+    * This principal is a Google Workspace user, group or domain.
     */
   var gsuitePrincipal: js.UndefOr[SchemaGSuitePrincipal] = js.undefined
   
   /**
-    * This principal is a user identified using an external identity. The name
-    * field must specify the user resource name with this format:
-    * identitysources/{source_id}/users/{ID}
+    * This principal is a user identified using an external identity. The name field must specify the user resource name with this format: identitysources/{source_id\}/users/{ID\}
     */
-  var userResourceName: js.UndefOr[String] = js.undefined
+  var userResourceName: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPrincipal {
   
@@ -39,6 +32,8 @@ object SchemaPrincipal {
     
     inline def setGroupResourceName(value: String): Self = StObject.set(x, "groupResourceName", value.asInstanceOf[js.Any])
     
+    inline def setGroupResourceNameNull: Self = StObject.set(x, "groupResourceName", null)
+    
     inline def setGroupResourceNameUndefined: Self = StObject.set(x, "groupResourceName", js.undefined)
     
     inline def setGsuitePrincipal(value: SchemaGSuitePrincipal): Self = StObject.set(x, "gsuitePrincipal", value.asInstanceOf[js.Any])
@@ -46,6 +41,8 @@ object SchemaPrincipal {
     inline def setGsuitePrincipalUndefined: Self = StObject.set(x, "gsuitePrincipal", js.undefined)
     
     inline def setUserResourceName(value: String): Self = StObject.set(x, "userResourceName", value.asInstanceOf[js.Any])
+    
+    inline def setUserResourceNameNull: Self = StObject.set(x, "userResourceName", null)
     
     inline def setUserResourceNameUndefined: Self = StObject.set(x, "userResourceName", js.undefined)
   }

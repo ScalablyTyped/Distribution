@@ -8,5 +8,5 @@ object updateTableOutputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/UpdateTableOutput", "UpdateTableOutput")
   @js.native
-  val UpdateTableOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UpdateTableOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

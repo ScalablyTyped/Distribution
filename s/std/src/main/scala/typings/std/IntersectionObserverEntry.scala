@@ -7,19 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** This Intersection Observer API interface describes the intersection between the target element and its root container at a specific moment of transition. */
 trait IntersectionObserverEntry extends StObject {
   
+  /* standard dom */
   val boundingClientRect: DOMRectReadOnly
   
+  /* standard dom */
   val intersectionRatio: Double
   
+  /* standard dom */
   val intersectionRect: DOMRectReadOnly
   
+  /* standard dom */
   val isIntersecting: scala.Boolean
   
+  /* standard dom */
   val rootBounds: DOMRectReadOnly | Null
   
+  /* standard dom */
   val target: Element
   
-  val time: Double
+  /* standard dom */
+  val time: DOMHighResTimeStamp
 }
 object IntersectionObserverEntry {
   
@@ -29,7 +36,7 @@ object IntersectionObserverEntry {
     intersectionRect: DOMRectReadOnly,
     isIntersecting: scala.Boolean,
     target: Element,
-    time: Double
+    time: DOMHighResTimeStamp
   ): IntersectionObserverEntry = {
     val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect.asInstanceOf[js.Any], intersectionRatio = intersectionRatio.asInstanceOf[js.Any], intersectionRect = intersectionRect.asInstanceOf[js.Any], isIntersecting = isIntersecting.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], rootBounds = null)
     __obj.asInstanceOf[IntersectionObserverEntry]
@@ -51,6 +58,6 @@ object IntersectionObserverEntry {
     
     inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: DOMHighResTimeStamp): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

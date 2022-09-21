@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("athenajs", "MapEvent")
 @js.native
-class MapEvent protected () extends StObject {
+open class MapEvent protected () extends StObject {
   /**
     * Creates a new MapEvent
     *
@@ -37,7 +37,7 @@ class MapEvent protected () extends StObject {
     * Retrieves a switch from the map using its id
     *
     */
-  def getSwitch(id: String): js.Any = js.native
+  def getSwitch(id: String): Any = js.native
   
   def handleAction(options: JSObject): Unit = js.native
   

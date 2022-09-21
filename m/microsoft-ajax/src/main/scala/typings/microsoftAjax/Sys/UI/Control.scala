@@ -45,7 +45,7 @@ trait Control
     * @return
     *      false in all cases.
     */
-  def onBubbleEvent(source: js.Any, args: js.Any): Boolean
+  def onBubbleEvent(source: Any, args: Any): Boolean
   
   /**
     * Calls the onBubbleEvent method of the parent control.
@@ -60,7 +60,7 @@ trait Control
     * @param args
     *          The event arguments.
     */
-  def raiseBubbleEvent(source: js.Any, args: js.Any): Unit
+  def raiseBubbleEvent(source: Any, args: Any): Unit
   
   /**
     * Removes a CSS class from the HTML Document Object Model (DOM) element that the control is attached to.
@@ -88,13 +88,13 @@ object Control {
     dispose: () => Unit,
     endUpdate: () => Unit,
     get_element: () => HTMLElement,
-    get_events: () => js.Any,
+    get_events: () => Any,
     get_id: () => String,
     get_isInitialized: () => Boolean,
     get_isUpdating: () => Boolean,
     initialize: () => Unit,
-    onBubbleEvent: (js.Any, js.Any) => Boolean,
-    raiseBubbleEvent: (js.Any, js.Any) => Unit,
+    onBubbleEvent: (Any, Any) => Boolean,
+    raiseBubbleEvent: (Any, Any) => Unit,
     raisePropertyChanged: String => Unit,
     removeCssClass: String => Unit,
     remove_disposing: js.Function => Unit,
@@ -113,9 +113,9 @@ object Control {
     
     inline def setGet_element(value: () => HTMLElement): Self = StObject.set(x, "get_element", js.Any.fromFunction0(value))
     
-    inline def setOnBubbleEvent(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "onBubbleEvent", js.Any.fromFunction2(value))
+    inline def setOnBubbleEvent(value: (Any, Any) => Boolean): Self = StObject.set(x, "onBubbleEvent", js.Any.fromFunction2(value))
     
-    inline def setRaiseBubbleEvent(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "raiseBubbleEvent", js.Any.fromFunction2(value))
+    inline def setRaiseBubbleEvent(value: (Any, Any) => Unit): Self = StObject.set(x, "raiseBubbleEvent", js.Any.fromFunction2(value))
     
     inline def setRemoveCssClass(value: String => Unit): Self = StObject.set(x, "removeCssClass", js.Any.fromFunction1(value))
     

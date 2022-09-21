@@ -14,17 +14,17 @@ trait ActivePaneChangedEventUIParam extends StObject {
   /**
     * Gets the current active [pane](ig.spreadsheet.SpreadsheetPane).
     */
-  var newActivePane: js.UndefOr[js.Any] = js.undefined
+  var newActivePane: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the previous active [pane](ig.spreadsheet.SpreadsheetPane).
     */
-  var oldActivePane: js.UndefOr[js.Any] = js.undefined
+  var oldActivePane: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the spreadsheet widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the current visible range of the new active pane or null if there is no active pane.
@@ -44,15 +44,15 @@ object ActivePaneChangedEventUIParam {
     
     inline def setActiveCellUndefined: Self = StObject.set(x, "activeCell", js.undefined)
     
-    inline def setNewActivePane(value: js.Any): Self = StObject.set(x, "newActivePane", value.asInstanceOf[js.Any])
+    inline def setNewActivePane(value: Any): Self = StObject.set(x, "newActivePane", value.asInstanceOf[js.Any])
     
     inline def setNewActivePaneUndefined: Self = StObject.set(x, "newActivePane", js.undefined)
     
-    inline def setOldActivePane(value: js.Any): Self = StObject.set(x, "oldActivePane", value.asInstanceOf[js.Any])
+    inline def setOldActivePane(value: Any): Self = StObject.set(x, "oldActivePane", value.asInstanceOf[js.Any])
     
     inline def setOldActivePaneUndefined: Self = StObject.set(x, "oldActivePane", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

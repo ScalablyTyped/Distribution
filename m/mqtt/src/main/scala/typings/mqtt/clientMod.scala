@@ -6,17 +6,26 @@ import typings.mqtt.clientOptionsMod.IClientOptions
 import typings.mqtt.clientOptionsMod.IClientPublishOptions
 import typings.mqtt.clientOptionsMod.IClientReconnectOptions
 import typings.mqtt.clientOptionsMod.IClientSubscribeOptions
+import typings.mqtt.mqttStrings.close
 import typings.mqtt.mqttStrings.connect
+import typings.mqtt.mqttStrings.disconnect
+import typings.mqtt.mqttStrings.end
 import typings.mqtt.mqttStrings.error
 import typings.mqtt.mqttStrings.message
+import typings.mqtt.mqttStrings.offline
+import typings.mqtt.mqttStrings.outgoingEmpty
 import typings.mqtt.mqttStrings.packetreceive
 import typings.mqtt.mqttStrings.packetsend
+import typings.mqtt.mqttStrings.reconnect
 import typings.mqtt.storeMod.Store
+import typings.mqttPacket.mod.IAuthPacket
+import typings.mqttPacket.mod.IConnackPacket
+import typings.mqttPacket.mod.IDisconnectPacket
+import typings.mqttPacket.mod.IPublishPacket
 import typings.mqttPacket.mod.Packet
 import typings.mqttPacket.mod.QoS
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +34,7 @@ object clientMod {
   
   @JSImport("mqtt/types/lib/client", "MqttClient")
   @js.native
-  class MqttClient protected () extends EventEmitter {
+  open class MqttClient protected () extends EventEmitter {
     def this(streamBuilder: js.Function1[/* client */ MqttClient, IStream], options: IClientOptions) = this()
     
     var connected: Boolean = js.native
@@ -59,6 +68,27 @@ object clientMod {
     def getLastMessageId(): Double = js.native
     
     /**
+      * Handle auth packages for MQTT 5 enhanced authentication methods such
+      * as challenge response authentication.
+      *
+      * Challenge-response authentication flow would look something like this:
+      *
+      * --> CONNECT | authMethod = "mathChallenge" -->
+      * <-- AUTH | authMethod = "mathChallenge", authData = "12 + 34" <--
+      * --> AUTH | authMethod = "mathChallenge", authData = "46" -->
+      * <-- CONNACK | reasonCode = SUCCESS <--
+      *
+      * This form of authentication has several advantages over traditional
+      * credential-based approaches. For instance authentication without the direct
+      * exchange of authentication secrets.
+      *
+      * @param packet the auth packet to handle
+      * @param callback call when finished
+      * @api public
+      */
+    def handleAuth(packet: IAuthPacket, callback: PacketCallback): Unit = js.native
+    
+    /**
       * Handle messages with backpressure support, one at a time.
       * Override at will.
       *
@@ -70,29 +100,33 @@ object clientMod {
     
     var incomingStore: Store = js.native
     
+    def on(event: end | reconnect | offline | outgoingEmpty, cb: js.Function0[Unit]): this.type = js.native
+    def on(event: packetsend | packetreceive, cb: OnPacketCallback): this.type = js.native
     def on(event: String, cb: js.Function): this.type = js.native
     @JSName("on")
+    def on_close(event: close, cb: OnCloseCallback): this.type = js.native
+    @JSName("on")
     def on_connect(event: connect, cb: OnConnectCallback): this.type = js.native
+    @JSName("on")
+    def on_disconnect(event: disconnect, cb: OnDisconnectCallback): this.type = js.native
     @JSName("on")
     def on_error(event: error, cb: OnErrorCallback): this.type = js.native
     @JSName("on")
     def on_message(event: message, cb: OnMessageCallback): this.type = js.native
-    @JSName("on")
-    def on_packetreceive(event: packetreceive, cb: OnPacketCallback): this.type = js.native
-    @JSName("on")
-    def on_packetsend(event: packetsend, cb: OnPacketCallback): this.type = js.native
     
+    def once(event: end | reconnect | offline | outgoingEmpty, cb: js.Function0[Unit]): this.type = js.native
+    def once(event: packetsend | packetreceive, cb: OnPacketCallback): this.type = js.native
     def once(event: String, cb: js.Function): this.type = js.native
     @JSName("once")
+    def once_close(event: close, cb: OnCloseCallback): this.type = js.native
+    @JSName("once")
     def once_connect(event: connect, cb: OnConnectCallback): this.type = js.native
+    @JSName("once")
+    def once_disconnect(event: disconnect, cb: OnDisconnectCallback): this.type = js.native
     @JSName("once")
     def once_error(event: error, cb: OnErrorCallback): this.type = js.native
     @JSName("once")
     def once_message(event: message, cb: OnMessageCallback): this.type = js.native
-    @JSName("once")
-    def once_packetreceive(event: packetreceive, cb: OnPacketCallback): this.type = js.native
-    @JSName("once")
-    def once_packetsend(event: packetsend, cb: OnPacketCallback): this.type = js.native
     
     var options: IClientOptions = js.native
     
@@ -210,18 +244,18 @@ object clientMod {
     def unsubscribe(topic: js.Array[String], opts: Unit, callback: PacketCallback): this.type = js.native
   }
   
-  type ClientSubscribeCallback = js.Function2[/* err */ Error, /* granted */ js.Array[ISubscriptionGrant], Unit]
+  type ClientSubscribeCallback = js.Function2[/* err */ js.Error, /* granted */ js.Array[ISubscriptionGrant], Unit]
   
-  type CloseCallback = js.Function0[Unit]
+  type CloseCallback = js.Function1[/* error */ js.UndefOr[js.Error], Unit]
   
   @js.native
   trait IStream extends EventEmitter {
     
-    def destroy(): js.Any = js.native
+    def destroy(): Any = js.native
     
-    def end(): js.Any = js.native
+    def end(): Any = js.native
     
-    def pipe(to: js.Any): js.Any = js.native
+    def pipe(to: Any): Any = js.native
   }
   
   trait ISubscriptionGrant extends StObject {
@@ -337,13 +371,17 @@ object clientMod {
     }
   }
   
-  type OnConnectCallback = js.Function1[/* packet */ Packet, Unit]
+  type OnCloseCallback = js.Function0[Unit]
   
-  type OnErrorCallback = js.Function1[/* error */ Error, Unit]
+  type OnConnectCallback = js.Function1[/* packet */ IConnackPacket, Unit]
   
-  type OnMessageCallback = js.Function3[/* topic */ String, /* payload */ Buffer, /* packet */ Packet, Unit]
+  type OnDisconnectCallback = js.Function1[/* packet */ IDisconnectPacket, Unit]
+  
+  type OnErrorCallback = js.Function1[/* error */ js.Error, Unit]
+  
+  type OnMessageCallback = js.Function3[/* topic */ String, /* payload */ Buffer, /* packet */ IPublishPacket, Unit]
   
   type OnPacketCallback = js.Function1[/* packet */ Packet, Unit]
   
-  type PacketCallback = js.Function2[/* error */ js.UndefOr[Error], /* packet */ js.UndefOr[Packet], js.Any]
+  type PacketCallback = js.Function2[/* error */ js.UndefOr[js.Error], /* packet */ js.UndefOr[Packet], Any]
 }

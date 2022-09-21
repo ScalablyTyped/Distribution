@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fiber extends StObject {
   
-  def reset(): js.Any = js.native
+  def reset(): Any = js.native
   
-  def run(): js.Any = js.native
-  def run(param: js.Any): js.Any = js.native
+  def run(): Any = js.native
+  def run(param: Any): Any = js.native
   
-  def throwInto(ex: js.Any): js.Any = js.native
+  def throwInto(ex: Any): Any = js.native
 }

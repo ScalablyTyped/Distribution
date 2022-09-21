@@ -12,11 +12,15 @@ trait TextAreaOptions extends StObject {
   
   var enable: js.UndefOr[Boolean] = js.undefined
   
+  var fillMode: js.UndefOr[String] = js.undefined
+  
   var label: js.UndefOr[String | js.Function | TextAreaLabel] = js.undefined
   
   var maxLength: js.UndefOr[Double] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
+  
+  var overflow: js.UndefOr[String] = js.undefined
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -24,7 +28,13 @@ trait TextAreaOptions extends StObject {
   
   var resizable: js.UndefOr[String] = js.undefined
   
+  var resize: js.UndefOr[String] = js.undefined
+  
+  var rounded: js.UndefOr[String] = js.undefined
+  
   var rows: js.UndefOr[Double] = js.undefined
+  
+  var size: js.UndefOr[String] = js.undefined
   
   var value: js.UndefOr[String] = js.undefined
 }
@@ -49,6 +59,10 @@ object TextAreaOptions {
     
     inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
+    inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
+    
+    inline def setFillModeUndefined: Self = StObject.set(x, "fillMode", js.undefined)
+    
     inline def setLabel(value: String | js.Function | TextAreaLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
@@ -60,6 +74,10 @@ object TextAreaOptions {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    
+    inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
@@ -73,9 +91,21 @@ object TextAreaOptions {
     
     inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
+    inline def setResize(value: String): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    
+    inline def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+    
     inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

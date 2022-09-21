@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/autop" : "2.10.0"
+      "@wordpress/autop" : "3.17.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/autop" : "2.10.0"
+      "@wordpress/autop" : "3.17.0"
     }
   ],
   "compile-devDependencies" : [

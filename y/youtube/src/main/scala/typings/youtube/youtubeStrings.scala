@@ -56,8 +56,8 @@ object youtubeStrings {
   inline def onStateChange: onStateChange = "onStateChange".asInstanceOf[onStateChange]
   
   @js.native
-  sealed trait player extends StObject
-  inline def player: player = "player".asInstanceOf[player]
+  sealed trait playlist extends StObject
+  inline def playlist: playlist = "playlist".asInstanceOf[playlist]
   
   @js.native
   sealed trait red

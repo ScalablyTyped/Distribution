@@ -10,15 +10,21 @@ trait SVGRectElement
   extends StObject
      with SVGGeometryElement {
   
+  /* standard dom */
   val height: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val rx: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val ry: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val width: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val x: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val y: SVGAnimatedLength = js.native
 }

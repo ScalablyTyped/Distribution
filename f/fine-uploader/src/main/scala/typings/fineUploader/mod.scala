@@ -23,7 +23,7 @@ object mod {
   /**
     * The FineUploader Core + UI constructor
     */
-  class FineUploader () extends FineUploaderBasic {
+  open class FineUploader () extends FineUploaderBasic {
     def this(fineuploaderOptions: UIOptions) = this()
     
     /**
@@ -172,7 +172,7 @@ object mod {
       *
       * @default `[]`
       */
-    var extraDropzones: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var extraDropzones: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Include the path of dropped files (starting with the top-level dropped directory). This value will be sent along with the request as a qqpath parameter
@@ -190,11 +190,11 @@ object mod {
     
     extension [Self <: UIDragAndDropOptions](x: Self) {
       
-      inline def setExtraDropzones(value: js.Array[js.Any]): Self = StObject.set(x, "extraDropzones", value.asInstanceOf[js.Any])
+      inline def setExtraDropzones(value: js.Array[Any]): Self = StObject.set(x, "extraDropzones", value.asInstanceOf[js.Any])
       
       inline def setExtraDropzonesUndefined: Self = StObject.set(x, "extraDropzones", js.undefined)
       
-      inline def setExtraDropzonesVarargs(value: js.Any*): Self = StObject.set(x, "extraDropzones", js.Array(value :_*))
+      inline def setExtraDropzonesVarargs(value: Any*): Self = StObject.set(x, "extraDropzones", js.Array(value*))
       
       inline def setReportDirectoryPaths(value: Boolean): Self = StObject.set(x, "reportDirectoryPaths", value.asInstanceOf[js.Any])
       

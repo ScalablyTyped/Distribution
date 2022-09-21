@@ -10,18 +10,18 @@ object anon {
   
   trait File extends StObject {
     
-    var file: js.Any
+    var file: Any
   }
   object File {
     
-    inline def apply(file: js.Any): File = {
+    inline def apply(file: Any): File = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[File]
     }
     
     extension [Self <: File](x: Self) {
       
-      inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,7 +48,7 @@ object anon {
   
   trait Mappings extends StObject {
     
-    var file: js.Any
+    var file: Any
     
     var mappings: String
     
@@ -61,7 +61,7 @@ object anon {
   object Mappings {
     
     inline def apply(
-      file: js.Any,
+      file: Any,
       mappings: String,
       sources: js.Array[String],
       sourcesContent: js.Array[String],
@@ -73,7 +73,7 @@ object anon {
     
     extension [Self <: Mappings](x: Self) {
       
-      inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
       inline def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       
@@ -81,9 +81,9 @@ object anon {
       
       inline def setSourcesContent(value: js.Array[String]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
       
-      inline def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value :_*))
+      inline def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value*))
       
-      inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value*))
       
       inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
@@ -116,9 +116,9 @@ object anon {
       
       inline def setSourcesContent(value: js.Array[String]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
       
-      inline def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value :_*))
+      inline def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value*))
       
-      inline def setSourcesVarargs(value: (String | SourceNode | CodeNode)*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: (String | SourceNode | CodeNode)*): Self = StObject.set(x, "sources", js.Array(value*))
     }
   }
 }

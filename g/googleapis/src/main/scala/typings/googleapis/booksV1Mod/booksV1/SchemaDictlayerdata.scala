@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaDictlayerdata extends StObject {
   
-  var common: js.UndefOr[Title] = js.undefined
+  var common: js.UndefOr[Title | Null] = js.undefined
   
-  var dict: js.UndefOr[Words] = js.undefined
+  var dict: js.UndefOr[Words | Null] = js.undefined
   
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDictlayerdata {
   
@@ -25,13 +25,19 @@ object SchemaDictlayerdata {
     
     inline def setCommon(value: Title): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
+    inline def setCommonNull: Self = StObject.set(x, "common", null)
+    
     inline def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
     
     inline def setDict(value: Words): Self = StObject.set(x, "dict", value.asInstanceOf[js.Any])
     
+    inline def setDictNull: Self = StObject.set(x, "dict", null)
+    
     inline def setDictUndefined: Self = StObject.set(x, "dict", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

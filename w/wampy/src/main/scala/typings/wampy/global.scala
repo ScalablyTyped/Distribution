@@ -15,7 +15,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("wampy")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends StObject
          with Wampy {
       def this(options: WampyOptions) = this()

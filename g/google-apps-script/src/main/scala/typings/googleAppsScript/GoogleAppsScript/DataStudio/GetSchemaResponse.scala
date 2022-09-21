@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait GetSchemaResponse extends StObject {
   
-  def build(): js.Any
+  def build(): Any
   
   def printJson(): String
   
@@ -39,14 +39,14 @@ trait GetSchemaResponse extends StObject {
 }
 object GetSchemaResponse {
   
-  inline def apply(build: () => js.Any, printJson: () => String, setFields: Fields => GetSchemaResponse): GetSchemaResponse = {
+  inline def apply(build: () => Any, printJson: () => String, setFields: Fields => GetSchemaResponse): GetSchemaResponse = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), printJson = js.Any.fromFunction0(printJson), setFields = js.Any.fromFunction1(setFields))
     __obj.asInstanceOf[GetSchemaResponse]
   }
   
   extension [Self <: GetSchemaResponse](x: Self) {
     
-    inline def setBuild(value: () => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => Any): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     

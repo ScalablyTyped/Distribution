@@ -11,16 +11,16 @@ object sdkinfoMod {
     
     var integrations: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: String
+    var name: js.UndefOr[String] = js.undefined
     
     var packages: js.UndefOr[js.Array[Package]] = js.undefined
     
-    var version: String
+    var version: js.UndefOr[String] = js.undefined
   }
   object SdkInfo {
     
-    inline def apply(name: String, version: String): SdkInfo = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    inline def apply(): SdkInfo = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SdkInfo]
     }
     
@@ -30,17 +30,21 @@ object sdkinfoMod {
       
       inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
       
-      inline def setIntegrationsVarargs(value: String*): Self = StObject.set(x, "integrations", js.Array(value :_*))
+      inline def setIntegrationsVarargs(value: String*): Self = StObject.set(x, "integrations", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setPackages(value: js.Array[Package]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
       
       inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
       
-      inline def setPackagesVarargs(value: Package*): Self = StObject.set(x, "packages", js.Array(value :_*))
+      inline def setPackagesVarargs(value: Package*): Self = StObject.set(x, "packages", js.Array(value*))
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

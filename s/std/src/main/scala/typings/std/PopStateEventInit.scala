@@ -8,7 +8,8 @@ trait PopStateEventInit
   extends StObject
      with EventInit {
   
-  var state: js.UndefOr[js.Any] = js.undefined
+  /* standard dom */
+  var state: js.UndefOr[Any] = js.undefined
 }
 object PopStateEventInit {
   
@@ -19,7 +20,7 @@ object PopStateEventInit {
   
   extension [Self <: PopStateEventInit](x: Self) {
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

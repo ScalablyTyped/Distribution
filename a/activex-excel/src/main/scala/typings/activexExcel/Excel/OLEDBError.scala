@@ -19,7 +19,7 @@ trait OLEDBError extends StObject {
   
   val Number: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   val SqlState: String
   
@@ -34,7 +34,7 @@ object OLEDBError {
     ExcelDotOLEDBError_typekey: OLEDBError,
     Native: Double,
     Number: Double,
-    Parent: js.Any,
+    Parent: Any,
     SqlState: String,
     Stage: Double
   ): OLEDBError = {
@@ -57,7 +57,7 @@ object OLEDBError {
     
     inline def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSqlState(value: String): Self = StObject.set(x, "SqlState", value.asInstanceOf[js.Any])
     

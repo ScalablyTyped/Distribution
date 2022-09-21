@@ -39,7 +39,7 @@ object String {
     
     inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
-    inline def setEnumVarargs(value: java.lang.String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: java.lang.String*): Self = StObject.set(x, "enum", js.Array(value*))
     
     inline def setIdempotencyToken(value: scala.Boolean): Self = StObject.set(x, "idempotencyToken", value.asInstanceOf[js.Any])
     

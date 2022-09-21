@@ -45,7 +45,7 @@ trait FillFormat extends StObject {
   
   def OneColorGradient(Style: MsoGradientStyle, Variant: Double, Degree: Double): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Pattern: MsoPatternType
   
@@ -113,7 +113,7 @@ object FillFormat {
     GradientStyle: MsoGradientStyle,
     GradientVariant: Double,
     OneColorGradient: (MsoGradientStyle, Double, Double) => Unit,
-    Parent: js.Any,
+    Parent: Any,
     Pattern: MsoPatternType,
     Patterned: MsoPatternType => Unit,
     PictureEffects: PictureEffects,
@@ -170,7 +170,7 @@ object FillFormat {
     
     inline def setOneColorGradient(value: (MsoGradientStyle, Double, Double) => Unit): Self = StObject.set(x, "OneColorGradient", js.Any.fromFunction3(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPattern(value: MsoPatternType): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     

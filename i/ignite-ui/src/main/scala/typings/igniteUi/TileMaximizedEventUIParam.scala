@@ -9,12 +9,12 @@ trait TileMaximizedEventUIParam extends StObject {
   /**
     * Used to get a reference to the tile manager the maximized tile belongs to.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to get the jQuery element of the maximized tile
     */
-  var tile: js.UndefOr[js.Any] = js.undefined
+  var tile: js.UndefOr[Any] = js.undefined
 }
 object TileMaximizedEventUIParam {
   
@@ -25,11 +25,11 @@ object TileMaximizedEventUIParam {
   
   extension [Self <: TileMaximizedEventUIParam](x: Self) {
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    inline def setTile(value: js.Any): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+    inline def setTile(value: Any): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
     
     inline def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
   }

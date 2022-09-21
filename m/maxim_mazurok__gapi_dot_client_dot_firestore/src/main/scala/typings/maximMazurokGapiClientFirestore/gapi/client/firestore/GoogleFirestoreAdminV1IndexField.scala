@@ -12,7 +12,7 @@ trait GoogleFirestoreAdminV1IndexField extends StObject {
   /** Can be __name__. For single field indexes, this must match the name of the field or may be omitted. */
   var fieldPath: js.UndefOr[String] = js.undefined
   
-  /** Indicates that this field supports ordering by the specified order or comparing using =, <, <=, >, >=. */
+  /** Indicates that this field supports ordering by the specified order or comparing using =, !=, <, <=, >, >=. */
   var order: js.UndefOr[String] = js.undefined
 }
 object GoogleFirestoreAdminV1IndexField {

@@ -12,10 +12,9 @@ trait SchemaCustomGroup extends StObject {
   var attributes: js.UndefOr[js.Array[SchemaCustomAttribute]] = js.undefined
   
   /**
-    * The name of the group. Underscores will be replaced by spaces upon
-    * insertion.
+    * The name of the group. Underscores will be replaced by spaces upon insertion.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCustomGroup {
   
@@ -30,9 +29,11 @@ object SchemaCustomGroup {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: SchemaCustomAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: SchemaCustomAttribute*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

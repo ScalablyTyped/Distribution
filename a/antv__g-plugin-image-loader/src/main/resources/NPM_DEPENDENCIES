@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@antv/g-plugin-image-loader" : "1.1.18"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@antv/g-plugin-image-loader" : "1.1.18"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

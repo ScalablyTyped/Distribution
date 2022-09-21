@@ -12,7 +12,7 @@ trait GridBroadphase
   
   var aabbMin: Vec3
   
-  var bins: js.Array[js.Any]
+  var bins: js.Array[Any]
   
   var nx: Double
   
@@ -26,7 +26,7 @@ object GridBroadphase {
     aabbMax: Vec3,
     aabbMin: Vec3,
     aabbQuery: (World, AABB, js.Array[Body]) => js.Array[Body],
-    bins: js.Array[js.Any],
+    bins: js.Array[Any],
     boundingSphereCheck: (Body, Body) => Boolean,
     collisionPairs: (World, js.Array[Body], js.Array[Body]) => Unit,
     dirty: Boolean,
@@ -52,9 +52,9 @@ object GridBroadphase {
     
     inline def setAabbMin(value: Vec3): Self = StObject.set(x, "aabbMin", value.asInstanceOf[js.Any])
     
-    inline def setBins(value: js.Array[js.Any]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
+    inline def setBins(value: js.Array[Any]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     
-    inline def setBinsVarargs(value: js.Any*): Self = StObject.set(x, "bins", js.Array(value :_*))
+    inline def setBinsVarargs(value: Any*): Self = StObject.set(x, "bins", js.Array(value*))
     
     inline def setNx(value: Double): Self = StObject.set(x, "nx", value.asInstanceOf[js.Any])
     

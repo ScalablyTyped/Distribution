@@ -11,7 +11,7 @@ trait LineMarkSeriesProps
   extends StObject
      with AbstractSeriesProps[LineMarkSeriesPoint] {
   
-  var curve: js.UndefOr[String | (js.Function1[/* x */ js.Any, js.Any])] = js.undefined
+  var curve: js.UndefOr[String | (js.Function1[/* x */ Any, Any])] = js.undefined
   
   // default: null
   var getNull: js.UndefOr[RVGetNull[LineMarkSeriesPoint]] = js.undefined
@@ -21,8 +21,13 @@ trait LineMarkSeriesProps
   // default: {}
   var markStyle: js.UndefOr[CSSProperties] = js.undefined
   
+  var size: js.UndefOr[Double] = js.undefined
+  
   // default: {}
   var strokeStyle: js.UndefOr[dashed | solid] = js.undefined
+  
+  // default: 'solid'
+  var strokeWidth: js.UndefOr[Double] = js.undefined
 }
 object LineMarkSeriesProps {
   
@@ -33,13 +38,13 @@ object LineMarkSeriesProps {
   
   extension [Self <: LineMarkSeriesProps](x: Self) {
     
-    inline def setCurve(value: String | (js.Function1[/* x */ js.Any, js.Any])): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
+    inline def setCurve(value: String | (js.Function1[/* x */ Any, Any])): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
-    inline def setCurveFunction1(value: /* x */ js.Any => js.Any): Self = StObject.set(x, "curve", js.Any.fromFunction1(value))
+    inline def setCurveFunction1(value: /* x */ Any => Any): Self = StObject.set(x, "curve", js.Any.fromFunction1(value))
     
     inline def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
     
-    inline def setGetNull(value: LineMarkSeriesPoint => js.Any): Self = StObject.set(x, "getNull", js.Any.fromFunction1(value))
+    inline def setGetNull(value: LineMarkSeriesPoint => Any): Self = StObject.set(x, "getNull", js.Any.fromFunction1(value))
     
     inline def setGetNullUndefined: Self = StObject.set(x, "getNull", js.undefined)
     
@@ -51,8 +56,16 @@ object LineMarkSeriesProps {
     
     inline def setMarkStyleUndefined: Self = StObject.set(x, "markStyle", js.undefined)
     
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
     inline def setStrokeStyle(value: dashed | solid): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
     
     inline def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
+    
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

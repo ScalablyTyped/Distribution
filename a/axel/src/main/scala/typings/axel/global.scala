@@ -8,7 +8,7 @@ object global {
   
   @JSGlobal("Axel")
   @js.native
-  class Axel ()
+  open class Axel ()
     extends StObject
        with typings.axel.Axel {
     

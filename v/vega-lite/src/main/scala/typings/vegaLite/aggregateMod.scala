@@ -1,5 +1,7 @@
 package typings.vegaLite
 
+import typings.std.ReadonlySet
+import typings.vegaLite.channeldefMod.FieldName
 import typings.vegaTypings.transformMod.AggregateOp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +13,9 @@ object aggregateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/aggregate", "AGGREGATE_OPS")
-  @js.native
-  val AGGREGATE_OPS: js.Array[AggregateOp] = js.native
-  
   @JSImport("vega-lite/build/src/aggregate", "COUNTING_OPS")
   @js.native
-  val COUNTING_OPS: js.Array[NonArgAggregateOp] = js.native
+  val COUNTING_OPS: ReadonlySet[NonArgAggregateOp] = js.native
   
   object MULTIDOMAIN_SORT_OP_INDEX {
     
@@ -43,11 +41,11 @@ object aggregateMod {
   
   @JSImport("vega-lite/build/src/aggregate", "SHARED_DOMAIN_OPS")
   @js.native
-  val SHARED_DOMAIN_OPS: js.Array[AggregateOp] = js.native
+  val SHARED_DOMAIN_OPS: ReadonlySet[AggregateOp] = js.native
   
   @JSImport("vega-lite/build/src/aggregate", "SUM_OPS")
   @js.native
-  val SUM_OPS: js.Array[NonArgAggregateOp] = js.native
+  val SUM_OPS: ReadonlySet[NonArgAggregateOp] = js.native
   
   inline def isAggregateOp(a: String): /* is vega-typings.vega-typings/types/spec/transform.AggregateOp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAggregateOp")(a.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/transform.AggregateOp */ Boolean]
   inline def isAggregateOp(a: ArgmaxDef): /* is vega-typings.vega-typings/types/spec/transform.AggregateOp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAggregateOp")(a.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/transform.AggregateOp */ Boolean]
@@ -145,35 +143,35 @@ object aggregateMod {
   
   trait ArgmaxDef extends StObject {
     
-    var argmax: String
+    var argmax: FieldName
   }
   object ArgmaxDef {
     
-    inline def apply(argmax: String): ArgmaxDef = {
+    inline def apply(argmax: FieldName): ArgmaxDef = {
       val __obj = js.Dynamic.literal(argmax = argmax.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArgmaxDef]
     }
     
     extension [Self <: ArgmaxDef](x: Self) {
       
-      inline def setArgmax(value: String): Self = StObject.set(x, "argmax", value.asInstanceOf[js.Any])
+      inline def setArgmax(value: FieldName): Self = StObject.set(x, "argmax", value.asInstanceOf[js.Any])
     }
   }
   
   trait ArgminDef extends StObject {
     
-    var argmin: String
+    var argmin: FieldName
   }
   object ArgminDef {
     
-    inline def apply(argmin: String): ArgminDef = {
+    inline def apply(argmin: FieldName): ArgminDef = {
       val __obj = js.Dynamic.literal(argmin = argmin.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArgminDef]
     }
     
     extension [Self <: ArgminDef](x: Self) {
       
-      inline def setArgmin(value: String): Self = StObject.set(x, "argmin", value.asInstanceOf[js.Any])
+      inline def setArgmin(value: FieldName): Self = StObject.set(x, "argmin", value.asInstanceOf[js.Any])
     }
   }
   

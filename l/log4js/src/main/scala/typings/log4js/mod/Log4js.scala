@@ -1,6 +1,5 @@
 package typings.log4js.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,15 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Log4js extends StObject {
   
-  def addLayout(
-    name: String,
-    config: js.Function1[/* a */ js.Any, js.Function1[/* logEvent */ LoggingEvent, String]]
-  ): Unit = js.native
+  def addLayout(name: String, config: js.Function1[/* a */ Any, js.Function1[/* logEvent */ LoggingEvent, String]]): Unit = js.native
   
   def configure(config: Configuration): Log4js = js.native
   def configure(filename: String): Log4js = js.native
   
-  def connectLogger(logger: Logger, options: typings.log4js.anon.Format): js.Any = js.native
+  def connectLogger(logger: Logger, options: typings.log4js.anon.Format): Any = js.native
   
   def getLogger(): Logger = js.native
   def getLogger(category: String): Logger = js.native
@@ -24,5 +20,5 @@ trait Log4js extends StObject {
   // express.Handler;
   var levels: Levels_ = js.native
   
-  def shutdown(cb: js.Function1[/* error */ Error, Unit]): Unit | Null = js.native
+  def shutdown(cb: js.Function1[/* error */ js.Error, Unit]): Unit | Null = js.native
 }

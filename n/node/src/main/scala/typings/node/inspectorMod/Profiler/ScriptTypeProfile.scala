@@ -37,7 +37,7 @@ object ScriptTypeProfile {
     
     inline def setEntries(value: js.Array[TypeProfileEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    inline def setEntriesVarargs(value: TypeProfileEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: TypeProfileEntry*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     

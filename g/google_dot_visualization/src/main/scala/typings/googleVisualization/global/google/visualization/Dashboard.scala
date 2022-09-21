@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.visualization.Dashboard")
 @js.native
-class Dashboard protected ()
+open class Dashboard protected ()
   extends StObject
      with typings.googleVisualization.google.visualization.Dashboard {
   def this(containerRef: HTMLElement) = this()

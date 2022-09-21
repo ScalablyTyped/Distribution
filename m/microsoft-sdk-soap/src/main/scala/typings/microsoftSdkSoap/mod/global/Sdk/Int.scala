@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Int")
 @js.native
-class Int protected () extends AttributeBase {
+open class Int protected () extends AttributeBase {
   /**
     * An Integer Attribute.
     * @param name The logical name of the attribute.

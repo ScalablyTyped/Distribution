@@ -10,10 +10,10 @@ Base64 encode, decode, escape and unescape for URL applications
 | ------------------ | :-------------: |
 | Full name          | base64-url |
 | Keywords           | base64, base64url |
-| # releases         | 5 |
-| # dependents       | 138 |
-| # downloads        | 15171434 |
-| # stars            | 12 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2081981.6666666667 |
+| # stars            | 106.0 |
 
 ## Links
 - [Homepage](https://github.com/joaquimserafim/base64-url)

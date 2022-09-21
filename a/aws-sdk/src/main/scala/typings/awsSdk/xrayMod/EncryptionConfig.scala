@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EncryptionConfig extends StObject {
   
   /**
-    * The ID of the customer master key (CMK) used for encryption, if applicable.
+    * The ID of the KMS key used for encryption, if applicable.
     */
   var KeyId: js.UndefOr[String] = js.undefined
   
@@ -17,7 +17,7 @@ trait EncryptionConfig extends StObject {
   var Status: js.UndefOr[EncryptionStatus] = js.undefined
   
   /**
-    * The type of encryption. Set to KMS for encryption with CMKs. Set to NONE for default encryption.
+    * The type of encryption. Set to KMS for encryption with KMS keys. Set to NONE for default encryption.
     */
   var Type: js.UndefOr[EncryptionType] = js.undefined
 }

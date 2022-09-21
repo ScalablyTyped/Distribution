@@ -8,14 +8,12 @@ trait AuthCode extends StObject {
   
   var authCode: String
   
-  var authErrorScopes: js.Any
-  
-  var authSuccessScopes: js.Array[String]
+  var authState: String
 }
 object AuthCode {
   
-  inline def apply(authCode: String, authErrorScopes: js.Any, authSuccessScopes: js.Array[String]): AuthCode = {
-    val __obj = js.Dynamic.literal(authCode = authCode.asInstanceOf[js.Any], authErrorScopes = authErrorScopes.asInstanceOf[js.Any], authSuccessScopes = authSuccessScopes.asInstanceOf[js.Any])
+  inline def apply(authCode: String, authState: String): AuthCode = {
+    val __obj = js.Dynamic.literal(authCode = authCode.asInstanceOf[js.Any], authState = authState.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthCode]
   }
   
@@ -23,10 +21,6 @@ object AuthCode {
     
     inline def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
     
-    inline def setAuthErrorScopes(value: js.Any): Self = StObject.set(x, "authErrorScopes", value.asInstanceOf[js.Any])
-    
-    inline def setAuthSuccessScopes(value: js.Array[String]): Self = StObject.set(x, "authSuccessScopes", value.asInstanceOf[js.Any])
-    
-    inline def setAuthSuccessScopesVarargs(value: String*): Self = StObject.set(x, "authSuccessScopes", js.Array(value :_*))
+    inline def setAuthState(value: String): Self = StObject.set(x, "authState", value.asInstanceOf[js.Any])
   }
 }

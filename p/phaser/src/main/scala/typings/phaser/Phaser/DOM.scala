@@ -1,5 +1,6 @@
 package typings.phaser.Phaser
 
+import typings.std.DOMHighResTimeStamp
 import typings.std.FrameRequestCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +17,7 @@ object DOM {
     /**
       * The callback to be invoked each step.
       */
-    def callback(time: Double): Unit
+    def callback(time: DOMHighResTimeStamp): Unit
     /**
       * The callback to be invoked each step.
       */
@@ -55,7 +56,7 @@ object DOM {
       * The RAF step function.
       * Updates the local tick value, invokes the callback and schedules another call to requestAnimationFrame.
       */
-    def step(time: Double): Unit
+    def step(time: DOMHighResTimeStamp): Unit
     
     /**
       * The SetTimeout step function.
@@ -94,13 +95,13 @@ object DOM {
   object RequestAnimationFrame {
     
     inline def apply(
-      callback: /* time */ Double => Unit,
+      callback: /* time */ DOMHighResTimeStamp => Unit,
       destroy: () => Unit,
       isRunning: Boolean,
       isSetTimeOut: Boolean,
       lastTime: Double,
       start: (FrameRequestCallback, Boolean, Double) => Unit,
-      step: /* time */ Double => Unit,
+      step: /* time */ DOMHighResTimeStamp => Unit,
       stepTimeout: js.Function,
       stop: () => Unit,
       target: Double,
@@ -113,7 +114,7 @@ object DOM {
     
     extension [Self <: RequestAnimationFrame](x: Self) {
       
-      inline def setCallback(value: /* time */ Double => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* time */ DOMHighResTimeStamp => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -125,7 +126,7 @@ object DOM {
       
       inline def setStart(value: (FrameRequestCallback, Boolean, Double) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
       
-      inline def setStep(value: /* time */ Double => Unit): Self = StObject.set(x, "step", js.Any.fromFunction1(value))
+      inline def setStep(value: /* time */ DOMHighResTimeStamp => Unit): Self = StObject.set(x, "step", js.Any.fromFunction1(value))
       
       inline def setStepTimeout(value: js.Function): Self = StObject.set(x, "stepTimeout", value.asInstanceOf[js.Any])
       

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait InstallationConstructor
   extends StObject
-     with ObjectStatic
+     with ObjectStatic[Installation[Attributes]]
      with Instantiable0[Installation[Attributes]]
      with Instantiable1[/* attributes */ Attributes, Installation[Attributes]]

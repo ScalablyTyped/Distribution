@@ -12,7 +12,7 @@ trait PaperSize extends StObject {
   
   var height: js.UndefOr[String] = js.undefined
   
-  var margin: js.UndefOr[js.Any] = js.undefined
+  var margin: js.UndefOr[Any] = js.undefined
   
   var orientation: js.UndefOr[String] = js.undefined
   
@@ -37,7 +37,7 @@ object PaperSize {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     

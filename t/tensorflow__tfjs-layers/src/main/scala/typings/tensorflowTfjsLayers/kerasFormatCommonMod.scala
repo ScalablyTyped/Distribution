@@ -15,6 +15,10 @@ object kerasFormatCommonMod {
   @js.native
   val VALID_DATA_FORMAT_VALUES: js.Array[String] = js.native
   
+  @JSImport("@tensorflow/tfjs-layers/dist/keras_format/common", "VALID_INTERPOLATION_FORMAT_VALUES")
+  @js.native
+  val VALID_INTERPOLATION_FORMAT_VALUES: js.Array[String] = js.native
+  
   @JSImport("@tensorflow/tfjs-layers/dist/keras_format/common", "VALID_PADDING_MODE_VALUES")
   @js.native
   val VALID_PADDING_MODE_VALUES: js.Array[String] = js.native
@@ -88,6 +92,18 @@ object kerasFormatCommonMod {
     inline def int32: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.int32 = "int32".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.int32]
     
     inline def string: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.string = "string".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.string]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.nearest
+    - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.bilinear
+  */
+  trait InterpolationFormat extends StObject
+  object InterpolationFormat {
+    
+    inline def bilinear: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.bilinear = "bilinear".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.bilinear]
+    
+    inline def nearest: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.nearest = "nearest".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.nearest]
   }
   
   /* Rewritten from type alias, can be one of: 

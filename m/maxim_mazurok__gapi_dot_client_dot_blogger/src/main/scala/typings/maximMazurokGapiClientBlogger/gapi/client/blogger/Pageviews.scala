@@ -33,7 +33,7 @@ object Pageviews {
     
     inline def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
     
-    inline def setCountsVarargs(value: Count*): Self = StObject.set(x, "counts", js.Array(value :_*))
+    inline def setCountsVarargs(value: Count*): Self = StObject.set(x, "counts", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

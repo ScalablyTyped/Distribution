@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TextChangeRange extends StObject {
   
-  /* private */ var _newLength: js.Any
+  /* private */ var _newLength: Any
   
-  /* private */ var _span: js.Any
+  /* private */ var _span: Any
   
   def isUnchanged(): Boolean
   
@@ -21,8 +21,8 @@ trait TextChangeRange extends StObject {
 object TextChangeRange {
   
   inline def apply(
-    _newLength: js.Any,
-    _span: js.Any,
+    _newLength: Any,
+    _span: Any,
     isUnchanged: () => Boolean,
     newLength: () => Double,
     newSpan: () => TextSpan,
@@ -42,8 +42,8 @@ object TextChangeRange {
     
     inline def setSpan(value: () => TextSpan): Self = StObject.set(x, "span", js.Any.fromFunction0(value))
     
-    inline def set_newLength(value: js.Any): Self = StObject.set(x, "_newLength", value.asInstanceOf[js.Any])
+    inline def set_newLength(value: Any): Self = StObject.set(x, "_newLength", value.asInstanceOf[js.Any])
     
-    inline def set_span(value: js.Any): Self = StObject.set(x, "_span", value.asInstanceOf[js.Any])
+    inline def set_span(value: Any): Self = StObject.set(x, "_span", value.asInstanceOf[js.Any])
   }
 }

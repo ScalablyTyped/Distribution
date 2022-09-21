@@ -10,15 +10,12 @@ A minimal path module to resolve Unix, Windows and URL paths alike.
 | ------------------ | :-------------: |
 | Full name          | @protobufjs/path |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 143830026 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7737695E7 |
+| # stars            | 8342.0 |
 
 ## Links
-- [Homepage](https://github.com/dcodeIO/protobuf.js#readme)
-- [Bugs](https://github.com/dcodeIO/protobuf.js/issues)
-- [Repository](https://github.com/dcodeIO/protobuf.js)
 - [Npm](https://www.npmjs.com/package/%40protobufjs%2Fpath)
     
 

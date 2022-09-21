@@ -10,17 +10,17 @@ object stringMod {
   
   @JSImport("@devexpress/utils/lib/formatters/string", "StringFormatter")
   @js.native
-  class StringFormatter protected () extends StObject {
+  open class StringFormatter protected () extends StObject {
     def this(dateFormatter: DateFormatter, numberFormatter: NumberFormatter) = this()
     
-    /* private */ var activeDateFormat: js.Any = js.native
+    /* private */ var activeDateFormat: Any = js.native
     
-    /* private */ val dateFormatter: js.Any = js.native
+    /* private */ val dateFormatter: Any = js.native
     
-    def format(pattern: String, args: js.Any*): String = js.native
+    def format(pattern: String, args: Any*): String = js.native
     
-    /* private */ val numberFormatter: js.Any = js.native
+    /* private */ val numberFormatter: Any = js.native
     
-    /* private */ var parseSpec: js.Any = js.native
+    /* private */ var parseSpec: Any = js.native
   }
 }

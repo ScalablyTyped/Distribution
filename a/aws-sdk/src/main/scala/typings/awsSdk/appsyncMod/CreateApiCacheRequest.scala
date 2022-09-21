@@ -12,22 +12,22 @@ trait CreateApiCacheRequest extends StObject {
   var apiCachingBehavior: ApiCachingBehavior
   
   /**
-    * The GraphQL API Id.
+    * The GraphQL API ID.
     */
   var apiId: String
   
   /**
-    * At rest encryption flag for cache. This setting cannot be updated after creation.
+    * At-rest encryption flag for cache. You cannot update this setting after creation.
     */
   var atRestEncryptionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Transit encryption flag when connecting to cache. This setting cannot be updated after creation.
+    * Transit encryption flag when connecting to cache. You cannot update this setting after creation.
     */
   var transitEncryptionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * TTL in seconds for cache entries. Valid values are between 1 and 3600 seconds.
+    * TTL in seconds for cache entries. Valid values are 1–3,600 seconds.
     */
   var ttl: Long
   

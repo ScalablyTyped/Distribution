@@ -7,37 +7,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateAutoMLJobRequest extends StObject {
   
   /**
-    * Contains CompletionCriteria and SecurityConfig.
+    * A collection of settings used to configure an AutoML job.
     */
   var AutoMLJobConfig: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobConfig] = js.undefined
   
   /**
-    * Identifies an Autopilot job. Must be unique to your account and is case-insensitive.
+    * Identifies an Autopilot job. The name must be unique to your account and is case-insensitive.
     */
   var AutoMLJobName: typings.awsSdk.sagemakerMod.AutoMLJobName
   
   /**
-    * Defines the objective of a an AutoML job. You provide a AutoMLJobObjective$MetricName and Autopilot infers whether to minimize or maximize it. If a metric is not specified, the most commonly used ObjectiveMetric for problem type is automaically selected.
+    * Defines the objective metric used to measure the predictive quality of an AutoML job. You provide an AutoMLJobObjective$MetricName and Autopilot infers whether to minimize or maximize it.
     */
   var AutoMLJobObjective: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobObjective] = js.undefined
   
   /**
-    * Generates possible candidates without training a model. A candidate is a combination of data preprocessors, algorithms, and algorithm parameter settings.
+    * Generates possible candidates without training the models. A candidate is a combination of data preprocessors, algorithms, and algorithm parameter settings.
     */
   var GenerateCandidateDefinitionsOnly: js.UndefOr[typings.awsSdk.sagemakerMod.GenerateCandidateDefinitionsOnly] = js.undefined
   
   /**
-    * Similar to InputDataConfig supported by Tuning. Format(s) supported: CSV. Minimum of 500 rows.
+    * An array of channel objects that describes the input data and its location. Each channel is a named input source. Similar to InputDataConfig supported by . Format(s) supported: CSV, Parquet. A minimum of 500 rows is required for the training dataset. There is not a minimum number of rows required for the validation dataset.
     */
   var InputDataConfig: AutoMLInputDataConfig
   
   /**
-    * Similar to OutputDataConfig supported by Tuning. Format(s) supported: CSV.
+    * Specifies how to generate the endpoint name for an automatic one-click Autopilot model deployment.
+    */
+  var ModelDeployConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ModelDeployConfig] = js.undefined
+  
+  /**
+    * Provides information about encryption and the Amazon S3 output path needed to store artifacts from an AutoML job. Format(s) supported: CSV.
     */
   var OutputDataConfig: AutoMLOutputDataConfig
   
   /**
-    * Defines the kind of preprocessing and algorithms intended for the candidates. Options include: BinaryClassification, MulticlassClassification, and Regression.
+    * Defines the type of supervised learning available for the candidates. For more information, see  Amazon SageMaker Autopilot problem types and algorithm support.
     */
   var ProblemType: js.UndefOr[typings.awsSdk.sagemakerMod.ProblemType] = js.undefined
   
@@ -81,7 +86,11 @@ object CreateAutoMLJobRequest {
     
     inline def setInputDataConfig(value: AutoMLInputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
-    inline def setInputDataConfigVarargs(value: AutoMLChannel*): Self = StObject.set(x, "InputDataConfig", js.Array(value :_*))
+    inline def setInputDataConfigVarargs(value: AutoMLChannel*): Self = StObject.set(x, "InputDataConfig", js.Array(value*))
+    
+    inline def setModelDeployConfig(value: ModelDeployConfig): Self = StObject.set(x, "ModelDeployConfig", value.asInstanceOf[js.Any])
+    
+    inline def setModelDeployConfigUndefined: Self = StObject.set(x, "ModelDeployConfig", js.undefined)
     
     inline def setOutputDataConfig(value: AutoMLOutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
     
@@ -95,6 +104,6 @@ object CreateAutoMLJobRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

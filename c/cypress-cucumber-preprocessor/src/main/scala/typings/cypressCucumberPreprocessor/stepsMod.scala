@@ -1,6 +1,5 @@
 package typings.cypressCucumberPreprocessor
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,41 +10,41 @@ object stepsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def After(optionsOrImplementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("After")(optionsOrImplementation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def After(optionsOrImplementation: js.Function1[/* repeated */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("After")(optionsOrImplementation.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def After(
-    optionsOrImplementation: js.Function1[/* repeated */ js.Any, Unit],
-    implementation: js.Function1[/* repeated */ js.Any, Unit]
+    optionsOrImplementation: js.Function1[/* repeated */ Any, Unit],
+    implementation: js.Function1[/* repeated */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("After")(optionsOrImplementation.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def After(optionsOrImplementation: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("After")(optionsOrImplementation.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def After(optionsOrImplementation: js.Object, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("After")(optionsOrImplementation.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def After(optionsOrImplementation: js.Object, implementation: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("After")(optionsOrImplementation.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def And(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("And")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def And(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("And")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def And(expression: String, implementation: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("And")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def And(expression: js.RegExp, implementation: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("And")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def Before(optionsOrImplementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Before")(optionsOrImplementation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def Before(optionsOrImplementation: js.Function1[/* repeated */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Before")(optionsOrImplementation.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def Before(
-    optionsOrImplementation: js.Function1[/* repeated */ js.Any, Unit],
-    implementation: js.Function1[/* repeated */ js.Any, Unit]
+    optionsOrImplementation: js.Function1[/* repeated */ Any, Unit],
+    implementation: js.Function1[/* repeated */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Before")(optionsOrImplementation.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def Before(optionsOrImplementation: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Before")(optionsOrImplementation.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def Before(optionsOrImplementation: js.Object, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Before")(optionsOrImplementation.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def Before(optionsOrImplementation: js.Object, implementation: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Before")(optionsOrImplementation.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def But(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("But")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def But(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("But")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def But(expression: String, implementation: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("But")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def But(expression: js.RegExp, implementation: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("But")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def Given(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Given")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def Given(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Given")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def Given(expression: String, implementation: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Given")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def Given(expression: js.RegExp, implementation: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Given")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def Then(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Then")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def Then(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Then")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def Then(expression: String, implementation: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Then")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def Then(expression: js.RegExp, implementation: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Then")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def When(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("When")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def When(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("When")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def When(expression: String, implementation: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("When")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def When(expression: js.RegExp, implementation: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("When")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def defineParameterType(parameterType: Transform): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defineParameterType")(parameterType.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def defineStep(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineStep")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def defineStep(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineStep")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineStep(expression: String, implementation: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineStep")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineStep(expression: js.RegExp, implementation: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineStep")(expression.asInstanceOf[js.Any], implementation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Transform extends StObject {
     
@@ -53,9 +52,9 @@ object stepsMod {
     
     var preferForRegexpMatch: js.UndefOr[Boolean] = js.undefined
     
-    var regexp: RegExp
+    var regexp: js.RegExp
     
-    def transformer(arg: String*): js.Any
+    def transformer(arg: String*): Any
     
     var typeName: js.UndefOr[String] = js.undefined
     
@@ -63,7 +62,7 @@ object stepsMod {
   }
   object Transform {
     
-    inline def apply(regexp: RegExp, transformer: /* repeated */ String => js.Any): Transform = {
+    inline def apply(regexp: js.RegExp, transformer: /* repeated */ String => Any): Transform = {
       val __obj = js.Dynamic.literal(regexp = regexp.asInstanceOf[js.Any], transformer = js.Any.fromFunction1(transformer))
       __obj.asInstanceOf[Transform]
     }
@@ -78,9 +77,9 @@ object stepsMod {
       
       inline def setPreferForRegexpMatchUndefined: Self = StObject.set(x, "preferForRegexpMatch", js.undefined)
       
-      inline def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+      inline def setRegexp(value: js.RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
       
-      inline def setTransformer(value: /* repeated */ String => js.Any): Self = StObject.set(x, "transformer", js.Any.fromFunction1(value))
+      inline def setTransformer(value: /* repeated */ String => Any): Self = StObject.set(x, "transformer", js.Any.fromFunction1(value))
       
       inline def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
       

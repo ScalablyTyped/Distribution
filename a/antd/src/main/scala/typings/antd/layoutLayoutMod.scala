@@ -7,9 +7,11 @@ import typings.antd.antdStrings.header
 import typings.antd.antdStrings.main
 import typings.antd.antdStrings.section
 import typings.react.mod.Context
-import typings.react.mod.FC
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.HTMLAttributes
+import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,19 +20,19 @@ object layoutLayoutMod extends Shortcut {
   
   @JSImport("antd/lib/layout/layout", JSImport.Default)
   @js.native
-  val default: FC[BasicProps] = js.native
+  val default: ForwardRefExoticComponent[BasicProps & RefAttributes[HTMLElement]] = js.native
   
   @JSImport("antd/lib/layout/layout", "Content")
   @js.native
-  val Content: FC[BasicProps] = js.native
+  val Content: ForwardRefExoticComponent[BasicProps & RefAttributes[HTMLElement]] = js.native
   
   @JSImport("antd/lib/layout/layout", "Footer")
   @js.native
-  val Footer: FC[BasicProps] = js.native
+  val Footer: ForwardRefExoticComponent[BasicProps & RefAttributes[HTMLElement]] = js.native
   
   @JSImport("antd/lib/layout/layout", "Header")
   @js.native
-  val Header: FC[BasicProps] = js.native
+  val Header: ForwardRefExoticComponent[BasicProps & RefAttributes[HTMLElement]] = js.native
   
   @JSImport("antd/lib/layout/layout", "LayoutContext")
   @js.native
@@ -105,8 +107,8 @@ object layoutLayoutMod extends Shortcut {
     }
   }
   
-  type _To = FC[BasicProps]
+  type _To = ForwardRefExoticComponent[BasicProps & RefAttributes[HTMLElement]]
   
   /* This means you don't have to write `default`, but can instead just say `layoutLayoutMod.foo` */
-  override def _to: FC[BasicProps] = default
+  override def _to: ForwardRefExoticComponent[BasicProps & RefAttributes[HTMLElement]] = default
 }

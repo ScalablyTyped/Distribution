@@ -4,48 +4,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An error event which is reported to the Error Reporting system.
-  */
 trait SchemaReportedErrorEvent extends StObject {
   
   /**
-    * [Optional] A description of the context in which the error occurred.
+    * Optional. A description of the context in which the error occurred.
     */
   var context: js.UndefOr[SchemaErrorContext] = js.undefined
   
   /**
-    * [Optional] Time when the event occurred. If not provided, the time when
-    * the event was received by the Error Reporting system will be used.
+    * Optional. Time when the event occurred. If not provided, the time when the event was received by the Error Reporting system is used. If provided, the time must not exceed the [logs retention period](https://cloud.google.com/logging/quotas#logs_retention_periods) in the past, or be more than 24 hours in the future. If an invalid time is provided, then an error is returned.
     */
-  var eventTime: js.UndefOr[String] = js.undefined
+  var eventTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Required] The error message. If no `context.reportLocation` is provided,
-    * the message must contain a header (typically consisting of the exception
-    * type name and an error message) and an exception stack trace in one of
-    * the supported programming languages and formats. Supported languages are
-    * Java, Python, JavaScript, Ruby, C#, PHP, and Go. Supported stack trace
-    * formats are:  * **Java**: Must be the return value of
-    * [`Throwable.printStackTrace()`](https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html#printStackTrace%28%29).
-    * * **Python**: Must be the return value of
-    * [`traceback.format_exc()`](https://docs.python.org/2/library/traceback.html#traceback.format_exc).
-    * * **JavaScript**: Must be the value of
-    * [`error.stack`](https://github.com/v8/v8/wiki/Stack-Trace-API) as
-    * returned by V8. * **Ruby**: Must contain frames returned by
-    * [`Exception.backtrace`](https://ruby-doc.org/core-2.2.0/Exception.html#method-i-backtrace).
-    * * **C#**: Must be the return value of
-    * [`Exception.ToString()`](https://msdn.microsoft.com/en-us/library/system.exception.tostring.aspx).
-    * * **PHP**: Must start with `PHP (Notice|Parse error|Fatal error|Warning)`
-    * and contain the result of
-    * [`(string)$exception`](http://php.net/manual/en/exception.tostring.php).
-    * * **Go**: Must be the return value of
-    * [`runtime.Stack()`](https://golang.org/pkg/runtime/debug/#Stack).
+    * Required. The error message. If no `context.reportLocation` is provided, the message must contain a header (typically consisting of the exception type name and an error message) and an exception stack trace in one of the supported programming languages and formats. Supported languages are Java, Python, JavaScript, Ruby, C#, PHP, and Go. Supported stack trace formats are: * **Java**: Must be the return value of [`Throwable.printStackTrace()`](https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html#printStackTrace%28%29). * **Python**: Must be the return value of [`traceback.format_exc()`](https://docs.python.org/2/library/traceback.html#traceback.format_exc). * **JavaScript**: Must be the value of [`error.stack`](https://github.com/v8/v8/wiki/Stack-Trace-API) as returned by V8. * **Ruby**: Must contain frames returned by [`Exception.backtrace`](https://ruby-doc.org/core-2.2.0/Exception.html#method-i-backtrace). * **C#**: Must be the return value of [`Exception.ToString()`](https://msdn.microsoft.com/en-us/library/system.exception.tostring.aspx). * **PHP**: Must be prefixed with `"PHP (Notice|Parse error|Fatal error|Warning): "` and contain the result of [`(string)$exception`](https://php.net/manual/en/exception.tostring.php). * **Go**: Must be the return value of [`runtime.Stack()`](https://golang.org/pkg/runtime/debug/#Stack).
     */
-  var message: js.UndefOr[String] = js.undefined
+  var message: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Required] The service context in which this error has occurred.
+    * Required. The service context in which this error has occurred.
     */
   var serviceContext: js.UndefOr[SchemaServiceContext] = js.undefined
 }
@@ -64,9 +41,13 @@ object SchemaReportedErrorEvent {
     
     inline def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
     
+    inline def setEventTimeNull: Self = StObject.set(x, "eventTime", null)
+    
     inline def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     

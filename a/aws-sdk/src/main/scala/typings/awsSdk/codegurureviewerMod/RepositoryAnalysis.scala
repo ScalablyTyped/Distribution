@@ -7,19 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RepositoryAnalysis extends StObject {
   
   /**
-    *  A  SourceCodeType  that specifies the tip of a branch in an associated repository. 
+    * A SourceCodeType that specifies the tip of a branch in an associated repository.
     */
-  var RepositoryHead: RepositoryHeadSourceCodeType
+  var RepositoryHead: js.UndefOr[RepositoryHeadSourceCodeType] = js.undefined
+  
+  var SourceCodeType: js.UndefOr[typings.awsSdk.codegurureviewerMod.SourceCodeType] = js.undefined
 }
 object RepositoryAnalysis {
   
-  inline def apply(RepositoryHead: RepositoryHeadSourceCodeType): RepositoryAnalysis = {
-    val __obj = js.Dynamic.literal(RepositoryHead = RepositoryHead.asInstanceOf[js.Any])
+  inline def apply(): RepositoryAnalysis = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RepositoryAnalysis]
   }
   
   extension [Self <: RepositoryAnalysis](x: Self) {
     
     inline def setRepositoryHead(value: RepositoryHeadSourceCodeType): Self = StObject.set(x, "RepositoryHead", value.asInstanceOf[js.Any])
+    
+    inline def setRepositoryHeadUndefined: Self = StObject.set(x, "RepositoryHead", js.undefined)
+    
+    inline def setSourceCodeType(value: SourceCodeType): Self = StObject.set(x, "SourceCodeType", value.asInstanceOf[js.Any])
+    
+    inline def setSourceCodeTypeUndefined: Self = StObject.set(x, "SourceCodeType", js.undefined)
   }
 }

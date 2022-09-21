@@ -8,12 +8,13 @@ trait RTCRtpSendParameters
   extends StObject
      with RTCRtpParameters {
   
+  /* standard dom */
   var degradationPreference: js.UndefOr[RTCDegradationPreference] = js.undefined
   
+  /* standard dom */
   var encodings: js.Array[RTCRtpEncodingParameters]
   
-  var priority: js.UndefOr[RTCPriorityType] = js.undefined
-  
+  /* standard dom */
   var transactionId: java.lang.String
 }
 object RTCRtpSendParameters {
@@ -37,11 +38,7 @@ object RTCRtpSendParameters {
     
     inline def setEncodings(value: js.Array[RTCRtpEncodingParameters]): Self = StObject.set(x, "encodings", value.asInstanceOf[js.Any])
     
-    inline def setEncodingsVarargs(value: RTCRtpEncodingParameters*): Self = StObject.set(x, "encodings", js.Array(value :_*))
-    
-    inline def setPriority(value: RTCPriorityType): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
-    
-    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setEncodingsVarargs(value: RTCRtpEncodingParameters*): Self = StObject.set(x, "encodings", js.Array(value*))
     
     inline def setTransactionId(value: java.lang.String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
   }

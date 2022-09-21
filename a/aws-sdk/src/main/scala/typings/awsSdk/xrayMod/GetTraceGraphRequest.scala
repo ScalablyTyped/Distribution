@@ -31,6 +31,6 @@ object GetTraceGraphRequest {
     
     inline def setTraceIds(value: TraceIdList): Self = StObject.set(x, "TraceIds", value.asInstanceOf[js.Any])
     
-    inline def setTraceIdsVarargs(value: TraceId*): Self = StObject.set(x, "TraceIds", js.Array(value :_*))
+    inline def setTraceIdsVarargs(value: TraceId*): Self = StObject.set(x, "TraceIds", js.Array(value*))
   }
 }

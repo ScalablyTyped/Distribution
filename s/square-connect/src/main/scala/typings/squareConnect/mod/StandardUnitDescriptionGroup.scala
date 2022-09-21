@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "StandardUnitDescriptionGroup")
 @js.native
-class StandardUnitDescriptionGroup () extends StObject {
+open class StandardUnitDescriptionGroup () extends StObject {
   
   /**
     * IETF language tag.

@@ -33,6 +33,6 @@ object GetRelationalDatabasesResult {
     
     inline def setRelationalDatabasesUndefined: Self = StObject.set(x, "relationalDatabases", js.undefined)
     
-    inline def setRelationalDatabasesVarargs(value: RelationalDatabase*): Self = StObject.set(x, "relationalDatabases", js.Array(value :_*))
+    inline def setRelationalDatabasesVarargs(value: RelationalDatabase*): Self = StObject.set(x, "relationalDatabases", js.Array(value*))
   }
 }

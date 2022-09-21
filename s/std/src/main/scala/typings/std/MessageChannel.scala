@@ -7,14 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** This Channel Messaging API interface allows us to create a new message channel and send data through it via its two MessagePort properties. */
 trait MessageChannel extends StObject {
   
-  /**
-    * Returns the first MessagePort object.
-    */
+  /** Returns the first MessagePort object. */
+  /* standard dom */
   val port1: MessagePort
   
-  /**
-    * Returns the second MessagePort object.
-    */
+  /** Returns the second MessagePort object. */
+  /* standard dom */
   val port2: MessagePort
 }
 object MessageChannel {

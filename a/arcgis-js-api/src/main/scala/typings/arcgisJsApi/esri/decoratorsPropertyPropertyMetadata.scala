@@ -18,7 +18,7 @@ trait decoratorsPropertyPropertyMetadata
   var aliasOf: js.UndefOr[String] = js.undefined
   
   /**
-    * The function to use to [autocast](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#autocasting) the property.
+    * The function to use to [autocast](https://developers.arcgis.com/javascript/latest/programming-patterns/#autocasting) the property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     */
@@ -46,7 +46,7 @@ trait decoratorsPropertyPropertyMetadata
   var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The constructor used to [autocast](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#autocasting) the property.
+    * The constructor used to [autocast](https://developers.arcgis.com/javascript/latest/programming-patterns/#autocasting) the property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     */
@@ -57,7 +57,7 @@ trait decoratorsPropertyPropertyMetadata
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object decoratorsPropertyPropertyMetadata {
   
@@ -88,7 +88,7 @@ object decoratorsPropertyPropertyMetadata {
     
     inline def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
     
-    inline def setDependsOnVarargs(value: String*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
+    inline def setDependsOnVarargs(value: String*): Self = StObject.set(x, "dependsOn", js.Array(value*))
     
     inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
@@ -98,7 +98,7 @@ object decoratorsPropertyPropertyMetadata {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

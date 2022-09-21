@@ -11,6 +11,10 @@ object maximMazurokGapiClientCloudassetStrings {
   inline def Explanation: Explanation = "Explanation".asInstanceOf[Explanation]
   
   @js.native
+  sealed trait GoogleCloudAssetV1p7beta1Resource extends StObject
+  inline def GoogleCloudAssetV1p7beta1Resource: GoogleCloudAssetV1p7beta1Resource = "GoogleCloudAssetV1p7beta1Resource".asInstanceOf[GoogleCloudAssetV1p7beta1Resource]
+  
+  @js.native
   sealed trait Inventory extends StObject
   inline def Inventory: Inventory = "Inventory".asInstanceOf[Inventory]
   
@@ -27,8 +31,16 @@ object maximMazurokGapiClientCloudassetStrings {
   inline def ResourceSearchResult: ResourceSearchResult = "ResourceSearchResult".asInstanceOf[ResourceSearchResult]
   
   @js.native
+  sealed trait SavedQuery extends StObject
+  inline def SavedQuery: SavedQuery = "SavedQuery".asInstanceOf[SavedQuery]
+  
+  @js.native
   sealed trait Status extends StObject
   inline def Status: Status = "Status".asInstanceOf[Status]
+  
+  @js.native
+  sealed trait VersionedResource extends StObject
+  inline def VersionedResource: VersionedResource = "VersionedResource".asInstanceOf[VersionedResource]
   
   @js.native
   sealed trait cloudasset extends StObject

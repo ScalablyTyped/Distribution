@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Using raw keys is prone to security risks due to accidentally leaking the
-  * key. Choose another type of key if possible.
-  */
 trait SchemaGooglePrivacyDlpV2UnwrappedCryptoKey extends StObject {
   
   /**
-    * A 128/192/256 bit key. [required]
+    * Required. A 128/192/256 bit key.
     */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2UnwrappedCryptoKey {
   
@@ -25,6 +21,8 @@ object SchemaGooglePrivacyDlpV2UnwrappedCryptoKey {
   extension [Self <: SchemaGooglePrivacyDlpV2UnwrappedCryptoKey](x: Self) {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }

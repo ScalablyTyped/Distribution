@@ -4,24 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A configuration variables resource contains the managed configuration
-  * settings ID to be applied to a single user, as well as the variable set
-  * that is attributed to the user. The variable set will be used to replace
-  * placeholders in the managed configuration settings.
-  */
 trait SchemaConfigurationVariables extends StObject {
-  
-  /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;androidenterprise#configurationVariables&quot;.
-    */
-  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the managed configurations settings.
     */
-  var mcmId: js.UndefOr[String] = js.undefined
+  var mcmId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The variable set that is attributed to the user.
@@ -37,11 +25,9 @@ object SchemaConfigurationVariables {
   
   extension [Self <: SchemaConfigurationVariables](x: Self) {
     
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
-    
     inline def setMcmId(value: String): Self = StObject.set(x, "mcmId", value.asInstanceOf[js.Any])
+    
+    inline def setMcmIdNull: Self = StObject.set(x, "mcmId", null)
     
     inline def setMcmIdUndefined: Self = StObject.set(x, "mcmId", js.undefined)
     
@@ -49,6 +35,6 @@ object SchemaConfigurationVariables {
     
     inline def setVariableSetUndefined: Self = StObject.set(x, "variableSet", js.undefined)
     
-    inline def setVariableSetVarargs(value: SchemaVariableSet*): Self = StObject.set(x, "variableSet", js.Array(value :_*))
+    inline def setVariableSetVarargs(value: SchemaVariableSet*): Self = StObject.set(x, "variableSet", js.Array(value*))
   }
 }

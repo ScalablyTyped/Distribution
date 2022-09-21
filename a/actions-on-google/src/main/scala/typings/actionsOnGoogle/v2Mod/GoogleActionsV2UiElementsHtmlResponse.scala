@@ -16,7 +16,7 @@ trait GoogleActionsV2UiElementsHtmlResponse extends StObject {
   /**
     * Communicate the following JSON object to the app.
     */
-  var updatedState: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var updatedState: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   /**
     * The url of the application.
@@ -36,7 +36,7 @@ object GoogleActionsV2UiElementsHtmlResponse {
     
     inline def setSuppressMicUndefined: Self = StObject.set(x, "suppressMic", js.undefined)
     
-    inline def setUpdatedState(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "updatedState", value.asInstanceOf[js.Any])
+    inline def setUpdatedState(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "updatedState", value.asInstanceOf[js.Any])
     
     inline def setUpdatedStateUndefined: Self = StObject.set(x, "updatedState", js.undefined)
     

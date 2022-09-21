@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_XmlComment")
 @js.native
-class ClassXmlComment ()
+open class ClassXmlComment ()
   extends StObject
      with typings.fibjs.ClassXmlCharacterData

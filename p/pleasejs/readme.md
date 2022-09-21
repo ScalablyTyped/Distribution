@@ -9,10 +9,10 @@ JS library to generate random pleasing colors/color schemes
 | ------------------ | :-------------: |
 | Full name          | pleasejs |
 | Keywords           | color, scheme, random |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 46703 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10188.666666666666 |
+| # stars            | 2269.0 |
 
 ## Links
 - [Homepage](https://github.com/Fooidge/PleaseJS)

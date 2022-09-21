@@ -34,7 +34,7 @@ object PlaceDetailsResponse {
     
     inline def setHtml_attributions(value: js.Array[String]): Self = StObject.set(x, "html_attributions", value.asInstanceOf[js.Any])
     
-    inline def setHtml_attributionsVarargs(value: String*): Self = StObject.set(x, "html_attributions", js.Array(value :_*))
+    inline def setHtml_attributionsVarargs(value: String*): Self = StObject.set(x, "html_attributions", js.Array(value*))
     
     inline def setResult(value: PlaceDetailsResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "Divider")
 @js.native
-class Divider ()
-  extends Component[DividerProps, js.Object, js.Any]
+open class Divider ()
+  extends Component[DividerProps, js.Object, Any]

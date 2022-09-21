@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "Checkbox")
 @js.native
-class Checkbox protected ()
-  extends Component[InputId, js.Any] {
+open class Checkbox protected () extends Component[InputId, Any] {
   def this(props: HTMLAttributesidclassName & InputId) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & InputId, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & InputId, context: Any) = this()
 }

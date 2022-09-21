@@ -18,7 +18,7 @@ trait DemoteMasterMySqlReplicaConfiguration extends StObject {
     */
   var clientKey: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#demoteMasterMysqlReplicaConfiguration*. */
+  /** This is always `sql#demoteMasterMysqlReplicaConfiguration`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The password for the replication connection. */

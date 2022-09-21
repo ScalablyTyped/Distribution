@@ -12,7 +12,7 @@ trait DescribeEntityResponse extends StObject {
   var Details: js.UndefOr[Json] = js.undefined
   
   /**
-    * The ARN associated to the unique identifier for the change set referenced in this request.
+    * The ARN associated to the unique identifier for the entity referenced in this request.
     */
   var EntityArn: js.UndefOr[ARN] = js.undefined
   
@@ -29,7 +29,7 @@ trait DescribeEntityResponse extends StObject {
   /**
     * The last modified date of the entity, in ISO 8601 format (2018-02-27T13:45:22Z).
     */
-  var LastModifiedDate: js.UndefOr[StringValue] = js.undefined
+  var LastModifiedDate: js.UndefOr[DateTimeISO8601] = js.undefined
 }
 object DescribeEntityResponse {
   
@@ -56,7 +56,7 @@ object DescribeEntityResponse {
     
     inline def setEntityTypeUndefined: Self = StObject.set(x, "EntityType", js.undefined)
     
-    inline def setLastModifiedDate(value: StringValue): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: DateTimeISO8601): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
   }

@@ -20,9 +20,12 @@ object solidParticleMod {
   
   @JSImport("babylonjs/Particles/solidParticle", "DepthSortedParticle")
   @js.native
-  class DepthSortedParticle protected () extends StObject {
+  open class DepthSortedParticle protected () extends StObject {
     /**
       * Creates a new sorted particle
+      * @param idx
+      * @param ind
+      * @param indLength
       * @param materialIndex
       */
     def this(idx: Double, ind: Double, indLength: Double, materialIndex: Double) = this()
@@ -55,10 +58,19 @@ object solidParticleMod {
   
   @JSImport("babylonjs/Particles/solidParticle", "ModelShape")
   @js.native
-  class ModelShape protected () extends StObject {
+  open class ModelShape protected () extends StObject {
     /**
       * Creates a ModelShape object. This is an internal simplified reference to a mesh used as for a model to replicate particles from by the SPS.
       * SPS internal tool, don't use it manually.
+      * @param id
+      * @param shape
+      * @param indices
+      * @param normals
+      * @param colors
+      * @param shapeUV
+      * @param posFunction
+      * @param vtxFunction
+      * @param material
       * @hidden
       */
     def this(
@@ -132,15 +144,22 @@ object solidParticleMod {
       ] = js.native
     
     /**
+      * Get or set the shapeId
+      * @deprecated Please use shapeId instead
+      */
+    def shapeID: Double = js.native
+    def shapeID_=(shapeID: Double): Unit = js.native
+    
+    /**
       * The shape id
       * @hidden
       */
-    var shapeID: Double = js.native
+    var shapeId: Double = js.native
   }
   
   @JSImport("babylonjs/Particles/solidParticle", "SolidParticle")
   @js.native
-  class SolidParticle protected () extends StObject {
+  open class SolidParticle protected () extends StObject {
     /**
       * Creates a Solid Particle object.
       * Don't create particles manually, use instead the Solid Particle System internal tools like _addParticle()
@@ -201,10 +220,7 @@ object solidParticleMod {
       materialIndex: Nullable[Double]
     ) = this()
     
-    /**
-      * @hidden Particle BoundingInfo object (Internal use)
-      */
-    var _boundingInfo: BoundingInfo = js.native
+    /* private */ var _boundingInfo: Any = js.native
     
     /**
       * @hidden Internal global position in the SPS.
@@ -277,10 +293,22 @@ object solidParticleMod {
     var cullingStrategy: Double = js.native
     
     /**
+      * Particle BoundingInfo object
+      * @returns a BoundingInfo
+      */
+    def getBoundingInfo(): BoundingInfo = js.native
+    
+    /**
       * get the rotation matrix of the particle
+      * @param m
       * @hidden
       */
     def getRotationMatrix(m: Matrix): Unit = js.native
+    
+    /**
+      * Returns true if there is already a bounding info
+      */
+    def hasBoundingInfo: Boolean = js.native
     
     /**
       * particle identifier
@@ -343,7 +371,7 @@ object solidParticleMod {
     /**
       * Custom object or properties.
       */
-    var props: Nullable[js.Any] = js.native
+    var props: Nullable[Any] = js.native
     
     /**
       * Legacy support, changed quaternion to rotationQuaternion
@@ -406,7 +434,7 @@ object solidParticleMod {
   /**
     * Creates a new solid particle vertex
     */
-  class SolidParticleVertex () extends StObject {
+  open class SolidParticleVertex () extends StObject {
     
     /**
       * Vertex color

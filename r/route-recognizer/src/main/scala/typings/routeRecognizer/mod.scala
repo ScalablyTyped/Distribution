@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("route-recognizer", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with RouteRecognizer
   object default {
@@ -76,7 +76,7 @@ object mod {
     }
   }
   
-  type QueryParams = StringDictionary[js.UndefOr[js.Array[js.Any] | js.Any | Null]]
+  type QueryParams = StringDictionary[js.UndefOr[js.Array[Any] | Any | Null]]
   
   trait Result extends StObject {
     
@@ -137,7 +137,7 @@ object mod {
     
     def generateQueryString(params: QueryParams): String = js.native
     
-    def handlersFor(name: String): js.Array[js.Any] = js.native
+    def handlersFor(name: String): js.Array[Any] = js.native
     
     def hasRoute(name: String): Boolean = js.native
     
@@ -147,14 +147,14 @@ object mod {
       addCallback: js.Function2[/* router */ this.type, /* routes */ js.Array[Route], Unit]
     ): Unit = js.native
     
-    /* private */ var names: js.Any = js.native
+    /* private */ var names: Any = js.native
     
     def parseQueryString(queryString: String): QueryParams = js.native
     
     def recognize(path: String): js.UndefOr[Results] = js.native
     
-    /* private */ var rootState: js.Any = js.native
+    /* private */ var rootState: Any = js.native
     
-    /* private */ var states: js.Any = js.native
+    /* private */ var states: Any = js.native
   }
 }

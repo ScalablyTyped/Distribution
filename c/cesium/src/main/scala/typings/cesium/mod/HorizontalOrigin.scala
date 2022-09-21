@@ -13,21 +13,30 @@ object HorizontalOrigin extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HorizontalOrigin & Double] = js.native
   
+  /**
+    * The origin is at the horizontal center of the object.
+    */
   @js.native
   sealed trait CENTER
     extends StObject
        with HorizontalOrigin
   /* 0 */ val CENTER: typings.cesium.mod.HorizontalOrigin.CENTER & Double = js.native
   
+  /**
+    * The origin is on the left side of the object.
+    */
   @js.native
   sealed trait LEFT
     extends StObject
        with HorizontalOrigin
   /* 1 */ val LEFT: typings.cesium.mod.HorizontalOrigin.LEFT & Double = js.native
   
+  /**
+    * The origin is on the right side of the object.
+    */
   @js.native
   sealed trait RIGHT
     extends StObject
        with HorizontalOrigin
-  /* 2 */ val RIGHT: typings.cesium.mod.HorizontalOrigin.RIGHT & Double = js.native
+  /* -1 */ val RIGHT: typings.cesium.mod.HorizontalOrigin.RIGHT & Double = js.native
 }

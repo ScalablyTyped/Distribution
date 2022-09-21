@@ -30,6 +30,6 @@ object OptionGroupOptionsMessage {
     
     inline def setOptionGroupOptionsUndefined: Self = StObject.set(x, "OptionGroupOptions", js.undefined)
     
-    inline def setOptionGroupOptionsVarargs(value: OptionGroupOption*): Self = StObject.set(x, "OptionGroupOptions", js.Array(value :_*))
+    inline def setOptionGroupOptionsVarargs(value: OptionGroupOption*): Self = StObject.set(x, "OptionGroupOptions", js.Array(value*))
   }
 }

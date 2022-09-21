@@ -1,6 +1,7 @@
 package typings.firebaseAnalytics
 
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.`already-exists`
+import typings.firebaseAnalytics.firebaseAnalyticsStrings.`already-initialized-settings`
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.`already-initialized`
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.`config-fetch-failed`
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.`fetch-throttle`
@@ -16,13 +17,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object errorsMod {
   
-  @JSImport("@firebase/analytics/dist/src/errors", "ERROR_FACTORY")
+  @JSImport("@firebase/analytics/dist/esm/src/errors", "ERROR_FACTORY")
   @js.native
   val ERROR_FACTORY: ErrorFactory[AnalyticsError, ErrorParams] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.firebaseAnalytics.firebaseAnalyticsStrings.`already-exists`
     - typings.firebaseAnalytics.firebaseAnalyticsStrings.`already-initialized`
+    - typings.firebaseAnalytics.firebaseAnalyticsStrings.`already-initialized-settings`
     - typings.firebaseAnalytics.firebaseAnalyticsStrings.`interop-component-reg-failed`
     - typings.firebaseAnalytics.firebaseAnalyticsStrings.`invalid-analytics-context`
     - typings.firebaseAnalytics.firebaseAnalyticsStrings.`indexeddb-unavailable`
@@ -37,6 +39,8 @@ object errorsMod {
     inline def ALREADY_EXISTS: `already-exists` = "already-exists".asInstanceOf[`already-exists`]
     
     inline def ALREADY_INITIALIZED: `already-initialized` = "already-initialized".asInstanceOf[`already-initialized`]
+    
+    inline def ALREADY_INITIALIZED_SETTINGS: `already-initialized-settings` = "already-initialized-settings".asInstanceOf[`already-initialized-settings`]
     
     inline def CONFIG_FETCH_FAILED: `config-fetch-failed` = "config-fetch-failed".asInstanceOf[`config-fetch-failed`]
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Device extends StObject {
   
   /**
-    * The path inside the container at which to expose the host device. By default the hostPath value is used.
+    * The path inside the container that's used to expose the host device. By default, the hostPath value is used.
     */
   var containerPath: js.UndefOr[String] = js.undefined
   
@@ -40,6 +40,6 @@ object Device {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: DeviceCgroupPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: DeviceCgroupPermission*): Self = StObject.set(x, "permissions", js.Array(value*))
   }
 }

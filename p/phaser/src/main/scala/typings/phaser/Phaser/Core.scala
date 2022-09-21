@@ -8,8 +8,8 @@ import typings.phaser.Phaser.Scale.ZoomType
 import typings.phaser.Phaser.Types.Core.AudioConfig
 import typings.phaser.Phaser.Types.Core.FPSConfig
 import typings.phaser.Phaser.Types.Core.PhysicsConfig
+import typings.phaser.Phaser.Types.Core.PipelineConfig
 import typings.phaser.Phaser.Types.Core.TimeStepCallback
-import typings.phaser.integer
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
@@ -53,7 +53,7 @@ object Core {
     /**
       * Automatically round the display and style sizes of the canvas. This can help with performance in lower-powered devices.
       */
-    val autoRound: integer
+    val autoRound: Boolean
     
     /**
       * The background color of the game canvas. The default is black. This value is ignored if `transparent` is set to `true`.
@@ -71,9 +71,9 @@ object Core {
     val bannerTextColor: String
     
     /**
-      * The default WebGL Batch size.
+      * The default WebGL Batch size. Represents the number of _quads_ that can be added to a single batch.
       */
-    val batchSize: integer
+    val batchSize: Double
     
     /**
       * Force Phaser to use your own Canvas element instead of creating one.
@@ -113,7 +113,7 @@ object Core {
     /**
       * The plugins installed into every Scene (in addition to CoreScene and Global).
       */
-    val defaultPlugins: js.Any
+    val defaultPlugins: Any
     
     /**
       * When set to `true` it will create a desynchronized context for both 2D and WebGL. See https://developers.google.com/web/updates/2019/05/desynchronized for details.
@@ -134,6 +134,11 @@ object Core {
       * Should the game create a div element to act as a DOM Container? Only enable if you're using DOM Element objects. You must provide a parent object if you use this feature.
       */
     val domCreateContainer: Boolean
+    
+    /**
+      * The default `pointerEvents` attribute set on the DOM Container.
+      */
+    val domPointerEvents: String
     
     /**
       * Is the Scale Manager allowed to adjust the CSS height property of the parent to be 100%?
@@ -173,7 +178,7 @@ object Core {
     /**
       * The height of the underlying canvas, in pixels.
       */
-    val height: integer | String
+    val height: Double | String
     
     /**
       * Don't write the banner line to the console.log.
@@ -188,7 +193,7 @@ object Core {
     /**
       * The number of Pointer objects created by default. In a mouse-only, or non-multi touch game, you can leave this as 1.
       */
-    val inputActivePointers: integer
+    val inputActivePointers: Double
     
     /**
       * Enable the Gamepad Plugin. This can be disabled in games that don't need gamepad input.
@@ -198,7 +203,7 @@ object Core {
     /**
       * The DOM Target to listen for gamepad events on. Defaults to `window` if not specified.
       */
-    val inputGamepadEventTarget: js.Any
+    val inputGamepadEventTarget: Any
     
     /**
       * Enable the Keyboard Plugin. This can be disabled in games that don't need keyboard input.
@@ -208,12 +213,12 @@ object Core {
     /**
       * `preventDefault` will be called on every non-modified key which has a key code in this array. By default, it is empty.
       */
-    val inputKeyboardCapture: js.Array[integer]
+    val inputKeyboardCapture: js.Array[Double]
     
     /**
       * The DOM Target to listen for keyboard events on. Defaults to `window` if not specified.
       */
-    val inputKeyboardEventTarget: js.Any
+    val inputKeyboardEventTarget: Any
     
     /**
       * Enable the Mouse Plugin. This can be disabled in games that don't need mouse input.
@@ -221,19 +226,34 @@ object Core {
     val inputMouse: Boolean | js.Object
     
     /**
-      * Should mouse events be captured? I.e. have prevent default called on them.
-      */
-    val inputMouseCapture: Boolean
-    
-    /**
       * The DOM Target to listen for mouse events on. Defaults to the game canvas if not specified.
       */
-    val inputMouseEventTarget: js.Any
+    val inputMouseEventTarget: Any
+    
+    /**
+      * Should `mousedown` DOM events have `preventDefault` called on them?
+      */
+    val inputMousePreventDefaultDown: Boolean
+    
+    /**
+      * Should `mousemove` DOM events have `preventDefault` called on them?
+      */
+    val inputMousePreventDefaultMove: Boolean
+    
+    /**
+      * Should `mouseup` DOM events have `preventDefault` called on them?
+      */
+    val inputMousePreventDefaultUp: Boolean
+    
+    /**
+      * Should `wheel` DOM events have `preventDefault` called on them?
+      */
+    val inputMousePreventDefaultWheel: Boolean
     
     /**
       * The smoothing factor to apply during Pointer movement. See {@link Phaser.Input.Pointer#smoothFactor}.
       */
-    val inputSmoothFactor: integer
+    val inputSmoothFactor: Double
     
     /**
       * Enable the Touch Plugin. This can be disabled in games that don't need touch input.
@@ -248,7 +268,7 @@ object Core {
     /**
       * The DOM Target to listen for touch events on. Defaults to the game canvas if not specified.
       */
-    val inputTouchEventTarget: js.Any
+    val inputTouchEventTarget: Any
     
     /**
       * Should Phaser listen for input events on the Window? If you disable this, events like 'POINTER_UP_OUTSIDE' will no longer fire.
@@ -258,12 +278,12 @@ object Core {
     /**
       * An array of global plugins to be installed.
       */
-    val installGlobalPlugins: js.Any
+    val installGlobalPlugins: Any
     
     /**
       * An array of Scene level plugins to be installed.
       */
-    val installScenePlugins: js.Any
+    val installScenePlugins: Any
     
     /**
       * Should the XHR request use async or not?
@@ -283,7 +303,7 @@ object Core {
     /**
       * Maximum parallel downloads allowed for resources (Default to 32).
       */
-    val loaderMaxParallelDownloads: integer
+    val loaderMaxParallelDownloads: Double
     
     /**
       * Optional password for all XHR requests.
@@ -303,7 +323,7 @@ object Core {
     /**
       * Optional XHR timeout value, in ms.
       */
-    val loaderTimeout: integer
+    val loaderTimeout: Double
     
     /**
       * Optional username for all XHR requests.
@@ -318,27 +338,32 @@ object Core {
     /**
       * The maximum height, in pixels, the canvas will scale up to. A value of zero means no maximum.
       */
-    val maxHeight: integer
+    val maxHeight: Double
     
     /**
       * The maximum number of lights allowed to be visible within range of a single Camera in the LightManager.
       */
-    val maxLights: integer
+    val maxLights: Double
+    
+    /**
+      * When in WebGL mode, this sets the maximum number of GPU Textures to use. The default, -1, will use all available units. The WebGL1 spec says all browsers should provide a minimum of 8.
+      */
+    val maxTextures: Double
     
     /**
       * The maximum width, in pixels, the canvas will scale up to. A value of zero means no maximum.
       */
-    val maxWidth: integer
+    val maxWidth: Double
     
     /**
       * The minimum height, in pixels, the canvas will scale down to. A value of zero means no minimum.
       */
-    val minHeight: integer
+    val minHeight: Double
     
     /**
       * The minimum width, in pixels, the canvas will scale down to. A value of zero means no minimum.
       */
-    val minWidth: integer
+    val minWidth: Double
     
     /**
       * Sets the `mipmapFilter` property when the WebGL renderer is created.
@@ -353,12 +378,17 @@ object Core {
     /**
       * A parent DOM element into which the canvas created by the renderer will be injected.
       */
-    val parent: js.Any
+    val parent: Any
     
     /**
       * The Physics Configuration object.
       */
     val physics: PhysicsConfig
+    
+    /**
+      * An object mapping WebGL names to WebGLPipeline classes. These should be class constructors, not instances.
+      */
+    val pipeline: PipelineConfig
     
     /**
       * Prevent pixel art from becoming blurred when scaled. It will remain crisp (tells the WebGL renderer to automatically create textures using a linear filter mode).
@@ -386,6 +416,11 @@ object Core {
     val premultipliedAlpha: Boolean
     
     /**
+      * If the value is true the WebGL buffers will not be cleared and will preserve their values until cleared or overwritten by the author.
+      */
+    val preserveDrawingBuffer: Boolean
+    
+    /**
       * Force Phaser to use a specific renderer. Can be `CONST.CANVAS`, `CONST.WEBGL`, `CONST.HEADLESS` or `CONST.AUTO` (default)
       */
     val renderType: Double
@@ -393,12 +428,7 @@ object Core {
     /**
       * How many ms should elapse before checking if the browser size has changed?
       */
-    val resizeInterval: integer
-    
-    /**
-      * The canvas device pixel resolution. Currently un-used.
-      */
-    val resolution: Double
+    val resizeInterval: Double
     
     /**
       * Draw texture-based Game Objects at only whole-integer positions. Game Objects without textures, like Graphics, ignore this property.
@@ -426,14 +456,19 @@ object Core {
     val transparent: Boolean
     
     /**
+      * A base64 encoded PNG that will be used as the default texture when a texture is assigned that is white or not loaded.
+      */
+    val whiteImage: String
+    
+    /**
       * The width of the underlying canvas, in pixels.
       */
-    val width: integer | String
+    val width: Double | String
     
     /**
       * The zoom factor, as used by the Scale Manager.
       */
-    val zoom: ZoomType | integer
+    val zoom: ZoomType | Double
   }
   object Config {
     
@@ -443,11 +478,11 @@ object Core {
       audio: AudioConfig,
       autoCenter: CenterType,
       autoFocus: Boolean,
-      autoRound: integer,
+      autoRound: Boolean,
       backgroundColor: Color,
       bannerBackgroundColor: js.Array[String],
       bannerTextColor: String,
-      batchSize: integer,
+      batchSize: Double,
       canvas: HTMLCanvasElement,
       canvasStyle: String,
       clearBeforeRender: Boolean,
@@ -455,11 +490,12 @@ object Core {
       customEnvironment: Boolean,
       defaultImage: String,
       defaultPhysicsSystem: Boolean | String,
-      defaultPlugins: js.Any,
+      defaultPlugins: Any,
       desynchronized: Boolean,
       disableContextMenu: Boolean,
       domBehindCanvas: Boolean,
       domCreateContainer: Boolean,
+      domPointerEvents: String,
       expandParent: Boolean,
       failIfMajorPerformanceCaveat: Boolean,
       fps: FPSConfig,
@@ -467,60 +503,66 @@ object Core {
       gameTitle: String,
       gameURL: String,
       gameVersion: String,
-      height: integer | String,
+      height: Double | String,
       hideBanner: Boolean,
       hidePhaser: Boolean,
-      inputActivePointers: integer,
+      inputActivePointers: Double,
       inputGamepad: Boolean,
-      inputGamepadEventTarget: js.Any,
+      inputGamepadEventTarget: Any,
       inputKeyboard: Boolean,
-      inputKeyboardCapture: js.Array[integer],
-      inputKeyboardEventTarget: js.Any,
+      inputKeyboardCapture: js.Array[Double],
+      inputKeyboardEventTarget: Any,
       inputMouse: Boolean | js.Object,
-      inputMouseCapture: Boolean,
-      inputMouseEventTarget: js.Any,
-      inputSmoothFactor: integer,
+      inputMouseEventTarget: Any,
+      inputMousePreventDefaultDown: Boolean,
+      inputMousePreventDefaultMove: Boolean,
+      inputMousePreventDefaultUp: Boolean,
+      inputMousePreventDefaultWheel: Boolean,
+      inputSmoothFactor: Double,
       inputTouch: Boolean,
       inputTouchCapture: Boolean,
-      inputTouchEventTarget: js.Any,
+      inputTouchEventTarget: Any,
       inputWindowEvents: Boolean,
-      installGlobalPlugins: js.Any,
-      installScenePlugins: js.Any,
+      installGlobalPlugins: Any,
+      installScenePlugins: Any,
       loaderAsync: Boolean,
       loaderBaseURL: String,
-      loaderMaxParallelDownloads: integer,
+      loaderMaxParallelDownloads: Double,
       loaderPassword: String,
       loaderPath: String,
       loaderResponseType: String,
-      loaderTimeout: integer,
+      loaderTimeout: Double,
       loaderUser: String,
       loaderWithCredentials: Boolean,
-      maxHeight: integer,
-      maxLights: integer,
-      maxWidth: integer,
-      minHeight: integer,
-      minWidth: integer,
+      maxHeight: Double,
+      maxLights: Double,
+      maxTextures: Double,
+      maxWidth: Double,
+      minHeight: Double,
+      minWidth: Double,
       mipmapFilter: String,
       missingImage: String,
-      parent: js.Any,
+      parent: Any,
       physics: PhysicsConfig,
+      pipeline: PipelineConfig,
       pixelArt: Boolean,
       postBoot: Game => Unit,
       powerPreference: String,
       preBoot: Game => Unit,
       premultipliedAlpha: Boolean,
+      preserveDrawingBuffer: Boolean,
       renderType: Double,
-      resizeInterval: integer,
-      resolution: Double,
+      resizeInterval: Double,
       roundPixels: Boolean,
       scaleMode: ScaleModeType,
       sceneConfig: js.Object,
       seed: js.Array[String],
       transparent: Boolean,
-      width: integer | String,
-      zoom: ZoomType | integer
+      whiteImage: String,
+      width: Double | String,
+      zoom: ZoomType | Double
     ): Config = {
-      val __obj = js.Dynamic.literal(antialias = antialias.asInstanceOf[js.Any], antialiasGL = antialiasGL.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], autoCenter = autoCenter.asInstanceOf[js.Any], autoFocus = autoFocus.asInstanceOf[js.Any], autoRound = autoRound.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], bannerBackgroundColor = bannerBackgroundColor.asInstanceOf[js.Any], bannerTextColor = bannerTextColor.asInstanceOf[js.Any], batchSize = batchSize.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], canvasStyle = canvasStyle.asInstanceOf[js.Any], clearBeforeRender = clearBeforeRender.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], customEnvironment = customEnvironment.asInstanceOf[js.Any], defaultImage = defaultImage.asInstanceOf[js.Any], defaultPhysicsSystem = defaultPhysicsSystem.asInstanceOf[js.Any], defaultPlugins = defaultPlugins.asInstanceOf[js.Any], desynchronized = desynchronized.asInstanceOf[js.Any], disableContextMenu = disableContextMenu.asInstanceOf[js.Any], domBehindCanvas = domBehindCanvas.asInstanceOf[js.Any], domCreateContainer = domCreateContainer.asInstanceOf[js.Any], expandParent = expandParent.asInstanceOf[js.Any], failIfMajorPerformanceCaveat = failIfMajorPerformanceCaveat.asInstanceOf[js.Any], fps = fps.asInstanceOf[js.Any], fullscreenTarget = fullscreenTarget.asInstanceOf[js.Any], gameTitle = gameTitle.asInstanceOf[js.Any], gameURL = gameURL.asInstanceOf[js.Any], gameVersion = gameVersion.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], hideBanner = hideBanner.asInstanceOf[js.Any], hidePhaser = hidePhaser.asInstanceOf[js.Any], inputActivePointers = inputActivePointers.asInstanceOf[js.Any], inputGamepad = inputGamepad.asInstanceOf[js.Any], inputGamepadEventTarget = inputGamepadEventTarget.asInstanceOf[js.Any], inputKeyboard = inputKeyboard.asInstanceOf[js.Any], inputKeyboardCapture = inputKeyboardCapture.asInstanceOf[js.Any], inputKeyboardEventTarget = inputKeyboardEventTarget.asInstanceOf[js.Any], inputMouse = inputMouse.asInstanceOf[js.Any], inputMouseCapture = inputMouseCapture.asInstanceOf[js.Any], inputMouseEventTarget = inputMouseEventTarget.asInstanceOf[js.Any], inputSmoothFactor = inputSmoothFactor.asInstanceOf[js.Any], inputTouch = inputTouch.asInstanceOf[js.Any], inputTouchCapture = inputTouchCapture.asInstanceOf[js.Any], inputTouchEventTarget = inputTouchEventTarget.asInstanceOf[js.Any], inputWindowEvents = inputWindowEvents.asInstanceOf[js.Any], installGlobalPlugins = installGlobalPlugins.asInstanceOf[js.Any], installScenePlugins = installScenePlugins.asInstanceOf[js.Any], loaderAsync = loaderAsync.asInstanceOf[js.Any], loaderBaseURL = loaderBaseURL.asInstanceOf[js.Any], loaderMaxParallelDownloads = loaderMaxParallelDownloads.asInstanceOf[js.Any], loaderPassword = loaderPassword.asInstanceOf[js.Any], loaderPath = loaderPath.asInstanceOf[js.Any], loaderResponseType = loaderResponseType.asInstanceOf[js.Any], loaderTimeout = loaderTimeout.asInstanceOf[js.Any], loaderUser = loaderUser.asInstanceOf[js.Any], loaderWithCredentials = loaderWithCredentials.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any], maxLights = maxLights.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any], mipmapFilter = mipmapFilter.asInstanceOf[js.Any], missingImage = missingImage.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], physics = physics.asInstanceOf[js.Any], pixelArt = pixelArt.asInstanceOf[js.Any], postBoot = js.Any.fromFunction1(postBoot), powerPreference = powerPreference.asInstanceOf[js.Any], preBoot = js.Any.fromFunction1(preBoot), premultipliedAlpha = premultipliedAlpha.asInstanceOf[js.Any], renderType = renderType.asInstanceOf[js.Any], resizeInterval = resizeInterval.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], roundPixels = roundPixels.asInstanceOf[js.Any], scaleMode = scaleMode.asInstanceOf[js.Any], sceneConfig = sceneConfig.asInstanceOf[js.Any], seed = seed.asInstanceOf[js.Any], transparent = transparent.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(antialias = antialias.asInstanceOf[js.Any], antialiasGL = antialiasGL.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], autoCenter = autoCenter.asInstanceOf[js.Any], autoFocus = autoFocus.asInstanceOf[js.Any], autoRound = autoRound.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], bannerBackgroundColor = bannerBackgroundColor.asInstanceOf[js.Any], bannerTextColor = bannerTextColor.asInstanceOf[js.Any], batchSize = batchSize.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], canvasStyle = canvasStyle.asInstanceOf[js.Any], clearBeforeRender = clearBeforeRender.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], customEnvironment = customEnvironment.asInstanceOf[js.Any], defaultImage = defaultImage.asInstanceOf[js.Any], defaultPhysicsSystem = defaultPhysicsSystem.asInstanceOf[js.Any], defaultPlugins = defaultPlugins.asInstanceOf[js.Any], desynchronized = desynchronized.asInstanceOf[js.Any], disableContextMenu = disableContextMenu.asInstanceOf[js.Any], domBehindCanvas = domBehindCanvas.asInstanceOf[js.Any], domCreateContainer = domCreateContainer.asInstanceOf[js.Any], domPointerEvents = domPointerEvents.asInstanceOf[js.Any], expandParent = expandParent.asInstanceOf[js.Any], failIfMajorPerformanceCaveat = failIfMajorPerformanceCaveat.asInstanceOf[js.Any], fps = fps.asInstanceOf[js.Any], fullscreenTarget = fullscreenTarget.asInstanceOf[js.Any], gameTitle = gameTitle.asInstanceOf[js.Any], gameURL = gameURL.asInstanceOf[js.Any], gameVersion = gameVersion.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], hideBanner = hideBanner.asInstanceOf[js.Any], hidePhaser = hidePhaser.asInstanceOf[js.Any], inputActivePointers = inputActivePointers.asInstanceOf[js.Any], inputGamepad = inputGamepad.asInstanceOf[js.Any], inputGamepadEventTarget = inputGamepadEventTarget.asInstanceOf[js.Any], inputKeyboard = inputKeyboard.asInstanceOf[js.Any], inputKeyboardCapture = inputKeyboardCapture.asInstanceOf[js.Any], inputKeyboardEventTarget = inputKeyboardEventTarget.asInstanceOf[js.Any], inputMouse = inputMouse.asInstanceOf[js.Any], inputMouseEventTarget = inputMouseEventTarget.asInstanceOf[js.Any], inputMousePreventDefaultDown = inputMousePreventDefaultDown.asInstanceOf[js.Any], inputMousePreventDefaultMove = inputMousePreventDefaultMove.asInstanceOf[js.Any], inputMousePreventDefaultUp = inputMousePreventDefaultUp.asInstanceOf[js.Any], inputMousePreventDefaultWheel = inputMousePreventDefaultWheel.asInstanceOf[js.Any], inputSmoothFactor = inputSmoothFactor.asInstanceOf[js.Any], inputTouch = inputTouch.asInstanceOf[js.Any], inputTouchCapture = inputTouchCapture.asInstanceOf[js.Any], inputTouchEventTarget = inputTouchEventTarget.asInstanceOf[js.Any], inputWindowEvents = inputWindowEvents.asInstanceOf[js.Any], installGlobalPlugins = installGlobalPlugins.asInstanceOf[js.Any], installScenePlugins = installScenePlugins.asInstanceOf[js.Any], loaderAsync = loaderAsync.asInstanceOf[js.Any], loaderBaseURL = loaderBaseURL.asInstanceOf[js.Any], loaderMaxParallelDownloads = loaderMaxParallelDownloads.asInstanceOf[js.Any], loaderPassword = loaderPassword.asInstanceOf[js.Any], loaderPath = loaderPath.asInstanceOf[js.Any], loaderResponseType = loaderResponseType.asInstanceOf[js.Any], loaderTimeout = loaderTimeout.asInstanceOf[js.Any], loaderUser = loaderUser.asInstanceOf[js.Any], loaderWithCredentials = loaderWithCredentials.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any], maxLights = maxLights.asInstanceOf[js.Any], maxTextures = maxTextures.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any], mipmapFilter = mipmapFilter.asInstanceOf[js.Any], missingImage = missingImage.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], physics = physics.asInstanceOf[js.Any], pipeline = pipeline.asInstanceOf[js.Any], pixelArt = pixelArt.asInstanceOf[js.Any], postBoot = js.Any.fromFunction1(postBoot), powerPreference = powerPreference.asInstanceOf[js.Any], preBoot = js.Any.fromFunction1(preBoot), premultipliedAlpha = premultipliedAlpha.asInstanceOf[js.Any], preserveDrawingBuffer = preserveDrawingBuffer.asInstanceOf[js.Any], renderType = renderType.asInstanceOf[js.Any], resizeInterval = resizeInterval.asInstanceOf[js.Any], roundPixels = roundPixels.asInstanceOf[js.Any], scaleMode = scaleMode.asInstanceOf[js.Any], sceneConfig = sceneConfig.asInstanceOf[js.Any], seed = seed.asInstanceOf[js.Any], transparent = transparent.asInstanceOf[js.Any], whiteImage = whiteImage.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
@@ -536,17 +578,17 @@ object Core {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      inline def setAutoRound(value: integer): Self = StObject.set(x, "autoRound", value.asInstanceOf[js.Any])
+      inline def setAutoRound(value: Boolean): Self = StObject.set(x, "autoRound", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBannerBackgroundColor(value: js.Array[String]): Self = StObject.set(x, "bannerBackgroundColor", value.asInstanceOf[js.Any])
       
-      inline def setBannerBackgroundColorVarargs(value: String*): Self = StObject.set(x, "bannerBackgroundColor", js.Array(value :_*))
+      inline def setBannerBackgroundColorVarargs(value: String*): Self = StObject.set(x, "bannerBackgroundColor", js.Array(value*))
       
       inline def setBannerTextColor(value: String): Self = StObject.set(x, "bannerTextColor", value.asInstanceOf[js.Any])
       
-      inline def setBatchSize(value: integer): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
       inline def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       
@@ -562,7 +604,7 @@ object Core {
       
       inline def setDefaultPhysicsSystem(value: Boolean | String): Self = StObject.set(x, "defaultPhysicsSystem", value.asInstanceOf[js.Any])
       
-      inline def setDefaultPlugins(value: js.Any): Self = StObject.set(x, "defaultPlugins", value.asInstanceOf[js.Any])
+      inline def setDefaultPlugins(value: Any): Self = StObject.set(x, "defaultPlugins", value.asInstanceOf[js.Any])
       
       inline def setDesynchronized(value: Boolean): Self = StObject.set(x, "desynchronized", value.asInstanceOf[js.Any])
       
@@ -571,6 +613,8 @@ object Core {
       inline def setDomBehindCanvas(value: Boolean): Self = StObject.set(x, "domBehindCanvas", value.asInstanceOf[js.Any])
       
       inline def setDomCreateContainer(value: Boolean): Self = StObject.set(x, "domCreateContainer", value.asInstanceOf[js.Any])
+      
+      inline def setDomPointerEvents(value: String): Self = StObject.set(x, "domPointerEvents", value.asInstanceOf[js.Any])
       
       inline def setExpandParent(value: Boolean): Self = StObject.set(x, "expandParent", value.asInstanceOf[js.Any])
       
@@ -586,45 +630,51 @@ object Core {
       
       inline def setGameVersion(value: String): Self = StObject.set(x, "gameVersion", value.asInstanceOf[js.Any])
       
-      inline def setHeight(value: integer | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHideBanner(value: Boolean): Self = StObject.set(x, "hideBanner", value.asInstanceOf[js.Any])
       
       inline def setHidePhaser(value: Boolean): Self = StObject.set(x, "hidePhaser", value.asInstanceOf[js.Any])
       
-      inline def setInputActivePointers(value: integer): Self = StObject.set(x, "inputActivePointers", value.asInstanceOf[js.Any])
+      inline def setInputActivePointers(value: Double): Self = StObject.set(x, "inputActivePointers", value.asInstanceOf[js.Any])
       
       inline def setInputGamepad(value: Boolean): Self = StObject.set(x, "inputGamepad", value.asInstanceOf[js.Any])
       
-      inline def setInputGamepadEventTarget(value: js.Any): Self = StObject.set(x, "inputGamepadEventTarget", value.asInstanceOf[js.Any])
+      inline def setInputGamepadEventTarget(value: Any): Self = StObject.set(x, "inputGamepadEventTarget", value.asInstanceOf[js.Any])
       
       inline def setInputKeyboard(value: Boolean): Self = StObject.set(x, "inputKeyboard", value.asInstanceOf[js.Any])
       
-      inline def setInputKeyboardCapture(value: js.Array[integer]): Self = StObject.set(x, "inputKeyboardCapture", value.asInstanceOf[js.Any])
+      inline def setInputKeyboardCapture(value: js.Array[Double]): Self = StObject.set(x, "inputKeyboardCapture", value.asInstanceOf[js.Any])
       
-      inline def setInputKeyboardCaptureVarargs(value: integer*): Self = StObject.set(x, "inputKeyboardCapture", js.Array(value :_*))
+      inline def setInputKeyboardCaptureVarargs(value: Double*): Self = StObject.set(x, "inputKeyboardCapture", js.Array(value*))
       
-      inline def setInputKeyboardEventTarget(value: js.Any): Self = StObject.set(x, "inputKeyboardEventTarget", value.asInstanceOf[js.Any])
+      inline def setInputKeyboardEventTarget(value: Any): Self = StObject.set(x, "inputKeyboardEventTarget", value.asInstanceOf[js.Any])
       
       inline def setInputMouse(value: Boolean | js.Object): Self = StObject.set(x, "inputMouse", value.asInstanceOf[js.Any])
       
-      inline def setInputMouseCapture(value: Boolean): Self = StObject.set(x, "inputMouseCapture", value.asInstanceOf[js.Any])
+      inline def setInputMouseEventTarget(value: Any): Self = StObject.set(x, "inputMouseEventTarget", value.asInstanceOf[js.Any])
       
-      inline def setInputMouseEventTarget(value: js.Any): Self = StObject.set(x, "inputMouseEventTarget", value.asInstanceOf[js.Any])
+      inline def setInputMousePreventDefaultDown(value: Boolean): Self = StObject.set(x, "inputMousePreventDefaultDown", value.asInstanceOf[js.Any])
       
-      inline def setInputSmoothFactor(value: integer): Self = StObject.set(x, "inputSmoothFactor", value.asInstanceOf[js.Any])
+      inline def setInputMousePreventDefaultMove(value: Boolean): Self = StObject.set(x, "inputMousePreventDefaultMove", value.asInstanceOf[js.Any])
+      
+      inline def setInputMousePreventDefaultUp(value: Boolean): Self = StObject.set(x, "inputMousePreventDefaultUp", value.asInstanceOf[js.Any])
+      
+      inline def setInputMousePreventDefaultWheel(value: Boolean): Self = StObject.set(x, "inputMousePreventDefaultWheel", value.asInstanceOf[js.Any])
+      
+      inline def setInputSmoothFactor(value: Double): Self = StObject.set(x, "inputSmoothFactor", value.asInstanceOf[js.Any])
       
       inline def setInputTouch(value: Boolean): Self = StObject.set(x, "inputTouch", value.asInstanceOf[js.Any])
       
       inline def setInputTouchCapture(value: Boolean): Self = StObject.set(x, "inputTouchCapture", value.asInstanceOf[js.Any])
       
-      inline def setInputTouchEventTarget(value: js.Any): Self = StObject.set(x, "inputTouchEventTarget", value.asInstanceOf[js.Any])
+      inline def setInputTouchEventTarget(value: Any): Self = StObject.set(x, "inputTouchEventTarget", value.asInstanceOf[js.Any])
       
       inline def setInputWindowEvents(value: Boolean): Self = StObject.set(x, "inputWindowEvents", value.asInstanceOf[js.Any])
       
-      inline def setInstallGlobalPlugins(value: js.Any): Self = StObject.set(x, "installGlobalPlugins", value.asInstanceOf[js.Any])
+      inline def setInstallGlobalPlugins(value: Any): Self = StObject.set(x, "installGlobalPlugins", value.asInstanceOf[js.Any])
       
-      inline def setInstallScenePlugins(value: js.Any): Self = StObject.set(x, "installScenePlugins", value.asInstanceOf[js.Any])
+      inline def setInstallScenePlugins(value: Any): Self = StObject.set(x, "installScenePlugins", value.asInstanceOf[js.Any])
       
       inline def setLoaderAsync(value: Boolean): Self = StObject.set(x, "loaderAsync", value.asInstanceOf[js.Any])
       
@@ -634,7 +684,7 @@ object Core {
       
       inline def setLoaderCrossOriginUndefined: Self = StObject.set(x, "loaderCrossOrigin", js.undefined)
       
-      inline def setLoaderMaxParallelDownloads(value: integer): Self = StObject.set(x, "loaderMaxParallelDownloads", value.asInstanceOf[js.Any])
+      inline def setLoaderMaxParallelDownloads(value: Double): Self = StObject.set(x, "loaderMaxParallelDownloads", value.asInstanceOf[js.Any])
       
       inline def setLoaderPassword(value: String): Self = StObject.set(x, "loaderPassword", value.asInstanceOf[js.Any])
       
@@ -642,29 +692,33 @@ object Core {
       
       inline def setLoaderResponseType(value: String): Self = StObject.set(x, "loaderResponseType", value.asInstanceOf[js.Any])
       
-      inline def setLoaderTimeout(value: integer): Self = StObject.set(x, "loaderTimeout", value.asInstanceOf[js.Any])
+      inline def setLoaderTimeout(value: Double): Self = StObject.set(x, "loaderTimeout", value.asInstanceOf[js.Any])
       
       inline def setLoaderUser(value: String): Self = StObject.set(x, "loaderUser", value.asInstanceOf[js.Any])
       
       inline def setLoaderWithCredentials(value: Boolean): Self = StObject.set(x, "loaderWithCredentials", value.asInstanceOf[js.Any])
       
-      inline def setMaxHeight(value: integer): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      inline def setMaxLights(value: integer): Self = StObject.set(x, "maxLights", value.asInstanceOf[js.Any])
+      inline def setMaxLights(value: Double): Self = StObject.set(x, "maxLights", value.asInstanceOf[js.Any])
       
-      inline def setMaxWidth(value: integer): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxTextures(value: Double): Self = StObject.set(x, "maxTextures", value.asInstanceOf[js.Any])
       
-      inline def setMinHeight(value: integer): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      inline def setMinWidth(value: integer): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
       inline def setMipmapFilter(value: String): Self = StObject.set(x, "mipmapFilter", value.asInstanceOf[js.Any])
       
       inline def setMissingImage(value: String): Self = StObject.set(x, "missingImage", value.asInstanceOf[js.Any])
       
-      inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
       inline def setPhysics(value: PhysicsConfig): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
+      
+      inline def setPipeline(value: PipelineConfig): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
       
       inline def setPixelArt(value: Boolean): Self = StObject.set(x, "pixelArt", value.asInstanceOf[js.Any])
       
@@ -676,11 +730,11 @@ object Core {
       
       inline def setPremultipliedAlpha(value: Boolean): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
       
+      inline def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
+      
       inline def setRenderType(value: Double): Self = StObject.set(x, "renderType", value.asInstanceOf[js.Any])
       
-      inline def setResizeInterval(value: integer): Self = StObject.set(x, "resizeInterval", value.asInstanceOf[js.Any])
-      
-      inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+      inline def setResizeInterval(value: Double): Self = StObject.set(x, "resizeInterval", value.asInstanceOf[js.Any])
       
       inline def setRoundPixels(value: Boolean): Self = StObject.set(x, "roundPixels", value.asInstanceOf[js.Any])
       
@@ -690,13 +744,15 @@ object Core {
       
       inline def setSeed(value: js.Array[String]): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
       
-      inline def setSeedVarargs(value: String*): Self = StObject.set(x, "seed", js.Array(value :_*))
+      inline def setSeedVarargs(value: String*): Self = StObject.set(x, "seed", js.Array(value*))
       
       inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
       
-      inline def setWidth(value: integer | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWhiteImage(value: String): Self = StObject.set(x, "whiteImage", value.asInstanceOf[js.Any])
       
-      inline def setZoom(value: ZoomType | integer): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setZoom(value: ZoomType | Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     }
   }
   
@@ -720,7 +776,7 @@ object Core {
     /**
       * An exponential moving average of the frames per second.
       */
-    val actualFps: integer = js.native
+    val actualFps: Double = js.native
     
     /**
       * Called by the Game instance when the DOM window.onBlur event triggers.
@@ -740,24 +796,24 @@ object Core {
     /**
       * The delta time, in ms, since the last game step. This is a clamped and smoothed average value.
       */
-    var delta: integer = js.native
+    var delta: Double = js.native
     
     /**
       * Internal array holding the previous delta values, used for delta smoothing.
       */
-    var deltaHistory: js.Array[integer] = js.native
+    var deltaHistory: js.Array[Double] = js.native
     
     /**
       * Internal index of the delta history position.
       */
-    var deltaIndex: integer = js.native
+    var deltaIndex: Double = js.native
     
     /**
       * The maximum number of delta values that are retained in order to calculate a smoothed moving average.
       * 
       * This can be changed in the Game Config via the `fps.deltaHistory` property. The default is 10.
       */
-    var deltaSmoothingMax: integer = js.native
+    var deltaSmoothingMax: Double = js.native
     
     /**
       * Destroys the TimeStep. This will stop Request Animation Frame, stop the step, clear the callbacks and null
@@ -780,12 +836,12 @@ object Core {
       * The current frame the game is on. This counter is incremented once every game step, regardless of how much
       * time has passed and is unaffected by delta smoothing.
       */
-    val frame: integer = js.native
+    val frame: Double = js.native
     
     /**
       * The number of frames processed this second.
       */
-    val framesThisSecond: integer = js.native
+    val framesThisSecond: Double = js.native
     
     /**
       * A reference to the Phaser.Game instance.
@@ -816,13 +872,13 @@ object Core {
     /**
       * The minimum fps rate you want the Time Step to run at.
       */
-    var minFps: integer = js.native
+    var minFps: Double = js.native
     
     /**
       * The time at which the next fps rate update will take place.
       * When an fps update happens, the `framesThisSecond` value is reset.
       */
-    val nextFpsUpdate: integer = js.native
+    val nextFpsUpdate: Double = js.native
     
     /**
       * The time, as returned by `performance.now` at the very start of the current step.
@@ -836,7 +892,7 @@ object Core {
       * 
       * This can be changed in the Game Config via the `fps.panicMax` property. The default is 120.
       */
-    var panicMax: integer = js.native
+    var panicMax: Double = js.native
     
     /**
       * Called when the visibility API says the game is 'hidden' (tab switch out of view, etc)
@@ -929,7 +985,7 @@ object Core {
       * the control of Phaser. Instead, it allows you to determine performance issues and if the Time Step
       * is spiraling out of control.
       */
-    var targetFps: integer = js.native
+    var targetFps: Double = js.native
     
     /**
       * Manually calls `TimeStep.step`.

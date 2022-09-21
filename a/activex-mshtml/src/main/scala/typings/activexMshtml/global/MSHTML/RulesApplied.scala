@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.RulesApplied")
 @js.native
-/* private */ class RulesApplied ()
+/* private */ open class RulesApplied ()
   extends StObject
      with typings.activexMshtml.MSHTML.RulesApplied {
   

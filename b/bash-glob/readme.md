@@ -10,10 +10,10 @@ Bash-powered globbing for node.js
 | ------------------ | :-------------: |
 | Full name          | bash-glob |
 | Keywords           | bash, expand, expansion, expression, file, files, filter, find, glob, globbing, globs, globstar, match, matcher, matches, matching, micromatch, minimatch, multimatch, nanomatch, path, pattern, patterns, regex, regexp, regular, shell, wildcard |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 293395 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 188531.0 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/micromatch/bash-glob)

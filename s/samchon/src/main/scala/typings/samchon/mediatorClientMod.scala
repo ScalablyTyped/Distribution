@@ -17,7 +17,7 @@ object mediatorClientMod {
   - typings.samchon.slaveSystemMod.SlaveSystem because Already inherited
   - typings.samchon.slaveClientMod.ISlaveClient because var conflicts: _Complete_process, communicator_. Inlined connect */ @JSImport("samchon/templates/parallel/derived/MediatorClient", "MediatorClient")
   @js.native
-  class MediatorClient protected () extends MediatorSystem {
+  open class MediatorClient protected () extends MediatorSystem {
     /**
       * Initializer Constructor.
       *
@@ -59,17 +59,17 @@ object mediatorClientMod {
     /**
       * @hidden
       */
-    /* private */ var ip: js.Any = js.native
+    /* private */ var ip: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var port: js.Any = js.native
+    /* private */ var port: Any = js.native
   }
   
   @JSImport("samchon/templates/parallel/derived/MediatorClient", "MediatorSharedWorkerClient")
   @js.native
-  class MediatorSharedWorkerClient protected () extends MediatorClient {
+  open class MediatorSharedWorkerClient protected () extends MediatorClient {
     /**
       * Initializer Constructor.
       *
@@ -90,7 +90,7 @@ object mediatorClientMod {
   
   @JSImport("samchon/templates/parallel/derived/MediatorClient", "MediatorWebClient")
   @js.native
-  class MediatorWebClient protected () extends MediatorClient {
+  open class MediatorWebClient protected () extends MediatorClient {
     /**
       * Initializer Constructor.
       *

@@ -18,7 +18,7 @@ object hotkeysTargetMod {
   
   @js.native
   trait IHotkeysTargetComponent
-    extends Component[js.Object, js.Object, js.Any] {
+    extends Component[js.Object, js.Object, Any] {
     
     /**
       * Components decorated with the `@HotkeysTarget` decorator must implement

@@ -36,6 +36,6 @@ object UpdateSizeConstraintSetRequest {
     
     inline def setUpdates(value: SizeConstraintSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
-    inline def setUpdatesVarargs(value: SizeConstraintSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: SizeConstraintSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value*))
   }
 }

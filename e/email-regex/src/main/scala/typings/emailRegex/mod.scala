@@ -1,43 +1,26 @@
 package typings.emailRegex
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-  Regular expression for matching email addresses.
-  Use it for finding email addresses or checking if something is email like. [You shouldn't use this for validating emails.](http://davidcel.is/blog/2012/09/06/stop-validating-email-addresses-with-regex/) Only for hinting to the user.
-  @example
-  ```
-  import emailRegex = require('email-regex');
-  // Contains an email address
-  emailRegex().test('unicorn sindresorhus@gmail.com');
-  //=> true
-  // Is an email address
-  emailRegex({exact: true}).test('sindresorhus@gmail.com');
-  //=> true
-  'unicorn sindresorhus@gmail.com cake john@doe.com rainbow'.match(emailRegex());
-  //=> ['sindresorhus@gmail.com', 'john@doe.com']
-  ```
-  */
-  inline def apply(): RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RegExp]
-  inline def apply(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
-  
   @JSImport("email-regex", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.RegExp]
+  inline def default(options: Options): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
+  
   trait Options extends StObject {
     
     /**
-    		Only match an exact string.
-    		Useful with `RegExp#test` to check if a string is an email address.
-    		@default false
-    		*/
-    var exact: js.UndefOr[Boolean] = js.undefined
+    	Only match an exact string.
+    	Useful with `RegExp#test` to check if a string is an email address.
+    	@default false
+    	*/
+    val exact: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

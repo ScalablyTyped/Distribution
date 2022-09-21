@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsConverter.compiledApiMod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait IAny extends StObject {
   var typeUrl: js.UndefOr[String | Null] = js.undefined
   
   /** Any value */
-  var value: js.UndefOr[Uint8Array | Null] = js.undefined
+  var value: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
 }
 object IAny {
   
@@ -28,7 +27,7 @@ object IAny {
     
     inline def setTypeUrlUndefined: Self = StObject.set(x, "typeUrl", js.undefined)
     
-    inline def setValue(value: Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.typedarray.Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueNull: Self = StObject.set(x, "value", null)
     

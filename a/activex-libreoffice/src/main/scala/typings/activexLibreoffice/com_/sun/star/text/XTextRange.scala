@@ -54,7 +54,7 @@ object XTextRange {
     getStart: () => XTextRange,
     getString: () => String,
     getText: () => XText,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setString: String => Unit
   ): XTextRange = {

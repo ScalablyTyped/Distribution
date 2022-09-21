@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-tab-view
 
-Typings are for version 2.15.2
+Typings are for version 3.1.1
 
 ## Library description:
 Tab view component for React Native
@@ -10,10 +10,10 @@ Tab view component for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-tab-view |
 | Keywords           | react-native-component, react-component, react-native, ios, android, tab, swipe, scrollable, coverflow |
-| # releases         | 28 |
-| # dependents       | 102 |
-| # downloads        | 12682974 |
-| # stars            | 8 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1067651.3333333333 |
+| # stars            | 4933.0 |
 
 ## Links
 - [Homepage](https://github.com/satya164/react-native-tab-view#readme)

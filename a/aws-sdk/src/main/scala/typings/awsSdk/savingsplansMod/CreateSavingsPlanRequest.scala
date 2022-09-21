@@ -12,14 +12,14 @@ trait CreateSavingsPlanRequest extends StObject {
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * The hourly commitment, in USD. This is a value between 0.001 and 1 million. You cannot specify more than three digits after the decimal point.
+    * The hourly commitment, in USD. This is a value between 0.001 and 1 million. You cannot specify more than five digits after the decimal point.
     */
   var commitment: Amount
   
   /**
     * The time at which to purchase the Savings Plan, in UTC format (YYYY-MM-DDTHH:MM:SSZ).
     */
-  var purchaseTime: js.UndefOr[DateTime] = js.undefined
+  var purchaseTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the offering.
@@ -51,7 +51,7 @@ object CreateSavingsPlanRequest {
     
     inline def setCommitment(value: Amount): Self = StObject.set(x, "commitment", value.asInstanceOf[js.Any])
     
-    inline def setPurchaseTime(value: DateTime): Self = StObject.set(x, "purchaseTime", value.asInstanceOf[js.Any])
+    inline def setPurchaseTime(value: js.Date): Self = StObject.set(x, "purchaseTime", value.asInstanceOf[js.Any])
     
     inline def setPurchaseTimeUndefined: Self = StObject.set(x, "purchaseTime", js.undefined)
     

@@ -12,9 +12,19 @@ trait DescribeSimulationApplicationResponse extends StObject {
   var arn: js.UndefOr[Arn] = js.undefined
   
   /**
+    * The object that contains the Docker image URI used to create the simulation application.
+    */
+  var environment: js.UndefOr[Environment] = js.undefined
+  
+  /**
+    * A SHA256 identifier for the Docker image that you use for your simulation application.
+    */
+  var imageDigest: js.UndefOr[ImageDigest] = js.undefined
+  
+  /**
     * The time, in milliseconds since the epoch, when the simulation application was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the simulation application.
@@ -69,7 +79,15 @@ object DescribeSimulationApplicationResponse {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setLastUpdatedAt(value: LastUpdatedAt): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    
+    inline def setImageDigest(value: ImageDigest): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
+    
+    inline def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
+    
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
@@ -97,7 +115,7 @@ object DescribeSimulationApplicationResponse {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

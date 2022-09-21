@@ -12,7 +12,7 @@ trait CarrierGateway extends StObject {
   var CarrierGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.CarrierGatewayId] = js.undefined
   
   /**
-    * The AWS account ID of the owner of the carrier gateway.
+    * The Amazon Web Services account ID of the owner of the carrier gateway.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -56,7 +56,7 @@ object CarrierGateway {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

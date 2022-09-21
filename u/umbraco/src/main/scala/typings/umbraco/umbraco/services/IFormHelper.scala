@@ -54,7 +54,7 @@ trait IFormHelper extends StObject {
     *
     * @param {object} args An object containing arguments for form submission
     */
-  def resetForm(args: js.Any*): Unit
+  def resetForm(args: Any*): Unit
   
   /**
     * @ngdoc function
@@ -69,15 +69,15 @@ trait IFormHelper extends StObject {
     *
     * @param {object} args An object containing arguments for form submission
     */
-  def submitForm(args: js.Any*): Unit
+  def submitForm(args: Any*): Unit
 }
 object IFormHelper {
   
   inline def apply(
     handleError: js.Object => Unit,
     handleServerValidation: IModelState => Unit,
-    resetForm: /* repeated */ js.Any => Unit,
-    submitForm: /* repeated */ js.Any => Unit
+    resetForm: /* repeated */ Any => Unit,
+    submitForm: /* repeated */ Any => Unit
   ): IFormHelper = {
     val __obj = js.Dynamic.literal(handleError = js.Any.fromFunction1(handleError), handleServerValidation = js.Any.fromFunction1(handleServerValidation), resetForm = js.Any.fromFunction1(resetForm), submitForm = js.Any.fromFunction1(submitForm))
     __obj.asInstanceOf[IFormHelper]
@@ -89,8 +89,8 @@ object IFormHelper {
     
     inline def setHandleServerValidation(value: IModelState => Unit): Self = StObject.set(x, "handleServerValidation", js.Any.fromFunction1(value))
     
-    inline def setResetForm(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "resetForm", js.Any.fromFunction1(value))
+    inline def setResetForm(value: /* repeated */ Any => Unit): Self = StObject.set(x, "resetForm", js.Any.fromFunction1(value))
     
-    inline def setSubmitForm(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "submitForm", js.Any.fromFunction1(value))
+    inline def setSubmitForm(value: /* repeated */ Any => Unit): Self = StObject.set(x, "submitForm", js.Any.fromFunction1(value))
   }
 }

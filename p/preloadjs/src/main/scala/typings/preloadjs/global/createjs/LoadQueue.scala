@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.LoadQueue")
 @js.native
-class LoadQueue ()
+open class LoadQueue ()
   extends StObject
      with typings.preloadjs.createjs.LoadQueue {
   def this(preferXHR: Boolean) = this()

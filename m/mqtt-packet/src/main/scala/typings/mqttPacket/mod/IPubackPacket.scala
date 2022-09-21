@@ -1,6 +1,5 @@
 package typings.mqttPacket.mod
 
-import typings.mqttPacket.anon.ReasonString
 import typings.mqttPacket.mqttPacketStrings.puback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +13,9 @@ trait IPubackPacket
   @JSName("cmd")
   var cmd_IPubackPacket: puback
   
-  var properties: js.UndefOr[ReasonString] = js.undefined
+  var properties: js.UndefOr[typings.mqttPacket.anon.UserProperties] = js.undefined
+  
+  var reasonCode: js.UndefOr[Double] = js.undefined
 }
 object IPubackPacket {
   
@@ -27,8 +28,12 @@ object IPubackPacket {
     
     inline def setCmd(value: puback): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: typings.mqttPacket.anon.UserProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setReasonCode(value: Double): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
+    
+    inline def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
   }
 }

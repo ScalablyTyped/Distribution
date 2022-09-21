@@ -14,9 +14,9 @@ object mod {
   
   @JSImport("@ethersproject/bignumber", "BigNumber")
   @js.native
-  class BigNumber protected ()
+  open class BigNumber protected ()
     extends typings.ethersprojectBignumber.bignumberMod.BigNumber {
-    def this(constructorGuard: js.Any, hex: String) = this()
+    def this(constructorGuard: Any, hex: String) = this()
   }
   /* static members */
   object BigNumber {
@@ -25,16 +25,16 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def from(value: js.Any): typings.ethersprojectBignumber.bignumberMod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectBignumber.bignumberMod.BigNumber]
+    inline def from(value: Any): typings.ethersprojectBignumber.bignumberMod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectBignumber.bignumberMod.BigNumber]
     
-    inline def isBigNumber(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumber */ Boolean]
+    inline def isBigNumber(value: Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumber */ Boolean]
   }
   
   @JSImport("@ethersproject/bignumber", "FixedFormat")
   @js.native
-  class FixedFormat protected ()
+  open class FixedFormat protected ()
     extends typings.ethersprojectBignumber.fixednumberMod.FixedFormat {
-    def this(constructorGuard: js.Any, signed: Boolean, width: Double, decimals: Double) = this()
+    def this(constructorGuard: Any, signed: Boolean, width: Double, decimals: Double) = this()
   }
   /* static members */
   object FixedFormat {
@@ -43,16 +43,16 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def from(value: js.Any): typings.ethersprojectBignumber.fixednumberMod.FixedFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedFormat]
+    inline def from(value: Any): typings.ethersprojectBignumber.fixednumberMod.FixedFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedFormat]
   }
   
   @JSImport("@ethersproject/bignumber", "FixedNumber")
   @js.native
-  class FixedNumber protected ()
+  open class FixedNumber protected ()
     extends typings.ethersprojectBignumber.fixednumberMod.FixedNumber {
-    def this(constructorGuard: js.Any, hex: String, value: String) = this()
+    def this(constructorGuard: Any, hex: String, value: String) = this()
     def this(
-      constructorGuard: js.Any,
+      constructorGuard: Any,
       hex: String,
       value: String,
       format: typings.ethersprojectBignumber.fixednumberMod.FixedFormat
@@ -65,20 +65,24 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def from(value: js.Any): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
-    inline def from(value: js.Any, format: String): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
-    inline def from(value: js.Any, format: typings.ethersprojectBignumber.fixednumberMod.FixedFormat): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
+    inline def from(value: Any): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
+    inline def from(value: Any, format: String): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
+    inline def from(value: Any, format: Double): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
+    inline def from(value: Any, format: typings.ethersprojectBignumber.fixednumberMod.FixedFormat): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
     
     inline def fromBytes(value: BytesLike): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
     inline def fromBytes(value: BytesLike, format: String): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
+    inline def fromBytes(value: BytesLike, format: Double): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
     inline def fromBytes(value: BytesLike, format: typings.ethersprojectBignumber.fixednumberMod.FixedFormat): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
     
     inline def fromString(value: String): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
     inline def fromString(value: String, format: String): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
+    inline def fromString(value: String, format: Double): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
     inline def fromString(value: String, format: typings.ethersprojectBignumber.fixednumberMod.FixedFormat): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
     
     inline def fromValue(value: typings.ethersprojectBignumber.bignumberMod.BigNumber): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
     inline def fromValue(value: typings.ethersprojectBignumber.bignumberMod.BigNumber, decimals: Unit, format: String): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
+    inline def fromValue(value: typings.ethersprojectBignumber.bignumberMod.BigNumber, decimals: Unit, format: Double): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
     inline def fromValue(
       value: typings.ethersprojectBignumber.bignumberMod.BigNumber,
       decimals: Unit,
@@ -93,10 +97,15 @@ object mod {
     inline def fromValue(
       value: typings.ethersprojectBignumber.bignumberMod.BigNumber,
       decimals: BigNumberish,
+      format: Double
+    ): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
+    inline def fromValue(
+      value: typings.ethersprojectBignumber.bignumberMod.BigNumber,
+      decimals: BigNumberish,
       format: typings.ethersprojectBignumber.fixednumberMod.FixedFormat
     ): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.fixednumberMod.FixedNumber]
     
-    inline def isFixedNumber(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFixedNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean]
+    inline def isFixedNumber(value: Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFixedNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean]
   }
   
   inline def base16To36(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_base16To36")(value.asInstanceOf[js.Any]).asInstanceOf[String]

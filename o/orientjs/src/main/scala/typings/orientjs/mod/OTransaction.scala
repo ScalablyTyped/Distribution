@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("orientjs", "OTransaction")
 @js.native
-class OTransaction () extends StObject {
+open class OTransaction () extends StObject {
   
-  def commit(): js.Promise[js.Any] = js.native
+  def commit(): js.Promise[Any] = js.native
   
   def create(record: ORecord): OTransaction = js.native
   

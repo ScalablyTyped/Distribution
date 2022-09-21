@@ -10,10 +10,10 @@ Merges JavaScript objects recursively without altering the objects merged.
 | ------------------ | :-------------: |
 | Full name          | object-merge |
 | Keywords           | object-merge, atropa |
-| # releases         | 0 |
-| # dependents       | 83 |
-| # downloads        | 436768 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 48406.666666666664 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/matthewkastor/object-merge/)

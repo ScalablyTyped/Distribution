@@ -60,7 +60,7 @@ object mod {
       
       inline def setNodeEnvUndefined: Self = StObject.set(x, "nodeEnv", js.undefined)
       
-      inline def setNodeEnvVarargs(value: String*): Self = StObject.set(x, "nodeEnv", js.Array(value :_*))
+      inline def setNodeEnvVarargs(value: String*): Self = StObject.set(x, "nodeEnv", js.Array(value*))
       
       inline def setTimeoutFunction(value: (/* next */ js.Function0[Unit], /* ms */ Double) => Unit): Self = StObject.set(x, "timeoutFunction", js.Any.fromFunction2(value))
       

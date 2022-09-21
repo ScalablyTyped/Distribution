@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListResourceSharePermissionsResponse extends StObject {
   
   /**
-    * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+    * If present, this value indicates that more output is available than is included in the current response. Use this value in the NextToken request parameter in a subsequent call to the operation to get the next part of the output. You should repeat this until the NextToken response element comes back as null. This indicates that this is the last page of results.
     */
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The permissions associated with the resource share.
+    * An array of objects that describe the permissions associated with the resource share.
     */
   var permissions: js.UndefOr[ResourceSharePermissionList] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListResourceSharePermissionsResponse {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: ResourceSharePermissionSummary*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: ResourceSharePermissionSummary*): Self = StObject.set(x, "permissions", js.Array(value*))
   }
 }

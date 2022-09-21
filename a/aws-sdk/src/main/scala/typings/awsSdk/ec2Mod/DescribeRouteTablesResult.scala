@@ -33,6 +33,6 @@ object DescribeRouteTablesResult {
     
     inline def setRouteTablesUndefined: Self = StObject.set(x, "RouteTables", js.undefined)
     
-    inline def setRouteTablesVarargs(value: RouteTable*): Self = StObject.set(x, "RouteTables", js.Array(value :_*))
+    inline def setRouteTablesVarargs(value: RouteTable*): Self = StObject.set(x, "RouteTables", js.Array(value*))
   }
 }

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListNamespacesResponse extends StObject {
   
   /**
-    * The information about the namespaces in this AWS account. The response includes the namespace ARN, name, AWS Region, notification email address, creation status, and identity store.
+    * The information about the namespaces in this Amazon Web Services account. The response includes the namespace ARN, name, Amazon Web Services Region, notification email address, creation status, and identity store.
     */
   var Namespaces: js.UndefOr[typings.awsSdk.quicksightMod.Namespaces] = js.undefined
   
   /**
-    * A pagination token that can be used in a subsequent request.
+    * A unique pagination token that can be used in a subsequent request. Receiving NextToken in your response inticates that there is more data that can be returned. To receive the data, make another ListNamespaces API call with the returned token to retrieve the next page of data. Each token is valid for 24 hours. If you try to make a ListNamespaces API call with an expired token, you will receive a HTTP 400 InvalidNextTokenException error.
     */
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   
@@ -39,7 +39,7 @@ object ListNamespacesResponse {
     
     inline def setNamespacesUndefined: Self = StObject.set(x, "Namespaces", js.undefined)
     
-    inline def setNamespacesVarargs(value: NamespaceInfoV2*): Self = StObject.set(x, "Namespaces", js.Array(value :_*))
+    inline def setNamespacesVarargs(value: NamespaceInfoV2*): Self = StObject.set(x, "Namespaces", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -10,8 +10,6 @@ import typings.openpgp.openpgpStrings.binary
 import typings.openpgp.openpgpStrings.mime
 import typings.openpgp.openpgpStrings.text
 import typings.openpgp.openpgpStrings.utf8
-import typings.std.Date
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +26,7 @@ object message {
     */
   @JSImport("openpgp", "message.Message")
   @js.native
-  class Message protected () extends StObject {
+  open class Message protected () extends StObject {
     /**
       * @param packetlist The packets that form this message
       *        See {@link https://tools.ietf.org/html/rfc4880#section-11.3}
@@ -40,7 +38,7 @@ object message {
       * @param detachedSignature The detached ASCII-armored or Uint8Array PGP signature
       */
     def appendSignature(detachedSignature: String): Unit = js.native
-    def appendSignature(detachedSignature: Uint8Array): Unit = js.native
+    def appendSignature(detachedSignature: js.typedarray.Uint8Array): Unit = js.native
     
     /**
       * Returns ASCII armored text of message
@@ -64,25 +62,25 @@ object message {
       * @returns new message with decrypted content
       */
     def decrypt(): js.Promise[Message] = js.native
-    def decrypt(privateKeys: js.Array[js.Any]): js.Promise[Message] = js.native
-    def decrypt(privateKeys: js.Array[js.Any], passwords: js.Array[js.Any]): js.Promise[Message] = js.native
-    def decrypt(privateKeys: js.Array[js.Any], passwords: js.Array[js.Any], sessionKeys: js.Array[js.Any]): js.Promise[Message] = js.native
+    def decrypt(privateKeys: js.Array[Any]): js.Promise[Message] = js.native
+    def decrypt(privateKeys: js.Array[Any], passwords: js.Array[Any]): js.Promise[Message] = js.native
+    def decrypt(privateKeys: js.Array[Any], passwords: js.Array[Any], sessionKeys: js.Array[Any]): js.Promise[Message] = js.native
     def decrypt(
-      privateKeys: js.Array[js.Any],
-      passwords: js.Array[js.Any],
-      sessionKeys: js.Array[js.Any],
+      privateKeys: js.Array[Any],
+      passwords: js.Array[Any],
+      sessionKeys: js.Array[Any],
       streaming: Boolean
     ): js.Promise[Message] = js.native
-    def decrypt(privateKeys: js.Array[js.Any], passwords: js.Array[js.Any], sessionKeys: Unit, streaming: Boolean): js.Promise[Message] = js.native
-    def decrypt(privateKeys: js.Array[js.Any], passwords: Unit, sessionKeys: js.Array[js.Any]): js.Promise[Message] = js.native
-    def decrypt(privateKeys: js.Array[js.Any], passwords: Unit, sessionKeys: js.Array[js.Any], streaming: Boolean): js.Promise[Message] = js.native
-    def decrypt(privateKeys: js.Array[js.Any], passwords: Unit, sessionKeys: Unit, streaming: Boolean): js.Promise[Message] = js.native
-    def decrypt(privateKeys: Unit, passwords: js.Array[js.Any]): js.Promise[Message] = js.native
-    def decrypt(privateKeys: Unit, passwords: js.Array[js.Any], sessionKeys: js.Array[js.Any]): js.Promise[Message] = js.native
-    def decrypt(privateKeys: Unit, passwords: js.Array[js.Any], sessionKeys: js.Array[js.Any], streaming: Boolean): js.Promise[Message] = js.native
-    def decrypt(privateKeys: Unit, passwords: js.Array[js.Any], sessionKeys: Unit, streaming: Boolean): js.Promise[Message] = js.native
-    def decrypt(privateKeys: Unit, passwords: Unit, sessionKeys: js.Array[js.Any]): js.Promise[Message] = js.native
-    def decrypt(privateKeys: Unit, passwords: Unit, sessionKeys: js.Array[js.Any], streaming: Boolean): js.Promise[Message] = js.native
+    def decrypt(privateKeys: js.Array[Any], passwords: js.Array[Any], sessionKeys: Unit, streaming: Boolean): js.Promise[Message] = js.native
+    def decrypt(privateKeys: js.Array[Any], passwords: Unit, sessionKeys: js.Array[Any]): js.Promise[Message] = js.native
+    def decrypt(privateKeys: js.Array[Any], passwords: Unit, sessionKeys: js.Array[Any], streaming: Boolean): js.Promise[Message] = js.native
+    def decrypt(privateKeys: js.Array[Any], passwords: Unit, sessionKeys: Unit, streaming: Boolean): js.Promise[Message] = js.native
+    def decrypt(privateKeys: Unit, passwords: js.Array[Any]): js.Promise[Message] = js.native
+    def decrypt(privateKeys: Unit, passwords: js.Array[Any], sessionKeys: js.Array[Any]): js.Promise[Message] = js.native
+    def decrypt(privateKeys: Unit, passwords: js.Array[Any], sessionKeys: js.Array[Any], streaming: Boolean): js.Promise[Message] = js.native
+    def decrypt(privateKeys: Unit, passwords: js.Array[Any], sessionKeys: Unit, streaming: Boolean): js.Promise[Message] = js.native
+    def decrypt(privateKeys: Unit, passwords: Unit, sessionKeys: js.Array[Any]): js.Promise[Message] = js.native
+    def decrypt(privateKeys: Unit, passwords: Unit, sessionKeys: js.Array[Any], streaming: Boolean): js.Promise[Message] = js.native
     def decrypt(privateKeys: Unit, passwords: Unit, sessionKeys: Unit, streaming: Boolean): js.Promise[Message] = js.native
     
     /**
@@ -92,9 +90,9 @@ object message {
       * @returns array of object with potential sessionKey, algorithm pairs
       */
     def decryptSessionKeys(): js.Promise[js.Array[Algorithm]] = js.native
-    def decryptSessionKeys(privateKeys: js.Array[js.Any]): js.Promise[js.Array[Algorithm]] = js.native
-    def decryptSessionKeys(privateKeys: js.Array[js.Any], passwords: js.Array[js.Any]): js.Promise[js.Array[Algorithm]] = js.native
-    def decryptSessionKeys(privateKeys: Unit, passwords: js.Array[js.Any]): js.Promise[js.Array[Algorithm]] = js.native
+    def decryptSessionKeys(privateKeys: js.Array[Any]): js.Promise[js.Array[Algorithm]] = js.native
+    def decryptSessionKeys(privateKeys: js.Array[Any], passwords: js.Array[Any]): js.Promise[js.Array[Algorithm]] = js.native
+    def decryptSessionKeys(privateKeys: Unit, passwords: js.Array[Any]): js.Promise[js.Array[Algorithm]] = js.native
     
     /**
       * Encrypt the message either with public keys, passwords, or both at once.
@@ -108,12 +106,12 @@ object message {
       * @returns new message with encrypted content
       */
     def encrypt(
-      keys: js.UndefOr[js.Array[js.Any]],
-      passwords: js.UndefOr[js.Array[js.Any]],
+      keys: js.UndefOr[js.Array[Any]],
+      passwords: js.UndefOr[js.Array[Any]],
       sessionKey: js.UndefOr[js.Object],
       wildcard: js.UndefOr[Boolean],
-      date: js.UndefOr[Date],
-      userIds: js.UndefOr[js.Array[js.Any]],
+      date: js.UndefOr[js.Date],
+      userIds: js.UndefOr[js.Array[Any]],
       streaming: js.UndefOr[Boolean]
     ): js.Promise[Message] = js.native
     
@@ -121,7 +119,7 @@ object message {
       * Returns the key IDs of the keys to which the session key is encrypted
       * @returns array of keyid objects
       */
-    def getEncryptionKeyIds(): js.Array[js.Any] = js.native
+    def getEncryptionKeyIds(): js.Array[Any] = js.native
     
     /**
       * Get filename from literal data packet
@@ -133,13 +131,13 @@ object message {
       * Get literal data that is the body of the message
       * @returns literal body of the message as Uint8Array
       */
-    def getLiteralData(): Uint8Array | Null = js.native
+    def getLiteralData(): js.typedarray.Uint8Array | Null = js.native
     
     /**
       * Returns the key IDs of the keys that signed the message
       * @returns array of keyid objects
       */
-    def getSigningKeyIds(): js.Array[js.Any] = js.native
+    def getSigningKeyIds(): js.Array[Any] = js.native
     
     /**
       * Get literal data as text
@@ -157,14 +155,14 @@ object message {
       * @param userIds (optional) user IDs to sign with, e.g. [ { name:'Steve Sender', email:'steve@openpgp.org' }]
       * @returns new message with signed content
       */
-    def sign(privateKeys: js.Array[js.Any]): js.Promise[Message] = js.native
-    def sign(privateKeys: js.Array[js.Any], signature: Unit, date: Unit, userIds: js.Array[js.Any]): js.Promise[Message] = js.native
-    def sign(privateKeys: js.Array[js.Any], signature: Unit, date: Date): js.Promise[Message] = js.native
-    def sign(privateKeys: js.Array[js.Any], signature: Unit, date: Date, userIds: js.Array[js.Any]): js.Promise[Message] = js.native
-    def sign(privateKeys: js.Array[js.Any], signature: Signature): js.Promise[Message] = js.native
-    def sign(privateKeys: js.Array[js.Any], signature: Signature, date: Unit, userIds: js.Array[js.Any]): js.Promise[Message] = js.native
-    def sign(privateKeys: js.Array[js.Any], signature: Signature, date: Date): js.Promise[Message] = js.native
-    def sign(privateKeys: js.Array[js.Any], signature: Signature, date: Date, userIds: js.Array[js.Any]): js.Promise[Message] = js.native
+    def sign(privateKeys: js.Array[Any]): js.Promise[Message] = js.native
+    def sign(privateKeys: js.Array[Any], signature: Unit, date: js.Date): js.Promise[Message] = js.native
+    def sign(privateKeys: js.Array[Any], signature: Unit, date: js.Date, userIds: js.Array[Any]): js.Promise[Message] = js.native
+    def sign(privateKeys: js.Array[Any], signature: Unit, date: Unit, userIds: js.Array[Any]): js.Promise[Message] = js.native
+    def sign(privateKeys: js.Array[Any], signature: Signature): js.Promise[Message] = js.native
+    def sign(privateKeys: js.Array[Any], signature: Signature, date: js.Date): js.Promise[Message] = js.native
+    def sign(privateKeys: js.Array[Any], signature: Signature, date: js.Date, userIds: js.Array[Any]): js.Promise[Message] = js.native
+    def sign(privateKeys: js.Array[Any], signature: Signature, date: Unit, userIds: js.Array[Any]): js.Promise[Message] = js.native
     
     /**
       * Create a detached signature for the message (the literal data packet of the message)
@@ -174,14 +172,14 @@ object message {
       * @param userIds (optional) user IDs to sign with, e.g. [ { name:'Steve Sender', email:'steve@openpgp.org' }]
       * @returns new detached signature of message content
       */
-    def signDetached(privateKeys: js.Array[js.Any]): js.Promise[Signature] = js.native
-    def signDetached(privateKeys: js.Array[js.Any], signature: Unit, date: Unit, userIds: js.Array[js.Any]): js.Promise[Signature] = js.native
-    def signDetached(privateKeys: js.Array[js.Any], signature: Unit, date: Date): js.Promise[Signature] = js.native
-    def signDetached(privateKeys: js.Array[js.Any], signature: Unit, date: Date, userIds: js.Array[js.Any]): js.Promise[Signature] = js.native
-    def signDetached(privateKeys: js.Array[js.Any], signature: Signature): js.Promise[Signature] = js.native
-    def signDetached(privateKeys: js.Array[js.Any], signature: Signature, date: Unit, userIds: js.Array[js.Any]): js.Promise[Signature] = js.native
-    def signDetached(privateKeys: js.Array[js.Any], signature: Signature, date: Date): js.Promise[Signature] = js.native
-    def signDetached(privateKeys: js.Array[js.Any], signature: Signature, date: Date, userIds: js.Array[js.Any]): js.Promise[Signature] = js.native
+    def signDetached(privateKeys: js.Array[Any]): js.Promise[Signature] = js.native
+    def signDetached(privateKeys: js.Array[Any], signature: Unit, date: js.Date): js.Promise[Signature] = js.native
+    def signDetached(privateKeys: js.Array[Any], signature: Unit, date: js.Date, userIds: js.Array[Any]): js.Promise[Signature] = js.native
+    def signDetached(privateKeys: js.Array[Any], signature: Unit, date: Unit, userIds: js.Array[Any]): js.Promise[Signature] = js.native
+    def signDetached(privateKeys: js.Array[Any], signature: Signature): js.Promise[Signature] = js.native
+    def signDetached(privateKeys: js.Array[Any], signature: Signature, date: js.Date): js.Promise[Signature] = js.native
+    def signDetached(privateKeys: js.Array[Any], signature: Signature, date: js.Date, userIds: js.Array[Any]): js.Promise[Signature] = js.native
+    def signDetached(privateKeys: js.Array[Any], signature: Signature, date: Unit, userIds: js.Array[Any]): js.Promise[Signature] = js.native
     
     /**
       * Unwrap compressed message
@@ -196,10 +194,10 @@ object message {
       * @param streaming (optional) whether to process data as a stream
       * @returns list of signer's keyid and validity of signature
       */
-    def verify(keys: js.Array[js.Any]): js.Promise[js.Array[Keyid]] = js.native
-    def verify(keys: js.Array[js.Any], date: Unit, streaming: Boolean): js.Promise[js.Array[Keyid]] = js.native
-    def verify(keys: js.Array[js.Any], date: Date): js.Promise[js.Array[Keyid]] = js.native
-    def verify(keys: js.Array[js.Any], date: Date, streaming: Boolean): js.Promise[js.Array[Keyid]] = js.native
+    def verify(keys: js.Array[Any]): js.Promise[js.Array[Keyid]] = js.native
+    def verify(keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Keyid]] = js.native
+    def verify(keys: js.Array[Any], date: js.Date, streaming: Boolean): js.Promise[js.Array[Keyid]] = js.native
+    def verify(keys: js.Array[Any], date: Unit, streaming: Boolean): js.Promise[js.Array[Keyid]] = js.native
     
     /**
       * Verify detached message signature
@@ -208,8 +206,8 @@ object message {
       * @param date Verify the signature against the given date, i.e. check signature creation time < date < expiration time
       * @returns list of signer's keyid and validity of signature
       */
-    def verifyDetached(keys: js.Array[js.Any], signature: Signature): js.Promise[js.Array[Keyid]] = js.native
-    def verifyDetached(keys: js.Array[js.Any], signature: Signature, date: Date): js.Promise[js.Array[Keyid]] = js.native
+    def verifyDetached(keys: js.Array[Any], signature: Signature): js.Promise[js.Array[Keyid]] = js.native
+    def verifyDetached(keys: js.Array[Any], signature: Signature, date: js.Date): js.Promise[js.Array[Keyid]] = js.native
   }
   
   /**
@@ -223,10 +221,10 @@ object message {
     */
   inline def createSignaturePackets(
     literalDataPacket: Literal,
-    privateKeys: js.Array[js.Any],
+    privateKeys: js.Array[Any],
     signature: Signature,
-    date: Date,
-    userIds: js.Array[js.Any]
+    date: js.Date,
+    userIds: js.Array[Any]
   ): js.Promise[List] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSignaturePackets")(literalDataPacket.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[List]]
   
   /**
@@ -240,9 +238,9 @@ object message {
     */
   inline def createVerificationObject(
     signature: typings.openpgp.mod.packet.Signature,
-    literalDataList: js.Array[js.Any],
-    keys: js.Array[js.Any],
-    date: Date
+    literalDataList: js.Array[Any],
+    keys: js.Array[Any],
+    date: js.Date
   ): js.Promise[js.Array[Keyid]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerificationObject")(signature.asInstanceOf[js.Any], literalDataList.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Keyid]]]
   
   /**
@@ -254,12 +252,7 @@ object message {
     *        i.e. check signature creation time < date < expiration time
     * @returns list of signer's keyid and validity of signature
     */
-  inline def createVerificationObjects(
-    signatureList: js.Array[js.Any],
-    literalDataList: js.Array[js.Any],
-    keys: js.Array[js.Any],
-    date: Date
-  ): js.Promise[js.Array[Keyid]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerificationObjects")(signatureList.asInstanceOf[js.Any], literalDataList.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Keyid]]]
+  inline def createVerificationObjects(signatureList: js.Array[Any], literalDataList: js.Array[Any], keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Keyid]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerificationObjects")(signatureList.asInstanceOf[js.Any], literalDataList.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Keyid]]]
   
   /**
     * Encrypt a session key either with public keys, passwords, or both at once.
@@ -274,20 +267,16 @@ object message {
     * @returns new message with encrypted content
     */
   inline def encryptSessionKey(
-    sessionKey: Uint8Array,
+    sessionKey: js.typedarray.Uint8Array,
     symAlgo: String,
     aeadAlgo: String,
-    publicKeys: js.Array[js.Any],
-    passwords: js.Array[js.Any],
+    publicKeys: js.Array[Any],
+    passwords: js.Array[Any],
     wildcard: Boolean,
-    date: Date,
-    userIds: js.Array[js.Any]
+    date: js.Date,
+    userIds: js.Array[Any]
   ): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptSessionKey")(sessionKey.asInstanceOf[js.Any], symAlgo.asInstanceOf[js.Any], aeadAlgo.asInstanceOf[js.Any], publicKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any], wildcard.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
-  inline def fromBinary(bytes: ReadableStream[Uint8Array]): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Message]
-  inline def fromBinary(bytes: ReadableStream[Uint8Array], filename: String): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary(bytes: ReadableStream[Uint8Array], filename: String, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary(bytes: ReadableStream[Uint8Array], filename: Unit, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
   /**
     * creates new message object from binary data
     * @param bytes
@@ -296,46 +285,52 @@ object message {
     * @param type (optional) data packet type
     * @returns new message object
     */
-  inline def fromBinary(bytes: Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Message]
-  inline def fromBinary(bytes: Uint8Array, filename: String): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary(bytes: Uint8Array, filename: String, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary(bytes: Uint8Array, filename: Unit, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
-  
-  inline def fromBinary_binary(bytes: ReadableStream[Uint8Array], filename: String, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_binary(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_binary(bytes: ReadableStream[Uint8Array], filename: Unit, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_binary(bytes: ReadableStream[Uint8Array], filename: Unit, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_binary(bytes: Uint8Array, filename: String, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_binary(bytes: Uint8Array, filename: String, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_binary(bytes: Uint8Array, filename: Unit, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_binary(bytes: Uint8Array, filename: Unit, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  
-  inline def fromBinary_mime(bytes: ReadableStream[Uint8Array], filename: String, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_mime(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_mime(bytes: ReadableStream[Uint8Array], filename: Unit, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_mime(bytes: ReadableStream[Uint8Array], filename: Unit, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_mime(bytes: Uint8Array, filename: String, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_mime(bytes: Uint8Array, filename: String, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_mime(bytes: Uint8Array, filename: Unit, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_mime(bytes: Uint8Array, filename: Unit, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  
-  inline def fromBinary_text(bytes: ReadableStream[Uint8Array], filename: String, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_text(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_text(bytes: ReadableStream[Uint8Array], filename: Unit, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_text(bytes: ReadableStream[Uint8Array], filename: Unit, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_text(bytes: Uint8Array, filename: String, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_text(bytes: Uint8Array, filename: String, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_text(bytes: Uint8Array, filename: Unit, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_text(bytes: Uint8Array, filename: Unit, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  
-  inline def fromBinary_utf8(bytes: ReadableStream[Uint8Array], filename: String, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_utf8(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_utf8(bytes: ReadableStream[Uint8Array], filename: Unit, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_utf8(bytes: ReadableStream[Uint8Array], filename: Unit, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_utf8(bytes: Uint8Array, filename: String, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_utf8(bytes: Uint8Array, filename: String, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_utf8(bytes: Uint8Array, filename: Unit, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromBinary_utf8(bytes: Uint8Array, filename: Unit, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(bytes: js.typedarray.Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Message]
+  inline def fromBinary(bytes: js.typedarray.Uint8Array, filename: String): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(bytes: js.typedarray.Uint8Array, filename: String, date: js.Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(
+    bytes: js.typedarray.Uint8Array,
+    filename: String,
+    date: js.Date,
+    `type`: utf8 | binary | text | mime
+  ): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(bytes: js.typedarray.Uint8Array, filename: String, date: Unit, `type`: utf8 | binary | text | mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(bytes: js.typedarray.Uint8Array, filename: Unit, date: js.Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(
+    bytes: js.typedarray.Uint8Array,
+    filename: Unit,
+    date: js.Date,
+    `type`: utf8 | binary | text | mime
+  ): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(bytes: js.typedarray.Uint8Array, filename: Unit, date: Unit, `type`: utf8 | binary | text | mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(bytes: ReadableStream[js.typedarray.Uint8Array]): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Message]
+  inline def fromBinary(bytes: ReadableStream[js.typedarray.Uint8Array], filename: String): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(bytes: ReadableStream[js.typedarray.Uint8Array], filename: String, date: js.Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(
+    bytes: ReadableStream[js.typedarray.Uint8Array],
+    filename: String,
+    date: js.Date,
+    `type`: utf8 | binary | text | mime
+  ): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(
+    bytes: ReadableStream[js.typedarray.Uint8Array],
+    filename: String,
+    date: Unit,
+    `type`: utf8 | binary | text | mime
+  ): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(bytes: ReadableStream[js.typedarray.Uint8Array], filename: Unit, date: js.Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(
+    bytes: ReadableStream[js.typedarray.Uint8Array],
+    filename: Unit,
+    date: js.Date,
+    `type`: utf8 | binary | text | mime
+  ): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromBinary(
+    bytes: ReadableStream[js.typedarray.Uint8Array],
+    filename: Unit,
+    date: Unit,
+    `type`: utf8 | binary | text | mime
+  ): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(bytes.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
   
   /**
     * creates new message object from text
@@ -347,59 +342,31 @@ object message {
     */
   inline def fromText(text: String): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[Message]
   inline def fromText(text: String, filename: String): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText(text: String, filename: String, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText(text: String, filename: Unit, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: String, filename: String, date: js.Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: String, filename: String, date: js.Date, `type`: utf8 | binary | text | mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: String, filename: String, date: Unit, `type`: utf8 | binary | text | mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: String, filename: Unit, date: js.Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: String, filename: Unit, date: js.Date, `type`: utf8 | binary | text | mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: String, filename: Unit, date: Unit, `type`: utf8 | binary | text | mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
   inline def fromText(text: ReadableStream[String]): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[Message]
   inline def fromText(text: ReadableStream[String], filename: String): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText(text: ReadableStream[String], filename: String, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText(text: ReadableStream[String], filename: Unit, date: Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: ReadableStream[String], filename: String, date: js.Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: ReadableStream[String], filename: String, date: js.Date, `type`: utf8 | binary | text | mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: ReadableStream[String], filename: String, date: Unit, `type`: utf8 | binary | text | mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: ReadableStream[String], filename: Unit, date: js.Date): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: ReadableStream[String], filename: Unit, date: js.Date, `type`: utf8 | binary | text | mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
+  inline def fromText(text: ReadableStream[String], filename: Unit, date: Unit, `type`: utf8 | binary | text | mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
   
-  inline def fromText_binary(text: String, filename: String, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_binary(text: String, filename: String, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_binary(text: String, filename: Unit, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_binary(text: String, filename: Unit, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_binary(text: ReadableStream[String], filename: String, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_binary(text: ReadableStream[String], filename: String, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_binary(text: ReadableStream[String], filename: Unit, date: Unit, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_binary(text: ReadableStream[String], filename: Unit, date: Date, `type`: binary): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  
-  inline def fromText_mime(text: String, filename: String, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_mime(text: String, filename: String, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_mime(text: String, filename: Unit, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_mime(text: String, filename: Unit, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_mime(text: ReadableStream[String], filename: String, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_mime(text: ReadableStream[String], filename: String, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_mime(text: ReadableStream[String], filename: Unit, date: Unit, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_mime(text: ReadableStream[String], filename: Unit, date: Date, `type`: mime): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  
-  inline def fromText_text(text: String, filename: String, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_text(text: String, filename: String, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_text(text: String, filename: Unit, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_text(text: String, filename: Unit, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_text(text: ReadableStream[String], filename: String, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_text(text: ReadableStream[String], filename: String, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_text(text: ReadableStream[String], filename: Unit, date: Unit, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_text(text: ReadableStream[String], filename: Unit, date: Date, `type`: text): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  
-  inline def fromText_utf8(text: String, filename: String, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_utf8(text: String, filename: String, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_utf8(text: String, filename: Unit, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_utf8(text: String, filename: Unit, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_utf8(text: ReadableStream[String], filename: String, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_utf8(text: ReadableStream[String], filename: String, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_utf8(text: ReadableStream[String], filename: Unit, date: Unit, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  inline def fromText_utf8(text: ReadableStream[String], filename: Unit, date: Date, `type`: utf8): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], date.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Message]
-  
-  inline def read(input: ReadableStream[Uint8Array]): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
-  inline def read(input: ReadableStream[Uint8Array], fromStream: Boolean): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], fromStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   /**
     * reads an OpenPGP message as byte array and returns a message object
     * @param input binary message
     * @param fromStream whether the message was created from a Stream
     * @returns new message object
     */
-  inline def read(input: Uint8Array): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
-  inline def read(input: Uint8Array, fromStream: Boolean): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], fromStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
+  inline def read(input: js.typedarray.Uint8Array): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
+  inline def read(input: js.typedarray.Uint8Array, fromStream: Boolean): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], fromStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
+  inline def read(input: ReadableStream[js.typedarray.Uint8Array]): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
+  inline def read(input: ReadableStream[js.typedarray.Uint8Array], fromStream: Boolean): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], fromStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
   /**
     * reads an OpenPGP armored message and returns a message object

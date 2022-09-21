@@ -19,7 +19,7 @@ object Validator {
   object IsObjectValidator {
     
     inline def apply(
-      validate: (/* value */ js.Any, /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ js.Any, Unit]) => Unit,
+      validate: (/* value */ Any, /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ Any, Unit]) => Unit,
       withCustom: ValidateFn => IsObjectValidator,
       withOptional: (String, Validatable) => IsObjectValidator,
       withRequired: (String, Validatable) => IsObjectValidator
@@ -41,8 +41,8 @@ object Validator {
   trait Validatable extends StObject {
     
     def validate(
-      value: js.Any,
-      onError: js.Function3[/* message */ String, /* childName */ String, /* childValie */ js.Any, Unit]
+      value: Any,
+      onError: js.Function3[/* message */ String, /* childName */ String, /* childValie */ Any, Unit]
     ): Unit
     @JSName("validate")
     var validate_Original: ValidateFn
@@ -50,7 +50,7 @@ object Validator {
   object Validatable {
     
     inline def apply(
-      validate: (/* value */ js.Any, /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ js.Any, Unit]) => Unit
+      validate: (/* value */ Any, /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ Any, Unit]) => Unit
     ): Validatable = {
       val __obj = js.Dynamic.literal(validate = js.Any.fromFunction2(validate))
       __obj.asInstanceOf[Validatable]
@@ -59,14 +59,14 @@ object Validator {
     extension [Self <: Validatable](x: Self) {
       
       inline def setValidate(
-        value: (/* value */ js.Any, /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ js.Any, Unit]) => Unit
+        value: (/* value */ Any, /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ Any, Unit]) => Unit
       ): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     }
   }
   
   type ValidateFn = js.Function2[
-    /* value */ js.Any, 
-    /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ js.Any, Unit], 
+    /* value */ Any, 
+    /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ Any, Unit], 
     Unit
   ]
 }

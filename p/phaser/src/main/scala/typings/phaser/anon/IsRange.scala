@@ -45,7 +45,7 @@ object IsRange {
     
     inline def setParts(value: js.Array[Double]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
-    inline def setPartsVarargs(value: Double*): Self = StObject.set(x, "parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: Double*): Self = StObject.set(x, "parts", js.Array(value*))
     
     inline def setPrerelease(value: String): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
     

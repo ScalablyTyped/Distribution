@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDomainsResult extends StObject {
   
   /**
-    *  The returned list of  DomainSummary  objects. 
+    *  The returned list of DomainSummary objects. 
     */
   var domains: js.UndefOr[DomainSummaryList] = js.undefined
   
@@ -29,7 +29,7 @@ object ListDomainsResult {
     
     inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    inline def setDomainsVarargs(value: DomainSummary*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: DomainSummary*): Self = StObject.set(x, "domains", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

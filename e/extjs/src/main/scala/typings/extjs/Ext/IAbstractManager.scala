@@ -18,24 +18,20 @@ trait IAbstractManager
     * @returns Object The instance of whatever this manager is managing
     */
   var create: js.UndefOr[
-    js.Function2[
-      /* config */ js.UndefOr[js.Any], 
-      /* defaultType */ js.UndefOr[java.lang.String], 
-      js.Any
-    ]
+    js.Function2[/* config */ js.UndefOr[Any], /* defaultType */ js.UndefOr[java.lang.String], Any]
   ] = js.undefined
   
   /** [Method] Executes the specified function once for each item in the collection
     * @param fn Function The function to execute.
     * @param scope Object The scope to execute in. Defaults to this.
     */
-  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Returns an item by id
     * @param id String The id of the item
     * @returns Object The item, undefined if not found.
     */
-  var get: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], js.Any]] = js.undefined
+  var get: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], Any]] = js.undefined
   
   /** [Method] Gets the number of items in the collection
     * @returns Number The number of items in the collection.
@@ -56,8 +52,8 @@ trait IAbstractManager
   var onAvailable: js.UndefOr[
     js.Function3[
       /* id */ js.UndefOr[java.lang.String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -65,20 +61,20 @@ trait IAbstractManager
   /** [Method] Registers an item to be managed
     * @param item Object The item to register
     */
-  var register: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var register: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Registers a new item constructor keyed by a type key
     * @param type String The mnemonic string by which the class may be looked up.
     * @param cls Function The new instance class.
     */
   var registerType: js.UndefOr[
-    js.Function2[/* type */ js.UndefOr[java.lang.String], /* cls */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* type */ js.UndefOr[java.lang.String], /* cls */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] Unregisters an item by removing it from this manager
     * @param item Object The item to unregister
     */
-  var unregister: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var unregister: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IAbstractManager {
   
@@ -93,15 +89,15 @@ object IAbstractManager {
     
     inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    inline def setCreate(value: (/* config */ js.UndefOr[js.Any], /* defaultType */ js.UndefOr[java.lang.String]) => js.Any): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* config */ js.UndefOr[Any], /* defaultType */ js.UndefOr[java.lang.String]) => Any): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
     inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    inline def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
+    inline def setEach(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
     inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
-    inline def setGet(value: /* id */ js.UndefOr[java.lang.String] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* id */ js.UndefOr[java.lang.String] => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     inline def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
@@ -114,20 +110,20 @@ object IAbstractManager {
     inline def setIsRegisteredUndefined: Self = StObject.set(x, "isRegistered", js.undefined)
     
     inline def setOnAvailable(
-      value: (/* id */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* id */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "onAvailable", js.Any.fromFunction3(value))
     
     inline def setOnAvailableUndefined: Self = StObject.set(x, "onAvailable", js.undefined)
     
-    inline def setRegister(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+    inline def setRegister(value: /* item */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     
-    inline def setRegisterType(value: (/* type */ js.UndefOr[java.lang.String], /* cls */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "registerType", js.Any.fromFunction2(value))
+    inline def setRegisterType(value: (/* type */ js.UndefOr[java.lang.String], /* cls */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "registerType", js.Any.fromFunction2(value))
     
     inline def setRegisterTypeUndefined: Self = StObject.set(x, "registerType", js.undefined)
     
     inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
     
-    inline def setUnregister(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
+    inline def setUnregister(value: /* item */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
     
     inline def setUnregisterUndefined: Self = StObject.set(x, "unregister", js.undefined)
   }

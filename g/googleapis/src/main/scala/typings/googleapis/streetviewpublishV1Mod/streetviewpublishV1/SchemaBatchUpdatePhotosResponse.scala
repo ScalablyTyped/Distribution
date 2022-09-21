@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response to batch update of metadata of one or more Photos.
-  */
 trait SchemaBatchUpdatePhotosResponse extends StObject {
   
   /**
-    * List of results for each individual Photo updated, in the same order as
-    * the request.
+    * List of results for each individual Photo updated, in the same order as the request.
     */
   var results: js.UndefOr[js.Array[SchemaPhotoResponse]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaBatchUpdatePhotosResponse {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: SchemaPhotoResponse*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SchemaPhotoResponse*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

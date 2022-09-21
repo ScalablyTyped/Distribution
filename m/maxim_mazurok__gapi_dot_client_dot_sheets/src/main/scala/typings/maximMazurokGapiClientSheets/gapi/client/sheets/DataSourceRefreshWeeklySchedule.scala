@@ -25,7 +25,7 @@ object DataSourceRefreshWeeklySchedule {
     
     inline def setDaysOfWeekUndefined: Self = StObject.set(x, "daysOfWeek", js.undefined)
     
-    inline def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
+    inline def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value*))
     
     inline def setStartTime(value: TimeOfDay): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

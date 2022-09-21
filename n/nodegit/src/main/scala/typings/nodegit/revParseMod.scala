@@ -14,7 +14,7 @@ object revParseMod {
   
   @JSImport("nodegit/rev-parse", "Revparse")
   @js.native
-  class Revparse () extends StObject
+  open class Revparse () extends StObject
   /* static members */
   object Revparse {
     

@@ -40,7 +40,7 @@ object Allowedextensions {
     
     inline def setAllowed_extensions(value: js.Array[ExtensionID]): Self = StObject.set(x, "allowed_extensions", value.asInstanceOf[js.Any])
     
-    inline def setAllowed_extensionsVarargs(value: ExtensionID*): Self = StObject.set(x, "allowed_extensions", js.Array(value :_*))
+    inline def setAllowed_extensionsVarargs(value: ExtensionID*): Self = StObject.set(x, "allowed_extensions", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

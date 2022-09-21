@@ -14,7 +14,7 @@ trait DescribeAgentResponse extends StObject {
   /**
     * The time that the agent was activated (that is, created in your account).
     */
-  var CreationTime: js.UndefOr[Time] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The type of endpoint that your agent is connected to. If the endpoint is a VPC endpoint, the agent is not accessible over the public internet. 
@@ -22,9 +22,9 @@ trait DescribeAgentResponse extends StObject {
   var EndpointType: js.UndefOr[typings.awsSdk.datasyncMod.EndpointType] = js.undefined
   
   /**
-    * The time that the agent last connected to DataSyc.
+    * The time that the agent last connected to DataSync.
     */
-  var LastConnectionTime: js.UndefOr[Time] = js.undefined
+  var LastConnectionTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the agent.
@@ -54,7 +54,7 @@ object DescribeAgentResponse {
     
     inline def setAgentArnUndefined: Self = StObject.set(x, "AgentArn", js.undefined)
     
-    inline def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -62,7 +62,7 @@ object DescribeAgentResponse {
     
     inline def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
     
-    inline def setLastConnectionTime(value: Time): Self = StObject.set(x, "LastConnectionTime", value.asInstanceOf[js.Any])
+    inline def setLastConnectionTime(value: js.Date): Self = StObject.set(x, "LastConnectionTime", value.asInstanceOf[js.Any])
     
     inline def setLastConnectionTimeUndefined: Self = StObject.set(x, "LastConnectionTime", js.undefined)
     

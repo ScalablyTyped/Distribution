@@ -19,7 +19,7 @@ trait ConfigurationRecorderStatus extends StObject {
   /**
     * The time the recorder was last started.
     */
-  var lastStartTime: js.UndefOr[Date] = js.undefined
+  var lastStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The last (previous) status of the recorder.
@@ -29,12 +29,12 @@ trait ConfigurationRecorderStatus extends StObject {
   /**
     * The time when the status was last changed.
     */
-  var lastStatusChangeTime: js.UndefOr[Date] = js.undefined
+  var lastStatusChangeTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time the recorder was last stopped.
     */
-  var lastStopTime: js.UndefOr[Date] = js.undefined
+  var lastStopTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the configuration recorder.
@@ -63,19 +63,19 @@ object ConfigurationRecorderStatus {
     
     inline def setLastErrorMessageUndefined: Self = StObject.set(x, "lastErrorMessage", js.undefined)
     
-    inline def setLastStartTime(value: Date): Self = StObject.set(x, "lastStartTime", value.asInstanceOf[js.Any])
+    inline def setLastStartTime(value: js.Date): Self = StObject.set(x, "lastStartTime", value.asInstanceOf[js.Any])
     
     inline def setLastStartTimeUndefined: Self = StObject.set(x, "lastStartTime", js.undefined)
     
     inline def setLastStatus(value: RecorderStatus): Self = StObject.set(x, "lastStatus", value.asInstanceOf[js.Any])
     
-    inline def setLastStatusChangeTime(value: Date): Self = StObject.set(x, "lastStatusChangeTime", value.asInstanceOf[js.Any])
+    inline def setLastStatusChangeTime(value: js.Date): Self = StObject.set(x, "lastStatusChangeTime", value.asInstanceOf[js.Any])
     
     inline def setLastStatusChangeTimeUndefined: Self = StObject.set(x, "lastStatusChangeTime", js.undefined)
     
     inline def setLastStatusUndefined: Self = StObject.set(x, "lastStatus", js.undefined)
     
-    inline def setLastStopTime(value: Date): Self = StObject.set(x, "lastStopTime", value.asInstanceOf[js.Any])
+    inline def setLastStopTime(value: js.Date): Self = StObject.set(x, "lastStopTime", value.asInstanceOf[js.Any])
     
     inline def setLastStopTimeUndefined: Self = StObject.set(x, "lastStopTime", js.undefined)
     

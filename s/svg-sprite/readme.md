@@ -9,15 +9,15 @@ SVG sprites & stacks galore — A low-level Node.js module that takes a bunch of
 | ------------------ | :-------------: |
 | Full name          | svg-sprite |
 | Keywords           | icon, icons, svg, png, sprite, spritesheet, stack, generator, css, sass, less, stylus, stylesheet, inline, html, vector, rwd, retina, mustache, gulpfriendly |
-| # releases         | 0 |
-| # dependents       | 82 |
-| # downloads        | 4051754 |
-| # stars            | 24 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 460968.3333333333 |
+| # stars            | 1714.0 |
 
 ## Links
-- [Homepage](https://github.com/jkphl/svg-sprite)
-- [Bugs](https://github.com/jkphl/svg-sprite/issues)
-- [Repository](https://github.com/jkphl/svg-sprite)
+- [Homepage](https://github.com/svg-sprite/svg-sprite)
+- [Bugs](https://github.com/svg-sprite/svg-sprite/issues)
+- [Repository](https://github.com/svg-sprite/svg-sprite)
 - [Npm](https://www.npmjs.com/package/svg-sprite)
     
 

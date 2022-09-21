@@ -1,7 +1,7 @@
 
 # Scala.js typings for cytoscape-edgehandles
 
-Typings are for version 3.6
+Typings are for version 4.0
 
 ## Library description:
 Edge creation UI extension for Cytoscape
@@ -11,9 +11,9 @@ Edge creation UI extension for Cytoscape
 | Full name          | cytoscape-edgehandles |
 | Keywords           | cytoscape, cytoscape-extension |
 | # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 88284 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 20923.666666666668 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/cytoscape-edgehandles)

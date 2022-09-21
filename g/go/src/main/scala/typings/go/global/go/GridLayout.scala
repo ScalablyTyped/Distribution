@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This simple layout places all of the Parts in a grid-like arrangement, ordered, spaced apart,
   * and wrapping as needed.  It ignores any Links connecting the Nodes being laid out.
   */
-class GridLayout ()
+open class GridLayout ()
   extends typings.go.mod.GridLayout
 object GridLayout {
   

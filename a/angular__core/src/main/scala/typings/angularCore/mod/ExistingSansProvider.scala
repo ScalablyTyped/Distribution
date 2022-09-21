@@ -11,17 +11,17 @@ trait ExistingSansProvider
   /**
     * Existing `token` to return. (Equivalent to `injector.get(useExisting)`)
     */
-  var useExisting: js.Any
+  var useExisting: Any
 }
 object ExistingSansProvider {
   
-  inline def apply(useExisting: js.Any): ExistingSansProvider = {
+  inline def apply(useExisting: Any): ExistingSansProvider = {
     val __obj = js.Dynamic.literal(useExisting = useExisting.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExistingSansProvider]
   }
   
   extension [Self <: ExistingSansProvider](x: Self) {
     
-    inline def setUseExisting(value: js.Any): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
+    inline def setUseExisting(value: Any): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
   }
 }

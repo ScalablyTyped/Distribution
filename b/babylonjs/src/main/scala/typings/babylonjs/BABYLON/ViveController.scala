@@ -10,6 +10,18 @@ trait ViveController
      with WebVRController {
   
   /**
+    * Called once for each button that changed state since the last frame
+    * Vive mapping:
+    * 0: touchpad
+    * 1: trigger
+    * 2: left AND right buttons
+    * 3: menu button
+    * @param buttonIdx Which button index changed
+    * @param state New state of the button
+    */
+  /* protected */ def _handleButtonChange(buttonIdx: Double, state: ExtendedGamepadButton): Unit = js.native
+  
+  /**
     * Fired when the left button on this controller is modified
     */
   def onLeftButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native

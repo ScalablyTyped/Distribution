@@ -1,5 +1,6 @@
 package typings.grommet
 
+import typings.react.mod.ClassAttributes
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.FC
 import typings.react.mod.HTMLAttributes
@@ -12,9 +13,22 @@ object tableRowMod {
   
   @JSImport("grommet/components/TableRow", "TableRow")
   @js.native
-  val TableRow: FC[
-    TableRowProps & (DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement])
-  ] = js.native
+  val TableRow: FC[TableRowExtendedProps] = js.native
+  
+  trait TableRowExtendedProps
+    extends StObject
+       with TableRowProps
+       with ClassAttributes[HTMLTableRowElement]
+       with HTMLAttributes[HTMLTableRowElement]
+  object TableRowExtendedProps {
+    
+    inline def apply(): TableRowExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TableRowExtendedProps]
+    }
+  }
   
   trait TableRowProps extends StObject
+  
+  type htmlTableRowProps = DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement]
 }

@@ -1,16 +1,17 @@
 package typings.reactToastify
 
 import typings.react.mod.global.JSX.Element
-import typings.reactToastify.constantMod.DEFAULT
+import typings.reactToastify.constantMod.Default
 import typings.reactToastify.cssTransitionMod.CSSTransitionProps
 import typings.reactToastify.reactToastifyBooleans.`false`
-import typings.reactToastify.reactToastifyBooleans.`true`
 import typings.reactToastify.typesMod.Id
+import typings.reactToastify.typesMod.Toast
+import typings.reactToastify.typesMod.ToastItem
+import typings.reactToastify.typesMod.ToastItemStatus
 import typings.reactToastify.typesMod.ToastPosition
 import typings.reactToastify.typesMod.ToastTransitionProps
 import typings.reactToastify.typesMod.TypeOptions
 import typings.std.HTMLElement
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,11 +67,6 @@ object utilsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("react-toastify/dist/utils", "TYPE.DARK")
-    @js.native
-    def DARK: TypeOptions = js.native
-    inline def DARK_=(x: TypeOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK")(x.asInstanceOf[js.Any])
-    
     @JSImport("react-toastify/dist/utils", "TYPE.DEFAULT")
     @js.native
     def DEFAULT: TypeOptions = js.native
@@ -99,18 +95,14 @@ object utilsMod {
   
   inline def canBeRendered[T](content: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canBeRendered")(content.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("react-toastify/dist/utils", "canUseDom")
-  @js.native
-  val canUseDom: Boolean = js.native
-  
   inline def collapseToast(node: HTMLElement, done: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("collapseToast")(node.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def collapseToast(node: HTMLElement, done: js.Function0[Unit], duration: DEFAULT): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("collapseToast")(node.asInstanceOf[js.Any], done.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def collapseToast(node: HTMLElement, done: js.Function0[Unit], duration: Default): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("collapseToast")(node.asInstanceOf[js.Any], done.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def cssTransition(hasEnterExitDurationAppendPositionCollapseCollapseDuration: CSSTransitionProps): js.Function1[
-    /* hasChildrenPositionPreventExitTransitionDoneProps */ ToastTransitionProps, 
+  inline def cssTransition(hasEnterExitAppendPositionCollapseCollapseDuration: CSSTransitionProps): js.Function1[
+    /* hasChildrenPositionPreventExitTransitionDoneNodeRefIsIn */ ToastTransitionProps, 
     Element
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssTransition")(hasEnterExitDurationAppendPositionCollapseCollapseDuration.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* hasChildrenPositionPreventExitTransitionDoneProps */ ToastTransitionProps, 
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssTransition")(hasEnterExitAppendPositionCollapseCollapseDuration.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* hasChildrenPositionPreventExitTransitionDoneNodeRefIsIn */ ToastTransitionProps, 
     Element
   ]]
   
@@ -125,18 +117,18 @@ object utilsMod {
   inline def getAutoCloseDelay_false(toastAutoClose: `false`, containerAutoClose: Double): js.UndefOr[Double | `false`] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoCloseDelay")(toastAutoClose.asInstanceOf[js.Any], containerAutoClose.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | `false`]]
   inline def getAutoCloseDelay_false(toastAutoClose: `false`, containerAutoClose: `false`): js.UndefOr[Double | `false`] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoCloseDelay")(toastAutoClose.asInstanceOf[js.Any], containerAutoClose.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | `false`]]
   
-  inline def hasToastId(): js.UndefOr[String | Double | `true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasToastId")().asInstanceOf[js.UndefOr[String | Double | `true`]]
-  inline def hasToastId(toastId: Id): js.UndefOr[String | Double | `true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasToastId")(toastId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Double | `true`]]
+  inline def isBool(v: Any): /* is std.Boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBool")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.Boolean */ Boolean]
   
-  inline def isBool(v: js.Any): /* is std.Boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBool")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.Boolean */ Boolean]
+  inline def isFn(v: Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFn")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
-  inline def isFn(v: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFn")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
+  inline def isNum(v: Any): /* is std.Number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNum")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.Number */ Boolean]
   
-  inline def isNum(v: js.Any): /* is std.Number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNum")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.Number */ Boolean]
+  inline def isStr(v: Any): /* is std.String */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStr")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.String */ Boolean]
   
-  inline def isStr(v: js.Any): /* is std.String */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStr")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.String */ Boolean]
+  inline def isToastIdValid(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isToastIdValid")().asInstanceOf[Boolean]
+  inline def isToastIdValid(toastId: Id): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isToastIdValid")(toastId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def objectValues[T](obj: Record[String, T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectValues")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def parseClassName(v: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseClassName")(v.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def parseClassName(v: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseClassName")(v.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def toToastItem(toast: Toast, status: ToastItemStatus): ToastItem[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("toToastItem")(toast.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[ToastItem[js.Object]]
 }

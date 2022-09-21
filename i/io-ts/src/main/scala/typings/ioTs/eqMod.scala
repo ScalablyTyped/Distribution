@@ -23,11 +23,11 @@ object eqMod {
   
   @JSImport("io-ts/lib/Eq", "UnknownArray")
   @js.native
-  val UnknownArray: Eq[js.Array[js.Any]] = js.native
+  val UnknownArray: Eq[js.Array[Any]] = js.native
   
   @JSImport("io-ts/lib/Eq", "UnknownRecord")
   @js.native
-  val UnknownRecord: Eq[Record[String, js.Any]] = js.native
+  val UnknownRecord: Eq[Record[String, Any]] = js.native
   
   @JSImport("io-ts/lib/Eq", "WithRefine")
   @js.native
@@ -43,7 +43,7 @@ object eqMod {
   @js.native
   val boolean: Eq[Boolean] = js.native
   
-  inline def intersect[B](right: Eq[B]): js.Function1[/* left */ Eq[js.Any], Eq[js.Any & B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(right.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* left */ Eq[js.Any], Eq[js.Any & B]]]
+  inline def intersect[B](right: Eq[B]): js.Function1[/* left */ Eq[Any], Eq[Any & B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(right.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* left */ Eq[Any], Eq[Any & B]]]
   
   inline def `lazy`[A](f: js.Function0[Eq[A]]): Eq[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(f.asInstanceOf[js.Any]).asInstanceOf[Eq[A]]
   
@@ -71,29 +71,45 @@ object eqMod {
     ]
   ]]
   
+  inline def readonly[A](eq: Eq[A]): Eq[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("readonly")(eq.asInstanceOf[js.Any]).asInstanceOf[Eq[A]]
+  
   inline def record[A](codomain: Eq[A]): Eq[Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("record")(codomain.asInstanceOf[js.Any]).asInstanceOf[Eq[Record[String, A]]]
   
   @JSImport("io-ts/lib/Eq", "string")
   @js.native
   val string: Eq[String] = js.native
   
+  inline def struct[A](
+    eqs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof A ]: fp-ts.fp-ts/lib/Eq.Eq<A[K]>}
+    */ typings.ioTs.ioTsStrings.struct & TopLevel[A]
+  ): Eq[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof A ]: A[K]}
+    */ typings.ioTs.ioTsStrings.struct & TopLevel[A]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("struct")(eqs.asInstanceOf[js.Any]).asInstanceOf[Eq[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof A ]: A[K]}
+    */ typings.ioTs.ioTsStrings.struct & TopLevel[A]
+  ]]
+  
   inline def sum[T /* <: String */](tag: T): js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof any ]: fp-ts.fp-ts/lib/Eq.Eq<any[K] & std.Record<T, K>>}
-    */ /* members */ typings.ioTs.ioTsStrings.sum & TopLevel[js.Any], 
+    */ /* members */ typings.ioTs.ioTsStrings.sum & TopLevel[Any], 
     Eq[
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof any ]: fp-ts.fp-ts/lib/Eq.Eq<any[K] & std.Record<T, K>>}
-    */ /* members */ typings.ioTs.ioTsStrings.sum & TopLevel[js.Any], 
+    */ /* members */ typings.ioTs.ioTsStrings.sum & TopLevel[Any], 
     Eq[
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
     ]
   ]]
   
-  inline def tuple[A /* <: js.Array[js.Any] */](
+  inline def tuple[A /* <: js.Array[Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param components because its type {[ K in keyof A ]: Eq<A[K]>} is not an array type */ components: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof A ]: fp-ts.fp-ts/lib/Eq.Eq<A[K]>}
     */ typings.ioTs.ioTsStrings.tuple & TopLevel[A]
@@ -105,15 +121,15 @@ object eqMod {
     */ typings.ioTs.ioTsStrings.`type` & TopLevel[A]
   ): Eq[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: A[K]}
+  {[ K_1 in keyof A ]: A[K_1]}
     */ typings.ioTs.ioTsStrings.`type` & TopLevel[A]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(eqs.asInstanceOf[js.Any]).asInstanceOf[Eq[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: A[K]}
+  {[ K_1 in keyof A ]: A[K_1]}
     */ typings.ioTs.ioTsStrings.`type` & TopLevel[A]
   ]]
   
-  type TypeOf[E] = js.Any
+  type TypeOf[E] = Any
   
   type URI = typings.fpTs.eqMod.URI
 }

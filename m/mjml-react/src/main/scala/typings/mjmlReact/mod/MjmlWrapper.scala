@@ -7,19 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mjml-react", "MjmlWrapper")
 @js.native
-class MjmlWrapper protected ()
-  extends Component[
-      MjmlWrapperProps & RequiredChildrenProps & BorderProps & PaddingProps & ClassNameProps, 
-      js.Object, 
-      js.Any
-    ] {
-  def this(props: MjmlWrapperProps & RequiredChildrenProps & BorderProps & PaddingProps & ClassNameProps) = this()
+open class MjmlWrapper protected ()
+  extends Component[MjmlWrapperProps & BorderProps & PaddingProps & ClassNameProps, js.Object, Any] {
+  def this(props: MjmlWrapperProps & BorderProps & PaddingProps & ClassNameProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(
-    props: MjmlWrapperProps & RequiredChildrenProps & BorderProps & PaddingProps & ClassNameProps,
-    context: js.Any
-  ) = this()
+  def this(props: MjmlWrapperProps & BorderProps & PaddingProps & ClassNameProps, context: Any) = this()
 }

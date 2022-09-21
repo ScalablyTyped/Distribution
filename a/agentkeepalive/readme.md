@@ -1,7 +1,7 @@
 
 # Scala.js typings for agentkeepalive
 
-Typings are for version 4.1.3
+Typings are for version 4.2.1
 
 ## Library description:
 Missing keepalive http.Agent
@@ -10,15 +10,12 @@ Missing keepalive http.Agent
 | ------------------ | :-------------: |
 | Full name          | agentkeepalive |
 | Keywords           | http, https, agent, keepalive, agentkeepalive, HttpAgent, HttpsAgent |
-| # releases         | 6 |
-| # dependents       | 298 |
-| # downloads        | 181732718 |
-| # stars            | 5 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 3.5166617E7 |
+| # stars            | 520.0 |
 
 ## Links
-- [Homepage](https://github.com/node-modules/agentkeepalive#readme)
-- [Bugs](https://github.com/node-modules/agentkeepalive/issues)
-- [Repository](https://github.com/node-modules/agentkeepalive)
 - [Npm](https://www.npmjs.com/package/agentkeepalive)
     
 

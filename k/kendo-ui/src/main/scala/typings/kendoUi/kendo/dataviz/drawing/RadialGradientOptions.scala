@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RadialGradientOptions extends StObject {
   
-  var center: js.UndefOr[js.Any | Point] = js.undefined
+  var center: js.UndefOr[Any | Point] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
   var radius: js.UndefOr[Double] = js.undefined
   
-  var stops: js.UndefOr[js.Any] = js.undefined
+  var stops: js.UndefOr[Any] = js.undefined
 }
 object RadialGradientOptions {
   
@@ -24,7 +24,7 @@ object RadialGradientOptions {
   
   extension [Self <: RadialGradientOptions](x: Self) {
     
-    inline def setCenter(value: js.Any | Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Any | Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
@@ -36,7 +36,7 @@ object RadialGradientOptions {
     
     inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    inline def setStops(value: js.Any): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: Any): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ThemeEffectScheme extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -15,16 +15,16 @@ trait ThemeEffectScheme extends StObject {
   /* private */ @JSName("Office.ThemeEffectScheme_typekey")
   var OfficeDotThemeEffectScheme_typekey: ThemeEffectScheme
   
-  val Parent: js.Any
+  val Parent: Any
 }
 object ThemeEffectScheme {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     Load: String => Unit,
     OfficeDotThemeEffectScheme_typekey: ThemeEffectScheme,
-    Parent: js.Any
+    Parent: Any
   ): ThemeEffectScheme = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Load = js.Any.fromFunction1(Load), Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Office.ThemeEffectScheme_typekey")(OfficeDotThemeEffectScheme_typekey.asInstanceOf[js.Any])
@@ -33,7 +33,7 @@ object ThemeEffectScheme {
   
   extension [Self <: ThemeEffectScheme](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -41,6 +41,6 @@ object ThemeEffectScheme {
     
     inline def setOfficeDotThemeEffectScheme_typekey(value: ThemeEffectScheme): Self = StObject.set(x, "Office.ThemeEffectScheme_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,5 @@
 package typings.blueprintjsDatetime
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,14 +8,14 @@ object monthAndYearMod {
   
   @JSImport("@blueprintjs/datetime/lib/esm/common/monthAndYear", "MonthAndYear")
   @js.native
-  class MonthAndYear () extends StObject {
+  open class MonthAndYear () extends StObject {
     def this(month: Double) = this()
     def this(month: Double, year: Double) = this()
     def this(month: Unit, year: Double) = this()
     
-    /* private */ var date: js.Any = js.native
+    /* private */ var date: Any = js.native
     
-    def getFullDate(): Date = js.native
+    def getFullDate(): js.Date = js.native
     
     def getMonth(): Double = js.native
     
@@ -41,6 +40,6 @@ object monthAndYearMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromDate(date: Date): MonthAndYear = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[MonthAndYear]
+    inline def fromDate(date: js.Date): MonthAndYear = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[MonthAndYear]
   }
 }

@@ -29,7 +29,7 @@ object VaultNotificationConfig {
     
     inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
-    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "Events", js.Array(value*))
     
     inline def setSNSTopic(value: String): Self = StObject.set(x, "SNSTopic", value.asInstanceOf[js.Any])
     

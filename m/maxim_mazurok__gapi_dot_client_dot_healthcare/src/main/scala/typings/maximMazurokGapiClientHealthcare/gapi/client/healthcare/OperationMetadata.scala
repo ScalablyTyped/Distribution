@@ -20,7 +20,10 @@ trait OperationMetadata extends StObject {
   /** The time at which execution was completed. */
   var endTime: js.UndefOr[String] = js.undefined
   
-  /** A link to audit and error logs in the log viewer. Error logs are generated only by some operations, listed at [Viewing logs](/healthcare/docs/how-tos/logging). */
+  /**
+    * A link to audit and error logs in the log viewer. Error logs are generated only by some operations, listed at [Viewing error logs in Cloud
+    * Logging](https://cloud.google.com/healthcare/docs/how-tos/logging).
+    */
   var logsUrl: js.UndefOr[String] = js.undefined
 }
 object OperationMetadata {

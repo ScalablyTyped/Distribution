@@ -23,7 +23,7 @@ trait LegendItemNameCfg extends StObject {
     * 文本配置项
     * @type {ShapeAttrs}
     */
-  var style: js.UndefOr[ShapeAttrs] = js.undefined
+  var style: js.UndefOr[ShapeAttrs | ShapeAttrsCallback] = js.undefined
 }
 object LegendItemNameCfg {
   
@@ -34,7 +34,7 @@ object LegendItemNameCfg {
   
   extension [Self <: LegendItemNameCfg](x: Self) {
     
-    inline def setFormatter(value: (/* text */ String, /* item */ ListItem, /* index */ Double) => js.Any): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
+    inline def setFormatter(value: (/* text */ String, /* item */ ListItem, /* index */ Double) => Any): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
@@ -42,7 +42,9 @@ object LegendItemNameCfg {
     
     inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     
-    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs | ShapeAttrsCallback): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleFunction3(value: (/* item */ Any, /* index */ Double, /* items */ js.Array[Any]) => ShapeAttrs): Self = StObject.set(x, "style", js.Any.fromFunction3(value))
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }

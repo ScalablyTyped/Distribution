@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.ModalDialog")
 @js.native
-class ModalDialog ()
+open class ModalDialog ()
   extends typings.reactBootstrap.mod.ModalDialog

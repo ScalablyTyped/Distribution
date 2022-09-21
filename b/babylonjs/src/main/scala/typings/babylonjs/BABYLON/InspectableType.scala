@@ -11,6 +11,14 @@ sealed trait InspectableType extends StObject
 object InspectableType extends StObject {
   
   /**
+    * Button
+    */
+  @js.native
+  sealed trait Button
+    extends StObject
+       with InspectableType
+  
+  /**
     * Checkbox for booleans
     */
   @js.native
@@ -23,6 +31,22 @@ object InspectableType extends StObject {
     */
   @js.native
   sealed trait Color3
+    extends StObject
+       with InspectableType
+  
+  /**
+    * File button
+    */
+  @js.native
+  sealed trait FileButton
+    extends StObject
+       with InspectableType
+  
+  /**
+    * Options
+    */
+  @js.native
+  sealed trait Options
     extends StObject
        with InspectableType
   
@@ -47,6 +71,14 @@ object InspectableType extends StObject {
     */
   @js.native
   sealed trait String
+    extends StObject
+       with InspectableType
+  
+  /**
+    * Tab
+    */
+  @js.native
+  sealed trait Tab
     extends StObject
        with InspectableType
   

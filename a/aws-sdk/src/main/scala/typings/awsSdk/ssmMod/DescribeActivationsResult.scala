@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeActivationsResult extends StObject {
   
   /**
-    * A list of activations for your AWS account.
+    * A list of activations for your Amazon Web Services account.
     */
   var ActivationList: js.UndefOr[typings.awsSdk.ssmMod.ActivationList] = js.undefined
   
@@ -29,7 +29,7 @@ object DescribeActivationsResult {
     
     inline def setActivationListUndefined: Self = StObject.set(x, "ActivationList", js.undefined)
     
-    inline def setActivationListVarargs(value: Activation*): Self = StObject.set(x, "ActivationList", js.Array(value :_*))
+    inline def setActivationListVarargs(value: Activation*): Self = StObject.set(x, "ActivationList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

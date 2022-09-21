@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sectionlistMod {
   
-  @JSImport("@lumino/datagrid/lib/sectionlist", "SectionList")
+  @JSImport("@lumino/datagrid/types/sectionlist", "SectionList")
   @js.native
-  class SectionList protected () extends StObject {
+  open class SectionList protected () extends StObject {
     /**
       * Construct a new section list.
       *
@@ -17,13 +17,24 @@ object sectionlistMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _count: js.Any = js.native
+    /* private */ var _count: Any = js.native
     
-    /* private */ var _defaultSize: js.Any = js.native
+    /* private */ var _defaultSize: Any = js.native
     
-    /* private */ var _length: js.Any = js.native
+    /* private */ var _length: Any = js.native
     
-    /* private */ var _sections: js.Any = js.native
+    /* private */ var _minimumSize: Any = js.native
+    
+    /* private */ var _sections: Any = js.native
+    
+    /**
+      * Clamp a size to the minimum section size
+      *
+      * @param size - The size to clamp.
+      *
+      * @returns The size or the section minimum size, whichever is larger
+      */
+    def clampSize(size: Double): Double = js.native
     
     /**
       * Remove all sections from the list.
@@ -108,6 +119,20 @@ object sectionlistMod {
       * Constant.
       */
     val length: Double = js.native
+    
+    /**
+      * Get the minimum size of sections in the list.
+      *
+      * #### Complexity
+      * Constant.
+      */
+    /**
+      * Set the minimum size of sections in the list.
+      *
+      * #### Complexity
+      * Linear on the number of resized sections.
+      */
+    var minimumSize: Double = js.native
     
     /**
       * Move sections within the list.
@@ -214,6 +239,11 @@ object sectionlistMod {
         * The size of new sections added to the list.
         */
       var defaultSize: Double
+      
+      /**
+        * The minimum size of the section list.
+        */
+      var minimumSize: js.UndefOr[Double] = js.undefined
     }
     object IOptions {
       
@@ -225,6 +255,10 @@ object sectionlistMod {
       extension [Self <: IOptions](x: Self) {
         
         inline def setDefaultSize(value: Double): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
+        
+        inline def setMinimumSize(value: Double): Self = StObject.set(x, "minimumSize", value.asInstanceOf[js.Any])
+        
+        inline def setMinimumSizeUndefined: Self = StObject.set(x, "minimumSize", js.undefined)
       }
     }
   }

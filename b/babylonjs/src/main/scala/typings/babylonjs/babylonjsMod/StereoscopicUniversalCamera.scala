@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Cameras/index", "StereoscopicUniversalCamera")
 @js.native
-class StereoscopicUniversalCamera protected ()
+open class StereoscopicUniversalCamera protected ()
   extends typings.babylonjs.stereoscopicIndexMod.StereoscopicUniversalCamera {
   /**
     * Creates a new StereoscopicUniversalCamera
@@ -18,6 +18,7 @@ class StereoscopicUniversalCamera protected ()
     * @param isStereoscopicSideBySide defines is stereoscopic is done side by side or over under
     * @param scene defines the hosting scene
     */
+  def this(name: String, position: Vector3, interaxialDistance: Double, isStereoscopicSideBySide: Boolean) = this()
   def this(
     name: String,
     position: Vector3,

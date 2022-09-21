@@ -9,7 +9,7 @@ trait ReprocessingSummary extends StObject {
   /**
     * The time the pipeline reprocessing was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.undefined
+  var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The reprocessingId returned by StartPipelineReprocessing.
@@ -30,7 +30,7 @@ object ReprocessingSummary {
   
   extension [Self <: ReprocessingSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     

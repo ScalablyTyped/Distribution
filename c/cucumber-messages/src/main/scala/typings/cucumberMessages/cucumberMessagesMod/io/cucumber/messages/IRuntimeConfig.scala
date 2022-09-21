@@ -18,7 +18,7 @@ trait IRuntimeConfig extends StObject {
   
   /** RuntimeConfig maxParallel */
   var maxParallel: js.UndefOr[
-    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
+    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any) | Null
   ] = js.undefined
 }
 object IRuntimeConfig {
@@ -49,7 +49,7 @@ object IRuntimeConfig {
     inline def setIsStrictUndefined: Self = StObject.set(x, "isStrict", js.undefined)
     
     inline def setMaxParallel(
-      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
+      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any)
     ): Self = StObject.set(x, "maxParallel", value.asInstanceOf[js.Any])
     
     inline def setMaxParallelNull: Self = StObject.set(x, "maxParallel", null)

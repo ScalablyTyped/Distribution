@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "prosemirror-transform" : "1.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "prosemirror-transform" : "1.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

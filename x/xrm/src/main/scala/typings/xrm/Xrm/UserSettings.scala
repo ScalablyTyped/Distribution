@@ -125,11 +125,11 @@ object UserSettings {
     
     inline def setSecurityRolePrivileges(value: js.Array[String]): Self = StObject.set(x, "securityRolePrivileges", value.asInstanceOf[js.Any])
     
-    inline def setSecurityRolePrivilegesVarargs(value: String*): Self = StObject.set(x, "securityRolePrivileges", js.Array(value :_*))
+    inline def setSecurityRolePrivilegesVarargs(value: String*): Self = StObject.set(x, "securityRolePrivileges", js.Array(value*))
     
     inline def setSecurityRoles(value: js.Array[String]): Self = StObject.set(x, "securityRoles", value.asInstanceOf[js.Any])
     
-    inline def setSecurityRolesVarargs(value: String*): Self = StObject.set(x, "securityRoles", js.Array(value :_*))
+    inline def setSecurityRolesVarargs(value: String*): Self = StObject.set(x, "securityRoles", js.Array(value*))
     
     inline def setTransactionCurrency(value: LookupValue): Self = StObject.set(x, "transactionCurrency", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ProjectsResource extends StObject {
   
-  /** Fetch the representation of an existing Project. */
+  /** Fetches the representation of an existing Project. */
   def get(): Request[Project] = js.native
   def get(request: PrettyPrint): Request[Project] = js.native
 }

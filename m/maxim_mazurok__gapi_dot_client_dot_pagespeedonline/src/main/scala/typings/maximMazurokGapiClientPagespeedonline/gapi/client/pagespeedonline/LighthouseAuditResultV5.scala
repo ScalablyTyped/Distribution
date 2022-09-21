@@ -14,7 +14,7 @@ trait LighthouseAuditResultV5 extends StObject {
   var details: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseAuditResultV5 & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseAuditResultV5 & TopLevel[Any]
   ] = js.undefined
   
   /** The value that should be displayed on the UI for this audit. */
@@ -29,6 +29,9 @@ trait LighthouseAuditResultV5 extends StObject {
   /** The audit's id. */
   var id: js.UndefOr[String] = js.undefined
   
+  /** The unit of the numeric_value field. Used to format the numeric value for display. */
+  var numericUnit: js.UndefOr[String] = js.undefined
+  
   /**
     * A numeric value that has a meaning specific to the audit, e.g. the number of nodes in the DOM or the timestamp of a specific load event. More information can be found in the audit
     * details, if present.
@@ -36,7 +39,7 @@ trait LighthouseAuditResultV5 extends StObject {
   var numericValue: js.UndefOr[Double] = js.undefined
   
   /** The score of the audit, can be null. */
-  var score: js.UndefOr[js.Any] = js.undefined
+  var score: js.UndefOr[Any] = js.undefined
   
   /** The enumerated score display mode. */
   var scoreDisplayMode: js.UndefOr[String] = js.undefined
@@ -45,7 +48,7 @@ trait LighthouseAuditResultV5 extends StObject {
   var title: js.UndefOr[String] = js.undefined
   
   /** Possible warnings that occurred in the audit, can be null. */
-  var warnings: js.UndefOr[js.Any] = js.undefined
+  var warnings: js.UndefOr[Any] = js.undefined
 }
 object LighthouseAuditResultV5 {
   
@@ -63,7 +66,7 @@ object LighthouseAuditResultV5 {
     inline def setDetails(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseAuditResultV5 & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseAuditResultV5 & TopLevel[Any]
     ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
@@ -84,11 +87,15 @@ object LighthouseAuditResultV5 {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
+    inline def setNumericUnit(value: String): Self = StObject.set(x, "numericUnit", value.asInstanceOf[js.Any])
+    
+    inline def setNumericUnitUndefined: Self = StObject.set(x, "numericUnit", js.undefined)
+    
     inline def setNumericValue(value: Double): Self = StObject.set(x, "numericValue", value.asInstanceOf[js.Any])
     
     inline def setNumericValueUndefined: Self = StObject.set(x, "numericValue", js.undefined)
     
-    inline def setScore(value: js.Any): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Any): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     inline def setScoreDisplayMode(value: String): Self = StObject.set(x, "scoreDisplayMode", value.asInstanceOf[js.Any])
     
@@ -100,7 +107,7 @@ object LighthouseAuditResultV5 {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setWarnings(value: js.Any): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: Any): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
   }

@@ -5,64 +5,64 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type APIVersion = scala.Double
+type APIVersion = Double
 
-type Animation = scala.Double
+type Animation = Double
 
-type ContextMenuIcon = java.lang.String
+type ContextMenuIcon = String
 
-type ControlAnchor = scala.Double
+type ControlAnchor = Double
 
-type DrivingPolicy = scala.Double
+type DrivingPolicy = Double
 
-type GeolocationControl = typings.bmapgl.BMapGL.Control
+type GeolocationControl = Control
 
-type HighlightModes = scala.Double
+type HighlightModes = Double
 
-type LengthUnit = java.lang.String
+type LengthUnit = String
 
-type LineType = scala.Double
+type LineType = Double
 
-type MapTypeControl = typings.bmapgl.BMapGL.Control
+type MapTypeControl = Control
 
-type MapTypeControlType = scala.Double
+type MapTypeControlType = Double
 
-type MercatorProjection = typings.bmapgl.BMapGL.Projection
+type MercatorProjection = Projection
 
-type NavigationControl3D = typings.bmapgl.BMapGL.Control
+type NavigationControl3D = Control
 
-type NavigationControlType = scala.Double
+type NavigationControlType = Double
 
-type PanoramaControl = typings.bmapgl.BMapGL.Control
+type PanoramaControl = Control
 
-type PanoramaCoverageLayer = typings.bmapgl.BMapGL.TileLayer
+type PanoramaCoverageLayer = TileLayer
 
-type PanoramaPOIType = java.lang.String
+type PanoramaPOIType = String
 
-type PanoramaSceneType = java.lang.String
+type PanoramaSceneType = String
 
-type PerspectiveProjection = typings.bmapgl.BMapGL.Projection
+type PerspectiveProjection = Projection
 
-type PoiType = scala.Double
+type PoiType = Double
 
-type PointDensityType = scala.Double
+type PointDensityType = Double
 
-type RouteType = scala.Double
+type RouteType = Double
 
-type ServiceStatusCode = scala.Double
+type ServiceStatusCode = Double
 
-type ShapeType = scala.Double
+type ShapeType = Double
 
-type SizeType = scala.Double
+type SizeType = Double
 
-type StatusCode = scala.Double
+type StatusCode = Double
 
-type SymbolShapeType = scala.Double
+type SymbolShapeType = Double
 
-type TrafficLayer = typings.bmapgl.BMapGL.TileLayer
+type TrafficLayer = TileLayer
 
-type TransitPolicy = scala.Double
+type TransitPolicy = Double
 
-type ZoomControl = typings.bmapgl.BMapGL.Control
+type ZoomControl = Control
 
-type ZoomType = scala.Double
+type ZoomType = Double

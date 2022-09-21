@@ -10,10 +10,10 @@ Easily type math in your webapp
 | ------------------ | :-------------: |
 | Full name          | @edtr-io/mathquill |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 70475 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1322.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/edtr-io/mathquill#readme)

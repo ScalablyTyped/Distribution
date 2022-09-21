@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ActionHistoryDetails extends StObject {
   
   /**
-    *  The budget action resource. 
+    * The budget action resource. 
     */
   var Action: typings.awsSdk.budgetsMod.Action
   

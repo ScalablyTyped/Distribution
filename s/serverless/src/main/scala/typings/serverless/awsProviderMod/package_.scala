@@ -1,27 +1,55 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.serverless.serverlessStrings.Equalssign
+import typings.serverless.serverlessStrings.Greaterthansign
+import typings.serverless.serverlessStrings.GreaterthansignEqualssign
+import typings.serverless.serverlessStrings.Lessthansign
+import typings.serverless.serverlessStrings.LessthansignEqualssign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Authorizers = org.scalablytyped.runtime.StringDictionary[
-typings.serverless.awsProviderMod.CognitoAuthorizer | typings.serverless.awsProviderMod.OidcAuthorizer | typings.serverless.awsProviderMod.JwtAuthorizer]
+type Authorizers = StringDictionary[CognitoAuthorizer | OidcAuthorizer | JwtAuthorizer]
 
-type CloudFormationResources = org.scalablytyped.runtime.StringDictionary[typings.serverless.awsProviderMod.CloudFormationResource]
+type CloudFormationResources = StringDictionary[CloudFormationResource]
 
-type Custom = org.scalablytyped.runtime.StringDictionary[js.Any]
+type Credentials = StringDictionary[Any]
 
-type Detail = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
+type Custom = StringDictionary[Any]
 
-type Environment = org.scalablytyped.runtime.StringDictionary[js.Any]
+type Detail = StringDictionary[js.Array[String]]
 
-type Functions = org.scalablytyped.runtime.StringDictionary[typings.serverless.awsProviderMod.AwsFunction]
+type Environment = StringDictionary[Any]
 
-type Input = org.scalablytyped.runtime.StringDictionary[js.Any]
+/* Rewritten from type alias, can be one of: 
+  - scala.Null
+  - typings.serverless.serverlessStrings._empty
+  - java.lang.String
+  - typings.serverless.anon.Anythingbut
+  - typings.serverless.anon.Numeric
+  - typings.serverless.anon.Exists
+  - typings.serverless.anon.Prefix
+*/
+type Filter = _Filter | Null | String
 
-type Layers = org.scalablytyped.runtime.StringDictionary[typings.serverless.awsProviderMod.Layer]
+type Functions = StringDictionary[AwsFunctionHandler | AwsFunctionImage]
 
-type Outputs = org.scalablytyped.runtime.StringDictionary[typings.serverless.awsProviderMod.Output]
+type Input = StringDictionary[Any]
 
-type Tags = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type Layers = StringDictionary[Layer]
+
+type NumericFilter = (js.Tuple2[
+Equalssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign, 
+Double]) | (js.Tuple4[
+Greaterthansign | GreaterthansignEqualssign, 
+Double, 
+Lessthansign | LessthansignEqualssign, 
+Double])
+
+type Outputs = StringDictionary[Output]
+
+type ResourcesConditions = StringDictionary[Any]
+
+type Tags = StringDictionary[String]

@@ -12,7 +12,7 @@ trait RebalanceSlotsInGlobalReplicationGroupMessage extends StObject {
   var ApplyImmediately: Boolean
   
   /**
-    * The name of the Global Datastore
+    * The name of the Global datastore
     */
   var GlobalReplicationGroupId: String
 }

@@ -9,12 +9,12 @@ trait CreateTestGridUrlResult extends StObject {
   /**
     * The number of seconds the URL from CreateTestGridUrlResult$url stays active.
     */
-  var expires: js.UndefOr[DateTime] = js.undefined
+  var expires: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A signed URL, expiring in CreateTestGridUrlRequest$expiresInSeconds seconds, to be passed to a RemoteWebDriver. 
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[SensitiveString] = js.undefined
 }
 object CreateTestGridUrlResult {
   
@@ -25,11 +25,11 @@ object CreateTestGridUrlResult {
   
   extension [Self <: CreateTestGridUrlResult](x: Self) {
     
-    inline def setExpires(value: DateTime): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SensitiveString): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }

@@ -10,15 +10,12 @@ Simply beautiful open source icons
 | ------------------ | :-------------: |
 | Full name          | feather-icons |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 91 |
-| # downloads        | 1733909 |
-| # stars            | 7 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 231557.0 |
+| # stars            | 21860.0 |
 
 ## Links
-- [Homepage](https://github.com/feathericons/feather#readme)
-- [Bugs](https://github.com/feathericons/feather/issues)
-- [Repository](https://github.com/feathericons/feather)
 - [Npm](https://www.npmjs.com/package/feather-icons)
     
 

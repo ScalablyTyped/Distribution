@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("selenium-webdriver", "By")
 @js.native
-class By protected ()
+open class By protected ()
   extends typings.seleniumWebdriver.byMod.By {
   /**
     * @param {string} using the name of the location strategy to use.
@@ -59,8 +59,8 @@ object By {
     * @return {function(!./WebDriver): !./Promise}
     *     A new JavaScript-based locator function.
     */
-  inline def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("js")(script.asInstanceOf[js.Any], var_args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]]]
-  inline def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("js")(script.asInstanceOf[js.Any], var_args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]]]
+  inline def js_(script: String, var_args: Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("js")(List(script.asInstanceOf[js.Any]).`++`(var_args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[Any]]]
+  inline def js_(script: js.Function, var_args: Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("js")(List(script.asInstanceOf[js.Any]).`++`(var_args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[Any]]]
   
   /**
     * Locates link elements whose

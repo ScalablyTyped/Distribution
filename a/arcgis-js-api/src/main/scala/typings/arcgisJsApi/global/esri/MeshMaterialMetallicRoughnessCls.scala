@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterialMetallicRoughness.html)
   */
-class MeshMaterialMetallicRoughnessCls ()
+open class MeshMaterialMetallicRoughnessCls ()
   extends StObject
      with typings.arcgisJsApi.esri.MeshMaterialMetallicRoughness {
   def this(properties: MeshMaterialMetallicRoughnessProperties) = this()

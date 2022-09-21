@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region 剪贴板 https://docs.alipay.com/mini/api/clipboard
 trait GetClipboardOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   @JSName("success")
   var success_GetClipboardOptions: js.UndefOr[js.Function1[/* res */ Text, Unit]] = js.undefined

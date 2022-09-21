@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "upath" : "1.2.0"
+      "upath" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "upath" : "1.2.0"
+      "upath" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

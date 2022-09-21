@@ -10,10 +10,10 @@ A JavaScript library for parsing and formatting chord sheets
 | ------------------ | :-------------: |
 | Full name          | chordsheetjs |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 5764 |
-| # stars            | 0 |
+| # releases         | 40 |
+| # dependents       | 0.0 |
+| # downloads        | 950.3333333333334 |
+| # stars            | 164.0 |
 
 ## Links
 - [Homepage](https://github.com/martijnversluis/ChordSheetJS)

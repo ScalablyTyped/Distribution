@@ -54,7 +54,7 @@ object DeviceConfigurationState {
     
     inline def setSettingStatesUndefined: Self = StObject.set(x, "settingStates", js.undefined)
     
-    inline def setSettingStatesVarargs(value: DeviceConfigurationSettingState*): Self = StObject.set(x, "settingStates", js.Array(value :_*))
+    inline def setSettingStatesVarargs(value: DeviceConfigurationSettingState*): Self = StObject.set(x, "settingStates", js.Array(value*))
     
     inline def setState(value: ComplianceStatus): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

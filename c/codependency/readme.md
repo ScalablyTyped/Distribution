@@ -10,10 +10,10 @@ Optional peer dependencies
 | ------------------ | :-------------: |
 | Full name          | codependency |
 | Keywords           | peer, dependency, dependencies, require, module, semver |
-| # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 1739186 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 83260.0 |
+| # stars            | 32.0 |
 
 ## Links
 - [Homepage](https://github.com/Wizcorp/codependency#readme)

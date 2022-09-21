@@ -10,10 +10,10 @@ This repository adds node.js and npm support for parameterize which is originall
 | ------------------ | :-------------: |
 | Full name          | parameterize |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 104231 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19975.666666666668 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/fyalavuz/node-parameterize#readme)

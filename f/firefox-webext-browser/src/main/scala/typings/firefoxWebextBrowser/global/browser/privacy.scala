@@ -21,6 +21,13 @@ object privacy {
     */
   object network {
     
+    /**
+      * Allow users to query the mode for 'HTTPS-Only Mode'. This setting's value is of type HTTPSOnlyModeOption, defaulting to `never`.
+      */
+    @JSGlobal("browser.privacy.network.httpsOnlyMode")
+    @js.native
+    val httpsOnlyMode: Setting = js.native
+    
     /* privacy.network properties */
     /**
       * If enabled, the browser attempts to speed up your web browsing experience by pre-resolving DNS entries, prerendering sites (`<link rel='prefetch' ...>`), and preemptively opening TCP and SSL connections to servers. This preference's value is a boolean, defaulting to `true`.

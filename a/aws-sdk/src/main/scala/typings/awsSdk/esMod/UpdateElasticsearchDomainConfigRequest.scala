@@ -22,6 +22,11 @@ trait UpdateElasticsearchDomainConfigRequest extends StObject {
   var AdvancedSecurityOptions: js.UndefOr[AdvancedSecurityOptionsInput] = js.undefined
   
   /**
+    * Specifies Auto-Tune options.
+    */
+  var AutoTuneOptions: js.UndefOr[typings.awsSdk.esMod.AutoTuneOptions] = js.undefined
+  
+  /**
     * Options to specify the Cognito user and identity pools for Kibana authentication. For more information, see Amazon Cognito Authentication for Kibana.
     */
   var CognitoOptions: js.UndefOr[typings.awsSdk.esMod.CognitoOptions] = js.undefined
@@ -37,6 +42,11 @@ trait UpdateElasticsearchDomainConfigRequest extends StObject {
   var DomainName: typings.awsSdk.esMod.DomainName
   
   /**
+    *  This flag, when set to True, specifies whether the UpdateElasticsearchDomain request should return the results of validation checks without actually applying the change. This flag, when set to True, specifies the deployment mechanism through which the update shall be applied on the domain. This will not actually perform the Update. 
+    */
+  var DryRun: js.UndefOr[typings.awsSdk.esMod.DryRun] = js.undefined
+  
+  /**
     * Specify the type and size of the EBS volume that you want to use. 
     */
   var EBSOptions: js.UndefOr[typings.awsSdk.esMod.EBSOptions] = js.undefined
@@ -47,9 +57,19 @@ trait UpdateElasticsearchDomainConfigRequest extends StObject {
   var ElasticsearchClusterConfig: js.UndefOr[typings.awsSdk.esMod.ElasticsearchClusterConfig] = js.undefined
   
   /**
+    * Specifies the Encryption At Rest Options.
+    */
+  var EncryptionAtRestOptions: js.UndefOr[typings.awsSdk.esMod.EncryptionAtRestOptions] = js.undefined
+  
+  /**
     * Map of LogType and LogPublishingOption, each containing options to publish a given type of Elasticsearch log.
     */
   var LogPublishingOptions: js.UndefOr[typings.awsSdk.esMod.LogPublishingOptions] = js.undefined
+  
+  /**
+    * Specifies the NodeToNodeEncryptionOptions.
+    */
+  var NodeToNodeEncryptionOptions: js.UndefOr[typings.awsSdk.esMod.NodeToNodeEncryptionOptions] = js.undefined
   
   /**
     * Option to set the time, in UTC format, for the daily automated snapshot. Default value is 0 hours. 
@@ -82,6 +102,10 @@ object UpdateElasticsearchDomainConfigRequest {
     
     inline def setAdvancedSecurityOptionsUndefined: Self = StObject.set(x, "AdvancedSecurityOptions", js.undefined)
     
+    inline def setAutoTuneOptions(value: AutoTuneOptions): Self = StObject.set(x, "AutoTuneOptions", value.asInstanceOf[js.Any])
+    
+    inline def setAutoTuneOptionsUndefined: Self = StObject.set(x, "AutoTuneOptions", js.undefined)
+    
     inline def setCognitoOptions(value: CognitoOptions): Self = StObject.set(x, "CognitoOptions", value.asInstanceOf[js.Any])
     
     inline def setCognitoOptionsUndefined: Self = StObject.set(x, "CognitoOptions", js.undefined)
@@ -92,6 +116,10 @@ object UpdateElasticsearchDomainConfigRequest {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
+    inline def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    
     inline def setEBSOptions(value: EBSOptions): Self = StObject.set(x, "EBSOptions", value.asInstanceOf[js.Any])
     
     inline def setEBSOptionsUndefined: Self = StObject.set(x, "EBSOptions", js.undefined)
@@ -100,9 +128,17 @@ object UpdateElasticsearchDomainConfigRequest {
     
     inline def setElasticsearchClusterConfigUndefined: Self = StObject.set(x, "ElasticsearchClusterConfig", js.undefined)
     
+    inline def setEncryptionAtRestOptions(value: EncryptionAtRestOptions): Self = StObject.set(x, "EncryptionAtRestOptions", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionAtRestOptionsUndefined: Self = StObject.set(x, "EncryptionAtRestOptions", js.undefined)
+    
     inline def setLogPublishingOptions(value: LogPublishingOptions): Self = StObject.set(x, "LogPublishingOptions", value.asInstanceOf[js.Any])
     
     inline def setLogPublishingOptionsUndefined: Self = StObject.set(x, "LogPublishingOptions", js.undefined)
+    
+    inline def setNodeToNodeEncryptionOptions(value: NodeToNodeEncryptionOptions): Self = StObject.set(x, "NodeToNodeEncryptionOptions", value.asInstanceOf[js.Any])
+    
+    inline def setNodeToNodeEncryptionOptionsUndefined: Self = StObject.set(x, "NodeToNodeEncryptionOptions", js.undefined)
     
     inline def setSnapshotOptions(value: SnapshotOptions): Self = StObject.set(x, "SnapshotOptions", value.asInstanceOf[js.Any])
     

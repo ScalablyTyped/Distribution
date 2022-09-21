@@ -11,7 +11,7 @@ object canvasBufferMod {
   
   @JSImport("plottable/build/src/drawers/canvasBuffer", "CanvasBuffer")
   @js.native
-  class CanvasBuffer protected () extends StObject {
+  open class CanvasBuffer protected () extends StObject {
     def this(screenWidth: Double, screenHeight: Double) = this()
     def this(screenWidth: Double, screenHeight: Double, devicePixelRatio: Double) = this()
     

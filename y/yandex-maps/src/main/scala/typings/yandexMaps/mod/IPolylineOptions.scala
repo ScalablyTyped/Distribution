@@ -16,7 +16,7 @@ trait IPolylineOptions extends StObject {
   
   var interactiveZIndex: js.UndefOr[Boolean] = js.undefined
   
-  var interactivityModel: js.UndefOr[String] = js.undefined
+  var interactivityModel: js.UndefOr[InteractivityModelKey] = js.undefined
   
   var lineStringOverlay: js.UndefOr[js.Function0[js.Object | String]] = js.undefined
   
@@ -83,7 +83,7 @@ object IPolylineOptions {
     
     inline def setInteractiveZIndexUndefined: Self = StObject.set(x, "interactiveZIndex", js.undefined)
     
-    inline def setInteractivityModel(value: String): Self = StObject.set(x, "interactivityModel", value.asInstanceOf[js.Any])
+    inline def setInteractivityModel(value: InteractivityModelKey): Self = StObject.set(x, "interactivityModel", value.asInstanceOf[js.Any])
     
     inline def setInteractivityModelUndefined: Self = StObject.set(x, "interactivityModel", js.undefined)
     
@@ -119,25 +119,25 @@ object IPolylineOptions {
     
     inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     
-    inline def setStrokeColorVarargs(value: String*): Self = StObject.set(x, "strokeColor", js.Array(value :_*))
+    inline def setStrokeColorVarargs(value: String*): Self = StObject.set(x, "strokeColor", js.Array(value*))
     
     inline def setStrokeOpacity(value: Double | js.Array[Double]): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
     inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
-    inline def setStrokeOpacityVarargs(value: Double*): Self = StObject.set(x, "strokeOpacity", js.Array(value :_*))
+    inline def setStrokeOpacityVarargs(value: Double*): Self = StObject.set(x, "strokeOpacity", js.Array(value*))
     
     inline def setStrokeStyle(value: String | (js.Array[js.Object | String]) | js.Object): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
     
     inline def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
     
-    inline def setStrokeStyleVarargs(value: (js.Object | String)*): Self = StObject.set(x, "strokeStyle", js.Array(value :_*))
+    inline def setStrokeStyleVarargs(value: (js.Object | String)*): Self = StObject.set(x, "strokeStyle", js.Array(value*))
     
     inline def setStrokeWidth(value: Double | js.Array[Double]): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     
-    inline def setStrokeWidthVarargs(value: Double*): Self = StObject.set(x, "strokeWidth", js.Array(value :_*))
+    inline def setStrokeWidthVarargs(value: Double*): Self = StObject.set(x, "strokeWidth", js.Array(value*))
     
     inline def setSyncOverlayInit(value: Boolean): Self = StObject.set(x, "syncOverlayInit", value.asInstanceOf[js.Any])
     

@@ -10,12 +10,10 @@ object paginationLastMod {
   
   @JSImport("react-bootstrap/lib/PaginationLast", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PaginationLastProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PaginationLastProps, js.Object, Any]
   
-  @js.native
-  trait PaginationLast
-    extends Component[PaginationLastProps, js.Object, js.Any]
+  type PaginationLast = Component[PaginationLastProps, js.Object, Any]
   
   trait PaginationLastProps
     extends StObject

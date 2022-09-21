@@ -12,7 +12,7 @@ trait UpdateAccessPolicyRequest extends StObject {
   var accessPolicyId: ID
   
   /**
-    * The identity for this access policy. Choose an AWS SSO user, an AWS SSO group, or an IAM user.
+    * The identity for this access policy. Choose an Amazon Web Services SSO user, an Amazon Web Services SSO group, or an IAM user.
     */
   var accessPolicyIdentity: Identity
   
@@ -22,7 +22,7 @@ trait UpdateAccessPolicyRequest extends StObject {
   var accessPolicyPermission: Permission
   
   /**
-    * The AWS IoT SiteWise Monitor resource for this access policy. Choose either a portal or a project.
+    * The IoT SiteWise Monitor resource for this access policy. Choose either a portal or a project.
     */
   var accessPolicyResource: Resource
   

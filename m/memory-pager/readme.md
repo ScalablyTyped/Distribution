@@ -10,10 +10,10 @@ Access memory using small fixed sized buffers
 | ------------------ | :-------------: |
 | Full name          | memory-pager |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 6 |
-| # downloads        | 45065016 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8948313.666666666 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/mafintosh/memory-pager)

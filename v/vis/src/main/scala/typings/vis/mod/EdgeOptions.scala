@@ -88,7 +88,7 @@ object EdgeOptions {
     
     inline def setDashesUndefined: Self = StObject.set(x, "dashes", js.undefined)
     
-    inline def setDashesVarargs(value: Double*): Self = StObject.set(x, "dashes", js.Array(value :_*))
+    inline def setDashesVarargs(value: Double*): Self = StObject.set(x, "dashes", js.Array(value*))
     
     inline def setEndPointOffset(value: To): Self = StObject.set(x, "endPointOffset", value.asInstanceOf[js.Any])
     

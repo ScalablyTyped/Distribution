@@ -9,15 +9,15 @@ trait FireParameters extends StObject {
   
   var channel: String
   
-  var message: js.Any
+  var message: Any
   
-  var meta: js.UndefOr[js.Any] = js.undefined
+  var meta: js.UndefOr[Any] = js.undefined
   
   var sendByPost: js.UndefOr[Boolean] = js.undefined
 }
 object FireParameters {
   
-  inline def apply(channel: String, message: js.Any): FireParameters = {
+  inline def apply(channel: String, message: Any): FireParameters = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[FireParameters]
   }
@@ -26,9 +26,9 @@ object FireParameters {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     

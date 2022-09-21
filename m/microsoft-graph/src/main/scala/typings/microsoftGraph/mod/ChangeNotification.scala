@@ -31,23 +31,23 @@ trait ChangeNotification extends StObject {
   
   /**
     * The type of lifecycle notification if the current notification is a lifecycle notification. Optional. Supported values
-    * are missed, removed, reauthorizationRequired.
+    * are missed, subscriptionRemoved, reauthorizationRequired. Optional.
     */
   var lifecycleEvent: js.UndefOr[NullableOption[LifecycleEventType]] = js.undefined
   
   // The URI of the resource that emitted the change notification relative to https://graph.microsoft.com. Required.
   var resource: js.UndefOr[String] = js.undefined
   
-  // The content of this property depends on the type of resource being subscribed to. Required.
+  // The content of this property depends on the type of resource being subscribed to. Optional.
   var resourceData: js.UndefOr[NullableOption[ResourceData]] = js.undefined
   
   // The expiration time for the subscription. Required.
   var subscriptionExpirationDateTime: js.UndefOr[String] = js.undefined
   
-  // The unique identifier of the subscription that generated the notification.
+  // The unique identifier of the subscription that generated the notification.Required.
   var subscriptionId: js.UndefOr[String] = js.undefined
   
-  // The unique identifier of the tenant from which the change notification originated.
+  // The unique identifier of the tenant from which the change notification originated. Required.
   var tenantId: js.UndefOr[String] = js.undefined
 }
 object ChangeNotification {

@@ -1,7 +1,7 @@
 package typings.printer
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.printer.printerStrings.AUTO
 import typings.printer.printerStrings.CANCEL
 import typings.printer.printerStrings.COMMAND
@@ -10,8 +10,6 @@ import typings.printer.printerStrings.PDF
 import typings.printer.printerStrings.POSTSCRIPT
 import typings.printer.printerStrings.RAW
 import typings.printer.printerStrings.TEXT
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,9 +46,9 @@ object mod {
   
   trait JobDetails extends StObject {
     
-    var completedTime: Date
+    var completedTime: js.Date
     
-    var creationTime: Date
+    var creationTime: js.Date
     
     var format: String
     
@@ -62,7 +60,7 @@ object mod {
     
     var priority: Double
     
-    var processingTime: Date
+    var processingTime: js.Date
     
     var size: Double
     
@@ -73,14 +71,14 @@ object mod {
   object JobDetails {
     
     inline def apply(
-      completedTime: Date,
-      creationTime: Date,
+      completedTime: js.Date,
+      creationTime: js.Date,
       format: String,
       id: Double,
       name: String,
       printerName: String,
       priority: Double,
-      processingTime: Date,
+      processingTime: js.Date,
       size: Double,
       status: js.Array[JobStatus],
       user: String
@@ -91,9 +89,9 @@ object mod {
     
     extension [Self <: JobDetails](x: Self) {
       
-      inline def setCompletedTime(value: Date): Self = StObject.set(x, "completedTime", value.asInstanceOf[js.Any])
+      inline def setCompletedTime(value: js.Date): Self = StObject.set(x, "completedTime", value.asInstanceOf[js.Any])
       
-      inline def setCreationTime(value: Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+      inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -105,13 +103,13 @@ object mod {
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      inline def setProcessingTime(value: Date): Self = StObject.set(x, "processingTime", value.asInstanceOf[js.Any])
+      inline def setProcessingTime(value: js.Date): Self = StObject.set(x, "processingTime", value.asInstanceOf[js.Any])
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setStatus(value: js.Array[JobStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      inline def setStatusVarargs(value: JobStatus*): Self = StObject.set(x, "status", js.Array(value :_*))
+      inline def setStatusVarargs(value: JobStatus*): Self = StObject.set(x, "status", js.Array(value*))
       
       inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
@@ -166,7 +164,7 @@ object mod {
       
       inline def setData(value: String | Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setError(value: /* err */ Error => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* err */ js.Error => Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -178,7 +176,7 @@ object mod {
       
       inline def setPrinterUndefined: Self = StObject.set(x, "printer", js.undefined)
       
-      inline def setSuccess(value: /* jobId */ String => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* jobId */ String => Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
       inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
@@ -207,7 +205,7 @@ object mod {
     
     extension [Self <: PrintFileOptions](x: Self) {
       
-      inline def setError(value: /* err */ Error => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* err */ js.Error => Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -217,15 +215,15 @@ object mod {
       
       inline def setPrinterUndefined: Self = StObject.set(x, "printer", js.undefined)
       
-      inline def setSuccess(value: /* jobId */ String => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* jobId */ String => Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
       inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
   }
   
-  type PrintOnErrorFunction = js.Function1[/* err */ Error, js.Any]
+  type PrintOnErrorFunction = js.Function1[/* err */ js.Error, Any]
   
-  type PrintOnSuccessFunction = js.Function1[/* jobId */ String, js.Any]
+  type PrintOnSuccessFunction = js.Function1[/* jobId */ String, Any]
   
   trait PrinterDetails extends StObject {
     

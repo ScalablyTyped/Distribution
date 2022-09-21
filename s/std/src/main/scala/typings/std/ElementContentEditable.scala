@@ -6,12 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ElementContentEditable extends StObject {
   
+  /* standard dom */
   var contentEditable: java.lang.String
   
+  /* standard dom */
   var enterKeyHint: java.lang.String
   
+  /* standard dom */
   var inputMode: java.lang.String
   
+  /* standard dom */
   val isContentEditable: scala.Boolean
 }
 object ElementContentEditable {

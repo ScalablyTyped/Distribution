@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeOrganizationConformancePacksRequest extends StObject {
   
   /**
-    * The maximum number of organization config packs returned on each page. If you do no specify a number, AWS Config uses the default. The default is 100.
+    * The maximum number of organization config packs returned on each page. If you do no specify a number, Config uses the default. The default is 100.
     */
   var Limit: js.UndefOr[CosmosPageLimit] = js.undefined
   
@@ -42,6 +42,6 @@ object DescribeOrganizationConformancePacksRequest {
     
     inline def setOrganizationConformancePackNamesUndefined: Self = StObject.set(x, "OrganizationConformancePackNames", js.undefined)
     
-    inline def setOrganizationConformancePackNamesVarargs(value: OrganizationConformancePackName*): Self = StObject.set(x, "OrganizationConformancePackNames", js.Array(value :_*))
+    inline def setOrganizationConformancePackNamesVarargs(value: OrganizationConformancePackName*): Self = StObject.set(x, "OrganizationConformancePackNames", js.Array(value*))
   }
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "commander-version" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "commander-version" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,5 @@
 package typings.firefoxWebextBrowser.browser.webRequest
 
-import typings.std.ArrayBuffer
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,5 +10,5 @@ trait StreamFilterOndataEvent
   extends StObject
      with Event {
   
-  var data: ArrayBuffer = js.native
+  var data: js.typedarray.ArrayBuffer = js.native
 }

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.HalfLogistic")
 @js.native
-class HalfLogistic ()
+open class HalfLogistic ()
   extends typings.ranjs.mod.dist.HalfLogistic

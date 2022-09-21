@@ -32,7 +32,7 @@ object mod {
     @JSImport("timm", "default.addDefaults")
     @js.native
     def addDefaults: FnCallABRest = js.native
-    inline def addDefaults(a: js.Object, b: js.Object, rest: (js.Object | Null)*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addDefaults")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def addDefaults(a: js.Object, b: js.Object, rest: (js.Object | Null)*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addDefaults")((List(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
     inline def addDefaults[T /* <: js.Object */, U /* <: js.Object */](a: T, b: U): (Omit[U, /* keyof T */ String]) & T = (^.asInstanceOf[js.Dynamic].applyDynamic("addDefaults")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[(Omit[U, /* keyof T */ String]) & T]
     inline def addDefaults_=(x: FnCallABRest): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addDefaults")(x.asInstanceOf[js.Any])
     
@@ -60,7 +60,7 @@ object mod {
     @JSImport("timm", "default.getIn")
     @js.native
     def getIn: FnCallObjPath = js.native
-    inline def getIn(obj: js.Object, path: js.Array[Key]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getIn(obj: js.Object, path: js.Array[Key]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def getIn(obj: Null, path: js.Array[Key]): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Null]
     inline def getIn(obj: Unit, path: js.Array[Key]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def getIn_=(x: FnCallObjPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getIn")(x.asInstanceOf[js.Any])
@@ -75,7 +75,7 @@ object mod {
     @JSImport("timm", "default.merge")
     @js.native
     def merge: FnCallABC = js.native
-    inline def merge(a: js.Object, rest: (js.Object | Null)*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def merge(a: js.Object, rest: (js.Object | Null)*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(a.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
     inline def merge[T /* <: js.Object */](a: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any]).asInstanceOf[T]
     inline def merge[T /* <: js.Object */, U /* <: js.Object */](a: T, b: U): (Omit[T, /* keyof U */ String]) & U = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof U */ String]) & U]
     inline def merge[T /* <: js.Object */, V /* <: js.Object */](a: T, b: Null, c: V): (Omit[T, /* keyof V */ String]) & V = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof V */ String]) & V]
@@ -102,7 +102,7 @@ object mod {
       e: js.UndefOr[js.Object | Null],
       f: js.UndefOr[js.Object | Null],
       rest: (js.Object | Null)*
-    ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")((List(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
     inline def mergeDeep_=(
       x: js.Function7[
           /* a */ js.Object, 
@@ -119,7 +119,7 @@ object mod {
     @JSImport("timm", "default.mergeIn")
     @js.native
     def mergeIn: js.Function8[
-        /* a */ js.Any, 
+        /* a */ Any, 
         /* path */ js.Array[Key], 
         /* b */ js.UndefOr[js.Object | Null], 
         /* c */ js.UndefOr[js.Object | Null], 
@@ -127,10 +127,10 @@ object mod {
         /* e */ js.UndefOr[js.Object | Null], 
         /* f */ js.UndefOr[js.Object | Null], 
         /* repeated */ js.Object | Null, 
-        js.Any
+        Any
       ] = js.native
     inline def mergeIn(
-      a: js.Any,
+      a: Any,
       path: js.Array[Key],
       b: js.UndefOr[js.Object | Null],
       c: js.UndefOr[js.Object | Null],
@@ -138,10 +138,10 @@ object mod {
       e: js.UndefOr[js.Object | Null],
       f: js.UndefOr[js.Object | Null],
       rest: (js.Object | Null)*
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeIn")(a.asInstanceOf[js.Any], path.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeIn")((List(a.asInstanceOf[js.Any], path.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
     inline def mergeIn_=(
       x: js.Function8[
-          /* a */ js.Any, 
+          /* a */ Any, 
           /* path */ js.Array[Key], 
           /* b */ js.UndefOr[js.Object | Null], 
           /* c */ js.UndefOr[js.Object | Null], 
@@ -149,7 +149,7 @@ object mod {
           /* e */ js.UndefOr[js.Object | Null], 
           /* f */ js.UndefOr[js.Object | Null], 
           /* repeated */ js.Object | Null, 
-          js.Any
+          Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mergeIn")(x.asInstanceOf[js.Any])
     
@@ -194,34 +194,24 @@ object mod {
     inline def set[V](obj: Unit, key: Double, `val`: V): js.Array[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Array[V]]
     inline def set[K /* <: String */, V](obj: Null, key: K, `val`: V): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in K ]: V}
-      */ typings.timm.timmStrings.set & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ typings.timm.timmStrings.set & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in K ]: V}
-      */ typings.timm.timmStrings.set & TopLevel[js.Any]]
+      */ typings.timm.timmStrings.set & TopLevel[Any]]
     inline def set[K /* <: String */, V](obj: Unit, key: K, `val`: V): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in K ]: V}
-      */ typings.timm.timmStrings.set & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      */ typings.timm.timmStrings.set & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in K ]: V}
-      */ typings.timm.timmStrings.set & TopLevel[js.Any]]
-    inline def set[T /* <: js.Object */, K /* <: String */, V](obj: T, key: K, `val`: V): (Omit[T, /* keyof {[ P in K ]: any} */ String]) & typings.timm.timmStrings.set & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof {[ P in K ]: any} */ String]) & typings.timm.timmStrings.set & TopLevel[js.Any]]
+      */ typings.timm.timmStrings.set & TopLevel[Any]]
+    inline def set[T /* <: js.Object */, K /* <: String */, V](obj: T, key: K, `val`: V): (Omit[T, /* keyof {[ P in K ]: any} */ String]) & typings.timm.timmStrings.set & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof {[ P in K ]: any} */ String]) & typings.timm.timmStrings.set & TopLevel[Any]]
     
     @JSImport("timm", "default.setIn")
     @js.native
-    def setIn: js.Function3[
-        /* obj */ js.UndefOr[js.Object | Null], 
-        /* path */ js.Array[Key], 
-        /* val */ js.Any, 
-        js.Any
-      ] = js.native
-    inline def setIn(obj: js.Object, path: js.Array[Key], `val`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def setIn(obj: Null, path: js.Array[Key], `val`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def setIn(obj: Unit, path: js.Array[Key], `val`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    def setIn: js.Function3[/* obj */ js.UndefOr[js.Object | Null], /* path */ js.Array[Key], /* val */ Any, Any] = js.native
+    inline def setIn(obj: js.Object, path: js.Array[Key], `val`: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def setIn(obj: Null, path: js.Array[Key], `val`: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def setIn(obj: Unit, path: js.Array[Key], `val`: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def setIn_=(
-      x: js.Function3[
-          /* obj */ js.UndefOr[js.Object | Null], 
-          /* path */ js.Array[Key], 
-          /* val */ js.Any, 
-          js.Any
-        ]
+      x: js.Function3[/* obj */ js.UndefOr[js.Object | Null], /* path */ js.Array[Key], /* val */ Any, Any]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setIn")(x.asInstanceOf[js.Any])
     
     inline def set_=(x: FnCallObjKeyVal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("set")(x.asInstanceOf[js.Any])
@@ -231,30 +221,30 @@ object mod {
     def update: js.Function3[
         /* obj */ js.UndefOr[js.Object | Null], 
         /* key */ Key, 
-        /* fnUpdate */ js.Function1[/* prevValue */ js.Any, js.Any], 
-        js.Any
+        /* fnUpdate */ js.Function1[/* prevValue */ Any, Any], 
+        Any
       ] = js.native
-    inline def update(obj: js.Object, key: Key, fnUpdate: js.Function1[/* prevValue */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def update(obj: Null, key: Key, fnUpdate: js.Function1[/* prevValue */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def update(obj: Unit, key: Key, fnUpdate: js.Function1[/* prevValue */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def update(obj: js.Object, key: Key, fnUpdate: js.Function1[/* prevValue */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def update(obj: Null, key: Key, fnUpdate: js.Function1[/* prevValue */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def update(obj: Unit, key: Key, fnUpdate: js.Function1[/* prevValue */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     @JSImport("timm", "default.updateIn")
     @js.native
     def updateIn: js.Function3[
         /* obj */ js.UndefOr[js.Object | Null], 
         /* path */ js.Array[Key], 
-        /* fnUpdate */ js.Function1[/* prevValue */ js.Any, js.Any], 
-        js.Any
+        /* fnUpdate */ js.Function1[/* prevValue */ Any, Any], 
+        Any
       ] = js.native
-    inline def updateIn(obj: js.Object, path: js.Array[Key], fnUpdate: js.Function1[/* prevValue */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def updateIn(obj: Null, path: js.Array[Key], fnUpdate: js.Function1[/* prevValue */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def updateIn(obj: Unit, path: js.Array[Key], fnUpdate: js.Function1[/* prevValue */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def updateIn(obj: js.Object, path: js.Array[Key], fnUpdate: js.Function1[/* prevValue */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def updateIn(obj: Null, path: js.Array[Key], fnUpdate: js.Function1[/* prevValue */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def updateIn(obj: Unit, path: js.Array[Key], fnUpdate: js.Function1[/* prevValue */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def updateIn_=(
       x: js.Function3[
           /* obj */ js.UndefOr[js.Object | Null], 
           /* path */ js.Array[Key], 
-          /* fnUpdate */ js.Function1[/* prevValue */ js.Any, js.Any], 
-          js.Any
+          /* fnUpdate */ js.Function1[/* prevValue */ Any, Any], 
+          Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("updateIn")(x.asInstanceOf[js.Any])
     
@@ -262,13 +252,13 @@ object mod {
       x: js.Function3[
           /* obj */ js.UndefOr[js.Object | Null], 
           /* key */ Key, 
-          /* fnUpdate */ js.Function1[/* prevValue */ js.Any, js.Any], 
-          js.Any
+          /* fnUpdate */ js.Function1[/* prevValue */ Any, Any], 
+          Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("update")(x.asInstanceOf[js.Any])
   }
   
-  inline def addDefaults(a: js.Object, b: js.Object, rest: (js.Object | Null)*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addDefaults")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def addDefaults(a: js.Object, b: js.Object, rest: (js.Object | Null)*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addDefaults")((List(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
   inline def addDefaults[T /* <: js.Object */, U /* <: js.Object */](a: T, b: U): (Omit[U, /* keyof T */ String]) & T = (^.asInstanceOf[js.Dynamic].applyDynamic("addDefaults")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[(Omit[U, /* keyof T */ String]) & T]
   
   inline def addFirst[T](array: js.Array[T], `val`: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("addFirst")(array.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
@@ -279,14 +269,14 @@ object mod {
   
   inline def clone_[T /* <: js.Object */](obj0: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(obj0.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def getIn(obj: js.Object, path: js.Array[Key]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getIn(obj: js.Object, path: js.Array[Key]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def getIn(obj: Null, path: js.Array[Key]): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Null]
   inline def getIn(obj: Unit, path: js.Array[Key]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def insert[T](array: js.Array[T], idx: Double, `val`: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(array.asInstanceOf[js.Any], idx.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   inline def insert[T](array: js.Array[T], idx: Double, `val`: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(array.asInstanceOf[js.Any], idx.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def merge(a: js.Object, rest: (js.Object | Null)*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def merge(a: js.Object, rest: (js.Object | Null)*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(a.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
   inline def merge[T /* <: js.Object */](a: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def merge[T /* <: js.Object */, U /* <: js.Object */](a: T, b: U): (Omit[T, /* keyof U */ String]) & U = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof U */ String]) & U]
   inline def merge[T /* <: js.Object */, V /* <: js.Object */](a: T, b: Null, c: V): (Omit[T, /* keyof V */ String]) & V = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof V */ String]) & V]
@@ -301,10 +291,10 @@ object mod {
     e: js.UndefOr[js.Object | Null],
     f: js.UndefOr[js.Object | Null],
     rest: (js.Object | Null)*
-  ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")((List(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
   
   inline def mergeIn(
-    a: js.Any,
+    a: Any,
     path: js.Array[Key],
     b: js.UndefOr[js.Object | Null],
     c: js.UndefOr[js.Object | Null],
@@ -312,7 +302,7 @@ object mod {
     e: js.UndefOr[js.Object | Null],
     f: js.UndefOr[js.Object | Null],
     rest: (js.Object | Null)*
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeIn")(a.asInstanceOf[js.Any], path.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeIn")((List(a.asInstanceOf[js.Any], path.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   inline def omit[T /* <: js.Object */, K /* <: String */](obj: T, attrs: K): Omit[T, /* keyof {[ P in K ]: any} */ String] = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(obj.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Omit[T, /* keyof {[ P in K ]: any} */ String]]
   inline def omit[T /* <: js.Object */, K /* <: String */](obj: T, attrs: js.Array[K]): Omit[T, /* keyof {[ P in K ]: any} */ String] = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(obj.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Omit[T, /* keyof {[ P in K ]: any} */ String]]
@@ -330,27 +320,27 @@ object mod {
   inline def set[V](obj: Unit, key: Double, `val`: V): js.Array[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Array[V]]
   inline def set[K /* <: String */, V](obj: Null, key: K, `val`: V): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in K ]: V}
-    */ typings.timm.timmStrings.set & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    */ typings.timm.timmStrings.set & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in K ]: V}
-    */ typings.timm.timmStrings.set & TopLevel[js.Any]]
+    */ typings.timm.timmStrings.set & TopLevel[Any]]
   inline def set[K /* <: String */, V](obj: Unit, key: K, `val`: V): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in K ]: V}
-    */ typings.timm.timmStrings.set & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    */ typings.timm.timmStrings.set & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in K ]: V}
-    */ typings.timm.timmStrings.set & TopLevel[js.Any]]
-  inline def set[T /* <: js.Object */, K /* <: String */, V](obj: T, key: K, `val`: V): (Omit[T, /* keyof {[ P in K ]: any} */ String]) & typings.timm.timmStrings.set & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof {[ P in K ]: any} */ String]) & typings.timm.timmStrings.set & TopLevel[js.Any]]
+    */ typings.timm.timmStrings.set & TopLevel[Any]]
+  inline def set[T /* <: js.Object */, K /* <: String */, V](obj: T, key: K, `val`: V): (Omit[T, /* keyof {[ P in K ]: any} */ String]) & typings.timm.timmStrings.set & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof {[ P in K ]: any} */ String]) & typings.timm.timmStrings.set & TopLevel[Any]]
   
-  inline def setIn(obj: js.Object, path: js.Array[Key], `val`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def setIn(obj: Null, path: js.Array[Key], `val`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def setIn(obj: Unit, path: js.Array[Key], `val`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def setIn(obj: js.Object, path: js.Array[Key], `val`: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def setIn(obj: Null, path: js.Array[Key], `val`: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def setIn(obj: Unit, path: js.Array[Key], `val`: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def update(obj: js.Object, key: Key, fnUpdate: js.Function1[/* prevValue */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def update(obj: Null, key: Key, fnUpdate: js.Function1[/* prevValue */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def update(obj: Unit, key: Key, fnUpdate: js.Function1[/* prevValue */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def update(obj: js.Object, key: Key, fnUpdate: js.Function1[/* prevValue */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def update(obj: Null, key: Key, fnUpdate: js.Function1[/* prevValue */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def update(obj: Unit, key: Key, fnUpdate: js.Function1[/* prevValue */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def updateIn(obj: js.Object, path: js.Array[Key], fnUpdate: js.Function1[/* prevValue */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def updateIn(obj: Null, path: js.Array[Key], fnUpdate: js.Function1[/* prevValue */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def updateIn(obj: Unit, path: js.Array[Key], fnUpdate: js.Function1[/* prevValue */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def updateIn(obj: js.Object, path: js.Array[Key], fnUpdate: js.Function1[/* prevValue */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def updateIn(obj: Null, path: js.Array[Key], fnUpdate: js.Function1[/* prevValue */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def updateIn(obj: Unit, path: js.Array[Key], fnUpdate: js.Function1[/* prevValue */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateIn")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], fnUpdate.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   type Key = String | Double
 }

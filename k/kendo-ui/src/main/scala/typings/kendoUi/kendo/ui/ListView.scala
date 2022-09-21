@@ -20,6 +20,8 @@ trait ListView
   
   def clearSelection(): Unit = js.native
   
+  var content: JQuery = js.native
+  
   def dataItem(row: String): ObservableObject = js.native
   def dataItem(row: JQuery): ObservableObject = js.native
   def dataItem(row: Element): ObservableObject = js.native
@@ -30,19 +32,19 @@ trait ListView
   
   def edit(item: JQuery): Unit = js.native
   
-  def items(): js.Any = js.native
+  def items(): Any = js.native
   
   @JSName("options")
   var options_ListView: ListViewOptions = js.native
   
   def refresh(): Unit = js.native
   
-  def remove(item: js.Any): Unit = js.native
+  def remove(item: Any): Unit = js.native
   
   def save(): Unit = js.native
   
   def select(): JQuery = js.native
-  def select(items: js.Any): Unit = js.native
+  def select(items: Any): Unit = js.native
   def select(items: JQuery): Unit = js.native
   
   def setDataSource(dataSource: DataSource): Unit = js.native

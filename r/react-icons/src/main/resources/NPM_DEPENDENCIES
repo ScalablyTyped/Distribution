@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-icons" : "3.11.0"
+      "react-icons" : "4.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-icons" : "3.11.0"
+      "react-icons" : "4.4.0"
     }
   ],
   "compile-devDependencies" : [

@@ -27,7 +27,7 @@ object NestedFilters {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setNestedPropertyName(value: ResourcePropertyName): Self = StObject.set(x, "NestedPropertyName", value.asInstanceOf[js.Any])
   }

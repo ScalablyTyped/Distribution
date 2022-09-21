@@ -8,7 +8,7 @@ trait ASTElementHandler extends StObject {
   
   var modifiers: js.UndefOr[ASTModifiers] = js.undefined
   
-  var params: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var params: js.UndefOr[js.Array[Any]] = js.undefined
   
   var value: String
 }
@@ -25,11 +25,11 @@ object ASTElementHandler {
     
     inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
-    inline def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: Any*): Self = StObject.set(x, "params", js.Array(value*))
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

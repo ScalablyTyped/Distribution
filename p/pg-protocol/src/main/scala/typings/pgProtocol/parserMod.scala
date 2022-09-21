@@ -1,6 +1,6 @@
 package typings.pgProtocol
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.TransformOptions
 import typings.pgProtocol.messagesMod.BackendMessage
 import typings.pgProtocol.messagesMod.Mode
@@ -12,52 +12,54 @@ object parserMod {
   
   @JSImport("pg-protocol/dist/parser", "Parser")
   @js.native
-  class Parser () extends StObject {
+  open class Parser () extends StObject {
     def this(opts: StreamOptions) = this()
     
-    /* private */ var buffer: js.Any = js.native
+    /* private */ var buffer: Any = js.native
     
-    /* private */ var bufferLength: js.Any = js.native
+    /* private */ var bufferLength: Any = js.native
     
-    /* private */ var bufferOffset: js.Any = js.native
+    /* private */ var bufferOffset: Any = js.native
     
-    /* private */ var handlePacket: js.Any = js.native
+    /* private */ var handlePacket: Any = js.native
     
-    /* private */ var mergeBuffer: js.Any = js.native
+    /* private */ var mergeBuffer: Any = js.native
     
-    /* private */ var mode: js.Any = js.native
+    /* private */ var mode: Any = js.native
     
     def parse(buffer: Buffer, callback: MessageCallback): Unit = js.native
     
-    def parseAuthenticationResponse(offset: Double, length: Double, bytes: Buffer): js.Any = js.native
+    def parseAuthenticationResponse(offset: Double, length: Double, bytes: Buffer): Any = js.native
     
-    /* private */ var parseBackendKeyData: js.Any = js.native
+    /* private */ var parseBackendKeyData: Any = js.native
     
-    /* private */ var parseCommandCompleteMessage: js.Any = js.native
+    /* private */ var parseCommandCompleteMessage: Any = js.native
     
-    /* private */ var parseCopyData: js.Any = js.native
+    /* private */ var parseCopyData: Any = js.native
     
-    /* private */ var parseCopyInMessage: js.Any = js.native
+    /* private */ var parseCopyInMessage: Any = js.native
     
-    /* private */ var parseCopyMessage: js.Any = js.native
+    /* private */ var parseCopyMessage: Any = js.native
     
-    /* private */ var parseCopyOutMessage: js.Any = js.native
+    /* private */ var parseCopyOutMessage: Any = js.native
     
-    /* private */ var parseDataRowMessage: js.Any = js.native
+    /* private */ var parseDataRowMessage: Any = js.native
     
-    /* private */ var parseErrorMessage: js.Any = js.native
+    /* private */ var parseErrorMessage: Any = js.native
     
-    /* private */ var parseField: js.Any = js.native
+    /* private */ var parseField: Any = js.native
     
-    /* private */ var parseNotificationMessage: js.Any = js.native
+    /* private */ var parseNotificationMessage: Any = js.native
     
-    /* private */ var parseParameterStatusMessage: js.Any = js.native
+    /* private */ var parseParameterDescriptionMessage: Any = js.native
     
-    /* private */ var parseReadyForQueryMessage: js.Any = js.native
+    /* private */ var parseParameterStatusMessage: Any = js.native
     
-    /* private */ var parseRowDescriptionMessage: js.Any = js.native
+    /* private */ var parseReadyForQueryMessage: Any = js.native
     
-    /* private */ var reader: js.Any = js.native
+    /* private */ var parseRowDescriptionMessage: Any = js.native
+    
+    /* private */ var reader: Any = js.native
   }
   
   type MessageCallback = js.Function1[/* msg */ BackendMessage, Unit]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for prompt-sync
 
-Typings are for version 4.1.4
+Typings are for version 4.2.0
 
 ## Library description:
 a synchronous prompt for node.js
@@ -10,15 +10,12 @@ a synchronous prompt for node.js
 | ------------------ | :-------------: |
 | Full name          | prompt-sync |
 | Keywords           | prompt, sync, blocking, readline, input, getline, repl, history |
-| # releases         | 3 |
-| # dependents       | 228 |
-| # downloads        | 1353395 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1679007.6666666667 |
+| # stars            | 142.0 |
 
 ## Links
-- [Homepage](https://github.com/heapwolf/prompt-sync#readme)
-- [Bugs](https://github.com/heapwolf/prompt-sync/issues)
-- [Repository](https://github.com/heapwolf/prompt-sync)
 - [Npm](https://www.npmjs.com/package/prompt-sync)
     
 

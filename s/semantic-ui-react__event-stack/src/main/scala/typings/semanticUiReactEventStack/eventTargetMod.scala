@@ -10,7 +10,7 @@ object eventTargetMod {
   
   @JSImport("@semantic-ui-react/event-stack/lib/types/lib/EventTarget", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with EventTarget {
     def this(target: TargetElement) = this()
@@ -19,62 +19,62 @@ object eventTargetMod {
     override def addHandlers(poolName: String, eventType: String, eventHandlers: EventListeners): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var addTargetHandler: js.Any = js.native
+    var addTargetHandler: Any = js.native
     
     /* private */ /* CompleteClass */
-    var createEmitter: js.Any = js.native
+    var createEmitter: Any = js.native
     
     /* private */ /* CompleteClass */
-    override val handlers: js.Any = js.native
+    override val handlers: Any = js.native
     
     /* CompleteClass */
     override def hasHandlers(): Boolean = js.native
     
     /* private */ /* CompleteClass */
-    override val pools: js.Any = js.native
+    override val pools: Any = js.native
     
     /* CompleteClass */
     override def removeHandlers(poolName: String, eventType: String, eventHandlers: EventListeners): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var removeTargetHandler: js.Any = js.native
+    var removeTargetHandler: Any = js.native
     
     /* private */ /* CompleteClass */
-    override val target: js.Any = js.native
+    override val target: Any = js.native
   }
   
   trait EventTarget extends StObject {
     
     def addHandlers(poolName: String, eventType: String, eventHandlers: EventListeners): Unit
     
-    /* private */ var addTargetHandler: js.Any
+    /* private */ var addTargetHandler: Any
     
-    /* private */ var createEmitter: js.Any
+    /* private */ var createEmitter: Any
     
-    /* private */ val handlers: js.Any
+    /* private */ val handlers: Any
     
     def hasHandlers(): Boolean
     
-    /* private */ val pools: js.Any
+    /* private */ val pools: Any
     
     def removeHandlers(poolName: String, eventType: String, eventHandlers: EventListeners): Unit
     
-    /* private */ var removeTargetHandler: js.Any
+    /* private */ var removeTargetHandler: Any
     
-    /* private */ val target: js.Any
+    /* private */ val target: Any
   }
   object EventTarget {
     
     inline def apply(
       addHandlers: (String, String, EventListeners) => Unit,
-      addTargetHandler: js.Any,
-      createEmitter: js.Any,
-      handlers: js.Any,
+      addTargetHandler: Any,
+      createEmitter: Any,
+      handlers: Any,
       hasHandlers: () => Boolean,
-      pools: js.Any,
+      pools: Any,
       removeHandlers: (String, String, EventListeners) => Unit,
-      removeTargetHandler: js.Any,
-      target: js.Any
+      removeTargetHandler: Any,
+      target: Any
     ): EventTarget = {
       val __obj = js.Dynamic.literal(addHandlers = js.Any.fromFunction3(addHandlers), addTargetHandler = addTargetHandler.asInstanceOf[js.Any], createEmitter = createEmitter.asInstanceOf[js.Any], handlers = handlers.asInstanceOf[js.Any], hasHandlers = js.Any.fromFunction0(hasHandlers), pools = pools.asInstanceOf[js.Any], removeHandlers = js.Any.fromFunction3(removeHandlers), removeTargetHandler = removeTargetHandler.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventTarget]
@@ -84,21 +84,21 @@ object eventTargetMod {
       
       inline def setAddHandlers(value: (String, String, EventListeners) => Unit): Self = StObject.set(x, "addHandlers", js.Any.fromFunction3(value))
       
-      inline def setAddTargetHandler(value: js.Any): Self = StObject.set(x, "addTargetHandler", value.asInstanceOf[js.Any])
+      inline def setAddTargetHandler(value: Any): Self = StObject.set(x, "addTargetHandler", value.asInstanceOf[js.Any])
       
-      inline def setCreateEmitter(value: js.Any): Self = StObject.set(x, "createEmitter", value.asInstanceOf[js.Any])
+      inline def setCreateEmitter(value: Any): Self = StObject.set(x, "createEmitter", value.asInstanceOf[js.Any])
       
-      inline def setHandlers(value: js.Any): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: Any): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
       inline def setHasHandlers(value: () => Boolean): Self = StObject.set(x, "hasHandlers", js.Any.fromFunction0(value))
       
-      inline def setPools(value: js.Any): Self = StObject.set(x, "pools", value.asInstanceOf[js.Any])
+      inline def setPools(value: Any): Self = StObject.set(x, "pools", value.asInstanceOf[js.Any])
       
       inline def setRemoveHandlers(value: (String, String, EventListeners) => Unit): Self = StObject.set(x, "removeHandlers", js.Any.fromFunction3(value))
       
-      inline def setRemoveTargetHandler(value: js.Any): Self = StObject.set(x, "removeTargetHandler", value.asInstanceOf[js.Any])
+      inline def setRemoveTargetHandler(value: Any): Self = StObject.set(x, "removeTargetHandler", value.asInstanceOf[js.Any])
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

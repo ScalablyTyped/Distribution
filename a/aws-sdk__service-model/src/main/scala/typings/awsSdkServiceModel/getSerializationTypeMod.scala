@@ -11,5 +11,5 @@ object getSerializationTypeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getSerializationType(shape: Shape): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSerializationType")(shape.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getSerializationType(shape: Shape): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSerializationType")(shape.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

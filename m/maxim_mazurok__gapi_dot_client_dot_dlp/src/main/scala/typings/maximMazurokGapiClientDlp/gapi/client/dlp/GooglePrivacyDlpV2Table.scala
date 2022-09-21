@@ -25,12 +25,12 @@ object GooglePrivacyDlpV2Table {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setRows(value: js.Array[GooglePrivacyDlpV2Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: GooglePrivacyDlpV2Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: GooglePrivacyDlpV2Row*): Self = StObject.set(x, "rows", js.Array(value*))
   }
 }

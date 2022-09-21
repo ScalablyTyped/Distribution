@@ -85,7 +85,7 @@ object anon {
   
   trait Dictprop
     extends StObject
-       with /* prop */ StringDictionary[js.Any] {
+       with /* prop */ StringDictionary[Any] {
     
     var childFactory: js.UndefOr[js.Function1[/* child */ ReactElement, ReactElement]] = js.undefined
     
@@ -108,11 +108,11 @@ object anon {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
   
-  trait Explicit[ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ js.Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ js.Any, Unit] */] extends StObject {
+  trait Explicit[ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ Any, Unit] */] extends StObject {
     
     var explicit: ExplicitRefHandler
     
@@ -120,13 +120,13 @@ object anon {
   }
   object Explicit {
     
-    inline def apply[ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ js.Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ js.Any, Unit] */](explicit: ExplicitRefHandler, `implicit`: ImplicitRefHandler): Explicit[ImplicitRefHandler, ExplicitRefHandler] = {
+    inline def apply[ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ Any, Unit] */](explicit: ExplicitRefHandler, `implicit`: ImplicitRefHandler): Explicit[ImplicitRefHandler, ExplicitRefHandler] = {
       val __obj = js.Dynamic.literal(explicit = explicit.asInstanceOf[js.Any])
       __obj.updateDynamic("implicit")(`implicit`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Explicit[ImplicitRefHandler, ExplicitRefHandler]]
     }
     
-    extension [Self <: Explicit[?, ?], ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ js.Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ js.Any, Unit] */](x: Self & (Explicit[ImplicitRefHandler, ExplicitRefHandler])) {
+    extension [Self <: Explicit[?, ?], ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ Any, Unit] */](x: Self & (Explicit[ImplicitRefHandler, ExplicitRefHandler])) {
       
       inline def setExplicit(value: ExplicitRefHandler): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
       

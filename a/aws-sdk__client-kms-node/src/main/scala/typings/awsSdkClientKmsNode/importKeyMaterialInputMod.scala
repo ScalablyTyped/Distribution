@@ -8,5 +8,5 @@ object importKeyMaterialInputMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/ImportKeyMaterialInput", "ImportKeyMaterialInput")
   @js.native
-  val ImportKeyMaterialInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ImportKeyMaterialInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

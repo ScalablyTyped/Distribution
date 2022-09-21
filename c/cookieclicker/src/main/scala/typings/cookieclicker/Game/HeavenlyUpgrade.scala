@@ -10,6 +10,8 @@ trait HeavenlyUpgrade
   extends StObject
      with Upgrade {
   
+  var placedByCode: js.UndefOr[Boolean] = js.native
+  
   @JSName("pool")
   var pool_HeavenlyUpgrade: prestige = js.native
   

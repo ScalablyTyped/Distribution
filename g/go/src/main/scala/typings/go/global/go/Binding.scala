@@ -24,15 +24,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {function(*,*=) | null=} conv A function converting the data property value to the value to set the target property.
   *   If the function is null or not supplied, no conversion takes place.
   */
-class Binding ()
+open class Binding ()
   extends typings.go.mod.Binding {
   def this(targetprop: String) = this()
   def this(targetprop: String, sourceprop: String) = this()
   def this(targetprop: Unit, sourceprop: String) = this()
-  def this(targetprop: String, sourceprop: String, conv: js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]) = this()
-  def this(targetprop: String, sourceprop: Unit, conv: js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]) = this()
-  def this(targetprop: Unit, sourceprop: String, conv: js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]) = this()
-  def this(targetprop: Unit, sourceprop: Unit, conv: js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]) = this()
+  def this(targetprop: String, sourceprop: String, conv: js.Function2[/* a */ Any, /* b */ Any, Any]) = this()
+  def this(targetprop: String, sourceprop: Unit, conv: js.Function2[/* a */ Any, /* b */ Any, Any]) = this()
+  def this(targetprop: Unit, sourceprop: String, conv: js.Function2[/* a */ Any, /* b */ Any, Any]) = this()
+  def this(targetprop: Unit, sourceprop: Unit, conv: js.Function2[/* a */ Any, /* b */ Any, Any]) = this()
 }
 object Binding {
   
@@ -77,5 +77,5 @@ object Binding {
     * @param {*} val
     */
   /* static member */
-  inline def toString_(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toString_(`val`: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

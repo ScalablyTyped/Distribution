@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "avvio" : "6.2.2"
+      "avvio" : "8.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "avvio" : "6.2.2"
+      "avvio" : "8.2.0"
     }
   ],
   "compile-devDependencies" : [

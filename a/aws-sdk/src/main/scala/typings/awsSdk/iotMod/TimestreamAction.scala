@@ -49,7 +49,7 @@ object TimestreamAction {
     
     inline def setDimensions(value: TimestreamDimensionList): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    inline def setDimensionsVarargs(value: TimestreamDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: TimestreamDimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
     
     inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     

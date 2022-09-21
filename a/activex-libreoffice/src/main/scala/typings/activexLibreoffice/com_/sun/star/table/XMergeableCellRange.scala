@@ -35,7 +35,7 @@ object XMergeableCellRange {
     acquire: () => Unit,
     isMergeable: () => Boolean,
     merge: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     split: (Double, Double) => Unit
   ): XMergeableCellRange = {

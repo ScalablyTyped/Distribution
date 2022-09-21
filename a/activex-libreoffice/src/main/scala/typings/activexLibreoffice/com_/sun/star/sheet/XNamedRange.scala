@@ -77,7 +77,7 @@ object XNamedRange {
     getName: () => String,
     getReferencePosition: () => CellAddress,
     getType: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setContent: String => Unit,
     setName: String => Unit,

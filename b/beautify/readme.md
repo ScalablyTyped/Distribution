@@ -10,10 +10,10 @@ beautify whatever
 | ------------------ | :-------------: |
 | Full name          | beautify |
 | Keywords           | json, js, css, html, xml, prettify, beautify |
-| # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 94192 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8643.333333333334 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/gko/beautify#readme)

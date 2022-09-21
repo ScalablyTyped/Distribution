@@ -10,11 +10,11 @@ trait FileManagerEvent extends StObject {
   
   var preventDefault: js.Function
   
-  var sender: FileManager
+  var sender: FileManager_
 }
 object FileManagerEvent {
   
-  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: FileManager): FileManagerEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: FileManager_): FileManagerEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileManagerEvent]
   }
@@ -25,6 +25,6 @@ object FileManagerEvent {
     
     inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    inline def setSender(value: FileManager): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: FileManager_): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

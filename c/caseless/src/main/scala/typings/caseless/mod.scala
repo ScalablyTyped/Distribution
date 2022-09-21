@@ -52,5 +52,5 @@ object mod {
   
   type RawDict = js.Object
   
-  type ValueType = js.Any
+  type ValueType = Any
 }

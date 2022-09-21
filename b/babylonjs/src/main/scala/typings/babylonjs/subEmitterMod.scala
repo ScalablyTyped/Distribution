@@ -11,7 +11,7 @@ object subEmitterMod {
   
   @JSImport("babylonjs/Particles/subEmitter", "SubEmitter")
   @js.native
-  class SubEmitter protected () extends StObject {
+  open class SubEmitter protected () extends StObject {
     /**
       * Creates a sub emitter
       * @param particleSystem the particle system to be used by the sub emitter
@@ -42,9 +42,11 @@ object subEmitterMod {
     
     /**
       * Serialize current object to a JSON object
+      * @param serializeTexture defines if the texture must be serialized as well
       * @returns the serialized object
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
+    def serialize(serializeTexture: Boolean): Any = js.native
     
     /**
       * Type of the submitter (Default: END)
@@ -65,12 +67,20 @@ object subEmitterMod {
       * @param rootUrl defines the rootUrl for data loading
       * @returns a new SubEmitter
       */
-    inline def Parse(serializationObject: js.Any, sceneOrEngine: Scene, rootUrl: String): SubEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[SubEmitter]
-    inline def Parse(serializationObject: js.Any, sceneOrEngine: ThinEngine, rootUrl: String): SubEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[SubEmitter]
+    inline def Parse(serializationObject: Any, sceneOrEngine: Scene, rootUrl: String): SubEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[SubEmitter]
+    inline def Parse(serializationObject: Any, sceneOrEngine: ThinEngine, rootUrl: String): SubEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[SubEmitter]
     
-    /** @hidden */
-    inline def _ParseParticleSystem(system: js.Any, sceneOrEngine: Scene, rootUrl: String): ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[ParticleSystem]
-    inline def _ParseParticleSystem(system: js.Any, sceneOrEngine: ThinEngine, rootUrl: String): ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[ParticleSystem]
+    /**
+      * @param system
+      * @param sceneOrEngine
+      * @param rootUrl
+      * @param doNotStart
+      * @hidden
+      */
+    inline def _ParseParticleSystem(system: Any, sceneOrEngine: Scene, rootUrl: String): ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[ParticleSystem]
+    inline def _ParseParticleSystem(system: Any, sceneOrEngine: Scene, rootUrl: String, doNotStart: Boolean): ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[ParticleSystem]
+    inline def _ParseParticleSystem(system: Any, sceneOrEngine: ThinEngine, rootUrl: String): ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[ParticleSystem]
+    inline def _ParseParticleSystem(system: Any, sceneOrEngine: ThinEngine, rootUrl: String, doNotStart: Boolean): ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[ParticleSystem]
   }
   
   @js.native

@@ -200,7 +200,7 @@ trait b2Body extends StObject {
     * Get the user data pointer that was provided in the body definition.
     * @return User's data, cast to the correct type.
     **/
-  def GetUserData(): js.Any = js.native
+  def GetUserData(): Any = js.native
   
   /**
     * Get the parent world of this body.
@@ -365,7 +365,7 @@ trait b2Body extends StObject {
     * Set the user data. Use this to store your application specific data.
     * @param data The user data for this body.
     **/
-  def SetUserData(data: js.Any): Unit = js.native
+  def SetUserData(data: Any): Unit = js.native
   
   /**
     * Splits a body into two, preserving dynamic properties

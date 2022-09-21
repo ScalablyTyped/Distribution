@@ -26,7 +26,7 @@ object mod {
     *  - `activatePrecompiles`: false
     *  - `allowUnlimitedContractSize`: false [ONLY set to `true` during debugging]
     */
-  class default ()
+  open class default ()
     extends StObject
        with VM {
     def this(opts: VMOpts) = this()
@@ -35,7 +35,7 @@ object mod {
     var _common: typings.ethereumjsCommon.mod.default = js.native
     
     /* CompleteClass */
-    override def _emit(topic: String, data: js.Any): js.Promise[Unit] = js.native
+    override def _emit(topic: String, data: Any): js.Promise[Unit] = js.native
     
     /* CompleteClass */
     var _opcodes: OpcodeList = js.native
@@ -79,7 +79,7 @@ object mod {
       * @param blockchain -  A [blockchain](https://github.com/ethereum/ethereumjs-blockchain) object to process
       */
     /* CompleteClass */
-    override def runBlockchain(blockchain: js.Any): js.Promise[Unit] = js.native
+    override def runBlockchain(blockchain: Any): js.Promise[Unit] = js.native
     
     /**
       * runs a call (or create) operation.
@@ -116,7 +116,7 @@ object mod {
     
     var _common: typings.ethereumjsCommon.mod.default
     
-    def _emit(topic: String, data: js.Any): js.Promise[Unit]
+    def _emit(topic: String, data: Any): js.Promise[Unit]
     
     var _opcodes: OpcodeList
     
@@ -152,7 +152,7 @@ object mod {
       *
       * @param blockchain -  A [blockchain](https://github.com/ethereum/ethereumjs-blockchain) object to process
       */
-    def runBlockchain(blockchain: js.Any): js.Promise[Unit]
+    def runBlockchain(blockchain: Any): js.Promise[Unit]
     
     /**
       * runs a call (or create) operation.
@@ -183,7 +183,7 @@ object mod {
     
     inline def apply(
       _common: typings.ethereumjsCommon.mod.default,
-      _emit: (String, js.Any) => js.Promise[Unit],
+      _emit: (String, Any) => js.Promise[Unit],
       _opcodes: OpcodeList,
       allowUnlimitedContractSize: Boolean,
       blockchain: typings.ethereumjsBlockchain.mod.default,
@@ -191,7 +191,7 @@ object mod {
       opts: VMOpts,
       pStateManager: typings.ethereumjsVm.promisifiedMod.default,
       runBlock: RunBlockOpts => js.Promise[RunBlockResult],
-      runBlockchain: js.Any => js.Promise[Unit],
+      runBlockchain: Any => js.Promise[Unit],
       runCall: RunCallOpts => js.Promise[EVMResult],
       runCode: RunCodeOpts => js.Promise[ExecResult],
       runTx: RunTxOpts => js.Promise[RunTxResult],
@@ -215,7 +215,7 @@ object mod {
       
       inline def setRunBlock(value: RunBlockOpts => js.Promise[RunBlockResult]): Self = StObject.set(x, "runBlock", js.Any.fromFunction1(value))
       
-      inline def setRunBlockchain(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "runBlockchain", js.Any.fromFunction1(value))
+      inline def setRunBlockchain(value: Any => js.Promise[Unit]): Self = StObject.set(x, "runBlockchain", js.Any.fromFunction1(value))
       
       inline def setRunCall(value: RunCallOpts => js.Promise[EVMResult]): Self = StObject.set(x, "runCall", js.Any.fromFunction1(value))
       
@@ -227,7 +227,7 @@ object mod {
       
       inline def set_common(value: typings.ethereumjsCommon.mod.default): Self = StObject.set(x, "_common", value.asInstanceOf[js.Any])
       
-      inline def set_emit(value: (String, js.Any) => js.Promise[Unit]): Self = StObject.set(x, "_emit", js.Any.fromFunction2(value))
+      inline def set_emit(value: (String, Any) => js.Promise[Unit]): Self = StObject.set(x, "_emit", js.Any.fromFunction2(value))
       
       inline def set_opcodes(value: OpcodeList): Self = StObject.set(x, "_opcodes", value.asInstanceOf[js.Any])
     }
@@ -273,7 +273,7 @@ object mod {
       * A [merkle-patricia-tree](https://github.com/ethereumjs/merkle-patricia-tree) instance for the state tree (ignored if stateManager is passed)
       * @deprecated
       */
-    var state: js.UndefOr[js.Any] = js.undefined
+    var state: js.UndefOr[Any] = js.undefined
     
     /**
       * A [[StateManager]] instance to use as the state store (Beta API)
@@ -313,7 +313,7 @@ object mod {
       
       inline def setHardforkUndefined: Self = StObject.set(x, "hardfork", js.undefined)
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateManager(value: StateManager): Self = StObject.set(x, "stateManager", value.asInstanceOf[js.Any])
       

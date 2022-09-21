@@ -8,26 +8,58 @@ object backoffTimeoutMod {
   
   @JSImport("@grpc/grpc-js/build/src/backoff-timeout", "BackoffTimeout")
   @js.native
-  class BackoffTimeout protected () extends StObject {
+  open class BackoffTimeout protected () extends StObject {
     def this(callback: js.Function0[Unit]) = this()
     def this(callback: js.Function0[Unit], options: BackoffOptions) = this()
     
-    /* private */ var callback: js.Any = js.native
-    
-    /* private */ var initialDelay: js.Any = js.native
-    
-    def isRunning(): Boolean = js.native
-    
-    /* private */ var jitter: js.Any = js.native
-    
-    /* private */ var maxDelay: js.Any = js.native
-    
-    /* private */ var multiplier: js.Any = js.native
-    
-    /* private */ var nextDelay: js.Any = js.native
+    /* private */ var callback: Any = js.native
     
     /**
-      * Reset the delay time to its initial value.
+      * Indicates whether the timer should keep the Node process running if no
+      * other async operation is doing so.
+      */
+    /* private */ var hasRef: Any = js.native
+    
+    /**
+      * The delay time at the start, and after each reset.
+      */
+    /* private */ val initialDelay: Any = js.native
+    
+    /**
+      * Check whether the timer is currently running.
+      */
+    def isRunning(): Boolean = js.native
+    
+    /**
+      * The maximum fraction by which the delay time can randomly vary after
+      * applying the multiplier.
+      */
+    /* private */ val jitter: Any = js.native
+    
+    /**
+      * The maximum delay time
+      */
+    /* private */ val maxDelay: Any = js.native
+    
+    /**
+      * The exponential backoff multiplier.
+      */
+    /* private */ val multiplier: Any = js.native
+    
+    /**
+      * The delay time for the next time the timer runs.
+      */
+    /* private */ var nextDelay: Any = js.native
+    
+    /**
+      * Set that while the timer is running, it should keep the Node process
+      * running.
+      */
+    def ref(): Unit = js.native
+    
+    /**
+      * Reset the delay time to its initial value. If the timer is still running,
+      * retroactively apply that reset to the current timer.
       */
     def reset(): Unit = js.native
     
@@ -36,7 +68,18 @@ object backoffTimeoutMod {
       */
     def runOnce(): Unit = js.native
     
-    /* private */ var running: js.Any = js.native
+    /* private */ var runTimer: Any = js.native
+    
+    /**
+      * Indicates whether the timer is currently running.
+      */
+    /* private */ var running: Any = js.native
+    
+    /**
+      * The time that the currently running timer was started. Only valid if
+      * running is true.
+      */
+    /* private */ var startTime: Any = js.native
     
     /**
       * Stop the timer. The callback will not be called until `runOnce` is called
@@ -44,7 +87,18 @@ object backoffTimeoutMod {
       */
     def stop(): Unit = js.native
     
-    /* private */ var timerId: js.Any = js.native
+    /**
+      * The handle of the underlying timer. If running is false, this value refers
+      * to an object representing a timer that has ended, but it can still be
+      * interacted with without error.
+      */
+    /* private */ var timerId: Any = js.native
+    
+    /**
+      * Set that while the timer is running, it should not keep the Node process
+      * running.
+      */
+    def unref(): Unit = js.native
   }
   
   trait BackoffOptions extends StObject {

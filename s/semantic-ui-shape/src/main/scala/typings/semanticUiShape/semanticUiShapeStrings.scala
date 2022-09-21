@@ -7,28 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object semanticUiShapeStrings {
   
   @js.native
-  sealed trait beforeChange extends StObject
-  inline def beforeChange: beforeChange = "beforeChange".asInstanceOf[beforeChange]
-  
-  @js.native
-  sealed trait className extends StObject
-  inline def className: className = "className".asInstanceOf[className]
-  
-  @js.native
-  sealed trait debug extends StObject
-  inline def debug: debug = "debug".asInstanceOf[debug]
-  
-  @js.native
   sealed trait destroy extends StObject
   inline def destroy: destroy = "destroy".asInstanceOf[destroy]
-  
-  @js.native
-  sealed trait duration extends StObject
-  inline def duration: duration = "duration".asInstanceOf[duration]
-  
-  @js.native
-  sealed trait error extends StObject
-  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait `flip back` extends StObject
@@ -71,10 +51,6 @@ object semanticUiShapeStrings {
   inline def `get transform up`: `get transform up` = ("get transform up").asInstanceOf[`get transform up`]
   
   @js.native
-  sealed trait height extends StObject
-  inline def height: height = "height".asInstanceOf[height]
-  
-  @js.native
   sealed trait initial extends StObject
   inline def initial: initial = "initial".asInstanceOf[initial]
   
@@ -83,24 +59,8 @@ object semanticUiShapeStrings {
   inline def `is animating`: `is animating` = ("is animating").asInstanceOf[`is animating`]
   
   @js.native
-  sealed trait name extends StObject
-  inline def name: name = "name".asInstanceOf[name]
-  
-  @js.native
-  sealed trait namespace extends StObject
-  inline def namespace: namespace = "namespace".asInstanceOf[namespace]
-  
-  @js.native
   sealed trait next extends StObject
   inline def next: next = "next".asInstanceOf[next]
-  
-  @js.native
-  sealed trait onChange extends StObject
-  inline def onChange: onChange = "onChange".asInstanceOf[onChange]
-  
-  @js.native
-  sealed trait performance extends StObject
-  inline def performance: performance = "performance".asInstanceOf[performance]
   
   @js.native
   sealed trait queue extends StObject
@@ -119,10 +79,6 @@ object semanticUiShapeStrings {
   inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait selector extends StObject
-  inline def selector: selector = "selector".asInstanceOf[selector]
-  
-  @js.native
   sealed trait `set default side` extends StObject
   inline def `set default side`: `set default side` = ("set default side").asInstanceOf[`set default side`]
   
@@ -137,16 +93,4 @@ object semanticUiShapeStrings {
   @js.native
   sealed trait setting extends StObject
   inline def setting: setting = "setting".asInstanceOf[setting]
-  
-  @js.native
-  sealed trait silent extends StObject
-  inline def silent: silent = "silent".asInstanceOf[silent]
-  
-  @js.native
-  sealed trait verbose extends StObject
-  inline def verbose: verbose = "verbose".asInstanceOf[verbose]
-  
-  @js.native
-  sealed trait width extends StObject
-  inline def width: width = "width".asInstanceOf[width]
 }

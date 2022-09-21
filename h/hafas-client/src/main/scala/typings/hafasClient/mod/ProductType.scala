@@ -50,7 +50,7 @@ object ProductType {
     
     inline def setBitmasks(value: js.Array[Double]): Self = StObject.set(x, "bitmasks", value.asInstanceOf[js.Any])
     
-    inline def setBitmasksVarargs(value: Double*): Self = StObject.set(x, "bitmasks", js.Array(value :_*))
+    inline def setBitmasksVarargs(value: Double*): Self = StObject.set(x, "bitmasks", js.Array(value*))
     
     inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

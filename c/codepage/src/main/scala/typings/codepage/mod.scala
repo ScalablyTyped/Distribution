@@ -3,7 +3,6 @@ package typings.codepage
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +38,7 @@ object mod extends Shortcut {
     }
   }
   
-  type CPData = String | js.Array[Double] | Uint8Array
+  type CPData = String | js.Array[Double] | js.typedarray.Uint8Array
   
   type CPIndex = Double | String
   
@@ -69,7 +68,7 @@ object mod extends Shortcut {
     }
   }
   
-  type CPString = String | js.Array[String] | Uint8Array
+  type CPString = String | js.Array[String] | js.typedarray.Uint8Array
   
   @js.native
   trait CPUtils extends StObject {
@@ -77,7 +76,7 @@ object mod extends Shortcut {
     def decode(cp: CPIndex, data: CPData): String = js.native
     
     def encode(cp: CPIndex, data: CPString): CPData = js.native
-    def encode(cp: CPIndex, data: CPString, opts: js.Any): CPData = js.native
+    def encode(cp: CPIndex, data: CPString, opts: Any): CPData = js.native
     
     def hascp(n: Double): Boolean = js.native
     

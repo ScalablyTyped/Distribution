@@ -10,7 +10,7 @@ trait Writeable extends StObject {
   def delete(): Operation[WriteResult] = js.native
   def delete(options: UpdateOptions): Operation[WriteResult] = js.native
   
-  def replace(expr: ExpressionFunction[js.Any]): Operation[WriteResult] = js.native
+  def replace(expr: ExpressionFunction[Any]): Operation[WriteResult] = js.native
   def replace(obj: js.Object): Operation[WriteResult] = js.native
   def replace(obj: js.Object, options: UpdateOptions): Operation[WriteResult] = js.native
   

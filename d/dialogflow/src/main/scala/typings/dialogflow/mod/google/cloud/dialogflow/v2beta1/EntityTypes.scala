@@ -14,7 +14,6 @@ import typings.dialogflow.mod.google.longrunning.Operation
 import typings.dialogflow.mod.google.protobuf.Empty
 import typings.protobufjs.mod.RPCImpl
 import typings.protobufjs.mod.rpc.Service
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents an EntityTypes */
 @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityTypes")
 @js.native
-class EntityTypes protected () extends Service {
+open class EntityTypes protected () extends Service {
   /**
     * Constructs a new EntityTypes service.
     * @param rpcImpl RPC implementation
@@ -188,68 +187,72 @@ object EntityTypes {
     * @param error Error, if any
     * @param [response] Operation
     */
-  type BatchCreateEntitiesCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type BatchCreateEntitiesCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.EntityTypes#batchDeleteEntities}.
     * @param error Error, if any
     * @param [response] Operation
     */
-  type BatchDeleteEntitiesCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type BatchDeleteEntitiesCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.EntityTypes#batchDeleteEntityTypes}.
     * @param error Error, if any
     * @param [response] Operation
     */
-  type BatchDeleteEntityTypesCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type BatchDeleteEntityTypesCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.EntityTypes#batchUpdateEntities}.
     * @param error Error, if any
     * @param [response] Operation
     */
-  type BatchUpdateEntitiesCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type BatchUpdateEntitiesCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.EntityTypes#batchUpdateEntityTypes}.
     * @param error Error, if any
     * @param [response] Operation
     */
-  type BatchUpdateEntityTypesCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type BatchUpdateEntityTypesCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.EntityTypes#createEntityType}.
     * @param error Error, if any
     * @param [response] EntityType
     */
-  type CreateEntityTypeCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[EntityType], Unit]
+  type CreateEntityTypeCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[EntityType], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.EntityTypes#deleteEntityType}.
     * @param error Error, if any
     * @param [response] Empty
     */
-  type DeleteEntityTypeCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Empty], Unit]
+  type DeleteEntityTypeCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Empty], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.EntityTypes#getEntityType}.
     * @param error Error, if any
     * @param [response] EntityType
     */
-  type GetEntityTypeCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[EntityType], Unit]
+  type GetEntityTypeCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[EntityType], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.EntityTypes#listEntityTypes}.
     * @param error Error, if any
     * @param [response] ListEntityTypesResponse
     */
-  type ListEntityTypesCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[ListEntityTypesResponse], Unit]
+  type ListEntityTypesCallback = js.Function2[
+    /* error */ js.Error | Null, 
+    /* response */ js.UndefOr[ListEntityTypesResponse], 
+    Unit
+  ]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.EntityTypes#updateEntityType}.
     * @param error Error, if any
     * @param [response] EntityType
     */
-  type UpdateEntityTypeCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[EntityType], Unit]
+  type UpdateEntityTypeCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[EntityType], Unit]
 }

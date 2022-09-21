@@ -8,8 +8,6 @@ trait LangAccessibilityExportingOptions extends StObject {
   
   var chartMenuLabel: js.UndefOr[String] = js.undefined
   
-  var exportRegionLabel: js.UndefOr[String] = js.undefined
-  
   var menuButtonLabel: js.UndefOr[String] = js.undefined
 }
 object LangAccessibilityExportingOptions {
@@ -24,10 +22,6 @@ object LangAccessibilityExportingOptions {
     inline def setChartMenuLabel(value: String): Self = StObject.set(x, "chartMenuLabel", value.asInstanceOf[js.Any])
     
     inline def setChartMenuLabelUndefined: Self = StObject.set(x, "chartMenuLabel", js.undefined)
-    
-    inline def setExportRegionLabel(value: String): Self = StObject.set(x, "exportRegionLabel", value.asInstanceOf[js.Any])
-    
-    inline def setExportRegionLabelUndefined: Self = StObject.set(x, "exportRegionLabel", js.undefined)
     
     inline def setMenuButtonLabel(value: String): Self = StObject.set(x, "menuButtonLabel", value.asInstanceOf[js.Any])
     

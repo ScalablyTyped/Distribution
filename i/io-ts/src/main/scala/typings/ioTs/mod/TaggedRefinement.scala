@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait TaggedRefinement[Tag /* <: String */, A, O]
-  extends RefinementType[Tagged[Tag, js.Any, js.Any], A, O, js.Any]
+  extends RefinementType[Tagged[Tag, Any, Any], A, O, Any]
      with _Tagged[Tag, A, O]

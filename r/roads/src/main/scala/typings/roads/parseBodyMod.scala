@@ -1,5 +1,6 @@
 package typings.roads
 
+import typings.roads.roadMod.Context
 import typings.roads.roadMod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,15 +8,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object parseBodyMod {
   
-  @JSImport("roads/types/middleware/parseBody", JSImport.Namespace)
+  @JSImport("roads/types/middleware/parseBody", "middleware")
   @js.native
-  val ^ : js.Any = js.native
+  val middleware: Middleware[Context] = js.native
   
-  /**
-    * Attempts the parse the request body into a useful object
-    */
-  @JSImport("roads/types/middleware/parseBody", JSImport.Default)
-  @js.native
-  def default: Middleware = js.native
-  inline def default_=(x: Middleware): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in string ]: unknown} */ trait ParseBodyContext[BodyType] extends StObject {
+    
+    var body: js.UndefOr[BodyType] = js.undefined
+  }
+  object ParseBodyContext {
+    
+    inline def apply[BodyType](): ParseBodyContext[BodyType] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ParseBodyContext[BodyType]]
+    }
+    
+    extension [Self <: ParseBodyContext[?], BodyType](x: Self & ParseBodyContext[BodyType]) {
+      
+      inline def setBody(value: BodyType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    }
+  }
 }

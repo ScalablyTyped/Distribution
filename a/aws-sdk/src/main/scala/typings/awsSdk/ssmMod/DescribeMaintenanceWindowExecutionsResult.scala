@@ -33,6 +33,6 @@ object DescribeMaintenanceWindowExecutionsResult {
     
     inline def setWindowExecutionsUndefined: Self = StObject.set(x, "WindowExecutions", js.undefined)
     
-    inline def setWindowExecutionsVarargs(value: MaintenanceWindowExecution*): Self = StObject.set(x, "WindowExecutions", js.Array(value :_*))
+    inline def setWindowExecutionsVarargs(value: MaintenanceWindowExecution*): Self = StObject.set(x, "WindowExecutions", js.Array(value*))
   }
 }

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait BreakType extends StObject
 /**
-  *
   * Specifies the form of a break.
   *
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.1]
   */
 @JSGlobal("Word.BreakType")
 @js.native
@@ -18,7 +18,8 @@ object BreakType extends StObject {
   
   /**
     * Line break.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait line
@@ -26,7 +27,11 @@ object BreakType extends StObject {
        with BreakType
   
   /**
-    * @deprecated Use sectionNext instead.
+    * **Warning**: `next` has been deprecated. Use `sectionNext` instead.
+    *
+    * @deprecated Use `sectionNext` instead.
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait next
@@ -35,7 +40,8 @@ object BreakType extends StObject {
   
   /**
     * Page break at the insertion point.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait page
@@ -44,7 +50,8 @@ object BreakType extends StObject {
   
   /**
     * New section without a corresponding page break.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait sectionContinuous
@@ -53,7 +60,8 @@ object BreakType extends StObject {
   
   /**
     * Section break with the next section beginning on the next even-numbered page. If the section break falls on an even-numbered page, Word leaves the next odd-numbered page blank.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait sectionEven
@@ -62,7 +70,8 @@ object BreakType extends StObject {
   
   /**
     * Section break on next page.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait sectionNext
@@ -71,7 +80,8 @@ object BreakType extends StObject {
   
   /**
     * Section break with the next section beginning on the next odd-numbered page. If the section break falls on an odd-numbered page, Word leaves the next even-numbered page blank.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
   sealed trait sectionOdd

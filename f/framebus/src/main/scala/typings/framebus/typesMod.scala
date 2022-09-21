@@ -48,28 +48,29 @@ object typesMod {
     }
   }
   
-  type FramebusReplyHandler = js.Function1[/* data */ js.Any, Unit]
+  type FramebusReplyHandler = js.Function1[/* data */ Any, Unit]
   
-  type FramebusSubscribeHandler = js.Function2[
-    /* data */ js.UndefOr[
-      FramebusSubscriberArg | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias framebus.framebus/dist/lib/types.FramebusSubscribeHandler */ js.Object)
-    ], 
-    /* reply */ js.UndefOr[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias framebus.framebus/dist/lib/types.FramebusSubscribeHandler */ js.Object
-    ], 
-    Unit
-  ]
+  @js.native
+  trait FramebusSubscribeHandler extends StObject {
+    
+    def apply(): Unit = js.native
+    def apply(data: Unit, reply: FramebusSubscribeHandler): Unit = js.native
+    def apply(data: FramebusSubscribeHandler): Unit = js.native
+    def apply(data: FramebusSubscribeHandler, reply: FramebusSubscribeHandler): Unit = js.native
+    def apply(data: FramebusSubscriberArg): Unit = js.native
+    def apply(data: FramebusSubscriberArg, reply: FramebusSubscribeHandler): Unit = js.native
+  }
   
   type FramebusSubscriber = Record[String, FramebusSubscription]
   
-  type FramebusSubscriberArg = Record[String, js.Any]
+  type FramebusSubscriberArg = Record[String, Any]
   
   type FramebusSubscription = Record[String, js.Array[FramebusSubscribeHandler]]
   
   @js.native
   trait ReplyFunction extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   object global {

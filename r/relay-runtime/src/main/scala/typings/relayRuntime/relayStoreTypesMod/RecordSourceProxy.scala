@@ -21,7 +21,7 @@ object RecordSourceProxy {
   inline def apply(
     create: (DataID, String) => RecordProxy[js.Object],
     delete: DataID => Unit,
-    get: DataID => js.UndefOr[RecordProxy[js.Any] | Null],
+    get: DataID => js.UndefOr[RecordProxy[Any] | Null],
     getRoot: () => RecordProxy[js.Object]
   ): RecordSourceProxy = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getRoot = js.Any.fromFunction0(getRoot))
@@ -34,7 +34,7 @@ object RecordSourceProxy {
     
     inline def setDelete(value: DataID => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    inline def setGet(value: DataID => js.UndefOr[RecordProxy[js.Any] | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: DataID => js.UndefOr[RecordProxy[Any] | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     inline def setGetRoot(value: () => RecordProxy[js.Object]): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
   }

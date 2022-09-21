@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ImageFormatOptions")
 @js.native
-class ImageFormatOptions ()
+open class ImageFormatOptions ()
   extends StObject
      with typings.devexpressWeb.ImageFormatOptions {
   

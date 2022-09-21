@@ -48,17 +48,17 @@ object packagerApiMod {
     
     val isWriteUpdateInfo: js.UndefOr[Boolean] = js.undefined
     
-    val packager: PlatformPackager[js.Any]
+    val packager: PlatformPackager[Any]
     
     val publishConfig: js.UndefOr[PublishConfiguration | Null] = js.undefined
     
     val target: Target | Null
     
-    var updateInfo: js.UndefOr[js.Any] = js.undefined
+    var updateInfo: js.UndefOr[Any] = js.undefined
   }
   object ArtifactCreated {
     
-    inline def apply(file: String, packager: PlatformPackager[js.Any]): ArtifactCreated = {
+    inline def apply(file: String, packager: PlatformPackager[Any]): ArtifactCreated = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], arch = null, target = null)
       __obj.asInstanceOf[ArtifactCreated]
     }
@@ -69,7 +69,7 @@ object packagerApiMod {
       
       inline def setIsWriteUpdateInfoUndefined: Self = StObject.set(x, "isWriteUpdateInfo", js.undefined)
       
-      inline def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
+      inline def setPackager(value: PlatformPackager[Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
       
       inline def setPublishConfig(value: PublishConfiguration): Self = StObject.set(x, "publishConfig", value.asInstanceOf[js.Any])
       
@@ -81,7 +81,7 @@ object packagerApiMod {
       
       inline def setTargetNull: Self = StObject.set(x, "target", null)
       
-      inline def setUpdateInfo(value: js.Any): Self = StObject.set(x, "updateInfo", value.asInstanceOf[js.Any])
+      inline def setUpdateInfo(value: Any): Self = StObject.set(x, "updateInfo", value.asInstanceOf[js.Any])
       
       inline def setUpdateInfoUndefined: Self = StObject.set(x, "updateInfo", js.undefined)
     }
@@ -91,14 +91,14 @@ object packagerApiMod {
     
     val config: js.UndefOr[Configuration | String | Null] = js.undefined
     
-    val effectiveOptionComputed: js.UndefOr[js.Function1[/* options */ js.Any, js.Promise[Boolean]]] = js.undefined
+    val effectiveOptionComputed: js.UndefOr[js.Function1[/* options */ Any, js.Promise[Boolean]]] = js.undefined
     
     var linux: js.UndefOr[js.Array[String]] = js.undefined
     
     var mac: js.UndefOr[js.Array[String]] = js.undefined
     
     var platformPackagerFactory: js.UndefOr[
-        (js.Function2[/* info */ Packager, /* platform */ Platform, PlatformPackager[js.Any]]) | Null
+        (js.Function2[/* info */ Packager, /* platform */ Platform, PlatformPackager[Any]]) | Null
       ] = js.undefined
     
     val prepackaged: js.UndefOr[String | Null] = js.undefined
@@ -124,7 +124,7 @@ object packagerApiMod {
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      inline def setEffectiveOptionComputed(value: /* options */ js.Any => js.Promise[Boolean]): Self = StObject.set(x, "effectiveOptionComputed", js.Any.fromFunction1(value))
+      inline def setEffectiveOptionComputed(value: /* options */ Any => js.Promise[Boolean]): Self = StObject.set(x, "effectiveOptionComputed", js.Any.fromFunction1(value))
       
       inline def setEffectiveOptionComputedUndefined: Self = StObject.set(x, "effectiveOptionComputed", js.undefined)
       
@@ -132,15 +132,15 @@ object packagerApiMod {
       
       inline def setLinuxUndefined: Self = StObject.set(x, "linux", js.undefined)
       
-      inline def setLinuxVarargs(value: String*): Self = StObject.set(x, "linux", js.Array(value :_*))
+      inline def setLinuxVarargs(value: String*): Self = StObject.set(x, "linux", js.Array(value*))
       
       inline def setMac(value: js.Array[String]): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
       
       inline def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
       
-      inline def setMacVarargs(value: String*): Self = StObject.set(x, "mac", js.Array(value :_*))
+      inline def setMacVarargs(value: String*): Self = StObject.set(x, "mac", js.Array(value*))
       
-      inline def setPlatformPackagerFactory(value: (/* info */ Packager, /* platform */ Platform) => PlatformPackager[js.Any]): Self = StObject.set(x, "platformPackagerFactory", js.Any.fromFunction2(value))
+      inline def setPlatformPackagerFactory(value: (/* info */ Packager, /* platform */ Platform) => PlatformPackager[Any]): Self = StObject.set(x, "platformPackagerFactory", js.Any.fromFunction2(value))
       
       inline def setPlatformPackagerFactoryNull: Self = StObject.set(x, "platformPackagerFactory", null)
       
@@ -166,7 +166,7 @@ object packagerApiMod {
       
       inline def setWinUndefined: Self = StObject.set(x, "win", js.undefined)
       
-      inline def setWinVarargs(value: String*): Self = StObject.set(x, "win", js.Array(value :_*))
+      inline def setWinVarargs(value: String*): Self = StObject.set(x, "win", js.Array(value*))
     }
   }
 }

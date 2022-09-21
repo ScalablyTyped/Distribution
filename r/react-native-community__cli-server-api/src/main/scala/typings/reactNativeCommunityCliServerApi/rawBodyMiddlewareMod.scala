@@ -12,5 +12,9 @@ object rawBodyMiddlewareMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(req: IncomingMessage, _res: ServerResponse, next: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(req.asInstanceOf[js.Any], _res.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(
+    req: IncomingMessage,
+    _res: ServerResponse[IncomingMessage],
+    next: js.Function1[/* err */ js.UndefOr[Any], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(req.asInstanceOf[js.Any], _res.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

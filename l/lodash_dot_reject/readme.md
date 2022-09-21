@@ -10,10 +10,10 @@ The lodash method `_.reject` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.reject |
 | Keywords           | lodash-modularized, reject |
-| # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 41738148 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5073745.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

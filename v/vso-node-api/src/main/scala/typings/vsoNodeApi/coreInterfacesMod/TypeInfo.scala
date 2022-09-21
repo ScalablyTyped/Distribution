@@ -22,14 +22,14 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/CoreInterfaces", "TypeInfo.Process")
   @js.native
-  def Process: js.Any = js.native
+  def Process: Any = js.native
   
   @JSImport("vso-node-api/interfaces/CoreInterfaces", "TypeInfo.ProcessType")
   @js.native
   def ProcessType: EnumValuesInherited = js.native
   inline def ProcessType_=(x: EnumValuesInherited): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProcessType")(x.asInstanceOf[js.Any])
   
-  inline def Process_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Process")(x.asInstanceOf[js.Any])
+  inline def Process_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Process")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/CoreInterfaces", "TypeInfo.ProjectChangeType")
   @js.native
@@ -38,13 +38,13 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/CoreInterfaces", "TypeInfo.ProjectInfo")
   @js.native
-  def ProjectInfo: js.Any = js.native
-  inline def ProjectInfo_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProjectInfo")(x.asInstanceOf[js.Any])
+  def ProjectInfo: Any = js.native
+  inline def ProjectInfo_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProjectInfo")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/CoreInterfaces", "TypeInfo.ProjectMessage")
   @js.native
-  def ProjectMessage: js.Any = js.native
-  inline def ProjectMessage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProjectMessage")(x.asInstanceOf[js.Any])
+  def ProjectMessage: Any = js.native
+  inline def ProjectMessage_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProjectMessage")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/CoreInterfaces", "TypeInfo.ProjectVisibility")
   @js.native
@@ -58,33 +58,33 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/CoreInterfaces", "TypeInfo.TeamProject")
   @js.native
-  def TeamProject: js.Any = js.native
+  def TeamProject: Any = js.native
   
   @JSImport("vso-node-api/interfaces/CoreInterfaces", "TypeInfo.TeamProjectReference")
   @js.native
-  def TeamProjectReference: js.Any = js.native
-  inline def TeamProjectReference_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamProjectReference")(x.asInstanceOf[js.Any])
+  def TeamProjectReference: Any = js.native
+  inline def TeamProjectReference_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamProjectReference")(x.asInstanceOf[js.Any])
   
-  inline def TeamProject_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamProject")(x.asInstanceOf[js.Any])
+  inline def TeamProject_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TeamProject")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/CoreInterfaces", "TypeInfo.TemporaryDataCreatedDTO")
   @js.native
-  def TemporaryDataCreatedDTO: js.Any = js.native
-  inline def TemporaryDataCreatedDTO_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TemporaryDataCreatedDTO")(x.asInstanceOf[js.Any])
+  def TemporaryDataCreatedDTO: Any = js.native
+  inline def TemporaryDataCreatedDTO_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TemporaryDataCreatedDTO")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/CoreInterfaces", "TypeInfo.WebApiConnectedService")
   @js.native
-  def WebApiConnectedService: js.Any = js.native
+  def WebApiConnectedService: Any = js.native
   
   @JSImport("vso-node-api/interfaces/CoreInterfaces", "TypeInfo.WebApiConnectedServiceDetails")
   @js.native
-  def WebApiConnectedServiceDetails: js.Any = js.native
-  inline def WebApiConnectedServiceDetails_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebApiConnectedServiceDetails")(x.asInstanceOf[js.Any])
+  def WebApiConnectedServiceDetails: Any = js.native
+  inline def WebApiConnectedServiceDetails_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebApiConnectedServiceDetails")(x.asInstanceOf[js.Any])
   
-  inline def WebApiConnectedService_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebApiConnectedService")(x.asInstanceOf[js.Any])
+  inline def WebApiConnectedService_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebApiConnectedService")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/CoreInterfaces", "TypeInfo.WebApiProject")
   @js.native
-  def WebApiProject: js.Any = js.native
-  inline def WebApiProject_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebApiProject")(x.asInstanceOf[js.Any])
+  def WebApiProject: Any = js.native
+  inline def WebApiProject_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebApiProject")(x.asInstanceOf[js.Any])
 }

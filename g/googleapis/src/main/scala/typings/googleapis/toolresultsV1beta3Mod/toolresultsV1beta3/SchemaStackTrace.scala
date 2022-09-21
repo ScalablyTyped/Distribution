@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A stacktrace.
-  */
 trait SchemaStackTrace extends StObject {
   
   /**
-    * The stack trace message.  Required
+    * The stack trace message. Required
     */
-  var exception: js.UndefOr[String] = js.undefined
+  var exception: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaStackTrace {
   
@@ -24,6 +21,8 @@ object SchemaStackTrace {
   extension [Self <: SchemaStackTrace](x: Self) {
     
     inline def setException(value: String): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+    
+    inline def setExceptionNull: Self = StObject.set(x, "exception", null)
     
     inline def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
   }

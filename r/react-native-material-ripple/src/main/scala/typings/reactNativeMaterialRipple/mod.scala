@@ -1,6 +1,5 @@
 package typings.reactNativeMaterialRipple
 
-import typings.react.anon.Children
 import typings.react.mod.Component
 import typings.reactNative.mod.TouchableWithoutFeedbackProps
 import typings.reactNativeMaterialRipple.anon.AnimatedPropsViewProps
@@ -13,10 +12,10 @@ object mod {
   
   @JSImport("react-native-material-ripple", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[RippleProps, js.Object, js.Any]
+  open class default ()
+    extends Component[RippleProps, js.Object, Any]
   
-  type Ripple = Component[RippleProps, js.Object, js.Any]
+  type Ripple = Component[RippleProps, js.Object, Any]
   
-  type RippleProps = TouchableWithoutFeedbackProps & Children & AnimatedPropsViewProps & Disabled
+  type RippleProps = TouchableWithoutFeedbackProps & AnimatedPropsViewProps & Disabled
 }

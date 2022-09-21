@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "CartesianAxis")
 @js.native
-class CartesianAxis protected ()
-  extends Component[CartesianAxisProps, js.Object, js.Any] {
+open class CartesianAxis protected ()
+  extends Component[CartesianAxisProps, js.Object, Any] {
   def this(props: CartesianAxisProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: CartesianAxisProps, context: js.Any) = this()
+  def this(props: CartesianAxisProps, context: Any) = this()
 }

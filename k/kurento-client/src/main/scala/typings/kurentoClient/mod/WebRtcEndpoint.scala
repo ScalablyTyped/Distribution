@@ -42,20 +42,14 @@ trait WebRtcEndpoint
   def gatherCandidates(): js.Promise[Unit] = js.native
   def gatherCandidates(callback: Callback[Unit]): js.Promise[Unit] = js.native
   
-  def getICECandidatePairs(): js.Promise[js.Any] = js.native
-  def getICECandidatePairs(callback: Callback[js.Any]): js.Promise[js.Any] = js.native
+  def getICECandidatePairs(): js.Promise[Any] = js.native
+  def getICECandidatePairs(callback: Callback[Any]): js.Promise[Any] = js.native
   
   def getIceConnectionState(): js.Promise[IceConnection] = js.native
   def getIceConnectionState(callback: Callback[IceConnection]): js.Promise[IceConnection] = js.native
   
-  def getMaxAudioRecvBandwidth(): js.Promise[Double] = js.native
-  def getMaxAudioRecvBandwidth(callback: Callback[Double]): js.Promise[Double] = js.native
-  
   def getMaxOutputBitrate(): js.Promise[Double] = js.native
   def getMaxOutputBitrate(callback: Callback[Double]): js.Promise[Double] = js.native
-  
-  def getMaxVideoRecvBandwidth(): js.Promise[Double] = js.native
-  def getMaxVideoRecvBandwidth(callback: Callback[Double]): js.Promise[Double] = js.native
   
   def getMaxVideoSendBandwidth(): js.Promise[Double] = js.native
   def getMaxVideoSendBandwidth(callback: Callback[Double]): js.Promise[Double] = js.native
@@ -100,17 +94,8 @@ trait WebRtcEndpoint
   @JSName("on")
   def on_OnIceCandidate(event: OnIceCandidate, callback: js.Function1[/* event */ EventOnIceCandidatecandid, Unit]): WebRtcEndpoint = js.native
   
-  def processOffer(offer: String): js.Promise[String] = js.native
-  def processOffer(offer: String, callback: Callback[String]): js.Promise[String] = js.native
-  
-  def setMaxAudioRecvBandwidth(value: Double): js.Promise[Unit] = js.native
-  def setMaxAudioRecvBandwidth(value: Double, callback: Callback[Unit]): js.Promise[Unit] = js.native
-  
   def setMaxOutputBitrate(value: Double): js.Promise[Unit] = js.native
   def setMaxOutputBitrate(value: Double, callback: Callback[Unit]): js.Promise[Unit] = js.native
-  
-  def setMaxVideoRecvBandwidth(value: Double): js.Promise[Unit] = js.native
-  def setMaxVideoRecvBandwidth(value: Double, callback: Callback[Unit]): js.Promise[Unit] = js.native
   
   def setMaxVideoSendBandwidth(value: Double): js.Promise[Unit] = js.native
   def setMaxVideoSendBandwidth(value: Double, callback: Callback[Unit]): js.Promise[Unit] = js.native

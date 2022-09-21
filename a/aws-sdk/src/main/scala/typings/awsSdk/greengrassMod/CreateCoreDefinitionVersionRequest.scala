@@ -40,6 +40,6 @@ object CreateCoreDefinitionVersionRequest {
     
     inline def setCoresUndefined: Self = StObject.set(x, "Cores", js.undefined)
     
-    inline def setCoresVarargs(value: Core*): Self = StObject.set(x, "Cores", js.Array(value :_*))
+    inline def setCoresVarargs(value: Core*): Self = StObject.set(x, "Cores", js.Array(value*))
   }
 }

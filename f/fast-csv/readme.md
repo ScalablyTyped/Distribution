@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-csv
 
-Typings are for version 4.3.5
+Typings are for version 4.3.6
 
 ## Library description:
 CSV parser and writer
@@ -10,13 +10,13 @@ CSV parser and writer
 | ------------------ | :-------------: |
 | Full name          | fast-csv |
 | Keywords           | csv, parser, fast, writer, csv writer, CSV |
-| # releases         | 33 |
-| # dependents       | 313 |
-| # downloads        | 18490852 |
-| # stars            | 56 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 3271135.3333333335 |
+| # stars            | 1311.0 |
 
 ## Links
-- [Homepage](http://c2fo.github.com/fast-csv)
+- [Homepage](https://github.com/C2FO/fast-csv#readme)
 - [Bugs](https://github.com/C2FO/fast-csv/issues)
 - [Repository](https://github.com/C2FO/fast-csv)
 - [Npm](https://www.npmjs.com/package/fast-csv)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AllocateAddressResult extends StObject {
   
   /**
-    * [EC2-VPC] The ID that AWS assigns to represent the allocation of the Elastic IP address for use with instances in a VPC.
+    * [EC2-VPC] The ID that Amazon Web Services assigns to represent the allocation of the Elastic IP address for use with instances in a VPC.
     */
   var AllocationId: js.UndefOr[String] = js.undefined
   
@@ -32,7 +32,7 @@ trait AllocateAddressResult extends StObject {
   var Domain: js.UndefOr[DomainType] = js.undefined
   
   /**
-    * The set of Availability Zones, Local Zones, or Wavelength Zones from which AWS advertises IP addresses.
+    * The set of Availability Zones, Local Zones, or Wavelength Zones from which Amazon Web Services advertises IP addresses.
     */
   var NetworkBorderGroup: js.UndefOr[String] = js.undefined
   

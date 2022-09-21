@@ -35,7 +35,7 @@ object DPlayerDanmaku {
     
     inline def setAdditionUndefined: Self = StObject.set(x, "addition", js.undefined)
     
-    inline def setAdditionVarargs(value: String*): Self = StObject.set(x, "addition", js.Array(value :_*))
+    inline def setAdditionVarargs(value: String*): Self = StObject.set(x, "addition", js.Array(value*))
     
     inline def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     

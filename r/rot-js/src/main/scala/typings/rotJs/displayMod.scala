@@ -18,7 +18,7 @@ object displayMod {
   
   @JSImport("rot-js/lib/display/display", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Display {
     def this(options: PartialDisplayOptions) = this()
@@ -129,6 +129,22 @@ object displayMod {
     def draw(x: Double, y: Double, ch: Null, fg: String): Unit = js.native
     def draw(x: Double, y: Double, ch: Null, fg: String, bg: String): Unit = js.native
     def draw(x: Double, y: Double, ch: Null, fg: Null, bg: String): Unit = js.native
+    
+    /**
+      * @param {int} x
+      * @param {int} y
+      * @param {string || string[]} ch One or more chars (will be overlapping themselves)
+      * @param {string || null} [fg] foreground color
+      * @param {string || null} [bg] background color
+      */
+    def drawOver(x: Double, y: Double): Unit = js.native
+    def drawOver(x: Double, y: Double, ch: String): Unit = js.native
+    def drawOver(x: Double, y: Double, ch: String, fg: String): Unit = js.native
+    def drawOver(x: Double, y: Double, ch: String, fg: String, bg: String): Unit = js.native
+    def drawOver(x: Double, y: Double, ch: String, fg: Null, bg: String): Unit = js.native
+    def drawOver(x: Double, y: Double, ch: Null, fg: String): Unit = js.native
+    def drawOver(x: Double, y: Double, ch: Null, fg: String, bg: String): Unit = js.native
+    def drawOver(x: Double, y: Double, ch: Null, fg: Null, bg: String): Unit = js.native
     
     /**
       * Draws a text at given position. Optionally wraps at a maximum length. Currently does not work with hex layout.

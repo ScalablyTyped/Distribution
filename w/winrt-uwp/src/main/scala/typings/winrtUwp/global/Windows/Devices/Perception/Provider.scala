@@ -59,7 +59,7 @@ object Provider {
   /** A group of IPerceptionFrameProvider identifiers to be controlled together. */
   @JSGlobal("Windows.Devices.Perception.Provider.PerceptionControlGroup")
   @js.native
-  class PerceptionControlGroup protected ()
+  open class PerceptionControlGroup protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionControlGroup {
     /**
@@ -76,7 +76,7 @@ object Provider {
   /** A description of the physical position and orientation of a device specified by the IPerceptionFrameProvider's unique identifier (PerceptionFrameProviderInfo::Id) sharing a common coordinate frame of other PerceptionCorrelations that will be combined into a PerceptionCorrelationGroup. */
   @JSGlobal("Windows.Devices.Perception.Provider.PerceptionCorrelation")
   @js.native
-  class PerceptionCorrelation protected ()
+  open class PerceptionCorrelation protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelation {
     /**
@@ -103,7 +103,7 @@ object Provider {
   /** A collection of PerceptionCorrelations describing multiple unique providers in a common coordinate frame. */
   @JSGlobal("Windows.Devices.Perception.Provider.PerceptionCorrelationGroup")
   @js.native
-  class PerceptionCorrelationGroup protected ()
+  open class PerceptionCorrelationGroup protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelationGroup {
     /**
@@ -120,7 +120,7 @@ object Provider {
   /** A group of unique identifiers specifying IPerceptionFrameProviders that share handlers for entering and exiting Face Authentication mode. */
   @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFaceAuthenticationGroup")
   @js.native
-  class PerceptionFaceAuthenticationGroup protected ()
+  open class PerceptionFaceAuthenticationGroup protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFaceAuthenticationGroup {
     /**
@@ -164,7 +164,7 @@ object Provider {
   @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderInfo")
   @js.native
   /** Initializes a new PerceptionFrameProviderInfo instance. */
-  class PerceptionFrameProviderInfo ()
+  open class PerceptionFrameProviderInfo ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrameProviderInfo {
     
@@ -333,13 +333,13 @@ object Provider {
     
     /** Gets the requested new value of the property. */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /** An allocator that can create PerceptionFrames directly which can be written into or copied from Windows::Media::VideoFrame into a PerceptionFrame. */
   @JSGlobal("Windows.Devices.Perception.Provider.PerceptionVideoFrameAllocator")
   @js.native
-  class PerceptionVideoFrameAllocator protected ()
+  open class PerceptionVideoFrameAllocator protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionVideoFrameAllocator {
     /**

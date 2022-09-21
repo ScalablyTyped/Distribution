@@ -42,7 +42,7 @@ object ClassedSizeSliderProperties {
     
     inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
     
-    inline def setBreaksVarargs(value: ClassedSizeSliderBreaks*): Self = StObject.set(x, "breaks", js.Array(value :_*))
+    inline def setBreaksVarargs(value: ClassedSizeSliderBreaks*): Self = StObject.set(x, "breaks", js.Array(value*))
     
     inline def setStyle(value: ClassedSizeSliderStyleProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

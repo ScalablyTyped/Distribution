@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("plottable", "Component")
 @js.native
-class Component ()
+open class Component ()
   extends typings.plottable.componentMod.Component
 /* static members */
 object Component {
@@ -17,11 +17,11 @@ object Component {
   
   @JSImport("plottable", "Component._xAlignToProportion")
   @js.native
-  def _xAlignToProportion: js.Any = js.native
-  inline def _xAlignToProportion_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_xAlignToProportion")(x.asInstanceOf[js.Any])
+  def _xAlignToProportion: Any = js.native
+  inline def _xAlignToProportion_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_xAlignToProportion")(x.asInstanceOf[js.Any])
   
   @JSImport("plottable", "Component._yAlignToProportion")
   @js.native
-  def _yAlignToProportion: js.Any = js.native
-  inline def _yAlignToProportion_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_yAlignToProportion")(x.asInstanceOf[js.Any])
+  def _yAlignToProportion: Any = js.native
+  inline def _yAlignToProportion_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_yAlignToProportion")(x.asInstanceOf[js.Any])
 }

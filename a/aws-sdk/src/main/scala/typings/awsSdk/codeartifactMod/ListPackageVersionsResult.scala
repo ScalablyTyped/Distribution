@@ -18,12 +18,12 @@ trait ListPackageVersionsResult extends StObject {
   var defaultDisplayVersion: js.UndefOr[PackageVersion] = js.undefined
   
   /**
-    *  A format of the package. Valid package format values are:     npm     pypi     maven   
+    *  A format of the package. 
     */
   var format: js.UndefOr[PackageFormat] = js.undefined
   
   /**
-    *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
+    * The namespace of the package that contains the requested package versions. The package component that specifies its namespace depends on its type. For example:    The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     Python and NuGet packages do not contain a corresponding component, packages of those formats do not have a namespace.   
     */
   var namespace: js.UndefOr[PackageNamespace] = js.undefined
   
@@ -33,7 +33,7 @@ trait ListPackageVersionsResult extends StObject {
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    *  The returned list of  PackageVersionSummary  objects. 
+    *  The returned list of PackageVersionSummary objects. 
     */
   var versions: js.UndefOr[PackageVersionSummaryList] = js.undefined
 }
@@ -66,7 +66,7 @@ object ListPackageVersionsResult {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    inline def setVersionsVarargs(value: PackageVersionSummary*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: PackageVersionSummary*): Self = StObject.set(x, "versions", js.Array(value*))
     
     inline def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     

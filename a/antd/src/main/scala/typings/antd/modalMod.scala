@@ -1,9 +1,10 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.anon.RootPrefixCls
+import typings.antd.anon.Config
 import typings.antd.confirmMod.ModalStaticFunctions
-import typings.antd.modalModalMod.ModalInterface
+import typings.antd.modalModalMod.ModalProps
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,16 +15,7 @@ object modalMod extends Shortcut {
   @js.native
   val default: ModalType = js.native
   
-  @js.native
-  trait ModalType
-    extends StObject
-       with ModalInterface
-       with ModalStaticFunctions {
-    
-    var config: js.Function1[/* hasRootPrefixCls */ RootPrefixCls, Unit] = js.native
-    
-    def destroyAll(): Unit = js.native
-  }
+  type ModalType = FC[ModalProps] & ModalStaticFunctions & Config
   
   type _To = ModalType
   

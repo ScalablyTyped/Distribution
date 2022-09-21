@@ -23,10 +23,10 @@ trait PropertyChangeEvent
   var Further: Boolean
   
   /** contains the new value of the property. */
-  var NewValue: js.Any
+  var NewValue: Any
   
   /** contains the old value of the property. */
-  var OldValue: js.Any
+  var OldValue: Any
   
   /**
     * contains the implementation handle for the property.
@@ -42,8 +42,8 @@ object PropertyChangeEvent {
   
   inline def apply(
     Further: Boolean,
-    NewValue: js.Any,
-    OldValue: js.Any,
+    NewValue: Any,
+    OldValue: Any,
     PropertyHandle: Double,
     PropertyName: String,
     Source: XInterface
@@ -56,9 +56,9 @@ object PropertyChangeEvent {
     
     inline def setFurther(value: Boolean): Self = StObject.set(x, "Further", value.asInstanceOf[js.Any])
     
-    inline def setNewValue(value: js.Any): Self = StObject.set(x, "NewValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: Any): Self = StObject.set(x, "NewValue", value.asInstanceOf[js.Any])
     
-    inline def setOldValue(value: js.Any): Self = StObject.set(x, "OldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Any): Self = StObject.set(x, "OldValue", value.asInstanceOf[js.Any])
     
     inline def setPropertyHandle(value: Double): Self = StObject.set(x, "PropertyHandle", value.asInstanceOf[js.Any])
     

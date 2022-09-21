@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("scrivito", "CurrentPage")
 @js.native
-class CurrentPage_ protected ()
-  extends Component[js.Object, js.Any, js.Any] {
+open class CurrentPage_ protected ()
+  extends Component[js.Object, Any, Any] {
   def this(props: js.Object) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: js.Object, context: js.Any) = this()
+  def this(props: js.Object, context: Any) = this()
 }

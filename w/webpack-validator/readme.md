@@ -11,9 +11,9 @@ Validate your webpack config with joi
 | Full name          | webpack-validator |
 | Keywords           | webpack, config, schema, validation, joi |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 297545 |
-| # stars            | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 16016.0 |
+| # stars            | 295.0 |
 
 ## Links
 - [Homepage](https://github.com/js-dxtools/webpack-validator#readme)

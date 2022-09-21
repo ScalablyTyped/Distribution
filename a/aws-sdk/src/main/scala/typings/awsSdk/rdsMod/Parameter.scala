@@ -32,7 +32,7 @@ trait Parameter extends StObject {
   var Description: js.UndefOr[String] = js.undefined
   
   /**
-    *  Indicates whether (true) or not (false) the parameter can be modified. Some parameters have security or operational implications that prevent them from being changed. 
+    * Indicates whether (true) or not (false) the parameter can be modified. Some parameters have security or operational implications that prevent them from being changed.
     */
   var IsModifiable: js.UndefOr[Boolean] = js.undefined
   
@@ -114,6 +114,6 @@ object Parameter {
     
     inline def setSupportedEngineModesUndefined: Self = StObject.set(x, "SupportedEngineModes", js.undefined)
     
-    inline def setSupportedEngineModesVarargs(value: String*): Self = StObject.set(x, "SupportedEngineModes", js.Array(value :_*))
+    inline def setSupportedEngineModesVarargs(value: String*): Self = StObject.set(x, "SupportedEngineModes", js.Array(value*))
   }
 }

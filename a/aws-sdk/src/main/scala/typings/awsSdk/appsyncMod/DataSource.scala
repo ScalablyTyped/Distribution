@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataSource extends StObject {
   
   /**
-    * The data source ARN.
+    * The data source Amazon Resource Name (ARN).
     */
   var dataSourceArn: js.UndefOr[String] = js.undefined
   
@@ -17,12 +17,12 @@ trait DataSource extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Amazon DynamoDB settings.
+    * DynamoDB settings.
     */
   var dynamodbConfig: js.UndefOr[DynamodbDataSourceConfig] = js.undefined
   
   /**
-    * Amazon Elasticsearch Service settings.
+    * Amazon OpenSearch Service settings.
     */
   var elasticsearchConfig: js.UndefOr[ElasticsearchDataSourceConfig] = js.undefined
   
@@ -32,7 +32,7 @@ trait DataSource extends StObject {
   var httpConfig: js.UndefOr[HttpDataSourceConfig] = js.undefined
   
   /**
-    * AWS Lambda settings.
+    * Lambda settings.
     */
   var lambdaConfig: js.UndefOr[LambdaDataSourceConfig] = js.undefined
   
@@ -42,17 +42,22 @@ trait DataSource extends StObject {
   var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
+    * Amazon OpenSearch Service settings.
+    */
+  var openSearchServiceConfig: js.UndefOr[OpenSearchServiceDataSourceConfig] = js.undefined
+  
+  /**
     * Relational database settings.
     */
   var relationalDatabaseConfig: js.UndefOr[RelationalDatabaseDataSourceConfig] = js.undefined
   
   /**
-    * The AWS IAM service role ARN for the data source. The system assumes this role when accessing the data source.
+    * The Identity and Access Management (IAM) service role Amazon Resource Name (ARN) for the data source. The system assumes this role when accessing the data source.
     */
   var serviceRoleArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of the data source.    AMAZON_DYNAMODB: The data source is an Amazon DynamoDB table.    AMAZON_ELASTICSEARCH: The data source is an Amazon Elasticsearch Service domain.    AWS_LAMBDA: The data source is an AWS Lambda function.    NONE: There is no data source. This type is used when you wish to invoke a GraphQL operation without connecting to a data source, such as performing data transformation with resolvers or triggering a subscription to be invoked from a mutation.    HTTP: The data source is an HTTP endpoint.    RELATIONAL_DATABASE: The data source is a relational database.  
+    * The type of the data source.    AWS_LAMBDA: The data source is an Lambda function.    AMAZON_DYNAMODB: The data source is an Amazon DynamoDB table.    AMAZON_ELASTICSEARCH: The data source is an Amazon OpenSearch Service domain.    AMAZON_OPENSEARCH_SERVICE: The data source is an Amazon OpenSearch Service domain.    NONE: There is no data source. Use this type when you want to invoke a GraphQL operation without connecting to a data source, such as when you're performing data transformation with resolvers or invoking a subscription from a mutation.    HTTP: The data source is an HTTP endpoint.    RELATIONAL_DATABASE: The data source is a relational database.  
     */
   var `type`: js.UndefOr[DataSourceType] = js.undefined
 }
@@ -92,6 +97,10 @@ object DataSource {
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOpenSearchServiceConfig(value: OpenSearchServiceDataSourceConfig): Self = StObject.set(x, "openSearchServiceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setOpenSearchServiceConfigUndefined: Self = StObject.set(x, "openSearchServiceConfig", js.undefined)
     
     inline def setRelationalDatabaseConfig(value: RelationalDatabaseDataSourceConfig): Self = StObject.set(x, "relationalDatabaseConfig", value.asInstanceOf[js.Any])
     

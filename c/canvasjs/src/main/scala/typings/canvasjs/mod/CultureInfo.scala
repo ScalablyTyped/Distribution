@@ -106,7 +106,7 @@ object CultureInfo {
     
     inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
     
-    inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
+    inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value*))
     
     inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
     
@@ -124,7 +124,7 @@ object CultureInfo {
     
     inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
     
-    inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+    inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
     
     inline def setPanText(value: String): Self = StObject.set(x, "panText", value.asInstanceOf[js.Any])
     
@@ -146,13 +146,13 @@ object CultureInfo {
     
     inline def setShortDaysUndefined: Self = StObject.set(x, "shortDays", js.undefined)
     
-    inline def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value :_*))
+    inline def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value*))
     
     inline def setShortMonths(value: js.Array[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
     
     inline def setShortMonthsUndefined: Self = StObject.set(x, "shortMonths", js.undefined)
     
-    inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
+    inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value*))
     
     inline def setZoomText(value: String): Self = StObject.set(x, "zoomText", value.asInstanceOf[js.Any])
     

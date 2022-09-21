@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object asyncMod {
   
-  @JSImport("rxjs/internal/scheduler/async", "async")
+  @JSImport("rxjs/dist/types/internal/scheduler/async", "async")
   @js.native
   val async: AsyncScheduler = js.native
   
-  @JSImport("rxjs/internal/scheduler/async", "asyncScheduler")
+  @JSImport("rxjs/dist/types/internal/scheduler/async", "asyncScheduler")
   @js.native
   val asyncScheduler: AsyncScheduler = js.native
 }

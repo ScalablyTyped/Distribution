@@ -1,11 +1,12 @@
 package typings.mqtt
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.mqtt.anon.AuthenticationData
 import typings.mqtt.anon.CorrelationData
 import typings.mqtt.anon.Host
 import typings.mqtt.anon.Payload
+import typings.mqtt.anon.SubscriptionIdentifier
 import typings.mqtt.clientMod.MqttClient
+import typings.mqtt.messageIdProviderMod.IMessageIdProvider
 import typings.mqtt.mqttStrings.mqtts
 import typings.mqtt.mqttStrings.ssl
 import typings.mqtt.mqttStrings.tcp
@@ -15,7 +16,9 @@ import typings.mqtt.mqttStrings.wx
 import typings.mqtt.mqttStrings.wxs
 import typings.mqtt.storeMod.Store
 import typings.mqttPacket.mod.QoS
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.node.httpMod.ClientRequestArgs
+import typings.ws.mod.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,6 +59,8 @@ object clientOptionsMod {
       *  10 seconds, set to 0 to disable
       */
     var keepalive: js.UndefOr[Double] = js.undefined
+    
+    var messageIdProvider: js.UndefOr[IMessageIdProvider] = js.undefined
     
     /**
       * a Store for the outgoing packets
@@ -115,7 +120,7 @@ object clientOptionsMod {
       */
     var will: js.UndefOr[Payload] = js.undefined
     
-    var wsOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var wsOptions: js.UndefOr[ClientOptions | ClientRequestArgs] = js.undefined
   }
   object IClientOptions {
     
@@ -153,6 +158,10 @@ object clientOptionsMod {
       inline def setKeepalive(value: Double): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
       
       inline def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
+      
+      inline def setMessageIdProvider(value: IMessageIdProvider): Self = StObject.set(x, "messageIdProvider", value.asInstanceOf[js.Any])
+      
+      inline def setMessageIdProviderUndefined: Self = StObject.set(x, "messageIdProvider", js.undefined)
       
       inline def setOutgoingStore(value: Store): Self = StObject.set(x, "outgoingStore", value.asInstanceOf[js.Any])
       
@@ -206,7 +215,7 @@ object clientOptionsMod {
       
       inline def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
       
-      inline def setServersVarargs(value: Host*): Self = StObject.set(x, "servers", js.Array(value :_*))
+      inline def setServersVarargs(value: Host*): Self = StObject.set(x, "servers", js.Array(value*))
       
       inline def setTransformWsUrl(value: (/* url */ String, IClientOptions, /* client */ MqttClient) => String): Self = StObject.set(x, "transformWsUrl", js.Any.fromFunction3(value))
       
@@ -220,7 +229,7 @@ object clientOptionsMod {
       
       inline def setWillUndefined: Self = StObject.set(x, "will", js.undefined)
       
-      inline def setWsOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "wsOptions", value.asInstanceOf[js.Any])
+      inline def setWsOptions(value: ClientOptions | ClientRequestArgs): Self = StObject.set(x, "wsOptions", value.asInstanceOf[js.Any])
       
       inline def setWsOptionsUndefined: Self = StObject.set(x, "wsOptions", js.undefined)
     }
@@ -322,6 +331,11 @@ object clientOptionsMod {
       * */
     var nl: js.UndefOr[Boolean] = js.undefined
     
+    /*
+      *  MQTT 5.0 properies object of subscribe
+      * */
+    var properties: js.UndefOr[SubscriptionIdentifier] = js.undefined
+    
     /**
       * the QoS
       */
@@ -350,6 +364,10 @@ object clientOptionsMod {
       
       inline def setNlUndefined: Self = StObject.set(x, "nl", js.undefined)
       
+      inline def setProperties(value: SubscriptionIdentifier): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      
       inline def setQos(value: QoS): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
       
       inline def setRap(value: Boolean): Self = StObject.set(x, "rap", value.asInstanceOf[js.Any])
@@ -363,6 +381,13 @@ object clientOptionsMod {
   }
   
   trait ISecureClientOptions extends StObject {
+    
+    /**
+      * optional alpn's
+      */
+    var ALPNProtocols: js.UndefOr[
+        (js.Array[Buffer | String | js.typedarray.Uint8Array]) | Buffer | js.typedarray.Uint8Array
+      ] = js.undefined
     
     /**
       * Optionally override the trusted CA certificates in PEM format
@@ -390,23 +415,29 @@ object clientOptionsMod {
     
     extension [Self <: ISecureClientOptions](x: Self) {
       
+      inline def setALPNProtocols(value: (js.Array[Buffer | String | js.typedarray.Uint8Array]) | Buffer | js.typedarray.Uint8Array): Self = StObject.set(x, "ALPNProtocols", value.asInstanceOf[js.Any])
+      
+      inline def setALPNProtocolsUndefined: Self = StObject.set(x, "ALPNProtocols", js.undefined)
+      
+      inline def setALPNProtocolsVarargs(value: (Buffer | String | js.typedarray.Uint8Array)*): Self = StObject.set(x, "ALPNProtocols", js.Array(value*))
+      
       inline def setCa(value: String | (js.Array[Buffer | String]) | Buffer): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCaVarargs(value: (Buffer | String)*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: (Buffer | String)*): Self = StObject.set(x, "ca", js.Array(value*))
       
       inline def setCert(value: String | (js.Array[Buffer | String]) | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
       inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      inline def setCertVarargs(value: (Buffer | String)*): Self = StObject.set(x, "cert", js.Array(value :_*))
+      inline def setCertVarargs(value: (Buffer | String)*): Self = StObject.set(x, "cert", js.Array(value*))
       
       inline def setKey(value: String | (js.Array[Buffer | js.Object | String]) | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setKeyVarargs(value: (Buffer | js.Object | String)*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: (Buffer | js.Object | String)*): Self = StObject.set(x, "key", js.Array(value*))
       
       inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
       

@@ -10,7 +10,7 @@ object epicDiscussionsMod {
   
   @JSImport("gitlab/dist/types/core/services/EpicDiscussions", "EpicDiscussions")
   @js.native
-  class EpicDiscussions protected () extends ResourceDiscussions {
+  open class EpicDiscussions protected () extends ResourceDiscussions {
     def this(options: BaseServiceOptions) = this()
   }
 }

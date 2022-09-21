@@ -1,6 +1,5 @@
 package typings.runParallelLimit
 
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +16,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback[T] = js.Function2[/* err */ Error, /* results */ T, Unit]
+  type Callback[T] = js.Function2[/* err */ js.Error, /* results */ T, Unit]
   
   type Task[T] = js.Function1[/* callback */ TaskCallback[T], Unit]
   
-  type TaskCallback[T] = js.Function2[/* err */ Error | Null, /* results */ js.UndefOr[T], Unit]
+  type TaskCallback[T] = js.Function2[/* err */ js.Error | Null, /* results */ js.UndefOr[T], Unit]
   
   type TaskObj[T] = Record[String, Task[T]]
 }

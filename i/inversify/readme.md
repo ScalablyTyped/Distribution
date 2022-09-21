@@ -1,7 +1,7 @@
 
 # Scala.js typings for inversify
 
-Typings are for version 5.0.1
+Typings are for version 6.0.1
 
 ## Library description:
 A powerful and lightweight inversion of control container for JavaScript and Node.js apps powered by TypeScript.
@@ -10,10 +10,10 @@ A powerful and lightweight inversion of control container for JavaScript and Nod
 | ------------------ | :-------------: |
 | Full name          | inversify |
 | Keywords           | ioc, di, javascript, typescript, node, dependency injection, dependency inversion, inversion of control container |
-| # releases         | 2 |
-| # dependents       | 838 |
-| # downloads        | 20505127 |
-| # stars            | 22 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2579996.6666666665 |
+| # stars            | 9123.0 |
 
 ## Links
 - [Homepage](http://inversify.io)

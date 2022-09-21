@@ -94,7 +94,7 @@ object AMap {
         
         inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
         
-        inline def setDestinationVarargs(value: LocationValue*): Self = StObject.set(x, "destination", js.Array(value :_*))
+        inline def setDestinationVarargs(value: LocationValue*): Self = StObject.set(x, "destination", js.Array(value*))
         
         inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
         
@@ -137,13 +137,13 @@ object AMap {
         
         inline def setBounds(value: js.Array[js.Array[js.Array[js.Array[String]]]]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
-        inline def setBoundsVarargs(value: js.Array[js.Array[js.Array[String]]]*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+        inline def setBoundsVarargs(value: js.Array[js.Array[js.Array[String]]]*): Self = StObject.set(x, "bounds", js.Array(value*))
         
         inline def setInRange(value: js.Array[Boolean]): Self = StObject.set(x, "inRange", value.asInstanceOf[js.Any])
         
         inline def setInRangeUndefined: Self = StObject.set(x, "inRange", js.undefined)
         
-        inline def setInRangeVarargs(value: Boolean*): Self = StObject.set(x, "inRange", js.Array(value :_*))
+        inline def setInRangeVarargs(value: Boolean*): Self = StObject.set(x, "inRange", js.Array(value*))
         
         inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         

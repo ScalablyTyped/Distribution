@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.ParameterListSyntax")
 @js.native
-class ParameterListSyntax protected ()
+open class ParameterListSyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.ParameterListSyntax {
   def this(
@@ -23,7 +23,7 @@ class ParameterListSyntax protected ()
   ) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): ISyntaxElement = js.native

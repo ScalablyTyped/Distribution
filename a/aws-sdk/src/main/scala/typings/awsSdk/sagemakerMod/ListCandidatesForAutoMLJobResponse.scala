@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListCandidatesForAutoMLJobResponse extends StObject {
   
   /**
-    * Summaries about the Candidates.
+    * Summaries about the AutoMLCandidates.
     */
   var Candidates: AutoMLCandidates
   
@@ -27,7 +27,7 @@ object ListCandidatesForAutoMLJobResponse {
     
     inline def setCandidates(value: AutoMLCandidates): Self = StObject.set(x, "Candidates", value.asInstanceOf[js.Any])
     
-    inline def setCandidatesVarargs(value: AutoMLCandidate*): Self = StObject.set(x, "Candidates", js.Array(value :_*))
+    inline def setCandidatesVarargs(value: AutoMLCandidate*): Self = StObject.set(x, "Candidates", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

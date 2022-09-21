@@ -13,22 +13,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KnockoutObservableArrayFunctions[T] extends StObject {
   
   def all(iterator: ListIterator[T, Boolean, List[T]]): Boolean = js.native
-  def all(iterator: ListIterator[T, Boolean, List[T]], context: js.Any): Boolean = js.native
+  def all(iterator: ListIterator[T, Boolean, List[T]], context: Any): Boolean = js.native
   
   def any(): Boolean = js.native
-  def any(iterator: Unit, context: js.Any): Boolean = js.native
+  def any(iterator: Unit, context: Any): Boolean = js.native
   def any(iterator: ListIterator[T, Boolean, List[T]]): Boolean = js.native
-  def any(iterator: ListIterator[T, Boolean, List[T]], context: js.Any): Boolean = js.native
+  def any(iterator: ListIterator[T, Boolean, List[T]], context: Any): Boolean = js.native
   
   /* **
     Chaining
     *****/
-  def chain(`object`: js.Any): js.Any = js.native
+  def chain(`object`: Any): Any = js.native
   
   def collect[TResult](iterator: (ListIterator[T, TResult, List[T]]) | (ObjectIterator[T, TResult, Dictionary[T]])): js.Array[TResult] = js.native
   def collect[TResult](
     iterator: (ListIterator[T, TResult, List[T]]) | (ObjectIterator[T, TResult, Dictionary[T]]),
-    context: js.Any
+    context: Any
   ): js.Array[TResult] = js.native
   
   def compact(): js.Array[T] = js.native
@@ -38,10 +38,10 @@ trait KnockoutObservableArrayFunctions[T] extends StObject {
   def contains(value: T): Boolean = js.native
   
   def countBy(iterator: String): Dictionary[js.Array[Double]] = js.native
-  def countBy(iterator: ListIterator[T, js.Any, List[T]]): Dictionary[js.Array[Double]] = js.native
+  def countBy(iterator: ListIterator[T, Any, List[T]]): Dictionary[js.Array[Double]] = js.native
   
   def detect(iterator: ListIterator[T, Boolean, List[T]]): T = js.native
-  def detect(iterator: ListIterator[T, Boolean, List[T]], context: js.Any): T = js.native
+  def detect(iterator: ListIterator[T, Boolean, List[T]], context: Any): T = js.native
   
   def difference(others: js.Array[T]*): js.Array[T] = js.native
   
@@ -59,20 +59,20 @@ trait KnockoutObservableArrayFunctions[T] extends StObject {
   def each[TResult](iterator: (ListIterator[T, TResult, List[T]]) | (ObjectIterator[T, TResult, Dictionary[T]])): js.Array[TResult] = js.native
   def each[TResult](
     iterator: (ListIterator[T, TResult, List[T]]) | (ObjectIterator[T, TResult, Dictionary[T]]),
-    context: js.Any
+    context: Any
   ): js.Array[TResult] = js.native
   
   def every(iterator: ListIterator[T, Boolean, List[T]]): Boolean = js.native
-  def every(iterator: ListIterator[T, Boolean, List[T]], context: js.Any): Boolean = js.native
+  def every(iterator: ListIterator[T, Boolean, List[T]], context: Any): Boolean = js.native
   
   def filter(iterator: ListIterator[T, Boolean, List[T]]): js.Array[T] = js.native
-  def filter(iterator: ListIterator[T, Boolean, List[T]], context: js.Any): js.Array[T] = js.native
+  def filter(iterator: ListIterator[T, Boolean, List[T]], context: Any): js.Array[T] = js.native
   
   def filter_(iterator: ListIterator[T, Boolean, List[T]]): js.Array[T] = js.native
-  def filter_(iterator: ListIterator[T, Boolean, List[T]], context: js.Any): js.Array[T] = js.native
+  def filter_(iterator: ListIterator[T, Boolean, List[T]], context: Any): js.Array[T] = js.native
   
   def find(iterator: ListIterator[T, Boolean, List[T]]): T = js.native
-  def find(iterator: ListIterator[T, Boolean, List[T]], context: js.Any): T = js.native
+  def find(iterator: ListIterator[T, Boolean, List[T]], context: Any): T = js.native
   
   /* **
     Arrays
@@ -80,22 +80,22 @@ trait KnockoutObservableArrayFunctions[T] extends StObject {
   def first(): T = js.native
   def first(n: Double): js.Array[T] = js.native
   
-  def flatten(): js.Array[js.Any] = js.native
-  def flatten(shallow: Boolean): js.Array[js.Any] = js.native
+  def flatten(): js.Array[Any] = js.native
+  def flatten(shallow: Boolean): js.Array[Any] = js.native
   
-  def flatten_(): js.Array[js.Any] = js.native
-  def flatten_(shallow: Boolean): js.Array[js.Any] = js.native
+  def flatten_(): js.Array[Any] = js.native
+  def flatten_(shallow: Boolean): js.Array[Any] = js.native
   
   def foldl[TResult](iterator: MemoIterator[T, TResult, List[T]], memo: TResult): TResult = js.native
-  def foldl[TResult](iterator: MemoIterator[T, TResult, List[T]], memo: TResult, context: js.Any): TResult = js.native
+  def foldl[TResult](iterator: MemoIterator[T, TResult, List[T]], memo: TResult, context: Any): TResult = js.native
   
   def foldr[TResult](iterator: MemoIterator[T, TResult, List[T]], memo: TResult): TResult = js.native
-  def foldr[TResult](iterator: MemoIterator[T, TResult, List[T]], memo: TResult, context: js.Any): TResult = js.native
+  def foldr[TResult](iterator: MemoIterator[T, TResult, List[T]], memo: TResult, context: Any): TResult = js.native
   
   def forEach[TResult](iterator: (ListIterator[T, TResult, List[T]]) | (ObjectIterator[T, TResult, Dictionary[T]])): js.Array[TResult] = js.native
   def forEach[TResult](
     iterator: (ListIterator[T, TResult, List[T]]) | (ObjectIterator[T, TResult, Dictionary[T]]),
-    context: js.Any
+    context: Any
   ): js.Array[TResult] = js.native
   
   def groupBy(iterator: String): Dictionary[js.Array[T]] = js.native
@@ -116,15 +116,15 @@ trait KnockoutObservableArrayFunctions[T] extends StObject {
   def initial(n: Double): js.Array[T] = js.native
   
   def inject[TResult](iterator: MemoIterator[T, TResult, List[T]], memo: TResult): TResult = js.native
-  def inject[TResult](iterator: MemoIterator[T, TResult, List[T]], memo: TResult, context: js.Any): TResult = js.native
+  def inject[TResult](iterator: MemoIterator[T, TResult, List[T]], memo: TResult, context: Any): TResult = js.native
   
   def intersection(arrays: js.Array[T]*): js.Array[T] = js.native
   
   def intersection_(arrays: js.Array[T]*): js.Array[T] = js.native
   
-  def invoke(methodName: String, args: js.Any*): js.Any = js.native
+  def invoke(methodName: String, args: Any*): Any = js.native
   
-  def invoke_(methodName: String, args: js.Any*): js.Any = js.native
+  def invoke_(methodName: String, args: Any*): Any = js.native
   
   def last(): T = js.native
   def last(n: Double): js.Array[T] = js.native
@@ -136,34 +136,34 @@ trait KnockoutObservableArrayFunctions[T] extends StObject {
   def map[TResult](iterator: (ListIterator[T, TResult, List[T]]) | (ObjectIterator[T, TResult, Dictionary[T]])): js.Array[TResult] = js.native
   def map[TResult](
     iterator: (ListIterator[T, TResult, List[T]]) | (ObjectIterator[T, TResult, Dictionary[T]]),
-    context: js.Any
+    context: Any
   ): js.Array[TResult] = js.native
   
-  def max(iterator: ListIterator[T, js.Any, List[T]]): js.Any = js.native
-  def max(iterator: ListIterator[T, js.Any, List[T]], context: js.Any): js.Any = js.native
+  def max(iterator: ListIterator[T, Any, List[T]]): Any = js.native
+  def max(iterator: ListIterator[T, Any, List[T]], context: Any): Any = js.native
   
-  def min(iterator: ListIterator[T, js.Any, List[T]]): js.Any = js.native
-  def min(iterator: ListIterator[T, js.Any, List[T]], context: js.Any): js.Any = js.native
+  def min(iterator: ListIterator[T, Any, List[T]]): Any = js.native
+  def min(iterator: ListIterator[T, Any, List[T]], context: Any): Any = js.native
   
-  def `object`(): js.Any = js.native
+  def `object`(): Any = js.native
   
   def pluck(propertyName: String): js.Array[T] = js.native
   
-  def range(start: Double, stop: Double): js.Array[js.Any] = js.native
-  def range(start: Double, stop: Double, step: Double): js.Array[js.Any] = js.native
-  def range(stop: Double): js.Array[js.Any] = js.native
+  def range(start: Double, stop: Double): js.Array[Any] = js.native
+  def range(start: Double, stop: Double, step: Double): js.Array[Any] = js.native
+  def range(stop: Double): js.Array[Any] = js.native
   
   def reduce[TResult](iterator: MemoIterator[T, TResult, List[T]], memo: TResult): TResult = js.native
-  def reduce[TResult](iterator: MemoIterator[T, TResult, List[T]], memo: TResult, context: js.Any): TResult = js.native
+  def reduce[TResult](iterator: MemoIterator[T, TResult, List[T]], memo: TResult, context: Any): TResult = js.native
   
   def reduceRight[TResult](iterator: MemoIterator[T, TResult, List[T]], memo: TResult): TResult = js.native
-  def reduceRight[TResult](iterator: MemoIterator[T, TResult, List[T]], memo: TResult, context: js.Any): TResult = js.native
+  def reduceRight[TResult](iterator: MemoIterator[T, TResult, List[T]], memo: TResult, context: Any): TResult = js.native
   
   def reject(iterator: ListIterator[T, Boolean, List[T]]): js.Array[T] = js.native
-  def reject(iterator: ListIterator[T, Boolean, List[T]], context: js.Any): js.Array[T] = js.native
+  def reject(iterator: ListIterator[T, Boolean, List[T]], context: Any): js.Array[T] = js.native
   
   def reject_(iterator: ListIterator[T, Boolean, List[T]]): js.Array[T] = js.native
-  def reject_(iterator: ListIterator[T, Boolean, List[T]], context: js.Any): js.Array[T] = js.native
+  def reject_(iterator: ListIterator[T, Boolean, List[T]], context: Any): js.Array[T] = js.native
   
   def rest(): js.Array[T] = js.native
   def rest(n: Double): js.Array[T] = js.native
@@ -172,10 +172,10 @@ trait KnockoutObservableArrayFunctions[T] extends StObject {
   def rest_(n: Double): js.Array[T] = js.native
   
   def select(iterator: ListIterator[T, Boolean, List[T]]): js.Array[T] = js.native
-  def select(iterator: ListIterator[T, Boolean, List[T]], context: js.Any): js.Array[T] = js.native
+  def select(iterator: ListIterator[T, Boolean, List[T]], context: Any): js.Array[T] = js.native
   
   def select_(iterator: ListIterator[T, Boolean, List[T]]): js.Array[T] = js.native
-  def select_(iterator: ListIterator[T, Boolean, List[T]], context: js.Any): js.Array[T] = js.native
+  def select_(iterator: ListIterator[T, Boolean, List[T]], context: Any): js.Array[T] = js.native
   
   def shuffle(): js.Array[T] = js.native
   
@@ -184,19 +184,19 @@ trait KnockoutObservableArrayFunctions[T] extends StObject {
   def size(): Double = js.native
   
   def some(): Boolean = js.native
-  def some(iterator: Unit, context: js.Any): Boolean = js.native
+  def some(iterator: Unit, context: Any): Boolean = js.native
   def some(iterator: ListIterator[T, Boolean, List[T]]): Boolean = js.native
-  def some(iterator: ListIterator[T, Boolean, List[T]], context: js.Any): Boolean = js.native
+  def some(iterator: ListIterator[T, Boolean, List[T]], context: Any): Boolean = js.native
   
   def sortBy(iterator: String): js.Array[T] = js.native
-  def sortBy(iterator: String, context: js.Any): js.Array[T] = js.native
+  def sortBy(iterator: String, context: Any): js.Array[T] = js.native
   def sortBy[TSort](iterator: ListIterator[T, TSort, List[T]]): js.Array[T] = js.native
-  def sortBy[TSort](iterator: ListIterator[T, TSort, List[T]], context: js.Any): js.Array[T] = js.native
+  def sortBy[TSort](iterator: ListIterator[T, TSort, List[T]], context: Any): js.Array[T] = js.native
   
   def sortBy_(iterator: String): js.Array[T] = js.native
-  def sortBy_(iterator: String, context: js.Any): js.Array[T] = js.native
+  def sortBy_(iterator: String, context: Any): js.Array[T] = js.native
   def sortBy_[TSort](iterator: ListIterator[T, TSort, List[T]]): js.Array[T] = js.native
-  def sortBy_[TSort](iterator: ListIterator[T, TSort, List[T]], context: js.Any): js.Array[T] = js.native
+  def sortBy_[TSort](iterator: ListIterator[T, TSort, List[T]], context: Any): js.Array[T] = js.native
   
   def sortedIndex[TSort](value: T): Double = js.native
   def sortedIndex[TSort](value: T, iterator: ListIterator[T, TSort, List[T]]): Double = js.native
@@ -240,7 +240,7 @@ trait KnockoutObservableArrayFunctions[T] extends StObject {
   
   def without_(values: T*): js.Array[T] = js.native
   
-  def zip(arrays: js.Any*): js.Array[js.Any] = js.native
+  def zip(arrays: Any*): js.Array[Any] = js.native
   
-  def zip_(arrays: js.Any*): js.Array[js.Any] = js.native
+  def zip_(arrays: Any*): js.Array[Any] = js.native
 }

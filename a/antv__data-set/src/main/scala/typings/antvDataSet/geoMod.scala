@@ -25,35 +25,35 @@ object geoMod {
       position: js.Tuple2[Double, Double]
     ): Boolean = js.native
     
-    def geoDistance(p1: js.Any, p2: js.Any): Double = js.native
+    def geoDistance(p1: Any, p2: Any): Double = js.native
     
-    def geoFeatureByName(name: String): js.Any = js.native
+    def geoFeatureByName(name: String): Any = js.native
     
-    def geoFeatureByPosition(position: js.Tuple2[Double, Double]): js.Any = js.native
+    def geoFeatureByPosition(position: js.Tuple2[Double, Double]): Any = js.native
     
     def geoLength(feature: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = js.native
     
     def geoLengthByName(name: String): Double = js.native
     
-    def geoNameByPosition(position: js.Tuple2[Double, Double]): js.Any = js.native
+    def geoNameByPosition(position: js.Tuple2[Double, Double]): Any = js.native
     
-    def geoProject(feature: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties], projection: String): js.Any = js.native
+    def geoProject(feature: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties], projection: String): Any = js.native
     def geoProject(
       feature: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties],
       projection: String,
       exportRaw: Boolean
-    ): js.Any = js.native
+    ): Any = js.native
     
-    def geoProjectByName(name: String, projection: String): js.Any = js.native
-    def geoProjectByName(name: String, projection: String, exportRaw: Boolean): js.Any = js.native
+    def geoProjectByName(name: String, projection: String): Any = js.native
+    def geoProjectByName(name: String, projection: String, exportRaw: Boolean): Any = js.native
     
-    def geoProjectInvert(position: js.Tuple2[Double, Double], projection: String): js.Any = js.native
-    def geoProjectInvert(position: js.Tuple2[Double, Double], projection: String, exportRaw: Boolean): js.Any = js.native
+    def geoProjectInvert(position: js.Tuple2[Double, Double], projection: String): Any = js.native
+    def geoProjectInvert(position: js.Tuple2[Double, Double], projection: String, exportRaw: Boolean): Any = js.native
     
-    def geoProjectPosition(position: js.Tuple2[Double, Double], projection: String): js.Any = js.native
-    def geoProjectPosition(position: js.Tuple2[Double, Double], projection: String, exportRaw: Boolean): js.Any = js.native
+    def geoProjectPosition(position: js.Tuple2[Double, Double], projection: String): Any = js.native
+    def geoProjectPosition(position: js.Tuple2[Double, Double], projection: String, exportRaw: Boolean): Any = js.native
     
-    def getGeoProjection(projection: String): js.Any = js.native
-    def getGeoProjection(projection: String, exportRaw: Boolean): js.Any = js.native
+    def getGeoProjection(projection: String): Any = js.native
+    def getGeoProjection(projection: String, exportRaw: Boolean): Any = js.native
   }
 }

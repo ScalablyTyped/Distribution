@@ -24,7 +24,7 @@ trait ImageDetail extends StObject {
   /**
     * The date and time, expressed in standard JavaScript date format, at which the current image was pushed to the repository. 
     */
-  var imagePushedAt: js.UndefOr[PushTimestamp] = js.undefined
+  var imagePushedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A summary of the last completed image scan.
@@ -47,7 +47,12 @@ trait ImageDetail extends StObject {
   var imageTags: js.UndefOr[ImageTagList] = js.undefined
   
   /**
-    * The AWS account ID associated with the registry to which this image belongs.
+    * The date and time, expressed in standard JavaScript date format, when Amazon ECR recorded the last image pull.  Amazon ECR refreshes the last image pull timestamp at least once every 24 hours. For example, if you pull an image once a day then the lastRecordedPullTime timestamp will indicate the exact time that the image was last pulled. However, if you pull an image once an hour, because Amazon ECR refreshes the lastRecordedPullTime timestamp at least once every 24 hours, the result may not be the exact time that the image was last pulled. 
+    */
+  var lastRecordedPullTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The Amazon Web Services account ID associated with the registry to which this image belongs.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   
@@ -77,7 +82,7 @@ object ImageDetail {
     
     inline def setImageManifestMediaTypeUndefined: Self = StObject.set(x, "imageManifestMediaType", js.undefined)
     
-    inline def setImagePushedAt(value: PushTimestamp): Self = StObject.set(x, "imagePushedAt", value.asInstanceOf[js.Any])
+    inline def setImagePushedAt(value: js.Date): Self = StObject.set(x, "imagePushedAt", value.asInstanceOf[js.Any])
     
     inline def setImagePushedAtUndefined: Self = StObject.set(x, "imagePushedAt", js.undefined)
     
@@ -97,7 +102,11 @@ object ImageDetail {
     
     inline def setImageTagsUndefined: Self = StObject.set(x, "imageTags", js.undefined)
     
-    inline def setImageTagsVarargs(value: ImageTag*): Self = StObject.set(x, "imageTags", js.Array(value :_*))
+    inline def setImageTagsVarargs(value: ImageTag*): Self = StObject.set(x, "imageTags", js.Array(value*))
+    
+    inline def setLastRecordedPullTime(value: js.Date): Self = StObject.set(x, "lastRecordedPullTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastRecordedPullTimeUndefined: Self = StObject.set(x, "lastRecordedPullTime", js.undefined)
     
     inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     

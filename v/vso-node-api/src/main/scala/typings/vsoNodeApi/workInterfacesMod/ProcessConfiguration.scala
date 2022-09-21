@@ -55,7 +55,7 @@ object ProcessConfiguration {
     
     inline def setPortfolioBacklogs(value: js.Array[CategoryConfiguration]): Self = StObject.set(x, "portfolioBacklogs", value.asInstanceOf[js.Any])
     
-    inline def setPortfolioBacklogsVarargs(value: CategoryConfiguration*): Self = StObject.set(x, "portfolioBacklogs", js.Array(value :_*))
+    inline def setPortfolioBacklogsVarargs(value: CategoryConfiguration*): Self = StObject.set(x, "portfolioBacklogs", js.Array(value*))
     
     inline def setRequirementBacklog(value: CategoryConfiguration): Self = StObject.set(x, "requirementBacklog", value.asInstanceOf[js.Any])
     

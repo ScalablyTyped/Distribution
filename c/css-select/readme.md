@@ -1,7 +1,7 @@
 
 # Scala.js typings for css-select
 
-Typings are for version 3.1.0
+Typings are for version 5.1.0
 
 ## Library description:
 a CSS selector compiler/engine
@@ -10,10 +10,10 @@ a CSS selector compiler/engine
 | ------------------ | :-------------: |
 | Full name          | css-select |
 | Keywords           | css, selector, sizzle |
-| # releases         | 10 |
-| # dependents       | 116 |
-| # downloads        | 677134218 |
-| # stars            | 7 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0705190566666667E8 |
+| # stars            | 451.0 |
 
 ## Links
 - [Homepage](https://github.com/fb55/css-select#readme)

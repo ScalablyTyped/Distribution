@@ -1,0 +1,27 @@
+package typings.antvG2.anon
+
+import typings.antvG2.elementMod.default
+import typings.antvG2.linkByColorMod.LinkActiveStyle
+import typings.antvGBase.typesMod.ShapeAttrs
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait StyleLinkActiveStyle extends StObject {
+  
+  var style: LinkActiveStyle
+}
+object StyleLinkActiveStyle {
+  
+  inline def apply(style: LinkActiveStyle): StyleLinkActiveStyle = {
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StyleLinkActiveStyle]
+  }
+  
+  extension [Self <: StyleLinkActiveStyle](x: Self) {
+    
+    inline def setStyle(value: LinkActiveStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleFunction2(value: (/* style */ ShapeAttrs, /* Element */ default) => ShapeAttrs): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
+  }
+}

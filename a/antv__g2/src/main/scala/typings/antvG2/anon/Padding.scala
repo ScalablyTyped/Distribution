@@ -1,18 +1,25 @@
 package typings.antvG2.anon
 
+import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Padding extends StObject {
   
-  var animate: js.UndefOr[Boolean] = js.undefined
+  /**
+    * @title 背景框 内边距
+    */
+  var padding: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var end: js.UndefOr[X] = js.undefined
-  
-  var padding: js.UndefOr[Double] = js.undefined
-  
-  var start: js.UndefOr[X] = js.undefined
+  /**
+    * @title 背景框图形属性配置
+    * - fill?: string; 背景框 填充色
+    * - stroke?: string; 背景框 描边色
+    * - lineWidth?: string; 背景框 描边宽度
+    * - radius?: number | number[]; 背景框圆角，支持整数或数组形式
+    */
+  var style: js.UndefOr[ShapeAttrs] = js.undefined
 }
 object Padding {
   
@@ -23,20 +30,14 @@ object Padding {
   
   extension [Self <: Padding](x: Self) {
     
-    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
-    
-    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
-    
-    inline def setEnd(value: X): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
-    
-    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
-    
-    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setStart(value: X): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
     
-    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

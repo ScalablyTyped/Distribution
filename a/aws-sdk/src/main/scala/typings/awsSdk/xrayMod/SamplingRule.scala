@@ -37,7 +37,7 @@ trait SamplingRule extends StObject {
   var ReservoirSize: typings.awsSdk.xrayMod.ReservoirSize
   
   /**
-    * Matches the ARN of the AWS resource on which the service runs.
+    * Matches the ARN of the Amazon Web Services resource on which the service runs.
     */
   var ResourceARN: typings.awsSdk.xrayMod.ResourceARN
   

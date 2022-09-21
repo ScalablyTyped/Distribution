@@ -1,9 +1,9 @@
 package typings.winstonDailyRotateFile
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.node.NodeJS.WritableStream
 import typings.std.Exclude
 import typings.std.Pick
+import typings.std.WritableStream
 import typings.winstonDailyRotateFile.winstonDailyRotateFileStrings.filename
 import typings.winstonDailyRotateFile.winstonDailyRotateFileStrings.stream
 import typings.winstonTransport.mod.TransportStreamOptions
@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("winston-daily-rotate-file", JSImport.Namespace)
   @js.native
-  class ^ () extends DailyRotateFile {
+  open class ^ () extends DailyRotateFile {
     def this(options: DailyRotateFileTransportOptions) = this()
   }
   
@@ -27,7 +27,7 @@ object mod {
     
     var filename: String = js.native
     
-    var logStream: WritableStream = js.native
+    var logStream: WritableStream[Any] = js.native
     
     var options: DailyRotateFileTransportOptions = js.native
   }
@@ -42,6 +42,11 @@ object mod {
       * A string representing the name of the name of the audit file. (default: './hash-audit.json')
       */
     var auditFile: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Use specified hashing algorithm for audit. (default: 'sha256')
+      */
+    var auditHashType: js.UndefOr[String] = js.undefined
     
     /**
       * Create a tailable symlink to the current active log file. (default: false)
@@ -95,7 +100,7 @@ object mod {
     /**
       * Write directly to a custom stream and bypass the rotation capabilities. (default: null)
       */
-    var stream: js.UndefOr[WritableStream] = js.undefined
+    var stream: js.UndefOr[WritableStream[Any]] = js.undefined
     
     /**
       * The name of the tailable symlink. (default: 'current.log')
@@ -106,6 +111,11 @@ object mod {
       * A boolean whether or not to generate file name from "datePattern" in UTC format. (default: false)
       */
     var utc: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Watch the current file being written to and recreate it in case of accidental deletion. (default: FALSE)
+      */
+    var watchLog: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A boolean to define whether or not to gzip archived log files. (default 'false')
@@ -124,6 +134,10 @@ object mod {
       inline def setAuditFile(value: String): Self = StObject.set(x, "auditFile", value.asInstanceOf[js.Any])
       
       inline def setAuditFileUndefined: Self = StObject.set(x, "auditFile", js.undefined)
+      
+      inline def setAuditHashType(value: String): Self = StObject.set(x, "auditHashType", value.asInstanceOf[js.Any])
+      
+      inline def setAuditHashTypeUndefined: Self = StObject.set(x, "auditHashType", js.undefined)
       
       inline def setCreateSymlink(value: Boolean): Self = StObject.set(x, "createSymlink", value.asInstanceOf[js.Any])
       
@@ -169,7 +183,7 @@ object mod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
@@ -181,6 +195,10 @@ object mod {
       
       inline def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
       
+      inline def setWatchLog(value: Boolean): Self = StObject.set(x, "watchLog", value.asInstanceOf[js.Any])
+      
+      inline def setWatchLogUndefined: Self = StObject.set(x, "watchLog", js.undefined)
+      
       inline def setZippedArchive(value: Boolean): Self = StObject.set(x, "zippedArchive", value.asInstanceOf[js.Any])
       
       inline def setZippedArchiveUndefined: Self = StObject.set(x, "zippedArchive", js.undefined)
@@ -188,7 +206,7 @@ object mod {
   }
   
   // referenced from https://stackoverflow.com/questions/40510611/typescript-interface-require-one-of-two-properties-to-exist
-  type RequireOnlyOne[T, Keys /* <: /* keyof T */ String */] = (Pick[T, Exclude[/* keyof T */ String, Keys]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Keys ]: -? std.Required<std.Pick<T, K>> & std.Partial<std.Record<std.Exclude<Keys, K>, undefined>>}[Keys] */ js.Any)
+  type RequireOnlyOne[T, Keys /* <: /* keyof T */ String */] = (Pick[T, Exclude[/* keyof T */ String, Keys]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Keys ]: -? std.Pick<T, K> & std.Partial<std.Record<std.Exclude<Keys, K>, undefined>>}[Keys] */ js.Any)
   
   // merging into winston.transports
   object winstonLibWinstonTransportsAugmentingMod {

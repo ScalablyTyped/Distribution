@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.MappedDataFields")
 @js.native
-/* private */ class MappedDataFields ()
+/* private */ open class MappedDataFields ()
   extends StObject
      with typings.activexWord.Word.MappedDataFields {
   
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Item(Index: WdMappedDataFields): typings.activexWord.Word.MappedDataField = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Word.MappedDataFields_typekey")

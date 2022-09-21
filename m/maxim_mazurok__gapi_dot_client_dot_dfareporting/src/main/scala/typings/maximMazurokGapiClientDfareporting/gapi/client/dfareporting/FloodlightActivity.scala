@@ -146,7 +146,7 @@ object FloodlightActivity {
     
     inline def setDefaultTagsUndefined: Self = StObject.set(x, "defaultTags", js.undefined)
     
-    inline def setDefaultTagsVarargs(value: FloodlightActivityDynamicTag*): Self = StObject.set(x, "defaultTags", js.Array(value :_*))
+    inline def setDefaultTagsVarargs(value: FloodlightActivityDynamicTag*): Self = StObject.set(x, "defaultTags", js.Array(value*))
     
     inline def setExpectedUrl(value: String): Self = StObject.set(x, "expectedUrl", value.asInstanceOf[js.Any])
     
@@ -204,7 +204,7 @@ object FloodlightActivity {
     
     inline def setPublisherTagsUndefined: Self = StObject.set(x, "publisherTags", js.undefined)
     
-    inline def setPublisherTagsVarargs(value: FloodlightActivityPublisherDynamicTag*): Self = StObject.set(x, "publisherTags", js.Array(value :_*))
+    inline def setPublisherTagsVarargs(value: FloodlightActivityPublisherDynamicTag*): Self = StObject.set(x, "publisherTags", js.Array(value*))
     
     inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
@@ -238,6 +238,6 @@ object FloodlightActivity {
     
     inline def setUserDefinedVariableTypesUndefined: Self = StObject.set(x, "userDefinedVariableTypes", js.undefined)
     
-    inline def setUserDefinedVariableTypesVarargs(value: String*): Self = StObject.set(x, "userDefinedVariableTypes", js.Array(value :_*))
+    inline def setUserDefinedVariableTypesVarargs(value: String*): Self = StObject.set(x, "userDefinedVariableTypes", js.Array(value*))
   }
 }

@@ -1,6 +1,5 @@
 package typings.seen.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +12,8 @@ object Colors {
   
   @JSImport("seen", "Colors.CSS_RGBA_STRING_REGEX")
   @js.native
-  def CSS_RGBA_STRING_REGEX: RegExp = js.native
-  inline def CSS_RGBA_STRING_REGEX_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CSS_RGBA_STRING_REGEX")(x.asInstanceOf[js.Any])
+  def CSS_RGBA_STRING_REGEX: js.RegExp = js.native
+  inline def CSS_RGBA_STRING_REGEX_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CSS_RGBA_STRING_REGEX")(x.asInstanceOf[js.Any])
   
   inline def black(): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("black")().asInstanceOf[Color]
   

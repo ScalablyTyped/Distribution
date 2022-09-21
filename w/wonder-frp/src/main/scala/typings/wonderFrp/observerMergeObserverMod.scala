@@ -12,14 +12,14 @@ object observerMergeObserverMod {
   
   @JSImport("wonder-frp/dist/es2015/observer/MergeObserver", "MergeObserver")
   @js.native
-  class MergeObserver protected () extends Observer {
+  open class MergeObserver protected () extends Observer {
     def this(currentObserver: IObserver, maxConcurrent: Double, groupDisposable: GroupDisposable) = this()
     
-    /* private */ var _groupDisposable: js.Any = js.native
+    /* private */ var _groupDisposable: Any = js.native
     
-    /* private */ def _isNotReachMaxConcurrent(): js.Any = js.native
+    /* private */ def _isNotReachMaxConcurrent(): Any = js.native
     
-    /* private */ var _maxConcurrent: js.Any = js.native
+    /* private */ var _maxConcurrent: Any = js.native
     
     var activeCount: Double = js.native
     
@@ -27,7 +27,7 @@ object observerMergeObserverMod {
     
     var done: Boolean = js.native
     
-    def handleSubscribe(innerSource: js.Any): Unit = js.native
+    def handleSubscribe(innerSource: Any): Unit = js.native
     
     var q: js.Array[Stream] = js.native
   }

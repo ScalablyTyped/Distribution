@@ -1,13 +1,14 @@
 package typings.intlMessageformat
 
+import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
 import typings.intlMessageformat.anon.FnCall
 import typings.intlMessageformat.anon.Locale
 import typings.intlMessageformat.anon.PartialFormats
 import typings.intlMessageformat.srcFormattersMod.FormatXMLElementFn
+import typings.intlMessageformat.srcFormattersMod.Formats
 import typings.intlMessageformat.srcFormattersMod.Formatters
 import typings.intlMessageformat.srcFormattersMod.MessageFormatPart
-import typings.intlMessageformatParser.srcTypesMod.MessageFormatElement
-import typings.std.Date
+import typings.intlMessageformat.srcFormattersMod.PrimitiveType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +18,7 @@ object srcCoreMod {
   
   @JSImport("intl-messageformat/src/core", "IntlMessageFormat")
   @js.native
-  class IntlMessageFormat protected () extends StObject {
+  open class IntlMessageFormat protected () extends StObject {
     def this(message: String) = this()
     def this(message: js.Array[MessageFormatElement]) = this()
     def this(message: String, locales: String) = this()
@@ -67,15 +68,13 @@ object srcCoreMod {
       opts: Options
     ) = this()
     
-    /* private */ val ast: js.Any = js.native
+    /* private */ val ast: Any = js.native
     
     def format[T](): String | T | (js.Array[String | T]) = js.native
     def format[T](
       values: Record[
           String, 
-          js.UndefOr[
-            String | Double | Boolean | Date | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])]) | Null
-          ]
+          PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
         ]
     ): String | T | (js.Array[String | T]) = js.native
     
@@ -83,23 +82,23 @@ object srcCoreMod {
     def formatToParts[T](
       values: Record[
           String, 
-          js.UndefOr[
-            String | Double | Boolean | Date | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])]) | Null
-          ]
+          PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
         ]
     ): js.Array[MessageFormatPart[T]] = js.native
     
-    /* private */ val formats: js.Any = js.native
+    /* private */ val formats: Any = js.native
     
-    /* private */ val formatterCache: js.Any = js.native
+    /* private */ val formatterCache: Any = js.native
     
-    /* private */ val formatters: js.Any = js.native
+    /* private */ val formatters: Any = js.native
     
     def getAst(): js.Array[MessageFormatElement] = js.native
     
-    /* private */ val locales: js.Any = js.native
+    /* private */ val locales: Any = js.native
     
-    /* private */ val message: js.Any = js.native
+    /* private */ val message: Any = js.native
+    
+    /* private */ val resolvedLocale: Any = js.native
     
     def resolvedOptions(): Locale = js.native
   }
@@ -117,13 +116,16 @@ object srcCoreMod {
     
     @JSImport("intl-messageformat/src/core", "IntlMessageFormat.formats")
     @js.native
-    def formats: typings.intlMessageformat.anon.Date = js.native
-    inline def formats_=(x: typings.intlMessageformat.anon.Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
+    def formats: Formats = js.native
+    inline def formats_=(x: Formats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
     
     @JSImport("intl-messageformat/src/core", "IntlMessageFormat.memoizedDefaultLocale")
     @js.native
-    def memoizedDefaultLocale: js.Any = js.native
-    inline def memoizedDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
+    def memoizedDefaultLocale: Any = js.native
+    inline def memoizedDefaultLocale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
+    
+    inline def resolveLocale(locales: String): js.UndefOr[typings.std.Intl.Locale] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLocale")(locales.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.std.Intl.Locale]]
+    inline def resolveLocale(locales: js.Array[String]): js.UndefOr[typings.std.Intl.Locale] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLocale")(locales.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.std.Intl.Locale]]
   }
   
   trait Options extends StObject {

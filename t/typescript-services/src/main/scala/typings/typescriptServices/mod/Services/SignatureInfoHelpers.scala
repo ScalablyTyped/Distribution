@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Services.SignatureInfoHelpers")
 @js.native
-class SignatureInfoHelpers ()
+open class SignatureInfoHelpers ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.SignatureInfoHelpers
 object SignatureInfoHelpers {
@@ -57,5 +57,5 @@ object SignatureInfoHelpers {
   inline def isTargetOfObjectCreationExpression(positionedToken: PositionedToken): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTargetOfObjectCreationExpression")(positionedToken.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  inline def moveBackUpTillMatchingTokenKind(token: js.Any, tokenKind: js.Any, matchingTokenKind: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBackUpTillMatchingTokenKind")(token.asInstanceOf[js.Any], tokenKind.asInstanceOf[js.Any], matchingTokenKind.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def moveBackUpTillMatchingTokenKind(token: Any, tokenKind: Any, matchingTokenKind: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBackUpTillMatchingTokenKind")(token.asInstanceOf[js.Any], tokenKind.asInstanceOf[js.Any], matchingTokenKind.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

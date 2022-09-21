@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaVariableFormatValue extends StObject {
   
   /**
-    * The option to convert a string-type variable value to either lowercase or
-    * uppercase.
+    * The option to convert a string-type variable value to either lowercase or uppercase.
     */
-  var caseConversionType: js.UndefOr[String] = js.undefined
+  var caseConversionType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The value to convert if a variable value is false.
@@ -42,6 +41,8 @@ object SchemaVariableFormatValue {
   extension [Self <: SchemaVariableFormatValue](x: Self) {
     
     inline def setCaseConversionType(value: String): Self = StObject.set(x, "caseConversionType", value.asInstanceOf[js.Any])
+    
+    inline def setCaseConversionTypeNull: Self = StObject.set(x, "caseConversionType", null)
     
     inline def setCaseConversionTypeUndefined: Self = StObject.set(x, "caseConversionType", js.undefined)
     

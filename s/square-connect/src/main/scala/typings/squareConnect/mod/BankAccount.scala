@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "BankAccount")
 @js.native
-class BankAccount () extends StObject {
+open class BankAccount () extends StObject {
   
   /**
     * The last few digits of the account number.

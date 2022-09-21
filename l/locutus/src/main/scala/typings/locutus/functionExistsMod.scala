@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object functionExistsMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(funcName: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(funcName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(funcName: Any): Any = ^.asInstanceOf[js.Dynamic].apply(funcName.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("locutus/php/funchand/function_exists", JSImport.Namespace)
   @js.native

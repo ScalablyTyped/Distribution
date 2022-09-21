@@ -3,7 +3,6 @@ package typings.phaser.Phaser.Loader.FileTypes
 import typings.phaser.Phaser.Loader.File
 import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Loader.MultiFile
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,17 +11,17 @@ trait SpineFile
   extends StObject
      with MultiFile {
   
-  def addToCache(): js.Any
+  def addToCache(): Any
 }
 object SpineFile {
   
   inline def apply(
-    addToCache: () => js.Any,
+    addToCache: () => Any,
     addToMultiFile: File => MultiFile,
     baseURL: String,
     complete: Boolean,
-    config: js.Any,
-    failed: integer,
+    config: Any,
+    failed: Double,
     files: js.Array[File],
     isReadyToProcess: () => Boolean,
     key: String,
@@ -30,7 +29,7 @@ object SpineFile {
     onFileComplete: File => Unit,
     onFileFailed: File => Unit,
     path: String,
-    pending: integer,
+    pending: Double,
     prefix: String,
     `type`: String
   ): SpineFile = {
@@ -41,6 +40,6 @@ object SpineFile {
   
   extension [Self <: SpineFile](x: Self) {
     
-    inline def setAddToCache(value: () => js.Any): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
+    inline def setAddToCache(value: () => Any): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "RevokeTokenRequest")
 @js.native
-class RevokeTokenRequest () extends StObject {
+open class RevokeTokenRequest () extends StObject {
   
   /**
     * The access token of the merchant whose token you want to revoke.

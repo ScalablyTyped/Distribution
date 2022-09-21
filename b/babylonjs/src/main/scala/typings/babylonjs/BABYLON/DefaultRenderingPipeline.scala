@@ -14,7 +14,7 @@ trait DefaultRenderingPipeline
   /**
     * ID of the chromatic aberration post process,
     */
-  /* private */ val ChromaticAberrationPostProcessId: js.Any = js.native
+  /* private */ val ChromaticAberrationPostProcessId: Any = js.native
   
   /**
     * @ignore
@@ -25,7 +25,7 @@ trait DefaultRenderingPipeline
   /**
     * ID of the grain post process
     */
-  /* private */ val GrainPostProcessId: js.Any = js.native
+  /* private */ val GrainPostProcessId: Any = js.native
   
   /**
     * @ignore
@@ -36,82 +36,86 @@ trait DefaultRenderingPipeline
   /**
     * ID of the sharpen post process,
     */
-  /* private */ val SharpenPostProcessId: js.Any = js.native
+  /* private */ val SharpenPostProcessId: Any = js.native
   
-  /* private */ var _bloomEnabled: js.Any = js.native
+  /* private */ var _activeCameraChangedObserver: Any = js.native
   
-  /* private */ var _bloomKernel: js.Any = js.native
+  /* private */ var _activeCamerasChangedObserver: Any = js.native
   
-  /* private */ var _bloomScale: js.Any = js.native
+  /* private */ var _bloomEnabled: Any = js.native
+  
+  /* private */ var _bloomKernel: Any = js.native
+  
+  /* private */ var _bloomScale: Any = js.native
   
   /**
     * Specifies the luma threshold for the area that will be blurred by the bloom
     */
-  /* private */ var _bloomThreshold: js.Any = js.native
+  /* private */ var _bloomThreshold: Any = js.native
   
   /**
     * Specifies the weight of the bloom in the final rendering
     */
-  /* private */ var _bloomWeight: js.Any = js.native
+  /* private */ var _bloomWeight: Any = js.native
   
-  /* private */ var _buildAllowed: js.Any = js.native
+  /* private */ var _buildAllowed: Any = js.native
   
-  /* private */ var _buildPipeline: js.Any = js.native
+  /* private */ var _buildPipeline: Any = js.native
   
-  /* private */ var _camerasToBeAttached: js.Any = js.native
+  /* private */ var _camerasToBeAttached: Any = js.native
   
-  /* private */ var _chromaticAberrationEffect: js.Any = js.native
+  /* private */ var _chromaticAberrationEffect: Any = js.native
   
-  /* private */ var _chromaticAberrationEnabled: js.Any = js.native
+  /* private */ var _chromaticAberrationEnabled: Any = js.native
   
-  /* private */ var _defaultPipelineTextureType: js.Any = js.native
+  /* private */ var _defaultPipelineTextureType: Any = js.native
   
-  /* private */ var _depthOfFieldBlurLevel: js.Any = js.native
+  /* private */ var _depthOfFieldBlurLevel: Any = js.native
   
-  /* private */ var _depthOfFieldEnabled: js.Any = js.native
+  /* private */ var _depthOfFieldEnabled: Any = js.native
   
-  /* private */ var _depthOfFieldSceneObserver: js.Any = js.native
+  /* private */ var _depthOfFieldSceneObserver: Any = js.native
   
-  /* private */ var _disposePostProcesses: js.Any = js.native
+  /* private */ var _disposePostProcesses: Any = js.native
   
-  /* private */ var _fxaaEnabled: js.Any = js.native
+  /* private */ var _fxaaEnabled: Any = js.native
   
   /**
     * Glow post process which adds a glow to emissive areas of the image
     */
-  /* private */ var _glowLayer: js.Any = js.native
+  /* private */ var _glowLayer: Any = js.native
   
-  /* private */ var _grainEffect: js.Any = js.native
+  /* private */ var _grainEffect: Any = js.native
   
-  /* private */ var _grainEnabled: js.Any = js.native
+  /* private */ var _grainEnabled: Any = js.native
   
-  /* private */ var _hardwareScaleLevel: js.Any = js.native
+  /* private */ var _hardwareScaleLevel: Any = js.native
   
-  /* private */ var _hasCleared: js.Any = js.native
+  /* private */ var _hasCleared: Any = js.native
   
-  /* private */ var _hdr: js.Any = js.native
+  /* private */ var _hdr: Any = js.native
   
-  /* private */ var _imageProcessingConfigurationObserver: js.Any = js.native
+  /* private */ var _imageProcessingConfigurationObserver: Any = js.native
   
-  /* private */ var _imageProcessingEnabled: js.Any = js.native
+  /* private */ var _imageProcessingEnabled: Any = js.native
   
-  /* private */ var _prevPostProcess: js.Any = js.native
+  /* private */ var _prevPostProcess: Any = js.native
   
-  /* private */ var _prevPrevPostProcess: js.Any = js.native
+  /* private */ var _prevPrevPostProcess: Any = js.native
   
-  /* private */ var _rebuildBloom: js.Any = js.native
+  /* private */ var _rebuildBloom: Any = js.native
   
-  /* private */ var _resizeObserver: js.Any = js.native
+  /* private */ var _resizeObserver: Any = js.native
   
-  /* private */ var _samples: js.Any = js.native
+  /* private */ var _samples: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _setAutoClearAndTextureSharing: js.Any = js.native
+  /* private */ var _setAutoClearAndTextureSharing: Any = js.native
   
-  /* private */ var _sharpenEffect: js.Any = js.native
+  /* private */ var _sharpenEffect: Any = js.native
   
-  /* private */ var _sharpenEnabled: js.Any = js.native
+  /* private */ var _sharpenEnabled: Any = js.native
   
   /**
     * Adds a camera to the pipeline
@@ -125,7 +129,7 @@ trait DefaultRenderingPipeline
   @JSName("animations")
   var animations_DefaultRenderingPipeline: js.Array[Animation] = js.native
   
-  /* private */ var bloom: js.Any = js.native
+  /* private */ var bloom: Any = js.native
   
   def bloomEnabled: Boolean = js.native
   /**
@@ -147,7 +151,7 @@ trait DefaultRenderingPipeline
   
   def bloomThreshold: Double = js.native
   /**
-    * The strength of the bloom.
+    * The luminance threshold to find bright areas of the image to bloom.
     */
   def bloomThreshold_=(value: Double): Unit = js.native
   
@@ -192,7 +196,7 @@ trait DefaultRenderingPipeline
   override def dispose(): Unit = js.native
   
   /**
-    * The Fast Approximate Anti-Aliasing post process which attemps to remove aliasing from an image.
+    * The Fast Approximate Anti-Aliasing post process which attempts to remove aliasing from an image.
     */
   var fxaa: FxaaPostProcess = js.native
   
@@ -266,7 +270,7 @@ trait DefaultRenderingPipeline
     * Serialize the rendering pipeline (Used when exporting)
     * @returns the serialized object
     */
-  def serialize(): js.Any = js.native
+  def serialize(): Any = js.native
   
   /**
     * Sharpen post process which will apply a sharpen convolution to enhance edges

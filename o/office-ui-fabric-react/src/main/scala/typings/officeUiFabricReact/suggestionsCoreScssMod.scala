@@ -8,5 +8,5 @@ object suggestionsCoreScssMod {
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsCore.scss", "suggestionsContainer")
   @js.native
-  val suggestionsContainer: /* "suggestionsContainer_25237e7f" */ String = js.native
+  val suggestionsContainer: /* "suggestionsContainer_a6f0007f" */ String = js.native
 }

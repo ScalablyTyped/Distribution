@@ -1,24 +1,20 @@
 package typings.atomically
 
 import typings.atomically.atomicallyBooleans.`false`
-import typings.node.Buffer
-import typings.node.BufferEncoding
-import typings.node.NodeJS.ArrayBufferView
-import typings.node.anon.BaseEncodingOptionsflagst
-import typings.node.anon.EncodingBufferEncoding
+import typings.node.anon.EncodingFlag
+import typings.node.anon.Flag
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
-import typings.node.anon.`3`
-import typings.node.fsMod.BaseEncodingOptions
-import typings.node.fsMod.BigIntOptions
-import typings.node.fsMod.BigIntStats
+import typings.node.anon.ObjectEncodingOptionsflagEncoding
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.BufferEncodingOption
+import typings.node.fsMod.EncodingOption
 import typings.node.fsMod.MakeDirectoryOptions
 import typings.node.fsMod.Mode
 import typings.node.fsMod.OpenMode
 import typings.node.fsMod.PathLike
-import typings.node.fsMod.StatOptions
-import typings.node.fsMod.Stats
+import typings.node.fsMod.PathOrFileDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,25 +22,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object anon {
   
   @js.native
-  trait Fn0 extends StObject {
-    
-    def apply(path: Double): String | Buffer = js.native
-    def apply(path: Double, options: BufferEncoding): String = js.native
-    def apply(path: Double, options: BaseEncodingOptionsflagst): String | Buffer = js.native
-    def apply(path: Double, options: EncodingBufferEncoding): String = js.native
-    def apply(path: Double, options: `3`): Buffer = js.native
-    def apply(path: PathLike): String | Buffer = js.native
-    def apply(path: PathLike, options: BufferEncoding): String = js.native
-    def apply(path: PathLike, options: BaseEncodingOptionsflagst): String | Buffer = js.native
-    def apply(path: PathLike, options: EncodingBufferEncoding): String = js.native
-    def apply(path: PathLike, options: `3`): Buffer = js.native
-  }
-  
-  @js.native
   trait FnCall extends StObject {
     
     def apply(path: PathLike): js.UndefOr[String] = js.native
-    def apply(path: PathLike, options: MakeDirectoryOptionsrecur): String = js.native
+    def apply(path: PathLike, options: MakeDirectoryOptionsrecur): js.UndefOr[String] = js.native
     def apply(path: PathLike, options: MakeDirectoryOptionsrecurMode): Unit = js.native
     def apply(path: PathLike, options: MakeDirectoryOptions): js.UndefOr[String] = js.native
     def apply(path: PathLike, options: Mode): js.UndefOr[String] = js.native
@@ -53,20 +34,26 @@ object anon {
   @js.native
   trait FnCallFdBufferOffsetLengthPosition extends StObject {
     
-    def apply(fd: Double, buffer: ArrayBufferView): Double = js.native
-    def apply(fd: Double, buffer: ArrayBufferView, offset: Double): Double = js.native
-    def apply(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
-    def apply(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
-    def apply(fd: Double, buffer: ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
-    def apply(fd: Double, buffer: ArrayBufferView, offset: Double, length: Unit, position: Double): Double = js.native
-    def apply(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double): Double = js.native
-    def apply(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
-    def apply(fd: Double, buffer: ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
-    def apply(fd: Double, buffer: ArrayBufferView, offset: Null, length: Unit, position: Double): Double = js.native
-    def apply(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double): Double = js.native
-    def apply(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double, position: Double): Double = js.native
-    def apply(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Null, position: Double): Double = js.native
-    def apply(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Unit, position: Double): Double = js.native
+    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView): Double = js.native
+    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double): Double = js.native
+    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Double): Double = js.native
+    def apply(
+      fd: Double,
+      buffer: js.typedarray.ArrayBufferView,
+      offset: Double,
+      length: Double,
+      position: Double
+    ): Double = js.native
+    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
+    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Unit, position: Double): Double = js.native
+    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Double): Double = js.native
+    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
+    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
+    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Unit, position: Double): Double = js.native
+    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Double): Double = js.native
+    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Double, position: Double): Double = js.native
+    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Null, position: Double): Double = js.native
+    def apply(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Unit, position: Double): Double = js.native
     def apply(fd: Double, string: String): Double = js.native
     def apply(fd: Double, string: String, position: Double): Double = js.native
     def apply(fd: Double, string: String, position: Double, encoding: BufferEncoding): Double = js.native
@@ -84,9 +71,11 @@ object anon {
   @js.native
   trait FnCallPathOptions extends StObject {
     
-    def apply(path: PathLike): Stats = js.native
-    def apply(path: PathLike, options: BigIntOptions): BigIntStats = js.native
-    def apply(path: PathLike, options: StatOptions): Stats | BigIntStats = js.native
+    def apply(path: PathOrFileDescriptor): String | Buffer = js.native
+    def apply(path: PathOrFileDescriptor, options: EncodingFlag): String = js.native
+    def apply(path: PathOrFileDescriptor, options: Flag): Buffer = js.native
+    def apply(path: PathOrFileDescriptor, options: ObjectEncodingOptionsflagEncoding): String | Buffer = js.native
+    def apply(path: PathOrFileDescriptor, options: BufferEncoding): String = js.native
   }
   
   trait Gid extends StObject {
@@ -144,19 +133,15 @@ object anon {
   trait TypeofrealpathSync extends StObject {
     
     def apply(path: PathLike): String = js.native
-    def apply(path: PathLike, options: String): String | Buffer = js.native
-    def apply(path: PathLike, options: BufferEncoding): String = js.native
-    def apply(path: PathLike, options: BaseEncodingOptions): String = js.native
     def apply(path: PathLike, options: BufferEncodingOption): Buffer = js.native
+    def apply(path: PathLike, options: EncodingOption): String = js.native
     
     def native(path: PathLike): String = js.native
-    def native(path: PathLike, options: String): String | Buffer = js.native
-    def native(path: PathLike, options: BufferEncoding): String = js.native
-    def native(path: PathLike, options: BaseEncodingOptions): String = js.native
     def native(path: PathLike, options: BufferEncodingOption): Buffer = js.native
+    def native(path: PathLike, options: EncodingOption): String = js.native
     @JSName("native")
     def native_Union(path: PathLike): String | Buffer = js.native
     @JSName("native")
-    def native_Union(path: PathLike, options: BaseEncodingOptions): String | Buffer = js.native
+    def native_Union(path: PathLike, options: EncodingOption): String | Buffer = js.native
   }
 }

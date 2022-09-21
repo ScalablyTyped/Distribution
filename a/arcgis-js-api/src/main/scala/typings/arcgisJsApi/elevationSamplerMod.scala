@@ -21,7 +21,7 @@ object elevationSamplerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ElevationSampler.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with ElevationSampler
   

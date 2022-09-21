@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_MSSQL")
 @js.native
-class ClassMSSQL ()
+open class ClassMSSQL ()
   extends StObject
      with typings.fibjs.ClassMSSQL

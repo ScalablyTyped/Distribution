@@ -17,7 +17,7 @@ trait ListPolicyVersionsResponse extends StObject {
   var Marker: js.UndefOr[responseMarkerType] = js.undefined
   
   /**
-    * A list of policy versions. For more information about managed policy versions, see Versioning for Managed Policies in the IAM User Guide.
+    * A list of policy versions. For more information about managed policy versions, see Versioning for managed policies in the IAM User Guide.
     */
   var Versions: js.UndefOr[policyDocumentVersionListType] = js.undefined
 }
@@ -42,6 +42,6 @@ object ListPolicyVersionsResponse {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
     
-    inline def setVersionsVarargs(value: PolicyVersion*): Self = StObject.set(x, "Versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: PolicyVersion*): Self = StObject.set(x, "Versions", js.Array(value*))
   }
 }

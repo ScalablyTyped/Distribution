@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-community__segmented-control
 
-Typings are for version 2.2.1
+Typings are for version 2.2.2
 
 ## Library description:
 React Native SegmentedControlIOS library
@@ -10,10 +10,10 @@ React Native SegmentedControlIOS library
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/segmented-control |
 | Keywords           | SegmentedControlIOS, react-native |
-| # releases         | 22 |
-| # dependents       | 2 |
-| # downloads        | 275066 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 40615.666666666664 |
+| # stars            | 333.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-community/segmented-control#readme)

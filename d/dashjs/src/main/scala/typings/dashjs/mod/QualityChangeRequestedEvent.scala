@@ -1,10 +1,7 @@
 package typings.dashjs.mod
 
 import typings.dashjs.anon.DroppedFrames
-import typings.dashjs.dashjsStrings.audio
-import typings.dashjs.dashjsStrings.fragmentedText
 import typings.dashjs.dashjsStrings.qualityChangeRequested
-import typings.dashjs.dashjsStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +10,7 @@ trait QualityChangeRequestedEvent
   extends StObject
      with Event {
   
-  var mediaType: video | audio | fragmentedText
+  var mediaType: MediaType
   
   var newQuality: Double
   
@@ -28,7 +25,7 @@ trait QualityChangeRequestedEvent
 }
 object QualityChangeRequestedEvent {
   
-  inline def apply(mediaType: video | audio | fragmentedText, newQuality: Double, oldQuality: Double): QualityChangeRequestedEvent = {
+  inline def apply(mediaType: MediaType, newQuality: Double, oldQuality: Double): QualityChangeRequestedEvent = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], newQuality = newQuality.asInstanceOf[js.Any], oldQuality = oldQuality.asInstanceOf[js.Any], reason = null, streamInfo = null)
     __obj.updateDynamic("type")("qualityChangeRequested")
     __obj.asInstanceOf[QualityChangeRequestedEvent]
@@ -36,7 +33,7 @@ object QualityChangeRequestedEvent {
   
   extension [Self <: QualityChangeRequestedEvent](x: Self) {
     
-    inline def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     inline def setNewQuality(value: Double): Self = StObject.set(x, "newQuality", value.asInstanceOf[js.Any])
     

@@ -1,9 +1,9 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientDfareporting.anon.ActiveStatus
 import typings.maximMazurokGapiClientDfareporting.anon.Alt
 import typings.maximMazurokGapiClientDfareporting.anon.Callback
-import typings.maximMazurokGapiClientDfareporting.anon.CampaignIds
 import typings.maximMazurokGapiClientDfareporting.anon.ResourceUploadTypeUploadprotocol
 import typings.maximMazurokGapiClientDfareporting.anon.UploadTypeUploadprotocolXgafv
 import org.scalablytyped.runtime.StObject
@@ -23,7 +23,7 @@ trait PlacementGroupsResource extends StObject {
   
   /** Retrieves a list of placement groups, possibly filtered. This method supports paging. */
   def list(): Request[PlacementGroupsListResponse] = js.native
-  def list(request: CampaignIds): Request[PlacementGroupsListResponse] = js.native
+  def list(request: ActiveStatus): Request[PlacementGroupsListResponse] = js.native
   
   def patch(request: Alt, body: PlacementGroup): Request[PlacementGroup] = js.native
   /** Updates an existing placement group. This method supports patch semantics. */

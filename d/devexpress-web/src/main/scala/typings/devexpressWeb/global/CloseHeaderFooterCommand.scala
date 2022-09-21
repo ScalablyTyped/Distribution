@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("CloseHeaderFooterCommand")
 @js.native
-class CloseHeaderFooterCommand ()
+open class CloseHeaderFooterCommand ()
   extends StObject
      with typings.devexpressWeb.CloseHeaderFooterCommand {
   

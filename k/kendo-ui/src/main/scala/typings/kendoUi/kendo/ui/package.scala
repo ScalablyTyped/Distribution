@@ -1,160 +1,188 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.kendoUi.JQuery
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AppBarResizeEvent = typings.kendoUi.kendo.ui.AppBarEvent
+type AppBarResizeEvent = AppBarEvent
 
-type AutoCompleteChangeEvent = typings.kendoUi.kendo.ui.AutoCompleteEvent
+type AutoCompleteChangeEvent = AutoCompleteEvent
 
-type AutoCompleteCloseEvent = typings.kendoUi.kendo.ui.AutoCompleteEvent
+type AutoCompleteCloseEvent = AutoCompleteEvent
 
-type AutoCompleteDataBoundEvent = typings.kendoUi.kendo.ui.AutoCompleteEvent
+type AutoCompleteDataBoundEvent = AutoCompleteEvent
 
-type AutoCompleteOpenEvent = typings.kendoUi.kendo.ui.AutoCompleteEvent
+type AutoCompleteOpenEvent = AutoCompleteEvent
 
-type ChatTypingEndEvent = typings.kendoUi.kendo.ui.ChatEvent
+type ChatTypingEndEvent = ChatEvent
 
-type ChatTypingStartEvent = typings.kendoUi.kendo.ui.ChatEvent
+type ChatTypingStartEvent = ChatEvent
 
-type ComboBoxCascadeEvent = typings.kendoUi.kendo.ui.ComboBoxEvent
+type ComboBoxCascadeEvent = ComboBoxEvent
 
-type ComboBoxChangeEvent = typings.kendoUi.kendo.ui.ComboBoxEvent
+type ComboBoxChangeEvent = ComboBoxEvent
 
-type ComboBoxCloseEvent = typings.kendoUi.kendo.ui.ComboBoxEvent
+type ComboBoxCloseEvent = ComboBoxEvent
 
-type ComboBoxDataBoundEvent = typings.kendoUi.kendo.ui.ComboBoxEvent
+type ComboBoxDataBoundEvent = ComboBoxEvent
 
-type ComboBoxOpenEvent = typings.kendoUi.kendo.ui.ComboBoxEvent
+type ComboBoxOpenEvent = ComboBoxEvent
 
-type DateInputChangeEvent = typings.kendoUi.kendo.ui.DateInputEvent
+type DateInputChangeEvent = DateInputEvent
 
-type DatePickerChangeEvent = typings.kendoUi.kendo.ui.DatePickerEvent
+type DatePickerChangeEvent = DatePickerEvent
 
-type DatePickerCloseEvent = typings.kendoUi.kendo.ui.DatePickerEvent
+type DatePickerCloseEvent = DatePickerEvent
 
-type DatePickerOpenEvent = typings.kendoUi.kendo.ui.DatePickerEvent
+type DatePickerOpenEvent = DatePickerEvent
 
-type DateRangePickerChangeEvent = typings.kendoUi.kendo.ui.DateRangePickerEvent
+type DateRangePickerChangeEvent = DateRangePickerEvent
 
-type DateRangePickerCloseEvent = typings.kendoUi.kendo.ui.DateRangePickerEvent
+type DateRangePickerCloseEvent = DateRangePickerEvent
 
-type DateRangePickerOpenEvent = typings.kendoUi.kendo.ui.DateRangePickerEvent
+type DateRangePickerOpenEvent = DateRangePickerEvent
 
-type DateTimePickerChangeEvent = typings.kendoUi.kendo.ui.DateTimePickerEvent
+type DateTimePickerChangeEvent = DateTimePickerEvent
 
-type DrawerHideEvent = typings.kendoUi.kendo.ui.DrawerEvent
+type DrawerHideEvent = DrawerEvent
 
-type DropDownListCascadeEvent = typings.kendoUi.kendo.ui.DropDownListEvent
+type DropDownListCascadeEvent = DropDownListEvent
 
-type DropDownListChangeEvent = typings.kendoUi.kendo.ui.DropDownListEvent
+type DropDownListChangeEvent = DropDownListEvent
 
-type DropDownListCloseEvent = typings.kendoUi.kendo.ui.DropDownListEvent
+type DropDownListCloseEvent = DropDownListEvent
 
-type DropDownListDataBoundEvent = typings.kendoUi.kendo.ui.DropDownListEvent
+type DropDownListDataBoundEvent = DropDownListEvent
 
-type DropDownListOpenEvent = typings.kendoUi.kendo.ui.DropDownListEvent
+type DropDownListOpenEvent = DropDownListEvent
 
-type DropDownTreeChangeEvent = typings.kendoUi.kendo.ui.DropDownTreeEvent
+type DropDownTreeChangeEvent = DropDownTreeEvent
 
-type DropDownTreeCloseEvent = typings.kendoUi.kendo.ui.DropDownTreeEvent
+type DropDownTreeCloseEvent = DropDownTreeEvent
 
-type DropDownTreeDataBoundEvent = typings.kendoUi.kendo.ui.DropDownTreeEvent
+type DropDownTreeDataBoundEvent = DropDownTreeEvent
 
-type DropDownTreeOpenEvent = typings.kendoUi.kendo.ui.DropDownTreeEvent
+type DropDownTreeOpenEvent = DropDownTreeEvent
 
-type DropTargetDragenterEvent = typings.kendoUi.kendo.ui.DropTargetEvent
+type DropTargetDragenterEvent = DropTargetEvent
 
-type DropTargetDragleaveEvent = typings.kendoUi.kendo.ui.DropTargetEvent
+type DropTargetDragleaveEvent = DropTargetEvent
 
-type DropTargetDropEvent = typings.kendoUi.kendo.ui.DropTargetEvent
+type DropTargetDropEvent = DropTargetEvent
 
-type FormClearEvent = typings.kendoUi.kendo.ui.FormEvent
+type EditorDefinition = js.Function2[
+/* container */ JQuery | Element | String, 
+/* options */ EditorDefinitionOptions, 
+Unit]
 
-type FormData = org.scalablytyped.runtime.StringDictionary[js.Any]
+type FloatingActionButtonClickEvent = FloatingActionButtonEvent
 
-type GanttChangeEvent = typings.kendoUi.kendo.ui.GanttEvent
+type FloatingActionButtonCollapseEvent = FloatingActionButtonEvent
 
-type GanttDataBindingEvent = typings.kendoUi.kendo.ui.GanttEvent
+type FloatingActionButtonExpandEvent = FloatingActionButtonEvent
 
-type GanttDataBoundEvent = typings.kendoUi.kendo.ui.GanttEvent
+type FormClearEvent = FormEvent
 
-type GridChangeEvent = typings.kendoUi.kendo.ui.GridEvent
+type FormData = StringDictionary[Any]
 
-type GridDataBoundEvent = typings.kendoUi.kendo.ui.GridEvent
+type GanttChangeEvent = GanttEvent
 
-type GridSaveChangesEvent = typings.kendoUi.kendo.ui.GridEvent
+type GanttDataBindingEvent = GanttEvent
 
-type ImageEditorErrorEvent = typings.kendoUi.kendo.ui.ImageEditorEvent
+type GanttDataBoundEvent = GanttEvent
 
-type MaskedTextBoxChangeEvent = typings.kendoUi.kendo.ui.MaskedTextBoxEvent
+type GridChangeEvent = GridEvent
 
-type MultiColumnComboBoxCascadeEvent = typings.kendoUi.kendo.ui.MultiColumnComboBoxEvent
+type GridDataBoundEvent = GridEvent
 
-type MultiColumnComboBoxChangeEvent = typings.kendoUi.kendo.ui.MultiColumnComboBoxEvent
+type GridSaveChangesEvent = GridEvent
 
-type MultiColumnComboBoxCloseEvent = typings.kendoUi.kendo.ui.MultiColumnComboBoxEvent
+type ImageEditorErrorEvent = ImageEditorEvent
 
-type MultiColumnComboBoxDataBoundEvent = typings.kendoUi.kendo.ui.MultiColumnComboBoxEvent
+type MaskedTextBoxChangeEvent = MaskedTextBoxEvent
 
-type MultiColumnComboBoxOpenEvent = typings.kendoUi.kendo.ui.MultiColumnComboBoxEvent
+type MultiColumnComboBoxCascadeEvent = MultiColumnComboBoxEvent
 
-type MultiSelectChangeEvent = typings.kendoUi.kendo.ui.MultiSelectEvent
+type MultiColumnComboBoxChangeEvent = MultiColumnComboBoxEvent
 
-type MultiSelectCloseEvent = typings.kendoUi.kendo.ui.MultiSelectEvent
+type MultiColumnComboBoxCloseEvent = MultiColumnComboBoxEvent
 
-type MultiSelectDataBoundEvent = typings.kendoUi.kendo.ui.MultiSelectEvent
+type MultiColumnComboBoxDataBoundEvent = MultiColumnComboBoxEvent
 
-type MultiSelectOpenEvent = typings.kendoUi.kendo.ui.MultiSelectEvent
+type MultiColumnComboBoxOpenEvent = MultiColumnComboBoxEvent
 
-type NumericTextBoxChangeEvent = typings.kendoUi.kendo.ui.NumericTextBoxEvent
+type MultiSelectChangeEvent = MultiSelectEvent
 
-type NumericTextBoxSpinEvent = typings.kendoUi.kendo.ui.NumericTextBoxEvent
+type MultiSelectCloseEvent = MultiSelectEvent
 
-type PagerChangeEvent = typings.kendoUi.kendo.ui.PagerEvent
+type MultiSelectDataBoundEvent = MultiSelectEvent
 
-type PivotGridDataBindingEvent = typings.kendoUi.kendo.ui.PivotGridEvent
+type MultiSelectOpenEvent = MultiSelectEvent
 
-type PivotGridDataBoundEvent = typings.kendoUi.kendo.ui.PivotGridEvent
+type NumericTextBoxChangeEvent = NumericTextBoxEvent
 
-type PopupActivateEvent = typings.kendoUi.kendo.ui.PopupEvent
+type NumericTextBoxSpinEvent = NumericTextBoxEvent
 
-type PopupCloseEvent = typings.kendoUi.kendo.ui.PopupEvent
+type OrgChartChangeEvent = OrgChartEvent
 
-type PopupDeactivateEvent = typings.kendoUi.kendo.ui.PopupEvent
+type OrgChartDataBindingEvent = OrgChartEvent
 
-type PopupOpenEvent = typings.kendoUi.kendo.ui.PopupEvent
+type OrgChartDataBoundEvent = OrgChartEvent
 
-type SchedulerDataBindingEvent = typings.kendoUi.kendo.ui.SchedulerEvent
+type PagerChangeEvent = PagerEvent
 
-type SchedulerDataBoundEvent = typings.kendoUi.kendo.ui.SchedulerEvent
+type PivotGridDataBindingEvent = PivotGridEvent
 
-type SpreadsheetInsertSheetEvent = typings.kendoUi.kendo.ui.SpreadsheetEvent
+type PivotGridDataBoundEvent = PivotGridEvent
 
-type SpreadsheetRenderEvent = typings.kendoUi.kendo.ui.SpreadsheetEvent
+type PivotGridV2DataBindingEvent = PivotGridV2Event
 
-type TextAreaChangeEvent = typings.kendoUi.kendo.ui.TextAreaEvent
+type PivotGridV2DataBoundEvent = PivotGridV2Event
 
-type TextBoxChangeEvent = typings.kendoUi.kendo.ui.TextBoxEvent
+type PopupActivateEvent = PopupEvent
 
-type TimePickerChangeEvent = typings.kendoUi.kendo.ui.TimePickerEvent
+type PopupCloseEvent = PopupEvent
 
-type TimePickerCloseEvent = typings.kendoUi.kendo.ui.TimePickerEvent
+type PopupDeactivateEvent = PopupEvent
 
-type TimePickerOpenEvent = typings.kendoUi.kendo.ui.TimePickerEvent
+type PopupOpenEvent = PopupEvent
 
-type TimelineDataBoundEvent = typings.kendoUi.kendo.ui.TimelineEvent
+type SchedulerDataBindingEvent = SchedulerEvent
 
-type ToolBarOverflowCloseEvent = typings.kendoUi.kendo.ui.ToolBarEvent
+type SchedulerDataBoundEvent = SchedulerEvent
 
-type ToolBarOverflowOpenEvent = typings.kendoUi.kendo.ui.ToolBarEvent
+type SpreadsheetInsertSheetEvent = SpreadsheetEvent
 
-type TreeListChangeEvent = typings.kendoUi.kendo.ui.TreeListEvent
+type SpreadsheetRenderEvent = SpreadsheetEvent
 
-type TreeListDataBindingEvent = typings.kendoUi.kendo.ui.TreeListEvent
+type TaskBoardColumnsDataBoundEvent = TaskBoardEvent
 
-type TreeListDataBoundEvent = typings.kendoUi.kendo.ui.TreeListEvent
+type TaskBoardDataBoundEvent = TaskBoardEvent
 
-type TreeListSaveChangesEvent = typings.kendoUi.kendo.ui.TreeListEvent
+type TextAreaChangeEvent = TextAreaEvent
+
+type TextBoxChangeEvent = TextBoxEvent
+
+type TimePickerChangeEvent = TimePickerEvent
+
+type TimePickerCloseEvent = TimePickerEvent
+
+type TimePickerOpenEvent = TimePickerEvent
+
+type TimelineDataBoundEvent = TimelineEvent
+
+type ToolBarOverflowCloseEvent = ToolBarEvent
+
+type ToolBarOverflowOpenEvent = ToolBarEvent
+
+type TreeListChangeEvent = TreeListEvent
+
+type TreeListDataBindingEvent = TreeListEvent
+
+type TreeListDataBoundEvent = TreeListEvent
+
+type TreeListSaveChangesEvent = TreeListEvent

@@ -11,10 +11,10 @@ object aggregateErrorMod {
   
   @JSImport("@ardatan/aggregate-error/AggregateError", "AggregateError")
   @js.native
-  class AggregateError protected ()
+  open class AggregateError protected ()
     extends StObject
        with Error {
-    def this(errors: js.Array[Error | StringDictionary[js.Any] | String]) = this()
+    def this(errors: js.Array[js.Error | StringDictionary[Any] | String]) = this()
     
     /**
       @param errors - If a string, a new `Error` is created with the string as the error message. If a non-Error object, a new `Error` is created with all properties from the object copied over.
@@ -50,11 +50,13 @@ object aggregateErrorMod {
       ```
       */
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[IterableIterator[Error]] = js.native
+    var iterator: js.Function0[IterableIterator[js.Error]] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

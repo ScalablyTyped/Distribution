@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluent__bundle
 
-Typings are for version 0.14
+Typings are for version 0.17.1
 
 ## Library description:
 Localization library for expressive translations.
@@ -10,10 +10,10 @@ Localization library for expressive translations.
 | ------------------ | :-------------: |
 | Full name          | @fluent/bundle |
 | Keywords           | localization, l10n, internationalization, i18n, ftl, plural, gender, locale, language, formatting, translate, translation, format, parser |
-| # releases         | 7 |
-| # dependents       | 5 |
-| # downloads        | 84249 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 23874.0 |
+| # stars            | 751.0 |
 
 ## Links
 - [Homepage](https://projectfluent.org)
@@ -24,7 +24,7 @@ Localization library for expressive translations.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

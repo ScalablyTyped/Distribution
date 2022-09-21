@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "socket.io-adapter" : "2.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "socket.io-adapter" : "2.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

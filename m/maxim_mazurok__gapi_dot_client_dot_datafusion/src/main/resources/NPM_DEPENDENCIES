@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.datafusion" : "1.0.20201008"
+      "@maxim_mazurok/gapi.client.datafusion" : "1.0.20220603"
     }
   ],
   "test-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.datafusion" : "1.0.20201008"
+      "@maxim_mazurok/gapi.client.datafusion" : "1.0.20220603"
     }
   ],
   "compile-devDependencies" : [

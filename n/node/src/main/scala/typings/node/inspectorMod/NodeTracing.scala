@@ -21,7 +21,7 @@ object NodeTracing {
       
       inline def setValue(value: js.Array[js.Object]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: js.Object*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: js.Object*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -43,7 +43,7 @@ object NodeTracing {
       
       inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     }
   }
   
@@ -87,7 +87,7 @@ object NodeTracing {
       
       inline def setIncludedCategories(value: js.Array[String]): Self = StObject.set(x, "includedCategories", value.asInstanceOf[js.Any])
       
-      inline def setIncludedCategoriesVarargs(value: String*): Self = StObject.set(x, "includedCategories", js.Array(value :_*))
+      inline def setIncludedCategoriesVarargs(value: String*): Self = StObject.set(x, "includedCategories", js.Array(value*))
       
       inline def setRecordMode(value: String): Self = StObject.set(x, "recordMode", value.asInstanceOf[js.Any])
       

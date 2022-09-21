@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InsertOptions extends StObject {
   
   var conflict: js.UndefOr[
-    error | replace | update | (js.Function3[/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any, js.Any])
+    error | replace | update | (js.Function3[/* id */ String, /* oldDoc */ Any, /* newDoc */ Any, Any])
   ] = js.undefined
   
   var durability: js.UndefOr[hard | soft] = js.undefined
@@ -30,10 +30,10 @@ object InsertOptions {
   extension [Self <: InsertOptions](x: Self) {
     
     inline def setConflict(
-      value: error | replace | update | (js.Function3[/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any, js.Any])
+      value: error | replace | update | (js.Function3[/* id */ String, /* oldDoc */ Any, /* newDoc */ Any, Any])
     ): Self = StObject.set(x, "conflict", value.asInstanceOf[js.Any])
     
-    inline def setConflictFunction3(value: (/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any) => js.Any): Self = StObject.set(x, "conflict", js.Any.fromFunction3(value))
+    inline def setConflictFunction3(value: (/* id */ String, /* oldDoc */ Any, /* newDoc */ Any) => Any): Self = StObject.set(x, "conflict", js.Any.fromFunction3(value))
     
     inline def setConflictUndefined: Self = StObject.set(x, "conflict", js.undefined)
     

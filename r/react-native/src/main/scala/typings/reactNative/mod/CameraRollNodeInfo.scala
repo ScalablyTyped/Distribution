@@ -10,13 +10,13 @@ trait CameraRollNodeInfo extends StObject {
   
   var image: Image
   
-  var location: js.Any
+  var location: Any
   
   var timestamp: Double
 }
 object CameraRollNodeInfo {
   
-  inline def apply(group_name: String, image: Image, location: js.Any, timestamp: Double): CameraRollNodeInfo = {
+  inline def apply(group_name: String, image: Image, location: Any, timestamp: Double): CameraRollNodeInfo = {
     val __obj = js.Dynamic.literal(group_name = group_name.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraRollNodeInfo]
   }
@@ -27,7 +27,7 @@ object CameraRollNodeInfo {
     
     inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    inline def setLocation(value: js.Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }

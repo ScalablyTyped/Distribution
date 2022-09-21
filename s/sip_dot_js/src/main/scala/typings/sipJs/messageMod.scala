@@ -11,7 +11,7 @@ object messageMod {
   
   @JSImport("sip.js/lib/api/message", "Message")
   @js.native
-  class Message protected () extends StObject {
+  open class Message protected () extends StObject {
     /** @internal */
     def this(incomingMessageRequest: IncomingMessageRequest) = this()
     
@@ -19,7 +19,7 @@ object messageMod {
     def accept(): js.Promise[Unit] = js.native
     def accept(options: ResponseOptions): js.Promise[Unit] = js.native
     
-    /* private */ var incomingMessageRequest: js.Any = js.native
+    /* private */ var incomingMessageRequest: Any = js.native
     
     /** Reject the request. */
     def reject(): js.Promise[Unit] = js.native

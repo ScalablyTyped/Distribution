@@ -24,6 +24,6 @@ object GetSendStatisticsResponse {
     
     inline def setSendDataPointsUndefined: Self = StObject.set(x, "SendDataPoints", js.undefined)
     
-    inline def setSendDataPointsVarargs(value: SendDataPoint*): Self = StObject.set(x, "SendDataPoints", js.Array(value :_*))
+    inline def setSendDataPointsVarargs(value: SendDataPoint*): Self = StObject.set(x, "SendDataPoints", js.Array(value*))
   }
 }

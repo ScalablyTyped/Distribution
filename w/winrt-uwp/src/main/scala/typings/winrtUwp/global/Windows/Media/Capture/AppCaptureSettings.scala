@@ -85,7 +85,7 @@ abstract class AppCaptureSettings ()
   var isMemoryConstrained: Boolean = js.native
   
   /* CompleteClass */
-  var isMicrophoneCaptureEnabled: js.Any = js.native
+  var isMicrophoneCaptureEnabled: Any = js.native
   
   /* unmapped type */
   /** Gets or sets the maximum recording length. */

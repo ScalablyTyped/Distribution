@@ -1,46 +1,60 @@
 package typings.walkSync.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.node.Buffer
-import typings.node.BufferEncoding
-import typings.node.NodeJS.ArrayBufferView
-import typings.node.anon.AutoClose
-import typings.node.anon.BaseEncodingOptionsflagst
-import typings.node.anon.BaseEncodingOptionswithFi
-import typings.node.anon.BaseEncodingOptionswithFiEncoding
-import typings.node.anon.EmitClose
 import typings.node.anon.Encoding
-import typings.node.anon.EncodingBufferEncoding
-import typings.node.anon.Interval
+import typings.node.anon.EncodingFlag
+import typings.node.anon.Flag
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
-import typings.node.anon.Persistent
-import typings.node.anon.Recursive
+import typings.node.anon.ObjectEncodingOptionsflagEncoding
+import typings.node.anon.ObjectEncodingOptionswith
+import typings.node.anon.ObjectEncodingOptionswithEncoding
+import typings.node.anon.StatOptionsbigintfalseund
+import typings.node.anon.StatOptionsbiginttrue
+import typings.node.anon.StatSyncOptionsbigintbool
+import typings.node.anon.StatSyncOptionsbigintfals
+import typings.node.anon.StatSyncOptionsbigintfalsBigint
+import typings.node.anon.StatSyncOptionsbiginttrue
+import typings.node.anon.StatSyncOptionsbiginttrueBigint
+import typings.node.anon.WatchFileOptionsbigintfal
+import typings.node.anon.WatchFileOptionsbiginttru
+import typings.node.anon.WatchOptionsencodingbuffe
 import typings.node.anon.WithFileTypes
-import typings.node.anon.`3`
-import typings.node.fsMod.BaseEncodingOptions
-import typings.node.fsMod.BigIntOptions
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.BigIntStats
 import typings.node.fsMod.BufferEncodingOption
+import typings.node.fsMod.CopyOptions
+import typings.node.fsMod.CopySyncOptions
 import typings.node.fsMod.Dir
 import typings.node.fsMod.Dirent
+import typings.node.fsMod.EncodingOption
 import typings.node.fsMod.FSWatcher
 import typings.node.fsMod.MakeDirectoryOptions
 import typings.node.fsMod.Mode
 import typings.node.fsMod.OpenDirOptions
 import typings.node.fsMod.OpenMode
 import typings.node.fsMod.PathLike
+import typings.node.fsMod.PathOrFileDescriptor
+import typings.node.fsMod.ReadPosition
 import typings.node.fsMod.ReadStream
+import typings.node.fsMod.ReadStreamOptions
 import typings.node.fsMod.ReadSyncOptions
 import typings.node.fsMod.RmDirOptions
 import typings.node.fsMod.RmOptions
 import typings.node.fsMod.StatOptions
+import typings.node.fsMod.StatSyncFn
+import typings.node.fsMod.StatSyncOptions
+import typings.node.fsMod.StatWatcher
 import typings.node.fsMod.Stats
+import typings.node.fsMod.StreamOptions
+import typings.node.fsMod.TimeLike
+import typings.node.fsMod.WatchListener
+import typings.node.fsMod.WatchOptions
 import typings.node.fsMod.WriteFileOptions
 import typings.node.fsMod.WriteStream
 import typings.node.fsMod.symlink.Type
-import typings.std.Date
-import typings.std.Uint8Array
+import typings.node.nodeUrlMod.URL
 import typings.walkSync.walkSyncStrings.buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -48,8 +62,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait TypeoffsNode extends StObject {
-  
-  var BigIntStats: Instantiable0[typings.node.fsMod.BigIntStats] = js.native
   
   var Dir: Instantiable0[typings.node.fsMod.Dir] = js.native
   
@@ -68,14 +80,10 @@ trait TypeoffsNode extends StObject {
   
   val appendFile: TypeofappendFile = js.native
   
-  def appendFileSync(file: Double, data: String): Unit = js.native
-  def appendFileSync(file: Double, data: String, options: WriteFileOptions): Unit = js.native
-  def appendFileSync(file: Double, data: Uint8Array): Unit = js.native
-  def appendFileSync(file: Double, data: Uint8Array, options: WriteFileOptions): Unit = js.native
-  def appendFileSync(file: PathLike, data: String): Unit = js.native
-  def appendFileSync(file: PathLike, data: String, options: WriteFileOptions): Unit = js.native
-  def appendFileSync(file: PathLike, data: Uint8Array): Unit = js.native
-  def appendFileSync(file: PathLike, data: Uint8Array, options: WriteFileOptions): Unit = js.native
+  def appendFileSync(path: PathOrFileDescriptor, data: String): Unit = js.native
+  def appendFileSync(path: PathOrFileDescriptor, data: String, options: WriteFileOptions): Unit = js.native
+  def appendFileSync(path: PathOrFileDescriptor, data: js.typedarray.Uint8Array): Unit = js.native
+  def appendFileSync(path: PathOrFileDescriptor, data: js.typedarray.Uint8Array, options: WriteFileOptions): Unit = js.native
   
   val chmod: Typeofchmod = js.native
   
@@ -94,15 +102,93 @@ trait TypeoffsNode extends StObject {
   val copyFile: TypeofcopyFile = js.native
   
   def copyFileSync(src: PathLike, dest: PathLike): Unit = js.native
-  def copyFileSync(src: PathLike, dest: PathLike, flags: Double): Unit = js.native
+  def copyFileSync(src: PathLike, dest: PathLike, mode: Double): Unit = js.native
+  
+  def cp(
+    source: String,
+    destination: String,
+    callback: js.Function1[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      Unit
+    ]
+  ): Unit = js.native
+  def cp(
+    source: String,
+    destination: String,
+    opts: CopyOptions,
+    callback: js.Function1[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      Unit
+    ]
+  ): Unit = js.native
+  def cp(
+    source: String,
+    destination: URL,
+    callback: js.Function1[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      Unit
+    ]
+  ): Unit = js.native
+  def cp(
+    source: String,
+    destination: URL,
+    opts: CopyOptions,
+    callback: js.Function1[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      Unit
+    ]
+  ): Unit = js.native
+  def cp(
+    source: URL,
+    destination: String,
+    callback: js.Function1[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      Unit
+    ]
+  ): Unit = js.native
+  def cp(
+    source: URL,
+    destination: String,
+    opts: CopyOptions,
+    callback: js.Function1[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      Unit
+    ]
+  ): Unit = js.native
+  def cp(
+    source: URL,
+    destination: URL,
+    callback: js.Function1[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      Unit
+    ]
+  ): Unit = js.native
+  def cp(
+    source: URL,
+    destination: URL,
+    opts: CopyOptions,
+    callback: js.Function1[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      Unit
+    ]
+  ): Unit = js.native
+  
+  def cpSync(source: String, destination: String): Unit = js.native
+  def cpSync(source: String, destination: String, opts: CopySyncOptions): Unit = js.native
+  def cpSync(source: String, destination: URL): Unit = js.native
+  def cpSync(source: String, destination: URL, opts: CopySyncOptions): Unit = js.native
+  def cpSync(source: URL, destination: String): Unit = js.native
+  def cpSync(source: URL, destination: String, opts: CopySyncOptions): Unit = js.native
+  def cpSync(source: URL, destination: URL): Unit = js.native
+  def cpSync(source: URL, destination: URL, opts: CopySyncOptions): Unit = js.native
   
   def createReadStream(path: PathLike): ReadStream = js.native
-  def createReadStream(path: PathLike, options: String): ReadStream = js.native
-  def createReadStream(path: PathLike, options: AutoClose): ReadStream = js.native
+  def createReadStream(path: PathLike, options: BufferEncoding): ReadStream = js.native
+  def createReadStream(path: PathLike, options: ReadStreamOptions): ReadStream = js.native
   
   def createWriteStream(path: PathLike): WriteStream = js.native
-  def createWriteStream(path: PathLike, options: String): WriteStream = js.native
-  def createWriteStream(path: PathLike, options: EmitClose): WriteStream = js.native
+  def createWriteStream(path: PathLike, options: BufferEncoding): WriteStream = js.native
+  def createWriteStream(path: PathLike, options: StreamOptions): WriteStream = js.native
   
   val exists: Typeofexists = js.native
   
@@ -122,7 +208,12 @@ trait TypeoffsNode extends StObject {
   
   val fstat: Typeoffstat = js.native
   
-  def fstatSync(fd: Double): Stats = js.native
+  def fstatSync(fd: Double): Stats | BigIntStats = js.native
+  def fstatSync(fd: Double, options: StatOptionsbigintfalseund): Stats = js.native
+  def fstatSync(fd: Double, options: StatOptionsbiginttrue): BigIntStats = js.native
+  def fstatSync(fd: Double, options: StatOptions): Stats | BigIntStats = js.native
+  @JSName("fstatSync")
+  def fstatSync_Stats(fd: Double): Stats = js.native
   
   val fsync: Typeoffsync = js.native
   
@@ -135,15 +226,7 @@ trait TypeoffsNode extends StObject {
   
   val futimes: Typeoffutimes = js.native
   
-  def futimesSync(fd: Double, atime: String, mtime: String): Unit = js.native
-  def futimesSync(fd: Double, atime: String, mtime: Double): Unit = js.native
-  def futimesSync(fd: Double, atime: String, mtime: Date): Unit = js.native
-  def futimesSync(fd: Double, atime: Double, mtime: String): Unit = js.native
-  def futimesSync(fd: Double, atime: Double, mtime: Double): Unit = js.native
-  def futimesSync(fd: Double, atime: Double, mtime: Date): Unit = js.native
-  def futimesSync(fd: Double, atime: Date, mtime: String): Unit = js.native
-  def futimesSync(fd: Double, atime: Date, mtime: Double): Unit = js.native
-  def futimesSync(fd: Double, atime: Date, mtime: Date): Unit = js.native
+  def futimesSync(fd: Double, atime: TimeLike, mtime: TimeLike): Unit = js.native
   
   val lchmod: Typeoflchmod = js.native
   
@@ -159,24 +242,27 @@ trait TypeoffsNode extends StObject {
   
   val lstat: Typeoflstat = js.native
   
-  def lstatSync(path: PathLike): Stats = js.native
+  def lstatSync(path: PathLike): js.UndefOr[Stats] = js.native
+  def lstatSync(path: PathLike, options: Unit): Stats = js.native
+  def lstatSync(path: PathLike, options: StatSyncOptionsbigintbool): Stats | BigIntStats = js.native
+  def lstatSync(path: PathLike, options: StatSyncOptionsbigintfals): js.UndefOr[Stats] = js.native
+  def lstatSync(path: PathLike, options: StatSyncOptionsbigintfalsBigint): Stats = js.native
+  def lstatSync(path: PathLike, options: StatSyncOptionsbiginttrue): js.UndefOr[BigIntStats] = js.native
+  def lstatSync(path: PathLike, options: StatSyncOptionsbiginttrueBigint): BigIntStats = js.native
+  def lstatSync(path: PathLike, options: StatSyncOptions): js.UndefOr[Stats | BigIntStats] = js.native
+  @JSName("lstatSync")
+  val lstatSync_Original: StatSyncFn = js.native
+  @JSName("lstatSync")
+  def lstatSync_Stats(path: PathLike): Stats = js.native
   
   val lutimes: Typeoflutimes = js.native
   
-  def lutimesSync(path: PathLike, atime: String, mtime: String): Unit = js.native
-  def lutimesSync(path: PathLike, atime: String, mtime: Double): Unit = js.native
-  def lutimesSync(path: PathLike, atime: String, mtime: Date): Unit = js.native
-  def lutimesSync(path: PathLike, atime: Double, mtime: String): Unit = js.native
-  def lutimesSync(path: PathLike, atime: Double, mtime: Double): Unit = js.native
-  def lutimesSync(path: PathLike, atime: Double, mtime: Date): Unit = js.native
-  def lutimesSync(path: PathLike, atime: Date, mtime: String): Unit = js.native
-  def lutimesSync(path: PathLike, atime: Date, mtime: Double): Unit = js.native
-  def lutimesSync(path: PathLike, atime: Date, mtime: Date): Unit = js.native
+  def lutimesSync(path: PathLike, atime: TimeLike, mtime: TimeLike): Unit = js.native
   
   val mkdir: Typeofmkdir = js.native
   
   def mkdirSync(path: PathLike): js.UndefOr[String] = js.native
-  def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecur): String = js.native
+  def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecur): js.UndefOr[String] = js.native
   def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecurMode): Unit = js.native
   def mkdirSync(path: PathLike, options: MakeDirectoryOptions): js.UndefOr[String] = js.native
   def mkdirSync(path: PathLike, options: Mode): js.UndefOr[String] = js.native
@@ -188,14 +274,12 @@ trait TypeoffsNode extends StObject {
   val mkdtemp: Typeofmkdtemp = js.native
   
   def mkdtempSync(prefix: String): String = js.native
-  def mkdtempSync(prefix: String, options: String): String | Buffer = js.native
-  def mkdtempSync(prefix: String, options: BufferEncoding): String = js.native
-  def mkdtempSync(prefix: String, options: BaseEncodingOptions): String = js.native
   def mkdtempSync(prefix: String, options: BufferEncodingOption): Buffer = js.native
+  def mkdtempSync(prefix: String, options: EncodingOption): String = js.native
   @JSName("mkdtempSync")
   def mkdtempSync_Union(prefix: String): String | Buffer = js.native
   @JSName("mkdtempSync")
-  def mkdtempSync_Union(prefix: String, options: BaseEncodingOptions): String | Buffer = js.native
+  def mkdtempSync_Union(prefix: String, options: EncodingOption): String | Buffer = js.native
   
   val open: Typeofopen = js.native
   
@@ -204,8 +288,8 @@ trait TypeoffsNode extends StObject {
   
   val opendir: Typeofopendir = js.native
   
-  def opendirSync(path: String): Dir = js.native
-  def opendirSync(path: String, options: OpenDirOptions): Dir = js.native
+  def opendirSync(path: PathLike): Dir = js.native
+  def opendirSync(path: PathLike, options: OpenDirOptions): Dir = js.native
   
   val promises: Typeofpromises = js.native
   
@@ -213,57 +297,52 @@ trait TypeoffsNode extends StObject {
   
   val readFile: TypeofreadFile = js.native
   
-  def readFileSync(path: Double): String | Buffer = js.native
-  def readFileSync(path: Double, options: BufferEncoding): String = js.native
-  def readFileSync(path: Double, options: BaseEncodingOptionsflagst): String | Buffer = js.native
-  def readFileSync(path: Double, options: EncodingBufferEncoding): String = js.native
-  def readFileSync(path: Double, options: `3`): Buffer = js.native
-  def readFileSync(path: PathLike): String | Buffer = js.native
-  def readFileSync(path: PathLike, options: BufferEncoding): String = js.native
-  def readFileSync(path: PathLike, options: BaseEncodingOptionsflagst): String | Buffer = js.native
-  def readFileSync(path: PathLike, options: EncodingBufferEncoding): String = js.native
-  def readFileSync(path: PathLike, options: `3`): Buffer = js.native
+  def readFileSync(path: PathOrFileDescriptor): String | Buffer = js.native
+  def readFileSync(path: PathOrFileDescriptor, options: EncodingFlag): String = js.native
+  def readFileSync(path: PathOrFileDescriptor, options: Flag): Buffer = js.native
+  def readFileSync(path: PathOrFileDescriptor, options: ObjectEncodingOptionsflagEncoding): String | Buffer = js.native
+  def readFileSync(path: PathOrFileDescriptor, options: BufferEncoding): String = js.native
   @JSName("readFileSync")
-  def readFileSync_Buffer(path: Double): Buffer = js.native
+  def readFileSync_Buffer(path: PathOrFileDescriptor): Buffer = js.native
   @JSName("readFileSync")
-  def readFileSync_Buffer(path: PathLike): Buffer = js.native
-  @JSName("readFileSync")
-  def readFileSync_Union(path: Double, options: BufferEncoding): String | Buffer = js.native
-  @JSName("readFileSync")
-  def readFileSync_Union(path: PathLike, options: BufferEncoding): String | Buffer = js.native
+  def readFileSync_Union(path: PathOrFileDescriptor, options: BufferEncoding): String | Buffer = js.native
   
-  def readSync(fd: Double, buffer: ArrayBufferView): Double = js.native
-  def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
-  def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
-  def readSync(fd: Double, buffer: ArrayBufferView, opts: ReadSyncOptions): Double = js.native
+  def readSync(fd: Double, buffer: js.typedarray.ArrayBufferView): Double = js.native
+  def readSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Double): Double = js.native
+  def readSync(
+    fd: Double,
+    buffer: js.typedarray.ArrayBufferView,
+    offset: Double,
+    length: Double,
+    position: ReadPosition
+  ): Double = js.native
+  def readSync(fd: Double, buffer: js.typedarray.ArrayBufferView, opts: ReadSyncOptions): Double = js.native
   
   val readdir: Typeofreaddir = js.native
   
   def readdirSync(path: PathLike): js.Array[String] = js.native
-  def readdirSync(path: PathLike, options: BufferEncoding): js.Array[String] = js.native
-  def readdirSync(path: PathLike, options: BaseEncodingOptionswithFi): js.Array[Buffer | String] = js.native
-  def readdirSync(path: PathLike, options: BaseEncodingOptionswithFiEncoding): js.Array[Dirent] = js.native
   def readdirSync(path: PathLike, options: Encoding): js.Array[Buffer] = js.native
+  def readdirSync(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = js.native
+  def readdirSync(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[Dirent] = js.native
   def readdirSync(path: PathLike, options: WithFileTypes): js.Array[String] = js.native
+  def readdirSync(path: PathLike, options: BufferEncoding): js.Array[String] = js.native
   @JSName("readdirSync")
   def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = js.native
   
   val readlink: Typeofreadlink = js.native
   
   def readlinkSync(path: PathLike): String = js.native
-  def readlinkSync(path: PathLike, options: String): String | Buffer = js.native
-  def readlinkSync(path: PathLike, options: BufferEncoding): String = js.native
-  def readlinkSync(path: PathLike, options: BaseEncodingOptions): String = js.native
   def readlinkSync(path: PathLike, options: BufferEncodingOption): Buffer = js.native
+  def readlinkSync(path: PathLike, options: EncodingOption): String = js.native
   @JSName("readlinkSync")
   def readlinkSync_Union(path: PathLike): String | Buffer = js.native
   @JSName("readlinkSync")
-  def readlinkSync_Union(path: PathLike, options: BaseEncodingOptions): String | Buffer = js.native
+  def readlinkSync_Union(path: PathLike, options: EncodingOption): String | Buffer = js.native
   
   val readv: Typeofreadv = js.native
   
-  def readvSync(fd: Double, buffers: js.Array[ArrayBufferView]): Double = js.native
-  def readvSync(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): Double = js.native
+  def readvSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView]): Double = js.native
+  def readvSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView], position: Double): Double = js.native
   
   val realpath: Typeofrealpath = js.native
   
@@ -285,9 +364,18 @@ trait TypeoffsNode extends StObject {
   
   val stat: Typeofstat = js.native
   
-  def statSync(path: PathLike): Stats = js.native
-  def statSync(path: PathLike, options: BigIntOptions): BigIntStats = js.native
-  def statSync(path: PathLike, options: StatOptions): Stats | BigIntStats = js.native
+  def statSync(path: PathLike): js.UndefOr[Stats] = js.native
+  def statSync(path: PathLike, options: Unit): Stats = js.native
+  def statSync(path: PathLike, options: StatSyncOptionsbigintbool): Stats | BigIntStats = js.native
+  def statSync(path: PathLike, options: StatSyncOptionsbigintfals): js.UndefOr[Stats] = js.native
+  def statSync(path: PathLike, options: StatSyncOptionsbigintfalsBigint): Stats = js.native
+  def statSync(path: PathLike, options: StatSyncOptionsbiginttrue): js.UndefOr[BigIntStats] = js.native
+  def statSync(path: PathLike, options: StatSyncOptionsbiginttrueBigint): BigIntStats = js.native
+  def statSync(path: PathLike, options: StatSyncOptions): js.UndefOr[Stats | BigIntStats] = js.native
+  @JSName("statSync")
+  val statSync_Original: StatSyncFn = js.native
+  @JSName("statSync")
+  def statSync_Stats(path: PathLike): Stats = js.native
   
   val symlink: Typeofsymlink = js.native
   
@@ -308,101 +396,76 @@ trait TypeoffsNode extends StObject {
   
   val utimes: Typeofutimes = js.native
   
-  def utimesSync(path: PathLike, atime: String, mtime: String): Unit = js.native
-  def utimesSync(path: PathLike, atime: String, mtime: Double): Unit = js.native
-  def utimesSync(path: PathLike, atime: String, mtime: Date): Unit = js.native
-  def utimesSync(path: PathLike, atime: Double, mtime: String): Unit = js.native
-  def utimesSync(path: PathLike, atime: Double, mtime: Double): Unit = js.native
-  def utimesSync(path: PathLike, atime: Double, mtime: Date): Unit = js.native
-  def utimesSync(path: PathLike, atime: Date, mtime: String): Unit = js.native
-  def utimesSync(path: PathLike, atime: Date, mtime: Double): Unit = js.native
-  def utimesSync(path: PathLike, atime: Date, mtime: Date): Unit = js.native
+  def utimesSync(path: PathLike, atime: TimeLike, mtime: TimeLike): Unit = js.native
   
   def watch(filename: PathLike): FSWatcher = js.native
-  def watch(filename: PathLike, listener: js.Function2[/* event */ String, /* filename */ String, js.Any]): FSWatcher = js.native
+  def watch(filename: PathLike, listener: WatchListener[String]): FSWatcher = js.native
   def watch(filename: PathLike, options: String): FSWatcher = js.native
-  def watch(
-    filename: PathLike,
-    options: String,
-    listener: js.Function2[/* event */ String, /* filename */ String | Buffer, Unit]
-  ): FSWatcher = js.native
-  def watch(
-    filename: PathLike,
-    options: Null,
-    listener: js.Function2[/* event */ String, Buffer | (/* filename */ String), Unit]
-  ): FSWatcher = js.native
-  def watch(
-    filename: PathLike,
-    options: Unit,
-    listener: js.Function2[/* event */ String, /* filename */ String, Unit]
-  ): FSWatcher = js.native
+  def watch(filename: PathLike, options: String, listener: WatchListener[String | Buffer]): FSWatcher = js.native
+  def watch(filename: PathLike, options: Null, listener: WatchListener[String]): FSWatcher = js.native
+  def watch(filename: PathLike, options: Unit, listener: WatchListener[String]): FSWatcher = js.native
+  def watch(filename: PathLike, options: WatchOptionsencodingbuffe): FSWatcher = js.native
+  def watch(filename: PathLike, options: WatchOptionsencodingbuffe, listener: WatchListener[Buffer]): FSWatcher = js.native
   def watch(filename: PathLike, options: BufferEncoding): FSWatcher = js.native
-  def watch(
-    filename: PathLike,
-    options: BufferEncoding,
-    listener: js.Function2[/* event */ String, /* filename */ String, Unit]
-  ): FSWatcher = js.native
-  def watch(filename: PathLike, options: Persistent): FSWatcher = js.native
-  def watch(
-    filename: PathLike,
-    options: Persistent,
-    listener: js.Function2[/* event */ String, Buffer | (/* filename */ String), Unit]
-  ): FSWatcher = js.native
-  def watch(filename: PathLike, options: Recursive): FSWatcher = js.native
-  def watch(
-    filename: PathLike,
-    options: Recursive,
-    listener: js.Function2[/* event */ String, /* filename */ Buffer, Unit]
-  ): FSWatcher = js.native
+  def watch(filename: PathLike, options: BufferEncoding, listener: WatchListener[String]): FSWatcher = js.native
+  def watch(filename: PathLike, options: WatchOptions): FSWatcher = js.native
+  def watch(filename: PathLike, options: WatchOptions, listener: WatchListener[Buffer | String]): FSWatcher = js.native
   
-  def watchFile(filename: PathLike, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): Unit = js.native
+  def watchFile(filename: PathLike, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): StatWatcher = js.native
   def watchFile(
     filename: PathLike,
     options: Unit,
-    listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
-  ): Unit = js.native
+    listener: js.Function2[
+      (/* curr */ BigIntStats) | (/* curr */ Stats), 
+      (/* prev */ BigIntStats) | (/* prev */ Stats), 
+      Unit
+    ]
+  ): StatWatcher = js.native
   def watchFile(
     filename: PathLike,
-    options: Interval,
+    options: WatchFileOptionsbigintfal,
     listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
-  ): Unit = js.native
+  ): StatWatcher = js.native
+  def watchFile(
+    filename: PathLike,
+    options: WatchFileOptionsbiginttru,
+    listener: js.Function2[/* curr */ BigIntStats, /* prev */ BigIntStats, Unit]
+  ): StatWatcher = js.native
   
   @JSName("watch")
   def watch_buffer(filename: PathLike, options: buffer): FSWatcher = js.native
   @JSName("watch")
-  def watch_buffer(
-    filename: PathLike,
-    options: buffer,
-    listener: js.Function2[/* event */ String, /* filename */ Buffer, Unit]
-  ): FSWatcher = js.native
+  def watch_buffer(filename: PathLike, options: buffer, listener: WatchListener[Buffer]): FSWatcher = js.native
   
   val write: Typeofwrite = js.native
   
   val writeFile: TypeofwriteFile = js.native
   
-  def writeFileSync(path: Double, data: String): Unit = js.native
-  def writeFileSync(path: Double, data: String, options: WriteFileOptions): Unit = js.native
-  def writeFileSync(path: Double, data: ArrayBufferView): Unit = js.native
-  def writeFileSync(path: Double, data: ArrayBufferView, options: WriteFileOptions): Unit = js.native
-  def writeFileSync(path: PathLike, data: String): Unit = js.native
-  def writeFileSync(path: PathLike, data: String, options: WriteFileOptions): Unit = js.native
-  def writeFileSync(path: PathLike, data: ArrayBufferView): Unit = js.native
-  def writeFileSync(path: PathLike, data: ArrayBufferView, options: WriteFileOptions): Unit = js.native
+  def writeFileSync(file: PathOrFileDescriptor, data: String): Unit = js.native
+  def writeFileSync(file: PathOrFileDescriptor, data: String, options: WriteFileOptions): Unit = js.native
+  def writeFileSync(file: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView): Unit = js.native
+  def writeFileSync(file: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView, options: WriteFileOptions): Unit = js.native
   
-  def writeSync(fd: Double, buffer: ArrayBufferView): Double = js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double): Double = js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Unit, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double): Double = js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Unit, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double): Double = js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Null, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Unit, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView): Double = js.native
+  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double): Double = js.native
+  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Double): Double = js.native
+  def writeSync(
+    fd: Double,
+    buffer: js.typedarray.ArrayBufferView,
+    offset: Double,
+    length: Double,
+    position: Double
+  ): Double = js.native
+  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Unit, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Double): Double = js.native
+  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Unit, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Double): Double = js.native
+  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Double, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Null, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Unit, position: Double): Double = js.native
   def writeSync(fd: Double, string: String): Double = js.native
   def writeSync(fd: Double, string: String, position: Double): Double = js.native
   def writeSync(fd: Double, string: String, position: Double, encoding: BufferEncoding): Double = js.native
@@ -411,6 +474,6 @@ trait TypeoffsNode extends StObject {
   
   val writev: Typeofwritev = js.native
   
-  def writevSync(fd: Double, buffers: js.Array[ArrayBufferView]): Double = js.native
-  def writevSync(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): Double = js.native
+  def writevSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView]): Double = js.native
+  def writevSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView], position: Double): Double = js.native
 }

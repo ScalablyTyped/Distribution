@@ -8,7 +8,7 @@ object linkedListMod {
   
   @JSImport("ol/structs/LinkedList", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with LinkedList {
     def this(opt_circular: Boolean) = this()
@@ -23,13 +23,13 @@ object linkedListMod {
       * Sets the cursor to the first item, and returns the associated data.
       */
     /* CompleteClass */
-    override def firstItem(): js.Any = js.native
+    override def firstItem(): Any = js.native
     
     /**
       * Returns the current item's data.
       */
     /* CompleteClass */
-    override def getCurrItem(): js.Any = js.native
+    override def getCurrItem(): Any = js.native
     
     /**
       * Returns the current length of the list.
@@ -41,37 +41,37 @@ object linkedListMod {
       * Returns the next item's data without moving the cursor.
       */
     /* CompleteClass */
-    override def getNextItem(): js.Any = js.native
+    override def getNextItem(): Any = js.native
     
     /**
       * Returns the previous item's data without moving the cursor.
       */
     /* CompleteClass */
-    override def getPrevItem(): js.Any = js.native
+    override def getPrevItem(): Any = js.native
     
     /**
       * Inserts an item into the linked list right after the current one.
       */
     /* CompleteClass */
-    override def insertItem(data: js.Any): Unit = js.native
+    override def insertItem(data: Any): Unit = js.native
     
     /**
       * Sets the cursor to the last item, and returns the associated data.
       */
     /* CompleteClass */
-    override def lastItem(): js.Any = js.native
+    override def lastItem(): Any = js.native
     
     /**
       * Sets the cursor to the next item, and returns the associated data.
       */
     /* CompleteClass */
-    override def nextItem(): js.Any = js.native
+    override def nextItem(): Any = js.native
     
     /**
       * Sets the cursor to the previous item, and returns the associated data.
       */
     /* CompleteClass */
-    override def prevItem(): js.Any = js.native
+    override def prevItem(): Any = js.native
     
     /**
       * Removes the current item from the list. Sets the cursor to the next item,
@@ -90,7 +90,7 @@ object linkedListMod {
   
   trait Item extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var next: js.UndefOr[Item] = js.undefined
     
@@ -98,14 +98,14 @@ object linkedListMod {
   }
   object Item {
     
-    inline def apply(data: js.Any): Item = {
+    inline def apply(data: Any): Item = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Item]
     }
     
     extension [Self <: Item](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setNext(value: Item): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
@@ -127,12 +127,12 @@ object linkedListMod {
     /**
       * Sets the cursor to the first item, and returns the associated data.
       */
-    def firstItem(): js.Any
+    def firstItem(): Any
     
     /**
       * Returns the current item's data.
       */
-    def getCurrItem(): js.Any
+    def getCurrItem(): Any
     
     /**
       * Returns the current length of the list.
@@ -142,32 +142,32 @@ object linkedListMod {
     /**
       * Returns the next item's data without moving the cursor.
       */
-    def getNextItem(): js.Any
+    def getNextItem(): Any
     
     /**
       * Returns the previous item's data without moving the cursor.
       */
-    def getPrevItem(): js.Any
+    def getPrevItem(): Any
     
     /**
       * Inserts an item into the linked list right after the current one.
       */
-    def insertItem(data: js.Any): Unit
+    def insertItem(data: Any): Unit
     
     /**
       * Sets the cursor to the last item, and returns the associated data.
       */
-    def lastItem(): js.Any
+    def lastItem(): Any
     
     /**
       * Sets the cursor to the next item, and returns the associated data.
       */
-    def nextItem(): js.Any
+    def nextItem(): Any
     
     /**
       * Sets the cursor to the previous item, and returns the associated data.
       */
-    def prevItem(): js.Any
+    def prevItem(): Any
     
     /**
       * Removes the current item from the list. Sets the cursor to the next item,
@@ -185,15 +185,15 @@ object linkedListMod {
     
     inline def apply(
       concat: LinkedList => Unit,
-      firstItem: () => js.Any,
-      getCurrItem: () => js.Any,
+      firstItem: () => Any,
+      getCurrItem: () => Any,
       getLength: () => Double,
-      getNextItem: () => js.Any,
-      getPrevItem: () => js.Any,
-      insertItem: js.Any => Unit,
-      lastItem: () => js.Any,
-      nextItem: () => js.Any,
-      prevItem: () => js.Any,
+      getNextItem: () => Any,
+      getPrevItem: () => Any,
+      insertItem: Any => Unit,
+      lastItem: () => Any,
+      nextItem: () => Any,
+      prevItem: () => Any,
       removeItem: () => Unit,
       setFirstItem: () => Unit
     ): LinkedList = {
@@ -205,23 +205,23 @@ object linkedListMod {
       
       inline def setConcat(value: LinkedList => Unit): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
       
-      inline def setFirstItem(value: () => js.Any): Self = StObject.set(x, "firstItem", js.Any.fromFunction0(value))
+      inline def setFirstItem(value: () => Any): Self = StObject.set(x, "firstItem", js.Any.fromFunction0(value))
       
-      inline def setGetCurrItem(value: () => js.Any): Self = StObject.set(x, "getCurrItem", js.Any.fromFunction0(value))
+      inline def setGetCurrItem(value: () => Any): Self = StObject.set(x, "getCurrItem", js.Any.fromFunction0(value))
       
       inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
       
-      inline def setGetNextItem(value: () => js.Any): Self = StObject.set(x, "getNextItem", js.Any.fromFunction0(value))
+      inline def setGetNextItem(value: () => Any): Self = StObject.set(x, "getNextItem", js.Any.fromFunction0(value))
       
-      inline def setGetPrevItem(value: () => js.Any): Self = StObject.set(x, "getPrevItem", js.Any.fromFunction0(value))
+      inline def setGetPrevItem(value: () => Any): Self = StObject.set(x, "getPrevItem", js.Any.fromFunction0(value))
       
-      inline def setInsertItem(value: js.Any => Unit): Self = StObject.set(x, "insertItem", js.Any.fromFunction1(value))
+      inline def setInsertItem(value: Any => Unit): Self = StObject.set(x, "insertItem", js.Any.fromFunction1(value))
       
-      inline def setLastItem(value: () => js.Any): Self = StObject.set(x, "lastItem", js.Any.fromFunction0(value))
+      inline def setLastItem(value: () => Any): Self = StObject.set(x, "lastItem", js.Any.fromFunction0(value))
       
-      inline def setNextItem(value: () => js.Any): Self = StObject.set(x, "nextItem", js.Any.fromFunction0(value))
+      inline def setNextItem(value: () => Any): Self = StObject.set(x, "nextItem", js.Any.fromFunction0(value))
       
-      inline def setPrevItem(value: () => js.Any): Self = StObject.set(x, "prevItem", js.Any.fromFunction0(value))
+      inline def setPrevItem(value: () => Any): Self = StObject.set(x, "prevItem", js.Any.fromFunction0(value))
       
       inline def setRemoveItem(value: () => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction0(value))
       

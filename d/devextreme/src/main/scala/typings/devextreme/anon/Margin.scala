@@ -1,29 +1,46 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.bottom
-import typings.devextreme.devextremeStrings.center
-import typings.devextreme.devextremeStrings.left
-import typings.devextreme.devextremeStrings.right
-import typings.devextreme.devextremeStrings.top
+import typings.devextreme.mod.DevExpress.common.VerticalEdge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Margin extends StObject {
   
+  /**
+    * Specifies a color for the outline of the control bar elements.
+    */
   var borderColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies a color for the inner area of the control bar elements.
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies whether or not to display the control bar.
+    */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
+  /**
+    * Specifies the position of the control bar.
+    */
+  var horizontalAlignment: js.UndefOr[typings.devextreme.mod.DevExpress.common.HorizontalAlignment] = js.undefined
   
+  /**
+    * Specifies the margin of the control bar in pixels.
+    */
   var margin: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the opacity of the control bar.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
   
-  var verticalAlignment: js.UndefOr[bottom | top] = js.undefined
+  /**
+    * Specifies the position of the control bar.
+    */
+  var verticalAlignment: js.UndefOr[VerticalEdge] = js.undefined
 }
 object Margin {
   
@@ -46,7 +63,7 @@ object Margin {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setHorizontalAlignment(value: center | left | right): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    inline def setHorizontalAlignment(value: typings.devextreme.mod.DevExpress.common.HorizontalAlignment): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
@@ -58,7 +75,7 @@ object Margin {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setVerticalAlignment(value: bottom | top): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    inline def setVerticalAlignment(value: VerticalEdge): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
     inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
   }

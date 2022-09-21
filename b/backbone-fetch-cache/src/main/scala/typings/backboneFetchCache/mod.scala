@@ -29,7 +29,7 @@ object mod {
          with ModelFetchWithCacheOptions {
       
       @JSName("prefillSuccess")
-      var prefillSuccess_CollectionFetchWithCacheOptions: js.UndefOr[js.Function1[/* self */ js.Any, Unit]] = js.undefined
+      var prefillSuccess_CollectionFetchWithCacheOptions: js.UndefOr[js.Function1[/* self */ Any, Unit]] = js.undefined
     }
     object CollectionFetchWithCacheOptions {
       
@@ -40,15 +40,14 @@ object mod {
       
       extension [Self <: CollectionFetchWithCacheOptions](x: Self) {
         
-        inline def setPrefillSuccess(value: /* self */ js.Any => Unit): Self = StObject.set(x, "prefillSuccess", js.Any.fromFunction1(value))
+        inline def setPrefillSuccess(value: /* self */ Any => Unit): Self = StObject.set(x, "prefillSuccess", js.Any.fromFunction1(value))
         
         inline def setPrefillSuccessUndefined: Self = StObject.set(x, "prefillSuccess", js.undefined)
       }
     }
     
     @js.native
-    trait CollectionWithCache
-      extends Collection[Model[js.Any, ModelSetOptions, js.Object]] {
+    trait CollectionWithCache extends Collection[Model[Any, ModelSetOptions, Any]] {
       
       def fetch(options: CollectionFetchWithCacheOptions): JQueryXHR = js.native
     }
@@ -61,15 +60,6 @@ object mod {
     trait ModelFetchWithCacheOptions
       extends StObject
          with ModelFetchOptions {
-      
-      /**
-        * Calls to modelInstance.fetch or collectionInstance.fetch will be
-        * fulfilled from the cache (if possible) when cache: true is set in
-        * the options hash.
-        */
-      var cache: js.UndefOr[Boolean] = js.undefined
-      
-      var context: js.UndefOr[js.Any] = js.undefined
       
       /**
         * Cache values expire after 5 minutes by default. You can adjust this
@@ -109,9 +99,7 @@ object mod {
       
       var prefillExpires: js.UndefOr[Double] = js.undefined
       
-      var prefillSuccess: js.UndefOr[
-            js.Function3[/* self */ js.Any, /* attributes */ js.Any, /* opts */ this.type, Unit]
-          ] = js.undefined
+      var prefillSuccess: js.UndefOr[js.Function3[/* self */ Any, /* attributes */ Any, /* opts */ this.type, Unit]] = js.undefined
     }
     object ModelFetchWithCacheOptions {
       
@@ -121,14 +109,6 @@ object mod {
       }
       
       extension [Self <: ModelFetchWithCacheOptions](x: Self) {
-        
-        inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
-        
-        inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
-        
-        inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-        
-        inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
         
         inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
         
@@ -140,7 +120,7 @@ object mod {
         
         inline def setPrefillExpiresUndefined: Self = StObject.set(x, "prefillExpires", js.undefined)
         
-        inline def setPrefillSuccess(value: (/* self */ js.Any, /* attributes */ js.Any, ModelFetchWithCacheOptions) => Unit): Self = StObject.set(x, "prefillSuccess", js.Any.fromFunction3(value))
+        inline def setPrefillSuccess(value: (/* self */ Any, /* attributes */ Any, ModelFetchWithCacheOptions) => Unit): Self = StObject.set(x, "prefillSuccess", js.Any.fromFunction3(value))
         
         inline def setPrefillSuccessUndefined: Self = StObject.set(x, "prefillSuccess", js.undefined)
         
@@ -149,8 +129,7 @@ object mod {
     }
     
     @js.native
-    trait ModelWithCache
-      extends Model[js.Any, ModelSetOptions, js.Object] {
+    trait ModelWithCache extends Model[Any, ModelSetOptions, Any] {
       
       def fetch(options: ModelFetchWithCacheOptions): JQueryXHR = js.native
     }
@@ -164,11 +143,11 @@ object mod {
     
     var prefillExpires: Double
     
-    var value: js.Any
+    var value: Any
   }
   object Cache {
     
-    inline def apply(expires: Double, lastSync: Double, prefillExpires: Double, value: js.Any): Cache = {
+    inline def apply(expires: Double, lastSync: Double, prefillExpires: Double, value: Any): Cache = {
       val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], lastSync = lastSync.asInstanceOf[js.Any], prefillExpires = prefillExpires.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cache]
     }
@@ -181,7 +160,7 @@ object mod {
       
       inline def setPrefillExpires(value: Double): Self = StObject.set(x, "prefillExpires", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -221,7 +200,7 @@ object mod {
   
   trait GetCacheOptions extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var url: js.UndefOr[String] = js.undefined
   }
@@ -234,7 +213,7 @@ object mod {
     
     extension [Self <: GetCacheOptions](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -288,7 +267,7 @@ object mod {
       * you pass in a Model or Collection, the .getCacheKey() method will be
       * checked before the url property.
       */
-    def clearItem(args: js.Any*): js.Any = js.native
+    def clearItem(args: Any*): Any = js.native
     
     /**
       * Global flag to enable/disable caching
@@ -341,15 +320,15 @@ object mod {
     def reset(): Unit = js.native
     
     def setCache(instance: js.Function0[String]): Unit = js.native
-    def setCache(instance: js.Function0[String], opts: Unit, attrs: js.Any): Unit = js.native
+    def setCache(instance: js.Function0[String], opts: Unit, attrs: Any): Unit = js.native
     def setCache(instance: js.Function0[String], opts: SetCacheOptions): Unit = js.native
-    def setCache(instance: js.Function0[String], opts: SetCacheOptions, attrs: js.Any): Unit = js.native
+    def setCache(instance: js.Function0[String], opts: SetCacheOptions, attrs: Any): Unit = js.native
     def setCache(instance: GetCacheKeyOptions): Unit = js.native
-    def setCache(instance: GetCacheKeyOptions, opts: Unit, attrs: js.Any): Unit = js.native
+    def setCache(instance: GetCacheKeyOptions, opts: Unit, attrs: Any): Unit = js.native
     def setCache(instance: GetCacheKeyOptions, opts: SetCacheOptions): Unit = js.native
-    def setCache(instance: GetCacheKeyOptions, opts: SetCacheOptions, attrs: js.Any): Unit = js.native
+    def setCache(instance: GetCacheKeyOptions, opts: SetCacheOptions, attrs: Any): Unit = js.native
     
-    def setLocalStorage(args: js.Any*): js.Any = js.native
+    def setLocalStorage(args: Any*): Any = js.native
   }
   
   @js.native
@@ -361,7 +340,7 @@ object mod {
     def modelFetch(): JQueryXHR = js.native
     def modelFetch(options: ModelFetchOptions): JQueryXHR = js.native
     
-    def modelSync(arg: js.Any*): JQueryXHR = js.native
+    def modelSync(arg: Any*): JQueryXHR = js.native
   }
   
   trait _GetCacheKeyOptions extends StObject

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.MaxwellBoltzmann")
 @js.native
-class MaxwellBoltzmann ()
+open class MaxwellBoltzmann ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.MaxwellBoltzmann] {
   def this(a: Double) = this()

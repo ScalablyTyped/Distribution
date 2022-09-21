@@ -1,18 +1,20 @@
 package typings.firebaseFirestore.firestoreProtoApiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IProjectsDatabasesDocumentsApiClientXgafvEnum extends js.Object {
+trait IProjectsDatabasesDocumentsApiClientXgafvEnum extends StObject {
+  
   var `1`: ProjectsDatabasesDocumentsApiClientXgafv
+  
   var `2`: ProjectsDatabasesDocumentsApiClientXgafv
+  
   def values(): js.Array[ProjectsDatabasesDocumentsApiClientXgafv]
 }
-
 object IProjectsDatabasesDocumentsApiClientXgafvEnum {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     `1`: ProjectsDatabasesDocumentsApiClientXgafv,
     `2`: ProjectsDatabasesDocumentsApiClientXgafv,
     values: () => js.Array[ProjectsDatabasesDocumentsApiClientXgafv]
@@ -22,5 +24,13 @@ object IProjectsDatabasesDocumentsApiClientXgafvEnum {
     __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProjectsDatabasesDocumentsApiClientXgafvEnum]
   }
+  
+  extension [Self <: IProjectsDatabasesDocumentsApiClientXgafvEnum](x: Self) {
+    
+    inline def set1(value: ProjectsDatabasesDocumentsApiClientXgafv): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    
+    inline def set2(value: ProjectsDatabasesDocumentsApiClientXgafv): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+    
+    inline def setValues(value: () => js.Array[ProjectsDatabasesDocumentsApiClientXgafv]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
+  }
 }
-

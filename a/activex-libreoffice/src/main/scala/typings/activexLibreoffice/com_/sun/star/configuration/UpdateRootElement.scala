@@ -60,7 +60,7 @@ object UpdateRootElement {
     getPendingChanges: () => ChangesSet,
     getStateAsProperty: () => PropertyState,
     hasPendingChanges: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeChangesListener: XChangesListener => Unit,
     removeEventListener: XEventListener => Unit,

@@ -8,5 +8,5 @@ object serviceUnavailableExceptionMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/ServiceUnavailableException", "ServiceUnavailableException")
   @js.native
-  val ServiceUnavailableException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ServiceUnavailableException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

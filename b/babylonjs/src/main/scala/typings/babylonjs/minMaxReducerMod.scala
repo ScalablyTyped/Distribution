@@ -7,6 +7,7 @@ import typings.babylonjs.observableMod.Observer
 import typings.babylonjs.postProcessManagerMod.PostProcessManager
 import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
+import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +17,7 @@ object minMaxReducerMod {
   
   @JSImport("babylonjs/Misc/minMaxReducer", "MinMaxReducer")
   @js.native
-  class MinMaxReducer protected () extends StObject {
+  open class MinMaxReducer protected () extends StObject {
     /**
       * Creates a min/max reducer
       * @param camera The camera to use for the post processes
@@ -31,6 +32,8 @@ object minMaxReducerMod {
     
     /* protected */ var _onAfterUnbindObserver: Nullable[Observer[RenderTargetTexture]] = js.native
     
+    /* protected */ var _onContextRestoredObserver: Nullable[Observer[ThinEngine]] = js.native
+    
     /* protected */ var _postProcessManager: PostProcessManager = js.native
     
     /* protected */ var _reductionSteps: Nullable[js.Array[PostProcess]] = js.native
@@ -40,7 +43,7 @@ object minMaxReducerMod {
     /**
       * Activates the reduction computation.
       * When activated, the observers registered in onAfterReductionPerformed are
-      * called after the compuation is performed
+      * called after the computation is performed
       */
     def activate(): Unit = js.native
     

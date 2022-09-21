@@ -11,9 +11,9 @@ The official API client for the Mandrill email as a service product.
 | Full name          | mandrill-api |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 134 |
-| # downloads        | 4171112 |
-| # stars            | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 350076.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://bitbucket.org/mailchimp/mandrill-api-node)

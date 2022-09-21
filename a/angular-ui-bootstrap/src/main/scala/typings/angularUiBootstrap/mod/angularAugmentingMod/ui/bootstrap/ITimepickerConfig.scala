@@ -104,7 +104,7 @@ object ITimepickerConfig {
     
     inline def setMeridiansUndefined: Self = StObject.set(x, "meridians", js.undefined)
     
-    inline def setMeridiansVarargs(value: String*): Self = StObject.set(x, "meridians", js.Array(value :_*))
+    inline def setMeridiansVarargs(value: String*): Self = StObject.set(x, "meridians", js.Array(value*))
     
     inline def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,7 @@ object mod {
   
   trait CircleProps
     extends StObject
-       with _SvgProperties[js.Any] {
+       with _SvgProperties[Any] {
     
     var cx: Double
     
@@ -46,7 +46,7 @@ object mod {
   
   trait EllipseProps
     extends StObject
-       with _SvgProperties[js.Any] {
+       with _SvgProperties[Any] {
     
     var cx: Double
     
@@ -92,7 +92,7 @@ object mod {
       
       inline def setPoints(value: js.Array[Point2D]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      inline def setPointsVarargs(value: Point2D*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: Point2D*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
@@ -100,7 +100,7 @@ object mod {
   
   trait LineProps
     extends StObject
-       with _SvgProperties[js.Any] {
+       with _SvgProperties[Any] {
     
     var x1: Double
     
@@ -168,7 +168,7 @@ object mod {
   
   trait PathProps
     extends StObject
-       with _SvgProperties[js.Any] {
+       with _SvgProperties[Any] {
     
     var d: String
   }
@@ -208,7 +208,7 @@ object mod {
   
   trait PolygonProps
     extends StObject
-       with _SvgProperties[js.Any] {
+       with _SvgProperties[Any] {
     
     var points: String
   }
@@ -229,7 +229,7 @@ object mod {
   
   trait RectProps
     extends StObject
-       with _SvgProperties[js.Any] {
+       with _SvgProperties[Any] {
     
     var height: Double
     

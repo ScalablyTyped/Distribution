@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.GameObjects
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +38,7 @@ trait Star
   /**
     * The number of points that make up the Star shape.
     */
-  var points: integer = js.native
+  var points: Double = js.native
   
   /**
     * Sets the inner radius of the Star shape.
@@ -60,5 +59,5 @@ trait Star
     * This call can be chained.
     * @param value The amount of points the Star will have.
     */
-  def setPoints(value: integer): this.type = js.native
+  def setPoints(value: Double): this.type = js.native
 }

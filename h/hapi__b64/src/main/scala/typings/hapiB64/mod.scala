@@ -1,8 +1,8 @@
 package typings.hapiB64
 
 import typings.hapiB64.hapiB64Strings.buffer
-import typings.node.Buffer
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
@@ -17,13 +17,13 @@ object mod {
   
   @JSImport("@hapi/b64", "Decoder")
   @js.native
-  class Decoder () extends Transform {
+  open class Decoder () extends Transform {
     def this(opts: TransformOptions) = this()
   }
   
   @JSImport("@hapi/b64", "Encoder")
   @js.native
-  class Encoder () extends Transform {
+  open class Encoder () extends Transform {
     def this(opts: TransformOptions) = this()
   }
   

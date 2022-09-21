@@ -1,13 +1,14 @@
 package typings.firebaseFirestore
 
-import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/platform/random_bytes", JSImport.Namespace)
-@js.native
-object platformRandomBytesMod extends js.Object {
-  def randomBytes(nBytes: Double): Uint8Array = js.native
+object platformRandomBytesMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/platform/random_bytes", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def randomBytes(nBytes: Double): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(nBytes.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
 }
-

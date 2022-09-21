@@ -1,6 +1,6 @@
 package typings.reactAliceCarousel.anon
 
-import typings.reactAliceCarousel.typesMod.TransformationSetItem
+import typings.reactAliceCarousel.typesMod.ItemCoords
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,9 @@ trait PartialState extends StObject {
   
   var autoWidth: js.UndefOr[Boolean] = js.undefined
   
-  var clones: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var canUseDom: js.UndefOr[Boolean] = js.undefined
+  
+  var clones: js.UndefOr[js.Array[Any]] = js.undefined
   
   var fadeoutAnimationIndex: js.UndefOr[Double | Null] = js.undefined
   
@@ -50,7 +52,7 @@ trait PartialState extends StObject {
   
   var swipeShiftValue: js.UndefOr[Double] = js.undefined
   
-  var transformationSet: js.UndefOr[js.Array[TransformationSetItem]] = js.undefined
+  var transformationSet: js.UndefOr[js.Array[ItemCoords]] = js.undefined
   
   var transition: js.UndefOr[String] = js.undefined
   
@@ -77,11 +79,15 @@ object PartialState {
     
     inline def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
     
-    inline def setClones(value: js.Array[js.Any]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
+    inline def setCanUseDom(value: Boolean): Self = StObject.set(x, "canUseDom", value.asInstanceOf[js.Any])
+    
+    inline def setCanUseDomUndefined: Self = StObject.set(x, "canUseDom", js.undefined)
+    
+    inline def setClones(value: js.Array[Any]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
     
     inline def setClonesUndefined: Self = StObject.set(x, "clones", js.undefined)
     
-    inline def setClonesVarargs(value: js.Any*): Self = StObject.set(x, "clones", js.Array(value :_*))
+    inline def setClonesVarargs(value: Any*): Self = StObject.set(x, "clones", js.Array(value*))
     
     inline def setFadeoutAnimationIndex(value: Double): Self = StObject.set(x, "fadeoutAnimationIndex", value.asInstanceOf[js.Any])
     
@@ -155,11 +161,11 @@ object PartialState {
     
     inline def setSwipeShiftValueUndefined: Self = StObject.set(x, "swipeShiftValue", js.undefined)
     
-    inline def setTransformationSet(value: js.Array[TransformationSetItem]): Self = StObject.set(x, "transformationSet", value.asInstanceOf[js.Any])
+    inline def setTransformationSet(value: js.Array[ItemCoords]): Self = StObject.set(x, "transformationSet", value.asInstanceOf[js.Any])
     
     inline def setTransformationSetUndefined: Self = StObject.set(x, "transformationSet", js.undefined)
     
-    inline def setTransformationSetVarargs(value: TransformationSetItem*): Self = StObject.set(x, "transformationSet", js.Array(value :_*))
+    inline def setTransformationSetVarargs(value: ItemCoords*): Self = StObject.set(x, "transformationSet", js.Array(value*))
     
     inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     

@@ -6,8 +6,6 @@ import typings.awsSdkClientXrayNode.typesEdgeStatisticsMod.EdgeStatistics
 import typings.awsSdkClientXrayNode.typesEdgeStatisticsMod.UnmarshalledEdgeStatistics
 import typings.awsSdkClientXrayNode.typesHistogramEntryMod.HistogramEntry
 import typings.awsSdkClientXrayNode.typesHistogramEntryMod.UnmarshalledHistogramEntry
-import typings.std.Date
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,12 +17,12 @@ object typesEdgeMod {
     /**
       * <p>Aliases for the edge.</p>
       */
-    var Aliases: js.UndefOr[js.Array[Alias] | Iterable[Alias]] = js.undefined
+    var Aliases: js.UndefOr[js.Array[Alias] | js.Iterable[Alias]] = js.undefined
     
     /**
       * <p>The end time of the last segment on the edge.</p>
       */
-    var EndTime: js.UndefOr[Date | String | Double] = js.undefined
+    var EndTime: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>Identifier of the edge. Unique within a service map.</p>
@@ -34,12 +32,12 @@ object typesEdgeMod {
     /**
       * <p>A histogram that maps the spread of client response times on an edge.</p>
       */
-    var ResponseTimeHistogram: js.UndefOr[js.Array[HistogramEntry] | Iterable[HistogramEntry]] = js.undefined
+    var ResponseTimeHistogram: js.UndefOr[js.Array[HistogramEntry] | js.Iterable[HistogramEntry]] = js.undefined
     
     /**
       * <p>The start time of the first segment on the edge.</p>
       */
-    var StartTime: js.UndefOr[Date | String | Double] = js.undefined
+    var StartTime: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>Response statistics for segments on the edge.</p>
@@ -55,13 +53,13 @@ object typesEdgeMod {
     
     extension [Self <: Edge](x: Self) {
       
-      inline def setAliases(value: js.Array[Alias] | Iterable[Alias]): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: js.Array[Alias] | js.Iterable[Alias]): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
       
       inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
       
-      inline def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value*))
       
-      inline def setEndTime(value: Date | String | Double): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: js.Date | String | Double): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
       
       inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
       
@@ -69,13 +67,13 @@ object typesEdgeMod {
       
       inline def setReferenceIdUndefined: Self = StObject.set(x, "ReferenceId", js.undefined)
       
-      inline def setResponseTimeHistogram(value: js.Array[HistogramEntry] | Iterable[HistogramEntry]): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
+      inline def setResponseTimeHistogram(value: js.Array[HistogramEntry] | js.Iterable[HistogramEntry]): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
       
       inline def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
       
-      inline def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
+      inline def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value*))
       
-      inline def setStartTime(value: Date | String | Double): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: js.Date | String | Double): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
       
       inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
       
@@ -99,7 +97,7 @@ object typesEdgeMod {
       * <p>The end time of the last segment on the edge.</p>
       */
     @JSName("EndTime")
-    var EndTime_UnmarshalledEdge: js.UndefOr[Date] = js.undefined
+    var EndTime_UnmarshalledEdge: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>A histogram that maps the spread of client response times on an edge.</p>
@@ -111,7 +109,7 @@ object typesEdgeMod {
       * <p>The start time of the first segment on the edge.</p>
       */
     @JSName("StartTime")
-    var StartTime_UnmarshalledEdge: js.UndefOr[Date] = js.undefined
+    var StartTime_UnmarshalledEdge: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>Response statistics for segments on the edge.</p>
@@ -132,9 +130,9 @@ object typesEdgeMod {
       
       inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
       
-      inline def setAliasesVarargs(value: UnmarshalledAlias*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: UnmarshalledAlias*): Self = StObject.set(x, "Aliases", js.Array(value*))
       
-      inline def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
       
       inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
       
@@ -142,9 +140,9 @@ object typesEdgeMod {
       
       inline def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
       
-      inline def setResponseTimeHistogramVarargs(value: UnmarshalledHistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
+      inline def setResponseTimeHistogramVarargs(value: UnmarshalledHistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value*))
       
-      inline def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
       
       inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
       

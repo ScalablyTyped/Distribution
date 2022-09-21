@@ -1,13 +1,13 @@
 package typings.three
 
+import typings.std.BufferSource
 import typings.std.ImageData
-import typings.three.constantsMod.Mapping
-import typings.three.constantsMod.PixelFormat
-import typings.three.constantsMod.TextureDataType
-import typings.three.constantsMod.TextureEncoding
-import typings.three.constantsMod.TextureFilter
-import typings.three.constantsMod.Wrapping
-import typings.three.polyfillsMod.TypedArray
+import typings.three.srcConstantsMod.Mapping
+import typings.three.srcConstantsMod.PixelFormat
+import typings.three.srcConstantsMod.TextureDataType
+import typings.three.srcConstantsMod.TextureEncoding
+import typings.three.srcConstantsMod.TextureFilter
+import typings.three.srcConstantsMod.Wrapping
 import typings.three.textureMod.Texture
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
@@ -18,25 +18,25 @@ object dataTextureMod {
   
   @JSImport("three/src/textures/DataTexture", "DataTexture")
   @js.native
-  class DataTexture protected () extends Texture {
+  open class DataTexture protected () extends Texture {
     /**
-    	 * @param data
-    	 * @param width
-    	 * @param height
-    	 * @param [format=THREE.RGBAFormat]
-    	 * @param [type=THREE.UnsignedByteType]
-    	 * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
-    	 * @param [wrapS=THREE.ClampToEdgeWrapping]
-    	 * @param [wrapT=THREE.ClampToEdgeWrapping]
-    	 * @param [magFilter=THREE.NearestFilter]
-    	 * @param [minFilter=THREE.NearestFilter]
-    	 * @param [anisotropy=1]
-    	 * @param [encoding=THREE.LinearEncoding]
-    	 */
+      * @param data
+      * @param width
+      * @param height
+      * @param [format=THREE.RGBAFormat]
+      * @param [type=THREE.UnsignedByteType]
+      * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+      * @param [wrapS=THREE.ClampToEdgeWrapping]
+      * @param [wrapT=THREE.ClampToEdgeWrapping]
+      * @param [magFilter=THREE.NearestFilter]
+      * @param [minFilter=THREE.NearestFilter]
+      * @param [anisotropy=1]
+      * @param [encoding=THREE.LinearEncoding]
+      */
     def this(
-      data: TypedArray,
-      width: Double,
-      height: Double,
+      data: js.UndefOr[BufferSource | Null],
+      width: js.UndefOr[Double],
+      height: js.UndefOr[Double],
       format: js.UndefOr[PixelFormat],
       `type`: js.UndefOr[TextureDataType],
       mapping: js.UndefOr[Mapping],
@@ -48,8 +48,7 @@ object dataTextureMod {
       encoding: js.UndefOr[TextureEncoding]
     ) = this()
     
-    @JSName("image")
-    var image_DataTexture: ImageData = js.native
+    def image_=(value: ImageData): Unit = js.native
     
     val isDataTexture: `true` = js.native
   }

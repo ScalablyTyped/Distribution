@@ -22,6 +22,6 @@ object VastCreativeCompanion {
     
     inline def setVariations(value: js.Array[VastCompanionAd]): Self = StObject.set(x, "variations", value.asInstanceOf[js.Any])
     
-    inline def setVariationsVarargs(value: VastCompanionAd*): Self = StObject.set(x, "variations", js.Array(value :_*))
+    inline def setVariationsVarargs(value: VastCompanionAd*): Self = StObject.set(x, "variations", js.Array(value*))
   }
 }

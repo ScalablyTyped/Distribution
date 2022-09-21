@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isInteropObservableMod {
   
-  @JSImport("rxjs/internal/util/isInteropObservable", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/util/isInteropObservable", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isInteropObservable(input: js.Any): /* is rxjs.rxjs/internal/types.InteropObservable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteropObservable")(input.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs/internal/types.InteropObservable<any> */ Boolean]
+  inline def isInteropObservable(input: Any): /* is rxjs.rxjs/dist/types/internal/types.InteropObservable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteropObservable")(input.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs/dist/types/internal/types.InteropObservable<any> */ Boolean]
 }

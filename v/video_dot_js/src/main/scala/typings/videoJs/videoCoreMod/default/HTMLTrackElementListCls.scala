@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [tracks=[]]
   *        A list of `HtmlTrackElement` to instantiate the list with.
   */
-class HTMLTrackElementListCls ()
+open class HTMLTrackElementListCls ()
   extends StObject
      with HTMLTrackElementList {
   def this(tracks: js.Array[HTMLTrackElement]) = this()

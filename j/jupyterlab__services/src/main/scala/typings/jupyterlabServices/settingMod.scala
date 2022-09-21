@@ -15,7 +15,7 @@ object settingMod {
   /**
     * Create a new setting manager.
     */
-  class SettingManager () extends DataConnector[IPlugin, String, String, String] {
+  open class SettingManager () extends DataConnector[IPlugin, String, String, String] {
     def this(options: IOptions) = this()
     
     /**

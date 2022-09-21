@@ -10,10 +10,10 @@ A library for filtering JavaScript objects based on a json SQL-like language, js
 | ------------------ | :-------------: |
 | Full name          | searchjs |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 158969 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 12254.333333333334 |
+| # stars            | 292.0 |
 
 ## Links
 - [Homepage](https://github.com/deitch/searchjs#readme)

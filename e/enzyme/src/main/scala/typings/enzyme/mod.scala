@@ -3,7 +3,6 @@ package typings.enzyme
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
-import typings.cheerio.cheerio.Cheerio
 import typings.enzyme.anon.Adapter
 import typings.enzyme.anon.Dictkey
 import typings.enzyme.anon.HasShouldComponentUpdateBug
@@ -48,7 +47,6 @@ import typings.react.reactStrings.yes
 import typings.std.HTMLElement
 import typings.std.NonNullable
 import typings.std.Pick
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,77 +59,73 @@ object mod {
   
   @JSImport("enzyme", "ElementClass")
   @js.native
-  class ElementClass protected ()
-    extends Component[js.Any, js.Any, js.Any] {
-    def this(props: js.Any) = this()
+  open class ElementClass protected () extends Component[Any, Any, Any] {
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("enzyme", "EnzymeAdapter")
   @js.native
-  class EnzymeAdapter () extends StObject {
+  open class EnzymeAdapter () extends StObject {
     
     var wrapWithWrappingComponent: js.UndefOr[
-        js.Function2[/* node */ ReactElement, /* options */ js.UndefOr[ShallowRendererProps], js.Any]
+        js.Function2[/* node */ ReactElement, /* options */ js.UndefOr[ShallowRendererProps], Any]
       ] = js.native
   }
   
   @JSImport("enzyme", "ReactWrapper")
   @js.native
-  class ReactWrapper[P, S, C] protected ()
+  open class ReactWrapper[P, S, C] protected ()
     extends StObject
        with CommonWrapper[P, S, C] {
     def this(nodes: js.Array[Element]) = this()
     def this(nodes: Element) = this()
-    def this(
-      nodes: js.Array[Element],
-      root: ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]]
-    ) = this()
-    def this(nodes: Element, root: ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]]) = this()
+    def this(nodes: js.Array[Element], root: ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]]) = this()
+    def this(nodes: Element, root: ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]]) = this()
     def this(nodes: js.Array[Element], root: Unit, options: MountRendererProps) = this()
     def this(
       nodes: js.Array[Element],
-      root: ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]],
+      root: ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]],
       options: MountRendererProps
     ) = this()
     def this(nodes: Element, root: Unit, options: MountRendererProps) = this()
     def this(
       nodes: Element,
-      root: ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]],
+      root: ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]],
       options: MountRendererProps
     ) = this()
     
     /**
       * Returns a new wrapper with child at the specified index.
       */
-    def childAt(index: Double): ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    def childAt(index: Double): ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
     @JSName("childAt")
-    def childAt_P2S2[P2, S2](index: Double): ReactWrapper[P2, S2, Component[js.Object, js.Object, js.Any]] = js.native
+    def childAt_P2S2[P2, S2](index: Double): ReactWrapper[P2, S2, Component[js.Object, js.Object, Any]] = js.native
     
-    def children(): ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def children(props: EnzymePropSelector): ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def children(selector: String): ReactWrapper[HTMLAttributes, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def children[P2](component: ComponentType[P2]): ReactWrapper[P2, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    def children(): ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
+    def children(props: EnzymePropSelector): ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
+    def children(selector: String): ReactWrapper[HTMLAttributes, Any, Component[js.Object, js.Object, Any]] = js.native
+    def children[P2](component: ComponentType[P2]): ReactWrapper[P2, Any, Component[js.Object, js.Object, Any]] = js.native
     /**
       * Returns a new wrapper with all of the children of the node(s) in the current wrapper. Optionally, a selector
       * can be provided and it will filter the children by this selector.
       */
-    def children[P2](statelessComponent: StatelessComponent[P2]): ReactWrapper[P2, scala.Nothing, Component[js.Object, js.Object, js.Any]] = js.native
+    def children[P2](statelessComponent: FunctionComponent[P2]): ReactWrapper[P2, scala.Nothing, Component[js.Object, js.Object, Any]] = js.native
     
-    def closest(props: EnzymePropSelector): ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def closest(selector: String): ReactWrapper[HTMLAttributes, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def closest[P2](component: ComponentType[P2]): ReactWrapper[P2, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    def closest(props: EnzymePropSelector): ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
+    def closest(selector: String): ReactWrapper[HTMLAttributes, Any, Component[js.Object, js.Object, Any]] = js.native
+    def closest[P2](component: ComponentType[P2]): ReactWrapper[P2, Any, Component[js.Object, js.Object, Any]] = js.native
     /**
       * Returns a wrapper of the first element that matches the selector by traversing up through the current node's
       * ancestors in the tree, starting with itself.
       *
       * Note: can only be called on a wrapper of a single node.
       */
-    def closest[P2](statelessComponent: StatelessComponent[P2]): ReactWrapper[P2, scala.Nothing, Component[js.Object, js.Object, js.Any]] = js.native
+    def closest[P2](statelessComponent: FunctionComponent[P2]): ReactWrapper[P2, scala.Nothing, Component[js.Object, js.Object, Any]] = js.native
     
     /**
       * Detaches the react tree from the DOM. Runs ReactDOM.unmountComponentAtNode() under the hood.
@@ -145,36 +139,36 @@ object mod {
       */
     def detach(): Unit = js.native
     
-    def filter(props: String): ReactWrapper[P, S, Component[js.Object, js.Object, js.Any]] = js.native
-    def filter(props: EnzymePropSelector): ReactWrapper[P, S, Component[js.Object, js.Object, js.Any]] = js.native
-    def filter[P2](component: ComponentType[P2]): ReactWrapper[P2, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    def filter(props: String): ReactWrapper[P, S, Component[js.Object, js.Object, Any]] = js.native
+    def filter(props: EnzymePropSelector): ReactWrapper[P, S, Component[js.Object, js.Object, Any]] = js.native
+    def filter[P2](component: ComponentType[P2]): ReactWrapper[P2, Any, Component[js.Object, js.Object, Any]] = js.native
     /**
       * Removes nodes in the current wrapper that do not match the provided selector.
       * @param selector The selector to match.
       */
-    def filter[P2](statelessComponent: StatelessComponent[P2]): ReactWrapper[P2, scala.Nothing, Component[js.Object, js.Object, js.Any]] = js.native
+    def filter[P2](statelessComponent: FunctionComponent[P2]): ReactWrapper[P2, scala.Nothing, Component[js.Object, js.Object, Any]] = js.native
     
-    def find(props: EnzymePropSelector): ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def find(selector: String): ReactWrapper[HTMLAttributes, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def find[P2](component: ComponentType[P2]): ReactWrapper[P2, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    def find(props: EnzymePropSelector): ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
+    def find(selector: String): ReactWrapper[HTMLAttributes, Any, Component[js.Object, js.Object, Any]] = js.native
+    def find[P2](component: ComponentType[P2]): ReactWrapper[P2, Any, Component[js.Object, js.Object, Any]] = js.native
     /**
       * Find every node in the render tree that matches the provided selector.
       * @param selector The selector to match.
       */
-    def find[P2](statelessComponent: StatelessComponent[P2]): ReactWrapper[P2, scala.Nothing, Component[js.Object, js.Object, js.Any]] = js.native
+    def find[P2](statelessComponent: FunctionComponent[P2]): ReactWrapper[P2, scala.Nothing, Component[js.Object, js.Object, Any]] = js.native
     
     /**
       * Finds every node in the render tree that returns true for the provided predicate function.
       */
     def findWhere(
       predicate: js.Function1[
-          /* wrapper */ ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]], 
+          /* wrapper */ ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]], 
           Boolean
         ]
-    ): ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    ): ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
     
     @JSName("find")
-    def find_props[C2 /* <: Component[js.Object, js.Object, js.Any] */](
+    def find_props[C2 /* <: Component[js.Object, js.Object, Any] */](
       componentClass: ComponentClass[
           /* import warning: importer.ImportType#apply Failed type conversion: C2['props'] */ js.Any
         ]
@@ -189,7 +183,7 @@ object mod {
       * this methods returns a ReactWrapper around the rendered wrappingComponent.
       * This ReactWrapper can be used to update the wrappingComponent's props and state
       */
-    def getWrappingComponent(): ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]] = js.native
+    def getWrappingComponent(): ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]] = js.native
     
     /**
       * Strips out all the not host-nodes from the list of nodes
@@ -197,137 +191,144 @@ object mod {
       * This method is useful if you want to check for the presence of host nodes
       * (actually rendered HTML elements) ignoring the React nodes.
       */
-    def hostNodes(): ReactWrapper[HTMLAttributes, js.Object, Component[js.Object, js.Object, js.Any]] = js.native
+    def hostNodes(): ReactWrapper[HTMLAttributes, js.Object, Component[js.Object, js.Object, Any]] = js.native
     
     def mount(): this.type = js.native
     
     /**
       * Returns a wrapper with the direct parent of the node in the current wrapper.
       */
-    def parent(): ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    def parent(): ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
     
-    def parents(): ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def parents(props: EnzymePropSelector): ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def parents(selector: String): ReactWrapper[HTMLAttributes, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def parents[P2](component: ComponentType[P2]): ReactWrapper[P2, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    def parents(): ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
+    def parents(props: EnzymePropSelector): ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
+    def parents(selector: String): ReactWrapper[HTMLAttributes, Any, Component[js.Object, js.Object, Any]] = js.native
+    def parents[P2](component: ComponentType[P2]): ReactWrapper[P2, Any, Component[js.Object, js.Object, Any]] = js.native
     /**
       * Returns a wrapper around all of the parents/ancestors of the wrapper. Does not include the node in the
       * current wrapper. Optionally, a selector can be provided and it will filter the parents by this selector.
       *
       * Note: can only be called on a wrapper of a single node.
       */
-    def parents[P2](statelessComponent: StatelessComponent[P2]): ReactWrapper[P2, scala.Nothing, Component[js.Object, js.Object, js.Any]] = js.native
+    def parents[P2](statelessComponent: FunctionComponent[P2]): ReactWrapper[P2, scala.Nothing, Component[js.Object, js.Object, Any]] = js.native
     
     /**
       * Returns a wrapper of the node that matches the provided reference name.
       *
       * NOTE: can only be called on a wrapper instance that is also the root instance.
       */
-    def ref(refName: String): ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    def ref(refName: String): ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
     @JSName("ref")
-    def ref_P2S2[P2, S2](refName: String): ReactWrapper[P2, S2, Component[js.Object, js.Object, js.Any]] = js.native
+    def ref_P2S2[P2, S2](refName: String): ReactWrapper[P2, S2, Component[js.Object, js.Object, Any]] = js.native
+    
+    /**
+      * Returns a wrapper of the node rendered by the provided render prop.
+      */
+    def renderProp[PropName /* <: /* keyof P */ String */](prop: PropName): js.Function1[
+        /* params */ Parameters[
+          /* import warning: importer.ImportType#apply Failed type conversion: P[PropName] */ js.Any
+        ], 
+        ReactWrapper[Any, scala.Nothing, Component[js.Object, js.Object, Any]]
+      ] = js.native
     
     def unmount(): this.type = js.native
   }
   
   @JSImport("enzyme", "ShallowWrapper")
   @js.native
-  class ShallowWrapper[P, S, C] protected ()
+  open class ShallowWrapper[P, S, C] protected ()
     extends StObject
        with CommonWrapper[P, S, C] {
     def this(nodes: js.Array[Element]) = this()
     def this(nodes: Element) = this()
-    def this(
-      nodes: js.Array[Element],
-      root: ShallowWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]]
-    ) = this()
-    def this(nodes: Element, root: ShallowWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]]) = this()
+    def this(nodes: js.Array[Element], root: ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]]) = this()
+    def this(nodes: Element, root: ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]]) = this()
     def this(nodes: js.Array[Element], root: Unit, options: ShallowRendererProps) = this()
     def this(
       nodes: js.Array[Element],
-      root: ShallowWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]],
+      root: ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]],
       options: ShallowRendererProps
     ) = this()
     def this(nodes: Element, root: Unit, options: ShallowRendererProps) = this()
     def this(
       nodes: Element,
-      root: ShallowWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]],
+      root: ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]],
       options: ShallowRendererProps
     ) = this()
     
     /**
       * Returns a new wrapper with child at the specified index.
       */
-    def childAt(index: Double): ShallowWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    def childAt(index: Double): ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
     @JSName("childAt")
-    def childAt_P2S2[P2, S2](index: Double): ShallowWrapper[P2, S2, Component[js.Object, js.Object, js.Any]] = js.native
+    def childAt_P2S2[P2, S2](index: Double): ShallowWrapper[P2, S2, Component[js.Object, js.Object, Any]] = js.native
     
-    def children(): ShallowWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def children(props: EnzymePropSelector): ShallowWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def children(selector: String): ShallowWrapper[HTMLAttributes, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def children[P2](component: ComponentType[P2]): ShallowWrapper[P2, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    def children(): ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
+    def children(props: EnzymePropSelector): ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
+    def children(selector: String): ShallowWrapper[HTMLAttributes, Any, Component[js.Object, js.Object, Any]] = js.native
+    def children[P2](component: ComponentType[P2]): ShallowWrapper[P2, Any, Component[js.Object, js.Object, Any]] = js.native
     /**
       * Returns a new wrapper with all of the children of the node(s) in the current wrapper. Optionally, a selector
       * can be provided and it will filter the children by this selector.
       */
-    def children[P2](statelessComponent: StatelessComponent[P2]): ShallowWrapper[P2, scala.Nothing, Component[js.Object, js.Object, js.Any]] = js.native
+    def children[P2](statelessComponent: FunctionComponent[P2]): ShallowWrapper[P2, scala.Nothing, Component[js.Object, js.Object, Any]] = js.native
     
-    def closest(props: EnzymePropSelector): ShallowWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def closest(selector: String): ShallowWrapper[HTMLAttributes, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def closest[P2](component: ComponentType[P2]): ShallowWrapper[P2, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    def closest(props: EnzymePropSelector): ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
+    def closest(selector: String): ShallowWrapper[HTMLAttributes, Any, Component[js.Object, js.Object, Any]] = js.native
+    def closest[P2](component: ComponentType[P2]): ShallowWrapper[P2, Any, Component[js.Object, js.Object, Any]] = js.native
     /**
       * Returns a wrapper of the first element that matches the selector by traversing up through the current node's
       * ancestors in the tree, starting with itself.
       *
       * Note: can only be called on a wrapper of a single node.
       */
-    def closest[P2](statelessComponent: StatelessComponent[P2]): ShallowWrapper[P2, scala.Nothing, Component[js.Object, js.Object, js.Any]] = js.native
+    def closest[P2](statelessComponent: FunctionComponent[P2]): ShallowWrapper[P2, scala.Nothing, Component[js.Object, js.Object, Any]] = js.native
     
-    def dive[P2, S2](): ShallowWrapper[P2, S2, Component[js.Object, js.Object, js.Any]] = js.native
-    def dive[P2, S2](options: ShallowRendererProps): ShallowWrapper[P2, S2, Component[js.Object, js.Object, js.Any]] = js.native
+    def dive[P2, S2](): ShallowWrapper[P2, S2, Component[js.Object, js.Object, Any]] = js.native
+    def dive[P2, S2](options: ShallowRendererProps): ShallowWrapper[P2, S2, Component[js.Object, js.Object, Any]] = js.native
     /**
       * Shallow render the one non-DOM child of the current wrapper, and return a wrapper around the result.
       * NOTE: can only be called on wrapper of a single non-DOM component element node.
       */
     @JSName("dive")
-    def dive_C2_ComponentObjectObjectAnyP2S2[C2 /* <: Component[js.Object, js.Object, js.Any] */, P2, S2](): ShallowWrapper[P2, S2, C2] = js.native
+    def dive_C2_ComponentObjectObjectAnyP2S2[C2 /* <: Component[js.Object, js.Object, Any] */, P2, S2](): ShallowWrapper[P2, S2, C2] = js.native
     @JSName("dive")
-    def dive_C2_ComponentObjectObjectAnyP2S2[C2 /* <: Component[js.Object, js.Object, js.Any] */, P2, S2](options: ShallowRendererProps): ShallowWrapper[P2, S2, C2] = js.native
+    def dive_C2_ComponentObjectObjectAnyP2S2[C2 /* <: Component[js.Object, js.Object, Any] */, P2, S2](options: ShallowRendererProps): ShallowWrapper[P2, S2, C2] = js.native
     @JSName("dive")
     def dive_P2S2C2[P2, S2, C2](): ShallowWrapper[P2, S2, C2] = js.native
     @JSName("dive")
     def dive_P2S2C2[P2, S2, C2](options: ShallowRendererProps): ShallowWrapper[P2, S2, C2] = js.native
     
-    def filter(props: String): ShallowWrapper[P, S, Component[js.Object, js.Object, js.Any]] = js.native
-    def filter(props: EnzymePropSelector): ShallowWrapper[P, S, Component[js.Object, js.Object, js.Any]] = js.native
-    def filter[P2](component: ComponentType[P2]): ShallowWrapper[P2, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    def filter(props: String): ShallowWrapper[P, S, Component[js.Object, js.Object, Any]] = js.native
+    def filter(props: EnzymePropSelector): ShallowWrapper[P, S, Component[js.Object, js.Object, Any]] = js.native
+    def filter[P2](component: ComponentType[P2]): ShallowWrapper[P2, Any, Component[js.Object, js.Object, Any]] = js.native
     /**
       * Removes nodes in the current wrapper that do not match the provided selector.
       * @param selector The selector to match.
       */
-    def filter[P2](statelessComponent: StatelessComponent[P2]): ShallowWrapper[P2, scala.Nothing, Component[js.Object, js.Object, js.Any]] = js.native
+    def filter[P2](statelessComponent: FunctionComponent[P2]): ShallowWrapper[P2, scala.Nothing, Component[js.Object, js.Object, Any]] = js.native
     
-    def find(props: EnzymePropSelector): ShallowWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def find(selector: String): ShallowWrapper[HTMLAttributes, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def find[P2](component: ComponentType[P2]): ShallowWrapper[P2, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    def find(props: EnzymePropSelector): ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
+    def find(selector: String): ShallowWrapper[HTMLAttributes, Any, Component[js.Object, js.Object, Any]] = js.native
+    def find[P2](component: ComponentType[P2]): ShallowWrapper[P2, Any, Component[js.Object, js.Object, Any]] = js.native
     /**
       * Find every node in the render tree that matches the provided selector.
       * @param selector The selector to match.
       */
-    def find[P2](statelessComponent: StatelessComponent[P2]): ShallowWrapper[P2, scala.Nothing, Component[js.Object, js.Object, js.Any]] = js.native
+    def find[P2](statelessComponent: FunctionComponent[P2]): ShallowWrapper[P2, scala.Nothing, Component[js.Object, js.Object, Any]] = js.native
     
     /**
       * Finds every node in the render tree that returns true for the provided predicate function.
       */
     def findWhere(
       predicate: js.Function1[
-          /* wrapper */ ShallowWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]], 
+          /* wrapper */ ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]], 
           Boolean
         ]
-    ): ShallowWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    ): ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
     
     @JSName("find")
-    def find_props[C2 /* <: Component[js.Object, js.Object, js.Any] */](
+    def find_props[C2 /* <: Component[js.Object, js.Object, Any] */](
       componentClass: ComponentClass[
           /* import warning: importer.ImportType#apply Failed type conversion: C2['props'] */ js.Any
         ]
@@ -342,7 +343,7 @@ object mod {
       * this methods returns a ShallowWrapper around the rendered wrappingComponent.
       * This ShallowWrapper can be used to update the wrappingComponent's props and state
       */
-    def getWrappingComponent(): ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]] = js.native
+    def getWrappingComponent(): ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]] = js.native
     
     /**
       * Strips out all the not host-nodes from the list of nodes
@@ -350,24 +351,24 @@ object mod {
       * This method is useful if you want to check for the presence of host nodes
       * (actually rendered HTML elements) ignoring the React nodes.
       */
-    def hostNodes(): ShallowWrapper[HTMLAttributes, js.Object, Component[js.Object, js.Object, js.Any]] = js.native
+    def hostNodes(): ShallowWrapper[HTMLAttributes, js.Object, Component[js.Object, js.Object, Any]] = js.native
     
     /**
       * Returns a wrapper with the direct parent of the node in the current wrapper.
       */
-    def parent(): ShallowWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    def parent(): ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
     
-    def parents(): ShallowWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def parents(props: EnzymePropSelector): ShallowWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def parents(selector: String): ShallowWrapper[HTMLAttributes, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-    def parents[P2](component: ComponentType[P2]): ShallowWrapper[P2, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+    def parents(): ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
+    def parents(props: EnzymePropSelector): ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]] = js.native
+    def parents(selector: String): ShallowWrapper[HTMLAttributes, Any, Component[js.Object, js.Object, Any]] = js.native
+    def parents[P2](component: ComponentType[P2]): ShallowWrapper[P2, Any, Component[js.Object, js.Object, Any]] = js.native
     /**
       * Returns a wrapper around all of the parents/ancestors of the wrapper. Does not include the node in the
       * current wrapper. Optionally, a selector can be provided and it will filter the parents by this selector.
       *
       * Note: can only be called on a wrapper of a single node.
       */
-    def parents[P2](statelessComponent: StatelessComponent[P2]): ShallowWrapper[P2, scala.Nothing, Component[js.Object, js.Object, js.Any]] = js.native
+    def parents[P2](statelessComponent: FunctionComponent[P2]): ShallowWrapper[P2, scala.Nothing, Component[js.Object, js.Object, Any]] = js.native
     
     /**
       * Returns a wrapper of the node rendered by the provided render prop.
@@ -376,37 +377,37 @@ object mod {
         /* params */ Parameters[
           /* import warning: importer.ImportType#apply Failed type conversion: P[PropName] */ js.Any
         ], 
-        ShallowWrapper[js.Any, scala.Nothing, Component[js.Object, js.Object, js.Any]]
+        ShallowWrapper[Any, scala.Nothing, Component[js.Object, js.Object, Any]]
       ] = js.native
     
-    def shallow(): ShallowWrapper[P, S, Component[js.Object, js.Object, js.Any]] = js.native
-    def shallow(options: ShallowRendererProps): ShallowWrapper[P, S, Component[js.Object, js.Object, js.Any]] = js.native
+    def shallow(): ShallowWrapper[P, S, Component[js.Object, js.Object, Any]] = js.native
+    def shallow(options: ShallowRendererProps): ShallowWrapper[P, S, Component[js.Object, js.Object, Any]] = js.native
     
     def unmount(): this.type = js.native
   }
   
   inline def configure(options: Adapter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def mount[P](node: ReactElement): ReactWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]]]
-  inline def mount[P](node: ReactElement, options: MountRendererProps): ReactWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]]]
+  inline def mount[P](node: ReactElement): ReactWrapper[P, Any, Component[js.Object, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, Any, Component[js.Object, js.Object, Any]]]
+  inline def mount[P](node: ReactElement, options: MountRendererProps): ReactWrapper[P, Any, Component[js.Object, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, Any, Component[js.Object, js.Object, Any]]]
   
-  inline def mount_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, js.Any] */, P, S](node: ReactElement): ReactWrapper[P, S, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, S, C]]
-  inline def mount_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, js.Any] */, P, S](node: ReactElement, options: MountRendererProps): ReactWrapper[P, S, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, S, C]]
+  inline def mount_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, Any] */, P, S](node: ReactElement): ReactWrapper[P, S, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, S, C]]
+  inline def mount_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, Any] */, P, S](node: ReactElement, options: MountRendererProps): ReactWrapper[P, S, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, S, C]]
   
-  inline def mount_PS[P, S](node: ReactElement): ReactWrapper[P, S, Component[js.Object, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, S, Component[js.Object, js.Object, js.Any]]]
-  inline def mount_PS[P, S](node: ReactElement, options: MountRendererProps): ReactWrapper[P, S, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, S, Component[js.Object, js.Object, js.Any]]]
+  inline def mount_PS[P, S](node: ReactElement): ReactWrapper[P, S, Component[js.Object, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, S, Component[js.Object, js.Object, Any]]]
+  inline def mount_PS[P, S](node: ReactElement, options: MountRendererProps): ReactWrapper[P, S, Component[js.Object, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, S, Component[js.Object, js.Object, Any]]]
   
-  inline def render[P, S](node: ReactElement): Cheerio = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(node.asInstanceOf[js.Any]).asInstanceOf[Cheerio]
-  inline def render[P, S](node: ReactElement, options: js.Any): Cheerio = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cheerio]
+  inline def render[P, S](node: ReactElement): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(node.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def render[P, S](node: ReactElement, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def shallow[P](node: ReactElement): ShallowWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any]).asInstanceOf[ShallowWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]]]
-  inline def shallow[P](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]]]
+  inline def shallow[P](node: ReactElement): ShallowWrapper[P, Any, Component[js.Object, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any]).asInstanceOf[ShallowWrapper[P, Any, Component[js.Object, js.Object, Any]]]
+  inline def shallow[P](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, Any, Component[js.Object, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, Any, Component[js.Object, js.Object, Any]]]
   
-  inline def shallow_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, js.Any] */, P, S](node: ReactElement): ShallowWrapper[P, S, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any]).asInstanceOf[ShallowWrapper[P, S, C]]
-  inline def shallow_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, js.Any] */, P, S](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, S, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, S, C]]
+  inline def shallow_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, Any] */, P, S](node: ReactElement): ShallowWrapper[P, S, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any]).asInstanceOf[ShallowWrapper[P, S, C]]
+  inline def shallow_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, Any] */, P, S](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, S, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, S, C]]
   
-  inline def shallow_PS[P, S](node: ReactElement): ShallowWrapper[P, S, Component[js.Object, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any]).asInstanceOf[ShallowWrapper[P, S, Component[js.Object, js.Object, js.Any]]]
-  inline def shallow_PS[P, S](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, S, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, S, Component[js.Object, js.Object, js.Any]]]
+  inline def shallow_PS[P, S](node: ReactElement): ShallowWrapper[P, S, Component[js.Object, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any]).asInstanceOf[ShallowWrapper[P, S, Component[js.Object, js.Object, Any]]]
+  inline def shallow_PS[P, S](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, S, Component[js.Object, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, S, Component[js.Object, js.Object, Any]]]
   
   @js.native
   trait CommonWrapper[P, S, C] extends StObject {
@@ -443,7 +444,7 @@ object mod {
     /**
       * Returns the context hash for the root node of the wrapper. Optionally pass in a prop name and it will return just that value.
       */
-    def context(): js.Any = js.native
+    def context(): Any = js.native
     def context[T](key: String): T = js.native
     
     /**
@@ -492,7 +493,7 @@ object mod {
       * @param fn A callback to be run for every node in the collection. Should expect a ShallowWrapper as the first
       *              argument, and will be run with a context of the original instance.
       */
-    def forEach(fn: js.Function2[/* wrapper */ this.type, /* index */ Double, js.Any]): this.type = js.native
+    def forEach(fn: js.Function2[/* wrapper */ this.type, /* index */ Double, Any]): this.type = js.native
     
     /**
       * Returns the node at a given index of the current wrapper.
@@ -528,7 +529,7 @@ object mod {
       * Returns whether or not the current node has a className prop including the passed in class name.
       */
     def hasClass(className: String): Boolean = js.native
-    def hasClass(className: RegExp): Boolean = js.native
+    def hasClass(className: js.RegExp): Boolean = js.native
     
     /**
       * Returns a string of the rendered HTML markup of the current render tree.
@@ -547,7 +548,7 @@ object mod {
     /**
       * Invokes a function prop.
       * @param invokePropName The function prop to call.
-      * @param ...args The argments to the invokePropName function
+      * @param ...args The arguments to the invokePropName function
       * @returns The value of the function.
       */
     def invoke[K /* <: NonNullable[
@@ -641,7 +642,7 @@ object mod {
     /**
       * Renders the component to static markup and returns a Cheerio wrapper around the result.
       */
-    def render(): Cheerio = js.native
+    def render(): Any = js.native
     
     /**
       * A method that sets the context of the root component, and re-renders. Useful for when you are wanting to
@@ -650,7 +651,7 @@ object mod {
       *
       * NOTE: can only be called on a wrapper instance that is also the root instance.
       */
-    def setContext(context: js.Any): this.type = js.native
+    def setContext(context: Any): this.type = js.native
     
     /**
       * A method that sets the props of the root component, and re-renders. Useful for when you are wanting to test
@@ -683,14 +684,14 @@ object mod {
       * Returns itself.
       * @param args?
       */
-    def simulate(event: String, args: js.Any*): this.type = js.native
+    def simulate(event: String, args: Any*): this.type = js.native
     
     /**
       * Used to simulate throwing a rendering error. Pass an error to throw.
       * Returns itself.
       * @param error
       */
-    def simulateError(error: js.Any): this.type = js.native
+    def simulateError(error: Any): this.type = js.native
     
     /**
       * Returns a new wrapper with a subset of the nodes of the original wrapper, according to the rules of `Array#slice`.
@@ -737,7 +738,7 @@ object mod {
       *
       * Note: can only be called on a wrapper of a single node.
       */
-    def `type`(): String | ComponentClass[P] | StatelessComponent[P] = js.native
+    def `type`(): String | ComponentClass[P] | FunctionComponent[P] = js.native
     
     /**
       * Forces a re-render. Useful to run before checking the render output if something external may be updating
@@ -752,19 +753,21 @@ object mod {
   @js.native
   trait ComponentClass[Props]
     extends StObject
-       with Instantiable1[/* props */ Props, Component[Props, js.Object, js.Any]]
-       with Instantiable2[/* props */ Props, /* context */ js.Any, Component[Props, js.Object, js.Any]]
+       with Instantiable1[/* props */ Props, Component[Props, js.Object, Any]]
+       with Instantiable2[/* props */ Props, /* context */ Any, Component[Props, js.Object, Any]]
   
-  type ComponentType[Props] = ComponentClass[Props] | StatelessComponent[Props]
+  type ComponentType[Props] = ComponentClass[Props] | FunctionComponent[Props]
   
-  type EnzymePropSelector = StringDictionary[js.Any]
+  type EnzymePropSelector = StringDictionary[Any]
   
-  type EnzymeSelector = String | StatelessComponent[js.Any] | ComponentClass[js.Any] | EnzymePropSelector
+  type EnzymeSelector = String | FunctionComponent[Any] | ComponentClass[Any] | EnzymePropSelector
+  
+  type FunctionComponent[Props] = js.Function2[/* props */ Props, /* context */ js.UndefOr[Any], Element | Null]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.react.mod.DOMAttributes because Already inherited
   - typings.react.mod.AriaAttributes because Already inherited
-  - typings.react.mod.SVGAttributes because var conflicts: `aria-activedescendant`, `aria-atomic`, `aria-autocomplete`, `aria-busy`, `aria-checked`, `aria-colcount`, `aria-colindex`, `aria-colspan`, `aria-controls`, `aria-current`, `aria-describedby`, `aria-details`, `aria-disabled`, `aria-dropeffect`, `aria-errormessage`, `aria-expanded`, `aria-flowto`, `aria-grabbed`, `aria-haspopup`, `aria-hidden`, `aria-invalid`, `aria-keyshortcuts`, `aria-label`, `aria-labelledby`, `aria-level`, `aria-live`, `aria-modal`, `aria-multiline`, `aria-multiselectable`, `aria-orientation`, `aria-owns`, `aria-placeholder`, `aria-posinset`, `aria-pressed`, `aria-readonly`, `aria-relevant`, `aria-required`, `aria-roledescription`, `aria-rowcount`, `aria-rowindex`, `aria-rowspan`, `aria-selected`, `aria-setsize`, `aria-sort`, `aria-valuemax`, `aria-valuemin`, `aria-valuenow`, `aria-valuetext`, children, className, color, crossOrigin, dangerouslySetInnerHTML, height, href, id, lang, max, media, method, min, name, onAbort, onAnimationEnd, onAnimationIteration, onAnimationStart, onAuxClick, onBeforeInput, onBlur, onCanPlay, onCanPlayThrough, onChange, onClick, onCompositionEnd, onCompositionStart, onCompositionUpdate, onContextMenu, onCopy, onCut, onDoubleClick, onDrag, onDragEnd, onDragEnter, onDragExit, onDragLeave, onDragOver, onDragStart, onDrop, onDurationChange, onEmptied, onEncrypted, onEnded, onError, onFocus, onInput, onInvalid, onKeyDown, onKeyPress, onKeyUp, onLoad, onLoadStart, onLoadedData, onLoadedMetadata, onMouseDown, onMouseEnter, onMouseLeave, onMouseMove, onMouseOut, onMouseOver, onMouseUp, onPaste, onPause, onPlay, onPlaying, onPointerCancel, onPointerDown, onPointerEnter, onPointerLeave, onPointerMove, onPointerOut, onPointerOver, onPointerUp, onProgress, onRateChange, onReset, onScroll, onSeeked, onSeeking, onSelect, onStalled, onSubmit, onSuspend, onTimeUpdate, onTouchCancel, onTouchEnd, onTouchMove, onTouchStart, onTransitionEnd, onVolumeChange, onWaiting, onWheel, role, style, tabIndex, target, `type`, width. Inlined fontFamily, x, points, slope, textAnchor, panose1, pointerEvents, shapeRendering, fontSize, pathLength, markerStart, in, strokeLinecap, repeatDur, strokeDashoffset, radius, alphabetic, vertOriginX, textLength, xmlBase, keyTimes, k3, fontVariant, lightingColor, overlinePosition, calcMode, contentScriptType, filterUnits, requiredExtensions, xlinkType, yChannelSelector, fillOpacity, g2, y2, kerning, viewBox, begin, colorRendering, xmlSpace, dy, floodColor, seed, targetY, xlinkHref, rx, fontSizeAdjust, maskUnits, y, strokeWidth, stitchTiles, underlinePosition, decelerate, keySplines, cx, requiredFeatures, strokeOpacity, paintOrder, allowReorder, local, mathematical, pointsAtY, xChannelSelector, exponent, from, kernelUnitLength, writingMode, d, unicodeBidi, ascent, strokeLinejoin, arabicForm, k, xlinkActuate, dur, by, viewTarget, format, edgeMode, attributeType, refY, u2, string, vMathematical, specularConstant, bbox, stroke, fontStretch, overflow, ry, stdDeviation, vAlphabetic, amplitude, elevation, vertAdvY, textRendering, ideographic, targetX, divisor, scale, xlinkArcrole, x1, repeatCount, fx, unitsPerEm, spreadMethod, xHeight, visibility, glyphName, limitingConeAngle, kernelMatrix, markerEnd, systemLanguage, numOctaves, stopColor, operator, patternContentUnits, capHeight, tableValues, vIdeographic, end, startOffset, externalResourcesRequired, xmlns, clip, dominantBaseline, spacing, xlinkShow, restart, focusable, r, u1, version, g1, origin, refX, strikethroughPosition, attributeName, x2, descent, stemh, gradientTransform, path, dx, baseFrequency, overlineThickness, specularExponent, baselineShift, surfaceScale, stopOpacity, to, orient, order, fontWeight, underlineThickness, letterSpacing, hanging, horizOriginX, mask, widths, z, fillRule, clipRule, glyphRef, accumulate, unicode, patternUnits, azimuth, xmlnsXlink, direction, xlinkTitle, k2, speed, colorInterpolation, maskContentUnits, cursor, markerUnits, colorProfile, colorInterpolationFilters, fill, intercept, glyphOrientationVertical, mode, rotate, pointsAtX, wordSpacing, y1, alignmentBaseline, clipPathUnits, fontStyle, vectorEffect, vHanging, values, in2, diffuseConstant, horizAdvX, pointsAtZ, strikethroughThickness, strokeDasharray, k4, vertOriginY, result, accentHeight, lengthAdjust, filterRes, imageRendering, gradientUnits, patternTransform, markerMid, markerHeight, stemv, strokeMiterlimit, renderingIntent, preserveAlpha, preserveAspectRatio, fy, zoomAndPan, cy, primitiveUnits, display, xmlLang, clipPath, textDecoration, orientation, unicodeRange, k1, markerWidth, offset, opacity, baseProfile, enableBackground, filter, xlinkRole, floodOpacity, contentStyleType, autoReverse, bias, additive, transform, glyphOrientationHorizontal, keyPoints */ trait HTMLAttributes
+  - typings.react.mod.SVGAttributes because var conflicts: `aria-activedescendant`, `aria-atomic`, `aria-autocomplete`, `aria-busy`, `aria-checked`, `aria-colcount`, `aria-colindex`, `aria-colspan`, `aria-controls`, `aria-current`, `aria-describedby`, `aria-details`, `aria-disabled`, `aria-dropeffect`, `aria-errormessage`, `aria-expanded`, `aria-flowto`, `aria-grabbed`, `aria-haspopup`, `aria-hidden`, `aria-invalid`, `aria-keyshortcuts`, `aria-label`, `aria-labelledby`, `aria-level`, `aria-live`, `aria-modal`, `aria-multiline`, `aria-multiselectable`, `aria-orientation`, `aria-owns`, `aria-placeholder`, `aria-posinset`, `aria-pressed`, `aria-readonly`, `aria-relevant`, `aria-required`, `aria-roledescription`, `aria-rowcount`, `aria-rowindex`, `aria-rowspan`, `aria-selected`, `aria-setsize`, `aria-sort`, `aria-valuemax`, `aria-valuemin`, `aria-valuenow`, `aria-valuetext`, children, className, color, crossOrigin, dangerouslySetInnerHTML, height, href, id, lang, max, media, method, min, name, onAbort, onAnimationEnd, onAnimationIteration, onAnimationStart, onAuxClick, onBeforeInput, onBlur, onCanPlay, onCanPlayThrough, onChange, onClick, onCompositionEnd, onCompositionStart, onCompositionUpdate, onContextMenu, onCopy, onCut, onDoubleClick, onDrag, onDragEnd, onDragEnter, onDragExit, onDragLeave, onDragOver, onDragStart, onDrop, onDurationChange, onEmptied, onEncrypted, onEnded, onError, onFocus, onInput, onInvalid, onKeyDown, onKeyPress, onKeyUp, onLoad, onLoadStart, onLoadedData, onLoadedMetadata, onMouseDown, onMouseEnter, onMouseLeave, onMouseMove, onMouseOut, onMouseOver, onMouseUp, onPaste, onPause, onPlay, onPlaying, onPointerCancel, onPointerDown, onPointerEnter, onPointerLeave, onPointerMove, onPointerOut, onPointerOver, onPointerUp, onProgress, onRateChange, onReset, onScroll, onSeeked, onSeeking, onSelect, onStalled, onSubmit, onSuspend, onTimeUpdate, onTouchCancel, onTouchEnd, onTouchMove, onTouchStart, onTransitionEnd, onVolumeChange, onWaiting, onWheel, role, style, tabIndex, target, `type`, width. Inlined fontFamily, x, points, slope, textAnchor, panose1, pointerEvents, shapeRendering, fontSize, pathLength, markerStart, in, strokeLinecap, repeatDur, strokeDashoffset, radius, alphabetic, vertOriginX, textLength, xmlBase, keyTimes, k3, fontVariant, lightingColor, overlinePosition, calcMode, contentScriptType, filterUnits, requiredExtensions, xlinkType, yChannelSelector, fillOpacity, g2, y2, kerning, viewBox, begin, colorRendering, xmlSpace, dy, floodColor, seed, targetY, xlinkHref, rx, fontSizeAdjust, maskUnits, y, strokeWidth, stitchTiles, underlinePosition, decelerate, keySplines, cx, requiredFeatures, strokeOpacity, paintOrder, allowReorder, local, mathematical, pointsAtY, xChannelSelector, exponent, from, kernelUnitLength, writingMode, d, unicodeBidi, ascent, strokeLinejoin, arabicForm, k, xlinkActuate, dur, by, viewTarget, format, edgeMode, attributeType, refY, u2, string, vMathematical, specularConstant, bbox, stroke, fontStretch, overflow, ry, stdDeviation, vAlphabetic, amplitude, elevation, vertAdvY, textRendering, ideographic, targetX, divisor, scale, xlinkArcrole, x1, repeatCount, fx, unitsPerEm, spreadMethod, xHeight, visibility, glyphName, limitingConeAngle, kernelMatrix, markerEnd, systemLanguage, numOctaves, stopColor, operator, patternContentUnits, capHeight, tableValues, vIdeographic, end, startOffset, externalResourcesRequired, xmlns, clip, dominantBaseline, spacing, xlinkShow, restart, focusable, r, u1, version, g1, origin, refX, strikethroughPosition, attributeName, x2, descent, stemh, fr, gradientTransform, path, dx, baseFrequency, overlineThickness, specularExponent, baselineShift, surfaceScale, stopOpacity, to, orient, order, fontWeight, underlineThickness, letterSpacing, hanging, horizOriginX, mask, widths, z, fillRule, clipRule, glyphRef, accumulate, unicode, patternUnits, azimuth, xmlnsXlink, direction, xlinkTitle, k2, speed, colorInterpolation, maskContentUnits, cursor, markerUnits, colorProfile, colorInterpolationFilters, fill, intercept, glyphOrientationVertical, mode, rotate, pointsAtX, wordSpacing, y1, alignmentBaseline, clipPathUnits, fontStyle, vectorEffect, vHanging, values, in2, diffuseConstant, horizAdvX, pointsAtZ, strikethroughThickness, strokeDasharray, k4, vertOriginY, result, accentHeight, lengthAdjust, filterRes, imageRendering, gradientUnits, patternTransform, markerMid, markerHeight, stemv, strokeMiterlimit, renderingIntent, preserveAlpha, preserveAspectRatio, fy, zoomAndPan, cy, primitiveUnits, display, xmlLang, clipPath, textDecoration, orientation, unicodeRange, k1, markerWidth, offset, opacity, baseProfile, enableBackground, filter, xlinkRole, floodOpacity, contentStyleType, autoReverse, bias, additive, transform, glyphOrientationHorizontal, keyPoints */ trait HTMLAttributes
     extends StObject
        with AllHTMLAttributes[js.Object] {
     
@@ -908,6 +911,8 @@ object mod {
     var fontWeight: js.UndefOr[Double | String] = js.undefined
     
     var format: js.UndefOr[Double | String] = js.undefined
+    
+    var fr: js.UndefOr[Double | String] = js.undefined
     
     var from: js.UndefOr[Double | String] = js.undefined
     
@@ -1537,6 +1542,10 @@ object mod {
       inline def setFormat(value: Double | String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      
+      inline def setFr(value: Double | String): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
+      
+      inline def setFrUndefined: Self = StObject.set(x, "fr", js.undefined)
       
       inline def setFrom(value: Double | String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -2229,7 +2238,7 @@ object mod {
   trait Lifecycles
     extends StObject
        with // TODO Maybe some life cycle are missing
-  /* lifecycleName */ StringDictionary[js.Any] {
+  /* lifecycleName */ StringDictionary[Any] {
     
     var componentDidUpdate: js.UndefOr[OnSetState] = js.undefined
     
@@ -2237,7 +2246,7 @@ object mod {
     
     var getDerivedStateFromProps: js.UndefOr[HasShouldComponentUpdateBug | Boolean] = js.undefined
     
-    var setState: js.UndefOr[js.Any] = js.undefined
+    var setState: js.UndefOr[Any] = js.undefined
   }
   object Lifecycles {
     
@@ -2260,7 +2269,7 @@ object mod {
       
       inline def setGetDerivedStateFromPropsUndefined: Self = StObject.set(x, "getDerivedStateFromProps", js.undefined)
       
-      inline def setSetState(value: js.Any): Self = StObject.set(x, "setState", value.asInstanceOf[js.Any])
+      inline def setSetState(value: Any): Self = StObject.set(x, "setState", value.asInstanceOf[js.Any])
       
       inline def setSetStateUndefined: Self = StObject.set(x, "setState", js.undefined)
     }
@@ -2289,7 +2298,7 @@ object mod {
       * See the [getWrappingComponent() docs](https://airbnb.io/enzyme/docs/api/ShallowWrapper/getWrappingComponent.html) for an example.
       * **Note**: `wrappingComponent` must render its children.
       */
-    var wrappingComponent: js.UndefOr[ComponentType[js.Any]] = js.undefined
+    var wrappingComponent: js.UndefOr[ComponentType[Any]] = js.undefined
     
     /**
       * Initial props to pass to the `wrappingComponent` if it is specified.
@@ -2319,9 +2328,9 @@ object mod {
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setWrappingComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "wrappingComponent", value.asInstanceOf[js.Any])
+      inline def setWrappingComponent(value: ComponentType[Any]): Self = StObject.set(x, "wrappingComponent", value.asInstanceOf[js.Any])
       
-      inline def setWrappingComponentFunction2(value: (js.Any, /* context */ js.UndefOr[js.Any]) => Element | Null): Self = StObject.set(x, "wrappingComponent", js.Any.fromFunction2(value))
+      inline def setWrappingComponentFunction2(value: (Any, /* context */ js.UndefOr[Any]) => Element | Null): Self = StObject.set(x, "wrappingComponent", js.Any.fromFunction2(value))
       
       inline def setWrappingComponentProps(value: js.Object): Self = StObject.set(x, "wrappingComponentProps", value.asInstanceOf[js.Any])
       
@@ -2331,21 +2340,21 @@ object mod {
     }
   }
   
-  type Parameters[T] = js.Any
+  type Parameters[T] = Any
   
   trait ShallowRendererProps extends StObject {
     
-    var PROVIDER_VALUES: js.UndefOr[js.Any] = js.undefined
+    var PROVIDER_VALUES: js.UndefOr[Any] = js.undefined
     
     var adapter: js.UndefOr[EnzymeAdapter] = js.undefined
     
     /* TODO what are these doing??? */
-    var attachTo: js.UndefOr[js.Any] = js.undefined
+    var attachTo: js.UndefOr[Any] = js.undefined
     
     /**
       * Context to be passed into the component
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     // See https://github.com/airbnb/enzyme/blob/enzyme@3.10.0/docs/api/shallow.md#arguments
     /**
@@ -2360,7 +2369,7 @@ object mod {
       */
     var enableComponentDidUpdateOnSetState: js.UndefOr[Boolean] = js.undefined
     
-    var hydrateIn: js.UndefOr[js.Any] = js.undefined
+    var hydrateIn: js.UndefOr[Any] = js.undefined
     
     /**
       * Enable experimental support for full react lifecycle methods
@@ -2388,7 +2397,7 @@ object mod {
       * See the [getWrappingComponent() docs](https://airbnb.io/enzyme/docs/api/ShallowWrapper/getWrappingComponent.html) for an example.
       * **Note**: `wrappingComponent` must render its children.
       */
-    var wrappingComponent: js.UndefOr[ComponentType[js.Any]] = js.undefined
+    var wrappingComponent: js.UndefOr[ComponentType[Any]] = js.undefined
     
     /**
       * Initial props to pass to the `wrappingComponent` if it is specified.
@@ -2408,11 +2417,11 @@ object mod {
       
       inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
       
-      inline def setAttachTo(value: js.Any): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
+      inline def setAttachTo(value: Any): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
       
       inline def setAttachToUndefined: Self = StObject.set(x, "attachTo", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -2424,7 +2433,7 @@ object mod {
       
       inline def setEnableComponentDidUpdateOnSetStateUndefined: Self = StObject.set(x, "enableComponentDidUpdateOnSetState", js.undefined)
       
-      inline def setHydrateIn(value: js.Any): Self = StObject.set(x, "hydrateIn", value.asInstanceOf[js.Any])
+      inline def setHydrateIn(value: Any): Self = StObject.set(x, "hydrateIn", value.asInstanceOf[js.Any])
       
       inline def setHydrateInUndefined: Self = StObject.set(x, "hydrateIn", js.undefined)
       
@@ -2436,7 +2445,7 @@ object mod {
       
       inline def setLifecyclesUndefined: Self = StObject.set(x, "lifecycles", js.undefined)
       
-      inline def setPROVIDER_VALUES(value: js.Any): Self = StObject.set(x, "PROVIDER_VALUES", value.asInstanceOf[js.Any])
+      inline def setPROVIDER_VALUES(value: Any): Self = StObject.set(x, "PROVIDER_VALUES", value.asInstanceOf[js.Any])
       
       inline def setPROVIDER_VALUESUndefined: Self = StObject.set(x, "PROVIDER_VALUES", js.undefined)
       
@@ -2448,9 +2457,9 @@ object mod {
       
       inline def setSuspenseFallbackUndefined: Self = StObject.set(x, "suspenseFallback", js.undefined)
       
-      inline def setWrappingComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "wrappingComponent", value.asInstanceOf[js.Any])
+      inline def setWrappingComponent(value: ComponentType[Any]): Self = StObject.set(x, "wrappingComponent", value.asInstanceOf[js.Any])
       
-      inline def setWrappingComponentFunction2(value: (js.Any, /* context */ js.UndefOr[js.Any]) => Element | Null): Self = StObject.set(x, "wrappingComponent", js.Any.fromFunction2(value))
+      inline def setWrappingComponentFunction2(value: (Any, /* context */ js.UndefOr[Any]) => Element | Null): Self = StObject.set(x, "wrappingComponent", js.Any.fromFunction2(value))
       
       inline def setWrappingComponentProps(value: js.Object): Self = StObject.set(x, "wrappingComponentProps", value.asInstanceOf[js.Any])
       
@@ -2459,6 +2468,4 @@ object mod {
       inline def setWrappingComponentUndefined: Self = StObject.set(x, "wrappingComponent", js.undefined)
     }
   }
-  
-  type StatelessComponent[Props] = js.Function2[/* props */ Props, /* context */ js.UndefOr[js.Any], Element | Null]
 }

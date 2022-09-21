@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Create container versions response.
-  */
 trait SchemaCreateContainerVersionResponse extends StObject {
   
   /**
     * Compiler errors or not.
     */
-  var compilerError: js.UndefOr[Boolean] = js.undefined
+  var compilerError: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * The container version created.
@@ -20,15 +17,12 @@ trait SchemaCreateContainerVersionResponse extends StObject {
   var containerVersion: js.UndefOr[SchemaContainerVersion] = js.undefined
   
   /**
-    * Auto generated workspace path created as a result of version creation.
-    * This field should only be populated if the created version was not a
-    * quick preview.
+    * Auto generated workspace path created as a result of version creation. This field should only be populated if the created version was not a quick preview.
     */
-  var newWorkspacePath: js.UndefOr[String] = js.undefined
+  var newWorkspacePath: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Whether version creation failed when syncing the workspace to the latest
-    * container version.
+    * Whether version creation failed when syncing the workspace to the latest container version.
     */
   var syncStatus: js.UndefOr[SchemaSyncStatus] = js.undefined
 }
@@ -43,6 +37,8 @@ object SchemaCreateContainerVersionResponse {
     
     inline def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
     
+    inline def setCompilerErrorNull: Self = StObject.set(x, "compilerError", null)
+    
     inline def setCompilerErrorUndefined: Self = StObject.set(x, "compilerError", js.undefined)
     
     inline def setContainerVersion(value: SchemaContainerVersion): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
@@ -50,6 +46,8 @@ object SchemaCreateContainerVersionResponse {
     inline def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
     
     inline def setNewWorkspacePath(value: String): Self = StObject.set(x, "newWorkspacePath", value.asInstanceOf[js.Any])
+    
+    inline def setNewWorkspacePathNull: Self = StObject.set(x, "newWorkspacePath", null)
     
     inline def setNewWorkspacePathUndefined: Self = StObject.set(x, "newWorkspacePath", js.undefined)
     

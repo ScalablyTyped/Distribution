@@ -33,7 +33,16 @@ trait PortalQueryParamsProperties extends StObject {
   var extent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
+    * Structured filter to use instead of the [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#query) property.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#filter)
+    */
+  var filter: js.UndefOr[String] = js.undefined
+  
+  /**
     * The maximum number of results to be included in the [result](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#results) set response.
+    *
+    * @default 10
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#num)
     */
@@ -58,12 +67,16 @@ trait PortalQueryParamsProperties extends StObject {
   /**
     * The order in which to sort the results.
     *
+    * @default asc
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#sortOrder)
     */
   var sortOrder: js.UndefOr[asc_ | desc_] = js.undefined
   
   /**
     * The index of the first entry in the result set response.
+    *
+    * @default 1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#start)
     */
@@ -82,11 +95,15 @@ object PortalQueryParamsProperties {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+    
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     inline def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
     

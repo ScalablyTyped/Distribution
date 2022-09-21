@@ -9,28 +9,27 @@ trait SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket extends StObject {
   /**
     * Total number of equivalence classes in this bucket.
     */
-  var bucketSize: js.UndefOr[String] = js.undefined
+  var bucketSize: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Total number of distinct equivalence classes in this bucket.
     */
-  var bucketValueCount: js.UndefOr[String] = js.undefined
+  var bucketValueCount: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Sample of equivalence classes in this bucket. The total number of classes
-    * returned per bucket is capped at 20.
+    * Sample of equivalence classes in this bucket. The total number of classes returned per bucket is capped at 20.
     */
   var bucketValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass]] = js.undefined
   
   /**
     * Lower bound on the size of the equivalence classes in this bucket.
     */
-  var equivalenceClassSizeLowerBound: js.UndefOr[String] = js.undefined
+  var equivalenceClassSizeLowerBound: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Upper bound on the size of the equivalence classes in this bucket.
     */
-  var equivalenceClassSizeUpperBound: js.UndefOr[String] = js.undefined
+  var equivalenceClassSizeUpperBound: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket {
   
@@ -43,9 +42,13 @@ object SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket {
     
     inline def setBucketSize(value: String): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
     
+    inline def setBucketSizeNull: Self = StObject.set(x, "bucketSize", null)
+    
     inline def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
     
     inline def setBucketValueCount(value: String): Self = StObject.set(x, "bucketValueCount", value.asInstanceOf[js.Any])
+    
+    inline def setBucketValueCountNull: Self = StObject.set(x, "bucketValueCount", null)
     
     inline def setBucketValueCountUndefined: Self = StObject.set(x, "bucketValueCount", js.undefined)
     
@@ -53,13 +56,17 @@ object SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket {
     
     inline def setBucketValuesUndefined: Self = StObject.set(x, "bucketValues", js.undefined)
     
-    inline def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass*): Self = StObject.set(x, "bucketValues", js.Array(value :_*))
+    inline def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass*): Self = StObject.set(x, "bucketValues", js.Array(value*))
     
     inline def setEquivalenceClassSizeLowerBound(value: String): Self = StObject.set(x, "equivalenceClassSizeLowerBound", value.asInstanceOf[js.Any])
+    
+    inline def setEquivalenceClassSizeLowerBoundNull: Self = StObject.set(x, "equivalenceClassSizeLowerBound", null)
     
     inline def setEquivalenceClassSizeLowerBoundUndefined: Self = StObject.set(x, "equivalenceClassSizeLowerBound", js.undefined)
     
     inline def setEquivalenceClassSizeUpperBound(value: String): Self = StObject.set(x, "equivalenceClassSizeUpperBound", value.asInstanceOf[js.Any])
+    
+    inline def setEquivalenceClassSizeUpperBoundNull: Self = StObject.set(x, "equivalenceClassSizeUpperBound", null)
     
     inline def setEquivalenceClassSizeUpperBoundUndefined: Self = StObject.set(x, "equivalenceClassSizeUpperBound", js.undefined)
   }

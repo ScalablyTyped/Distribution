@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateFleetError extends StObject {
   
   /**
-    * The error code that indicates why the instance could not be launched. For more information about error codes, see Error Codes.
+    * The error code that indicates why the instance could not be launched. For more information about error codes, see Error codes.
     */
   var ErrorCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The error message that describes why the instance could not be launched. For more information about error messages, see Error Codes.
+    * The error message that describes why the instance could not be launched. For more information about error messages, see Error codes.
     */
   var ErrorMessage: js.UndefOr[String] = js.undefined
   

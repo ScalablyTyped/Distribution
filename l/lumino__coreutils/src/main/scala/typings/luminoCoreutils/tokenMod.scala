@@ -8,7 +8,7 @@ object tokenMod {
   
   @JSImport("@lumino/coreutils/types/token", "Token")
   @js.native
-  class Token[T] protected () extends StObject {
+  open class Token[T] protected () extends StObject {
     /**
       * Construct a new token.
       *
@@ -16,7 +16,7 @@ object tokenMod {
       */
     def this(name: String) = this()
     
-    /* private */ var _tokenStructuralPropertyT: js.Any = js.native
+    /* private */ var _tokenStructuralPropertyT: Any = js.native
     
     /**
       * The human readable name for the token.

@@ -224,19 +224,19 @@ object GetRecommendationsOptions {
     
     inline def setSeed_artistsUndefined: Self = StObject.set(x, "seed_artists", js.undefined)
     
-    inline def setSeed_artistsVarargs(value: String*): Self = StObject.set(x, "seed_artists", js.Array(value :_*))
+    inline def setSeed_artistsVarargs(value: String*): Self = StObject.set(x, "seed_artists", js.Array(value*))
     
     inline def setSeed_genres(value: js.Array[String] | String): Self = StObject.set(x, "seed_genres", value.asInstanceOf[js.Any])
     
     inline def setSeed_genresUndefined: Self = StObject.set(x, "seed_genres", js.undefined)
     
-    inline def setSeed_genresVarargs(value: String*): Self = StObject.set(x, "seed_genres", js.Array(value :_*))
+    inline def setSeed_genresVarargs(value: String*): Self = StObject.set(x, "seed_genres", js.Array(value*))
     
     inline def setSeed_tracks(value: js.Array[String] | String): Self = StObject.set(x, "seed_tracks", value.asInstanceOf[js.Any])
     
     inline def setSeed_tracksUndefined: Self = StObject.set(x, "seed_tracks", js.undefined)
     
-    inline def setSeed_tracksVarargs(value: String*): Self = StObject.set(x, "seed_tracks", js.Array(value :_*))
+    inline def setSeed_tracksVarargs(value: String*): Self = StObject.set(x, "seed_tracks", js.Array(value*))
     
     inline def setTarget_acousticness(value: Double): Self = StObject.set(x, "target_acousticness", value.asInstanceOf[js.Any])
     

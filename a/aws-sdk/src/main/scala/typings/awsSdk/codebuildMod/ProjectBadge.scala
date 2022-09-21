@@ -12,7 +12,7 @@ trait ProjectBadge extends StObject {
   var badgeEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The publicly-accessible URL through which you can access the build badge for your project.  The publicly accessible URL through which you can access the build badge for your project. 
+    * The publicly-accessible URL through which you can access the build badge for your project. 
     */
   var badgeRequestUrl: js.UndefOr[String] = js.undefined
 }

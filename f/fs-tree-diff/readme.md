@@ -10,10 +10,10 @@ Backs out file tree changes
 | ------------------ | :-------------: |
 | Full name          | fs-tree-diff |
 | Keywords           | broccoli |
-| # releases         | 3 |
-| # dependents       | 48 |
-| # downloads        | 23100148 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2651849.0 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/stefanpenner/fs-tree-diff#readme)

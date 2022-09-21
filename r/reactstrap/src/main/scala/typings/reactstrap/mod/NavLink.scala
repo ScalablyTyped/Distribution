@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "NavLink")
+@JSImport("reactstrap", "NavLink")
 @js.native
-class NavLink () extends default
+open class NavLink () extends default

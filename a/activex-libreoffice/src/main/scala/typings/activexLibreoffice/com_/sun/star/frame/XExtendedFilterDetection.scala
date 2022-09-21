@@ -27,7 +27,7 @@ object XExtendedFilterDetection {
   inline def apply(
     acquire: () => Unit,
     detect: (String, SeqEquiv[PropertyValue]) => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XExtendedFilterDetection = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), detect = js.Any.fromFunction2(detect), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

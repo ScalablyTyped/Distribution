@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ trait ReviewEventProperties extends StObject {
   /**
     * Reply update date
     */
-  var replyDate: Date
+  var replyDate: js.Date
   
   /**
     * Publisher reply text or admin reply text
@@ -50,7 +49,7 @@ trait ReviewEventProperties extends StObject {
   /**
     * Review update date
     */
-  var reviewDate: Date
+  var reviewDate: js.Date
   
   /**
     * ReviewId of the review  on which the operation is performed
@@ -79,11 +78,11 @@ object ReviewEventProperties {
     isAdminReply: Boolean,
     isIgnored: Boolean,
     rating: Double,
-    replyDate: Date,
+    replyDate: js.Date,
     replyText: String,
     replyUserId: String,
     resourceType: ReviewResourceType,
-    reviewDate: Date,
+    reviewDate: js.Date,
     reviewId: Double,
     reviewText: String,
     userDisplayName: String,
@@ -103,7 +102,7 @@ object ReviewEventProperties {
     
     inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
-    inline def setReplyDate(value: Date): Self = StObject.set(x, "replyDate", value.asInstanceOf[js.Any])
+    inline def setReplyDate(value: js.Date): Self = StObject.set(x, "replyDate", value.asInstanceOf[js.Any])
     
     inline def setReplyText(value: String): Self = StObject.set(x, "replyText", value.asInstanceOf[js.Any])
     
@@ -111,7 +110,7 @@ object ReviewEventProperties {
     
     inline def setResourceType(value: ReviewResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    inline def setReviewDate(value: Date): Self = StObject.set(x, "reviewDate", value.asInstanceOf[js.Any])
+    inline def setReviewDate(value: js.Date): Self = StObject.set(x, "reviewDate", value.asInstanceOf[js.Any])
     
     inline def setReviewId(value: Double): Self = StObject.set(x, "reviewId", value.asInstanceOf[js.Any])
     

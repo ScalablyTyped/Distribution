@@ -29,7 +29,7 @@ object StockChartNavigatorCategoryAxisNotes {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: StockChartNavigatorCategoryAxisNotesDataItem*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: StockChartNavigatorCategoryAxisNotesDataItem*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setIcon(value: StockChartNavigatorCategoryAxisNotesIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

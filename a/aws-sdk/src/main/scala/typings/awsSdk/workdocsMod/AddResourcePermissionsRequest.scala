@@ -45,7 +45,7 @@ object AddResourcePermissionsRequest {
     
     inline def setPrincipals(value: SharePrincipalList): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
     
-    inline def setPrincipalsVarargs(value: SharePrincipal*): Self = StObject.set(x, "Principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: SharePrincipal*): Self = StObject.set(x, "Principals", js.Array(value*))
     
     inline def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }

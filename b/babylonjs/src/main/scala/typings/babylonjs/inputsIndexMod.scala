@@ -9,62 +9,84 @@ object inputsIndexMod {
   
   @JSImport("babylonjs/Cameras/Inputs/index", "ArcRotateCameraGamepadInput")
   @js.native
-  class ArcRotateCameraGamepadInput ()
+  open class ArcRotateCameraGamepadInput ()
     extends typings.babylonjs.arcRotateCameraGamepadInputMod.ArcRotateCameraGamepadInput
   
   @JSImport("babylonjs/Cameras/Inputs/index", "ArcRotateCameraKeyboardMoveInput")
   @js.native
-  class ArcRotateCameraKeyboardMoveInput ()
+  open class ArcRotateCameraKeyboardMoveInput ()
     extends typings.babylonjs.arcRotateCameraKeyboardMoveInputMod.ArcRotateCameraKeyboardMoveInput
   
   @JSImport("babylonjs/Cameras/Inputs/index", "ArcRotateCameraMouseWheelInput")
   @js.native
-  class ArcRotateCameraMouseWheelInput ()
+  open class ArcRotateCameraMouseWheelInput ()
     extends typings.babylonjs.arcRotateCameraMouseWheelInputMod.ArcRotateCameraMouseWheelInput
   
   @JSImport("babylonjs/Cameras/Inputs/index", "ArcRotateCameraPointersInput")
   @js.native
-  class ArcRotateCameraPointersInput ()
+  open class ArcRotateCameraPointersInput ()
     extends typings.babylonjs.arcRotateCameraPointersInputMod.ArcRotateCameraPointersInput
+  /* static members */
+  object ArcRotateCameraPointersInput {
+    
+    @JSImport("babylonjs/Cameras/Inputs/index", "ArcRotateCameraPointersInput")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * The minimum radius used for pinch, to avoid radius lock at 0
+      */
+    @JSImport("babylonjs/Cameras/Inputs/index", "ArcRotateCameraPointersInput.MinimumRadiusForPinch")
+    @js.native
+    def MinimumRadiusForPinch: Double = js.native
+    inline def MinimumRadiusForPinch_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MinimumRadiusForPinch")(x.asInstanceOf[js.Any])
+  }
   
   @JSImport("babylonjs/Cameras/Inputs/index", "ArcRotateCameraVRDeviceOrientationInput")
   @js.native
   /**
     * Instantiate a new ArcRotateCameraVRDeviceOrientationInput.
     */
-  class ArcRotateCameraVRDeviceOrientationInput ()
+  open class ArcRotateCameraVRDeviceOrientationInput ()
     extends typings.babylonjs.arcRotateCameraVRDeviceOrientationInputMod.ArcRotateCameraVRDeviceOrientationInput
+  
+  @JSImport("babylonjs/Cameras/Inputs/index", "BaseCameraMouseWheelInput")
+  @js.native
+  abstract class BaseCameraMouseWheelInput ()
+    extends typings.babylonjs.baseCameraMouseWheelInputMod.BaseCameraMouseWheelInput
+  
+  @JSImport("babylonjs/Cameras/Inputs/index", "BaseCameraPointersInput")
+  @js.native
+  abstract class BaseCameraPointersInput ()
+    extends typings.babylonjs.baseCameraPointersInputMod.BaseCameraPointersInput
   
   @JSImport("babylonjs/Cameras/Inputs/index", "FlyCameraKeyboardInput")
   @js.native
-  class FlyCameraKeyboardInput ()
+  open class FlyCameraKeyboardInput ()
     extends typings.babylonjs.flyCameraKeyboardInputMod.FlyCameraKeyboardInput
   
   @JSImport("babylonjs/Cameras/Inputs/index", "FlyCameraMouseInput")
   @js.native
   /**
     * Listen to mouse events to control the camera.
-    * @param touchEnabled Define if touch is enabled. (Default is true.)
     * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
     */
-  class FlyCameraMouseInput ()
-    extends typings.babylonjs.flyCameraMouseInputMod.FlyCameraMouseInput {
-    def this(touchEnabled: Boolean) = this()
-  }
+  open class FlyCameraMouseInput ()
+    extends typings.babylonjs.flyCameraMouseInputMod.FlyCameraMouseInput
   
   @JSImport("babylonjs/Cameras/Inputs/index", "FollowCameraKeyboardMoveInput")
   @js.native
-  class FollowCameraKeyboardMoveInput ()
+  open class FollowCameraKeyboardMoveInput ()
     extends typings.babylonjs.followCameraKeyboardMoveInputMod.FollowCameraKeyboardMoveInput
   
   @JSImport("babylonjs/Cameras/Inputs/index", "FollowCameraMouseWheelInput")
   @js.native
-  class FollowCameraMouseWheelInput ()
+  open class FollowCameraMouseWheelInput ()
     extends typings.babylonjs.followCameraMouseWheelInputMod.FollowCameraMouseWheelInput
   
   @JSImport("babylonjs/Cameras/Inputs/index", "FollowCameraPointersInput")
   @js.native
-  class FollowCameraPointersInput ()
+  open class FollowCameraPointersInput ()
     extends typings.babylonjs.followCameraPointersInputMod.FollowCameraPointersInput
   
   @JSImport("babylonjs/Cameras/Inputs/index", "FreeCameraDeviceOrientationInput")
@@ -73,7 +95,7 @@ object inputsIndexMod {
     * Instantiates a new input
     * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
     */
-  class FreeCameraDeviceOrientationInput ()
+  open class FreeCameraDeviceOrientationInput ()
     extends typings.babylonjs.freeCameraDeviceOrientationInputMod.FreeCameraDeviceOrientationInput
   /* static members */
   object FreeCameraDeviceOrientationInput {
@@ -87,18 +109,18 @@ object inputsIndexMod {
       * @param timeout amount of time in milliseconds to wait for a response from the sensor (default: infinite)
       * @returns a promise that will resolve on orientation change
       */
-    inline def WaitForOrientationChangeAsync(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("WaitForOrientationChangeAsync")().asInstanceOf[js.Promise[js.Any]]
-    inline def WaitForOrientationChangeAsync(timeout: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("WaitForOrientationChangeAsync")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def WaitForOrientationChangeAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("WaitForOrientationChangeAsync")().asInstanceOf[js.Promise[Unit]]
+    inline def WaitForOrientationChangeAsync(timeout: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("WaitForOrientationChangeAsync")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   }
   
   @JSImport("babylonjs/Cameras/Inputs/index", "FreeCameraGamepadInput")
   @js.native
-  class FreeCameraGamepadInput ()
+  open class FreeCameraGamepadInput ()
     extends typings.babylonjs.freeCameraGamepadInputMod.FreeCameraGamepadInput
   
   @JSImport("babylonjs/Cameras/Inputs/index", "FreeCameraKeyboardMoveInput")
   @js.native
-  class FreeCameraKeyboardMoveInput ()
+  open class FreeCameraKeyboardMoveInput ()
     extends typings.babylonjs.freeCameraKeyboardMoveInputMod.FreeCameraKeyboardMoveInput
   
   @JSImport("babylonjs/Cameras/Inputs/index", "FreeCameraMouseInput")
@@ -108,7 +130,7 @@ object inputsIndexMod {
     * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
     * @param touchEnabled Defines if touch is enabled or not
     */
-  class FreeCameraMouseInput ()
+  open class FreeCameraMouseInput ()
     extends typings.babylonjs.freeCameraMouseInputMod.FreeCameraMouseInput {
     def this(/**
       * Define if touch is enabled in the mouse input
@@ -118,7 +140,7 @@ object inputsIndexMod {
   
   @JSImport("babylonjs/Cameras/Inputs/index", "FreeCameraMouseWheelInput")
   @js.native
-  class FreeCameraMouseWheelInput ()
+  open class FreeCameraMouseWheelInput ()
     extends typings.babylonjs.freeCameraMouseWheelInputMod.FreeCameraMouseWheelInput
   
   @JSImport("babylonjs/Cameras/Inputs/index", "FreeCameraTouchInput")
@@ -128,7 +150,7 @@ object inputsIndexMod {
     * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
     * @param allowMouse Defines if mouse events can be treated as touch events
     */
-  class FreeCameraTouchInput ()
+  open class FreeCameraTouchInput ()
     extends typings.babylonjs.freeCameraTouchInputMod.FreeCameraTouchInput {
     def this(/**
       * Define if mouse events can be treated as touch events
@@ -138,7 +160,7 @@ object inputsIndexMod {
   
   @JSImport("babylonjs/Cameras/Inputs/index", "FreeCameraVirtualJoystickInput")
   @js.native
-  class FreeCameraVirtualJoystickInput ()
+  open class FreeCameraVirtualJoystickInput ()
     extends typings.babylonjs.freeCameraVirtualJoystickInputMod.FreeCameraVirtualJoystickInput
   
   /* augmented module */

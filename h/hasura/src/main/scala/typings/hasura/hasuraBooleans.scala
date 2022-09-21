@@ -10,12 +10,12 @@ object hasuraBooleans {
   @js.native
   sealed trait `false`
     extends StObject
-       with Equals[js.Any, js.Any]
+       with Equals[Any, Any]
   inline def `false`: `false` = false.asInstanceOf[`false`]
   
   @js.native
   sealed trait `true`
     extends StObject
-       with Equals[js.Any, js.Any]
+       with Equals[Any, Any]
   inline def `true`: `true` = true.asInstanceOf[`true`]
 }

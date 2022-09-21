@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,14 +14,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new TransactionReceipt.
   * @param [properties] Properties to set
   */
-class TransactionReceipt ()
+open class TransactionReceipt ()
   extends StObject
      with ITransactionReceipt {
   def this(properties: ITransactionReceipt) = this()
   
   /** TransactionReceipt data. */
   @JSName("data")
-  var data_TransactionReceipt: js.Array[Uint8Array] = js.native
+  var data_TransactionReceipt: js.Array[js.typedarray.Uint8Array] = js.native
   
   /** TransactionReceipt events. */
   @JSName("events")
@@ -36,7 +35,7 @@ class TransactionReceipt ()
     * Converts this TransactionReceipt to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
   
   /** TransactionReceipt transactionId. */
   @JSName("transactionId")
@@ -57,6 +56,8 @@ object TransactionReceipt {
   inline def create(): TransactionReceipt = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TransactionReceipt]
   inline def create(properties: ITransactionReceipt): TransactionReceipt = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TransactionReceipt]
   
+  inline def decode(reader: js.typedarray.Uint8Array): TransactionReceipt = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TransactionReceipt]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): TransactionReceipt = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TransactionReceipt]
   /**
     * Decodes a TransactionReceipt message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -67,9 +68,8 @@ object TransactionReceipt {
     */
   inline def decode(reader: Reader): TransactionReceipt = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TransactionReceipt]
   inline def decode(reader: Reader, length: Double): TransactionReceipt = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TransactionReceipt]
-  inline def decode(reader: Uint8Array): TransactionReceipt = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TransactionReceipt]
-  inline def decode(reader: Uint8Array, length: Double): TransactionReceipt = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TransactionReceipt]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): TransactionReceipt = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TransactionReceipt]
   /**
     * Decodes a TransactionReceipt message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -78,7 +78,6 @@ object TransactionReceipt {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): TransactionReceipt = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TransactionReceipt]
-  inline def decodeDelimited(reader: Uint8Array): TransactionReceipt = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TransactionReceipt]
   
   /**
     * Encodes the specified TransactionReceipt message. Does not implicitly {@link TransactionReceipt.verify|verify} messages.
@@ -103,7 +102,7 @@ object TransactionReceipt {
     * @param object Plain object
     * @returns TransactionReceipt
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): TransactionReceipt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TransactionReceipt]
+  inline def fromObject(`object`: StringDictionary[Any]): TransactionReceipt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TransactionReceipt]
   
   /**
     * Creates a plain object from a TransactionReceipt message. Also converts values to other types if specified.
@@ -111,13 +110,13 @@ object TransactionReceipt {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: TransactionReceipt): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: TransactionReceipt, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: TransactionReceipt): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: TransactionReceipt, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a TransactionReceipt message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

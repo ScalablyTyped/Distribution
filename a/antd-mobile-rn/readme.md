@@ -10,10 +10,10 @@ Typings are for version 2.3.3
 | ------------------ | :-------------: |
 | Full name          | antd-mobile-rn |
 | Keywords           | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 10278 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 974.6666666666666 |
+| # stars            | 2531.0 |
 
 ## Links
 - [Homepage](https://github.com/ant-design/ant-design-mobile-rn#readme)

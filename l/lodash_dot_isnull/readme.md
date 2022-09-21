@@ -10,10 +10,10 @@ The modern build of lodash’s `_.isNull` as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isnull |
 | Keywords           | lodash, lodash-modularized, stdlib, util |
-| # releases         | 0 |
-| # dependents       | 77 |
-| # downloads        | 1498256 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 163162.66666666666 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

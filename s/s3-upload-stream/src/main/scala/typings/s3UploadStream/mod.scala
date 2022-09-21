@@ -19,7 +19,7 @@ object mod {
   trait S3StreamUploader extends StObject {
     
     def upload(destinationDetails: PutObjectRequest): S3WriteStream = js.native
-    def upload(destinationDetails: PutObjectRequest, sessionDetails: js.Any): S3WriteStream = js.native
+    def upload(destinationDetails: PutObjectRequest, sessionDetails: Any): S3WriteStream = js.native
   }
   
   @js.native

@@ -1,8 +1,6 @@
 package typings.textMaskAddons
 
 import typings.textMaskAddons.anon.PartialNumberMaskOptions
-import typings.textMaskCore.mod.Mask
-import typings.textMaskCore.mod.Pipe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +11,25 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createAutoCorrectedDatePipe(): Pipe = ^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")().asInstanceOf[Pipe]
-  inline def createAutoCorrectedDatePipe(dateFormat: String): Pipe = ^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[Pipe]
-  inline def createAutoCorrectedDatePipe(dateFormat: String, validYears: DatePipeYears): Pipe = (^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")(dateFormat.asInstanceOf[js.Any], validYears.asInstanceOf[js.Any])).asInstanceOf[Pipe]
-  inline def createAutoCorrectedDatePipe(dateFormat: Unit, validYears: DatePipeYears): Pipe = (^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")(dateFormat.asInstanceOf[js.Any], validYears.asInstanceOf[js.Any])).asInstanceOf[Pipe]
+  inline def createAutoCorrectedDatePipe(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")().asInstanceOf[Any]
+  inline def createAutoCorrectedDatePipe(dateFormat: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def createAutoCorrectedDatePipe(dateFormat: String, validYears: DatePipeYears): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")(dateFormat.asInstanceOf[js.Any], validYears.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def createAutoCorrectedDatePipe(dateFormat: Unit, validYears: DatePipeYears): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createAutoCorrectedDatePipe")(dateFormat.asInstanceOf[js.Any], validYears.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def createNumberMask(): js.Function1[/* rawValue */ String, Mask] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberMask")().asInstanceOf[js.Function1[/* rawValue */ String, Mask]]
-  inline def createNumberMask(maskOptions: PartialNumberMaskOptions): js.Function1[/* rawValue */ String, Mask] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberMask")(maskOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* rawValue */ String, Mask]]
+  inline def createNumberMask(): js.Function1[
+    /* rawValue */ String, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Mask */ Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberMask")().asInstanceOf[js.Function1[
+    /* rawValue */ String, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Mask */ Any
+  ]]
+  inline def createNumberMask(maskOptions: PartialNumberMaskOptions): js.Function1[
+    /* rawValue */ String, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Mask */ Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberMask")(maskOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* rawValue */ String, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Mask */ Any
+  ]]
   
   trait DatePipeYears extends StObject {
     

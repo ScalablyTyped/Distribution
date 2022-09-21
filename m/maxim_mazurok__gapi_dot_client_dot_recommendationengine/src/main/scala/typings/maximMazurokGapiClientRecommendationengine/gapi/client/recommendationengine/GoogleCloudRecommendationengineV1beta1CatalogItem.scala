@@ -65,7 +65,7 @@ object GoogleCloudRecommendationengineV1beta1CatalogItem {
     
     inline def setCategoryHierarchiesUndefined: Self = StObject.set(x, "categoryHierarchies", js.undefined)
     
-    inline def setCategoryHierarchiesVarargs(value: GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy*): Self = StObject.set(x, "categoryHierarchies", js.Array(value :_*))
+    inline def setCategoryHierarchiesVarargs(value: GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy*): Self = StObject.set(x, "categoryHierarchies", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -95,7 +95,7 @@ object GoogleCloudRecommendationengineV1beta1CatalogItem {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

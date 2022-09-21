@@ -13,7 +13,7 @@ trait SignaturesCollection extends StObject {
   /* private */ @JSName("InfoPath.SignaturesCollection_typekey")
   var InfoPathDotSignaturesCollection_typekey: SignaturesCollection
   
-  def Item(varIndex: js.Any): SignatureObject
+  def Item(varIndex: Any): SignatureObject
 }
 object SignaturesCollection {
   
@@ -21,7 +21,7 @@ object SignaturesCollection {
     Count: Double,
     Create: () => SignatureObject,
     InfoPathDotSignaturesCollection_typekey: SignaturesCollection,
-    Item: js.Any => SignatureObject
+    Item: Any => SignatureObject
   ): SignaturesCollection = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Create = js.Any.fromFunction0(Create), Item = js.Any.fromFunction1(Item))
     __obj.updateDynamic("InfoPath.SignaturesCollection_typekey")(InfoPathDotSignaturesCollection_typekey.asInstanceOf[js.Any])
@@ -36,6 +36,6 @@ object SignaturesCollection {
     
     inline def setInfoPathDotSignaturesCollection_typekey(value: SignaturesCollection): Self = StObject.set(x, "InfoPath.SignaturesCollection_typekey", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => SignatureObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => SignatureObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

@@ -10,10 +10,10 @@ object filterTiltShiftMod {
   
   @JSImport("material-ui/svg-icons/image/filter-tilt-shift", JSImport.Default)
   @js.native
-  class default () extends ImageFilterTiltShift
+  open class default () extends ImageFilterTiltShift
   
   @JSImport("material-ui/svg-icons/image/filter-tilt-shift", "ImageFilterTiltShift")
   @js.native
-  class ImageFilterTiltShift ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageFilterTiltShift ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

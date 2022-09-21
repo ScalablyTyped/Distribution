@@ -18,7 +18,7 @@ object stackViewMod {
   
   @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/Stack/StackView", JSImport.Default)
   @js.native
-  class default () extends StackView
+  open class default () extends StackView
   /* static members */
   object default {
     
@@ -37,7 +37,7 @@ object stackViewMod {
     
     var navigation: StackNavigationHelpers
     
-    var screenProps: js.Any
+    var screenProps: Any
     
     var state: NavigationState
   }
@@ -46,7 +46,7 @@ object stackViewMod {
     inline def apply(
       descriptors: StackDescriptorMap,
       navigation: StackNavigationHelpers,
-      screenProps: js.Any,
+      screenProps: Any,
       state: NavigationState
     ): Props = {
       val __obj = js.Dynamic.literal(descriptors = descriptors.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], screenProps = screenProps.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
@@ -59,39 +59,38 @@ object stackViewMod {
       
       inline def setNavigation(value: StackNavigationHelpers): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
-      inline def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+      inline def setScreenProps(value: Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
       
       inline def setState(value: NavigationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
-  trait StackView
-    extends Component[Props, State, js.Any] {
+  trait StackView extends Component[Props, State, Any] {
     
-    /* private */ var getGesturesEnabled: js.Any = js.native
+    /* private */ var getGesturesEnabled: Any = js.native
     
-    /* private */ var getPreviousRoute: js.Any = js.native
+    /* private */ var getPreviousRoute: Any = js.native
     
-    /* private */ var handleCloseRoute: js.Any = js.native
+    /* private */ var handleCloseRoute: Any = js.native
     
-    /* private */ var handleGestureCancel: js.Any = js.native
+    /* private */ var handleGestureCancel: Any = js.native
     
-    /* private */ var handleGestureEnd: js.Any = js.native
+    /* private */ var handleGestureEnd: Any = js.native
     
-    /* private */ var handleGestureStart: js.Any = js.native
+    /* private */ var handleGestureStart: Any = js.native
     
-    /* private */ var handleOpenRoute: js.Any = js.native
+    /* private */ var handleOpenRoute: Any = js.native
     
-    /* private */ var handleTransitionComplete: js.Any = js.native
+    /* private */ var handleTransitionComplete: Any = js.native
     
-    /* private */ var handleTransitionEnd: js.Any = js.native
+    /* private */ var handleTransitionEnd: Any = js.native
     
-    /* private */ var handleTransitionStart: js.Any = js.native
+    /* private */ var handleTransitionStart: Any = js.native
     
-    /* private */ var renderHeader: js.Any = js.native
+    /* private */ var renderHeader: Any = js.native
     
-    /* private */ var renderScene: js.Any = js.native
+    /* private */ var renderScene: Any = js.native
   }
   
   trait State extends StObject {
@@ -129,27 +128,27 @@ object stackViewMod {
       
       inline def setClosingRouteKeys(value: js.Array[String]): Self = StObject.set(x, "closingRouteKeys", value.asInstanceOf[js.Any])
       
-      inline def setClosingRouteKeysVarargs(value: String*): Self = StObject.set(x, "closingRouteKeys", js.Array(value :_*))
+      inline def setClosingRouteKeysVarargs(value: String*): Self = StObject.set(x, "closingRouteKeys", js.Array(value*))
       
       inline def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
       inline def setOpeningRouteKeys(value: js.Array[String]): Self = StObject.set(x, "openingRouteKeys", value.asInstanceOf[js.Any])
       
-      inline def setOpeningRouteKeysVarargs(value: String*): Self = StObject.set(x, "openingRouteKeys", js.Array(value :_*))
+      inline def setOpeningRouteKeysVarargs(value: String*): Self = StObject.set(x, "openingRouteKeys", js.Array(value*))
       
       inline def setPreviousDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "previousDescriptors", value.asInstanceOf[js.Any])
       
       inline def setPreviousRoutes(value: js.Array[Route[String]]): Self = StObject.set(x, "previousRoutes", value.asInstanceOf[js.Any])
       
-      inline def setPreviousRoutesVarargs(value: Route[String]*): Self = StObject.set(x, "previousRoutes", js.Array(value :_*))
+      inline def setPreviousRoutesVarargs(value: Route[String]*): Self = StObject.set(x, "previousRoutes", js.Array(value*))
       
       inline def setReplacingRouteKeys(value: js.Array[String]): Self = StObject.set(x, "replacingRouteKeys", value.asInstanceOf[js.Any])
       
-      inline def setReplacingRouteKeysVarargs(value: String*): Self = StObject.set(x, "replacingRouteKeys", js.Array(value :_*))
+      inline def setReplacingRouteKeysVarargs(value: String*): Self = StObject.set(x, "replacingRouteKeys", js.Array(value*))
       
       inline def setRoutes(value: js.Array[Route[String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: Route[String]*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: Route[String]*): Self = StObject.set(x, "routes", js.Array(value*))
     }
   }
 }

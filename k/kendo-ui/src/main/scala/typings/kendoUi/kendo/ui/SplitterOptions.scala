@@ -65,7 +65,7 @@ object SplitterOptions {
     
     inline def setPanesUndefined: Self = StObject.set(x, "panes", js.undefined)
     
-    inline def setPanesVarargs(value: SplitterPane*): Self = StObject.set(x, "panes", js.Array(value :_*))
+    inline def setPanesVarargs(value: SplitterPane*): Self = StObject.set(x, "panes", js.Array(value*))
     
     inline def setResize(value: /* e */ SplitterEvent => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
     

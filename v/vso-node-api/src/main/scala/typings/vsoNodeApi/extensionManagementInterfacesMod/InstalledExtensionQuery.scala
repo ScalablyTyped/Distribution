@@ -22,10 +22,10 @@ object InstalledExtensionQuery {
     
     inline def setAssetTypes(value: js.Array[String]): Self = StObject.set(x, "assetTypes", value.asInstanceOf[js.Any])
     
-    inline def setAssetTypesVarargs(value: String*): Self = StObject.set(x, "assetTypes", js.Array(value :_*))
+    inline def setAssetTypesVarargs(value: String*): Self = StObject.set(x, "assetTypes", js.Array(value*))
     
     inline def setMonikers(value: js.Array[ExtensionIdentifier]): Self = StObject.set(x, "monikers", value.asInstanceOf[js.Any])
     
-    inline def setMonikersVarargs(value: ExtensionIdentifier*): Self = StObject.set(x, "monikers", js.Array(value :_*))
+    inline def setMonikersVarargs(value: ExtensionIdentifier*): Self = StObject.set(x, "monikers", js.Array(value*))
   }
 }

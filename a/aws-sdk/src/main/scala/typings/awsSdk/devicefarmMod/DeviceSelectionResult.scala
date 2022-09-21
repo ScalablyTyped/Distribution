@@ -34,7 +34,7 @@ object DeviceSelectionResult {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: DeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: DeviceFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setMatchedDevicesCount(value: Integer): Self = StObject.set(x, "matchedDevicesCount", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,7 @@
 package typings.firebaseMessaging
 
 import typings.firebaseMessaging.firebaseMessagingStrings.`failed-service-worker-registration`
+import typings.firebaseMessaging.firebaseMessagingStrings.`indexed-db-unsupported`
 import typings.firebaseMessaging.firebaseMessagingStrings.`invalid-bg-handler`
 import typings.firebaseMessaging.firebaseMessagingStrings.`invalid-sw-registration`
 import typings.firebaseMessaging.firebaseMessagingStrings.`invalid-vapid-key`
@@ -24,78 +25,82 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object errorsMod {
   
-  @JSImport("@firebase/messaging/dist/util/errors", "ERROR_FACTORY")
+  @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_FACTORY")
   @js.native
   val ERROR_FACTORY: ErrorFactory[ErrorCode, ErrorParams] = js.native
   
-  /* Inlined @firebase/util.@firebase/util.ErrorMap<@firebase/messaging.@firebase/messaging/dist/util/errors.ErrorCode> */
+  /* Inlined @firebase/util.@firebase/util.ErrorMap<@firebase/messaging.@firebase/messaging/dist/esm/src/util/errors.ErrorCode> */
   object ERROR_MAP {
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.failed-service-worker-registration")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.failed-service-worker-registration")
     @js.native
     val failedServiceWorkerRegistration: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.invalid-bg-handler")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.indexed-db-unsupported")
+    @js.native
+    val indexedDbUnsupported: String = js.native
+    
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.invalid-bg-handler")
     @js.native
     val invalidBgHandler: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.invalid-sw-registration")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.invalid-sw-registration")
     @js.native
     val invalidSwRegistration: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.invalid-vapid-key")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.invalid-vapid-key")
     @js.native
     val invalidVapidKey: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.missing-app-config-values")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.missing-app-config-values")
     @js.native
     val missingAppConfigValues: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.only-available-in-sw")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.only-available-in-sw")
     @js.native
     val onlyAvailableInSw: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.only-available-in-window")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.only-available-in-window")
     @js.native
     val onlyAvailableInWindow: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.permission-blocked")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.permission-blocked")
     @js.native
     val permissionBlocked: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.permission-default")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.permission-default")
     @js.native
     val permissionDefault: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.token-subscribe-failed")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.token-subscribe-failed")
     @js.native
     val tokenSubscribeFailed: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.token-subscribe-no-token")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.token-subscribe-no-token")
     @js.native
     val tokenSubscribeNoToken: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.token-unsubscribe-failed")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.token-unsubscribe-failed")
     @js.native
     val tokenUnsubscribeFailed: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.token-update-failed")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.token-update-failed")
     @js.native
     val tokenUpdateFailed: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.token-update-no-token")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.token-update-no-token")
     @js.native
     val tokenUpdateNoToken: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.unsupported-browser")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.unsupported-browser")
     @js.native
     val unsupportedBrowser: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.use-sw-after-get-token")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.use-sw-after-get-token")
     @js.native
     val useSwAfterGetToken: String = js.native
     
-    @JSImport("@firebase/messaging/dist/util/errors", "ERROR_MAP.use-vapid-key-after-get-token")
+    @JSImport("@firebase/messaging/dist/esm/src/util/errors", "ERROR_MAP.use-vapid-key-after-get-token")
     @js.native
     val useVapidKeyAfterGetToken: String = js.native
   }
@@ -107,6 +112,7 @@ object errorsMod {
     - typings.firebaseMessaging.firebaseMessagingStrings.`permission-default`
     - typings.firebaseMessaging.firebaseMessagingStrings.`permission-blocked`
     - typings.firebaseMessaging.firebaseMessagingStrings.`unsupported-browser`
+    - typings.firebaseMessaging.firebaseMessagingStrings.`indexed-db-unsupported`
     - typings.firebaseMessaging.firebaseMessagingStrings.`failed-service-worker-registration`
     - typings.firebaseMessaging.firebaseMessagingStrings.`token-subscribe-failed`
     - typings.firebaseMessaging.firebaseMessagingStrings.`token-subscribe-no-token`
@@ -127,6 +133,8 @@ object errorsMod {
     inline def AVAILABLE_IN_WINDOW: `only-available-in-window` = "only-available-in-window".asInstanceOf[`only-available-in-window`]
     
     inline def FAILED_DEFAULT_REGISTRATION: `failed-service-worker-registration` = "failed-service-worker-registration".asInstanceOf[`failed-service-worker-registration`]
+    
+    inline def INDEXED_DB_UNSUPPORTED: `indexed-db-unsupported` = "indexed-db-unsupported".asInstanceOf[`indexed-db-unsupported`]
     
     inline def INVALID_BG_HANDLER: `invalid-bg-handler` = "invalid-bg-handler".asInstanceOf[`invalid-bg-handler`]
     

@@ -29,7 +29,7 @@ object Predicate {
     
     inline def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)
     
-    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "Conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "Conditions", js.Array(value*))
     
     inline def setLogical(value: Logical): Self = StObject.set(x, "Logical", value.asInstanceOf[js.Any])
     

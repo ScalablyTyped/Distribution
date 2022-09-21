@@ -10,10 +10,10 @@ Async helpers for testing React components with Enzyme.
 | ------------------ | :-------------: |
 | Full name          | enzyme-async-helpers |
 | Keywords           | enzyme, react, async, promise, await, wait, jest, testing, tdd |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 239103 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 16603.666666666668 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/zth/enzyme-async-helpers#readme)

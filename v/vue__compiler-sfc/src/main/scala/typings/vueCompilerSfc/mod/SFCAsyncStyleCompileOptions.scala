@@ -1,6 +1,5 @@
 package typings.vueCompilerSfc.mod
 
-import typings.vueCompilerSfc.anon.GenerateScopedName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait SFCAsyncStyleCompileOptions
   
   var modules: js.UndefOr[Boolean] = js.undefined
   
-  var modulesOptions: js.UndefOr[GenerateScopedName] = js.undefined
+  var modulesOptions: js.UndefOr[CSSModulesOptions] = js.undefined
 }
 object SFCAsyncStyleCompileOptions {
   
@@ -30,7 +29,7 @@ object SFCAsyncStyleCompileOptions {
     
     inline def setModules(value: Boolean): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
-    inline def setModulesOptions(value: GenerateScopedName): Self = StObject.set(x, "modulesOptions", value.asInstanceOf[js.Any])
+    inline def setModulesOptions(value: CSSModulesOptions): Self = StObject.set(x, "modulesOptions", value.asInstanceOf[js.Any])
     
     inline def setModulesOptionsUndefined: Self = StObject.set(x, "modulesOptions", js.undefined)
     

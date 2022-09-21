@@ -1,7 +1,6 @@
 package typings.sirenParser
 
 import typings.sirenParser.fieldMod.Field
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,41 +67,41 @@ object actionMod {
     var fields: js.UndefOr[js.Array[Field]] = js.native
     
     def getField(fieldName: String): js.UndefOr[Field] = js.native
-    def getField(fieldName: RegExp): js.UndefOr[Field] = js.native
+    def getField(fieldName: js.RegExp): js.UndefOr[Field] = js.native
     
     def getFieldByClass(fieldClass: String): js.UndefOr[Field] = js.native
-    def getFieldByClass(fieldClass: RegExp): js.UndefOr[Field] = js.native
+    def getFieldByClass(fieldClass: js.RegExp): js.UndefOr[Field] = js.native
     
-    def getFieldByClasses(fieldClasses: js.Array[String | RegExp]): js.UndefOr[Field] = js.native
+    def getFieldByClasses(fieldClasses: js.Array[String | js.RegExp]): js.UndefOr[Field] = js.native
     
     def getFieldByName(fieldName: String): js.UndefOr[Field] = js.native
-    def getFieldByName(fieldName: RegExp): js.UndefOr[Field] = js.native
+    def getFieldByName(fieldName: js.RegExp): js.UndefOr[Field] = js.native
     
     def getFieldByType(fieldType: String): js.UndefOr[Field] = js.native
-    def getFieldByType(fieldType: RegExp): js.UndefOr[Field] = js.native
+    def getFieldByType(fieldType: js.RegExp): js.UndefOr[Field] = js.native
     
     def getFieldsByClass(fieldClass: String): js.Array[Field] = js.native
-    def getFieldsByClass(fieldClass: RegExp): js.Array[Field] = js.native
+    def getFieldsByClass(fieldClass: js.RegExp): js.Array[Field] = js.native
     
-    def getFieldsByClasses(fieldClasses: js.Array[String | RegExp]): js.Array[Field] = js.native
+    def getFieldsByClasses(fieldClasses: js.Array[String | js.RegExp]): js.Array[Field] = js.native
     
     def getFieldsByType(fieldType: String): js.Array[Field] = js.native
-    def getFieldsByType(fieldType: RegExp): js.Array[Field] = js.native
+    def getFieldsByType(fieldType: js.RegExp): js.Array[Field] = js.native
     
     def hasClass(cls: String): Boolean = js.native
-    def hasClass(cls: RegExp): Boolean = js.native
+    def hasClass(cls: js.RegExp): Boolean = js.native
     
     def hasField(fieldName: String): Boolean = js.native
-    def hasField(fieldName: RegExp): Boolean = js.native
+    def hasField(fieldName: js.RegExp): Boolean = js.native
     
     def hasFieldByClass(fieldClass: String): Boolean = js.native
-    def hasFieldByClass(fieldClass: RegExp): Boolean = js.native
+    def hasFieldByClass(fieldClass: js.RegExp): Boolean = js.native
     
     def hasFieldByName(fieldName: String): Boolean = js.native
-    def hasFieldByName(fieldName: RegExp): Boolean = js.native
+    def hasFieldByName(fieldName: js.RegExp): Boolean = js.native
     
     def hasFieldByType(fieldType: String): Boolean = js.native
-    def hasFieldByType(fieldType: RegExp): Boolean = js.native
+    def hasFieldByType(fieldType: js.RegExp): Boolean = js.native
     
     var href: String = js.native
     

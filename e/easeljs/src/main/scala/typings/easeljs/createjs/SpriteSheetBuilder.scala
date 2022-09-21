@@ -20,32 +20,32 @@ trait SpriteSheetBuilder
   
   def addFrame(source: DisplayObject): Double = js.native
   def addFrame(source: DisplayObject, sourceRect: Unit, scale: Double): Double = js.native
-  def addFrame(source: DisplayObject, sourceRect: Unit, scale: Double, setupFunction: js.Function0[js.Any]): Double = js.native
+  def addFrame(source: DisplayObject, sourceRect: Unit, scale: Double, setupFunction: js.Function0[Any]): Double = js.native
   def addFrame(
     source: DisplayObject,
     sourceRect: Unit,
     scale: Double,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: js.Object
   ): Double = js.native
   def addFrame(source: DisplayObject, sourceRect: Unit, scale: Double, setupFunction: Unit, setupData: js.Object): Double = js.native
-  def addFrame(source: DisplayObject, sourceRect: Unit, scale: Unit, setupFunction: js.Function0[js.Any]): Double = js.native
+  def addFrame(source: DisplayObject, sourceRect: Unit, scale: Unit, setupFunction: js.Function0[Any]): Double = js.native
   def addFrame(
     source: DisplayObject,
     sourceRect: Unit,
     scale: Unit,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: js.Object
   ): Double = js.native
   def addFrame(source: DisplayObject, sourceRect: Unit, scale: Unit, setupFunction: Unit, setupData: js.Object): Double = js.native
   def addFrame(source: DisplayObject, sourceRect: Rectangle): Double = js.native
   def addFrame(source: DisplayObject, sourceRect: Rectangle, scale: Double): Double = js.native
-  def addFrame(source: DisplayObject, sourceRect: Rectangle, scale: Double, setupFunction: js.Function0[js.Any]): Double = js.native
+  def addFrame(source: DisplayObject, sourceRect: Rectangle, scale: Double, setupFunction: js.Function0[Any]): Double = js.native
   def addFrame(
     source: DisplayObject,
     sourceRect: Rectangle,
     scale: Double,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: js.Object
   ): Double = js.native
   def addFrame(
@@ -55,12 +55,12 @@ trait SpriteSheetBuilder
     setupFunction: Unit,
     setupData: js.Object
   ): Double = js.native
-  def addFrame(source: DisplayObject, sourceRect: Rectangle, scale: Unit, setupFunction: js.Function0[js.Any]): Double = js.native
+  def addFrame(source: DisplayObject, sourceRect: Rectangle, scale: Unit, setupFunction: js.Function0[Any]): Double = js.native
   def addFrame(
     source: DisplayObject,
     sourceRect: Rectangle,
     scale: Unit,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: js.Object
   ): Double = js.native
   def addFrame(
@@ -73,29 +73,29 @@ trait SpriteSheetBuilder
   
   def addMovieClip(source: MovieClip): Unit = js.native
   def addMovieClip(source: MovieClip, sourceRect: Unit, scale: Double): Unit = js.native
-  def addMovieClip(source: MovieClip, sourceRect: Unit, scale: Double, setupFunction: js.Function0[js.Any]): Unit = js.native
+  def addMovieClip(source: MovieClip, sourceRect: Unit, scale: Double, setupFunction: js.Function0[Any]): Unit = js.native
   def addMovieClip(
     source: MovieClip,
     sourceRect: Unit,
     scale: Double,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: js.Object
   ): Unit = js.native
   def addMovieClip(
     source: MovieClip,
     sourceRect: Unit,
     scale: Double,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: js.Object,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
   def addMovieClip(
     source: MovieClip,
     sourceRect: Unit,
     scale: Double,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: Unit,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
   def addMovieClip(source: MovieClip, sourceRect: Unit, scale: Double, setupFunction: Unit, setupData: js.Object): Unit = js.native
   def addMovieClip(
@@ -104,7 +104,7 @@ trait SpriteSheetBuilder
     scale: Double,
     setupFunction: Unit,
     setupData: js.Object,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
   def addMovieClip(
     source: MovieClip,
@@ -112,31 +112,31 @@ trait SpriteSheetBuilder
     scale: Double,
     setupFunction: Unit,
     setupData: Unit,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
-  def addMovieClip(source: MovieClip, sourceRect: Unit, scale: Unit, setupFunction: js.Function0[js.Any]): Unit = js.native
+  def addMovieClip(source: MovieClip, sourceRect: Unit, scale: Unit, setupFunction: js.Function0[Any]): Unit = js.native
   def addMovieClip(
     source: MovieClip,
     sourceRect: Unit,
     scale: Unit,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: js.Object
   ): Unit = js.native
   def addMovieClip(
     source: MovieClip,
     sourceRect: Unit,
     scale: Unit,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: js.Object,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
   def addMovieClip(
     source: MovieClip,
     sourceRect: Unit,
     scale: Unit,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: Unit,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
   def addMovieClip(source: MovieClip, sourceRect: Unit, scale: Unit, setupFunction: Unit, setupData: js.Object): Unit = js.native
   def addMovieClip(
@@ -145,7 +145,7 @@ trait SpriteSheetBuilder
     scale: Unit,
     setupFunction: Unit,
     setupData: js.Object,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
   def addMovieClip(
     source: MovieClip,
@@ -153,33 +153,33 @@ trait SpriteSheetBuilder
     scale: Unit,
     setupFunction: Unit,
     setupData: Unit,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
   def addMovieClip(source: MovieClip, sourceRect: Rectangle): Unit = js.native
   def addMovieClip(source: MovieClip, sourceRect: Rectangle, scale: Double): Unit = js.native
-  def addMovieClip(source: MovieClip, sourceRect: Rectangle, scale: Double, setupFunction: js.Function0[js.Any]): Unit = js.native
+  def addMovieClip(source: MovieClip, sourceRect: Rectangle, scale: Double, setupFunction: js.Function0[Any]): Unit = js.native
   def addMovieClip(
     source: MovieClip,
     sourceRect: Rectangle,
     scale: Double,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: js.Object
   ): Unit = js.native
   def addMovieClip(
     source: MovieClip,
     sourceRect: Rectangle,
     scale: Double,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: js.Object,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
   def addMovieClip(
     source: MovieClip,
     sourceRect: Rectangle,
     scale: Double,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: Unit,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
   def addMovieClip(source: MovieClip, sourceRect: Rectangle, scale: Double, setupFunction: Unit, setupData: js.Object): Unit = js.native
   def addMovieClip(
@@ -188,7 +188,7 @@ trait SpriteSheetBuilder
     scale: Double,
     setupFunction: Unit,
     setupData: js.Object,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
   def addMovieClip(
     source: MovieClip,
@@ -196,31 +196,31 @@ trait SpriteSheetBuilder
     scale: Double,
     setupFunction: Unit,
     setupData: Unit,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
-  def addMovieClip(source: MovieClip, sourceRect: Rectangle, scale: Unit, setupFunction: js.Function0[js.Any]): Unit = js.native
+  def addMovieClip(source: MovieClip, sourceRect: Rectangle, scale: Unit, setupFunction: js.Function0[Any]): Unit = js.native
   def addMovieClip(
     source: MovieClip,
     sourceRect: Rectangle,
     scale: Unit,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: js.Object
   ): Unit = js.native
   def addMovieClip(
     source: MovieClip,
     sourceRect: Rectangle,
     scale: Unit,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: js.Object,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
   def addMovieClip(
     source: MovieClip,
     sourceRect: Rectangle,
     scale: Unit,
-    setupFunction: js.Function0[js.Any],
+    setupFunction: js.Function0[Any],
     setupData: Unit,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
   def addMovieClip(source: MovieClip, sourceRect: Rectangle, scale: Unit, setupFunction: Unit, setupData: js.Object): Unit = js.native
   def addMovieClip(
@@ -229,7 +229,7 @@ trait SpriteSheetBuilder
     scale: Unit,
     setupFunction: Unit,
     setupData: js.Object,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
   def addMovieClip(
     source: MovieClip,
@@ -237,7 +237,7 @@ trait SpriteSheetBuilder
     scale: Unit,
     setupFunction: Unit,
     setupData: Unit,
-    labelFunction: js.Function0[js.Any]
+    labelFunction: js.Function0[Any]
   ): Unit = js.native
   
   def build(): SpriteSheet = js.native

@@ -6,28 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SpatialLocatorAttachedFrameOfReference extends StObject {
   
-  var adjustHeading: js.Any
+  var adjustHeading: Any
   
   /* unmapped type */
-  var getStationaryCoordinateSystemAtTimestamp: js.Any
+  var getStationaryCoordinateSystemAtTimestamp: Any
   
   /* unmapped type */
-  var relativeOrientation: js.Any
+  var relativeOrientation: Any
   
   /* unmapped type */
-  var relativePosition: js.Any
+  var relativePosition: Any
   
   /* unmapped type */
-  var tryGetRelativeHeadingAtTimestamp: js.Any
+  var tryGetRelativeHeadingAtTimestamp: Any
 }
 object SpatialLocatorAttachedFrameOfReference {
   
   inline def apply(
-    adjustHeading: js.Any,
-    getStationaryCoordinateSystemAtTimestamp: js.Any,
-    relativeOrientation: js.Any,
-    relativePosition: js.Any,
-    tryGetRelativeHeadingAtTimestamp: js.Any
+    adjustHeading: Any,
+    getStationaryCoordinateSystemAtTimestamp: Any,
+    relativeOrientation: Any,
+    relativePosition: Any,
+    tryGetRelativeHeadingAtTimestamp: Any
   ): SpatialLocatorAttachedFrameOfReference = {
     val __obj = js.Dynamic.literal(adjustHeading = adjustHeading.asInstanceOf[js.Any], getStationaryCoordinateSystemAtTimestamp = getStationaryCoordinateSystemAtTimestamp.asInstanceOf[js.Any], relativeOrientation = relativeOrientation.asInstanceOf[js.Any], relativePosition = relativePosition.asInstanceOf[js.Any], tryGetRelativeHeadingAtTimestamp = tryGetRelativeHeadingAtTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialLocatorAttachedFrameOfReference]
@@ -35,14 +35,14 @@ object SpatialLocatorAttachedFrameOfReference {
   
   extension [Self <: SpatialLocatorAttachedFrameOfReference](x: Self) {
     
-    inline def setAdjustHeading(value: js.Any): Self = StObject.set(x, "adjustHeading", value.asInstanceOf[js.Any])
+    inline def setAdjustHeading(value: Any): Self = StObject.set(x, "adjustHeading", value.asInstanceOf[js.Any])
     
-    inline def setGetStationaryCoordinateSystemAtTimestamp(value: js.Any): Self = StObject.set(x, "getStationaryCoordinateSystemAtTimestamp", value.asInstanceOf[js.Any])
+    inline def setGetStationaryCoordinateSystemAtTimestamp(value: Any): Self = StObject.set(x, "getStationaryCoordinateSystemAtTimestamp", value.asInstanceOf[js.Any])
     
-    inline def setRelativeOrientation(value: js.Any): Self = StObject.set(x, "relativeOrientation", value.asInstanceOf[js.Any])
+    inline def setRelativeOrientation(value: Any): Self = StObject.set(x, "relativeOrientation", value.asInstanceOf[js.Any])
     
-    inline def setRelativePosition(value: js.Any): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
+    inline def setRelativePosition(value: Any): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
     
-    inline def setTryGetRelativeHeadingAtTimestamp(value: js.Any): Self = StObject.set(x, "tryGetRelativeHeadingAtTimestamp", value.asInstanceOf[js.Any])
+    inline def setTryGetRelativeHeadingAtTimestamp(value: Any): Self = StObject.set(x, "tryGetRelativeHeadingAtTimestamp", value.asInstanceOf[js.Any])
   }
 }

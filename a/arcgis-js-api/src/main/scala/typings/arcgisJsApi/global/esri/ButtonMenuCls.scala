@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenu.html)
   */
-class ButtonMenuCls ()
+open class ButtonMenuCls ()
   extends StObject
      with typings.arcgisJsApi.esri.ButtonMenu {
   def this(properties: ButtonMenuProperties) = this()

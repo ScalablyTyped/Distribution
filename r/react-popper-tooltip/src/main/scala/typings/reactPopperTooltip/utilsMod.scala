@@ -17,7 +17,7 @@ object utilsMod {
   @js.native
   val TooltipContext: Context[js.Object] = js.native
   
-  inline def callAll(fns: Fn*): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("callAll")(fns.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  inline def callAll(fns: Fn*): js.Function1[/* repeated */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("callAll")(fns.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
   
   inline def canUseDOM(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseDOM")().asInstanceOf[Boolean]
   
@@ -26,5 +26,5 @@ object utilsMod {
   inline def setRef(ref: Ref): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(ref.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def setRef(ref: Ref, node: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(ref.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type Fn = js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]]
+  type Fn = js.UndefOr[js.Function1[/* repeated */ Any, Unit]]
 }

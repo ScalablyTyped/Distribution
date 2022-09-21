@@ -1,21 +1,20 @@
 package typings.reactSelect
 
-import typings.react.mod.ComponentType
+import typings.react.mod.ReactElement
+import typings.react.mod.global.JSX.Element
 import typings.reactSelect.containersMod.ValueContainerProps
-import typings.reactSelect.typesMod.OptionTypeBase
+import typings.reactSelect.typesMod.GroupBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object valueContainerMod {
   
-  @JSImport("react-select/src/animated/ValueContainer", JSImport.Namespace)
+  @JSImport("react-select/dist/declarations/src/animated/ValueContainer", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[ValueContainerProps[OptionType]]): ComponentType[AnimatedValueContainerProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedValueContainerProps[OptionType]]]
+  inline def default(WrappedComponent: ValueContainerComponent): js.Function1[/* props */ ValueContainerProps[Any, Boolean, GroupBase[Any]], Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ ValueContainerProps[Any, Boolean, GroupBase[Any]], Element]]
   
-  inline def AnimatedValueContainer[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[ValueContainerProps[OptionType]]): ComponentType[AnimatedValueContainerProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimatedValueContainer")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedValueContainerProps[OptionType]]]
-  
-  type AnimatedValueContainerProps[OptionType /* <: OptionTypeBase */] = ValueContainerProps[OptionType]
+  type ValueContainerComponent = js.Function1[/* props */ ValueContainerProps[Any, Boolean, GroupBase[Any]], ReactElement]
 }

@@ -24,8 +24,8 @@ object adapterMod {
       addClass: String => Unit,
       closeOutline: () => Unit,
       deactivateLineRipple: () => Unit,
-      deregisterInputInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
-      deregisterTextFieldInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
+      deregisterInputInteractionHandler: (Any, SpecificEventListener[Any]) => Unit,
+      deregisterTextFieldInteractionHandler: (Any, SpecificEventListener[Any]) => Unit,
       deregisterValidationAttributeChangeHandler: MutationObserver => Unit,
       floatLabel: Boolean => Unit,
       getLabelWidth: () => Double,
@@ -35,8 +35,8 @@ object adapterMod {
       hasOutline: () => Boolean,
       isFocused: () => Boolean,
       notchOutline: Double => Unit,
-      registerInputInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
-      registerTextFieldInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
+      registerInputInteractionHandler: (Any, SpecificEventListener[Any]) => Unit,
+      registerTextFieldInteractionHandler: (Any, SpecificEventListener[Any]) => Unit,
       registerValidationAttributeChangeHandler: js.Function1[/* attributeNames */ js.Array[String], Unit] => MutationObserver,
       removeClass: String => Unit,
       removeInputAttr: String => Unit,
@@ -86,10 +86,10 @@ object adapterMod {
   object MDCTextFieldInputAdapter {
     
     inline def apply(
-      deregisterInputInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
+      deregisterInputInteractionHandler: (Any, SpecificEventListener[Any]) => Unit,
       getNativeInput: () => MDCTextFieldNativeInputElement | Null,
       isFocused: () => Boolean,
-      registerInputInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
+      registerInputInteractionHandler: (Any, SpecificEventListener[Any]) => Unit,
       removeInputAttr: String => Unit,
       setInputAttr: (String, String) => Unit
     ): MDCTextFieldInputAdapter = {
@@ -99,13 +99,13 @@ object adapterMod {
     
     extension [Self <: MDCTextFieldInputAdapter](x: Self) {
       
-      inline def setDeregisterInputInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterInputInteractionHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterInputInteractionHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "deregisterInputInteractionHandler", js.Any.fromFunction2(value))
       
       inline def setGetNativeInput(value: () => MDCTextFieldNativeInputElement | Null): Self = StObject.set(x, "getNativeInput", js.Any.fromFunction0(value))
       
       inline def setIsFocused(value: () => Boolean): Self = StObject.set(x, "isFocused", js.Any.fromFunction0(value))
       
-      inline def setRegisterInputInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerInputInteractionHandler", js.Any.fromFunction2(value))
+      inline def setRegisterInputInteractionHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "registerInputInteractionHandler", js.Any.fromFunction2(value))
       
       inline def setRemoveInputAttr(value: String => Unit): Self = StObject.set(x, "removeInputAttr", js.Any.fromFunction1(value))
       
@@ -286,10 +286,10 @@ object adapterMod {
     
     inline def apply(
       addClass: String => Unit,
-      deregisterTextFieldInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
+      deregisterTextFieldInteractionHandler: (Any, SpecificEventListener[Any]) => Unit,
       deregisterValidationAttributeChangeHandler: MutationObserver => Unit,
       hasClass: String => Boolean,
-      registerTextFieldInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
+      registerTextFieldInteractionHandler: (Any, SpecificEventListener[Any]) => Unit,
       registerValidationAttributeChangeHandler: js.Function1[/* attributeNames */ js.Array[String], Unit] => MutationObserver,
       removeClass: String => Unit
     ): MDCTextFieldRootAdapter = {
@@ -301,13 +301,13 @@ object adapterMod {
       
       inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      inline def setDeregisterTextFieldInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterTextFieldInteractionHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterTextFieldInteractionHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "deregisterTextFieldInteractionHandler", js.Any.fromFunction2(value))
       
       inline def setDeregisterValidationAttributeChangeHandler(value: MutationObserver => Unit): Self = StObject.set(x, "deregisterValidationAttributeChangeHandler", js.Any.fromFunction1(value))
       
       inline def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      inline def setRegisterTextFieldInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerTextFieldInteractionHandler", js.Any.fromFunction2(value))
+      inline def setRegisterTextFieldInteractionHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "registerTextFieldInteractionHandler", js.Any.fromFunction2(value))
       
       inline def setRegisterValidationAttributeChangeHandler(value: js.Function1[/* attributeNames */ js.Array[String], Unit] => MutationObserver): Self = StObject.set(x, "registerValidationAttributeChangeHandler", js.Any.fromFunction1(value))
       

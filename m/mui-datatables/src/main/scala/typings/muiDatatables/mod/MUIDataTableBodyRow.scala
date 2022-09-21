@@ -10,7 +10,7 @@ trait MUIDataTableBodyRow extends StObject {
   
   var classes: js.UndefOr[js.Object] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
   
   var options: MUIDataTableOptions
   
@@ -33,7 +33,7 @@ object MUIDataTableBodyRow {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setOnClick(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* args */ Any => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     

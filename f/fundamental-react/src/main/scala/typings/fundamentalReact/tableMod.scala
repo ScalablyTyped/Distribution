@@ -5,7 +5,6 @@ import typings.fundamentalReact.anon.PartialTableProps
 import typings.fundamentalReact.anon.RowData
 import typings.fundamentalReact.anon.WeakValidationMapTablePro
 import typings.fundamentalReact.fundamentalReactStrings.Table
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
@@ -18,8 +17,8 @@ object tableMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Table/Table.TableProps> & {  displayName :'Table'} */
   object default {
     
-    inline def apply(props: PropsWithChildren[TableProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildren[TableProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: TableProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: TableProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("fundamental-react/lib/Table/Table", JSImport.Default)
     @js.native
@@ -27,8 +26,8 @@ object tableMod {
     
     @JSImport("fundamental-react/lib/Table/Table", "default.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/Table/Table", "default.defaultProps")
     @js.native
@@ -48,7 +47,7 @@ object tableMod {
   
   trait TableProps
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -58,10 +57,10 @@ object tableMod {
     
     var tableBodyClassName: js.UndefOr[String] = js.undefined
     
-    var tableBodyProps: js.UndefOr[js.Any] = js.undefined
+    var tableBodyProps: js.UndefOr[Any] = js.undefined
     
     var tableBodyRowProps: js.UndefOr[
-        StringDictionary[js.Any] | (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit])
+        StringDictionary[Any] | (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit])
       ] = js.undefined
     
     var tableCellClassName: js.UndefOr[String] = js.undefined
@@ -70,11 +69,11 @@ object tableMod {
     
     var tableHeaderClassName: js.UndefOr[String] = js.undefined
     
-    var tableHeaderProps: js.UndefOr[js.Any] = js.undefined
+    var tableHeaderProps: js.UndefOr[Any] = js.undefined
     
     var tableHeaderRowClassName: js.UndefOr[String] = js.undefined
     
-    var tableHeaderRowProps: js.UndefOr[js.Any] = js.undefined
+    var tableHeaderRowProps: js.UndefOr[Any] = js.undefined
     
     var tableRowClassName: js.UndefOr[String] = js.undefined
   }
@@ -97,18 +96,18 @@ object tableMod {
       
       inline def setHeaders(value: js.Array[String | ReactNode]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setHeadersVarargs(value: (String | ReactNode)*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: (String | ReactNode)*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setTableBodyClassName(value: String): Self = StObject.set(x, "tableBodyClassName", value.asInstanceOf[js.Any])
       
       inline def setTableBodyClassNameUndefined: Self = StObject.set(x, "tableBodyClassName", js.undefined)
       
-      inline def setTableBodyProps(value: js.Any): Self = StObject.set(x, "tableBodyProps", value.asInstanceOf[js.Any])
+      inline def setTableBodyProps(value: Any): Self = StObject.set(x, "tableBodyProps", value.asInstanceOf[js.Any])
       
       inline def setTableBodyPropsUndefined: Self = StObject.set(x, "tableBodyProps", js.undefined)
       
       inline def setTableBodyRowProps(
-        value: StringDictionary[js.Any] | (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit])
+        value: StringDictionary[Any] | (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit])
       ): Self = StObject.set(x, "tableBodyRowProps", value.asInstanceOf[js.Any])
       
       inline def setTableBodyRowPropsFunction2(value: (/* rowData */ js.Array[String], /* index */ Double) => Unit): Self = StObject.set(x, "tableBodyRowProps", js.Any.fromFunction2(value))
@@ -123,13 +122,13 @@ object tableMod {
       
       inline def setTableDataUndefined: Self = StObject.set(x, "tableData", js.undefined)
       
-      inline def setTableDataVarargs(value: RowData*): Self = StObject.set(x, "tableData", js.Array(value :_*))
+      inline def setTableDataVarargs(value: RowData*): Self = StObject.set(x, "tableData", js.Array(value*))
       
       inline def setTableHeaderClassName(value: String): Self = StObject.set(x, "tableHeaderClassName", value.asInstanceOf[js.Any])
       
       inline def setTableHeaderClassNameUndefined: Self = StObject.set(x, "tableHeaderClassName", js.undefined)
       
-      inline def setTableHeaderProps(value: js.Any): Self = StObject.set(x, "tableHeaderProps", value.asInstanceOf[js.Any])
+      inline def setTableHeaderProps(value: Any): Self = StObject.set(x, "tableHeaderProps", value.asInstanceOf[js.Any])
       
       inline def setTableHeaderPropsUndefined: Self = StObject.set(x, "tableHeaderProps", js.undefined)
       
@@ -137,7 +136,7 @@ object tableMod {
       
       inline def setTableHeaderRowClassNameUndefined: Self = StObject.set(x, "tableHeaderRowClassName", js.undefined)
       
-      inline def setTableHeaderRowProps(value: js.Any): Self = StObject.set(x, "tableHeaderRowProps", value.asInstanceOf[js.Any])
+      inline def setTableHeaderRowProps(value: Any): Self = StObject.set(x, "tableHeaderRowProps", value.asInstanceOf[js.Any])
       
       inline def setTableHeaderRowPropsUndefined: Self = StObject.set(x, "tableHeaderRowProps", js.undefined)
       

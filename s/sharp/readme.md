@@ -1,19 +1,19 @@
 
 # Scala.js typings for sharp
 
-Typings are for version 0.26
+Typings are for version 0.31
 
 ## Library description:
-High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP, AVIF and TIFF images
+High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP, GIF, AVIF and TIFF images
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sharp |
-| Keywords           | jpeg, png, webp, avif, tiff, gif, svg, dzi, image, resize, thumbnail, crop, embed, libvips, vips |
+| Keywords           | jpeg, png, webp, avif, tiff, gif, svg, jp2, dzi, image, resize, thumbnail, crop, embed, libvips, vips |
 | # releases         | 22 |
-| # dependents       | 1425 |
-| # downloads        | 53518204 |
-| # stars            | 126 |
+| # dependents       | 0.0 |
+| # downloads        | 8110149.0 |
+| # stars            | 23202.0 |
 
 ## Links
 - [Homepage](https://github.com/lovell/sharp)

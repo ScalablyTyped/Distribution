@@ -29,7 +29,7 @@ object ListMitigationActionsResponse {
     
     inline def setActionIdentifiersUndefined: Self = StObject.set(x, "actionIdentifiers", js.undefined)
     
-    inline def setActionIdentifiersVarargs(value: MitigationActionIdentifier*): Self = StObject.set(x, "actionIdentifiers", js.Array(value :_*))
+    inline def setActionIdentifiersVarargs(value: MitigationActionIdentifier*): Self = StObject.set(x, "actionIdentifiers", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

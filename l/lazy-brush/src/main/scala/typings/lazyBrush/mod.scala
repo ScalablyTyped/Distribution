@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("lazy-brush", "LazyBrush")
   @js.native
-  class LazyBrush () extends StObject {
+  open class LazyBrush () extends StObject {
     def this(options: Options) = this()
     
     var _hasMoved: Boolean = js.native
@@ -91,7 +91,7 @@ object mod {
   
   @JSImport("lazy-brush", "LazyPoint")
   @js.native
-  class LazyPoint protected () extends Point {
+  open class LazyPoint protected () extends Point {
     def this(x: Double, y: Double) = this()
     
     /**
@@ -132,7 +132,7 @@ object mod {
   
   @JSImport("lazy-brush", "Point")
   @js.native
-  class Point protected ()
+  open class Point protected ()
     extends StObject
        with Coordinates {
     def this(x: Double, y: Double) = this()

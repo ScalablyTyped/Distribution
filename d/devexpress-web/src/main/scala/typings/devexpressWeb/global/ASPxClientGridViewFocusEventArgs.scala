@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the ASPxClientGridViewFocusEventArgs class.
   */
-class ASPxClientGridViewFocusEventArgs ()
+open class ASPxClientGridViewFocusEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridViewFocusEventArgs {
   

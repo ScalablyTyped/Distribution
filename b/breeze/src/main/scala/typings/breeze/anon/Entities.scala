@@ -24,7 +24,7 @@ object Entities {
     
     inline def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value*))
     
     inline def setTempKeyMapping(value: StringDictionary[EntityKey]): Self = StObject.set(x, "tempKeyMapping", value.asInstanceOf[js.Any])
   }

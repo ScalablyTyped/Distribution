@@ -53,6 +53,9 @@ trait Application extends StObject {
   /** Full path to the Application resource in the API. Example: apps/myapp.@OutputOnly */
   var name: js.UndefOr[String] = js.undefined
   
+  /** The service account associated with the application. This is the app-level default identity. If no identity provided during create version, Admin API will fallback to this one. */
+  var serviceAccount: js.UndefOr[String] = js.undefined
+  
   /** Serving status of this application. */
   var servingStatus: js.UndefOr[String] = js.undefined
 }
@@ -93,7 +96,7 @@ object Application {
     
     inline def setDispatchRulesUndefined: Self = StObject.set(x, "dispatchRules", js.undefined)
     
-    inline def setDispatchRulesVarargs(value: UrlDispatchRule*): Self = StObject.set(x, "dispatchRules", js.Array(value :_*))
+    inline def setDispatchRulesVarargs(value: UrlDispatchRule*): Self = StObject.set(x, "dispatchRules", js.Array(value*))
     
     inline def setFeatureSettings(value: FeatureSettings): Self = StObject.set(x, "featureSettings", value.asInstanceOf[js.Any])
     
@@ -118,6 +121,10 @@ object Application {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
     inline def setServingStatus(value: String): Self = StObject.set(x, "servingStatus", value.asInstanceOf[js.Any])
     

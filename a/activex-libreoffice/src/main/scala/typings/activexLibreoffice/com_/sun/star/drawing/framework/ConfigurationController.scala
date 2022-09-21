@@ -24,7 +24,7 @@ object ConfigurationController {
   inline def apply(
     CurrentConfiguration: XConfiguration,
     RequestedConfiguration: XConfiguration,
-    addConfigurationChangeListener: (XConfigurationChangeListener, String, js.Any) => Unit,
+    addConfigurationChangeListener: (XConfigurationChangeListener, String, Any) => Unit,
     addResourceFactory: (String, XResourceFactory) => Unit,
     create: XController => Unit,
     getCurrentConfiguration: () => XConfiguration,

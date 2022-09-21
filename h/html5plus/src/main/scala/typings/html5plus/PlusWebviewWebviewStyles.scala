@@ -42,7 +42,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var additionalHttpHeaders: js.UndefOr[js.Any] = js.undefined
+  var additionalHttpHeaders: js.UndefOr[Any] = js.undefined
   
   /**
     * 窗口动画优化方式
@@ -548,7 +548,7 @@ object PlusWebviewWebviewStyles {
   
   extension [Self <: PlusWebviewWebviewStyles](x: Self) {
     
-    inline def setAdditionalHttpHeaders(value: js.Any): Self = StObject.set(x, "additionalHttpHeaders", value.asInstanceOf[js.Any])
+    inline def setAdditionalHttpHeaders(value: Any): Self = StObject.set(x, "additionalHttpHeaders", value.asInstanceOf[js.Any])
     
     inline def setAdditionalHttpHeadersUndefined: Self = StObject.set(x, "additionalHttpHeaders", js.undefined)
     
@@ -692,7 +692,7 @@ object PlusWebviewWebviewStyles {
     
     inline def setSubNViewsUndefined: Self = StObject.set(x, "subNViews", js.undefined)
     
-    inline def setSubNViewsVarargs(value: PlusWebview*): Self = StObject.set(x, "subNViews", js.Array(value :_*))
+    inline def setSubNViewsVarargs(value: PlusWebview*): Self = StObject.set(x, "subNViews", js.Array(value*))
     
     inline def setTitleNView(value: PlusWebviewWebviewTitleNViewStyles): Self = StObject.set(x, "titleNView", value.asInstanceOf[js.Any])
     

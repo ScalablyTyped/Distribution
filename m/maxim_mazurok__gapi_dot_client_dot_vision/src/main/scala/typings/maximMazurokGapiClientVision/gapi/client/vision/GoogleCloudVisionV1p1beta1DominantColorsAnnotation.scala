@@ -22,6 +22,6 @@ object GoogleCloudVisionV1p1beta1DominantColorsAnnotation {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: GoogleCloudVisionV1p1beta1ColorInfo*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: GoogleCloudVisionV1p1beta1ColorInfo*): Self = StObject.set(x, "colors", js.Array(value*))
   }
 }

@@ -11,9 +11,9 @@ Webpack file concatenation.
 | Full name          | webpack-concat-plugin |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 1229342 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 75676.33333333333 |
+| # stars            | 97.0 |
 
 ## Links
 - [Homepage](https://github.com/hxlniada/webpack-concat-plugin)

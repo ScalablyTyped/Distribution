@@ -25,7 +25,7 @@ object ListFindingsResponse {
     
     inline def setFindingsUndefined: Self = StObject.set(x, "findings", js.undefined)
     
-    inline def setFindingsVarargs(value: Finding*): Self = StObject.set(x, "findings", js.Array(value :_*))
+    inline def setFindingsVarargs(value: Finding*): Self = StObject.set(x, "findings", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

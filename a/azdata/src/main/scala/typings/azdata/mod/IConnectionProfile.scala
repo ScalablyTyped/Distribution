@@ -13,9 +13,9 @@ trait IConnectionProfile
   
   var azureTenantId: js.UndefOr[String] = js.undefined
   
-  var connectionName: String
+  var connectionName: js.UndefOr[String] = js.undefined
   
-  var databaseName: String
+  var databaseName: js.UndefOr[String] = js.undefined
   
   var groupFullName: js.UndefOr[String] = js.undefined
   
@@ -39,10 +39,8 @@ object IConnectionProfile {
   
   inline def apply(
     authenticationType: String,
-    connectionName: String,
-    databaseName: String,
     id: String,
-    options: StringDictionary[js.Any],
+    options: StringDictionary[Any],
     password: String,
     providerName: String,
     savePassword: Boolean,
@@ -50,7 +48,7 @@ object IConnectionProfile {
     serverName: String,
     userName: String
   ): IConnectionProfile = {
-    val __obj = js.Dynamic.literal(authenticationType = authenticationType.asInstanceOf[js.Any], connectionName = connectionName.asInstanceOf[js.Any], databaseName = databaseName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], providerName = providerName.asInstanceOf[js.Any], savePassword = savePassword.asInstanceOf[js.Any], saveProfile = saveProfile.asInstanceOf[js.Any], serverName = serverName.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authenticationType = authenticationType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], providerName = providerName.asInstanceOf[js.Any], savePassword = savePassword.asInstanceOf[js.Any], saveProfile = saveProfile.asInstanceOf[js.Any], serverName = serverName.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConnectionProfile]
   }
   
@@ -64,7 +62,11 @@ object IConnectionProfile {
     
     inline def setConnectionName(value: String): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
     
+    inline def setConnectionNameUndefined: Self = StObject.set(x, "connectionName", js.undefined)
+    
     inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
     
     inline def setGroupFullName(value: String): Self = StObject.set(x, "groupFullName", value.asInstanceOf[js.Any])
     

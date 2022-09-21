@@ -92,7 +92,7 @@ object XDateField {
     isEmpty: () => Boolean,
     isLongFormat: () => Boolean,
     isStrictFormat: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDate: Date => Unit,
     setEmpty: () => Unit,

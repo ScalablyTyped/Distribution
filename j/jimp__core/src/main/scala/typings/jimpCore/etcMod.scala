@@ -6,8 +6,7 @@ import typings.jimpCore.jimpCoreStrings.`before-change`
 import typings.jimpCore.jimpCoreStrings.changed
 import typings.jimpCore.jimpCoreStrings.clone
 import typings.jimpCore.jimpCoreStrings.constructor
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,7 +82,7 @@ object etcMod {
   
   type EncoderFn[ImageType /* <: Image */] = js.Function1[/* image */ ImageType, Buffer]
   
-  type GenericCallback[T, U, TThis] = js.ThisFunction2[/* this */ TThis, /* err */ Error | Null, /* value */ T, U]
+  type GenericCallback[T, U, TThis] = js.ThisFunction2[/* this */ TThis, /* err */ js.Error | Null, /* value */ T, U]
   
   trait Image extends StObject {
     
@@ -102,7 +101,7 @@ object etcMod {
     }
   }
   
-  type ImageCallback[jimp] = js.ThisFunction3[/* this */ jimp, /* err */ Error | Null, /* value */ jimp, /* coords */ X, js.Any]
+  type ImageCallback[jimp] = js.ThisFunction3[/* this */ jimp, /* err */ js.Error | Null, /* value */ jimp, /* coords */ X, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.jimpCore.jimpCoreStrings.any
@@ -213,13 +212,13 @@ object etcMod {
     
     var compression: js.UndefOr[Boolean] = js.undefined
     
-    var headers: StringDictionary[js.Any]
+    var headers: StringDictionary[Any]
     
     var url: String
   }
   object URLOptions {
     
-    inline def apply(headers: StringDictionary[js.Any], url: String): URLOptions = {
+    inline def apply(headers: StringDictionary[Any], url: String): URLOptions = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[URLOptions]
     }
@@ -230,7 +229,7 @@ object etcMod {
       
       inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

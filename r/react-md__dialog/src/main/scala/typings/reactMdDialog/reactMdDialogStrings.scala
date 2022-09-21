@@ -1,5 +1,6 @@
 package typings.reactMdDialog
 
+import typings.reactMdDialog.dialogFooterMod.DialogFooterAlignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +36,9 @@ object reactMdDialogStrings {
   inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait between extends StObject
+  sealed trait between
+    extends StObject
+       with DialogFooterAlignment
   inline def between: between = "between".asInstanceOf[between]
   
   @js.native
@@ -79,7 +82,9 @@ object reactMdDialogStrings {
   inline def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait end extends StObject
+  sealed trait end
+    extends StObject
+       with DialogFooterAlignment
   inline def end: end = "end".asInstanceOf[end]
   
   @js.native
@@ -155,7 +160,9 @@ object reactMdDialogStrings {
   inline def no: no = "no".asInstanceOf[no]
   
   @js.native
-  sealed trait none extends StObject
+  sealed trait none
+    extends StObject
+       with DialogFooterAlignment
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
@@ -207,15 +214,21 @@ object reactMdDialogStrings {
   inline def spelling: spelling = "spelling".asInstanceOf[spelling]
   
   @js.native
-  sealed trait `stacked-end` extends StObject
+  sealed trait `stacked-end`
+    extends StObject
+       with DialogFooterAlignment
   inline def `stacked-end`: `stacked-end` = "stacked-end".asInstanceOf[`stacked-end`]
   
   @js.native
-  sealed trait `stacked-start` extends StObject
+  sealed trait `stacked-start`
+    extends StObject
+       with DialogFooterAlignment
   inline def `stacked-start`: `stacked-start` = "stacked-start".asInstanceOf[`stacked-start`]
   
   @js.native
-  sealed trait start extends StObject
+  sealed trait start
+    extends StObject
+       with DialogFooterAlignment
   inline def start: start = "start".asInstanceOf[start]
   
   @js.native

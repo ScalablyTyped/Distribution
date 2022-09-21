@@ -16,14 +16,14 @@ object sslGenerateMod {
   - typings.ionic.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @JSImport("ionic/commands/ssl/generate", "SSLGenerateCommand")
   @js.native
-  class SSLGenerateCommand protected () extends SSLBaseCommand {
+  open class SSLGenerateCommand protected () extends SSLBaseCommand {
     def this(namespace: INamespace) = this()
     
-    /* private */ var checkExistingFile: js.Any = js.native
+    /* private */ var checkExistingFile: Any = js.native
     
-    /* private */ var ensureDirectory: js.Any = js.native
+    /* private */ var ensureDirectory: Any = js.native
     
-    /* private */ var formatSubj: js.Any = js.native
+    /* private */ var formatSubj: Any = js.native
     
     def getDefaultCertPath(): String = js.native
     
@@ -32,6 +32,6 @@ object sslGenerateMod {
     def preRun(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[Unit] = js.native
     def preRun(inputs: CommandLineInputs, options: CommandLineOptions, metadata: CommandInstanceInfo): js.Promise[Unit] = js.native
     
-    /* private */ var writeConfig: js.Any = js.native
+    /* private */ var writeConfig: Any = js.native
   }
 }

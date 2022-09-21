@@ -17,7 +17,7 @@ trait Rows extends StObject {
   
   def Item(Index: Double): Row = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.Rows_typekey")
   var PowerPointDotRows_typekey: Rows = js.native

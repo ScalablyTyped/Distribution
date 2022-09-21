@@ -8,20 +8,22 @@ trait MediaKeyMessageEventInit
   extends StObject
      with EventInit {
   
-  var message: ArrayBuffer
+  /* standard dom */
+  var message: js.typedarray.ArrayBuffer
   
+  /* standard dom */
   var messageType: MediaKeyMessageType
 }
 object MediaKeyMessageEventInit {
   
-  inline def apply(message: ArrayBuffer, messageType: MediaKeyMessageType): MediaKeyMessageEventInit = {
+  inline def apply(message: js.typedarray.ArrayBuffer, messageType: MediaKeyMessageType): MediaKeyMessageEventInit = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaKeyMessageEventInit]
   }
   
   extension [Self <: MediaKeyMessageEventInit](x: Self) {
     
-    inline def setMessage(value: ArrayBuffer): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setMessageType(value: MediaKeyMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
   }

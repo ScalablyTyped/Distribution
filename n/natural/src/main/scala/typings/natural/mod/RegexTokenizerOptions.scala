@@ -1,6 +1,5 @@
 package typings.natural.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait RegexTokenizerOptions extends StObject {
   
   var discardEmpty: js.UndefOr[Boolean] = js.undefined
   
-  var pattern: js.UndefOr[RegExp] = js.undefined
+  var pattern: js.UndefOr[js.RegExp] = js.undefined
 }
 object RegexTokenizerOptions {
   
@@ -24,7 +23,7 @@ object RegexTokenizerOptions {
     
     inline def setDiscardEmptyUndefined: Self = StObject.set(x, "discardEmpty", js.undefined)
     
-    inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: js.RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
   }

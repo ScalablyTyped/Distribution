@@ -4,16 +4,16 @@
 Typings are for version 1.2
 
 ## Library description:
-Official JavaScript and Node.JS client library for the Seats.io V2 REST API
+Official JavaScript and Node.JS client library for the Seats.io REST API
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | seatsio |
 | Keywords           | - |
-| # releases         | 58 |
-| # dependents       | 0 |
-| # downloads        | 18379 |
-| # stars            | 0 |
+| # releases         | 47 |
+| # dependents       | 0.0 |
+| # downloads        | 4450.333333333333 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/seatsio/seatsio-js#readme)

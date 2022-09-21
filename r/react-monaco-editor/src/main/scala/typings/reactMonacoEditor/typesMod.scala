@@ -22,6 +22,8 @@ object typesMod {
   
   type DiffEditorWillMount = js.Function1[/* monaco */ TypeofmonacoEditor, Unit | IStandaloneEditorConstructionOptions]
   
+  type DiffEditorWillUnmount = js.Function2[/* editor */ IStandaloneDiffEditor, /* monaco */ TypeofmonacoEditor, Unit]
+  
   type EditorConstructionOptions = NonNullable[
     /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-monaco-editor.anon.FnCall>[1] */ js.Any
   ]
@@ -29,6 +31,12 @@ object typesMod {
   type EditorDidMount = js.Function2[/* editor */ IStandaloneCodeEditor, /* monaco */ TypeofmonacoEditor, Unit]
   
   type EditorWillMount = js.Function1[/* monaco */ TypeofmonacoEditor, Unit | EditorConstructionOptions]
+  
+  type EditorWillUnmount = js.Function2[
+    /* editor */ IStandaloneCodeEditor, 
+    /* monaco */ TypeofmonacoEditor, 
+    Unit | EditorConstructionOptions
+  ]
   
   trait MonacoDiffEditorProps
     extends StObject
@@ -43,6 +51,11 @@ object typesMod {
       * An event emitted before the editor mounted (similar to componentWillMount of React).
       */
     var editorWillMount: js.UndefOr[DiffEditorWillMount] = js.undefined
+    
+    /**
+      * An event emitted before the editor unmount (similar to componentWillUnmount of React).
+      */
+    var editorWillUnmount: js.UndefOr[DiffEditorWillUnmount] = js.undefined
     
     /**
       * An event emitted when the content of the current model has changed.
@@ -87,6 +100,10 @@ object typesMod {
       
       inline def setEditorWillMountUndefined: Self = StObject.set(x, "editorWillMount", js.undefined)
       
+      inline def setEditorWillUnmount(value: (/* editor */ IStandaloneDiffEditor, /* monaco */ TypeofmonacoEditor) => Unit): Self = StObject.set(x, "editorWillUnmount", js.Any.fromFunction2(value))
+      
+      inline def setEditorWillUnmountUndefined: Self = StObject.set(x, "editorWillUnmount", js.undefined)
+      
       inline def setOnChange(value: (/* value */ String, /* event */ IModelContentChangedEvent) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -112,12 +129,17 @@ object typesMod {
   trait MonacoEditorBaseProps extends StObject {
     
     /**
+      * Optional string classname to append to the editor.
+      */
+    var className: js.UndefOr[String | Null] = js.undefined
+    
+    /**
       * The initial value of the auto created model in the editor.
       */
     var defaultValue: js.UndefOr[String] = js.undefined
     
     /**
-      * Height of editor. Defaults to 500.
+      * Height of editor. Defaults to 100%.
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
@@ -146,6 +168,12 @@ object typesMod {
     }
     
     extension [Self <: MonacoEditorBaseProps](x: Self) {
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameNull: Self = StObject.set(x, "className", null)
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -186,6 +214,11 @@ object typesMod {
     var editorWillMount: js.UndefOr[EditorWillMount] = js.undefined
     
     /**
+      * An event emitted before the editor unmount (similar to componentWillUnmount of React).
+      */
+    var editorWillUnmount: js.UndefOr[EditorWillUnmount] = js.undefined
+    
+    /**
       * An event emitted when the content of the current model has changed.
       */
     var onChange: js.UndefOr[ChangeHandler] = js.undefined
@@ -223,6 +256,12 @@ object typesMod {
       inline def setEditorWillMount(value: /* monaco */ TypeofmonacoEditor => Unit | EditorConstructionOptions): Self = StObject.set(x, "editorWillMount", js.Any.fromFunction1(value))
       
       inline def setEditorWillMountUndefined: Self = StObject.set(x, "editorWillMount", js.undefined)
+      
+      inline def setEditorWillUnmount(
+        value: (/* editor */ IStandaloneCodeEditor, /* monaco */ TypeofmonacoEditor) => Unit | EditorConstructionOptions
+      ): Self = StObject.set(x, "editorWillUnmount", js.Any.fromFunction2(value))
+      
+      inline def setEditorWillUnmountUndefined: Self = StObject.set(x, "editorWillUnmount", js.undefined)
       
       inline def setOnChange(value: (/* value */ String, /* event */ IModelContentChangedEvent) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       

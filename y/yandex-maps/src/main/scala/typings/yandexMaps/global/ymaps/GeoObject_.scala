@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ymaps.GeoObject")
 @js.native
-class GeoObject_[T, TargetGeometry] ()
+open class GeoObject_[T, TargetGeometry /* <: js.Object */] ()
   extends typings.yandexMaps.mod.GeoObject_[T, TargetGeometry] {
   def this(feature: IGeoObjectFeature) = this()
   def this(feature: Unit, options: IGeoObjectOptions) = this()

@@ -1,6 +1,5 @@
 package typings.fmWebsync.fm.websync
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,8 +25,8 @@ object unsubscribeSuccessArgs {
     channels: js.Array[String],
     client: client,
     clientId: String,
-    meta: js.Any,
-    timestamp: Date
+    meta: Any,
+    timestamp: js.Date
   ): unsubscribeSuccessArgs = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], channels = channels.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[unsubscribeSuccessArgs]
@@ -39,6 +38,6 @@ object unsubscribeSuccessArgs {
     
     inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
   }
 }

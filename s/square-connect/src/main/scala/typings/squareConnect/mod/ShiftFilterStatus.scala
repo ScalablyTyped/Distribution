@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ShiftFilterStatus")
 @js.native
-class ShiftFilterStatus () extends StObject
+open class ShiftFilterStatus () extends StObject

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "ListItem")
 @js.native
-class ListItem ()
-  extends Component[ListItemProps, js.Object, js.Any]
+open class ListItem ()
+  extends Component[ListItemProps, js.Object, Any]

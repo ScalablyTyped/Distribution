@@ -33,7 +33,7 @@ trait DeviceInformationCollection
     */
   def getMany(startIndex: Double): ItemsDeviceInformation = js.native
   
-  def indexOf(value: DeviceInformation, extra: js.Any*): Index = js.native
+  def indexOf(value: DeviceInformation, extra: Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: DeviceInformation): Double = js.native

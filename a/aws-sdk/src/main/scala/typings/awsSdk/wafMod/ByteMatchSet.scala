@@ -34,7 +34,7 @@ object ByteMatchSet {
     
     inline def setByteMatchTuples(value: ByteMatchTuples): Self = StObject.set(x, "ByteMatchTuples", value.asInstanceOf[js.Any])
     
-    inline def setByteMatchTuplesVarargs(value: ByteMatchTuple*): Self = StObject.set(x, "ByteMatchTuples", js.Array(value :_*))
+    inline def setByteMatchTuplesVarargs(value: ByteMatchTuple*): Self = StObject.set(x, "ByteMatchTuples", js.Array(value*))
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

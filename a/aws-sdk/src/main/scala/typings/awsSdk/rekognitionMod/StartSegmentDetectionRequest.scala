@@ -22,7 +22,7 @@ trait StartSegmentDetectionRequest extends StObject {
   var JobTag: js.UndefOr[typings.awsSdk.rekognitionMod.JobTag] = js.undefined
   
   /**
-    * The ARN of the Amazon SNS topic to which you want Amazon Rekognition Video to publish the completion status of the segment detection operation.
+    * The ARN of the Amazon SNS topic to which you want Amazon Rekognition Video to publish the completion status of the segment detection operation. Note that the Amazon SNS topic must have a topic name that begins with AmazonRekognition if you are using the AmazonRekognitionServiceRole permissions policy to access the topic.
     */
   var NotificationChannel: js.UndefOr[typings.awsSdk.rekognitionMod.NotificationChannel] = js.undefined
   
@@ -60,7 +60,7 @@ object StartSegmentDetectionRequest {
     
     inline def setSegmentTypes(value: SegmentTypes): Self = StObject.set(x, "SegmentTypes", value.asInstanceOf[js.Any])
     
-    inline def setSegmentTypesVarargs(value: SegmentType*): Self = StObject.set(x, "SegmentTypes", js.Array(value :_*))
+    inline def setSegmentTypesVarargs(value: SegmentType*): Self = StObject.set(x, "SegmentTypes", js.Array(value*))
     
     inline def setVideo(value: Video): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
   }

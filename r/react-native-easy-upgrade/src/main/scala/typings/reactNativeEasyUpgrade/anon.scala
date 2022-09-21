@@ -1,7 +1,6 @@
 package typings.reactNativeEasyUpgrade
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,7 +74,7 @@ object anon {
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var trackViewUrl: String
     
@@ -138,7 +137,7 @@ object anon {
   /* Inlined std.Partial<react-native-easy-upgrade.react-native-easy-upgrade.Options> */
   trait PartialOptions extends StObject {
     
-    var downloadApkEnd: js.UndefOr[js.Function1[/* path */ String, js.Any]] = js.undefined
+    var downloadApkEnd: js.UndefOr[js.Function1[/* path */ String, Any]] = js.undefined
     
     var downloadApkName: js.UndefOr[String] = js.undefined
     
@@ -152,7 +151,7 @@ object anon {
     
     var iOSAppLookupUrl: js.UndefOr[String] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* err */ Error, js.Any]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* err */ js.Error, Any]] = js.undefined
     
     var shouldCheckApkHasDownloaded: js.UndefOr[Boolean] = js.undefined
   }
@@ -165,7 +164,7 @@ object anon {
     
     extension [Self <: PartialOptions](x: Self) {
       
-      inline def setDownloadApkEnd(value: /* path */ String => js.Any): Self = StObject.set(x, "downloadApkEnd", js.Any.fromFunction1(value))
+      inline def setDownloadApkEnd(value: /* path */ String => Any): Self = StObject.set(x, "downloadApkEnd", js.Any.fromFunction1(value))
       
       inline def setDownloadApkEndUndefined: Self = StObject.set(x, "downloadApkEnd", js.undefined)
       
@@ -193,7 +192,7 @@ object anon {
       
       inline def setIOSAppLookupUrlUndefined: Self = StObject.set(x, "iOSAppLookupUrl", js.undefined)
       
-      inline def setOnError(value: /* err */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* err */ js.Error => Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       

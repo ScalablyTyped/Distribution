@@ -22,7 +22,7 @@ object lineSymbolMarkerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with LineSymbolMarker {
     def this(properties: LineSymbolMarkerProperties) = this()

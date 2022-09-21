@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.UI.MenuTest")
 @js.native
-class MenuTest ()
+open class MenuTest ()
   extends StObject
      with typings.sharepoint.SP.UI.MenuTest
 object MenuTest {

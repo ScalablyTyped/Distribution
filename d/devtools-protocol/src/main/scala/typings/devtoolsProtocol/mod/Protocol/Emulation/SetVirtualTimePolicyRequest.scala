@@ -15,7 +15,7 @@ trait SetVirtualTimePolicyRequest extends StObject {
   var budget: js.UndefOr[Double] = js.undefined
   
   /**
-    * If set, base::Time::Now will be overriden to initially return this value.
+    * If set, base::Time::Now will be overridden to initially return this value.
     */
   var initialVirtualTime: js.UndefOr[TimeSinceEpoch] = js.undefined
   
@@ -26,12 +26,6 @@ trait SetVirtualTimePolicyRequest extends StObject {
   var maxVirtualTimeTaskStarvationCount: js.UndefOr[integer] = js.undefined
   
   var policy: VirtualTimePolicy
-  
-  /**
-    * If set the virtual time policy change should be deferred until any frame starts navigating.
-    * Note any previous deferred policy change is superseded.
-    */
-  var waitForNavigation: js.UndefOr[Boolean] = js.undefined
 }
 object SetVirtualTimePolicyRequest {
   
@@ -55,9 +49,5 @@ object SetVirtualTimePolicyRequest {
     inline def setMaxVirtualTimeTaskStarvationCountUndefined: Self = StObject.set(x, "maxVirtualTimeTaskStarvationCount", js.undefined)
     
     inline def setPolicy(value: VirtualTimePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
-    
-    inline def setWaitForNavigation(value: Boolean): Self = StObject.set(x, "waitForNavigation", value.asInstanceOf[js.Any])
-    
-    inline def setWaitForNavigationUndefined: Self = StObject.set(x, "waitForNavigation", js.undefined)
   }
 }

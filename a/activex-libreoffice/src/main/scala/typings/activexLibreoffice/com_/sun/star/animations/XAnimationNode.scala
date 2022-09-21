@@ -39,7 +39,7 @@ trait XAnimationNode
     * values described above if more than one begin value is defined for this element.`VOID` if no begin behavior is defined for this element.
     * @see http://www.w3.org/TR/smil20/smil-timing.html#adef-begin
     */
-  var Begin: js.Any
+  var Begin: Any
   
   /**
     * defines the deceleration for this element. Element time will deceleration from a run rate to a rate of 0 at the ending, over the course of the
@@ -56,7 +56,7 @@ trait XAnimationNode
     * elements that define media.`VOID` the simple duration for the element is defined to be the implicit duration of the element.
     * @see http://www.w3.org/TR/smil20/smil-timing.html#adef-dur
     */
-  var Duration: js.Any
+  var Duration: Any
   
   /**
     * a sequence of values that define the ending of this element ; {@link End} is `double` describes the element end as an offset in seconds from an
@@ -66,7 +66,7 @@ trait XAnimationNode
     * described above if more than one begin value is defined for this element.`VOID` if no end behavior is defined for this element.
     * @see http://www.w3.org/TR/smil20/smil-timing.html#adef-end
     */
-  var End: js.Any
+  var End: Any
   
   /**
     * controls the implicit duration of time containers, as a function of the children. ;  The EndSync attribute is only valid for par and excl time
@@ -75,7 +75,7 @@ trait XAnimationNode
     * {@link EndSync} is either a `short` constant from EndSync, an interface reference to a child {@link XTimeContainer} or `VOID` .
     * @see http://www.w3.org/TR/smil20/smil-timing.html#adef-endsync
     */
-  var EndSync: js.Any
+  var EndSync: Any
   
   /**
     * the attribute that specify the behavior how an element should be extended beyond the active duration by freezing the final state of the element. ;
@@ -103,7 +103,7 @@ trait XAnimationNode
     * @see EndSync
     * @see http://www.w3.org/TR/smil20/smil-timing.html#adef-repeatCount
     */
-  var RepeatCount: js.Any
+  var RepeatCount: Any
   
   /**
     * the total duration for repeat. ; {@link RepeatDuration} is `double` specifies the duration in element active time to repeat the simple duration in
@@ -111,7 +111,7 @@ trait XAnimationNode
     * duration is defined for this element.
     * @see http://www.w3.org/TR/smil20/smil-timing.html#adef-repeatDur
     */
-  var RepeatDuration: js.Any
+  var RepeatDuration: Any
   
   /**
     * defines the restart behavior of this element. ; {@link Restart} is a `short` value from {@link AnimationRestart} .
@@ -141,23 +141,23 @@ object XAnimationNode {
   inline def apply(
     Acceleration: Double,
     AutoReverse: Boolean,
-    Begin: js.Any,
+    Begin: Any,
     Decelerate: Double,
-    Duration: js.Any,
-    End: js.Any,
-    EndSync: js.Any,
+    Duration: Any,
+    End: Any,
+    EndSync: Any,
     Fill: Double,
     FillDefault: Double,
     Parent: XInterface,
-    RepeatCount: js.Any,
-    RepeatDuration: js.Any,
+    RepeatCount: Any,
+    RepeatDuration: Any,
     Restart: Double,
     RestartDefault: Double,
     Type: Double,
     UserData: SafeArray[NamedValue],
     acquire: () => Unit,
     getParent: () => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setParent: XInterface => Unit
   ): XAnimationNode = {
@@ -171,23 +171,23 @@ object XAnimationNode {
     
     inline def setAutoReverse(value: Boolean): Self = StObject.set(x, "AutoReverse", value.asInstanceOf[js.Any])
     
-    inline def setBegin(value: js.Any): Self = StObject.set(x, "Begin", value.asInstanceOf[js.Any])
+    inline def setBegin(value: Any): Self = StObject.set(x, "Begin", value.asInstanceOf[js.Any])
     
     inline def setDecelerate(value: Double): Self = StObject.set(x, "Decelerate", value.asInstanceOf[js.Any])
     
-    inline def setDuration(value: js.Any): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Any): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    inline def setEnd(value: js.Any): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Any): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    inline def setEndSync(value: js.Any): Self = StObject.set(x, "EndSync", value.asInstanceOf[js.Any])
+    inline def setEndSync(value: Any): Self = StObject.set(x, "EndSync", value.asInstanceOf[js.Any])
     
     inline def setFill(value: Double): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
     inline def setFillDefault(value: Double): Self = StObject.set(x, "FillDefault", value.asInstanceOf[js.Any])
     
-    inline def setRepeatCount(value: js.Any): Self = StObject.set(x, "RepeatCount", value.asInstanceOf[js.Any])
+    inline def setRepeatCount(value: Any): Self = StObject.set(x, "RepeatCount", value.asInstanceOf[js.Any])
     
-    inline def setRepeatDuration(value: js.Any): Self = StObject.set(x, "RepeatDuration", value.asInstanceOf[js.Any])
+    inline def setRepeatDuration(value: Any): Self = StObject.set(x, "RepeatDuration", value.asInstanceOf[js.Any])
     
     inline def setRestart(value: Double): Self = StObject.set(x, "Restart", value.asInstanceOf[js.Any])
     

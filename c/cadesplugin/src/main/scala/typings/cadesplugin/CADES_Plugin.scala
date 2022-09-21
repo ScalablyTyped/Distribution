@@ -24,6 +24,10 @@ import typings.cadesplugin.cadespluginNumbers.`4`
 import typings.cadesplugin.cadespluginStrings.`httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr34102001-gostr3411`
 import typings.cadesplugin.cadespluginStrings.`httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr3411`
 import typings.cadesplugin.cadespluginStrings.`urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102001-gostr3411`
+import typings.cadesplugin.cadespluginStrings.`urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-256`
+import typings.cadesplugin.cadespluginStrings.`urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-512`
+import typings.cadesplugin.cadespluginStrings.`urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34112012-256`
+import typings.cadesplugin.cadespluginStrings.`urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34112012-512`
 import typings.cadesplugin.cadespluginStrings.urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr3411
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -225,16 +229,24 @@ object CADES_Plugin {
     
     val XmlDsigGost3410Url: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102001-gostr3411`
     
+    val XmlDsigGost3410Url2012256: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-256`
+    
+    val XmlDsigGost3410Url2012512: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-512`
+    
     val XmlDsigGost3410UrlObsolete: `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr34102001-gostr3411`
     
     val XmlDsigGost3411Url: urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr3411
+    
+    val XmlDsigGost3411Url2012256: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34112012-256`
+    
+    val XmlDsigGost3411Url2012512: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34112012-512`
     
     val XmlDsigGost3411UrlObsolete: `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr3411`
   }
   object SignedXmlUrls {
     
     inline def apply(): SignedXmlUrls = {
-      val __obj = js.Dynamic.literal(XmlDsigGost3410Url = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102001-gostr3411", XmlDsigGost3410UrlObsolete = "http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411", XmlDsigGost3411Url = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr3411", XmlDsigGost3411UrlObsolete = "http://www.w3.org/2001/04/xmldsig-more#gostr3411")
+      val __obj = js.Dynamic.literal(XmlDsigGost3410Url = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102001-gostr3411", XmlDsigGost3410Url2012256 = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256", XmlDsigGost3410Url2012512 = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-512", XmlDsigGost3410UrlObsolete = "http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411", XmlDsigGost3411Url = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr3411", XmlDsigGost3411Url2012256 = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256", XmlDsigGost3411Url2012512 = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-512", XmlDsigGost3411UrlObsolete = "http://www.w3.org/2001/04/xmldsig-more#gostr3411")
       __obj.asInstanceOf[SignedXmlUrls]
     }
     
@@ -244,11 +256,23 @@ object CADES_Plugin {
         value: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102001-gostr3411`
       ): Self = StObject.set(x, "XmlDsigGost3410Url", value.asInstanceOf[js.Any])
       
+      inline def setXmlDsigGost3410Url2012256(
+        value: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-256`
+      ): Self = StObject.set(x, "XmlDsigGost3410Url2012256", value.asInstanceOf[js.Any])
+      
+      inline def setXmlDsigGost3410Url2012512(
+        value: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-512`
+      ): Self = StObject.set(x, "XmlDsigGost3410Url2012512", value.asInstanceOf[js.Any])
+      
       inline def setXmlDsigGost3410UrlObsolete(
         value: `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr34102001-gostr3411`
       ): Self = StObject.set(x, "XmlDsigGost3410UrlObsolete", value.asInstanceOf[js.Any])
       
       inline def setXmlDsigGost3411Url(value: urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr3411): Self = StObject.set(x, "XmlDsigGost3411Url", value.asInstanceOf[js.Any])
+      
+      inline def setXmlDsigGost3411Url2012256(value: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34112012-256`): Self = StObject.set(x, "XmlDsigGost3411Url2012256", value.asInstanceOf[js.Any])
+      
+      inline def setXmlDsigGost3411Url2012512(value: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34112012-512`): Self = StObject.set(x, "XmlDsigGost3411Url2012512", value.asInstanceOf[js.Any])
       
       inline def setXmlDsigGost3411UrlObsolete(value: `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr3411`): Self = StObject.set(x, "XmlDsigGost3411UrlObsolete", value.asInstanceOf[js.Any])
     }

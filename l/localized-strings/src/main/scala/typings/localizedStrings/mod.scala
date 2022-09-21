@@ -76,7 +76,7 @@ object mod extends Shortcut {
       * Replace the NamedLocalization object without reinstantiating the object
       * @param props
       */
-    def setContent(props: js.Any): Unit = js.native
+    def setContent(props: Any): Unit = js.native
     
     /**
       * Can be used from ouside the class to force a particular language

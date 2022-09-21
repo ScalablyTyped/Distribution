@@ -13,8 +13,8 @@ trait Ack extends StObject {
   var get: String
   
   def on(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [unknown, unknown, unknown] is not an array type */ args: js.Tuple3[js.Any, js.Any, js.Any]
-  ): js.Any
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [unknown, unknown, unknown] is not an array type */ args: js.Tuple3[Any, Any, Any]
+  ): Any
   
   var put: Alias
   
@@ -24,13 +24,7 @@ trait Ack extends StObject {
 }
 object Ack {
   
-  inline def apply(
-    get: String,
-    on: js.Tuple3[js.Any, js.Any, js.Any] => js.Any,
-    put: Alias,
-    sea: CryptoKeyPair,
-    soul: String
-  ): Ack = {
+  inline def apply(get: String, on: js.Tuple3[Any, Any, Any] => Any, put: Alias, sea: CryptoKeyPair, soul: String): Ack = {
     val __obj = js.Dynamic.literal(ack = 2, get = get.asInstanceOf[js.Any], on = js.Any.fromFunction1(on), put = put.asInstanceOf[js.Any], sea = sea.asInstanceOf[js.Any], soul = soul.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ack]
   }
@@ -41,7 +35,7 @@ object Ack {
     
     inline def setGet(value: String): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setOn(value: js.Tuple3[js.Any, js.Any, js.Any] => js.Any): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
+    inline def setOn(value: js.Tuple3[Any, Any, Any] => Any): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
     
     inline def setPut(value: Alias): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
     

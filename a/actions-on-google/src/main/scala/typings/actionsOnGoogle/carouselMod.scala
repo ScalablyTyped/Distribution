@@ -16,7 +16,7 @@ object carouselMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/option/carousel", "Carousel")
   @js.native
-  class Carousel protected () extends Helper[actionsDotintentDotOPTION, GoogleActionsV2OptionValueSpec] {
+  open class Carousel protected () extends Helper[actionsDotintentDotOPTION, GoogleActionsV2OptionValueSpec] {
     /**
       * @param options Carousel option
       * @public
@@ -83,7 +83,7 @@ object carouselMod {
         value: OptionItems[CarouselOptionItem] | js.Array[GoogleActionsV2UiElementsCarouselSelectCarouselItem]
       ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: GoogleActionsV2UiElementsCarouselSelectCarouselItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: GoogleActionsV2UiElementsCarouselSelectCarouselItem*): Self = StObject.set(x, "items", js.Array(value*))
     }
   }
 }

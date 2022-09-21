@@ -18,12 +18,12 @@ trait NavigationGroups extends StObject {
   
   def GetDefaultNavigationGroup(DefaultFolderGroup: OlGroupType): NavigationGroup
   
-  def Item(Index: js.Any): NavigationGroup
+  def Item(Index: Any): NavigationGroup
   
   /* private */ @JSName("Outlook.NavigationGroups_typekey")
   var OutlookDotNavigationGroups_typekey: NavigationGroups
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -36,9 +36,9 @@ object NavigationGroups {
     Create: String => NavigationGroup,
     Delete: NavigationGroup => Unit,
     GetDefaultNavigationGroup: OlGroupType => NavigationGroup,
-    Item: js.Any => NavigationGroup,
+    Item: Any => NavigationGroup,
     OutlookDotNavigationGroups_typekey: NavigationGroups,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): NavigationGroups = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Create = js.Any.fromFunction1(Create), Delete = js.Any.fromFunction1(Delete), GetDefaultNavigationGroup = js.Any.fromFunction1(GetDefaultNavigationGroup), Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -60,11 +60,11 @@ object NavigationGroups {
     
     inline def setGetDefaultNavigationGroup(value: OlGroupType => NavigationGroup): Self = StObject.set(x, "GetDefaultNavigationGroup", js.Any.fromFunction1(value))
     
-    inline def setItem(value: js.Any => NavigationGroup): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => NavigationGroup): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotNavigationGroups_typekey(value: NavigationGroups): Self = StObject.set(x, "Outlook.NavigationGroups_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

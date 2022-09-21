@@ -1,7 +1,7 @@
 
 # Scala.js typings for sqlstring
 
-Typings are for version 2.2
+Typings are for version 2.3
 
 ## Library description:
 Simple SQL escape and format for MySQL
@@ -10,10 +10,10 @@ Simple SQL escape and format for MySQL
 | ------------------ | :-------------: |
 | Full name          | sqlstring |
 | Keywords           | sqlstring, sql, escape, sql escape |
-| # releases         | 2 |
-| # dependents       | 177 |
-| # downloads        | 44196022 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8314475.666666667 |
+| # stars            | 332.0 |
 
 ## Links
 - [Homepage](https://github.com/mysqljs/sqlstring#readme)

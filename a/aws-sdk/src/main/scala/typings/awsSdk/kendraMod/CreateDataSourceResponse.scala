@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateDataSourceResponse extends StObject {
   
   /**
-    * A unique identifier for the data source.
+    * The identifier of the data source connector.
     */
   var Id: DataSourceId
 }

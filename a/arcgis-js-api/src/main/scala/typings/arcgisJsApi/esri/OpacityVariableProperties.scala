@@ -39,6 +39,6 @@ object OpacityVariableProperties {
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    inline def setStopsVarargs(value: OpacityStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: OpacityStopProperties*): Self = StObject.set(x, "stops", js.Array(value*))
   }
 }

@@ -44,7 +44,7 @@ object XRangeSelection {
     acquire: () => Unit,
     addRangeSelectionChangeListener: XRangeSelectionChangeListener => Unit,
     addRangeSelectionListener: XRangeSelectionListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeRangeSelectionChangeListener: XRangeSelectionChangeListener => Unit,
     removeRangeSelectionListener: XRangeSelectionListener => Unit,

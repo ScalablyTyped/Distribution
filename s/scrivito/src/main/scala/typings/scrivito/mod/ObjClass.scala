@@ -12,11 +12,12 @@ trait ObjClass
      with Instantiable1[/* arg */ js.Object, Obj] {
   
   // Static methods
-  def all(): js.Any = js.native
+  def all(): ObjSearch = js.native
   
-  def create(attributes: CreateAttributes): Unit = js.native
+  def create(): Obj = js.native
+  def create(attributes: CreateAttributes): Obj = js.native
   
-  def createFromFile(file: File, attributes: CreateAttributes): Unit = js.native
+  def createFromFile(file: File, attributes: CreateAttributes): js.Promise[Obj] = js.native
   
   def get(id: String): Obj | Null = js.native
   
@@ -24,8 +25,17 @@ trait ObjClass
   
   def getByPermalink(permalink: String): Obj | Null = js.native
   
-  def root(): Obj = js.native
+  def onAllSites(): SiteContext = js.native
   
-  def where(attribute: ObjSearchSingleAttribute, operator: ObjSearchOperator, value: String): ObjSearch = js.native
-  def where(attribute: ObjSearchSingleAttribute, operator: ObjSearchOperator, value: String, boost: js.Any): ObjSearch = js.native
+  def onSite(siteId: String): SiteContext = js.native
+  
+  def root(): Obj | Null = js.native
+  
+  def where(attribute: ObjSearchSingleAttribute, operator: ObjSearchOperator, value: ObjSearchValue): ObjSearch = js.native
+  def where(
+    attribute: ObjSearchSingleAttribute,
+    operator: ObjSearchOperator,
+    value: ObjSearchValue,
+    boost: Any
+  ): ObjSearch = js.native
 }

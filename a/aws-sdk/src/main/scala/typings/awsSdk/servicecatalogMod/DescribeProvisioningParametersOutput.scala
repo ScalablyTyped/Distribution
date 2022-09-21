@@ -12,6 +12,11 @@ trait DescribeProvisioningParametersOutput extends StObject {
   var ConstraintSummaries: js.UndefOr[typings.awsSdk.servicecatalogMod.ConstraintSummaries] = js.undefined
   
   /**
+    * A list of the keys and descriptions of the outputs. These outputs can be referenced from a provisioned product launched from this provisioning artifact.
+    */
+  var ProvisioningArtifactOutputKeys: js.UndefOr[ProvisioningArtifactOutputs] = js.undefined
+  
+  /**
     * The output of the provisioning artifact.
     */
   var ProvisioningArtifactOutputs: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactOutputs] = js.undefined
@@ -22,7 +27,7 @@ trait DescribeProvisioningParametersOutput extends StObject {
   var ProvisioningArtifactParameters: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactParameters] = js.undefined
   
   /**
-    * An object that contains information about preferences, such as regions and accounts, for the provisioning artifact.
+    * An object that contains information about preferences, such as Regions and accounts, for the provisioning artifact.
     */
   var ProvisioningArtifactPreferences: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactPreferences] = js.undefined
   
@@ -49,19 +54,25 @@ object DescribeProvisioningParametersOutput {
     
     inline def setConstraintSummariesUndefined: Self = StObject.set(x, "ConstraintSummaries", js.undefined)
     
-    inline def setConstraintSummariesVarargs(value: ConstraintSummary*): Self = StObject.set(x, "ConstraintSummaries", js.Array(value :_*))
+    inline def setConstraintSummariesVarargs(value: ConstraintSummary*): Self = StObject.set(x, "ConstraintSummaries", js.Array(value*))
+    
+    inline def setProvisioningArtifactOutputKeys(value: ProvisioningArtifactOutputs): Self = StObject.set(x, "ProvisioningArtifactOutputKeys", value.asInstanceOf[js.Any])
+    
+    inline def setProvisioningArtifactOutputKeysUndefined: Self = StObject.set(x, "ProvisioningArtifactOutputKeys", js.undefined)
+    
+    inline def setProvisioningArtifactOutputKeysVarargs(value: ProvisioningArtifactOutput*): Self = StObject.set(x, "ProvisioningArtifactOutputKeys", js.Array(value*))
     
     inline def setProvisioningArtifactOutputs(value: ProvisioningArtifactOutputs): Self = StObject.set(x, "ProvisioningArtifactOutputs", value.asInstanceOf[js.Any])
     
     inline def setProvisioningArtifactOutputsUndefined: Self = StObject.set(x, "ProvisioningArtifactOutputs", js.undefined)
     
-    inline def setProvisioningArtifactOutputsVarargs(value: ProvisioningArtifactOutput*): Self = StObject.set(x, "ProvisioningArtifactOutputs", js.Array(value :_*))
+    inline def setProvisioningArtifactOutputsVarargs(value: ProvisioningArtifactOutput*): Self = StObject.set(x, "ProvisioningArtifactOutputs", js.Array(value*))
     
     inline def setProvisioningArtifactParameters(value: ProvisioningArtifactParameters): Self = StObject.set(x, "ProvisioningArtifactParameters", value.asInstanceOf[js.Any])
     
     inline def setProvisioningArtifactParametersUndefined: Self = StObject.set(x, "ProvisioningArtifactParameters", js.undefined)
     
-    inline def setProvisioningArtifactParametersVarargs(value: ProvisioningArtifactParameter*): Self = StObject.set(x, "ProvisioningArtifactParameters", js.Array(value :_*))
+    inline def setProvisioningArtifactParametersVarargs(value: ProvisioningArtifactParameter*): Self = StObject.set(x, "ProvisioningArtifactParameters", js.Array(value*))
     
     inline def setProvisioningArtifactPreferences(value: ProvisioningArtifactPreferences): Self = StObject.set(x, "ProvisioningArtifactPreferences", value.asInstanceOf[js.Any])
     
@@ -71,12 +82,12 @@ object DescribeProvisioningParametersOutput {
     
     inline def setTagOptionsUndefined: Self = StObject.set(x, "TagOptions", js.undefined)
     
-    inline def setTagOptionsVarargs(value: TagOptionSummary*): Self = StObject.set(x, "TagOptions", js.Array(value :_*))
+    inline def setTagOptionsVarargs(value: TagOptionSummary*): Self = StObject.set(x, "TagOptions", js.Array(value*))
     
     inline def setUsageInstructions(value: UsageInstructions): Self = StObject.set(x, "UsageInstructions", value.asInstanceOf[js.Any])
     
     inline def setUsageInstructionsUndefined: Self = StObject.set(x, "UsageInstructions", js.undefined)
     
-    inline def setUsageInstructionsVarargs(value: UsageInstruction*): Self = StObject.set(x, "UsageInstructions", js.Array(value :_*))
+    inline def setUsageInstructionsVarargs(value: UsageInstruction*): Self = StObject.set(x, "UsageInstructions", js.Array(value*))
   }
 }

@@ -4,7 +4,6 @@ import typings.react.mod.ElementType
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.PropsWithoutRef
 import typings.react.mod.RefAttributes
-import typings.std.Error
 import typings.uifabricUtilities.anon.AsyncPlaceholder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,7 +31,7 @@ object asAsyncMod {
     /**
       * Callback when async loading fails.
       */
-    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
     
     /**
       * Callback executed when async loading is complete.
@@ -50,7 +49,7 @@ object asAsyncMod {
       
       inline def setLoad(value: () => js.Promise[ElementType[TProps]]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       
-      inline def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       

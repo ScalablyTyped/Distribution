@@ -1,50 +1,68 @@
 package typings.babylonjs.BABYLON
 
+import typings.babylonjs.anon.ArrowTail
 import typings.babylonjs.anon.SnapDistance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.babylonjs.BABYLON.IDisposable because Already inherited
+- typings.babylonjs.BABYLON.IGizmo because Already inherited
+- typings.babylonjs.BABYLON.IAxisScaleGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined dragBehavior, snapDistance, onSnapObservable, uniformScaling, sensitivity, dragScale, isEnabled */ @js.native
 trait AxisScaleGizmo
   extends StObject
      with Gizmo {
   
-  /* private */ var _coloredMaterial: js.Any = js.native
+  /* protected */ var _coloredMaterial: StandardMaterial = js.native
   
-  /** Create Geometry for Gizmo */
-  /* private */ var _createGizmoMesh: js.Any = js.native
+  /**
+    * Create Geometry for Gizmo
+    * @param parentMesh
+    * @param thickness
+    * @param isCollider
+    */
+  /* protected */ def _createGizmoMesh(parentMesh: AbstractMesh, thickness: Double): ArrowTail = js.native
+  /* protected */ def _createGizmoMesh(parentMesh: AbstractMesh, thickness: Double, isCollider: Boolean): ArrowTail = js.native
   
-  /* private */ var _disableMaterial: js.Any = js.native
+  /* protected */ var _disableMaterial: StandardMaterial = js.native
   
-  /* private */ var _dragging: js.Any = js.native
+  /* protected */ var _dragging: Boolean = js.native
   
-  /* private */ var _gizmoMesh: js.Any = js.native
+  /* protected */ var _gizmoMesh: Mesh = js.native
   
-  /* private */ var _hoverMaterial: js.Any = js.native
+  /* protected */ var _hoverMaterial: StandardMaterial = js.native
   
-  /* private */ var _isEnabled: js.Any = js.native
+  /* protected */ var _isEnabled: Boolean = js.native
   
-  /* private */ var _parent: js.Any = js.native
+  /* protected */ var _parent: Nullable[ScaleGizmo] = js.native
   
-  /* private */ var _pointerObserver: js.Any = js.native
+  /* protected */ var _pointerObserver: Nullable[Observer[PointerInfo]] = js.native
   
-  /* private */ var _tmpMatrix: js.Any = js.native
+  /* protected */ var _tmpMatrix: Matrix = js.native
   
-  /* private */ var _tmpMatrix2: js.Any = js.native
+  /* protected */ var _tmpMatrix2: Matrix = js.native
   
-  /* private */ var _tmpVector: js.Any = js.native
+  /* protected */ var _tmpVector: Vector3 = js.native
   
   /**
     * Drag behavior responsible for the gizmos dragging interactions
     */
   var dragBehavior: PointerDragBehavior = js.native
   
+  /**
+    * The magnitude of the drag strength (scaling factor)
+    */
+  var dragScale: Double = js.native
+  
   def isEnabled: Boolean = js.native
   /**
     * If the gizmo is enabled
     */
   def isEnabled_=(value: Boolean): Unit = js.native
+  /** If the gizmo is enabled */
+  @JSName("isEnabled")
+  var isEnabled_FAxisScaleGizmo: Boolean = js.native
   
   /**
     * Event that fires each time the gizmo snaps to a new location.

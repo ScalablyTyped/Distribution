@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SortRowData extends StObject {
   
-  def compare(a: js.Any, b: js.Any): Double = js.native
-  def compare(a: js.Any, b: js.Any, locale: String): Double = js.native
+  def compare(a: Any, b: Any): Double = js.native
+  def compare(a: Any, b: Any, locale: String): Double = js.native
   
   var key: String = js.native
   

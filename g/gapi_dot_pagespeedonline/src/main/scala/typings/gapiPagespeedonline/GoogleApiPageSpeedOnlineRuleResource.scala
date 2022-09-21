@@ -44,6 +44,6 @@ object GoogleApiPageSpeedOnlineRuleResource {
     
     inline def setUrlBlocks(value: js.Array[Header]): Self = StObject.set(x, "urlBlocks", value.asInstanceOf[js.Any])
     
-    inline def setUrlBlocksVarargs(value: Header*): Self = StObject.set(x, "urlBlocks", js.Array(value :_*))
+    inline def setUrlBlocksVarargs(value: Header*): Self = StObject.set(x, "urlBlocks", js.Array(value*))
   }
 }

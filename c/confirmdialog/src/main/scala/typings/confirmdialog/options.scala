@@ -35,17 +35,17 @@ object options {
     
     var autoClose: js.UndefOr[String] = js.undefined
     
-    var backgroundDismiss: js.UndefOr[js.Any] = js.undefined
+    var backgroundDismiss: js.UndefOr[Any] = js.undefined
     
     var backgroundDismissAnimation: js.UndefOr[String] = js.undefined
     
-    var bootstrapClasses: js.UndefOr[js.Any] = js.undefined
+    var bootstrapClasses: js.UndefOr[Any] = js.undefined
     
     var boxWidth: js.UndefOr[String] = js.undefined
     
-    var buttons: js.UndefOr[js.Any] = js.undefined
+    var buttons: js.UndefOr[Any] = js.undefined
     
-    var closeIcon: js.UndefOr[js.Any] = js.undefined
+    var closeIcon: js.UndefOr[Any] = js.undefined
     
     var closeIconClass: js.UndefOr[String] = js.undefined
     
@@ -53,7 +53,7 @@ object options {
     
     var containerFluid: js.UndefOr[Boolean] = js.undefined
     
-    var content: js.UndefOr[js.Any] = js.undefined
+    var content: js.UndefOr[Any] = js.undefined
     
     var contentLoaded: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -73,7 +73,7 @@ object options {
     
     var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onContentReady: js.UndefOr[js.Any] = js.undefined
+    var onContentReady: js.UndefOr[Any] = js.undefined
     
     var onDestroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -102,7 +102,7 @@ object options {
       
       inline def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
       
-      inline def setBackgroundDismiss(value: js.Any): Self = StObject.set(x, "backgroundDismiss", value.asInstanceOf[js.Any])
+      inline def setBackgroundDismiss(value: Any): Self = StObject.set(x, "backgroundDismiss", value.asInstanceOf[js.Any])
       
       inline def setBackgroundDismissAnimation(value: String): Self = StObject.set(x, "backgroundDismissAnimation", value.asInstanceOf[js.Any])
       
@@ -110,7 +110,7 @@ object options {
       
       inline def setBackgroundDismissUndefined: Self = StObject.set(x, "backgroundDismiss", js.undefined)
       
-      inline def setBootstrapClasses(value: js.Any): Self = StObject.set(x, "bootstrapClasses", value.asInstanceOf[js.Any])
+      inline def setBootstrapClasses(value: Any): Self = StObject.set(x, "bootstrapClasses", value.asInstanceOf[js.Any])
       
       inline def setBootstrapClassesUndefined: Self = StObject.set(x, "bootstrapClasses", js.undefined)
       
@@ -118,11 +118,11 @@ object options {
       
       inline def setBoxWidthUndefined: Self = StObject.set(x, "boxWidth", js.undefined)
       
-      inline def setButtons(value: js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
       inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      inline def setCloseIcon(value: js.Any): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      inline def setCloseIcon(value: Any): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
       
       inline def setCloseIconClass(value: String): Self = StObject.set(x, "closeIconClass", value.asInstanceOf[js.Any])
       
@@ -138,7 +138,7 @@ object options {
       
       inline def setContainerFluidUndefined: Self = StObject.set(x, "containerFluid", js.undefined)
       
-      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentLoaded(value: () => Unit): Self = StObject.set(x, "contentLoaded", js.Any.fromFunction0(value))
       
@@ -178,7 +178,7 @@ object options {
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      inline def setOnContentReady(value: js.Any): Self = StObject.set(x, "onContentReady", value.asInstanceOf[js.Any])
+      inline def setOnContentReady(value: Any): Self = StObject.set(x, "onContentReady", value.asInstanceOf[js.Any])
       
       inline def setOnContentReadyUndefined: Self = StObject.set(x, "onContentReady", js.undefined)
       

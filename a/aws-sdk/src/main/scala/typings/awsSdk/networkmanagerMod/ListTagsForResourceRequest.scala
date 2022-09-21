@@ -9,17 +9,17 @@ trait ListTagsForResourceRequest extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var ResourceArn: ResourceARN
+  var ResourceArn: typings.awsSdk.networkmanagerMod.ResourceArn
 }
 object ListTagsForResourceRequest {
   
-  inline def apply(ResourceArn: ResourceARN): ListTagsForResourceRequest = {
+  inline def apply(ResourceArn: ResourceArn): ListTagsForResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForResourceRequest]
   }
   
   extension [Self <: ListTagsForResourceRequest](x: Self) {
     
-    inline def setResourceArn(value: ResourceARN): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

@@ -22,7 +22,7 @@ trait XTransferDataAccess
     * @param aFlavorList The sequence of requested {@link DataFlavor} . An unsupported {@link DataFlavor} will be ignored.
     * @returns The data in the requested {@link DataFlavor} . For unsupported {@link DataFlavor} an empty any will be returned.
     */
-  def getData(aFlavorList: SeqEquiv[DataFlavor]): SafeArray[js.Any]
+  def getData(aFlavorList: SeqEquiv[DataFlavor]): SafeArray[Any]
   
   /**
     * To query for the summarized data size in bytes of a sequence of {@link DataFlavor} .
@@ -35,9 +35,9 @@ object XTransferDataAccess {
   
   inline def apply(
     acquire: () => Unit,
-    getData: SeqEquiv[DataFlavor] => SafeArray[js.Any],
+    getData: SeqEquiv[DataFlavor] => SafeArray[Any],
     queryDataSize: SeqEquiv[DataFlavor] => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTransferDataAccess = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getData = js.Any.fromFunction1(getData), queryDataSize = js.Any.fromFunction1(queryDataSize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -46,7 +46,7 @@ object XTransferDataAccess {
   
   extension [Self <: XTransferDataAccess](x: Self) {
     
-    inline def setGetData(value: SeqEquiv[DataFlavor] => SafeArray[js.Any]): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+    inline def setGetData(value: SeqEquiv[DataFlavor] => SafeArray[Any]): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     
     inline def setQueryDataSize(value: SeqEquiv[DataFlavor] => Double): Self = StObject.set(x, "queryDataSize", js.Any.fromFunction1(value))
   }

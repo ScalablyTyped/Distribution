@@ -33,6 +33,6 @@ object ListTaskDefinitionsResponse {
     
     inline def setTaskDefinitionArnsUndefined: Self = StObject.set(x, "taskDefinitionArns", js.undefined)
     
-    inline def setTaskDefinitionArnsVarargs(value: String*): Self = StObject.set(x, "taskDefinitionArns", js.Array(value :_*))
+    inline def setTaskDefinitionArnsVarargs(value: String*): Self = StObject.set(x, "taskDefinitionArns", js.Array(value*))
   }
 }

@@ -10,12 +10,12 @@ object streamRepeatStreamMod {
   
   @JSImport("wonder-frp/dist/es2015/stream/RepeatStream", "RepeatStream")
   @js.native
-  class RepeatStream protected () extends BaseStream {
+  open class RepeatStream protected () extends BaseStream {
     def this(source: Stream, count: Double) = this()
     
-    /* private */ var _count: js.Any = js.native
+    /* private */ var _count: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
   }
   /* static members */
   object RepeatStream {

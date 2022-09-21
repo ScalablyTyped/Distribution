@@ -42,6 +42,6 @@ object GetServersRequest {
     
     inline def setVmServerAddressListUndefined: Self = StObject.set(x, "vmServerAddressList", js.undefined)
     
-    inline def setVmServerAddressListVarargs(value: VmServerAddress*): Self = StObject.set(x, "vmServerAddressList", js.Array(value :_*))
+    inline def setVmServerAddressListVarargs(value: VmServerAddress*): Self = StObject.set(x, "vmServerAddressList", js.Array(value*))
   }
 }

@@ -11,7 +11,7 @@ trait Recognizer extends StObject {
   
   def canRecognizeWith(otherRecognizer: Recognizer): Boolean = js.native
   
-  var defaults: js.Any = js.native
+  var defaults: Any = js.native
   
   def dropRecognizeWith(otherRecognizer: String): Recognizer = js.native
   def dropRecognizeWith(otherRecognizer: js.Array[Recognizer]): Recognizer = js.native
@@ -23,7 +23,7 @@ trait Recognizer extends StObject {
   
   def emit(input: HammerInput): Unit = js.native
   
-  def getTouchAction(): js.Array[js.Any] = js.native
+  def getTouchAction(): js.Array[Any] = js.native
   
   def hasRequireFailures(): Boolean = js.native
   

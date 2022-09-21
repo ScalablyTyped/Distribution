@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImportPlaybackKeyPairRequest extends StObject {
   
   /**
-    * An arbitrary string (a nickname) assigned to a playback key pair that helps the customer identify that resource. The value does not need to be unique.
+    * Playback-key-pair name. The value does not need to be unique.
     */
   var name: js.UndefOr[PlaybackKeyPairName] = js.undefined
   
@@ -17,7 +17,7 @@ trait ImportPlaybackKeyPairRequest extends StObject {
   var publicKeyMaterial: PlaybackPublicKeyMaterial
   
   /**
-    * Any tags provided with the request are added to the playback key pair tags.
+    * Any tags provided with the request are added to the playback key pair tags. See Tagging Amazon Web Services Resources for more information, including restrictions that apply to tags and "Tag naming limits and requirements"; Amazon IVS has no service-specific constraints beyond what is documented there.
     */
   var tags: js.UndefOr[Tags] = js.undefined
 }

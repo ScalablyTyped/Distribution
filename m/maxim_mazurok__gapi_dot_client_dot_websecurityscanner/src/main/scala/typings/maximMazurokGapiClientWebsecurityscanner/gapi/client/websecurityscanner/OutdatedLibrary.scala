@@ -28,7 +28,7 @@ object OutdatedLibrary {
     
     inline def setLearnMoreUrlsUndefined: Self = StObject.set(x, "learnMoreUrls", js.undefined)
     
-    inline def setLearnMoreUrlsVarargs(value: String*): Self = StObject.set(x, "learnMoreUrls", js.Array(value :_*))
+    inline def setLearnMoreUrlsVarargs(value: String*): Self = StObject.set(x, "learnMoreUrls", js.Array(value*))
     
     inline def setLibraryName(value: String): Self = StObject.set(x, "libraryName", value.asInstanceOf[js.Any])
     

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LodashAfter extends StObject {
   
   def apply(func: __, n: Double): LodashAfter1x2 = js.native
-  def apply[TFunc /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: TFunc): LodashAfter1x1[TFunc] = js.native
-  def apply[TFunc /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: TFunc, n: Double): TFunc = js.native
+  def apply[TFunc /* <: js.Function1[/* repeated */ Any, Any] */](func: TFunc): LodashAfter1x1[TFunc] = js.native
+  def apply[TFunc /* <: js.Function1[/* repeated */ Any, Any] */](func: TFunc, n: Double): TFunc = js.native
 }

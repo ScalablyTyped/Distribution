@@ -1,7 +1,6 @@
 package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
-import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,7 +33,7 @@ trait DatePicker extends StObject {
   /**
     * Gets or sets the current date of the DatePicker. You can use either a date string or a Date object to set this property.
     **/
-  var current: Date = js.native
+  var current: js.Date = js.native
   
   /**
     * Gets or sets the display pattern for the date. The default date pattern is day.integer(2). You can change the date pattern by changing the number of integers displayed.
@@ -52,7 +51,7 @@ trait DatePicker extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Releases resources held by this DatePicker. Call this method when the DatePicker is no longer needed. After calling this method, the DatePicker becomes unusable.
@@ -85,7 +84,7 @@ trait DatePicker extends StObject {
     * Occurs when any of the controls are changed by the user.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onchange(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onchange(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Removes a listener for the specified event.
@@ -94,7 +93,7 @@ trait DatePicker extends StObject {
     * @param useCapture Optional. The same value that was passed to addEventListener for this listener. It may be omitted if it was omitted when calling addEventListener.
     **/
   def removeEventListener(`type`: String, listener: js.Function): Unit = js.native
-  def removeEventListener(`type`: String, listener: js.Function, useCapture: js.Any): Unit = js.native
+  def removeEventListener(`type`: String, listener: js.Function, useCapture: Any): Unit = js.native
   
   /**
     * Gets or sets the display pattern for the year. The default year pattern is year.full. You can change the year pattern to the following values: year.abbreviated(n). You can use abbreviated with or without specifying the number of letters in the abbreviation.

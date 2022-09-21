@@ -1,29 +1,23 @@
 package typings.xstate.anon
 
-import typings.xstate.typesMod.ActionTypes.NullEvent
-import typings.xstate.typesMod.EventObject
 import typings.xstate.xstateStrings.Asterisk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `4`[TEvent /* <: EventObject */] extends StObject {
+trait `4` extends StObject {
   
-  var event: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk
+  var event: Asterisk
 }
 object `4` {
   
-  inline def apply[TEvent /* <: EventObject */](
-    event: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk
-  ): `4`[TEvent] = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`4`[TEvent]]
+  inline def apply(): `4` = {
+    val __obj = js.Dynamic.literal(event = "*")
+    __obj.asInstanceOf[`4`]
   }
   
-  extension [Self <: `4`[?], TEvent /* <: EventObject */](x: Self & `4`[TEvent]) {
+  extension [Self <: `4`](x: Self) {
     
-    inline def setEvent(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk
-    ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Asterisk): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }
 }

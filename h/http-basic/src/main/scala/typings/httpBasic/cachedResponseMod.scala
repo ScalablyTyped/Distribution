@@ -1,7 +1,7 @@
 package typings.httpBasic
 
 import typings.httpBasic.headersMod.Headers
-import typings.node.NodeJS.ReadableStream
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ object cachedResponseMod {
   
   trait CachedResponse extends StObject {
     
-    var body: ReadableStream
+    var body: ReadableStream[Any]
     
     var headers: Headers
     
@@ -23,7 +23,7 @@ object cachedResponseMod {
   object CachedResponse {
     
     inline def apply(
-      body: ReadableStream,
+      body: ReadableStream[Any],
       headers: Headers,
       requestHeaders: Headers,
       requestTimestamp: Double,
@@ -35,7 +35,7 @@ object cachedResponseMod {
     
     extension [Self <: CachedResponse](x: Self) {
       
-      inline def setBody(value: ReadableStream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: ReadableStream[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/// https://novadocs.panic.com/api-reference/text-editor/
+/// https://docs.nova.app/api-reference/text-editor/
 @js.native
 trait TextEditor extends StObject {
   
@@ -13,7 +13,7 @@ trait TextEditor extends StObject {
   val document: TextDocument = js.native
   
   def edit(callback: js.Function1[/* edit */ TextEditorEdit, Unit]): js.Promise[Unit] = js.native
-  def edit(callback: js.Function1[/* edit */ TextEditorEdit, Unit], options: js.Any): js.Promise[Unit] = js.native
+  def edit(callback: js.Function1[/* edit */ TextEditorEdit, Unit], options: Any): js.Promise[Unit] = js.native
   
   def getLineRangeForRange(range: Range): Range = js.native
   
@@ -32,9 +32,9 @@ trait TextEditor extends StObject {
   
   def onDidStopChanging(callback: js.Function1[/* textEditor */ this.type, Unit]): Disposable = js.native
   
-  def onWillSave(callback: js.Function1[/* textEditor */ this.type, Unit]): Disposable = js.native
+  def onWillSave(callback: js.Function1[/* textEditor */ this.type, Unit | js.Promise[Unit]]): Disposable = js.native
   
-  def save(): Unit = js.native
+  def save(): js.Promise[Unit] = js.native
   
   def scrollToCursorPosition(): Unit = js.native
   

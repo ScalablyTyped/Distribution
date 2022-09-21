@@ -56,7 +56,7 @@ trait XPackageManager
     * @param mediaType media-type of package, empty string if to be detected
     * @param xAbortChannel abort channel to asynchronously abort the adding process, or null
     * @param xCmdEnv command environment for error and progress handling
-    * @returns {@link XPackage} handle
+    * @returns handle
     */
   def addPackage(
     url: String,
@@ -91,7 +91,7 @@ trait XPackageManager
     * @param identifier package identifier
     * @param fileName package file name
     * @param xCmdEnv command environment for error and progress handling
-    * @returns {@link XPackage} handle
+    * @returns handle
     */
   def getDeployedPackage(identifier: String, fileName: String, xCmdEnv: XCommandEnvironment): XPackage
   
@@ -127,7 +127,7 @@ trait XPackageManager
     * @param extension
     * @param xAbortChannel abort channel to asynchronously abort the adding process, or null
     * @param xCmdEnv command environment for error and progress handling
-    * @returns {@link XPackage} handle
+    * @returns handle
     */
   def importExtension(`extension`: XPackage, xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): XPackage
   
@@ -190,7 +190,7 @@ object XPackageManager {
     getSupportedPackageTypes: () => SafeArray[XPackageTypeInfo],
     importExtension: (XPackage, XAbortChannel, XCommandEnvironment) => XPackage,
     isReadOnly: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     reinstallDeployedPackages: (Boolean, XAbortChannel, XCommandEnvironment) => Unit,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,

@@ -6,6 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("ci-info", "APPCENTER")
+  @js.native
+  val APPCENTER: Boolean = js.native
+  
+  @JSImport("ci-info", "APPCIRCLE")
+  @js.native
+  val APPCIRCLE: Boolean = js.native
+  
   @JSImport("ci-info", "APPVEYOR")
   @js.native
   val APPVEYOR: Boolean = js.native
@@ -46,6 +54,14 @@ object mod {
   @js.native
   val CODEBUILD: Boolean = js.native
   
+  @JSImport("ci-info", "CODEFRESH")
+  @js.native
+  val CODEFRESH: Boolean = js.native
+  
+  @JSImport("ci-info", "CODEMAGIC")
+  @js.native
+  val CODEMAGIC: Boolean = js.native
+  
   @JSImport("ci-info", "CODESHIP")
   @js.native
   val CODESHIP: Boolean = js.native
@@ -57,6 +73,14 @@ object mod {
   @JSImport("ci-info", "DSARI")
   @js.native
   val DSARI: Boolean = js.native
+  
+  @JSImport("ci-info", "EAS")
+  @js.native
+  val EAS: Boolean = js.native
+  
+  @JSImport("ci-info", "GITHUB_ACTIONS")
+  @js.native
+  val GITHUB_ACTIONS: Boolean = js.native
   
   @JSImport("ci-info", "GITLAB")
   @js.native
@@ -74,6 +98,10 @@ object mod {
   @js.native
   val JENKINS: Boolean = js.native
   
+  @JSImport("ci-info", "LAYERCI")
+  @js.native
+  val LAYERCI: Boolean = js.native
+  
   @JSImport("ci-info", "MAGNUM")
   @js.native
   val MAGNUM: Boolean = js.native
@@ -82,9 +110,21 @@ object mod {
   @js.native
   val NETLIFY: Boolean = js.native
   
+  @JSImport("ci-info", "NEVERCODE")
+  @js.native
+  val NEVERCODE: Boolean = js.native
+  
+  @JSImport("ci-info", "RENDER")
+  @js.native
+  val RENDER: Boolean = js.native
+  
   @JSImport("ci-info", "SAIL")
   @js.native
   val SAIL: Boolean = js.native
+  
+  @JSImport("ci-info", "SCREWDRIVER")
+  @js.native
+  val SCREWDRIVER: Boolean = js.native
   
   @JSImport("ci-info", "SEMAPHORE")
   @js.native
@@ -113,6 +153,18 @@ object mod {
   @JSImport("ci-info", "TRAVIS")
   @js.native
   val TRAVIS: Boolean = js.native
+  
+  @JSImport("ci-info", "VERCEL")
+  @js.native
+  val VERCEL: Boolean = js.native
+  
+  @JSImport("ci-info", "XCODE_CLOUD")
+  @js.native
+  val XCODE_CLOUD: Boolean = js.native
+  
+  @JSImport("ci-info", "XCODE_SERVER")
+  @js.native
+  val XCODE_SERVER: Boolean = js.native
   
   @JSImport("ci-info", "isCI")
   @js.native

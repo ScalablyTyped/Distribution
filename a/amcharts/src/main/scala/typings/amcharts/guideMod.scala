@@ -1,6 +1,5 @@
 package typings.amcharts
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object guideMod {
   
   @JSImport("amcharts/Guide", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Guide {
     
@@ -59,7 +58,7 @@ object guideMod {
       * Date of the guide (in case the guide is for category axis and parseDates is set to true).
       */
     /* CompleteClass */
-    var date: Date = js.native
+    var date: js.Date = js.native
     
     /**
       * Works if a guide is added to CategoryAxis and this axis is non-date-based.
@@ -159,7 +158,7 @@ object guideMod {
       * If you have both date and toDate, the space between these two dates can be filled with color.
       */
     /* CompleteClass */
-    var toDate: Date = js.native
+    var toDate: js.Date = js.native
     
     /**
       * To value of the guide (in case the guide is for value axis).
@@ -221,7 +220,7 @@ object guideMod {
     /**
       * Date of the guide (in case the guide is for category axis and parseDates is set to true).
       */
-    var date: Date
+    var date: js.Date
     
     /**
       * Works if a guide is added to CategoryAxis and this axis is non-date-based.
@@ -305,7 +304,7 @@ object guideMod {
       * To date of the guide (in case the guide is for category axis and parseDates is set to true).
       * If you have both date and toDate, the space between these two dates can be filled with color.
       */
-    var toDate: Date
+    var toDate: js.Date
     
     /**
       * To value of the guide (in case the guide is for value axis).
@@ -333,7 +332,7 @@ object guideMod {
       boldLabel: Boolean,
       category: String,
       dashLength: Double,
-      date: Date,
+      date: js.Date,
       expand: Boolean,
       fillAlpha: Double,
       fillColor: String,
@@ -349,7 +348,7 @@ object guideMod {
       tickLength: Double,
       toAngle: Double,
       toCategory: String,
-      toDate: Date,
+      toDate: js.Date,
       toValue: Double,
       value: Double,
       valueAxis: typings.amcharts.valueAxisMod.default
@@ -374,7 +373,7 @@ object guideMod {
       
       inline def setDashLength(value: Double): Self = StObject.set(x, "dashLength", value.asInstanceOf[js.Any])
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
@@ -406,7 +405,7 @@ object guideMod {
       
       inline def setToCategory(value: String): Self = StObject.set(x, "toCategory", value.asInstanceOf[js.Any])
       
-      inline def setToDate(value: Date): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
+      inline def setToDate(value: js.Date): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
       
       inline def setToValue(value: Double): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
       

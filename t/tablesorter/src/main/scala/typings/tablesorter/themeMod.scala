@@ -8,7 +8,7 @@ object themeMod {
   
   @JSImport("tablesorter/Design/Theme", "Theme")
   @js.native
-  class Theme () extends StObject {
+  open class Theme () extends StObject {
     
     /**
       * A set of classes to apply to cells inside the active column.

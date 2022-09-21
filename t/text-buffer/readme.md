@@ -10,10 +10,10 @@ A container for large mutable strings with annotated regions
 | ------------------ | :-------------: |
 | Full name          | text-buffer |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 8 |
-| # downloads        | 52695 |
-| # stars            | 1 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 7461.666666666667 |
+| # stars            | 142.0 |
 
 ## Links
 - [Homepage](https://github.com/atom/text-buffer#readme)

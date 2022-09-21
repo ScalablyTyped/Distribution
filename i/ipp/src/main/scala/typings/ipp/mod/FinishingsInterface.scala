@@ -67,7 +67,7 @@ object FinishingsInterface {
     
     inline def setFoldingUndefined: Self = StObject.set(x, "folding", js.undefined)
     
-    inline def setFoldingVarargs(value: FinishingFolding*): Self = StObject.set(x, "folding", js.Array(value :_*))
+    inline def setFoldingVarargs(value: FinishingFolding*): Self = StObject.set(x, "folding", js.Array(value*))
     
     inline def `setImposition-template`(value: ImpositionTemplate): Self = StObject.set(x, "imposition-template", value.asInstanceOf[js.Any])
     
@@ -101,6 +101,6 @@ object FinishingsInterface {
     
     inline def setTrimmingUndefined: Self = StObject.set(x, "trimming", js.undefined)
     
-    inline def setTrimmingVarargs(value: FinishingTrimming*): Self = StObject.set(x, "trimming", js.Array(value :_*))
+    inline def setTrimmingVarargs(value: FinishingTrimming*): Self = StObject.set(x, "trimming", js.Array(value*))
   }
 }

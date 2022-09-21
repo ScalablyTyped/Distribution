@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `24`[T] extends StObject {
   
-  def failure(entry: KiiServerCodeEntry, argument: T, execResult: KiiServerCodeExecResult, anErrorString: String): js.Any
+  def failure(entry: KiiServerCodeEntry, argument: T, execResult: KiiServerCodeExecResult, anErrorString: String): Any
   
-  def success(entry: KiiServerCodeEntry, argument: T, execResult: KiiServerCodeExecResult): js.Any
+  def success(entry: KiiServerCodeEntry, argument: T, execResult: KiiServerCodeExecResult): Any
 }
 object `24` {
   
   inline def apply[T](
-    failure: (KiiServerCodeEntry, T, KiiServerCodeExecResult, String) => js.Any,
-    success: (KiiServerCodeEntry, T, KiiServerCodeExecResult) => js.Any
+    failure: (KiiServerCodeEntry, T, KiiServerCodeExecResult, String) => Any,
+    success: (KiiServerCodeEntry, T, KiiServerCodeExecResult) => Any
   ): `24`[T] = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction4(failure), success = js.Any.fromFunction3(success))
     __obj.asInstanceOf[`24`[T]]
@@ -24,8 +24,8 @@ object `24` {
   
   extension [Self <: `24`[?], T](x: Self & `24`[T]) {
     
-    inline def setFailure(value: (KiiServerCodeEntry, T, KiiServerCodeExecResult, String) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction4(value))
+    inline def setFailure(value: (KiiServerCodeEntry, T, KiiServerCodeExecResult, String) => Any): Self = StObject.set(x, "failure", js.Any.fromFunction4(value))
     
-    inline def setSuccess(value: (KiiServerCodeEntry, T, KiiServerCodeExecResult) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+    inline def setSuccess(value: (KiiServerCodeEntry, T, KiiServerCodeExecResult) => Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
   }
 }

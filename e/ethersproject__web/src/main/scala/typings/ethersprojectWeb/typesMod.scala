@@ -1,7 +1,7 @@
 package typings.ethersprojectWeb
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Uint8Array
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ object typesMod {
   
   trait GetUrlResponse extends StObject {
     
-    var body: Uint8Array
+    var body: js.typedarray.Uint8Array
     
     var headers: StringDictionary[String]
     
@@ -20,14 +20,19 @@ object typesMod {
   }
   object GetUrlResponse {
     
-    inline def apply(body: Uint8Array, headers: StringDictionary[String], statusCode: Double, statusMessage: String): GetUrlResponse = {
+    inline def apply(
+      body: js.typedarray.Uint8Array,
+      headers: StringDictionary[String],
+      statusCode: Double,
+      statusMessage: String
+    ): GetUrlResponse = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetUrlResponse]
     }
     
     extension [Self <: GetUrlResponse](x: Self) {
       
-      inline def setBody(value: Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.typedarray.Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -41,11 +46,15 @@ object typesMod {
     
     var allowGzip: js.UndefOr[Boolean] = js.undefined
     
-    var body: js.UndefOr[Uint8Array] = js.undefined
+    var body: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
+    
+    var fetchOptions: js.UndefOr[Record[String, String]] = js.undefined
     
     var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
     var method: js.UndefOr[String] = js.undefined
+    
+    var skipFetchSetup: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -60,9 +69,13 @@ object typesMod {
       
       inline def setAllowGzipUndefined: Self = StObject.set(x, "allowGzip", js.undefined)
       
-      inline def setBody(value: Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.typedarray.Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      
+      inline def setFetchOptions(value: Record[String, String]): Self = StObject.set(x, "fetchOptions", value.asInstanceOf[js.Any])
+      
+      inline def setFetchOptionsUndefined: Self = StObject.set(x, "fetchOptions", js.undefined)
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -71,6 +84,10 @@ object typesMod {
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      
+      inline def setSkipFetchSetup(value: Boolean): Self = StObject.set(x, "skipFetchSetup", value.asInstanceOf[js.Any])
+      
+      inline def setSkipFetchSetupUndefined: Self = StObject.set(x, "skipFetchSetup", js.undefined)
     }
   }
 }

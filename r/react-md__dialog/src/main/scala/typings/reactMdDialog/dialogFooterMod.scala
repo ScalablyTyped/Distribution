@@ -3,12 +3,6 @@ package typings.reactMdDialog
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.RefAttributes
-import typings.reactMdDialog.reactMdDialogStrings.`stacked-end`
-import typings.reactMdDialog.reactMdDialogStrings.`stacked-start`
-import typings.reactMdDialog.reactMdDialogStrings.between
-import typings.reactMdDialog.reactMdDialogStrings.end
-import typings.reactMdDialog.reactMdDialogStrings.none
-import typings.reactMdDialog.reactMdDialogStrings.start
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,16 +14,36 @@ object dialogFooterMod {
   @js.native
   val DialogFooter: ForwardRefExoticComponent[DialogFooterProps & RefAttributes[HTMLDivElement]] = js.native
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactMdDialog.reactMdDialogStrings.none
+    - typings.reactMdDialog.reactMdDialogStrings.start
+    - typings.reactMdDialog.reactMdDialogStrings.end
+    - typings.reactMdDialog.reactMdDialogStrings.between
+    - typings.reactMdDialog.reactMdDialogStrings.`stacked-start`
+    - typings.reactMdDialog.reactMdDialogStrings.`stacked-end`
+  */
+  trait DialogFooterAlignment extends StObject
+  object DialogFooterAlignment {
+    
+    inline def between: typings.reactMdDialog.reactMdDialogStrings.between = "between".asInstanceOf[typings.reactMdDialog.reactMdDialogStrings.between]
+    
+    inline def end: typings.reactMdDialog.reactMdDialogStrings.end = "end".asInstanceOf[typings.reactMdDialog.reactMdDialogStrings.end]
+    
+    inline def none: typings.reactMdDialog.reactMdDialogStrings.none = "none".asInstanceOf[typings.reactMdDialog.reactMdDialogStrings.none]
+    
+    inline def `stacked-end`: typings.reactMdDialog.reactMdDialogStrings.`stacked-end` = "stacked-end".asInstanceOf[typings.reactMdDialog.reactMdDialogStrings.`stacked-end`]
+    
+    inline def `stacked-start`: typings.reactMdDialog.reactMdDialogStrings.`stacked-start` = "stacked-start".asInstanceOf[typings.reactMdDialog.reactMdDialogStrings.`stacked-start`]
+    
+    inline def start: typings.reactMdDialog.reactMdDialogStrings.start = "start".asInstanceOf[typings.reactMdDialog.reactMdDialogStrings.start]
+  }
+  
   trait DialogFooterProps
     extends StObject
        with HTMLAttributes[HTMLDivElement] {
     
-    /**
-      * An optional alignment for the content within the footer. Since the majority
-      * of dialog footers are used to contain action buttons, the default alignment
-      * is near the end.
-      */
-    var align: js.UndefOr[none | start | end | between | `stacked-start` | `stacked-end`] = js.undefined
+    /** {@inheritDoc DialogFooterAlignment} */
+    var align: js.UndefOr[DialogFooterAlignment] = js.undefined
   }
   object DialogFooterProps {
     
@@ -40,7 +54,7 @@ object dialogFooterMod {
     
     extension [Self <: DialogFooterProps](x: Self) {
       
-      inline def setAlign(value: none | start | end | between | `stacked-start` | `stacked-end`): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: DialogFooterAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     }

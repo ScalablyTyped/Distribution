@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.react.mod.SFC
 import typings.reactCssThemr.anon.MapThemrProps
 import typings.reactCssThemr.anon.Theme
 import typings.reactCssThemr.reactCssThemrBooleans.`false`
@@ -24,197 +23,100 @@ object mod {
   
   @JSImport("react-css-themr", "ThemeProvider")
   @js.native
-  class ThemeProvider protected ()
-    extends Component[ThemeProviderProps, js.Any, js.Any] {
+  open class ThemeProvider protected () extends Component[ThemeProviderProps, Any, Any] {
     def this(props: ThemeProviderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ThemeProviderProps, context: js.Any) = this()
+    def this(props: ThemeProviderProps, context: Any) = this()
   }
   
-  inline def themeable(themes: TReactCSSThemrTheme*): TReactCSSThemrTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("themeable")(themes.asInstanceOf[js.Any]).asInstanceOf[TReactCSSThemrTheme]
+  inline def themeable(themes: TReactCSSThemrTheme*): TReactCSSThemrTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("themeable")(themes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[TReactCSSThemrTheme]
   
   inline def themr(identifier: String): js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ]]
   inline def themr(identifier: String, defaultTheme: js.Object): js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ]]
   inline def themr(identifier: String, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ]]
   inline def themr(identifier: String, defaultTheme: Unit, options: IThemrOptions): js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ]]
   inline def themr(identifier: js.Symbol): js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ]]
   inline def themr(identifier: js.Symbol, defaultTheme: js.Object): js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ]]
   inline def themr(identifier: js.Symbol, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ]]
   inline def themr(identifier: js.Symbol, defaultTheme: Unit, options: IThemrOptions): js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ]]
   inline def themr(identifier: Double): js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ]]
   inline def themr(identifier: Double, defaultTheme: js.Object): js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ]]
   inline def themr(identifier: Double, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ]]
   inline def themr(identifier: Double, defaultTheme: Unit, options: IThemrOptions): js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ (Instantiable2[
-      /* props */ js.UndefOr[js.Any], 
-      /* context */ js.UndefOr[js.Any], 
-      Component[js.Any, js.Any, js.Any]
-    ]) | SFC[js.Any], 
-    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+    /* component */ (Instantiable2[/* props */ js.UndefOr[Any], /* context */ js.UndefOr[Any], Component[Any, Any, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any), 
+    ThemedComponentClass[Any & MapThemrProps[Any], Any]
   ]]
   
   trait IThemrOptions extends StObject {
@@ -281,7 +183,7 @@ object mod {
     }
   }
   
-  type ThemedComponent[P, S] = Component[P, S, js.Any]
+  type ThemedComponent[P, S] = Component[P, S, Any]
   
   @js.native
   trait ThemedComponentClass[P, S]

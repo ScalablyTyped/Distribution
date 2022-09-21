@@ -30,6 +30,9 @@ trait GoogleAppsCloudidentityDevicesV1Device extends StObject {
   /** Output only. When the Company-Owned device was imported. This field is empty for BYOD devices. */
   var createTime: js.UndefOr[String] = js.undefined
   
+  /** Unique identifier for the device. */
+  var deviceId: js.UndefOr[String] = js.undefined
+  
   /** Output only. Type of device. */
   var deviceType: js.UndefOr[String] = js.undefined
   
@@ -63,10 +66,7 @@ trait GoogleAppsCloudidentityDevicesV1Device extends StObject {
   /** Output only. Model name of device. Example: Pixel 3. */
   var model: js.UndefOr[String] = js.undefined
   
-  /**
-    * Output only. [Resource name](https://cloud.google.com/apis/design/resource_names) of the Device in format: `devices/{device_id}`, where device_id is the unique id assigned to the
-    * Device.
-    */
+  /** Output only. [Resource name](https://cloud.google.com/apis/design/resource_names) of the Device in format: `devices/{device}`, where device is the unique id assigned to the Device. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Output only. Mobile or network operator of device, if available. */
@@ -137,6 +137,10 @@ object GoogleAppsCloudidentityDevicesV1Device {
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    
     inline def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
     inline def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
@@ -197,7 +201,7 @@ object GoogleAppsCloudidentityDevicesV1Device {
     
     inline def setOtherAccountsUndefined: Self = StObject.set(x, "otherAccounts", js.undefined)
     
-    inline def setOtherAccountsVarargs(value: String*): Self = StObject.set(x, "otherAccounts", js.Array(value :_*))
+    inline def setOtherAccountsVarargs(value: String*): Self = StObject.set(x, "otherAccounts", js.Array(value*))
     
     inline def setOwnerType(value: String): Self = StObject.set(x, "ownerType", value.asInstanceOf[js.Any])
     
@@ -219,6 +223,6 @@ object GoogleAppsCloudidentityDevicesV1Device {
     
     inline def setWifiMacAddressesUndefined: Self = StObject.set(x, "wifiMacAddresses", js.undefined)
     
-    inline def setWifiMacAddressesVarargs(value: String*): Self = StObject.set(x, "wifiMacAddresses", js.Array(value :_*))
+    inline def setWifiMacAddressesVarargs(value: String*): Self = StObject.set(x, "wifiMacAddresses", js.Array(value*))
   }
 }

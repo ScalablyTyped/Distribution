@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuroraPostgreSqlParameters extends StObject {
   
   /**
-    * Database.
+    * The Amazon Aurora PostgreSQL database to connect to.
     */
   var Database: typings.awsSdk.quicksightMod.Database
   
   /**
-    * Host.
+    * The Amazon Aurora PostgreSQL-Compatible host to connect to.
     */
   var Host: typings.awsSdk.quicksightMod.Host
   
   /**
-    * Port.
+    * The port that Amazon Aurora PostgreSQL is listening on.
     */
   var Port: typings.awsSdk.quicksightMod.Port
 }

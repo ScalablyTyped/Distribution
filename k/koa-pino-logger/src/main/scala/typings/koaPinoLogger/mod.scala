@@ -2,6 +2,7 @@ package typings.koaPinoLogger
 
 import typings.pino.mod.DestinationStream
 import typings.pino.mod.Logger
+import typings.pino.mod.LoggerOptions
 import typings.pinoHttp.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,20 +21,20 @@ object mod {
   val ^ : js.Any = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compose.Middleware<ParameterizedContext<StateT, CustomT>> * / any */ trait Middleware extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compose.Middleware<ParameterizedContext<StateT, ContextT, ResponseBodyT>> * / any */ trait Middleware extends StObject {
     
-    var logger: Logger
+    var logger: Logger[LoggerOptions]
   }
   object Middleware {
     
-    inline def apply(logger: Logger): Middleware = {
+    inline def apply(logger: Logger[LoggerOptions]): Middleware = {
       val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any])
       __obj.asInstanceOf[Middleware]
     }
     
     extension [Self <: Middleware](x: Self) {
       
-      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger[LoggerOptions]): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,18 +43,18 @@ object mod {
     
     trait ExtendableContext extends StObject {
       
-      var log: Logger
+      var log: Logger[LoggerOptions]
     }
     object ExtendableContext {
       
-      inline def apply(log: Logger): ExtendableContext = {
+      inline def apply(log: Logger[LoggerOptions]): ExtendableContext = {
         val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
         __obj.asInstanceOf[ExtendableContext]
       }
       
       extension [Self <: ExtendableContext](x: Self) {
         
-        inline def setLog(value: Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+        inline def setLog(value: Logger[LoggerOptions]): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       }
     }
   }

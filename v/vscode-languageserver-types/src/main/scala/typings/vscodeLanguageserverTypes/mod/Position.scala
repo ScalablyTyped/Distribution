@@ -7,26 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Position extends StObject {
   
   /**
-    * Character offset on a line in a document (zero-based). Assuming that the line is
-    * represented as a string, the `character` value represents the gap between the
-    * `character` and `character + 1`.
+    * Character offset on a line in a document (zero-based).
+    *
+    * The meaning of this offset is determined by the negotiated
+    * `PositionEncodingKind`.
     *
     * If the character value is greater than the line length it defaults back to the
     * line length.
-    * If a line number is negative, it defaults to 0.
     */
-  var character: Double
+  var character: uinteger
   
   /**
     * Line position in a document (zero-based).
+    *
     * If a line number is greater than the number of lines in a document, it defaults back to the number of lines in the document.
     * If a line number is negative, it defaults to 0.
     */
-  var line: Double
+  var line: uinteger
 }
 object Position {
   
-  inline def apply(character: Double, line: Double): Position = {
+  inline def apply(character: uinteger, line: uinteger): Position = {
     val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
     __obj.asInstanceOf[Position]
   }
@@ -40,17 +41,17 @@ object Position {
     * @param line The position's line.
     * @param character The position's character.
     */
-  inline def create(line: Double, character: Double): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(line.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Position]
+  inline def create(line: uinteger, character: uinteger): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(line.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Position]
   
   /**
-    * Checks whether the given liternal conforms to the [Position](#Position) interface.
+    * Checks whether the given literal conforms to the [Position](#Position) interface.
     */
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean]
   
   extension [Self <: Position](x: Self) {
     
-    inline def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+    inline def setCharacter(value: uinteger): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
     
-    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: uinteger): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
   }
 }

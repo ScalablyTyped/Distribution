@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html)
   */
-class WidgetCls ()
+open class WidgetCls ()
   extends StObject
      with typings.arcgisJsApi.esri.Widget_ {
   def this(properties: WidgetProperties) = this()

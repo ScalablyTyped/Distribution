@@ -40,25 +40,25 @@ object ZypperSettings {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     
     inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
     
-    inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+    inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value*))
     
     inline def setExclusivePatches(value: js.Array[String]): Self = StObject.set(x, "exclusivePatches", value.asInstanceOf[js.Any])
     
     inline def setExclusivePatchesUndefined: Self = StObject.set(x, "exclusivePatches", js.undefined)
     
-    inline def setExclusivePatchesVarargs(value: String*): Self = StObject.set(x, "exclusivePatches", js.Array(value :_*))
+    inline def setExclusivePatchesVarargs(value: String*): Self = StObject.set(x, "exclusivePatches", js.Array(value*))
     
     inline def setSeverities(value: js.Array[String]): Self = StObject.set(x, "severities", value.asInstanceOf[js.Any])
     
     inline def setSeveritiesUndefined: Self = StObject.set(x, "severities", js.undefined)
     
-    inline def setSeveritiesVarargs(value: String*): Self = StObject.set(x, "severities", js.Array(value :_*))
+    inline def setSeveritiesVarargs(value: String*): Self = StObject.set(x, "severities", js.Array(value*))
     
     inline def setWithOptional(value: Boolean): Self = StObject.set(x, "withOptional", value.asInstanceOf[js.Any])
     

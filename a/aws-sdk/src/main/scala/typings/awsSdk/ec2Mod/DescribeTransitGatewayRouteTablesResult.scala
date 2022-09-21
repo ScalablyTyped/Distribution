@@ -33,6 +33,6 @@ object DescribeTransitGatewayRouteTablesResult {
     
     inline def setTransitGatewayRouteTablesUndefined: Self = StObject.set(x, "TransitGatewayRouteTables", js.undefined)
     
-    inline def setTransitGatewayRouteTablesVarargs(value: TransitGatewayRouteTable*): Self = StObject.set(x, "TransitGatewayRouteTables", js.Array(value :_*))
+    inline def setTransitGatewayRouteTablesVarargs(value: TransitGatewayRouteTable*): Self = StObject.set(x, "TransitGatewayRouteTables", js.Array(value*))
   }
 }

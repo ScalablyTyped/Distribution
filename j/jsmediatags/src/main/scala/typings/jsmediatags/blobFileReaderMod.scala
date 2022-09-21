@@ -9,7 +9,7 @@ object blobFileReaderMod {
   
   @JSImport("jsmediatags/build2/BlobFileReader", JSImport.Default)
   @js.native
-  class default protected () extends BlobFileReader {
+  open class default protected () extends BlobFileReader {
     def this(blob: Blob) = this()
   }
   /* static members */
@@ -19,7 +19,7 @@ object blobFileReaderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def canReadFile(file: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def canReadFile(file: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @js.native

@@ -33,6 +33,6 @@ object EvaluationResult {
     
     inline def setTestWindowsUndefined: Self = StObject.set(x, "TestWindows", js.undefined)
     
-    inline def setTestWindowsVarargs(value: WindowSummary*): Self = StObject.set(x, "TestWindows", js.Array(value :_*))
+    inline def setTestWindowsVarargs(value: WindowSummary*): Self = StObject.set(x, "TestWindows", js.Array(value*))
   }
 }

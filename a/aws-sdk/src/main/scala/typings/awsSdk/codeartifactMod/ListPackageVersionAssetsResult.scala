@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListPackageVersionAssetsResult extends StObject {
   
   /**
-    *  The name of the package that contains the returned package version assets. 
+    *  The name of the package that contains the requested package version assets. 
     */
   @JSName("package")
   var _package: js.UndefOr[PackageName] = js.undefined
   
   /**
-    *  The returned list of  AssetSummary  objects. 
+    *  The returned list of AssetSummary objects. 
     */
   var assets: js.UndefOr[AssetSummaryList] = js.undefined
   
   /**
-    *  The format of the package that contains the returned package version assets. 
+    *  The format of the package that contains the requested package version assets. 
     */
   var format: js.UndefOr[PackageFormat] = js.undefined
   
   /**
-    *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
+    * The namespace of the package version that contains the requested package version assets. The package version component that specifies its namespace depends on its type. For example:    The namespace of a Maven package version is its groupId.     The namespace of an npm package version is its scope.     Python and NuGet package versions do not contain a corresponding component, package versions of those formats do not have a namespace.   
     */
   var namespace: js.UndefOr[PackageNamespace] = js.undefined
   
@@ -33,7 +33,7 @@ trait ListPackageVersionAssetsResult extends StObject {
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    *  The version of the package associated with the returned assets. 
+    *  The version of the package associated with the requested assets. 
     */
   var version: js.UndefOr[PackageVersion] = js.undefined
   
@@ -55,7 +55,7 @@ object ListPackageVersionAssetsResult {
     
     inline def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
     
-    inline def setAssetsVarargs(value: AssetSummary*): Self = StObject.set(x, "assets", js.Array(value :_*))
+    inline def setAssetsVarargs(value: AssetSummary*): Self = StObject.set(x, "assets", js.Array(value*))
     
     inline def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

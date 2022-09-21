@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def dynatree(): DynaTree = js.native
-  def dynatree(option: String, rest: js.Any*): js.Any = js.native
-  def dynatree(option: Unit, rest: js.Any*): js.Any = js.native
+  def dynatree(option: String, rest: Any*): Any = js.native
+  def dynatree(option: Unit, rest: Any*): Any = js.native
   def dynatree(options: DynatreeOptions): DynaTree = js.native
 }

@@ -21,6 +21,6 @@ object LineData {
     
     inline def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
     
-    inline def setDataSetsVarargs(value: LineDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
+    inline def setDataSetsVarargs(value: LineDataset*): Self = StObject.set(x, "dataSets", js.Array(value*))
   }
 }

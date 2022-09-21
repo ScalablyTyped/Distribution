@@ -10,13 +10,15 @@ abstract class Query () extends StObject {
   
   var descendants: Boolean = js.native
   
+  var emitDistinctChangesOnly: Boolean = js.native
+  
   var first: Boolean = js.native
   
   var isViewQuery: Boolean = js.native
   
-  var read: js.Any = js.native
+  var read: Any = js.native
   
-  var selector: js.Any = js.native
+  var selector: Any = js.native
   
   var static: js.UndefOr[Boolean] = js.native
 }

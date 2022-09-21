@@ -44,10 +44,10 @@ object geopatternStrings {
   inline def nestedSquares: nestedSquares = "nestedSquares".asInstanceOf[nestedSquares]
   
   @js.native
-  sealed trait octagons
+  sealed trait octogons
     extends StObject
        with GeneratorType
-  inline def octagons: octagons = "octagons".asInstanceOf[octagons]
+  inline def octogons: octogons = "octogons".asInstanceOf[octogons]
   
   @js.native
   sealed trait overlappingCircles

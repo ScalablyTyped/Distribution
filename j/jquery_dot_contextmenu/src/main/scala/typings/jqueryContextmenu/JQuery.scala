@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def contextMenu(): JQuery = js.native
-  def contextMenu(options: js.Any): JQuery = js.native
+  def contextMenu(options: Any): JQuery = js.native
 }

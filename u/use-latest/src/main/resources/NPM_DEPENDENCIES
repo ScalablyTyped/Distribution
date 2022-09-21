@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "use-latest" : "1.2.0"
+      "use-latest" : "1.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "use-latest" : "1.2.0"
+      "use-latest" : "1.2.1"
     }
   ],
   "compile-devDependencies" : [

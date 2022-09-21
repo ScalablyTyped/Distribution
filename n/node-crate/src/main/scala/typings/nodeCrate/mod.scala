@@ -1,7 +1,6 @@
 package typings.nodeCrate
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +49,7 @@ object mod extends Shortcut {
       * Executes a parameterized sql statement.
       */
     def execute(sql: String): js.Promise[DBResultObject] = js.native
-    def execute(sql: String, args: js.Array[String | Double | Date]): js.Promise[DBResultObject] = js.native
+    def execute(sql: String, args: js.Array[String | Double | js.Date]): js.Promise[DBResultObject] = js.native
     
     /**
       * Retrieves a BLOB with the given hash key
@@ -107,19 +106,19 @@ object mod extends Shortcut {
       
       inline def setCols(value: js.Array[String]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      inline def setColsVarargs(value: String*): Self = StObject.set(x, "cols", js.Array(value :_*))
+      inline def setColsVarargs(value: String*): Self = StObject.set(x, "cols", js.Array(value*))
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
       inline def setJson(value: js.Array[js.Object]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      inline def setJsonVarargs(value: js.Object*): Self = StObject.set(x, "json", js.Array(value :_*))
+      inline def setJsonVarargs(value: js.Object*): Self = StObject.set(x, "json", js.Array(value*))
       
       inline def setRowcount(value: Double): Self = StObject.set(x, "rowcount", value.asInstanceOf[js.Any])
       
       inline def setRows(value: js.Array[js.Array[js.Object]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      inline def setRowsVarargs(value: js.Array[js.Object]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Array[js.Object]*): Self = StObject.set(x, "rows", js.Array(value*))
     }
   }
   

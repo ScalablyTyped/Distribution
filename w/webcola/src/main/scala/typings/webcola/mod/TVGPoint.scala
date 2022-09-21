@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webcola", "TVGPoint")
 @js.native
-class TVGPoint ()
+open class TVGPoint ()
   extends typings.webcola.geomMod.TVGPoint

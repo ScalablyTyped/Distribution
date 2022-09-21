@@ -14,7 +14,6 @@ trait WorkbookComment
   // Indicates the type for the comment.
   var contentType: js.UndefOr[String] = js.undefined
   
-  // Read-only. Nullable.
   var replies: js.UndefOr[NullableOption[js.Array[WorkbookCommentReply]]] = js.undefined
 }
 object WorkbookComment {
@@ -42,6 +41,6 @@ object WorkbookComment {
     
     inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
-    inline def setRepliesVarargs(value: WorkbookCommentReply*): Self = StObject.set(x, "replies", js.Array(value :_*))
+    inline def setRepliesVarargs(value: WorkbookCommentReply*): Self = StObject.set(x, "replies", js.Array(value*))
   }
 }

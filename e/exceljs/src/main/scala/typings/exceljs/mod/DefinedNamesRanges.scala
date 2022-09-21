@@ -23,6 +23,6 @@ object DefinedNamesRanges {
     
     inline def setRanges(value: js.Array[String]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
-    inline def setRangesVarargs(value: String*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: String*): Self = StObject.set(x, "ranges", js.Array(value*))
   }
 }

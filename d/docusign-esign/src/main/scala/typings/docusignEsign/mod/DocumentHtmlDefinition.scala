@@ -90,7 +90,7 @@ object DocumentHtmlDefinition {
     
     inline def setDisplayAnchorsUndefined: Self = StObject.set(x, "displayAnchors", js.undefined)
     
-    inline def setDisplayAnchorsVarargs(value: DocumentHtmlDisplayAnchor*): Self = StObject.set(x, "displayAnchors", js.Array(value :_*))
+    inline def setDisplayAnchorsVarargs(value: DocumentHtmlDisplayAnchor*): Self = StObject.set(x, "displayAnchors", js.Array(value*))
     
     inline def setDisplayOrder(value: String): Self = StObject.set(x, "displayOrder", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.RTD")
 @js.native
-/* private */ class RTD ()
+/* private */ open class RTD ()
   extends StObject
      with typings.activexExcel.Excel.RTD {
   

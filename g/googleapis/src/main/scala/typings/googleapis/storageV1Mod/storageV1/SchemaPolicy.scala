@@ -5,38 +5,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A bucket/object IAM policy.
-  */
 trait SchemaPolicy extends StObject {
   
   /**
-    * An association between a role, which comes with a set of permissions, and
-    * members who may assume that role.
+    * An association between a role, which comes with a set of permissions, and members who may assume that role.
     */
-  var bindings: js.UndefOr[js.Array[Condition]] = js.undefined
+  var bindings: js.UndefOr[js.Array[Condition] | Null] = js.undefined
   
   /**
     * HTTP 1.1  Entity tag for the policy.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The kind of item this is. For policies, this is always storage#policy.
-    * This field is ignored on input.
+    * The kind of item this is. For policies, this is always storage#policy. This field is ignored on input.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The ID of the resource to which this policy belongs. Will be of the form
-    * projects/_/buckets/bucket for buckets, and
-    * projects/_/buckets/bucket/objects/object for objects. A specific
-    * generation may be specified by appending #generationNumber to the end of
-    * the object name, e.g. projects/_/buckets/my-bucket/objects/data.txt#17.
-    * The current generation can be denoted with #0. This field is ignored on
-    * input.
+    * The ID of the resource to which this policy belongs. Will be of the form projects/_/buckets/bucket for buckets, and projects/_/buckets/bucket/objects/object for objects. A specific generation may be specified by appending #generationNumber to the end of the object name, e.g. projects/_/buckets/my-bucket/objects/data.txt#17. The current generation can be denoted with #0. This field is ignored on input.
     */
-  var resourceId: js.UndefOr[String] = js.undefined
+  var resourceId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The IAM policy format version.
+    */
+  var version: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaPolicy {
   
@@ -49,20 +43,34 @@ object SchemaPolicy {
     
     inline def setBindings(value: js.Array[Condition]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
+    inline def setBindingsNull: Self = StObject.set(x, "bindings", null)
+    
     inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
-    inline def setBindingsVarargs(value: Condition*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+    inline def setBindingsVarargs(value: Condition*): Self = StObject.set(x, "bindings", js.Array(value*))
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
     
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
+    inline def setResourceIdNull: Self = StObject.set(x, "resourceId", null)
+    
     inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

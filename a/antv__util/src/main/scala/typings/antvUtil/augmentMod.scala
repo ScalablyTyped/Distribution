@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object augmentMod {
   
-  @JSImport("@antv/util/lib/augment", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/augment", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
 }

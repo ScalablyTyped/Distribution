@@ -12,6 +12,11 @@ trait Route extends StObject {
   var CarrierGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.CarrierGatewayId] = js.undefined
   
   /**
+    * The Amazon Resource Name (ARN) of the core network.
+    */
+  var CoreNetworkArn: js.UndefOr[typings.awsSdk.ec2Mod.CoreNetworkArn] = js.undefined
+  
+  /**
     * The IPv4 CIDR block used for the destination match.
     */
   var DestinationCidrBlock: js.UndefOr[String] = js.undefined
@@ -22,7 +27,7 @@ trait Route extends StObject {
   var DestinationIpv6CidrBlock: js.UndefOr[String] = js.undefined
   
   /**
-    * The prefix of the AWS service.
+    * The prefix of the Amazon Web Service.
     */
   var DestinationPrefixListId: js.UndefOr[String] = js.undefined
   
@@ -42,7 +47,7 @@ trait Route extends StObject {
   var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS account ID of the owner of the instance.
+    * The ID of Amazon Web Services account that owns the instance.
     */
   var InstanceOwnerId: js.UndefOr[String] = js.undefined
   
@@ -93,6 +98,10 @@ object Route {
     inline def setCarrierGatewayId(value: CarrierGatewayId): Self = StObject.set(x, "CarrierGatewayId", value.asInstanceOf[js.Any])
     
     inline def setCarrierGatewayIdUndefined: Self = StObject.set(x, "CarrierGatewayId", js.undefined)
+    
+    inline def setCoreNetworkArn(value: CoreNetworkArn): Self = StObject.set(x, "CoreNetworkArn", value.asInstanceOf[js.Any])
+    
+    inline def setCoreNetworkArnUndefined: Self = StObject.set(x, "CoreNetworkArn", js.undefined)
     
     inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     

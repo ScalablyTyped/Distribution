@@ -9,7 +9,7 @@ object datePickerDatepickerMod {
   
   @JSImport("@ant-design/react-native/lib/date-picker/datepicker", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.antDesignReactNative.datePickerDatepickerDatePickerMod.default
   object default {
     

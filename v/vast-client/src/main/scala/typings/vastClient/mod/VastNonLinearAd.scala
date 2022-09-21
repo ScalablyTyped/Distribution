@@ -28,7 +28,7 @@ trait VastNonLinearAd extends StObject {
   
   var nonLinearClickThroughURLTemplate: String | Null
   
-  var nonLinearClickTrackingURLTemplates: js.Array[String]
+  var nonLinearClickTrackingURLTemplates: js.Array[VastUrlValue]
   
   var scalable: Boolean
   
@@ -47,7 +47,7 @@ object VastNonLinearAd {
     height: String,
     maintainAspectRatio: Boolean,
     minSuggestedDuration: Double,
-    nonLinearClickTrackingURLTemplates: js.Array[String],
+    nonLinearClickTrackingURLTemplates: js.Array[VastUrlValue],
     scalable: Boolean,
     width: String
   ): VastNonLinearAd = {
@@ -90,9 +90,9 @@ object VastNonLinearAd {
     
     inline def setNonLinearClickThroughURLTemplateNull: Self = StObject.set(x, "nonLinearClickThroughURLTemplate", null)
     
-    inline def setNonLinearClickTrackingURLTemplates(value: js.Array[String]): Self = StObject.set(x, "nonLinearClickTrackingURLTemplates", value.asInstanceOf[js.Any])
+    inline def setNonLinearClickTrackingURLTemplates(value: js.Array[VastUrlValue]): Self = StObject.set(x, "nonLinearClickTrackingURLTemplates", value.asInstanceOf[js.Any])
     
-    inline def setNonLinearClickTrackingURLTemplatesVarargs(value: String*): Self = StObject.set(x, "nonLinearClickTrackingURLTemplates", js.Array(value :_*))
+    inline def setNonLinearClickTrackingURLTemplatesVarargs(value: VastUrlValue*): Self = StObject.set(x, "nonLinearClickTrackingURLTemplates", js.Array(value*))
     
     inline def setScalable(value: Boolean): Self = StObject.set(x, "scalable", value.asInstanceOf[js.Any])
     

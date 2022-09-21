@@ -10,10 +10,10 @@ object photoSizeSelectActualMod {
   
   @JSImport("material-ui/svg-icons/image/photo-size-select-actual", JSImport.Default)
   @js.native
-  class default () extends ImagePhotoSizeSelectActual
+  open class default () extends ImagePhotoSizeSelectActual
   
   @JSImport("material-ui/svg-icons/image/photo-size-select-actual", "ImagePhotoSizeSelectActual")
   @js.native
-  class ImagePhotoSizeSelectActual ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImagePhotoSizeSelectActual ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

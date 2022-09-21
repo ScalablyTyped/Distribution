@@ -2,9 +2,12 @@ package typings.karmaCoverage
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.istanbul.mod.Store
+import typings.karmaCoverage.mod.CheckTresholds
 import typings.karmaCoverage.mod.KarmaCoverageReporter
 import typings.karmaCoverage.mod.Reporter
 import typings.karmaCoverage.mod.ReporterType
+import typings.karmaCoverage.mod.Watermarks
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +17,10 @@ object anon {
   /* Inlined karma-coverage.karma.KarmaCoverageReporter & {  reporters :std.Array<karma-coverage.karma.KarmaCoverageReporter> | undefined} */
   trait KarmaCoverageReporterrepo
     extends StObject
-       with /* moreSettings */ StringDictionary[js.Any] {
+       with /* moreSettings */ StringDictionary[Any] {
     
     /** This will be used to configure minimum threshold enforcement for coverage results */
-    var check: js.UndefOr[js.Any] = js.undefined
+    var check: js.UndefOr[CheckTresholds] = js.undefined
     
     /** This will be used to output coverage reports. When you set a relative path, the directory is resolved against the basePath. */
     var dir: js.UndefOr[String] = js.undefined
@@ -36,7 +39,11 @@ object anon {
       * It is possible to override this behavior and point out an instrumenter
       * for the files matching a specific pattern.
       */
-    var instrumenter: js.UndefOr[js.Any] = js.undefined
+    var instrumenter: js.UndefOr[StringDictionary[String]] = js.undefined
+    
+    var instrumenterOptions: js.UndefOr[Record[String, Record[String, Any]]] = js.undefined
+    
+    var instrumenters: js.UndefOr[Record[String, Any]] = js.undefined
     
     /** You can use multiple reporters, by providing array of options */
     var reporters: js.UndefOr[js.Array[Reporter]] & js.UndefOr[js.Array[KarmaCoverageReporter]]
@@ -58,7 +65,7 @@ object anon {
     var useJSExtensionForCoffeeScript: js.UndefOr[Boolean] = js.undefined
     
     /** This will be used to set the coverage threshold colors */
-    var watermarks: js.UndefOr[js.Any] = js.undefined
+    var watermarks: js.UndefOr[Watermarks] = js.undefined
   }
   object KarmaCoverageReporterrepo {
     
@@ -69,7 +76,7 @@ object anon {
     
     extension [Self <: KarmaCoverageReporterrepo](x: Self) {
       
-      inline def setCheck(value: js.Any): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setCheck(value: CheckTresholds): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
       inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
       
@@ -85,9 +92,17 @@ object anon {
       
       inline def setIncludeAllSourcesUndefined: Self = StObject.set(x, "includeAllSources", js.undefined)
       
-      inline def setInstrumenter(value: js.Any): Self = StObject.set(x, "instrumenter", value.asInstanceOf[js.Any])
+      inline def setInstrumenter(value: StringDictionary[String]): Self = StObject.set(x, "instrumenter", value.asInstanceOf[js.Any])
+      
+      inline def setInstrumenterOptions(value: Record[String, Record[String, Any]]): Self = StObject.set(x, "instrumenterOptions", value.asInstanceOf[js.Any])
+      
+      inline def setInstrumenterOptionsUndefined: Self = StObject.set(x, "instrumenterOptions", js.undefined)
       
       inline def setInstrumenterUndefined: Self = StObject.set(x, "instrumenter", js.undefined)
+      
+      inline def setInstrumenters(value: Record[String, Any]): Self = StObject.set(x, "instrumenters", value.asInstanceOf[js.Any])
+      
+      inline def setInstrumentersUndefined: Self = StObject.set(x, "instrumenters", js.undefined)
       
       inline def setReporters(value: js.UndefOr[js.Array[Reporter]] & js.UndefOr[js.Array[KarmaCoverageReporter]]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
       
@@ -109,7 +124,7 @@ object anon {
       
       inline def setUseJSExtensionForCoffeeScriptUndefined: Self = StObject.set(x, "useJSExtensionForCoffeeScript", js.undefined)
       
-      inline def setWatermarks(value: js.Any): Self = StObject.set(x, "watermarks", value.asInstanceOf[js.Any])
+      inline def setWatermarks(value: Watermarks): Self = StObject.set(x, "watermarks", value.asInstanceOf[js.Any])
       
       inline def setWatermarksUndefined: Self = StObject.set(x, "watermarks", js.undefined)
     }

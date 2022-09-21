@@ -118,9 +118,48 @@ object mod {
     }
   }
   
-  trait DatabaseParams
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactNativeSqliteStorage.mod.DatabaseParamsIOS
+    - typings.reactNativeSqliteStorage.mod.DatabaseParamsAndroid
+  */
+  trait DatabaseParams extends StObject
+  object DatabaseParams {
+    
+    inline def DatabaseParamsAndroid(name: String): typings.reactNativeSqliteStorage.mod.DatabaseParamsAndroid = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.reactNativeSqliteStorage.mod.DatabaseParamsAndroid]
+    }
+    
+    inline def DatabaseParamsIOS(location: Location, name: String): typings.reactNativeSqliteStorage.mod.DatabaseParamsIOS = {
+      val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.reactNativeSqliteStorage.mod.DatabaseParamsIOS]
+    }
+  }
+  
+  trait DatabaseParamsAndroid
     extends StObject
-       with DatabaseOptionalParams {
+       with DatabaseOptionalParams
+       with DatabaseParams {
+    
+    var name: String
+  }
+  object DatabaseParamsAndroid {
+    
+    inline def apply(name: String): DatabaseParamsAndroid = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DatabaseParamsAndroid]
+    }
+    
+    extension [Self <: DatabaseParamsAndroid](x: Self) {
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DatabaseParamsIOS
+    extends StObject
+       with DatabaseOptionalParams
+       with DatabaseParams {
     
     /**
       * Affects iOS database file location
@@ -132,14 +171,14 @@ object mod {
     
     var name: String
   }
-  object DatabaseParams {
+  object DatabaseParamsIOS {
     
-    inline def apply(location: Location, name: String): DatabaseParams = {
+    inline def apply(location: Location, name: String): DatabaseParamsIOS = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DatabaseParams]
+      __obj.asInstanceOf[DatabaseParamsIOS]
     }
     
-    extension [Self <: DatabaseParams](x: Self) {
+    extension [Self <: DatabaseParamsIOS](x: Self) {
       
       inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -192,26 +231,26 @@ object mod {
   
   trait ResultSetRowList extends StObject {
     
-    def item(index: Double): js.Any
+    def item(index: Double): Any
     
     var length: Double
     
-    def raw(): js.Array[js.Any]
+    def raw(): js.Array[Any]
   }
   object ResultSetRowList {
     
-    inline def apply(item: Double => js.Any, length: Double, raw: () => js.Array[js.Any]): ResultSetRowList = {
+    inline def apply(item: Double => Any, length: Double, raw: () => js.Array[Any]): ResultSetRowList = {
       val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any], raw = js.Any.fromFunction0(raw))
       __obj.asInstanceOf[ResultSetRowList]
     }
     
     extension [Self <: ResultSetRowList](x: Self) {
       
-      inline def setItem(value: Double => js.Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+      inline def setItem(value: Double => Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      inline def setRaw(value: () => js.Array[js.Any]): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
+      inline def setRaw(value: () => js.Array[Any]): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
     }
   }
   
@@ -262,12 +301,12 @@ object mod {
     def dettach_Promise(alias: String): js.Promise[Unit] = js.native
     
     def executeSql(statement: String): Unit = js.native
-    def executeSql(statement: String, params: js.Array[js.Any]): Unit = js.native
-    def executeSql(statement: String, params: js.Array[js.Any], success: Unit, error: StatementErrorCallback): Unit = js.native
-    def executeSql(statement: String, params: js.Array[js.Any], success: StatementCallback): Unit = js.native
+    def executeSql(statement: String, params: js.Array[Any]): Unit = js.native
+    def executeSql(statement: String, params: js.Array[Any], success: Unit, error: StatementErrorCallback): Unit = js.native
+    def executeSql(statement: String, params: js.Array[Any], success: StatementCallback): Unit = js.native
     def executeSql(
       statement: String,
-      params: js.Array[js.Any],
+      params: js.Array[Any],
       success: StatementCallback,
       error: StatementErrorCallback
     ): Unit = js.native
@@ -277,7 +316,7 @@ object mod {
     @JSName("executeSql")
     def executeSql_Promise(statement: String): js.Promise[js.Array[ResultSet]] = js.native
     @JSName("executeSql")
-    def executeSql_Promise(statement: String, params: js.Array[js.Any]): js.Promise[js.Array[ResultSet]] = js.native
+    def executeSql_Promise(statement: String, params: js.Array[Any]): js.Promise[js.Array[ResultSet]] = js.native
     
     def readTransaction(scope: js.Function1[/* tx */ Transaction, Unit]): Unit = js.native
     def readTransaction(scope: js.Function1[/* tx */ Transaction, Unit], error: Unit, success: TransactionCallback): Unit = js.native
@@ -310,17 +349,17 @@ object mod {
   trait Transaction extends StObject {
     
     def executeSql(sqlStatement: String): Unit = js.native
-    def executeSql(sqlStatement: String, arguments: js.Array[js.Any]): Unit = js.native
+    def executeSql(sqlStatement: String, arguments: js.Array[Any]): Unit = js.native
     def executeSql(
       sqlStatement: String,
-      arguments: js.Array[js.Any],
+      arguments: js.Array[Any],
       callback: Unit,
       errorCallback: StatementErrorCallback
     ): Unit = js.native
-    def executeSql(sqlStatement: String, arguments: js.Array[js.Any], callback: StatementCallback): Unit = js.native
+    def executeSql(sqlStatement: String, arguments: js.Array[Any], callback: StatementCallback): Unit = js.native
     def executeSql(
       sqlStatement: String,
-      arguments: js.Array[js.Any],
+      arguments: js.Array[Any],
       callback: StatementCallback,
       errorCallback: StatementErrorCallback
     ): Unit = js.native
@@ -335,7 +374,7 @@ object mod {
     @JSName("executeSql")
     def executeSql_Promise(sqlStatement: String): js.Promise[js.Tuple2[Transaction, ResultSet]] = js.native
     @JSName("executeSql")
-    def executeSql_Promise(sqlStatement: String, arguments: js.Array[js.Any]): js.Promise[js.Tuple2[Transaction, ResultSet]] = js.native
+    def executeSql_Promise(sqlStatement: String, arguments: js.Array[Any]): js.Promise[js.Tuple2[Transaction, ResultSet]] = js.native
   }
   
   type TransactionCallback = js.Function1[/* transaction */ Transaction, Unit]

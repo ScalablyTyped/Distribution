@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "dom7" : "4.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "dom7" : "4.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

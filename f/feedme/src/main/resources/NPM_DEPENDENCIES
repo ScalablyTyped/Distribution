@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "feedme" : "2.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "feedme" : "2.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

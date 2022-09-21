@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@datadog/native-appsec" : "1.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@datadog/native-appsec" : "1.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

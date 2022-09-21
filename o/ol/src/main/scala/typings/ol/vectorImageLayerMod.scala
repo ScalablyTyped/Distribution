@@ -8,7 +8,7 @@ object vectorImageLayerMod {
   
   @JSImport("ol/renderer/canvas/VectorImageLayer", JSImport.Default)
   @js.native
-  class default protected () extends CanvasVectorImageLayerRenderer {
+  open class default protected () extends CanvasVectorImageLayerRenderer {
     def this(layer: typings.ol.vectorImageMod.default) = this()
   }
   
@@ -19,5 +19,7 @@ object vectorImageLayerMod {
     def postRender(): Unit = js.native
     
     def preRender(): Unit = js.native
+    
+    def renderDeclutter(): Unit = js.native
   }
 }

@@ -9,10 +9,7 @@ trait BatchGetValuesByDataFilterRequest extends StObject {
   /** The data filters used to match the ranges of values to retrieve. Ranges that match any of the specified data filters are included in the response. */
   var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.undefined
   
-  /**
-    * How dates, times, and durations should be represented in the output. This is ignored if value_render_option is FORMATTED_VALUE. The default dateTime render option is
-    * [DateTimeRenderOption.SERIAL_NUMBER].
-    */
+  /** How dates, times, and durations should be represented in the output. This is ignored if value_render_option is FORMATTED_VALUE. The default dateTime render option is SERIAL_NUMBER. */
   var dateTimeRenderOption: js.UndefOr[String] = js.undefined
   
   /**
@@ -21,7 +18,7 @@ trait BatchGetValuesByDataFilterRequest extends StObject {
     */
   var majorDimension: js.UndefOr[String] = js.undefined
   
-  /** How values should be represented in the output. The default render option is ValueRenderOption.FORMATTED_VALUE. */
+  /** How values should be represented in the output. The default render option is FORMATTED_VALUE. */
   var valueRenderOption: js.UndefOr[String] = js.undefined
 }
 object BatchGetValuesByDataFilterRequest {
@@ -37,7 +34,7 @@ object BatchGetValuesByDataFilterRequest {
     
     inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
     
-    inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+    inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value*))
     
     inline def setDateTimeRenderOption(value: String): Self = StObject.set(x, "dateTimeRenderOption", value.asInstanceOf[js.Any])
     

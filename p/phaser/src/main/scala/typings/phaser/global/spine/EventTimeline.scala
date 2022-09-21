@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.EventTimeline")
 @js.native
-class EventTimeline protected ()
+open class EventTimeline protected ()
   extends StObject
      with typings.phaser.spine.EventTimeline {
   def this(frameCount: Double) = this()

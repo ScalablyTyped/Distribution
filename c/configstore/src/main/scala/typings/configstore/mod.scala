@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("configstore", JSImport.Namespace)
+  @JSImport("configstore", JSImport.Default)
   @js.native
-  class ^ protected ()
+  open class default protected ()
     extends StObject
        with Configstore {
     def this(packageName: String) = this()
-    def this(packageName: String, defaults: js.Any) = this()
-    def this(packageName: String, defaults: js.Any, options: ConfigstoreOptions) = this()
+    def this(packageName: String, defaults: Any) = this()
+    def this(packageName: String, defaults: Any, options: ConfigstoreOptions) = this()
     def this(packageName: String, defaults: Unit, options: ConfigstoreOptions) = this()
   }
   
@@ -23,7 +23,7 @@ object mod {
     /**
       * Get all items as an object or replace the current config with an object.
       */
-    var all: js.Any = js.native
+    var all: Any = js.native
     
     /**
       * Clear the config.
@@ -42,7 +42,7 @@ object mod {
       * @param key The string key to get
       * @return The contents of the config from key $key
       */
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     
     /**
       * Determines if a key is present in the config
@@ -62,12 +62,12 @@ object mod {
       * @param key The string key
       * @param val The value to set
       */
-    def set(key: String, `val`: js.Any): Unit = js.native
+    def set(key: String, `val`: Any): Unit = js.native
     /**
       * Set all key/value pairs declared in $values
       * @param values The values object.
       */
-    def set(values: js.Any): Unit = js.native
+    def set(values: Any): Unit = js.native
     
     /**
       * Get the item count

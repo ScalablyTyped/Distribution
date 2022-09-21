@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CancelStepsInput extends StObject {
   
   /**
-    * The ClusterID for which specified steps will be canceled. Use RunJobFlow and ListClusters to get ClusterIDs. 
+    * The ClusterID for the specified steps that will be canceled. Use RunJobFlow and ListClusters to get ClusterIDs. 
     */
   var ClusterId: XmlStringMaxLen256
   
   /**
-    * The option to choose for cancelling RUNNING steps. By default, the value is SEND_INTERRUPT.
+    * The option to choose to cancel RUNNING steps. By default, the value is SEND_INTERRUPT.
     */
   var StepCancellationOption: js.UndefOr[typings.awsSdk.emrMod.StepCancellationOption] = js.undefined
   
@@ -38,6 +38,6 @@ object CancelStepsInput {
     
     inline def setStepIds(value: StepIdsList): Self = StObject.set(x, "StepIds", value.asInstanceOf[js.Any])
     
-    inline def setStepIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "StepIds", js.Array(value :_*))
+    inline def setStepIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "StepIds", js.Array(value*))
   }
 }

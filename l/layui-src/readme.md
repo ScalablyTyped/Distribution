@@ -1,23 +1,23 @@
 
 # Scala.js typings for layui-src
 
-Typings are for version 2.5
+Typings are for version 2.6
 
 ## Library description:
-Classic modular front-end component library
+Classic modular Front-End UI library
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | layui-src |
 | Keywords           | layui, ui, JavaScript Framework, toolkit, front-end component library |
-| # releases         | 8 |
-| # dependents       | 13 |
-| # downloads        | 41186 |
-| # stars            | 1 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 2850.6666666666665 |
+| # stars            | 26254.0 |
 
 ## Links
-- [Homepage](https://www.layui.com)
-- [Bugs](https://github.com/sentsin/layui/issues)
+- [Homepage](https://github.com/sentsin/layui/)
+- [Bugs](https://gitee.com/sentsin/layui/issues)
 - [Repository](https://github.com/sentsin/layui)
 - [Npm](https://www.npmjs.com/package/layui-src)
     

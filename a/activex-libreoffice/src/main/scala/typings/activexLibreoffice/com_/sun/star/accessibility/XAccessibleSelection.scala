@@ -95,7 +95,7 @@ object XAccessibleSelection {
     getSelectedAccessibleChild: Double => XAccessible,
     getSelectedAccessibleChildCount: () => Double,
     isAccessibleChildSelected: Double => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     selectAccessibleChild: Double => Unit,
     selectAllAccessibleChildren: () => Unit

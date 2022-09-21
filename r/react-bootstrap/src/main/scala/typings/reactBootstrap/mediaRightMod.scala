@@ -10,12 +10,10 @@ object mediaRightMod {
   
   @JSImport("react-bootstrap/lib/MediaRight", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[MediaRightProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[MediaRightProps, js.Object, Any]
   
-  @js.native
-  trait MediaRight
-    extends Component[MediaRightProps, js.Object, js.Any]
+  type MediaRight = Component[MediaRightProps, js.Object, Any]
   
   trait MediaRightProps
     extends StObject

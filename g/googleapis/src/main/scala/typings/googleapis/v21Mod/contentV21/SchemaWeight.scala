@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaWeight extends StObject {
   
   /**
-    * The weight unit.
+    * Required. The weight unit. Acceptable values are: - "`kg`" - "`lb`"
     */
-  var unit: js.UndefOr[String] = js.undefined
+  var unit: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The weight represented as a number.
+    * Required. The weight represented as a number. The weight can have a maximum precision of four decimal places.
     */
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaWeight {
   
@@ -27,9 +27,13 @@ object SchemaWeight {
     
     inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
+    inline def setUnitNull: Self = StObject.set(x, "unit", null)
+    
     inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

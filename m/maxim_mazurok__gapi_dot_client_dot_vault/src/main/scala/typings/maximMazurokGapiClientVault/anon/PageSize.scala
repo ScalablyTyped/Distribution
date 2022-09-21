@@ -31,7 +31,7 @@ trait PageSize extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The number of holds to return in the response, between 0 and 100 inclusive. Leaving this empty, or as 0, is the same as page_size = 100. */
+  /** The number of holds to return in the response, between 0 and 100 inclusive. Leaving this empty, or as 0, is the same as **page_size** = 100. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /** The pagination token as returned in the response. An empty token means start from the beginning. */
@@ -49,7 +49,7 @@ trait PageSize extends StObject {
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
   
-  /** Specifies which parts of the Hold to return. */
+  /** The amount of detail to return for a hold. */
   var view: js.UndefOr[String] = js.undefined
 }
 object PageSize {

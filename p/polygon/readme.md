@@ -10,10 +10,10 @@ utility for working with polygons (arrays of vec2s)
 | ------------------ | :-------------: |
 | Full name          | polygon |
 | Keywords           | polygon, vec2, geometry, 2d |
-| # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 30025 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5040.333333333333 |
+| # stars            | 129.0 |
 
 ## Links
 - [Homepage](https://github.com/tmpvar/polygon.js#readme)

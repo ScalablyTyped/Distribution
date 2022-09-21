@@ -1,14 +1,13 @@
 package typings.parquetjs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowInterfaceMod {
   
-  type ArrayType = js.Array[Boolean | Date | Double | String]
+  type ArrayType = js.Array[Boolean | js.Date | Double | String]
   
   trait RowInterface
     extends StObject
@@ -21,5 +20,5 @@ object rowInterfaceMod {
     }
   }
   
-  type ScalarType = Boolean | Double | String | Date
+  type ScalarType = Boolean | Double | String | js.Date
 }

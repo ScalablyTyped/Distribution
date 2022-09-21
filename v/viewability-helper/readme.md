@@ -11,9 +11,9 @@ Lightweight cross-browser library that enables you to create a watcher for a giv
 | Full name          | viewability-helper |
 | Keywords           | javascript, viewability, helper, intersection, observer, intersectionobserver |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1041 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 155.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/outbrain/ViewabilityHelper#readme)

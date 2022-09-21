@@ -10,10 +10,10 @@ Sequential scenarios for Mocha
 | ------------------ | :-------------: |
 | Full name          | mocha-steps |
 | Keywords           | mocha, step, test, bdd, scenarios, sequence |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 861441 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 259311.66666666666 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/rprieto/mocha-steps#readme)

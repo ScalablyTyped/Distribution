@@ -36,7 +36,7 @@ object XHierarchicalPropertySetInfo {
     acquire: () => Unit,
     getPropertyByHierarchicalName: String => Property,
     hasPropertyByHierarchicalName: String => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XHierarchicalPropertySetInfo = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getPropertyByHierarchicalName = js.Any.fromFunction1(getPropertyByHierarchicalName), hasPropertyByHierarchicalName = js.Any.fromFunction1(hasPropertyByHierarchicalName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

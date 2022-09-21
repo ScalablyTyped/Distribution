@@ -110,6 +110,8 @@ trait PartialIButtonStyles extends StObject {
   
   var splitButtonMenuButtonExpanded: js.UndefOr[IStyle] = js.undefined
   
+  var splitButtonMenuFocused: js.UndefOr[IStyle] = js.undefined
+  
   var splitButtonMenuIcon: js.UndefOr[IStyle] = js.undefined
   
   var splitButtonMenuIconDisabled: js.UndefOr[IStyle] = js.undefined
@@ -430,6 +432,12 @@ object PartialIButtonStyles {
     inline def setSplitButtonMenuButtonNull: Self = StObject.set(x, "splitButtonMenuButton", null)
     
     inline def setSplitButtonMenuButtonUndefined: Self = StObject.set(x, "splitButtonMenuButton", js.undefined)
+    
+    inline def setSplitButtonMenuFocused(value: IStyle): Self = StObject.set(x, "splitButtonMenuFocused", value.asInstanceOf[js.Any])
+    
+    inline def setSplitButtonMenuFocusedNull: Self = StObject.set(x, "splitButtonMenuFocused", null)
+    
+    inline def setSplitButtonMenuFocusedUndefined: Self = StObject.set(x, "splitButtonMenuFocused", js.undefined)
     
     inline def setSplitButtonMenuIcon(value: IStyle): Self = StObject.set(x, "splitButtonMenuIcon", value.asInstanceOf[js.Any])
     

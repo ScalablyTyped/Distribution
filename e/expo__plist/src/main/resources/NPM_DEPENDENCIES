@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@expo/plist" : "0.0.18"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@expo/plist" : "0.0.18"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

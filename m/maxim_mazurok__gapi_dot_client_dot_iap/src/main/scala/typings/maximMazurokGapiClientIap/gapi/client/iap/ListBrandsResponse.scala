@@ -22,6 +22,6 @@ object ListBrandsResponse {
     
     inline def setBrandsUndefined: Self = StObject.set(x, "brands", js.undefined)
     
-    inline def setBrandsVarargs(value: Brand*): Self = StObject.set(x, "brands", js.Array(value :_*))
+    inline def setBrandsVarargs(value: Brand*): Self = StObject.set(x, "brands", js.Array(value*))
   }
 }

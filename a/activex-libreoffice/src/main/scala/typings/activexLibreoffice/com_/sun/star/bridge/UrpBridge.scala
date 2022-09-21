@@ -32,8 +32,8 @@ object UrpBridge {
     getDescription: () => String,
     getInstance: String => XInterface,
     getName: () => String,
-    initialize: SeqEquiv[js.Any] => Unit,
-    queryInterface: `type` => js.Any,
+    initialize: SeqEquiv[Any] => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit
   ): UrpBridge = {

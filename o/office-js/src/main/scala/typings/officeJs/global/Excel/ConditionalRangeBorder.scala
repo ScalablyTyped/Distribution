@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the border of an object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalRangeBorder")
 @js.native
-class ConditionalRangeBorder ()
+open class ConditionalRangeBorder ()
   extends StObject
      with typings.officeJs.Excel.ConditionalRangeBorder {
   

@@ -24,19 +24,17 @@ trait LatLongFieldDef[F /* <: Field */] extends StObject {
   var aggregate: js.UndefOr[Aggregate | HiddenCompositeAggregate] = js.undefined
   
   /**
-    * For rect-based marks (`rect`, `bar`, and `image`), mark size relative to bandwidth of [band scales](https://vega.github.io/vega-lite/docs/scale.html#band), bins or time units. If set to `1`, the mark size is set to the bandwidth, the bin interval, or the time unit interval. If set to `0.5`, the mark size is half of the bandwidth or the time unit interval.
-    *
-    * For other marks, relative position on a band of a stacked, binned, time unit or band scale. If set to `0`, the marks will be positioned at the beginning of the band. If set to `0.5`, the marks will be positioned in the middle of the band.
+    * Relative position on a band of a stacked, binned, time unit, or band scale. For example, the marks will be positioned at the beginning of the band if set to `0`, and at the middle of the band if set to `0.5`.
     *
     * @minimum 0
     * @maximum 1
     */
-  var band: js.UndefOr[Double] = js.undefined
+  var bandPosition: js.UndefOr[Double] = js.undefined
   
   /**
-    * A flag for binning a `quantitative` field, [an object defining binning parameters](https://vega.github.io/vega-lite/docs/bin.html#params), or indicating that the data for `x` or `y` channel are binned before they are imported into Vega-Lite (`"binned"`).
+    * A flag for binning a `quantitative` field, [an object defining binning parameters](https://vega.github.io/vega-lite/docs/bin.html#bin-parameters), or indicating that the data for `x` or `y` channel are binned before they are imported into Vega-Lite (`"binned"`).
     *
-    * - If `true`, default [binning parameters](https://vega.github.io/vega-lite/docs/bin.html) will be applied.
+    * - If `true`, default [binning parameters](https://vega.github.io/vega-lite/docs/bin.html#bin-parameters) will be applied.
     *
     * - If `"binned"`, this indicates that the data for the `x` (or `y`) channel are already binned. You can map the bin-start field to `x` (or `y`) and the bin-end field to `x2` (or `y2`). The scale and axis will be formatted similar to binning in Vega-Lite.  To adjust the axis ticks based on the bin step, you can also set the axis's [`tickMinStep`](https://vega.github.io/vega-lite/docs/axis.html#ticks) property.
     *
@@ -77,7 +75,7 @@ trait LatLongFieldDef[F /* <: Field */] extends StObject {
     *
     * __Notes__:
     *
-    * 1) You can customize the default field title format by providing the [`fieldTitle`](https://vega.github.io/vega-lite/docs/config.html#top-level-config) property in the [config](https://vega.github.io/vega-lite/docs/config.html) or [`fieldTitle` function via the `compile` function's options](https://vega.github.io/vega-lite/docs/compile.html#field-title).
+    * 1) You can customize the default field title format by providing the [`fieldTitle`](https://vega.github.io/vega-lite/docs/config.html#top-level-config) property in the [config](https://vega.github.io/vega-lite/docs/config.html) or [`fieldTitle` function via the `compile` function's options](https://vega.github.io/vega-lite/usage/compile.html#field-title).
     *
     * 2) If both field definition's `title` and axis, header, or legend `title` are defined, axis/header/legend title will be used.
     */
@@ -98,9 +96,9 @@ object LatLongFieldDef {
     
     inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
-    inline def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBandPosition(value: Double): Self = StObject.set(x, "bandPosition", value.asInstanceOf[js.Any])
     
-    inline def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
+    inline def setBandPositionUndefined: Self = StObject.set(x, "bandPosition", js.undefined)
     
     inline def setField(value: F): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
@@ -116,7 +114,7 @@ object LatLongFieldDef {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value*))
     
     inline def setType(value: quantitative): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -4,6 +4,8 @@ import typings.facebookInstantGames.FBInstant.ContextFilter
 import typings.facebookInstantGames.FBInstant.ErrorCodeType
 import typings.facebookInstantGames.FBInstant.Intent
 import typings.facebookInstantGames.FBInstant.Platform
+import typings.facebookInstantGames.FBInstant.TournamentScoreFormat
+import typings.facebookInstantGames.FBInstant.TournamentSortOrder
 import typings.facebookInstantGames.FBInstant.Type
 import typings.facebookInstantGames.FBInstant.UpdateAction
 import org.scalablytyped.runtime.StObject
@@ -79,6 +81,12 @@ object facebookInstantGamesStrings {
   inline def GROUP: GROUP = "GROUP".asInstanceOf[GROUP]
   
   @js.native
+  sealed trait HIGHER_IS_BETTER
+    extends StObject
+       with TournamentSortOrder
+  inline def HIGHER_IS_BETTER: HIGHER_IS_BETTER = "HIGHER_IS_BETTER".asInstanceOf[HIGHER_IS_BETTER]
+  
+  @js.native
   sealed trait INCLUDE_EXISTING_CHALLENGES
     extends StObject
        with ContextFilter
@@ -127,6 +135,12 @@ object facebookInstantGamesStrings {
   inline def LEADERBOARD_WRONG_CONTEXT: LEADERBOARD_WRONG_CONTEXT = "LEADERBOARD_WRONG_CONTEXT".asInstanceOf[LEADERBOARD_WRONG_CONTEXT]
   
   @js.native
+  sealed trait LOWER_IS_BETTER
+    extends StObject
+       with TournamentSortOrder
+  inline def LOWER_IS_BETTER: LOWER_IS_BETTER = "LOWER_IS_BETTER".asInstanceOf[LOWER_IS_BETTER]
+  
+  @js.native
   sealed trait MOBILE_WEB
     extends StObject
        with Platform
@@ -149,6 +163,12 @@ object facebookInstantGamesStrings {
     extends StObject
        with ContextFilter
   inline def NEW_PLAYERS_ONLY: NEW_PLAYERS_ONLY = "NEW_PLAYERS_ONLY".asInstanceOf[NEW_PLAYERS_ONLY]
+  
+  @js.native
+  sealed trait NUMERIC
+    extends StObject
+       with TournamentScoreFormat
+  inline def NUMERIC: NUMERIC = "NUMERIC".asInstanceOf[NUMERIC]
   
   @js.native
   sealed trait PENDING_REQUEST
@@ -197,6 +217,12 @@ object facebookInstantGamesStrings {
     extends StObject
        with Type
   inline def THREAD: THREAD = "THREAD".asInstanceOf[THREAD]
+  
+  @js.native
+  sealed trait TIME
+    extends StObject
+       with TournamentScoreFormat
+  inline def TIME: TIME = "TIME".asInstanceOf[TIME]
   
   @js.native
   sealed trait UNKNOWN

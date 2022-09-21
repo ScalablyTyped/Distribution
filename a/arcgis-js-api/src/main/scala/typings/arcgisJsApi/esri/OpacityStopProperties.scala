@@ -44,7 +44,7 @@ object OpacityStopProperties {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setOpacityVarargs(value: Double*): Self = StObject.set(x, "opacity", js.Array(value :_*))
+    inline def setOpacityVarargs(value: Double*): Self = StObject.set(x, "opacity", js.Array(value*))
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

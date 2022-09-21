@@ -8,8 +8,8 @@ import typings.chromeApps.chrome.mediaGalleries.MediaFileSystemsOptions
 import typings.chromeApps.chrome.mediaGalleries.Metadata
 import typings.chromeApps.chrome.mediaGalleries.MetadataOptions
 import typings.chromeApps.chrome.mediaGalleries.ScanProgressEventArgs
-import typings.filesystem.FileSystem
 import typings.std.Blob
+import typings.std.FileSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

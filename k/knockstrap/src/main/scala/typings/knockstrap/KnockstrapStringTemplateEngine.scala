@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutNativeTemplateEngine * / any */ trait KnockstrapStringTemplateEngine extends StObject {
   
-  def addTemplate(name: String, template: js.Any): Unit
+  def addTemplate(name: String, template: Any): Unit
   
   var allowTemplateRewriting: Boolean
   
-  def getTemplate(name: String): js.Any
+  def getTemplate(name: String): Any
   
   def isTemplateExist(name: String): Boolean
   
@@ -22,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object KnockstrapStringTemplateEngine {
   
   inline def apply(
-    addTemplate: (String, js.Any) => Unit,
+    addTemplate: (String, Any) => Unit,
     allowTemplateRewriting: Boolean,
-    getTemplate: String => js.Any,
+    getTemplate: String => Any,
     isTemplateExist: String => Boolean,
     makeTemplateSource: String => KnockstrapStringTemplate,
     removeTemplate: String => Unit
@@ -35,11 +35,11 @@ object KnockstrapStringTemplateEngine {
   
   extension [Self <: KnockstrapStringTemplateEngine](x: Self) {
     
-    inline def setAddTemplate(value: (String, js.Any) => Unit): Self = StObject.set(x, "addTemplate", js.Any.fromFunction2(value))
+    inline def setAddTemplate(value: (String, Any) => Unit): Self = StObject.set(x, "addTemplate", js.Any.fromFunction2(value))
     
     inline def setAllowTemplateRewriting(value: Boolean): Self = StObject.set(x, "allowTemplateRewriting", value.asInstanceOf[js.Any])
     
-    inline def setGetTemplate(value: String => js.Any): Self = StObject.set(x, "getTemplate", js.Any.fromFunction1(value))
+    inline def setGetTemplate(value: String => Any): Self = StObject.set(x, "getTemplate", js.Any.fromFunction1(value))
     
     inline def setIsTemplateExist(value: String => Boolean): Self = StObject.set(x, "isTemplateExist", js.Any.fromFunction1(value))
     

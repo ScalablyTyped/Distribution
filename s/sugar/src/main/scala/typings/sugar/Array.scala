@@ -33,48 +33,48 @@ trait Array[T] extends StObject {
   def compact(all: Boolean): Array[T] = js.native
   
   def count(search: T): Double = js.native
-  def count(search: T, context: js.Any): Double = js.native
+  def count(search: T, context: Any): Double = js.native
   def count(search: searchFn[T]): Double = js.native
-  def count(search: searchFn[T], context: js.Any): Double = js.native
+  def count(search: searchFn[T], context: Any): Double = js.native
   
   def every(search: T): Boolean = js.native
-  def every(search: T, context: js.Any): Boolean = js.native
+  def every(search: T, context: Any): Boolean = js.native
   def every(search: searchFn[T]): Boolean = js.native
-  def every(search: searchFn[T], context: js.Any): Boolean = js.native
+  def every(search: searchFn[T], context: Any): Boolean = js.native
   
-  def everyFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def everyFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
-  def everyFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
+  def everyFromIndex(startIndex: Double, args: Any*): T = js.native
+  def everyFromIndex(startIndex: Double, loop: Boolean, args: Any*): T = js.native
+  def everyFromIndex(startIndex: Double, loop: Unit, args: Any*): T = js.native
   
   def exclude(search: T): Array[T] = js.native
   def exclude(search: searchFn[T]): Array[T] = js.native
   
   def filter(search: T): Array[T] = js.native
-  def filter(search: T, context: js.Any): Array[T] = js.native
+  def filter(search: T, context: Any): Array[T] = js.native
   def filter(search: searchFn[T]): Array[T] = js.native
-  def filter(search: searchFn[T], context: js.Any): Array[T] = js.native
+  def filter(search: searchFn[T], context: Any): Array[T] = js.native
   
-  def filterFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def filterFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
-  def filterFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
+  def filterFromIndex(startIndex: Double, args: Any*): T = js.native
+  def filterFromIndex(startIndex: Double, loop: Boolean, args: Any*): T = js.native
+  def filterFromIndex(startIndex: Double, loop: Unit, args: Any*): T = js.native
   
   def find(search: T): T = js.native
-  def find(search: T, context: js.Any): T = js.native
+  def find(search: T, context: Any): T = js.native
   def find(search: searchFn[T]): T = js.native
-  def find(search: searchFn[T], context: js.Any): T = js.native
+  def find(search: searchFn[T], context: Any): T = js.native
   
-  def findFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def findFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
-  def findFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
+  def findFromIndex(startIndex: Double, args: Any*): T = js.native
+  def findFromIndex(startIndex: Double, loop: Boolean, args: Any*): T = js.native
+  def findFromIndex(startIndex: Double, loop: Unit, args: Any*): T = js.native
   
   def findIndex(search: T): Double = js.native
-  def findIndex(search: T, context: js.Any): Double = js.native
+  def findIndex(search: T, context: Any): Double = js.native
   def findIndex(search: searchFn[T]): Double = js.native
-  def findIndex(search: searchFn[T], context: js.Any): Double = js.native
+  def findIndex(search: searchFn[T], context: Any): Double = js.native
   
-  def findIndexFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def findIndexFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
-  def findIndexFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
+  def findIndexFromIndex(startIndex: Double, args: Any*): T = js.native
+  def findIndexFromIndex(startIndex: Double, loop: Boolean, args: Any*): T = js.native
+  def findIndexFromIndex(startIndex: Double, loop: Unit, args: Any*): T = js.native
   
   def first(): T = js.native
   def first(num: Double): T = js.native
@@ -82,9 +82,9 @@ trait Array[T] extends StObject {
   def flatten(): Array[T] = js.native
   def flatten(limit: Double): Array[T] = js.native
   
-  def forEachFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def forEachFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
-  def forEachFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
+  def forEachFromIndex(startIndex: Double, args: Any*): T = js.native
+  def forEachFromIndex(startIndex: Double, loop: Boolean, args: Any*): T = js.native
+  def forEachFromIndex(startIndex: Double, loop: Unit, args: Any*): T = js.native
   
   def from(index: Double): Array[T] = js.native
   
@@ -100,10 +100,10 @@ trait Array[T] extends StObject {
   ): js.Object = js.native
   
   def inGroups(num: Double): Array[T] = js.native
-  def inGroups(num: Double, padding: js.Any): Array[T] = js.native
+  def inGroups(num: Double, padding: Any): Array[T] = js.native
   
   def inGroupsOf(num: Double): Array[T] = js.native
-  def inGroupsOf(num: Double, padding: js.Any): Array[T] = js.native
+  def inGroupsOf(num: Double, padding: Any): Array[T] = js.native
   
   def insert(item: T): Array[T] = js.native
   def insert(item: T, index: Double): Array[T] = js.native
@@ -129,13 +129,13 @@ trait Array[T] extends StObject {
   def least[U](map: mapFn[T, U]): Array[T] = js.native
   
   def map[U](map: java.lang.String): Array[U] = js.native
-  def map[U](map: java.lang.String, context: js.Any): Array[U] = js.native
+  def map[U](map: java.lang.String, context: Any): Array[U] = js.native
   def map[U](map: mapFn[T, U]): Array[U] = js.native
-  def map[U](map: mapFn[T, U], context: js.Any): Array[U] = js.native
+  def map[U](map: mapFn[T, U], context: Any): Array[U] = js.native
   
-  def mapFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def mapFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
-  def mapFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
+  def mapFromIndex(startIndex: Double, args: Any*): T = js.native
+  def mapFromIndex(startIndex: Double, loop: Boolean, args: Any*): T = js.native
+  def mapFromIndex(startIndex: Double, loop: Unit, args: Any*): T = js.native
   
   def max[U](): T = js.native
   def max[U](all: Boolean): T = js.native
@@ -169,17 +169,17 @@ trait Array[T] extends StObject {
   def most[U](map: mapFn[T, U]): Array[T] = js.native
   
   def none(search: T): Boolean = js.native
-  def none(search: T, context: js.Any): Boolean = js.native
+  def none(search: T, context: Any): Boolean = js.native
   def none(search: searchFn[T]): Boolean = js.native
-  def none(search: searchFn[T], context: js.Any): Boolean = js.native
+  def none(search: searchFn[T], context: Any): Boolean = js.native
   
-  def reduceFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def reduceFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
-  def reduceFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
+  def reduceFromIndex(startIndex: Double, args: Any*): T = js.native
+  def reduceFromIndex(startIndex: Double, loop: Boolean, args: Any*): T = js.native
+  def reduceFromIndex(startIndex: Double, loop: Unit, args: Any*): T = js.native
   
-  def reduceRightFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def reduceRightFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
-  def reduceRightFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
+  def reduceRightFromIndex(startIndex: Double, args: Any*): T = js.native
+  def reduceRightFromIndex(startIndex: Double, loop: Boolean, args: Any*): T = js.native
+  def reduceRightFromIndex(startIndex: Double, loop: Unit, args: Any*): T = js.native
   
   def remove(search: T): Array[T] = js.native
   def remove(search: searchFn[T]): Array[T] = js.native
@@ -195,13 +195,13 @@ trait Array[T] extends StObject {
   def shuffle(): Array[T] = js.native
   
   def some(search: T): Boolean = js.native
-  def some(search: T, context: js.Any): Boolean = js.native
+  def some(search: T, context: Any): Boolean = js.native
   def some(search: searchFn[T]): Boolean = js.native
-  def some(search: searchFn[T], context: js.Any): Boolean = js.native
+  def some(search: searchFn[T], context: Any): Boolean = js.native
   
-  def someFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def someFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
-  def someFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
+  def someFromIndex(startIndex: Double, args: Any*): T = js.native
+  def someFromIndex(startIndex: Double, loop: Boolean, args: Any*): T = js.native
+  def someFromIndex(startIndex: Double, loop: Unit, args: Any*): T = js.native
   
   def sortBy[U](): Array[T] = js.native
   def sortBy[U](map: java.lang.String): Array[T] = js.native
@@ -225,5 +225,5 @@ trait Array[T] extends StObject {
   def unique[U](map: java.lang.String): Array[T] = js.native
   def unique[U](map: mapFn[T, U]): Array[T] = js.native
   
-  def zip(args: js.Any*): Array[T] = js.native
+  def zip(args: Any*): Array[T] = js.native
 }

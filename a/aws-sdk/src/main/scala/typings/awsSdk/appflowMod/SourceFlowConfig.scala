@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SourceFlowConfig extends StObject {
   
   /**
-    *  The name of the connector profile. This name must be unique for each connector profile in the AWS account. 
+    * The API version of the connector when it's used as a source in the flow.
+    */
+  var apiVersion: js.UndefOr[ApiVersion_] = js.undefined
+  
+  /**
+    *  The name of the connector profile. This name must be unique for each connector profile in the Amazon Web Services account. 
     */
   var connectorProfileName: js.UndefOr[ConnectorProfileName] = js.undefined
   
@@ -34,6 +39,10 @@ object SourceFlowConfig {
   }
   
   extension [Self <: SourceFlowConfig](x: Self) {
+    
+    inline def setApiVersion(value: ApiVersion_): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     inline def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
     

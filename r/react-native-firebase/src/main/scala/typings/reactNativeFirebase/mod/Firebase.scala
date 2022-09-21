@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-firebase", "Firebase")
 @js.native
-/* private */ class Firebase () extends StObject {
+/* private */ open class Firebase () extends StObject {
   
   val SDK_VERSION: String = js.native
   

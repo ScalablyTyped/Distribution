@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new LocationsApi.
   * @param apiClient Optional API client implementation to use, default to {@link module:ApiClient#instance} if unspecified.
   */
-class LocationsApi () extends StObject {
+open class LocationsApi () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   /**

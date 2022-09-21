@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.Classifier")
 @js.native
-class Classifier protected ()
+open class Classifier protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.Classifier {
   def this(host: IClassifierHost) = this()
   
   /* private */ /* CompleteClass */
-  override def addResult(text: js.Any, offset: js.Any, result: js.Any, length: js.Any, kind: js.Any): js.Any = js.native
+  override def addResult(text: Any, offset: Any, result: Any, length: Any, kind: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  var characterWindow: js.Any = js.native
+  var characterWindow: Any = js.native
   
   /* private */ /* CompleteClass */
-  override def classFromKind(kind: js.Any): js.Any = js.native
+  override def classFromKind(kind: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  var diagnostics: js.Any = js.native
+  var diagnostics: Any = js.native
   
   /* CompleteClass */
   override def getClassificationsForLine(text: String, lexState: typings.typescriptServices.TypeScript.Services.EndOfLineState): typings.typescriptServices.TypeScript.Services.ClassificationResult = js.native
@@ -31,11 +31,11 @@ class Classifier protected ()
   var host: IClassifierHost = js.native
   
   /* private */ /* CompleteClass */
-  override def processToken(text: js.Any, offset: js.Any, token: js.Any, result: js.Any): js.Any = js.native
+  override def processToken(text: Any, offset: Any, token: Any, result: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def processTriviaList(text: js.Any, offset: js.Any, triviaList: js.Any, result: js.Any): js.Any = js.native
+  override def processTriviaList(text: Any, offset: Any, triviaList: Any, result: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  var scanner: js.Any = js.native
+  var scanner: Any = js.native
 }

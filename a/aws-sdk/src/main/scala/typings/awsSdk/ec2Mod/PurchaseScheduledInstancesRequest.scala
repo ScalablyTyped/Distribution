@@ -40,6 +40,6 @@ object PurchaseScheduledInstancesRequest {
     
     inline def setPurchaseRequests(value: PurchaseRequestSet): Self = StObject.set(x, "PurchaseRequests", value.asInstanceOf[js.Any])
     
-    inline def setPurchaseRequestsVarargs(value: PurchaseRequest*): Self = StObject.set(x, "PurchaseRequests", js.Array(value :_*))
+    inline def setPurchaseRequestsVarargs(value: PurchaseRequest*): Self = StObject.set(x, "PurchaseRequests", js.Array(value*))
   }
 }

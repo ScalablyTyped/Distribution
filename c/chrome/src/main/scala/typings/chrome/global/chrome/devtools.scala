@@ -38,6 +38,11 @@ object devtools {
       expression: String,
       callback: js.Function2[/* result */ T, /* exceptionInfo */ EvaluationExceptionInfo, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(expression.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def eval[T](
+      expression: String,
+      options: Unit,
+      callback: js.Function2[/* result */ T, /* exceptionInfo */ EvaluationExceptionInfo, Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(expression.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def eval[T](expression: String, options: EvalOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(expression.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def eval[T](
       expression: String,
@@ -57,6 +62,7 @@ object devtools {
     def onResourceContentCommitted: ResourceContentCommittedEvent = js.native
     inline def onResourceContentCommitted_=(x: ResourceContentCommittedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onResourceContentCommitted")(x.asInstanceOf[js.Any])
     
+    inline def reload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[Unit]
     inline def reload(reloadOptions: ReloadOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(reloadOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("chrome.devtools.inspectedWindow.tabId")

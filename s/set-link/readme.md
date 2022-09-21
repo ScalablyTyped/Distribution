@@ -10,15 +10,12 @@ Link header middleware for express with multiple value and attribute support
 | ------------------ | :-------------: |
 | Full name          | set-link |
 | Keywords           | http, header, link |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 19691 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1344.6666666666667 |
+| # stars            | 0.0 |
 
 ## Links
-- [Homepage](https://github.com/bergos/set-link)
-- [Bugs](https://github.com/bergos/set-link/issues)
-- [Repository](https://github.com/bergos/set-link)
 - [Npm](https://www.npmjs.com/package/set-link)
     
 

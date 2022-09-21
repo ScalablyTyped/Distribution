@@ -11,10 +11,10 @@ object treatMod {
   
   @JSImport("ionic/commands/doctor/treat", "DoctorTreatCommand")
   @js.native
-  class DoctorTreatCommand protected () extends DoctorCommand {
+  open class DoctorTreatCommand protected () extends DoctorCommand {
     def this(namespace: INamespace) = this()
     
-    def handleError(e: js.Any): Unit = js.native
+    def handleError(e: Any): Unit = js.native
     
     def treatAilment(ailment: TreatableAilment): js.Promise[Boolean] = js.native
     

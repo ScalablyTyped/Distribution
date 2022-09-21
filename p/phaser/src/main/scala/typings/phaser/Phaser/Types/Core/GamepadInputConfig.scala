@@ -9,7 +9,7 @@ trait GamepadInputConfig extends StObject {
   /**
     * Where the Gamepad Manager listens for gamepad input events.
     */
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
 }
 object GamepadInputConfig {
   
@@ -20,7 +20,7 @@ object GamepadInputConfig {
   
   extension [Self <: GamepadInputConfig](x: Self) {
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }

@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api stable
   */
-class KML ()
+open class KML ()
   extends typings.openlayers.mod.format.KML {
   def this(opt_options: KMLOptions) = this()
 }

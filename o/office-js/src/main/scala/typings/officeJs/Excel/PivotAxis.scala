@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait PivotAxis extends StObject
 /**
-  *
   * Represents the axis from which to get the PivotItems.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PivotAxis")
@@ -18,7 +18,8 @@ object PivotAxis extends StObject {
   
   /**
     * The column axis.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait column
@@ -27,7 +28,8 @@ object PivotAxis extends StObject {
   
   /**
     * The data axis.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait data
@@ -36,7 +38,8 @@ object PivotAxis extends StObject {
   
   /**
     * The filter axis.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait filter
@@ -45,7 +48,8 @@ object PivotAxis extends StObject {
   
   /**
     * The row axis.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait row
@@ -54,7 +58,8 @@ object PivotAxis extends StObject {
   
   /**
     * The axis or region is unknown or unsupported.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait unknown

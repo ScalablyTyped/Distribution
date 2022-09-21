@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "node-abort-controller" : "3.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "node-abort-controller" : "3.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

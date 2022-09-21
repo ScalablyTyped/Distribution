@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CognitoUserPoolConfig extends StObject {
   
   /**
-    * A regular expression for validating the incoming Amazon Cognito user pool app client ID.
+    * A regular expression for validating the incoming Amazon Cognito user pool app client ID. If this value isn't set, no filtering is applied.
     */
   var appIdClientRegex: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS Region in which the user pool was created.
+    * The Amazon Web Services Region in which the user pool was created.
     */
   var awsRegion: String
   

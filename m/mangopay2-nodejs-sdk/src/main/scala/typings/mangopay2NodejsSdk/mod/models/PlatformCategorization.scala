@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mangopay2-nodejs-sdk", "models.PlatformCategorization")
 @js.native
-class PlatformCategorization protected ()
-  extends EntityBase[typings.mangopay2NodejsSdk.mod.client.PlatformCategorization] {
-  def this(data: typings.mangopay2NodejsSdk.mod.client.PlatformCategorization) = this()
+open class PlatformCategorization protected ()
+  extends EntityBase[typings.mangopay2NodejsSdk.clientMod.client.PlatformCategorization] {
+  def this(data: typings.mangopay2NodejsSdk.clientMod.client.PlatformCategorization) = this()
 }

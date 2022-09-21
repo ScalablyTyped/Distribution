@@ -10,7 +10,7 @@ trait IgPieChartLegend
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * The name of the element to turn into a legend.

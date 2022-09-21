@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.ColorMatrix")
 @js.native
-class ColorMatrix ()
+open class ColorMatrix ()
   extends StObject
      with typings.easeljs.createjs.ColorMatrix {
   def this(brightness: Double) = this()

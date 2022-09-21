@@ -1,13 +1,13 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientContent.anon.FieldsKeyOauthtoken
-import typings.maximMazurokGapiClientContent.anon.Key
+import typings.maximMazurokGapiClientContent.anon.KeyOauthtokenPrettyPrint
 import typings.maximMazurokGapiClientContent.anon.QuotaUserTargetMerchantId
 import typings.maximMazurokGapiClientContent.anon.ResourceTargetMerchantId
 import typings.maximMazurokGapiClientContent.anon.StoreCode
 import typings.maximMazurokGapiClientContent.anon.TargetMerchantId
 import typings.maximMazurokGapiClientContent.anon.TargetMerchantIdUploadType
+import typings.maximMazurokGapiClientContent.anon.UploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PosResource extends StObject {
   
   /** Batches multiple POS-related calls in a single request. */
-  def custombatch(request: FieldsKeyOauthtoken): Request[PosCustomBatchResponse] = js.native
-  def custombatch(request: Key, body: PosCustomBatchRequest): Request[PosCustomBatchResponse] = js.native
+  def custombatch(request: KeyOauthtokenPrettyPrint): Request[PosCustomBatchResponse] = js.native
+  def custombatch(request: UploadType, body: PosCustomBatchRequest): Request[PosCustomBatchResponse] = js.native
   
   /** Deletes a store for the given merchant. */
   def delete(): Request[Unit] = js.native

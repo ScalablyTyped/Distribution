@@ -9,6 +9,8 @@ trait ColorBackgroundProperties extends StObject {
   /**
     * The color of the background.
     *
+    * @default black
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-background-ColorBackground.html#color)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
@@ -26,6 +28,6 @@ object ColorBackgroundProperties {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
   }
 }

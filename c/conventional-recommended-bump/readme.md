@@ -1,7 +1,7 @@
 
 # Scala.js typings for conventional-recommended-bump
 
-Typings are for version 6.0
+Typings are for version 6.1
 
 ## Library description:
 Get a recommended version bump based on conventional commits
@@ -10,10 +10,10 @@ Get a recommended version bump based on conventional commits
 | ------------------ | :-------------: |
 | Full name          | conventional-recommended-bump |
 | Keywords           | conventional-recommended-bump, recommend, conventional, bump |
-| # releases         | 14 |
-| # dependents       | 119 |
-| # downloads        | 56293701 |
-| # stars            | 1 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 7707771.333333333 |
+| # stars            | 6435.0 |
 
 ## Links
 - [Homepage](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-recommended-bump#readme)

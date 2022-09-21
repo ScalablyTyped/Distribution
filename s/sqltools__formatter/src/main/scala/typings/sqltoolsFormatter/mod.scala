@@ -1,15 +1,33 @@
 package typings.sqltoolsFormatter
 
+import typings.sqltoolsFormatter.typesMod.Config
+import typings.sqltoolsFormatter.typesMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@sqltools/formatter/lib/core/escapeRegExp", JSImport.Namespace)
+  @JSImport("@sqltools/formatter", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
-  inline def default(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  object default {
+    
+    @JSImport("@sqltools/formatter", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def format(query: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(query.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def format(query: String, cfg: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(query.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def tokenize(query: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+    inline def tokenize(query: String, cfg: Config): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(query.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
+  }
+  
+  inline def format(query: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(query.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def format(query: String, cfg: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(query.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def tokenize(query: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+  inline def tokenize(query: String, cfg: Config): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(query.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
 }

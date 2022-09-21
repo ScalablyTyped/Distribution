@@ -11,12 +11,12 @@ object testingMockPromiseMod {
   
   @JSImport("wonder-frp/dist/es2015/testing/MockPromise", "MockPromise")
   @js.native
-  class MockPromise protected () extends StObject {
+  open class MockPromise protected () extends StObject {
     def this(scheduler: TestScheduler, messages: js.Array[Record]) = this()
     
-    /* private */ var _messages: js.Any = js.native
+    /* private */ var _messages: Any = js.native
     
-    /* private */ var _scheduler: js.Any = js.native
+    /* private */ var _scheduler: Any = js.native
     
     def `then`(successCb: js.Function, errorCb: js.Function, observer: IObserver): Unit = js.native
   }

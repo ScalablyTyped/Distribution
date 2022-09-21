@@ -1,6 +1,7 @@
 
 # Scala.js typings for fontfaceobserver
 
+Typings are for version 2.1.0
 
 ## Library description:
 Detect if web fonts are available
@@ -9,10 +10,10 @@ Detect if web fonts are available
 | ------------------ | :-------------: |
 | Full name          | fontfaceobserver |
 | Keywords           | fontloader, fonts, font, font-face, web font, font load, font events |
-| # releases         | 2 |
-| # dependents       | 168 |
-| # downloads        | 9971174 |
-| # stars            | 8 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1548574.3333333333 |
+| # stars            | 4002.0 |
 
 ## Links
 - [Homepage](https://fontfaceobserver.com/)

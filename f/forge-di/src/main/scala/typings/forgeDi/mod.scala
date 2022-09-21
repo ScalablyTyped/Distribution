@@ -16,40 +16,40 @@ object mod {
   
   @JSImport("forge-di", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.forgeDi.forgeMod.default {
     def this(config: Config) = this()
   }
   
   @JSImport("forge-di", "Binding")
   @js.native
-  class Binding protected ()
+  open class Binding protected ()
     extends typings.forgeDi.bindingMod.default {
     def this(forge: typings.forgeDi.forgeMod.default, name: String) = this()
   }
   
   @JSImport("forge-di", "ConfigurationError")
   @js.native
-  class ConfigurationError protected ()
+  open class ConfigurationError protected ()
     extends typings.forgeDi.configurationErrorMod.default {
     def this(name: String, message: String) = this()
   }
   
   @JSImport("forge-di", "Context")
   @js.native
-  class Context ()
+  open class Context ()
     extends typings.forgeDi.contextMod.default
   
   @JSImport("forge-di", "Forge")
   @js.native
-  class Forge ()
+  open class Forge ()
     extends typings.forgeDi.forgeMod.default {
     def this(config: Config) = this()
   }
   
   @JSImport("forge-di", "FunctionResolver")
   @js.native
-  class FunctionResolver protected ()
+  open class FunctionResolver protected ()
     extends typings.forgeDi.functionResolverMod.default {
     def this(
       forge: typings.forgeDi.forgeMod.default,
@@ -60,12 +60,12 @@ object mod {
   
   @JSImport("forge-di", "InstanceResolver")
   @js.native
-  class InstanceResolver protected ()
+  open class InstanceResolver protected ()
     extends typings.forgeDi.instanceResolverMod.default {
     def this(
       forge: typings.forgeDi.forgeMod.default,
       binding: typings.forgeDi.bindingMod.default,
-      instance: js.Any
+      instance: Any
     ) = this()
   }
   
@@ -85,14 +85,14 @@ object mod {
   
   @JSImport("forge-di", "RegexInspector")
   @js.native
-  class RegexInspector ()
+  open class RegexInspector ()
     extends typings.forgeDi.regexInspectorMod.default
   
   @JSImport("forge-di", "ResolutionError")
   @js.native
-  class ResolutionError protected ()
+  open class ResolutionError protected ()
     extends typings.forgeDi.resolutionErrorMod.default {
-    def this(name: String, hint: js.Any, context: typings.forgeDi.contextMod.default, message: String) = this()
+    def this(name: String, hint: Any, context: typings.forgeDi.contextMod.default, message: String) = this()
   }
   
   @JSImport("forge-di", "Resolver")
@@ -104,17 +104,17 @@ object mod {
   
   @JSImport("forge-di", "SingletonLifecycle")
   @js.native
-  class SingletonLifecycle ()
+  open class SingletonLifecycle ()
     extends typings.forgeDi.singletonLifecycleMod.default
   
   @JSImport("forge-di", "TransientLifecycle")
   @js.native
-  class TransientLifecycle ()
+  open class TransientLifecycle ()
     extends typings.forgeDi.transientLifecycleMod.default
   
   @JSImport("forge-di", "TypeResolver")
   @js.native
-  class TypeResolver protected ()
+  open class TypeResolver protected ()
     extends typings.forgeDi.typeResolverMod.default {
     def this(
       forge: typings.forgeDi.forgeMod.default,

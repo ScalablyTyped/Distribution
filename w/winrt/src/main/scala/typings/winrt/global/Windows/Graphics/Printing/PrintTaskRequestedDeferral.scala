@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Graphics.Printing.PrintTaskRequestedDeferral")
 @js.native
-class PrintTaskRequestedDeferral ()
+open class PrintTaskRequestedDeferral ()
   extends StObject
      with typings.winrt.Windows.Graphics.Printing.PrintTaskRequestedDeferral {
   

@@ -8,5 +8,5 @@ object traceSegmentDocumentListMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/_TraceSegmentDocumentList", "_TraceSegmentDocumentList")
   @js.native
-  val TraceSegmentDocumentList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val TraceSegmentDocumentList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

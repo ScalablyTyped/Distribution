@@ -1,7 +1,7 @@
 
 # Scala.js typings for clownface
 
-Typings are for version 1.0
+Typings are for version 1.5
 
 ## Library description:
 Simple but powerful graph traversing library
@@ -10,10 +10,10 @@ Simple but powerful graph traversing library
 | ------------------ | :-------------: |
 | Full name          | clownface |
 | Keywords           | rdf, graph, traversing |
-| # releases         | 12 |
-| # dependents       | 20 |
-| # downloads        | 78866 |
-| # stars            | 1 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 22553.0 |
+| # stars            | 30.0 |
 
 ## Links
 - [Homepage](https://github.com/rdf-ext/clownface)

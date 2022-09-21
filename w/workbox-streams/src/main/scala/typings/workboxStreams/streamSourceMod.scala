@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object streamSourceMod {
   
-  type StreamSource = Response | BodyInit | ReadableStream[js.Any]
+  type StreamSource = Response | BodyInit | ReadableStream[Any]
 }

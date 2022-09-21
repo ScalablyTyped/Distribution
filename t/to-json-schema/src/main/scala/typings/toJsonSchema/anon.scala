@@ -37,8 +37,8 @@ object anon {
     var postProcessFnc: js.UndefOr[
         js.Function3[
           /* schema */ JSONSchema3or4, 
-          /* obj */ js.Any, 
-          /* defaultFnc */ js.Function2[/* schema */ JSONSchema3or4, /* obj */ js.Any, JSONSchema3or4], 
+          /* obj */ Any, 
+          /* defaultFnc */ js.Function2[/* schema */ JSONSchema3or4, /* obj */ Any, JSONSchema3or4], 
           JSONSchema3or4
         ]
       ] = js.undefined
@@ -56,8 +56,8 @@ object anon {
       */
     var preProcessFnc: js.UndefOr[
         js.Function2[
-          /* obj */ js.Any, 
-          /* defaultFunc */ js.Function1[/* obj */ js.Any, JSONSchema3or4], 
+          /* obj */ Any, 
+          /* defaultFunc */ js.Function1[/* obj */ Any, JSONSchema3or4], 
           JSONSchema3or4
         ]
       ] = js.undefined
@@ -76,13 +76,13 @@ object anon {
       inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
       
       inline def setPostProcessFnc(
-        value: (/* schema */ JSONSchema3or4, /* obj */ js.Any, /* defaultFnc */ js.Function2[/* schema */ JSONSchema3or4, /* obj */ js.Any, JSONSchema3or4]) => JSONSchema3or4
+        value: (/* schema */ JSONSchema3or4, /* obj */ Any, /* defaultFnc */ js.Function2[/* schema */ JSONSchema3or4, /* obj */ Any, JSONSchema3or4]) => JSONSchema3or4
       ): Self = StObject.set(x, "postProcessFnc", js.Any.fromFunction3(value))
       
       inline def setPostProcessFncUndefined: Self = StObject.set(x, "postProcessFnc", js.undefined)
       
       inline def setPreProcessFnc(
-        value: (/* obj */ js.Any, /* defaultFunc */ js.Function1[/* obj */ js.Any, JSONSchema3or4]) => JSONSchema3or4
+        value: (/* obj */ Any, /* defaultFunc */ js.Function1[/* obj */ Any, JSONSchema3or4]) => JSONSchema3or4
       ): Self = StObject.set(x, "preProcessFnc", js.Any.fromFunction2(value))
       
       inline def setPreProcessFncUndefined: Self = StObject.set(x, "preProcessFnc", js.undefined)

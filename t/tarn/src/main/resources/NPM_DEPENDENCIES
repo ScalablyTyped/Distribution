@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tarn" : "3.0.1"
+      "tarn" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "tarn" : "3.0.1"
+      "tarn" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

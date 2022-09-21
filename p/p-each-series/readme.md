@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-each-series
 
-Typings are for version 2.2.0
+Typings are for version 3.0.0
 
 ## Library description:
 Iterate over promises serially
@@ -10,10 +10,10 @@ Iterate over promises serially
 | ------------------ | :-------------: |
 | Full name          | p-each-series |
 | Keywords           | promise, foreach, for-each, for, each, collection, iterable, iterator, fulfilled, async, await, promises, serial, serially, series, bluebird |
-| # releases         | 2 |
-| # dependents       | 169 |
-| # downloads        | 312227091 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3.5174016E7 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-each-series#readme)

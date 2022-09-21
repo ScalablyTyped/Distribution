@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ElasticsearchDataSourceConfig extends StObject {
   
   /**
-    * The AWS Region.
+    * The Amazon Web Services Region.
     */
   var awsRegion: String
   

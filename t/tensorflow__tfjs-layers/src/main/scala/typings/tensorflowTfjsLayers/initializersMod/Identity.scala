@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/initializers", "Identity")
 @js.native
-class Identity protected () extends Initializer {
+open class Identity protected () extends Initializer {
   def this(args: IdentityArgs) = this()
   
-  /* private */ var gain: js.Any = js.native
+  /* private */ var gain: Any = js.native
 }
 /* static members */
 object Identity {

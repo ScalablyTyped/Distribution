@@ -15,7 +15,7 @@ trait Readonlykeystringnamestri extends StObject {
   val params: js.UndefOr[js.Object] = js.undefined
   
   // tslint:disable-next-line no-redundant-undefined
-  var state: js.UndefOr[js.Any | PartialState[js.Any]] = js.undefined
+  var state: js.UndefOr[Any | PartialState[Any]] = js.undefined
 }
 object Readonlykeystringnamestri {
   
@@ -34,7 +34,7 @@ object Readonlykeystringnamestri {
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setState(value: js.Any | PartialState[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Any | PartialState[Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

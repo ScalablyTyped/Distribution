@@ -9,7 +9,9 @@ trait SchedulerResource extends StObject {
   
   var dataColorField: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  var dataParentValueField: js.UndefOr[String] = js.undefined
+  
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
   
   var dataTextField: js.UndefOr[String] = js.undefined
   
@@ -38,7 +40,11 @@ object SchedulerResource {
     
     inline def setDataColorFieldUndefined: Self = StObject.set(x, "dataColorField", js.undefined)
     
-    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataParentValueField(value: String): Self = StObject.set(x, "dataParentValueField", value.asInstanceOf[js.Any])
+    
+    inline def setDataParentValueFieldUndefined: Self = StObject.set(x, "dataParentValueField", js.undefined)
+    
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     

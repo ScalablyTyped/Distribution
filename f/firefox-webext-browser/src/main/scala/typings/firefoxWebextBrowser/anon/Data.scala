@@ -12,7 +12,7 @@ trait Data
   extends StObject
      with NativeManifest {
   
-  var data: StringDictionary[js.Any]
+  var data: StringDictionary[Any]
   
   var description: String
   
@@ -22,7 +22,7 @@ trait Data
 }
 object Data {
   
-  inline def apply(data: StringDictionary[js.Any], description: String, name: ExtensionID): Data = {
+  inline def apply(data: StringDictionary[Any], description: String, name: ExtensionID): Data = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("storage")
     __obj.asInstanceOf[Data]
@@ -30,7 +30,7 @@ object Data {
   
   extension [Self <: Data](x: Self) {
     
-    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

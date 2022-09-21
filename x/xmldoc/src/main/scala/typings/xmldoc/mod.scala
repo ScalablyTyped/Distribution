@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("xmldoc", "XmlCDataNode")
   @js.native
-  class XmlCDataNode protected ()
+  open class XmlCDataNode protected ()
     extends StObject
        with XmlNode {
     def this(cdata: String) = this()
@@ -27,7 +27,7 @@ object mod {
   
   @JSImport("xmldoc", "XmlCommentNode")
   @js.native
-  class XmlCommentNode protected ()
+  open class XmlCommentNode protected ()
     extends StObject
        with XmlNode {
     def this(comment: String) = this()
@@ -44,7 +44,7 @@ object mod {
   
   @JSImport("xmldoc", "XmlDocument")
   @js.native
-  class XmlDocument protected () extends XmlElement {
+  open class XmlDocument protected () extends XmlElement {
     def this(xml: String) = this()
     
     var doctype: String = js.native
@@ -52,7 +52,7 @@ object mod {
   
   @JSImport("xmldoc", "XmlElement")
   @js.native
-  class XmlElement protected ()
+  open class XmlElement protected ()
     extends StObject
        with XmlNode {
     def this(tag: XmlTag) = this()
@@ -112,7 +112,7 @@ object mod {
   
   @JSImport("xmldoc", "XmlTextNode")
   @js.native
-  class XmlTextNode protected ()
+  open class XmlTextNode protected ()
     extends StObject
        with XmlNode {
     def this(text: String) = this()

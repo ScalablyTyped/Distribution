@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "AppBar")
 @js.native
-class AppBar ()
-  extends Component[AppBarProps, js.Object, js.Any]
+open class AppBar ()
+  extends Component[AppBarProps, js.Object, Any]

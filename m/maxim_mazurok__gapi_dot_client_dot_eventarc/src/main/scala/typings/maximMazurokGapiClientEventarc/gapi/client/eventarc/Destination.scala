@@ -6,8 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Destination extends StObject {
   
-  /** Cloud Run fully-managed service that receives the events. The service should be running in the same project of the trigger. */
-  var cloudRunService: js.UndefOr[CloudRunService] = js.undefined
+  /** The Cloud Function resource name. Only Cloud Functions V2 is supported. Format: `projects/{project}/locations/{location}/functions/{function}` */
+  var cloudFunction: js.UndefOr[String] = js.undefined
+  
+  /** Cloud Run fully-managed resource that receives the events. The resource should be in the same project as the trigger. */
+  var cloudRun: js.UndefOr[CloudRun] = js.undefined
+  
+  /** A GKE service capable of receiving events. The service should be running in the same project as the trigger. */
+  var gke: js.UndefOr[GKE] = js.undefined
+  
+  /**
+    * The resource name of the Workflow whose Executions are triggered by the events. The Workflow resource should be deployed in the same project as the trigger. Format:
+    * `projects/{project}/locations/{location}/workflows/{workflow}`
+    */
+  var workflow: js.UndefOr[String] = js.undefined
 }
 object Destination {
   
@@ -18,8 +30,20 @@ object Destination {
   
   extension [Self <: Destination](x: Self) {
     
-    inline def setCloudRunService(value: CloudRunService): Self = StObject.set(x, "cloudRunService", value.asInstanceOf[js.Any])
+    inline def setCloudFunction(value: String): Self = StObject.set(x, "cloudFunction", value.asInstanceOf[js.Any])
     
-    inline def setCloudRunServiceUndefined: Self = StObject.set(x, "cloudRunService", js.undefined)
+    inline def setCloudFunctionUndefined: Self = StObject.set(x, "cloudFunction", js.undefined)
+    
+    inline def setCloudRun(value: CloudRun): Self = StObject.set(x, "cloudRun", value.asInstanceOf[js.Any])
+    
+    inline def setCloudRunUndefined: Self = StObject.set(x, "cloudRun", js.undefined)
+    
+    inline def setGke(value: GKE): Self = StObject.set(x, "gke", value.asInstanceOf[js.Any])
+    
+    inline def setGkeUndefined: Self = StObject.set(x, "gke", js.undefined)
+    
+    inline def setWorkflow(value: String): Self = StObject.set(x, "workflow", value.asInstanceOf[js.Any])
+    
+    inline def setWorkflowUndefined: Self = StObject.set(x, "workflow", js.undefined)
   }
 }

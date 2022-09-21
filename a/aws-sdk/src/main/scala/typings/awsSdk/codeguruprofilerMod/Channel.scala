@@ -32,7 +32,7 @@ object Channel {
     
     inline def setEventPublishers(value: EventPublishers): Self = StObject.set(x, "eventPublishers", value.asInstanceOf[js.Any])
     
-    inline def setEventPublishersVarargs(value: EventPublisher*): Self = StObject.set(x, "eventPublishers", js.Array(value :_*))
+    inline def setEventPublishersVarargs(value: EventPublisher*): Self = StObject.set(x, "eventPublishers", js.Array(value*))
     
     inline def setId(value: ChannelId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

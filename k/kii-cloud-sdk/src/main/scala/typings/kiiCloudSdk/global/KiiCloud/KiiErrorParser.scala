@@ -1,7 +1,6 @@
 package typings.kiiCloudSdk.global.KiiCloud
 
 import typings.kiiCloudSdk.KiiCloud.KiiError
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.KiiErrorParser")
 @js.native
-class KiiErrorParser ()
+open class KiiErrorParser ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.KiiErrorParser
 object KiiErrorParser {
@@ -45,5 +44,5 @@ object KiiErrorParser {
     */
   /* static member */
   inline def parse(error: String): KiiError = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(error.asInstanceOf[js.Any]).asInstanceOf[KiiError]
-  inline def parse(error: Error): KiiError = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(error.asInstanceOf[js.Any]).asInstanceOf[KiiError]
+  inline def parse(error: js.Error): KiiError = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(error.asInstanceOf[js.Any]).asInstanceOf[KiiError]
 }

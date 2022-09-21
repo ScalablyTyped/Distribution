@@ -29,6 +29,6 @@ object Discriminant {
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    inline def setMapVarargs(value: Ref*): Self = StObject.set(x, "map", js.Array(value :_*))
+    inline def setMapVarargs(value: Ref*): Self = StObject.set(x, "map", js.Array(value*))
   }
 }

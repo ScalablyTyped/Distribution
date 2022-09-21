@@ -8,7 +8,7 @@ object anon {
   
   trait AutoSave extends StObject {
     
-    var autoSave: js.Any
+    var autoSave: Any
     
     var defaultContent: String
     
@@ -16,14 +16,14 @@ object anon {
   }
   object AutoSave {
     
-    inline def apply(autoSave: js.Any, defaultContent: String, name: String): AutoSave = {
+    inline def apply(autoSave: Any, defaultContent: String, name: String): AutoSave = {
       val __obj = js.Dynamic.literal(autoSave = autoSave.asInstanceOf[js.Any], defaultContent = defaultContent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutoSave]
     }
     
     extension [Self <: AutoSave](x: Self) {
       
-      inline def setAutoSave(value: js.Any): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
+      inline def setAutoSave(value: Any): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setDefaultContent(value: String): Self = StObject.set(x, "defaultContent", value.asInstanceOf[js.Any])
       

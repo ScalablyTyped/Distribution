@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.Size")
 @js.native
-class Size protected ()
+open class Size protected ()
   extends StObject
      with typings.paper.paper.Size {
   /** 
     * Creates a Size object using the numbers in the given array as
     * dimensions.
     */
-  def this(array: js.Array[js.Any]) = this()
+  def this(array: js.Array[Any]) = this()
   /** 
     * Creates a Size object using the properties in the given object.
     */

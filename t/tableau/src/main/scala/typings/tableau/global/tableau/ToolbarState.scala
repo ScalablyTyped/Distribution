@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.ToolbarState")
 @js.native
-class ToolbarState ()
+open class ToolbarState ()
   extends StObject
      with typings.tableau.tableau.ToolbarState {
   

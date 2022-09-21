@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.NumericTextBox")
 @js.native
-class NumericTextBox protected ()
+open class NumericTextBox protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.NumericTextBox {
   def this(element: Element) = this()

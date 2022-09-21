@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol
 
-import typings.vscodeJsonrpc.mod.ProgressType
-import typings.vscodeJsonrpc.mod.RequestHandler
+import typings.vscodeJsonrpc.connectionMod.RequestHandler
+import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.PartialResultParams
 import typings.vscodeLanguageserverProtocol.protocolMod.StaticRegistrationOptions
@@ -24,20 +24,19 @@ object protocolImplementationMod {
   
   object ImplementationRequest {
     
-    @JSImport("vscode-languageserver-protocol/lib/protocol.implementation", "ImplementationRequest.method")
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.implementation", "ImplementationRequest.messageDirection")
+    @js.native
+    val messageDirection: MessageDirection = js.native
+    
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.implementation", "ImplementationRequest.method")
     @js.native
     val method: textDocumentSlashimplementation = js.native
     
-    /** @deprecated Use ImplementationRequest.type */
-    @JSImport("vscode-languageserver-protocol/lib/protocol.implementation", "ImplementationRequest.resultType")
-    @js.native
-    val resultType: ProgressType[js.Array[Location | LocationLink]] = js.native
-    
-    @JSImport("vscode-languageserver-protocol/lib/protocol.implementation", "ImplementationRequest.type")
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.implementation", "ImplementationRequest.type")
     @js.native
     val `type`: ProtocolRequestType[
         ImplementationParams, 
-        Location | (js.Array[Location | LocationLink]) | Null, 
+        Definition | js.Array[LocationLink] | Null, 
         js.Array[Location | LocationLink], 
         Unit, 
         ImplementationRegistrationOptions
@@ -58,7 +57,7 @@ object protocolImplementationMod {
     /**
       * The client supports additional metadata in the form of definition links.
       *
-      * Since 3.14.0
+      * @since 3.14.0
       */
     var linkSupport: js.UndefOr[Boolean] = js.undefined
   }

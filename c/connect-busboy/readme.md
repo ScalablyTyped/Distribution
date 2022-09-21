@@ -1,7 +1,7 @@
 
 # Scala.js typings for connect-busboy
 
-Typings are for version 0.0
+Typings are for version 1.0
 
 ## Library description:
 Connect middleware for busboy
@@ -10,13 +10,13 @@ Connect middleware for busboy
 | ------------------ | :-------------: |
 | Full name          | connect-busboy |
 | Keywords           | connect, middleware, uploads, forms, multipart, form-data |
-| # releases         | 0 |
-| # dependents       | 98 |
-| # downloads        | 1129937 |
-| # stars            | 15 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 136335.66666666666 |
+| # stars            | 150.0 |
 
 ## Links
-- [Homepage](https://github.com/mscdex/connect-busboy)
+- [Homepage](https://github.com/mscdex/connect-busboy#readme)
 - [Bugs](https://github.com/mscdex/connect-busboy/issues)
 - [Repository](https://github.com/mscdex/connect-busboy)
 - [Npm](https://www.npmjs.com/package/connect-busboy)

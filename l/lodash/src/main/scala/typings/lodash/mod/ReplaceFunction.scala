@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ReplaceFunction extends StObject {
   
-  def apply(`match`: java.lang.String, args: js.Any*): java.lang.String = js.native
+  def apply(`match`: java.lang.String, args: Any*): java.lang.String = js.native
 }

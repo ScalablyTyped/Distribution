@@ -15,14 +15,14 @@ object deviceMotionMod {
   
   @JSImport("react-fns/dist/DeviceMotion", "DeviceMotion")
   @js.native
-  class DeviceMotion protected ()
+  open class DeviceMotion protected ()
     extends typings.reactFns.deviceMotionDeviceMotionMod.DeviceMotion {
     def this(props: SharedRenderProps[DeviceMotionProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SharedRenderProps[DeviceMotionProps], context: js.Any) = this()
+    def this(props: SharedRenderProps[DeviceMotionProps], context: Any) = this()
   }
   
   inline def withDeviceMotion[Props](Component: ComponentType[Props & DeviceMotionProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withDeviceMotion")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]

@@ -11,14 +11,11 @@ JavaScript Vector Library
 | Full name          | snapsvg |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 78 |
-| # downloads        | 5042163 |
-| # stars            | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 266003.0 |
+| # stars            | 13494.0 |
 
 ## Links
-- [Homepage](https://github.com/adobe-webplatform/Snap.svg#readme)
-- [Bugs](https://github.com/adobe-webplatform/Snap.svg/issues)
-- [Repository](https://github.com/adobe-webplatform/Snap.svg)
 - [Npm](https://www.npmjs.com/package/snapsvg)
     
 

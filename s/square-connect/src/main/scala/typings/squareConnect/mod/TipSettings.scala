@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "TipSettings")
 @js.native
-class TipSettings () extends StObject {
+open class TipSettings () extends StObject {
   
   /**
     * Indicates whether tipping is enabled for this checkout. Defaults to false.

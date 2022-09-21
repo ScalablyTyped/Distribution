@@ -17,7 +17,7 @@ object ionic1Mod {
   
   @JSImport("ionic/lib/project/ionic1", "Ionic1Project")
   @js.native
-  class Ionic1Project protected () extends Project {
+  open class Ionic1Project protected () extends Project {
     def this(details: ProjectDetailsResult, e: ProjectDeps) = this()
     
     /* protected */ var bowerJsonFile: js.UndefOr[BowerJson] = js.native

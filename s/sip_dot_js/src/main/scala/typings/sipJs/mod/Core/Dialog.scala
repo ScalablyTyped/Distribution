@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Core.Dialog")
 @js.native
-class Dialog protected ()
+open class Dialog protected ()
   extends typings.sipJs.coreMod.Dialog {
   /**
     * Dialog constructor.

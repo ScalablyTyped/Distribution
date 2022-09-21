@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object resizeErrorMod {
   
-  @JSImport("hdr-histogram-js/packedarray/ResizeError", "ResizeError")
+  @JSImport("hdr-histogram-js/dist/packedarray/ResizeError", "ResizeError")
   @js.native
-  class ResizeError protected () extends StObject {
+  open class ResizeError protected () extends StObject {
     def this(newSize: Double) = this()
     
     var newSize: Double = js.native

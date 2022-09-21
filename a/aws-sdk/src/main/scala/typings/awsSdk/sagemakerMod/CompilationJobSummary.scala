@@ -9,7 +9,7 @@ trait CompilationJobSummary extends StObject {
   /**
     * The time when the model compilation job completed.
     */
-  var CompilationEndTime: js.UndefOr[Timestamp] = js.undefined
+  var CompilationEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the model compilation job.
@@ -29,7 +29,7 @@ trait CompilationJobSummary extends StObject {
   /**
     * The time when the model compilation job started.
     */
-  var CompilationStartTime: js.UndefOr[Timestamp] = js.undefined
+  var CompilationStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The type of device that the model will run on after the compilation job has completed.
@@ -54,12 +54,12 @@ trait CompilationJobSummary extends StObject {
   /**
     * The time when the model compilation job was created.
     */
-  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime
+  var CreationTime: js.Date
   
   /**
     * The time when the model compilation job was last modified.
     */
-  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
 }
 object CompilationJobSummary {
   
@@ -67,7 +67,7 @@ object CompilationJobSummary {
     CompilationJobArn: CompilationJobArn,
     CompilationJobName: EntityName,
     CompilationJobStatus: CompilationJobStatus,
-    CreationTime: CreationTime
+    CreationTime: js.Date
   ): CompilationJobSummary = {
     val __obj = js.Dynamic.literal(CompilationJobArn = CompilationJobArn.asInstanceOf[js.Any], CompilationJobName = CompilationJobName.asInstanceOf[js.Any], CompilationJobStatus = CompilationJobStatus.asInstanceOf[js.Any], CreationTime = CreationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompilationJobSummary]
@@ -75,7 +75,7 @@ object CompilationJobSummary {
   
   extension [Self <: CompilationJobSummary](x: Self) {
     
-    inline def setCompilationEndTime(value: Timestamp): Self = StObject.set(x, "CompilationEndTime", value.asInstanceOf[js.Any])
+    inline def setCompilationEndTime(value: js.Date): Self = StObject.set(x, "CompilationEndTime", value.asInstanceOf[js.Any])
     
     inline def setCompilationEndTimeUndefined: Self = StObject.set(x, "CompilationEndTime", js.undefined)
     
@@ -85,7 +85,7 @@ object CompilationJobSummary {
     
     inline def setCompilationJobStatus(value: CompilationJobStatus): Self = StObject.set(x, "CompilationJobStatus", value.asInstanceOf[js.Any])
     
-    inline def setCompilationStartTime(value: Timestamp): Self = StObject.set(x, "CompilationStartTime", value.asInstanceOf[js.Any])
+    inline def setCompilationStartTime(value: js.Date): Self = StObject.set(x, "CompilationStartTime", value.asInstanceOf[js.Any])
     
     inline def setCompilationStartTimeUndefined: Self = StObject.set(x, "CompilationStartTime", js.undefined)
     
@@ -105,9 +105,9 @@ object CompilationJobSummary {
     
     inline def setCompilationTargetPlatformOsUndefined: Self = StObject.set(x, "CompilationTargetPlatformOs", js.undefined)
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
   }

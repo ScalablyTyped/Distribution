@@ -9,7 +9,7 @@ object anon {
   
   trait DictotherOptions
     extends StObject
-       with /* otherOptions */ StringDictionary[js.Any] {
+       with /* otherOptions */ StringDictionary[Any] {
     
     var cache: js.UndefOr[Boolean] = js.undefined
   }

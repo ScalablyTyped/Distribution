@@ -2,9 +2,8 @@ package typings.apn
 
 import typings.apn.anon.Reason
 import typings.apn.apnNumbers.`1`
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,8 +19,8 @@ object mod {
   /**
     * You can optionally pass in an object representing the payload, or configure properties on the returned object.
     */
-  class Notification () extends StObject {
-    def this(payload: js.Any) = this()
+  open class Notification () extends StObject {
+    def this(payload: Any) = this()
     
     /**
       * The value to specify for `payload.aps.alert` can be either a `String` or an `Object` as outlined by the payload documentation.
@@ -65,7 +64,7 @@ object mod {
     /**
       * This Object is JSON encoded and sent as the notification payload. When properties have been set on notification.aps (either directly or with convenience setters) these are added to the payload just before it is sent. If payload already contains an aps property it is replaced.
       */
-    var payload: js.Any = js.native
+    var payload: Any = js.native
     
     /**
       * Provide one of the following values:
@@ -79,7 +78,7 @@ object mod {
     /**
       * If supplied this payload will be encoded and transmitted as-is. The convenience setters will have no effect on the JSON output.
       */
-    var rawPayload: js.Any = js.native
+    var rawPayload: Any = js.native
     
     /**
       * The value to specify for `payload.aps.sound`
@@ -101,7 +100,7 @@ object mod {
   
   @JSImport("apn", "Provider")
   @js.native
-  class Provider protected () extends EventEmitter {
+  open class Provider protected () extends EventEmitter {
     def this(options: ProviderOptions) = this()
     
     /**
@@ -180,7 +179,7 @@ object mod {
       
       inline def `setUrl-argsUndefined`: Self = StObject.set(x, "url-args", js.undefined)
       
-      inline def `setUrl-argsVarargs`(value: String*): Self = StObject.set(x, "url-args", js.Array(value :_*))
+      inline def `setUrl-argsVarargs`(value: String*): Self = StObject.set(x, "url-args", js.Array(value*))
     }
   }
   
@@ -192,13 +191,13 @@ object mod {
     
     var body: js.UndefOr[String] = js.undefined
     
-    var `loc-args`: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var `loc-args`: js.UndefOr[js.Array[Any]] = js.undefined
     
     var `loc-key`: js.UndefOr[String] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
-    var `title-loc-args`: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var `title-loc-args`: js.UndefOr[js.Array[Any]] = js.undefined
     
     var `title-loc-key`: js.UndefOr[String] = js.undefined
   }
@@ -223,11 +222,11 @@ object mod {
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      inline def `setLoc-args`(value: js.Array[js.Any]): Self = StObject.set(x, "loc-args", value.asInstanceOf[js.Any])
+      inline def `setLoc-args`(value: js.Array[Any]): Self = StObject.set(x, "loc-args", value.asInstanceOf[js.Any])
       
       inline def `setLoc-argsUndefined`: Self = StObject.set(x, "loc-args", js.undefined)
       
-      inline def `setLoc-argsVarargs`(value: js.Any*): Self = StObject.set(x, "loc-args", js.Array(value :_*))
+      inline def `setLoc-argsVarargs`(value: Any*): Self = StObject.set(x, "loc-args", js.Array(value*))
       
       inline def `setLoc-key`(value: String): Self = StObject.set(x, "loc-key", value.asInstanceOf[js.Any])
       
@@ -235,11 +234,11 @@ object mod {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      inline def `setTitle-loc-args`(value: js.Array[js.Any]): Self = StObject.set(x, "title-loc-args", value.asInstanceOf[js.Any])
+      inline def `setTitle-loc-args`(value: js.Array[Any]): Self = StObject.set(x, "title-loc-args", value.asInstanceOf[js.Any])
       
       inline def `setTitle-loc-argsUndefined`: Self = StObject.set(x, "title-loc-args", js.undefined)
       
-      inline def `setTitle-loc-argsVarargs`(value: js.Any*): Self = StObject.set(x, "title-loc-args", js.Array(value :_*))
+      inline def `setTitle-loc-argsVarargs`(value: Any*): Self = StObject.set(x, "title-loc-args", js.Array(value*))
       
       inline def `setTitle-loc-key`(value: String): Self = StObject.set(x, "title-loc-key", value.asInstanceOf[js.Any])
       
@@ -292,7 +291,7 @@ object mod {
       
       inline def `setLoc-argsUndefined`: Self = StObject.set(x, "loc-args", js.undefined)
       
-      inline def `setLoc-argsVarargs`(value: String*): Self = StObject.set(x, "loc-args", js.Array(value :_*))
+      inline def `setLoc-argsVarargs`(value: String*): Self = StObject.set(x, "loc-args", js.Array(value*))
       
       inline def `setLoc-key`(value: String): Self = StObject.set(x, "loc-key", value.asInstanceOf[js.Any])
       
@@ -308,7 +307,7 @@ object mod {
       
       inline def `setTitle-loc-argsUndefined`: Self = StObject.set(x, "title-loc-args", js.undefined)
       
-      inline def `setTitle-loc-argsVarargs`(value: String*): Self = StObject.set(x, "title-loc-args", js.Array(value :_*))
+      inline def `setTitle-loc-argsVarargs`(value: String*): Self = StObject.set(x, "title-loc-args", js.Array(value*))
       
       inline def `setTitle-loc-key`(value: String): Self = StObject.set(x, "title-loc-key", value.asInstanceOf[js.Any])
       
@@ -378,7 +377,7 @@ object mod {
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value*))
       
       inline def setCert(value: String | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -452,7 +451,7 @@ object mod {
     
     var device: String
     
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[js.Error] = js.undefined
     
     var response: js.UndefOr[Reason] = js.undefined
     
@@ -469,7 +468,7 @@ object mod {
       
       inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -517,11 +516,11 @@ object mod {
       
       inline def setFailed(value: js.Array[ResponseFailure]): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
-      inline def setFailedVarargs(value: ResponseFailure*): Self = StObject.set(x, "failed", js.Array(value :_*))
+      inline def setFailedVarargs(value: ResponseFailure*): Self = StObject.set(x, "failed", js.Array(value*))
       
       inline def setSent(value: js.Array[ResponseSent]): Self = StObject.set(x, "sent", value.asInstanceOf[js.Any])
       
-      inline def setSentVarargs(value: ResponseSent*): Self = StObject.set(x, "sent", js.Array(value :_*))
+      inline def setSentVarargs(value: ResponseSent*): Self = StObject.set(x, "sent", js.Array(value*))
     }
   }
 }

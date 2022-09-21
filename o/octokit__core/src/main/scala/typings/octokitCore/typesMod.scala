@@ -3,8 +3,11 @@ package typings.octokitCore
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.octokitCore.anon.Debug
+import typings.octokitCore.anon.Error
+import typings.octokitCore.anon.Options
 import typings.octokitCore.mod.Octokit
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
+import typings.std.Exclude
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,17 +15,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesMod {
   
-  type AnyFunction = js.Function1[/* args */ js.Any, js.Any]
+  type AnyFunction = js.Function1[/* args */ Any, Any]
   
-  type Constructor[T] = Instantiable1[/* args (repeated) */ js.Any, T]
+  type Constructor[T] = Instantiable1[/* args (repeated) */ Any, T]
+  
+  trait Hooks
+    extends StObject
+       with /* key */ StringDictionary[Options] {
+    
+    var request: Error
+  }
+  object Hooks {
+    
+    inline def apply(request: Error): Hooks = {
+      val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Hooks]
+    }
+    
+    extension [Self <: Hooks](x: Self) {
+      
+      inline def setRequest(value: Error): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait OctokitOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* option */ StringDictionary[Any] {
     
-    var auth: js.UndefOr[js.Any] = js.undefined
+    var auth: js.UndefOr[Any] = js.undefined
     
-    var authStrategy: js.UndefOr[js.Any] = js.undefined
+    var authStrategy: js.UndefOr[Any] = js.undefined
     
     var baseUrl: js.UndefOr[String] = js.undefined
     
@@ -45,9 +67,9 @@ object typesMod {
     
     extension [Self <: OctokitOptions](x: Self) {
       
-      inline def setAuth(value: js.Any): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: Any): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      inline def setAuthStrategy(value: js.Any): Self = StObject.set(x, "authStrategy", value.asInstanceOf[js.Any])
+      inline def setAuthStrategy(value: Any): Self = StObject.set(x, "authStrategy", value.asInstanceOf[js.Any])
       
       inline def setAuthStrategyUndefined: Self = StObject.set(x, "authStrategy", js.undefined)
       
@@ -65,7 +87,7 @@ object typesMod {
       
       inline def setPreviewsUndefined: Self = StObject.set(x, "previews", js.undefined)
       
-      inline def setPreviewsVarargs(value: String*): Self = StObject.set(x, "previews", js.Array(value :_*))
+      inline def setPreviewsVarargs(value: String*): Self = StObject.set(x, "previews", js.Array(value*))
       
       inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
@@ -81,15 +103,18 @@ object typesMod {
     }
   }
   
-  type OctokitPlugin = js.Function2[/* octokit */ Octokit, /* options */ OctokitOptions, StringDictionary[js.Any] | Unit]
+  type OctokitPlugin = js.Function2[/* octokit */ Octokit, /* options */ OctokitOptions, StringDictionary[Any] | Unit]
   
   type RequestParameters = typings.octokitTypes.requestParametersMod.RequestParameters
   
   type ReturnTypeOf[T /* <: AnyFunction | js.Array[AnyFunction] */] = (UnionToIntersection[
-    ReturnType[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
+    Exclude[
+      ReturnType[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
+      ], 
+      Unit
     ]
   ]) | ReturnType[T]
   
-  type UnionToIntersection[Union] = js.Any
+  type UnionToIntersection[Union] = Any
 }

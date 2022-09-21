@@ -1,7 +1,7 @@
 package typings.materialTabBar
 
 import typings.materialTab.typesMod.MDCTabDimensions
-import typings.std.ClientRect
+import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ object adapterMod {
       * @param clientRect The client rect of the previously active Tab Indicator
       */
     def activateTabAtIndex(index: Double): Unit = js.native
-    def activateTabAtIndex(index: Double, clientRect: ClientRect): Unit = js.native
+    def activateTabAtIndex(index: Double, clientRect: DOMRect): Unit = js.native
     
     /**
       * Deactivates the tab at the given index
@@ -72,7 +72,7 @@ object adapterMod {
       * Returns the client rect of the tab's indicator
       * @param index The index of the tab
       */
-    def getTabIndicatorClientRectAtIndex(index: Double): ClientRect = js.native
+    def getTabIndicatorClientRectAtIndex(index: Double): DOMRect = js.native
     
     /**
       * Returns the length of the tab list

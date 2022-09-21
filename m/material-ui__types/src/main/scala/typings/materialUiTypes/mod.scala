@@ -15,7 +15,7 @@ object mod {
   
   type ConsistentWith[DecorationTargetProps, InjectedProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
-    */ typings.materialUiTypes.materialUiTypesStrings.ConsistentWith & TopLevel[js.Any]
+    */ typings.materialUiTypes.materialUiTypesStrings.ConsistentWith & TopLevel[Any]
   
   type GenerateStringUnion[T] = Extract[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ Key in keyof T ]: true extends T[Key]? Key : never}[keyof T] */ js.Any, 
@@ -29,10 +29,10 @@ object mod {
   type Overwrite[T, U] = (Omit[T, /* keyof U */ String]) & U
   
   type PropInjector[InjectedProps, AdditionalProps] = js.Function1[
-    /* component */ js.Any, 
+    /* component */ Any, 
     ComponentType[
       (Omit[
-        LibraryManagedAttributes[js.Any, ComponentProps[js.Any]], 
+        LibraryManagedAttributes[Any, ComponentProps[Any]], 
         /* keyof InjectedProps */ String
       ]) & AdditionalProps
     ]

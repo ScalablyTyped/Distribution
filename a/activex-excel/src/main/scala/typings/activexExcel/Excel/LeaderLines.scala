@@ -19,7 +19,7 @@ trait LeaderLines extends StObject {
   
   val Format: ChartFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Select(): Unit
 }
@@ -32,7 +32,7 @@ object LeaderLines {
     Delete: () => Unit,
     ExcelDotLeaderLines_typekey: LeaderLines,
     Format: ChartFormat,
-    Parent: js.Any,
+    Parent: Any,
     Select: () => Unit
   ): LeaderLines = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Border = Border.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Format = Format.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Select = js.Any.fromFunction0(Select))
@@ -54,7 +54,7 @@ object LeaderLines {
     
     inline def setFormat(value: ChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
   }

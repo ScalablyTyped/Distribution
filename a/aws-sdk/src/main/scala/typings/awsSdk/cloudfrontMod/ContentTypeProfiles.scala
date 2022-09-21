@@ -29,7 +29,7 @@ object ContentTypeProfiles {
     
     inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    inline def setItemsVarargs(value: ContentTypeProfile*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ContentTypeProfile*): Self = StObject.set(x, "Items", js.Array(value*))
     
     inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }

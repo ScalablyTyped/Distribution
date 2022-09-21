@@ -25,7 +25,7 @@ trait Recipient extends StObject {
   val EntryID: String = js.native
   
   def FreeBusy(Start: VarDate, MinPerChar: Double): String = js.native
-  def FreeBusy(Start: VarDate, MinPerChar: Double, CompleteFormat: js.Any): String = js.native
+  def FreeBusy(Start: VarDate, MinPerChar: Double, CompleteFormat: Any): String = js.native
   
   val Index: Double = js.native
   
@@ -36,7 +36,7 @@ trait Recipient extends StObject {
   /* private */ @JSName("Outlook.Recipient_typekey")
   var OutlookDotRecipient_typekey: Recipient = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor = js.native
   

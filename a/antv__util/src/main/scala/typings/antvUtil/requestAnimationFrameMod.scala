@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object requestAnimationFrameMod {
   
-  @JSImport("@antv/util/lib/request-animation-frame", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/request-animation-frame", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(fn: FrameRequestCallback): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(fn: FrameRequestCallback): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

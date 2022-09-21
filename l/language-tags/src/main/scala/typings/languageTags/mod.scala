@@ -1,7 +1,6 @@
 package typings.languageTags
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,8 +105,8 @@ object mod extends Shortcut {
       */
     def search(description: String): js.Array[typings.languageTags.subtagMod.^ | typings.languageTags.tagMod.^] = js.native
     def search(description: String, all: Boolean): js.Array[typings.languageTags.subtagMod.^ | typings.languageTags.tagMod.^] = js.native
-    def search(description: RegExp): js.Array[typings.languageTags.subtagMod.^ | typings.languageTags.tagMod.^] = js.native
-    def search(description: RegExp, all: Boolean): js.Array[typings.languageTags.subtagMod.^ | typings.languageTags.tagMod.^] = js.native
+    def search(description: js.RegExp): js.Array[typings.languageTags.subtagMod.^ | typings.languageTags.tagMod.^] = js.native
+    def search(description: js.RegExp, all: Boolean): js.Array[typings.languageTags.subtagMod.^ | typings.languageTags.tagMod.^] = js.native
     
     /**
       * Look up one or more subtags. Returns an array of `Subtag` objects. Returns an empty array if all of the subtags

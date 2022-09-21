@@ -18,9 +18,6 @@ import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.TRIM
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.UNIFORM_SCALING
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.WriteProvisionedThroughputExceeded
 import typings.awsSdkClientKinesisBrowser.typesPutRecordsRequestEntryMod.PutRecordsRequestEntry
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +56,7 @@ object inputTypesUnionMod {
   trait InputTypesUnion extends StObject
   object InputTypesUnion {
     
-    inline def AddTagsToStreamInput(StreamName: String, Tags: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): typings.awsSdkClientKinesisBrowser.typesAddTagsToStreamInputMod.AddTagsToStreamInput = {
+    inline def AddTagsToStreamInput(StreamName: String, Tags: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): typings.awsSdkClientKinesisBrowser.typesAddTagsToStreamInputMod.AddTagsToStreamInput = {
       val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesAddTagsToStreamInputMod.AddTagsToStreamInput]
     }
@@ -107,7 +104,7 @@ object inputTypesUnionMod {
     inline def DisableEnhancedMonitoringInput(
       ShardLevelMetrics: (js.Array[
           IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
-        ]) | (Iterable[
+        ]) | (js.Iterable[
           IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
         ]),
       StreamName: String
@@ -119,7 +116,7 @@ object inputTypesUnionMod {
     inline def EnableEnhancedMonitoringInput(
       ShardLevelMetrics: (js.Array[
           IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
-        ]) | (Iterable[
+        ]) | (js.Iterable[
           IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
         ]),
       StreamName: String
@@ -172,12 +169,19 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesMergeShardsInputMod.MergeShardsInput]
     }
     
-    inline def PutRecordInput(Data: ArrayBuffer | ArrayBufferView | String, PartitionKey: String, StreamName: String): typings.awsSdkClientKinesisBrowser.typesPutRecordInputMod.PutRecordInput = {
+    inline def PutRecordInput(
+      Data: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String,
+      PartitionKey: String,
+      StreamName: String
+    ): typings.awsSdkClientKinesisBrowser.typesPutRecordInputMod.PutRecordInput = {
       val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesPutRecordInputMod.PutRecordInput]
     }
     
-    inline def PutRecordsInput(Records: js.Array[PutRecordsRequestEntry] | Iterable[PutRecordsRequestEntry], StreamName: String): typings.awsSdkClientKinesisBrowser.typesPutRecordsInputMod.PutRecordsInput = {
+    inline def PutRecordsInput(
+      Records: js.Array[PutRecordsRequestEntry] | js.Iterable[PutRecordsRequestEntry],
+      StreamName: String
+    ): typings.awsSdkClientKinesisBrowser.typesPutRecordsInputMod.PutRecordsInput = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesPutRecordsInputMod.PutRecordsInput]
     }
@@ -187,7 +191,7 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesRegisterStreamConsumerInputMod.RegisterStreamConsumerInput]
     }
     
-    inline def RemoveTagsFromStreamInput(StreamName: String, TagKeys: js.Array[String] | Iterable[String]): typings.awsSdkClientKinesisBrowser.typesRemoveTagsFromStreamInputMod.RemoveTagsFromStreamInput = {
+    inline def RemoveTagsFromStreamInput(StreamName: String, TagKeys: js.Array[String] | js.Iterable[String]): typings.awsSdkClientKinesisBrowser.typesRemoveTagsFromStreamInputMod.RemoveTagsFromStreamInput = {
       val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesRemoveTagsFromStreamInputMod.RemoveTagsFromStreamInput]
     }

@@ -8,5 +8,5 @@ object pullRequestDoesNotExistExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/PullRequestDoesNotExistException", "PullRequestDoesNotExistException")
   @js.native
-  val PullRequestDoesNotExistException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PullRequestDoesNotExistException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

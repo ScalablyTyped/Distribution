@@ -25,7 +25,7 @@ trait ASPxClientVerticalGridBatchEditApi extends StObject {
     * Deletes a record with a specified key value when ASPxVerticalGrid is in Batch Edit mode.
     * @param key An object that uniquely identifies the record.
     */
-  def DeleteRecordByKey(key: js.Any): Unit = js.native
+  def DeleteRecordByKey(key: Any): Unit = js.native
   
   /**
     * Ends the cell(s) editing.
@@ -37,7 +37,7 @@ trait ASPxClientVerticalGridBatchEditApi extends StObject {
     * @param visibleIndex An integer value that is the visible index.
     * @param columnFieldNameOrId A string value that is the column's Field Name or ID.
     */
-  def GetCellTextContainer(visibleIndex: Double, columnFieldNameOrId: String): js.Any = js.native
+  def GetCellTextContainer(visibleIndex: Double, columnFieldNameOrId: String): Any = js.native
   
   /**
     * Gets the value of the specified cell. An object containing the specified cell's value.
@@ -45,15 +45,15 @@ trait ASPxClientVerticalGridBatchEditApi extends StObject {
     * @param rowFieldNameOrId A string value that specifies the field name or unique identifier (the row's WebColumnBase.Name property value) of a row containing the processed cell.
     * @param initial true, to return the initial (server) value; false, to return a value currently contained on the client side (modified value).
     */
-  def GetCellValue(visibleIndex: Double, rowFieldNameOrId: String): js.Any = js.native
-  def GetCellValue(visibleIndex: Double, rowFieldNameOrId: String, initial: Boolean): js.Any = js.native
+  def GetCellValue(visibleIndex: Double, rowFieldNameOrId: String): Any = js.native
+  def GetCellValue(visibleIndex: Double, rowFieldNameOrId: String, initial: Boolean): Any = js.native
   
   /**
     * Provides the text displayed within the cell according to the specified display format rule. A string value representing the cell's displayed text.
     * @param columnFieldNameOrId A string value representing the row's unique identifier or field name.
     * @param value An object representing a value.
     */
-  def GetColumnDisplayText(columnFieldNameOrId: String, value: js.Any): String = js.native
+  def GetColumnDisplayText(columnFieldNameOrId: String, value: Any): String = js.native
   
   /**
     * Returns an array of the deleted record visible indices.
@@ -86,7 +86,7 @@ trait ASPxClientVerticalGridBatchEditApi extends StObject {
   /**
     * Returns an object that stores unsaved changes.
     */
-  def GetUnsavedChanges(): js.Any = js.native
+  def GetUnsavedChanges(): Any = js.native
   
   /**
     * Returns an array of the updated records visible indices.
@@ -135,7 +135,7 @@ trait ASPxClientVerticalGridBatchEditApi extends StObject {
     * Recovers a record with a specified key value when ASPxVerticalGrid is in Batch Edit mode.
     * @param key An object that uniquely identifies the record.
     */
-  def RecoverRecordByKey(key: js.Any): Unit = js.native
+  def RecoverRecordByKey(key: Any): Unit = js.native
   
   /**
     * Resets changes in the specified cell.
@@ -153,19 +153,19 @@ trait ASPxClientVerticalGridBatchEditApi extends StObject {
     * @param displayText A string value that specifies the cell display text.
     * @param cancelCellHighlighting true to cancel highlighting of the modified cell, false to highlight the modified cell.
     */
-  def SetCellValue(visibleIndex: Double, rowFieldNameOrId: String, value: js.Any): Unit = js.native
-  def SetCellValue(visibleIndex: Double, rowFieldNameOrId: String, value: js.Any, displayText: String): Unit = js.native
+  def SetCellValue(visibleIndex: Double, rowFieldNameOrId: String, value: Any): Unit = js.native
+  def SetCellValue(visibleIndex: Double, rowFieldNameOrId: String, value: Any, displayText: String): Unit = js.native
   def SetCellValue(
     visibleIndex: Double,
     rowFieldNameOrId: String,
-    value: js.Any,
+    value: Any,
     displayText: String,
     cancelCellHighlighting: Boolean
   ): Unit = js.native
   def SetCellValue(
     visibleIndex: Double,
     rowFieldNameOrId: String,
-    value: js.Any,
+    value: Any,
     displayText: Unit,
     cancelCellHighlighting: Boolean
   ): Unit = js.native

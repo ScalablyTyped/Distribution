@@ -1,6 +1,5 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ trait IDirectionsRequestOptions extends StObject {
   var routeOptimization: js.UndefOr[RouteOptimization] = js.undefined
   
   /** The time to use when calculating the route. If this property is set to null, the current time is used */
-  var time: js.UndefOr[Date] = js.undefined
+  var time: js.UndefOr[js.Date] = js.undefined
   
   /** The type of the time specified. The default value is departure. */
   var timeType: js.UndefOr[TimeType] = js.undefined
@@ -58,7 +57,7 @@ object IDirectionsRequestOptions {
     
     inline def setRouteAvoidanceUndefined: Self = StObject.set(x, "routeAvoidance", js.undefined)
     
-    inline def setRouteAvoidanceVarargs(value: RouteAvoidance*): Self = StObject.set(x, "routeAvoidance", js.Array(value :_*))
+    inline def setRouteAvoidanceVarargs(value: RouteAvoidance*): Self = StObject.set(x, "routeAvoidance", js.Array(value*))
     
     inline def setRouteDraggable(value: Boolean): Self = StObject.set(x, "routeDraggable", value.asInstanceOf[js.Any])
     
@@ -76,7 +75,7 @@ object IDirectionsRequestOptions {
     
     inline def setRouteOptimizationUndefined: Self = StObject.set(x, "routeOptimization", js.undefined)
     
-    inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     inline def setTimeType(value: TimeType): Self = StObject.set(x, "timeType", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,7 @@ trait i18nAPI extends StObject {
     * @param phraseOrOptions - The phrase to translate or options for translation
     * @returns The translated phrase
     */
-  def __mf(phraseOrOptions: String, replace: js.Any*): String = js.native
+  def __mf(phraseOrOptions: String, replace: Any*): String = js.native
   /**
     * Translate the given phrase using locale configuration and MessageFormat
     * @param phraseOrOptions - The phrase to translate or options for translation
@@ -63,7 +63,7 @@ trait i18nAPI extends StObject {
     * @returns The translated phrase
     */
   def __mf(phraseOrOptions: String, replacements: Replacements): String = js.native
-  def __mf(phraseOrOptions: TranslateOptions, replace: js.Any*): String = js.native
+  def __mf(phraseOrOptions: TranslateOptions, replace: Any*): String = js.native
   def __mf(phraseOrOptions: TranslateOptions, replacements: Replacements): String = js.native
   
   /**

@@ -10,15 +10,12 @@ CacheFactory is a very simple and useful cache for the browser.
 | ------------------ | :-------------: |
 | Full name          | cachefactory |
 | Keywords           | cache |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 144218 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9572.0 |
+| # stars            | 31.0 |
 
 ## Links
-- [Homepage](https://github.com/jmdobry/CacheFactory)
-- [Bugs](https://github.com/jmdobry/CacheFactory/issues)
-- [Repository](https://github.com/jmdobry/CacheFactory)
 - [Npm](https://www.npmjs.com/package/cachefactory)
     
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.postmanCollection.mod.PropertyBaseDefinition because Already inherited
 - typings.postmanCollection.mod.RequestBodyDefinition because var conflicts: description. Inlined mode, raw, urlencoded, file, formdata */ @JSImport("postman-collection", "RequestBody")
 @js.native
-class RequestBody protected () extends PropertyBase[RequestBodyDefinition] {
+open class RequestBody protected () extends PropertyBase[RequestBodyDefinition] {
   def this(options: RequestBodyDefinition) = this()
   
   var file: js.UndefOr[SrcString | String] = js.native

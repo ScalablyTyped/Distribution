@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Permute")
 @js.native
-class Permute protected () extends Layer {
+open class Permute protected () extends Layer {
   def this(args: PermuteLayerArgs) = this()
   
   val dims: js.Array[Double] = js.native
   
-  /* private */ val dimsIncludingBatch: js.Any = js.native
+  /* private */ val dimsIncludingBatch: Any = js.native
 }
 /* static members */
 object Permute {

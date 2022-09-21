@@ -14,7 +14,7 @@ trait CalloutFormat extends StObject {
   
   var Angle: MsoCalloutAngleType
   
-  val Application: js.Any
+  val Application: Any
   
   var AutoAttach: MsoTriState
   
@@ -38,7 +38,7 @@ trait CalloutFormat extends StObject {
   
   val Length: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.CalloutFormat_typekey")
   var PowerPointDotCalloutFormat_typekey: CalloutFormat
@@ -52,7 +52,7 @@ object CalloutFormat {
   inline def apply(
     Accent: MsoTriState,
     Angle: MsoCalloutAngleType,
-    Application: js.Any,
+    Application: Any,
     AutoAttach: MsoTriState,
     AutoLength: MsoTriState,
     AutomaticLength: () => Unit,
@@ -64,7 +64,7 @@ object CalloutFormat {
     DropType: MsoCalloutDropType,
     Gap: Double,
     Length: Double,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotCalloutFormat_typekey: CalloutFormat,
     PresetDrop: MsoCalloutDropType => Unit,
     Type: MsoCalloutType
@@ -80,7 +80,7 @@ object CalloutFormat {
     
     inline def setAngle(value: MsoCalloutAngleType): Self = StObject.set(x, "Angle", value.asInstanceOf[js.Any])
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setAutoAttach(value: MsoTriState): Self = StObject.set(x, "AutoAttach", value.asInstanceOf[js.Any])
     
@@ -104,7 +104,7 @@ object CalloutFormat {
     
     inline def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotCalloutFormat_typekey(value: CalloutFormat): Self = StObject.set(x, "PowerPoint.CalloutFormat_typekey", value.asInstanceOf[js.Any])
     

@@ -11,8 +11,8 @@ object defaultPortLabelWidgetMod {
   
   @JSImport("storm-react-diagrams/dist/src/defaults/widgets/DefaultPortLabelWidget", "DefaultPortLabel")
   @js.native
-  class DefaultPortLabel protected () extends BaseWidget[DefaultPortLabelProps, DefaultPortLabelState] {
-    def this(props: js.Any) = this()
+  open class DefaultPortLabel protected () extends BaseWidget[DefaultPortLabelProps, DefaultPortLabelState] {
+    def this(props: Any) = this()
   }
   
   trait DefaultPortLabelProps

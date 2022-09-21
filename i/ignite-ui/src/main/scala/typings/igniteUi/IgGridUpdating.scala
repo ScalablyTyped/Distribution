@@ -11,7 +11,7 @@ trait IgGridUpdating
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * This option has been removed as of 2017.2 Volume release.
@@ -260,7 +260,7 @@ trait IgGridUpdating
     * Specifies how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
     *
     */
-  var startEditTriggers: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  var startEditTriggers: js.UndefOr[String | js.Array[Any]] = js.undefined
   
   /**
     * On touch-enabled devices specifies the swipe distance for the delete button to appear.
@@ -309,7 +309,7 @@ object IgGridUpdating {
     
     inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    inline def setColumnSettingsVarargs(value: IgGridUpdatingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
+    inline def setColumnSettingsVarargs(value: IgGridUpdatingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value*))
     
     inline def setDataDirty(value: (/* event */ Event, /* ui */ DataDirtyEventUIParam) => Unit): Self = StObject.set(x, "dataDirty", js.Any.fromFunction2(value))
     
@@ -455,11 +455,11 @@ object IgGridUpdating {
     
     inline def setShowDoneCancelButtonsUndefined: Self = StObject.set(x, "showDoneCancelButtons", js.undefined)
     
-    inline def setStartEditTriggers(value: String | js.Array[js.Any]): Self = StObject.set(x, "startEditTriggers", value.asInstanceOf[js.Any])
+    inline def setStartEditTriggers(value: String | js.Array[Any]): Self = StObject.set(x, "startEditTriggers", value.asInstanceOf[js.Any])
     
     inline def setStartEditTriggersUndefined: Self = StObject.set(x, "startEditTriggers", js.undefined)
     
-    inline def setStartEditTriggersVarargs(value: js.Any*): Self = StObject.set(x, "startEditTriggers", js.Array(value :_*))
+    inline def setStartEditTriggersVarargs(value: Any*): Self = StObject.set(x, "startEditTriggers", js.Array(value*))
     
     inline def setSwipeDistance(value: String | Double): Self = StObject.set(x, "swipeDistance", value.asInstanceOf[js.Any])
     

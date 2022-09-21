@@ -1,6 +1,5 @@
 package typings.testingLibraryDom
 
-import typings.std.Error
 import typings.std.HTMLElement
 import typings.std.MutationObserverInit
 import org.scalablytyped.runtime.StObject
@@ -13,8 +12,8 @@ object waitForMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def waitFor[T](callback: js.Function0[T | js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  inline def waitFor[T](callback: js.Function0[T | js.Promise[T]], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def waitFor[T](callback: js.Function0[js.Promise[T] | T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def waitFor[T](callback: js.Function0[js.Promise[T] | T], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   trait waitForOptions extends StObject {
     
@@ -24,7 +23,7 @@ object waitForMod {
     
     var mutationObserverOptions: js.UndefOr[MutationObserverInit] = js.undefined
     
-    var onTimeout: js.UndefOr[js.Function1[/* error */ Error, Error]] = js.undefined
+    var onTimeout: js.UndefOr[js.Function1[/* error */ js.Error, js.Error]] = js.undefined
     
     var timeout: js.UndefOr[Double] = js.undefined
   }
@@ -49,7 +48,7 @@ object waitForMod {
       
       inline def setMutationObserverOptionsUndefined: Self = StObject.set(x, "mutationObserverOptions", js.undefined)
       
-      inline def setOnTimeout(value: /* error */ Error => Error): Self = StObject.set(x, "onTimeout", js.Any.fromFunction1(value))
+      inline def setOnTimeout(value: /* error */ js.Error => js.Error): Self = StObject.set(x, "onTimeout", js.Any.fromFunction1(value))
       
       inline def setOnTimeoutUndefined: Self = StObject.set(x, "onTimeout", js.undefined)
       

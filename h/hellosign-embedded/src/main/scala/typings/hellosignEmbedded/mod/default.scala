@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("hellosign-embedded", JSImport.Default)
 @js.native
-class default ()
+open class default ()
   extends typings.hellosignEmbedded.mod.HelloSign.HelloSign {
   def this(opts: Options) = this()
 }

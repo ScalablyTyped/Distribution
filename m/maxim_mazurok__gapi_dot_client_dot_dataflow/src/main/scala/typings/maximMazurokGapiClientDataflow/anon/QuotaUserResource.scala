@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDataflow.anon
 
-import typings.maximMazurokGapiClientDataflow.gapi.client.dataflow.LaunchFlexTemplateRequest
+import typings.maximMazurokGapiClientDataflow.gapi.client.dataflow.CreateJobFromTemplateRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait QuotaUserResource extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to which to direct the request. E.g., us-central1, us-west1. */
+  /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to which to direct the request. */
   var location: String
   
   /** OAuth 2.0 token for the current user. */
@@ -42,7 +42,7 @@ trait QuotaUserResource extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: LaunchFlexTemplateRequest
+  var resource: CreateJobFromTemplateRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait QuotaUserResource extends StObject {
 }
 object QuotaUserResource {
   
-  inline def apply(location: String, projectId: String, resource: LaunchFlexTemplateRequest): QuotaUserResource = {
+  inline def apply(location: String, projectId: String, resource: CreateJobFromTemplateRequest): QuotaUserResource = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUserResource]
   }
@@ -99,7 +99,7 @@ object QuotaUserResource {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: LaunchFlexTemplateRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: CreateJobFromTemplateRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

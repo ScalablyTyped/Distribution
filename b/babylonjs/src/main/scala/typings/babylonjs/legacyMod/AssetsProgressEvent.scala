@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "AssetsProgressEvent")
 @js.native
-class AssetsProgressEvent protected ()
+open class AssetsProgressEvent protected ()
   extends typings.babylonjs.indexMod.AssetsProgressEvent {
   /**
     * Creates a AssetsProgressEvent

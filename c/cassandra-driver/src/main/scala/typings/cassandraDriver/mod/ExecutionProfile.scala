@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cassandra-driver", "ExecutionProfile")
 @js.native
-class ExecutionProfile protected () extends StObject {
+open class ExecutionProfile protected () extends StObject {
   def this(name: String, options: Consistency) = this()
   
   var consistency: js.UndefOr[consistencies] = js.native

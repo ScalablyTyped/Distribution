@@ -11,8 +11,8 @@ object breadcrumbMod {
   
   @JSImport("react-bootstrap/lib/Breadcrumb", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[BreadcrumbProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[BreadcrumbProps, js.Object, Any]
   @JSImport("react-bootstrap/lib/Breadcrumb", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -20,7 +20,7 @@ object breadcrumbMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Breadcrumb", "Item")
   @js.native
-  class Item ()
+  open class Item ()
     extends typings.reactBootstrap.breadcrumbItemMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Breadcrumb", "Item")
@@ -28,9 +28,7 @@ object breadcrumbMod {
   def Item: Instantiable0[typings.reactBootstrap.breadcrumbItemMod.^] = js.native
   inline def Item_=(x: Instantiable0[typings.reactBootstrap.breadcrumbItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait Breadcrumb
-    extends Component[BreadcrumbProps, js.Object, js.Any]
+  type Breadcrumb = Component[BreadcrumbProps, js.Object, Any]
   
   trait BreadcrumbProps
     extends StObject

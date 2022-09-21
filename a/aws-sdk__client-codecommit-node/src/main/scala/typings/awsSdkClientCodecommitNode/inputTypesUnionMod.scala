@@ -5,9 +5,6 @@ import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FAST
 import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.OPEN
 import typings.awsSdkClientCodecommitNode.typesRepositoryTriggerMod.RepositoryTrigger
 import typings.awsSdkClientCodecommitNode.typesTargetMod.Target
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,7 +55,7 @@ object inputTypesUnionMod {
   trait InputTypesUnion extends StObject
   object InputTypesUnion {
     
-    inline def BatchGetRepositoriesInput(repositoryNames: js.Array[String] | Iterable[String]): typings.awsSdkClientCodecommitNode.typesBatchGetRepositoriesInputMod.BatchGetRepositoriesInput = {
+    inline def BatchGetRepositoriesInput(repositoryNames: js.Array[String] | js.Iterable[String]): typings.awsSdkClientCodecommitNode.typesBatchGetRepositoriesInputMod.BatchGetRepositoriesInput = {
       val __obj = js.Dynamic.literal(repositoryNames = repositoryNames.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesBatchGetRepositoriesInputMod.BatchGetRepositoriesInput]
     }
@@ -68,7 +65,7 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCreateBranchInputMod.CreateBranchInput]
     }
     
-    inline def CreatePullRequestInput(targets: js.Array[Target] | Iterable[Target], title: String): typings.awsSdkClientCodecommitNode.typesCreatePullRequestInputMod.CreatePullRequestInput = {
+    inline def CreatePullRequestInput(targets: js.Array[Target] | js.Iterable[Target], title: String): typings.awsSdkClientCodecommitNode.typesCreatePullRequestInputMod.CreatePullRequestInput = {
       val __obj = js.Dynamic.literal(targets = targets.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCreatePullRequestInputMod.CreatePullRequestInput]
     }
@@ -216,7 +213,7 @@ object inputTypesUnionMod {
     
     inline def PutFileInput(
       branchName: String,
-      fileContent: ArrayBuffer | ArrayBufferView | String,
+      fileContent: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String,
       filePath: String,
       repositoryName: String
     ): typings.awsSdkClientCodecommitNode.typesPutFileInputMod.PutFileInput = {
@@ -224,12 +221,12 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesPutFileInputMod.PutFileInput]
     }
     
-    inline def PutRepositoryTriggersInput(repositoryName: String, triggers: js.Array[RepositoryTrigger] | Iterable[RepositoryTrigger]): typings.awsSdkClientCodecommitNode.typesPutRepositoryTriggersInputMod.PutRepositoryTriggersInput = {
+    inline def PutRepositoryTriggersInput(repositoryName: String, triggers: js.Array[RepositoryTrigger] | js.Iterable[RepositoryTrigger]): typings.awsSdkClientCodecommitNode.typesPutRepositoryTriggersInputMod.PutRepositoryTriggersInput = {
       val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesPutRepositoryTriggersInputMod.PutRepositoryTriggersInput]
     }
     
-    inline def TestRepositoryTriggersInput(repositoryName: String, triggers: js.Array[RepositoryTrigger] | Iterable[RepositoryTrigger]): typings.awsSdkClientCodecommitNode.typesTestRepositoryTriggersInputMod.TestRepositoryTriggersInput = {
+    inline def TestRepositoryTriggersInput(repositoryName: String, triggers: js.Array[RepositoryTrigger] | js.Iterable[RepositoryTrigger]): typings.awsSdkClientCodecommitNode.typesTestRepositoryTriggersInputMod.TestRepositoryTriggersInput = {
       val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesTestRepositoryTriggersInputMod.TestRepositoryTriggersInput]
     }

@@ -36,7 +36,7 @@ object ILanguageExtensionPoint {
     
     inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
     
     inline def setConfiguration(value: Uri): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
@@ -46,19 +46,19 @@ object ILanguageExtensionPoint {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setFilenamePatterns(value: js.Array[String]): Self = StObject.set(x, "filenamePatterns", value.asInstanceOf[js.Any])
     
     inline def setFilenamePatternsUndefined: Self = StObject.set(x, "filenamePatterns", js.undefined)
     
-    inline def setFilenamePatternsVarargs(value: String*): Self = StObject.set(x, "filenamePatterns", js.Array(value :_*))
+    inline def setFilenamePatternsVarargs(value: String*): Self = StObject.set(x, "filenamePatterns", js.Array(value*))
     
     inline def setFilenames(value: js.Array[String]): Self = StObject.set(x, "filenames", value.asInstanceOf[js.Any])
     
     inline def setFilenamesUndefined: Self = StObject.set(x, "filenames", js.undefined)
     
-    inline def setFilenamesVarargs(value: String*): Self = StObject.set(x, "filenames", js.Array(value :_*))
+    inline def setFilenamesVarargs(value: String*): Self = StObject.set(x, "filenames", js.Array(value*))
     
     inline def setFirstLine(value: String): Self = StObject.set(x, "firstLine", value.asInstanceOf[js.Any])
     
@@ -70,6 +70,6 @@ object ILanguageExtensionPoint {
     
     inline def setMimetypesUndefined: Self = StObject.set(x, "mimetypes", js.undefined)
     
-    inline def setMimetypesVarargs(value: String*): Self = StObject.set(x, "mimetypes", js.Array(value :_*))
+    inline def setMimetypesVarargs(value: String*): Self = StObject.set(x, "mimetypes", js.Array(value*))
   }
 }

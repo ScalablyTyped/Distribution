@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "Navigator")
 @js.native
-class Navigator protected () extends Viewer {
+open class Navigator protected () extends Viewer {
   def this(options: Options) = this()
   
   def setFlip(state: Boolean): Unit = js.native

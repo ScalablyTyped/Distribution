@@ -48,7 +48,7 @@ object LoadBalancerAttributes {
     
     inline def setAdditionalAttributesUndefined: Self = StObject.set(x, "AdditionalAttributes", js.undefined)
     
-    inline def setAdditionalAttributesVarargs(value: AdditionalAttribute*): Self = StObject.set(x, "AdditionalAttributes", js.Array(value :_*))
+    inline def setAdditionalAttributesVarargs(value: AdditionalAttribute*): Self = StObject.set(x, "AdditionalAttributes", js.Array(value*))
     
     inline def setConnectionDraining(value: ConnectionDraining): Self = StObject.set(x, "ConnectionDraining", value.asInstanceOf[js.Any])
     

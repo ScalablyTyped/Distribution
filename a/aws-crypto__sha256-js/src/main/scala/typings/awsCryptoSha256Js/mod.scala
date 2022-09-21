@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("@aws-crypto/sha256-js", "Sha256")
   @js.native
-  class Sha256 ()
+  open class Sha256 ()
     extends typings.awsCryptoSha256Js.jsSha256Mod.Sha256 {
     def this(secret: SourceData) = this()
   }

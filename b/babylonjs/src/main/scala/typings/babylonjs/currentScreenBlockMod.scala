@@ -12,28 +12,28 @@ object currentScreenBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Dual/currentScreenBlock", "CurrentScreenBlock")
   @js.native
-  class CurrentScreenBlock protected () extends NodeMaterialBlock {
+  open class CurrentScreenBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new CurrentScreenBlock
       * @param name defines the block name
       */
     def this(name: String) = this()
     
-    /* private */ var _gammaDefineName: js.Any = js.native
+    /* private */ var _gammaDefineName: Any = js.native
     
-    /* private */ var _injectVertexCode: js.Any = js.native
+    /* private */ var _injectVertexCode: Any = js.native
     
-    /* private */ var _linearDefineName: js.Any = js.native
+    /* private */ var _linearDefineName: Any = js.native
     
-    /* private */ var _mainUVName: js.Any = js.native
+    /* private */ var _mainUVName: Any = js.native
     
-    /* private */ var _samplerName: js.Any = js.native
+    /* private */ var _samplerName: Any = js.native
     
-    /* private */ var _tempTextureRead: js.Any = js.native
+    /* private */ var _tempTextureRead: Any = js.native
     
-    /* private */ var _writeOutput: js.Any = js.native
+    /* private */ var _writeOutput: Any = js.native
     
-    /* private */ var _writeTextureRead: js.Any = js.native
+    /* private */ var _writeTextureRead: Any = js.native
     
     /**
       * Gets the a output component

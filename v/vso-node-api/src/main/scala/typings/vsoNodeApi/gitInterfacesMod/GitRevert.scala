@@ -13,7 +13,7 @@ trait GitRevert
 object GitRevert {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     detailedStatus: GitAsyncRefOperationDetail,
     parameters: GitAsyncRefOperationParameters,
     revertId: Double,

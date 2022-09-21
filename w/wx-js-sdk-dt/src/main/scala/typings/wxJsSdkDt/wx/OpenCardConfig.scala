@@ -24,6 +24,6 @@ object OpenCardConfig {
     
     inline def setCardList(value: js.Array[OpenCardObj]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
     
-    inline def setCardListVarargs(value: OpenCardObj*): Self = StObject.set(x, "cardList", js.Array(value :_*))
+    inline def setCardListVarargs(value: OpenCardObj*): Self = StObject.set(x, "cardList", js.Array(value*))
   }
 }

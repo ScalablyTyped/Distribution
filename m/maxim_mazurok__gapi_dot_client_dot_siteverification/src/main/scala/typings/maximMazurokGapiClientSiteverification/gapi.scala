@@ -93,7 +93,7 @@ object gapi {
           
           inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
           
-          inline def setItemsVarargs(value: SiteVerificationWebResourceResource*): Self = StObject.set(x, "items", js.Array(value :_*))
+          inline def setItemsVarargs(value: SiteVerificationWebResourceResource*): Self = StObject.set(x, "items", js.Array(value*))
         }
       }
       
@@ -125,7 +125,7 @@ object gapi {
           
           inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
           
-          inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
+          inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value*))
           
           inline def setSite(value: Identifier): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
           

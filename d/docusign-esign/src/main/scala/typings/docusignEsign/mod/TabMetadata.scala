@@ -480,7 +480,7 @@ object TabMetadata {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     

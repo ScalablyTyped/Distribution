@@ -2,7 +2,6 @@ package typings.chaiHttp
 
 import typings.chaiHttp.mod.global.ChaiHttp.Agent
 import typings.std.PromiseConstructorLike
-import typings.std.RegExp
 import typings.superagent.mod.SuperAgentStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(chai: js.Any, utils: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(chai.asInstanceOf[js.Any], utils.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(chai: Any, utils: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(chai.asInstanceOf[js.Any], utils.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("chai-http", JSImport.Namespace)
   @js.native
@@ -29,7 +28,7 @@ object mod {
         
         def header(key: String): Assertion = js.native
         def header(key: String, value: String): Assertion = js.native
-        def header(key: String, value: RegExp): Assertion = js.native
+        def header(key: String, value: js.RegExp): Assertion = js.native
         
         var headers: Assertion = js.native
         
@@ -43,7 +42,7 @@ object mod {
         var redirect: Assertion = js.native
         
         def redirectTo(location: String): Assertion = js.native
-        def redirectTo(location: RegExp): Assertion = js.native
+        def redirectTo(location: js.RegExp): Assertion = js.native
         
         def status(code: Double): Assertion = js.native
         
@@ -55,16 +54,16 @@ object mod {
       @js.native
       trait ChaiHttpRequest extends StObject {
         
-        def apply(server: js.Any): Agent = js.native
+        def apply(server: Any): Agent = js.native
         
         def addPromises(promiseConstructor: PromiseConstructorLike): Unit = js.native
         
-        def agent(server: js.Any): Agent = js.native
+        def agent(server: Any): Agent = js.native
       }
       
       trait ChaiStatic extends StObject {
         
-        def request(server: js.Any): Agent
+        def request(server: Any): Agent
         @JSName("request")
         var request_Original: ChaiHttpRequest
       }
@@ -105,7 +104,7 @@ object mod {
       trait Agent extends SuperAgentStatic {
         
         def close(): Agent = js.native
-        def close(callback: js.Function1[/* err */ js.Any, Unit]): Agent = js.native
+        def close(callback: js.Function1[/* err */ Any, Unit]): Agent = js.native
         
         def keepOpen(): Agent = js.native
       }

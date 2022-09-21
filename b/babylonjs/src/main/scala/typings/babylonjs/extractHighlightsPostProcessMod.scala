@@ -13,7 +13,7 @@ object extractHighlightsPostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/extractHighlightsPostProcess", "ExtractHighlightsPostProcess")
   @js.native
-  class ExtractHighlightsPostProcess protected () extends PostProcess {
+  open class ExtractHighlightsPostProcess protected () extends PostProcess {
     def this(
       name: String,
       options: Double | PostProcessOptions,

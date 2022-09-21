@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.DoublyNoncentralF")
 @js.native
-class DoublyNoncentralF ()
+open class DoublyNoncentralF ()
   extends typings.ranjs.mod.dist.DoublyNoncentralF {
   def this(d1: Double) = this()
   def this(d1: Double, d2: Double) = this()

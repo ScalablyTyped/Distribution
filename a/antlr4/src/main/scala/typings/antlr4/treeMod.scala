@@ -11,13 +11,13 @@ object treeMod {
   
   @JSImport("antlr4/tree/Tree", "ErrorNode")
   @js.native
-  class ErrorNode protected () extends TerminalNode {
+  open class ErrorNode protected () extends TerminalNode {
     def this(symbol: Token) = this()
   }
   
   @JSImport("antlr4/tree/Tree", "ErrorNodeImpl")
   @js.native
-  class ErrorNodeImpl protected () extends TerminalNode {
+  open class ErrorNodeImpl protected () extends TerminalNode {
     def this(token: Token) = this()
     
     def isErrorNode(): Boolean = js.native
@@ -29,30 +29,30 @@ object treeMod {
   
   @JSImport("antlr4/tree/Tree", "ParseTree")
   @js.native
-  class ParseTree () extends StObject
+  open class ParseTree () extends StObject
   
   @JSImport("antlr4/tree/Tree", "ParseTreeVisitor")
   @js.native
-  class ParseTreeVisitor () extends StObject {
+  open class ParseTreeVisitor () extends StObject {
     
-    def visit(ctx: ParserRuleContext): js.Any = js.native
+    def visit(ctx: ParserRuleContext): Any = js.native
     
-    def visitChildren(ctx: ParserRuleContext): js.Any = js.native
+    def visitChildren(ctx: ParserRuleContext): Any = js.native
     
-    def visitErrorNode(node: ErrorNode): js.Any = js.native
+    def visitErrorNode(node: ErrorNode): Any = js.native
     
-    def visitTerminal(node: TerminalNode): js.Any = js.native
+    def visitTerminal(node: TerminalNode): Any = js.native
   }
   
   @JSImport("antlr4/tree/Tree", "ParseTreeWalker")
   @js.native
-  class ParseTreeWalker () extends StObject {
+  open class ParseTreeWalker () extends StObject {
     
-    def enterRule(listener: ParseTreeListener, rule: js.Any): Unit = js.native
+    def enterRule(listener: ParseTreeListener, rule: Any): Unit = js.native
     
-    def exitRule(listener: ParseTreeListener, rule: js.Any): Unit = js.native
+    def exitRule(listener: ParseTreeListener, rule: Any): Unit = js.native
     
-    def walk(listener: ParseTreeListener, rule: js.Any): Unit = js.native
+    def walk(listener: ParseTreeListener, rule: Any): Unit = js.native
   }
   /* static members */
   object ParseTreeWalker {
@@ -64,20 +64,20 @@ object treeMod {
   
   @JSImport("antlr4/tree/Tree", "RuleNode")
   @js.native
-  class RuleNode () extends ParseTree
+  open class RuleNode () extends ParseTree
   
   @JSImport("antlr4/tree/Tree", "TerminalNode")
   @js.native
-  class TerminalNode protected () extends ParseTree {
+  open class TerminalNode protected () extends ParseTree {
     def this(symbol: Token) = this()
     
-    def accept(visitor: ParseTreeVisitor): js.Any = js.native
+    def accept(visitor: ParseTreeVisitor): Any = js.native
     
-    def getChild(i: Double): js.Any = js.native
+    def getChild(i: Double): Any = js.native
     
     def getChildCount(): Double = js.native
     
-    def getParent(): js.Any = js.native
+    def getParent(): Any = js.native
     
     def getPayload(): Token = js.native
     
@@ -87,14 +87,14 @@ object treeMod {
     
     def getText(): String = js.native
     
-    val parentCtx: js.Any = js.native
+    val parentCtx: Any = js.native
     
     val symbol: Token = js.native
   }
   
   @JSImport("antlr4/tree/Tree", "TerminalNodeImpl")
   @js.native
-  class TerminalNodeImpl protected () extends TerminalNode {
+  open class TerminalNodeImpl protected () extends TerminalNode {
     def this(symbol: Token) = this()
   }
   

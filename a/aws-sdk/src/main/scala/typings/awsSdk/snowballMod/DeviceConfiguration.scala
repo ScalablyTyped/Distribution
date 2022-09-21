@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceConfiguration extends StObject {
   
   /**
-    * Returns information about the device configuration for an AWS Snowcone job.
+    * Returns information about the device configuration for an Snowcone job.
     */
   var SnowconeDeviceConfiguration: js.UndefOr[typings.awsSdk.snowballMod.SnowconeDeviceConfiguration] = js.undefined
 }

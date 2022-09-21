@@ -29,7 +29,7 @@ object ListJobsByPipelineResponse {
     
     inline def setJobsUndefined: Self = StObject.set(x, "Jobs", js.undefined)
     
-    inline def setJobsVarargs(value: Job*): Self = StObject.set(x, "Jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: Job*): Self = StObject.set(x, "Jobs", js.Array(value*))
     
     inline def setNextPageToken(value: Id): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     

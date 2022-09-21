@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorChangeFlashCommandArguments")
 @js.native
-class ASPxClientHtmlEditorChangeFlashCommandArguments protected ()
+open class ASPxClientHtmlEditorChangeFlashCommandArguments protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorInsertFlashCommandArguments {
-  /* private */ def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+  /* private */ def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: Any) = this()
   
   /**
     * Returns the name of the client-side command corresponding to the parameter.
@@ -66,7 +66,7 @@ class ASPxClientHtmlEditorChangeFlashCommandArguments protected ()
     * Gets the currently selected element in the ASPxHtmlEditor.
     */
   /* CompleteClass */
-  var selectedElement: js.Any = js.native
+  var selectedElement: Any = js.native
   
   /**
     * Defines the source of the target media element.

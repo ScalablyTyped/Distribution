@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "ParseSpan")
 @js.native
-class ParseSpan protected ()
-  extends typings.angularCompiler.compilerMod.ParseSpan {
+open class ParseSpan protected () extends StObject {
   def this(start: Double, end: Double) = this()
+  
+  var end: Double = js.native
+  
+  var start: Double = js.native
+  
+  def toAbsolute(absoluteOffset: Double): AbsoluteSourceSpan = js.native
 }

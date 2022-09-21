@@ -11,5 +11,5 @@ trait IPath
   
   def getData(): String = js.native
   
-  def setData(SVG: String): js.Any = js.native
+  def setData(SVG: String): Any = js.native
 }

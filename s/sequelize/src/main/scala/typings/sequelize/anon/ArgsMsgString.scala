@@ -21,7 +21,7 @@ object ArgsMsgString {
     
     inline def setArgs(value: js.Array[String] | String): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
   }

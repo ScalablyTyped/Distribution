@@ -6,29 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.ConditionalType, 'type' | 'checkType' | 'extendsType' | 'trueType' | 'falseType'> */
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ trait ConditionalType
-  extends StObject
-     with SomeType {
+trait ConditionalType extends StObject {
   
-  var checkType: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
+  var checkType: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]
   
-  var extendsType: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
+  var extendsType: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]
   
-  var falseType: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
+  var falseType: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]
   
-  var trueType: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
+  var trueType: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]
   
-  var `type`: ModelToObject[String] | String
+  var `type`: ToSerialized[/* "conditional" */ String]
 }
 object ConditionalType {
   
   inline def apply(
-    checkType: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type,
-    extendsType: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type,
-    falseType: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type,
-    trueType: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type,
-    `type`: ModelToObject[String] | String
+    checkType: ToSerialized[typings.typedoc.modelsTypesMod.SomeType],
+    extendsType: ToSerialized[typings.typedoc.modelsTypesMod.SomeType],
+    falseType: ToSerialized[typings.typedoc.modelsTypesMod.SomeType],
+    trueType: ToSerialized[typings.typedoc.modelsTypesMod.SomeType],
+    `type`: ToSerialized[/* "conditional" */ String]
   ): ConditionalType = {
     val __obj = js.Dynamic.literal(checkType = checkType.asInstanceOf[js.Any], extendsType = extendsType.asInstanceOf[js.Any], falseType = falseType.asInstanceOf[js.Any], trueType = trueType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -37,32 +34,24 @@ object ConditionalType {
   
   extension [Self <: ConditionalType](x: Self) {
     
-    inline def setCheckType(
-      value: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
-    ): Self = StObject.set(x, "checkType", value.asInstanceOf[js.Any])
+    inline def setCheckType(value: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]): Self = StObject.set(x, "checkType", value.asInstanceOf[js.Any])
     
-    inline def setCheckTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "checkType", js.Array(value :_*))
+    inline def setCheckTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "checkType", js.Array(value*))
     
-    inline def setExtendsType(
-      value: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
-    ): Self = StObject.set(x, "extendsType", value.asInstanceOf[js.Any])
+    inline def setExtendsType(value: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]): Self = StObject.set(x, "extendsType", value.asInstanceOf[js.Any])
     
-    inline def setExtendsTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "extendsType", js.Array(value :_*))
+    inline def setExtendsTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "extendsType", js.Array(value*))
     
-    inline def setFalseType(
-      value: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
-    ): Self = StObject.set(x, "falseType", value.asInstanceOf[js.Any])
+    inline def setFalseType(value: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]): Self = StObject.set(x, "falseType", value.asInstanceOf[js.Any])
     
-    inline def setFalseTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "falseType", js.Array(value :_*))
+    inline def setFalseTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "falseType", js.Array(value*))
     
-    inline def setTrueType(
-      value: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
-    ): Self = StObject.set(x, "trueType", value.asInstanceOf[js.Any])
+    inline def setTrueType(value: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]): Self = StObject.set(x, "trueType", value.asInstanceOf[js.Any])
     
-    inline def setTrueTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "trueType", js.Array(value :_*))
+    inline def setTrueTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "trueType", js.Array(value*))
     
-    inline def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ToSerialized[/* "conditional" */ String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

@@ -9,19 +9,19 @@ trait AsyncContext
      with Context {
   
   @JSName("callback")
-  def callback_MAsyncContext(err: SassError, result: Result): js.Any
+  def callback_MAsyncContext(err: SassError, result: Result): Any
   @JSName("callback")
   var callback_Original: SassRenderCallback
 }
 object AsyncContext {
   
-  inline def apply(callback: (/* err */ SassError, /* result */ Result) => js.Any, options: Options): AsyncContext = {
+  inline def apply(callback: (/* err */ SassError, /* result */ Result) => Any, options: Options): AsyncContext = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncContext]
   }
   
   extension [Self <: AsyncContext](x: Self) {
     
-    inline def setCallback(value: (/* err */ SassError, /* result */ Result) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+    inline def setCallback(value: (/* err */ SassError, /* result */ Result) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
   }
 }

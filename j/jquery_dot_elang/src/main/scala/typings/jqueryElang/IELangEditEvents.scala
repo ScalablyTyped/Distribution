@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IELangEditEvents extends StObject {
   
-  var insert: JQueryDeferred[js.Any]
+  var insert: JQueryDeferred[Any]
   
-  var modify: JQueryDeferred[js.Any]
+  var modify: JQueryDeferred[Any]
   
-  var remove: JQueryDeferred[js.Any]
+  var remove: JQueryDeferred[Any]
   
-  var select: JQueryDeferred[js.Any]
+  var select: JQueryDeferred[Any]
 }
 object IELangEditEvents {
   
   inline def apply(
-    insert: JQueryDeferred[js.Any],
-    modify: JQueryDeferred[js.Any],
-    remove: JQueryDeferred[js.Any],
-    select: JQueryDeferred[js.Any]
+    insert: JQueryDeferred[Any],
+    modify: JQueryDeferred[Any],
+    remove: JQueryDeferred[Any],
+    select: JQueryDeferred[Any]
   ): IELangEditEvents = {
     val __obj = js.Dynamic.literal(insert = insert.asInstanceOf[js.Any], modify = modify.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any])
     __obj.asInstanceOf[IELangEditEvents]
@@ -29,12 +29,12 @@ object IELangEditEvents {
   
   extension [Self <: IELangEditEvents](x: Self) {
     
-    inline def setInsert(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+    inline def setInsert(value: JQueryDeferred[Any]): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
-    inline def setModify(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "modify", value.asInstanceOf[js.Any])
+    inline def setModify(value: JQueryDeferred[Any]): Self = StObject.set(x, "modify", value.asInstanceOf[js.Any])
     
-    inline def setRemove(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: JQueryDeferred[Any]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: JQueryDeferred[Any]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
   }
 }

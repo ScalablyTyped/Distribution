@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplePayPaymentMethod extends StObject {
   
   /**
+    * The billing contact associated with the card.
+    */
+  var billingContact: js.UndefOr[ApplePayPaymentContact] = js.undefined
+  
+  /**
     * A string, suitable for display, that describes the card.
     */
   var displayName: String
@@ -43,6 +48,10 @@ object ApplePayPaymentMethod {
   }
   
   extension [Self <: ApplePayPaymentMethod](x: Self) {
+    
+    inline def setBillingContact(value: ApplePayPaymentContact): Self = StObject.set(x, "billingContact", value.asInstanceOf[js.Any])
+    
+    inline def setBillingContactUndefined: Self = StObject.set(x, "billingContact", js.undefined)
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

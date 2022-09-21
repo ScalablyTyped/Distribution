@@ -11,9 +11,9 @@ Select html elements on webpage using mouse
 | Full name          | selectables |
 | Keywords           | select, drag, dragselect, dom, mouse |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1475 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 148.66666666666666 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/p34eu/Selectables#readme)

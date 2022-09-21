@@ -27,7 +27,7 @@ trait StartFaceSearchRequest extends StObject {
   var JobTag: js.UndefOr[typings.awsSdk.rekognitionMod.JobTag] = js.undefined
   
   /**
-    * The ARN of the Amazon SNS topic to which you want Amazon Rekognition Video to publish the completion status of the search. 
+    * The ARN of the Amazon SNS topic to which you want Amazon Rekognition Video to publish the completion status of the search. The Amazon SNS topic must have a topic name that begins with AmazonRekognition if you are using the AmazonRekognitionServiceRole permissions policy to access the topic.
     */
   var NotificationChannel: js.UndefOr[typings.awsSdk.rekognitionMod.NotificationChannel] = js.undefined
   

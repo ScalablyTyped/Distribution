@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Parameter")
 @js.native
-/* private */ class Parameter ()
+/* private */ open class Parameter ()
   extends StObject
      with typings.activexExcel.Excel.Parameter {
   
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Name: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val PromptString: String = js.native
@@ -40,7 +40,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var RefreshOnChange: Boolean = js.native
   
   /* CompleteClass */
-  override def SetParam(Type: XlParameterType, Value: js.Any): Unit = js.native
+  override def SetParam(Type: XlParameterType, Value: Any): Unit = js.native
   
   /* CompleteClass */
   override def SourceRange(Address: String): Range = js.native
@@ -56,5 +56,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Type: XlParameterType = js.native
   
   /* CompleteClass */
-  override val Value: js.Any = js.native
+  override val Value: Any = js.native
 }

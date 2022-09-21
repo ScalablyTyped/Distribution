@@ -26,7 +26,7 @@ object HealthChecksScopedList {
     
     inline def setHealthChecksUndefined: Self = StObject.set(x, "healthChecks", js.undefined)
     
-    inline def setHealthChecksVarargs(value: HealthCheck*): Self = StObject.set(x, "healthChecks", js.Array(value :_*))
+    inline def setHealthChecksVarargs(value: HealthCheck*): Self = StObject.set(x, "healthChecks", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

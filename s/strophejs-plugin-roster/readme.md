@@ -11,9 +11,9 @@ A strophe.js plugin for Roster Versioning (XEP-0237).
 | Full name          | strophejs-plugin-roster |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 22183 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1138.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/strophe/strophejs-plugin-roster#readme)

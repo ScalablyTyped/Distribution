@@ -11,9 +11,9 @@ Shuffle Array based on a Seed
 | Full name          | shuffle-seed |
 | Keywords           | array, seed, shuffle, shuffle, seed, random |
 | # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 1799740 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 152807.66666666666 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/webcaetano/shuffle-seed#readme)

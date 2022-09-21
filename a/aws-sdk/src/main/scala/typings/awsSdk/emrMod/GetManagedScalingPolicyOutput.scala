@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetManagedScalingPolicyOutput extends StObject {
   
   /**
-    *  Specifies the managed scaling policy that is attached to an Amazon EMR cluster. 
+    * Specifies the managed scaling policy that is attached to an Amazon EMR cluster. 
     */
   var ManagedScalingPolicy: js.UndefOr[typings.awsSdk.emrMod.ManagedScalingPolicy] = js.undefined
 }

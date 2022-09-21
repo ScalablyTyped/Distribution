@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait OptionalMemberExpression_
   extends StObject
      with BaseNode
-     with Expression {
+     with Expression
+     with Standardized {
   
   var computed: Boolean
   

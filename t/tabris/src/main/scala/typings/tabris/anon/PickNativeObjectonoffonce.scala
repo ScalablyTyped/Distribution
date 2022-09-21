@@ -23,30 +23,30 @@ trait PickNativeObjectonoffonce extends StObject {
     this.type
   ]
   
-  def on(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], js.Any]): this.type
+  def on(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], Any]): this.type
   def on(
     `type`: String,
-    listener: js.Function1[/* event */ EventObject[NativeObject], js.Any],
+    listener: js.Function1[/* event */ EventObject[NativeObject], Any],
     context: js.Object
   ): this.type
   @JSName("on")
   var on_Original: js.Function3[
     /* type */ String, 
-    /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], 
+    /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], 
     /* context */ js.UndefOr[js.Object], 
     this.type
   ]
   
-  def once(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], js.Any]): this.type
+  def once(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], Any]): this.type
   def once(
     `type`: String,
-    listener: js.Function1[/* event */ EventObject[NativeObject], js.Any],
+    listener: js.Function1[/* event */ EventObject[NativeObject], Any],
     context: js.Object
   ): this.type
   @JSName("once")
   var once_Original: js.Function3[
     /* type */ String, 
-    /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], 
+    /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], 
     /* context */ js.UndefOr[js.Object], 
     this.type
   ]
@@ -59,8 +59,8 @@ object PickNativeObjectonoffonce {
   
   inline def apply(
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce,
-    on: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce,
-    once: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce,
+    on: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce,
+    once: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce,
     trigger: /* type */ String => PickNativeObjectonoffonce
   ): PickNativeObjectonoffonce = {
     val __obj = js.Dynamic.literal(off = js.Any.fromFunction3(off), on = js.Any.fromFunction3(on), once = js.Any.fromFunction3(once), trigger = js.Any.fromFunction1(trigger))
@@ -74,11 +74,11 @@ object PickNativeObjectonoffonce {
     ): Self = StObject.set(x, "off", js.Any.fromFunction3(value))
     
     inline def setOn(
-      value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce
+      value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce
     ): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
     
     inline def setOnce(
-      value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce
+      value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce
     ): Self = StObject.set(x, "once", js.Any.fromFunction3(value))
     
     inline def setTrigger(value: /* type */ String => PickNativeObjectonoffonce): Self = StObject.set(x, "trigger", js.Any.fromFunction1(value))

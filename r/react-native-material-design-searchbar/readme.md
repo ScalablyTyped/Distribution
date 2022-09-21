@@ -11,9 +11,9 @@ A React Native Material Design SearchBar
 | Full name          | react-native-material-design-searchbar |
 | Keywords           | react-native, Search, component, SearchBar, Material Design |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 7620 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1557.0 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](https://github.com/ananddayalan/react-native-material-design-searchbar)

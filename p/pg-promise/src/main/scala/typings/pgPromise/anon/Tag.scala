@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Tag extends StObject {
   
-  var tag: js.UndefOr[js.Any] = js.undefined
+  var tag: js.UndefOr[Any] = js.undefined
 }
 object Tag {
   
@@ -17,7 +17,7 @@ object Tag {
   
   extension [Self <: Tag](x: Self) {
     
-    inline def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class CloudWatchLogs ()
+open class CloudWatchLogs ()
   extends typings.awsSdk.allMod.CloudWatchLogs {
   def this(options: ClientConfiguration) = this()
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogItem")
 @js.native
-class CatalogItem () extends StObject {
+open class CatalogItem () extends StObject {
   
   /**
     * The text of the item's display label in the Square Point of Sale app. Only up to the first five characters of the string are used.

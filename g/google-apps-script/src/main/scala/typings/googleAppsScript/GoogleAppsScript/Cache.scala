@@ -32,13 +32,13 @@ object Cache {
     
     def get(key: String): String | Null = js.native
     
-    def getAll(keys: js.Array[String]): StringDictionary[js.Any] = js.native
+    def getAll(keys: js.Array[String]): StringDictionary[Any] = js.native
     
     def put(key: String, value: String): Unit = js.native
     def put(key: String, value: String, expirationInSeconds: Integer): Unit = js.native
     
-    def putAll(values: StringDictionary[js.Any]): Unit = js.native
-    def putAll(values: StringDictionary[js.Any], expirationInSeconds: Integer): Unit = js.native
+    def putAll(values: StringDictionary[Any]): Unit = js.native
+    def putAll(values: StringDictionary[Any], expirationInSeconds: Integer): Unit = js.native
     
     def remove(key: String): Unit = js.native
     
@@ -59,16 +59,16 @@ object Cache {
     
     def getDocumentCache(): typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null
     
-    def getScriptCache(): typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null
+    def getScriptCache(): typings.googleAppsScript.GoogleAppsScript.Cache.Cache
     
-    def getUserCache(): typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null
+    def getUserCache(): typings.googleAppsScript.GoogleAppsScript.Cache.Cache
   }
   object CacheService {
     
     inline def apply(
       getDocumentCache: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null,
-      getScriptCache: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null,
-      getUserCache: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null
+      getScriptCache: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache,
+      getUserCache: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache
     ): CacheService = {
       val __obj = js.Dynamic.literal(getDocumentCache = js.Any.fromFunction0(getDocumentCache), getScriptCache = js.Any.fromFunction0(getScriptCache), getUserCache = js.Any.fromFunction0(getUserCache))
       __obj.asInstanceOf[CacheService]
@@ -78,9 +78,9 @@ object Cache {
       
       inline def setGetDocumentCache(value: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null): Self = StObject.set(x, "getDocumentCache", js.Any.fromFunction0(value))
       
-      inline def setGetScriptCache(value: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null): Self = StObject.set(x, "getScriptCache", js.Any.fromFunction0(value))
+      inline def setGetScriptCache(value: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache): Self = StObject.set(x, "getScriptCache", js.Any.fromFunction0(value))
       
-      inline def setGetUserCache(value: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null): Self = StObject.set(x, "getUserCache", js.Any.fromFunction0(value))
+      inline def setGetUserCache(value: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache): Self = StObject.set(x, "getUserCache", js.Any.fromFunction0(value))
     }
   }
 }

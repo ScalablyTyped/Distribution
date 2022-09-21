@@ -1,7 +1,8 @@
 package typings.jszip
 
 import typings.jszip.jszipBooleans.`true`
-import typings.std.Date
+import typings.jszip.mod.Compression
+import typings.jszip.mod.CompressionOptions
 import typings.std.PromiseConstructorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +24,15 @@ object anon {
     
     var comment: js.UndefOr[String] = js.undefined
     
-    var compression: js.UndefOr[String] = js.undefined
+    /**
+      * Sets per file compression. The `compressionOptions` parameter depends on the compression type.
+      */
+    var compression: js.UndefOr[Compression] = js.undefined
+    
+    /**
+      * Sets per file compression level for `DEFLATE` compression.
+      */
+    var compressionOptions: js.UndefOr[Null | CompressionOptions] = js.undefined
     
     /** Set to `true` if folders in the file path should be automatically created, otherwise there will only be virtual folders that represent the path to the file. */
     var createFolders: js.UndefOr[Boolean] = js.undefined
@@ -31,7 +40,7 @@ object anon {
     /**
       * The last modification date, defaults to the current date.
       */
-    var date: js.UndefOr[Date] = js.undefined
+    var date: js.UndefOr[js.Date] = js.undefined
     
     /** Set to `true` if this is a directory and content should be ignored. */
     var dir: js.UndefOr[Boolean] & `true`
@@ -69,7 +78,13 @@ object anon {
       
       inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      
+      inline def setCompressionOptions(value: CompressionOptions): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+      
+      inline def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
+      
+      inline def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
       
       inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
@@ -77,7 +92,7 @@ object anon {
       
       inline def setCreateFoldersUndefined: Self = StObject.set(x, "createFolders", js.undefined)
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -98,23 +113,6 @@ object anon {
       inline def setUnixPermissionsNull: Self = StObject.set(x, "unixPermissions", null)
       
       inline def setUnixPermissionsUndefined: Self = StObject.set(x, "unixPermissions", js.undefined)
-    }
-  }
-  
-  trait Level extends StObject {
-    
-    var level: Double
-  }
-  object Level {
-    
-    inline def apply(level: Double): Level = {
-      val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Level]
-    }
-    
-    extension [Self <: Level](x: Self) {
-      
-      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     }
   }
   

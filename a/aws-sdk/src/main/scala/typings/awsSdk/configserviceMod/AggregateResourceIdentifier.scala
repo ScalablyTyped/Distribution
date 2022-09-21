@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AggregateResourceIdentifier extends StObject {
   
   /**
-    * The ID of the AWS resource.
+    * The ID of the Amazon Web Services resource.
     */
   var ResourceId: typings.awsSdk.configserviceMod.ResourceId
   
   /**
-    * The name of the AWS resource.
+    * The name of the Amazon Web Services resource.
     */
   var ResourceName: js.UndefOr[typings.awsSdk.configserviceMod.ResourceName] = js.undefined
   
   /**
-    * The type of the AWS resource.
+    * The type of the Amazon Web Services resource.
     */
   var ResourceType: typings.awsSdk.configserviceMod.ResourceType
   

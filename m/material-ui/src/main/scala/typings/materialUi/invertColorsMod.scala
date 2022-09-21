@@ -10,10 +10,10 @@ object invertColorsMod {
   
   @JSImport("material-ui/svg-icons/action/invert-colors", JSImport.Default)
   @js.native
-  class default () extends ActionInvertColors
+  open class default () extends ActionInvertColors
   
   @JSImport("material-ui/svg-icons/action/invert-colors", "ActionInvertColors")
   @js.native
-  class ActionInvertColors ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionInvertColors ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

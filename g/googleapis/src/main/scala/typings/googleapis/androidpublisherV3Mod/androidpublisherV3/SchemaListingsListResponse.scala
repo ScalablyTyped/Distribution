@@ -7,11 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaListingsListResponse extends StObject {
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;androidpublisher#listingsListResponse&quot;.
+    * The kind of this response ("androidpublisher#listingsListResponse").
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
+  /**
+    * All localized listings.
+    */
   var listings: js.UndefOr[js.Array[SchemaListing]] = js.undefined
 }
 object SchemaListingsListResponse {
@@ -25,12 +27,14 @@ object SchemaListingsListResponse {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setListings(value: js.Array[SchemaListing]): Self = StObject.set(x, "listings", value.asInstanceOf[js.Any])
     
     inline def setListingsUndefined: Self = StObject.set(x, "listings", js.undefined)
     
-    inline def setListingsVarargs(value: SchemaListing*): Self = StObject.set(x, "listings", js.Array(value :_*))
+    inline def setListingsVarargs(value: SchemaListing*): Self = StObject.set(x, "listings", js.Array(value*))
   }
 }

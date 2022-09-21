@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html)
   */
-class SketchViewModelCls ()
+open class SketchViewModelCls ()
   extends StObject
      with typings.arcgisJsApi.esri.SketchViewModel {
   def this(properties: SketchViewModelProperties) = this()

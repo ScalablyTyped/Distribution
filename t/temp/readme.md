@@ -1,7 +1,7 @@
 
 # Scala.js typings for temp
 
-Typings are for version 0.8
+Typings are for version 0.9
 
 ## Library description:
 Temporary files and directories
@@ -10,10 +10,10 @@ Temporary files and directories
 | ------------------ | :-------------: |
 | Full name          | temp |
 | Keywords           | temporary, tmp, temp, tempdir, tempfile, tmpdir, tmpfile |
-| # releases         | 5 |
-| # dependents       | 1252 |
-| # downloads        | 109952080 |
-| # stars            | 27 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7484777E7 |
+| # stars            | 425.0 |
 
 ## Links
 - [Homepage](https://github.com/bruce/node-temp#readme)

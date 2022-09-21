@@ -29,7 +29,7 @@ object GetAuthorizersResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    inline def setItemsVarargs(value: Authorizer*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Authorizer*): Self = StObject.set(x, "Items", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

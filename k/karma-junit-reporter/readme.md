@@ -10,10 +10,10 @@ A Karma plugin. Report results in junit xml format.
 | ------------------ | :-------------: |
 | Full name          | karma-junit-reporter |
 | Keywords           | junit, karma-plugin, karma-reporter |
-| # releases         | 2 |
-| # dependents       | 90 |
-| # downloads        | 19466751 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1888088.6666666667 |
+| # stars            | 172.0 |
 
 ## Links
 - [Homepage](https://github.com/karma-runner/karma-junit-reporter#readme)

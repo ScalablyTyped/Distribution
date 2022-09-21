@@ -37,7 +37,7 @@ object anon {
     
     var mediaType: js.UndefOr[applicationSlashvdomDotv1Plussignjson] = js.undefined
     
-    var onVDOMEvent: js.UndefOr[js.Function2[/* targetName */ String, /* event */ SerializedEvent[js.Any], Unit]] = js.undefined
+    var onVDOMEvent: js.UndefOr[js.Function2[/* targetName */ String, /* event */ SerializedEvent[Any], Unit]] = js.undefined
   }
   object PartialProps {
     
@@ -56,7 +56,7 @@ object anon {
       
       inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
       
-      inline def setOnVDOMEvent(value: (/* targetName */ String, /* event */ SerializedEvent[js.Any]) => Unit): Self = StObject.set(x, "onVDOMEvent", js.Any.fromFunction2(value))
+      inline def setOnVDOMEvent(value: (/* targetName */ String, /* event */ SerializedEvent[Any]) => Unit): Self = StObject.set(x, "onVDOMEvent", js.Any.fromFunction2(value))
       
       inline def setOnVDOMEventUndefined: Self = StObject.set(x, "onVDOMEvent", js.undefined)
     }

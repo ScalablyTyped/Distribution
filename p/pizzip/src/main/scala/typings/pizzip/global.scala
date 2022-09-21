@@ -12,7 +12,7 @@ object global {
     
     @JSGlobal("PizZip")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.pizzip.mod.^ {
       /**
         * Specifying data & options is a shortcut for new PizZip().load(data, options);

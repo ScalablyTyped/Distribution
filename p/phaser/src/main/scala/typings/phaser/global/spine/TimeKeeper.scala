@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.TimeKeeper")
 @js.native
-class TimeKeeper ()
+open class TimeKeeper ()
   extends StObject
      with typings.phaser.spine.TimeKeeper {
   
@@ -14,16 +14,16 @@ class TimeKeeper ()
   var delta: Double = js.native
   
   /* private */ /* CompleteClass */
-  var frameCount: js.Any = js.native
+  var frameCount: Any = js.native
   
   /* private */ /* CompleteClass */
-  var frameTime: js.Any = js.native
+  var frameTime: Any = js.native
   
   /* CompleteClass */
   var framesPerSecond: Double = js.native
   
   /* private */ /* CompleteClass */
-  var lastTime: js.Any = js.native
+  var lastTime: Any = js.native
   
   /* CompleteClass */
   var maxDelta: Double = js.native

@@ -14,7 +14,7 @@ object mod extends Shortcut {
   @js.native
   trait NSLog extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   type _To = NSLog

@@ -27,6 +27,16 @@ trait ScheduleActionSettings extends StObject {
   var InputSwitchSettings: js.UndefOr[InputSwitchScheduleActionSettings] = js.undefined
   
   /**
+    * Action to activate a motion graphics image overlay
+    */
+  var MotionGraphicsImageActivateSettings: js.UndefOr[MotionGraphicsActivateScheduleActionSettings] = js.undefined
+  
+  /**
+    * Action to deactivate a motion graphics image overlay
+    */
+  var MotionGraphicsImageDeactivateSettings: js.UndefOr[MotionGraphicsDeactivateScheduleActionSettings] = js.undefined
+  
+  /**
     * Action to pause or unpause one or both channel pipelines
     */
   var PauseStateSettings: js.UndefOr[PauseStateScheduleActionSettings] = js.undefined
@@ -80,6 +90,14 @@ object ScheduleActionSettings {
     inline def setInputSwitchSettings(value: InputSwitchScheduleActionSettings): Self = StObject.set(x, "InputSwitchSettings", value.asInstanceOf[js.Any])
     
     inline def setInputSwitchSettingsUndefined: Self = StObject.set(x, "InputSwitchSettings", js.undefined)
+    
+    inline def setMotionGraphicsImageActivateSettings(value: MotionGraphicsActivateScheduleActionSettings): Self = StObject.set(x, "MotionGraphicsImageActivateSettings", value.asInstanceOf[js.Any])
+    
+    inline def setMotionGraphicsImageActivateSettingsUndefined: Self = StObject.set(x, "MotionGraphicsImageActivateSettings", js.undefined)
+    
+    inline def setMotionGraphicsImageDeactivateSettings(value: MotionGraphicsDeactivateScheduleActionSettings): Self = StObject.set(x, "MotionGraphicsImageDeactivateSettings", value.asInstanceOf[js.Any])
+    
+    inline def setMotionGraphicsImageDeactivateSettingsUndefined: Self = StObject.set(x, "MotionGraphicsImageDeactivateSettings", js.undefined)
     
     inline def setPauseStateSettings(value: PauseStateScheduleActionSettings): Self = StObject.set(x, "PauseStateSettings", value.asInstanceOf[js.Any])
     

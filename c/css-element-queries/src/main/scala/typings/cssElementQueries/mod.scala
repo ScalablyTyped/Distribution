@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("css-element-queries", "ElementQueries")
   @js.native
-  class ElementQueries ()
+  open class ElementQueries ()
     extends typings.cssElementQueries.elementQueriesMod.ElementQueries
   /* static members */
   object ElementQueries {
@@ -33,7 +33,7 @@ object mod {
   
   @JSImport("css-element-queries", "ResizeSensor")
   @js.native
-  class ResizeSensor protected ()
+  open class ResizeSensor protected ()
     extends typings.cssElementQueries.resizeSensorMod.ResizeSensor {
     def this(element: js.Array[Element], callback: ResizeSensorCallback) = this()
     /**

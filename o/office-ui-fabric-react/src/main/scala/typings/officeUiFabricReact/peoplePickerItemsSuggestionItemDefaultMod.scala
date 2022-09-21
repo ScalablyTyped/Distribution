@@ -14,5 +14,5 @@ object peoplePickerItemsSuggestionItemDefaultMod {
   val ^ : js.Any = js.native
   
   inline def SuggestionItemNormal(persona: IPersonaProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SuggestionItemNormal")(persona.asInstanceOf[js.Any]).asInstanceOf[Element]
-  inline def SuggestionItemNormal(persona: IPersonaProps, suggestionProps: IBasePickerSuggestionsProps[js.Any]): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("SuggestionItemNormal")(persona.asInstanceOf[js.Any], suggestionProps.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def SuggestionItemNormal(persona: IPersonaProps, suggestionProps: IBasePickerSuggestionsProps[Any]): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("SuggestionItemNormal")(persona.asInstanceOf[js.Any], suggestionProps.asInstanceOf[js.Any])).asInstanceOf[Element]
 }

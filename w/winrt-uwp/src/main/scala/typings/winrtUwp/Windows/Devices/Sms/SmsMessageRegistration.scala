@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SmsMessageRegistration extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_messagereceived(
     `type`: messagereceived,
@@ -28,7 +28,7 @@ trait SmsMessageRegistration extends StObject {
   @JSName("onmessagereceived")
   var onmessagereceived_Original: TypedEventHandler[SmsMessageRegistration, SmsMessageReceivedTriggerDetails] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_messagereceived(
     `type`: messagereceived,

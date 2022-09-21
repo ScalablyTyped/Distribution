@@ -22,6 +22,11 @@ trait GetOpenIdTokenForDeveloperIdentityInput extends StObject {
   var Logins: LoginsMap
   
   /**
+    * Use this operation to configure attribute mappings for custom providers. 
+    */
+  var PrincipalTags: js.UndefOr[typings.awsSdk.cognitoidentityMod.PrincipalTags] = js.undefined
+  
+  /**
     * The expiration time of the token, in seconds. You can specify a custom expiration time for the token so that you can cache it. If you don't provide an expiration time, the token is valid for 15 minutes. You can exchange the token with Amazon STS for temporary AWS credentials, which are valid for a maximum of one hour. The maximum token duration you can set is 24 hours. You should take care in setting the expiration time for a token, as there are significant security implications: an attacker could use a leaked token to access your AWS resources for the token's duration.  Please provide for a small grace period, usually no more than 5 minutes, to account for clock skew. 
     */
   var TokenDuration: js.UndefOr[typings.awsSdk.cognitoidentityMod.TokenDuration] = js.undefined
@@ -42,6 +47,10 @@ object GetOpenIdTokenForDeveloperIdentityInput {
     inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
     inline def setLogins(value: LoginsMap): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+    
+    inline def setPrincipalTags(value: PrincipalTags): Self = StObject.set(x, "PrincipalTags", value.asInstanceOf[js.Any])
+    
+    inline def setPrincipalTagsUndefined: Self = StObject.set(x, "PrincipalTags", js.undefined)
     
     inline def setTokenDuration(value: TokenDuration): Self = StObject.set(x, "TokenDuration", value.asInstanceOf[js.Any])
     

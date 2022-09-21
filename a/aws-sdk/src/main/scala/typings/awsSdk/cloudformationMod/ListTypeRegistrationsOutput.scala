@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTypeRegistrationsOutput extends StObject {
   
   /**
-    * If the request doesn't return all of the remaining results, NextToken is set to a token. To retrieve the next set of results, call this action again and assign that token to the request object's NextToken parameter. If the request returns all results, NextToken is set to null.
+    * If the request doesn't return all the remaining results, NextToken is set to a token. To retrieve the next set of results, call this action again and assign that token to the request object's NextToken parameter. If the request returns all results, NextToken is set to null.
     */
   var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
   
   /**
-    *  A list of type registration tokens. Use  DescribeTypeRegistration  to return detailed information about a type registration request.
+    * A list of extension registration tokens. Use  DescribeTypeRegistration  to return detailed information about a type registration request.
     */
   var RegistrationTokenList: js.UndefOr[typings.awsSdk.cloudformationMod.RegistrationTokenList] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListTypeRegistrationsOutput {
     
     inline def setRegistrationTokenListUndefined: Self = StObject.set(x, "RegistrationTokenList", js.undefined)
     
-    inline def setRegistrationTokenListVarargs(value: RegistrationToken*): Self = StObject.set(x, "RegistrationTokenList", js.Array(value :_*))
+    inline def setRegistrationTokenListVarargs(value: RegistrationToken*): Self = StObject.set(x, "RegistrationTokenList", js.Array(value*))
   }
 }

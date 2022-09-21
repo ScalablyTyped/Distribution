@@ -8,19 +8,19 @@ trait VssJsonCollectionWrapper
   extends StObject
      with VssJsonCollectionWrapperBase {
   
-  var value: js.Array[js.Any]
+  var value: js.Array[Any]
 }
 object VssJsonCollectionWrapper {
   
-  inline def apply(count: Double, value: js.Array[js.Any]): VssJsonCollectionWrapper = {
+  inline def apply(count: Double, value: js.Array[Any]): VssJsonCollectionWrapper = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[VssJsonCollectionWrapper]
   }
   
   extension [Self <: VssJsonCollectionWrapper](x: Self) {
     
-    inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

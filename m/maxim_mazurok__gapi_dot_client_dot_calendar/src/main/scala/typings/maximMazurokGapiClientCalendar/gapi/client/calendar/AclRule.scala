@@ -10,7 +10,7 @@ trait AclRule extends StObject {
   /** ETag of the resource. */
   var etag: js.UndefOr[String] = js.undefined
   
-  /** Identifier of the ACL rule. */
+  /** Identifier of the Access Control List (ACL) rule. See Sharing calendars. */
   var id: js.UndefOr[String] = js.undefined
   
   /** Type of the resource ("calendar#aclRule"). */
@@ -26,7 +26,7 @@ trait AclRule extends StObject {
     */
   var role: js.UndefOr[String] = js.undefined
   
-  /** The scope of the rule. */
+  /** The extent to which calendar access is granted by this ACL rule. */
   var scope: js.UndefOr[Type] = js.undefined
 }
 object AclRule {

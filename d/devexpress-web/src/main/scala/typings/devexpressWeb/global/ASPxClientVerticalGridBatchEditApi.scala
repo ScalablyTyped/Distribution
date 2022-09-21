@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientVerticalGridBatchEditApi")
 @js.native
-class ASPxClientVerticalGridBatchEditApi ()
+open class ASPxClientVerticalGridBatchEditApi ()
   extends StObject
      with typings.devexpressWeb.ASPxClientVerticalGridBatchEditApi

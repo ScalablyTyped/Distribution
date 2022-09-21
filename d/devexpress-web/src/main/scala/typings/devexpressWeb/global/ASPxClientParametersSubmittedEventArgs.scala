@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientParametersSubmittedEventArgs")
 @js.native
-class ASPxClientParametersSubmittedEventArgs protected ()
+open class ASPxClientParametersSubmittedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientParametersSubmittedEventArgs {
-  def this(parameters: StringDictionary[js.Any]) = this()
+  def this(parameters: StringDictionary[Any]) = this()
   
   /* CompleteClass */
-  var Parameters: StringDictionary[js.Any] = js.native
+  var Parameters: StringDictionary[Any] = js.native
   
   /* CompleteClass */
-  var ParametersViewModel: js.Any = js.native
+  var ParametersViewModel: Any = js.native
 }

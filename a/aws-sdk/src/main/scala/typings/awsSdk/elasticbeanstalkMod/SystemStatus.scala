@@ -33,6 +33,6 @@ object SystemStatus {
     
     inline def setLoadAverageUndefined: Self = StObject.set(x, "LoadAverage", js.undefined)
     
-    inline def setLoadAverageVarargs(value: LoadAverageValue*): Self = StObject.set(x, "LoadAverage", js.Array(value :_*))
+    inline def setLoadAverageVarargs(value: LoadAverageValue*): Self = StObject.set(x, "LoadAverage", js.Array(value*))
   }
 }

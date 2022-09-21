@@ -12,7 +12,7 @@ trait Sod extends StObject {
   
   var loaded: Boolean
   
-  var qfn: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var qfn: js.UndefOr[js.Array[Any]] = js.undefined
   
   var reset: js.UndefOr[Boolean] = js.undefined
   
@@ -33,17 +33,17 @@ object Sod {
     
     inline def setDepkeysUndefined: Self = StObject.set(x, "depkeys", js.undefined)
     
-    inline def setDepkeysVarargs(value: String*): Self = StObject.set(x, "depkeys", js.Array(value :_*))
+    inline def setDepkeysVarargs(value: String*): Self = StObject.set(x, "depkeys", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    inline def setQfn(value: js.Array[js.Any]): Self = StObject.set(x, "qfn", value.asInstanceOf[js.Any])
+    inline def setQfn(value: js.Array[Any]): Self = StObject.set(x, "qfn", value.asInstanceOf[js.Any])
     
     inline def setQfnUndefined: Self = StObject.set(x, "qfn", js.undefined)
     
-    inline def setQfnVarargs(value: js.Any*): Self = StObject.set(x, "qfn", js.Array(value :_*))
+    inline def setQfnVarargs(value: Any*): Self = StObject.set(x, "qfn", js.Array(value*))
     
     inline def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     

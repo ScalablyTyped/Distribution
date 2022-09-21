@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplyPendingMaintenanceActionResponse extends StObject {
   
   /**
-    * The AWS DMS resource that the pending maintenance action will be applied to.
+    * The DMS resource that the pending maintenance action will be applied to.
     */
   var ResourcePendingMaintenanceActions: js.UndefOr[typings.awsSdk.dmsMod.ResourcePendingMaintenanceActions] = js.undefined
 }

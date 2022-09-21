@@ -16,17 +16,11 @@ trait ItemInline extends StObject {
   
   var itemControl: String
   
-  var itemDisabled: String
-  
-  var itemHover: String
-  
   var itemInline: String
   
   var itemText: String
   
   var label: String
-  
-  var other: String
   
   var root: String
 }
@@ -38,15 +32,12 @@ object ItemInline {
     item: String,
     itemChecked: String,
     itemControl: String,
-    itemDisabled: String,
-    itemHover: String,
     itemInline: String,
     itemText: String,
     label: String,
-    other: String,
     root: String
   ): ItemInline = {
-    val __obj = js.Dynamic.literal(clearButton = clearButton.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemDisabled = itemDisabled.asInstanceOf[js.Any], itemHover = itemHover.asInstanceOf[js.Any], itemInline = itemInline.asInstanceOf[js.Any], itemText = itemText.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clearButton = clearButton.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemInline = itemInline.asInstanceOf[js.Any], itemText = itemText.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemInline]
   }
   
@@ -62,17 +53,11 @@ object ItemInline {
     
     inline def setItemControl(value: String): Self = StObject.set(x, "itemControl", value.asInstanceOf[js.Any])
     
-    inline def setItemDisabled(value: String): Self = StObject.set(x, "itemDisabled", value.asInstanceOf[js.Any])
-    
-    inline def setItemHover(value: String): Self = StObject.set(x, "itemHover", value.asInstanceOf[js.Any])
-    
     inline def setItemInline(value: String): Self = StObject.set(x, "itemInline", value.asInstanceOf[js.Any])
     
     inline def setItemText(value: String): Self = StObject.set(x, "itemText", value.asInstanceOf[js.Any])
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-    
-    inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }

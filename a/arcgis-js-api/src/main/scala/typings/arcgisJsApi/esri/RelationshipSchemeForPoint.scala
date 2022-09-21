@@ -90,7 +90,7 @@ object RelationshipSchemeForPoint {
     
     inline def setColorsForClassBreaks(value: js.Array[RelationshipSchemeForPointColorsForClassBreaks]): Self = StObject.set(x, "colorsForClassBreaks", value.asInstanceOf[js.Any])
     
-    inline def setColorsForClassBreaksVarargs(value: RelationshipSchemeForPointColorsForClassBreaks*): Self = StObject.set(x, "colorsForClassBreaks", js.Array(value :_*))
+    inline def setColorsForClassBreaksVarargs(value: RelationshipSchemeForPointColorsForClassBreaks*): Self = StObject.set(x, "colorsForClassBreaks", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -106,6 +106,6 @@ object RelationshipSchemeForPoint {
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ A javascript filter for bad words
 | ------------------ | :-------------: |
 | Full name          | bad-words |
 | Keywords           | curse, words, profanity, filter |
-| # releases         | 3 |
-| # dependents       | 21 |
-| # downloads        | 1059658 |
-| # stars            | 8 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 221541.0 |
+| # stars            | 463.0 |
 
 ## Links
 - [Homepage](https://github.com/web-mech/badwords#readme)

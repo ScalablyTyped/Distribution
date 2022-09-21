@@ -37,7 +37,7 @@ object PanoramaData {
     
     inline def setLinks(value: js.Array[PanoramaLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    inline def setLinksVarargs(value: PanoramaLink*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: PanoramaLink*): Self = StObject.set(x, "links", js.Array(value*))
     
     inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

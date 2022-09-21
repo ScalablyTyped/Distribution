@@ -83,7 +83,7 @@ object Event {
     
     inline def setAssistingParticipantIds(value: js.Array[Double]): Self = StObject.set(x, "assistingParticipantIds", value.asInstanceOf[js.Any])
     
-    inline def setAssistingParticipantIdsVarargs(value: Double*): Self = StObject.set(x, "assistingParticipantIds", js.Array(value :_*))
+    inline def setAssistingParticipantIdsVarargs(value: Double*): Self = StObject.set(x, "assistingParticipantIds", js.Array(value*))
     
     inline def setBuildingType(value: String): Self = StObject.set(x, "buildingType", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for feedsub
 
-Typings are for version 0.7
+Typings are for version 0.7.8
 
 ## Library description:
 Reads online RSS/Atom/JSON feeds notifying on new items.
@@ -10,10 +10,10 @@ Reads online RSS/Atom/JSON feeds notifying on new items.
 | ------------------ | :-------------: |
 | Full name          | feedsub |
 | Keywords           | feed, rss, atom, json, subscribe |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 37436 |
-| # stars            | 1 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 922.0 |
+| # stars            | 183.0 |
 
 ## Links
 - [Homepage](https://github.com/fent/node-feedsub#readme)
@@ -24,7 +24,7 @@ Reads online RSS/Atom/JSON feeds notifying on new items.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

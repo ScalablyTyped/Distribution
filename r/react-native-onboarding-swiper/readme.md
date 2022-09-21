@@ -10,15 +10,12 @@ Delightful Onboarding for your React-Native App
 | ------------------ | :-------------: |
 | Full name          | react-native-onboarding-swiper |
 | Keywords           | React, Native, React-Native, Component, Onboarding, Tutorial, Intro, Swiper, Welcome, Introduction, Instructions |
-| # releases         | 11 |
-| # dependents       | 1 |
-| # downloads        | 121073 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 18331.0 |
+| # stars            | 781.0 |
 
 ## Links
-- [Homepage](https://github.com/jfilter/react-native-onboarding-swiper#readme)
-- [Bugs](https://github.com/jfilter/react-native-onboarding-swiper/issues)
-- [Repository](https://github.com/jfilter/react-native-onboarding-swiper)
 - [Npm](https://www.npmjs.com/package/react-native-onboarding-swiper)
     
 

@@ -78,7 +78,7 @@ object tabGroupMod {
   
   @JSImport("rbx/components/tab/tab-group", "TabGroup")
   @js.native
-  val TabGroup: ForwardRefAsExoticComponent[TabGroupProps, ElementType[js.Any]] = js.native
+  val TabGroup: ForwardRefAsExoticComponent[TabGroupProps, ElementType[Any]] = js.native
   
   trait TabGroupModifierProps extends StObject {
     

@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Phong")
 @js.native
-class Phong () extends Shader
+open class Phong () extends Shader

@@ -51,6 +51,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webix.webixStrings.onTouchEnd
   - typings.webix.webixStrings.onTouchMove
   - typings.webix.webixStrings.onTouchStart
+  - typings.webix.webixStrings.onUnits
   - typings.webix.webixStrings.onValidationError
   - typings.webix.webixStrings.onValidationSuccess
   - typings.webix.webixStrings.onViewResize
@@ -150,6 +151,8 @@ object unitlistEventName {
   inline def onTouchMove: typings.webix.webixStrings.onTouchMove = "onTouchMove".asInstanceOf[typings.webix.webixStrings.onTouchMove]
   
   inline def onTouchStart: typings.webix.webixStrings.onTouchStart = "onTouchStart".asInstanceOf[typings.webix.webixStrings.onTouchStart]
+  
+  inline def onUnits: typings.webix.webixStrings.onUnits = "onUnits".asInstanceOf[typings.webix.webixStrings.onUnits]
   
   inline def onValidationError: typings.webix.webixStrings.onValidationError = "onValidationError".asInstanceOf[typings.webix.webixStrings.onValidationError]
   

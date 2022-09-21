@@ -1,8 +1,6 @@
 package typings.d3Hierarchy
 
 import typings.d3Hierarchy.d3HierarchyStrings._empty
-import typings.std.Iterable
-import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +14,7 @@ object mod {
   inline def cluster[Datum](): ClusterLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("cluster")().asInstanceOf[ClusterLayout[Datum]]
   
   inline def hierarchy[Datum](data: Datum): HierarchyNode[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("hierarchy")(data.asInstanceOf[js.Any]).asInstanceOf[HierarchyNode[Datum]]
-  inline def hierarchy[Datum](data: Datum, children: js.Function1[/* d */ Datum, js.UndefOr[Iterable[Datum] | Null]]): HierarchyNode[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("hierarchy")(data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[HierarchyNode[Datum]]
+  inline def hierarchy[Datum](data: Datum, children: js.Function1[/* d */ Datum, js.UndefOr[js.Iterable[Datum] | Null]]): HierarchyNode[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("hierarchy")(data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[HierarchyNode[Datum]]
   
   inline def pack[Datum](): PackLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")().asInstanceOf[PackLayout[Datum]]
   
@@ -32,17 +30,17 @@ object mod {
   
   inline def treemap[Datum](): TreemapLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("treemap")().asInstanceOf[TreemapLayout[Datum]]
   
-  inline def treemapBinary(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapBinary")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def treemapBinary(node: HierarchyRectangularNode[Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapBinary")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def treemapDice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def treemapDice(node: HierarchyRectangularNode[Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("d3-hierarchy", "treemapResquarify")
   @js.native
   val treemapResquarify: RatioSquarifyTilingFactory = js.native
   
-  inline def treemapSlice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSlice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def treemapSlice(node: HierarchyRectangularNode[Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSlice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def treemapSliceDice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSliceDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def treemapSliceDice(node: HierarchyRectangularNode[Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSliceDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("d3-hierarchy", "treemapSquarify")
   @js.native
@@ -282,7 +280,7 @@ object mod {
       * Returns an iterator over the node’s descendants in breadth-first order.
       */
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[Iterator[this.type, js.Any, Unit]] = js.native
+    var iterator: js.Function0[js.Iterator[this.type]] = js.native
     
     /**
       * Returns the array of leaf nodes in traversal order; leaves are nodes with no children.
@@ -622,7 +620,7 @@ object mod {
   @js.native
   trait RatioSquarifyTilingFactory extends StObject {
     
-    def apply(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+    def apply(node: HierarchyRectangularNode[Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
     
     /**
       * Specifies the desired aspect ratio of the generated rectangles.
@@ -699,6 +697,25 @@ object mod {
           js.UndefOr[String | Null | _empty]
         ]
     ): this.type = js.native
+    
+    /**
+      * If path is specified, sets the path accessor to the given function and returns this stratify operator.
+      * Otherwise, returns the current path accessor, which defaults to undefined.
+      * If a path accessor is set, the id and parentId arguments are ignored,
+      * and a unix-like hierarchy is computed on the slash-delimited strings
+      * returned by the path accessor, imputing parent nodes and ids as necessary.
+      *
+      * @param path The path accessor.
+      */
+    def path(): this.type = js.native
+    def path(path: js.Function3[/* d */ Datum, /* i */ Double, /* data */ js.Array[Datum], String]): this.type = js.native
+    /**
+      * Returns the current path accessor, which defaults to undefined.
+      */
+    @JSName("path")
+    def path_Union(): js.UndefOr[
+        (js.Function3[/* d */ Datum, /* i */ Double, /* data */ js.Array[Datum], String]) | Null
+      ] = js.native
   }
   
   @js.native

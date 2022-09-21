@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DeleteTableCellsWithShiftHorizontallyCommand")
 @js.native
-class DeleteTableCellsWithShiftHorizontallyCommand ()
+open class DeleteTableCellsWithShiftHorizontallyCommand ()
   extends StObject
      with typings.devexpressWeb.DeleteTableCellsWithShiftHorizontallyCommand {
   

@@ -1,24 +1,15 @@
 package typings.long
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
-import org.scalablytyped.runtime.Shortcut
 import typings.long.anon.High
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
   @JSImport("long", JSImport.Namespace)
   @js.native
-  val ^ : js.Object & LongConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("long", JSImport.Namespace)
-  @js.native
-  class Class protected ()
+  open class ^ protected ()
     extends StObject
        with Long {
     /**
@@ -29,6 +20,155 @@ object mod extends Shortcut {
     def this(low: Double, high: Double, unsigned: Boolean) = this()
     def this(low: Double, high: Unit, unsigned: Boolean) = this()
   }
+  @JSImport("long", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Maximum unsigned value.
+    */
+  /* static member */
+  @JSImport("long", "MAX_UNSIGNED_VALUE")
+  @js.native
+  def MAX_UNSIGNED_VALUE: Long = js.native
+  inline def MAX_UNSIGNED_VALUE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_UNSIGNED_VALUE")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Maximum signed value.
+    */
+  /* static member */
+  @JSImport("long", "MAX_VALUE")
+  @js.native
+  def MAX_VALUE: Long = js.native
+  inline def MAX_VALUE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_VALUE")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Minimum signed value.
+    */
+  /* static member */
+  @JSImport("long", "MIN_VALUE")
+  @js.native
+  def MIN_VALUE: Long = js.native
+  inline def MIN_VALUE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_VALUE")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Signed negative one.
+    */
+  /* static member */
+  @JSImport("long", "NEG_ONE")
+  @js.native
+  def NEG_ONE: Long = js.native
+  inline def NEG_ONE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NEG_ONE")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Signed one.
+    */
+  /* static member */
+  @JSImport("long", "ONE")
+  @js.native
+  def ONE: Long = js.native
+  inline def ONE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Unsigned one.
+    */
+  /* static member */
+  @JSImport("long", "UONE")
+  @js.native
+  def UONE: Long = js.native
+  inline def UONE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UONE")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Unsigned zero.
+    */
+  /* static member */
+  @JSImport("long", "UZERO")
+  @js.native
+  def UZERO: Long = js.native
+  inline def UZERO_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UZERO")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Signed zero
+    */
+  /* static member */
+  @JSImport("long", "ZERO")
+  @js.native
+  def ZERO: Long = js.native
+  inline def ZERO_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Returns a Long representing the 64 bit integer that comes by concatenating the given low and high bits. Each is assumed to use 32 bits.
+    */
+  /* static member */
+  inline def fromBits(lowBits: Double, highBits: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromBits(lowBits: Double, highBits: Double, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  
+  /**
+    * Creates a Long from its byte representation.
+    */
+  /* static member */
+  inline def fromBytes(bytes: js.Array[Double]): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromBytes(bytes: js.Array[Double], unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromBytes(bytes: js.Array[Double], unsigned: Boolean, le: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any], le.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromBytes(bytes: js.Array[Double], unsigned: Unit, le: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any], le.asInstanceOf[js.Any])).asInstanceOf[Long]
+  
+  /**
+    * Creates a Long from its big endian byte representation.
+    */
+  /* static member */
+  inline def fromBytesBE(bytes: js.Array[Double]): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesBE")(bytes.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromBytesBE(bytes: js.Array[Double], unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesBE")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  
+  /**
+    * Creates a Long from its little endian byte representation.
+    */
+  /* static member */
+  inline def fromBytesLE(bytes: js.Array[Double]): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesLE")(bytes.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromBytesLE(bytes: js.Array[Double], unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesLE")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  
+  /**
+    * Returns a Long representing the given 32 bit integer value.
+    */
+  /* static member */
+  inline def fromInt(value: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromInt(value: Double, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  
+  /**
+    * Returns a Long representing the given value, provided that it is a finite number. Otherwise, zero is returned.
+    */
+  /* static member */
+  inline def fromNumber(value: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromNumber(value: Double, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  
+  /**
+    * Returns a Long representation of the given string, written using the specified radix.
+    */
+  /* static member */
+  inline def fromString(str: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromString(str: String, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromString(str: String, unsigned: Boolean, radix: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromString(str: String, unsigned: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromString(str: String, unsigned: Double, radix: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromString(str: String, unsigned: Unit, radix: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Long]
+  
+  inline def fromValue(`val`: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromValue(`val`: String, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromValue(`val`: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromValue(`val`: Double, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromValue(`val`: High): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromValue(`val`: High, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  /**
+    * Converts the specified value to a Long.
+    */
+  /* static member */
+  inline def fromValue(`val`: Long): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromValue(`val`: Long, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  
+  /**
+    * Tests if the specified object is a Long.
+    */
+  /* static member */
+  inline def isLong(obj: Any): /* is long.long.Long */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLong")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is long.long.Long */ Boolean]
   
   @js.native
   trait Long extends StObject {
@@ -47,6 +187,11 @@ object mod extends Shortcut {
       */
     def and(other: Long): Long = js.native
     
+    /**
+      * Returns count leading zeros of this Long.
+      */
+    def clz(): Double = js.native
+    
     def comp(other: String): Double = js.native
     def comp(other: Double): Double = js.native
     /**
@@ -60,6 +205,21 @@ object mod extends Shortcut {
       * Compares this Long's value with the specified's.
       */
     def compare(other: Long): Double = js.native
+    
+    /**
+      * Returns count leading zeros of this Long.
+      */
+    def countLeadingZeros(): Double = js.native
+    
+    /**
+      * Returns count trailing zeros of this Long.
+      */
+    def countTrailingZeros(): Double = js.native
+    
+    /**
+      * Returns count trailing zeros of this Long.
+      */
+    def ctz(): Double = js.native
     
     def div(divisor: String): Long = js.native
     def div(divisor: Double): Long = js.native
@@ -88,6 +248,18 @@ object mod extends Shortcut {
       * Tests if this Long's value equals the specified's.
       */
     def equals(other: Long): Boolean = js.native
+    
+    /**
+      * Tests if this Long's value equals zero.
+      */
+    def eqz(): Boolean = js.native
+    
+    def ge(other: String): Boolean = js.native
+    def ge(other: Double): Boolean = js.native
+    /**
+      * Tests if this Long's value is greater than or equal the specified's.
+      */
+    def ge(other: Long): Boolean = js.native
     
     /**
       * Gets the high 32 bits as a signed integer.
@@ -163,7 +335,7 @@ object mod extends Shortcut {
     def isOdd(): Boolean = js.native
     
     /**
-      * Tests if this Long's value is positive.
+      * Tests if this Long's value is positive or zero.
       */
     def isPositive(): Boolean = js.native
     
@@ -171,6 +343,13 @@ object mod extends Shortcut {
       * Tests if this Long's value equals zero.
       */
     def isZero(): Boolean = js.native
+    
+    def le(other: String): Boolean = js.native
+    def le(other: Double): Boolean = js.native
+    /**
+      * Tests if this Long's value is less than or equal the specified's.
+      */
+    def le(other: Long): Boolean = js.native
     
     def lessThan(other: String): Boolean = js.native
     def lessThan(other: Double): Boolean = js.native
@@ -233,6 +412,13 @@ object mod extends Shortcut {
       */
     def multiply(multiplier: Long): Long = js.native
     
+    def ne(other: String): Boolean = js.native
+    def ne(other: Double): Boolean = js.native
+    /**
+      * Tests if this Long's value differs from the specified's.
+      */
+    def ne(other: Long): Boolean = js.native
+    
     /**
       * Negates this Long's value.
       */
@@ -269,6 +455,37 @@ object mod extends Shortcut {
       */
     def or(other: Long): Long = js.native
     
+    def rem(other: String): Long = js.native
+    def rem(other: Double): Long = js.native
+    /**
+      * Returns this Long modulo the specified.
+      */
+    def rem(other: Long): Long = js.native
+    
+    /**
+      * Returns this Long with bits rotated to the left by the given amount.
+      */
+    def rotateLeft(numBits: Double): Long = js.native
+    def rotateLeft(numBits: Long): Long = js.native
+    
+    /**
+      * Returns this Long with bits rotated to the right by the given amount.
+      */
+    def rotateRight(numBits: Double): Long = js.native
+    def rotateRight(numBits: Long): Long = js.native
+    
+    /**
+      * Returns this Long with bits rotated to the left by the given amount.
+      */
+    def rotl(numBits: Double): Long = js.native
+    def rotl(numBits: Long): Long = js.native
+    
+    /**
+      * Returns this Long with bits rotated to the right by the given amount.
+      */
+    def rotr(numBits: Double): Long = js.native
+    def rotr(numBits: Long): Long = js.native
+    
     /**
       * Returns this Long with bits shifted to the left by the given amount.
       */
@@ -298,6 +515,12 @@ object mod extends Shortcut {
       */
     def shr(numBits: Double): Long = js.native
     def shr(numBits: Long): Long = js.native
+    
+    /**
+      * Returns this Long with bits logically shifted to the right by the given amount.
+      */
+    def shr_u(numBits: Double): Long = js.native
+    def shr_u(numBits: Long): Long = js.native
     
     /**
       * Returns this Long with bits logically shifted to the right by the given amount.
@@ -369,126 +592,4 @@ object mod extends Shortcut {
       */
     def xor(other: Long): Long = js.native
   }
-  
-  @js.native
-  trait LongConstructor
-    extends StObject
-       with /**
-    * Constructs a 64 bit two's-complement integer, given its low and high 32 bit values as signed integers. See the from* functions below for more convenient ways of constructing Longs.
-    */
-  Instantiable1[/* low */ Double, Long]
-       with Instantiable2[/* low */ Double, /* high */ Double, Long]
-       with Instantiable3[
-          /* low */ Double, 
-          (/* high */ Double) | (/* high */ Unit), 
-          /* unsigned */ Boolean, 
-          Long
-        ] {
-    
-    /**
-      * Maximum unsigned value.
-      */
-    var MAX_UNSIGNED_VALUE: Long = js.native
-    
-    /**
-      * Maximum signed value.
-      */
-    var MAX_VALUE: Long = js.native
-    
-    /**
-      * Minimum signed value.
-      */
-    var MIN_VALUE: Long = js.native
-    
-    /**
-      * Signed negative one.
-      */
-    var NEG_ONE: Long = js.native
-    
-    /**
-      * Signed one.
-      */
-    var ONE: Long = js.native
-    
-    /**
-      * Unsigned one.
-      */
-    var UONE: Long = js.native
-    
-    /**
-      * Unsigned zero.
-      */
-    var UZERO: Long = js.native
-    
-    /**
-      * Signed zero
-      */
-    var ZERO: Long = js.native
-    
-    /**
-      * Returns a Long representing the 64 bit integer that comes by concatenating the given low and high bits. Each is assumed to use 32 bits.
-      */
-    def fromBits(lowBits: Double, highBits: Double): Long = js.native
-    def fromBits(lowBits: Double, highBits: Double, unsigned: Boolean): Long = js.native
-    
-    /**
-      * Creates a Long from its byte representation.
-      */
-    def fromBytes(bytes: js.Array[Double]): Long = js.native
-    def fromBytes(bytes: js.Array[Double], unsigned: Boolean): Long = js.native
-    def fromBytes(bytes: js.Array[Double], unsigned: Boolean, le: Boolean): Long = js.native
-    def fromBytes(bytes: js.Array[Double], unsigned: Unit, le: Boolean): Long = js.native
-    
-    /**
-      * Creates a Long from its little endian byte representation.
-      */
-    def fromBytesBE(bytes: js.Array[Double]): Long = js.native
-    def fromBytesBE(bytes: js.Array[Double], unsigned: Boolean): Long = js.native
-    
-    /**
-      * Creates a Long from its little endian byte representation.
-      */
-    def fromBytesLE(bytes: js.Array[Double]): Long = js.native
-    def fromBytesLE(bytes: js.Array[Double], unsigned: Boolean): Long = js.native
-    
-    /**
-      * Returns a Long representing the given 32 bit integer value.
-      */
-    def fromInt(value: Double): Long = js.native
-    def fromInt(value: Double, unsigned: Boolean): Long = js.native
-    
-    /**
-      * Returns a Long representing the given value, provided that it is a finite number. Otherwise, zero is returned.
-      */
-    def fromNumber(value: Double): Long = js.native
-    def fromNumber(value: Double, unsigned: Boolean): Long = js.native
-    
-    /**
-      * Returns a Long representation of the given string, written using the specified radix.
-      */
-    def fromString(str: String): Long = js.native
-    def fromString(str: String, unsigned: Boolean): Long = js.native
-    def fromString(str: String, unsigned: Boolean, radix: Double): Long = js.native
-    def fromString(str: String, unsigned: Double): Long = js.native
-    def fromString(str: String, unsigned: Double, radix: Double): Long = js.native
-    def fromString(str: String, unsigned: Unit, radix: Double): Long = js.native
-    
-    def fromValue(`val`: String): Long = js.native
-    def fromValue(`val`: Double): Long = js.native
-    def fromValue(`val`: High): Long = js.native
-    /**
-      * Converts the specified value to a Long.
-      */
-    def fromValue(`val`: Long): Long = js.native
-    
-    /**
-      * Tests if the specified object is a Long.
-      */
-    def isLong(obj: js.Any): /* is long.long.Long */ Boolean = js.native
-  }
-  
-  type _To = js.Object & LongConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: js.Object & LongConstructor = ^
 }

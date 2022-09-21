@@ -70,7 +70,7 @@ object ToolbarProps {
     
     inline def setRightElementUndefined: Self = StObject.set(x, "rightElement", js.undefined)
     
-    inline def setRightElementVarargs(value: String*): Self = StObject.set(x, "rightElement", js.Array(value :_*))
+    inline def setRightElementVarargs(value: String*): Self = StObject.set(x, "rightElement", js.Array(value*))
     
     inline def setSearchable(value: Searchable): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
     

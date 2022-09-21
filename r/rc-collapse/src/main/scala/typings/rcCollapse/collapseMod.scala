@@ -13,7 +13,7 @@ object collapseMod {
   
   @JSImport("rc-collapse/es/Collapse", JSImport.Default)
   @js.native
-  class default protected () extends Collapse {
+  open class default protected () extends Collapse {
     def this(props: CollapseProps) = this()
   }
   object default {
@@ -25,7 +25,7 @@ object collapseMod {
     /* was `typeof CollapsePanel` */
     @JSImport("rc-collapse/es/Collapse", "default.Panel")
     @js.native
-    class Panel ()
+    open class Panel ()
       extends typings.rcCollapse.panelMod.default
     /* was `typeof CollapsePanel` */
     object Panel {
@@ -91,8 +91,7 @@ object collapseMod {
   }
   
   @js.native
-  trait Collapse
-    extends Component[CollapseProps, CollapseState, js.Any] {
+  trait Collapse extends Component[CollapseProps, CollapseState, Any] {
     
     def getItems(): js.Array[ReactElement] = js.native
     
@@ -126,7 +125,7 @@ object collapseMod {
       
       inline def setActiveKey(value: js.Array[Key]): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       
-      inline def setActiveKeyVarargs(value: Key*): Self = StObject.set(x, "activeKey", js.Array(value :_*))
+      inline def setActiveKeyVarargs(value: Key*): Self = StObject.set(x, "activeKey", js.Array(value*))
     }
   }
 }

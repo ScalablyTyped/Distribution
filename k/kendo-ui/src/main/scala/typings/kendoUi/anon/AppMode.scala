@@ -20,7 +20,7 @@ trait AppMode extends StObject {
   
   var name: String
   
-  var tablet: js.Any
+  var tablet: Any
 }
 object AppMode {
   
@@ -32,7 +32,7 @@ object AppMode {
     majorVersion: String,
     minorVersion: String,
     name: String,
-    tablet: js.Any
+    tablet: Any
   ): AppMode = {
     val __obj = js.Dynamic.literal(appMode = appMode.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], flatVersion = flatVersion.asInstanceOf[js.Any], majorVersion = majorVersion.asInstanceOf[js.Any], minorVersion = minorVersion.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tablet = tablet.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppMode]
@@ -54,6 +54,6 @@ object AppMode {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setTablet(value: js.Any): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
+    inline def setTablet(value: Any): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
   }
 }

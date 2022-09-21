@@ -8,8 +8,7 @@ trait CorsPolicy extends StObject {
   
   /**
     * In response to a preflight request, setting this to true indicates that the actual request can include user credentials. This translates to the Access-Control-Allow-Credentials
-    * header.
-    * Default is false.
+    * header. Default is false.
     */
   var allowCredentials: js.UndefOr[Boolean] = js.undefined
   
@@ -20,15 +19,12 @@ trait CorsPolicy extends StObject {
   var allowMethods: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Specifies the regualar expression patterns that match allowed origins. For regular expression grammar please see en.cppreference.com/w/cpp/regex/ecmascript
-    * An origin is allowed if it matches either an item in allowOrigins or an item in allowOriginRegexes.
+    * Specifies the regualar expression patterns that match allowed origins. For regular expression grammar please see github.com/google/re2/wiki/Syntax An origin is allowed if it matches
+    * either an item in allowOrigins or an item in allowOriginRegexes.
     */
   var allowOriginRegexes: js.UndefOr[js.Array[String]] = js.undefined
   
-  /**
-    * Specifies the list of origins that will be allowed to do CORS requests.
-    * An origin is allowed if it matches either an item in allowOrigins or an item in allowOriginRegexes.
-    */
+  /** Specifies the list of origins that will be allowed to do CORS requests. An origin is allowed if it matches either an item in allowOrigins or an item in allowOriginRegexes. */
   var allowOrigins: js.UndefOr[js.Array[String]] = js.undefined
   
   /** If true, specifies the CORS policy is disabled. The default value of false, which indicates that the CORS policy is in effect. */
@@ -57,25 +53,25 @@ object CorsPolicy {
     
     inline def setAllowHeadersUndefined: Self = StObject.set(x, "allowHeaders", js.undefined)
     
-    inline def setAllowHeadersVarargs(value: String*): Self = StObject.set(x, "allowHeaders", js.Array(value :_*))
+    inline def setAllowHeadersVarargs(value: String*): Self = StObject.set(x, "allowHeaders", js.Array(value*))
     
     inline def setAllowMethods(value: js.Array[String]): Self = StObject.set(x, "allowMethods", value.asInstanceOf[js.Any])
     
     inline def setAllowMethodsUndefined: Self = StObject.set(x, "allowMethods", js.undefined)
     
-    inline def setAllowMethodsVarargs(value: String*): Self = StObject.set(x, "allowMethods", js.Array(value :_*))
+    inline def setAllowMethodsVarargs(value: String*): Self = StObject.set(x, "allowMethods", js.Array(value*))
     
     inline def setAllowOriginRegexes(value: js.Array[String]): Self = StObject.set(x, "allowOriginRegexes", value.asInstanceOf[js.Any])
     
     inline def setAllowOriginRegexesUndefined: Self = StObject.set(x, "allowOriginRegexes", js.undefined)
     
-    inline def setAllowOriginRegexesVarargs(value: String*): Self = StObject.set(x, "allowOriginRegexes", js.Array(value :_*))
+    inline def setAllowOriginRegexesVarargs(value: String*): Self = StObject.set(x, "allowOriginRegexes", js.Array(value*))
     
     inline def setAllowOrigins(value: js.Array[String]): Self = StObject.set(x, "allowOrigins", value.asInstanceOf[js.Any])
     
     inline def setAllowOriginsUndefined: Self = StObject.set(x, "allowOrigins", js.undefined)
     
-    inline def setAllowOriginsVarargs(value: String*): Self = StObject.set(x, "allowOrigins", js.Array(value :_*))
+    inline def setAllowOriginsVarargs(value: String*): Self = StObject.set(x, "allowOrigins", js.Array(value*))
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
@@ -85,7 +81,7 @@ object CorsPolicy {
     
     inline def setExposeHeadersUndefined: Self = StObject.set(x, "exposeHeaders", js.undefined)
     
-    inline def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "exposeHeaders", js.Array(value :_*))
+    inline def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "exposeHeaders", js.Array(value*))
     
     inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     

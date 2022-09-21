@@ -5,13 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new LightComponentSystem.
-  * @param app - The application.
+  * A Light Component is used to dynamically light the scene.
+  *
+  * @augments ComponentSystem
   */
 @JSGlobal("pc.LightComponentSystem")
 @js.native
-class LightComponentSystem protected ()
-  extends StObject
-     with typings.playcanvas.pc.EventHandler {
-  def this(app: typings.playcanvas.pc.Application) = this()
+open class LightComponentSystem protected ()
+  extends typings.playcanvas.mod.LightComponentSystem {
+  /**
+    * Create a new ComponentSystem instance.
+    *
+    * @param {AppBase} app - The application managing this system.
+    */
+  def this(app: typings.playcanvas.mod.AppBase) = this()
 }

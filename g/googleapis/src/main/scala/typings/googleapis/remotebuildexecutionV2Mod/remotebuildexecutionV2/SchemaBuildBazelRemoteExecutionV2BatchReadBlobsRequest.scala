@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A request message for ContentAddressableStorage.BatchReadBlobs.
-  */
 trait SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaBuildBazelRemoteExecutionV2BatchReadBlobsRequest {
     
     inline def setDigestsUndefined: Self = StObject.set(x, "digests", js.undefined)
     
-    inline def setDigestsVarargs(value: SchemaBuildBazelRemoteExecutionV2Digest*): Self = StObject.set(x, "digests", js.Array(value :_*))
+    inline def setDigestsVarargs(value: SchemaBuildBazelRemoteExecutionV2Digest*): Self = StObject.set(x, "digests", js.Array(value*))
   }
 }

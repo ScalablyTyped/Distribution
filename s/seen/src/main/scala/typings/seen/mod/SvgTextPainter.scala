@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "SvgTextPainter")
 @js.native
-class SvgTextPainter protected () extends StObject {
+open class SvgTextPainter protected () extends StObject {
   def this(elementFactory: js.Function1[/* name */ String, HTMLElement]) = this()
   
   def fillText(m: js.Array[Double], text: String): Unit = js.native

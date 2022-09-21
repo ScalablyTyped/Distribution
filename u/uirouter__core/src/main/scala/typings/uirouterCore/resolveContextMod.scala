@@ -20,12 +20,12 @@ object resolveContextMod {
   
   @JSImport("@uirouter/core/lib/resolve/resolveContext", "ResolveContext")
   @js.native
-  class ResolveContext protected () extends StObject {
+  open class ResolveContext protected () extends StObject {
     def this(_path: js.Array[PathNode]) = this()
     
     var _injector: UIInjector = js.native
     
-    /* private */ var _path: js.Any = js.native
+    /* private */ var _path: Any = js.native
     
     /**
       * Adds Resolvables to the node that matches the state
@@ -62,10 +62,10 @@ object resolveContextMod {
       * Gets the last Resolvable that matches the token in this context, or undefined.
       * Throws an error if it doesn't exist in the ResolveContext
       */
-    def getResolvable(token: js.Any): Resolvable = js.native
+    def getResolvable(token: Any): Resolvable = js.native
     
     /** Gets all the tokens found in the resolve context, de-duplicated */
-    def getTokens(): js.Array[js.Any] = js.native
+    def getTokens(): js.Array[Any] = js.native
     
     def injector(): UIInjector = js.native
     

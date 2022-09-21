@@ -1,6 +1,7 @@
 package typings.reactable
 
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.reactable.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,74 +11,74 @@ object mod {
   
   @JSImport("reactable", "Table")
   @js.native
-  class Table[T] protected ()
-    extends Component[TableComponentProperties[T], js.Object, js.Any] {
+  open class Table[T] protected ()
+    extends Component[TableComponentProperties[T], js.Object, Any] {
     def this(props: TableComponentProperties[T]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TableComponentProperties[T], context: js.Any) = this()
+    def this(props: TableComponentProperties[T], context: Any) = this()
   }
   
   @JSImport("reactable", "Td")
   @js.native
-  class Td protected ()
-    extends Component[TdProperties, js.Object, js.Any] {
+  open class Td protected ()
+    extends Component[TdProperties, js.Object, Any] {
     def this(props: TdProperties) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TdProperties, context: js.Any) = this()
+    def this(props: TdProperties, context: Any) = this()
   }
   
   @JSImport("reactable", "Tfoot")
   @js.native
-  class Tfoot protected ()
-    extends Component[js.Object, js.Object, js.Any] {
+  open class Tfoot protected ()
+    extends Component[js.Object, js.Object, Any] {
     def this(props: js.Object) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Object, context: js.Any) = this()
+    def this(props: js.Object, context: Any) = this()
   }
   
   @JSImport("reactable", "Th")
   @js.native
-  class Th protected ()
-    extends Component[ThProperties, js.Object, js.Any] {
+  open class Th protected ()
+    extends Component[ThProperties, js.Object, Any] {
     def this(props: ThProperties) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ThProperties, context: js.Any) = this()
+    def this(props: ThProperties, context: Any) = this()
   }
   
   @JSImport("reactable", "Thead")
   @js.native
-  class Thead protected ()
-    extends Component[js.Object, js.Object, js.Any] {
+  open class Thead protected ()
+    extends Component[js.Object, js.Object, Any] {
     def this(props: js.Object) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Object, context: js.Any) = this()
+    def this(props: js.Object, context: Any) = this()
   }
   
   @JSImport("reactable", "Tr")
   @js.native
-  class Tr[T] protected ()
-    extends Component[TrProperties[T], js.Object, js.Any] {
+  open class Tr[T] protected ()
+    extends Component[TrProperties[T], js.Object, Any] {
     def this(props: TrProperties[T]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TrProperties[T], context: js.Any) = this()
+    def this(props: TrProperties[T], context: Any) = this()
   }
   
   type ColumnsType = String | KeyLabelObject
@@ -119,6 +120,8 @@ object mod {
   
   trait TableComponentProperties[T] extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var columns: js.UndefOr[js.Array[ColumnsType]] = js.undefined
@@ -158,6 +161,10 @@ object mod {
     
     extension [Self <: TableComponentProperties[?], T](x: Self & TableComponentProperties[T]) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -166,7 +173,7 @@ object mod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: ColumnsType*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: ColumnsType*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       
@@ -176,7 +183,7 @@ object mod {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDefaultSort(value: Column): Self = StObject.set(x, "defaultSort", value.asInstanceOf[js.Any])
       
@@ -190,7 +197,7 @@ object mod {
       
       inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
       
-      inline def setFilterableVarargs(value: String*): Self = StObject.set(x, "filterable", js.Array(value :_*))
+      inline def setFilterableVarargs(value: String*): Self = StObject.set(x, "filterable", js.Array(value*))
       
       inline def setHideFilterInput(value: Boolean): Self = StObject.set(x, "hideFilterInput", value.asInstanceOf[js.Any])
       
@@ -224,17 +231,19 @@ object mod {
       
       inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
       
-      inline def setSortableVarargs(value: String*): Self = StObject.set(x, "sortable", js.Array(value :_*))
+      inline def setSortableVarargs(value: String*): Self = StObject.set(x, "sortable", js.Array(value*))
     }
   }
   
   trait TdProperties extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var column: String
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object TdProperties {
     
@@ -245,19 +254,25 @@ object mod {
     
     extension [Self <: TdProperties](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
   trait ThProperties extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -272,6 +287,10 @@ object mod {
     
     extension [Self <: ThProperties](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -281,6 +300,8 @@ object mod {
   }
   
   trait TrProperties[T] extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -294,6 +315,10 @@ object mod {
     }
     
     extension [Self <: TrProperties[?], T](x: Self & TrProperties[T]) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

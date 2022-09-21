@@ -1,7 +1,7 @@
 
 # Scala.js typings for split2
 
-Typings are for version 2.1.0
+Typings are for version 3.2
 
 ## Library description:
 split a Text Stream into a Line Stream, using Stream 3
@@ -11,9 +11,9 @@ split a Text Stream into a Line Stream, using Stream 3
 | Full name          | split2 |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 575 |
-| # downloads        | 192542137 |
-| # stars            | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 4.5145140333333336E7 |
+| # stars            | 238.0 |
 
 ## Links
 - [Homepage](https://github.com/mcollina/split2#readme)

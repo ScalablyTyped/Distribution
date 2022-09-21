@@ -79,7 +79,7 @@ object IBookmarkFieldItem {
     
     inline def setQExcludedValues(value: js.Array[IFieldValue]): Self = StObject.set(x, "qExcludedValues", value.asInstanceOf[js.Any])
     
-    inline def setQExcludedValuesVarargs(value: IFieldValue*): Self = StObject.set(x, "qExcludedValues", js.Array(value :_*))
+    inline def setQExcludedValuesVarargs(value: IFieldValue*): Self = StObject.set(x, "qExcludedValues", js.Array(value*))
     
     inline def setQLocked(value: Boolean): Self = StObject.set(x, "qLocked", value.asInstanceOf[js.Any])
     
@@ -89,6 +89,6 @@ object IBookmarkFieldItem {
     
     inline def setQValues(value: js.Array[IFieldValue]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
     
-    inline def setQValuesVarargs(value: IFieldValue*): Self = StObject.set(x, "qValues", js.Array(value :_*))
+    inline def setQValuesVarargs(value: IFieldValue*): Self = StObject.set(x, "qValues", js.Array(value*))
   }
 }

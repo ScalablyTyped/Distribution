@@ -1,6 +1,5 @@
 package typings.reactVis.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,17 +16,17 @@ trait WhiskerSeriesPoint
   
   var stroke: js.UndefOr[String | Double] = js.undefined
   
-  var x: String | Double | Date
+  var x: String | Double | js.Date
   
   var xVariance: js.UndefOr[String | Double] = js.undefined
   
-  var y: String | Double | Date
+  var y: String | Double | js.Date
   
   var yVariance: js.UndefOr[String | Double] = js.undefined
 }
 object WhiskerSeriesPoint {
   
-  inline def apply(x: String | Double | Date, y: String | Double | Date): WhiskerSeriesPoint = {
+  inline def apply(x: String | Double | js.Date, y: String | Double | js.Date): WhiskerSeriesPoint = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhiskerSeriesPoint]
   }
@@ -50,13 +49,13 @@ object WhiskerSeriesPoint {
     
     inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    inline def setX(value: String | Double | Date): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: String | Double | js.Date): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     inline def setXVariance(value: String | Double): Self = StObject.set(x, "xVariance", value.asInstanceOf[js.Any])
     
     inline def setXVarianceUndefined: Self = StObject.set(x, "xVariance", js.undefined)
     
-    inline def setY(value: String | Double | Date): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: String | Double | js.Date): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     inline def setYVariance(value: String | Double): Self = StObject.set(x, "yVariance", value.asInstanceOf[js.Any])
     

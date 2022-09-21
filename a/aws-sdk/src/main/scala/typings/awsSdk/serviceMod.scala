@@ -19,7 +19,7 @@ object serviceMod {
   /**
     * Creates a new service object with a configuration object.
     */
-  class Service () extends StObject {
+  open class Service () extends StObject {
     def this(config: ServiceConfigurationOptions) = this()
     
     /**
@@ -37,7 +37,7 @@ object serviceMod {
       * @param {Object} features - an object to attach to the prototype.
       */
     def defineService(serviceIdentifier: String, versions: js.Array[String]): Instantiable1[/* config */ js.UndefOr[ServiceConfigurationOptions], Service] = js.native
-    def defineService(serviceIdentifier: String, versions: js.Array[String], features: js.Any): Instantiable1[/* config */ js.UndefOr[ServiceConfigurationOptions], Service] = js.native
+    def defineService(serviceIdentifier: String, versions: js.Array[String], features: Any): Instantiable1[/* config */ js.UndefOr[ServiceConfigurationOptions], Service] = js.native
     
     /**
       * An Endpoint object representing the endpoint URL for service requests.
@@ -50,18 +50,14 @@ object serviceMod {
       * @param {string} operation - the name of the operation to call on the service.
       * @param {map} params - a map of input options for the operation. 
       */
-    def makeRequest(operation: String): Request[js.Any, AWSError] = js.native
-    def makeRequest(operation: String, params: StringDictionary[js.Any]): Request[js.Any, AWSError] = js.native
+    def makeRequest(operation: String): Request[Any, AWSError] = js.native
+    def makeRequest(operation: String, params: StringDictionary[Any]): Request[Any, AWSError] = js.native
     def makeRequest(
       operation: String,
-      params: StringDictionary[js.Any],
-      callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
-    ): Request[js.Any, AWSError] = js.native
-    def makeRequest(
-      operation: String,
-      params: Unit,
-      callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
-    ): Request[js.Any, AWSError] = js.native
+      params: StringDictionary[Any],
+      callback: js.Function2[/* err */ AWSError, /* data */ Any, Unit]
+    ): Request[Any, AWSError] = js.native
+    def makeRequest(operation: String, params: Unit, callback: js.Function2[/* err */ AWSError, /* data */ Any, Unit]): Request[Any, AWSError] = js.native
     
     /**
       * Calls an operation on a service with the given input parameters, without any authentication data.
@@ -69,36 +65,28 @@ object serviceMod {
       * @param {string} operation - the name of the operation to call on the service.
       * @param {map} params - a map of input options for the operation. 
       */
-    def makeUnauthenticatedRequest(operation: String): Request[js.Any, AWSError] = js.native
-    def makeUnauthenticatedRequest(operation: String, params: StringDictionary[js.Any]): Request[js.Any, AWSError] = js.native
+    def makeUnauthenticatedRequest(operation: String): Request[Any, AWSError] = js.native
+    def makeUnauthenticatedRequest(operation: String, params: StringDictionary[Any]): Request[Any, AWSError] = js.native
     def makeUnauthenticatedRequest(
       operation: String,
-      params: StringDictionary[js.Any],
-      callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
-    ): Request[js.Any, AWSError] = js.native
-    def makeUnauthenticatedRequest(
-      operation: String,
-      params: Unit,
-      callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
-    ): Request[js.Any, AWSError] = js.native
+      params: StringDictionary[Any],
+      callback: js.Function2[/* err */ AWSError, /* data */ Any, Unit]
+    ): Request[Any, AWSError] = js.native
+    def makeUnauthenticatedRequest(operation: String, params: Unit, callback: js.Function2[/* err */ AWSError, /* data */ Any, Unit]): Request[Any, AWSError] = js.native
     
     /**
       * Override this method to setup any custom request listeners for each new request to the service.
       */
-    def setupRequestListeners(request: Request[js.Any, AWSError]): Unit = js.native
+    def setupRequestListeners(request: Request[Any, AWSError]): Unit = js.native
     
     /**
       * Waits for a given state.
       */
-    def waitFor(state: String): Request[js.Any, AWSError] = js.native
-    def waitFor(state: String, callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]): Request[js.Any, AWSError] = js.native
-    def waitFor(state: String, params: Unit, callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]): Request[js.Any, AWSError] = js.native
-    def waitFor(state: String, params: Dictkey): Request[js.Any, AWSError] = js.native
-    def waitFor(
-      state: String,
-      params: Dictkey,
-      callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
-    ): Request[js.Any, AWSError] = js.native
+    def waitFor(state: String): Request[Any, AWSError] = js.native
+    def waitFor(state: String, callback: js.Function2[/* err */ AWSError, /* data */ Any, Unit]): Request[Any, AWSError] = js.native
+    def waitFor(state: String, params: Unit, callback: js.Function2[/* err */ AWSError, /* data */ Any, Unit]): Request[Any, AWSError] = js.native
+    def waitFor(state: String, params: Dictkey): Request[Any, AWSError] = js.native
+    def waitFor(state: String, params: Dictkey, callback: js.Function2[/* err */ AWSError, /* data */ Any, Unit]): Request[Any, AWSError] = js.native
   }
   
   @js.native
@@ -114,7 +102,7 @@ object serviceMod {
       * An optional map of parameters to bind to every request sent by this service object. 
       * For more information on bound parameters, see "Working with Services" in the Getting Started Guide.
       */
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var params: js.UndefOr[StringDictionary[Any]] = js.native
   }
   
   trait WaiterConfiguration extends StObject {

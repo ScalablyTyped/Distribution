@@ -10,10 +10,10 @@ Promises A+ conformant implementation
 | ------------------ | :-------------: |
 | Full name          | mpromise |
 | Keywords           | promise, mongoose, aplus, a+, plus |
-| # releases         | 0 |
-| # dependents       | 39 |
-| # downloads        | 3966029 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 226182.33333333334 |
+| # stars            | 87.0 |
 
 ## Links
 - [Homepage](https://github.com/aheckmann/mpromise)

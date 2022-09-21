@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.InputManager")
 @js.native
-class InputManager protected ()
+/**
+  * Creates a new InputManager
+  * @param scene - defines the hosting scene
+  */
+open class InputManager ()
   extends StObject
      with typings.babylonjs.BABYLON.InputManager {
-  /**
-    * Creates a new InputManager
-    * @param scene defines the hosting scene
-    */
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
 }
 /* static members */

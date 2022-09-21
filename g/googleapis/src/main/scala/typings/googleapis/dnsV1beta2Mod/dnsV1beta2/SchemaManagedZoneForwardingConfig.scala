@@ -6,12 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaManagedZoneForwardingConfig extends StObject {
   
-  /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dns#managedZoneForwardingConfig&quot;.
-    */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
+  /**
+    * List of target name servers to forward to. Cloud DNS selects the best available name server if more than one target is given.
+    */
   var targetNameServers: js.UndefOr[js.Array[SchemaManagedZoneForwardingConfigNameServerTarget]] = js.undefined
 }
 object SchemaManagedZoneForwardingConfig {
@@ -25,12 +24,14 @@ object SchemaManagedZoneForwardingConfig {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setTargetNameServers(value: js.Array[SchemaManagedZoneForwardingConfigNameServerTarget]): Self = StObject.set(x, "targetNameServers", value.asInstanceOf[js.Any])
     
     inline def setTargetNameServersUndefined: Self = StObject.set(x, "targetNameServers", js.undefined)
     
-    inline def setTargetNameServersVarargs(value: SchemaManagedZoneForwardingConfigNameServerTarget*): Self = StObject.set(x, "targetNameServers", js.Array(value :_*))
+    inline def setTargetNameServersVarargs(value: SchemaManagedZoneForwardingConfigNameServerTarget*): Self = StObject.set(x, "targetNameServers", js.Array(value*))
   }
 }

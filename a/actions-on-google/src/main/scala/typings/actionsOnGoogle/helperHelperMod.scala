@@ -12,7 +12,7 @@ object helperHelperMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/helper", "Helper")
   @js.native
-  class Helper[TIntent /* <: Intent */, TValueSpec] protected ()
+  open class Helper[TIntent /* <: Intent */, TValueSpec] protected ()
     extends StObject
        with GoogleActionsV2ExpectedIntent {
     def this(options: HelperOptions[TIntent, TValueSpec]) = this()
@@ -23,7 +23,7 @@ object helperHelperMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/helper", "SoloHelper")
   @js.native
-  class SoloHelper[TIntent /* <: Intent */, TValueSpec] protected () extends Helper[TIntent, TValueSpec] {
+  open class SoloHelper[TIntent /* <: Intent */, TValueSpec] protected () extends Helper[TIntent, TValueSpec] {
     def this(options: HelperOptions[TIntent, TValueSpec]) = this()
   }
   

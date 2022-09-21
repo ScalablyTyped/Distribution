@@ -1,7 +1,7 @@
 package typings.materialIconButton
 
+import typings.materialBase.Element
 import typings.materialIconButton.anon.PartialMDCIconButtonToggl
-import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +11,13 @@ object mod {
   
   @JSImport("@material/icon-button", "MDCIconButtonToggle")
   @js.native
-  class MDCIconButtonToggle protected ()
+  open class MDCIconButtonToggle protected ()
     extends typings.materialIconButton.componentMod.MDCIconButtonToggle {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialIconButton.foundationMod.MDCIconButtonToggleFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -32,7 +32,7 @@ object mod {
   
   @JSImport("@material/icon-button", "MDCIconButtonToggleFoundation")
   @js.native
-  class MDCIconButtonToggleFoundation ()
+  open class MDCIconButtonToggleFoundation ()
     extends typings.materialIconButton.foundationMod.MDCIconButtonToggleFoundation {
     def this(adapter: PartialMDCIconButtonToggl) = this()
   }

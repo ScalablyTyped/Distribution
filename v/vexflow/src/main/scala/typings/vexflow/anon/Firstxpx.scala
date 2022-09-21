@@ -37,12 +37,12 @@ object Firstxpx {
     
     inline def setFirst_ys(value: js.Array[Double]): Self = StObject.set(x, "first_ys", value.asInstanceOf[js.Any])
     
-    inline def setFirst_ysVarargs(value: Double*): Self = StObject.set(x, "first_ys", js.Array(value :_*))
+    inline def setFirst_ysVarargs(value: Double*): Self = StObject.set(x, "first_ys", js.Array(value*))
     
     inline def setLast_x_px(value: Double): Self = StObject.set(x, "last_x_px", value.asInstanceOf[js.Any])
     
     inline def setLast_ys(value: js.Array[Double]): Self = StObject.set(x, "last_ys", value.asInstanceOf[js.Any])
     
-    inline def setLast_ysVarargs(value: Double*): Self = StObject.set(x, "last_ys", js.Array(value :_*))
+    inline def setLast_ysVarargs(value: Double*): Self = StObject.set(x, "last_ys", js.Array(value*))
   }
 }

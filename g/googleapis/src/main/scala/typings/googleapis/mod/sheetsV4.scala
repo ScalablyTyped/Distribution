@@ -11,50 +11,35 @@ object sheetsV4 {
   
   @JSImport("googleapis", "sheets_v4.Resource$Spreadsheets")
   @js.native
-  class ResourceSpreadsheets protected ()
+  open class ResourceSpreadsheets protected ()
     extends typings.googleapis.sheetsV4Mod.sheetsV4.ResourceSpreadsheets {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "sheets_v4.Resource$Spreadsheets$Developermetadata")
   @js.native
-  class ResourceSpreadsheetsDevelopermetadata protected ()
+  open class ResourceSpreadsheetsDevelopermetadata protected ()
     extends typings.googleapis.sheetsV4Mod.sheetsV4.ResourceSpreadsheetsDevelopermetadata {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "sheets_v4.Resource$Spreadsheets$Sheets")
   @js.native
-  class ResourceSpreadsheetsSheets protected ()
+  open class ResourceSpreadsheetsSheets protected ()
     extends typings.googleapis.sheetsV4Mod.sheetsV4.ResourceSpreadsheetsSheets {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "sheets_v4.Resource$Spreadsheets$Values")
   @js.native
-  class ResourceSpreadsheetsValues protected ()
+  open class ResourceSpreadsheetsValues protected ()
     extends typings.googleapis.sheetsV4Mod.sheetsV4.ResourceSpreadsheetsValues {
     def this(context: APIRequestContext) = this()
   }
   
-  /**
-    * Google Sheets API
-    *
-    * Reads and writes Google Sheets.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const sheets = google.sheets('v4');
-    *
-    * @namespace sheets
-    * @type {Function}
-    * @version v4
-    * @variation v4
-    * @param {object=} options Options for Sheets
-    */
   @JSImport("googleapis", "sheets_v4.Sheets")
   @js.native
-  class Sheets protected ()
+  open class Sheets protected ()
     extends typings.googleapis.sheetsV4Mod.sheetsV4.Sheets {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()

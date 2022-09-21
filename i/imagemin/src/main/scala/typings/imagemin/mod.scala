@@ -1,21 +1,30 @@
 package typings.imagemin
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(input: js.Array[String]): js.Promise[js.Array[Result]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Result]]]
-  inline def apply(input: js.Array[String], options: Options): js.Promise[js.Array[Result]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Result]]]
-  
-  @JSImport("imagemin", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def buffer(buffer: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
-  inline def buffer(buffer: Buffer, options: BufferOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  object default {
+    
+    /**
+      * @async
+      */
+    inline def apply(input: js.Array[String]): js.Promise[js.Array[Result]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Result]]]
+    inline def apply(input: js.Array[String], options: Options): js.Promise[js.Array[Result]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Result]]]
+    
+    @JSImport("imagemin", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * @async
+      */
+    inline def buffer(input: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+    inline def buffer(input: Buffer, options: BufferOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  }
   
   trait BufferOptions extends StObject {
     
@@ -32,7 +41,7 @@ object mod {
       
       inline def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
   
@@ -63,7 +72,7 @@ object mod {
       
       inline def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
   

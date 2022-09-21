@@ -8,22 +8,24 @@ trait PromiseRejectionEventInit
   extends StObject
      with EventInit {
   
-  var promise: js.Promise[js.Any]
+  /* standard dom */
+  var promise: js.Promise[Any]
   
-  var reason: js.UndefOr[js.Any] = js.undefined
+  /* standard dom */
+  var reason: js.UndefOr[Any] = js.undefined
 }
 object PromiseRejectionEventInit {
   
-  inline def apply(promise: js.Promise[js.Any]): PromiseRejectionEventInit = {
+  inline def apply(promise: js.Promise[Any]): PromiseRejectionEventInit = {
     val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromiseRejectionEventInit]
   }
   
   extension [Self <: PromiseRejectionEventInit](x: Self) {
     
-    inline def setPromise(value: js.Promise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: js.Promise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
-    inline def setReason(value: js.Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }

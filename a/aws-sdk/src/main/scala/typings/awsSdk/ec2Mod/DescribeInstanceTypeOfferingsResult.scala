@@ -29,7 +29,7 @@ object DescribeInstanceTypeOfferingsResult {
     
     inline def setInstanceTypeOfferingsUndefined: Self = StObject.set(x, "InstanceTypeOfferings", js.undefined)
     
-    inline def setInstanceTypeOfferingsVarargs(value: InstanceTypeOffering*): Self = StObject.set(x, "InstanceTypeOfferings", js.Array(value :_*))
+    inline def setInstanceTypeOfferingsVarargs(value: InstanceTypeOffering*): Self = StObject.set(x, "InstanceTypeOfferings", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

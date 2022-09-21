@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebXRHitTestLegacy")
 @js.native
-class WebXRHitTestLegacy protected ()
+open class WebXRHitTestLegacy protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRHitTestLegacy {
   /**
@@ -47,7 +47,7 @@ object WebXRHitTestLegacy {
     */
   @JSGlobal("BABYLON.WebXRHitTestLegacy.Name")
   @js.native
-  val Name: String = js.native
+  val Name: /* "xr-hit-test" */ String = js.native
   
   /**
     * The (Babylon) version of this module.
@@ -56,7 +56,7 @@ object WebXRHitTestLegacy {
     */
   @JSGlobal("BABYLON.WebXRHitTestLegacy.Version")
   @js.native
-  val Version: Double = js.native
+  val Version: /* 1 */ Double = js.native
   
   /**
     * execute a hit test with an XR Ray

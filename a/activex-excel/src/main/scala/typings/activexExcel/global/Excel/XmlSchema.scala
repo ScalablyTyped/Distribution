@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.XmlSchema")
 @js.native
-/* private */ class XmlSchema ()
+/* private */ open class XmlSchema ()
   extends StObject
      with typings.activexExcel.Excel.XmlSchema {
   
@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Namespace: typings.activexExcel.Excel.XmlNamespace = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val XML: String = js.native

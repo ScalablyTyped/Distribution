@@ -10,11 +10,11 @@ object trendMod {
   
   @JSImport("@antv/component/lib/trend/trend", JSImport.Default)
   @js.native
-  class default () extends Trend
+  open class default () extends Trend
   
   @JSImport("@antv/component/lib/trend/trend", "Trend")
   @js.native
-  class Trend ()
+  open class Trend ()
     extends typings.antvComponent.groupComponentMod.default[TrendCfg]
   
   trait TrendCfg
@@ -62,7 +62,7 @@ object trendMod {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

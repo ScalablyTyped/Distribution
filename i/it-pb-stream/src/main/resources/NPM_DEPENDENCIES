@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "it-pb-stream" : "2.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "it-pb-stream" : "2.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

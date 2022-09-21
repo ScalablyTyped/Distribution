@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("web3-core", "IpcProvider")
 @js.native
-class IpcProvider protected ()
+open class IpcProvider protected ()
   extends IpcProviderBase
      with _provider {
   def this(path: String, net: Server) = this()

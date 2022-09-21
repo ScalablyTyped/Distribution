@@ -26,7 +26,7 @@ object XSequenceOutputStream {
     closeOutput: () => Unit,
     flush: () => Unit,
     getWrittenBytes: () => SafeArray[Double],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     writeBytes: SeqEquiv[Double] => Unit
   ): XSequenceOutputStream = {

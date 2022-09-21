@@ -18,8 +18,6 @@ trait SFCStyleBlock
   
   @JSName("type")
   var type_SFCStyleBlock: style
-  
-  var vars: js.UndefOr[String] = js.undefined
 }
 object SFCStyleBlock {
   
@@ -40,9 +38,5 @@ object SFCStyleBlock {
     inline def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
     
     inline def setType(value: style): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setVars(value: String): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
-    
-    inline def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
   }
 }

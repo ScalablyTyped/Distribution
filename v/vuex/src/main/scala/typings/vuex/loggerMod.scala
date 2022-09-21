@@ -12,14 +12,28 @@ object loggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[S](): Plugin[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin[S]]
-  inline def default[S](option: LoggerOption[S]): Plugin[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(option.asInstanceOf[js.Any]).asInstanceOf[Plugin[S]]
+  inline def createLogger[S](): Plugin[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")().asInstanceOf[Plugin[S]]
+  inline def createLogger[S](option: LoggerOption[S]): Plugin[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")(option.asInstanceOf[js.Any]).asInstanceOf[Plugin[S]]
+  
+  /* Inlined parent std.Partial<std.Pick<std.Console, 'groupCollapsed' | 'group' | 'groupEnd'>> */
+  @js.native
+  trait Logger extends StObject {
+    
+    var group: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.native
+    
+    var groupCollapsed: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.native
+    
+    var groupEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    
+    def log(message: String): Unit = js.native
+    def log(message: String, color: String, payload: Any): Unit = js.native
+  }
   
   trait LoggerOption[S] extends StObject {
     
     var actionFilter: js.UndefOr[js.Function2[/* action */ Payload, /* state */ S, Boolean]] = js.undefined
     
-    var actionTransformer: js.UndefOr[js.Function1[/* action */ Payload, js.Any]] = js.undefined
+    var actionTransformer: js.UndefOr[js.Function1[/* action */ Payload, Any]] = js.undefined
     
     var collapsed: js.UndefOr[Boolean] = js.undefined
     
@@ -31,9 +45,11 @@ object loggerMod {
     
     var logMutations: js.UndefOr[Boolean] = js.undefined
     
-    var mutationTransformer: js.UndefOr[js.Function1[/* mutation */ Payload, js.Any]] = js.undefined
+    var logger: js.UndefOr[Logger] = js.undefined
     
-    var transformer: js.UndefOr[js.Function1[/* state */ S, js.Any]] = js.undefined
+    var mutationTransformer: js.UndefOr[js.Function1[/* mutation */ Payload, Any]] = js.undefined
+    
+    var transformer: js.UndefOr[js.Function1[/* state */ S, Any]] = js.undefined
   }
   object LoggerOption {
     
@@ -48,7 +64,7 @@ object loggerMod {
       
       inline def setActionFilterUndefined: Self = StObject.set(x, "actionFilter", js.undefined)
       
-      inline def setActionTransformer(value: /* action */ Payload => js.Any): Self = StObject.set(x, "actionTransformer", js.Any.fromFunction1(value))
+      inline def setActionTransformer(value: /* action */ Payload => Any): Self = StObject.set(x, "actionTransformer", js.Any.fromFunction1(value))
       
       inline def setActionTransformerUndefined: Self = StObject.set(x, "actionTransformer", js.undefined)
       
@@ -68,11 +84,15 @@ object loggerMod {
       
       inline def setLogMutationsUndefined: Self = StObject.set(x, "logMutations", js.undefined)
       
-      inline def setMutationTransformer(value: /* mutation */ Payload => js.Any): Self = StObject.set(x, "mutationTransformer", js.Any.fromFunction1(value))
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      
+      inline def setMutationTransformer(value: /* mutation */ Payload => Any): Self = StObject.set(x, "mutationTransformer", js.Any.fromFunction1(value))
       
       inline def setMutationTransformerUndefined: Self = StObject.set(x, "mutationTransformer", js.undefined)
       
-      inline def setTransformer(value: /* state */ S => js.Any): Self = StObject.set(x, "transformer", js.Any.fromFunction1(value))
+      inline def setTransformer(value: /* state */ S => Any): Self = StObject.set(x, "transformer", js.Any.fromFunction1(value))
       
       inline def setTransformerUndefined: Self = StObject.set(x, "transformer", js.undefined)
     }

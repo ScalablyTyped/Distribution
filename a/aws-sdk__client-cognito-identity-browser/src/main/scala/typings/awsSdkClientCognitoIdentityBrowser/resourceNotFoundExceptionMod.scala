@@ -8,5 +8,5 @@ object resourceNotFoundExceptionMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/ResourceNotFoundException", "ResourceNotFoundException")
   @js.native
-  val ResourceNotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ResourceNotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

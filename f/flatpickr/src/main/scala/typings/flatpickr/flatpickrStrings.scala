@@ -100,6 +100,18 @@ object flatpickrStrings {
   inline def above: above = "above".asInstanceOf[above]
   
   @js.native
+  sealed trait `above center` extends StObject
+  inline def `above center`: `above center` = ("above center").asInstanceOf[`above center`]
+  
+  @js.native
+  sealed trait `above left` extends StObject
+  inline def `above left`: `above left` = ("above left").asInstanceOf[`above left`]
+  
+  @js.native
+  sealed trait `above right` extends StObject
+  inline def `above right`: `above right` = ("above right").asInstanceOf[`above right`]
+  
+  @js.native
   sealed trait address extends StObject
   inline def address: address = "address".asInstanceOf[address]
   
@@ -130,10 +142,6 @@ object flatpickrStrings {
   @js.native
   sealed trait appendTo extends StObject
   inline def appendTo: appendTo = "appendTo".asInstanceOf[appendTo]
-  
-  @js.native
-  sealed trait applet extends StObject
-  inline def applet: applet = "applet".asInstanceOf[applet]
   
   @js.native
   sealed trait ar
@@ -172,6 +180,18 @@ object flatpickrStrings {
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
+  sealed trait `auto center` extends StObject
+  inline def `auto center`: `auto center` = ("auto center").asInstanceOf[`auto center`]
+  
+  @js.native
+  sealed trait `auto left` extends StObject
+  inline def `auto left`: `auto left` = ("auto left").asInstanceOf[`auto left`]
+  
+  @js.native
+  sealed trait `auto right` extends StObject
+  inline def `auto right`: `auto right` = ("auto right").asInstanceOf[`auto right`]
+  
+  @js.native
   sealed trait autoFillDefaultTime extends StObject
   inline def autoFillDefaultTime: autoFillDefaultTime = "autoFillDefaultTime".asInstanceOf[autoFillDefaultTime]
   
@@ -190,10 +210,6 @@ object flatpickrStrings {
   inline def base: base = "base".asInstanceOf[base]
   
   @js.native
-  sealed trait basefont extends StObject
-  inline def basefont: basefont = "basefont".asInstanceOf[basefont]
-  
-  @js.native
   sealed trait bdi extends StObject
   inline def bdi: bdi = "bdi".asInstanceOf[bdi]
   
@@ -210,6 +226,18 @@ object flatpickrStrings {
   @js.native
   sealed trait below extends StObject
   inline def below: below = "below".asInstanceOf[below]
+  
+  @js.native
+  sealed trait `below center` extends StObject
+  inline def `below center`: `below center` = ("below center").asInstanceOf[`below center`]
+  
+  @js.native
+  sealed trait `below left` extends StObject
+  inline def `below left`: `below left` = ("below left").asInstanceOf[`below left`]
+  
+  @js.native
+  sealed trait `below right` extends StObject
+  inline def `below right`: `below right` = ("below right").asInstanceOf[`below right`]
   
   @js.native
   sealed trait bg
@@ -268,6 +296,12 @@ object flatpickrStrings {
   @js.native
   sealed trait cite extends StObject
   inline def cite: cite = "cite".asInstanceOf[cite]
+  
+  @js.native
+  sealed trait ckb
+    extends StObject
+       with key
+  inline def ckb: ckb = "ckb".asInstanceOf[ckb]
   
   @js.native
   sealed trait clickOpens extends StObject
@@ -372,10 +406,6 @@ object flatpickrStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait dir extends StObject
-  inline def dir: dir = "dir".asInstanceOf[dir]
-  
-  @js.native
   sealed trait disable extends StObject
   inline def disable: disable = "disable".asInstanceOf[disable]
   
@@ -478,10 +508,6 @@ object flatpickrStrings {
   inline def fo: fo = "fo".asInstanceOf[fo]
   
   @js.native
-  sealed trait font extends StObject
-  inline def font: font = "font".asInstanceOf[font]
-  
-  @js.native
   sealed trait footer extends StObject
   inline def footer: footer = "footer".asInstanceOf[footer]
   
@@ -498,14 +524,6 @@ object flatpickrStrings {
     extends StObject
        with key
   inline def fr: fr = "fr".asInstanceOf[fr]
-  
-  @js.native
-  sealed trait frame extends StObject
-  inline def frame: frame = "frame".asInstanceOf[frame]
-  
-  @js.native
-  sealed trait frameset extends StObject
-  inline def frameset: frameset = "frameset".asInstanceOf[frameset]
   
   @js.native
   sealed trait getWeek extends StObject
@@ -590,6 +608,12 @@ object flatpickrStrings {
     extends StObject
        with key
   inline def hu: hu = "hu".asInstanceOf[hu]
+  
+  @js.native
+  sealed trait hy
+    extends StObject
+       with key
+  inline def hy: hy = "hy".asInstanceOf[hy]
   
   @js.native
   sealed trait i
@@ -744,10 +768,6 @@ object flatpickrStrings {
   inline def mark: mark = "mark".asInstanceOf[mark]
   
   @js.native
-  sealed trait marquee extends StObject
-  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
-  
-  @js.native
   sealed trait maxDate extends StObject
   inline def maxDate: maxDate = "maxDate".asInstanceOf[maxDate]
   
@@ -834,6 +854,12 @@ object flatpickrStrings {
     extends StObject
        with key
   inline def nl: nl = "nl".asInstanceOf[nl]
+  
+  @js.native
+  sealed trait nn
+    extends StObject
+       with key
+  inline def nn: nn = "nn".asInstanceOf[nn]
   
   @js.native
   sealed trait no
@@ -954,10 +980,6 @@ object flatpickrStrings {
     extends StObject
        with key
   inline def pa: pa = "pa".asInstanceOf[pa]
-  
-  @js.native
-  sealed trait param extends StObject
-  inline def param: param = "param".asInstanceOf[param]
   
   @js.native
   sealed trait parseDate extends StObject

@@ -7,33 +7,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Activity extends StObject {
   
-  var activity: js.Any
+  var activity: Any
   
-  var elapsed: js.Any
+  var elapsed: Any
   
   var id: Uuid
   
-  var source: js.Any
+  var source: Any
   
-  var thread: js.Any
+  var thread: Any
 }
 object Activity {
   
-  inline def apply(activity: js.Any, elapsed: js.Any, id: Uuid, source: js.Any, thread: js.Any): Activity = {
+  inline def apply(activity: Any, elapsed: Any, id: Uuid, source: Any, thread: Any): Activity = {
     val __obj = js.Dynamic.literal(activity = activity.asInstanceOf[js.Any], elapsed = elapsed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], thread = thread.asInstanceOf[js.Any])
     __obj.asInstanceOf[Activity]
   }
   
   extension [Self <: Activity](x: Self) {
     
-    inline def setActivity(value: js.Any): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
+    inline def setActivity(value: Any): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     
-    inline def setElapsed(value: js.Any): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
+    inline def setElapsed(value: Any): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
     
     inline def setId(value: Uuid): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setThread(value: js.Any): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
+    inline def setThread(value: Any): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
   }
 }

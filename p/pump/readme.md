@@ -11,9 +11,9 @@ pipe streams together and close all of them if one of them closes
 | Full name          | pump |
 | Keywords           | streams, pipe, destroy, callback |
 | # releases         | 0 |
-| # dependents       | 1212 |
-| # downloads        | 1365343654 |
-| # stars            | 69 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6338490733333334E8 |
+| # stars            | 875.0 |
 
 ## Links
 - [Homepage](https://github.com/mafintosh/pump#readme)

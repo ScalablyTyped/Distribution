@@ -49,6 +49,11 @@ trait CreateNetworkProfileRequest extends StObject {
   var Ssid: NetworkSsid
   
   /**
+    * The tags to be added to the specified resource. Do not provide system tags. 
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
+  
+  /**
     * The root certificates of your authentication server that is installed on your devices and used to trust your authentication server during EAP negotiation. 
     */
   var TrustAnchors: js.UndefOr[TrustAnchorList] = js.undefined
@@ -95,10 +100,16 @@ object CreateNetworkProfileRequest {
     
     inline def setSsid(value: NetworkSsid): Self = StObject.set(x, "Ssid", value.asInstanceOf[js.Any])
     
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
+    
     inline def setTrustAnchors(value: TrustAnchorList): Self = StObject.set(x, "TrustAnchors", value.asInstanceOf[js.Any])
     
     inline def setTrustAnchorsUndefined: Self = StObject.set(x, "TrustAnchors", js.undefined)
     
-    inline def setTrustAnchorsVarargs(value: TrustAnchor*): Self = StObject.set(x, "TrustAnchors", js.Array(value :_*))
+    inline def setTrustAnchorsVarargs(value: TrustAnchor*): Self = StObject.set(x, "TrustAnchors", js.Array(value*))
   }
 }

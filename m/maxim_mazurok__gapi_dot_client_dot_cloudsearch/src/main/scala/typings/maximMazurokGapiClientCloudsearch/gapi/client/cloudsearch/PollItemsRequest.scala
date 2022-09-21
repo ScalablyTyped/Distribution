@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PollItemsRequest extends StObject {
   
-  /** Name of connector making this call. Format: datasources/{source_id}/connectors/{ID} */
+  /** The name of connector making this call. Format: datasources/{source_id}/connectors/{ID} */
   var connectorName: js.UndefOr[String] = js.undefined
   
   /** Common debug options. */
@@ -50,6 +50,6 @@ object PollItemsRequest {
     
     inline def setStatusCodesUndefined: Self = StObject.set(x, "statusCodes", js.undefined)
     
-    inline def setStatusCodesVarargs(value: String*): Self = StObject.set(x, "statusCodes", js.Array(value :_*))
+    inline def setStatusCodesVarargs(value: String*): Self = StObject.set(x, "statusCodes", js.Array(value*))
   }
 }

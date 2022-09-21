@@ -14,9 +14,9 @@ object entityMod {
     
     def containTag(tag: String): Boolean = js.native
     
-    var data: js.Any = js.native
+    var data: Any = js.native
     
-    def getTagList(): js.Any = js.native
+    def getTagList(): Any = js.native
     
     def hasTag(tag: String): Boolean = js.native
     

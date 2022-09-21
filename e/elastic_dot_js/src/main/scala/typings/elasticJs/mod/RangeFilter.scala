@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "RangeFilter")
 @js.native
-class RangeFilter protected ()
+open class RangeFilter protected ()
   extends StObject
      with Filter {
   /*
@@ -37,19 +37,19 @@ class RangeFilter protected ()
   /*
     The lower bound. Defaults to start from the first.
     */
-  def from(f: js.Any): RangeFilter = js.native
+  def from(f: Any): RangeFilter = js.native
   
   /*
     Greater than value.  Same as setting from to the value, and
     include_lower to false,
     */
-  def gt(`val`: js.Any): RangeFilter = js.native
+  def gt(`val`: Any): RangeFilter = js.native
   
   /*
     Greater than or equal to value.  Same as setting from to the value,
     and include_lower to true.
     */
-  def gte(`val`: js.Any): RangeFilter = js.native
+  def gte(`val`: Any): RangeFilter = js.native
   
   /*
     Should the first from (if set) be inclusive or not.
@@ -66,13 +66,13 @@ class RangeFilter protected ()
     Less than value.  Same as setting to to the value, and include_upper
     to false.
     */
-  def lt(`val`: js.Any): RangeFilter = js.native
+  def lt(`val`: Any): RangeFilter = js.native
   
   /*
     Less than or equal to value.  Same as setting to to the value,
     and include_upper to true.
     */
-  def lte(`val`: js.Any): RangeFilter = js.native
+  def lte(`val`: Any): RangeFilter = js.native
   
   /*
     Sets the filter name.
@@ -82,7 +82,7 @@ class RangeFilter protected ()
   /*
     The upper bound. Defaults to unbounded.
     */
-  def to(t: js.Any): RangeFilter = js.native
+  def to(t: Any): RangeFilter = js.native
   
   /*
     Returns the filter object.

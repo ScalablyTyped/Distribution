@@ -18,7 +18,7 @@ object resolvableMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.uirouterCore.stateInterfaceMod.ResolveTypes because Already inherited */ @JSImport("@uirouter/core/lib/resolve/resolvable", "Resolvable")
   @js.native
-  class Resolvable protected ()
+  open class Resolvable protected ()
     extends StObject
        with ResolvableLiteral {
     /** This constructor creates a Resolvable copy */
@@ -44,17 +44,17 @@ object resolvableMod {
       * @param policy the [[ResolvePolicy]] defines when and how the Resolvable is processed
       * @param data Pre-resolved data. If the resolve value is already known, it may be provided here.
       */
-    def this(token: js.Any, resolveFn: js.Function) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: js.Array[js.Any]) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: js.Array[js.Any], policy: ResolvePolicy) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: Unit, policy: ResolvePolicy) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: js.Array[js.Any], policy: Unit, data: js.Any) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: js.Array[js.Any], policy: ResolvePolicy, data: js.Any) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: Unit, policy: Unit, data: js.Any) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: Unit, policy: ResolvePolicy, data: js.Any) = this()
+    def this(token: Any, resolveFn: js.Function) = this()
+    def this(token: Any, resolveFn: js.Function, deps: js.Array[Any]) = this()
+    def this(token: Any, resolveFn: js.Function, deps: js.Array[Any], policy: ResolvePolicy) = this()
+    def this(token: Any, resolveFn: js.Function, deps: Unit, policy: ResolvePolicy) = this()
+    def this(token: Any, resolveFn: js.Function, deps: js.Array[Any], policy: Unit, data: Any) = this()
+    def this(token: Any, resolveFn: js.Function, deps: js.Array[Any], policy: ResolvePolicy, data: Any) = this()
+    def this(token: Any, resolveFn: js.Function, deps: Unit, policy: Unit, data: Any) = this()
+    def this(token: Any, resolveFn: js.Function, deps: Unit, policy: ResolvePolicy, data: Any) = this()
     
     @JSName("deps")
-    var deps_Resolvable: js.Array[js.Any] = js.native
+    var deps_Resolvable: js.Array[Any] = js.native
     
     /**
       * Gets a promise for this Resolvable's data.
@@ -62,15 +62,15 @@ object resolvableMod {
       * Fetches the data and returns a promise.
       * Returns the existing promise if it has already been fetched once.
       */
-    def get(resolveContext: ResolveContext): js.Promise[js.Any] = js.native
-    def get(resolveContext: ResolveContext, trans: Transition): js.Promise[js.Any] = js.native
+    def get(resolveContext: ResolveContext): js.Promise[Any] = js.native
+    def get(resolveContext: ResolveContext, trans: Transition): js.Promise[Any] = js.native
     
     def getPolicy(state: StateObject): ResolvePolicy = js.native
     
     @JSName("policy")
     var policy_Resolvable: ResolvePolicy = js.native
     
-    var promise: js.Promise[js.Any] = js.native
+    var promise: js.Promise[Any] = js.native
     
     /**
       * Asynchronously resolve this Resolvable's data
@@ -79,8 +79,8 @@ object resolvableMod {
       * Wait for this Resolvable's dependencies, then invoke this Resolvable's function
       * and update the Resolvable's state
       */
-    def resolve(resolveContext: ResolveContext): js.Promise[js.Any] = js.native
-    def resolve(resolveContext: ResolveContext, trans: Transition): js.Promise[js.Any] = js.native
+    def resolve(resolveContext: ResolveContext): js.Promise[Any] = js.native
+    def resolve(resolveContext: ResolveContext, trans: Transition): js.Promise[Any] = js.native
     
     /**
       * A function which fetches the Resolvable's data
@@ -106,7 +106,7 @@ object resolvableMod {
       * The Resolvable will be injectable elsewhere using the token.
       */
     /* CompleteClass */
-    var token: js.Any = js.native
+    var token: Any = js.native
   }
   /* static members */
   object Resolvable {
@@ -115,7 +115,7 @@ object resolvableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromData(token: js.Any, data: js.Any): Resolvable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(token.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Resolvable]
+    inline def fromData(token: Any, data: Any): Resolvable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(token.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Resolvable]
   }
   
   @JSImport("@uirouter/core/lib/resolve/resolvable", "defaultResolvePolicy")

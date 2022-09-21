@@ -1,14 +1,13 @@
 organization := "org.scalablytyped"
 name := "peculiar__asn1-schema"
-version := "2.0.3-0cf623"
-scalaVersion := "2.13.2"
+version := "2.3.0-5738aa"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "asn1js" % "0.0-unknown-dt-20200515Z-468eb0",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "asn1js" % "3.0.5-98a59a",
+  "org.scalablytyped" %%% "pvtsutils" % "1.3.2-789a1d",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

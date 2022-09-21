@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.SavedSearchScope")
 @js.native
-class SavedSearchScope () extends StObject {
+open class SavedSearchScope () extends StObject {
   def this(args: IncludeAccount) = this()
   
   var includeAccount: js.UndefOr[Boolean] = js.native

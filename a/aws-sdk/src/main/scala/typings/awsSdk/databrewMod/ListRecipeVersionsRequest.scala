@@ -17,7 +17,7 @@ trait ListRecipeVersionsRequest extends StObject {
   var Name: RecipeName
   
   /**
-    * A pagination token that can be used in a subsequent request.
+    * The token returned by a previous call to retrieve the next set of results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.databrewMod.NextToken] = js.undefined
 }

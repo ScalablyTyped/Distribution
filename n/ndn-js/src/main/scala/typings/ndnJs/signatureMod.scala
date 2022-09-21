@@ -10,11 +10,11 @@ object signatureMod {
   
   @JSImport("ndn-js/signature", "DigestSha256Signature")
   @js.native
-  class DigestSha256Signature () extends SignatureBase[DigestSha256Signature]
+  open class DigestSha256Signature () extends SignatureBase[DigestSha256Signature]
   
   @JSImport("ndn-js/signature", "GenericSignature")
   @js.native
-  class GenericSignature () extends SignatureBase[GenericSignature] {
+  open class GenericSignature () extends SignatureBase[GenericSignature] {
     
     def getSignatureInfoEncoding(): Blob = js.native
     
@@ -26,11 +26,11 @@ object signatureMod {
   
   @JSImport("ndn-js/signature", "HmacWithSha25Signature")
   @js.native
-  class HmacWithSha25Signature () extends SignatureBaseKl[HmacWithSha25Signature]
+  open class HmacWithSha25Signature () extends SignatureBaseKl[HmacWithSha25Signature]
   
   @JSImport("ndn-js/signature", "KeyLocator")
   @js.native
-  class KeyLocator () extends StObject {
+  open class KeyLocator () extends StObject {
     def this(kl: KeyLocator) = this()
     
     def clear(): Unit = js.native
@@ -72,11 +72,11 @@ object signatureMod {
   
   @JSImport("ndn-js/signature", "Sha256WithEcdsaSignature")
   @js.native
-  class Sha256WithEcdsaSignature () extends SignatureBaseKlVp[Sha256WithEcdsaSignature]
+  open class Sha256WithEcdsaSignature () extends SignatureBaseKlVp[Sha256WithEcdsaSignature]
   
   @JSImport("ndn-js/signature", "Sha256WithRsaSignature")
   @js.native
-  class Sha256WithRsaSignature () extends SignatureBaseKlVp[Sha256WithRsaSignature]
+  open class Sha256WithRsaSignature () extends SignatureBaseKlVp[Sha256WithRsaSignature]
   
   @JSImport("ndn-js/signature", "Signature")
   @js.native
@@ -84,7 +84,7 @@ object signatureMod {
   
   @JSImport("ndn-js/signature", "SignatureBase")
   @js.native
-  class SignatureBase[T /* <: Signature */] () extends Signature {
+  open class SignatureBase[T /* <: Signature */] () extends Signature {
     
     def getSignature(): Blob = js.native
     
@@ -93,7 +93,7 @@ object signatureMod {
   
   @JSImport("ndn-js/signature", "SignatureBaseKl")
   @js.native
-  class SignatureBaseKl[T /* <: Signature */] () extends SignatureBase[T] {
+  open class SignatureBaseKl[T /* <: Signature */] () extends SignatureBase[T] {
     
     def getKeyLocator(): KeyLocator = js.native
     
@@ -103,7 +103,7 @@ object signatureMod {
   
   @JSImport("ndn-js/signature", "SignatureBaseKlVp")
   @js.native
-  class SignatureBaseKlVp[T /* <: Signature */] () extends SignatureBaseKl[T] {
+  open class SignatureBaseKlVp[T /* <: Signature */] () extends SignatureBaseKl[T] {
     
     def getValidityPeriod(): ValidityPeriod = js.native
     
@@ -113,7 +113,7 @@ object signatureMod {
   
   @JSImport("ndn-js/signature", "ValidityPeriod")
   @js.native
-  class ValidityPeriod () extends StObject {
+  open class ValidityPeriod () extends StObject {
     def this(validity: ValidityPeriod) = this()
     def this(notBefore: Double, notAfter: Double) = this()
     

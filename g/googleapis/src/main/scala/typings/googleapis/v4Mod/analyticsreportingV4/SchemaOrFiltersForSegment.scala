@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A list of segment filters in the `OR` group are combined with the logical
-  * OR operator.
-  */
 trait SchemaOrFiltersForSegment extends StObject {
   
   /**
@@ -28,6 +24,6 @@ object SchemaOrFiltersForSegment {
     
     inline def setSegmentFilterClausesUndefined: Self = StObject.set(x, "segmentFilterClauses", js.undefined)
     
-    inline def setSegmentFilterClausesVarargs(value: SchemaSegmentFilterClause*): Self = StObject.set(x, "segmentFilterClauses", js.Array(value :_*))
+    inline def setSegmentFilterClausesVarargs(value: SchemaSegmentFilterClause*): Self = StObject.set(x, "segmentFilterClauses", js.Array(value*))
   }
 }

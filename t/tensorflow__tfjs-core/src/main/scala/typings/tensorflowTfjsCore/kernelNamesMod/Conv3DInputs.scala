@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'x' | 'filter'> */
 trait Conv3DInputs extends StObject {
   
-  var filter: js.UndefOr[js.Any] = js.undefined
+  var filter: js.UndefOr[scala.Any] = js.undefined
   
-  var x: js.UndefOr[js.Any] = js.undefined
+  var x: js.UndefOr[scala.Any] = js.undefined
 }
 object Conv3DInputs {
   
@@ -20,11 +20,11 @@ object Conv3DInputs {
   
   extension [Self <: Conv3DInputs](x: Self) {
     
-    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: scala.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }

@@ -18,7 +18,7 @@ trait AutoCorrectEntry extends StObject {
   
   var Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val RichText: Boolean
   
@@ -36,7 +36,7 @@ object AutoCorrectEntry {
     Delete: () => Unit,
     Index: Double,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     RichText: Boolean,
     Value: String,
     WordDotAutoCorrectEntry_typekey: AutoCorrectEntry
@@ -60,7 +60,7 @@ object AutoCorrectEntry {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRichText(value: Boolean): Self = StObject.set(x, "RichText", value.asInstanceOf[js.Any])
     

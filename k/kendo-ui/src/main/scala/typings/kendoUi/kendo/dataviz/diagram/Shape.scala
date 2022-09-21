@@ -10,11 +10,12 @@ trait Shape
   extends StObject
      with Observable {
   
-  def connections(`type`: String): Unit = js.native
+  def connections(): Any = js.native
+  def connections(`type`: String): Any = js.native
   
-  var connectors: js.Any = js.native
+  var connectors: Any = js.native
   
-  var dataItem: js.Any = js.native
+  var dataItem: Any = js.native
   
   def getConnector(): Unit = js.native
   
@@ -25,13 +26,13 @@ trait Shape
   def position(): Unit = js.native
   def position(point: Point): Unit = js.native
   
-  def redraw(options: js.Any): Unit = js.native
+  def redraw(options: Any): Unit = js.native
   
   def redrawVisual(): Unit = js.native
   
   def select(value: Boolean): Unit = js.native
   
-  var shapeVisual: js.Any = js.native
+  var shapeVisual: Any = js.native
   
   var visual: Group = js.native
 }

@@ -22,12 +22,22 @@ trait UserSettings extends StObject {
   var KernelGatewayAppSettings: js.UndefOr[typings.awsSdk.sagemakerMod.KernelGatewayAppSettings] = js.undefined
   
   /**
-    * The security groups for the Amazon Virtual Private Cloud (VPC) that Studio uses for communication. Optional when the CreateDomain.AppNetworkAccessType parameter is set to PublicInternetOnly. Required when the CreateDomain.AppNetworkAccessType parameter is set to VpcOnly.
+    * A collection of settings that configure the RSessionGateway app.
+    */
+  var RSessionAppSettings: js.UndefOr[typings.awsSdk.sagemakerMod.RSessionAppSettings] = js.undefined
+  
+  /**
+    * A collection of settings that configure user interaction with the RStudioServerPro app.
+    */
+  var RStudioServerProAppSettings: js.UndefOr[typings.awsSdk.sagemakerMod.RStudioServerProAppSettings] = js.undefined
+  
+  /**
+    * The security groups for the Amazon Virtual Private Cloud (VPC) that Studio uses for communication. Optional when the CreateDomain.AppNetworkAccessType parameter is set to PublicInternetOnly. Required when the CreateDomain.AppNetworkAccessType parameter is set to VpcOnly. Amazon SageMaker adds a security group to allow NFS traffic from SageMaker Studio. Therefore, the number of security groups that you can specify is one less than the maximum number shown.
     */
   var SecurityGroups: js.UndefOr[SecurityGroupIds] = js.undefined
   
   /**
-    * The sharing settings.
+    * Specifies options for sharing SageMaker Studio notebooks.
     */
   var SharingSettings: js.UndefOr[typings.awsSdk.sagemakerMod.SharingSettings] = js.undefined
   
@@ -57,11 +67,19 @@ object UserSettings {
     
     inline def setKernelGatewayAppSettingsUndefined: Self = StObject.set(x, "KernelGatewayAppSettings", js.undefined)
     
+    inline def setRSessionAppSettings(value: RSessionAppSettings): Self = StObject.set(x, "RSessionAppSettings", value.asInstanceOf[js.Any])
+    
+    inline def setRSessionAppSettingsUndefined: Self = StObject.set(x, "RSessionAppSettings", js.undefined)
+    
+    inline def setRStudioServerProAppSettings(value: RStudioServerProAppSettings): Self = StObject.set(x, "RStudioServerProAppSettings", value.asInstanceOf[js.Any])
+    
+    inline def setRStudioServerProAppSettingsUndefined: Self = StObject.set(x, "RStudioServerProAppSettings", js.undefined)
+    
     inline def setSecurityGroups(value: SecurityGroupIds): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setSharingSettings(value: SharingSettings): Self = StObject.set(x, "SharingSettings", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,7 @@ trait ManagedActionHistoryItem extends StObject {
   /**
     * The date and time that the action started executing.
     */
-  var ExecutedTime: js.UndefOr[Timestamp] = js.undefined
+  var ExecutedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If the action failed, a description of the failure.
@@ -39,7 +39,7 @@ trait ManagedActionHistoryItem extends StObject {
   /**
     * The date and time that the action finished executing.
     */
-  var FinishedTime: js.UndefOr[Timestamp] = js.undefined
+  var FinishedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the action.
@@ -67,7 +67,7 @@ object ManagedActionHistoryItem {
     
     inline def setActionTypeUndefined: Self = StObject.set(x, "ActionType", js.undefined)
     
-    inline def setExecutedTime(value: Timestamp): Self = StObject.set(x, "ExecutedTime", value.asInstanceOf[js.Any])
+    inline def setExecutedTime(value: js.Date): Self = StObject.set(x, "ExecutedTime", value.asInstanceOf[js.Any])
     
     inline def setExecutedTimeUndefined: Self = StObject.set(x, "ExecutedTime", js.undefined)
     
@@ -79,7 +79,7 @@ object ManagedActionHistoryItem {
     
     inline def setFailureTypeUndefined: Self = StObject.set(x, "FailureType", js.undefined)
     
-    inline def setFinishedTime(value: Timestamp): Self = StObject.set(x, "FinishedTime", value.asInstanceOf[js.Any])
+    inline def setFinishedTime(value: js.Date): Self = StObject.set(x, "FinishedTime", value.asInstanceOf[js.Any])
     
     inline def setFinishedTimeUndefined: Self = StObject.set(x, "FinishedTime", js.undefined)
     

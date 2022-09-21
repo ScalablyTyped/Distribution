@@ -1,6 +1,6 @@
 package typings.suncalc
 
-import typings.std.Date
+import typings.suncalc.suncalcBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,16 +13,16 @@ object mod {
   
   inline def addTime(angleInDegrees: Double, morningName: String, eveningName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTime")(angleInDegrees.asInstanceOf[js.Any], morningName.asInstanceOf[js.Any], eveningName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def getMoonIllumination(timeAndDate: Date): GetMoonIlluminationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("getMoonIllumination")(timeAndDate.asInstanceOf[js.Any]).asInstanceOf[GetMoonIlluminationResult]
+  inline def getMoonIllumination(timeAndDate: js.Date): GetMoonIlluminationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("getMoonIllumination")(timeAndDate.asInstanceOf[js.Any]).asInstanceOf[GetMoonIlluminationResult]
   
-  inline def getMoonPosition(timeAndDate: Date, latitude: Double, longitude: Double): GetMoonPositionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getMoonPosition")(timeAndDate.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[GetMoonPositionResult]
+  inline def getMoonPosition(timeAndDate: js.Date, latitude: Double, longitude: Double): GetMoonPositionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getMoonPosition")(timeAndDate.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[GetMoonPositionResult]
   
-  inline def getMoonTimes(date: Date, latitude: Double, longitude: Double): GetMoonTimes_ = (^.asInstanceOf[js.Dynamic].applyDynamic("getMoonTimes")(date.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[GetMoonTimes_]
-  inline def getMoonTimes(date: Date, latitude: Double, longitude: Double, inUTC: Boolean): GetMoonTimes_ = (^.asInstanceOf[js.Dynamic].applyDynamic("getMoonTimes")(date.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], inUTC.asInstanceOf[js.Any])).asInstanceOf[GetMoonTimes_]
+  inline def getMoonTimes(date: js.Date, latitude: Double, longitude: Double): GetMoonTimes_ = (^.asInstanceOf[js.Dynamic].applyDynamic("getMoonTimes")(date.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[GetMoonTimes_]
+  inline def getMoonTimes(date: js.Date, latitude: Double, longitude: Double, inUTC: Boolean): GetMoonTimes_ = (^.asInstanceOf[js.Dynamic].applyDynamic("getMoonTimes")(date.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], inUTC.asInstanceOf[js.Any])).asInstanceOf[GetMoonTimes_]
   
-  inline def getPosition(timeAndDate: Date, latitude: Double, longitude: Double): GetSunPositionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(timeAndDate.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[GetSunPositionResult]
+  inline def getPosition(timeAndDate: js.Date, latitude: Double, longitude: Double): GetSunPositionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(timeAndDate.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[GetSunPositionResult]
   
-  inline def getTimes(date: Date, latitude: Double, longitude: Double): GetTimesResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimes")(date.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[GetTimesResult]
+  inline def getTimes(date: js.Date, latitude: Double, longitude: Double): GetTimesResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimes")(date.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[GetTimesResult]
   
   trait GetMoonIlluminationResult extends StObject {
     
@@ -80,30 +80,34 @@ object mod {
   
   trait GetMoonTimes_ extends StObject {
     
-    var alwaysDown: Boolean
+    var alwaysDown: js.UndefOr[`true`] = js.undefined
     
-    var alwaysUp: Boolean
+    var alwaysUp: js.UndefOr[`true`] = js.undefined
     
-    var rise: Date
+    var rise: js.Date
     
-    var set: Date
+    var set: js.Date
   }
   object GetMoonTimes_ {
     
-    inline def apply(alwaysDown: Boolean, alwaysUp: Boolean, rise: Date, set: Date): GetMoonTimes_ = {
-      val __obj = js.Dynamic.literal(alwaysDown = alwaysDown.asInstanceOf[js.Any], alwaysUp = alwaysUp.asInstanceOf[js.Any], rise = rise.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any])
+    inline def apply(rise: js.Date, set: js.Date): GetMoonTimes_ = {
+      val __obj = js.Dynamic.literal(rise = rise.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetMoonTimes_]
     }
     
     extension [Self <: GetMoonTimes_](x: Self) {
       
-      inline def setAlwaysDown(value: Boolean): Self = StObject.set(x, "alwaysDown", value.asInstanceOf[js.Any])
+      inline def setAlwaysDown(value: `true`): Self = StObject.set(x, "alwaysDown", value.asInstanceOf[js.Any])
       
-      inline def setAlwaysUp(value: Boolean): Self = StObject.set(x, "alwaysUp", value.asInstanceOf[js.Any])
+      inline def setAlwaysDownUndefined: Self = StObject.set(x, "alwaysDown", js.undefined)
       
-      inline def setRise(value: Date): Self = StObject.set(x, "rise", value.asInstanceOf[js.Any])
+      inline def setAlwaysUp(value: `true`): Self = StObject.set(x, "alwaysUp", value.asInstanceOf[js.Any])
       
-      inline def setSet(value: Date): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      inline def setAlwaysUpUndefined: Self = StObject.set(x, "alwaysUp", js.undefined)
+      
+      inline def setRise(value: js.Date): Self = StObject.set(x, "rise", value.asInstanceOf[js.Any])
+      
+      inline def setSet(value: js.Date): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,51 +134,51 @@ object mod {
   
   trait GetTimesResult extends StObject {
     
-    var dawn: Date
+    var dawn: js.Date
     
-    var dusk: Date
+    var dusk: js.Date
     
-    var goldenHour: Date
+    var goldenHour: js.Date
     
-    var goldenHourEnd: Date
+    var goldenHourEnd: js.Date
     
-    var nadir: Date
+    var nadir: js.Date
     
-    var nauticalDawn: Date
+    var nauticalDawn: js.Date
     
-    var nauticalDusk: Date
+    var nauticalDusk: js.Date
     
-    var night: Date
+    var night: js.Date
     
-    var nightEnd: Date
+    var nightEnd: js.Date
     
-    var solarNoon: Date
+    var solarNoon: js.Date
     
-    var sunrise: Date
+    var sunrise: js.Date
     
-    var sunriseEnd: Date
+    var sunriseEnd: js.Date
     
-    var sunset: Date
+    var sunset: js.Date
     
-    var sunsetStart: Date
+    var sunsetStart: js.Date
   }
   object GetTimesResult {
     
     inline def apply(
-      dawn: Date,
-      dusk: Date,
-      goldenHour: Date,
-      goldenHourEnd: Date,
-      nadir: Date,
-      nauticalDawn: Date,
-      nauticalDusk: Date,
-      night: Date,
-      nightEnd: Date,
-      solarNoon: Date,
-      sunrise: Date,
-      sunriseEnd: Date,
-      sunset: Date,
-      sunsetStart: Date
+      dawn: js.Date,
+      dusk: js.Date,
+      goldenHour: js.Date,
+      goldenHourEnd: js.Date,
+      nadir: js.Date,
+      nauticalDawn: js.Date,
+      nauticalDusk: js.Date,
+      night: js.Date,
+      nightEnd: js.Date,
+      solarNoon: js.Date,
+      sunrise: js.Date,
+      sunriseEnd: js.Date,
+      sunset: js.Date,
+      sunsetStart: js.Date
     ): GetTimesResult = {
       val __obj = js.Dynamic.literal(dawn = dawn.asInstanceOf[js.Any], dusk = dusk.asInstanceOf[js.Any], goldenHour = goldenHour.asInstanceOf[js.Any], goldenHourEnd = goldenHourEnd.asInstanceOf[js.Any], nadir = nadir.asInstanceOf[js.Any], nauticalDawn = nauticalDawn.asInstanceOf[js.Any], nauticalDusk = nauticalDusk.asInstanceOf[js.Any], night = night.asInstanceOf[js.Any], nightEnd = nightEnd.asInstanceOf[js.Any], solarNoon = solarNoon.asInstanceOf[js.Any], sunrise = sunrise.asInstanceOf[js.Any], sunriseEnd = sunriseEnd.asInstanceOf[js.Any], sunset = sunset.asInstanceOf[js.Any], sunsetStart = sunsetStart.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetTimesResult]
@@ -182,33 +186,33 @@ object mod {
     
     extension [Self <: GetTimesResult](x: Self) {
       
-      inline def setDawn(value: Date): Self = StObject.set(x, "dawn", value.asInstanceOf[js.Any])
+      inline def setDawn(value: js.Date): Self = StObject.set(x, "dawn", value.asInstanceOf[js.Any])
       
-      inline def setDusk(value: Date): Self = StObject.set(x, "dusk", value.asInstanceOf[js.Any])
+      inline def setDusk(value: js.Date): Self = StObject.set(x, "dusk", value.asInstanceOf[js.Any])
       
-      inline def setGoldenHour(value: Date): Self = StObject.set(x, "goldenHour", value.asInstanceOf[js.Any])
+      inline def setGoldenHour(value: js.Date): Self = StObject.set(x, "goldenHour", value.asInstanceOf[js.Any])
       
-      inline def setGoldenHourEnd(value: Date): Self = StObject.set(x, "goldenHourEnd", value.asInstanceOf[js.Any])
+      inline def setGoldenHourEnd(value: js.Date): Self = StObject.set(x, "goldenHourEnd", value.asInstanceOf[js.Any])
       
-      inline def setNadir(value: Date): Self = StObject.set(x, "nadir", value.asInstanceOf[js.Any])
+      inline def setNadir(value: js.Date): Self = StObject.set(x, "nadir", value.asInstanceOf[js.Any])
       
-      inline def setNauticalDawn(value: Date): Self = StObject.set(x, "nauticalDawn", value.asInstanceOf[js.Any])
+      inline def setNauticalDawn(value: js.Date): Self = StObject.set(x, "nauticalDawn", value.asInstanceOf[js.Any])
       
-      inline def setNauticalDusk(value: Date): Self = StObject.set(x, "nauticalDusk", value.asInstanceOf[js.Any])
+      inline def setNauticalDusk(value: js.Date): Self = StObject.set(x, "nauticalDusk", value.asInstanceOf[js.Any])
       
-      inline def setNight(value: Date): Self = StObject.set(x, "night", value.asInstanceOf[js.Any])
+      inline def setNight(value: js.Date): Self = StObject.set(x, "night", value.asInstanceOf[js.Any])
       
-      inline def setNightEnd(value: Date): Self = StObject.set(x, "nightEnd", value.asInstanceOf[js.Any])
+      inline def setNightEnd(value: js.Date): Self = StObject.set(x, "nightEnd", value.asInstanceOf[js.Any])
       
-      inline def setSolarNoon(value: Date): Self = StObject.set(x, "solarNoon", value.asInstanceOf[js.Any])
+      inline def setSolarNoon(value: js.Date): Self = StObject.set(x, "solarNoon", value.asInstanceOf[js.Any])
       
-      inline def setSunrise(value: Date): Self = StObject.set(x, "sunrise", value.asInstanceOf[js.Any])
+      inline def setSunrise(value: js.Date): Self = StObject.set(x, "sunrise", value.asInstanceOf[js.Any])
       
-      inline def setSunriseEnd(value: Date): Self = StObject.set(x, "sunriseEnd", value.asInstanceOf[js.Any])
+      inline def setSunriseEnd(value: js.Date): Self = StObject.set(x, "sunriseEnd", value.asInstanceOf[js.Any])
       
-      inline def setSunset(value: Date): Self = StObject.set(x, "sunset", value.asInstanceOf[js.Any])
+      inline def setSunset(value: js.Date): Self = StObject.set(x, "sunset", value.asInstanceOf[js.Any])
       
-      inline def setSunsetStart(value: Date): Self = StObject.set(x, "sunsetStart", value.asInstanceOf[js.Any])
+      inline def setSunsetStart(value: js.Date): Self = StObject.set(x, "sunsetStart", value.asInstanceOf[js.Any])
     }
   }
 }

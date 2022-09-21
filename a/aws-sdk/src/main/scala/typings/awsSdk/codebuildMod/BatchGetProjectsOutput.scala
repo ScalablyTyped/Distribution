@@ -31,10 +31,10 @@ object BatchGetProjectsOutput {
     
     inline def setProjectsNotFoundUndefined: Self = StObject.set(x, "projectsNotFound", js.undefined)
     
-    inline def setProjectsNotFoundVarargs(value: NonEmptyString*): Self = StObject.set(x, "projectsNotFound", js.Array(value :_*))
+    inline def setProjectsNotFoundVarargs(value: NonEmptyString*): Self = StObject.set(x, "projectsNotFound", js.Array(value*))
     
     inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
     
-    inline def setProjectsVarargs(value: Project*): Self = StObject.set(x, "projects", js.Array(value :_*))
+    inline def setProjectsVarargs(value: Project*): Self = StObject.set(x, "projects", js.Array(value*))
   }
 }

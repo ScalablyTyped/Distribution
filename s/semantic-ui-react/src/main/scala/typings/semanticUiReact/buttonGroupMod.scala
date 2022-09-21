@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.buttonButtonMod.ButtonProps
 import typings.semanticUiReact.genericMod.SemanticCOLORS
 import typings.semanticUiReact.genericMod.SemanticFLOATS
@@ -24,12 +24,12 @@ object buttonGroupMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Button/ButtonGroup", JSImport.Default)
   @js.native
-  val default: StatelessComponent[ButtonGroupProps] = js.native
+  val default: FC[ButtonGroupProps] = js.native
   
   trait ButtonGroupProps
     extends StObject
        with StrictButtonGroupProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ButtonGroupProps {
     
     inline def apply(): ButtonGroupProps = {
@@ -41,7 +41,7 @@ object buttonGroupMod extends Shortcut {
   trait StrictButtonGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Groups can be attached to other content. */
     var attached: js.UndefOr[Boolean | left | right | top | bottom] = js.undefined
@@ -115,7 +115,7 @@ object buttonGroupMod extends Shortcut {
     
     extension [Self <: StrictButtonGroupProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -131,7 +131,7 @@ object buttonGroupMod extends Shortcut {
       
       inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      inline def setButtonsVarargs(value: SemanticShorthandItem[ButtonProps]*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: SemanticShorthandItem[ButtonProps]*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -207,8 +207,8 @@ object buttonGroupMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[ButtonGroupProps]
+  type _To = FC[ButtonGroupProps]
   
   /* This means you don't have to write `default`, but can instead just say `buttonGroupMod.foo` */
-  override def _to: StatelessComponent[ButtonGroupProps] = default
+  override def _to: FC[ButtonGroupProps] = default
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLOptionElement")
 @js.native
-/* private */ class IHTMLOptionElement ()
+/* private */ open class IHTMLOptionElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLOptionElement {
   
@@ -19,13 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var defaultSelected: Boolean = js.native
   
   /* CompleteClass */
-  override def form(): js.Any = js.native
+  override def form(): Any = js.native
   /* CompleteClass */
-  override def form(name: js.Any): js.Any = js.native
+  override def form(name: Any): Any = js.native
   /* CompleteClass */
-  override def form(name: js.Any, index: js.Any): js.Any = js.native
+  override def form(name: Any, index: Any): Any = js.native
   /* CompleteClass */
-  override def form(name: Unit, index: js.Any): js.Any = js.native
+  override def form(name: Unit, index: Any): Any = js.native
   /* CompleteClass */
   @JSName("form")
   override val form_Original: IHTMLFormElement = js.native

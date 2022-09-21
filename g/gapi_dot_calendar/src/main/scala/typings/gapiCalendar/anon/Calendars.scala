@@ -21,12 +21,12 @@ object Calendars {
     
     inline def setCalendars(value: js.Array[String]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
-    inline def setCalendarsVarargs(value: String*): Self = StObject.set(x, "calendars", js.Array(value :_*))
+    inline def setCalendarsVarargs(value: String*): Self = StObject.set(x, "calendars", js.Array(value*))
     
     inline def setErrors(value: js.Array[Domain]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: Domain*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Domain*): Self = StObject.set(x, "errors", js.Array(value*))
   }
 }

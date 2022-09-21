@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "DebugAdapterNamedPipeServer")
 @js.native
-class DebugAdapterNamedPipeServer protected ()
+open class DebugAdapterNamedPipeServer protected ()
   extends StObject
      with DebugAdapterDescriptor {
   /**
-    * Create a description for a debug adapter running as a socket based server.
+    * Create a description for a debug adapter running as a Named Pipe (on Windows)/UNIX Domain Socket (on non-Windows) based server.
     */
   def this(path: String) = this()
   

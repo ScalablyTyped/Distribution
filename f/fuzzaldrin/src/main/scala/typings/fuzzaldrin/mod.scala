@@ -20,7 +20,7 @@ object mod {
     options: Key[K, T]
   ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(candidates.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def `match`(string: String, query: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(string.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def `match`(string: String, query: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(string.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def score(string: String, query: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("score")(string.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

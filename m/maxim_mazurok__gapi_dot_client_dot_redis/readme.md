@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_redis
 
-Typings are for version 1.0.20201110
+Typings are for version 1.0.20220728
 
 ## Library description:
 TypeScript typings for Google Cloud Memorystore for Redis API v1
@@ -10,10 +10,10 @@ TypeScript typings for Google Cloud Memorystore for Redis API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.redis |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 603 |
-| # stars            | 0 |
+| # releases         | 53 |
+| # dependents       | 0.0 |
+| # downloads        | 800.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

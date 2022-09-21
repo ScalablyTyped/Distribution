@@ -22,7 +22,7 @@ trait ListColumns extends StObject {
   def Item(Index: String): ListColumn = js.native
   def Item(Index: Double): ListColumn = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): ListColumn = js.native
+  def _Default(Index: Any): ListColumn = js.native
 }

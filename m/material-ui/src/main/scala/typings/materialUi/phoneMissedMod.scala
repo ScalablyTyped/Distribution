@@ -10,10 +10,10 @@ object phoneMissedMod {
   
   @JSImport("material-ui/svg-icons/notification/phone-missed", JSImport.Default)
   @js.native
-  class default () extends NotificationPhoneMissed
+  open class default () extends NotificationPhoneMissed
   
   @JSImport("material-ui/svg-icons/notification/phone-missed", "NotificationPhoneMissed")
   @js.native
-  class NotificationPhoneMissed ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationPhoneMissed ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

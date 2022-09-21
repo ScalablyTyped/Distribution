@@ -9,7 +9,7 @@ object popupMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Popup", "Popup")
   @js.native
-  class Popup protected ()
+  open class Popup protected ()
     extends typings.officeUiFabricReact.popupPopupMod.Popup {
     def this(props: IPopupProps) = this()
   }

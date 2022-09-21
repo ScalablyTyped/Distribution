@@ -8,6 +8,7 @@ trait EcdhKeyDeriveParams
   extends StObject
      with Algorithm {
   
+  /* standard dom */
   var public: CryptoKey
 }
 object EcdhKeyDeriveParams {

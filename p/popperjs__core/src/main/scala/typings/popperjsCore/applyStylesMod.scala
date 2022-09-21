@@ -11,12 +11,12 @@ object applyStylesMod extends Shortcut {
   
   @JSImport("@popperjs/core/lib/modifiers/applyStyles", JSImport.Default)
   @js.native
-  val default: Modifier[applyStyles, js.Object] = js.native
+  val default: ApplyStylesModifier = js.native
   
   type ApplyStylesModifier = Modifier[applyStyles, js.Object]
   
-  type _To = Modifier[applyStyles, js.Object]
+  type _To = ApplyStylesModifier
   
   /* This means you don't have to write `default`, but can instead just say `applyStylesMod.foo` */
-  override def _to: Modifier[applyStyles, js.Object] = default
+  override def _to: ApplyStylesModifier = default
 }

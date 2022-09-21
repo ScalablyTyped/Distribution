@@ -19,7 +19,7 @@ trait ActivatePipelineInput extends StObject {
   /**
     * The date and time to resume the pipeline. By default, the pipeline resumes from the last completed execution.
     */
-  var startTimestamp: js.UndefOr[timestamp] = js.undefined
+  var startTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object ActivatePipelineInput {
   
@@ -34,11 +34,11 @@ object ActivatePipelineInput {
     
     inline def setParameterValuesUndefined: Self = StObject.set(x, "parameterValues", js.undefined)
     
-    inline def setParameterValuesVarargs(value: ParameterValue*): Self = StObject.set(x, "parameterValues", js.Array(value :_*))
+    inline def setParameterValuesVarargs(value: ParameterValue*): Self = StObject.set(x, "parameterValues", js.Array(value*))
     
     inline def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     
-    inline def setStartTimestamp(value: timestamp): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
+    inline def setStartTimestamp(value: js.Date): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
     
     inline def setStartTimestampUndefined: Self = StObject.set(x, "startTimestamp", js.undefined)
   }

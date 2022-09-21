@@ -9,10 +9,180 @@ object onfleetMod {
   
   @JSImport("@onfleet/node-onfleet/onfleet", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Onfleet {
     def this(api_key: String) = this()
+    def this(api_key: String, timeout: Double) = this()
+    def this(api_key: String, timeout: Double, bottleneckOptions: BottleneckOptions) = this()
+    def this(api_key: String, timeout: Unit, bottleneckOptions: BottleneckOptions) = this()
+    def this(api_key: String, timeout: Double, bottleneckOptions: Unit, baseURL: String) = this()
+    def this(api_key: String, timeout: Double, bottleneckOptions: BottleneckOptions, baseURL: String) = this()
+    def this(api_key: String, timeout: Unit, bottleneckOptions: Unit, baseURL: String) = this()
+    def this(api_key: String, timeout: Unit, bottleneckOptions: BottleneckOptions, baseURL: String) = this()
+    def this(api_key: String, timeout: Double, bottleneckOptions: Unit, baseURL: String, defaultPath: String) = this()
+    def this(api_key: String, timeout: Double, bottleneckOptions: Unit, baseURL: Unit, defaultPath: String) = this()
+    def this(
+      api_key: String,
+      timeout: Double,
+      bottleneckOptions: BottleneckOptions,
+      baseURL: String,
+      defaultPath: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Double,
+      bottleneckOptions: BottleneckOptions,
+      baseURL: Unit,
+      defaultPath: String
+    ) = this()
+    def this(api_key: String, timeout: Unit, bottleneckOptions: Unit, baseURL: String, defaultPath: String) = this()
+    def this(api_key: String, timeout: Unit, bottleneckOptions: Unit, baseURL: Unit, defaultPath: String) = this()
+    def this(
+      api_key: String,
+      timeout: Unit,
+      bottleneckOptions: BottleneckOptions,
+      baseURL: String,
+      defaultPath: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Unit,
+      bottleneckOptions: BottleneckOptions,
+      baseURL: Unit,
+      defaultPath: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Double,
+      bottleneckOptions: Unit,
+      baseURL: String,
+      defaultPath: String,
+      defaultApiVersion: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Double,
+      bottleneckOptions: Unit,
+      baseURL: String,
+      defaultPath: Unit,
+      defaultApiVersion: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Double,
+      bottleneckOptions: Unit,
+      baseURL: Unit,
+      defaultPath: String,
+      defaultApiVersion: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Double,
+      bottleneckOptions: Unit,
+      baseURL: Unit,
+      defaultPath: Unit,
+      defaultApiVersion: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Double,
+      bottleneckOptions: BottleneckOptions,
+      baseURL: String,
+      defaultPath: String,
+      defaultApiVersion: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Double,
+      bottleneckOptions: BottleneckOptions,
+      baseURL: String,
+      defaultPath: Unit,
+      defaultApiVersion: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Double,
+      bottleneckOptions: BottleneckOptions,
+      baseURL: Unit,
+      defaultPath: String,
+      defaultApiVersion: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Double,
+      bottleneckOptions: BottleneckOptions,
+      baseURL: Unit,
+      defaultPath: Unit,
+      defaultApiVersion: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Unit,
+      bottleneckOptions: Unit,
+      baseURL: String,
+      defaultPath: String,
+      defaultApiVersion: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Unit,
+      bottleneckOptions: Unit,
+      baseURL: String,
+      defaultPath: Unit,
+      defaultApiVersion: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Unit,
+      bottleneckOptions: Unit,
+      baseURL: Unit,
+      defaultPath: String,
+      defaultApiVersion: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Unit,
+      bottleneckOptions: Unit,
+      baseURL: Unit,
+      defaultPath: Unit,
+      defaultApiVersion: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Unit,
+      bottleneckOptions: BottleneckOptions,
+      baseURL: String,
+      defaultPath: String,
+      defaultApiVersion: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Unit,
+      bottleneckOptions: BottleneckOptions,
+      baseURL: String,
+      defaultPath: Unit,
+      defaultApiVersion: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Unit,
+      bottleneckOptions: BottleneckOptions,
+      baseURL: Unit,
+      defaultPath: String,
+      defaultApiVersion: String
+    ) = this()
+    def this(
+      api_key: String,
+      timeout: Unit,
+      bottleneckOptions: BottleneckOptions,
+      baseURL: Unit,
+      defaultPath: Unit,
+      defaultApiVersion: String
+    ) = this()
+    
+    /* CompleteClass */
+    var administrators: typings.onfleetNodeOnfleet.administratorsMod.^ = js.native
     
     /* CompleteClass */
     var admins: typings.onfleetNodeOnfleet.administratorsMod.^ = js.native
@@ -54,7 +224,50 @@ object onfleetMod {
     var workers: typings.onfleetNodeOnfleet.workersMod.^ = js.native
   }
   
+  trait BottleneckOptions extends StObject {
+    
+    /** default 1 */
+    var LIMITER_MAX_CONCURRENT: js.UndefOr[Double] = js.undefined
+    
+    /** default 50 */
+    var LIMITER_MIN_TIME: js.UndefOr[Double] = js.undefined
+    
+    /** default 20 */
+    var LIMITER_RESERVOIR: js.UndefOr[Double] = js.undefined
+    
+    /** default 10000 */
+    var LIMITER_WAIT_UPON_DEPLETION: js.UndefOr[Double] = js.undefined
+  }
+  object BottleneckOptions {
+    
+    inline def apply(): BottleneckOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BottleneckOptions]
+    }
+    
+    extension [Self <: BottleneckOptions](x: Self) {
+      
+      inline def setLIMITER_MAX_CONCURRENT(value: Double): Self = StObject.set(x, "LIMITER_MAX_CONCURRENT", value.asInstanceOf[js.Any])
+      
+      inline def setLIMITER_MAX_CONCURRENTUndefined: Self = StObject.set(x, "LIMITER_MAX_CONCURRENT", js.undefined)
+      
+      inline def setLIMITER_MIN_TIME(value: Double): Self = StObject.set(x, "LIMITER_MIN_TIME", value.asInstanceOf[js.Any])
+      
+      inline def setLIMITER_MIN_TIMEUndefined: Self = StObject.set(x, "LIMITER_MIN_TIME", js.undefined)
+      
+      inline def setLIMITER_RESERVOIR(value: Double): Self = StObject.set(x, "LIMITER_RESERVOIR", value.asInstanceOf[js.Any])
+      
+      inline def setLIMITER_RESERVOIRUndefined: Self = StObject.set(x, "LIMITER_RESERVOIR", js.undefined)
+      
+      inline def setLIMITER_WAIT_UPON_DEPLETION(value: Double): Self = StObject.set(x, "LIMITER_WAIT_UPON_DEPLETION", value.asInstanceOf[js.Any])
+      
+      inline def setLIMITER_WAIT_UPON_DEPLETIONUndefined: Self = StObject.set(x, "LIMITER_WAIT_UPON_DEPLETION", js.undefined)
+    }
+  }
+  
   trait Onfleet extends StObject {
+    
+    var administrators: typings.onfleetNodeOnfleet.administratorsMod.^
     
     var admins: typings.onfleetNodeOnfleet.administratorsMod.^
     
@@ -85,6 +298,7 @@ object onfleetMod {
   object Onfleet {
     
     inline def apply(
+      administrators: typings.onfleetNodeOnfleet.administratorsMod.^,
       admins: typings.onfleetNodeOnfleet.administratorsMod.^,
       api: BaseUrl,
       apiKey: String,
@@ -99,11 +313,13 @@ object onfleetMod {
       webhooks: typings.onfleetNodeOnfleet.webhooksMod.^,
       workers: typings.onfleetNodeOnfleet.workersMod.^
     ): Onfleet = {
-      val __obj = js.Dynamic.literal(admins = admins.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any], apiKey = apiKey.asInstanceOf[js.Any], containers = containers.asInstanceOf[js.Any], destinations = destinations.asInstanceOf[js.Any], hubs = hubs.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], recipients = recipients.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any], verifyKey = js.Any.fromFunction0(verifyKey), webhooks = webhooks.asInstanceOf[js.Any], workers = workers.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(administrators = administrators.asInstanceOf[js.Any], admins = admins.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any], apiKey = apiKey.asInstanceOf[js.Any], containers = containers.asInstanceOf[js.Any], destinations = destinations.asInstanceOf[js.Any], hubs = hubs.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], recipients = recipients.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any], verifyKey = js.Any.fromFunction0(verifyKey), webhooks = webhooks.asInstanceOf[js.Any], workers = workers.asInstanceOf[js.Any])
       __obj.asInstanceOf[Onfleet]
     }
     
     extension [Self <: Onfleet](x: Self) {
+      
+      inline def setAdministrators(value: typings.onfleetNodeOnfleet.administratorsMod.^): Self = StObject.set(x, "administrators", value.asInstanceOf[js.Any])
       
       inline def setAdmins(value: typings.onfleetNodeOnfleet.administratorsMod.^): Self = StObject.set(x, "admins", value.asInstanceOf[js.Any])
       

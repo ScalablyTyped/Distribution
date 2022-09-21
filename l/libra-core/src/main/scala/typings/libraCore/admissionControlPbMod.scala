@@ -10,7 +10,6 @@ import typings.libraCore.admissionControlPbMod.SubmitTransactionResponse.StatusC
 import typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatus
 import typings.libraCore.transactionPbMod.SignedTransaction
 import typings.libraCore.vmErrorsPbMod.VMStatus
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object admissionControlPbMod {
   
   @JSImport("libra-core/lib/@/generated/admission_control_pb", "AdmissionControlStatus")
   @js.native
-  class AdmissionControlStatus () extends Message {
+  open class AdmissionControlStatus () extends Message {
     
     def getCode(): AdmissionControlStatusCode = js.native
     
@@ -36,7 +35,7 @@ object admissionControlPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): AdmissionControlStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AdmissionControlStatus]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): AdmissionControlStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AdmissionControlStatus]
     
     inline def deserializeBinaryFromReader(message: AdmissionControlStatus, reader: BinaryReader): AdmissionControlStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AdmissionControlStatus]
     
@@ -107,7 +106,7 @@ object admissionControlPbMod {
   
   @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionRequest")
   @js.native
-  class SubmitTransactionRequest () extends Message {
+  open class SubmitTransactionRequest () extends Message {
     
     def clearSignedTxn(): Unit = js.native
     
@@ -125,7 +124,7 @@ object admissionControlPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): SubmitTransactionRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SubmitTransactionRequest]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): SubmitTransactionRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SubmitTransactionRequest]
     
     inline def deserializeBinaryFromReader(message: SubmitTransactionRequest, reader: BinaryReader): SubmitTransactionRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SubmitTransactionRequest]
     
@@ -166,7 +165,7 @@ object admissionControlPbMod {
   
   @JSImport("libra-core/lib/@/generated/admission_control_pb", "SubmitTransactionResponse")
   @js.native
-  class SubmitTransactionResponse () extends Message {
+  open class SubmitTransactionResponse () extends Message {
     
     def clearAcStatus(): Unit = js.native
     
@@ -180,11 +179,11 @@ object admissionControlPbMod {
     
     def getStatusCase(): StatusCase = js.native
     
-    def getValidatorId(): Uint8Array | String = js.native
+    def getValidatorId(): js.typedarray.Uint8Array | String = js.native
     
     def getValidatorId_asB64(): String = js.native
     
-    def getValidatorId_asU8(): Uint8Array = js.native
+    def getValidatorId_asU8(): js.typedarray.Uint8Array = js.native
     
     def getVmStatus(): js.UndefOr[VMStatus] = js.native
     
@@ -201,7 +200,7 @@ object admissionControlPbMod {
     def setMempoolStatus(value: MempoolAddTransactionStatus): Unit = js.native
     
     def setValidatorId(value: String): Unit = js.native
-    def setValidatorId(value: Uint8Array): Unit = js.native
+    def setValidatorId(value: js.typedarray.Uint8Array): Unit = js.native
     
     def setVmStatus(): Unit = js.native
     def setVmStatus(value: VMStatus): Unit = js.native
@@ -247,7 +246,7 @@ object admissionControlPbMod {
       /* 1 */ val VM_STATUS: typings.libraCore.admissionControlPbMod.SubmitTransactionResponse.StatusCase.VM_STATUS & Double = js.native
     }
     
-    inline def deserializeBinary(bytes: Uint8Array): SubmitTransactionResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SubmitTransactionResponse]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): SubmitTransactionResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SubmitTransactionResponse]
     
     inline def deserializeBinaryFromReader(message: SubmitTransactionResponse, reader: BinaryReader): SubmitTransactionResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SubmitTransactionResponse]
     
@@ -272,13 +271,13 @@ object admissionControlPbMod {
       
       var mempoolStatus: js.UndefOr[typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatus.AsObject] = js.undefined
       
-      var validatorId: Uint8Array | String
+      var validatorId: js.typedarray.Uint8Array | String
       
       var vmStatus: js.UndefOr[typings.libraCore.vmErrorsPbMod.VMStatus.AsObject] = js.undefined
     }
     object AsObject {
       
-      inline def apply(validatorId: Uint8Array | String): AsObject = {
+      inline def apply(validatorId: js.typedarray.Uint8Array | String): AsObject = {
         val __obj = js.Dynamic.literal(validatorId = validatorId.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
@@ -293,7 +292,7 @@ object admissionControlPbMod {
         
         inline def setMempoolStatusUndefined: Self = StObject.set(x, "mempoolStatus", js.undefined)
         
-        inline def setValidatorId(value: Uint8Array | String): Self = StObject.set(x, "validatorId", value.asInstanceOf[js.Any])
+        inline def setValidatorId(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "validatorId", value.asInstanceOf[js.Any])
         
         inline def setVmStatus(value: typings.libraCore.vmErrorsPbMod.VMStatus.AsObject): Self = StObject.set(x, "vmStatus", value.asInstanceOf[js.Any])
         

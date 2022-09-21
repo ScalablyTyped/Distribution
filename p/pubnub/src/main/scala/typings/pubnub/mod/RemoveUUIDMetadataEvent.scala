@@ -1,6 +1,6 @@
 package typings.pubnub.mod
 
-import typings.pubnub.anon.DataId
+import typings.pubnub.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RemoveUUIDMetadataEvent
   extends StObject
      with BaseObjectsEvent
-     with ObjectsEvent[js.Any, js.Any, js.Any] {
+     with ObjectsEvent[Any, Any, Any] {
   
   @JSName("message")
-  var message_RemoveUUIDMetadataEvent: DataId
+  var message_RemoveUUIDMetadataEvent: Type
 }
 object RemoveUUIDMetadataEvent {
   
-  inline def apply(channel: String, message: DataId, timetoken: Double): RemoveUUIDMetadataEvent = {
+  inline def apply(channel: String, message: Type, timetoken: Double): RemoveUUIDMetadataEvent = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any], subscription = null)
     __obj.asInstanceOf[RemoveUUIDMetadataEvent]
   }
   
   extension [Self <: RemoveUUIDMetadataEvent](x: Self) {
     
-    inline def setMessage(value: DataId): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Type): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

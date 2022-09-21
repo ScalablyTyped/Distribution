@@ -25,7 +25,7 @@ object ListCrawledUrlsResponse {
     
     inline def setCrawledUrlsUndefined: Self = StObject.set(x, "crawledUrls", js.undefined)
     
-    inline def setCrawledUrlsVarargs(value: CrawledUrl*): Self = StObject.set(x, "crawledUrls", js.Array(value :_*))
+    inline def setCrawledUrlsVarargs(value: CrawledUrl*): Self = StObject.set(x, "crawledUrls", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

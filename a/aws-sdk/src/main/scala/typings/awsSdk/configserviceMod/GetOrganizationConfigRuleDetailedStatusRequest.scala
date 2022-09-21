@@ -12,7 +12,7 @@ trait GetOrganizationConfigRuleDetailedStatusRequest extends StObject {
   var Filters: js.UndefOr[StatusDetailFilters] = js.undefined
   
   /**
-    * The maximum number of OrganizationConfigRuleDetailedStatus returned on each page. If you do not specify a number, AWS Config uses the default. The default is 100.
+    * The maximum number of OrganizationConfigRuleDetailedStatus returned on each page. If you do not specify a number, Config uses the default. The default is 100.
     */
   var Limit: js.UndefOr[CosmosPageLimit] = js.undefined
   
@@ -22,7 +22,7 @@ trait GetOrganizationConfigRuleDetailedStatusRequest extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of organization config rule for which you want status details for member accounts.
+    * The name of your organization Config rule for which you want status details for member accounts.
     */
   var OrganizationConfigRuleName: typings.awsSdk.configserviceMod.OrganizationConfigRuleName
 }

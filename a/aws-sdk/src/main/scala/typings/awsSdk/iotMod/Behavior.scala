@@ -17,14 +17,19 @@ trait Behavior extends StObject {
   var metric: js.UndefOr[BehaviorMetric] = js.undefined
   
   /**
-    * The dimension for a metric in your behavior. For example, using a TOPIC_FILTER dimension, you can narrow down the scope of the metric only to MQTT topics whose name match the pattern specified in the dimension.
+    * The dimension for a metric in your behavior. For example, using a TOPIC_FILTER dimension, you can narrow down the scope of the metric to only MQTT topics where the name matches the pattern specified in the dimension. This can't be used with custom metrics.
     */
   var metricDimension: js.UndefOr[MetricDimension] = js.undefined
   
   /**
-    * The name you have given to the behavior.
+    * The name you've given to the behavior.
     */
   var name: BehaviorName
+  
+  /**
+    *  Suppresses alerts. 
+    */
+  var suppressAlerts: js.UndefOr[SuppressAlerts] = js.undefined
 }
 object Behavior {
   
@@ -48,5 +53,9 @@ object Behavior {
     inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
     inline def setName(value: BehaviorName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressAlerts(value: SuppressAlerts): Self = StObject.set(x, "suppressAlerts", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressAlertsUndefined: Self = StObject.set(x, "suppressAlerts", js.undefined)
   }
 }

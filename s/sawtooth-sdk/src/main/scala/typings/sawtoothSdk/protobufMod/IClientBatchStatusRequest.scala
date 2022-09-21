@@ -31,7 +31,7 @@ object IClientBatchStatusRequest {
     
     inline def setBatchIdsUndefined: Self = StObject.set(x, "batchIds", js.undefined)
     
-    inline def setBatchIdsVarargs(value: String*): Self = StObject.set(x, "batchIds", js.Array(value :_*))
+    inline def setBatchIdsVarargs(value: String*): Self = StObject.set(x, "batchIds", js.Array(value*))
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

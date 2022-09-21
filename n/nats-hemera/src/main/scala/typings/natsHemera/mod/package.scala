@@ -6,22 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 type ActHandler = js.ThisFunction2[
-/* this */ typings.natsHemera.mod.Hemera[typings.natsHemera.mod.ClientRequest, typings.natsHemera.mod.ClientResponse], 
-/* error */ typings.std.Error, 
-/* response */ typings.natsHemera.mod.ClientResult, 
-scala.Unit]
+/* this */ Hemera[ClientRequest, ClientResponse], 
+/* error */ js.Error, 
+/* response */ ClientResult, 
+Unit]
 
-type ClientResult = js.Any
+type ClientResult = Any
 
-type NoContext = scala.Null
+type NoContext = Null
 
-type NodeCallback = js.Function2[
-/* error */ js.UndefOr[typings.std.Error | scala.Null], 
-/* success */ js.UndefOr[js.Any], 
-scala.Unit]
+type NodeCallback = js.Function2[/* error */ js.UndefOr[js.Error | Null], /* success */ js.UndefOr[Any], Unit]
 
 type Plugin = js.Function
 
-type Request = scala.Null
+type Request = Null
 
-type Response = scala.Null
+type Response = Null

@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaTargetTcpProxiesSetProxyHeaderRequest extends StObject {
   
   /**
-    * The new type of proxy header to append before sending data to the
-    * backend. NONE or PROXY_V1 are allowed.
+    * The new type of proxy header to append before sending data to the backend. NONE or PROXY_V1 are allowed.
     */
-  var proxyHeader: js.UndefOr[String] = js.undefined
+  var proxyHeader: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTargetTcpProxiesSetProxyHeaderRequest {
   
@@ -22,6 +21,8 @@ object SchemaTargetTcpProxiesSetProxyHeaderRequest {
   extension [Self <: SchemaTargetTcpProxiesSetProxyHeaderRequest](x: Self) {
     
     inline def setProxyHeader(value: String): Self = StObject.set(x, "proxyHeader", value.asInstanceOf[js.Any])
+    
+    inline def setProxyHeaderNull: Self = StObject.set(x, "proxyHeader", null)
     
     inline def setProxyHeaderUndefined: Self = StObject.set(x, "proxyHeader", js.undefined)
   }

@@ -196,12 +196,12 @@ object Types {
     /**
       * Image bitmap.
       */
-    var bmp: js.Any
+    var bmp: Any
     
     /**
       * Image cellmap (bitmap scaled down to cell size).
       */
-    var cellmap: js.Any
+    var cellmap: Any
     
     /**
       * Pixel height.
@@ -215,16 +215,16 @@ object Types {
   }
   object TImage {
     
-    inline def apply(bmp: js.Any, cellmap: js.Any, height: Double, width: Double): TImage = {
+    inline def apply(bmp: Any, cellmap: Any, height: Double, width: Double): TImage = {
       val __obj = js.Dynamic.literal(bmp = bmp.asInstanceOf[js.Any], cellmap = cellmap.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[TImage]
     }
     
     extension [Self <: TImage](x: Self) {
       
-      inline def setBmp(value: js.Any): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
+      inline def setBmp(value: Any): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
       
-      inline def setCellmap(value: js.Any): Self = StObject.set(x, "cellmap", value.asInstanceOf[js.Any])
+      inline def setCellmap(value: Any): Self = StObject.set(x, "cellmap", value.asInstanceOf[js.Any])
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "DiffDelta")
 @js.native
-class DiffDelta ()
+open class DiffDelta ()
   extends typings.nodegit.diffDeltaMod.DiffDelta

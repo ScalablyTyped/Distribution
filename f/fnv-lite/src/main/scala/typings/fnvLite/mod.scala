@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("fnv-lite", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with FNV
   @JSImport("fnv-lite", JSImport.Namespace)
@@ -36,14 +36,7 @@ object mod {
   trait FNV extends StObject {
     
     def digest(): js.Array[Double] = js.native
-    @JSName("digest")
-    def digest_base36(`type`: base36): String = js.native
-    @JSName("digest")
-    def digest_base64(`type`: base64): String = js.native
-    @JSName("digest")
-    def digest_base64Url(`type`: base64Url): String = js.native
-    @JSName("digest")
-    def digest_hex(`type`: hex): String = js.native
+    def digest(`type`: hex | base36 | base64 | base64Url): String = js.native
     
     def update(input: Input): this.type = js.native
   }

@@ -11,15 +11,15 @@ trait BootstrapGridViewBatchEditApi extends StObject {
   
   def deleteRow(visibleIndex: Double): Unit = js.native
   
-  def deleteRowByKey(key: js.Any): Unit = js.native
+  def deleteRowByKey(key: Any): Unit = js.native
   
   def endEdit(): Unit = js.native
   
-  def getCellTextContainer(visibleIndex: Double, columnFieldNameOrId: String): js.Any = js.native
+  def getCellTextContainer(visibleIndex: Double, columnFieldNameOrId: String): Any = js.native
   
-  def getCellValue(visibleIndex: Double, columnFieldNameOrId: String, initial: Boolean): js.Any = js.native
+  def getCellValue(visibleIndex: Double, columnFieldNameOrId: String, initial: Boolean): Any = js.native
   
-  def getColumnDisplayText(columnFieldNameOrId: String, value: js.Any): String = js.native
+  def getColumnDisplayText(columnFieldNameOrId: String, value: Any): String = js.native
   
   def getDeletedRowIndices(): js.Array[Double] = js.native
   
@@ -31,7 +31,7 @@ trait BootstrapGridViewBatchEditApi extends StObject {
   
   def hasChanges(): Boolean = js.native
   
-  /* protected */ val instance: js.Any = js.native
+  /* protected */ val instance: Any = js.native
   
   def isDeletedRow(visibleIndex: Double): Boolean = js.native
   
@@ -43,17 +43,17 @@ trait BootstrapGridViewBatchEditApi extends StObject {
   
   def recoverRow(visibleIndex: Double): Unit = js.native
   
-  def recoverRowByKey(key: js.Any): Unit = js.native
+  def recoverRowByKey(key: Any): Unit = js.native
   
   def resetChanges(visibleIndex: Double): Unit = js.native
   def resetChanges(visibleIndex: Double, columnIndex: Double): Unit = js.native
   
   // tslint:disable-line:unified-signatures
-  def setCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: js.Any): Unit = js.native
+  def setCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: Any): Unit = js.native
   def setCellValue(
     visibleIndex: Double,
     columnFieldNameOrId: String,
-    value: js.Any,
+    value: Any,
     displayText: String,
     cancelCellHighlighting: Boolean
   ): Unit = js.native

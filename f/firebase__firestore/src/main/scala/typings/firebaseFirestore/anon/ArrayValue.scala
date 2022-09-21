@@ -1,20 +1,22 @@
 package typings.firebaseFirestore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArrayValue extends js.Object {
-  var arrayValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.ArrayValue */ js.Any
+trait ArrayValue extends StObject {
+  
+  var arrayValue: typings.firebaseFirestore.firestoreProtoApiMod.ArrayValue
 }
-
 object ArrayValue {
-  @scala.inline
-  def apply(
-    arrayValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.ArrayValue */ js.Any
-  ): ArrayValue = {
+  
+  inline def apply(arrayValue: typings.firebaseFirestore.firestoreProtoApiMod.ArrayValue): ArrayValue = {
     val __obj = js.Dynamic.literal(arrayValue = arrayValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayValue]
   }
+  
+  extension [Self <: ArrayValue](x: Self) {
+    
+    inline def setArrayValue(value: typings.firebaseFirestore.firestoreProtoApiMod.ArrayValue): Self = StObject.set(x, "arrayValue", value.asInstanceOf[js.Any])
+  }
 }
-

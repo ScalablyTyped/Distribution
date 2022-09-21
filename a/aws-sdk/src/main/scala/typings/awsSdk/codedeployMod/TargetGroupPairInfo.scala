@@ -38,7 +38,7 @@ object TargetGroupPairInfo {
     
     inline def setTargetGroupsUndefined: Self = StObject.set(x, "targetGroups", js.undefined)
     
-    inline def setTargetGroupsVarargs(value: TargetGroupInfo*): Self = StObject.set(x, "targetGroups", js.Array(value :_*))
+    inline def setTargetGroupsVarargs(value: TargetGroupInfo*): Self = StObject.set(x, "targetGroups", js.Array(value*))
     
     inline def setTestTrafficRoute(value: TrafficRoute): Self = StObject.set(x, "testTrafficRoute", value.asInstanceOf[js.Any])
     

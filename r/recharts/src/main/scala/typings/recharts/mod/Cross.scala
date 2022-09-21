@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "Cross")
 @js.native
-class Cross protected ()
-  extends Component[CrossProps, js.Object, js.Any] {
+open class Cross protected ()
+  extends Component[CrossProps, js.Object, Any] {
   def this(props: CrossProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: CrossProps, context: js.Any) = this()
+  def this(props: CrossProps, context: Any) = this()
 }

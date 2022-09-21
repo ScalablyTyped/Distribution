@@ -10,7 +10,7 @@ trait FindPathOpts extends StObject {
     * An array of the room's objects or RoomPosition objects which should be treated as obstacles during the search. This option cannot
     * be used when the new PathFinder is enabled (use costCallback option instead).
     */
-  var avoid: js.UndefOr[js.Array[js.Any | RoomPosition]] = js.undefined
+  var avoid: js.UndefOr[js.Array[Any | RoomPosition]] = js.undefined
   
   /**
     * You can use this callback to modify a CostMatrix for any room during the search. The callback accepts two arguments, roomName
@@ -21,6 +21,7 @@ trait FindPathOpts extends StObject {
     * @param costMatrix The current CostMatrix
     * @returns The new CostMatrix to use
     */
+  // tslint:disable-next-line: invalid-void
   var costCallback: js.UndefOr[
     js.Function2[/* roomName */ String, /* costMatrix */ CostMatrix, Unit | CostMatrix]
   ] = js.undefined
@@ -35,7 +36,7 @@ trait FindPathOpts extends StObject {
     * An array of the room's objects or RoomPosition objects which should be treated as walkable tiles during the search. This option
     * cannot be used when the new PathFinder is enabled (use costCallback option instead).
     */
-  var ignore: js.UndefOr[js.Array[js.Any | RoomPosition]] = js.undefined
+  var ignore: js.UndefOr[js.Array[Any | RoomPosition]] = js.undefined
   
   /**
     * Treat squares with creeps as walkable. Can be useful with too many moving creeps around or in some other cases. The default
@@ -96,11 +97,11 @@ object FindPathOpts {
   
   extension [Self <: FindPathOpts](x: Self) {
     
-    inline def setAvoid(value: js.Array[js.Any | RoomPosition]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
+    inline def setAvoid(value: js.Array[Any | RoomPosition]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
     
     inline def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)
     
-    inline def setAvoidVarargs(value: (js.Any | RoomPosition)*): Self = StObject.set(x, "avoid", js.Array(value :_*))
+    inline def setAvoidVarargs(value: (Any | RoomPosition)*): Self = StObject.set(x, "avoid", js.Array(value*))
     
     inline def setCostCallback(value: (/* roomName */ String, /* costMatrix */ CostMatrix) => Unit | CostMatrix): Self = StObject.set(x, "costCallback", js.Any.fromFunction2(value))
     
@@ -110,7 +111,7 @@ object FindPathOpts {
     
     inline def setHeuristicWeightUndefined: Self = StObject.set(x, "heuristicWeight", js.undefined)
     
-    inline def setIgnore(value: js.Array[js.Any | RoomPosition]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+    inline def setIgnore(value: js.Array[Any | RoomPosition]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
     inline def setIgnoreCreeps(value: Boolean): Self = StObject.set(x, "ignoreCreeps", value.asInstanceOf[js.Any])
     
@@ -126,7 +127,7 @@ object FindPathOpts {
     
     inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
-    inline def setIgnoreVarargs(value: (js.Any | RoomPosition)*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+    inline def setIgnoreVarargs(value: (Any | RoomPosition)*): Self = StObject.set(x, "ignore", js.Array(value*))
     
     inline def setMaxOps(value: Double): Self = StObject.set(x, "maxOps", value.asInstanceOf[js.Any])
     

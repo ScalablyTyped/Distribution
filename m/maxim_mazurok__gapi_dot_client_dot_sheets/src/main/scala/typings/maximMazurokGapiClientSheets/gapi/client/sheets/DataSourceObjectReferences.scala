@@ -22,6 +22,6 @@ object DataSourceObjectReferences {
     
     inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
     
-    inline def setReferencesVarargs(value: DataSourceObjectReference*): Self = StObject.set(x, "references", js.Array(value :_*))
+    inline def setReferencesVarargs(value: DataSourceObjectReference*): Self = StObject.set(x, "references", js.Array(value*))
   }
 }

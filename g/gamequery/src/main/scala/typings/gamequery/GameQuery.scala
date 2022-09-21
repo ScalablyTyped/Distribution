@@ -76,7 +76,7 @@ object GameQuery {
     
     inline def setKeyTracker(value: js.Array[Boolean]): Self = StObject.set(x, "keyTracker", value.asInstanceOf[js.Any])
     
-    inline def setKeyTrackerVarargs(value: Boolean*): Self = StObject.set(x, "keyTracker", js.Array(value :_*))
+    inline def setKeyTrackerVarargs(value: Boolean*): Self = StObject.set(x, "keyTracker", js.Array(value*))
     
     inline def setSpriteCssClass(value: String): Self = StObject.set(x, "spriteCssClass", value.asInstanceOf[js.Any])
     

@@ -9,5 +9,5 @@ object anyNumberMatcherMod {
   
   @JSImport("ts-mockito/lib/matcher/type/AnyNumberMatcher", "AnyNumberMatcher")
   @js.native
-  class AnyNumberMatcher () extends Matcher
+  open class AnyNumberMatcher () extends Matcher
 }

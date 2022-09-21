@@ -10,10 +10,10 @@ Router5 transition path helper function
 | ------------------ | :-------------: |
 | Full name          | router5-transition-path |
 | Keywords           | router5, transition |
-| # releases         | 4 |
-| # dependents       | 12 |
-| # downloads        | 1152404 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 153596.0 |
+| # stars            | 1712.0 |
 
 ## Links
 - [Homepage](https://github.com/router5/router5/tree/master/packages/router5-transition-path)

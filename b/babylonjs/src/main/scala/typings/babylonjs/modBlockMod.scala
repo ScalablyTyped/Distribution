@@ -10,7 +10,7 @@ object modBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/modBlock", "ModBlock")
   @js.native
-  class ModBlock protected () extends NodeMaterialBlock {
+  open class ModBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new ModBlock
       * @param name defines the block name

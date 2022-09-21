@@ -105,6 +105,6 @@ object NetworkProfile {
     
     inline def setTrustAnchorsUndefined: Self = StObject.set(x, "TrustAnchors", js.undefined)
     
-    inline def setTrustAnchorsVarargs(value: TrustAnchor*): Self = StObject.set(x, "TrustAnchors", js.Array(value :_*))
+    inline def setTrustAnchorsVarargs(value: TrustAnchor*): Self = StObject.set(x, "TrustAnchors", js.Array(value*))
   }
 }

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelationalTable extends StObject {
   
   /**
+    * The catalog associated with a table.
+    */
+  var Catalog: js.UndefOr[RelationalTableCatalog] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) for the data source.
     */
   var DataSourceArn: Arn
@@ -35,11 +40,15 @@ object RelationalTable {
   
   extension [Self <: RelationalTable](x: Self) {
     
+    inline def setCatalog(value: RelationalTableCatalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
+    
+    inline def setCatalogUndefined: Self = StObject.set(x, "Catalog", js.undefined)
+    
     inline def setDataSourceArn(value: Arn): Self = StObject.set(x, "DataSourceArn", value.asInstanceOf[js.Any])
     
     inline def setInputColumns(value: InputColumnList): Self = StObject.set(x, "InputColumns", value.asInstanceOf[js.Any])
     
-    inline def setInputColumnsVarargs(value: InputColumn*): Self = StObject.set(x, "InputColumns", js.Array(value :_*))
+    inline def setInputColumnsVarargs(value: InputColumn*): Self = StObject.set(x, "InputColumns", js.Array(value*))
     
     inline def setName(value: RelationalTableName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

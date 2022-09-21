@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response for PartitionQuery or PartitionRead
-  */
 trait SchemaPartitionResponse extends StObject {
   
   /**
@@ -32,7 +29,7 @@ object SchemaPartitionResponse {
     
     inline def setPartitionsUndefined: Self = StObject.set(x, "partitions", js.undefined)
     
-    inline def setPartitionsVarargs(value: SchemaPartition*): Self = StObject.set(x, "partitions", js.Array(value :_*))
+    inline def setPartitionsVarargs(value: SchemaPartition*): Self = StObject.set(x, "partitions", js.Array(value*))
     
     inline def setTransaction(value: SchemaTransaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     

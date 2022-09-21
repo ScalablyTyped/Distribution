@@ -22,6 +22,6 @@ object BatchGetReportGroupsInput {
     
     inline def setReportGroupArns(value: ReportGroupArns): Self = StObject.set(x, "reportGroupArns", value.asInstanceOf[js.Any])
     
-    inline def setReportGroupArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reportGroupArns", js.Array(value :_*))
+    inline def setReportGroupArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reportGroupArns", js.Array(value*))
   }
 }

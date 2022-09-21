@@ -11,11 +11,11 @@ trait errMsgstringExtConfig extends StObject {
   var errMsg: String
   
   /** 第三方平台自定义的数据 */
-  var extConfig: js.Any
+  var extConfig: Any
 }
 object errMsgstringExtConfig {
   
-  inline def apply(errMsg: String, extConfig: js.Any): errMsgstringExtConfig = {
+  inline def apply(errMsg: String, extConfig: Any): errMsgstringExtConfig = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], extConfig = extConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[errMsgstringExtConfig]
   }
@@ -24,6 +24,6 @@ object errMsgstringExtConfig {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    inline def setExtConfig(value: js.Any): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
+    inline def setExtConfig(value: Any): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
   }
 }

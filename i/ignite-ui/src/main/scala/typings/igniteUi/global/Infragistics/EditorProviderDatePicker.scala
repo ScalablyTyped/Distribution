@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.EditorProviderDatePicker")
 @js.native
-class EditorProviderDatePicker ()
+open class EditorProviderDatePicker ()
   extends StObject
      with typings.igniteUi.Infragistics.EditorProviderDatePicker {
   

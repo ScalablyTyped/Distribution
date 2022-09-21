@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class CloudHSMV2 ()
+open class CloudHSMV2 ()
   extends typings.awsSdk.mod.CloudHSMV2 {
   def this(options: ClientConfiguration) = this()
 }

@@ -27,9 +27,14 @@ trait AutoScalingGroup extends StObject {
   var CapacityRebalance: js.UndefOr[CapacityRebalanceEnabled] = js.undefined
   
   /**
+    * Reserved.
+    */
+  var Context: js.UndefOr[typings.awsSdk.autoscalingMod.Context] = js.undefined
+  
+  /**
     * The date and time the group was created.
     */
-  var CreatedTime: TimestampType
+  var CreatedTime: js.Date
   
   /**
     * The duration of the default cooldown period, in seconds.
@@ -37,9 +42,19 @@ trait AutoScalingGroup extends StObject {
   var DefaultCooldown: Cooldown
   
   /**
+    * The duration of the default instance warmup, in seconds.
+    */
+  var DefaultInstanceWarmup: js.UndefOr[typings.awsSdk.autoscalingMod.DefaultInstanceWarmup] = js.undefined
+  
+  /**
     * The desired size of the group.
     */
   var DesiredCapacity: AutoScalingGroupDesiredCapacity
+  
+  /**
+    * The unit of measurement for the value specified for desired capacity. Amazon EC2 Auto Scaling supports DesiredCapacityType for attribute-based instance type selection only.
+    */
+  var DesiredCapacityType: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The metrics enabled for the group.
@@ -47,7 +62,7 @@ trait AutoScalingGroup extends StObject {
   var EnabledMetrics: js.UndefOr[typings.awsSdk.autoscalingMod.EnabledMetrics] = js.undefined
   
   /**
-    * The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service.
+    * The duration of the health check grace period, in seconds.
     */
   var HealthCheckGracePeriod: js.UndefOr[typings.awsSdk.autoscalingMod.HealthCheckGracePeriod] = js.undefined
   
@@ -107,7 +122,12 @@ trait AutoScalingGroup extends StObject {
   var PlacementGroup: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the service-linked role that the Auto Scaling group uses to call other AWS services on your behalf.
+    * The predicted capacity of the group when it has a predictive scaling policy.
+    */
+  var PredictedCapacity: js.UndefOr[AutoScalingGroupPredictedCapacity] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the service-linked role that the Auto Scaling group uses to call other Amazon Web Services on your behalf.
     */
   var ServiceLinkedRoleARN: js.UndefOr[ResourceName] = js.undefined
   
@@ -140,13 +160,23 @@ trait AutoScalingGroup extends StObject {
     * One or more subnet IDs, if applicable, separated by commas.
     */
   var VPCZoneIdentifier: js.UndefOr[XmlStringMaxLen2047] = js.undefined
+  
+  /**
+    * The warm pool for the group.
+    */
+  var WarmPoolConfiguration: js.UndefOr[typings.awsSdk.autoscalingMod.WarmPoolConfiguration] = js.undefined
+  
+  /**
+    * The current size of the warm pool.
+    */
+  var WarmPoolSize: js.UndefOr[typings.awsSdk.autoscalingMod.WarmPoolSize] = js.undefined
 }
 object AutoScalingGroup {
   
   inline def apply(
     AutoScalingGroupName: XmlStringMaxLen255,
     AvailabilityZones: AvailabilityZones,
-    CreatedTime: TimestampType,
+    CreatedTime: js.Date,
     DefaultCooldown: Cooldown,
     DesiredCapacity: AutoScalingGroupDesiredCapacity,
     HealthCheckType: XmlStringMaxLen32,
@@ -167,23 +197,35 @@ object AutoScalingGroup {
     
     inline def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
-    inline def setAvailabilityZonesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setCapacityRebalance(value: CapacityRebalanceEnabled): Self = StObject.set(x, "CapacityRebalance", value.asInstanceOf[js.Any])
     
     inline def setCapacityRebalanceUndefined: Self = StObject.set(x, "CapacityRebalance", js.undefined)
     
-    inline def setCreatedTime(value: TimestampType): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setContext(value: Context): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+    
+    inline def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
+    
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setDefaultCooldown(value: Cooldown): Self = StObject.set(x, "DefaultCooldown", value.asInstanceOf[js.Any])
     
+    inline def setDefaultInstanceWarmup(value: DefaultInstanceWarmup): Self = StObject.set(x, "DefaultInstanceWarmup", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultInstanceWarmupUndefined: Self = StObject.set(x, "DefaultInstanceWarmup", js.undefined)
+    
     inline def setDesiredCapacity(value: AutoScalingGroupDesiredCapacity): Self = StObject.set(x, "DesiredCapacity", value.asInstanceOf[js.Any])
+    
+    inline def setDesiredCapacityType(value: XmlStringMaxLen255): Self = StObject.set(x, "DesiredCapacityType", value.asInstanceOf[js.Any])
+    
+    inline def setDesiredCapacityTypeUndefined: Self = StObject.set(x, "DesiredCapacityType", js.undefined)
     
     inline def setEnabledMetrics(value: EnabledMetrics): Self = StObject.set(x, "EnabledMetrics", value.asInstanceOf[js.Any])
     
     inline def setEnabledMetricsUndefined: Self = StObject.set(x, "EnabledMetrics", js.undefined)
     
-    inline def setEnabledMetricsVarargs(value: EnabledMetric*): Self = StObject.set(x, "EnabledMetrics", js.Array(value :_*))
+    inline def setEnabledMetricsVarargs(value: EnabledMetric*): Self = StObject.set(x, "EnabledMetrics", js.Array(value*))
     
     inline def setHealthCheckGracePeriod(value: HealthCheckGracePeriod): Self = StObject.set(x, "HealthCheckGracePeriod", value.asInstanceOf[js.Any])
     
@@ -195,7 +237,7 @@ object AutoScalingGroup {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value*))
     
     inline def setLaunchConfigurationName(value: XmlStringMaxLen255): Self = StObject.set(x, "LaunchConfigurationName", value.asInstanceOf[js.Any])
     
@@ -209,7 +251,7 @@ object AutoScalingGroup {
     
     inline def setLoadBalancerNamesUndefined: Self = StObject.set(x, "LoadBalancerNames", js.undefined)
     
-    inline def setLoadBalancerNamesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "LoadBalancerNames", js.Array(value :_*))
+    inline def setLoadBalancerNamesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "LoadBalancerNames", js.Array(value*))
     
     inline def setMaxInstanceLifetime(value: MaxInstanceLifetime): Self = StObject.set(x, "MaxInstanceLifetime", value.asInstanceOf[js.Any])
     
@@ -231,6 +273,10 @@ object AutoScalingGroup {
     
     inline def setPlacementGroupUndefined: Self = StObject.set(x, "PlacementGroup", js.undefined)
     
+    inline def setPredictedCapacity(value: AutoScalingGroupPredictedCapacity): Self = StObject.set(x, "PredictedCapacity", value.asInstanceOf[js.Any])
+    
+    inline def setPredictedCapacityUndefined: Self = StObject.set(x, "PredictedCapacity", js.undefined)
+    
     inline def setServiceLinkedRoleARN(value: ResourceName): Self = StObject.set(x, "ServiceLinkedRoleARN", value.asInstanceOf[js.Any])
     
     inline def setServiceLinkedRoleARNUndefined: Self = StObject.set(x, "ServiceLinkedRoleARN", js.undefined)
@@ -243,28 +289,36 @@ object AutoScalingGroup {
     
     inline def setSuspendedProcessesUndefined: Self = StObject.set(x, "SuspendedProcesses", js.undefined)
     
-    inline def setSuspendedProcessesVarargs(value: SuspendedProcess*): Self = StObject.set(x, "SuspendedProcesses", js.Array(value :_*))
+    inline def setSuspendedProcessesVarargs(value: SuspendedProcess*): Self = StObject.set(x, "SuspendedProcesses", js.Array(value*))
     
     inline def setTags(value: TagDescriptionList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: TagDescription*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagDescription*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTargetGroupARNs(value: TargetGroupARNs): Self = StObject.set(x, "TargetGroupARNs", value.asInstanceOf[js.Any])
     
     inline def setTargetGroupARNsUndefined: Self = StObject.set(x, "TargetGroupARNs", js.undefined)
     
-    inline def setTargetGroupARNsVarargs(value: XmlStringMaxLen511*): Self = StObject.set(x, "TargetGroupARNs", js.Array(value :_*))
+    inline def setTargetGroupARNsVarargs(value: XmlStringMaxLen511*): Self = StObject.set(x, "TargetGroupARNs", js.Array(value*))
     
     inline def setTerminationPolicies(value: TerminationPolicies): Self = StObject.set(x, "TerminationPolicies", value.asInstanceOf[js.Any])
     
     inline def setTerminationPoliciesUndefined: Self = StObject.set(x, "TerminationPolicies", js.undefined)
     
-    inline def setTerminationPoliciesVarargs(value: XmlStringMaxLen1600*): Self = StObject.set(x, "TerminationPolicies", js.Array(value :_*))
+    inline def setTerminationPoliciesVarargs(value: XmlStringMaxLen1600*): Self = StObject.set(x, "TerminationPolicies", js.Array(value*))
     
     inline def setVPCZoneIdentifier(value: XmlStringMaxLen2047): Self = StObject.set(x, "VPCZoneIdentifier", value.asInstanceOf[js.Any])
     
     inline def setVPCZoneIdentifierUndefined: Self = StObject.set(x, "VPCZoneIdentifier", js.undefined)
+    
+    inline def setWarmPoolConfiguration(value: WarmPoolConfiguration): Self = StObject.set(x, "WarmPoolConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setWarmPoolConfigurationUndefined: Self = StObject.set(x, "WarmPoolConfiguration", js.undefined)
+    
+    inline def setWarmPoolSize(value: WarmPoolSize): Self = StObject.set(x, "WarmPoolSize", value.asInstanceOf[js.Any])
+    
+    inline def setWarmPoolSizeUndefined: Self = StObject.set(x, "WarmPoolSize", js.undefined)
   }
 }

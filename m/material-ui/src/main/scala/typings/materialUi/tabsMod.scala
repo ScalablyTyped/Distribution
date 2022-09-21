@@ -11,15 +11,15 @@ object tabsMod {
   
   @JSImport("material-ui/Tabs", JSImport.Default)
   @js.native
-  class default () extends Tabs
+  open class default () extends Tabs
   
   @JSImport("material-ui/Tabs", "Tab")
   @js.native
-  class Tab ()
-    extends Component[TabProps, js.Object, js.Any]
+  open class Tab ()
+    extends Component[TabProps, js.Object, Any]
   
   @JSImport("material-ui/Tabs", "Tabs")
   @js.native
-  class Tabs ()
-    extends Component[TabsProps, js.Object, js.Any]
+  open class Tabs ()
+    extends Component[TabsProps, js.Object, Any]
 }

@@ -12,9 +12,7 @@ trait ICompositeElementLite
     * @param els HTMLElement[]/Ext.dom.CompositeElement Either an Array of DOM elements to add, or another Composite object who's elements should be added.
     * @returns Ext.dom.CompositeElement This Composite object.
     */
-  var add: js.UndefOr[
-    js.Function1[/* els */ js.UndefOr[js.Any], typings.extjs.Ext.dom.ICompositeElement]
-  ] = js.undefined
+  var add: js.UndefOr[js.Function1[/* els */ js.UndefOr[Any], typings.extjs.Ext.dom.ICompositeElement]] = js.undefined
   
   /** [Method] Removes all elements from this Composite
     * @param removeDom Boolean True to also remove the elements from the document.
@@ -25,7 +23,7 @@ trait ICompositeElementLite
     * @param el String/HTMLElement/Ext.Element/Number The id of an element, or an Ext.Element, or an HtmlElement to find within the composite collection.
     * @returns Boolean
     */
-  var contains: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var contains: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Calls the passed function for each element in this composite
     * @param fn Function The function to call.
@@ -34,8 +32,8 @@ trait ICompositeElementLite
     */
   var each: js.UndefOr[
     js.Function2[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       typings.extjs.Ext.dom.ICompositeElement
     ]
   ] = js.undefined
@@ -47,16 +45,14 @@ trait ICompositeElementLite
     * @param els HTMLElement[]/Ext.dom.CompositeElement Either an array of DOM elements, or another Composite from which to fill this Composite.
     * @returns Ext.dom.CompositeElement this
     */
-  var fill: js.UndefOr[
-    js.Function1[/* els */ js.UndefOr[js.Any], typings.extjs.Ext.dom.ICompositeElement]
-  ] = js.undefined
+  var fill: js.UndefOr[js.Function1[/* els */ js.UndefOr[Any], typings.extjs.Ext.dom.ICompositeElement]] = js.undefined
   
   /** [Method] Filters this composite to only elements that match the passed selector
     * @param selector String/Function A string CSS selector or a comparison function. The comparison function will be called with the following arguments:
     * @returns Ext.dom.CompositeElement this
     */
   var filter: js.UndefOr[
-    js.Function1[/* selector */ js.UndefOr[js.Any], typings.extjs.Ext.dom.ICompositeElement]
+    js.Function1[/* selector */ js.UndefOr[Any], typings.extjs.Ext.dom.ICompositeElement]
   ] = js.undefined
   
   /** [Method] Returns the first Element
@@ -73,7 +69,7 @@ trait ICompositeElementLite
     * @param el String/HTMLElement/Ext.Element/Number The id of an element, or an Ext.dom.Element, or an HtmlElement to find within the composite collection.
     * @returns Number The index of the passed Ext.dom.Element in the composite collection, or -1 if not found.
     */
-  var indexOf: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Double]] = js.undefined
+  var indexOf: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], Double]] = js.undefined
   
   /** [Property] (Boolean) */
   var isComposite: js.UndefOr[Boolean] = js.undefined
@@ -96,7 +92,7 @@ trait ICompositeElementLite
     */
   var removeElement: js.UndefOr[
     js.Function2[
-      /* el */ js.UndefOr[js.Any], 
+      /* el */ js.UndefOr[Any], 
       /* removeDom */ js.UndefOr[Boolean], 
       typings.extjs.Ext.dom.ICompositeElement
     ]
@@ -110,8 +106,8 @@ trait ICompositeElementLite
     */
   var replaceElement: js.UndefOr[
     js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* replacement */ js.UndefOr[js.Any], 
+      /* el */ js.UndefOr[Any], 
+      /* replacement */ js.UndefOr[Any], 
       /* domReplace */ js.UndefOr[Boolean], 
       typings.extjs.Ext.dom.ICompositeElement
     ]
@@ -135,7 +131,7 @@ object ICompositeElementLite {
   
   extension [Self <: ICompositeElementLite](x: Self) {
     
-    inline def setAdd(value: /* els */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* els */ js.UndefOr[Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
@@ -143,12 +139,12 @@ object ICompositeElementLite {
     
     inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    inline def setContains(value: /* el */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: /* el */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
     inline def setEach(
-      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ICompositeElement
+      value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => typings.extjs.Ext.dom.ICompositeElement
     ): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
     inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
@@ -157,11 +153,11 @@ object ICompositeElementLite {
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    inline def setFill(value: /* els */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
+    inline def setFill(value: /* els */ js.UndefOr[Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
     
     inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    inline def setFilter(value: /* selector */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: /* selector */ js.UndefOr[Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
@@ -173,7 +169,7 @@ object ICompositeElementLite {
     
     inline def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
     
-    inline def setIndexOf(value: /* el */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+    inline def setIndexOf(value: /* el */ js.UndefOr[Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
     inline def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
     
@@ -190,13 +186,13 @@ object ICompositeElementLite {
     inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
     inline def setRemoveElement(
-      value: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.ICompositeElement
+      value: (/* el */ js.UndefOr[Any], /* removeDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.ICompositeElement
     ): Self = StObject.set(x, "removeElement", js.Any.fromFunction2(value))
     
     inline def setRemoveElementUndefined: Self = StObject.set(x, "removeElement", js.undefined)
     
     inline def setReplaceElement(
-      value: (/* el */ js.UndefOr[js.Any], /* replacement */ js.UndefOr[js.Any], /* domReplace */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.ICompositeElement
+      value: (/* el */ js.UndefOr[Any], /* replacement */ js.UndefOr[Any], /* domReplace */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.ICompositeElement
     ): Self = StObject.set(x, "replaceElement", js.Any.fromFunction3(value))
     
     inline def setReplaceElementUndefined: Self = StObject.set(x, "replaceElement", js.undefined)

@@ -10,14 +10,20 @@ trait OperationMetadataV1 extends StObject {
   /** The Cloud Build ID of the function created or updated by an API call. This field is only populated for Create and Update operations. */
   var buildId: js.UndefOr[String] = js.undefined
   
+  /** The Cloud Build Name of the function deployment. This field is only populated for Create and Update operations. `projects//locations//builds/`. */
+  var buildName: js.UndefOr[String] = js.undefined
+  
   /** The original request that started the operation. */
   var request: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.OperationMetadataV1 & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.OperationMetadataV1 & TopLevel[Any]
   ] = js.undefined
   
-  /** Target of the operation - for example projects/project-1/locations/region-1/functions/function-1 */
+  /** An identifier for Firebase function sources. Disclaimer: This field is only supported for Firebase function deployments. */
+  var sourceToken: js.UndefOr[String] = js.undefined
+  
+  /** Target of the operation - for example `projects/project-1/locations/region-1/functions/function-1` */
   var target: js.UndefOr[String] = js.undefined
   
   /** Type of operation. */
@@ -42,13 +48,21 @@ object OperationMetadataV1 {
     
     inline def setBuildIdUndefined: Self = StObject.set(x, "buildId", js.undefined)
     
+    inline def setBuildName(value: String): Self = StObject.set(x, "buildName", value.asInstanceOf[js.Any])
+    
+    inline def setBuildNameUndefined: Self = StObject.set(x, "buildName", js.undefined)
+    
     inline def setRequest(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.OperationMetadataV1 & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.OperationMetadataV1 & TopLevel[Any]
     ): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    
+    inline def setSourceToken(value: String): Self = StObject.set(x, "sourceToken", value.asInstanceOf[js.Any])
+    
+    inline def setSourceTokenUndefined: Self = StObject.set(x, "sourceToken", js.undefined)
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

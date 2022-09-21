@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(`type`: Any): Unit = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def apply(`type`: Float64Array): Float64ArrayConstructor = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Float64ArrayConstructor]
   inline def apply(`type`: array): ArrayConstructor = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[ArrayConstructor]
   inline def apply(`type`: float32): Float32ArrayConstructor = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[Float32ArrayConstructor]

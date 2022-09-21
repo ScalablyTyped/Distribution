@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.GanttDataSource")
 @js.native
-class GanttDataSource ()
+open class GanttDataSource ()
   extends StObject
      with typings.kendoUi.kendo.data.GanttDataSource

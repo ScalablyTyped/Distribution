@@ -10,11 +10,11 @@ trait MobileBroadbandAccountWatcher
 object MobileBroadbandAccountWatcher {
   
   inline def apply(
-    onaccountadded: js.Any,
-    onaccountremoved: js.Any,
-    onaccountupdated: js.Any,
-    onenumerationcompleted: js.Any,
-    onstopped: js.Any,
+    onaccountadded: Any,
+    onaccountremoved: Any,
+    onaccountupdated: Any,
+    onenumerationcompleted: Any,
+    onstopped: Any,
     start: () => Unit,
     status: MobileBroadbandAccountWatcherStatus,
     stop: () => Unit

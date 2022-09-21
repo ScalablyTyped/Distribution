@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter-js", "Constraint")
 @js.native
-class Constraint () extends StObject {
+open class Constraint () extends StObject {
   
   /**
     * The first possible `Body` that this constraint is attached to.
@@ -34,7 +34,7 @@ class Constraint () extends StObject {
     * A value of `0` means the constraint will apply no damping.
     *
     * @property damping
-    * @type number
+    * @type {number}
     * @default 0
     */
   var damping: Double = js.native
@@ -43,7 +43,7 @@ class Constraint () extends StObject {
     * An integer `Number` uniquely identifying number generated in `Composite.create` by `Common.nextId`.
     *
     * @property id
-    * @type number
+    * @type {number}
     */
   var id: Double = js.native
   
@@ -51,7 +51,7 @@ class Constraint () extends StObject {
     * An arbitrary `String` name to help the user identify and manage bodies.
     *
     * @property label
-    * @type string
+    * @type {string}
     * @default "Constraint"
     */
   var label: String = js.native
@@ -61,7 +61,7 @@ class Constraint () extends StObject {
     * It is calculated automatically in `Constraint.create` from initial positions of the `constraint.bodyA` and `constraint.bodyB`.
     *
     * @property length
-    * @type number
+    * @type {number}
     */
   var length: Double = js.native
   
@@ -87,7 +87,7 @@ class Constraint () extends StObject {
     * An `Object` that defines the rendering properties to be consumed by the module `Matter.Render`.
     *
     * @property render
-    * @type object
+    * @type {any}
     */
   var render: IConstraintRenderDefinition = js.native
   
@@ -97,7 +97,7 @@ class Constraint () extends StObject {
     * A value of `0.2` means the constraint acts like a soft spring.
     *
     * @property stiffness
-    * @type number
+    * @type {number}
     * @default 1
     */
   var stiffness: Double = js.native
@@ -106,7 +106,7 @@ class Constraint () extends StObject {
     * A `String` denoting the type of object.
     *
     * @property type
-    * @type string
+    * @type {string}
     * @default "constraint"
     */
   var `type`: String = js.native
@@ -124,7 +124,23 @@ object Constraint {
     * See the properties section below for detailed information on what you can pass via the `options` object.
     * @method create
     * @param {} options
-    * @return {constraint} constraint
+    * @returns {constraint} constraint
     */
   inline def create(options: IConstraintDefinition): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Constraint]
+  
+  /**
+    * Returns the world-space position of `constraint.pointA`, accounting for `constraint.bodyA`.
+    * @method pointAWorld
+    * @param {constraint} constraint
+    * @returns {Vector} the world-space position
+    */
+  inline def pointAWorld(constraint: Constraint): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("pointAWorld")(constraint.asInstanceOf[js.Any]).asInstanceOf[Vector]
+  
+  /**
+    * Returns the world-space position of `constraint.pointB`, accounting for `constraint.bodyB`.
+    * @method pointBWorld
+    * @param {constraint} constraint
+    * @returns {Vector} the world-space position
+    */
+  inline def pointBWorld(constraint: Constraint): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("pointBWorld")(constraint.asInstanceOf[js.Any]).asInstanceOf[Vector]
 }

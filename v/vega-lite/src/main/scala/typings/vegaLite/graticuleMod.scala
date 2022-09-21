@@ -12,12 +12,12 @@ object graticuleMod {
   
   @JSImport("vega-lite/build/src/compile/data/graticule", "GraticuleNode")
   @js.native
-  class GraticuleNode protected () extends DataFlowNode {
+  open class GraticuleNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, params: GraticuleParams) = this()
     def this(parent: DataFlowNode, params: `true`) = this()
     
     def assemble(): GraticuleTransform = js.native
     
-    /* private */ var params: js.Any = js.native
+    /* private */ var params: Any = js.native
   }
 }

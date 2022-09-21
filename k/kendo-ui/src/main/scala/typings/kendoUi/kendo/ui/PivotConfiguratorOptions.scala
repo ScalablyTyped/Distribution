@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PivotConfiguratorOptions extends StObject {
   
-  var dataSource: js.UndefOr[js.Any | PivotDataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | PivotDataSource] = js.undefined
   
   var filterable: js.UndefOr[Boolean] = js.undefined
   
@@ -28,7 +28,7 @@ object PivotConfiguratorOptions {
   
   extension [Self <: PivotConfiguratorOptions](x: Self) {
     
-    inline def setDataSource(value: js.Any | PivotDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | PivotDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     

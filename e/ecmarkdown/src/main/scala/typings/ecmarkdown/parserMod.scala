@@ -4,8 +4,8 @@ import typings.ecmarkdown.anon.Contents
 import typings.ecmarkdown.anon.ContentsLocation
 import typings.ecmarkdown.anon.Location
 import typings.ecmarkdown.anon.Name
-import typings.ecmarkdown.anon.PickOrderedListNodestartc
-import typings.ecmarkdown.anon.PickPipeNodeoptionalconte
+import typings.ecmarkdown.anon.PickOrderedListNodeconten
+import typings.ecmarkdown.anon.PickPipeNodecontentsnamen
 import typings.ecmarkdown.anon.PickUnorderedListNodecont
 import typings.ecmarkdown.ecmarkdownStrings.ol
 import typings.ecmarkdown.ecmarkdownStrings.ul
@@ -29,7 +29,7 @@ object parserMod {
   
   @JSImport("ecmarkdown/dist/parser", "Parser")
   @js.native
-  class Parser protected () extends StObject {
+  open class Parser protected () extends StObject {
     def this(tokenizer: Tokenizer) = this()
     
     var _posStack: js.Array[Position] = js.native
@@ -50,12 +50,12 @@ object parserMod {
     
     def parseAlgorithm(): Contents = js.native
     
-    def parseFormat(format: Format, opts: ParseFragmentOpts): js.Array[CommentNode | ContentsLocation | PickPipeNodeoptionalconte | TagNode | TextNode] = js.native
+    def parseFormat(format: Format, opts: ParseFragmentOpts): js.Array[CommentNode | ContentsLocation | PickPipeNodecontentsnamen | TagNode | TextNode] = js.native
     
     def parseFragment(opts: ParseFragmentOpts): js.Array[FragmentNode] = js.native
     def parseFragment(opts: ParseFragmentOpts, closingFormatKind: Format): js.Array[TextNode | CommentNode | TagNode] = js.native
     
-    def parseList(): PickOrderedListNodestartc | PickUnorderedListNodecont = js.native
+    def parseList(): PickOrderedListNodeconten | PickUnorderedListNodecont = js.native
     
     @JSName("parseListItem")
     def parseListItem_ol(kind: ol, indent: Double): OrderedListItemNode = js.native

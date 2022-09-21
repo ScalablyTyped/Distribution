@@ -18,27 +18,27 @@ object TimeZoneSettings {
   /* static member */
   @JSGlobal("Windows.System.TimeZoneSettings.canChangeTimeZone")
   @js.native
-  def canChangeTimeZone: js.Any = js.native
-  inline def canChangeTimeZone_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canChangeTimeZone")(x.asInstanceOf[js.Any])
+  def canChangeTimeZone: Any = js.native
+  inline def canChangeTimeZone_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canChangeTimeZone")(x.asInstanceOf[js.Any])
   
   /* unmapped type */
   /* static member */
   @JSGlobal("Windows.System.TimeZoneSettings.changeTimeZoneByDisplayName")
   @js.native
-  def changeTimeZoneByDisplayName: js.Any = js.native
-  inline def changeTimeZoneByDisplayName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("changeTimeZoneByDisplayName")(x.asInstanceOf[js.Any])
+  def changeTimeZoneByDisplayName: Any = js.native
+  inline def changeTimeZoneByDisplayName_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("changeTimeZoneByDisplayName")(x.asInstanceOf[js.Any])
   
   /* unmapped type */
   /* static member */
   @JSGlobal("Windows.System.TimeZoneSettings.currentTimeZoneDisplayName")
   @js.native
-  def currentTimeZoneDisplayName: js.Any = js.native
-  inline def currentTimeZoneDisplayName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentTimeZoneDisplayName")(x.asInstanceOf[js.Any])
+  def currentTimeZoneDisplayName: Any = js.native
+  inline def currentTimeZoneDisplayName_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentTimeZoneDisplayName")(x.asInstanceOf[js.Any])
   
   /* unmapped type */
   /* static member */
   @JSGlobal("Windows.System.TimeZoneSettings.supportedTimeZoneDisplayNames")
   @js.native
-  def supportedTimeZoneDisplayNames: js.Any = js.native
-  inline def supportedTimeZoneDisplayNames_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedTimeZoneDisplayNames")(x.asInstanceOf[js.Any])
+  def supportedTimeZoneDisplayNames: Any = js.native
+  inline def supportedTimeZoneDisplayNames_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedTimeZoneDisplayNames")(x.asInstanceOf[js.Any])
 }

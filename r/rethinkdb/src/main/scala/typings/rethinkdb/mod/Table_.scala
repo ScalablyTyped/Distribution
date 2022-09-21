@@ -111,18 +111,18 @@ trait Table_
     * See [getAll](https://www.rethinkdb.com/api/javascript/get_all/) and
     * [compound indexes](https://www.rethinkdb.com/docs/secondary-indexes/javascript/#compound-indexes)
     */
-  def getAll(key: Expression[js.Any]): Sequence = js.native
+  def getAll(key: Expression[Any]): Sequence = js.native
   /**
     * Get all documents matching a key on a compound index; index must be provided.
     * See [getAll](https://www.rethinkdb.com/api/javascript/get_all/) and
     * [compound indexes](https://www.rethinkdb.com/docs/secondary-indexes/javascript/#compound-indexes)
     */
-  def getAll(key: Expression[js.Any | js.Array[js.Any]], index: Index): Sequence = js.native
+  def getAll(key: Expression[Any | js.Array[Any]], index: Index): Sequence = js.native
   
   def getIntersecting(geometry: Geometry, index: Index): Sequence = js.native
   
   def indexCreate(name: String): Operation[CreateResult] = js.native
-  def indexCreate(name: String, index: IndexFunction[js.Any]): Operation[CreateResult] = js.native
+  def indexCreate(name: String, index: IndexFunction[Any]): Operation[CreateResult] = js.native
   
   def indexDrop(name: String): Operation[DropResult] = js.native
   
@@ -131,10 +131,10 @@ trait Table_
   def indexWait(): Operation[js.Array[Function]] = js.native
   def indexWait(name: String): Operation[js.Array[Function]] = js.native
   
-  def insert(obj: js.Any): Operation[WriteResult] = js.native
-  def insert(obj: js.Any, options: InsertOptions): Operation[WriteResult] = js.native
-  def insert(obj: js.Array[js.Any]): Operation[WriteResult] = js.native
-  def insert(obj: js.Array[js.Any], options: InsertOptions): Operation[WriteResult] = js.native
+  def insert(obj: js.Array[Any]): Operation[WriteResult] = js.native
+  def insert(obj: js.Array[Any], options: InsertOptions): Operation[WriteResult] = js.native
+  def insert(obj: Any): Operation[WriteResult] = js.native
+  def insert(obj: Any, options: InsertOptions): Operation[WriteResult] = js.native
   
   def wait(WaitOptions: WaitOptions): Operation[WaitResult] = js.native
 }

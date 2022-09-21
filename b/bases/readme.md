@@ -10,10 +10,10 @@ Utility for converting numbers to/from different bases/alphabets.
 | ------------------ | :-------------: |
 | Full name          | bases |
 | Keywords           | alphabet, base, base-36, base-58, base-62 |
-| # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 349694 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 20845.666666666668 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/aseemk/bases.js)

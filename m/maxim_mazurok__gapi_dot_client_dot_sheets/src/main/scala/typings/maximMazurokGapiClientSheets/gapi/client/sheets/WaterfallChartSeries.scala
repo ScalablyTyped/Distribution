@@ -12,6 +12,9 @@ trait WaterfallChartSeries extends StObject {
   /** The data being visualized in this series. */
   var data: js.UndefOr[ChartData] = js.undefined
   
+  /** Information about the data labels for this series. */
+  var dataLabel: js.UndefOr[DataLabel] = js.undefined
+  
   /**
     * True to hide the subtotal column from the end of the series. By default, a subtotal column will appear at the end of each series. Setting this field to true will hide that subtotal
     * column for this series.
@@ -40,9 +43,13 @@ object WaterfallChartSeries {
     
     inline def setCustomSubtotalsUndefined: Self = StObject.set(x, "customSubtotals", js.undefined)
     
-    inline def setCustomSubtotalsVarargs(value: WaterfallChartCustomSubtotal*): Self = StObject.set(x, "customSubtotals", js.Array(value :_*))
+    inline def setCustomSubtotalsVarargs(value: WaterfallChartCustomSubtotal*): Self = StObject.set(x, "customSubtotals", js.Array(value*))
     
     inline def setData(value: ChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataLabel(value: DataLabel): Self = StObject.set(x, "dataLabel", value.asInstanceOf[js.Any])
+    
+    inline def setDataLabelUndefined: Self = StObject.set(x, "dataLabel", js.undefined)
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@reach/router", "Redirect")
 @js.native
-class Redirect[TState] protected ()
-  extends Component[RouteComponentProps[RedirectProps[TState]], js.Object, js.Any] {
+open class Redirect[TState] protected ()
+  extends Component[RouteComponentProps[RedirectProps[TState]], js.Object, Any] {
   def this(props: RouteComponentProps[RedirectProps[TState]]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: RouteComponentProps[RedirectProps[TState]], context: js.Any) = this()
+  def this(props: RouteComponentProps[RedirectProps[TState]], context: Any) = this()
 }

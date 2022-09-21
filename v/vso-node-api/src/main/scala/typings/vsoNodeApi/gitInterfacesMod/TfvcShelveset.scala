@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,11 +20,11 @@ trait TfvcShelveset
 object TfvcShelveset {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     changes: js.Array[TfvcChange],
     comment: String,
     commentTruncated: Boolean,
-    createdDate: Date,
+    createdDate: js.Date,
     id: String,
     name: String,
     notes: js.Array[CheckinNote],
@@ -42,16 +41,16 @@ object TfvcShelveset {
     
     inline def setChanges(value: js.Array[TfvcChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    inline def setChangesVarargs(value: TfvcChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: TfvcChange*): Self = StObject.set(x, "changes", js.Array(value*))
     
     inline def setNotes(value: js.Array[CheckinNote]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    inline def setNotesVarargs(value: CheckinNote*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: CheckinNote*): Self = StObject.set(x, "notes", js.Array(value*))
     
     inline def setPolicyOverride(value: TfvcPolicyOverrideInfo): Self = StObject.set(x, "policyOverride", value.asInstanceOf[js.Any])
     
     inline def setWorkItems(value: js.Array[AssociatedWorkItem]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemsVarargs(value: AssociatedWorkItem*): Self = StObject.set(x, "workItems", js.Array(value :_*))
+    inline def setWorkItemsVarargs(value: AssociatedWorkItem*): Self = StObject.set(x, "workItems", js.Array(value*))
   }
 }

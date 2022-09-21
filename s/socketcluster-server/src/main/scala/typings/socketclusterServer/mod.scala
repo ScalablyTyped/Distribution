@@ -1,7 +1,12 @@
 package typings.socketclusterServer
 
+import org.scalablytyped.runtime.Instantiable1
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.socketclusterServer.serverMod.AGServerOptions
+import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,25 +19,42 @@ object mod {
   
   @JSImport("socketcluster-server", "AGServer")
   @js.native
-  class AGServer ()
+  open class AGServer ()
     extends typings.socketclusterServer.serverMod.^ {
     def this(options: AGServerOptions) = this()
   }
   
   @JSImport("socketcluster-server", "AGServerSocket")
   @js.native
-  class AGServerSocket protected ()
+  open class AGServerSocket protected ()
     extends typings.socketclusterServer.serversocketMod.^ {
     def this(
       id: String,
       server: typings.socketclusterServer.serverMod.^,
-      socket: typings.ws.mod.^,
+      socket: WebSocket,
       protocolVersion: Double
     ) = this()
   }
   
-  inline def attach(server: Server): AGServer = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(server.asInstanceOf[js.Any]).asInstanceOf[AGServer]
-  inline def attach(server: Server, options: AGServerOptions): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  inline def attach(
+    server: Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ]
+  ): AGServer = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(server.asInstanceOf[js.Any]).asInstanceOf[AGServer]
+  inline def attach(
+    server: Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ],
+    options: AGServerOptions
+  ): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AGServer]
   
   inline def listen(): AGServer = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")().asInstanceOf[AGServer]
   inline def listen(port: Double): AGServer = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any]).asInstanceOf[AGServer]

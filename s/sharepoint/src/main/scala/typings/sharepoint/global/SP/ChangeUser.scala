@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ChangeUser")
 @js.native
-class ChangeUser ()
+open class ChangeUser ()
   extends StObject
      with typings.sharepoint.SP.ChangeUser

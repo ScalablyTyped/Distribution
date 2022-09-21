@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object channelMod {
   
-  @JSImport("@storybook/api/dist/modules/channel", "init")
+  @JSImport("@storybook/api/dist/ts3.9/modules/channel", "init")
   @js.native
   val init: ModuleFn = js.native
   
@@ -17,7 +17,7 @@ object channelMod {
     
     def collapseAll(): Unit
     
-    def emit(`type`: String, args: js.Any*): Unit
+    def emit(`type`: String, args: Any*): Unit
     
     def expandAll(): Unit
     
@@ -33,7 +33,7 @@ object channelMod {
     
     inline def apply(
       collapseAll: () => Unit,
-      emit: (String, /* repeated */ js.Any) => Unit,
+      emit: (String, /* repeated */ Any) => Unit,
       expandAll: () => Unit,
       getChannel: () => Channel,
       off: (String, Listener) => Unit,
@@ -48,7 +48,7 @@ object channelMod {
       
       inline def setCollapseAll(value: () => Unit): Self = StObject.set(x, "collapseAll", js.Any.fromFunction0(value))
       
-      inline def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
       inline def setExpandAll(value: () => Unit): Self = StObject.set(x, "expandAll", js.Any.fromFunction0(value))
       

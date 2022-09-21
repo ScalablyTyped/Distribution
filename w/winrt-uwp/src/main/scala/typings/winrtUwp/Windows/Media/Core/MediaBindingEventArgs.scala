@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MediaBindingEventArgs extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_canceled(`type`: canceled, listener: TypedEventHandler[MediaBindingEventArgs, js.Any]): Unit = js.native
+  def addEventListener_canceled(`type`: canceled, listener: TypedEventHandler[MediaBindingEventArgs, Any]): Unit = js.native
   
   /**
     * Informs the system that the app might continue to perform work after the Binding event handler returns.
@@ -29,14 +29,14 @@ trait MediaBindingEventArgs extends StObject {
   var mediaBinder: MediaBinder = js.native
   
   /** Occurs when the binding operation is cancelled. */
-  def oncanceled(ev: js.Any & WinRTEvent[MediaBindingEventArgs]): Unit = js.native
+  def oncanceled(ev: Any & WinRTEvent[MediaBindingEventArgs]): Unit = js.native
   /** Occurs when the binding operation is cancelled. */
   @JSName("oncanceled")
-  var oncanceled_Original: TypedEventHandler[MediaBindingEventArgs, js.Any] = js.native
+  var oncanceled_Original: TypedEventHandler[MediaBindingEventArgs, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_canceled(`type`: canceled, listener: TypedEventHandler[MediaBindingEventArgs, js.Any]): Unit = js.native
+  def removeEventListener_canceled(`type`: canceled, listener: TypedEventHandler[MediaBindingEventArgs, Any]): Unit = js.native
   
   /**
     * Sets the media content to be bound to the MediaSource .

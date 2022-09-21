@@ -1,14 +1,14 @@
 package typings.bitcoinjsLib
 
 import typings.bitcoinjsLib.networksMod.Network
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paymentsMod {
   
-  @JSImport("bitcoinjs-lib/types/payments", JSImport.Namespace)
+  @JSImport("bitcoinjs-lib/src/payments", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -82,7 +82,7 @@ object paymentsMod {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: Buffer*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Buffer*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHash(value: Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -120,7 +120,7 @@ object paymentsMod {
       
       inline def setPubkeysUndefined: Self = StObject.set(x, "pubkeys", js.undefined)
       
-      inline def setPubkeysVarargs(value: Buffer*): Self = StObject.set(x, "pubkeys", js.Array(value :_*))
+      inline def setPubkeysVarargs(value: Buffer*): Self = StObject.set(x, "pubkeys", js.Array(value*))
       
       inline def setRedeem(value: Payment): Self = StObject.set(x, "redeem", value.asInstanceOf[js.Any])
       
@@ -134,13 +134,13 @@ object paymentsMod {
       
       inline def setSignaturesUndefined: Self = StObject.set(x, "signatures", js.undefined)
       
-      inline def setSignaturesVarargs(value: Buffer*): Self = StObject.set(x, "signatures", js.Array(value :_*))
+      inline def setSignaturesVarargs(value: Buffer*): Self = StObject.set(x, "signatures", js.Array(value*))
       
       inline def setWitness(value: js.Array[Buffer]): Self = StObject.set(x, "witness", value.asInstanceOf[js.Any])
       
       inline def setWitnessUndefined: Self = StObject.set(x, "witness", js.undefined)
       
-      inline def setWitnessVarargs(value: Buffer*): Self = StObject.set(x, "witness", js.Array(value :_*))
+      inline def setWitnessVarargs(value: Buffer*): Self = StObject.set(x, "witness", js.Array(value*))
     }
   }
   

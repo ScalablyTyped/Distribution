@@ -17,54 +17,54 @@ object panelBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Panel/Panel.base", "PanelBase")
   @js.native
-  class PanelBase protected ()
-    extends Component[IPanelProps, IPanelState, js.Any]
+  open class PanelBase protected ()
+    extends Component[IPanelProps, IPanelState, Any]
        with IPanel {
     def this(props: IPanelProps) = this()
     
-    /* private */ var _allowScrollOnPanel: js.Any = js.native
+    /* private */ var _allowScrollOnPanel: Any = js.native
     
-    /* private */ var _allowTouchBodyScroll: js.Any = js.native
+    /* private */ var _allowTouchBodyScroll: Any = js.native
     
-    /* private */ var _animateTo: js.Any = js.native
+    /* private */ var _animateTo: Any = js.native
     
-    /* private */ var _animationCallback: js.Any = js.native
+    /* private */ var _animationCallback: Any = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _clearExistingAnimationTimer: js.Any = js.native
+    /* private */ var _clearExistingAnimationTimer: Any = js.native
     
-    /* private */ var _dismissOnOuterClick: js.Any = js.native
+    /* private */ var _dismissOnOuterClick: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
-    /* private */ var _hasCustomNavigation: js.Any = js.native
+    /* private */ var _hasCustomNavigation: Any = js.native
     
-    /* private */ var _headerTextId: js.Any = js.native
+    /* private */ var _headerTextId: Any = js.native
     
-    /* private */ var _onPanelClick: js.Any = js.native
+    /* private */ var _onPanelClick: Any = js.native
     
-    /* private */ var _onRenderBody: js.Any = js.native
+    /* private */ var _onRenderBody: Any = js.native
     
-    /* private */ var _onRenderFooter: js.Any = js.native
+    /* private */ var _onRenderFooter: Any = js.native
     
-    /* private */ var _onRenderHeader: js.Any = js.native
+    /* private */ var _onRenderHeader: Any = js.native
     
-    /* private */ var _onRenderNavigation: js.Any = js.native
+    /* private */ var _onRenderNavigation: Any = js.native
     
-    /* private */ var _onRenderNavigationContent: js.Any = js.native
+    /* private */ var _onRenderNavigationContent: Any = js.native
     
-    /* private */ var _onTransitionComplete: js.Any = js.native
+    /* private */ var _onTransitionComplete: Any = js.native
     
-    /* private */ var _panel: js.Any = js.native
+    /* private */ var _panel: Any = js.native
     
-    /* private */ var _scrollableContent: js.Any = js.native
+    /* private */ var _scrollableContent: Any = js.native
     
-    /* private */ var _shouldListenForOuterClick: js.Any = js.native
+    /* private */ var _shouldListenForOuterClick: Any = js.native
     
-    /* private */ var _updateFooterPosition: js.Any = js.native
+    /* private */ var _updateFooterPosition: Any = js.native
     
     def close(): Unit = js.native
     

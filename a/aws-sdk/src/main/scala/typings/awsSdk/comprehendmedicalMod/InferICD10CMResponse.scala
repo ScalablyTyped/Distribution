@@ -32,7 +32,7 @@ object InferICD10CMResponse {
     
     inline def setEntities(value: ICD10CMEntityList): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     
-    inline def setEntitiesVarargs(value: ICD10CMEntity*): Self = StObject.set(x, "Entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: ICD10CMEntity*): Self = StObject.set(x, "Entities", js.Array(value*))
     
     inline def setModelVersion(value: String): Self = StObject.set(x, "ModelVersion", value.asInstanceOf[js.Any])
     

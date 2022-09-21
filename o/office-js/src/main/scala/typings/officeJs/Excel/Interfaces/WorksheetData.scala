@@ -12,189 +12,197 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorksheetData extends StObject {
   
   /**
+    * Represents the `AutoFilter` object of the worksheet.
     *
-    * Represents the AutoFilter object of the worksheet.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var autoFilter: js.UndefOr[AutoFilterData] = js.undefined
   
   /**
-    *
     * Returns a collection of charts that are part of the worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var charts: js.UndefOr[js.Array[ChartData]] = js.undefined
   
   /**
-    *
     * Returns a collection of all the Comments objects on the worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var comments: js.UndefOr[js.Array[CommentData]] = js.undefined
   
   /**
-    *
     * Gets a collection of worksheet-level custom properties.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var customProperties: js.UndefOr[js.Array[WorksheetCustomPropertyData]] = js.undefined
   
   /**
-    *
     * Determines if Excel should recalculate the worksheet when necessary.
-    True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
+    True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var enableCalculation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var horizontalPageBreaks: js.UndefOr[js.Array[PageBreakData]] = js.undefined
   
   /**
-    *
     * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The display name of the worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Collection of names scoped to the current worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   var names: js.UndefOr[js.Array[NamedItemData]] = js.undefined
   
   /**
+    * Gets the `PageLayout` object of the worksheet.
     *
-    * Gets the PageLayout object of the worksheet.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var pageLayout: js.UndefOr[PageLayoutData] = js.undefined
   
   /**
-    *
     * Collection of PivotTables that are part of the worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var pivotTables: js.UndefOr[js.Array[PivotTableData]] = js.undefined
   
   /**
-    *
     * The zero-based position of the worksheet within the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var position: js.UndefOr[Double] = js.undefined
   
   /**
+    * Returns the sheet protection object for a worksheet.
     *
-    * Returns sheet protection object for a worksheet.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var protection: js.UndefOr[WorksheetProtectionData] = js.undefined
   
   /**
-    *
     * Returns the collection of all the Shape objects on the worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var shapes: js.UndefOr[js.Array[ShapeData]] = js.undefined
   
   /**
-    *
     * Specifies if gridlines are visible to the user.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showGridlines: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if headings are visible to the user.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showHeadings: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Returns a collection of slicers that are part of the worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var slicers: js.UndefOr[js.Array[SlicerData]] = js.undefined
   
   /**
-    *
     * Returns the standard (default) height of all the rows in the worksheet, in points.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var standardHeight: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies the standard (default) width of all the columns in the worksheet.
     One unit of column width is equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is used.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var standardWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * The tab color of the worksheet.
-    When retrieving the tab color, if the worksheet is invisible, the value will be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise, the property will be set to a color, in the form "#123456"
+    When retrieving the tab color, if the worksheet is invisible, the value will be `null`. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise, the property will be set to a color, in the form #RRGGBB (e.g., "FFA500").
     When setting the color, use an empty-string to set an "auto" color, or a real color otherwise.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var tabColor: js.UndefOr[String] = js.undefined
   
   /**
+    * Returns a value representing this worksheet that can be read by Open Office XML. This is an integer value, which is different from `worksheet.id` (which returns a globally unique identifier) and `worksheet.name` (which returns a value such as "Sheet1").
     *
+    * @remarks
+    * [Api set: ExcelApi 1.14]
+    */
+  var tabId: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Collection of tables that are part of the worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var tables: js.UndefOr[js.Array[TableData]] = js.undefined
   
   /**
-    *
     * Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var verticalPageBreaks: js.UndefOr[js.Array[PageBreakData]] = js.undefined
   
   /**
+    * The visibility of the worksheet.
     *
-    * The Visibility of the worksheet.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
     */
   var visibility: js.UndefOr[SheetVisibility | Visible | Hidden | VeryHidden] = js.undefined
@@ -216,19 +224,19 @@ object WorksheetData {
     
     inline def setChartsUndefined: Self = StObject.set(x, "charts", js.undefined)
     
-    inline def setChartsVarargs(value: ChartData*): Self = StObject.set(x, "charts", js.Array(value :_*))
+    inline def setChartsVarargs(value: ChartData*): Self = StObject.set(x, "charts", js.Array(value*))
     
     inline def setComments(value: js.Array[CommentData]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    inline def setCommentsVarargs(value: CommentData*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: CommentData*): Self = StObject.set(x, "comments", js.Array(value*))
     
     inline def setCustomProperties(value: js.Array[WorksheetCustomPropertyData]): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
     
     inline def setCustomPropertiesUndefined: Self = StObject.set(x, "customProperties", js.undefined)
     
-    inline def setCustomPropertiesVarargs(value: WorksheetCustomPropertyData*): Self = StObject.set(x, "customProperties", js.Array(value :_*))
+    inline def setCustomPropertiesVarargs(value: WorksheetCustomPropertyData*): Self = StObject.set(x, "customProperties", js.Array(value*))
     
     inline def setEnableCalculation(value: Boolean): Self = StObject.set(x, "enableCalculation", value.asInstanceOf[js.Any])
     
@@ -238,7 +246,7 @@ object WorksheetData {
     
     inline def setHorizontalPageBreaksUndefined: Self = StObject.set(x, "horizontalPageBreaks", js.undefined)
     
-    inline def setHorizontalPageBreaksVarargs(value: PageBreakData*): Self = StObject.set(x, "horizontalPageBreaks", js.Array(value :_*))
+    inline def setHorizontalPageBreaksVarargs(value: PageBreakData*): Self = StObject.set(x, "horizontalPageBreaks", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -252,7 +260,7 @@ object WorksheetData {
     
     inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    inline def setNamesVarargs(value: NamedItemData*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: NamedItemData*): Self = StObject.set(x, "names", js.Array(value*))
     
     inline def setPageLayout(value: PageLayoutData): Self = StObject.set(x, "pageLayout", value.asInstanceOf[js.Any])
     
@@ -262,7 +270,7 @@ object WorksheetData {
     
     inline def setPivotTablesUndefined: Self = StObject.set(x, "pivotTables", js.undefined)
     
-    inline def setPivotTablesVarargs(value: PivotTableData*): Self = StObject.set(x, "pivotTables", js.Array(value :_*))
+    inline def setPivotTablesVarargs(value: PivotTableData*): Self = StObject.set(x, "pivotTables", js.Array(value*))
     
     inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
@@ -276,7 +284,7 @@ object WorksheetData {
     
     inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    inline def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value*))
     
     inline def setShowGridlines(value: Boolean): Self = StObject.set(x, "showGridlines", value.asInstanceOf[js.Any])
     
@@ -290,7 +298,7 @@ object WorksheetData {
     
     inline def setSlicersUndefined: Self = StObject.set(x, "slicers", js.undefined)
     
-    inline def setSlicersVarargs(value: SlicerData*): Self = StObject.set(x, "slicers", js.Array(value :_*))
+    inline def setSlicersVarargs(value: SlicerData*): Self = StObject.set(x, "slicers", js.Array(value*))
     
     inline def setStandardHeight(value: Double): Self = StObject.set(x, "standardHeight", value.asInstanceOf[js.Any])
     
@@ -304,17 +312,21 @@ object WorksheetData {
     
     inline def setTabColorUndefined: Self = StObject.set(x, "tabColor", js.undefined)
     
+    inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+    
+    inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+    
     inline def setTables(value: js.Array[TableData]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
     inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
-    inline def setTablesVarargs(value: TableData*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: TableData*): Self = StObject.set(x, "tables", js.Array(value*))
     
     inline def setVerticalPageBreaks(value: js.Array[PageBreakData]): Self = StObject.set(x, "verticalPageBreaks", value.asInstanceOf[js.Any])
     
     inline def setVerticalPageBreaksUndefined: Self = StObject.set(x, "verticalPageBreaks", js.undefined)
     
-    inline def setVerticalPageBreaksVarargs(value: PageBreakData*): Self = StObject.set(x, "verticalPageBreaks", js.Array(value :_*))
+    inline def setVerticalPageBreaksVarargs(value: PageBreakData*): Self = StObject.set(x, "verticalPageBreaks", js.Array(value*))
     
     inline def setVisibility(value: SheetVisibility | Visible | Hidden | VeryHidden): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     

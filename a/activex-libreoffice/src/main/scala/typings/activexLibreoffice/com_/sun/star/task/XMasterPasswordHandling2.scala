@@ -31,7 +31,7 @@ object XMasterPasswordHandling2 {
     hasMasterPassword: () => Boolean,
     isDefaultMasterPasswordUsed: () => Boolean,
     isPersistentStoringAllowed: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeMasterPassword: () => Unit,
     useDefaultMasterPassword: XInteractionHandler => Boolean

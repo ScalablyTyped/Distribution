@@ -27,10 +27,10 @@ object AgentFilter {
     
     inline def setAgentHealthCodes(value: AgentHealthCodeList): Self = StObject.set(x, "agentHealthCodes", value.asInstanceOf[js.Any])
     
-    inline def setAgentHealthCodesVarargs(value: AgentHealthCode*): Self = StObject.set(x, "agentHealthCodes", js.Array(value :_*))
+    inline def setAgentHealthCodesVarargs(value: AgentHealthCode*): Self = StObject.set(x, "agentHealthCodes", js.Array(value*))
     
     inline def setAgentHealths(value: AgentHealthList): Self = StObject.set(x, "agentHealths", value.asInstanceOf[js.Any])
     
-    inline def setAgentHealthsVarargs(value: AgentHealth*): Self = StObject.set(x, "agentHealths", js.Array(value :_*))
+    inline def setAgentHealthsVarargs(value: AgentHealth*): Self = StObject.set(x, "agentHealths", js.Array(value*))
   }
 }

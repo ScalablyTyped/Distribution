@@ -1,5 +1,6 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,21 +14,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.BETWEEN
   - java.lang.String
 */
-type OperatorType = typings.awsSdk.datapipelineMod._OperatorType | java.lang.String
+type OperatorType = _OperatorType | String
 
-type ParameterAttributeList = js.Array[typings.awsSdk.datapipelineMod.ParameterAttribute]
+type ParameterAttributeList = js.Array[ParameterAttribute]
 
-type ParameterObjectList = js.Array[typings.awsSdk.datapipelineMod.ParameterObject]
+type ParameterObjectList = js.Array[ParameterObject]
 
-type ParameterValueList = js.Array[typings.awsSdk.datapipelineMod.ParameterValue]
+type ParameterValueList = js.Array[ParameterValue]
 
-type PipelineDescriptionList = js.Array[typings.awsSdk.datapipelineMod.PipelineDescription]
+type PipelineDescriptionList = js.Array[PipelineDescription]
 
-type PipelineObjectList = js.Array[typings.awsSdk.datapipelineMod.PipelineObject]
+type PipelineObjectList = js.Array[PipelineObject]
 
-type PipelineObjectMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.datapipelineMod.PipelineObject]
+type PipelineObjectMap = StringDictionary[PipelineObject]
 
-type SelectorList = js.Array[typings.awsSdk.datapipelineMod.Selector]
+type SelectorList = js.Array[Selector]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FINISHED
@@ -35,55 +36,55 @@ type SelectorList = js.Array[typings.awsSdk.datapipelineMod.Selector]
   - typings.awsSdk.awsSdkStrings.FALSE
   - java.lang.String
 */
-type TaskStatus = typings.awsSdk.datapipelineMod._TaskStatus | java.lang.String
+type TaskStatus = _TaskStatus | String
 
-type ValidationErrors = js.Array[typings.awsSdk.datapipelineMod.ValidationError]
+type ValidationErrors = js.Array[ValidationError]
 
-type ValidationWarnings = js.Array[typings.awsSdk.datapipelineMod.ValidationWarning]
+type ValidationWarnings = js.Array[ValidationWarning]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2012-10-29`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.datapipelineMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type attributeNameString = java.lang.String
+type attributeNameString = String
 
-type attributeValueString = java.lang.String
+type attributeValueString = String
 
-type cancelActive = scala.Boolean
+type cancelActive = Boolean
 
-type errorMessage = java.lang.String
+type errorMessage = String
 
-type fieldList = js.Array[typings.awsSdk.datapipelineMod.Field]
+type fieldList = js.Array[Field]
 
-type fieldNameString = java.lang.String
+type fieldNameString = String
 
-type fieldStringValue = java.lang.String
+type fieldStringValue = String
 
-type id = java.lang.String
+type id = String
 
-type idList = js.Array[typings.awsSdk.datapipelineMod.id]
+type idList = js.Array[id]
 
-type int = scala.Double
+type int = Double
 
-type longString = java.lang.String
+type longString = String
 
-type pipelineList = js.Array[typings.awsSdk.datapipelineMod.PipelineIdName]
+type pipelineList = js.Array[PipelineIdName]
 
-type stringList = js.Array[java.lang.String]
+type stringList = js.Array[String]
 
-type tagKey = java.lang.String
+type tagKey = String
 
-type tagList = js.Array[typings.awsSdk.datapipelineMod.Tag]
+type tagList = js.Array[Tag]
 
-type tagValue = java.lang.String
+type tagValue = String
 
-type taskId = java.lang.String
+type taskId = String
 
-type timestamp = typings.std.Date
+type timestamp = js.Date
 
-type validationMessage = java.lang.String
+type validationMessage = String
 
-type validationMessages = js.Array[typings.awsSdk.datapipelineMod.validationMessage]
+type validationMessages = js.Array[validationMessage]

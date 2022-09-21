@@ -6,39 +6,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MutationObserverInit extends StObject {
   
-  /**
-    * Set to a list of attribute local names (without namespace) if not all attribute mutations need to be observed and attributes is true or omitted.
-    */
+  /** Set to a list of attribute local names (without namespace) if not all attribute mutations need to be observed and attributes is true or omitted. */
+  /* standard dom */
   var attributeFilter: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
-  /**
-    * Set to true if attributes is true or omitted and target's attribute value before the mutation needs to be recorded.
-    */
+  /** Set to true if attributes is true or omitted and target's attribute value before the mutation needs to be recorded. */
+  /* standard dom */
   var attributeOldValue: js.UndefOr[scala.Boolean] = js.undefined
   
-  /**
-    * Set to true if mutations to target's attributes are to be observed. Can be omitted if attributeOldValue or attributeFilter is specified.
-    */
+  /** Set to true if mutations to target's attributes are to be observed. Can be omitted if attributeOldValue or attributeFilter is specified. */
+  /* standard dom */
   var attributes: js.UndefOr[scala.Boolean] = js.undefined
   
-  /**
-    * Set to true if mutations to target's data are to be observed. Can be omitted if characterDataOldValue is specified.
-    */
+  /** Set to true if mutations to target's data are to be observed. Can be omitted if characterDataOldValue is specified. */
+  /* standard dom */
   var characterData: js.UndefOr[scala.Boolean] = js.undefined
   
-  /**
-    * Set to true if characterData is set to true or omitted and target's data before the mutation needs to be recorded.
-    */
+  /** Set to true if characterData is set to true or omitted and target's data before the mutation needs to be recorded. */
+  /* standard dom */
   var characterDataOldValue: js.UndefOr[scala.Boolean] = js.undefined
   
-  /**
-    * Set to true if mutations to target's children are to be observed.
-    */
+  /** Set to true if mutations to target's children are to be observed. */
+  /* standard dom */
   var childList: js.UndefOr[scala.Boolean] = js.undefined
   
-  /**
-    * Set to true if mutations to not just target, but also target's descendants are to be observed.
-    */
+  /** Set to true if mutations to not just target, but also target's descendants are to be observed. */
+  /* standard dom */
   var subtree: js.UndefOr[scala.Boolean] = js.undefined
 }
 object MutationObserverInit {
@@ -54,7 +47,7 @@ object MutationObserverInit {
     
     inline def setAttributeFilterUndefined: Self = StObject.set(x, "attributeFilter", js.undefined)
     
-    inline def setAttributeFilterVarargs(value: java.lang.String*): Self = StObject.set(x, "attributeFilter", js.Array(value :_*))
+    inline def setAttributeFilterVarargs(value: java.lang.String*): Self = StObject.set(x, "attributeFilter", js.Array(value*))
     
     inline def setAttributeOldValue(value: scala.Boolean): Self = StObject.set(x, "attributeOldValue", value.asInstanceOf[js.Any])
     

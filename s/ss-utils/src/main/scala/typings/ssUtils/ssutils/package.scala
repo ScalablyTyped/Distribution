@@ -5,12 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ApplyErrorsOptions = typings.ssUtils.ssutils.ValidationOptional
+type ApplyErrorsOptions = ValidationOptional
 
-type SSEHeartbeat = typings.ssUtils.ssutils.SSECommand
+type SSEHeartbeat = SSECommand
 
-type SSEJoin = typings.ssUtils.ssutils.SSECommand
+type SSEJoin = SSECommand
 
-type SSELeave = typings.ssUtils.ssutils.SSECommand
+type SSELeave = SSECommand
 
-type SSEUpdate = typings.ssUtils.ssutils.SSECommand
+type SSEUpdate = SSECommand

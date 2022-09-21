@@ -27,7 +27,7 @@ object BlockedCookieWithReason {
     
     inline def setBlockedReasons(value: js.Array[CookieBlockedReason]): Self = StObject.set(x, "blockedReasons", value.asInstanceOf[js.Any])
     
-    inline def setBlockedReasonsVarargs(value: CookieBlockedReason*): Self = StObject.set(x, "blockedReasons", js.Array(value :_*))
+    inline def setBlockedReasonsVarargs(value: CookieBlockedReason*): Self = StObject.set(x, "blockedReasons", js.Array(value*))
     
     inline def setCookie(value: Cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
   }

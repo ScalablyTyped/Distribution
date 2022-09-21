@@ -19,33 +19,27 @@ object areaPlotMod {
     *
     * @constructor
     */
-  class Area[X] () extends Line[X] {
+  open class Area[X] () extends Line[X] {
     
     /* protected */ def _additionalPaint(): Unit = js.native
     
-    /* private */ var _constantBaselineValueProvider: js.Any = js.native
+    /* private */ var _constantBaselineValueProvider: Any = js.native
     
-    /* protected */ def _constructAreaProjector(xProjector: Projector, yProjector: Projector, y0Projector: Projector): js.Function3[/* datum */ js.Array[js.Any], /* index */ Double, /* dataset */ Dataset, String] = js.native
+    /* protected */ def _constructAreaProjector(xProjector: Projector, yProjector: Projector, y0Projector: Projector): js.Function3[/* datum */ js.Array[Any], /* index */ Double, /* dataset */ Dataset, String] = js.native
     
     /* protected */ def _coordinateProjectors(): js.Tuple3[Projector, Projector, Projector] = js.native
     
-    /* private */ def _createAreaGenerator(
-      xProjector: js.Any,
-      yProjector: js.Any,
-      y0Projector: js.Any,
-      definedProjector: js.Any,
-      dataset: js.Any
-    ): js.Any = js.native
+    /* private */ var _createAreaGenerator: Any = js.native
     
-    /* private */ def _createDefinedProjector(xProjector: js.Any, yProjector: js.Any): js.Any = js.native
+    /* private */ var _createDefinedProjector: Any = js.native
     
-    /* private */ def _createTopLineGenerator(xProjector: js.Any, yProjector: js.Any, definedProjector: js.Any, dataset: js.Any): js.Any = js.native
+    /* private */ var _createTopLineGenerator: Any = js.native
     
-    /* private */ def _generateLineAttrToProjector(): js.Any = js.native
+    /* private */ var _generateLineAttrToProjector: Any = js.native
     
-    /* private */ def _generateLineDrawSteps(): js.Any = js.native
+    /* private */ var _generateLineDrawSteps: Any = js.native
     
-    /* private */ var _lineDrawers: js.Any = js.native
+    /* private */ var _lineDrawers: Any = js.native
     
     /* protected */ def _updateYScale(): Unit = js.native
     
@@ -75,7 +69,7 @@ object areaPlotMod {
     
     @JSImport("plottable/build/src/plots/areaPlot", "Area._Y0_KEY")
     @js.native
-    def _Y0_KEY: js.Any = js.native
-    inline def _Y0_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y0_KEY")(x.asInstanceOf[js.Any])
+    def _Y0_KEY: Any = js.native
+    inline def _Y0_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y0_KEY")(x.asInstanceOf[js.Any])
   }
 }

@@ -10,10 +10,10 @@ An analog clock for your React app.
 | ------------------ | :-------------: |
 | Full name          | react-clock |
 | Keywords           | clock, digital clock, analog clock, time, react |
-| # releases         | 4 |
-| # dependents       | 14 |
-| # downloads        | 779452 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 225907.33333333334 |
+| # stars            | 208.0 |
 
 ## Links
 - [Homepage](https://github.com/wojtekmaj/react-clock#readme)

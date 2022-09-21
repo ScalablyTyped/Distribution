@@ -22,7 +22,7 @@ trait Index extends StObject {
   
   var NumberOfColumns: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Range: typings.activexWord.Word.Range
   
@@ -50,7 +50,7 @@ object Index {
     HeadingSeparator: WdHeadingSeparator,
     IndexLanguage: WdLanguageID,
     NumberOfColumns: Double,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     RightAlignPageNumbers: Boolean,
     SortBy: WdIndexSortBy,
@@ -82,7 +82,7 @@ object Index {
     
     inline def setNumberOfColumns(value: Double): Self = StObject.set(x, "NumberOfColumns", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,7 @@ object ListAnnouncementsResponse {
     
     inline def setAnnouncementsUndefined: Self = StObject.set(x, "announcements", js.undefined)
     
-    inline def setAnnouncementsVarargs(value: Announcement*): Self = StObject.set(x, "announcements", js.Array(value :_*))
+    inline def setAnnouncementsVarargs(value: Announcement*): Self = StObject.set(x, "announcements", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

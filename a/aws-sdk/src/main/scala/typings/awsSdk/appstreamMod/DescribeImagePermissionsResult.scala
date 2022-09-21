@@ -42,6 +42,6 @@ object DescribeImagePermissionsResult {
     
     inline def setSharedImagePermissionsListUndefined: Self = StObject.set(x, "SharedImagePermissionsList", js.undefined)
     
-    inline def setSharedImagePermissionsListVarargs(value: SharedImagePermissions*): Self = StObject.set(x, "SharedImagePermissionsList", js.Array(value :_*))
+    inline def setSharedImagePermissionsListVarargs(value: SharedImagePermissions*): Self = StObject.set(x, "SharedImagePermissionsList", js.Array(value*))
   }
 }

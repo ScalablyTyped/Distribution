@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The report event request.
-  */
 trait SchemaCreateClientEventRequest extends StObject {
   
   /**
-    * Required.  Events issued when end user interacts with customer&#39;s
-    * application that uses Cloud Talent Solution.
+    * Required. Events issued when end user interacts with customer's application that uses Cloud Talent Solution.
     */
   var clientEvent: js.UndefOr[SchemaClientEvent] = js.undefined
 }

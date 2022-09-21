@@ -14,7 +14,7 @@ trait FargateProfile extends StObject {
   /**
     * The Unix epoch timestamp in seconds for when the Fargate profile was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The full Amazon Resource Name (ARN) of the Fargate profile.
@@ -47,7 +47,7 @@ trait FargateProfile extends StObject {
   var subnets: js.UndefOr[StringList] = js.undefined
   
   /**
-    * The metadata applied to the Fargate profile to assist with categorization and organization. Each tag consists of a key and an optional value, both of which you define. Fargate profile tags do not propagate to any other resources associated with the Fargate profile, such as the pods that are scheduled with it.
+    * The metadata applied to the Fargate profile to assist with categorization and organization. Each tag consists of a key and an optional value. You define both. Fargate profile tags do not propagate to any other resources associated with the Fargate profile, such as the pods that are scheduled with it.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
 }
@@ -64,7 +64,7 @@ object FargateProfile {
     
     inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -84,7 +84,7 @@ object FargateProfile {
     
     inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
-    inline def setSelectorsVarargs(value: FargateProfileSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: FargateProfileSelector*): Self = StObject.set(x, "selectors", js.Array(value*))
     
     inline def setStatus(value: FargateProfileStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
@@ -94,7 +94,7 @@ object FargateProfile {
     
     inline def setSubnetsUndefined: Self = StObject.set(x, "subnets", js.undefined)
     
-    inline def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

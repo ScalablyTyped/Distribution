@@ -42,7 +42,7 @@ object global {
         * Initializes the authorization feature. Call this when the client loads to prevent popup blockers from blocking the auth window on gapi.auth.authorize calls.
         * @param callback A callback to execute when the auth feature is ready to make authorization calls.
         */
-      inline def init(callback: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def init(callback: js.Function0[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Sets the OAuth 2.0 token for the application.
@@ -64,18 +64,18 @@ object global {
         * @param version The version of the API to load
         * @param callback the function that is called once the API interface is loaded
         */
-      inline def load(name: String, version: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def load(name: String, version: String, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Creates a batch object for batching individual requests.
         */
-      inline def newBatch(): Batch[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("newBatch")().asInstanceOf[Batch[js.Any]]
+      inline def newBatch(): Batch[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("newBatch")().asInstanceOf[Batch[Any]]
       
       /**
         * Creates a HTTP request for making RESTful requests.
         * An object encapsulating the various arguments for this method.
         */
-      inline def request(args: Body): Request[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(args.asInstanceOf[js.Any]).asInstanceOf[Request[js.Any]]
+      inline def request(args: Body): Request[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(args.asInstanceOf[js.Any]).asInstanceOf[Request[Any]]
       
       /**
         * Sets the API key for the application.

@@ -2,16 +2,13 @@ package typings.babylonjs.indexMod
 
 import typings.babylonjs.hdrMod.HDRInfo
 import typings.babylonjs.panoramaToCubemapMod.CubeMapInfo
-import typings.std.ArrayBuffer
-import typings.std.Float32Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "HDRTools")
 @js.native
-class HDRTools ()
+open class HDRTools ()
   extends typings.babylonjs.miscIndexMod.HDRTools
 /* static members */
 object HDRTools {
@@ -29,14 +26,9 @@ object HDRTools {
     *
     * @param buffer The binary file stored in an array buffer.
     * @param size The expected size of the extracted cubemap.
-    * @return The Cube Map information.
+    * @returns The Cube Map information.
     */
-  inline def GetCubeMapTextureData(buffer: ArrayBuffer, size: Double): CubeMapInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCubeMapTextureData")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[CubeMapInfo]
-  
-  @JSImport("babylonjs/index", "HDRTools.Ldexp")
-  @js.native
-  def Ldexp: js.Any = js.native
-  inline def Ldexp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ldexp")(x.asInstanceOf[js.Any])
+  inline def GetCubeMapTextureData(buffer: js.typedarray.ArrayBuffer, size: Double): CubeMapInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCubeMapTextureData")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[CubeMapInfo]
   
   /**
     * Reads header information from an RGBE texture stored in a native array.
@@ -44,9 +36,9 @@ object HDRTools {
     * https://en.wikipedia.org/wiki/RGBE_image_format
     *
     * @param uint8array The binary file stored in  native array.
-    * @return The header information.
+    * @returns The header information.
     */
-  inline def RGBE_ReadHeader(uint8array: Uint8Array): HDRInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("RGBE_ReadHeader")(uint8array.asInstanceOf[js.Any]).asInstanceOf[HDRInfo]
+  inline def RGBE_ReadHeader(uint8array: js.typedarray.Uint8Array): HDRInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("RGBE_ReadHeader")(uint8array.asInstanceOf[js.Any]).asInstanceOf[HDRInfo]
   
   /**
     * Returns the pixels data extracted from an RGBE texture.
@@ -57,27 +49,32 @@ object HDRTools {
     *
     * @param uint8array The binary file stored in an array buffer.
     * @param hdrInfo The header information of the file.
-    * @return The pixels data in RGB right to left up to down order.
+    * @returns The pixels data in RGB right to left up to down order.
     */
-  inline def RGBE_ReadPixels(uint8array: Uint8Array, hdrInfo: HDRInfo): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBE_ReadPixels")(uint8array.asInstanceOf[js.Any], hdrInfo.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  inline def RGBE_ReadPixels(uint8array: js.typedarray.Uint8Array, hdrInfo: HDRInfo): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBE_ReadPixels")(uint8array.asInstanceOf[js.Any], hdrInfo.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
   
-  @JSImport("babylonjs/index", "HDRTools.RGBE_ReadPixels_NOT_RLE")
+  @JSImport("babylonjs/index", "HDRTools._Ldexp")
   @js.native
-  def RGBE_ReadPixels_NOT_RLE: js.Any = js.native
-  inline def RGBE_ReadPixels_NOT_RLE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RGBE_ReadPixels_NOT_RLE")(x.asInstanceOf[js.Any])
+  def _Ldexp: Any = js.native
+  inline def _Ldexp_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Ldexp")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/index", "HDRTools.RGBE_ReadPixels_RLE")
+  @JSImport("babylonjs/index", "HDRTools._RGBEReadPixelsNOTRLE")
   @js.native
-  def RGBE_ReadPixels_RLE: js.Any = js.native
-  inline def RGBE_ReadPixels_RLE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RGBE_ReadPixels_RLE")(x.asInstanceOf[js.Any])
+  def _RGBEReadPixelsNOTRLE: Any = js.native
+  inline def _RGBEReadPixelsNOTRLE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RGBEReadPixelsNOTRLE")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/index", "HDRTools.Rgbe2float")
+  @JSImport("babylonjs/index", "HDRTools._RGBEReadPixelsRLE")
   @js.native
-  def Rgbe2float: js.Any = js.native
-  inline def Rgbe2float_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rgbe2float")(x.asInstanceOf[js.Any])
+  def _RGBEReadPixelsRLE: Any = js.native
+  inline def _RGBEReadPixelsRLE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RGBEReadPixelsRLE")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/index", "HDRTools.readStringLine")
+  @JSImport("babylonjs/index", "HDRTools._ReadStringLine")
   @js.native
-  def readStringLine: js.Any = js.native
-  inline def readStringLine_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readStringLine")(x.asInstanceOf[js.Any])
+  def _ReadStringLine: Any = js.native
+  inline def _ReadStringLine_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ReadStringLine")(x.asInstanceOf[js.Any])
+  
+  @JSImport("babylonjs/index", "HDRTools._Rgbe2float")
+  @js.native
+  def _Rgbe2float: Any = js.native
+  inline def _Rgbe2float_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Rgbe2float")(x.asInstanceOf[js.Any])
 }

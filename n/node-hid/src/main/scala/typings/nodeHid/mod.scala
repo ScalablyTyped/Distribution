@@ -1,6 +1,6 @@
 package typings.nodeHid
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.nodeHid.nodeHidStrings.hidraw
 import typings.nodeHid.nodeHidStrings.libusb
@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("node-hid", "HID")
   @js.native
-  class HID protected () extends EventEmitter {
+  open class HID protected () extends EventEmitter {
     def this(path: String) = this()
     def this(vid: Double, pid: Double) = this()
     
@@ -26,7 +26,7 @@ object mod {
     
     def pause(): Unit = js.native
     
-    def read(callback: js.Function2[/* err */ js.Any, /* data */ js.Array[Double], Unit]): Unit = js.native
+    def read(callback: js.Function2[/* err */ Any, /* data */ js.Array[Double], Unit]): Unit = js.native
     
     def readSync(): js.Array[Double] = js.native
     
@@ -46,9 +46,7 @@ object mod {
   inline def devices(): js.Array[Device] = ^.asInstanceOf[js.Dynamic].applyDynamic("devices")().asInstanceOf[js.Array[Device]]
   inline def devices(vid: Double, pid: Double): js.Array[Device] = (^.asInstanceOf[js.Dynamic].applyDynamic("devices")(vid.asInstanceOf[js.Any], pid.asInstanceOf[js.Any])).asInstanceOf[js.Array[Device]]
   
-  inline def setDriverType_hidraw(`type`: hidraw): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDriverType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def setDriverType_libusb(`type`: libusb): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDriverType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDriverType(`type`: hidraw | libusb): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDriverType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Device extends StObject {
     

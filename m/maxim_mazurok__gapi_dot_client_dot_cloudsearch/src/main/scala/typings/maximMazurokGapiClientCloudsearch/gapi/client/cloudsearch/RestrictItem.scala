@@ -6,12 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RestrictItem extends StObject {
   
-  /** LINT.ThenChange(//depot/google3/java/com/google/apps/search/quality/itemsuggest/utils/SubtypeRerankingUtils.java) */
   var driveFollowUpRestrict: js.UndefOr[DriveFollowUpRestrict] = js.undefined
   
   var driveLocationRestrict: js.UndefOr[DriveLocationRestrict] = js.undefined
   
-  /** LINT.IfChange Drive Types. */
+  /** Drive Types. */
   var driveMimeTypeRestrict: js.UndefOr[DriveMimeTypeRestrict] = js.undefined
   
   var driveTimeSpanRestrict: js.UndefOr[DriveTimeSpanRestrict] = js.undefined

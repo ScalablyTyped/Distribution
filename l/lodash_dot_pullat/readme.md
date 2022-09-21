@@ -10,10 +10,10 @@ The lodash method `_.pullAt` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.pullat |
 | Keywords           | lodash-modularized, pullat |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 71681 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1568.6666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

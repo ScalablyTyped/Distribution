@@ -12,12 +12,17 @@ trait QueryRequest extends StObject {
   var AttributeFilter: js.UndefOr[typings.awsSdk.kendraMod.AttributeFilter] = js.undefined
   
   /**
-    * An array of documents attributes. Amazon Kendra returns a count for each attribute key specified. You can use this information to help narrow the search for your user.
+    * Overrides relevance tuning configurations of fields or attributes set at the index level. If you use this API to override the relevance tuning configured at the index level, but there is no relevance tuning configured at the index level, then Amazon Kendra does not apply any relevance tuning. If there is relevance tuning configured at the index level, but you do not use this API to override any relevance tuning in the index, then Amazon Kendra uses the relevance tuning that is configured at the index level. If there is relevance tuning configured for fields at the index level, but you use this API to override only some of these fields, then for the fields you did not override, the importance is set to 1.
+    */
+  var DocumentRelevanceOverrideConfigurations: js.UndefOr[DocumentRelevanceOverrideConfigurationList] = js.undefined
+  
+  /**
+    * An array of documents attributes. Amazon Kendra returns a count for each attribute key specified. This helps your users narrow their search.
     */
   var Facets: js.UndefOr[FacetList] = js.undefined
   
   /**
-    * The unique identifier of the index to search. The identifier is returned in the response from the operation.
+    * The unique identifier of the index to search. The identifier is returned in the response from the CreateIndex API.
     */
   var IndexId: typings.awsSdk.kendraMod.IndexId
   
@@ -39,10 +44,10 @@ trait QueryRequest extends StObject {
   /**
     * The text to search for.
     */
-  var QueryText: typings.awsSdk.kendraMod.QueryText
+  var QueryText: js.UndefOr[typings.awsSdk.kendraMod.QueryText] = js.undefined
   
   /**
-    * An array of document attributes to include in the response. No other document attributes are included in the response. By default all document attributes are included in the response. 
+    * An array of document attributes to include in the response. You can limit the response to include certain document attributes. By default all document attributes are included in the response.
     */
   var RequestedDocumentAttributes: js.UndefOr[DocumentAttributeKeyList] = js.undefined
   
@@ -52,14 +57,24 @@ trait QueryRequest extends StObject {
   var SortingConfiguration: js.UndefOr[typings.awsSdk.kendraMod.SortingConfiguration] = js.undefined
   
   /**
-    * The user context token.
+    * Enables suggested spell corrections for queries.
+    */
+  var SpellCorrectionConfiguration: js.UndefOr[typings.awsSdk.kendraMod.SpellCorrectionConfiguration] = js.undefined
+  
+  /**
+    * The user context token or user and group information.
     */
   var UserContext: js.UndefOr[typings.awsSdk.kendraMod.UserContext] = js.undefined
+  
+  /**
+    * Provides an identifier for a specific user. The VisitorId should be a unique identifier, such as a GUID. Don't use personally identifiable information, such as the user's email address, as the VisitorId.
+    */
+  var VisitorId: js.UndefOr[typings.awsSdk.kendraMod.VisitorId] = js.undefined
 }
 object QueryRequest {
   
-  inline def apply(IndexId: IndexId, QueryText: QueryText): QueryRequest = {
-    val __obj = js.Dynamic.literal(IndexId = IndexId.asInstanceOf[js.Any], QueryText = QueryText.asInstanceOf[js.Any])
+  inline def apply(IndexId: IndexId): QueryRequest = {
+    val __obj = js.Dynamic.literal(IndexId = IndexId.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRequest]
   }
   
@@ -69,11 +84,17 @@ object QueryRequest {
     
     inline def setAttributeFilterUndefined: Self = StObject.set(x, "AttributeFilter", js.undefined)
     
+    inline def setDocumentRelevanceOverrideConfigurations(value: DocumentRelevanceOverrideConfigurationList): Self = StObject.set(x, "DocumentRelevanceOverrideConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentRelevanceOverrideConfigurationsUndefined: Self = StObject.set(x, "DocumentRelevanceOverrideConfigurations", js.undefined)
+    
+    inline def setDocumentRelevanceOverrideConfigurationsVarargs(value: DocumentRelevanceConfiguration*): Self = StObject.set(x, "DocumentRelevanceOverrideConfigurations", js.Array(value*))
+    
     inline def setFacets(value: FacetList): Self = StObject.set(x, "Facets", value.asInstanceOf[js.Any])
     
     inline def setFacetsUndefined: Self = StObject.set(x, "Facets", js.undefined)
     
-    inline def setFacetsVarargs(value: Facet*): Self = StObject.set(x, "Facets", js.Array(value :_*))
+    inline def setFacetsVarargs(value: Facet*): Self = StObject.set(x, "Facets", js.Array(value*))
     
     inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
     
@@ -91,18 +112,28 @@ object QueryRequest {
     
     inline def setQueryText(value: QueryText): Self = StObject.set(x, "QueryText", value.asInstanceOf[js.Any])
     
+    inline def setQueryTextUndefined: Self = StObject.set(x, "QueryText", js.undefined)
+    
     inline def setRequestedDocumentAttributes(value: DocumentAttributeKeyList): Self = StObject.set(x, "RequestedDocumentAttributes", value.asInstanceOf[js.Any])
     
     inline def setRequestedDocumentAttributesUndefined: Self = StObject.set(x, "RequestedDocumentAttributes", js.undefined)
     
-    inline def setRequestedDocumentAttributesVarargs(value: DocumentAttributeKey*): Self = StObject.set(x, "RequestedDocumentAttributes", js.Array(value :_*))
+    inline def setRequestedDocumentAttributesVarargs(value: DocumentAttributeKey*): Self = StObject.set(x, "RequestedDocumentAttributes", js.Array(value*))
     
     inline def setSortingConfiguration(value: SortingConfiguration): Self = StObject.set(x, "SortingConfiguration", value.asInstanceOf[js.Any])
     
     inline def setSortingConfigurationUndefined: Self = StObject.set(x, "SortingConfiguration", js.undefined)
     
+    inline def setSpellCorrectionConfiguration(value: SpellCorrectionConfiguration): Self = StObject.set(x, "SpellCorrectionConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setSpellCorrectionConfigurationUndefined: Self = StObject.set(x, "SpellCorrectionConfiguration", js.undefined)
+    
     inline def setUserContext(value: UserContext): Self = StObject.set(x, "UserContext", value.asInstanceOf[js.Any])
     
     inline def setUserContextUndefined: Self = StObject.set(x, "UserContext", js.undefined)
+    
+    inline def setVisitorId(value: VisitorId): Self = StObject.set(x, "VisitorId", value.asInstanceOf[js.Any])
+    
+    inline def setVisitorIdUndefined: Self = StObject.set(x, "VisitorId", js.undefined)
   }
 }

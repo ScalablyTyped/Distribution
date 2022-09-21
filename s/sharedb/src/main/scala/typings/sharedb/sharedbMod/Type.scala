@@ -11,34 +11,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Type
   extends StObject
      with // Users can use server middleware to add additional metadata to snapshots.
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[Any] {
   
   @JSName("apply")
-  def apply(snapshot: js.Any, op: js.Any): js.Any = js.native
+  def apply(snapshot: Any, op: Any): Any = js.native
   
-  def compose(op1: js.Any, op2: js.Any): js.Any = js.native
+  def compose(op1: Any, op2: Any): Any = js.native
   
-  def create(): js.Any = js.native
-  def create(initialData: js.Any): js.Any = js.native
+  def create(): Any = js.native
+  def create(initialData: Any): Any = js.native
   
-  var deserialize: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.native
+  var deserialize: js.UndefOr[js.Function1[/* data */ Any, Any]] = js.native
   
-  var invert: js.UndefOr[js.Function1[/* op */ js.Any, js.Any]] = js.native
+  var invert: js.UndefOr[js.Function1[/* op */ Any, Any]] = js.native
   
   var name: js.UndefOr[String] = js.native
   
-  var normalize: js.UndefOr[js.Function1[/* op */ js.Any, js.Any]] = js.native
+  var normalize: js.UndefOr[js.Function1[/* op */ Any, Any]] = js.native
   
-  var serialize: js.UndefOr[js.Function1[/* snapshot */ js.Any, js.Any]] = js.native
+  var serialize: js.UndefOr[js.Function1[/* snapshot */ Any, Any]] = js.native
   
-  var transformCursor: js.UndefOr[
-    js.Function3[/* cursor */ js.Any, /* op */ js.Any, /* isOwnOp */ Boolean, js.Any]
-  ] = js.native
+  def transform(op1: Any, op2: Any, side: left | right): Any = js.native
   
-  @JSName("transform")
-  def transform_left(op1: js.Any, op2: js.Any, side: left): js.Any = js.native
-  @JSName("transform")
-  def transform_right(op1: js.Any, op2: js.Any, side: right): js.Any = js.native
+  var transformCursor: js.UndefOr[js.Function3[/* cursor */ Any, /* op */ Any, /* isOwnOp */ Boolean, Any]] = js.native
   
   var uri: js.UndefOr[String] = js.native
 }

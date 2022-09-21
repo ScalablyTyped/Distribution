@@ -14,7 +14,7 @@ trait Deployment extends StObject {
   /**
     * For in-progress deployments, the time that the deployment started. For completed deployments, the time that the deployment ended.
     */
-  var DeploymentTime: js.UndefOr[DeploymentTimestamp] = js.undefined
+  var DeploymentTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the deployment:    In Progress : The deployment is in progress.    Deployed : The deployment succeeded.    Failed : The deployment failed.  
@@ -39,7 +39,7 @@ object Deployment {
     
     inline def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
     
-    inline def setDeploymentTime(value: DeploymentTimestamp): Self = StObject.set(x, "DeploymentTime", value.asInstanceOf[js.Any])
+    inline def setDeploymentTime(value: js.Date): Self = StObject.set(x, "DeploymentTime", value.asInstanceOf[js.Any])
     
     inline def setDeploymentTimeUndefined: Self = StObject.set(x, "DeploymentTime", js.undefined)
     

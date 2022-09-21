@@ -1,8 +1,8 @@
 package typings.rcSelect
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcSelect.generatorMod.LabelValueType
-import typings.rcSelect.interfaceMod.Mode
+import typings.rcSelect.baseSelectMod.DisplayValueType
+import typings.rcSelect.baseSelectMod.Mode
 import typings.rcSelect.selectorMod.InnerSelectorProps
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ClipboardEvent
@@ -30,14 +30,11 @@ object singleSelectorMod extends Shortcut {
     
     var activeValue: String
     
-    var backfill: js.UndefOr[Boolean] = js.undefined
-    
     var inputElement: ReactElement
   }
   object SelectorProps {
     
     inline def apply(
-      accessibilityIndex: Double,
       activeValue: String,
       id: String,
       inputElement: ReactElement,
@@ -51,19 +48,15 @@ object singleSelectorMod extends Shortcut {
       open: Boolean,
       prefixCls: String,
       searchValue: String,
-      values: js.Array[LabelValueType]
+      values: js.Array[DisplayValueType]
     ): SelectorProps = {
-      val __obj = js.Dynamic.literal(accessibilityIndex = accessibilityIndex.asInstanceOf[js.Any], activeValue = activeValue.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inputElement = inputElement.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onInputChange = js.Any.fromFunction1(onInputChange), onInputCompositionEnd = js.Any.fromFunction1(onInputCompositionEnd), onInputCompositionStart = js.Any.fromFunction1(onInputCompositionStart), onInputKeyDown = js.Any.fromFunction1(onInputKeyDown), onInputMouseDown = js.Any.fromFunction1(onInputMouseDown), onInputPaste = js.Any.fromFunction1(onInputPaste), open = open.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], searchValue = searchValue.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], inputRef = null)
+      val __obj = js.Dynamic.literal(activeValue = activeValue.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inputElement = inputElement.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onInputChange = js.Any.fromFunction1(onInputChange), onInputCompositionEnd = js.Any.fromFunction1(onInputCompositionEnd), onInputCompositionStart = js.Any.fromFunction1(onInputCompositionStart), onInputKeyDown = js.Any.fromFunction1(onInputKeyDown), onInputMouseDown = js.Any.fromFunction1(onInputMouseDown), onInputPaste = js.Any.fromFunction1(onInputPaste), open = open.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], searchValue = searchValue.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], inputRef = null)
       __obj.asInstanceOf[SelectorProps]
     }
     
     extension [Self <: SelectorProps](x: Self) {
       
       inline def setActiveValue(value: String): Self = StObject.set(x, "activeValue", value.asInstanceOf[js.Any])
-      
-      inline def setBackfill(value: Boolean): Self = StObject.set(x, "backfill", value.asInstanceOf[js.Any])
-      
-      inline def setBackfillUndefined: Self = StObject.set(x, "backfill", js.undefined)
       
       inline def setInputElement(value: ReactElement): Self = StObject.set(x, "inputElement", value.asInstanceOf[js.Any])
     }

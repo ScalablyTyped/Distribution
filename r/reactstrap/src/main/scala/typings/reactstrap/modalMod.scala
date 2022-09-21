@@ -12,8 +12,12 @@ import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.react.mod.RefObject
 import typings.reactstrap.fadeMod.FadeProps
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.reactstrapStrings.lg
+import typings.reactstrap.reactstrapStrings.md
+import typings.reactstrap.reactstrapStrings.sm
 import typings.reactstrap.reactstrapStrings.static
+import typings.reactstrap.reactstrapStrings.xl
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,17 +25,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object modalMod {
   
-  @JSImport("reactstrap/lib/Modal", JSImport.Default)
+  @JSImport("reactstrap/types/lib/Modal", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ModalProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ModalProps, js.Object, Any]
   
-  type Modal = Component[ModalProps, js.Object, js.Any]
+  type Modal = Component[ModalProps, js.Object, Any]
   
   trait ModalProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
@@ -52,6 +56,8 @@ object modalMod {
     var external: js.UndefOr[ReactNode] = js.undefined
     
     var fade: js.UndefOr[Boolean] = js.undefined
+    
+    var fullscreen: js.UndefOr[Boolean | sm | md | lg | xl] = js.undefined
     
     var innerRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
     
@@ -79,7 +85,9 @@ object modalMod {
     
     var size: js.UndefOr[String] = js.undefined
     
-    var toggle: js.UndefOr[KeyboardEventHandler[js.Any] | MouseEventHandler[js.Any]] = js.undefined
+    var toggle: js.UndefOr[KeyboardEventHandler[Any] | MouseEventHandler[Any]] = js.undefined
+    
+    var trapFocus: js.UndefOr[Boolean] = js.undefined
     
     var unmountOnClose: js.UndefOr[Boolean] = js.undefined
     
@@ -135,6 +143,10 @@ object modalMod {
       inline def setFade(value: Boolean): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
       
       inline def setFadeUndefined: Self = StObject.set(x, "fade", js.undefined)
+      
+      inline def setFullscreen(value: Boolean | sm | md | lg | xl): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+      
+      inline def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
       
       inline def setInnerRef(value: Ref[HTMLElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
@@ -192,9 +204,13 @@ object modalMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setToggle(value: KeyboardEvent[js.Any] | (MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+      inline def setToggle(value: KeyboardEvent[Any] | (MouseEvent[Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
       
       inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+      
+      inline def setTrapFocus(value: Boolean): Self = StObject.set(x, "trapFocus", value.asInstanceOf[js.Any])
+      
+      inline def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
       
       inline def setUnmountOnClose(value: Boolean): Self = StObject.set(x, "unmountOnClose", value.asInstanceOf[js.Any])
       

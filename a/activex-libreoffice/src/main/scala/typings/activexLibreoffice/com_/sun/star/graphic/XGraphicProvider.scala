@@ -54,7 +54,7 @@ object XGraphicProvider {
     acquire: () => Unit,
     queryGraphic: PropertyValues => XGraphic,
     queryGraphicDescriptor: PropertyValues => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     storeGraphic: (XGraphic, PropertyValues) => Unit
   ): XGraphicProvider = {

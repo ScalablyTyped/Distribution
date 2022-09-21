@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A list of package names.
-  */
 trait SchemaPackageNameList extends StObject {
   
   /**
     * A list of package names.
     */
-  var packageNames: js.UndefOr[js.Array[String]] = js.undefined
+  var packageNames: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaPackageNameList {
   
@@ -25,8 +22,10 @@ object SchemaPackageNameList {
     
     inline def setPackageNames(value: js.Array[String]): Self = StObject.set(x, "packageNames", value.asInstanceOf[js.Any])
     
+    inline def setPackageNamesNull: Self = StObject.set(x, "packageNames", null)
+    
     inline def setPackageNamesUndefined: Self = StObject.set(x, "packageNames", js.undefined)
     
-    inline def setPackageNamesVarargs(value: String*): Self = StObject.set(x, "packageNames", js.Array(value :_*))
+    inline def setPackageNamesVarargs(value: String*): Self = StObject.set(x, "packageNames", js.Array(value*))
   }
 }

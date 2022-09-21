@@ -10,10 +10,10 @@ A simple jQuery Plugin that converts a select into an text field with suggestion
 | ------------------ | :-------------: |
 | Full name          | jquery-editable-select |
 | Keywords           | jquery, plugin, editable, select, typeahead, suggestion |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 21133 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1388.3333333333333 |
+| # stars            | 349.0 |
 
 ## Links
 - [Homepage](https://github.com/indrimuska/jquery-editable-select)

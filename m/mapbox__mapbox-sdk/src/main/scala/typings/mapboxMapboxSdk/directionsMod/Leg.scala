@@ -52,7 +52,7 @@ object Leg {
     
     inline def setAnnotation(value: js.Array[DirectionsAnnotation]): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
-    inline def setAnnotationVarargs(value: DirectionsAnnotation*): Self = StObject.set(x, "annotation", js.Array(value :_*))
+    inline def setAnnotationVarargs(value: DirectionsAnnotation*): Self = StObject.set(x, "annotation", js.Array(value*))
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
@@ -60,7 +60,7 @@ object Leg {
     
     inline def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ object global {
     
     @JSGlobal("KDBush")
     @js.native
-    class ^[T] protected ()
+    open class ^[T] protected ()
       extends typings.kdbush.mod.^[T] {
       def this(points: Points) = this()
       def this(points: js.Array[T], getX: Get[T], getY: Get[T]) = this()

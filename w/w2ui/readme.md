@@ -10,13 +10,13 @@ JavaScript UI library. Includes grid, layout, toolbars, trees, popups.
 | ------------------ | :-------------: |
 | Full name          | w2ui |
 | Keywords           | JavaScript, JS, UI, grid, layout, tree, popup |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 29287 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1100.3333333333333 |
+| # stars            | 2001.0 |
 
 ## Links
-- [Homepage](https://github.com/vitmalina/w2ui#readme)
+- [Homepage](http://w2ui.com)
 - [Bugs](https://github.com/vitmalina/w2ui/issues)
 - [Repository](https://github.com/vitmalina/w2ui)
 - [Npm](https://www.npmjs.com/package/w2ui)

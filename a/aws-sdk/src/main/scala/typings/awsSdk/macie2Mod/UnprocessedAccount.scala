@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UnprocessedAccount extends StObject {
   
   /**
-    * The AWS account ID for the account that the request applies to.
+    * The Amazon Web Services account ID for the account that the request applies to.
     */
   var accountId: js.UndefOr[string] = js.undefined
   

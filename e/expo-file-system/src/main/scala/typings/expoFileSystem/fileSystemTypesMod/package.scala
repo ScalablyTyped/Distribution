@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DownloadProgressCallback = js.Function1[
-/* data */ typings.expoFileSystem.fileSystemTypesMod.DownloadProgressData, 
-scala.Unit]
+type DownloadProgressCallback = FileSystemNetworkTaskProgressCallback[DownloadProgressData]
 
-type DownloadResult = typings.expoFileSystem.fileSystemTypesMod.FileSystemDownloadResult
+type DownloadResult = FileSystemDownloadResult
 
-type FileSystemUploadOptions = (typings.expoFileSystem.anon.UploadType | typings.expoFileSystem.anon.FieldName) & typings.expoFileSystem.anon.Headers
+type FileSystemNetworkTaskProgressCallback[T /* <: DownloadProgressData | UploadProgressData */] = js.Function1[/* data */ T, Unit]

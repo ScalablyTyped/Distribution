@@ -2,7 +2,6 @@ package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.GanttDataSource
 import typings.kendoUi.kendo.data.GanttDependencyDataSource
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ trait GanttOptions extends StObject {
   
   var change: js.UndefOr[js.Function1[/* e */ GanttChangeEvent, Unit]] = js.undefined
   
-  var columnMenu: js.UndefOr[Boolean | js.Any] = js.undefined
+  var columnMenu: js.UndefOr[Boolean | Any] = js.undefined
   
   var columnResize: js.UndefOr[js.Function1[/* e */ GanttColumnResizeEvent, Unit]] = js.undefined
   
@@ -33,17 +32,17 @@ trait GanttOptions extends StObject {
   
   var dataBound: js.UndefOr[js.Function1[/* e */ GanttDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | GanttDataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | GanttDataSource] = js.undefined
   
-  var date: js.UndefOr[Date] = js.undefined
+  var date: js.UndefOr[js.Date] = js.undefined
   
-  var dependencies: js.UndefOr[js.Any | GanttDependencyDataSource] = js.undefined
+  var dependencies: js.UndefOr[Any | GanttDependencyDataSource] = js.undefined
   
   var edit: js.UndefOr[js.Function1[/* e */ GanttEditEvent, Unit]] = js.undefined
   
   var editable: js.UndefOr[Boolean | GanttEditable] = js.undefined
   
-  var filterable: js.UndefOr[Boolean | js.Any] = js.undefined
+  var filterable: js.UndefOr[Boolean | Any] = js.undefined
   
   var height: js.UndefOr[Double | String] = js.undefined
   
@@ -107,9 +106,9 @@ trait GanttOptions extends StObject {
   
   var views: js.UndefOr[js.Array[GanttView]] = js.undefined
   
-  var workDayEnd: js.UndefOr[Date] = js.undefined
+  var workDayEnd: js.UndefOr[js.Date] = js.undefined
   
-  var workDayStart: js.UndefOr[Date] = js.undefined
+  var workDayStart: js.UndefOr[js.Date] = js.undefined
   
   var workWeekEnd: js.UndefOr[Double] = js.undefined
   
@@ -144,7 +143,7 @@ object GanttOptions {
     
     inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    inline def setColumnMenu(value: Boolean | js.Any): Self = StObject.set(x, "columnMenu", value.asInstanceOf[js.Any])
+    inline def setColumnMenu(value: Boolean | Any): Self = StObject.set(x, "columnMenu", value.asInstanceOf[js.Any])
     
     inline def setColumnMenuUndefined: Self = StObject.set(x, "columnMenu", js.undefined)
     
@@ -160,7 +159,7 @@ object GanttOptions {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: GanttColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: GanttColumn*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setCurrentTimeMarker(value: Boolean | GanttCurrentTimeMarker): Self = StObject.set(x, "currentTimeMarker", value.asInstanceOf[js.Any])
     
@@ -174,15 +173,15 @@ object GanttOptions {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any | GanttDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | GanttDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    inline def setDependencies(value: js.Any | GanttDependencyDataSource): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+    inline def setDependencies(value: Any | GanttDependencyDataSource): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
@@ -194,7 +193,7 @@ object GanttOptions {
     
     inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
-    inline def setFilterable(value: Boolean | js.Any): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+    inline def setFilterable(value: Boolean | Any): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
     
     inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
     
@@ -314,7 +313,7 @@ object GanttOptions {
     
     inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    inline def setToolbarVarargs(value: GanttToolbarItem*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
+    inline def setToolbarVarargs(value: GanttToolbarItem*): Self = StObject.set(x, "toolbar", js.Array(value*))
     
     inline def setTooltip(value: GanttTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
@@ -324,13 +323,13 @@ object GanttOptions {
     
     inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     
-    inline def setViewsVarargs(value: GanttView*): Self = StObject.set(x, "views", js.Array(value :_*))
+    inline def setViewsVarargs(value: GanttView*): Self = StObject.set(x, "views", js.Array(value*))
     
-    inline def setWorkDayEnd(value: Date): Self = StObject.set(x, "workDayEnd", value.asInstanceOf[js.Any])
+    inline def setWorkDayEnd(value: js.Date): Self = StObject.set(x, "workDayEnd", value.asInstanceOf[js.Any])
     
     inline def setWorkDayEndUndefined: Self = StObject.set(x, "workDayEnd", js.undefined)
     
-    inline def setWorkDayStart(value: Date): Self = StObject.set(x, "workDayStart", value.asInstanceOf[js.Any])
+    inline def setWorkDayStart(value: js.Date): Self = StObject.set(x, "workDayStart", value.asInstanceOf[js.Any])
     
     inline def setWorkDayStartUndefined: Self = StObject.set(x, "workDayStart", js.undefined)
     

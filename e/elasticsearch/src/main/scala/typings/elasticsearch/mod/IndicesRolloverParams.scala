@@ -10,6 +10,8 @@ trait IndicesRolloverParams
   
   var alias: js.UndefOr[String] = js.undefined
   
+  var includeTypeName: js.UndefOr[Boolean] = js.undefined
+  
   var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
   
   var newIndex: js.UndefOr[String] = js.undefined
@@ -30,6 +32,10 @@ object IndicesRolloverParams {
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    
+    inline def setIncludeTypeName(value: Boolean): Self = StObject.set(x, "includeTypeName", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeTypeNameUndefined: Self = StObject.set(x, "includeTypeName", js.undefined)
     
     inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     

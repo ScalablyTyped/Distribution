@@ -10,10 +10,10 @@ A React Native library for Fabric, Crashlytics and Answers
 | ------------------ | :-------------: |
 | Full name          | react-native-fabric |
 | Keywords           | android, answers, crashlytics, fabric, ios, mobile, react, react-component, react-native, react-native-component |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 346233 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6290.666666666667 |
+| # stars            | 1310.0 |
 
 ## Links
 - [Homepage](https://github.com/corymsmith/react-native-fabric)

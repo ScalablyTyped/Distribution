@@ -25,7 +25,7 @@ object DeleteDuplicatesRequest {
     
     inline def setComparisonColumnsUndefined: Self = StObject.set(x, "comparisonColumns", js.undefined)
     
-    inline def setComparisonColumnsVarargs(value: DimensionRange*): Self = StObject.set(x, "comparisonColumns", js.Array(value :_*))
+    inline def setComparisonColumnsVarargs(value: DimensionRange*): Self = StObject.set(x, "comparisonColumns", js.Array(value*))
     
     inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

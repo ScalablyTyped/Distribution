@@ -12,5 +12,5 @@ trait TreeListModel
   def loaded(): Boolean = js.native
   def loaded(value: Boolean): Unit = js.native
   
-  var parentId: js.Any = js.native
+  var parentId: Any = js.native
 }

@@ -28,7 +28,7 @@ object ListFilteredBidRequestsResponse {
     
     inline def setCalloutStatusRowsUndefined: Self = StObject.set(x, "calloutStatusRows", js.undefined)
     
-    inline def setCalloutStatusRowsVarargs(value: CalloutStatusRow*): Self = StObject.set(x, "calloutStatusRows", js.Array(value :_*))
+    inline def setCalloutStatusRowsVarargs(value: CalloutStatusRow*): Self = StObject.set(x, "calloutStatusRows", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

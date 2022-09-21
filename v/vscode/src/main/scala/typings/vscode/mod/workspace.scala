@@ -73,13 +73,25 @@ object workspace {
   
   inline def getWorkspaceFolder(uri: Uri): js.UndefOr[WorkspaceFolder] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspaceFolder")(uri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[WorkspaceFolder]]
   
+  @JSImport("vscode", "workspace.isTrusted")
+  @js.native
+  val isTrusted: Boolean = js.native
+  
   @JSImport("vscode", "workspace.name")
   @js.native
   val name: js.UndefOr[String] = js.native
   
+  @JSImport("vscode", "workspace.notebookDocuments")
+  @js.native
+  val notebookDocuments: js.Array[NotebookDocument] = js.native
+  
   @JSImport("vscode", "workspace.onDidChangeConfiguration")
   @js.native
   val onDidChangeConfiguration: Event[ConfigurationChangeEvent] = js.native
+  
+  @JSImport("vscode", "workspace.onDidChangeNotebookDocument")
+  @js.native
+  val onDidChangeNotebookDocument: Event[NotebookDocumentChangeEvent] = js.native
   
   @JSImport("vscode", "workspace.onDidChangeTextDocument")
   @js.native
@@ -88,6 +100,10 @@ object workspace {
   @JSImport("vscode", "workspace.onDidChangeWorkspaceFolders")
   @js.native
   val onDidChangeWorkspaceFolders: Event[WorkspaceFoldersChangeEvent] = js.native
+  
+  @JSImport("vscode", "workspace.onDidCloseNotebookDocument")
+  @js.native
+  val onDidCloseNotebookDocument: Event[NotebookDocument] = js.native
   
   @JSImport("vscode", "workspace.onDidCloseTextDocument")
   @js.native
@@ -101,6 +117,14 @@ object workspace {
   @js.native
   val onDidDeleteFiles: Event[FileDeleteEvent] = js.native
   
+  @JSImport("vscode", "workspace.onDidGrantWorkspaceTrust")
+  @js.native
+  val onDidGrantWorkspaceTrust: Event[Unit] = js.native
+  
+  @JSImport("vscode", "workspace.onDidOpenNotebookDocument")
+  @js.native
+  val onDidOpenNotebookDocument: Event[NotebookDocument] = js.native
+  
   @JSImport("vscode", "workspace.onDidOpenTextDocument")
   @js.native
   val onDidOpenTextDocument: Event[TextDocument] = js.native
@@ -108,6 +132,10 @@ object workspace {
   @JSImport("vscode", "workspace.onDidRenameFiles")
   @js.native
   val onDidRenameFiles: Event[FileRenameEvent] = js.native
+  
+  @JSImport("vscode", "workspace.onDidSaveNotebookDocument")
+  @js.native
+  val onDidSaveNotebookDocument: Event[NotebookDocument] = js.native
   
   @JSImport("vscode", "workspace.onDidSaveTextDocument")
   @js.native
@@ -129,6 +157,10 @@ object workspace {
   @js.native
   val onWillSaveTextDocument: Event[TextDocumentWillSaveEvent] = js.native
   
+  inline def openNotebookDocument(notebookType: String): Thenable[NotebookDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("openNotebookDocument")(notebookType.asInstanceOf[js.Any]).asInstanceOf[Thenable[NotebookDocument]]
+  inline def openNotebookDocument(notebookType: String, content: NotebookData): Thenable[NotebookDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("openNotebookDocument")(notebookType.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Thenable[NotebookDocument]]
+  inline def openNotebookDocument(uri: Uri): Thenable[NotebookDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("openNotebookDocument")(uri.asInstanceOf[js.Any]).asInstanceOf[Thenable[NotebookDocument]]
+  
   inline def openTextDocument(): Thenable[TextDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("openTextDocument")().asInstanceOf[Thenable[TextDocument]]
   inline def openTextDocument(fileName: String): Thenable[TextDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("openTextDocument")(fileName.asInstanceOf[js.Any]).asInstanceOf[Thenable[TextDocument]]
   inline def openTextDocument(options: Content): Thenable[TextDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("openTextDocument")(options.asInstanceOf[js.Any]).asInstanceOf[Thenable[TextDocument]]
@@ -136,6 +168,9 @@ object workspace {
   
   inline def registerFileSystemProvider(scheme: String, provider: FileSystemProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFileSystemProvider")(scheme.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   inline def registerFileSystemProvider(scheme: String, provider: FileSystemProvider, options: IsCaseSensitive): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFileSystemProvider")(scheme.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  
+  inline def registerNotebookSerializer(notebookType: String, serializer: NotebookSerializer): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerNotebookSerializer")(notebookType.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  inline def registerNotebookSerializer(notebookType: String, serializer: NotebookSerializer, options: NotebookDocumentContentOptions): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerNotebookSerializer")(notebookType.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
   inline def registerTaskProvider(`type`: String, provider: TaskProvider[Task]): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTaskProvider")(`type`.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
@@ -152,9 +187,9 @@ object workspace {
   @js.native
   val textDocuments: js.Array[TextDocument] = js.native
   
-  inline def updateWorkspaceFolders(start: Double, deleteCount: Double, workspaceFoldersToAdd: Name*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWorkspaceFolders")(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any], workspaceFoldersToAdd.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def updateWorkspaceFolders(start: Double, deleteCount: Null, workspaceFoldersToAdd: Name*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWorkspaceFolders")(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any], workspaceFoldersToAdd.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def updateWorkspaceFolders(start: Double, deleteCount: Unit, workspaceFoldersToAdd: Name*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWorkspaceFolders")(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any], workspaceFoldersToAdd.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def updateWorkspaceFolders(start: Double, deleteCount: Double, workspaceFoldersToAdd: Name*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWorkspaceFolders")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(workspaceFoldersToAdd.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
+  inline def updateWorkspaceFolders(start: Double, deleteCount: Null, workspaceFoldersToAdd: Name*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWorkspaceFolders")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(workspaceFoldersToAdd.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
+  inline def updateWorkspaceFolders(start: Double, deleteCount: Unit, workspaceFoldersToAdd: Name*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWorkspaceFolders")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(workspaceFoldersToAdd.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
   
   @JSImport("vscode", "workspace.workspaceFile")
   @js.native

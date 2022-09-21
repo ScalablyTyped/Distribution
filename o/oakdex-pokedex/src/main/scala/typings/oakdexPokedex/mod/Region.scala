@@ -21,7 +21,7 @@ object Region {
     
     inline def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
   }

@@ -15,8 +15,8 @@ object lineNumberMod {
   
   @JSImport("react-lazylog/build/LineNumber", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[LineNumberProps, js.Object, js.Any]
+  open class default ()
+    extends Component[LineNumberProps, js.Object, Any]
   /* static members */
   object default {
     
@@ -65,5 +65,5 @@ object lineNumberMod {
     }
   }
   
-  type LinePart = Component[LineNumberProps, js.Object, js.Any]
+  type LinePart = Component[LineNumberProps, js.Object, Any]
 }

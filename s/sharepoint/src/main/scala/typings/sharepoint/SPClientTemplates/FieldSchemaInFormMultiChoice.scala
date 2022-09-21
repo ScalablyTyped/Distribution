@@ -24,7 +24,7 @@ object FieldSchemaInFormMultiChoice {
     FieldType: String,
     FillInChoice: Boolean,
     Hidden: Boolean,
-    IMEMode: js.Any,
+    IMEMode: Any,
     Id: String,
     MultiChoices: js.Array[String],
     Name: String,
@@ -45,6 +45,6 @@ object FieldSchemaInFormMultiChoice {
     
     inline def setMultiChoices(value: js.Array[String]): Self = StObject.set(x, "MultiChoices", value.asInstanceOf[js.Any])
     
-    inline def setMultiChoicesVarargs(value: String*): Self = StObject.set(x, "MultiChoices", js.Array(value :_*))
+    inline def setMultiChoicesVarargs(value: String*): Self = StObject.set(x, "MultiChoices", js.Array(value*))
   }
 }

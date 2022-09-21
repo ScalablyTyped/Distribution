@@ -9,20 +9,11 @@ object global {
   
   object Spotify {
     
-    /* was `typeof SpotifyPlayer` */
     @JSGlobal("Spotify.Player")
     @js.native
-    class Player protected ()
+    open class Player protected ()
       extends StObject
-         with typings.spotifyWebPlaybackSdk.Spotify.SpotifyPlayer {
-      def this(options: PlayerInit) = this()
-    }
-    
-    @JSGlobal("Spotify.SpotifyPlayer")
-    @js.native
-    class SpotifyPlayer protected ()
-      extends StObject
-         with typings.spotifyWebPlaybackSdk.Spotify.SpotifyPlayer {
+         with typings.spotifyWebPlaybackSdk.Spotify.Player {
       def this(options: PlayerInit) = this()
     }
   }

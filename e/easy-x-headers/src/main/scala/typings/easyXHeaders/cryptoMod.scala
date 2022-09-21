@@ -1,8 +1,7 @@
 package typings.easyXHeaders
 
 import typings.easyXHeaders.easyXHeadersStrings.buffer
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,15 +12,15 @@ object cryptoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createCipher(algorithm: String, password: js.Any): Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Cipher]
+  inline def createCipher(algorithm: String, password: Any): Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Cipher]
   
-  inline def createCipheriv(algorithm: String, key: js.Any, iv: js.Any): Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Cipher]
+  inline def createCipheriv(algorithm: String, key: Any, iv: Any): Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Cipher]
   
   inline def createCredentials(details: CredentialDetails): Credentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createCredentials")(details.asInstanceOf[js.Any]).asInstanceOf[Credentials]
   
-  inline def createDecipher(algorithm: String, password: js.Any): Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Decipher]
+  inline def createDecipher(algorithm: String, password: Any): Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Decipher]
   
-  inline def createDecipheriv(algorithm: String, key: js.Any, iv: js.Any): Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Decipher]
+  inline def createDecipheriv(algorithm: String, key: Any, iv: Any): Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Decipher]
   
   inline def createDiffieHellman(prime_length: Double): DiffieHellman = ^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime_length.asInstanceOf[js.Any]).asInstanceOf[DiffieHellman]
   inline def createDiffieHellman(prime: Double, encoding: String): DiffieHellman = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman]
@@ -42,7 +41,7 @@ object cryptoMod {
     salt: String,
     iterations: Double,
     keylen: Double,
-    callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, js.Any]
+    callback: js.Function2[/* err */ js.Error, /* derivedKey */ Buffer, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def pbkdf2(
     password: String,
@@ -50,17 +49,17 @@ object cryptoMod {
     iterations: Double,
     keylen: Double,
     digest: String,
-    callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, js.Any]
+    callback: js.Function2[/* err */ js.Error, /* derivedKey */ Buffer, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], digest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def pbkdf2Sync(password: String, salt: String, iterations: Double, keylen: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2Sync")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   inline def pbkdf2Sync(password: String, salt: String, iterations: Double, keylen: Double, digest: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2Sync")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   inline def pseudoRandomBytes(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  inline def pseudoRandomBytes(size: Double, callback: js.Function2[/* err */ Error, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def pseudoRandomBytes(size: Double, callback: js.Function2[/* err */ js.Error, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def randomBytes(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  inline def randomBytes(size: Double, callback: js.Function2[/* err */ Error, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def randomBytes(size: Double, callback: js.Function2[/* err */ js.Error, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait Cipher extends StObject {
@@ -79,7 +78,7 @@ object cryptoMod {
   
   trait CredentialDetails extends StObject {
     
-    var ca: js.Any
+    var ca: Any
     
     var cert: String
     
@@ -87,7 +86,7 @@ object cryptoMod {
     var ciphers: String
     
     //string | string array
-    var crl: js.Any
+    var crl: Any
     
     var key: String
     
@@ -97,28 +96,20 @@ object cryptoMod {
   }
   object CredentialDetails {
     
-    inline def apply(
-      ca: js.Any,
-      cert: String,
-      ciphers: String,
-      crl: js.Any,
-      key: String,
-      passphrase: String,
-      pfx: String
-    ): CredentialDetails = {
+    inline def apply(ca: Any, cert: String, ciphers: String, crl: Any, key: String, passphrase: String, pfx: String): CredentialDetails = {
       val __obj = js.Dynamic.literal(ca = ca.asInstanceOf[js.Any], cert = cert.asInstanceOf[js.Any], ciphers = ciphers.asInstanceOf[js.Any], crl = crl.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], passphrase = passphrase.asInstanceOf[js.Any], pfx = pfx.asInstanceOf[js.Any])
       __obj.asInstanceOf[CredentialDetails]
     }
     
     extension [Self <: CredentialDetails](x: Self) {
       
-      inline def setCa(value: js.Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      inline def setCa(value: Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
       inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
       inline def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
       
-      inline def setCrl(value: js.Any): Self = StObject.set(x, "crl", value.asInstanceOf[js.Any])
+      inline def setCrl(value: Any): Self = StObject.set(x, "crl", value.asInstanceOf[js.Any])
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -130,7 +121,7 @@ object cryptoMod {
   
   trait Credentials extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
   }
   object Credentials {
     
@@ -141,7 +132,7 @@ object cryptoMod {
     
     extension [Self <: Credentials](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     }
@@ -195,35 +186,35 @@ object cryptoMod {
   trait Hash extends StObject {
     
     def digest(): Buffer = js.native
-    def digest(encoding: String): js.Any = js.native
+    def digest(encoding: String): Any = js.native
     @JSName("digest")
     def digest_buffer(encoding: buffer): Buffer = js.native
     
-    def update(data: js.Any): Hash = js.native
-    def update(data: js.Any, input_encoding: String): Hash = js.native
+    def update(data: Any): Hash = js.native
+    def update(data: Any, input_encoding: String): Hash = js.native
   }
   
   @js.native
   trait Hmac extends StObject {
     
     def digest(): Buffer = js.native
-    def digest(encoding: String): js.Any = js.native
+    def digest(encoding: String): Any = js.native
     @JSName("digest")
     def digest_buffer(encoding: buffer): Buffer = js.native
     
-    def update(data: js.Any): Hmac = js.native
-    def update(data: js.Any, input_encoding: String): Hmac = js.native
+    def update(data: Any): Hmac = js.native
+    def update(data: Any, input_encoding: String): Hmac = js.native
   }
   
   trait Signer extends StObject {
     
     def sign(private_key: String, output_format: String): String
     
-    def update(data: js.Any): Unit
+    def update(data: Any): Unit
   }
   object Signer {
     
-    inline def apply(sign: (String, String) => String, update: js.Any => Unit): Signer = {
+    inline def apply(sign: (String, String) => String, update: Any => Unit): Signer = {
       val __obj = js.Dynamic.literal(sign = js.Any.fromFunction2(sign), update = js.Any.fromFunction1(update))
       __obj.asInstanceOf[Signer]
     }
@@ -232,14 +223,14 @@ object cryptoMod {
       
       inline def setSign(value: (String, String) => String): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
       
-      inline def setUpdate(value: js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
   @js.native
   trait Verify extends StObject {
     
-    def update(data: js.Any): Unit = js.native
+    def update(data: Any): Unit = js.native
     
     def verify(`object`: String, signature: String): Boolean = js.native
     def verify(`object`: String, signature: String, signature_format: String): Boolean = js.native

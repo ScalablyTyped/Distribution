@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "GRUCell")
 @js.native
-class GRUCell protected () extends RNNCell {
+open class GRUCell protected () extends RNNCell {
   def this(args: GRUCellLayerArgs) = this()
   
   val DEFAULT_ACTIVATION: /* "tanh" */ String = js.native
@@ -37,6 +37,8 @@ class GRUCell protected () extends RNNCell {
   val biasRegularizer: Regularizer = js.native
   
   val dropout: Double = js.native
+  
+  val dropoutFunc: js.Function = js.native
   
   val implementation: Double = js.native
   

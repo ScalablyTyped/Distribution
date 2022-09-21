@@ -1,0 +1,17 @@
+package typings.babylonjs.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("babylonjs", "WebGPUTintWASM")
+@js.native
+open class WebGPUTintWASM ()
+  extends typings.babylonjs.legacyMod.WebGPUTintWASM
+/* static members */
+object WebGPUTintWASM {
+  
+  @JSImport("babylonjs", "WebGPUTintWASM._TWgslDefaultOptions")
+  @js.native
+  val _TWgslDefaultOptions: Any = js.native
+}

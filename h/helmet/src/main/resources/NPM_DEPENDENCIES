@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "helmet" : "4.2.0"
+      "helmet" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "helmet" : "4.2.0"
+      "helmet" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

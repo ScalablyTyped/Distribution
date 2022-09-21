@@ -1,6 +1,5 @@
 package typings.rollup.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait RollupError
   extends StObject
      with RollupLogProps {
   
-  var parserError: js.UndefOr[Error] = js.undefined
+  var parserError: js.UndefOr[js.Error] = js.undefined
   
   var stack: js.UndefOr[String] = js.undefined
   
@@ -24,7 +23,7 @@ object RollupError {
   
   extension [Self <: RollupError](x: Self) {
     
-    inline def setParserError(value: Error): Self = StObject.set(x, "parserError", value.asInstanceOf[js.Any])
+    inline def setParserError(value: js.Error): Self = StObject.set(x, "parserError", value.asInstanceOf[js.Any])
     
     inline def setParserErrorUndefined: Self = StObject.set(x, "parserError", js.undefined)
     
@@ -36,6 +35,6 @@ object RollupError {
     
     inline def setWatchFilesUndefined: Self = StObject.set(x, "watchFiles", js.undefined)
     
-    inline def setWatchFilesVarargs(value: String*): Self = StObject.set(x, "watchFiles", js.Array(value :_*))
+    inline def setWatchFilesVarargs(value: String*): Self = StObject.set(x, "watchFiles", js.Array(value*))
   }
 }

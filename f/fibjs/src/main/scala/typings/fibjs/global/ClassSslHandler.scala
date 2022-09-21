@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_SslHandler")
 @js.native
-class ClassSslHandler protected ()
+open class ClassSslHandler protected ()
   extends StObject
      with typings.fibjs.ClassSslHandler {
   /**
@@ -32,7 +32,7 @@ class ClassSslHandler protected ()
     * 
     * 
     */
-  def this(certs: js.Array[js.Any], hdlr: typings.fibjs.ClassHandler) = this()
+  def this(certs: js.Array[Any], hdlr: typings.fibjs.ClassHandler) = this()
   /**
     * 
     * @brief SslHandler 构造函数，创建一个新的 SslHandler 对象

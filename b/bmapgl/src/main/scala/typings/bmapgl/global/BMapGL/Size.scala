@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Size")
 @js.native
-class Size protected ()
+open class Size protected ()
   extends StObject
      with typings.bmapgl.BMapGL.Size {
   def this(width: Double, height: Double) = this()

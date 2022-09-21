@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ActivityItem")
 @js.native
-class ActivityItem protected ()
+open class ActivityItem protected ()
   extends typings.officeUiFabricReact.mod.ActivityItem {
   def this(props: IActivityItemProps) = this()
 }

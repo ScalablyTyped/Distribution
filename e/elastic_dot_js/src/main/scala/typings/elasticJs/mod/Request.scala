@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "Request")
 @js.native
-class Request protected () extends StObject {
+open class Request protected () extends StObject {
   /*
     Provides methods for generating request bodies.
     */
@@ -119,8 +119,8 @@ class Request protected () extends StObject {
   def sort(): Request = js.native
   def sort(fieldName: String): Request = js.native
   def sort(fieldName: String, order: String): Request = js.native
-  def sort(fieldName: js.Array[js.Any]): Request = js.native
-  def sort(fieldName: js.Array[js.Any], order: String): Request = js.native
+  def sort(fieldName: js.Array[Any]): Request = js.native
+  def sort(fieldName: js.Array[Any], order: String): Request = js.native
   def sort(fieldName: Unit, order: String): Request = js.native
   def sort(fieldName: Sort): Request = js.native
   def sort(fieldName: Sort, order: String): Request = js.native
@@ -160,7 +160,7 @@ class Request protected () extends StObject {
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /*
     Enables score computation and tracking during sorting.  Be default,

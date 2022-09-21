@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_cloudresourcemanager
 
-Typings are for version 2.0.20201116
+Typings are for version 3.0.20220807
 
 ## Library description:
 TypeScript typings for Cloud Resource Manager API v3
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Resource Manager API v3
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.cloudresourcemanager |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 1 |
-| # downloads        | 1172 |
-| # stars            | 0 |
+| # releases         | 84 |
+| # dependents       | 0.0 |
+| # downloads        | 985.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

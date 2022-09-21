@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MergeFieldDialogCommand")
 @js.native
-class MergeFieldDialogCommand ()
+open class MergeFieldDialogCommand ()
   extends StObject
      with typings.devexpressWeb.MergeFieldDialogCommand {
   

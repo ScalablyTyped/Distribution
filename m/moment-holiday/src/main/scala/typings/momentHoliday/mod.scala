@@ -53,31 +53,31 @@ object mod {
       
       inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
       
-      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
       
       inline def setKeywords_n(value: js.Array[String]): Self = StObject.set(x, "keywords_n", value.asInstanceOf[js.Any])
       
       inline def setKeywords_nUndefined: Self = StObject.set(x, "keywords_n", js.undefined)
       
-      inline def setKeywords_nVarargs(value: String*): Self = StObject.set(x, "keywords_n", js.Array(value :_*))
+      inline def setKeywords_nVarargs(value: String*): Self = StObject.set(x, "keywords_n", js.Array(value*))
       
       inline def setKeywords_y(value: js.Array[String]): Self = StObject.set(x, "keywords_y", value.asInstanceOf[js.Any])
       
       inline def setKeywords_yUndefined: Self = StObject.set(x, "keywords_y", js.undefined)
       
-      inline def setKeywords_yVarargs(value: String*): Self = StObject.set(x, "keywords_y", js.Array(value :_*))
+      inline def setKeywords_yVarargs(value: String*): Self = StObject.set(x, "keywords_y", js.Array(value*))
       
       inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
       inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
       
-      inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value*))
       
       inline def setRegions_n(value: js.Array[String]): Self = StObject.set(x, "regions_n", value.asInstanceOf[js.Any])
       
       inline def setRegions_nUndefined: Self = StObject.set(x, "regions_n", js.undefined)
       
-      inline def setRegions_nVarargs(value: String*): Self = StObject.set(x, "regions_n", js.Array(value :_*))
+      inline def setRegions_nVarargs(value: String*): Self = StObject.set(x, "regions_n", js.Array(value*))
     }
   }
   
@@ -85,9 +85,9 @@ object mod {
   trait HolidayModifier extends StObject {
     
     def add(holidays: String): HolidayModifier = js.native
-    def add(holidays: String, specifics: js.Any): HolidayModifier = js.native
+    def add(holidays: String, specifics: Any): HolidayModifier = js.native
     def add(holidays: HolidaysMapping): HolidayModifier = js.native
-    def add(holidays: HolidaysMapping, specifics: js.Any): HolidayModifier = js.native
+    def add(holidays: HolidaysMapping, specifics: Any): HolidayModifier = js.native
     
     @JSName("extendParser")
     def extendParser_false(
@@ -101,11 +101,11 @@ object mod {
     def remove(holidays: js.Array[String]): HolidayModifier = js.native
     
     def set(holidays: String): HolidayModifier = js.native
-    def set(holidays: String, specifics: js.Any): HolidayModifier = js.native
+    def set(holidays: String, specifics: Any): HolidayModifier = js.native
     def set(holidays: js.Array[String]): HolidayModifier = js.native
-    def set(holidays: js.Array[String], specifics: js.Any): HolidayModifier = js.native
+    def set(holidays: js.Array[String], specifics: Any): HolidayModifier = js.native
     def set(holidays: HolidaysMapping): HolidayModifier = js.native
-    def set(holidays: HolidaysMapping, specifics: js.Any): HolidayModifier = js.native
+    def set(holidays: HolidaysMapping, specifics: Any): HolidayModifier = js.native
     
     def undo(): HolidayModifier = js.native
   }

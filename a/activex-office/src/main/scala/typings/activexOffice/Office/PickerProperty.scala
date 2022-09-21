@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PickerProperty extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -17,17 +17,17 @@ trait PickerProperty extends StObject {
   
   val Type: MsoPickerField
   
-  val Value: js.Any
+  val Value: Any
 }
 object PickerProperty {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     Id: String,
     OfficeDotPickerProperty_typekey: PickerProperty,
     Type: MsoPickerField,
-    Value: js.Any
+    Value: Any
   ): PickerProperty = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("Office.PickerProperty_typekey")(OfficeDotPickerProperty_typekey.asInstanceOf[js.Any])
@@ -36,7 +36,7 @@ object PickerProperty {
   
   extension [Self <: PickerProperty](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -46,6 +46,6 @@ object PickerProperty {
     
     inline def setType(value: MsoPickerField): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

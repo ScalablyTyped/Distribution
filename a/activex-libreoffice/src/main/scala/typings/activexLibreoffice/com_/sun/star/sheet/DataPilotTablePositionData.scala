@@ -27,7 +27,7 @@ trait DataPilotTablePositionData extends StObject {
     * @see com.sun.star.sheet.DataPiotTableResultData
     * @see com.sun.star.sheet.DataPiotTableHeaderData
     */
-  var PositionData: js.Any
+  var PositionData: Any
   
   /**
     * This parameter specifies which sub-area of a DataPilot table a given cell is positioned. See {@link DataPilotTablePositionType} for how to interpret
@@ -38,14 +38,14 @@ trait DataPilotTablePositionData extends StObject {
 }
 object DataPilotTablePositionData {
   
-  inline def apply(PositionData: js.Any, PositionType: Double): DataPilotTablePositionData = {
+  inline def apply(PositionData: Any, PositionType: Double): DataPilotTablePositionData = {
     val __obj = js.Dynamic.literal(PositionData = PositionData.asInstanceOf[js.Any], PositionType = PositionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPilotTablePositionData]
   }
   
   extension [Self <: DataPilotTablePositionData](x: Self) {
     
-    inline def setPositionData(value: js.Any): Self = StObject.set(x, "PositionData", value.asInstanceOf[js.Any])
+    inline def setPositionData(value: Any): Self = StObject.set(x, "PositionData", value.asInstanceOf[js.Any])
     
     inline def setPositionType(value: Double): Self = StObject.set(x, "PositionType", value.asInstanceOf[js.Any])
   }

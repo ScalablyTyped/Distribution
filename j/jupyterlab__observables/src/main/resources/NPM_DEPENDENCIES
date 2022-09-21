@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/observables" : "3.2.5"
+      "@jupyterlab/observables" : "4.4.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/observables" : "3.2.5"
+      "@jupyterlab/observables" : "4.4.7"
     }
   ],
   "compile-devDependencies" : [

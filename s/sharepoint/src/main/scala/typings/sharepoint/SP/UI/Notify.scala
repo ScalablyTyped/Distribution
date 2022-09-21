@@ -38,11 +38,11 @@ object Notify {
     
     def GetCount(): Double
     
-    def SetEventHandler(eventId: EventID, eventHandler: js.Any): Unit
+    def SetEventHandler(eventId: EventID, eventHandler: Any): Unit
   }
   object NotificationContainer {
     
-    inline def apply(Clear: () => Unit, GetCount: () => Double, SetEventHandler: (EventID, js.Any) => Unit): NotificationContainer = {
+    inline def apply(Clear: () => Unit, GetCount: () => Double, SetEventHandler: (EventID, Any) => Unit): NotificationContainer = {
       val __obj = js.Dynamic.literal(Clear = js.Any.fromFunction0(Clear), GetCount = js.Any.fromFunction0(GetCount), SetEventHandler = js.Any.fromFunction2(SetEventHandler))
       __obj.asInstanceOf[NotificationContainer]
     }
@@ -53,7 +53,7 @@ object Notify {
       
       inline def setGetCount(value: () => Double): Self = StObject.set(x, "GetCount", js.Any.fromFunction0(value))
       
-      inline def setSetEventHandler(value: (EventID, js.Any) => Unit): Self = StObject.set(x, "SetEventHandler", js.Any.fromFunction2(value))
+      inline def setSetEventHandler(value: (EventID, Any) => Unit): Self = StObject.set(x, "SetEventHandler", js.Any.fromFunction2(value))
     }
   }
 }

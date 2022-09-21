@@ -37,7 +37,7 @@ object XDatabaseParameterBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addParameterListener: XDatabaseParameterListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeParameterListener: XDatabaseParameterListener => Unit
   ): XDatabaseParameterBroadcaster = {

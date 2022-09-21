@@ -12,7 +12,7 @@ trait PublicKeyConfig extends StObject {
   var CallerReference: String
   
   /**
-    * A comment to describe the public key.
+    * A comment to describe the public key. The comment cannot be longer than 128 characters.
     */
   var Comment: js.UndefOr[String] = js.undefined
   

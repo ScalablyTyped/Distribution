@@ -30,13 +30,18 @@ trait CubeTextureAssetTask
     */
   def onError(task: CubeTextureAssetTask): Unit = js.native
   def onError(task: CubeTextureAssetTask, message: String): Unit = js.native
-  def onError(task: CubeTextureAssetTask, message: String, exception: js.Any): Unit = js.native
-  def onError(task: CubeTextureAssetTask, message: Unit, exception: js.Any): Unit = js.native
+  def onError(task: CubeTextureAssetTask, message: String, exception: Any): Unit = js.native
+  def onError(task: CubeTextureAssetTask, message: Unit, exception: Any): Unit = js.native
   
   /**
     * Callback called when the task is successful
     */
   def onSuccess(task: CubeTextureAssetTask): Unit = js.native
+  
+  /**
+    * Defines the prefiltered texture option (default is false)
+    */
+  var prefiltered: js.UndefOr[Boolean] = js.native
   
   /**
     * Defines the location of the files to load (You have to specify the folder where the files are + filename with no extension)

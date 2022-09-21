@@ -5,25 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents data obtained by OCR (optical character recognition) of an image.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 trait ImageOcrData extends StObject {
   
   /**
-    *
     * Represents the OCR language, with values such as EN-US
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var ocrLanguageId: String
   
   /**
-    *
     * Represents the text obtained by OCR of the image
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var ocrText: String

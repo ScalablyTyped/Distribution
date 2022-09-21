@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "resolve-package-path" : "1.2.7"
+      "resolve-package-path" : "4.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "resolve-package-path" : "1.2.7"
+      "resolve-package-path" : "4.0.3"
     }
   ],
   "compile-devDependencies" : [

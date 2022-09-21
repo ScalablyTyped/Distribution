@@ -49,7 +49,7 @@ object WebExtensionManifestPageAction {
     
     inline def setHide_matchesUndefined: Self = StObject.set(x, "hide_matches", js.undefined)
     
-    inline def setHide_matchesVarargs(value: MatchPatternRestricted*): Self = StObject.set(x, "hide_matches", js.Array(value :_*))
+    inline def setHide_matchesVarargs(value: MatchPatternRestricted*): Self = StObject.set(x, "hide_matches", js.Array(value*))
     
     inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
@@ -59,6 +59,6 @@ object WebExtensionManifestPageAction {
     
     inline def setShow_matchesUndefined: Self = StObject.set(x, "show_matches", js.undefined)
     
-    inline def setShow_matchesVarargs(value: MatchPattern*): Self = StObject.set(x, "show_matches", js.Array(value :_*))
+    inline def setShow_matchesVarargs(value: MatchPattern*): Self = StObject.set(x, "show_matches", js.Array(value*))
   }
 }

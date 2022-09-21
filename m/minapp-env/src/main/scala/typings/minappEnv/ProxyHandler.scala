@@ -8,11 +8,11 @@ trait ProxyHandler[T /* <: js.Object */] extends StObject {
   
   @JSName("apply")
   var apply: js.UndefOr[
-    js.Function3[/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any], js.Any]
+    js.Function3[/* target */ T, /* thisArg */ Any, /* argArray */ js.UndefOr[Any], Any]
   ] = js.undefined
   
   var construct: js.UndefOr[
-    js.Function3[/* target */ T, /* argArray */ js.Any, /* newTarget */ js.UndefOr[js.Any], js.Object]
+    js.Function3[/* target */ T, /* argArray */ Any, /* newTarget */ js.UndefOr[Any], js.Object]
   ] = js.undefined
   
   var defineProperty: js.UndefOr[
@@ -28,7 +28,7 @@ trait ProxyHandler[T /* <: js.Object */] extends StObject {
   
   var enumerate: js.UndefOr[js.Function1[/* target */ T, Array[PropertyKey]]] = js.undefined
   
-  var get: js.UndefOr[js.Function3[/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any, js.Any]] = js.undefined
+  var get: js.UndefOr[js.Function3[/* target */ T, /* p */ PropertyKey, /* receiver */ Any, Any]] = js.undefined
   
   var getOwnPropertyDescriptor: js.UndefOr[
     js.Function2[/* target */ T, /* p */ PropertyKey, js.UndefOr[PropertyDescriptor]]
@@ -45,16 +45,10 @@ trait ProxyHandler[T /* <: js.Object */] extends StObject {
   var preventExtensions: js.UndefOr[js.Function1[/* target */ T, scala.Boolean]] = js.undefined
   
   var set: js.UndefOr[
-    js.Function4[
-      /* target */ T, 
-      /* p */ PropertyKey, 
-      /* value */ js.Any, 
-      /* receiver */ js.Any, 
-      scala.Boolean
-    ]
+    js.Function4[/* target */ T, /* p */ PropertyKey, /* value */ Any, /* receiver */ Any, scala.Boolean]
   ] = js.undefined
   
-  var setPrototypeOf: js.UndefOr[js.Function2[/* target */ T, /* v */ js.Any, scala.Boolean]] = js.undefined
+  var setPrototypeOf: js.UndefOr[js.Function2[/* target */ T, /* v */ Any, scala.Boolean]] = js.undefined
 }
 object ProxyHandler {
   
@@ -65,11 +59,11 @@ object ProxyHandler {
   
   extension [Self <: ProxyHandler[?], T /* <: js.Object */](x: Self & ProxyHandler[T]) {
     
-    inline def setApply(value: (/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "apply", js.Any.fromFunction3(value))
+    inline def setApply(value: (/* target */ T, /* thisArg */ Any, /* argArray */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "apply", js.Any.fromFunction3(value))
     
     inline def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
     
-    inline def setConstruct(value: (/* target */ T, /* argArray */ js.Any, /* newTarget */ js.UndefOr[js.Any]) => js.Object): Self = StObject.set(x, "construct", js.Any.fromFunction3(value))
+    inline def setConstruct(value: (/* target */ T, /* argArray */ Any, /* newTarget */ js.UndefOr[Any]) => js.Object): Self = StObject.set(x, "construct", js.Any.fromFunction3(value))
     
     inline def setConstructUndefined: Self = StObject.set(x, "construct", js.undefined)
     
@@ -85,7 +79,7 @@ object ProxyHandler {
     
     inline def setEnumerateUndefined: Self = StObject.set(x, "enumerate", js.undefined)
     
-    inline def setGet(value: (/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+    inline def setGet(value: (/* target */ T, /* p */ PropertyKey, /* receiver */ Any) => Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
     
     inline def setGetOwnPropertyDescriptor(value: (/* target */ T, /* p */ PropertyKey) => js.UndefOr[PropertyDescriptor]): Self = StObject.set(x, "getOwnPropertyDescriptor", js.Any.fromFunction2(value))
     
@@ -113,11 +107,9 @@ object ProxyHandler {
     
     inline def setPreventExtensionsUndefined: Self = StObject.set(x, "preventExtensions", js.undefined)
     
-    inline def setSet(
-      value: (/* target */ T, /* p */ PropertyKey, /* value */ js.Any, /* receiver */ js.Any) => scala.Boolean
-    ): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
+    inline def setSet(value: (/* target */ T, /* p */ PropertyKey, /* value */ Any, /* receiver */ Any) => scala.Boolean): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
     
-    inline def setSetPrototypeOf(value: (/* target */ T, /* v */ js.Any) => scala.Boolean): Self = StObject.set(x, "setPrototypeOf", js.Any.fromFunction2(value))
+    inline def setSetPrototypeOf(value: (/* target */ T, /* v */ Any) => scala.Boolean): Self = StObject.set(x, "setPrototypeOf", js.Any.fromFunction2(value))
     
     inline def setSetPrototypeOfUndefined: Self = StObject.set(x, "setPrototypeOf", js.undefined)
     

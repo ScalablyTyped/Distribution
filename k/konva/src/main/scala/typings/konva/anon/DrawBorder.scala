@@ -10,6 +10,8 @@ trait DrawBorder extends StObject {
   
   var height: js.UndefOr[Double] = js.undefined
   
+  var hitCanvasPixelRatio: js.UndefOr[Double] = js.undefined
+  
   var imageSmoothingEnabled: js.UndefOr[Boolean] = js.undefined
   
   var offset: js.UndefOr[Double] = js.undefined
@@ -38,6 +40,10 @@ object DrawBorder {
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHitCanvasPixelRatio(value: Double): Self = StObject.set(x, "hitCanvasPixelRatio", value.asInstanceOf[js.Any])
+    
+    inline def setHitCanvasPixelRatioUndefined: Self = StObject.set(x, "hitCanvasPixelRatio", js.undefined)
     
     inline def setImageSmoothingEnabled(value: Boolean): Self = StObject.set(x, "imageSmoothingEnabled", value.asInstanceOf[js.Any])
     

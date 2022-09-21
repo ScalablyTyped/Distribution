@@ -36,7 +36,7 @@ trait GitItem
 object GitItem {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     commitId: String,
     contentMetadata: FileContentMetadata,
     gitObjectType: GitObjectType,

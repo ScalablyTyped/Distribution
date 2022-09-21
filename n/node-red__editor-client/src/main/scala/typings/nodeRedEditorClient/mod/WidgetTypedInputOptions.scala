@@ -41,6 +41,6 @@ object WidgetTypedInputOptions {
     
     inline def setTypes(value: js.Array[WidgetTypedInputType | WidgetTypedInputTypeDefinition]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: (WidgetTypedInputType | WidgetTypedInputTypeDefinition)*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: (WidgetTypedInputType | WidgetTypedInputTypeDefinition)*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

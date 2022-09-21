@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Timeline")
 @js.native
-class Timeline protected ()
+open class Timeline protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Timeline {
   def this(element: Element) = this()

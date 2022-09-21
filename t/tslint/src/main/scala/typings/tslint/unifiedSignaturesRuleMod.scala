@@ -11,7 +11,7 @@ object unifiedSignaturesRuleMod {
   
   @JSImport("tslint/lib/rules/unifiedSignaturesRule", "Rule")
   @js.native
-  class Rule protected () extends AbstractRule {
+  open class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
   }
   /* static members */
@@ -32,8 +32,8 @@ object unifiedSignaturesRuleMod {
     
     @JSImport("tslint/lib/rules/unifiedSignaturesRule", "Rule.FAILURE_STRING_START")
     @js.native
-    def FAILURE_STRING_START: js.Any = js.native
-    inline def FAILURE_STRING_START_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_START")(x.asInstanceOf[js.Any])
+    def FAILURE_STRING_START: Any = js.native
+    inline def FAILURE_STRING_START_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_START")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/unifiedSignaturesRule", "Rule.metadata")
     @js.native

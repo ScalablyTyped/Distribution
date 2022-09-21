@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("muicss/react", "Checkbox")
 @js.native
-class Checkbox () extends default
+open class Checkbox () extends default

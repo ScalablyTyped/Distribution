@@ -15,7 +15,7 @@ trait WafExpressionSet extends StObject {
   /** List of available expressions. */
   var expressions: js.UndefOr[js.Array[WafExpressionSetExpression]] = js.undefined
   
-  /** Google specified expression set ID. The format should be: - E.g. XSS-20170329 */
+  /** Google specified expression set ID. The format should be: - E.g. XSS-20170329 required */
   var id: js.UndefOr[String] = js.undefined
 }
 object WafExpressionSet {
@@ -31,13 +31,13 @@ object WafExpressionSet {
     
     inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
     
     inline def setExpressions(value: js.Array[WafExpressionSetExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
     inline def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
     
-    inline def setExpressionsVarargs(value: WafExpressionSetExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: WafExpressionSetExpression*): Self = StObject.set(x, "expressions", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

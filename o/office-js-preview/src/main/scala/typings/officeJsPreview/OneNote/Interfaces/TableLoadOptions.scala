@@ -5,60 +5,63 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a table in a OneNote page.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 trait TableLoadOptions extends StObject {
   
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var borderVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the number of columns in the table.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var columnCount: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the ID of the table. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the Paragraph object that contains the Table object.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var paragraph: js.UndefOr[ParagraphLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the number of rows in the table.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var rowCount: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets all of the table rows.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var rows: js.UndefOr[TableRowCollectionLoadOptions] = js.undefined

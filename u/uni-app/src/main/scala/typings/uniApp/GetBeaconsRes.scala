@@ -29,7 +29,7 @@ object GetBeaconsRes {
     
     inline def setBeaconsUndefined: Self = StObject.set(x, "beacons", js.undefined)
     
-    inline def setBeaconsVarargs(value: Beacon*): Self = StObject.set(x, "beacons", js.Array(value :_*))
+    inline def setBeaconsVarargs(value: Beacon*): Self = StObject.set(x, "beacons", js.Array(value*))
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

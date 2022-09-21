@@ -13,21 +13,21 @@ object panelStackMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/panel-stack/panelStack", "PanelStack")
   @js.native
-  class PanelStack protected ()
+  open class PanelStack protected ()
     extends AbstractPureComponent2[IPanelStackProps, IPanelStackState, js.Object] {
     def this(props: IPanelStackProps) = this()
-    def this(props: IPanelStackProps, context: js.Any) = this()
+    def this(props: IPanelStackProps, context: Any) = this()
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MPanelStack(prevProps: IPanelStackProps, prevState: IPanelStackState): Unit = js.native
     
-    /* private */ var handlePanelClose: js.Any = js.native
+    /* private */ var handlePanelClose: Any = js.native
     
-    /* private */ var handlePanelOpen: js.Any = js.native
+    /* private */ var handlePanelOpen: Any = js.native
     
-    /* private */ var renderPanel: js.Any = js.native
+    /* private */ var renderPanel: Any = js.native
     
-    /* private */ var renderPanels: js.Any = js.native
+    /* private */ var renderPanels: Any = js.native
   }
   
   trait IPanelStackProps
@@ -40,7 +40,7 @@ object panelStackMod {
       * This prop is only used in uncontrolled mode and is thus mutually
       * exclusive with the `stack` prop.
       */
-    var initialPanel: js.UndefOr[IPanel[js.Any]] = js.undefined
+    var initialPanel: js.UndefOr[IPanel[Any]] = js.undefined
     
     /**
       * Callback invoked when the user presses the back button or a panel invokes
@@ -58,12 +58,14 @@ object panelStackMod {
       * If false, PanelStack will render all panels in the stack to the DOM, allowing their
       * React component trees to maintain state as a user navigates through the stack.
       * Panels other than the currently active one will be invisible.
+      *
       * @default true
       */
     var renderActivePanelOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to show the header with the "back" button in each panel.
+      *
       * @default true
       */
     var showPanelHeader: js.UndefOr[Boolean] = js.undefined
@@ -72,7 +74,7 @@ object panelStackMod {
       * The full stack of panels in controlled mode. The last panel in the stack
       * will be displayed.
       */
-    var stack: js.UndefOr[js.Array[IPanel[js.Any]]] = js.undefined
+    var stack: js.UndefOr[js.Array[IPanel[Any]]] = js.undefined
   }
   object IPanelStackProps {
     
@@ -83,7 +85,7 @@ object panelStackMod {
     
     extension [Self <: IPanelStackProps](x: Self) {
       
-      inline def setInitialPanel(value: IPanel[js.Any]): Self = StObject.set(x, "initialPanel", value.asInstanceOf[js.Any])
+      inline def setInitialPanel(value: IPanel[Any]): Self = StObject.set(x, "initialPanel", value.asInstanceOf[js.Any])
       
       inline def setInitialPanelUndefined: Self = StObject.set(x, "initialPanel", js.undefined)
       
@@ -103,11 +105,11 @@ object panelStackMod {
       
       inline def setShowPanelHeaderUndefined: Self = StObject.set(x, "showPanelHeader", js.undefined)
       
-      inline def setStack(value: js.Array[IPanel[js.Any]]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: js.Array[IPanel[Any]]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
       inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
       
-      inline def setStackVarargs(value: IPanel[js.Any]*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: IPanel[Any]*): Self = StObject.set(x, "stack", js.Array(value*))
     }
   }
   
@@ -132,7 +134,7 @@ object panelStackMod {
       
       inline def setStack(value: js.Array[IPanel[js.Object]]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      inline def setStackVarargs(value: IPanel[js.Object]*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: IPanel[js.Object]*): Self = StObject.set(x, "stack", js.Array(value*))
     }
   }
 }

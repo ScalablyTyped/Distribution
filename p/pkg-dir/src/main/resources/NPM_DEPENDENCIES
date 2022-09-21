@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pkg-dir" : "5.0.0"
+      "pkg-dir" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "pkg-dir" : "5.0.0"
+      "pkg-dir" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

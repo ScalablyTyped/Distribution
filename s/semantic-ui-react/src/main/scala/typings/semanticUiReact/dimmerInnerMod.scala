@@ -17,15 +17,15 @@ object dimmerInnerMod {
   
   @JSImport("semantic-ui-react/dist/commonjs/modules/Dimmer/DimmerInner", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DimmerInnerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[DimmerInnerProps, js.Object, Any]
   
-  type DimmerInner = Component[DimmerInnerProps, js.Object, js.Any]
+  type DimmerInner = Component[DimmerInnerProps, js.Object, Any]
   
   trait DimmerInnerProps
     extends StObject
        with StrictDimmerInnerProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object DimmerInnerProps {
     
     inline def apply(): DimmerInnerProps = {
@@ -40,7 +40,7 @@ object dimmerInnerMod {
     var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -107,7 +107,7 @@ object dimmerInnerMod {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

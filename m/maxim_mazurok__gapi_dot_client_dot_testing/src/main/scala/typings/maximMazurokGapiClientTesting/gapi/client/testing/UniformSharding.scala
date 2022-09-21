@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UniformSharding extends StObject {
   
   /**
-    * Required. Total number of shards. When any physical devices are selected, the number must be >= 1 and <= 50. When no physical devices are selected, the number must be >= 1 and <=
-    * 500.
+    * Required. The total number of shards to create. This must always be a positive number that is no greater than the total number of test cases. When you select one or more physical
+    * devices, the number of shards must be <= 50. When you select one or more ARM virtual devices, it must be <= 50. When you select only x86 virtual devices, it must be <= 500.
     */
   var numShards: js.UndefOr[Double] = js.undefined
 }

@@ -9,18 +9,18 @@ object mod {
   
   @JSImport("raspi-pwm", "PWM")
   @js.native
-  class PWM () extends Peripheral {
+  open class PWM () extends Peripheral {
     def this(config: String) = this()
     def this(config: Double) = this()
     def this(config: Config) = this()
     
-    /* private */ var _dutyCycleValue: js.Any = js.native
+    /* private */ var _dutyCycleValue: Any = js.native
     
-    /* private */ var _frequencyValue: js.Any = js.native
+    /* private */ var _frequencyValue: Any = js.native
     
-    /* private */ var _pwm: js.Any = js.native
+    /* private */ var _pwm: Any = js.native
     
-    /* private */ var _pwmPort: js.Any = js.native
+    /* private */ var _pwmPort: Any = js.native
     
     val dutyCycle: Double = js.native
     

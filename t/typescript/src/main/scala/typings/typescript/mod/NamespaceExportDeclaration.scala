@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NamespaceExportDeclaration
   extends StObject
      with DeclarationStatement
-     with JSDocContainer
      with HasJSDoc {
   
   @JSName("kind")

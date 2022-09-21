@@ -29,6 +29,6 @@ object UntagResourceInput {
     
     inline def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    inline def setTagKeysVarargs(value: Key*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: Key*): Self = StObject.set(x, "TagKeys", js.Array(value*))
   }
 }

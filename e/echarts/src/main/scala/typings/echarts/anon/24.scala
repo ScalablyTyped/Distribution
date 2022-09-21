@@ -7,19 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `24` extends StObject {
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-tree.emphasis.itemStyle
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.itemStyle
     */
   var itemStyle: js.UndefOr[BorderType] = js.undefined
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-tree.emphasis.label
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label
     */
-  var label: js.UndefOr[BorderRadius] = js.undefined
-  
-  /**
-    * @see https://echarts.apache.org/en/option.html#series-tree.emphasis.lineStyle
-    */
-  var lineStyle: js.UndefOr[CurvenessShadowBlur] = js.undefined
+  var label: js.UndefOr[TextShadowBlur] = js.undefined
 }
 object `24` {
   
@@ -34,12 +29,8 @@ object `24` {
     
     inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: TextShadowBlur): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
-    
-    inline def setLineStyle(value: CurvenessShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
-    
-    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
   }
 }

@@ -11,10 +11,10 @@ object progressBarMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/progress-bar/progressBar", "ProgressBar")
   @js.native
-  class ProgressBar protected ()
-    extends AbstractPureComponent2[IProgressBarProps, js.Object, js.Object] {
-    def this(props: IProgressBarProps) = this()
-    def this(props: IProgressBarProps, context: js.Any) = this()
+  open class ProgressBar protected ()
+    extends AbstractPureComponent2[ProgressBarProps, js.Object, js.Object] {
+    def this(props: ProgressBarProps) = this()
+    def this(props: ProgressBarProps, context: Any) = this()
   }
   /* static members */
   object ProgressBar {
@@ -36,12 +36,14 @@ object progressBarMod {
     
     /**
       * Whether the background should animate.
+      *
       * @default true
       */
     var animate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the background should be striped.
+      *
       * @default true
       */
     var stripes: js.UndefOr[Boolean] = js.undefined
@@ -75,4 +77,6 @@ object progressBarMod {
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
+  
+  type ProgressBarProps = IProgressBarProps
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for sinonjs__fake-timers
 
-Typings are for version 6.0
+Typings are for version 8.1
 
 ## Library description:
 Fake JavaScript timers
@@ -10,14 +10,14 @@ Fake JavaScript timers
 | ------------------ | :-------------: |
 | Full name          | @sinonjs/fake-timers |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 6 |
-| # downloads        | 114344408 |
-| # stars            | 0 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 6.918510766666667E7 |
+| # stars            | 706.0 |
 
 ## Links
-- [Homepage](http://github.com/sinonjs/fake-timers)
-- [Bugs](http://github.com/sinonjs/fake-timers/issues)
+- [Homepage](https://github.com/sinonjs/fake-timers)
+- [Bugs](https://github.com/sinonjs/fake-timers/issues)
 - [Repository](https://github.com/sinonjs/fake-timers)
 - [Npm](https://www.npmjs.com/package/%40sinonjs%2Ffake-timers)
     

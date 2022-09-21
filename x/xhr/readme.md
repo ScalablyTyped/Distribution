@@ -1,7 +1,7 @@
 
 # Scala.js typings for xhr
 
-Typings are for version 2.5.0
+Typings are for version 2.6.0
 
 ## Library description:
 small xhr abstraction
@@ -10,10 +10,10 @@ small xhr abstraction
 | ------------------ | :-------------: |
 | Full name          | xhr |
 | Keywords           | xhr, http, xmlhttprequest, xhr2, browserify |
-| # releases         | 2 |
-| # dependents       | 369 |
-| # downloads        | 55623434 |
-| # stars            | 39 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7367168.0 |
+| # stars            | 807.0 |
 
 ## Links
 - [Homepage](https://github.com/naugtur/xhr)

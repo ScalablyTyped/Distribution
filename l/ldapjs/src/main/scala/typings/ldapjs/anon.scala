@@ -3,7 +3,7 @@ package typings.ldapjs
 import org.scalablytyped.runtime.StringDictionary
 import typings.ldapjs.mod.AttributeJson
 import typings.ldapjs.mod.Control
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +33,7 @@ object anon {
       
       inline def setAnyUndefined: Self = StObject.set(x, "any", js.undefined)
       
-      inline def setAnyVarargs(value: String*): Self = StObject.set(x, "any", js.Array(value :_*))
+      inline def setAnyVarargs(value: String*): Self = StObject.set(x, "any", js.Array(value*))
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -181,14 +181,14 @@ object anon {
       
       inline def setFilters(value: js.Array[typings.ldapjs.mod.Filter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      inline def setFiltersVarargs(value: typings.ldapjs.mod.Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.ldapjs.mod.Filter*): Self = StObject.set(x, "filters", js.Array(value*))
     }
   }
   
   /* Inlined ldapjs.ldapjs.LDAPMessageJsonObject & {  objectName :string,   attributes :std.Array<ldapjs.ldapjs.AttributeJson>} */
   trait LDAPMessageJsonObjectobje
     extends StObject
-       with /* k */ StringDictionary[js.Any] {
+       with /* k */ StringDictionary[scala.Any] {
     
     var attributes: js.Array[AttributeJson]
     
@@ -216,11 +216,11 @@ object anon {
       
       inline def setAttributes(value: js.Array[AttributeJson]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      inline def setAttributesVarargs(value: AttributeJson*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: AttributeJson*): Self = StObject.set(x, "attributes", js.Array(value*))
       
       inline def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
+      inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value*))
       
       inline def setMessageID(value: Double): Self = StObject.set(x, "messageID", value.asInstanceOf[js.Any])
       
@@ -254,6 +254,31 @@ object anon {
       inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
       inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    }
+  }
+  
+  trait Type extends StObject {
+    
+    var `type`: js.UndefOr[String] = js.undefined
+    
+    var vals: js.UndefOr[scala.Any] = js.undefined
+  }
+  object Type {
+    
+    inline def apply(): Type = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Type]
+    }
+    
+    extension [Self <: Type](x: Self) {
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      
+      inline def setVals(value: scala.Any): Self = StObject.set(x, "vals", value.asInstanceOf[js.Any])
+      
+      inline def setValsUndefined: Self = StObject.set(x, "vals", js.undefined)
     }
   }
   

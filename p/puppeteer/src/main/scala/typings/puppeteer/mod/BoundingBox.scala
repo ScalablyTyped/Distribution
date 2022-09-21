@@ -4,19 +4,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BoundingBox extends StObject {
+trait BoundingBox
+  extends StObject
+     with Point {
   
-  /** The height. */
+  /**
+    * the height of the element in pixels.
+    */
   var height: Double
   
-  /** The width. */
+  /**
+    * the width of the element in pixels.
+    */
   var width: Double
-  
-  /** The x-coordinate of top-left corner. */
-  var x: Double
-  
-  /** The y-coordinate of top-left corner. */
-  var y: Double
 }
 object BoundingBox {
   
@@ -30,9 +30,5 @@ object BoundingBox {
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    
-    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-    
-    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

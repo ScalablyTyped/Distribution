@@ -10,10 +10,10 @@ A simple hash set in JavaScript
 | ------------------ | :-------------: |
 | Full name          | hashset |
 | Keywords           | HashSet, JavaScript, Node |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 60230 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 675.6666666666666 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/liushuping/hashset#readme)

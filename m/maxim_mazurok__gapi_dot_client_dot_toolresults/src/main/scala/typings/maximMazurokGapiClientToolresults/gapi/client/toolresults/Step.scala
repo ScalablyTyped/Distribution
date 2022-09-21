@@ -121,7 +121,7 @@ object Step {
     
     inline def setDimensionValueUndefined: Self = StObject.set(x, "dimensionValue", js.undefined)
     
-    inline def setDimensionValueVarargs(value: StepDimensionValueEntry*): Self = StObject.set(x, "dimensionValue", js.Array(value :_*))
+    inline def setDimensionValueVarargs(value: StepDimensionValueEntry*): Self = StObject.set(x, "dimensionValue", js.Array(value*))
     
     inline def setHasImages(value: Boolean): Self = StObject.set(x, "hasImages", value.asInstanceOf[js.Any])
     
@@ -131,7 +131,7 @@ object Step {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: StepLabelsEntry*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: StepLabelsEntry*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setMultiStep(value: MultiStep): Self = StObject.set(x, "multiStep", value.asInstanceOf[js.Any])
     

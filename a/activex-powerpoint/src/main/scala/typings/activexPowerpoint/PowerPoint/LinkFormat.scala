@@ -12,7 +12,7 @@ trait LinkFormat extends StObject {
   
   def BreakLink(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.LinkFormat_typekey")
   var PowerPointDotLinkFormat_typekey: LinkFormat
@@ -27,7 +27,7 @@ object LinkFormat {
     Application: Application,
     AutoUpdate: PpUpdateOption,
     BreakLink: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotLinkFormat_typekey: LinkFormat,
     SourceFullName: String,
     Update: () => Unit
@@ -45,7 +45,7 @@ object LinkFormat {
     
     inline def setBreakLink(value: () => Unit): Self = StObject.set(x, "BreakLink", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotLinkFormat_typekey(value: LinkFormat): Self = StObject.set(x, "PowerPoint.LinkFormat_typekey", value.asInstanceOf[js.Any])
     

@@ -10,13 +10,13 @@ object operatorCountMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def count[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[js.Any]
+  inline def count[T](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[Any]
   inline def count[T](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
       Boolean
     ]
-  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(predicate.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

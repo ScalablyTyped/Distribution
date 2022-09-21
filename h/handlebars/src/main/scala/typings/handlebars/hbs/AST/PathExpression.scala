@@ -37,7 +37,7 @@ object PathExpression {
     
     inline def setParts(value: js.Array[String]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
-    inline def setPartsVarargs(value: String*): Self = StObject.set(x, "parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: String*): Self = StObject.set(x, "parts", js.Array(value*))
     
     inline def setType(value: typings.handlebars.handlebarsStrings.PathExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

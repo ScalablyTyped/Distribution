@@ -9,48 +9,6 @@ import typings.semanticUiEmbed.SemanticUI.Embed.ParametersSettings
 import typings.semanticUiEmbed.SemanticUI.Embed.ParametersSettings.Impl
 import typings.semanticUiEmbed.SemanticUI.Embed.SelectorSettings
 import typings.semanticUiEmbed.SemanticUI.Embed.TemplatesSettings
-import typings.semanticUiEmbed.anon.PartialPickImplkeyofImpl
-import typings.semanticUiEmbed.anon.PartialPickImplkeyofImplActive
-import typings.semanticUiEmbed.anon.PartialPickImplkeyofImplEmbed
-import typings.semanticUiEmbed.anon.PartialPickImplkeyofImplIcon
-import typings.semanticUiEmbed.anon.PartialPickImplkeyofImplIframe
-import typings.semanticUiEmbed.anon.PartialPickImplkeyofImplMethod
-import typings.semanticUiEmbed.anon.PickImplactive
-import typings.semanticUiEmbed.anon.PickImplautoplay
-import typings.semanticUiEmbed.anon.PickImplbrandedUI
-import typings.semanticUiEmbed.anon.PickImplclassName
-import typings.semanticUiEmbed.anon.PickImplcolor
-import typings.semanticUiEmbed.anon.PickImpldebug
-import typings.semanticUiEmbed.anon.PickImplembed
-import typings.semanticUiEmbed.anon.PickImplerror
-import typings.semanticUiEmbed.anon.PickImplhd
-import typings.semanticUiEmbed.anon.PickImplicon
-import typings.semanticUiEmbed.anon.PickImpliconIcon
-import typings.semanticUiEmbed.anon.PickImplid
-import typings.semanticUiEmbed.anon.PickImplidId
-import typings.semanticUiEmbed.anon.PickImpliframe
-import typings.semanticUiEmbed.anon.PickImplmetadata
-import typings.semanticUiEmbed.anon.PickImplmethod
-import typings.semanticUiEmbed.anon.PickImplname
-import typings.semanticUiEmbed.anon.PickImplnamespace
-import typings.semanticUiEmbed.anon.PickImplnoURL
-import typings.semanticUiEmbed.anon.PickImplonCreate
-import typings.semanticUiEmbed.anon.PickImplonDisplay
-import typings.semanticUiEmbed.anon.PickImplonEmbed
-import typings.semanticUiEmbed.anon.PickImplonPlaceholderDisp
-import typings.semanticUiEmbed.anon.PickImplparameters
-import typings.semanticUiEmbed.anon.PickImplperformance
-import typings.semanticUiEmbed.anon.PickImplplaceholder
-import typings.semanticUiEmbed.anon.PickImplplaceholderPlaceholder
-import typings.semanticUiEmbed.anon.PickImplplay
-import typings.semanticUiEmbed.anon.PickImplselector
-import typings.semanticUiEmbed.anon.PickImplsilent
-import typings.semanticUiEmbed.anon.PickImplsource
-import typings.semanticUiEmbed.anon.PickImplsourceSource
-import typings.semanticUiEmbed.anon.PickImpltemplates
-import typings.semanticUiEmbed.anon.PickImplurl
-import typings.semanticUiEmbed.anon.PickImplurlUrl
-import typings.semanticUiEmbed.anon.PickImplverbose
 import typings.semanticUiEmbed.semanticUiEmbedBooleans.`false`
 import typings.semanticUiEmbed.semanticUiEmbedStrings.`get id`
 import typings.semanticUiEmbed.semanticUiEmbedStrings.`get placeholder`
@@ -59,36 +17,12 @@ import typings.semanticUiEmbed.semanticUiEmbedStrings.`get type`
 import typings.semanticUiEmbed.semanticUiEmbedStrings.`get url`
 import typings.semanticUiEmbed.semanticUiEmbedStrings.`has placeholder`
 import typings.semanticUiEmbed.semanticUiEmbedStrings.auto
-import typings.semanticUiEmbed.semanticUiEmbedStrings.autoplay
-import typings.semanticUiEmbed.semanticUiEmbedStrings.brandedUI
 import typings.semanticUiEmbed.semanticUiEmbedStrings.change
-import typings.semanticUiEmbed.semanticUiEmbedStrings.className
-import typings.semanticUiEmbed.semanticUiEmbedStrings.color
-import typings.semanticUiEmbed.semanticUiEmbedStrings.debug
 import typings.semanticUiEmbed.semanticUiEmbedStrings.destroy
-import typings.semanticUiEmbed.semanticUiEmbedStrings.error
-import typings.semanticUiEmbed.semanticUiEmbedStrings.hd
 import typings.semanticUiEmbed.semanticUiEmbedStrings.hide
-import typings.semanticUiEmbed.semanticUiEmbedStrings.icon
-import typings.semanticUiEmbed.semanticUiEmbedStrings.id
-import typings.semanticUiEmbed.semanticUiEmbedStrings.metadata
-import typings.semanticUiEmbed.semanticUiEmbedStrings.name
-import typings.semanticUiEmbed.semanticUiEmbedStrings.namespace
-import typings.semanticUiEmbed.semanticUiEmbedStrings.onCreate
-import typings.semanticUiEmbed.semanticUiEmbedStrings.onDisplay
-import typings.semanticUiEmbed.semanticUiEmbedStrings.onEmbed
-import typings.semanticUiEmbed.semanticUiEmbedStrings.onPlaceholderDisplay
-import typings.semanticUiEmbed.semanticUiEmbedStrings.parameters
-import typings.semanticUiEmbed.semanticUiEmbedStrings.performance
 import typings.semanticUiEmbed.semanticUiEmbedStrings.reset
-import typings.semanticUiEmbed.semanticUiEmbedStrings.selector
 import typings.semanticUiEmbed.semanticUiEmbedStrings.setting
 import typings.semanticUiEmbed.semanticUiEmbedStrings.show
-import typings.semanticUiEmbed.semanticUiEmbedStrings.silent
-import typings.semanticUiEmbed.semanticUiEmbedStrings.source
-import typings.semanticUiEmbed.semanticUiEmbedStrings.templates
-import typings.semanticUiEmbed.semanticUiEmbedStrings.url
-import typings.semanticUiEmbed.semanticUiEmbedStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -139,74 +73,18 @@ object SemanticUI {
       * Removes embed and shows placeholder content if available
       */
     def apply(behavior: reset): JQuery = js.native
-    def apply(behavior: setting, name: autoplay, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: autoplay, value: Unit): auto | Boolean = js.native
-    def apply(behavior: setting, name: autoplay, value: auto): JQuery = js.native
-    def apply(behavior: setting, name: brandedUI, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: brandedUI, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
-    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: color, value: String): JQuery = js.native
-    def apply(behavior: setting, name: color, value: Unit): String = js.native
-    def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
-    def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: hd, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: hd, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: icon, value: String): JQuery = js.native
-    def apply(behavior: setting, name: icon, value: Unit): `false` | String = js.native
-    def apply(behavior: setting, name: icon, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: id, value: String): JQuery = js.native
-    def apply(behavior: setting, name: id, value: Unit): `false` | String = js.native
-    def apply(behavior: setting, name: id, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: metadata, value: Unit): MetadataSettings = js.native
-    def apply(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
-    def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: Unit): String = js.native
-    def apply(
-      behavior: setting,
-      name: onCreate,
-      value: js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: onCreate, value: Unit): js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit] = js.native
-    def apply(behavior: setting, name: onDisplay, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onDisplay, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(
-      behavior: setting,
-      name: onEmbed,
-      value: js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: onEmbed, value: Unit): js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings] = js.native
-    def apply(behavior: setting, name: onPlaceholderDisplay, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onPlaceholderDisplay, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: parameters, value: Unit): `false` | ParametersSettings = js.native
-    def apply(behavior: setting, name: parameters, value: ParametersSettings): JQuery = js.native
-    def apply(behavior: setting, name: parameters, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
-    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: source, value: String): JQuery = js.native
-    def apply(behavior: setting, name: source, value: Unit): `false` | String = js.native
-    def apply(behavior: setting, name: source, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: templates, value: Unit): TemplatesSettings = js.native
-    def apply(behavior: setting, name: templates, value: TemplatesSettings): JQuery = js.native
-    def apply(behavior: setting, name: url, value: String): JQuery = js.native
-    def apply(behavior: setting, name: url, value: Unit): `false` | String = js.native
-    def apply(behavior: setting, name: url, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: EmbedSettings): JQuery = js.native
     /**
       * Shows embed content
       */
     def apply(behavior: show): JQuery = js.native
     def apply(settings: EmbedSettings): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-embed.SemanticUI.EmbedSettings */ String */](
+      behavior: setting,
+      name: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-embed.SemanticUI.EmbedSettings._Impl[K] */ js.Any
+    ): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-embed.SemanticUI.EmbedSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-embed.SemanticUI.EmbedSettings._Impl[K] */ js.Any = js.native
     
     var settings: EmbedSettings = js.native
   }
@@ -241,7 +119,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplactive | PickImplembed) & PartialPickImplkeyofImplActive
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiEmbed.anon.PickImplactivePartialPick
+        - typings.semanticUiEmbed.anon.PickImplembedPartialPickIActive
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplactivePartialPick(active: String & js.UndefOr[String]): typings.semanticUiEmbed.anon.PickImplactivePartialPick = {
+          val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplactivePartialPick]
+        }
+        
+        inline def PickImplembedPartialPickIActive(embed: String & js.UndefOr[String]): typings.semanticUiEmbed.anon.PickImplembedPartialPickIActive = {
+          val __obj = js.Dynamic.literal(embed = embed.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplembedPartialPickIActive]
+        }
+      }
     }
     type ClassNameSettings = Param
     
@@ -274,7 +168,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplnoURL | PickImplmethod) & PartialPickImplkeyofImplMethod
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiEmbed.anon.PickImplnoURLPartialPickI
+        - typings.semanticUiEmbed.anon.PickImplmethodPartialPick
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplmethodPartialPick(method: String & js.UndefOr[String]): typings.semanticUiEmbed.anon.PickImplmethodPartialPick = {
+          val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplmethodPartialPick]
+        }
+        
+        inline def PickImplnoURLPartialPickI(noURL: String & js.UndefOr[String]): typings.semanticUiEmbed.anon.PickImplnoURLPartialPickI = {
+          val __obj = js.Dynamic.literal(noURL = noURL.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplnoURLPartialPickI]
+        }
+      }
     }
     type ErrorSettings = typings.semanticUiEmbed.SemanticUI.Embed.ErrorSettings.Param
     
@@ -328,13 +238,47 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplidId | PickImpliconIcon | PickImplplaceholder | PickImplsourceSource | PickImplurlUrl) & PartialPickImplkeyofImplIcon
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiEmbed.anon.PickImplidPartialPickImplIcon
+        - typings.semanticUiEmbed.anon.PickImpliconPartialPickImIcon
+        - typings.semanticUiEmbed.anon.PickImplplaceholderPartiaIcon
+        - typings.semanticUiEmbed.anon.PickImplsourcePartialPickIcon
+        - typings.semanticUiEmbed.anon.PickImplurlPartialPickImpIcon
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImpliconPartialPickImIcon(icon: String & js.UndefOr[String]): typings.semanticUiEmbed.anon.PickImpliconPartialPickImIcon = {
+          val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImpliconPartialPickImIcon]
+        }
+        
+        inline def PickImplidPartialPickImplIcon(id: String & js.UndefOr[String]): typings.semanticUiEmbed.anon.PickImplidPartialPickImplIcon = {
+          val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplidPartialPickImplIcon]
+        }
+        
+        inline def PickImplplaceholderPartiaIcon(placeholder: String & js.UndefOr[String]): typings.semanticUiEmbed.anon.PickImplplaceholderPartiaIcon = {
+          val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplplaceholderPartiaIcon]
+        }
+        
+        inline def PickImplsourcePartialPickIcon(source: String & js.UndefOr[String]): typings.semanticUiEmbed.anon.PickImplsourcePartialPickIcon = {
+          val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplsourcePartialPickIcon]
+        }
+        
+        inline def PickImplurlPartialPickImpIcon(url: String & js.UndefOr[String]): typings.semanticUiEmbed.anon.PickImplurlPartialPickImpIcon = {
+          val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplurlPartialPickImpIcon]
+        }
+      }
     }
     type MetadataSettings = typings.semanticUiEmbed.SemanticUI.Embed.MetadataSettings.Param
     
     object ParametersSettings {
       
-      type Impl = StringDictionary[js.Any]
+      type Impl = StringDictionary[Any]
       
       type Param = Impl
     }
@@ -376,7 +320,29 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplembed | PickImplplaceholder | PickImplplay) & PartialPickImplkeyofImplEmbed
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiEmbed.anon.PickImplembedPartialPickI
+        - typings.semanticUiEmbed.anon.PickImplplaceholderPartia
+        - typings.semanticUiEmbed.anon.PickImplplayPartialPickIm
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplembedPartialPickI(embed: String & js.UndefOr[String]): typings.semanticUiEmbed.anon.PickImplembedPartialPickI = {
+          val __obj = js.Dynamic.literal(embed = embed.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplembedPartialPickI]
+        }
+        
+        inline def PickImplplaceholderPartia(placeholder: String & js.UndefOr[String]): typings.semanticUiEmbed.anon.PickImplplaceholderPartia = {
+          val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplplaceholderPartia]
+        }
+        
+        inline def PickImplplayPartialPickIm(play: String & js.UndefOr[String]): typings.semanticUiEmbed.anon.PickImplplayPartialPickIm = {
+          val __obj = js.Dynamic.literal(play = play.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplplayPartialPickIm]
+        }
+      }
     }
     type SelectorSettings = typings.semanticUiEmbed.SemanticUI.Embed.SelectorSettings.Param
     
@@ -409,7 +375,27 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImpliframe | PickImplplaceholderPlaceholder) & PartialPickImplkeyofImplIframe
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiEmbed.anon.PickImpliframePartialPick
+        - typings.semanticUiEmbed.anon.PickImplplaceholderPartiaIframe
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImpliframePartialPick(
+          iframe: (js.Function2[/* url */ String, /* parameters */ String, String]) & (js.UndefOr[js.Function2[/* url */ String, /* parameters */ String, String]])
+        ): typings.semanticUiEmbed.anon.PickImpliframePartialPick = {
+          val __obj = js.Dynamic.literal(iframe = iframe.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImpliframePartialPick]
+        }
+        
+        inline def PickImplplaceholderPartiaIframe(
+          placeholder: (js.Function2[/* image */ String, /* icon */ String, String]) & (js.UndefOr[js.Function2[/* image */ String, /* icon */ String, String]])
+        ): typings.semanticUiEmbed.anon.PickImplplaceholderPartiaIframe = {
+          val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplplaceholderPartiaIframe]
+        }
+      }
     }
     type TemplatesSettings = typings.semanticUiEmbed.SemanticUI.Embed.TemplatesSettings.Param
   }
@@ -648,7 +634,165 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplurl | PickImplicon | PickImplsource | PickImplid | PickImplparameters | PickImplautoplay | PickImplcolor | PickImplhd | PickImplbrandedUI | PickImplonCreate | PickImplonDisplay | PickImplonPlaceholderDisp | PickImplonEmbed | PickImplselector | PickImplmetadata | PickImplclassName | PickImpltemplates | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
+    /* Rewritten from type alias, can be one of: 
+      - typings.semanticUiEmbed.anon.PickImplurlPartialPickImp
+      - typings.semanticUiEmbed.anon.PickImpliconPartialPickIm
+      - typings.semanticUiEmbed.anon.PickImplsourcePartialPick
+      - typings.semanticUiEmbed.anon.PickImplidPartialPickImpl
+      - typings.semanticUiEmbed.anon.PickImplparametersPartial
+      - typings.semanticUiEmbed.anon.PickImplautoplayPartialPi
+      - typings.semanticUiEmbed.anon.PickImplcolorPartialPickI
+      - typings.semanticUiEmbed.anon.PickImplhdPartialPickImpl
+      - typings.semanticUiEmbed.anon.PickImplbrandedUIPartialP
+      - typings.semanticUiEmbed.anon.PickImplonCreatePartialPi
+      - typings.semanticUiEmbed.anon.PickImplonDisplayPartialP
+      - typings.semanticUiEmbed.anon.PickImplonPlaceholderDisp
+      - typings.semanticUiEmbed.anon.PickImplonEmbedPartialPic
+      - typings.semanticUiEmbed.anon.PickImplselectorPartialPi
+      - typings.semanticUiEmbed.anon.PickImplmetadataPartialPi
+      - typings.semanticUiEmbed.anon.PickImplclassNamePartialP
+      - typings.semanticUiEmbed.anon.PickImpltemplatesPartialP
+      - typings.semanticUiEmbed.anon.PickImplerrorPartialPickI
+      - typings.semanticUiEmbed.anon.PickImplnamespacePartialP
+      - typings.semanticUiEmbed.anon.PickImplnamePartialPickIm
+      - typings.semanticUiEmbed.anon.PickImplsilentPartialPick
+      - typings.semanticUiEmbed.anon.PickImpldebugPartialPickI
+      - typings.semanticUiEmbed.anon.PickImplperformancePartia
+      - typings.semanticUiEmbed.anon.PickImplverbosePartialPic
+    */
+    trait Param extends StObject
+    object Param {
+      
+      inline def PickImplautoplayPartialPi(autoplay: (auto | Boolean) & (js.UndefOr[auto | Boolean])): typings.semanticUiEmbed.anon.PickImplautoplayPartialPi = {
+        val __obj = js.Dynamic.literal(autoplay = autoplay.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplautoplayPartialPi]
+      }
+      
+      inline def PickImplbrandedUIPartialP(brandedUI: Boolean & js.UndefOr[Boolean]): typings.semanticUiEmbed.anon.PickImplbrandedUIPartialP = {
+        val __obj = js.Dynamic.literal(brandedUI = brandedUI.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplbrandedUIPartialP]
+      }
+      
+      inline def PickImplclassNamePartialP(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): typings.semanticUiEmbed.anon.PickImplclassNamePartialP = {
+        val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplclassNamePartialP]
+      }
+      
+      inline def PickImplcolorPartialPickI(color: String & js.UndefOr[String]): typings.semanticUiEmbed.anon.PickImplcolorPartialPickI = {
+        val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplcolorPartialPickI]
+      }
+      
+      inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiEmbed.anon.PickImpldebugPartialPickI = {
+        val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImpldebugPartialPickI]
+      }
+      
+      inline def PickImplerrorPartialPickI(error: ErrorSettings & js.UndefOr[ErrorSettings]): typings.semanticUiEmbed.anon.PickImplerrorPartialPickI = {
+        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplerrorPartialPickI]
+      }
+      
+      inline def PickImplhdPartialPickImpl(hd: Boolean & js.UndefOr[Boolean]): typings.semanticUiEmbed.anon.PickImplhdPartialPickImpl = {
+        val __obj = js.Dynamic.literal(hd = hd.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplhdPartialPickImpl]
+      }
+      
+      inline def PickImpliconPartialPickIm(icon: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiEmbed.anon.PickImpliconPartialPickIm = {
+        val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImpliconPartialPickIm]
+      }
+      
+      inline def PickImplidPartialPickImpl(id: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiEmbed.anon.PickImplidPartialPickImpl = {
+        val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplidPartialPickImpl]
+      }
+      
+      inline def PickImplmetadataPartialPi(metadata: MetadataSettings & js.UndefOr[MetadataSettings]): typings.semanticUiEmbed.anon.PickImplmetadataPartialPi = {
+        val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplmetadataPartialPi]
+      }
+      
+      inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiEmbed.anon.PickImplnamePartialPickIm = {
+        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplnamePartialPickIm]
+      }
+      
+      inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiEmbed.anon.PickImplnamespacePartialP = {
+        val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplnamespacePartialP]
+      }
+      
+      inline def PickImplonCreatePartialPi(
+        onCreate: (js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]])
+      ): typings.semanticUiEmbed.anon.PickImplonCreatePartialPi = {
+        val __obj = js.Dynamic.literal(onCreate = onCreate.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplonCreatePartialPi]
+      }
+      
+      inline def PickImplonDisplayPartialP(
+        onDisplay: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiEmbed.anon.PickImplonDisplayPartialP = {
+        val __obj = js.Dynamic.literal(onDisplay = onDisplay.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplonDisplayPartialP]
+      }
+      
+      inline def PickImplonEmbedPartialPic(
+        onEmbed: (js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]) & (js.UndefOr[
+              js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
+            ])
+      ): typings.semanticUiEmbed.anon.PickImplonEmbedPartialPic = {
+        val __obj = js.Dynamic.literal(onEmbed = onEmbed.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplonEmbedPartialPic]
+      }
+      
+      inline def PickImplonPlaceholderDisp(
+        onPlaceholderDisplay: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiEmbed.anon.PickImplonPlaceholderDisp = {
+        val __obj = js.Dynamic.literal(onPlaceholderDisplay = onPlaceholderDisplay.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplonPlaceholderDisp]
+      }
+      
+      inline def PickImplparametersPartial(parameters: (`false` | ParametersSettings) & (js.UndefOr[`false` | ParametersSettings])): typings.semanticUiEmbed.anon.PickImplparametersPartial = {
+        val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplparametersPartial]
+      }
+      
+      inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiEmbed.anon.PickImplperformancePartia = {
+        val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplperformancePartia]
+      }
+      
+      inline def PickImplselectorPartialPi(selector: SelectorSettings & js.UndefOr[SelectorSettings]): typings.semanticUiEmbed.anon.PickImplselectorPartialPi = {
+        val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplselectorPartialPi]
+      }
+      
+      inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiEmbed.anon.PickImplsilentPartialPick = {
+        val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplsilentPartialPick]
+      }
+      
+      inline def PickImplsourcePartialPick(source: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiEmbed.anon.PickImplsourcePartialPick = {
+        val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplsourcePartialPick]
+      }
+      
+      inline def PickImpltemplatesPartialP(templates: TemplatesSettings & js.UndefOr[TemplatesSettings]): typings.semanticUiEmbed.anon.PickImpltemplatesPartialP = {
+        val __obj = js.Dynamic.literal(templates = templates.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImpltemplatesPartialP]
+      }
+      
+      inline def PickImplurlPartialPickImp(url: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiEmbed.anon.PickImplurlPartialPickImp = {
+        val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplurlPartialPickImp]
+      }
+      
+      inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiEmbed.anon.PickImplverbosePartialPic = {
+        val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiEmbed.anon.PickImplverbosePartialPic]
+      }
+    }
   }
   /**
     * @see {@link http://semantic-ui.com/modules/embed.html#/settings}

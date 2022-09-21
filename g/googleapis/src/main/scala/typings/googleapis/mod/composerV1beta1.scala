@@ -9,24 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object composerV1beta1 {
   
-  /**
-    * Cloud Composer API
-    *
-    * Manages Apache Airflow environments on Google Cloud Platform.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const composer = google.composer('v1beta1');
-    *
-    * @namespace composer
-    * @type {Function}
-    * @version v1beta1
-    * @variation v1beta1
-    * @param {object=} options Options for Composer
-    */
   @JSImport("googleapis", "composer_v1beta1.Composer")
   @js.native
-  class Composer protected ()
+  open class Composer protected ()
     extends typings.googleapis.composerV1beta1Mod.composerV1beta1.Composer {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -34,35 +19,35 @@ object composerV1beta1 {
   
   @JSImport("googleapis", "composer_v1beta1.Resource$Projects")
   @js.native
-  class ResourceProjects protected ()
+  open class ResourceProjects protected ()
     extends typings.googleapis.composerV1beta1Mod.composerV1beta1.ResourceProjects {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "composer_v1beta1.Resource$Projects$Locations")
   @js.native
-  class ResourceProjectsLocations protected ()
+  open class ResourceProjectsLocations protected ()
     extends typings.googleapis.composerV1beta1Mod.composerV1beta1.ResourceProjectsLocations {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "composer_v1beta1.Resource$Projects$Locations$Environments")
   @js.native
-  class ResourceProjectsLocationsEnvironments protected ()
+  open class ResourceProjectsLocationsEnvironments protected ()
     extends typings.googleapis.composerV1beta1Mod.composerV1beta1.ResourceProjectsLocationsEnvironments {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "composer_v1beta1.Resource$Projects$Locations$Imageversions")
   @js.native
-  class ResourceProjectsLocationsImageversions protected ()
+  open class ResourceProjectsLocationsImageversions protected ()
     extends typings.googleapis.composerV1beta1Mod.composerV1beta1.ResourceProjectsLocationsImageversions {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "composer_v1beta1.Resource$Projects$Locations$Operations")
   @js.native
-  class ResourceProjectsLocationsOperations protected ()
+  open class ResourceProjectsLocationsOperations protected ()
     extends typings.googleapis.composerV1beta1Mod.composerV1beta1.ResourceProjectsLocationsOperations {
     def this(context: APIRequestContext) = this()
   }

@@ -22,6 +22,6 @@ object IQueryResult {
     
     inline def setData(value: js.Array[IDocumentData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: IDocumentData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: IDocumentData*): Self = StObject.set(x, "data", js.Array(value*))
   }
 }

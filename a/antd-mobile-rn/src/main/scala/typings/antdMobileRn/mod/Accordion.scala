@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "Accordion")
 @js.native
-class Accordion () extends default
+open class Accordion () extends default
 object Accordion {
   
   @JSImport("antd-mobile-rn", "Accordion")
@@ -17,8 +17,8 @@ object Accordion {
   /* static member */
   @JSImport("antd-mobile-rn", "Accordion.Panel")
   @js.native
-  def Panel: js.Any = js.native
-  inline def Panel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Panel")(x.asInstanceOf[js.Any])
+  def Panel: Any = js.native
+  inline def Panel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Panel")(x.asInstanceOf[js.Any])
   
   /* static member */
   object defaultProps {
@@ -29,7 +29,7 @@ object Accordion {
     
     @JSImport("antd-mobile-rn", "Accordion.defaultProps.styles")
     @js.native
-    def styles: js.Any = js.native
-    inline def styles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styles")(x.asInstanceOf[js.Any])
+    def styles: Any = js.native
+    inline def styles_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styles")(x.asInstanceOf[js.Any])
   }
 }

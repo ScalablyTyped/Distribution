@@ -29,7 +29,7 @@ trait PullRequestEvent extends StObject {
   /**
     * The day and time of the pull request event, in timestamp format.
     */
-  var eventDate: js.UndefOr[EventDate] = js.undefined
+  var eventDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Information about the source and destination branches for the pull request.
@@ -86,7 +86,7 @@ object PullRequestEvent {
     
     inline def setApprovalStateChangedEventMetadataUndefined: Self = StObject.set(x, "approvalStateChangedEventMetadata", js.undefined)
     
-    inline def setEventDate(value: EventDate): Self = StObject.set(x, "eventDate", value.asInstanceOf[js.Any])
+    inline def setEventDate(value: js.Date): Self = StObject.set(x, "eventDate", value.asInstanceOf[js.Any])
     
     inline def setEventDateUndefined: Self = StObject.set(x, "eventDate", js.undefined)
     

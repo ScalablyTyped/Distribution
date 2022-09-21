@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/base" : "8.0.0"
+      "@material/base" : "14.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/base" : "8.0.0"
+      "@material/base" : "14.0.0"
     }
   ],
   "compile-devDependencies" : [

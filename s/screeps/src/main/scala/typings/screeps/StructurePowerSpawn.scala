@@ -14,7 +14,7 @@ trait StructurePowerSpawn
      with OwnedStructure[STRUCTURE_POWER_SPAWN]
      with AnyOwnedStructure
      with AnyStoreStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * The amount of energy containing in this structure.

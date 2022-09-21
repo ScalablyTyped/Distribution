@@ -10,10 +10,10 @@ The fast way to check if a JS object is numeric
 | ------------------ | :-------------: |
 | Full name          | fast-isnumeric |
 | Keywords           | number, numeric, isnumeric, fast |
-| # releases         | 3 |
-| # dependents       | 22 |
-| # downloads        | 3567814 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 653091.3333333334 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/plotly/fast-isnumeric#readme)

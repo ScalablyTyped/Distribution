@@ -15,15 +15,15 @@ trait IArrow
 object IArrow {
   
   inline def apply(
-    drawText: (IRectangle, String) => js.Any,
-    ellipse: (Double, Double, Double, Double) => js.Any,
+    drawText: (IRectangle, String) => Any,
+    ellipse: (Double, Double, Double, Double) => Any,
     fill: String,
     font: IFont,
     gradient: IGradient,
     image: IImage,
     length: Double,
-    poligon: js.Array[IPoint] => js.Any,
-    rectangle: (Double, Double, Double, Double) => js.Any,
+    poligon: js.Array[IPoint] => Any,
+    rectangle: (Double, Double, Double, Double) => Any,
     round: IPoint,
     shadow: IShadow,
     stroke: IStroke,

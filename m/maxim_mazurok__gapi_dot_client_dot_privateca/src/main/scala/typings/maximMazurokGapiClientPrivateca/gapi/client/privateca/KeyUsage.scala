@@ -36,6 +36,6 @@ object KeyUsage {
     
     inline def setUnknownExtendedKeyUsagesUndefined: Self = StObject.set(x, "unknownExtendedKeyUsages", js.undefined)
     
-    inline def setUnknownExtendedKeyUsagesVarargs(value: ObjectId*): Self = StObject.set(x, "unknownExtendedKeyUsages", js.Array(value :_*))
+    inline def setUnknownExtendedKeyUsagesVarargs(value: ObjectId*): Self = StObject.set(x, "unknownExtendedKeyUsages", js.Array(value*))
   }
 }

@@ -38,7 +38,7 @@ object d3adaptorMod {
   @js.native
   trait ID3StyleLayoutAdaptor extends StObject {
     
-    def drag(): js.Any = js.native
+    def drag(): Any = js.native
     
     def kick(): Unit = js.native
     

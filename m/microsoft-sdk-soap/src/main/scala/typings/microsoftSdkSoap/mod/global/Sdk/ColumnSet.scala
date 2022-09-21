@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.ColumnSet")
 @js.native
-class ColumnSet protected () extends StObject {
+open class ColumnSet protected () extends StObject {
   /**
     * Specifies the attributes for which non- null values are returned from a query.
     * @param allColumns If Boolean true value is passed as the first parameter all columns will be included. (Not recommended for production code).

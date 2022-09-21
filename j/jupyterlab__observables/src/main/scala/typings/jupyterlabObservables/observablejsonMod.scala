@@ -20,7 +20,7 @@ object observablejsonMod {
   /**
     * Construct a new observable JSON object.
     */
-  class ObservableJSON () extends ObservableMap[ReadonlyPartialJSONValue] {
+  open class ObservableJSON () extends ObservableMap[ReadonlyPartialJSONValue] {
     def this(options: IOptions) = this()
     
     /**
@@ -35,7 +35,7 @@ object observablejsonMod {
       */
     @JSImport("@jupyterlab/observables/lib/observablejson", "ObservableJSON.ChangeMessage")
     @js.native
-    class ChangeMessage protected () extends Message {
+    open class ChangeMessage protected () extends Message {
       /**
         * Create a new metadata changed message.
         */

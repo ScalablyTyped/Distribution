@@ -9,10 +9,10 @@ Utility mixins for subscribing to and emitting events.
 | ------------------ | :-------------: |
 | Full name          | emissary |
 | Keywords           | event-emitter, events, subscribe, subscriber |
-| # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 1919317 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 90748.33333333333 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/atom/emissary#readme)

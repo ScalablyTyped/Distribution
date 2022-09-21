@@ -1,13 +1,14 @@
 package typings.breeze.global.breeze
 
 import typings.breeze.breeze.DataServiceOptions
+import typings.breeze.breeze.UriBuilder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("breeze.DataService")
 @js.native
-class DataService protected ()
+open class DataService protected ()
   extends StObject
      with typings.breeze.breeze.DataService {
   def this(config: DataServiceOptions) = this()
@@ -25,7 +26,13 @@ class DataService protected ()
   var jsonResultsAdapter: typings.breeze.breeze.JsonResultsAdapter = js.native
   
   /* CompleteClass */
+  override def qualifyUrl(suffix: String): String = js.native
+  
+  /* CompleteClass */
   var serviceName: String = js.native
+  
+  /* CompleteClass */
+  var uriBuilder: UriBuilder = js.native
   
   /* CompleteClass */
   var uriBuilderName: String = js.native

@@ -35,7 +35,7 @@ object XFormDocumentsSupplier {
     FormDocuments: XNameAccess,
     acquire: () => Unit,
     getFormDocuments: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XFormDocumentsSupplier = {
     val __obj = js.Dynamic.literal(FormDocuments = FormDocuments.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getFormDocuments = js.Any.fromFunction0(getFormDocuments), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

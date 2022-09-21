@@ -138,8 +138,8 @@ object types {
     
     @JSImport("protobufjs", "types.defaults.message")
     @js.native
-    def message: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
-    inline def message_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
+    def message: /* is `Null`, but independent javascript fields cannot be in scala 3 */ Any = js.native
+    inline def message_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
     
     @JSImport("protobufjs", "types.defaults.sfixed32")
     @js.native

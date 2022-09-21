@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ButtonMenuViewModelConstructor
   extends StObject
-     with Instantiable0[ButtonMenuViewModel]
+     with /**
+  * Provides the logic for the module:esri/widgets/ButtonMenuItemConfig widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuViewModel.html)
+  */
+Instantiable0[ButtonMenuViewModel]
      with Instantiable1[/* properties */ ButtonMenuViewModelProperties, ButtonMenuViewModel]

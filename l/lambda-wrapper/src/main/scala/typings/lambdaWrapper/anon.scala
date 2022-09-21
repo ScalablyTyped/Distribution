@@ -2,7 +2,6 @@ package typings.lambdaWrapper
 
 import typings.awsLambda.handlerMod.ClientContext
 import typings.awsLambda.handlerMod.CognitoIdentity
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,7 +59,7 @@ object anon {
     
     var done: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var fail: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+    var fail: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
     
     var functionName: js.UndefOr[String] = js.undefined
     
@@ -78,7 +77,7 @@ object anon {
     
     var memoryLimitInMB: js.UndefOr[String] = js.undefined
     
-    var succeed: js.UndefOr[js.Function1[/* messageOrObject */ js.Any, Unit]] = js.undefined
+    var succeed: js.UndefOr[js.Function1[/* messageOrObject */ Any, Unit]] = js.undefined
   }
   object PartialContext {
     
@@ -105,7 +104,7 @@ object anon {
       
       inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
       
-      inline def setFail(value: /* error */ Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+      inline def setFail(value: /* error */ js.Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
       
       inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
       
@@ -141,7 +140,7 @@ object anon {
       
       inline def setMemoryLimitInMBUndefined: Self = StObject.set(x, "memoryLimitInMB", js.undefined)
       
-      inline def setSucceed(value: /* messageOrObject */ js.Any => Unit): Self = StObject.set(x, "succeed", js.Any.fromFunction1(value))
+      inline def setSucceed(value: /* messageOrObject */ Any => Unit): Self = StObject.set(x, "succeed", js.Any.fromFunction1(value))
       
       inline def setSucceedUndefined: Self = StObject.set(x, "succeed", js.undefined)
     }

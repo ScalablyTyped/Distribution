@@ -11,7 +11,7 @@ trait View
   extends StObject
      with Observable {
   
-  var content: js.Any = js.native
+  var content: Any = js.native
   
   def destroy(): Unit = js.native
   
@@ -25,7 +25,7 @@ trait View
   var model: js.Object = js.native
   
   def render(): JQuery = js.native
-  def render(container: js.Any): JQuery = js.native
+  def render(container: Any): JQuery = js.native
   
   var tagName: String = js.native
 }

@@ -1,403 +1,521 @@
 package typings.styledSystemCss.mod
 
-import typings.csstype.mod.AlignContentProperty
-import typings.csstype.mod.AlignItemsProperty
-import typings.csstype.mod.AlignSelfProperty
-import typings.csstype.mod.AlignTracksProperty
-import typings.csstype.mod.AlignmentBaselineProperty
-import typings.csstype.mod.AnimationDirectionProperty
-import typings.csstype.mod.AnimationFillModeProperty
-import typings.csstype.mod.AnimationIterationCountProperty
-import typings.csstype.mod.AnimationNameProperty
-import typings.csstype.mod.AnimationPlayStateProperty
-import typings.csstype.mod.AnimationProperty
-import typings.csstype.mod.AnimationTimingFunctionProperty
-import typings.csstype.mod.AppearanceProperty
-import typings.csstype.mod.AspectRatioProperty
-import typings.csstype.mod.BackdropFilterProperty
-import typings.csstype.mod.BackfaceVisibilityProperty
-import typings.csstype.mod.BackgroundAttachmentProperty
-import typings.csstype.mod.BackgroundBlendModeProperty
-import typings.csstype.mod.BackgroundClipProperty
-import typings.csstype.mod.BackgroundColorProperty
-import typings.csstype.mod.BackgroundImageProperty
-import typings.csstype.mod.BackgroundOriginProperty
-import typings.csstype.mod.BackgroundPositionProperty
-import typings.csstype.mod.BackgroundPositionXProperty
-import typings.csstype.mod.BackgroundPositionYProperty
-import typings.csstype.mod.BackgroundProperty
-import typings.csstype.mod.BackgroundRepeatProperty
-import typings.csstype.mod.BackgroundSizeProperty
-import typings.csstype.mod.BaselineShiftProperty
-import typings.csstype.mod.BlockOverflowProperty
-import typings.csstype.mod.BlockSizeProperty
-import typings.csstype.mod.BorderBlockColorProperty
-import typings.csstype.mod.BorderBlockEndColorProperty
-import typings.csstype.mod.BorderBlockEndProperty
-import typings.csstype.mod.BorderBlockEndStyleProperty
-import typings.csstype.mod.BorderBlockEndWidthProperty
-import typings.csstype.mod.BorderBlockProperty
-import typings.csstype.mod.BorderBlockStartColorProperty
-import typings.csstype.mod.BorderBlockStartProperty
-import typings.csstype.mod.BorderBlockStartStyleProperty
-import typings.csstype.mod.BorderBlockStartWidthProperty
-import typings.csstype.mod.BorderBlockStyleProperty
-import typings.csstype.mod.BorderBlockWidthProperty
-import typings.csstype.mod.BorderBottomColorProperty
-import typings.csstype.mod.BorderBottomLeftRadiusProperty
-import typings.csstype.mod.BorderBottomProperty
-import typings.csstype.mod.BorderBottomRightRadiusProperty
-import typings.csstype.mod.BorderBottomStyleProperty
-import typings.csstype.mod.BorderBottomWidthProperty
-import typings.csstype.mod.BorderCollapseProperty
-import typings.csstype.mod.BorderColorProperty
-import typings.csstype.mod.BorderEndEndRadiusProperty
-import typings.csstype.mod.BorderEndStartRadiusProperty
-import typings.csstype.mod.BorderImageOutsetProperty
-import typings.csstype.mod.BorderImageProperty
-import typings.csstype.mod.BorderImageRepeatProperty
-import typings.csstype.mod.BorderImageSliceProperty
-import typings.csstype.mod.BorderImageSourceProperty
-import typings.csstype.mod.BorderImageWidthProperty
-import typings.csstype.mod.BorderInlineColorProperty
-import typings.csstype.mod.BorderInlineEndColorProperty
-import typings.csstype.mod.BorderInlineEndProperty
-import typings.csstype.mod.BorderInlineEndStyleProperty
-import typings.csstype.mod.BorderInlineEndWidthProperty
-import typings.csstype.mod.BorderInlineProperty
-import typings.csstype.mod.BorderInlineStartColorProperty
-import typings.csstype.mod.BorderInlineStartProperty
-import typings.csstype.mod.BorderInlineStartStyleProperty
-import typings.csstype.mod.BorderInlineStartWidthProperty
-import typings.csstype.mod.BorderInlineStyleProperty
-import typings.csstype.mod.BorderInlineWidthProperty
-import typings.csstype.mod.BorderLeftColorProperty
-import typings.csstype.mod.BorderLeftProperty
-import typings.csstype.mod.BorderLeftStyleProperty
-import typings.csstype.mod.BorderLeftWidthProperty
-import typings.csstype.mod.BorderProperty
-import typings.csstype.mod.BorderRadiusProperty
-import typings.csstype.mod.BorderRightColorProperty
-import typings.csstype.mod.BorderRightProperty
-import typings.csstype.mod.BorderRightStyleProperty
-import typings.csstype.mod.BorderRightWidthProperty
-import typings.csstype.mod.BorderSpacingProperty
-import typings.csstype.mod.BorderStartEndRadiusProperty
-import typings.csstype.mod.BorderStartStartRadiusProperty
-import typings.csstype.mod.BorderStyleProperty
-import typings.csstype.mod.BorderTopColorProperty
-import typings.csstype.mod.BorderTopLeftRadiusProperty
-import typings.csstype.mod.BorderTopProperty
-import typings.csstype.mod.BorderTopRightRadiusProperty
-import typings.csstype.mod.BorderTopStyleProperty
-import typings.csstype.mod.BorderTopWidthProperty
-import typings.csstype.mod.BorderWidthProperty
-import typings.csstype.mod.BottomProperty
-import typings.csstype.mod.BoxDecorationBreakProperty
-import typings.csstype.mod.BoxSizingProperty
-import typings.csstype.mod.BreakAfterProperty
-import typings.csstype.mod.BreakBeforeProperty
-import typings.csstype.mod.BreakInsideProperty
-import typings.csstype.mod.CaptionSideProperty
-import typings.csstype.mod.CaretColorProperty
-import typings.csstype.mod.ClearProperty
-import typings.csstype.mod.ClipPathProperty
-import typings.csstype.mod.ClipProperty
-import typings.csstype.mod.ClipRuleProperty
-import typings.csstype.mod.ColorAdjustProperty
-import typings.csstype.mod.ColorInterpolationProperty
-import typings.csstype.mod.ColorProperty
-import typings.csstype.mod.ColorRenderingProperty
-import typings.csstype.mod.ColumnCountProperty
-import typings.csstype.mod.ColumnFillProperty
-import typings.csstype.mod.ColumnGapProperty
-import typings.csstype.mod.ColumnRuleColorProperty
-import typings.csstype.mod.ColumnRuleProperty
-import typings.csstype.mod.ColumnRuleStyleProperty
-import typings.csstype.mod.ColumnRuleWidthProperty
-import typings.csstype.mod.ColumnSpanProperty
-import typings.csstype.mod.ColumnWidthProperty
-import typings.csstype.mod.ColumnsProperty
-import typings.csstype.mod.ContainProperty
-import typings.csstype.mod.ContentProperty
-import typings.csstype.mod.CounterIncrementProperty
-import typings.csstype.mod.CounterResetProperty
-import typings.csstype.mod.CounterSetProperty
-import typings.csstype.mod.CursorProperty
-import typings.csstype.mod.DirectionProperty
-import typings.csstype.mod.DisplayProperty
-import typings.csstype.mod.DominantBaselineProperty
-import typings.csstype.mod.EmptyCellsProperty
-import typings.csstype.mod.FillProperty
-import typings.csstype.mod.FillRuleProperty
-import typings.csstype.mod.FilterProperty
-import typings.csstype.mod.FlexBasisProperty
-import typings.csstype.mod.FlexDirectionProperty
-import typings.csstype.mod.FlexFlowProperty
-import typings.csstype.mod.FlexProperty
-import typings.csstype.mod.FlexWrapProperty
-import typings.csstype.mod.FloatProperty
-import typings.csstype.mod.FloodColorProperty
-import typings.csstype.mod.FontFamilyProperty
-import typings.csstype.mod.FontFeatureSettingsProperty
-import typings.csstype.mod.FontKerningProperty
-import typings.csstype.mod.FontLanguageOverrideProperty
-import typings.csstype.mod.FontOpticalSizingProperty
-import typings.csstype.mod.FontProperty
-import typings.csstype.mod.FontSizeAdjustProperty
-import typings.csstype.mod.FontSizeProperty
-import typings.csstype.mod.FontSmoothProperty
-import typings.csstype.mod.FontStretchProperty
-import typings.csstype.mod.FontStyleProperty
-import typings.csstype.mod.FontSynthesisProperty
-import typings.csstype.mod.FontVariantCapsProperty
-import typings.csstype.mod.FontVariantEastAsianProperty
-import typings.csstype.mod.FontVariantLigaturesProperty
-import typings.csstype.mod.FontVariantNumericProperty
-import typings.csstype.mod.FontVariantPositionProperty
-import typings.csstype.mod.FontVariantProperty
-import typings.csstype.mod.FontVariationSettingsProperty
-import typings.csstype.mod.GapProperty
-import typings.csstype.mod.Globals
-import typings.csstype.mod.GlobalsNumber
-import typings.csstype.mod.GlobalsString
-import typings.csstype.mod.GlyphOrientationVerticalProperty
-import typings.csstype.mod.GridAreaProperty
-import typings.csstype.mod.GridAutoColumnsProperty
-import typings.csstype.mod.GridAutoFlowProperty
-import typings.csstype.mod.GridAutoRowsProperty
-import typings.csstype.mod.GridColumnEndProperty
-import typings.csstype.mod.GridColumnProperty
-import typings.csstype.mod.GridColumnStartProperty
-import typings.csstype.mod.GridProperty
-import typings.csstype.mod.GridRowEndProperty
-import typings.csstype.mod.GridRowProperty
-import typings.csstype.mod.GridRowStartProperty
-import typings.csstype.mod.GridTemplateAreasProperty
-import typings.csstype.mod.GridTemplateColumnsProperty
-import typings.csstype.mod.GridTemplateProperty
-import typings.csstype.mod.GridTemplateRowsProperty
-import typings.csstype.mod.HangingPunctuationProperty
-import typings.csstype.mod.HeightProperty
-import typings.csstype.mod.HyphensProperty
-import typings.csstype.mod.ImageOrientationProperty
-import typings.csstype.mod.ImageRenderingProperty
-import typings.csstype.mod.ImageResolutionProperty
-import typings.csstype.mod.InitialLetterProperty
-import typings.csstype.mod.InlineSizeProperty
-import typings.csstype.mod.InsetBlockEndProperty
-import typings.csstype.mod.InsetBlockProperty
-import typings.csstype.mod.InsetBlockStartProperty
-import typings.csstype.mod.InsetInlineEndProperty
-import typings.csstype.mod.InsetInlineProperty
-import typings.csstype.mod.InsetInlineStartProperty
-import typings.csstype.mod.InsetProperty
-import typings.csstype.mod.IsolationProperty
-import typings.csstype.mod.JustifyContentProperty
-import typings.csstype.mod.JustifyItemsProperty
-import typings.csstype.mod.JustifySelfProperty
-import typings.csstype.mod.JustifyTracksProperty
-import typings.csstype.mod.LeftProperty
-import typings.csstype.mod.LetterSpacingProperty
-import typings.csstype.mod.LightingColorProperty
-import typings.csstype.mod.LineBreakProperty
-import typings.csstype.mod.LineClampProperty
-import typings.csstype.mod.LineHeightProperty
-import typings.csstype.mod.LineHeightStepProperty
-import typings.csstype.mod.ListStyleImageProperty
-import typings.csstype.mod.ListStylePositionProperty
-import typings.csstype.mod.ListStyleProperty
-import typings.csstype.mod.ListStyleTypeProperty
-import typings.csstype.mod.MarginBlockEndProperty
-import typings.csstype.mod.MarginBlockProperty
-import typings.csstype.mod.MarginBlockStartProperty
-import typings.csstype.mod.MarginBottomProperty
-import typings.csstype.mod.MarginInlineEndProperty
-import typings.csstype.mod.MarginInlineProperty
-import typings.csstype.mod.MarginInlineStartProperty
-import typings.csstype.mod.MarginLeftProperty
-import typings.csstype.mod.MarginProperty
-import typings.csstype.mod.MarginRightProperty
-import typings.csstype.mod.MarginTopProperty
-import typings.csstype.mod.MarkerEndProperty
-import typings.csstype.mod.MarkerMidProperty
-import typings.csstype.mod.MarkerProperty
-import typings.csstype.mod.MarkerStartProperty
-import typings.csstype.mod.MaskBorderModeProperty
-import typings.csstype.mod.MaskBorderOutsetProperty
-import typings.csstype.mod.MaskBorderProperty
-import typings.csstype.mod.MaskBorderRepeatProperty
-import typings.csstype.mod.MaskBorderSliceProperty
-import typings.csstype.mod.MaskBorderSourceProperty
-import typings.csstype.mod.MaskBorderWidthProperty
-import typings.csstype.mod.MaskClipProperty
-import typings.csstype.mod.MaskCompositeProperty
-import typings.csstype.mod.MaskImageProperty
-import typings.csstype.mod.MaskModeProperty
-import typings.csstype.mod.MaskOriginProperty
-import typings.csstype.mod.MaskPositionProperty
-import typings.csstype.mod.MaskProperty
-import typings.csstype.mod.MaskRepeatProperty
-import typings.csstype.mod.MaskSizeProperty
-import typings.csstype.mod.MaskTypeProperty
-import typings.csstype.mod.MasonryAutoFlowProperty
-import typings.csstype.mod.MathStyleProperty
-import typings.csstype.mod.MaxBlockSizeProperty
-import typings.csstype.mod.MaxHeightProperty
-import typings.csstype.mod.MaxInlineSizeProperty
-import typings.csstype.mod.MaxLinesProperty
-import typings.csstype.mod.MaxWidthProperty
-import typings.csstype.mod.MinBlockSizeProperty
-import typings.csstype.mod.MinHeightProperty
-import typings.csstype.mod.MinInlineSizeProperty
-import typings.csstype.mod.MinWidthProperty
-import typings.csstype.mod.MixBlendModeProperty
-import typings.csstype.mod.ObjectFitProperty
-import typings.csstype.mod.ObjectPositionProperty
-import typings.csstype.mod.OffsetAnchorProperty
-import typings.csstype.mod.OffsetDistanceProperty
-import typings.csstype.mod.OffsetPathProperty
-import typings.csstype.mod.OffsetProperty
-import typings.csstype.mod.OffsetRotateProperty
-import typings.csstype.mod.OpacityProperty
-import typings.csstype.mod.OutlineColorProperty
-import typings.csstype.mod.OutlineOffsetProperty
-import typings.csstype.mod.OutlineProperty
-import typings.csstype.mod.OutlineStyleProperty
-import typings.csstype.mod.OutlineWidthProperty
-import typings.csstype.mod.OverflowAnchorProperty
-import typings.csstype.mod.OverflowBlockProperty
-import typings.csstype.mod.OverflowClipBoxProperty
-import typings.csstype.mod.OverflowInlineProperty
-import typings.csstype.mod.OverflowProperty
-import typings.csstype.mod.OverflowWrapProperty
-import typings.csstype.mod.OverflowXProperty
-import typings.csstype.mod.OverflowYProperty
-import typings.csstype.mod.OverscrollBehaviorBlockProperty
-import typings.csstype.mod.OverscrollBehaviorInlineProperty
-import typings.csstype.mod.OverscrollBehaviorProperty
-import typings.csstype.mod.OverscrollBehaviorXProperty
-import typings.csstype.mod.OverscrollBehaviorYProperty
-import typings.csstype.mod.PaddingBlockEndProperty
-import typings.csstype.mod.PaddingBlockProperty
-import typings.csstype.mod.PaddingBlockStartProperty
-import typings.csstype.mod.PaddingBottomProperty
-import typings.csstype.mod.PaddingInlineEndProperty
-import typings.csstype.mod.PaddingInlineProperty
-import typings.csstype.mod.PaddingInlineStartProperty
-import typings.csstype.mod.PaddingLeftProperty
-import typings.csstype.mod.PaddingProperty
-import typings.csstype.mod.PaddingRightProperty
-import typings.csstype.mod.PaddingTopProperty
-import typings.csstype.mod.PageBreakAfterProperty
-import typings.csstype.mod.PageBreakBeforeProperty
-import typings.csstype.mod.PageBreakInsideProperty
-import typings.csstype.mod.PaintOrderProperty
-import typings.csstype.mod.PerspectiveOriginProperty
-import typings.csstype.mod.PerspectiveProperty
-import typings.csstype.mod.PlaceContentProperty
-import typings.csstype.mod.PlaceItemsProperty
-import typings.csstype.mod.PlaceSelfProperty
-import typings.csstype.mod.PointerEventsProperty
-import typings.csstype.mod.PositionProperty
-import typings.csstype.mod.QuotesProperty
-import typings.csstype.mod.ResizeProperty
-import typings.csstype.mod.RightProperty
-import typings.csstype.mod.RotateProperty
-import typings.csstype.mod.RowGapProperty
-import typings.csstype.mod.RubyAlignProperty
-import typings.csstype.mod.RubyMergeProperty
-import typings.csstype.mod.RubyPositionProperty
-import typings.csstype.mod.ScaleProperty
-import typings.csstype.mod.ScrollBehaviorProperty
-import typings.csstype.mod.ScrollMarginBlockEndProperty
-import typings.csstype.mod.ScrollMarginBlockProperty
-import typings.csstype.mod.ScrollMarginBlockStartProperty
-import typings.csstype.mod.ScrollMarginBottomProperty
-import typings.csstype.mod.ScrollMarginInlineEndProperty
-import typings.csstype.mod.ScrollMarginInlineProperty
-import typings.csstype.mod.ScrollMarginInlineStartProperty
-import typings.csstype.mod.ScrollMarginLeftProperty
-import typings.csstype.mod.ScrollMarginProperty
-import typings.csstype.mod.ScrollMarginRightProperty
-import typings.csstype.mod.ScrollMarginTopProperty
-import typings.csstype.mod.ScrollPaddingBlockEndProperty
-import typings.csstype.mod.ScrollPaddingBlockProperty
-import typings.csstype.mod.ScrollPaddingBlockStartProperty
-import typings.csstype.mod.ScrollPaddingBottomProperty
-import typings.csstype.mod.ScrollPaddingInlineEndProperty
-import typings.csstype.mod.ScrollPaddingInlineProperty
-import typings.csstype.mod.ScrollPaddingInlineStartProperty
-import typings.csstype.mod.ScrollPaddingLeftProperty
-import typings.csstype.mod.ScrollPaddingProperty
-import typings.csstype.mod.ScrollPaddingRightProperty
-import typings.csstype.mod.ScrollPaddingTopProperty
-import typings.csstype.mod.ScrollSnapAlignProperty
-import typings.csstype.mod.ScrollSnapStopProperty
-import typings.csstype.mod.ScrollSnapTypeProperty
-import typings.csstype.mod.ScrollbarColorProperty
-import typings.csstype.mod.ScrollbarGutterProperty
-import typings.csstype.mod.ScrollbarWidthProperty
-import typings.csstype.mod.ShapeImageThresholdProperty
-import typings.csstype.mod.ShapeMarginProperty
-import typings.csstype.mod.ShapeOutsideProperty
-import typings.csstype.mod.ShapeRenderingProperty
-import typings.csstype.mod.StopColorProperty
-import typings.csstype.mod.StrokeDasharrayProperty
-import typings.csstype.mod.StrokeDashoffsetProperty
-import typings.csstype.mod.StrokeLinecapProperty
-import typings.csstype.mod.StrokeLinejoinProperty
-import typings.csstype.mod.StrokeProperty
-import typings.csstype.mod.StrokeWidthProperty
-import typings.csstype.mod.TabSizeProperty
-import typings.csstype.mod.TableLayoutProperty
-import typings.csstype.mod.TextAlignLastProperty
-import typings.csstype.mod.TextAlignProperty
-import typings.csstype.mod.TextAnchorProperty
-import typings.csstype.mod.TextCombineUprightProperty
-import typings.csstype.mod.TextDecorationColorProperty
-import typings.csstype.mod.TextDecorationLineProperty
-import typings.csstype.mod.TextDecorationProperty
-import typings.csstype.mod.TextDecorationSkipInkProperty
-import typings.csstype.mod.TextDecorationSkipProperty
-import typings.csstype.mod.TextDecorationStyleProperty
-import typings.csstype.mod.TextDecorationThicknessProperty
-import typings.csstype.mod.TextEmphasisColorProperty
-import typings.csstype.mod.TextEmphasisProperty
-import typings.csstype.mod.TextEmphasisStyleProperty
-import typings.csstype.mod.TextIndentProperty
-import typings.csstype.mod.TextJustifyProperty
-import typings.csstype.mod.TextOrientationProperty
-import typings.csstype.mod.TextOverflowProperty
-import typings.csstype.mod.TextRenderingProperty
-import typings.csstype.mod.TextShadowProperty
-import typings.csstype.mod.TextSizeAdjustProperty
-import typings.csstype.mod.TextTransformProperty
-import typings.csstype.mod.TextUnderlineOffsetProperty
-import typings.csstype.mod.TextUnderlinePositionProperty
-import typings.csstype.mod.TopProperty
-import typings.csstype.mod.TouchActionProperty
-import typings.csstype.mod.TransformBoxProperty
-import typings.csstype.mod.TransformOriginProperty
-import typings.csstype.mod.TransformProperty
-import typings.csstype.mod.TransformStyleProperty
-import typings.csstype.mod.TransitionProperty
-import typings.csstype.mod.TransitionPropertyProperty
-import typings.csstype.mod.TransitionTimingFunctionProperty
-import typings.csstype.mod.TranslateProperty
-import typings.csstype.mod.UnicodeBidiProperty
-import typings.csstype.mod.UserSelectProperty
-import typings.csstype.mod.VectorEffectProperty
-import typings.csstype.mod.VerticalAlignProperty
-import typings.csstype.mod.VisibilityProperty
-import typings.csstype.mod.WhiteSpaceProperty
-import typings.csstype.mod.WidthProperty
-import typings.csstype.mod.WillChangeProperty
-import typings.csstype.mod.WordBreakProperty
-import typings.csstype.mod.WordSpacingProperty
-import typings.csstype.mod.WordWrapProperty
-import typings.csstype.mod.WritingModeProperty
-import typings.csstype.mod.ZoomProperty
+import typings.csstype.mod.Property.AccentColor
+import typings.csstype.mod.Property.AlignContent
+import typings.csstype.mod.Property.AlignItems
+import typings.csstype.mod.Property.AlignSelf
+import typings.csstype.mod.Property.AlignTracks
+import typings.csstype.mod.Property.AlignmentBaseline
+import typings.csstype.mod.Property.All
+import typings.csstype.mod.Property.Animation
+import typings.csstype.mod.Property.AnimationComposition
+import typings.csstype.mod.Property.AnimationDelay
+import typings.csstype.mod.Property.AnimationDirection
+import typings.csstype.mod.Property.AnimationDuration
+import typings.csstype.mod.Property.AnimationFillMode
+import typings.csstype.mod.Property.AnimationIterationCount
+import typings.csstype.mod.Property.AnimationName
+import typings.csstype.mod.Property.AnimationPlayState
+import typings.csstype.mod.Property.AnimationTimeline
+import typings.csstype.mod.Property.AnimationTimingFunction
+import typings.csstype.mod.Property.Appearance
+import typings.csstype.mod.Property.AspectRatio
+import typings.csstype.mod.Property.BackdropFilter
+import typings.csstype.mod.Property.BackfaceVisibility
+import typings.csstype.mod.Property.Background
+import typings.csstype.mod.Property.BackgroundAttachment
+import typings.csstype.mod.Property.BackgroundBlendMode
+import typings.csstype.mod.Property.BackgroundClip
+import typings.csstype.mod.Property.BackgroundColor
+import typings.csstype.mod.Property.BackgroundImage
+import typings.csstype.mod.Property.BackgroundOrigin
+import typings.csstype.mod.Property.BackgroundPosition
+import typings.csstype.mod.Property.BackgroundPositionX
+import typings.csstype.mod.Property.BackgroundPositionY
+import typings.csstype.mod.Property.BackgroundRepeat
+import typings.csstype.mod.Property.BackgroundSize
+import typings.csstype.mod.Property.BaselineShift
+import typings.csstype.mod.Property.BlockOverflow
+import typings.csstype.mod.Property.BlockSize
+import typings.csstype.mod.Property.Border
+import typings.csstype.mod.Property.BorderBlock
+import typings.csstype.mod.Property.BorderBlockColor
+import typings.csstype.mod.Property.BorderBlockEnd
+import typings.csstype.mod.Property.BorderBlockEndColor
+import typings.csstype.mod.Property.BorderBlockEndStyle
+import typings.csstype.mod.Property.BorderBlockEndWidth
+import typings.csstype.mod.Property.BorderBlockStart
+import typings.csstype.mod.Property.BorderBlockStartColor
+import typings.csstype.mod.Property.BorderBlockStartStyle
+import typings.csstype.mod.Property.BorderBlockStartWidth
+import typings.csstype.mod.Property.BorderBlockStyle
+import typings.csstype.mod.Property.BorderBlockWidth
+import typings.csstype.mod.Property.BorderBottom
+import typings.csstype.mod.Property.BorderBottomColor
+import typings.csstype.mod.Property.BorderBottomLeftRadius
+import typings.csstype.mod.Property.BorderBottomRightRadius
+import typings.csstype.mod.Property.BorderBottomStyle
+import typings.csstype.mod.Property.BorderBottomWidth
+import typings.csstype.mod.Property.BorderCollapse
+import typings.csstype.mod.Property.BorderColor
+import typings.csstype.mod.Property.BorderEndEndRadius
+import typings.csstype.mod.Property.BorderEndStartRadius
+import typings.csstype.mod.Property.BorderImage
+import typings.csstype.mod.Property.BorderImageOutset
+import typings.csstype.mod.Property.BorderImageRepeat
+import typings.csstype.mod.Property.BorderImageSlice
+import typings.csstype.mod.Property.BorderImageSource
+import typings.csstype.mod.Property.BorderImageWidth
+import typings.csstype.mod.Property.BorderInline
+import typings.csstype.mod.Property.BorderInlineColor
+import typings.csstype.mod.Property.BorderInlineEnd
+import typings.csstype.mod.Property.BorderInlineEndColor
+import typings.csstype.mod.Property.BorderInlineEndStyle
+import typings.csstype.mod.Property.BorderInlineEndWidth
+import typings.csstype.mod.Property.BorderInlineStart
+import typings.csstype.mod.Property.BorderInlineStartColor
+import typings.csstype.mod.Property.BorderInlineStartStyle
+import typings.csstype.mod.Property.BorderInlineStartWidth
+import typings.csstype.mod.Property.BorderInlineStyle
+import typings.csstype.mod.Property.BorderInlineWidth
+import typings.csstype.mod.Property.BorderLeft
+import typings.csstype.mod.Property.BorderLeftColor
+import typings.csstype.mod.Property.BorderLeftStyle
+import typings.csstype.mod.Property.BorderLeftWidth
+import typings.csstype.mod.Property.BorderRadius
+import typings.csstype.mod.Property.BorderRight
+import typings.csstype.mod.Property.BorderRightColor
+import typings.csstype.mod.Property.BorderRightStyle
+import typings.csstype.mod.Property.BorderRightWidth
+import typings.csstype.mod.Property.BorderSpacing
+import typings.csstype.mod.Property.BorderStartEndRadius
+import typings.csstype.mod.Property.BorderStartStartRadius
+import typings.csstype.mod.Property.BorderStyle
+import typings.csstype.mod.Property.BorderTop
+import typings.csstype.mod.Property.BorderTopColor
+import typings.csstype.mod.Property.BorderTopLeftRadius
+import typings.csstype.mod.Property.BorderTopRightRadius
+import typings.csstype.mod.Property.BorderTopStyle
+import typings.csstype.mod.Property.BorderTopWidth
+import typings.csstype.mod.Property.BorderWidth
+import typings.csstype.mod.Property.Bottom
+import typings.csstype.mod.Property.BoxDecorationBreak
+import typings.csstype.mod.Property.BoxShadow
+import typings.csstype.mod.Property.BoxSizing
+import typings.csstype.mod.Property.BreakAfter
+import typings.csstype.mod.Property.BreakBefore
+import typings.csstype.mod.Property.BreakInside
+import typings.csstype.mod.Property.CaptionSide
+import typings.csstype.mod.Property.CaretColor
+import typings.csstype.mod.Property.Clear
+import typings.csstype.mod.Property.Clip
+import typings.csstype.mod.Property.ClipPath
+import typings.csstype.mod.Property.ClipRule
+import typings.csstype.mod.Property.Color
+import typings.csstype.mod.Property.ColorInterpolation
+import typings.csstype.mod.Property.ColorRendering
+import typings.csstype.mod.Property.ColorScheme
+import typings.csstype.mod.Property.ColumnCount
+import typings.csstype.mod.Property.ColumnFill
+import typings.csstype.mod.Property.ColumnGap
+import typings.csstype.mod.Property.ColumnRule
+import typings.csstype.mod.Property.ColumnRuleColor
+import typings.csstype.mod.Property.ColumnRuleStyle
+import typings.csstype.mod.Property.ColumnRuleWidth
+import typings.csstype.mod.Property.ColumnSpan
+import typings.csstype.mod.Property.ColumnWidth
+import typings.csstype.mod.Property.Columns
+import typings.csstype.mod.Property.Contain
+import typings.csstype.mod.Property.Content
+import typings.csstype.mod.Property.ContentVisibility
+import typings.csstype.mod.Property.CounterIncrement
+import typings.csstype.mod.Property.CounterReset
+import typings.csstype.mod.Property.CounterSet
+import typings.csstype.mod.Property.Cursor
+import typings.csstype.mod.Property.Direction
+import typings.csstype.mod.Property.Display
+import typings.csstype.mod.Property.DominantBaseline
+import typings.csstype.mod.Property.EmptyCells
+import typings.csstype.mod.Property.Fill
+import typings.csstype.mod.Property.FillOpacity
+import typings.csstype.mod.Property.FillRule
+import typings.csstype.mod.Property.Filter
+import typings.csstype.mod.Property.Flex
+import typings.csstype.mod.Property.FlexBasis
+import typings.csstype.mod.Property.FlexDirection
+import typings.csstype.mod.Property.FlexFlow
+import typings.csstype.mod.Property.FlexGrow
+import typings.csstype.mod.Property.FlexShrink
+import typings.csstype.mod.Property.FlexWrap
+import typings.csstype.mod.Property.Float
+import typings.csstype.mod.Property.FloodColor
+import typings.csstype.mod.Property.FloodOpacity
+import typings.csstype.mod.Property.Font
+import typings.csstype.mod.Property.FontFamily
+import typings.csstype.mod.Property.FontFeatureSettings
+import typings.csstype.mod.Property.FontKerning
+import typings.csstype.mod.Property.FontLanguageOverride
+import typings.csstype.mod.Property.FontOpticalSizing
+import typings.csstype.mod.Property.FontSize
+import typings.csstype.mod.Property.FontSizeAdjust
+import typings.csstype.mod.Property.FontSmooth
+import typings.csstype.mod.Property.FontStretch
+import typings.csstype.mod.Property.FontStyle
+import typings.csstype.mod.Property.FontSynthesis
+import typings.csstype.mod.Property.FontVariant
+import typings.csstype.mod.Property.FontVariantAlternates
+import typings.csstype.mod.Property.FontVariantCaps
+import typings.csstype.mod.Property.FontVariantEastAsian
+import typings.csstype.mod.Property.FontVariantLigatures
+import typings.csstype.mod.Property.FontVariantNumeric
+import typings.csstype.mod.Property.FontVariantPosition
+import typings.csstype.mod.Property.FontVariationSettings
+import typings.csstype.mod.Property.FontWeight
+import typings.csstype.mod.Property.ForcedColorAdjust
+import typings.csstype.mod.Property.Gap
+import typings.csstype.mod.Property.GlyphOrientationVertical
+import typings.csstype.mod.Property.Grid
+import typings.csstype.mod.Property.GridArea
+import typings.csstype.mod.Property.GridAutoColumns
+import typings.csstype.mod.Property.GridAutoFlow
+import typings.csstype.mod.Property.GridAutoRows
+import typings.csstype.mod.Property.GridColumn
+import typings.csstype.mod.Property.GridColumnEnd
+import typings.csstype.mod.Property.GridColumnStart
+import typings.csstype.mod.Property.GridRow
+import typings.csstype.mod.Property.GridRowEnd
+import typings.csstype.mod.Property.GridRowStart
+import typings.csstype.mod.Property.GridTemplate
+import typings.csstype.mod.Property.GridTemplateAreas
+import typings.csstype.mod.Property.GridTemplateColumns
+import typings.csstype.mod.Property.GridTemplateRows
+import typings.csstype.mod.Property.HangingPunctuation
+import typings.csstype.mod.Property.Height
+import typings.csstype.mod.Property.HyphenateCharacter
+import typings.csstype.mod.Property.Hyphens
+import typings.csstype.mod.Property.ImageOrientation
+import typings.csstype.mod.Property.ImageRendering
+import typings.csstype.mod.Property.ImageResolution
+import typings.csstype.mod.Property.InitialLetter
+import typings.csstype.mod.Property.InlineSize
+import typings.csstype.mod.Property.InputSecurity
+import typings.csstype.mod.Property.Inset
+import typings.csstype.mod.Property.InsetBlock
+import typings.csstype.mod.Property.InsetBlockEnd
+import typings.csstype.mod.Property.InsetBlockStart
+import typings.csstype.mod.Property.InsetInline
+import typings.csstype.mod.Property.InsetInlineEnd
+import typings.csstype.mod.Property.InsetInlineStart
+import typings.csstype.mod.Property.Isolation
+import typings.csstype.mod.Property.JustifyContent
+import typings.csstype.mod.Property.JustifyItems
+import typings.csstype.mod.Property.JustifySelf
+import typings.csstype.mod.Property.JustifyTracks
+import typings.csstype.mod.Property.Left
+import typings.csstype.mod.Property.LetterSpacing
+import typings.csstype.mod.Property.LightingColor
+import typings.csstype.mod.Property.LineBreak
+import typings.csstype.mod.Property.LineClamp
+import typings.csstype.mod.Property.LineHeight
+import typings.csstype.mod.Property.LineHeightStep
+import typings.csstype.mod.Property.ListStyle
+import typings.csstype.mod.Property.ListStyleImage
+import typings.csstype.mod.Property.ListStylePosition
+import typings.csstype.mod.Property.ListStyleType
+import typings.csstype.mod.Property.Margin
+import typings.csstype.mod.Property.MarginBlock
+import typings.csstype.mod.Property.MarginBlockEnd
+import typings.csstype.mod.Property.MarginBlockStart
+import typings.csstype.mod.Property.MarginBottom
+import typings.csstype.mod.Property.MarginInline
+import typings.csstype.mod.Property.MarginInlineEnd
+import typings.csstype.mod.Property.MarginInlineStart
+import typings.csstype.mod.Property.MarginLeft
+import typings.csstype.mod.Property.MarginRight
+import typings.csstype.mod.Property.MarginTop
+import typings.csstype.mod.Property.Marker
+import typings.csstype.mod.Property.MarkerEnd
+import typings.csstype.mod.Property.MarkerMid
+import typings.csstype.mod.Property.MarkerStart
+import typings.csstype.mod.Property.Mask
+import typings.csstype.mod.Property.MaskBorder
+import typings.csstype.mod.Property.MaskBorderMode
+import typings.csstype.mod.Property.MaskBorderOutset
+import typings.csstype.mod.Property.MaskBorderRepeat
+import typings.csstype.mod.Property.MaskBorderSlice
+import typings.csstype.mod.Property.MaskBorderSource
+import typings.csstype.mod.Property.MaskBorderWidth
+import typings.csstype.mod.Property.MaskClip
+import typings.csstype.mod.Property.MaskComposite
+import typings.csstype.mod.Property.MaskImage
+import typings.csstype.mod.Property.MaskMode
+import typings.csstype.mod.Property.MaskOrigin
+import typings.csstype.mod.Property.MaskPosition
+import typings.csstype.mod.Property.MaskRepeat
+import typings.csstype.mod.Property.MaskSize
+import typings.csstype.mod.Property.MaskType
+import typings.csstype.mod.Property.MathDepth
+import typings.csstype.mod.Property.MathShift
+import typings.csstype.mod.Property.MathStyle
+import typings.csstype.mod.Property.MaxBlockSize
+import typings.csstype.mod.Property.MaxHeight
+import typings.csstype.mod.Property.MaxInlineSize
+import typings.csstype.mod.Property.MaxLines
+import typings.csstype.mod.Property.MaxWidth
+import typings.csstype.mod.Property.MinBlockSize
+import typings.csstype.mod.Property.MinHeight
+import typings.csstype.mod.Property.MinInlineSize
+import typings.csstype.mod.Property.MinWidth
+import typings.csstype.mod.Property.MixBlendMode
+import typings.csstype.mod.Property.MozAppearance
+import typings.csstype.mod.Property.MozBorderBottomColors
+import typings.csstype.mod.Property.MozBorderLeftColors
+import typings.csstype.mod.Property.MozBorderRightColors
+import typings.csstype.mod.Property.MozBorderTopColors
+import typings.csstype.mod.Property.MozContextProperties
+import typings.csstype.mod.Property.MozImageRegion
+import typings.csstype.mod.Property.MozOrient
+import typings.csstype.mod.Property.MozStackSizing
+import typings.csstype.mod.Property.MozTextBlink
+import typings.csstype.mod.Property.MozUserFocus
+import typings.csstype.mod.Property.MozUserModify
+import typings.csstype.mod.Property.MozWindowDragging
+import typings.csstype.mod.Property.MozWindowShadow
+import typings.csstype.mod.Property.MsAccelerator
+import typings.csstype.mod.Property.MsBlockProgression
+import typings.csstype.mod.Property.MsContentZoomChaining
+import typings.csstype.mod.Property.MsContentZoomLimit
+import typings.csstype.mod.Property.MsContentZoomLimitMax
+import typings.csstype.mod.Property.MsContentZoomLimitMin
+import typings.csstype.mod.Property.MsContentZoomSnap
+import typings.csstype.mod.Property.MsContentZoomSnapPoints
+import typings.csstype.mod.Property.MsContentZoomSnapType
+import typings.csstype.mod.Property.MsContentZooming
+import typings.csstype.mod.Property.MsFilter
+import typings.csstype.mod.Property.MsFlowFrom
+import typings.csstype.mod.Property.MsFlowInto
+import typings.csstype.mod.Property.MsGridColumns
+import typings.csstype.mod.Property.MsGridRows
+import typings.csstype.mod.Property.MsHighContrastAdjust
+import typings.csstype.mod.Property.MsHyphenateLimitChars
+import typings.csstype.mod.Property.MsHyphenateLimitLines
+import typings.csstype.mod.Property.MsHyphenateLimitZone
+import typings.csstype.mod.Property.MsImeAlign
+import typings.csstype.mod.Property.MsOverflowStyle
+import typings.csstype.mod.Property.MsScrollChaining
+import typings.csstype.mod.Property.MsScrollLimit
+import typings.csstype.mod.Property.MsScrollLimitXMax
+import typings.csstype.mod.Property.MsScrollLimitXMin
+import typings.csstype.mod.Property.MsScrollLimitYMax
+import typings.csstype.mod.Property.MsScrollLimitYMin
+import typings.csstype.mod.Property.MsScrollRails
+import typings.csstype.mod.Property.MsScrollSnapPointsX
+import typings.csstype.mod.Property.MsScrollSnapPointsY
+import typings.csstype.mod.Property.MsScrollSnapType
+import typings.csstype.mod.Property.MsScrollSnapX
+import typings.csstype.mod.Property.MsScrollSnapY
+import typings.csstype.mod.Property.MsScrollTranslation
+import typings.csstype.mod.Property.MsScrollbar3dlightColor
+import typings.csstype.mod.Property.MsScrollbarArrowColor
+import typings.csstype.mod.Property.MsScrollbarBaseColor
+import typings.csstype.mod.Property.MsScrollbarDarkshadowColor
+import typings.csstype.mod.Property.MsScrollbarFaceColor
+import typings.csstype.mod.Property.MsScrollbarHighlightColor
+import typings.csstype.mod.Property.MsScrollbarShadowColor
+import typings.csstype.mod.Property.MsScrollbarTrackColor
+import typings.csstype.mod.Property.MsTextAutospace
+import typings.csstype.mod.Property.MsTouchSelect
+import typings.csstype.mod.Property.MsUserSelect
+import typings.csstype.mod.Property.MsWrapFlow
+import typings.csstype.mod.Property.MsWrapMargin
+import typings.csstype.mod.Property.MsWrapThrough
+import typings.csstype.mod.Property.ObjectFit
+import typings.csstype.mod.Property.ObjectPosition
+import typings.csstype.mod.Property.Offset
+import typings.csstype.mod.Property.OffsetAnchor
+import typings.csstype.mod.Property.OffsetDistance
+import typings.csstype.mod.Property.OffsetPath
+import typings.csstype.mod.Property.OffsetRotate
+import typings.csstype.mod.Property.Opacity
+import typings.csstype.mod.Property.Order
+import typings.csstype.mod.Property.Orphans
+import typings.csstype.mod.Property.Outline
+import typings.csstype.mod.Property.OutlineColor
+import typings.csstype.mod.Property.OutlineOffset
+import typings.csstype.mod.Property.OutlineStyle
+import typings.csstype.mod.Property.OutlineWidth
+import typings.csstype.mod.Property.Overflow
+import typings.csstype.mod.Property.OverflowAnchor
+import typings.csstype.mod.Property.OverflowBlock
+import typings.csstype.mod.Property.OverflowClipBox
+import typings.csstype.mod.Property.OverflowClipMargin
+import typings.csstype.mod.Property.OverflowInline
+import typings.csstype.mod.Property.OverflowWrap
+import typings.csstype.mod.Property.OverflowX
+import typings.csstype.mod.Property.OverflowY
+import typings.csstype.mod.Property.OverscrollBehavior
+import typings.csstype.mod.Property.OverscrollBehaviorBlock
+import typings.csstype.mod.Property.OverscrollBehaviorInline
+import typings.csstype.mod.Property.OverscrollBehaviorX
+import typings.csstype.mod.Property.OverscrollBehaviorY
+import typings.csstype.mod.Property.Padding
+import typings.csstype.mod.Property.PaddingBlock
+import typings.csstype.mod.Property.PaddingBlockEnd
+import typings.csstype.mod.Property.PaddingBlockStart
+import typings.csstype.mod.Property.PaddingBottom
+import typings.csstype.mod.Property.PaddingInline
+import typings.csstype.mod.Property.PaddingInlineEnd
+import typings.csstype.mod.Property.PaddingInlineStart
+import typings.csstype.mod.Property.PaddingLeft
+import typings.csstype.mod.Property.PaddingRight
+import typings.csstype.mod.Property.PaddingTop
+import typings.csstype.mod.Property.PageBreakAfter
+import typings.csstype.mod.Property.PageBreakBefore
+import typings.csstype.mod.Property.PageBreakInside
+import typings.csstype.mod.Property.PaintOrder
+import typings.csstype.mod.Property.Perspective
+import typings.csstype.mod.Property.PerspectiveOrigin
+import typings.csstype.mod.Property.PlaceContent
+import typings.csstype.mod.Property.PlaceItems
+import typings.csstype.mod.Property.PlaceSelf
+import typings.csstype.mod.Property.PointerEvents
+import typings.csstype.mod.Property.Position
+import typings.csstype.mod.Property.PrintColorAdjust
+import typings.csstype.mod.Property.Quotes
+import typings.csstype.mod.Property.Resize
+import typings.csstype.mod.Property.Right
+import typings.csstype.mod.Property.Rotate
+import typings.csstype.mod.Property.RowGap
+import typings.csstype.mod.Property.RubyAlign
+import typings.csstype.mod.Property.RubyMerge
+import typings.csstype.mod.Property.RubyPosition
+import typings.csstype.mod.Property.Scale
+import typings.csstype.mod.Property.ScrollBehavior
+import typings.csstype.mod.Property.ScrollMargin
+import typings.csstype.mod.Property.ScrollMarginBlock
+import typings.csstype.mod.Property.ScrollMarginBlockEnd
+import typings.csstype.mod.Property.ScrollMarginBlockStart
+import typings.csstype.mod.Property.ScrollMarginBottom
+import typings.csstype.mod.Property.ScrollMarginInline
+import typings.csstype.mod.Property.ScrollMarginInlineEnd
+import typings.csstype.mod.Property.ScrollMarginInlineStart
+import typings.csstype.mod.Property.ScrollMarginLeft
+import typings.csstype.mod.Property.ScrollMarginRight
+import typings.csstype.mod.Property.ScrollMarginTop
+import typings.csstype.mod.Property.ScrollPadding
+import typings.csstype.mod.Property.ScrollPaddingBlock
+import typings.csstype.mod.Property.ScrollPaddingBlockEnd
+import typings.csstype.mod.Property.ScrollPaddingBlockStart
+import typings.csstype.mod.Property.ScrollPaddingBottom
+import typings.csstype.mod.Property.ScrollPaddingInline
+import typings.csstype.mod.Property.ScrollPaddingInlineEnd
+import typings.csstype.mod.Property.ScrollPaddingInlineStart
+import typings.csstype.mod.Property.ScrollPaddingLeft
+import typings.csstype.mod.Property.ScrollPaddingRight
+import typings.csstype.mod.Property.ScrollPaddingTop
+import typings.csstype.mod.Property.ScrollSnapAlign
+import typings.csstype.mod.Property.ScrollSnapStop
+import typings.csstype.mod.Property.ScrollSnapType
+import typings.csstype.mod.Property.ScrollbarColor
+import typings.csstype.mod.Property.ScrollbarGutter
+import typings.csstype.mod.Property.ScrollbarWidth
+import typings.csstype.mod.Property.ShapeImageThreshold
+import typings.csstype.mod.Property.ShapeMargin
+import typings.csstype.mod.Property.ShapeOutside
+import typings.csstype.mod.Property.ShapeRendering
+import typings.csstype.mod.Property.StopColor
+import typings.csstype.mod.Property.StopOpacity
+import typings.csstype.mod.Property.Stroke
+import typings.csstype.mod.Property.StrokeDasharray
+import typings.csstype.mod.Property.StrokeDashoffset
+import typings.csstype.mod.Property.StrokeLinecap
+import typings.csstype.mod.Property.StrokeLinejoin
+import typings.csstype.mod.Property.StrokeMiterlimit
+import typings.csstype.mod.Property.StrokeOpacity
+import typings.csstype.mod.Property.StrokeWidth
+import typings.csstype.mod.Property.TabSize
+import typings.csstype.mod.Property.TableLayout
+import typings.csstype.mod.Property.TextAlign
+import typings.csstype.mod.Property.TextAlignLast
+import typings.csstype.mod.Property.TextAnchor
+import typings.csstype.mod.Property.TextCombineUpright
+import typings.csstype.mod.Property.TextDecoration
+import typings.csstype.mod.Property.TextDecorationColor
+import typings.csstype.mod.Property.TextDecorationLine
+import typings.csstype.mod.Property.TextDecorationSkip
+import typings.csstype.mod.Property.TextDecorationSkipInk
+import typings.csstype.mod.Property.TextDecorationStyle
+import typings.csstype.mod.Property.TextDecorationThickness
+import typings.csstype.mod.Property.TextEmphasis
+import typings.csstype.mod.Property.TextEmphasisColor
+import typings.csstype.mod.Property.TextEmphasisPosition
+import typings.csstype.mod.Property.TextEmphasisStyle
+import typings.csstype.mod.Property.TextIndent
+import typings.csstype.mod.Property.TextJustify
+import typings.csstype.mod.Property.TextOrientation
+import typings.csstype.mod.Property.TextOverflow
+import typings.csstype.mod.Property.TextRendering
+import typings.csstype.mod.Property.TextShadow
+import typings.csstype.mod.Property.TextSizeAdjust
+import typings.csstype.mod.Property.TextTransform
+import typings.csstype.mod.Property.TextUnderlineOffset
+import typings.csstype.mod.Property.TextUnderlinePosition
+import typings.csstype.mod.Property.Top
+import typings.csstype.mod.Property.TouchAction
+import typings.csstype.mod.Property.Transform
+import typings.csstype.mod.Property.TransformBox
+import typings.csstype.mod.Property.TransformOrigin
+import typings.csstype.mod.Property.TransformStyle
+import typings.csstype.mod.Property.Transition
+import typings.csstype.mod.Property.TransitionDelay
+import typings.csstype.mod.Property.TransitionDuration
+import typings.csstype.mod.Property.TransitionProperty
+import typings.csstype.mod.Property.TransitionTimingFunction
+import typings.csstype.mod.Property.Translate
+import typings.csstype.mod.Property.UnicodeBidi
+import typings.csstype.mod.Property.UserSelect
+import typings.csstype.mod.Property.VectorEffect
+import typings.csstype.mod.Property.VerticalAlign
+import typings.csstype.mod.Property.Visibility
+import typings.csstype.mod.Property.WebkitAppearance
+import typings.csstype.mod.Property.WebkitBorderBefore
+import typings.csstype.mod.Property.WebkitBorderBeforeColor
+import typings.csstype.mod.Property.WebkitBorderBeforeStyle
+import typings.csstype.mod.Property.WebkitBorderBeforeWidth
+import typings.csstype.mod.Property.WebkitBoxReflect
+import typings.csstype.mod.Property.WebkitLineClamp
+import typings.csstype.mod.Property.WebkitMask
+import typings.csstype.mod.Property.WebkitMaskAttachment
+import typings.csstype.mod.Property.WebkitMaskClip
+import typings.csstype.mod.Property.WebkitMaskComposite
+import typings.csstype.mod.Property.WebkitMaskImage
+import typings.csstype.mod.Property.WebkitMaskOrigin
+import typings.csstype.mod.Property.WebkitMaskPosition
+import typings.csstype.mod.Property.WebkitMaskPositionX
+import typings.csstype.mod.Property.WebkitMaskPositionY
+import typings.csstype.mod.Property.WebkitMaskRepeat
+import typings.csstype.mod.Property.WebkitMaskRepeatX
+import typings.csstype.mod.Property.WebkitMaskRepeatY
+import typings.csstype.mod.Property.WebkitMaskSize
+import typings.csstype.mod.Property.WebkitOverflowScrolling
+import typings.csstype.mod.Property.WebkitTapHighlightColor
+import typings.csstype.mod.Property.WebkitTextFillColor
+import typings.csstype.mod.Property.WebkitTextStroke
+import typings.csstype.mod.Property.WebkitTextStrokeColor
+import typings.csstype.mod.Property.WebkitTextStrokeWidth
+import typings.csstype.mod.Property.WebkitTouchCallout
+import typings.csstype.mod.Property.WebkitUserModify
+import typings.csstype.mod.Property.WhiteSpace
+import typings.csstype.mod.Property.Widows
+import typings.csstype.mod.Property.Width
+import typings.csstype.mod.Property.WillChange
+import typings.csstype.mod.Property.WordBreak
+import typings.csstype.mod.Property.WordSpacing
+import typings.csstype.mod.Property.WordWrap
+import typings.csstype.mod.Property.WritingMode
+import typings.csstype.mod.Property.ZIndex
+import typings.csstype.mod.Property.Zoom
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -407,69 +525,437 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent @styled-system/css.@styled-system/css.OverwriteCSSProperties */
 trait AllSystemCSSProperties extends StObject {
   
-  var alignContent: js.UndefOr[AlignContentProperty] = js.undefined
+  var MozAnimation: js.UndefOr[Animation[String]] = js.undefined
   
-  var alignItems: js.UndefOr[AlignItemsProperty] = js.undefined
+  var MozAnimationDelay: js.UndefOr[AnimationDelay[String]] = js.undefined
   
-  var alignSelf: js.UndefOr[AlignSelfProperty] = js.undefined
+  var MozAnimationDirection: js.UndefOr[AnimationDirection] = js.undefined
   
-  var alignTracks: js.UndefOr[AlignTracksProperty] = js.undefined
+  var MozAnimationDuration: js.UndefOr[AnimationDuration[String]] = js.undefined
   
-  var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty] = js.undefined
+  var MozAnimationFillMode: js.UndefOr[AnimationFillMode] = js.undefined
   
-  var all: js.UndefOr[Globals] = js.undefined
+  var MozAnimationIterationCount: js.UndefOr[AnimationIterationCount] = js.undefined
   
-  var animation: js.UndefOr[AnimationProperty] = js.undefined
+  var MozAnimationName: js.UndefOr[AnimationName] = js.undefined
   
-  var animationDelay: js.UndefOr[GlobalsString] = js.undefined
+  var MozAnimationPlayState: js.UndefOr[AnimationPlayState] = js.undefined
   
-  var animationDirection: js.UndefOr[AnimationDirectionProperty] = js.undefined
+  var MozAnimationTimingFunction: js.UndefOr[AnimationTimingFunction] = js.undefined
   
-  var animationDuration: js.UndefOr[GlobalsString] = js.undefined
+  var MozAppearance: js.UndefOr[typings.csstype.mod.Property.MozAppearance] = js.undefined
   
-  var animationFillMode: js.UndefOr[AnimationFillModeProperty] = js.undefined
+  var MozBackfaceVisibility: js.UndefOr[BackfaceVisibility] = js.undefined
   
-  var animationIterationCount: js.UndefOr[AnimationIterationCountProperty] = js.undefined
+  var MozBorderBottomColors: js.UndefOr[typings.csstype.mod.Property.MozBorderBottomColors] = js.undefined
   
-  var animationName: js.UndefOr[AnimationNameProperty] = js.undefined
+  var MozBorderEndColor: js.UndefOr[BorderInlineEndColor] = js.undefined
   
-  var animationPlayState: js.UndefOr[AnimationPlayStateProperty] = js.undefined
+  var MozBorderEndStyle: js.UndefOr[BorderInlineEndStyle] = js.undefined
   
-  var animationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty] = js.undefined
+  var MozBorderEndWidth: js.UndefOr[BorderInlineEndWidth[Double | String]] = js.undefined
   
-  var appearance: js.UndefOr[AppearanceProperty] = js.undefined
+  var MozBorderImage: js.UndefOr[BorderImage] = js.undefined
   
-  var aspectRatio: js.UndefOr[AspectRatioProperty] = js.undefined
+  var MozBorderLeftColors: js.UndefOr[typings.csstype.mod.Property.MozBorderLeftColors] = js.undefined
   
-  var backdropFilter: js.UndefOr[BackdropFilterProperty] = js.undefined
+  var MozBorderRightColors: js.UndefOr[typings.csstype.mod.Property.MozBorderRightColors] = js.undefined
   
-  var backfaceVisibility: js.UndefOr[BackfaceVisibilityProperty] = js.undefined
+  var MozBorderStartColor: js.UndefOr[BorderInlineStartColor] = js.undefined
   
-  var background: js.UndefOr[BackgroundProperty[Double | String]] = js.undefined
+  var MozBorderStartStyle: js.UndefOr[BorderInlineStartStyle] = js.undefined
   
-  var backgroundAttachment: js.UndefOr[BackgroundAttachmentProperty] = js.undefined
+  var MozBorderTopColors: js.UndefOr[typings.csstype.mod.Property.MozBorderTopColors] = js.undefined
   
-  var backgroundBlendMode: js.UndefOr[BackgroundBlendModeProperty] = js.undefined
+  var MozBoxSizing: js.UndefOr[BoxSizing] = js.undefined
   
-  var backgroundClip: js.UndefOr[BackgroundClipProperty] = js.undefined
+  var MozColumnCount: js.UndefOr[ColumnCount] = js.undefined
   
-  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
+  var MozColumnFill: js.UndefOr[ColumnFill] = js.undefined
   
-  var backgroundImage: js.UndefOr[BackgroundImageProperty] = js.undefined
+  var MozColumnRule: js.UndefOr[ColumnRule[Double | String]] = js.undefined
   
-  var backgroundOrigin: js.UndefOr[BackgroundOriginProperty] = js.undefined
+  var MozColumnRuleColor: js.UndefOr[ColumnRuleColor] = js.undefined
   
-  var backgroundPosition: js.UndefOr[BackgroundPositionProperty[Double | String]] = js.undefined
+  var MozColumnRuleStyle: js.UndefOr[ColumnRuleStyle] = js.undefined
   
-  var backgroundPositionX: js.UndefOr[BackgroundPositionXProperty[Double | String]] = js.undefined
+  var MozColumnRuleWidth: js.UndefOr[ColumnRuleWidth[Double | String]] = js.undefined
   
-  var backgroundPositionY: js.UndefOr[BackgroundPositionYProperty[Double | String]] = js.undefined
+  var MozColumnWidth: js.UndefOr[ColumnWidth[Double | String]] = js.undefined
   
-  var backgroundRepeat: js.UndefOr[BackgroundRepeatProperty] = js.undefined
+  var MozColumns: js.UndefOr[Columns[Double | String]] = js.undefined
   
-  var backgroundSize: js.UndefOr[BackgroundSizeProperty[Double | String]] = js.undefined
+  var MozContextProperties: js.UndefOr[typings.csstype.mod.Property.MozContextProperties] = js.undefined
   
-  var baselineShift: js.UndefOr[BaselineShiftProperty[Double | String]] = js.undefined
+  var MozFontFeatureSettings: js.UndefOr[FontFeatureSettings] = js.undefined
+  
+  var MozFontLanguageOverride: js.UndefOr[FontLanguageOverride] = js.undefined
+  
+  var MozHyphens: js.UndefOr[Hyphens] = js.undefined
+  
+  var MozImageRegion: js.UndefOr[typings.csstype.mod.Property.MozImageRegion] = js.undefined
+  
+  var MozMarginEnd: js.UndefOr[MarginInlineEnd[Double | String]] = js.undefined
+  
+  var MozMarginStart: js.UndefOr[MarginInlineStart[Double | String]] = js.undefined
+  
+  var MozOrient: js.UndefOr[typings.csstype.mod.Property.MozOrient] = js.undefined
+  
+  var MozOsxFontSmoothing: js.UndefOr[FontSmooth[Double | String]] = js.undefined
+  
+  var MozPaddingEnd: js.UndefOr[PaddingInlineEnd[Double | String]] = js.undefined
+  
+  var MozPaddingStart: js.UndefOr[PaddingInlineStart[Double | String]] = js.undefined
+  
+  var MozPerspective: js.UndefOr[Perspective[Double | String]] = js.undefined
+  
+  var MozPerspectiveOrigin: js.UndefOr[PerspectiveOrigin[Double | String]] = js.undefined
+  
+  var MozStackSizing: js.UndefOr[typings.csstype.mod.Property.MozStackSizing] = js.undefined
+  
+  var MozTabSize: js.UndefOr[TabSize[Double | String]] = js.undefined
+  
+  var MozTextBlink: js.UndefOr[typings.csstype.mod.Property.MozTextBlink] = js.undefined
+  
+  var MozTextSizeAdjust: js.UndefOr[TextSizeAdjust] = js.undefined
+  
+  var MozTransformOrigin: js.UndefOr[TransformOrigin[Double | String]] = js.undefined
+  
+  var MozTransformStyle: js.UndefOr[TransformStyle] = js.undefined
+  
+  var MozTransition: js.UndefOr[Transition[String]] = js.undefined
+  
+  var MozTransitionDelay: js.UndefOr[TransitionDelay[String]] = js.undefined
+  
+  var MozTransitionDuration: js.UndefOr[TransitionDuration[String]] = js.undefined
+  
+  var MozTransitionProperty: js.UndefOr[TransitionProperty] = js.undefined
+  
+  var MozTransitionTimingFunction: js.UndefOr[TransitionTimingFunction] = js.undefined
+  
+  var MozUserFocus: js.UndefOr[typings.csstype.mod.Property.MozUserFocus] = js.undefined
+  
+  var MozUserModify: js.UndefOr[typings.csstype.mod.Property.MozUserModify] = js.undefined
+  
+  var MozUserSelect: js.UndefOr[UserSelect] = js.undefined
+  
+  var MozWindowDragging: js.UndefOr[typings.csstype.mod.Property.MozWindowDragging] = js.undefined
+  
+  var MozWindowShadow: js.UndefOr[typings.csstype.mod.Property.MozWindowShadow] = js.undefined
+  
+  var WebkitAlignContent: js.UndefOr[AlignContent] = js.undefined
+  
+  var WebkitAlignItems: js.UndefOr[AlignItems] = js.undefined
+  
+  var WebkitAlignSelf: js.UndefOr[AlignSelf] = js.undefined
+  
+  var WebkitAnimation: js.UndefOr[Animation[String]] = js.undefined
+  
+  var WebkitAnimationDelay: js.UndefOr[AnimationDelay[String]] = js.undefined
+  
+  var WebkitAnimationDirection: js.UndefOr[AnimationDirection] = js.undefined
+  
+  var WebkitAnimationDuration: js.UndefOr[AnimationDuration[String]] = js.undefined
+  
+  var WebkitAnimationFillMode: js.UndefOr[AnimationFillMode] = js.undefined
+  
+  var WebkitAnimationIterationCount: js.UndefOr[AnimationIterationCount] = js.undefined
+  
+  var WebkitAnimationName: js.UndefOr[AnimationName] = js.undefined
+  
+  var WebkitAnimationPlayState: js.UndefOr[AnimationPlayState] = js.undefined
+  
+  var WebkitAnimationTimingFunction: js.UndefOr[AnimationTimingFunction] = js.undefined
+  
+  var WebkitAppearance: js.UndefOr[typings.csstype.mod.Property.WebkitAppearance] = js.undefined
+  
+  var WebkitBackdropFilter: js.UndefOr[BackdropFilter] = js.undefined
+  
+  var WebkitBackfaceVisibility: js.UndefOr[BackfaceVisibility] = js.undefined
+  
+  var WebkitBackgroundClip: js.UndefOr[BackgroundClip] = js.undefined
+  
+  var WebkitBackgroundOrigin: js.UndefOr[BackgroundOrigin] = js.undefined
+  
+  var WebkitBackgroundSize: js.UndefOr[BackgroundSize[Double | String]] = js.undefined
+  
+  var WebkitBorderBefore: js.UndefOr[typings.csstype.mod.Property.WebkitBorderBefore[Double | String]] = js.undefined
+  
+  var WebkitBorderBeforeColor: js.UndefOr[typings.csstype.mod.Property.WebkitBorderBeforeColor] = js.undefined
+  
+  var WebkitBorderBeforeStyle: js.UndefOr[typings.csstype.mod.Property.WebkitBorderBeforeStyle] = js.undefined
+  
+  var WebkitBorderBeforeWidth: js.UndefOr[typings.csstype.mod.Property.WebkitBorderBeforeWidth[Double | String]] = js.undefined
+  
+  var WebkitBorderBottomLeftRadius: js.UndefOr[BorderBottomLeftRadius[Double | String]] = js.undefined
+  
+  var WebkitBorderBottomRightRadius: js.UndefOr[BorderBottomRightRadius[Double | String]] = js.undefined
+  
+  var WebkitBorderImage: js.UndefOr[BorderImage] = js.undefined
+  
+  var WebkitBorderImageSlice: js.UndefOr[BorderImageSlice] = js.undefined
+  
+  var WebkitBorderRadius: js.UndefOr[BorderRadius[Double | String]] = js.undefined
+  
+  var WebkitBorderTopLeftRadius: js.UndefOr[BorderTopLeftRadius[Double | String]] = js.undefined
+  
+  var WebkitBorderTopRightRadius: js.UndefOr[BorderTopRightRadius[Double | String]] = js.undefined
+  
+  var WebkitBoxDecorationBreak: js.UndefOr[BoxDecorationBreak] = js.undefined
+  
+  var WebkitBoxReflect: js.UndefOr[typings.csstype.mod.Property.WebkitBoxReflect[Double | String]] = js.undefined
+  
+  var WebkitBoxShadow: js.UndefOr[BoxShadow] = js.undefined
+  
+  var WebkitBoxSizing: js.UndefOr[BoxSizing] = js.undefined
+  
+  var WebkitClipPath: js.UndefOr[ClipPath] = js.undefined
+  
+  var WebkitColumnCount: js.UndefOr[ColumnCount] = js.undefined
+  
+  var WebkitColumnFill: js.UndefOr[ColumnFill] = js.undefined
+  
+  var WebkitColumnRule: js.UndefOr[ColumnRule[Double | String]] = js.undefined
+  
+  var WebkitColumnRuleColor: js.UndefOr[ColumnRuleColor] = js.undefined
+  
+  var WebkitColumnRuleStyle: js.UndefOr[ColumnRuleStyle] = js.undefined
+  
+  var WebkitColumnRuleWidth: js.UndefOr[ColumnRuleWidth[Double | String]] = js.undefined
+  
+  var WebkitColumnSpan: js.UndefOr[ColumnSpan] = js.undefined
+  
+  var WebkitColumnWidth: js.UndefOr[ColumnWidth[Double | String]] = js.undefined
+  
+  var WebkitColumns: js.UndefOr[Columns[Double | String]] = js.undefined
+  
+  var WebkitFilter: js.UndefOr[Filter] = js.undefined
+  
+  var WebkitFlex: js.UndefOr[Flex[Double | String]] = js.undefined
+  
+  var WebkitFlexBasis: js.UndefOr[FlexBasis[Double | String]] = js.undefined
+  
+  var WebkitFlexDirection: js.UndefOr[FlexDirection] = js.undefined
+  
+  var WebkitFlexFlow: js.UndefOr[FlexFlow] = js.undefined
+  
+  var WebkitFlexGrow: js.UndefOr[FlexGrow] = js.undefined
+  
+  var WebkitFlexShrink: js.UndefOr[FlexShrink] = js.undefined
+  
+  var WebkitFlexWrap: js.UndefOr[FlexWrap] = js.undefined
+  
+  var WebkitFontFeatureSettings: js.UndefOr[FontFeatureSettings] = js.undefined
+  
+  var WebkitFontKerning: js.UndefOr[FontKerning] = js.undefined
+  
+  var WebkitFontSmoothing: js.UndefOr[FontSmooth[Double | String]] = js.undefined
+  
+  var WebkitFontVariantLigatures: js.UndefOr[FontVariantLigatures] = js.undefined
+  
+  var WebkitHyphenateCharacter: js.UndefOr[HyphenateCharacter] = js.undefined
+  
+  var WebkitHyphens: js.UndefOr[Hyphens] = js.undefined
+  
+  var WebkitInitialLetter: js.UndefOr[InitialLetter] = js.undefined
+  
+  var WebkitJustifyContent: js.UndefOr[JustifyContent] = js.undefined
+  
+  var WebkitLineBreak: js.UndefOr[LineBreak] = js.undefined
+  
+  var WebkitLineClamp: js.UndefOr[typings.csstype.mod.Property.WebkitLineClamp] = js.undefined
+  
+  var WebkitMarginEnd: js.UndefOr[MarginInlineEnd[Double | String]] = js.undefined
+  
+  var WebkitMarginStart: js.UndefOr[MarginInlineStart[Double | String]] = js.undefined
+  
+  var WebkitMask: js.UndefOr[typings.csstype.mod.Property.WebkitMask[Double | String]] = js.undefined
+  
+  var WebkitMaskAttachment: js.UndefOr[typings.csstype.mod.Property.WebkitMaskAttachment] = js.undefined
+  
+  var WebkitMaskBoxImage: js.UndefOr[MaskBorder] = js.undefined
+  
+  var WebkitMaskBoxImageOutset: js.UndefOr[MaskBorderOutset[Double | String]] = js.undefined
+  
+  var WebkitMaskBoxImageRepeat: js.UndefOr[MaskBorderRepeat] = js.undefined
+  
+  var WebkitMaskBoxImageSlice: js.UndefOr[MaskBorderSlice] = js.undefined
+  
+  var WebkitMaskBoxImageSource: js.UndefOr[MaskBorderSource] = js.undefined
+  
+  var WebkitMaskBoxImageWidth: js.UndefOr[MaskBorderWidth[Double | String]] = js.undefined
+  
+  var WebkitMaskClip: js.UndefOr[typings.csstype.mod.Property.WebkitMaskClip] = js.undefined
+  
+  var WebkitMaskComposite: js.UndefOr[typings.csstype.mod.Property.WebkitMaskComposite] = js.undefined
+  
+  var WebkitMaskImage: js.UndefOr[typings.csstype.mod.Property.WebkitMaskImage] = js.undefined
+  
+  var WebkitMaskOrigin: js.UndefOr[typings.csstype.mod.Property.WebkitMaskOrigin] = js.undefined
+  
+  var WebkitMaskPosition: js.UndefOr[typings.csstype.mod.Property.WebkitMaskPosition[Double | String]] = js.undefined
+  
+  var WebkitMaskPositionX: js.UndefOr[typings.csstype.mod.Property.WebkitMaskPositionX[Double | String]] = js.undefined
+  
+  var WebkitMaskPositionY: js.UndefOr[typings.csstype.mod.Property.WebkitMaskPositionY[Double | String]] = js.undefined
+  
+  var WebkitMaskRepeat: js.UndefOr[typings.csstype.mod.Property.WebkitMaskRepeat] = js.undefined
+  
+  var WebkitMaskRepeatX: js.UndefOr[typings.csstype.mod.Property.WebkitMaskRepeatX] = js.undefined
+  
+  var WebkitMaskRepeatY: js.UndefOr[typings.csstype.mod.Property.WebkitMaskRepeatY] = js.undefined
+  
+  var WebkitMaskSize: js.UndefOr[typings.csstype.mod.Property.WebkitMaskSize[Double | String]] = js.undefined
+  
+  var WebkitMaxInlineSize: js.UndefOr[MaxInlineSize[Double | String]] = js.undefined
+  
+  var WebkitOrder: js.UndefOr[Order] = js.undefined
+  
+  var WebkitOverflowScrolling: js.UndefOr[typings.csstype.mod.Property.WebkitOverflowScrolling] = js.undefined
+  
+  var WebkitPaddingEnd: js.UndefOr[PaddingInlineEnd[Double | String]] = js.undefined
+  
+  var WebkitPaddingStart: js.UndefOr[PaddingInlineStart[Double | String]] = js.undefined
+  
+  var WebkitPerspective: js.UndefOr[Perspective[Double | String]] = js.undefined
+  
+  var WebkitPerspectiveOrigin: js.UndefOr[PerspectiveOrigin[Double | String]] = js.undefined
+  
+  var WebkitPrintColorAdjust: js.UndefOr[PrintColorAdjust] = js.undefined
+  
+  var WebkitRubyPosition: js.UndefOr[RubyPosition] = js.undefined
+  
+  var WebkitScrollSnapType: js.UndefOr[ScrollSnapType] = js.undefined
+  
+  var WebkitShapeMargin: js.UndefOr[ShapeMargin[Double | String]] = js.undefined
+  
+  var WebkitTapHighlightColor: js.UndefOr[typings.csstype.mod.Property.WebkitTapHighlightColor] = js.undefined
+  
+  var WebkitTextCombine: js.UndefOr[TextCombineUpright] = js.undefined
+  
+  var WebkitTextDecorationColor: js.UndefOr[TextDecorationColor] = js.undefined
+  
+  var WebkitTextDecorationLine: js.UndefOr[TextDecorationLine] = js.undefined
+  
+  var WebkitTextDecorationSkip: js.UndefOr[TextDecorationSkip] = js.undefined
+  
+  var WebkitTextDecorationStyle: js.UndefOr[TextDecorationStyle] = js.undefined
+  
+  var WebkitTextEmphasis: js.UndefOr[TextEmphasis] = js.undefined
+  
+  var WebkitTextEmphasisColor: js.UndefOr[TextEmphasisColor] = js.undefined
+  
+  var WebkitTextEmphasisPosition: js.UndefOr[TextEmphasisPosition] = js.undefined
+  
+  var WebkitTextEmphasisStyle: js.UndefOr[TextEmphasisStyle] = js.undefined
+  
+  var WebkitTextFillColor: js.UndefOr[typings.csstype.mod.Property.WebkitTextFillColor] = js.undefined
+  
+  var WebkitTextOrientation: js.UndefOr[TextOrientation] = js.undefined
+  
+  var WebkitTextSizeAdjust: js.UndefOr[TextSizeAdjust] = js.undefined
+  
+  var WebkitTextStroke: js.UndefOr[typings.csstype.mod.Property.WebkitTextStroke[Double | String]] = js.undefined
+  
+  var WebkitTextStrokeColor: js.UndefOr[typings.csstype.mod.Property.WebkitTextStrokeColor] = js.undefined
+  
+  var WebkitTextStrokeWidth: js.UndefOr[typings.csstype.mod.Property.WebkitTextStrokeWidth[Double | String]] = js.undefined
+  
+  var WebkitTextUnderlinePosition: js.UndefOr[TextUnderlinePosition] = js.undefined
+  
+  var WebkitTouchCallout: js.UndefOr[typings.csstype.mod.Property.WebkitTouchCallout] = js.undefined
+  
+  var WebkitTransform: js.UndefOr[Transform] = js.undefined
+  
+  var WebkitTransformOrigin: js.UndefOr[TransformOrigin[Double | String]] = js.undefined
+  
+  var WebkitTransformStyle: js.UndefOr[TransformStyle] = js.undefined
+  
+  var WebkitTransition: js.UndefOr[Transition[String]] = js.undefined
+  
+  var WebkitTransitionDelay: js.UndefOr[TransitionDelay[String]] = js.undefined
+  
+  var WebkitTransitionDuration: js.UndefOr[TransitionDuration[String]] = js.undefined
+  
+  var WebkitTransitionProperty: js.UndefOr[TransitionProperty] = js.undefined
+  
+  var WebkitTransitionTimingFunction: js.UndefOr[TransitionTimingFunction] = js.undefined
+  
+  var WebkitUserModify: js.UndefOr[typings.csstype.mod.Property.WebkitUserModify] = js.undefined
+  
+  var WebkitUserSelect: js.UndefOr[UserSelect] = js.undefined
+  
+  var WebkitWritingMode: js.UndefOr[WritingMode] = js.undefined
+  
+  var accentColor: js.UndefOr[AccentColor] = js.undefined
+  
+  var alignContent: js.UndefOr[AlignContent] = js.undefined
+  
+  var alignItems: js.UndefOr[AlignItems] = js.undefined
+  
+  var alignSelf: js.UndefOr[AlignSelf] = js.undefined
+  
+  var alignTracks: js.UndefOr[AlignTracks] = js.undefined
+  
+  var alignmentBaseline: js.UndefOr[AlignmentBaseline] = js.undefined
+  
+  var all: js.UndefOr[All] = js.undefined
+  
+  var animation: js.UndefOr[Animation[String]] = js.undefined
+  
+  var animationComposition: js.UndefOr[AnimationComposition] = js.undefined
+  
+  var animationDelay: js.UndefOr[AnimationDelay[String]] = js.undefined
+  
+  var animationDirection: js.UndefOr[AnimationDirection] = js.undefined
+  
+  var animationDuration: js.UndefOr[AnimationDuration[String]] = js.undefined
+  
+  var animationFillMode: js.UndefOr[AnimationFillMode] = js.undefined
+  
+  var animationIterationCount: js.UndefOr[AnimationIterationCount] = js.undefined
+  
+  var animationName: js.UndefOr[AnimationName] = js.undefined
+  
+  var animationPlayState: js.UndefOr[AnimationPlayState] = js.undefined
+  
+  var animationTimeline: js.UndefOr[AnimationTimeline] = js.undefined
+  
+  var animationTimingFunction: js.UndefOr[AnimationTimingFunction] = js.undefined
+  
+  var appearance: js.UndefOr[Appearance] = js.undefined
+  
+  var aspectRatio: js.UndefOr[AspectRatio] = js.undefined
+  
+  var backdropFilter: js.UndefOr[BackdropFilter] = js.undefined
+  
+  var backfaceVisibility: js.UndefOr[BackfaceVisibility] = js.undefined
+  
+  var background: js.UndefOr[Background[Double | String]] = js.undefined
+  
+  var backgroundAttachment: js.UndefOr[BackgroundAttachment] = js.undefined
+  
+  var backgroundBlendMode: js.UndefOr[BackgroundBlendMode] = js.undefined
+  
+  var backgroundClip: js.UndefOr[BackgroundClip] = js.undefined
+  
+  var backgroundColor: js.UndefOr[BackgroundColor] = js.undefined
+  
+  var backgroundImage: js.UndefOr[BackgroundImage] = js.undefined
+  
+  var backgroundOrigin: js.UndefOr[BackgroundOrigin] = js.undefined
+  
+  var backgroundPosition: js.UndefOr[BackgroundPosition[Double | String]] = js.undefined
+  
+  var backgroundPositionX: js.UndefOr[BackgroundPositionX[Double | String]] = js.undefined
+  
+  var backgroundPositionY: js.UndefOr[BackgroundPositionY[Double | String]] = js.undefined
+  
+  var backgroundRepeat: js.UndefOr[BackgroundRepeat] = js.undefined
+  
+  var backgroundSize: js.UndefOr[BackgroundSize[Double | String]] = js.undefined
+  
+  var baselineShift: js.UndefOr[BaselineShift[Double | String]] = js.undefined
   
   /**
     * The **`background-color`** CSS property sets the background color of an element.
@@ -482,137 +968,137 @@ trait AllSystemCSSProperties extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/background-color
     */
-  var bg: js.UndefOr[BackgroundColorProperty | js.Array[BackgroundColorProperty]] = js.undefined
+  var bg: js.UndefOr[BackgroundColor | js.Array[NonNullable[js.UndefOr[BackgroundColor]]]] = js.undefined
   
-  var blockOverflow: js.UndefOr[BlockOverflowProperty] = js.undefined
+  var blockOverflow: js.UndefOr[BlockOverflow] = js.undefined
   
-  var blockSize: js.UndefOr[BlockSizeProperty[Double | String]] = js.undefined
+  var blockSize: js.UndefOr[BlockSize[Double | String]] = js.undefined
   
-  var border: js.UndefOr[BorderProperty[Double | String]] = js.undefined
+  var border: js.UndefOr[Border[Double | String]] = js.undefined
   
-  var borderBlock: js.UndefOr[BorderBlockProperty[Double | String]] = js.undefined
+  var borderBlock: js.UndefOr[BorderBlock[Double | String]] = js.undefined
   
-  var borderBlockColor: js.UndefOr[BorderBlockColorProperty] = js.undefined
+  var borderBlockColor: js.UndefOr[BorderBlockColor] = js.undefined
   
-  var borderBlockEnd: js.UndefOr[BorderBlockEndProperty[Double | String]] = js.undefined
+  var borderBlockEnd: js.UndefOr[BorderBlockEnd[Double | String]] = js.undefined
   
-  var borderBlockEndColor: js.UndefOr[BorderBlockEndColorProperty] = js.undefined
+  var borderBlockEndColor: js.UndefOr[BorderBlockEndColor] = js.undefined
   
-  var borderBlockEndStyle: js.UndefOr[BorderBlockEndStyleProperty] = js.undefined
+  var borderBlockEndStyle: js.UndefOr[BorderBlockEndStyle] = js.undefined
   
-  var borderBlockEndWidth: js.UndefOr[BorderBlockEndWidthProperty[Double | String]] = js.undefined
+  var borderBlockEndWidth: js.UndefOr[BorderBlockEndWidth[Double | String]] = js.undefined
   
-  var borderBlockStart: js.UndefOr[BorderBlockStartProperty[Double | String]] = js.undefined
+  var borderBlockStart: js.UndefOr[BorderBlockStart[Double | String]] = js.undefined
   
-  var borderBlockStartColor: js.UndefOr[BorderBlockStartColorProperty] = js.undefined
+  var borderBlockStartColor: js.UndefOr[BorderBlockStartColor] = js.undefined
   
-  var borderBlockStartStyle: js.UndefOr[BorderBlockStartStyleProperty] = js.undefined
+  var borderBlockStartStyle: js.UndefOr[BorderBlockStartStyle] = js.undefined
   
-  var borderBlockStartWidth: js.UndefOr[BorderBlockStartWidthProperty[Double | String]] = js.undefined
+  var borderBlockStartWidth: js.UndefOr[BorderBlockStartWidth[Double | String]] = js.undefined
   
-  var borderBlockStyle: js.UndefOr[BorderBlockStyleProperty] = js.undefined
+  var borderBlockStyle: js.UndefOr[BorderBlockStyle] = js.undefined
   
-  var borderBlockWidth: js.UndefOr[BorderBlockWidthProperty[Double | String]] = js.undefined
+  var borderBlockWidth: js.UndefOr[BorderBlockWidth[Double | String]] = js.undefined
   
-  var borderBottom: js.UndefOr[BorderBottomProperty[Double | String]] = js.undefined
+  var borderBottom: js.UndefOr[BorderBottom[Double | String]] = js.undefined
   
-  var borderBottomColor: js.UndefOr[BorderBottomColorProperty] = js.undefined
+  var borderBottomColor: js.UndefOr[BorderBottomColor] = js.undefined
   
-  var borderBottomLeftRadius: js.UndefOr[BorderBottomLeftRadiusProperty[Double | String]] = js.undefined
+  var borderBottomLeftRadius: js.UndefOr[BorderBottomLeftRadius[Double | String]] = js.undefined
   
-  var borderBottomRightRadius: js.UndefOr[BorderBottomRightRadiusProperty[Double | String]] = js.undefined
+  var borderBottomRightRadius: js.UndefOr[BorderBottomRightRadius[Double | String]] = js.undefined
   
-  var borderBottomStyle: js.UndefOr[BorderBottomStyleProperty] = js.undefined
+  var borderBottomStyle: js.UndefOr[BorderBottomStyle] = js.undefined
   
-  var borderBottomWidth: js.UndefOr[BorderBottomWidthProperty[Double | String]] = js.undefined
+  var borderBottomWidth: js.UndefOr[BorderBottomWidth[Double | String]] = js.undefined
   
-  var borderCollapse: js.UndefOr[BorderCollapseProperty] = js.undefined
+  var borderCollapse: js.UndefOr[BorderCollapse] = js.undefined
   
-  var borderColor: js.UndefOr[BorderColorProperty] = js.undefined
+  var borderColor: js.UndefOr[BorderColor] = js.undefined
   
-  var borderEndEndRadius: js.UndefOr[BorderEndEndRadiusProperty[Double | String]] = js.undefined
+  var borderEndEndRadius: js.UndefOr[BorderEndEndRadius[Double | String]] = js.undefined
   
-  var borderEndStartRadius: js.UndefOr[BorderEndStartRadiusProperty[Double | String]] = js.undefined
+  var borderEndStartRadius: js.UndefOr[BorderEndStartRadius[Double | String]] = js.undefined
   
-  var borderImage: js.UndefOr[BorderImageProperty] = js.undefined
+  var borderImage: js.UndefOr[BorderImage] = js.undefined
   
-  var borderImageOutset: js.UndefOr[BorderImageOutsetProperty[Double | String]] = js.undefined
+  var borderImageOutset: js.UndefOr[BorderImageOutset[Double | String]] = js.undefined
   
-  var borderImageRepeat: js.UndefOr[BorderImageRepeatProperty] = js.undefined
+  var borderImageRepeat: js.UndefOr[BorderImageRepeat] = js.undefined
   
-  var borderImageSlice: js.UndefOr[BorderImageSliceProperty] = js.undefined
+  var borderImageSlice: js.UndefOr[BorderImageSlice] = js.undefined
   
-  var borderImageSource: js.UndefOr[BorderImageSourceProperty] = js.undefined
+  var borderImageSource: js.UndefOr[BorderImageSource] = js.undefined
   
-  var borderImageWidth: js.UndefOr[BorderImageWidthProperty[Double | String]] = js.undefined
+  var borderImageWidth: js.UndefOr[BorderImageWidth[Double | String]] = js.undefined
   
-  var borderInline: js.UndefOr[BorderInlineProperty[Double | String]] = js.undefined
+  var borderInline: js.UndefOr[BorderInline[Double | String]] = js.undefined
   
-  var borderInlineColor: js.UndefOr[BorderInlineColorProperty] = js.undefined
+  var borderInlineColor: js.UndefOr[BorderInlineColor] = js.undefined
   
-  var borderInlineEnd: js.UndefOr[BorderInlineEndProperty[Double | String]] = js.undefined
+  var borderInlineEnd: js.UndefOr[BorderInlineEnd[Double | String]] = js.undefined
   
-  var borderInlineEndColor: js.UndefOr[BorderInlineEndColorProperty] = js.undefined
+  var borderInlineEndColor: js.UndefOr[BorderInlineEndColor] = js.undefined
   
-  var borderInlineEndStyle: js.UndefOr[BorderInlineEndStyleProperty] = js.undefined
+  var borderInlineEndStyle: js.UndefOr[BorderInlineEndStyle] = js.undefined
   
-  var borderInlineEndWidth: js.UndefOr[BorderInlineEndWidthProperty[Double | String]] = js.undefined
+  var borderInlineEndWidth: js.UndefOr[BorderInlineEndWidth[Double | String]] = js.undefined
   
-  var borderInlineStart: js.UndefOr[BorderInlineStartProperty[Double | String]] = js.undefined
+  var borderInlineStart: js.UndefOr[BorderInlineStart[Double | String]] = js.undefined
   
-  var borderInlineStartColor: js.UndefOr[BorderInlineStartColorProperty] = js.undefined
+  var borderInlineStartColor: js.UndefOr[BorderInlineStartColor] = js.undefined
   
-  var borderInlineStartStyle: js.UndefOr[BorderInlineStartStyleProperty] = js.undefined
+  var borderInlineStartStyle: js.UndefOr[BorderInlineStartStyle] = js.undefined
   
-  var borderInlineStartWidth: js.UndefOr[BorderInlineStartWidthProperty[Double | String]] = js.undefined
+  var borderInlineStartWidth: js.UndefOr[BorderInlineStartWidth[Double | String]] = js.undefined
   
-  var borderInlineStyle: js.UndefOr[BorderInlineStyleProperty] = js.undefined
+  var borderInlineStyle: js.UndefOr[BorderInlineStyle] = js.undefined
   
-  var borderInlineWidth: js.UndefOr[BorderInlineWidthProperty[Double | String]] = js.undefined
+  var borderInlineWidth: js.UndefOr[BorderInlineWidth[Double | String]] = js.undefined
   
-  var borderLeft: js.UndefOr[BorderLeftProperty[Double | String]] = js.undefined
+  var borderLeft: js.UndefOr[BorderLeft[Double | String]] = js.undefined
   
-  var borderLeftColor: js.UndefOr[BorderLeftColorProperty] = js.undefined
+  var borderLeftColor: js.UndefOr[BorderLeftColor] = js.undefined
   
-  var borderLeftStyle: js.UndefOr[BorderLeftStyleProperty] = js.undefined
+  var borderLeftStyle: js.UndefOr[BorderLeftStyle] = js.undefined
   
-  var borderLeftWidth: js.UndefOr[BorderLeftWidthProperty[Double | String]] = js.undefined
+  var borderLeftWidth: js.UndefOr[BorderLeftWidth[Double | String]] = js.undefined
   
-  var borderRadius: js.UndefOr[BorderRadiusProperty[Double | String]] = js.undefined
+  var borderRadius: js.UndefOr[BorderRadius[Double | String]] = js.undefined
   
-  var borderRight: js.UndefOr[BorderRightProperty[Double | String]] = js.undefined
+  var borderRight: js.UndefOr[BorderRight[Double | String]] = js.undefined
   
-  var borderRightColor: js.UndefOr[BorderRightColorProperty] = js.undefined
+  var borderRightColor: js.UndefOr[BorderRightColor] = js.undefined
   
-  var borderRightStyle: js.UndefOr[BorderRightStyleProperty] = js.undefined
+  var borderRightStyle: js.UndefOr[BorderRightStyle] = js.undefined
   
-  var borderRightWidth: js.UndefOr[BorderRightWidthProperty[Double | String]] = js.undefined
+  var borderRightWidth: js.UndefOr[BorderRightWidth[Double | String]] = js.undefined
   
-  var borderSpacing: js.UndefOr[BorderSpacingProperty[Double | String]] = js.undefined
+  var borderSpacing: js.UndefOr[BorderSpacing[Double | String]] = js.undefined
   
-  var borderStartEndRadius: js.UndefOr[BorderStartEndRadiusProperty[Double | String]] = js.undefined
+  var borderStartEndRadius: js.UndefOr[BorderStartEndRadius[Double | String]] = js.undefined
   
-  var borderStartStartRadius: js.UndefOr[BorderStartStartRadiusProperty[Double | String]] = js.undefined
+  var borderStartStartRadius: js.UndefOr[BorderStartStartRadius[Double | String]] = js.undefined
   
-  var borderStyle: js.UndefOr[BorderStyleProperty] = js.undefined
+  var borderStyle: js.UndefOr[BorderStyle] = js.undefined
   
-  var borderTop: js.UndefOr[BorderTopProperty[Double | String]] = js.undefined
+  var borderTop: js.UndefOr[BorderTop[Double | String]] = js.undefined
   
-  var borderTopColor: js.UndefOr[BorderTopColorProperty] = js.undefined
+  var borderTopColor: js.UndefOr[BorderTopColor] = js.undefined
   
-  var borderTopLeftRadius: js.UndefOr[BorderTopLeftRadiusProperty[Double | String]] = js.undefined
+  var borderTopLeftRadius: js.UndefOr[BorderTopLeftRadius[Double | String]] = js.undefined
   
-  var borderTopRightRadius: js.UndefOr[BorderTopRightRadiusProperty[Double | String]] = js.undefined
+  var borderTopRightRadius: js.UndefOr[BorderTopRightRadius[Double | String]] = js.undefined
   
-  var borderTopStyle: js.UndefOr[BorderTopStyleProperty] = js.undefined
+  var borderTopStyle: js.UndefOr[BorderTopStyle] = js.undefined
   
-  var borderTopWidth: js.UndefOr[BorderTopWidthProperty[Double | String]] = js.undefined
+  var borderTopWidth: js.UndefOr[BorderTopWidth[Double | String]] = js.undefined
   
-  var borderWidth: js.UndefOr[BorderWidthProperty[Double | String]] = js.undefined
+  var borderWidth: js.UndefOr[BorderWidth[Double | String]] = js.undefined
   
-  var bottom: js.UndefOr[BottomProperty[Double | String]] = js.undefined
+  var bottom: js.UndefOr[Bottom[Double | String]] = js.undefined
   
-  var boxDecorationBreak: js.UndefOr[BoxDecorationBreakProperty] = js.undefined
+  var boxDecorationBreak: js.UndefOr[BoxDecorationBreak] = js.undefined
   
   /**
     * The **`box-shadow`** CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the
@@ -627,143 +1113,147 @@ trait AllSystemCSSProperties extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/box-shadow
     */
-  var boxShadow: js.UndefOr[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
-  ] = js.undefined
+  var boxShadow: js.UndefOr[BoxShadow | Double] = js.undefined
   
-  var boxSizing: js.UndefOr[BoxSizingProperty] = js.undefined
+  var boxSizing: js.UndefOr[BoxSizing] = js.undefined
   
-  var breakAfter: js.UndefOr[BreakAfterProperty] = js.undefined
+  var breakAfter: js.UndefOr[BreakAfter] = js.undefined
   
-  var breakBefore: js.UndefOr[BreakBeforeProperty] = js.undefined
+  var breakBefore: js.UndefOr[BreakBefore] = js.undefined
   
-  var breakInside: js.UndefOr[BreakInsideProperty] = js.undefined
+  var breakInside: js.UndefOr[BreakInside] = js.undefined
   
-  var captionSide: js.UndefOr[CaptionSideProperty] = js.undefined
+  var captionSide: js.UndefOr[CaptionSide] = js.undefined
   
-  var caretColor: js.UndefOr[CaretColorProperty] = js.undefined
+  var caretColor: js.UndefOr[CaretColor] = js.undefined
   
-  var clear: js.UndefOr[ClearProperty] = js.undefined
+  var clear: js.UndefOr[Clear] = js.undefined
   
-  var clip: js.UndefOr[ClipProperty] = js.undefined
+  var clip: js.UndefOr[Clip] = js.undefined
   
-  var clipPath: js.UndefOr[ClipPathProperty] = js.undefined
+  var clipPath: js.UndefOr[ClipPath] = js.undefined
   
-  var clipRule: js.UndefOr[ClipRuleProperty] = js.undefined
+  var clipRule: js.UndefOr[ClipRule] = js.undefined
   
-  var color: js.UndefOr[ColorProperty] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   
-  var colorAdjust: js.UndefOr[ColorAdjustProperty] = js.undefined
+  var colorAdjust: js.UndefOr[PrintColorAdjust] = js.undefined
   
-  var colorInterpolation: js.UndefOr[ColorInterpolationProperty] = js.undefined
+  var colorInterpolation: js.UndefOr[ColorInterpolation] = js.undefined
   
-  var colorRendering: js.UndefOr[ColorRenderingProperty] = js.undefined
+  var colorRendering: js.UndefOr[ColorRendering] = js.undefined
   
-  var columnCount: js.UndefOr[ColumnCountProperty] = js.undefined
+  var colorScheme: js.UndefOr[ColorScheme] = js.undefined
   
-  var columnFill: js.UndefOr[ColumnFillProperty] = js.undefined
+  var columnCount: js.UndefOr[ColumnCount] = js.undefined
   
-  var columnGap: js.UndefOr[ColumnGapProperty[Double | String]] = js.undefined
+  var columnFill: js.UndefOr[ColumnFill] = js.undefined
   
-  var columnRule: js.UndefOr[ColumnRuleProperty[Double | String]] = js.undefined
+  var columnGap: js.UndefOr[ColumnGap[Double | String]] = js.undefined
   
-  var columnRuleColor: js.UndefOr[ColumnRuleColorProperty] = js.undefined
+  var columnRule: js.UndefOr[ColumnRule[Double | String]] = js.undefined
   
-  var columnRuleStyle: js.UndefOr[ColumnRuleStyleProperty] = js.undefined
+  var columnRuleColor: js.UndefOr[ColumnRuleColor] = js.undefined
   
-  var columnRuleWidth: js.UndefOr[ColumnRuleWidthProperty[Double | String]] = js.undefined
+  var columnRuleStyle: js.UndefOr[ColumnRuleStyle] = js.undefined
   
-  var columnSpan: js.UndefOr[ColumnSpanProperty] = js.undefined
+  var columnRuleWidth: js.UndefOr[ColumnRuleWidth[Double | String]] = js.undefined
   
-  var columnWidth: js.UndefOr[ColumnWidthProperty[Double | String]] = js.undefined
+  var columnSpan: js.UndefOr[ColumnSpan] = js.undefined
   
-  var columns: js.UndefOr[ColumnsProperty[Double | String]] = js.undefined
+  var columnWidth: js.UndefOr[ColumnWidth[Double | String]] = js.undefined
   
-  var contain: js.UndefOr[ContainProperty] = js.undefined
+  var columns: js.UndefOr[Columns[Double | String]] = js.undefined
   
-  var content: js.UndefOr[ContentProperty] = js.undefined
+  var contain: js.UndefOr[Contain] = js.undefined
   
-  var counterIncrement: js.UndefOr[CounterIncrementProperty] = js.undefined
+  var content: js.UndefOr[Content] = js.undefined
   
-  var counterReset: js.UndefOr[CounterResetProperty] = js.undefined
+  var contentVisibility: js.UndefOr[ContentVisibility] = js.undefined
   
-  var counterSet: js.UndefOr[CounterSetProperty] = js.undefined
+  var counterIncrement: js.UndefOr[CounterIncrement] = js.undefined
   
-  var cursor: js.UndefOr[CursorProperty] = js.undefined
+  var counterReset: js.UndefOr[CounterReset] = js.undefined
   
-  var direction: js.UndefOr[DirectionProperty] = js.undefined
+  var counterSet: js.UndefOr[CounterSet] = js.undefined
   
-  var display: js.UndefOr[DisplayProperty] = js.undefined
+  var cursor: js.UndefOr[Cursor] = js.undefined
   
-  var dominantBaseline: js.UndefOr[DominantBaselineProperty] = js.undefined
+  var direction: js.UndefOr[Direction] = js.undefined
   
-  var emptyCells: js.UndefOr[EmptyCellsProperty] = js.undefined
+  var display: js.UndefOr[Display] = js.undefined
   
-  var fill: js.UndefOr[FillProperty] = js.undefined
+  var dominantBaseline: js.UndefOr[DominantBaseline] = js.undefined
   
-  var fillOpacity: js.UndefOr[GlobalsNumber] = js.undefined
+  var emptyCells: js.UndefOr[EmptyCells] = js.undefined
   
-  var fillRule: js.UndefOr[FillRuleProperty] = js.undefined
+  var fill: js.UndefOr[Fill] = js.undefined
   
-  var filter: js.UndefOr[FilterProperty] = js.undefined
+  var fillOpacity: js.UndefOr[FillOpacity] = js.undefined
   
-  var flex: js.UndefOr[FlexProperty[Double | String]] = js.undefined
+  var fillRule: js.UndefOr[FillRule] = js.undefined
   
-  var flexBasis: js.UndefOr[FlexBasisProperty[Double | String]] = js.undefined
+  var filter: js.UndefOr[Filter] = js.undefined
   
-  var flexDirection: js.UndefOr[FlexDirectionProperty] = js.undefined
+  var flex: js.UndefOr[Flex[Double | String]] = js.undefined
   
-  var flexFlow: js.UndefOr[FlexFlowProperty] = js.undefined
+  var flexBasis: js.UndefOr[FlexBasis[Double | String]] = js.undefined
   
-  var flexGrow: js.UndefOr[GlobalsNumber] = js.undefined
+  var flexDirection: js.UndefOr[FlexDirection] = js.undefined
   
-  var flexShrink: js.UndefOr[GlobalsNumber] = js.undefined
+  var flexFlow: js.UndefOr[FlexFlow] = js.undefined
   
-  var flexWrap: js.UndefOr[FlexWrapProperty] = js.undefined
+  var flexGrow: js.UndefOr[FlexGrow] = js.undefined
   
-  var float: js.UndefOr[FloatProperty] = js.undefined
+  var flexShrink: js.UndefOr[FlexShrink] = js.undefined
   
-  var floodColor: js.UndefOr[FloodColorProperty] = js.undefined
+  var flexWrap: js.UndefOr[FlexWrap] = js.undefined
   
-  var floodOpacity: js.UndefOr[GlobalsNumber] = js.undefined
+  var float: js.UndefOr[Float] = js.undefined
   
-  var font: js.UndefOr[FontProperty] = js.undefined
+  var floodColor: js.UndefOr[FloodColor] = js.undefined
   
-  var fontFamily: js.UndefOr[FontFamilyProperty] = js.undefined
+  var floodOpacity: js.UndefOr[FloodOpacity] = js.undefined
   
-  var fontFeatureSettings: js.UndefOr[FontFeatureSettingsProperty] = js.undefined
+  var font: js.UndefOr[Font] = js.undefined
   
-  var fontKerning: js.UndefOr[FontKerningProperty] = js.undefined
+  var fontFamily: js.UndefOr[FontFamily] = js.undefined
   
-  var fontLanguageOverride: js.UndefOr[FontLanguageOverrideProperty] = js.undefined
+  var fontFeatureSettings: js.UndefOr[FontFeatureSettings] = js.undefined
   
-  var fontOpticalSizing: js.UndefOr[FontOpticalSizingProperty] = js.undefined
+  var fontKerning: js.UndefOr[FontKerning] = js.undefined
   
-  var fontSize: js.UndefOr[FontSizeProperty[Double | String]] = js.undefined
+  var fontLanguageOverride: js.UndefOr[FontLanguageOverride] = js.undefined
   
-  var fontSizeAdjust: js.UndefOr[FontSizeAdjustProperty] = js.undefined
+  var fontOpticalSizing: js.UndefOr[FontOpticalSizing] = js.undefined
   
-  var fontSmooth: js.UndefOr[FontSmoothProperty[Double | String]] = js.undefined
+  var fontSize: js.UndefOr[FontSize[Double | String]] = js.undefined
   
-  var fontStretch: js.UndefOr[FontStretchProperty] = js.undefined
+  var fontSizeAdjust: js.UndefOr[FontSizeAdjust] = js.undefined
   
-  var fontStyle: js.UndefOr[FontStyleProperty] = js.undefined
+  var fontSmooth: js.UndefOr[FontSmooth[Double | String]] = js.undefined
   
-  var fontSynthesis: js.UndefOr[FontSynthesisProperty] = js.undefined
+  var fontStretch: js.UndefOr[FontStretch] = js.undefined
   
-  var fontVariant: js.UndefOr[FontVariantProperty] = js.undefined
+  var fontStyle: js.UndefOr[FontStyle] = js.undefined
   
-  var fontVariantCaps: js.UndefOr[FontVariantCapsProperty] = js.undefined
+  var fontSynthesis: js.UndefOr[FontSynthesis] = js.undefined
   
-  var fontVariantEastAsian: js.UndefOr[FontVariantEastAsianProperty] = js.undefined
+  var fontVariant: js.UndefOr[FontVariant] = js.undefined
   
-  var fontVariantLigatures: js.UndefOr[FontVariantLigaturesProperty] = js.undefined
+  var fontVariantAlternates: js.UndefOr[FontVariantAlternates] = js.undefined
   
-  var fontVariantNumeric: js.UndefOr[FontVariantNumericProperty] = js.undefined
+  var fontVariantCaps: js.UndefOr[FontVariantCaps] = js.undefined
   
-  var fontVariantPosition: js.UndefOr[FontVariantPositionProperty] = js.undefined
+  var fontVariantEastAsian: js.UndefOr[FontVariantEastAsian] = js.undefined
   
-  var fontVariationSettings: js.UndefOr[FontVariationSettingsProperty] = js.undefined
+  var fontVariantLigatures: js.UndefOr[FontVariantLigatures] = js.undefined
+  
+  var fontVariantNumeric: js.UndefOr[FontVariantNumeric] = js.undefined
+  
+  var fontVariantPosition: js.UndefOr[FontVariantPosition] = js.undefined
+  
+  var fontVariationSettings: js.UndefOr[FontVariationSettings] = js.undefined
   
   /**
     * The **`font-weight`** CSS property specifies the weight (or boldness) of the font. The font weights available to you will depend on the `font-family` you are using. Some fonts are only
@@ -777,105 +1267,109 @@ trait AllSystemCSSProperties extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/font-weight
     */
-  var fontWeight: js.UndefOr[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | String
-  ] = js.undefined
+  var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
   
-  var gap: js.UndefOr[GapProperty[Double | String]] = js.undefined
+  var forcedColorAdjust: js.UndefOr[ForcedColorAdjust] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[GlyphOrientationVerticalProperty] = js.undefined
+  var gap: js.UndefOr[Gap[Double | String]] = js.undefined
   
-  var grid: js.UndefOr[GridProperty] = js.undefined
+  var glyphOrientationVertical: js.UndefOr[GlyphOrientationVertical] = js.undefined
   
-  var gridArea: js.UndefOr[GridAreaProperty] = js.undefined
+  var grid: js.UndefOr[Grid] = js.undefined
   
-  var gridAutoColumns: js.UndefOr[GridAutoColumnsProperty[Double | String]] = js.undefined
+  var gridArea: js.UndefOr[GridArea] = js.undefined
   
-  var gridAutoFlow: js.UndefOr[GridAutoFlowProperty] = js.undefined
+  var gridAutoColumns: js.UndefOr[GridAutoColumns[Double | String]] = js.undefined
   
-  var gridAutoRows: js.UndefOr[GridAutoRowsProperty[Double | String]] = js.undefined
+  var gridAutoFlow: js.UndefOr[GridAutoFlow] = js.undefined
   
-  var gridColumn: js.UndefOr[GridColumnProperty] = js.undefined
+  var gridAutoRows: js.UndefOr[GridAutoRows[Double | String]] = js.undefined
   
-  var gridColumnEnd: js.UndefOr[GridColumnEndProperty] = js.undefined
+  var gridColumn: js.UndefOr[GridColumn] = js.undefined
   
-  var gridColumnStart: js.UndefOr[GridColumnStartProperty] = js.undefined
+  var gridColumnEnd: js.UndefOr[GridColumnEnd] = js.undefined
   
-  var gridRow: js.UndefOr[GridRowProperty] = js.undefined
+  var gridColumnStart: js.UndefOr[GridColumnStart] = js.undefined
   
-  var gridRowEnd: js.UndefOr[GridRowEndProperty] = js.undefined
+  var gridRow: js.UndefOr[GridRow] = js.undefined
   
-  var gridRowStart: js.UndefOr[GridRowStartProperty] = js.undefined
+  var gridRowEnd: js.UndefOr[GridRowEnd] = js.undefined
   
-  var gridTemplate: js.UndefOr[GridTemplateProperty] = js.undefined
+  var gridRowStart: js.UndefOr[GridRowStart] = js.undefined
   
-  var gridTemplateAreas: js.UndefOr[GridTemplateAreasProperty] = js.undefined
+  var gridTemplate: js.UndefOr[GridTemplate] = js.undefined
   
-  var gridTemplateColumns: js.UndefOr[GridTemplateColumnsProperty[Double | String]] = js.undefined
+  var gridTemplateAreas: js.UndefOr[GridTemplateAreas] = js.undefined
   
-  var gridTemplateRows: js.UndefOr[GridTemplateRowsProperty[Double | String]] = js.undefined
+  var gridTemplateColumns: js.UndefOr[GridTemplateColumns[Double | String]] = js.undefined
   
-  var hangingPunctuation: js.UndefOr[HangingPunctuationProperty] = js.undefined
+  var gridTemplateRows: js.UndefOr[GridTemplateRows[Double | String]] = js.undefined
   
-  var height: js.UndefOr[HeightProperty[Double | String]] = js.undefined
+  var hangingPunctuation: js.UndefOr[HangingPunctuation] = js.undefined
   
-  var hyphens: js.UndefOr[HyphensProperty] = js.undefined
+  var height: js.UndefOr[Height[Double | String]] = js.undefined
   
-  var imageOrientation: js.UndefOr[ImageOrientationProperty] = js.undefined
+  var hyphenateCharacter: js.UndefOr[HyphenateCharacter] = js.undefined
   
-  var imageRendering: js.UndefOr[ImageRenderingProperty] = js.undefined
+  var hyphens: js.UndefOr[Hyphens] = js.undefined
   
-  var imageResolution: js.UndefOr[ImageResolutionProperty] = js.undefined
+  var imageOrientation: js.UndefOr[ImageOrientation] = js.undefined
   
-  var initialLetter: js.UndefOr[InitialLetterProperty] = js.undefined
+  var imageRendering: js.UndefOr[ImageRendering] = js.undefined
   
-  var inlineSize: js.UndefOr[InlineSizeProperty[Double | String]] = js.undefined
+  var imageResolution: js.UndefOr[ImageResolution] = js.undefined
   
-  var inset: js.UndefOr[InsetProperty[Double | String]] = js.undefined
+  var initialLetter: js.UndefOr[InitialLetter] = js.undefined
   
-  var insetBlock: js.UndefOr[InsetBlockProperty[Double | String]] = js.undefined
+  var inlineSize: js.UndefOr[InlineSize[Double | String]] = js.undefined
   
-  var insetBlockEnd: js.UndefOr[InsetBlockEndProperty[Double | String]] = js.undefined
+  var inputSecurity: js.UndefOr[InputSecurity] = js.undefined
   
-  var insetBlockStart: js.UndefOr[InsetBlockStartProperty[Double | String]] = js.undefined
+  var inset: js.UndefOr[Inset[Double | String]] = js.undefined
   
-  var insetInline: js.UndefOr[InsetInlineProperty[Double | String]] = js.undefined
+  var insetBlock: js.UndefOr[InsetBlock[Double | String]] = js.undefined
   
-  var insetInlineEnd: js.UndefOr[InsetInlineEndProperty[Double | String]] = js.undefined
+  var insetBlockEnd: js.UndefOr[InsetBlockEnd[Double | String]] = js.undefined
   
-  var insetInlineStart: js.UndefOr[InsetInlineStartProperty[Double | String]] = js.undefined
+  var insetBlockStart: js.UndefOr[InsetBlockStart[Double | String]] = js.undefined
   
-  var isolation: js.UndefOr[IsolationProperty] = js.undefined
+  var insetInline: js.UndefOr[InsetInline[Double | String]] = js.undefined
   
-  var justifyContent: js.UndefOr[JustifyContentProperty] = js.undefined
+  var insetInlineEnd: js.UndefOr[InsetInlineEnd[Double | String]] = js.undefined
   
-  var justifyItems: js.UndefOr[JustifyItemsProperty] = js.undefined
+  var insetInlineStart: js.UndefOr[InsetInlineStart[Double | String]] = js.undefined
   
-  var justifySelf: js.UndefOr[JustifySelfProperty] = js.undefined
+  var isolation: js.UndefOr[Isolation] = js.undefined
   
-  var justifyTracks: js.UndefOr[JustifyTracksProperty] = js.undefined
+  var justifyContent: js.UndefOr[JustifyContent] = js.undefined
   
-  var left: js.UndefOr[LeftProperty[Double | String]] = js.undefined
+  var justifyItems: js.UndefOr[JustifyItems] = js.undefined
   
-  var letterSpacing: js.UndefOr[LetterSpacingProperty[Double | String]] = js.undefined
+  var justifySelf: js.UndefOr[JustifySelf] = js.undefined
   
-  var lightingColor: js.UndefOr[LightingColorProperty] = js.undefined
+  var justifyTracks: js.UndefOr[JustifyTracks] = js.undefined
   
-  var lineBreak: js.UndefOr[LineBreakProperty] = js.undefined
+  var left: js.UndefOr[Left[Double | String]] = js.undefined
   
-  var lineClamp: js.UndefOr[LineClampProperty] = js.undefined
+  var letterSpacing: js.UndefOr[LetterSpacing[Double | String]] = js.undefined
   
-  var lineHeight: js.UndefOr[LineHeightProperty[Double | String]] = js.undefined
+  var lightingColor: js.UndefOr[LightingColor] = js.undefined
   
-  var lineHeightStep: js.UndefOr[LineHeightStepProperty[Double | String]] = js.undefined
+  var lineBreak: js.UndefOr[LineBreak] = js.undefined
   
-  var listStyle: js.UndefOr[ListStyleProperty] = js.undefined
+  var lineClamp: js.UndefOr[LineClamp] = js.undefined
   
-  var listStyleImage: js.UndefOr[ListStyleImageProperty] = js.undefined
+  var lineHeight: js.UndefOr[LineHeight[Double | String]] = js.undefined
   
-  var listStylePosition: js.UndefOr[ListStylePositionProperty] = js.undefined
+  var lineHeightStep: js.UndefOr[LineHeightStep[Double | String]] = js.undefined
   
-  var listStyleType: js.UndefOr[ListStyleTypeProperty] = js.undefined
+  var listStyle: js.UndefOr[ListStyle] = js.undefined
+  
+  var listStyleImage: js.UndefOr[ListStyleImage] = js.undefined
+  
+  var listStylePosition: js.UndefOr[ListStylePosition] = js.undefined
+  
+  var listStyleType: js.UndefOr[ListStyleType] = js.undefined
   
   /**
     * The **`margin`** CSS property sets the margin area on all four sides of an element. It is a shorthand for `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`.
@@ -886,29 +1380,31 @@ trait AllSystemCSSProperties extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/margin
     */
-  var m: js.UndefOr[(MarginProperty[Double | String]) | (js.Array[MarginProperty[Double | String]])] = js.undefined
+  var m: js.UndefOr[
+    (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])
+  ] = js.undefined
   
-  var margin: js.UndefOr[MarginProperty[Double | String]] = js.undefined
+  var margin: js.UndefOr[Margin[Double | String]] = js.undefined
   
-  var marginBlock: js.UndefOr[MarginBlockProperty[Double | String]] = js.undefined
+  var marginBlock: js.UndefOr[MarginBlock[Double | String]] = js.undefined
   
-  var marginBlockEnd: js.UndefOr[MarginBlockEndProperty[Double | String]] = js.undefined
+  var marginBlockEnd: js.UndefOr[MarginBlockEnd[Double | String]] = js.undefined
   
-  var marginBlockStart: js.UndefOr[MarginBlockStartProperty[Double | String]] = js.undefined
+  var marginBlockStart: js.UndefOr[MarginBlockStart[Double | String]] = js.undefined
   
-  var marginBottom: js.UndefOr[MarginBottomProperty[Double | String]] = js.undefined
+  var marginBottom: js.UndefOr[MarginBottom[Double | String]] = js.undefined
   
-  var marginInline: js.UndefOr[MarginInlineProperty[Double | String]] = js.undefined
+  var marginInline: js.UndefOr[MarginInline[Double | String]] = js.undefined
   
-  var marginInlineEnd: js.UndefOr[MarginInlineEndProperty[Double | String]] = js.undefined
+  var marginInlineEnd: js.UndefOr[MarginInlineEnd[Double | String]] = js.undefined
   
-  var marginInlineStart: js.UndefOr[MarginInlineStartProperty[Double | String]] = js.undefined
+  var marginInlineStart: js.UndefOr[MarginInlineStart[Double | String]] = js.undefined
   
-  var marginLeft: js.UndefOr[MarginLeftProperty[Double | String]] = js.undefined
+  var marginLeft: js.UndefOr[MarginLeft[Double | String]] = js.undefined
   
-  var marginRight: js.UndefOr[MarginRightProperty[Double | String]] = js.undefined
+  var marginRight: js.UndefOr[MarginRight[Double | String]] = js.undefined
   
-  var marginTop: js.UndefOr[MarginTopProperty[Double | String]] = js.undefined
+  var marginTop: js.UndefOr[MarginTop[Double | String]] = js.undefined
   
   /**
     * The **`marginX`** is shorthand for using both **`margin-left`** and **`margin-right`** CSS properties. They set the margin area on the left and right side of an element. A positive value
@@ -925,7 +1421,7 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-right
     */
   var marginX: js.UndefOr[
-    (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])
+    (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
   ] = js.undefined
   
   /**
@@ -943,64 +1439,66 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-bottom
     */
   var marginY: js.UndefOr[
-    (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])
+    (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
   ] = js.undefined
   
-  var marker: js.UndefOr[MarkerProperty] = js.undefined
+  var marker: js.UndefOr[Marker] = js.undefined
   
-  var markerEnd: js.UndefOr[MarkerEndProperty] = js.undefined
+  var markerEnd: js.UndefOr[MarkerEnd] = js.undefined
   
-  var markerMid: js.UndefOr[MarkerMidProperty] = js.undefined
+  var markerMid: js.UndefOr[MarkerMid] = js.undefined
   
-  var markerStart: js.UndefOr[MarkerStartProperty] = js.undefined
+  var markerStart: js.UndefOr[MarkerStart] = js.undefined
   
-  var mask: js.UndefOr[MaskProperty[Double | String]] = js.undefined
+  var mask: js.UndefOr[Mask[Double | String]] = js.undefined
   
-  var maskBorder: js.UndefOr[MaskBorderProperty] = js.undefined
+  var maskBorder: js.UndefOr[MaskBorder] = js.undefined
   
-  var maskBorderMode: js.UndefOr[MaskBorderModeProperty] = js.undefined
+  var maskBorderMode: js.UndefOr[MaskBorderMode] = js.undefined
   
-  var maskBorderOutset: js.UndefOr[MaskBorderOutsetProperty[Double | String]] = js.undefined
+  var maskBorderOutset: js.UndefOr[MaskBorderOutset[Double | String]] = js.undefined
   
-  var maskBorderRepeat: js.UndefOr[MaskBorderRepeatProperty] = js.undefined
+  var maskBorderRepeat: js.UndefOr[MaskBorderRepeat] = js.undefined
   
-  var maskBorderSlice: js.UndefOr[MaskBorderSliceProperty] = js.undefined
+  var maskBorderSlice: js.UndefOr[MaskBorderSlice] = js.undefined
   
-  var maskBorderSource: js.UndefOr[MaskBorderSourceProperty] = js.undefined
+  var maskBorderSource: js.UndefOr[MaskBorderSource] = js.undefined
   
-  var maskBorderWidth: js.UndefOr[MaskBorderWidthProperty[Double | String]] = js.undefined
+  var maskBorderWidth: js.UndefOr[MaskBorderWidth[Double | String]] = js.undefined
   
-  var maskClip: js.UndefOr[MaskClipProperty] = js.undefined
+  var maskClip: js.UndefOr[MaskClip] = js.undefined
   
-  var maskComposite: js.UndefOr[MaskCompositeProperty] = js.undefined
+  var maskComposite: js.UndefOr[MaskComposite] = js.undefined
   
-  var maskImage: js.UndefOr[MaskImageProperty] = js.undefined
+  var maskImage: js.UndefOr[MaskImage] = js.undefined
   
-  var maskMode: js.UndefOr[MaskModeProperty] = js.undefined
+  var maskMode: js.UndefOr[MaskMode] = js.undefined
   
-  var maskOrigin: js.UndefOr[MaskOriginProperty] = js.undefined
+  var maskOrigin: js.UndefOr[MaskOrigin] = js.undefined
   
-  var maskPosition: js.UndefOr[MaskPositionProperty[Double | String]] = js.undefined
+  var maskPosition: js.UndefOr[MaskPosition[Double | String]] = js.undefined
   
-  var maskRepeat: js.UndefOr[MaskRepeatProperty] = js.undefined
+  var maskRepeat: js.UndefOr[MaskRepeat] = js.undefined
   
-  var maskSize: js.UndefOr[MaskSizeProperty[Double | String]] = js.undefined
+  var maskSize: js.UndefOr[MaskSize[Double | String]] = js.undefined
   
-  var maskType: js.UndefOr[MaskTypeProperty] = js.undefined
+  var maskType: js.UndefOr[MaskType] = js.undefined
   
-  var masonryAutoFlow: js.UndefOr[MasonryAutoFlowProperty] = js.undefined
+  var mathDepth: js.UndefOr[MathDepth] = js.undefined
   
-  var mathStyle: js.UndefOr[MathStyleProperty] = js.undefined
+  var mathShift: js.UndefOr[MathShift] = js.undefined
   
-  var maxBlockSize: js.UndefOr[MaxBlockSizeProperty[Double | String]] = js.undefined
+  var mathStyle: js.UndefOr[MathStyle] = js.undefined
   
-  var maxHeight: js.UndefOr[MaxHeightProperty[Double | String]] = js.undefined
+  var maxBlockSize: js.UndefOr[MaxBlockSize[Double | String]] = js.undefined
   
-  var maxInlineSize: js.UndefOr[MaxInlineSizeProperty[Double | String]] = js.undefined
+  var maxHeight: js.UndefOr[MaxHeight[Double | String]] = js.undefined
   
-  var maxLines: js.UndefOr[MaxLinesProperty] = js.undefined
+  var maxInlineSize: js.UndefOr[MaxInlineSize[Double | String]] = js.undefined
   
-  var maxWidth: js.UndefOr[MaxWidthProperty[Double | String]] = js.undefined
+  var maxLines: js.UndefOr[MaxLines] = js.undefined
+  
+  var maxWidth: js.UndefOr[MaxWidth[Double | String]] = js.undefined
   
   /**
     * The **`margin-bottom`** CSS property sets the margin area on the bottom of an element. A positive value places it farther from its neighbors, while a negative value places it closer.
@@ -1014,18 +1512,18 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-bottom
     */
   var mb: js.UndefOr[
-    (MarginBottomProperty[Double | String]) | (js.Array[MarginBottomProperty[Double | String]])
+    (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
   ] = js.undefined
   
-  var minBlockSize: js.UndefOr[MinBlockSizeProperty[Double | String]] = js.undefined
+  var minBlockSize: js.UndefOr[MinBlockSize[Double | String]] = js.undefined
   
-  var minHeight: js.UndefOr[MinHeightProperty[Double | String]] = js.undefined
+  var minHeight: js.UndefOr[MinHeight[Double | String]] = js.undefined
   
-  var minInlineSize: js.UndefOr[MinInlineSizeProperty[Double | String]] = js.undefined
+  var minInlineSize: js.UndefOr[MinInlineSize[Double | String]] = js.undefined
   
-  var minWidth: js.UndefOr[MinWidthProperty[Double | String]] = js.undefined
+  var minWidth: js.UndefOr[MinWidth[Double | String]] = js.undefined
   
-  var mixBlendMode: js.UndefOr[MixBlendModeProperty] = js.undefined
+  var mixBlendMode: js.UndefOr[MixBlendMode] = js.undefined
   
   /**
     * The **`margin-left`** CSS property sets the margin area on the left side of an element. A positive value places it farther from its neighbors, while a negative value places it closer.
@@ -1039,16 +1537,16 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-left
     */
   var ml: js.UndefOr[
-    (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])
+    (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
   ] = js.undefined
   
-  var motion: js.UndefOr[OffsetProperty[Double | String]] = js.undefined
+  var motion: js.UndefOr[Offset[Double | String]] = js.undefined
   
-  var motionDistance: js.UndefOr[OffsetDistanceProperty[Double | String]] = js.undefined
+  var motionDistance: js.UndefOr[OffsetDistance[Double | String]] = js.undefined
   
-  var motionPath: js.UndefOr[OffsetPathProperty] = js.undefined
+  var motionPath: js.UndefOr[OffsetPath] = js.undefined
   
-  var motionRotation: js.UndefOr[OffsetRotateProperty] = js.undefined
+  var motionRotation: js.UndefOr[OffsetRotate] = js.undefined
   
   /**
     * The **`margin-right`** CSS property sets the margin area on the right side of an element. A positive value places it farther from its neighbors, while a negative value places it closer.
@@ -1062,8 +1560,144 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-right
     */
   var mr: js.UndefOr[
-    (MarginRightProperty[Double | String]) | (js.Array[MarginRightProperty[Double | String]])
+    (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
   ] = js.undefined
+  
+  var msAccelerator: js.UndefOr[MsAccelerator] = js.undefined
+  
+  var msBlockProgression: js.UndefOr[MsBlockProgression] = js.undefined
+  
+  var msContentZoomChaining: js.UndefOr[MsContentZoomChaining] = js.undefined
+  
+  var msContentZoomLimit: js.UndefOr[MsContentZoomLimit] = js.undefined
+  
+  var msContentZoomLimitMax: js.UndefOr[MsContentZoomLimitMax] = js.undefined
+  
+  var msContentZoomLimitMin: js.UndefOr[MsContentZoomLimitMin] = js.undefined
+  
+  var msContentZoomSnap: js.UndefOr[MsContentZoomSnap] = js.undefined
+  
+  var msContentZoomSnapPoints: js.UndefOr[MsContentZoomSnapPoints] = js.undefined
+  
+  var msContentZoomSnapType: js.UndefOr[MsContentZoomSnapType] = js.undefined
+  
+  var msContentZooming: js.UndefOr[MsContentZooming] = js.undefined
+  
+  var msFilter: js.UndefOr[MsFilter] = js.undefined
+  
+  var msFlex: js.UndefOr[Flex[Double | String]] = js.undefined
+  
+  var msFlexDirection: js.UndefOr[FlexDirection] = js.undefined
+  
+  var msFlexPositive: js.UndefOr[FlexGrow] = js.undefined
+  
+  var msFlowFrom: js.UndefOr[MsFlowFrom] = js.undefined
+  
+  var msFlowInto: js.UndefOr[MsFlowInto] = js.undefined
+  
+  var msGridColumns: js.UndefOr[MsGridColumns[Double | String]] = js.undefined
+  
+  var msGridRows: js.UndefOr[MsGridRows[Double | String]] = js.undefined
+  
+  var msHighContrastAdjust: js.UndefOr[MsHighContrastAdjust] = js.undefined
+  
+  var msHyphenateLimitChars: js.UndefOr[MsHyphenateLimitChars] = js.undefined
+  
+  var msHyphenateLimitLines: js.UndefOr[MsHyphenateLimitLines] = js.undefined
+  
+  var msHyphenateLimitZone: js.UndefOr[MsHyphenateLimitZone[Double | String]] = js.undefined
+  
+  var msHyphens: js.UndefOr[Hyphens] = js.undefined
+  
+  var msImeAlign: js.UndefOr[MsImeAlign] = js.undefined
+  
+  var msLineBreak: js.UndefOr[LineBreak] = js.undefined
+  
+  var msOrder: js.UndefOr[Order] = js.undefined
+  
+  var msOverflowStyle: js.UndefOr[MsOverflowStyle] = js.undefined
+  
+  var msOverflowX: js.UndefOr[OverflowX] = js.undefined
+  
+  var msOverflowY: js.UndefOr[OverflowY] = js.undefined
+  
+  var msScrollChaining: js.UndefOr[MsScrollChaining] = js.undefined
+  
+  var msScrollLimit: js.UndefOr[MsScrollLimit] = js.undefined
+  
+  var msScrollLimitXMax: js.UndefOr[MsScrollLimitXMax[Double | String]] = js.undefined
+  
+  var msScrollLimitXMin: js.UndefOr[MsScrollLimitXMin[Double | String]] = js.undefined
+  
+  var msScrollLimitYMax: js.UndefOr[MsScrollLimitYMax[Double | String]] = js.undefined
+  
+  var msScrollLimitYMin: js.UndefOr[MsScrollLimitYMin[Double | String]] = js.undefined
+  
+  var msScrollRails: js.UndefOr[MsScrollRails] = js.undefined
+  
+  var msScrollSnapPointsX: js.UndefOr[MsScrollSnapPointsX] = js.undefined
+  
+  var msScrollSnapPointsY: js.UndefOr[MsScrollSnapPointsY] = js.undefined
+  
+  var msScrollSnapType: js.UndefOr[MsScrollSnapType] = js.undefined
+  
+  var msScrollSnapX: js.UndefOr[MsScrollSnapX] = js.undefined
+  
+  var msScrollSnapY: js.UndefOr[MsScrollSnapY] = js.undefined
+  
+  var msScrollTranslation: js.UndefOr[MsScrollTranslation] = js.undefined
+  
+  var msScrollbar3dlightColor: js.UndefOr[MsScrollbar3dlightColor] = js.undefined
+  
+  var msScrollbarArrowColor: js.UndefOr[MsScrollbarArrowColor] = js.undefined
+  
+  var msScrollbarBaseColor: js.UndefOr[MsScrollbarBaseColor] = js.undefined
+  
+  var msScrollbarDarkshadowColor: js.UndefOr[MsScrollbarDarkshadowColor] = js.undefined
+  
+  var msScrollbarFaceColor: js.UndefOr[MsScrollbarFaceColor] = js.undefined
+  
+  var msScrollbarHighlightColor: js.UndefOr[MsScrollbarHighlightColor] = js.undefined
+  
+  var msScrollbarShadowColor: js.UndefOr[MsScrollbarShadowColor] = js.undefined
+  
+  var msScrollbarTrackColor: js.UndefOr[MsScrollbarTrackColor] = js.undefined
+  
+  var msTextAutospace: js.UndefOr[MsTextAutospace] = js.undefined
+  
+  var msTextCombineHorizontal: js.UndefOr[TextCombineUpright] = js.undefined
+  
+  var msTextOverflow: js.UndefOr[TextOverflow] = js.undefined
+  
+  var msTouchAction: js.UndefOr[TouchAction] = js.undefined
+  
+  var msTouchSelect: js.UndefOr[MsTouchSelect] = js.undefined
+  
+  var msTransform: js.UndefOr[Transform] = js.undefined
+  
+  var msTransformOrigin: js.UndefOr[TransformOrigin[Double | String]] = js.undefined
+  
+  var msTransition: js.UndefOr[Transition[String]] = js.undefined
+  
+  var msTransitionDelay: js.UndefOr[TransitionDelay[String]] = js.undefined
+  
+  var msTransitionDuration: js.UndefOr[TransitionDuration[String]] = js.undefined
+  
+  var msTransitionProperty: js.UndefOr[TransitionProperty] = js.undefined
+  
+  var msTransitionTimingFunction: js.UndefOr[TransitionTimingFunction] = js.undefined
+  
+  var msUserSelect: js.UndefOr[MsUserSelect] = js.undefined
+  
+  var msWordBreak: js.UndefOr[WordBreak] = js.undefined
+  
+  var msWrapFlow: js.UndefOr[MsWrapFlow] = js.undefined
+  
+  var msWrapMargin: js.UndefOr[MsWrapMargin[Double | String]] = js.undefined
+  
+  var msWrapThrough: js.UndefOr[MsWrapThrough] = js.undefined
+  
+  var msWritingMode: js.UndefOr[WritingMode] = js.undefined
   
   /**
     * The **`margin-top`** CSS property sets the margin area on the top of an element. A positive value places it farther from its neighbors, while a negative value places it closer.
@@ -1077,11 +1711,11 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-top
     */
   var mt: js.UndefOr[
-    (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])
+    (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
   ] = js.undefined
   
   /**
-    * The **`mx`** is shorthand for using both **`margin-left`** and **`margin-right`** CSS properties. They set the margin area on the left and right side of an element. A positive value placesit
+    * The **`mx`** is shorthand for using both **`margin-left`** and **`margin-right`** CSS properties. They set the margin area on the left and right side of an element. A positive value places it
     * farther from its neighbors, while a negative value places it closer.
     *
     * **Initial value**: `0`
@@ -1095,7 +1729,7 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-right
     */
   var mx: js.UndefOr[
-    (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])
+    (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
   ] = js.undefined
   
   /**
@@ -1113,66 +1747,68 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-bottom
     */
   var my: js.UndefOr[
-    (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])
+    (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
   ] = js.undefined
   
-  var objectFit: js.UndefOr[ObjectFitProperty] = js.undefined
+  var objectFit: js.UndefOr[ObjectFit] = js.undefined
   
-  var objectPosition: js.UndefOr[ObjectPositionProperty[Double | String]] = js.undefined
+  var objectPosition: js.UndefOr[ObjectPosition[Double | String]] = js.undefined
   
-  var offset: js.UndefOr[OffsetProperty[Double | String]] = js.undefined
+  var offset: js.UndefOr[Offset[Double | String]] = js.undefined
   
-  var offsetAnchor: js.UndefOr[OffsetAnchorProperty[Double | String]] = js.undefined
+  var offsetAnchor: js.UndefOr[OffsetAnchor[Double | String]] = js.undefined
   
-  var offsetDistance: js.UndefOr[OffsetDistanceProperty[Double | String]] = js.undefined
+  var offsetDistance: js.UndefOr[OffsetDistance[Double | String]] = js.undefined
   
-  var offsetPath: js.UndefOr[OffsetPathProperty] = js.undefined
+  var offsetPath: js.UndefOr[OffsetPath] = js.undefined
   
-  var offsetRotate: js.UndefOr[OffsetRotateProperty] = js.undefined
+  var offsetRotate: js.UndefOr[OffsetRotate] = js.undefined
   
-  var offsetRotation: js.UndefOr[OffsetRotateProperty] = js.undefined
+  var offsetRotation: js.UndefOr[OffsetRotate] = js.undefined
   
-  var opacity: js.UndefOr[OpacityProperty] = js.undefined
+  var opacity: js.UndefOr[Opacity] = js.undefined
   
-  var order: js.UndefOr[GlobalsNumber] = js.undefined
+  var order: js.UndefOr[Order] = js.undefined
   
-  var orphans: js.UndefOr[GlobalsNumber] = js.undefined
+  var orphans: js.UndefOr[Orphans] = js.undefined
   
-  var outline: js.UndefOr[OutlineProperty[Double | String]] = js.undefined
+  var outline: js.UndefOr[Outline[Double | String]] = js.undefined
   
-  var outlineColor: js.UndefOr[OutlineColorProperty] = js.undefined
+  var outlineColor: js.UndefOr[OutlineColor] = js.undefined
   
-  var outlineOffset: js.UndefOr[OutlineOffsetProperty[Double | String]] = js.undefined
+  var outlineOffset: js.UndefOr[OutlineOffset[Double | String]] = js.undefined
   
-  var outlineStyle: js.UndefOr[OutlineStyleProperty] = js.undefined
+  var outlineStyle: js.UndefOr[OutlineStyle] = js.undefined
   
-  var outlineWidth: js.UndefOr[OutlineWidthProperty[Double | String]] = js.undefined
+  var outlineWidth: js.UndefOr[OutlineWidth[Double | String]] = js.undefined
   
-  var overflow: js.UndefOr[OverflowProperty] = js.undefined
+  var overflow: js.UndefOr[Overflow] = js.undefined
   
-  var overflowAnchor: js.UndefOr[OverflowAnchorProperty] = js.undefined
+  var overflowAnchor: js.UndefOr[OverflowAnchor] = js.undefined
   
-  var overflowBlock: js.UndefOr[OverflowBlockProperty] = js.undefined
+  var overflowBlock: js.UndefOr[OverflowBlock] = js.undefined
   
-  var overflowClipBox: js.UndefOr[OverflowClipBoxProperty] = js.undefined
+  var overflowClipBox: js.UndefOr[OverflowClipBox] = js.undefined
   
-  var overflowInline: js.UndefOr[OverflowInlineProperty] = js.undefined
+  var overflowClipMargin: js.UndefOr[OverflowClipMargin[Double | String]] = js.undefined
   
-  var overflowWrap: js.UndefOr[OverflowWrapProperty] = js.undefined
+  var overflowInline: js.UndefOr[OverflowInline] = js.undefined
   
-  var overflowX: js.UndefOr[OverflowXProperty] = js.undefined
+  var overflowWrap: js.UndefOr[OverflowWrap] = js.undefined
   
-  var overflowY: js.UndefOr[OverflowYProperty] = js.undefined
+  var overflowX: js.UndefOr[OverflowX] = js.undefined
   
-  var overscrollBehavior: js.UndefOr[OverscrollBehaviorProperty] = js.undefined
+  var overflowY: js.UndefOr[OverflowY] = js.undefined
   
-  var overscrollBehaviorBlock: js.UndefOr[OverscrollBehaviorBlockProperty] = js.undefined
+  var overscrollBehavior: js.UndefOr[OverscrollBehavior] = js.undefined
   
-  var overscrollBehaviorInline: js.UndefOr[OverscrollBehaviorInlineProperty] = js.undefined
+  var overscrollBehaviorBlock: js.UndefOr[OverscrollBehaviorBlock] = js.undefined
   
-  var overscrollBehaviorX: js.UndefOr[OverscrollBehaviorXProperty] = js.undefined
+  var overscrollBehaviorInline: js.UndefOr[OverscrollBehaviorInline] = js.undefined
   
-  var overscrollBehaviorY: js.UndefOr[OverscrollBehaviorYProperty] = js.undefined
+  var overscrollBehaviorX: js.UndefOr[OverscrollBehaviorX] = js.undefined
+  
+  var overscrollBehaviorY: js.UndefOr[OverscrollBehaviorY] = js.undefined
   
   /**
     * The **`padding`** CSS property sets the padding area on all four sides of an element. It is a shorthand for `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`.
@@ -1184,30 +1820,30 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/padding
     */
   var p: js.UndefOr[
-    (PaddingProperty[Double | String]) | (js.Array[PaddingProperty[Double | String]])
+    (Padding[Double | String]) | (js.Array[NonNullable[js.UndefOr[Padding[Double | String]]]])
   ] = js.undefined
   
-  var padding: js.UndefOr[PaddingProperty[Double | String]] = js.undefined
+  var padding: js.UndefOr[Padding[Double | String]] = js.undefined
   
-  var paddingBlock: js.UndefOr[PaddingBlockProperty[Double | String]] = js.undefined
+  var paddingBlock: js.UndefOr[PaddingBlock[Double | String]] = js.undefined
   
-  var paddingBlockEnd: js.UndefOr[PaddingBlockEndProperty[Double | String]] = js.undefined
+  var paddingBlockEnd: js.UndefOr[PaddingBlockEnd[Double | String]] = js.undefined
   
-  var paddingBlockStart: js.UndefOr[PaddingBlockStartProperty[Double | String]] = js.undefined
+  var paddingBlockStart: js.UndefOr[PaddingBlockStart[Double | String]] = js.undefined
   
-  var paddingBottom: js.UndefOr[PaddingBottomProperty[Double | String]] = js.undefined
+  var paddingBottom: js.UndefOr[PaddingBottom[Double | String]] = js.undefined
   
-  var paddingInline: js.UndefOr[PaddingInlineProperty[Double | String]] = js.undefined
+  var paddingInline: js.UndefOr[PaddingInline[Double | String]] = js.undefined
   
-  var paddingInlineEnd: js.UndefOr[PaddingInlineEndProperty[Double | String]] = js.undefined
+  var paddingInlineEnd: js.UndefOr[PaddingInlineEnd[Double | String]] = js.undefined
   
-  var paddingInlineStart: js.UndefOr[PaddingInlineStartProperty[Double | String]] = js.undefined
+  var paddingInlineStart: js.UndefOr[PaddingInlineStart[Double | String]] = js.undefined
   
-  var paddingLeft: js.UndefOr[PaddingLeftProperty[Double | String]] = js.undefined
+  var paddingLeft: js.UndefOr[PaddingLeft[Double | String]] = js.undefined
   
-  var paddingRight: js.UndefOr[PaddingRightProperty[Double | String]] = js.undefined
+  var paddingRight: js.UndefOr[PaddingRight[Double | String]] = js.undefined
   
-  var paddingTop: js.UndefOr[PaddingTopProperty[Double | String]] = js.undefined
+  var paddingTop: js.UndefOr[PaddingTop[Double | String]] = js.undefined
   
   /**
     * The **`paddingX`** is shorthand property for CSS properties **`padding-left`** and **`padding-right`**. They set the width of the padding area on the left and right side of an element.
@@ -1223,7 +1859,7 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-right
     */
   var paddingX: js.UndefOr[
-    (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])
+    (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
   ] = js.undefined
   
   /**
@@ -1240,16 +1876,16 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-bottom
     */
   var paddingY: js.UndefOr[
-    (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])
+    (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
   ] = js.undefined
   
-  var pageBreakAfter: js.UndefOr[PageBreakAfterProperty] = js.undefined
+  var pageBreakAfter: js.UndefOr[PageBreakAfter] = js.undefined
   
-  var pageBreakBefore: js.UndefOr[PageBreakBeforeProperty] = js.undefined
+  var pageBreakBefore: js.UndefOr[PageBreakBefore] = js.undefined
   
-  var pageBreakInside: js.UndefOr[PageBreakInsideProperty] = js.undefined
+  var pageBreakInside: js.UndefOr[PageBreakInside] = js.undefined
   
-  var paintOrder: js.UndefOr[PaintOrderProperty] = js.undefined
+  var paintOrder: js.UndefOr[PaintOrder] = js.undefined
   
   /**
     * The **`padding-bottom`** CSS property sets the height of the padding area on the bottom of an element.
@@ -1263,12 +1899,12 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-bottom
     */
   var pb: js.UndefOr[
-    (PaddingBottomProperty[Double | String]) | (js.Array[PaddingBottomProperty[Double | String]])
+    (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
   ] = js.undefined
   
-  var perspective: js.UndefOr[PerspectiveProperty[Double | String]] = js.undefined
+  var perspective: js.UndefOr[Perspective[Double | String]] = js.undefined
   
-  var perspectiveOrigin: js.UndefOr[PerspectiveOriginProperty[Double | String]] = js.undefined
+  var perspectiveOrigin: js.UndefOr[PerspectiveOrigin[Double | String]] = js.undefined
   
   /**
     * The **`padding-left`** CSS property sets the width of the padding area on the left side of an element.
@@ -1282,18 +1918,18 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-left
     */
   var pl: js.UndefOr[
-    (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])
+    (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
   ] = js.undefined
   
-  var placeContent: js.UndefOr[PlaceContentProperty] = js.undefined
+  var placeContent: js.UndefOr[PlaceContent] = js.undefined
   
-  var placeItems: js.UndefOr[PlaceItemsProperty] = js.undefined
+  var placeItems: js.UndefOr[PlaceItems] = js.undefined
   
-  var placeSelf: js.UndefOr[PlaceSelfProperty] = js.undefined
+  var placeSelf: js.UndefOr[PlaceSelf] = js.undefined
   
-  var pointerEvents: js.UndefOr[PointerEventsProperty] = js.undefined
+  var pointerEvents: js.UndefOr[PointerEvents] = js.undefined
   
-  var position: js.UndefOr[PositionProperty] = js.undefined
+  var position: js.UndefOr[Position] = js.undefined
   
   /**
     * The **`padding-right`** CSS property sets the width of the padding area on the right side of an element.
@@ -1307,8 +1943,10 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-right
     */
   var pr: js.UndefOr[
-    (PaddingRightProperty[Double | String]) | (js.Array[PaddingRightProperty[Double | String]])
+    (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
   ] = js.undefined
+  
+  var printColorAdjust: js.UndefOr[PrintColorAdjust] = js.undefined
   
   /**
     * The **`padding-top`** padding area on the top of an element.
@@ -1322,7 +1960,7 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-top
     */
   var pt: js.UndefOr[
-    (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])
+    (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
   ] = js.undefined
   
   /**
@@ -1339,7 +1977,7 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-right
     */
   var px: js.UndefOr[
-    (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])
+    (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
   ] = js.undefined
   
   /**
@@ -1356,228 +1994,242 @@ trait AllSystemCSSProperties extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-bottom
     */
   var py: js.UndefOr[
-    (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])
+    (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
   ] = js.undefined
   
-  var quotes: js.UndefOr[QuotesProperty] = js.undefined
+  var quotes: js.UndefOr[Quotes] = js.undefined
   
-  var resize: js.UndefOr[ResizeProperty] = js.undefined
+  var resize: js.UndefOr[Resize] = js.undefined
   
-  var right: js.UndefOr[RightProperty[Double | String]] = js.undefined
+  var right: js.UndefOr[Right[Double | String]] = js.undefined
   
-  var rotate: js.UndefOr[RotateProperty] = js.undefined
+  var rotate: js.UndefOr[Rotate] = js.undefined
   
-  var rowGap: js.UndefOr[RowGapProperty[Double | String]] = js.undefined
+  var rowGap: js.UndefOr[RowGap[Double | String]] = js.undefined
   
-  var rubyAlign: js.UndefOr[RubyAlignProperty] = js.undefined
+  var rubyAlign: js.UndefOr[RubyAlign] = js.undefined
   
-  var rubyMerge: js.UndefOr[RubyMergeProperty] = js.undefined
+  var rubyMerge: js.UndefOr[RubyMerge] = js.undefined
   
-  var rubyPosition: js.UndefOr[RubyPositionProperty] = js.undefined
+  var rubyPosition: js.UndefOr[RubyPosition] = js.undefined
   
-  var scale: js.UndefOr[ScaleProperty] = js.undefined
+  var scale: js.UndefOr[Scale] = js.undefined
   
-  var scrollBehavior: js.UndefOr[ScrollBehaviorProperty] = js.undefined
+  var scrollBehavior: js.UndefOr[ScrollBehavior] = js.undefined
   
-  var scrollMargin: js.UndefOr[ScrollMarginProperty[Double | String]] = js.undefined
+  var scrollMargin: js.UndefOr[ScrollMargin[Double | String]] = js.undefined
   
-  var scrollMarginBlock: js.UndefOr[ScrollMarginBlockProperty[Double | String]] = js.undefined
+  var scrollMarginBlock: js.UndefOr[ScrollMarginBlock[Double | String]] = js.undefined
   
-  var scrollMarginBlockEnd: js.UndefOr[ScrollMarginBlockEndProperty[Double | String]] = js.undefined
+  var scrollMarginBlockEnd: js.UndefOr[ScrollMarginBlockEnd[Double | String]] = js.undefined
   
-  var scrollMarginBlockStart: js.UndefOr[ScrollMarginBlockStartProperty[Double | String]] = js.undefined
+  var scrollMarginBlockStart: js.UndefOr[ScrollMarginBlockStart[Double | String]] = js.undefined
   
-  var scrollMarginBottom: js.UndefOr[ScrollMarginBottomProperty[Double | String]] = js.undefined
+  var scrollMarginBottom: js.UndefOr[ScrollMarginBottom[Double | String]] = js.undefined
   
-  var scrollMarginInline: js.UndefOr[ScrollMarginInlineProperty[Double | String]] = js.undefined
+  var scrollMarginInline: js.UndefOr[ScrollMarginInline[Double | String]] = js.undefined
   
-  var scrollMarginInlineEnd: js.UndefOr[ScrollMarginInlineEndProperty[Double | String]] = js.undefined
+  var scrollMarginInlineEnd: js.UndefOr[ScrollMarginInlineEnd[Double | String]] = js.undefined
   
-  var scrollMarginInlineStart: js.UndefOr[ScrollMarginInlineStartProperty[Double | String]] = js.undefined
+  var scrollMarginInlineStart: js.UndefOr[ScrollMarginInlineStart[Double | String]] = js.undefined
   
-  var scrollMarginLeft: js.UndefOr[ScrollMarginLeftProperty[Double | String]] = js.undefined
+  var scrollMarginLeft: js.UndefOr[ScrollMarginLeft[Double | String]] = js.undefined
   
-  var scrollMarginRight: js.UndefOr[ScrollMarginRightProperty[Double | String]] = js.undefined
+  var scrollMarginRight: js.UndefOr[ScrollMarginRight[Double | String]] = js.undefined
   
-  var scrollMarginTop: js.UndefOr[ScrollMarginTopProperty[Double | String]] = js.undefined
+  var scrollMarginTop: js.UndefOr[ScrollMarginTop[Double | String]] = js.undefined
   
-  var scrollPadding: js.UndefOr[ScrollPaddingProperty[Double | String]] = js.undefined
+  var scrollPadding: js.UndefOr[ScrollPadding[Double | String]] = js.undefined
   
-  var scrollPaddingBlock: js.UndefOr[ScrollPaddingBlockProperty[Double | String]] = js.undefined
+  var scrollPaddingBlock: js.UndefOr[ScrollPaddingBlock[Double | String]] = js.undefined
   
-  var scrollPaddingBlockEnd: js.UndefOr[ScrollPaddingBlockEndProperty[Double | String]] = js.undefined
+  var scrollPaddingBlockEnd: js.UndefOr[ScrollPaddingBlockEnd[Double | String]] = js.undefined
   
-  var scrollPaddingBlockStart: js.UndefOr[ScrollPaddingBlockStartProperty[Double | String]] = js.undefined
+  var scrollPaddingBlockStart: js.UndefOr[ScrollPaddingBlockStart[Double | String]] = js.undefined
   
-  var scrollPaddingBottom: js.UndefOr[ScrollPaddingBottomProperty[Double | String]] = js.undefined
+  var scrollPaddingBottom: js.UndefOr[ScrollPaddingBottom[Double | String]] = js.undefined
   
-  var scrollPaddingInline: js.UndefOr[ScrollPaddingInlineProperty[Double | String]] = js.undefined
+  var scrollPaddingInline: js.UndefOr[ScrollPaddingInline[Double | String]] = js.undefined
   
-  var scrollPaddingInlineEnd: js.UndefOr[ScrollPaddingInlineEndProperty[Double | String]] = js.undefined
+  var scrollPaddingInlineEnd: js.UndefOr[ScrollPaddingInlineEnd[Double | String]] = js.undefined
   
-  var scrollPaddingInlineStart: js.UndefOr[ScrollPaddingInlineStartProperty[Double | String]] = js.undefined
+  var scrollPaddingInlineStart: js.UndefOr[ScrollPaddingInlineStart[Double | String]] = js.undefined
   
-  var scrollPaddingLeft: js.UndefOr[ScrollPaddingLeftProperty[Double | String]] = js.undefined
+  var scrollPaddingLeft: js.UndefOr[ScrollPaddingLeft[Double | String]] = js.undefined
   
-  var scrollPaddingRight: js.UndefOr[ScrollPaddingRightProperty[Double | String]] = js.undefined
+  var scrollPaddingRight: js.UndefOr[ScrollPaddingRight[Double | String]] = js.undefined
   
-  var scrollPaddingTop: js.UndefOr[ScrollPaddingTopProperty[Double | String]] = js.undefined
+  var scrollPaddingTop: js.UndefOr[ScrollPaddingTop[Double | String]] = js.undefined
   
-  var scrollSnapAlign: js.UndefOr[ScrollSnapAlignProperty] = js.undefined
+  var scrollSnapAlign: js.UndefOr[ScrollSnapAlign] = js.undefined
   
-  var scrollSnapMargin: js.UndefOr[ScrollMarginProperty[Double | String]] = js.undefined
+  var scrollSnapMargin: js.UndefOr[ScrollMargin[Double | String]] = js.undefined
   
-  var scrollSnapMarginBottom: js.UndefOr[ScrollMarginBottomProperty[Double | String]] = js.undefined
+  var scrollSnapMarginBottom: js.UndefOr[ScrollMarginBottom[Double | String]] = js.undefined
   
-  var scrollSnapMarginLeft: js.UndefOr[ScrollMarginLeftProperty[Double | String]] = js.undefined
+  var scrollSnapMarginLeft: js.UndefOr[ScrollMarginLeft[Double | String]] = js.undefined
   
-  var scrollSnapMarginRight: js.UndefOr[ScrollMarginRightProperty[Double | String]] = js.undefined
+  var scrollSnapMarginRight: js.UndefOr[ScrollMarginRight[Double | String]] = js.undefined
   
-  var scrollSnapMarginTop: js.UndefOr[ScrollMarginTopProperty[Double | String]] = js.undefined
+  var scrollSnapMarginTop: js.UndefOr[ScrollMarginTop[Double | String]] = js.undefined
   
-  var scrollSnapStop: js.UndefOr[ScrollSnapStopProperty] = js.undefined
+  var scrollSnapStop: js.UndefOr[ScrollSnapStop] = js.undefined
   
-  var scrollSnapType: js.UndefOr[ScrollSnapTypeProperty] = js.undefined
+  var scrollSnapType: js.UndefOr[ScrollSnapType] = js.undefined
   
-  var scrollbarColor: js.UndefOr[ScrollbarColorProperty] = js.undefined
+  var scrollbarColor: js.UndefOr[ScrollbarColor] = js.undefined
   
-  var scrollbarGutter: js.UndefOr[ScrollbarGutterProperty] = js.undefined
+  var scrollbarGutter: js.UndefOr[ScrollbarGutter] = js.undefined
   
-  var scrollbarWidth: js.UndefOr[ScrollbarWidthProperty] = js.undefined
+  var scrollbarWidth: js.UndefOr[ScrollbarWidth] = js.undefined
   
-  var shapeImageThreshold: js.UndefOr[ShapeImageThresholdProperty] = js.undefined
+  var shapeImageThreshold: js.UndefOr[ShapeImageThreshold] = js.undefined
   
-  var shapeMargin: js.UndefOr[ShapeMarginProperty[Double | String]] = js.undefined
+  var shapeMargin: js.UndefOr[ShapeMargin[Double | String]] = js.undefined
   
-  var shapeOutside: js.UndefOr[ShapeOutsideProperty] = js.undefined
+  var shapeOutside: js.UndefOr[ShapeOutside] = js.undefined
   
-  var shapeRendering: js.UndefOr[ShapeRenderingProperty] = js.undefined
+  var shapeRendering: js.UndefOr[ShapeRendering] = js.undefined
   
-  var stopColor: js.UndefOr[StopColorProperty] = js.undefined
+  /**
+    * The **`size`** is shorthand for using both **`width`** and **`height`** CSS properties. They set the width and height of an element.
+    *
+    * **Initial value**: `0`
+    *
+    * | Chrome | Firefox | Safari |  Edge  |  IE   |
+    * | :----: | :-----: | :----: | :----: | :---: |
+    * | **1**  |  **1**  | **1**  | **12** | **3** |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/width
+    * @see https://developer.mozilla.org/docs/Web/CSS/height
+    */
+  var size: js.UndefOr[
+    (Width[Double | String]) | (js.Array[NonNullable[js.UndefOr[Width[Double | String]]]])
+  ] = js.undefined
   
-  var stopOpacity: js.UndefOr[GlobalsNumber] = js.undefined
+  var stopColor: js.UndefOr[StopColor] = js.undefined
   
-  var stroke: js.UndefOr[StrokeProperty] = js.undefined
+  var stopOpacity: js.UndefOr[StopOpacity] = js.undefined
   
-  var strokeDasharray: js.UndefOr[StrokeDasharrayProperty[Double | String]] = js.undefined
+  var stroke: js.UndefOr[Stroke] = js.undefined
   
-  var strokeDashoffset: js.UndefOr[StrokeDashoffsetProperty[Double | String]] = js.undefined
+  var strokeDasharray: js.UndefOr[StrokeDasharray[Double | String]] = js.undefined
   
-  var strokeLinecap: js.UndefOr[StrokeLinecapProperty] = js.undefined
+  var strokeDashoffset: js.UndefOr[StrokeDashoffset[Double | String]] = js.undefined
   
-  var strokeLinejoin: js.UndefOr[StrokeLinejoinProperty] = js.undefined
+  var strokeLinecap: js.UndefOr[StrokeLinecap] = js.undefined
   
-  var strokeMiterlimit: js.UndefOr[GlobalsNumber] = js.undefined
+  var strokeLinejoin: js.UndefOr[StrokeLinejoin] = js.undefined
   
-  var strokeOpacity: js.UndefOr[GlobalsNumber] = js.undefined
+  var strokeMiterlimit: js.UndefOr[StrokeMiterlimit] = js.undefined
   
-  var strokeWidth: js.UndefOr[StrokeWidthProperty[Double | String]] = js.undefined
+  var strokeOpacity: js.UndefOr[StrokeOpacity] = js.undefined
   
-  var tabSize: js.UndefOr[TabSizeProperty[Double | String]] = js.undefined
+  var strokeWidth: js.UndefOr[StrokeWidth[Double | String]] = js.undefined
   
-  var tableLayout: js.UndefOr[TableLayoutProperty] = js.undefined
+  var tabSize: js.UndefOr[TabSize[Double | String]] = js.undefined
   
-  var textAlign: js.UndefOr[TextAlignProperty] = js.undefined
+  var tableLayout: js.UndefOr[TableLayout] = js.undefined
   
-  var textAlignLast: js.UndefOr[TextAlignLastProperty] = js.undefined
+  var textAlign: js.UndefOr[TextAlign] = js.undefined
   
-  var textAnchor: js.UndefOr[TextAnchorProperty] = js.undefined
+  var textAlignLast: js.UndefOr[TextAlignLast] = js.undefined
   
-  var textCombineUpright: js.UndefOr[TextCombineUprightProperty] = js.undefined
+  var textAnchor: js.UndefOr[TextAnchor] = js.undefined
   
-  var textDecoration: js.UndefOr[TextDecorationProperty[Double | String]] = js.undefined
+  var textCombineUpright: js.UndefOr[TextCombineUpright] = js.undefined
   
-  var textDecorationColor: js.UndefOr[TextDecorationColorProperty] = js.undefined
+  var textDecoration: js.UndefOr[TextDecoration[Double | String]] = js.undefined
   
-  var textDecorationLine: js.UndefOr[TextDecorationLineProperty] = js.undefined
+  var textDecorationColor: js.UndefOr[TextDecorationColor] = js.undefined
   
-  var textDecorationSkip: js.UndefOr[TextDecorationSkipProperty] = js.undefined
+  var textDecorationLine: js.UndefOr[TextDecorationLine] = js.undefined
   
-  var textDecorationSkipInk: js.UndefOr[TextDecorationSkipInkProperty] = js.undefined
+  var textDecorationSkip: js.UndefOr[TextDecorationSkip] = js.undefined
   
-  var textDecorationStyle: js.UndefOr[TextDecorationStyleProperty] = js.undefined
+  var textDecorationSkipInk: js.UndefOr[TextDecorationSkipInk] = js.undefined
   
-  var textDecorationThickness: js.UndefOr[TextDecorationThicknessProperty[Double | String]] = js.undefined
+  var textDecorationStyle: js.UndefOr[TextDecorationStyle] = js.undefined
   
-  var textDecorationWidth: js.UndefOr[TextDecorationThicknessProperty[Double | String]] = js.undefined
+  var textDecorationThickness: js.UndefOr[TextDecorationThickness[Double | String]] = js.undefined
   
-  var textEmphasis: js.UndefOr[TextEmphasisProperty] = js.undefined
+  var textEmphasis: js.UndefOr[TextEmphasis] = js.undefined
   
-  var textEmphasisColor: js.UndefOr[TextEmphasisColorProperty] = js.undefined
+  var textEmphasisColor: js.UndefOr[TextEmphasisColor] = js.undefined
   
-  var textEmphasisPosition: js.UndefOr[GlobalsString] = js.undefined
+  var textEmphasisPosition: js.UndefOr[TextEmphasisPosition] = js.undefined
   
-  var textEmphasisStyle: js.UndefOr[TextEmphasisStyleProperty] = js.undefined
+  var textEmphasisStyle: js.UndefOr[TextEmphasisStyle] = js.undefined
   
-  var textIndent: js.UndefOr[TextIndentProperty[Double | String]] = js.undefined
+  var textIndent: js.UndefOr[TextIndent[Double | String]] = js.undefined
   
-  var textJustify: js.UndefOr[TextJustifyProperty] = js.undefined
+  var textJustify: js.UndefOr[TextJustify] = js.undefined
   
-  var textOrientation: js.UndefOr[TextOrientationProperty] = js.undefined
+  var textOrientation: js.UndefOr[TextOrientation] = js.undefined
   
-  var textOverflow: js.UndefOr[TextOverflowProperty] = js.undefined
+  var textOverflow: js.UndefOr[TextOverflow] = js.undefined
   
-  var textRendering: js.UndefOr[TextRenderingProperty] = js.undefined
+  var textRendering: js.UndefOr[TextRendering] = js.undefined
   
-  var textShadow: js.UndefOr[TextShadowProperty] = js.undefined
+  var textShadow: js.UndefOr[TextShadow] = js.undefined
   
-  var textSizeAdjust: js.UndefOr[TextSizeAdjustProperty] = js.undefined
+  var textSizeAdjust: js.UndefOr[TextSizeAdjust] = js.undefined
   
-  var textTransform: js.UndefOr[TextTransformProperty] = js.undefined
+  var textTransform: js.UndefOr[TextTransform] = js.undefined
   
-  var textUnderlineOffset: js.UndefOr[TextUnderlineOffsetProperty[Double | String]] = js.undefined
+  var textUnderlineOffset: js.UndefOr[TextUnderlineOffset[Double | String]] = js.undefined
   
-  var textUnderlinePosition: js.UndefOr[TextUnderlinePositionProperty] = js.undefined
+  var textUnderlinePosition: js.UndefOr[TextUnderlinePosition] = js.undefined
   
-  var top: js.UndefOr[TopProperty[Double | String]] = js.undefined
+  var top: js.UndefOr[Top[Double | String]] = js.undefined
   
-  var touchAction: js.UndefOr[TouchActionProperty] = js.undefined
+  var touchAction: js.UndefOr[TouchAction] = js.undefined
   
-  var transform: js.UndefOr[TransformProperty] = js.undefined
+  var transform: js.UndefOr[Transform] = js.undefined
   
-  var transformBox: js.UndefOr[TransformBoxProperty] = js.undefined
+  var transformBox: js.UndefOr[TransformBox] = js.undefined
   
-  var transformOrigin: js.UndefOr[TransformOriginProperty[Double | String]] = js.undefined
+  var transformOrigin: js.UndefOr[TransformOrigin[Double | String]] = js.undefined
   
-  var transformStyle: js.UndefOr[TransformStyleProperty] = js.undefined
+  var transformStyle: js.UndefOr[TransformStyle] = js.undefined
   
-  var transition: js.UndefOr[TransitionProperty] = js.undefined
+  var transition: js.UndefOr[Transition[String]] = js.undefined
   
-  var transitionDelay: js.UndefOr[GlobalsString] = js.undefined
+  var transitionDelay: js.UndefOr[TransitionDelay[String]] = js.undefined
   
-  var transitionDuration: js.UndefOr[GlobalsString] = js.undefined
+  var transitionDuration: js.UndefOr[TransitionDuration[String]] = js.undefined
   
-  var transitionProperty: js.UndefOr[TransitionPropertyProperty] = js.undefined
+  var transitionProperty: js.UndefOr[TransitionProperty] = js.undefined
   
-  var transitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty] = js.undefined
+  var transitionTimingFunction: js.UndefOr[TransitionTimingFunction] = js.undefined
   
-  var translate: js.UndefOr[TranslateProperty[Double | String]] = js.undefined
+  var translate: js.UndefOr[Translate[Double | String]] = js.undefined
   
-  var unicodeBidi: js.UndefOr[UnicodeBidiProperty] = js.undefined
+  var unicodeBidi: js.UndefOr[UnicodeBidi] = js.undefined
   
-  var userSelect: js.UndefOr[UserSelectProperty] = js.undefined
+  var userSelect: js.UndefOr[UserSelect] = js.undefined
   
-  var vectorEffect: js.UndefOr[VectorEffectProperty] = js.undefined
+  var vectorEffect: js.UndefOr[VectorEffect] = js.undefined
   
-  var verticalAlign: js.UndefOr[VerticalAlignProperty[Double | String]] = js.undefined
+  var verticalAlign: js.UndefOr[VerticalAlign[Double | String]] = js.undefined
   
-  var visibility: js.UndefOr[VisibilityProperty] = js.undefined
+  var visibility: js.UndefOr[Visibility] = js.undefined
   
-  var whiteSpace: js.UndefOr[WhiteSpaceProperty] = js.undefined
+  var whiteSpace: js.UndefOr[WhiteSpace] = js.undefined
   
-  var widows: js.UndefOr[GlobalsNumber] = js.undefined
+  var widows: js.UndefOr[Widows] = js.undefined
   
-  var width: js.UndefOr[WidthProperty[Double | String]] = js.undefined
+  var width: js.UndefOr[Width[Double | String]] = js.undefined
   
-  var willChange: js.UndefOr[WillChangeProperty] = js.undefined
+  var willChange: js.UndefOr[WillChange] = js.undefined
   
-  var wordBreak: js.UndefOr[WordBreakProperty] = js.undefined
+  var wordBreak: js.UndefOr[WordBreak] = js.undefined
   
-  var wordSpacing: js.UndefOr[WordSpacingProperty[Double | String]] = js.undefined
+  var wordSpacing: js.UndefOr[WordSpacing[Double | String]] = js.undefined
   
-  var wordWrap: js.UndefOr[WordWrapProperty] = js.undefined
+  var wordWrap: js.UndefOr[WordWrap] = js.undefined
   
-  var writingMode: js.UndefOr[WritingModeProperty] = js.undefined
+  var writingMode: js.UndefOr[WritingMode] = js.undefined
   
   /**
     * The **`z-index`** CSS property sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one.
@@ -1590,11 +2242,9 @@ trait AllSystemCSSProperties extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/z-index
     */
-  var zIndex: js.UndefOr[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | String
-  ] = js.undefined
+  var zIndex: js.UndefOr[ZIndex | String] = js.undefined
   
-  var zoom: js.UndefOr[ZoomProperty] = js.undefined
+  var zoom: js.UndefOr[Zoom] = js.undefined
 }
 object AllSystemCSSProperties {
   
@@ -1605,741 +2255,765 @@ object AllSystemCSSProperties {
   
   extension [Self <: AllSystemCSSProperties](x: Self) {
     
-    inline def setAlignContent(value: AlignContentProperty): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
+    inline def setAccentColor(value: AccentColor): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
+    
+    inline def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
+    
+    inline def setAlignContent(value: AlignContent): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     
     inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
     
-    inline def setAlignItems(value: AlignItemsProperty): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    inline def setAlignItems(value: AlignItems): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
     inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
     
-    inline def setAlignSelf(value: AlignSelfProperty): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+    inline def setAlignSelf(value: AlignSelf): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
     
     inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
     
-    inline def setAlignTracks(value: AlignTracksProperty): Self = StObject.set(x, "alignTracks", value.asInstanceOf[js.Any])
+    inline def setAlignTracks(value: AlignTracks): Self = StObject.set(x, "alignTracks", value.asInstanceOf[js.Any])
     
     inline def setAlignTracksUndefined: Self = StObject.set(x, "alignTracks", js.undefined)
     
-    inline def setAlignmentBaseline(value: AlignmentBaselineProperty): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
+    inline def setAlignmentBaseline(value: AlignmentBaseline): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     
     inline def setAlignmentBaselineUndefined: Self = StObject.set(x, "alignmentBaseline", js.undefined)
     
-    inline def setAll(value: Globals): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: All): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    inline def setAnimation(value: AnimationProperty): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Animation[String]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    inline def setAnimationDelay(value: GlobalsString): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
+    inline def setAnimationComposition(value: AnimationComposition): Self = StObject.set(x, "animationComposition", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationCompositionUndefined: Self = StObject.set(x, "animationComposition", js.undefined)
+    
+    inline def setAnimationDelay(value: AnimationDelay[String]): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
     
     inline def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
     
-    inline def setAnimationDirection(value: AnimationDirectionProperty): Self = StObject.set(x, "animationDirection", value.asInstanceOf[js.Any])
+    inline def setAnimationDirection(value: AnimationDirection): Self = StObject.set(x, "animationDirection", value.asInstanceOf[js.Any])
     
     inline def setAnimationDirectionUndefined: Self = StObject.set(x, "animationDirection", js.undefined)
     
-    inline def setAnimationDuration(value: GlobalsString): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    inline def setAnimationDuration(value: AnimationDuration[String]): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
-    inline def setAnimationFillMode(value: AnimationFillModeProperty): Self = StObject.set(x, "animationFillMode", value.asInstanceOf[js.Any])
+    inline def setAnimationFillMode(value: AnimationFillMode): Self = StObject.set(x, "animationFillMode", value.asInstanceOf[js.Any])
     
     inline def setAnimationFillModeUndefined: Self = StObject.set(x, "animationFillMode", js.undefined)
     
-    inline def setAnimationIterationCount(value: AnimationIterationCountProperty): Self = StObject.set(x, "animationIterationCount", value.asInstanceOf[js.Any])
+    inline def setAnimationIterationCount(value: AnimationIterationCount): Self = StObject.set(x, "animationIterationCount", value.asInstanceOf[js.Any])
     
     inline def setAnimationIterationCountUndefined: Self = StObject.set(x, "animationIterationCount", js.undefined)
     
-    inline def setAnimationName(value: AnimationNameProperty): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
+    inline def setAnimationName(value: AnimationName): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
     
     inline def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
     
-    inline def setAnimationPlayState(value: AnimationPlayStateProperty): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
+    inline def setAnimationPlayState(value: AnimationPlayState): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
     
     inline def setAnimationPlayStateUndefined: Self = StObject.set(x, "animationPlayState", js.undefined)
     
-    inline def setAnimationTimingFunction(value: AnimationTimingFunctionProperty): Self = StObject.set(x, "animationTimingFunction", value.asInstanceOf[js.Any])
+    inline def setAnimationTimeline(value: AnimationTimeline): Self = StObject.set(x, "animationTimeline", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationTimelineUndefined: Self = StObject.set(x, "animationTimeline", js.undefined)
+    
+    inline def setAnimationTimingFunction(value: AnimationTimingFunction): Self = StObject.set(x, "animationTimingFunction", value.asInstanceOf[js.Any])
     
     inline def setAnimationTimingFunctionUndefined: Self = StObject.set(x, "animationTimingFunction", js.undefined)
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setAppearance(value: AppearanceProperty): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+    inline def setAppearance(value: Appearance): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
     inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
     
-    inline def setAspectRatio(value: AspectRatioProperty): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+    inline def setAspectRatio(value: AspectRatio): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
     inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
     
-    inline def setBackdropFilter(value: BackdropFilterProperty): Self = StObject.set(x, "backdropFilter", value.asInstanceOf[js.Any])
+    inline def setBackdropFilter(value: BackdropFilter): Self = StObject.set(x, "backdropFilter", value.asInstanceOf[js.Any])
     
     inline def setBackdropFilterUndefined: Self = StObject.set(x, "backdropFilter", js.undefined)
     
-    inline def setBackfaceVisibility(value: BackfaceVisibilityProperty): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
+    inline def setBackfaceVisibility(value: BackfaceVisibility): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
     
     inline def setBackfaceVisibilityUndefined: Self = StObject.set(x, "backfaceVisibility", js.undefined)
     
-    inline def setBackground(value: BackgroundProperty[Double | String]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Background[Double | String]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundAttachment(value: BackgroundAttachmentProperty): Self = StObject.set(x, "backgroundAttachment", value.asInstanceOf[js.Any])
+    inline def setBackgroundAttachment(value: BackgroundAttachment): Self = StObject.set(x, "backgroundAttachment", value.asInstanceOf[js.Any])
     
     inline def setBackgroundAttachmentUndefined: Self = StObject.set(x, "backgroundAttachment", js.undefined)
     
-    inline def setBackgroundBlendMode(value: BackgroundBlendModeProperty): Self = StObject.set(x, "backgroundBlendMode", value.asInstanceOf[js.Any])
+    inline def setBackgroundBlendMode(value: BackgroundBlendMode): Self = StObject.set(x, "backgroundBlendMode", value.asInstanceOf[js.Any])
     
     inline def setBackgroundBlendModeUndefined: Self = StObject.set(x, "backgroundBlendMode", js.undefined)
     
-    inline def setBackgroundClip(value: BackgroundClipProperty): Self = StObject.set(x, "backgroundClip", value.asInstanceOf[js.Any])
+    inline def setBackgroundClip(value: BackgroundClip): Self = StObject.set(x, "backgroundClip", value.asInstanceOf[js.Any])
     
     inline def setBackgroundClipUndefined: Self = StObject.set(x, "backgroundClip", js.undefined)
     
-    inline def setBackgroundColor(value: BackgroundColorProperty): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setBackgroundImage(value: BackgroundImageProperty): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
+    inline def setBackgroundImage(value: BackgroundImage): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
     
     inline def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
     
-    inline def setBackgroundOrigin(value: BackgroundOriginProperty): Self = StObject.set(x, "backgroundOrigin", value.asInstanceOf[js.Any])
+    inline def setBackgroundOrigin(value: BackgroundOrigin): Self = StObject.set(x, "backgroundOrigin", value.asInstanceOf[js.Any])
     
     inline def setBackgroundOriginUndefined: Self = StObject.set(x, "backgroundOrigin", js.undefined)
     
-    inline def setBackgroundPosition(value: BackgroundPositionProperty[Double | String]): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
+    inline def setBackgroundPosition(value: BackgroundPosition[Double | String]): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
     
     inline def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
     
-    inline def setBackgroundPositionX(value: BackgroundPositionXProperty[Double | String]): Self = StObject.set(x, "backgroundPositionX", value.asInstanceOf[js.Any])
+    inline def setBackgroundPositionX(value: BackgroundPositionX[Double | String]): Self = StObject.set(x, "backgroundPositionX", value.asInstanceOf[js.Any])
     
     inline def setBackgroundPositionXUndefined: Self = StObject.set(x, "backgroundPositionX", js.undefined)
     
-    inline def setBackgroundPositionY(value: BackgroundPositionYProperty[Double | String]): Self = StObject.set(x, "backgroundPositionY", value.asInstanceOf[js.Any])
+    inline def setBackgroundPositionY(value: BackgroundPositionY[Double | String]): Self = StObject.set(x, "backgroundPositionY", value.asInstanceOf[js.Any])
     
     inline def setBackgroundPositionYUndefined: Self = StObject.set(x, "backgroundPositionY", js.undefined)
     
-    inline def setBackgroundRepeat(value: BackgroundRepeatProperty): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
+    inline def setBackgroundRepeat(value: BackgroundRepeat): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
     
     inline def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
     
-    inline def setBackgroundSize(value: BackgroundSizeProperty[Double | String]): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
+    inline def setBackgroundSize(value: BackgroundSize[Double | String]): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
     
     inline def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setBaselineShift(value: BaselineShiftProperty[Double | String]): Self = StObject.set(x, "baselineShift", value.asInstanceOf[js.Any])
+    inline def setBaselineShift(value: BaselineShift[Double | String]): Self = StObject.set(x, "baselineShift", value.asInstanceOf[js.Any])
     
     inline def setBaselineShiftUndefined: Self = StObject.set(x, "baselineShift", js.undefined)
     
-    inline def setBg(value: BackgroundColorProperty | js.Array[BackgroundColorProperty]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+    inline def setBg(value: BackgroundColor | js.Array[NonNullable[js.UndefOr[BackgroundColor]]]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
     inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
     
-    inline def setBgVarargs(value: BackgroundColorProperty*): Self = StObject.set(x, "bg", js.Array(value :_*))
+    inline def setBgVarargs(value: NonNullable[js.UndefOr[BackgroundColor]]*): Self = StObject.set(x, "bg", js.Array(value*))
     
-    inline def setBlockOverflow(value: BlockOverflowProperty): Self = StObject.set(x, "blockOverflow", value.asInstanceOf[js.Any])
+    inline def setBlockOverflow(value: BlockOverflow): Self = StObject.set(x, "blockOverflow", value.asInstanceOf[js.Any])
     
     inline def setBlockOverflowUndefined: Self = StObject.set(x, "blockOverflow", js.undefined)
     
-    inline def setBlockSize(value: BlockSizeProperty[Double | String]): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
+    inline def setBlockSize(value: BlockSize[Double | String]): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
     
     inline def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
     
-    inline def setBorder(value: BorderProperty[Double | String]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Border[Double | String]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    inline def setBorderBlock(value: BorderBlockProperty[Double | String]): Self = StObject.set(x, "borderBlock", value.asInstanceOf[js.Any])
+    inline def setBorderBlock(value: BorderBlock[Double | String]): Self = StObject.set(x, "borderBlock", value.asInstanceOf[js.Any])
     
-    inline def setBorderBlockColor(value: BorderBlockColorProperty): Self = StObject.set(x, "borderBlockColor", value.asInstanceOf[js.Any])
+    inline def setBorderBlockColor(value: BorderBlockColor): Self = StObject.set(x, "borderBlockColor", value.asInstanceOf[js.Any])
     
     inline def setBorderBlockColorUndefined: Self = StObject.set(x, "borderBlockColor", js.undefined)
     
-    inline def setBorderBlockEnd(value: BorderBlockEndProperty[Double | String]): Self = StObject.set(x, "borderBlockEnd", value.asInstanceOf[js.Any])
+    inline def setBorderBlockEnd(value: BorderBlockEnd[Double | String]): Self = StObject.set(x, "borderBlockEnd", value.asInstanceOf[js.Any])
     
-    inline def setBorderBlockEndColor(value: BorderBlockEndColorProperty): Self = StObject.set(x, "borderBlockEndColor", value.asInstanceOf[js.Any])
+    inline def setBorderBlockEndColor(value: BorderBlockEndColor): Self = StObject.set(x, "borderBlockEndColor", value.asInstanceOf[js.Any])
     
     inline def setBorderBlockEndColorUndefined: Self = StObject.set(x, "borderBlockEndColor", js.undefined)
     
-    inline def setBorderBlockEndStyle(value: BorderBlockEndStyleProperty): Self = StObject.set(x, "borderBlockEndStyle", value.asInstanceOf[js.Any])
+    inline def setBorderBlockEndStyle(value: BorderBlockEndStyle): Self = StObject.set(x, "borderBlockEndStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderBlockEndStyleUndefined: Self = StObject.set(x, "borderBlockEndStyle", js.undefined)
     
     inline def setBorderBlockEndUndefined: Self = StObject.set(x, "borderBlockEnd", js.undefined)
     
-    inline def setBorderBlockEndWidth(value: BorderBlockEndWidthProperty[Double | String]): Self = StObject.set(x, "borderBlockEndWidth", value.asInstanceOf[js.Any])
+    inline def setBorderBlockEndWidth(value: BorderBlockEndWidth[Double | String]): Self = StObject.set(x, "borderBlockEndWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderBlockEndWidthUndefined: Self = StObject.set(x, "borderBlockEndWidth", js.undefined)
     
-    inline def setBorderBlockStart(value: BorderBlockStartProperty[Double | String]): Self = StObject.set(x, "borderBlockStart", value.asInstanceOf[js.Any])
+    inline def setBorderBlockStart(value: BorderBlockStart[Double | String]): Self = StObject.set(x, "borderBlockStart", value.asInstanceOf[js.Any])
     
-    inline def setBorderBlockStartColor(value: BorderBlockStartColorProperty): Self = StObject.set(x, "borderBlockStartColor", value.asInstanceOf[js.Any])
+    inline def setBorderBlockStartColor(value: BorderBlockStartColor): Self = StObject.set(x, "borderBlockStartColor", value.asInstanceOf[js.Any])
     
     inline def setBorderBlockStartColorUndefined: Self = StObject.set(x, "borderBlockStartColor", js.undefined)
     
-    inline def setBorderBlockStartStyle(value: BorderBlockStartStyleProperty): Self = StObject.set(x, "borderBlockStartStyle", value.asInstanceOf[js.Any])
+    inline def setBorderBlockStartStyle(value: BorderBlockStartStyle): Self = StObject.set(x, "borderBlockStartStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderBlockStartStyleUndefined: Self = StObject.set(x, "borderBlockStartStyle", js.undefined)
     
     inline def setBorderBlockStartUndefined: Self = StObject.set(x, "borderBlockStart", js.undefined)
     
-    inline def setBorderBlockStartWidth(value: BorderBlockStartWidthProperty[Double | String]): Self = StObject.set(x, "borderBlockStartWidth", value.asInstanceOf[js.Any])
+    inline def setBorderBlockStartWidth(value: BorderBlockStartWidth[Double | String]): Self = StObject.set(x, "borderBlockStartWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderBlockStartWidthUndefined: Self = StObject.set(x, "borderBlockStartWidth", js.undefined)
     
-    inline def setBorderBlockStyle(value: BorderBlockStyleProperty): Self = StObject.set(x, "borderBlockStyle", value.asInstanceOf[js.Any])
+    inline def setBorderBlockStyle(value: BorderBlockStyle): Self = StObject.set(x, "borderBlockStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderBlockStyleUndefined: Self = StObject.set(x, "borderBlockStyle", js.undefined)
     
     inline def setBorderBlockUndefined: Self = StObject.set(x, "borderBlock", js.undefined)
     
-    inline def setBorderBlockWidth(value: BorderBlockWidthProperty[Double | String]): Self = StObject.set(x, "borderBlockWidth", value.asInstanceOf[js.Any])
+    inline def setBorderBlockWidth(value: BorderBlockWidth[Double | String]): Self = StObject.set(x, "borderBlockWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderBlockWidthUndefined: Self = StObject.set(x, "borderBlockWidth", js.undefined)
     
-    inline def setBorderBottom(value: BorderBottomProperty[Double | String]): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+    inline def setBorderBottom(value: BorderBottom[Double | String]): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
-    inline def setBorderBottomColor(value: BorderBottomColorProperty): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
+    inline def setBorderBottomColor(value: BorderBottomColor): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
     
     inline def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
     
-    inline def setBorderBottomLeftRadius(value: BorderBottomLeftRadiusProperty[Double | String]): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
+    inline def setBorderBottomLeftRadius(value: BorderBottomLeftRadius[Double | String]): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "borderBottomLeftRadius", js.undefined)
     
-    inline def setBorderBottomRightRadius(value: BorderBottomRightRadiusProperty[Double | String]): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
+    inline def setBorderBottomRightRadius(value: BorderBottomRightRadius[Double | String]): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderBottomRightRadiusUndefined: Self = StObject.set(x, "borderBottomRightRadius", js.undefined)
     
-    inline def setBorderBottomStyle(value: BorderBottomStyleProperty): Self = StObject.set(x, "borderBottomStyle", value.asInstanceOf[js.Any])
+    inline def setBorderBottomStyle(value: BorderBottomStyle): Self = StObject.set(x, "borderBottomStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderBottomStyleUndefined: Self = StObject.set(x, "borderBottomStyle", js.undefined)
     
     inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
     
-    inline def setBorderBottomWidth(value: BorderBottomWidthProperty[Double | String]): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])
+    inline def setBorderBottomWidth(value: BorderBottomWidth[Double | String]): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderBottomWidthUndefined: Self = StObject.set(x, "borderBottomWidth", js.undefined)
     
-    inline def setBorderCollapse(value: BorderCollapseProperty): Self = StObject.set(x, "borderCollapse", value.asInstanceOf[js.Any])
+    inline def setBorderCollapse(value: BorderCollapse): Self = StObject.set(x, "borderCollapse", value.asInstanceOf[js.Any])
     
     inline def setBorderCollapseUndefined: Self = StObject.set(x, "borderCollapse", js.undefined)
     
-    inline def setBorderColor(value: BorderColorProperty): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: BorderColor): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    inline def setBorderEndEndRadius(value: BorderEndEndRadiusProperty[Double | String]): Self = StObject.set(x, "borderEndEndRadius", value.asInstanceOf[js.Any])
+    inline def setBorderEndEndRadius(value: BorderEndEndRadius[Double | String]): Self = StObject.set(x, "borderEndEndRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderEndEndRadiusUndefined: Self = StObject.set(x, "borderEndEndRadius", js.undefined)
     
-    inline def setBorderEndStartRadius(value: BorderEndStartRadiusProperty[Double | String]): Self = StObject.set(x, "borderEndStartRadius", value.asInstanceOf[js.Any])
+    inline def setBorderEndStartRadius(value: BorderEndStartRadius[Double | String]): Self = StObject.set(x, "borderEndStartRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderEndStartRadiusUndefined: Self = StObject.set(x, "borderEndStartRadius", js.undefined)
     
-    inline def setBorderImage(value: BorderImageProperty): Self = StObject.set(x, "borderImage", value.asInstanceOf[js.Any])
+    inline def setBorderImage(value: BorderImage): Self = StObject.set(x, "borderImage", value.asInstanceOf[js.Any])
     
-    inline def setBorderImageOutset(value: BorderImageOutsetProperty[Double | String]): Self = StObject.set(x, "borderImageOutset", value.asInstanceOf[js.Any])
+    inline def setBorderImageOutset(value: BorderImageOutset[Double | String]): Self = StObject.set(x, "borderImageOutset", value.asInstanceOf[js.Any])
     
     inline def setBorderImageOutsetUndefined: Self = StObject.set(x, "borderImageOutset", js.undefined)
     
-    inline def setBorderImageRepeat(value: BorderImageRepeatProperty): Self = StObject.set(x, "borderImageRepeat", value.asInstanceOf[js.Any])
+    inline def setBorderImageRepeat(value: BorderImageRepeat): Self = StObject.set(x, "borderImageRepeat", value.asInstanceOf[js.Any])
     
     inline def setBorderImageRepeatUndefined: Self = StObject.set(x, "borderImageRepeat", js.undefined)
     
-    inline def setBorderImageSlice(value: BorderImageSliceProperty): Self = StObject.set(x, "borderImageSlice", value.asInstanceOf[js.Any])
+    inline def setBorderImageSlice(value: BorderImageSlice): Self = StObject.set(x, "borderImageSlice", value.asInstanceOf[js.Any])
     
     inline def setBorderImageSliceUndefined: Self = StObject.set(x, "borderImageSlice", js.undefined)
     
-    inline def setBorderImageSource(value: BorderImageSourceProperty): Self = StObject.set(x, "borderImageSource", value.asInstanceOf[js.Any])
+    inline def setBorderImageSource(value: BorderImageSource): Self = StObject.set(x, "borderImageSource", value.asInstanceOf[js.Any])
     
     inline def setBorderImageSourceUndefined: Self = StObject.set(x, "borderImageSource", js.undefined)
     
     inline def setBorderImageUndefined: Self = StObject.set(x, "borderImage", js.undefined)
     
-    inline def setBorderImageWidth(value: BorderImageWidthProperty[Double | String]): Self = StObject.set(x, "borderImageWidth", value.asInstanceOf[js.Any])
+    inline def setBorderImageWidth(value: BorderImageWidth[Double | String]): Self = StObject.set(x, "borderImageWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderImageWidthUndefined: Self = StObject.set(x, "borderImageWidth", js.undefined)
     
-    inline def setBorderInline(value: BorderInlineProperty[Double | String]): Self = StObject.set(x, "borderInline", value.asInstanceOf[js.Any])
+    inline def setBorderInline(value: BorderInline[Double | String]): Self = StObject.set(x, "borderInline", value.asInstanceOf[js.Any])
     
-    inline def setBorderInlineColor(value: BorderInlineColorProperty): Self = StObject.set(x, "borderInlineColor", value.asInstanceOf[js.Any])
+    inline def setBorderInlineColor(value: BorderInlineColor): Self = StObject.set(x, "borderInlineColor", value.asInstanceOf[js.Any])
     
     inline def setBorderInlineColorUndefined: Self = StObject.set(x, "borderInlineColor", js.undefined)
     
-    inline def setBorderInlineEnd(value: BorderInlineEndProperty[Double | String]): Self = StObject.set(x, "borderInlineEnd", value.asInstanceOf[js.Any])
+    inline def setBorderInlineEnd(value: BorderInlineEnd[Double | String]): Self = StObject.set(x, "borderInlineEnd", value.asInstanceOf[js.Any])
     
-    inline def setBorderInlineEndColor(value: BorderInlineEndColorProperty): Self = StObject.set(x, "borderInlineEndColor", value.asInstanceOf[js.Any])
+    inline def setBorderInlineEndColor(value: BorderInlineEndColor): Self = StObject.set(x, "borderInlineEndColor", value.asInstanceOf[js.Any])
     
     inline def setBorderInlineEndColorUndefined: Self = StObject.set(x, "borderInlineEndColor", js.undefined)
     
-    inline def setBorderInlineEndStyle(value: BorderInlineEndStyleProperty): Self = StObject.set(x, "borderInlineEndStyle", value.asInstanceOf[js.Any])
+    inline def setBorderInlineEndStyle(value: BorderInlineEndStyle): Self = StObject.set(x, "borderInlineEndStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderInlineEndStyleUndefined: Self = StObject.set(x, "borderInlineEndStyle", js.undefined)
     
     inline def setBorderInlineEndUndefined: Self = StObject.set(x, "borderInlineEnd", js.undefined)
     
-    inline def setBorderInlineEndWidth(value: BorderInlineEndWidthProperty[Double | String]): Self = StObject.set(x, "borderInlineEndWidth", value.asInstanceOf[js.Any])
+    inline def setBorderInlineEndWidth(value: BorderInlineEndWidth[Double | String]): Self = StObject.set(x, "borderInlineEndWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderInlineEndWidthUndefined: Self = StObject.set(x, "borderInlineEndWidth", js.undefined)
     
-    inline def setBorderInlineStart(value: BorderInlineStartProperty[Double | String]): Self = StObject.set(x, "borderInlineStart", value.asInstanceOf[js.Any])
+    inline def setBorderInlineStart(value: BorderInlineStart[Double | String]): Self = StObject.set(x, "borderInlineStart", value.asInstanceOf[js.Any])
     
-    inline def setBorderInlineStartColor(value: BorderInlineStartColorProperty): Self = StObject.set(x, "borderInlineStartColor", value.asInstanceOf[js.Any])
+    inline def setBorderInlineStartColor(value: BorderInlineStartColor): Self = StObject.set(x, "borderInlineStartColor", value.asInstanceOf[js.Any])
     
     inline def setBorderInlineStartColorUndefined: Self = StObject.set(x, "borderInlineStartColor", js.undefined)
     
-    inline def setBorderInlineStartStyle(value: BorderInlineStartStyleProperty): Self = StObject.set(x, "borderInlineStartStyle", value.asInstanceOf[js.Any])
+    inline def setBorderInlineStartStyle(value: BorderInlineStartStyle): Self = StObject.set(x, "borderInlineStartStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderInlineStartStyleUndefined: Self = StObject.set(x, "borderInlineStartStyle", js.undefined)
     
     inline def setBorderInlineStartUndefined: Self = StObject.set(x, "borderInlineStart", js.undefined)
     
-    inline def setBorderInlineStartWidth(value: BorderInlineStartWidthProperty[Double | String]): Self = StObject.set(x, "borderInlineStartWidth", value.asInstanceOf[js.Any])
+    inline def setBorderInlineStartWidth(value: BorderInlineStartWidth[Double | String]): Self = StObject.set(x, "borderInlineStartWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderInlineStartWidthUndefined: Self = StObject.set(x, "borderInlineStartWidth", js.undefined)
     
-    inline def setBorderInlineStyle(value: BorderInlineStyleProperty): Self = StObject.set(x, "borderInlineStyle", value.asInstanceOf[js.Any])
+    inline def setBorderInlineStyle(value: BorderInlineStyle): Self = StObject.set(x, "borderInlineStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderInlineStyleUndefined: Self = StObject.set(x, "borderInlineStyle", js.undefined)
     
     inline def setBorderInlineUndefined: Self = StObject.set(x, "borderInline", js.undefined)
     
-    inline def setBorderInlineWidth(value: BorderInlineWidthProperty[Double | String]): Self = StObject.set(x, "borderInlineWidth", value.asInstanceOf[js.Any])
+    inline def setBorderInlineWidth(value: BorderInlineWidth[Double | String]): Self = StObject.set(x, "borderInlineWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderInlineWidthUndefined: Self = StObject.set(x, "borderInlineWidth", js.undefined)
     
-    inline def setBorderLeft(value: BorderLeftProperty[Double | String]): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+    inline def setBorderLeft(value: BorderLeft[Double | String]): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
     
-    inline def setBorderLeftColor(value: BorderLeftColorProperty): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
+    inline def setBorderLeftColor(value: BorderLeftColor): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
     
     inline def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
     
-    inline def setBorderLeftStyle(value: BorderLeftStyleProperty): Self = StObject.set(x, "borderLeftStyle", value.asInstanceOf[js.Any])
+    inline def setBorderLeftStyle(value: BorderLeftStyle): Self = StObject.set(x, "borderLeftStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderLeftStyleUndefined: Self = StObject.set(x, "borderLeftStyle", js.undefined)
     
     inline def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
     
-    inline def setBorderLeftWidth(value: BorderLeftWidthProperty[Double | String]): Self = StObject.set(x, "borderLeftWidth", value.asInstanceOf[js.Any])
+    inline def setBorderLeftWidth(value: BorderLeftWidth[Double | String]): Self = StObject.set(x, "borderLeftWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderLeftWidthUndefined: Self = StObject.set(x, "borderLeftWidth", js.undefined)
     
-    inline def setBorderRadius(value: BorderRadiusProperty[Double | String]): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: BorderRadius[Double | String]): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
-    inline def setBorderRight(value: BorderRightProperty[Double | String]): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
+    inline def setBorderRight(value: BorderRight[Double | String]): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
     
-    inline def setBorderRightColor(value: BorderRightColorProperty): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
+    inline def setBorderRightColor(value: BorderRightColor): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
     
     inline def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
     
-    inline def setBorderRightStyle(value: BorderRightStyleProperty): Self = StObject.set(x, "borderRightStyle", value.asInstanceOf[js.Any])
+    inline def setBorderRightStyle(value: BorderRightStyle): Self = StObject.set(x, "borderRightStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderRightStyleUndefined: Self = StObject.set(x, "borderRightStyle", js.undefined)
     
     inline def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
     
-    inline def setBorderRightWidth(value: BorderRightWidthProperty[Double | String]): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
+    inline def setBorderRightWidth(value: BorderRightWidth[Double | String]): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderRightWidthUndefined: Self = StObject.set(x, "borderRightWidth", js.undefined)
     
-    inline def setBorderSpacing(value: BorderSpacingProperty[Double | String]): Self = StObject.set(x, "borderSpacing", value.asInstanceOf[js.Any])
+    inline def setBorderSpacing(value: BorderSpacing[Double | String]): Self = StObject.set(x, "borderSpacing", value.asInstanceOf[js.Any])
     
     inline def setBorderSpacingUndefined: Self = StObject.set(x, "borderSpacing", js.undefined)
     
-    inline def setBorderStartEndRadius(value: BorderStartEndRadiusProperty[Double | String]): Self = StObject.set(x, "borderStartEndRadius", value.asInstanceOf[js.Any])
+    inline def setBorderStartEndRadius(value: BorderStartEndRadius[Double | String]): Self = StObject.set(x, "borderStartEndRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderStartEndRadiusUndefined: Self = StObject.set(x, "borderStartEndRadius", js.undefined)
     
-    inline def setBorderStartStartRadius(value: BorderStartStartRadiusProperty[Double | String]): Self = StObject.set(x, "borderStartStartRadius", value.asInstanceOf[js.Any])
+    inline def setBorderStartStartRadius(value: BorderStartStartRadius[Double | String]): Self = StObject.set(x, "borderStartStartRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderStartStartRadiusUndefined: Self = StObject.set(x, "borderStartStartRadius", js.undefined)
     
-    inline def setBorderStyle(value: BorderStyleProperty): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+    inline def setBorderStyle(value: BorderStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
     
-    inline def setBorderTop(value: BorderTopProperty[Double | String]): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
+    inline def setBorderTop(value: BorderTop[Double | String]): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
     
-    inline def setBorderTopColor(value: BorderTopColorProperty): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
+    inline def setBorderTopColor(value: BorderTopColor): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
     
     inline def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
     
-    inline def setBorderTopLeftRadius(value: BorderTopLeftRadiusProperty[Double | String]): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
+    inline def setBorderTopLeftRadius(value: BorderTopLeftRadius[Double | String]): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderTopLeftRadiusUndefined: Self = StObject.set(x, "borderTopLeftRadius", js.undefined)
     
-    inline def setBorderTopRightRadius(value: BorderTopRightRadiusProperty[Double | String]): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
+    inline def setBorderTopRightRadius(value: BorderTopRightRadius[Double | String]): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderTopRightRadiusUndefined: Self = StObject.set(x, "borderTopRightRadius", js.undefined)
     
-    inline def setBorderTopStyle(value: BorderTopStyleProperty): Self = StObject.set(x, "borderTopStyle", value.asInstanceOf[js.Any])
+    inline def setBorderTopStyle(value: BorderTopStyle): Self = StObject.set(x, "borderTopStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderTopStyleUndefined: Self = StObject.set(x, "borderTopStyle", js.undefined)
     
     inline def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
     
-    inline def setBorderTopWidth(value: BorderTopWidthProperty[Double | String]): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
+    inline def setBorderTopWidth(value: BorderTopWidth[Double | String]): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderTopWidthUndefined: Self = StObject.set(x, "borderTopWidth", js.undefined)
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setBorderWidth(value: BorderWidthProperty[Double | String]): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: BorderWidth[Double | String]): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
-    inline def setBottom(value: BottomProperty[Double | String]): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Bottom[Double | String]): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    inline def setBoxDecorationBreak(value: BoxDecorationBreakProperty): Self = StObject.set(x, "boxDecorationBreak", value.asInstanceOf[js.Any])
+    inline def setBoxDecorationBreak(value: BoxDecorationBreak): Self = StObject.set(x, "boxDecorationBreak", value.asInstanceOf[js.Any])
     
     inline def setBoxDecorationBreakUndefined: Self = StObject.set(x, "boxDecorationBreak", js.undefined)
     
-    inline def setBoxShadow(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
-    ): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
+    inline def setBoxShadow(value: BoxShadow | Double): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     
     inline def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
     
-    inline def setBoxSizing(value: BoxSizingProperty): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
+    inline def setBoxSizing(value: BoxSizing): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
     
     inline def setBoxSizingUndefined: Self = StObject.set(x, "boxSizing", js.undefined)
     
-    inline def setBreakAfter(value: BreakAfterProperty): Self = StObject.set(x, "breakAfter", value.asInstanceOf[js.Any])
+    inline def setBreakAfter(value: BreakAfter): Self = StObject.set(x, "breakAfter", value.asInstanceOf[js.Any])
     
     inline def setBreakAfterUndefined: Self = StObject.set(x, "breakAfter", js.undefined)
     
-    inline def setBreakBefore(value: BreakBeforeProperty): Self = StObject.set(x, "breakBefore", value.asInstanceOf[js.Any])
+    inline def setBreakBefore(value: BreakBefore): Self = StObject.set(x, "breakBefore", value.asInstanceOf[js.Any])
     
     inline def setBreakBeforeUndefined: Self = StObject.set(x, "breakBefore", js.undefined)
     
-    inline def setBreakInside(value: BreakInsideProperty): Self = StObject.set(x, "breakInside", value.asInstanceOf[js.Any])
+    inline def setBreakInside(value: BreakInside): Self = StObject.set(x, "breakInside", value.asInstanceOf[js.Any])
     
     inline def setBreakInsideUndefined: Self = StObject.set(x, "breakInside", js.undefined)
     
-    inline def setCaptionSide(value: CaptionSideProperty): Self = StObject.set(x, "captionSide", value.asInstanceOf[js.Any])
+    inline def setCaptionSide(value: CaptionSide): Self = StObject.set(x, "captionSide", value.asInstanceOf[js.Any])
     
     inline def setCaptionSideUndefined: Self = StObject.set(x, "captionSide", js.undefined)
     
-    inline def setCaretColor(value: CaretColorProperty): Self = StObject.set(x, "caretColor", value.asInstanceOf[js.Any])
+    inline def setCaretColor(value: CaretColor): Self = StObject.set(x, "caretColor", value.asInstanceOf[js.Any])
     
     inline def setCaretColorUndefined: Self = StObject.set(x, "caretColor", js.undefined)
     
-    inline def setClear(value: ClearProperty): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: Clear): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
     inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    inline def setClip(value: ClipProperty): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    inline def setClip(value: Clip): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
-    inline def setClipPath(value: ClipPathProperty): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
+    inline def setClipPath(value: ClipPath): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
     
     inline def setClipPathUndefined: Self = StObject.set(x, "clipPath", js.undefined)
     
-    inline def setClipRule(value: ClipRuleProperty): Self = StObject.set(x, "clipRule", value.asInstanceOf[js.Any])
+    inline def setClipRule(value: ClipRule): Self = StObject.set(x, "clipRule", value.asInstanceOf[js.Any])
     
     inline def setClipRuleUndefined: Self = StObject.set(x, "clipRule", js.undefined)
     
     inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
-    inline def setColor(value: ColorProperty): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setColorAdjust(value: ColorAdjustProperty): Self = StObject.set(x, "colorAdjust", value.asInstanceOf[js.Any])
+    inline def setColorAdjust(value: PrintColorAdjust): Self = StObject.set(x, "colorAdjust", value.asInstanceOf[js.Any])
     
     inline def setColorAdjustUndefined: Self = StObject.set(x, "colorAdjust", js.undefined)
     
-    inline def setColorInterpolation(value: ColorInterpolationProperty): Self = StObject.set(x, "colorInterpolation", value.asInstanceOf[js.Any])
+    inline def setColorInterpolation(value: ColorInterpolation): Self = StObject.set(x, "colorInterpolation", value.asInstanceOf[js.Any])
     
     inline def setColorInterpolationUndefined: Self = StObject.set(x, "colorInterpolation", js.undefined)
     
-    inline def setColorRendering(value: ColorRenderingProperty): Self = StObject.set(x, "colorRendering", value.asInstanceOf[js.Any])
+    inline def setColorRendering(value: ColorRendering): Self = StObject.set(x, "colorRendering", value.asInstanceOf[js.Any])
     
     inline def setColorRenderingUndefined: Self = StObject.set(x, "colorRendering", js.undefined)
     
+    inline def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
+    
+    inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
+    
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColumnCount(value: ColumnCountProperty): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+    inline def setColumnCount(value: ColumnCount): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
     inline def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
-    inline def setColumnFill(value: ColumnFillProperty): Self = StObject.set(x, "columnFill", value.asInstanceOf[js.Any])
+    inline def setColumnFill(value: ColumnFill): Self = StObject.set(x, "columnFill", value.asInstanceOf[js.Any])
     
     inline def setColumnFillUndefined: Self = StObject.set(x, "columnFill", js.undefined)
     
-    inline def setColumnGap(value: ColumnGapProperty[Double | String]): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+    inline def setColumnGap(value: ColumnGap[Double | String]): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
     
     inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
     
-    inline def setColumnRule(value: ColumnRuleProperty[Double | String]): Self = StObject.set(x, "columnRule", value.asInstanceOf[js.Any])
+    inline def setColumnRule(value: ColumnRule[Double | String]): Self = StObject.set(x, "columnRule", value.asInstanceOf[js.Any])
     
-    inline def setColumnRuleColor(value: ColumnRuleColorProperty): Self = StObject.set(x, "columnRuleColor", value.asInstanceOf[js.Any])
+    inline def setColumnRuleColor(value: ColumnRuleColor): Self = StObject.set(x, "columnRuleColor", value.asInstanceOf[js.Any])
     
     inline def setColumnRuleColorUndefined: Self = StObject.set(x, "columnRuleColor", js.undefined)
     
-    inline def setColumnRuleStyle(value: ColumnRuleStyleProperty): Self = StObject.set(x, "columnRuleStyle", value.asInstanceOf[js.Any])
+    inline def setColumnRuleStyle(value: ColumnRuleStyle): Self = StObject.set(x, "columnRuleStyle", value.asInstanceOf[js.Any])
     
     inline def setColumnRuleStyleUndefined: Self = StObject.set(x, "columnRuleStyle", js.undefined)
     
     inline def setColumnRuleUndefined: Self = StObject.set(x, "columnRule", js.undefined)
     
-    inline def setColumnRuleWidth(value: ColumnRuleWidthProperty[Double | String]): Self = StObject.set(x, "columnRuleWidth", value.asInstanceOf[js.Any])
+    inline def setColumnRuleWidth(value: ColumnRuleWidth[Double | String]): Self = StObject.set(x, "columnRuleWidth", value.asInstanceOf[js.Any])
     
     inline def setColumnRuleWidthUndefined: Self = StObject.set(x, "columnRuleWidth", js.undefined)
     
-    inline def setColumnSpan(value: ColumnSpanProperty): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
+    inline def setColumnSpan(value: ColumnSpan): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
     
     inline def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
     
-    inline def setColumnWidth(value: ColumnWidthProperty[Double | String]): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    inline def setColumnWidth(value: ColumnWidth[Double | String]): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
-    inline def setColumns(value: ColumnsProperty[Double | String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Columns[Double | String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setContain(value: ContainProperty): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
+    inline def setContain(value: Contain): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
     inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
     
-    inline def setContent(value: ContentProperty): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setCounterIncrement(value: CounterIncrementProperty): Self = StObject.set(x, "counterIncrement", value.asInstanceOf[js.Any])
+    inline def setContentVisibility(value: ContentVisibility): Self = StObject.set(x, "contentVisibility", value.asInstanceOf[js.Any])
+    
+    inline def setContentVisibilityUndefined: Self = StObject.set(x, "contentVisibility", js.undefined)
+    
+    inline def setCounterIncrement(value: CounterIncrement): Self = StObject.set(x, "counterIncrement", value.asInstanceOf[js.Any])
     
     inline def setCounterIncrementUndefined: Self = StObject.set(x, "counterIncrement", js.undefined)
     
-    inline def setCounterReset(value: CounterResetProperty): Self = StObject.set(x, "counterReset", value.asInstanceOf[js.Any])
+    inline def setCounterReset(value: CounterReset): Self = StObject.set(x, "counterReset", value.asInstanceOf[js.Any])
     
     inline def setCounterResetUndefined: Self = StObject.set(x, "counterReset", js.undefined)
     
-    inline def setCounterSet(value: CounterSetProperty): Self = StObject.set(x, "counterSet", value.asInstanceOf[js.Any])
+    inline def setCounterSet(value: CounterSet): Self = StObject.set(x, "counterSet", value.asInstanceOf[js.Any])
     
     inline def setCounterSetUndefined: Self = StObject.set(x, "counterSet", js.undefined)
     
-    inline def setCursor(value: CursorProperty): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    inline def setDirection(value: DirectionProperty): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    inline def setDisplay(value: DisplayProperty): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: Display): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    inline def setDominantBaseline(value: DominantBaselineProperty): Self = StObject.set(x, "dominantBaseline", value.asInstanceOf[js.Any])
+    inline def setDominantBaseline(value: DominantBaseline): Self = StObject.set(x, "dominantBaseline", value.asInstanceOf[js.Any])
     
     inline def setDominantBaselineUndefined: Self = StObject.set(x, "dominantBaseline", js.undefined)
     
-    inline def setEmptyCells(value: EmptyCellsProperty): Self = StObject.set(x, "emptyCells", value.asInstanceOf[js.Any])
+    inline def setEmptyCells(value: EmptyCells): Self = StObject.set(x, "emptyCells", value.asInstanceOf[js.Any])
     
     inline def setEmptyCellsUndefined: Self = StObject.set(x, "emptyCells", js.undefined)
     
-    inline def setFill(value: FillProperty): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: Fill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    inline def setFillOpacity(value: GlobalsNumber): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    inline def setFillOpacity(value: FillOpacity): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
     inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
-    inline def setFillRule(value: FillRuleProperty): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
+    inline def setFillRule(value: FillRule): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
     
     inline def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
     
     inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    inline def setFilter(value: FilterProperty): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setFlex(value: FlexProperty[Double | String]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    inline def setFlex(value: Flex[Double | String]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
-    inline def setFlexBasis(value: FlexBasisProperty[Double | String]): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
+    inline def setFlexBasis(value: FlexBasis[Double | String]): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
     
     inline def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
     
-    inline def setFlexDirection(value: FlexDirectionProperty): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+    inline def setFlexDirection(value: FlexDirection): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
     inline def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
     
-    inline def setFlexFlow(value: FlexFlowProperty): Self = StObject.set(x, "flexFlow", value.asInstanceOf[js.Any])
+    inline def setFlexFlow(value: FlexFlow): Self = StObject.set(x, "flexFlow", value.asInstanceOf[js.Any])
     
     inline def setFlexFlowUndefined: Self = StObject.set(x, "flexFlow", js.undefined)
     
-    inline def setFlexGrow(value: GlobalsNumber): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
+    inline def setFlexGrow(value: FlexGrow): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     
     inline def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
     
-    inline def setFlexShrink(value: GlobalsNumber): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
+    inline def setFlexShrink(value: FlexShrink): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
     
     inline def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
     
     inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
-    inline def setFlexWrap(value: FlexWrapProperty): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
+    inline def setFlexWrap(value: FlexWrap): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
     
     inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
     
-    inline def setFloat(value: FloatProperty): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+    inline def setFloat(value: Float): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
     
     inline def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
     
-    inline def setFloodColor(value: FloodColorProperty): Self = StObject.set(x, "floodColor", value.asInstanceOf[js.Any])
+    inline def setFloodColor(value: FloodColor): Self = StObject.set(x, "floodColor", value.asInstanceOf[js.Any])
     
     inline def setFloodColorUndefined: Self = StObject.set(x, "floodColor", js.undefined)
     
-    inline def setFloodOpacity(value: GlobalsNumber): Self = StObject.set(x, "floodOpacity", value.asInstanceOf[js.Any])
+    inline def setFloodOpacity(value: FloodOpacity): Self = StObject.set(x, "floodOpacity", value.asInstanceOf[js.Any])
     
     inline def setFloodOpacityUndefined: Self = StObject.set(x, "floodOpacity", js.undefined)
     
-    inline def setFont(value: FontProperty): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    inline def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: FontFamily): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
-    inline def setFontFeatureSettings(value: FontFeatureSettingsProperty): Self = StObject.set(x, "fontFeatureSettings", value.asInstanceOf[js.Any])
+    inline def setFontFeatureSettings(value: FontFeatureSettings): Self = StObject.set(x, "fontFeatureSettings", value.asInstanceOf[js.Any])
     
     inline def setFontFeatureSettingsUndefined: Self = StObject.set(x, "fontFeatureSettings", js.undefined)
     
-    inline def setFontKerning(value: FontKerningProperty): Self = StObject.set(x, "fontKerning", value.asInstanceOf[js.Any])
+    inline def setFontKerning(value: FontKerning): Self = StObject.set(x, "fontKerning", value.asInstanceOf[js.Any])
     
     inline def setFontKerningUndefined: Self = StObject.set(x, "fontKerning", js.undefined)
     
-    inline def setFontLanguageOverride(value: FontLanguageOverrideProperty): Self = StObject.set(x, "fontLanguageOverride", value.asInstanceOf[js.Any])
+    inline def setFontLanguageOverride(value: FontLanguageOverride): Self = StObject.set(x, "fontLanguageOverride", value.asInstanceOf[js.Any])
     
     inline def setFontLanguageOverrideUndefined: Self = StObject.set(x, "fontLanguageOverride", js.undefined)
     
-    inline def setFontOpticalSizing(value: FontOpticalSizingProperty): Self = StObject.set(x, "fontOpticalSizing", value.asInstanceOf[js.Any])
+    inline def setFontOpticalSizing(value: FontOpticalSizing): Self = StObject.set(x, "fontOpticalSizing", value.asInstanceOf[js.Any])
     
     inline def setFontOpticalSizingUndefined: Self = StObject.set(x, "fontOpticalSizing", js.undefined)
     
-    inline def setFontSize(value: FontSizeProperty[Double | String]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: FontSize[Double | String]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    inline def setFontSizeAdjust(value: FontSizeAdjustProperty): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
+    inline def setFontSizeAdjust(value: FontSizeAdjust): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
     
     inline def setFontSizeAdjustUndefined: Self = StObject.set(x, "fontSizeAdjust", js.undefined)
     
     inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    inline def setFontSmooth(value: FontSmoothProperty[Double | String]): Self = StObject.set(x, "fontSmooth", value.asInstanceOf[js.Any])
+    inline def setFontSmooth(value: FontSmooth[Double | String]): Self = StObject.set(x, "fontSmooth", value.asInstanceOf[js.Any])
     
     inline def setFontSmoothUndefined: Self = StObject.set(x, "fontSmooth", js.undefined)
     
-    inline def setFontStretch(value: FontStretchProperty): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
+    inline def setFontStretch(value: FontStretch): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
     
     inline def setFontStretchUndefined: Self = StObject.set(x, "fontStretch", js.undefined)
     
-    inline def setFontStyle(value: FontStyleProperty): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    inline def setFontStyle(value: FontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
-    inline def setFontSynthesis(value: FontSynthesisProperty): Self = StObject.set(x, "fontSynthesis", value.asInstanceOf[js.Any])
+    inline def setFontSynthesis(value: FontSynthesis): Self = StObject.set(x, "fontSynthesis", value.asInstanceOf[js.Any])
     
     inline def setFontSynthesisUndefined: Self = StObject.set(x, "fontSynthesis", js.undefined)
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    inline def setFontVariant(value: FontVariantProperty): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
+    inline def setFontVariant(value: FontVariant): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
     
-    inline def setFontVariantCaps(value: FontVariantCapsProperty): Self = StObject.set(x, "fontVariantCaps", value.asInstanceOf[js.Any])
+    inline def setFontVariantAlternates(value: FontVariantAlternates): Self = StObject.set(x, "fontVariantAlternates", value.asInstanceOf[js.Any])
+    
+    inline def setFontVariantAlternatesUndefined: Self = StObject.set(x, "fontVariantAlternates", js.undefined)
+    
+    inline def setFontVariantCaps(value: FontVariantCaps): Self = StObject.set(x, "fontVariantCaps", value.asInstanceOf[js.Any])
     
     inline def setFontVariantCapsUndefined: Self = StObject.set(x, "fontVariantCaps", js.undefined)
     
-    inline def setFontVariantEastAsian(value: FontVariantEastAsianProperty): Self = StObject.set(x, "fontVariantEastAsian", value.asInstanceOf[js.Any])
+    inline def setFontVariantEastAsian(value: FontVariantEastAsian): Self = StObject.set(x, "fontVariantEastAsian", value.asInstanceOf[js.Any])
     
     inline def setFontVariantEastAsianUndefined: Self = StObject.set(x, "fontVariantEastAsian", js.undefined)
     
-    inline def setFontVariantLigatures(value: FontVariantLigaturesProperty): Self = StObject.set(x, "fontVariantLigatures", value.asInstanceOf[js.Any])
+    inline def setFontVariantLigatures(value: FontVariantLigatures): Self = StObject.set(x, "fontVariantLigatures", value.asInstanceOf[js.Any])
     
     inline def setFontVariantLigaturesUndefined: Self = StObject.set(x, "fontVariantLigatures", js.undefined)
     
-    inline def setFontVariantNumeric(value: FontVariantNumericProperty): Self = StObject.set(x, "fontVariantNumeric", value.asInstanceOf[js.Any])
+    inline def setFontVariantNumeric(value: FontVariantNumeric): Self = StObject.set(x, "fontVariantNumeric", value.asInstanceOf[js.Any])
     
     inline def setFontVariantNumericUndefined: Self = StObject.set(x, "fontVariantNumeric", js.undefined)
     
-    inline def setFontVariantPosition(value: FontVariantPositionProperty): Self = StObject.set(x, "fontVariantPosition", value.asInstanceOf[js.Any])
+    inline def setFontVariantPosition(value: FontVariantPosition): Self = StObject.set(x, "fontVariantPosition", value.asInstanceOf[js.Any])
     
     inline def setFontVariantPositionUndefined: Self = StObject.set(x, "fontVariantPosition", js.undefined)
     
     inline def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
     
-    inline def setFontVariationSettings(value: FontVariationSettingsProperty): Self = StObject.set(x, "fontVariationSettings", value.asInstanceOf[js.Any])
+    inline def setFontVariationSettings(value: FontVariationSettings): Self = StObject.set(x, "fontVariationSettings", value.asInstanceOf[js.Any])
     
     inline def setFontVariationSettingsUndefined: Self = StObject.set(x, "fontVariationSettings", js.undefined)
     
-    inline def setFontWeight(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | String
-    ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: FontWeight | String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setGap(value: GapProperty[Double | String]): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setForcedColorAdjust(value: ForcedColorAdjust): Self = StObject.set(x, "forcedColorAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setForcedColorAdjustUndefined: Self = StObject.set(x, "forcedColorAdjust", js.undefined)
+    
+    inline def setGap(value: Gap[Double | String]): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
     inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    inline def setGlyphOrientationVertical(value: GlyphOrientationVerticalProperty): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
+    inline def setGlyphOrientationVertical(value: GlyphOrientationVertical): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
     
     inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
     
-    inline def setGrid(value: GridProperty): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: Grid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    inline def setGridArea(value: GridAreaProperty): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
+    inline def setGridArea(value: GridArea): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
     
     inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
     
-    inline def setGridAutoColumns(value: GridAutoColumnsProperty[Double | String]): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
+    inline def setGridAutoColumns(value: GridAutoColumns[Double | String]): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
     
     inline def setGridAutoColumnsUndefined: Self = StObject.set(x, "gridAutoColumns", js.undefined)
     
-    inline def setGridAutoFlow(value: GridAutoFlowProperty): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
+    inline def setGridAutoFlow(value: GridAutoFlow): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
     
     inline def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
     
-    inline def setGridAutoRows(value: GridAutoRowsProperty[Double | String]): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])
+    inline def setGridAutoRows(value: GridAutoRows[Double | String]): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])
     
     inline def setGridAutoRowsUndefined: Self = StObject.set(x, "gridAutoRows", js.undefined)
     
-    inline def setGridColumn(value: GridColumnProperty): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
+    inline def setGridColumn(value: GridColumn): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
     
-    inline def setGridColumnEnd(value: GridColumnEndProperty): Self = StObject.set(x, "gridColumnEnd", value.asInstanceOf[js.Any])
+    inline def setGridColumnEnd(value: GridColumnEnd): Self = StObject.set(x, "gridColumnEnd", value.asInstanceOf[js.Any])
     
     inline def setGridColumnEndUndefined: Self = StObject.set(x, "gridColumnEnd", js.undefined)
     
-    inline def setGridColumnStart(value: GridColumnStartProperty): Self = StObject.set(x, "gridColumnStart", value.asInstanceOf[js.Any])
+    inline def setGridColumnStart(value: GridColumnStart): Self = StObject.set(x, "gridColumnStart", value.asInstanceOf[js.Any])
     
     inline def setGridColumnStartUndefined: Self = StObject.set(x, "gridColumnStart", js.undefined)
     
     inline def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
     
-    inline def setGridRow(value: GridRowProperty): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
+    inline def setGridRow(value: GridRow): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
     
-    inline def setGridRowEnd(value: GridRowEndProperty): Self = StObject.set(x, "gridRowEnd", value.asInstanceOf[js.Any])
+    inline def setGridRowEnd(value: GridRowEnd): Self = StObject.set(x, "gridRowEnd", value.asInstanceOf[js.Any])
     
     inline def setGridRowEndUndefined: Self = StObject.set(x, "gridRowEnd", js.undefined)
     
-    inline def setGridRowStart(value: GridRowStartProperty): Self = StObject.set(x, "gridRowStart", value.asInstanceOf[js.Any])
+    inline def setGridRowStart(value: GridRowStart): Self = StObject.set(x, "gridRowStart", value.asInstanceOf[js.Any])
     
     inline def setGridRowStartUndefined: Self = StObject.set(x, "gridRowStart", js.undefined)
     
     inline def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
     
-    inline def setGridTemplate(value: GridTemplateProperty): Self = StObject.set(x, "gridTemplate", value.asInstanceOf[js.Any])
+    inline def setGridTemplate(value: GridTemplate): Self = StObject.set(x, "gridTemplate", value.asInstanceOf[js.Any])
     
-    inline def setGridTemplateAreas(value: GridTemplateAreasProperty): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
+    inline def setGridTemplateAreas(value: GridTemplateAreas): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
     
     inline def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
     
-    inline def setGridTemplateColumns(value: GridTemplateColumnsProperty[Double | String]): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
+    inline def setGridTemplateColumns(value: GridTemplateColumns[Double | String]): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
     
     inline def setGridTemplateColumnsUndefined: Self = StObject.set(x, "gridTemplateColumns", js.undefined)
     
-    inline def setGridTemplateRows(value: GridTemplateRowsProperty[Double | String]): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
+    inline def setGridTemplateRows(value: GridTemplateRows[Double | String]): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
     
     inline def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
     
@@ -2347,59 +3021,67 @@ object AllSystemCSSProperties {
     
     inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    inline def setHangingPunctuation(value: HangingPunctuationProperty): Self = StObject.set(x, "hangingPunctuation", value.asInstanceOf[js.Any])
+    inline def setHangingPunctuation(value: HangingPunctuation): Self = StObject.set(x, "hangingPunctuation", value.asInstanceOf[js.Any])
     
     inline def setHangingPunctuationUndefined: Self = StObject.set(x, "hangingPunctuation", js.undefined)
     
-    inline def setHeight(value: HeightProperty[Double | String]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Height[Double | String]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHyphens(value: HyphensProperty): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
+    inline def setHyphenateCharacter(value: HyphenateCharacter): Self = StObject.set(x, "hyphenateCharacter", value.asInstanceOf[js.Any])
+    
+    inline def setHyphenateCharacterUndefined: Self = StObject.set(x, "hyphenateCharacter", js.undefined)
+    
+    inline def setHyphens(value: Hyphens): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
     
     inline def setHyphensUndefined: Self = StObject.set(x, "hyphens", js.undefined)
     
-    inline def setImageOrientation(value: ImageOrientationProperty): Self = StObject.set(x, "imageOrientation", value.asInstanceOf[js.Any])
+    inline def setImageOrientation(value: ImageOrientation): Self = StObject.set(x, "imageOrientation", value.asInstanceOf[js.Any])
     
     inline def setImageOrientationUndefined: Self = StObject.set(x, "imageOrientation", js.undefined)
     
-    inline def setImageRendering(value: ImageRenderingProperty): Self = StObject.set(x, "imageRendering", value.asInstanceOf[js.Any])
+    inline def setImageRendering(value: ImageRendering): Self = StObject.set(x, "imageRendering", value.asInstanceOf[js.Any])
     
     inline def setImageRenderingUndefined: Self = StObject.set(x, "imageRendering", js.undefined)
     
-    inline def setImageResolution(value: ImageResolutionProperty): Self = StObject.set(x, "imageResolution", value.asInstanceOf[js.Any])
+    inline def setImageResolution(value: ImageResolution): Self = StObject.set(x, "imageResolution", value.asInstanceOf[js.Any])
     
     inline def setImageResolutionUndefined: Self = StObject.set(x, "imageResolution", js.undefined)
     
-    inline def setInitialLetter(value: InitialLetterProperty): Self = StObject.set(x, "initialLetter", value.asInstanceOf[js.Any])
+    inline def setInitialLetter(value: InitialLetter): Self = StObject.set(x, "initialLetter", value.asInstanceOf[js.Any])
     
     inline def setInitialLetterUndefined: Self = StObject.set(x, "initialLetter", js.undefined)
     
-    inline def setInlineSize(value: InlineSizeProperty[Double | String]): Self = StObject.set(x, "inlineSize", value.asInstanceOf[js.Any])
+    inline def setInlineSize(value: InlineSize[Double | String]): Self = StObject.set(x, "inlineSize", value.asInstanceOf[js.Any])
     
     inline def setInlineSizeUndefined: Self = StObject.set(x, "inlineSize", js.undefined)
     
-    inline def setInset(value: InsetProperty[Double | String]): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInputSecurity(value: InputSecurity): Self = StObject.set(x, "inputSecurity", value.asInstanceOf[js.Any])
     
-    inline def setInsetBlock(value: InsetBlockProperty[Double | String]): Self = StObject.set(x, "insetBlock", value.asInstanceOf[js.Any])
+    inline def setInputSecurityUndefined: Self = StObject.set(x, "inputSecurity", js.undefined)
     
-    inline def setInsetBlockEnd(value: InsetBlockEndProperty[Double | String]): Self = StObject.set(x, "insetBlockEnd", value.asInstanceOf[js.Any])
+    inline def setInset(value: Inset[Double | String]): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    
+    inline def setInsetBlock(value: InsetBlock[Double | String]): Self = StObject.set(x, "insetBlock", value.asInstanceOf[js.Any])
+    
+    inline def setInsetBlockEnd(value: InsetBlockEnd[Double | String]): Self = StObject.set(x, "insetBlockEnd", value.asInstanceOf[js.Any])
     
     inline def setInsetBlockEndUndefined: Self = StObject.set(x, "insetBlockEnd", js.undefined)
     
-    inline def setInsetBlockStart(value: InsetBlockStartProperty[Double | String]): Self = StObject.set(x, "insetBlockStart", value.asInstanceOf[js.Any])
+    inline def setInsetBlockStart(value: InsetBlockStart[Double | String]): Self = StObject.set(x, "insetBlockStart", value.asInstanceOf[js.Any])
     
     inline def setInsetBlockStartUndefined: Self = StObject.set(x, "insetBlockStart", js.undefined)
     
     inline def setInsetBlockUndefined: Self = StObject.set(x, "insetBlock", js.undefined)
     
-    inline def setInsetInline(value: InsetInlineProperty[Double | String]): Self = StObject.set(x, "insetInline", value.asInstanceOf[js.Any])
+    inline def setInsetInline(value: InsetInline[Double | String]): Self = StObject.set(x, "insetInline", value.asInstanceOf[js.Any])
     
-    inline def setInsetInlineEnd(value: InsetInlineEndProperty[Double | String]): Self = StObject.set(x, "insetInlineEnd", value.asInstanceOf[js.Any])
+    inline def setInsetInlineEnd(value: InsetInlineEnd[Double | String]): Self = StObject.set(x, "insetInlineEnd", value.asInstanceOf[js.Any])
     
     inline def setInsetInlineEndUndefined: Self = StObject.set(x, "insetInlineEnd", js.undefined)
     
-    inline def setInsetInlineStart(value: InsetInlineStartProperty[Double | String]): Self = StObject.set(x, "insetInlineStart", value.asInstanceOf[js.Any])
+    inline def setInsetInlineStart(value: InsetInlineStart[Double | String]): Self = StObject.set(x, "insetInlineStart", value.asInstanceOf[js.Any])
     
     inline def setInsetInlineStartUndefined: Self = StObject.set(x, "insetInlineStart", js.undefined)
     
@@ -2407,1023 +3089,2061 @@ object AllSystemCSSProperties {
     
     inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
-    inline def setIsolation(value: IsolationProperty): Self = StObject.set(x, "isolation", value.asInstanceOf[js.Any])
+    inline def setIsolation(value: Isolation): Self = StObject.set(x, "isolation", value.asInstanceOf[js.Any])
     
     inline def setIsolationUndefined: Self = StObject.set(x, "isolation", js.undefined)
     
-    inline def setJustifyContent(value: JustifyContentProperty): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+    inline def setJustifyContent(value: JustifyContent): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
     
     inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
     
-    inline def setJustifyItems(value: JustifyItemsProperty): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
+    inline def setJustifyItems(value: JustifyItems): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
     
     inline def setJustifyItemsUndefined: Self = StObject.set(x, "justifyItems", js.undefined)
     
-    inline def setJustifySelf(value: JustifySelfProperty): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
+    inline def setJustifySelf(value: JustifySelf): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
     
     inline def setJustifySelfUndefined: Self = StObject.set(x, "justifySelf", js.undefined)
     
-    inline def setJustifyTracks(value: JustifyTracksProperty): Self = StObject.set(x, "justifyTracks", value.asInstanceOf[js.Any])
+    inline def setJustifyTracks(value: JustifyTracks): Self = StObject.set(x, "justifyTracks", value.asInstanceOf[js.Any])
     
     inline def setJustifyTracksUndefined: Self = StObject.set(x, "justifyTracks", js.undefined)
     
-    inline def setLeft(value: LeftProperty[Double | String]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Left[Double | String]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    inline def setLetterSpacing(value: LetterSpacingProperty[Double | String]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    inline def setLetterSpacing(value: LetterSpacing[Double | String]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
     inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
-    inline def setLightingColor(value: LightingColorProperty): Self = StObject.set(x, "lightingColor", value.asInstanceOf[js.Any])
+    inline def setLightingColor(value: LightingColor): Self = StObject.set(x, "lightingColor", value.asInstanceOf[js.Any])
     
     inline def setLightingColorUndefined: Self = StObject.set(x, "lightingColor", js.undefined)
     
-    inline def setLineBreak(value: LineBreakProperty): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
+    inline def setLineBreak(value: LineBreak): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
     
     inline def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
     
-    inline def setLineClamp(value: LineClampProperty): Self = StObject.set(x, "lineClamp", value.asInstanceOf[js.Any])
+    inline def setLineClamp(value: LineClamp): Self = StObject.set(x, "lineClamp", value.asInstanceOf[js.Any])
     
     inline def setLineClampUndefined: Self = StObject.set(x, "lineClamp", js.undefined)
     
-    inline def setLineHeight(value: LineHeightProperty[Double | String]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: LineHeight[Double | String]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    inline def setLineHeightStep(value: LineHeightStepProperty[Double | String]): Self = StObject.set(x, "lineHeightStep", value.asInstanceOf[js.Any])
+    inline def setLineHeightStep(value: LineHeightStep[Double | String]): Self = StObject.set(x, "lineHeightStep", value.asInstanceOf[js.Any])
     
     inline def setLineHeightStepUndefined: Self = StObject.set(x, "lineHeightStep", js.undefined)
     
     inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    inline def setListStyle(value: ListStyleProperty): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
+    inline def setListStyle(value: ListStyle): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
     
-    inline def setListStyleImage(value: ListStyleImageProperty): Self = StObject.set(x, "listStyleImage", value.asInstanceOf[js.Any])
+    inline def setListStyleImage(value: ListStyleImage): Self = StObject.set(x, "listStyleImage", value.asInstanceOf[js.Any])
     
     inline def setListStyleImageUndefined: Self = StObject.set(x, "listStyleImage", js.undefined)
     
-    inline def setListStylePosition(value: ListStylePositionProperty): Self = StObject.set(x, "listStylePosition", value.asInstanceOf[js.Any])
+    inline def setListStylePosition(value: ListStylePosition): Self = StObject.set(x, "listStylePosition", value.asInstanceOf[js.Any])
     
     inline def setListStylePositionUndefined: Self = StObject.set(x, "listStylePosition", js.undefined)
     
-    inline def setListStyleType(value: ListStyleTypeProperty): Self = StObject.set(x, "listStyleType", value.asInstanceOf[js.Any])
+    inline def setListStyleType(value: ListStyleType): Self = StObject.set(x, "listStyleType", value.asInstanceOf[js.Any])
     
     inline def setListStyleTypeUndefined: Self = StObject.set(x, "listStyleType", js.undefined)
     
     inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
     
-    inline def setM(value: (MarginProperty[Double | String]) | (js.Array[MarginProperty[Double | String]])): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+    inline def setM(value: (Margin[Double | String]) | (js.Array[NonNullable[js.UndefOr[Margin[Double | String]]]])): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
     inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
     
-    inline def setMVarargs(value: (MarginProperty[Double | String])*): Self = StObject.set(x, "m", js.Array(value :_*))
+    inline def setMVarargs(value: (NonNullable[js.UndefOr[Margin[Double | String]]])*): Self = StObject.set(x, "m", js.Array(value*))
     
-    inline def setMargin(value: MarginProperty[Double | String]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Margin[Double | String]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    inline def setMarginBlock(value: MarginBlockProperty[Double | String]): Self = StObject.set(x, "marginBlock", value.asInstanceOf[js.Any])
+    inline def setMarginBlock(value: MarginBlock[Double | String]): Self = StObject.set(x, "marginBlock", value.asInstanceOf[js.Any])
     
-    inline def setMarginBlockEnd(value: MarginBlockEndProperty[Double | String]): Self = StObject.set(x, "marginBlockEnd", value.asInstanceOf[js.Any])
+    inline def setMarginBlockEnd(value: MarginBlockEnd[Double | String]): Self = StObject.set(x, "marginBlockEnd", value.asInstanceOf[js.Any])
     
     inline def setMarginBlockEndUndefined: Self = StObject.set(x, "marginBlockEnd", js.undefined)
     
-    inline def setMarginBlockStart(value: MarginBlockStartProperty[Double | String]): Self = StObject.set(x, "marginBlockStart", value.asInstanceOf[js.Any])
+    inline def setMarginBlockStart(value: MarginBlockStart[Double | String]): Self = StObject.set(x, "marginBlockStart", value.asInstanceOf[js.Any])
     
     inline def setMarginBlockStartUndefined: Self = StObject.set(x, "marginBlockStart", js.undefined)
     
     inline def setMarginBlockUndefined: Self = StObject.set(x, "marginBlock", js.undefined)
     
-    inline def setMarginBottom(value: MarginBottomProperty[Double | String]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+    inline def setMarginBottom(value: MarginBottom[Double | String]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
-    inline def setMarginInline(value: MarginInlineProperty[Double | String]): Self = StObject.set(x, "marginInline", value.asInstanceOf[js.Any])
+    inline def setMarginInline(value: MarginInline[Double | String]): Self = StObject.set(x, "marginInline", value.asInstanceOf[js.Any])
     
-    inline def setMarginInlineEnd(value: MarginInlineEndProperty[Double | String]): Self = StObject.set(x, "marginInlineEnd", value.asInstanceOf[js.Any])
+    inline def setMarginInlineEnd(value: MarginInlineEnd[Double | String]): Self = StObject.set(x, "marginInlineEnd", value.asInstanceOf[js.Any])
     
     inline def setMarginInlineEndUndefined: Self = StObject.set(x, "marginInlineEnd", js.undefined)
     
-    inline def setMarginInlineStart(value: MarginInlineStartProperty[Double | String]): Self = StObject.set(x, "marginInlineStart", value.asInstanceOf[js.Any])
+    inline def setMarginInlineStart(value: MarginInlineStart[Double | String]): Self = StObject.set(x, "marginInlineStart", value.asInstanceOf[js.Any])
     
     inline def setMarginInlineStartUndefined: Self = StObject.set(x, "marginInlineStart", js.undefined)
     
     inline def setMarginInlineUndefined: Self = StObject.set(x, "marginInline", js.undefined)
     
-    inline def setMarginLeft(value: MarginLeftProperty[Double | String]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: MarginLeft[Double | String]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
-    inline def setMarginRight(value: MarginRightProperty[Double | String]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+    inline def setMarginRight(value: MarginRight[Double | String]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
     inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
-    inline def setMarginTop(value: MarginTopProperty[Double | String]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: MarginTop[Double | String]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setMarginX(value: (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
+    inline def setMarginX(
+      value: (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
+    ): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
     
     inline def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
     
-    inline def setMarginXVarargs(value: (MarginLeftProperty[Double | String])*): Self = StObject.set(x, "marginX", js.Array(value :_*))
+    inline def setMarginXVarargs(value: (NonNullable[js.UndefOr[MarginLeft[Double | String]]])*): Self = StObject.set(x, "marginX", js.Array(value*))
     
-    inline def setMarginY(value: (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
+    inline def setMarginY(
+      value: (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
+    ): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
     
     inline def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
     
-    inline def setMarginYVarargs(value: (MarginTopProperty[Double | String])*): Self = StObject.set(x, "marginY", js.Array(value :_*))
+    inline def setMarginYVarargs(value: (NonNullable[js.UndefOr[MarginTop[Double | String]]])*): Self = StObject.set(x, "marginY", js.Array(value*))
     
-    inline def setMarker(value: MarkerProperty): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    inline def setMarkerEnd(value: MarkerEndProperty): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
+    inline def setMarkerEnd(value: MarkerEnd): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
     
     inline def setMarkerEndUndefined: Self = StObject.set(x, "markerEnd", js.undefined)
     
-    inline def setMarkerMid(value: MarkerMidProperty): Self = StObject.set(x, "markerMid", value.asInstanceOf[js.Any])
+    inline def setMarkerMid(value: MarkerMid): Self = StObject.set(x, "markerMid", value.asInstanceOf[js.Any])
     
     inline def setMarkerMidUndefined: Self = StObject.set(x, "markerMid", js.undefined)
     
-    inline def setMarkerStart(value: MarkerStartProperty): Self = StObject.set(x, "markerStart", value.asInstanceOf[js.Any])
+    inline def setMarkerStart(value: MarkerStart): Self = StObject.set(x, "markerStart", value.asInstanceOf[js.Any])
     
     inline def setMarkerStartUndefined: Self = StObject.set(x, "markerStart", js.undefined)
     
     inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    inline def setMask(value: MaskProperty[Double | String]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: Mask[Double | String]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    inline def setMaskBorder(value: MaskBorderProperty): Self = StObject.set(x, "maskBorder", value.asInstanceOf[js.Any])
+    inline def setMaskBorder(value: MaskBorder): Self = StObject.set(x, "maskBorder", value.asInstanceOf[js.Any])
     
-    inline def setMaskBorderMode(value: MaskBorderModeProperty): Self = StObject.set(x, "maskBorderMode", value.asInstanceOf[js.Any])
+    inline def setMaskBorderMode(value: MaskBorderMode): Self = StObject.set(x, "maskBorderMode", value.asInstanceOf[js.Any])
     
     inline def setMaskBorderModeUndefined: Self = StObject.set(x, "maskBorderMode", js.undefined)
     
-    inline def setMaskBorderOutset(value: MaskBorderOutsetProperty[Double | String]): Self = StObject.set(x, "maskBorderOutset", value.asInstanceOf[js.Any])
+    inline def setMaskBorderOutset(value: MaskBorderOutset[Double | String]): Self = StObject.set(x, "maskBorderOutset", value.asInstanceOf[js.Any])
     
     inline def setMaskBorderOutsetUndefined: Self = StObject.set(x, "maskBorderOutset", js.undefined)
     
-    inline def setMaskBorderRepeat(value: MaskBorderRepeatProperty): Self = StObject.set(x, "maskBorderRepeat", value.asInstanceOf[js.Any])
+    inline def setMaskBorderRepeat(value: MaskBorderRepeat): Self = StObject.set(x, "maskBorderRepeat", value.asInstanceOf[js.Any])
     
     inline def setMaskBorderRepeatUndefined: Self = StObject.set(x, "maskBorderRepeat", js.undefined)
     
-    inline def setMaskBorderSlice(value: MaskBorderSliceProperty): Self = StObject.set(x, "maskBorderSlice", value.asInstanceOf[js.Any])
+    inline def setMaskBorderSlice(value: MaskBorderSlice): Self = StObject.set(x, "maskBorderSlice", value.asInstanceOf[js.Any])
     
     inline def setMaskBorderSliceUndefined: Self = StObject.set(x, "maskBorderSlice", js.undefined)
     
-    inline def setMaskBorderSource(value: MaskBorderSourceProperty): Self = StObject.set(x, "maskBorderSource", value.asInstanceOf[js.Any])
+    inline def setMaskBorderSource(value: MaskBorderSource): Self = StObject.set(x, "maskBorderSource", value.asInstanceOf[js.Any])
     
     inline def setMaskBorderSourceUndefined: Self = StObject.set(x, "maskBorderSource", js.undefined)
     
     inline def setMaskBorderUndefined: Self = StObject.set(x, "maskBorder", js.undefined)
     
-    inline def setMaskBorderWidth(value: MaskBorderWidthProperty[Double | String]): Self = StObject.set(x, "maskBorderWidth", value.asInstanceOf[js.Any])
+    inline def setMaskBorderWidth(value: MaskBorderWidth[Double | String]): Self = StObject.set(x, "maskBorderWidth", value.asInstanceOf[js.Any])
     
     inline def setMaskBorderWidthUndefined: Self = StObject.set(x, "maskBorderWidth", js.undefined)
     
-    inline def setMaskClip(value: MaskClipProperty): Self = StObject.set(x, "maskClip", value.asInstanceOf[js.Any])
+    inline def setMaskClip(value: MaskClip): Self = StObject.set(x, "maskClip", value.asInstanceOf[js.Any])
     
     inline def setMaskClipUndefined: Self = StObject.set(x, "maskClip", js.undefined)
     
-    inline def setMaskComposite(value: MaskCompositeProperty): Self = StObject.set(x, "maskComposite", value.asInstanceOf[js.Any])
+    inline def setMaskComposite(value: MaskComposite): Self = StObject.set(x, "maskComposite", value.asInstanceOf[js.Any])
     
     inline def setMaskCompositeUndefined: Self = StObject.set(x, "maskComposite", js.undefined)
     
-    inline def setMaskImage(value: MaskImageProperty): Self = StObject.set(x, "maskImage", value.asInstanceOf[js.Any])
+    inline def setMaskImage(value: MaskImage): Self = StObject.set(x, "maskImage", value.asInstanceOf[js.Any])
     
     inline def setMaskImageUndefined: Self = StObject.set(x, "maskImage", js.undefined)
     
-    inline def setMaskMode(value: MaskModeProperty): Self = StObject.set(x, "maskMode", value.asInstanceOf[js.Any])
+    inline def setMaskMode(value: MaskMode): Self = StObject.set(x, "maskMode", value.asInstanceOf[js.Any])
     
     inline def setMaskModeUndefined: Self = StObject.set(x, "maskMode", js.undefined)
     
-    inline def setMaskOrigin(value: MaskOriginProperty): Self = StObject.set(x, "maskOrigin", value.asInstanceOf[js.Any])
+    inline def setMaskOrigin(value: MaskOrigin): Self = StObject.set(x, "maskOrigin", value.asInstanceOf[js.Any])
     
     inline def setMaskOriginUndefined: Self = StObject.set(x, "maskOrigin", js.undefined)
     
-    inline def setMaskPosition(value: MaskPositionProperty[Double | String]): Self = StObject.set(x, "maskPosition", value.asInstanceOf[js.Any])
+    inline def setMaskPosition(value: MaskPosition[Double | String]): Self = StObject.set(x, "maskPosition", value.asInstanceOf[js.Any])
     
     inline def setMaskPositionUndefined: Self = StObject.set(x, "maskPosition", js.undefined)
     
-    inline def setMaskRepeat(value: MaskRepeatProperty): Self = StObject.set(x, "maskRepeat", value.asInstanceOf[js.Any])
+    inline def setMaskRepeat(value: MaskRepeat): Self = StObject.set(x, "maskRepeat", value.asInstanceOf[js.Any])
     
     inline def setMaskRepeatUndefined: Self = StObject.set(x, "maskRepeat", js.undefined)
     
-    inline def setMaskSize(value: MaskSizeProperty[Double | String]): Self = StObject.set(x, "maskSize", value.asInstanceOf[js.Any])
+    inline def setMaskSize(value: MaskSize[Double | String]): Self = StObject.set(x, "maskSize", value.asInstanceOf[js.Any])
     
     inline def setMaskSizeUndefined: Self = StObject.set(x, "maskSize", js.undefined)
     
-    inline def setMaskType(value: MaskTypeProperty): Self = StObject.set(x, "maskType", value.asInstanceOf[js.Any])
+    inline def setMaskType(value: MaskType): Self = StObject.set(x, "maskType", value.asInstanceOf[js.Any])
     
     inline def setMaskTypeUndefined: Self = StObject.set(x, "maskType", js.undefined)
     
     inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
-    inline def setMasonryAutoFlow(value: MasonryAutoFlowProperty): Self = StObject.set(x, "masonryAutoFlow", value.asInstanceOf[js.Any])
+    inline def setMathDepth(value: MathDepth): Self = StObject.set(x, "mathDepth", value.asInstanceOf[js.Any])
     
-    inline def setMasonryAutoFlowUndefined: Self = StObject.set(x, "masonryAutoFlow", js.undefined)
+    inline def setMathDepthUndefined: Self = StObject.set(x, "mathDepth", js.undefined)
     
-    inline def setMathStyle(value: MathStyleProperty): Self = StObject.set(x, "mathStyle", value.asInstanceOf[js.Any])
+    inline def setMathShift(value: MathShift): Self = StObject.set(x, "mathShift", value.asInstanceOf[js.Any])
+    
+    inline def setMathShiftUndefined: Self = StObject.set(x, "mathShift", js.undefined)
+    
+    inline def setMathStyle(value: MathStyle): Self = StObject.set(x, "mathStyle", value.asInstanceOf[js.Any])
     
     inline def setMathStyleUndefined: Self = StObject.set(x, "mathStyle", js.undefined)
     
-    inline def setMaxBlockSize(value: MaxBlockSizeProperty[Double | String]): Self = StObject.set(x, "maxBlockSize", value.asInstanceOf[js.Any])
+    inline def setMaxBlockSize(value: MaxBlockSize[Double | String]): Self = StObject.set(x, "maxBlockSize", value.asInstanceOf[js.Any])
     
     inline def setMaxBlockSizeUndefined: Self = StObject.set(x, "maxBlockSize", js.undefined)
     
-    inline def setMaxHeight(value: MaxHeightProperty[Double | String]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: MaxHeight[Double | String]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    inline def setMaxInlineSize(value: MaxInlineSizeProperty[Double | String]): Self = StObject.set(x, "maxInlineSize", value.asInstanceOf[js.Any])
+    inline def setMaxInlineSize(value: MaxInlineSize[Double | String]): Self = StObject.set(x, "maxInlineSize", value.asInstanceOf[js.Any])
     
     inline def setMaxInlineSizeUndefined: Self = StObject.set(x, "maxInlineSize", js.undefined)
     
-    inline def setMaxLines(value: MaxLinesProperty): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
+    inline def setMaxLines(value: MaxLines): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
     
     inline def setMaxLinesUndefined: Self = StObject.set(x, "maxLines", js.undefined)
     
-    inline def setMaxWidth(value: MaxWidthProperty[Double | String]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: MaxWidth[Double | String]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    inline def setMb(value: (MarginBottomProperty[Double | String]) | (js.Array[MarginBottomProperty[Double | String]])): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+    inline def setMb(
+      value: (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
+    ): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
     
     inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
     
-    inline def setMbVarargs(value: (MarginBottomProperty[Double | String])*): Self = StObject.set(x, "mb", js.Array(value :_*))
+    inline def setMbVarargs(value: (NonNullable[js.UndefOr[MarginBottom[Double | String]]])*): Self = StObject.set(x, "mb", js.Array(value*))
     
-    inline def setMinBlockSize(value: MinBlockSizeProperty[Double | String]): Self = StObject.set(x, "minBlockSize", value.asInstanceOf[js.Any])
+    inline def setMinBlockSize(value: MinBlockSize[Double | String]): Self = StObject.set(x, "minBlockSize", value.asInstanceOf[js.Any])
     
     inline def setMinBlockSizeUndefined: Self = StObject.set(x, "minBlockSize", js.undefined)
     
-    inline def setMinHeight(value: MinHeightProperty[Double | String]): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    inline def setMinHeight(value: MinHeight[Double | String]): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
-    inline def setMinInlineSize(value: MinInlineSizeProperty[Double | String]): Self = StObject.set(x, "minInlineSize", value.asInstanceOf[js.Any])
+    inline def setMinInlineSize(value: MinInlineSize[Double | String]): Self = StObject.set(x, "minInlineSize", value.asInstanceOf[js.Any])
     
     inline def setMinInlineSizeUndefined: Self = StObject.set(x, "minInlineSize", js.undefined)
     
-    inline def setMinWidth(value: MinWidthProperty[Double | String]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: MinWidth[Double | String]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    inline def setMixBlendMode(value: MixBlendModeProperty): Self = StObject.set(x, "mixBlendMode", value.asInstanceOf[js.Any])
+    inline def setMixBlendMode(value: MixBlendMode): Self = StObject.set(x, "mixBlendMode", value.asInstanceOf[js.Any])
     
     inline def setMixBlendModeUndefined: Self = StObject.set(x, "mixBlendMode", js.undefined)
     
-    inline def setMl(value: (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
+    inline def setMl(
+      value: (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
+    ): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
     
     inline def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
     
-    inline def setMlVarargs(value: (MarginLeftProperty[Double | String])*): Self = StObject.set(x, "ml", js.Array(value :_*))
+    inline def setMlVarargs(value: (NonNullable[js.UndefOr[MarginLeft[Double | String]]])*): Self = StObject.set(x, "ml", js.Array(value*))
     
-    inline def setMotion(value: OffsetProperty[Double | String]): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
+    inline def setMotion(value: Offset[Double | String]): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
     
-    inline def setMotionDistance(value: OffsetDistanceProperty[Double | String]): Self = StObject.set(x, "motionDistance", value.asInstanceOf[js.Any])
+    inline def setMotionDistance(value: OffsetDistance[Double | String]): Self = StObject.set(x, "motionDistance", value.asInstanceOf[js.Any])
     
     inline def setMotionDistanceUndefined: Self = StObject.set(x, "motionDistance", js.undefined)
     
-    inline def setMotionPath(value: OffsetPathProperty): Self = StObject.set(x, "motionPath", value.asInstanceOf[js.Any])
+    inline def setMotionPath(value: OffsetPath): Self = StObject.set(x, "motionPath", value.asInstanceOf[js.Any])
     
     inline def setMotionPathUndefined: Self = StObject.set(x, "motionPath", js.undefined)
     
-    inline def setMotionRotation(value: OffsetRotateProperty): Self = StObject.set(x, "motionRotation", value.asInstanceOf[js.Any])
+    inline def setMotionRotation(value: OffsetRotate): Self = StObject.set(x, "motionRotation", value.asInstanceOf[js.Any])
     
     inline def setMotionRotationUndefined: Self = StObject.set(x, "motionRotation", js.undefined)
     
     inline def setMotionUndefined: Self = StObject.set(x, "motion", js.undefined)
     
-    inline def setMr(value: (MarginRightProperty[Double | String]) | (js.Array[MarginRightProperty[Double | String]])): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
+    inline def setMozAnimation(value: Animation[String]): Self = StObject.set(x, "MozAnimation", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationDelay(value: AnimationDelay[String]): Self = StObject.set(x, "MozAnimationDelay", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationDelayUndefined: Self = StObject.set(x, "MozAnimationDelay", js.undefined)
+    
+    inline def setMozAnimationDirection(value: AnimationDirection): Self = StObject.set(x, "MozAnimationDirection", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationDirectionUndefined: Self = StObject.set(x, "MozAnimationDirection", js.undefined)
+    
+    inline def setMozAnimationDuration(value: AnimationDuration[String]): Self = StObject.set(x, "MozAnimationDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationDurationUndefined: Self = StObject.set(x, "MozAnimationDuration", js.undefined)
+    
+    inline def setMozAnimationFillMode(value: AnimationFillMode): Self = StObject.set(x, "MozAnimationFillMode", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationFillModeUndefined: Self = StObject.set(x, "MozAnimationFillMode", js.undefined)
+    
+    inline def setMozAnimationIterationCount(value: AnimationIterationCount): Self = StObject.set(x, "MozAnimationIterationCount", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationIterationCountUndefined: Self = StObject.set(x, "MozAnimationIterationCount", js.undefined)
+    
+    inline def setMozAnimationName(value: AnimationName): Self = StObject.set(x, "MozAnimationName", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationNameUndefined: Self = StObject.set(x, "MozAnimationName", js.undefined)
+    
+    inline def setMozAnimationPlayState(value: AnimationPlayState): Self = StObject.set(x, "MozAnimationPlayState", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationPlayStateUndefined: Self = StObject.set(x, "MozAnimationPlayState", js.undefined)
+    
+    inline def setMozAnimationTimingFunction(value: AnimationTimingFunction): Self = StObject.set(x, "MozAnimationTimingFunction", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationTimingFunctionUndefined: Self = StObject.set(x, "MozAnimationTimingFunction", js.undefined)
+    
+    inline def setMozAnimationUndefined: Self = StObject.set(x, "MozAnimation", js.undefined)
+    
+    inline def setMozAppearance(value: MozAppearance): Self = StObject.set(x, "MozAppearance", value.asInstanceOf[js.Any])
+    
+    inline def setMozAppearanceUndefined: Self = StObject.set(x, "MozAppearance", js.undefined)
+    
+    inline def setMozBackfaceVisibility(value: BackfaceVisibility): Self = StObject.set(x, "MozBackfaceVisibility", value.asInstanceOf[js.Any])
+    
+    inline def setMozBackfaceVisibilityUndefined: Self = StObject.set(x, "MozBackfaceVisibility", js.undefined)
+    
+    inline def setMozBorderBottomColors(value: MozBorderBottomColors): Self = StObject.set(x, "MozBorderBottomColors", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderBottomColorsUndefined: Self = StObject.set(x, "MozBorderBottomColors", js.undefined)
+    
+    inline def setMozBorderEndColor(value: BorderInlineEndColor): Self = StObject.set(x, "MozBorderEndColor", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderEndColorUndefined: Self = StObject.set(x, "MozBorderEndColor", js.undefined)
+    
+    inline def setMozBorderEndStyle(value: BorderInlineEndStyle): Self = StObject.set(x, "MozBorderEndStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderEndStyleUndefined: Self = StObject.set(x, "MozBorderEndStyle", js.undefined)
+    
+    inline def setMozBorderEndWidth(value: BorderInlineEndWidth[Double | String]): Self = StObject.set(x, "MozBorderEndWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderEndWidthUndefined: Self = StObject.set(x, "MozBorderEndWidth", js.undefined)
+    
+    inline def setMozBorderImage(value: BorderImage): Self = StObject.set(x, "MozBorderImage", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderImageUndefined: Self = StObject.set(x, "MozBorderImage", js.undefined)
+    
+    inline def setMozBorderLeftColors(value: MozBorderLeftColors): Self = StObject.set(x, "MozBorderLeftColors", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderLeftColorsUndefined: Self = StObject.set(x, "MozBorderLeftColors", js.undefined)
+    
+    inline def setMozBorderRightColors(value: MozBorderRightColors): Self = StObject.set(x, "MozBorderRightColors", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderRightColorsUndefined: Self = StObject.set(x, "MozBorderRightColors", js.undefined)
+    
+    inline def setMozBorderStartColor(value: BorderInlineStartColor): Self = StObject.set(x, "MozBorderStartColor", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderStartColorUndefined: Self = StObject.set(x, "MozBorderStartColor", js.undefined)
+    
+    inline def setMozBorderStartStyle(value: BorderInlineStartStyle): Self = StObject.set(x, "MozBorderStartStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderStartStyleUndefined: Self = StObject.set(x, "MozBorderStartStyle", js.undefined)
+    
+    inline def setMozBorderTopColors(value: MozBorderTopColors): Self = StObject.set(x, "MozBorderTopColors", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderTopColorsUndefined: Self = StObject.set(x, "MozBorderTopColors", js.undefined)
+    
+    inline def setMozBoxSizing(value: BoxSizing): Self = StObject.set(x, "MozBoxSizing", value.asInstanceOf[js.Any])
+    
+    inline def setMozBoxSizingUndefined: Self = StObject.set(x, "MozBoxSizing", js.undefined)
+    
+    inline def setMozColumnCount(value: ColumnCount): Self = StObject.set(x, "MozColumnCount", value.asInstanceOf[js.Any])
+    
+    inline def setMozColumnCountUndefined: Self = StObject.set(x, "MozColumnCount", js.undefined)
+    
+    inline def setMozColumnFill(value: ColumnFill): Self = StObject.set(x, "MozColumnFill", value.asInstanceOf[js.Any])
+    
+    inline def setMozColumnFillUndefined: Self = StObject.set(x, "MozColumnFill", js.undefined)
+    
+    inline def setMozColumnRule(value: ColumnRule[Double | String]): Self = StObject.set(x, "MozColumnRule", value.asInstanceOf[js.Any])
+    
+    inline def setMozColumnRuleColor(value: ColumnRuleColor): Self = StObject.set(x, "MozColumnRuleColor", value.asInstanceOf[js.Any])
+    
+    inline def setMozColumnRuleColorUndefined: Self = StObject.set(x, "MozColumnRuleColor", js.undefined)
+    
+    inline def setMozColumnRuleStyle(value: ColumnRuleStyle): Self = StObject.set(x, "MozColumnRuleStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMozColumnRuleStyleUndefined: Self = StObject.set(x, "MozColumnRuleStyle", js.undefined)
+    
+    inline def setMozColumnRuleUndefined: Self = StObject.set(x, "MozColumnRule", js.undefined)
+    
+    inline def setMozColumnRuleWidth(value: ColumnRuleWidth[Double | String]): Self = StObject.set(x, "MozColumnRuleWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMozColumnRuleWidthUndefined: Self = StObject.set(x, "MozColumnRuleWidth", js.undefined)
+    
+    inline def setMozColumnWidth(value: ColumnWidth[Double | String]): Self = StObject.set(x, "MozColumnWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMozColumnWidthUndefined: Self = StObject.set(x, "MozColumnWidth", js.undefined)
+    
+    inline def setMozColumns(value: Columns[Double | String]): Self = StObject.set(x, "MozColumns", value.asInstanceOf[js.Any])
+    
+    inline def setMozColumnsUndefined: Self = StObject.set(x, "MozColumns", js.undefined)
+    
+    inline def setMozContextProperties(value: MozContextProperties): Self = StObject.set(x, "MozContextProperties", value.asInstanceOf[js.Any])
+    
+    inline def setMozContextPropertiesUndefined: Self = StObject.set(x, "MozContextProperties", js.undefined)
+    
+    inline def setMozFontFeatureSettings(value: FontFeatureSettings): Self = StObject.set(x, "MozFontFeatureSettings", value.asInstanceOf[js.Any])
+    
+    inline def setMozFontFeatureSettingsUndefined: Self = StObject.set(x, "MozFontFeatureSettings", js.undefined)
+    
+    inline def setMozFontLanguageOverride(value: FontLanguageOverride): Self = StObject.set(x, "MozFontLanguageOverride", value.asInstanceOf[js.Any])
+    
+    inline def setMozFontLanguageOverrideUndefined: Self = StObject.set(x, "MozFontLanguageOverride", js.undefined)
+    
+    inline def setMozHyphens(value: Hyphens): Self = StObject.set(x, "MozHyphens", value.asInstanceOf[js.Any])
+    
+    inline def setMozHyphensUndefined: Self = StObject.set(x, "MozHyphens", js.undefined)
+    
+    inline def setMozImageRegion(value: MozImageRegion): Self = StObject.set(x, "MozImageRegion", value.asInstanceOf[js.Any])
+    
+    inline def setMozImageRegionUndefined: Self = StObject.set(x, "MozImageRegion", js.undefined)
+    
+    inline def setMozMarginEnd(value: MarginInlineEnd[Double | String]): Self = StObject.set(x, "MozMarginEnd", value.asInstanceOf[js.Any])
+    
+    inline def setMozMarginEndUndefined: Self = StObject.set(x, "MozMarginEnd", js.undefined)
+    
+    inline def setMozMarginStart(value: MarginInlineStart[Double | String]): Self = StObject.set(x, "MozMarginStart", value.asInstanceOf[js.Any])
+    
+    inline def setMozMarginStartUndefined: Self = StObject.set(x, "MozMarginStart", js.undefined)
+    
+    inline def setMozOrient(value: MozOrient): Self = StObject.set(x, "MozOrient", value.asInstanceOf[js.Any])
+    
+    inline def setMozOrientUndefined: Self = StObject.set(x, "MozOrient", js.undefined)
+    
+    inline def setMozOsxFontSmoothing(value: FontSmooth[Double | String]): Self = StObject.set(x, "MozOsxFontSmoothing", value.asInstanceOf[js.Any])
+    
+    inline def setMozOsxFontSmoothingUndefined: Self = StObject.set(x, "MozOsxFontSmoothing", js.undefined)
+    
+    inline def setMozPaddingEnd(value: PaddingInlineEnd[Double | String]): Self = StObject.set(x, "MozPaddingEnd", value.asInstanceOf[js.Any])
+    
+    inline def setMozPaddingEndUndefined: Self = StObject.set(x, "MozPaddingEnd", js.undefined)
+    
+    inline def setMozPaddingStart(value: PaddingInlineStart[Double | String]): Self = StObject.set(x, "MozPaddingStart", value.asInstanceOf[js.Any])
+    
+    inline def setMozPaddingStartUndefined: Self = StObject.set(x, "MozPaddingStart", js.undefined)
+    
+    inline def setMozPerspective(value: Perspective[Double | String]): Self = StObject.set(x, "MozPerspective", value.asInstanceOf[js.Any])
+    
+    inline def setMozPerspectiveOrigin(value: PerspectiveOrigin[Double | String]): Self = StObject.set(x, "MozPerspectiveOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setMozPerspectiveOriginUndefined: Self = StObject.set(x, "MozPerspectiveOrigin", js.undefined)
+    
+    inline def setMozPerspectiveUndefined: Self = StObject.set(x, "MozPerspective", js.undefined)
+    
+    inline def setMozStackSizing(value: MozStackSizing): Self = StObject.set(x, "MozStackSizing", value.asInstanceOf[js.Any])
+    
+    inline def setMozStackSizingUndefined: Self = StObject.set(x, "MozStackSizing", js.undefined)
+    
+    inline def setMozTabSize(value: TabSize[Double | String]): Self = StObject.set(x, "MozTabSize", value.asInstanceOf[js.Any])
+    
+    inline def setMozTabSizeUndefined: Self = StObject.set(x, "MozTabSize", js.undefined)
+    
+    inline def setMozTextBlink(value: MozTextBlink): Self = StObject.set(x, "MozTextBlink", value.asInstanceOf[js.Any])
+    
+    inline def setMozTextBlinkUndefined: Self = StObject.set(x, "MozTextBlink", js.undefined)
+    
+    inline def setMozTextSizeAdjust(value: TextSizeAdjust): Self = StObject.set(x, "MozTextSizeAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setMozTextSizeAdjustUndefined: Self = StObject.set(x, "MozTextSizeAdjust", js.undefined)
+    
+    inline def setMozTransformOrigin(value: TransformOrigin[Double | String]): Self = StObject.set(x, "MozTransformOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setMozTransformOriginUndefined: Self = StObject.set(x, "MozTransformOrigin", js.undefined)
+    
+    inline def setMozTransformStyle(value: TransformStyle): Self = StObject.set(x, "MozTransformStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMozTransformStyleUndefined: Self = StObject.set(x, "MozTransformStyle", js.undefined)
+    
+    inline def setMozTransition(value: Transition[String]): Self = StObject.set(x, "MozTransition", value.asInstanceOf[js.Any])
+    
+    inline def setMozTransitionDelay(value: TransitionDelay[String]): Self = StObject.set(x, "MozTransitionDelay", value.asInstanceOf[js.Any])
+    
+    inline def setMozTransitionDelayUndefined: Self = StObject.set(x, "MozTransitionDelay", js.undefined)
+    
+    inline def setMozTransitionDuration(value: TransitionDuration[String]): Self = StObject.set(x, "MozTransitionDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMozTransitionDurationUndefined: Self = StObject.set(x, "MozTransitionDuration", js.undefined)
+    
+    inline def setMozTransitionProperty(value: TransitionProperty): Self = StObject.set(x, "MozTransitionProperty", value.asInstanceOf[js.Any])
+    
+    inline def setMozTransitionPropertyUndefined: Self = StObject.set(x, "MozTransitionProperty", js.undefined)
+    
+    inline def setMozTransitionTimingFunction(value: TransitionTimingFunction): Self = StObject.set(x, "MozTransitionTimingFunction", value.asInstanceOf[js.Any])
+    
+    inline def setMozTransitionTimingFunctionUndefined: Self = StObject.set(x, "MozTransitionTimingFunction", js.undefined)
+    
+    inline def setMozTransitionUndefined: Self = StObject.set(x, "MozTransition", js.undefined)
+    
+    inline def setMozUserFocus(value: MozUserFocus): Self = StObject.set(x, "MozUserFocus", value.asInstanceOf[js.Any])
+    
+    inline def setMozUserFocusUndefined: Self = StObject.set(x, "MozUserFocus", js.undefined)
+    
+    inline def setMozUserModify(value: MozUserModify): Self = StObject.set(x, "MozUserModify", value.asInstanceOf[js.Any])
+    
+    inline def setMozUserModifyUndefined: Self = StObject.set(x, "MozUserModify", js.undefined)
+    
+    inline def setMozUserSelect(value: UserSelect): Self = StObject.set(x, "MozUserSelect", value.asInstanceOf[js.Any])
+    
+    inline def setMozUserSelectUndefined: Self = StObject.set(x, "MozUserSelect", js.undefined)
+    
+    inline def setMozWindowDragging(value: MozWindowDragging): Self = StObject.set(x, "MozWindowDragging", value.asInstanceOf[js.Any])
+    
+    inline def setMozWindowDraggingUndefined: Self = StObject.set(x, "MozWindowDragging", js.undefined)
+    
+    inline def setMozWindowShadow(value: MozWindowShadow): Self = StObject.set(x, "MozWindowShadow", value.asInstanceOf[js.Any])
+    
+    inline def setMozWindowShadowUndefined: Self = StObject.set(x, "MozWindowShadow", js.undefined)
+    
+    inline def setMr(
+      value: (MarginRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginRight[Double | String]]]])
+    ): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
     
     inline def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
     
-    inline def setMrVarargs(value: (MarginRightProperty[Double | String])*): Self = StObject.set(x, "mr", js.Array(value :_*))
+    inline def setMrVarargs(value: (NonNullable[js.UndefOr[MarginRight[Double | String]]])*): Self = StObject.set(x, "mr", js.Array(value*))
     
-    inline def setMt(value: (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+    inline def setMsAccelerator(value: MsAccelerator): Self = StObject.set(x, "msAccelerator", value.asInstanceOf[js.Any])
+    
+    inline def setMsAcceleratorUndefined: Self = StObject.set(x, "msAccelerator", js.undefined)
+    
+    inline def setMsBlockProgression(value: MsBlockProgression): Self = StObject.set(x, "msBlockProgression", value.asInstanceOf[js.Any])
+    
+    inline def setMsBlockProgressionUndefined: Self = StObject.set(x, "msBlockProgression", js.undefined)
+    
+    inline def setMsContentZoomChaining(value: MsContentZoomChaining): Self = StObject.set(x, "msContentZoomChaining", value.asInstanceOf[js.Any])
+    
+    inline def setMsContentZoomChainingUndefined: Self = StObject.set(x, "msContentZoomChaining", js.undefined)
+    
+    inline def setMsContentZoomLimit(value: MsContentZoomLimit): Self = StObject.set(x, "msContentZoomLimit", value.asInstanceOf[js.Any])
+    
+    inline def setMsContentZoomLimitMax(value: MsContentZoomLimitMax): Self = StObject.set(x, "msContentZoomLimitMax", value.asInstanceOf[js.Any])
+    
+    inline def setMsContentZoomLimitMaxUndefined: Self = StObject.set(x, "msContentZoomLimitMax", js.undefined)
+    
+    inline def setMsContentZoomLimitMin(value: MsContentZoomLimitMin): Self = StObject.set(x, "msContentZoomLimitMin", value.asInstanceOf[js.Any])
+    
+    inline def setMsContentZoomLimitMinUndefined: Self = StObject.set(x, "msContentZoomLimitMin", js.undefined)
+    
+    inline def setMsContentZoomLimitUndefined: Self = StObject.set(x, "msContentZoomLimit", js.undefined)
+    
+    inline def setMsContentZoomSnap(value: MsContentZoomSnap): Self = StObject.set(x, "msContentZoomSnap", value.asInstanceOf[js.Any])
+    
+    inline def setMsContentZoomSnapPoints(value: MsContentZoomSnapPoints): Self = StObject.set(x, "msContentZoomSnapPoints", value.asInstanceOf[js.Any])
+    
+    inline def setMsContentZoomSnapPointsUndefined: Self = StObject.set(x, "msContentZoomSnapPoints", js.undefined)
+    
+    inline def setMsContentZoomSnapType(value: MsContentZoomSnapType): Self = StObject.set(x, "msContentZoomSnapType", value.asInstanceOf[js.Any])
+    
+    inline def setMsContentZoomSnapTypeUndefined: Self = StObject.set(x, "msContentZoomSnapType", js.undefined)
+    
+    inline def setMsContentZoomSnapUndefined: Self = StObject.set(x, "msContentZoomSnap", js.undefined)
+    
+    inline def setMsContentZooming(value: MsContentZooming): Self = StObject.set(x, "msContentZooming", value.asInstanceOf[js.Any])
+    
+    inline def setMsContentZoomingUndefined: Self = StObject.set(x, "msContentZooming", js.undefined)
+    
+    inline def setMsFilter(value: MsFilter): Self = StObject.set(x, "msFilter", value.asInstanceOf[js.Any])
+    
+    inline def setMsFilterUndefined: Self = StObject.set(x, "msFilter", js.undefined)
+    
+    inline def setMsFlex(value: Flex[Double | String]): Self = StObject.set(x, "msFlex", value.asInstanceOf[js.Any])
+    
+    inline def setMsFlexDirection(value: FlexDirection): Self = StObject.set(x, "msFlexDirection", value.asInstanceOf[js.Any])
+    
+    inline def setMsFlexDirectionUndefined: Self = StObject.set(x, "msFlexDirection", js.undefined)
+    
+    inline def setMsFlexPositive(value: FlexGrow): Self = StObject.set(x, "msFlexPositive", value.asInstanceOf[js.Any])
+    
+    inline def setMsFlexPositiveUndefined: Self = StObject.set(x, "msFlexPositive", js.undefined)
+    
+    inline def setMsFlexUndefined: Self = StObject.set(x, "msFlex", js.undefined)
+    
+    inline def setMsFlowFrom(value: MsFlowFrom): Self = StObject.set(x, "msFlowFrom", value.asInstanceOf[js.Any])
+    
+    inline def setMsFlowFromUndefined: Self = StObject.set(x, "msFlowFrom", js.undefined)
+    
+    inline def setMsFlowInto(value: MsFlowInto): Self = StObject.set(x, "msFlowInto", value.asInstanceOf[js.Any])
+    
+    inline def setMsFlowIntoUndefined: Self = StObject.set(x, "msFlowInto", js.undefined)
+    
+    inline def setMsGridColumns(value: MsGridColumns[Double | String]): Self = StObject.set(x, "msGridColumns", value.asInstanceOf[js.Any])
+    
+    inline def setMsGridColumnsUndefined: Self = StObject.set(x, "msGridColumns", js.undefined)
+    
+    inline def setMsGridRows(value: MsGridRows[Double | String]): Self = StObject.set(x, "msGridRows", value.asInstanceOf[js.Any])
+    
+    inline def setMsGridRowsUndefined: Self = StObject.set(x, "msGridRows", js.undefined)
+    
+    inline def setMsHighContrastAdjust(value: MsHighContrastAdjust): Self = StObject.set(x, "msHighContrastAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setMsHighContrastAdjustUndefined: Self = StObject.set(x, "msHighContrastAdjust", js.undefined)
+    
+    inline def setMsHyphenateLimitChars(value: MsHyphenateLimitChars): Self = StObject.set(x, "msHyphenateLimitChars", value.asInstanceOf[js.Any])
+    
+    inline def setMsHyphenateLimitCharsUndefined: Self = StObject.set(x, "msHyphenateLimitChars", js.undefined)
+    
+    inline def setMsHyphenateLimitLines(value: MsHyphenateLimitLines): Self = StObject.set(x, "msHyphenateLimitLines", value.asInstanceOf[js.Any])
+    
+    inline def setMsHyphenateLimitLinesUndefined: Self = StObject.set(x, "msHyphenateLimitLines", js.undefined)
+    
+    inline def setMsHyphenateLimitZone(value: MsHyphenateLimitZone[Double | String]): Self = StObject.set(x, "msHyphenateLimitZone", value.asInstanceOf[js.Any])
+    
+    inline def setMsHyphenateLimitZoneUndefined: Self = StObject.set(x, "msHyphenateLimitZone", js.undefined)
+    
+    inline def setMsHyphens(value: Hyphens): Self = StObject.set(x, "msHyphens", value.asInstanceOf[js.Any])
+    
+    inline def setMsHyphensUndefined: Self = StObject.set(x, "msHyphens", js.undefined)
+    
+    inline def setMsImeAlign(value: MsImeAlign): Self = StObject.set(x, "msImeAlign", value.asInstanceOf[js.Any])
+    
+    inline def setMsImeAlignUndefined: Self = StObject.set(x, "msImeAlign", js.undefined)
+    
+    inline def setMsLineBreak(value: LineBreak): Self = StObject.set(x, "msLineBreak", value.asInstanceOf[js.Any])
+    
+    inline def setMsLineBreakUndefined: Self = StObject.set(x, "msLineBreak", js.undefined)
+    
+    inline def setMsOrder(value: Order): Self = StObject.set(x, "msOrder", value.asInstanceOf[js.Any])
+    
+    inline def setMsOrderUndefined: Self = StObject.set(x, "msOrder", js.undefined)
+    
+    inline def setMsOverflowStyle(value: MsOverflowStyle): Self = StObject.set(x, "msOverflowStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMsOverflowStyleUndefined: Self = StObject.set(x, "msOverflowStyle", js.undefined)
+    
+    inline def setMsOverflowX(value: OverflowX): Self = StObject.set(x, "msOverflowX", value.asInstanceOf[js.Any])
+    
+    inline def setMsOverflowXUndefined: Self = StObject.set(x, "msOverflowX", js.undefined)
+    
+    inline def setMsOverflowY(value: OverflowY): Self = StObject.set(x, "msOverflowY", value.asInstanceOf[js.Any])
+    
+    inline def setMsOverflowYUndefined: Self = StObject.set(x, "msOverflowY", js.undefined)
+    
+    inline def setMsScrollChaining(value: MsScrollChaining): Self = StObject.set(x, "msScrollChaining", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollChainingUndefined: Self = StObject.set(x, "msScrollChaining", js.undefined)
+    
+    inline def setMsScrollLimit(value: MsScrollLimit): Self = StObject.set(x, "msScrollLimit", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollLimitUndefined: Self = StObject.set(x, "msScrollLimit", js.undefined)
+    
+    inline def setMsScrollLimitXMax(value: MsScrollLimitXMax[Double | String]): Self = StObject.set(x, "msScrollLimitXMax", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollLimitXMaxUndefined: Self = StObject.set(x, "msScrollLimitXMax", js.undefined)
+    
+    inline def setMsScrollLimitXMin(value: MsScrollLimitXMin[Double | String]): Self = StObject.set(x, "msScrollLimitXMin", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollLimitXMinUndefined: Self = StObject.set(x, "msScrollLimitXMin", js.undefined)
+    
+    inline def setMsScrollLimitYMax(value: MsScrollLimitYMax[Double | String]): Self = StObject.set(x, "msScrollLimitYMax", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollLimitYMaxUndefined: Self = StObject.set(x, "msScrollLimitYMax", js.undefined)
+    
+    inline def setMsScrollLimitYMin(value: MsScrollLimitYMin[Double | String]): Self = StObject.set(x, "msScrollLimitYMin", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollLimitYMinUndefined: Self = StObject.set(x, "msScrollLimitYMin", js.undefined)
+    
+    inline def setMsScrollRails(value: MsScrollRails): Self = StObject.set(x, "msScrollRails", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollRailsUndefined: Self = StObject.set(x, "msScrollRails", js.undefined)
+    
+    inline def setMsScrollSnapPointsX(value: MsScrollSnapPointsX): Self = StObject.set(x, "msScrollSnapPointsX", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollSnapPointsXUndefined: Self = StObject.set(x, "msScrollSnapPointsX", js.undefined)
+    
+    inline def setMsScrollSnapPointsY(value: MsScrollSnapPointsY): Self = StObject.set(x, "msScrollSnapPointsY", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollSnapPointsYUndefined: Self = StObject.set(x, "msScrollSnapPointsY", js.undefined)
+    
+    inline def setMsScrollSnapType(value: MsScrollSnapType): Self = StObject.set(x, "msScrollSnapType", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollSnapTypeUndefined: Self = StObject.set(x, "msScrollSnapType", js.undefined)
+    
+    inline def setMsScrollSnapX(value: MsScrollSnapX): Self = StObject.set(x, "msScrollSnapX", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollSnapXUndefined: Self = StObject.set(x, "msScrollSnapX", js.undefined)
+    
+    inline def setMsScrollSnapY(value: MsScrollSnapY): Self = StObject.set(x, "msScrollSnapY", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollSnapYUndefined: Self = StObject.set(x, "msScrollSnapY", js.undefined)
+    
+    inline def setMsScrollTranslation(value: MsScrollTranslation): Self = StObject.set(x, "msScrollTranslation", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollTranslationUndefined: Self = StObject.set(x, "msScrollTranslation", js.undefined)
+    
+    inline def setMsScrollbar3dlightColor(value: MsScrollbar3dlightColor): Self = StObject.set(x, "msScrollbar3dlightColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbar3dlightColorUndefined: Self = StObject.set(x, "msScrollbar3dlightColor", js.undefined)
+    
+    inline def setMsScrollbarArrowColor(value: MsScrollbarArrowColor): Self = StObject.set(x, "msScrollbarArrowColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbarArrowColorUndefined: Self = StObject.set(x, "msScrollbarArrowColor", js.undefined)
+    
+    inline def setMsScrollbarBaseColor(value: MsScrollbarBaseColor): Self = StObject.set(x, "msScrollbarBaseColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbarBaseColorUndefined: Self = StObject.set(x, "msScrollbarBaseColor", js.undefined)
+    
+    inline def setMsScrollbarDarkshadowColor(value: MsScrollbarDarkshadowColor): Self = StObject.set(x, "msScrollbarDarkshadowColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbarDarkshadowColorUndefined: Self = StObject.set(x, "msScrollbarDarkshadowColor", js.undefined)
+    
+    inline def setMsScrollbarFaceColor(value: MsScrollbarFaceColor): Self = StObject.set(x, "msScrollbarFaceColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbarFaceColorUndefined: Self = StObject.set(x, "msScrollbarFaceColor", js.undefined)
+    
+    inline def setMsScrollbarHighlightColor(value: MsScrollbarHighlightColor): Self = StObject.set(x, "msScrollbarHighlightColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbarHighlightColorUndefined: Self = StObject.set(x, "msScrollbarHighlightColor", js.undefined)
+    
+    inline def setMsScrollbarShadowColor(value: MsScrollbarShadowColor): Self = StObject.set(x, "msScrollbarShadowColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbarShadowColorUndefined: Self = StObject.set(x, "msScrollbarShadowColor", js.undefined)
+    
+    inline def setMsScrollbarTrackColor(value: MsScrollbarTrackColor): Self = StObject.set(x, "msScrollbarTrackColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbarTrackColorUndefined: Self = StObject.set(x, "msScrollbarTrackColor", js.undefined)
+    
+    inline def setMsTextAutospace(value: MsTextAutospace): Self = StObject.set(x, "msTextAutospace", value.asInstanceOf[js.Any])
+    
+    inline def setMsTextAutospaceUndefined: Self = StObject.set(x, "msTextAutospace", js.undefined)
+    
+    inline def setMsTextCombineHorizontal(value: TextCombineUpright): Self = StObject.set(x, "msTextCombineHorizontal", value.asInstanceOf[js.Any])
+    
+    inline def setMsTextCombineHorizontalUndefined: Self = StObject.set(x, "msTextCombineHorizontal", js.undefined)
+    
+    inline def setMsTextOverflow(value: TextOverflow): Self = StObject.set(x, "msTextOverflow", value.asInstanceOf[js.Any])
+    
+    inline def setMsTextOverflowUndefined: Self = StObject.set(x, "msTextOverflow", js.undefined)
+    
+    inline def setMsTouchAction(value: TouchAction): Self = StObject.set(x, "msTouchAction", value.asInstanceOf[js.Any])
+    
+    inline def setMsTouchActionUndefined: Self = StObject.set(x, "msTouchAction", js.undefined)
+    
+    inline def setMsTouchSelect(value: MsTouchSelect): Self = StObject.set(x, "msTouchSelect", value.asInstanceOf[js.Any])
+    
+    inline def setMsTouchSelectUndefined: Self = StObject.set(x, "msTouchSelect", js.undefined)
+    
+    inline def setMsTransform(value: Transform): Self = StObject.set(x, "msTransform", value.asInstanceOf[js.Any])
+    
+    inline def setMsTransformOrigin(value: TransformOrigin[Double | String]): Self = StObject.set(x, "msTransformOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setMsTransformOriginUndefined: Self = StObject.set(x, "msTransformOrigin", js.undefined)
+    
+    inline def setMsTransformUndefined: Self = StObject.set(x, "msTransform", js.undefined)
+    
+    inline def setMsTransition(value: Transition[String]): Self = StObject.set(x, "msTransition", value.asInstanceOf[js.Any])
+    
+    inline def setMsTransitionDelay(value: TransitionDelay[String]): Self = StObject.set(x, "msTransitionDelay", value.asInstanceOf[js.Any])
+    
+    inline def setMsTransitionDelayUndefined: Self = StObject.set(x, "msTransitionDelay", js.undefined)
+    
+    inline def setMsTransitionDuration(value: TransitionDuration[String]): Self = StObject.set(x, "msTransitionDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMsTransitionDurationUndefined: Self = StObject.set(x, "msTransitionDuration", js.undefined)
+    
+    inline def setMsTransitionProperty(value: TransitionProperty): Self = StObject.set(x, "msTransitionProperty", value.asInstanceOf[js.Any])
+    
+    inline def setMsTransitionPropertyUndefined: Self = StObject.set(x, "msTransitionProperty", js.undefined)
+    
+    inline def setMsTransitionTimingFunction(value: TransitionTimingFunction): Self = StObject.set(x, "msTransitionTimingFunction", value.asInstanceOf[js.Any])
+    
+    inline def setMsTransitionTimingFunctionUndefined: Self = StObject.set(x, "msTransitionTimingFunction", js.undefined)
+    
+    inline def setMsTransitionUndefined: Self = StObject.set(x, "msTransition", js.undefined)
+    
+    inline def setMsUserSelect(value: MsUserSelect): Self = StObject.set(x, "msUserSelect", value.asInstanceOf[js.Any])
+    
+    inline def setMsUserSelectUndefined: Self = StObject.set(x, "msUserSelect", js.undefined)
+    
+    inline def setMsWordBreak(value: WordBreak): Self = StObject.set(x, "msWordBreak", value.asInstanceOf[js.Any])
+    
+    inline def setMsWordBreakUndefined: Self = StObject.set(x, "msWordBreak", js.undefined)
+    
+    inline def setMsWrapFlow(value: MsWrapFlow): Self = StObject.set(x, "msWrapFlow", value.asInstanceOf[js.Any])
+    
+    inline def setMsWrapFlowUndefined: Self = StObject.set(x, "msWrapFlow", js.undefined)
+    
+    inline def setMsWrapMargin(value: MsWrapMargin[Double | String]): Self = StObject.set(x, "msWrapMargin", value.asInstanceOf[js.Any])
+    
+    inline def setMsWrapMarginUndefined: Self = StObject.set(x, "msWrapMargin", js.undefined)
+    
+    inline def setMsWrapThrough(value: MsWrapThrough): Self = StObject.set(x, "msWrapThrough", value.asInstanceOf[js.Any])
+    
+    inline def setMsWrapThroughUndefined: Self = StObject.set(x, "msWrapThrough", js.undefined)
+    
+    inline def setMsWritingMode(value: WritingMode): Self = StObject.set(x, "msWritingMode", value.asInstanceOf[js.Any])
+    
+    inline def setMsWritingModeUndefined: Self = StObject.set(x, "msWritingMode", js.undefined)
+    
+    inline def setMt(
+      value: (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
+    ): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     
     inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
     
-    inline def setMtVarargs(value: (MarginTopProperty[Double | String])*): Self = StObject.set(x, "mt", js.Array(value :_*))
+    inline def setMtVarargs(value: (NonNullable[js.UndefOr[MarginTop[Double | String]]])*): Self = StObject.set(x, "mt", js.Array(value*))
     
-    inline def setMx(value: (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
+    inline def setMx(
+      value: (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
+    ): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
     
     inline def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
     
-    inline def setMxVarargs(value: (MarginLeftProperty[Double | String])*): Self = StObject.set(x, "mx", js.Array(value :_*))
+    inline def setMxVarargs(value: (NonNullable[js.UndefOr[MarginLeft[Double | String]]])*): Self = StObject.set(x, "mx", js.Array(value*))
     
-    inline def setMy(value: (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+    inline def setMy(
+      value: (MarginTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginTop[Double | String]]]])
+    ): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
     inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
     
-    inline def setMyVarargs(value: (MarginTopProperty[Double | String])*): Self = StObject.set(x, "my", js.Array(value :_*))
+    inline def setMyVarargs(value: (NonNullable[js.UndefOr[MarginTop[Double | String]]])*): Self = StObject.set(x, "my", js.Array(value*))
     
-    inline def setObjectFit(value: ObjectFitProperty): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
+    inline def setObjectFit(value: ObjectFit): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
     
     inline def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
     
-    inline def setObjectPosition(value: ObjectPositionProperty[Double | String]): Self = StObject.set(x, "objectPosition", value.asInstanceOf[js.Any])
+    inline def setObjectPosition(value: ObjectPosition[Double | String]): Self = StObject.set(x, "objectPosition", value.asInstanceOf[js.Any])
     
     inline def setObjectPositionUndefined: Self = StObject.set(x, "objectPosition", js.undefined)
     
-    inline def setOffset(value: OffsetProperty[Double | String]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Offset[Double | String]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    inline def setOffsetAnchor(value: OffsetAnchorProperty[Double | String]): Self = StObject.set(x, "offsetAnchor", value.asInstanceOf[js.Any])
+    inline def setOffsetAnchor(value: OffsetAnchor[Double | String]): Self = StObject.set(x, "offsetAnchor", value.asInstanceOf[js.Any])
     
     inline def setOffsetAnchorUndefined: Self = StObject.set(x, "offsetAnchor", js.undefined)
     
-    inline def setOffsetDistance(value: OffsetDistanceProperty[Double | String]): Self = StObject.set(x, "offsetDistance", value.asInstanceOf[js.Any])
+    inline def setOffsetDistance(value: OffsetDistance[Double | String]): Self = StObject.set(x, "offsetDistance", value.asInstanceOf[js.Any])
     
     inline def setOffsetDistanceUndefined: Self = StObject.set(x, "offsetDistance", js.undefined)
     
-    inline def setOffsetPath(value: OffsetPathProperty): Self = StObject.set(x, "offsetPath", value.asInstanceOf[js.Any])
+    inline def setOffsetPath(value: OffsetPath): Self = StObject.set(x, "offsetPath", value.asInstanceOf[js.Any])
     
     inline def setOffsetPathUndefined: Self = StObject.set(x, "offsetPath", js.undefined)
     
-    inline def setOffsetRotate(value: OffsetRotateProperty): Self = StObject.set(x, "offsetRotate", value.asInstanceOf[js.Any])
+    inline def setOffsetRotate(value: OffsetRotate): Self = StObject.set(x, "offsetRotate", value.asInstanceOf[js.Any])
     
     inline def setOffsetRotateUndefined: Self = StObject.set(x, "offsetRotate", js.undefined)
     
-    inline def setOffsetRotation(value: OffsetRotateProperty): Self = StObject.set(x, "offsetRotation", value.asInstanceOf[js.Any])
+    inline def setOffsetRotation(value: OffsetRotate): Self = StObject.set(x, "offsetRotation", value.asInstanceOf[js.Any])
     
     inline def setOffsetRotationUndefined: Self = StObject.set(x, "offsetRotation", js.undefined)
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOpacity(value: OpacityProperty): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Opacity): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setOrder(value: GlobalsNumber): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    inline def setOrphans(value: GlobalsNumber): Self = StObject.set(x, "orphans", value.asInstanceOf[js.Any])
+    inline def setOrphans(value: Orphans): Self = StObject.set(x, "orphans", value.asInstanceOf[js.Any])
     
     inline def setOrphansUndefined: Self = StObject.set(x, "orphans", js.undefined)
     
-    inline def setOutline(value: OutlineProperty[Double | String]): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: Outline[Double | String]): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    inline def setOutlineColor(value: OutlineColorProperty): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+    inline def setOutlineColor(value: OutlineColor): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
     
     inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
     
-    inline def setOutlineOffset(value: OutlineOffsetProperty[Double | String]): Self = StObject.set(x, "outlineOffset", value.asInstanceOf[js.Any])
+    inline def setOutlineOffset(value: OutlineOffset[Double | String]): Self = StObject.set(x, "outlineOffset", value.asInstanceOf[js.Any])
     
     inline def setOutlineOffsetUndefined: Self = StObject.set(x, "outlineOffset", js.undefined)
     
-    inline def setOutlineStyle(value: OutlineStyleProperty): Self = StObject.set(x, "outlineStyle", value.asInstanceOf[js.Any])
+    inline def setOutlineStyle(value: OutlineStyle): Self = StObject.set(x, "outlineStyle", value.asInstanceOf[js.Any])
     
     inline def setOutlineStyleUndefined: Self = StObject.set(x, "outlineStyle", js.undefined)
     
     inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    inline def setOutlineWidth(value: OutlineWidthProperty[Double | String]): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
+    inline def setOutlineWidth(value: OutlineWidth[Double | String]): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
     
     inline def setOutlineWidthUndefined: Self = StObject.set(x, "outlineWidth", js.undefined)
     
-    inline def setOverflow(value: OverflowProperty): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: Overflow): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
-    inline def setOverflowAnchor(value: OverflowAnchorProperty): Self = StObject.set(x, "overflowAnchor", value.asInstanceOf[js.Any])
+    inline def setOverflowAnchor(value: OverflowAnchor): Self = StObject.set(x, "overflowAnchor", value.asInstanceOf[js.Any])
     
     inline def setOverflowAnchorUndefined: Self = StObject.set(x, "overflowAnchor", js.undefined)
     
-    inline def setOverflowBlock(value: OverflowBlockProperty): Self = StObject.set(x, "overflowBlock", value.asInstanceOf[js.Any])
+    inline def setOverflowBlock(value: OverflowBlock): Self = StObject.set(x, "overflowBlock", value.asInstanceOf[js.Any])
     
     inline def setOverflowBlockUndefined: Self = StObject.set(x, "overflowBlock", js.undefined)
     
-    inline def setOverflowClipBox(value: OverflowClipBoxProperty): Self = StObject.set(x, "overflowClipBox", value.asInstanceOf[js.Any])
+    inline def setOverflowClipBox(value: OverflowClipBox): Self = StObject.set(x, "overflowClipBox", value.asInstanceOf[js.Any])
     
     inline def setOverflowClipBoxUndefined: Self = StObject.set(x, "overflowClipBox", js.undefined)
     
-    inline def setOverflowInline(value: OverflowInlineProperty): Self = StObject.set(x, "overflowInline", value.asInstanceOf[js.Any])
+    inline def setOverflowClipMargin(value: OverflowClipMargin[Double | String]): Self = StObject.set(x, "overflowClipMargin", value.asInstanceOf[js.Any])
+    
+    inline def setOverflowClipMarginUndefined: Self = StObject.set(x, "overflowClipMargin", js.undefined)
+    
+    inline def setOverflowInline(value: OverflowInline): Self = StObject.set(x, "overflowInline", value.asInstanceOf[js.Any])
     
     inline def setOverflowInlineUndefined: Self = StObject.set(x, "overflowInline", js.undefined)
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
-    inline def setOverflowWrap(value: OverflowWrapProperty): Self = StObject.set(x, "overflowWrap", value.asInstanceOf[js.Any])
+    inline def setOverflowWrap(value: OverflowWrap): Self = StObject.set(x, "overflowWrap", value.asInstanceOf[js.Any])
     
     inline def setOverflowWrapUndefined: Self = StObject.set(x, "overflowWrap", js.undefined)
     
-    inline def setOverflowX(value: OverflowXProperty): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
+    inline def setOverflowX(value: OverflowX): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
     
     inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
     
-    inline def setOverflowY(value: OverflowYProperty): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
+    inline def setOverflowY(value: OverflowY): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
     
     inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
     
-    inline def setOverscrollBehavior(value: OverscrollBehaviorProperty): Self = StObject.set(x, "overscrollBehavior", value.asInstanceOf[js.Any])
+    inline def setOverscrollBehavior(value: OverscrollBehavior): Self = StObject.set(x, "overscrollBehavior", value.asInstanceOf[js.Any])
     
-    inline def setOverscrollBehaviorBlock(value: OverscrollBehaviorBlockProperty): Self = StObject.set(x, "overscrollBehaviorBlock", value.asInstanceOf[js.Any])
+    inline def setOverscrollBehaviorBlock(value: OverscrollBehaviorBlock): Self = StObject.set(x, "overscrollBehaviorBlock", value.asInstanceOf[js.Any])
     
     inline def setOverscrollBehaviorBlockUndefined: Self = StObject.set(x, "overscrollBehaviorBlock", js.undefined)
     
-    inline def setOverscrollBehaviorInline(value: OverscrollBehaviorInlineProperty): Self = StObject.set(x, "overscrollBehaviorInline", value.asInstanceOf[js.Any])
+    inline def setOverscrollBehaviorInline(value: OverscrollBehaviorInline): Self = StObject.set(x, "overscrollBehaviorInline", value.asInstanceOf[js.Any])
     
     inline def setOverscrollBehaviorInlineUndefined: Self = StObject.set(x, "overscrollBehaviorInline", js.undefined)
     
     inline def setOverscrollBehaviorUndefined: Self = StObject.set(x, "overscrollBehavior", js.undefined)
     
-    inline def setOverscrollBehaviorX(value: OverscrollBehaviorXProperty): Self = StObject.set(x, "overscrollBehaviorX", value.asInstanceOf[js.Any])
+    inline def setOverscrollBehaviorX(value: OverscrollBehaviorX): Self = StObject.set(x, "overscrollBehaviorX", value.asInstanceOf[js.Any])
     
     inline def setOverscrollBehaviorXUndefined: Self = StObject.set(x, "overscrollBehaviorX", js.undefined)
     
-    inline def setOverscrollBehaviorY(value: OverscrollBehaviorYProperty): Self = StObject.set(x, "overscrollBehaviorY", value.asInstanceOf[js.Any])
+    inline def setOverscrollBehaviorY(value: OverscrollBehaviorY): Self = StObject.set(x, "overscrollBehaviorY", value.asInstanceOf[js.Any])
     
     inline def setOverscrollBehaviorYUndefined: Self = StObject.set(x, "overscrollBehaviorY", js.undefined)
     
-    inline def setP(value: (PaddingProperty[Double | String]) | (js.Array[PaddingProperty[Double | String]])): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: (Padding[Double | String]) | (js.Array[NonNullable[js.UndefOr[Padding[Double | String]]]])): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
-    inline def setPVarargs(value: (PaddingProperty[Double | String])*): Self = StObject.set(x, "p", js.Array(value :_*))
+    inline def setPVarargs(value: (NonNullable[js.UndefOr[Padding[Double | String]]])*): Self = StObject.set(x, "p", js.Array(value*))
     
-    inline def setPadding(value: PaddingProperty[Double | String]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Padding[Double | String]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    inline def setPaddingBlock(value: PaddingBlockProperty[Double | String]): Self = StObject.set(x, "paddingBlock", value.asInstanceOf[js.Any])
+    inline def setPaddingBlock(value: PaddingBlock[Double | String]): Self = StObject.set(x, "paddingBlock", value.asInstanceOf[js.Any])
     
-    inline def setPaddingBlockEnd(value: PaddingBlockEndProperty[Double | String]): Self = StObject.set(x, "paddingBlockEnd", value.asInstanceOf[js.Any])
+    inline def setPaddingBlockEnd(value: PaddingBlockEnd[Double | String]): Self = StObject.set(x, "paddingBlockEnd", value.asInstanceOf[js.Any])
     
     inline def setPaddingBlockEndUndefined: Self = StObject.set(x, "paddingBlockEnd", js.undefined)
     
-    inline def setPaddingBlockStart(value: PaddingBlockStartProperty[Double | String]): Self = StObject.set(x, "paddingBlockStart", value.asInstanceOf[js.Any])
+    inline def setPaddingBlockStart(value: PaddingBlockStart[Double | String]): Self = StObject.set(x, "paddingBlockStart", value.asInstanceOf[js.Any])
     
     inline def setPaddingBlockStartUndefined: Self = StObject.set(x, "paddingBlockStart", js.undefined)
     
     inline def setPaddingBlockUndefined: Self = StObject.set(x, "paddingBlock", js.undefined)
     
-    inline def setPaddingBottom(value: PaddingBottomProperty[Double | String]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+    inline def setPaddingBottom(value: PaddingBottom[Double | String]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
     inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
     
-    inline def setPaddingInline(value: PaddingInlineProperty[Double | String]): Self = StObject.set(x, "paddingInline", value.asInstanceOf[js.Any])
+    inline def setPaddingInline(value: PaddingInline[Double | String]): Self = StObject.set(x, "paddingInline", value.asInstanceOf[js.Any])
     
-    inline def setPaddingInlineEnd(value: PaddingInlineEndProperty[Double | String]): Self = StObject.set(x, "paddingInlineEnd", value.asInstanceOf[js.Any])
+    inline def setPaddingInlineEnd(value: PaddingInlineEnd[Double | String]): Self = StObject.set(x, "paddingInlineEnd", value.asInstanceOf[js.Any])
     
     inline def setPaddingInlineEndUndefined: Self = StObject.set(x, "paddingInlineEnd", js.undefined)
     
-    inline def setPaddingInlineStart(value: PaddingInlineStartProperty[Double | String]): Self = StObject.set(x, "paddingInlineStart", value.asInstanceOf[js.Any])
+    inline def setPaddingInlineStart(value: PaddingInlineStart[Double | String]): Self = StObject.set(x, "paddingInlineStart", value.asInstanceOf[js.Any])
     
     inline def setPaddingInlineStartUndefined: Self = StObject.set(x, "paddingInlineStart", js.undefined)
     
     inline def setPaddingInlineUndefined: Self = StObject.set(x, "paddingInline", js.undefined)
     
-    inline def setPaddingLeft(value: PaddingLeftProperty[Double | String]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+    inline def setPaddingLeft(value: PaddingLeft[Double | String]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
     inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
     
-    inline def setPaddingRight(value: PaddingRightProperty[Double | String]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+    inline def setPaddingRight(value: PaddingRight[Double | String]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
     inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
-    inline def setPaddingTop(value: PaddingTopProperty[Double | String]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+    inline def setPaddingTop(value: PaddingTop[Double | String]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
     
     inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPaddingX(value: (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+    inline def setPaddingX(
+      value: (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
+    ): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
     
     inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
     
-    inline def setPaddingXVarargs(value: (PaddingLeftProperty[Double | String])*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
+    inline def setPaddingXVarargs(value: (NonNullable[js.UndefOr[PaddingLeft[Double | String]]])*): Self = StObject.set(x, "paddingX", js.Array(value*))
     
-    inline def setPaddingY(value: (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+    inline def setPaddingY(
+      value: (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
+    ): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
     
     inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
     
-    inline def setPaddingYVarargs(value: (PaddingTopProperty[Double | String])*): Self = StObject.set(x, "paddingY", js.Array(value :_*))
+    inline def setPaddingYVarargs(value: (NonNullable[js.UndefOr[PaddingTop[Double | String]]])*): Self = StObject.set(x, "paddingY", js.Array(value*))
     
-    inline def setPageBreakAfter(value: PageBreakAfterProperty): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
+    inline def setPageBreakAfter(value: PageBreakAfter): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
     
     inline def setPageBreakAfterUndefined: Self = StObject.set(x, "pageBreakAfter", js.undefined)
     
-    inline def setPageBreakBefore(value: PageBreakBeforeProperty): Self = StObject.set(x, "pageBreakBefore", value.asInstanceOf[js.Any])
+    inline def setPageBreakBefore(value: PageBreakBefore): Self = StObject.set(x, "pageBreakBefore", value.asInstanceOf[js.Any])
     
     inline def setPageBreakBeforeUndefined: Self = StObject.set(x, "pageBreakBefore", js.undefined)
     
-    inline def setPageBreakInside(value: PageBreakInsideProperty): Self = StObject.set(x, "pageBreakInside", value.asInstanceOf[js.Any])
+    inline def setPageBreakInside(value: PageBreakInside): Self = StObject.set(x, "pageBreakInside", value.asInstanceOf[js.Any])
     
     inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
     
-    inline def setPaintOrder(value: PaintOrderProperty): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
+    inline def setPaintOrder(value: PaintOrder): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
     
     inline def setPaintOrderUndefined: Self = StObject.set(x, "paintOrder", js.undefined)
     
     inline def setPb(
-      value: (PaddingBottomProperty[Double | String]) | (js.Array[PaddingBottomProperty[Double | String]])
+      value: (PaddingBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBottom[Double | String]]]])
     ): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
     
     inline def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
     
-    inline def setPbVarargs(value: (PaddingBottomProperty[Double | String])*): Self = StObject.set(x, "pb", js.Array(value :_*))
+    inline def setPbVarargs(value: (NonNullable[js.UndefOr[PaddingBottom[Double | String]]])*): Self = StObject.set(x, "pb", js.Array(value*))
     
-    inline def setPerspective(value: PerspectiveProperty[Double | String]): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
+    inline def setPerspective(value: Perspective[Double | String]): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
     
-    inline def setPerspectiveOrigin(value: PerspectiveOriginProperty[Double | String]): Self = StObject.set(x, "perspectiveOrigin", value.asInstanceOf[js.Any])
+    inline def setPerspectiveOrigin(value: PerspectiveOrigin[Double | String]): Self = StObject.set(x, "perspectiveOrigin", value.asInstanceOf[js.Any])
     
     inline def setPerspectiveOriginUndefined: Self = StObject.set(x, "perspectiveOrigin", js.undefined)
     
     inline def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
     
-    inline def setPl(value: (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
+    inline def setPl(
+      value: (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
+    ): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
     inline def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
     
-    inline def setPlVarargs(value: (PaddingLeftProperty[Double | String])*): Self = StObject.set(x, "pl", js.Array(value :_*))
+    inline def setPlVarargs(value: (NonNullable[js.UndefOr[PaddingLeft[Double | String]]])*): Self = StObject.set(x, "pl", js.Array(value*))
     
-    inline def setPlaceContent(value: PlaceContentProperty): Self = StObject.set(x, "placeContent", value.asInstanceOf[js.Any])
+    inline def setPlaceContent(value: PlaceContent): Self = StObject.set(x, "placeContent", value.asInstanceOf[js.Any])
     
     inline def setPlaceContentUndefined: Self = StObject.set(x, "placeContent", js.undefined)
     
-    inline def setPlaceItems(value: PlaceItemsProperty): Self = StObject.set(x, "placeItems", value.asInstanceOf[js.Any])
+    inline def setPlaceItems(value: PlaceItems): Self = StObject.set(x, "placeItems", value.asInstanceOf[js.Any])
     
     inline def setPlaceItemsUndefined: Self = StObject.set(x, "placeItems", js.undefined)
     
-    inline def setPlaceSelf(value: PlaceSelfProperty): Self = StObject.set(x, "placeSelf", value.asInstanceOf[js.Any])
+    inline def setPlaceSelf(value: PlaceSelf): Self = StObject.set(x, "placeSelf", value.asInstanceOf[js.Any])
     
     inline def setPlaceSelfUndefined: Self = StObject.set(x, "placeSelf", js.undefined)
     
-    inline def setPointerEvents(value: PointerEventsProperty): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    inline def setPointerEvents(value: PointerEvents): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
     
-    inline def setPosition(value: PositionProperty): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    inline def setPr(value: (PaddingRightProperty[Double | String]) | (js.Array[PaddingRightProperty[Double | String]])): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+    inline def setPr(
+      value: (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
+    ): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
     
     inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
     
-    inline def setPrVarargs(value: (PaddingRightProperty[Double | String])*): Self = StObject.set(x, "pr", js.Array(value :_*))
+    inline def setPrVarargs(value: (NonNullable[js.UndefOr[PaddingRight[Double | String]]])*): Self = StObject.set(x, "pr", js.Array(value*))
     
-    inline def setPt(value: (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+    inline def setPrintColorAdjust(value: PrintColorAdjust): Self = StObject.set(x, "printColorAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setPrintColorAdjustUndefined: Self = StObject.set(x, "printColorAdjust", js.undefined)
+    
+    inline def setPt(
+      value: (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
+    ): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
     inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
     
-    inline def setPtVarargs(value: (PaddingTopProperty[Double | String])*): Self = StObject.set(x, "pt", js.Array(value :_*))
+    inline def setPtVarargs(value: (NonNullable[js.UndefOr[PaddingTop[Double | String]]])*): Self = StObject.set(x, "pt", js.Array(value*))
     
-    inline def setPx(value: (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+    inline def setPx(
+      value: (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
+    ): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
     
     inline def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
     
-    inline def setPxVarargs(value: (PaddingLeftProperty[Double | String])*): Self = StObject.set(x, "px", js.Array(value :_*))
+    inline def setPxVarargs(value: (NonNullable[js.UndefOr[PaddingLeft[Double | String]]])*): Self = StObject.set(x, "px", js.Array(value*))
     
-    inline def setPy(value: (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
+    inline def setPy(
+      value: (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
+    ): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
     
     inline def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
     
-    inline def setPyVarargs(value: (PaddingTopProperty[Double | String])*): Self = StObject.set(x, "py", js.Array(value :_*))
+    inline def setPyVarargs(value: (NonNullable[js.UndefOr[PaddingTop[Double | String]]])*): Self = StObject.set(x, "py", js.Array(value*))
     
-    inline def setQuotes(value: QuotesProperty): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
+    inline def setQuotes(value: Quotes): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
     
     inline def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
     
-    inline def setResize(value: ResizeProperty): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    inline def setResize(value: Resize): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
     inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
-    inline def setRight(value: RightProperty[Double | String]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Right[Double | String]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    inline def setRotate(value: RotateProperty): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Rotate): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
-    inline def setRowGap(value: RowGapProperty[Double | String]): Self = StObject.set(x, "rowGap", value.asInstanceOf[js.Any])
+    inline def setRowGap(value: RowGap[Double | String]): Self = StObject.set(x, "rowGap", value.asInstanceOf[js.Any])
     
     inline def setRowGapUndefined: Self = StObject.set(x, "rowGap", js.undefined)
     
-    inline def setRubyAlign(value: RubyAlignProperty): Self = StObject.set(x, "rubyAlign", value.asInstanceOf[js.Any])
+    inline def setRubyAlign(value: RubyAlign): Self = StObject.set(x, "rubyAlign", value.asInstanceOf[js.Any])
     
     inline def setRubyAlignUndefined: Self = StObject.set(x, "rubyAlign", js.undefined)
     
-    inline def setRubyMerge(value: RubyMergeProperty): Self = StObject.set(x, "rubyMerge", value.asInstanceOf[js.Any])
+    inline def setRubyMerge(value: RubyMerge): Self = StObject.set(x, "rubyMerge", value.asInstanceOf[js.Any])
     
     inline def setRubyMergeUndefined: Self = StObject.set(x, "rubyMerge", js.undefined)
     
-    inline def setRubyPosition(value: RubyPositionProperty): Self = StObject.set(x, "rubyPosition", value.asInstanceOf[js.Any])
+    inline def setRubyPosition(value: RubyPosition): Self = StObject.set(x, "rubyPosition", value.asInstanceOf[js.Any])
     
     inline def setRubyPositionUndefined: Self = StObject.set(x, "rubyPosition", js.undefined)
     
-    inline def setScale(value: ScaleProperty): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Scale): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    inline def setScrollBehavior(value: ScrollBehaviorProperty): Self = StObject.set(x, "scrollBehavior", value.asInstanceOf[js.Any])
+    inline def setScrollBehavior(value: ScrollBehavior): Self = StObject.set(x, "scrollBehavior", value.asInstanceOf[js.Any])
     
     inline def setScrollBehaviorUndefined: Self = StObject.set(x, "scrollBehavior", js.undefined)
     
-    inline def setScrollMargin(value: ScrollMarginProperty[Double | String]): Self = StObject.set(x, "scrollMargin", value.asInstanceOf[js.Any])
+    inline def setScrollMargin(value: ScrollMargin[Double | String]): Self = StObject.set(x, "scrollMargin", value.asInstanceOf[js.Any])
     
-    inline def setScrollMarginBlock(value: ScrollMarginBlockProperty[Double | String]): Self = StObject.set(x, "scrollMarginBlock", value.asInstanceOf[js.Any])
+    inline def setScrollMarginBlock(value: ScrollMarginBlock[Double | String]): Self = StObject.set(x, "scrollMarginBlock", value.asInstanceOf[js.Any])
     
-    inline def setScrollMarginBlockEnd(value: ScrollMarginBlockEndProperty[Double | String]): Self = StObject.set(x, "scrollMarginBlockEnd", value.asInstanceOf[js.Any])
+    inline def setScrollMarginBlockEnd(value: ScrollMarginBlockEnd[Double | String]): Self = StObject.set(x, "scrollMarginBlockEnd", value.asInstanceOf[js.Any])
     
     inline def setScrollMarginBlockEndUndefined: Self = StObject.set(x, "scrollMarginBlockEnd", js.undefined)
     
-    inline def setScrollMarginBlockStart(value: ScrollMarginBlockStartProperty[Double | String]): Self = StObject.set(x, "scrollMarginBlockStart", value.asInstanceOf[js.Any])
+    inline def setScrollMarginBlockStart(value: ScrollMarginBlockStart[Double | String]): Self = StObject.set(x, "scrollMarginBlockStart", value.asInstanceOf[js.Any])
     
     inline def setScrollMarginBlockStartUndefined: Self = StObject.set(x, "scrollMarginBlockStart", js.undefined)
     
     inline def setScrollMarginBlockUndefined: Self = StObject.set(x, "scrollMarginBlock", js.undefined)
     
-    inline def setScrollMarginBottom(value: ScrollMarginBottomProperty[Double | String]): Self = StObject.set(x, "scrollMarginBottom", value.asInstanceOf[js.Any])
+    inline def setScrollMarginBottom(value: ScrollMarginBottom[Double | String]): Self = StObject.set(x, "scrollMarginBottom", value.asInstanceOf[js.Any])
     
     inline def setScrollMarginBottomUndefined: Self = StObject.set(x, "scrollMarginBottom", js.undefined)
     
-    inline def setScrollMarginInline(value: ScrollMarginInlineProperty[Double | String]): Self = StObject.set(x, "scrollMarginInline", value.asInstanceOf[js.Any])
+    inline def setScrollMarginInline(value: ScrollMarginInline[Double | String]): Self = StObject.set(x, "scrollMarginInline", value.asInstanceOf[js.Any])
     
-    inline def setScrollMarginInlineEnd(value: ScrollMarginInlineEndProperty[Double | String]): Self = StObject.set(x, "scrollMarginInlineEnd", value.asInstanceOf[js.Any])
+    inline def setScrollMarginInlineEnd(value: ScrollMarginInlineEnd[Double | String]): Self = StObject.set(x, "scrollMarginInlineEnd", value.asInstanceOf[js.Any])
     
     inline def setScrollMarginInlineEndUndefined: Self = StObject.set(x, "scrollMarginInlineEnd", js.undefined)
     
-    inline def setScrollMarginInlineStart(value: ScrollMarginInlineStartProperty[Double | String]): Self = StObject.set(x, "scrollMarginInlineStart", value.asInstanceOf[js.Any])
+    inline def setScrollMarginInlineStart(value: ScrollMarginInlineStart[Double | String]): Self = StObject.set(x, "scrollMarginInlineStart", value.asInstanceOf[js.Any])
     
     inline def setScrollMarginInlineStartUndefined: Self = StObject.set(x, "scrollMarginInlineStart", js.undefined)
     
     inline def setScrollMarginInlineUndefined: Self = StObject.set(x, "scrollMarginInline", js.undefined)
     
-    inline def setScrollMarginLeft(value: ScrollMarginLeftProperty[Double | String]): Self = StObject.set(x, "scrollMarginLeft", value.asInstanceOf[js.Any])
+    inline def setScrollMarginLeft(value: ScrollMarginLeft[Double | String]): Self = StObject.set(x, "scrollMarginLeft", value.asInstanceOf[js.Any])
     
     inline def setScrollMarginLeftUndefined: Self = StObject.set(x, "scrollMarginLeft", js.undefined)
     
-    inline def setScrollMarginRight(value: ScrollMarginRightProperty[Double | String]): Self = StObject.set(x, "scrollMarginRight", value.asInstanceOf[js.Any])
+    inline def setScrollMarginRight(value: ScrollMarginRight[Double | String]): Self = StObject.set(x, "scrollMarginRight", value.asInstanceOf[js.Any])
     
     inline def setScrollMarginRightUndefined: Self = StObject.set(x, "scrollMarginRight", js.undefined)
     
-    inline def setScrollMarginTop(value: ScrollMarginTopProperty[Double | String]): Self = StObject.set(x, "scrollMarginTop", value.asInstanceOf[js.Any])
+    inline def setScrollMarginTop(value: ScrollMarginTop[Double | String]): Self = StObject.set(x, "scrollMarginTop", value.asInstanceOf[js.Any])
     
     inline def setScrollMarginTopUndefined: Self = StObject.set(x, "scrollMarginTop", js.undefined)
     
     inline def setScrollMarginUndefined: Self = StObject.set(x, "scrollMargin", js.undefined)
     
-    inline def setScrollPadding(value: ScrollPaddingProperty[Double | String]): Self = StObject.set(x, "scrollPadding", value.asInstanceOf[js.Any])
+    inline def setScrollPadding(value: ScrollPadding[Double | String]): Self = StObject.set(x, "scrollPadding", value.asInstanceOf[js.Any])
     
-    inline def setScrollPaddingBlock(value: ScrollPaddingBlockProperty[Double | String]): Self = StObject.set(x, "scrollPaddingBlock", value.asInstanceOf[js.Any])
+    inline def setScrollPaddingBlock(value: ScrollPaddingBlock[Double | String]): Self = StObject.set(x, "scrollPaddingBlock", value.asInstanceOf[js.Any])
     
-    inline def setScrollPaddingBlockEnd(value: ScrollPaddingBlockEndProperty[Double | String]): Self = StObject.set(x, "scrollPaddingBlockEnd", value.asInstanceOf[js.Any])
+    inline def setScrollPaddingBlockEnd(value: ScrollPaddingBlockEnd[Double | String]): Self = StObject.set(x, "scrollPaddingBlockEnd", value.asInstanceOf[js.Any])
     
     inline def setScrollPaddingBlockEndUndefined: Self = StObject.set(x, "scrollPaddingBlockEnd", js.undefined)
     
-    inline def setScrollPaddingBlockStart(value: ScrollPaddingBlockStartProperty[Double | String]): Self = StObject.set(x, "scrollPaddingBlockStart", value.asInstanceOf[js.Any])
+    inline def setScrollPaddingBlockStart(value: ScrollPaddingBlockStart[Double | String]): Self = StObject.set(x, "scrollPaddingBlockStart", value.asInstanceOf[js.Any])
     
     inline def setScrollPaddingBlockStartUndefined: Self = StObject.set(x, "scrollPaddingBlockStart", js.undefined)
     
     inline def setScrollPaddingBlockUndefined: Self = StObject.set(x, "scrollPaddingBlock", js.undefined)
     
-    inline def setScrollPaddingBottom(value: ScrollPaddingBottomProperty[Double | String]): Self = StObject.set(x, "scrollPaddingBottom", value.asInstanceOf[js.Any])
+    inline def setScrollPaddingBottom(value: ScrollPaddingBottom[Double | String]): Self = StObject.set(x, "scrollPaddingBottom", value.asInstanceOf[js.Any])
     
     inline def setScrollPaddingBottomUndefined: Self = StObject.set(x, "scrollPaddingBottom", js.undefined)
     
-    inline def setScrollPaddingInline(value: ScrollPaddingInlineProperty[Double | String]): Self = StObject.set(x, "scrollPaddingInline", value.asInstanceOf[js.Any])
+    inline def setScrollPaddingInline(value: ScrollPaddingInline[Double | String]): Self = StObject.set(x, "scrollPaddingInline", value.asInstanceOf[js.Any])
     
-    inline def setScrollPaddingInlineEnd(value: ScrollPaddingInlineEndProperty[Double | String]): Self = StObject.set(x, "scrollPaddingInlineEnd", value.asInstanceOf[js.Any])
+    inline def setScrollPaddingInlineEnd(value: ScrollPaddingInlineEnd[Double | String]): Self = StObject.set(x, "scrollPaddingInlineEnd", value.asInstanceOf[js.Any])
     
     inline def setScrollPaddingInlineEndUndefined: Self = StObject.set(x, "scrollPaddingInlineEnd", js.undefined)
     
-    inline def setScrollPaddingInlineStart(value: ScrollPaddingInlineStartProperty[Double | String]): Self = StObject.set(x, "scrollPaddingInlineStart", value.asInstanceOf[js.Any])
+    inline def setScrollPaddingInlineStart(value: ScrollPaddingInlineStart[Double | String]): Self = StObject.set(x, "scrollPaddingInlineStart", value.asInstanceOf[js.Any])
     
     inline def setScrollPaddingInlineStartUndefined: Self = StObject.set(x, "scrollPaddingInlineStart", js.undefined)
     
     inline def setScrollPaddingInlineUndefined: Self = StObject.set(x, "scrollPaddingInline", js.undefined)
     
-    inline def setScrollPaddingLeft(value: ScrollPaddingLeftProperty[Double | String]): Self = StObject.set(x, "scrollPaddingLeft", value.asInstanceOf[js.Any])
+    inline def setScrollPaddingLeft(value: ScrollPaddingLeft[Double | String]): Self = StObject.set(x, "scrollPaddingLeft", value.asInstanceOf[js.Any])
     
     inline def setScrollPaddingLeftUndefined: Self = StObject.set(x, "scrollPaddingLeft", js.undefined)
     
-    inline def setScrollPaddingRight(value: ScrollPaddingRightProperty[Double | String]): Self = StObject.set(x, "scrollPaddingRight", value.asInstanceOf[js.Any])
+    inline def setScrollPaddingRight(value: ScrollPaddingRight[Double | String]): Self = StObject.set(x, "scrollPaddingRight", value.asInstanceOf[js.Any])
     
     inline def setScrollPaddingRightUndefined: Self = StObject.set(x, "scrollPaddingRight", js.undefined)
     
-    inline def setScrollPaddingTop(value: ScrollPaddingTopProperty[Double | String]): Self = StObject.set(x, "scrollPaddingTop", value.asInstanceOf[js.Any])
+    inline def setScrollPaddingTop(value: ScrollPaddingTop[Double | String]): Self = StObject.set(x, "scrollPaddingTop", value.asInstanceOf[js.Any])
     
     inline def setScrollPaddingTopUndefined: Self = StObject.set(x, "scrollPaddingTop", js.undefined)
     
     inline def setScrollPaddingUndefined: Self = StObject.set(x, "scrollPadding", js.undefined)
     
-    inline def setScrollSnapAlign(value: ScrollSnapAlignProperty): Self = StObject.set(x, "scrollSnapAlign", value.asInstanceOf[js.Any])
+    inline def setScrollSnapAlign(value: ScrollSnapAlign): Self = StObject.set(x, "scrollSnapAlign", value.asInstanceOf[js.Any])
     
     inline def setScrollSnapAlignUndefined: Self = StObject.set(x, "scrollSnapAlign", js.undefined)
     
-    inline def setScrollSnapMargin(value: ScrollMarginProperty[Double | String]): Self = StObject.set(x, "scrollSnapMargin", value.asInstanceOf[js.Any])
+    inline def setScrollSnapMargin(value: ScrollMargin[Double | String]): Self = StObject.set(x, "scrollSnapMargin", value.asInstanceOf[js.Any])
     
-    inline def setScrollSnapMarginBottom(value: ScrollMarginBottomProperty[Double | String]): Self = StObject.set(x, "scrollSnapMarginBottom", value.asInstanceOf[js.Any])
+    inline def setScrollSnapMarginBottom(value: ScrollMarginBottom[Double | String]): Self = StObject.set(x, "scrollSnapMarginBottom", value.asInstanceOf[js.Any])
     
     inline def setScrollSnapMarginBottomUndefined: Self = StObject.set(x, "scrollSnapMarginBottom", js.undefined)
     
-    inline def setScrollSnapMarginLeft(value: ScrollMarginLeftProperty[Double | String]): Self = StObject.set(x, "scrollSnapMarginLeft", value.asInstanceOf[js.Any])
+    inline def setScrollSnapMarginLeft(value: ScrollMarginLeft[Double | String]): Self = StObject.set(x, "scrollSnapMarginLeft", value.asInstanceOf[js.Any])
     
     inline def setScrollSnapMarginLeftUndefined: Self = StObject.set(x, "scrollSnapMarginLeft", js.undefined)
     
-    inline def setScrollSnapMarginRight(value: ScrollMarginRightProperty[Double | String]): Self = StObject.set(x, "scrollSnapMarginRight", value.asInstanceOf[js.Any])
+    inline def setScrollSnapMarginRight(value: ScrollMarginRight[Double | String]): Self = StObject.set(x, "scrollSnapMarginRight", value.asInstanceOf[js.Any])
     
     inline def setScrollSnapMarginRightUndefined: Self = StObject.set(x, "scrollSnapMarginRight", js.undefined)
     
-    inline def setScrollSnapMarginTop(value: ScrollMarginTopProperty[Double | String]): Self = StObject.set(x, "scrollSnapMarginTop", value.asInstanceOf[js.Any])
+    inline def setScrollSnapMarginTop(value: ScrollMarginTop[Double | String]): Self = StObject.set(x, "scrollSnapMarginTop", value.asInstanceOf[js.Any])
     
     inline def setScrollSnapMarginTopUndefined: Self = StObject.set(x, "scrollSnapMarginTop", js.undefined)
     
     inline def setScrollSnapMarginUndefined: Self = StObject.set(x, "scrollSnapMargin", js.undefined)
     
-    inline def setScrollSnapStop(value: ScrollSnapStopProperty): Self = StObject.set(x, "scrollSnapStop", value.asInstanceOf[js.Any])
+    inline def setScrollSnapStop(value: ScrollSnapStop): Self = StObject.set(x, "scrollSnapStop", value.asInstanceOf[js.Any])
     
     inline def setScrollSnapStopUndefined: Self = StObject.set(x, "scrollSnapStop", js.undefined)
     
-    inline def setScrollSnapType(value: ScrollSnapTypeProperty): Self = StObject.set(x, "scrollSnapType", value.asInstanceOf[js.Any])
+    inline def setScrollSnapType(value: ScrollSnapType): Self = StObject.set(x, "scrollSnapType", value.asInstanceOf[js.Any])
     
     inline def setScrollSnapTypeUndefined: Self = StObject.set(x, "scrollSnapType", js.undefined)
     
-    inline def setScrollbarColor(value: ScrollbarColorProperty): Self = StObject.set(x, "scrollbarColor", value.asInstanceOf[js.Any])
+    inline def setScrollbarColor(value: ScrollbarColor): Self = StObject.set(x, "scrollbarColor", value.asInstanceOf[js.Any])
     
     inline def setScrollbarColorUndefined: Self = StObject.set(x, "scrollbarColor", js.undefined)
     
-    inline def setScrollbarGutter(value: ScrollbarGutterProperty): Self = StObject.set(x, "scrollbarGutter", value.asInstanceOf[js.Any])
+    inline def setScrollbarGutter(value: ScrollbarGutter): Self = StObject.set(x, "scrollbarGutter", value.asInstanceOf[js.Any])
     
     inline def setScrollbarGutterUndefined: Self = StObject.set(x, "scrollbarGutter", js.undefined)
     
-    inline def setScrollbarWidth(value: ScrollbarWidthProperty): Self = StObject.set(x, "scrollbarWidth", value.asInstanceOf[js.Any])
+    inline def setScrollbarWidth(value: ScrollbarWidth): Self = StObject.set(x, "scrollbarWidth", value.asInstanceOf[js.Any])
     
     inline def setScrollbarWidthUndefined: Self = StObject.set(x, "scrollbarWidth", js.undefined)
     
-    inline def setShapeImageThreshold(value: ShapeImageThresholdProperty): Self = StObject.set(x, "shapeImageThreshold", value.asInstanceOf[js.Any])
+    inline def setShapeImageThreshold(value: ShapeImageThreshold): Self = StObject.set(x, "shapeImageThreshold", value.asInstanceOf[js.Any])
     
     inline def setShapeImageThresholdUndefined: Self = StObject.set(x, "shapeImageThreshold", js.undefined)
     
-    inline def setShapeMargin(value: ShapeMarginProperty[Double | String]): Self = StObject.set(x, "shapeMargin", value.asInstanceOf[js.Any])
+    inline def setShapeMargin(value: ShapeMargin[Double | String]): Self = StObject.set(x, "shapeMargin", value.asInstanceOf[js.Any])
     
     inline def setShapeMarginUndefined: Self = StObject.set(x, "shapeMargin", js.undefined)
     
-    inline def setShapeOutside(value: ShapeOutsideProperty): Self = StObject.set(x, "shapeOutside", value.asInstanceOf[js.Any])
+    inline def setShapeOutside(value: ShapeOutside): Self = StObject.set(x, "shapeOutside", value.asInstanceOf[js.Any])
     
     inline def setShapeOutsideUndefined: Self = StObject.set(x, "shapeOutside", js.undefined)
     
-    inline def setShapeRendering(value: ShapeRenderingProperty): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
+    inline def setShapeRendering(value: ShapeRendering): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
     
     inline def setShapeRenderingUndefined: Self = StObject.set(x, "shapeRendering", js.undefined)
     
-    inline def setStopColor(value: StopColorProperty): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
+    inline def setSize(value: (Width[Double | String]) | (js.Array[NonNullable[js.UndefOr[Width[Double | String]]]])): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setSizeVarargs(value: (NonNullable[js.UndefOr[Width[Double | String]]])*): Self = StObject.set(x, "size", js.Array(value*))
+    
+    inline def setStopColor(value: StopColor): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
     
     inline def setStopColorUndefined: Self = StObject.set(x, "stopColor", js.undefined)
     
-    inline def setStopOpacity(value: GlobalsNumber): Self = StObject.set(x, "stopOpacity", value.asInstanceOf[js.Any])
+    inline def setStopOpacity(value: StopOpacity): Self = StObject.set(x, "stopOpacity", value.asInstanceOf[js.Any])
     
     inline def setStopOpacityUndefined: Self = StObject.set(x, "stopOpacity", js.undefined)
     
-    inline def setStroke(value: StrokeProperty): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: Stroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    inline def setStrokeDasharray(value: StrokeDasharrayProperty[Double | String]): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
+    inline def setStrokeDasharray(value: StrokeDasharray[Double | String]): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
     
     inline def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
     
-    inline def setStrokeDashoffset(value: StrokeDashoffsetProperty[Double | String]): Self = StObject.set(x, "strokeDashoffset", value.asInstanceOf[js.Any])
+    inline def setStrokeDashoffset(value: StrokeDashoffset[Double | String]): Self = StObject.set(x, "strokeDashoffset", value.asInstanceOf[js.Any])
     
     inline def setStrokeDashoffsetUndefined: Self = StObject.set(x, "strokeDashoffset", js.undefined)
     
-    inline def setStrokeLinecap(value: StrokeLinecapProperty): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+    inline def setStrokeLinecap(value: StrokeLinecap): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
     
     inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
     
-    inline def setStrokeLinejoin(value: StrokeLinejoinProperty): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
+    inline def setStrokeLinejoin(value: StrokeLinejoin): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
     
     inline def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
     
-    inline def setStrokeMiterlimit(value: GlobalsNumber): Self = StObject.set(x, "strokeMiterlimit", value.asInstanceOf[js.Any])
+    inline def setStrokeMiterlimit(value: StrokeMiterlimit): Self = StObject.set(x, "strokeMiterlimit", value.asInstanceOf[js.Any])
     
     inline def setStrokeMiterlimitUndefined: Self = StObject.set(x, "strokeMiterlimit", js.undefined)
     
-    inline def setStrokeOpacity(value: GlobalsNumber): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+    inline def setStrokeOpacity(value: StrokeOpacity): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
     inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
     inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    inline def setStrokeWidth(value: StrokeWidthProperty[Double | String]): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: StrokeWidth[Double | String]): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     
-    inline def setTabSize(value: TabSizeProperty[Double | String]): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
+    inline def setTabSize(value: TabSize[Double | String]): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
     
     inline def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
     
-    inline def setTableLayout(value: TableLayoutProperty): Self = StObject.set(x, "tableLayout", value.asInstanceOf[js.Any])
+    inline def setTableLayout(value: TableLayout): Self = StObject.set(x, "tableLayout", value.asInstanceOf[js.Any])
     
     inline def setTableLayoutUndefined: Self = StObject.set(x, "tableLayout", js.undefined)
     
-    inline def setTextAlign(value: TextAlignProperty): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: TextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
-    inline def setTextAlignLast(value: TextAlignLastProperty): Self = StObject.set(x, "textAlignLast", value.asInstanceOf[js.Any])
+    inline def setTextAlignLast(value: TextAlignLast): Self = StObject.set(x, "textAlignLast", value.asInstanceOf[js.Any])
     
     inline def setTextAlignLastUndefined: Self = StObject.set(x, "textAlignLast", js.undefined)
     
     inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
-    inline def setTextAnchor(value: TextAnchorProperty): Self = StObject.set(x, "textAnchor", value.asInstanceOf[js.Any])
+    inline def setTextAnchor(value: TextAnchor): Self = StObject.set(x, "textAnchor", value.asInstanceOf[js.Any])
     
     inline def setTextAnchorUndefined: Self = StObject.set(x, "textAnchor", js.undefined)
     
-    inline def setTextCombineUpright(value: TextCombineUprightProperty): Self = StObject.set(x, "textCombineUpright", value.asInstanceOf[js.Any])
+    inline def setTextCombineUpright(value: TextCombineUpright): Self = StObject.set(x, "textCombineUpright", value.asInstanceOf[js.Any])
     
     inline def setTextCombineUprightUndefined: Self = StObject.set(x, "textCombineUpright", js.undefined)
     
-    inline def setTextDecoration(value: TextDecorationProperty[Double | String]): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
+    inline def setTextDecoration(value: TextDecoration[Double | String]): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     
-    inline def setTextDecorationColor(value: TextDecorationColorProperty): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
+    inline def setTextDecorationColor(value: TextDecorationColor): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
     
     inline def setTextDecorationColorUndefined: Self = StObject.set(x, "textDecorationColor", js.undefined)
     
-    inline def setTextDecorationLine(value: TextDecorationLineProperty): Self = StObject.set(x, "textDecorationLine", value.asInstanceOf[js.Any])
+    inline def setTextDecorationLine(value: TextDecorationLine): Self = StObject.set(x, "textDecorationLine", value.asInstanceOf[js.Any])
     
     inline def setTextDecorationLineUndefined: Self = StObject.set(x, "textDecorationLine", js.undefined)
     
-    inline def setTextDecorationSkip(value: TextDecorationSkipProperty): Self = StObject.set(x, "textDecorationSkip", value.asInstanceOf[js.Any])
+    inline def setTextDecorationSkip(value: TextDecorationSkip): Self = StObject.set(x, "textDecorationSkip", value.asInstanceOf[js.Any])
     
-    inline def setTextDecorationSkipInk(value: TextDecorationSkipInkProperty): Self = StObject.set(x, "textDecorationSkipInk", value.asInstanceOf[js.Any])
+    inline def setTextDecorationSkipInk(value: TextDecorationSkipInk): Self = StObject.set(x, "textDecorationSkipInk", value.asInstanceOf[js.Any])
     
     inline def setTextDecorationSkipInkUndefined: Self = StObject.set(x, "textDecorationSkipInk", js.undefined)
     
     inline def setTextDecorationSkipUndefined: Self = StObject.set(x, "textDecorationSkip", js.undefined)
     
-    inline def setTextDecorationStyle(value: TextDecorationStyleProperty): Self = StObject.set(x, "textDecorationStyle", value.asInstanceOf[js.Any])
+    inline def setTextDecorationStyle(value: TextDecorationStyle): Self = StObject.set(x, "textDecorationStyle", value.asInstanceOf[js.Any])
     
     inline def setTextDecorationStyleUndefined: Self = StObject.set(x, "textDecorationStyle", js.undefined)
     
-    inline def setTextDecorationThickness(value: TextDecorationThicknessProperty[Double | String]): Self = StObject.set(x, "textDecorationThickness", value.asInstanceOf[js.Any])
+    inline def setTextDecorationThickness(value: TextDecorationThickness[Double | String]): Self = StObject.set(x, "textDecorationThickness", value.asInstanceOf[js.Any])
     
     inline def setTextDecorationThicknessUndefined: Self = StObject.set(x, "textDecorationThickness", js.undefined)
     
     inline def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
     
-    inline def setTextDecorationWidth(value: TextDecorationThicknessProperty[Double | String]): Self = StObject.set(x, "textDecorationWidth", value.asInstanceOf[js.Any])
+    inline def setTextEmphasis(value: TextEmphasis): Self = StObject.set(x, "textEmphasis", value.asInstanceOf[js.Any])
     
-    inline def setTextDecorationWidthUndefined: Self = StObject.set(x, "textDecorationWidth", js.undefined)
-    
-    inline def setTextEmphasis(value: TextEmphasisProperty): Self = StObject.set(x, "textEmphasis", value.asInstanceOf[js.Any])
-    
-    inline def setTextEmphasisColor(value: TextEmphasisColorProperty): Self = StObject.set(x, "textEmphasisColor", value.asInstanceOf[js.Any])
+    inline def setTextEmphasisColor(value: TextEmphasisColor): Self = StObject.set(x, "textEmphasisColor", value.asInstanceOf[js.Any])
     
     inline def setTextEmphasisColorUndefined: Self = StObject.set(x, "textEmphasisColor", js.undefined)
     
-    inline def setTextEmphasisPosition(value: GlobalsString): Self = StObject.set(x, "textEmphasisPosition", value.asInstanceOf[js.Any])
+    inline def setTextEmphasisPosition(value: TextEmphasisPosition): Self = StObject.set(x, "textEmphasisPosition", value.asInstanceOf[js.Any])
     
     inline def setTextEmphasisPositionUndefined: Self = StObject.set(x, "textEmphasisPosition", js.undefined)
     
-    inline def setTextEmphasisStyle(value: TextEmphasisStyleProperty): Self = StObject.set(x, "textEmphasisStyle", value.asInstanceOf[js.Any])
+    inline def setTextEmphasisStyle(value: TextEmphasisStyle): Self = StObject.set(x, "textEmphasisStyle", value.asInstanceOf[js.Any])
     
     inline def setTextEmphasisStyleUndefined: Self = StObject.set(x, "textEmphasisStyle", js.undefined)
     
     inline def setTextEmphasisUndefined: Self = StObject.set(x, "textEmphasis", js.undefined)
     
-    inline def setTextIndent(value: TextIndentProperty[Double | String]): Self = StObject.set(x, "textIndent", value.asInstanceOf[js.Any])
+    inline def setTextIndent(value: TextIndent[Double | String]): Self = StObject.set(x, "textIndent", value.asInstanceOf[js.Any])
     
     inline def setTextIndentUndefined: Self = StObject.set(x, "textIndent", js.undefined)
     
-    inline def setTextJustify(value: TextJustifyProperty): Self = StObject.set(x, "textJustify", value.asInstanceOf[js.Any])
+    inline def setTextJustify(value: TextJustify): Self = StObject.set(x, "textJustify", value.asInstanceOf[js.Any])
     
     inline def setTextJustifyUndefined: Self = StObject.set(x, "textJustify", js.undefined)
     
-    inline def setTextOrientation(value: TextOrientationProperty): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
+    inline def setTextOrientation(value: TextOrientation): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
     
     inline def setTextOrientationUndefined: Self = StObject.set(x, "textOrientation", js.undefined)
     
-    inline def setTextOverflow(value: TextOverflowProperty): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
+    inline def setTextOverflow(value: TextOverflow): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
     
     inline def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
     
-    inline def setTextRendering(value: TextRenderingProperty): Self = StObject.set(x, "textRendering", value.asInstanceOf[js.Any])
+    inline def setTextRendering(value: TextRendering): Self = StObject.set(x, "textRendering", value.asInstanceOf[js.Any])
     
     inline def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
     
-    inline def setTextShadow(value: TextShadowProperty): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
+    inline def setTextShadow(value: TextShadow): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
     
     inline def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
     
-    inline def setTextSizeAdjust(value: TextSizeAdjustProperty): Self = StObject.set(x, "textSizeAdjust", value.asInstanceOf[js.Any])
+    inline def setTextSizeAdjust(value: TextSizeAdjust): Self = StObject.set(x, "textSizeAdjust", value.asInstanceOf[js.Any])
     
     inline def setTextSizeAdjustUndefined: Self = StObject.set(x, "textSizeAdjust", js.undefined)
     
-    inline def setTextTransform(value: TextTransformProperty): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
+    inline def setTextTransform(value: TextTransform): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
     
     inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
     
-    inline def setTextUnderlineOffset(value: TextUnderlineOffsetProperty[Double | String]): Self = StObject.set(x, "textUnderlineOffset", value.asInstanceOf[js.Any])
+    inline def setTextUnderlineOffset(value: TextUnderlineOffset[Double | String]): Self = StObject.set(x, "textUnderlineOffset", value.asInstanceOf[js.Any])
     
     inline def setTextUnderlineOffsetUndefined: Self = StObject.set(x, "textUnderlineOffset", js.undefined)
     
-    inline def setTextUnderlinePosition(value: TextUnderlinePositionProperty): Self = StObject.set(x, "textUnderlinePosition", value.asInstanceOf[js.Any])
+    inline def setTextUnderlinePosition(value: TextUnderlinePosition): Self = StObject.set(x, "textUnderlinePosition", value.asInstanceOf[js.Any])
     
     inline def setTextUnderlinePositionUndefined: Self = StObject.set(x, "textUnderlinePosition", js.undefined)
     
-    inline def setTop(value: TopProperty[Double | String]): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Top[Double | String]): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    inline def setTouchAction(value: TouchActionProperty): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
+    inline def setTouchAction(value: TouchAction): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
     
     inline def setTouchActionUndefined: Self = StObject.set(x, "touchAction", js.undefined)
     
-    inline def setTransform(value: TransformProperty): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    inline def setTransformBox(value: TransformBoxProperty): Self = StObject.set(x, "transformBox", value.asInstanceOf[js.Any])
+    inline def setTransformBox(value: TransformBox): Self = StObject.set(x, "transformBox", value.asInstanceOf[js.Any])
     
     inline def setTransformBoxUndefined: Self = StObject.set(x, "transformBox", js.undefined)
     
-    inline def setTransformOrigin(value: TransformOriginProperty[Double | String]): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
+    inline def setTransformOrigin(value: TransformOrigin[Double | String]): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
     
     inline def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
     
-    inline def setTransformStyle(value: TransformStyleProperty): Self = StObject.set(x, "transformStyle", value.asInstanceOf[js.Any])
+    inline def setTransformStyle(value: TransformStyle): Self = StObject.set(x, "transformStyle", value.asInstanceOf[js.Any])
     
     inline def setTransformStyleUndefined: Self = StObject.set(x, "transformStyle", js.undefined)
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    inline def setTransition(value: TransitionProperty): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: Transition[String]): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    inline def setTransitionDelay(value: GlobalsString): Self = StObject.set(x, "transitionDelay", value.asInstanceOf[js.Any])
+    inline def setTransitionDelay(value: TransitionDelay[String]): Self = StObject.set(x, "transitionDelay", value.asInstanceOf[js.Any])
     
     inline def setTransitionDelayUndefined: Self = StObject.set(x, "transitionDelay", js.undefined)
     
-    inline def setTransitionDuration(value: GlobalsString): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+    inline def setTransitionDuration(value: TransitionDuration[String]): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
     inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
-    inline def setTransitionProperty(value: TransitionPropertyProperty): Self = StObject.set(x, "transitionProperty", value.asInstanceOf[js.Any])
+    inline def setTransitionProperty(value: TransitionProperty): Self = StObject.set(x, "transitionProperty", value.asInstanceOf[js.Any])
     
     inline def setTransitionPropertyUndefined: Self = StObject.set(x, "transitionProperty", js.undefined)
     
-    inline def setTransitionTimingFunction(value: TransitionTimingFunctionProperty): Self = StObject.set(x, "transitionTimingFunction", value.asInstanceOf[js.Any])
+    inline def setTransitionTimingFunction(value: TransitionTimingFunction): Self = StObject.set(x, "transitionTimingFunction", value.asInstanceOf[js.Any])
     
     inline def setTransitionTimingFunctionUndefined: Self = StObject.set(x, "transitionTimingFunction", js.undefined)
     
     inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
-    inline def setTranslate(value: TranslateProperty[Double | String]): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    inline def setTranslate(value: Translate[Double | String]): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
-    inline def setUnicodeBidi(value: UnicodeBidiProperty): Self = StObject.set(x, "unicodeBidi", value.asInstanceOf[js.Any])
+    inline def setUnicodeBidi(value: UnicodeBidi): Self = StObject.set(x, "unicodeBidi", value.asInstanceOf[js.Any])
     
     inline def setUnicodeBidiUndefined: Self = StObject.set(x, "unicodeBidi", js.undefined)
     
-    inline def setUserSelect(value: UserSelectProperty): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
+    inline def setUserSelect(value: UserSelect): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
     
     inline def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
     
-    inline def setVectorEffect(value: VectorEffectProperty): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
+    inline def setVectorEffect(value: VectorEffect): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
     
     inline def setVectorEffectUndefined: Self = StObject.set(x, "vectorEffect", js.undefined)
     
-    inline def setVerticalAlign(value: VerticalAlignProperty[Double | String]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: VerticalAlign[Double | String]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
-    inline def setVisibility(value: VisibilityProperty): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: Visibility): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
     
-    inline def setWhiteSpace(value: WhiteSpaceProperty): Self = StObject.set(x, "whiteSpace", value.asInstanceOf[js.Any])
+    inline def setWebkitAlignContent(value: AlignContent): Self = StObject.set(x, "WebkitAlignContent", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAlignContentUndefined: Self = StObject.set(x, "WebkitAlignContent", js.undefined)
+    
+    inline def setWebkitAlignItems(value: AlignItems): Self = StObject.set(x, "WebkitAlignItems", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAlignItemsUndefined: Self = StObject.set(x, "WebkitAlignItems", js.undefined)
+    
+    inline def setWebkitAlignSelf(value: AlignSelf): Self = StObject.set(x, "WebkitAlignSelf", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAlignSelfUndefined: Self = StObject.set(x, "WebkitAlignSelf", js.undefined)
+    
+    inline def setWebkitAnimation(value: Animation[String]): Self = StObject.set(x, "WebkitAnimation", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationDelay(value: AnimationDelay[String]): Self = StObject.set(x, "WebkitAnimationDelay", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationDelayUndefined: Self = StObject.set(x, "WebkitAnimationDelay", js.undefined)
+    
+    inline def setWebkitAnimationDirection(value: AnimationDirection): Self = StObject.set(x, "WebkitAnimationDirection", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationDirectionUndefined: Self = StObject.set(x, "WebkitAnimationDirection", js.undefined)
+    
+    inline def setWebkitAnimationDuration(value: AnimationDuration[String]): Self = StObject.set(x, "WebkitAnimationDuration", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationDurationUndefined: Self = StObject.set(x, "WebkitAnimationDuration", js.undefined)
+    
+    inline def setWebkitAnimationFillMode(value: AnimationFillMode): Self = StObject.set(x, "WebkitAnimationFillMode", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationFillModeUndefined: Self = StObject.set(x, "WebkitAnimationFillMode", js.undefined)
+    
+    inline def setWebkitAnimationIterationCount(value: AnimationIterationCount): Self = StObject.set(x, "WebkitAnimationIterationCount", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationIterationCountUndefined: Self = StObject.set(x, "WebkitAnimationIterationCount", js.undefined)
+    
+    inline def setWebkitAnimationName(value: AnimationName): Self = StObject.set(x, "WebkitAnimationName", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationNameUndefined: Self = StObject.set(x, "WebkitAnimationName", js.undefined)
+    
+    inline def setWebkitAnimationPlayState(value: AnimationPlayState): Self = StObject.set(x, "WebkitAnimationPlayState", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationPlayStateUndefined: Self = StObject.set(x, "WebkitAnimationPlayState", js.undefined)
+    
+    inline def setWebkitAnimationTimingFunction(value: AnimationTimingFunction): Self = StObject.set(x, "WebkitAnimationTimingFunction", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationTimingFunctionUndefined: Self = StObject.set(x, "WebkitAnimationTimingFunction", js.undefined)
+    
+    inline def setWebkitAnimationUndefined: Self = StObject.set(x, "WebkitAnimation", js.undefined)
+    
+    inline def setWebkitAppearance(value: WebkitAppearance): Self = StObject.set(x, "WebkitAppearance", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAppearanceUndefined: Self = StObject.set(x, "WebkitAppearance", js.undefined)
+    
+    inline def setWebkitBackdropFilter(value: BackdropFilter): Self = StObject.set(x, "WebkitBackdropFilter", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBackdropFilterUndefined: Self = StObject.set(x, "WebkitBackdropFilter", js.undefined)
+    
+    inline def setWebkitBackfaceVisibility(value: BackfaceVisibility): Self = StObject.set(x, "WebkitBackfaceVisibility", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBackfaceVisibilityUndefined: Self = StObject.set(x, "WebkitBackfaceVisibility", js.undefined)
+    
+    inline def setWebkitBackgroundClip(value: BackgroundClip): Self = StObject.set(x, "WebkitBackgroundClip", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBackgroundClipUndefined: Self = StObject.set(x, "WebkitBackgroundClip", js.undefined)
+    
+    inline def setWebkitBackgroundOrigin(value: BackgroundOrigin): Self = StObject.set(x, "WebkitBackgroundOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBackgroundOriginUndefined: Self = StObject.set(x, "WebkitBackgroundOrigin", js.undefined)
+    
+    inline def setWebkitBackgroundSize(value: BackgroundSize[Double | String]): Self = StObject.set(x, "WebkitBackgroundSize", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBackgroundSizeUndefined: Self = StObject.set(x, "WebkitBackgroundSize", js.undefined)
+    
+    inline def setWebkitBorderBefore(value: WebkitBorderBefore[Double | String]): Self = StObject.set(x, "WebkitBorderBefore", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderBeforeColor(value: WebkitBorderBeforeColor): Self = StObject.set(x, "WebkitBorderBeforeColor", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderBeforeColorUndefined: Self = StObject.set(x, "WebkitBorderBeforeColor", js.undefined)
+    
+    inline def setWebkitBorderBeforeStyle(value: WebkitBorderBeforeStyle): Self = StObject.set(x, "WebkitBorderBeforeStyle", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderBeforeStyleUndefined: Self = StObject.set(x, "WebkitBorderBeforeStyle", js.undefined)
+    
+    inline def setWebkitBorderBeforeUndefined: Self = StObject.set(x, "WebkitBorderBefore", js.undefined)
+    
+    inline def setWebkitBorderBeforeWidth(value: WebkitBorderBeforeWidth[Double | String]): Self = StObject.set(x, "WebkitBorderBeforeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderBeforeWidthUndefined: Self = StObject.set(x, "WebkitBorderBeforeWidth", js.undefined)
+    
+    inline def setWebkitBorderBottomLeftRadius(value: BorderBottomLeftRadius[Double | String]): Self = StObject.set(x, "WebkitBorderBottomLeftRadius", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "WebkitBorderBottomLeftRadius", js.undefined)
+    
+    inline def setWebkitBorderBottomRightRadius(value: BorderBottomRightRadius[Double | String]): Self = StObject.set(x, "WebkitBorderBottomRightRadius", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderBottomRightRadiusUndefined: Self = StObject.set(x, "WebkitBorderBottomRightRadius", js.undefined)
+    
+    inline def setWebkitBorderImage(value: BorderImage): Self = StObject.set(x, "WebkitBorderImage", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderImageSlice(value: BorderImageSlice): Self = StObject.set(x, "WebkitBorderImageSlice", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderImageSliceUndefined: Self = StObject.set(x, "WebkitBorderImageSlice", js.undefined)
+    
+    inline def setWebkitBorderImageUndefined: Self = StObject.set(x, "WebkitBorderImage", js.undefined)
+    
+    inline def setWebkitBorderRadius(value: BorderRadius[Double | String]): Self = StObject.set(x, "WebkitBorderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderRadiusUndefined: Self = StObject.set(x, "WebkitBorderRadius", js.undefined)
+    
+    inline def setWebkitBorderTopLeftRadius(value: BorderTopLeftRadius[Double | String]): Self = StObject.set(x, "WebkitBorderTopLeftRadius", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderTopLeftRadiusUndefined: Self = StObject.set(x, "WebkitBorderTopLeftRadius", js.undefined)
+    
+    inline def setWebkitBorderTopRightRadius(value: BorderTopRightRadius[Double | String]): Self = StObject.set(x, "WebkitBorderTopRightRadius", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderTopRightRadiusUndefined: Self = StObject.set(x, "WebkitBorderTopRightRadius", js.undefined)
+    
+    inline def setWebkitBoxDecorationBreak(value: BoxDecorationBreak): Self = StObject.set(x, "WebkitBoxDecorationBreak", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBoxDecorationBreakUndefined: Self = StObject.set(x, "WebkitBoxDecorationBreak", js.undefined)
+    
+    inline def setWebkitBoxReflect(value: WebkitBoxReflect[Double | String]): Self = StObject.set(x, "WebkitBoxReflect", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBoxReflectUndefined: Self = StObject.set(x, "WebkitBoxReflect", js.undefined)
+    
+    inline def setWebkitBoxShadow(value: BoxShadow): Self = StObject.set(x, "WebkitBoxShadow", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBoxShadowUndefined: Self = StObject.set(x, "WebkitBoxShadow", js.undefined)
+    
+    inline def setWebkitBoxSizing(value: BoxSizing): Self = StObject.set(x, "WebkitBoxSizing", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBoxSizingUndefined: Self = StObject.set(x, "WebkitBoxSizing", js.undefined)
+    
+    inline def setWebkitClipPath(value: ClipPath): Self = StObject.set(x, "WebkitClipPath", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitClipPathUndefined: Self = StObject.set(x, "WebkitClipPath", js.undefined)
+    
+    inline def setWebkitColumnCount(value: ColumnCount): Self = StObject.set(x, "WebkitColumnCount", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnCountUndefined: Self = StObject.set(x, "WebkitColumnCount", js.undefined)
+    
+    inline def setWebkitColumnFill(value: ColumnFill): Self = StObject.set(x, "WebkitColumnFill", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnFillUndefined: Self = StObject.set(x, "WebkitColumnFill", js.undefined)
+    
+    inline def setWebkitColumnRule(value: ColumnRule[Double | String]): Self = StObject.set(x, "WebkitColumnRule", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnRuleColor(value: ColumnRuleColor): Self = StObject.set(x, "WebkitColumnRuleColor", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnRuleColorUndefined: Self = StObject.set(x, "WebkitColumnRuleColor", js.undefined)
+    
+    inline def setWebkitColumnRuleStyle(value: ColumnRuleStyle): Self = StObject.set(x, "WebkitColumnRuleStyle", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnRuleStyleUndefined: Self = StObject.set(x, "WebkitColumnRuleStyle", js.undefined)
+    
+    inline def setWebkitColumnRuleUndefined: Self = StObject.set(x, "WebkitColumnRule", js.undefined)
+    
+    inline def setWebkitColumnRuleWidth(value: ColumnRuleWidth[Double | String]): Self = StObject.set(x, "WebkitColumnRuleWidth", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnRuleWidthUndefined: Self = StObject.set(x, "WebkitColumnRuleWidth", js.undefined)
+    
+    inline def setWebkitColumnSpan(value: ColumnSpan): Self = StObject.set(x, "WebkitColumnSpan", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnSpanUndefined: Self = StObject.set(x, "WebkitColumnSpan", js.undefined)
+    
+    inline def setWebkitColumnWidth(value: ColumnWidth[Double | String]): Self = StObject.set(x, "WebkitColumnWidth", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnWidthUndefined: Self = StObject.set(x, "WebkitColumnWidth", js.undefined)
+    
+    inline def setWebkitColumns(value: Columns[Double | String]): Self = StObject.set(x, "WebkitColumns", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnsUndefined: Self = StObject.set(x, "WebkitColumns", js.undefined)
+    
+    inline def setWebkitFilter(value: Filter): Self = StObject.set(x, "WebkitFilter", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFilterUndefined: Self = StObject.set(x, "WebkitFilter", js.undefined)
+    
+    inline def setWebkitFlex(value: Flex[Double | String]): Self = StObject.set(x, "WebkitFlex", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFlexBasis(value: FlexBasis[Double | String]): Self = StObject.set(x, "WebkitFlexBasis", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFlexBasisUndefined: Self = StObject.set(x, "WebkitFlexBasis", js.undefined)
+    
+    inline def setWebkitFlexDirection(value: FlexDirection): Self = StObject.set(x, "WebkitFlexDirection", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFlexDirectionUndefined: Self = StObject.set(x, "WebkitFlexDirection", js.undefined)
+    
+    inline def setWebkitFlexFlow(value: FlexFlow): Self = StObject.set(x, "WebkitFlexFlow", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFlexFlowUndefined: Self = StObject.set(x, "WebkitFlexFlow", js.undefined)
+    
+    inline def setWebkitFlexGrow(value: FlexGrow): Self = StObject.set(x, "WebkitFlexGrow", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFlexGrowUndefined: Self = StObject.set(x, "WebkitFlexGrow", js.undefined)
+    
+    inline def setWebkitFlexShrink(value: FlexShrink): Self = StObject.set(x, "WebkitFlexShrink", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFlexShrinkUndefined: Self = StObject.set(x, "WebkitFlexShrink", js.undefined)
+    
+    inline def setWebkitFlexUndefined: Self = StObject.set(x, "WebkitFlex", js.undefined)
+    
+    inline def setWebkitFlexWrap(value: FlexWrap): Self = StObject.set(x, "WebkitFlexWrap", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFlexWrapUndefined: Self = StObject.set(x, "WebkitFlexWrap", js.undefined)
+    
+    inline def setWebkitFontFeatureSettings(value: FontFeatureSettings): Self = StObject.set(x, "WebkitFontFeatureSettings", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFontFeatureSettingsUndefined: Self = StObject.set(x, "WebkitFontFeatureSettings", js.undefined)
+    
+    inline def setWebkitFontKerning(value: FontKerning): Self = StObject.set(x, "WebkitFontKerning", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFontKerningUndefined: Self = StObject.set(x, "WebkitFontKerning", js.undefined)
+    
+    inline def setWebkitFontSmoothing(value: FontSmooth[Double | String]): Self = StObject.set(x, "WebkitFontSmoothing", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFontSmoothingUndefined: Self = StObject.set(x, "WebkitFontSmoothing", js.undefined)
+    
+    inline def setWebkitFontVariantLigatures(value: FontVariantLigatures): Self = StObject.set(x, "WebkitFontVariantLigatures", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFontVariantLigaturesUndefined: Self = StObject.set(x, "WebkitFontVariantLigatures", js.undefined)
+    
+    inline def setWebkitHyphenateCharacter(value: HyphenateCharacter): Self = StObject.set(x, "WebkitHyphenateCharacter", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitHyphenateCharacterUndefined: Self = StObject.set(x, "WebkitHyphenateCharacter", js.undefined)
+    
+    inline def setWebkitHyphens(value: Hyphens): Self = StObject.set(x, "WebkitHyphens", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitHyphensUndefined: Self = StObject.set(x, "WebkitHyphens", js.undefined)
+    
+    inline def setWebkitInitialLetter(value: InitialLetter): Self = StObject.set(x, "WebkitInitialLetter", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitInitialLetterUndefined: Self = StObject.set(x, "WebkitInitialLetter", js.undefined)
+    
+    inline def setWebkitJustifyContent(value: JustifyContent): Self = StObject.set(x, "WebkitJustifyContent", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitJustifyContentUndefined: Self = StObject.set(x, "WebkitJustifyContent", js.undefined)
+    
+    inline def setWebkitLineBreak(value: LineBreak): Self = StObject.set(x, "WebkitLineBreak", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitLineBreakUndefined: Self = StObject.set(x, "WebkitLineBreak", js.undefined)
+    
+    inline def setWebkitLineClamp(value: WebkitLineClamp): Self = StObject.set(x, "WebkitLineClamp", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitLineClampUndefined: Self = StObject.set(x, "WebkitLineClamp", js.undefined)
+    
+    inline def setWebkitMarginEnd(value: MarginInlineEnd[Double | String]): Self = StObject.set(x, "WebkitMarginEnd", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMarginEndUndefined: Self = StObject.set(x, "WebkitMarginEnd", js.undefined)
+    
+    inline def setWebkitMarginStart(value: MarginInlineStart[Double | String]): Self = StObject.set(x, "WebkitMarginStart", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMarginStartUndefined: Self = StObject.set(x, "WebkitMarginStart", js.undefined)
+    
+    inline def setWebkitMask(value: WebkitMask[Double | String]): Self = StObject.set(x, "WebkitMask", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskAttachment(value: WebkitMaskAttachment): Self = StObject.set(x, "WebkitMaskAttachment", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskAttachmentUndefined: Self = StObject.set(x, "WebkitMaskAttachment", js.undefined)
+    
+    inline def setWebkitMaskBoxImage(value: MaskBorder): Self = StObject.set(x, "WebkitMaskBoxImage", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageOutset(value: MaskBorderOutset[Double | String]): Self = StObject.set(x, "WebkitMaskBoxImageOutset", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageOutsetUndefined: Self = StObject.set(x, "WebkitMaskBoxImageOutset", js.undefined)
+    
+    inline def setWebkitMaskBoxImageRepeat(value: MaskBorderRepeat): Self = StObject.set(x, "WebkitMaskBoxImageRepeat", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageRepeatUndefined: Self = StObject.set(x, "WebkitMaskBoxImageRepeat", js.undefined)
+    
+    inline def setWebkitMaskBoxImageSlice(value: MaskBorderSlice): Self = StObject.set(x, "WebkitMaskBoxImageSlice", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageSliceUndefined: Self = StObject.set(x, "WebkitMaskBoxImageSlice", js.undefined)
+    
+    inline def setWebkitMaskBoxImageSource(value: MaskBorderSource): Self = StObject.set(x, "WebkitMaskBoxImageSource", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageSourceUndefined: Self = StObject.set(x, "WebkitMaskBoxImageSource", js.undefined)
+    
+    inline def setWebkitMaskBoxImageUndefined: Self = StObject.set(x, "WebkitMaskBoxImage", js.undefined)
+    
+    inline def setWebkitMaskBoxImageWidth(value: MaskBorderWidth[Double | String]): Self = StObject.set(x, "WebkitMaskBoxImageWidth", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageWidthUndefined: Self = StObject.set(x, "WebkitMaskBoxImageWidth", js.undefined)
+    
+    inline def setWebkitMaskClip(value: WebkitMaskClip): Self = StObject.set(x, "WebkitMaskClip", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskClipUndefined: Self = StObject.set(x, "WebkitMaskClip", js.undefined)
+    
+    inline def setWebkitMaskComposite(value: WebkitMaskComposite): Self = StObject.set(x, "WebkitMaskComposite", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskCompositeUndefined: Self = StObject.set(x, "WebkitMaskComposite", js.undefined)
+    
+    inline def setWebkitMaskImage(value: WebkitMaskImage): Self = StObject.set(x, "WebkitMaskImage", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskImageUndefined: Self = StObject.set(x, "WebkitMaskImage", js.undefined)
+    
+    inline def setWebkitMaskOrigin(value: WebkitMaskOrigin): Self = StObject.set(x, "WebkitMaskOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskOriginUndefined: Self = StObject.set(x, "WebkitMaskOrigin", js.undefined)
+    
+    inline def setWebkitMaskPosition(value: WebkitMaskPosition[Double | String]): Self = StObject.set(x, "WebkitMaskPosition", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskPositionUndefined: Self = StObject.set(x, "WebkitMaskPosition", js.undefined)
+    
+    inline def setWebkitMaskPositionX(value: WebkitMaskPositionX[Double | String]): Self = StObject.set(x, "WebkitMaskPositionX", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskPositionXUndefined: Self = StObject.set(x, "WebkitMaskPositionX", js.undefined)
+    
+    inline def setWebkitMaskPositionY(value: WebkitMaskPositionY[Double | String]): Self = StObject.set(x, "WebkitMaskPositionY", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskPositionYUndefined: Self = StObject.set(x, "WebkitMaskPositionY", js.undefined)
+    
+    inline def setWebkitMaskRepeat(value: WebkitMaskRepeat): Self = StObject.set(x, "WebkitMaskRepeat", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskRepeatUndefined: Self = StObject.set(x, "WebkitMaskRepeat", js.undefined)
+    
+    inline def setWebkitMaskRepeatX(value: WebkitMaskRepeatX): Self = StObject.set(x, "WebkitMaskRepeatX", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskRepeatXUndefined: Self = StObject.set(x, "WebkitMaskRepeatX", js.undefined)
+    
+    inline def setWebkitMaskRepeatY(value: WebkitMaskRepeatY): Self = StObject.set(x, "WebkitMaskRepeatY", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskRepeatYUndefined: Self = StObject.set(x, "WebkitMaskRepeatY", js.undefined)
+    
+    inline def setWebkitMaskSize(value: WebkitMaskSize[Double | String]): Self = StObject.set(x, "WebkitMaskSize", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskSizeUndefined: Self = StObject.set(x, "WebkitMaskSize", js.undefined)
+    
+    inline def setWebkitMaskUndefined: Self = StObject.set(x, "WebkitMask", js.undefined)
+    
+    inline def setWebkitMaxInlineSize(value: MaxInlineSize[Double | String]): Self = StObject.set(x, "WebkitMaxInlineSize", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaxInlineSizeUndefined: Self = StObject.set(x, "WebkitMaxInlineSize", js.undefined)
+    
+    inline def setWebkitOrder(value: Order): Self = StObject.set(x, "WebkitOrder", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitOrderUndefined: Self = StObject.set(x, "WebkitOrder", js.undefined)
+    
+    inline def setWebkitOverflowScrolling(value: WebkitOverflowScrolling): Self = StObject.set(x, "WebkitOverflowScrolling", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitOverflowScrollingUndefined: Self = StObject.set(x, "WebkitOverflowScrolling", js.undefined)
+    
+    inline def setWebkitPaddingEnd(value: PaddingInlineEnd[Double | String]): Self = StObject.set(x, "WebkitPaddingEnd", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitPaddingEndUndefined: Self = StObject.set(x, "WebkitPaddingEnd", js.undefined)
+    
+    inline def setWebkitPaddingStart(value: PaddingInlineStart[Double | String]): Self = StObject.set(x, "WebkitPaddingStart", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitPaddingStartUndefined: Self = StObject.set(x, "WebkitPaddingStart", js.undefined)
+    
+    inline def setWebkitPerspective(value: Perspective[Double | String]): Self = StObject.set(x, "WebkitPerspective", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitPerspectiveOrigin(value: PerspectiveOrigin[Double | String]): Self = StObject.set(x, "WebkitPerspectiveOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitPerspectiveOriginUndefined: Self = StObject.set(x, "WebkitPerspectiveOrigin", js.undefined)
+    
+    inline def setWebkitPerspectiveUndefined: Self = StObject.set(x, "WebkitPerspective", js.undefined)
+    
+    inline def setWebkitPrintColorAdjust(value: PrintColorAdjust): Self = StObject.set(x, "WebkitPrintColorAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitPrintColorAdjustUndefined: Self = StObject.set(x, "WebkitPrintColorAdjust", js.undefined)
+    
+    inline def setWebkitRubyPosition(value: RubyPosition): Self = StObject.set(x, "WebkitRubyPosition", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitRubyPositionUndefined: Self = StObject.set(x, "WebkitRubyPosition", js.undefined)
+    
+    inline def setWebkitScrollSnapType(value: ScrollSnapType): Self = StObject.set(x, "WebkitScrollSnapType", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitScrollSnapTypeUndefined: Self = StObject.set(x, "WebkitScrollSnapType", js.undefined)
+    
+    inline def setWebkitShapeMargin(value: ShapeMargin[Double | String]): Self = StObject.set(x, "WebkitShapeMargin", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitShapeMarginUndefined: Self = StObject.set(x, "WebkitShapeMargin", js.undefined)
+    
+    inline def setWebkitTapHighlightColor(value: WebkitTapHighlightColor): Self = StObject.set(x, "WebkitTapHighlightColor", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTapHighlightColorUndefined: Self = StObject.set(x, "WebkitTapHighlightColor", js.undefined)
+    
+    inline def setWebkitTextCombine(value: TextCombineUpright): Self = StObject.set(x, "WebkitTextCombine", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextCombineUndefined: Self = StObject.set(x, "WebkitTextCombine", js.undefined)
+    
+    inline def setWebkitTextDecorationColor(value: TextDecorationColor): Self = StObject.set(x, "WebkitTextDecorationColor", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextDecorationColorUndefined: Self = StObject.set(x, "WebkitTextDecorationColor", js.undefined)
+    
+    inline def setWebkitTextDecorationLine(value: TextDecorationLine): Self = StObject.set(x, "WebkitTextDecorationLine", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextDecorationLineUndefined: Self = StObject.set(x, "WebkitTextDecorationLine", js.undefined)
+    
+    inline def setWebkitTextDecorationSkip(value: TextDecorationSkip): Self = StObject.set(x, "WebkitTextDecorationSkip", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextDecorationSkipUndefined: Self = StObject.set(x, "WebkitTextDecorationSkip", js.undefined)
+    
+    inline def setWebkitTextDecorationStyle(value: TextDecorationStyle): Self = StObject.set(x, "WebkitTextDecorationStyle", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextDecorationStyleUndefined: Self = StObject.set(x, "WebkitTextDecorationStyle", js.undefined)
+    
+    inline def setWebkitTextEmphasis(value: TextEmphasis): Self = StObject.set(x, "WebkitTextEmphasis", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextEmphasisColor(value: TextEmphasisColor): Self = StObject.set(x, "WebkitTextEmphasisColor", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextEmphasisColorUndefined: Self = StObject.set(x, "WebkitTextEmphasisColor", js.undefined)
+    
+    inline def setWebkitTextEmphasisPosition(value: TextEmphasisPosition): Self = StObject.set(x, "WebkitTextEmphasisPosition", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextEmphasisPositionUndefined: Self = StObject.set(x, "WebkitTextEmphasisPosition", js.undefined)
+    
+    inline def setWebkitTextEmphasisStyle(value: TextEmphasisStyle): Self = StObject.set(x, "WebkitTextEmphasisStyle", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextEmphasisStyleUndefined: Self = StObject.set(x, "WebkitTextEmphasisStyle", js.undefined)
+    
+    inline def setWebkitTextEmphasisUndefined: Self = StObject.set(x, "WebkitTextEmphasis", js.undefined)
+    
+    inline def setWebkitTextFillColor(value: WebkitTextFillColor): Self = StObject.set(x, "WebkitTextFillColor", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextFillColorUndefined: Self = StObject.set(x, "WebkitTextFillColor", js.undefined)
+    
+    inline def setWebkitTextOrientation(value: TextOrientation): Self = StObject.set(x, "WebkitTextOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextOrientationUndefined: Self = StObject.set(x, "WebkitTextOrientation", js.undefined)
+    
+    inline def setWebkitTextSizeAdjust(value: TextSizeAdjust): Self = StObject.set(x, "WebkitTextSizeAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextSizeAdjustUndefined: Self = StObject.set(x, "WebkitTextSizeAdjust", js.undefined)
+    
+    inline def setWebkitTextStroke(value: WebkitTextStroke[Double | String]): Self = StObject.set(x, "WebkitTextStroke", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextStrokeColor(value: WebkitTextStrokeColor): Self = StObject.set(x, "WebkitTextStrokeColor", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextStrokeColorUndefined: Self = StObject.set(x, "WebkitTextStrokeColor", js.undefined)
+    
+    inline def setWebkitTextStrokeUndefined: Self = StObject.set(x, "WebkitTextStroke", js.undefined)
+    
+    inline def setWebkitTextStrokeWidth(value: WebkitTextStrokeWidth[Double | String]): Self = StObject.set(x, "WebkitTextStrokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextStrokeWidthUndefined: Self = StObject.set(x, "WebkitTextStrokeWidth", js.undefined)
+    
+    inline def setWebkitTextUnderlinePosition(value: TextUnderlinePosition): Self = StObject.set(x, "WebkitTextUnderlinePosition", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextUnderlinePositionUndefined: Self = StObject.set(x, "WebkitTextUnderlinePosition", js.undefined)
+    
+    inline def setWebkitTouchCallout(value: WebkitTouchCallout): Self = StObject.set(x, "WebkitTouchCallout", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTouchCalloutUndefined: Self = StObject.set(x, "WebkitTouchCallout", js.undefined)
+    
+    inline def setWebkitTransform(value: Transform): Self = StObject.set(x, "WebkitTransform", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTransformOrigin(value: TransformOrigin[Double | String]): Self = StObject.set(x, "WebkitTransformOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTransformOriginUndefined: Self = StObject.set(x, "WebkitTransformOrigin", js.undefined)
+    
+    inline def setWebkitTransformStyle(value: TransformStyle): Self = StObject.set(x, "WebkitTransformStyle", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTransformStyleUndefined: Self = StObject.set(x, "WebkitTransformStyle", js.undefined)
+    
+    inline def setWebkitTransformUndefined: Self = StObject.set(x, "WebkitTransform", js.undefined)
+    
+    inline def setWebkitTransition(value: Transition[String]): Self = StObject.set(x, "WebkitTransition", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTransitionDelay(value: TransitionDelay[String]): Self = StObject.set(x, "WebkitTransitionDelay", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTransitionDelayUndefined: Self = StObject.set(x, "WebkitTransitionDelay", js.undefined)
+    
+    inline def setWebkitTransitionDuration(value: TransitionDuration[String]): Self = StObject.set(x, "WebkitTransitionDuration", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTransitionDurationUndefined: Self = StObject.set(x, "WebkitTransitionDuration", js.undefined)
+    
+    inline def setWebkitTransitionProperty(value: TransitionProperty): Self = StObject.set(x, "WebkitTransitionProperty", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTransitionPropertyUndefined: Self = StObject.set(x, "WebkitTransitionProperty", js.undefined)
+    
+    inline def setWebkitTransitionTimingFunction(value: TransitionTimingFunction): Self = StObject.set(x, "WebkitTransitionTimingFunction", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTransitionTimingFunctionUndefined: Self = StObject.set(x, "WebkitTransitionTimingFunction", js.undefined)
+    
+    inline def setWebkitTransitionUndefined: Self = StObject.set(x, "WebkitTransition", js.undefined)
+    
+    inline def setWebkitUserModify(value: WebkitUserModify): Self = StObject.set(x, "WebkitUserModify", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitUserModifyUndefined: Self = StObject.set(x, "WebkitUserModify", js.undefined)
+    
+    inline def setWebkitUserSelect(value: UserSelect): Self = StObject.set(x, "WebkitUserSelect", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitUserSelectUndefined: Self = StObject.set(x, "WebkitUserSelect", js.undefined)
+    
+    inline def setWebkitWritingMode(value: WritingMode): Self = StObject.set(x, "WebkitWritingMode", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitWritingModeUndefined: Self = StObject.set(x, "WebkitWritingMode", js.undefined)
+    
+    inline def setWhiteSpace(value: WhiteSpace): Self = StObject.set(x, "whiteSpace", value.asInstanceOf[js.Any])
     
     inline def setWhiteSpaceUndefined: Self = StObject.set(x, "whiteSpace", js.undefined)
     
-    inline def setWidows(value: GlobalsNumber): Self = StObject.set(x, "widows", value.asInstanceOf[js.Any])
+    inline def setWidows(value: Widows): Self = StObject.set(x, "widows", value.asInstanceOf[js.Any])
     
     inline def setWidowsUndefined: Self = StObject.set(x, "widows", js.undefined)
     
-    inline def setWidth(value: WidthProperty[Double | String]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Width[Double | String]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    inline def setWillChange(value: WillChangeProperty): Self = StObject.set(x, "willChange", value.asInstanceOf[js.Any])
+    inline def setWillChange(value: WillChange): Self = StObject.set(x, "willChange", value.asInstanceOf[js.Any])
     
     inline def setWillChangeUndefined: Self = StObject.set(x, "willChange", js.undefined)
     
-    inline def setWordBreak(value: WordBreakProperty): Self = StObject.set(x, "wordBreak", value.asInstanceOf[js.Any])
+    inline def setWordBreak(value: WordBreak): Self = StObject.set(x, "wordBreak", value.asInstanceOf[js.Any])
     
     inline def setWordBreakUndefined: Self = StObject.set(x, "wordBreak", js.undefined)
     
-    inline def setWordSpacing(value: WordSpacingProperty[Double | String]): Self = StObject.set(x, "wordSpacing", value.asInstanceOf[js.Any])
+    inline def setWordSpacing(value: WordSpacing[Double | String]): Self = StObject.set(x, "wordSpacing", value.asInstanceOf[js.Any])
     
     inline def setWordSpacingUndefined: Self = StObject.set(x, "wordSpacing", js.undefined)
     
-    inline def setWordWrap(value: WordWrapProperty): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
+    inline def setWordWrap(value: WordWrap): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
     
     inline def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
     
-    inline def setWritingMode(value: WritingModeProperty): Self = StObject.set(x, "writingMode", value.asInstanceOf[js.Any])
+    inline def setWritingMode(value: WritingMode): Self = StObject.set(x, "writingMode", value.asInstanceOf[js.Any])
     
     inline def setWritingModeUndefined: Self = StObject.set(x, "writingMode", js.undefined)
     
-    inline def setZIndex(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | String
-    ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: ZIndex | String): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     
-    inline def setZoom(value: ZoomProperty): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Zoom): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }

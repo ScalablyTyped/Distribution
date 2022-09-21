@@ -29,6 +29,6 @@ object PutInstancePublicPortsRequest {
     
     inline def setPortInfos(value: PortInfoList): Self = StObject.set(x, "portInfos", value.asInstanceOf[js.Any])
     
-    inline def setPortInfosVarargs(value: PortInfo*): Self = StObject.set(x, "portInfos", js.Array(value :_*))
+    inline def setPortInfosVarargs(value: PortInfo*): Self = StObject.set(x, "portInfos", js.Array(value*))
   }
 }

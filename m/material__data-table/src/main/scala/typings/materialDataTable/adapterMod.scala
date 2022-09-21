@@ -3,6 +3,7 @@ package typings.materialDataTable
 import typings.materialDataTable.constantsMod.SortValue
 import typings.materialDataTable.typesMod.MDCDataTableRowSelectionChangedEventDetail
 import typings.materialDataTable.typesMod.ProgressIndicatorStyles
+import typings.materialDataTable.typesMod.RowClickEventData
 import typings.materialDataTable.typesMod.SortActionEventDetail
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -54,16 +55,18 @@ object adapterMod {
     def getRowElements(): js.Array[Element]
     
     /**
-      * Returns row id of row element at given row index based on `data-row-id` attribute on row element `tr`.
+      * Returns row id of row element at given row index based on `data-row-id`
+      * attribute on row element `tr`.
       *
       * @param rowIndex Index of row element.
-      * @return Row id of row element, returns `null` in absence of `data-row-id` attribute on row element.
+      * @return Row id of row element, returns `null` in absence of `data-row-id`
+      *     attribute on row element.
       */
     def getRowIdAtIndex(rowIndex: Double): String | Null
     
     /**
-      * Returns index of row element that contains give child element. Returns -1 if element is not child of any row
-      * element.
+      * Returns index of row element that contains give child element. Returns -1
+      * if element is not child of any row element.
       *
       * @param el Child element of row element.
       * @return Index of row element.
@@ -102,6 +105,11 @@ object adapterMod {
     def isRowsSelectable(): Boolean
     
     /**
+      * Notifies when data row is clicked.
+      */
+    def notifyRowClick(detail: RowClickEventData): Unit
+    
+    /**
       * Notifies when row selection is changed.
       *
       * @param data Event detail data for row selection changed event.
@@ -124,14 +132,16 @@ object adapterMod {
     def notifyUnselectedAll(): Unit
     
     /**
-      * Initializes header row checkbox. Destroys previous header row checkbox instance if any.
+      * Initializes header row checkbox. Destroys previous header row checkbox
+      * instance if any.
       * @return Can return Promise only if registering checkbox is asynchronous.
       */
     def registerHeaderRowCheckbox(): js.Promise[Unit] | Unit
     
     /**
-      * Initializes all row checkboxes. Destroys previous row checkbox instances if any. This is usually called when row
-      * checkboxes are added or removed from table.
+      * Initializes all row checkboxes. Destroys previous row checkbox instances if
+      * any. This is usually called when row checkboxes are added or removed from
+      * table.
       * @return Can return Promise only if registering checkbox is asynchronous.
       */
     def registerRowCheckboxes(): js.Promise[Unit] | Unit
@@ -232,6 +242,7 @@ object adapterMod {
       isCheckboxAtRowIndexChecked: Double => Boolean,
       isHeaderRowCheckboxChecked: () => Boolean,
       isRowsSelectable: () => Boolean,
+      notifyRowClick: RowClickEventData => Unit,
       notifyRowSelectionChanged: MDCDataTableRowSelectionChangedEventDetail => Unit,
       notifySelectedAll: () => Unit,
       notifySortAction: SortActionEventDetail => Unit,
@@ -250,7 +261,7 @@ object adapterMod {
       setRowCheckboxCheckedAtIndex: (Double, Boolean) => Unit,
       setSortStatusLabelByHeaderCellIndex: (Double, SortValue) => Unit
     ): MDCDataTableAdapter = {
-      val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), addClassAtRowIndex = js.Any.fromFunction2(addClassAtRowIndex), getAttributeByHeaderCellIndex = js.Any.fromFunction2(getAttributeByHeaderCellIndex), getHeaderCellCount = js.Any.fromFunction0(getHeaderCellCount), getHeaderCellElements = js.Any.fromFunction0(getHeaderCellElements), getRowCount = js.Any.fromFunction0(getRowCount), getRowElements = js.Any.fromFunction0(getRowElements), getRowIdAtIndex = js.Any.fromFunction1(getRowIdAtIndex), getRowIndexByChildElement = js.Any.fromFunction1(getRowIndexByChildElement), getSelectedRowCount = js.Any.fromFunction0(getSelectedRowCount), getTableContainerHeight = js.Any.fromFunction0(getTableContainerHeight), getTableHeaderHeight = js.Any.fromFunction0(getTableHeaderHeight), isCheckboxAtRowIndexChecked = js.Any.fromFunction1(isCheckboxAtRowIndexChecked), isHeaderRowCheckboxChecked = js.Any.fromFunction0(isHeaderRowCheckboxChecked), isRowsSelectable = js.Any.fromFunction0(isRowsSelectable), notifyRowSelectionChanged = js.Any.fromFunction1(notifyRowSelectionChanged), notifySelectedAll = js.Any.fromFunction0(notifySelectedAll), notifySortAction = js.Any.fromFunction1(notifySortAction), notifyUnselectedAll = js.Any.fromFunction0(notifyUnselectedAll), registerHeaderRowCheckbox = js.Any.fromFunction0(registerHeaderRowCheckbox), registerRowCheckboxes = js.Any.fromFunction0(registerRowCheckboxes), removeClass = js.Any.fromFunction1(removeClass), removeClassAtRowIndex = js.Any.fromFunction2(removeClassAtRowIndex), removeClassNameByHeaderCellIndex = js.Any.fromFunction2(removeClassNameByHeaderCellIndex), setAttributeAtRowIndex = js.Any.fromFunction3(setAttributeAtRowIndex), setAttributeByHeaderCellIndex = js.Any.fromFunction3(setAttributeByHeaderCellIndex), setClassNameByHeaderCellIndex = js.Any.fromFunction2(setClassNameByHeaderCellIndex), setHeaderRowCheckboxChecked = js.Any.fromFunction1(setHeaderRowCheckboxChecked), setHeaderRowCheckboxIndeterminate = js.Any.fromFunction1(setHeaderRowCheckboxIndeterminate), setProgressIndicatorStyles = js.Any.fromFunction1(setProgressIndicatorStyles), setRowCheckboxCheckedAtIndex = js.Any.fromFunction2(setRowCheckboxCheckedAtIndex), setSortStatusLabelByHeaderCellIndex = js.Any.fromFunction2(setSortStatusLabelByHeaderCellIndex))
+      val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), addClassAtRowIndex = js.Any.fromFunction2(addClassAtRowIndex), getAttributeByHeaderCellIndex = js.Any.fromFunction2(getAttributeByHeaderCellIndex), getHeaderCellCount = js.Any.fromFunction0(getHeaderCellCount), getHeaderCellElements = js.Any.fromFunction0(getHeaderCellElements), getRowCount = js.Any.fromFunction0(getRowCount), getRowElements = js.Any.fromFunction0(getRowElements), getRowIdAtIndex = js.Any.fromFunction1(getRowIdAtIndex), getRowIndexByChildElement = js.Any.fromFunction1(getRowIndexByChildElement), getSelectedRowCount = js.Any.fromFunction0(getSelectedRowCount), getTableContainerHeight = js.Any.fromFunction0(getTableContainerHeight), getTableHeaderHeight = js.Any.fromFunction0(getTableHeaderHeight), isCheckboxAtRowIndexChecked = js.Any.fromFunction1(isCheckboxAtRowIndexChecked), isHeaderRowCheckboxChecked = js.Any.fromFunction0(isHeaderRowCheckboxChecked), isRowsSelectable = js.Any.fromFunction0(isRowsSelectable), notifyRowClick = js.Any.fromFunction1(notifyRowClick), notifyRowSelectionChanged = js.Any.fromFunction1(notifyRowSelectionChanged), notifySelectedAll = js.Any.fromFunction0(notifySelectedAll), notifySortAction = js.Any.fromFunction1(notifySortAction), notifyUnselectedAll = js.Any.fromFunction0(notifyUnselectedAll), registerHeaderRowCheckbox = js.Any.fromFunction0(registerHeaderRowCheckbox), registerRowCheckboxes = js.Any.fromFunction0(registerRowCheckboxes), removeClass = js.Any.fromFunction1(removeClass), removeClassAtRowIndex = js.Any.fromFunction2(removeClassAtRowIndex), removeClassNameByHeaderCellIndex = js.Any.fromFunction2(removeClassNameByHeaderCellIndex), setAttributeAtRowIndex = js.Any.fromFunction3(setAttributeAtRowIndex), setAttributeByHeaderCellIndex = js.Any.fromFunction3(setAttributeByHeaderCellIndex), setClassNameByHeaderCellIndex = js.Any.fromFunction2(setClassNameByHeaderCellIndex), setHeaderRowCheckboxChecked = js.Any.fromFunction1(setHeaderRowCheckboxChecked), setHeaderRowCheckboxIndeterminate = js.Any.fromFunction1(setHeaderRowCheckboxIndeterminate), setProgressIndicatorStyles = js.Any.fromFunction1(setProgressIndicatorStyles), setRowCheckboxCheckedAtIndex = js.Any.fromFunction2(setRowCheckboxCheckedAtIndex), setSortStatusLabelByHeaderCellIndex = js.Any.fromFunction2(setSortStatusLabelByHeaderCellIndex))
       __obj.asInstanceOf[MDCDataTableAdapter]
     }
     
@@ -285,6 +296,8 @@ object adapterMod {
       inline def setIsHeaderRowCheckboxChecked(value: () => Boolean): Self = StObject.set(x, "isHeaderRowCheckboxChecked", js.Any.fromFunction0(value))
       
       inline def setIsRowsSelectable(value: () => Boolean): Self = StObject.set(x, "isRowsSelectable", js.Any.fromFunction0(value))
+      
+      inline def setNotifyRowClick(value: RowClickEventData => Unit): Self = StObject.set(x, "notifyRowClick", js.Any.fromFunction1(value))
       
       inline def setNotifyRowSelectionChanged(value: MDCDataTableRowSelectionChangedEventDetail => Unit): Self = StObject.set(x, "notifyRowSelectionChanged", js.Any.fromFunction1(value))
       

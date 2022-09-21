@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("ReadableStreamDefaultReader")
 @js.native
-class ReadableStreamDefaultReader ()
+open class ReadableStreamDefaultReader[R] protected ()
   extends StObject
-     with typings.std.ReadableStreamDefaultReader[js.Any]
+     with typings.std.ReadableStreamDefaultReader[R] {
+  /* standard dom */
+  def this(stream: typings.std.ReadableStream[R]) = this()
+}

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Change extends StObject {
   
   /**
+    * Optional name for the change.
+    */
+  var ChangeName: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ChangeName] = js.undefined
+  
+  /**
     * Change types are single string values that describe your intention for the change. Each change type is unique for each EntityType provided in the change's scope.
     */
   var ChangeType: typings.awsSdk.marketplacecatalogMod.ChangeType
@@ -29,6 +34,10 @@ object Change {
   }
   
   extension [Self <: Change](x: Self) {
+    
+    inline def setChangeName(value: ChangeName): Self = StObject.set(x, "ChangeName", value.asInstanceOf[js.Any])
+    
+    inline def setChangeNameUndefined: Self = StObject.set(x, "ChangeName", js.undefined)
     
     inline def setChangeType(value: ChangeType): Self = StObject.set(x, "ChangeType", value.asInstanceOf[js.Any])
     

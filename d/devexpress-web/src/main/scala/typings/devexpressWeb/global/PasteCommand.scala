@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("PasteCommand")
 @js.native
-class PasteCommand ()
+open class PasteCommand ()
   extends StObject
      with typings.devexpressWeb.PasteCommand {
   

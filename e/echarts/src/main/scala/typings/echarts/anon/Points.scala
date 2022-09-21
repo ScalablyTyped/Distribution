@@ -13,7 +13,7 @@ trait Points extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polyline.shape.points
     */
-  var points: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var points: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Whether smooth the line.
@@ -51,11 +51,11 @@ object Points {
   
   extension [Self <: Points](x: Self) {
     
-    inline def setPoints(value: js.Array[js.Any]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[Any]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    inline def setPointsVarargs(value: js.Any*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Any*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setSmooth(value: Double | String): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     

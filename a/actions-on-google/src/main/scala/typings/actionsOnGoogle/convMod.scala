@@ -14,7 +14,7 @@ object convMod {
   @JSImport("actions-on-google/dist/service/actionssdk/conv", "ActionsSdkConversation")
   @js.native
   /** @public */
-  class ActionsSdkConversation[TConvData, TUserStorage] () extends Conversation[TUserStorage] {
+  open class ActionsSdkConversation[TConvData, TUserStorage] () extends Conversation[TUserStorage] {
     def this(options: ActionsSdkConversationOptions[TConvData, TUserStorage]) = this()
     
     /** @hidden */

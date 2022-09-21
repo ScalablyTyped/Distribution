@@ -34,7 +34,7 @@ object ListAppsRequest {
     
     inline def setAppIdsUndefined: Self = StObject.set(x, "appIds", js.undefined)
     
-    inline def setAppIdsVarargs(value: AppId*): Self = StObject.set(x, "appIds", js.Array(value :_*))
+    inline def setAppIdsVarargs(value: AppId*): Self = StObject.set(x, "appIds", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

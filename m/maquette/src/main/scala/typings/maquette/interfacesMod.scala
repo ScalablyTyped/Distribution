@@ -11,7 +11,6 @@ import typings.std.FocusEvent
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
-import typings.std.MouseWheelEvent
 import typings.std.Node
 import typings.std.TouchEvent
 import typings.std.UIEvent
@@ -37,11 +36,11 @@ object interfacesMod {
       * These objects are assumed to be immutable primitive values.
       * @param calculation - Function that takes zero arguments and returns an object (A [[VNode]] presumably) that can be cached.
       */
-    def result(inputs: js.Array[js.Any], calculation: js.Function0[Result]): Result
+    def result(inputs: js.Array[Any], calculation: js.Function0[Result]): Result
   }
   object CalculationCache {
     
-    inline def apply[Result](invalidate: () => Unit, result: (js.Array[js.Any], js.Function0[Result]) => Result): CalculationCache[Result] = {
+    inline def apply[Result](invalidate: () => Unit, result: (js.Array[Any], js.Function0[Result]) => Result): CalculationCache[Result] = {
       val __obj = js.Dynamic.literal(invalidate = js.Any.fromFunction0(invalidate), result = js.Any.fromFunction2(result))
       __obj.asInstanceOf[CalculationCache[Result]]
     }
@@ -50,7 +49,7 @@ object interfacesMod {
       
       inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
       
-      inline def setResult(value: (js.Array[js.Any], js.Function0[Result]) => Result): Self = StObject.set(x, "result", js.Any.fromFunction2(value))
+      inline def setResult(value: (js.Array[Any], js.Function0[Result]) => Result): Self = StObject.set(x, "result", js.Any.fromFunction2(value))
     }
   }
   
@@ -137,12 +136,14 @@ object interfacesMod {
     def replace(element: Element, vnode: VNode, projectionOptions: ProjectionOptions): Projection = js.native
   }
   
+  type EventHandler = js.ThisFunction1[/* this */ Node, /* event */ Event, js.UndefOr[Boolean | Unit]]
+  
   type EventHandlerInterceptor = js.Function4[
     /* propertyName */ String, 
-    /* eventHandler */ js.Function, 
+    /* eventHandler */ EventHandler, 
     /* domNode */ Node, 
     /* properties */ VNodeProperties, 
-    js.UndefOr[js.Function]
+    js.UndefOr[EventHandler]
   ]
   
   trait Mapping[Source, Target] extends StObject {
@@ -172,7 +173,7 @@ object interfacesMod {
       
       inline def setResults(value: js.Array[Target]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      inline def setResultsVarargs(value: Target*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: Target*): Self = StObject.set(x, "results", js.Array(value*))
     }
   }
   
@@ -284,7 +285,7 @@ object interfacesMod {
     extension [Self <: ProjectionOptions](x: Self) {
       
       inline def setEventHandlerInterceptor(
-        value: (/* propertyName */ String, /* eventHandler */ js.Function, /* domNode */ Node, /* properties */ VNodeProperties) => js.UndefOr[js.Function]
+        value: (/* propertyName */ String, /* eventHandler */ EventHandler, /* domNode */ Node, /* properties */ VNodeProperties) => js.UndefOr[EventHandler]
       ): Self = StObject.set(x, "eventHandlerInterceptor", js.Any.fromFunction4(value))
       
       inline def setEventHandlerInterceptorUndefined: Self = StObject.set(x, "eventHandlerInterceptor", js.undefined)
@@ -506,7 +507,7 @@ object interfacesMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: VNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: VNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDomNode(value: Node): Self = StObject.set(x, "domNode", value.asInstanceOf[js.Any])
       
@@ -527,25 +528,24 @@ object interfacesMod {
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - typings.maquette.interfacesMod.VNode
-    - typings.maquette.interfacesMod.VNodeChildren
+    - js.Array[scala.Any]
     - typings.maquette.maquetteBooleans.`false`
     - scala.Null
     - scala.Unit
   */
-  type VNodeChild = js.UndefOr[_VNodeChild | String | Null]
+  type VNodeChild = js.UndefOr[_VNodeChild | js.Array[Any] | String | Null]
   
   @js.native
   trait VNodeChildren
     extends StObject
        with Array[VNodeChild]
-       with _VNodeChild
   
   trait VNodeProperties
     extends StObject
        with /**
     * Everything that is not explicitly listed (properties and attributes that are either uncommon or custom).
     */
-  /* index */ StringDictionary[js.Any] {
+  /* index */ StringDictionary[Any] {
     
     val accessKey: js.UndefOr[String] = js.undefined
     
@@ -609,7 +609,7 @@ object interfacesMod {
       *
       * When no [[key]] is present, this object is also used to uniquely identify a DOM node.
       */
-    val bind: js.UndefOr[js.Object] = js.undefined
+    val bind: js.UndefOr[Any] = js.undefined
     
     val checked: js.UndefOr[Boolean] = js.undefined
     
@@ -679,7 +679,7 @@ object interfacesMod {
       * A key is required when there are more children with the same selector and these children are added or removed dynamically.
       * NOTE: this does not have to be a string or number, a [[MaquetteComponent]] Object for instance is also common.
       */
-    val key: js.UndefOr[js.Object] = js.undefined
+    val key: js.UndefOr[Any] = js.undefined
     
     val method: js.UndefOr[String] = js.undefined
     
@@ -733,7 +733,7 @@ object interfacesMod {
     
     var onmouseup: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
     
-    var onmousewheel: js.UndefOr[js.Function1[/* ev */ WheelEvent | MouseWheelEvent, Boolean | Unit]] = js.undefined
+    var onmousewheel: js.UndefOr[js.Function1[/* ev */ WheelEvent, Boolean | Unit]] = js.undefined
     
     var onscroll: js.UndefOr[js.Function1[/* ev */ UIEvent, Boolean | Unit]] = js.undefined
     
@@ -762,7 +762,7 @@ object interfacesMod {
     /**
       * An object literal like `{height:'100px'}` which allows styles to be changed dynamically. All values must be strings.
       */
-    val styles: js.UndefOr[PartialCSSStyleDeclaratio] = js.undefined
+    val styles: js.UndefOr[PartialCSSStyleDeclaratio | StringDictionary[String]] = js.undefined
     
     val tabIndex: js.UndefOr[Double] = js.undefined
     
@@ -832,7 +832,7 @@ object interfacesMod {
       
       inline def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
       
-      inline def setBind(value: js.Object): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+      inline def setBind(value: Any): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
       inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
       
@@ -892,7 +892,7 @@ object interfacesMod {
       
       inline def setInnerHTMLUndefined: Self = StObject.set(x, "innerHTML", js.undefined)
       
-      inline def setKey(value: js.Object): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
@@ -1000,7 +1000,7 @@ object interfacesMod {
       
       inline def setOnmouseupUndefined: Self = StObject.set(x, "onmouseup", js.undefined)
       
-      inline def setOnmousewheel(value: /* ev */ WheelEvent | MouseWheelEvent => Boolean | Unit): Self = StObject.set(x, "onmousewheel", js.Any.fromFunction1(value))
+      inline def setOnmousewheel(value: /* ev */ WheelEvent => Boolean | Unit): Self = StObject.set(x, "onmousewheel", js.Any.fromFunction1(value))
       
       inline def setOnmousewheelUndefined: Self = StObject.set(x, "onmousewheel", js.undefined)
       
@@ -1052,7 +1052,7 @@ object interfacesMod {
       
       inline def setSrcsetUndefined: Self = StObject.set(x, "srcset", js.undefined)
       
-      inline def setStyles(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: PartialCSSStyleDeclaratio | StringDictionary[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       

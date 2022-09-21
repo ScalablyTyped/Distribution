@@ -10,5 +10,5 @@ object requirePropFactoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(componentNameInError: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(componentNameInError.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(componentNameInError: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(componentNameInError.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

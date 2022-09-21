@@ -35,7 +35,7 @@ object ReferenceImage {
     
     inline def setBoundingPolysUndefined: Self = StObject.set(x, "boundingPolys", js.undefined)
     
-    inline def setBoundingPolysVarargs(value: BoundingPoly*): Self = StObject.set(x, "boundingPolys", js.Array(value :_*))
+    inline def setBoundingPolysVarargs(value: BoundingPoly*): Self = StObject.set(x, "boundingPolys", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

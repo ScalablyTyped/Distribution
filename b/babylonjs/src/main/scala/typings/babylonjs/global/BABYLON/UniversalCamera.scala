@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.UniversalCamera")
 @js.native
-class UniversalCamera protected ()
+open class UniversalCamera protected ()
   extends StObject
      with typings.babylonjs.BABYLON.UniversalCamera {
   /**
@@ -19,6 +19,7 @@ class UniversalCamera protected ()
     * @param position Define the start position of the camera in the scene
     * @param scene Define the scene the camera belongs to
     */
+  def this(name: String, position: typings.babylonjs.BABYLON.Vector3) = this()
   def this(name: String, position: typings.babylonjs.BABYLON.Vector3, scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /**

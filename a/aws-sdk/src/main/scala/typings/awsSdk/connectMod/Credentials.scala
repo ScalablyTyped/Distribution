@@ -14,7 +14,7 @@ trait Credentials extends StObject {
   /**
     * A token generated with an expiration time for the session a user is logged in to Amazon Connect.
     */
-  var AccessTokenExpiration: js.UndefOr[timestamp] = js.undefined
+  var AccessTokenExpiration: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Renews a token generated for a user to access the Amazon Connect instance.
@@ -24,7 +24,7 @@ trait Credentials extends StObject {
   /**
     * Renews the expiration timer for a generated token.
     */
-  var RefreshTokenExpiration: js.UndefOr[timestamp] = js.undefined
+  var RefreshTokenExpiration: js.UndefOr[js.Date] = js.undefined
 }
 object Credentials {
   
@@ -37,7 +37,7 @@ object Credentials {
     
     inline def setAccessToken(value: SecurityToken): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
-    inline def setAccessTokenExpiration(value: timestamp): Self = StObject.set(x, "AccessTokenExpiration", value.asInstanceOf[js.Any])
+    inline def setAccessTokenExpiration(value: js.Date): Self = StObject.set(x, "AccessTokenExpiration", value.asInstanceOf[js.Any])
     
     inline def setAccessTokenExpirationUndefined: Self = StObject.set(x, "AccessTokenExpiration", js.undefined)
     
@@ -45,7 +45,7 @@ object Credentials {
     
     inline def setRefreshToken(value: SecurityToken): Self = StObject.set(x, "RefreshToken", value.asInstanceOf[js.Any])
     
-    inline def setRefreshTokenExpiration(value: timestamp): Self = StObject.set(x, "RefreshTokenExpiration", value.asInstanceOf[js.Any])
+    inline def setRefreshTokenExpiration(value: js.Date): Self = StObject.set(x, "RefreshTokenExpiration", value.asInstanceOf[js.Any])
     
     inline def setRefreshTokenExpirationUndefined: Self = StObject.set(x, "RefreshTokenExpiration", js.undefined)
     

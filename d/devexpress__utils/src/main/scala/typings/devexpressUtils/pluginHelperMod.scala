@@ -10,7 +10,7 @@ object pluginHelperMod {
   
   @JSImport("@devexpress/utils/lib/pdf/plugin-helper", "PdfPluginHelper")
   @js.native
-  class PdfPluginHelper () extends StObject
+  open class PdfPluginHelper () extends StObject
   /* static members */
   object PdfPluginHelper {
     
@@ -22,7 +22,7 @@ object pluginHelperMod {
     
     inline def getNavigatorPlugin(name: String): Plugin | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNavigatorPlugin")(name.asInstanceOf[js.Any]).asInstanceOf[Plugin | Null]
     
-    inline def getPdfPlugin(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPdfPlugin")().asInstanceOf[js.Any]
+    inline def getPdfPlugin(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPdfPlugin")().asInstanceOf[Any]
     
     inline def getVersion(): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[Double | Null]
     
@@ -30,7 +30,7 @@ object pluginHelperMod {
     
     @JSImport("@devexpress/utils/lib/pdf/plugin-helper", "PdfPluginHelper.plugin")
     @js.native
-    def plugin: js.Any = js.native
-    inline def plugin_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugin")(x.asInstanceOf[js.Any])
+    def plugin: Any = js.native
+    inline def plugin_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugin")(x.asInstanceOf[js.Any])
   }
 }

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Request extends StObject {
   
-  def addChildRequest(serviceIdentifier: ServiceIdentifier[js.Any], bindings: js.Array[Binding[js.Any]], target: Target): Request = js.native
-  def addChildRequest(serviceIdentifier: ServiceIdentifier[js.Any], bindings: Binding[js.Any], target: Target): Request = js.native
+  def addChildRequest(serviceIdentifier: ServiceIdentifier[Any], bindings: js.Array[Binding[Any]], target: Target): Request = js.native
+  def addChildRequest(serviceIdentifier: ServiceIdentifier[Any], bindings: Binding[Any], target: Target): Request = js.native
   
-  var bindings: js.Array[Binding[js.Any]] = js.native
+  var bindings: js.Array[Binding[Any]] = js.native
   
   var childRequests: js.Array[Request] = js.native
   
@@ -20,9 +20,9 @@ trait Request extends StObject {
   
   var parentRequest: Request | Null = js.native
   
-  var requestScope: RequestScope = js.native
+  var requestScope: RequestScope | Null = js.native
   
-  var serviceIdentifier: ServiceIdentifier[js.Any] = js.native
+  var serviceIdentifier: ServiceIdentifier[Any] = js.native
   
   var target: Target = js.native
 }

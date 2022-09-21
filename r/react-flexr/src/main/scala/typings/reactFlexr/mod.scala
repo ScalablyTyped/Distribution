@@ -17,13 +17,13 @@ object mod {
   
   @JSImport("react-flexr", "Cell")
   @js.native
-  class Cell ()
-    extends Component[CellProps, js.Object, js.Any]
+  open class Cell ()
+    extends Component[CellProps, js.Object, Any]
   
   @JSImport("react-flexr", "Grid")
   @js.native
-  class Grid ()
-    extends Component[GridProps, js.Object, js.Any]
+  open class Grid ()
+    extends Component[GridProps, js.Object, Any]
   
   @JSImport("react-flexr", "desk")
   @js.native
@@ -31,7 +31,7 @@ object mod {
   
   inline def findBreakpoints(): js.Array[ErgonomicType] | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("findBreakpoints")().asInstanceOf[js.Array[ErgonomicType] | Boolean]
   
-  inline def findMatch(arguments: ErgonomicType*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("findMatch")(arguments.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def findMatch(arguments: ErgonomicType*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("findMatch")(arguments.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Boolean]
   
   inline def getCurrentBreakpoints(): js.Array[ErgonomicType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentBreakpoints")().asInstanceOf[js.Array[ErgonomicType]]
   

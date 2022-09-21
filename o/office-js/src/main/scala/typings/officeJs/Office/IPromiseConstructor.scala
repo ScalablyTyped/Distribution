@@ -22,7 +22,7 @@ trait IPromiseConstructor
 Instantiable1[
       /* executor */ js.Function2[
         /* resolve */ js.Function1[/* value */ js.UndefOr[js.Object | js.Thenable[js.Object]], Unit], 
-        /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+        /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
         Unit
       ], 
       js.Promise[js.Object]
@@ -305,14 +305,14 @@ Instantiable1[
     * @param reason The reason the promise was rejected.
     * @returns A new rejected Promise.
     */
-  def reject(reason: js.Any): js.Promise[scala.Nothing] = js.native
+  def reject(reason: Any): js.Promise[scala.Nothing] = js.native
   /**
     * Creates a new rejected promise for the provided reason.
     * @param reason The reason the promise was rejected.
     * @returns A new rejected Promise.
     */
   @JSName("reject")
-  def reject_T[T](reason: js.Any): js.Promise[T] = js.native
+  def reject_T[T](reason: Any): js.Promise[T] = js.native
   
   /**
     * Creates a new resolved promise.

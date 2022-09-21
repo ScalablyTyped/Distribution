@@ -25,12 +25,20 @@ object pkcs12 {
   inline def generateKey(password: Unit, salt: ByteBuffer, id: Byte, iter: Double, n: Double): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   inline def generateKey(password: Unit, salt: ByteBuffer, id: Byte, iter: Double, n: Double, md: MessageDigest): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
-  inline def pkcs12FromAsn1(obj: js.Any): Pkcs12Pfx = ^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any]).asInstanceOf[Pkcs12Pfx]
-  inline def pkcs12FromAsn1(obj: js.Any, password: String): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
-  inline def pkcs12FromAsn1(obj: js.Any, strict: Boolean): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
-  inline def pkcs12FromAsn1(obj: js.Any, strict: Boolean, password: String): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
-  inline def pkcs12FromAsn1(obj: js.Any, strict: Unit, password: String): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
+  inline def pkcs12FromAsn1(obj: Any): Pkcs12Pfx = ^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any]).asInstanceOf[Pkcs12Pfx]
+  inline def pkcs12FromAsn1(obj: Any, password: String): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
+  inline def pkcs12FromAsn1(obj: Any, strict: Boolean): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
+  inline def pkcs12FromAsn1(obj: Any, strict: Boolean, password: String): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
+  inline def pkcs12FromAsn1(obj: Any, strict: Unit, password: String): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
   
+  inline def toPkcs12Asn1(key: Null, cert: js.Array[Certificate]): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def toPkcs12Asn1(key: Null, cert: js.Array[Certificate], password: String): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def toPkcs12Asn1(key: Null, cert: js.Array[Certificate], password: String, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def toPkcs12Asn1(key: Null, cert: js.Array[Certificate], password: Null, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def toPkcs12Asn1(key: Null, cert: Certificate): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def toPkcs12Asn1(key: Null, cert: Certificate, password: String): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def toPkcs12Asn1(key: Null, cert: Certificate, password: String, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def toPkcs12Asn1(key: Null, cert: Certificate, password: Null, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
   inline def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate]): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any])).asInstanceOf[Asn1]
   inline def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate], password: String): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Asn1]
   inline def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate], password: String, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
@@ -44,7 +52,7 @@ object pkcs12 {
     
     var asn1: Asn1
     
-    var attributes: js.Any
+    var attributes: Any
     
     var cert: js.UndefOr[Certificate] = js.undefined
     
@@ -54,7 +62,7 @@ object pkcs12 {
   }
   object Bag {
     
-    inline def apply(asn1: Asn1, attributes: js.Any, `type`: String): Bag = {
+    inline def apply(asn1: Asn1, attributes: Any, `type`: String): Bag = {
       val __obj = js.Dynamic.literal(asn1 = asn1.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bag]
@@ -64,7 +72,7 @@ object pkcs12 {
       
       inline def setAsn1(value: Asn1): Self = StObject.set(x, "asn1", value.asInstanceOf[js.Any])
       
-      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setCert(value: Certificate): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -150,7 +158,7 @@ object pkcs12 {
       
       inline def setSafeContents(value: js.Array[Encrypted]): Self = StObject.set(x, "safeContents", value.asInstanceOf[js.Any])
       
-      inline def setSafeContentsVarargs(value: Encrypted*): Self = StObject.set(x, "safeContents", js.Array(value :_*))
+      inline def setSafeContentsVarargs(value: Encrypted*): Self = StObject.set(x, "safeContents", js.Array(value*))
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.TexturePacker")
 @js.native
-class TexturePacker protected ()
+open class TexturePacker protected ()
   extends StObject
      with typings.babylonjs.BABYLON.TexturePacker {
   /**
@@ -31,30 +31,30 @@ object TexturePacker {
   /** Packer Layout Constant 2 */
   @JSGlobal("BABYLON.TexturePacker.LAYOUT_COLNUM")
   @js.native
-  val LAYOUT_COLNUM: Double = js.native
+  val LAYOUT_COLNUM: /* 2 */ Double = js.native
   
   /** Packer Layout Constant 1 */
   @JSGlobal("BABYLON.TexturePacker.LAYOUT_POWER2")
   @js.native
-  val LAYOUT_POWER2: Double = js.native
+  val LAYOUT_POWER2: /* 1 */ Double = js.native
   
   /** Packer Layout Constant 0 */
   @JSGlobal("BABYLON.TexturePacker.LAYOUT_STRIP")
   @js.native
-  val LAYOUT_STRIP: Double = js.native
+  val LAYOUT_STRIP: /* 0 */ Double = js.native
   
   /** Packer Layout Constant 2 */
   @JSGlobal("BABYLON.TexturePacker.SUBUV_COLOR")
   @js.native
-  val SUBUV_COLOR: Double = js.native
+  val SUBUV_COLOR: /* 2 */ Double = js.native
   
   /** Packer Layout Constant 1 */
   @JSGlobal("BABYLON.TexturePacker.SUBUV_EXTEND")
   @js.native
-  val SUBUV_EXTEND: Double = js.native
+  val SUBUV_EXTEND: /* 1 */ Double = js.native
   
   /** Packer Layout Constant 0 */
   @JSGlobal("BABYLON.TexturePacker.SUBUV_WRAP")
   @js.native
-  val SUBUV_WRAP: Double = js.native
+  val SUBUV_WRAP: /* 0 */ Double = js.native
 }

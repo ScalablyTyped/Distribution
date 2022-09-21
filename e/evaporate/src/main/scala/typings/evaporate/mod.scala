@@ -3,7 +3,6 @@ package typings.evaporate
 import org.scalablytyped.runtime.StringDictionary
 import typings.evaporate.evaporateStrings.`2`
 import typings.evaporate.evaporateStrings.`4`
-import typings.std.ArrayBuffer
 import typings.std.File
 import typings.std.ReadableStream
 import typings.std.XMLHttpRequest
@@ -15,7 +14,7 @@ object mod {
   
   @JSImport("evaporate", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Evaporate {
     def this(config: CreateConfig) = this()
@@ -249,8 +248,8 @@ object mod {
     
     var customAuthMethod: js.UndefOr[
         Null | (js.Function5[
-          /* signParams */ String, 
-          /* signHeaders */ String, 
+          /* signParams */ js.Object, 
+          /* signHeaders */ js.Object, 
           /* stringToSign */ String, 
           /* signatureDateTime */ String, 
           /* canonicalRequest */ String, 
@@ -271,7 +270,7 @@ object mod {
     var progressIntervalMS: js.UndefOr[Double] = js.undefined
     
     var readableStreamPartMethod: js.UndefOr[
-        Null | (js.Function3[/* file */ File, /* start */ Double, /* end */ Double, ReadableStream[js.Any]])
+        Null | (js.Function3[/* file */ File, /* start */ Double, /* end */ Double, ReadableStream[Any]])
       ] = js.undefined
     
     var readableStreams: js.UndefOr[Boolean] = js.undefined
@@ -290,7 +289,7 @@ object mod {
     
     var signResponseHandler: js.UndefOr[
         Null | (js.Function3[
-          /* response */ js.Any, 
+          /* response */ Any, 
           /* stringToSign */ String, 
           /* signatureDateTime */ String, 
           js.Promise[String]
@@ -325,7 +324,7 @@ object mod {
       inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
       inline def setCustomAuthMethod(
-        value: (/* signParams */ String, /* signHeaders */ String, /* stringToSign */ String, /* signatureDateTime */ String, /* canonicalRequest */ String) => js.Promise[String]
+        value: (/* signParams */ js.Object, /* signHeaders */ js.Object, /* stringToSign */ String, /* signatureDateTime */ String, /* canonicalRequest */ String) => js.Promise[String]
       ): Self = StObject.set(x, "customAuthMethod", js.Any.fromFunction5(value))
       
       inline def setCustomAuthMethodNull: Self = StObject.set(x, "customAuthMethod", null)
@@ -356,7 +355,7 @@ object mod {
       
       inline def setProgressIntervalMSUndefined: Self = StObject.set(x, "progressIntervalMS", js.undefined)
       
-      inline def setReadableStreamPartMethod(value: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[js.Any]): Self = StObject.set(x, "readableStreamPartMethod", js.Any.fromFunction3(value))
+      inline def setReadableStreamPartMethod(value: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[Any]): Self = StObject.set(x, "readableStreamPartMethod", js.Any.fromFunction3(value))
       
       inline def setReadableStreamPartMethodNull: Self = StObject.set(x, "readableStreamPartMethod", null)
       
@@ -393,7 +392,7 @@ object mod {
       inline def setSignParamsUndefined: Self = StObject.set(x, "signParams", js.undefined)
       
       inline def setSignResponseHandler(
-        value: (/* response */ js.Any, /* stringToSign */ String, /* signatureDateTime */ String) => js.Promise[String]
+        value: (/* response */ Any, /* stringToSign */ String, /* signatureDateTime */ String) => js.Promise[String]
       ): Self = StObject.set(x, "signResponseHandler", js.Any.fromFunction3(value))
       
       inline def setSignResponseHandlerNull: Self = StObject.set(x, "signResponseHandler", null)
@@ -430,14 +429,16 @@ object mod {
     
     var computeContentMd5: js.UndefOr[Boolean] = js.undefined
     
-    var cryptoHexEncodedHash256: js.UndefOr[Null | (js.Function1[/* data */ String | ArrayBuffer | Null, String])] = js.undefined
+    var cryptoHexEncodedHash256: js.UndefOr[
+        Null | (js.Function1[/* data */ String | js.typedarray.ArrayBuffer | Null, String])
+      ] = js.undefined
     
-    var cryptoMd5Method: js.UndefOr[Null | (js.Function1[/* data */ ArrayBuffer, String])] = js.undefined
+    var cryptoMd5Method: js.UndefOr[Null | (js.Function1[/* data */ js.typedarray.ArrayBuffer, String])] = js.undefined
     
     var customAuthMethod: js.UndefOr[
         Null | (js.Function5[
-          /* signParams */ String, 
-          /* signHeaders */ String, 
+          /* signParams */ js.Object, 
+          /* signHeaders */ js.Object, 
           /* stringToSign */ String, 
           /* signatureDateTime */ String, 
           /* canonicalRequest */ String, 
@@ -468,7 +469,7 @@ object mod {
     var progressIntervalMS: js.UndefOr[Double] = js.undefined
     
     var readableStreamPartMethod: js.UndefOr[
-        Null | (js.Function3[/* file */ File, /* start */ Double, /* end */ Double, ReadableStream[js.Any]])
+        Null | (js.Function3[/* file */ File, /* start */ Double, /* end */ Double, ReadableStream[Any]])
       ] = js.undefined
     
     var readableStreams: js.UndefOr[Boolean] = js.undefined
@@ -487,7 +488,7 @@ object mod {
     
     var signResponseHandler: js.UndefOr[
         Null | (js.Function3[
-          /* response */ js.Any, 
+          /* response */ Any, 
           /* stringToSign */ String, 
           /* signatureDateTime */ String, 
           js.Promise[String]
@@ -543,20 +544,20 @@ object mod {
       
       inline def setComputeContentMd5Undefined: Self = StObject.set(x, "computeContentMd5", js.undefined)
       
-      inline def setCryptoHexEncodedHash256(value: /* data */ String | ArrayBuffer | Null => String): Self = StObject.set(x, "cryptoHexEncodedHash256", js.Any.fromFunction1(value))
+      inline def setCryptoHexEncodedHash256(value: /* data */ String | js.typedarray.ArrayBuffer | Null => String): Self = StObject.set(x, "cryptoHexEncodedHash256", js.Any.fromFunction1(value))
       
       inline def setCryptoHexEncodedHash256Null: Self = StObject.set(x, "cryptoHexEncodedHash256", null)
       
       inline def setCryptoHexEncodedHash256Undefined: Self = StObject.set(x, "cryptoHexEncodedHash256", js.undefined)
       
-      inline def setCryptoMd5Method(value: /* data */ ArrayBuffer => String): Self = StObject.set(x, "cryptoMd5Method", js.Any.fromFunction1(value))
+      inline def setCryptoMd5Method(value: /* data */ js.typedarray.ArrayBuffer => String): Self = StObject.set(x, "cryptoMd5Method", js.Any.fromFunction1(value))
       
       inline def setCryptoMd5MethodNull: Self = StObject.set(x, "cryptoMd5Method", null)
       
       inline def setCryptoMd5MethodUndefined: Self = StObject.set(x, "cryptoMd5Method", js.undefined)
       
       inline def setCustomAuthMethod(
-        value: (/* signParams */ String, /* signHeaders */ String, /* stringToSign */ String, /* signatureDateTime */ String, /* canonicalRequest */ String) => js.Promise[String]
+        value: (/* signParams */ js.Object, /* signHeaders */ js.Object, /* stringToSign */ String, /* signatureDateTime */ String, /* canonicalRequest */ String) => js.Promise[String]
       ): Self = StObject.set(x, "customAuthMethod", js.Any.fromFunction5(value))
       
       inline def setCustomAuthMethodNull: Self = StObject.set(x, "customAuthMethod", null)
@@ -607,7 +608,7 @@ object mod {
       
       inline def setProgressIntervalMSUndefined: Self = StObject.set(x, "progressIntervalMS", js.undefined)
       
-      inline def setReadableStreamPartMethod(value: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[js.Any]): Self = StObject.set(x, "readableStreamPartMethod", js.Any.fromFunction3(value))
+      inline def setReadableStreamPartMethod(value: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[Any]): Self = StObject.set(x, "readableStreamPartMethod", js.Any.fromFunction3(value))
       
       inline def setReadableStreamPartMethodNull: Self = StObject.set(x, "readableStreamPartMethod", null)
       
@@ -644,7 +645,7 @@ object mod {
       inline def setSignParamsUndefined: Self = StObject.set(x, "signParams", js.undefined)
       
       inline def setSignResponseHandler(
-        value: (/* response */ js.Any, /* stringToSign */ String, /* signatureDateTime */ String) => js.Promise[String]
+        value: (/* response */ Any, /* stringToSign */ String, /* signatureDateTime */ String) => js.Promise[String]
       ): Self = StObject.set(x, "signResponseHandler", js.Any.fromFunction3(value))
       
       inline def setSignResponseHandlerNull: Self = StObject.set(x, "signResponseHandler", null)

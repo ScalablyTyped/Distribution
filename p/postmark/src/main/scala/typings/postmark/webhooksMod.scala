@@ -22,7 +22,7 @@ object webhooksMod {
       
       inline def setWebhooks(value: js.Array[Webhook]): Self = StObject.set(x, "Webhooks", value.asInstanceOf[js.Any])
       
-      inline def setWebhooksVarargs(value: Webhook*): Self = StObject.set(x, "Webhooks", js.Array(value :_*))
+      inline def setWebhooksVarargs(value: Webhook*): Self = StObject.set(x, "Webhooks", js.Array(value*))
     }
   }
 }

@@ -11,9 +11,9 @@ Append querystring params to a URL.
 | Full name          | append-query |
 | Keywords           | string, url, querystring, query params, query, append |
 | # releases         | 2 |
-| # dependents       | 37 |
-| # downloads        | 983917 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 154074.33333333334 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](https://github.com/lakenen/node-append-query)

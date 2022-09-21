@@ -78,7 +78,7 @@ object IInfoboxOptions {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: IInfoboxActions*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: IInfoboxActions*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setCloseDelayTime(value: Double): Self = StObject.set(x, "closeDelayTime", value.asInstanceOf[js.Any])
     

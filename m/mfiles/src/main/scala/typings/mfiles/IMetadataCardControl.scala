@@ -8,37 +8,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IMetadataCardControl extends StObject {
   
-  def ActivateLink(valuePart: js.Any): Unit
+  def ActivateLink(valuePart: Any): Unit
   
-  def AddNewItem(name: String): js.Any
+  def AddNewItem(name: String): Any
   
-  def AddNewSubItem(name: String, valueParent: js.Any): js.Any
+  def AddNewSubItem(name: String, valueParent: Any): Any
   
   val AllowAdding: Boolean
   
   def AllowHitHighlighting(): Boolean
   
-  def CanActivateLink(valuePart: js.Any): Boolean
+  def CanActivateLink(valuePart: Any): Boolean
   
-  def CanAddNewSubItem(name: String, valueParent: js.Any): Boolean
+  def CanAddNewSubItem(name: String, valueParent: Any): Boolean
   
-  def CanEditItem(value: js.Any): Boolean
+  def CanEditItem(value: Any): Boolean
   
   def CreateSelectionList(): IMetadataCardSelectionList
   
   def CreateUnvalidatedValue(valueString: String): IMetadataCardUnvalidatedValue
   
-  def EditItem(value: js.Any): js.Any
+  def EditItem(value: Any): Any
   
   val Events: IEvents
   
-  def FindItem(name: String): js.Any
+  def FindItem(name: String): Any
   
-  def FindItemByID(itemID: Double): js.Any
+  def FindItemByID(itemID: Double): Any
   
-  def GetSelectableValueItemStates(): js.Any
+  def GetSelectableValueItemStates(): Any
   
-  def GetValueSuggestions(): js.Any
+  def GetValueSuggestions(): Any
   
   def HasAutomaticValue(): Boolean
   
@@ -72,11 +72,11 @@ trait IMetadataCardControl extends StObject {
   
   def RevertToInitialValue(): Unit
   
-  def SetValueItemState(itemID: String, state: js.Any): Unit
+  def SetValueItemState(itemID: String, state: Any): Unit
   
   val Type: String
   
-  var Value: js.Any
+  var Value: Any
   
   var ValueRequired: Boolean
   
@@ -87,22 +87,22 @@ trait IMetadataCardControl extends StObject {
 object IMetadataCardControl {
   
   inline def apply(
-    ActivateLink: js.Any => Unit,
-    AddNewItem: String => js.Any,
-    AddNewSubItem: (String, js.Any) => js.Any,
+    ActivateLink: Any => Unit,
+    AddNewItem: String => Any,
+    AddNewSubItem: (String, Any) => Any,
     AllowAdding: Boolean,
     AllowHitHighlighting: () => Boolean,
-    CanActivateLink: js.Any => Boolean,
-    CanAddNewSubItem: (String, js.Any) => Boolean,
-    CanEditItem: js.Any => Boolean,
+    CanActivateLink: Any => Boolean,
+    CanAddNewSubItem: (String, Any) => Boolean,
+    CanEditItem: Any => Boolean,
     CreateSelectionList: () => IMetadataCardSelectionList,
     CreateUnvalidatedValue: String => IMetadataCardUnvalidatedValue,
-    EditItem: js.Any => js.Any,
+    EditItem: Any => Any,
     Events: IEvents,
-    FindItem: String => js.Any,
-    FindItemByID: Double => js.Any,
-    GetSelectableValueItemStates: () => js.Any,
-    GetValueSuggestions: () => js.Any,
+    FindItem: String => Any,
+    FindItemByID: Double => Any,
+    GetSelectableValueItemStates: () => Any,
+    GetValueSuggestions: () => Any,
     HasAutomaticValue: () => Boolean,
     HasInitialValue: () => Boolean,
     HasUncalculatedAutomaticValue: () => Boolean,
@@ -119,9 +119,9 @@ object IMetadataCardControl {
     RefreshList: () => Unit,
     Remove: () => Unit,
     RevertToInitialValue: () => Unit,
-    SetValueItemState: (String, js.Any) => Unit,
+    SetValueItemState: (String, Any) => Unit,
     Type: String,
-    Value: js.Any,
+    Value: Any,
     ValueRequired: Boolean,
     Valuelist: MFBuiltInValueList | Double,
     Visible: Boolean
@@ -132,37 +132,37 @@ object IMetadataCardControl {
   
   extension [Self <: IMetadataCardControl](x: Self) {
     
-    inline def setActivateLink(value: js.Any => Unit): Self = StObject.set(x, "ActivateLink", js.Any.fromFunction1(value))
+    inline def setActivateLink(value: Any => Unit): Self = StObject.set(x, "ActivateLink", js.Any.fromFunction1(value))
     
-    inline def setAddNewItem(value: String => js.Any): Self = StObject.set(x, "AddNewItem", js.Any.fromFunction1(value))
+    inline def setAddNewItem(value: String => Any): Self = StObject.set(x, "AddNewItem", js.Any.fromFunction1(value))
     
-    inline def setAddNewSubItem(value: (String, js.Any) => js.Any): Self = StObject.set(x, "AddNewSubItem", js.Any.fromFunction2(value))
+    inline def setAddNewSubItem(value: (String, Any) => Any): Self = StObject.set(x, "AddNewSubItem", js.Any.fromFunction2(value))
     
     inline def setAllowAdding(value: Boolean): Self = StObject.set(x, "AllowAdding", value.asInstanceOf[js.Any])
     
     inline def setAllowHitHighlighting(value: () => Boolean): Self = StObject.set(x, "AllowHitHighlighting", js.Any.fromFunction0(value))
     
-    inline def setCanActivateLink(value: js.Any => Boolean): Self = StObject.set(x, "CanActivateLink", js.Any.fromFunction1(value))
+    inline def setCanActivateLink(value: Any => Boolean): Self = StObject.set(x, "CanActivateLink", js.Any.fromFunction1(value))
     
-    inline def setCanAddNewSubItem(value: (String, js.Any) => Boolean): Self = StObject.set(x, "CanAddNewSubItem", js.Any.fromFunction2(value))
+    inline def setCanAddNewSubItem(value: (String, Any) => Boolean): Self = StObject.set(x, "CanAddNewSubItem", js.Any.fromFunction2(value))
     
-    inline def setCanEditItem(value: js.Any => Boolean): Self = StObject.set(x, "CanEditItem", js.Any.fromFunction1(value))
+    inline def setCanEditItem(value: Any => Boolean): Self = StObject.set(x, "CanEditItem", js.Any.fromFunction1(value))
     
     inline def setCreateSelectionList(value: () => IMetadataCardSelectionList): Self = StObject.set(x, "CreateSelectionList", js.Any.fromFunction0(value))
     
     inline def setCreateUnvalidatedValue(value: String => IMetadataCardUnvalidatedValue): Self = StObject.set(x, "CreateUnvalidatedValue", js.Any.fromFunction1(value))
     
-    inline def setEditItem(value: js.Any => js.Any): Self = StObject.set(x, "EditItem", js.Any.fromFunction1(value))
+    inline def setEditItem(value: Any => Any): Self = StObject.set(x, "EditItem", js.Any.fromFunction1(value))
     
     inline def setEvents(value: IEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    inline def setFindItem(value: String => js.Any): Self = StObject.set(x, "FindItem", js.Any.fromFunction1(value))
+    inline def setFindItem(value: String => Any): Self = StObject.set(x, "FindItem", js.Any.fromFunction1(value))
     
-    inline def setFindItemByID(value: Double => js.Any): Self = StObject.set(x, "FindItemByID", js.Any.fromFunction1(value))
+    inline def setFindItemByID(value: Double => Any): Self = StObject.set(x, "FindItemByID", js.Any.fromFunction1(value))
     
-    inline def setGetSelectableValueItemStates(value: () => js.Any): Self = StObject.set(x, "GetSelectableValueItemStates", js.Any.fromFunction0(value))
+    inline def setGetSelectableValueItemStates(value: () => Any): Self = StObject.set(x, "GetSelectableValueItemStates", js.Any.fromFunction0(value))
     
-    inline def setGetValueSuggestions(value: () => js.Any): Self = StObject.set(x, "GetValueSuggestions", js.Any.fromFunction0(value))
+    inline def setGetValueSuggestions(value: () => Any): Self = StObject.set(x, "GetValueSuggestions", js.Any.fromFunction0(value))
     
     inline def setHasAutomaticValue(value: () => Boolean): Self = StObject.set(x, "HasAutomaticValue", js.Any.fromFunction0(value))
     
@@ -196,11 +196,11 @@ object IMetadataCardControl {
     
     inline def setRevertToInitialValue(value: () => Unit): Self = StObject.set(x, "RevertToInitialValue", js.Any.fromFunction0(value))
     
-    inline def setSetValueItemState(value: (String, js.Any) => Unit): Self = StObject.set(x, "SetValueItemState", js.Any.fromFunction2(value))
+    inline def setSetValueItemState(value: (String, Any) => Unit): Self = StObject.set(x, "SetValueItemState", js.Any.fromFunction2(value))
     
     inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     inline def setValueRequired(value: Boolean): Self = StObject.set(x, "ValueRequired", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-electron
 
-Typings are for version 2.2.0
+Typings are for version 2.2.1
 
 ## Library description:
 Detect if running in Electron.
@@ -11,9 +11,9 @@ Detect if running in Electron.
 | Full name          | is-electron |
 | Keywords           | atom, electron, renderer, process |
 | # releases         | 2 |
-| # dependents       | 66 |
-| # downloads        | 1925749 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 2311252.3333333335 |
+| # stars            | 90.0 |
 
 ## Links
 - [Homepage](https://github.com/cheton/is-electron)

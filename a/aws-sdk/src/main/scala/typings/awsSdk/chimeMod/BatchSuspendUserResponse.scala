@@ -24,6 +24,6 @@ object BatchSuspendUserResponse {
     
     inline def setUserErrorsUndefined: Self = StObject.set(x, "UserErrors", js.undefined)
     
-    inline def setUserErrorsVarargs(value: UserError*): Self = StObject.set(x, "UserErrors", js.Array(value :_*))
+    inline def setUserErrorsVarargs(value: UserError*): Self = StObject.set(x, "UserErrors", js.Array(value*))
   }
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ThumbWriter")
 @js.native
-class ThumbWriter protected ()
+open class ThumbWriter protected ()
   extends StObject
      with typings.fridaGum.ThumbWriter {
   /**

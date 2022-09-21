@@ -43,12 +43,12 @@ trait IoTAnalytics extends Service {
   var config_IoTAnalytics: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a channel. A channel collects data from an MQTT topic and archives the raw, unprocessed messages before publishing the data to a pipeline.
+    * Used to create a channel. A channel collects data from an MQTT topic and archives the raw, unprocessed messages before publishing the data to a pipeline.
     */
   def createChannel(): Request[CreateChannelResponse, AWSError] = js.native
   def createChannel(callback: js.Function2[/* err */ AWSError, /* data */ CreateChannelResponse, Unit]): Request[CreateChannelResponse, AWSError] = js.native
   /**
-    * Creates a channel. A channel collects data from an MQTT topic and archives the raw, unprocessed messages before publishing the data to a pipeline.
+    * Used to create a channel. A channel collects data from an MQTT topic and archives the raw, unprocessed messages before publishing the data to a pipeline.
     */
   def createChannel(params: CreateChannelRequest): Request[CreateChannelResponse, AWSError] = js.native
   def createChannel(
@@ -57,12 +57,12 @@ trait IoTAnalytics extends Service {
   ): Request[CreateChannelResponse, AWSError] = js.native
   
   /**
-    * Creates a dataset. A dataset stores data retrieved from a data store by applying a queryAction (a SQL query) or a containerAction (executing a containerized application). This operation creates the skeleton of a dataset. The dataset can be populated manually by calling CreateDatasetContent or automatically according to a trigger you specify.
+    * Used to create a dataset. A dataset stores data retrieved from a data store by applying a queryAction (a SQL query) or a containerAction (executing a containerized application). This operation creates the skeleton of a dataset. The dataset can be populated manually by calling CreateDatasetContent or automatically according to a trigger you specify.
     */
   def createDataset(): Request[CreateDatasetResponse, AWSError] = js.native
   def createDataset(callback: js.Function2[/* err */ AWSError, /* data */ CreateDatasetResponse, Unit]): Request[CreateDatasetResponse, AWSError] = js.native
   /**
-    * Creates a dataset. A dataset stores data retrieved from a data store by applying a queryAction (a SQL query) or a containerAction (executing a containerized application). This operation creates the skeleton of a dataset. The dataset can be populated manually by calling CreateDatasetContent or automatically according to a trigger you specify.
+    * Used to create a dataset. A dataset stores data retrieved from a data store by applying a queryAction (a SQL query) or a containerAction (executing a containerized application). This operation creates the skeleton of a dataset. The dataset can be populated manually by calling CreateDatasetContent or automatically according to a trigger you specify.
     */
   def createDataset(params: CreateDatasetRequest): Request[CreateDatasetResponse, AWSError] = js.native
   def createDataset(
@@ -71,12 +71,12 @@ trait IoTAnalytics extends Service {
   ): Request[CreateDatasetResponse, AWSError] = js.native
   
   /**
-    * Creates the content of a data set by applying a queryAction (a SQL query) or a containerAction (executing a containerized application).
+    * Creates the content of a dataset by applying a queryAction (a SQL query) or a containerAction (executing a containerized application).
     */
   def createDatasetContent(): Request[CreateDatasetContentResponse, AWSError] = js.native
   def createDatasetContent(callback: js.Function2[/* err */ AWSError, /* data */ CreateDatasetContentResponse, Unit]): Request[CreateDatasetContentResponse, AWSError] = js.native
   /**
-    * Creates the content of a data set by applying a queryAction (a SQL query) or a containerAction (executing a containerized application).
+    * Creates the content of a dataset by applying a queryAction (a SQL query) or a containerAction (executing a containerized application).
     */
   def createDatasetContent(params: CreateDatasetContentRequest): Request[CreateDatasetContentResponse, AWSError] = js.native
   def createDatasetContent(
@@ -225,12 +225,12 @@ trait IoTAnalytics extends Service {
   ): Request[DescribeDatastoreResponse, AWSError] = js.native
   
   /**
-    * Retrieves the current settings of the AWS IoT Analytics logging options.
+    * Retrieves the current settings of the IoT Analytics logging options.
     */
   def describeLoggingOptions(): Request[DescribeLoggingOptionsResponse, AWSError] = js.native
   def describeLoggingOptions(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLoggingOptionsResponse, Unit]): Request[DescribeLoggingOptionsResponse, AWSError] = js.native
   /**
-    * Retrieves the current settings of the AWS IoT Analytics logging options.
+    * Retrieves the current settings of the IoT Analytics logging options.
     */
   def describeLoggingOptions(params: DescribeLoggingOptionsRequest): Request[DescribeLoggingOptionsResponse, AWSError] = js.native
   def describeLoggingOptions(
@@ -253,12 +253,12 @@ trait IoTAnalytics extends Service {
   ): Request[DescribePipelineResponse, AWSError] = js.native
   
   /**
-    * Retrieves the contents of a data set as presigned URIs.
+    * Retrieves the contents of a dataset as presigned URIs.
     */
   def getDatasetContent(): Request[GetDatasetContentResponse, AWSError] = js.native
   def getDatasetContent(callback: js.Function2[/* err */ AWSError, /* data */ GetDatasetContentResponse, Unit]): Request[GetDatasetContentResponse, AWSError] = js.native
   /**
-    * Retrieves the contents of a data set as presigned URIs.
+    * Retrieves the contents of a dataset as presigned URIs.
     */
   def getDatasetContent(params: GetDatasetContentRequest): Request[GetDatasetContentResponse, AWSError] = js.native
   def getDatasetContent(
@@ -281,12 +281,12 @@ trait IoTAnalytics extends Service {
   ): Request[ListChannelsResponse, AWSError] = js.native
   
   /**
-    * Lists information about data set contents that have been created.
+    * Lists information about dataset contents that have been created.
     */
   def listDatasetContents(): Request[ListDatasetContentsResponse, AWSError] = js.native
   def listDatasetContents(callback: js.Function2[/* err */ AWSError, /* data */ ListDatasetContentsResponse, Unit]): Request[ListDatasetContentsResponse, AWSError] = js.native
   /**
-    * Lists information about data set contents that have been created.
+    * Lists information about dataset contents that have been created.
     */
   def listDatasetContents(params: ListDatasetContentsRequest): Request[ListDatasetContentsResponse, AWSError] = js.native
   def listDatasetContents(
@@ -295,12 +295,12 @@ trait IoTAnalytics extends Service {
   ): Request[ListDatasetContentsResponse, AWSError] = js.native
   
   /**
-    * Retrieves information about data sets.
+    * Retrieves information about datasets.
     */
   def listDatasets(): Request[ListDatasetsResponse, AWSError] = js.native
   def listDatasets(callback: js.Function2[/* err */ AWSError, /* data */ ListDatasetsResponse, Unit]): Request[ListDatasetsResponse, AWSError] = js.native
   /**
-    * Retrieves information about data sets.
+    * Retrieves information about datasets.
     */
   def listDatasets(params: ListDatasetsRequest): Request[ListDatasetsResponse, AWSError] = js.native
   def listDatasets(
@@ -351,12 +351,12 @@ trait IoTAnalytics extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
-    * Sets or updates the AWS IoT Analytics logging options. If you update the value of any loggingOptions field, it takes up to one minute for the change to take effect. Also, if you change the policy attached to the role you specified in the roleArn field (for example, to correct an invalid policy), it takes up to five minutes for that change to take effect. 
+    * Sets or updates the IoT Analytics logging options. If you update the value of any loggingOptions field, it takes up to one minute for the change to take effect. Also, if you change the policy attached to the role you specified in the roleArn field (for example, to correct an invalid policy), it takes up to five minutes for that change to take effect. 
     */
   def putLoggingOptions(): Request[js.Object, AWSError] = js.native
   def putLoggingOptions(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Sets or updates the AWS IoT Analytics logging options. If you update the value of any loggingOptions field, it takes up to one minute for the change to take effect. Also, if you change the policy attached to the role you specified in the roleArn field (for example, to correct an invalid policy), it takes up to five minutes for that change to take effect. 
+    * Sets or updates the IoT Analytics logging options. If you update the value of any loggingOptions field, it takes up to one minute for the change to take effect. Also, if you change the policy attached to the role you specified in the roleArn field (for example, to correct an invalid policy), it takes up to five minutes for that change to take effect. 
     */
   def putLoggingOptions(params: PutLoggingOptionsRequest): Request[js.Object, AWSError] = js.native
   def putLoggingOptions(
@@ -435,12 +435,12 @@ trait IoTAnalytics extends Service {
   ): Request[UntagResourceResponse, AWSError] = js.native
   
   /**
-    * Updates the settings of a channel.
+    * Used to update the settings of a channel.
     */
   def updateChannel(): Request[js.Object, AWSError] = js.native
   def updateChannel(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Updates the settings of a channel.
+    * Used to update the settings of a channel.
     */
   def updateChannel(params: UpdateChannelRequest): Request[js.Object, AWSError] = js.native
   def updateChannel(
@@ -449,12 +449,12 @@ trait IoTAnalytics extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Updates the settings of a data set.
+    * Updates the settings of a dataset.
     */
   def updateDataset(): Request[js.Object, AWSError] = js.native
   def updateDataset(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Updates the settings of a data set.
+    * Updates the settings of a dataset.
     */
   def updateDataset(params: UpdateDatasetRequest): Request[js.Object, AWSError] = js.native
   def updateDataset(
@@ -463,12 +463,12 @@ trait IoTAnalytics extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Updates the settings of a data store.
+    * Used to update the settings of a data store.
     */
   def updateDatastore(): Request[js.Object, AWSError] = js.native
   def updateDatastore(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Updates the settings of a data store.
+    * Used to update the settings of a data store.
     */
   def updateDatastore(params: UpdateDatastoreRequest): Request[js.Object, AWSError] = js.native
   def updateDatastore(

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PeriodicWaveConstraints extends StObject {
   
+  /* standard dom */
   var disableNormalization: js.UndefOr[scala.Boolean] = js.undefined
 }
 object PeriodicWaveConstraints {

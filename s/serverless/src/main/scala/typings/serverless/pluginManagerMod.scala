@@ -11,7 +11,7 @@ object pluginManagerMod {
   
   @JSImport("serverless/classes/PluginManager", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with PluginManager {
     def this(serverless: typings.serverless.mod.^) = this()
@@ -43,8 +43,8 @@ object pluginManagerMod {
     def setCliOptions(options: Options): Unit = js.native
     
     def spawn(commandsArray: String): js.Promise[Unit] = js.native
-    def spawn(commandsArray: String, options: js.Any): js.Promise[Unit] = js.native
+    def spawn(commandsArray: String, options: Any): js.Promise[Unit] = js.native
     def spawn(commandsArray: js.Array[String]): js.Promise[Unit] = js.native
-    def spawn(commandsArray: js.Array[String], options: js.Any): js.Promise[Unit] = js.native
+    def spawn(commandsArray: js.Array[String], options: Any): js.Promise[Unit] = js.native
   }
 }

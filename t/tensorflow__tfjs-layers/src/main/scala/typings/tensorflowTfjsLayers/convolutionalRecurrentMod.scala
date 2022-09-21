@@ -30,7 +30,7 @@ object convolutionalRecurrentMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_recurrent", "ConvLSTM2D")
   @js.native
-  class ConvLSTM2D protected () extends ConvRNN2D {
+  open class ConvLSTM2D protected () extends ConvRNN2D {
     def this(args: ConvLSTM2DArgs) = this()
   }
   /* static members */
@@ -58,7 +58,7 @@ object convolutionalRecurrentMod {
   - typings.tensorflowTfjsLayers.recurrentMod.RNNCell because Already inherited
   - typings.tensorflowTfjsLayers.convolutionalRecurrentMod.ConvRNN2DCell because var conflicts: _addedWeightNames, _built, _callHook, _losses, _nonTrainableWeights, _refCount, _stateful, _trainableWeights, _updates, activityRegularizer, addInboundNode, batchInputShape, built, dropoutMask, dtype, fastWeightInitDuringBuild, getNodeAtIndex, inboundNodes, initialWeights, inputSpec, name, nonTrainableWeights, outboundNodes, recurrentDropoutMask, stateSize, supportsMasking, trainable, trainableWeights, trainable_. Inlined filters, kernelSize, strides, padding, dataFormat, dilationRate */ @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_recurrent", "ConvLSTM2DCell")
   @js.native
-  class ConvLSTM2DCell protected () extends LSTMCell {
+  open class ConvLSTM2DCell protected () extends LSTMCell {
     def this(args: ConvLSTM2DCellArgs) = this()
     
     val dataFormat: DataFormat = js.native
@@ -169,6 +169,8 @@ object convolutionalRecurrentMod {
     var dilationRate: js.UndefOr[Double | js.Array[Double] | (js.Tuple2[Double, Double])] = js.undefined
     
     var dropout: js.UndefOr[Double] = js.undefined
+    
+    var dropoutFunc: js.UndefOr[js.Function] = js.undefined
     
     /**
       * The data-type for this layer. Defaults to 'float32'.
@@ -339,7 +341,7 @@ object convolutionalRecurrentMod {
       
       inline def setBatchInputShapeUndefined: Self = StObject.set(x, "batchInputShape", js.undefined)
       
-      inline def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value :_*))
+      inline def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value*))
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
@@ -361,7 +363,7 @@ object convolutionalRecurrentMod {
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
-      inline def setCellVarargs(value: RNNCell*): Self = StObject.set(x, "cell", js.Array(value :_*))
+      inline def setCellVarargs(value: RNNCell*): Self = StObject.set(x, "cell", js.Array(value*))
       
       inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
       
@@ -371,9 +373,13 @@ object convolutionalRecurrentMod {
       
       inline def setDilationRateUndefined: Self = StObject.set(x, "dilationRate", js.undefined)
       
-      inline def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value :_*))
+      inline def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value*))
       
       inline def setDropout(value: Double): Self = StObject.set(x, "dropout", value.asInstanceOf[js.Any])
+      
+      inline def setDropoutFunc(value: js.Function): Self = StObject.set(x, "dropoutFunc", value.asInstanceOf[js.Any])
+      
+      inline def setDropoutFuncUndefined: Self = StObject.set(x, "dropoutFunc", js.undefined)
       
       inline def setDropoutUndefined: Self = StObject.set(x, "dropout", js.undefined)
       
@@ -407,7 +413,7 @@ object convolutionalRecurrentMod {
       
       inline def setInputShapeUndefined: Self = StObject.set(x, "inputShape", js.undefined)
       
-      inline def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
+      inline def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value*))
       
       inline def setKernelConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "kernelConstraint", value.asInstanceOf[js.Any])
       
@@ -423,7 +429,7 @@ object convolutionalRecurrentMod {
       
       inline def setKernelSize(value: Double | js.Array[Double]): Self = StObject.set(x, "kernelSize", value.asInstanceOf[js.Any])
       
-      inline def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value :_*))
+      inline def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -469,7 +475,7 @@ object convolutionalRecurrentMod {
       
       inline def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
       
-      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value*))
       
       inline def setTrainable(value: Boolean): Self = StObject.set(x, "trainable", value.asInstanceOf[js.Any])
       
@@ -491,7 +497,7 @@ object convolutionalRecurrentMod {
       
       inline def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
       
-      inline def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value :_*))
+      inline def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value*))
     }
   }
   
@@ -535,6 +541,8 @@ object convolutionalRecurrentMod {
     var dilationRate: js.UndefOr[Double | js.Array[Double] | (js.Tuple2[Double, Double])] = js.undefined
     
     var dropout: js.UndefOr[Double] = js.undefined
+    
+    var dropoutFunc: js.UndefOr[js.Function] = js.undefined
     
     var dtype: js.UndefOr[DataType] = js.undefined
     
@@ -613,7 +621,7 @@ object convolutionalRecurrentMod {
       
       inline def setBatchInputShapeUndefined: Self = StObject.set(x, "batchInputShape", js.undefined)
       
-      inline def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value :_*))
+      inline def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value*))
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
@@ -639,9 +647,13 @@ object convolutionalRecurrentMod {
       
       inline def setDilationRateUndefined: Self = StObject.set(x, "dilationRate", js.undefined)
       
-      inline def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value :_*))
+      inline def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value*))
       
       inline def setDropout(value: Double): Self = StObject.set(x, "dropout", value.asInstanceOf[js.Any])
+      
+      inline def setDropoutFunc(value: js.Function): Self = StObject.set(x, "dropoutFunc", value.asInstanceOf[js.Any])
+      
+      inline def setDropoutFuncUndefined: Self = StObject.set(x, "dropoutFunc", js.undefined)
       
       inline def setDropoutUndefined: Self = StObject.set(x, "dropout", js.undefined)
       
@@ -663,7 +675,7 @@ object convolutionalRecurrentMod {
       
       inline def setInputShapeUndefined: Self = StObject.set(x, "inputShape", js.undefined)
       
-      inline def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
+      inline def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value*))
       
       inline def setKernelConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "kernelConstraint", value.asInstanceOf[js.Any])
       
@@ -679,7 +691,7 @@ object convolutionalRecurrentMod {
       
       inline def setKernelSize(value: Double | js.Array[Double]): Self = StObject.set(x, "kernelSize", value.asInstanceOf[js.Any])
       
-      inline def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value :_*))
+      inline def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -713,7 +725,7 @@ object convolutionalRecurrentMod {
       
       inline def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
       
-      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value*))
       
       inline def setTrainable(value: Boolean): Self = StObject.set(x, "trainable", value.asInstanceOf[js.Any])
       
@@ -731,7 +743,7 @@ object convolutionalRecurrentMod {
       
       inline def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
       
-      inline def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value :_*))
+      inline def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value*))
     }
   }
   
@@ -829,6 +841,8 @@ object convolutionalRecurrentMod {
     
     var dropout: js.UndefOr[Double] = js.undefined
     
+    var dropoutFunc: js.UndefOr[js.Function] = js.undefined
+    
     var dtype: js.UndefOr[DataType] = js.undefined
     
     /**
@@ -900,7 +914,7 @@ object convolutionalRecurrentMod {
       
       inline def setBatchInputShapeUndefined: Self = StObject.set(x, "batchInputShape", js.undefined)
       
-      inline def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value :_*))
+      inline def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value*))
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
@@ -926,9 +940,13 @@ object convolutionalRecurrentMod {
       
       inline def setDilationRateUndefined: Self = StObject.set(x, "dilationRate", js.undefined)
       
-      inline def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value :_*))
+      inline def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value*))
       
       inline def setDropout(value: Double): Self = StObject.set(x, "dropout", value.asInstanceOf[js.Any])
+      
+      inline def setDropoutFunc(value: js.Function): Self = StObject.set(x, "dropoutFunc", value.asInstanceOf[js.Any])
+      
+      inline def setDropoutFuncUndefined: Self = StObject.set(x, "dropoutFunc", js.undefined)
       
       inline def setDropoutUndefined: Self = StObject.set(x, "dropout", js.undefined)
       
@@ -946,7 +964,7 @@ object convolutionalRecurrentMod {
       
       inline def setInputShapeUndefined: Self = StObject.set(x, "inputShape", js.undefined)
       
-      inline def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
+      inline def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value*))
       
       inline def setKernelConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "kernelConstraint", value.asInstanceOf[js.Any])
       
@@ -962,7 +980,7 @@ object convolutionalRecurrentMod {
       
       inline def setKernelSize(value: Double | js.Array[Double]): Self = StObject.set(x, "kernelSize", value.asInstanceOf[js.Any])
       
-      inline def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value :_*))
+      inline def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -992,7 +1010,7 @@ object convolutionalRecurrentMod {
       
       inline def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
       
-      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value*))
       
       inline def setTrainable(value: Boolean): Self = StObject.set(x, "trainable", value.asInstanceOf[js.Any])
       
@@ -1006,12 +1024,12 @@ object convolutionalRecurrentMod {
       
       inline def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
       
-      inline def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value :_*))
+      inline def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value*))
     }
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.tensorflowTfjsLayers.convolutionalRecurrentMod.ConvRNN2DCellArgs because var conflicts: batchInputShape, batchSize, dtype, inputDType, inputShape, name, trainable, weights. Inlined filters, kernelSize, strides, padding, dataFormat, dilationRate, recurrentRegularizer, useBias, biasInitializer, dropout, kernelRegularizer, recurrentInitializer, biasRegularizer, kernelConstraint, biasConstraint, kernelInitializer, recurrentConstraint, activation, recurrentDropout */ trait ConvRNN2DLayerArgs
+  - typings.tensorflowTfjsLayers.convolutionalRecurrentMod.ConvRNN2DCellArgs because var conflicts: batchInputShape, batchSize, dtype, inputDType, inputShape, name, trainable, weights. Inlined filters, kernelSize, strides, padding, dataFormat, dilationRate, recurrentRegularizer, useBias, biasInitializer, dropout, dropoutFunc, kernelRegularizer, recurrentInitializer, biasRegularizer, kernelConstraint, biasConstraint, kernelInitializer, recurrentConstraint, activation, recurrentDropout */ trait ConvRNN2DLayerArgs
     extends StObject
        with BaseRNNLayerArgs {
     
@@ -1047,6 +1065,8 @@ object convolutionalRecurrentMod {
     var dilationRate: js.UndefOr[Double | js.Array[Double] | (js.Tuple2[Double, Double])] = js.undefined
     
     var dropout: js.UndefOr[Double] = js.undefined
+    
+    var dropoutFunc: js.UndefOr[js.Function] = js.undefined
     
     /**
       * The dimensionality of the output space (i.e. the number of filters in the
@@ -1123,9 +1143,13 @@ object convolutionalRecurrentMod {
       
       inline def setDilationRateUndefined: Self = StObject.set(x, "dilationRate", js.undefined)
       
-      inline def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value :_*))
+      inline def setDilationRateVarargs(value: Double*): Self = StObject.set(x, "dilationRate", js.Array(value*))
       
       inline def setDropout(value: Double): Self = StObject.set(x, "dropout", value.asInstanceOf[js.Any])
+      
+      inline def setDropoutFunc(value: js.Function): Self = StObject.set(x, "dropoutFunc", value.asInstanceOf[js.Any])
+      
+      inline def setDropoutFuncUndefined: Self = StObject.set(x, "dropoutFunc", js.undefined)
       
       inline def setDropoutUndefined: Self = StObject.set(x, "dropout", js.undefined)
       
@@ -1145,7 +1169,7 @@ object convolutionalRecurrentMod {
       
       inline def setKernelSize(value: Double | js.Array[Double]): Self = StObject.set(x, "kernelSize", value.asInstanceOf[js.Any])
       
-      inline def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value :_*))
+      inline def setKernelSizeVarargs(value: Double*): Self = StObject.set(x, "kernelSize", js.Array(value*))
       
       inline def setPadding(value: PaddingMode): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
@@ -1171,7 +1195,7 @@ object convolutionalRecurrentMod {
       
       inline def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
       
-      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value*))
       
       inline def setUseBias(value: Boolean): Self = StObject.set(x, "useBias", value.asInstanceOf[js.Any])
       

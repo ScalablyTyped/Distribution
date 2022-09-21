@@ -5,7 +5,6 @@ import typings.awsSdkClientDynamodbBrowser.typesAutoScalingSettingsUpdateMod.Aut
 import typings.awsSdkClientDynamodbBrowser.typesGlobalTableGlobalSecondaryIndexSettingsUpdateMod.GlobalTableGlobalSecondaryIndexSettingsUpdate
 import typings.awsSdkClientDynamodbBrowser.typesReplicaSettingsUpdateMod.ReplicaSettingsUpdate
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ object typesUpdateGlobalTableSettingsInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -44,7 +43,7 @@ object typesUpdateGlobalTableSettingsInputMod {
     var GlobalTableGlobalSecondaryIndexSettingsUpdate: js.UndefOr[
         (js.Array[
           typings.awsSdkClientDynamodbBrowser.typesGlobalTableGlobalSecondaryIndexSettingsUpdateMod.GlobalTableGlobalSecondaryIndexSettingsUpdate
-        ]) | (Iterable[
+        ]) | (js.Iterable[
           typings.awsSdkClientDynamodbBrowser.typesGlobalTableGlobalSecondaryIndexSettingsUpdateMod.GlobalTableGlobalSecondaryIndexSettingsUpdate
         ])
       ] = js.undefined
@@ -70,7 +69,7 @@ object typesUpdateGlobalTableSettingsInputMod {
     var ReplicaSettingsUpdate: js.UndefOr[
         (js.Array[
           typings.awsSdkClientDynamodbBrowser.typesReplicaSettingsUpdateMod.ReplicaSettingsUpdate
-        ]) | (Iterable[
+        ]) | (js.Iterable[
           typings.awsSdkClientDynamodbBrowser.typesReplicaSettingsUpdateMod.ReplicaSettingsUpdate
         ])
       ] = js.undefined
@@ -89,7 +88,7 @@ object typesUpdateGlobalTableSettingsInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -99,12 +98,12 @@ object typesUpdateGlobalTableSettingsInputMod {
       inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
       inline def setGlobalTableGlobalSecondaryIndexSettingsUpdate(
-        value: js.Array[GlobalTableGlobalSecondaryIndexSettingsUpdate] | Iterable[GlobalTableGlobalSecondaryIndexSettingsUpdate]
+        value: js.Array[GlobalTableGlobalSecondaryIndexSettingsUpdate] | js.Iterable[GlobalTableGlobalSecondaryIndexSettingsUpdate]
       ): Self = StObject.set(x, "GlobalTableGlobalSecondaryIndexSettingsUpdate", value.asInstanceOf[js.Any])
       
       inline def setGlobalTableGlobalSecondaryIndexSettingsUpdateUndefined: Self = StObject.set(x, "GlobalTableGlobalSecondaryIndexSettingsUpdate", js.undefined)
       
-      inline def setGlobalTableGlobalSecondaryIndexSettingsUpdateVarargs(value: GlobalTableGlobalSecondaryIndexSettingsUpdate*): Self = StObject.set(x, "GlobalTableGlobalSecondaryIndexSettingsUpdate", js.Array(value :_*))
+      inline def setGlobalTableGlobalSecondaryIndexSettingsUpdateVarargs(value: GlobalTableGlobalSecondaryIndexSettingsUpdate*): Self = StObject.set(x, "GlobalTableGlobalSecondaryIndexSettingsUpdate", js.Array(value*))
       
       inline def setGlobalTableName(value: String): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
@@ -116,11 +115,11 @@ object typesUpdateGlobalTableSettingsInputMod {
       
       inline def setGlobalTableProvisionedWriteCapacityUnitsUndefined: Self = StObject.set(x, "GlobalTableProvisionedWriteCapacityUnits", js.undefined)
       
-      inline def setReplicaSettingsUpdate(value: js.Array[ReplicaSettingsUpdate] | Iterable[ReplicaSettingsUpdate]): Self = StObject.set(x, "ReplicaSettingsUpdate", value.asInstanceOf[js.Any])
+      inline def setReplicaSettingsUpdate(value: js.Array[ReplicaSettingsUpdate] | js.Iterable[ReplicaSettingsUpdate]): Self = StObject.set(x, "ReplicaSettingsUpdate", value.asInstanceOf[js.Any])
       
       inline def setReplicaSettingsUpdateUndefined: Self = StObject.set(x, "ReplicaSettingsUpdate", js.undefined)
       
-      inline def setReplicaSettingsUpdateVarargs(value: ReplicaSettingsUpdate*): Self = StObject.set(x, "ReplicaSettingsUpdate", js.Array(value :_*))
+      inline def setReplicaSettingsUpdateVarargs(value: ReplicaSettingsUpdate*): Self = StObject.set(x, "ReplicaSettingsUpdate", js.Array(value*))
     }
   }
 }

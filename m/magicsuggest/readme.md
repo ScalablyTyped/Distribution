@@ -11,9 +11,9 @@ MagicSuggest is a multiple selection auto-suggest input box for Bootstrap 3.
 | Full name          | magicsuggest |
 | Keywords           | autocomplete, bootstrap3, JQuery |
 | # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 37622 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1681.6666666666667 |
+| # stars            | 1308.0 |
 
 ## Links
 - [Homepage](https://github.com/Magicsuggest/magicsuggest#readme)

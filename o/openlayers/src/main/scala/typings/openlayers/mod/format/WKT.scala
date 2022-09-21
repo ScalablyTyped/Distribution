@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api stable
   */
-class WKT () extends TextFeature {
+open class WKT () extends TextFeature {
   def this(opt_options: WKTOptions) = this()
   
   def readFeature(source: String): typings.openlayers.mod.Feature = js.native

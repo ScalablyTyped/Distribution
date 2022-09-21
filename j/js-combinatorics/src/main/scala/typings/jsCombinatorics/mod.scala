@@ -1,5 +1,6 @@
 package typings.jsCombinatorics
 
+import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,257 +11,167 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Calculates m C n
-    */
-  inline def C(m: Double, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("C")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  /**
-    * Calculates m P n
-    */
-  inline def P(m: Double, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("P")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  @JSImport("js-combinatorics", "VERSION")
+  @JSImport("js-combinatorics", "BaseN")
   @js.native
-  val VERSION: String = js.native
-  
-  /**
-    * Generates `n`-digit "numbers" where each digit is an element in array.
-    * Note this "number" is in the least significant order.
-    * `n` defaults to the length of `a`.
-    */
-  inline def baseN[T](a: js.Array[T]): IPredictableGenerator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("baseN")(a.asInstanceOf[js.Any]).asInstanceOf[IPredictableGenerator[js.Array[T]]]
-  inline def baseN[T](a: js.Array[T], n: Double): IPredictableGenerator[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("baseN")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[IPredictableGenerator[js.Array[T]]]
-  
-  /**
-    * Generates the combination of `a` with `n` elements, which
-    * also supports larger sets of elements.
-    * When `n` is ommited, the length of the array is used.
-    * Somewhat slower than `combination()`
-    */
-  inline def bigCombination[T](a: js.Array[T]): IGenerator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bigCombination")(a.asInstanceOf[js.Any]).asInstanceOf[IGenerator[js.Array[T]]]
-  inline def bigCombination[T](a: js.Array[T], n: Double): IGenerator[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bigCombination")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[IGenerator[js.Array[T]]]
-  
-  inline def cartesianProduct(a: js.Array[js.Any]*): ICartesianProductGenerator[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("cartesianProduct")(a.asInstanceOf[js.Any]).asInstanceOf[ICartesianProductGenerator[js.Array[js.Any]]]
-  /**
-    * Generates the cartesian product of the arrays. All arguments must be arrays with more than one element.
-    */
-  inline def cartesianProduct[T1](a1: js.Array[T1]): ICartesianProductGenerator[js.Array[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("cartesianProduct")(a1.asInstanceOf[js.Any]).asInstanceOf[ICartesianProductGenerator[js.Array[T1]]]
-  inline def cartesianProduct[T1, T2](a1: js.Array[T1], a2: js.Array[T2]): ICartesianProductGenerator[js.Tuple2[T1, T2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cartesianProduct")(a1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any])).asInstanceOf[ICartesianProductGenerator[js.Tuple2[T1, T2]]]
-  inline def cartesianProduct[T1, T2, T3](a1: js.Array[T1], a2: js.Array[T2], a3: js.Array[T3]): ICartesianProductGenerator[js.Tuple3[T1, T2, T3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cartesianProduct")(a1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any], a3.asInstanceOf[js.Any])).asInstanceOf[ICartesianProductGenerator[js.Tuple3[T1, T2, T3]]]
-  inline def cartesianProduct[T1, T2, T3, T4](a1: js.Array[T1], a2: js.Array[T2], a3: js.Array[T3], a4: js.Array[T4]): ICartesianProductGenerator[js.Tuple4[T1, T2, T3, T4]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cartesianProduct")(a1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any], a3.asInstanceOf[js.Any], a4.asInstanceOf[js.Any])).asInstanceOf[ICartesianProductGenerator[js.Tuple4[T1, T2, T3, T4]]]
-  inline def cartesianProduct[T1, T2, T3, T4, T5](a1: js.Array[T1], a2: js.Array[T2], a3: js.Array[T3], a4: js.Array[T4], a5: js.Array[T5]): ICartesianProductGenerator[js.Tuple5[T1, T2, T3, T4, T5]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cartesianProduct")(a1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any], a3.asInstanceOf[js.Any], a4.asInstanceOf[js.Any], a5.asInstanceOf[js.Any])).asInstanceOf[ICartesianProductGenerator[js.Tuple5[T1, T2, T3, T4, T5]]]
-  inline def cartesianProduct[T1, T2, T3, T4, T5, T6](
-    a1: js.Array[T1],
-    a2: js.Array[T2],
-    a3: js.Array[T3],
-    a4: js.Array[T4],
-    a5: js.Array[T5],
-    a6: js.Array[T6]
-  ): ICartesianProductGenerator[js.Tuple6[T1, T2, T3, T4, T5, T6]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cartesianProduct")(a1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any], a3.asInstanceOf[js.Any], a4.asInstanceOf[js.Any], a5.asInstanceOf[js.Any], a6.asInstanceOf[js.Any])).asInstanceOf[ICartesianProductGenerator[js.Tuple6[T1, T2, T3, T4, T5, T6]]]
-  inline def cartesianProduct[T1, T2, T3, T4, T5, T6, T7](
-    a1: js.Array[T1],
-    a2: js.Array[T2],
-    a3: js.Array[T3],
-    a4: js.Array[T4],
-    a5: js.Array[T5],
-    a6: js.Array[T6],
-    a7: js.Array[T7]
-  ): ICartesianProductGenerator[js.Tuple7[T1, T2, T3, T4, T5, T6, T7]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cartesianProduct")(a1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any], a3.asInstanceOf[js.Any], a4.asInstanceOf[js.Any], a5.asInstanceOf[js.Any], a6.asInstanceOf[js.Any], a7.asInstanceOf[js.Any])).asInstanceOf[ICartesianProductGenerator[js.Tuple7[T1, T2, T3, T4, T5, T6, T7]]]
-  inline def cartesianProduct[T1, T2, T3, T4, T5, T6, T7, T8](
-    a1: js.Array[T1],
-    a2: js.Array[T2],
-    a3: js.Array[T3],
-    a4: js.Array[T4],
-    a5: js.Array[T5],
-    a6: js.Array[T6],
-    a7: js.Array[T7],
-    a8: js.Array[T8]
-  ): ICartesianProductGenerator[js.Tuple8[T1, T2, T3, T4, T5, T6, T7, T8]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cartesianProduct")(a1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any], a3.asInstanceOf[js.Any], a4.asInstanceOf[js.Any], a5.asInstanceOf[js.Any], a6.asInstanceOf[js.Any], a7.asInstanceOf[js.Any], a8.asInstanceOf[js.Any])).asInstanceOf[ICartesianProductGenerator[js.Tuple8[T1, T2, T3, T4, T5, T6, T7, T8]]]
-  inline def cartesianProduct[T1, T2, T3, T4, T5, T6, T7, T8, T9](
-    a1: js.Array[T1],
-    a2: js.Array[T2],
-    a3: js.Array[T3],
-    a4: js.Array[T4],
-    a5: js.Array[T5],
-    a6: js.Array[T6],
-    a7: js.Array[T7],
-    a8: js.Array[T8],
-    a9: js.Array[T9]
-  ): ICartesianProductGenerator[js.Tuple9[T1, T2, T3, T4, T5, T6, T7, T8, T9]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cartesianProduct")(a1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any], a3.asInstanceOf[js.Any], a4.asInstanceOf[js.Any], a5.asInstanceOf[js.Any], a6.asInstanceOf[js.Any], a7.asInstanceOf[js.Any], a8.asInstanceOf[js.Any], a9.asInstanceOf[js.Any])).asInstanceOf[ICartesianProductGenerator[js.Tuple9[T1, T2, T3, T4, T5, T6, T7, T8, T9]]]
-  inline def cartesianProduct[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
-    a1: js.Array[T1],
-    a2: js.Array[T2],
-    a3: js.Array[T3],
-    a4: js.Array[T4],
-    a5: js.Array[T5],
-    a6: js.Array[T6],
-    a7: js.Array[T7],
-    a8: js.Array[T8],
-    a9: js.Array[T9],
-    a10: js.Array[T10]
-  ): ICartesianProductGenerator[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cartesianProduct")(a1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any], a3.asInstanceOf[js.Any], a4.asInstanceOf[js.Any], a5.asInstanceOf[js.Any], a6.asInstanceOf[js.Any], a7.asInstanceOf[js.Any], a8.asInstanceOf[js.Any], a9.asInstanceOf[js.Any], a10.asInstanceOf[js.Any])).asInstanceOf[ICartesianProductGenerator[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]]]
-  
-  /**
-    * Generates the combination of `a` with `n` elements.
-    * `n` defaults to the length of `a`.
-    */
-  inline def combination[T](a: js.Array[T]): IGenerator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combination")(a.asInstanceOf[js.Any]).asInstanceOf[IGenerator[js.Array[T]]]
-  inline def combination[T](a: js.Array[T], n: Double): IGenerator[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combination")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[IGenerator[js.Array[T]]]
-  
-  /**
-    * Returns the factoradic representation of `n` in an array, in
-    * least significant order.
-    * See http://en.wikipedia.org/wiki/Factorial_number_system
-    */
-  inline def factoradic(n: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("factoradic")(n.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  
-  /**
-    * Calculates n!
-    */
-  inline def factorial(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("factorial")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
-  
-  /**
-    * Generates the permutation of `a` with `n` elements.
-    * `n` defaults to the length of `a`.
-    */
-  inline def permutation[T](a: js.Array[T]): IGenerator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("permutation")(a.asInstanceOf[js.Any]).asInstanceOf[IGenerator[js.Array[T]]]
-  inline def permutation[T](a: js.Array[T], n: Double): IGenerator[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("permutation")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[IGenerator[js.Array[T]]]
-  
-  /**
-    * Generates the permutation of the combination of `a`.
-    * Equivalent to `permutation(combination(a))`, but more efficient.
-    */
-  inline def permutationCombination[T](a: js.Array[T]): IGenerator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("permutationCombination")(a.asInstanceOf[js.Any]).asInstanceOf[IGenerator[js.Array[T]]]
-  
-  /**
-    * Generates the power set of `a`.
-    */
-  inline def power[T](a: js.Array[T]): IPredictableGenerator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("power")(a.asInstanceOf[js.Any]).asInstanceOf[IPredictableGenerator[js.Array[T]]]
-  
-  trait ICartesianProductGenerator[T]
+  open class BaseN[T] protected ()
     extends StObject
-       with IPredictableGenerator[T] {
+       with CBase[T, T] {
+    def this(seed: js.Iterable[T]) = this()
+    def this(seed: js.Iterable[T], size: Double) = this()
     
-    /**
-      * Arguments are integer coordinates.
-      * Arguments can be out of bounds but it returns `undefined` in such cases.
-      */
-    def get(coordinates: Double*): T
-  }
-  object ICartesianProductGenerator {
-    
-    inline def apply[T](
-      filter: js.Function1[T, Boolean] => js.Array[T],
-      forEach: js.Function1[T, Unit] => Unit,
-      get: /* repeated */ Double => T,
-      length: Double,
-      map: js.Function1[T, js.Any] => js.Array[js.Any],
-      next: () => T,
-      nth: Double => T,
-      toArray: () => js.Array[T]
-    ): ICartesianProductGenerator[T] = {
-      val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), next = js.Any.fromFunction0(next), nth = js.Any.fromFunction1(nth), toArray = js.Any.fromFunction0(toArray))
-      __obj.asInstanceOf[ICartesianProductGenerator[T]]
-    }
-    
-    extension [Self <: ICartesianProductGenerator[?], T](x: Self & ICartesianProductGenerator[T]) {
-      
-      inline def setGet(value: /* repeated */ Double => T): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
-    }
+    var base: Double = js.native
   }
   
-  trait IGenerator[T] extends StObject {
-    
-    /**
-      * Returns an array of elements that return `true` for the filter function.
-      */
-    def filter(predicate: js.Function1[/* item */ T, Boolean]): js.Array[T]
-    
-    /**
-      * Applies the callback function for each element.
-      */
-    def forEach(f: js.Function1[/* item */ T, Unit]): Unit
-    
-    /**
-      * Returns the total number of elements to be generated. This equals the result of calling
-      * `generator.toArray().length` but it is precalculated without actually generating any elements.
-      * Handy when doing setup for a potentially long-running loop.
-      */
-    var length: Double
-    
-    /**
-      * Returns an array that is the output of calling the callback function separately on each element.
-      */
-    def map[TResult](f: js.Function1[/* item */ T, TResult]): js.Array[TResult]
-    
-    /**
-      * Returns the element or undefined if no more elements are available.
-      */
-    def next(): T
-    
-    /**
-      * Returns an array of all elements.
-      */
-    def toArray(): js.Array[T]
-  }
-  object IGenerator {
-    
-    inline def apply[T](
-      filter: js.Function1[/* item */ T, Boolean] => js.Array[T],
-      forEach: js.Function1[/* item */ T, Unit] => Unit,
-      length: Double,
-      map: js.Function1[/* item */ T, js.Any] => js.Array[js.Any],
-      next: () => T,
-      toArray: () => js.Array[T]
-    ): IGenerator[T] = {
-      val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), forEach = js.Any.fromFunction1(forEach), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), next = js.Any.fromFunction0(next), toArray = js.Any.fromFunction0(toArray))
-      __obj.asInstanceOf[IGenerator[T]]
-    }
-    
-    extension [Self <: IGenerator[?], T](x: Self & IGenerator[T]) {
-      
-      inline def setFilter(value: js.Function1[/* item */ T, Boolean] => js.Array[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
-      
-      inline def setForEach(value: js.Function1[/* item */ T, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
-      
-      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
-      
-      inline def setMap(value: js.Function1[/* item */ T, js.Any] => js.Array[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
-      
-      inline def setNext(value: () => T): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
-      
-      inline def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
-    }
-  }
-  
-  trait IPredictableGenerator[T]
+  @JSImport("js-combinatorics", "CartesianProduct")
+  @js.native
+  open class CartesianProduct[T] protected ()
     extends StObject
-       with IGenerator[T] {
+       with CBase[js.Array[T], T] {
+    def this(args: js.Iterable[T]*) = this()
+  }
+  
+  @JSImport("js-combinatorics", "Combination")
+  @js.native
+  open class Combination_[T] protected ()
+    extends StObject
+       with CBase[T, T] {
+    def this(seed: js.Iterable[T]) = this()
+    def this(seed: js.Iterable[T], size: Double) = this()
     
     /**
-      * Returns the nth element (indexed from 0).
+      * returns an iterator which is more efficient
+      * than the default iterator that uses .nth
+      *
+      * @link https://en.wikipedia.org/wiki/Combinatorial_number_system#Applications
       */
-    def nth(n: Double): T
-  }
-  object IPredictableGenerator {
+    def bitwiseIterator(): Generator[js.Array[T], Unit, Any] = js.native
     
-    inline def apply[T](
-      filter: js.Function1[T, Boolean] => js.Array[T],
-      forEach: js.Function1[T, Unit] => Unit,
-      length: Double,
-      map: js.Function1[T, js.Any] => js.Array[js.Any],
-      next: () => T,
-      nth: Double => T,
-      toArray: () => js.Array[T]
-    ): IPredictableGenerator[T] = {
-      val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), forEach = js.Any.fromFunction1(forEach), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), next = js.Any.fromFunction0(next), nth = js.Any.fromFunction1(nth), toArray = js.Any.fromFunction0(toArray))
-      __obj.asInstanceOf[IPredictableGenerator[T]]
-    }
-    
-    extension [Self <: IPredictableGenerator[?], T](x: Self & IPredictableGenerator[T]) {
-      
-      inline def setNth(value: Double => T): Self = StObject.set(x, "nth", js.Any.fromFunction1(value))
-    }
+    def comb(anyint: Any): js.Array[Double] = js.native
   }
+  
+  @JSImport("js-combinatorics", "Permutation")
+  @js.native
+  open class Permutation_[T] protected ()
+    extends StObject
+       with CBase[T, T] {
+    def this(seed: js.Iterable[T]) = this()
+    def this(seed: js.Iterable[T], size: Double) = this()
+  }
+  
+  @JSImport("js-combinatorics", "PowerSet")
+  @js.native
+  open class PowerSet[T] protected ()
+    extends StObject
+       with CBase[T, T] {
+    def this(seed: js.Iterable[T]) = this()
+  }
+  
+  inline def combinadic(n: anyint, k: anyint): js.Function1[/* m */ anyint, js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("combinadic")(n.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* m */ anyint, js.Array[Double]]]
+  
+  inline def combination(n: anyint, k: anyint): js.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("combination")(n.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.BigInt]
+  
+  inline def factoradic(n: anyint): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("factoradic")(n.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def factoradic(n: anyint, l: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("factoradic")(n.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  inline def factorial(n: anyint): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("factorial")(n.asInstanceOf[js.Any]).asInstanceOf[js.BigInt]
+  
+  inline def permutation(n: anyint, k: anyint): js.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("permutation")(n.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.BigInt]
+  
+  inline def randomInteger(): anyint = ^.asInstanceOf[js.Dynamic].applyDynamic("randomInteger")().asInstanceOf[anyint]
+  inline def randomInteger(min: Unit, max: anyint): anyint = (^.asInstanceOf[js.Dynamic].applyDynamic("randomInteger")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[anyint]
+  inline def randomInteger(min: anyint): anyint = ^.asInstanceOf[js.Dynamic].applyDynamic("randomInteger")(min.asInstanceOf[js.Any]).asInstanceOf[anyint]
+  inline def randomInteger(min: anyint, max: anyint): anyint = (^.asInstanceOf[js.Dynamic].applyDynamic("randomInteger")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[anyint]
+  
+  @JSImport("js-combinatorics", "version")
+  @js.native
+  val version: /* "2.1.1" */ String = js.native
+  
+  /**
+    * Base Class of `js-combinatorics`
+    */
+  @js.native
+  trait CBase[T, U] extends StObject {
+    
+    /**
+      * check n for nth
+      */
+    def _check(n: anyint): anyint = js.native
+    
+    /**
+      * get the `n`th element of the iterator.
+      * negative `n` goes backwards
+      * like `Array.prototype.at()`
+      * @link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/at
+      */
+    def at(n: anyint): Optional[js.Array[U]] = js.native
+    
+    /**
+      * @deprecated
+      * tells wether you need `BigInt` to access all elements.
+      */
+    def isBig: Boolean = js.native
+    
+    /**
+      * @deprecated
+      * tells wether it is safe to work on this instance.
+      *
+      * * always `true` unless your platform does not support `BigInt`.
+      * * if not, `true` iff `.isBig` is `false`.
+      */
+    def isSafe: Boolean = js.native
+    
+    /**
+      * Common iterator
+      */
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[Generator[js.Array[U], Unit, Any]] = js.native
+    
+    /**
+      * the number of elements
+      */
+    var length: js.BigInt = js.native
+    
+    /**
+      * an alias of `at`
+      */
+    def nth(n: anyint): Optional[js.Array[U]] = js.native
+    
+    /**
+      * pick random element
+      */
+    def sample(): Optional[js.Array[U]] = js.native
+    
+    /**
+      * an infinite steam of random elements
+      */
+    def samples(): Generator[js.Array[U], scala.Nothing, Any] = js.native
+    
+    /**
+      * the seed iterable
+      */
+    var seed: js.Array[T] = js.native
+    
+    /**
+      * the size (# of elements) of each element.
+      */
+    var size: Double = js.native
+    
+    /**
+      * returns `[...this]`.
+      */
+    def toArray(): js.Array[js.Array[U]] = js.native
+  }
+  
+  /**
+    * Optional<T> will not be official so
+    * @link: https://github.com/microsoft/TypeScript/issues/19944
+    */
+  type Optional[T] = js.UndefOr[T]
+  
+  /**
+    * BigInt Workaround
+    *
+    * https://github.com/streamich/memfs/issues/275
+    */
+  type anyint = Double | js.BigInt
 }

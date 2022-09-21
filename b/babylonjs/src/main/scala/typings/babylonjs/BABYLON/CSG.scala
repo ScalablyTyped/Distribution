@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CSG extends StObject {
   
+  /* private */ var _polygons: Any = js.native
+  
   /**
     * Build Raw mesh from CSG
     * Coordinates here are in world space
@@ -59,8 +61,6 @@ trait CSG extends StObject {
     */
   var matrix: Matrix = js.native
   
-  /* private */ var polygons: js.Any = js.native
-  
   /**
     * Stores the position
     */
@@ -90,7 +90,7 @@ trait CSG extends StObject {
   
   /**
     * Subtracts this CSG with another CSG in place
-    * @param csg The CSG to subtact against this CSG
+    * @param csg The CSG to subtract against this CSG
     */
   def subtractInPlace(csg: CSG): Unit = js.native
   

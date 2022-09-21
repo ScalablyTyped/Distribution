@@ -30,7 +30,7 @@ object XSEInitializer {
     acquire: () => Unit,
     createSecurityContext: String => XXMLSecurityContext,
     freeSecurityContext: XXMLSecurityContext => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSEInitializer = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createSecurityContext = js.Any.fromFunction1(createSecurityContext), freeSecurityContext = js.Any.fromFunction1(freeSecurityContext), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

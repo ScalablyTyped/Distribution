@@ -14,7 +14,7 @@ trait SchemaOrderDeliveryDetails extends StObject {
   /**
     * The phone number of the person receiving the delivery.
     */
-  var phoneNumber: js.UndefOr[String] = js.undefined
+  var phoneNumber: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrderDeliveryDetails {
   
@@ -30,6 +30,8 @@ object SchemaOrderDeliveryDetails {
     inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    
+    inline def setPhoneNumberNull: Self = StObject.set(x, "phoneNumber", null)
     
     inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
   }

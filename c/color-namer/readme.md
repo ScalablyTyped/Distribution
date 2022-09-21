@@ -10,10 +10,10 @@ Give me a color and I'll name it.
 | ------------------ | :-------------: |
 | Full name          | color-namer |
 | Keywords           | color, colors, names, rgb, hsl, hsv, lab, search, tagging, image, design |
-| # releases         | 2 |
-| # dependents       | 37 |
-| # downloads        | 414826 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 51643.333333333336 |
+| # stars            | 369.0 |
 
 ## Links
 - [Homepage](https://github.com/colorjs/color-namer#readme)

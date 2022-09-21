@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticsearch", "errors.BlockedByWindowsParentalControls")
 @js.native
-class BlockedByWindowsParentalControls () extends Abstract
+open class BlockedByWindowsParentalControls () extends Abstract

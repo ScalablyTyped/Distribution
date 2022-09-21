@@ -37,7 +37,13 @@ trait IAgentParameters extends StObject {
   var radius: Double
   
   /**
-    * How aggresive the agent manager should be at avoiding collisions with this agent. [Limit: >= 0]
+    * Observers will be notified when agent gets inside the virtual circle with this Radius around destination point.
+    * Default is agent radius
+    */
+  var reachRadius: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * How aggressive the agent manager should be at avoiding collisions with this agent. [Limit: >= 0]
     */
   var separationWeight: Double
 }
@@ -69,6 +75,10 @@ object IAgentParameters {
     inline def setPathOptimizationRange(value: Double): Self = StObject.set(x, "pathOptimizationRange", value.asInstanceOf[js.Any])
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setReachRadius(value: Double): Self = StObject.set(x, "reachRadius", value.asInstanceOf[js.Any])
+    
+    inline def setReachRadiusUndefined: Self = StObject.set(x, "reachRadius", js.undefined)
     
     inline def setSeparationWeight(value: Double): Self = StObject.set(x, "separationWeight", value.asInstanceOf[js.Any])
   }

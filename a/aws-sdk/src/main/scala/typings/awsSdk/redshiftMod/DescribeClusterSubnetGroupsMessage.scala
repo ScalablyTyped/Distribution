@@ -12,7 +12,7 @@ trait DescribeClusterSubnetGroupsMessage extends StObject {
   var ClusterSubnetGroupName: js.UndefOr[String] = js.undefined
   
   /**
-    * An optional parameter that specifies the starting point to return a set of response records. When the results of a DescribeClusterSubnetGroups request exceed the value specified in MaxRecords, AWS returns a value in the Marker field of the response. You can retrieve the next set of response records by providing the returned marker value in the Marker parameter and retrying the request. 
+    * An optional parameter that specifies the starting point to return a set of response records. When the results of a DescribeClusterSubnetGroups request exceed the value specified in MaxRecords, Amazon Web Services returns a value in the Marker field of the response. You can retrieve the next set of response records by providing the returned marker value in the Marker parameter and retrying the request. 
     */
   var Marker: js.UndefOr[String] = js.undefined
   
@@ -56,12 +56,12 @@ object DescribeClusterSubnetGroupsMessage {
     
     inline def setTagKeysUndefined: Self = StObject.set(x, "TagKeys", js.undefined)
     
-    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value*))
     
     inline def setTagValues(value: TagValueList): Self = StObject.set(x, "TagValues", value.asInstanceOf[js.Any])
     
     inline def setTagValuesUndefined: Self = StObject.set(x, "TagValues", js.undefined)
     
-    inline def setTagValuesVarargs(value: String*): Self = StObject.set(x, "TagValues", js.Array(value :_*))
+    inline def setTagValuesVarargs(value: String*): Self = StObject.set(x, "TagValues", js.Array(value*))
   }
 }

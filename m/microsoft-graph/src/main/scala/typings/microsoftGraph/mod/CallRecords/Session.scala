@@ -18,8 +18,7 @@ trait Session
   
   /**
     * UTC time when the last user left the session. The DateTimeOffset type represents date and time information using ISO
-    * 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
-    * '2014-01-01T00:00:00Z'
+    * 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var endDateTime: js.UndefOr[String] = js.undefined
   
@@ -36,9 +35,8 @@ trait Session
   var segments: js.UndefOr[NullableOption[js.Array[Segment]]] = js.undefined
   
   /**
-    * UTC fime when the first user joined the session. The DateTimeOffset type represents date and time information using ISO
-    * 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
-    * '2014-01-01T00:00:00Z'
+    * UTC time when the first user joined the session. The DateTimeOffset type represents date and time information using ISO
+    * 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var startDateTime: js.UndefOr[String] = js.undefined
 }
@@ -77,7 +75,7 @@ object Session {
     
     inline def setModalitiesUndefined: Self = StObject.set(x, "modalities", js.undefined)
     
-    inline def setModalitiesVarargs(value: Modality*): Self = StObject.set(x, "modalities", js.Array(value :_*))
+    inline def setModalitiesVarargs(value: Modality*): Self = StObject.set(x, "modalities", js.Array(value*))
     
     inline def setSegments(value: NullableOption[js.Array[Segment]]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
@@ -85,7 +83,7 @@ object Session {
     
     inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value*))
     
     inline def setStartDateTime(value: String): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     

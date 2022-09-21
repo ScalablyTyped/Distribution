@@ -9,7 +9,7 @@ trait Image extends StObject {
   /**
     * When the image was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * The description of the image.
@@ -44,16 +44,16 @@ trait Image extends StObject {
   /**
     * When the image was last modified.
     */
-  var LastModifiedTime: Timestamp
+  var LastModifiedTime: js.Date
 }
 object Image {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     ImageArn: ImageArn,
     ImageName: ImageName,
     ImageStatus: ImageStatus,
-    LastModifiedTime: Timestamp
+    LastModifiedTime: js.Date
   ): Image = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], ImageArn = ImageArn.asInstanceOf[js.Any], ImageName = ImageName.asInstanceOf[js.Any], ImageStatus = ImageStatus.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
@@ -61,7 +61,7 @@ object Image {
   
   extension [Self <: Image](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: ImageDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -81,6 +81,6 @@ object Image {
     
     inline def setImageStatus(value: ImageStatus): Self = StObject.set(x, "ImageStatus", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
   }
 }

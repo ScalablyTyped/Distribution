@@ -29,7 +29,7 @@ object ListKeyPhrasesDetectionJobsResponse {
     
     inline def setKeyPhrasesDetectionJobPropertiesListUndefined: Self = StObject.set(x, "KeyPhrasesDetectionJobPropertiesList", js.undefined)
     
-    inline def setKeyPhrasesDetectionJobPropertiesListVarargs(value: KeyPhrasesDetectionJobProperties*): Self = StObject.set(x, "KeyPhrasesDetectionJobPropertiesList", js.Array(value :_*))
+    inline def setKeyPhrasesDetectionJobPropertiesListVarargs(value: KeyPhrasesDetectionJobProperties*): Self = StObject.set(x, "KeyPhrasesDetectionJobPropertiesList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

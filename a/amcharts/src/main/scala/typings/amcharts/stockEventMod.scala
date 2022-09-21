@@ -1,6 +1,5 @@
 package typings.amcharts
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object stockEventMod {
   
   @JSImport("amcharts/StockEvent", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with StockEvent {
     
@@ -49,7 +48,7 @@ object stockEventMod {
       * Date of an event. Must be Date object, not a string.
       */
     /* CompleteClass */
-    var date: Date = js.native
+    var date: js.Date = js.native
     
     /**
       * graph on which event will be displayed.
@@ -131,7 +130,7 @@ object stockEventMod {
     /**
       * Date of an event. Must be Date object, not a string.
       */
-    var date: Date
+    var date: js.Date
     
     /**
       * graph on which event will be displayed.
@@ -181,7 +180,7 @@ object stockEventMod {
       borderAlpha: Double,
       borderColor: String,
       color: String,
-      date: Date,
+      date: js.Date,
       graph: typings.amcharts.stockGraphMod.default,
       rollOverColor: String,
       showOnAxis: Boolean,
@@ -207,7 +206,7 @@ object stockEventMod {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setGraph(value: typings.amcharts.stockGraphMod.default): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       

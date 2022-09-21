@@ -12,7 +12,7 @@ trait DocumentCollection extends StObject {
   
   var Items: js.Array[Document]
   
-  var LastEvaluatedKey: js.UndefOr[js.Any] = js.undefined
+  var LastEvaluatedKey: js.UndefOr[Any] = js.undefined
   
   var ScannedCount: Double
 }
@@ -31,9 +31,9 @@ object DocumentCollection {
     
     inline def setItems(value: js.Array[Document]): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: Document*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Document*): Self = StObject.set(x, "Items", js.Array(value*))
     
-    inline def setLastEvaluatedKey(value: js.Any): Self = StObject.set(x, "LastEvaluatedKey", value.asInstanceOf[js.Any])
+    inline def setLastEvaluatedKey(value: Any): Self = StObject.set(x, "LastEvaluatedKey", value.asInstanceOf[js.Any])
     
     inline def setLastEvaluatedKeyUndefined: Self = StObject.set(x, "LastEvaluatedKey", js.undefined)
     

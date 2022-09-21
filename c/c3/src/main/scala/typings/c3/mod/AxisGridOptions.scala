@@ -33,7 +33,7 @@ object AxisGridOptions {
     
     inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
-    inline def setLinesVarargs(value: GridLineOptions*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: GridLineOptions*): Self = StObject.set(x, "lines", js.Array(value*))
     
     inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     

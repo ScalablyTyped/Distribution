@@ -17,10 +17,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-css-transition-replace", JSImport.Namespace)
   @js.native
-  class Class protected ()
-    extends Component[Props, ComponentState, js.Any] {
+  open class Class protected () extends Component[Props, ComponentState, Any] {
     def this(props: Props) = this()
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   
   type CSSTransitionReplace = ComponentClass[Props, ComponentState]

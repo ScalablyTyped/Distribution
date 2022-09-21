@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new counter
   */
-class PerfCounter ()
+open class PerfCounter ()
   extends typings.babylonjs.legacyMod.PerfCounter
 /* static members */
 object PerfCounter {

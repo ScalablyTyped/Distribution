@@ -28,7 +28,7 @@ object ListGroupsResponse {
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    inline def setGroupVarargs(value: Group*): Self = StObject.set(x, "group", js.Array(value :_*))
+    inline def setGroupVarargs(value: Group*): Self = StObject.set(x, "group", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

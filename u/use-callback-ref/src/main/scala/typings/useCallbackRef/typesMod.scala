@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesMod {
   
-  type ReactRef[T] = RefCallback[T] | RefObject[T] | Null
+  type DefinedReactRef[T] = RefCallback[T] | RefObject[T]
+  
+  type ReactRef[T] = DefinedReactRef[T] | Null
   
   type RefCallback[T] = js.Function1[/* newValue */ T | Null, Unit]
   

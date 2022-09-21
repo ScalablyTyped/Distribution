@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cote", "Publisher")
 @js.native
-class Publisher protected () extends Component {
+open class Publisher protected () extends Component {
   def this(/**
     * Configuration which controls the data being advertised for auto-discovery.
     */

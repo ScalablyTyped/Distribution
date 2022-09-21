@@ -13,39 +13,39 @@ object fromDiagramMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(diagram: String): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(diagram.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Any]]
-  inline def default(diagram: String, options: FromDiagramOptions): Stream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(diagram.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Any]]
+  inline def default(diagram: String): Stream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(diagram.asInstanceOf[js.Any]).asInstanceOf[Stream[Any]]
+  inline def default(diagram: String, options: FromDiagramOptions): Stream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(diagram.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stream[Any]]
   
   @JSImport("xstream/extra/fromDiagram", "DiagramProducer")
   @js.native
-  class DiagramProducer protected ()
+  open class DiagramProducer protected ()
     extends StObject
-       with InternalProducer[js.Any] {
+       with InternalProducer[Any] {
     def this(diagram: String) = this()
     def this(diagram: String, opt: FromDiagramOptions) = this()
     
     /* CompleteClass */
-    override def _start(listener: InternalListener[js.Any]): Unit = js.native
+    override def _start(listener: InternalListener[Any]): Unit = js.native
     
     /* CompleteClass */
     override def _stop(): Unit = js.native
     
-    /* private */ var diagram: js.Any = js.native
+    /* private */ var diagram: Any = js.native
     
-    /* private */ var errorVal: js.Any = js.native
+    /* private */ var errorVal: Any = js.native
     
-    /* private */ var schedule: js.Any = js.native
+    /* private */ var schedule: Any = js.native
     
-    /* private */ var tasks: js.Any = js.native
+    /* private */ var tasks: Any = js.native
     
-    /* private */ var timeUnit: js.Any = js.native
+    /* private */ var timeUnit: Any = js.native
     
-    /* private */ var values: js.Any = js.native
+    /* private */ var values: Any = js.native
   }
   
   trait FromDiagramOptions extends StObject {
     
-    var errorValue: js.UndefOr[js.Any] = js.undefined
+    var errorValue: js.UndefOr[Any] = js.undefined
     
     var timeUnit: js.UndefOr[Double] = js.undefined
     
@@ -60,7 +60,7 @@ object fromDiagramMod {
     
     extension [Self <: FromDiagramOptions](x: Self) {
       
-      inline def setErrorValue(value: js.Any): Self = StObject.set(x, "errorValue", value.asInstanceOf[js.Any])
+      inline def setErrorValue(value: Any): Self = StObject.set(x, "errorValue", value.asInstanceOf[js.Any])
       
       inline def setErrorValueUndefined: Self = StObject.set(x, "errorValue", js.undefined)
       

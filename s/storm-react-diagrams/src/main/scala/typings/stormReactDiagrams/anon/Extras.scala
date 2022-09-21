@@ -8,7 +8,7 @@ trait Extras extends StObject {
   
   var color: String
   
-  var extras: js.Any
+  var extras: Any
   
   var id: String
   
@@ -28,7 +28,7 @@ object Extras {
   
   inline def apply(
     color: String,
-    extras: js.Any,
+    extras: Any,
     id: String,
     name: String,
     ports: js.Array[Links],
@@ -46,7 +46,7 @@ object Extras {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setExtras(value: js.Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+    inline def setExtras(value: Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -54,7 +54,7 @@ object Extras {
     
     inline def setPorts(value: js.Array[Links]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    inline def setPortsVarargs(value: Links*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: Links*): Self = StObject.set(x, "ports", js.Array(value*))
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     

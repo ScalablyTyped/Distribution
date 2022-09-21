@@ -17,7 +17,7 @@ trait OLEDBErrors extends StObject {
   
   def Item(Index: Double): OLEDBError = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Default(Index: Double): OLEDBError = js.native
 }

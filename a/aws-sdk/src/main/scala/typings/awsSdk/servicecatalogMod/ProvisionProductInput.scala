@@ -42,7 +42,7 @@ trait ProvisionProductInput extends StObject {
   var ProvisionToken: IdempotencyToken
   
   /**
-    * A user-friendly name for the provisioned product. This value must be unique for the AWS account and cannot be updated after the product is provisioned.
+    * A user-friendly name for the provisioned product. This value must be unique for the Amazon Web Services account and cannot be updated after the product is provisioned.
     */
   var ProvisionedProductName: typings.awsSdk.servicecatalogMod.ProvisionedProductName
   
@@ -88,7 +88,7 @@ object ProvisionProductInput {
     
     inline def setNotificationArnsUndefined: Self = StObject.set(x, "NotificationArns", js.undefined)
     
-    inline def setNotificationArnsVarargs(value: NotificationArn*): Self = StObject.set(x, "NotificationArns", js.Array(value :_*))
+    inline def setNotificationArnsVarargs(value: NotificationArn*): Self = StObject.set(x, "NotificationArns", js.Array(value*))
     
     inline def setPathId(value: Id): Self = StObject.set(x, "PathId", value.asInstanceOf[js.Any])
     
@@ -122,7 +122,7 @@ object ProvisionProductInput {
     
     inline def setProvisioningParametersUndefined: Self = StObject.set(x, "ProvisioningParameters", js.undefined)
     
-    inline def setProvisioningParametersVarargs(value: ProvisioningParameter*): Self = StObject.set(x, "ProvisioningParameters", js.Array(value :_*))
+    inline def setProvisioningParametersVarargs(value: ProvisioningParameter*): Self = StObject.set(x, "ProvisioningParameters", js.Array(value*))
     
     inline def setProvisioningPreferences(value: ProvisioningPreferences): Self = StObject.set(x, "ProvisioningPreferences", value.asInstanceOf[js.Any])
     
@@ -132,6 +132,6 @@ object ProvisionProductInput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

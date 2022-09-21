@@ -9,6 +9,6 @@ object handlerFunctionMod {
   @js.native
   trait HandlerFunction extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
 }

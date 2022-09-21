@@ -8,5 +8,5 @@ object pullRequestAlreadyClosedExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/PullRequestAlreadyClosedException", "PullRequestAlreadyClosedException")
   @js.native
-  val PullRequestAlreadyClosedException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PullRequestAlreadyClosedException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

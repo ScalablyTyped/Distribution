@@ -1,7 +1,7 @@
 package typings.storybookAddons
 
+import typings.storybookAddons.typesMod.LegacyStoryFn
 import typings.storybookAddons.typesMod.StoryContext
-import typings.storybookAddons.typesMod.StoryGetter
 import typings.storybookAddons.typesMod.StoryWrapper
 import typings.storybookAddons.typesMod.WrapperSettings
 import org.scalablytyped.runtime.StObject
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object makeDecoratorMod {
   
-  @JSImport("@storybook/addons/dist/make-decorator", JSImport.Namespace)
+  @JSImport("@storybook/addons/dist/ts3.9/make-decorator", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -31,7 +31,7 @@ object makeDecoratorMod {
     inline def apply(
       name: String,
       parameterName: String,
-      wrapper: (/* getStory */ StoryGetter, /* context */ StoryContext, /* settings */ WrapperSettings) => js.Any
+      wrapper: (/* storyFn */ LegacyStoryFn[Any], /* context */ StoryContext, /* settings */ WrapperSettings) => Any
     ): MakeDecoratorOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any], wrapper = js.Any.fromFunction3(wrapper))
       __obj.asInstanceOf[MakeDecoratorOptions]
@@ -48,10 +48,10 @@ object makeDecoratorMod {
       inline def setSkipIfNoParametersOrOptionsUndefined: Self = StObject.set(x, "skipIfNoParametersOrOptions", js.undefined)
       
       inline def setWrapper(
-        value: (/* getStory */ StoryGetter, /* context */ StoryContext, /* settings */ WrapperSettings) => js.Any
+        value: (/* storyFn */ LegacyStoryFn[Any], /* context */ StoryContext, /* settings */ WrapperSettings) => Any
       ): Self = StObject.set(x, "wrapper", js.Any.fromFunction3(value))
     }
   }
   
-  type MakeDecoratorResult = js.Function1[/* args */ js.Any, js.Any]
+  type MakeDecoratorResult = js.Function1[/* args */ Any, Any]
 }

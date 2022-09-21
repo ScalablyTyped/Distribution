@@ -13,7 +13,7 @@ object ioRef {
   
   @JSImport("fp-ts", "ioRef.IORef")
   @js.native
-  class IORef[A] protected ()
+  open class IORef[A] protected ()
     extends typings.fpTs.iorefMod.IORef[A] {
     def this(value: A) = this()
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRichEditFloatingObjectMovedEventArgs")
 @js.native
-class ASPxClientRichEditFloatingObjectMovedEventArgs ()
+open class ASPxClientRichEditFloatingObjectMovedEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRichEditFloatingObjectMovedEventArgs {
   

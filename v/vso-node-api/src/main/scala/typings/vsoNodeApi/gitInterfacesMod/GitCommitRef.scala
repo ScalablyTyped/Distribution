@@ -10,7 +10,7 @@ trait GitCommitRef extends StObject {
   /**
     * A collection of related REST reference links.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Author of the commit.
@@ -75,7 +75,7 @@ trait GitCommitRef extends StObject {
 object GitCommitRef {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     author: GitUserDate,
     changeCounts: ChangeCountDictionary,
     changes: js.Array[GitChange],
@@ -101,7 +101,7 @@ object GitCommitRef {
     
     inline def setChanges(value: js.Array[GitChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    inline def setChangesVarargs(value: GitChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: GitChange*): Self = StObject.set(x, "changes", js.Array(value*))
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
@@ -113,20 +113,20 @@ object GitCommitRef {
     
     inline def setParents(value: js.Array[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
     
-    inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
+    inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value*))
     
     inline def setRemoteUrl(value: String): Self = StObject.set(x, "remoteUrl", value.asInstanceOf[js.Any])
     
     inline def setStatuses(value: js.Array[GitStatus]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     
-    inline def setStatusesVarargs(value: GitStatus*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: GitStatus*): Self = StObject.set(x, "statuses", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setWorkItems(value: js.Array[ResourceRef]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemsVarargs(value: ResourceRef*): Self = StObject.set(x, "workItems", js.Array(value :_*))
+    inline def setWorkItemsVarargs(value: ResourceRef*): Self = StObject.set(x, "workItems", js.Array(value*))
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

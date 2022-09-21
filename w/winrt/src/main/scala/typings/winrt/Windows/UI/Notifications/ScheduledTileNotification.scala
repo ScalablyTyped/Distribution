@@ -1,6 +1,5 @@
 package typings.winrt.Windows.UI.Notifications
 
-import typings.std.Date
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ trait ScheduledTileNotification
      with IScheduledTileNotification
 object ScheduledTileNotification {
   
-  inline def apply(content: XmlDocument, deliveryTime: Date, expirationTime: Date, id: String, tag: String): ScheduledTileNotification = {
+  inline def apply(content: XmlDocument, deliveryTime: js.Date, expirationTime: js.Date, id: String, tag: String): ScheduledTileNotification = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], deliveryTime = deliveryTime.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduledTileNotification]
   }

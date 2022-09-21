@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@azure/keyvault-keys" : "4.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@azure/keyvault-keys" : "4.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

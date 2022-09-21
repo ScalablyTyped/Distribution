@@ -173,7 +173,7 @@ object RemoteSystems {
   /** Represents an intent to communicate with a specific remote system (device). */
   @JSGlobal("Windows.System.RemoteSystems.RemoteSystemConnectionRequest")
   @js.native
-  class RemoteSystemConnectionRequest protected ()
+  open class RemoteSystemConnectionRequest protected ()
     extends StObject
        with typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemConnectionRequest {
     /** Initializes an instance of the RemoteSystemConnectionRequest class. */
@@ -218,7 +218,7 @@ object RemoteSystems {
   /** An IRemoteSystemFilter that limits the set of discoverable remote systems by allowing only those of a specific discovery type. */
   @JSGlobal("Windows.System.RemoteSystems.RemoteSystemDiscoveryTypeFilter")
   @js.native
-  class RemoteSystemDiscoveryTypeFilter protected ()
+  open class RemoteSystemDiscoveryTypeFilter protected ()
     extends StObject
        with typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemDiscoveryTypeFilter {
     /** Initializes an instance of the RemoteSystemDiscoveryTypeFilter class. */
@@ -239,7 +239,7 @@ object RemoteSystems {
   /** An IRemoteSystemFilter that limits the set of discoverable remote systems by allowing only those of specific device types. */
   @JSGlobal("Windows.System.RemoteSystems.RemoteSystemKindFilter")
   @js.native
-  class RemoteSystemKindFilter protected ()
+  open class RemoteSystemKindFilter protected ()
     extends StObject
        with typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemKindFilter {
     /** Initializes an instance of the RemoteSystemKindFilter class with a list of string representations of device types to target. These strings should conform to the values of the properties of the RemoteSystemKinds class. */
@@ -383,7 +383,7 @@ object RemoteSystems {
   /** An IRemoteSystemFilter that limits the set of discoverable remote systems by allowing only those of a specific availability status. */
   @JSGlobal("Windows.System.RemoteSystems.RemoteSystemStatusTypeFilter")
   @js.native
-  class RemoteSystemStatusTypeFilter protected ()
+  open class RemoteSystemStatusTypeFilter protected ()
     extends StObject
        with typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemStatusTypeFilter {
     /** Initializes an instance of the RemoteSystemStatusTypeFilter class. */

@@ -39,7 +39,7 @@ trait DescribeChangeSetResponse extends StObject {
   /**
     * Returned if there is a failure on the change set, but that failure is not related to any of the changes in the request.
     */
-  var FailureDescription: js.UndefOr[StringValue] = js.undefined
+  var FailureDescription: js.UndefOr[ExceptionMessageContent] = js.undefined
   
   /**
     * The date and time, in ISO 8601 format (2018-02-27T13:45:22Z), the request started. 
@@ -76,7 +76,7 @@ object DescribeChangeSetResponse {
     
     inline def setChangeSetUndefined: Self = StObject.set(x, "ChangeSet", js.undefined)
     
-    inline def setChangeSetVarargs(value: ChangeSummary*): Self = StObject.set(x, "ChangeSet", js.Array(value :_*))
+    inline def setChangeSetVarargs(value: ChangeSummary*): Self = StObject.set(x, "ChangeSet", js.Array(value*))
     
     inline def setEndTime(value: DateTimeISO8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
@@ -86,7 +86,7 @@ object DescribeChangeSetResponse {
     
     inline def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
     
-    inline def setFailureDescription(value: StringValue): Self = StObject.set(x, "FailureDescription", value.asInstanceOf[js.Any])
+    inline def setFailureDescription(value: ExceptionMessageContent): Self = StObject.set(x, "FailureDescription", value.asInstanceOf[js.Any])
     
     inline def setFailureDescriptionUndefined: Self = StObject.set(x, "FailureDescription", js.undefined)
     

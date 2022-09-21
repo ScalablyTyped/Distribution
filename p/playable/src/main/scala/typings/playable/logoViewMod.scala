@@ -11,7 +11,7 @@ object logoViewMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/logo/logo.view", JSImport.Default)
   @js.native
-  class default protected () extends LogoView {
+  open class default protected () extends LogoView {
     def this(config: ILogoViewConfig) = this()
   }
   
@@ -20,32 +20,32 @@ object logoViewMod {
     extends typings.playable.viewMod.default[ILogoViewStyles] {
     
     /* private */ @JSName("_$logoButton")
-    var _$logoButton: js.Any = js.native
+    var _$logoButton: Any = js.native
     
     /* private */ @JSName("_$logoImage")
-    var _$logoImage: js.Any = js.native
+    var _$logoImage: Any = js.native
     
     /* private */ @JSName("_$logoInput")
-    var _$logoInput: js.Any = js.native
+    var _$logoInput: Any = js.native
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
-    /* private */ var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: Any = js.native
     
-    /* private */ var _onClick: js.Any = js.native
+    /* private */ var _onClick: Any = js.native
     
-    /* private */ var _setChild: js.Any = js.native
+    /* private */ var _setChild: Any = js.native
     
-    /* private */ var _textMap: js.Any = js.native
+    /* private */ var _textMap: Any = js.native
     
-    /* private */ var _tooltipReference: js.Any = js.native
+    /* private */ var _tooltipReference: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     def destroy(): Unit = js.native
     

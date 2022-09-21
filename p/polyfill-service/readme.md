@@ -10,10 +10,10 @@ A polyfill combinator
 | ------------------ | :-------------: |
 | Full name          | polyfill-service |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 1310652 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2062.3333333333335 |
+| # stars            | 5803.0 |
 
 ## Links
 - [Homepage](https://github.com/financial-times/polyfill-service#readme)

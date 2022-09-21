@@ -10,10 +10,10 @@ Library for interacting with OAuth 1.0, 1.0A, 2 and Echo.  Provides simplified c
 | ------------------ | :-------------: |
 | Full name          | oauth |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 633 |
-| # downloads        | 18365182 |
-| # stars            | 76 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3380205.0 |
+| # stars            | 2409.0 |
 
 ## Links
 - [Homepage](https://github.com/ciaranj/node-oauth#readme)

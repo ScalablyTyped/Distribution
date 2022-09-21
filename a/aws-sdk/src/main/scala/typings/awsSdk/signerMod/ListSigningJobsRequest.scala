@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListSigningJobsRequest extends StObject {
   
   /**
+    * Filters results to return only signing jobs with revoked signatures.
+    */
+  var isRevoked: js.UndefOr[bool] = js.undefined
+  
+  /**
+    * Filters results to return only signing jobs initiated by a specified IAM entity.
+    */
+  var jobInvoker: js.UndefOr[AccountId] = js.undefined
+  
+  /**
     * Specifies the maximum number of items to return in the response. Use this parameter when paginating results. If additional items exist beyond the number you specify, the nextToken element is set in the response. Use the nextToken value in a subsequent request to retrieve additional items. 
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
@@ -27,6 +37,16 @@ trait ListSigningJobsRequest extends StObject {
   var requestedBy: js.UndefOr[RequestedBy] = js.undefined
   
   /**
+    * Filters results to return only signing jobs with signatures expiring after a specified timestamp.
+    */
+  var signatureExpiresAfter: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * Filters results to return only signing jobs with signatures expiring before a specified timestamp.
+    */
+  var signatureExpiresBefore: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * A status value with which to filter your results.
     */
   var status: js.UndefOr[SigningStatus] = js.undefined
@@ -39,6 +59,14 @@ object ListSigningJobsRequest {
   }
   
   extension [Self <: ListSigningJobsRequest](x: Self) {
+    
+    inline def setIsRevoked(value: bool): Self = StObject.set(x, "isRevoked", value.asInstanceOf[js.Any])
+    
+    inline def setIsRevokedUndefined: Self = StObject.set(x, "isRevoked", js.undefined)
+    
+    inline def setJobInvoker(value: AccountId): Self = StObject.set(x, "jobInvoker", value.asInstanceOf[js.Any])
+    
+    inline def setJobInvokerUndefined: Self = StObject.set(x, "jobInvoker", js.undefined)
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -55,6 +83,14 @@ object ListSigningJobsRequest {
     inline def setRequestedBy(value: RequestedBy): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
     inline def setRequestedByUndefined: Self = StObject.set(x, "requestedBy", js.undefined)
+    
+    inline def setSignatureExpiresAfter(value: js.Date): Self = StObject.set(x, "signatureExpiresAfter", value.asInstanceOf[js.Any])
+    
+    inline def setSignatureExpiresAfterUndefined: Self = StObject.set(x, "signatureExpiresAfter", js.undefined)
+    
+    inline def setSignatureExpiresBefore(value: js.Date): Self = StObject.set(x, "signatureExpiresBefore", value.asInstanceOf[js.Any])
+    
+    inline def setSignatureExpiresBeforeUndefined: Self = StObject.set(x, "signatureExpiresBefore", js.undefined)
     
     inline def setStatus(value: SigningStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

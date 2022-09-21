@@ -6,6 +6,7 @@ import typings.propTypes.mod.Requireable
 import typings.react.mod.Component
 import typings.reactMonacoEditor.typesMod.MonacoEditorProps
 import typings.std.HTMLDivElement
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ object editorMod {
   
   @JSImport("react-monaco-editor/lib/editor", JSImport.Default)
   @js.native
-  class default protected () extends MonacoEditor {
+  open class default protected () extends MonacoEditor {
     def this(props: MonacoEditorProps) = this()
   }
   object default {
@@ -25,6 +26,11 @@ object editorMod {
       @JSImport("react-monaco-editor/lib/editor", "default.defaultProps")
       @js.native
       val ^ : js.Any = js.native
+      
+      @JSImport("react-monaco-editor/lib/editor", "default.defaultProps.className")
+      @js.native
+      def className: Any = js.native
+      inline def className_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
       
       @JSImport("react-monaco-editor/lib/editor", "default.defaultProps.defaultValue")
       @js.native
@@ -40,6 +46,11 @@ object editorMod {
       @js.native
       def editorWillMount: js.Function0[Unit] = js.native
       inline def editorWillMount_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("editorWillMount")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-monaco-editor/lib/editor", "default.defaultProps.editorWillUnmount")
+      @js.native
+      def editorWillUnmount: js.Function0[Unit] = js.native
+      inline def editorWillUnmount_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("editorWillUnmount")(x.asInstanceOf[js.Any])
       
       @JSImport("react-monaco-editor/lib/editor", "default.defaultProps.height")
       @js.native
@@ -58,13 +69,13 @@ object editorMod {
       
       @JSImport("react-monaco-editor/lib/editor", "default.defaultProps.theme")
       @js.native
-      def theme: js.Any = js.native
-      inline def theme_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
+      def theme: Any = js.native
+      inline def theme_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
       
       @JSImport("react-monaco-editor/lib/editor", "default.defaultProps.value")
       @js.native
-      def value: js.Any = js.native
-      inline def value_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
+      def value: Any = js.native
+      inline def value_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
       
       @JSImport("react-monaco-editor/lib/editor", "default.defaultProps.width")
       @js.native
@@ -79,6 +90,11 @@ object editorMod {
       @js.native
       val ^ : js.Any = js.native
       
+      @JSImport("react-monaco-editor/lib/editor", "default.propTypes.className")
+      @js.native
+      def className: Requireable[String] = js.native
+      inline def className_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+      
       @JSImport("react-monaco-editor/lib/editor", "default.propTypes.defaultValue")
       @js.native
       def defaultValue: Requireable[String] = js.native
@@ -86,18 +102,23 @@ object editorMod {
       
       @JSImport("react-monaco-editor/lib/editor", "default.propTypes.editorDidMount")
       @js.native
-      def editorDidMount: Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-      inline def editorDidMount_=(x: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("editorDidMount")(x.asInstanceOf[js.Any])
+      def editorDidMount: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def editorDidMount_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("editorDidMount")(x.asInstanceOf[js.Any])
       
       @JSImport("react-monaco-editor/lib/editor", "default.propTypes.editorWillMount")
       @js.native
-      def editorWillMount: Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-      inline def editorWillMount_=(x: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("editorWillMount")(x.asInstanceOf[js.Any])
+      def editorWillMount: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def editorWillMount_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("editorWillMount")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-monaco-editor/lib/editor", "default.propTypes.editorWillUnmount")
+      @js.native
+      def editorWillUnmount: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def editorWillUnmount_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("editorWillUnmount")(x.asInstanceOf[js.Any])
       
       @JSImport("react-monaco-editor/lib/editor", "default.propTypes.height")
       @js.native
-      def height: Requireable[String | Double] = js.native
-      inline def height_=(x: Requireable[String | Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("height")(x.asInstanceOf[js.Any])
+      def height: Requireable[NonNullable[String | Double]] = js.native
+      inline def height_=(x: Requireable[NonNullable[String | Double]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("height")(x.asInstanceOf[js.Any])
       
       @JSImport("react-monaco-editor/lib/editor", "default.propTypes.language")
       @js.native
@@ -106,8 +127,8 @@ object editorMod {
       
       @JSImport("react-monaco-editor/lib/editor", "default.propTypes.onChange")
       @js.native
-      def onChange: Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-      inline def onChange_=(x: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChange")(x.asInstanceOf[js.Any])
+      def onChange: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onChange_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChange")(x.asInstanceOf[js.Any])
       
       @JSImport("react-monaco-editor/lib/editor", "default.propTypes.options")
       @js.native
@@ -131,18 +152,18 @@ object editorMod {
       
       @JSImport("react-monaco-editor/lib/editor", "default.propTypes.width")
       @js.native
-      def width: Requireable[String | Double] = js.native
-      inline def width_=(x: Requireable[String | Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
+      def width: Requireable[NonNullable[String | Double]] = js.native
+      inline def width_=(x: Requireable[NonNullable[String | Double]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
     }
   }
   
   @js.native
   trait MonacoEditor
-    extends Component[MonacoEditorProps, js.Object, js.Any] {
+    extends Component[MonacoEditorProps, js.Object, Any] {
     
-    /* private */ var __prevent_trigger_change_event: js.Any = js.native
+    /* private */ var __prevent_trigger_change_event: Any = js.native
     
-    /* private */ var _subscription: js.Any = js.native
+    /* private */ var _subscription: Any = js.native
     
     def assignRef(component: HTMLDivElement): Unit = js.native
     
@@ -155,7 +176,7 @@ object editorMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MMonacoEditor(): Unit = js.native
     
-    /* private */ var containerElement: js.Any = js.native
+    /* private */ var containerElement: Any = js.native
     
     def destroyMonaco(): Unit = js.native
     
@@ -164,6 +185,8 @@ object editorMod {
     def editorDidMount(editor: IStandaloneCodeEditor): Unit = js.native
     
     def editorWillMount(): IStandaloneEditorConstructionOptions = js.native
+    
+    def editorWillUnmount(editor: IStandaloneCodeEditor): Unit = js.native
     
     def initMonaco(): Unit = js.native
   }

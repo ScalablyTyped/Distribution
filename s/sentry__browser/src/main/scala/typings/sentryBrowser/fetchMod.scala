@@ -1,30 +1,18 @@
 package typings.sentryBrowser
 
-import typings.sentryBrowser.baseMod.BaseTransport
-import typings.sentryTypes.responseMod.Response
-import typings.sentryTypes.sessionMod.Session
-import typings.sentryTypes.transportMod.TransportOptions
+import typings.sentryBrowser.typesMod.BrowserTransportOptions
+import typings.sentryBrowser.utilsMod.FetchImpl
+import typings.sentryTypes.transportMod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fetchMod {
   
-  @JSImport("@sentry/browser/dist/transports/fetch", "FetchTransport")
+  @JSImport("@sentry/browser/types/transports/fetch", JSImport.Namespace)
   @js.native
-  class FetchTransport protected () extends BaseTransport {
-    def this(options: TransportOptions) = this()
-    
-    /**
-      * @param sentryRequest Prepared SentryRequest to be delivered
-      * @param originalPayload Original payload used to create SentryRequest
-      */
-    /* private */ var _sendRequest: js.Any = js.native
-    
-    /**
-      * @inheritDoc
-      */
-    @JSName("sendSession")
-    def sendSession_MFetchTransport(session: Session): js.Thenable[Response] = js.native
-  }
+  val ^ : js.Any = js.native
+  
+  inline def makeFetchTransport(options: BrowserTransportOptions): Transport = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFetchTransport")(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  inline def makeFetchTransport(options: BrowserTransportOptions, nativeFetch: FetchImpl): Transport = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFetchTransport")(options.asInstanceOf[js.Any], nativeFetch.asInstanceOf[js.Any])).asInstanceOf[Transport]
 }

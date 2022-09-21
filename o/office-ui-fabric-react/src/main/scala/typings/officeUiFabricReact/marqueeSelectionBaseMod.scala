@@ -13,70 +13,69 @@ object marqueeSelectionBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/MarqueeSelection/MarqueeSelection.base", "MarqueeSelectionBase")
   @js.native
-  class MarqueeSelectionBase protected ()
-    extends Component[IMarqueeSelectionProps, IMarqueeSelectionState, js.Any] {
+  open class MarqueeSelectionBase protected () extends Component[IMarqueeSelectionProps, IMarqueeSelectionState, Any] {
     def this(props: IMarqueeSelectionProps) = this()
     
-    /* private */ var _allSelectedIndices: js.Any = js.native
+    /* private */ var _allSelectedIndices: Any = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _autoScroll: js.Any = js.native
+    /* private */ var _autoScroll: Any = js.native
     
-    /* private */ var _dragOrigin: js.Any = js.native
+    /* private */ var _dragOrigin: Any = js.native
     
-    /* private */ var _evaluateSelection: js.Any = js.native
+    /* private */ var _evaluateSelection: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
-    /* private */ var _getRootRect: js.Any = js.native
+    /* private */ var _getRootRect: Any = js.native
     
     /**
       * We do not want to start the marquee if we're trying to marquee
       * from within an existing marquee selection.
       */
-    /* private */ var _isDragStartInSelection: js.Any = js.native
+    /* private */ var _isDragStartInSelection: Any = js.native
     
-    /* private */ var _isInSelectionToggle: js.Any = js.native
+    /* private */ var _isInSelectionToggle: Any = js.native
     
     /** Determine if the mouse event occured on a scrollbar of the target element. */
-    /* private */ var _isMouseEventOnScrollbar: js.Any = js.native
+    /* private */ var _isMouseEventOnScrollbar: Any = js.native
     
-    /* private */ var _isPointInRectangle: js.Any = js.native
+    /* private */ var _isPointInRectangle: Any = js.native
     
-    /* private */ var _isTouch: js.Any = js.native
+    /* private */ var _isTouch: Any = js.native
     
-    /* private */ var _itemRectCache: js.Any = js.native
+    /* private */ var _itemRectCache: Any = js.native
     
-    /* private */ var _lastMouseEvent: js.Any = js.native
+    /* private */ var _lastMouseEvent: Any = js.native
     
-    /* private */ var _onAsyncMouseMove: js.Any = js.native
+    /* private */ var _onAsyncMouseMove: Any = js.native
     
-    /* private */ var _onMouseDown: js.Any = js.native
+    /* private */ var _onMouseDown: Any = js.native
     
-    /* private */ var _onMouseMove: js.Any = js.native
+    /* private */ var _onMouseMove: Any = js.native
     
-    /* private */ var _onMouseUp: js.Any = js.native
+    /* private */ var _onMouseUp: Any = js.native
     
-    /* private */ var _onPointerDown: js.Any = js.native
+    /* private */ var _onPointerDown: Any = js.native
     
-    /* private */ var _onTouchStart: js.Any = js.native
+    /* private */ var _onTouchStart: Any = js.native
     
-    /* private */ var _preservedIndicies: js.Any = js.native
+    /* private */ var _preservedIndicies: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
-    /* private */ var _rootRect: js.Any = js.native
+    /* private */ var _rootRect: Any = js.native
     
-    /* private */ var _scrollLeft: js.Any = js.native
+    /* private */ var _scrollLeft: Any = js.native
     
-    /* private */ var _scrollTop: js.Any = js.native
+    /* private */ var _scrollTop: Any = js.native
     
-    /* private */ var _scrollableParent: js.Any = js.native
+    /* private */ var _scrollableParent: Any = js.native
     
-    /* private */ var _scrollableSurface: js.Any = js.native
+    /* private */ var _scrollableSurface: Any = js.native
     
-    /* private */ var _selectedIndicies: js.Any = js.native
+    /* private */ var _selectedIndicies: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MMarqueeSelectionBase(): Unit = js.native

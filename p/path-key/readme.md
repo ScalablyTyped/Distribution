@@ -1,7 +1,7 @@
 
 # Scala.js typings for path-key
 
-Typings are for version 3.1.1
+Typings are for version 4.0.0
 
 ## Library description:
 Get the PATH environment variable key cross-platform
@@ -9,16 +9,13 @@ Get the PATH environment variable key cross-platform
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | path-key |
-| Keywords           | path, key, environment, env, variable, var, get, cross-platform, windows |
-| # releases         | 4 |
-| # dependents       | 147 |
-| # downloads        | 1181322691 |
-| # stars            | 2 |
+| Keywords           | path, key, environment, env, variable, get, cross-platform, windows |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.96705459E8 |
+| # stars            | 38.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/path-key#readme)
-- [Bugs](https://github.com/sindresorhus/path-key/issues)
-- [Repository](https://github.com/sindresorhus/path-key)
 - [Npm](https://www.npmjs.com/package/path-key)
     
 

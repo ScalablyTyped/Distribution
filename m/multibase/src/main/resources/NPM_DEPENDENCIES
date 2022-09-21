@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "multibase" : "3.1.0"
+      "multibase" : "4.0.6"
     }
   ],
   "test-dependencies" : [
     {
-      "multibase" : "3.1.0"
+      "multibase" : "4.0.6"
     }
   ],
   "compile-devDependencies" : [

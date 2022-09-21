@@ -1,33 +1,19 @@
 package typings.reactForm
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.ChildContextProvider
+import org.scalablytyped.runtime.Instantiable1
+import typings.react.mod.ChangeEvent
+import typings.react.mod.ChangeEventHandler
 import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
-import typings.react.mod.ComponentType
-import typings.react.mod.InputHTMLAttributes
-import typings.react.mod.ReactText
-import typings.react.mod.ReactType
-import typings.react.mod.SelectHTMLAttributes
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FormEvent
+import typings.react.mod.FormEventHandler
 import typings.react.mod.SyntheticEvent
-import typings.react.mod.TextareaHTMLAttributes
-import typings.react.mod.global.JSX.Element
-import typings.reactForm.anon.FieldPropsInputHTMLAttrib
-import typings.reactForm.anon.FieldPropschildrenpropsFi
-import typings.reactForm.anon.FormApiValidator
-import typings.reactForm.anon.FormPropschildrenpropsFor
-import typings.reactForm.anon.Label
-import typings.reactForm.anon.ReadonlyPartialFormProps
-import typings.reactForm.anon.StyledPropsInputHTMLAttri
-import typings.reactForm.anon.StyledPropsInputHTMLAttriAbout
-import typings.reactForm.anon.StyledPropschildrenpropsF
+import typings.reactForm.anon.IsTouched
+import typings.reactForm.anon.TypeofComponent
 import typings.reactForm.reactFormBooleans.`false`
+import typings.std.Element
 import typings.std.Event
-import typings.std.HTMLInputElement
-import typings.std.HTMLSelectElement
-import typings.std.HTMLTextAreaElement
+import typings.std.Partial
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,777 +24,354 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-form", "Checkbox")
-  @js.native
-  val Checkbox: StatelessComponent[FieldProps & InputHTMLAttributes[HTMLInputElement]] = js.native
+  inline def splitFormProps(props: Any): js.Tuple3[String, UseFieldOptions[Any, Any, Any, Any, Any, Any], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitFormProps")(props.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[String, UseFieldOptions[Any, Any, Any, Any, Any, Any], Any]]
   
-  @JSImport("react-form", "Form")
+  inline def useField[ValueType, ErrorType, EventType, FieldMetaType /* <: UseFieldInstanceMeta[ErrorType] */, FormMetaType /* <: UseFormInstanceMeta[ErrorType] */, InputPropsType /* <: UseFieldInstancePropsType[ValueType] */](
+    fieldPath: String,
+    props: UseFieldOptions[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType, InputPropsType]
+  ): UseFieldInstance[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType, InputPropsType] = (^.asInstanceOf[js.Dynamic].applyDynamic("useField")(fieldPath.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[UseFieldInstance[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType, InputPropsType]]
+  
+  inline def useForm[ValueType, ErrorType, EventType, FieldMetaType /* <: UseFieldInstanceMeta[ErrorType] */, FormMetaType /* <: UseFormInstanceMeta[ErrorType] */](props: UseFormOptions[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType]): UseFormInstance[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForm")(props.asInstanceOf[js.Any]).asInstanceOf[UseFormInstance[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType]]
+  
+  inline def useFormContext(): UseFormInstance[Any, Any, Any, Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFormContext")().asInstanceOf[UseFormInstance[Any, Any, Any, Any, Any]]
+  
   @js.native
-  class Form protected ()
-    extends Component[FormPropschildrenpropsFor, js.Object, js.Any]
-       with ChildContextProvider[FormContext] {
-    def this(props: FormPropschildrenpropsFor) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: FormPropschildrenpropsFor, context: js.Any) = this()
+  trait FieldScopeSpecificMethods[ValueType, ErrorType, EventType, FieldMetaType /* <: UseFieldInstanceMeta[ErrorType] */] extends StObject {
     
-    @JSName("componentWillMount")
-    def componentWillMount_MForm(): Unit = js.native
+    def insertFieldValue(fieldPath: String, insertIndex: Double, value: ValueType): Unit = js.native
     
-    @JSName("componentWillReceiveProps")
-    def componentWillReceiveProps_MForm(nextProps: ReadonlyPartialFormProps, nextContext: js.Any): Unit = js.native
+    def pushFieldValue(fieldPath: String, newValue: ValueType): Unit = js.native
     
-    def componentWillUmount(): Unit = js.native
+    def removeFieldValue(fieldPath: String, removalIndex: Double): Unit = js.native
     
-    /* CompleteClass */
-    override def getChildContext(): FormContext = js.native
+    def setFieldMeta(fieldPath: String, updater: js.Function1[/* prev */ FieldMetaType, FieldMetaType]): Unit = js.native
+    def setFieldMeta(fieldPath: String, updater: Partial[FieldMetaType]): Unit = js.native
     
-    def getDefaultState(): FormState = js.native
-  }
-  /* static members */
-  object Form {
+    def setFieldValue(fieldPath: String, updater: ValueType, options: IsTouched): Unit = js.native
+    def setFieldValue(fieldPath: String, updater: js.Function1[/* prev */ ValueType, ValueType], options: IsTouched): Unit = js.native
     
-    @JSImport("react-form", "Form")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("react-form", "Form.childContextTypes")
-    @js.native
-    def childContextTypes: FormApiValidator = js.native
-    inline def childContextTypes_=(x: FormApiValidator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
-    
-    @JSImport("react-form", "Form.defaultProps")
-    @js.native
-    def defaultProps: FormProps = js.native
-    inline def defaultProps_=(x: FormProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def swapFieldValues(fieldPath: String, firstIndex: Double, secondIndex: Double): Unit = js.native
   }
   
-  inline def FormField(component: ComponentType[js.Any]): ComponentClass[js.Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("FormField")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Any, ComponentState]]
-  
-  @JSImport("react-form", "NestedForm")
   @js.native
-  val NestedForm: StatelessComponent[FieldProps] = js.native
-  
-  @JSImport("react-form", "Radio")
-  @js.native
-  val Radio: StatelessComponent[FieldPropsInputHTMLAttrib] = js.native
-  
-  @JSImport("react-form", "RadioGroup")
-  @js.native
-  class RadioGroup protected ()
-    extends Component[FieldPropschildrenpropsFi, js.Object, js.Any]
-       with ChildContextProvider[RadioGroupContext] {
-    def this(props: FieldPropschildrenpropsFi) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: FieldPropschildrenpropsFi, context: js.Any) = this()
-    
-    /* CompleteClass */
-    override def getChildContext(): RadioGroupContext = js.native
-  }
-  
-  @JSImport("react-form", "Select")
-  @js.native
-  val Select: StatelessComponent[SelectProps] = js.native
-  
-  @JSImport("react-form", "StyledCheckbox")
-  @js.native
-  val StyledCheckbox: StatelessComponent[StyledPropsInputHTMLAttri] = js.native
-  
-  @JSImport("react-form", "StyledRadio")
-  @js.native
-  val StyledRadio: StatelessComponent[StyledPropsInputHTMLAttriAbout] = js.native
-  
-  @JSImport("react-form", "StyledRadioGroup")
-  @js.native
-  class StyledRadioGroup protected ()
-    extends Component[StyledPropschildrenpropsF, js.Object, js.Any]
-       with ChildContextProvider[RadioGroupContext] {
-    def this(props: StyledPropschildrenpropsF) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: StyledPropschildrenpropsF, context: js.Any) = this()
-    
-    /* CompleteClass */
-    override def getChildContext(): RadioGroupContext = js.native
-  }
-  
-  @JSImport("react-form", "StyledSelect")
-  @js.native
-  val StyledSelect: StatelessComponent[StyledProps & SelectProps & InputHTMLAttributes[HTMLSelectElement]] = js.native
-  
-  @JSImport("react-form", "StyledText")
-  @js.native
-  val StyledText: StatelessComponent[StyledProps & InputHTMLAttributes[HTMLInputElement]] = js.native
-  
-  @JSImport("react-form", "StyledTextArea")
-  @js.native
-  val StyledTextArea: StatelessComponent[StyledProps & TextareaHTMLAttributes[HTMLTextAreaElement]] = js.native
-  
-  @JSImport("react-form", "Text")
-  @js.native
-  val Text: StatelessComponent[FieldProps & InputHTMLAttributes[HTMLInputElement]] = js.native
-  
-  @JSImport("react-form", "TextArea")
-  @js.native
-  val TextArea: StatelessComponent[FieldProps & TextareaHTMLAttributes[HTMLTextAreaElement]] = js.native
-  
-  trait FieldApi extends StObject {
-    
-    def getError(): FormError
-    
-    def getFieldName(): String
-    
-    def getSuccess(): FormError
-    
-    def getTouched(): Boolean
-    
-    def getValue(): FormValue
-    
-    def getWarning(): FormError
-    
-    def setError(error: FormError): Unit
-    
-    def setSuccess(success: FormError): Unit
-    
-    def setTouched(touched: Boolean): Unit
-    
-    def setValue(value: FormValue): Unit
-    
-    def setWarning(warning: FormError): Unit
-  }
-  object FieldApi {
-    
-    inline def apply(
-      getError: () => FormError,
-      getFieldName: () => String,
-      getSuccess: () => FormError,
-      getTouched: () => Boolean,
-      getValue: () => FormValue,
-      getWarning: () => FormError,
-      setError: FormError => Unit,
-      setSuccess: FormError => Unit,
-      setTouched: Boolean => Unit,
-      setValue: FormValue => Unit,
-      setWarning: FormError => Unit
-    ): FieldApi = {
-      val __obj = js.Dynamic.literal(getError = js.Any.fromFunction0(getError), getFieldName = js.Any.fromFunction0(getFieldName), getSuccess = js.Any.fromFunction0(getSuccess), getTouched = js.Any.fromFunction0(getTouched), getValue = js.Any.fromFunction0(getValue), getWarning = js.Any.fromFunction0(getWarning), setError = js.Any.fromFunction1(setError), setSuccess = js.Any.fromFunction1(setSuccess), setTouched = js.Any.fromFunction1(setTouched), setValue = js.Any.fromFunction1(setValue), setWarning = js.Any.fromFunction1(setWarning))
-      __obj.asInstanceOf[FieldApi]
-    }
-    
-    extension [Self <: FieldApi](x: Self) {
-      
-      inline def setGetError(value: () => FormError): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
-      
-      inline def setGetFieldName(value: () => String): Self = StObject.set(x, "getFieldName", js.Any.fromFunction0(value))
-      
-      inline def setGetSuccess(value: () => FormError): Self = StObject.set(x, "getSuccess", js.Any.fromFunction0(value))
-      
-      inline def setGetTouched(value: () => Boolean): Self = StObject.set(x, "getTouched", js.Any.fromFunction0(value))
-      
-      inline def setGetValue(value: () => FormValue): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
-      
-      inline def setGetWarning(value: () => FormError): Self = StObject.set(x, "getWarning", js.Any.fromFunction0(value))
-      
-      inline def setSetError(value: FormError => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
-      
-      inline def setSetSuccess(value: FormError => Unit): Self = StObject.set(x, "setSuccess", js.Any.fromFunction1(value))
-      
-      inline def setSetTouched(value: Boolean => Unit): Self = StObject.set(x, "setTouched", js.Any.fromFunction1(value))
-      
-      inline def setSetValue(value: FormValue => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
-      
-      inline def setSetWarning(value: FormError => Unit): Self = StObject.set(x, "setWarning", js.Any.fromFunction1(value))
-    }
-  }
-  
-  trait FieldProps extends StObject {
-    
-    var errorBefore: js.UndefOr[Boolean] = js.undefined
-    
-    var field: js.UndefOr[String | (js.Array[js.Array[ReactText] | ReactText | String])] = js.undefined
-    
-    var isForm: js.UndefOr[Boolean] = js.undefined
-    
-    var showErrors: js.UndefOr[Boolean] = js.undefined
-  }
-  object FieldProps {
-    
-    inline def apply(): FieldProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FieldProps]
-    }
-    
-    extension [Self <: FieldProps](x: Self) {
-      
-      inline def setErrorBefore(value: Boolean): Self = StObject.set(x, "errorBefore", value.asInstanceOf[js.Any])
-      
-      inline def setErrorBeforeUndefined: Self = StObject.set(x, "errorBefore", js.undefined)
-      
-      inline def setField(value: String | (js.Array[js.Array[ReactText] | ReactText | String])): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
-      
-      inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
-      
-      inline def setFieldVarargs(value: (js.Array[ReactText] | ReactText | String)*): Self = StObject.set(x, "field", js.Array(value :_*))
-      
-      inline def setIsForm(value: Boolean): Self = StObject.set(x, "isForm", value.asInstanceOf[js.Any])
-      
-      inline def setIsFormUndefined: Self = StObject.set(x, "isForm", js.undefined)
-      
-      inline def setShowErrors(value: Boolean): Self = StObject.set(x, "showErrors", value.asInstanceOf[js.Any])
-      
-      inline def setShowErrorsUndefined: Self = StObject.set(x, "showErrors", js.undefined)
-    }
-  }
-  
-  trait FormApi extends StObject {
-    
-    def addValue(name: String, value: js.Any): Unit
-    
-    var asyncValidations: Double
-    
-    var errors: FormErrors
-    
-    def getFormState(): FormState
-    
-    def removeValue(name: String, index: Double): Unit
-    
-    def resetAll(): Unit
-    
-    def setAllTouched(touches: StringDictionary[Boolean]): Unit
-    
-    def setAllValues(values: FormValues): Unit
-    
-    def setError(field: String, error: String): Unit
-    
-    def setFormState(state: FormState): Unit
-    
-    def setSuccess(field: String, success: String): Unit
-    
-    def setTouched(field: String, touched: Boolean): Unit
-    
-    def setValue(fieldName: String, value: js.Any): Unit
-    
-    def setWarning(field: String, warning: String): Unit
-    
-    // Methods
-    def submitForm(event: SyntheticEvent[js.Any, Event]): Unit
-    
-    var submits: Double
-    
-    var submitted: Boolean
-    
-    var successes: FormErrors
-    
-    def swapValues(name: String, index1: Double, index2: Double): Unit
-    
-    var touched: Touched
-    
-    var validating: StringDictionary[Boolean]
-    
-    var validationFailed: StringDictionary[Boolean]
-    
-    var validationFailures: Double
-    
-    // State
-    var values: FormValues
-    
-    var warnings: FormErrors
-  }
-  object FormApi {
-    
-    inline def apply(
-      addValue: (String, js.Any) => Unit,
-      asyncValidations: Double,
-      errors: FormErrors,
-      getFormState: () => FormState,
-      removeValue: (String, Double) => Unit,
-      resetAll: () => Unit,
-      setAllTouched: StringDictionary[Boolean] => Unit,
-      setAllValues: FormValues => Unit,
-      setError: (String, String) => Unit,
-      setFormState: FormState => Unit,
-      setSuccess: (String, String) => Unit,
-      setTouched: (String, Boolean) => Unit,
-      setValue: (String, js.Any) => Unit,
-      setWarning: (String, String) => Unit,
-      submitForm: SyntheticEvent[js.Any, Event] => Unit,
-      submits: Double,
-      submitted: Boolean,
-      successes: FormErrors,
-      swapValues: (String, Double, Double) => Unit,
-      touched: Touched,
-      validating: StringDictionary[Boolean],
-      validationFailed: StringDictionary[Boolean],
-      validationFailures: Double,
-      values: FormValues,
-      warnings: FormErrors
-    ): FormApi = {
-      val __obj = js.Dynamic.literal(addValue = js.Any.fromFunction2(addValue), asyncValidations = asyncValidations.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], getFormState = js.Any.fromFunction0(getFormState), removeValue = js.Any.fromFunction2(removeValue), resetAll = js.Any.fromFunction0(resetAll), setAllTouched = js.Any.fromFunction1(setAllTouched), setAllValues = js.Any.fromFunction1(setAllValues), setError = js.Any.fromFunction2(setError), setFormState = js.Any.fromFunction1(setFormState), setSuccess = js.Any.fromFunction2(setSuccess), setTouched = js.Any.fromFunction2(setTouched), setValue = js.Any.fromFunction2(setValue), setWarning = js.Any.fromFunction2(setWarning), submitForm = js.Any.fromFunction1(submitForm), submits = submits.asInstanceOf[js.Any], submitted = submitted.asInstanceOf[js.Any], successes = successes.asInstanceOf[js.Any], swapValues = js.Any.fromFunction3(swapValues), touched = touched.asInstanceOf[js.Any], validating = validating.asInstanceOf[js.Any], validationFailed = validationFailed.asInstanceOf[js.Any], validationFailures = validationFailures.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FormApi]
-    }
-    
-    extension [Self <: FormApi](x: Self) {
-      
-      inline def setAddValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "addValue", js.Any.fromFunction2(value))
-      
-      inline def setAsyncValidations(value: Double): Self = StObject.set(x, "asyncValidations", value.asInstanceOf[js.Any])
-      
-      inline def setErrors(value: FormErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
-      
-      inline def setGetFormState(value: () => FormState): Self = StObject.set(x, "getFormState", js.Any.fromFunction0(value))
-      
-      inline def setRemoveValue(value: (String, Double) => Unit): Self = StObject.set(x, "removeValue", js.Any.fromFunction2(value))
-      
-      inline def setResetAll(value: () => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
-      
-      inline def setSetAllTouched(value: StringDictionary[Boolean] => Unit): Self = StObject.set(x, "setAllTouched", js.Any.fromFunction1(value))
-      
-      inline def setSetAllValues(value: FormValues => Unit): Self = StObject.set(x, "setAllValues", js.Any.fromFunction1(value))
-      
-      inline def setSetError(value: (String, String) => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction2(value))
-      
-      inline def setSetFormState(value: FormState => Unit): Self = StObject.set(x, "setFormState", js.Any.fromFunction1(value))
-      
-      inline def setSetSuccess(value: (String, String) => Unit): Self = StObject.set(x, "setSuccess", js.Any.fromFunction2(value))
-      
-      inline def setSetTouched(value: (String, Boolean) => Unit): Self = StObject.set(x, "setTouched", js.Any.fromFunction2(value))
-      
-      inline def setSetValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
-      
-      inline def setSetWarning(value: (String, String) => Unit): Self = StObject.set(x, "setWarning", js.Any.fromFunction2(value))
-      
-      inline def setSubmitForm(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "submitForm", js.Any.fromFunction1(value))
-      
-      inline def setSubmits(value: Double): Self = StObject.set(x, "submits", value.asInstanceOf[js.Any])
-      
-      inline def setSubmitted(value: Boolean): Self = StObject.set(x, "submitted", value.asInstanceOf[js.Any])
-      
-      inline def setSuccesses(value: FormErrors): Self = StObject.set(x, "successes", value.asInstanceOf[js.Any])
-      
-      inline def setSwapValues(value: (String, Double, Double) => Unit): Self = StObject.set(x, "swapValues", js.Any.fromFunction3(value))
-      
-      inline def setTouched(value: Touched): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
-      
-      inline def setValidating(value: StringDictionary[Boolean]): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
-      
-      inline def setValidationFailed(value: StringDictionary[Boolean]): Self = StObject.set(x, "validationFailed", value.asInstanceOf[js.Any])
-      
-      inline def setValidationFailures(value: Double): Self = StObject.set(x, "validationFailures", value.asInstanceOf[js.Any])
-      
-      inline def setValues(value: FormValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
-      
-      inline def setWarnings(value: FormErrors): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait FormContext extends StObject {
-    
-    var formApi: FormApi
-  }
-  object FormContext {
-    
-    inline def apply(formApi: FormApi): FormContext = {
-      val __obj = js.Dynamic.literal(formApi = formApi.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FormContext]
-    }
-    
-    extension [Self <: FormContext](x: Self) {
-      
-      inline def setFormApi(value: FormApi): Self = StObject.set(x, "formApi", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type FormError = js.UndefOr[String]
-  
-  type FormErrors = StringDictionary[FormError]
-  
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.reactForm.mod.FormApi because var conflicts: errors, touched, values. Inlined warnings, successes, submits, submitted, asyncValidations, validating, validationFailures, validationFailed, submitForm, setValue, setAllValues, setError, setWarning, setSuccess, setTouched, setAllTouched, addValue, removeValue, swapValues, resetAll, getFormState, setFormState */ trait FormFunctionProps
+  trait UseFieldInstance[ValueType, ErrorType, EventType, FieldMetaType /* <: UseFieldInstanceMeta[ErrorType] */, FormMetaType /* <: UseFormInstanceMeta[ErrorType] */, InputPropsType /* <: UseFieldInstancePropsType[ValueType] */]
     extends StObject
-       with FormProps
-       with FormState {
+       with FieldScopeSpecificMethods[ValueType, ErrorType, EventType, FieldMetaType] {
     
-    def addValue(name: String, value: js.Any): Unit
+    var FieldScope: TypeofComponent & (Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+        Component[js.Object, js.Object, js.Object]
+      ]) = js.native
     
-    var asyncValidations: Double
+    def debounce(f: js.Function0[Unit], wait: Double): js.Promise[Unit] | Unit = js.native
     
-    def getFormState(): FormState
+    var fieldName: String = js.native
     
-    def removeValue(name: String, index: Double): Unit
+    var form: UseFormInstance[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType] = js.native
     
-    def resetAll(): Unit
+    def getInputProps(): InputPropsType = js.native
+    def getInputProps(props: Partial[InputPropsType]): InputPropsType = js.native
     
-    def setAllTouched(touches: StringDictionary[Boolean]): Unit
+    def insertValue(insertIndex: Double, value: ValueType): Unit = js.native
     
-    def setAllValues(values: FormValues): Unit
+    var meta: FieldMetaType = js.native
     
-    def setError(field: String, error: String): Unit
+    def pushValue(newValue: ValueType): Unit = js.native
     
-    def setFormState(state: FormState): Unit
+    def removeValue(removalIndex: Double): Unit = js.native
     
-    def setSuccess(field: String, success: String): Unit
+    def runValidation(): Unit = js.native
     
-    def setTouched(field: String, touched: Boolean): Unit
+    def setMeta(updater: js.Function1[/* prev */ FieldMetaType, FieldMetaType]): Unit = js.native
+    def setMeta(updater: Partial[FieldMetaType]): Unit = js.native
     
-    def setValue(fieldName: String, value: js.Any): Unit
+    def setValue(updater: ValueType): Unit = js.native
+    def setValue(updater: ValueType, options: IsTouched): Unit = js.native
+    def setValue(updater: js.Function1[/* prev */ ValueType, ValueType]): Unit = js.native
+    def setValue(updater: js.Function1[/* prev */ ValueType, ValueType], options: IsTouched): Unit = js.native
     
-    def setWarning(field: String, warning: String): Unit
+    def swapValues(firstIndex: Double, secondIndex: Double): Unit = js.native
     
-    // Methods
-    def submitForm(event: SyntheticEvent[js.Any, Event]): Unit
-    
-    var submits: Double
-    
-    var submitted: Boolean
-    
-    var successes: FormErrors
-    
-    def swapValues(name: String, index1: Double, index2: Double): Unit
-    
-    var validating: StringDictionary[Boolean]
-    
-    var validationFailed: StringDictionary[Boolean]
-    
-    var validationFailures: Double
-    
-    var warnings: FormErrors
+    var value: ValueType = js.native
   }
-  object FormFunctionProps {
+  
+  trait UseFieldInstanceMeta[ErrorType] extends StObject {
     
-    inline def apply(
-      addValue: (String, js.Any) => Unit,
-      asyncValidations: Double,
-      errors: FormErrors,
-      getFormState: () => FormState,
-      nestedErrors: NestedErrors,
-      removeValue: (String, Double) => Unit,
-      resetAll: () => Unit,
-      setAllTouched: StringDictionary[Boolean] => Unit,
-      setAllValues: FormValues => Unit,
-      setError: (String, String) => Unit,
-      setFormState: FormState => Unit,
-      setSuccess: (String, String) => Unit,
-      setTouched: (String, Boolean) => Unit,
-      setValue: (String, js.Any) => Unit,
-      setWarning: (String, String) => Unit,
-      submitForm: SyntheticEvent[js.Any, Event] => Unit,
-      submits: Double,
-      submitted: Boolean,
-      successes: FormErrors,
-      swapValues: (String, Double, Double) => Unit,
-      touched: Touched,
-      validating: StringDictionary[Boolean],
-      validationFailed: StringDictionary[Boolean],
-      validationFailures: Double,
-      values: FormValues,
-      warnings: FormErrors
-    ): FormFunctionProps = {
-      val __obj = js.Dynamic.literal(addValue = js.Any.fromFunction2(addValue), asyncValidations = asyncValidations.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], getFormState = js.Any.fromFunction0(getFormState), nestedErrors = nestedErrors.asInstanceOf[js.Any], removeValue = js.Any.fromFunction2(removeValue), resetAll = js.Any.fromFunction0(resetAll), setAllTouched = js.Any.fromFunction1(setAllTouched), setAllValues = js.Any.fromFunction1(setAllValues), setError = js.Any.fromFunction2(setError), setFormState = js.Any.fromFunction1(setFormState), setSuccess = js.Any.fromFunction2(setSuccess), setTouched = js.Any.fromFunction2(setTouched), setValue = js.Any.fromFunction2(setValue), setWarning = js.Any.fromFunction2(setWarning), submitForm = js.Any.fromFunction1(submitForm), submits = submits.asInstanceOf[js.Any], submitted = submitted.asInstanceOf[js.Any], successes = successes.asInstanceOf[js.Any], swapValues = js.Any.fromFunction3(swapValues), touched = touched.asInstanceOf[js.Any], validating = validating.asInstanceOf[js.Any], validationFailed = validationFailed.asInstanceOf[js.Any], validationFailures = validationFailures.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FormFunctionProps]
+    var error: ErrorType | Null
+    
+    var isTouched: Boolean
+    
+    var isValidating: Boolean
+  }
+  object UseFieldInstanceMeta {
+    
+    inline def apply[ErrorType](isTouched: Boolean, isValidating: Boolean): UseFieldInstanceMeta[ErrorType] = {
+      val __obj = js.Dynamic.literal(isTouched = isTouched.asInstanceOf[js.Any], isValidating = isValidating.asInstanceOf[js.Any], error = null)
+      __obj.asInstanceOf[UseFieldInstanceMeta[ErrorType]]
     }
     
-    extension [Self <: FormFunctionProps](x: Self) {
+    extension [Self <: UseFieldInstanceMeta[?], ErrorType](x: Self & UseFieldInstanceMeta[ErrorType]) {
       
-      inline def setAddValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "addValue", js.Any.fromFunction2(value))
+      inline def setError(value: ErrorType): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setAsyncValidations(value: Double): Self = StObject.set(x, "asyncValidations", value.asInstanceOf[js.Any])
+      inline def setErrorNull: Self = StObject.set(x, "error", null)
       
-      inline def setGetFormState(value: () => FormState): Self = StObject.set(x, "getFormState", js.Any.fromFunction0(value))
+      inline def setIsTouched(value: Boolean): Self = StObject.set(x, "isTouched", value.asInstanceOf[js.Any])
       
-      inline def setRemoveValue(value: (String, Double) => Unit): Self = StObject.set(x, "removeValue", js.Any.fromFunction2(value))
-      
-      inline def setResetAll(value: () => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
-      
-      inline def setSetAllTouched(value: StringDictionary[Boolean] => Unit): Self = StObject.set(x, "setAllTouched", js.Any.fromFunction1(value))
-      
-      inline def setSetAllValues(value: FormValues => Unit): Self = StObject.set(x, "setAllValues", js.Any.fromFunction1(value))
-      
-      inline def setSetError(value: (String, String) => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction2(value))
-      
-      inline def setSetFormState(value: FormState => Unit): Self = StObject.set(x, "setFormState", js.Any.fromFunction1(value))
-      
-      inline def setSetSuccess(value: (String, String) => Unit): Self = StObject.set(x, "setSuccess", js.Any.fromFunction2(value))
-      
-      inline def setSetTouched(value: (String, Boolean) => Unit): Self = StObject.set(x, "setTouched", js.Any.fromFunction2(value))
-      
-      inline def setSetValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
-      
-      inline def setSetWarning(value: (String, String) => Unit): Self = StObject.set(x, "setWarning", js.Any.fromFunction2(value))
-      
-      inline def setSubmitForm(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "submitForm", js.Any.fromFunction1(value))
-      
-      inline def setSubmits(value: Double): Self = StObject.set(x, "submits", value.asInstanceOf[js.Any])
-      
-      inline def setSubmitted(value: Boolean): Self = StObject.set(x, "submitted", value.asInstanceOf[js.Any])
-      
-      inline def setSuccesses(value: FormErrors): Self = StObject.set(x, "successes", value.asInstanceOf[js.Any])
-      
-      inline def setSwapValues(value: (String, Double, Double) => Unit): Self = StObject.set(x, "swapValues", js.Any.fromFunction3(value))
-      
-      inline def setValidating(value: StringDictionary[Boolean]): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
-      
-      inline def setValidationFailed(value: StringDictionary[Boolean]): Self = StObject.set(x, "validationFailed", value.asInstanceOf[js.Any])
-      
-      inline def setValidationFailures(value: Double): Self = StObject.set(x, "validationFailures", value.asInstanceOf[js.Any])
-      
-      inline def setWarnings(value: FormErrors): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setIsValidating(value: Boolean): Self = StObject.set(x, "isValidating", value.asInstanceOf[js.Any])
     }
   }
   
-  trait FormProps extends StObject {
+  trait UseFieldInstancePropsType[ValueType] extends StObject {
     
-    var asyncValidators: js.UndefOr[StringDictionary[js.Function1[/* value */ FormValue, js.Promise[js.Any]]]] = js.undefined
+    var onBlur: FormEventHandler[Element]
     
-    var component: js.UndefOr[ReactType[typings.reactForm.anon.FormApi]] = js.undefined
+    var onChange: ChangeEventHandler[Element]
     
-    var defaultValues: js.UndefOr[FormValues] = js.undefined
+    var value: ValueType
+  }
+  object UseFieldInstancePropsType {
     
-    var dontPreventDefault: js.UndefOr[Boolean] = js.undefined
+    inline def apply[ValueType](onBlur: FormEvent[Element] => Unit, onChange: ChangeEvent[Element] => Unit, value: ValueType): UseFieldInstancePropsType[ValueType] = {
+      val __obj = js.Dynamic.literal(onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UseFieldInstancePropsType[ValueType]]
+    }
     
-    var dontValidateOnMount: js.UndefOr[Boolean] = js.undefined
+    extension [Self <: UseFieldInstancePropsType[?], ValueType](x: Self & UseFieldInstancePropsType[ValueType]) {
+      
+      inline def setOnBlur(value: FormEvent[Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      
+      inline def setOnChange(value: ChangeEvent[Element] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      
+      inline def setValue(value: ValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait UseFieldOptions[ValueType, ErrorType, EventType, FieldMetaType /* <: UseFieldInstanceMeta[ErrorType] */, FormMetaType /* <: UseFormInstanceMeta[ErrorType] */, InputPropsType /* <: UseFieldInstancePropsType[ValueType] */] extends StObject {
     
-    var formDidUpdate: js.UndefOr[js.Function1[/* formState */ FormState, Unit]] = js.undefined
+    var defaultError: js.UndefOr[ErrorType] = js.undefined
     
-    var getApi: js.UndefOr[js.Function1[/* formApi */ FormApi, Unit]] = js.undefined
+    var defaultIsTouched: js.UndefOr[Boolean] = js.undefined
     
-    var onSubmit: js.UndefOr[
-        js.Function3[
-          /* values */ FormValues, 
-          /* submissionEvent */ SyntheticEvent[js.Any, Event], 
-          /* formApi */ FormApi, 
-          Unit
+    var defaultMeta: js.UndefOr[FieldMetaType] = js.undefined
+    
+    var defaultValue: js.UndefOr[ValueType] = js.undefined
+    
+    var filterValue: js.UndefOr[
+        js.Function2[
+          /* value */ ValueType, 
+          /* instance */ UseFieldInstance[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType, InputPropsType], 
+          ValueType
         ]
       ] = js.undefined
     
-    var onSubmitFailure: js.UndefOr[js.Function2[/* errors */ FormErrors, /* formApi */ FormApi, Unit]] = js.undefined
+    var validate: js.UndefOr[
+        js.Function2[
+          /* value */ ValueType, 
+          /* instance */ UseFieldInstance[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType, InputPropsType], 
+          js.Promise[ValidateResult] | ValidateResult | Unit
+        ]
+      ] = js.undefined
     
-    var preSubmit: js.UndefOr[js.Function2[/* values */ FormValues, /* formApi */ FormApi, FormValues]] = js.undefined
-    
-    var preValidate: js.UndefOr[js.Function1[/* values */ FormValues, FormValues]] = js.undefined
-    
-    var render: js.UndefOr[js.Function1[/* formApi */ FormApi, RenderReturn]] = js.undefined
-    
-    var validateError: js.UndefOr[ValidateValuesFunction] = js.undefined
-    
-    var validateOnSubmit: js.UndefOr[Boolean] = js.undefined
-    
-    var validateSuccess: js.UndefOr[js.Function2[/* values */ FormValues, /* errors */ FormErrors, FormErrors]] = js.undefined
-    
-    var validateWarning: js.UndefOr[ValidateValuesFunction] = js.undefined
+    var validatePristine: js.UndefOr[Boolean] = js.undefined
   }
-  object FormProps {
+  object UseFieldOptions {
     
-    inline def apply(): FormProps = {
+    inline def apply[ValueType, ErrorType, EventType, FieldMetaType /* <: UseFieldInstanceMeta[ErrorType] */, FormMetaType /* <: UseFormInstanceMeta[ErrorType] */, InputPropsType /* <: UseFieldInstancePropsType[ValueType] */](): UseFieldOptions[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType, InputPropsType] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FormProps]
+      __obj.asInstanceOf[UseFieldOptions[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType, InputPropsType]]
     }
     
-    extension [Self <: FormProps](x: Self) {
+    extension [Self <: UseFieldOptions[?, ?, ?, ?, ?, ?], ValueType, ErrorType, EventType, FieldMetaType /* <: UseFieldInstanceMeta[ErrorType] */, FormMetaType /* <: UseFormInstanceMeta[ErrorType] */, InputPropsType /* <: UseFieldInstancePropsType[ValueType] */](x: Self & (UseFieldOptions[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType, InputPropsType])) {
       
-      inline def setAsyncValidators(value: StringDictionary[js.Function1[/* value */ FormValue, js.Promise[js.Any]]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
+      inline def setDefaultError(value: ErrorType): Self = StObject.set(x, "defaultError", value.asInstanceOf[js.Any])
       
-      inline def setAsyncValidatorsUndefined: Self = StObject.set(x, "asyncValidators", js.undefined)
+      inline def setDefaultErrorUndefined: Self = StObject.set(x, "defaultError", js.undefined)
       
-      inline def setComponent(value: ReactType[typings.reactForm.anon.FormApi]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setDefaultIsTouched(value: Boolean): Self = StObject.set(x, "defaultIsTouched", value.asInstanceOf[js.Any])
       
-      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setDefaultIsTouchedUndefined: Self = StObject.set(x, "defaultIsTouched", js.undefined)
       
-      inline def setDefaultValues(value: FormValues): Self = StObject.set(x, "defaultValues", value.asInstanceOf[js.Any])
+      inline def setDefaultMeta(value: FieldMetaType): Self = StObject.set(x, "defaultMeta", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultMetaUndefined: Self = StObject.set(x, "defaultMeta", js.undefined)
+      
+      inline def setDefaultValue(value: ValueType): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      
+      inline def setFilterValue(
+        value: (/* value */ ValueType, /* instance */ UseFieldInstance[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType, InputPropsType]) => ValueType
+      ): Self = StObject.set(x, "filterValue", js.Any.fromFunction2(value))
+      
+      inline def setFilterValueUndefined: Self = StObject.set(x, "filterValue", js.undefined)
+      
+      inline def setValidate(
+        value: (/* value */ ValueType, /* instance */ UseFieldInstance[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType, InputPropsType]) => js.Promise[ValidateResult] | ValidateResult | Unit
+      ): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+      
+      inline def setValidatePristine(value: Boolean): Self = StObject.set(x, "validatePristine", value.asInstanceOf[js.Any])
+      
+      inline def setValidatePristineUndefined: Self = StObject.set(x, "validatePristine", js.undefined)
+      
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    }
+  }
+  
+  @js.native
+  trait UseFormInstance[ValueType, ErrorType, EventType, FieldMetaType /* <: UseFieldInstanceMeta[ErrorType] */, FormMetaType /* <: UseFormInstanceMeta[ErrorType] */]
+    extends StObject
+       with FieldScopeSpecificMethods[ValueType, ErrorType, EventType, FieldMetaType] {
+    
+    var Form: TypeofComponent & (Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+        Component[js.Object, js.Object, js.Object]
+      ]) = js.native
+    
+    def debounce(f: js.Function0[Unit], wait: Double): js.Promise[Unit] | Unit = js.native
+    
+    var formContext: UseFormInstance[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType] = js.native
+    
+    def getFieldMeta(fieldPath: String): FieldMetaType = js.native
+    
+    def getFieldValue(fieldPath: String): ValueType = js.native
+    
+    def handleSubmit(event: SyntheticEvent[EventType, Event]): Unit = js.native
+    
+    var meta: FormMetaType = js.native
+    
+    def reset(): Unit = js.native
+    
+    def runValidation(): Unit = js.native
+    
+    def setMeta(updater: js.Function1[/* prev */ FormMetaType, FormMetaType]): Unit = js.native
+    def setMeta(updater: Partial[FormMetaType]): Unit = js.native
+    
+    def setValues(updater: js.Function1[/* previousValues */ UseFormValues[ValueType], UseFormValues[ValueType]]): Unit = js.native
+    def setValues(updater: UseFormValues[ValueType]): Unit = js.native
+    
+    var values: UseFormValues[ValueType] = js.native
+  }
+  
+  trait UseFormInstanceMeta[ErrorType] extends StObject {
+    
+    var canSubmit: Boolean
+    
+    var error: ErrorType
+    
+    var fieldsAreValid: Boolean
+    
+    var fieldsAreValidating: Boolean
+    
+    var isSubmitted: Boolean
+    
+    var isSubmitting: Boolean
+    
+    var isTouched: Boolean
+    
+    var isValid: Boolean
+    
+    var submissionAttempts: Double
+  }
+  object UseFormInstanceMeta {
+    
+    inline def apply[ErrorType](
+      canSubmit: Boolean,
+      error: ErrorType,
+      fieldsAreValid: Boolean,
+      fieldsAreValidating: Boolean,
+      isSubmitted: Boolean,
+      isSubmitting: Boolean,
+      isTouched: Boolean,
+      isValid: Boolean,
+      submissionAttempts: Double
+    ): UseFormInstanceMeta[ErrorType] = {
+      val __obj = js.Dynamic.literal(canSubmit = canSubmit.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fieldsAreValid = fieldsAreValid.asInstanceOf[js.Any], fieldsAreValidating = fieldsAreValidating.asInstanceOf[js.Any], isSubmitted = isSubmitted.asInstanceOf[js.Any], isSubmitting = isSubmitting.asInstanceOf[js.Any], isTouched = isTouched.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], submissionAttempts = submissionAttempts.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UseFormInstanceMeta[ErrorType]]
+    }
+    
+    extension [Self <: UseFormInstanceMeta[?], ErrorType](x: Self & UseFormInstanceMeta[ErrorType]) {
+      
+      inline def setCanSubmit(value: Boolean): Self = StObject.set(x, "canSubmit", value.asInstanceOf[js.Any])
+      
+      inline def setError(value: ErrorType): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      inline def setFieldsAreValid(value: Boolean): Self = StObject.set(x, "fieldsAreValid", value.asInstanceOf[js.Any])
+      
+      inline def setFieldsAreValidating(value: Boolean): Self = StObject.set(x, "fieldsAreValidating", value.asInstanceOf[js.Any])
+      
+      inline def setIsSubmitted(value: Boolean): Self = StObject.set(x, "isSubmitted", value.asInstanceOf[js.Any])
+      
+      inline def setIsSubmitting(value: Boolean): Self = StObject.set(x, "isSubmitting", value.asInstanceOf[js.Any])
+      
+      inline def setIsTouched(value: Boolean): Self = StObject.set(x, "isTouched", value.asInstanceOf[js.Any])
+      
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      
+      inline def setSubmissionAttempts(value: Double): Self = StObject.set(x, "submissionAttempts", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait UseFormOptions[ValueType, ErrorType, EventType, FieldMetaType /* <: UseFieldInstanceMeta[ErrorType] */, FormMetaType /* <: UseFormInstanceMeta[ErrorType] */] extends StObject {
+    
+    var debugForm: js.UndefOr[Boolean] = js.undefined
+    
+    var defaultValues: js.UndefOr[UseFormValues[ValueType]] = js.undefined
+    
+    var onSubmit: js.UndefOr[
+        js.Function2[
+          /* values */ UseFormValues[ValueType], 
+          /* instance */ UseFormInstance[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType], 
+          js.Promise[Unit] | Unit
+        ]
+      ] = js.undefined
+    
+    var validate: js.UndefOr[
+        js.Function2[
+          /* values */ UseFormValues[ValueType], 
+          /* instance */ UseFormInstance[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType], 
+          js.Promise[ValidateResult] | ValidateResult | Unit
+        ]
+      ] = js.undefined
+    
+    var validatePristine: js.UndefOr[Boolean] = js.undefined
+  }
+  object UseFormOptions {
+    
+    inline def apply[ValueType, ErrorType, EventType, FieldMetaType /* <: UseFieldInstanceMeta[ErrorType] */, FormMetaType /* <: UseFormInstanceMeta[ErrorType] */](): UseFormOptions[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UseFormOptions[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType]]
+    }
+    
+    extension [Self <: UseFormOptions[?, ?, ?, ?, ?], ValueType, ErrorType, EventType, FieldMetaType /* <: UseFieldInstanceMeta[ErrorType] */, FormMetaType /* <: UseFormInstanceMeta[ErrorType] */](x: Self & (UseFormOptions[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType])) {
+      
+      inline def setDebugForm(value: Boolean): Self = StObject.set(x, "debugForm", value.asInstanceOf[js.Any])
+      
+      inline def setDebugFormUndefined: Self = StObject.set(x, "debugForm", js.undefined)
+      
+      inline def setDefaultValues(value: UseFormValues[ValueType]): Self = StObject.set(x, "defaultValues", value.asInstanceOf[js.Any])
       
       inline def setDefaultValuesUndefined: Self = StObject.set(x, "defaultValues", js.undefined)
       
-      inline def setDontPreventDefault(value: Boolean): Self = StObject.set(x, "dontPreventDefault", value.asInstanceOf[js.Any])
-      
-      inline def setDontPreventDefaultUndefined: Self = StObject.set(x, "dontPreventDefault", js.undefined)
-      
-      inline def setDontValidateOnMount(value: Boolean): Self = StObject.set(x, "dontValidateOnMount", value.asInstanceOf[js.Any])
-      
-      inline def setDontValidateOnMountUndefined: Self = StObject.set(x, "dontValidateOnMount", js.undefined)
-      
-      inline def setFormDidUpdate(value: /* formState */ FormState => Unit): Self = StObject.set(x, "formDidUpdate", js.Any.fromFunction1(value))
-      
-      inline def setFormDidUpdateUndefined: Self = StObject.set(x, "formDidUpdate", js.undefined)
-      
-      inline def setGetApi(value: /* formApi */ FormApi => Unit): Self = StObject.set(x, "getApi", js.Any.fromFunction1(value))
-      
-      inline def setGetApiUndefined: Self = StObject.set(x, "getApi", js.undefined)
-      
       inline def setOnSubmit(
-        value: (/* values */ FormValues, /* submissionEvent */ SyntheticEvent[js.Any, Event], /* formApi */ FormApi) => Unit
-      ): Self = StObject.set(x, "onSubmit", js.Any.fromFunction3(value))
-      
-      inline def setOnSubmitFailure(value: (/* errors */ FormErrors, /* formApi */ FormApi) => Unit): Self = StObject.set(x, "onSubmitFailure", js.Any.fromFunction2(value))
-      
-      inline def setOnSubmitFailureUndefined: Self = StObject.set(x, "onSubmitFailure", js.undefined)
+        value: (/* values */ UseFormValues[ValueType], /* instance */ UseFormInstance[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType]) => js.Promise[Unit] | Unit
+      ): Self = StObject.set(x, "onSubmit", js.Any.fromFunction2(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
-      inline def setPreSubmit(value: (/* values */ FormValues, /* formApi */ FormApi) => FormValues): Self = StObject.set(x, "preSubmit", js.Any.fromFunction2(value))
+      inline def setValidate(
+        value: (/* values */ UseFormValues[ValueType], /* instance */ UseFormInstance[ValueType, ErrorType, EventType, FieldMetaType, FormMetaType]) => js.Promise[ValidateResult] | ValidateResult | Unit
+      ): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
       
-      inline def setPreSubmitUndefined: Self = StObject.set(x, "preSubmit", js.undefined)
+      inline def setValidatePristine(value: Boolean): Self = StObject.set(x, "validatePristine", value.asInstanceOf[js.Any])
       
-      inline def setPreValidate(value: /* values */ FormValues => FormValues): Self = StObject.set(x, "preValidate", js.Any.fromFunction1(value))
+      inline def setValidatePristineUndefined: Self = StObject.set(x, "validatePristine", js.undefined)
       
-      inline def setPreValidateUndefined: Self = StObject.set(x, "preValidate", js.undefined)
-      
-      inline def setRender(value: /* formApi */ FormApi => RenderReturn): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
-      
-      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
-      
-      inline def setValidateError(value: /* values */ FormValues => FormErrors): Self = StObject.set(x, "validateError", js.Any.fromFunction1(value))
-      
-      inline def setValidateErrorUndefined: Self = StObject.set(x, "validateError", js.undefined)
-      
-      inline def setValidateOnSubmit(value: Boolean): Self = StObject.set(x, "validateOnSubmit", value.asInstanceOf[js.Any])
-      
-      inline def setValidateOnSubmitUndefined: Self = StObject.set(x, "validateOnSubmit", js.undefined)
-      
-      inline def setValidateSuccess(value: (/* values */ FormValues, /* errors */ FormErrors) => FormErrors): Self = StObject.set(x, "validateSuccess", js.Any.fromFunction2(value))
-      
-      inline def setValidateSuccessUndefined: Self = StObject.set(x, "validateSuccess", js.undefined)
-      
-      inline def setValidateWarning(value: /* values */ FormValues => FormErrors): Self = StObject.set(x, "validateWarning", js.Any.fromFunction1(value))
-      
-      inline def setValidateWarningUndefined: Self = StObject.set(x, "validateWarning", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   
-  trait FormState extends StObject {
-    
-    var dirty: js.UndefOr[Boolean] = js.undefined
-    
-    var errors: FormErrors
-    
-    var nestedErrors: NestedErrors
-    
-    var touched: Touched
-    
-    var values: FormValues
-  }
-  object FormState {
-    
-    inline def apply(errors: FormErrors, nestedErrors: NestedErrors, touched: Touched, values: FormValues): FormState = {
-      val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], nestedErrors = nestedErrors.asInstanceOf[js.Any], touched = touched.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FormState]
-    }
-    
-    extension [Self <: FormState](x: Self) {
-      
-      inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
-      
-      inline def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
-      
-      inline def setErrors(value: FormErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
-      
-      inline def setNestedErrors(value: NestedErrors): Self = StObject.set(x, "nestedErrors", value.asInstanceOf[js.Any])
-      
-      inline def setTouched(value: Touched): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
-      
-      inline def setValues(value: FormValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
-    }
-  }
+  type UseFormValues[ValueType] = Record[String, ValueType]
   
-  type FormValue = js.Any
-  
-  type FormValues = Nested[FormValue]
-  
-  trait Nested[T]
-    extends StObject
-       with /* key */ StringDictionary[T | Nested[T]]
-  object Nested {
-    
-    inline def apply[T](): Nested[T] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Nested[T]]
-    }
-  }
-  
-  type NestedErrors = Nested[FormErrors]
-  
-  trait RadioGroupContext extends StObject {
-    
-    var group: FieldApi
-  }
-  object RadioGroupContext {
-    
-    inline def apply(group: FieldApi): RadioGroupContext = {
-      val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RadioGroupContext]
-    }
-    
-    extension [Self <: RadioGroupContext](x: Self) {
-      
-      inline def setGroup(value: FieldApi): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type RenderReturn = Element | `false` | Null | js.Array[scala.Nothing]
-  
-  type SelectOptions = js.Array[Label]
-  
-  trait SelectProps
-    extends StObject
-       with FieldProps
-       with SelectHTMLAttributes[HTMLSelectElement] {
-    
-    var options: SelectOptions
-  }
-  object SelectProps {
-    
-    inline def apply(options: SelectOptions): SelectProps = {
-      val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SelectProps]
-    }
-    
-    extension [Self <: SelectProps](x: Self) {
-      
-      inline def setOptions(value: SelectOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-      
-      inline def setOptionsVarargs(value: Label*): Self = StObject.set(x, "options", js.Array(value :_*))
-    }
-  }
-  
-  trait StyledProps
-    extends StObject
-       with FieldProps {
-    
-    var messageBefore: js.UndefOr[Boolean] = js.undefined
-    
-    var noMessage: js.UndefOr[Boolean] = js.undefined
-    
-    var touchValidation: js.UndefOr[Boolean] = js.undefined
-  }
-  object StyledProps {
-    
-    inline def apply(): StyledProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[StyledProps]
-    }
-    
-    extension [Self <: StyledProps](x: Self) {
-      
-      inline def setMessageBefore(value: Boolean): Self = StObject.set(x, "messageBefore", value.asInstanceOf[js.Any])
-      
-      inline def setMessageBeforeUndefined: Self = StObject.set(x, "messageBefore", js.undefined)
-      
-      inline def setNoMessage(value: Boolean): Self = StObject.set(x, "noMessage", value.asInstanceOf[js.Any])
-      
-      inline def setNoMessageUndefined: Self = StObject.set(x, "noMessage", js.undefined)
-      
-      inline def setTouchValidation(value: Boolean): Self = StObject.set(x, "touchValidation", value.asInstanceOf[js.Any])
-      
-      inline def setTouchValidationUndefined: Self = StObject.set(x, "touchValidation", js.undefined)
-    }
-  }
-  
-  type Touched = Nested[Boolean]
-  
-  type ValidateValuesFunction = js.Function1[/* values */ FormValues, FormErrors]
+  type ValidateResult = js.UndefOr[String | `false`]
 }

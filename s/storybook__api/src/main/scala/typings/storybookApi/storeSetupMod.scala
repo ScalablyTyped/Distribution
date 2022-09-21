@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object storeSetupMod {
   
-  @JSImport("@storybook/api/dist/lib/store-setup", JSImport.Namespace)
+  @JSImport("@storybook/api/dist/ts3.9/lib/store-setup", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(_underscore: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(_underscore: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

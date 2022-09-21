@@ -19,15 +19,15 @@ object utilsMod {
   
   inline def request(method: String, port: String, path: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def request(method: String, port: String, path: String, timeout: Double): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def request(method: String, port: String, path: String, timeout: Double, data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  inline def request(method: String, port: String, path: String, timeout: Unit, data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def request(method: String, port: String, path: String, timeout: Double, data: Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def request(method: String, port: String, path: String, timeout: Unit, data: Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("webdriver-manager/built/lib/utils", "spawn")
   @js.native
   def spawn: js.Function4[
     /* cmd */ String, 
     /* args */ js.Array[String], 
-    /* stdio */ js.UndefOr[js.Any], 
+    /* stdio */ js.UndefOr[Any], 
     /* opts */ js.UndefOr[SpawnOptions], 
     ChildProcess
   ] = js.native
@@ -37,17 +37,17 @@ object utilsMod {
   def spawnSync: js.Function4[
     /* cmd */ String, 
     /* args */ js.Array[String], 
-    /* stdio */ js.UndefOr[js.Any], 
+    /* stdio */ js.UndefOr[Any], 
     /* opts */ js.UndefOr[SpawnSyncOptions], 
-    SpawnSyncReturns[js.Any]
+    SpawnSyncReturns[Any]
   ] = js.native
   inline def spawnSync_=(
     x: js.Function4[
       /* cmd */ String, 
       /* args */ js.Array[String], 
-      /* stdio */ js.UndefOr[js.Any], 
+      /* stdio */ js.UndefOr[Any], 
       /* opts */ js.UndefOr[SpawnSyncOptions], 
-      SpawnSyncReturns[js.Any]
+      SpawnSyncReturns[Any]
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spawnSync")(x.asInstanceOf[js.Any])
   
@@ -55,7 +55,7 @@ object utilsMod {
     x: js.Function4[
       /* cmd */ String, 
       /* args */ js.Array[String], 
-      /* stdio */ js.UndefOr[js.Any], 
+      /* stdio */ js.UndefOr[Any], 
       /* opts */ js.UndefOr[SpawnOptions], 
       ChildProcess
     ]

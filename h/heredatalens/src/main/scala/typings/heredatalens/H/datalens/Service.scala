@@ -4,7 +4,6 @@ import typings.heredatalens.H.datalens.QueryTileProvider.X
 import typings.heredatalens.H.datalens.QueryTileProvider.Y
 import typings.heredatalens.H.datalens.QueryTileProvider.Zoom
 import typings.heremaps.H.service.IConfigurable
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,24 +26,24 @@ trait Service
     * @param onError - Callback called on an unsuccessful request with the Error object
     * @returns - Response Promise
     */
-  def fetchLayer(layerName: String): js.Promise[js.Any] = js.native
-  def fetchLayer(layerName: String, params: js.Any): js.Promise[js.Any] = js.native
-  def fetchLayer(layerName: String, params: js.Any, onResult: js.Function1[/* result */ js.Any, Unit]): js.Promise[js.Any] = js.native
+  def fetchLayer(layerName: String): js.Promise[Any] = js.native
+  def fetchLayer(layerName: String, params: Any): js.Promise[Any] = js.native
+  def fetchLayer(layerName: String, params: Any, onResult: js.Function1[/* result */ Any, Unit]): js.Promise[Any] = js.native
   def fetchLayer(
     layerName: String,
-    params: js.Any,
-    onResult: js.Function1[/* result */ js.Any, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
-  def fetchLayer(layerName: String, params: js.Any, onResult: Unit, onError: js.Function1[/* error */ js.Any, Unit]): js.Promise[js.Any] = js.native
-  def fetchLayer(layerName: String, params: Unit, onResult: js.Function1[/* result */ js.Any, Unit]): js.Promise[js.Any] = js.native
+    params: Any,
+    onResult: js.Function1[/* result */ Any, Unit],
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[Any] = js.native
+  def fetchLayer(layerName: String, params: Any, onResult: Unit, onError: js.Function1[/* error */ Any, Unit]): js.Promise[Any] = js.native
+  def fetchLayer(layerName: String, params: Unit, onResult: js.Function1[/* result */ Any, Unit]): js.Promise[Any] = js.native
   def fetchLayer(
     layerName: String,
     params: Unit,
-    onResult: js.Function1[/* result */ js.Any, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
-  def fetchLayer(layerName: String, params: Unit, onResult: Unit, onError: js.Function1[/* error */ js.Any, Unit]): js.Promise[js.Any] = js.native
+    onResult: js.Function1[/* result */ Any, Unit],
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[Any] = js.native
+  def fetchLayer(layerName: String, params: Unit, onResult: Unit, onError: js.Function1[/* error */ Any, Unit]): js.Promise[Any] = js.native
   
   /**
     * This method fetches vector tile data from the layer.
@@ -56,51 +55,51 @@ trait Service
     * @param onError - Callback called on an unsuccessful request with the Error object
     * @returns - Typed array with tile data
     */
-  def fetchLayerTile(layerName: String, x: X, y: Y, z: Zoom): js.Promise[Uint8Array] = js.native
-  def fetchLayerTile(layerName: String, x: X, y: Y, z: Zoom, params: js.Any): js.Promise[Uint8Array] = js.native
+  def fetchLayerTile(layerName: String, x: X, y: Y, z: Zoom): js.Promise[js.typedarray.Uint8Array] = js.native
+  def fetchLayerTile(layerName: String, x: X, y: Y, z: Zoom, params: Any): js.Promise[js.typedarray.Uint8Array] = js.native
   def fetchLayerTile(
     layerName: String,
     x: X,
     y: Y,
     z: Zoom,
-    params: js.Any,
-    onResult: js.Function1[/* result */ js.Any, Unit]
-  ): js.Promise[Uint8Array] = js.native
+    params: Any,
+    onResult: js.Function1[/* result */ Any, Unit]
+  ): js.Promise[js.typedarray.Uint8Array] = js.native
   def fetchLayerTile(
     layerName: String,
     x: X,
     y: Y,
     z: Zoom,
-    params: js.Any,
-    onResult: js.Function1[/* result */ js.Any, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[Uint8Array] = js.native
+    params: Any,
+    onResult: js.Function1[/* result */ Any, Unit],
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[js.typedarray.Uint8Array] = js.native
   def fetchLayerTile(
     layerName: String,
     x: X,
     y: Y,
     z: Zoom,
-    params: js.Any,
+    params: Any,
     onResult: Unit,
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[Uint8Array] = js.native
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[js.typedarray.Uint8Array] = js.native
   def fetchLayerTile(
     layerName: String,
     x: X,
     y: Y,
     z: Zoom,
     params: Unit,
-    onResult: js.Function1[/* result */ js.Any, Unit]
-  ): js.Promise[Uint8Array] = js.native
+    onResult: js.Function1[/* result */ Any, Unit]
+  ): js.Promise[js.typedarray.Uint8Array] = js.native
   def fetchLayerTile(
     layerName: String,
     x: X,
     y: Y,
     z: Zoom,
     params: Unit,
-    onResult: js.Function1[/* result */ js.Any, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[Uint8Array] = js.native
+    onResult: js.Function1[/* result */ Any, Unit],
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[js.typedarray.Uint8Array] = js.native
   def fetchLayerTile(
     layerName: String,
     x: X,
@@ -108,8 +107,8 @@ trait Service
     z: Zoom,
     params: Unit,
     onResult: Unit,
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[Uint8Array] = js.native
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[js.typedarray.Uint8Array] = js.native
   
   /**
     * This method fetches query data for a given query ID.
@@ -121,24 +120,24 @@ trait Service
     * @param onError - Callback called on an unsuccessful request with the Error object
     * @returns - Response Promise
     */
-  def fetchQueryData(queryId: String): js.Promise[js.Any] = js.native
-  def fetchQueryData(queryId: String, params: js.Any): js.Promise[js.Any] = js.native
-  def fetchQueryData(queryId: String, params: js.Any, onResult: js.Function1[/* result */ js.Any, Unit]): js.Promise[js.Any] = js.native
+  def fetchQueryData(queryId: String): js.Promise[Any] = js.native
+  def fetchQueryData(queryId: String, params: Any): js.Promise[Any] = js.native
+  def fetchQueryData(queryId: String, params: Any, onResult: js.Function1[/* result */ Any, Unit]): js.Promise[Any] = js.native
   def fetchQueryData(
     queryId: String,
-    params: js.Any,
-    onResult: js.Function1[/* result */ js.Any, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
-  def fetchQueryData(queryId: String, params: js.Any, onResult: Unit, onError: js.Function1[/* error */ js.Any, Unit]): js.Promise[js.Any] = js.native
-  def fetchQueryData(queryId: String, params: Unit, onResult: js.Function1[/* result */ js.Any, Unit]): js.Promise[js.Any] = js.native
+    params: Any,
+    onResult: js.Function1[/* result */ Any, Unit],
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[Any] = js.native
+  def fetchQueryData(queryId: String, params: Any, onResult: Unit, onError: js.Function1[/* error */ Any, Unit]): js.Promise[Any] = js.native
+  def fetchQueryData(queryId: String, params: Unit, onResult: js.Function1[/* result */ Any, Unit]): js.Promise[Any] = js.native
   def fetchQueryData(
     queryId: String,
     params: Unit,
-    onResult: js.Function1[/* result */ js.Any, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
-  def fetchQueryData(queryId: String, params: Unit, onResult: Unit, onError: js.Function1[/* error */ js.Any, Unit]): js.Promise[js.Any] = js.native
+    onResult: js.Function1[/* result */ Any, Unit],
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[Any] = js.native
+  def fetchQueryData(queryId: String, params: Unit, onResult: Unit, onError: js.Function1[/* error */ Any, Unit]): js.Promise[Any] = js.native
   
   /**
     * This method fetches statistical data for the Data Lens query (eg minimum and maximum values for the query metric).
@@ -149,20 +148,15 @@ trait Service
     * @param onError - Callback called on an unsuccessful request with the Error object
     * @returns - Response Promise
     */
-  def fetchQueryStats(queryId: String, statsQuery: js.Any): js.Promise[js.Any] = js.native
-  def fetchQueryStats(queryId: String, statsQuery: js.Any, onResult: js.Function1[/* result */ js.Any, Unit]): js.Promise[js.Any] = js.native
+  def fetchQueryStats(queryId: String, statsQuery: Any): js.Promise[Any] = js.native
+  def fetchQueryStats(queryId: String, statsQuery: Any, onResult: js.Function1[/* result */ Any, Unit]): js.Promise[Any] = js.native
   def fetchQueryStats(
     queryId: String,
-    statsQuery: js.Any,
-    onResult: js.Function1[/* result */ js.Any, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
-  def fetchQueryStats(
-    queryId: String,
-    statsQuery: js.Any,
-    onResult: Unit,
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
+    statsQuery: Any,
+    onResult: js.Function1[/* result */ Any, Unit],
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[Any] = js.native
+  def fetchQueryStats(queryId: String, statsQuery: Any, onResult: Unit, onError: js.Function1[/* error */ Any, Unit]): js.Promise[Any] = js.native
   
   /**
     * This method makes an HTTP request to the Data Lens REST API.
@@ -177,102 +171,102 @@ trait Service
     * @param onError - Callback called on an unsuccessful request with the Error object
     * @returns - Response Promise
     */
-  def request(method: String, endpoint: String): js.Promise[js.Any] = js.native
-  def request(method: String, endpoint: String, params: js.Any): js.Promise[js.Any] = js.native
-  def request(method: String, endpoint: String, params: js.Any, body: js.Any): js.Promise[js.Any] = js.native
+  def request(method: String, endpoint: String): js.Promise[Any] = js.native
+  def request(method: String, endpoint: String, params: Any): js.Promise[Any] = js.native
+  def request(method: String, endpoint: String, params: Any, body: Any): js.Promise[Any] = js.native
   def request(
     method: String,
     endpoint: String,
-    params: js.Any,
-    body: js.Any,
-    onResult: js.Function1[/* result */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
+    params: Any,
+    body: Any,
+    onResult: js.Function1[/* result */ Any, Unit]
+  ): js.Promise[Any] = js.native
   def request(
     method: String,
     endpoint: String,
-    params: js.Any,
-    body: js.Any,
-    onResult: js.Function1[/* result */ js.Any, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
+    params: Any,
+    body: Any,
+    onResult: js.Function1[/* result */ Any, Unit],
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[Any] = js.native
   def request(
     method: String,
     endpoint: String,
-    params: js.Any,
-    body: js.Any,
+    params: Any,
+    body: Any,
     onResult: Unit,
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[Any] = js.native
   def request(
     method: String,
     endpoint: String,
-    params: js.Any,
+    params: Any,
     body: Unit,
-    onResult: js.Function1[/* result */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
+    onResult: js.Function1[/* result */ Any, Unit]
+  ): js.Promise[Any] = js.native
   def request(
     method: String,
     endpoint: String,
-    params: js.Any,
+    params: Any,
     body: Unit,
-    onResult: js.Function1[/* result */ js.Any, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
+    onResult: js.Function1[/* result */ Any, Unit],
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[Any] = js.native
   def request(
     method: String,
     endpoint: String,
-    params: js.Any,
-    body: Unit,
-    onResult: Unit,
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
-  def request(method: String, endpoint: String, params: Unit, body: js.Any): js.Promise[js.Any] = js.native
-  def request(
-    method: String,
-    endpoint: String,
-    params: Unit,
-    body: js.Any,
-    onResult: js.Function1[/* result */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
-  def request(
-    method: String,
-    endpoint: String,
-    params: Unit,
-    body: js.Any,
-    onResult: js.Function1[/* result */ js.Any, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
-  def request(
-    method: String,
-    endpoint: String,
-    params: Unit,
-    body: js.Any,
-    onResult: Unit,
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
-  def request(
-    method: String,
-    endpoint: String,
-    params: Unit,
-    body: Unit,
-    onResult: js.Function1[/* result */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
-  def request(
-    method: String,
-    endpoint: String,
-    params: Unit,
-    body: Unit,
-    onResult: js.Function1[/* result */ js.Any, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
-  def request(
-    method: String,
-    endpoint: String,
-    params: Unit,
+    params: Any,
     body: Unit,
     onResult: Unit,
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[js.Any] = js.native
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[Any] = js.native
+  def request(method: String, endpoint: String, params: Unit, body: Any): js.Promise[Any] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: Unit,
+    body: Any,
+    onResult: js.Function1[/* result */ Any, Unit]
+  ): js.Promise[Any] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: Unit,
+    body: Any,
+    onResult: js.Function1[/* result */ Any, Unit],
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[Any] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: Unit,
+    body: Any,
+    onResult: Unit,
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[Any] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: Unit,
+    body: Unit,
+    onResult: js.Function1[/* result */ Any, Unit]
+  ): js.Promise[Any] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: Unit,
+    body: Unit,
+    onResult: js.Function1[/* result */ Any, Unit],
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[Any] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: Unit,
+    body: Unit,
+    onResult: Unit,
+    onError: js.Function1[/* error */ Any, Unit]
+  ): js.Promise[Any] = js.native
   
   /**
     * Sets the access and refresh tokens used to authenticate all requests against the Data Lens REST API.
@@ -295,11 +289,11 @@ object Service {
     var columns: js.Array[String]
     
     /** Rows of data */
-    var rows: js.Array[js.Array[js.Any]]
+    var rows: js.Array[js.Array[Any]]
   }
   object Data {
     
-    inline def apply(columns: js.Array[String], rows: js.Array[js.Array[js.Any]]): Data = {
+    inline def apply(columns: js.Array[String], rows: js.Array[js.Array[Any]]): Data = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
@@ -308,11 +302,11 @@ object Service {
       
       inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value*))
       
-      inline def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      inline def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Array[Any]*): Self = StObject.set(x, "rows", js.Array(value*))
     }
   }
   
@@ -369,7 +363,7 @@ object Service {
       
       inline def setDomainShardingUndefined: Self = StObject.set(x, "domainSharding", js.undefined)
       
-      inline def setDomainShardingVarargs(value: String*): Self = StObject.set(x, "domainSharding", js.Array(value :_*))
+      inline def setDomainShardingVarargs(value: String*): Self = StObject.set(x, "domainSharding", js.Array(value*))
       
       inline def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
       

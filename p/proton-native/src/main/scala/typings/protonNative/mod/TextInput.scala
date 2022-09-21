@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("proton-native", "TextInput")
 @js.native
-class TextInput protected ()
-  extends Component[TextInputProps, js.Object, js.Any] {
+open class TextInput protected ()
+  extends Component[TextInputProps, js.Object, Any] {
   def this(props: TextInputProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TextInputProps, context: js.Any) = this()
+  def this(props: TextInputProps, context: Any) = this()
 }

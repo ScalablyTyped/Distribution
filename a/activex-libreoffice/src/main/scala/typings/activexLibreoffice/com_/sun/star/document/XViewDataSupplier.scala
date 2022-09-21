@@ -42,7 +42,7 @@ object XViewDataSupplier {
     ViewData: XIndexAccess,
     acquire: () => Unit,
     getViewData: () => XIndexAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setViewData: XIndexAccess => Unit
   ): XViewDataSupplier = {

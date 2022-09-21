@@ -3,6 +3,24 @@
 
 Typings are for version 4.1.20200930
 
+## Library description:
+TypeScript typings for AdSense Host API v4.1
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @maxim_mazurok/gapi.client.adsensehost |
+| Keywords           | - |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 506.0 |
+| # stars            | ? |
+
+## Links
+- [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)
+- [Bugs](https://github.com/Maxim-Mazurok/google-api-typings-generator/issues)
+- [Repository](https://github.com/Maxim-Mazurok/google-api-typings-generator)
+- [Npm](https://www.npmjs.com/package/%40maxim_mazurok%2Fgapi.client.adsensehost)
+    
 
 
 ## Note

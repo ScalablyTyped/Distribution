@@ -6,7 +6,6 @@ import typings.dynatrace.dynatraceStrings._warn_
 import typings.dynatrace.dynatraceStrings.c
 import typings.dynatrace.dynatraceStrings.i
 import typings.dynatrace.dynatraceStrings.s
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,18 +20,6 @@ trait dynaTrace extends StObject {
     */
   def addPageLeavingListener(listener: js.Function1[/* key */ String, js.Object]): Unit = js.native
   
-  @JSName("addStreamingNode")
-  def addStreamingNode_error(
-    source: String,
-    duration: Double,
-    userTriggered: Boolean,
-    watchedCompletely: Boolean,
-    maxPlayTime: Double,
-    playTime: Double,
-    bufferingCount: Double,
-    bufferingTime: Double,
-    `type`: _error_
-  ): Unit = js.native
   /**
     * @description Sends a Streaming Node to the Server
     * @param source - URL of the streaming resource
@@ -46,8 +33,7 @@ trait dynaTrace extends StObject {
     * @param type - action type of the streaming node. Is used for classifying events
     *     on the serverside, e.g. _info_, _warn_, _error_
     */
-  @JSName("addStreamingNode")
-  def addStreamingNode_info(
+  def addStreamingNode(
     source: String,
     duration: Double,
     userTriggered: Boolean,
@@ -56,19 +42,7 @@ trait dynaTrace extends StObject {
     playTime: Double,
     bufferingCount: Double,
     bufferingTime: Double,
-    `type`: _info_
-  ): Unit = js.native
-  @JSName("addStreamingNode")
-  def addStreamingNode_warn(
-    source: String,
-    duration: Double,
-    userTriggered: Boolean,
-    watchedCompletely: Boolean,
-    maxPlayTime: Double,
-    playTime: Double,
-    bufferingCount: Double,
-    bufferingTime: Double,
-    `type`: _warn_
+    `type`: _info_ | _warn_ | _error_
   ): Unit = js.native
   
   /**
@@ -81,12 +55,12 @@ trait dynaTrace extends StObject {
     * @param addInfo - Additional info for user input such as key, mouse button, etc ('F5', 'RETURN',...)
     * @param validTime - How long should the user input be able to open actions? default is 30ms
     */
-  def beginUserInput(domNode: js.Any, `type`: String, addInfo: String, validTime: Double): js.Any = js.native
+  def beginUserInput(domNode: Any, `type`: String, addInfo: String, validTime: Double): Any = js.native
   
   /**
     * @description the user input object returned by beginUserInput
     */
-  def endUserInput(userInputObject: js.Any): Unit = js.native
+  def endUserInput(userInputObject: Any): Unit = js.native
   
   /**
     * @description By default a visit ends after a configurable inactivity time (default is 30 min.).
@@ -176,8 +150,8 @@ trait dynaTrace extends StObject {
     */
   def reportError(error: String): Unit = js.native
   def reportError(error: String, parentAction: Double): Unit = js.native
-  def reportError(error: Error): Unit = js.native
-  def reportError(error: Error, parentAction: Double): Unit = js.native
+  def reportError(error: js.Error): Unit = js.native
+  def reportError(error: js.Error, parentAction: Double): Unit = js.native
   
   /**
     * @description Reports an event
@@ -264,16 +238,11 @@ trait dynaTrace extends StObject {
     */
   def signalOnLoadStart(): Unit = js.native
   
-  @JSName("startThirdParty")
-  def startThirdParty_c(`type`: c, url: String): Unit = js.native
   /**
     * @description Indicates start of a third party resource
     * @param type - i = image, s = script, c = custom
     */
-  @JSName("startThirdParty")
-  def startThirdParty_i(`type`: i, url: String): Unit = js.native
-  @JSName("startThirdParty")
-  def startThirdParty_s(`type`: s, url: String): Unit = js.native
+  def startThirdParty(`type`: i | s | c, url: String): Unit = js.native
   
   /**
     * @description Indicates stop of a third party resource

@@ -38,7 +38,7 @@ object AutoScalingPolicyDescription {
     
     inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
-    inline def setRulesVarargs(value: ScalingRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: ScalingRule*): Self = StObject.set(x, "Rules", js.Array(value*))
     
     inline def setStatus(value: AutoScalingPolicyStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

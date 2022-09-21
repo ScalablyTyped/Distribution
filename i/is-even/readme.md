@@ -10,10 +10,10 @@ Return true if the given number is even.
 | ------------------ | :-------------: |
 | Full name          | is-even |
 | Keywords           | array, count, even, filter, integer, is, math, numeric, odd, string |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 4815306 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 827070.0 |
+| # stars            | 162.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/is-even)

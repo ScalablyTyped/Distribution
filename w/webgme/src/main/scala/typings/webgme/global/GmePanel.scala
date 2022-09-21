@@ -16,7 +16,7 @@ object GmePanel {
   
   @JSGlobal("GmePanel.IActivePanel")
   @js.native
-  class IActivePanel ()
+  open class IActivePanel ()
     extends StObject
        with typings.webgme.GmePanel.IActivePanel {
     
@@ -35,13 +35,13 @@ object GmePanel {
   
   @JSGlobal("GmePanel.Layout")
   @js.native
-  class Layout ()
+  open class Layout ()
     extends StObject
        with typings.webgme.GmePanel.Layout
   
   @JSGlobal("GmePanel.LayoutManager")
   @js.native
-  class LayoutManager ()
+  open class LayoutManager ()
     extends StObject
        with typings.webgme.GmePanel.LayoutManager {
     
@@ -75,7 +75,7 @@ object GmePanel {
   
   @JSGlobal("GmePanel.Logger")
   @js.native
-  class Logger ()
+  open class Logger ()
     extends StObject
        with typings.webgme.GmePanel.Logger {
     
@@ -88,7 +88,7 @@ object GmePanel {
   
   @JSGlobal("GmePanel.PanelBase")
   @js.native
-  class PanelBase protected ()
+  open class PanelBase protected ()
     extends StObject
        with typings.webgme.GmePanel.PanelBase {
     def this(options: Options) = this()
@@ -103,7 +103,7 @@ object GmePanel {
     override def clear(): Unit = js.native
     
     /* CompleteClass */
-    var control: js.Any = js.native
+    var control: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -135,7 +135,7 @@ object GmePanel {
   
   @JSGlobal("GmePanel.PanelBaseWithHeader")
   @js.native
-  class PanelBaseWithHeader protected ()
+  open class PanelBaseWithHeader protected ()
     extends StObject
        with typings.webgme.GmePanel.PanelBaseWithHeader {
     def this(options: OptionsWithHeader, layoutManger: typings.webgme.GmePanel.LayoutManager) = this()
@@ -153,7 +153,7 @@ object GmePanel {
     override def clear(): Unit = js.native
     
     /* CompleteClass */
-    var control: js.Any = js.native
+    var control: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -197,7 +197,7 @@ object GmePanel {
   
   @JSGlobal("GmePanel.PanelManager")
   @js.native
-  class PanelManager protected ()
+  open class PanelManager protected ()
     extends StObject
        with typings.webgme.GmePanel.PanelManager {
     def this(client: Client) = this()

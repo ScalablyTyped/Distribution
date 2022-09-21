@@ -1,8 +1,7 @@
 package typings.passportVkontakte
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +10,22 @@ object mod {
   
   @JSImport("passport-vkontakte", "Strategy")
   @js.native
-  class Strategy protected ()
+  open class Strategy protected ()
     extends StObject
        with typings.passport.mod.Strategy {
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
     def this(options: StrategyOptions, verify: VerifyFunctionWithParams) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: js.Object
+    ): Unit = js.native
   }
   
   trait Params extends StObject {
@@ -55,7 +63,7 @@ object mod {
     extends StObject
        with typings.passport.mod.Profile {
     
-    var _json: js.Any
+    var _json: Any
     
     var _raw: String
     
@@ -65,7 +73,7 @@ object mod {
   }
   object Profile {
     
-    inline def apply(_json: js.Any, _raw: String, displayName: String, id: String, provider: String): Profile = {
+    inline def apply(_json: Any, _raw: String, displayName: String, id: String, provider: String): Profile = {
       val __obj = js.Dynamic.literal(_json = _json.asInstanceOf[js.Any], _raw = _raw.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[Profile]
     }
@@ -80,7 +88,7 @@ object mod {
       
       inline def setProfileUrlUndefined: Self = StObject.set(x, "profileUrl", js.undefined)
       
-      inline def set_json(value: js.Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
+      inline def set_json(value: Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
       
       inline def set_raw(value: String): Self = StObject.set(x, "_raw", value.asInstanceOf[js.Any])
     }
@@ -127,11 +135,11 @@ object mod {
       
       inline def setProfileFieldsUndefined: Self = StObject.set(x, "profileFields", js.undefined)
       
-      inline def setProfileFieldsVarargs(value: String*): Self = StObject.set(x, "profileFields", js.Array(value :_*))
+      inline def setProfileFieldsVarargs(value: String*): Self = StObject.set(x, "profileFields", js.Array(value*))
     }
   }
   
-  type VerifyCallback = js.Function3[/* error */ js.Any, /* user */ js.UndefOr[js.Any], /* info */ js.UndefOr[js.Any], Unit]
+  type VerifyCallback = js.Function3[/* error */ Any, /* user */ js.UndefOr[Any], /* info */ js.UndefOr[Any], Unit]
   
   type VerifyFunction = js.Function4[
     /* accessToken */ String, 

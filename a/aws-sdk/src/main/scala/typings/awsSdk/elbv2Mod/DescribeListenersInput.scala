@@ -39,7 +39,7 @@ object DescribeListenersInput {
     
     inline def setListenerArnsUndefined: Self = StObject.set(x, "ListenerArns", js.undefined)
     
-    inline def setListenerArnsVarargs(value: ListenerArn*): Self = StObject.set(x, "ListenerArns", js.Array(value :_*))
+    inline def setListenerArnsVarargs(value: ListenerArn*): Self = StObject.set(x, "ListenerArns", js.Array(value*))
     
     inline def setLoadBalancerArn(value: LoadBalancerArn): Self = StObject.set(x, "LoadBalancerArn", value.asInstanceOf[js.Any])
     

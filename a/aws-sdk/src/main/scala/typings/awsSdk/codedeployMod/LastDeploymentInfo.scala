@@ -9,7 +9,7 @@ trait LastDeploymentInfo extends StObject {
   /**
     * A timestamp that indicates when the most recent deployment to the deployment group started.
     */
-  var createTime: js.UndefOr[Timestamp] = js.undefined
+  var createTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The unique ID of a deployment. 
@@ -19,7 +19,7 @@ trait LastDeploymentInfo extends StObject {
   /**
     * A timestamp that indicates when the most recent deployment to the deployment group was complete.
     */
-  var endTime: js.UndefOr[Timestamp] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the most recent deployment.
@@ -35,7 +35,7 @@ object LastDeploymentInfo {
   
   extension [Self <: LastDeploymentInfo](x: Self) {
     
-    inline def setCreateTime(value: Timestamp): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
@@ -43,7 +43,7 @@ object LastDeploymentInfo {
     
     inline def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     

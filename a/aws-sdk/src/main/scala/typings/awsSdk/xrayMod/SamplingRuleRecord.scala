@@ -9,12 +9,12 @@ trait SamplingRuleRecord extends StObject {
   /**
     * When the rule was created.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * When the rule was last modified.
     */
-  var ModifiedAt: js.UndefOr[Timestamp] = js.undefined
+  var ModifiedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The sampling rule.
@@ -30,11 +30,11 @@ object SamplingRuleRecord {
   
   extension [Self <: SamplingRuleRecord](x: Self) {
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    inline def setModifiedAt(value: Timestamp): Self = StObject.set(x, "ModifiedAt", value.asInstanceOf[js.Any])
+    inline def setModifiedAt(value: js.Date): Self = StObject.set(x, "ModifiedAt", value.asInstanceOf[js.Any])
     
     inline def setModifiedAtUndefined: Self = StObject.set(x, "ModifiedAt", js.undefined)
     

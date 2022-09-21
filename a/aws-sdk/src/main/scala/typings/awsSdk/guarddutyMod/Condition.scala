@@ -79,13 +79,13 @@ object Condition {
     
     inline def setEqUndefined: Self = StObject.set(x, "Eq", js.undefined)
     
-    inline def setEqVarargs(value: String*): Self = StObject.set(x, "Eq", js.Array(value :_*))
+    inline def setEqVarargs(value: String*): Self = StObject.set(x, "Eq", js.Array(value*))
     
     inline def setEquals(value: Equals): Self = StObject.set(x, "Equals", value.asInstanceOf[js.Any])
     
     inline def setEqualsUndefined: Self = StObject.set(x, "Equals", js.undefined)
     
-    inline def setEqualsVarargs(value: String*): Self = StObject.set(x, "Equals", js.Array(value :_*))
+    inline def setEqualsVarargs(value: String*): Self = StObject.set(x, "Equals", js.Array(value*))
     
     inline def setGreaterThan(value: Long): Self = StObject.set(x, "GreaterThan", value.asInstanceOf[js.Any])
     
@@ -123,12 +123,12 @@ object Condition {
     
     inline def setNeqUndefined: Self = StObject.set(x, "Neq", js.undefined)
     
-    inline def setNeqVarargs(value: String*): Self = StObject.set(x, "Neq", js.Array(value :_*))
+    inline def setNeqVarargs(value: String*): Self = StObject.set(x, "Neq", js.Array(value*))
     
     inline def setNotEquals(value: NotEquals): Self = StObject.set(x, "NotEquals", value.asInstanceOf[js.Any])
     
     inline def setNotEqualsUndefined: Self = StObject.set(x, "NotEquals", js.undefined)
     
-    inline def setNotEqualsVarargs(value: String*): Self = StObject.set(x, "NotEquals", js.Array(value :_*))
+    inline def setNotEqualsVarargs(value: String*): Self = StObject.set(x, "NotEquals", js.Array(value*))
   }
 }

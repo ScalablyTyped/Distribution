@@ -42,6 +42,6 @@ object GetTimeSeriesServiceStatisticsResult {
     
     inline def setTimeSeriesServiceStatisticsUndefined: Self = StObject.set(x, "TimeSeriesServiceStatistics", js.undefined)
     
-    inline def setTimeSeriesServiceStatisticsVarargs(value: TimeSeriesServiceStatistics*): Self = StObject.set(x, "TimeSeriesServiceStatistics", js.Array(value :_*))
+    inline def setTimeSeriesServiceStatisticsVarargs(value: TimeSeriesServiceStatistics*): Self = StObject.set(x, "TimeSeriesServiceStatistics", js.Array(value*))
   }
 }

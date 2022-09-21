@@ -36,7 +36,7 @@ object XDatabaseRegistrationsListener {
     acquire: () => Unit,
     changedDatabaseLocation: DatabaseRegistrationEvent => Unit,
     disposing: EventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registeredDatabaseLocation: DatabaseRegistrationEvent => Unit,
     release: () => Unit,
     revokedDatabaseLocation: DatabaseRegistrationEvent => Unit

@@ -13,6 +13,7 @@ trait QuickPickOptions extends StObject {
   
   /**
     * Set to `true` to keep the picker open when focus moves to another part of the editor or to another window.
+    * This setting is ignored on iPad and is always false.
     */
   var ignoreFocusOut: js.UndefOr[Boolean] = js.undefined
   
@@ -29,12 +30,17 @@ trait QuickPickOptions extends StObject {
   /**
     * An optional function that is invoked whenever an item is selected.
     */
-  var onDidSelectItem: js.UndefOr[js.Function1[/* item */ QuickPickItem | String, js.Any]] = js.undefined
+  var onDidSelectItem: js.UndefOr[js.Function1[/* item */ QuickPickItem | String, Any]] = js.undefined
   
   /**
     * An optional string to show as placeholder in the input box to guide the user what to pick on.
     */
   var placeHolder: js.UndefOr[String] = js.undefined
+  
+  /**
+    * An optional string that represents the title of the quick pick.
+    */
+  var title: js.UndefOr[String] = js.undefined
 }
 object QuickPickOptions {
   
@@ -61,12 +67,16 @@ object QuickPickOptions {
     
     inline def setMatchOnDetailUndefined: Self = StObject.set(x, "matchOnDetail", js.undefined)
     
-    inline def setOnDidSelectItem(value: /* item */ QuickPickItem | String => js.Any): Self = StObject.set(x, "onDidSelectItem", js.Any.fromFunction1(value))
+    inline def setOnDidSelectItem(value: /* item */ QuickPickItem | String => Any): Self = StObject.set(x, "onDidSelectItem", js.Any.fromFunction1(value))
     
     inline def setOnDidSelectItemUndefined: Self = StObject.set(x, "onDidSelectItem", js.undefined)
     
     inline def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
     
     inline def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

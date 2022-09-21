@@ -14,31 +14,72 @@ type AccessControlRuleDescription = java.lang.String
   - typings.awsSdk.awsSdkStrings.DENY
   - java.lang.String
 */
-type AccessControlRuleEffect = typings.awsSdk.workmailMod._AccessControlRuleEffect | java.lang.String
+type AccessControlRuleEffect = _AccessControlRuleEffect | java.lang.String
 
 type AccessControlRuleName = java.lang.String
 
-type AccessControlRuleNameList = js.Array[typings.awsSdk.workmailMod.AccessControlRuleName]
+type AccessControlRuleNameList = js.Array[AccessControlRuleName]
 
-type AccessControlRulesList = js.Array[typings.awsSdk.workmailMod.AccessControlRule]
+type AccessControlRulesList = js.Array[AccessControlRule]
 
-type ActionsList = js.Array[typings.awsSdk.workmailMod.AccessControlRuleAction]
+type ActionsList = js.Array[AccessControlRuleAction]
 
-type Aliases = js.Array[typings.awsSdk.workmailMod.EmailAddress]
+type Aliases = js.Array[EmailAddress]
 
 type AmazonResourceName = java.lang.String
 
+type AvailabilityConfigurationList = js.Array[AvailabilityConfiguration]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EWS
+  - typings.awsSdk.awsSdkStrings.LAMBDA
+  - java.lang.String
+*/
+type AvailabilityProviderType = _AvailabilityProviderType | java.lang.String
+
 type Boolean = scala.Boolean
+
+type BooleanObject = scala.Boolean
 
 type Description = java.lang.String
 
+type DeviceId = java.lang.String
+
+type DeviceModel = java.lang.String
+
+type DeviceModelList = js.Array[DeviceModel]
+
+type DeviceOperatingSystem = java.lang.String
+
+type DeviceOperatingSystemList = js.Array[DeviceOperatingSystem]
+
+type DeviceType = java.lang.String
+
+type DeviceTypeList = js.Array[DeviceType]
+
+type DeviceUserAgent = java.lang.String
+
+type DeviceUserAgentList = js.Array[DeviceUserAgent]
+
 type DirectoryId = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.VERIFIED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type DnsRecordVerificationStatus = _DnsRecordVerificationStatus | java.lang.String
+
+type DnsRecords = js.Array[DnsRecord]
 
 type DomainName = java.lang.String
 
-type Domains = js.Array[typings.awsSdk.workmailMod.Domain]
+type Domains = js.Array[Domain]
 
 type EmailAddress = java.lang.String
+
+type EntityIdentifier = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
@@ -46,9 +87,11 @@ type EmailAddress = java.lang.String
   - typings.awsSdk.awsSdkStrings.DELETED
   - java.lang.String
 */
-type EntityState = typings.awsSdk.workmailMod._EntityState | java.lang.String
+type EntityState = _EntityState | java.lang.String
 
-type FolderConfigurations = js.Array[typings.awsSdk.workmailMod.FolderConfiguration]
+type ExternalUserName = java.lang.String
+
+type FolderConfigurations = js.Array[FolderConfiguration]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INBOX
@@ -58,11 +101,11 @@ type FolderConfigurations = js.Array[typings.awsSdk.workmailMod.FolderConfigurat
   - typings.awsSdk.awsSdkStrings.JUNK_EMAIL
   - java.lang.String
 */
-type FolderName = typings.awsSdk.workmailMod._FolderName | java.lang.String
+type FolderName = _FolderName | java.lang.String
 
 type GroupName = java.lang.String
 
-type Groups = js.Array[typings.awsSdk.workmailMod.Group]
+type Groups = js.Array[Group]
 
 type HostedZoneId = java.lang.String
 
@@ -72,11 +115,17 @@ type IpAddress = java.lang.String
 
 type IpRange = java.lang.String
 
-type IpRangeList = js.Array[typings.awsSdk.workmailMod.IpRange]
+type IpRangeList = js.Array[IpRange]
 
-type Jobs = js.Array[typings.awsSdk.workmailMod.MailboxExportJob]
+type Jobs = js.Array[MailboxExportJob]
 
 type KmsKeyArn = java.lang.String
+
+type LambdaArn = java.lang.String
+
+type LogGroupArn = java.lang.String
+
+type MailDomains = js.Array[MailDomainSummary]
 
 type MailboxExportErrorInfo = java.lang.String
 
@@ -89,22 +138,41 @@ type MailboxExportJobId = java.lang.String
   - typings.awsSdk.awsSdkStrings.CANCELLED
   - java.lang.String
 */
-type MailboxExportJobState = typings.awsSdk.workmailMod._MailboxExportJobState | java.lang.String
+type MailboxExportJobState = _MailboxExportJobState | java.lang.String
 
-type MailboxQuota = scala.Double
+type MailboxQuota = Double
 
-type MailboxSize = scala.Double
+type MailboxSize = Double
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GROUP
   - typings.awsSdk.awsSdkStrings.USER
   - java.lang.String
 */
-type MemberType = typings.awsSdk.workmailMod._MemberType | java.lang.String
+type MemberType = _MemberType | java.lang.String
 
-type Members = js.Array[typings.awsSdk.workmailMod.Member]
+type Members = js.Array[Member]
+
+type MobileDeviceAccessMatchedRuleList = js.Array[MobileDeviceAccessMatchedRule]
+
+type MobileDeviceAccessOverridesList = js.Array[MobileDeviceAccessOverride]
+
+type MobileDeviceAccessRuleDescription = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALLOW
+  - typings.awsSdk.awsSdkStrings.DENY
+  - java.lang.String
+*/
+type MobileDeviceAccessRuleEffect = _MobileDeviceAccessRuleEffect | java.lang.String
+
+type MobileDeviceAccessRuleId = java.lang.String
+
+type MobileDeviceAccessRuleName = java.lang.String
+
+type MobileDeviceAccessRulesList = js.Array[MobileDeviceAccessRule]
 
 type NextToken = java.lang.String
 
@@ -112,11 +180,11 @@ type OrganizationId = java.lang.String
 
 type OrganizationName = java.lang.String
 
-type OrganizationSummaries = js.Array[typings.awsSdk.workmailMod.OrganizationSummary]
+type OrganizationSummaries = js.Array[OrganizationSummary]
 
 type Password = java.lang.String
 
-type Percentage = scala.Double
+type Percentage = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FULL_ACCESS
@@ -124,15 +192,15 @@ type Percentage = scala.Double
   - typings.awsSdk.awsSdkStrings.SEND_ON_BEHALF
   - java.lang.String
 */
-type PermissionType = typings.awsSdk.workmailMod._PermissionType | java.lang.String
+type PermissionType = _PermissionType | java.lang.String
 
-type PermissionValues = js.Array[typings.awsSdk.workmailMod.PermissionType]
+type PermissionValues = js.Array[PermissionType]
 
-type Permissions = js.Array[typings.awsSdk.workmailMod.Permission]
+type Permissions = js.Array[Permission]
 
 type PolicyDescription = java.lang.String
 
-type ResourceDelegates = js.Array[typings.awsSdk.workmailMod.Delegate]
+type ResourceDelegates = js.Array[Delegate]
 
 type ResourceId = java.lang.String
 
@@ -143,9 +211,9 @@ type ResourceName = java.lang.String
   - typings.awsSdk.awsSdkStrings.EQUIPMENT
   - java.lang.String
 */
-type ResourceType = typings.awsSdk.workmailMod._ResourceType | java.lang.String
+type ResourceType = _ResourceType | java.lang.String
 
-type Resources = js.Array[typings.awsSdk.workmailMod.Resource]
+type Resources = js.Array[Resource]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -153,9 +221,9 @@ type Resources = js.Array[typings.awsSdk.workmailMod.Resource]
   - typings.awsSdk.awsSdkStrings.PERMANENTLY_DELETE
   - java.lang.String
 */
-type RetentionAction = typings.awsSdk.workmailMod._RetentionAction | java.lang.String
+type RetentionAction = _RetentionAction | java.lang.String
 
-type RetentionPeriod = scala.Double
+type RetentionPeriod = Double
 
 type RoleArn = java.lang.String
 
@@ -169,15 +237,17 @@ type String = java.lang.String
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.workmailMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.workmailMod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
-type UserIdList = js.Array[typings.awsSdk.workmailMod.WorkMailIdentifier]
+type Url = java.lang.String
+
+type UserIdList = js.Array[WorkMailIdentifier]
 
 type UserName = java.lang.String
 
@@ -187,9 +257,11 @@ type UserName = java.lang.String
   - typings.awsSdk.awsSdkStrings.SYSTEM_USER
   - java.lang.String
 */
-type UserRole = typings.awsSdk.workmailMod._UserRole | java.lang.String
+type UserRole = _UserRole | java.lang.String
 
-type Users = js.Array[typings.awsSdk.workmailMod.User]
+type Users = js.Array[User]
+
+type WorkMailDomainName = java.lang.String
 
 type WorkMailIdentifier = java.lang.String
 
@@ -198,4 +270,4 @@ type WorkMailIdentifier = java.lang.String
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.workmailMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

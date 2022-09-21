@@ -22,6 +22,6 @@ object GoogleCloudRecommendationengineV1beta1CatalogInlineSource {
     
     inline def setCatalogItemsUndefined: Self = StObject.set(x, "catalogItems", js.undefined)
     
-    inline def setCatalogItemsVarargs(value: GoogleCloudRecommendationengineV1beta1CatalogItem*): Self = StObject.set(x, "catalogItems", js.Array(value :_*))
+    inline def setCatalogItemsVarargs(value: GoogleCloudRecommendationengineV1beta1CatalogItem*): Self = StObject.set(x, "catalogItems", js.Array(value*))
   }
 }

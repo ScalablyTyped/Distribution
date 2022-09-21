@@ -10,10 +10,10 @@ Conceal a string with asterisks
 | ------------------ | :-------------: |
 | Full name          | coverup |
 | Keywords           | coverup, conceal, concealed, mask, masked, obfuscate, obfuscated, hide, hidden, password, asterisk, asterisks, pad |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 9975 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10297.333333333334 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/jsonmaur/coverup#readme)

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs an empty link that does not connect any nodes.
   */
-class Link () extends Part {
+open class Link () extends Part {
   
   /**
     * Add a point at the end of the route; this may only be called within an override of computePoints.

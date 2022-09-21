@@ -1,7 +1,7 @@
 
 # Scala.js typings for xpath
 
-Typings are for version 0.0.27
+Typings are for version 0.0.32
 
 ## Library description:
 DOM 3 XPath implemention and helper for node.js.
@@ -10,10 +10,10 @@ DOM 3 XPath implemention and helper for node.js.
 | ------------------ | :-------------: |
 | Full name          | xpath |
 | Keywords           | xpath, xml |
-| # releases         | 6 |
-| # dependents       | 429 |
-| # downloads        | 30260403 |
-| # stars            | 29 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 4862032.666666667 |
+| # stars            | 190.0 |
 
 ## Links
 - [Homepage](https://github.com/goto100/xpath#readme)

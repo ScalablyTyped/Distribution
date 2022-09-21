@@ -33,6 +33,6 @@ object ListRoomMembershipsResponse {
     
     inline def setRoomMembershipsUndefined: Self = StObject.set(x, "RoomMemberships", js.undefined)
     
-    inline def setRoomMembershipsVarargs(value: RoomMembership*): Self = StObject.set(x, "RoomMemberships", js.Array(value :_*))
+    inline def setRoomMembershipsVarargs(value: RoomMembership*): Self = StObject.set(x, "RoomMemberships", js.Array(value*))
   }
 }

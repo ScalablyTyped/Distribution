@@ -11,6 +11,8 @@ trait NamedData
   
   /**
     * Provide a placeholder name and bind data at runtime.
+    *
+    * New data may change the layout but Vega does not always resize the chart. To update the layout when the data updates, set [autosize](https://vega.github.io/vega-lite/docs/size.html#autosize) or explicitly use [view.resize](https://vega.github.io/vega/docs/api/view/#view_resize).
     */
   @JSName("name")
   var name_NamedData: String

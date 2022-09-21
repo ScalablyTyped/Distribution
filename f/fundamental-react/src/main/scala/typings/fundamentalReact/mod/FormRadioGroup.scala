@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fundamental-react", "FormRadioGroup")
 @js.native
-class FormRadioGroup () extends default
+open class FormRadioGroup () extends default

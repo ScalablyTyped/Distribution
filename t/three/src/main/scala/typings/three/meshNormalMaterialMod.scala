@@ -1,8 +1,8 @@
 package typings.three
 
-import typings.three.constantsMod.NormalMapTypes
 import typings.three.materialMod.Material
 import typings.three.materialMod.MaterialParameters
+import typings.three.srcConstantsMod.NormalMapTypes
 import typings.three.textureMod.Texture
 import typings.three.vector2Mod.Vector2
 import org.scalablytyped.runtime.StObject
@@ -13,74 +13,65 @@ object meshNormalMaterialMod {
   
   @JSImport("three/src/materials/MeshNormalMaterial", "MeshNormalMaterial")
   @js.native
-  class MeshNormalMaterial () extends Material {
+  open class MeshNormalMaterial () extends Material {
     def this(parameters: MeshNormalMaterialParameters) = this()
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var bumpMap: Texture | Null = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var bumpScale: Double = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var displacementBias: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var displacementMap: Texture | Null = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var displacementScale: Double = js.native
     
     /**
-    	 * @default false
-    	 */
-    var morphNormals: Boolean = js.native
+      * Define whether the material is rendered with flat shading. Default is false.
+      * @default false
+      */
+    var flatShading: Boolean = js.native
     
     /**
-    	 * @default false
-    	 */
-    var morphTargets: Boolean = js.native
-    
-    /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var normalMap: Texture | Null = js.native
     
     /**
-    	 * @default THREE.TangentSpaceNormalMap
-    	 */
+      * @default THREE.TangentSpaceNormalMap
+      */
     var normalMapType: NormalMapTypes = js.native
     
     /**
-    	 * @default new THREE.Vector2( 1, 1 )
-    	 */
+      * @default new THREE.Vector2( 1, 1 )
+      */
     var normalScale: Vector2 = js.native
     
     def setValues(parameters: MeshNormalMaterialParameters): Unit = js.native
     
     /**
-    	 * @default false
-    	 */
-    var skinning: Boolean = js.native
-    
-    /**
-    	 * @default false
-    	 */
+      * @default false
+      */
     var wireframe: Boolean = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var wireframeLinewidth: Double = js.native
   }
   
@@ -98,17 +89,13 @@ object meshNormalMaterialMod {
     
     var displacementScale: js.UndefOr[Double] = js.undefined
     
-    var morphNormals: js.UndefOr[Boolean] = js.undefined
-    
-    var morphTargets: js.UndefOr[Boolean] = js.undefined
+    var flatShading: js.UndefOr[Boolean] = js.undefined
     
     var normalMap: js.UndefOr[Texture | Null] = js.undefined
     
     var normalMapType: js.UndefOr[NormalMapTypes] = js.undefined
     
     var normalScale: js.UndefOr[Vector2] = js.undefined
-    
-    var skinning: js.UndefOr[Boolean] = js.undefined
     
     var wireframe: js.UndefOr[Boolean] = js.undefined
     
@@ -147,13 +134,9 @@ object meshNormalMaterialMod {
       
       inline def setDisplacementScaleUndefined: Self = StObject.set(x, "displacementScale", js.undefined)
       
-      inline def setMorphNormals(value: Boolean): Self = StObject.set(x, "morphNormals", value.asInstanceOf[js.Any])
+      inline def setFlatShading(value: Boolean): Self = StObject.set(x, "flatShading", value.asInstanceOf[js.Any])
       
-      inline def setMorphNormalsUndefined: Self = StObject.set(x, "morphNormals", js.undefined)
-      
-      inline def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
-      
-      inline def setMorphTargetsUndefined: Self = StObject.set(x, "morphTargets", js.undefined)
+      inline def setFlatShadingUndefined: Self = StObject.set(x, "flatShading", js.undefined)
       
       inline def setNormalMap(value: Texture): Self = StObject.set(x, "normalMap", value.asInstanceOf[js.Any])
       
@@ -168,10 +151,6 @@ object meshNormalMaterialMod {
       inline def setNormalScale(value: Vector2): Self = StObject.set(x, "normalScale", value.asInstanceOf[js.Any])
       
       inline def setNormalScaleUndefined: Self = StObject.set(x, "normalScale", js.undefined)
-      
-      inline def setSkinning(value: Boolean): Self = StObject.set(x, "skinning", value.asInstanceOf[js.Any])
-      
-      inline def setSkinningUndefined: Self = StObject.set(x, "skinning", js.undefined)
       
       inline def setWireframe(value: Boolean): Self = StObject.set(x, "wireframe", value.asInstanceOf[js.Any])
       

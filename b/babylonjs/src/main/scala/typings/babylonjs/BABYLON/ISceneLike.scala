@@ -6,29 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ISceneLike extends StObject {
   
-  def _addPendingData(data: js.Any): Unit
-  
-  def _removePendingData(data: js.Any): Unit
+  def addPendingData(data: Any): Unit
   
   var offlineProvider: IOfflineProvider
+  
+  def removePendingData(data: Any): Unit
 }
 object ISceneLike {
   
-  inline def apply(
-    _addPendingData: js.Any => Unit,
-    _removePendingData: js.Any => Unit,
-    offlineProvider: IOfflineProvider
-  ): ISceneLike = {
-    val __obj = js.Dynamic.literal(_addPendingData = js.Any.fromFunction1(_addPendingData), _removePendingData = js.Any.fromFunction1(_removePendingData), offlineProvider = offlineProvider.asInstanceOf[js.Any])
+  inline def apply(addPendingData: Any => Unit, offlineProvider: IOfflineProvider, removePendingData: Any => Unit): ISceneLike = {
+    val __obj = js.Dynamic.literal(addPendingData = js.Any.fromFunction1(addPendingData), offlineProvider = offlineProvider.asInstanceOf[js.Any], removePendingData = js.Any.fromFunction1(removePendingData))
     __obj.asInstanceOf[ISceneLike]
   }
   
   extension [Self <: ISceneLike](x: Self) {
     
+    inline def setAddPendingData(value: Any => Unit): Self = StObject.set(x, "addPendingData", js.Any.fromFunction1(value))
+    
     inline def setOfflineProvider(value: IOfflineProvider): Self = StObject.set(x, "offlineProvider", value.asInstanceOf[js.Any])
     
-    inline def set_addPendingData(value: js.Any => Unit): Self = StObject.set(x, "_addPendingData", js.Any.fromFunction1(value))
-    
-    inline def set_removePendingData(value: js.Any => Unit): Self = StObject.set(x, "_removePendingData", js.Any.fromFunction1(value))
+    inline def setRemovePendingData(value: Any => Unit): Self = StObject.set(x, "removePendingData", js.Any.fromFunction1(value))
   }
 }

@@ -20,7 +20,7 @@ trait DropDownTree
   
   def focus(): Unit = js.native
   
-  def items(): js.Any = js.native
+  def items(): Any = js.native
   
   def open(): Unit = js.native
   
@@ -46,9 +46,9 @@ trait DropDownTree
   
   var treeview: TreeView = js.native
   
-  def value(): js.Any = js.native
+  def value(): Any = js.native
   def value(value: String): Unit = js.native
-  def value(value: js.Any): Unit = js.native
+  def value(value: Any): Unit = js.native
   
   var wrapper: JQuery = js.native
 }

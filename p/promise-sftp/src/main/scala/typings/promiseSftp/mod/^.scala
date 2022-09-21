@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("promise-sftp", JSImport.Namespace)
 @js.native
-class ^ ()
+open class ^ ()
   extends StObject
      with PromiseSftp

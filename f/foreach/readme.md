@@ -10,13 +10,13 @@ foreach component + npm package
 | ------------------ | :-------------: |
 | Full name          | foreach |
 | Keywords           | shim, Array.prototype.forEach, forEach, Array#forEach, each |
-| # releases         | 0 |
-| # dependents       | 107 |
-| # downloads        | 141908318 |
-| # stars            | 5 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.3063482E7 |
+| # stars            | 23.0 |
 
 ## Links
-- [Homepage](https://github.com/manuelstofer/foreach)
+- [Homepage](https://github.com/manuelstofer/foreach#readme)
 - [Bugs](https://github.com/manuelstofer/foreach/issues)
 - [Repository](https://github.com/manuelstofer/foreach)
 - [Npm](https://www.npmjs.com/package/foreach)

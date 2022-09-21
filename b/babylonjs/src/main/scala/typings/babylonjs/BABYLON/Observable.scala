@@ -7,15 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Observable[T] extends StObject {
   
-  /* private */ var _deferUnregister: js.Any = js.native
+  /**
+    * Internal observable-based coroutine scheduler instance.
+    */
+  var _coroutineScheduler: js.UndefOr[CoroutineScheduler[Unit]] = js.native
   
-  /* private */ var _eventState: js.Any = js.native
+  /**
+    * Internal disposal method for observable-based coroutine scheduler instance.
+    */
+  var _coroutineSchedulerDispose: js.UndefOr[js.Function0[Unit]] = js.native
   
-  /* private */ var _observers: js.Any = js.native
+  /**
+    * @param observer
+    * @hidden
+    */
+  def _deferUnregister(observer: Observer[T]): Unit = js.native
   
-  /* private */ var _onObserverAdded: js.Any = js.native
+  /**
+    * @hidden
+    */
+  var _eventState: EventState = js.native
   
-  /* private */ var _remove: js.Any = js.native
+  /* private */ var _observers: Any = js.native
+  
+  /* private */ var _onObserverAdded: Any = js.native
+  
+  /* private */ var _remove: Any = js.native
   
   /**
     * Create a new Observer with the specified callback
@@ -37,13 +54,13 @@ trait Observable[T] extends StObject {
     callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
     mask: Double,
     insertFirst: Boolean,
-    scope: js.Any
+    scope: Any
   ): Nullable[Observer[T]] = js.native
   def add(
     callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
     mask: Double,
     insertFirst: Boolean,
-    scope: js.Any,
+    scope: Any,
     unregisterOnFirstCall: Boolean
   ): Nullable[Observer[T]] = js.native
   def add(
@@ -57,13 +74,13 @@ trait Observable[T] extends StObject {
     callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
     mask: Double,
     insertFirst: Unit,
-    scope: js.Any
+    scope: Any
   ): Nullable[Observer[T]] = js.native
   def add(
     callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
     mask: Double,
     insertFirst: Unit,
-    scope: js.Any,
+    scope: Any,
     unregisterOnFirstCall: Boolean
   ): Nullable[Observer[T]] = js.native
   def add(
@@ -82,13 +99,13 @@ trait Observable[T] extends StObject {
     callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
     mask: Unit,
     insertFirst: Boolean,
-    scope: js.Any
+    scope: Any
   ): Nullable[Observer[T]] = js.native
   def add(
     callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
     mask: Unit,
     insertFirst: Boolean,
-    scope: js.Any,
+    scope: Any,
     unregisterOnFirstCall: Boolean
   ): Nullable[Observer[T]] = js.native
   def add(
@@ -102,13 +119,13 @@ trait Observable[T] extends StObject {
     callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
     mask: Unit,
     insertFirst: Unit,
-    scope: js.Any
+    scope: Any
   ): Nullable[Observer[T]] = js.native
   def add(
     callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit],
     mask: Unit,
     insertFirst: Unit,
-    scope: js.Any,
+    scope: Any,
     unregisterOnFirstCall: Boolean
   ): Nullable[Observer[T]] = js.native
   def add(
@@ -127,6 +144,11 @@ trait Observable[T] extends StObject {
   def addOnce(callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit]): Nullable[Observer[T]] = js.native
   
   /**
+    * Cancels all coroutines currently running on this observable
+    */
+  def cancelAllCoroutines(): Unit = js.native
+  
+  /**
     * Clear the list of observers
     */
   def clear(): Unit = js.native
@@ -140,7 +162,7 @@ trait Observable[T] extends StObject {
   /**
     * Does this observable handles observer registered with a given mask
     * @param mask defines the mask to be tested
-    * @return whether or not one observer registered with the given mask is handeled
+    * @returns whether or not one observer registered with the given mask is handled
     **/
   def hasSpecificMask(): Boolean = js.native
   def hasSpecificMask(mask: Double): Boolean = js.native
@@ -178,20 +200,20 @@ trait Observable[T] extends StObject {
     */
   def notifyObservers(eventData: T): Boolean = js.native
   def notifyObservers(eventData: T, mask: Double): Boolean = js.native
-  def notifyObservers(eventData: T, mask: Double, target: js.Any): Boolean = js.native
-  def notifyObservers(eventData: T, mask: Double, target: js.Any, currentTarget: js.Any): Boolean = js.native
-  def notifyObservers(eventData: T, mask: Double, target: js.Any, currentTarget: js.Any, userInfo: js.Any): Boolean = js.native
-  def notifyObservers(eventData: T, mask: Double, target: js.Any, currentTarget: Unit, userInfo: js.Any): Boolean = js.native
-  def notifyObservers(eventData: T, mask: Double, target: Unit, currentTarget: js.Any): Boolean = js.native
-  def notifyObservers(eventData: T, mask: Double, target: Unit, currentTarget: js.Any, userInfo: js.Any): Boolean = js.native
-  def notifyObservers(eventData: T, mask: Double, target: Unit, currentTarget: Unit, userInfo: js.Any): Boolean = js.native
-  def notifyObservers(eventData: T, mask: Unit, target: js.Any): Boolean = js.native
-  def notifyObservers(eventData: T, mask: Unit, target: js.Any, currentTarget: js.Any): Boolean = js.native
-  def notifyObservers(eventData: T, mask: Unit, target: js.Any, currentTarget: js.Any, userInfo: js.Any): Boolean = js.native
-  def notifyObservers(eventData: T, mask: Unit, target: js.Any, currentTarget: Unit, userInfo: js.Any): Boolean = js.native
-  def notifyObservers(eventData: T, mask: Unit, target: Unit, currentTarget: js.Any): Boolean = js.native
-  def notifyObservers(eventData: T, mask: Unit, target: Unit, currentTarget: js.Any, userInfo: js.Any): Boolean = js.native
-  def notifyObservers(eventData: T, mask: Unit, target: Unit, currentTarget: Unit, userInfo: js.Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Double, target: Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Double, target: Any, currentTarget: Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Double, target: Any, currentTarget: Any, userInfo: Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Double, target: Any, currentTarget: Unit, userInfo: Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Double, target: Unit, currentTarget: Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Double, target: Unit, currentTarget: Any, userInfo: Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Double, target: Unit, currentTarget: Unit, userInfo: Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Unit, target: Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Unit, target: Any, currentTarget: Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Unit, target: Any, currentTarget: Any, userInfo: Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Unit, target: Any, currentTarget: Unit, userInfo: Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Unit, target: Unit, currentTarget: Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Unit, target: Unit, currentTarget: Any, userInfo: Any): Boolean = js.native
+  def notifyObservers(eventData: T, mask: Unit, target: Unit, currentTarget: Unit, userInfo: Any): Boolean = js.native
   
   /**
     * Calling this will execute each callback, expecting it to be a promise or return a value.
@@ -209,20 +231,20 @@ trait Observable[T] extends StObject {
     */
   def notifyObserversWithPromise(eventData: T): js.Promise[T] = js.native
   def notifyObserversWithPromise(eventData: T, mask: Double): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: Double, target: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: Double, target: js.Any, currentTarget: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: Double, target: js.Any, currentTarget: js.Any, userInfo: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: Double, target: js.Any, currentTarget: Unit, userInfo: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: Double, target: Unit, currentTarget: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: Double, target: Unit, currentTarget: js.Any, userInfo: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: Double, target: Unit, currentTarget: Unit, userInfo: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: Unit, target: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: Unit, target: js.Any, currentTarget: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: Unit, target: js.Any, currentTarget: js.Any, userInfo: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: Unit, target: js.Any, currentTarget: Unit, userInfo: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: Unit, target: Unit, currentTarget: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: Unit, target: Unit, currentTarget: js.Any, userInfo: js.Any): js.Promise[T] = js.native
-  def notifyObserversWithPromise(eventData: T, mask: Unit, target: Unit, currentTarget: Unit, userInfo: js.Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Double, target: Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Double, target: Any, currentTarget: Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Double, target: Any, currentTarget: Any, userInfo: Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Double, target: Any, currentTarget: Unit, userInfo: Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Double, target: Unit, currentTarget: Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Double, target: Unit, currentTarget: Any, userInfo: Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Double, target: Unit, currentTarget: Unit, userInfo: Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Unit, target: Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Unit, target: Any, currentTarget: Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Unit, target: Any, currentTarget: Any, userInfo: Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Unit, target: Any, currentTarget: Unit, userInfo: Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Unit, target: Unit, currentTarget: Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Unit, target: Unit, currentTarget: Any, userInfo: Any): js.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: Unit, target: Unit, currentTarget: Unit, userInfo: Any): js.Promise[T] = js.native
   
   /**
     * Gets the list of observers
@@ -243,5 +265,12 @@ trait Observable[T] extends StObject {
     * @returns false if it doesn't belong to this Observable
     */
   def removeCallback(callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit]): Boolean = js.native
-  def removeCallback(callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit], scope: js.Any): Boolean = js.native
+  def removeCallback(callback: js.Function2[/* eventData */ T, /* eventState */ EventState, Unit], scope: Any): Boolean = js.native
+  
+  /**
+    * Runs a coroutine asynchronously on this observable
+    * @param coroutine the iterator resulting from having started the coroutine
+    * @returns a promise which will be resolved when the coroutine finishes or rejected if the coroutine is cancelled
+    */
+  def runCoroutineAsync(coroutine: AsyncCoroutine[Unit]): js.Promise[Unit] = js.native
 }

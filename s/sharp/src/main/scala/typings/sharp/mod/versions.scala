@@ -11,6 +11,11 @@ object versions {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("sharp", "versions.avif")
+  @js.native
+  def avif: js.UndefOr[String] = js.native
+  inline def avif_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("avif")(x.asInstanceOf[js.Any])
+  
   @JSImport("sharp", "versions.cairo")
   @js.native
   def cairo: js.UndefOr[String] = js.native
@@ -70,6 +75,11 @@ object versions {
   @js.native
   def harfbuzz: js.UndefOr[String] = js.native
   inline def harfbuzz_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("harfbuzz")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sharp", "versions.heif")
+  @js.native
+  def heif: js.UndefOr[String] = js.native
+  inline def heif_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heif")(x.asInstanceOf[js.Any])
   
   @JSImport("sharp", "versions.jpeg")
   @js.native

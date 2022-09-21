@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Bar extends StObject {
   
-  var bar: js.UndefOr[Borderradius] = js.undefined
+  var bar: js.UndefOr[BorderLeft] = js.undefined
   
-  var handle: js.UndefOr[Borderradius] = js.undefined
+  var handle: js.UndefOr[BorderLeft] = js.undefined
 }
 object Bar {
   
@@ -19,11 +19,11 @@ object Bar {
   
   extension [Self <: Bar](x: Self) {
     
-    inline def setBar(value: Borderradius): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
+    inline def setBar(value: BorderLeft): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
     inline def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
     
-    inline def setHandle(value: Borderradius): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: BorderLeft): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
   }

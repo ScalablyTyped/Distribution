@@ -5,15 +5,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Third party identity principal.
-  */
 trait SchemaThirdPartyPrincipal extends StObject {
   
   /**
     * Metadata about third party identity.
     */
-  var thirdPartyClaims: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var thirdPartyClaims: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
 }
 object SchemaThirdPartyPrincipal {
   
@@ -24,7 +21,9 @@ object SchemaThirdPartyPrincipal {
   
   extension [Self <: SchemaThirdPartyPrincipal](x: Self) {
     
-    inline def setThirdPartyClaims(value: StringDictionary[js.Any]): Self = StObject.set(x, "thirdPartyClaims", value.asInstanceOf[js.Any])
+    inline def setThirdPartyClaims(value: StringDictionary[Any]): Self = StObject.set(x, "thirdPartyClaims", value.asInstanceOf[js.Any])
+    
+    inline def setThirdPartyClaimsNull: Self = StObject.set(x, "thirdPartyClaims", null)
     
     inline def setThirdPartyClaimsUndefined: Self = StObject.set(x, "thirdPartyClaims", js.undefined)
   }

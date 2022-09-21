@@ -2,7 +2,6 @@ package typings.cloudConfigClient
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.httpMod.Agent
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object mod {
   @JSImport("cloud-config-client", "Config")
   @js.native
   abstract class Config protected () extends StObject {
-    def this(data: ConfigData, context: StringDictionary[js.Any]) = this()
+    def this(data: ConfigData, context: StringDictionary[Any]) = this()
     
     def forEach(callback: js.Function2[/* property */ String, /* value */ String, Unit]): Unit = js.native
     def forEach(
@@ -24,13 +23,13 @@ object mod {
       includeOverridden: Boolean
     ): Unit = js.native
     
-    def get(keyParts: String): js.Any = js.native
+    def get(keyParts: String): Any = js.native
     
-    def properties(): StringDictionary[js.Any] = js.native
+    var properties: StringDictionary[Any] = js.native
     
-    def raw(): StringDictionary[js.Any] = js.native
+    var raw: StringDictionary[Any] = js.native
     
-    def toObject(): StringDictionary[js.Any] = js.native
+    def toObject(): StringDictionary[Any] = js.native
     
     def toString(spaces: Double): String = js.native
   }
@@ -40,8 +39,10 @@ object mod {
   
   trait Auth extends StObject {
     
+    /** user password */
     var pass: String
     
+    /** user id */
     var user: String
   }
   object Auth {
@@ -61,14 +62,19 @@ object mod {
   
   trait ConfigData extends StObject {
     
+    /** environment label */
     var label: String
     
+    /** application name */
     var name: String
     
+    /** ist of profiles included */
     var profiles: js.Array[String]
     
+    /** properties included for application, sorted by more priority */
     var propertySources: js.Array[ConfigFile]
     
+    /** commit hash of properties */
     var version: String
   }
   object ConfigData {
@@ -92,11 +98,11 @@ object mod {
       
       inline def setProfiles(value: js.Array[String]): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
       
-      inline def setProfilesVarargs(value: String*): Self = StObject.set(x, "profiles", js.Array(value :_*))
+      inline def setProfilesVarargs(value: String*): Self = StObject.set(x, "profiles", js.Array(value*))
       
       inline def setPropertySources(value: js.Array[ConfigFile]): Self = StObject.set(x, "propertySources", value.asInstanceOf[js.Any])
       
-      inline def setPropertySourcesVarargs(value: ConfigFile*): Self = StObject.set(x, "propertySources", js.Array(value :_*))
+      inline def setPropertySourcesVarargs(value: ConfigFile*): Self = StObject.set(x, "propertySources", js.Array(value*))
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
@@ -104,8 +110,10 @@ object mod {
   
   trait ConfigFile extends StObject {
     
+    /** file name */
     var name: String
     
+    /** configuration properties */
     var source: ConfigSource
   }
   object ConfigFile {
@@ -123,29 +131,40 @@ object mod {
     }
   }
   
-  type ConfigSource = StringDictionary[js.Any]
+  type ConfigSource = StringDictionary[Any]
   
-  type LoadCallback = js.Function2[/* error */ Error, /* config */ js.UndefOr[Config], Unit]
+  type LoadCallback = js.Function2[/* error */ js.Error, /* config */ js.UndefOr[Config], Unit]
   
   trait Options extends StObject {
     
+    /** Agent for the request */
     var agent: js.UndefOr[Agent | typings.node.httpsMod.Agent] = js.undefined
     
     /** @deprecated use name */
     var application: js.UndefOr[String] = js.undefined
     
+    /** auth configuration */
     var auth: js.UndefOr[Auth] = js.undefined
     
-    var context: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    /** Context for substitution */
+    var context: js.UndefOr[StringDictionary[Any]] = js.undefined
     
+    /** spring config service url */
     var endpoint: js.UndefOr[String] = js.undefined
     
+    /** Additional headers */
+    var headers: js.UndefOr[StringDictionary[Any]] = js.undefined
+    
+    /** environment id */
     var label: js.UndefOr[String] = js.undefined
     
+    /** application id */
     var name: String
     
+    /** application profile(s) */
     var profiles: js.UndefOr[String | js.Array[String]] = js.undefined
     
+    /** if false accepts self-signed certificates */
     var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
@@ -169,13 +188,17 @@ object mod {
       
       inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      inline def setContext(value: StringDictionary[js.Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: StringDictionary[Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
       inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
       inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      
+      inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -187,7 +210,7 @@ object mod {
       
       inline def setProfilesUndefined: Self = StObject.set(x, "profiles", js.undefined)
       
-      inline def setProfilesVarargs(value: String*): Self = StObject.set(x, "profiles", js.Array(value :_*))
+      inline def setProfilesVarargs(value: String*): Self = StObject.set(x, "profiles", js.Array(value*))
       
       inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
       

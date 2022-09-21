@@ -49,7 +49,7 @@ trait ModeBarButton extends StObject {
   var toggle: js.UndefOr[Boolean] = js.undefined
   
   /** initial 'attr' value, can be a function of gd */
-  var `val`: js.UndefOr[js.Any] = js.undefined
+  var `val`: js.UndefOr[Any] = js.undefined
 }
 object ModeBarButton {
   
@@ -85,7 +85,7 @@ object ModeBarButton {
     
     inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     
-    inline def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
     inline def setValUndefined: Self = StObject.set(x, "val", js.undefined)
   }

@@ -15,10 +15,10 @@ object mod {
   inline def parse(file: String): Object = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(file.asInstanceOf[js.Any]).asInstanceOf[Object]
   inline def parse(file: String, fileLoc: String): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(file.asInstanceOf[js.Any], fileLoc.asInstanceOf[js.Any])).asInstanceOf[Object]
   
-  inline def stringify(json: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(json.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def stringify(json: js.Any, noHeader: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(json.asInstanceOf[js.Any], noHeader.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(json: js.Any, noHeader: Boolean, enableVersions: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(json.asInstanceOf[js.Any], noHeader.asInstanceOf[js.Any], enableVersions.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(json: js.Any, noHeader: Unit, enableVersions: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(json.asInstanceOf[js.Any], noHeader.asInstanceOf[js.Any], enableVersions.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(json: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(json.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(json: Any, noHeader: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(json.asInstanceOf[js.Any], noHeader.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(json: Any, noHeader: Boolean, enableVersions: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(json.asInstanceOf[js.Any], noHeader.asInstanceOf[js.Any], enableVersions.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(json: Any, noHeader: Unit, enableVersions: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(json.asInstanceOf[js.Any], noHeader.asInstanceOf[js.Any], enableVersions.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type Dependency = StringDictionary[String]
   

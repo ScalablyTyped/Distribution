@@ -2,9 +2,7 @@ package typings.ndnJs
 
 import typings.ndnJs.blobMod.Blob
 import typings.ndnJs.nameMod.Name.Component
-import typings.node.Buffer
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,8 +45,8 @@ object nameMod {
   
   @JSImport("ndn-js/name", "Name")
   @js.native
-  class Name () extends StObject {
-    def this(components: js.Array[Component | Uint8Array]) = this()
+  open class Name () extends StObject {
+    def this(components: js.Array[Component | js.typedarray.Uint8Array]) = this()
     def this(name: String) = this()
     def this(name: Name) = this()
     
@@ -62,18 +60,18 @@ object nameMod {
     def append(value: js.Array[Double], `type`: Unit, otherTypeCode: Double): Name = js.native
     def append(value: js.Array[Double], `type`: ComponentType): Name = js.native
     def append(value: js.Array[Double], `type`: ComponentType, otherTypeCode: Double): Name = js.native
+    def append(value: js.typedarray.ArrayBuffer): Name = js.native
+    def append(value: js.typedarray.ArrayBuffer, `type`: Unit, otherTypeCode: Double): Name = js.native
+    def append(value: js.typedarray.ArrayBuffer, `type`: ComponentType): Name = js.native
+    def append(value: js.typedarray.ArrayBuffer, `type`: ComponentType, otherTypeCode: Double): Name = js.native
+    def append(value: js.typedarray.Uint8Array): Name = js.native
+    def append(value: js.typedarray.Uint8Array, `type`: Unit, otherTypeCode: Double): Name = js.native
+    def append(value: js.typedarray.Uint8Array, `type`: ComponentType): Name = js.native
+    def append(value: js.typedarray.Uint8Array, `type`: ComponentType, otherTypeCode: Double): Name = js.native
     def append(value: Blob): Name = js.native
     def append(value: Blob, `type`: Unit, otherTypeCode: Double): Name = js.native
     def append(value: Blob, `type`: ComponentType): Name = js.native
     def append(value: Blob, `type`: ComponentType, otherTypeCode: Double): Name = js.native
-    def append(value: ArrayBuffer): Name = js.native
-    def append(value: ArrayBuffer, `type`: Unit, otherTypeCode: Double): Name = js.native
-    def append(value: ArrayBuffer, `type`: ComponentType): Name = js.native
-    def append(value: ArrayBuffer, `type`: ComponentType, otherTypeCode: Double): Name = js.native
-    def append(value: Uint8Array): Name = js.native
-    def append(value: Uint8Array, `type`: Unit, otherTypeCode: Double): Name = js.native
-    def append(value: Uint8Array, `type`: ComponentType): Name = js.native
-    def append(value: Uint8Array, `type`: ComponentType, otherTypeCode: Double): Name = js.native
     
     def appendImplicitSha256Digest(digest: Blob): Name = js.native
     
@@ -143,31 +141,31 @@ object nameMod {
     
     @JSImport("ndn-js/name", "Name.Component")
     @js.native
-    class Component () extends StObject {
+    open class Component () extends StObject {
       def this(component: Component) = this()
       def this(value: String) = this()
       def this(value: js.Array[Double]) = this()
+      def this(value: js.typedarray.ArrayBuffer) = this()
+      def this(value: js.typedarray.Uint8Array) = this()
       def this(value: Blob) = this()
-      def this(value: ArrayBuffer) = this()
-      def this(value: Uint8Array) = this()
       def this(value: String, `type`: ComponentType) = this()
       def this(value: js.Array[Double], `type`: ComponentType) = this()
+      def this(value: js.typedarray.ArrayBuffer, `type`: ComponentType) = this()
+      def this(value: js.typedarray.Uint8Array, `type`: ComponentType) = this()
       def this(value: Unit, `type`: ComponentType) = this()
       def this(value: Blob, `type`: ComponentType) = this()
-      def this(value: ArrayBuffer, `type`: ComponentType) = this()
-      def this(value: Uint8Array, `type`: ComponentType) = this()
       def this(value: String, `type`: Unit, otherTypeCode: Double) = this()
       def this(value: String, `type`: ComponentType, otherTypeCode: Double) = this()
       def this(value: js.Array[Double], `type`: Unit, otherTypeCode: Double) = this()
       def this(value: js.Array[Double], `type`: ComponentType, otherTypeCode: Double) = this()
+      def this(value: js.typedarray.ArrayBuffer, `type`: Unit, otherTypeCode: Double) = this()
+      def this(value: js.typedarray.ArrayBuffer, `type`: ComponentType, otherTypeCode: Double) = this()
+      def this(value: js.typedarray.Uint8Array, `type`: Unit, otherTypeCode: Double) = this()
+      def this(value: js.typedarray.Uint8Array, `type`: ComponentType, otherTypeCode: Double) = this()
       def this(value: Unit, `type`: Unit, otherTypeCode: Double) = this()
       def this(value: Unit, `type`: ComponentType, otherTypeCode: Double) = this()
       def this(value: Blob, `type`: Unit, otherTypeCode: Double) = this()
       def this(value: Blob, `type`: ComponentType, otherTypeCode: Double) = this()
-      def this(value: ArrayBuffer, `type`: Unit, otherTypeCode: Double) = this()
-      def this(value: ArrayBuffer, `type`: ComponentType, otherTypeCode: Double) = this()
-      def this(value: Uint8Array, `type`: Unit, otherTypeCode: Double) = this()
-      def this(value: Uint8Array, `type`: ComponentType, otherTypeCode: Double) = this()
       
       def compare(other: Component): CompareResult = js.native
       

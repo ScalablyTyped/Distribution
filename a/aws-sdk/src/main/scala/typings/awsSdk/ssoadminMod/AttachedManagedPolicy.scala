@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttachedManagedPolicy extends StObject {
   
   /**
-    * The ARN of the IAM managed policy. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
+    * The ARN of the AWS managed policy. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
     */
   var Arn: js.UndefOr[ManagedPolicyArn] = js.undefined
   
   /**
-    * The name of the IAM managed policy.
+    * The name of the AWS managed policy.
     */
   var Name: js.UndefOr[typings.awsSdk.ssoadminMod.Name] = js.undefined
 }

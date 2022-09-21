@@ -10,10 +10,10 @@ object musicNoteMod {
   
   @JSImport("material-ui/svg-icons/image/music-note", JSImport.Default)
   @js.native
-  class default () extends ImageMusicNote
+  open class default () extends ImageMusicNote
   
   @JSImport("material-ui/svg-icons/image/music-note", "ImageMusicNote")
   @js.native
-  class ImageMusicNote ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageMusicNote ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

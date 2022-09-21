@@ -10,8 +10,14 @@ trait IViewZone extends StObject {
   /**
     * The column after which this zone should appear.
     * If not set, the maxLineColumn of `afterLineNumber` will be used.
+    * This is relevant for wrapped lines.
     */
   var afterColumn: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * If the `afterColumn` has multiple view columns, the affinity specifies which one to use. Defaults to `none`.
+    */
+  var afterColumnAffinity: js.UndefOr[PositionAffinity] = js.undefined
   
   /**
     * The line number after which this zone should appear.
@@ -76,6 +82,10 @@ object IViewZone {
   extension [Self <: IViewZone](x: Self) {
     
     inline def setAfterColumn(value: Double): Self = StObject.set(x, "afterColumn", value.asInstanceOf[js.Any])
+    
+    inline def setAfterColumnAffinity(value: PositionAffinity): Self = StObject.set(x, "afterColumnAffinity", value.asInstanceOf[js.Any])
+    
+    inline def setAfterColumnAffinityUndefined: Self = StObject.set(x, "afterColumnAffinity", js.undefined)
     
     inline def setAfterColumnUndefined: Self = StObject.set(x, "afterColumn", js.undefined)
     

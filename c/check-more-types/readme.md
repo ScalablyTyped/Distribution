@@ -10,10 +10,10 @@ Large collection of predicates.
 | ------------------ | :-------------: |
 | Full name          | check-more-types |
 | Keywords           | check-types, checks, duck-typing, type-checking, types |
-| # releases         | 0 |
-| # dependents       | 149 |
-| # downloads        | 69361050 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6263144E7 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/kensho/check-more-types)

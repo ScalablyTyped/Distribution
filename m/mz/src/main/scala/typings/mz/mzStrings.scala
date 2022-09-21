@@ -19,6 +19,10 @@ object mzStrings {
   inline def ANY: ANY = "ANY".asInstanceOf[ANY]
   
   @js.native
+  sealed trait CAA extends StObject
+  inline def CAA: CAA = "CAA".asInstanceOf[CAA]
+  
+  @js.native
   sealed trait CNAME extends StObject
   inline def CNAME: CNAME = "CNAME".asInstanceOf[CNAME]
   
@@ -51,8 +55,16 @@ object mzStrings {
   inline def TXT: TXT = "TXT".asInstanceOf[TXT]
   
   @js.native
+  sealed trait aes extends StObject
+  inline def aes: aes = "aes".asInstanceOf[aes]
+  
+  @js.native
   sealed trait base64 extends StObject
   inline def base64: base64 = "base64".asInstanceOf[base64]
+  
+  @js.native
+  sealed trait base64url extends StObject
+  inline def base64url: base64url = "base64url".asInstanceOf[base64url]
   
   @js.native
   sealed trait buffer extends StObject
@@ -87,8 +99,16 @@ object mzStrings {
   inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
+  sealed trait hmac extends StObject
+  inline def hmac: hmac = "hmac".asInstanceOf[hmac]
+  
+  @js.native
   sealed trait hybrid extends StObject
   inline def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
+  
+  @js.native
+  sealed trait ipv4first extends StObject
+  inline def ipv4first: ipv4first = "ipv4first".asInstanceOf[ipv4first]
   
   @js.native
   sealed trait latin1 extends StObject
@@ -103,8 +123,16 @@ object mzStrings {
   inline def rsa: rsa = "rsa".asInstanceOf[rsa]
   
   @js.native
+  sealed trait `rsa-pss` extends StObject
+  inline def `rsa-pss`: `rsa-pss` = "rsa-pss".asInstanceOf[`rsa-pss`]
+  
+  @js.native
   sealed trait uncompressed extends StObject
   inline def uncompressed: uncompressed = "uncompressed".asInstanceOf[uncompressed]
+  
+  @js.native
+  sealed trait verbatim extends StObject
+  inline def verbatim: verbatim = "verbatim".asInstanceOf[verbatim]
   
   @js.native
   sealed trait x25519 extends StObject

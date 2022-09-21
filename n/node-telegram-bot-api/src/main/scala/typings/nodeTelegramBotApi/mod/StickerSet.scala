@@ -29,7 +29,7 @@ object StickerSet {
     
     inline def setStickers(value: js.Array[Sticker]): Self = StObject.set(x, "stickers", value.asInstanceOf[js.Any])
     
-    inline def setStickersVarargs(value: Sticker*): Self = StObject.set(x, "stickers", js.Array(value :_*))
+    inline def setStickersVarargs(value: Sticker*): Self = StObject.set(x, "stickers", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }

@@ -88,15 +88,15 @@ object anon {
       
       inline def setB(value: js.Array[Double]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      inline def setBVarargs(value: Double*): Self = StObject.set(x, "b", js.Array(value :_*))
+      inline def setBVarargs(value: Double*): Self = StObject.set(x, "b", js.Array(value*))
       
       inline def setG(value: js.Array[Double]): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      inline def setGVarargs(value: Double*): Self = StObject.set(x, "g", js.Array(value :_*))
+      inline def setGVarargs(value: Double*): Self = StObject.set(x, "g", js.Array(value*))
       
       inline def setR(value: js.Array[Double]): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      inline def setRVarargs(value: Double*): Self = StObject.set(x, "r", js.Array(value :_*))
+      inline def setRVarargs(value: Double*): Self = StObject.set(x, "r", js.Array(value*))
     }
   }
   
@@ -139,7 +139,7 @@ object anon {
   
   trait Dictkey[T /* <: ListenableName */]
     extends StObject
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
        with ListenerData[T] {
     
     var eventName: `before-change` | changed

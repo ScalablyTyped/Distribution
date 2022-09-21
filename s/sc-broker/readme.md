@@ -10,15 +10,12 @@ sc-broker key-value and message broker
 | ------------------ | :-------------: |
 | Full name          | sc-broker |
 | Keywords           | store, broker, message broker, key value server, session, socketcluster |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 889711 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 44957.666666666664 |
+| # stars            | 13.0 |
 
 ## Links
-- [Homepage](https://github.com/SocketCluster/sc-broker#readme)
-- [Bugs](https://github.com/SocketCluster/sc-broker/issues)
-- [Repository](https://github.com/SocketCluster/sc-broker)
 - [Npm](https://www.npmjs.com/package/sc-broker)
     
 

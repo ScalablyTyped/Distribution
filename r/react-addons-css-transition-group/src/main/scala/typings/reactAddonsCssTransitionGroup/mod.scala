@@ -18,10 +18,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-addons-css-transition-group", JSImport.Namespace)
   @js.native
-  class Class protected ()
-    extends Component[CSSTransitionGroupProps, ComponentState, js.Any] {
+  open class Class protected () extends Component[CSSTransitionGroupProps, ComponentState, Any] {
     def this(props: CSSTransitionGroupProps) = this()
-    def this(props: CSSTransitionGroupProps, context: js.Any) = this()
+    def this(props: CSSTransitionGroupProps, context: Any) = this()
   }
   
   type ReactCSSTransitionGroup = ComponentClass[CSSTransitionGroupProps, ComponentState]

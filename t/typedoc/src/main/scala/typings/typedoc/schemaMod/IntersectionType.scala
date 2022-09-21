@@ -6,20 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.IntersectionType, 'type' | 'types'> */
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ trait IntersectionType
-  extends StObject
-     with SomeType {
+trait IntersectionType extends StObject {
   
-  var `type`: ModelToObject[String] | String
+  var `type`: ToSerialized[/* "intersection" */ String]
   
-  var types: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]] | js.Array[typings.typedoc.typesAbstractMod.Type]
+  var types: ToSerialized[js.Array[typings.typedoc.modelsTypesMod.SomeType]]
 }
 object IntersectionType {
   
   inline def apply(
-    `type`: ModelToObject[String] | String,
-    types: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]] | js.Array[typings.typedoc.typesAbstractMod.Type]
+    `type`: ToSerialized[/* "intersection" */ String],
+    types: ToSerialized[js.Array[typings.typedoc.modelsTypesMod.SomeType]]
   ): IntersectionType = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -28,14 +25,12 @@ object IntersectionType {
   
   extension [Self <: IntersectionType](x: Self) {
     
-    inline def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ToSerialized[/* "intersection" */ String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "type", js.Array(value*))
     
-    inline def setTypes(
-      value: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]] | js.Array[typings.typedoc.typesAbstractMod.Type]
-    ): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: ToSerialized[js.Array[typings.typedoc.modelsTypesMod.SomeType]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: (typings.typedoc.typesAbstractMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: (typings.typedoc.modelsTypesMod.SomeType | _ModelToObject[Any])*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

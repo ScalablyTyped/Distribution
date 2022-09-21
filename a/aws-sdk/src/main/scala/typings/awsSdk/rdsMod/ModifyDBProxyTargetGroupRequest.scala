@@ -12,7 +12,7 @@ trait ModifyDBProxyTargetGroupRequest extends StObject {
   var ConnectionPoolConfig: js.UndefOr[ConnectionPoolConfiguration] = js.undefined
   
   /**
-    * The name of the new proxy to which to assign the target group.
+    * The name of the proxy.
     */
   var DBProxyName: String
   
@@ -22,7 +22,7 @@ trait ModifyDBProxyTargetGroupRequest extends StObject {
   var NewName: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the new target group to assign to the proxy.
+    * The name of the target group to modify.
     */
   var TargetGroupName: String
 }

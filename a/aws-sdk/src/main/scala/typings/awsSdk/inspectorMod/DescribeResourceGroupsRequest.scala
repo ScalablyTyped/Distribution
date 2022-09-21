@@ -22,6 +22,6 @@ object DescribeResourceGroupsRequest {
     
     inline def setResourceGroupArns(value: BatchDescribeArnList): Self = StObject.set(x, "resourceGroupArns", value.asInstanceOf[js.Any])
     
-    inline def setResourceGroupArnsVarargs(value: Arn*): Self = StObject.set(x, "resourceGroupArns", js.Array(value :_*))
+    inline def setResourceGroupArnsVarargs(value: Arn*): Self = StObject.set(x, "resourceGroupArns", js.Array(value*))
   }
 }

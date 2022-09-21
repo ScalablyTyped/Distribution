@@ -12,7 +12,7 @@ object defaultLinkFactoryMod {
   
   @JSImport("storm-react-diagrams/dist/src/defaults/factories/DefaultLinkFactory", "DefaultLinkFactory")
   @js.native
-  class DefaultLinkFactory () extends AbstractLinkFactory[DefaultLinkModel] {
+  open class DefaultLinkFactory () extends AbstractLinkFactory[DefaultLinkModel] {
     
     def generateLinkSegment(model: DefaultLinkModel, widget: DefaultLinkWidget, selected: Boolean, path: String): Element = js.native
   }

@@ -1,6 +1,5 @@
 package typings.antDesignProLayout
 
-import org.scalablytyped.runtime.Shortcut
 import typings.antDesignProLayout.anon.FooterToolbarPropsRouteCo
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
@@ -10,13 +9,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object footerToolbarMod extends Shortcut {
+object footerToolbarMod {
   
-  @JSImport("@ant-design/pro-layout/lib/FooterToolbar", JSImport.Default)
+  @JSImport("@ant-design/pro-layout/es/components/FooterToolbar", "FooterToolbar")
   @js.native
-  val default: FC[FooterToolbarProps] = js.native
+  val FooterToolbar: FC[FooterToolbarProps] = js.native
   
   trait FooterToolbarProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -39,6 +40,10 @@ object footerToolbarMod extends Shortcut {
     
     extension [Self <: FooterToolbarProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -60,9 +65,4 @@ object footerToolbarMod extends Shortcut {
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
-  
-  type _To = FC[FooterToolbarProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `footerToolbarMod.foo` */
-  override def _to: FC[FooterToolbarProps] = default
 }

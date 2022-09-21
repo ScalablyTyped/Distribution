@@ -40,6 +40,6 @@ object ListRolesResponse {
     
     inline def setRoles(value: roleListType): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
     
-    inline def setRolesVarargs(value: Role*): Self = StObject.set(x, "Roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: Role*): Self = StObject.set(x, "Roles", js.Array(value*))
   }
 }

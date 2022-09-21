@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("rc-easyui", "Calendar")
 @js.native
-class Calendar protected ()
-  extends Component[js.Any, js.Object, js.Any] {
-  def this(e: js.Any) = this()
+open class Calendar protected ()
+  extends Component[Any, js.Object, Any] {
+  def this(e: Any) = this()
   
   @JSName("componentDidMount")
   def componentDidMount_MCalendar(): Unit = js.native
   
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MCalendar(e: js.Any): js.Any = js.native
+  def componentDidUpdate_MCalendar(e: Any): Any = js.native
   
-  def getHeaderData(): js.Any = js.native
+  def getHeaderData(): Any = js.native
   
-  def getWeeks(): js.Any = js.native
+  def getWeeks(): Any = js.native
   
-  def handleDayClick(e: js.Any): Unit = js.native
+  def handleDayClick(e: Any): Unit = js.native
   
-  def handleDayMouseEnter(e: js.Any): Unit = js.native
+  def handleDayMouseEnter(e: Any): Unit = js.native
   
   def handleDayMouseLeave(): Unit = js.native
   
   def handleMenuClick(): Unit = js.native
   
-  def handleMonthClick(e: js.Any): js.Any = js.native
+  def handleMonthClick(e: Any): Any = js.native
   
-  def handleMonthMouseEnter(e: js.Any): Unit = js.native
+  def handleMonthMouseEnter(e: Any): Unit = js.native
   
   def handleMonthMouseLeave(): Unit = js.native
   
@@ -39,31 +39,31 @@ class Calendar protected ()
   
   def handleMonthPrev(): Unit = js.native
   
-  def handleYearChange(e: js.Any): js.Any = js.native
+  def handleYearChange(e: Any): Any = js.native
   
   def handleYearNext(): Unit = js.native
   
   def handleYearPrev(): Unit = js.native
   
-  def highlightDate(e: js.Any): Unit = js.native
+  def highlightDate(e: Any): Unit = js.native
   
-  def isDiff(e: js.Any, t: js.Any): js.Any = js.native
+  def isDiff(e: Any, t: Any): Any = js.native
   
-  def isStateEmpty(e: js.Any): js.Any = js.native
+  def isStateEmpty(e: Any): Any = js.native
   
-  def isValid(e: js.Any): js.Any = js.native
+  def isValid(e: Any): Any = js.native
   
-  def moveTo(e: js.Any): js.Any = js.native
+  def moveTo(e: Any): Any = js.native
   
-  def navDate(e: js.Any): Unit = js.native
+  def navDate(e: Any): Unit = js.native
   
   def refresh(): Unit = js.native
   
-  def selectDate(args: js.Any*): Unit = js.native
+  def selectDate(args: Any*): Unit = js.native
   
-  def toArray(e: js.Any): js.Any = js.native
+  def toArray(e: Any): Any = js.native
   
-  def toDate(e: js.Any): js.Any = js.native
+  def toDate(e: Any): Any = js.native
 }
 object Calendar {
   
@@ -71,7 +71,7 @@ object Calendar {
     
     object locale {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.contextTypes.locale")
       @js.native
@@ -80,12 +80,12 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.contextTypes.locale
       @JSImport("rc-easyui", "Calendar.contextTypes.locale.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object t {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.contextTypes.t")
       @js.native
@@ -94,7 +94,7 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.contextTypes.t
       @JSImport("rc-easyui", "Calendar.contextTypes.t.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
   }
   
@@ -108,7 +108,7 @@ object Calendar {
     @js.native
     val border: Boolean = js.native
     
-    inline def defaultInfo(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultInfo")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultInfo(e: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultInfo")(e.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     @JSImport("rc-easyui", "Calendar.defaultProps.defaultMonths")
     @js.native
@@ -124,13 +124,13 @@ object Calendar {
     
     @JSImport("rc-easyui", "Calendar.defaultProps.info")
     @js.native
-    val info: js.Any = js.native
+    val info: Any = js.native
     
     @JSImport("rc-easyui", "Calendar.defaultProps.month")
     @js.native
     val month: Double = js.native
     
-    inline def onSelectionChange(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSelectionChange")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onSelectionChange(e: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSelectionChange")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("rc-easyui", "Calendar.defaultProps.showInfo")
     @js.native
@@ -140,7 +140,7 @@ object Calendar {
     @js.native
     val showWeek: Boolean = js.native
     
-    inline def validator(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("validator")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def validator(e: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("validator")(e.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     @JSImport("rc-easyui", "Calendar.defaultProps.weekNumberHeader")
     @js.native
@@ -155,7 +155,7 @@ object Calendar {
     
     object border {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.propTypes.border")
       @js.native
@@ -164,12 +164,12 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.propTypes.border
       @JSImport("rc-easyui", "Calendar.propTypes.border.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object className {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.propTypes.className")
       @js.native
@@ -178,12 +178,12 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.propTypes.className
       @JSImport("rc-easyui", "Calendar.propTypes.className.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object firstDay {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.propTypes.firstDay")
       @js.native
@@ -192,12 +192,12 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.propTypes.firstDay
       @JSImport("rc-easyui", "Calendar.propTypes.firstDay.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object info {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.propTypes.info")
       @js.native
@@ -206,12 +206,12 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.propTypes.info
       @JSImport("rc-easyui", "Calendar.propTypes.info.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object month {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.propTypes.month")
       @js.native
@@ -220,12 +220,12 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.propTypes.month
       @JSImport("rc-easyui", "Calendar.propTypes.month.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object months {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.propTypes.months")
       @js.native
@@ -234,12 +234,12 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.propTypes.months
       @JSImport("rc-easyui", "Calendar.propTypes.months.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object selection {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.propTypes.selection")
       @js.native
@@ -248,12 +248,12 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.propTypes.selection
       @JSImport("rc-easyui", "Calendar.propTypes.selection.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object showInfo {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.propTypes.showInfo")
       @js.native
@@ -262,12 +262,12 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.propTypes.showInfo
       @JSImport("rc-easyui", "Calendar.propTypes.showInfo.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object showWeek {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.propTypes.showWeek")
       @js.native
@@ -276,12 +276,12 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.propTypes.showWeek
       @JSImport("rc-easyui", "Calendar.propTypes.showWeek.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object style {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.propTypes.style")
       @js.native
@@ -290,12 +290,12 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.propTypes.style
       @JSImport("rc-easyui", "Calendar.propTypes.style.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object validator {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.propTypes.validator")
       @js.native
@@ -304,12 +304,12 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.propTypes.validator
       @JSImport("rc-easyui", "Calendar.propTypes.validator.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object weekNumberHeader {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.propTypes.weekNumberHeader")
       @js.native
@@ -318,12 +318,12 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.propTypes.weekNumberHeader
       @JSImport("rc-easyui", "Calendar.propTypes.weekNumberHeader.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object weeks {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.propTypes.weeks")
       @js.native
@@ -332,12 +332,12 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.propTypes.weeks
       @JSImport("rc-easyui", "Calendar.propTypes.weeks.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object year {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Calendar.propTypes.year")
       @js.native
@@ -346,7 +346,7 @@ object Calendar {
       // Circular reference from rc_easyui.Calendar.propTypes.year
       @JSImport("rc-easyui", "Calendar.propTypes.year.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
   }
 }

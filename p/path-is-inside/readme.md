@@ -10,10 +10,10 @@ Tests whether one path is inside another path
 | ------------------ | :-------------: |
 | Full name          | path-is-inside |
 | Keywords           | path, directory, folder, inside, relative |
-| # releases         | 0 |
-| # dependents       | 193 |
-| # downloads        | 522174941 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.8685077333333336E7 |
+| # stars            | 40.0 |
 
 ## Links
 - [Homepage](https://github.com/domenic/path-is-inside#readme)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventTypeSummary extends StObject {
   
   /**
-    * The system-generated ID of the event.
+    * The system-generated ID of the event. For a complete list of event types and IDs, see Notification concepts in the Developer Tools Console User Guide.
     */
   var EventTypeId: js.UndefOr[typings.awsSdk.codestarnotificationsMod.EventTypeId] = js.undefined
   

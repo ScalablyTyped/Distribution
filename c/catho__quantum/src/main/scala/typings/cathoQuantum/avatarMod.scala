@@ -9,10 +9,10 @@ object avatarMod {
   
   @JSImport("@catho/quantum/Avatar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[AvatarProps, js.Object, js.Any]
+  open class default ()
+    extends Component[AvatarProps, js.Object, Any]
   
-  type Avatar = Component[AvatarProps, js.Object, js.Any]
+  type Avatar = Component[AvatarProps, js.Object, Any]
   
   trait AvatarProps extends StObject {
     
@@ -22,11 +22,9 @@ object avatarMod {
     
     var href: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[js.Function0[js.Object]] = js.undefined
+    var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var picture: js.UndefOr[String] = js.undefined
-    
-    var size: js.UndefOr[String] = js.undefined
     
     var text: js.UndefOr[String] = js.undefined
   }
@@ -51,17 +49,13 @@ object avatarMod {
       
       inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      inline def setOnClick(value: () => js.Object): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       inline def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
       
       inline def setPictureUndefined: Self = StObject.set(x, "picture", js.undefined)
-      
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

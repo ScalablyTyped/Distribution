@@ -1,7 +1,7 @@
 
 # Scala.js typings for app-root-path
 
-Typings are for version 1.2.1
+Typings are for version 3.1.0
 
 ## Library description:
 Determine an app's root path from anywhere inside the app
@@ -10,10 +10,10 @@ Determine an app's root path from anywhere inside the app
 | ------------------ | :-------------: |
 | Full name          | app-root-path |
 | Keywords           | root, path, utility, util, node, module, modules, node_modules, require, app |
-| # releases         | 4 |
-| # dependents       | 1345 |
-| # downloads        | 103063114 |
-| # stars            | 18 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0051148666666666E7 |
+| # stars            | 552.0 |
 
 ## Links
 - [Homepage](https://github.com/inxilpro/node-app-root-path)
@@ -24,7 +24,7 @@ Determine an app's root path from anywhere inside the app
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

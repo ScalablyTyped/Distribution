@@ -10,10 +10,10 @@ Finds project root
 | ------------------ | :-------------: |
 | Full name          | find-project-root |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 1591957 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 97476.66666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/find-project-root)

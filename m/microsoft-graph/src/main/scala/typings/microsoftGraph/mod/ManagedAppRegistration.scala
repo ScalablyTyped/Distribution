@@ -83,7 +83,7 @@ object ManagedAppRegistration {
     
     inline def setAppliedPoliciesUndefined: Self = StObject.set(x, "appliedPolicies", js.undefined)
     
-    inline def setAppliedPoliciesVarargs(value: ManagedAppPolicy*): Self = StObject.set(x, "appliedPolicies", js.Array(value :_*))
+    inline def setAppliedPoliciesVarargs(value: ManagedAppPolicy*): Self = StObject.set(x, "appliedPolicies", js.Array(value*))
     
     inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
@@ -111,7 +111,7 @@ object ManagedAppRegistration {
     
     inline def setFlaggedReasonsUndefined: Self = StObject.set(x, "flaggedReasons", js.undefined)
     
-    inline def setFlaggedReasonsVarargs(value: ManagedAppFlaggedReason*): Self = StObject.set(x, "flaggedReasons", js.Array(value :_*))
+    inline def setFlaggedReasonsVarargs(value: ManagedAppFlaggedReason*): Self = StObject.set(x, "flaggedReasons", js.Array(value*))
     
     inline def setIntendedPolicies(value: NullableOption[js.Array[ManagedAppPolicy]]): Self = StObject.set(x, "intendedPolicies", value.asInstanceOf[js.Any])
     
@@ -119,7 +119,7 @@ object ManagedAppRegistration {
     
     inline def setIntendedPoliciesUndefined: Self = StObject.set(x, "intendedPolicies", js.undefined)
     
-    inline def setIntendedPoliciesVarargs(value: ManagedAppPolicy*): Self = StObject.set(x, "intendedPolicies", js.Array(value :_*))
+    inline def setIntendedPoliciesVarargs(value: ManagedAppPolicy*): Self = StObject.set(x, "intendedPolicies", js.Array(value*))
     
     inline def setLastSyncDateTime(value: String): Self = StObject.set(x, "lastSyncDateTime", value.asInstanceOf[js.Any])
     
@@ -137,7 +137,7 @@ object ManagedAppRegistration {
     
     inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    inline def setOperationsVarargs(value: ManagedAppOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: ManagedAppOperation*): Self = StObject.set(x, "operations", js.Array(value*))
     
     inline def setPlatformVersion(value: NullableOption[String]): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Tries to execute a function and discards any error that occurs
 | ------------------ | :-------------: |
 | Full name          | nice-try |
 | Keywords           | try, catch, error |
-| # releases         | 3 |
-| # dependents       | 104 |
-| # downloads        | 671298610 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 7.297940466666667E7 |
+| # stars            | 60.0 |
 
 ## Links
 - [Homepage](https://github.com/electerious/nice-try)

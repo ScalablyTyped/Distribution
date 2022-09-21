@@ -10,25 +10,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object rasterDataMod extends Shortcut {
   
-  @JSImport("esri/tasks/support/RasterData", JSImport.Namespace)
+  @JSImport("esri/rest/support/RasterData", JSImport.Namespace)
   @js.native
   val ^ : js.Object & RasterDataConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("esri/tasks/support/RasterData", JSImport.Namespace)
+  @JSImport("esri/rest/support/RasterData", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * A geoprocessing data object containing a raster data source.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RasterData.html)
+    */
+  open class Class ()
     extends StObject
        with RasterData {
     def this(properties: RasterDataProperties) = this()
     
     /**
-      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
       */
     /* CompleteClass */
-    override def toJSON(): js.Any = js.native
+    override def toJSON(): Any = js.native
   }
   
   type _To = js.Object & RasterDataConstructor

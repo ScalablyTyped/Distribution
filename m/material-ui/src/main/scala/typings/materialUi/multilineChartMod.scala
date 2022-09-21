@@ -10,10 +10,10 @@ object multilineChartMod {
   
   @JSImport("material-ui/svg-icons/editor/multiline-chart", JSImport.Default)
   @js.native
-  class default () extends EditorMultilineChart
+  open class default () extends EditorMultilineChart
   
   @JSImport("material-ui/svg-icons/editor/multiline-chart", "EditorMultilineChart")
   @js.native
-  class EditorMultilineChart ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorMultilineChart ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

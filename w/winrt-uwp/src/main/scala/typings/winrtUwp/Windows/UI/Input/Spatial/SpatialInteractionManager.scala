@@ -7,44 +7,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpatialInteractionManager extends StObject {
   
   /* unmapped type */
-  var addEventListener: js.Any
+  var addEventListener: Any
   
   /* unmapped type */
-  var getDetectedSourcesAtTimestamp: js.Any
+  var getDetectedSourcesAtTimestamp: Any
   
   /* unmapped type */
-  var oninteractiondetected: js.Any
+  var oninteractiondetected: Any
   
   /* unmapped type */
-  var onsourcedetected: js.Any
+  var onsourcedetected: Any
   
   /* unmapped type */
-  var onsourcelost: js.Any
+  var onsourcelost: Any
   
   /* unmapped type */
-  var onsourcepressed: js.Any
+  var onsourcepressed: Any
   
   /* unmapped type */
-  var onsourcereleased: js.Any
+  var onsourcereleased: Any
   
   /* unmapped type */
-  var onsourceupdated: js.Any
+  var onsourceupdated: Any
   
   /* unmapped type */
-  var removeEventListener: js.Any
+  var removeEventListener: Any
 }
 object SpatialInteractionManager {
   
   inline def apply(
-    addEventListener: js.Any,
-    getDetectedSourcesAtTimestamp: js.Any,
-    oninteractiondetected: js.Any,
-    onsourcedetected: js.Any,
-    onsourcelost: js.Any,
-    onsourcepressed: js.Any,
-    onsourcereleased: js.Any,
-    onsourceupdated: js.Any,
-    removeEventListener: js.Any
+    addEventListener: Any,
+    getDetectedSourcesAtTimestamp: Any,
+    oninteractiondetected: Any,
+    onsourcedetected: Any,
+    onsourcelost: Any,
+    onsourcepressed: Any,
+    onsourcereleased: Any,
+    onsourceupdated: Any,
+    removeEventListener: Any
   ): SpatialInteractionManager = {
     val __obj = js.Dynamic.literal(addEventListener = addEventListener.asInstanceOf[js.Any], getDetectedSourcesAtTimestamp = getDetectedSourcesAtTimestamp.asInstanceOf[js.Any], oninteractiondetected = oninteractiondetected.asInstanceOf[js.Any], onsourcedetected = onsourcedetected.asInstanceOf[js.Any], onsourcelost = onsourcelost.asInstanceOf[js.Any], onsourcepressed = onsourcepressed.asInstanceOf[js.Any], onsourcereleased = onsourcereleased.asInstanceOf[js.Any], onsourceupdated = onsourceupdated.asInstanceOf[js.Any], removeEventListener = removeEventListener.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialInteractionManager]
@@ -52,22 +52,22 @@ object SpatialInteractionManager {
   
   extension [Self <: SpatialInteractionManager](x: Self) {
     
-    inline def setAddEventListener(value: js.Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
+    inline def setAddEventListener(value: Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
     
-    inline def setGetDetectedSourcesAtTimestamp(value: js.Any): Self = StObject.set(x, "getDetectedSourcesAtTimestamp", value.asInstanceOf[js.Any])
+    inline def setGetDetectedSourcesAtTimestamp(value: Any): Self = StObject.set(x, "getDetectedSourcesAtTimestamp", value.asInstanceOf[js.Any])
     
-    inline def setOninteractiondetected(value: js.Any): Self = StObject.set(x, "oninteractiondetected", value.asInstanceOf[js.Any])
+    inline def setOninteractiondetected(value: Any): Self = StObject.set(x, "oninteractiondetected", value.asInstanceOf[js.Any])
     
-    inline def setOnsourcedetected(value: js.Any): Self = StObject.set(x, "onsourcedetected", value.asInstanceOf[js.Any])
+    inline def setOnsourcedetected(value: Any): Self = StObject.set(x, "onsourcedetected", value.asInstanceOf[js.Any])
     
-    inline def setOnsourcelost(value: js.Any): Self = StObject.set(x, "onsourcelost", value.asInstanceOf[js.Any])
+    inline def setOnsourcelost(value: Any): Self = StObject.set(x, "onsourcelost", value.asInstanceOf[js.Any])
     
-    inline def setOnsourcepressed(value: js.Any): Self = StObject.set(x, "onsourcepressed", value.asInstanceOf[js.Any])
+    inline def setOnsourcepressed(value: Any): Self = StObject.set(x, "onsourcepressed", value.asInstanceOf[js.Any])
     
-    inline def setOnsourcereleased(value: js.Any): Self = StObject.set(x, "onsourcereleased", value.asInstanceOf[js.Any])
+    inline def setOnsourcereleased(value: Any): Self = StObject.set(x, "onsourcereleased", value.asInstanceOf[js.Any])
     
-    inline def setOnsourceupdated(value: js.Any): Self = StObject.set(x, "onsourceupdated", value.asInstanceOf[js.Any])
+    inline def setOnsourceupdated(value: Any): Self = StObject.set(x, "onsourceupdated", value.asInstanceOf[js.Any])
     
-    inline def setRemoveEventListener(value: js.Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
+    inline def setRemoveEventListener(value: Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
   }
 }

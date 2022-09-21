@@ -17,7 +17,7 @@ trait Acl extends StObject {
   /**
     * Creates a new token by cloning an existing token
     */
-  def clone[TData](id: String): Thenable[TData] = js.native
+  def clone[TData](id: String): js.Promise[TData] = js.native
   /**
     * Creates a new token by cloning an existing token
     */
@@ -25,7 +25,7 @@ trait Acl extends StObject {
   /**
     * Creates a new token by cloning an existing token
     */
-  def clone[TData](opts: CloneOptions): Thenable[TData] = js.native
+  def clone[TData](opts: CloneOptions): js.Promise[TData] = js.native
   /**
     * Creates a new token by cloning an existing token
     */
@@ -36,12 +36,12 @@ trait Acl extends StObject {
   /**
     * Creates a new token with policy
     */
-  def create[TData](): Thenable[TData] = js.native
+  def create[TData](): js.Promise[TData] = js.native
   /**
     * Creates a new token with policy
     */
   def create[TData](callback: Callback[TData]): Unit = js.native
-  def create[TData](opts: CreateOptions): Thenable[TData] = js.native
+  def create[TData](opts: CreateOptions): js.Promise[TData] = js.native
   /**
     * Creates a new token with policy
     */
@@ -50,7 +50,7 @@ trait Acl extends StObject {
   /**
     * Destroys a given token
     */
-  def destroy[TData](id: String): Thenable[TData] = js.native
+  def destroy[TData](id: String): js.Promise[TData] = js.native
   /**
     * Destroys a given token
     */
@@ -58,21 +58,21 @@ trait Acl extends StObject {
   /**
     * Destroys a given token
     */
-  def destroy[TData](opts: DestroyOptions): Thenable[TData] = js.native
+  def destroy[TData](opts: DestroyOptions): js.Promise[TData] = js.native
   /**
     * Destroys a given token
     */
   def destroy[TData](opts: DestroyOptions, callback: Callback[TData]): Unit = js.native
   
-  def get[TData](id: String): Thenable[TData] = js.native
+  def get[TData](id: String): js.Promise[TData] = js.native
   def get[TData](id: String, callback: Callback[TData]): Unit = js.native
-  def get[TData](opts: GetOptions): Thenable[TData] = js.native
+  def get[TData](opts: GetOptions): js.Promise[TData] = js.native
   def get[TData](opts: GetOptions, callback: Callback[TData]): Unit = js.native
   
   /**
     * Queries the policy of a given token
     */
-  def info[TData](id: String): Thenable[TData] = js.native
+  def info[TData](id: String): js.Promise[TData] = js.native
   /**
     * Queries the policy of a given token
     */
@@ -80,7 +80,7 @@ trait Acl extends StObject {
   /**
     * Queries the policy of a given token
     */
-  def info[TData](opts: InfoOptions): Thenable[TData] = js.native
+  def info[TData](opts: InfoOptions): js.Promise[TData] = js.native
   /**
     * Queries the policy of a given token
     */
@@ -89,12 +89,12 @@ trait Acl extends StObject {
   /**
     * Lists all the active tokens
     */
-  def list[TData](): Thenable[TData] = js.native
+  def list[TData](): js.Promise[TData] = js.native
   /**
     * Lists all the active tokens
     */
   def list[TData](callback: Callback[TData]): Unit = js.native
-  def list[TData](opts: ListOptions): Thenable[TData] = js.native
+  def list[TData](opts: ListOptions): js.Promise[TData] = js.native
   /**
     * Lists all the active tokens
     */
@@ -103,7 +103,7 @@ trait Acl extends StObject {
   /**
     * Update the policy of a token
     */
-  def update[TData](opts: UpdateOptions): Thenable[TData] = js.native
+  def update[TData](opts: UpdateOptions): js.Promise[TData] = js.native
   /**
     * Update the policy of a token
     */

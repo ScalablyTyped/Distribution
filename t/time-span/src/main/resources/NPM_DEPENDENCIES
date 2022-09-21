@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "time-span" : "4.0.0"
+      "time-span" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "time-span" : "4.0.0"
+      "time-span" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

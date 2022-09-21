@@ -31,6 +31,6 @@ object ListEventSubscriptionsResponse {
     
     inline def setSubscriptions(value: SubscriptionList): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
-    inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value*))
   }
 }

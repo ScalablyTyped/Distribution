@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.googleProtobuf.anon.Instantiable
 import typings.googleProtobuf.anon.TypeofMessage
 import typings.googleProtobuf.mod.Message.MessageArray
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,16 +22,16 @@ abstract class Message () extends StObject {
     proto: Message,
     reader: BinaryReader,
     extensions: NumberDictionary[ExtensionFieldBinaryInfo[Message]],
-    setExtensionFn: js.Function2[/* fieldInfo */ ExtensionFieldInfo[js.Any], /* val */ js.Any, Unit]
+    setExtensionFn: js.Function2[/* fieldInfo */ ExtensionFieldInfo[Any], /* val */ Any, Unit]
   ): Unit = js.native
   
-  def serializeBinary(): Uint8Array = js.native
+  def serializeBinary(): js.typedarray.Uint8Array = js.native
   
   def serializeBinaryExtensions(
     proto: Message,
     writer: BinaryWriter,
     extensions: NumberDictionary[ExtensionFieldBinaryInfo[Message]],
-    getExtensionFn: js.Function1[/* fieldInfo */ ExtensionFieldInfo[js.Any], js.Any]
+    getExtensionFn: js.Function1[/* fieldInfo */ ExtensionFieldInfo[Any], Any]
   ): Unit = js.native
   
   def setExtension[T](fieldInfo: ExtensionFieldInfo[T], value: T): Unit = js.native
@@ -49,21 +48,21 @@ object Message {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addToRepeatedField(msg: Message, fieldNumber: Double, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addToRepeatedField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addToRepeatedField(msg: Message, fieldNumber: Double, value: js.Any, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addToRepeatedField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addToRepeatedField(msg: Message, fieldNumber: Double, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addToRepeatedField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addToRepeatedField(msg: Message, fieldNumber: Double, value: Any, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addToRepeatedField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], value.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: T, ctor: Instantiable[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addToRepeatedWrapperField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], value.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: T, ctor: Instantiable[T], index: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addToRepeatedWrapperField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], value.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: Unit, ctor: Instantiable[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addToRepeatedWrapperField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], value.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: Unit, ctor: Instantiable[T], index: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addToRepeatedWrapperField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], value.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def bytesAsB64(bytes: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesAsB64")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bytesAsB64(bytes: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesAsB64")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def bytesAsU8(str: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesAsU8")(str.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def bytesAsU8(str: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesAsU8")(str.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def bytesListAsB64(bytesList: js.Array[Uint8Array]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesListAsB64")(bytesList.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def bytesListAsB64(bytesList: js.Array[js.typedarray.Uint8Array]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesListAsB64")(bytesList.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  inline def bytesListAsU8(strList: js.Array[String]): js.Array[Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesListAsU8")(strList.asInstanceOf[js.Any]).asInstanceOf[js.Array[Uint8Array]]
+  inline def bytesListAsU8(strList: js.Array[String]): js.Array[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesListAsU8")(strList.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.typedarray.Uint8Array]]
   
   inline def clone[T /* <: Message */](msg: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(msg.asInstanceOf[js.Any]).asInstanceOf[T]
   
@@ -71,7 +70,7 @@ object Message {
   
   inline def compareExtensions(extension1: js.Object, extension2: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareExtensions")(extension1.asInstanceOf[js.Any], extension2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def compareFields(field1: js.Any, field2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareFields")(field1.asInstanceOf[js.Any], field2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def compareFields(field1: Any, field2: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareFields")(field1.asInstanceOf[js.Any], field2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def computeOneofCase(msg: Message, oneof: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeOneofCase")(msg.asInstanceOf[js.Any], oneof.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -79,7 +78,7 @@ object Message {
   
   // These are `abstract static`, but that isn't allowed. Subclasses of Message will have these methods and properties
   // and not having them on Message makes using this class for its intended purpose quite difficult.
-  inline def deserializeBinary(bytes: Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Message]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Message]
   
   inline def deserializeBinaryFromReader(message: Message, reader: BinaryReader): Message = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Message]
   
@@ -102,7 +101,8 @@ object Message {
   
   inline def getFieldWithDefault[T](msg: Message, fieldNumber: Double, defaultValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getFieldWithDefault")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def getMapField(msg: Message, fieldNumber: Double, noLazyCreate: Boolean, valueCtor: TypeofMessage): Map[js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMapField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], noLazyCreate.asInstanceOf[js.Any], valueCtor.asInstanceOf[js.Any])).asInstanceOf[Map[js.Any, js.Any]]
+  inline def getMapField(msg: Message, fieldNumber: Double, noLazyCreate: Boolean): Map[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMapField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], noLazyCreate.asInstanceOf[js.Any])).asInstanceOf[Map[Any, Any]]
+  inline def getMapField(msg: Message, fieldNumber: Double, noLazyCreate: Boolean, valueCtor: TypeofMessage): Map[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMapField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], noLazyCreate.asInstanceOf[js.Any], valueCtor.asInstanceOf[js.Any])).asInstanceOf[Map[Any, Any]]
   
   inline def getOptionalFloatingPointField(msg: Message, fieldNumber: Double): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionalFloatingPointField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
@@ -134,6 +134,14 @@ object Message {
     data: MessageArray,
     messageId: String,
     suggestedPivot: Double,
+    repeatedFields: Null,
+    oneofFields: js.Array[js.Array[Double]]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any], messageId.asInstanceOf[js.Any], suggestedPivot.asInstanceOf[js.Any], repeatedFields.asInstanceOf[js.Any], oneofFields.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initialize(
+    msg: Message,
+    data: MessageArray,
+    messageId: String,
+    suggestedPivot: Double,
     repeatedFields: Unit,
     oneofFields: js.Array[js.Array[Double]]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any], messageId.asInstanceOf[js.Any], suggestedPivot.asInstanceOf[js.Any], repeatedFields.asInstanceOf[js.Any], oneofFields.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -158,6 +166,14 @@ object Message {
     data: MessageArray,
     messageId: Double,
     suggestedPivot: Double,
+    repeatedFields: Null,
+    oneofFields: js.Array[js.Array[Double]]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any], messageId.asInstanceOf[js.Any], suggestedPivot.asInstanceOf[js.Any], repeatedFields.asInstanceOf[js.Any], oneofFields.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initialize(
+    msg: Message,
+    data: MessageArray,
+    messageId: Double,
+    suggestedPivot: Double,
     repeatedFields: Unit,
     oneofFields: js.Array[js.Array[Double]]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any], messageId.asInstanceOf[js.Any], suggestedPivot.asInstanceOf[js.Any], repeatedFields.asInstanceOf[js.Any], oneofFields.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -170,30 +186,30 @@ object Message {
   
   inline def setOneofField(msg: Message, fieldNumber: Double, oneof: js.Array[Double], value: FieldValue): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOneofField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], oneof.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setOneofWrapperField(msg: Message, fieldNumber: Double, oneof: js.Array[Double], value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOneofWrapperField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], oneof.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setOneofWrapperField(msg: Message, fieldNumber: Double, oneof: js.Array[Double], value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOneofWrapperField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], oneof.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRepeatedWrapperField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: js.Array[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRepeatedWrapperField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setWrapperField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setWrapperField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def setWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: Map[js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setWrapperField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: Map[Any, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setWrapperField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def toMap(field: js.Array[js.Any], mapKeyGetterFn: js.Function1[/* field */ js.Any, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toMap")(field.asInstanceOf[js.Any], mapKeyGetterFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def toMap(field: js.Array[Any], mapKeyGetterFn: js.Function1[/* field */ Any, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toMap")(field.asInstanceOf[js.Any], mapKeyGetterFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def toMap(
-    field: js.Array[js.Any],
-    mapKeyGetterFn: js.Function1[/* field */ js.Any, String],
+    field: js.Array[Any],
+    mapKeyGetterFn: js.Function1[/* field */ Any, String],
     toObjectFn: Unit,
     includeInstance: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toMap")(field.asInstanceOf[js.Any], mapKeyGetterFn.asInstanceOf[js.Any], toObjectFn.asInstanceOf[js.Any], includeInstance.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def toMap(
-    field: js.Array[js.Any],
-    mapKeyGetterFn: js.Function1[/* field */ js.Any, String],
+    field: js.Array[Any],
+    mapKeyGetterFn: js.Function1[/* field */ Any, String],
     toObjectFn: StaticToObject
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toMap")(field.asInstanceOf[js.Any], mapKeyGetterFn.asInstanceOf[js.Any], toObjectFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def toMap(
-    field: js.Array[js.Any],
-    mapKeyGetterFn: js.Function1[/* field */ js.Any, String],
+    field: js.Array[Any],
+    mapKeyGetterFn: js.Function1[/* field */ Any, String],
     toObjectFn: StaticToObject,
     includeInstance: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toMap")(field.asInstanceOf[js.Any], mapKeyGetterFn.asInstanceOf[js.Any], toObjectFn.asInstanceOf[js.Any], includeInstance.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -224,7 +240,7 @@ object Message {
     includeInstance: Boolean
   ): js.Array[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObjectList")(field.asInstanceOf[js.Any], toObjectFn.asInstanceOf[js.Any], includeInstance.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
   
-  type MessageArray = js.Array[js.Any]
+  type MessageArray = js.Array[Any]
   
   // This type needs to reference itself
   type StaticToObject = js.Function2[/* includeInstance */ Boolean, /* msg */ Message, js.Object]

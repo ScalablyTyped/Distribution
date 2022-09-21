@@ -11,7 +11,7 @@ object GmePlugin {
     */
   @JSGlobal("GmePlugin.PluginBase")
   @js.native
-  class PluginBase ()
+  open class PluginBase ()
     extends StObject
        with typings.webgme.GmePlugin.PluginBase
 }

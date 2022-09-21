@@ -14,7 +14,7 @@ trait Bibliography extends StObject {
   
   def GenerateUniqueTag(): String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Sources: typings.activexWord.Word.Sources
   
@@ -28,7 +28,7 @@ object Bibliography {
     BibliographyStyle: String,
     Creator: Double,
     GenerateUniqueTag: () => String,
-    Parent: js.Any,
+    Parent: Any,
     Sources: Sources,
     WordDotBibliography_typekey: Bibliography
   ): Bibliography = {
@@ -47,7 +47,7 @@ object Bibliography {
     
     inline def setGenerateUniqueTag(value: () => String): Self = StObject.set(x, "GenerateUniqueTag", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSources(value: Sources): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     

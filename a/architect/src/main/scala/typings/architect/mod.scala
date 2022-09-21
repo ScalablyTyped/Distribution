@@ -5,7 +5,6 @@ import typings.architect.architectStrings.plugin
 import typings.architect.architectStrings.ready
 import typings.architect.architectStrings.service
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,18 +16,18 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def createApp(config: Config): Architect = ^.asInstanceOf[js.Dynamic].applyDynamic("createApp")(config.asInstanceOf[js.Any]).asInstanceOf[Architect]
-  inline def createApp(config: Config, callback: js.Function2[/* err */ Error, /* app */ Architect, Unit]): Architect = (^.asInstanceOf[js.Dynamic].applyDynamic("createApp")(config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Architect]
+  inline def createApp(config: Config, callback: js.Function2[/* err */ js.Error, /* app */ Architect, Unit]): Architect = (^.asInstanceOf[js.Dynamic].applyDynamic("createApp")(config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Architect]
   
   inline def loadConfig(configPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(configPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def loadConfig(configPath: String, callback: js.Function2[/* err */ Error, /* config */ Config, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(configPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadConfig(configPath: String, callback: js.Function2[/* err */ js.Error, /* config */ Config, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(configPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait Architect extends EventEmitter {
     
-    def getService(name: String): js.Any = js.native
+    def getService(name: String): Any = js.native
     
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_plugin(event: plugin, listener: js.Function1[/* plugin */ Plugin, Unit]): this.type = js.native
     @JSName("on")
@@ -40,9 +39,9 @@ object mod {
     ): this.type = js.native
   }
   
-  type Config = js.Any
+  type Config = Any
   
-  type Plugin = js.Any
+  type Plugin = Any
   
-  type Service = js.Any
+  type Service = Any
 }

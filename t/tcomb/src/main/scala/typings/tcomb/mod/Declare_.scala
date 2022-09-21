@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Declare_[T] extends Type[T] {
   
-  def define(`type`: Type[js.Any]): Unit = js.native
+  def define(`type`: Type[scala.Any]): Unit = js.native
   
   def update(instance: T, spec: UpdatePatch): T = js.native
   @JSName("update")

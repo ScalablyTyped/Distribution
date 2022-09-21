@@ -37,7 +37,7 @@ object BleedRatio {
     
     inline def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
     
-    inline def setFieldNamesVarargs(value: String*): Self = StObject.set(x, "fieldNames", js.Array(value :_*))
+    inline def setFieldNamesVarargs(value: String*): Self = StObject.set(x, "fieldNames", js.Array(value*))
     
     inline def setSimplifyEnabled(value: Boolean): Self = StObject.set(x, "simplifyEnabled", value.asInstanceOf[js.Any])
     

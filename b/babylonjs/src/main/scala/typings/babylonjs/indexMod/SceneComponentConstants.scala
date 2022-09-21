@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "SceneComponentConstants")
 @js.native
-class SceneComponentConstants ()
+open class SceneComponentConstants ()
   extends typings.babylonjs.sceneComponentMod.SceneComponentConstants
 /* static members */
 object SceneComponentConstants {
@@ -18,6 +18,10 @@ object SceneComponentConstants {
   @JSImport("babylonjs/index", "SceneComponentConstants.NAME_BOUNDINGBOXRENDERER")
   @js.native
   val NAME_BOUNDINGBOXRENDERER: String = js.native
+  
+  @JSImport("babylonjs/index", "SceneComponentConstants.NAME_DEPTHPEELINGRENDERER")
+  @js.native
+  val NAME_DEPTHPEELINGRENDERER: String = js.native
   
   @JSImport("babylonjs/index", "SceneComponentConstants.NAME_DEPTHRENDERER")
   @js.native
@@ -127,6 +131,10 @@ object SceneComponentConstants {
   @js.native
   val STEP_AFTERRENDERTARGETDRAW_LAYER: Double = js.native
   
+  @JSImport("babylonjs/index", "SceneComponentConstants.STEP_AFTERRENDERTARGETDRAW_PREPASS")
+  @js.native
+  val STEP_AFTERRENDERTARGETDRAW_PREPASS: Double = js.native
+  
   @JSImport("babylonjs/index", "SceneComponentConstants.STEP_AFTERRENDER_AUDIO")
   @js.native
   val STEP_AFTERRENDER_AUDIO: Double = js.native
@@ -151,9 +159,9 @@ object SceneComponentConstants {
   @js.native
   val STEP_BEFORECAMERAUPDATE_SIMPLIFICATIONQUEUE: Double = js.native
   
-  @JSImport("babylonjs/index", "SceneComponentConstants.STEP_BEFORECLEARSTAGE_PREPASS")
+  @JSImport("babylonjs/index", "SceneComponentConstants.STEP_BEFORECLEAR_PREPASS")
   @js.native
-  val STEP_BEFORECLEARSTAGE_PREPASS: Double = js.native
+  val STEP_BEFORECLEAR_PREPASS: Double = js.native
   
   @JSImport("babylonjs/index", "SceneComponentConstants.STEP_BEFORECLEAR_PROCEDURALTEXTURE")
   @js.native
@@ -171,9 +179,17 @@ object SceneComponentConstants {
   @js.native
   val STEP_BEFORERENDERINGMESH_PREPASS: Double = js.native
   
+  @JSImport("babylonjs/index", "SceneComponentConstants.STEP_BEFORERENDERTARGETCLEAR_PREPASS")
+  @js.native
+  val STEP_BEFORERENDERTARGETCLEAR_PREPASS: Double = js.native
+  
   @JSImport("babylonjs/index", "SceneComponentConstants.STEP_BEFORERENDERTARGETDRAW_LAYER")
   @js.native
   val STEP_BEFORERENDERTARGETDRAW_LAYER: Double = js.native
+  
+  @JSImport("babylonjs/index", "SceneComponentConstants.STEP_BEFORERENDERTARGETDRAW_PREPASS")
+  @js.native
+  val STEP_BEFORERENDERTARGETDRAW_PREPASS: Double = js.native
   
   @JSImport("babylonjs/index", "SceneComponentConstants.STEP_CAMERADRAWRENDERTARGET_EFFECTLAYER")
   @js.native

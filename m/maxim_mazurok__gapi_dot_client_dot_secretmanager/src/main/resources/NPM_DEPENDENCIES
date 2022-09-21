@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.secretmanager" : "1.0.20201113"
+      "@maxim_mazurok/gapi.client.secretmanager" : "1.0.20220729"
     }
   ],
   "test-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.secretmanager" : "1.0.20201113"
+      "@maxim_mazurok/gapi.client.secretmanager" : "1.0.20220729"
     }
   ],
   "compile-devDependencies" : [

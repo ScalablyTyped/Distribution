@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.anon.KeyValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ trait ExtensionDraft extends StObject {
   
   var assets: js.Array[ExtensionDraftAsset]
   
-  var createdDate: Date
+  var createdDate: js.Date
   
   var draftState: DraftStateType
   
@@ -18,7 +17,7 @@ trait ExtensionDraft extends StObject {
   
   var id: String
   
-  var lastUpdated: Date
+  var lastUpdated: js.Date
   
   var payload: ExtensionPayload
   
@@ -34,11 +33,11 @@ object ExtensionDraft {
   
   inline def apply(
     assets: js.Array[ExtensionDraftAsset],
-    createdDate: Date,
+    createdDate: js.Date,
     draftState: DraftStateType,
     extensionName: String,
     id: String,
-    lastUpdated: Date,
+    lastUpdated: js.Date,
     payload: ExtensionPayload,
     product: String,
     publisherName: String,
@@ -53,9 +52,9 @@ object ExtensionDraft {
     
     inline def setAssets(value: js.Array[ExtensionDraftAsset]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
-    inline def setAssetsVarargs(value: ExtensionDraftAsset*): Self = StObject.set(x, "assets", js.Array(value :_*))
+    inline def setAssetsVarargs(value: ExtensionDraftAsset*): Self = StObject.set(x, "assets", js.Array(value*))
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setDraftState(value: DraftStateType): Self = StObject.set(x, "draftState", value.asInstanceOf[js.Any])
     
@@ -63,7 +62,7 @@ object ExtensionDraft {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdated(value: Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: js.Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
     inline def setPayload(value: ExtensionPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
@@ -73,10 +72,10 @@ object ExtensionDraft {
     
     inline def setValidationErrors(value: js.Array[KeyValue]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
     
-    inline def setValidationErrorsVarargs(value: KeyValue*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
+    inline def setValidationErrorsVarargs(value: KeyValue*): Self = StObject.set(x, "validationErrors", js.Array(value*))
     
     inline def setValidationWarnings(value: js.Array[KeyValue]): Self = StObject.set(x, "validationWarnings", value.asInstanceOf[js.Any])
     
-    inline def setValidationWarningsVarargs(value: KeyValue*): Self = StObject.set(x, "validationWarnings", js.Array(value :_*))
+    inline def setValidationWarningsVarargs(value: KeyValue*): Self = StObject.set(x, "validationWarnings", js.Array(value*))
   }
 }

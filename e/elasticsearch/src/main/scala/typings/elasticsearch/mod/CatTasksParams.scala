@@ -39,7 +39,7 @@ object CatTasksParams {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
     
@@ -51,7 +51,7 @@ object CatTasksParams {
     
     inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
     
-    inline def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value :_*))
+    inline def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value*))
     
     inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
@@ -61,7 +61,7 @@ object CatTasksParams {
     
     inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
-    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
+    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value*))
     
     inline def setParentNode(value: String): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     

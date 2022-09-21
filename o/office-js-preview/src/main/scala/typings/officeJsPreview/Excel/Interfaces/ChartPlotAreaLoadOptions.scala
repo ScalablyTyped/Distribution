@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * This object represents the attributes for a chart plot area.
   *
-  * This object represents the attributes for a chart plotArea object.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait ChartPlotAreaLoadOptions extends StObject {
@@ -19,81 +19,81 @@ trait ChartPlotAreaLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the formatting of a chart plot area.
     *
-    * Specifies the formatting of a chart plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var format: js.UndefOr[ChartPlotAreaFormatLoadOptions] = js.undefined
   
   /**
+    * Specifies the height value of a plot area.
     *
-    * Specifies the height value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var height: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the inside height value of a plot area.
     *
-    * Specifies the insideHeight value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var insideHeight: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the inside left value of a plot area.
     *
-    * Specifies the insideLeft value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var insideLeft: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the inside top value of a plot area.
     *
-    * Specifies the insideTop value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var insideTop: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the inside width value of a plot area.
     *
-    * Specifies the insideWidth value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var insideWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the left value of a plot area.
     *
-    * Specifies the left value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var left: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the position of a plot area.
     *
-    * Specifies the position of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var position: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the top value of a plot area.
     *
-    * Specifies the top value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var top: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the width value of a plot area.
     *
-    * Specifies the width value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var width: js.UndefOr[Boolean] = js.undefined

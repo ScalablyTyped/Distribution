@@ -22,6 +22,6 @@ object MultipleGetObjectsResponse {
     
     inline def setResults(value: js.Array[TObject & ObjectWithObjectID]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: (TObject & ObjectWithObjectID)*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: (TObject & ObjectWithObjectID)*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

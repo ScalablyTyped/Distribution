@@ -1,6 +1,5 @@
 package typings.sipJs
 
-import typings.sipJs.ackMod.IncomingAckRequest
 import typings.sipJs.anon.SessionDescriptionHandlerModifiers
 import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandler
 import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerModifier
@@ -15,6 +14,7 @@ import typings.sipJs.inviteMod.IncomingInviteRequest
 import typings.sipJs.inviteMod.OutgoingInviteRequest
 import typings.sipJs.inviterMod.Inviter
 import typings.sipJs.inviterOptionsMod.InviterOptions
+import typings.sipJs.methodsAckMod.IncomingAckRequest
 import typings.sipJs.methodsByeMod.IncomingByeRequest
 import typings.sipJs.methodsByeMod.OutgoingByeRequest
 import typings.sipJs.methodsInfoMod.IncomingInfoRequest
@@ -140,28 +140,28 @@ object sessionMod {
     var _replacee: js.UndefOr[Session] = js.native
     
     /** Dialogs session description handler. */
-    /* private */ var _sessionDescriptionHandler: js.Any = js.native
+    /* private */ var _sessionDescriptionHandler: Any = js.native
     
     /** SDH modifiers for the initial INVITE transaction. */
-    /* private */ var _sessionDescriptionHandlerModifiers: js.Any = js.native
+    /* private */ var _sessionDescriptionHandlerModifiers: Any = js.native
     
     /** SDH modifiers for re-INVITE transactions. */
-    /* private */ var _sessionDescriptionHandlerModifiersReInvite: js.Any = js.native
+    /* private */ var _sessionDescriptionHandlerModifiersReInvite: Any = js.native
     
     /** SDH options for the initial INVITE transaction. */
-    /* private */ var _sessionDescriptionHandlerOptions: js.Any = js.native
+    /* private */ var _sessionDescriptionHandlerOptions: Any = js.native
     
     /** SDH options for re-NVITE transactions.*/
-    /* private */ var _sessionDescriptionHandlerOptionsReInvite: js.Any = js.native
+    /* private */ var _sessionDescriptionHandlerOptionsReInvite: Any = js.native
     
     /** Session state. */
-    /* private */ var _state: js.Any = js.native
+    /* private */ var _state: Any = js.native
     
     /** Session state emitter. */
-    /* private */ var _stateEventEmitter: js.Any = js.native
+    /* private */ var _stateEventEmitter: Any = js.native
     
     /** User agent. */
-    /* private */ var _userAgent: js.Any = js.native
+    /* private */ var _userAgent: Any = js.native
     
     /**
       * Send ACK and then BYE. There are unrecoverable errors which can occur
@@ -192,13 +192,13 @@ object sessionMod {
     def bye(): js.Promise[OutgoingByeRequest] = js.native
     def bye(options: SessionByeOptions): js.Promise[OutgoingByeRequest] = js.native
     
-    /* private */ var copyRequestOptions: js.Any = js.native
+    /* private */ var copyRequestOptions: Any = js.native
     
     /**
       * Property reserved for use by instance owner.
       * @defaultValue `undefined`
       */
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     /**
       * The session delegate.
@@ -239,7 +239,7 @@ object sessionMod {
       */
     /* protected */ def getOffer(options: SessionDescriptionHandlerModifiers): js.Promise[Body] = js.native
     
-    /* private */ var getReasonHeaderValue: js.Any = js.native
+    /* private */ var getReasonHeaderValue: Any = js.native
     
     /**
       * A unique identifier for this session.
@@ -308,7 +308,7 @@ object sessionMod {
     /* protected */ def onMessageRequest(request: IncomingMessageRequest): Unit = js.native
     
     /** If defined, NOTIFYs associated with a REFER subscription are delivered here. */
-    /* private */ var onNotify: js.Any = js.native
+    /* private */ var onNotify: Any = js.native
     
     /**
       * Handle in dialog NOTIFY request.
@@ -329,10 +329,10 @@ object sessionMod {
     /* protected */ def onReferRequest(request: IncomingReferRequest): Unit = js.native
     
     /** True if there is an outgoing re-INVITE request outstanding. */
-    /* private */ var pendingReinvite: js.Any = js.native
+    /* private */ var pendingReinvite: Any = js.native
     
     /** True if there is an incoming re-INVITE ACK request outstanding. */
-    /* private */ var pendingReinviteAck: js.Any = js.native
+    /* private */ var pendingReinviteAck: Any = js.native
     
     /**
       * Proffer a {@link Referral}. Send a REFER.
@@ -344,9 +344,9 @@ object sessionMod {
     def refer(referTo: Session): js.Promise[OutgoingReferRequest] = js.native
     def refer(referTo: Session, options: SessionReferOptions): js.Promise[OutgoingReferRequest] = js.native
     
-    /* private */ var referExtraHeaders: js.Any = js.native
+    /* private */ var referExtraHeaders: Any = js.native
     
-    /* private */ var referToString: js.Any = js.native
+    /* private */ var referToString: Any = js.native
     
     /**
       * The identity of the remote user.

@@ -7,9 +7,7 @@ import typings.geojson.mod.Geometry
 import typings.geojson.mod.GeometryObject
 import typings.node.streamMod.Readable
 import typings.shapefile.anon.Done
-import typings.std.ArrayBuffer
 import typings.std.ReadableStream
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +34,7 @@ object mod {
   inline def read(shp: Openable, dbf: Openable): js.Promise[FeatureCollection[Geometry, GeoJsonProperties]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(shp.asInstanceOf[js.Any], dbf.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FeatureCollection[Geometry, GeoJsonProperties]]]
   inline def read(shp: Openable, dbf: Openable, options: Options): js.Promise[FeatureCollection[Geometry, GeoJsonProperties]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(shp.asInstanceOf[js.Any], dbf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FeatureCollection[Geometry, GeoJsonProperties]]]
   
-  type Openable = String | ArrayBuffer | Uint8Array | Readable | ReadableStream[js.Any]
+  type Openable = String | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | Readable | ReadableStream[Any]
   
   trait Options extends StObject {
     
@@ -82,7 +80,7 @@ object mod {
       
       inline def setBbox(value: js.Array[Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      inline def setBboxVarargs(value: Double*): Self = StObject.set(x, "bbox", js.Array(value :_*))
+      inline def setBboxVarargs(value: Double*): Self = StObject.set(x, "bbox", js.Array(value*))
       
       inline def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       

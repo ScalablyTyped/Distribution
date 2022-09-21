@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object isMod {
   
   /* was `typeof core.Object.is` */
-  inline def apply(value1: js.Any, value2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(value1: Any, value2: Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("core-js/fn/object/is", JSImport.Namespace)
   @js.native

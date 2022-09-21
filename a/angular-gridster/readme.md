@@ -10,15 +10,13 @@ This directive gives you gridster behavior
 | ------------------ | :-------------: |
 | Full name          | angular-gridster |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 142792 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15479.0 |
+| # stars            | 982.0 |
 
 ## Links
 - [Homepage](http://manifestwebdesign.github.io/angular-gridster)
-- [Bugs](https://github.com/ManifestWebDesign/angular-gridster/issues)
-- [Repository](https://github.com/ManifestWebDesign/angular-gridster)
 - [Npm](https://www.npmjs.com/package/angular-gridster)
     
 

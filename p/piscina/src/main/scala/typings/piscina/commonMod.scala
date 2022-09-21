@@ -2,8 +2,6 @@ package typings.piscina
 
 import typings.node.workerThreadsMod.MessagePort
 import typings.piscina.piscinaBooleans.`true`
-import typings.std.Error
-import typings.std.Int32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,11 +29,11 @@ object commonMod {
     inline def workerData_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("workerData")(x.asInstanceOf[js.Any])
   }
   
-  inline def isMovable(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMovable")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isMovable(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMovable")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isTaskQueue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTaskQueue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTaskQueue(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTaskQueue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isTransferable(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTransferable")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTransferable(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTransferable")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("piscina/dist/src/common", "kFieldCount")
   @js.native
@@ -84,14 +82,16 @@ object commonMod {
     
     var filename: String
     
-    var task: js.Any
+    var name: String
+    
+    var task: Any
     
     var taskId: Double
   }
   object RequestMessage {
     
-    inline def apply(filename: String, task: js.Any, taskId: Double): RequestMessage = {
-      val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
+    inline def apply(filename: String, name: String, task: Any, taskId: Double): RequestMessage = {
+      val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestMessage]
     }
     
@@ -99,7 +99,9 @@ object commonMod {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      inline def setTask(value: js.Any): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setTask(value: Any): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
       
       inline def setTaskId(value: Double): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     }
@@ -107,26 +109,26 @@ object commonMod {
   
   trait ResponseMessage extends StObject {
     
-    var error: Error | Null
+    var error: js.Error | Null
     
-    var result: js.Any
+    var result: Any
     
     var taskId: Double
   }
   object ResponseMessage {
     
-    inline def apply(result: js.Any, taskId: Double): ResponseMessage = {
+    inline def apply(result: Any, taskId: Double): ResponseMessage = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any], error = null)
       __obj.asInstanceOf[ResponseMessage]
     }
     
     extension [Self <: ResponseMessage](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorNull: Self = StObject.set(x, "error", null)
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setTaskId(value: Double): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     }
@@ -136,18 +138,26 @@ object commonMod {
     
     var filename: String | Null
     
+    var name: String
+    
     var niceIncrement: Double
     
     var port: MessagePort
     
-    var sharedBuffer: Int32Array
+    var sharedBuffer: js.typedarray.Int32Array
     
     var useAtomics: Boolean
   }
   object StartupMessage {
     
-    inline def apply(niceIncrement: Double, port: MessagePort, sharedBuffer: Int32Array, useAtomics: Boolean): StartupMessage = {
-      val __obj = js.Dynamic.literal(niceIncrement = niceIncrement.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], sharedBuffer = sharedBuffer.asInstanceOf[js.Any], useAtomics = useAtomics.asInstanceOf[js.Any], filename = null)
+    inline def apply(
+      name: String,
+      niceIncrement: Double,
+      port: MessagePort,
+      sharedBuffer: js.typedarray.Int32Array,
+      useAtomics: Boolean
+    ): StartupMessage = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], niceIncrement = niceIncrement.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], sharedBuffer = sharedBuffer.asInstanceOf[js.Any], useAtomics = useAtomics.asInstanceOf[js.Any], filename = null)
       __obj.asInstanceOf[StartupMessage]
     }
     
@@ -157,11 +167,13 @@ object commonMod {
       
       inline def setFilenameNull: Self = StObject.set(x, "filename", null)
       
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
       inline def setNiceIncrement(value: Double): Self = StObject.set(x, "niceIncrement", value.asInstanceOf[js.Any])
       
       inline def setPort(value: MessagePort): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      inline def setSharedBuffer(value: Int32Array): Self = StObject.set(x, "sharedBuffer", value.asInstanceOf[js.Any])
+      inline def setSharedBuffer(value: js.typedarray.Int32Array): Self = StObject.set(x, "sharedBuffer", value.asInstanceOf[js.Any])
       
       inline def setUseAtomics(value: Boolean): Self = StObject.set(x, "useAtomics", value.asInstanceOf[js.Any])
     }

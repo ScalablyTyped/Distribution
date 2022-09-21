@@ -1,31 +1,55 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.instantly
-import typings.devextreme.devextremeStrings.onDemand
+import typings.devextreme.mod.DevExpress.common.FieldChooserLayout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ApplyChangesMode extends StObject {
   
+  /**
+    * Specifies whether the field chooser allows searching in the &apos;All Fields&apos; section.
+    */
   var allowSearch: js.UndefOr[Boolean] = js.undefined
   
-  var applyChangesMode: js.UndefOr[instantly | onDemand] = js.undefined
+  /**
+    * Specifies when to apply changes made in the field chooser to the PivotGrid.
+    */
+  var applyChangesMode: js.UndefOr[typings.devextreme.mod.DevExpress.common.charts.ApplyChangesMode] = js.undefined
   
+  /**
+    * Enables or disables the field chooser.
+    */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies the field chooser height.
+    */
   var height: js.UndefOr[Double] = js.undefined
   
-  var layout: js.UndefOr[
-    typings.devextreme.devextremeNumbers.`0` | typings.devextreme.devextremeNumbers.`1` | typings.devextreme.devextremeNumbers.`2`
-  ] = js.undefined
+  /**
+    * Specifies the field chooser layout.
+    */
+  var layout: js.UndefOr[FieldChooserLayout] = js.undefined
   
+  /**
+    * Specifies a delay in milliseconds between when a user finishes typing in the field chooser&apos;s search panel, and when the search is executed.
+    */
   var searchTimeout: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Strings that can be changed or localized in the pivot grid&apos;s integrated Field Chooser.
+    */
   var texts: js.UndefOr[AllFields] = js.undefined
   
+  /**
+    * Specifies the text to display as a title of the field chooser popup window.
+    */
   var title: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the field chooser width.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object ApplyChangesMode {
@@ -41,7 +65,7 @@ object ApplyChangesMode {
     
     inline def setAllowSearchUndefined: Self = StObject.set(x, "allowSearch", js.undefined)
     
-    inline def setApplyChangesMode(value: instantly | onDemand): Self = StObject.set(x, "applyChangesMode", value.asInstanceOf[js.Any])
+    inline def setApplyChangesMode(value: typings.devextreme.mod.DevExpress.common.charts.ApplyChangesMode): Self = StObject.set(x, "applyChangesMode", value.asInstanceOf[js.Any])
     
     inline def setApplyChangesModeUndefined: Self = StObject.set(x, "applyChangesMode", js.undefined)
     
@@ -53,9 +77,7 @@ object ApplyChangesMode {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setLayout(
-      value: typings.devextreme.devextremeNumbers.`0` | typings.devextreme.devextremeNumbers.`1` | typings.devextreme.devextremeNumbers.`2`
-    ): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: FieldChooserLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     

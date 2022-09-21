@@ -15,12 +15,12 @@ object legendComponentMod {
   @JSImport("vega-lite/build/src/compile/legend/component", "LEGEND_COMPONENT_PROPERTIES")
   @js.native
   val LEGEND_COMPONENT_PROPERTIES: js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ Any
   ] = js.native
   
   @JSImport("vega-lite/build/src/compile/legend/component", "LegendComponent")
   @js.native
-  class LegendComponent () extends Split[LegendComponentProps] {
+  open class LegendComponent () extends Split[LegendComponentProps] {
     def this(explicit: Partial[LegendComponentProps]) = this()
     def this(explicit: Unit, `implicit`: Partial[LegendComponentProps]) = this()
     def this(explicit: Partial[LegendComponentProps], `implicit`: Partial[LegendComponentProps]) = this()
@@ -59,7 +59,7 @@ object legendComponentMod {
       
       inline def setSelectionsUndefined: Self = StObject.set(x, "selections", js.undefined)
       
-      inline def setSelectionsVarargs(value: String*): Self = StObject.set(x, "selections", js.Array(value :_*))
+      inline def setSelectionsVarargs(value: String*): Self = StObject.set(x, "selections", js.Array(value*))
     }
   }
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IOmNavigator")
 @js.native
-/* private */ class IOmNavigator ()
+/* private */ open class IOmNavigator ()
   extends StObject
      with typings.activexMshtml.MSHTML.IOmNavigator {
   

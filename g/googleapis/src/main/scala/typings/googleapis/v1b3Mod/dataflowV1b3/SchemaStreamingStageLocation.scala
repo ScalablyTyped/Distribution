@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Identifies the location of a streaming computation stage, for
-  * stage-to-stage communication.
-  */
 trait SchemaStreamingStageLocation extends StObject {
   
   /**
     * Identifies the particular stream within the streaming Dataflow job.
     */
-  var streamId: js.UndefOr[String] = js.undefined
+  var streamId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaStreamingStageLocation {
   
@@ -25,6 +21,8 @@ object SchemaStreamingStageLocation {
   extension [Self <: SchemaStreamingStageLocation](x: Self) {
     
     inline def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
+    
+    inline def setStreamIdNull: Self = StObject.set(x, "streamId", null)
     
     inline def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
   }

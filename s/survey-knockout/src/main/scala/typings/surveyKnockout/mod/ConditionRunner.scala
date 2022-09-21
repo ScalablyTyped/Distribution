@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "ConditionRunner")
 @js.native
-class ConditionRunner protected () extends ExpressionRunnerBase {
+open class ConditionRunner protected () extends ExpressionRunnerBase {
   def this(expression: String) = this()
   
   def onRunComplete(result: Boolean): Unit = js.native
   
-  def run(values: HashTable[js.Any]): Boolean = js.native
-  def run(values: HashTable[js.Any], properties: HashTable[js.Any]): Boolean = js.native
+  def run(values: Any): Boolean = js.native
+  def run(values: Any, properties: Any): Boolean = js.native
 }

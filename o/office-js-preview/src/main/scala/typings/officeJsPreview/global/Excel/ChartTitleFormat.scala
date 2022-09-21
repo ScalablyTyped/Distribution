@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides access to the formatting options for a chart title.
   *
-  * Provides access to the office art formatting for chart title.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartTitleFormat")
 @js.native
-class ChartTitleFormat ()
+open class ChartTitleFormat ()
   extends StObject
      with typings.officeJsPreview.Excel.ChartTitleFormat {
   

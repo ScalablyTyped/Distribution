@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.Error")
 @js.native
-class Error ()
+open class Error ()
   extends StObject
      with typings.extjs.Ext.Error
 /* static members */
@@ -27,5 +27,5 @@ object Error {
     * @param err String/Object The error message string, or an object containing the attribute "msg" that will be used as the error message. Any other data included in the object will also be logged to the browser console, if available.
     */
   inline def raise(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("raise")().asInstanceOf[Unit]
-  inline def raise(err: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("raise")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def raise(err: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("raise")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

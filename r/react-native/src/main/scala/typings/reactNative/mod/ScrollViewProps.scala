@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import typings.reactNative.reactNativeStrings.`on-drag`
 import typings.reactNative.reactNativeStrings.always
@@ -18,6 +19,14 @@ trait ScrollViewProps
      with ViewProps
      with ScrollViewPropsIOS
      with ScrollViewPropsAndroid {
+  
+  /**
+    * A React Component that will be used to render sticky headers, should be used together with
+    * stickyHeaderIndices. You may need to set this component if your sticky header uses custom
+    * transforms, for example, when you want your list to have an animated and hidable header.
+    * If component have not been provided, the default ScrollViewStickyHeader component will be used.
+    */
+  var StickyHeaderComponent: js.UndefOr[ComponentType[Any]] = js.undefined
   
   /**
     * These styles will be applied to the scroll view content container which
@@ -189,6 +198,11 @@ trait ScrollViewProps
   var snapToStart: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * When true, Sticky header is hidden when scrolling down, and dock at the top when scrolling up.
+    */
+  var stickyHeaderHiddenOnScroll: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * An array of child indices determining which children get docked to the
     * top of the screen when scrolling. For example passing
     * `stickyHeaderIndices={[0]}` will cause the first child to be fixed to the
@@ -298,16 +312,24 @@ object ScrollViewProps {
     
     inline def setSnapToOffsetsUndefined: Self = StObject.set(x, "snapToOffsets", js.undefined)
     
-    inline def setSnapToOffsetsVarargs(value: Double*): Self = StObject.set(x, "snapToOffsets", js.Array(value :_*))
+    inline def setSnapToOffsetsVarargs(value: Double*): Self = StObject.set(x, "snapToOffsets", js.Array(value*))
     
     inline def setSnapToStart(value: Boolean): Self = StObject.set(x, "snapToStart", value.asInstanceOf[js.Any])
     
     inline def setSnapToStartUndefined: Self = StObject.set(x, "snapToStart", js.undefined)
     
+    inline def setStickyHeaderComponent(value: ComponentType[Any]): Self = StObject.set(x, "StickyHeaderComponent", value.asInstanceOf[js.Any])
+    
+    inline def setStickyHeaderComponentUndefined: Self = StObject.set(x, "StickyHeaderComponent", js.undefined)
+    
+    inline def setStickyHeaderHiddenOnScroll(value: Boolean): Self = StObject.set(x, "stickyHeaderHiddenOnScroll", value.asInstanceOf[js.Any])
+    
+    inline def setStickyHeaderHiddenOnScrollUndefined: Self = StObject.set(x, "stickyHeaderHiddenOnScroll", js.undefined)
+    
     inline def setStickyHeaderIndices(value: js.Array[Double]): Self = StObject.set(x, "stickyHeaderIndices", value.asInstanceOf[js.Any])
     
     inline def setStickyHeaderIndicesUndefined: Self = StObject.set(x, "stickyHeaderIndices", js.undefined)
     
-    inline def setStickyHeaderIndicesVarargs(value: Double*): Self = StObject.set(x, "stickyHeaderIndices", js.Array(value :_*))
+    inline def setStickyHeaderIndicesVarargs(value: Double*): Self = StObject.set(x, "stickyHeaderIndices", js.Array(value*))
   }
 }

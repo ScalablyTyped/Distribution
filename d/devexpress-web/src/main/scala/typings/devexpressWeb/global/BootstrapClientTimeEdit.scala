@@ -5,7 +5,6 @@ import typings.devexpressWeb.ASPxClientEditKeyEventHandler
 import typings.devexpressWeb.ASPxClientEditValidationEventHandler
 import typings.devexpressWeb.ASPxClientEventHandler
 import typings.devexpressWeb.ASPxClientProcessingModeEventHandler
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientTimeEdit")
 @js.native
-class BootstrapClientTimeEdit ()
+open class BootstrapClientTimeEdit ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTimeEdit {
   
@@ -50,7 +49,7 @@ class BootstrapClientTimeEdit ()
     * @param number A button index.
     */
   /* CompleteClass */
-  override def GetButton(number: Double): js.Any = js.native
+  override def GetButton(number: Double): Any = js.native
   
   /**
     * Returns a value specifying whether a button is displayed. true, if the button visible; otherwise, false.
@@ -82,7 +81,7 @@ class BootstrapClientTimeEdit ()
     * Gets the date that is the editor's value.
     */
   /* CompleteClass */
-  override def GetDate(): Date = js.native
+  override def GetDate(): js.Date = js.native
   
   /**
     * Returns a value indicating whether an editor is enabled.
@@ -103,10 +102,10 @@ class BootstrapClientTimeEdit ()
   override def GetHeight(): Double = js.native
   
   /**
-    * Returns an HTML element that represents the control's input element.
+    * Returns an HTML element that is the control's input element.
     */
   /* CompleteClass */
-  override def GetInputElement(): js.Any = js.native
+  override def GetInputElement(): Any = js.native
   
   /**
     * Gets a value that indicates whether the editor's value passes validation.
@@ -118,13 +117,13 @@ class BootstrapClientTimeEdit ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a value indicating whether the editor's state is read-only on the client-side.
@@ -142,7 +141,7 @@ class BootstrapClientTimeEdit ()
     * Returns the editor's value.
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -245,7 +244,7 @@ class BootstrapClientTimeEdit ()
     * @param date A DateTime object that is the date.
     */
   /* CompleteClass */
-  override def SetDate(date: Date): Unit = js.native
+  override def SetDate(date: js.Date): Unit = js.native
   
   /**
     * Specifies whether an editor is enabled.
@@ -303,7 +302,7 @@ class BootstrapClientTimeEdit ()
     * @param value An object representing the data to be assigned to the editor's edit value.
     */
   /* CompleteClass */
-  override def SetValue(value: js.Any): Unit = js.native
+  override def SetValue(value: Any): Unit = js.native
   
   /**
     * Specifies whether a control is displayed.
@@ -320,7 +319,7 @@ class BootstrapClientTimeEdit ()
   override def SetWidth(width: Double): Unit = js.native
   
   /**
-    * Fires on the client side when the editor's text is changed and focus moves out of the editor by end-user interactions.
+    * Occurs on the client when a user changes the editor's text and the editor loses focus.
     */
   /* CompleteClass */
   var TextChanged: typings.devexpressWeb.ASPxClientEvent[ASPxClientProcessingModeEventHandler[typings.devexpressWeb.ASPxClientTextEdit]] = js.native
@@ -334,7 +333,7 @@ class BootstrapClientTimeEdit ()
   ] = js.native
   
   /**
-    * Fires on the client side when the editor's input value is changed before the focus moves out of the editor by end-user interactions.
+    * Fires on the client each time a user changes an editor's input value.
     */
   /* CompleteClass */
   var UserInput: typings.devexpressWeb.ASPxClientEvent[ASPxClientEventHandler[typings.devexpressWeb.ASPxClientTextEdit]] = js.native

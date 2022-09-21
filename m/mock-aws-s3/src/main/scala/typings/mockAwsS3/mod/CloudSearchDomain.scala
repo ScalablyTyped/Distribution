@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class CloudSearchDomain ()
+open class CloudSearchDomain ()
   extends typings.awsSdk.mod.CloudSearchDomain {
   def this(options: ClientConfiguration) = this()
 }

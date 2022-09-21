@@ -19,29 +19,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait IObservableOptions extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.undefined
+  var default: js.UndefOr[Any] = js.undefined
   
   var args: js.UndefOr[
     js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ Any
     ]
   ] = js.undefined
   
-  var factory: js.UndefOr[js.Any] = js.undefined
+  var factory: js.UndefOr[Any] = js.undefined
   
   var key: String
   
   var localizer: js.UndefOr[LocalizedObservable] = js.undefined
   
-  var options: js.UndefOr[js.Any] = js.undefined
+  var options: js.UndefOr[Any] = js.undefined
   
   var path: js.UndefOr[String] = js.undefined
   
-  var read: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var read: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var store: js.UndefOr[js.Any] = js.undefined
+  var store: js.UndefOr[Any] = js.undefined
   
-  var write: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+  var write: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.undefined
 }
 object IObservableOptions {
   
@@ -54,21 +54,21 @@ object IObservableOptions {
     
     inline def setArgs(
       value: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ Any
         ]
     ): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     inline def setArgsVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any)*
-    ): Self = StObject.set(x, "args", js.Array(value :_*))
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ Any)*
+    ): Self = StObject.set(x, "args", js.Array(value*))
     
-    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    inline def setFactory(value: js.Any): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+    inline def setFactory(value: Any): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     
     inline def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
     
@@ -78,7 +78,7 @@ object IObservableOptions {
     
     inline def setLocalizerUndefined: Self = StObject.set(x, "localizer", js.undefined)
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
@@ -86,15 +86,15 @@ object IObservableOptions {
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setRead(value: () => js.Any): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+    inline def setRead(value: () => Any): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
     
     inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
-    inline def setWrite(value: /* value */ js.Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    inline def setWrite(value: /* value */ Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     
     inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }

@@ -18,8 +18,8 @@ object ClassifierShim {
   
   inline def apply(
     classifier: Classifier,
-    dispose: js.Any => Unit,
-    factory: js.Any,
+    dispose: Any => Unit,
+    factory: Any,
     getClassificationsForLine: (String, EndOfLineState) => String,
     host: IClassifierHost
   ): ClassifierShim = {

@@ -11,14 +11,14 @@ object anon {
   @js.native
   trait Call extends StObject {
     
-    def apply(modules: js.Any*): js.Any = js.native
+    def apply(modules: Any*): Any = js.native
     
     def sharedInjector(): Unit = js.native
   }
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     @JSName("$scope")
     var $scope: js.UndefOr[IScope] = js.undefined

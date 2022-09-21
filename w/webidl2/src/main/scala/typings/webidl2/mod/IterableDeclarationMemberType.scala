@@ -38,7 +38,7 @@ object IterableDeclarationMemberType {
     
     inline def setIdlType(value: js.Array[IDLTypeDescription] | (js.Tuple2[IDLTypeDescription, IDLTypeDescription])): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
-    inline def setIdlTypeVarargs(value: IDLTypeDescription*): Self = StObject.set(x, "idlType", js.Array(value :_*))
+    inline def setIdlTypeVarargs(value: IDLTypeDescription*): Self = StObject.set(x, "idlType", js.Array(value*))
     
     inline def setReadonly(value: `false`): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ trait Collection
   extends StObject
      with Query {
   
-  def add(options: CommonOption[js.Any]): js.Promise[AddCollectionResult] = js.native
+  def add(options: CommonOption[Any]): js.Promise[AddCollectionResult] = js.native
   
   def aggregate(): Aggregate = js.native
   

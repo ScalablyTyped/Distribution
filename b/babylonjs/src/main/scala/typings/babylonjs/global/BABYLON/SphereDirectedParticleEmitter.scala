@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param direction1 the min limit of the emission direction (up vector by default)
   * @param direction2 the max limit of the emission direction (up vector by default)
   */
-class SphereDirectedParticleEmitter ()
+open class SphereDirectedParticleEmitter ()
   extends StObject
      with typings.babylonjs.BABYLON.SphereDirectedParticleEmitter {
   def this(radius: Double) = this()
@@ -78,10 +78,17 @@ class SphereDirectedParticleEmitter ()
   
   /**
     * Called by the GPUParticleSystem to setup the update shader
-    * @param effect defines the update shader
+    * @param uboOrEffect defines the update shader
     */
   /* CompleteClass */
-  override def applyToShader(effect: typings.babylonjs.BABYLON.Effect): Unit = js.native
+  override def applyToShader(uboOrEffect: typings.babylonjs.BABYLON.UniformBufferEffectCommonAccessor): Unit = js.native
+  
+  /**
+    * Creates the structure of the ubo for this particle emitter
+    * @param ubo ubo to create the structure for
+    */
+  /* CompleteClass */
+  override def buildUniformLayout(ubo: typings.babylonjs.BABYLON.UniformBuffer): Unit = js.native
   
   /**
     * The min limit of the emission direction.
@@ -120,14 +127,14 @@ class SphereDirectedParticleEmitter ()
     * @param serializationObject defines the JSON object
     */
   /* CompleteClass */
-  override def parse(serializationObject: js.Any): Unit = js.native
+  override def parse(serializationObject: Any): Unit = js.native
   /**
     * Parse properties from a JSON object
     * @param serializationObject defines the JSON object
     * @param scene defines the hosting scene
     */
   /* CompleteClass */
-  override def parse(serializationObject: js.Any, scene: Nullable[typings.babylonjs.BABYLON.Scene]): Unit = js.native
+  override def parse(serializationObject: Any, scene: Nullable[typings.babylonjs.BABYLON.Scene]): Unit = js.native
   
   /**
     * The radius of the emission sphere.
@@ -146,19 +153,17 @@ class SphereDirectedParticleEmitter ()
     * @returns the JSON object
     */
   /* CompleteClass */
-  override def serialize(): js.Any = js.native
+  override def serialize(): Any = js.native
   
   /**
     * Called by the particle System when the direction is computed for the created particle.
     * @param worldMatrix is the world matrix of the particle system
     * @param directionToUpdate is the direction vector to update with the result
-    * @param particle is the particle we are computed the direction for
     */
   /* CompleteClass */
   override def startDirectionFunction(
     worldMatrix: typings.babylonjs.BABYLON.Matrix,
-    directionToUpdate: typings.babylonjs.BABYLON.Vector3,
-    particle: typings.babylonjs.BABYLON.Particle
+    directionToUpdate: typings.babylonjs.BABYLON.Vector3
   ): Unit = js.native
   /**
     * Called by the particle System when the direction is computed for the created particle.
@@ -173,6 +178,22 @@ class SphereDirectedParticleEmitter ()
     directionToUpdate: typings.babylonjs.BABYLON.Vector3,
     particle: typings.babylonjs.BABYLON.Particle,
     isLocal: Boolean
+  ): Unit = js.native
+  /**
+    * Called by the particle System when the direction is computed for the created particle.
+    * @param worldMatrix is the world matrix of the particle system
+    * @param directionToUpdate is the direction vector to update with the result
+    * @param particle is the particle we are computed the direction for
+    * @param isLocal defines if the direction should be set in local space
+    * @param inverseWorldMatrix defines the inverted world matrix to use if isLocal is false
+    */
+  /* CompleteClass */
+  override def startDirectionFunction(
+    worldMatrix: typings.babylonjs.BABYLON.Matrix,
+    directionToUpdate: typings.babylonjs.BABYLON.Vector3,
+    particle: typings.babylonjs.BABYLON.Particle,
+    isLocal: Boolean,
+    inverseWorldMatrix: typings.babylonjs.BABYLON.Matrix
   ): Unit = js.native
   
   /**

@@ -10,10 +10,10 @@ Handles keyboard shortcuts in the browser
 | ------------------ | :-------------: |
 | Full name          | combokeys |
 | Keywords           | keyboard, shortcuts, events, browser |
-| # releases         | 2 |
-| # dependents       | 20 |
-| # downloads        | 947610 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 93003.0 |
+| # stars            | 675.0 |
 
 ## Links
 - [Homepage](https://github.com/PolicyStat/combokeys)

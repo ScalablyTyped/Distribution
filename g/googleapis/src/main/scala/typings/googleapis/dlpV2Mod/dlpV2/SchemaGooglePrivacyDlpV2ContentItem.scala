@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Container structure for the content to inspect.
-  */
 trait SchemaGooglePrivacyDlpV2ContentItem extends StObject {
   
   /**
@@ -15,16 +12,14 @@ trait SchemaGooglePrivacyDlpV2ContentItem extends StObject {
   var byteItem: js.UndefOr[SchemaGooglePrivacyDlpV2ByteContentItem] = js.undefined
   
   /**
-    * Structured content for inspection. See
-    * https://cloud.google.com/dlp/docs/inspecting-text#inspecting_a_table to
-    * learn more.
+    * Structured content for inspection. See https://cloud.google.com/dlp/docs/inspecting-text#inspecting_a_table to learn more.
     */
   var table: js.UndefOr[SchemaGooglePrivacyDlpV2Table] = js.undefined
   
   /**
     * String data to inspect or redact.
     */
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ContentItem {
   
@@ -44,6 +39,8 @@ object SchemaGooglePrivacyDlpV2ContentItem {
     inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

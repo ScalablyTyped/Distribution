@@ -44,7 +44,7 @@ object GetCelebrityRecognitionResponse {
     
     inline def setCelebritiesUndefined: Self = StObject.set(x, "Celebrities", js.undefined)
     
-    inline def setCelebritiesVarargs(value: CelebrityRecognition*): Self = StObject.set(x, "Celebrities", js.Array(value :_*))
+    inline def setCelebritiesVarargs(value: CelebrityRecognition*): Self = StObject.set(x, "Celebrities", js.Array(value*))
     
     inline def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     

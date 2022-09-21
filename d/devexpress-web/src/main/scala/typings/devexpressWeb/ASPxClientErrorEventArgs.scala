@@ -14,17 +14,17 @@ trait ASPxClientErrorEventArgs
   /**
     * Provides access to information about a server-side error.
     */
-  var Error: js.Any
+  var Error: Any
 }
 object ASPxClientErrorEventArgs {
   
-  inline def apply(Error: js.Any): ASPxClientErrorEventArgs = {
+  inline def apply(Error: Any): ASPxClientErrorEventArgs = {
     val __obj = js.Dynamic.literal(Error = Error.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientErrorEventArgs]
   }
   
   extension [Self <: ASPxClientErrorEventArgs](x: Self) {
     
-    inline def setError(value: js.Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
   }
 }

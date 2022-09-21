@@ -12,12 +12,12 @@ trait Setting extends StObject {
   var name: js.UndefOr[SettingName] = js.undefined
   
   /**
-    * The ARN of the principal, which can be an IAM user, IAM role, or the root user. If this field is omitted, the authenticated user is assumed.
+    * The ARN of the principal. It can be an IAM user, IAM role, or the root user. If this field is omitted, the authenticated user is assumed.
     */
   var principalArn: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether the account setting is enabled or disabled for the specified resource.
+    * Determines whether the account setting is enabled or disabled for the specified resource.
     */
   var value: js.UndefOr[String] = js.undefined
 }

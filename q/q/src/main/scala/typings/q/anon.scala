@@ -29,8 +29,8 @@ object anon {
     def Promise[T](
       resolver: js.Function3[
           /* resolve */ js.Function1[/* val */ js.UndefOr[IWhenable[T]], Unit], 
-          /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
-          /* notify */ js.Function1[/* progress */ js.Any, Unit], 
+          /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
+          /* notify */ js.Function1[/* progress */ Any, Unit], 
           Unit
         ]
     ): typings.q.mod.Promise[T] = js.native
@@ -58,7 +58,7 @@ object anon {
         ]
     ): Promise[js.Tuple6[A, B, C, D, E, F]] = js.native
     
-    def async[T](generatorFunction: js.Any): js.Function1[/* repeated */ js.Any, Promise[T]] = js.native
+    def async[T](generatorFunction: Any): js.Function1[/* repeated */ Any, Promise[T]] = js.native
     
     def defer[T](): Deferred[T] = js.native
     
@@ -66,76 +66,76 @@ object anon {
     def delay[T](promiseOrValue: T, ms: Double): Promise[T] = js.native
     def delay[T](promiseOrValue: Promise[T], ms: Double): Promise[T] = js.native
     
-    def denodeify[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = js.native
+    def denodeify[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = js.native
     
-    def fbind[T](method: js.Function1[/* repeated */ js.Any, IWhenable[T]], args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = js.native
+    def fbind[T](method: js.Function1[/* repeated */ Any, IWhenable[T]], args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = js.native
     
-    def fcall[T](method: js.Function1[/* repeated */ js.Any, T], args: js.Any*): Promise[T] = js.native
+    def fcall[T](method: js.Function1[/* repeated */ Any, T], args: Any*): Promise[T] = js.native
     
-    def invoke[T](obj: js.Any, functionName: String, args: js.Any*): Promise[T] = js.native
+    def invoke[T](obj: Any, functionName: String, args: Any*): Promise[T] = js.native
     
-    def isFulfilled(promise: Promise[js.Any]): Boolean = js.native
+    def isFulfilled(promise: Promise[Any]): Boolean = js.native
     
-    def isPending(promiseOrObject: js.Any): Boolean = js.native
-    def isPending(promiseOrObject: Promise[js.Any]): Boolean = js.native
+    def isPending(promiseOrObject: Any): Boolean = js.native
+    def isPending(promiseOrObject: Promise[Any]): Boolean = js.native
     
-    def isPromise(`object`: js.Any): /* is q.q.Promise<any> */ Boolean = js.native
+    def isPromise(`object`: Any): /* is q.q.Promise<any> */ Boolean = js.native
     
-    def isPromiseAlike(`object`: js.Any): /* is q.q.IPromise<any> */ Boolean = js.native
+    def isPromiseAlike(`object`: Any): /* is q.q.IPromise<any> */ Boolean = js.native
     
-    def isRejected(promise: Promise[js.Any]): Boolean = js.native
+    def isRejected(promise: Promise[Any]): Boolean = js.native
     
     var longStackSupport: Boolean = js.native
     
-    def mcall[T](obj: js.Any, functionName: String, args: js.Any*): Promise[T] = js.native
+    def mcall[T](obj: Any, functionName: String, args: Any*): Promise[T] = js.native
     
-    def nbind[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], thisArg: js.Any, args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = js.native
+    def nbind[T](nodeFunction: js.Function1[/* repeated */ Any, Any], thisArg: Any, args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = js.native
     
     def nearer[T](promise: Promise[T]): T = js.native
     
-    def nextTick(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+    def nextTick(callback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
     
-    def nfapply[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Array[js.Any]): Promise[T] = js.native
+    def nfapply[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: js.Array[Any]): Promise[T] = js.native
     
-    def nfbind[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = js.native
+    def nfbind[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = js.native
     
-    def nfcall[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): Promise[T] = js.native
+    def nfcall[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: Any*): Promise[T] = js.native
     
-    def ninvoke[T](nodeModule: js.Any, functionName: String, args: js.Any*): Promise[T] = js.native
+    def ninvoke[T](nodeModule: Any, functionName: String, args: Any*): Promise[T] = js.native
     
     def noConflict(): /* import warning: importer.ImportType#apply Failed type conversion: typeof Q */ js.Any = js.native
     
-    def npost[T](nodeModule: js.Any, functionName: String, args: js.Array[js.Any]): Promise[T] = js.native
+    def npost[T](nodeModule: Any, functionName: String, args: js.Array[Any]): Promise[T] = js.native
     
-    def nsend[T](nodeModule: js.Any, functionName: String, args: js.Any*): Promise[T] = js.native
+    def nsend[T](nodeModule: Any, functionName: String, args: Any*): Promise[T] = js.native
     
-    def onerror(reason: js.Any): Unit = js.native
+    def onerror(reason: Any): Unit = js.native
     @JSName("onerror")
-    var onerror_Original: js.Function1[/* reason */ js.Any, Unit] = js.native
+    var onerror_Original: js.Function1[/* reason */ Any, Unit] = js.native
     
-    def promised[T](callback: js.Function1[/* repeated */ js.Any, T]): js.Function1[/* repeated */ js.Any, Promise[T]] = js.native
+    def promised[T](callback: js.Function1[/* repeated */ Any, T]): js.Function1[/* repeated */ Any, Promise[T]] = js.native
     
     def race[T](promises: js.Array[IWhenable[T]]): Promise[T] = js.native
     
     def reject[T](): Promise[T] = js.native
-    def reject[T](reason: js.Any): Promise[T] = js.native
+    def reject[T](reason: Any): Promise[T] = js.native
     
     def resolve[T](): Promise[T] = js.native
     def resolve[T](`object`: IWhenable[T]): Promise[T] = js.native
     
-    def send[T](obj: js.Any, functionName: String, args: js.Any*): Promise[T] = js.native
+    def send[T](obj: Any, functionName: String, args: Any*): Promise[T] = js.native
     
     def spread[T, U](promises: js.Array[IWhenable[T]], onFulfilled: js.Function1[/* repeated */ T, IWhenable[U]]): Promise[U] = js.native
     def spread[T, U](
       promises: js.Array[IWhenable[T]],
       onFulfilled: js.Function1[/* repeated */ T, IWhenable[U]],
-      onRejected: js.Function1[/* reason */ js.Any, IWhenable[U]]
+      onRejected: js.Function1[/* reason */ Any, IWhenable[U]]
     ): Promise[U] = js.native
     
     def timeout[T](promise: Promise[T], ms: Double): Promise[T] = js.native
     def timeout[T](promise: Promise[T], ms: Double, message: String): Promise[T] = js.native
     
-    def `try`[T](method: js.Function1[/* repeated */ js.Any, T], args: js.Any*): Promise[T] = js.native
+    def `try`[T](method: js.Function1[/* repeated */ Any, T], args: Any*): Promise[T] = js.native
     
     def when(): Promise[Unit] = js.native
     def when[T](value: IWhenable[T]): Promise[T] = js.native
@@ -143,25 +143,25 @@ object anon {
     def when[T, U](
       value: IWhenable[T],
       onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
-      onRejected: js.Function1[/* reason */ js.Any, IWhenable[U]]
+      onRejected: js.Function1[/* reason */ Any, IWhenable[U]]
     ): Promise[U] = js.native
     def when[T, U](
       value: IWhenable[T],
       onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
-      onRejected: js.Function1[/* reason */ js.Any, IWhenable[U]],
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onRejected: js.Function1[/* reason */ Any, IWhenable[U]],
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U] = js.native
     def when[T, U](
       value: IWhenable[T],
       onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
       onRejected: Null,
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U] = js.native
     def when[T, U](
       value: IWhenable[T],
       onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
       onRejected: Unit,
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U] = js.native
   }
 }

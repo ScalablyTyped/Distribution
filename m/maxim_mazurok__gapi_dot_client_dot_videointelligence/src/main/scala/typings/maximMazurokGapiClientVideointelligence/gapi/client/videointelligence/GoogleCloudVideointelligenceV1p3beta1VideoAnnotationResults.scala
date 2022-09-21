@@ -92,19 +92,19 @@ object GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults {
     
     inline def setFaceAnnotationsUndefined: Self = StObject.set(x, "faceAnnotations", js.undefined)
     
-    inline def setFaceAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1FaceAnnotation*): Self = StObject.set(x, "faceAnnotations", js.Array(value :_*))
+    inline def setFaceAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1FaceAnnotation*): Self = StObject.set(x, "faceAnnotations", js.Array(value*))
     
     inline def setFaceDetectionAnnotations(value: js.Array[GoogleCloudVideointelligenceV1p3beta1FaceDetectionAnnotation]): Self = StObject.set(x, "faceDetectionAnnotations", value.asInstanceOf[js.Any])
     
     inline def setFaceDetectionAnnotationsUndefined: Self = StObject.set(x, "faceDetectionAnnotations", js.undefined)
     
-    inline def setFaceDetectionAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1FaceDetectionAnnotation*): Self = StObject.set(x, "faceDetectionAnnotations", js.Array(value :_*))
+    inline def setFaceDetectionAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1FaceDetectionAnnotation*): Self = StObject.set(x, "faceDetectionAnnotations", js.Array(value*))
     
     inline def setFrameLabelAnnotations(value: js.Array[GoogleCloudVideointelligenceV1p3beta1LabelAnnotation]): Self = StObject.set(x, "frameLabelAnnotations", value.asInstanceOf[js.Any])
     
     inline def setFrameLabelAnnotationsUndefined: Self = StObject.set(x, "frameLabelAnnotations", js.undefined)
     
-    inline def setFrameLabelAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1LabelAnnotation*): Self = StObject.set(x, "frameLabelAnnotations", js.Array(value :_*))
+    inline def setFrameLabelAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1LabelAnnotation*): Self = StObject.set(x, "frameLabelAnnotations", js.Array(value*))
     
     inline def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
     
@@ -114,19 +114,19 @@ object GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults {
     
     inline def setLogoRecognitionAnnotationsUndefined: Self = StObject.set(x, "logoRecognitionAnnotations", js.undefined)
     
-    inline def setLogoRecognitionAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1LogoRecognitionAnnotation*): Self = StObject.set(x, "logoRecognitionAnnotations", js.Array(value :_*))
+    inline def setLogoRecognitionAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1LogoRecognitionAnnotation*): Self = StObject.set(x, "logoRecognitionAnnotations", js.Array(value*))
     
     inline def setObjectAnnotations(value: js.Array[GoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation]): Self = StObject.set(x, "objectAnnotations", value.asInstanceOf[js.Any])
     
     inline def setObjectAnnotationsUndefined: Self = StObject.set(x, "objectAnnotations", js.undefined)
     
-    inline def setObjectAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation*): Self = StObject.set(x, "objectAnnotations", js.Array(value :_*))
+    inline def setObjectAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation*): Self = StObject.set(x, "objectAnnotations", js.Array(value*))
     
     inline def setPersonDetectionAnnotations(value: js.Array[GoogleCloudVideointelligenceV1p3beta1PersonDetectionAnnotation]): Self = StObject.set(x, "personDetectionAnnotations", value.asInstanceOf[js.Any])
     
     inline def setPersonDetectionAnnotationsUndefined: Self = StObject.set(x, "personDetectionAnnotations", js.undefined)
     
-    inline def setPersonDetectionAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1PersonDetectionAnnotation*): Self = StObject.set(x, "personDetectionAnnotations", js.Array(value :_*))
+    inline def setPersonDetectionAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1PersonDetectionAnnotation*): Self = StObject.set(x, "personDetectionAnnotations", js.Array(value*))
     
     inline def setSegment(value: GoogleCloudVideointelligenceV1p3beta1VideoSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
@@ -134,13 +134,13 @@ object GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults {
     
     inline def setSegmentLabelAnnotationsUndefined: Self = StObject.set(x, "segmentLabelAnnotations", js.undefined)
     
-    inline def setSegmentLabelAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1LabelAnnotation*): Self = StObject.set(x, "segmentLabelAnnotations", js.Array(value :_*))
+    inline def setSegmentLabelAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1LabelAnnotation*): Self = StObject.set(x, "segmentLabelAnnotations", js.Array(value*))
     
     inline def setSegmentPresenceLabelAnnotations(value: js.Array[GoogleCloudVideointelligenceV1p3beta1LabelAnnotation]): Self = StObject.set(x, "segmentPresenceLabelAnnotations", value.asInstanceOf[js.Any])
     
     inline def setSegmentPresenceLabelAnnotationsUndefined: Self = StObject.set(x, "segmentPresenceLabelAnnotations", js.undefined)
     
-    inline def setSegmentPresenceLabelAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1LabelAnnotation*): Self = StObject.set(x, "segmentPresenceLabelAnnotations", js.Array(value :_*))
+    inline def setSegmentPresenceLabelAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1LabelAnnotation*): Self = StObject.set(x, "segmentPresenceLabelAnnotations", js.Array(value*))
     
     inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
     
@@ -148,30 +148,30 @@ object GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults {
     
     inline def setShotAnnotationsUndefined: Self = StObject.set(x, "shotAnnotations", js.undefined)
     
-    inline def setShotAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1VideoSegment*): Self = StObject.set(x, "shotAnnotations", js.Array(value :_*))
+    inline def setShotAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1VideoSegment*): Self = StObject.set(x, "shotAnnotations", js.Array(value*))
     
     inline def setShotLabelAnnotations(value: js.Array[GoogleCloudVideointelligenceV1p3beta1LabelAnnotation]): Self = StObject.set(x, "shotLabelAnnotations", value.asInstanceOf[js.Any])
     
     inline def setShotLabelAnnotationsUndefined: Self = StObject.set(x, "shotLabelAnnotations", js.undefined)
     
-    inline def setShotLabelAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1LabelAnnotation*): Self = StObject.set(x, "shotLabelAnnotations", js.Array(value :_*))
+    inline def setShotLabelAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1LabelAnnotation*): Self = StObject.set(x, "shotLabelAnnotations", js.Array(value*))
     
     inline def setShotPresenceLabelAnnotations(value: js.Array[GoogleCloudVideointelligenceV1p3beta1LabelAnnotation]): Self = StObject.set(x, "shotPresenceLabelAnnotations", value.asInstanceOf[js.Any])
     
     inline def setShotPresenceLabelAnnotationsUndefined: Self = StObject.set(x, "shotPresenceLabelAnnotations", js.undefined)
     
-    inline def setShotPresenceLabelAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1LabelAnnotation*): Self = StObject.set(x, "shotPresenceLabelAnnotations", js.Array(value :_*))
+    inline def setShotPresenceLabelAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1LabelAnnotation*): Self = StObject.set(x, "shotPresenceLabelAnnotations", js.Array(value*))
     
     inline def setSpeechTranscriptions(value: js.Array[GoogleCloudVideointelligenceV1p3beta1SpeechTranscription]): Self = StObject.set(x, "speechTranscriptions", value.asInstanceOf[js.Any])
     
     inline def setSpeechTranscriptionsUndefined: Self = StObject.set(x, "speechTranscriptions", js.undefined)
     
-    inline def setSpeechTranscriptionsVarargs(value: GoogleCloudVideointelligenceV1p3beta1SpeechTranscription*): Self = StObject.set(x, "speechTranscriptions", js.Array(value :_*))
+    inline def setSpeechTranscriptionsVarargs(value: GoogleCloudVideointelligenceV1p3beta1SpeechTranscription*): Self = StObject.set(x, "speechTranscriptions", js.Array(value*))
     
     inline def setTextAnnotations(value: js.Array[GoogleCloudVideointelligenceV1p3beta1TextAnnotation]): Self = StObject.set(x, "textAnnotations", value.asInstanceOf[js.Any])
     
     inline def setTextAnnotationsUndefined: Self = StObject.set(x, "textAnnotations", js.undefined)
     
-    inline def setTextAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1TextAnnotation*): Self = StObject.set(x, "textAnnotations", js.Array(value :_*))
+    inline def setTextAnnotationsVarargs(value: GoogleCloudVideointelligenceV1p3beta1TextAnnotation*): Self = StObject.set(x, "textAnnotations", js.Array(value*))
   }
 }

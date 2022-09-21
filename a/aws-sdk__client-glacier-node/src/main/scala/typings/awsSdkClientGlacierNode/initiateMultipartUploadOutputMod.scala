@@ -8,5 +8,5 @@ object initiateMultipartUploadOutputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/InitiateMultipartUploadOutput", "InitiateMultipartUploadOutput")
   @js.native
-  val InitiateMultipartUploadOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InitiateMultipartUploadOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

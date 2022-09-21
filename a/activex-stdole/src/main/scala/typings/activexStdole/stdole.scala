@@ -19,11 +19,11 @@ object stdole {
     
     val rgdispidNamedArgs: Double
     
-    val rgvarg: js.Any
+    val rgvarg: Any
   }
   object DISPPARAMS {
     
-    inline def apply(cArgs: Double, cNamedArgs: Double, rgdispidNamedArgs: Double, rgvarg: js.Any): DISPPARAMS = {
+    inline def apply(cArgs: Double, cNamedArgs: Double, rgdispidNamedArgs: Double, rgvarg: Any): DISPPARAMS = {
       val __obj = js.Dynamic.literal(cArgs = cArgs.asInstanceOf[js.Any], cNamedArgs = cNamedArgs.asInstanceOf[js.Any], rgdispidNamedArgs = rgdispidNamedArgs.asInstanceOf[js.Any], rgvarg = rgvarg.asInstanceOf[js.Any])
       __obj.asInstanceOf[DISPPARAMS]
     }
@@ -36,7 +36,7 @@ object stdole {
       
       inline def setRgdispidNamedArgs(value: Double): Self = StObject.set(x, "rgdispidNamedArgs", value.asInstanceOf[js.Any])
       
-      inline def setRgvarg(value: js.Any): Self = StObject.set(x, "rgvarg", value.asInstanceOf[js.Any])
+      inline def setRgvarg(value: Any): Self = StObject.set(x, "rgvarg", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,7 +54,7 @@ object stdole {
     
     val pvReserved: Unit
     
-    val scode: js.Any
+    val scode: Any
     
     val wCode: Double
     
@@ -69,7 +69,7 @@ object stdole {
       dwHelpContext: Double,
       pfnDeferredFillIn: Unit,
       pvReserved: Unit,
-      scode: js.Any,
+      scode: Any,
       wCode: Double,
       wReserved: Double
     ): EXCEPINFO = {
@@ -91,7 +91,7 @@ object stdole {
       
       inline def setPvReserved(value: Unit): Self = StObject.set(x, "pvReserved", value.asInstanceOf[js.Any])
       
-      inline def setScode(value: js.Any): Self = StObject.set(x, "scode", value.asInstanceOf[js.Any])
+      inline def setScode(value: Any): Self = StObject.set(x, "scode", value.asInstanceOf[js.Any])
       
       inline def setWCode(value: Double): Self = StObject.set(x, "wCode", value.asInstanceOf[js.Any])
       

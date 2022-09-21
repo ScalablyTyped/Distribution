@@ -12,37 +12,37 @@ trait AttributeFilter extends StObject {
   var AndAllFilters: js.UndefOr[AttributeFilterList] = js.undefined
   
   /**
-    * Returns true when a document contains all of the specified document attributes. This filter is only applicable to StringListValue metadata.
+    * Returns true when a document contains all of the specified document attributes or metadata fields. This filter is only applicable to StringListValue metadata.
     */
   var ContainsAll: js.UndefOr[DocumentAttribute] = js.undefined
   
   /**
-    * Returns true when a document contains any of the specified document attributes. This filter is only applicable to StringListValue metadata.
+    * Returns true when a document contains any of the specified document attributes or metadata fields. This filter is only applicable to StringListValue metadata.
     */
   var ContainsAny: js.UndefOr[DocumentAttribute] = js.undefined
   
   /**
-    * Performs an equals operation on two document attributes.
+    * Performs an equals operation on two document attributes or metadata fields.
     */
   var EqualsTo: js.UndefOr[DocumentAttribute] = js.undefined
   
   /**
-    * Performs a greater than operation on two document attributes. Use with a document attribute of type Integer or Long.
+    * Performs a greater than operation on two document attributes or metadata fields. Use with a document attribute of type Date or Long.
     */
   var GreaterThan: js.UndefOr[DocumentAttribute] = js.undefined
   
   /**
-    * Performs a greater or equals than operation on two document attributes. Use with a document attribute of type Integer or Long.
+    * Performs a greater or equals than operation on two document attributes or metadata fields. Use with a document attribute of type Date or Long.
     */
   var GreaterThanOrEquals: js.UndefOr[DocumentAttribute] = js.undefined
   
   /**
-    * Performs a less than operation on two document attributes. Use with a document attribute of type Integer or Long.
+    * Performs a less than operation on two document attributes or metadata fields. Use with a document attribute of type Date or Long.
     */
   var LessThan: js.UndefOr[DocumentAttribute] = js.undefined
   
   /**
-    * Performs a less than or equals operation on two document attributes. Use with a document attribute of type Integer or Long.
+    * Performs a less than or equals operation on two document attributes or metadata fields. Use with a document attribute of type Date or Long.
     */
   var LessThanOrEquals: js.UndefOr[DocumentAttribute] = js.undefined
   
@@ -69,7 +69,7 @@ object AttributeFilter {
     
     inline def setAndAllFiltersUndefined: Self = StObject.set(x, "AndAllFilters", js.undefined)
     
-    inline def setAndAllFiltersVarargs(value: AttributeFilter*): Self = StObject.set(x, "AndAllFilters", js.Array(value :_*))
+    inline def setAndAllFiltersVarargs(value: AttributeFilter*): Self = StObject.set(x, "AndAllFilters", js.Array(value*))
     
     inline def setContainsAll(value: DocumentAttribute): Self = StObject.set(x, "ContainsAll", value.asInstanceOf[js.Any])
     
@@ -107,6 +107,6 @@ object AttributeFilter {
     
     inline def setOrAllFiltersUndefined: Self = StObject.set(x, "OrAllFilters", js.undefined)
     
-    inline def setOrAllFiltersVarargs(value: AttributeFilter*): Self = StObject.set(x, "OrAllFilters", js.Array(value :_*))
+    inline def setOrAllFiltersVarargs(value: AttributeFilter*): Self = StObject.set(x, "OrAllFilters", js.Array(value*))
   }
 }

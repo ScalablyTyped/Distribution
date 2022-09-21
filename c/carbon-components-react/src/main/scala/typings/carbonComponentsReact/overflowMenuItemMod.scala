@@ -8,6 +8,6 @@ object overflowMenuItemMod {
   
   @JSImport("carbon-components-react/lib/components/OverflowMenuItem", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.carbonComponentsReact.overflowMenuItemOverflowMenuItemMod.default
 }

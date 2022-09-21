@@ -1,7 +1,7 @@
 
 # Scala.js typings for istextorbinary
 
-Typings are for version 2.3
+Typings are for version 6.0.0
 
 ## Library description:
 Determine if a filename and/or buffer is text or binary. Smarter detection than the other solutions.
@@ -9,11 +9,11 @@ Determine if a filename and/or buffer is text or binary. Smarter detection than 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | istextorbinary |
-| Keywords           | bin, binary, browser, check, deno, deno-edition, deno-entry, denoland, detect, encoding, es2019, esnext, ext, extension, extensions, file, is, is binary, is binary file, is text, is text file, is text or binary, is text or binary file, isbinary, isbinaryfile, istext, istextfile, module, node, path, text, typed, types, typescript |
-| # releases         | 60 |
-| # dependents       | 159 |
-| # downloads        | 35173900 |
-| # stars            | 1 |
+| Keywords           | bin, binary, browser, check, detect, encoding, es2019, ext, extension, extensions, file, is, is binary, is binary file, is text, is text file, is text or binary, is text or binary file, isbinary, isbinaryfile, istext, istextfile, module, node, path, text, typed, types, typescript |
+| # releases         | 36 |
+| # dependents       | 0.0 |
+| # downloads        | 5469358.333333333 |
+| # stars            | 91.0 |
 
 ## Links
 - [Homepage](https://github.com/bevry/istextorbinary)
@@ -24,7 +24,7 @@ Determine if a filename and/or buffer is text or binary. Smarter detection than 
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

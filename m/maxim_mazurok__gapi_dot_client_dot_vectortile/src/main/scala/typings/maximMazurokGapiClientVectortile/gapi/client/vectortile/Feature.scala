@@ -49,7 +49,7 @@ object Feature {
     
     inline def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
     
-    inline def setRelationsVarargs(value: Relation*): Self = StObject.set(x, "relations", js.Array(value :_*))
+    inline def setRelationsVarargs(value: Relation*): Self = StObject.set(x, "relations", js.Array(value*))
     
     inline def setSegmentInfo(value: SegmentInfo): Self = StObject.set(x, "segmentInfo", value.asInstanceOf[js.Any])
     

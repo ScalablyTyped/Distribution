@@ -9,11 +9,11 @@ trait JQueryMobilePath extends StObject {
   
   def get(url: String): String = js.native
   
-  def getDocumentBase(): js.Any = js.native
-  def getDocumentBase(asParsedObject: Boolean): js.Any = js.native
+  def getDocumentBase(): Any = js.native
+  def getDocumentBase(asParsedObject: Boolean): Any = js.native
   
-  def getDocumentUrl(): js.Any = js.native
-  def getDocumentUrl(asParsedObject: Boolean): js.Any = js.native
+  def getDocumentUrl(): Any = js.native
+  def getDocumentUrl(asParsedObject: Boolean): Any = js.native
   
   def getLocation(): String = js.native
   

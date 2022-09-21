@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark", "AdminClient")
 @js.native
-class AdminClient protected () extends default {
+open class AdminClient protected () extends default {
   /**
     * Create a new AccountClient
     * @param accountToken The account token that should be used with requests.

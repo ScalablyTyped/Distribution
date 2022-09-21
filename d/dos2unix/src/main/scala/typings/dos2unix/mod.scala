@@ -12,7 +12,6 @@ import typings.dos2unix.dos2unixStrings.processingDotstart
 import typings.dos2unix.dos2unixStrings.start
 import typings.glob.mod.IOptions
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,31 +20,21 @@ object mod {
   
   @JSImport("dos2unix", "dos2unix")
   @js.native
-  class dos2unix () extends Dos2UnixConverter {
+  open class dos2unix () extends Dos2UnixConverter {
     def this(defaultOptions: Options) = this()
   }
   
   @js.native
   trait Dos2UnixConverter extends EventEmitter {
     
-    @JSName("on")
-    def on_convertend(event: convertDotend, cb: js.Function1[/* data */ FileData, Unit]): this.type = js.native
-    @JSName("on")
-    def on_converterror(event: convertDoterror, cb: js.Function1[/* data */ MessageData, Unit]): this.type = js.native
-    @JSName("on")
-    def on_convertstart(event: convertDotstart, cb: js.Function1[/* data */ FileData, Unit]): this.type = js.native
+    def on(
+      event: convertDotend | convertDoterror | convertDotstart | processingDotend | processingDoterror | processingDotskip | processingDotstart,
+      cb: js.Function1[(/* data */ FileData) | (/* data */ MessageData), Unit]
+    ): this.type = js.native
     @JSName("on")
     def on_end(event: end, cb: js.Function1[/* stats */ Stats, Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): this.type = js.native
-    @JSName("on")
-    def on_processingend(event: processingDotend, cb: js.Function1[/* data */ FileData, Unit]): this.type = js.native
-    @JSName("on")
-    def on_processingerror(event: processingDoterror, cb: js.Function1[/* data */ MessageData, Unit]): this.type = js.native
-    @JSName("on")
-    def on_processingskip(event: processingDotskip, cb: js.Function1[/* data */ MessageData, Unit]): this.type = js.native
-    @JSName("on")
-    def on_processingstart(event: processingDotstart, cb: js.Function1[/* data */ FileData, Unit]): this.type = js.native
+    def on_error(event: error, cb: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): this.type = js.native
     @JSName("on")
     def on_start(event: start, cb: js.Function0[Unit]): this.type = js.native
     

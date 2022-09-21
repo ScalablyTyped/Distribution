@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("breeze", "HasChangesChangedEventArgs")
 @js.native
-class HasChangesChangedEventArgs ()
+open class HasChangesChangedEventArgs ()
   extends StObject
      with typings.breeze.breeze.HasChangesChangedEventArgs {
   

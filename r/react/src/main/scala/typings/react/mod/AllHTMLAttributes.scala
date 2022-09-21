@@ -1,5 +1,7 @@
 package typings.react.mod
 
+import typings.react.reactStrings.environment
+import typings.react.reactStrings.user
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +35,7 @@ trait AllHTMLAttributes[T]
   
   var autoPlay: js.UndefOr[Boolean] = js.undefined
   
-  var capture: js.UndefOr[Boolean | String] = js.undefined
+  var capture: js.UndefOr[Boolean | user | environment] = js.undefined
   
   var cellPadding: js.UndefOr[Double | String] = js.undefined
   
@@ -69,7 +71,7 @@ trait AllHTMLAttributes[T]
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var download: js.UndefOr[js.Any] = js.undefined
+  var download: js.UndefOr[Any] = js.undefined
   
   var encType: js.UndefOr[String] = js.undefined
   
@@ -272,7 +274,7 @@ object AllHTMLAttributes {
     
     inline def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
     
-    inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
@@ -348,7 +350,7 @@ object AllHTMLAttributes {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
@@ -636,7 +638,7 @@ object AllHTMLAttributes {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     
     inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

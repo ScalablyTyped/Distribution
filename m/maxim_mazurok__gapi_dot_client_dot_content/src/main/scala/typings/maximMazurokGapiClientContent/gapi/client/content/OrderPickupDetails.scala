@@ -35,7 +35,7 @@ object OrderPickupDetails {
     
     inline def setCollectorsUndefined: Self = StObject.set(x, "collectors", js.undefined)
     
-    inline def setCollectorsVarargs(value: OrderPickupDetailsCollector*): Self = StObject.set(x, "collectors", js.Array(value :_*))
+    inline def setCollectorsVarargs(value: OrderPickupDetailsCollector*): Self = StObject.set(x, "collectors", js.Array(value*))
     
     inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     

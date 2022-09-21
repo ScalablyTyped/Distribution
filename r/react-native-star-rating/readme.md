@@ -11,9 +11,9 @@ A React Native component for generating and displaying interactive star ratings
 | Full name          | react-native-star-rating |
 | Keywords           | react, native, react native, star, stars, rating, ratings, review, reviews, react-component, react-native, ios, android |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 506561 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 43532.0 |
+| # stars            | 761.0 |
 
 ## Links
 - [Homepage](https://github.com/djchie/react-native-star-rating)

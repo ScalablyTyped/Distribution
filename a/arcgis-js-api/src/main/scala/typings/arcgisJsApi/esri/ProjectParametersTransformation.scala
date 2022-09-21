@@ -13,14 +13,14 @@ trait ProjectParametersTransformation
   /**
     * The well-known ID of the datum transformation to apply to the projection.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html#transformation)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformation)
     */
   var wkid: js.UndefOr[Double] = js.undefined
   
   /**
     * The well-known text that defines a spatial reference.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html#transformation)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformation)
     */
   var wkt: js.UndefOr[String] = js.undefined
 }

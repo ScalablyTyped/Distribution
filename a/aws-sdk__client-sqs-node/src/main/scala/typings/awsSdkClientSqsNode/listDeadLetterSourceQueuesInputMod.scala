@@ -8,5 +8,5 @@ object listDeadLetterSourceQueuesInputMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/ListDeadLetterSourceQueuesInput", "ListDeadLetterSourceQueuesInput")
   @js.native
-  val ListDeadLetterSourceQueuesInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListDeadLetterSourceQueuesInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

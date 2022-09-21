@@ -5,9 +5,6 @@ import typings.babylonjs.hdrMod.HDRInfo
 import typings.babylonjs.panoramaToCubemapMod.CubeMapInfo
 import typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial
 import typings.babylonjs.typesMod.Nullable
-import typings.std.ArrayBuffer
-import typings.std.Float32Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +13,7 @@ object highDynamicRangeIndexMod {
   
   @JSImport("babylonjs/Misc/HighDynamicRange/index", "CubeMapToSphericalPolynomialTools")
   @js.native
-  class CubeMapToSphericalPolynomialTools ()
+  open class CubeMapToSphericalPolynomialTools ()
     extends typings.babylonjs.cubemapToSphericalPolynomialMod.CubeMapToSphericalPolynomialTools
   /* static members */
   object CubeMapToSphericalPolynomialTools {
@@ -30,28 +27,39 @@ object highDynamicRangeIndexMod {
       * This extracts the first 3 orders only as they are the only one used in the lighting.
       *
       * @param texture The texture to extract the information from.
-      * @return The Spherical Polynomial data.
+      * @returns The Spherical Polynomial data.
       */
-    inline def ConvertCubeMapTextureToSphericalPolynomial(texture: BaseTexture): Nullable[SphericalPolynomial] = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertCubeMapTextureToSphericalPolynomial")(texture.asInstanceOf[js.Any]).asInstanceOf[Nullable[SphericalPolynomial]]
+    inline def ConvertCubeMapTextureToSphericalPolynomial(texture: BaseTexture): Nullable[js.Promise[SphericalPolynomial]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertCubeMapTextureToSphericalPolynomial")(texture.asInstanceOf[js.Any]).asInstanceOf[Nullable[js.Promise[SphericalPolynomial]]]
     
     /**
       * Converts a cubemap to the according Spherical Polynomial data.
       * This extracts the first 3 orders only as they are the only one used in the lighting.
       *
       * @param cubeInfo The Cube map to extract the information from.
-      * @return The Spherical Polynomial data.
+      * @returns The Spherical Polynomial data.
       */
     inline def ConvertCubeMapToSphericalPolynomial(cubeInfo: CubeMapInfo): SphericalPolynomial = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertCubeMapToSphericalPolynomial")(cubeInfo.asInstanceOf[js.Any]).asInstanceOf[SphericalPolynomial]
     
-    @JSImport("babylonjs/Misc/HighDynamicRange/index", "CubeMapToSphericalPolynomialTools.FileFaces")
+    /**
+      * Compute the area on the unit sphere of the rectangle defined by (x,y) and the origin
+      * See https://www.rorydriscoll.com/2012/01/15/cubemap-texel-solid-angle/
+      * @param x
+      * @param y
+      */
+    @JSImport("babylonjs/Misc/HighDynamicRange/index", "CubeMapToSphericalPolynomialTools._AreaElement")
     @js.native
-    def FileFaces: js.Any = js.native
-    inline def FileFaces_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileFaces")(x.asInstanceOf[js.Any])
+    def _AreaElement: Any = js.native
+    inline def _AreaElement_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AreaElement")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Misc/HighDynamicRange/index", "CubeMapToSphericalPolynomialTools._FileFaces")
+    @js.native
+    def _FileFaces: Any = js.native
+    inline def _FileFaces_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FileFaces")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Misc/HighDynamicRange/index", "HDRTools")
   @js.native
-  class HDRTools ()
+  open class HDRTools ()
     extends typings.babylonjs.hdrMod.HDRTools
   /* static members */
   object HDRTools {
@@ -69,14 +77,9 @@ object highDynamicRangeIndexMod {
       *
       * @param buffer The binary file stored in an array buffer.
       * @param size The expected size of the extracted cubemap.
-      * @return The Cube Map information.
+      * @returns The Cube Map information.
       */
-    inline def GetCubeMapTextureData(buffer: ArrayBuffer, size: Double): CubeMapInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCubeMapTextureData")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[CubeMapInfo]
-    
-    @JSImport("babylonjs/Misc/HighDynamicRange/index", "HDRTools.Ldexp")
-    @js.native
-    def Ldexp: js.Any = js.native
-    inline def Ldexp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ldexp")(x.asInstanceOf[js.Any])
+    inline def GetCubeMapTextureData(buffer: js.typedarray.ArrayBuffer, size: Double): CubeMapInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCubeMapTextureData")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[CubeMapInfo]
     
     /**
       * Reads header information from an RGBE texture stored in a native array.
@@ -84,9 +87,9 @@ object highDynamicRangeIndexMod {
       * https://en.wikipedia.org/wiki/RGBE_image_format
       *
       * @param uint8array The binary file stored in  native array.
-      * @return The header information.
+      * @returns The header information.
       */
-    inline def RGBE_ReadHeader(uint8array: Uint8Array): HDRInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("RGBE_ReadHeader")(uint8array.asInstanceOf[js.Any]).asInstanceOf[HDRInfo]
+    inline def RGBE_ReadHeader(uint8array: js.typedarray.Uint8Array): HDRInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("RGBE_ReadHeader")(uint8array.asInstanceOf[js.Any]).asInstanceOf[HDRInfo]
     
     /**
       * Returns the pixels data extracted from an RGBE texture.
@@ -97,34 +100,39 @@ object highDynamicRangeIndexMod {
       *
       * @param uint8array The binary file stored in an array buffer.
       * @param hdrInfo The header information of the file.
-      * @return The pixels data in RGB right to left up to down order.
+      * @returns The pixels data in RGB right to left up to down order.
       */
-    inline def RGBE_ReadPixels(uint8array: Uint8Array, hdrInfo: HDRInfo): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBE_ReadPixels")(uint8array.asInstanceOf[js.Any], hdrInfo.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+    inline def RGBE_ReadPixels(uint8array: js.typedarray.Uint8Array, hdrInfo: HDRInfo): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBE_ReadPixels")(uint8array.asInstanceOf[js.Any], hdrInfo.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
     
-    @JSImport("babylonjs/Misc/HighDynamicRange/index", "HDRTools.RGBE_ReadPixels_NOT_RLE")
+    @JSImport("babylonjs/Misc/HighDynamicRange/index", "HDRTools._Ldexp")
     @js.native
-    def RGBE_ReadPixels_NOT_RLE: js.Any = js.native
-    inline def RGBE_ReadPixels_NOT_RLE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RGBE_ReadPixels_NOT_RLE")(x.asInstanceOf[js.Any])
+    def _Ldexp: Any = js.native
+    inline def _Ldexp_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Ldexp")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Misc/HighDynamicRange/index", "HDRTools.RGBE_ReadPixels_RLE")
+    @JSImport("babylonjs/Misc/HighDynamicRange/index", "HDRTools._RGBEReadPixelsNOTRLE")
     @js.native
-    def RGBE_ReadPixels_RLE: js.Any = js.native
-    inline def RGBE_ReadPixels_RLE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RGBE_ReadPixels_RLE")(x.asInstanceOf[js.Any])
+    def _RGBEReadPixelsNOTRLE: Any = js.native
+    inline def _RGBEReadPixelsNOTRLE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RGBEReadPixelsNOTRLE")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Misc/HighDynamicRange/index", "HDRTools.Rgbe2float")
+    @JSImport("babylonjs/Misc/HighDynamicRange/index", "HDRTools._RGBEReadPixelsRLE")
     @js.native
-    def Rgbe2float: js.Any = js.native
-    inline def Rgbe2float_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rgbe2float")(x.asInstanceOf[js.Any])
+    def _RGBEReadPixelsRLE: Any = js.native
+    inline def _RGBEReadPixelsRLE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RGBEReadPixelsRLE")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Misc/HighDynamicRange/index", "HDRTools.readStringLine")
+    @JSImport("babylonjs/Misc/HighDynamicRange/index", "HDRTools._ReadStringLine")
     @js.native
-    def readStringLine: js.Any = js.native
-    inline def readStringLine_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readStringLine")(x.asInstanceOf[js.Any])
+    def _ReadStringLine: Any = js.native
+    inline def _ReadStringLine_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ReadStringLine")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Misc/HighDynamicRange/index", "HDRTools._Rgbe2float")
+    @js.native
+    def _Rgbe2float: Any = js.native
+    inline def _Rgbe2float_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Rgbe2float")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Misc/HighDynamicRange/index", "PanoramaToCubeMapTools")
   @js.native
-  class PanoramaToCubeMapTools ()
+  open class PanoramaToCubeMapTools ()
     extends typings.babylonjs.panoramaToCubemapMod.PanoramaToCubeMapTools
   /* static members */
   object PanoramaToCubeMapTools {
@@ -135,53 +143,53 @@ object highDynamicRangeIndexMod {
     
     @JSImport("babylonjs/Misc/HighDynamicRange/index", "PanoramaToCubeMapTools.CalcProjectionSpherical")
     @js.native
-    def CalcProjectionSpherical: js.Any = js.native
-    inline def CalcProjectionSpherical_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CalcProjectionSpherical")(x.asInstanceOf[js.Any])
+    def CalcProjectionSpherical: Any = js.native
+    inline def CalcProjectionSpherical_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CalcProjectionSpherical")(x.asInstanceOf[js.Any])
     
     /**
-      * Converts a panorma stored in RGB right to left up to down format into a cubemap (6 faces).
+      * Converts a panorama stored in RGB right to left up to down format into a cubemap (6 faces).
       *
       * @param float32Array The source data.
       * @param inputWidth The width of the input panorama.
       * @param inputHeight The height of the input panorama.
       * @param size The willing size of the generated cubemap (each faces will be size * size pixels)
-      * @return The cubemap data
+      * @returns The cubemap data
       */
-    inline def ConvertPanoramaToCubemap(float32Array: Float32Array, inputWidth: Double, inputHeight: Double, size: Double): CubeMapInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertPanoramaToCubemap")(float32Array.asInstanceOf[js.Any], inputWidth.asInstanceOf[js.Any], inputHeight.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[CubeMapInfo]
+    inline def ConvertPanoramaToCubemap(float32Array: js.typedarray.Float32Array, inputWidth: Double, inputHeight: Double, size: Double): CubeMapInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertPanoramaToCubemap")(float32Array.asInstanceOf[js.Any], inputWidth.asInstanceOf[js.Any], inputHeight.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[CubeMapInfo]
     
     @JSImport("babylonjs/Misc/HighDynamicRange/index", "PanoramaToCubeMapTools.CreateCubemapTexture")
     @js.native
-    def CreateCubemapTexture: js.Any = js.native
-    inline def CreateCubemapTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateCubemapTexture")(x.asInstanceOf[js.Any])
+    def CreateCubemapTexture: Any = js.native
+    inline def CreateCubemapTexture_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateCubemapTexture")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/HighDynamicRange/index", "PanoramaToCubeMapTools.FACE_BACK")
     @js.native
-    def FACE_BACK: js.Any = js.native
-    inline def FACE_BACK_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_BACK")(x.asInstanceOf[js.Any])
+    def FACE_BACK: Any = js.native
+    inline def FACE_BACK_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_BACK")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/HighDynamicRange/index", "PanoramaToCubeMapTools.FACE_DOWN")
     @js.native
-    def FACE_DOWN: js.Any = js.native
-    inline def FACE_DOWN_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_DOWN")(x.asInstanceOf[js.Any])
+    def FACE_DOWN: Any = js.native
+    inline def FACE_DOWN_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_DOWN")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/HighDynamicRange/index", "PanoramaToCubeMapTools.FACE_FRONT")
     @js.native
-    def FACE_FRONT: js.Any = js.native
-    inline def FACE_FRONT_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_FRONT")(x.asInstanceOf[js.Any])
+    def FACE_FRONT: Any = js.native
+    inline def FACE_FRONT_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_FRONT")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/HighDynamicRange/index", "PanoramaToCubeMapTools.FACE_LEFT")
     @js.native
-    def FACE_LEFT: js.Any = js.native
-    inline def FACE_LEFT_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_LEFT")(x.asInstanceOf[js.Any])
+    def FACE_LEFT: Any = js.native
+    inline def FACE_LEFT_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_LEFT")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/HighDynamicRange/index", "PanoramaToCubeMapTools.FACE_RIGHT")
     @js.native
-    def FACE_RIGHT: js.Any = js.native
-    inline def FACE_RIGHT_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_RIGHT")(x.asInstanceOf[js.Any])
+    def FACE_RIGHT: Any = js.native
+    inline def FACE_RIGHT_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_RIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Misc/HighDynamicRange/index", "PanoramaToCubeMapTools.FACE_UP")
     @js.native
-    def FACE_UP: js.Any = js.native
-    inline def FACE_UP_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_UP")(x.asInstanceOf[js.Any])
+    def FACE_UP: Any = js.native
+    inline def FACE_UP_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACE_UP")(x.asInstanceOf[js.Any])
   }
 }

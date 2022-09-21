@@ -29,12 +29,12 @@ object DescribeServicesResponse {
     
     inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    inline def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value*))
     
     inline def setServices(value: Services): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value*))
   }
 }

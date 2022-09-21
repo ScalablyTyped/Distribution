@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ChartFont")
 @js.native
-/* private */ class ChartFont ()
+/* private */ open class ChartFont ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ChartFont {
   
@@ -14,54 +14,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
   /* CompleteClass */
-  var Background: js.Any = js.native
+  var Background: Any = js.native
   
   /* CompleteClass */
-  var Bold: js.Any = js.native
+  var Bold: Any = js.native
   
   /* CompleteClass */
-  var Color: js.Any = js.native
+  var Color: Any = js.native
   
   /* CompleteClass */
-  var ColorIndex: js.Any = js.native
+  var ColorIndex: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  var FontStyle: js.Any = js.native
+  var FontStyle: Any = js.native
   
   /* CompleteClass */
-  var Italic: js.Any = js.native
+  var Italic: Any = js.native
   
   /* CompleteClass */
-  var Name: js.Any = js.native
+  var Name: Any = js.native
   
   /* CompleteClass */
-  var OutlineFont: js.Any = js.native
+  var OutlineFont: Any = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.ChartFont_typekey")
   var PowerPointDotChartFont_typekey: typings.activexPowerpoint.PowerPoint.ChartFont = js.native
   
   /* CompleteClass */
-  var Shadow: js.Any = js.native
+  var Shadow: Any = js.native
   
   /* CompleteClass */
-  var Size: js.Any = js.native
+  var Size: Any = js.native
   
   /* CompleteClass */
-  var Strikethrough: js.Any = js.native
+  var Strikethrough: Any = js.native
   
   /* CompleteClass */
-  var Subscript: js.Any = js.native
+  var Subscript: Any = js.native
   
   /* CompleteClass */
-  var Superscript: js.Any = js.native
+  var Superscript: Any = js.native
   
   /* CompleteClass */
-  var Underline: js.Any = js.native
+  var Underline: Any = js.native
 }

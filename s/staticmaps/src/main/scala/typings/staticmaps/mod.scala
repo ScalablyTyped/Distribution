@@ -1,6 +1,6 @@
 package typings.staticmaps
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.sharp.mod.JpegOptions
 import typings.sharp.mod.OutputOptions
 import typings.sharp.mod.PngOptions
@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("staticmaps", JSImport.Default)
+  @JSImport("staticmaps", JSImport.Namespace)
   @js.native
-  class default protected ()
+  open class ^ protected ()
     extends StObject
        with StaticMaps {
     def this(options: StaticMapsOptions) = this()
@@ -43,7 +43,7 @@ object mod {
       
       inline def setCoords(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      inline def setCoordsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "coords", js.Array(value :_*))
+      inline def setCoordsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "coords", js.Array(value*))
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -117,7 +117,7 @@ object mod {
       
       inline def setCoords(value: js.Array[js.Array[js.Tuple2[Double, Double]]]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      inline def setCoordsVarargs(value: (js.Array[js.Tuple2[Double, Double]])*): Self = StObject.set(x, "coords", js.Array(value :_*))
+      inline def setCoordsVarargs(value: (js.Array[js.Tuple2[Double, Double]])*): Self = StObject.set(x, "coords", js.Array(value*))
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -166,6 +166,10 @@ object mod {
     
     var font: js.UndefOr[String] = js.undefined
     
+    var offsetX: js.UndefOr[Double] = js.undefined
+    
+    var offsetY: js.UndefOr[Double] = js.undefined
+    
     var size: js.UndefOr[Double] = js.undefined
     
     var text: String
@@ -198,6 +202,14 @@ object mod {
       inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
       inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      
+      inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+      
+      inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -331,7 +343,7 @@ object mod {
       
       inline def setSubdomainsUndefined: Self = StObject.set(x, "subdomains", js.undefined)
       
-      inline def setSubdomainsVarargs(value: String*): Self = StObject.set(x, "subdomains", js.Array(value :_*))
+      inline def setSubdomainsVarargs(value: String*): Self = StObject.set(x, "subdomains", js.Array(value*))
       
       inline def setTileRequestHeader(value: js.Object): Self = StObject.set(x, "tileRequestHeader", value.asInstanceOf[js.Any])
       

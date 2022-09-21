@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forest-express-sequelize", "RecordUpdater")
 @js.native
-class RecordUpdater protected () extends AbstractRecordTool {
+open class RecordUpdater protected () extends AbstractRecordTool {
   def this(model: js.Object) = this()
   
   def deserialize(body: js.Object): js.Promise[js.Object] = js.native

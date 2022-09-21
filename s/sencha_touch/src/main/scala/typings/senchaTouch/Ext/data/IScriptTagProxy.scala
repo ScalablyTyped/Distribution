@@ -28,9 +28,9 @@ trait IScriptTagProxy
   var doRequest_IScriptTagProxy: js.UndefOr[
     js.Function3[
       /* operation */ js.UndefOr[IOperation], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      js.Any
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
@@ -99,7 +99,7 @@ object IScriptTagProxy {
     inline def setCallbackKeyUndefined: Self = StObject.set(x, "callbackKey", js.undefined)
     
     inline def setDoRequest(
-      value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any
+      value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "doRequest", js.Any.fromFunction3(value))
     
     inline def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)

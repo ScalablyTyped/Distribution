@@ -20,6 +20,11 @@ trait CreateGatewayGroupRequest extends StObject {
     * The name of the gateway group.
     */
   var Name: GatewayGroupName
+  
+  /**
+    * The tags to be added to the specified resource. Do not provide system tags.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateGatewayGroupRequest {
   
@@ -37,5 +42,11 @@ object CreateGatewayGroupRequest {
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     inline def setName(value: GatewayGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

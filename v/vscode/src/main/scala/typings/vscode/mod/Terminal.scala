@@ -28,7 +28,7 @@ trait Terminal extends StObject {
     * ```typescript
     * window.onDidCloseTerminal(t => {
     *   if (t.exitStatus && t.exitStatus.code) {
-    *       vscode.window.showInformationMessage(`Exit code: ${t.exitStatus.code}`);
+    *   	vscode.window.showInformationMessage(`Exit code: ${t.exitStatus.code}`);
     *   }
     * });
     * ```
@@ -69,4 +69,9 @@ trait Terminal extends StObject {
     */
   def show(): Unit = js.native
   def show(preserveFocus: Boolean): Unit = js.native
+  
+  /**
+    * The current state of the {@link Terminal}.
+    */
+  val state: TerminalState = js.native
 }

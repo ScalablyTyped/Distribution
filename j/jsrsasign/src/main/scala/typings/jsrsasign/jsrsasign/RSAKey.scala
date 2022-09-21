@@ -1,7 +1,5 @@
 package typings.jsrsasign.jsrsasign
 
-import typings.jsrsasign.jsrsasignNumbers.`0`
-import typings.jsrsasign.jsrsasignNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,9 +49,9 @@ trait RSAKey extends StObject {
     * @param sMsg message string to be verified.
     * @param hSig hexadecimal string of signature.
     *             non-hexadecimal characters including new lines will be ignored.
-    * @return returns 1 if valid, otherwise 0
+    * @return returns true if valid, otherwise false
     */
-  def verify(sMsg: String, hSig: String): `0` | `1`
+  def verify(sMsg: String, hSig: String): Boolean
 }
 object RSAKey {
   
@@ -64,7 +62,7 @@ object RSAKey {
     readPKCS8PrvKeyHex: String => Unit,
     readPKCS8PubKeyHex: String => Unit,
     readPrivateKeyFromPEMString: String => Unit,
-    verify: (String, String) => `0` | `1`
+    verify: (String, String) => Boolean
   ): RSAKey = {
     val __obj = js.Dynamic.literal(readCertPubKeyHex = js.Any.fromFunction2(readCertPubKeyHex), readPKCS5PrvKeyHex = js.Any.fromFunction1(readPKCS5PrvKeyHex), readPKCS5PubKeyHex = js.Any.fromFunction1(readPKCS5PubKeyHex), readPKCS8PrvKeyHex = js.Any.fromFunction1(readPKCS8PrvKeyHex), readPKCS8PubKeyHex = js.Any.fromFunction1(readPKCS8PubKeyHex), readPrivateKeyFromPEMString = js.Any.fromFunction1(readPrivateKeyFromPEMString), verify = js.Any.fromFunction2(verify))
     __obj.asInstanceOf[RSAKey]
@@ -84,6 +82,6 @@ object RSAKey {
     
     inline def setReadPrivateKeyFromPEMString(value: String => Unit): Self = StObject.set(x, "readPrivateKeyFromPEMString", js.Any.fromFunction1(value))
     
-    inline def setVerify(value: (String, String) => `0` | `1`): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
+    inline def setVerify(value: (String, String) => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
   }
 }

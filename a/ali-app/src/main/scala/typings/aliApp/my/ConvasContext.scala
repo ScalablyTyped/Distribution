@@ -231,17 +231,12 @@ trait ConvasContext extends StObject {
     */
   def setGlobalAlpha(alpha: Double): Unit = js.native
   
-  @JSName("setLineCap")
-  def setLineCap_butt(lineCap: butt): Unit = js.native
   /**
     * 设置线条的端点样式。
     *
     * @param lineCap 线条的结束端点样式
     */
-  @JSName("setLineCap")
-  def setLineCap_round(lineCap: round): Unit = js.native
-  @JSName("setLineCap")
-  def setLineCap_square(lineCap: square): Unit = js.native
+  def setLineCap(lineCap: round | butt | square): Unit = js.native
   
   /**
     * 设置虚线的样式
@@ -250,17 +245,12 @@ trait ConvasContext extends StObject {
     */
   def setLineDash(segments: js.Array[Double]): Unit = js.native
   
-  @JSName("setLineJoin")
-  def setLineJoin_bevel(lineJoin: bevel): Unit = js.native
-  @JSName("setLineJoin")
-  def setLineJoin_miter(lineJoin: miter): Unit = js.native
   /**
     * 设置线条的交点样式。
     *
     * @param lineJoin 线条的结束交点样式
     */
-  @JSName("setLineJoin")
-  def setLineJoin_round(lineJoin: round): Unit = js.native
+  def setLineJoin(lineJoin: round | bevel | miter): Unit = js.native
   
   /**
     * 设置线条的宽度。
@@ -292,36 +282,16 @@ trait ConvasContext extends StObject {
     */
   def setStrokeStyle(color: Color): Unit = js.native
   
-  @JSName("setTextAlign")
-  def setTextAlign_center(textAlign: center): Unit = js.native
-  @JSName("setTextAlign")
-  def setTextAlign_end(textAlign: end): Unit = js.native
   /**
     * textAlign 是 Canvas 2D API 描述绘制文本时，文本的对齐方式的属性。注意，该对齐是基于
     * CanvasRenderingContext2D.fillText 方法的x的值。所以如果 textAlign="center"，那么该文本将画在 x-50%*width
     */
-  @JSName("setTextAlign")
-  def setTextAlign_left(textAlign: left): Unit = js.native
-  @JSName("setTextAlign")
-  def setTextAlign_right(textAlign: right): Unit = js.native
-  @JSName("setTextAlign")
-  def setTextAlign_start(textAlign: start): Unit = js.native
+  def setTextAlign(textAlign: left | right | center | start | end): Unit = js.native
   
-  @JSName("setTextBaseline")
-  def setTextBaseline_alphabetic(textBaseline: alphabetic): Unit = js.native
-  @JSName("setTextBaseline")
-  def setTextBaseline_bottom(textBaseline: bottom): Unit = js.native
-  @JSName("setTextBaseline")
-  def setTextBaseline_hanging(textBaseline: hanging): Unit = js.native
-  @JSName("setTextBaseline")
-  def setTextBaseline_ideographic(textBaseline: ideographic): Unit = js.native
-  @JSName("setTextBaseline")
-  def setTextBaseline_middle(textBaseline: middle): Unit = js.native
   /**
     * textBaseline 是 Canvas 2D API 描述绘制文本时，当前文本基线的属性。
     */
-  @JSName("setTextBaseline")
-  def setTextBaseline_top(textBaseline: top): Unit = js.native
+  def setTextBaseline(textBaseline: top | hanging | middle | alphabetic | ideographic | bottom): Unit = js.native
   
   /**
     * 使用单位矩阵重新设置（覆盖）当前的变换并调用变换的方法，此变换由方法的变量进行描述。

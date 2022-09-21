@@ -58,7 +58,7 @@ object ParallelInstruction {
     
     inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
-    inline def setOutputsVarargs(value: InstructionOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: InstructionOutput*): Self = StObject.set(x, "outputs", js.Array(value*))
     
     inline def setParDo(value: ParDoInstruction): Self = StObject.set(x, "parDo", value.asInstanceOf[js.Any])
     

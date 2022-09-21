@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object getValueFromTextNodeMod {
   
-  @JSImport("@aws-sdk/smithy-client/dist/cjs/get-value-from-text-node", JSImport.Namespace)
+  @JSImport("@aws-sdk/smithy-client/dist-types/get-value-from-text-node", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getValueFromTextNode(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueFromTextNode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getValueFromTextNode(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueFromTextNode")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

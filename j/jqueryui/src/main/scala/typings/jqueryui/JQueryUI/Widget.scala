@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Widget extends StObject {
   
   def apply(methodName: String): JQuery = js.native
-  def apply(optionLiteral: String, optionName: String): js.Any = js.native
-  def apply(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def apply(optionLiteral: String, options: WidgetOptions): js.Any = js.native
+  def apply(optionLiteral: String, optionName: String): Any = js.native
+  def apply(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def apply(optionLiteral: String, options: WidgetOptions): Any = js.native
   def apply(options: AccordionOptions): JQuery = js.native
   def apply(options: WidgetOptions): JQuery = js.native
   def apply[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native

@@ -19,6 +19,6 @@ object Header {
     
     inline def setButtons(value: js.Array[HeaderButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    inline def setButtonsVarargs(value: HeaderButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: HeaderButton*): Self = StObject.set(x, "buttons", js.Array(value*))
   }
 }

@@ -4,8 +4,8 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientYoutube.anon.CallbackChannelId
 import typings.maximMazurokGapiClientYoutube.anon.OnBehalfOfContentOwnerOnBehalfOfContentOwnerChannel
 import typings.maximMazurokGapiClientYoutube.anon.PrettyPrint
-import typings.maximMazurokGapiClientYoutube.anon.PrettyPrintQuotaUser
 import typings.maximMazurokGapiClientYoutube.anon.QuotaUser
+import typings.maximMazurokGapiClientYoutube.anon.QuotaUserResource
 import typings.maximMazurokGapiClientYoutube.anon.UploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +26,7 @@ trait PlaylistsResource extends StObject {
   def list(): Request[PlaylistListResponse] = js.native
   def list(request: CallbackChannelId): Request[PlaylistListResponse] = js.native
   
-  /** Updates an existing resource. */
-  def update(request: PrettyPrintQuotaUser): Request[Playlist] = js.native
   def update(request: PrettyPrint, body: Playlist): Request[Playlist] = js.native
+  /** Updates an existing resource. */
+  def update(request: QuotaUserResource): Request[Playlist] = js.native
 }

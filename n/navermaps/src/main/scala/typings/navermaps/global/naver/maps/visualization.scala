@@ -17,7 +17,7 @@ object visualization {
   
   @JSGlobal("naver.maps.visualization.DotMap")
   @js.native
-  class DotMap ()
+  open class DotMap ()
     extends StObject
        with typings.navermaps.naver.maps.visualization.DotMap {
     def this(dotMapOptions: DotMapOptions) = this()
@@ -25,7 +25,7 @@ object visualization {
   
   @JSGlobal("naver.maps.visualization.HeatMap")
   @js.native
-  class HeatMap ()
+  open class HeatMap ()
     extends StObject
        with typings.navermaps.naver.maps.visualization.HeatMap {
     def this(heatMapOptions: HeatMapOptions) = this()
@@ -63,7 +63,7 @@ object visualization {
   
   @JSGlobal("naver.maps.visualization.WeightedLocation")
   @js.native
-  class WeightedLocation protected ()
+  open class WeightedLocation protected ()
     extends StObject
        with typings.navermaps.naver.maps.visualization.WeightedLocation {
     def this(lat: Double, lng: Double) = this()

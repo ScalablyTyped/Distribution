@@ -150,13 +150,13 @@ trait FreeformBuilder extends StObject {
     Y3: Double
   ): Unit = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   def ConvertToShape(): Shape = js.native
   
   val Creator: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.FreeformBuilder_typekey")
   var PowerPointDotFreeformBuilder_typekey: FreeformBuilder = js.native

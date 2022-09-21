@@ -9,7 +9,7 @@ object libCalendarMod {
   
   @JSImport("office-ui-fabric-react/lib/Calendar", "Calendar")
   @js.native
-  class Calendar protected ()
+  open class Calendar protected ()
     extends typings.officeUiFabricReact.calendarMod.Calendar {
     def this(props: ICalendarProps) = this()
   }

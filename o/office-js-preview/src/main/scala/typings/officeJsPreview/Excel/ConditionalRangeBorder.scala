@@ -21,9 +21,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the border of an object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @js.native
@@ -32,9 +32,9 @@ trait ConditionalRangeBorder
      with ClientObject {
   
   /**
+    * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var color: String = js.native
@@ -56,14 +56,8 @@ trait ConditionalRangeBorder
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ConditionalRangeBorder): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ConditionalRangeBorder): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -71,17 +65,17 @@ trait ConditionalRangeBorder
   def set(properties: ConditionalRangeBorderUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
+    * Constant value that indicates the specific side of the border. See `Excel.ConditionalRangeBorderIndex` for details.
     *
-    * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   val sideIndex: ConditionalRangeBorderIndex | EdgeTop | EdgeBottom | EdgeLeft | EdgeRight = js.native
   
   /**
+    * One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for details.
     *
-    * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var style: ConditionalRangeBorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot = js.native

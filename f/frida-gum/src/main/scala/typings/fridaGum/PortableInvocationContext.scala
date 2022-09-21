@@ -10,7 +10,7 @@ trait PortableInvocationContext
      with /**
   * User-defined invocation data. Useful if you want to read an argument in `onEnter` and act on it in `onLeave`.
   */
-/* x */ StringDictionary[js.Any]
+/* x */ StringDictionary[Any]
      with InvocationContext {
   
   /**

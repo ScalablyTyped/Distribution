@@ -10,17 +10,20 @@ object anon {
   @js.native
   trait Instantiable
     extends StObject
-       with Instantiable1[/* env */ js.Any, js.Any]
+       with Instantiable1[
+          /* import warning: importer.ImportType#apply Failed type conversion: infer A */ /* args */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: infer V */ js.Any
+        ]
   
   trait Random extends StObject {
     
     var random: Boolean
     
-    var seed: String
+    var seed: Double | String
   }
   object Random {
     
-    inline def apply(random: Boolean, seed: String): Random = {
+    inline def apply(random: Boolean, seed: Double | String): Random = {
       val __obj = js.Dynamic.literal(random = random.asInstanceOf[js.Any], seed = seed.asInstanceOf[js.Any])
       __obj.asInstanceOf[Random]
     }
@@ -29,7 +32,7 @@ object anon {
       
       inline def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
       
-      inline def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: Double | String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     }
   }
 }

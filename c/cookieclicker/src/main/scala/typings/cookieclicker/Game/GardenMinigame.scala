@@ -67,6 +67,9 @@ trait GardenMinigame
   
   var cursorL: HTMLDivElement = js.native
   
+  @JSName("draw")
+  def draw_MGardenMinigame(): Unit = js.native
+  
   /**
     * Randomly unlocks an upgrade based on the rate, affected by seedless to nay
     */
@@ -157,6 +160,9 @@ trait GardenMinigame
     */
   def lockSeed(me: GardenPlant): `true` = js.native
   
+  @JSName("logic")
+  def logic_MGardenMinigame(): Unit = js.native
+  
   /**
     * The amount of times to attempt mutation
     */
@@ -182,7 +188,16 @@ trait GardenMinigame
     */
   var nextStep: Double = js.native
   
-  var plantContam: js.Object = js.native
+  @JSName("onLevel")
+  def onLevel_MGardenMinigame(): Unit = js.native
+  
+  @JSName("onResize")
+  def onResize_MGardenMinigame(): Unit = js.native
+  
+  @JSName("onRuinTheFun")
+  def onRuinTheFun_MGardenMinigame(): Unit = js.native
+  
+  var plantContam: Record[String, Double] = js.native
   
   var plants: Record[String, GardenPlant] = js.native
   

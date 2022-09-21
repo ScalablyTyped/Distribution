@@ -8,7 +8,7 @@ object ojcolorMod {
   
   @JSImport("@oracle/oraclejet/ojcolor", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Color {
     def this(color: String) = this()

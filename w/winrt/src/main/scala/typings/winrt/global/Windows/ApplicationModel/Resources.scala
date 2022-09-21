@@ -22,13 +22,13 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.NamedResource")
     @js.native
-    class NamedResource ()
+    open class NamedResource ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Core.NamedResource
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceCandidate")
     @js.native
-    class ResourceCandidate ()
+    open class ResourceCandidate ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceCandidate {
       
@@ -56,7 +56,7 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceCandidateVectorView")
     @js.native
-    class ResourceCandidateVectorView ()
+    open class ResourceCandidateVectorView ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceCandidateVectorView {
       
@@ -66,7 +66,7 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceContext")
     @js.native
-    class ResourceContext ()
+    open class ResourceContext ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceContext
     /* static members */
@@ -81,7 +81,7 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceContextLanguagesVectorView")
     @js.native
-    class ResourceContextLanguagesVectorView ()
+    open class ResourceContextLanguagesVectorView ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceContextLanguagesVectorView {
       
@@ -91,7 +91,7 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceManager")
     @js.native
-    class ResourceManager ()
+    open class ResourceManager ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceManager {
       
@@ -127,7 +127,7 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceMap")
     @js.native
-    class ResourceMap ()
+    open class ResourceMap ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceMap {
       
@@ -151,7 +151,7 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceMapIterator")
     @js.native
-    class ResourceMapIterator ()
+    open class ResourceMapIterator ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceMapIterator {
       
@@ -172,7 +172,7 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceMapMapView")
     @js.native
-    class ResourceMapMapView ()
+    open class ResourceMapMapView ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceMapMapView {
       
@@ -196,7 +196,7 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceMapMapViewIterator")
     @js.native
-    class ResourceMapMapViewIterator ()
+    open class ResourceMapMapViewIterator ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceMapMapViewIterator {
       
@@ -217,7 +217,7 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceQualifier")
     @js.native
-    class ResourceQualifier ()
+    open class ResourceQualifier ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceQualifier {
       
@@ -239,7 +239,7 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceQualifierMapView")
     @js.native
-    class ResourceQualifierMapView ()
+    open class ResourceQualifierMapView ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceQualifierMapView {
       
@@ -261,7 +261,7 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceQualifierObservableMap")
     @js.native
-    class ResourceQualifierObservableMap ()
+    open class ResourceQualifierObservableMap ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceQualifierObservableMap {
       
@@ -284,7 +284,7 @@ object Resources {
       override def lookup(key: String): String = js.native
       
       /* CompleteClass */
-      var onmapchanged: js.Any = js.native
+      var onmapchanged: Any = js.native
       
       /* CompleteClass */
       override def remove(key: String): Unit = js.native
@@ -295,7 +295,7 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceQualifierVectorView")
     @js.native
-    class ResourceQualifierVectorView ()
+    open class ResourceQualifierVectorView ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceQualifierVectorView {
       
@@ -308,7 +308,7 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate")
     @js.native
-    class IndexedResourceCandidate ()
+    open class IndexedResourceCandidate ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate {
       
@@ -335,7 +335,7 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier")
     @js.native
-    class IndexedResourceQualifier ()
+    open class IndexedResourceQualifier ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier {
       
@@ -362,7 +362,7 @@ object Resources {
     
     @JSGlobal("Windows.ApplicationModel.Resources.Management.ResourceIndexer")
     @js.native
-    class ResourceIndexer protected ()
+    open class ResourceIndexer protected ()
       extends StObject
          with typings.winrt.Windows.ApplicationModel.Resources.Management.ResourceIndexer {
       def this(projectRoot: Uri) = this()
@@ -381,7 +381,7 @@ object Resources {
   
   @JSGlobal("Windows.ApplicationModel.Resources.ResourceLoader")
   @js.native
-  class ResourceLoader ()
+  open class ResourceLoader ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Resources.ResourceLoader {
     def this(name: String) = this()

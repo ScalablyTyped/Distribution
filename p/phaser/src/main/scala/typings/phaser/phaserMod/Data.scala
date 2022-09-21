@@ -14,7 +14,7 @@ object Data {
     */
   @JSImport("phaser", "Data.DataManager")
   @js.native
-  class DataManager protected ()
+  open class DataManager protected ()
     extends StObject
        with typings.phaser.Phaser.Data.DataManager {
     /**
@@ -33,7 +33,7 @@ object Data {
     */
   @JSImport("phaser", "Data.DataManagerPlugin")
   @js.native
-  class DataManagerPlugin protected ()
+  open class DataManagerPlugin protected ()
     extends StObject
        with typings.phaser.Phaser.Data.DataManagerPlugin {
     /**
@@ -58,7 +58,7 @@ object Data {
       */
     @JSImport("phaser", "Data.Events.CHANGE_DATA")
     @js.native
-    val CHANGE_DATA: js.Any = js.native
+    val CHANGE_DATA: Any = js.native
     
     /**
       * The Change Data Key Event.
@@ -72,7 +72,16 @@ object Data {
       */
     @JSImport("phaser", "Data.Events.CHANGE_DATA_KEY")
     @js.native
-    val CHANGE_DATA_KEY: js.Any = js.native
+    val CHANGE_DATA_KEY: Any = js.native
+    
+    /**
+      * The Data Manager Destroy Event.
+      * 
+      * The Data Manager will listen for the destroy event from its parent, and then close itself down.
+      */
+    @JSImport("phaser", "Data.Events.DESTROY")
+    @js.native
+    val DESTROY: Any = js.native
     
     /**
       * The Remove Data Event.
@@ -84,7 +93,7 @@ object Data {
       */
     @JSImport("phaser", "Data.Events.REMOVE_DATA")
     @js.native
-    val REMOVE_DATA: js.Any = js.native
+    val REMOVE_DATA: Any = js.native
     
     /**
       * The Set Data Event.
@@ -96,6 +105,6 @@ object Data {
       */
     @JSImport("phaser", "Data.Events.SET_DATA")
     @js.native
-    val SET_DATA: js.Any = js.native
+    val SET_DATA: Any = js.native
   }
 }

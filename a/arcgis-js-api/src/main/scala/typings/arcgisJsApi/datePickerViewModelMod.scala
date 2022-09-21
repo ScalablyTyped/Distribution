@@ -5,7 +5,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.arcgisJsApi.esri.DatePickerViewModel
 import typings.arcgisJsApi.esri.DatePickerViewModelConstructor
 import typings.arcgisJsApi.esri.DatePickerViewModelProperties
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,12 @@ object datePickerViewModelMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/support/DatePickerViewModel", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Provides the logic for the [DatePicker](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DatePicker.html) widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DatePickerViewModel.html)
+    */
+  open class Class ()
     extends StObject
        with DatePickerViewModel {
     def this(properties: DatePickerViewModelProperties) = this()
@@ -27,7 +31,9 @@ object datePickerViewModelMod extends Shortcut {
     /**
       * The current state of the widget.
       *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-MomentElementViewModel.html#state)
+      * @default ready
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DateTimeElementViewModel.html#state)
       */
     /* CompleteClass */
     var state: ready = js.native
@@ -35,10 +41,10 @@ object datePickerViewModelMod extends Shortcut {
     /**
       * The selected date.
       *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-MomentElementViewModel.html#value)
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DateTimeElementViewModel.html#value)
       */
     /* CompleteClass */
-    var value: Date = js.native
+    var value: js.Date = js.native
   }
   
   type _To = js.Object & DatePickerViewModelConstructor

@@ -85,7 +85,7 @@ object AccountSignatureProvider {
     
     inline def setSignatureProviderOptionsMetadataUndefined: Self = StObject.set(x, "signatureProviderOptionsMetadata", js.undefined)
     
-    inline def setSignatureProviderOptionsMetadataVarargs(value: (/* Reserved for DocuSign. */ AccountSignatureProviderOption)*): Self = StObject.set(x, "signatureProviderOptionsMetadata", js.Array(value :_*))
+    inline def setSignatureProviderOptionsMetadataVarargs(value: (/* Reserved for DocuSign. */ AccountSignatureProviderOption)*): Self = StObject.set(x, "signatureProviderOptionsMetadata", js.Array(value*))
     
     inline def setSignatureProviderRequiredOptions(
       value: js.Array[
@@ -97,6 +97,6 @@ object AccountSignatureProvider {
     
     inline def setSignatureProviderRequiredOptionsVarargs(
       value: (/* Contains additional information that a specific signature provider requires. */ SignatureProviderRequiredOption)*
-    ): Self = StObject.set(x, "signatureProviderRequiredOptions", js.Array(value :_*))
+    ): Self = StObject.set(x, "signatureProviderRequiredOptions", js.Array(value*))
   }
 }

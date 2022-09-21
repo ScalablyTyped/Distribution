@@ -15,7 +15,7 @@ object servicesCloudfrontMod {
   /**
     * Creates a new service object with a configuration object.
     */
-  class CloudFrontCustomizations () extends Service {
+  open class CloudFrontCustomizations () extends Service {
     def this(config: ServiceConfigurationOptions) = this()
   }
   /* static members */

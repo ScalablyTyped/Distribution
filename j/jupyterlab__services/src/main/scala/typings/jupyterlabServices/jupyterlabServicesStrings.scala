@@ -1,7 +1,7 @@
 package typings.jupyterlabServices
 
 import typings.jupyterlabServices.contentsMod.Contents.ContentType
-import typings.jupyterlabServices.contentsMod.Contents.FileFormat
+import typings.jupyterlabServices.contentsMod.Contents._FileFormat
 import typings.jupyterlabServices.messagesMod.Channel
 import typings.jupyterlabServices.messagesMod.ControlMessageType
 import typings.jupyterlabServices.messagesMod.IOPubMessageType
@@ -33,7 +33,7 @@ object jupyterlabServicesStrings {
   @js.native
   sealed trait base64
     extends StObject
-       with FileFormat
+       with _FileFormat
   inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
@@ -324,7 +324,7 @@ object jupyterlabServicesStrings {
   @js.native
   sealed trait json
     extends StObject
-       with FileFormat
+       with _FileFormat
   inline def json: json = "json".asInstanceOf[json]
   
   @js.native
@@ -424,8 +424,8 @@ object jupyterlabServicesStrings {
   @js.native
   sealed trait shutdown_reply
     extends StObject
+       with IOPubMessageType
        with MessageType
-       with ShellMessageType
   inline def shutdown_reply: shutdown_reply = "shutdown_reply".asInstanceOf[shutdown_reply]
   
   @js.native
@@ -489,7 +489,7 @@ object jupyterlabServicesStrings {
   @js.native
   sealed trait text
     extends StObject
-       with FileFormat
+       with _FileFormat
   inline def text: text = "text".asInstanceOf[text]
   
   @js.native

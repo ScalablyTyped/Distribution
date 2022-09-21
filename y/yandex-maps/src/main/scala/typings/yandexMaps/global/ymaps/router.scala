@@ -8,7 +8,7 @@ object router {
   
   @JSGlobal("ymaps.router.Editor")
   @js.native
-  class Editor ()
+  open class Editor ()
     extends typings.yandexMaps.mod.router.Editor
   
   @JSGlobal("ymaps.router.Route")

@@ -103,7 +103,7 @@ object FaceAnnotation {
     
     inline def setLandmarksUndefined: Self = StObject.set(x, "landmarks", js.undefined)
     
-    inline def setLandmarksVarargs(value: Landmark*): Self = StObject.set(x, "landmarks", js.Array(value :_*))
+    inline def setLandmarksVarargs(value: Landmark*): Self = StObject.set(x, "landmarks", js.Array(value*))
     
     inline def setPanAngle(value: Double): Self = StObject.set(x, "panAngle", value.asInstanceOf[js.Any])
     

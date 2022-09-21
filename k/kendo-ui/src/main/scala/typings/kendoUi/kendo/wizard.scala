@@ -11,7 +11,7 @@ object wizard {
     extends StObject
        with Class {
     
-    def buttons(): js.Array[js.Any]
+    def buttons(): js.Array[Any]
     
     def load(): Unit
     
@@ -22,7 +22,7 @@ object wizard {
   object Step {
     
     inline def apply(
-      buttons: () => js.Array[js.Any],
+      buttons: () => js.Array[Any],
       load: () => Unit,
       options: WizardStepOptions,
       resetButtons: () => Unit
@@ -33,7 +33,7 @@ object wizard {
     
     extension [Self <: Step](x: Self) {
       
-      inline def setButtons(value: () => js.Array[js.Any]): Self = StObject.set(x, "buttons", js.Any.fromFunction0(value))
+      inline def setButtons(value: () => js.Array[Any]): Self = StObject.set(x, "buttons", js.Any.fromFunction0(value))
       
       inline def setLoad(value: () => Unit): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       
@@ -47,7 +47,7 @@ object wizard {
     
     var actionBar: js.UndefOr[Boolean] = js.undefined
     
-    var buttons: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var buttons: js.UndefOr[js.Array[Any]] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -59,7 +59,7 @@ object wizard {
     
     var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var form: js.UndefOr[js.Any] = js.undefined
+    var form: js.UndefOr[Any] = js.undefined
     
     var formTag: js.UndefOr[String] = js.undefined
     
@@ -67,7 +67,7 @@ object wizard {
     
     var markupContainer: js.UndefOr[JQuery] = js.undefined
     
-    var messages: js.UndefOr[js.Any] = js.undefined
+    var messages: js.UndefOr[Any] = js.undefined
     
     var pager: js.UndefOr[Boolean] = js.undefined
     
@@ -90,11 +90,11 @@ object wizard {
       
       inline def setActionBarUndefined: Self = StObject.set(x, "actionBar", js.undefined)
       
-      inline def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: js.Array[Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
       inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      inline def setButtonsVarargs(value: js.Any*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: Any*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -116,7 +116,7 @@ object wizard {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setForm(value: js.Any): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: Any): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
       inline def setFormTag(value: String): Self = StObject.set(x, "formTag", value.asInstanceOf[js.Any])
       
@@ -132,7 +132,7 @@ object wizard {
       
       inline def setMarkupContainerUndefined: Self = StObject.set(x, "markupContainer", js.undefined)
       
-      inline def setMessages(value: js.Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
       inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       

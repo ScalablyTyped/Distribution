@@ -5,25 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.prettier.prettierStrings.babel
+  - typings.prettier.prettierStrings.angular
   - typings.prettier.prettierStrings.`babel-flow`
   - typings.prettier.prettierStrings.`babel-ts`
-  - typings.prettier.prettierStrings.flow
-  - typings.prettier.prettierStrings.typescript
+  - typings.prettier.prettierStrings.babel
   - typings.prettier.prettierStrings.css
-  - typings.prettier.prettierStrings.less
-  - typings.prettier.prettierStrings.scss
+  - typings.prettier.prettierStrings.espree
+  - typings.prettier.prettierStrings.flow
+  - typings.prettier.prettierStrings.glimmer
+  - typings.prettier.prettierStrings.graphql
+  - typings.prettier.prettierStrings.html
+  - typings.prettier.prettierStrings.`json-stringify`
   - typings.prettier.prettierStrings.json
   - typings.prettier.prettierStrings.json5
-  - typings.prettier.prettierStrings.`json-stringify`
-  - typings.prettier.prettierStrings.graphql
-  - typings.prettier.prettierStrings.markdown
-  - typings.prettier.prettierStrings.vue
-  - typings.prettier.prettierStrings.html
-  - typings.prettier.prettierStrings.angular
-  - typings.prettier.prettierStrings.mdx
-  - typings.prettier.prettierStrings.yaml
+  - typings.prettier.prettierStrings.less
   - typings.prettier.prettierStrings.lwc
+  - typings.prettier.prettierStrings.markdown
+  - typings.prettier.prettierStrings.mdx
+  - typings.prettier.prettierStrings.meriyah
+  - typings.prettier.prettierStrings.scss
+  - typings.prettier.prettierStrings.typescript
+  - typings.prettier.prettierStrings.vue
+  - typings.prettier.prettierStrings.yaml
 */
 trait BuiltInParserName extends StObject
 object BuiltInParserName {
@@ -38,7 +41,11 @@ object BuiltInParserName {
   
   inline def css: typings.prettier.prettierStrings.css = "css".asInstanceOf[typings.prettier.prettierStrings.css]
   
+  inline def espree: typings.prettier.prettierStrings.espree = "espree".asInstanceOf[typings.prettier.prettierStrings.espree]
+  
   inline def flow: typings.prettier.prettierStrings.flow = "flow".asInstanceOf[typings.prettier.prettierStrings.flow]
+  
+  inline def glimmer: typings.prettier.prettierStrings.glimmer = "glimmer".asInstanceOf[typings.prettier.prettierStrings.glimmer]
   
   inline def graphql: typings.prettier.prettierStrings.graphql = "graphql".asInstanceOf[typings.prettier.prettierStrings.graphql]
   
@@ -57,6 +64,8 @@ object BuiltInParserName {
   inline def markdown: typings.prettier.prettierStrings.markdown = "markdown".asInstanceOf[typings.prettier.prettierStrings.markdown]
   
   inline def mdx: typings.prettier.prettierStrings.mdx = "mdx".asInstanceOf[typings.prettier.prettierStrings.mdx]
+  
+  inline def meriyah: typings.prettier.prettierStrings.meriyah = "meriyah".asInstanceOf[typings.prettier.prettierStrings.meriyah]
   
   inline def scss: typings.prettier.prettierStrings.scss = "scss".asInstanceOf[typings.prettier.prettierStrings.scss]
   

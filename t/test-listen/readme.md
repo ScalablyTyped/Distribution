@@ -11,9 +11,9 @@ Produce URLs to test HTTP servers with ephemeral ports
 | Full name          | test-listen |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 685413 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 112121.0 |
+| # stars            | 146.0 |
 
 ## Links
 - [Homepage](https://github.com/zeit/test-listen#readme)

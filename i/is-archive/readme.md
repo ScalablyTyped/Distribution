@@ -10,10 +10,10 @@ Check if a file path is an archive file
 | ------------------ | :-------------: |
 | Full name          | is-archive |
 | Keywords           | extensions, extension, file, path, check, detect, is, archive, compressed, compress, archive, zip, tar, rar, 7z |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 348 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 41.333333333333336 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-archive#readme)

@@ -13,7 +13,7 @@ object cascaderCascaderMod {
   
   @JSImport("@ant-design/react-native/lib/picker/cascader/Cascader", JSImport.Default)
   @js.native
-  class default () extends Cascader
+  open class default () extends Cascader
   object default {
     
     /* static member */
@@ -41,17 +41,16 @@ object cascaderCascaderMod {
   }
   
   @js.native
-  trait Cascader
-    extends Component[CascaderProps, js.Any, js.Any] {
+  trait Cascader extends Component[CascaderProps, Any, Any] {
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MCascader(nextProps: DataValue): Unit = js.native
     
     def getCols(): js.Array[Element] = js.native
     
-    def getValue(d: js.Any, `val`: js.Any): js.Array[js.Any] = js.native
+    def getValue(d: Any, `val`: Any): js.Array[Any] = js.native
     
-    def onValueChange(value: js.Any, index: js.Any): Unit = js.native
+    def onValueChange(value: Any, index: Any): Unit = js.native
     
     @JSName("state")
     var state_Cascader: ValueArray = js.native

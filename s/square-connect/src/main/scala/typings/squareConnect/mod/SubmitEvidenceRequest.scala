@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SubmitEvidenceRequest")
 @js.native
-class SubmitEvidenceRequest () extends StObject
+open class SubmitEvidenceRequest () extends StObject

@@ -1,7 +1,7 @@
 
 # Scala.js typings for macos-release
 
-Typings are for version 2.4.1
+Typings are for version 3.1.0
 
 ## Library description:
 Get the name and version of a macOS release from the Darwin version
@@ -10,10 +10,10 @@ Get the name and version of a macOS release from the Darwin version
 | ------------------ | :-------------: |
 | Full name          | macos-release |
 | Keywords           | macos, os, darwin, operating, system, platform, name, title, release, version |
-| # releases         | 6 |
-| # dependents       | 36 |
-| # downloads        | 143173538 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2866205E7 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/macos-release#readme)

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateSoftwareTokenResponse extends StObject {
   
   /**
-    * A unique generated shared secret code that is used in the TOTP algorithm to generate a one time code.
+    * A unique generated shared secret code that is used in the TOTP algorithm to generate a one-time code.
     */
   var SecretCode: js.UndefOr[SecretCodeType] = js.undefined
   
   /**
-    * The session which should be passed both ways in challenge-response calls to the service. This allows authentication of the user as part of the MFA setup process.
+    * The session that should be passed both ways in challenge-response calls to the service. This allows authentication of the user as part of the MFA setup process.
     */
   var Session: js.UndefOr[SessionType] = js.undefined
 }

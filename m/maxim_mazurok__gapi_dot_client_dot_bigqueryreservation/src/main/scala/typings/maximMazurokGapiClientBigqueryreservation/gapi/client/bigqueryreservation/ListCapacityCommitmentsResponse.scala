@@ -25,7 +25,7 @@ object ListCapacityCommitmentsResponse {
     
     inline def setCapacityCommitmentsUndefined: Self = StObject.set(x, "capacityCommitments", js.undefined)
     
-    inline def setCapacityCommitmentsVarargs(value: CapacityCommitment*): Self = StObject.set(x, "capacityCommitments", js.Array(value :_*))
+    inline def setCapacityCommitmentsVarargs(value: CapacityCommitment*): Self = StObject.set(x, "capacityCommitments", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

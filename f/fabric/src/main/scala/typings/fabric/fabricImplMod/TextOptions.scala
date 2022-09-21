@@ -3,8 +3,10 @@ package typings.fabric.fabricImplMod
 import typings.fabric.anon.Baseline
 import typings.fabric.fabricStrings._empty
 import typings.fabric.fabricStrings.italic
+import typings.fabric.fabricStrings.ltr
 import typings.fabric.fabricStrings.normal
 import typings.fabric.fabricStrings.oblique
+import typings.fabric.fabricStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,6 +27,11 @@ trait TextOptions
     * @type {Number}
     */
   var deltaY: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Text input direction. supporting RTL languages.
+    */
+  var direction: js.UndefOr[ltr | rtl] = js.undefined
   
   /**
     * Font family
@@ -73,7 +80,7 @@ trait TextOptions
     * 2nd-level properties - charater numbers
     * @type Object
     */
-  var styles: js.UndefOr[js.Any] = js.undefined
+  var styles: js.UndefOr[Any] = js.undefined
   
   /**
     * Subscript schema object (minimum overlap)
@@ -125,6 +132,10 @@ object TextOptions {
     
     inline def setDeltaYUndefined: Self = StObject.set(x, "deltaY", js.undefined)
     
+    inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
     inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
@@ -153,7 +164,7 @@ object TextOptions {
     
     inline def setOverlineUndefined: Self = StObject.set(x, "overline", js.undefined)
     
-    inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     

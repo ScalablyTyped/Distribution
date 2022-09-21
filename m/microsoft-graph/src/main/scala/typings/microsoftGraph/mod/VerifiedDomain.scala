@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait VerifiedDomain extends StObject {
   
-  // For example, 'Email', 'OfficeCommunicationsOnline'.
+  // For example, Email, OfficeCommunicationsOnline.
   var capabilities: js.UndefOr[NullableOption[String]] = js.undefined
   
   // true if this is the default domain associated with the tenant; otherwise, false.
   var isDefault: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // true if this is the initial domain associated with the tenant; otherwise, false
+  // true if this is the initial domain associated with the tenant; otherwise, false.
   var isInitial: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // The domain name; for example, 'contoso.onmicrosoft.com'
+  // The domain name; for example, contoso.onmicrosoft.com.
   var name: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // For example, 'Managed'.
+  // For example, Managed.
   var `type`: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object VerifiedDomain {

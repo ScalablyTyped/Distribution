@@ -25,12 +25,12 @@ object NumericTargetingDimension {
     
     inline def setExcludedIdsUndefined: Self = StObject.set(x, "excludedIds", js.undefined)
     
-    inline def setExcludedIdsVarargs(value: String*): Self = StObject.set(x, "excludedIds", js.Array(value :_*))
+    inline def setExcludedIdsVarargs(value: String*): Self = StObject.set(x, "excludedIds", js.Array(value*))
     
     inline def setIncludedIds(value: js.Array[String]): Self = StObject.set(x, "includedIds", value.asInstanceOf[js.Any])
     
     inline def setIncludedIdsUndefined: Self = StObject.set(x, "includedIds", js.undefined)
     
-    inline def setIncludedIdsVarargs(value: String*): Self = StObject.set(x, "includedIds", js.Array(value :_*))
+    inline def setIncludedIdsVarargs(value: String*): Self = StObject.set(x, "includedIds", js.Array(value*))
   }
 }

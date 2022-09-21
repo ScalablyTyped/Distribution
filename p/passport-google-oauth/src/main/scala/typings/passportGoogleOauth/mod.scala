@@ -1,9 +1,8 @@
 package typings.passportGoogleOauth
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.passport.mod.Strategy
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +11,19 @@ object mod {
   
   @JSImport("passport-google-oauth", "OAuth2Strategy")
   @js.native
-  class OAuth2Strategy protected ()
+  open class OAuth2Strategy protected ()
     extends StObject
        with Strategy {
     def this(
       options: IOAuth2StrategyOptionWithRequest,
       verify: js.Function5[
-            /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+            /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], 
             /* accessToken */ String, 
             /* refreshToken */ String, 
             /* profile */ Profile, 
@@ -37,7 +42,16 @@ object mod {
           ]
     ) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: js.Object
+    ): Unit = js.native
     
     @JSName("name")
     var name_OAuth2Strategy: String = js.native
@@ -45,7 +59,7 @@ object mod {
   
   @JSImport("passport-google-oauth", "OAuthStrategy")
   @js.native
-  class OAuthStrategy protected ()
+  open class OAuthStrategy protected ()
     extends StObject
        with Strategy {
     def this(
@@ -59,7 +73,16 @@ object mod {
           ]
     ) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: js.Object
+    ): Unit = js.native
     
     @JSName("name")
     var name_OAuthStrategy: String = js.native
@@ -234,7 +257,7 @@ object mod {
     extends StObject
        with typings.passport.mod.Profile {
     
-    var _json: js.Any
+    var _json: Any
     
     var _raw: String
     
@@ -242,7 +265,7 @@ object mod {
   }
   object Profile {
     
-    inline def apply(_json: js.Any, _raw: String, displayName: String, gender: String, id: String, provider: String): Profile = {
+    inline def apply(_json: Any, _raw: String, displayName: String, gender: String, id: String, provider: String): Profile = {
       val __obj = js.Dynamic.literal(_json = _json.asInstanceOf[js.Any], _raw = _raw.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[Profile]
     }
@@ -251,18 +274,13 @@ object mod {
       
       inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       
-      inline def set_json(value: js.Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
+      inline def set_json(value: Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
       
       inline def set_raw(value: String): Self = StObject.set(x, "_raw", value.asInstanceOf[js.Any])
     }
   }
   
-  type VerifyFunction = js.Function3[
-    /* error */ js.Any, 
-    /* user */ js.UndefOr[js.Any], 
-    /* msg */ js.UndefOr[VerifyOptions], 
-    Unit
-  ]
+  type VerifyFunction = js.Function3[/* error */ Any, /* user */ js.UndefOr[Any], /* msg */ js.UndefOr[VerifyOptions], Unit]
   
   trait VerifyOptions extends StObject {
     

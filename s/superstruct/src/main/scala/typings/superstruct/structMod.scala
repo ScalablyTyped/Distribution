@@ -1,11 +1,11 @@
 package typings.superstruct
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
-import typings.std.Iterable
-import typings.std.IterableIterator
-import typings.superstruct.anon.PartialStructFailurePath
-import typings.superstruct.anon.Refiner
+import typings.superstruct.anon.Coerce
+import typings.superstruct.anon.PartialFailure
+import typings.superstruct.anon.`0`
+import typings.superstruct.errorMod.Failure
+import typings.superstruct.errorMod.StructError
+import typings.superstruct.utilsMod.StructSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,120 +18,101 @@ object structMod {
   
   @JSImport("superstruct/lib/struct", "Struct")
   @js.native
-  class Struct[T, S] protected () extends StObject {
-    def this(props: Refiner[S, T]) = this()
+  open class Struct[T, S] protected () extends StObject {
+    def this(props: typings.superstruct.anon.Coercer[S, T]) = this()
     
-    def coercer(value: js.Any): js.Any = js.native
+    val TYPE: T = js.native
     
-    def refiner(value: T, context: StructContext): StructResult = js.native
+    /**
+      * Assert that a value passes the struct's validation, throwing if it doesn't.
+      */
+    def assert(value: Any): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = js.native
+    
+    def coercer(value: Any, context: Context): Any = js.native
+    
+    /**
+      * Create a value with the struct's coercion logic, then validate it.
+      */
+    def create(value: Any): T = js.native
+    
+    def entries(value: Any, context: Context): js.Iterable[js.Tuple3[String | Double, Any, Struct[Any | scala.Nothing, Any]]] = js.native
+    
+    /**
+      * Check if a value passes the struct's validation.
+      */
+    def is(value: Any): /* is T */ Boolean = js.native
+    
+    /**
+      * Mask a value, coercing and validating it, but returning only the subset of
+      * properties defined by the struct's schema.
+      */
+    def mask(value: Any): T = js.native
+    
+    def refiner(value: T, context: Context): js.Iterable[Failure] = js.native
     
     var schema: S = js.native
     
     var `type`: String = js.native
     
-    def validator(value: js.Any, context: StructContext): StructResult = js.native
+    /**
+      * Validate a value with the struct's validation logic, returning a tuple
+      * representing the result.
+      *
+      * You may optionally pass `true` for the `withCoercion` argument to coerce
+      * the value before attempting to validate it. If you do, the result will
+      * contain the coerced result when successful.
+      */
+    def validate(value: Any): js.Tuple2[StructError | Unit, T | Unit] = js.native
+    def validate(value: Any, options: `0`): js.Tuple2[StructError | Unit, T | Unit] = js.native
+    
+    def validator(value: Any, context: Context): js.Iterable[Failure] = js.native
   }
   
-  @JSImport("superstruct/lib/struct", "StructError")
-  @js.native
-  class StructError protected ()
-    extends StObject
-       with Error
-       with /* key */ StringDictionary[js.Any] {
-    def this(failure: StructFailure, moreFailures: IterableIterator[StructFailure]) = this()
+  inline def assert[T, S](value: Any, struct: Struct[T, S]): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any])).asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
+  
+  inline def create[T, S](value: Any, struct: Struct[T, S]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def is[T, S](value: Any, struct: Struct[T, S]): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+  
+  inline def mask[T, S](value: Any, struct: Struct[T, S]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mask")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def validate[T, S](value: Any, struct: Struct[T, S]): js.Tuple2[StructError | Unit, T | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[StructError | Unit, T | Unit]]
+  inline def validate[T, S](value: Any, struct: Struct[T, S], options: Coerce): js.Tuple2[StructError | Unit, T | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[StructError | Unit, T | Unit]]
+  
+  type Coercer[T] = js.Function2[/* value */ T, /* context */ Context, Any]
+  
+  trait Context extends StObject {
     
-    var branch: js.Array[js.Any] = js.native
+    var branch: js.Array[Any]
     
-    def failures(): js.Array[StructFailure] = js.native
-    
-    /* CompleteClass */
-    var message: String = js.native
-    
-    /* CompleteClass */
-    var name: String = js.native
-    
-    var path: js.Array[Double | String] = js.native
-    
-    var `type`: String = js.native
-    
-    var value: js.Any = js.native
+    var path: js.Array[Any]
   }
-  
-  inline def assert[T](value: js.Any, struct: Struct[T, js.Any]): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any])).asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
-  
-  inline def coerce[T](value: js.Any, struct: Struct[T, js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any])).asInstanceOf[T]
-  
-  inline def is[T](value: js.Any, struct: Struct[T, js.Any]): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
-  
-  inline def validate[T](value: js.Any, struct: Struct[T, js.Any]): js.Tuple2[StructError | Unit, T | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[StructError | Unit, T | Unit]]
-  inline def validate[T](value: js.Any, struct: Struct[T, js.Any], coercing: Boolean): js.Tuple2[StructError | Unit, T | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any], coercing.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[StructError | Unit, T | Unit]]
-  
-  @js.native
-  trait StructContext extends StObject {
+  object Context {
     
-    var branch: js.Array[js.Any] = js.native
-    
-    def check(value: js.Any, struct: Struct[js.Any | scala.Nothing, js.Any]): IterableIterator[StructFailure] = js.native
-    def check(value: js.Any, struct: Struct[js.Any | scala.Nothing, js.Any], parent: js.Any): IterableIterator[StructFailure] = js.native
-    def check(value: js.Any, struct: Struct[js.Any | scala.Nothing, js.Any], parent: js.Any, key: String): IterableIterator[StructFailure] = js.native
-    def check(value: js.Any, struct: Struct[js.Any | scala.Nothing, js.Any], parent: js.Any, key: Double): IterableIterator[StructFailure] = js.native
-    def check(value: js.Any, struct: Struct[js.Any | scala.Nothing, js.Any], parent: Unit, key: String): IterableIterator[StructFailure] = js.native
-    def check(value: js.Any, struct: Struct[js.Any | scala.Nothing, js.Any], parent: Unit, key: Double): IterableIterator[StructFailure] = js.native
-    
-    def fail(): StructFailure = js.native
-    def fail(props: PartialStructFailurePath): StructFailure = js.native
-    
-    var path: js.Array[String | Double] = js.native
-    
-    var `type`: String = js.native
-    
-    var value: js.Any = js.native
-  }
-  
-  trait StructFailure
-    extends StObject
-       with /* key */ StringDictionary[js.Any] {
-    
-    var branch: js.Array[js.Any]
-    
-    var path: js.Array[String | Double]
-    
-    var `type`: String
-    
-    var value: /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/struct.StructContext['value'] */ js.Any
-  }
-  object StructFailure {
-    
-    inline def apply(
-      branch: js.Array[js.Any],
-      path: js.Array[String | Double],
-      `type`: String,
-      value: /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/struct.StructContext['value'] */ js.Any
-    ): StructFailure = {
-      val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[StructFailure]
+    inline def apply(branch: js.Array[Any], path: js.Array[Any]): Context = {
+      val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: StructFailure](x: Self) {
+    extension [Self <: Context](x: Self) {
       
-      inline def setBranch(value: js.Array[js.Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      inline def setBranch(value: js.Array[Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
-      inline def setBranchVarargs(value: js.Any*): Self = StObject.set(x, "branch", js.Array(value :_*))
+      inline def setBranchVarargs(value: Any*): Self = StObject.set(x, "branch", js.Array(value*))
       
-      inline def setPath(value: js.Array[String | Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setValue(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/struct.StructContext['value'] */ js.Any
-      ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setPathVarargs(value: Any*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
   
-  type StructResult = Boolean | Iterable[StructFailure]
+  type Describe[T] = Struct[T, StructSchema[T]]
   
-  type StructType[T /* <: Struct[js.Any, js.Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T['refiner']>[0] */ js.Any
+  type Infer[T /* <: Struct[Any, Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: T['TYPE'] */ js.Any
+  
+  type Refiner[T] = js.Function2[/* value */ T, /* context */ Context, Result]
+  
+  type Result = Boolean | String | PartialFailure | (js.Iterable[Boolean | String | PartialFailure])
+  
+  type Validator = js.Function2[/* value */ Any, /* context */ Context, Result]
 }

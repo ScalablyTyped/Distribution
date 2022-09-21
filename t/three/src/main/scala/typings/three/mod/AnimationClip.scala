@@ -1,14 +1,14 @@
 package typings.three.mod
 
-import typings.three.geometryMod.MorphTarget
+import typings.three.animationClipMod.MorphTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "AnimationClip")
 @js.native
-class AnimationClip ()
-  extends typings.three.animationClipMod.AnimationClip {
+open class AnimationClip ()
+  extends typings.three.threeMod.AnimationClip {
   def this(name: String) = this()
   def this(name: String, duration: Double) = this()
   def this(name: Unit, duration: Double) = this()
@@ -20,45 +20,50 @@ class AnimationClip ()
     name: String,
     duration: Double,
     tracks: js.Array[typings.three.keyframeTrackMod.KeyframeTrack],
-    blendMode: typings.three.constantsMod.AnimationBlendMode
+    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
   ) = this()
   def this(
     name: String,
     duration: Double,
     tracks: Unit,
-    blendMode: typings.three.constantsMod.AnimationBlendMode
+    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
   ) = this()
   def this(
     name: String,
     duration: Unit,
     tracks: js.Array[typings.three.keyframeTrackMod.KeyframeTrack],
-    blendMode: typings.three.constantsMod.AnimationBlendMode
+    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
   ) = this()
   def this(
     name: String,
     duration: Unit,
     tracks: Unit,
-    blendMode: typings.three.constantsMod.AnimationBlendMode
+    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
   ) = this()
   def this(
     name: Unit,
     duration: Double,
     tracks: js.Array[typings.three.keyframeTrackMod.KeyframeTrack],
-    blendMode: typings.three.constantsMod.AnimationBlendMode
+    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
   ) = this()
   def this(
     name: Unit,
     duration: Double,
     tracks: Unit,
-    blendMode: typings.three.constantsMod.AnimationBlendMode
+    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
   ) = this()
   def this(
     name: Unit,
     duration: Unit,
     tracks: js.Array[typings.three.keyframeTrackMod.KeyframeTrack],
-    blendMode: typings.three.constantsMod.AnimationBlendMode
+    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
   ) = this()
-  def this(name: Unit, duration: Unit, tracks: Unit, blendMode: typings.three.constantsMod.AnimationBlendMode) = this()
+  def this(
+    name: Unit,
+    duration: Unit,
+    tracks: Unit,
+    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
+  ) = this()
 }
 /* static members */
 object AnimationClip {
@@ -73,9 +78,9 @@ object AnimationClip {
   
   inline def findByName(clipArray: js.Array[typings.three.animationClipMod.AnimationClip], name: String): typings.three.animationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("findByName")(clipArray.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.three.animationClipMod.AnimationClip]
   
-  inline def parse(json: js.Any): typings.three.animationClipMod.AnimationClip = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(json.asInstanceOf[js.Any]).asInstanceOf[typings.three.animationClipMod.AnimationClip]
+  inline def parse(json: Any): typings.three.animationClipMod.AnimationClip = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(json.asInstanceOf[js.Any]).asInstanceOf[typings.three.animationClipMod.AnimationClip]
   
-  inline def parseAnimation(animation: js.Any, bones: js.Array[typings.three.boneMod.Bone]): typings.three.animationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAnimation")(animation.asInstanceOf[js.Any], bones.asInstanceOf[js.Any])).asInstanceOf[typings.three.animationClipMod.AnimationClip]
+  inline def parseAnimation(animation: Any, bones: js.Array[typings.three.boneMod.Bone]): typings.three.animationClipMod.AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAnimation")(animation.asInstanceOf[js.Any], bones.asInstanceOf[js.Any])).asInstanceOf[typings.three.animationClipMod.AnimationClip]
   
-  inline def toJSON(clip: typings.three.animationClipMod.AnimationClip): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(clip.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def toJSON(clip: typings.three.animationClipMod.AnimationClip): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(clip.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

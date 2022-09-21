@@ -1,5 +1,6 @@
 package typings.reactNavigationCore
 
+import typings.reactNavigationCore.typesMod.Keyof
 import typings.reactNavigationCore.typesMod.RouteProp
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
@@ -12,5 +13,5 @@ object useRouteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T /* <: RouteProp[ParamListBase, String] */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[T]
+  inline def default[T /* <: RouteProp[ParamListBase, Keyof[ParamListBase]] */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[T]
 }

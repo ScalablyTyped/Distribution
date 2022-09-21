@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-rate" : "2.9.1"
+      "rc-rate" : "2.9.2"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-rate" : "2.9.1"
+      "rc-rate" : "2.9.2"
     }
   ],
   "compile-devDependencies" : [

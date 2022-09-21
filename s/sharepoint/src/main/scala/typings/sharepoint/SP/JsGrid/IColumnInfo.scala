@@ -59,7 +59,7 @@ object IColumnInfo {
     
     inline def setFieldKeys(value: js.Array[String]): Self = StObject.set(x, "fieldKeys", value.asInstanceOf[js.Any])
     
-    inline def setFieldKeysVarargs(value: String*): Self = StObject.set(x, "fieldKeys", js.Array(value :_*))
+    inline def setFieldKeysVarargs(value: String*): Self = StObject.set(x, "fieldKeys", js.Array(value*))
     
     inline def setImgSrc(value: String): Self = StObject.set(x, "imgSrc", value.asInstanceOf[js.Any])
     

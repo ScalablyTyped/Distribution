@@ -7,11 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Table extends StObject {
   
+  /** [Output-only] Clone definition. */
+  var cloneDefinition: js.UndefOr[CloneDefinition] = js.undefined
+  
   /** [Beta] Clustering specification for the table. Must be specified with partitioning, data in the table will be first partitioned and subsequently clustered. */
   var clustering: js.UndefOr[Clustering] = js.undefined
   
   /** [Output-only] The time when this table was created, in milliseconds since the epoch. */
   var creationTime: js.UndefOr[String] = js.undefined
+  
+  /** [Output-only] The default collation of the table. */
+  var defaultCollation: js.UndefOr[String] = js.undefined
   
   /** [Optional] A user-friendly description of this table. */
   var description: js.UndefOr[String] = js.undefined
@@ -54,7 +60,7 @@ trait Table extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Table & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Table & TopLevel[Any]
   ] = js.undefined
   
   /** [Output-only] The time when this table was last modified, in milliseconds since the epoch. */
@@ -65,6 +71,9 @@ trait Table extends StObject {
   
   /** [Optional] Materialized view definition. */
   var materializedView: js.UndefOr[MaterializedViewDefinition] = js.undefined
+  
+  /** [Optional] Max staleness of data that could be returned when table or materialized view is queried (formatted as Google SQL Interval type). */
+  var maxStaleness: js.UndefOr[String] = js.undefined
   
   /** [Output-only, Beta] Present iff this table represents a ML model. Describes the training information for the model, and it is required to run 'PREDICT' queries. */
   var model: js.UndefOr[ModelDefinition] = js.undefined
@@ -80,6 +89,36 @@ trait Table extends StObject {
   
   /** [Output-only] The number of rows of data in this table, excluding any data in the streaming buffer. */
   var numRows: js.UndefOr[String] = js.undefined
+  
+  /** [Output-only] Number of logical bytes that are less than 90 days old. */
+  var num_active_logical_bytes: js.UndefOr[String] = js.undefined
+  
+  /** [Output-only] Number of physical bytes less than 90 days old. This data is not kept in real time, and might be delayed by a few seconds to a few minutes. */
+  var num_active_physical_bytes: js.UndefOr[String] = js.undefined
+  
+  /** [Output-only] Number of logical bytes that are more than 90 days old. */
+  var num_long_term_logical_bytes: js.UndefOr[String] = js.undefined
+  
+  /** [Output-only] Number of physical bytes more than 90 days old. This data is not kept in real time, and might be delayed by a few seconds to a few minutes. */
+  var num_long_term_physical_bytes: js.UndefOr[String] = js.undefined
+  
+  /** [Output-only] The number of partitions present in the table or materialized view. This data is not kept in real time, and might be delayed by a few seconds to a few minutes. */
+  var num_partitions: js.UndefOr[String] = js.undefined
+  
+  /**
+    * [Output-only] Number of physical bytes used by time travel storage (deleted or changed data). This data is not kept in real time, and might be delayed by a few seconds to a few
+    * minutes.
+    */
+  var num_time_travel_physical_bytes: js.UndefOr[String] = js.undefined
+  
+  /** [Output-only] Total number of logical bytes in the table or materialized view. */
+  var num_total_logical_bytes: js.UndefOr[String] = js.undefined
+  
+  /**
+    * [Output-only] The physical size of this table in bytes. This also includes storage used for time travel. This data is not kept in real time, and might be delayed by a few seconds to
+    * a few minutes.
+    */
+  var num_total_physical_bytes: js.UndefOr[String] = js.undefined
   
   /** [TrustedTester] Range partitioning specification for this table. Only one of timePartitioning and rangePartitioning should be specified. */
   var rangePartitioning: js.UndefOr[RangePartitioning] = js.undefined
@@ -127,6 +166,10 @@ object Table {
   
   extension [Self <: Table](x: Self) {
     
+    inline def setCloneDefinition(value: CloneDefinition): Self = StObject.set(x, "cloneDefinition", value.asInstanceOf[js.Any])
+    
+    inline def setCloneDefinitionUndefined: Self = StObject.set(x, "cloneDefinition", js.undefined)
+    
     inline def setClustering(value: Clustering): Self = StObject.set(x, "clustering", value.asInstanceOf[js.Any])
     
     inline def setClusteringUndefined: Self = StObject.set(x, "clustering", js.undefined)
@@ -134,6 +177,10 @@ object Table {
     inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    
+    inline def setDefaultCollation(value: String): Self = StObject.set(x, "defaultCollation", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultCollationUndefined: Self = StObject.set(x, "defaultCollation", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -170,7 +217,7 @@ object Table {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Table & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Table & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -186,6 +233,10 @@ object Table {
     inline def setMaterializedView(value: MaterializedViewDefinition): Self = StObject.set(x, "materializedView", value.asInstanceOf[js.Any])
     
     inline def setMaterializedViewUndefined: Self = StObject.set(x, "materializedView", js.undefined)
+    
+    inline def setMaxStaleness(value: String): Self = StObject.set(x, "maxStaleness", value.asInstanceOf[js.Any])
+    
+    inline def setMaxStalenessUndefined: Self = StObject.set(x, "maxStaleness", js.undefined)
     
     inline def setModel(value: ModelDefinition): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
@@ -206,6 +257,38 @@ object Table {
     inline def setNumRows(value: String): Self = StObject.set(x, "numRows", value.asInstanceOf[js.Any])
     
     inline def setNumRowsUndefined: Self = StObject.set(x, "numRows", js.undefined)
+    
+    inline def setNum_active_logical_bytes(value: String): Self = StObject.set(x, "num_active_logical_bytes", value.asInstanceOf[js.Any])
+    
+    inline def setNum_active_logical_bytesUndefined: Self = StObject.set(x, "num_active_logical_bytes", js.undefined)
+    
+    inline def setNum_active_physical_bytes(value: String): Self = StObject.set(x, "num_active_physical_bytes", value.asInstanceOf[js.Any])
+    
+    inline def setNum_active_physical_bytesUndefined: Self = StObject.set(x, "num_active_physical_bytes", js.undefined)
+    
+    inline def setNum_long_term_logical_bytes(value: String): Self = StObject.set(x, "num_long_term_logical_bytes", value.asInstanceOf[js.Any])
+    
+    inline def setNum_long_term_logical_bytesUndefined: Self = StObject.set(x, "num_long_term_logical_bytes", js.undefined)
+    
+    inline def setNum_long_term_physical_bytes(value: String): Self = StObject.set(x, "num_long_term_physical_bytes", value.asInstanceOf[js.Any])
+    
+    inline def setNum_long_term_physical_bytesUndefined: Self = StObject.set(x, "num_long_term_physical_bytes", js.undefined)
+    
+    inline def setNum_partitions(value: String): Self = StObject.set(x, "num_partitions", value.asInstanceOf[js.Any])
+    
+    inline def setNum_partitionsUndefined: Self = StObject.set(x, "num_partitions", js.undefined)
+    
+    inline def setNum_time_travel_physical_bytes(value: String): Self = StObject.set(x, "num_time_travel_physical_bytes", value.asInstanceOf[js.Any])
+    
+    inline def setNum_time_travel_physical_bytesUndefined: Self = StObject.set(x, "num_time_travel_physical_bytes", js.undefined)
+    
+    inline def setNum_total_logical_bytes(value: String): Self = StObject.set(x, "num_total_logical_bytes", value.asInstanceOf[js.Any])
+    
+    inline def setNum_total_logical_bytesUndefined: Self = StObject.set(x, "num_total_logical_bytes", js.undefined)
+    
+    inline def setNum_total_physical_bytes(value: String): Self = StObject.set(x, "num_total_physical_bytes", value.asInstanceOf[js.Any])
+    
+    inline def setNum_total_physical_bytesUndefined: Self = StObject.set(x, "num_total_physical_bytes", js.undefined)
     
     inline def setRangePartitioning(value: RangePartitioning): Self = StObject.set(x, "rangePartitioning", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,6 @@
 package typings.chromeApps.chrome.fileSystemProvider
 
 import typings.chromeApps.chrome.double
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait EntryMetadata extends StObject {
   var mimeType: js.UndefOr[String] = js.undefined
   
   /** The last modified time of this entry. */
-  var modificationTime: js.UndefOr[Date] = js.undefined
+  var modificationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Name of this entry (not full path name).
@@ -52,7 +51,7 @@ object EntryMetadata {
     
     inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    inline def setModificationTime(value: Date): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
+    inline def setModificationTime(value: js.Date): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
     
     inline def setModificationTimeUndefined: Self = StObject.set(x, "modificationTime", js.undefined)
     

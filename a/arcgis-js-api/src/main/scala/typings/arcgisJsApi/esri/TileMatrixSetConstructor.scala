@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TileMatrixSetConstructor
   extends StObject
-     with Instantiable0[TileMatrixSet]
+     with /**
+  * Contains information about the tiling scheme for [WMTSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileMatrixSet.html)
+  */
+Instantiable0[TileMatrixSet]
      with Instantiable1[/* properties */ TileMatrixSetProperties, TileMatrixSet] {
   
-  def fromJSON(json: js.Any): TileMatrixSet = js.native
+  def fromJSON(json: Any): TileMatrixSet = js.native
 }

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs an empty link that does not connect any nodes.
   */
-class Link ()
+open class Link ()
   extends typings.go.mod.Link
 object Link {
   

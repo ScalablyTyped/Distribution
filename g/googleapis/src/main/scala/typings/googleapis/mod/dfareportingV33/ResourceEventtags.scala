@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis", "dfareporting_v3_3.Resource$Eventtags")
 @js.native
-class ResourceEventtags protected ()
+open class ResourceEventtags protected ()
   extends typings.googleapis.v33Mod.dfareportingV33.ResourceEventtags {
   def this(context: APIRequestContext) = this()
 }

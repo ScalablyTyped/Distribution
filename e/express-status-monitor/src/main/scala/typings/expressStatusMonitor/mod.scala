@@ -1,18 +1,42 @@
 package typings.expressStatusMonitor
 
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressStatusMonitor.anon.Cpu
 import typings.socketIo.mod.Server
+import typings.socketIo.typedEventsMod.DefaultEventsMap
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def apply(config: ExpressStatusMonitorConfig): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def apply(config: ExpressStatusMonitorConfig): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("express-status-monitor", JSImport.Namespace)
   @js.native
@@ -37,7 +61,7 @@ object mod {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var websocket: js.UndefOr[Server | Null] = js.undefined
+    var websocket: js.UndefOr[(Server[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any]) | Null] = js.undefined
   }
   object ExpressStatusMonitorConfig {
     
@@ -56,7 +80,7 @@ object mod {
       
       inline def setHealthChecksUndefined: Self = StObject.set(x, "healthChecks", js.undefined)
       
-      inline def setHealthChecksVarargs(value: HealthCheck*): Self = StObject.set(x, "healthChecks", js.Array(value :_*))
+      inline def setHealthChecksVarargs(value: HealthCheck*): Self = StObject.set(x, "healthChecks", js.Array(value*))
       
       inline def setIgnoreStartsWith(value: String): Self = StObject.set(x, "ignoreStartsWith", value.asInstanceOf[js.Any])
       
@@ -74,7 +98,7 @@ object mod {
       
       inline def setSpansUndefined: Self = StObject.set(x, "spans", js.undefined)
       
-      inline def setSpansVarargs(value: RetentionSpan*): Self = StObject.set(x, "spans", js.Array(value :_*))
+      inline def setSpansVarargs(value: RetentionSpan*): Self = StObject.set(x, "spans", js.Array(value*))
       
       inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -84,7 +108,7 @@ object mod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setWebsocket(value: Server): Self = StObject.set(x, "websocket", value.asInstanceOf[js.Any])
+      inline def setWebsocket(value: Server[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any]): Self = StObject.set(x, "websocket", value.asInstanceOf[js.Any])
       
       inline def setWebsocketNull: Self = StObject.set(x, "websocket", null)
       

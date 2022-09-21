@@ -7,12 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod extends Shortcut {
   
-  @JSImport("*.css", JSImport.Namespace)
+  /**
+    * A CSS module.
+    */
+  @JSImport("*.css", JSImport.Default)
   @js.native
-  val ^ : js.Object & CSSModule = js.native
+  val default: CSSModule = js.native
   
-  type _To = js.Object & CSSModule
+  type _To = CSSModule
   
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: js.Object & CSSModule = ^
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: CSSModule = default
 }

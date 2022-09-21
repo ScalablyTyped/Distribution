@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluentui__react-component-event-listener
 
-Typings are for version 0.51.2
+Typings are for version 0.64.0
 
 ## Library description:
 React components for binding events on the global scope.
@@ -10,10 +10,10 @@ React components for binding events on the global scope.
 | ------------------ | :-------------: |
 | Full name          | @fluentui/react-component-event-listener |
 | Keywords           | - |
-| # releases         | 48 |
-| # dependents       | 7 |
-| # downloads        | 1083823 |
-| # stars            | 0 |
+| # releases         | 46 |
+| # dependents       | 0.0 |
+| # downloads        | 500171.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui/tree/master/packages/fluentui/react-component-event-listener)

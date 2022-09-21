@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.Storage
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import typings.winrt.Windows.Storage.FileProperties.ThumbnailType
@@ -17,15 +16,15 @@ object FileProperties {
   
   @JSGlobal("Windows.Storage.FileProperties.BasicProperties")
   @js.native
-  class BasicProperties ()
+  open class BasicProperties ()
     extends StObject
        with typings.winrt.Windows.Storage.FileProperties.BasicProperties {
     
     /* CompleteClass */
-    var dateModified: Date = js.native
+    var dateModified: js.Date = js.native
     
     /* CompleteClass */
-    var itemDate: Date = js.native
+    var itemDate: js.Date = js.native
     
     /* CompleteClass */
     var size: Double = js.native
@@ -33,19 +32,19 @@ object FileProperties {
   
   @JSGlobal("Windows.Storage.FileProperties.DocumentProperties")
   @js.native
-  class DocumentProperties ()
+  open class DocumentProperties ()
     extends StObject
        with typings.winrt.Windows.Storage.FileProperties.DocumentProperties
   
   @JSGlobal("Windows.Storage.FileProperties.ImageProperties")
   @js.native
-  class ImageProperties ()
+  open class ImageProperties ()
     extends StObject
        with typings.winrt.Windows.Storage.FileProperties.ImageProperties
   
   @JSGlobal("Windows.Storage.FileProperties.MusicProperties")
   @js.native
-  class MusicProperties ()
+  open class MusicProperties ()
     extends StObject
        with typings.winrt.Windows.Storage.FileProperties.MusicProperties
   
@@ -97,13 +96,13 @@ object FileProperties {
   
   @JSGlobal("Windows.Storage.FileProperties.StorageItemContentProperties")
   @js.native
-  class StorageItemContentProperties ()
+  open class StorageItemContentProperties ()
     extends StObject
        with typings.winrt.Windows.Storage.FileProperties.StorageItemContentProperties
   
   @JSGlobal("Windows.Storage.FileProperties.StorageItemThumbnail")
   @js.native
-  class StorageItemThumbnail ()
+  open class StorageItemThumbnail ()
     extends StObject
        with typings.winrt.Windows.Storage.FileProperties.StorageItemThumbnail {
     
@@ -228,7 +227,7 @@ object FileProperties {
   
   @JSGlobal("Windows.Storage.FileProperties.VideoProperties")
   @js.native
-  class VideoProperties ()
+  open class VideoProperties ()
     extends StObject
        with typings.winrt.Windows.Storage.FileProperties.VideoProperties
 }

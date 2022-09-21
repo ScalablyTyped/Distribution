@@ -65,7 +65,7 @@ object sectionSectionMod {
   
   @JSImport("rbx/layout/section/section", "Section")
   @js.native
-  val Section: ForwardRefAsExoticComponent[SectionProps, ElementType[js.Any]] = js.native
+  val Section: ForwardRefAsExoticComponent[SectionProps, ElementType[Any]] = js.native
   
   trait SectionModifierProps extends StObject {
     

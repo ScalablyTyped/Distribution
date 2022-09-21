@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListEmailIdentitiesResponse extends StObject {
   
   /**
-    * An array that includes all of the email identities associated with your AWS account.
+    * An array that includes all of the email identities associated with your Amazon Web Services account.
     */
   var EmailIdentities: js.UndefOr[IdentityInfoList] = js.undefined
   
@@ -29,7 +29,7 @@ object ListEmailIdentitiesResponse {
     
     inline def setEmailIdentitiesUndefined: Self = StObject.set(x, "EmailIdentities", js.undefined)
     
-    inline def setEmailIdentitiesVarargs(value: IdentityInfo*): Self = StObject.set(x, "EmailIdentities", js.Array(value :_*))
+    inline def setEmailIdentitiesVarargs(value: IdentityInfo*): Self = StObject.set(x, "EmailIdentities", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -9,10 +9,10 @@ Manipulate HTML and XML files with Cheerio in Gulp.
 | ------------------ | :-------------: |
 | Full name          | gulp-cheerio |
 | Keywords           | gulpplugin, cheerio, html, manipulate |
-| # releases         | 2 |
-| # dependents       | 53 |
-| # downloads        | 590038 |
-| # stars            | 11 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 149127.66666666666 |
+| # stars            | 99.0 |
 
 ## Links
 - [Homepage](https://github.com/KenPowers/gulp-cheerio)

@@ -1,13 +1,16 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.mlParserAstMod.Node
+import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "ParseTreeResult")
 @js.native
-class ParseTreeResult protected ()
-  extends typings.angularCompiler.compilerMod.ParseTreeResult {
-  def this(rootNodes: js.Array[Node], errors: js.Array[typings.angularCompiler.srcParseUtilMod.ParseError]) = this()
+open class ParseTreeResult protected () extends StObject {
+  def this(rootNodes: js.Array[Node], errors: js.Array[ParseError]) = this()
+  
+  var errors: js.Array[ParseError] = js.native
+  
+  var rootNodes: js.Array[Node] = js.native
 }

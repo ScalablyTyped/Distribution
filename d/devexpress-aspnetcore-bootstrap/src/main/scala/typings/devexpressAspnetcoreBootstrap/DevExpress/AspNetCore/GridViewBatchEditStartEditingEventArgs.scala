@@ -10,7 +10,7 @@ trait GridViewBatchEditStartEditingEventArgs
   
   var focusedColumn: BootstrapGridViewColumn
   
-  val rowValues: js.Any
+  val rowValues: Any
   
   val visibleIndex: Double
 }
@@ -19,7 +19,7 @@ object GridViewBatchEditStartEditingEventArgs {
   inline def apply(
     cancel: Boolean,
     focusedColumn: BootstrapGridViewColumn,
-    rowValues: js.Any,
+    rowValues: Any,
     sender: Control,
     visibleIndex: Double
   ): GridViewBatchEditStartEditingEventArgs = {
@@ -31,7 +31,7 @@ object GridViewBatchEditStartEditingEventArgs {
     
     inline def setFocusedColumn(value: BootstrapGridViewColumn): Self = StObject.set(x, "focusedColumn", value.asInstanceOf[js.Any])
     
-    inline def setRowValues(value: js.Any): Self = StObject.set(x, "rowValues", value.asInstanceOf[js.Any])
+    inline def setRowValues(value: Any): Self = StObject.set(x, "rowValues", value.asInstanceOf[js.Any])
     
     inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }

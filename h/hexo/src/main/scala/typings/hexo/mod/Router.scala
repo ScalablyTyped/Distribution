@@ -3,7 +3,7 @@ package typings.hexo.mod
 import typings.hexo.mod.Router.Data
 import typings.hexo.mod.Router.RouteStream
 import typings.hexoUtil.mod.Pattern
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -42,7 +42,7 @@ trait Router extends StObject {
 }
 object Router {
   
-  type Callback = (js.Function2[/* err */ js.Any, /* result */ String, Unit]) | js.Function0[js.Promise[String]]
+  type Callback = (js.Function2[/* err */ Any, /* result */ String, Unit]) | js.Function0[js.Promise[String]]
   
   trait Data extends StObject {
     
@@ -63,7 +63,7 @@ object Router {
       
       inline def setDataFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
-      inline def setDataFunction2(value: (/* err */ js.Any, /* result */ String) => Unit): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
+      inline def setDataFunction2(value: (/* err */ Any, /* result */ String) => Unit): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
       
       inline def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     }

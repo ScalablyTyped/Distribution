@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of one or more rectangular ranges in multiple worksheets.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @JSGlobal("Excel.WorkbookRangeAreas")
 @js.native
-class WorkbookRangeAreas ()
+open class WorkbookRangeAreas ()
   extends StObject
      with typings.officeJsPreview.Excel.WorkbookRangeAreas {
   

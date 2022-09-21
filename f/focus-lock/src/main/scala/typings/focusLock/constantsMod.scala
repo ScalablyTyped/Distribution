@@ -21,4 +21,8 @@ object constantsMod {
   @JSImport("focus-lock/dist/es5/constants", "FOCUS_GROUP")
   @js.native
   val FOCUS_GROUP: /* "data-focus-lock" */ String = js.native
+  
+  @JSImport("focus-lock/dist/es5/constants", "FOCUS_NO_AUTOFOCUS")
+  @js.native
+  val FOCUS_NO_AUTOFOCUS: /* "data-no-autofocus" */ String = js.native
 }

@@ -193,6 +193,16 @@ trait X86Writer extends StObject {
   def putDecRegPtr(target: X86PointerTarget, reg: X86Register): Unit = js.native
   
   /**
+    * Puts a FXRSTOR instruction.
+    */
+  def putFxrstorRegPtr(reg: X86Register): Unit = js.native
+  
+  /**
+    * Puts a FXSAVE instruction.
+    */
+  def putFxsaveRegPtr(reg: X86Register): Unit = js.native
+  
+  /**
     * Puts an INC instruction.
     */
   def putIncReg(reg: X86Register): Unit = js.native
@@ -268,6 +278,11 @@ trait X86Writer extends StObject {
     * that may be referenced in past and future `put*Label()` calls.
     */
   def putLabel(id: String): Unit = js.native
+  
+  /**
+    * Puts a LAHF instruction.
+    */
+  def putLahf(): Unit = js.native
   
   /**
     * Puts a LEA instruction.
@@ -504,6 +519,11 @@ trait X86Writer extends StObject {
     * Puts an int8.
     */
   def putS8(value: Double): Unit = js.native
+  
+  /**
+    * Puts a SAHF instruction.
+    */
+  def putSahf(): Unit = js.native
   
   /**
     * Puts a SHL instruction.

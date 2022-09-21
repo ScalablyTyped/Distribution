@@ -9,12 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TouchList
   extends StObject
-     with /* index */ NumberDictionary[Touch] {
+     with /* standard dom */
+/* index */ NumberDictionary[Touch] {
   
+  /* standard dom */
   def item(index: Double): Touch | Null = js.native
   
+  /* standard dom.iterable */
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Touch]] = js.native
   
+  /* standard dom */
   val length: Double = js.native
 }

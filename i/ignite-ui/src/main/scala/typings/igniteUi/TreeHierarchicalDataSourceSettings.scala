@@ -10,7 +10,7 @@ trait TreeHierarchicalDataSourceSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Configure tree datasource specific settings

@@ -9,13 +9,13 @@ object mod {
   
   @JSImport("stream-throttle", "Throttle")
   @js.native
-  class Throttle protected () extends Transform {
+  open class Throttle protected () extends Transform {
     def this(options: ThrottleOptions) = this()
   }
   
   @JSImport("stream-throttle", "ThrottleGroup")
   @js.native
-  class ThrottleGroup protected () extends StObject {
+  open class ThrottleGroup protected () extends StObject {
     def this(options: ThrottleOptions) = this()
     
     def throttle(options: ThrottleOptions): Throttle = js.native

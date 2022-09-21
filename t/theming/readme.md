@@ -10,10 +10,10 @@ Unified CSSinJS theming solution for React
 | ------------------ | :-------------: |
 | Full name          | theming |
 | Keywords           | react, theme, theming, styled-components, jss, cssinjs, css-in-js |
-| # releases         | 14 |
-| # dependents       | 18 |
-| # downloads        | 8280384 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 799057.0 |
+| # stars            | 297.0 |
 
 ## Links
 - [Homepage](https://github.com/cssinjs/theming#readme)

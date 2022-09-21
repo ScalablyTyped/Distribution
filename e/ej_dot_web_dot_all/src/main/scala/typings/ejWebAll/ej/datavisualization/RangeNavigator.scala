@@ -335,7 +335,7 @@ object RangeNavigator {
     
     /** parameters from range navigator
       */
-    var Data: js.UndefOr[js.Any] = js.undefined
+    var Data: js.UndefOr[Any] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
@@ -343,7 +343,7 @@ object RangeNavigator {
     
     /** returns the range navigator model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -362,11 +362,11 @@ object RangeNavigator {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -380,7 +380,7 @@ object RangeNavigator {
     
     /** parameters from range navigator
       */
-    var Data: js.UndefOr[js.Any] = js.undefined
+    var Data: js.UndefOr[Any] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
@@ -388,7 +388,7 @@ object RangeNavigator {
     
     /** returns the range navigator model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -407,11 +407,11 @@ object RangeNavigator {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1077,7 +1077,7 @@ object RangeNavigator {
     
     /** parameters from range navigator
       */
-    var Data: js.UndefOr[js.Any] = js.undefined
+    var Data: js.UndefOr[Any] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
@@ -1085,7 +1085,7 @@ object RangeNavigator {
     
     /** returns the range navigator model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -1104,11 +1104,11 @@ object RangeNavigator {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1122,7 +1122,7 @@ object RangeNavigator {
     
     /** parameters from range navigator
       */
-    var Data: js.UndefOr[js.Any] = js.undefined
+    var Data: js.UndefOr[Any] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
@@ -1130,7 +1130,7 @@ object RangeNavigator {
     
     /** returns the range navigator model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -1149,11 +1149,11 @@ object RangeNavigator {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1186,7 +1186,7 @@ object RangeNavigator {
     
     /** Specifies the data source for range navigator.
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Fires, on double clicking the range of range navigator.
       */
@@ -1278,7 +1278,7 @@ object RangeNavigator {
     
     /** selectedData is for getting the data when the &quot;rangeChanged&quot; event trigger from client side.
       */
-    var selectedData: js.UndefOr[js.Any] = js.undefined
+    var selectedData: js.UndefOr[Any] = js.undefined
     
     /** Fires when the selection  ends in the range navigator
       */
@@ -1324,11 +1324,11 @@ object RangeNavigator {
     
     /** Specifies the xName for dataSource. This is used to take the x values from dataSource
       */
-    var xName: js.UndefOr[js.Any] = js.undefined
+    var xName: js.UndefOr[Any] = js.undefined
     
     /** Specifies the yName for dataSource. This is used to take the y values from dataSource
       */
-    var yName: js.UndefOr[js.Any] = js.undefined
+    var yName: js.UndefOr[Any] = js.undefined
   }
   object Model {
     
@@ -1355,7 +1355,7 @@ object RangeNavigator {
       
       inline def setClickUndefined: Self = StObject.set(x, "Click", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -1439,7 +1439,7 @@ object RangeNavigator {
       
       inline def setScrollStartUndefined: Self = StObject.set(x, "scrollStart", js.undefined)
       
-      inline def setSelectedData(value: js.Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
+      inline def setSelectedData(value: Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
       
       inline def setSelectedDataUndefined: Self = StObject.set(x, "selectedData", js.undefined)
       
@@ -1461,11 +1461,11 @@ object RangeNavigator {
       
       inline def setSeriesSettingsUndefined: Self = StObject.set(x, "seriesSettings", js.undefined)
       
-      inline def setSeriesSettingsVarargs(value: SeriesSetting*): Self = StObject.set(x, "seriesSettings", js.Array(value :_*))
+      inline def setSeriesSettingsVarargs(value: SeriesSetting*): Self = StObject.set(x, "seriesSettings", js.Array(value*))
       
       inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
       
-      inline def setSeriesVarargs(value: Series*): Self = StObject.set(x, "series", js.Array(value :_*))
+      inline def setSeriesVarargs(value: Series*): Self = StObject.set(x, "series", js.Array(value*))
       
       inline def setSizeSettings(value: SizeSettings): Self = StObject.set(x, "sizeSettings", value.asInstanceOf[js.Any])
       
@@ -1487,11 +1487,11 @@ object RangeNavigator {
       
       inline def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
       
-      inline def setXName(value: js.Any): Self = StObject.set(x, "xName", value.asInstanceOf[js.Any])
+      inline def setXName(value: Any): Self = StObject.set(x, "xName", value.asInstanceOf[js.Any])
       
       inline def setXNameUndefined: Self = StObject.set(x, "xName", js.undefined)
       
-      inline def setYName(value: js.Any): Self = StObject.set(x, "yName", value.asInstanceOf[js.Any])
+      inline def setYName(value: Any): Self = StObject.set(x, "yName", value.asInstanceOf[js.Any])
       
       inline def setYNameUndefined: Self = StObject.set(x, "yName", js.undefined)
     }
@@ -1913,7 +1913,7 @@ object RangeNavigator {
     
     /** parameters from range navigator
       */
-    var Data: js.UndefOr[js.Any] = js.undefined
+    var Data: js.UndefOr[Any] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
@@ -1921,7 +1921,7 @@ object RangeNavigator {
     
     /** returns the range navigator model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -1940,11 +1940,11 @@ object RangeNavigator {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1989,7 +1989,7 @@ object RangeNavigator {
     
     /** parameters from range navigator
       */
-    var Data: js.UndefOr[js.Any] = js.undefined
+    var Data: js.UndefOr[Any] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
@@ -1997,7 +1997,7 @@ object RangeNavigator {
     
     /** returns the range navigator model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2016,11 +2016,11 @@ object RangeNavigator {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2038,19 +2038,19 @@ object RangeNavigator {
     
     /** parameters from RangeNavigator
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the scrollbar position new start and end range value on changing scrollbar
       */
-    var dataNewRange: js.UndefOr[js.Any] = js.undefined
+    var dataNewRange: js.UndefOr[Any] = js.undefined
     
     /** returns the scrollbar position old start and end range value on changing scrollbar
       */
-    var dataOldRange: js.UndefOr[js.Any] = js.undefined
+    var dataOldRange: js.UndefOr[Any] = js.undefined
     
     /** returns the RangeNavigator model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2069,19 +2069,19 @@ object RangeNavigator {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataNewRange(value: js.Any): Self = StObject.set(x, "dataNewRange", value.asInstanceOf[js.Any])
+      inline def setDataNewRange(value: Any): Self = StObject.set(x, "dataNewRange", value.asInstanceOf[js.Any])
       
       inline def setDataNewRangeUndefined: Self = StObject.set(x, "dataNewRange", js.undefined)
       
-      inline def setDataOldRange(value: js.Any): Self = StObject.set(x, "dataOldRange", value.asInstanceOf[js.Any])
+      inline def setDataOldRange(value: Any): Self = StObject.set(x, "dataOldRange", value.asInstanceOf[js.Any])
       
       inline def setDataOldRangeUndefined: Self = StObject.set(x, "dataOldRange", js.undefined)
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2099,19 +2099,19 @@ object RangeNavigator {
     
     /** parameters from RangeNavigator
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the scrollbar position new start and end range value on change end of scrollbar
       */
-    var dataNewRange: js.UndefOr[js.Any] = js.undefined
+    var dataNewRange: js.UndefOr[Any] = js.undefined
     
     /** returns the scrollbar position old start and end range value on change end of scrollbar
       */
-    var dataOldRange: js.UndefOr[js.Any] = js.undefined
+    var dataOldRange: js.UndefOr[Any] = js.undefined
     
     /** returns the RangeNavigator model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2130,19 +2130,19 @@ object RangeNavigator {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataNewRange(value: js.Any): Self = StObject.set(x, "dataNewRange", value.asInstanceOf[js.Any])
+      inline def setDataNewRange(value: Any): Self = StObject.set(x, "dataNewRange", value.asInstanceOf[js.Any])
       
       inline def setDataNewRangeUndefined: Self = StObject.set(x, "dataNewRange", js.undefined)
       
-      inline def setDataOldRange(value: js.Any): Self = StObject.set(x, "dataOldRange", value.asInstanceOf[js.Any])
+      inline def setDataOldRange(value: Any): Self = StObject.set(x, "dataOldRange", value.asInstanceOf[js.Any])
       
       inline def setDataOldRangeUndefined: Self = StObject.set(x, "dataOldRange", js.undefined)
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2191,7 +2191,7 @@ object RangeNavigator {
     
     /** parameters from RangeNavigator
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the scrollbar position end range value on changing scrollbar
       */
@@ -2203,7 +2203,7 @@ object RangeNavigator {
     
     /** returns the RangeNavigator model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2222,7 +2222,7 @@ object RangeNavigator {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataEndRange(value: String): Self = StObject.set(x, "dataEndRange", value.asInstanceOf[js.Any])
       
@@ -2234,7 +2234,7 @@ object RangeNavigator {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2252,11 +2252,11 @@ object RangeNavigator {
     
     /** parameters from RangeNavigator
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the RangeNavigator model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2275,11 +2275,11 @@ object RangeNavigator {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2328,11 +2328,11 @@ object RangeNavigator {
     
     /** parameters from RangeNavigator
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the RangeNavigator model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2351,11 +2351,11 @@ object RangeNavigator {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2370,7 +2370,7 @@ object RangeNavigator {
     /** Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Enable/disable the animation of series.
       * @Default {false}
@@ -2406,7 +2406,7 @@ object RangeNavigator {
     
     extension [Self <: Series](x: Self) {
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -2437,7 +2437,7 @@ object RangeNavigator {
     /** Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Enable/disable the animation of series.
       * @Default {false}
@@ -2473,7 +2473,7 @@ object RangeNavigator {
     
     extension [Self <: SeriesSetting](x: Self) {
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       

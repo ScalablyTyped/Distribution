@@ -1,42 +1,116 @@
 package typings.styledComponents
 
-import typings.styledComponents.styledComponentsMod.AnyIfEmpty
-import typings.styledComponents.styledComponentsMod.CSSProp
-import typings.styledComponents.styledComponentsMod.DefaultTheme
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.Consumer
+import typings.react.mod.Context
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.NamedExoticComponent
+import typings.react.mod.PropsWithoutRef
+import typings.react.mod.RefAttributes
+import typings.react.mod.global.JSX.Element
+import typings.react.mod.global.JSX.LibraryManagedAttributes
+import typings.std.TemplateStringsArray
+import typings.styledComponents.anon.A
+import typings.styledComponents.anon.IsCss
+import typings.styledComponents.anon.TypeofStyleSheet
+import typings.styledComponents.anon.`168`
+import typings.styledComponents.distSheetSheetMod.GlobalStylesAllocationMap
+import typings.styledComponents.distSheetSheetMod.NamesAllocationMap
+import typings.styledComponents.distSheetSheetMod.SheetConstructorArgs
+import typings.styledComponents.modelsStyleSheetManagerMod.Props
+import typings.styledComponents.modelsThemeProviderMod.DefaultTheme
+import typings.styledComponents.nativeDistTypesMod.AnyComponent
+import typings.styledComponents.nativeDistTypesMod.ExecutionContext
+import typings.styledComponents.nativeDistTypesMod.ExtensibleObject
+import typings.styledComponents.nativeDistTypesMod.Interpolation
+import typings.styledComponents.nativeDistTypesMod.Styles
+import typings.styledComponents.nativeDistTypesMod.WebTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* augmented module */
 object mod {
   
-  trait Attributes extends StObject {
+  @JSImport("styled-components/native/dist", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("styled-components/native/dist", JSImport.Default)
+  @js.native
+  val default: (js.Function1[/* tag */ WebTarget, `168`[WebTarget]]) & A = js.native
+  
+  @JSImport("styled-components/native/dist", "ServerStyleSheet")
+  @js.native
+  open class ServerStyleSheet ()
+    extends typings.styledComponents.baseMod.ServerStyleSheet
+  
+  @JSImport("styled-components/native/dist", "StyleSheetConsumer")
+  @js.native
+  val StyleSheetConsumer: Consumer[Unit | typings.styledComponents.distSheetMod.default] = js.native
+  
+  @JSImport("styled-components/native/dist", "StyleSheetContext")
+  @js.native
+  val StyleSheetContext: Context[Unit | typings.styledComponents.distSheetMod.default] = js.native
+  
+  inline def StyleSheetManager(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StyleSheetManager")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @JSImport("styled-components/native/dist", "ThemeConsumer")
+  @js.native
+  val ThemeConsumer: Consumer[js.UndefOr[DefaultTheme]] = js.native
+  
+  @JSImport("styled-components/native/dist", "ThemeContext")
+  @js.native
+  val ThemeContext: Context[js.UndefOr[DefaultTheme]] = js.native
+  
+  inline def ThemeProvider(props: typings.styledComponents.modelsThemeProviderMod.Props): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
+  object __PRIVATE__ {
     
-    // NOTE: unlike the plain javascript version, it is not possible to get access
-    // to the element's own attributes inside function interpolations.
-    // Only theme will be accessible, and only with the DefaultTheme due to the global
-    // nature of this declaration.
-    // If you are writing this inline you already have access to all the attributes anyway,
-    // no need for the extra indirection.
-    /**
-      * If present, this React element will be converted by
-      * `babel-plugin-styled-components` into a styled component
-      * with the given css as its styles.
-      */
-    var css: js.UndefOr[CSSProp[AnyIfEmpty[DefaultTheme]]] = js.undefined
-  }
-  object Attributes {
+    @JSImport("styled-components/native/dist", "__PRIVATE__")
+    @js.native
+    val ^ : js.Any = js.native
     
-    inline def apply(): Attributes = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Attributes]
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("styled-components/native/dist", "__PRIVATE__.StyleSheet")
+    @js.native
+    open class StyleSheet ()
+      extends typings.styledComponents.distSheetMod.default {
+      def this(options: SheetConstructorArgs) = this()
+      def this(options: Unit, globalStyles: GlobalStylesAllocationMap) = this()
+      def this(options: SheetConstructorArgs, globalStyles: GlobalStylesAllocationMap) = this()
+      def this(options: Unit, globalStyles: Unit, names: NamesAllocationMap) = this()
+      def this(options: Unit, globalStyles: GlobalStylesAllocationMap, names: NamesAllocationMap) = this()
+      def this(options: SheetConstructorArgs, globalStyles: Unit, names: NamesAllocationMap) = this()
+      def this(options: SheetConstructorArgs, globalStyles: GlobalStylesAllocationMap, names: NamesAllocationMap) = this()
     }
+    @JSImport("styled-components/native/dist", "__PRIVATE__.StyleSheet")
+    @js.native
+    def StyleSheet: TypeofStyleSheet = js.native
+    inline def StyleSheet_=(x: TypeofStyleSheet): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StyleSheet")(x.asInstanceOf[js.Any])
     
-    extension [Self <: Attributes](x: Self) {
-      
-      inline def setCss(value: CSSProp[AnyIfEmpty[DefaultTheme]]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
-      
-      inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
-    }
+    @JSImport("styled-components/native/dist", "__PRIVATE__.mainSheet")
+    @js.native
+    def mainSheet: typings.styledComponents.distSheetMod.default = js.native
+    inline def mainSheet_=(x: typings.styledComponents.distSheetMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mainSheet")(x.asInstanceOf[js.Any])
   }
+  
+  inline def createGlobalStyle[Props](strings: Styles[Props], interpolations: Interpolation[Props]*): NamedExoticComponent[ExtensibleObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("createGlobalStyle")(List(strings.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[NamedExoticComponent[ExtensibleObject]]
+  
+  inline def css[Props](styles: Styles[Props], interpolations: Interpolation[Props]*): TemplateStringsArray | (Interpolation[Props] & IsCss) = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(List(styles.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[TemplateStringsArray | (Interpolation[Props] & IsCss)]
+  
+  inline def isStyledComponent(target: Any): /* is styled-components.styled-components/native/dist/types.IStyledComponent<any, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStyledComponent")(target.asInstanceOf[js.Any]).asInstanceOf[/* is styled-components.styled-components/native/dist/types.IStyledComponent<any, unknown> */ Boolean]
+  
+  inline def keyframes[Props](strings: Styles[Props], interpolations: Interpolation[Props]*): typings.styledComponents.distModelsKeyframesMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(List(strings.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.styledComponents.distModelsKeyframesMod.default]
+  
+  inline def useTheme(): js.UndefOr[DefaultTheme] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[js.UndefOr[DefaultTheme]]
+  
+  @JSImport("styled-components/native/dist", "version")
+  @js.native
+  val version: String = js.native
+  
+  inline def withTheme[T /* <: AnyComponent[Any] */](Component: T): (ForwardRefExoticComponent[
+    (PropsWithoutRef[LibraryManagedAttributes[T, ExecutionContext]]) & RefAttributes[T]
+  ]) & typings.styledComponents.styledComponentsStrings.withTheme & TopLevel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTheme")(Component.asInstanceOf[js.Any]).asInstanceOf[(ForwardRefExoticComponent[
+    (PropsWithoutRef[LibraryManagedAttributes[T, ExecutionContext]]) & RefAttributes[T]
+  ]) & typings.styledComponents.styledComponentsStrings.withTheme & TopLevel[T]]
 }

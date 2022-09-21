@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("TransformStream")
 @js.native
-class TransformStream[I, O] ()
+/* standard dom */
+open class TransformStream[I, O] ()
   extends StObject
      with typings.std.TransformStream[I, O] {
   def this(transformer: Transformer[I, O]) = this()
@@ -24,9 +25,11 @@ class TransformStream[I, O] ()
     readableStrategy: QueuingStrategy[O]
   ) = this()
   
+  /* standard dom */
   /* CompleteClass */
   override val readable: typings.std.ReadableStream[O] = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val writable: typings.std.WritableStream[I] = js.native
 }

@@ -9,7 +9,7 @@ trait FirewallRule extends StObject {
   /** The action to take on matched requests. */
   var action: js.UndefOr[String] = js.undefined
   
-  /** An optional string description of this rule. This field has a maximum length of 100 characters. */
+  /** An optional string description of this rule. This field has a maximum length of 400 characters. */
   var description: js.UndefOr[String] = js.undefined
   
   /**

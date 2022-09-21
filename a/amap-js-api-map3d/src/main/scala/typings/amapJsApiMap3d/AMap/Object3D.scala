@@ -2,10 +2,8 @@ package typings.amapJsApiMap3d.AMap
 
 import typings.amapJsApi.AMap.LngLat
 import typings.amapJsApi.AMap.Pixel
-import typings.amapJsApiMap3d.anon.Color
 import typings.amapJsApiMap3d.anon.Geometry3DreadonlyvertexI
 import typings.amapJsApiMap3d.anon.MeshreadonlyvertexNormals
-import typings.amapJsApiMap3d.anon.Path
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -149,7 +147,23 @@ object Object3D {
   }
   object MeshLine {
     
-    type Options = Color & (Path | typings.amapJsApiMap3d.anon.Unit)
+    /* Rewritten from type alias, can be one of: 
+      - typings.amapJsApiMap3d.anon.unitmeterundefinedpathArr
+      - typings.amapJsApiMap3d.anon.unitpxpathArraynumbernumb
+    */
+    trait Options extends StObject
+    object Options {
+      
+      inline def unitmeterundefinedpathArr(path: js.Array[LngLat | (js.Tuple2[Double, Double])]): typings.amapJsApiMap3d.anon.unitmeterundefinedpathArr = {
+        val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.amapJsApiMap3d.anon.unitmeterundefinedpathArr]
+      }
+      
+      inline def unitpxpathArraynumbernumb(path: js.Array[Pixel | (js.Tuple2[Double, Double])]): typings.amapJsApiMap3d.anon.unitpxpathArraynumbernumb = {
+        val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], unit = "px")
+        __obj.asInstanceOf[typings.amapJsApiMap3d.anon.unitpxpathArraynumbernumb]
+      }
+    }
   }
   
   extension [Self <: Object3D](x: Self) {
@@ -166,7 +180,7 @@ object Object3D {
     
     inline def setTextures(value: js.Array[String | HTMLCanvasElement]): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
     
-    inline def setTexturesVarargs(value: (String | HTMLCanvasElement)*): Self = StObject.set(x, "textures", js.Array(value :_*))
+    inline def setTexturesVarargs(value: (String | HTMLCanvasElement)*): Self = StObject.set(x, "textures", js.Array(value*))
     
     inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
   }
@@ -239,9 +253,9 @@ object Object3D {
         
         inline def setColor2Undefined: Self = StObject.set(x, "color2", js.undefined)
         
-        inline def setColor2Varargs(value: (js.Array[Double] | Double | String)*): Self = StObject.set(x, "color2", js.Array(value :_*))
+        inline def setColor2Varargs(value: (js.Array[Double] | Double | String)*): Self = StObject.set(x, "color2", js.Array(value*))
         
-        inline def setColorVarargs(value: (js.Array[Double] | Double | String)*): Self = StObject.set(x, "color", js.Array(value :_*))
+        inline def setColorVarargs(value: (js.Array[Double] | Double | String)*): Self = StObject.set(x, "color", js.Array(value*))
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
@@ -249,7 +263,7 @@ object Object3D {
         
         inline def setPath(value: js.Array[(js.Array[LngLat | Pixel | (js.Tuple2[Double, Double])]) | LngLat | Pixel]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        inline def setPathVarargs(value: ((js.Array[LngLat | Pixel | (js.Tuple2[Double, Double])]) | LngLat | Pixel)*): Self = StObject.set(x, "path", js.Array(value :_*))
+        inline def setPathVarargs(value: ((js.Array[LngLat | Pixel | (js.Tuple2[Double, Double])]) | LngLat | Pixel)*): Self = StObject.set(x, "path", js.Array(value*))
       }
     }
   }
@@ -316,11 +330,11 @@ object Object3D {
         
         inline def setDashArrayUndefined: Self = StObject.set(x, "dashArray", js.undefined)
         
-        inline def setDashArrayVarargs(value: Double*): Self = StObject.set(x, "dashArray", js.Array(value :_*))
+        inline def setDashArrayVarargs(value: Double*): Self = StObject.set(x, "dashArray", js.Array(value*))
         
         inline def setPath(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        inline def setPathVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "path", js.Array(value :_*))
+        inline def setPathVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "path", js.Array(value*))
       }
     }
   }

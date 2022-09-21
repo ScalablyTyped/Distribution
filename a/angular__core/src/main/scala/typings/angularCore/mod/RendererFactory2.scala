@@ -19,8 +19,8 @@ abstract class RendererFactory2 () extends StObject {
     * @param type The base class to implement.
     * @returns The new custom renderer instance.
     */
-  def createRenderer(hostElement: js.Any): Renderer2 = js.native
-  def createRenderer(hostElement: js.Any, `type`: RendererType2): Renderer2 = js.native
+  def createRenderer(hostElement: Any): Renderer2 = js.native
+  def createRenderer(hostElement: Any, `type`: RendererType2): Renderer2 = js.native
   
   /**
     * A callback invoked when rendering has completed.
@@ -31,5 +31,5 @@ abstract class RendererFactory2 () extends StObject {
     * Use with animations test-only mode. Notifies the test when rendering has completed.
     * @returns The asynchronous result of the developer-defined function.
     */
-  var whenRenderingDone: js.UndefOr[js.Function0[js.Promise[js.Any]]] = js.native
+  var whenRenderingDone: js.UndefOr[js.Function0[js.Promise[Any]]] = js.native
 }

@@ -11,7 +11,7 @@ object mod {
   /* was `typeof Stream` */
   @JSImport("xstream", JSImport.Default)
   @js.native
-  class default[T] () extends Stream[T] {
+  open class default[T] () extends Stream[T] {
     def this(producer: InternalProducer[T]) = this()
   }
   /* static members */
@@ -46,7 +46,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    inline def combine(): Stream[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")().asInstanceOf[Stream[js.Array[js.Any]]]
+    inline def combine(): Stream[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")().asInstanceOf[Stream[js.Array[Any]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -72,7 +72,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    inline def combine(stream: Stream[js.Any]*): Stream[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[js.Any]]]
+    inline def combine(stream: Stream[Any]*): Stream[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Stream[js.Array[Any]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -427,7 +427,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    inline def combine_T[T](stream: Stream[T]*): Stream[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[T]]]
+    inline def combine_T[T](stream: Stream[T]*): Stream[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Stream[js.Array[T]]]
     
     /**
       * Creates a new Stream given a Producer.
@@ -545,7 +545,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    inline def merge(): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")().asInstanceOf[Stream[js.Any]]
+    inline def merge(): Stream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")().asInstanceOf[Stream[Any]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -591,7 +591,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    inline def merge[T](stream: Stream[T]*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def merge[T](stream: Stream[T]*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(stream.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Stream[T]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -897,7 +897,7 @@ object mod {
       * or more of these values may be given as arguments.
       * @return {Stream}
       */
-    inline def of[T](items: T*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def of[T](items: T*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Stream[T]]
     
     /**
       * Creates a stream that periodically emits incremental numbers, every
@@ -933,26 +933,26 @@ object mod {
       * @param error The error event to emit on the created stream.
       * @return {Stream}
       */
-    inline def `throw`(error: js.Any): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("throw")(error.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Any]]
+    inline def `throw`(error: Any): Stream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("throw")(error.asInstanceOf[js.Any]).asInstanceOf[Stream[Any]]
   }
   
   @JSImport("xstream", "MemoryStream")
   @js.native
-  class MemoryStream[T] protected () extends Stream[T] {
+  open class MemoryStream[T] protected () extends Stream[T] {
     def this(producer: InternalProducer[T]) = this()
     
-    /* private */ var _has: js.Any = js.native
+    /* private */ var _has: Any = js.native
     
-    /* private */ var _v: js.Any = js.native
+    /* private */ var _v: Any = js.native
   }
   
   @JSImport("xstream", "NO_IL")
   @js.native
-  val NO_IL: InternalListener[js.Any] = js.native
+  val NO_IL: InternalListener[Any] = js.native
   
   @JSImport("xstream", "Stream")
   @js.native
-  class Stream[T] ()
+  open class Stream[T] ()
     extends StObject
        with InternalListener[T] {
     def this(producer: InternalProducer[T]) = this()
@@ -967,11 +967,11 @@ object mod {
     /* protected */ var _dl: InternalListener[T] = js.native
     
     /* CompleteClass */
-    override def _e(err: js.Any): Unit = js.native
+    override def _e(err: Any): Unit = js.native
     
-    /* protected */ var _err: js.Any = js.native
+    /* protected */ var _err: Any = js.native
     
-    def _hasNoSinks(x: InternalListener[js.Any], trace: js.Array[js.Any]): Boolean = js.native
+    def _hasNoSinks(x: InternalListener[Any], trace: js.Array[Any]): Boolean = js.native
     
     /* protected */ var _ils: js.Array[InternalListener[T]] = js.native
     
@@ -986,7 +986,7 @@ object mod {
     
     def _remove(il: InternalListener[T]): Unit = js.native
     
-    /* protected */ var _stopID: js.Any = js.native
+    /* protected */ var _stopID: Any = js.native
     
     def _stopNow(): Unit = js.native
     
@@ -1014,11 +1014,11 @@ object mod {
       */
     def compose[U](operator: js.Function1[/* stream */ Stream[T], U]): U = js.native
     
-    /* private */ var ctor: js.Any = js.native
+    /* private */ var ctor: Any = js.native
     
     def debug(): Stream[T] = js.native
     def debug(labelOrSpy: String): Stream[T] = js.native
-    def debug(labelOrSpy: js.Function1[/* t */ T, js.Any]): Stream[T] = js.native
+    def debug(labelOrSpy: js.Function1[/* t */ T, Any]): Stream[T] = js.native
     
     /**
       * Ignores the first `amount` many events from the input stream, and then
@@ -1058,7 +1058,7 @@ object mod {
       * stream of this operator complete.
       * @return {Stream}
       */
-    def endWhen(other: Stream[js.Any]): Stream[T] = js.native
+    def endWhen(other: Stream[Any]): Stream[T] = js.native
     
     def filter(passes: js.Function1[/* t */ T, Boolean]): Stream[T] = js.native
     @JSName("filter")
@@ -1280,7 +1280,7 @@ object mod {
       * stream that this function returns.
       * @return {Stream}
       */
-    def replaceError(replace: js.Function1[/* err */ js.Any, Stream[T]]): Stream[T] = js.native
+    def replaceError(replace: js.Function1[/* err */ Any, Stream[T]]): Stream[T] = js.native
     
     /**
       * Adds a "debug" listener to the stream. There can only be one debug
@@ -1324,7 +1324,7 @@ object mod {
       * @param {any} error The error you want to broadcast to all the listeners of
       * this Stream.
       */
-    def shamefullySendError(error: js.Any): Unit = js.native
+    def shamefullySendError(error: Any): Unit = js.native
     
     /**
       * Forces the Stream to emit the given value to its listeners.
@@ -1415,7 +1415,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    inline def combine(): Stream[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")().asInstanceOf[Stream[js.Array[js.Any]]]
+    inline def combine(): Stream[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")().asInstanceOf[Stream[js.Array[Any]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -1441,7 +1441,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    inline def combine(stream: Stream[js.Any]*): Stream[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[js.Any]]]
+    inline def combine(stream: Stream[Any]*): Stream[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Stream[js.Array[Any]]]
     /**
       * Combines multiple input streams together to return a stream whose events
       * are arrays that collect the latest events from each input stream.
@@ -1796,7 +1796,7 @@ object mod {
       * Multiple streams, not just two, may be given as arguments.
       * @return {Stream}
       */
-    inline def combine_T[T](stream: Stream[T]*): Stream[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Array[T]]]
+    inline def combine_T[T](stream: Stream[T]*): Stream[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(stream.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Stream[js.Array[T]]]
     
     /**
       * Creates a new Stream given a Producer.
@@ -1914,7 +1914,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    inline def merge(): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")().asInstanceOf[Stream[js.Any]]
+    inline def merge(): Stream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")().asInstanceOf[Stream[Any]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -1960,7 +1960,7 @@ object mod {
       * or more streams may be given as arguments.
       * @return {Stream}
       */
-    inline def merge[T](stream: Stream[T]*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(stream.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def merge[T](stream: Stream[T]*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(stream.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Stream[T]]
     /**
       * Blends multiple streams together, emitting events from all of them
       * concurrently.
@@ -2266,7 +2266,7 @@ object mod {
       * or more of these values may be given as arguments.
       * @return {Stream}
       */
-    inline def of[T](items: T*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def of[T](items: T*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Stream[T]]
     
     /**
       * Creates a stream that periodically emits incremental numbers, every
@@ -2302,7 +2302,7 @@ object mod {
       * @param error The error event to emit on the created stream.
       * @return {Stream}
       */
-    inline def `throw`(error: js.Any): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("throw")(error.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Any]]
+    inline def `throw`(error: Any): Stream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("throw")(error.asInstanceOf[js.Any]).asInstanceOf[Stream[Any]]
   }
   
   trait Aggregator[T, U]
@@ -2334,7 +2334,7 @@ object mod {
       
       inline def setInsArr(value: js.Array[Stream[T]]): Self = StObject.set(x, "insArr", value.asInstanceOf[js.Any])
       
-      inline def setInsArrVarargs(value: Stream[T]*): Self = StObject.set(x, "insArr", js.Array(value :_*))
+      inline def setInsArrVarargs(value: Stream[T]*): Self = StObject.set(x, "insArr", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -2345,8 +2345,8 @@ object mod {
   @js.native
   trait CombineSignature extends StObject {
     
-    def apply(): Stream[js.Array[js.Any]] = js.native
-    def apply(stream: Stream[js.Any]*): Stream[js.Array[js.Any]] = js.native
+    def apply(): Stream[js.Array[Any]] = js.native
+    def apply(stream: Stream[Any]*): Stream[js.Array[Any]] = js.native
     def apply[T1](s1: Stream[T1]): Stream[js.Array[T1]] = js.native
     def apply[T1, T2](s1: Stream[T1], s2: Stream[T2]): Stream[js.Tuple2[T1, T2]] = js.native
     def apply[T1, T2, T3](s1: Stream[T1], s2: Stream[T2], s3: Stream[T3]): Stream[js.Tuple3[T1, T2, T3]] = js.native
@@ -2401,13 +2401,13 @@ object mod {
     
     def _c(): Unit
     
-    def _e(err: js.Any): Unit
+    def _e(err: Any): Unit
     
     def _n(v: T): Unit
   }
   object InternalListener {
     
-    inline def apply[T](_c: () => Unit, _e: js.Any => Unit, _n: T => Unit): InternalListener[T] = {
+    inline def apply[T](_c: () => Unit, _e: Any => Unit, _n: T => Unit): InternalListener[T] = {
       val __obj = js.Dynamic.literal(_c = js.Any.fromFunction0(_c), _e = js.Any.fromFunction1(_e), _n = js.Any.fromFunction1(_n))
       __obj.asInstanceOf[InternalListener[T]]
     }
@@ -2416,7 +2416,7 @@ object mod {
       
       inline def set_c(value: () => Unit): Self = StObject.set(x, "_c", js.Any.fromFunction0(value))
       
-      inline def set_e(value: js.Any => Unit): Self = StObject.set(x, "_e", js.Any.fromFunction1(value))
+      inline def set_e(value: Any => Unit): Self = StObject.set(x, "_e", js.Any.fromFunction1(value))
       
       inline def set_n(value: T => Unit): Self = StObject.set(x, "_n", js.Any.fromFunction1(value))
     }
@@ -2447,13 +2447,13 @@ object mod {
     
     def complete(): Unit
     
-    def error(err: js.Any): Unit
+    def error(err: Any): Unit
     
     def next(x: T): Unit
   }
   object Listener {
     
-    inline def apply[T](complete: () => Unit, error: js.Any => Unit, next: T => Unit): Listener[T] = {
+    inline def apply[T](complete: () => Unit, error: Any => Unit, next: T => Unit): Listener[T] = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
       __obj.asInstanceOf[Listener[T]]
     }
@@ -2462,7 +2462,7 @@ object mod {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
-      inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
@@ -2471,7 +2471,7 @@ object mod {
   @js.native
   trait MergeSignature extends StObject {
     
-    def apply(): Stream[js.Any] = js.native
+    def apply(): Stream[Any] = js.native
     def apply[T1](s1: Stream[T1]): Stream[T1] = js.native
     def apply[T](stream: Stream[T]*): Stream[T] = js.native
     def apply[T1, T2](s1: Stream[T1], s2: Stream[T2]): Stream[T1 | T2] = js.native
@@ -2556,7 +2556,7 @@ object mod {
     
     inline def apply[T, R](
       _c: () => Unit,
-      _e: js.Any => Unit,
+      _e: Any => Unit,
       _n: T => Unit,
       _start: Stream[R] => Unit,
       _stop: () => Unit,

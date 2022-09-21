@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api
   */
-class IGC () extends TextFeature {
+open class IGC () extends TextFeature {
   def this(opt_options: IGCOptions) = this()
   
   def readFeature(source: String): typings.openlayers.mod.Feature = js.native

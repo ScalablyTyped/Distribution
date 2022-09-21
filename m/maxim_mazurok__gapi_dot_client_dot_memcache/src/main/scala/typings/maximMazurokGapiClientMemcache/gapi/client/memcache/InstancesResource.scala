@@ -9,6 +9,7 @@ import typings.maximMazurokGapiClientMemcache.anon.Filter
 import typings.maximMazurokGapiClientMemcache.anon.Key
 import typings.maximMazurokGapiClientMemcache.anon.Name
 import typings.maximMazurokGapiClientMemcache.anon.Oauthtoken
+import typings.maximMazurokGapiClientMemcache.anon.PrettyPrint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait InstancesResource extends StObject {
   
-  /** ApplyParameters will restart the set of specified nodes in order to update them to the current set of parameters for the Memcached Instance. */
+  /** `ApplyParameters` restarts the set of specified nodes in order to update them to the current set of parameters for the Memcached Instance. */
   def applyParameters(request: Accesstoken): Request[Operation] = js.native
   def applyParameters(request: Alt, body: ApplyParametersRequest): Request[Operation] = js.native
   
@@ -40,10 +41,14 @@ trait InstancesResource extends StObject {
   def patch(request: Key): Request[Operation] = js.native
   def patch(request: Name, body: Instance): Request[Operation] = js.native
   
+  /** Reschedules upcoming maintenance event. */
+  def rescheduleMaintenance(request: typings.maximMazurokGapiClientMemcache.anon.Instance): Request[Operation] = js.native
+  def rescheduleMaintenance(request: Oauthtoken, body: RescheduleMaintenanceRequest): Request[Operation] = js.native
+  
   def updateParameters(request: Alt, body: UpdateParametersRequest): Request[Operation] = js.native
   /**
-    * Updates the defined Memcached Parameters for an existing Instance. This method only stages the parameters, it must be followed by ApplyParameters to apply the parameters to nodes of
-    * the Memcached Instance.
+    * Updates the defined Memcached parameters for an existing instance. This method only stages the parameters, it must be followed by `ApplyParameters` to apply the parameters to nodes
+    * of the Memcached instance.
     */
-  def updateParameters(request: Oauthtoken): Request[Operation] = js.native
+  def updateParameters(request: PrettyPrint): Request[Operation] = js.native
 }

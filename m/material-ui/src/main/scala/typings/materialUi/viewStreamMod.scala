@@ -10,10 +10,10 @@ object viewStreamMod {
   
   @JSImport("material-ui/svg-icons/action/view-stream", JSImport.Default)
   @js.native
-  class default () extends ActionViewStream
+  open class default () extends ActionViewStream
   
   @JSImport("material-ui/svg-icons/action/view-stream", "ActionViewStream")
   @js.native
-  class ActionViewStream ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionViewStream ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -7,10 +7,15 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.reactGridLayout.anon.H
+import typings.reactGridLayout.anon.W
+import typings.reactGridLayout.anon.layerXnumberlayerYnumberE
+import typings.reactGridLayout.reactGridLayoutBooleans.`false`
 import typings.reactGridLayout.reactGridLayoutStrings.horizontal
 import typings.reactGridLayout.reactGridLayoutStrings.vertical
 import typings.std.Event
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
@@ -21,28 +26,33 @@ object mod {
   
   @JSImport("react-grid-layout", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[ReactGridLayoutProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[ReactGridLayoutProps, js.Object, Any]
   @JSImport("react-grid-layout", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   @JSImport("react-grid-layout", "Responsive")
   @js.native
-  class Responsive protected ()
-    extends Component[ResponsiveProps, js.Object, js.Any] {
+  open class Responsive protected ()
+    extends Component[ResponsiveProps, js.Object, Any] {
     def this(props: ResponsiveProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ResponsiveProps, context: js.Any) = this()
+    def this(props: ResponsiveProps, context: Any) = this()
   }
   
   inline def WidthProvider[P](component: ComponentClass[P, ComponentState]): ComponentClass[P & WidthProviderProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("WidthProvider")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P & WidthProviderProps, ComponentState]]
   inline def WidthProvider[P](component: FunctionComponent[P]): ComponentClass[P & WidthProviderProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("WidthProvider")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P & WidthProviderProps, ComponentState]]
   
   trait CoreProps extends StObject {
+    
+    /**
+      * If true, grid can be placed one over the other.
+      */
+    var allowOverlap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the container height swells and contracts to fit contents.
@@ -61,18 +71,15 @@ object mod {
     
     /**
       * A CSS selector for tags that will not be draggable.
-      *
       * For example: `draggableCancel: '.MyNonDraggableAreaClassName'`
-      *
       * If you forget the leading. it will not work.
+      * "".react-resizable-handle" is always prepended to this value.
       */
     var draggableCancel: js.UndefOr[String] = js.undefined
     
     /**
       * A CSS selector for tags that will act as the draggable handle.
-      *
       * For example: `draggableHandle: '.MyDragHandleClassName'`
-      *
       * If you forget the leading . it will not work.
       */
     var draggableHandle: js.UndefOr[String] = js.undefined
@@ -84,17 +91,32 @@ object mod {
     var droppingItem: js.UndefOr[H] = js.undefined
     
     /**
+      * Ref for getting a reference for the grid's wrapping div.
+      * You can use this instead of a regular ref and the deprecated `ReactDOM.findDOMNode()`` function.
+      */
+    var innerRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
+    
+    /**
       * If true and draggable, all items will be moved only within grid.
       */
     var isBounded: js.UndefOr[Boolean] = js.undefined
     
+    // Flags:
     /**
       * If set to false it will disable dragging on all children.
       */
     var isDraggable: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * If set to false it will not call `onDrop()` callback.
+      * If true, droppable elements (with `draggable={true}` attribute)
+      * can be dropped on the grid. It triggers "onDrop" callback
+      * with position and event object as parameters.
+      * It can be useful for dropping an element in a specific position
+      * NOTE: In case of using Firefox you should add
+      * `onDragStart={e => e.dataTransfer.setData('text/plain', '')}` attribute
+      * along with `draggable={true}` otherwise this feature will work incorrect.
+      * onDragStart attribute is required for Firefox for a dragging initialization
+      * @see https://bugzilla.mozilla.org/show_bug.cgi?id=568313
       */
     var isDroppable: js.UndefOr[Boolean] = js.undefined
     
@@ -133,6 +155,13 @@ object mod {
     var onDrop: js.UndefOr[
         js.Function3[/* layout */ js.Array[Layout], /* item */ Layout, /* e */ Event, Unit]
       ] = js.undefined
+    
+    /**
+      * Calls when an element is being dragged over the grid from outside as above.
+      * This callback should return an object to dynamically change the droppingItem size
+      * Return false to short-circuit the dragover
+      */
+    var onDropDragOver: js.UndefOr[js.Function1[/* e */ DragOverEvent, js.UndefOr[W | `false`]]] = js.undefined
     
     /**
       * Calls when resize movement happens.
@@ -184,7 +213,8 @@ object mod {
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
-      * Scale coefficient for CSS3 `transform: scale()`
+      * If parent DOM node of ResponsiveReactGridLayout or ReactGridLayout has "transform: scale(n)" css property,
+      * we should set scale coefficient to avoid render artefacts while dragging.
       */
     var transformScale: js.UndefOr[Double] = js.undefined
     
@@ -214,6 +244,10 @@ object mod {
     
     extension [Self <: CoreProps](x: Self) {
       
+      inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
+      
+      inline def setAllowOverlapUndefined: Self = StObject.set(x, "allowOverlap", js.undefined)
+      
       inline def setAutoSize(value: Boolean): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
       
       inline def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
@@ -239,6 +273,14 @@ object mod {
       inline def setDroppingItem(value: H): Self = StObject.set(x, "droppingItem", value.asInstanceOf[js.Any])
       
       inline def setDroppingItemUndefined: Self = StObject.set(x, "droppingItem", js.undefined)
+      
+      inline def setInnerRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      
+      inline def setInnerRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      
+      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
       inline def setIsBounded(value: Boolean): Self = StObject.set(x, "isBounded", value.asInstanceOf[js.Any])
       
@@ -280,6 +322,10 @@ object mod {
       
       inline def setOnDrop(value: (/* layout */ js.Array[Layout], /* item */ Layout, /* e */ Event) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction3(value))
       
+      inline def setOnDropDragOver(value: /* e */ DragOverEvent => js.UndefOr[W | `false`]): Self = StObject.set(x, "onDropDragOver", js.Any.fromFunction1(value))
+      
+      inline def setOnDropDragOverUndefined: Self = StObject.set(x, "onDropDragOver", js.undefined)
+      
       inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
       inline def setOnResize(
@@ -314,7 +360,7 @@ object mod {
       
       inline def setResizeHandlesUndefined: Self = StObject.set(x, "resizeHandles", js.undefined)
       
-      inline def setResizeHandlesVarargs(value: ResizeHandle*): Self = StObject.set(x, "resizeHandles", js.Array(value :_*))
+      inline def setResizeHandlesVarargs(value: ResizeHandle*): Self = StObject.set(x, "resizeHandles", js.Array(value*))
       
       inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
       
@@ -340,6 +386,14 @@ object mod {
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
+  }
+  
+  @js.native
+  trait DragOverEvent
+    extends StObject
+       with MouseEvent {
+    
+    var nativeEvent: layerXnumberlayerYnumberE = js.native
   }
   
   type ItemCallback = js.Function6[
@@ -480,7 +534,7 @@ object mod {
       
       inline def setResizeHandlesUndefined: Self = StObject.set(x, "resizeHandles", js.undefined)
       
-      inline def setResizeHandlesVarargs(value: ResizeHandle*): Self = StObject.set(x, "resizeHandles", js.Array(value :_*))
+      inline def setResizeHandlesVarargs(value: ResizeHandle*): Self = StObject.set(x, "resizeHandles", js.Array(value*))
       
       inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
       
@@ -496,11 +550,13 @@ object mod {
   
   type Layouts = StringDictionary[js.Array[Layout]]
   
-  type ReactGridLayout = Component[ReactGridLayoutProps, js.Object, js.Any]
+  type ReactGridLayout = Component[ReactGridLayoutProps, js.Object, Any]
   
   trait ReactGridLayoutProps
     extends StObject
        with CoreProps {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Number of columns in this layout.
@@ -547,6 +603,10 @@ object mod {
     
     extension [Self <: ReactGridLayoutProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
       inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
@@ -559,7 +619,7 @@ object mod {
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      inline def setLayoutVarargs(value: Layout*): Self = StObject.set(x, "layout", js.Array(value :_*))
+      inline def setLayoutVarargs(value: Layout*): Self = StObject.set(x, "layout", js.Array(value*))
       
       inline def setMargin(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
@@ -606,11 +666,18 @@ object mod {
        with CoreProps {
     
     /**
+      * Optional, but if you are managing width yourself you may want to set the breakpoint
+      * yourself as well.
+      */
+    var breakpoint: js.UndefOr[String] = js.undefined
+    
+    /**
       * `{name: pxVal}, e.g. {lg: 1200, md: 996, sm: 768, xs: 480}`
-      *
       * Breakpoint names are arbitrary but must match in the cols and layouts objects.
       */
     var breakpoints: js.UndefOr[StringDictionary[Double]] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Number of cols. This is a breakpoint -> cols map, e.g. `{lg: 12, md: 10, ...}`.
@@ -618,19 +685,24 @@ object mod {
     var cols: js.UndefOr[StringDictionary[Double]] = js.undefined
     
     /**
-      * Padding inside the container in px and formatt [x, y] or { breakpoint: [x, y] }.
+      * Number of containerPadding. This is a breakpoint -> containerPadding map
+      * e.g. { lg: [5, 5], md: [10, 10], sm: [15, 15] }
+      * Padding inside the container [x, y] in px
+      * e.g. [10, 10]
       */
     var containerPadding: js.UndefOr[(js.Tuple2[Double, Double]) | (StringDictionary[js.Tuple2[Double, Double]])] = js.undefined
     
     /**
-      * layouts is an object mapping breakpoints to layouts.
-      *
+      * Layouts is an object mapping breakpoints to layouts.
       * e.g. `{lg: Layout[], md: Layout[], ...}`
       */
     var layouts: js.UndefOr[Layouts] = js.undefined
     
     /**
-      * Margin between items in px and formatt [x, y] or { breakpoint: [x, y] }.
+      * Number of margin. This is a breakpoint -> margin map
+      * e.g. { lg: [5, 5], md: [10, 10], sm: [15, 15] }
+      * Margin between items [x, y] in px
+      * e.g. [10, 10]
       */
     var margin: js.UndefOr[(js.Tuple2[Double, Double]) | (StringDictionary[js.Tuple2[Double, Double]])] = js.undefined
     
@@ -641,13 +713,15 @@ object mod {
     
     /**
       * Callback so you can save the layout.
+      * Calls back with (currentLayout, allLayouts). allLayouts are keyed by breakpoint.
       */
     var onLayoutChange: js.UndefOr[
         js.Function2[/* currentLayout */ js.Array[Layout], /* allLayouts */ Layouts, Unit]
       ] = js.undefined
     
     /**
-      * Callback when the width changes, so you can modify the layout as needed.
+      * Callback that triggers when the width changes, so you can modify the layout as needed.
+      * Calls back with (containerWidth, margin, cols, containerPadding)
       */
     var onWidthChange: js.UndefOr[
         js.Function4[
@@ -668,9 +742,17 @@ object mod {
     
     extension [Self <: ResponsiveProps](x: Self) {
       
+      inline def setBreakpoint(value: String): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      
+      inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
+      
       inline def setBreakpoints(value: StringDictionary[Double]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       
       inline def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setCols(value: StringDictionary[Double]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       

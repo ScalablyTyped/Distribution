@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Max extends StObject {
   
-  var max: js.Any
+  var max: Any
   
-  var min: js.Any
+  var min: Any
 }
 object Max {
   
-  inline def apply(max: js.Any, min: js.Any): Max = {
+  inline def apply(max: Any, min: Any): Max = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[Max]
   }
   
   extension [Self <: Max](x: Self) {
     
-    inline def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    inline def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

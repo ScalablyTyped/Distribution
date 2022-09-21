@@ -11,9 +11,9 @@ trait B2InitOptions extends StObject {
   
   var applicationKeyId: String
   
-  var axios: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var axios: js.UndefOr[Record[String, Any]] = js.undefined
   
-  var retry: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var retry: js.UndefOr[Record[String, Any]] = js.undefined
 }
 object B2InitOptions {
   
@@ -28,11 +28,11 @@ object B2InitOptions {
     
     inline def setApplicationKeyId(value: String): Self = StObject.set(x, "applicationKeyId", value.asInstanceOf[js.Any])
     
-    inline def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+    inline def setAxios(value: Record[String, Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
     
     inline def setAxiosUndefined: Self = StObject.set(x, "axios", js.undefined)
     
-    inline def setRetry(value: Record[String, js.Any]): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+    inline def setRetry(value: Record[String, Any]): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
   }

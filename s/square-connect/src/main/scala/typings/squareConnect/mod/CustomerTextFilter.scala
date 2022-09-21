@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CustomerTextFilter")
 @js.native
-class CustomerTextFilter () extends StObject {
+open class CustomerTextFilter () extends StObject {
   
   /**
     * Use the exact filter to select customers whose attributes match exactly the specified query.

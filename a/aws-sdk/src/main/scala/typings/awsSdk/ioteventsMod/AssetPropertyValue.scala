@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssetPropertyValue extends StObject {
   
   /**
-    * The quality of the asset property value. The value must be GOOD, BAD, or UNCERTAIN. You can also specify an expression.
+    * The quality of the asset property value. The value must be 'GOOD', 'BAD', or 'UNCERTAIN'.
     */
   var quality: js.UndefOr[AssetPropertyQuality] = js.undefined
   
@@ -19,12 +19,12 @@ trait AssetPropertyValue extends StObject {
   /**
     * The value to send to an asset property.
     */
-  var value: AssetPropertyVariant
+  var value: js.UndefOr[AssetPropertyVariant] = js.undefined
 }
 object AssetPropertyValue {
   
-  inline def apply(value: AssetPropertyVariant): AssetPropertyValue = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  inline def apply(): AssetPropertyValue = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssetPropertyValue]
   }
   
@@ -39,5 +39,7 @@ object AssetPropertyValue {
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     inline def setValue(value: AssetPropertyVariant): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

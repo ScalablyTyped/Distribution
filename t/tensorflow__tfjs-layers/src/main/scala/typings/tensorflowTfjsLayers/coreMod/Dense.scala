@@ -8,34 +8,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Dense")
 @js.native
-class Dense protected () extends Layer {
+open class Dense protected () extends Layer {
   def this(args: DenseLayerArgs) = this()
   
   val DEFAULT_BIAS_INITIALIZER: InitializerIdentifier = js.native
   
   val DEFAULT_KERNEL_INITIALIZER: InitializerIdentifier = js.native
   
-  /* private */ var activation: js.Any = js.native
+  /* private */ var activation: Any = js.native
   
-  /* private */ var bias: js.Any = js.native
+  /* private */ var bias: Any = js.native
   
-  /* private */ val biasConstraint: js.Any = js.native
+  /* private */ val biasConstraint: Any = js.native
   
-  /* private */ var biasInitializer: js.Any = js.native
+  /* private */ var biasInitializer: Any = js.native
   
-  /* private */ val biasRegularizer: js.Any = js.native
+  /* private */ val biasRegularizer: Any = js.native
   
-  /* private */ var kernel: js.Any = js.native
+  /* private */ var kernel: Any = js.native
   
-  /* private */ val kernelConstraint: js.Any = js.native
+  /* private */ val kernelConstraint: Any = js.native
   
-  /* private */ var kernelInitializer: js.Any = js.native
+  /* private */ var kernelInitializer: Any = js.native
   
-  /* private */ val kernelRegularizer: js.Any = js.native
+  /* private */ val kernelRegularizer: Any = js.native
   
-  /* private */ var units: js.Any = js.native
+  /* private */ var units: Any = js.native
   
-  /* private */ var useBias: js.Any = js.native
+  /* private */ var useBias: Any = js.native
 }
 /* static members */
 object Dense {

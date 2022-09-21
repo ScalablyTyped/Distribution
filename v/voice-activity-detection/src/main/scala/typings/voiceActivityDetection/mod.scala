@@ -2,14 +2,15 @@ package typings.voiceActivityDetection
 
 import typings.std.AudioContext
 import typings.std.MediaStream
+import typings.voiceActivityDetection.anon.Connect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(audioContext: AudioContext, stream: MediaStream): Unit = (^.asInstanceOf[js.Dynamic].apply(audioContext.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(audioContext: AudioContext, stream: MediaStream, options: VoiceActivityDetectionOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(audioContext.asInstanceOf[js.Any], stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(audioContext: AudioContext, stream: MediaStream): Connect = (^.asInstanceOf[js.Dynamic].apply(audioContext.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Connect]
+  inline def apply(audioContext: AudioContext, stream: MediaStream, options: VoiceActivityDetectionOptions): Connect = (^.asInstanceOf[js.Dynamic].apply(audioContext.asInstanceOf[js.Any], stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Connect]
   
   @JSImport("voice-activity-detection", JSImport.Namespace)
   @js.native

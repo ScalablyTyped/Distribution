@@ -108,6 +108,10 @@ object algoliasearchHelperStrings {
   inline def firstWords: firstWords = "firstWords".asInstanceOf[firstWords]
   
   @js.native
+  sealed trait hidden extends StObject
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @js.native
   sealed trait hierarchical extends StObject
   inline def hierarchical: hierarchical = "hierarchical".asInstanceOf[hierarchical]
   
@@ -152,6 +156,10 @@ object algoliasearchHelperStrings {
   inline def optionalFilters: optionalFilters = "optionalFilters".asInstanceOf[optionalFilters]
   
   @js.native
+  sealed trait params extends StObject
+  inline def params: params = "params".asInstanceOf[params]
+  
+  @js.native
   sealed trait prefixAll extends StObject
   inline def prefixAll: prefixAll = "prefixAll".asInstanceOf[prefixAll]
   
@@ -166,6 +174,10 @@ object algoliasearchHelperStrings {
   @js.native
   sealed trait queryLanguages extends StObject
   inline def queryLanguages: queryLanguages = "queryLanguages".asInstanceOf[queryLanguages]
+  
+  @js.native
+  sealed trait relevancyStrictness extends StObject
+  inline def relevancyStrictness: relevancyStrictness = "relevancyStrictness".asInstanceOf[relevancyStrictness]
   
   @js.native
   sealed trait result extends StObject

@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IEdgeGesture extends StObject {
   
-  var oncanceled: js.Any
+  var oncanceled: Any
   
-  var oncompleted: js.Any
+  var oncompleted: Any
   
-  var onstarting: js.Any
+  var onstarting: Any
 }
 object IEdgeGesture {
   
-  inline def apply(oncanceled: js.Any, oncompleted: js.Any, onstarting: js.Any): IEdgeGesture = {
+  inline def apply(oncanceled: Any, oncompleted: Any, onstarting: Any): IEdgeGesture = {
     val __obj = js.Dynamic.literal(oncanceled = oncanceled.asInstanceOf[js.Any], oncompleted = oncompleted.asInstanceOf[js.Any], onstarting = onstarting.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEdgeGesture]
   }
   
   extension [Self <: IEdgeGesture](x: Self) {
     
-    inline def setOncanceled(value: js.Any): Self = StObject.set(x, "oncanceled", value.asInstanceOf[js.Any])
+    inline def setOncanceled(value: Any): Self = StObject.set(x, "oncanceled", value.asInstanceOf[js.Any])
     
-    inline def setOncompleted(value: js.Any): Self = StObject.set(x, "oncompleted", value.asInstanceOf[js.Any])
+    inline def setOncompleted(value: Any): Self = StObject.set(x, "oncompleted", value.asInstanceOf[js.Any])
     
-    inline def setOnstarting(value: js.Any): Self = StObject.set(x, "onstarting", value.asInstanceOf[js.Any])
+    inline def setOnstarting(value: Any): Self = StObject.set(x, "onstarting", value.asInstanceOf[js.Any])
   }
 }

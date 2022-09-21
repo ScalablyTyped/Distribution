@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grpc", "ServerUnaryCall")
 @js.native
-/* private */ class ServerUnaryCall[RequestType] () extends EventEmitter {
+/* private */ open class ServerUnaryCall[RequestType] () extends EventEmitter {
   
   /**
     * Indicates if the call has been cancelled

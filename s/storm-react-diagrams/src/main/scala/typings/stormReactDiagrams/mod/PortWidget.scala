@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("storm-react-diagrams", "PortWidget")
 @js.native
-class PortWidget protected ()
+open class PortWidget protected ()
   extends typings.stormReactDiagrams.portWidgetMod.PortWidget {
   def this(props: PortProps) = this()
 }

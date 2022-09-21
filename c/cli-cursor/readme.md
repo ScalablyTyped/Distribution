@@ -1,7 +1,7 @@
 
 # Scala.js typings for cli-cursor
 
-Typings are for version 3.1.0
+Typings are for version 4.0.0
 
 ## Library description:
 Toggle the CLI cursor
@@ -10,10 +10,10 @@ Toggle the CLI cursor
 | ------------------ | :-------------: |
 | Full name          | cli-cursor |
 | Keywords           | cli, cursor, ansi, toggle, display, show, hide, term, terminal, console, tty, shell, command-line |
-| # releases         | 3 |
-| # dependents       | 274 |
-| # downloads        | 1021634513 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2407830266666667E8 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/cli-cursor#readme)

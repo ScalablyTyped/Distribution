@@ -1,6 +1,5 @@
 package typings.highcharts.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,11 +15,11 @@ trait DataDateFormatObject extends StObject {
   @JSName("parser")
   var parser_Original: typings.highcharts.dataMod.highchartsAugmentingMod.DataDateFormatCallbackFunction
   
-  var regex: RegExp
+  var regex: js.RegExp
 }
 object DataDateFormatObject {
   
-  inline def apply(parser: /* match */ js.Array[Double] => Double, regex: RegExp): DataDateFormatObject = {
+  inline def apply(parser: /* match */ js.Array[Double] => Double, regex: js.RegExp): DataDateFormatObject = {
     val __obj = js.Dynamic.literal(parser = js.Any.fromFunction1(parser), regex = regex.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataDateFormatObject]
   }
@@ -33,6 +32,6 @@ object DataDateFormatObject {
     
     inline def setParser(value: /* match */ js.Array[Double] => Double): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
     
-    inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
   }
 }

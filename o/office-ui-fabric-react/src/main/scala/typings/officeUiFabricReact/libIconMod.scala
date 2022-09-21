@@ -26,7 +26,7 @@ object libIconMod {
   
   @JSImport("office-ui-fabric-react/lib/Icon", "IconBase")
   @js.native
-  class IconBase protected ()
+  open class IconBase protected ()
     extends typings.officeUiFabricReact.iconMod.IconBase {
     def this(props: IIconProps) = this()
   }

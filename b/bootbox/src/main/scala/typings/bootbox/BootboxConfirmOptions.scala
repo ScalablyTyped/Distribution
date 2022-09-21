@@ -18,13 +18,13 @@ trait BootboxConfirmOptions
   var buttons_BootboxConfirmOptions: js.UndefOr[BootboxConfirmPromptButtonMap] = js.undefined
   
   @JSName("callback")
-  def callback_MBootboxConfirmOptions(result: Boolean): js.Any
+  def callback_MBootboxConfirmOptions(result: Boolean): Any
 }
 object BootboxConfirmOptions {
   
   inline def apply(
-    callback: Boolean => js.Any,
-    message: JQuery[HTMLElement] | js.Array[js.Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
+    callback: Boolean => Any,
+    message: JQuery[HTMLElement] | js.Array[Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
   ): BootboxConfirmOptions = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootboxConfirmOptions]
@@ -36,6 +36,6 @@ object BootboxConfirmOptions {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setCallback(value: Boolean => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: Boolean => Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
   }
 }

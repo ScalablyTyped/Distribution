@@ -10,10 +10,10 @@ object settingsPowerMod {
   
   @JSImport("material-ui/svg-icons/action/settings-power", JSImport.Default)
   @js.native
-  class default () extends ActionSettingsPower
+  open class default () extends ActionSettingsPower
   
   @JSImport("material-ui/svg-icons/action/settings-power", "ActionSettingsPower")
   @js.native
-  class ActionSettingsPower ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSettingsPower ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

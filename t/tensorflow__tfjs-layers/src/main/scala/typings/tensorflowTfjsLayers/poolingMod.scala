@@ -20,7 +20,7 @@ object poolingMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "AveragePooling1D")
   @js.native
-  class AveragePooling1D protected () extends Pooling1D {
+  open class AveragePooling1D protected () extends Pooling1D {
     def this(args: Pooling1DLayerArgs) = this()
   }
   /* static members */
@@ -39,7 +39,7 @@ object poolingMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "AveragePooling2D")
   @js.native
-  class AveragePooling2D protected () extends Pooling2D {
+  open class AveragePooling2D protected () extends Pooling2D {
     def this(args: Pooling2DLayerArgs) = this()
   }
   /* static members */
@@ -58,7 +58,7 @@ object poolingMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "AveragePooling3D")
   @js.native
-  class AveragePooling3D protected () extends Pooling3D {
+  open class AveragePooling3D protected () extends Pooling3D {
     def this(args: Pooling3DLayerArgs) = this()
   }
   /* static members */
@@ -77,7 +77,7 @@ object poolingMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "GlobalAveragePooling1D")
   @js.native
-  class GlobalAveragePooling1D () extends GlobalPooling1D {
+  open class GlobalAveragePooling1D () extends GlobalPooling1D {
     def this(args: LayerArgs) = this()
   }
   /* static members */
@@ -96,7 +96,7 @@ object poolingMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "GlobalAveragePooling2D")
   @js.native
-  class GlobalAveragePooling2D protected () extends GlobalPooling2D {
+  open class GlobalAveragePooling2D protected () extends GlobalPooling2D {
     def this(args: GlobalPooling2DLayerArgs) = this()
   }
   /* static members */
@@ -115,7 +115,7 @@ object poolingMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "GlobalMaxPooling1D")
   @js.native
-  class GlobalMaxPooling1D protected () extends GlobalPooling1D {
+  open class GlobalMaxPooling1D protected () extends GlobalPooling1D {
     def this(args: LayerArgs) = this()
   }
   /* static members */
@@ -134,7 +134,7 @@ object poolingMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "GlobalMaxPooling2D")
   @js.native
-  class GlobalMaxPooling2D protected () extends GlobalPooling2D {
+  open class GlobalMaxPooling2D protected () extends GlobalPooling2D {
     def this(args: GlobalPooling2DLayerArgs) = this()
   }
   /* static members */
@@ -167,7 +167,7 @@ object poolingMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "MaxPooling1D")
   @js.native
-  class MaxPooling1D protected () extends Pooling1D {
+  open class MaxPooling1D protected () extends Pooling1D {
     def this(args: Pooling1DLayerArgs) = this()
   }
   /* static members */
@@ -186,7 +186,7 @@ object poolingMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "MaxPooling2D")
   @js.native
-  class MaxPooling2D protected () extends Pooling2D {
+  open class MaxPooling2D protected () extends Pooling2D {
     def this(args: Pooling2DLayerArgs) = this()
   }
   /* static members */
@@ -205,7 +205,7 @@ object poolingMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "MaxPooling3D")
   @js.native
-  class MaxPooling3D protected () extends Pooling3D {
+  open class MaxPooling3D protected () extends Pooling3D {
     def this(args: Pooling3DLayerArgs) = this()
   }
   /* static members */
@@ -565,13 +565,13 @@ object poolingMod {
       
       inline def setPoolSizeUndefined: Self = StObject.set(x, "poolSize", js.undefined)
       
-      inline def setPoolSizeVarargs(value: Double*): Self = StObject.set(x, "poolSize", js.Array(value :_*))
+      inline def setPoolSizeVarargs(value: Double*): Self = StObject.set(x, "poolSize", js.Array(value*))
       
       inline def setStrides(value: Double | js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
       
       inline def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
       
-      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value*))
     }
   }
   

@@ -32,7 +32,7 @@ trait RefractionBlock
   /** @hidden */
   var _refractionMatrixName: String = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
   /** @hidden */
   var _vRefractionFilteringInfoName: String = js.native
@@ -71,7 +71,7 @@ trait RefractionBlock
   def isReady(): Boolean = js.native
   
   /**
-    * This parameters will make the material used its opacity to control how much it is refracting aginst not.
+    * This parameters will make the material used its opacity to control how much it is refracting against not.
     * Materials half opaque for instance using refraction could benefit from this control.
     */
   var linkRefractionWithTransparency: Boolean = js.native
@@ -92,6 +92,11 @@ trait RefractionBlock
   def tintAtDistance: NodeMaterialConnectionPoint = js.native
   
   /**
+    * Controls if refraction needs to be inverted on Y. This could be useful for procedural texture.
+    */
+  var useThicknessAsDepth: Boolean = js.native
+  
+  /**
     * Gets the view input component
     */
   def view: NodeMaterialConnectionPoint = js.native
@@ -103,4 +108,9 @@ trait RefractionBlock
     */
   /** @hidden */
   var viewConnectionPoint: NodeMaterialConnectionPoint = js.native
+  
+  /**
+    * Gets the volume index of refraction input component
+    */
+  def volumeIndexOfRefraction: NodeMaterialConnectionPoint = js.native
 }

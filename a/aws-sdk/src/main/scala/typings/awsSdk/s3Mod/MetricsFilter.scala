@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MetricsFilter extends StObject {
   
   /**
+    * The access point ARN used when evaluating a metrics filter.
+    */
+  var AccessPointArn: js.UndefOr[typings.awsSdk.s3Mod.AccessPointArn] = js.undefined
+  
+  /**
     * A conjunction (logical AND) of predicates, which is used in evaluating a metrics filter. The operator must have at least two predicates, and an object must match all of the predicates in order for the filter to apply.
     */
   var And: js.UndefOr[MetricsAndOperator] = js.undefined
@@ -29,6 +34,10 @@ object MetricsFilter {
   }
   
   extension [Self <: MetricsFilter](x: Self) {
+    
+    inline def setAccessPointArn(value: AccessPointArn): Self = StObject.set(x, "AccessPointArn", value.asInstanceOf[js.Any])
+    
+    inline def setAccessPointArnUndefined: Self = StObject.set(x, "AccessPointArn", js.undefined)
     
     inline def setAnd(value: MetricsAndOperator): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
     

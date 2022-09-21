@@ -1,7 +1,7 @@
 
 # Scala.js typings for carbon__colors
 
-Typings are for version 0.0
+Typings are for version 10.31
 
 ## Library description:
 Colors for digital and software products using the Carbon Design System
@@ -10,10 +10,10 @@ Colors for digital and software products using the Carbon Design System
 | ------------------ | :-------------: |
 | Full name          | @carbon/colors |
 | Keywords           | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
-| # releases         | 113 |
-| # dependents       | 16 |
-| # downloads        | 2647927 |
-| # stars            | 0 |
+| # releases         | 61 |
+| # dependents       | 0.0 |
+| # downloads        | 333395.3333333333 |
+| # stars            | 5846.0 |
 
 ## Links
 - [Homepage](https://github.com/carbon-design-system/carbon#readme)

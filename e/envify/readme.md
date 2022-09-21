@@ -10,9 +10,9 @@ Selectively replace Node-style environment variables with plain strings.
 | Full name          | envify |
 | Keywords           | environment, variables, browserify, browserify-transform, transform, source, configuration |
 | # releases         | 1 |
-| # dependents       | 387 |
-| # downloads        | 33931843 |
-| # stars            | 34 |
+| # dependents       | 0.0 |
+| # downloads        | 2261639.0 |
+| # stars            | 882.0 |
 
 ## Links
 - [Homepage](https://github.com/hughsk/envify#readme)

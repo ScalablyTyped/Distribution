@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BinaryOperationFactory
   extends StObject
-     with Instantiable1[/* propertyOrPredicate */ js.Any, BinaryOperation]
-     with Instantiable2[/* propertyOrPredicate */ js.Any, /* valueOrOperator */ js.Any, BinaryOperation]
+     with Instantiable1[/* propertyOrPredicate */ Any, BinaryOperation]
+     with Instantiable2[/* propertyOrPredicate */ Any, /* valueOrOperator */ Any, BinaryOperation]
      with Instantiable3[
-      /* propertyOrPredicate */ js.Any, 
-      (/* valueOrOperator */ js.Any) | (/* valueOrOperator */ Unit), 
-      /* value */ js.Any, 
+      /* propertyOrPredicate */ Any, 
+      (/* valueOrOperator */ Any) | (/* valueOrOperator */ Unit), 
+      /* value */ Any, 
       BinaryOperation
     ]

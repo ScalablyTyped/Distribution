@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeConnectorEntityRequest extends StObject {
   
   /**
-    *  The entity name for that connector. 
+    * The version of the API that's used by the connector.
     */
-  var connectorEntityName: Name
+  var apiVersion: js.UndefOr[ApiVersion_] = js.undefined
   
   /**
-    *  The name of the connector profile. The name is unique for each ConnectorProfile in the AWS account. 
+    *  The entity name for that connector. 
+    */
+  var connectorEntityName: EntityName
+  
+  /**
+    *  The name of the connector profile. The name is unique for each ConnectorProfile in the Amazon Web Services account. 
     */
   var connectorProfileName: js.UndefOr[ConnectorProfileName] = js.undefined
   
@@ -23,14 +28,18 @@ trait DescribeConnectorEntityRequest extends StObject {
 }
 object DescribeConnectorEntityRequest {
   
-  inline def apply(connectorEntityName: Name): DescribeConnectorEntityRequest = {
+  inline def apply(connectorEntityName: EntityName): DescribeConnectorEntityRequest = {
     val __obj = js.Dynamic.literal(connectorEntityName = connectorEntityName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConnectorEntityRequest]
   }
   
   extension [Self <: DescribeConnectorEntityRequest](x: Self) {
     
-    inline def setConnectorEntityName(value: Name): Self = StObject.set(x, "connectorEntityName", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: ApiVersion_): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    
+    inline def setConnectorEntityName(value: EntityName): Self = StObject.set(x, "connectorEntityName", value.asInstanceOf[js.Any])
     
     inline def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
     

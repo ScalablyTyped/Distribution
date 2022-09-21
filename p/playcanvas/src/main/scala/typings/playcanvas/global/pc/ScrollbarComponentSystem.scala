@@ -5,13 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new ScrollbarComponentSystem.
-  * @param app - The application.
+  * Manages creation of {@link ScrollbarComponent}s.
+  *
+  * @augments ComponentSystem
   */
 @JSGlobal("pc.ScrollbarComponentSystem")
 @js.native
-class ScrollbarComponentSystem protected ()
-  extends StObject
-     with typings.playcanvas.pc.EventHandler {
-  def this(app: typings.playcanvas.pc.Application) = this()
+open class ScrollbarComponentSystem protected ()
+  extends typings.playcanvas.mod.ScrollbarComponentSystem {
+  /**
+    * Create a new ComponentSystem instance.
+    *
+    * @param {AppBase} app - The application managing this system.
+    */
+  def this(app: typings.playcanvas.mod.AppBase) = this()
 }

@@ -9,19 +9,19 @@ object mockTracerMockTracerMod {
   
   @JSImport("opentracing/lib/mock_tracer/mock_tracer", JSImport.Default)
   @js.native
-  class default () extends MockTracer
+  open class default () extends MockTracer
   
   @JSImport("opentracing/lib/mock_tracer/mock_tracer", "MockTracer")
   @js.native
-  class MockTracer () extends Tracer {
+  open class MockTracer () extends Tracer {
     
-    /* private */ var _allocSpan: js.Any = js.native
+    /* private */ var _allocSpan: Any = js.native
     
-    /* protected */ def _extract(format: js.Any, carrier: js.Any): scala.Nothing = js.native
+    /* protected */ def _extract(format: Any, carrier: Any): scala.Nothing = js.native
     
-    /* protected */ def _inject(span: typings.opentracing.mockContextMod.default, format: js.Any, carrier: js.Any): scala.Nothing = js.native
+    /* protected */ def _inject(span: typings.opentracing.mockContextMod.default, format: Any, carrier: Any): scala.Nothing = js.native
     
-    /* private */ var _spans: js.Any = js.native
+    /* private */ var _spans: Any = js.native
     
     /**
       * Discard any buffered data.

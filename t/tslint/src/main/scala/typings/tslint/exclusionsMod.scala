@@ -20,11 +20,11 @@ object exclusionsMod {
     
     var overloadsSeparateDocs: js.UndefOr[Boolean] = js.undefined
     
-    var requirements: js.Array[Exclusion[js.Any]]
+    var requirements: js.Array[Exclusion[Any]]
   }
   object DocTypeExclusions {
     
-    inline def apply(requirements: js.Array[Exclusion[js.Any]]): DocTypeExclusions = {
+    inline def apply(requirements: js.Array[Exclusion[Any]]): DocTypeExclusions = {
       val __obj = js.Dynamic.literal(requirements = requirements.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocTypeExclusions]
     }
@@ -35,9 +35,9 @@ object exclusionsMod {
       
       inline def setOverloadsSeparateDocsUndefined: Self = StObject.set(x, "overloadsSeparateDocs", js.undefined)
       
-      inline def setRequirements(value: js.Array[Exclusion[js.Any]]): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
+      inline def setRequirements(value: js.Array[Exclusion[Any]]): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
       
-      inline def setRequirementsVarargs(value: Exclusion[js.Any]*): Self = StObject.set(x, "requirements", js.Array(value :_*))
+      inline def setRequirementsVarargs(value: Exclusion[Any]*): Self = StObject.set(x, "requirements", js.Array(value*))
     }
   }
   

@@ -12,12 +12,12 @@ trait MitigationActionParams extends StObject {
   var addThingsToThingGroupParams: js.UndefOr[AddThingsToThingGroupParams] = js.undefined
   
   /**
-    * Parameters to define a mitigation action that enables AWS IoT logging at a specified level of detail.
+    * Parameters to define a mitigation action that enables Amazon Web Services IoT Core logging at a specified level of detail.
     */
   var enableIoTLoggingParams: js.UndefOr[EnableIoTLoggingParams] = js.undefined
   
   /**
-    * Parameters to define a mitigation action that publishes findings to Amazon SNS. You can implement your own custom actions in response to the Amazon SNS messages.
+    * Parameters to define a mitigation action that publishes findings to Amazon Simple Notification Service (Amazon SNS. You can implement your own custom actions in response to the Amazon SNS messages.
     */
   var publishFindingToSnsParams: js.UndefOr[PublishFindingToSnsParams] = js.undefined
   

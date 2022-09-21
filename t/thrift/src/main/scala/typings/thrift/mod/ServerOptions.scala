@@ -32,7 +32,7 @@ object ServerOptions {
     
     inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
     
-    inline def setCorsVarargs(value: String*): Self = StObject.set(x, "cors", js.Array(value :_*))
+    inline def setCorsVarargs(value: String*): Self = StObject.set(x, "cors", js.Array(value*))
     
     inline def setFiles(value: String): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     

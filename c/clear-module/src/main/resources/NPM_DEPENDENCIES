@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "clear-module" : "4.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "clear-module" : "4.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

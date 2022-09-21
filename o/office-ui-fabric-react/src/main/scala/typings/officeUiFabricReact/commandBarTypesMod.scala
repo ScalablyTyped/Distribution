@@ -149,7 +149,7 @@ object commandBarTypesMod {
       * as a result of `onReduceData`, or to count the number of renders that an implementation of
       * `onReduceData` triggers.
       */
-    var dataDidRender: js.UndefOr[js.Function1[/* renderedData */ js.Any, Unit]] = js.undefined
+    var dataDidRender: js.UndefOr[js.Function1[/* renderedData */ Any, Unit]] = js.undefined
     
     /**
       * Items to render on the right side (or left, in RTL). ICommandBarItemProps extends IContextualMenuItem.
@@ -238,7 +238,7 @@ object commandBarTypesMod {
       
       inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      inline def setDataDidRender(value: /* renderedData */ js.Any => Unit): Self = StObject.set(x, "dataDidRender", js.Any.fromFunction1(value))
+      inline def setDataDidRender(value: /* renderedData */ Any => Unit): Self = StObject.set(x, "dataDidRender", js.Any.fromFunction1(value))
       
       inline def setDataDidRenderUndefined: Self = StObject.set(x, "dataDidRender", js.undefined)
       
@@ -246,11 +246,11 @@ object commandBarTypesMod {
       
       inline def setFarItemsUndefined: Self = StObject.set(x, "farItems", js.undefined)
       
-      inline def setFarItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "farItems", js.Array(value :_*))
+      inline def setFarItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "farItems", js.Array(value*))
       
       inline def setItems(value: js.Array[ICommandBarItemProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setOnDataGrown(value: /* movedItem */ ICommandBarItemProps => Unit): Self = StObject.set(x, "onDataGrown", js.Any.fromFunction1(value))
       
@@ -280,7 +280,7 @@ object commandBarTypesMod {
       
       inline def setOverflowItemsUndefined: Self = StObject.set(x, "overflowItems", js.undefined)
       
-      inline def setOverflowItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "overflowItems", js.Array(value :_*))
+      inline def setOverflowItemsVarargs(value: ICommandBarItemProps*): Self = StObject.set(x, "overflowItems", js.Array(value*))
       
       inline def setShiftOnReduce(value: Boolean): Self = StObject.set(x, "shiftOnReduce", value.asInstanceOf[js.Any])
       

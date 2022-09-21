@@ -185,7 +185,7 @@ object Core {
       */
     def getMany(startIndex: Double): ItemsResourceCandidate = js.native
     
-    def indexOf(value: ResourceCandidate, extra: js.Any*): Index = js.native
+    def indexOf(value: ResourceCandidate, extra: Any*): Index = js.native
     /* hack */
     @JSName("indexOf")
     def indexOf_Double(searchElement: ResourceCandidate): Double = js.native
@@ -244,7 +244,7 @@ object Core {
       */
     def getMany(startIndex: Double): ItemsArray = js.native
     
-    def indexOf(value: String, extra: js.Any*): Index = js.native
+    def indexOf(value: String, extra: Any*): Index = js.native
     /* hack */
     @JSName("indexOf")
     def indexOf_Double(searchElement: String): Double = js.native
@@ -379,7 +379,7 @@ object Core {
       * Returns an iterator to enumerate the items in the map.
       * @return The iterator. The current position of the iterator is index 0, or the end of the set if the map is empty.
       */
-    def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+    def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
     
     /**
       * Returns a ResourceMap that represents a subtree of another ResourceMap, typically used to access a particular resource file within an app package.
@@ -479,7 +479,7 @@ object Core {
       * Returns an iterator to enumerate the items in the map view.
       * @return The iterator. The current position of the iterator is index 0, or the end of the map if the map is empty.
       */
-    def first(): IIterator[IKeyValuePair[js.Any, js.Any]]
+    def first(): IIterator[IKeyValuePair[Any, Any]]
     
     /**
       * Determines whether the map view contains the specified key.
@@ -506,7 +506,7 @@ object Core {
   object ResourceMapMapView {
     
     inline def apply(
-      first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
+      first: () => IIterator[IKeyValuePair[Any, Any]],
       hasKey: String => Boolean,
       lookup: String => ResourceMap,
       size: Double,
@@ -518,7 +518,7 @@ object Core {
     
     extension [Self <: ResourceMapMapView](x: Self) {
       
-      inline def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => IIterator[IKeyValuePair[Any, Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
       inline def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
       
@@ -620,7 +620,7 @@ object Core {
       * Returns an iterator to enumerate the items in the map view.
       * @return The iterator. The current position of the iterator is index 0, or the end of the map view if the map view is empty.
       */
-    def first(): IIterator[IKeyValuePair[js.Any, js.Any]]
+    def first(): IIterator[IKeyValuePair[Any, Any]]
     
     /**
       * Determines whether the map view contains the specified key.
@@ -647,7 +647,7 @@ object Core {
   object ResourceQualifierMapView {
     
     inline def apply(
-      first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
+      first: () => IIterator[IKeyValuePair[Any, Any]],
       hasKey: String => Boolean,
       lookup: String => String,
       size: Double,
@@ -659,7 +659,7 @@ object Core {
     
     extension [Self <: ResourceQualifierMapView](x: Self) {
       
-      inline def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => IIterator[IKeyValuePair[Any, Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
       inline def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
       
@@ -675,7 +675,7 @@ object Core {
   @js.native
   trait ResourceQualifierObservableMap extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, String]): Unit = js.native
     
@@ -686,7 +686,7 @@ object Core {
       * Returns an iterator to enumerate the items in the observable map.
       * @return The iterator. The current position of the iterator is index 0, or the end of the observable map if the observable map is empty.
       */
-    def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+    def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
     
     /**
       * Returns an unchangeable view of the observable map.
@@ -728,7 +728,7 @@ object Core {
       */
     def remove(key: String): Unit = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, String]): Unit = js.native
     
@@ -761,7 +761,7 @@ object Core {
       */
     def getMany(startIndex: Double): ItemsResourceQualifier = js.native
     
-    def indexOf(value: ResourceQualifier, extra: js.Any*): Index = js.native
+    def indexOf(value: ResourceQualifier, extra: Any*): Index = js.native
     /* hack */
     @JSName("indexOf")
     def indexOf_Double(searchElement: ResourceQualifier): Double = js.native

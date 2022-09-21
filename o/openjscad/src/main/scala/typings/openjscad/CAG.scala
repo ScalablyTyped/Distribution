@@ -20,13 +20,13 @@ trait CAG
      with CxG
      with ICenter {
   
-  def _toCSGWall(z0: js.Any, z1: js.Any): CSG = js.native
+  def _toCSGWall(z0: Any, z1: Any): CSG = js.native
   
-  def _toPlanePolygons(options: js.Any): js.Array[Polygon] = js.native
+  def _toPlanePolygons(options: Any): js.Array[Polygon] = js.native
   
   def _toVector3DPairs(m: Matrix4x4): js.Array[js.Array[Vector3D]] = js.native
   
-  def _toWallPolygons(options: js.Any): js.Array[js.Any] = js.native
+  def _toWallPolygons(options: Any): js.Array[Any] = js.native
   
   def area(): Double = js.native
   
@@ -43,9 +43,9 @@ trait CAG
   def extrude(options: CAGExtrudeOptions): CSG = js.native
   
   def extrudeInOrthonormalBasis(orthonormalbasis: OrthoNormalBasis, depth: Double): CSG = js.native
-  def extrudeInOrthonormalBasis(orthonormalbasis: OrthoNormalBasis, depth: Double, options: js.Any): CSG = js.native
+  def extrudeInOrthonormalBasis(orthonormalbasis: OrthoNormalBasis, depth: Double, options: Any): CSG = js.native
   
-  def extrudeInPlane(axis1: js.Any, axis2: js.Any, depth: js.Any, options: js.Any): CSG = js.native
+  def extrudeInPlane(axis1: Any, axis2: Any, depth: Any, options: Any): CSG = js.native
   
   def flipped(): CAG = js.native
   
@@ -58,9 +58,9 @@ trait CAG
   
   def isSelfIntersecting(): Boolean = js.native
   
-  def overCutInsideCorners(cutterradius: js.Any): CAG = js.native
+  def overCutInsideCorners(cutterradius: Any): CAG = js.native
   
-  def rotateExtrude(options: js.Any): CSG = js.native
+  def rotateExtrude(options: Any): CSG = js.native
   
   var sides: js.Array[Side] = js.native
   
@@ -93,7 +93,7 @@ object CAG {
     
     var tag: Double = js.native
     
-    def toPolygon3D(z0: js.Any, z1: js.Any): Polygon = js.native
+    def toPolygon3D(z0: Any, z1: Any): Polygon = js.native
     
     var vertex0: Vertex = js.native
     

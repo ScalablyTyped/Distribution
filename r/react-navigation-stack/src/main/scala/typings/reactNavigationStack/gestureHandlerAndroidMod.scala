@@ -1,10 +1,14 @@
 package typings.reactNavigationStack
 
-import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
-import typings.reactNative.mod.ViewProps
-import typings.reactNativeGestureHandler.mod.PanGestureHandlerProperties
-import typings.reactNativeGestureHandler.mod.State
+import typings.reactNativeGestureHandler.gestureHandlerRootViewMod.GestureHandlerRootViewProps
+import typings.reactNativeGestureHandler.gestureHandlerTypesCompatMod.PanGestureHandlerProperties
+import typings.reactNavigationStack.reactNavigationStackNumbers.`0`
+import typings.reactNavigationStack.reactNavigationStackNumbers.`1`
+import typings.reactNavigationStack.reactNavigationStackNumbers.`2`
+import typings.reactNavigationStack.reactNavigationStackNumbers.`3`
+import typings.reactNavigationStack.reactNavigationStackNumbers.`4`
+import typings.reactNavigationStack.reactNavigationStackNumbers.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,28 +19,33 @@ object gestureHandlerAndroidMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandler.android", "GestureHandlerRootView")
-  @js.native
-  val GestureHandlerRootView: ComponentType[ViewProps] = js.native
+  inline def GestureHandlerRootView(props: GestureHandlerRootViewProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("GestureHandlerRootView")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandler.android", "GestureState")
-  @js.native
-  object GestureState extends StObject {
+  object GestureState {
     
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[State & Double] = js.native
+    @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandler.android", "GestureState.ACTIVE")
+    @js.native
+    val ACTIVE: `4` = js.native
     
-    /* 3 */ val ACTIVE: typings.reactNativeGestureHandler.mod.State.ACTIVE & Double = js.native
+    @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandler.android", "GestureState.BEGAN")
+    @js.native
+    val BEGAN: `2` = js.native
     
-    /* 1 */ val BEGAN: typings.reactNativeGestureHandler.mod.State.BEGAN & Double = js.native
+    @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandler.android", "GestureState.CANCELLED")
+    @js.native
+    val CANCELLED: `3` = js.native
     
-    /* 2 */ val CANCELLED: typings.reactNativeGestureHandler.mod.State.CANCELLED & Double = js.native
+    @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandler.android", "GestureState.END")
+    @js.native
+    val END: `5` = js.native
     
-    /* 4 */ val END: typings.reactNativeGestureHandler.mod.State.END & Double = js.native
+    @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandler.android", "GestureState.FAILED")
+    @js.native
+    val FAILED: `1` = js.native
     
-    /* 0 */ val FAILED: typings.reactNativeGestureHandler.mod.State.FAILED & Double = js.native
-    
-    /* 0 */ val UNDETERMINED: typings.reactNativeGestureHandler.mod.State.UNDETERMINED & Double = js.native
+    @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandler.android", "GestureState.UNDETERMINED")
+    @js.native
+    val UNDETERMINED: `0` = js.native
   }
   
   inline def PanGestureHandler(props: PanGestureHandlerProperties): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PanGestureHandler")(props.asInstanceOf[js.Any]).asInstanceOf[Element]

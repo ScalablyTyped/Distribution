@@ -4,24 +4,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This reservation type allows to pre allocate specific instance
-  * configuration.
-  */
 trait SchemaAllocationSpecificSKUReservation extends StObject {
   
   /**
-    * Specifies number of resources that are allocated.
+    * [Output Only] Indicates how many instances are actually usable currently.
     */
-  var count: js.UndefOr[String] = js.undefined
+  var assuredCount: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [OutputOnly] Indicates how many resource are in use.
+    * Specifies the number of resources that are allocated.
     */
-  var inUseCount: js.UndefOr[String] = js.undefined
+  var count: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The instance properties for this specific sku reservation.
+    * [Output Only] Indicates how many instances are in use.
+    */
+  var inUseCount: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The instance properties for the reservation.
     */
   var instanceProperties: js.UndefOr[SchemaAllocationSpecificSKUAllocationReservedInstanceProperties] = js.undefined
 }
@@ -34,11 +35,21 @@ object SchemaAllocationSpecificSKUReservation {
   
   extension [Self <: SchemaAllocationSpecificSKUReservation](x: Self) {
     
+    inline def setAssuredCount(value: String): Self = StObject.set(x, "assuredCount", value.asInstanceOf[js.Any])
+    
+    inline def setAssuredCountNull: Self = StObject.set(x, "assuredCount", null)
+    
+    inline def setAssuredCountUndefined: Self = StObject.set(x, "assuredCount", js.undefined)
+    
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountNull: Self = StObject.set(x, "count", null)
     
     inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     inline def setInUseCount(value: String): Self = StObject.set(x, "inUseCount", value.asInstanceOf[js.Any])
+    
+    inline def setInUseCountNull: Self = StObject.set(x, "inUseCount", null)
     
     inline def setInUseCountUndefined: Self = StObject.set(x, "inUseCount", js.undefined)
     

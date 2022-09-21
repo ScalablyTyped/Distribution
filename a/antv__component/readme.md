@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__component
 
-Typings are for version 0.8.2
+Typings are for version 0.8.28
 
 ## Library description:
 The component module for antv
@@ -10,10 +10,10 @@ The component module for antv
 | ------------------ | :-------------: |
 | Full name          | @antv/component |
 | Keywords           | - |
-| # releases         | 99 |
-| # dependents       | 6 |
-| # downloads        | 2765780 |
-| # stars            | 0 |
+| # releases         | 37 |
+| # dependents       | 0.0 |
+| # downloads        | 394498.3333333333 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/component#readme)

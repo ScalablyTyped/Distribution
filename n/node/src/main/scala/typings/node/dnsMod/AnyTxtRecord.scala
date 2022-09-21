@@ -25,7 +25,7 @@ object AnyTxtRecord {
     
     inline def setEntries(value: js.Array[String]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    inline def setEntriesVarargs(value: String*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: String*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setType(value: TXT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

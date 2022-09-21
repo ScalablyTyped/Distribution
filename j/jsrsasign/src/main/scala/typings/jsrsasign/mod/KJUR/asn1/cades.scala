@@ -9,6 +9,7 @@ import typings.jsrsasign.anon.Digalg
 import typings.jsrsasign.anon.Hash
 import typings.jsrsasign.anon.Length
 import typings.jsrsasign.anon.Res
+import typings.jsrsasign.anon.Tlv
 import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -227,7 +228,7 @@ object cades {
     */
   @JSImport("jsrsasign", "KJUR.asn1.cades.CompleteCertificateRefs")
   @js.native
-  class CompleteCertificateRefs ()
+  open class CompleteCertificateRefs ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.cades.CompleteCertificateRefs {
     def this(params: Length) = this()
@@ -276,6 +277,10 @@ object cades {
     /* CompleteClass */
     var isModified: String = js.native
     
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
+    
     /**
       * set value by array
       * @param a array of `KJUR.asn1.cades.OtherCertID` argument
@@ -299,7 +304,7 @@ object cades {
     */
   @JSImport("jsrsasign", "KJUR.asn1.cades.OtherCertID")
   @js.native
-  class OtherCertID ()
+  open class OtherCertID ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.cades.OtherCertID {
     def this(params: String) = this()
@@ -349,6 +354,10 @@ object cades {
     /* CompleteClass */
     var isModified: String = js.native
     
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
+    
     /**
       * set value by PEM string of certificate
       * @param certPEM PEM string of certificate
@@ -380,7 +389,7 @@ object cades {
     */
   @JSImport("jsrsasign", "KJUR.asn1.cades.OtherHash")
   @js.native
-  class OtherHash ()
+  open class OtherHash ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.cades.OtherHash {
     def this(params: String) = this()
@@ -432,6 +441,10 @@ object cades {
     /* CompleteClass */
     var isModified: String = js.native
     
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
+    
     /**
       * set value by PEM string of certificate
       * @param certPEM PEM string of certificate
@@ -457,7 +470,7 @@ object cades {
     */
   @JSImport("jsrsasign", "KJUR.asn1.cades.OtherHashAlgAndValue")
   @js.native
-  class OtherHashAlgAndValue ()
+  open class OtherHashAlgAndValue ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
     def this(params: Alg) = this()
@@ -505,6 +518,10 @@ object cades {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -533,7 +550,7 @@ object cades {
     */
   @JSImport("jsrsasign", "KJUR.asn1.cades.SignaturePolicyIdentifier")
   @js.native
-  class SignaturePolicyIdentifier ()
+  open class SignaturePolicyIdentifier ()
     extends StObject
        with Attribute {
     def this(params: Hash) = this()
@@ -581,6 +598,10 @@ object cades {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -595,7 +616,7 @@ object cades {
     */
   @JSImport("jsrsasign", "KJUR.asn1.cades.SignatureTimeStamp")
   @js.native
-  class SignatureTimeStamp ()
+  open class SignatureTimeStamp ()
     extends StObject
        with Attribute {
     def this(params: Res) = this()
@@ -643,5 +664,9 @@ object cades {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
 }

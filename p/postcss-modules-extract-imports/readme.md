@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-modules-extract-imports
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 A CSS Modules transform to extract local aliases for inline imports
@@ -11,9 +11,9 @@ A CSS Modules transform to extract local aliases for inline imports
 | Full name          | postcss-modules-extract-imports |
 | Keywords           | css-modules, postcss, plugin |
 | # releases         | 5 |
-| # dependents       | 116 |
-| # downloads        | 406615532 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 7.090139333333333E7 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](https://github.com/css-modules/postcss-modules-extract-imports)

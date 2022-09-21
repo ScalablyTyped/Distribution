@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/Node/index", "NodeMaterialBlock")
 @js.native
-class NodeMaterialBlock protected ()
+open class NodeMaterialBlock protected ()
   extends typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock {
   /**
     * Creates a new NodeMaterialBlock

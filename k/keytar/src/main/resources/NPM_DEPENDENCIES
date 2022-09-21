@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "keytar" : "7.2.0"
+      "keytar" : "7.9.0"
     }
   ],
   "test-dependencies" : [
     {
-      "keytar" : "7.2.0"
+      "keytar" : "7.9.0"
     }
   ],
   "compile-devDependencies" : [

@@ -7,6 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object carbonIconsReactStrings {
   
   @js.native
+  sealed trait `16` extends StObject
+  inline def `16`: `16` = "16".asInstanceOf[`16`]
+  
+  @js.native
+  sealed trait `20` extends StObject
+  inline def `20`: `20` = "20".asInstanceOf[`20`]
+  
+  @js.native
+  sealed trait `24` extends StObject
+  inline def `24`: `24` = "24".asInstanceOf[`24`]
+  
+  @js.native
+  sealed trait `32` extends StObject
+  inline def `32`: `32` = "32".asInstanceOf[`32`]
+  
+  @js.native
   sealed trait _empty extends StObject
   inline def _empty: _empty = "".asInstanceOf[_empty]
   
@@ -97,6 +113,10 @@ object carbonIconsReactStrings {
   @js.native
   sealed trait execute extends StObject
   inline def execute: execute = "execute".asInstanceOf[execute]
+  
+  @js.native
+  sealed trait glyph extends StObject
+  inline def glyph: glyph = "glyph".asInstanceOf[glyph]
   
   @js.native
   sealed trait grammar extends StObject

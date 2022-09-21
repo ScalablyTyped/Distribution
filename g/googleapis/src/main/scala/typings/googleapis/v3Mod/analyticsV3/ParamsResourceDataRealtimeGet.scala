@@ -1,9 +1,5 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,25 +9,17 @@ trait ParamsResourceDataRealtimeGet
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * A comma-separated list of real time dimensions. E.g.,
-    * 'rt:medium,rt:city'.
+    * A comma-separated list of real time dimensions. E.g., 'rt:medium,rt:city'.
     */
   var dimensions: js.UndefOr[String] = js.undefined
   
   /**
-    * A comma-separated list of dimension or metric filters to be applied to
-    * real time data.
+    * A comma-separated list of dimension or metric filters to be applied to real time data.
     */
   var filters: js.UndefOr[String] = js.undefined
   
   /**
-    * Unique table ID for retrieving real time data. Table ID is of the form
-    * ga:XXXX, where XXXX is the Analytics view (profile) ID.
+    * Unique table ID for retrieving real time data. Table ID is of the form ga:XXXX, where XXXX is the Analytics view (profile) ID.
     */
   var ids: js.UndefOr[String] = js.undefined
   
@@ -41,14 +29,12 @@ trait ParamsResourceDataRealtimeGet
   var `max-results`: js.UndefOr[Double] = js.undefined
   
   /**
-    * A comma-separated list of real time metrics. E.g., 'rt:activeUsers'. At
-    * least one metric must be specified.
+    * A comma-separated list of real time metrics. E.g., 'rt:activeUsers'. At least one metric must be specified.
     */
   var metrics: js.UndefOr[String] = js.undefined
   
   /**
-    * A comma-separated list of dimensions or metrics that determine the sort
-    * order for real time data.
+    * A comma-separated list of dimensions or metrics that determine the sort order for real time data.
     */
   var sort: js.UndefOr[String] = js.undefined
 }
@@ -60,10 +46,6 @@ object ParamsResourceDataRealtimeGet {
   }
   
   extension [Self <: ParamsResourceDataRealtimeGet](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDimensions(value: String): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     

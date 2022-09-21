@@ -23,6 +23,6 @@ object AgentQueuesEvent {
     
     inline def setQueues(value: js.Array[TaskAgentQueue]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
     
-    inline def setQueuesVarargs(value: TaskAgentQueue*): Self = StObject.set(x, "queues", js.Array(value :_*))
+    inline def setQueuesVarargs(value: TaskAgentQueue*): Self = StObject.set(x, "queues", js.Array(value*))
   }
 }

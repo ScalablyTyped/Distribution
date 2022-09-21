@@ -33,7 +33,7 @@ object GetNodesForSubtreeByStyleRequest {
     
     inline def setComputedStyles(value: js.Array[CSSComputedStyleProperty]): Self = StObject.set(x, "computedStyles", value.asInstanceOf[js.Any])
     
-    inline def setComputedStylesVarargs(value: CSSComputedStyleProperty*): Self = StObject.set(x, "computedStyles", js.Array(value :_*))
+    inline def setComputedStylesVarargs(value: CSSComputedStyleProperty*): Self = StObject.set(x, "computedStyles", js.Array(value*))
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     

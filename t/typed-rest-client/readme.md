@@ -1,7 +1,7 @@
 
 # Scala.js typings for typed-rest-client
 
-Typings are for version 1.8.0
+Typings are for version 1.8.9
 
 ## Library description:
 Node Rest and Http Clients for use with TypeScript
@@ -10,10 +10,10 @@ Node Rest and Http Clients for use with TypeScript
 | ------------------ | :-------------: |
 | Full name          | typed-rest-client |
 | Keywords           | rest, http, client, typescript, node |
-| # releases         | 9 |
-| # dependents       | 88 |
-| # downloads        | 8005960 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1358484.0 |
+| # stars            | 598.0 |
 
 ## Links
 - [Homepage](https://github.com/Microsoft/typed-rest-client#readme)

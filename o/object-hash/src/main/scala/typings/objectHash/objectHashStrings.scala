@@ -26,6 +26,10 @@ object objectHashStrings {
   inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
+  sealed trait buffer extends StObject
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
+  
+  @js.native
   sealed trait hex
     extends StObject
        with BufferEncoding
@@ -36,6 +40,18 @@ object objectHashStrings {
     extends StObject
        with BufferEncoding
   inline def latin1: latin1 = "latin1".asInstanceOf[latin1]
+  
+  @js.native
+  sealed trait md5 extends StObject
+  inline def md5: md5 = "md5".asInstanceOf[md5]
+  
+  @js.native
+  sealed trait passthrough extends StObject
+  inline def passthrough: passthrough = "passthrough".asInstanceOf[passthrough]
+  
+  @js.native
+  sealed trait sha1 extends StObject
+  inline def sha1: sha1 = "sha1".asInstanceOf[sha1]
   
   @js.native
   sealed trait `ucs-2`

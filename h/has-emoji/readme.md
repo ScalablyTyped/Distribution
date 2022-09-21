@@ -1,7 +1,7 @@
 
 # Scala.js typings for has-emoji
 
-Typings are for version 1.1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Check whether a string has any emoji
@@ -11,9 +11,9 @@ Check whether a string has any emoji
 | Full name          | has-emoji |
 | Keywords           | emoji, emojis, string, text, has, contains, includes, detect, is |
 | # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 45529 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2038.0 |
+| # stars            | 102.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/has-emoji#readme)

@@ -20,9 +20,7 @@ import typings.graygelf.graygelfStrings.error
 import typings.graygelf.graygelfStrings.gzip
 import typings.graygelf.graygelfStrings.message
 import typings.node.dgramMod.Socket
-import typings.std.Error
 import typings.std.Event
-import typings.std.Uint8Array
 import typings.through.mod.ThroughStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,7 +38,7 @@ object mod {
   
   @JSImport("graygelf", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with typings.graygelf.mod.graygelf {
     def this(setup: typings.graygelf.mod.setup) = this()
@@ -244,70 +242,20 @@ object mod {
     /**
       * Build a Gelf Message
       */
-    @JSName("_prepGelf")
-    def _prepGelf_0(level: `0`, short: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_0(level: `0`, short: String, long: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_0(level: `0`, short: String, long: String, fields: StringDictionary[String]): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_0(level: `0`, short: String, long: Unit, fields: StringDictionary[String]): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_1(level: `1`, short: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_1(level: `1`, short: String, long: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_1(level: `1`, short: String, long: String, fields: StringDictionary[String]): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_1(level: `1`, short: String, long: Unit, fields: StringDictionary[String]): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_2(level: `2`, short: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_2(level: `2`, short: String, long: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_2(level: `2`, short: String, long: String, fields: StringDictionary[String]): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_2(level: `2`, short: String, long: Unit, fields: StringDictionary[String]): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_3(level: `3`, short: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_3(level: `3`, short: String, long: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_3(level: `3`, short: String, long: String, fields: StringDictionary[String]): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_3(level: `3`, short: String, long: Unit, fields: StringDictionary[String]): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_4(level: `4`, short: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_4(level: `4`, short: String, long: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_4(level: `4`, short: String, long: String, fields: StringDictionary[String]): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_4(level: `4`, short: String, long: Unit, fields: StringDictionary[String]): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_5(level: `5`, short: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_5(level: `5`, short: String, long: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_5(level: `5`, short: String, long: String, fields: StringDictionary[String]): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_5(level: `5`, short: String, long: Unit, fields: StringDictionary[String]): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_6(level: `6`, short: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_6(level: `6`, short: String, long: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_6(level: `6`, short: String, long: String, fields: StringDictionary[String]): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_6(level: `6`, short: String, long: Unit, fields: StringDictionary[String]): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_7(level: `7`, short: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_7(level: `7`, short: String, long: String): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_7(level: `7`, short: String, long: String, fields: StringDictionary[String]): GelfMessage = js.native
-    @JSName("_prepGelf")
-    def _prepGelf_7(level: `7`, short: String, long: Unit, fields: StringDictionary[String]): GelfMessage = js.native
+    def _prepGelf(level: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7`, short: String): GelfMessage = js.native
+    def _prepGelf(level: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7`, short: String, long: String): GelfMessage = js.native
+    def _prepGelf(
+      level: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7`,
+      short: String,
+      long: String,
+      fields: StringDictionary[String]
+    ): GelfMessage = js.native
+    def _prepGelf(
+      level: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7`,
+      short: String,
+      long: Unit,
+      fields: StringDictionary[String]
+    ): GelfMessage = js.native
     
     /**
       * send a gelf message
@@ -320,9 +268,9 @@ object mod {
     var _udp: js.UndefOr[Socket] = js.native
     
     def alert(short_message: String, args: String*): GelfMessage = js.native
-    def alert(short_message: Error, args: String*): GelfMessage = js.native
+    def alert(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("alert")
-    var alert_Original: (js.Function2[/* short_message */ String | Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var alert_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
     
     /**
       * Should always compress
@@ -346,29 +294,29 @@ object mod {
     var compressType: deflate | gzip = js.native
     
     def crit(short_message: String, args: String*): GelfMessage = js.native
-    def crit(short_message: Error, args: String*): GelfMessage = js.native
+    def crit(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("crit")
-    var crit_Original: (js.Function2[/* short_message */ String | Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var crit_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
     
     def debug(short_message: String, args: String*): GelfMessage = js.native
-    def debug(short_message: Error, args: String*): GelfMessage = js.native
+    def debug(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("debug")
-    var debug_Original: (js.Function2[/* short_message */ String | Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var debug_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
     
     def emerg(short_message: String, args: String*): GelfMessage = js.native
-    def emerg(short_message: Error, args: String*): GelfMessage = js.native
+    def emerg(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("emerg")
-    var emerg_Original: (js.Function2[/* short_message */ String | Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var emerg_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
     
     def err(short_message: String, args: String*): GelfMessage = js.native
-    def err(short_message: Error, args: String*): GelfMessage = js.native
+    def err(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("err")
-    var err_Original: (js.Function2[/* short_message */ String | Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var err_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
     
     def error(short_message: String, args: String*): GelfMessage = js.native
-    def error(short_message: Error, args: String*): GelfMessage = js.native
+    def error(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("error")
-    var error_Original: (js.Function2[/* short_message */ String | Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var error_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
     
     /**
       * Setup global custom fields to be passed with every message
@@ -390,14 +338,14 @@ object mod {
     var graylogPort: String = js.native
     
     def info(short_message: String, args: String*): GelfMessage = js.native
-    def info(short_message: Error, args: String*): GelfMessage = js.native
+    def info(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("info")
-    var info_Original: (js.Function2[/* short_message */ String | Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var info_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
     
     def notice(short_message: String, args: String*): GelfMessage = js.native
-    def notice(short_message: Error, args: String*): GelfMessage = js.native
+    def notice(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("notice")
-    var notice_Original: (js.Function2[/* short_message */ String | Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var notice_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
     
     def on(evt: Event): Unit = js.native
     @JSName("on")
@@ -408,9 +356,9 @@ object mod {
     var once_Original: typings.std.EventListener = js.native
     
     def panic(short_message: String, args: String*): GelfMessage = js.native
-    def panic(short_message: Error, args: String*): GelfMessage = js.native
+    def panic(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("panic")
-    var panic_Original: (js.Function2[/* short_message */ String | Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var panic_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
     
     /**
       * Send a complete custom GELF message.
@@ -426,20 +374,20 @@ object mod {
     def stream(name: String): ThroughStream = js.native
     
     def warn(short_message: String, args: String*): GelfMessage = js.native
-    def warn(short_message: Error, args: String*): GelfMessage = js.native
+    def warn(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("warn")
-    var warn_Original: (js.Function2[/* short_message */ String | Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var warn_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
     
     def warning(short_message: String, args: String*): GelfMessage = js.native
-    def warning(short_message: Error, args: String*): GelfMessage = js.native
+    def warning(short_message: js.Error, args: String*): GelfMessage = js.native
     @JSName("warning")
-    var warning_Original: (js.Function2[/* short_message */ String | Error, /* repeated */ String, GelfMessage]) & A = js.native
+    var warning_Original: (js.Function2[/* short_message */ String | js.Error, /* repeated */ String, GelfMessage]) & A = js.native
     
     /**
       * send udp message
       */
     def write(msg: String): Unit = js.native
-    def write(msg: Uint8Array): Unit = js.native
+    def write(msg: js.typedarray.Uint8Array): Unit = js.native
   }
   
   @js.native

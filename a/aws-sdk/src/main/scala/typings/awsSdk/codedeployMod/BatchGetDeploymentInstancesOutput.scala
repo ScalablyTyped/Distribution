@@ -33,6 +33,6 @@ object BatchGetDeploymentInstancesOutput {
     
     inline def setInstancesSummaryUndefined: Self = StObject.set(x, "instancesSummary", js.undefined)
     
-    inline def setInstancesSummaryVarargs(value: InstanceSummary*): Self = StObject.set(x, "instancesSummary", js.Array(value :_*))
+    inline def setInstancesSummaryVarargs(value: InstanceSummary*): Self = StObject.set(x, "instancesSummary", js.Array(value*))
   }
 }

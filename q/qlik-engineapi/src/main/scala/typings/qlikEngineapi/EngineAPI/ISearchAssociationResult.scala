@@ -53,19 +53,19 @@ object ISearchAssociationResult {
     
     inline def setQFieldDictionaries(value: js.Array[ISearchFieldDictionary]): Self = StObject.set(x, "qFieldDictionaries", value.asInstanceOf[js.Any])
     
-    inline def setQFieldDictionariesVarargs(value: ISearchFieldDictionary*): Self = StObject.set(x, "qFieldDictionaries", js.Array(value :_*))
+    inline def setQFieldDictionariesVarargs(value: ISearchFieldDictionary*): Self = StObject.set(x, "qFieldDictionaries", js.Array(value*))
     
     inline def setQFieldNames(value: js.Array[String]): Self = StObject.set(x, "qFieldNames", value.asInstanceOf[js.Any])
     
-    inline def setQFieldNamesVarargs(value: String*): Self = StObject.set(x, "qFieldNames", js.Array(value :_*))
+    inline def setQFieldNamesVarargs(value: String*): Self = StObject.set(x, "qFieldNames", js.Array(value*))
     
     inline def setQSearchTerms(value: js.Array[String]): Self = StObject.set(x, "qSearchTerms", value.asInstanceOf[js.Any])
     
     inline def setQSearchTermsMatched(value: js.Array[ISearchMatchCombinations]): Self = StObject.set(x, "qSearchTermsMatched", value.asInstanceOf[js.Any])
     
-    inline def setQSearchTermsMatchedVarargs(value: ISearchMatchCombinations*): Self = StObject.set(x, "qSearchTermsMatched", js.Array(value :_*))
+    inline def setQSearchTermsMatchedVarargs(value: ISearchMatchCombinations*): Self = StObject.set(x, "qSearchTermsMatched", js.Array(value*))
     
-    inline def setQSearchTermsVarargs(value: String*): Self = StObject.set(x, "qSearchTerms", js.Array(value :_*))
+    inline def setQSearchTermsVarargs(value: String*): Self = StObject.set(x, "qSearchTerms", js.Array(value*))
     
     inline def setQTotalSearchResults(value: Double): Self = StObject.set(x, "qTotalSearchResults", value.asInstanceOf[js.Any])
   }

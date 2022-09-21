@@ -8,5 +8,5 @@ object errorMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_Error", "_Error")
   @js.native
-  val Error: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Error: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

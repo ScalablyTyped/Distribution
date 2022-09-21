@@ -13,11 +13,11 @@ object splitPropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[P /* <: Dictionary[js.Any] */, K /* <: /* keyof P */ String */](props: P, keys: js.Array[K]): SplitProps[P, K] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[SplitProps[P, K]]
+  inline def default[P /* <: Dictionary[Any] */, K /* <: /* keyof P */ String */](props: P, keys: js.Array[K]): SplitProps[P, K] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[SplitProps[P, K]]
   
   type Dictionary[T] = StringDictionary[T]
   
-  type Omit[T /* <: Dictionary[js.Any] */, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
+  type Omit[T /* <: Dictionary[Any] */, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
   trait SplitProps[P, K /* <: /* keyof P */ String */] extends StObject {
     

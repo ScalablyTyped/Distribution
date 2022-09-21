@@ -2,7 +2,6 @@ package typings.microsoftAjax.Sys
 
 import typings.microsoftAjax.Sys.Net.WebRequest
 import typings.microsoftAjax.Sys.Net.WebRequestExecutor
-import typings.std.Error
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -29,7 +28,6 @@ object WebForms {
     //#region Properties
     /**
       * Gets the postback element that initiated the asynchronous postback. This property is read-only.
-      * @readonly
       * @return An HTML DOM element.
       */
     def get_postBackElement(): HTMLElement
@@ -84,13 +82,13 @@ object WebForms {
       * The JavaScript Error object exposes several properties that define the error. The Microsoft Ajax Library provides additional functions for the Error object.
       * @return A JSON data structure that contains name/value pairs that were registered as data items by using the RegisterDataItem method of the ScriptManager class.
       */
-    def get_dataItems(): js.Any
+    def get_dataItems(): Any
     
     /**
       * Gets the Error object.
       * @return A base ECMAScript (JavaScript) Error object.
       */
-    def get_error(): Error
+    def get_error(): js.Error
     
     /**
       * Get or sets a value that indicates whether the error has been handled.
@@ -117,8 +115,8 @@ object WebForms {
     
     inline def apply(
       Empty: EventArgs,
-      get_dataItems: () => js.Any,
-      get_error: () => Error,
+      get_dataItems: () => Any,
+      get_error: () => js.Error,
       get_errorHandled: () => Boolean,
       get_response: () => WebRequestExecutor,
       set_errorHandled: Boolean => Unit
@@ -129,9 +127,9 @@ object WebForms {
     
     extension [Self <: EndRequestEventArgs](x: Self) {
       
-      inline def setGet_dataItems(value: () => js.Any): Self = StObject.set(x, "get_dataItems", js.Any.fromFunction0(value))
+      inline def setGet_dataItems(value: () => Any): Self = StObject.set(x, "get_dataItems", js.Any.fromFunction0(value))
       
-      inline def setGet_error(value: () => Error): Self = StObject.set(x, "get_error", js.Any.fromFunction0(value))
+      inline def setGet_error(value: () => js.Error): Self = StObject.set(x, "get_error", js.Any.fromFunction0(value))
       
       inline def setGet_errorHandled(value: () => Boolean): Self = StObject.set(x, "get_errorHandled", js.Any.fromFunction0(value))
       
@@ -211,7 +209,7 @@ object WebForms {
       *
       * @return A JSON data structure that contains name/value pairs that were registered as data items that use the RegisterDataItem method of the ScriptManager class.
       */
-    def get_dataItems(): js.Any
+    def get_dataItems(): Any
     
     /**
       * Gets an array of HTML div elements that represent UpdatePanel controls that were created when the DOM was updated during the last asynchronous postback.
@@ -233,7 +231,7 @@ object WebForms {
     
     inline def apply(
       Empty: EventArgs,
-      get_dataItems: () => js.Any,
+      get_dataItems: () => Any,
       get_panelsCreated: () => js.Array[HTMLDivElement],
       get_panelsUpdated: () => js.Array[HTMLDivElement]
     ): PageLoadedEventArgs = {
@@ -243,7 +241,7 @@ object WebForms {
     
     extension [Self <: PageLoadedEventArgs](x: Self) {
       
-      inline def setGet_dataItems(value: () => js.Any): Self = StObject.set(x, "get_dataItems", js.Any.fromFunction0(value))
+      inline def setGet_dataItems(value: () => Any): Self = StObject.set(x, "get_dataItems", js.Any.fromFunction0(value))
       
       inline def setGet_panelsCreated(value: () => js.Array[HTMLDivElement]): Self = StObject.set(x, "get_panelsCreated", js.Any.fromFunction0(value))
       
@@ -269,7 +267,7 @@ object WebForms {
       * The name is the unique ID of the control that is used in the control parameter of the RegisterDataItem method. The value is the dataItem parameter of the RegisterDataItem method.
       * @return A JSON data structure that contains name/value pairs that were registered as data items by using the RegisterDataItem method of the ScriptManager class.
       */
-    def get_dataItems(): js.Any
+    def get_dataItems(): Any
     
     /**
       * Gets an array of HTML <div> elements that represent UpdatePanel controls that will be deleted from the DOM as a result of the current asynchronous postback.
@@ -291,7 +289,7 @@ object WebForms {
     
     inline def apply(
       Empty: EventArgs,
-      get_dataItems: () => js.Any,
+      get_dataItems: () => Any,
       get_panelsDeleting: () => js.Array[HTMLDivElement],
       get_panelsUpdating: () => js.Array[HTMLDivElement]
     ): PageLoadingEventArgs = {
@@ -301,7 +299,7 @@ object WebForms {
     
     extension [Self <: PageLoadingEventArgs](x: Self) {
       
-      inline def setGet_dataItems(value: () => js.Any): Self = StObject.set(x, "get_dataItems", js.Any.fromFunction0(value))
+      inline def setGet_dataItems(value: () => Any): Self = StObject.set(x, "get_dataItems", js.Any.fromFunction0(value))
       
       inline def setGet_panelsDeleting(value: () => js.Array[HTMLDivElement]): Self = StObject.set(x, "get_panelsDeleting", js.Any.fromFunction0(value))
       
@@ -329,14 +327,14 @@ object WebForms {
       * @param beginRequestHandler
       *               The name of the handler method that will be called.
       */
-    def add_beginRequest(beginRequestHandler: js.Function2[/* sender */ js.Any, /* args */ BeginRequestEventArgs, Unit]): Unit = js.native
+    def add_beginRequest(beginRequestHandler: js.Function2[/* sender */ Any, /* args */ BeginRequestEventArgs, Unit]): Unit = js.native
     
     /**
       * Raised after an asynchronous postback is finished and control has been returned to the browser.
       * @param endRequestHandler
       *               The name of the handler method that will be called.
       */
-    def add_endRequest(endRequestHandler: js.Function2[/* sender */ js.Any, /* args */ EndRequestEventArgs, Unit]): Unit = js.native
+    def add_endRequest(endRequestHandler: js.Function2[/* sender */ Any, /* args */ EndRequestEventArgs, Unit]): Unit = js.native
     
     /**
       * Raised during the initialization of the asynchronous postback.
@@ -344,7 +342,7 @@ object WebForms {
       *               The name of the handler method that will be called.
       */
     def add_initializeRequest(
-      initializeRequestHandler: js.Function2[/* sender */ js.Any, /* args */ InitializeRequestEventArgs, Unit]
+      initializeRequestHandler: js.Function2[/* sender */ Any, /* args */ InitializeRequestEventArgs, Unit]
     ): Unit = js.native
     
     /**
@@ -352,14 +350,14 @@ object WebForms {
       * @param pageLoadedHandler
       *               The name of the handler method that will be called.
       */
-    def add_pageLoaded(pageLoadedHandler: js.Function2[/* sender */ js.Any, /* args */ PageLoadedEventArgs, Unit]): Unit = js.native
+    def add_pageLoaded(pageLoadedHandler: js.Function2[/* sender */ Any, /* args */ PageLoadedEventArgs, Unit]): Unit = js.native
     
     /**
       * Raised after the response from the server to an asynchronous postback is received but before any content on the page is updated.
       * @param pageLoadedHandler
       *               The name of the handler method that will be called.
       */
-    def add_pageLoading(pageLoadingHandler: js.Function2[/* sender */ js.Any, /* args */ PageLoadingEventArgs, Unit]): Unit = js.native
+    def add_pageLoading(pageLoadingHandler: js.Function2[/* sender */ Any, /* args */ PageLoadingEventArgs, Unit]): Unit = js.native
     
     /**
       * Begins an asynchronous postback.
@@ -546,7 +544,7 @@ object WebForms {
       * @param endRequestHandler
       *               The name of the handler method that will be removed.
       */
-    def remove_endRequest(endRequestHandler: js.Function2[/* sender */ js.Any, /* args */ EndRequestEventArgs, Unit]): Unit = js.native
+    def remove_endRequest(endRequestHandler: js.Function2[/* sender */ Any, /* args */ EndRequestEventArgs, Unit]): Unit = js.native
     
     /**
       * Raised during the initialization of the asynchronous postback.
@@ -554,7 +552,7 @@ object WebForms {
       *               The name of the handler method that will be called.
       */
     def remove_initializeRequest(
-      initializeRequestHandler: js.Function2[/* sender */ js.Any, /* args */ InitializeRequestEventArgs, Unit]
+      initializeRequestHandler: js.Function2[/* sender */ Any, /* args */ InitializeRequestEventArgs, Unit]
     ): Unit = js.native
     
     /**
@@ -562,14 +560,14 @@ object WebForms {
       * @param pageLoadedHandler
       *               The name of the handler method that will be called.
       */
-    def remove_pageLoaded(pageLoadedHandler: js.Function2[/* sender */ js.Any, /* args */ PageLoadedEventArgs, Unit]): Unit = js.native
+    def remove_pageLoaded(pageLoadedHandler: js.Function2[/* sender */ Any, /* args */ PageLoadedEventArgs, Unit]): Unit = js.native
     
     /**
       * Raised after the response from the server to an asynchronous postback is received but before any content on the page is updated.
       * @param pageLoadedHandler
       *               The name of the handler method that will be called.
       */
-    def remove_pageLoading(pageLoadingHandler: js.Function2[/* sender */ js.Any, /* args */ PageLoadingEventArgs, Unit]): Unit = js.native
+    def remove_pageLoading(pageLoadingHandler: js.Function2[/* sender */ Any, /* args */ PageLoadingEventArgs, Unit]): Unit = js.native
   }
   
   //#region Exceptions: Defines exceptions that can occur during partial-page updates.

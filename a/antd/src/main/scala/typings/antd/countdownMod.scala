@@ -18,7 +18,7 @@ object countdownMod {
   
   @JSImport("antd/lib/statistic/Countdown", JSImport.Default)
   @js.native
-  class default () extends Countdown
+  open class default () extends Countdown
   object default {
     
     /* static member */
@@ -58,6 +58,11 @@ object countdownMod {
       @js.native
       def loading: js.UndefOr[Boolean] = js.native
       inline def loading_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loading")(x.asInstanceOf[js.Any])
+      
+      @JSImport("antd/lib/statistic/Countdown", "default.defaultProps.onChange")
+      @js.native
+      def onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[countdownValueType], Unit]] = js.native
+      inline def onChange_=(x: js.UndefOr[js.Function1[/* value */ js.UndefOr[countdownValueType], Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChange")(x.asInstanceOf[js.Any])
       
       @JSImport("antd/lib/statistic/Countdown", "default.defaultProps.onFinish")
       @js.native
@@ -125,7 +130,7 @@ object countdownMod {
   
   @js.native
   trait Countdown
-    extends Component[CountdownProps, js.Object, js.Any] {
+    extends Component[CountdownProps, js.Object, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MCountdown(): Unit = js.native
@@ -155,6 +160,8 @@ object countdownMod {
     
     var format: js.UndefOr[String] = js.undefined
     
+    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[countdownValueType], Unit]] = js.undefined
+    
     var onFinish: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     @JSName("value")
@@ -172,6 +179,10 @@ object countdownMod {
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      
+      inline def setOnChange(value: /* value */ js.UndefOr[countdownValueType] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       inline def setOnFinish(value: () => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction0(value))
       

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-webrtc", "MediaStream")
 @js.native
-class MediaStream protected () extends StObject {
-  def this(arg: js.Any) = this()
+open class MediaStream protected () extends StObject {
+  def this(arg: Any) = this()
   
   /* private */ var _reactTag: String = js.native
   

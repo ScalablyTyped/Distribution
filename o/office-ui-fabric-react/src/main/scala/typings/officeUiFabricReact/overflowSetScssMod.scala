@@ -8,13 +8,13 @@ object overflowSetScssMod {
   
   @JSImport("office-ui-fabric-react/lib/components/OverflowSet/OverflowSet.scss", "item")
   @js.native
-  val item: /* "item_5d434f3b" */ String = js.native
+  val item: /* "item_8f3a2b52" */ String = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/OverflowSet/OverflowSet.scss", "root")
   @js.native
-  val root: /* "root_5d434f3b" */ String = js.native
+  val root: /* "root_8f3a2b52" */ String = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/OverflowSet/OverflowSet.scss", "rootVertical")
   @js.native
-  val rootVertical: /* "rootVertical_5d434f3b" */ String = js.native
+  val rootVertical: /* "rootVertical_8f3a2b52" */ String = js.native
 }

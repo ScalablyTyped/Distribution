@@ -8,13 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Date")
 @js.native
-class Date ()
+/* standard es5 */
+open class Date ()
   extends StObject
      with typings.std.Date {
   def this(value: java.lang.String) = this()
+  def this(value: js.Date) = this()
+  /* standard es2015.core */
   def this(value: Double) = this()
-  def this(value: typings.std.Date) = this()
+  /* standard scripthost */
   def this(vd: typings.std.VarDate) = this()
+  /* standard es5 */
   def this(year: Double, month: Double) = this()
   def this(year: Double, month: Double, date: Double) = this()
   def this(year: Double, month: Double, date: Double, hours: Double) = this()

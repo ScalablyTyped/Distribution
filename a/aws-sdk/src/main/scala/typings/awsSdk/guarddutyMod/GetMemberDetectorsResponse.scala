@@ -30,10 +30,10 @@ object GetMemberDetectorsResponse {
     
     inline def setMemberDataSourceConfigurations(value: MemberDataSourceConfigurations): Self = StObject.set(x, "MemberDataSourceConfigurations", value.asInstanceOf[js.Any])
     
-    inline def setMemberDataSourceConfigurationsVarargs(value: MemberDataSourceConfiguration*): Self = StObject.set(x, "MemberDataSourceConfigurations", js.Array(value :_*))
+    inline def setMemberDataSourceConfigurationsVarargs(value: MemberDataSourceConfiguration*): Self = StObject.set(x, "MemberDataSourceConfigurations", js.Array(value*))
     
     inline def setUnprocessedAccounts(value: UnprocessedAccounts): Self = StObject.set(x, "UnprocessedAccounts", value.asInstanceOf[js.Any])
     
-    inline def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value :_*))
+    inline def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value*))
   }
 }

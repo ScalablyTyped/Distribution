@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NavigationPreloadState extends StObject {
   
+  /* standard dom */
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var headerValue: js.UndefOr[java.lang.String] = js.undefined
 }
 object NavigationPreloadState {

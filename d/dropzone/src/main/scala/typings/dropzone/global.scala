@@ -4,7 +4,6 @@ import typings.dropzone.mod.DropzoneOptions
 import typings.dropzone.mod.global.HTMLElement
 import typings.std.Blob
 import typings.std.File
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object global {
     
     @JSGlobal("Dropzone")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.dropzone.mod.^ {
       def this(container: String) = this()
       def this(container: HTMLElement) = this()
@@ -84,8 +83,8 @@ object global {
     /* static member */
     @JSGlobal("Dropzone.blacklistedBrowsers")
     @js.native
-    def blacklistedBrowsers: js.Array[RegExp] = js.native
-    inline def blacklistedBrowsers_=(x: js.Array[RegExp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blacklistedBrowsers")(x.asInstanceOf[js.Any])
+    def blacklistedBrowsers: js.Array[js.RegExp] = js.native
+    inline def blacklistedBrowsers_=(x: js.Array[js.RegExp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blacklistedBrowsers")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("Dropzone.confirm")

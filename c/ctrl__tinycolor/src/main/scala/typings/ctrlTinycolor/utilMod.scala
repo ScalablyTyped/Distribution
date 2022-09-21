@@ -10,7 +10,7 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def bound01(n: js.Any, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bound01")(n.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def bound01(n: Any, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bound01")(n.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def boundAlpha(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("boundAlpha")().asInstanceOf[Double]
   inline def boundAlpha(a: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("boundAlpha")(a.asInstanceOf[js.Any]).asInstanceOf[Double]

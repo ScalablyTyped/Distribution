@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SortOrder")
 @js.native
-class SortOrder () extends StObject
+open class SortOrder () extends StObject

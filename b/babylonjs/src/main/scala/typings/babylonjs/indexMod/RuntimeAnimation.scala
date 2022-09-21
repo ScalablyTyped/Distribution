@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "RuntimeAnimation")
 @js.native
-class RuntimeAnimation protected ()
+open class RuntimeAnimation protected ()
   extends typings.babylonjs.animationsIndexMod.RuntimeAnimation {
   /**
     * Create a new RuntimeAnimation object
@@ -16,7 +16,7 @@ class RuntimeAnimation protected ()
     * @param host defines the initiating Animatable
     */
   def this(
-    target: js.Any,
+    target: Any,
     animation: typings.babylonjs.animationMod.Animation,
     scene: typings.babylonjs.sceneMod.Scene,
     host: typings.babylonjs.animatableMod.Animatable

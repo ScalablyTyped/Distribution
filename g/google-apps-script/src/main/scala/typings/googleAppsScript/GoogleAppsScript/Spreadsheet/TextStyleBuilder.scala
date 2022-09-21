@@ -20,6 +20,8 @@ trait TextStyleBuilder extends StObject {
   
   def setForegroundColor(cssString: String): TextStyleBuilder
   
+  def setForegroundColorObject(color: Color): TextStyleBuilder
+  
   def setItalic(italic: Boolean): TextStyleBuilder
   
   def setStrikethrough(strikethrough: Boolean): TextStyleBuilder
@@ -34,11 +36,12 @@ object TextStyleBuilder {
     setFontFamily: String => TextStyleBuilder,
     setFontSize: Integer => TextStyleBuilder,
     setForegroundColor: String => TextStyleBuilder,
+    setForegroundColorObject: Color => TextStyleBuilder,
     setItalic: Boolean => TextStyleBuilder,
     setStrikethrough: Boolean => TextStyleBuilder,
     setUnderline: Boolean => TextStyleBuilder
   ): TextStyleBuilder = {
-    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setBold = js.Any.fromFunction1(setBold), setFontFamily = js.Any.fromFunction1(setFontFamily), setFontSize = js.Any.fromFunction1(setFontSize), setForegroundColor = js.Any.fromFunction1(setForegroundColor), setItalic = js.Any.fromFunction1(setItalic), setStrikethrough = js.Any.fromFunction1(setStrikethrough), setUnderline = js.Any.fromFunction1(setUnderline))
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setBold = js.Any.fromFunction1(setBold), setFontFamily = js.Any.fromFunction1(setFontFamily), setFontSize = js.Any.fromFunction1(setFontSize), setForegroundColor = js.Any.fromFunction1(setForegroundColor), setForegroundColorObject = js.Any.fromFunction1(setForegroundColorObject), setItalic = js.Any.fromFunction1(setItalic), setStrikethrough = js.Any.fromFunction1(setStrikethrough), setUnderline = js.Any.fromFunction1(setUnderline))
     __obj.asInstanceOf[TextStyleBuilder]
   }
   
@@ -53,6 +56,8 @@ object TextStyleBuilder {
     inline def setSetFontSize(value: Integer => TextStyleBuilder): Self = StObject.set(x, "setFontSize", js.Any.fromFunction1(value))
     
     inline def setSetForegroundColor(value: String => TextStyleBuilder): Self = StObject.set(x, "setForegroundColor", js.Any.fromFunction1(value))
+    
+    inline def setSetForegroundColorObject(value: Color => TextStyleBuilder): Self = StObject.set(x, "setForegroundColorObject", js.Any.fromFunction1(value))
     
     inline def setSetItalic(value: Boolean => TextStyleBuilder): Self = StObject.set(x, "setItalic", js.Any.fromFunction1(value))
     

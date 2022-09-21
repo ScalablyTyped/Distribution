@@ -10,10 +10,10 @@ The lodash method `_.create` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.create |
 | Keywords           | lodash-modularized, create |
-| # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 22370242 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1020517.3333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

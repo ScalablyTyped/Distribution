@@ -8,14 +8,13 @@ import typings.googleCloudStorage.googleCloudStorageStrings.v4
 import typings.googleCloudStorage.googleCloudStorageStrings.write
 import typings.googleCloudStorage.signerMod.Query
 import typings.node.httpMod.OutgoingHttpHeaders
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GetSignedUrlConfig extends StObject {
   
-  var accessibleAt: js.UndefOr[String | Double | Date] = js.undefined
+  var accessibleAt: js.UndefOr[String | Double | js.Date] = js.undefined
   
   var action: read | write | delete_ | resumable
   
@@ -25,7 +24,7 @@ trait GetSignedUrlConfig extends StObject {
   
   var contentType: js.UndefOr[String] = js.undefined
   
-  var expires: String | Double | Date
+  var expires: String | Double | js.Date
   
   var extensionHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
   
@@ -43,14 +42,14 @@ trait GetSignedUrlConfig extends StObject {
 }
 object GetSignedUrlConfig {
   
-  inline def apply(action: read | write | delete_ | resumable, expires: String | Double | Date): GetSignedUrlConfig = {
+  inline def apply(action: read | write | delete_ | resumable, expires: String | Double | js.Date): GetSignedUrlConfig = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSignedUrlConfig]
   }
   
   extension [Self <: GetSignedUrlConfig](x: Self) {
     
-    inline def setAccessibleAt(value: String | Double | Date): Self = StObject.set(x, "accessibleAt", value.asInstanceOf[js.Any])
+    inline def setAccessibleAt(value: String | Double | js.Date): Self = StObject.set(x, "accessibleAt", value.asInstanceOf[js.Any])
     
     inline def setAccessibleAtUndefined: Self = StObject.set(x, "accessibleAt", js.undefined)
     
@@ -68,7 +67,7 @@ object GetSignedUrlConfig {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setExpires(value: String | Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: String | Double | js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     inline def setExtensionHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "extensionHeaders", value.asInstanceOf[js.Any])
     

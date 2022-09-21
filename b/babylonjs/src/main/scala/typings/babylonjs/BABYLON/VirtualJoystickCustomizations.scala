@@ -1,6 +1,6 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.anon.Y
+import typings.babylonjs.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ trait VirtualJoystickCustomizations extends StObject {
   /**
     * Defines the unmoving position of the joystick container
     */
-  var position: js.UndefOr[Y] = js.undefined
+  var position: js.UndefOr[X] = js.undefined
   
   /**
     * Image URL for the joystick's puck
@@ -78,7 +78,7 @@ object VirtualJoystickCustomizations {
     
     inline def setLimitToContainer(value: Boolean): Self = StObject.set(x, "limitToContainer", value.asInstanceOf[js.Any])
     
-    inline def setPosition(value: Y): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: X): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     

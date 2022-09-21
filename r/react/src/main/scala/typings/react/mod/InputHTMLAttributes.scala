@@ -2,11 +2,13 @@ package typings.react.mod
 
 import typings.react.reactStrings.done
 import typings.react.reactStrings.enter
+import typings.react.reactStrings.environment
 import typings.react.reactStrings.go
 import typings.react.reactStrings.next
 import typings.react.reactStrings.previous
 import typings.react.reactStrings.search
 import typings.react.reactStrings.send
+import typings.react.reactStrings.user
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +25,7 @@ trait InputHTMLAttributes[T]
   
   var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var capture: js.UndefOr[Boolean | String] = js.undefined
+  var capture: js.UndefOr[Boolean | user | environment] = js.undefined
   
   // https://www.w3.org/TR/html-media-capture/#the-capture-attribute
   var checked: js.UndefOr[Boolean] = js.undefined
@@ -77,7 +79,7 @@ trait InputHTMLAttributes[T]
   
   var step: js.UndefOr[Double | String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[HTMLInputTypeAttribute] = js.undefined
   
   var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
   
@@ -108,7 +110,7 @@ object InputHTMLAttributes {
     
     inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
-    inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
@@ -212,7 +214,7 @@ object InputHTMLAttributes {
     
     inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: HTMLInputTypeAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
@@ -220,7 +222,7 @@ object InputHTMLAttributes {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     
     inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

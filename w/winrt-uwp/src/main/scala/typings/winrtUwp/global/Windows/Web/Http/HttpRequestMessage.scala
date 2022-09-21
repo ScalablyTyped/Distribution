@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Web.Http.HttpRequestMessage")
 @js.native
 /** Initializes a new instance of the HttpRequestMessage class. */
-class HttpRequestMessage ()
+open class HttpRequestMessage ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.HttpRequestMessage {
   /**
@@ -40,7 +40,7 @@ class HttpRequestMessage ()
   
   /** Gets a set of properties on the HttpRequestMessage instance that are for use by the developer. */
   /* CompleteClass */
-  var properties: IMap[String, js.Any] = js.native
+  var properties: IMap[String, Any] = js.native
   
   /** Gets or sets the Uri used for the HttpRequestMessage object. */
   /* CompleteClass */

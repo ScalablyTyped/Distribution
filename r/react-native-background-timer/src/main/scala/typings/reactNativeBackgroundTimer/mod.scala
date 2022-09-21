@@ -27,8 +27,8 @@ object mod extends Shortcut {
     
     def setTimeout(callback: js.Function0[Unit], timeout: Double): TimeoutId = js.native
     
-    def start(): js.Any = js.native
-    def start(delay: Double): js.Any = js.native
+    def start(): Any = js.native
+    def start(delay: Double): Any = js.native
     
     def stop(): Unit = js.native
     

@@ -30,13 +30,13 @@ object ObjectTypeDefinition {
     
     inline def setFields(value: js.Array[FieldDefinition]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: FieldDefinition*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldDefinition*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setInterfaces(value: js.Array[NamedType]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
     
     inline def setInterfacesUndefined: Self = StObject.set(x, "interfaces", js.undefined)
     
-    inline def setInterfacesVarargs(value: NamedType*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
+    inline def setInterfacesVarargs(value: NamedType*): Self = StObject.set(x, "interfaces", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -13,7 +13,7 @@ trait BufferList[D /* <: Buffer */] extends StObject {
   
   var head: Entry[D]
   
-  def join(s: js.Any): String
+  def join(s: Any): String
   
   var length: Double
   
@@ -31,7 +31,7 @@ object BufferList {
     clear: () => Unit,
     concat: Double => D,
     head: Entry[D],
-    join: js.Any => String,
+    join: Any => String,
     length: Double,
     push: D => Unit,
     shift: () => D,
@@ -50,7 +50,7 @@ object BufferList {
     
     inline def setHead(value: Entry[D]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
-    inline def setJoin(value: js.Any => String): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
+    inline def setJoin(value: Any => String): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

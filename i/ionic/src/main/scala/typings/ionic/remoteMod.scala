@@ -10,7 +10,7 @@ object remoteMod {
   
   @JSImport("ionic/commands/git/remote", "GitRemoteCommand")
   @js.native
-  class GitRemoteCommand protected () extends Command {
+  open class GitRemoteCommand protected () extends Command {
     def this(namespace: INamespace) = this()
   }
 }

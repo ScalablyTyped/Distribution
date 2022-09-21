@@ -1,0 +1,22 @@
+package typings.stripe.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait TypeofCreditNotePreviewPa extends StObject {
+  
+  val Line: Any
+}
+object TypeofCreditNotePreviewPa {
+  
+  inline def apply(Line: Any): TypeofCreditNotePreviewPa = {
+    val __obj = js.Dynamic.literal(Line = Line.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeofCreditNotePreviewPa]
+  }
+  
+  extension [Self <: TypeofCreditNotePreviewPa](x: Self) {
+    
+    inline def setLine(value: Any): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
+  }
+}

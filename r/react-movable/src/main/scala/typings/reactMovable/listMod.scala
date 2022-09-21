@@ -4,13 +4,15 @@ import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.RefObject
 import typings.react.mod.WheelEvent
+import typings.reactMovable.anon.Call
+import typings.reactMovable.anon.CallCancel
+import typings.reactMovable.anon.Cancel
 import typings.reactMovable.anon.Canceled
 import typings.reactMovable.anon.InitialX
 import typings.reactMovable.anon.ScrollingSpeed
 import typings.reactMovable.typesMod.IProps
 import typings.reactMovable.typesMod.TEvent
 import typings.std.Element
-import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.TouchEvent
@@ -22,7 +24,7 @@ object listMod {
   
   @JSImport("react-movable/lib/List", JSImport.Default)
   @js.native
-  class default[Value] protected () extends List[Value] {
+  open class default[Value] protected () extends List[Value] {
     def this(props: IProps[Value]) = this()
   }
   object default {
@@ -58,7 +60,7 @@ object listMod {
   
   @js.native
   trait List[Value]
-    extends Component[IProps[Value], js.Object, js.Any] {
+    extends Component[IProps[Value], js.Object, Any] {
     
     var afterIndex: Double = js.native
     
@@ -73,7 +75,7 @@ object listMod {
     def componentDidMount_MList(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MList(_prevProps: js.Any, prevState: ScrollingSpeed): Unit = js.native
+    def componentDidUpdate_MList(_prevProps: Any, prevState: ScrollingSpeed): Unit = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MList(): Unit = js.native
@@ -126,11 +128,11 @@ object listMod {
     
     def onWheel(e: WheelEvent[Element]): Unit = js.native
     
-    def schdOnEnd(e: Event): Unit = js.native
+    var schdOnEnd: CallCancel = js.native
     
-    def schdOnMouseMove(e: MouseEvent): Unit = js.native
+    var schdOnMouseMove: Call = js.native
     
-    def schdOnTouchMove(e: TouchEvent): Unit = js.native
+    var schdOnTouchMove: Cancel = js.native
     
     @JSName("state")
     var state_List: InitialX = js.native

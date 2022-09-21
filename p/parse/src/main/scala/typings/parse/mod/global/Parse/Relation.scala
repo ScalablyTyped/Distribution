@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Parse.Relation")
 @js.native
-class Relation[S /* <: Object[Attributes] */, T /* <: Object[Attributes] */] () extends StObject {
+open class Relation[S /* <: Object[Attributes] */, T /* <: Object[Attributes] */] () extends StObject {
   def this(parent: S) = this()
   def this(parent: S, key: String) = this()
   def this(parent: Unit, key: String) = this()
@@ -32,5 +32,5 @@ class Relation[S /* <: Object[Attributes] */, T /* <: Object[Attributes] */] () 
   
   var targetClassName: String = js.native
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

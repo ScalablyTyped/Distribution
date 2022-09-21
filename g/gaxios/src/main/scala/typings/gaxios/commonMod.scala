@@ -17,7 +17,6 @@ import typings.gaxios.gaxiosStrings.stream
 import typings.gaxios.gaxiosStrings.text
 import typings.node.httpMod.Agent
 import typings.node.urlMod.URL_
-import typings.std.AbortSignal
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,7 +26,7 @@ object commonMod {
   
   @JSImport("gaxios/build/src/common", "GaxiosError")
   @js.native
-  class GaxiosError[T] protected ()
+  open class GaxiosError[T] protected ()
     extends StObject
        with Error {
     def this(message: String, options: GaxiosOptions, response: GaxiosResponse[T]) = this()
@@ -36,13 +35,119 @@ object commonMod {
     
     var config: GaxiosOptions = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
     var response: js.UndefOr[GaxiosResponse[T]] = js.native
+  }
+  
+  @js.native
+  trait FetchHeaders extends StObject {
+    
+    def append(name: String, value: String): Unit = js.native
+    
+    def delete(name: String): Unit = js.native
+    
+    def forEach(callbackfn: js.Function2[/* value */ String, /* key */ String, Unit]): Unit = js.native
+    def forEach(callbackfn: js.Function2[/* value */ String, /* key */ String, Unit], thisArg: Any): Unit = js.native
+    
+    def get(name: String): String | Null = js.native
+    
+    def has(name: String): Boolean = js.native
+    
+    def set(name: String, value: String): Unit = js.native
+  }
+  
+  type FetchImplementation = js.Function2[
+    /* input */ FetchRequestInfo, 
+    /* init */ js.UndefOr[FetchRequestInit], 
+    js.Promise[FetchResponse]
+  ]
+  
+  type FetchRequestInfo = Any
+  
+  trait FetchRequestInit extends StObject {
+    
+    var method: js.UndefOr[String] = js.undefined
+  }
+  object FetchRequestInit {
+    
+    inline def apply(): FetchRequestInit = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FetchRequestInit]
+    }
+    
+    extension [Self <: FetchRequestInit](x: Self) {
+      
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    }
+  }
+  
+  trait FetchResponse extends StObject {
+    
+    def arrayBuffer(): js.Promise[Any]
+    
+    def blob(): js.Promise[Any]
+    
+    val body: Any | Null
+    
+    val headers: FetchHeaders
+    
+    def json(): js.Promise[Any]
+    
+    val status: Double
+    
+    val statusText: String
+    
+    def text(): js.Promise[String]
+    
+    val url: String
+  }
+  object FetchResponse {
+    
+    inline def apply(
+      arrayBuffer: () => js.Promise[Any],
+      blob: () => js.Promise[Any],
+      headers: FetchHeaders,
+      json: () => js.Promise[Any],
+      status: Double,
+      statusText: String,
+      text: () => js.Promise[String],
+      url: String
+    ): FetchResponse = {
+      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), url = url.asInstanceOf[js.Any], body = null)
+      __obj.asInstanceOf[FetchResponse]
+    }
+    
+    extension [Self <: FetchResponse](x: Self) {
+      
+      inline def setArrayBuffer(value: () => js.Promise[Any]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+      
+      inline def setBlob(value: () => js.Promise[Any]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
+      
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
+      
+      inline def setHeaders(value: FetchHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setJson(value: () => js.Promise[Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      
+      inline def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
   }
   
   trait GaxiosOptions extends StObject {
@@ -54,8 +159,8 @@ object commonMod {
     var adapter: js.UndefOr[
         js.Function2[
           /* options */ this.type, 
-          /* defaultAdapter */ js.Function1[/* options */ this.type, GaxiosPromise[js.Any]], 
-          GaxiosPromise[js.Any]
+          /* defaultAdapter */ js.Function1[/* options */ this.type, GaxiosPromise[Any]], 
+          GaxiosPromise[Any]
         ]
       ] = js.undefined
     
@@ -65,13 +170,24 @@ object commonMod {
     
     var baseUrl: js.UndefOr[String] = js.undefined
     
-    var body: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[Any] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var cert: js.UndefOr[String] = js.undefined
+    
+    var data: js.UndefOr[Any] = js.undefined
+    
+    /**
+      * Implementation of `fetch` to use when making the API call. By default,
+      * will use the browser context if available, and fall back to `node-fetch`
+      * in node.js otherwise.
+      */
+    var fetchImplementation: js.UndefOr[FetchImplementation] = js.undefined
     
     var follow: js.UndefOr[Double] = js.undefined
     
     var headers: js.UndefOr[Headers] = js.undefined
+    
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * The maximum size of the http response content in bytes allowed.
@@ -85,9 +201,12 @@ object commonMod {
     
     var method: js.UndefOr[GET | HEAD | POST | DELETE | PUT | CONNECT | OPTIONS | TRACE | PATCH] = js.undefined
     
-    var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.undefined
+    /**
+      * @deprecated ignored
+      */
+    var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ Any, Unit]] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
     var paramsSerializer: js.UndefOr[js.Function1[/* params */ StringDictionary[String | Double], String]] = js.undefined
     
@@ -97,7 +216,7 @@ object commonMod {
     
     var retryConfig: js.UndefOr[RetryConfig] = js.undefined
     
-    var signal: js.UndefOr[AbortSignal] = js.undefined
+    var signal: js.UndefOr[Any] = js.undefined
     
     var size: js.UndefOr[Double] = js.undefined
     
@@ -117,7 +236,7 @@ object commonMod {
     extension [Self <: GaxiosOptions](x: Self) {
       
       inline def setAdapter(
-        value: (GaxiosOptions, /* defaultAdapter */ js.Function1[GaxiosOptions, GaxiosPromise[js.Any]]) => GaxiosPromise[js.Any]
+        value: (GaxiosOptions, /* defaultAdapter */ js.Function1[GaxiosOptions, GaxiosPromise[Any]]) => GaxiosPromise[Any]
       ): Self = StObject.set(x, "adapter", js.Any.fromFunction2(value))
       
       inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
@@ -132,13 +251,23 @@ object commonMod {
       
       inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      
+      inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+      
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setFetchImplementation(
+        value: (/* input */ FetchRequestInfo, /* init */ js.UndefOr[FetchRequestInit]) => js.Promise[FetchResponse]
+      ): Self = StObject.set(x, "fetchImplementation", js.Any.fromFunction2(value))
+      
+      inline def setFetchImplementationUndefined: Self = StObject.set(x, "fetchImplementation", js.undefined)
       
       inline def setFollow(value: Double): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
       
@@ -147,6 +276,10 @@ object commonMod {
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
       inline def setMaxContentLength(value: Double): Self = StObject.set(x, "maxContentLength", value.asInstanceOf[js.Any])
       
@@ -160,11 +293,11 @@ object commonMod {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setOnUploadProgress(value: /* progressEvent */ js.Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
+      inline def setOnUploadProgress(value: /* progressEvent */ Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
       
       inline def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsSerializer(value: /* params */ StringDictionary[String | Double] => String): Self = StObject.set(x, "paramsSerializer", js.Any.fromFunction1(value))
       
@@ -184,7 +317,7 @@ object commonMod {
       
       inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
       
-      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: Any): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
       inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
@@ -269,7 +402,7 @@ object commonMod {
     }
   }
   
-  type Headers = StringDictionary[js.Any]
+  type Headers = StringDictionary[Any]
   
   trait RetryConfig extends StObject {
     
@@ -292,7 +425,7 @@ object commonMod {
     /**
       * Function to invoke when a retry attempt is made.
       */
-    var onRetryAttempt: js.UndefOr[js.Function1[/* err */ GaxiosError[js.Any], js.Promise[Unit] | Unit]] = js.undefined
+    var onRetryAttempt: js.UndefOr[js.Function1[/* err */ GaxiosError[Any], js.Promise[Unit] | Unit]] = js.undefined
     
     /**
       * The number of times to retry the request.  Defaults to 3.
@@ -307,7 +440,7 @@ object commonMod {
     /**
       * Function to invoke which determines if you should retry
       */
-    var shouldRetry: js.UndefOr[js.Function1[/* err */ GaxiosError[js.Any], js.Promise[Boolean] | Boolean]] = js.undefined
+    var shouldRetry: js.UndefOr[js.Function1[/* err */ GaxiosError[Any], js.Promise[Boolean] | Boolean]] = js.undefined
     
     /**
       * The HTTP response status codes that will automatically be retried.
@@ -332,13 +465,13 @@ object commonMod {
       
       inline def setHttpMethodsToRetryUndefined: Self = StObject.set(x, "httpMethodsToRetry", js.undefined)
       
-      inline def setHttpMethodsToRetryVarargs(value: String*): Self = StObject.set(x, "httpMethodsToRetry", js.Array(value :_*))
+      inline def setHttpMethodsToRetryVarargs(value: String*): Self = StObject.set(x, "httpMethodsToRetry", js.Array(value*))
       
       inline def setNoResponseRetries(value: Double): Self = StObject.set(x, "noResponseRetries", value.asInstanceOf[js.Any])
       
       inline def setNoResponseRetriesUndefined: Self = StObject.set(x, "noResponseRetries", js.undefined)
       
-      inline def setOnRetryAttempt(value: /* err */ GaxiosError[js.Any] => js.Promise[Unit] | Unit): Self = StObject.set(x, "onRetryAttempt", js.Any.fromFunction1(value))
+      inline def setOnRetryAttempt(value: /* err */ GaxiosError[Any] => js.Promise[Unit] | Unit): Self = StObject.set(x, "onRetryAttempt", js.Any.fromFunction1(value))
       
       inline def setOnRetryAttemptUndefined: Self = StObject.set(x, "onRetryAttempt", js.undefined)
       
@@ -350,7 +483,7 @@ object commonMod {
       
       inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
       
-      inline def setShouldRetry(value: /* err */ GaxiosError[js.Any] => js.Promise[Boolean] | Boolean): Self = StObject.set(x, "shouldRetry", js.Any.fromFunction1(value))
+      inline def setShouldRetry(value: /* err */ GaxiosError[Any] => js.Promise[Boolean] | Boolean): Self = StObject.set(x, "shouldRetry", js.Any.fromFunction1(value))
       
       inline def setShouldRetryUndefined: Self = StObject.set(x, "shouldRetry", js.undefined)
       
@@ -358,7 +491,7 @@ object commonMod {
       
       inline def setStatusCodesToRetryUndefined: Self = StObject.set(x, "statusCodesToRetry", js.undefined)
       
-      inline def setStatusCodesToRetryVarargs(value: js.Array[Double]*): Self = StObject.set(x, "statusCodesToRetry", js.Array(value :_*))
+      inline def setStatusCodesToRetryVarargs(value: js.Array[Double]*): Self = StObject.set(x, "statusCodesToRetry", js.Array(value*))
     }
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("web3-core", "WebsocketProvider")
 @js.native
-class WebsocketProvider protected ()
+open class WebsocketProvider protected ()
   extends WebsocketProviderBase
      with _provider {
   def this(host: String) = this()

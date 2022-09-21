@@ -61,7 +61,7 @@ object CloudflareApps {
     def matchPage(patterns: js.Array[String]): Boolean = js.native
     
     def querySelector(selectors: String): Element | Null = js.native
-    def querySelector[K /* <: /* keyof cloudflare-apps.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](selectors: K): (/* import warning: importer.ImportType#apply Failed type conversion: cloudflare-apps.anon.ElementTagNameMap[K] */ js.Any) | Null = js.native
+    def querySelector[K /* <: /* keyof cloudflare-apps.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](selectors: K): (/* import warning: importer.ImportType#apply Failed type conversion: cloudflare-apps.anon.ElementTagNameMap[K] */ js.Any) | Null = js.native
   }
   
   trait CloudflareAppsProxy extends StObject {
@@ -110,7 +110,7 @@ object CloudflareApps {
     }
   }
   
-  type InstallOptions = StringDictionary[js.Any]
+  type InstallOptions = StringDictionary[Any]
   
   trait InstallProduct extends StObject {
     
@@ -129,7 +129,7 @@ object CloudflareApps {
     }
   }
   
-  type InstallScope = StringDictionary[js.Any]
+  type InstallScope = StringDictionary[Any]
   
   trait OriginalURL extends StObject {
     

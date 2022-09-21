@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("recluster", "Balancer")
   @js.native
-  class Balancer protected () extends EventEmitter {
+  open class Balancer protected () extends EventEmitter {
     def this(file: String, options: BalancerOptions) = this()
     
     def activeWorkers(): js.Array[ChildProcess] = js.native
@@ -71,7 +71,7 @@ object mod {
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setBackoff(value: Double): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
       
@@ -125,7 +125,7 @@ object mod {
   @js.native
   trait Logger extends StObject {
     
-    def log(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def log(message: Unit, optionalParams: js.Any*): Unit = js.native
+    def log(message: Any, optionalParams: Any*): Unit = js.native
+    def log(message: Unit, optionalParams: Any*): Unit = js.native
   }
 }

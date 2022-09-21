@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "chrome-trace-event" : "1.0.2"
+      "chrome-trace-event" : "1.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "chrome-trace-event" : "1.0.2"
+      "chrome-trace-event" : "1.0.3"
     }
   ],
   "compile-devDependencies" : [

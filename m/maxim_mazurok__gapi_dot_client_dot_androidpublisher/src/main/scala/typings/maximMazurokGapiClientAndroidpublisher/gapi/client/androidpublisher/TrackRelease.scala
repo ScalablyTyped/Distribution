@@ -58,7 +58,7 @@ object TrackRelease {
     
     inline def setReleaseNotesUndefined: Self = StObject.set(x, "releaseNotes", js.undefined)
     
-    inline def setReleaseNotesVarargs(value: LocalizedText*): Self = StObject.set(x, "releaseNotes", js.Array(value :_*))
+    inline def setReleaseNotesVarargs(value: LocalizedText*): Self = StObject.set(x, "releaseNotes", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
@@ -72,6 +72,6 @@ object TrackRelease {
     
     inline def setVersionCodesUndefined: Self = StObject.set(x, "versionCodes", js.undefined)
     
-    inline def setVersionCodesVarargs(value: String*): Self = StObject.set(x, "versionCodes", js.Array(value :_*))
+    inline def setVersionCodesVarargs(value: String*): Self = StObject.set(x, "versionCodes", js.Array(value*))
   }
 }

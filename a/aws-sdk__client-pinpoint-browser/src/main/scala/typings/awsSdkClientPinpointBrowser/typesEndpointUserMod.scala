@@ -1,7 +1,6 @@
 package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object typesEndpointUserMod {
       * The Amazon Pinpoint console can't display attribute names that include the following characters: hash/pound sign (#), colon (:), question mark (?), backslash (\), and forward slash (/). For this reason, you should avoid using these characters in the names of custom attributes.
       */
     var UserAttributes: js.UndefOr[
-        (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
+        (StringDictionary[js.Array[String] | js.Iterable[String]]) | (js.Iterable[js.Tuple2[String, js.Array[String] | js.Iterable[String]]])
       ] = js.undefined
     
     /**
@@ -34,7 +33,7 @@ object typesEndpointUserMod {
     extension [Self <: EndpointUser](x: Self) {
       
       inline def setUserAttributes(
-        value: (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
+        value: (StringDictionary[js.Array[String] | js.Iterable[String]]) | (js.Iterable[js.Tuple2[String, js.Array[String] | js.Iterable[String]]])
       ): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
       
       inline def setUserAttributesUndefined: Self = StObject.set(x, "UserAttributes", js.undefined)

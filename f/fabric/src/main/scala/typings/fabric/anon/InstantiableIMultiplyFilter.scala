@@ -17,5 +17,5 @@ trait InstantiableIMultiplyFilter
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
-  def fromObject(`object`: js.Any): IMultiplyFilter = js.native
+  def fromObject(`object`: Any): IMultiplyFilter = js.native
 }

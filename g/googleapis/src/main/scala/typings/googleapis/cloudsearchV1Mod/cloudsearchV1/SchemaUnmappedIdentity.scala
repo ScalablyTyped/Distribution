@@ -14,7 +14,7 @@ trait SchemaUnmappedIdentity extends StObject {
   /**
     * The resolution status for the external identity.
     */
-  var resolutionStatusCode: js.UndefOr[String] = js.undefined
+  var resolutionStatusCode: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUnmappedIdentity {
   
@@ -30,6 +30,8 @@ object SchemaUnmappedIdentity {
     inline def setExternalIdentityUndefined: Self = StObject.set(x, "externalIdentity", js.undefined)
     
     inline def setResolutionStatusCode(value: String): Self = StObject.set(x, "resolutionStatusCode", value.asInstanceOf[js.Any])
+    
+    inline def setResolutionStatusCodeNull: Self = StObject.set(x, "resolutionStatusCode", null)
     
     inline def setResolutionStatusCodeUndefined: Self = StObject.set(x, "resolutionStatusCode", js.undefined)
   }

@@ -30,7 +30,7 @@ object SourceMapping {
     
     inline def setChildMappings(value: js.Array[SourceMapping]): Self = StObject.set(x, "childMappings", value.asInstanceOf[js.Any])
     
-    inline def setChildMappingsVarargs(value: SourceMapping*): Self = StObject.set(x, "childMappings", js.Array(value :_*))
+    inline def setChildMappingsVarargs(value: SourceMapping*): Self = StObject.set(x, "childMappings", js.Array(value*))
     
     inline def setEnd(value: SourceMapPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

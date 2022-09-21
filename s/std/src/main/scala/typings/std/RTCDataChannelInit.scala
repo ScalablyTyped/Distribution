@@ -6,18 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RTCDataChannelInit extends StObject {
   
+  /* standard dom */
   var id: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var maxPacketLifeTime: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var maxRetransmits: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var negotiated: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var ordered: js.UndefOr[scala.Boolean] = js.undefined
   
-  var priority: js.UndefOr[RTCPriorityType] = js.undefined
-  
+  /* standard dom */
   var protocol: js.UndefOr[java.lang.String] = js.undefined
 }
 object RTCDataChannelInit {
@@ -48,10 +52,6 @@ object RTCDataChannelInit {
     inline def setOrdered(value: scala.Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
     
     inline def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
-    
-    inline def setPriority(value: RTCPriorityType): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
-    
-    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     inline def setProtocol(value: java.lang.String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ object roomServiceMod {
   
   @JSImport("material-ui/svg-icons/places/room-service", JSImport.Default)
   @js.native
-  class default () extends PlacesRoomService
+  open class default () extends PlacesRoomService
   
   @JSImport("material-ui/svg-icons/places/room-service", "PlacesRoomService")
   @js.native
-  class PlacesRoomService ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class PlacesRoomService ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

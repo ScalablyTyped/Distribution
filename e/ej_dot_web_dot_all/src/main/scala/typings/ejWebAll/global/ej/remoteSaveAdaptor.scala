@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.remoteSaveAdaptor")
 @js.native
-class remoteSaveAdaptor ()
+open class remoteSaveAdaptor ()
   extends StObject
      with typings.ejWebAll.ej.remoteSaveAdaptor

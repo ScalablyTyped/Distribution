@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Bounds")
 @js.native
-class Bounds () extends StObject {
+open class Bounds () extends StObject {
   
   def add(p: Point): this.type = js.native
   

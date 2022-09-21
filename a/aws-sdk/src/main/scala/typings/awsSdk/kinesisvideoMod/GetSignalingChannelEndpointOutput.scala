@@ -24,6 +24,6 @@ object GetSignalingChannelEndpointOutput {
     
     inline def setResourceEndpointListUndefined: Self = StObject.set(x, "ResourceEndpointList", js.undefined)
     
-    inline def setResourceEndpointListVarargs(value: ResourceEndpointListItem*): Self = StObject.set(x, "ResourceEndpointList", js.Array(value :_*))
+    inline def setResourceEndpointListVarargs(value: ResourceEndpointListItem*): Self = StObject.set(x, "ResourceEndpointList", js.Array(value*))
   }
 }

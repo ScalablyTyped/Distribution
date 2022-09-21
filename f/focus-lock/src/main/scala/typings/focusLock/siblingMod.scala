@@ -1,6 +1,7 @@
 package typings.focusLock
 
 import typings.std.Element
+import typings.std.FocusOptions
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -21,8 +22,21 @@ object siblingMod {
   
   trait FocusNextOptions extends StObject {
     
+    /**
+      * enables cycling inside the scope
+      * @default true
+      */
     var cycle: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * options for focus action to control it more precisely (ie. `{ preventScroll: true }`)
+      */
+    var focusOptions: js.UndefOr[FocusOptions] = js.undefined
+    
+    /**
+      * the component to "scope" focus in
+      * @default document.body
+      */
     var scope: js.UndefOr[HTMLElement | HTMLDocument] = js.undefined
   }
   object FocusNextOptions {
@@ -37,6 +51,10 @@ object siblingMod {
       inline def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
       
       inline def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
+      
+      inline def setFocusOptions(value: FocusOptions): Self = StObject.set(x, "focusOptions", value.asInstanceOf[js.Any])
+      
+      inline def setFocusOptionsUndefined: Self = StObject.set(x, "focusOptions", js.undefined)
       
       inline def setScope(value: HTMLElement | HTMLDocument): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       

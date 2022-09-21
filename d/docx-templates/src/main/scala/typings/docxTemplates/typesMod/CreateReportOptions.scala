@@ -2,7 +2,6 @@ package typings.docxTemplates.typesMod
 
 import typings.docxTemplates.anon.Ctx
 import typings.docxTemplates.anon.ModifiedSandbox
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +50,7 @@ object CreateReportOptions {
     
     inline def setCmdDelimiter(value: js.Tuple2[String, String]): Self = StObject.set(x, "cmdDelimiter", value.asInstanceOf[js.Any])
     
-    inline def setErrorHandler(value: (/* e */ Error, /* raw_code */ js.UndefOr[String]) => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
+    inline def setErrorHandler(value: (/* e */ js.Error, /* raw_code */ js.UndefOr[String]) => Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
     
     inline def setErrorHandlerNull: Self = StObject.set(x, "errorHandler", null)
     

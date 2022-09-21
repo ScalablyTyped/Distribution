@@ -3,21 +3,6 @@
 
 Typings are for version 0.6
 
-## Library description:
-Set of tools for easier testing in JS.
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @adeira/test-utils |
-| Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 2 |
-| # downloads        | 32141 |
-| # stars            | 0 |
-
-## Links
-- [Npm](https://www.npmjs.com/package/%40adeira%2Ftest-utils)
-    
 
 
 ## Note

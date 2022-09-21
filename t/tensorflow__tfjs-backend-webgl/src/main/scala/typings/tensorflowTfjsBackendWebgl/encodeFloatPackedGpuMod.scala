@@ -10,7 +10,7 @@ object encodeFloatPackedGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/encode_float_packed_gpu", "EncodeFloatPackedProgram")
   @js.native
-  class EncodeFloatPackedProgram protected ()
+  open class EncodeFloatPackedProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(outputShape: js.Tuple3[Double, Double, Double]) = this()

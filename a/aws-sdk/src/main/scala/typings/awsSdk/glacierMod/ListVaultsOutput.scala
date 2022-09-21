@@ -33,6 +33,6 @@ object ListVaultsOutput {
     
     inline def setVaultListUndefined: Self = StObject.set(x, "VaultList", js.undefined)
     
-    inline def setVaultListVarargs(value: DescribeVaultOutput*): Self = StObject.set(x, "VaultList", js.Array(value :_*))
+    inline def setVaultListVarargs(value: DescribeVaultOutput*): Self = StObject.set(x, "VaultList", js.Array(value*))
   }
 }

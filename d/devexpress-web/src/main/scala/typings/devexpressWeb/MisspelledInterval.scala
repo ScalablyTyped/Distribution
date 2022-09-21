@@ -65,7 +65,7 @@ object MisspelledInterval {
     
     inline def setSuggestions(value: js.Array[String]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
-    inline def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value*))
     
     inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Gumbel")
 @js.native
-class Gumbel ()
+open class Gumbel ()
   extends typings.ranjs.mod.dist.Gumbel {
   def this(mu: Double) = this()
   def this(mu: Double, beta: Double) = this()

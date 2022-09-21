@@ -4,7 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RadioButtonProperties extends StObject {
+trait RadioButtonProperties
+  extends StObject
+     with ComponentProperties {
   
   var checked: js.UndefOr[Boolean] = js.undefined
   

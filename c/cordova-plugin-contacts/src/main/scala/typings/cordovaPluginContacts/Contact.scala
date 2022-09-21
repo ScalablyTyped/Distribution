@@ -1,6 +1,5 @@
 package typings.cordovaPluginContacts
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ trait Contact
     * @param onSuccess Success callback function invoked on success operation.
     * @param onError Error callback function, invoked when an error occurs.
     */
-  def remove(onSuccess: js.Function0[Unit], onError: js.Function1[/* error */ Error, Unit]): Unit
+  def remove(onSuccess: js.Function0[Unit], onError: js.Function1[/* error */ js.Error, Unit]): Unit
   
   /**
     * Saves a new contact to the device contacts database, or updates an existing contact if a contact with the same id already exists.
@@ -28,14 +27,14 @@ trait Contact
     */
   def save(
     onSuccess: js.Function1[/* contact */ this.type, Unit],
-    onError: js.Function1[/* error */ Error, Unit]
+    onError: js.Function1[/* error */ js.Error, Unit]
   ): Unit
 }
 object Contact {
   
   inline def apply(
-    remove: (js.Function0[Unit], js.Function1[/* error */ Error, Unit]) => Unit,
-    save: (js.Function1[Contact, Unit], js.Function1[/* error */ Error, Unit]) => Unit
+    remove: (js.Function0[Unit], js.Function1[/* error */ js.Error, Unit]) => Unit,
+    save: (js.Function1[Contact, Unit], js.Function1[/* error */ js.Error, Unit]) => Unit
   ): Contact = {
     val __obj = js.Dynamic.literal(remove = js.Any.fromFunction2(remove), save = js.Any.fromFunction2(save))
     __obj.asInstanceOf[Contact]
@@ -43,8 +42,8 @@ object Contact {
   
   extension [Self <: Contact](x: Self) {
     
-    inline def setRemove(value: (js.Function0[Unit], js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+    inline def setRemove(value: (js.Function0[Unit], js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
     
-    inline def setSave(value: (js.Function1[Contact, Unit], js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
+    inline def setSave(value: (js.Function1[Contact, Unit], js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
   }
 }

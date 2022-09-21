@@ -1,9 +1,5 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +9,7 @@ trait ParamsResourceMembersList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Email or immutable ID of the group
+    * Identifies the group in the API request. The value can be the group's email address, group alias, or the unique group ID.
     */
   var groupKey: js.UndefOr[String] = js.undefined
   
@@ -28,17 +19,17 @@ trait ParamsResourceMembersList
   var includeDerivedMembership: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Maximum number of results to return. Default is 200
+    * Maximum number of results to return. Max allowed value is 200.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * Token to specify next page in the list
+    * Token to specify next page in the list.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Comma separated role values to filter list results on.
+    * The `roles` query parameter allows you to retrieve group members by role. Allowed values are `OWNER`, `MANAGER`, and `MEMBER`.
     */
   var roles: js.UndefOr[String] = js.undefined
 }
@@ -50,10 +41,6 @@ object ParamsResourceMembersList {
   }
   
   extension [Self <: ParamsResourceMembersList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setGroupKey(value: String): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
     

@@ -24,10 +24,13 @@ object cookies {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def get(details: Details): js.Promise[Cookie | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cookie | Null]]
   inline def get(details: Details, callback: js.Function1[/* cookie */ Cookie | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def getAll(details: GetAllDetails): js.Promise[js.Array[Cookie]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Cookie]]]
   inline def getAll(details: GetAllDetails, callback: js.Function1[/* cookies */ js.Array[Cookie], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def getAllCookieStores(): js.Promise[js.Array[CookieStore]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllCookieStores")().asInstanceOf[js.Promise[js.Array[CookieStore]]]
   inline def getAllCookieStores(callback: js.Function1[/* cookieStores */ js.Array[CookieStore], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllCookieStores")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome.cookies.onChanged")
@@ -38,6 +41,10 @@ object cookies {
   inline def remove(details: Details): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def remove(details: Details, callback: js.Function1[/* details */ Details, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def remove_Promise(details: Details): js.Promise[Details] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Details]]
+  
   inline def set(details: SetDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def set(details: SetDetails, callback: js.Function1[/* cookie */ Cookie | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def set_Promise(details: SetDetails): js.Promise[Cookie | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cookie | Null]]
 }

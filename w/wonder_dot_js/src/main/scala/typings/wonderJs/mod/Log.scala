@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "Log")
 @js.native
-class Log ()
+open class Log ()
   extends typings.wonderJs.logMod.Log

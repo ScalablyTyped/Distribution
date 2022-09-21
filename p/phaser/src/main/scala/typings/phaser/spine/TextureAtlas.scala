@@ -10,7 +10,7 @@ trait TextureAtlas
   
   def findRegion(name: String): TextureAtlasRegion
   
-  /* private */ var load: js.Any
+  /* private */ var load: Any
   
   var pages: js.Array[TextureAtlasPage]
   
@@ -21,7 +21,7 @@ object TextureAtlas {
   inline def apply(
     dispose: () => Unit,
     findRegion: String => TextureAtlasRegion,
-    load: js.Any,
+    load: Any,
     pages: js.Array[TextureAtlasPage],
     regions: js.Array[TextureAtlasRegion]
   ): TextureAtlas = {
@@ -33,14 +33,14 @@ object TextureAtlas {
     
     inline def setFindRegion(value: String => TextureAtlasRegion): Self = StObject.set(x, "findRegion", js.Any.fromFunction1(value))
     
-    inline def setLoad(value: js.Any): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: Any): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     inline def setPages(value: js.Array[TextureAtlasPage]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    inline def setPagesVarargs(value: TextureAtlasPage*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: TextureAtlasPage*): Self = StObject.set(x, "pages", js.Array(value*))
     
     inline def setRegions(value: js.Array[TextureAtlasRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    inline def setRegionsVarargs(value: TextureAtlasRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: TextureAtlasRegion*): Self = StObject.set(x, "regions", js.Array(value*))
   }
 }

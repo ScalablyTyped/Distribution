@@ -10,10 +10,10 @@ Better `os.arch()` for node and the browser -- detect OS architecture
 | ------------------ | :-------------: |
 | Full name          | arch |
 | Keywords           | browser, browserify, arch, cpu info, cpus, architecture, navigator.platform, x64, x86, 64 bit, 32 bit |
-| # releases         | 3 |
-| # dependents       | 48 |
-| # downloads        | 146837930 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.5869743E7 |
+| # stars            | 69.0 |
 
 ## Links
 - [Homepage](https://github.com/feross/arch)

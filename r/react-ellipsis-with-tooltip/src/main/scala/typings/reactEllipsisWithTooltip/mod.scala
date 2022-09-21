@@ -26,10 +26,10 @@ object mod {
   
   @JSImport("react-ellipsis-with-tooltip", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[EllipsisWithTooltipProps, js.Object, js.Any]
+  open class default ()
+    extends Component[EllipsisWithTooltipProps, js.Object, Any]
   
-  type EllipsisWithTooltip = Component[EllipsisWithTooltipProps, js.Object, js.Any]
+  type EllipsisWithTooltip = Component[EllipsisWithTooltipProps, js.Object, Any]
   
   trait EllipsisWithTooltipProps extends StObject {
     

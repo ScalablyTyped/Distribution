@@ -5,6 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ElementCollection = typings.jsfl.GenericCollection[typings.jsfl.FlashElement]
+type ElementCollection = GenericCollection[FlashElement]
 
-type ItemCollection = typings.jsfl.GenericCollection[typings.jsfl.FlashItem]
+type ItemCollection = GenericCollection[FlashItem]

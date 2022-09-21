@@ -23,6 +23,6 @@ object TeamFieldValuesPatch {
     
     inline def setValues(value: js.Array[TeamFieldValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: TeamFieldValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: TeamFieldValue*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

@@ -41,6 +41,8 @@ trait NodeOptions extends StObject {
   
   var mass: js.UndefOr[Double] = js.undefined
   
+  var opacity: js.UndefOr[Double] = js.undefined
+  
   var physics: js.UndefOr[Boolean] = js.undefined
   
   var scaling: js.UndefOr[OptionsScaling] = js.undefined
@@ -136,6 +138,10 @@ object NodeOptions {
     inline def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
     
     inline def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     inline def setPhysics(value: Boolean): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
     

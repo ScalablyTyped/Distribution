@@ -22,6 +22,6 @@ object BatchGetApplicationsInput {
     
     inline def setApplicationNames(value: ApplicationsList): Self = StObject.set(x, "applicationNames", value.asInstanceOf[js.Any])
     
-    inline def setApplicationNamesVarargs(value: ApplicationName*): Self = StObject.set(x, "applicationNames", js.Array(value :_*))
+    inline def setApplicationNamesVarargs(value: ApplicationName*): Self = StObject.set(x, "applicationNames", js.Array(value*))
   }
 }

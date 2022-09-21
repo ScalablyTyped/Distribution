@@ -17,7 +17,7 @@ trait NodeGroupConfiguration extends StObject {
   var PrimaryAvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
-    * The output ARN of the primary node.
+    * The outpost ARN of the primary node.
     */
   var PrimaryOutpostArn: js.UndefOr[String] = js.undefined
   
@@ -66,7 +66,7 @@ object NodeGroupConfiguration {
     
     inline def setReplicaAvailabilityZonesUndefined: Self = StObject.set(x, "ReplicaAvailabilityZones", js.undefined)
     
-    inline def setReplicaAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "ReplicaAvailabilityZones", js.Array(value :_*))
+    inline def setReplicaAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "ReplicaAvailabilityZones", js.Array(value*))
     
     inline def setReplicaCount(value: IntegerOptional): Self = StObject.set(x, "ReplicaCount", value.asInstanceOf[js.Any])
     
@@ -76,7 +76,7 @@ object NodeGroupConfiguration {
     
     inline def setReplicaOutpostArnsUndefined: Self = StObject.set(x, "ReplicaOutpostArns", js.undefined)
     
-    inline def setReplicaOutpostArnsVarargs(value: String*): Self = StObject.set(x, "ReplicaOutpostArns", js.Array(value :_*))
+    inline def setReplicaOutpostArnsVarargs(value: String*): Self = StObject.set(x, "ReplicaOutpostArns", js.Array(value*))
     
     inline def setSlots(value: String): Self = StObject.set(x, "Slots", value.asInstanceOf[js.Any])
     

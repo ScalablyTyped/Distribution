@@ -31,7 +31,7 @@ object Sockets {
   @JSGlobal("Windows.Networking.Sockets.DatagramSocket")
   @js.native
   /** Creates a new DatagramSocket object. */
-  class DatagramSocket ()
+  open class DatagramSocket ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.DatagramSocket
   object DatagramSocket {
@@ -47,7 +47,7 @@ object Sockets {
       * @return A list of EndpointPair objects.
       */
     /* static member */
-    inline def getEndpointPairsAsync(remoteHostName: typings.winrtUwp.Windows.Networking.HostName, remoteServiceName: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointPairsAsync")(remoteHostName.asInstanceOf[js.Any], remoteServiceName.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getEndpointPairsAsync(remoteHostName: typings.winrtUwp.Windows.Networking.HostName, remoteServiceName: String): IPromiseWithIAsyncOperation[IVectorView[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointPairsAsync")(remoteHostName.asInstanceOf[js.Any], remoteServiceName.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     /**
       * Gets a list of EndpointPair objects based on a remote hostname and remote service name and the sort order to be used.
       * @param remoteHostName The remote hostname or IP address.
@@ -60,7 +60,7 @@ object Sockets {
       remoteHostName: typings.winrtUwp.Windows.Networking.HostName,
       remoteServiceName: String,
       sortOptions: typings.winrtUwp.Windows.Networking.HostNameSortOptions
-    ): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointPairsAsync")(remoteHostName.asInstanceOf[js.Any], remoteServiceName.asInstanceOf[js.Any], sortOptions.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    ): IPromiseWithIAsyncOperation[IVectorView[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointPairsAsync")(remoteHostName.asInstanceOf[js.Any], remoteServiceName.asInstanceOf[js.Any], sortOptions.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
   }
   
   /** Provides socket control data on a DatagramSocket object. */
@@ -153,7 +153,7 @@ object Sockets {
   @JSGlobal("Windows.Networking.Sockets.MessageWebSocket")
   @js.native
   /** Creates a new MessageWebSocket object. */
-  class MessageWebSocket ()
+  open class MessageWebSocket ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.MessageWebSocket
   
@@ -253,7 +253,7 @@ object Sockets {
   /** The context associated with a socket while transferring ownership of the socket between an app and the socket brokering service. */
   @JSGlobal("Windows.Networking.Sockets.SocketActivityContext")
   @js.native
-  class SocketActivityContext protected ()
+  open class SocketActivityContext protected ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.SocketActivityContext {
     /**
@@ -532,7 +532,7 @@ object Sockets {
   @JSGlobal("Windows.Networking.Sockets.StreamSocket")
   @js.native
   /** Creates a new StreamSocket object. */
-  class StreamSocket ()
+  open class StreamSocket ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.StreamSocket
   
@@ -644,7 +644,7 @@ object Sockets {
   @JSGlobal("Windows.Networking.Sockets.StreamSocketListener")
   @js.native
   /** Creates a new StreamSocketListener object. */
-  class StreamSocketListener ()
+  open class StreamSocketListener ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.StreamSocketListener
   
@@ -704,7 +704,7 @@ object Sockets {
   @JSGlobal("Windows.Networking.Sockets.StreamWebSocket")
   @js.native
   /** Creates a new StreamWebSocket object. */
-  class StreamWebSocket ()
+  open class StreamWebSocket ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.StreamWebSocket
   

@@ -10,10 +10,10 @@ object flightMod {
   
   @JSImport("material-ui/svg-icons/maps/flight", JSImport.Default)
   @js.native
-  class default () extends MapsFlight
+  open class default () extends MapsFlight
   
   @JSImport("material-ui/svg-icons/maps/flight", "MapsFlight")
   @js.native
-  class MapsFlight ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsFlight ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

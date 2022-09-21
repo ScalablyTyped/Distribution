@@ -22,6 +22,6 @@ object Row {
     
     inline def setData(value: DatumList): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Datum*): Self = StObject.set(x, "Data", js.Array(value :_*))
+    inline def setDataVarargs(value: Datum*): Self = StObject.set(x, "Data", js.Array(value*))
   }
 }

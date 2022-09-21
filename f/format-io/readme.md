@@ -10,10 +10,10 @@ Format size, permissions
 | ------------------ | :-------------: |
 | Full name          | format-io |
 | Keywords           | format, size, permissions |
-| # releases         | 2 |
-| # dependents       | 12 |
-| # downloads        | 62620 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 30545.0 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](http://github.com/coderaiser/format-io)

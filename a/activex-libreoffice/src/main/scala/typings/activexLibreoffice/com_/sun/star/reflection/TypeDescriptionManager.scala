@@ -35,15 +35,15 @@ object TypeDescriptionManager {
     createEnumeration: () => XEnumeration,
     createTypeDescriptionEnumeration: (String, SeqEquiv[TypeClass], TypeDescriptionSearchDepth) => XTypeDescriptionEnumeration,
     dispose: () => Unit,
-    getByHierarchicalName: String => js.Any,
+    getByHierarchicalName: String => Any,
     getElementType: () => `type`,
-    has: js.Any => Boolean,
+    has: Any => Boolean,
     hasByHierarchicalName: String => Boolean,
     hasElements: () => Boolean,
-    insert: js.Any => Unit,
-    queryInterface: `type` => js.Any,
+    insert: Any => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    remove: js.Any => Unit,
+    remove: Any => Unit,
     removeEventListener: XEventListener => Unit
   ): TypeDescriptionManager = {
     val __obj = js.Dynamic.literal(ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), createEnumeration = js.Any.fromFunction0(createEnumeration), createTypeDescriptionEnumeration = js.Any.fromFunction3(createTypeDescriptionEnumeration), dispose = js.Any.fromFunction0(dispose), getByHierarchicalName = js.Any.fromFunction1(getByHierarchicalName), getElementType = js.Any.fromFunction0(getElementType), has = js.Any.fromFunction1(has), hasByHierarchicalName = js.Any.fromFunction1(hasByHierarchicalName), hasElements = js.Any.fromFunction0(hasElements), insert = js.Any.fromFunction1(insert), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction1(remove), removeEventListener = js.Any.fromFunction1(removeEventListener))

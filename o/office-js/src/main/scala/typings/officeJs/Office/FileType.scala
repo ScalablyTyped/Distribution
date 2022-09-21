@@ -15,7 +15,11 @@ sealed trait FileType extends StObject
 object FileType extends StObject {
   
   /**
-    * Returns the entire document (.pptx, .docx, or .xlsx) in Office Open XML (OOXML) format as a byte array.
+    * Returns the entire document (.pptx, .docx, .xlsx, or .xlsm) in Office Open XML (OOXML) format as a byte array.
+    * 
+    * Note: The .xslm file type is supported in Excel on Windows and Mac. It's not supported in Excel on the web.
+    * In Excel on Windows, the file slices from the `getFileAsync` method include the VBA signature files for .xslm file types. The VBA signature files are vbaProjectSignature.bin, vbaProbjectSignatureAgile.bin, and vbaProjectSignatureV3.bin. 
+    * In Excel on Mac, the file slices from the `getFileAsync` method don't include the VBA signature files, because this platform doesn't support the VBA signature feature.
     */
   @js.native
   sealed trait Compressed

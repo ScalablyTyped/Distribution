@@ -11,7 +11,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("combokeys")
   @js.native
-  class combokeys protected ()
+  open class combokeys protected ()
     extends StObject
        with typings.combokeys.Combokeys.Combokeys {
     def this(element: Element) = this()

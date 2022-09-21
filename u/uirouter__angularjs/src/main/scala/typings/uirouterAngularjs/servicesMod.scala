@@ -15,7 +15,7 @@ object servicesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getLocals(ctx: ResolveContext): TypedMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocals")(ctx.asInstanceOf[js.Any]).asInstanceOf[TypedMap[js.Any]]
+  inline def getLocals(ctx: ResolveContext): TypedMap[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocals")(ctx.asInstanceOf[js.Any]).asInstanceOf[TypedMap[Any]]
   
   object watchDigests {
     

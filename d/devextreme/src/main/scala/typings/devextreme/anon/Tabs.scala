@@ -1,18 +1,21 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.auto
-import typings.devextreme.devextremeStrings.collapsed
-import typings.devextreme.devextremeStrings.disabled
-import typings.devextreme.devextremeStrings.visible
+import typings.devextreme.mod.DevExpress.ui.dxDiagram.DiagramPanelVisibility
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Tabs extends StObject {
   
+  /**
+    * Contains an array of tabs in the Properties panel.
+    */
   var tabs: js.UndefOr[js.Array[Groups]] = js.undefined
   
-  var visibility: js.UndefOr[auto | visible | collapsed | disabled] = js.undefined
+  /**
+    * Specifies the panel&apos;s visibility.
+    */
+  var visibility: js.UndefOr[DiagramPanelVisibility] = js.undefined
 }
 object Tabs {
   
@@ -27,9 +30,9 @@ object Tabs {
     
     inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
     
-    inline def setTabsVarargs(value: Groups*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+    inline def setTabsVarargs(value: Groups*): Self = StObject.set(x, "tabs", js.Array(value*))
     
-    inline def setVisibility(value: auto | visible | collapsed | disabled): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: DiagramPanelVisibility): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }

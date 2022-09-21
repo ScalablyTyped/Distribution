@@ -25,9 +25,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the data labels on a chart point.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -36,9 +36,9 @@ trait ChartDataLabels
      with ClientObject {
   
   /**
-    *
     * Specifies if data labels automatically generate appropriate text based on context.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var autoText: Boolean = js.native
@@ -48,26 +48,26 @@ trait ChartDataLabels
   var context_ChartDataLabels: RequestContext = js.native
   
   /**
-    *
     * Specifies the format of chart data labels, which includes fill and font formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val format: ChartDataLabelFormat = js.native
   
   /**
+    * Specifies the horizontal alignment for chart data label. See `Excel.ChartTextHorizontalAlignment` for details.
+    This property is valid only when the `TextOrientation` of data label is 0.
     *
-    * Specifies the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
-    This property is valid only when TextOrientation of data label is 0.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var horizontalAlignment: ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed = js.native
   
   /**
+    * Specifies if the number format is linked to the cells. If `true`, the number format will change in the labels when it changes in the cells.
     *
-    * Specifies if the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var linkNumberFormat: Boolean = js.native
@@ -84,39 +84,33 @@ trait ChartDataLabels
   def load(propertyNames: js.Array[String]): ChartDataLabels = js.native
   
   /**
-    *
     * Specifies the format code for data labels.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var numberFormat: String = js.native
   
   /**
+    * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
     *
-    * DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var position: ChartDataLabelPosition | Invalid | None | Center | InsideEnd | InsideBase | OutsideEnd | Left | Right | Top | Bottom | BestFit | Callout = js.native
   
   /**
-    *
     * String representing the separator used for the data labels on a chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var separator: String = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartDataLabels): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartDataLabels): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -124,57 +118,57 @@ trait ChartDataLabels
   def set(properties: ChartDataLabelsUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
-    *
     * Specifies if the data label bubble size is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var showBubbleSize: Boolean = js.native
   
   /**
-    *
     * Specifies if the data label category name is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var showCategoryName: Boolean = js.native
   
   /**
-    *
     * Specifies if the data label legend key is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var showLegendKey: Boolean = js.native
   
   /**
-    *
     * Specifies if the data label percentage is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var showPercentage: Boolean = js.native
   
   /**
-    *
     * Specifies if the data label series name is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var showSeriesName: Boolean = js.native
   
   /**
-    *
     * Specifies if the data label value is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var showValue: Boolean = js.native
   
   /**
-    *
     * Represents the angle to which the text is oriented for data labels. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var textOrientation: Double = js.native
@@ -186,10 +180,10 @@ trait ChartDataLabels
   def toJSON(): ChartDataLabelsData = js.native
   
   /**
+    * Represents the vertical alignment of chart data label. See `Excel.ChartTextVerticalAlignment` for details.
+    This property is valid only when `TextOrientation` of the data label is -90, 90, or 180.
     *
-    * Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details.
-    This property is valid only when TextOrientation of data label is -90, 90, or 180.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var verticalAlignment: ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed = js.native

@@ -24,7 +24,7 @@ trait SamplingTargetDocument extends StObject {
   /**
     * When the reservoir quota expires.
     */
-  var ReservoirQuotaTTL: js.UndefOr[Timestamp] = js.undefined
+  var ReservoirQuotaTTL: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the sampling rule.
@@ -50,7 +50,7 @@ object SamplingTargetDocument {
     
     inline def setReservoirQuota(value: NullableInteger): Self = StObject.set(x, "ReservoirQuota", value.asInstanceOf[js.Any])
     
-    inline def setReservoirQuotaTTL(value: Timestamp): Self = StObject.set(x, "ReservoirQuotaTTL", value.asInstanceOf[js.Any])
+    inline def setReservoirQuotaTTL(value: js.Date): Self = StObject.set(x, "ReservoirQuotaTTL", value.asInstanceOf[js.Any])
     
     inline def setReservoirQuotaTTLUndefined: Self = StObject.set(x, "ReservoirQuotaTTL", js.undefined)
     

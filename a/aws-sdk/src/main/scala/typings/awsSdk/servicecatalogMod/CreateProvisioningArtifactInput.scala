@@ -17,7 +17,7 @@ trait CreateProvisioningArtifactInput extends StObject {
   var IdempotencyToken: typings.awsSdk.servicecatalogMod.IdempotencyToken
   
   /**
-    * The configuration for the provisioning artifact. The info field accepts ImportFromPhysicalID. 
+    * The configuration for the provisioning artifact.
     */
   var Parameters: ProvisioningArtifactProperties
   

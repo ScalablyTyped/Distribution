@@ -41,7 +41,7 @@ object XModuleUIConfigurationManager2 {
     isDefaultSettings: String => Boolean,
     isModified: () => Boolean,
     isReadOnly: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     reload: () => Unit,
     removeConfigurationListener: XUIConfigurationListener => Unit,

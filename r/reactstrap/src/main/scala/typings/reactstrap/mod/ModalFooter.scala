@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "ModalFooter")
+@JSImport("reactstrap", "ModalFooter")
 @js.native
-class ModalFooter () extends default
+open class ModalFooter () extends default

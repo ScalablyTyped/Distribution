@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateDataSetRequest extends StObject {
   
   /**
-    * The type of file your data is stored in. Currently, the supported asset type is S3_SNAPSHOT.
+    * The type of asset that is added to a data set.
     */
   var AssetType: typings.awsSdk.dataexchangeMod.AssetType
   

@@ -26,17 +26,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartMapOptionsData extends StObject {
   
   /**
-    *
     * Specifies the series map labels strategy of a region map chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var labelStrategy: js.UndefOr[ChartMapLabelStrategy | None | BestFit | ShowAll] = js.undefined
   
   /**
-    *
     * Specifies the series mapping level of a region map chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var level: js.UndefOr[
@@ -44,9 +44,9 @@ trait ChartMapOptionsData extends StObject {
   ] = js.undefined
   
   /**
-    *
     * Specifies the series projection type of a region map chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var projectionType: js.UndefOr[ChartMapProjectionType | Automatic | Mercator | Miller | Robinson | Albers] = js.undefined

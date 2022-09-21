@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkflowRunStatistics extends StObject {
   
   /**
+    * Indicates the count of job runs in the ERROR state in the workflow run.
+    */
+  var ErroredActions: js.UndefOr[IntegerValue] = js.undefined
+  
+  /**
     * Total number of Actions that have failed.
     */
   var FailedActions: js.UndefOr[IntegerValue] = js.undefined
@@ -35,6 +40,11 @@ trait WorkflowRunStatistics extends StObject {
     * Total number of Actions in the workflow run.
     */
   var TotalActions: js.UndefOr[IntegerValue] = js.undefined
+  
+  /**
+    * Indicates the count of job runs in WAITING state in the workflow run.
+    */
+  var WaitingActions: js.UndefOr[IntegerValue] = js.undefined
 }
 object WorkflowRunStatistics {
   
@@ -44,6 +54,10 @@ object WorkflowRunStatistics {
   }
   
   extension [Self <: WorkflowRunStatistics](x: Self) {
+    
+    inline def setErroredActions(value: IntegerValue): Self = StObject.set(x, "ErroredActions", value.asInstanceOf[js.Any])
+    
+    inline def setErroredActionsUndefined: Self = StObject.set(x, "ErroredActions", js.undefined)
     
     inline def setFailedActions(value: IntegerValue): Self = StObject.set(x, "FailedActions", value.asInstanceOf[js.Any])
     
@@ -68,5 +82,9 @@ object WorkflowRunStatistics {
     inline def setTotalActions(value: IntegerValue): Self = StObject.set(x, "TotalActions", value.asInstanceOf[js.Any])
     
     inline def setTotalActionsUndefined: Self = StObject.set(x, "TotalActions", js.undefined)
+    
+    inline def setWaitingActions(value: IntegerValue): Self = StObject.set(x, "WaitingActions", value.asInstanceOf[js.Any])
+    
+    inline def setWaitingActionsUndefined: Self = StObject.set(x, "WaitingActions", js.undefined)
   }
 }

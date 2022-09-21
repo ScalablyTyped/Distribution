@@ -34,7 +34,7 @@ object GetCrawlerMetricsRequest {
     
     inline def setCrawlerNameListUndefined: Self = StObject.set(x, "CrawlerNameList", js.undefined)
     
-    inline def setCrawlerNameListVarargs(value: NameString*): Self = StObject.set(x, "CrawlerNameList", js.Array(value :_*))
+    inline def setCrawlerNameListVarargs(value: NameString*): Self = StObject.set(x, "CrawlerNameList", js.Array(value*))
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

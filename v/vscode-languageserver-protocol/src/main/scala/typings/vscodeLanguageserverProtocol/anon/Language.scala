@@ -1,13 +1,13 @@
 package typings.vscodeLanguageserverProtocol.anon
 
-import typings.vscodeLanguageserverProtocol.protocolMod.DocumentFilter
+import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Language
   extends StObject
-     with DocumentFilter {
+     with TextDocumentFilter {
   
   /** A language id, like `typescript`. */
   var language: String

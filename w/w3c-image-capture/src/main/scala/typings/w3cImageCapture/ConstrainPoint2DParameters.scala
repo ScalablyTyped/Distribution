@@ -21,10 +21,10 @@ object ConstrainPoint2DParameters {
     
     inline def setExact(value: js.Array[Point2D]): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
-    inline def setExactVarargs(value: Point2D*): Self = StObject.set(x, "exact", js.Array(value :_*))
+    inline def setExactVarargs(value: Point2D*): Self = StObject.set(x, "exact", js.Array(value*))
     
     inline def setIdeal(value: js.Array[Point2D]): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
     
-    inline def setIdealVarargs(value: Point2D*): Self = StObject.set(x, "ideal", js.Array(value :_*))
+    inline def setIdealVarargs(value: Point2D*): Self = StObject.set(x, "ideal", js.Array(value*))
   }
 }

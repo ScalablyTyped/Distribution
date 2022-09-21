@@ -3,6 +3,7 @@ package typings.reactNativeModal
 import typings.reactNativeModal.anon.AnimationIn
 import typings.reactNativeModal.anon.AnimationInTiming
 import typings.reactNativeModal.anon.IsVisible
+import typings.reactNativeModal.anon.ReadonlyModalProps
 import typings.reactNativeModal.modalMod.ModalProps
 import typings.reactNativeModal.modalMod.State
 import org.scalablytyped.runtime.StObject
@@ -13,7 +14,7 @@ object mod {
   
   @JSImport("react-native-modal", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.reactNativeModal.modalMod.ReactNativeModal {
     def this(props: ModalProps) = this()
   }
@@ -29,7 +30,7 @@ object mod {
     def defaultProps: AnimationInTiming = js.native
     inline def defaultProps_=(x: AnimationInTiming): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps(nextProps: ModalProps, state: State): IsVisible | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IsVisible | Null]
+    inline def getDerivedStateFromProps(nextProps: ReadonlyModalProps, state: State): IsVisible | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IsVisible | Null]
     
     @JSImport("react-native-modal", "default.propTypes")
     @js.native
@@ -39,7 +40,7 @@ object mod {
   
   @JSImport("react-native-modal", "ReactNativeModal")
   @js.native
-  class ReactNativeModal protected ()
+  open class ReactNativeModal protected ()
     extends typings.reactNativeModal.modalMod.ReactNativeModal {
     def this(props: ModalProps) = this()
   }
@@ -55,7 +56,7 @@ object mod {
     def defaultProps: AnimationInTiming = js.native
     inline def defaultProps_=(x: AnimationInTiming): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps(nextProps: ModalProps, state: State): IsVisible | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IsVisible | Null]
+    inline def getDerivedStateFromProps(nextProps: ReadonlyModalProps, state: State): IsVisible | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IsVisible | Null]
     
     @JSImport("react-native-modal", "ReactNativeModal.propTypes")
     @js.native

@@ -105,7 +105,7 @@ object IProgressData {
     
     inline def setQErrorData(value: js.Array[IErrorData]): Self = StObject.set(x, "qErrorData", value.asInstanceOf[js.Any])
     
-    inline def setQErrorDataVarargs(value: IErrorData*): Self = StObject.set(x, "qErrorData", js.Array(value :_*))
+    inline def setQErrorDataVarargs(value: IErrorData*): Self = StObject.set(x, "qErrorData", js.Array(value*))
     
     inline def setQFinished(value: Boolean): Self = StObject.set(x, "qFinished", value.asInstanceOf[js.Any])
     
@@ -117,7 +117,7 @@ object IProgressData {
     
     inline def setQPersistentProgressMessages(value: js.Array[IProgressMessage]): Self = StObject.set(x, "qPersistentProgressMessages", value.asInstanceOf[js.Any])
     
-    inline def setQPersistentProgressMessagesVarargs(value: IProgressMessage*): Self = StObject.set(x, "qPersistentProgressMessages", js.Array(value :_*))
+    inline def setQPersistentProgressMessagesVarargs(value: IProgressMessage*): Self = StObject.set(x, "qPersistentProgressMessages", js.Array(value*))
     
     inline def setQStarted(value: Boolean): Self = StObject.set(x, "qStarted", value.asInstanceOf[js.Any])
     

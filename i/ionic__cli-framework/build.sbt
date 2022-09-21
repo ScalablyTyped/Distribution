@@ -1,16 +1,17 @@
 organization := "org.scalablytyped"
 name := "ionic__cli-framework"
-version := "3.0.6-77a812"
-scalaVersion := "3.0.1"
+version := "5.1.3-121091"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ionic__utils-object" % "1.0.6-9ae996",
-  "org.scalablytyped" %%% "log-update" % "4.0.0-b020b0",
-  "org.scalablytyped" %%% "minimist" % "1.2-dt-20201106Z-23b986",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "string-width" % "4.2.0-c30181")
+  "org.scalablytyped" %%% "ionic__cli-framework-output" % "2.2.5-24829b",
+  "org.scalablytyped" %%% "ionic__utils-object" % "2.1.5-0fd2b6",
+  "org.scalablytyped" %%% "ionic__utils-terminal" % "2.3.3-2f571b",
+  "org.scalablytyped" %%% "minimist" % "1.2-dt-20211202Z-192740",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "std" % "4.8-958c79",
+  "org.scalablytyped" %%% "string-width" % "5.1.2-e4a09c")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

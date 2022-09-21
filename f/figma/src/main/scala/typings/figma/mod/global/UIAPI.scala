@@ -23,8 +23,8 @@ trait UIAPI extends StObject {
   
   var onmessage: js.UndefOr[MessageEventHandler] = js.native
   
-  def postMessage(pluginMessage: js.Any): Unit = js.native
-  def postMessage(pluginMessage: js.Any, options: UIPostMessageOptions): Unit = js.native
+  def postMessage(pluginMessage: Any): Unit = js.native
+  def postMessage(pluginMessage: Any, options: UIPostMessageOptions): Unit = js.native
   
   def resize(width: Double, height: Double): Unit = js.native
   

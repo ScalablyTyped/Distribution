@@ -23,6 +23,6 @@ object DynamicSlotEntries {
     
     inline def setElements(value: js.Array[ConditionalDynamicSlotNode | ListDynamicSlotNode]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    inline def setElementsVarargs(value: (ConditionalDynamicSlotNode | ListDynamicSlotNode)*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: (ConditionalDynamicSlotNode | ListDynamicSlotNode)*): Self = StObject.set(x, "elements", js.Array(value*))
   }
 }

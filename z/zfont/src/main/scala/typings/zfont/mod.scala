@@ -31,7 +31,7 @@ object mod {
       */
     @JSImport("zdog", "Font")
     @js.native
-    class Font protected () extends StObject {
+    open class Font protected () extends StObject {
       def this(options: FontOptions) = this()
       
       /**
@@ -47,7 +47,7 @@ object mod {
       */
     @JSImport("zdog", "Text")
     @js.native
-    class Text[T /* <: MultilineText */] protected () extends Shape {
+    open class Text[T /* <: MultilineText */] protected () extends Shape {
       def this(options: TextOptions[T]) = this()
       
       /** @see {@link TextOptions#font} */
@@ -74,7 +74,7 @@ object mod {
       */
     @JSImport("zdog", "TextGroup")
     @js.native
-    class TextGroup[T /* <: MultilineText */] protected () extends Group {
+    open class TextGroup[T /* <: MultilineText */] protected () extends Group {
       def this(options: TextGroupOptions[T]) = this()
       
       /**

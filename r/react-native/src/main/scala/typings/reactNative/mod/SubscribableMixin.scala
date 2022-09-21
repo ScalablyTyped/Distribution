@@ -19,17 +19,17 @@ trait SubscribableMixin extends StObject {
     * @param listener Function to invoke when event occurs.
     * @param context Object to use as listener context.
     */
-  def addListenerOn(eventEmitter: js.Any, eventType: String, listener: js.Function0[js.Any], context: js.Any): Unit
+  def addListenerOn(eventEmitter: Any, eventType: String, listener: js.Function0[Any], context: Any): Unit
 }
 object SubscribableMixin {
   
-  inline def apply(addListenerOn: (js.Any, String, js.Function0[js.Any], js.Any) => Unit): SubscribableMixin = {
+  inline def apply(addListenerOn: (Any, String, js.Function0[Any], Any) => Unit): SubscribableMixin = {
     val __obj = js.Dynamic.literal(addListenerOn = js.Any.fromFunction4(addListenerOn))
     __obj.asInstanceOf[SubscribableMixin]
   }
   
   extension [Self <: SubscribableMixin](x: Self) {
     
-    inline def setAddListenerOn(value: (js.Any, String, js.Function0[js.Any], js.Any) => Unit): Self = StObject.set(x, "addListenerOn", js.Any.fromFunction4(value))
+    inline def setAddListenerOn(value: (Any, String, js.Function0[Any], Any) => Unit): Self = StObject.set(x, "addListenerOn", js.Any.fromFunction4(value))
   }
 }

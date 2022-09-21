@@ -6,17 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RTCRtpContributingSource extends StObject {
   
+  /* standard dom */
   var audioLevel: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var rtpTimestamp: Double
   
+  /* standard dom */
   var source: Double
   
-  var timestamp: Double
+  /* standard dom */
+  var timestamp: DOMHighResTimeStamp
 }
 object RTCRtpContributingSource {
   
-  inline def apply(rtpTimestamp: Double, source: Double, timestamp: Double): RTCRtpContributingSource = {
+  inline def apply(rtpTimestamp: Double, source: Double, timestamp: DOMHighResTimeStamp): RTCRtpContributingSource = {
     val __obj = js.Dynamic.literal(rtpTimestamp = rtpTimestamp.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpContributingSource]
   }
@@ -31,6 +35,6 @@ object RTCRtpContributingSource {
     
     inline def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: DOMHighResTimeStamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.XPath")
 @js.native
-/* private */ class XPath ()
+/* private */ open class XPath ()
   extends StObject
      with typings.activexExcel.Excel.XPath

@@ -11,13 +11,13 @@ trait HTMLLIElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -33,10 +33,10 @@ trait HTMLLIElement
   ): Unit = js.native
   
   /** @deprecated */
+  /* standard dom */
   var `type`: java.lang.String = js.native
   
-  /**
-    * Sets or retrieves the value of a list item.
-    */
+  /** Sets or retrieves the value of a list item. */
+  /* standard dom */
   var value: Double = js.native
 }

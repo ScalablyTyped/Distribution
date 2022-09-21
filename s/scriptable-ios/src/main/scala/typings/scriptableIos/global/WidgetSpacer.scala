@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("WidgetSpacer")
 @js.native
-class WidgetSpacer ()
+open class WidgetSpacer ()
   extends StObject
      with typings.scriptableIos.WidgetSpacer {
   

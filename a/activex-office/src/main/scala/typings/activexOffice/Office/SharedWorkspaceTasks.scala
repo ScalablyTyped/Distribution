@@ -192,7 +192,7 @@ trait SharedWorkspaceTasks extends StObject {
     DueDate: VarDate
   ): SharedWorkspaceTask = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -202,5 +202,5 @@ trait SharedWorkspaceTasks extends StObject {
   
   val ItemCountExceeded: Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

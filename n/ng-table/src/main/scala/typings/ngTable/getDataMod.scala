@@ -10,5 +10,5 @@ object getDataMod {
   
   type IGetDataFunc[T] = js.Function1[/* params */ NgTableParams[T], js.Array[T] | IPromise[js.Array[T]]]
   
-  type IInterceptableGetDataFunc[T] = js.Function1[/* params */ NgTableParams[T], js.Any]
+  type IInterceptableGetDataFunc[T] = js.Function1[/* params */ NgTableParams[T], Any]
 }

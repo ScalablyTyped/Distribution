@@ -4,20 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Write a Data Access (Gin) log
-  */
 trait SchemaLogConfigDataAccessOptions extends StObject {
   
   /**
-    * Whether Gin logging should happen in a fail-closed manner at the caller.
-    * This is relevant only in the LocalIAM implementation, for now.  NOTE:
-    * Logging to Gin in a fail-closed manner is currently unsupported while
-    * work is being done to satisfy the requirements of go/345. Currently,
-    * setting LOG_FAIL_CLOSED mode will have no effect, but still exists
-    * because there is active work being done to support it (b/115874152).
+    * This is deprecated and has no effect. Do not use.
     */
-  var logMode: js.UndefOr[String] = js.undefined
+  var logMode: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLogConfigDataAccessOptions {
   
@@ -29,6 +21,8 @@ object SchemaLogConfigDataAccessOptions {
   extension [Self <: SchemaLogConfigDataAccessOptions](x: Self) {
     
     inline def setLogMode(value: String): Self = StObject.set(x, "logMode", value.asInstanceOf[js.Any])
+    
+    inline def setLogModeNull: Self = StObject.set(x, "logMode", null)
     
     inline def setLogModeUndefined: Self = StObject.set(x, "logMode", js.undefined)
   }

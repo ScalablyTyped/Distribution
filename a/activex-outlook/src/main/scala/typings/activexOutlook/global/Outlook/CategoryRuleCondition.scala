@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.CategoryRuleCondition")
 @js.native
-/* private */ class CategoryRuleCondition ()
+/* private */ open class CategoryRuleCondition ()
   extends StObject
      with typings.activexOutlook.Outlook.CategoryRuleCondition {
   
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Application: typings.activexOutlook.Outlook.Application = js.native
   
   /* CompleteClass */
-  var Categories: js.Any = js.native
+  var Categories: Any = js.native
   
   /* CompleteClass */
   override val Class: OlObjectClass = js.native
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotCategoryRuleCondition_typekey: typings.activexOutlook.Outlook.CategoryRuleCondition = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

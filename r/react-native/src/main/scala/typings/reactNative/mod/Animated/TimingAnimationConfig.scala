@@ -15,12 +15,12 @@ trait TimingAnimationConfig
   
   var easing: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.undefined
   
-  var toValue: Double | AnimatedValue | X | AnimatedValueXY | AnimatedInterpolation
+  var toValue: Double | AnimatedValue | X | AnimatedValueXY | AnimatedInterpolation[Double]
 }
 object TimingAnimationConfig {
   
   inline def apply(
-    toValue: Double | AnimatedValue | X | AnimatedValueXY | AnimatedInterpolation,
+    toValue: Double | AnimatedValue | X | AnimatedValueXY | AnimatedInterpolation[Double],
     useNativeDriver: Boolean
   ): TimingAnimationConfig = {
     val __obj = js.Dynamic.literal(toValue = toValue.asInstanceOf[js.Any], useNativeDriver = useNativeDriver.asInstanceOf[js.Any])
@@ -41,6 +41,6 @@ object TimingAnimationConfig {
     
     inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    inline def setToValue(value: Double | AnimatedValue | X | AnimatedValueXY | AnimatedInterpolation): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
+    inline def setToValue(value: Double | AnimatedValue | X | AnimatedValueXY | AnimatedInterpolation[Double]): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
   }
 }

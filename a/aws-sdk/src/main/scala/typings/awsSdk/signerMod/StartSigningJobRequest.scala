@@ -19,7 +19,12 @@ trait StartSigningJobRequest extends StObject {
   /**
     * The name of the signing profile.
     */
-  var profileName: js.UndefOr[ProfileName] = js.undefined
+  var profileName: ProfileName
+  
+  /**
+    * The AWS account ID of the signing profile owner.
+    */
+  var profileOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The S3 bucket that contains the object to sign or a BLOB that contains your raw code.
@@ -28,8 +33,13 @@ trait StartSigningJobRequest extends StObject {
 }
 object StartSigningJobRequest {
   
-  inline def apply(clientRequestToken: ClientRequestToken, destination: Destination, source: Source): StartSigningJobRequest = {
-    val __obj = js.Dynamic.literal(clientRequestToken = clientRequestToken.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+  inline def apply(
+    clientRequestToken: ClientRequestToken,
+    destination: Destination,
+    profileName: ProfileName,
+    source: Source
+  ): StartSigningJobRequest = {
+    val __obj = js.Dynamic.literal(clientRequestToken = clientRequestToken.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], profileName = profileName.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSigningJobRequest]
   }
   
@@ -41,7 +51,9 @@ object StartSigningJobRequest {
     
     inline def setProfileName(value: ProfileName): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
     
-    inline def setProfileNameUndefined: Self = StObject.set(x, "profileName", js.undefined)
+    inline def setProfileOwner(value: AccountId): Self = StObject.set(x, "profileOwner", value.asInstanceOf[js.Any])
+    
+    inline def setProfileOwnerUndefined: Self = StObject.set(x, "profileOwner", js.undefined)
     
     inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

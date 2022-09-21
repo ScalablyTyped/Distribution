@@ -16,7 +16,7 @@ object utilsMod {
   
   inline def insertAfter(newNode: Node, referenceNode: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(newNode.asInstanceOf[js.Any], referenceNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def isPlainObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPlainObject(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def ordinalSuffixOf(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ordinalSuffixOf")(num.asInstanceOf[js.Any]).asInstanceOf[String]
   

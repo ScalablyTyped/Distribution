@@ -4,20 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EducationRoot
-  extends StObject
-     with Entity {
+trait EducationRoot extends StObject {
   
-  // Read-only. Nullable.
   var classes: js.UndefOr[NullableOption[js.Array[EducationClass]]] = js.undefined
   
-  // Read-only. Nullable.
   var me: js.UndefOr[NullableOption[EducationUser]] = js.undefined
   
-  // Read-only. Nullable.
   var schools: js.UndefOr[NullableOption[js.Array[EducationSchool]]] = js.undefined
   
-  // Read-only. Nullable.
   var users: js.UndefOr[NullableOption[js.Array[EducationUser]]] = js.undefined
 }
 object EducationRoot {
@@ -35,7 +29,7 @@ object EducationRoot {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setClassesVarargs(value: EducationClass*): Self = StObject.set(x, "classes", js.Array(value :_*))
+    inline def setClassesVarargs(value: EducationClass*): Self = StObject.set(x, "classes", js.Array(value*))
     
     inline def setMe(value: NullableOption[EducationUser]): Self = StObject.set(x, "me", value.asInstanceOf[js.Any])
     
@@ -49,7 +43,7 @@ object EducationRoot {
     
     inline def setSchoolsUndefined: Self = StObject.set(x, "schools", js.undefined)
     
-    inline def setSchoolsVarargs(value: EducationSchool*): Self = StObject.set(x, "schools", js.Array(value :_*))
+    inline def setSchoolsVarargs(value: EducationSchool*): Self = StObject.set(x, "schools", js.Array(value*))
     
     inline def setUsers(value: NullableOption[js.Array[EducationUser]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
@@ -57,6 +51,6 @@ object EducationRoot {
     
     inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
-    inline def setUsersVarargs(value: EducationUser*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: EducationUser*): Self = StObject.set(x, "users", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ object badgeMod {
   
   @JSImport("material-ui/Badge", JSImport.Default)
   @js.native
-  class default () extends Badge
+  open class default () extends Badge
   
   @JSImport("material-ui/Badge", "Badge")
   @js.native
-  class Badge ()
-    extends Component[BadgeProps, js.Object, js.Any]
+  open class Badge ()
+    extends Component[BadgeProps, js.Object, Any]
 }

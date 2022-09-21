@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("ip-address", "Address4")
   @js.native
-  class Address4 protected ()
+  open class Address4 protected ()
     extends typings.ipAddress.ipv4Mod.Address4 {
     def this(address: String) = this()
   }
@@ -22,6 +22,18 @@ object mod {
     @JSImport("ip-address", "Address4")
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Return an address from in-addr.arpa form
+      * @memberof Address4
+      * @static
+      * @param {string} arpaFormAddress - an 'in-addr.arpa' form ipv4 address
+      * @returns {Adress4}
+      * @example
+      * var address = Address4.fromArpa(42.2.0.192.in-addr.arpa.)
+      * address.correctForm(); // '192.0.2.42'
+      */
+    inline def fromArpa(arpaFormAddress: String): typings.ipAddress.ipv4Mod.Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArpa")(arpaFormAddress.asInstanceOf[js.Any]).asInstanceOf[typings.ipAddress.ipv4Mod.Address4]
     
     /**
       * Converts a BigInteger to a v4 address object
@@ -55,7 +67,7 @@ object mod {
   
   @JSImport("ip-address", "Address6")
   @js.native
-  class Address6 protected ()
+  open class Address6 protected ()
     extends typings.ipAddress.ipv6Mod.Address6 {
     def this(address: String) = this()
     def this(address: String, optionalGroups: Double) = this()
@@ -111,7 +123,7 @@ object mod {
       * @static
       * @returns {Address6}
       */
-    inline def fromByteArray(bytes: js.Array[js.Any]): typings.ipAddress.ipv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[typings.ipAddress.ipv6Mod.Address6]
+    inline def fromByteArray(bytes: js.Array[Any]): typings.ipAddress.ipv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[typings.ipAddress.ipv6Mod.Address6]
     
     /**
       * Convert a URL (with optional port number) to an address object
@@ -131,9 +143,17 @@ object mod {
       * @static
       * @returns {Address6}
       */
-    inline def fromUnsignedByteArray(bytes: js.Array[js.Any]): typings.ipAddress.ipv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnsignedByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[typings.ipAddress.ipv6Mod.Address6]
+    inline def fromUnsignedByteArray(bytes: js.Array[Any]): typings.ipAddress.ipv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnsignedByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[typings.ipAddress.ipv6Mod.Address6]
     
     inline def isValid(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  }
+  
+  @JSImport("ip-address", "AddressError")
+  @js.native
+  open class AddressError protected ()
+    extends typings.ipAddress.addressErrorMod.AddressError {
+    def this(message: String) = this()
+    def this(message: String, parseMessage: String) = this()
   }
   
   object v6 {

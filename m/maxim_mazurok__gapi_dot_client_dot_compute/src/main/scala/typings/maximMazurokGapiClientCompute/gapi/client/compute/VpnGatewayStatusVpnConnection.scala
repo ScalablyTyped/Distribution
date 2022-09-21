@@ -43,6 +43,6 @@ object VpnGatewayStatusVpnConnection {
     
     inline def setTunnelsUndefined: Self = StObject.set(x, "tunnels", js.undefined)
     
-    inline def setTunnelsVarargs(value: VpnGatewayStatusTunnel*): Self = StObject.set(x, "tunnels", js.Array(value :_*))
+    inline def setTunnelsVarargs(value: VpnGatewayStatusTunnel*): Self = StObject.set(x, "tunnels", js.Array(value*))
   }
 }

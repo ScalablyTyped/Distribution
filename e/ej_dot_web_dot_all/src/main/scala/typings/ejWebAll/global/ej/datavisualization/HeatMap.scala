@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.datavisualization.HeatMap")
 @js.native
-class HeatMap protected ()
+open class HeatMap protected ()
   extends StObject
      with typings.ejWebAll.ej.datavisualization.HeatMap {
   def this(element: JQuery) = this()
@@ -104,8 +104,8 @@ object HeatMap {
   /* static member */
   @JSGlobal("ej.datavisualization.HeatMap.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.datavisualization.HeatMap.TextDecoration")
   @js.native

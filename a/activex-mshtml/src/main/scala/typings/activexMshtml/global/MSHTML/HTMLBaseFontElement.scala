@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLBaseFontElement")
 @js.native
-/* private */ class HTMLBaseFontElement ()
+/* private */ open class HTMLBaseFontElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLBaseFontElement

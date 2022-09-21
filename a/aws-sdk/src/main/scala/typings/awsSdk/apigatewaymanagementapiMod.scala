@@ -5,9 +5,7 @@ import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +17,7 @@ object apigatewaymanagementapiMod {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
-  class ^ () extends ApiGatewayManagementApi {
+  open class ^ () extends ApiGatewayManagementApi {
     def this(options: ClientConfiguration) = this()
   }
   
@@ -101,7 +99,7 @@ object apigatewaymanagementapiMod {
     extends ServiceConfigurationOptions
        with ClientApiVersions
   
-  type Data = Buffer | Uint8Array | Blob | String
+  type Data = Buffer | js.typedarray.Uint8Array | Blob | String
   
   trait DeleteConnectionRequest extends StObject {
     
@@ -142,14 +140,14 @@ object apigatewaymanagementapiMod {
     /**
       * The time in ISO 8601 format for when the connection was established.
       */
-    var ConnectedAt: js.UndefOr[timestampIso8601] = js.undefined
+    var ConnectedAt: js.UndefOr[js.Date] = js.undefined
     
     var Identity: js.UndefOr[typings.awsSdk.apigatewaymanagementapiMod.Identity] = js.undefined
     
     /**
       * The time in ISO 8601 format for when the connection was last active.
       */
-    var LastActiveAt: js.UndefOr[timestampIso8601] = js.undefined
+    var LastActiveAt: js.UndefOr[js.Date] = js.undefined
   }
   object GetConnectionResponse {
     
@@ -160,7 +158,7 @@ object apigatewaymanagementapiMod {
     
     extension [Self <: GetConnectionResponse](x: Self) {
       
-      inline def setConnectedAt(value: timestampIso8601): Self = StObject.set(x, "ConnectedAt", value.asInstanceOf[js.Any])
+      inline def setConnectedAt(value: js.Date): Self = StObject.set(x, "ConnectedAt", value.asInstanceOf[js.Any])
       
       inline def setConnectedAtUndefined: Self = StObject.set(x, "ConnectedAt", js.undefined)
       
@@ -168,7 +166,7 @@ object apigatewaymanagementapiMod {
       
       inline def setIdentityUndefined: Self = StObject.set(x, "Identity", js.undefined)
       
-      inline def setLastActiveAt(value: timestampIso8601): Self = StObject.set(x, "LastActiveAt", value.asInstanceOf[js.Any])
+      inline def setLastActiveAt(value: js.Date): Self = StObject.set(x, "LastActiveAt", value.asInstanceOf[js.Any])
       
       inline def setLastActiveAtUndefined: Self = StObject.set(x, "LastActiveAt", js.undefined)
     }
@@ -239,5 +237,5 @@ object apigatewaymanagementapiMod {
   
   type string = String
   
-  type timestampIso8601 = Date
+  type timestampIso8601 = js.Date
 }

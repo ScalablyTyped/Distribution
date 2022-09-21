@@ -12,12 +12,12 @@ trait GatewayInfo extends StObject {
   var Ec2InstanceId: js.UndefOr[typings.awsSdk.storagegatewayMod.Ec2InstanceId] = js.undefined
   
   /**
-    * The AWS Region where the Amazon EC2 instance is located.
+    * The Amazon Web Services Region where the Amazon EC2 instance is located.
     */
   var Ec2InstanceRegion: js.UndefOr[typings.awsSdk.storagegatewayMod.Ec2InstanceRegion] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and AWS Region.
+    * The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and Amazon Web Services Region.
     */
   var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
   
@@ -40,6 +40,16 @@ trait GatewayInfo extends StObject {
     * The type of the gateway.
     */
   var GatewayType: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayType] = js.undefined
+  
+  /**
+    * The type of hardware or software platform on which the gateway is running.
+    */
+  var HostEnvironment: js.UndefOr[typings.awsSdk.storagegatewayMod.HostEnvironment] = js.undefined
+  
+  /**
+    * A unique identifier for the specific instance of the host platform running the gateway. This value is only available for certain host environments, and its format depends on the host environment type.
+    */
+  var HostEnvironmentId: js.UndefOr[typings.awsSdk.storagegatewayMod.HostEnvironmentId] = js.undefined
 }
 object GatewayInfo {
   
@@ -77,5 +87,13 @@ object GatewayInfo {
     inline def setGatewayType(value: GatewayType): Self = StObject.set(x, "GatewayType", value.asInstanceOf[js.Any])
     
     inline def setGatewayTypeUndefined: Self = StObject.set(x, "GatewayType", js.undefined)
+    
+    inline def setHostEnvironment(value: HostEnvironment): Self = StObject.set(x, "HostEnvironment", value.asInstanceOf[js.Any])
+    
+    inline def setHostEnvironmentId(value: HostEnvironmentId): Self = StObject.set(x, "HostEnvironmentId", value.asInstanceOf[js.Any])
+    
+    inline def setHostEnvironmentIdUndefined: Self = StObject.set(x, "HostEnvironmentId", js.undefined)
+    
+    inline def setHostEnvironmentUndefined: Self = StObject.set(x, "HostEnvironment", js.undefined)
   }
 }

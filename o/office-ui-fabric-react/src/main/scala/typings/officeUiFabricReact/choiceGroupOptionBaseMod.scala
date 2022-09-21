@@ -11,21 +11,21 @@ object choiceGroupOptionBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ChoiceGroup/ChoiceGroupOption/ChoiceGroupOption.base", "ChoiceGroupOptionBase")
   @js.native
-  class ChoiceGroupOptionBase protected ()
-    extends Component[IChoiceGroupOptionProps, js.Object, js.Any] {
+  open class ChoiceGroupOptionBase protected ()
+    extends Component[IChoiceGroupOptionProps, js.Object, Any] {
     def this(props: IChoiceGroupOptionProps) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onChange: js.Any = js.native
+    /* private */ var _onChange: Any = js.native
     
-    /* private */ var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: Any = js.native
     
-    /* private */ var _onRenderField: js.Any = js.native
+    /* private */ var _onRenderField: Any = js.native
     
-    /* private */ var _onRenderLabel: js.Any = js.native
+    /* private */ var _onRenderLabel: Any = js.native
   }
   /* static members */
   object ChoiceGroupOptionBase {

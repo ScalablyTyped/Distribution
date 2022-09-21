@@ -18,18 +18,18 @@ object mod {
   
   trait Task extends StObject {
     
-    def call(args: js.Any*): js.Any
+    def call(args: Any*): Any
   }
   object Task {
     
-    inline def apply(call: /* repeated */ js.Any => js.Any): Task = {
+    inline def apply(call: /* repeated */ Any => Any): Task = {
       val __obj = js.Dynamic.literal(call = js.Any.fromFunction1(call))
       __obj.asInstanceOf[Task]
     }
     
     extension [Self <: Task](x: Self) {
       
-      inline def setCall(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
+      inline def setCall(value: /* repeated */ Any => Any): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
     }
   }
 }

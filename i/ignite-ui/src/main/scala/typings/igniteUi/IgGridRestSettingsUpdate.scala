@@ -10,7 +10,7 @@ trait IgGridRestSettingsUpdate
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies whether update requests will be sent in batches

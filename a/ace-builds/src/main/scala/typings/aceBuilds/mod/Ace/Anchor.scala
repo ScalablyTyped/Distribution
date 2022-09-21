@@ -15,7 +15,7 @@ trait Anchor
   
   def getDocument(): Document = js.native
   
-  def getPosition(): Point = js.native
+  def getPosition(): Position = js.native
   
   def setPosition(row: Double, column: Double): Unit = js.native
   def setPosition(row: Double, column: Double, noClip: Boolean): Unit = js.native

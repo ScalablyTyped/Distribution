@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "skin-tone" : "2.0.0"
+      "skin-tone" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "skin-tone" : "2.0.0"
+      "skin-tone" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

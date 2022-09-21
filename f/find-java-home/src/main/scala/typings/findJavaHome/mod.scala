@@ -1,20 +1,26 @@
 package typings.findJavaHome
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(cb: Callback): Unit = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def apply(options: IOptions, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(optionsOrCb: Callback): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(optionsOrCb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def apply(optionsOrCb: Callback, optional: Callback): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(optionsOrCb.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def apply(optionsOrCb: IOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(optionsOrCb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def apply(optionsOrCb: IOptions, optional: Callback): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(optionsOrCb.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("find-java-home", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback = js.Function2[/* err */ Error, /* res */ js.Any, Unit]
+  @JSImport("find-java-home", "promise")
+  @js.native
+  def promise: js.Promise[String | Null] = js.native
+  inline def promise_=(x: js.Promise[String | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promise")(x.asInstanceOf[js.Any])
+  
+  type Callback = js.Function2[/* err */ js.Error, /* res */ Any, Unit]
   
   trait IOptions extends StObject {
     

@@ -8,23 +8,23 @@ trait MessageEvent
   extends StObject
      with Event {
   
-  val data: js.Any
+  val data: Any
   
   def initMessageEvent(
     typeArg: String,
     canBubbleArg: Boolean,
     cancelableArg: Boolean,
-    dataArg: js.Any,
+    dataArg: Any,
     originArg: String,
     lastEventIdArg: String,
-    sourceArg: js.Any
+    sourceArg: Any
   ): Unit
   
   val origin: String
   
-  val ports: js.Any
+  val ports: Any
   
-  val source: js.Any
+  val source: Any
 }
 object MessageEvent {
   
@@ -35,16 +35,16 @@ object MessageEvent {
     bubbles: Boolean,
     cancelable: Boolean,
     currentTarget: EventTarget,
-    data: js.Any,
+    data: Any,
     defaultPrevented: Boolean,
     eventPhase: Double,
     initEvent: (String, Boolean, Boolean) => Unit,
-    initMessageEvent: (String, Boolean, Boolean, js.Any, String, String, js.Any) => Unit,
+    initMessageEvent: (String, Boolean, Boolean, Any, String, String, Any) => Unit,
     isTrusted: Boolean,
     origin: String,
-    ports: js.Any,
+    ports: Any,
     preventDefault: () => Unit,
-    source: js.Any,
+    source: Any,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
     target: EventTarget,
@@ -58,14 +58,14 @@ object MessageEvent {
   
   extension [Self <: MessageEvent](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setInitMessageEvent(value: (String, Boolean, Boolean, js.Any, String, String, js.Any) => Unit): Self = StObject.set(x, "initMessageEvent", js.Any.fromFunction7(value))
+    inline def setInitMessageEvent(value: (String, Boolean, Boolean, Any, String, String, Any) => Unit): Self = StObject.set(x, "initMessageEvent", js.Any.fromFunction7(value))
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    inline def setPorts(value: js.Any): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: Any): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

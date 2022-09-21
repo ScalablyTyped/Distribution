@@ -20,12 +20,8 @@ trait CancellationToken extends StObject {
     *
     * @event
     */
-  def onCancellationRequested(listener: js.Function1[/* e */ js.Any, js.Any]): IDisposable = js.native
-  def onCancellationRequested(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): IDisposable = js.native
-  def onCancellationRequested(
-    listener: js.Function1[/* e */ js.Any, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[IDisposable]
-  ): IDisposable = js.native
-  def onCancellationRequested(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[IDisposable]): IDisposable = js.native
+  def onCancellationRequested(listener: js.Function1[/* e */ Any, Any]): IDisposable = js.native
+  def onCancellationRequested(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): IDisposable = js.native
+  def onCancellationRequested(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[IDisposable]): IDisposable = js.native
+  def onCancellationRequested(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[IDisposable]): IDisposable = js.native
 }

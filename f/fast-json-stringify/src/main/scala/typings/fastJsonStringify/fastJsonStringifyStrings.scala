@@ -15,6 +15,18 @@ object fastJsonStringifyStrings {
   inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
+  sealed trait ceil extends StObject
+  inline def ceil: ceil = "ceil".asInstanceOf[ceil]
+  
+  @js.native
+  sealed trait debug extends StObject
+  inline def debug: debug = "debug".asInstanceOf[debug]
+  
+  @js.native
+  sealed trait floor extends StObject
+  inline def floor: floor = "floor".asInstanceOf[floor]
+  
+  @js.native
   sealed trait integer extends StObject
   inline def integer: integer = "integer".asInstanceOf[integer]
   
@@ -29,6 +41,14 @@ object fastJsonStringifyStrings {
   @js.native
   sealed trait `object` extends StObject
   inline def `object`: `object` = "object".asInstanceOf[`object`]
+  
+  @js.native
+  sealed trait round extends StObject
+  inline def round: round = "round".asInstanceOf[round]
+  
+  @js.native
+  sealed trait standalone extends StObject
+  inline def standalone: standalone = "standalone".asInstanceOf[standalone]
   
   @js.native
   sealed trait string extends StObject

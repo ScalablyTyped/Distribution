@@ -33,7 +33,7 @@ object CoordinateSystem {
     getDimension: () => Double,
     getMaximumAxisIndexByDimension: Double => Double,
     getViewServiceName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeChartType: XChartType => Unit,
     setAxisByDimension: (Double, XAxis, Double) => Unit,

@@ -1,7 +1,7 @@
 
 # Scala.js typings for peculiar__json-schema
 
-Typings are for version 1.1.10
+Typings are for version 1.1.12
 
 ## Library description:
 This package uses ES2015 decorators to simplify JSON schema creation and use
@@ -10,10 +10,10 @@ This package uses ES2015 decorators to simplify JSON schema creation and use
 | ------------------ | :-------------: |
 | Full name          | @peculiar/json-schema |
 | Keywords           | json, stringify, serialize, parse, convert, decorator |
-| # releases         | 16 |
-| # dependents       | 7 |
-| # downloads        | 201198 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1354343.6666666667 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/PeculiarVentures/json-schema#readme)

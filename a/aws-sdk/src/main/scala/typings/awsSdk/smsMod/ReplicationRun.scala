@@ -14,7 +14,7 @@ trait ReplicationRun extends StObject {
   /**
     * The completion time of the last replication run.
     */
-  var completedTime: js.UndefOr[Timestamp] = js.undefined
+  var completedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the replication run.
@@ -39,7 +39,7 @@ trait ReplicationRun extends StObject {
   /**
     * The start time of the next replication run.
     */
-  var scheduledStartTime: js.UndefOr[Timestamp] = js.undefined
+  var scheduledStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Details about the current stage of the replication run.
@@ -74,7 +74,7 @@ object ReplicationRun {
     
     inline def setAmiIdUndefined: Self = StObject.set(x, "amiId", js.undefined)
     
-    inline def setCompletedTime(value: Timestamp): Self = StObject.set(x, "completedTime", value.asInstanceOf[js.Any])
+    inline def setCompletedTime(value: js.Date): Self = StObject.set(x, "completedTime", value.asInstanceOf[js.Any])
     
     inline def setCompletedTimeUndefined: Self = StObject.set(x, "completedTime", js.undefined)
     
@@ -94,7 +94,7 @@ object ReplicationRun {
     
     inline def setReplicationRunIdUndefined: Self = StObject.set(x, "replicationRunId", js.undefined)
     
-    inline def setScheduledStartTime(value: Timestamp): Self = StObject.set(x, "scheduledStartTime", value.asInstanceOf[js.Any])
+    inline def setScheduledStartTime(value: js.Date): Self = StObject.set(x, "scheduledStartTime", value.asInstanceOf[js.Any])
     
     inline def setScheduledStartTimeUndefined: Self = StObject.set(x, "scheduledStartTime", js.undefined)
     

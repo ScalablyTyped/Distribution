@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.DataTransfer
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait DataRequest extends StObject {
   var data: DataPackage
   
   /** Gets the deadline for finishing a delayed rendering operation. If execution goes beyond that deadline, the results of delayed rendering are ignored. */
-  var deadline: Date
+  var deadline: js.Date
   
   /**
     * Cancels the sharing operation and supplies an error string to display to the user.
@@ -30,7 +29,7 @@ object DataRequest {
   
   inline def apply(
     data: DataPackage,
-    deadline: Date,
+    deadline: js.Date,
     failWithDisplayText: String => Unit,
     getDeferral: () => DataRequestDeferral
   ): DataRequest = {
@@ -42,7 +41,7 @@ object DataRequest {
     
     inline def setData(value: DataPackage): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
     inline def setFailWithDisplayText(value: String => Unit): Self = StObject.set(x, "failWithDisplayText", js.Any.fromFunction1(value))
     

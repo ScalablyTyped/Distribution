@@ -1,8 +1,6 @@
 package typings.rabbitJs
 
-import typings.node.Buffer
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
 import typings.node.streamMod.Duplex
@@ -21,10 +19,10 @@ object mod {
   
   @JSImport("rabbit.js", "Context")
   @js.native
-  class Context () extends EventEmitter {
+  open class Context () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
-    def close(callback: js.Function): js.Any = js.native
+    def close(callback: js.Function): Any = js.native
     
     def socket[T](`type`: String): T = js.native
     def socket[T](`type`: String, options: SocketOptions): T = js.native
@@ -32,117 +30,104 @@ object mod {
   
   @JSImport("rabbit.js", "PubSocket")
   @js.native
-  class PubSocket protected ()
+  open class PubSocket protected ()
     extends Writable
        with Socket {
     def this(channel: String, opts: SocketOptions) = this()
     
-    def publish(topic: String, chunk: String): js.Any = js.native
-    def publish(topic: String, chunk: String, encoding: String): js.Any = js.native
-    def publish(topic: String, chunk: Buffer): js.Any = js.native
-    def publish(topic: String, chunk: Buffer, encoding: String): js.Any = js.native
+    /* standard dom */
+    /* InferMemberOverrides */
+    override def close(): js.Promise[Unit] & Any = js.native
+    
+    def publish(topic: String, chunk: String): Any = js.native
+    def publish(topic: String, chunk: String, encoding: String): Any = js.native
+    def publish(topic: String, chunk: Buffer): Any = js.native
+    def publish(topic: String, chunk: Buffer, encoding: String): Any = js.native
   }
   
   @JSImport("rabbit.js", "PullSocket")
   @js.native
-  class PullSocket protected ()
+  open class PullSocket protected ()
     extends Readable
        with Socket {
     def this(channel: String, opts: SocketOptions) = this()
-    
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   }
   
   @JSImport("rabbit.js", "PushSocket")
   @js.native
-  class PushSocket protected ()
+  open class PushSocket protected ()
     extends Writable
        with Socket {
     def this(channel: String, opts: SocketOptions) = this()
+    
+    /* standard dom */
+    /* InferMemberOverrides */
+    override def close(): js.Promise[Unit] & Any = js.native
   }
   
   @JSImport("rabbit.js", "RepSocket")
   @js.native
-  class RepSocket protected ()
+  open class RepSocket protected ()
     extends Duplex
        with Socket {
     def this(channel: String, opts: SocketOptions) = this()
     
-    def discard(): js.Any = js.native
+    def discard(): Any = js.native
     
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
-    
-    def requeue(): js.Any = js.native
+    def requeue(): Any = js.native
   }
   
   @JSImport("rabbit.js", "ReqSocket")
   @js.native
-  class ReqSocket protected ()
+  open class ReqSocket protected ()
     extends Duplex
        with Socket {
     def this(channel: String, opts: SocketOptions) = this()
     
-    def handleReply(msg: RequestMessage): js.Any = js.native
-    
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
+    def handleReply(msg: RequestMessage): Any = js.native
   }
   
   @JSImport("rabbit.js", "SubSocket")
   @js.native
-  class SubSocket protected ()
+  open class SubSocket protected ()
     extends Readable
        with Socket {
     def this(channel: String, opts: SocketOptions) = this()
     
-    def connect(source: String, topic: String): js.Any = js.native
-    def connect(source: String, topic: String, callback: js.Function): js.Any = js.native
-    def connect(source: String, topic: Unit, callback: js.Function): js.Any = js.native
-    
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
+    def connect(source: String, topic: String): Any = js.native
+    def connect(source: String, topic: String, callback: js.Function): Any = js.native
+    def connect(source: String, topic: Unit, callback: js.Function): Any = js.native
   }
   
   @JSImport("rabbit.js", "TaskSocket")
   @js.native
-  class TaskSocket protected ()
+  open class TaskSocket protected ()
     extends Writable
        with Socket {
     def this(channel: String, opts: SocketOptions) = this()
     
-    def post(task: String, chunk: String): js.Any = js.native
-    def post(task: String, chunk: String, encoding: String): js.Any = js.native
-    def post(task: String, chunk: Buffer): js.Any = js.native
-    def post(task: String, chunk: Buffer, encoding: String): js.Any = js.native
+    /* standard dom */
+    /* InferMemberOverrides */
+    override def close(): js.Promise[Unit] & Any = js.native
+    
+    def post(task: String, chunk: String): Any = js.native
+    def post(task: String, chunk: String, encoding: String): Any = js.native
+    def post(task: String, chunk: Buffer): Any = js.native
+    def post(task: String, chunk: Buffer, encoding: String): Any = js.native
   }
   
   @JSImport("rabbit.js", "WorkerSocket")
   @js.native
-  class WorkerSocket protected ()
+  open class WorkerSocket protected ()
     extends Readable
        with Socket {
     def this(channel: String, opts: SocketOptions) = this()
     
-    def ack(): js.Any = js.native
+    def ack(): Any = js.native
     
-    def discard(): js.Any = js.native
+    def discard(): Any = js.native
     
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
-    
-    def requeue(): js.Any = js.native
+    def requeue(): Any = js.native
   }
   
   inline def createContext(): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")().asInstanceOf[Context]
@@ -150,20 +135,20 @@ object mod {
   
   trait RequestMessage extends StObject {
     
-    var content: js.Any
+    var content: Any
     
     var properties: CorrelationId
   }
   object RequestMessage {
     
-    inline def apply(content: js.Any, properties: CorrelationId): RequestMessage = {
+    inline def apply(content: Any, properties: CorrelationId): RequestMessage = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestMessage]
     }
     
     extension [Self <: RequestMessage](x: Self) {
       
-      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setProperties(value: CorrelationId): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
@@ -172,27 +157,27 @@ object mod {
   @js.native
   trait Socket extends StObject {
     
-    def close(): js.Any = js.native
+    def close(): Any = js.native
     
-    def connect(destination: String): js.Any = js.native
-    def connect(destination: String, callback: js.Function): js.Any = js.native
+    def connect(destination: String): Any = js.native
+    def connect(destination: String, callback: js.Function): Any = js.native
     
-    def setsockopt(opt: String, value: String): js.Any = js.native
+    def setsockopt(opt: String, value: String): Any = js.native
   }
   
   trait SocketOptions extends StObject {
     
-    var expiration: js.UndefOr[js.Any] = js.undefined
+    var expiration: js.UndefOr[Any] = js.undefined
     
-    var persistent: js.UndefOr[js.Any] = js.undefined
+    var persistent: js.UndefOr[Any] = js.undefined
     
-    var prefetch: js.UndefOr[js.Any] = js.undefined
+    var prefetch: js.UndefOr[Any] = js.undefined
     
-    var routing: js.UndefOr[js.Any] = js.undefined
+    var routing: js.UndefOr[Any] = js.undefined
     
-    var task: js.UndefOr[js.Any] = js.undefined
+    var task: js.UndefOr[Any] = js.undefined
     
-    var topic: js.UndefOr[js.Any] = js.undefined
+    var topic: js.UndefOr[Any] = js.undefined
   }
   object SocketOptions {
     
@@ -203,27 +188,27 @@ object mod {
     
     extension [Self <: SocketOptions](x: Self) {
       
-      inline def setExpiration(value: js.Any): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+      inline def setExpiration(value: Any): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
       
       inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
       
-      inline def setPersistent(value: js.Any): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+      inline def setPersistent(value: Any): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       
       inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
       
-      inline def setPrefetch(value: js.Any): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
+      inline def setPrefetch(value: Any): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
       
       inline def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
       
-      inline def setRouting(value: js.Any): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
+      inline def setRouting(value: Any): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
       
       inline def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
       
-      inline def setTask(value: js.Any): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+      inline def setTask(value: Any): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
       
       inline def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
       
-      inline def setTopic(value: js.Any): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: Any): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
       
       inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     }

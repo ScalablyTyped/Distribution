@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.OctreeSceneComponent")
 @js.native
-class OctreeSceneComponent protected ()
+/**
+  * Creates a new instance of the component for the given scene
+  * @param scene Defines the scene to register the component in
+  */
+open class OctreeSceneComponent ()
   extends StObject
      with typings.babylonjs.BABYLON.OctreeSceneComponent {
-  /**
-    * Creates a new instance of the component for the given scene
-    * @param scene Defines the scene to register the component in
-    */
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /* private */ /* CompleteClass */
-  var _tempRay: js.Any = js.native
+  var _tempRay: Any = js.native
   
   /**
     * Indicates if the meshes have been checked to make sure they are isEnabled()
     */
   /* CompleteClass */
-  override val checksIsEnabled: Boolean = js.native
+  override val checksIsEnabled: /* true */ Boolean = js.native
   
   /**
-    * Disposes the component and the associated ressources.
+    * Disposes the component and the associated resources.
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
@@ -68,7 +68,7 @@ class OctreeSceneComponent protected ()
     * The component name help to identify the component in the list of scene components.
     */
   /* CompleteClass */
-  override val name: String = js.native
+  override val name: /* "Octree" */ String = js.native
   
   /**
     * Rebuilds the elements related to this component in case of

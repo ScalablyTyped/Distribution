@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-browser", "GetObjectCommand")
 @js.native
-class GetObjectCommand protected ()
+open class GetObjectCommand protected ()
   extends typings.awsSdkClientS3Browser.getObjectCommandMod.GetObjectCommand {
   def this(input: GetObjectInput) = this()
 }

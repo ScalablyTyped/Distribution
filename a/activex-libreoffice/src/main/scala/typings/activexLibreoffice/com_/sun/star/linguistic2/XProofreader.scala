@@ -62,7 +62,7 @@ object XProofreader {
     hasLocale: Locale => Boolean,
     ignoreRule: (String, Locale) => Unit,
     isSpellChecker: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     resetIgnoreRules: () => Unit
   ): XProofreader = {

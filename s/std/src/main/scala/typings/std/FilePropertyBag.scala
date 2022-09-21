@@ -8,6 +8,7 @@ trait FilePropertyBag
   extends StObject
      with BlobPropertyBag {
   
+  /* standard dom */
   var lastModified: js.UndefOr[Double] = js.undefined
 }
 object FilePropertyBag {

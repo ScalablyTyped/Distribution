@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ObjectPathStaticMethod")
 @js.native
-class ObjectPathStaticMethod protected ()
+open class ObjectPathStaticMethod protected ()
   extends StObject
      with typings.sharepoint.SP.ObjectPath {
   def this(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     typeId: String,
     methodName: String,
-    parameters: js.Array[js.Any]
+    parameters: js.Array[Any]
   ) = this()
   
   /* CompleteClass */

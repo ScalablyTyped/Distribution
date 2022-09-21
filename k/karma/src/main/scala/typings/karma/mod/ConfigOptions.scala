@@ -1,8 +1,12 @@
 package typings.karma.mod
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.log4js.mod.Appender
 import typings.node.httpsMod.ServerOptions
+import typings.node.nodeHttpMod.IncomingMessage
+import typings.node.nodeHttpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -247,7 +251,15 @@ trait ConfigOptions extends StObject {
     * Object description can be found in the
     * [NodeJS.org API docs](https://nodejs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener)
     */
-  var httpsServerOptions: js.UndefOr[ServerOptions] = js.undefined
+  var httpsServerOptions: js.UndefOr[
+    ServerOptions[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[typings.node.httpMod.IncomingMessage]
+      ]
+    ]
+  ] = js.undefined
   
   /**
     * Address that the server will listen on. Change to 'localhost' to only listen to the loopback, or '::' to listen on all IPv6 interfaces
@@ -366,14 +378,14 @@ trait ConfigOptions extends StObject {
     * @default undefined
     */
   var proxyReq: js.UndefOr[
-    js.Function4[/* proxyReq */ js.Any, /* req */ js.Any, /* res */ js.Any, /* options */ js.Object, Unit]
+    js.Function4[/* proxyReq */ Any, /* req */ Any, /* res */ Any, /* options */ js.Object, Unit]
   ] = js.undefined
   
   /**
     * Called when respnsing Proxy
     * @default undefined
     */
-  var proxyRes: js.UndefOr[js.Function3[/* proxyRes */ js.Any, /* req */ js.Any, /* res */ js.Any, Unit]] = js.undefined
+  var proxyRes: js.UndefOr[js.Function3[/* proxyRes */ Any, /* req */ Any, /* res */ Any, Unit]] = js.undefined
   
   /**
     * @default true
@@ -468,7 +480,7 @@ object ConfigOptions {
     
     inline def setBeforeMiddlewareUndefined: Self = StObject.set(x, "beforeMiddleware", js.undefined)
     
-    inline def setBeforeMiddlewareVarargs(value: String*): Self = StObject.set(x, "beforeMiddleware", js.Array(value :_*))
+    inline def setBeforeMiddlewareVarargs(value: String*): Self = StObject.set(x, "beforeMiddleware", js.Array(value*))
     
     inline def setBrowserConsoleLogOptions(value: BrowserConsoleLogOptions): Self = StObject.set(x, "browserConsoleLogOptions", value.asInstanceOf[js.Any])
     
@@ -494,7 +506,7 @@ object ConfigOptions {
     
     inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
     
-    inline def setBrowsersVarargs(value: (AutomatedBrowsers | String)*): Self = StObject.set(x, "browsers", js.Array(value :_*))
+    inline def setBrowsersVarargs(value: (AutomatedBrowsers | String)*): Self = StObject.set(x, "browsers", js.Array(value*))
     
     inline def setCaptureTimeout(value: Double): Self = StObject.set(x, "captureTimeout", value.asInstanceOf[js.Any])
     
@@ -532,7 +544,7 @@ object ConfigOptions {
     
     inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
     
-    inline def setCustomHeadersVarargs(value: CustomHeaders*): Self = StObject.set(x, "customHeaders", js.Array(value :_*))
+    inline def setCustomHeadersVarargs(value: CustomHeaders*): Self = StObject.set(x, "customHeaders", js.Array(value*))
     
     inline def setCustomLaunchers(value: StringDictionary[CustomLauncher]): Self = StObject.set(x, "customLaunchers", value.asInstanceOf[js.Any])
     
@@ -546,7 +558,7 @@ object ConfigOptions {
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
     
     inline def setFailOnEmptyTestSuite(value: Boolean): Self = StObject.set(x, "failOnEmptyTestSuite", value.asInstanceOf[js.Any])
     
@@ -564,7 +576,7 @@ object ConfigOptions {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: (FilePattern | String)*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: (FilePattern | String)*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setForceJSONP(value: Boolean): Self = StObject.set(x, "forceJSONP", value.asInstanceOf[js.Any])
     
@@ -578,7 +590,7 @@ object ConfigOptions {
     
     inline def setFrameworksUndefined: Self = StObject.set(x, "frameworks", js.undefined)
     
-    inline def setFrameworksVarargs(value: String*): Self = StObject.set(x, "frameworks", js.Array(value :_*))
+    inline def setFrameworksVarargs(value: String*): Self = StObject.set(x, "frameworks", js.Array(value*))
     
     inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
@@ -588,7 +600,15 @@ object ConfigOptions {
     
     inline def setHttpModuleUndefined: Self = StObject.set(x, "httpModule", js.undefined)
     
-    inline def setHttpsServerOptions(value: ServerOptions): Self = StObject.set(x, "httpsServerOptions", value.asInstanceOf[js.Any])
+    inline def setHttpsServerOptions(
+      value: ServerOptions[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[typings.node.httpMod.IncomingMessage]
+          ]
+        ]
+    ): Self = StObject.set(x, "httpsServerOptions", value.asInstanceOf[js.Any])
     
     inline def setHttpsServerOptionsUndefined: Self = StObject.set(x, "httpsServerOptions", js.undefined)
     
@@ -604,13 +624,13 @@ object ConfigOptions {
     
     inline def setLoggersUndefined: Self = StObject.set(x, "loggers", js.undefined)
     
-    inline def setLoggersVarargs(value: Appender*): Self = StObject.set(x, "loggers", js.Array(value :_*))
+    inline def setLoggersVarargs(value: Appender*): Self = StObject.set(x, "loggers", js.Array(value*))
     
     inline def setMiddleware(value: js.Array[String]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
     
     inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
     
-    inline def setMiddlewareVarargs(value: String*): Self = StObject.set(x, "middleware", js.Array(value :_*))
+    inline def setMiddlewareVarargs(value: String*): Self = StObject.set(x, "middleware", js.Array(value*))
     
     inline def setMime(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
@@ -624,7 +644,7 @@ object ConfigOptions {
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    inline def setPluginsVarargs(value: (PluginName | InlinePluginDef)*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: (PluginName | InlinePluginDef)*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
@@ -646,13 +666,11 @@ object ConfigOptions {
     
     inline def setProxiesUndefined: Self = StObject.set(x, "proxies", js.undefined)
     
-    inline def setProxyReq(
-      value: (/* proxyReq */ js.Any, /* req */ js.Any, /* res */ js.Any, /* options */ js.Object) => Unit
-    ): Self = StObject.set(x, "proxyReq", js.Any.fromFunction4(value))
+    inline def setProxyReq(value: (/* proxyReq */ Any, /* req */ Any, /* res */ Any, /* options */ js.Object) => Unit): Self = StObject.set(x, "proxyReq", js.Any.fromFunction4(value))
     
     inline def setProxyReqUndefined: Self = StObject.set(x, "proxyReq", js.undefined)
     
-    inline def setProxyRes(value: (/* proxyRes */ js.Any, /* req */ js.Any, /* res */ js.Any) => Unit): Self = StObject.set(x, "proxyRes", js.Any.fromFunction3(value))
+    inline def setProxyRes(value: (/* proxyRes */ Any, /* req */ Any, /* res */ Any) => Unit): Self = StObject.set(x, "proxyRes", js.Any.fromFunction3(value))
     
     inline def setProxyResUndefined: Self = StObject.set(x, "proxyRes", js.undefined)
     
@@ -668,7 +686,7 @@ object ConfigOptions {
     
     inline def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
     
-    inline def setReportersVarargs(value: String*): Self = StObject.set(x, "reporters", js.Array(value :_*))
+    inline def setReportersVarargs(value: String*): Self = StObject.set(x, "reporters", js.Array(value*))
     
     inline def setRestartOnFileChange(value: Boolean): Self = StObject.set(x, "restartOnFileChange", value.asInstanceOf[js.Any])
     
@@ -686,7 +704,7 @@ object ConfigOptions {
     
     inline def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
     
-    inline def setTransportsVarargs(value: String*): Self = StObject.set(x, "transports", js.Array(value :_*))
+    inline def setTransportsVarargs(value: String*): Self = StObject.set(x, "transports", js.Array(value*))
     
     inline def setUpstreamProxy(value: UpstreamProxy): Self = StObject.set(x, "upstreamProxy", value.asInstanceOf[js.Any])
     

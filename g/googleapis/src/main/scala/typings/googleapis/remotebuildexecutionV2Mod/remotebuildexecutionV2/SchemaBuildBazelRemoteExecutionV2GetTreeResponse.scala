@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A response message for ContentAddressableStorage.GetTree.
-  */
 trait SchemaBuildBazelRemoteExecutionV2GetTreeResponse extends StObject {
   
   /**
@@ -15,11 +12,9 @@ trait SchemaBuildBazelRemoteExecutionV2GetTreeResponse extends StObject {
   var directories: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2Directory]] = js.undefined
   
   /**
-    * If present, signifies that there are more results which the client can
-    * retrieve by passing this as the page_token in a subsequent request. If
-    * empty, signifies that this is the last page of results.
+    * If present, signifies that there are more results which the client can retrieve by passing this as the page_token in a subsequent request. If empty, signifies that this is the last page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2GetTreeResponse {
   
@@ -34,9 +29,11 @@ object SchemaBuildBazelRemoteExecutionV2GetTreeResponse {
     
     inline def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
-    inline def setDirectoriesVarargs(value: SchemaBuildBazelRemoteExecutionV2Directory*): Self = StObject.set(x, "directories", js.Array(value :_*))
+    inline def setDirectoriesVarargs(value: SchemaBuildBazelRemoteExecutionV2Directory*): Self = StObject.set(x, "directories", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

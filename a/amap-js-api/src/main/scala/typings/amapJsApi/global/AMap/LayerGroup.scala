@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("AMap.LayerGroup")
 @js.native
-class LayerGroup[L] protected ()
+open class LayerGroup[L] protected ()
   extends StObject
      with typings.amapJsApi.AMap.LayerGroup[L] {
   /**

@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait AllowParameters extends StObject {
+  trait ProhibitParameters extends StObject {
     
-    var allowParameters: js.UndefOr[Boolean] = js.undefined
+    var prohibitParameters: js.UndefOr[Boolean] = js.undefined
   }
-  object AllowParameters {
+  object ProhibitParameters {
     
-    inline def apply(): AllowParameters = {
+    inline def apply(): ProhibitParameters = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AllowParameters]
+      __obj.asInstanceOf[ProhibitParameters]
     }
     
-    extension [Self <: AllowParameters](x: Self) {
+    extension [Self <: ProhibitParameters](x: Self) {
       
-      inline def setAllowParameters(value: Boolean): Self = StObject.set(x, "allowParameters", value.asInstanceOf[js.Any])
+      inline def setProhibitParameters(value: Boolean): Self = StObject.set(x, "prohibitParameters", value.asInstanceOf[js.Any])
       
-      inline def setAllowParametersUndefined: Self = StObject.set(x, "allowParameters", js.undefined)
+      inline def setProhibitParametersUndefined: Self = StObject.set(x, "prohibitParameters", js.undefined)
     }
   }
 }

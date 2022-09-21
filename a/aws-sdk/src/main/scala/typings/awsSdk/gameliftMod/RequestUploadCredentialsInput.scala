@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestUploadCredentialsInput extends StObject {
   
   /**
-    * A unique identifier for a build to get credentials for. You can use either the build ID or ARN value. 
+    * A unique identifier for the build to get credentials for. You can use either the build ID or ARN value. 
     */
   var BuildId: BuildIdOrArn
 }

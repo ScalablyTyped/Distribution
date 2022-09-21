@@ -35,7 +35,7 @@ object GetItemOptions {
     
     inline def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
     
-    inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
+    inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value*))
     
     inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
     

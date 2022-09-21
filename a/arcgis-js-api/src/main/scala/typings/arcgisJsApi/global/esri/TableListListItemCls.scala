@@ -7,12 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.TableListListItem")
 @js.native
-class TableListListItemCls ()
+/**
+  * In the [TableList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html) widget UI, the ListItem represents a layer's table added to the widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html)
+  */
+open class TableListListItemCls ()
   extends StObject
      with typings.arcgisJsApi.esri.TableListListItem {
   
   /**
     * Indicates whether the actions panel is open in the TableList.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#actionsOpen)
     */
@@ -38,7 +45,19 @@ class TableListListItemCls ()
   override val error: typings.arcgisJsApi.esri.Error = js.native
   
   /**
+    * When `true`, hides the layer from the TableList instance.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#hidden)
+    */
+  /* CompleteClass */
+  var hidden: Boolean = js.native
+  
+  /**
     * The layer associated with the triggered action.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#layer)
     */

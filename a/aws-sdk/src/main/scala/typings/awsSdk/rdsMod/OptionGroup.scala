@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionGroup extends StObject {
   
   /**
-    * Indicates whether this option group can be applied to both VPC and non-VPC instances. The value true indicates the option group can be applied to both VPC and non-VPC instances. 
+    * Indicates whether this option group can be applied to both VPC and non-VPC instances. The value true indicates the option group can be applied to both VPC and non-VPC instances.
     */
   var AllowsVpcAndNonVpcInstanceMemberships: js.UndefOr[Boolean] = js.undefined
   
@@ -42,7 +42,7 @@ trait OptionGroup extends StObject {
   var Options: js.UndefOr[OptionsList] = js.undefined
   
   /**
-    * If AllowsVpcAndNonVpcInstanceMemberships is false, this field is blank. If AllowsVpcAndNonVpcInstanceMemberships is true and this field is blank, then this option group can be applied to both VPC and non-VPC instances. If this field contains a value, then this option group can only be applied to instances that are in the VPC indicated by this field. 
+    * If AllowsVpcAndNonVpcInstanceMemberships is false, this field is blank. If AllowsVpcAndNonVpcInstanceMemberships is true and this field is blank, then this option group can be applied to both VPC and non-VPC instances. If this field contains a value, then this option group can only be applied to instances that are in the VPC indicated by this field.
     */
   var VpcId: js.UndefOr[String] = js.undefined
 }
@@ -83,7 +83,7 @@ object OptionGroup {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
-    inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "Options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "Options", js.Array(value*))
     
     inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

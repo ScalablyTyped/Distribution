@@ -1,10 +1,8 @@
 package typings.qunitDom
 
-import typings.qunitDom.anon.Any
 import typings.qunitDom.mod.global.Assert
 import typings.std.Document
 import typings.std.Element
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +11,7 @@ object assertionsMod {
   
   @JSImport("qunit-dom/dist/assertions", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with DOMAssertions {
     def this(target: String, rootElement: Document, testContext: Assert) = this()
@@ -26,9 +24,9 @@ object assertionsMod {
   
   trait AssertionResult extends StObject {
     
-    var actual: js.Any
+    var actual: Any
     
-    var expected: js.Any
+    var expected: Any
     
     var message: String
     
@@ -36,16 +34,16 @@ object assertionsMod {
   }
   object AssertionResult {
     
-    inline def apply(actual: js.Any, expected: js.Any, message: String, result: Boolean): AssertionResult = {
+    inline def apply(actual: Any, expected: Any, message: String, result: Boolean): AssertionResult = {
       val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssertionResult]
     }
     
     extension [Self <: AssertionResult](x: Self) {
       
-      inline def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
-      inline def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+      inline def setExpected(value: Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -128,8 +126,8 @@ object assertionsMod {
       */
     def doesNotHaveClass(expected: String): DOMAssertions = js.native
     def doesNotHaveClass(expected: String, message: String): DOMAssertions = js.native
-    def doesNotHaveClass(expected: RegExp): DOMAssertions = js.native
-    def doesNotHaveClass(expected: RegExp, message: String): DOMAssertions = js.native
+    def doesNotHaveClass(expected: js.RegExp): DOMAssertions = js.native
+    def doesNotHaveClass(expected: js.RegExp, message: String): DOMAssertions = js.native
     
     def doesNotHavePseudoElementStyle(selector: String, expected: js.Object, message: String): DOMAssertions = js.native
     
@@ -236,7 +234,7 @@ object assertionsMod {
       * @returns (HTMLElement|null) a valid HTMLElement, or null
       * @throws TypeError will be thrown if target is an unrecognized type
       */
-    /* private */ var findElement: js.Any = js.native
+    /* private */ var findElement: Any = js.native
     
     /**
       * Finds a collection of Element instances from target using querySelectorAll
@@ -244,7 +242,7 @@ object assertionsMod {
       * @returns (Element[]) an array of Element instances
       * @throws TypeError will be thrown if target is an unrecognized type
       */
-    /* private */ var findElements: js.Any = js.native
+    /* private */ var findElements: Any = js.native
     
     /**
       * Finds a valid HTMLElement from target, or pushes a failing assertion if a valid
@@ -252,7 +250,7 @@ object assertionsMod {
       * @private
       * @returns (HTMLElement|null) a valid HTMLElement, or null
       */
-    /* private */ var findTargetElement: js.Any = js.native
+    /* private */ var findTargetElement: Any = js.native
     
     /**
       * Assert that the `textContent` property of an {@link HTMLElement} is not empty.
@@ -298,11 +296,11 @@ object assertionsMod {
     def hasAria(name: String): DOMAssertions = js.native
     def hasAria(name: String, value: String): DOMAssertions = js.native
     def hasAria(name: String, value: String, message: String): DOMAssertions = js.native
+    def hasAria(name: String, value: js.RegExp): DOMAssertions = js.native
+    def hasAria(name: String, value: js.RegExp, message: String): DOMAssertions = js.native
     def hasAria(name: String, value: Unit, message: String): DOMAssertions = js.native
-    def hasAria(name: String, value: Any): DOMAssertions = js.native
-    def hasAria(name: String, value: Any, message: String): DOMAssertions = js.native
-    def hasAria(name: String, value: RegExp): DOMAssertions = js.native
-    def hasAria(name: String, value: RegExp, message: String): DOMAssertions = js.native
+    def hasAria(name: String, value: typings.qunitDom.anon.Any): DOMAssertions = js.native
+    def hasAria(name: String, value: typings.qunitDom.anon.Any, message: String): DOMAssertions = js.native
     
     /**
       * Assert that the {@link HTMLElement} has an attribute with the provided `name`.
@@ -331,10 +329,10 @@ object assertionsMod {
       */
     def hasAttribute(name: String, value: String): DOMAssertions = js.native
     def hasAttribute(name: String, value: String, message: String): DOMAssertions = js.native
-    def hasAttribute(name: String, value: Any): DOMAssertions = js.native
-    def hasAttribute(name: String, value: Any, message: String): DOMAssertions = js.native
-    def hasAttribute(name: String, value: RegExp): DOMAssertions = js.native
-    def hasAttribute(name: String, value: RegExp, message: String): DOMAssertions = js.native
+    def hasAttribute(name: String, value: js.RegExp): DOMAssertions = js.native
+    def hasAttribute(name: String, value: js.RegExp, message: String): DOMAssertions = js.native
+    def hasAttribute(name: String, value: typings.qunitDom.anon.Any): DOMAssertions = js.native
+    def hasAttribute(name: String, value: typings.qunitDom.anon.Any, message: String): DOMAssertions = js.native
     
     /**
       * Assert that the {@link HTMLElement} has the `expected` CSS class using
@@ -356,16 +354,16 @@ object assertionsMod {
       */
     def hasClass(expected: String): DOMAssertions = js.native
     def hasClass(expected: String, message: String): DOMAssertions = js.native
-    def hasClass(expected: RegExp): DOMAssertions = js.native
-    def hasClass(expected: RegExp, message: String): DOMAssertions = js.native
+    def hasClass(expected: js.RegExp): DOMAssertions = js.native
+    def hasClass(expected: js.RegExp, message: String): DOMAssertions = js.native
     
     def hasNoAttribute(name: String): DOMAssertions = js.native
     def hasNoAttribute(name: String, message: String): DOMAssertions = js.native
     
     def hasNoClass(expected: String): DOMAssertions = js.native
     def hasNoClass(expected: String, message: String): DOMAssertions = js.native
-    def hasNoClass(expected: RegExp): DOMAssertions = js.native
-    def hasNoClass(expected: RegExp, message: String): DOMAssertions = js.native
+    def hasNoClass(expected: js.RegExp): DOMAssertions = js.native
+    def hasNoClass(expected: js.RegExp, message: String): DOMAssertions = js.native
     
     /**
       * Assert that the `textContent` property of an {@link HTMLElement} is empty.
@@ -410,8 +408,8 @@ object assertionsMod {
       *
       * @see {@link #doesNotHaveProperty}
       */
-    def hasProperty(name: String, value: js.Any): DOMAssertions = js.native
-    def hasProperty(name: String, value: js.Any, message: String): DOMAssertions = js.native
+    def hasProperty(name: String, value: Any): DOMAssertions = js.native
+    def hasProperty(name: String, value: Any, message: String): DOMAssertions = js.native
     
     def hasPseudoElementStyle(selector: String, expected: js.Object): DOMAssertions = js.native
     def hasPseudoElementStyle(selector: String, expected: js.Object, message: String): DOMAssertions = js.native
@@ -484,10 +482,10 @@ object assertionsMod {
       */
     def hasText(expected: String): DOMAssertions = js.native
     def hasText(expected: String, message: String): DOMAssertions = js.native
-    def hasText(expected: Any): DOMAssertions = js.native
-    def hasText(expected: Any, message: String): DOMAssertions = js.native
-    def hasText(expected: RegExp): DOMAssertions = js.native
-    def hasText(expected: RegExp, message: String): DOMAssertions = js.native
+    def hasText(expected: js.RegExp): DOMAssertions = js.native
+    def hasText(expected: js.RegExp, message: String): DOMAssertions = js.native
+    def hasText(expected: typings.qunitDom.anon.Any): DOMAssertions = js.native
+    def hasText(expected: typings.qunitDom.anon.Any, message: String): DOMAssertions = js.native
     
     def hasTextContaining(expected: String): DOMAssertions = js.native
     def hasTextContaining(expected: String, message: String): DOMAssertions = js.native
@@ -511,11 +509,11 @@ object assertionsMod {
     def hasValue(): DOMAssertions = js.native
     def hasValue(expected: String): DOMAssertions = js.native
     def hasValue(expected: String, message: String): DOMAssertions = js.native
+    def hasValue(expected: js.RegExp): DOMAssertions = js.native
+    def hasValue(expected: js.RegExp, message: String): DOMAssertions = js.native
     def hasValue(expected: Unit, message: String): DOMAssertions = js.native
-    def hasValue(expected: Any): DOMAssertions = js.native
-    def hasValue(expected: Any, message: String): DOMAssertions = js.native
-    def hasValue(expected: RegExp): DOMAssertions = js.native
-    def hasValue(expected: RegExp, message: String): DOMAssertions = js.native
+    def hasValue(expected: typings.qunitDom.anon.Any): DOMAssertions = js.native
+    def hasValue(expected: typings.qunitDom.anon.Any, message: String): DOMAssertions = js.native
     
     /**
       * Assert that the text of the {@link HTMLElement} or an {@link HTMLElement}
@@ -768,8 +766,8 @@ object assertionsMod {
     
     def lacksClass(expected: String): DOMAssertions = js.native
     def lacksClass(expected: String, message: String): DOMAssertions = js.native
-    def lacksClass(expected: RegExp): DOMAssertions = js.native
-    def lacksClass(expected: RegExp, message: String): DOMAssertions = js.native
+    def lacksClass(expected: js.RegExp): DOMAssertions = js.native
+    def lacksClass(expected: js.RegExp, message: String): DOMAssertions = js.native
     
     def lacksValue(): DOMAssertions = js.native
     def lacksValue(message: String): DOMAssertions = js.native
@@ -789,26 +787,26 @@ object assertionsMod {
     
     def matchesText(expected: String): DOMAssertions = js.native
     def matchesText(expected: String, message: String): DOMAssertions = js.native
-    def matchesText(expected: Any): DOMAssertions = js.native
-    def matchesText(expected: Any, message: String): DOMAssertions = js.native
-    def matchesText(expected: RegExp): DOMAssertions = js.native
-    def matchesText(expected: RegExp, message: String): DOMAssertions = js.native
+    def matchesText(expected: js.RegExp): DOMAssertions = js.native
+    def matchesText(expected: js.RegExp, message: String): DOMAssertions = js.native
+    def matchesText(expected: typings.qunitDom.anon.Any): DOMAssertions = js.native
+    def matchesText(expected: typings.qunitDom.anon.Any, message: String): DOMAssertions = js.native
     
     /**
       * @private
       */
-    /* private */ var pushResult: js.Any = js.native
+    /* private */ var pushResult: Any = js.native
     
-    /* private */ var rootElement: js.Any = js.native
+    /* private */ var rootElement: Any = js.native
     
-    /* private */ var target: js.Any = js.native
+    /* private */ var target: Any = js.native
     
     /**
       * @private
       */
-    /* private */ def targetDescription: js.Any = js.native
+    /* private */ def targetDescription: Any = js.native
     
-    /* private */ var testContext: js.Any = js.native
+    /* private */ var testContext: Any = js.native
   }
   
   trait ExistsOptions extends StObject {

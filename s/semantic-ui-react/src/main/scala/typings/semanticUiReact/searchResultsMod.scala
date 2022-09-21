@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +13,12 @@ object searchResultsMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/modules/Search/SearchResults", JSImport.Default)
   @js.native
-  val default: StatelessComponent[SearchResultsProps] = js.native
+  val default: FC[SearchResultsProps] = js.native
   
   trait SearchResultsProps
     extends StObject
        with StrictSearchResultsProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object SearchResultsProps {
     
     inline def apply(): SearchResultsProps = {
@@ -30,7 +30,7 @@ object searchResultsMod extends Shortcut {
   trait StrictSearchResultsProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -50,7 +50,7 @@ object searchResultsMod extends Shortcut {
     
     extension [Self <: StrictSearchResultsProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -68,8 +68,8 @@ object searchResultsMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[SearchResultsProps]
+  type _To = FC[SearchResultsProps]
   
   /* This means you don't have to write `default`, but can instead just say `searchResultsMod.foo` */
-  override def _to: StatelessComponent[SearchResultsProps] = default
+  override def _to: FC[SearchResultsProps] = default
 }

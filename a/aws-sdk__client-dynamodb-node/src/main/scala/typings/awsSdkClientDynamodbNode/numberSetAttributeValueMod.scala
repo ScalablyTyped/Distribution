@@ -8,5 +8,5 @@ object numberSetAttributeValueMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/_NumberSetAttributeValue", "_NumberSetAttributeValue")
   @js.native
-  val NumberSetAttributeValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val NumberSetAttributeValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

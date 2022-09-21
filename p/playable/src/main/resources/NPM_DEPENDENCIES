@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "playable" : "2.11.1"
+      "playable" : "2.13.0"
     }
   ],
   "test-dependencies" : [
     {
-      "playable" : "2.11.1"
+      "playable" : "2.13.0"
     }
   ],
   "compile-devDependencies" : [

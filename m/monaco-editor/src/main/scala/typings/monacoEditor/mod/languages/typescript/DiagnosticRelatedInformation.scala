@@ -1,5 +1,6 @@
 package typings.monacoEditor.mod.languages.typescript
 
+import typings.monacoEditor.anon.FileName
 import typings.monacoEditor.monacoEditorNumbers.`0`
 import typings.monacoEditor.monacoEditorNumbers.`1`
 import typings.monacoEditor.monacoEditorNumbers.`2`
@@ -15,8 +16,8 @@ trait DiagnosticRelatedInformation extends StObject {
   
   var code: Double
   
-  /** TypeScriptWorker removes this to avoid serializing circular JSON structures. */
-  var file: Unit
+  /** TypeScriptWorker removes all but the `fileName` property to avoid serializing circular JSON structures. */
+  var file: js.UndefOr[FileName] = js.undefined
   
   var length: js.UndefOr[Double] = js.undefined
   
@@ -26,13 +27,8 @@ trait DiagnosticRelatedInformation extends StObject {
 }
 object DiagnosticRelatedInformation {
   
-  inline def apply(
-    category: `0` | `1` | `2` | `3`,
-    code: Double,
-    file: Unit,
-    messageText: String | DiagnosticMessageChain
-  ): DiagnosticRelatedInformation = {
-    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any])
+  inline def apply(category: `0` | `1` | `2` | `3`, code: Double, messageText: String | DiagnosticMessageChain): DiagnosticRelatedInformation = {
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticRelatedInformation]
   }
   
@@ -42,7 +38,9 @@ object DiagnosticRelatedInformation {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    inline def setFile(value: Unit): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: FileName): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

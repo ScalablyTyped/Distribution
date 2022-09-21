@@ -1,7 +1,7 @@
 
 # Scala.js typings for workerpool
 
-Typings are for version 6.0
+Typings are for version 6.1
 
 ## Library description:
 Offload tasks to a pool of workers on node.js and in the browser
@@ -10,15 +10,12 @@ Offload tasks to a pool of workers on node.js and in the browser
 | ------------------ | :-------------: |
 | Full name          | workerpool |
 | Keywords           | worker, web worker, cluster, pool, isomorphic |
-| # releases         | 14 |
-| # dependents       | 61 |
-| # downloads        | 49327953 |
-| # stars            | 8 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7111275E7 |
+| # stars            | 1308.0 |
 
 ## Links
-- [Homepage](https://github.com/josdejong/workerpool)
-- [Bugs](https://github.com/josdejong/workerpool/issues)
-- [Repository](https://github.com/josdejong/workerpool)
 - [Npm](https://www.npmjs.com/package/workerpool)
     
 

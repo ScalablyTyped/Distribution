@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html)
   */
-class BaseLayerViewGL2DCls ()
+open class BaseLayerViewGL2DCls ()
   extends StObject
      with typings.arcgisJsApi.esri.BaseLayerViewGL2D {
   def this(properties: BaseLayerViewGL2DProperties) = this()

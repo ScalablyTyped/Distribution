@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpotInstanceRequest extends StObject {
   
   /**
-    * If you specified a duration and your Spot Instance request was fulfilled, this is the fixed hourly price in effect for the Spot Instance while it runs.
+    * Deprecated.
     */
   var ActualBlockHourlyPrice: js.UndefOr[String] = js.undefined
   
@@ -17,14 +17,14 @@ trait SpotInstanceRequest extends StObject {
   var AvailabilityZoneGroup: js.UndefOr[String] = js.undefined
   
   /**
-    * The duration for the Spot Instance, in minutes.
+    * Deprecated.
     */
   var BlockDurationMinutes: js.UndefOr[Integer] = js.undefined
   
   /**
     * The date and time when the Spot Instance request was created, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var CreateTime: js.UndefOr[DateTime] = js.undefined
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The fault codes for the Spot Instance request, if any.
@@ -67,12 +67,12 @@ trait SpotInstanceRequest extends StObject {
   var SpotInstanceRequestId: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum price per hour that you are willing to pay for a Spot Instance.
+    * The maximum price per unit hour that you are willing to pay for a Spot Instance. We do not recommend using this parameter because it can lead to increased interruptions. If you do not specify this parameter, you will pay the current Spot price.  If you specify a maximum price, your instances will be interrupted more frequently than if you do not specify this parameter. 
     */
   var SpotPrice: js.UndefOr[String] = js.undefined
   
   /**
-    * The state of the Spot Instance request. Spot status information helps track your Spot Instance requests. For more information, see Spot status in the Amazon EC2 User Guide for Linux Instances.
+    * The state of the Spot Instance request. Spot request status information helps track your Spot Instance requests. For more information, see Spot request status in the Amazon EC2 User Guide for Linux Instances.
     */
   var State: js.UndefOr[SpotInstanceState] = js.undefined
   
@@ -94,12 +94,12 @@ trait SpotInstanceRequest extends StObject {
   /**
     * The start date of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). The request becomes active at this date and time.
     */
-  var ValidFrom: js.UndefOr[DateTime] = js.undefined
+  var ValidFrom: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The end date of the request, in UTC format (YYYY-MM-DDTHH:MM:SSZ).   For a persistent request, the request remains active until the validUntil date and time is reached. Otherwise, the request remains active until you cancel it.    For a one-time request, the request remains active until all instances launch, the request is canceled, or the validUntil date and time is reached. By default, the request is valid for 7 days from the date the request was created.  
     */
-  var ValidUntil: js.UndefOr[DateTime] = js.undefined
+  var ValidUntil: js.UndefOr[js.Date] = js.undefined
 }
 object SpotInstanceRequest {
   
@@ -122,7 +122,7 @@ object SpotInstanceRequest {
     
     inline def setBlockDurationMinutesUndefined: Self = StObject.set(x, "BlockDurationMinutes", js.undefined)
     
-    inline def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
@@ -174,17 +174,17 @@ object SpotInstanceRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setType(value: SpotInstanceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    inline def setValidFrom(value: DateTime): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
+    inline def setValidFrom(value: js.Date): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
     
     inline def setValidFromUndefined: Self = StObject.set(x, "ValidFrom", js.undefined)
     
-    inline def setValidUntil(value: DateTime): Self = StObject.set(x, "ValidUntil", value.asInstanceOf[js.Any])
+    inline def setValidUntil(value: js.Date): Self = StObject.set(x, "ValidUntil", value.asInstanceOf[js.Any])
     
     inline def setValidUntilUndefined: Self = StObject.set(x, "ValidUntil", js.undefined)
   }

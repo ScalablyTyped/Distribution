@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertTablesCaptionCommand")
 @js.native
-class InsertTablesCaptionCommand ()
+open class InsertTablesCaptionCommand ()
   extends StObject
      with typings.devexpressWeb.InsertTablesCaptionCommand {
   

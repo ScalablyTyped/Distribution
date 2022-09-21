@@ -17,7 +17,7 @@ trait CreateVirtualRouterInput extends StObject {
   var meshName: ResourceName
   
   /**
-    * The AWS IAM account ID of the service mesh owner. If the account ID is not your own, then the account that you specify must share the mesh with your account before you can create the resource in the service mesh. For more information about mesh sharing, see Working with shared meshes.
+    * The Amazon Web Services IAM account ID of the service mesh owner. If the account ID is not your own, then the account that you specify must share the mesh with your account before you can create the resource in the service mesh. For more information about mesh sharing, see Working with shared meshes.
     */
   var meshOwner: js.UndefOr[AccountId] = js.undefined
   
@@ -61,7 +61,7 @@ object CreateVirtualRouterInput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: TagRef*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagRef*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setVirtualRouterName(value: ResourceName): Self = StObject.set(x, "virtualRouterName", value.asInstanceOf[js.Any])
   }

@@ -9,24 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dataflowV1b3 {
   
-  /**
-    * Dataflow API
-    *
-    * Manages Google Cloud Dataflow projects on Google Cloud Platform.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const dataflow = google.dataflow('v1b3');
-    *
-    * @namespace dataflow
-    * @type {Function}
-    * @version v1b3
-    * @variation v1b3
-    * @param {object=} options Options for Dataflow
-    */
   @JSImport("googleapis", "dataflow_v1b3.Dataflow")
   @js.native
-  class Dataflow protected ()
+  open class Dataflow protected ()
     extends typings.googleapis.v1b3Mod.dataflowV1b3.Dataflow {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -34,84 +19,126 @@ object dataflowV1b3 {
   
   @JSImport("googleapis", "dataflow_v1b3.Resource$Projects")
   @js.native
-  class ResourceProjects protected ()
+  open class ResourceProjects protected ()
     extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjects {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Jobs")
   @js.native
-  class ResourceProjectsJobs protected ()
+  open class ResourceProjectsJobs protected ()
     extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsJobs {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Jobs$Debug")
   @js.native
-  class ResourceProjectsJobsDebug protected ()
+  open class ResourceProjectsJobsDebug protected ()
     extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsJobsDebug {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Jobs$Messages")
   @js.native
-  class ResourceProjectsJobsMessages protected ()
+  open class ResourceProjectsJobsMessages protected ()
     extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsJobsMessages {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Jobs$Workitems")
   @js.native
-  class ResourceProjectsJobsWorkitems protected ()
+  open class ResourceProjectsJobsWorkitems protected ()
     extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsJobsWorkitems {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Locations")
   @js.native
-  class ResourceProjectsLocations protected ()
+  open class ResourceProjectsLocations protected ()
     extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsLocations {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Locations$Flextemplates")
+  @js.native
+  open class ResourceProjectsLocationsFlextemplates protected ()
+    extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsLocationsFlextemplates {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Locations$Jobs")
   @js.native
-  class ResourceProjectsLocationsJobs protected ()
+  open class ResourceProjectsLocationsJobs protected ()
     extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsLocationsJobs {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Locations$Jobs$Debug")
   @js.native
-  class ResourceProjectsLocationsJobsDebug protected ()
+  open class ResourceProjectsLocationsJobsDebug protected ()
     extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsLocationsJobsDebug {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Locations$Jobs$Messages")
   @js.native
-  class ResourceProjectsLocationsJobsMessages protected ()
+  open class ResourceProjectsLocationsJobsMessages protected ()
     extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsLocationsJobsMessages {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Locations$Jobs$Snapshots")
+  @js.native
+  open class ResourceProjectsLocationsJobsSnapshots protected ()
+    extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsLocationsJobsSnapshots {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Locations$Jobs$Stages")
+  @js.native
+  open class ResourceProjectsLocationsJobsStages protected ()
+    extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsLocationsJobsStages {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Locations$Jobs$Workitems")
   @js.native
-  class ResourceProjectsLocationsJobsWorkitems protected ()
+  open class ResourceProjectsLocationsJobsWorkitems protected ()
     extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsLocationsJobsWorkitems {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Locations$Snapshots")
+  @js.native
+  open class ResourceProjectsLocationsSnapshots protected ()
+    extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsLocationsSnapshots {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Locations$Sql")
+  @js.native
+  open class ResourceProjectsLocationsSql protected ()
+    extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsLocationsSql {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Locations$Templates")
   @js.native
-  class ResourceProjectsLocationsTemplates protected ()
+  open class ResourceProjectsLocationsTemplates protected ()
     extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsLocationsTemplates {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Snapshots")
+  @js.native
+  open class ResourceProjectsSnapshots protected ()
+    extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsSnapshots {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "dataflow_v1b3.Resource$Projects$Templates")
   @js.native
-  class ResourceProjectsTemplates protected ()
+  open class ResourceProjectsTemplates protected ()
     extends typings.googleapis.v1b3Mod.dataflowV1b3.ResourceProjectsTemplates {
     def this(context: APIRequestContext) = this()
   }

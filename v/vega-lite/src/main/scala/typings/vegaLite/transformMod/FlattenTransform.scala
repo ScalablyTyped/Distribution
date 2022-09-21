@@ -37,10 +37,10 @@ object FlattenTransform {
     
     inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    inline def setAsVarargs(value: FieldName*): Self = StObject.set(x, "as", js.Array(value :_*))
+    inline def setAsVarargs(value: FieldName*): Self = StObject.set(x, "as", js.Array(value*))
     
     inline def setFlatten(value: js.Array[FieldName]): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
     
-    inline def setFlattenVarargs(value: FieldName*): Self = StObject.set(x, "flatten", js.Array(value :_*))
+    inline def setFlattenVarargs(value: FieldName*): Self = StObject.set(x, "flatten", js.Array(value*))
   }
 }

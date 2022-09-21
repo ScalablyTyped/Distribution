@@ -22,6 +22,6 @@ object Multipoint {
     
     inline def setPoints(value: js.Array[Position]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: Position*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Position*): Self = StObject.set(x, "points", js.Array(value*))
   }
 }

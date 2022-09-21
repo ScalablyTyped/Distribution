@@ -10,10 +10,10 @@ A jQuery plugin wrapper for Cropper.js.
 | ------------------ | :-------------: |
 | Full name          | jquery-cropper |
 | Keywords           | image, crop, move, zoom, rotate, scale, cropper, cropper.js, cropping, processing, jquery, plugin, jquery-plugin, html, css, javascript, front-end, web |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 131608 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 21881.666666666668 |
+| # stars            | 610.0 |
 
 ## Links
 - [Homepage](https://fengyuanchen.github.io/jquery-cropper)

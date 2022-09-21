@@ -10,6 +10,6 @@ object stringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def capwords(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("capwords")().asInstanceOf[js.Any]
-  inline def capwords(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("capwords")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def capwords(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("capwords")().asInstanceOf[Any]
+  inline def capwords(str: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("capwords")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

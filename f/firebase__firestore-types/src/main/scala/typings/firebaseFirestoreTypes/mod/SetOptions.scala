@@ -25,7 +25,7 @@ object SetOptions {
     
     inline def setMergeFieldsUndefined: Self = StObject.set(x, "mergeFields", js.undefined)
     
-    inline def setMergeFieldsVarargs(value: (String | FieldPath)*): Self = StObject.set(x, "mergeFields", js.Array(value :_*))
+    inline def setMergeFieldsVarargs(value: (String | FieldPath)*): Self = StObject.set(x, "mergeFields", js.Array(value*))
     
     inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
   }

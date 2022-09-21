@@ -71,13 +71,13 @@ object Request {
     
     inline def setCookies(value: js.Array[Cookie]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
-    inline def setCookiesVarargs(value: Cookie*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+    inline def setCookiesVarargs(value: Cookie*): Self = StObject.set(x, "cookies", js.Array(value*))
     
     inline def setHeaders(value: js.Array[Header]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersSize(value: Double): Self = StObject.set(x, "headersSize", value.asInstanceOf[js.Any])
     
-    inline def setHeadersVarargs(value: Header*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: Header*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setHttpVersion(value: String): Self = StObject.set(x, "httpVersion", value.asInstanceOf[js.Any])
     
@@ -89,7 +89,7 @@ object Request {
     
     inline def setQueryString(value: js.Array[QueryString]): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
-    inline def setQueryStringVarargs(value: QueryString*): Self = StObject.set(x, "queryString", js.Array(value :_*))
+    inline def setQueryStringVarargs(value: QueryString*): Self = StObject.set(x, "queryString", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

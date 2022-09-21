@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogCustomAttributeDefinitionSelectionConfig")
 @js.native
-class CatalogCustomAttributeDefinitionSelectionConfig () extends StObject {
+open class CatalogCustomAttributeDefinitionSelectionConfig () extends StObject {
   
   /**
     * The set of valid `CatalogCustomAttributeSelections`. Up to a maximum of 100 selections can be defined. Can be modified.

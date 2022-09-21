@@ -24,7 +24,12 @@ trait ReplicationGroup extends StObject {
   /**
     * The date the auth token was last modified
     */
-  var AuthTokenLastModifiedDate: js.UndefOr[TStamp] = js.undefined
+  var AuthTokenLastModifiedDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    *  If you are running Redis engine version 6.0 or later, set this parameter to yes if you want to opt-in to the next auto minor version upgrade campaign. This parameter is disabled for previous versions.  
+    */
+  var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates the status of automatic failover for this Redis replication group.
@@ -47,12 +52,17 @@ trait ReplicationGroup extends StObject {
   var ConfigurationEndpoint: js.UndefOr[Endpoint] = js.undefined
   
   /**
+    * Enables data tiering. Data tiering is only supported for replication groups using the r6gd node type. This parameter must be set to true when using r6gd nodes. For more information, see Data tiering.
+    */
+  var DataTiering: js.UndefOr[DataTieringStatus] = js.undefined
+  
+  /**
     * The user supplied description of the replication group.
     */
   var Description: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the Global Datastore and role of this replication group in the Global Datastore.
+    * The name of the Global datastore and role of this replication group in the Global datastore.
     */
   var GlobalReplicationGroupInfo: js.UndefOr[typings.awsSdk.elasticacheMod.GlobalReplicationGroupInfo] = js.undefined
   
@@ -60,6 +70,11 @@ trait ReplicationGroup extends StObject {
     * The ID of the KMS key used to encrypt the disk in the cluster.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Returns the destination, format and type of the logs. 
+    */
+  var LogDeliveryConfigurations: js.UndefOr[LogDeliveryConfigurationList] = js.undefined
   
   /**
     * The names of all the cache clusters that are part of this replication group.
@@ -85,6 +100,11 @@ trait ReplicationGroup extends StObject {
     * A group of settings to be applied to the replication group, either immediately or during the next maintenance window.
     */
   var PendingModifiedValues: js.UndefOr[ReplicationGroupPendingModifiedValues] = js.undefined
+  
+  /**
+    * The date and time when the cluster was created.
+    */
+  var ReplicationGroupCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier for the replication group.
@@ -117,7 +137,7 @@ trait ReplicationGroup extends StObject {
   var TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The list of user group IDs that have access to the replication group.
+    * The ID of the user group associated to the replication group.
     */
   var UserGroupIds: js.UndefOr[UserGroupIdList] = js.undefined
 }
@@ -142,9 +162,13 @@ object ReplicationGroup {
     
     inline def setAuthTokenEnabledUndefined: Self = StObject.set(x, "AuthTokenEnabled", js.undefined)
     
-    inline def setAuthTokenLastModifiedDate(value: TStamp): Self = StObject.set(x, "AuthTokenLastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setAuthTokenLastModifiedDate(value: js.Date): Self = StObject.set(x, "AuthTokenLastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setAuthTokenLastModifiedDateUndefined: Self = StObject.set(x, "AuthTokenLastModifiedDate", js.undefined)
+    
+    inline def setAutoMinorVersionUpgrade(value: Boolean): Self = StObject.set(x, "AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    
+    inline def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "AutoMinorVersionUpgrade", js.undefined)
     
     inline def setAutomaticFailover(value: AutomaticFailoverStatus): Self = StObject.set(x, "AutomaticFailover", value.asInstanceOf[js.Any])
     
@@ -162,6 +186,10 @@ object ReplicationGroup {
     
     inline def setConfigurationEndpointUndefined: Self = StObject.set(x, "ConfigurationEndpoint", js.undefined)
     
+    inline def setDataTiering(value: DataTieringStatus): Self = StObject.set(x, "DataTiering", value.asInstanceOf[js.Any])
+    
+    inline def setDataTieringUndefined: Self = StObject.set(x, "DataTiering", js.undefined)
+    
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
@@ -174,17 +202,23 @@ object ReplicationGroup {
     
     inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
+    inline def setLogDeliveryConfigurations(value: LogDeliveryConfigurationList): Self = StObject.set(x, "LogDeliveryConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setLogDeliveryConfigurationsUndefined: Self = StObject.set(x, "LogDeliveryConfigurations", js.undefined)
+    
+    inline def setLogDeliveryConfigurationsVarargs(value: LogDeliveryConfiguration*): Self = StObject.set(x, "LogDeliveryConfigurations", js.Array(value*))
+    
     inline def setMemberClusters(value: ClusterIdList): Self = StObject.set(x, "MemberClusters", value.asInstanceOf[js.Any])
     
     inline def setMemberClustersOutpostArns(value: ReplicationGroupOutpostArnList): Self = StObject.set(x, "MemberClustersOutpostArns", value.asInstanceOf[js.Any])
     
     inline def setMemberClustersOutpostArnsUndefined: Self = StObject.set(x, "MemberClustersOutpostArns", js.undefined)
     
-    inline def setMemberClustersOutpostArnsVarargs(value: String*): Self = StObject.set(x, "MemberClustersOutpostArns", js.Array(value :_*))
+    inline def setMemberClustersOutpostArnsVarargs(value: String*): Self = StObject.set(x, "MemberClustersOutpostArns", js.Array(value*))
     
     inline def setMemberClustersUndefined: Self = StObject.set(x, "MemberClusters", js.undefined)
     
-    inline def setMemberClustersVarargs(value: String*): Self = StObject.set(x, "MemberClusters", js.Array(value :_*))
+    inline def setMemberClustersVarargs(value: String*): Self = StObject.set(x, "MemberClusters", js.Array(value*))
     
     inline def setMultiAZ(value: MultiAZStatus): Self = StObject.set(x, "MultiAZ", value.asInstanceOf[js.Any])
     
@@ -194,11 +228,15 @@ object ReplicationGroup {
     
     inline def setNodeGroupsUndefined: Self = StObject.set(x, "NodeGroups", js.undefined)
     
-    inline def setNodeGroupsVarargs(value: NodeGroup*): Self = StObject.set(x, "NodeGroups", js.Array(value :_*))
+    inline def setNodeGroupsVarargs(value: NodeGroup*): Self = StObject.set(x, "NodeGroups", js.Array(value*))
     
     inline def setPendingModifiedValues(value: ReplicationGroupPendingModifiedValues): Self = StObject.set(x, "PendingModifiedValues", value.asInstanceOf[js.Any])
     
     inline def setPendingModifiedValuesUndefined: Self = StObject.set(x, "PendingModifiedValues", js.undefined)
+    
+    inline def setReplicationGroupCreateTime(value: js.Date): Self = StObject.set(x, "ReplicationGroupCreateTime", value.asInstanceOf[js.Any])
+    
+    inline def setReplicationGroupCreateTimeUndefined: Self = StObject.set(x, "ReplicationGroupCreateTime", js.undefined)
     
     inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     
@@ -228,6 +266,6 @@ object ReplicationGroup {
     
     inline def setUserGroupIdsUndefined: Self = StObject.set(x, "UserGroupIds", js.undefined)
     
-    inline def setUserGroupIdsVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIds", js.Array(value :_*))
+    inline def setUserGroupIdsVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIds", js.Array(value*))
   }
 }

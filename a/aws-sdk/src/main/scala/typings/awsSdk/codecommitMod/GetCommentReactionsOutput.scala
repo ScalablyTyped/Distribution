@@ -31,6 +31,6 @@ object GetCommentReactionsOutput {
     
     inline def setReactionsForComment(value: ReactionsForCommentList): Self = StObject.set(x, "reactionsForComment", value.asInstanceOf[js.Any])
     
-    inline def setReactionsForCommentVarargs(value: ReactionForComment*): Self = StObject.set(x, "reactionsForComment", js.Array(value :_*))
+    inline def setReactionsForCommentVarargs(value: ReactionForComment*): Self = StObject.set(x, "reactionsForComment", js.Array(value*))
   }
 }

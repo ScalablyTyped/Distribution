@@ -14,7 +14,7 @@ object registerupdateMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/registerupdate", "RegisterUpdate")
   @js.native
-  class RegisterUpdate protected () extends SoloHelper[actionsDotintentDotREGISTER_UPDATE, GoogleActionsV2RegisterUpdateValueSpec] {
+  open class RegisterUpdate protected () extends SoloHelper[actionsDotintentDotREGISTER_UPDATE, GoogleActionsV2RegisterUpdateValueSpec] {
     /**
       * @param options RegisterUpdate options
       * @public
@@ -60,7 +60,7 @@ object registerupdateMod {
       
       inline def setArguments(value: js.Array[GoogleActionsV2Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      inline def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value*))
       
       inline def setFrequency(value: GoogleActionsV2TriggerContextTimeContextFrequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       

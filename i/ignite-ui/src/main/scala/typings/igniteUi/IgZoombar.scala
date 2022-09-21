@@ -11,7 +11,7 @@ trait IgZoombar
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies how the target widget's clone is rendered inside the Zoombar.
@@ -56,13 +56,13 @@ trait IgZoombar
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Specifies a provider class which interfaces the widget that is being zoomed.
     * object Provider class to use. The provider should implement all methods in the $.ig.ZoombarProviderDefault class and is suggested to be extended from it.
     */
-  var provider: js.UndefOr[js.Any] = js.undefined
+  var provider: js.UndefOr[Any] = js.undefined
   
   /**
     * Event fired after a provider is created based on the options.provider value. If an instance is passed as a value for the option the event won't fire.
@@ -203,11 +203,11 @@ object IgZoombar {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    inline def setProvider(value: js.Any): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: Any): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     inline def setProviderCreated(value: (/* event */ Event, /* ui */ ProviderCreatedEventUIParam) => Unit): Self = StObject.set(x, "providerCreated", js.Any.fromFunction2(value))
     

@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientArtifactregistry.anon
 
-import typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregistry.Tag
+import typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregistry.UploadAptArtifactRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ trait Fields extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The name of the parent resource where the tag will be created. */
+  /** The name of the parent resource where the artifacts will be uploaded. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -39,10 +39,7 @@ trait Fields extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Tag
-  
-  /** The tag id to use for this repository. */
-  var tagId: js.UndefOr[String] = js.undefined
+  var resource: UploadAptArtifactRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +49,7 @@ trait Fields extends StObject {
 }
 object Fields {
   
-  inline def apply(parent: String, resource: Tag): Fields = {
+  inline def apply(parent: String, resource: UploadAptArtifactRequest): Fields = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
@@ -97,11 +94,7 @@ object Fields {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Tag): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setTagId(value: String): Self = StObject.set(x, "tagId", value.asInstanceOf[js.Any])
-    
-    inline def setTagIdUndefined: Self = StObject.set(x, "tagId", js.undefined)
+    inline def setResource(value: UploadAptArtifactRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

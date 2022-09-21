@@ -17,13 +17,13 @@ object fabricMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Fabric", "FabricBase")
   @js.native
-  class FabricBase protected ()
+  open class FabricBase protected ()
     extends typings.officeUiFabricReact.fabricBaseMod.FabricBase {
     def this(props: IFabricProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IFabricProps, context: js.Any) = this()
+    def this(props: IFabricProps, context: Any) = this()
   }
 }

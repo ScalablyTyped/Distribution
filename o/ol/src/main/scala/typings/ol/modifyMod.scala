@@ -17,13 +17,13 @@ object modifyMod {
   
   @JSImport("ol/interaction/Modify", JSImport.Default)
   @js.native
-  class default protected () extends Modify {
+  open class default protected () extends Modify {
     def this(options: Options) = this()
   }
   
   @JSImport("ol/interaction/Modify", "ModifyEvent")
   @js.native
-  class ModifyEvent protected ()
+  open class ModifyEvent protected ()
     extends typings.ol.eventMod.default {
     def this(
       `type`: ModifyEventType,
@@ -64,7 +64,7 @@ object modifyMod {
     extends typings.ol.pointerMod.default {
     
     /**
-      * Get the overlay layer that this interaction renders sketch features to.
+      * Get the overlay layer that this interaction renders the modification point or vertex to.
       */
     def getOverlay(): typings.ol.vectorMod.default = js.native
     
@@ -97,6 +97,12 @@ object modifyMod {
     
     var features: js.UndefOr[
         typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]
+      ] = js.undefined
+    
+    var hitDetection: js.UndefOr[
+        Boolean | (typings.ol.baseVectorMod.default[
+          typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default] | typings.ol.sourceVectorTileMod.default
+        ])
       ] = js.undefined
     
     var insertVertexCondition: js.UndefOr[Condition] = js.undefined
@@ -132,6 +138,14 @@ object modifyMod {
       
       inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
       
+      inline def setHitDetection(
+        value: Boolean | (typings.ol.baseVectorMod.default[
+              typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default] | typings.ol.sourceVectorTileMod.default
+            ])
+      ): Self = StObject.set(x, "hitDetection", value.asInstanceOf[js.Any])
+      
+      inline def setHitDetectionUndefined: Self = StObject.set(x, "hitDetection", js.undefined)
+      
       inline def setInsertVertexCondition(value: Condition): Self = StObject.set(x, "insertVertexCondition", value.asInstanceOf[js.Any])
       
       inline def setInsertVertexConditionUndefined: Self = StObject.set(x, "insertVertexCondition", js.undefined)
@@ -150,7 +164,7 @@ object modifyMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value*))
       
       inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
       
@@ -189,7 +203,7 @@ object modifyMod {
       
       inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      inline def setDepthVarargs(value: Double*): Self = StObject.set(x, "depth", js.Array(value :_*))
+      inline def setDepthVarargs(value: Double*): Self = StObject.set(x, "depth", js.Array(value*))
       
       inline def setFeature(value: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
@@ -197,7 +211,7 @@ object modifyMod {
       
       inline def setFeatureSegmentsUndefined: Self = StObject.set(x, "featureSegments", js.undefined)
       
-      inline def setFeatureSegmentsVarargs(value: SegmentData*): Self = StObject.set(x, "featureSegments", js.Array(value :_*))
+      inline def setFeatureSegmentsVarargs(value: SegmentData*): Self = StObject.set(x, "featureSegments", js.Array(value*))
       
       inline def setGeometry(value: typings.ol.simpleGeometryMod.default): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
@@ -207,7 +221,7 @@ object modifyMod {
       
       inline def setSegment(value: js.Array[Extent]): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
       
-      inline def setSegmentVarargs(value: Extent*): Self = StObject.set(x, "segment", js.Array(value :_*))
+      inline def setSegmentVarargs(value: Extent*): Self = StObject.set(x, "segment", js.Array(value*))
     }
   }
 }

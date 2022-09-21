@@ -15,7 +15,6 @@ import typings.is.isStrings.nanpPhone
 import typings.is.isStrings.timeString
 import typings.is.isStrings.url
 import typings.is.isStrings.usZipCode
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,80 +38,80 @@ trait Is
   /**
     * Override RegExps if you think they suck.
     */
-  def setRegexp(value: RegExp, regexp: String): Boolean = js.native
+  def setRegexp(value: js.RegExp, regexp: String): Boolean = js.native
   /**
     * Override RegExps if you think they suck.
     */
   @JSName("setRegexp")
-  def setRegexp_affirmative(value: RegExp, regexp: affirmative): Boolean = js.native
+  def setRegexp_affirmative(value: js.RegExp, regexp: affirmative): Boolean = js.native
   /**
     * Override RegExps if you think they suck.
     */
   @JSName("setRegexp")
-  def setRegexp_alphaNumeric(value: RegExp, regexp: alphaNumeric): Boolean = js.native
+  def setRegexp_alphaNumeric(value: js.RegExp, regexp: alphaNumeric): Boolean = js.native
   /**
     * Override RegExps if you think they suck.
     */
   @JSName("setRegexp")
-  def setRegexp_caPostalCode(value: RegExp, regexp: caPostalCode): Boolean = js.native
+  def setRegexp_caPostalCode(value: js.RegExp, regexp: caPostalCode): Boolean = js.native
   /**
     * Override RegExps if you think they suck.
     */
   @JSName("setRegexp")
-  def setRegexp_creditCard(value: RegExp, regexp: creditCard): Boolean = js.native
+  def setRegexp_creditCard(value: js.RegExp, regexp: creditCard): Boolean = js.native
   /**
     * Override RegExps if you think they suck.
     */
   @JSName("setRegexp")
-  def setRegexp_dateString(value: RegExp, regexp: dateString): Boolean = js.native
+  def setRegexp_dateString(value: js.RegExp, regexp: dateString): Boolean = js.native
   /**
     * Override RegExps if you think they suck.
     */
   @JSName("setRegexp")
-  def setRegexp_email(value: RegExp, regexp: email): Boolean = js.native
+  def setRegexp_email(value: js.RegExp, regexp: email): Boolean = js.native
   /**
     * Override RegExps if you think they suck.
     */
   @JSName("setRegexp")
-  def setRegexp_eppPhone(value: RegExp, regexp: eppPhone): Boolean = js.native
+  def setRegexp_eppPhone(value: js.RegExp, regexp: eppPhone): Boolean = js.native
   /**
     * Override RegExps if you think they suck.
     */
   @JSName("setRegexp")
-  def setRegexp_hexColor(value: RegExp, regexp: hexColor): Boolean = js.native
+  def setRegexp_hexColor(value: js.RegExp, regexp: hexColor): Boolean = js.native
   /**
     * Override RegExps if you think they suck.
     */
   @JSName("setRegexp")
-  def setRegexp_hexadecimal(value: RegExp, regexp: hexadecimal): Boolean = js.native
+  def setRegexp_hexadecimal(value: js.RegExp, regexp: hexadecimal): Boolean = js.native
   /**
     * Override RegExps if you think they suck.
     */
   @JSName("setRegexp")
-  def setRegexp_ip(value: RegExp, regexp: ip): Boolean = js.native
+  def setRegexp_ip(value: js.RegExp, regexp: ip): Boolean = js.native
   /**
     * Override RegExps if you think they suck.
     */
   @JSName("setRegexp")
-  def setRegexp_ipv6(value: RegExp, regexp: ipv6): Boolean = js.native
+  def setRegexp_ipv6(value: js.RegExp, regexp: ipv6): Boolean = js.native
   /**
     * Override RegExps if you think they suck.
     */
   @JSName("setRegexp")
-  def setRegexp_nanpPhone(value: RegExp, regexp: nanpPhone): Boolean = js.native
+  def setRegexp_nanpPhone(value: js.RegExp, regexp: nanpPhone): Boolean = js.native
   /**
     * Override RegExps if you think they suck.
     */
   @JSName("setRegexp")
-  def setRegexp_timeString(value: RegExp, regexp: timeString): Boolean = js.native
+  def setRegexp_timeString(value: js.RegExp, regexp: timeString): Boolean = js.native
   /**
     * Override RegExps if you think they suck.
     */
   @JSName("setRegexp")
-  def setRegexp_url(value: RegExp, regexp: url): Boolean = js.native
+  def setRegexp_url(value: js.RegExp, regexp: url): Boolean = js.native
   /**
     * Override RegExps if you think they suck.
     */
   @JSName("setRegexp")
-  def setRegexp_usZipCode(value: RegExp, regexp: usZipCode): Boolean = js.native
+  def setRegexp_usZipCode(value: js.RegExp, regexp: usZipCode): Boolean = js.native
 }

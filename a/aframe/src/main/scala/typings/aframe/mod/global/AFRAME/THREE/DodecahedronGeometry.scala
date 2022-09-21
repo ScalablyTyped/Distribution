@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("AFRAME.THREE.DodecahedronGeometry")
 @js.native
 /**
-	 * @param [radius=1]
-	 * @param [detail=0]
-	 */
-class DodecahedronGeometry ()
+  * @param [radius=1]
+  * @param [detail=0]
+  */
+open class DodecahedronGeometry ()
   extends typings.three.mod.DodecahedronGeometry

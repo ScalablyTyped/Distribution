@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-browser", "HeadObjectCommand")
 @js.native
-class HeadObjectCommand protected ()
+open class HeadObjectCommand protected ()
   extends typings.awsSdkClientS3Browser.headObjectCommandMod.HeadObjectCommand {
   def this(input: HeadObjectInput) = this()
 }

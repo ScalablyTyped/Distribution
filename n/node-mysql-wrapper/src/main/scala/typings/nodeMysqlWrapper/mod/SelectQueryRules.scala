@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("node-mysql-wrapper", "SelectQueryRules")
 @js.native
-class SelectQueryRules () extends StObject {
+open class SelectQueryRules () extends StObject {
   
   def append(appendToCurrent: String): SelectQueryRules = js.native
   
@@ -43,7 +43,7 @@ class SelectQueryRules () extends StObject {
   
   def isEmpty(): Boolean = js.native
   
-  /* private */ def last(propertyClauseName: js.Any): js.Any = js.native
+  /* private */ def last(propertyClauseName: Any): Any = js.native
   
   /* private */ var lastPropertyClauseName: String = js.native
   

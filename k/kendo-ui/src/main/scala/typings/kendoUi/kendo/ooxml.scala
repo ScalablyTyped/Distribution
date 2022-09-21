@@ -1,7 +1,6 @@
 package typings.kendoUi.kendo
 
 import typings.kendoUi.JQueryPromise
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object ooxml {
     
     def toDataURL(): String = js.native
     
-    def toDataURLAsync(): JQueryPromise[js.Any] = js.native
+    def toDataURLAsync(): JQueryPromise[Any] = js.native
   }
   
   trait WorkbookEvent extends StObject {
@@ -51,7 +50,7 @@ object ooxml {
     
     var creator: js.UndefOr[String] = js.undefined
     
-    var date: js.UndefOr[Date] = js.undefined
+    var date: js.UndefOr[js.Date] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
     
@@ -70,7 +69,7 @@ object ooxml {
       
       inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -82,7 +81,7 @@ object ooxml {
       
       inline def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
       
-      inline def setSheetsVarargs(value: WorkbookSheet*): Self = StObject.set(x, "sheets", js.Array(value :_*))
+      inline def setSheetsVarargs(value: WorkbookSheet*): Self = StObject.set(x, "sheets", js.Array(value*))
     }
   }
   
@@ -98,7 +97,7 @@ object ooxml {
     
     var frozenRows: js.UndefOr[Double] = js.undefined
     
-    var mergedCells: js.UndefOr[js.Any] = js.undefined
+    var mergedCells: js.UndefOr[Any] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
     
@@ -121,7 +120,7 @@ object ooxml {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: WorkbookSheetColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: WorkbookSheetColumn*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setFilter(value: WorkbookSheetFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -139,7 +138,7 @@ object ooxml {
       
       inline def setFrozenRowsUndefined: Self = StObject.set(x, "frozenRows", js.undefined)
       
-      inline def setMergedCells(value: js.Any): Self = StObject.set(x, "mergedCells", value.asInstanceOf[js.Any])
+      inline def setMergedCells(value: Any): Self = StObject.set(x, "mergedCells", value.asInstanceOf[js.Any])
       
       inline def setMergedCellsUndefined: Self = StObject.set(x, "mergedCells", js.undefined)
       
@@ -151,7 +150,7 @@ object ooxml {
       
       inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      inline def setRowsVarargs(value: WorkbookSheetRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: WorkbookSheetRow*): Self = StObject.set(x, "rows", js.Array(value*))
       
       inline def setShowGridLines(value: Boolean): Self = StObject.set(x, "showGridLines", value.asInstanceOf[js.Any])
       
@@ -251,6 +250,8 @@ object ooxml {
     var height: js.UndefOr[Double] = js.undefined
     
     var index: js.UndefOr[Double] = js.undefined
+    
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object WorkbookSheetRow {
     
@@ -265,7 +266,7 @@ object ooxml {
       
       inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
       
-      inline def setCellsVarargs(value: WorkbookSheetRowCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+      inline def setCellsVarargs(value: WorkbookSheetRowCell*): Self = StObject.set(x, "cells", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -274,6 +275,10 @@ object ooxml {
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -307,7 +312,7 @@ object ooxml {
     
     var hAlign: js.UndefOr[String] = js.undefined
     
-    var index: js.UndefOr[js.Any] = js.undefined
+    var index: js.UndefOr[Any] = js.undefined
     
     var italic: js.UndefOr[Boolean] = js.undefined
     
@@ -319,7 +324,7 @@ object ooxml {
     
     var vAlign: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Date | Double | String | Boolean] = js.undefined
+    var value: js.UndefOr[js.Date | Double | String | Boolean] = js.undefined
     
     var verticalAlign: js.UndefOr[String] = js.undefined
     
@@ -390,7 +395,7 @@ object ooxml {
       
       inline def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
       
-      inline def setIndex(value: js.Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
@@ -414,7 +419,7 @@ object ooxml {
       
       inline def setVAlignUndefined: Self = StObject.set(x, "vAlign", js.undefined)
       
-      inline def setValue(value: Date | Double | String | Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Date | Double | String | Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       

@@ -11,14 +11,14 @@ object progressIndicatorMod {
   
   @JSImport("carbon-components-react/lib/components/ProgressIndicator", "ProgressIndicator")
   @js.native
-  class ProgressIndicator protected ()
+  open class ProgressIndicator protected ()
     extends typings.carbonComponentsReact.progressIndicatorProgressIndicatorMod.ProgressIndicator {
     def this(props: ProgressIndicatorProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ProgressIndicatorProps, context: js.Any) = this()
+    def this(props: ProgressIndicatorProps, context: Any) = this()
   }
   
   @JSImport("carbon-components-react/lib/components/ProgressIndicator", "ProgressStep")

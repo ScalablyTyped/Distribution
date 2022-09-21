@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("graphql", "GraphQLEnumType")
 @js.native
-class GraphQLEnumType protected ()
+open class GraphQLEnumType protected ()
   extends StObject
      with GraphQLInputType
      with GraphQLLeafType
@@ -22,9 +22,9 @@ class GraphQLEnumType protected ()
   
   var name: String = js.native
   
-  def parseLiteral(valueAST: Value): js.Any = js.native
+  def parseLiteral(valueAST: Value): Any = js.native
   
-  def parseValue(value: js.Any): js.Any = js.native
+  def parseValue(value: Any): Any = js.native
   
-  def serialize(value: js.Any): String = js.native
+  def serialize(value: Any): String = js.native
 }

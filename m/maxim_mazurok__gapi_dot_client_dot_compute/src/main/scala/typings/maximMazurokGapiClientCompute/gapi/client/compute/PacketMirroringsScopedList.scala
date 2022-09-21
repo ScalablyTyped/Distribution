@@ -26,7 +26,7 @@ object PacketMirroringsScopedList {
     
     inline def setPacketMirroringsUndefined: Self = StObject.set(x, "packetMirrorings", js.undefined)
     
-    inline def setPacketMirroringsVarargs(value: PacketMirroring*): Self = StObject.set(x, "packetMirrorings", js.Array(value :_*))
+    inline def setPacketMirroringsVarargs(value: PacketMirroring*): Self = StObject.set(x, "packetMirrorings", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

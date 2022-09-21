@@ -8,5 +8,5 @@ object functionCodeLocationMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/_FunctionCodeLocation", "_FunctionCodeLocation")
   @js.native
-  val FunctionCodeLocation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val FunctionCodeLocation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DynaTreeCookieOptions extends StObject {
   
-  var expires: js.Any
+  var expires: Any
 }
 object DynaTreeCookieOptions {
   
-  inline def apply(expires: js.Any): DynaTreeCookieOptions = {
+  inline def apply(expires: Any): DynaTreeCookieOptions = {
     val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynaTreeCookieOptions]
   }
   
   extension [Self <: DynaTreeCookieOptions](x: Self) {
     
-    inline def setExpires(value: js.Any): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: Any): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
   }
 }

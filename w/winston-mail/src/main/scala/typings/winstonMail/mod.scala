@@ -1,6 +1,5 @@
 package typings.winstonMail
 
-import typings.std.Transport
 import typings.winstonMail.anon.Ca
 import typings.winstonMail.anon.Ciphers
 import typings.winstonMail.anon.Level
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify winston.Transport * / any
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify winston.TransportInstance * / any */ @JSImport("winston-mail", "Mail")
   @js.native
-  class Mail protected ()
-    extends StObject
-       with Transport {
+  open class Mail protected () extends StObject {
     def this(options: MailTransportOptions) = this()
     
     def filter(obj: Level): Boolean = js.native
@@ -26,7 +24,7 @@ object mod {
     
     var level: String = js.native
     
-    def log(level: js.Any, msg: js.Any, meta: js.Any, callback: js.Any): js.Any = js.native
+    def log(level: Any, msg: Any, meta: Any, callback: Any): Any = js.native
     
     var name: String = js.native
     
@@ -92,7 +90,7 @@ object mod {
       
       inline def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
       
-      inline def setAuthenticationVarargs(value: String*): Self = StObject.set(x, "authentication", js.Array(value :_*))
+      inline def setAuthenticationVarargs(value: String*): Self = StObject.set(x, "authentication", js.Array(value*))
       
       inline def setFilter(value: /* obj */ Level => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

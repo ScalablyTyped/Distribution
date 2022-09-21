@@ -15,6 +15,6 @@ trait INamedValues extends StObject {
   
   val Names: IStrings = js.native
   
-  def Value(ValueName: String): js.Any = js.native
-  def Value(ValueName: String, value: js.Any): Unit = js.native
+  def Value(ValueName: String): Any = js.native
+  def Value(ValueName: String, value: Any): Unit = js.native
 }

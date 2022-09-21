@@ -1,5 +1,8 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`centroid-aggregate`
+import typings.arcgisJsApi.arcgisJsApiStrings.`convex-hull-aggregate`
+import typings.arcgisJsApi.arcgisJsApiStrings.`envelope-aggregate`
 import typings.arcgisJsApi.arcgisJsApiStrings.`percentile-continuous`
 import typings.arcgisJsApi.arcgisJsApiStrings.`percentile-discrete`
 import typings.arcgisJsApi.arcgisJsApiStrings.`var`
@@ -18,31 +21,33 @@ trait StatisticDefinitionProperties extends StObject {
   /**
     * Defines the field for which statistics will be calculated.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#onStatisticField)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#onStatisticField)
     */
   var onStatisticField: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the output field name for the requested statistic.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#outStatisticFieldName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#outStatisticFieldName)
     */
   var outStatisticFieldName: js.UndefOr[String] = js.undefined
   
   /**
-    * The parameters for [percentile statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticType).
+    * The parameters for [percentile statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticType).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticParameters)
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticParameters)
     */
   var statisticParameters: js.UndefOr[StatisticDefinitionStatisticParameters] = js.undefined
   
   /**
     * Defines the type of statistic.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticType)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticType)
     */
   var statisticType: js.UndefOr[
-    count | sum | min | max | avg | stddev | `var` | `percentile-continuous` | `percentile-discrete`
+    count | sum | min | max | avg | stddev | `var` | `percentile-continuous` | `percentile-discrete` | `envelope-aggregate` | `centroid-aggregate` | `convex-hull-aggregate`
   ] = js.undefined
 }
 object StatisticDefinitionProperties {
@@ -67,7 +72,7 @@ object StatisticDefinitionProperties {
     inline def setStatisticParametersUndefined: Self = StObject.set(x, "statisticParameters", js.undefined)
     
     inline def setStatisticType(
-      value: count | sum | min | max | avg | stddev | `var` | `percentile-continuous` | `percentile-discrete`
+      value: count | sum | min | max | avg | stddev | `var` | `percentile-continuous` | `percentile-discrete` | `envelope-aggregate` | `centroid-aggregate` | `convex-hull-aggregate`
     ): Self = StObject.set(x, "statisticType", value.asInstanceOf[js.Any])
     
     inline def setStatisticTypeUndefined: Self = StObject.set(x, "statisticType", js.undefined)

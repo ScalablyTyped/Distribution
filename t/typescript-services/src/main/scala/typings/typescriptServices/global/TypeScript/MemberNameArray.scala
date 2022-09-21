@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.MemberNameArray")
 @js.native
-class MemberNameArray ()
+open class MemberNameArray ()
   extends StObject
      with typings.typescriptServices.TypeScript.MemberNameArray {
   

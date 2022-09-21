@@ -8,5 +8,5 @@ object pathRequiredExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/PathRequiredException", "PathRequiredException")
   @js.native
-  val PathRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PathRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

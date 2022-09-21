@@ -65,7 +65,7 @@ object GoogleCloudMlV1Trial {
     
     inline def setMeasurementsUndefined: Self = StObject.set(x, "measurements", js.undefined)
     
-    inline def setMeasurementsVarargs(value: GoogleCloudMlV1Measurement*): Self = StObject.set(x, "measurements", js.Array(value :_*))
+    inline def setMeasurementsVarargs(value: GoogleCloudMlV1Measurement*): Self = StObject.set(x, "measurements", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -75,7 +75,7 @@ object GoogleCloudMlV1Trial {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: GoogleCloudMlV1TrialParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: GoogleCloudMlV1TrialParameter*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

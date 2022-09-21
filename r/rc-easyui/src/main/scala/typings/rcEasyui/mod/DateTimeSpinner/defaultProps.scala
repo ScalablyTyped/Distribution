@@ -48,7 +48,7 @@ object defaultProps {
   
   inline def onBlur(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBlur")().asInstanceOf[Unit]
   
-  inline def onChange(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onChange(e: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def onFocus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFocus")().asInstanceOf[Unit]
   
@@ -72,7 +72,7 @@ object defaultProps {
   @js.native
   val spinners: Boolean = js.native
   
-  inline def textFormatter(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("textFormatter")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def textFormatter(e: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("textFormatter")(e.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("rc-easyui", "DateTimeSpinner.defaultProps.validateOnBlur")
   @js.native
@@ -88,5 +88,5 @@ object defaultProps {
   
   @JSImport("rc-easyui", "DateTimeSpinner.defaultProps.value")
   @js.native
-  val value: js.Any = js.native
+  val value: Any = js.native
 }

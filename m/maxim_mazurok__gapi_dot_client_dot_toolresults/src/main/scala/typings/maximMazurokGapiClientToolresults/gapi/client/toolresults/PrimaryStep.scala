@@ -25,7 +25,7 @@ object PrimaryStep {
     
     inline def setIndividualOutcomeUndefined: Self = StObject.set(x, "individualOutcome", js.undefined)
     
-    inline def setIndividualOutcomeVarargs(value: IndividualOutcome*): Self = StObject.set(x, "individualOutcome", js.Array(value :_*))
+    inline def setIndividualOutcomeVarargs(value: IndividualOutcome*): Self = StObject.set(x, "individualOutcome", js.Array(value*))
     
     inline def setRollUp(value: String): Self = StObject.set(x, "rollUp", value.asInstanceOf[js.Any])
     

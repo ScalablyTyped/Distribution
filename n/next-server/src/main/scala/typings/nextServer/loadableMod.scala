@@ -17,11 +17,11 @@ object loadableMod extends Shortcut {
   @js.native
   trait ILoadable extends StObject {
     
-    def apply[P](opts: js.Any): ComponentClass[P, ComponentState] = js.native
+    def apply[P](opts: Any): ComponentClass[P, ComponentState] = js.native
     
-    def Map[P](opts: js.Any): ComponentType[P] = js.native
+    def Map[P](opts: Any): ComponentType[P] = js.native
     
-    def preloadAll(): js.Promise[js.Any] = js.native
+    def preloadAll(): js.Promise[Any] = js.native
   }
   
   type _To = ILoadable

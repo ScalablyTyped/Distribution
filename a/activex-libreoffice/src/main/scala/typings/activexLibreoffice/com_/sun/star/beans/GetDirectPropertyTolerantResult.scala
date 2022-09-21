@@ -19,7 +19,7 @@ trait GetDirectPropertyTolerantResult
 }
 object GetDirectPropertyTolerantResult {
   
-  inline def apply(Name: String, Result: Double, State: PropertyState, Value: js.Any): GetDirectPropertyTolerantResult = {
+  inline def apply(Name: String, Result: Double, State: PropertyState, Value: Any): GetDirectPropertyTolerantResult = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDirectPropertyTolerantResult]
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for fontkit
 
-Typings are for version 1.8
+Typings are for version 2.0
 
 ## Library description:
 An advanced font engine for Node and the browser
@@ -10,10 +10,10 @@ An advanced font engine for Node and the browser
 | ------------------ | :-------------: |
 | Full name          | fontkit |
 | Keywords           | opentype, font, typography, subset, emoji, glyph, layout |
-| # releases         | 4 |
-| # dependents       | 59 |
-| # downloads        | 16103460 |
-| # stars            | 4 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1950666.3333333333 |
+| # stars            | 1082.0 |
 
 ## Links
 - [Homepage](https://github.com/foliojs/fontkit#readme)

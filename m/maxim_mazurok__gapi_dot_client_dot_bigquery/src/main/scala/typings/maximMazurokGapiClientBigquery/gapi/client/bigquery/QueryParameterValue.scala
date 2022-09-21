@@ -14,7 +14,7 @@ trait QueryParameterValue extends StObject {
   var structValues: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.bigquery.gapi.client.bigquery.QueryParameterValue}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryParameterValue & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryParameterValue & TopLevel[Any]
   ] = js.undefined
   
   /** [Optional] The value of this value, if a simple scalar type. */
@@ -33,12 +33,12 @@ object QueryParameterValue {
     
     inline def setArrayValuesUndefined: Self = StObject.set(x, "arrayValues", js.undefined)
     
-    inline def setArrayValuesVarargs(value: QueryParameterValue*): Self = StObject.set(x, "arrayValues", js.Array(value :_*))
+    inline def setArrayValuesVarargs(value: QueryParameterValue*): Self = StObject.set(x, "arrayValues", js.Array(value*))
     
     inline def setStructValues(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigquery.gapi.client.bigquery.QueryParameterValue}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryParameterValue & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryParameterValue & TopLevel[Any]
     ): Self = StObject.set(x, "structValues", value.asInstanceOf[js.Any])
     
     inline def setStructValuesUndefined: Self = StObject.set(x, "structValues", js.undefined)

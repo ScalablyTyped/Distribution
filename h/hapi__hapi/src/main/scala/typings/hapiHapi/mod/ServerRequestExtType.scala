@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.hapiHapi.hapiHapiStrings.onPreHandler
   - typings.hapiHapi.hapiHapiStrings.onPostHandler
   - typings.hapiHapi.hapiHapiStrings.onPreResponse
+  - typings.hapiHapi.hapiHapiStrings.onPostResponse
 */
 trait ServerRequestExtType extends StObject
 object ServerRequestExtType {
@@ -21,6 +22,8 @@ object ServerRequestExtType {
   inline def onPostAuth: typings.hapiHapi.hapiHapiStrings.onPostAuth = "onPostAuth".asInstanceOf[typings.hapiHapi.hapiHapiStrings.onPostAuth]
   
   inline def onPostHandler: typings.hapiHapi.hapiHapiStrings.onPostHandler = "onPostHandler".asInstanceOf[typings.hapiHapi.hapiHapiStrings.onPostHandler]
+  
+  inline def onPostResponse: typings.hapiHapi.hapiHapiStrings.onPostResponse = "onPostResponse".asInstanceOf[typings.hapiHapi.hapiHapiStrings.onPostResponse]
   
   inline def onPreAuth: typings.hapiHapi.hapiHapiStrings.onPreAuth = "onPreAuth".asInstanceOf[typings.hapiHapi.hapiHapiStrings.onPreAuth]
   

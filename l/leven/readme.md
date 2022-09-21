@@ -1,19 +1,19 @@
 
 # Scala.js typings for leven
 
-Typings are for version 3.1.0
+Typings are for version 4.0.0
 
 ## Library description:
-Measure the difference between two strings using the fastest JS implementation of the Levenshtein distance algorithm
+Measure the difference between two strings using the Levenshtein distance algorithm
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | leven |
-| Keywords           | leven, levenshtein, distance, algorithm, algo, string, difference, diff, fast, fuzzy, similar, similarity, compare, comparison, edit, text, match, matching |
-| # releases         | 3 |
-| # dependents       | 269 |
-| # downloads        | 562430724 |
-| # stars            | 24 |
+| Keywords           | leven, levenshtein, distance, algorithm, string, difference, diff, fast, fuzzy, similar, similarity, compare, comparison, edit, text, match, matching |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 7.735898166666667E7 |
+| # stars            | 642.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/leven#readme)

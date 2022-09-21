@@ -1,36 +1,27 @@
 package typings.parse.mod.global.Parse.Cloud
 
-import typings.parse.mod.global.Parse.Attributes
-import typings.parse.mod.global.Parse.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AfterFindRequest
+trait AfterFindRequest[T]
   extends StObject
-     with TriggerRequest {
+     with TriggerRequest[T] {
   
-  var objects: js.Array[Object[Attributes]]
+  var objects: js.Array[T]
 }
 object AfterFindRequest {
   
-  inline def apply(
-    headers: js.Any,
-    ip: String,
-    log: js.Any,
-    `object`: Object[Attributes],
-    objects: js.Array[Object[Attributes]],
-    triggerName: String
-  ): AfterFindRequest = {
+  inline def apply[T](headers: Any, ip: String, log: Any, `object`: T, objects: js.Array[T], triggerName: String): AfterFindRequest[T] = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AfterFindRequest]
+    __obj.asInstanceOf[AfterFindRequest[T]]
   }
   
-  extension [Self <: AfterFindRequest](x: Self) {
+  extension [Self <: AfterFindRequest[?], T](x: Self & AfterFindRequest[T]) {
     
-    inline def setObjects(value: js.Array[Object[Attributes]]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+    inline def setObjects(value: js.Array[T]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
-    inline def setObjectsVarargs(value: Object[Attributes]*): Self = StObject.set(x, "objects", js.Array(value :_*))
+    inline def setObjectsVarargs(value: T*): Self = StObject.set(x, "objects", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__set-version
 
-Typings are for version 7.0.23
+Typings are for version 7.0.24
 
 ## Library description:
 Non-Fabric-specific package version setter
@@ -10,10 +10,10 @@ Non-Fabric-specific package version setter
 | ------------------ | :-------------: |
 | Full name          | @uifabric/set-version |
 | Keywords           | - |
-| # releases         | 53 |
-| # dependents       | 46 |
-| # downloads        | 3950715 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 347054.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

@@ -1,6 +1,5 @@
 package typings.strftime
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object mod {
     * @param {Date}   date   A date.
     * @return {string} Returns a string formatted according format using the given date or the current local time.
     */
-  inline def apply(format: String, date: Date): String = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(format: String, date: js.Date): String = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("strftime", JSImport.Namespace)
   @js.native
@@ -29,6 +28,8 @@ object mod {
   
   inline def timezone(offset: String): strftimeFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("timezone")(offset.asInstanceOf[js.Any]).asInstanceOf[strftimeFunction]
   inline def timezone(offset: Double): strftimeFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("timezone")(offset.asInstanceOf[js.Any]).asInstanceOf[strftimeFunction]
+  
+  inline def utc(): strftimeFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[strftimeFunction]
   
   trait Locale extends StObject {
     
@@ -67,7 +68,7 @@ object mod {
       
       inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
       
-      inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
+      inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value*))
       
       inline def setFormats(value: LocaleFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,7 @@ object mod {
       
       inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
       
-      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
       
       inline def setPM(value: String): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
       
@@ -85,13 +86,13 @@ object mod {
       
       inline def setShortDaysUndefined: Self = StObject.set(x, "shortDays", js.undefined)
       
-      inline def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value :_*))
+      inline def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value*))
       
       inline def setShortMonths(value: js.Array[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
       
       inline def setShortMonthsUndefined: Self = StObject.set(x, "shortMonths", js.undefined)
       
-      inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
+      inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value*))
     }
   }
   
@@ -154,5 +155,5 @@ object mod {
     }
   }
   
-  type strftimeFunction = js.Function2[/* format */ String, /* date */ js.UndefOr[Date], String]
+  type strftimeFunction = js.Function2[/* format */ String, /* date */ js.UndefOr[js.Date], String]
 }

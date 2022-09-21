@@ -1,29 +1,32 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.ERROR
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ActivityBatchSize = scala.Double
+type ActivityBatchSize = Double
 
-type ActivityName = java.lang.String
+type ActivityName = String
 
-type AttributeName = java.lang.String
+type AttributeName = String
 
-type AttributeNameMapping = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotanalyticsMod.AttributeName]
+type AttributeNameMapping = StringDictionary[AttributeName]
 
-type AttributeNames = js.Array[typings.awsSdk.iotanalyticsMod.AttributeName]
+type AttributeNames = js.Array[AttributeName]
 
-type BatchPutMessageErrorEntries = js.Array[typings.awsSdk.iotanalyticsMod.BatchPutMessageErrorEntry]
+type BatchPutMessageErrorEntries = js.Array[BatchPutMessageErrorEntry]
 
-type BucketKeyExpression = java.lang.String
+type BucketKeyExpression = String
 
-type BucketName = java.lang.String
+type BucketName = String
 
-type ChannelArn = java.lang.String
+type ChannelArn = String
 
-type ChannelName = java.lang.String
+type ChannelName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -31,33 +34,39 @@ type ChannelName = java.lang.String
   - typings.awsSdk.awsSdkStrings.DELETING
   - java.lang.String
 */
-type ChannelStatus = typings.awsSdk.iotanalyticsMod._ChannelStatus | java.lang.String
+type ChannelStatus = _ChannelStatus | String
 
-type ChannelSummaries = js.Array[typings.awsSdk.iotanalyticsMod.ChannelSummary]
+type ChannelSummaries = js.Array[ChannelSummary]
+
+type ColumnDataType = String
+
+type ColumnName = String
+
+type Columns = js.Array[Column]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACU_1
   - typings.awsSdk.awsSdkStrings.ACU_2
   - java.lang.String
 */
-type ComputeType = typings.awsSdk.iotanalyticsMod._ComputeType | java.lang.String
+type ComputeType = _ComputeType | String
 
-type DatasetActionName = java.lang.String
+type DatasetActionName = String
 
-type DatasetActionSummaries = js.Array[typings.awsSdk.iotanalyticsMod.DatasetActionSummary]
+type DatasetActionSummaries = js.Array[DatasetActionSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.QUERY
   - typings.awsSdk.awsSdkStrings.CONTAINER
   - java.lang.String
 */
-type DatasetActionType = typings.awsSdk.iotanalyticsMod._DatasetActionType | java.lang.String
+type DatasetActionType = _DatasetActionType | String
 
-type DatasetActions = js.Array[typings.awsSdk.iotanalyticsMod.DatasetAction]
+type DatasetActions = js.Array[DatasetAction]
 
-type DatasetArn = java.lang.String
+type DatasetArn = String
 
-type DatasetContentDeliveryRules = js.Array[typings.awsSdk.iotanalyticsMod.DatasetContentDeliveryRule]
+type DatasetContentDeliveryRules = js.Array[DatasetContentDeliveryRule]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -65,31 +74,15 @@ type DatasetContentDeliveryRules = js.Array[typings.awsSdk.iotanalyticsMod.Datas
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type DatasetContentState = typings.awsSdk.iotanalyticsMod._DatasetContentState | java.lang.String
+type DatasetContentState = _DatasetContentState | String
 
-type DatasetContentSummaries = js.Array[typings.awsSdk.iotanalyticsMod.DatasetContentSummary]
+type DatasetContentSummaries = js.Array[DatasetContentSummary]
 
-type DatasetContentVersion = java.lang.String
+type DatasetContentVersion = String
 
-type DatasetEntries = js.Array[typings.awsSdk.iotanalyticsMod.DatasetEntry]
+type DatasetEntries = js.Array[DatasetEntry]
 
-type DatasetName = java.lang.String
-
-/* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.CREATING
-  - typings.awsSdk.awsSdkStrings.ACTIVE
-  - typings.awsSdk.awsSdkStrings.DELETING
-  - java.lang.String
-*/
-type DatasetStatus = typings.awsSdk.iotanalyticsMod._DatasetStatus | java.lang.String
-
-type DatasetSummaries = js.Array[typings.awsSdk.iotanalyticsMod.DatasetSummary]
-
-type DatasetTriggers = js.Array[typings.awsSdk.iotanalyticsMod.DatasetTrigger]
-
-type DatastoreArn = java.lang.String
-
-type DatastoreName = java.lang.String
+type DatasetName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -97,81 +90,108 @@ type DatastoreName = java.lang.String
   - typings.awsSdk.awsSdkStrings.DELETING
   - java.lang.String
 */
-type DatastoreStatus = typings.awsSdk.iotanalyticsMod._DatastoreStatus | java.lang.String
+type DatasetStatus = _DatasetStatus | String
 
-type DatastoreSummaries = js.Array[typings.awsSdk.iotanalyticsMod.DatastoreSummary]
+type DatasetSummaries = js.Array[DatasetSummary]
 
-type DoubleValue = scala.Double
+type DatasetTriggers = js.Array[DatasetTrigger]
 
-type EndTime = typings.std.Date
+type DatastoreArn = String
 
-type EntryName = java.lang.String
+type DatastoreName = String
 
-type ErrorCode = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATING
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.DELETING
+  - java.lang.String
+*/
+type DatastoreStatus = _DatastoreStatus | String
 
-type ErrorMessage = java.lang.String
+type DatastoreSummaries = js.Array[DatastoreSummary]
 
-type FilterExpression = java.lang.String
+type DoubleValue = Double
 
-type GlueDatabaseName = java.lang.String
+type EndTime = js.Date
 
-type GlueTableName = java.lang.String
+type EntryName = String
 
-type Image = java.lang.String
+type ErrorCode = String
 
-type IncludeStatisticsFlag = scala.Boolean
+type ErrorMessage = String
 
-type IotEventsInputName = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.JSON
+  - typings.awsSdk.awsSdkStrings.PARQUET
+  - java.lang.String
+*/
+type FileFormatType = _FileFormatType | String
 
-type LambdaName = java.lang.String
+type FilterExpression = String
 
-type LateDataRuleName = java.lang.String
+type GlueDatabaseName = String
 
-type LateDataRules = js.Array[typings.awsSdk.iotanalyticsMod.LateDataRule]
+type GlueTableName = String
 
-type LogResult = java.lang.String
+type Image = String
 
-type LoggingEnabled = scala.Boolean
+type IncludeStatisticsFlag = Boolean
 
-type LoggingLevel = typings.awsSdk.awsSdkStrings.ERROR | java.lang.String
+type IotEventsInputName = String
 
-type MathExpression = java.lang.String
+type LambdaName = String
 
-type MaxMessages = scala.Double
+type LateDataRuleName = String
 
-type MaxResults = scala.Double
+type LateDataRules = js.Array[LateDataRule]
 
-type MaxVersions = scala.Double
+type LogResult = String
 
-type MessageId = java.lang.String
+type LoggingEnabled = Boolean
 
-type MessagePayload = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.iotanalyticsMod.Blob | java.lang.String
+type LoggingLevel = ERROR | String
 
-type MessagePayloads = js.Array[typings.awsSdk.iotanalyticsMod.MessagePayload]
+type MathExpression = String
 
-type Messages = js.Array[typings.awsSdk.iotanalyticsMod.Message]
+type MaxMessages = Double
 
-type NextToken = java.lang.String
+type MaxResults = Double
 
-type OffsetSeconds = scala.Double
+type MaxVersions = Double
 
-type OutputFileName = java.lang.String
+type MessageId = String
 
-type PipelineActivities = js.Array[typings.awsSdk.iotanalyticsMod.PipelineActivity]
+type MessagePayload = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type PipelineArn = java.lang.String
+type MessagePayloads = js.Array[MessagePayload]
 
-type PipelineName = java.lang.String
+type Messages = js.Array[Message]
 
-type PipelineSummaries = js.Array[typings.awsSdk.iotanalyticsMod.PipelineSummary]
+type NextToken = String
 
-type PresignedURI = java.lang.String
+type OffsetSeconds = Double
 
-type QueryFilters = js.Array[typings.awsSdk.iotanalyticsMod.QueryFilter]
+type OutputFileName = String
 
-type Reason = java.lang.String
+type PartitionAttributeName = String
 
-type ReprocessingId = java.lang.String
+type Partitions = js.Array[DatastorePartition]
+
+type PipelineActivities = js.Array[PipelineActivity]
+
+type PipelineArn = String
+
+type PipelineName = String
+
+type PipelineSummaries = js.Array[PipelineSummary]
+
+type PresignedURI = String
+
+type QueryFilters = js.Array[QueryFilter]
+
+type Reason = String
+
+type ReprocessingId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RUNNING
@@ -180,55 +200,61 @@ type ReprocessingId = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type ReprocessingStatus = typings.awsSdk.iotanalyticsMod._ReprocessingStatus | java.lang.String
+type ReprocessingStatus = _ReprocessingStatus | String
 
-type ReprocessingSummaries = js.Array[typings.awsSdk.iotanalyticsMod.ReprocessingSummary]
+type ReprocessingSummaries = js.Array[ReprocessingSummary]
 
-type ResourceArn = java.lang.String
+type ResourceArn = String
 
-type RetentionPeriodInDays = scala.Double
+type RetentionPeriodInDays = Double
 
-type RoleArn = java.lang.String
+type RoleArn = String
 
-type S3KeyPrefix = java.lang.String
+type S3KeyPrefix = String
 
-type ScheduleExpression = java.lang.String
+type S3PathChannelMessage = String
 
-type SessionTimeoutInMinutes = scala.Double
+type S3PathChannelMessages = js.Array[S3PathChannelMessage]
 
-type SizeInBytes = scala.Double
+type ScheduleExpression = String
 
-type SqlQuery = java.lang.String
+type SessionTimeoutInMinutes = Double
 
-type StartTime = typings.std.Date
+type SizeInBytes = Double
 
-type StringValue = java.lang.String
+type SqlQuery = String
 
-type TagKey = java.lang.String
+type StartTime = js.Date
 
-type TagKeyList = js.Array[typings.awsSdk.iotanalyticsMod.TagKey]
+type StringValue = String
 
-type TagList = js.Array[typings.awsSdk.iotanalyticsMod.Tag]
+type TagKey = String
 
-type TagValue = java.lang.String
+type TagKeyList = js.Array[TagKey]
 
-type TimeExpression = java.lang.String
+type TagList = js.Array[Tag]
 
-type Timestamp = typings.std.Date
+type TagValue = String
 
-type UnlimitedRetentionPeriod = scala.Boolean
+type TimeExpression = String
 
-type UnlimitedVersioning = scala.Boolean
+type Timestamp = js.Date
 
-type VariableName = java.lang.String
+type TimestampFormat = String
 
-type Variables = js.Array[typings.awsSdk.iotanalyticsMod.Variable]
+type UnlimitedRetentionPeriod = Boolean
 
-type VolumeSizeInGB = scala.Double
+type UnlimitedVersioning = Boolean
+
+type VariableName = String
+
+type Variables = js.Array[Variable]
+
+type VolumeSizeInGB = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-11-27`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.iotanalyticsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

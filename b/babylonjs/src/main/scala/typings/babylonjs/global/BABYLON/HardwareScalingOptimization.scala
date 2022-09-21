@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param maximumScale defines the maximum scale to use (2 by default)
   * @param step defines the step to use between two passes (0.5 by default)
   */
-class HardwareScalingOptimization ()
+open class HardwareScalingOptimization ()
   extends StObject
      with typings.babylonjs.BABYLON.HardwareScalingOptimization {
   def this(/**
@@ -97,10 +97,10 @@ class HardwareScalingOptimization ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _currentScale: js.Any = js.native
+  var _currentScale: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _directionOffset: js.Any = js.native
+  var _directionOffset: Any = js.native
   
   /**
     * This function will be called by the SceneOptimizer when its priority is reached in order to apply the change required by the current optimization

@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for KeyManagementService.UpdateCryptoKeyPrimaryVersion.
-  */
 trait SchemaUpdateCryptoKeyPrimaryVersionRequest extends StObject {
   
   /**
-    * The id of the child CryptoKeyVersion to use as primary.
+    * Required. The id of the child CryptoKeyVersion to use as primary.
     */
-  var cryptoKeyVersionId: js.UndefOr[String] = js.undefined
+  var cryptoKeyVersionId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUpdateCryptoKeyPrimaryVersionRequest {
   
@@ -24,6 +21,8 @@ object SchemaUpdateCryptoKeyPrimaryVersionRequest {
   extension [Self <: SchemaUpdateCryptoKeyPrimaryVersionRequest](x: Self) {
     
     inline def setCryptoKeyVersionId(value: String): Self = StObject.set(x, "cryptoKeyVersionId", value.asInstanceOf[js.Any])
+    
+    inline def setCryptoKeyVersionIdNull: Self = StObject.set(x, "cryptoKeyVersionId", null)
     
     inline def setCryptoKeyVersionIdUndefined: Self = StObject.set(x, "cryptoKeyVersionId", js.undefined)
   }

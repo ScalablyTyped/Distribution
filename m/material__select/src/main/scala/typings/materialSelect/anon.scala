@@ -171,6 +171,31 @@ object anon {
     }
   }
   
+  trait CLICKDEBOUNCETIMEOUTMS extends StObject {
+    
+    var CLICK_DEBOUNCE_TIMEOUT_MS: Double
+    
+    var LABEL_SCALE: Double
+    
+    var UNSET_INDEX: Double
+  }
+  object CLICKDEBOUNCETIMEOUTMS {
+    
+    inline def apply(CLICK_DEBOUNCE_TIMEOUT_MS: Double, LABEL_SCALE: Double, UNSET_INDEX: Double): CLICKDEBOUNCETIMEOUTMS = {
+      val __obj = js.Dynamic.literal(CLICK_DEBOUNCE_TIMEOUT_MS = CLICK_DEBOUNCE_TIMEOUT_MS.asInstanceOf[js.Any], LABEL_SCALE = LABEL_SCALE.asInstanceOf[js.Any], UNSET_INDEX = UNSET_INDEX.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CLICKDEBOUNCETIMEOUTMS]
+    }
+    
+    extension [Self <: CLICKDEBOUNCETIMEOUTMS](x: Self) {
+      
+      inline def setCLICK_DEBOUNCE_TIMEOUT_MS(value: Double): Self = StObject.set(x, "CLICK_DEBOUNCE_TIMEOUT_MS", value.asInstanceOf[js.Any])
+      
+      inline def setLABEL_SCALE(value: Double): Self = StObject.set(x, "LABEL_SCALE", value.asInstanceOf[js.Any])
+      
+      inline def setUNSET_INDEX(value: Double): Self = StObject.set(x, "UNSET_INDEX", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait HELPERTEXTVALIDATIONMSG extends StObject {
     
     var HELPER_TEXT_VALIDATION_MSG: String
@@ -210,27 +235,6 @@ object anon {
       inline def setICON_EVENT(value: String): Self = StObject.set(x, "ICON_EVENT", value.asInstanceOf[js.Any])
       
       inline def setICON_ROLE(value: String): Self = StObject.set(x, "ICON_ROLE", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait LABELSCALE extends StObject {
-    
-    var LABEL_SCALE: Double
-    
-    var UNSET_INDEX: Double
-  }
-  object LABELSCALE {
-    
-    inline def apply(LABEL_SCALE: Double, UNSET_INDEX: Double): LABELSCALE = {
-      val __obj = js.Dynamic.literal(LABEL_SCALE = LABEL_SCALE.asInstanceOf[js.Any], UNSET_INDEX = UNSET_INDEX.asInstanceOf[js.Any])
-      __obj.asInstanceOf[LABELSCALE]
-    }
-    
-    extension [Self <: LABELSCALE](x: Self) {
-      
-      inline def setLABEL_SCALE(value: Double): Self = StObject.set(x, "LABEL_SCALE", value.asInstanceOf[js.Any])
-      
-      inline def setUNSET_INDEX(value: Double): Self = StObject.set(x, "UNSET_INDEX", value.asInstanceOf[js.Any])
     }
   }
   

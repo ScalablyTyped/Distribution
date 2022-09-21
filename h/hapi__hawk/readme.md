@@ -10,10 +10,10 @@ HTTP Hawk Authentication Scheme
 | ------------------ | :-------------: |
 | Full name          | @hapi/hawk |
 | Keywords           | http, authentication, scheme, hawk |
-| # releases         | 5 |
-| # dependents       | 8 |
-| # downloads        | 306763 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 13307.666666666666 |
+| # stars            | 1887.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/hawk#readme)

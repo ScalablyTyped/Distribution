@@ -12,7 +12,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.date
 import typings.arcgisJsApi.arcgisJsApiStrings.double
 import typings.arcgisJsApi.arcgisJsApiStrings.field
 import typings.arcgisJsApi.arcgisJsApiStrings.long
-import typings.arcgisJsApi.arcgisJsApiStrings.string
+import typings.arcgisJsApi.arcgisJsApiStrings.string_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,18 +22,22 @@ trait ParameterValueProperties extends StObject {
   /**
     * Specifies the parameter's data type.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ParameterValue.html#dataType)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ParameterValue.html#dataType)
     */
   var dataType: js.UndefOr[
-    boolean | `data-file` | date | double | `feature-record-set-layer` | field | `linear-unit` | long | `raster-data` | `raster-data-layer` | `record-set` | string | `multi-value`
+    boolean | `data-file` | date | double | `feature-record-set-layer` | field | `linear-unit` | long | `raster-data` | `raster-data-layer` | `record-set` | string_ | `multi-value`
   ] = js.undefined
   
   /**
     * The value of the parameter.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ParameterValue.html#value)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ParameterValue.html#value)
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[
+    Boolean | DataFileProperties | DateProperties | Double | FeatureSetProperties | FieldProperties | LinearUnitProperties | RasterDataProperties | String | (js.Array[
+      Boolean | DataFileProperties | DateProperties | Double | FeatureSetProperties | FieldProperties | LinearUnitProperties | RasterDataProperties | String
+    ])
+  ] = js.undefined
 }
 object ParameterValueProperties {
   
@@ -45,13 +49,21 @@ object ParameterValueProperties {
   extension [Self <: ParameterValueProperties](x: Self) {
     
     inline def setDataType(
-      value: boolean | `data-file` | date | double | `feature-record-set-layer` | field | `linear-unit` | long | `raster-data` | `raster-data-layer` | `record-set` | string | `multi-value`
+      value: boolean | `data-file` | date | double | `feature-record-set-layer` | field | `linear-unit` | long | `raster-data` | `raster-data-layer` | `record-set` | string_ | `multi-value`
     ): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(
+      value: Boolean | DataFileProperties | DateProperties | Double | FeatureSetProperties | FieldProperties | LinearUnitProperties | RasterDataProperties | String | (js.Array[
+          Boolean | DataFileProperties | DateProperties | Double | FeatureSetProperties | FieldProperties | LinearUnitProperties | RasterDataProperties | String
+        ])
+    ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setValueVarargs(
+      value: (Boolean | DataFileProperties | DateProperties | Double | FeatureSetProperties | FieldProperties | LinearUnitProperties | RasterDataProperties | String)*
+    ): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

@@ -11,12 +11,12 @@ object mod {
   
   @JSImport("input-moment", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[InputMomentProps, js.Object, js.Any] {
+  open class default protected ()
+    extends Component[InputMomentProps, js.Object, Any] {
     def this(props: ReadonlyInputMomentProps) = this()
   }
   
-  type InputMoment = Component[InputMomentProps, js.Object, js.Any]
+  type InputMoment = Component[InputMomentProps, js.Object, Any]
   
   trait InputMomentProps extends StObject {
     

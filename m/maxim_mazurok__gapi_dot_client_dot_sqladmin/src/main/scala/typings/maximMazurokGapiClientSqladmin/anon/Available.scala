@@ -12,10 +12,7 @@ trait Available extends StObject {
     */
   var available: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * The name of the failover replica. If specified at instance creation, a failover replica is created for the instance. The name doesn't include the project ID. This property is
-    * applicable only to Second Generation instances.
-    */
+  /** The name of the failover replica. If specified at instance creation, a failover replica is created for the instance. The name doesn't include the project ID. */
   var name: js.UndefOr[String] = js.undefined
 }
 object Available {

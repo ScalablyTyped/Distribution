@@ -9,9 +9,8 @@ object cardDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/card/demo/basic", JSImport.Default)
   @js.native
-  class default () extends BasicCardExample
+  open class default () extends BasicCardExample
   
   @js.native
-  trait BasicCardExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait BasicCardExample extends Component[Any, Any, Any]
 }

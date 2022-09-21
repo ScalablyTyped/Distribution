@@ -1,7 +1,7 @@
 
 # Scala.js typings for focus-lock
 
-Typings are for version 0.8.1
+Typings are for version 0.11.3
 
 ## Library description:
 DOM trap for a focus
@@ -11,9 +11,9 @@ DOM trap for a focus
 | Full name          | focus-lock |
 | Keywords           | focus, trap, vanilla |
 | # releases         | 12 |
-| # dependents       | 6 |
-| # downloads        | 82095940 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8976925.333333334 |
+| # stars            | 115.0 |
 
 ## Links
 - [Homepage](https://github.com/theKashey/focus-lock#readme)

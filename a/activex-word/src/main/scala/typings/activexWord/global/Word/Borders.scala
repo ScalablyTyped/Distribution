@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Borders")
 @js.native
-/* private */ class Borders ()
+/* private */ open class Borders ()
   extends StObject
      with typings.activexWord.Word.Borders {
   
@@ -93,7 +93,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutsideLineWidth: WdLineWidth = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Shadow: Boolean = js.native

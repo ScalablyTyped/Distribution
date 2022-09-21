@@ -10,15 +10,15 @@ A well-tested CSS minifier
 | ------------------ | :-------------: |
 | Full name          | clean-css |
 | Keywords           | css, minifier |
-| # releases         | 4 |
-| # dependents       | 1315 |
-| # downloads        | 415002413 |
-| # stars            | 90 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 5.9332762666666664E7 |
+| # stars            | 3945.0 |
 
 ## Links
-- [Homepage](https://github.com/jakubpawlowicz/clean-css)
-- [Bugs](https://github.com/jakubpawlowicz/clean-css/issues)
-- [Repository](https://github.com/jakubpawlowicz/clean-css)
+- [Homepage](https://github.com/clean-css/clean-css)
+- [Bugs](https://github.com/clean-css/clean-css/issues)
+- [Repository](https://github.com/clean-css/clean-css)
 - [Npm](https://www.npmjs.com/package/clean-css)
     
 

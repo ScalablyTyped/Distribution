@@ -11,6 +11,12 @@ trait InstanceReference extends StObject {
   
   /** The user-friendly name of the Compute Engine instance. */
   var instanceName: js.UndefOr[String] = js.undefined
+  
+  /** The public ECIES key used for sharing data with this instance. */
+  var publicEciesKey: js.UndefOr[String] = js.undefined
+  
+  /** The public RSA key used for sharing data with this instance. */
+  var publicKey: js.UndefOr[String] = js.undefined
 }
 object InstanceReference {
   
@@ -28,5 +34,13 @@ object InstanceReference {
     inline def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
     inline def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
+    
+    inline def setPublicEciesKey(value: String): Self = StObject.set(x, "publicEciesKey", value.asInstanceOf[js.Any])
+    
+    inline def setPublicEciesKeyUndefined: Self = StObject.set(x, "publicEciesKey", js.undefined)
+    
+    inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    
+    inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
   }
 }

@@ -10,10 +10,10 @@ object flagMod {
   
   @JSImport("material-ui/svg-icons/content/flag", JSImport.Default)
   @js.native
-  class default () extends ContentFlag
+  open class default () extends ContentFlag
   
   @JSImport("material-ui/svg-icons/content/flag", "ContentFlag")
   @js.native
-  class ContentFlag ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentFlag ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

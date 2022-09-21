@@ -23,10 +23,8 @@ trait Typeofonc extends StObject {
   
   /**
     * Partial classes for internal use
-    * @internal
-    * @private
     */
-  val _internal_ : js.Any = js.native
+  val _internal_ : Any = js.native
   
   /**
     * Creates a new network configuration from properties.

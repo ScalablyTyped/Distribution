@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AudioSelectorSettings extends StObject {
   
+  var AudioHlsRenditionSelection: js.UndefOr[typings.awsSdk.medialiveMod.AudioHlsRenditionSelection] = js.undefined
+  
   var AudioLanguageSelection: js.UndefOr[typings.awsSdk.medialiveMod.AudioLanguageSelection] = js.undefined
   
   var AudioPidSelection: js.UndefOr[typings.awsSdk.medialiveMod.AudioPidSelection] = js.undefined
@@ -20,6 +22,10 @@ object AudioSelectorSettings {
   }
   
   extension [Self <: AudioSelectorSettings](x: Self) {
+    
+    inline def setAudioHlsRenditionSelection(value: AudioHlsRenditionSelection): Self = StObject.set(x, "AudioHlsRenditionSelection", value.asInstanceOf[js.Any])
+    
+    inline def setAudioHlsRenditionSelectionUndefined: Self = StObject.set(x, "AudioHlsRenditionSelection", js.undefined)
     
     inline def setAudioLanguageSelection(value: AudioLanguageSelection): Self = StObject.set(x, "AudioLanguageSelection", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ CLI util to show status of repos in a main folder.
 | ------------------ | :-------------: |
 | Full name          | turbostatus |
 | Keywords           | cli, git, status |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 642 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 62.333333333333336 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/vigour-io/turbostatus#readme)

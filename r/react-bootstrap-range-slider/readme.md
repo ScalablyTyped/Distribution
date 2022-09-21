@@ -4,16 +4,16 @@
 Typings are for version 1.2
 
 ## Library description:
-A range slider component with tooltips for React Bootstrap (Bootstrap 4) that extends the HTML input (type=range) element.
+A range slider component with tooltips for React Bootstrap that extends the HTML input (type=range) element.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-bootstrap-range-slider |
 | Keywords           | react, react-component, bootstrap, slider, range slider, input, range input |
 | # releases         | 21 |
-| # dependents       | 0 |
-| # downloads        | 30913 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 39805.0 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/jaywilz/react-bootstrap-range-slider#readme)

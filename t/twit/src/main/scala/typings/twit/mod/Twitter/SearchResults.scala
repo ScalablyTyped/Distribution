@@ -23,6 +23,6 @@ object SearchResults {
     
     inline def setStatuses(value: js.Array[Status]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     
-    inline def setStatusesVarargs(value: Status*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: Status*): Self = StObject.set(x, "statuses", js.Array(value*))
   }
 }

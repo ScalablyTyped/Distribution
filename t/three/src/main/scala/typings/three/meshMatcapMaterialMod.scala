@@ -2,10 +2,11 @@ package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.three.colorMod.Color
-import typings.three.constantsMod.NormalMapTypes
 import typings.three.materialMod.Material
 import typings.three.materialMod.MaterialParameters
+import typings.three.srcConstantsMod.NormalMapTypes
 import typings.three.textureMod.Texture
+import typings.three.utilsMod.ColorRepresentation
 import typings.three.vector2Mod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,91 +16,88 @@ object meshMatcapMaterialMod {
   
   @JSImport("three/src/materials/MeshMatcapMaterial", "MeshMatcapMaterial")
   @js.native
-  class MeshMatcapMaterial () extends Material {
+  open class MeshMatcapMaterial () extends Material {
     def this(parameters: MeshMatcapMaterialParameters) = this()
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var alphaMap: Texture | Null = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var bumpMap: Texture | Null = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var bumpScale: Double = js.native
     
     /**
-    	 * @default new THREE.Color( 0xffffff )
-    	 */
+      * @default new THREE.Color( 0xffffff )
+      */
     var color: Color = js.native
     
     /**
-    	 * @default { 'MATCAP': '' }
-    	 */
+      * @default { 'MATCAP': '' }
+      */
     @JSName("defines")
-    var defines_MeshMatcapMaterial: StringDictionary[js.Any] = js.native
+    var defines_MeshMatcapMaterial: StringDictionary[Any] = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var displacementBias: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var displacementMap: Texture | Null = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var displacementScale: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * Define whether the material is rendered with flat shading. Default is false.
+      * @default false
+      */
+    var flatShading: Boolean = js.native
+    
+    /**
+      * Whether the material is affected by fog. Default is true.
+      * @default fog
+      */
+    var fog: Boolean = js.native
+    
+    /**
+      * @default null
+      */
     var map: Texture | Null = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var matcap: Texture | Null = js.native
     
     /**
-    	 * @default false
-    	 */
-    var morphNormals: Boolean = js.native
-    
-    /**
-    	 * @default false
-    	 */
-    var morphTargets: Boolean = js.native
-    
-    /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var normalMap: Texture | Null = js.native
     
     /**
-    	 * @default THREE.TangentSpaceNormalMap
-    	 */
+      * @default THREE.TangentSpaceNormalMap
+      */
     var normalMapType: NormalMapTypes = js.native
     
     /**
-    	 * @default new Vector2( 1, 1 )
-    	 */
+      * @default new Vector2( 1, 1 )
+      */
     var normalScale: Vector2 = js.native
     
     def setValues(parameters: MeshMatcapMaterialParameters): Unit = js.native
-    
-    /**
-    	 * @default false
-    	 */
-    var skinning: Boolean = js.native
   }
   
   trait MeshMatcapMaterialParameters
@@ -112,7 +110,7 @@ object meshMatcapMaterialMod {
     
     var bumpScale: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[Color | String | Double] = js.undefined
+    var color: js.UndefOr[ColorRepresentation] = js.undefined
     
     var displacementBias: js.UndefOr[Double] = js.undefined
     
@@ -120,21 +118,19 @@ object meshMatcapMaterialMod {
     
     var displacementScale: js.UndefOr[Double] = js.undefined
     
+    var flatShading: js.UndefOr[Boolean] = js.undefined
+    
+    var fog: js.UndefOr[Boolean] = js.undefined
+    
     var map: js.UndefOr[Texture | Null] = js.undefined
     
     var matcap: js.UndefOr[Texture | Null] = js.undefined
-    
-    var morphNormals: js.UndefOr[Boolean] = js.undefined
-    
-    var morphTargets: js.UndefOr[Boolean] = js.undefined
     
     var normalMap: js.UndefOr[Texture | Null] = js.undefined
     
     var normalMapType: js.UndefOr[NormalMapTypes] = js.undefined
     
     var normalScale: js.UndefOr[Vector2] = js.undefined
-    
-    var skinning: js.UndefOr[Boolean] = js.undefined
   }
   object MeshMatcapMaterialParameters {
     
@@ -161,7 +157,7 @@ object meshMatcapMaterialMod {
       
       inline def setBumpScaleUndefined: Self = StObject.set(x, "bumpScale", js.undefined)
       
-      inline def setColor(value: Color | String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ColorRepresentation): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
@@ -179,6 +175,14 @@ object meshMatcapMaterialMod {
       
       inline def setDisplacementScaleUndefined: Self = StObject.set(x, "displacementScale", js.undefined)
       
+      inline def setFlatShading(value: Boolean): Self = StObject.set(x, "flatShading", value.asInstanceOf[js.Any])
+      
+      inline def setFlatShadingUndefined: Self = StObject.set(x, "flatShading", js.undefined)
+      
+      inline def setFog(value: Boolean): Self = StObject.set(x, "fog", value.asInstanceOf[js.Any])
+      
+      inline def setFogUndefined: Self = StObject.set(x, "fog", js.undefined)
+      
       inline def setMap(value: Texture): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
       inline def setMapNull: Self = StObject.set(x, "map", null)
@@ -190,14 +194,6 @@ object meshMatcapMaterialMod {
       inline def setMatcapNull: Self = StObject.set(x, "matcap", null)
       
       inline def setMatcapUndefined: Self = StObject.set(x, "matcap", js.undefined)
-      
-      inline def setMorphNormals(value: Boolean): Self = StObject.set(x, "morphNormals", value.asInstanceOf[js.Any])
-      
-      inline def setMorphNormalsUndefined: Self = StObject.set(x, "morphNormals", js.undefined)
-      
-      inline def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
-      
-      inline def setMorphTargetsUndefined: Self = StObject.set(x, "morphTargets", js.undefined)
       
       inline def setNormalMap(value: Texture): Self = StObject.set(x, "normalMap", value.asInstanceOf[js.Any])
       
@@ -212,10 +208,6 @@ object meshMatcapMaterialMod {
       inline def setNormalScale(value: Vector2): Self = StObject.set(x, "normalScale", value.asInstanceOf[js.Any])
       
       inline def setNormalScaleUndefined: Self = StObject.set(x, "normalScale", js.undefined)
-      
-      inline def setSkinning(value: Boolean): Self = StObject.set(x, "skinning", value.asInstanceOf[js.Any])
-      
-      inline def setSkinningUndefined: Self = StObject.set(x, "skinning", js.undefined)
     }
   }
 }

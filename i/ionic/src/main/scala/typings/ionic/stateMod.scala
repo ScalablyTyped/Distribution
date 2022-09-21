@@ -10,7 +10,7 @@ object stateMod {
   
   @JSImport("ionic/commands/state", "StateCommand")
   @js.native
-  class StateCommand protected () extends Command {
+  open class StateCommand protected () extends Command {
     def this(namespace: INamespace) = this()
     
     def run(): js.Promise[Unit] = js.native

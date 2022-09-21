@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait WebInformation
   
   def get_configuration(): Double = js.native
   
-  def get_created(): Date = js.native
+  def get_created(): js.Date = js.native
   
   def get_description(): String = js.native
   
@@ -20,7 +19,7 @@ trait WebInformation
   
   def get_language(): Double = js.native
   
-  def get_lastItemModifiedDate(): Date = js.native
+  def get_lastItemModifiedDate(): js.Date = js.native
   
   def get_serverRelativeUrl(): String = js.native
   

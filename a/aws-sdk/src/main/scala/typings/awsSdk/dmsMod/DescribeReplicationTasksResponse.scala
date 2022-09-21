@@ -33,6 +33,6 @@ object DescribeReplicationTasksResponse {
     
     inline def setReplicationTasksUndefined: Self = StObject.set(x, "ReplicationTasks", js.undefined)
     
-    inline def setReplicationTasksVarargs(value: ReplicationTask*): Self = StObject.set(x, "ReplicationTasks", js.Array(value :_*))
+    inline def setReplicationTasksVarargs(value: ReplicationTask*): Self = StObject.set(x, "ReplicationTasks", js.Array(value*))
   }
 }

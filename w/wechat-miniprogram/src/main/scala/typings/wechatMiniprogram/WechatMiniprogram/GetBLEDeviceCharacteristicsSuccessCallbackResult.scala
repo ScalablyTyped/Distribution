@@ -22,7 +22,7 @@ object GetBLEDeviceCharacteristicsSuccessCallbackResult {
     
     inline def setCharacteristics(value: js.Array[BLECharacteristic]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
     
-    inline def setCharacteristicsVarargs(value: BLECharacteristic*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
+    inline def setCharacteristicsVarargs(value: BLECharacteristic*): Self = StObject.set(x, "characteristics", js.Array(value*))
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

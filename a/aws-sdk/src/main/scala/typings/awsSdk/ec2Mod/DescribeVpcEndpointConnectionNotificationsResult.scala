@@ -29,7 +29,7 @@ object DescribeVpcEndpointConnectionNotificationsResult {
     
     inline def setConnectionNotificationSetUndefined: Self = StObject.set(x, "ConnectionNotificationSet", js.undefined)
     
-    inline def setConnectionNotificationSetVarargs(value: ConnectionNotification*): Self = StObject.set(x, "ConnectionNotificationSet", js.Array(value :_*))
+    inline def setConnectionNotificationSetVarargs(value: ConnectionNotification*): Self = StObject.set(x, "ConnectionNotificationSet", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

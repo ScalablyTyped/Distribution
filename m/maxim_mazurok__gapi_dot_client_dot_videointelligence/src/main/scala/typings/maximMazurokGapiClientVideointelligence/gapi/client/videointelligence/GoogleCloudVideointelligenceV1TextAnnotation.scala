@@ -28,7 +28,7 @@ object GoogleCloudVideointelligenceV1TextAnnotation {
     
     inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    inline def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1TextSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1TextSegment*): Self = StObject.set(x, "segments", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

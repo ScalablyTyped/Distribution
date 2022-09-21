@@ -85,7 +85,7 @@ object X500Name {
     setByObject: X500NameParam => Unit,
     setByString: String => Unit
   ): X500Name = {
-    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setByLdapString = js.Any.fromFunction1(setByLdapString), setByObject = js.Any.fromFunction1(setByObject), setByString = js.Any.fromFunction1(setByString))
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setByLdapString = js.Any.fromFunction1(setByLdapString), setByObject = js.Any.fromFunction1(setByObject), setByString = js.Any.fromFunction1(setByString), params = null)
     __obj.asInstanceOf[X500Name]
   }
   

@@ -1,28 +1,30 @@
 package typings.matrixAppserviceBridge.anon
 
-import typings.matrixAppserviceBridge.membershipCacheMod.UserMembership
+import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mxcColonSlashSlash$LeftcurlybracketstringRightcurlybracket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Displayname extends StObject {
   
-  var avatar_url: js.UndefOr[String] = js.undefined
+  var avatar_url: js.UndefOr[mxcColonSlashSlash$LeftcurlybracketstringRightcurlybracket] = js.undefined
   
   var displayname: js.UndefOr[String] = js.undefined
   
-  var membership: UserMembership
+  var external_url: js.UndefOr[String] = js.undefined
+  
+  var id: String
 }
 object Displayname {
   
-  inline def apply(): Displayname = {
-    val __obj = js.Dynamic.literal(membership = null)
+  inline def apply(id: String): Displayname = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Displayname]
   }
   
   extension [Self <: Displayname](x: Self) {
     
-    inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
+    inline def setAvatar_url(value: mxcColonSlashSlash$LeftcurlybracketstringRightcurlybracket): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
     
     inline def setAvatar_urlUndefined: Self = StObject.set(x, "avatar_url", js.undefined)
     
@@ -30,8 +32,10 @@ object Displayname {
     
     inline def setDisplaynameUndefined: Self = StObject.set(x, "displayname", js.undefined)
     
-    inline def setMembership(value: UserMembership): Self = StObject.set(x, "membership", value.asInstanceOf[js.Any])
+    inline def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
     
-    inline def setMembershipNull: Self = StObject.set(x, "membership", null)
+    inline def setExternal_urlUndefined: Self = StObject.set(x, "external_url", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

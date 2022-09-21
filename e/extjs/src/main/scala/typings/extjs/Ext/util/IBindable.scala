@@ -14,7 +14,7 @@ trait IBindable
   /** [Method] Binds a store to this instance
     * @param store Ext.data.AbstractStore/String The store to bind or ID of the store. When no store given (or when null or undefined passed), unbinds the existing store.
     */
-  var bindStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var bindStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Binds listeners for this component to the store
     * @param store Ext.data.AbstractStore The store to bind to
@@ -30,7 +30,7 @@ trait IBindable
     * @param store Ext.data.Store The Store which is being bound to for which a listeners object should be returned.
     * @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
     */
-  var getStoreListeners: js.UndefOr[js.Function1[/* store */ js.UndefOr[IStore], js.Any]] = js.undefined
+  var getStoreListeners: js.UndefOr[js.Function1[/* store */ js.UndefOr[IStore], Any]] = js.undefined
   
   /** [Method] Template method it is called when a new store is bound to the current instance
     * @param store Ext.data.AbstractStore The store being bound
@@ -62,7 +62,7 @@ object IBindable {
   
   extension [Self <: IBindable](x: Self) {
     
-    inline def setBindStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
+    inline def setBindStore(value: /* store */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
     
     inline def setBindStoreListeners(value: /* store */ js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "bindStoreListeners", js.Any.fromFunction1(value))
     
@@ -72,7 +72,7 @@ object IBindable {
     
     inline def setGetStore(value: () => IAbstractStore): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
-    inline def setGetStoreListeners(value: /* store */ js.UndefOr[IStore] => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
+    inline def setGetStoreListeners(value: /* store */ js.UndefOr[IStore] => Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
     
     inline def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
     

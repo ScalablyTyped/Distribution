@@ -13,6 +13,9 @@ trait DestinationTableProperties extends StObject {
     */
   var description: js.UndefOr[String] = js.undefined
   
+  /** [Internal] This field is for Google internal use only. */
+  var expirationTime: js.UndefOr[String] = js.undefined
+  
   /**
     * [Optional] The friendly name for the destination table. This will only be used if the destination table is newly created. If the table already exists and a value different than the
     * current friendly name is provided, the job will fail.
@@ -26,7 +29,7 @@ trait DestinationTableProperties extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.DestinationTableProperties & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.DestinationTableProperties & TopLevel[Any]
   ] = js.undefined
 }
 object DestinationTableProperties {
@@ -42,6 +45,10 @@ object DestinationTableProperties {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
+    inline def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+    
+    inline def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
+    
     inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
@@ -49,7 +56,7 @@ object DestinationTableProperties {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.DestinationTableProperties & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.DestinationTableProperties & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

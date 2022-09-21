@@ -1,9 +1,5 @@
 package typings.googleapis.firestoreV1Mod.firestoreV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,34 +9,25 @@ trait ParamsResourceProjectsDatabasesDocumentsPatch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * When set to `true`, the target document must exist. When set to `false`,
-    * the target document must not exist.
+    * When set to `true`, the target document must exist. When set to `false`, the target document must not exist.
     */
   @JSName("currentDocument.exists")
   var currentDocumentDotexists: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set, the target document must exist and have been last updated at
-    * that time.
+    * When set, the target document must exist and have been last updated at that time. Timestamp must be microsecond aligned.
     */
   @JSName("currentDocument.updateTime")
   var currentDocumentDotupdateTime: js.UndefOr[String] = js.undefined
   
   /**
-    * The list of field paths in the mask. See Document.fields for a field path
-    * syntax reference.
+    * The list of field paths in the mask. See Document.fields for a field path syntax reference.
     */
   @JSName("mask.fieldPaths")
   var maskDotfieldPaths: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The resource name of the document, for example
-    * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
+    * The resource name of the document, for example `projects/{project_id\}/databases/{database_id\}/documents/{document_path\}`.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -50,8 +37,7 @@ trait ParamsResourceProjectsDatabasesDocumentsPatch
   var requestBody: js.UndefOr[SchemaDocument] = js.undefined
   
   /**
-    * The list of field paths in the mask. See Document.fields for a field path
-    * syntax reference.
+    * The list of field paths in the mask. See Document.fields for a field path syntax reference.
     */
   @JSName("updateMask.fieldPaths")
   var updateMaskDotfieldPaths: js.UndefOr[js.Array[String]] = js.undefined
@@ -65,10 +51,6 @@ object ParamsResourceProjectsDatabasesDocumentsPatch {
   
   extension [Self <: ParamsResourceProjectsDatabasesDocumentsPatch](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setCurrentDocumentDotexists(value: Boolean): Self = StObject.set(x, "currentDocument.exists", value.asInstanceOf[js.Any])
     
     inline def setCurrentDocumentDotexistsUndefined: Self = StObject.set(x, "currentDocument.exists", js.undefined)
@@ -81,7 +63,7 @@ object ParamsResourceProjectsDatabasesDocumentsPatch {
     
     inline def setMaskDotfieldPathsUndefined: Self = StObject.set(x, "mask.fieldPaths", js.undefined)
     
-    inline def setMaskDotfieldPathsVarargs(value: String*): Self = StObject.set(x, "mask.fieldPaths", js.Array(value :_*))
+    inline def setMaskDotfieldPathsVarargs(value: String*): Self = StObject.set(x, "mask.fieldPaths", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -95,6 +77,6 @@ object ParamsResourceProjectsDatabasesDocumentsPatch {
     
     inline def setUpdateMaskDotfieldPathsUndefined: Self = StObject.set(x, "updateMask.fieldPaths", js.undefined)
     
-    inline def setUpdateMaskDotfieldPathsVarargs(value: String*): Self = StObject.set(x, "updateMask.fieldPaths", js.Array(value :_*))
+    inline def setUpdateMaskDotfieldPathsVarargs(value: String*): Self = StObject.set(x, "updateMask.fieldPaths", js.Array(value*))
   }
 }

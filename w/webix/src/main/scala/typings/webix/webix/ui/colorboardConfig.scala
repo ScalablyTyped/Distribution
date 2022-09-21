@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait colorboardConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
@@ -17,11 +17,13 @@ trait colorboardConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
   var gravity: js.UndefOr[Double] = js.undefined
+  
+  var grayScale: js.UndefOr[Boolean] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
@@ -47,11 +49,13 @@ trait colorboardConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var palette: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var palette: js.UndefOr[js.Array[Any]] = js.undefined
   
   var rows: js.UndefOr[Double] = js.undefined
   
   var template: js.UndefOr[WebixCallback] = js.undefined
+  
+  var `type`: js.UndefOr[String] = js.undefined
   
   var value: js.UndefOr[String] = js.undefined
   
@@ -68,7 +72,7 @@ object colorboardConfig {
   
   extension [Self <: colorboardConfig](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -84,7 +88,7 @@ object colorboardConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -95,6 +99,10 @@ object colorboardConfig {
     inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
     inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    
+    inline def setGrayScale(value: Boolean): Self = StObject.set(x, "grayScale", value.asInstanceOf[js.Any])
+    
+    inline def setGrayScaleUndefined: Self = StObject.set(x, "grayScale", js.undefined)
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
@@ -144,11 +152,11 @@ object colorboardConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPalette(value: js.Array[js.Any]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: js.Array[Any]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
     inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
-    inline def setPaletteVarargs(value: js.Any*): Self = StObject.set(x, "palette", js.Array(value :_*))
+    inline def setPaletteVarargs(value: Any*): Self = StObject.set(x, "palette", js.Array(value*))
     
     inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
@@ -157,6 +165,10 @@ object colorboardConfig {
     inline def setTemplate(value: WebixCallback): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

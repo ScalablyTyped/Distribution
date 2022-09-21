@@ -25,7 +25,7 @@ object ListAccessPoliciesResponse {
     
     inline def setAccessPoliciesUndefined: Self = StObject.set(x, "accessPolicies", js.undefined)
     
-    inline def setAccessPoliciesVarargs(value: AccessPolicy*): Self = StObject.set(x, "accessPolicies", js.Array(value :_*))
+    inline def setAccessPoliciesVarargs(value: AccessPolicy*): Self = StObject.set(x, "accessPolicies", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "BatchRetrieveOrdersRequest")
 @js.native
-class BatchRetrieveOrdersRequest () extends StObject {
+open class BatchRetrieveOrdersRequest () extends StObject {
   
   /**
     * The ID of the location for these orders.

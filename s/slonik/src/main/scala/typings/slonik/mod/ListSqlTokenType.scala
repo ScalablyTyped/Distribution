@@ -28,7 +28,7 @@ object ListSqlTokenType {
     
     inline def setMembers(value: js.Array[SqlTokenType]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    inline def setMembersVarargs(value: SqlTokenType*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: SqlTokenType*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setType(value: js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

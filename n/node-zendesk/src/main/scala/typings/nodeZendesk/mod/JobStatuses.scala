@@ -10,10 +10,10 @@ object JobStatuses {
   trait Methods extends StObject {
     
     def show(jobStatusId: ZendeskID): js.Promise[ResponsePayload] = js.native
-    def show(jobStatusId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): ResponsePayload = js.native
+    def show(jobStatusId: ZendeskID, cb: ZendeskCallback[Any, Any]): ResponsePayload = js.native
     
-    def watch(jobStatusId: ZendeskID, interval: Double, maxAttempts: Double): js.Promise[js.Any] = js.native
-    def watch(jobStatusId: ZendeskID, interval: Double, maxAttempts: Double, cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
+    def watch(jobStatusId: ZendeskID, interval: Double, maxAttempts: Double): js.Promise[Any] = js.native
+    def watch(jobStatusId: ZendeskID, interval: Double, maxAttempts: Double, cb: ZendeskCallback[Any, Any]): Any = js.native
   }
   
   trait ResponseModel
@@ -55,7 +55,7 @@ object JobStatuses {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value*))
       
       inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       

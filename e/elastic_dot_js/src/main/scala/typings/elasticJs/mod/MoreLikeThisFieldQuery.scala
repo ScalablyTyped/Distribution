@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "MoreLikeThisFieldQuery")
 @js.native
-class MoreLikeThisFieldQuery protected ()
+open class MoreLikeThisFieldQuery protected ()
   extends StObject
      with Query {
   /*
@@ -102,11 +102,11 @@ class MoreLikeThisFieldQuery protected ()
     the purposes of document similarity it seems reasonable to assume
     that “a stop word is never interesting”.
     */
-  def stopWords(stopWords: js.Array[js.Any]): MoreLikeThisFieldQuery = js.native
+  def stopWords(stopWords: js.Array[Any]): MoreLikeThisFieldQuery = js.native
   
   /*
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

@@ -1,5 +1,6 @@
 package typings.nodeJsonDb
 
+import typings.nodeJsonDb.iadapterMod.IAdapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ object jsonDBConfigMod {
   
   @JSImport("node-json-db/dist/lib/JsonDBConfig", "Config")
   @js.native
-  class Config protected ()
+  open class Config protected ()
     extends StObject
        with JsonDBConfig {
     def this(filename: String) = this()
@@ -19,42 +20,77 @@ object jsonDBConfigMod {
     def this(filename: String, saveOnPush: Boolean, humanReadable: Unit, separator: String) = this()
     def this(filename: String, saveOnPush: Unit, humanReadable: Boolean, separator: String) = this()
     def this(filename: String, saveOnPush: Unit, humanReadable: Unit, separator: String) = this()
+    def this(
+      filename: String,
+      saveOnPush: Boolean,
+      humanReadable: Boolean,
+      separator: String,
+      syncOnSave: Boolean
+    ) = this()
+    def this(
+      filename: String,
+      saveOnPush: Boolean,
+      humanReadable: Boolean,
+      separator: Unit,
+      syncOnSave: Boolean
+    ) = this()
+    def this(filename: String, saveOnPush: Boolean, humanReadable: Unit, separator: String, syncOnSave: Boolean) = this()
+    def this(filename: String, saveOnPush: Boolean, humanReadable: Unit, separator: Unit, syncOnSave: Boolean) = this()
+    def this(filename: String, saveOnPush: Unit, humanReadable: Boolean, separator: String, syncOnSave: Boolean) = this()
+    def this(filename: String, saveOnPush: Unit, humanReadable: Boolean, separator: Unit, syncOnSave: Boolean) = this()
+    def this(filename: String, saveOnPush: Unit, humanReadable: Unit, separator: String, syncOnSave: Boolean) = this()
+    def this(filename: String, saveOnPush: Unit, humanReadable: Unit, separator: Unit, syncOnSave: Boolean) = this()
     
     /* CompleteClass */
-    var filename: String = js.native
+    override val adapter: IAdapter[Any] = js.native
+    
+    val filename: String = js.native
     
     /* CompleteClass */
-    var humanReadable: Boolean = js.native
+    override val saveOnPush: Boolean = js.native
     
     /* CompleteClass */
-    var saveOnPush: Boolean = js.native
+    override val separator: String = js.native
+  }
+  
+  @JSImport("node-json-db/dist/lib/JsonDBConfig", "ConfigWithAdapter")
+  @js.native
+  open class ConfigWithAdapter protected ()
+    extends StObject
+       with JsonDBConfig {
+    def this(adapter: IAdapter[Any]) = this()
+    def this(adapter: IAdapter[Any], saveOnPush: Boolean) = this()
+    def this(adapter: IAdapter[Any], saveOnPush: Boolean, separator: String) = this()
+    def this(adapter: IAdapter[Any], saveOnPush: Unit, separator: String) = this()
     
     /* CompleteClass */
-    var separator: String = js.native
+    override val adapter: IAdapter[Any] = js.native
+    
+    /* CompleteClass */
+    override val saveOnPush: Boolean = js.native
+    
+    /* CompleteClass */
+    override val separator: String = js.native
   }
   
   trait JsonDBConfig extends StObject {
     
-    var filename: String
+    val adapter: IAdapter[Any]
     
-    var humanReadable: Boolean
+    val saveOnPush: Boolean
     
-    var saveOnPush: Boolean
-    
-    var separator: String
+    val separator: String
   }
   object JsonDBConfig {
     
-    inline def apply(filename: String, humanReadable: Boolean, saveOnPush: Boolean, separator: String): JsonDBConfig = {
-      val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], humanReadable = humanReadable.asInstanceOf[js.Any], saveOnPush = saveOnPush.asInstanceOf[js.Any], separator = separator.asInstanceOf[js.Any])
+    inline def apply(adapter: IAdapter[Any], saveOnPush: Boolean, separator: String): JsonDBConfig = {
+      val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], saveOnPush = saveOnPush.asInstanceOf[js.Any], separator = separator.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsonDBConfig]
     }
     
     extension [Self <: JsonDBConfig](x: Self) {
       
-      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
-      
-      inline def setHumanReadable(value: Boolean): Self = StObject.set(x, "humanReadable", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: IAdapter[Any]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
       inline def setSaveOnPush(value: Boolean): Self = StObject.set(x, "saveOnPush", value.asInstanceOf[js.Any])
       

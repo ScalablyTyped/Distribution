@@ -8,7 +8,7 @@ object CompliancePolicy {
   
   @JSGlobal("SP.CompliancePolicy.SPContainerId")
   @js.native
-  class SPContainerId ()
+  open class SPContainerId ()
     extends StObject
        with typings.sharepoint.SP.CompliancePolicy.SPContainerId
   object SPContainerId {
@@ -18,10 +18,10 @@ object CompliancePolicy {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def create(context: typings.sharepoint.SP.ClientRuntimeContext, containerId: js.Any): typings.sharepoint.SP.CompliancePolicy.SPContainerId = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(context.asInstanceOf[js.Any], containerId.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPContainerId]
+    inline def create(context: typings.sharepoint.SP.ClientRuntimeContext, containerId: Any): typings.sharepoint.SP.CompliancePolicy.SPContainerId = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(context.asInstanceOf[js.Any], containerId.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPContainerId]
     
     /* static member */
-    inline def createFromList(context: typings.sharepoint.SP.ClientRuntimeContext, list: typings.sharepoint.SP.List[js.Any]): typings.sharepoint.SP.CompliancePolicy.SPContainerId = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromList")(context.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPContainerId]
+    inline def createFromList(context: typings.sharepoint.SP.ClientRuntimeContext, list: typings.sharepoint.SP.List[Any]): typings.sharepoint.SP.CompliancePolicy.SPContainerId = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromList")(context.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPContainerId]
     
     /* static member */
     inline def createFromSite(context: typings.sharepoint.SP.ClientRuntimeContext, site: typings.sharepoint.SP.Site): typings.sharepoint.SP.CompliancePolicy.SPContainerId = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromSite")(context.asInstanceOf[js.Any], site.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.CompliancePolicy.SPContainerId]
@@ -46,31 +46,31 @@ object CompliancePolicy {
   
   @JSGlobal("SP.CompliancePolicy.SPPolicyAssociation")
   @js.native
-  class SPPolicyAssociation ()
+  open class SPPolicyAssociation ()
     extends StObject
        with typings.sharepoint.SP.CompliancePolicy.SPPolicyAssociation
   
   @JSGlobal("SP.CompliancePolicy.SPPolicyBinding")
   @js.native
-  class SPPolicyBinding ()
+  open class SPPolicyBinding ()
     extends StObject
        with typings.sharepoint.SP.CompliancePolicy.SPPolicyBinding
   
   @JSGlobal("SP.CompliancePolicy.SPPolicyDefinition")
   @js.native
-  class SPPolicyDefinition ()
+  open class SPPolicyDefinition ()
     extends StObject
        with typings.sharepoint.SP.CompliancePolicy.SPPolicyDefinition
   
   @JSGlobal("SP.CompliancePolicy.SPPolicyRule")
   @js.native
-  class SPPolicyRule ()
+  open class SPPolicyRule ()
     extends StObject
        with typings.sharepoint.SP.CompliancePolicy.SPPolicyRule
   
   @JSGlobal("SP.CompliancePolicy.SPPolicyStore")
   @js.native
-  class SPPolicyStore protected ()
+  open class SPPolicyStore protected ()
     extends StObject
        with typings.sharepoint.SP.CompliancePolicy.SPPolicyStore {
     def this(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web) = this()
@@ -96,7 +96,7 @@ object CompliancePolicy {
   
   @JSGlobal("SP.CompliancePolicy.SPPolicyStoreProxy")
   @js.native
-  class SPPolicyStoreProxy protected ()
+  open class SPPolicyStoreProxy protected ()
     extends StObject
        with typings.sharepoint.SP.CompliancePolicy.SPPolicyStoreProxy {
     def this(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web) = this()

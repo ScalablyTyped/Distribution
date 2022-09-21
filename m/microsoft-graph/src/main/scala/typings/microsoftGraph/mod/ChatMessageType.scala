@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.message
   - typings.microsoftGraph.microsoftGraphStrings.chatEvent
   - typings.microsoftGraph.microsoftGraphStrings.typing
-  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
+  - typings.microsoftGraph.microsoftGraphStrings.systemEventMessage
 */
 trait ChatMessageType extends StObject
 object ChatMessageType {
@@ -17,7 +19,9 @@ object ChatMessageType {
   
   inline def message: typings.microsoftGraph.microsoftGraphStrings.message = "message".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.message]
   
+  inline def systemEventMessage: typings.microsoftGraph.microsoftGraphStrings.systemEventMessage = "systemEventMessage".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.systemEventMessage]
+  
   inline def typing: typings.microsoftGraph.microsoftGraphStrings.typing = "typing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.typing]
   
-  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
 }

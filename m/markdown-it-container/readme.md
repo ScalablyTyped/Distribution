@@ -10,10 +10,10 @@ Plugin to create block-level custom containers for markdown-it markdown parser
 | ------------------ | :-------------: |
 | Full name          | markdown-it-container |
 | Keywords           | markdown-it-plugin, markdown-it, markdown |
-| # releases         | 2 |
-| # dependents       | 382 |
-| # downloads        | 3051196 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1050236.0 |
+| # stars            | 384.0 |
 
 ## Links
 - [Homepage](https://github.com/markdown-it/markdown-it-container#readme)

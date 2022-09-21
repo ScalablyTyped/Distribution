@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.CubeField")
 @js.native
-/* private */ class CubeField ()
+/* private */ open class CubeField ()
   extends StObject
      with typings.activexExcel.Excel.CubeField

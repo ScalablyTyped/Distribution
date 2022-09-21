@@ -67,8 +67,8 @@ trait IgGridGroupByMethods extends StObject {
     * @param colKey key of the column for which grouping will be applied.
     * @param idval value of the column by which grouping will be applied.
     */
-  def getGroupedData(data: js.Array[js.Any], colKey: String): js.Array[js.Any] = js.native
-  def getGroupedData(data: js.Array[js.Any], colKey: String, idval: String): js.Array[js.Any] = js.native
+  def getGroupedData(data: js.Array[Any], colKey: String): js.Array[Any] = js.native
+  def getGroupedData(data: js.Array[Any], colKey: String, idval: String): js.Array[Any] = js.native
   
   /**
     * Groups by a column

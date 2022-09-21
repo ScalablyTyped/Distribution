@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.NodeMaterialConnectionPointCustomObject")
 @js.native
-class NodeMaterialConnectionPointCustomObject[T /* <: typings.babylonjs.BABYLON.NodeMaterialBlock */] protected ()
+open class NodeMaterialConnectionPointCustomObject[T /* <: typings.babylonjs.BABYLON.NodeMaterialBlock */] protected ()
   extends StObject
      with typings.babylonjs.BABYLON.NodeMaterialConnectionPointCustomObject[T] {
   /**
@@ -15,19 +15,22 @@ class NodeMaterialConnectionPointCustomObject[T /* <: typings.babylonjs.BABYLON.
     * @param name defines the connection point name
     * @param ownerBlock defines the block hosting this connection point
     * @param direction defines the direction of the connection point
+    * @param _blockType
+    * @param _blockName
+    * @param _nameForCheking
     */
   def this(
     name: String,
     ownerBlock: typings.babylonjs.BABYLON.NodeMaterialBlock,
     direction: typings.babylonjs.BABYLON.NodeMaterialConnectionPointDirection,
-    _blockType: Instantiable1[/* args (repeated) */ js.Any, T],
+    _blockType: Instantiable1[/* args (repeated) */ Any, T],
     _blockName: String
   ) = this()
   def this(
     name: String,
     ownerBlock: typings.babylonjs.BABYLON.NodeMaterialBlock,
     direction: typings.babylonjs.BABYLON.NodeMaterialConnectionPointDirection,
-    _blockType: Instantiable1[/* args (repeated) */ js.Any, T],
+    _blockType: Instantiable1[/* args (repeated) */ Any, T],
     _blockName: String,
     _nameForCheking: String
   ) = this()

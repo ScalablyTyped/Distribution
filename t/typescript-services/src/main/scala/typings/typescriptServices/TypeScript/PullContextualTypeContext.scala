@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PullContextualTypeContext extends StObject {
   
-  /* private */ var astSymbolMap: js.Any
+  /* private */ var astSymbolMap: Any
   
   var contextualType: PullTypeSymbol
   
@@ -31,7 +31,7 @@ trait PullContextualTypeContext extends StObject {
 object PullContextualTypeContext {
   
   inline def apply(
-    astSymbolMap: js.Any,
+    astSymbolMap: Any,
     contextualType: PullTypeSymbol,
     getSymbolForAST: AST => PullSymbol,
     hasProvisionalErrors: Boolean,
@@ -49,7 +49,7 @@ object PullContextualTypeContext {
   
   extension [Self <: PullContextualTypeContext](x: Self) {
     
-    inline def setAstSymbolMap(value: js.Any): Self = StObject.set(x, "astSymbolMap", value.asInstanceOf[js.Any])
+    inline def setAstSymbolMap(value: Any): Self = StObject.set(x, "astSymbolMap", value.asInstanceOf[js.Any])
     
     inline def setContextualType(value: PullTypeSymbol): Self = StObject.set(x, "contextualType", value.asInstanceOf[js.Any])
     
@@ -65,7 +65,7 @@ object PullContextualTypeContext {
     
     inline def setProvisionallyTypedSymbols(value: js.Array[PullSymbol]): Self = StObject.set(x, "provisionallyTypedSymbols", value.asInstanceOf[js.Any])
     
-    inline def setProvisionallyTypedSymbolsVarargs(value: PullSymbol*): Self = StObject.set(x, "provisionallyTypedSymbols", js.Array(value :_*))
+    inline def setProvisionallyTypedSymbolsVarargs(value: PullSymbol*): Self = StObject.set(x, "provisionallyTypedSymbols", js.Array(value*))
     
     inline def setRecordProvisionallyTypedSymbol(value: PullSymbol => Unit): Self = StObject.set(x, "recordProvisionallyTypedSymbol", js.Any.fromFunction1(value))
     

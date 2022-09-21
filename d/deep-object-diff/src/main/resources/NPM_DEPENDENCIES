@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "deep-object-diff" : "1.1.0"
+      "deep-object-diff" : "1.1.7"
     }
   ],
   "test-dependencies" : [
     {
-      "deep-object-diff" : "1.1.0"
+      "deep-object-diff" : "1.1.7"
     }
   ],
   "compile-devDependencies" : [

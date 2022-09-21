@@ -20,11 +20,12 @@ trait AccessibilityPropsIOS extends StObject {
   var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Accessibility traits tell a person using VoiceOver what kind of element they have selected.
-    * Is this element a label? A button? A header? These questions are answered by accessibilityTraits.
+    * Indicates to the accessibility services that the UI component is in
+    * a specific language. The provided string should be formatted following
+    * the BCP 47 specification (https://www.rfc-editor.org/info/bcp47).
     * @platform ios
     */
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
+  var accessibilityLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * A Boolean value indicating whether VoiceOver should ignore the elements within views that are siblings of the receiver.
@@ -67,11 +68,9 @@ object AccessibilityPropsIOS {
     
     inline def setAccessibilityIgnoresInvertColorsUndefined: Self = StObject.set(x, "accessibilityIgnoresInvertColors", js.undefined)
     
-    inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
     
-    inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-    
-    inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
+    inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
     
     inline def setAccessibilityViewIsModal(value: Boolean): Self = StObject.set(x, "accessibilityViewIsModal", value.asInstanceOf[js.Any])
     

@@ -33,6 +33,6 @@ object ListSipRulesResponse {
     
     inline def setSipRulesUndefined: Self = StObject.set(x, "SipRules", js.undefined)
     
-    inline def setSipRulesVarargs(value: SipRule*): Self = StObject.set(x, "SipRules", js.Array(value :_*))
+    inline def setSipRulesVarargs(value: SipRule*): Self = StObject.set(x, "SipRules", js.Array(value*))
   }
 }

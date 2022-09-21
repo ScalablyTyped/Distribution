@@ -11,17 +11,17 @@ trait ValueSansProvider
   /**
     * The value to inject.
     */
-  var useValue: js.Any
+  var useValue: Any
 }
 object ValueSansProvider {
   
-  inline def apply(useValue: js.Any): ValueSansProvider = {
+  inline def apply(useValue: Any): ValueSansProvider = {
     val __obj = js.Dynamic.literal(useValue = useValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueSansProvider]
   }
   
   extension [Self <: ValueSansProvider](x: Self) {
     
-    inline def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
+    inline def setUseValue(value: Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
   }
 }

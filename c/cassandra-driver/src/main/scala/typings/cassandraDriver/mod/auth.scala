@@ -9,14 +9,14 @@ object auth {
   
   @JSImport("cassandra-driver", "auth.DseGssapiAuthProvider")
   @js.native
-  class DseGssapiAuthProvider ()
+  open class DseGssapiAuthProvider ()
     extends typings.cassandraDriver.authMod.auth.DseGssapiAuthProvider {
     def this(gssOptions: AuthorizationId) = this()
   }
   
   @JSImport("cassandra-driver", "auth.DsePlainTextAuthProvider")
   @js.native
-  class DsePlainTextAuthProvider protected ()
+  open class DsePlainTextAuthProvider protected ()
     extends typings.cassandraDriver.authMod.auth.DsePlainTextAuthProvider {
     def this(username: String, password: String) = this()
     def this(username: String, password: String, authorizationId: String) = this()
@@ -24,7 +24,7 @@ object auth {
   
   @JSImport("cassandra-driver", "auth.PlainTextAuthProvider")
   @js.native
-  class PlainTextAuthProvider protected ()
+  open class PlainTextAuthProvider protected ()
     extends typings.cassandraDriver.authMod.auth.PlainTextAuthProvider {
     def this(username: String, password: String) = this()
   }

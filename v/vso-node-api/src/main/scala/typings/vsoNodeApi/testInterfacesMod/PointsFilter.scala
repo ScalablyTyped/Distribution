@@ -28,14 +28,14 @@ object PointsFilter {
     
     inline def setConfigurationNames(value: js.Array[String]): Self = StObject.set(x, "configurationNames", value.asInstanceOf[js.Any])
     
-    inline def setConfigurationNamesVarargs(value: String*): Self = StObject.set(x, "configurationNames", js.Array(value :_*))
+    inline def setConfigurationNamesVarargs(value: String*): Self = StObject.set(x, "configurationNames", js.Array(value*))
     
     inline def setTestcaseIds(value: js.Array[Double]): Self = StObject.set(x, "testcaseIds", value.asInstanceOf[js.Any])
     
-    inline def setTestcaseIdsVarargs(value: Double*): Self = StObject.set(x, "testcaseIds", js.Array(value :_*))
+    inline def setTestcaseIdsVarargs(value: Double*): Self = StObject.set(x, "testcaseIds", js.Array(value*))
     
     inline def setTesters(value: js.Array[IdentityRef]): Self = StObject.set(x, "testers", value.asInstanceOf[js.Any])
     
-    inline def setTestersVarargs(value: IdentityRef*): Self = StObject.set(x, "testers", js.Array(value :_*))
+    inline def setTestersVarargs(value: IdentityRef*): Self = StObject.set(x, "testers", js.Array(value*))
   }
 }

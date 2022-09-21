@@ -9,12 +9,12 @@ object indexMod {
   
   @JSImport("@angular/http/testing/index", "MockBackend")
   @js.native
-  class MockBackend ()
+  open class MockBackend ()
     extends typings.angularHttp.testingPublicApiMod.MockBackend
   
   @JSImport("@angular/http/testing/index", "MockConnection")
   @js.native
-  class MockConnection protected ()
+  open class MockConnection protected ()
     extends typings.angularHttp.testingPublicApiMod.MockConnection {
     def this(req: Request) = this()
   }

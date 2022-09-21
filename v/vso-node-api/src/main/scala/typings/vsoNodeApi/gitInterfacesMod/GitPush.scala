@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,9 +18,9 @@ trait GitPush
 object GitPush {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     commits: js.Array[GitCommitRef],
-    date: Date,
+    date: js.Date,
     pushCorrelationId: String,
     pushId: Double,
     pushedBy: IdentityRef,
@@ -37,11 +36,11 @@ object GitPush {
     
     inline def setCommits(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
-    inline def setCommitsVarargs(value: GitCommitRef*): Self = StObject.set(x, "commits", js.Array(value :_*))
+    inline def setCommitsVarargs(value: GitCommitRef*): Self = StObject.set(x, "commits", js.Array(value*))
     
     inline def setRefUpdates(value: js.Array[GitRefUpdate]): Self = StObject.set(x, "refUpdates", value.asInstanceOf[js.Any])
     
-    inline def setRefUpdatesVarargs(value: GitRefUpdate*): Self = StObject.set(x, "refUpdates", js.Array(value :_*))
+    inline def setRefUpdatesVarargs(value: GitRefUpdate*): Self = StObject.set(x, "refUpdates", js.Array(value*))
     
     inline def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("DebugSymbol")
 @js.native
-class DebugSymbol ()
+open class DebugSymbol ()
   extends StObject
      with typings.fridaGum.DebugSymbol {
   

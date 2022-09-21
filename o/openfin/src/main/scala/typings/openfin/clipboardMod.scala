@@ -11,7 +11,7 @@ object clipboardMod {
   
   @JSImport("openfin/_v2/api/clipboard/clipboard", JSImport.Default)
   @js.native
-  class default () extends Clipboard
+  open class default () extends Clipboard
   
   @js.native
   trait Clipboard extends Base {

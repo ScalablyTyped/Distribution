@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.JohnsonSB")
 @js.native
-class JohnsonSB ()
+open class JohnsonSB ()
   extends typings.ranjs.mod.dist.JohnsonSB {
   def this(gamma: Double) = this()
   def this(gamma: Double, delta: Double) = this()

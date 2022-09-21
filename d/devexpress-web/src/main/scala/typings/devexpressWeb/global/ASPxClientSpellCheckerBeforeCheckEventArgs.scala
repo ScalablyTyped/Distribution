@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSpellCheckerBeforeCheckEventArgs")
 @js.native
-class ASPxClientSpellCheckerBeforeCheckEventArgs protected ()
+open class ASPxClientSpellCheckerBeforeCheckEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSpellCheckerBeforeCheckEventArgs {
   /**
@@ -19,7 +19,7 @@ class ASPxClientSpellCheckerBeforeCheckEventArgs protected ()
   def this(controlId: String) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native

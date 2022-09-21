@@ -14,16 +14,16 @@ object valuesMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.wordpressCustomizeBrowser.eventsMod.Events because Inheritance from two classes. Inlined topics, trigger, bind, unbind */ @JSImport("@wordpress/customize-browser/Values", "Values")
   @js.native
-  class Values[T] protected () extends Class {
+  open class Values[T] protected () extends Class {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     
     def apply(arg: String): T = js.native
-    def apply(args: (String | (js.Function1[/* repeated */ T, Unit]))*): Promise[js.Any, js.Any, js.Any] = js.native
+    def apply(args: (String | (js.Function1[/* repeated */ T, Unit]))*): Promise[Any, Any, Any] = js.native
     
     def _change(): Unit = js.native
     
-    var _deferreds: Record[String, Deferred[js.Any, js.Any, js.Any]] = js.native
+    var _deferreds: Record[String, Deferred[Any, Any, Any]] = js.native
     
     var _value: Record[String, T] = js.native
     
@@ -47,7 +47,7 @@ object valuesMod {
     def initialize(options: js.Object): Unit = js.native
     
     def instance(arg: String): T = js.native
-    def instance(args: (String | (js.Function1[/* repeated */ T, Unit]))*): Promise[js.Any, js.Any, js.Any] = js.native
+    def instance(args: (String | (js.Function1[/* repeated */ T, Unit]))*): Promise[Any, Any, Any] = js.native
     
     def remove(id: String): Unit = js.native
     
@@ -60,6 +60,6 @@ object valuesMod {
     
     def value(id: String): T = js.native
     
-    def when(args: (String | (js.Function1[/* repeated */ T, Unit]))*): Promise[js.Any, js.Any, js.Any] = js.native
+    def when(args: (String | (js.Function1[/* repeated */ T, Unit]))*): Promise[Any, Any, Any] = js.native
   }
 }

@@ -10,10 +10,10 @@ The lodash method `_.subtract` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.subtract |
 | Keywords           | lodash-modularized, subtract |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 818 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 73.66666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

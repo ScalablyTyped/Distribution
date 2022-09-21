@@ -1,22 +1,23 @@
 package typings.reactSelect
 
-import typings.react.mod.ComponentType
+import typings.react.mod.ReactElement
 import typings.reactSelect.componentsInputMod.InputProps
-import typings.reactSelect.transitionsMod.BaseTransition
-import typings.reactSelect.typesMod.PropsWithInnerRef
+import typings.reactSelect.typesMod.GroupBase
+import typings.reactTransitionGroup.transitionMod.TransitionProps
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputMod {
   
-  @JSImport("react-select/src/animated/Input", JSImport.Namespace)
+  @JSImport("react-select/dist/declarations/src/animated/Input", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(WrappedComponent: ComponentType[InputProps]): ComponentType[AnimatedInputProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedInputProps]]
+  inline def default(WrappedComponent: InputComponent): InputComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[InputComponent]
   
-  inline def AnimatedInput(WrappedComponent: ComponentType[InputProps]): ComponentType[AnimatedInputProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimatedInput")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedInputProps]]
+  type AnimatedInputProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] = (InputProps[Option, IsMulti, Group]) & Partial[TransitionProps[Unit]]
   
-  type AnimatedInputProps = BaseTransition & PropsWithInnerRef & InputProps
+  type InputComponent = js.Function1[/* props */ InputProps[Any, Boolean, GroupBase[Any]], ReactElement]
 }

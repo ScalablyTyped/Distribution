@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Used for attributes of basic SVGRect which can be animated. */
 trait SVGAnimatedRect extends StObject {
   
+  /* standard dom */
   val animVal: DOMRectReadOnly
   
+  /* standard dom */
   val baseVal: DOMRect
 }
 object SVGAnimatedRect {

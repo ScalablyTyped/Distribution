@@ -11,19 +11,19 @@ object settingsMod {
   
   @JSImport("fast-glob/out/settings", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Settings {
     def this(_options: Options) = this()
     
     /* private */ /* CompleteClass */
-    var _getFileSystemMethods: js.Any = js.native
+    var _getFileSystemMethods: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _getValue: js.Any = js.native
+    var _getValue: Any = js.native
     
     /* private */ /* CompleteClass */
-    override val _options: js.Any = js.native
+    override val _options: Any = js.native
     
     /* CompleteClass */
     override val absolute: Boolean = js.native
@@ -310,7 +310,7 @@ object settingsMod {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: Pattern*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: Pattern*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setMarkDirectories(value: Boolean): Self = StObject.set(x, "markDirectories", value.asInstanceOf[js.Any])
       
@@ -348,11 +348,11 @@ object settingsMod {
   
   trait Settings extends StObject {
     
-    /* private */ var _getFileSystemMethods: js.Any
+    /* private */ var _getFileSystemMethods: Any
     
-    /* private */ var _getValue: js.Any
+    /* private */ var _getValue: Any
     
-    /* private */ val _options: js.Any
+    /* private */ val _options: Any
     
     val absolute: Boolean
     
@@ -399,9 +399,9 @@ object settingsMod {
   object Settings {
     
     inline def apply(
-      _getFileSystemMethods: js.Any,
-      _getValue: js.Any,
-      _options: js.Any,
+      _getFileSystemMethods: Any,
+      _getValue: Any,
+      _options: Any,
       absolute: Boolean,
       baseNameMatch: Boolean,
       braceExpansion: Boolean,
@@ -456,7 +456,7 @@ object settingsMod {
       
       inline def setIgnore(value: js.Array[Pattern]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      inline def setIgnoreVarargs(value: Pattern*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: Pattern*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setMarkDirectories(value: Boolean): Self = StObject.set(x, "markDirectories", value.asInstanceOf[js.Any])
       
@@ -474,11 +474,11 @@ object settingsMod {
       
       inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
       
-      inline def set_getFileSystemMethods(value: js.Any): Self = StObject.set(x, "_getFileSystemMethods", value.asInstanceOf[js.Any])
+      inline def set_getFileSystemMethods(value: Any): Self = StObject.set(x, "_getFileSystemMethods", value.asInstanceOf[js.Any])
       
-      inline def set_getValue(value: js.Any): Self = StObject.set(x, "_getValue", value.asInstanceOf[js.Any])
+      inline def set_getValue(value: Any): Self = StObject.set(x, "_getValue", value.asInstanceOf[js.Any])
       
-      inline def set_options(value: js.Any): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+      inline def set_options(value: Any): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
     }
   }
 }

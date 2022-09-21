@@ -10,10 +10,10 @@ object addToQueueMod {
   
   @JSImport("material-ui/svg-icons/av/add-to-queue", JSImport.Default)
   @js.native
-  class default () extends AvAddToQueue
+  open class default () extends AvAddToQueue
   
   @JSImport("material-ui/svg-icons/av/add-to-queue", "AvAddToQueue")
   @js.native
-  class AvAddToQueue ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvAddToQueue ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

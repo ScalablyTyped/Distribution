@@ -11,14 +11,19 @@ object anisotropyBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/PBR/anisotropyBlock", "AnisotropyBlock")
   @js.native
-  class AnisotropyBlock protected () extends NodeMaterialBlock {
+  open class AnisotropyBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new AnisotropyBlock
       * @param name defines the block name
       */
     def this(name: String) = this()
     
-    /* private */ var _generateTBNSpace: js.Any = js.native
+    /**
+      * Gets the TBN input component
+      */
+    def TBN: NodeMaterialConnectionPoint = js.native
+    
+    /* private */ var _generateTBNSpace: Any = js.native
     
     /**
       * Gets the anisotropy object output component

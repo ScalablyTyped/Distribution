@@ -10,10 +10,10 @@ Keycodes utilities for WordPress. Used to check for keyboard events across brows
 | ------------------ | :-------------: |
 | Full name          | @wordpress/keycodes |
 | Keywords           | wordpress, gutenberg, keycodes |
-| # releases         | 23 |
-| # dependents       | 20 |
-| # downloads        | 1064083 |
-| # stars            | 0 |
+| # releases         | 53 |
+| # dependents       | 0.0 |
+| # downloads        | 184896.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/keycodes/README.md)

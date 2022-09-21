@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("docker-events", JSImport.Namespace)
   @js.native
-  class ^ () extends DockerEvents {
+  open class ^ () extends DockerEvents {
     def this(options: DockerEventsOptions) = this()
   }
   

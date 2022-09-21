@@ -4,33 +4,33 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Snapshot extends StObject {
+trait Snapshot[T] extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[T] = js.undefined
   
-  var id: String
+  var id: IDString
   
   var m: SnapshotMeta | Null
   
   var `type`: String | Null
   
-  var v: Double
+  var v: VersionNumber
 }
 object Snapshot {
   
-  inline def apply(id: String, v: Double): Snapshot = {
+  inline def apply[T](id: IDString, v: VersionNumber): Snapshot[T] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any], m = null)
     __obj.updateDynamic("type")(null)
-    __obj.asInstanceOf[Snapshot]
+    __obj.asInstanceOf[Snapshot[T]]
   }
   
-  extension [Self <: Snapshot](x: Self) {
+  extension [Self <: Snapshot[?], T](x: Self & Snapshot[T]) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: IDString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setM(value: SnapshotMeta): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
@@ -40,6 +40,6 @@ object Snapshot {
     
     inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: VersionNumber): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }
 }

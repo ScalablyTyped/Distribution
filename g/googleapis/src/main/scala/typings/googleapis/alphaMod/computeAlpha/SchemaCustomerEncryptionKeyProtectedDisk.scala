@@ -7,16 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaCustomerEncryptionKeyProtectedDisk extends StObject {
   
   /**
-    * Decrypts data associated with the disk with a customer-supplied
-    * encryption key.
+    * Decrypts data associated with the disk with a customer-supplied encryption key.
     */
   var diskEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
   
   /**
-    * Specifies a valid partial or full URL to an existing Persistent Disk
-    * resource. This field is only applicable for persistent disks.
+    * Specifies a valid partial or full URL to an existing Persistent Disk resource. This field is only applicable for persistent disks. For example: "source": "/compute/v1/projects/project_id/zones/zone/disks/ disk_name
     */
-  var source: js.UndefOr[String] = js.undefined
+  var source: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCustomerEncryptionKeyProtectedDisk {
   
@@ -32,6 +30,8 @@ object SchemaCustomerEncryptionKeyProtectedDisk {
     inline def setDiskEncryptionKeyUndefined: Self = StObject.set(x, "diskEncryptionKey", js.undefined)
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }

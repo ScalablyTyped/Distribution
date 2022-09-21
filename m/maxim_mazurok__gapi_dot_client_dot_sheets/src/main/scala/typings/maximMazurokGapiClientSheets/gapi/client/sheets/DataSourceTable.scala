@@ -44,7 +44,7 @@ object DataSourceTable {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: DataSourceColumnReference*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: DataSourceColumnReference*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setDataExecutionStatus(value: DataExecutionStatus): Self = StObject.set(x, "dataExecutionStatus", value.asInstanceOf[js.Any])
     
@@ -58,7 +58,7 @@ object DataSourceTable {
     
     inline def setFilterSpecsUndefined: Self = StObject.set(x, "filterSpecs", js.undefined)
     
-    inline def setFilterSpecsVarargs(value: FilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value :_*))
+    inline def setFilterSpecsVarargs(value: FilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value*))
     
     inline def setRowLimit(value: Double): Self = StObject.set(x, "rowLimit", value.asInstanceOf[js.Any])
     
@@ -68,6 +68,6 @@ object DataSourceTable {
     
     inline def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
     
-    inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
+    inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value*))
   }
 }

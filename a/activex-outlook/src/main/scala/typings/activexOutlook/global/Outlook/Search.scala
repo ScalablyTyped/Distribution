@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Search")
 @js.native
-/* private */ class Search ()
+/* private */ open class Search ()
   extends StObject
      with typings.activexOutlook.Outlook.Search {
   
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotSearch_typekey: typings.activexOutlook.Outlook.Search = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Results: typings.activexOutlook.Outlook.Results = js.native

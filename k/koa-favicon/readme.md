@@ -10,10 +10,10 @@ favicon bounce middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-favicon |
 | Keywords           | koa, middleware, favicon |
-| # releases         | 2 |
-| # dependents       | 157 |
-| # downloads        | 1940631 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 638821.6666666666 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/favicon#readme)

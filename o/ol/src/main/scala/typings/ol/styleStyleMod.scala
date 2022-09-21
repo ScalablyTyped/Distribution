@@ -16,7 +16,7 @@ object styleStyleMod {
   
   @JSImport("ol/style/Style", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Style {
     def this(opt_options: Options) = this()
@@ -26,9 +26,9 @@ object styleStyleMod {
   
   inline def createEditingStyle(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in ol.ol/geom/GeometryType.GeometryType ]: std.Array<ol.ol/style/Style.Style>}
-    */ typings.ol.olStrings.createEditingStyle & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEditingStyle")().asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    */ typings.ol.olStrings.createEditingStyle & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEditingStyle")().asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in ol.ol/geom/GeometryType.GeometryType ]: std.Array<ol.ol/style/Style.Style>}
-    */ typings.ol.olStrings.createEditingStyle & TopLevel[js.Any]]
+    */ typings.ol.olStrings.createEditingStyle & TopLevel[Any]]
   
   inline def toFunction(obj: js.Array[Style]): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("toFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
   inline def toFunction(obj: Style): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("toFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]

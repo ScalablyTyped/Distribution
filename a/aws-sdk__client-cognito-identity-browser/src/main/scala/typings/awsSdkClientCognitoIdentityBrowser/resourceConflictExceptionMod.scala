@@ -8,5 +8,5 @@ object resourceConflictExceptionMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/ResourceConflictException", "ResourceConflictException")
   @js.native
-  val ResourceConflictException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ResourceConflictException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

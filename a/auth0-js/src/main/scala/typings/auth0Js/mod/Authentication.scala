@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("auth0-js", "Authentication")
 @js.native
-class Authentication protected () extends StObject {
+open class Authentication protected () extends StObject {
   def this(options: AuthOptions) = this()
   
   /**
@@ -34,7 +34,7 @@ class Authentication protected () extends StObject {
     *
     * @param options: https://auth0.com/docs/api/authentication#!#post--delegation
     */
-  def delegation(options: DelegationOptions, callback: Auth0Callback[Auth0DelegationToken, Auth0Error]): js.Any = js.native
+  def delegation(options: DelegationOptions, callback: Auth0Callback[Auth0DelegationToken, Auth0Error]): Any = js.native
   
   /**
     * Makes a call to the `/ssodata` endpoint
@@ -58,25 +58,25 @@ class Authentication protected () extends StObject {
   /**
     * Makes a call to the `oauth/token` endpoint with `password-realm` grant type
     */
-  def login(options: DefaultLoginOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
+  def login(options: DefaultLoginOptions, callback: Auth0Callback[Any, Auth0Error]): Unit = js.native
   
   /**
     * Makes a call to the `oauth/token` endpoint with `password` grant type
     *
     * @param options: https://auth0.com/docs/api-auth/grant/password
     */
-  def loginWithDefaultDirectory(options: DefaultDirectoryLoginOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
+  def loginWithDefaultDirectory(options: DefaultDirectoryLoginOptions, callback: Auth0Callback[Any, Auth0Error]): Unit = js.native
   
   /**
     * Makes a call to the `/ro` endpoint
     * @deprecated `loginWithResourceOwner` will be soon deprecated, user `login` instead.
     */
-  def loginWithResourceOwner(options: ResourceOwnerLoginOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
+  def loginWithResourceOwner(options: ResourceOwnerLoginOptions, callback: Auth0Callback[Any, Auth0Error]): Unit = js.native
   
   /**
     * Makes a call to the `oauth/token` endpoint
     */
-  def oauthToken(options: js.Any, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
+  def oauthToken(options: Any, callback: Auth0Callback[Any, Auth0Error]): Unit = js.native
   
   var passwordless: PasswordlessAuthentication = js.native
   

@@ -10,10 +10,10 @@ object panoramaHorizontalMod {
   
   @JSImport("material-ui/svg-icons/image/panorama-horizontal", JSImport.Default)
   @js.native
-  class default () extends ImagePanoramaHorizontal
+  open class default () extends ImagePanoramaHorizontal
   
   @JSImport("material-ui/svg-icons/image/panorama-horizontal", "ImagePanoramaHorizontal")
   @js.native
-  class ImagePanoramaHorizontal ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImagePanoramaHorizontal ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

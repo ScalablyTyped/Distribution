@@ -27,7 +27,8 @@ trait ActionsResource extends StObject {
     * internal error occurred in the execution engine or the worker. * `DEADLINE_EXCEEDED`: The execution timed out. * `CANCELLED`: The operation was cancelled by the client. This status
     * is only possible if the server implements the Operations API CancelOperation method, and it was called for the current execution. In the case of a missing input or command, the
     * server SHOULD additionally send a PreconditionFailure error detail where, for each requested blob not present in the CAS, there is a `Violation` with a `type` of `MISSING` and a
-    * `subject` of `"blobs/{hash}/{size}"` indicating the digest of the missing blob.
+    * `subject` of `"blobs/{hash}/{size}"` indicating the digest of the missing blob. The server does not need to guarantee that a call to this method leads to at most one execution of
+    * the action. The server MAY execute the action multiple times, potentially in parallel. These redundant executions MAY continue to run, even if the operation is completed.
     */
   def execute(request: Fields): Request[GoogleLongrunningOperation] = js.native
   def execute(request: InstanceName, body: BuildBazelRemoteExecutionV2ExecuteRequest): Request[GoogleLongrunningOperation] = js.native

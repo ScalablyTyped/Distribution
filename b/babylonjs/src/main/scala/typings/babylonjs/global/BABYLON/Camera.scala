@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Camera")
 @js.native
-class Camera protected ()
+open class Camera protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Camera {
   /**
@@ -20,7 +20,14 @@ class Camera protected ()
     * @param scene Defines the scene the camera belongs too
     * @param setActiveOnSceneIfNoneActive Defines if the camera should be set as active after creation if no other camera have been defined in the scene
     */
+  def this(name: String, position: typings.babylonjs.BABYLON.Vector3) = this()
   def this(name: String, position: typings.babylonjs.BABYLON.Vector3, scene: typings.babylonjs.BABYLON.Scene) = this()
+  def this(
+    name: String,
+    position: typings.babylonjs.BABYLON.Vector3,
+    scene: Unit,
+    setActiveOnSceneIfNoneActive: Boolean
+  ) = this()
   def this(
     name: String,
     position: typings.babylonjs.BABYLON.Vector3,
@@ -64,7 +71,7 @@ object Camera {
     */
   @JSGlobal("BABYLON.Camera.FOVMODE_HORIZONTAL_FIXED")
   @js.native
-  val FOVMODE_HORIZONTAL_FIXED: Double = js.native
+  val FOVMODE_HORIZONTAL_FIXED: /* 1 */ Double = js.native
   
   /**
     * This is the default FOV mode for perspective cameras.
@@ -72,7 +79,7 @@ object Camera {
     */
   @JSGlobal("BABYLON.Camera.FOVMODE_VERTICAL_FIXED")
   @js.native
-  val FOVMODE_VERTICAL_FIXED: Double = js.native
+  val FOVMODE_VERTICAL_FIXED: /* 0 */ Double = js.native
   
   /**
     * Defines if by default attaching controls should prevent the default javascript event to continue.
@@ -89,7 +96,7 @@ object Camera {
     * @param scene The scene the result will construct the camera in
     * @param interaxial_distance In case of stereoscopic setup, the distance between both eyes
     * @param isStereoscopicSideBySide In case of stereoscopic setup, should the sereo be side b side
-    * @returns a factory method to construc the camera
+    * @returns a factory method to construct the camera
     */
   inline def GetConstructorFromName(`type`: String, name: String, scene: typings.babylonjs.BABYLON.Scene): js.Function0[this.type] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Function0[this.type]]
   inline def GetConstructorFromName(`type`: String, name: String, scene: typings.babylonjs.BABYLON.Scene, interaxial_distance: Double): js.Function0[this.type] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetConstructorFromName")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], interaxial_distance.asInstanceOf[js.Any])).asInstanceOf[js.Function0[this.type]]
@@ -114,7 +121,7 @@ object Camera {
     */
   @JSGlobal("BABYLON.Camera.ORTHOGRAPHIC_CAMERA")
   @js.native
-  val ORTHOGRAPHIC_CAMERA: Double = js.native
+  val ORTHOGRAPHIC_CAMERA: /* 1 */ Double = js.native
   
   /**
     * This is the default projection mode used by the cameras.
@@ -123,7 +130,7 @@ object Camera {
     */
   @JSGlobal("BABYLON.Camera.PERSPECTIVE_CAMERA")
   @js.native
-  val PERSPECTIVE_CAMERA: Double = js.native
+  val PERSPECTIVE_CAMERA: /* 0 */ Double = js.native
   
   /**
     * Parse a JSON and creates the camera from the parsed information
@@ -131,22 +138,22 @@ object Camera {
     * @param scene The scene to instantiate the camera in
     * @returns the newly constructed camera
     */
-  inline def Parse(parsedCamera: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Camera = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Camera]
+  inline def Parse(parsedCamera: Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Camera = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Camera]
   
   /**
     * Custom rig mode allowing rig cameras to be populated manually with any number of cameras
     */
   @JSGlobal("BABYLON.Camera.RIG_MODE_CUSTOM")
   @js.native
-  val RIG_MODE_CUSTOM: Double = js.native
+  val RIG_MODE_CUSTOM: /* 22 */ Double = js.native
   
   /**
-    * This specifies ther is no need for a camera rig.
+    * This specifies there is no need for a camera rig.
     * Basically only one eye is rendered corresponding to the camera.
     */
   @JSGlobal("BABYLON.Camera.RIG_MODE_NONE")
   @js.native
-  val RIG_MODE_NONE: Double = js.native
+  val RIG_MODE_NONE: /* 0 */ Double = js.native
   
   /**
     * Simulates a camera Rig with one blue eye and one red eye.
@@ -154,62 +161,54 @@ object Camera {
     */
   @JSGlobal("BABYLON.Camera.RIG_MODE_STEREOSCOPIC_ANAGLYPH")
   @js.native
-  val RIG_MODE_STEREOSCOPIC_ANAGLYPH: Double = js.native
+  val RIG_MODE_STEREOSCOPIC_ANAGLYPH: /* 10 */ Double = js.native
   
   /**
     * Defines that both eyes of the camera will be rendered on successive lines interlaced for passive 3d monitors.
     */
   @JSGlobal("BABYLON.Camera.RIG_MODE_STEREOSCOPIC_INTERLACED")
   @js.native
-  val RIG_MODE_STEREOSCOPIC_INTERLACED: Double = js.native
+  val RIG_MODE_STEREOSCOPIC_INTERLACED: /* 14 */ Double = js.native
   
   /**
     * Defines that both eyes of the camera will be rendered over under each other.
     */
   @JSGlobal("BABYLON.Camera.RIG_MODE_STEREOSCOPIC_OVERUNDER")
   @js.native
-  val RIG_MODE_STEREOSCOPIC_OVERUNDER: Double = js.native
+  val RIG_MODE_STEREOSCOPIC_OVERUNDER: /* 13 */ Double = js.native
   
   /**
     * Defines that both eyes of the camera will be rendered side by side with a none parallel target.
     */
   @JSGlobal("BABYLON.Camera.RIG_MODE_STEREOSCOPIC_SIDEBYSIDE_CROSSEYED")
   @js.native
-  val RIG_MODE_STEREOSCOPIC_SIDEBYSIDE_CROSSEYED: Double = js.native
+  val RIG_MODE_STEREOSCOPIC_SIDEBYSIDE_CROSSEYED: /* 12 */ Double = js.native
   
   /**
     * Defines that both eyes of the camera will be rendered side by side with a parallel target.
     */
   @JSGlobal("BABYLON.Camera.RIG_MODE_STEREOSCOPIC_SIDEBYSIDE_PARALLEL")
   @js.native
-  val RIG_MODE_STEREOSCOPIC_SIDEBYSIDE_PARALLEL: Double = js.native
+  val RIG_MODE_STEREOSCOPIC_SIDEBYSIDE_PARALLEL: /* 11 */ Double = js.native
   
   /**
     * Defines that both eyes of the camera should be renderered in a VR mode (carbox).
     */
   @JSGlobal("BABYLON.Camera.RIG_MODE_VR")
   @js.native
-  val RIG_MODE_VR: Double = js.native
+  val RIG_MODE_VR: /* 20 */ Double = js.native
   
   /**
     * Defines that both eyes of the camera should be renderered in a VR mode (webVR).
     */
   @JSGlobal("BABYLON.Camera.RIG_MODE_WEBVR")
   @js.native
-  val RIG_MODE_WEBVR: Double = js.native
+  val RIG_MODE_WEBVR: /* 21 */ Double = js.native
   
-  /** @hidden */
-  inline def _createDefaultParsedCamera(name: String, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Camera = (^.asInstanceOf[js.Dynamic].applyDynamic("_createDefaultParsedCamera")(name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Camera]
-  
-  /** @hidden */
-  inline def _setStereoscopicAnaglyphRigMode(camera: typings.babylonjs.BABYLON.Camera): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setStereoscopicAnaglyphRigMode")(camera.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  /** @hidden */
-  inline def _setStereoscopicRigMode(camera: typings.babylonjs.BABYLON.Camera): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setStereoscopicRigMode")(camera.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  /** @hidden */
-  inline def _setVRRigMode(camera: typings.babylonjs.BABYLON.Camera, rigParams: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_setVRRigMode")(camera.asInstanceOf[js.Any], rigParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  /** @hidden */
-  inline def _setWebVRRigMode(camera: typings.babylonjs.BABYLON.Camera, rigParams: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_setWebVRRigMode")(camera.asInstanceOf[js.Any], rigParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  /**
+    * @param name
+    * @param scene
+    * @hidden
+    */
+  inline def _CreateDefaultParsedCamera(name: String, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Camera = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateDefaultParsedCamera")(name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Camera]
 }

@@ -5,8 +5,7 @@ import typings.memjs.anon.Flags
 import typings.memjs.anon.Initial
 import typings.memjs.anon.Log
 import typings.memjs.anon.Success
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,7 @@ object mod {
   
   @JSImport("memjs", "Client")
   @js.native
-  class Client protected () extends StObject {
+  open class Client protected () extends StObject {
     /**
       * Client initializer takes a list of Servers and an options dictionary. See Client.create for details.
       * @param servers
@@ -48,14 +47,14 @@ object mod {
       key: String,
       value: String,
       options: Expires,
-      callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* success */ Boolean | Null, Unit]
     ): Unit = js.native
     def add(key: String, value: Buffer, options: Expires): js.Promise[Boolean] = js.native
     def add(
       key: String,
       value: Buffer,
       options: Expires,
-      callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* success */ Boolean | Null, Unit]
     ): Unit = js.native
     
     /**
@@ -74,13 +73,13 @@ object mod {
     def append(
       key: String,
       value: String,
-      callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* success */ Boolean | Null, Unit]
     ): Unit = js.native
     def append(key: String, value: Buffer): js.Promise[Boolean] = js.native
     def append(
       key: String,
       value: Buffer,
-      callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* success */ Boolean | Null, Unit]
     ): Unit = js.native
     
     /**
@@ -114,7 +113,7 @@ object mod {
       amount: Double,
       options: Initial,
       callback: js.Function3[
-          /* err */ Error | Null, 
+          /* err */ js.Error | Null, 
           /* success */ Boolean | Null, 
           /* value */ js.UndefOr[Double | Null], 
           Unit
@@ -134,7 +133,7 @@ object mod {
       * @param callback
       */
     def delete(key: String): js.Promise[Boolean] = js.native
-    def delete(key: String, callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]): Unit = js.native
+    def delete(key: String, callback: js.Function2[/* err */ js.Error | Null, /* success */ Boolean | Null, Unit]): Unit = js.native
     
     /**
       * FLUSH
@@ -149,7 +148,7 @@ object mod {
       * @param callback
       */
     def flush(): js.Promise[Record[String, Boolean]] = js.native
-    def flush(callback: js.Function2[/* err */ Error | Null, /* results */ Record[String, Boolean], Unit]): Unit = js.native
+    def flush(callback: js.Function2[/* err */ js.Error | Null, /* results */ Record[String, Boolean], Unit]): Unit = js.native
     
     /**
       * GET
@@ -168,7 +167,7 @@ object mod {
     def get(key: String): js.Promise[Flags] = js.native
     def get(
       key: String,
-      callback: js.Function3[/* err */ Error | Null, /* value */ Buffer | Null, /* flags */ Buffer | Null, Unit]
+      callback: js.Function3[/* err */ js.Error | Null, /* value */ Buffer | Null, /* flags */ Buffer | Null, Unit]
     ): Unit = js.native
     
     /**
@@ -195,7 +194,7 @@ object mod {
       amount: Double,
       options: Initial,
       callback: js.Function3[
-          /* err */ Error | Null, 
+          /* err */ js.Error | Null, 
           /* success */ Boolean | Null, 
           /* value */ js.UndefOr[Double | Null], 
           Unit
@@ -222,13 +221,13 @@ object mod {
       key: String,
       request: Buffer,
       seq: Double,
-      callback: js.Function2[/* err */ Error | Null, /* repeated */ js.Any, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* repeated */ Any, Unit]
     ): Unit = js.native
     def perform(
       key: String,
       request: Buffer,
       seq: Double,
-      callback: js.Function2[/* err */ Error | Null, /* repeated */ js.Any, Unit],
+      callback: js.Function2[/* err */ js.Error | Null, /* repeated */ Any, Unit],
       retries: Double
     ): Unit = js.native
     def perform(key: String, request: Buffer, seq: Double, callback: Unit, retries: Double): Unit = js.native
@@ -249,13 +248,13 @@ object mod {
     def prepend(
       key: String,
       value: String,
-      callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* success */ Boolean | Null, Unit]
     ): Unit = js.native
     def prepend(key: String, value: Buffer): js.Promise[Boolean] = js.native
     def prepend(
       key: String,
       value: Buffer,
-      callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* success */ Boolean | Null, Unit]
     ): Unit = js.native
     
     /**
@@ -291,14 +290,14 @@ object mod {
       key: String,
       value: String,
       options: Expires,
-      callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* success */ Boolean | Null, Unit]
     ): Unit = js.native
     def replace(key: String, value: Buffer, options: Expires): js.Promise[Boolean] = js.native
     def replace(
       key: String,
       value: Buffer,
       options: Expires,
-      callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* success */ Boolean | Null, Unit]
     ): Unit = js.native
     
     /**
@@ -318,7 +317,7 @@ object mod {
     def resetStats(): Unit = js.native
     def resetStats(
       callback: js.Function3[
-          /* err */ Error | Null, 
+          /* err */ js.Error | Null, 
           /* server */ String, 
           /* stats */ (Record[String, String]) | Null, 
           Unit
@@ -355,14 +354,14 @@ object mod {
       key: String,
       value: String,
       options: Expires,
-      callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* success */ Boolean | Null, Unit]
     ): Unit = js.native
     def set(key: String, value: Buffer, options: Expires): js.Promise[Boolean] = js.native
     def set(
       key: String,
       value: Buffer,
       options: Expires,
-      callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* success */ Boolean | Null, Unit]
     ): Unit = js.native
     
     /**
@@ -380,7 +379,7 @@ object mod {
     def stats(): Unit = js.native
     def stats(
       callback: js.Function3[
-          /* err */ Error | Null, 
+          /* err */ js.Error | Null, 
           /* server */ String, 
           /* stats */ (Record[String, String]) | Null, 
           Unit
@@ -404,7 +403,7 @@ object mod {
     def statsWithKey(
       key: String,
       callback: js.Function3[
-          /* err */ Error | Null, 
+          /* err */ js.Error | Null, 
           /* server */ String, 
           /* stats */ (Record[String, String]) | Null, 
           Unit
@@ -427,7 +426,7 @@ object mod {
     def touch(
       key: String,
       expires: Double,
-      callback: js.Function2[/* err */ Error | Null, /* success */ Boolean | Null, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* success */ Boolean | Null, Unit]
     ): Unit = js.native
   }
   /* static members */
@@ -477,7 +476,9 @@ object mod {
     inline def create(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Client]
     inline def create(serversStr: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(serversStr.asInstanceOf[js.Any]).asInstanceOf[Client]
     inline def create(serversStr: String, options: ClientOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(serversStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+    inline def create(serversStr: String, options: ServerOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(serversStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
     inline def create(serversStr: Unit, options: ClientOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(serversStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+    inline def create(serversStr: Unit, options: ServerOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(serversStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
   }
   
   trait ClientOptions extends StObject {
@@ -541,6 +542,78 @@ object mod {
       inline def setRetry_delay(value: Double): Self = StObject.set(x, "retry_delay", value.asInstanceOf[js.Any])
       
       inline def setRetry_delayUndefined: Self = StObject.set(x, "retry_delay", js.undefined)
+    }
+  }
+  
+  trait ServerOptions extends StObject {
+    
+    /**
+      * `conntimeout` in seconds to connection failure.
+      * @default 2 * timeout
+      */
+    var conntimeout: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Whether to enable keep-alive functionality.
+      * @default false
+      */
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * `keepAliveDelay` in seconds to the initial delay before the first keep-
+      * alive probe is sent on an idle socket.
+      * @default 30
+      */
+    var keepAliveDelay: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Server password for fallback SASL authentication credentials.
+      */
+    var password: js.UndefOr[String] = js.undefined
+    
+    /**
+      * `timeout` in seconds to determine failure for operations.
+      * @default 0.5
+      */
+    var timeout: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Server username for fallback SASL authentication credentials.
+      */
+    var username: js.UndefOr[String] = js.undefined
+  }
+  object ServerOptions {
+    
+    inline def apply(): ServerOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ServerOptions]
+    }
+    
+    extension [Self <: ServerOptions](x: Self) {
+      
+      inline def setConntimeout(value: Double): Self = StObject.set(x, "conntimeout", value.asInstanceOf[js.Any])
+      
+      inline def setConntimeoutUndefined: Self = StObject.set(x, "conntimeout", js.undefined)
+      
+      inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
+      
+      inline def setKeepAliveDelay(value: Double): Self = StObject.set(x, "keepAliveDelay", value.asInstanceOf[js.Any])
+      
+      inline def setKeepAliveDelayUndefined: Self = StObject.set(x, "keepAliveDelay", js.undefined)
+      
+      inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
+      
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
 }

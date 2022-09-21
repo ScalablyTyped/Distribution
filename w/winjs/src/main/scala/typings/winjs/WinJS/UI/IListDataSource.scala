@@ -84,14 +84,14 @@ trait IListDataSource[T] extends StObject {
     * Indicates that all previous data obtained from the IListDataAdapter is invalid and should be refreshed.
     * @returns A Promise that completes when the data has been completely refreshed and all notifications have been sent.
     **/
-  def invalidateAll(): Promise[js.Any] = js.native
+  def invalidateAll(): Promise[Any] = js.native
   
   /**
     * Retrieves the item that has the specified description.
     * @param description Domain-specific information, to be interpreted by the IListDataAdapter, that describes the item to retrieve.
     * @returns A Promise that provides an IItem that contains the requested item or a FetchError if an error was encountered. If the item wasn't found, the promise completes with a value of null.
     **/
-  def itemFromDescription(description: js.Any): Promise[IItem[T]] = js.native
+  def itemFromDescription(description: Any): Promise[IItem[T]] = js.native
   
   /**
     * Retrieves the item at the specified index.
@@ -107,7 +107,7 @@ trait IListDataSource[T] extends StObject {
     * @returns A Promise that provides an IItem that contains the requested item or a FetchError if an error was encountered. If the item was not found, the promise completes with a null value.
     **/
   def itemFromKey(key: String): Promise[IItem[T]] = js.native
-  def itemFromKey(key: String, description: js.Any): Promise[IItem[T]] = js.native
+  def itemFromKey(key: String, description: Any): Promise[IItem[T]] = js.native
   
   /**
     * Moves an item to just after another item.
@@ -151,5 +151,5 @@ trait IListDataSource[T] extends StObject {
     * Occurs when the status of the IListDataSource changes.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: status.
     **/
-  def statuschanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def statuschanged(eventInfo: CustomEvent[Any]): Unit = js.native
 }

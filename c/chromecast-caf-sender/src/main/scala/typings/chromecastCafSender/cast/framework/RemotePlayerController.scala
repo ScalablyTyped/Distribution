@@ -8,7 +8,7 @@ trait RemotePlayerController extends StObject {
   
   def addEventListener(
     `type`: RemotePlayerEventType,
-    handler: js.Function1[/* event */ RemotePlayerChangedEvent[js.Any], Unit]
+    handler: js.Function1[/* event */ RemotePlayerChangedEvent[Any], Unit]
   ): Unit
   
   def getFormattedTime(timeInSec: Double): String
@@ -23,7 +23,7 @@ trait RemotePlayerController extends StObject {
   
   def removeEventListener(
     `type`: RemotePlayerEventType,
-    handler: js.Function1[/* event */ RemotePlayerChangedEvent[js.Any], Unit]
+    handler: js.Function1[/* event */ RemotePlayerChangedEvent[Any], Unit]
   ): Unit
   
   def seek(): Unit
@@ -35,13 +35,13 @@ trait RemotePlayerController extends StObject {
 object RemotePlayerController {
   
   inline def apply(
-    addEventListener: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[js.Any], Unit]) => Unit,
+    addEventListener: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[Any], Unit]) => Unit,
     getFormattedTime: Double => String,
     getSeekPosition: (Double, Double) => Double,
     getSeekTime: (Double, Double) => Double,
     muteOrUnmute: () => Unit,
     playOrPause: () => Unit,
-    removeEventListener: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[js.Any], Unit]) => Unit,
+    removeEventListener: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[Any], Unit]) => Unit,
     seek: () => Unit,
     setVolumeLevel: () => Unit,
     stop: () => Unit
@@ -53,7 +53,7 @@ object RemotePlayerController {
   extension [Self <: RemotePlayerController](x: Self) {
     
     inline def setAddEventListener(
-      value: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[js.Any], Unit]) => Unit
+      value: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[Any], Unit]) => Unit
     ): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
     inline def setGetFormattedTime(value: Double => String): Self = StObject.set(x, "getFormattedTime", js.Any.fromFunction1(value))
@@ -67,7 +67,7 @@ object RemotePlayerController {
     inline def setPlayOrPause(value: () => Unit): Self = StObject.set(x, "playOrPause", js.Any.fromFunction0(value))
     
     inline def setRemoveEventListener(
-      value: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[js.Any], Unit]) => Unit
+      value: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[Any], Unit]) => Unit
     ): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     
     inline def setSeek(value: () => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction0(value))

@@ -1,304 +1,369 @@
 package typings.wixUiIconsCommon
 
-import typings.react.mod.SFC
-import typings.wixUiIconsCommon.addItemLargeMod.AddItemLargeProps
-import typings.wixUiIconsCommon.addItemMediumMod.AddItemMediumProps
-import typings.wixUiIconsCommon.addItemSmallMod.AddItemSmallProps
-import typings.wixUiIconsCommon.addMediaMod.AddMediaProps
-import typings.wixUiIconsCommon.breadcrumbsChevronRightMod.BreadcrumbsChevronRightProps
-import typings.wixUiIconsCommon.checkboxCheckedMod.CheckboxCheckedProps
-import typings.wixUiIconsCommon.checkboxIndeterminateMod.CheckboxIndeterminateProps
-import typings.wixUiIconsCommon.circleLoaderCheckMod.CircleLoaderCheckProps
-import typings.wixUiIconsCommon.circleLoaderCheckSmallMod.CircleLoaderCheckSmallProps
-import typings.wixUiIconsCommon.closeLargeMod.CloseLargeProps
-import typings.wixUiIconsCommon.closeMod.CloseProps
-import typings.wixUiIconsCommon.dragAndDropLargeMod.DragAndDropLargeProps
-import typings.wixUiIconsCommon.dragAndDropLockedLargeMod.DragAndDropLockedLargeProps
-import typings.wixUiIconsCommon.dragAndDropSmallMod.DragAndDropSmallProps
-import typings.wixUiIconsCommon.dropDownArrowMod.DropDownArrowProps
-import typings.wixUiIconsCommon.faceDisapointed30Mod.FaceDisapointed30Props
-import typings.wixUiIconsCommon.faceFrowning30Mod.FaceFrowning30Props
-import typings.wixUiIconsCommon.faceGrining30Mod.FaceGrining30Props
-import typings.wixUiIconsCommon.faceNeutral30Mod.FaceNeutral30Props
-import typings.wixUiIconsCommon.faceSmiling30Mod.FaceSmiling30Props
-import typings.wixUiIconsCommon.formFieldErrorFilledMod.FormFieldErrorFilledProps
-import typings.wixUiIconsCommon.formFieldErrorMod.FormFieldErrorProps
-import typings.wixUiIconsCommon.formFieldErrorSmallMod.FormFieldErrorSmallProps
-import typings.wixUiIconsCommon.formFieldSpinnerDownMod.FormFieldSpinnerDownProps
-import typings.wixUiIconsCommon.formFieldSpinnerUpMod.FormFieldSpinnerUpProps
-import typings.wixUiIconsCommon.formFieldWarningFilledMod.FormFieldWarningFilledProps
-import typings.wixUiIconsCommon.help24Mod.Help24Props
-import typings.wixUiIconsCommon.moveLargeMod.MoveLargeProps
-import typings.wixUiIconsCommon.moveMod.MoveProps
-import typings.wixUiIconsCommon.socialButtonFacebookMod.SocialButtonFacebookProps
-import typings.wixUiIconsCommon.socialButtonInstagramMod.SocialButtonInstagramProps
-import typings.wixUiIconsCommon.socialButtonLinkedInMod.SocialButtonLinkedInProps
-import typings.wixUiIconsCommon.socialButtonPinterestMod.SocialButtonPinterestProps
-import typings.wixUiIconsCommon.socialButtonTwitterMod.SocialButtonTwitterProps
-import typings.wixUiIconsCommon.socialButtonYoutubeMod.SocialButtonYoutubeProps
-import typings.wixUiIconsCommon.sortByArrowDownMod.SortByArrowDownProps
-import typings.wixUiIconsCommon.sortByArrowUpMod.SortByArrowUpProps
-import typings.wixUiIconsCommon.starFilledLargeMod.StarFilledLargeProps
-import typings.wixUiIconsCommon.starFilledTinyMod.StarFilledTinyProps
-import typings.wixUiIconsCommon.starLargeMod.StarLargeProps
-import typings.wixUiIconsCommon.textAreaAlignCenterMod.TextAreaAlignCenterProps
-import typings.wixUiIconsCommon.textAreaAlignJustifyMod.TextAreaAlignJustifyProps
-import typings.wixUiIconsCommon.textAreaAlignLeftMod.TextAreaAlignLeftProps
-import typings.wixUiIconsCommon.textAreaAlignRightMod.TextAreaAlignRightProps
-import typings.wixUiIconsCommon.textAreaBoldMod.TextAreaBoldProps
-import typings.wixUiIconsCommon.textAreaBulletListMod.TextAreaBulletListProps
-import typings.wixUiIconsCommon.textAreaImageMod.TextAreaImageProps
-import typings.wixUiIconsCommon.textAreaItalicMod.TextAreaItalicProps
-import typings.wixUiIconsCommon.textAreaLeftToRightMod.TextAreaLeftToRightProps
-import typings.wixUiIconsCommon.textAreaLinkMod.TextAreaLinkProps
-import typings.wixUiIconsCommon.textAreaNumberedListMod.TextAreaNumberedListProps
-import typings.wixUiIconsCommon.textAreaRightToLeftMod.TextAreaRightToLeftProps
-import typings.wixUiIconsCommon.textAreaTableMod.TextAreaTableProps
-import typings.wixUiIconsCommon.textAreaTextColorMod.TextAreaTextColorProps
-import typings.wixUiIconsCommon.textAreaUnderlineMod.TextAreaUnderlineProps
-import typings.wixUiIconsCommon.toggleOffMod.ToggleOffProps
-import typings.wixUiIconsCommon.toggleOffSmallMod.ToggleOffSmallProps
-import typings.wixUiIconsCommon.toggleOnMod.ToggleOnProps
-import typings.wixUiIconsCommon.toggleOnSmallMod.ToggleOnSmallProps
+import typings.react.mod.FC
+import typings.wixUiIconsCommon.componentsAddElementsMod.AddElementsProps
+import typings.wixUiIconsCommon.componentsAlignBottomMod.AlignBottomProps
+import typings.wixUiIconsCommon.componentsAlignCenterHorizontalMod.AlignCenterHorizontalProps
+import typings.wixUiIconsCommon.componentsAlignCenterVerticleMod.AlignCenterVerticleProps
+import typings.wixUiIconsCommon.componentsAlignLeftMod.AlignLeftProps
+import typings.wixUiIconsCommon.componentsAlignRightMod.AlignRightProps
+import typings.wixUiIconsCommon.componentsAlignTopMod.AlignTopProps
+import typings.wixUiIconsCommon.componentsAnimationsScrollMod.AnimationsScrollProps
+import typings.wixUiIconsCommon.componentsAppManagerMod.AppManagerProps
+import typings.wixUiIconsCommon.componentsAppMarketNewMod.AppMarketNewProps
+import typings.wixUiIconsCommon.componentsAscendMod.AscendProps
+import typings.wixUiIconsCommon.componentsBackToTopMod.BackToTopProps
+import typings.wixUiIconsCommon.componentsBehaviorsMod.BehaviorsProps
+import typings.wixUiIconsCommon.componentsBlogNewMod.BlogNewProps
+import typings.wixUiIconsCommon.componentsBookingsMod.BookingsProps
+import typings.wixUiIconsCommon.componentsBusinessAppsMod.BusinessAppsProps
+import typings.wixUiIconsCommon.componentsColorMod.ColorProps
+import typings.wixUiIconsCommon.componentsConnectedToDataMod.ConnectedToDataProps
+import typings.wixUiIconsCommon.componentsContentManagerMod.ContentManagerProps
+import typings.wixUiIconsCommon.componentsCopyStyleMod.CopyStyleProps
+import typings.wixUiIconsCommon.componentsCustomizeDesignMod.CustomizeDesignProps
+import typings.wixUiIconsCommon.componentsDataConnectingMod.DataConnectingProps
+import typings.wixUiIconsCommon.componentsDecreaseFontMod.DecreaseFontProps
+import typings.wixUiIconsCommon.componentsDistributeHorizontalCenterMod.DistributeHorizontalCenterProps
+import typings.wixUiIconsCommon.componentsDistributeMod.DistributeProps
+import typings.wixUiIconsCommon.componentsDistributeVerticalCenterMod.DistributeVerticalCenterProps
+import typings.wixUiIconsCommon.componentsElementsMod.ElementsProps
+import typings.wixUiIconsCommon.componentsHelpMod.HelpProps
+import typings.wixUiIconsCommon.componentsHiddenElementsMod.HiddenElementsProps
+import typings.wixUiIconsCommon.componentsImageFilterMod.ImageFilterProps
+import typings.wixUiIconsCommon.componentsIncreaseFontMod.IncreaseFontProps
+import typings.wixUiIconsCommon.componentsInteractionsMod.InteractionsProps
+import typings.wixUiIconsCommon.componentsLayoutMod.LayoutProps
+import typings.wixUiIconsCommon.componentsLinkMod.LinkProps
+import typings.wixUiIconsCommon.componentsMaskMod.MaskProps
+import typings.wixUiIconsCommon.componentsMatchHeightMod.MatchHeightProps
+import typings.wixUiIconsCommon.componentsMatchHeightWidthMod.MatchHeightWidthProps
+import typings.wixUiIconsCommon.componentsMatchWidthMod.MatchWidthProps
+import typings.wixUiIconsCommon.componentsMediaMod.MediaProps
+import typings.wixUiIconsCommon.componentsMobileLayoutMod.MobileLayoutProps
+import typings.wixUiIconsCommon.componentsMobileToolsMod.MobileToolsProps
+import typings.wixUiIconsCommon.componentsMovetoBackMod.MovetoBackProps
+import typings.wixUiIconsCommon.componentsMovetoFrontMod.MovetoFrontProps
+import typings.wixUiIconsCommon.componentsOverlayMod.OverlayProps
+import typings.wixUiIconsCommon.componentsPagesMod.PagesProps
+import typings.wixUiIconsCommon.componentsPasteStyleMod.PasteStyleProps
+import typings.wixUiIconsCommon.componentsPinItMod.PinItProps
+import typings.wixUiIconsCommon.componentsPluginsMod.PluginsProps
+import typings.wixUiIconsCommon.componentsPresetsMod.PresetsProps
+import typings.wixUiIconsCommon.componentsPropertiesMod.PropertiesProps
+import typings.wixUiIconsCommon.componentsSectionsMod.SectionsProps
+import typings.wixUiIconsCommon.componentsShoutoutMod.ShoutoutProps
+import typings.wixUiIconsCommon.componentsStoresMod.StoresProps
+import typings.wixUiIconsCommon.componentsStretchMod.StretchProps
+import typings.wixUiIconsCommon.componentsThemeManagerMod.ThemeManagerProps
+import typings.wixUiIconsCommon.componentsTransitionsMod.TransitionsProps
+import typings.wixUiIconsCommon.componentsUpgradeAscendMod.UpgradeAscendProps
+import typings.wixUiIconsCommon.componentsUpgradeMod.UpgradeProps
+import typings.wixUiIconsCommon.distComponentsAddMod.AddProps
+import typings.wixUiIconsCommon.distComponentsAnimationMod.AnimationProps
+import typings.wixUiIconsCommon.distComponentsApplyToMod.ApplyToProps
+import typings.wixUiIconsCommon.distComponentsBackgroundMod.BackgroundProps
+import typings.wixUiIconsCommon.distComponentsChevronLeftMod.ChevronLeftProps
+import typings.wixUiIconsCommon.distComponentsCopyMod.CopyProps
+import typings.wixUiIconsCommon.distComponentsCropMod.CropProps
+import typings.wixUiIconsCommon.distComponentsDuplicateMod.DuplicateProps
+import typings.wixUiIconsCommon.distComponentsHideMod.HideProps
+import typings.wixUiIconsCommon.distComponentsLockMod.LockProps
+import typings.wixUiIconsCommon.distComponentsMoveBackwardMod.MoveBackwardProps
+import typings.wixUiIconsCommon.distComponentsMoveForwardMod.MoveForwardProps
+import typings.wixUiIconsCommon.distComponentsRotationMod.RotationProps
+import typings.wixUiIconsCommon.distComponentsSettingsMod.SettingsProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object systemMod {
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "AddItemLarge")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Add")
   @js.native
-  val AddItemLarge: SFC[AddItemLargeProps] = js.native
+  val Add: FC[AddProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "AddItemMedium")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "AddElements")
   @js.native
-  val AddItemMedium: SFC[AddItemMediumProps] = js.native
+  val AddElements: FC[AddElementsProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "AddItemSmall")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "AlignBottom")
   @js.native
-  val AddItemSmall: SFC[AddItemSmallProps] = js.native
+  val AlignBottom: FC[AlignBottomProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "AddMedia")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "AlignCenterHorizontal")
   @js.native
-  val AddMedia: SFC[AddMediaProps] = js.native
+  val AlignCenterHorizontal: FC[AlignCenterHorizontalProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "BreadcrumbsChevronRight")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "AlignCenterVerticle")
   @js.native
-  val BreadcrumbsChevronRight: SFC[BreadcrumbsChevronRightProps] = js.native
+  val AlignCenterVerticle: FC[AlignCenterVerticleProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "CheckboxChecked")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "AlignLeft")
   @js.native
-  val CheckboxChecked: SFC[CheckboxCheckedProps] = js.native
+  val AlignLeft: FC[AlignLeftProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "CheckboxIndeterminate")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "AlignRight")
   @js.native
-  val CheckboxIndeterminate: SFC[CheckboxIndeterminateProps] = js.native
+  val AlignRight: FC[AlignRightProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "CircleLoaderCheck")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "AlignTop")
   @js.native
-  val CircleLoaderCheck: SFC[CircleLoaderCheckProps] = js.native
+  val AlignTop: FC[AlignTopProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "CircleLoaderCheckSmall")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Animation")
   @js.native
-  val CircleLoaderCheckSmall: SFC[CircleLoaderCheckSmallProps] = js.native
+  val Animation: FC[AnimationProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "Close")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "AnimationsScroll")
   @js.native
-  val Close: SFC[CloseProps] = js.native
+  val AnimationsScroll: FC[AnimationsScrollProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "CloseLarge")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "AppManager")
   @js.native
-  val CloseLarge: SFC[CloseLargeProps] = js.native
+  val AppManager: FC[AppManagerProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "DragAndDropLarge")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "AppMarketNew")
   @js.native
-  val DragAndDropLarge: SFC[DragAndDropLargeProps] = js.native
+  val AppMarketNew: FC[AppMarketNewProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "DragAndDropLockedLarge")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "ApplyTo")
   @js.native
-  val DragAndDropLockedLarge: SFC[DragAndDropLockedLargeProps] = js.native
+  val ApplyTo: FC[ApplyToProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "DragAndDropSmall")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Ascend")
   @js.native
-  val DragAndDropSmall: SFC[DragAndDropSmallProps] = js.native
+  val Ascend: FC[AscendProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "DropDownArrow")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "BackToTop")
   @js.native
-  val DropDownArrow: SFC[DropDownArrowProps] = js.native
+  val BackToTop: FC[BackToTopProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "FaceDisapointed30")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Background")
   @js.native
-  val FaceDisapointed30: SFC[FaceDisapointed30Props] = js.native
+  val Background: FC[BackgroundProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "FaceFrowning30")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Behaviors")
   @js.native
-  val FaceFrowning30: SFC[FaceFrowning30Props] = js.native
+  val Behaviors: FC[BehaviorsProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "FaceGrining30")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "BlogNew")
   @js.native
-  val FaceGrining30: SFC[FaceGrining30Props] = js.native
+  val BlogNew: FC[BlogNewProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "FaceNeutral30")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Bookings")
   @js.native
-  val FaceNeutral30: SFC[FaceNeutral30Props] = js.native
+  val Bookings: FC[BookingsProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "FaceSmiling30")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "BusinessApps")
   @js.native
-  val FaceSmiling30: SFC[FaceSmiling30Props] = js.native
+  val BusinessApps: FC[BusinessAppsProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "FormFieldError")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "ChevronLeft")
   @js.native
-  val FormFieldError: SFC[FormFieldErrorProps] = js.native
+  val ChevronLeft: FC[ChevronLeftProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "FormFieldErrorFilled")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Color")
   @js.native
-  val FormFieldErrorFilled: SFC[FormFieldErrorFilledProps] = js.native
+  val Color: FC[ColorProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "FormFieldErrorSmall")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "ConnectedToData")
   @js.native
-  val FormFieldErrorSmall: SFC[FormFieldErrorSmallProps] = js.native
+  val ConnectedToData: FC[ConnectedToDataProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "FormFieldSpinnerDown")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "ContentManager")
   @js.native
-  val FormFieldSpinnerDown: SFC[FormFieldSpinnerDownProps] = js.native
+  val ContentManager: FC[ContentManagerProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "FormFieldSpinnerUp")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Copy")
   @js.native
-  val FormFieldSpinnerUp: SFC[FormFieldSpinnerUpProps] = js.native
+  val Copy: FC[CopyProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "FormFieldWarningFilled")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "CopyStyle")
   @js.native
-  val FormFieldWarningFilled: SFC[FormFieldWarningFilledProps] = js.native
+  val CopyStyle: FC[CopyStyleProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "Help24")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Crop")
   @js.native
-  val Help24: SFC[Help24Props] = js.native
+  val Crop: FC[CropProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "Move")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "CustomizeDesign")
   @js.native
-  val Move: SFC[MoveProps] = js.native
+  val CustomizeDesign: FC[CustomizeDesignProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "MoveLarge")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "DataConnecting")
   @js.native
-  val MoveLarge: SFC[MoveLargeProps] = js.native
+  val DataConnecting: FC[DataConnectingProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "SocialButtonFacebook")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "DecreaseFont")
   @js.native
-  val SocialButtonFacebook: SFC[SocialButtonFacebookProps] = js.native
+  val DecreaseFont: FC[DecreaseFontProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "SocialButtonInstagram")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Distribute")
   @js.native
-  val SocialButtonInstagram: SFC[SocialButtonInstagramProps] = js.native
+  val Distribute: FC[DistributeProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "SocialButtonLinkedIn")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "DistributeHorizontalCenter")
   @js.native
-  val SocialButtonLinkedIn: SFC[SocialButtonLinkedInProps] = js.native
+  val DistributeHorizontalCenter: FC[DistributeHorizontalCenterProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "SocialButtonPinterest")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "DistributeVerticalCenter")
   @js.native
-  val SocialButtonPinterest: SFC[SocialButtonPinterestProps] = js.native
+  val DistributeVerticalCenter: FC[DistributeVerticalCenterProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "SocialButtonTwitter")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Duplicate")
   @js.native
-  val SocialButtonTwitter: SFC[SocialButtonTwitterProps] = js.native
+  val Duplicate: FC[DuplicateProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "SocialButtonYoutube")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Elements")
   @js.native
-  val SocialButtonYoutube: SFC[SocialButtonYoutubeProps] = js.native
+  val Elements: FC[ElementsProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "SortByArrowDown")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Help")
   @js.native
-  val SortByArrowDown: SFC[SortByArrowDownProps] = js.native
+  val Help: FC[HelpProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "SortByArrowUp")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "HiddenElements")
   @js.native
-  val SortByArrowUp: SFC[SortByArrowUpProps] = js.native
+  val HiddenElements: FC[HiddenElementsProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "StarFilledLarge")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Hide")
   @js.native
-  val StarFilledLarge: SFC[StarFilledLargeProps] = js.native
+  val Hide: FC[HideProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "StarFilledTiny")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "ImageFilter")
   @js.native
-  val StarFilledTiny: SFC[StarFilledTinyProps] = js.native
+  val ImageFilter: FC[ImageFilterProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "StarLarge")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "IncreaseFont")
   @js.native
-  val StarLarge: SFC[StarLargeProps] = js.native
+  val IncreaseFont: FC[IncreaseFontProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "TextAreaAlignCenter")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Interactions")
   @js.native
-  val TextAreaAlignCenter: SFC[TextAreaAlignCenterProps] = js.native
+  val Interactions: FC[InteractionsProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "TextAreaAlignJustify")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Layout")
   @js.native
-  val TextAreaAlignJustify: SFC[TextAreaAlignJustifyProps] = js.native
+  val Layout: FC[LayoutProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "TextAreaAlignLeft")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Link")
   @js.native
-  val TextAreaAlignLeft: SFC[TextAreaAlignLeftProps] = js.native
+  val Link: FC[LinkProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "TextAreaAlignRight")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Lock")
   @js.native
-  val TextAreaAlignRight: SFC[TextAreaAlignRightProps] = js.native
+  val Lock: FC[LockProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "TextAreaBold")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Mask")
   @js.native
-  val TextAreaBold: SFC[TextAreaBoldProps] = js.native
+  val Mask: FC[MaskProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "TextAreaBulletList")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "MatchHeight")
   @js.native
-  val TextAreaBulletList: SFC[TextAreaBulletListProps] = js.native
+  val MatchHeight: FC[MatchHeightProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "TextAreaImage")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "MatchHeight_Width")
   @js.native
-  val TextAreaImage: SFC[TextAreaImageProps] = js.native
+  val MatchHeightWidth: FC[MatchHeightWidthProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "TextAreaItalic")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "MatchWidth")
   @js.native
-  val TextAreaItalic: SFC[TextAreaItalicProps] = js.native
+  val MatchWidth: FC[MatchWidthProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "TextAreaLeftToRight")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Media")
   @js.native
-  val TextAreaLeftToRight: SFC[TextAreaLeftToRightProps] = js.native
+  val Media: FC[MediaProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "TextAreaLink")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "MobileLayout")
   @js.native
-  val TextAreaLink: SFC[TextAreaLinkProps] = js.native
+  val MobileLayout: FC[MobileLayoutProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "TextAreaNumberedList")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "MobileTools")
   @js.native
-  val TextAreaNumberedList: SFC[TextAreaNumberedListProps] = js.native
+  val MobileTools: FC[MobileToolsProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "TextAreaRightToLeft")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "MoveBackward")
   @js.native
-  val TextAreaRightToLeft: SFC[TextAreaRightToLeftProps] = js.native
+  val MoveBackward: FC[MoveBackwardProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "TextAreaTable")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "MoveForward")
   @js.native
-  val TextAreaTable: SFC[TextAreaTableProps] = js.native
+  val MoveForward: FC[MoveForwardProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "TextAreaTextColor")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "MovetoBack")
   @js.native
-  val TextAreaTextColor: SFC[TextAreaTextColorProps] = js.native
+  val MovetoBack: FC[MovetoBackProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "TextAreaUnderline")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "MovetoFront")
   @js.native
-  val TextAreaUnderline: SFC[TextAreaUnderlineProps] = js.native
+  val MovetoFront: FC[MovetoFrontProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "ToggleOff")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Overlay")
   @js.native
-  val ToggleOff: SFC[ToggleOffProps] = js.native
+  val Overlay: FC[OverlayProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "ToggleOffSmall")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Pages")
   @js.native
-  val ToggleOffSmall: SFC[ToggleOffSmallProps] = js.native
+  val Pages: FC[PagesProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "ToggleOn")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "PasteStyle")
   @js.native
-  val ToggleOn: SFC[ToggleOnProps] = js.native
+  val PasteStyle: FC[PasteStyleProps] = js.native
   
-  @JSImport("wix-ui-icons-common/dist/src/system", "ToggleOnSmall")
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "PinIt")
   @js.native
-  val ToggleOnSmall: SFC[ToggleOnSmallProps] = js.native
+  val PinIt: FC[PinItProps] = js.native
+  
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Plugins")
+  @js.native
+  val Plugins: FC[PluginsProps] = js.native
+  
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Presets")
+  @js.native
+  val Presets: FC[PresetsProps] = js.native
+  
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Properties")
+  @js.native
+  val Properties: FC[PropertiesProps] = js.native
+  
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Rotation")
+  @js.native
+  val Rotation: FC[RotationProps] = js.native
+  
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Sections")
+  @js.native
+  val Sections: FC[SectionsProps] = js.native
+  
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Settings")
+  @js.native
+  val Settings: FC[SettingsProps] = js.native
+  
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Shoutout")
+  @js.native
+  val Shoutout: FC[ShoutoutProps] = js.native
+  
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Stores")
+  @js.native
+  val Stores: FC[StoresProps] = js.native
+  
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Stretch")
+  @js.native
+  val Stretch: FC[StretchProps] = js.native
+  
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "ThemeManager")
+  @js.native
+  val ThemeManager: FC[ThemeManagerProps] = js.native
+  
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Transitions")
+  @js.native
+  val Transitions: FC[TransitionsProps] = js.native
+  
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "Upgrade")
+  @js.native
+  val Upgrade: FC[UpgradeProps] = js.native
+  
+  @JSImport("wix-ui-icons-common/dist/src/classic-editor/system", "UpgradeAscend")
+  @js.native
+  val UpgradeAscend: FC[UpgradeAscendProps] = js.native
 }

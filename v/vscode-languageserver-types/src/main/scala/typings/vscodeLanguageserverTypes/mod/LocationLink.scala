@@ -9,7 +9,7 @@ trait LocationLink extends StObject {
   /**
     * Span of the origin of this link.
     *
-    * Used as the underlined span for mouse definition hover. Defaults to the word range at
+    * Used as the underlined span for mouse interaction. Defaults to the word range at
     * the definition position.
     */
   var originSelectionRange: js.UndefOr[Range] = js.undefined
@@ -23,7 +23,7 @@ trait LocationLink extends StObject {
   
   /**
     * The range that should be selected and revealed when this link is being followed, e.g the name of a function.
-    * Must be contained by the the `targetRange`. See also `DocumentSymbol#range`
+    * Must be contained by the `targetRange`. See also `DocumentSymbol#range`
     */
   var targetSelectionRange: Range
   
@@ -61,7 +61,7 @@ object LocationLink {
   /**
     * Checks whether the given literal conforms to the [LocationLink](#LocationLink) interface.
     */
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean]
   
   extension [Self <: LocationLink](x: Self) {
     

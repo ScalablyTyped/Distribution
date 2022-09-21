@@ -11,9 +11,9 @@ Construct rows and columns from an alphabet with which one can encrypt/decrypt i
 | Full name          | tableau |
 | Keywords           | tableau, cipher, encrypt, decrypt |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 899 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 363.6666666666667 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/jwerle/tableau)

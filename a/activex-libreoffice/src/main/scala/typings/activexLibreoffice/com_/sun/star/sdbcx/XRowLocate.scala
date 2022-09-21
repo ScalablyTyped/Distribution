@@ -21,7 +21,7 @@ trait XRowLocate
     * @returns the current bookmark
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  val Bookmark: js.Any
+  val Bookmark: Any
   
   /**
     * compares two bookmarks and returns an indication of their relative values.
@@ -34,14 +34,14 @@ trait XRowLocate
     * @see com.sun.star.sdbcx.CompareBookmark
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def compareBookmarks(first: js.Any, second: js.Any): Double
+  def compareBookmarks(first: Any, second: Any): Double
   
   /**
     * returns the bookmark of the current row of a result set.
     * @returns the current bookmark
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getBookmark(): js.Any
+  def getBookmark(): Any
   
   /**
     * determines whether the bookmarks of a result set are ordered or not.
@@ -57,7 +57,7 @@ trait XRowLocate
     * @returns the hashed value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def hashBookmark(bookmark: js.Any): Double
+  def hashBookmark(bookmark: Any): Double
   
   /**
     * moves the cursor a relative number of rows, either positive or negative starting at a given bookmark position.
@@ -69,7 +69,7 @@ trait XRowLocate
     * @returns `TRUE` if successful
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def moveRelativeToBookmark(bookmark: js.Any, rows: Double): Boolean
+  def moveRelativeToBookmark(bookmark: Any, rows: Double): Boolean
   
   /**
     * moves the cursor to the row identified by an valid bookmark.
@@ -80,20 +80,20 @@ trait XRowLocate
     * @returns `TRUE` if successful
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def moveToBookmark(bookmark: js.Any): Boolean
+  def moveToBookmark(bookmark: Any): Boolean
 }
 object XRowLocate {
   
   inline def apply(
-    Bookmark: js.Any,
+    Bookmark: Any,
     acquire: () => Unit,
-    compareBookmarks: (js.Any, js.Any) => Double,
-    getBookmark: () => js.Any,
+    compareBookmarks: (Any, Any) => Double,
+    getBookmark: () => Any,
     hasOrderedBookmarks: () => Boolean,
-    hashBookmark: js.Any => Double,
-    moveRelativeToBookmark: (js.Any, Double) => Boolean,
-    moveToBookmark: js.Any => Boolean,
-    queryInterface: `type` => js.Any,
+    hashBookmark: Any => Double,
+    moveRelativeToBookmark: (Any, Double) => Boolean,
+    moveToBookmark: Any => Boolean,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XRowLocate = {
     val __obj = js.Dynamic.literal(Bookmark = Bookmark.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), compareBookmarks = js.Any.fromFunction2(compareBookmarks), getBookmark = js.Any.fromFunction0(getBookmark), hasOrderedBookmarks = js.Any.fromFunction0(hasOrderedBookmarks), hashBookmark = js.Any.fromFunction1(hashBookmark), moveRelativeToBookmark = js.Any.fromFunction2(moveRelativeToBookmark), moveToBookmark = js.Any.fromFunction1(moveToBookmark), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -102,18 +102,18 @@ object XRowLocate {
   
   extension [Self <: XRowLocate](x: Self) {
     
-    inline def setBookmark(value: js.Any): Self = StObject.set(x, "Bookmark", value.asInstanceOf[js.Any])
+    inline def setBookmark(value: Any): Self = StObject.set(x, "Bookmark", value.asInstanceOf[js.Any])
     
-    inline def setCompareBookmarks(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "compareBookmarks", js.Any.fromFunction2(value))
+    inline def setCompareBookmarks(value: (Any, Any) => Double): Self = StObject.set(x, "compareBookmarks", js.Any.fromFunction2(value))
     
-    inline def setGetBookmark(value: () => js.Any): Self = StObject.set(x, "getBookmark", js.Any.fromFunction0(value))
+    inline def setGetBookmark(value: () => Any): Self = StObject.set(x, "getBookmark", js.Any.fromFunction0(value))
     
     inline def setHasOrderedBookmarks(value: () => Boolean): Self = StObject.set(x, "hasOrderedBookmarks", js.Any.fromFunction0(value))
     
-    inline def setHashBookmark(value: js.Any => Double): Self = StObject.set(x, "hashBookmark", js.Any.fromFunction1(value))
+    inline def setHashBookmark(value: Any => Double): Self = StObject.set(x, "hashBookmark", js.Any.fromFunction1(value))
     
-    inline def setMoveRelativeToBookmark(value: (js.Any, Double) => Boolean): Self = StObject.set(x, "moveRelativeToBookmark", js.Any.fromFunction2(value))
+    inline def setMoveRelativeToBookmark(value: (Any, Double) => Boolean): Self = StObject.set(x, "moveRelativeToBookmark", js.Any.fromFunction2(value))
     
-    inline def setMoveToBookmark(value: js.Any => Boolean): Self = StObject.set(x, "moveToBookmark", js.Any.fromFunction1(value))
+    inline def setMoveToBookmark(value: Any => Boolean): Self = StObject.set(x, "moveToBookmark", js.Any.fromFunction1(value))
   }
 }

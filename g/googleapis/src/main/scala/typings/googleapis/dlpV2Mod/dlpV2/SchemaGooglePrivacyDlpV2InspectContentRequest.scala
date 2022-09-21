@@ -4,30 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to search for potentially sensitive info in a ContentItem.
-  */
 trait SchemaGooglePrivacyDlpV2InspectContentRequest extends StObject {
   
   /**
-    * Configuration for the inspector. What specified here will override the
-    * template referenced by the inspect_template_name argument.
+    * Configuration for the inspector. What specified here will override the template referenced by the inspect_template_name argument.
     */
   var inspectConfig: js.UndefOr[SchemaGooglePrivacyDlpV2InspectConfig] = js.undefined
   
   /**
-    * Optional template to use. Any configuration directly specified in
-    * inspect_config will override those set in the template. Singular fields
-    * that are set in this request will replace their corresponding fields in
-    * the template. Repeated fields are appended. Singular sub-messages and
-    * groups are recursively merged.
+    * Template to use. Any configuration directly specified in inspect_config will override those set in the template. Singular fields that are set in this request will replace their corresponding fields in the template. Repeated fields are appended. Singular sub-messages and groups are recursively merged.
     */
-  var inspectTemplateName: js.UndefOr[String] = js.undefined
+  var inspectTemplateName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The item to inspect.
     */
   var item: js.UndefOr[SchemaGooglePrivacyDlpV2ContentItem] = js.undefined
+  
+  /**
+    * Deprecated. This field has no effect.
+    */
+  var locationId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2InspectContentRequest {
   
@@ -44,10 +41,18 @@ object SchemaGooglePrivacyDlpV2InspectContentRequest {
     
     inline def setInspectTemplateName(value: String): Self = StObject.set(x, "inspectTemplateName", value.asInstanceOf[js.Any])
     
+    inline def setInspectTemplateNameNull: Self = StObject.set(x, "inspectTemplateName", null)
+    
     inline def setInspectTemplateNameUndefined: Self = StObject.set(x, "inspectTemplateName", js.undefined)
     
     inline def setItem(value: SchemaGooglePrivacyDlpV2ContentItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    
+    inline def setLocationIdNull: Self = StObject.set(x, "locationId", null)
+    
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
   }
 }

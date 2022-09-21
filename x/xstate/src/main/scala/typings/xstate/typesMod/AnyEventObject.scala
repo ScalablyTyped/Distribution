@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnyEventObject
   extends StObject
      with EventObject
-     with /* key */ StringDictionary[js.Any]
+     with /* key */ StringDictionary[Any]
 object AnyEventObject {
   
   inline def apply(`type`: String): AnyEventObject = {

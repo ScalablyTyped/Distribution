@@ -59,19 +59,19 @@ object Proximity {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def addEventListener_connectionrequested(
       `type`: connectionrequested,
-      listener: TypedEventHandler[js.Any, typings.winrtUwp.Windows.Networking.Proximity.ConnectionRequestedEventArgs]
+      listener: TypedEventHandler[Any, typings.winrtUwp.Windows.Networking.Proximity.ConnectionRequestedEventArgs]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def addEventListener_triggeredconnectionstatechanged(
       `type`: triggeredconnectionstatechanged,
       listener: TypedEventHandler[
-          js.Any, 
+          Any, 
           typings.winrtUwp.Windows.Networking.Proximity.TriggeredConnectionStateChangedEventArgs
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -138,15 +138,15 @@ object Proximity {
       * @return The asynchronous operation for browsing for peer devices that are running your app.
       */
     /* static member */
-    inline def findAllPeersAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllPeersAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findAllPeersAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllPeersAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /** Occurs when a remote peer requests a connection using the ConnectAsync method. */
     /* static member */
     @JSGlobal("Windows.Networking.Proximity.PeerFinder.onconnectionrequested")
     @js.native
-    def onconnectionrequested: TypedEventHandler[js.Any, typings.winrtUwp.Windows.Networking.Proximity.ConnectionRequestedEventArgs] = js.native
+    def onconnectionrequested: TypedEventHandler[Any, typings.winrtUwp.Windows.Networking.Proximity.ConnectionRequestedEventArgs] = js.native
     inline def onconnectionrequested_=(
-      x: TypedEventHandler[js.Any, typings.winrtUwp.Windows.Networking.Proximity.ConnectionRequestedEventArgs]
+      x: TypedEventHandler[Any, typings.winrtUwp.Windows.Networking.Proximity.ConnectionRequestedEventArgs]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onconnectionrequested")(x.asInstanceOf[js.Any])
     
     /** Occurs during a tap gesture from a remote peer. */
@@ -154,30 +154,30 @@ object Proximity {
     @JSGlobal("Windows.Networking.Proximity.PeerFinder.ontriggeredconnectionstatechanged")
     @js.native
     def ontriggeredconnectionstatechanged: TypedEventHandler[
-        js.Any, 
+        Any, 
         typings.winrtUwp.Windows.Networking.Proximity.TriggeredConnectionStateChangedEventArgs
       ] = js.native
     inline def ontriggeredconnectionstatechanged_=(
       x: TypedEventHandler[
-          js.Any, 
+          Any, 
           typings.winrtUwp.Windows.Networking.Proximity.TriggeredConnectionStateChangedEventArgs
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ontriggeredconnectionstatechanged")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def removeEventListener_connectionrequested(
       `type`: connectionrequested,
-      listener: TypedEventHandler[js.Any, typings.winrtUwp.Windows.Networking.Proximity.ConnectionRequestedEventArgs]
+      listener: TypedEventHandler[Any, typings.winrtUwp.Windows.Networking.Proximity.ConnectionRequestedEventArgs]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def removeEventListener_triggeredconnectionstatechanged(
       `type`: triggeredconnectionstatechanged,
       listener: TypedEventHandler[
-          js.Any, 
+          Any, 
           typings.winrtUwp.Windows.Networking.Proximity.TriggeredConnectionStateChangedEventArgs
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]

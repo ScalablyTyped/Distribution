@@ -36,7 +36,7 @@ trait Navigation extends StObject {
     * The target URL passed into the `Router#navigateByUrl()` call before navigation. This is
     * the value before the router has parsed or applied redirects to it.
     */
-  var initialUrl: String | UrlTree
+  var initialUrl: UrlTree
   
   /**
     * The previously successful `Navigation` object. Only one previous navigation
@@ -60,7 +60,7 @@ object Navigation {
     extractedUrl: UrlTree,
     extras: NavigationExtras,
     id: Double,
-    initialUrl: String | UrlTree,
+    initialUrl: UrlTree,
     trigger: imperative | popstate | hashchange
   ): Navigation = {
     val __obj = js.Dynamic.literal(extractedUrl = extractedUrl.asInstanceOf[js.Any], extras = extras.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], initialUrl = initialUrl.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any], previousNavigation = null)
@@ -79,7 +79,7 @@ object Navigation {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setInitialUrl(value: String | UrlTree): Self = StObject.set(x, "initialUrl", value.asInstanceOf[js.Any])
+    inline def setInitialUrl(value: UrlTree): Self = StObject.set(x, "initialUrl", value.asInstanceOf[js.Any])
     
     inline def setPreviousNavigation(value: Navigation): Self = StObject.set(x, "previousNavigation", value.asInstanceOf[js.Any])
     

@@ -129,7 +129,7 @@ object PretargetingConfig {
     
     inline def setAllowedUserTargetingModesUndefined: Self = StObject.set(x, "allowedUserTargetingModes", js.undefined)
     
-    inline def setAllowedUserTargetingModesVarargs(value: String*): Self = StObject.set(x, "allowedUserTargetingModes", js.Array(value :_*))
+    inline def setAllowedUserTargetingModesVarargs(value: String*): Self = StObject.set(x, "allowedUserTargetingModes", js.Array(value*))
     
     inline def setAppTargeting(value: AppTargeting): Self = StObject.set(x, "appTargeting", value.asInstanceOf[js.Any])
     
@@ -147,7 +147,7 @@ object PretargetingConfig {
     
     inline def setExcludedContentLabelIdsUndefined: Self = StObject.set(x, "excludedContentLabelIds", js.undefined)
     
-    inline def setExcludedContentLabelIdsVarargs(value: String*): Self = StObject.set(x, "excludedContentLabelIds", js.Array(value :_*))
+    inline def setExcludedContentLabelIdsVarargs(value: String*): Self = StObject.set(x, "excludedContentLabelIds", js.Array(value*))
     
     inline def setGeoTargeting(value: NumericTargetingDimension): Self = StObject.set(x, "geoTargeting", value.asInstanceOf[js.Any])
     
@@ -157,43 +157,43 @@ object PretargetingConfig {
     
     inline def setIncludedCreativeDimensionsUndefined: Self = StObject.set(x, "includedCreativeDimensions", js.undefined)
     
-    inline def setIncludedCreativeDimensionsVarargs(value: CreativeDimensions*): Self = StObject.set(x, "includedCreativeDimensions", js.Array(value :_*))
+    inline def setIncludedCreativeDimensionsVarargs(value: CreativeDimensions*): Self = StObject.set(x, "includedCreativeDimensions", js.Array(value*))
     
     inline def setIncludedEnvironments(value: js.Array[String]): Self = StObject.set(x, "includedEnvironments", value.asInstanceOf[js.Any])
     
     inline def setIncludedEnvironmentsUndefined: Self = StObject.set(x, "includedEnvironments", js.undefined)
     
-    inline def setIncludedEnvironmentsVarargs(value: String*): Self = StObject.set(x, "includedEnvironments", js.Array(value :_*))
+    inline def setIncludedEnvironmentsVarargs(value: String*): Self = StObject.set(x, "includedEnvironments", js.Array(value*))
     
     inline def setIncludedFormats(value: js.Array[String]): Self = StObject.set(x, "includedFormats", value.asInstanceOf[js.Any])
     
     inline def setIncludedFormatsUndefined: Self = StObject.set(x, "includedFormats", js.undefined)
     
-    inline def setIncludedFormatsVarargs(value: String*): Self = StObject.set(x, "includedFormats", js.Array(value :_*))
+    inline def setIncludedFormatsVarargs(value: String*): Self = StObject.set(x, "includedFormats", js.Array(value*))
     
     inline def setIncludedLanguages(value: js.Array[String]): Self = StObject.set(x, "includedLanguages", value.asInstanceOf[js.Any])
     
     inline def setIncludedLanguagesUndefined: Self = StObject.set(x, "includedLanguages", js.undefined)
     
-    inline def setIncludedLanguagesVarargs(value: String*): Self = StObject.set(x, "includedLanguages", js.Array(value :_*))
+    inline def setIncludedLanguagesVarargs(value: String*): Self = StObject.set(x, "includedLanguages", js.Array(value*))
     
     inline def setIncludedMobileOperatingSystemIds(value: js.Array[String]): Self = StObject.set(x, "includedMobileOperatingSystemIds", value.asInstanceOf[js.Any])
     
     inline def setIncludedMobileOperatingSystemIdsUndefined: Self = StObject.set(x, "includedMobileOperatingSystemIds", js.undefined)
     
-    inline def setIncludedMobileOperatingSystemIdsVarargs(value: String*): Self = StObject.set(x, "includedMobileOperatingSystemIds", js.Array(value :_*))
+    inline def setIncludedMobileOperatingSystemIdsVarargs(value: String*): Self = StObject.set(x, "includedMobileOperatingSystemIds", js.Array(value*))
     
     inline def setIncludedPlatforms(value: js.Array[String]): Self = StObject.set(x, "includedPlatforms", value.asInstanceOf[js.Any])
     
     inline def setIncludedPlatformsUndefined: Self = StObject.set(x, "includedPlatforms", js.undefined)
     
-    inline def setIncludedPlatformsVarargs(value: String*): Self = StObject.set(x, "includedPlatforms", js.Array(value :_*))
+    inline def setIncludedPlatformsVarargs(value: String*): Self = StObject.set(x, "includedPlatforms", js.Array(value*))
     
     inline def setIncludedUserIdTypes(value: js.Array[String]): Self = StObject.set(x, "includedUserIdTypes", value.asInstanceOf[js.Any])
     
     inline def setIncludedUserIdTypesUndefined: Self = StObject.set(x, "includedUserIdTypes", js.undefined)
     
-    inline def setIncludedUserIdTypesVarargs(value: String*): Self = StObject.set(x, "includedUserIdTypes", js.Array(value :_*))
+    inline def setIncludedUserIdTypesVarargs(value: String*): Self = StObject.set(x, "includedUserIdTypes", js.Array(value*))
     
     inline def setInterstitialTargeting(value: String): Self = StObject.set(x, "interstitialTargeting", value.asInstanceOf[js.Any])
     
@@ -203,7 +203,7 @@ object PretargetingConfig {
     
     inline def setInvalidGeoIdsUndefined: Self = StObject.set(x, "invalidGeoIds", js.undefined)
     
-    inline def setInvalidGeoIdsVarargs(value: String*): Self = StObject.set(x, "invalidGeoIds", js.Array(value :_*))
+    inline def setInvalidGeoIdsVarargs(value: String*): Self = StObject.set(x, "invalidGeoIds", js.Array(value*))
     
     inline def setMaximumQps(value: String): Self = StObject.set(x, "maximumQps", value.asInstanceOf[js.Any])
     

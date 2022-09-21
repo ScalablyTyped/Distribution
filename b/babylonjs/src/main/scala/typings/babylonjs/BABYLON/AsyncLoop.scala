@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AsyncLoop extends StObject {
   
-  /* private */ var _done: js.Any
+  /* private */ var _done: Any
   
-  /* private */ var _fn: js.Any
+  /* private */ var _fn: Any
   
-  /* private */ var _successCallback: js.Any
+  /* private */ var _successCallback: Any
   
   /**
     * Break the loop and run the success callback.
@@ -35,9 +35,9 @@ trait AsyncLoop extends StObject {
 object AsyncLoop {
   
   inline def apply(
-    _done: js.Any,
-    _fn: js.Any,
-    _successCallback: js.Any,
+    _done: Any,
+    _fn: Any,
+    _successCallback: Any,
     breakLoop: () => Unit,
     executeNext: () => Unit,
     index: Double,
@@ -57,10 +57,10 @@ object AsyncLoop {
     
     inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
-    inline def set_done(value: js.Any): Self = StObject.set(x, "_done", value.asInstanceOf[js.Any])
+    inline def set_done(value: Any): Self = StObject.set(x, "_done", value.asInstanceOf[js.Any])
     
-    inline def set_fn(value: js.Any): Self = StObject.set(x, "_fn", value.asInstanceOf[js.Any])
+    inline def set_fn(value: Any): Self = StObject.set(x, "_fn", value.asInstanceOf[js.Any])
     
-    inline def set_successCallback(value: js.Any): Self = StObject.set(x, "_successCallback", value.asInstanceOf[js.Any])
+    inline def set_successCallback(value: Any): Self = StObject.set(x, "_successCallback", value.asInstanceOf[js.Any])
   }
 }

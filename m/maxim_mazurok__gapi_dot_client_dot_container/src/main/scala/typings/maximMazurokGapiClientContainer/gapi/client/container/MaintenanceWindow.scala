@@ -14,7 +14,7 @@ trait MaintenanceWindow extends StObject {
   var maintenanceExclusions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.container.gapi.client.container.TimeWindow}
-    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.MaintenanceWindow & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.MaintenanceWindow & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -39,7 +39,7 @@ object MaintenanceWindow {
     inline def setMaintenanceExclusions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.container.gapi.client.container.TimeWindow}
-      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.MaintenanceWindow & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.MaintenanceWindow & TopLevel[Any]
     ): Self = StObject.set(x, "maintenanceExclusions", value.asInstanceOf[js.Any])
     
     inline def setMaintenanceExclusionsUndefined: Self = StObject.set(x, "maintenanceExclusions", js.undefined)

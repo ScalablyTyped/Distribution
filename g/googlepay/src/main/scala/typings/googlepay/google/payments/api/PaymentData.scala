@@ -38,6 +38,12 @@ trait PaymentData extends StObject {
   var email: js.UndefOr[String] = js.undefined
   
   /**
+    * Contains the data for the offer applied by the user. This will be
+    * populated if an offer is applied to the transaction.
+    */
+  var offerData: js.UndefOr[OfferData] = js.undefined
+  
+  /**
     * Data about the selected payment method.
     */
   var paymentMethodData: PaymentMethodData
@@ -72,6 +78,10 @@ object PaymentData {
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setOfferData(value: OfferData): Self = StObject.set(x, "offerData", value.asInstanceOf[js.Any])
+    
+    inline def setOfferDataUndefined: Self = StObject.set(x, "offerData", js.undefined)
     
     inline def setPaymentMethodData(value: PaymentMethodData): Self = StObject.set(x, "paymentMethodData", value.asInstanceOf[js.Any])
     

@@ -37,5 +37,5 @@ object postAuthenticationMod {
     }
   }
   
-  type PostAuthenticationTriggerHandler = Handler[PostAuthenticationTriggerEvent, js.Any]
+  type PostAuthenticationTriggerHandler = Handler[PostAuthenticationTriggerEvent, Any]
 }

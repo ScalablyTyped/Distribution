@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.Spring")
 @js.native
-class Spring protected ()
+open class Spring protected ()
   extends typings.p2.mod.Spring {
   def this(bodyA: typings.p2.mod.Body, bodyB: typings.p2.mod.Body) = this()
   def this(bodyA: typings.p2.mod.Body, bodyB: typings.p2.mod.Body, options: SpringOptions) = this()

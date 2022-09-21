@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait AccountRecentActivityWorkItemModel extends StObject {
   /**
     * Date of the last Activity by the user
     */
-  var activityDate: Date
+  var activityDate: js.Date
   
   /**
     * Type of the activity
@@ -25,7 +24,7 @@ trait AccountRecentActivityWorkItemModel extends StObject {
   /**
     * Last changed date of the work item
     */
-  var changedDate: Date
+  var changedDate: js.Date
   
   /**
     * Work Item Id
@@ -60,10 +59,10 @@ trait AccountRecentActivityWorkItemModel extends StObject {
 object AccountRecentActivityWorkItemModel {
   
   inline def apply(
-    activityDate: Date,
+    activityDate: js.Date,
     activityType: WorkItemRecentActivityType,
     assignedTo: String,
-    changedDate: Date,
+    changedDate: js.Date,
     id: Double,
     identityId: String,
     state: String,
@@ -77,13 +76,13 @@ object AccountRecentActivityWorkItemModel {
   
   extension [Self <: AccountRecentActivityWorkItemModel](x: Self) {
     
-    inline def setActivityDate(value: Date): Self = StObject.set(x, "activityDate", value.asInstanceOf[js.Any])
+    inline def setActivityDate(value: js.Date): Self = StObject.set(x, "activityDate", value.asInstanceOf[js.Any])
     
     inline def setActivityType(value: WorkItemRecentActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
     inline def setAssignedTo(value: String): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
     
-    inline def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
+    inline def setChangedDate(value: js.Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

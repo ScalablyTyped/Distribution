@@ -21,7 +21,7 @@ object SheetRangesQuery {
     queryDependents: Boolean => XSheetCellRanges,
     queryEmptyCells: () => XSheetCellRanges,
     queryFormulaCells: Double => XSheetCellRanges,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryIntersection: CellRangeAddress => XSheetCellRanges,
     queryPrecedents: Boolean => XSheetCellRanges,
     queryRowDifferences: CellAddress => XSheetCellRanges,

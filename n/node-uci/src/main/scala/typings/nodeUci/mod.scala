@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("node-uci", "Engine")
   @js.native
-  class Engine protected () extends StObject {
+  open class Engine protected () extends StObject {
     def this(enginePath: String) = this()
     
     def chain(): EngineChain = js.native
@@ -45,10 +45,10 @@ object mod {
   
   @JSImport("node-uci", "EngineChain")
   @js.native
-  class EngineChain protected () extends StObject {
+  open class EngineChain protected () extends StObject {
     def this(engine: Engine) = this()
     
-    def exec(): js.Any = js.native
+    def exec(): Any = js.native
     
     def go(sp: SearchOptions): js.Promise[SearchResult] = js.native
     
@@ -136,7 +136,7 @@ object mod {
       
       inline def setSearchmovesUndefined: Self = StObject.set(x, "searchmoves", js.undefined)
       
-      inline def setSearchmovesVarargs(value: String*): Self = StObject.set(x, "searchmoves", js.Array(value :_*))
+      inline def setSearchmovesVarargs(value: String*): Self = StObject.set(x, "searchmoves", js.Array(value*))
       
       inline def setWinc(value: Double): Self = StObject.set(x, "winc", value.asInstanceOf[js.Any])
       
@@ -167,7 +167,7 @@ object mod {
       
       inline def setInfo(value: js.Array[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      inline def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value :_*))
+      inline def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value*))
     }
   }
 }

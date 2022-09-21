@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListServicesRequest extends StObject {
   
   /**
-    * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the services to list. If you do not specify a cluster, the default cluster is assumed.
+    * The short name or full Amazon Resource Name (ARN) of the cluster to use when filtering the ListServices results. If you do not specify a cluster, the default cluster is assumed.
     */
   var cluster: js.UndefOr[String] = js.undefined
   
   /**
-    * The launch type for the services to list.
+    * The launch type to use when filtering the ListServices results.
     */
   var launchType: js.UndefOr[LaunchType] = js.undefined
   
   /**
-    * The maximum number of service results returned by ListServices in paginated output. When this parameter is used, ListServices only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListServices request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListServices returns up to 10 results and a nextToken value if applicable.
+    * The maximum number of service results that ListServices returned in paginated output. When this parameter is used, ListServices only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListServices request with the returned nextToken value. This value can be between 1 and 100. If this parameter isn't used, then ListServices returns up to 10 results and a nextToken value if applicable.
     */
   var maxResults: js.UndefOr[BoxedInteger] = js.undefined
   
@@ -27,7 +27,7 @@ trait ListServicesRequest extends StObject {
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The scheduling strategy for services to list.
+    * The scheduling strategy to use when filtering the ListServices results.
     */
   var schedulingStrategy: js.UndefOr[SchedulingStrategy] = js.undefined
 }

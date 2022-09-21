@@ -4,9 +4,10 @@ import typings.std.CanvasDirection
 import typings.std.CanvasRenderingContext2D
 import typings.std.CanvasTextAlign
 import typings.std.CanvasTextBaseline
+import typings.std.GlobalCompositeOperation
 import typings.std.ImageSmoothingQuality
+import typings.wegameApi.anon.AdStylerealWidthnumberrea
 import typings.wegameApi.anon.AdUnitId
-import typings.wegameApi.anon.AdUnitIdStyle
 import typings.wegameApi.anon.Alpha
 import typings.wegameApi.anon.Altitude
 import typings.wegameApi.anon.AudioSource
@@ -46,7 +47,6 @@ import typings.wegameApi.anon.ItemColor
 import typings.wegameApi.anon.Iv
 import typings.wegameApi.anon.KeyList
 import typings.wegameApi.anon.Level
-import typings.wegameApi.anon.List
 import typings.wegameApi.anon.Mask
 import typings.wegameApi.anon.Message
 import typings.wegameApi.anon.Name
@@ -67,6 +67,7 @@ import typings.wegameApi.anon.Text
 import typings.wegameApi.anon.Title
 import typings.wegameApi.anon.TodayPlayedTime
 import typings.wegameApi.anon.TotalBytesExpectedToSend
+import typings.wegameApi.anon.UseExperimentalWorker
 import typings.wegameApi.anon.Value
 import typings.wegameApi.anon.ValueString
 import typings.wegameApi.anon.Width
@@ -84,17 +85,21 @@ import typings.wegameApi.wegameApiStrings.contain
 import typings.wegameApi.wegameApiStrings.cover
 import typings.wegameApi.wegameApiStrings.fill
 import typings.wegameApi.wx.types.AccelerometerParams
-import typings.wegameApi.wx.types.AdStyle
+import typings.wegameApi.wx.types.BannerAdParams
 import typings.wegameApi.wx.types.BatteryInfo
 import typings.wegameApi.wx.types.ButtonStyle
 import typings.wegameApi.wx.types.ButtonType
 import typings.wegameApi.wx.types.Callbacks
 import typings.wegameApi.wx.types.CallbacksWithType
 import typings.wegameApi.wx.types.ClipboardData
+import typings.wegameApi.wx.types.CustomAdParam
+import typings.wegameApi.wx.types.CustomAdStyle
 import typings.wegameApi.wx.types.DownfileParams
 import typings.wegameApi.wx.types.GameClubButtonIcon
 import typings.wegameApi.wx.types.GetStorageParams
+import typings.wegameApi.wx.types.GridAdParam
 import typings.wegameApi.wx.types.Image
+import typings.wegameApi.wx.types.InterstitialAdParam
 import typings.wegameApi.wx.types.LaunchOption
 import typings.wegameApi.wx.types.LineHeightParams
 import typings.wegameApi.wx.types.NewUserInfoParam
@@ -115,18 +120,68 @@ import typings.wegameApi.wx.types.SocketSendParams
 import typings.wegameApi.wx.types.StorageInfo
 import typings.wegameApi.wx.types.SystemInfo
 import typings.wegameApi.wx.types.TouchData
+import typings.wegameApi.wx.types.VideoAdParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
+  @JSGlobal("AdObject")
+  @js.native
+  open class AdObject ()
+    extends StObject
+       with typings.wegameApi.AdObject {
+    
+    /**
+      * 广告单元 id
+      */
+    /* CompleteClass */
+    var adUnitId: String = js.native
+    
+    /**
+      * 销毁广告
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /**
+      * 取消监听广告错误事件
+      */
+    /* CompleteClass */
+    override def offError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
+    
+    /**
+      * 取消监听广告加载事件
+      */
+    /* CompleteClass */
+    override def offLoad(callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * 监听广告错误事件
+      */
+    /* CompleteClass */
+    override def onError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
+    
+    /**
+      * 监听广告加载事件
+      */
+    /* CompleteClass */
+    override def onLoad(callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * 显示广告。
+      */
+    /* CompleteClass */
+    override def show(): js.Promise[Unit] = js.native
+  }
+  
   /**
-    * banner 广告组件。banner 广告组件是一个原生组件，层级比上屏 Canvas 高，会覆盖在上屏 Canvas 上。banner 广告组件默认是隐藏的，需要调用 BannerAd.show() 将其显示。banner 广告会根据开发者设置的宽度进行等比缩放，缩放后的尺寸将通过 BannerAd.onResize() 事件中提供。
+    * banner 广告组件。banner 广告组件是一个原生组件，层级比普通组件高。banner 广告组件默认是隐藏的，需要调用 BannerAd.show() 将其显示。banner 广告会根据开发者设置的宽度进行等比缩放，缩放后的尺寸将通过 BannerAd.onResize() 事件中提供。
     */
   @JSGlobal("BannerAd")
   @js.native
-  class BannerAd ()
+  open class BannerAd ()
     extends StObject
        with typings.wegameApi.BannerAd {
     
@@ -137,55 +192,55 @@ object global {
     var adUnitId: String = js.native
     
     /**
-      * 销毁 banner 广告
+      * 销毁广告
       */
     /* CompleteClass */
     override def destroy(): Unit = js.native
     
     /**
-      * 隐藏 banner 广告
+      * 隐藏广告
       */
     /* CompleteClass */
     override def hide(): Unit = js.native
     
     /**
-      * 取消监听banner 广告错误事件
+      * 取消监听广告错误事件
       */
     /* CompleteClass */
     override def offError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
     
     /**
-      * 取消监听banner 广告加载事件
+      * 取消监听广告加载事件
       */
     /* CompleteClass */
     override def offLoad(callback: js.Function0[Unit]): Unit = js.native
     
     /**
-      * 取消监听隐藏 banner 广告缩放
+      * 取消监听广告缩放事件
       */
     /* CompleteClass */
     override def offResize(callback: js.Function1[/* res */ Width, Unit]): Unit = js.native
     
     /**
-      * 监听banner 广告错误事件
+      * 监听广告错误事件
       */
     /* CompleteClass */
     override def onError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
     
     /**
-      * 监听banner 广告加载事件
+      * 监听广告加载事件
       */
     /* CompleteClass */
     override def onLoad(callback: js.Function0[Unit]): Unit = js.native
     
     /**
-      * 监听 banner 广告缩放
+      * 监听广告缩放
       */
     /* CompleteClass */
     override def onResize(callback: js.Function1[/* res */ Width, Unit]): Unit = js.native
     
     /**
-      * 显示 banner 广告。
+      * 显示广告。
       */
     /* CompleteClass */
     override def show(): js.Promise[Unit] = js.native
@@ -194,7 +249,7 @@ object global {
       * banner 广告组件的样式。style 上的属性的值仅为开发者设置的值，banner 广告会根据开发者设置的宽度进行等比缩放，缩放后的真实尺寸需要通过 BannerAd.onResize() 事件获得。
       */
     /* CompleteClass */
-    var style: AdStyle = js.native
+    var style: AdStylerealWidthnumberrea = js.native
   }
   
   /**
@@ -202,19 +257,19 @@ object global {
     */
   @JSGlobal("Camera")
   @js.native
-  class Camera ()
+  open class Camera ()
     extends StObject
        with typings.wegameApi.Camera
   
   @JSGlobal("Canvas")
   @js.native
-  class Canvas ()
+  open class Canvas ()
     extends StObject
        with typings.wegameApi.Canvas
   
   @JSGlobal("CreatedButton")
   @js.native
-  class CreatedButton ()
+  open class CreatedButton ()
     extends StObject
        with typings.wegameApi.CreatedButton {
     
@@ -229,10 +284,10 @@ object global {
     
     // res参数会被具体按钮的API定义覆盖为具体信息
     /* CompleteClass */
-    override def offTap(callback: js.Function1[/* res */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    override def offTap(callback: js.Function1[/* res */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /* CompleteClass */
-    override def onTap(callback: js.Function1[/* res */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    override def onTap(callback: js.Function1[/* res */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /* CompleteClass */
     override def show(): Unit = js.native
@@ -247,9 +302,103 @@ object global {
     var `type`: ButtonType = js.native
   }
   
+  /**
+    * 原生模板广告组件。原生模板广告组件是一个原生组件，层级比普通组件高。原生模板广告组件默认是隐藏的，需要调用 CustomAd.show() 将其显示。如果宽度可配置，原生模板广告会根据开发者设置的宽度进行等比缩放。
+    */
+  @JSGlobal("CustomAd")
+  @js.native
+  open class CustomAd ()
+    extends StObject
+       with typings.wegameApi.CustomAd {
+    
+    /**
+      * 广告单元 id
+      */
+    /* CompleteClass */
+    var adUnitId: String = js.native
+    
+    /**
+      * 销毁广告
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /**
+      * 隐藏原生模板广告。（某些模板广告无法隐藏）
+      */
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /**
+      * 查询原生模板广告展示状态。
+      */
+    /* CompleteClass */
+    override def isShow(): Boolean = js.native
+    
+    /**
+      * 监听用户点击 关闭广告 按钮的事件
+      */
+    /* CompleteClass */
+    override def offClose(callback: js.Function1[/* res */ IsEnded, Unit]): Unit = js.native
+    
+    /**
+      * 取消监听广告错误事件
+      */
+    /* CompleteClass */
+    override def offError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
+    
+    /**
+      * 取消监听原生模板广告隐藏事件
+      */
+    /* CompleteClass */
+    override def offHide(callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * 取消监听广告加载事件
+      */
+    /* CompleteClass */
+    override def offLoad(callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * 监听用户点击 关闭广告 按钮的事件
+      */
+    /* CompleteClass */
+    override def onClose(callback: js.Function1[/* res */ IsEnded, Unit]): Unit = js.native
+    
+    /**
+      * 监听广告错误事件
+      */
+    /* CompleteClass */
+    override def onError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
+    
+    /**
+      * 监听原生模板广告隐藏事件, 某些模板如矩阵格子模板用户点击关闭时也会触发该事件。
+      */
+    /* CompleteClass */
+    override def onHide(callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * 监听广告加载事件
+      */
+    /* CompleteClass */
+    override def onLoad(callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * 显示广告。
+      */
+    /* CompleteClass */
+    override def show(): js.Promise[Unit] = js.native
+    
+    /**
+      * 原生模板广告组件的样式
+      */
+    /* CompleteClass */
+    var style: CustomAdStyle = js.native
+  }
+  
   @JSGlobal("DownloadTask")
   @js.native
-  class DownloadTask ()
+  open class DownloadTask ()
     extends StObject
        with typings.wegameApi.DownloadTask {
     
@@ -271,7 +420,7 @@ object global {
   
   @JSGlobal("FeedbackButton")
   @js.native
-  class FeedbackButton ()
+  open class FeedbackButton ()
     extends StObject
        with typings.wegameApi.FeedbackButton {
     
@@ -286,10 +435,10 @@ object global {
     
     // res参数会被具体按钮的API定义覆盖为具体信息
     /* CompleteClass */
-    override def offTap(callback: js.Function1[/* res */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    override def offTap(callback: js.Function1[/* res */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /* CompleteClass */
-    override def onTap(callback: js.Function1[/* res */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    override def onTap(callback: js.Function1[/* res */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /* CompleteClass */
     override def show(): Unit = js.native
@@ -306,13 +455,13 @@ object global {
   
   @JSGlobal("FileSystemManager")
   @js.native
-  class FileSystemManager ()
+  open class FileSystemManager ()
     extends StObject
        with typings.wegameApi.FileSystemManager
   
   @JSGlobal("GameClubButton")
   @js.native
-  class GameClubButton ()
+  open class GameClubButton ()
     extends StObject
        with typings.wegameApi.GameClubButton {
     
@@ -330,10 +479,10 @@ object global {
     
     // res参数会被具体按钮的API定义覆盖为具体信息
     /* CompleteClass */
-    override def offTap(callback: js.Function1[/* res */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    override def offTap(callback: js.Function1[/* res */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /* CompleteClass */
-    override def onTap(callback: js.Function1[/* res */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    override def onTap(callback: js.Function1[/* res */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /* CompleteClass */
     override def show(): Unit = js.native
@@ -348,9 +497,97 @@ object global {
     var `type`: ButtonType = js.native
   }
   
+  /**
+    * grid(格子) 广告组件。grid(格子) 广告组件是一个原生组件，层级比普通组件高。grid(格子) 广告组件默认是隐藏的，需要调用 GridAd.show() 将其显示。grid(格子) 广告会根据开发者设置的宽度进行等比缩放，缩放后的尺寸将通过 GridAd.onResize() 事件中提供。
+    */
+  @JSGlobal("GridAd")
+  @js.native
+  open class GridAd ()
+    extends StObject
+       with typings.wegameApi.GridAd {
+    
+    /**
+      * grid(格子) 广告广告组件的主题，提供 white black 两种主题选择。
+      */
+    /* CompleteClass */
+    var adTheme: String = js.native
+    
+    /**
+      * 广告单元 id
+      */
+    /* CompleteClass */
+    var adUnitId: String = js.native
+    
+    /**
+      * 销毁广告
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /**
+      * grid(格子) 广告组件的格子个数，可设置爱5，8两种格子个数样式，默认值为5
+      */
+    /* CompleteClass */
+    var gridCount: Double = js.native
+    
+    /**
+      * 隐藏广告
+      */
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /**
+      * 取消监听广告错误事件
+      */
+    /* CompleteClass */
+    override def offError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
+    
+    /**
+      * 取消监听广告加载事件
+      */
+    /* CompleteClass */
+    override def offLoad(callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * 取消监听广告缩放事件
+      */
+    /* CompleteClass */
+    override def offResize(callback: js.Function1[/* res */ Width, Unit]): Unit = js.native
+    
+    /**
+      * 监听广告错误事件
+      */
+    /* CompleteClass */
+    override def onError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
+    
+    /**
+      * 监听广告加载事件
+      */
+    /* CompleteClass */
+    override def onLoad(callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * 监听广告缩放
+      */
+    /* CompleteClass */
+    override def onResize(callback: js.Function1[/* res */ Width, Unit]): Unit = js.native
+    
+    /**
+      * 显示广告。
+      */
+    /* CompleteClass */
+    override def show(): js.Promise[Unit] = js.native
+    
+    /**
+      * grid(格子) 广告广告组件的样式。style 上的属性的值仅为开发者设置的grid(格子) 广告) 广告会根据开发者设置的宽度进行等比缩放，缩放后的真实尺寸需要通过 GridAd.onResize() 事件获得。
+      */
+    /* CompleteClass */
+    var style: AdStylerealWidthnumberrea = js.native
+  }
+  
   @JSGlobal("ImageFile")
   @js.native
-  class ImageFile ()
+  open class ImageFile ()
     extends StObject
        with typings.wegameApi.ImageFile {
     
@@ -372,7 +609,7 @@ object global {
     */
   @JSGlobal("InnerAudioContext")
   @js.native
-  class InnerAudioContext ()
+  open class InnerAudioContext ()
     extends StObject
        with typings.wegameApi.InnerAudioContext {
     
@@ -582,9 +819,12 @@ object global {
     var volume: Double = js.native
   }
   
+  /**
+    * 插屏广告组件。插屏广告组件是一个原生组件，层级比普通组件高。插屏广告组件每次创建都会返回一个全新的实例（小程序端的插屏广告实例不允许跨页面使用），默认是隐藏的，需要调用 InterstitialAd.show() 将其显示。
+    */
   @JSGlobal("InterstitialAd")
   @js.native
-  class InterstitialAd ()
+  open class InterstitialAd ()
     extends StObject
        with typings.wegameApi.InterstitialAd {
     
@@ -595,19 +835,13 @@ object global {
     var adUnitId: String = js.native
     
     /**
-      * 销毁 banner 广告
+      * 销毁广告
       */
     /* CompleteClass */
     override def destroy(): Unit = js.native
     
     /**
-      * 隐藏 banner 广告
-      */
-    /* CompleteClass */
-    override def hide(): Unit = js.native
-    
-    /**
-      * 加载视频广告
+      * 加载广告
       */
     /* CompleteClass */
     override def load(): js.Promise[Unit] = js.native
@@ -619,22 +853,16 @@ object global {
     override def offClose(callback: js.Function1[/* res */ IsEnded, Unit]): Unit = js.native
     
     /**
-      * 取消监听banner 广告错误事件
+      * 取消监听广告错误事件
       */
     /* CompleteClass */
     override def offError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
     
     /**
-      * 取消监听banner 广告加载事件
+      * 取消监听广告加载事件
       */
     /* CompleteClass */
     override def offLoad(callback: js.Function0[Unit]): Unit = js.native
-    
-    /**
-      * 取消监听隐藏 banner 广告缩放
-      */
-    /* CompleteClass */
-    override def offResize(callback: js.Function1[/* res */ Width, Unit]): Unit = js.native
     
     /**
       * 监听用户点击 关闭广告 按钮的事件
@@ -643,39 +871,27 @@ object global {
     override def onClose(callback: js.Function1[/* res */ IsEnded, Unit]): Unit = js.native
     
     /**
-      * 监听banner 广告错误事件
+      * 监听广告错误事件
       */
     /* CompleteClass */
     override def onError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
     
     /**
-      * 监听banner 广告加载事件
+      * 监听广告加载事件
       */
     /* CompleteClass */
     override def onLoad(callback: js.Function0[Unit]): Unit = js.native
     
     /**
-      * 监听 banner 广告缩放
-      */
-    /* CompleteClass */
-    override def onResize(callback: js.Function1[/* res */ Width, Unit]): Unit = js.native
-    
-    /**
-      * 显示 banner 广告。
+      * 显示广告。
       */
     /* CompleteClass */
     override def show(): js.Promise[Unit] = js.native
-    
-    /**
-      * banner 广告组件的样式。style 上的属性的值仅为开发者设置的值，banner 广告会根据开发者设置的宽度进行等比缩放，缩放后的真实尺寸需要通过 BannerAd.onResize() 事件获得。
-      */
-    /* CompleteClass */
-    var style: AdStyle = js.native
   }
   
   @JSGlobal("KVData")
   @js.native
-  class KVData ()
+  open class KVData ()
     extends StObject
        with typings.wegameApi.KVData {
     
@@ -688,7 +904,7 @@ object global {
   
   @JSGlobal("LoadSubpackageTask")
   @js.native
-  class LoadSubpackageTask ()
+  open class LoadSubpackageTask ()
     extends StObject
        with typings.wegameApi.LoadSubpackageTask {
     
@@ -711,7 +927,7 @@ object global {
     */
   @JSGlobal("LogManager")
   @js.native
-  class LogManager ()
+  open class LogManager ()
     extends StObject
        with typings.wegameApi.LogManager {
     
@@ -720,33 +936,33 @@ object global {
       * @param args 要记录的日志内容
       */
     /* CompleteClass */
-    override def debug(args: js.Any*): Unit = js.native
+    override def debug(args: Any*): Unit = js.native
     
     /**
       * 写info日志
       * @param args 要记录的日志内容
       */
     /* CompleteClass */
-    override def info(args: js.Any*): Unit = js.native
+    override def info(args: Any*): Unit = js.native
     
     /**
       * 写log日志
       * @param args 要记录的日志内容
       */
     /* CompleteClass */
-    override def log(args: js.Any*): Unit = js.native
+    override def log(args: Any*): Unit = js.native
     
     /**
       * 写warn日志
       * @param args 要记录的日志内容
       */
     /* CompleteClass */
-    override def warn(args: js.Any*): Unit = js.native
+    override def warn(args: Any*): Unit = js.native
   }
   
   @JSGlobal("OpenDataContext")
   @js.native
-  class OpenDataContext ()
+  open class OpenDataContext ()
     extends StObject
        with typings.wegameApi.OpenDataContext {
     
@@ -761,12 +977,12 @@ object global {
       * @param message 要发送的消息，message 中及嵌套对象中 key 的 value 只能是 primitive value。即 number、string、boolean、null、undefined。
       */
     /* CompleteClass */
-    override def postMessage(message: js.Any): Unit = js.native
+    override def postMessage(message: Any): Unit = js.native
   }
   
   @JSGlobal("OpenSettingButton")
   @js.native
-  class OpenSettingButton ()
+  open class OpenSettingButton ()
     extends StObject
        with typings.wegameApi.OpenSettingButton {
     
@@ -783,12 +999,12 @@ object global {
     override def offTap(callback: js.Function0[Unit]): Unit = js.native
     // res参数会被具体按钮的API定义覆盖为具体信息
     /* CompleteClass */
-    override def offTap(callback: js.Function1[/* res */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    override def offTap(callback: js.Function1[/* res */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /* CompleteClass */
     override def onTap(callback: js.Function0[Unit]): Unit = js.native
     /* CompleteClass */
-    override def onTap(callback: js.Function1[/* res */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    override def onTap(callback: js.Function1[/* res */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /* CompleteClass */
     override def show(): Unit = js.native
@@ -805,7 +1021,7 @@ object global {
   
   @JSGlobal("RecorderManager")
   @js.native
-  class RecorderManager ()
+  open class RecorderManager ()
     extends StObject
        with typings.wegameApi.RecorderManager {
     
@@ -875,7 +1091,7 @@ object global {
   
   @JSGlobal("RequestTask")
   @js.native
-  class RequestTask ()
+  open class RequestTask ()
     extends StObject
        with typings.wegameApi.RequestTask {
     
@@ -886,11 +1102,11 @@ object global {
     override def abort(): Unit = js.native
   }
   
-  @JSGlobal("RewardedVideoAd")
+  @JSGlobal("ResizableAdObject")
   @js.native
-  class RewardedVideoAd ()
+  open class ResizableAdObject ()
     extends StObject
-       with typings.wegameApi.InterstitialAd {
+       with typings.wegameApi.ResizableAdObject {
     
     /**
       * 广告单元 id
@@ -899,22 +1115,92 @@ object global {
     var adUnitId: String = js.native
     
     /**
-      * 销毁 banner 广告
+      * 销毁广告
       */
     /* CompleteClass */
     override def destroy(): Unit = js.native
     
     /**
-      * 隐藏 banner 广告
+      * 隐藏广告
       */
     /* CompleteClass */
     override def hide(): Unit = js.native
     
     /**
-      * 加载视频广告
+      * 取消监听广告错误事件
+      */
+    /* CompleteClass */
+    override def offError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
+    
+    /**
+      * 取消监听广告加载事件
+      */
+    /* CompleteClass */
+    override def offLoad(callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * 取消监听广告缩放事件
+      */
+    /* CompleteClass */
+    override def offResize(callback: js.Function1[/* res */ Width, Unit]): Unit = js.native
+    
+    /**
+      * 监听广告错误事件
+      */
+    /* CompleteClass */
+    override def onError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
+    
+    /**
+      * 监听广告加载事件
+      */
+    /* CompleteClass */
+    override def onLoad(callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * 监听广告缩放
+      */
+    /* CompleteClass */
+    override def onResize(callback: js.Function1[/* res */ Width, Unit]): Unit = js.native
+    
+    /**
+      * 显示广告。
+      */
+    /* CompleteClass */
+    override def show(): js.Promise[Unit] = js.native
+  }
+  
+  /**
+    * 激励视频广告组件。激励视频广告组件是一个原生组件，层级比普通组件高。激励视频广告是一个单例（小游戏端是全局单例，小程序端是页面内单例，在小程序端的单例对象不允许跨页面使用），默认是隐藏的，需要调用 RewardedVideoAd.show() 将其显示。
+    */
+  @JSGlobal("RewardedVideoAd")
+  @js.native
+  open class RewardedVideoAd ()
+    extends StObject
+       with typings.wegameApi.RewardedVideoAd {
+    
+    /**
+      * 广告单元 id
+      */
+    /* CompleteClass */
+    var adUnitId: String = js.native
+    
+    /**
+      * 销毁广告
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /**
+      * 加载广告
       */
     /* CompleteClass */
     override def load(): js.Promise[Unit] = js.native
+    
+    /**
+      * 是否启用多例模式，默认为false
+      */
+    /* CompleteClass */
+    var multiton: Boolean = js.native
     
     /**
       * 监听用户点击 关闭广告 按钮的事件
@@ -923,22 +1209,16 @@ object global {
     override def offClose(callback: js.Function1[/* res */ IsEnded, Unit]): Unit = js.native
     
     /**
-      * 取消监听banner 广告错误事件
+      * 取消监听广告错误事件
       */
     /* CompleteClass */
     override def offError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
     
     /**
-      * 取消监听banner 广告加载事件
+      * 取消监听广告加载事件
       */
     /* CompleteClass */
     override def offLoad(callback: js.Function0[Unit]): Unit = js.native
-    
-    /**
-      * 取消监听隐藏 banner 广告缩放
-      */
-    /* CompleteClass */
-    override def offResize(callback: js.Function1[/* res */ Width, Unit]): Unit = js.native
     
     /**
       * 监听用户点击 关闭广告 按钮的事件
@@ -947,39 +1227,27 @@ object global {
     override def onClose(callback: js.Function1[/* res */ IsEnded, Unit]): Unit = js.native
     
     /**
-      * 监听banner 广告错误事件
+      * 监听广告错误事件
       */
     /* CompleteClass */
     override def onError(callback: js.Function1[/* res */ ErrMsg, Unit]): Unit = js.native
     
     /**
-      * 监听banner 广告加载事件
+      * 监听广告加载事件
       */
     /* CompleteClass */
     override def onLoad(callback: js.Function0[Unit]): Unit = js.native
     
     /**
-      * 监听 banner 广告缩放
-      */
-    /* CompleteClass */
-    override def onResize(callback: js.Function1[/* res */ Width, Unit]): Unit = js.native
-    
-    /**
-      * 显示 banner 广告。
+      * 显示广告。
       */
     /* CompleteClass */
     override def show(): js.Promise[Unit] = js.native
-    
-    /**
-      * banner 广告组件的样式。style 上的属性的值仅为开发者设置的值，banner 广告会根据开发者设置的宽度进行等比缩放，缩放后的真实尺寸需要通过 BannerAd.onResize() 事件获得。
-      */
-    /* CompleteClass */
-    var style: AdStyle = js.native
   }
   
   @JSGlobal("SocketTask")
   @js.native
-  class SocketTask ()
+  open class SocketTask ()
     extends StObject
        with typings.wegameApi.SocketTask {
     
@@ -1022,7 +1290,7 @@ object global {
   
   @JSGlobal("Stats")
   @js.native
-  class Stats ()
+  open class Stats ()
     extends StObject
        with typings.wegameApi.Stats {
     
@@ -1074,13 +1342,13 @@ object global {
     */
   @JSGlobal("UDPSocket")
   @js.native
-  class UDPSocket ()
+  open class UDPSocket ()
     extends StObject
        with typings.wegameApi.UDPSocket
   
   @JSGlobal("UpdateManager")
   @js.native
-  class UpdateManager ()
+  open class UpdateManager ()
     extends StObject
        with typings.wegameApi.UpdateManager {
     
@@ -1111,7 +1379,7 @@ object global {
   
   @JSGlobal("UploadTask")
   @js.native
-  class UploadTask ()
+  open class UploadTask ()
     extends StObject
        with typings.wegameApi.UploadTask {
     
@@ -1133,7 +1401,7 @@ object global {
   
   @JSGlobal("UserGameData")
   @js.native
-  class UserGameData ()
+  open class UserGameData ()
     extends StObject
        with typings.wegameApi.UserGameData {
     
@@ -1164,7 +1432,7 @@ object global {
   
   @JSGlobal("UserInfoButton")
   @js.native
-  class UserInfoButton ()
+  open class UserInfoButton ()
     extends StObject
        with typings.wegameApi.UserInfoButton {
     
@@ -1179,10 +1447,10 @@ object global {
     
     // res参数会被具体按钮的API定义覆盖为具体信息
     /* CompleteClass */
-    override def offTap(callback: js.Function1[/* res */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    override def offTap(callback: js.Function1[/* res */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /* CompleteClass */
-    override def onTap(callback: js.Function1[/* res */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    override def onTap(callback: js.Function1[/* res */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /* CompleteClass */
     override def show(): Unit = js.native
@@ -1199,7 +1467,7 @@ object global {
   
   @JSGlobal("Video")
   @js.native
-  class Video ()
+  open class Video ()
     extends StObject
        with typings.wegameApi.Video {
     
@@ -1444,7 +1712,7 @@ object global {
   
   @JSGlobal("WxPerformance")
   @js.native
-  class WxPerformance ()
+  open class WxPerformance ()
     extends StObject
        with typings.wegameApi.WxPerformance {
     
@@ -1457,61 +1725,79 @@ object global {
   
   @JSGlobal("WxRenderingContext")
   @js.native
-  class WxRenderingContext ()
+  open class WxRenderingContext ()
     extends StObject
        with CanvasRenderingContext2D {
     
+    /* standard dom */
     /* CompleteClass */
     override def clearRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var direction: CanvasDirection = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override def fillRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var filter: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var font: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var globalAlpha: Double = js.native
     
+    /* standard dom */
     /* CompleteClass */
-    var globalCompositeOperation: String = js.native
+    var globalCompositeOperation: GlobalCompositeOperation = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var imageSmoothingEnabled: Boolean = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var imageSmoothingQuality: ImageSmoothingQuality = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override def restore(): Unit = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override def save(): Unit = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var shadowBlur: Double = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var shadowColor: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var shadowOffsetX: Double = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var shadowOffsetY: Double = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override def strokeRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var textAlign: CanvasTextAlign = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var textBaseline: CanvasTextBaseline = js.native
   }
@@ -1527,13 +1813,13 @@ object global {
     */
   @JSGlobal("WxWebGLRenderingContext")
   @js.native
-  class WxWebGLRenderingContext ()
+  open class WxWebGLRenderingContext ()
     extends StObject
        with typings.wegameApi.WxWebGLRenderingContext
   
   @JSGlobal("WxWorker")
   @js.native
-  class WxWorker ()
+  open class WxWorker ()
     extends StObject
        with typings.wegameApi.WxWorker {
     
@@ -1545,11 +1831,17 @@ object global {
     override def onMessage(callback: js.Function1[/* res */ Message, Unit]): Unit = js.native
     
     /**
+      * 监听 worker线程被系统回收事件（当iOS系统资源紧张时，worker线程存在被系统回收的可能，开发者可监听此事件并重新创建一个worker）。仅限在主线程 worker 对象上调用。
+      */
+    /* CompleteClass */
+    override def onProcessKilled(callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
       * 向主线程或Worker线程发送的消息。
       * @param message 需要发送的消息，必须是一个可序列化的 JavaScript 对象。
       */
     /* CompleteClass */
-    override def postMessage(message: js.Any): Unit = js.native
+    override def postMessage(message: Any): Unit = js.native
     
     /**
       * 结束当前 worker 线程，仅限在主线程 worker 对象上调用。
@@ -1568,9 +1860,9 @@ object global {
   
   inline def requestAnimationFrame(callback: js.Function0[Unit]): Double = js.Dynamic.global.applyDynamic("requestAnimationFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def setInterval(fn: js.Function0[Unit], delay: Double, rest: js.Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setInterval(fn: js.Function0[Unit], delay: Double, rest: Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")((List(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
   
-  inline def setTimeout(fn: js.Function0[Unit], delay: Double, rest: js.Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setTimeout(fn: js.Function0[Unit], delay: Double, rest: Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")((List(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
   
   object wx {
     
@@ -1632,9 +1924,10 @@ object global {
     
     // --广告
     /**
-      * 创建 banner 广告组件。请通过 wx.getSystemInfoSync() 返回对象的 SDKVersion 判断基础库版本号 >= 2.0.4 后再使用该 API。同时，开发者工具上暂不支持调试该 API，请直接在真机上进行调试。
+      * 创建 banner 广告组件。请通过 wx.getSystemInfoSync() 返回对象的 SDKVersion 判断基础库版本号 >= 2.0.4 后再使用该 API。每次调用该方法创建 banner 广告都会返回一个全新的实例。
+      * 基础库 2.0.4 开始支持，低版本需做兼容处理。
       */
-    inline def createBannerAd(param: AdUnitIdStyle): typings.wegameApi.BannerAd = ^.asInstanceOf[js.Dynamic].applyDynamic("createBannerAd")(param.asInstanceOf[js.Any]).asInstanceOf[typings.wegameApi.BannerAd]
+    inline def createBannerAd(param: BannerAdParams): typings.wegameApi.BannerAd = ^.asInstanceOf[js.Dynamic].applyDynamic("createBannerAd")(param.asInstanceOf[js.Any]).asInstanceOf[typings.wegameApi.BannerAd]
     
     // --相机
     /**
@@ -1649,6 +1942,11 @@ object global {
       */
     inline def createCanvas(): typings.wegameApi.Canvas = ^.asInstanceOf[js.Dynamic].applyDynamic("createCanvas")().asInstanceOf[typings.wegameApi.Canvas]
     
+    /**
+      * 创建原生模板广告组件。请通过 wx.getSystemInfoSync() 返回对象的 SDKVersion 判断基础库版本号 >= 2.11.1 后再使用该 API。每次调用该方法创建原生模板广告都会返回一个全新的实例。
+      */
+    inline def createCustomAd(param: CustomAdParam): typings.wegameApi.CustomAd = ^.asInstanceOf[js.Dynamic].applyDynamic("createCustomAd")(param.asInstanceOf[js.Any]).asInstanceOf[typings.wegameApi.CustomAd]
+    
     // --意见反馈
     /**
       * 用户点击后打开意见反馈页面的按钮
@@ -1659,7 +1957,7 @@ object global {
     /**
       * 创建小游戏推荐banner组件。请通过 wx.getSystemInfoSync() 返回对象的 SDKVersion 判断基础库版本号 >= 2.7.5 后再使用该 API。每次调用该方法都会返回一个全新的实例。
       */
-    inline def createGameBanner(param: Style): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createGameBanner")(param.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def createGameBanner(param: Style): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createGameBanner")(param.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     // --游戏圈
     /**
@@ -1671,19 +1969,25 @@ object global {
     /**
       * 创建小游戏推荐icon组件。请通过 wx.getSystemInfoSync() 返回对象的 SDKVersion 判断基础库版本号 >= 2.8.2 后再使用该 API。每次调用该方法都会返回一个全新的实例。
       */
-    inline def createGameIcon(param: Count): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createGameIcon")(param.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def createGameIcon(param: Count): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createGameIcon")(param.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     // --推荐弹窗
     /**
       * 创建小游戏推荐弹窗组件。请通过 wx.getSystemInfoSync() 返回对象的 SDKVersion 判断基础库版本号 >= 2.7.5 后再使用该 API。每次调用该方法都会返回一个全新的实例。
       */
-    inline def createGamePortal(param: AdUnitId): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createGamePortal")(param.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def createGamePortal(param: AdUnitId): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createGamePortal")(param.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     // TODO: GameRecorder
     /**
       * 创建游戏对局回放分享按钮，返回一个单例对象。按钮在被用户点击后会发起对最近一次录制完成的游戏对局回放的分享。
       */
-    inline def createGameRecorderShareButton(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createGameRecorderShareButton")().asInstanceOf[js.Any]
+    inline def createGameRecorderShareButton(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createGameRecorderShareButton")().asInstanceOf[Any]
+    
+    /**
+      * 创建 grid(格子) 广告组件。请通过 wx.getSystemInfoSync() 返回对象的 SDKVersion 判断基础库版本号 >= 2.9.2 后再使用该 API。每次调用该方法创建 grid(格子) 广告都会返回一个全新的实例。
+      * 基础库 2.9.2 开始支持，低版本需做兼容处理
+      */
+    inline def createGridAd(param: GridAdParam): typings.wegameApi.GridAd = ^.asInstanceOf[js.Dynamic].applyDynamic("createGridAd")(param.asInstanceOf[js.Any]).asInstanceOf[typings.wegameApi.GridAd]
     
     /**
       * 创建一个图片对象
@@ -1697,9 +2001,9 @@ object global {
     inline def createInnerAudioContext(): typings.wegameApi.InnerAudioContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createInnerAudioContext")().asInstanceOf[typings.wegameApi.InnerAudioContext]
     
     /**
-      * 创建插屏广告组件。请通过 wx.getSystemInfoSync() 返回对象的 SDKVersion 判断基础库版本号后再使用该 API。每次调用该方法创建插屏广告都会返回一个全新的实例（小程序端的插屏广告实例不允许跨页面使用）。
+      * 插屏广告组件。插屏广告组件是一个原生组件，层级比普通组件高。插屏广告组件每次创建都会返回一个全新的实例（小程序端的插屏广告实例不允许跨页面使用），默认是隐藏的，需要调用 InterstitialAd.show() 将其显示。
       */
-    inline def createInterstitialAd(param: AdUnitId): typings.wegameApi.InterstitialAd = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterstitialAd")(param.asInstanceOf[js.Any]).asInstanceOf[typings.wegameApi.InterstitialAd]
+    inline def createInterstitialAd(param: InterstitialAdParam): typings.wegameApi.InterstitialAd = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterstitialAd")(param.asInstanceOf[js.Any]).asInstanceOf[typings.wegameApi.InterstitialAd]
     
     // --设置
     /**
@@ -1708,9 +2012,10 @@ object global {
     inline def createOpenSettingButton(param: Text): typings.wegameApi.OpenSettingButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createOpenSettingButton")(param.asInstanceOf[js.Any]).asInstanceOf[typings.wegameApi.OpenSettingButton]
     
     /**
-      * 创建激励视频广告组件。请通过 wx.getSystemInfoSync() 返回对象的 SDKVersion 判断基础库版本号 >= 2.0.4 后再使用该 API。同时，开发者工具上暂不支持调试该 API，请直接在真机上进行调试。
+      * 创建激励视频广告组件。请通过 wx.getSystemInfoSync() 返回对象的 SDKVersion 判断基础库版本号后再使用该 API（小游戏端要求 >= 2.0.4， 小程序端要求 >= 2.6.0）。调用该方法创建的激励视频广告是一个单例（小游戏端是全局单例，小程序端是页面内单例，在小程序端的单例对象不允许跨页面使用）。
+      * 基础库 2.0.4 开始支持，低版本需做兼容处理。
       */
-    inline def createRewardedVideoAd(param: AdUnitId): typings.wegameApi.RewardedVideoAd = ^.asInstanceOf[js.Dynamic].applyDynamic("createRewardedVideoAd")(param.asInstanceOf[js.Any]).asInstanceOf[typings.wegameApi.RewardedVideoAd]
+    inline def createRewardedVideoAd(param: VideoAdParams): typings.wegameApi.RewardedVideoAd = ^.asInstanceOf[js.Dynamic].applyDynamic("createRewardedVideoAd")(param.asInstanceOf[js.Any]).asInstanceOf[typings.wegameApi.RewardedVideoAd]
     
     // --UDP通信
     /**
@@ -1728,7 +2033,8 @@ object global {
     /**
       * 创建一个 Worker 线程，目前限制最多只能创建一个 Worker，创建下一个 Worker 前请调用 Worker.terminate
       */
-    inline def createWorker(): typings.wegameApi.WxWorker = ^.asInstanceOf[js.Dynamic].applyDynamic("createWorker")().asInstanceOf[typings.wegameApi.WxWorker]
+    inline def createWorker(scriptPath: String): typings.wegameApi.WxWorker = ^.asInstanceOf[js.Dynamic].applyDynamic("createWorker")(scriptPath.asInstanceOf[js.Any]).asInstanceOf[typings.wegameApi.WxWorker]
+    inline def createWorker(scriptPath: String, options: UseExperimentalWorker): typings.wegameApi.WxWorker = (^.asInstanceOf[js.Dynamic].applyDynamic("createWorker")(scriptPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.wegameApi.WxWorker]
     
     // --网络
     /**
@@ -1804,7 +2110,7 @@ object global {
     /**
       * wx.getExtConfig 的同步版本。
       */
-    inline def getExtConfigSync(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtConfigSync")().asInstanceOf[js.Any]
+    inline def getExtConfigSync(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtConfigSync")().asInstanceOf[Any]
     
     // --文件系统
     inline def getFileSystemManager(): typings.wegameApi.FileSystemManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystemManager")().asInstanceOf[typings.wegameApi.FileSystemManager]
@@ -1820,7 +2126,7 @@ object global {
     /**
       * 获取全局唯一的游戏画面录制对象
       */
-    inline def getGameRecorder(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGameRecorder")().asInstanceOf[js.Any]
+    inline def getGameRecorder(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGameRecorder")().asInstanceOf[Any]
     
     /**
       * 在小游戏是通过群分享卡片打开的情况下，可以通过调用该接口获取群同玩成员的游戏数据。该接口只可在开放数据域下使用。
@@ -1869,7 +2175,7 @@ object global {
     /**
       * 获取可能对游戏感兴趣的未注册的好友名单。每次调用最多可获得 5 个好友，此接口只能在开放数据域中使用
       */
-    inline def getPotentialFriendList(callback: CallbacksWithType[List]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPotentialFriendList")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getPotentialFriendList(callback: CallbacksWithType[typings.wegameApi.anon.List]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPotentialFriendList")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // --录音
     inline def getRecorderManager(): typings.wegameApi.RecorderManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getRecorderManager")().asInstanceOf[typings.wegameApi.RecorderManager]
@@ -1914,7 +2220,7 @@ object global {
     /**
       * getStorage 的同步版本
       */
-    inline def getStorageSync(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorageSync")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getStorageSync(key: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorageSync")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     // --系统信息
     inline def getSystemInfo(cb: CallbacksWithType[SystemInfo]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemInfo")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -2069,7 +2375,7 @@ object global {
       * @param callback 之前添加过的监听回调函数，如果不指定，则清空所有
       */
     inline def offDeviceMotionChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offDeviceMotionChange")().asInstanceOf[Unit]
-    inline def offDeviceMotionChange(callback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offDeviceMotionChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def offDeviceMotionChange(callback: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offDeviceMotionChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 取消监听横竖屏切换事件
@@ -2082,7 +2388,7 @@ object global {
       * 取消监听陀螺仪数据变化事件。
       * @param callback 之前监听的回调函数
       */
-    inline def offGyroscopeChange(callback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offGyroscopeChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def offGyroscopeChange(callback: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offGyroscopeChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def offHide(cb: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offHide")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -2120,19 +2426,19 @@ object global {
       * 取消监听被动断开实时语音通话事件。
       * @param callback 之前监听的回调函数
       */
-    inline def offVoIPChatInterrupted(callback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offVoIPChatInterrupted")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def offVoIPChatInterrupted(callback: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offVoIPChatInterrupted")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 取消监听实时语音通话成员在线状态变化事件。
       * @param callback 之前监听的回调函数
       */
-    inline def offVoIPChatMembersChanged(callback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offVoIPChatMembersChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def offVoIPChatMembersChanged(callback: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offVoIPChatMembersChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 取消监听实时语音通话成员通话状态变化事件。
       * @param callback 之前监听的回调函数
       */
-    inline def offVoIPChatSpeakersChanged(callback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offVoIPChatSpeakersChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def offVoIPChatSpeakersChanged(callback: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offVoIPChatSpeakersChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 取消监听窗口尺寸变化事件
@@ -2221,7 +2527,7 @@ object global {
     /**
       * 监听主域发送的消息
       */
-    inline def onMessage(callback: js.Function1[/* data */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMessage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onMessage(callback: js.Function1[/* data */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMessage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听网络状态变化事件
@@ -2422,7 +2728,7 @@ object global {
       * @param key 本地缓存中指定的 key
       * @param data 需要存储的内容
       */
-    inline def setStorageSync(key: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStorageSync")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setStorageSync(key: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStorageSync")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * 对用户托管数据进行写数据操作，允许同时写多组 KV 数据。
@@ -2549,7 +2855,7 @@ object global {
       /**
         * 获取所有已搜索到的 iBeacon 设备
         */
-      inline def getBeacons(param: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBeacons")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def getBeacons(param: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBeacons")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       inline def getBluetoothAdapterState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBluetoothAdapterState")().asInstanceOf[Unit]
       
@@ -2562,12 +2868,12 @@ object global {
       /**
         * 取消监听 iBeacon 服务状态变化事件
         */
-      inline def offBeaconServiceChange(callback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offBeaconServiceChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def offBeaconServiceChange(callback: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offBeaconServiceChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * 取消监听 iBeacon 设备更新事件
         */
-      inline def offBeaconUpdate(callback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offBeaconUpdate")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def offBeaconUpdate(callback: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offBeaconUpdate")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       inline def onBLECharacteristicValueChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBLECharacteristicValueChange")().asInstanceOf[Unit]
       
@@ -2576,12 +2882,12 @@ object global {
       /**
         * 监听 iBeacon 服务状态变化事件，仅能注册一个监听
         */
-      inline def onBeaconServiceChange(callback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeaconServiceChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def onBeaconServiceChange(callback: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeaconServiceChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * 监听 iBeacon 设备更新事件，仅能注册一个监听
         */
-      inline def onBeaconUpdate(callback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeaconUpdate")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def onBeaconUpdate(callback: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeaconUpdate")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       inline def onBluetoothAdapterStateChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBluetoothAdapterStateChange")().asInstanceOf[Unit]
       
@@ -2594,7 +2900,7 @@ object global {
       /**
         * 开始搜索附近的 iBeacon 设备
         */
-      inline def startBeaconDiscovery(param: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startBeaconDiscovery")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def startBeaconDiscovery(param: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startBeaconDiscovery")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       inline def startBluetoothDevicesDiscovery(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startBluetoothDevicesDiscovery")().asInstanceOf[Unit]
       
@@ -2602,7 +2908,7 @@ object global {
       /**
         * 停止搜索附近的 iBeacon 设备
         */
-      inline def stopBeaconDiscovery(param: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopBeaconDiscovery")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def stopBeaconDiscovery(param: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopBeaconDiscovery")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       // --蓝牙（TODO）
       inline def stopBluetoothDevicesDiscovery(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopBluetoothDevicesDiscovery")().asInstanceOf[Unit]

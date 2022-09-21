@@ -10,10 +10,10 @@ Provides a method to inject and analyze web pages using aXe
 | ------------------ | :-------------: |
 | Full name          | axe-webdriverjs |
 | Keywords           | a11y, unit, testing, tdd, bdd, accessibility, aXe, selenium, webdriver, webdriverjs |
-| # releases         | 38 |
-| # dependents       | 22 |
-| # downloads        | 2516104 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 219605.0 |
+| # stars            | 128.0 |
 
 ## Links
 - [Homepage](https://github.com/dequelabs/axe-webdriverjs#readme)

@@ -8,5 +8,5 @@ object enableKeyOutputMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/EnableKeyOutput", "EnableKeyOutput")
   @js.native
-  val EnableKeyOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val EnableKeyOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetIdentityProviderByIdentifierRequest extends StObject {
   
   /**
-    * The identity provider ID.
+    * The IdP identifier.
     */
   var IdpIdentifier: IdpIdentifierType
   

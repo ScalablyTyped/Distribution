@@ -32,13 +32,13 @@ trait Global extends StObject {
   val AutoCorrectEmail: typings.activexWord.Word.AutoCorrect = js.native
   
   def BuildKeyCode(Arg1: WdKey): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: Unit, Arg4: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: js.Any, Arg4: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: Unit, Arg4: js.Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Any, Arg3: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Any, Arg3: Any, Arg4: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Any, Arg3: Unit, Arg4: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: Any, Arg4: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: Unit, Arg4: Any): Double = js.native
   
   val CaptionLabels: typings.activexWord.Word.CaptionLabels = js.native
   
@@ -48,18 +48,18 @@ trait Global extends StObject {
   
   def CheckSpelling(
     Word: String,
-    CustomDictionary: js.UndefOr[js.Any],
-    IgnoreUppercase: js.UndefOr[js.Any],
-    MainDictionary: js.UndefOr[js.Any],
-    CustomDictionary2: js.UndefOr[js.Any],
-    CustomDictionary3: js.UndefOr[js.Any],
-    CustomDictionary4: js.UndefOr[js.Any],
-    CustomDictionary5: js.UndefOr[js.Any],
-    CustomDictionary6: js.UndefOr[js.Any],
-    CustomDictionary7: js.UndefOr[js.Any],
-    CustomDictionary8: js.UndefOr[js.Any],
-    CustomDictionary9: js.UndefOr[js.Any],
-    CustomDictionary10: js.UndefOr[js.Any]
+    CustomDictionary: js.UndefOr[Any],
+    IgnoreUppercase: js.UndefOr[Any],
+    MainDictionary: js.UndefOr[Any],
+    CustomDictionary2: js.UndefOr[Any],
+    CustomDictionary3: js.UndefOr[Any],
+    CustomDictionary4: js.UndefOr[Any],
+    CustomDictionary5: js.UndefOr[Any],
+    CustomDictionary6: js.UndefOr[Any],
+    CustomDictionary7: js.UndefOr[Any],
+    CustomDictionary8: js.UndefOr[Any],
+    CustomDictionary9: js.UndefOr[Any],
+    CustomDictionary10: js.UndefOr[Any]
   ): Boolean = js.native
   
   def CleanString(String: String): String = js.native
@@ -73,7 +73,7 @@ trait Global extends StObject {
   
   val CustomDictionaries: Dictionaries = js.native
   
-  var CustomizationContext: js.Any = js.native
+  var CustomizationContext: Any = js.native
   
   def DDEExecute(Channel: Double, Command: String): Unit = js.native
   
@@ -94,44 +94,44 @@ trait Global extends StObject {
   val FileConverters: typings.activexWord.Word.FileConverters = js.native
   
   def FindKey(KeyCode: Double): KeyBinding = js.native
-  def FindKey(KeyCode: Double, KeyCode2: js.Any): KeyBinding = js.native
+  def FindKey(KeyCode: Double, KeyCode2: Any): KeyBinding = js.native
   
   val FontNames: typings.activexWord.Word.FontNames = js.native
   
   def GetSpellingSuggestions(
     Word: String,
-    CustomDictionary: js.UndefOr[js.Any],
-    IgnoreUppercase: js.UndefOr[js.Any],
-    MainDictionary: js.UndefOr[js.Any],
-    SuggestionMode: js.UndefOr[js.Any],
-    CustomDictionary2: js.UndefOr[js.Any],
-    CustomDictionary3: js.UndefOr[js.Any],
-    CustomDictionary4: js.UndefOr[js.Any],
-    CustomDictionary5: js.UndefOr[js.Any],
-    CustomDictionary6: js.UndefOr[js.Any],
-    CustomDictionary7: js.UndefOr[js.Any],
-    CustomDictionary8: js.UndefOr[js.Any],
-    CustomDictionary9: js.UndefOr[js.Any],
-    CustomDictionary10: js.UndefOr[js.Any]
+    CustomDictionary: js.UndefOr[Any],
+    IgnoreUppercase: js.UndefOr[Any],
+    MainDictionary: js.UndefOr[Any],
+    SuggestionMode: js.UndefOr[Any],
+    CustomDictionary2: js.UndefOr[Any],
+    CustomDictionary3: js.UndefOr[Any],
+    CustomDictionary4: js.UndefOr[Any],
+    CustomDictionary5: js.UndefOr[Any],
+    CustomDictionary6: js.UndefOr[Any],
+    CustomDictionary7: js.UndefOr[Any],
+    CustomDictionary8: js.UndefOr[Any],
+    CustomDictionary9: js.UndefOr[Any],
+    CustomDictionary10: js.UndefOr[Any]
   ): SpellingSuggestions = js.native
   
   val HangulHanjaDictionaries: HangulHanjaConversionDictionaries = js.native
   
-  def Help(HelpType: js.Any): Unit = js.native
+  def Help(HelpType: Any): Unit = js.native
   
   def InchesToPoints(Inches: Double): Double = js.native
   
-  def IsObjectValid(Object: js.Any): Boolean = js.native
+  def IsObjectValid(Object: Any): Boolean = js.native
   
   val IsSandboxed: Boolean = js.native
   
   val KeyBindings: typings.activexWord.Word.KeyBindings = js.native
   
   def KeyString(KeyCode: Double): String = js.native
-  def KeyString(KeyCode: Double, KeyCode2: js.Any): String = js.native
+  def KeyString(KeyCode: Double, KeyCode2: Any): String = js.native
   
   def KeysBoundTo(KeyCategory: WdKeyCategory, Command: String): typings.activexWord.Word.KeysBoundTo = js.native
-  def KeysBoundTo(KeyCategory: WdKeyCategory, Command: String, CommandParameter: js.Any): typings.activexWord.Word.KeysBoundTo = js.native
+  def KeysBoundTo(KeyCategory: WdKeyCategory, Command: String, CommandParameter: Any): typings.activexWord.Word.KeysBoundTo = js.native
   
   val LandscapeFontNames: typings.activexWord.Word.FontNames = js.native
   
@@ -143,7 +143,7 @@ trait Global extends StObject {
   
   val ListGalleries: typings.activexWord.Word.ListGalleries = js.native
   
-  val MacroContainer: js.Any = js.native
+  val MacroContainer: Any = js.native
   
   def MillimetersToPoints(Millimeters: Double): Double = js.native
   
@@ -155,12 +155,12 @@ trait Global extends StObject {
   
   val Options: typings.activexWord.Word.Options = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PicasToPoints(Picas: Double): Double = js.native
   
   def PixelsToPoints(Pixels: Double): Double = js.native
-  def PixelsToPoints(Pixels: Double, fVertical: js.Any): Double = js.native
+  def PixelsToPoints(Pixels: Double, fVertical: Any): Double = js.native
   
   def PointsToCentimeters(Points: Double): Double = js.native
   
@@ -173,7 +173,7 @@ trait Global extends StObject {
   def PointsToPicas(Points: Double): Double = js.native
   
   def PointsToPixels(Points: Double): Double = js.native
-  def PointsToPixels(Points: Double, fVertical: js.Any): Double = js.native
+  def PointsToPixels(Points: Double, fVertical: Any): Double = js.native
   
   val PortraitFontNames: typings.activexWord.Word.FontNames = js.native
   
@@ -184,7 +184,7 @@ trait Global extends StObject {
   val RecentFiles: typings.activexWord.Word.RecentFiles = js.native
   
   def Repeat(): Boolean = js.native
-  def Repeat(Times: js.Any): Boolean = js.native
+  def Repeat(Times: Any): Boolean = js.native
   
   val Selection: typings.activexWord.Word.Selection = js.native
   
@@ -193,7 +193,7 @@ trait Global extends StObject {
   val StatusBar: String = js.native
   
   def SynonymInfo(Word: String): typings.activexWord.Word.SynonymInfo = js.native
-  def SynonymInfo(Word: String, LanguageID: js.Any): typings.activexWord.Word.SynonymInfo = js.native
+  def SynonymInfo(Word: String, LanguageID: Any): typings.activexWord.Word.SynonymInfo = js.native
   
   val System: typings.activexWord.Word.System = js.native
   
@@ -205,7 +205,7 @@ trait Global extends StObject {
   
   val Windows: typings.activexWord.Word.Windows = js.native
   
-  val WordBasic: js.Any = js.native
+  val WordBasic: Any = js.native
   
   /* private */ @JSName("Word.Global_typekey")
   var WordDotGlobal_typekey: Global = js.native

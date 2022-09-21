@@ -9,7 +9,6 @@ import typings.relayRuntime.relayRuntimeTypesMod.RenderPolicy
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import typings.relayRuntime.relayRuntimeTypesMod.VariablesOf
 import typings.relayRuntime.relayStoreTypesMod.Environment
-import typings.std.Error
 import typings.std.Partial
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -18,17 +17,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object useRefetchableFragmentNodeMod {
   
-  @JSImport("react-relay/lib/relay-experimental/useRefetchableFragmentNode", JSImport.Namespace)
+  @JSImport("react-relay/relay-hooks/useRefetchableFragmentNode", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useRefetchableFragmentNode[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] | Null */](fragmentNode: ReaderFragment, parentFragmentRef: js.Any, componentDisplayName: String): // tslint:disable-next-line:no-unnecessary-generics
+  inline def useRefetchableFragmentNode[TQuery /* <: OperationType */, TKey /* <: KeyType[Any] | Null */](fragmentNode: ReaderFragment, parentFragmentRef: Any, componentDisplayName: String): // tslint:disable-next-line:no-unnecessary-generics
   ReturnTypeNode[TQuery, TKey, InternalOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragmentNode")(fragmentNode.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any], componentDisplayName.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line:no-unnecessary-generics
   ReturnTypeNode[TQuery, TKey, InternalOptions]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactRelay.anon.Environment
-    - typings.reactRelay.anon.RefetchVariables
+    - typings.reactRelay.anon.FetchPolicy
   */
   trait Action extends StObject
   object Action {
@@ -39,10 +38,10 @@ object useRefetchableFragmentNodeMod {
       __obj.asInstanceOf[typings.reactRelay.anon.Environment]
     }
     
-    inline def RefetchVariables(refetchVariables: Variables): typings.reactRelay.anon.RefetchVariables = {
+    inline def FetchPolicy(refetchVariables: Variables): typings.reactRelay.anon.FetchPolicy = {
       val __obj = js.Dynamic.literal(refetchVariables = refetchVariables.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("refetch")
-      __obj.asInstanceOf[typings.reactRelay.anon.RefetchVariables]
+      __obj.asInstanceOf[typings.reactRelay.anon.FetchPolicy]
     }
   }
   
@@ -94,7 +93,7 @@ object useRefetchableFragmentNodeMod {
     
     var fetchPolicy: js.UndefOr[FetchPolicy] = js.undefined
     
-    var onComplete: js.UndefOr[js.Function1[/* arg */ Error | Null, Unit]] = js.undefined
+    var onComplete: js.UndefOr[js.Function1[/* arg */ js.Error | Null, Unit]] = js.undefined
   }
   object Options {
     
@@ -109,7 +108,7 @@ object useRefetchableFragmentNodeMod {
       
       inline def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
       
-      inline def setOnComplete(value: /* arg */ Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: /* arg */ js.Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
       inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
@@ -119,7 +118,7 @@ object useRefetchableFragmentNodeMod {
     }
   }
   
-  type RefetchExact[TQuery /* <: OperationType */, TOptions] = js.Function1[/* data */ js.UndefOr[js.Any | Null], RefetchFnExact[TQuery, TOptions]]
+  type RefetchExact[TQuery /* <: OperationType */, TOptions] = js.Function1[/* data */ js.UndefOr[Any | Null], RefetchFnExact[TQuery, TOptions]]
   
   type RefetchExactDynamicResponse[TQuery /* <: OperationType */, TOptions] = ReturnType[RefetchExact[TQuery, TOptions]]
   
@@ -127,13 +126,13 @@ object useRefetchableFragmentNodeMod {
   
   type RefetchFnBase[TVars, TOptions] = js.Function2[/* vars */ TVars, /* options */ js.UndefOr[TOptions], Disposable]
   
-  type RefetchFnDynamic[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] | Null */, TOptions] = (RefetchInexactDynamicResponse[TQuery, TOptions]) & (RefetchExactDynamicResponse[TQuery, TOptions])
+  type RefetchFnDynamic[TQuery /* <: OperationType */, TKey /* <: KeyType[Any] | Null */, TOptions] = (RefetchInexactDynamicResponse[TQuery, TOptions]) & (RefetchExactDynamicResponse[TQuery, TOptions])
   
   type RefetchFnExact[TQuery /* <: OperationType */, TOptions] = RefetchFnBase[VariablesOf[TQuery], TOptions]
   
   type RefetchFnInexact[TQuery /* <: OperationType */, TOptions] = RefetchFnBase[Partial[VariablesOf[TQuery]], TOptions]
   
-  type RefetchInexact[TQuery /* <: OperationType */, TOptions] = js.Function1[/* data */ js.UndefOr[js.Any], RefetchFnInexact[TQuery, TOptions]]
+  type RefetchInexact[TQuery /* <: OperationType */, TOptions] = js.Function1[/* data */ js.UndefOr[Any], RefetchFnInexact[TQuery, TOptions]]
   
   type RefetchInexactDynamicResponse[TQuery /* <: OperationType */, TOptions] = ReturnType[RefetchInexact[TQuery, TOptions]]
   
@@ -145,7 +144,7 @@ object useRefetchableFragmentNodeMod {
     
     var mirroredFragmentIdentifier: String
     
-    var onComplete: js.UndefOr[js.Function1[/* arg */ Error | Null, Unit]] = js.undefined
+    var onComplete: js.UndefOr[js.Function1[/* arg */ js.Error | Null, Unit]] = js.undefined
     
     var refetchEnvironment: js.UndefOr[Environment | Null] = js.undefined
     
@@ -172,7 +171,7 @@ object useRefetchableFragmentNodeMod {
       
       inline def setMirroredFragmentIdentifier(value: String): Self = StObject.set(x, "mirroredFragmentIdentifier", value.asInstanceOf[js.Any])
       
-      inline def setOnComplete(value: /* arg */ Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: /* arg */ js.Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
       inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
@@ -196,40 +195,40 @@ object useRefetchableFragmentNodeMod {
     }
   }
   
-  trait ReturnTypeNode[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] | Null */, TOptions] extends StObject {
+  trait ReturnTypeNode[TQuery /* <: OperationType */, TKey /* <: KeyType[Any] | Null */, TOptions] extends StObject {
     
     def disableStoreUpdates(): Unit
     
     def enableStoreUpdates(): Unit
     
-    var fragmentData: js.Any
+    var fragmentData: Any
     
-    var fragmentRef: js.Any
+    var fragmentRef: Any
     
     var refetch: RefetchFnDynamic[TQuery, TKey, TOptions]
   }
   object ReturnTypeNode {
     
-    inline def apply[TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] | Null */, TOptions](
+    inline def apply[TQuery /* <: OperationType */, TKey /* <: KeyType[Any] | Null */, TOptions](
       disableStoreUpdates: () => Unit,
       enableStoreUpdates: () => Unit,
-      fragmentData: js.Any,
-      fragmentRef: js.Any,
+      fragmentData: Any,
+      fragmentRef: Any,
       refetch: RefetchFnDynamic[TQuery, TKey, TOptions]
     ): ReturnTypeNode[TQuery, TKey, TOptions] = {
       val __obj = js.Dynamic.literal(disableStoreUpdates = js.Any.fromFunction0(disableStoreUpdates), enableStoreUpdates = js.Any.fromFunction0(enableStoreUpdates), fragmentData = fragmentData.asInstanceOf[js.Any], fragmentRef = fragmentRef.asInstanceOf[js.Any], refetch = refetch.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReturnTypeNode[TQuery, TKey, TOptions]]
     }
     
-    extension [Self <: ReturnTypeNode[?, ?, ?], TQuery /* <: OperationType */, TKey /* <: KeyType[js.Any] | Null */, TOptions](x: Self & (ReturnTypeNode[TQuery, TKey, TOptions])) {
+    extension [Self <: ReturnTypeNode[?, ?, ?], TQuery /* <: OperationType */, TKey /* <: KeyType[Any] | Null */, TOptions](x: Self & (ReturnTypeNode[TQuery, TKey, TOptions])) {
       
       inline def setDisableStoreUpdates(value: () => Unit): Self = StObject.set(x, "disableStoreUpdates", js.Any.fromFunction0(value))
       
       inline def setEnableStoreUpdates(value: () => Unit): Self = StObject.set(x, "enableStoreUpdates", js.Any.fromFunction0(value))
       
-      inline def setFragmentData(value: js.Any): Self = StObject.set(x, "fragmentData", value.asInstanceOf[js.Any])
+      inline def setFragmentData(value: Any): Self = StObject.set(x, "fragmentData", value.asInstanceOf[js.Any])
       
-      inline def setFragmentRef(value: js.Any): Self = StObject.set(x, "fragmentRef", value.asInstanceOf[js.Any])
+      inline def setFragmentRef(value: Any): Self = StObject.set(x, "fragmentRef", value.asInstanceOf[js.Any])
       
       inline def setRefetch(value: RefetchFnDynamic[TQuery, TKey, TOptions]): Self = StObject.set(x, "refetch", value.asInstanceOf[js.Any])
     }

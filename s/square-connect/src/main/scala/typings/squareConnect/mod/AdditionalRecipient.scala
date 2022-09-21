@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "AdditionalRecipient")
 @js.native
-class AdditionalRecipient () extends StObject {
+open class AdditionalRecipient () extends StObject {
   
   /**
     * The amount of money distributed to the recipient.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for estree-walker
 
-Typings are for version 2.0.1
+Typings are for version 3.0.1
 
 ## Library description:
 Traverse an ESTree-compliant AST
@@ -10,10 +10,10 @@ Traverse an ESTree-compliant AST
 | ------------------ | :-------------: |
 | Full name          | estree-walker |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 176 |
-| # downloads        | 130598829 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 5.1725808E7 |
+| # stars            | 257.0 |
 
 ## Links
 - [Homepage](https://github.com/Rich-Harris/estree-walker#readme)

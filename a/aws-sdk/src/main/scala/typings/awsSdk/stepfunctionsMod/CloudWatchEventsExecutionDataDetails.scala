@@ -9,7 +9,7 @@ trait CloudWatchEventsExecutionDataDetails extends StObject {
   /**
     * Indicates whether input or output was included in the response. Always true for API calls. 
     */
-  var included: js.UndefOr[typings.awsSdk.stepfunctionsMod.included] = js.undefined
+  var included: js.UndefOr[includedDetails] = js.undefined
 }
 object CloudWatchEventsExecutionDataDetails {
   
@@ -20,7 +20,7 @@ object CloudWatchEventsExecutionDataDetails {
   
   extension [Self <: CloudWatchEventsExecutionDataDetails](x: Self) {
     
-    inline def setIncluded(value: included): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
+    inline def setIncluded(value: includedDetails): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
     
     inline def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
   }

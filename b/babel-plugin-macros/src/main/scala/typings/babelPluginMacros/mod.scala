@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(babel: TypeofBabel, options: js.Any): PluginObj[PluginPass] = (^.asInstanceOf[js.Dynamic].apply(babel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PluginObj[PluginPass]]
+  inline def apply(babel: TypeofBabel, options: Any): PluginObj[PluginPass] = (^.asInstanceOf[js.Dynamic].apply(babel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PluginObj[PluginPass]]
   
   @JSImport("babel-plugin-macros", JSImport.Namespace)
   @js.native
@@ -22,19 +22,21 @@ object mod {
   
   @JSImport("babel-plugin-macros", "MacroError")
   @js.native
-  class MacroError ()
+  open class MacroError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
-  inline def createMacro(handler: MacroHandler): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createMacro")(handler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def createMacro(handler: MacroHandler, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createMacro")(handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createMacro(handler: MacroHandler): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createMacro")(handler.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def createMacro(handler: MacroHandler, options: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createMacro")(handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   type MacroHandler = js.Function1[/* params */ MacroParams, Unit]
   
@@ -42,7 +44,7 @@ object mod {
     
     var babel: TypeofBabel
     
-    var config: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var config: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var references: defaultArrayNodePathNodeR
     
@@ -59,7 +61,7 @@ object mod {
       
       inline def setBabel(value: TypeofBabel): Self = StObject.set(x, "babel", value.asInstanceOf[js.Any])
       
-      inline def setConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: StringDictionary[Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "globby" : "11.0.1"
+      "globby" : "13.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "globby" : "11.0.1"
+      "globby" : "13.1.2"
     }
   ],
   "compile-devDependencies" : [

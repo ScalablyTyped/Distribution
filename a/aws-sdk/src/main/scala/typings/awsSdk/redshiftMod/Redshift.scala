@@ -34,14 +34,42 @@ trait Redshift extends Service {
   ): Request[AcceptReservedNodeExchangeOutputMessage, AWSError] = js.native
   
   /**
-    * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS Region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
+    * Adds a partner integration to a cluster. This operation authorizes a partner to push status updates for the specified database. To complete the integration, you also set up the integration on the partner website.
+    */
+  def addPartner(): Request[PartnerIntegrationOutputMessage, AWSError] = js.native
+  def addPartner(callback: js.Function2[/* err */ AWSError, /* data */ PartnerIntegrationOutputMessage, Unit]): Request[PartnerIntegrationOutputMessage, AWSError] = js.native
+  /**
+    * Adds a partner integration to a cluster. This operation authorizes a partner to push status updates for the specified database. To complete the integration, you also set up the integration on the partner website.
+    */
+  def addPartner(params: PartnerIntegrationInputMessage): Request[PartnerIntegrationOutputMessage, AWSError] = js.native
+  def addPartner(
+    params: PartnerIntegrationInputMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ PartnerIntegrationOutputMessage, Unit]
+  ): Request[PartnerIntegrationOutputMessage, AWSError] = js.native
+  
+  /**
+    * From a datashare consumer account, associates a datashare with the account (AssociateEntireAccount) or the specified namespace (ConsumerArn). If you make this association, the consumer can consume the datashare.
+    */
+  def associateDataShareConsumer(): Request[DataShare, AWSError] = js.native
+  def associateDataShareConsumer(callback: js.Function2[/* err */ AWSError, /* data */ DataShare, Unit]): Request[DataShare, AWSError] = js.native
+  /**
+    * From a datashare consumer account, associates a datashare with the account (AssociateEntireAccount) or the specified namespace (ConsumerArn). If you make this association, the consumer can consume the datashare.
+    */
+  def associateDataShareConsumer(params: AssociateDataShareConsumerMessage): Request[DataShare, AWSError] = js.native
+  def associateDataShareConsumer(
+    params: AssociateDataShareConsumerMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DataShare, Unit]
+  ): Request[DataShare, AWSError] = js.native
+  
+  /**
+    * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same Amazon Web Services Region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
     */
   def authorizeClusterSecurityGroupIngress(): Request[AuthorizeClusterSecurityGroupIngressResult, AWSError] = js.native
   def authorizeClusterSecurityGroupIngress(
     callback: js.Function2[/* err */ AWSError, /* data */ AuthorizeClusterSecurityGroupIngressResult, Unit]
   ): Request[AuthorizeClusterSecurityGroupIngressResult, AWSError] = js.native
   /**
-    * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS Region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
+    * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same Amazon Web Services Region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
     */
   def authorizeClusterSecurityGroupIngress(params: AuthorizeClusterSecurityGroupIngressMessage): Request[AuthorizeClusterSecurityGroupIngressResult, AWSError] = js.native
   def authorizeClusterSecurityGroupIngress(
@@ -50,12 +78,40 @@ trait Redshift extends Service {
   ): Request[AuthorizeClusterSecurityGroupIngressResult, AWSError] = js.native
   
   /**
-    * Authorizes the specified AWS customer account to restore the specified snapshot.  For more information about working with snapshots, go to Amazon Redshift Snapshots in the Amazon Redshift Cluster Management Guide.
+    * From a data producer account, authorizes the sharing of a datashare with one or more consumer accounts or managing entities. To authorize a datashare for a data consumer, the producer account must have the correct access permissions.
+    */
+  def authorizeDataShare(): Request[DataShare, AWSError] = js.native
+  def authorizeDataShare(callback: js.Function2[/* err */ AWSError, /* data */ DataShare, Unit]): Request[DataShare, AWSError] = js.native
+  /**
+    * From a data producer account, authorizes the sharing of a datashare with one or more consumer accounts or managing entities. To authorize a datashare for a data consumer, the producer account must have the correct access permissions.
+    */
+  def authorizeDataShare(params: AuthorizeDataShareMessage): Request[DataShare, AWSError] = js.native
+  def authorizeDataShare(
+    params: AuthorizeDataShareMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DataShare, Unit]
+  ): Request[DataShare, AWSError] = js.native
+  
+  /**
+    * Grants access to a cluster.
+    */
+  def authorizeEndpointAccess(): Request[EndpointAuthorization, AWSError] = js.native
+  def authorizeEndpointAccess(callback: js.Function2[/* err */ AWSError, /* data */ EndpointAuthorization, Unit]): Request[EndpointAuthorization, AWSError] = js.native
+  /**
+    * Grants access to a cluster.
+    */
+  def authorizeEndpointAccess(params: AuthorizeEndpointAccessMessage): Request[EndpointAuthorization, AWSError] = js.native
+  def authorizeEndpointAccess(
+    params: AuthorizeEndpointAccessMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ EndpointAuthorization, Unit]
+  ): Request[EndpointAuthorization, AWSError] = js.native
+  
+  /**
+    * Authorizes the specified Amazon Web Services account to restore the specified snapshot.  For more information about working with snapshots, go to Amazon Redshift Snapshots in the Amazon Redshift Cluster Management Guide.
     */
   def authorizeSnapshotAccess(): Request[AuthorizeSnapshotAccessResult, AWSError] = js.native
   def authorizeSnapshotAccess(callback: js.Function2[/* err */ AWSError, /* data */ AuthorizeSnapshotAccessResult, Unit]): Request[AuthorizeSnapshotAccessResult, AWSError] = js.native
   /**
-    * Authorizes the specified AWS customer account to restore the specified snapshot.  For more information about working with snapshots, go to Amazon Redshift Snapshots in the Amazon Redshift Cluster Management Guide.
+    * Authorizes the specified Amazon Web Services account to restore the specified snapshot.  For more information about working with snapshots, go to Amazon Redshift Snapshots in the Amazon Redshift Cluster Management Guide.
     */
   def authorizeSnapshotAccess(params: AuthorizeSnapshotAccessMessage): Request[AuthorizeSnapshotAccessResult, AWSError] = js.native
   def authorizeSnapshotAccess(
@@ -123,6 +179,20 @@ trait Redshift extends Service {
     params: CopyClusterSnapshotMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CopyClusterSnapshotResult, Unit]
   ): Request[CopyClusterSnapshotResult, AWSError] = js.native
+  
+  /**
+    * Creates an authentication profile with the specified parameters.
+    */
+  def createAuthenticationProfile(): Request[CreateAuthenticationProfileResult, AWSError] = js.native
+  def createAuthenticationProfile(callback: js.Function2[/* err */ AWSError, /* data */ CreateAuthenticationProfileResult, Unit]): Request[CreateAuthenticationProfileResult, AWSError] = js.native
+  /**
+    * Creates an authentication profile with the specified parameters.
+    */
+  def createAuthenticationProfile(params: CreateAuthenticationProfileMessage): Request[CreateAuthenticationProfileResult, AWSError] = js.native
+  def createAuthenticationProfile(
+    params: CreateAuthenticationProfileMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateAuthenticationProfileResult, Unit]
+  ): Request[CreateAuthenticationProfileResult, AWSError] = js.native
   
   /**
     * Creates a new cluster with the specified parameters. To create a cluster in Virtual Private Cloud (VPC), you must provide a cluster subnet group name. The cluster subnet group identifies the subnets of your VPC that Amazon Redshift uses when creating the cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
@@ -195,12 +265,26 @@ trait Redshift extends Service {
   ): Request[CreateClusterSubnetGroupResult, AWSError] = js.native
   
   /**
-    * Creates an Amazon Redshift event notification subscription. This action requires an ARN (Amazon Resource Name) of an Amazon SNS topic created by either the Amazon Redshift console, the Amazon SNS console, or the Amazon SNS API. To obtain an ARN with Amazon SNS, you must create a topic in Amazon SNS and subscribe to the topic. The ARN is displayed in the SNS console. You can specify the source type, and lists of Amazon Redshift source IDs, event categories, and event severities. Notifications will be sent for all events you want that match those criteria. For example, you can specify source type = cluster, source ID = my-cluster-1 and mycluster2, event categories = Availability, Backup, and severity = ERROR. The subscription will only send notifications for those ERROR events in the Availability and Backup categories for the specified clusters. If you specify both the source type and source IDs, such as source type = cluster and source identifier = my-cluster-1, notifications will be sent for all the cluster events for my-cluster-1. If you specify a source type but do not specify a source identifier, you will receive notice of the events for the objects of that type in your AWS account. If you do not specify either the SourceType nor the SourceIdentifier, you will be notified of events generated from all Amazon Redshift sources belonging to your AWS account. You must specify a source type if you specify a source ID.
+    * Creates a Redshift-managed VPC endpoint.
+    */
+  def createEndpointAccess(): Request[EndpointAccess, AWSError] = js.native
+  def createEndpointAccess(callback: js.Function2[/* err */ AWSError, /* data */ EndpointAccess, Unit]): Request[EndpointAccess, AWSError] = js.native
+  /**
+    * Creates a Redshift-managed VPC endpoint.
+    */
+  def createEndpointAccess(params: CreateEndpointAccessMessage): Request[EndpointAccess, AWSError] = js.native
+  def createEndpointAccess(
+    params: CreateEndpointAccessMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ EndpointAccess, Unit]
+  ): Request[EndpointAccess, AWSError] = js.native
+  
+  /**
+    * Creates an Amazon Redshift event notification subscription. This action requires an ARN (Amazon Resource Name) of an Amazon SNS topic created by either the Amazon Redshift console, the Amazon SNS console, or the Amazon SNS API. To obtain an ARN with Amazon SNS, you must create a topic in Amazon SNS and subscribe to the topic. The ARN is displayed in the SNS console. You can specify the source type, and lists of Amazon Redshift source IDs, event categories, and event severities. Notifications will be sent for all events you want that match those criteria. For example, you can specify source type = cluster, source ID = my-cluster-1 and mycluster2, event categories = Availability, Backup, and severity = ERROR. The subscription will only send notifications for those ERROR events in the Availability and Backup categories for the specified clusters. If you specify both the source type and source IDs, such as source type = cluster and source identifier = my-cluster-1, notifications will be sent for all the cluster events for my-cluster-1. If you specify a source type but do not specify a source identifier, you will receive notice of the events for the objects of that type in your Amazon Web Services account. If you do not specify either the SourceType nor the SourceIdentifier, you will be notified of events generated from all Amazon Redshift sources belonging to your Amazon Web Services account. You must specify a source type if you specify a source ID.
     */
   def createEventSubscription(): Request[CreateEventSubscriptionResult, AWSError] = js.native
   def createEventSubscription(callback: js.Function2[/* err */ AWSError, /* data */ CreateEventSubscriptionResult, Unit]): Request[CreateEventSubscriptionResult, AWSError] = js.native
   /**
-    * Creates an Amazon Redshift event notification subscription. This action requires an ARN (Amazon Resource Name) of an Amazon SNS topic created by either the Amazon Redshift console, the Amazon SNS console, or the Amazon SNS API. To obtain an ARN with Amazon SNS, you must create a topic in Amazon SNS and subscribe to the topic. The ARN is displayed in the SNS console. You can specify the source type, and lists of Amazon Redshift source IDs, event categories, and event severities. Notifications will be sent for all events you want that match those criteria. For example, you can specify source type = cluster, source ID = my-cluster-1 and mycluster2, event categories = Availability, Backup, and severity = ERROR. The subscription will only send notifications for those ERROR events in the Availability and Backup categories for the specified clusters. If you specify both the source type and source IDs, such as source type = cluster and source identifier = my-cluster-1, notifications will be sent for all the cluster events for my-cluster-1. If you specify a source type but do not specify a source identifier, you will receive notice of the events for the objects of that type in your AWS account. If you do not specify either the SourceType nor the SourceIdentifier, you will be notified of events generated from all Amazon Redshift sources belonging to your AWS account. You must specify a source type if you specify a source ID.
+    * Creates an Amazon Redshift event notification subscription. This action requires an ARN (Amazon Resource Name) of an Amazon SNS topic created by either the Amazon Redshift console, the Amazon SNS console, or the Amazon SNS API. To obtain an ARN with Amazon SNS, you must create a topic in Amazon SNS and subscribe to the topic. The ARN is displayed in the SNS console. You can specify the source type, and lists of Amazon Redshift source IDs, event categories, and event severities. Notifications will be sent for all events you want that match those criteria. For example, you can specify source type = cluster, source ID = my-cluster-1 and mycluster2, event categories = Availability, Backup, and severity = ERROR. The subscription will only send notifications for those ERROR events in the Availability and Backup categories for the specified clusters. If you specify both the source type and source IDs, such as source type = cluster and source identifier = my-cluster-1, notifications will be sent for all the cluster events for my-cluster-1. If you specify a source type but do not specify a source identifier, you will receive notice of the events for the objects of that type in your Amazon Web Services account. If you do not specify either the SourceType nor the SourceIdentifier, you will be notified of events generated from all Amazon Redshift sources belonging to your Amazon Web Services account. You must specify a source type if you specify a source ID.
     */
   def createEventSubscription(params: CreateEventSubscriptionMessage): Request[CreateEventSubscriptionResult, AWSError] = js.native
   def createEventSubscription(
@@ -251,12 +335,12 @@ trait Redshift extends Service {
   ): Request[ScheduledAction, AWSError] = js.native
   
   /**
-    * Creates a snapshot copy grant that permits Amazon Redshift to use a customer master key (CMK) from AWS Key Management Service (AWS KMS) to encrypt copied snapshots in a destination region.  For more information about managing snapshot copy grants, go to Amazon Redshift Database Encryption in the Amazon Redshift Cluster Management Guide. 
+    * Creates a snapshot copy grant that permits Amazon Redshift to use an encrypted symmetric key from Key Management Service (KMS) to encrypt copied snapshots in a destination region.  For more information about managing snapshot copy grants, go to Amazon Redshift Database Encryption in the Amazon Redshift Cluster Management Guide. 
     */
   def createSnapshotCopyGrant(): Request[CreateSnapshotCopyGrantResult, AWSError] = js.native
   def createSnapshotCopyGrant(callback: js.Function2[/* err */ AWSError, /* data */ CreateSnapshotCopyGrantResult, Unit]): Request[CreateSnapshotCopyGrantResult, AWSError] = js.native
   /**
-    * Creates a snapshot copy grant that permits Amazon Redshift to use a customer master key (CMK) from AWS Key Management Service (AWS KMS) to encrypt copied snapshots in a destination region.  For more information about managing snapshot copy grants, go to Amazon Redshift Database Encryption in the Amazon Redshift Cluster Management Guide. 
+    * Creates a snapshot copy grant that permits Amazon Redshift to use an encrypted symmetric key from Key Management Service (KMS) to encrypt copied snapshots in a destination region.  For more information about managing snapshot copy grants, go to Amazon Redshift Database Encryption in the Amazon Redshift Cluster Management Guide. 
     */
   def createSnapshotCopyGrant(params: CreateSnapshotCopyGrantMessage): Request[CreateSnapshotCopyGrantResult, AWSError] = js.native
   def createSnapshotCopyGrant(
@@ -302,6 +386,34 @@ trait Redshift extends Service {
     params: CreateUsageLimitMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ UsageLimit, Unit]
   ): Request[UsageLimit, AWSError] = js.native
+  
+  /**
+    * From a datashare producer account, removes authorization from the specified datashare. 
+    */
+  def deauthorizeDataShare(): Request[DataShare, AWSError] = js.native
+  def deauthorizeDataShare(callback: js.Function2[/* err */ AWSError, /* data */ DataShare, Unit]): Request[DataShare, AWSError] = js.native
+  /**
+    * From a datashare producer account, removes authorization from the specified datashare. 
+    */
+  def deauthorizeDataShare(params: DeauthorizeDataShareMessage): Request[DataShare, AWSError] = js.native
+  def deauthorizeDataShare(
+    params: DeauthorizeDataShareMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DataShare, Unit]
+  ): Request[DataShare, AWSError] = js.native
+  
+  /**
+    * Deletes an authentication profile.
+    */
+  def deleteAuthenticationProfile(): Request[DeleteAuthenticationProfileResult, AWSError] = js.native
+  def deleteAuthenticationProfile(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAuthenticationProfileResult, Unit]): Request[DeleteAuthenticationProfileResult, AWSError] = js.native
+  /**
+    * Deletes an authentication profile.
+    */
+  def deleteAuthenticationProfile(params: DeleteAuthenticationProfileMessage): Request[DeleteAuthenticationProfileResult, AWSError] = js.native
+  def deleteAuthenticationProfile(
+    params: DeleteAuthenticationProfileMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteAuthenticationProfileResult, Unit]
+  ): Request[DeleteAuthenticationProfileResult, AWSError] = js.native
   
   /**
     * Deletes a previously provisioned cluster without its final snapshot being created. A successful response from the web service indicates that the request was received correctly. Use DescribeClusters to monitor the status of the deletion. The delete operation cannot be canceled or reverted once submitted. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide. If you want to shut down the cluster and retain it for future use, set SkipFinalClusterSnapshot to false and specify a name for FinalClusterSnapshotIdentifier. You can later restore this snapshot to resume using the cluster. If a final cluster snapshot is requested, the status of the cluster will be "final-snapshot" while the snapshot is being taken, then it's "deleting" once Amazon Redshift begins deleting the cluster.   For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
@@ -374,6 +486,20 @@ trait Redshift extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Deletes a Redshift-managed VPC endpoint.
+    */
+  def deleteEndpointAccess(): Request[EndpointAccess, AWSError] = js.native
+  def deleteEndpointAccess(callback: js.Function2[/* err */ AWSError, /* data */ EndpointAccess, Unit]): Request[EndpointAccess, AWSError] = js.native
+  /**
+    * Deletes a Redshift-managed VPC endpoint.
+    */
+  def deleteEndpointAccess(params: DeleteEndpointAccessMessage): Request[EndpointAccess, AWSError] = js.native
+  def deleteEndpointAccess(
+    params: DeleteEndpointAccessMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ EndpointAccess, Unit]
+  ): Request[EndpointAccess, AWSError] = js.native
+  
+  /**
     * Deletes an Amazon Redshift event notification subscription.
     */
   def deleteEventSubscription(): Request[js.Object, AWSError] = js.native
@@ -414,6 +540,20 @@ trait Redshift extends Service {
     params: DeleteHsmConfigurationMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes a partner integration from a cluster. Data can still flow to the cluster until the integration is deleted at the partner's website.
+    */
+  def deletePartner(): Request[PartnerIntegrationOutputMessage, AWSError] = js.native
+  def deletePartner(callback: js.Function2[/* err */ AWSError, /* data */ PartnerIntegrationOutputMessage, Unit]): Request[PartnerIntegrationOutputMessage, AWSError] = js.native
+  /**
+    * Deletes a partner integration from a cluster. Data can still flow to the cluster until the integration is deleted at the partner's website.
+    */
+  def deletePartner(params: PartnerIntegrationInputMessage): Request[PartnerIntegrationOutputMessage, AWSError] = js.native
+  def deletePartner(
+    params: PartnerIntegrationInputMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ PartnerIntegrationOutputMessage, Unit]
+  ): Request[PartnerIntegrationOutputMessage, AWSError] = js.native
   
   /**
     * Deletes a scheduled action. 
@@ -497,6 +637,20 @@ trait Redshift extends Service {
   ): Request[AccountAttributeList, AWSError] = js.native
   
   /**
+    * Describes an authentication profile.
+    */
+  def describeAuthenticationProfiles(): Request[DescribeAuthenticationProfilesResult, AWSError] = js.native
+  def describeAuthenticationProfiles(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAuthenticationProfilesResult, Unit]): Request[DescribeAuthenticationProfilesResult, AWSError] = js.native
+  /**
+    * Describes an authentication profile.
+    */
+  def describeAuthenticationProfiles(params: DescribeAuthenticationProfilesMessage): Request[DescribeAuthenticationProfilesResult, AWSError] = js.native
+  def describeAuthenticationProfiles(
+    params: DescribeAuthenticationProfilesMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAuthenticationProfilesResult, Unit]
+  ): Request[DescribeAuthenticationProfilesResult, AWSError] = js.native
+  
+  /**
     * Returns an array of ClusterDbRevision objects.
     */
   def describeClusterDbRevisions(): Request[ClusterDbRevisionsMessage, AWSError] = js.native
@@ -553,12 +707,12 @@ trait Redshift extends Service {
   ): Request[ClusterSecurityGroupMessage, AWSError] = js.native
   
   /**
-    * Returns one or more snapshot objects, which contain metadata about your cluster snapshots. By default, this operation returns information about all snapshots of all clusters that are owned by you AWS customer account. No information is returned for snapshots owned by inactive AWS customer accounts. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all snapshots that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all snapshots that have any combination of those values are returned. Only snapshots that you own are returned in the response; shared snapshots are not returned with the tag key and tag value request parameters. If both tag keys and values are omitted from the request, snapshots are returned regardless of whether they have tag keys or values associated with them.
+    * Returns one or more snapshot objects, which contain metadata about your cluster snapshots. By default, this operation returns information about all snapshots of all clusters that are owned by your Amazon Web Services account. No information is returned for snapshots owned by inactive Amazon Web Services accounts. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all snapshots that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all snapshots that have any combination of those values are returned. Only snapshots that you own are returned in the response; shared snapshots are not returned with the tag key and tag value request parameters. If both tag keys and values are omitted from the request, snapshots are returned regardless of whether they have tag keys or values associated with them.
     */
   def describeClusterSnapshots(): Request[SnapshotMessage, AWSError] = js.native
   def describeClusterSnapshots(callback: js.Function2[/* err */ AWSError, /* data */ SnapshotMessage, Unit]): Request[SnapshotMessage, AWSError] = js.native
   /**
-    * Returns one or more snapshot objects, which contain metadata about your cluster snapshots. By default, this operation returns information about all snapshots of all clusters that are owned by you AWS customer account. No information is returned for snapshots owned by inactive AWS customer accounts. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all snapshots that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all snapshots that have any combination of those values are returned. Only snapshots that you own are returned in the response; shared snapshots are not returned with the tag key and tag value request parameters. If both tag keys and values are omitted from the request, snapshots are returned regardless of whether they have tag keys or values associated with them.
+    * Returns one or more snapshot objects, which contain metadata about your cluster snapshots. By default, this operation returns information about all snapshots of all clusters that are owned by your Amazon Web Services account. No information is returned for snapshots owned by inactive Amazon Web Services accounts. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all snapshots that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all snapshots that have any combination of those values are returned. Only snapshots that you own are returned in the response; shared snapshots are not returned with the tag key and tag value request parameters. If both tag keys and values are omitted from the request, snapshots are returned regardless of whether they have tag keys or values associated with them.
     */
   def describeClusterSnapshots(params: DescribeClusterSnapshotsMessage): Request[SnapshotMessage, AWSError] = js.native
   def describeClusterSnapshots(
@@ -567,12 +721,12 @@ trait Redshift extends Service {
   ): Request[SnapshotMessage, AWSError] = js.native
   
   /**
-    * Returns one or more cluster subnet group objects, which contain metadata about your cluster subnet groups. By default, this operation returns information about all cluster subnet groups that are defined in you AWS account. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all subnet groups that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all subnet groups that have any combination of those values are returned. If both tag keys and values are omitted from the request, subnet groups are returned regardless of whether they have tag keys or values associated with them.
+    * Returns one or more cluster subnet group objects, which contain metadata about your cluster subnet groups. By default, this operation returns information about all cluster subnet groups that are defined in your Amazon Web Services account. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all subnet groups that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all subnet groups that have any combination of those values are returned. If both tag keys and values are omitted from the request, subnet groups are returned regardless of whether they have tag keys or values associated with them.
     */
   def describeClusterSubnetGroups(): Request[ClusterSubnetGroupMessage, AWSError] = js.native
   def describeClusterSubnetGroups(callback: js.Function2[/* err */ AWSError, /* data */ ClusterSubnetGroupMessage, Unit]): Request[ClusterSubnetGroupMessage, AWSError] = js.native
   /**
-    * Returns one or more cluster subnet group objects, which contain metadata about your cluster subnet groups. By default, this operation returns information about all cluster subnet groups that are defined in you AWS account. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all subnet groups that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all subnet groups that have any combination of those values are returned. If both tag keys and values are omitted from the request, subnet groups are returned regardless of whether they have tag keys or values associated with them.
+    * Returns one or more cluster subnet group objects, which contain metadata about your cluster subnet groups. By default, this operation returns information about all cluster subnet groups that are defined in your Amazon Web Services account. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all subnet groups that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all subnet groups that have any combination of those values are returned. If both tag keys and values are omitted from the request, subnet groups are returned regardless of whether they have tag keys or values associated with them.
     */
   def describeClusterSubnetGroups(params: DescribeClusterSubnetGroupsMessage): Request[ClusterSubnetGroupMessage, AWSError] = js.native
   def describeClusterSubnetGroups(
@@ -623,6 +777,48 @@ trait Redshift extends Service {
   ): Request[ClustersMessage, AWSError] = js.native
   
   /**
+    * Shows the status of any inbound or outbound datashares available in the specified account.
+    */
+  def describeDataShares(): Request[DescribeDataSharesResult, AWSError] = js.native
+  def describeDataShares(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDataSharesResult, Unit]): Request[DescribeDataSharesResult, AWSError] = js.native
+  /**
+    * Shows the status of any inbound or outbound datashares available in the specified account.
+    */
+  def describeDataShares(params: DescribeDataSharesMessage): Request[DescribeDataSharesResult, AWSError] = js.native
+  def describeDataShares(
+    params: DescribeDataSharesMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDataSharesResult, Unit]
+  ): Request[DescribeDataSharesResult, AWSError] = js.native
+  
+  /**
+    * Returns a list of datashares where the account identifier being called is a consumer account identifier.
+    */
+  def describeDataSharesForConsumer(): Request[DescribeDataSharesForConsumerResult, AWSError] = js.native
+  def describeDataSharesForConsumer(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDataSharesForConsumerResult, Unit]): Request[DescribeDataSharesForConsumerResult, AWSError] = js.native
+  /**
+    * Returns a list of datashares where the account identifier being called is a consumer account identifier.
+    */
+  def describeDataSharesForConsumer(params: DescribeDataSharesForConsumerMessage): Request[DescribeDataSharesForConsumerResult, AWSError] = js.native
+  def describeDataSharesForConsumer(
+    params: DescribeDataSharesForConsumerMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDataSharesForConsumerResult, Unit]
+  ): Request[DescribeDataSharesForConsumerResult, AWSError] = js.native
+  
+  /**
+    * Returns a list of datashares when the account identifier being called is a producer account identifier.
+    */
+  def describeDataSharesForProducer(): Request[DescribeDataSharesForProducerResult, AWSError] = js.native
+  def describeDataSharesForProducer(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDataSharesForProducerResult, Unit]): Request[DescribeDataSharesForProducerResult, AWSError] = js.native
+  /**
+    * Returns a list of datashares when the account identifier being called is a producer account identifier.
+    */
+  def describeDataSharesForProducer(params: DescribeDataSharesForProducerMessage): Request[DescribeDataSharesForProducerResult, AWSError] = js.native
+  def describeDataSharesForProducer(
+    params: DescribeDataSharesForProducerMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDataSharesForProducerResult, Unit]
+  ): Request[DescribeDataSharesForProducerResult, AWSError] = js.native
+  
+  /**
     * Returns a list of parameter settings for the specified parameter group family.  For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide.
     */
   def describeDefaultClusterParameters(): Request[DescribeDefaultClusterParametersResult, AWSError] = js.native
@@ -637,6 +833,34 @@ trait Redshift extends Service {
     params: DescribeDefaultClusterParametersMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDefaultClusterParametersResult, Unit]
   ): Request[DescribeDefaultClusterParametersResult, AWSError] = js.native
+  
+  /**
+    * Describes a Redshift-managed VPC endpoint.
+    */
+  def describeEndpointAccess(): Request[EndpointAccessList, AWSError] = js.native
+  def describeEndpointAccess(callback: js.Function2[/* err */ AWSError, /* data */ EndpointAccessList, Unit]): Request[EndpointAccessList, AWSError] = js.native
+  /**
+    * Describes a Redshift-managed VPC endpoint.
+    */
+  def describeEndpointAccess(params: DescribeEndpointAccessMessage): Request[EndpointAccessList, AWSError] = js.native
+  def describeEndpointAccess(
+    params: DescribeEndpointAccessMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ EndpointAccessList, Unit]
+  ): Request[EndpointAccessList, AWSError] = js.native
+  
+  /**
+    * Describes an endpoint authorization.
+    */
+  def describeEndpointAuthorization(): Request[EndpointAuthorizationList, AWSError] = js.native
+  def describeEndpointAuthorization(callback: js.Function2[/* err */ AWSError, /* data */ EndpointAuthorizationList, Unit]): Request[EndpointAuthorizationList, AWSError] = js.native
+  /**
+    * Describes an endpoint authorization.
+    */
+  def describeEndpointAuthorization(params: DescribeEndpointAuthorizationMessage): Request[EndpointAuthorizationList, AWSError] = js.native
+  def describeEndpointAuthorization(
+    params: DescribeEndpointAuthorizationMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ EndpointAuthorizationList, Unit]
+  ): Request[EndpointAuthorizationList, AWSError] = js.native
   
   /**
     * Displays a list of event categories for all event source types, or for a specified source type. For a list of the event categories and source types, go to Amazon Redshift Event Notifications.
@@ -681,12 +905,12 @@ trait Redshift extends Service {
   ): Request[EventsMessage, AWSError] = js.native
   
   /**
-    * Returns information about the specified HSM client certificate. If no certificate ID is specified, returns information about all the HSM certificates owned by your AWS customer account. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all HSM client certificates that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all HSM client certificates that have any combination of those values are returned. If both tag keys and values are omitted from the request, HSM client certificates are returned regardless of whether they have tag keys or values associated with them.
+    * Returns information about the specified HSM client certificate. If no certificate ID is specified, returns information about all the HSM certificates owned by your Amazon Web Services account. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all HSM client certificates that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all HSM client certificates that have any combination of those values are returned. If both tag keys and values are omitted from the request, HSM client certificates are returned regardless of whether they have tag keys or values associated with them.
     */
   def describeHsmClientCertificates(): Request[HsmClientCertificateMessage, AWSError] = js.native
   def describeHsmClientCertificates(callback: js.Function2[/* err */ AWSError, /* data */ HsmClientCertificateMessage, Unit]): Request[HsmClientCertificateMessage, AWSError] = js.native
   /**
-    * Returns information about the specified HSM client certificate. If no certificate ID is specified, returns information about all the HSM certificates owned by your AWS customer account. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all HSM client certificates that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all HSM client certificates that have any combination of those values are returned. If both tag keys and values are omitted from the request, HSM client certificates are returned regardless of whether they have tag keys or values associated with them.
+    * Returns information about the specified HSM client certificate. If no certificate ID is specified, returns information about all the HSM certificates owned by your Amazon Web Services account. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all HSM client certificates that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all HSM client certificates that have any combination of those values are returned. If both tag keys and values are omitted from the request, HSM client certificates are returned regardless of whether they have tag keys or values associated with them.
     */
   def describeHsmClientCertificates(params: DescribeHsmClientCertificatesMessage): Request[HsmClientCertificateMessage, AWSError] = js.native
   def describeHsmClientCertificates(
@@ -695,12 +919,12 @@ trait Redshift extends Service {
   ): Request[HsmClientCertificateMessage, AWSError] = js.native
   
   /**
-    * Returns information about the specified Amazon Redshift HSM configuration. If no configuration ID is specified, returns information about all the HSM configurations owned by your AWS customer account. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all HSM connections that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all HSM connections that have any combination of those values are returned. If both tag keys and values are omitted from the request, HSM connections are returned regardless of whether they have tag keys or values associated with them.
+    * Returns information about the specified Amazon Redshift HSM configuration. If no configuration ID is specified, returns information about all the HSM configurations owned by your Amazon Web Services account. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all HSM connections that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all HSM connections that have any combination of those values are returned. If both tag keys and values are omitted from the request, HSM connections are returned regardless of whether they have tag keys or values associated with them.
     */
   def describeHsmConfigurations(): Request[HsmConfigurationMessage, AWSError] = js.native
   def describeHsmConfigurations(callback: js.Function2[/* err */ AWSError, /* data */ HsmConfigurationMessage, Unit]): Request[HsmConfigurationMessage, AWSError] = js.native
   /**
-    * Returns information about the specified Amazon Redshift HSM configuration. If no configuration ID is specified, returns information about all the HSM configurations owned by your AWS customer account. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all HSM connections that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all HSM connections that have any combination of those values are returned. If both tag keys and values are omitted from the request, HSM connections are returned regardless of whether they have tag keys or values associated with them.
+    * Returns information about the specified Amazon Redshift HSM configuration. If no configuration ID is specified, returns information about all the HSM configurations owned by your Amazon Web Services account. If you specify both tag keys and tag values in the same request, Amazon Redshift returns all HSM connections that match any combination of the specified keys and values. For example, if you have owner and environment for tag keys, and admin and test for tag values, all HSM connections that have any combination of those values are returned. If both tag keys and values are omitted from the request, HSM connections are returned regardless of whether they have tag keys or values associated with them.
     */
   def describeHsmConfigurations(params: DescribeHsmConfigurationsMessage): Request[HsmConfigurationMessage, AWSError] = js.native
   def describeHsmConfigurations(
@@ -737,18 +961,48 @@ trait Redshift extends Service {
   ): Request[NodeConfigurationOptionsMessage, AWSError] = js.native
   
   /**
-    * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS Region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
+    * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific Amazon Web Services Region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
     */
   def describeOrderableClusterOptions(): Request[OrderableClusterOptionsMessage, AWSError] = js.native
   def describeOrderableClusterOptions(callback: js.Function2[/* err */ AWSError, /* data */ OrderableClusterOptionsMessage, Unit]): Request[OrderableClusterOptionsMessage, AWSError] = js.native
   /**
-    * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS Region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
+    * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific Amazon Web Services Region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
     */
   def describeOrderableClusterOptions(params: DescribeOrderableClusterOptionsMessage): Request[OrderableClusterOptionsMessage, AWSError] = js.native
   def describeOrderableClusterOptions(
     params: DescribeOrderableClusterOptionsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ OrderableClusterOptionsMessage, Unit]
   ): Request[OrderableClusterOptionsMessage, AWSError] = js.native
+  
+  /**
+    * Returns information about the partner integrations defined for a cluster.
+    */
+  def describePartners(): Request[DescribePartnersOutputMessage, AWSError] = js.native
+  def describePartners(callback: js.Function2[/* err */ AWSError, /* data */ DescribePartnersOutputMessage, Unit]): Request[DescribePartnersOutputMessage, AWSError] = js.native
+  /**
+    * Returns information about the partner integrations defined for a cluster.
+    */
+  def describePartners(params: DescribePartnersInputMessage): Request[DescribePartnersOutputMessage, AWSError] = js.native
+  def describePartners(
+    params: DescribePartnersInputMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribePartnersOutputMessage, Unit]
+  ): Request[DescribePartnersOutputMessage, AWSError] = js.native
+  
+  /**
+    * Returns exchange status details and associated metadata for a reserved-node exchange. Statuses include such values as in progress and requested.
+    */
+  def describeReservedNodeExchangeStatus(): Request[DescribeReservedNodeExchangeStatusOutputMessage, AWSError] = js.native
+  def describeReservedNodeExchangeStatus(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedNodeExchangeStatusOutputMessage, Unit]
+  ): Request[DescribeReservedNodeExchangeStatusOutputMessage, AWSError] = js.native
+  /**
+    * Returns exchange status details and associated metadata for a reserved-node exchange. Statuses include such values as in progress and requested.
+    */
+  def describeReservedNodeExchangeStatus(params: DescribeReservedNodeExchangeStatusInputMessage): Request[DescribeReservedNodeExchangeStatusOutputMessage, AWSError] = js.native
+  def describeReservedNodeExchangeStatus(
+    params: DescribeReservedNodeExchangeStatusInputMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedNodeExchangeStatusOutputMessage, Unit]
+  ): Request[DescribeReservedNodeExchangeStatusOutputMessage, AWSError] = js.native
   
   /**
     * Returns a list of the available reserved node offerings by Amazon Redshift with their descriptions including the node type, the fixed and recurring costs of reserving the node and duration the node will be reserved for you. These descriptions help you determine which reserve node offering you want to purchase. You then use the unique offering ID in you call to PurchaseReservedNodeOffering to reserve one or more nodes for your Amazon Redshift cluster.   For more information about reserved node offerings, go to Purchasing Reserved Nodes in the Amazon Redshift Cluster Management Guide.
@@ -807,12 +1061,12 @@ trait Redshift extends Service {
   ): Request[ScheduledActionsMessage, AWSError] = js.native
   
   /**
-    * Returns a list of snapshot copy grants owned by the AWS account in the destination region.  For more information about managing snapshot copy grants, go to Amazon Redshift Database Encryption in the Amazon Redshift Cluster Management Guide. 
+    * Returns a list of snapshot copy grants owned by the Amazon Web Services account in the destination region.  For more information about managing snapshot copy grants, go to Amazon Redshift Database Encryption in the Amazon Redshift Cluster Management Guide. 
     */
   def describeSnapshotCopyGrants(): Request[SnapshotCopyGrantMessage, AWSError] = js.native
   def describeSnapshotCopyGrants(callback: js.Function2[/* err */ AWSError, /* data */ SnapshotCopyGrantMessage, Unit]): Request[SnapshotCopyGrantMessage, AWSError] = js.native
   /**
-    * Returns a list of snapshot copy grants owned by the AWS account in the destination region.  For more information about managing snapshot copy grants, go to Amazon Redshift Database Encryption in the Amazon Redshift Cluster Management Guide. 
+    * Returns a list of snapshot copy grants owned by the Amazon Web Services account in the destination region.  For more information about managing snapshot copy grants, go to Amazon Redshift Database Encryption in the Amazon Redshift Cluster Management Guide. 
     */
   def describeSnapshotCopyGrants(params: DescribeSnapshotCopyGrantsMessage): Request[SnapshotCopyGrantMessage, AWSError] = js.native
   def describeSnapshotCopyGrants(
@@ -899,18 +1153,32 @@ trait Redshift extends Service {
   ): Request[LoggingStatus, AWSError] = js.native
   
   /**
-    * Disables the automatic copying of snapshots from one region to another region for a specified cluster. If your cluster and its snapshots are encrypted using a customer master key (CMK) from AWS KMS, use DeleteSnapshotCopyGrant to delete the grant that grants Amazon Redshift permission to the CMK in the destination region. 
+    * Disables the automatic copying of snapshots from one region to another region for a specified cluster. If your cluster and its snapshots are encrypted using an encrypted symmetric key from Key Management Service, use DeleteSnapshotCopyGrant to delete the grant that grants Amazon Redshift permission to the key in the destination region. 
     */
   def disableSnapshotCopy(): Request[DisableSnapshotCopyResult, AWSError] = js.native
   def disableSnapshotCopy(callback: js.Function2[/* err */ AWSError, /* data */ DisableSnapshotCopyResult, Unit]): Request[DisableSnapshotCopyResult, AWSError] = js.native
   /**
-    * Disables the automatic copying of snapshots from one region to another region for a specified cluster. If your cluster and its snapshots are encrypted using a customer master key (CMK) from AWS KMS, use DeleteSnapshotCopyGrant to delete the grant that grants Amazon Redshift permission to the CMK in the destination region. 
+    * Disables the automatic copying of snapshots from one region to another region for a specified cluster. If your cluster and its snapshots are encrypted using an encrypted symmetric key from Key Management Service, use DeleteSnapshotCopyGrant to delete the grant that grants Amazon Redshift permission to the key in the destination region. 
     */
   def disableSnapshotCopy(params: DisableSnapshotCopyMessage): Request[DisableSnapshotCopyResult, AWSError] = js.native
   def disableSnapshotCopy(
     params: DisableSnapshotCopyMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DisableSnapshotCopyResult, Unit]
   ): Request[DisableSnapshotCopyResult, AWSError] = js.native
+  
+  /**
+    * From a datashare consumer account, remove association for the specified datashare. 
+    */
+  def disassociateDataShareConsumer(): Request[DataShare, AWSError] = js.native
+  def disassociateDataShareConsumer(callback: js.Function2[/* err */ AWSError, /* data */ DataShare, Unit]): Request[DataShare, AWSError] = js.native
+  /**
+    * From a datashare consumer account, remove association for the specified datashare. 
+    */
+  def disassociateDataShareConsumer(params: DisassociateDataShareConsumerMessage): Request[DataShare, AWSError] = js.native
+  def disassociateDataShareConsumer(
+    params: DisassociateDataShareConsumerMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DataShare, Unit]
+  ): Request[DataShare, AWSError] = js.native
   
   /**
     * Starts logging information, such as queries and connection attempts, for the specified Amazon Redshift cluster.
@@ -941,18 +1209,56 @@ trait Redshift extends Service {
   ): Request[EnableSnapshotCopyResult, AWSError] = js.native
   
   /**
-    * Returns a database user name and temporary password with temporary authorization to log on to an Amazon Redshift database. The action returns the database user name prefixed with IAM: if AutoCreate is False or IAMA: if AutoCreate is True. You can optionally specify one or more database user groups that the user will join at log on. By default, the temporary credentials expire in 900 seconds. You can optionally specify a duration between 900 seconds (15 minutes) and 3600 seconds (60 minutes). For more information, see Using IAM Authentication to Generate Database User Credentials in the Amazon Redshift Cluster Management Guide. The AWS Identity and Access Management (IAM)user or role that executes GetClusterCredentials must have an IAM policy attached that allows access to all necessary actions and resources. For more information about permissions, see Resource Policies for GetClusterCredentials in the Amazon Redshift Cluster Management Guide. If the DbGroups parameter is specified, the IAM policy must allow the redshift:JoinGroup action with access to the listed dbgroups.  In addition, if the AutoCreate parameter is set to True, then the policy must include the redshift:CreateClusterUser privilege. If the DbName parameter is specified, the IAM policy must allow access to the resource dbname for the specified database name. 
+    * Returns a database user name and temporary password with temporary authorization to log on to an Amazon Redshift database. The action returns the database user name prefixed with IAM: if AutoCreate is False or IAMA: if AutoCreate is True. You can optionally specify one or more database user groups that the user will join at log on. By default, the temporary credentials expire in 900 seconds. You can optionally specify a duration between 900 seconds (15 minutes) and 3600 seconds (60 minutes). For more information, see Using IAM Authentication to Generate Database User Credentials in the Amazon Redshift Cluster Management Guide. The Identity and Access Management (IAM) user or role that runs GetClusterCredentials must have an IAM policy attached that allows access to all necessary actions and resources. For more information about permissions, see Resource Policies for GetClusterCredentials in the Amazon Redshift Cluster Management Guide. If the DbGroups parameter is specified, the IAM policy must allow the redshift:JoinGroup action with access to the listed dbgroups.  In addition, if the AutoCreate parameter is set to True, then the policy must include the redshift:CreateClusterUser permission. If the DbName parameter is specified, the IAM policy must allow access to the resource dbname for the specified database name. 
     */
   def getClusterCredentials(): Request[ClusterCredentials, AWSError] = js.native
   def getClusterCredentials(callback: js.Function2[/* err */ AWSError, /* data */ ClusterCredentials, Unit]): Request[ClusterCredentials, AWSError] = js.native
   /**
-    * Returns a database user name and temporary password with temporary authorization to log on to an Amazon Redshift database. The action returns the database user name prefixed with IAM: if AutoCreate is False or IAMA: if AutoCreate is True. You can optionally specify one or more database user groups that the user will join at log on. By default, the temporary credentials expire in 900 seconds. You can optionally specify a duration between 900 seconds (15 minutes) and 3600 seconds (60 minutes). For more information, see Using IAM Authentication to Generate Database User Credentials in the Amazon Redshift Cluster Management Guide. The AWS Identity and Access Management (IAM)user or role that executes GetClusterCredentials must have an IAM policy attached that allows access to all necessary actions and resources. For more information about permissions, see Resource Policies for GetClusterCredentials in the Amazon Redshift Cluster Management Guide. If the DbGroups parameter is specified, the IAM policy must allow the redshift:JoinGroup action with access to the listed dbgroups.  In addition, if the AutoCreate parameter is set to True, then the policy must include the redshift:CreateClusterUser privilege. If the DbName parameter is specified, the IAM policy must allow access to the resource dbname for the specified database name. 
+    * Returns a database user name and temporary password with temporary authorization to log on to an Amazon Redshift database. The action returns the database user name prefixed with IAM: if AutoCreate is False or IAMA: if AutoCreate is True. You can optionally specify one or more database user groups that the user will join at log on. By default, the temporary credentials expire in 900 seconds. You can optionally specify a duration between 900 seconds (15 minutes) and 3600 seconds (60 minutes). For more information, see Using IAM Authentication to Generate Database User Credentials in the Amazon Redshift Cluster Management Guide. The Identity and Access Management (IAM) user or role that runs GetClusterCredentials must have an IAM policy attached that allows access to all necessary actions and resources. For more information about permissions, see Resource Policies for GetClusterCredentials in the Amazon Redshift Cluster Management Guide. If the DbGroups parameter is specified, the IAM policy must allow the redshift:JoinGroup action with access to the listed dbgroups.  In addition, if the AutoCreate parameter is set to True, then the policy must include the redshift:CreateClusterUser permission. If the DbName parameter is specified, the IAM policy must allow access to the resource dbname for the specified database name. 
     */
   def getClusterCredentials(params: GetClusterCredentialsMessage): Request[ClusterCredentials, AWSError] = js.native
   def getClusterCredentials(
     params: GetClusterCredentialsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ClusterCredentials, Unit]
   ): Request[ClusterCredentials, AWSError] = js.native
+  
+  /**
+    * Returns a database user name and temporary password with temporary authorization to log in to an Amazon Redshift database. The database user is mapped 1:1 to the source Identity and Access Management (IAM) identity. For more information about IAM identities, see IAM Identities (users, user groups, and roles) in the Amazon Web Services Identity and Access Management User Guide. The Identity and Access Management (IAM) identity that runs this operation must have an IAM policy attached that allows access to all necessary actions and resources. For more information about permissions, see Using identity-based policies (IAM policies) in the Amazon Redshift Cluster Management Guide. 
+    */
+  def getClusterCredentialsWithIAM(): Request[ClusterExtendedCredentials, AWSError] = js.native
+  def getClusterCredentialsWithIAM(callback: js.Function2[/* err */ AWSError, /* data */ ClusterExtendedCredentials, Unit]): Request[ClusterExtendedCredentials, AWSError] = js.native
+  /**
+    * Returns a database user name and temporary password with temporary authorization to log in to an Amazon Redshift database. The database user is mapped 1:1 to the source Identity and Access Management (IAM) identity. For more information about IAM identities, see IAM Identities (users, user groups, and roles) in the Amazon Web Services Identity and Access Management User Guide. The Identity and Access Management (IAM) identity that runs this operation must have an IAM policy attached that allows access to all necessary actions and resources. For more information about permissions, see Using identity-based policies (IAM policies) in the Amazon Redshift Cluster Management Guide. 
+    */
+  def getClusterCredentialsWithIAM(params: GetClusterCredentialsWithIAMMessage): Request[ClusterExtendedCredentials, AWSError] = js.native
+  def getClusterCredentialsWithIAM(
+    params: GetClusterCredentialsWithIAMMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ ClusterExtendedCredentials, Unit]
+  ): Request[ClusterExtendedCredentials, AWSError] = js.native
+  
+  /**
+    * Gets the configuration options for the reserved-node exchange. These options include information about the source reserved node and target reserved node offering. Details include the node type, the price, the node count, and the offering type.
+    */
+  def getReservedNodeExchangeConfigurationOptions(): Request[GetReservedNodeExchangeConfigurationOptionsOutputMessage, AWSError] = js.native
+  def getReservedNodeExchangeConfigurationOptions(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ GetReservedNodeExchangeConfigurationOptionsOutputMessage, 
+      Unit
+    ]
+  ): Request[GetReservedNodeExchangeConfigurationOptionsOutputMessage, AWSError] = js.native
+  /**
+    * Gets the configuration options for the reserved-node exchange. These options include information about the source reserved node and target reserved node offering. Details include the node type, the price, the node count, and the offering type.
+    */
+  def getReservedNodeExchangeConfigurationOptions(params: GetReservedNodeExchangeConfigurationOptionsInputMessage): Request[GetReservedNodeExchangeConfigurationOptionsOutputMessage, AWSError] = js.native
+  def getReservedNodeExchangeConfigurationOptions(
+    params: GetReservedNodeExchangeConfigurationOptionsInputMessage,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ GetReservedNodeExchangeConfigurationOptionsOutputMessage, 
+      Unit
+    ]
+  ): Request[GetReservedNodeExchangeConfigurationOptionsOutputMessage, AWSError] = js.native
   
   /**
     * Returns an array of DC2 ReservedNodeOfferings that matches the payment type, term, and usage price of the given DC1 reserved node.
@@ -971,12 +1277,40 @@ trait Redshift extends Service {
   ): Request[GetReservedNodeExchangeOfferingsOutputMessage, AWSError] = js.native
   
   /**
-    * Modifies the settings for a cluster. You can also change node type and the number of nodes to scale up or down the cluster. When resizing a cluster, you must specify both the number of nodes and the node type even if one of the parameters does not change. You can add another security or parameter group, or change the master user password. Resetting a cluster password or modifying the security groups associated with a cluster do not need a reboot. However, modifying a parameter group requires a reboot for parameters to take effect. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
+    * This operation is retired. Calling this operation does not change AQUA configuration. Amazon Redshift automatically determines whether to use AQUA (Advanced Query Accelerator). 
+    */
+  def modifyAquaConfiguration(): Request[ModifyAquaOutputMessage, AWSError] = js.native
+  def modifyAquaConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ ModifyAquaOutputMessage, Unit]): Request[ModifyAquaOutputMessage, AWSError] = js.native
+  /**
+    * This operation is retired. Calling this operation does not change AQUA configuration. Amazon Redshift automatically determines whether to use AQUA (Advanced Query Accelerator). 
+    */
+  def modifyAquaConfiguration(params: ModifyAquaInputMessage): Request[ModifyAquaOutputMessage, AWSError] = js.native
+  def modifyAquaConfiguration(
+    params: ModifyAquaInputMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyAquaOutputMessage, Unit]
+  ): Request[ModifyAquaOutputMessage, AWSError] = js.native
+  
+  /**
+    * Modifies an authentication profile.
+    */
+  def modifyAuthenticationProfile(): Request[ModifyAuthenticationProfileResult, AWSError] = js.native
+  def modifyAuthenticationProfile(callback: js.Function2[/* err */ AWSError, /* data */ ModifyAuthenticationProfileResult, Unit]): Request[ModifyAuthenticationProfileResult, AWSError] = js.native
+  /**
+    * Modifies an authentication profile.
+    */
+  def modifyAuthenticationProfile(params: ModifyAuthenticationProfileMessage): Request[ModifyAuthenticationProfileResult, AWSError] = js.native
+  def modifyAuthenticationProfile(
+    params: ModifyAuthenticationProfileMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyAuthenticationProfileResult, Unit]
+  ): Request[ModifyAuthenticationProfileResult, AWSError] = js.native
+  
+  /**
+    * Modifies the settings for a cluster. You can also change node type and the number of nodes to scale up or down the cluster. When resizing a cluster, you must specify both the number of nodes and the node type even if one of the parameters does not change. You can add another security or parameter group, or change the admin user password. Resetting a cluster password or modifying the security groups associated with a cluster do not need a reboot. However, modifying a parameter group requires a reboot for parameters to take effect. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
     */
   def modifyCluster(): Request[ModifyClusterResult, AWSError] = js.native
   def modifyCluster(callback: js.Function2[/* err */ AWSError, /* data */ ModifyClusterResult, Unit]): Request[ModifyClusterResult, AWSError] = js.native
   /**
-    * Modifies the settings for a cluster. You can also change node type and the number of nodes to scale up or down the cluster. When resizing a cluster, you must specify both the number of nodes and the node type even if one of the parameters does not change. You can add another security or parameter group, or change the master user password. Resetting a cluster password or modifying the security groups associated with a cluster do not need a reboot. However, modifying a parameter group requires a reboot for parameters to take effect. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
+    * Modifies the settings for a cluster. You can also change node type and the number of nodes to scale up or down the cluster. When resizing a cluster, you must specify both the number of nodes and the node type even if one of the parameters does not change. You can add another security or parameter group, or change the admin user password. Resetting a cluster password or modifying the security groups associated with a cluster do not need a reboot. However, modifying a parameter group requires a reboot for parameters to take effect. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
     */
   def modifyCluster(params: ModifyClusterMessage): Request[ModifyClusterResult, AWSError] = js.native
   def modifyCluster(
@@ -999,12 +1333,12 @@ trait Redshift extends Service {
   ): Request[ModifyClusterDbRevisionResult, AWSError] = js.native
   
   /**
-    * Modifies the list of AWS Identity and Access Management (IAM) roles that can be used by the cluster to access other AWS services. A cluster can have up to 10 IAM roles associated at any time.
+    * Modifies the list of Identity and Access Management (IAM) roles that can be used by the cluster to access other Amazon Web Services services. The maximum number of IAM roles that you can associate is subject to a quota. For more information, go to Quotas and limits in the Amazon Redshift Cluster Management Guide.
     */
   def modifyClusterIamRoles(): Request[ModifyClusterIamRolesResult, AWSError] = js.native
   def modifyClusterIamRoles(callback: js.Function2[/* err */ AWSError, /* data */ ModifyClusterIamRolesResult, Unit]): Request[ModifyClusterIamRolesResult, AWSError] = js.native
   /**
-    * Modifies the list of AWS Identity and Access Management (IAM) roles that can be used by the cluster to access other AWS services. A cluster can have up to 10 IAM roles associated at any time.
+    * Modifies the list of Identity and Access Management (IAM) roles that can be used by the cluster to access other Amazon Web Services services. The maximum number of IAM roles that you can associate is subject to a quota. For more information, go to Quotas and limits in the Amazon Redshift Cluster Management Guide.
     */
   def modifyClusterIamRoles(params: ModifyClusterIamRolesMessage): Request[ModifyClusterIamRolesResult, AWSError] = js.native
   def modifyClusterIamRoles(
@@ -1027,12 +1361,12 @@ trait Redshift extends Service {
   ): Request[ModifyClusterMaintenanceResult, AWSError] = js.native
   
   /**
-    * Modifies the parameters of a parameter group.  For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide.
+    * Modifies the parameters of a parameter group. For the parameters parameter, it can't contain ASCII characters.  For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide.
     */
   def modifyClusterParameterGroup(): Request[ClusterParameterGroupNameMessage, AWSError] = js.native
   def modifyClusterParameterGroup(callback: js.Function2[/* err */ AWSError, /* data */ ClusterParameterGroupNameMessage, Unit]): Request[ClusterParameterGroupNameMessage, AWSError] = js.native
   /**
-    * Modifies the parameters of a parameter group.  For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide.
+    * Modifies the parameters of a parameter group. For the parameters parameter, it can't contain ASCII characters.  For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide.
     */
   def modifyClusterParameterGroup(params: ModifyClusterParameterGroupMessage): Request[ClusterParameterGroupNameMessage, AWSError] = js.native
   def modifyClusterParameterGroup(
@@ -1083,6 +1417,20 @@ trait Redshift extends Service {
   ): Request[ModifyClusterSubnetGroupResult, AWSError] = js.native
   
   /**
+    * Modifies a Redshift-managed VPC endpoint.
+    */
+  def modifyEndpointAccess(): Request[EndpointAccess, AWSError] = js.native
+  def modifyEndpointAccess(callback: js.Function2[/* err */ AWSError, /* data */ EndpointAccess, Unit]): Request[EndpointAccess, AWSError] = js.native
+  /**
+    * Modifies a Redshift-managed VPC endpoint.
+    */
+  def modifyEndpointAccess(params: ModifyEndpointAccessMessage): Request[EndpointAccess, AWSError] = js.native
+  def modifyEndpointAccess(
+    params: ModifyEndpointAccessMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ EndpointAccess, Unit]
+  ): Request[EndpointAccess, AWSError] = js.native
+  
+  /**
     * Modifies an existing Amazon Redshift event notification subscription.
     */
   def modifyEventSubscription(): Request[ModifyEventSubscriptionResult, AWSError] = js.native
@@ -1111,14 +1459,14 @@ trait Redshift extends Service {
   ): Request[ScheduledAction, AWSError] = js.native
   
   /**
-    * Modifies the number of days to retain snapshots in the destination AWS Region after they are copied from the source AWS Region. By default, this operation only changes the retention period of copied automated snapshots. The retention periods for both new and existing copied automated snapshots are updated with the new retention period. You can set the manual option to change only the retention periods of copied manual snapshots. If you set this option, only newly copied manual snapshots have the new retention period. 
+    * Modifies the number of days to retain snapshots in the destination Amazon Web Services Region after they are copied from the source Amazon Web Services Region. By default, this operation only changes the retention period of copied automated snapshots. The retention periods for both new and existing copied automated snapshots are updated with the new retention period. You can set the manual option to change only the retention periods of copied manual snapshots. If you set this option, only newly copied manual snapshots have the new retention period. 
     */
   def modifySnapshotCopyRetentionPeriod(): Request[ModifySnapshotCopyRetentionPeriodResult, AWSError] = js.native
   def modifySnapshotCopyRetentionPeriod(
     callback: js.Function2[/* err */ AWSError, /* data */ ModifySnapshotCopyRetentionPeriodResult, Unit]
   ): Request[ModifySnapshotCopyRetentionPeriodResult, AWSError] = js.native
   /**
-    * Modifies the number of days to retain snapshots in the destination AWS Region after they are copied from the source AWS Region. By default, this operation only changes the retention period of copied automated snapshots. The retention periods for both new and existing copied automated snapshots are updated with the new retention period. You can set the manual option to change only the retention periods of copied manual snapshots. If you set this option, only newly copied manual snapshots have the new retention period. 
+    * Modifies the number of days to retain snapshots in the destination Amazon Web Services Region after they are copied from the source Amazon Web Services Region. By default, this operation only changes the retention period of copied automated snapshots. The retention periods for both new and existing copied automated snapshots are updated with the new retention period. You can set the manual option to change only the retention periods of copied manual snapshots. If you set this option, only newly copied manual snapshots have the new retention period. 
     */
   def modifySnapshotCopyRetentionPeriod(params: ModifySnapshotCopyRetentionPeriodMessage): Request[ModifySnapshotCopyRetentionPeriodResult, AWSError] = js.native
   def modifySnapshotCopyRetentionPeriod(
@@ -1197,6 +1545,20 @@ trait Redshift extends Service {
   ): Request[RebootClusterResult, AWSError] = js.native
   
   /**
+    * From a datashare consumer account, rejects the specified datashare.
+    */
+  def rejectDataShare(): Request[DataShare, AWSError] = js.native
+  def rejectDataShare(callback: js.Function2[/* err */ AWSError, /* data */ DataShare, Unit]): Request[DataShare, AWSError] = js.native
+  /**
+    * From a datashare consumer account, rejects the specified datashare.
+    */
+  def rejectDataShare(params: RejectDataShareMessage): Request[DataShare, AWSError] = js.native
+  def rejectDataShare(
+    params: RejectDataShareMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DataShare, Unit]
+  ): Request[DataShare, AWSError] = js.native
+  
+  /**
     * Sets one or more parameters of the specified parameter group to their default values and sets the source values of the parameters to "engine-default". To reset the entire parameter group specify the ResetAllParameters parameter. For parameter changes to take effect you must reboot any associated clusters. 
     */
   def resetClusterParameterGroup(): Request[ClusterParameterGroupNameMessage, AWSError] = js.native
@@ -1211,12 +1573,12 @@ trait Redshift extends Service {
   ): Request[ClusterParameterGroupNameMessage, AWSError] = js.native
   
   /**
-    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc1.large (if your cluster is in a VPC)   dc1.8xlarge (if your cluster is in a VPC)   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge   ra3.4xlarge   ra3.16xlarge     The type of nodes that you add must match the node type for the cluster.  
+    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc1.large (if your cluster is in a VPC)   dc1.8xlarge (if your cluster is in a VPC)   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge   ra3.xlplus   ra3.4xlarge   ra3.16xlarge     The type of nodes that you add must match the node type for the cluster.  
     */
   def resizeCluster(): Request[ResizeClusterResult, AWSError] = js.native
   def resizeCluster(callback: js.Function2[/* err */ AWSError, /* data */ ResizeClusterResult, Unit]): Request[ResizeClusterResult, AWSError] = js.native
   /**
-    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc1.large (if your cluster is in a VPC)   dc1.8xlarge (if your cluster is in a VPC)   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge   ra3.4xlarge   ra3.16xlarge     The type of nodes that you add must match the node type for the cluster.  
+    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc1.large (if your cluster is in a VPC)   dc1.8xlarge (if your cluster is in a VPC)   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge   ra3.xlplus   ra3.4xlarge   ra3.16xlarge     The type of nodes that you add must match the node type for the cluster.  
     */
   def resizeCluster(params: ResizeClusterMessage): Request[ResizeClusterResult, AWSError] = js.native
   def resizeCluster(
@@ -1283,12 +1645,26 @@ trait Redshift extends Service {
   ): Request[RevokeClusterSecurityGroupIngressResult, AWSError] = js.native
   
   /**
-    * Removes the ability of the specified AWS customer account to restore the specified snapshot. If the account is currently restoring the snapshot, the restore will run to completion.  For more information about working with snapshots, go to Amazon Redshift Snapshots in the Amazon Redshift Cluster Management Guide.
+    * Revokes access to a cluster.
+    */
+  def revokeEndpointAccess(): Request[EndpointAuthorization, AWSError] = js.native
+  def revokeEndpointAccess(callback: js.Function2[/* err */ AWSError, /* data */ EndpointAuthorization, Unit]): Request[EndpointAuthorization, AWSError] = js.native
+  /**
+    * Revokes access to a cluster.
+    */
+  def revokeEndpointAccess(params: RevokeEndpointAccessMessage): Request[EndpointAuthorization, AWSError] = js.native
+  def revokeEndpointAccess(
+    params: RevokeEndpointAccessMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ EndpointAuthorization, Unit]
+  ): Request[EndpointAuthorization, AWSError] = js.native
+  
+  /**
+    * Removes the ability of the specified Amazon Web Services account to restore the specified snapshot. If the account is currently restoring the snapshot, the restore will run to completion.  For more information about working with snapshots, go to Amazon Redshift Snapshots in the Amazon Redshift Cluster Management Guide.
     */
   def revokeSnapshotAccess(): Request[RevokeSnapshotAccessResult, AWSError] = js.native
   def revokeSnapshotAccess(callback: js.Function2[/* err */ AWSError, /* data */ RevokeSnapshotAccessResult, Unit]): Request[RevokeSnapshotAccessResult, AWSError] = js.native
   /**
-    * Removes the ability of the specified AWS customer account to restore the specified snapshot. If the account is currently restoring the snapshot, the restore will run to completion.  For more information about working with snapshots, go to Amazon Redshift Snapshots in the Amazon Redshift Cluster Management Guide.
+    * Removes the ability of the specified Amazon Web Services account to restore the specified snapshot. If the account is currently restoring the snapshot, the restore will run to completion.  For more information about working with snapshots, go to Amazon Redshift Snapshots in the Amazon Redshift Cluster Management Guide.
     */
   def revokeSnapshotAccess(params: RevokeSnapshotAccessMessage): Request[RevokeSnapshotAccessResult, AWSError] = js.native
   def revokeSnapshotAccess(
@@ -1309,6 +1685,20 @@ trait Redshift extends Service {
     params: RotateEncryptionKeyMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ RotateEncryptionKeyResult, Unit]
   ): Request[RotateEncryptionKeyResult, AWSError] = js.native
+  
+  /**
+    * Updates the status of a partner integration.
+    */
+  def updatePartnerStatus(): Request[PartnerIntegrationOutputMessage, AWSError] = js.native
+  def updatePartnerStatus(callback: js.Function2[/* err */ AWSError, /* data */ PartnerIntegrationOutputMessage, Unit]): Request[PartnerIntegrationOutputMessage, AWSError] = js.native
+  /**
+    * Updates the status of a partner integration.
+    */
+  def updatePartnerStatus(params: UpdatePartnerStatusInputMessage): Request[PartnerIntegrationOutputMessage, AWSError] = js.native
+  def updatePartnerStatus(
+    params: UpdatePartnerStatusInputMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ PartnerIntegrationOutputMessage, Unit]
+  ): Request[PartnerIntegrationOutputMessage, AWSError] = js.native
   
   /**
     * Waits for the clusterAvailable state by periodically calling the underlying Redshift.describeClustersoperation every 60 seconds (at most 30 times).

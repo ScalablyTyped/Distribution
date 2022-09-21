@@ -14,7 +14,7 @@ trait XIndexReplace
      with XIndexAccess {
   
   /** replaces the element at the specified index with the given element. */
-  def replaceByIndex(Index: Double, Element: js.Any): Unit
+  def replaceByIndex(Index: Double, Element: Any): Unit
 }
 object XIndexReplace {
   
@@ -22,13 +22,13 @@ object XIndexReplace {
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    replaceByIndex: (Double, js.Any) => Unit
+    replaceByIndex: (Double, Any) => Unit
   ): XIndexReplace = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), replaceByIndex = js.Any.fromFunction2(replaceByIndex))
     __obj.asInstanceOf[XIndexReplace]
@@ -36,6 +36,6 @@ object XIndexReplace {
   
   extension [Self <: XIndexReplace](x: Self) {
     
-    inline def setReplaceByIndex(value: (Double, js.Any) => Unit): Self = StObject.set(x, "replaceByIndex", js.Any.fromFunction2(value))
+    inline def setReplaceByIndex(value: (Double, Any) => Unit): Self = StObject.set(x, "replaceByIndex", js.Any.fromFunction2(value))
   }
 }

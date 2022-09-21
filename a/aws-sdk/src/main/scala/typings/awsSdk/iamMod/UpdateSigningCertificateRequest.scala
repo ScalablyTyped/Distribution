@@ -12,7 +12,7 @@ trait UpdateSigningCertificateRequest extends StObject {
   var CertificateId: certificateIdType
   
   /**
-    *  The status you want to assign to the certificate. Active means that the certificate can be used for API calls to AWS Inactive means that the certificate cannot be used.
+    *  The status you want to assign to the certificate. Active means that the certificate can be used for programmatic calls to Amazon Web Services Inactive means that the certificate cannot be used.
     */
   var Status: statusType
   

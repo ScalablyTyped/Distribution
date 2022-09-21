@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Construct a solid color Brush that holds the given color information.
   * @param {string=} color a well-formed CSS string describing a solid color brush; if not supplied uses 'black'.
   */
-class Brush ()
+open class Brush ()
   extends typings.go.mod.Brush {
   def this(color: String) = this()
   /**

@@ -2,6 +2,7 @@ package typings.reactSwipe
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.swipe.SwipeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +12,13 @@ object mod {
   
   @JSImport("react-swipe", JSImport.Namespace)
   @js.native
-  class ^ () extends ReactSwipe
+  open class ^ () extends ReactSwipe
   
   trait Props extends StObject {
     
     var childCount: js.UndefOr[Double] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -38,6 +41,10 @@ object mod {
       
       inline def setChildCountUndefined: Self = StObject.set(x, "childCount", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -58,7 +65,7 @@ object mod {
   
   @js.native
   trait ReactSwipe
-    extends Component[Props, js.Object, js.Any] {
+    extends Component[Props, js.Object, Any] {
     
     def getNumSlides(): Double = js.native
     

@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the line formatting for the shape object. For images and geometric shapes, line formatting represents the border of the shape.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeLineFormat")
 @js.native
-class ShapeLineFormat ()
+open class ShapeLineFormat ()
   extends StObject
      with typings.officeJs.Excel.ShapeLineFormat {
   

@@ -71,7 +71,7 @@ trait SelectRow[TRow /* <: js.Object */] extends StObject {
     js.Function4[
       /* row */ TRow, 
       /* isSelected */ Boolean, 
-      /* event */ js.Any, 
+      /* event */ Any, 
       /* rowIndex */ Double, 
       Boolean | Unit
     ]
@@ -165,7 +165,7 @@ object SelectRow {
     inline def setMode(value: SelectRowMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setOnSelect(
-      value: (/* row */ TRow, /* isSelected */ Boolean, /* event */ js.Any, /* rowIndex */ Double) => Boolean | Unit
+      value: (/* row */ TRow, /* isSelected */ Boolean, /* event */ Any, /* rowIndex */ Double) => Boolean | Unit
     ): Self = StObject.set(x, "onSelect", js.Any.fromFunction4(value))
     
     inline def setOnSelectAll(
@@ -184,7 +184,7 @@ object SelectRow {
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    inline def setSelectedVarargs(value: (Double | String)*): Self = StObject.set(x, "selected", js.Array(value :_*))
+    inline def setSelectedVarargs(value: (Double | String)*): Self = StObject.set(x, "selected", js.Array(value*))
     
     inline def setShowOnlySelected(value: Boolean): Self = StObject.set(x, "showOnlySelected", value.asInstanceOf[js.Any])
     
@@ -194,6 +194,6 @@ object SelectRow {
     
     inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
     
-    inline def setUnselectableVarargs(value: (Double | String)*): Self = StObject.set(x, "unselectable", js.Array(value :_*))
+    inline def setUnselectableVarargs(value: (Double | String)*): Self = StObject.set(x, "unselectable", js.Array(value*))
   }
 }

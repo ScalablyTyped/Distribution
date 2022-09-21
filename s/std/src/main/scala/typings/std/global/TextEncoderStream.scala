@@ -7,41 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("TextEncoderStream")
 @js.native
-class TextEncoderStream ()
+/* standard dom */
+open class TextEncoderStream ()
   extends StObject
      with typings.std.TextEncoderStream {
   
-  /**
-    * Returns "utf-8".
-    */
+  /** Returns "utf-8". */
+  /* standard dom */
   /* CompleteClass */
   override val encoding: java.lang.String = js.native
   
-  /**
-    * Returns a readable stream whose chunks are strings resulting from running encoding's decoder on the chunks written to writable.
-    */
+  /* standard dom */
   /* CompleteClass */
-  override val readable: typings.std.ReadableStream[js.Any] = js.native
+  override val readable: typings.std.ReadableStream[Any] = js.native
+  /* standard dom */
   /* CompleteClass */
   @JSName("readable")
-  override val readable_TextEncoderStream: typings.std.ReadableStream[typings.std.Uint8Array] = js.native
+  override val readable_TextEncoderStream: typings.std.ReadableStream[js.typedarray.Uint8Array] = js.native
   
-  /**
-    * Returns a writable stream which accepts [AllowShared] BufferSource chunks and runs them through encoding's decoder before making them available to readable.
-    * 
-    * Typically this will be used via the pipeThrough() method on a ReadableStream source.
-    * 
-    * ```
-    * var decoder = new TextDecoderStream(encoding);
-    * byteReadable
-    *   .pipeThrough(decoder)
-    *   .pipeTo(textWritable);
-    * ```
-    * 
-    * If the error mode is "fatal" and encoding's decoder returns error, both readable and writable will be errored with a TypeError.
-    */
+  /* standard dom */
   /* CompleteClass */
-  override val writable: typings.std.WritableStream[js.Any] = js.native
+  override val writable: typings.std.WritableStream[Any] = js.native
+  /* standard dom */
   /* CompleteClass */
   @JSName("writable")
   override val writable_TextEncoderStream: typings.std.WritableStream[java.lang.String] = js.native

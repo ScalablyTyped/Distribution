@@ -22,7 +22,7 @@ trait IDialogRenderingOptions extends StObject {
   /** 
     * It will set this value as a property on the dialog controller's scope as $scope.dialogData
     */
-  var dialogData: js.UndefOr[js.Any] = js.undefined
+  var dialogData: js.UndefOr[Any] = js.undefined
   
   /*load template in an iframe, only needed for serverside templates*/
   var iframe: Boolean
@@ -61,7 +61,7 @@ object IDialogRenderingOptions {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setDialogData(value: js.Any): Self = StObject.set(x, "dialogData", value.asInstanceOf[js.Any])
+    inline def setDialogData(value: Any): Self = StObject.set(x, "dialogData", value.asInstanceOf[js.Any])
     
     inline def setDialogDataUndefined: Self = StObject.set(x, "dialogData", js.undefined)
     

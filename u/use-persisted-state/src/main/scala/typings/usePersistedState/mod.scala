@@ -12,6 +12,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(key: String): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any]).asInstanceOf[FnCall]
-  inline def default(key: String, provider: PickStoragegetItemsetItem): FnCall = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[FnCall]
+  inline def default[S](key: String): FnCall[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any]).asInstanceOf[FnCall[S]]
+  inline def default[S](key: String, provider: PickStoragegetItemsetItem): FnCall[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[FnCall[S]]
 }

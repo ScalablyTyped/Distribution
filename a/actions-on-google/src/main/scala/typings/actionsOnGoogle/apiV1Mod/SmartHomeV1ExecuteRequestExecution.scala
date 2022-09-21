@@ -12,7 +12,7 @@ trait SmartHomeV1ExecuteRequestExecution extends StObject {
   
   var command: String
   
-  var params: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var params: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
 }
 object SmartHomeV1ExecuteRequestExecution {
   
@@ -29,7 +29,7 @@ object SmartHomeV1ExecuteRequestExecution {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    inline def setParams(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }

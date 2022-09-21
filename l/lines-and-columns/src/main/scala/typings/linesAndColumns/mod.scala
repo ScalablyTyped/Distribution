@@ -6,66 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("lines-and-columns", JSImport.Default)
+  @JSImport("lines-and-columns", "LinesAndColumns")
   @js.native
-  class default protected ()
-    extends StObject
-       with LinesAndColumns {
+  open class LinesAndColumns protected () extends StObject {
     def this(string: String) = this()
     
-    /* CompleteClass */
-    override def indexForLocation(location: SourceLocation): Double | Null = js.native
+    def indexForLocation(location: SourceLocation): Double | Null = js.native
     
-    /* private */ /* CompleteClass */
-    override def lengthOfLine(line: js.Any): js.Any = js.native
+    /* private */ val length: Any = js.native
     
-    /* CompleteClass */
-    override def locationForIndex(index: Double): SourceLocation | Null = js.native
+    /* private */ var lengthOfLine: Any = js.native
     
-    /* private */ /* CompleteClass */
-    var offsets: js.Any = js.native
+    def locationForIndex(index: Double): SourceLocation | Null = js.native
     
-    /* private */ /* CompleteClass */
-    var string: js.Any = js.native
-  }
-  
-  trait LinesAndColumns extends StObject {
-    
-    def indexForLocation(location: SourceLocation): Double | Null
-    
-    /* private */ def lengthOfLine(line: js.Any): js.Any
-    
-    def locationForIndex(index: Double): SourceLocation | Null
-    
-    /* private */ var offsets: js.Any
-    
-    /* private */ var string: js.Any
-  }
-  object LinesAndColumns {
-    
-    inline def apply(
-      indexForLocation: SourceLocation => Double | Null,
-      lengthOfLine: js.Any => js.Any,
-      locationForIndex: Double => SourceLocation | Null,
-      offsets: js.Any,
-      string: js.Any
-    ): LinesAndColumns = {
-      val __obj = js.Dynamic.literal(indexForLocation = js.Any.fromFunction1(indexForLocation), lengthOfLine = js.Any.fromFunction1(lengthOfLine), locationForIndex = js.Any.fromFunction1(locationForIndex), offsets = offsets.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
-      __obj.asInstanceOf[LinesAndColumns]
-    }
-    
-    extension [Self <: LinesAndColumns](x: Self) {
-      
-      inline def setIndexForLocation(value: SourceLocation => Double | Null): Self = StObject.set(x, "indexForLocation", js.Any.fromFunction1(value))
-      
-      inline def setLengthOfLine(value: js.Any => js.Any): Self = StObject.set(x, "lengthOfLine", js.Any.fromFunction1(value))
-      
-      inline def setLocationForIndex(value: Double => SourceLocation | Null): Self = StObject.set(x, "locationForIndex", js.Any.fromFunction1(value))
-      
-      inline def setOffsets(value: js.Any): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
-      
-      inline def setString(value: js.Any): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
-    }
+    /* private */ val offsets: Any = js.native
   }
   
   trait SourceLocation extends StObject {

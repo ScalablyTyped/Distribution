@@ -24,6 +24,6 @@ object EnhancedMetrics {
     
     inline def setShardLevelMetricsUndefined: Self = StObject.set(x, "ShardLevelMetrics", js.undefined)
     
-    inline def setShardLevelMetricsVarargs(value: MetricsName*): Self = StObject.set(x, "ShardLevelMetrics", js.Array(value :_*))
+    inline def setShardLevelMetricsVarargs(value: MetricsName*): Self = StObject.set(x, "ShardLevelMetrics", js.Array(value*))
   }
 }

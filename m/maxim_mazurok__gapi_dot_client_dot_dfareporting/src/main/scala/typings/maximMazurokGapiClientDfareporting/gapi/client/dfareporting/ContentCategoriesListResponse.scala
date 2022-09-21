@@ -28,7 +28,7 @@ object ContentCategoriesListResponse {
     
     inline def setContentCategoriesUndefined: Self = StObject.set(x, "contentCategories", js.undefined)
     
-    inline def setContentCategoriesVarargs(value: ContentCategory*): Self = StObject.set(x, "contentCategories", js.Array(value :_*))
+    inline def setContentCategoriesVarargs(value: ContentCategory*): Self = StObject.set(x, "contentCategories", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

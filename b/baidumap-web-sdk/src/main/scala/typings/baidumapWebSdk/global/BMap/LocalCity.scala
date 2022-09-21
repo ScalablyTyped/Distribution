@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.LocalCity")
 @js.native
-class LocalCity ()
+open class LocalCity ()
   extends StObject
      with typings.baidumapWebSdk.BMap.LocalCity {
   def this(opts: LocalCityOptions) = this()

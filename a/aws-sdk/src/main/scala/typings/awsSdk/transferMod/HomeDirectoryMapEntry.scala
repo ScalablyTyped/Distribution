@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HomeDirectoryMapEntry extends StObject {
   
   /**
-    * Represents an entry and a target for HomeDirectoryMappings.
+    * Represents an entry for HomeDirectoryMappings.
     */
   var Entry: MapEntry
   

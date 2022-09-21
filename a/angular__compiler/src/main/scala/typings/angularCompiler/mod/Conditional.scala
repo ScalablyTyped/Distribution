@@ -6,13 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "Conditional")
 @js.native
-class Conditional protected ()
-  extends typings.angularCompiler.compilerMod.Conditional {
-  def this(
-    span: typings.angularCompiler.astMod.ParseSpan,
-    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
-    condition: typings.angularCompiler.astMod.AST,
-    trueExp: typings.angularCompiler.astMod.AST,
-    falseExp: typings.angularCompiler.astMod.AST
-  ) = this()
+open class Conditional protected () extends AST {
+  def this(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, condition: AST, trueExp: AST, falseExp: AST) = this()
+  
+  var condition: AST = js.native
+  
+  var falseExp: AST = js.native
+  
+  var trueExp: AST = js.native
 }

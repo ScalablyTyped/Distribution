@@ -33,6 +33,6 @@ object DescribeStackEventsOutput {
     
     inline def setStackEventsUndefined: Self = StObject.set(x, "StackEvents", js.undefined)
     
-    inline def setStackEventsVarargs(value: StackEvent*): Self = StObject.set(x, "StackEvents", js.Array(value :_*))
+    inline def setStackEventsVarargs(value: StackEvent*): Self = StObject.set(x, "StackEvents", js.Array(value*))
   }
 }

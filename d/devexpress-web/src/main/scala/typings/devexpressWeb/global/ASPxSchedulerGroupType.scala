@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxSchedulerGroupType")
 @js.native
-class ASPxSchedulerGroupType ()
+open class ASPxSchedulerGroupType ()
   extends StObject
      with typings.devexpressWeb.ASPxSchedulerGroupType {
   

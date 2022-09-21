@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/segmented-button" : "8.0.0"
+      "@material/segmented-button" : "14.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/segmented-button" : "8.0.0"
+      "@material/segmented-button" : "14.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -24,7 +24,7 @@ trait TimedMetadataTrack extends StObject {
     */
   def addCue(cue: IMediaCue): Unit = js.native
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_cueentered(`type`: cueentered, listener: TypedEventHandler[TimedMetadataTrack, MediaCueEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -74,7 +74,7 @@ trait TimedMetadataTrack extends StObject {
     */
   def removeCue(cue: IMediaCue): Unit = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_cueentered(`type`: cueentered, listener: TypedEventHandler[TimedMetadataTrack, MediaCueEventArgs]): Unit = js.native
   @JSName("removeEventListener")

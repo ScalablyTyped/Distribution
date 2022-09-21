@@ -14,7 +14,7 @@ object mod extends Shortcut {
   
   trait Opt extends StObject {
     
-    var default: js.UndefOr[js.Any] = js.undefined
+    var default: js.UndefOr[Any] = js.undefined
     
     var alias: js.UndefOr[String | js.Array[String]] = js.undefined
     
@@ -37,9 +37,9 @@ object mod extends Shortcut {
       
       inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
+      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value*))
       
-      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
@@ -47,7 +47,7 @@ object mod extends Shortcut {
       
       inline def setDemandUndefined: Self = StObject.set(x, "demand", js.undefined)
       
-      inline def setDemandVarargs(value: String*): Self = StObject.set(x, "demand", js.Array(value :_*))
+      inline def setDemandVarargs(value: String*): Self = StObject.set(x, "demand", js.Array(value*))
       
       inline def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
       
@@ -63,12 +63,12 @@ object mod extends Shortcut {
   trait Parser extends StObject {
     
     /** Pass in the process.argv yourself */
-    def apply(args: js.Array[String]): js.Any = js.native
+    def apply(args: js.Array[String]): Any = js.native
     
     /** Take an object that maps keys to default values */
-    def default(defaults: StringDictionary[js.Any]): Parser = js.native
+    def default(defaults: StringDictionary[Any]): Parser = js.native
     /** Set argv[key] to value if no option was specified on process.argv */
-    def default(key: String, value: js.Any): Parser = js.native
+    def default(key: String, value: Any): Parser = js.native
     
     /** Take an object that maps keys to aliases. */
     def alias(aliases: StringDictionary[String | js.Array[String]]): Parser = js.native
@@ -78,7 +78,7 @@ object mod extends Shortcut {
     def alias(key: String, alias: js.Array[String]): Parser = js.native
     
     /** Implicitly use process.argv array to construct the argv object */
-    var argv: js.Any = js.native
+    var argv: Any = js.native
     
     /** Interpret key as a boolean. If a non-flag option follows key in process.argv,
       that string won't get set as the value of key. If key never shows up as a
@@ -90,7 +90,7 @@ object mod extends Shortcut {
     /** Check that certain conditions are met in the provided arguments. If fn
       throws or returns false, show the thrown error, usage information, and exit.
       */
-    def check(fn: js.Function1[/* argv */ js.Any, js.Any]): Parser = js.native
+    def check(fn: js.Function1[/* argv */ Any, Any]): Parser = js.native
     
     /** Show the usage information and exit if key wasn't specified in process.argv */
     def demand(key: String): Parser = js.native
@@ -114,7 +114,7 @@ object mod extends Shortcut {
     def options(options: StringDictionary[Opt]): Parser = js.native
     
     /** Use .parse() to do the same thing as treating optimist as a function */
-    def parse(args: js.Array[String]): js.Any = js.native
+    def parse(args: js.Array[String]): Any = js.native
     
     /** Print the usage data using fn for printing (defaults to console.error). */
     def showHelp(): Unit = js.native

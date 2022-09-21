@@ -27,7 +27,7 @@ trait SimulationJob extends StObject {
   var dataSources: js.UndefOr[DataSources] = js.undefined
   
   /**
-    * The failure behavior the simulation job.  Continue  Restart the simulation job in the same host instance.  Fail  Stop the simulation job and terminate the instance.  
+    * The failure behavior the simulation job.  Continue  Leaves the host running for its maximum timeout duration after a 4XX error code.  Fail  Stop the simulation job and terminate the instance.  
     */
   var failureBehavior: js.UndefOr[FailureBehavior] = js.undefined
   
@@ -49,12 +49,12 @@ trait SimulationJob extends StObject {
   /**
     * The time, in milliseconds since the epoch, when the simulation job was last started.
     */
-  var lastStartedAt: js.UndefOr[LastStartedAt] = js.undefined
+  var lastStartedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the simulation job was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The logging configuration.
@@ -136,7 +136,7 @@ object SimulationJob {
     
     inline def setDataSourcesUndefined: Self = StObject.set(x, "dataSources", js.undefined)
     
-    inline def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "dataSources", js.Array(value :_*))
+    inline def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "dataSources", js.Array(value*))
     
     inline def setFailureBehavior(value: FailureBehavior): Self = StObject.set(x, "failureBehavior", value.asInstanceOf[js.Any])
     
@@ -154,11 +154,11 @@ object SimulationJob {
     
     inline def setIamRoleUndefined: Self = StObject.set(x, "iamRole", js.undefined)
     
-    inline def setLastStartedAt(value: LastStartedAt): Self = StObject.set(x, "lastStartedAt", value.asInstanceOf[js.Any])
+    inline def setLastStartedAt(value: js.Date): Self = StObject.set(x, "lastStartedAt", value.asInstanceOf[js.Any])
     
     inline def setLastStartedAtUndefined: Self = StObject.set(x, "lastStartedAt", js.undefined)
     
-    inline def setLastUpdatedAt(value: LastUpdatedAt): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
@@ -186,13 +186,13 @@ object SimulationJob {
     
     inline def setRobotApplicationsUndefined: Self = StObject.set(x, "robotApplications", js.undefined)
     
-    inline def setRobotApplicationsVarargs(value: RobotApplicationConfig*): Self = StObject.set(x, "robotApplications", js.Array(value :_*))
+    inline def setRobotApplicationsVarargs(value: RobotApplicationConfig*): Self = StObject.set(x, "robotApplications", js.Array(value*))
     
     inline def setSimulationApplications(value: SimulationApplicationConfigs): Self = StObject.set(x, "simulationApplications", value.asInstanceOf[js.Any])
     
     inline def setSimulationApplicationsUndefined: Self = StObject.set(x, "simulationApplications", js.undefined)
     
-    inline def setSimulationApplicationsVarargs(value: SimulationApplicationConfig*): Self = StObject.set(x, "simulationApplications", js.Array(value :_*))
+    inline def setSimulationApplicationsVarargs(value: SimulationApplicationConfig*): Self = StObject.set(x, "simulationApplications", js.Array(value*))
     
     inline def setSimulationTimeMillis(value: SimulationTimeMillis): Self = StObject.set(x, "simulationTimeMillis", value.asInstanceOf[js.Any])
     

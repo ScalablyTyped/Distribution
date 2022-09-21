@@ -10,14 +10,13 @@ object documentCardPreviewBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardPreview.base", "DocumentCardPreviewBase")
   @js.native
-  class DocumentCardPreviewBase protected ()
-    extends Component[IDocumentCardPreviewProps, js.Any, js.Any] {
+  open class DocumentCardPreviewBase protected () extends Component[IDocumentCardPreviewProps, Any, Any] {
     def this(props: IDocumentCardPreviewProps) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _renderPreviewImage: js.Any = js.native
+    /* private */ var _renderPreviewImage: Any = js.native
     
-    /* private */ var _renderPreviewList: js.Any = js.native
+    /* private */ var _renderPreviewList: Any = js.native
   }
 }

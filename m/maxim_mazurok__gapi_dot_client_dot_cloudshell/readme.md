@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_cloudshell
 
-Typings are for version 1.0.20201116
+Typings are for version 1.0.20220803
 
 ## Library description:
 TypeScript typings for Cloud Shell API v1
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Shell API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.cloudshell |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 1 |
-| # downloads        | 1353 |
-| # stars            | 0 |
+| # releases         | 85 |
+| # dependents       | 0.0 |
+| # downloads        | 844.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

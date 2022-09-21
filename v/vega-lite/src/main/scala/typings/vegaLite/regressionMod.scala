@@ -10,11 +10,11 @@ object regressionMod {
   
   @JSImport("vega-lite/build/src/compile/data/regression", "RegressionTransformNode")
   @js.native
-  class RegressionTransformNode protected () extends DataFlowNode {
+  open class RegressionTransformNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, transform: RegressionTransform) = this()
     
     def assemble(): typings.vegaTypings.transformMod.RegressionTransform = js.native
     
-    /* private */ var transform: js.Any = js.native
+    /* private */ var transform: Any = js.native
   }
 }

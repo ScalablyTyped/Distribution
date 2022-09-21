@@ -61,7 +61,7 @@ trait ColumnSettings extends StObject {
     * 0: Column index to order upon.
     * 1: Direction so order to apply ("asc" for ascending order or "desc" for descending order).
     */
-  var orderFixed: js.UndefOr[js.Array[js.Any] | ObjectOrderFixed] = js.undefined
+  var orderFixed: js.UndefOr[js.Array[Any] | ObjectOrderFixed] = js.undefined
   
   /**
     * Order direction application sequence. Since: 1.10
@@ -125,7 +125,7 @@ object ColumnSettings {
     inline def setContentPaddingUndefined: Self = StObject.set(x, "contentPadding", js.undefined)
     
     inline def setCreatedCell(
-      value: (/* cell */ Node, /* cellData */ js.Any, /* rowData */ js.Any, /* row */ Double, /* col */ Double) => Unit
+      value: (/* cell */ Node, /* cellData */ Any, /* rowData */ Any, /* row */ Double, /* col */ Double) => Unit
     ): Self = StObject.set(x, "createdCell", js.Any.fromFunction5(value))
     
     inline def setCreatedCellUndefined: Self = StObject.set(x, "createdCell", js.undefined)
@@ -152,19 +152,19 @@ object ColumnSettings {
     
     inline def setOrderDataUndefined: Self = StObject.set(x, "orderData", js.undefined)
     
-    inline def setOrderDataVarargs(value: Double*): Self = StObject.set(x, "orderData", js.Array(value :_*))
+    inline def setOrderDataVarargs(value: Double*): Self = StObject.set(x, "orderData", js.Array(value*))
     
-    inline def setOrderFixed(value: js.Array[js.Any] | ObjectOrderFixed): Self = StObject.set(x, "orderFixed", value.asInstanceOf[js.Any])
+    inline def setOrderFixed(value: js.Array[Any] | ObjectOrderFixed): Self = StObject.set(x, "orderFixed", value.asInstanceOf[js.Any])
     
     inline def setOrderFixedUndefined: Self = StObject.set(x, "orderFixed", js.undefined)
     
-    inline def setOrderFixedVarargs(value: js.Any*): Self = StObject.set(x, "orderFixed", js.Array(value :_*))
+    inline def setOrderFixedVarargs(value: Any*): Self = StObject.set(x, "orderFixed", js.Array(value*))
     
     inline def setOrderSequence(value: js.Array[String]): Self = StObject.set(x, "orderSequence", value.asInstanceOf[js.Any])
     
     inline def setOrderSequenceUndefined: Self = StObject.set(x, "orderSequence", js.undefined)
     
-    inline def setOrderSequenceVarargs(value: String*): Self = StObject.set(x, "orderSequence", js.Array(value :_*))
+    inline def setOrderSequenceVarargs(value: String*): Self = StObject.set(x, "orderSequence", js.Array(value*))
     
     inline def setOrderable(value: Boolean): Self = StObject.set(x, "orderable", value.asInstanceOf[js.Any])
     
@@ -172,9 +172,7 @@ object ColumnSettings {
     
     inline def setRender(value: Double | String | ObjectColumnData | FunctionColumnRender | ObjectColumnRender): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    inline def setRenderFunction4(
-      value: (/* data */ js.Any, /* type */ js.Any, /* row */ js.Any, /* meta */ CellMetaSettings) => js.Any
-    ): Self = StObject.set(x, "render", js.Any.fromFunction4(value))
+    inline def setRenderFunction4(value: (/* data */ Any, /* type */ Any, /* row */ Any, /* meta */ CellMetaSettings) => Any): Self = StObject.set(x, "render", js.Any.fromFunction4(value))
     
     inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     

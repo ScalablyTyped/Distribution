@@ -11,7 +11,7 @@ abstract class Selection () extends StObject {
   
   /**
     * Get the value of an attribute for the first element in the Selection.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-attr-name
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-attr-name/
     * @param name - Name of attribute to get.
     * @returns Attribute value.
     */
@@ -20,7 +20,7 @@ abstract class Selection () extends StObject {
   /**
     * Get the children of each element in the set of matched elements,
     * optionally filtered by a selector.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-children-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-children-selector/
     * @param selector - Selector expression.
     * @returns Selected children.
     */
@@ -31,7 +31,7 @@ abstract class Selection () extends StObject {
     * For each element in the set, get the first element that matches the
     * selector by testing the element itself and traversing up through its
     * ancestors in the DOM tree.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-closest-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-closest-selector/
     * @param selector - Selector expression.
     * @returns Selected nodes.
     */
@@ -40,7 +40,7 @@ abstract class Selection () extends StObject {
   /**
     * Get the children of each element in the set of matched elements,
     * including text and comment nodes.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-contents
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-contents/
     * @returns Selected nodes.
     */
   def contents(): Selection = js.native
@@ -48,7 +48,7 @@ abstract class Selection () extends StObject {
   /**
     * Return the value at the named data store for the first element in the
     * set of matched elements.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-data-key
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-data-key/
     * @param key - A string naming the piece of data to set.\
     * @returns The value at the named data store.
     */
@@ -58,14 +58,14 @@ abstract class Selection () extends StObject {
   /**
     * Iterate over a Selection (k6/html), executing a function for each
     * matched element.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-each-fn
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-each-fn/
     * @param handler - Logic to execute for each element.
     */
   def each(handler: Handler): Unit = js.native
   
   /**
     * Reduce the set of matched elements to the one at the specified index.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-eq-index
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-eq-index/
     * @param index - An integer indicating the 0-based position of the element.
     * @returns Unary set of selected element.
     */
@@ -74,7 +74,7 @@ abstract class Selection () extends StObject {
   /**
     * Reduce the set of matched elements to those that match the selector
     * or pass the function's test.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-filter-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-filter-selector/
     * @param selector - Selector expression.
     * @returns Selected elements.
     */
@@ -82,7 +82,7 @@ abstract class Selection () extends StObject {
   /**
     * Reduce the set of matched elements to those that match the selector
     * or pass the function's test.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-filter-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-filter-selector/
     * @param selector - A selection to match elements against.
     * @returns Selected elements.
     */
@@ -91,7 +91,7 @@ abstract class Selection () extends StObject {
   /**
     * Reduce the set of matched elements to those that match the selector
     * or pass the function's test.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-filter-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-filter-selector/
     * @param selector - A function used as a test for each element in the set.
     * @returns Selected elements.
     */
@@ -99,7 +99,7 @@ abstract class Selection () extends StObject {
   
   /**
     * Find the selection descendants, filtered by a selector.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-find-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-find-selector/
     * @param selector - Selector expression.
     * @returns Selected elements.
     */
@@ -107,14 +107,14 @@ abstract class Selection () extends StObject {
   
   /**
     * Reduce the set of matched elements to the first.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-first
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-first/
     * @returns Unary set of first element.
     */
   def first(): Selection = js.native
   
   /**
     * Retrieve the element matched by the selector.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-get-index
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-get-index/
     * @param index - A zero-based integer indicating which element to retrieve.
     * @returns Selected element.
     */
@@ -123,7 +123,7 @@ abstract class Selection () extends StObject {
   /**
     * Reduce the set of matched elements to those that have a descendant that
     * matches the selector.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-has-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-has-selector/
     * @param selector - Selector expression.
     * @returns Selected elements.
     */
@@ -131,7 +131,7 @@ abstract class Selection () extends StObject {
   
   /**
     * Get the HTML contents of the first element.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-html
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-html/
     * @returns The HTML content of the first element.
     */
   def html(): js.UndefOr[String] = js.native
@@ -140,7 +140,7 @@ abstract class Selection () extends StObject {
     * Check the current matched set of elements against a selector or element
     * and return true if at least one of these elements matches the given
     * arguments.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-is-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-is-selector/
     * @param selector - Selector expression.
     * @returns Whether selector matched at least one element.
     */
@@ -149,7 +149,7 @@ abstract class Selection () extends StObject {
     * Check the current matched set of elements against a selector or element
     * and return true if at least one of these elements matches the given
     * arguments.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-is-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-is-selector/
     * @param selector - A selection to match against.
     * @returns Whether selector matched at least one element.
     */
@@ -158,7 +158,7 @@ abstract class Selection () extends StObject {
     * Check the current matched set of elements against a selector or element
     * and return true if at least one of these elements matches the given
     * arguments.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-is-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-is-selector/
     * @param selector - A function used as a test for each element in the set.
     * @returns Whether selector matched at least one element.
     */
@@ -166,7 +166,7 @@ abstract class Selection () extends StObject {
   
   /**
     * Reduce the set of matched elements to the final one.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-last
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-last/
     * @returns Unary set of last element.
     */
   def last(): Selection = js.native
@@ -174,15 +174,15 @@ abstract class Selection () extends StObject {
   /**
     * Pass each element in the current matched set through a function,
     * producing a new Array containing the return values.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-map-fn
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-map-fn/
     * @param mapper - Procedure to execute on each element.
     * @returns Mapper return values.
     */
-  def map(mapper: Mapper): js.Array[js.Any] = js.native
+  def map(mapper: Mapper): js.Array[Any] = js.native
   
   /**
     * Get the immediately following sibling of each element.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-next-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-next-selector/
     * @param selector - Selector expression.
     * @returns Selected elements.
     */
@@ -192,7 +192,7 @@ abstract class Selection () extends StObject {
   /**
     * Get all following siblings of each element,
     * optionally filtered by a selector.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-nextall-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-nextall-selector/
     * @param selector - Selector expression.
     * @returns Selected elements.
     */
@@ -202,7 +202,7 @@ abstract class Selection () extends StObject {
   /**
     * Get all following siblings of each element up to but not including the
     * element matched by the selector.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-nextuntil-selector-filter
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-nextuntil-selector-filter/
     * @param selector - Selector expression.
     * @returns Selected elements.
     */
@@ -211,14 +211,14 @@ abstract class Selection () extends StObject {
   
   /**
     * Remove elements.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-not-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-not-selector/
     * @param selector - Selector expression.
     * @returns Selection with matched elements removed.
     */
   def not(selector: String): Selection = js.native
   /**
     * Remove elements.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-not-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-not-selector/
     * @param selector - A function used as a test for each element in the set.
     * @returns Selection with matched elements removed.
     */
@@ -226,7 +226,7 @@ abstract class Selection () extends StObject {
   
   /**
     * Get the parent of each element, optionally filtered by a selector.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-parent-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-parent-selector/
     * @param selector - Selector expression.
     * @returns Selected elements.
     */
@@ -235,7 +235,7 @@ abstract class Selection () extends StObject {
   
   /**
     * Get the ancestors of each element, optionally filtered by a selector.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-parents-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-parents-selector/
     * @param selector - Selector expression.
     * @returns Selected elements.
     */
@@ -245,7 +245,7 @@ abstract class Selection () extends StObject {
   /**
     * Get the ancestors of each element,
     * up to but not including the element matched by the selector.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-parentsuntil-selector-filter
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-parentsuntil-selector-filter/
     * @param selector - Selector expression.
     * @returns Selected elements.
     */
@@ -254,7 +254,7 @@ abstract class Selection () extends StObject {
   
   /**
     * Get the immediately preceding sibling of each element.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-prev-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-prev-selector/
     * @param selector - Selector expression.
     * @returns Selected elements.
     */
@@ -264,7 +264,7 @@ abstract class Selection () extends StObject {
   /**
     * Get all preceding siblings of each element,
     * optionally filtered by a selector.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-prevall-selector
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-prevall-selector/
     * @param selector - Selector expression.
     * @returns Selected elements.
     */
@@ -274,7 +274,7 @@ abstract class Selection () extends StObject {
   /**
     * Get all preceding siblings of each element
     * up to but not including the element matched by the selector.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-prevuntil-selector-filter
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-prevuntil-selector-filter/
     * @param selector - Selector expression.
     * @returns Selected elements.
     */
@@ -284,7 +284,7 @@ abstract class Selection () extends StObject {
   /**
     * Encode a set of form elements as a string
     * in standard URL-encoded notation for submission.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-serialize
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-serialize/
     * @returns URL-encoded representation of the form or form elements.
     */
   def serialize(): String = js.native
@@ -292,7 +292,7 @@ abstract class Selection () extends StObject {
   /**
     * Encode a set of form elements as an array of name-value objects.
     * `[{ name: "name", value: "value" }, ... ]`
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-serializearray
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-serializearray/
     * @returns Array of name value objects of the form or form elements.
     */
   def serializeArray(): js.Array[FormValue] = js.native
@@ -300,7 +300,7 @@ abstract class Selection () extends StObject {
   /**
     * Encode a set of form elements as an object.
     * `{ inputName: "value", checkboxName: "value", ... }`
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-serializeobject
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-serializeobject/
     * @returns Object representation of the form or form elements,
     *     key is field name and value is field value.
     */
@@ -308,14 +308,14 @@ abstract class Selection () extends StObject {
   
   /**
     * Return the number of elements in the selection.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-size
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-size/
     * @returns The number of elements in the selection.
     */
   def size(): Double = js.native
   
   /**
     * Reduce the set of elements to a subset specified by a range of indices.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-slice-start-end
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-slice-start-end/
     * @param start - An integer indicating the 0-based position at which the
     *     elements begin to be selected.
     * @param end - An integer indicating the 0-based position at which the
@@ -327,21 +327,21 @@ abstract class Selection () extends StObject {
   
   /**
     * Get the text content of the selection.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-text
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-text/
     * @returns Text content.
     */
   def text(): String = js.native
   
   /**
     * Retrieve all the elements contained in the selection as an array.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-toarray
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-toarray/
     * @returns A unary selection of each element.
     */
   def toArray(): js.Array[Selection] = js.native
   
   /**
     * Get the current value of the first element.
-    * https://k6.io/docs/javascript-api/k6-html/selection/selection-val
+    * https://k6.io/docs/javascript-api/k6-html/selection/selection-val/
     * @returns The value of the first element.
     */
   def `val`(): js.UndefOr[String] = js.native

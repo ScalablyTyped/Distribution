@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetContentModerationRequest extends StObject {
   
   /**
-    * The identifier for the unsafe content job. Use JobId to identify the job in a subsequent call to GetContentModeration.
+    * The identifier for the inappropriate, unwanted, or offensive content moderation job. Use JobId to identify the job in a subsequent call to GetContentModeration.
     */
   var JobId: typings.awsSdk.rekognitionMod.JobId
   
@@ -17,7 +17,7 @@ trait GetContentModerationRequest extends StObject {
   var MaxResults: js.UndefOr[typings.awsSdk.rekognitionMod.MaxResults] = js.undefined
   
   /**
-    * If the previous response was incomplete (because there is more data to retrieve), Amazon Rekognition returns a pagination token in the response. You can use this pagination token to retrieve the next set of unsafe content labels.
+    * If the previous response was incomplete (because there is more data to retrieve), Amazon Rekognition returns a pagination token in the response. You can use this pagination token to retrieve the next set of content moderation labels.
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
   

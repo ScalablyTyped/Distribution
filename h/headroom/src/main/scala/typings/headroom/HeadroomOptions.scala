@@ -13,7 +13,7 @@ trait HeadroomOptions extends StObject {
   var classes: js.UndefOr[Bottom] = js.undefined
   
   /** vertical offset in px before element is first unpinned */
-  var offset: js.UndefOr[Double] = js.undefined
+  var offset: js.UndefOr[Down | Double] = js.undefined
   
   /** callback when at bottom of page, `this` is headroom object */
   var onBottom: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -52,7 +52,7 @@ object HeadroomOptions {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Down | Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     

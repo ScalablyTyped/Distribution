@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ElementChildrenAttribute extends StObject {
   
-  var children: js.Any
+  var children: Any
 }
 object ElementChildrenAttribute {
   
-  inline def apply(children: js.Any): ElementChildrenAttribute = {
+  inline def apply(children: Any): ElementChildrenAttribute = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementChildrenAttribute]
   }
   
   extension [Self <: ElementChildrenAttribute](x: Self) {
     
-    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }
 }

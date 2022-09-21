@@ -27,7 +27,7 @@ object TestRunCoverage {
     
     inline def setModules(value: js.Array[ModuleCoverage]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
-    inline def setModulesVarargs(value: ModuleCoverage*): Self = StObject.set(x, "modules", js.Array(value :_*))
+    inline def setModulesVarargs(value: ModuleCoverage*): Self = StObject.set(x, "modules", js.Array(value*))
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

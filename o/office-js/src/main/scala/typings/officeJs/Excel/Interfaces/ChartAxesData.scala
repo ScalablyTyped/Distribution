@@ -8,25 +8,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartAxesData extends StObject {
   
   /**
-    *
     * Represents the category axis in a chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var categoryAxis: js.UndefOr[ChartAxisData] = js.undefined
   
   /**
+    * Represents the series axis of a 3-D chart.
     *
-    * Represents the series axis of a 3-dimensional chart.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var seriesAxis: js.UndefOr[ChartAxisData] = js.undefined
   
   /**
-    *
     * Represents the value axis in an axis.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var valueAxis: js.UndefOr[ChartAxisData] = js.undefined

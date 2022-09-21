@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientBigquery.anon
 
-import typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.Dataset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,14 +28,14 @@ trait Fields extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Dataset
+  var resource: typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.Dataset
   
   /** Deprecated. Please use quotaUser instead. */
   var userIp: js.UndefOr[String] = js.undefined
 }
 object Fields {
   
-  inline def apply(projectId: String, resource: Dataset): Fields = {
+  inline def apply(projectId: String, resource: typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.Dataset): Fields = {
     val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
@@ -69,7 +68,7 @@ object Fields {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Dataset): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.Dataset): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     

@@ -15,6 +15,7 @@ import typings.prismjs.mod.util.Identifier
 import typings.prismjs.prismjsStrings.Array
 import typings.prismjs.prismjsStrings.Function
 import typings.prismjs.prismjsStrings.Number
+import typings.prismjs.prismjsStrings.RegExp
 import typings.prismjs.prismjsStrings.Undefined
 import typings.prismjs.prismjsStrings.`after-highlight`
 import typings.prismjs.prismjsStrings.`after-tokenize`
@@ -35,7 +36,6 @@ import typings.prismjs.prismjsStrings.wrap
 import typings.std.Element
 import typings.std.ParentNode
 import typings.std.Record
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +50,7 @@ object global {
     
     @JSGlobal("Prism.Token")
     @js.native
-    class Token protected ()
+    open class Token protected ()
       extends typings.prismjs.mod.Token {
       /**
         * Creates a new token.
@@ -91,11 +91,15 @@ object global {
         * @param language The name of current language.
         * @param [parent] The parent token stream, if any.
         * @return The HTML representation of the token or token stream.
-        * @private
         */
       inline def stringify(token: TokenStream, language: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(token.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[String]
       inline def stringify(token: TokenStream, language: String, parent: js.Array[String | typings.prismjs.mod.Token]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(token.asInstanceOf[js.Any], language.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[String]
     }
+    
+    @JSGlobal("Prism.disableWorkerMessageHandler")
+    @js.native
+    def disableWorkerMessageHandler: js.UndefOr[Boolean] = js.native
+    inline def disableWorkerMessageHandler_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableWorkerMessageHandler")(x.asInstanceOf[js.Any])
     
     inline def highlight(text: String, grammar: Grammar, language: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(text.asInstanceOf[js.Any], grammar.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[String]
     
@@ -196,9 +200,14 @@ object global {
     @js.native
     val languages: Languages_ = js.native
     
+    @JSGlobal("Prism.manual")
+    @js.native
+    def manual: js.UndefOr[Boolean] = js.native
+    inline def manual_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("manual")(x.asInstanceOf[js.Any])
+    
     @JSGlobal("Prism.plugins")
     @js.native
-    val plugins: Record[String, js.Any] = js.native
+    val plugins: Record[String, Any] = js.native
     
     inline def tokenize(text: String, grammar: Grammar): js.Array[String | typings.prismjs.mod.Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(text.asInstanceOf[js.Any], grammar.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | typings.prismjs.mod.Token]]
     
@@ -215,12 +224,14 @@ object global {
       inline def encode(tokens: TokenStream): TokenStream = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(tokens.asInstanceOf[js.Any]).asInstanceOf[TokenStream]
       
       /** Get the unique id of this object or give it one if it does not have one */
-      inline def objId(obj: js.Any): Identifier = ^.asInstanceOf[js.Dynamic].applyDynamic("objId")(obj.asInstanceOf[js.Any]).asInstanceOf[Identifier]
+      inline def objId(obj: Any): Identifier = ^.asInstanceOf[js.Dynamic].applyDynamic("objId")(obj.asInstanceOf[js.Any]).asInstanceOf[Identifier]
       
       inline def `type`(o: String): typings.prismjs.prismjsStrings.String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[typings.prismjs.prismjsStrings.String]
-      inline def `type`(o: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[String]
-      inline def `type`(o: js.Array[js.Any]): Array = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[Array]
+      inline def `type`(o: js.Array[Any]): Array = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[Array]
       inline def `type`(o: js.Function): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[Function]
+      // tslint:enable:ban-types
+      inline def `type`(o: js.RegExp): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+      inline def `type`(o: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[String]
       // tslint:disable:ban-types
       inline def `type`(o: Boolean): typings.prismjs.prismjsStrings.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[typings.prismjs.prismjsStrings.Boolean]
       inline def `type`(o: Double): Number = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[Number]
@@ -228,8 +239,6 @@ object global {
       inline def `type`(o: Null): typings.prismjs.prismjsStrings.Null = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[typings.prismjs.prismjsStrings.Null]
       inline def `type`(o: Unit): Undefined = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[Undefined]
       inline def `type`(o: typings.std.Number): Number = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[Number]
-      // tslint:enable:ban-types
-      inline def `type`(o: RegExp): typings.prismjs.prismjsStrings.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[typings.prismjs.prismjsStrings.RegExp]
     }
   }
 }

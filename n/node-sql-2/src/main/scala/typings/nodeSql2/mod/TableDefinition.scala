@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableDefinition[Name /* <: String */, Row] extends StObject {
   
   var columns: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
+  {[ CName in keyof Row ]: node-sql-2.node-sql-2.ColumnDefinition<CName, Row[CName]>}
     */ typings.nodeSql2.nodeSql2Strings.TableDefinition & TopLevel[Row]
   
   var dialect: js.UndefOr[SQLDialects] = js.undefined
@@ -25,7 +25,7 @@ object TableDefinition {
   
   inline def apply[Name /* <: String */, Row](
     columns: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
+  {[ CName in keyof Row ]: node-sql-2.node-sql-2.ColumnDefinition<CName, Row[CName]>}
     */ typings.nodeSql2.nodeSql2Strings.TableDefinition & TopLevel[Row],
     name: Name,
     schema: String
@@ -38,7 +38,7 @@ object TableDefinition {
     
     inline def setColumns(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ CName in keyof Row ]: node-sql-2.sql.ColumnDefinition<CName, Row[CName]>}
+    {[ CName in keyof Row ]: node-sql-2.node-sql-2.ColumnDefinition<CName, Row[CName]>}
       */ typings.nodeSql2.nodeSql2Strings.TableDefinition & TopLevel[Row]
     ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

@@ -1,20 +1,16 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.collapseCollapseMod.CollapseProps
-import typings.react.mod.ComponentType
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object collapseMod extends Shortcut {
+object collapseMod {
   
-  @JSImport("@material-ui/core/Collapse", JSImport.Default)
+  @JSImport("@material-ui/core/Collapse", JSImport.Namespace)
   @js.native
-  val default: ComponentType[CollapseProps] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ComponentType[CollapseProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `collapseMod.foo` */
-  override def _to: ComponentType[CollapseProps] = default
+  inline def default(props: CollapseProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

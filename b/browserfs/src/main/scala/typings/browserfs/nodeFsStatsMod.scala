@@ -1,7 +1,6 @@
 package typings.browserfs
 
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object nodeFsStatsMod {
   
   @JSImport("browserfs/dist/node/core/node_fs_stats", JSImport.Default)
   @js.native
-  class default protected () extends Stats {
+  open class default protected () extends Stats {
     /**
       * Provides information about a particular entry in the file system.
       * @param [Number] item_type type of the item (FILE, DIRECTORY, SYMLINK, or SOCKET)
@@ -23,20 +22,20 @@ object nodeFsStatsMod {
       */
     def this(itemType: FileType, size: Double) = this()
     def this(itemType: FileType, size: Double, mode: Double) = this()
-    def this(itemType: FileType, size: Double, mode: Double, atime: Date) = this()
-    def this(itemType: FileType, size: Double, mode: Unit, atime: Date) = this()
-    def this(itemType: FileType, size: Double, mode: Double, atime: Unit, mtime: Date) = this()
-    def this(itemType: FileType, size: Double, mode: Double, atime: Date, mtime: Date) = this()
-    def this(itemType: FileType, size: Double, mode: Unit, atime: Unit, mtime: Date) = this()
-    def this(itemType: FileType, size: Double, mode: Unit, atime: Date, mtime: Date) = this()
-    def this(itemType: FileType, size: Double, mode: Double, atime: Unit, mtime: Unit, ctime: Date) = this()
-    def this(itemType: FileType, size: Double, mode: Double, atime: Unit, mtime: Date, ctime: Date) = this()
-    def this(itemType: FileType, size: Double, mode: Double, atime: Date, mtime: Unit, ctime: Date) = this()
-    def this(itemType: FileType, size: Double, mode: Double, atime: Date, mtime: Date, ctime: Date) = this()
-    def this(itemType: FileType, size: Double, mode: Unit, atime: Unit, mtime: Unit, ctime: Date) = this()
-    def this(itemType: FileType, size: Double, mode: Unit, atime: Unit, mtime: Date, ctime: Date) = this()
-    def this(itemType: FileType, size: Double, mode: Unit, atime: Date, mtime: Unit, ctime: Date) = this()
-    def this(itemType: FileType, size: Double, mode: Unit, atime: Date, mtime: Date, ctime: Date) = this()
+    def this(itemType: FileType, size: Double, mode: Double, atime: js.Date) = this()
+    def this(itemType: FileType, size: Double, mode: Unit, atime: js.Date) = this()
+    def this(itemType: FileType, size: Double, mode: Double, atime: js.Date, mtime: js.Date) = this()
+    def this(itemType: FileType, size: Double, mode: Double, atime: Unit, mtime: js.Date) = this()
+    def this(itemType: FileType, size: Double, mode: Unit, atime: js.Date, mtime: js.Date) = this()
+    def this(itemType: FileType, size: Double, mode: Unit, atime: Unit, mtime: js.Date) = this()
+    def this(itemType: FileType, size: Double, mode: Double, atime: js.Date, mtime: js.Date, ctime: js.Date) = this()
+    def this(itemType: FileType, size: Double, mode: Double, atime: js.Date, mtime: Unit, ctime: js.Date) = this()
+    def this(itemType: FileType, size: Double, mode: Double, atime: Unit, mtime: js.Date, ctime: js.Date) = this()
+    def this(itemType: FileType, size: Double, mode: Double, atime: Unit, mtime: Unit, ctime: js.Date) = this()
+    def this(itemType: FileType, size: Double, mode: Unit, atime: js.Date, mtime: js.Date, ctime: js.Date) = this()
+    def this(itemType: FileType, size: Double, mode: Unit, atime: js.Date, mtime: Unit, ctime: js.Date) = this()
+    def this(itemType: FileType, size: Double, mode: Unit, atime: Unit, mtime: js.Date, ctime: js.Date) = this()
+    def this(itemType: FileType, size: Double, mode: Unit, atime: Unit, mtime: Unit, ctime: js.Date) = this()
   }
   /* static members */
   object default {

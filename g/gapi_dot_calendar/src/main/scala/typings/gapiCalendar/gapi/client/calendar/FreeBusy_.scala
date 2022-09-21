@@ -1,5 +1,6 @@
 package typings.gapiCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.gapiCalendar.anon.Busy
 import typings.gapiCalendar.anon.Calendars
 import typings.gapiCalendar.gapiCalendarStrings.calendarNumbersignfreeBusy
@@ -9,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FreeBusy_ extends StObject {
   
-  def calendars(key: String): Busy
+  var calendars: StringDictionary[Busy]
   
-  def groups(key: String): Calendars
+  var groups: StringDictionary[Calendars]
   
   var kind: calendarNumbersignfreeBusy
   
@@ -21,16 +22,21 @@ trait FreeBusy_ extends StObject {
 }
 object FreeBusy_ {
   
-  inline def apply(calendars: String => Busy, groups: String => Calendars, timeMax: datetime, timeMin: datetime): FreeBusy_ = {
-    val __obj = js.Dynamic.literal(calendars = js.Any.fromFunction1(calendars), groups = js.Any.fromFunction1(groups), kind = "calendar#freeBusy", timeMax = timeMax.asInstanceOf[js.Any], timeMin = timeMin.asInstanceOf[js.Any])
+  inline def apply(
+    calendars: StringDictionary[Busy],
+    groups: StringDictionary[Calendars],
+    timeMax: datetime,
+    timeMin: datetime
+  ): FreeBusy_ = {
+    val __obj = js.Dynamic.literal(calendars = calendars.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], kind = "calendar#freeBusy", timeMax = timeMax.asInstanceOf[js.Any], timeMin = timeMin.asInstanceOf[js.Any])
     __obj.asInstanceOf[FreeBusy_]
   }
   
   extension [Self <: FreeBusy_](x: Self) {
     
-    inline def setCalendars(value: String => Busy): Self = StObject.set(x, "calendars", js.Any.fromFunction1(value))
+    inline def setCalendars(value: StringDictionary[Busy]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
-    inline def setGroups(value: String => Calendars): Self = StObject.set(x, "groups", js.Any.fromFunction1(value))
+    inline def setGroups(value: StringDictionary[Calendars]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     inline def setKind(value: calendarNumbersignfreeBusy): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis/build/src/apis/fitness/v1", "fitness_v1.Resource$Users")
 @js.native
-class ResourceUsers protected () extends StObject {
+open class ResourceUsers protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native

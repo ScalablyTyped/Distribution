@@ -33,7 +33,7 @@ object mod {
       * Register new middleware and array of middlewares.
       */
     def use(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param fn because its type any is not an array type */ fn: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param fn because its type any is not an array type */ fn: Any
     ): typings.textr.mod.textr = js.native
   }
 }

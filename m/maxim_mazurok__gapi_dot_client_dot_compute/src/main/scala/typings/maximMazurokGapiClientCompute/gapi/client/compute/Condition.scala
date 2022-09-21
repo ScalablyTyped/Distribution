@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Condition extends StObject {
   
-  /** Trusted attributes supplied by the IAM system. */
+  /** This is deprecated and has no effect. Do not use. */
   var iam: js.UndefOr[String] = js.undefined
   
-  /** An operator to apply the subject with. */
+  /** This is deprecated and has no effect. Do not use. */
   var op: js.UndefOr[String] = js.undefined
   
-  /** Trusted attributes discharged by the service. */
+  /** This is deprecated and has no effect. Do not use. */
   var svc: js.UndefOr[String] = js.undefined
   
-  /** Trusted attributes supplied by any service that owns resources and uses the IAM system for access control. */
+  /** This is deprecated and has no effect. Do not use. */
   var sys: js.UndefOr[String] = js.undefined
   
-  /** The objects of the condition. */
+  /** This is deprecated and has no effect. Do not use. */
   var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Condition {
@@ -50,6 +50,6 @@ object Condition {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

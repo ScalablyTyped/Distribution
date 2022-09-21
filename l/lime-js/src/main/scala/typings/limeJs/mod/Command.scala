@@ -12,7 +12,7 @@ trait Command
   
   var reason: js.UndefOr[Reason] = js.undefined
   
-  var resource: js.UndefOr[js.Any] = js.undefined
+  var resource: js.UndefOr[Any] = js.undefined
   
   var status: js.UndefOr[String] = js.undefined
   
@@ -35,7 +35,7 @@ object Command {
     
     inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    inline def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     

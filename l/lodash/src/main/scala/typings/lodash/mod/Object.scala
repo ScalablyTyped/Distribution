@@ -23,7 +23,7 @@ trait Object[T]
   /**
     * @see _.assign
     */
-  def assign(otherArgs: js.Any*): Object[js.Any] = js.native
+  def assign(otherArgs: Any*): Object[Any] = js.native
   /**
     * @see _.assign
     */
@@ -48,7 +48,7 @@ trait Object[T]
   /**
     * @see _.assignIn
     */
-  def assignIn[TResult](otherArgs: js.Any*): Object[TResult] = js.native
+  def assignIn[TResult](otherArgs: Any*): Object[TResult] = js.native
   /**
     * @see _.assignIn
     */
@@ -73,7 +73,7 @@ trait Object[T]
   /**
     * @see _.assignInWith
     */
-  def assignInWith[TResult](otherArgs: js.Any*): Object[TResult] = js.native
+  def assignInWith[TResult](otherArgs: Any*): Object[TResult] = js.native
   /**
     * @see _.assignInWith
     */
@@ -104,7 +104,7 @@ trait Object[T]
   /**
     * @see _.assignWith
     */
-  def assignWith[TResult](otherArgs: js.Any*): Object[TResult] = js.native
+  def assignWith[TResult](otherArgs: Any*): Object[TResult] = js.native
   /**
     * @see _.assignWith
     */
@@ -173,7 +173,7 @@ trait Object[T]
   /**
     * @see _.defaults
     */
-  def defaults(sources: js.Any*): Object[js.Any] = js.native
+  def defaults(sources: Any*): Object[Any] = js.native
   /**
     * @see _.defaults
     */
@@ -194,30 +194,30 @@ trait Object[T]
   /**
     * @see _.defaultsDeep
     */
-  def defaultsDeep(sources: js.Any*): Object[js.Any] = js.native
+  def defaultsDeep(sources: Any*): Object[Any] = js.native
   
   /**
     * @see _.each
     */
   def each(): Object[T] = js.native
-  def each(iteratee: ObjectIterator[T, js.Any]): Object[T] = js.native
+  def each(iteratee: ObjectIterator[T, Any]): Object[T] = js.native
   
   /**
     * @see _.eachRight
     */
   def eachRight(): Object[T] = js.native
-  def eachRight(iteratee: ObjectIterator[T, js.Any]): Object[T] = js.native
+  def eachRight(iteratee: ObjectIterator[T, Any]): Object[T] = js.native
   /**
     * @see _.eachRight
     */
   @JSName("eachRight")
-  var eachRight_Original: js.Function1[/* iteratee */ js.UndefOr[ObjectIterator[T, js.Any]], Object[T]] = js.native
+  var eachRight_Original: js.Function1[/* iteratee */ js.UndefOr[ObjectIterator[T, Any]], Object[T]] = js.native
   
   /**
     * @see _.each
     */
   @JSName("each")
-  var each_Original: js.Function1[/* iteratee */ js.UndefOr[ObjectIterator[T, js.Any]], Object[T]] = js.native
+  var each_Original: js.Function1[/* iteratee */ js.UndefOr[ObjectIterator[T, Any]], Object[T]] = js.native
   
   /**
     * @see _.every
@@ -232,7 +232,7 @@ trait Object[T]
   /**
     * @see _.extend
     */
-  def extend(otherArgs: js.Any*): Object[js.Any] = js.native
+  def extend(otherArgs: Any*): Object[Any] = js.native
   /**
     * @see _.extend
     */
@@ -257,7 +257,7 @@ trait Object[T]
   /**
     * @see _.extendWith
     */
-  def extendWith(otherArgs: js.Any*): Object[js.Any] = js.native
+  def extendWith(otherArgs: Any*): Object[Any] = js.native
   /**
     * @see _.extendWith
     */
@@ -347,7 +347,7 @@ trait Object[T]
   /**
     * @see _.flatMap
     */
-  def flatMap(iteratee: js.Tuple2[PropertyName, js.Any]): Collection[Boolean] = js.native
+  def flatMap(iteratee: js.Tuple2[PropertyName, Any]): Collection[Boolean] = js.native
   /**
     * @see _.flatMap
     */
@@ -364,7 +364,7 @@ trait Object[T]
   /**
     * @see _.flatMapDeep
     */
-  def flatMapDeep(iteratee: js.Tuple2[PropertyName, js.Any]): Collection[Boolean] = js.native
+  def flatMapDeep(iteratee: js.Tuple2[PropertyName, Any]): Collection[Boolean] = js.native
   /**
     * @see _.flatMapDeep
     */
@@ -385,8 +385,8 @@ trait Object[T]
   /**
     * @see _.flatMapDepth
     */
-  def flatMapDepth(iteratee: js.Tuple2[PropertyName, js.Any]): Collection[Boolean] = js.native
-  def flatMapDepth(iteratee: js.Tuple2[PropertyName, js.Any], depth: Double): Collection[Boolean] = js.native
+  def flatMapDepth(iteratee: js.Tuple2[PropertyName, Any]): Collection[Boolean] = js.native
+  def flatMapDepth(iteratee: js.Tuple2[PropertyName, Any], depth: Double): Collection[Boolean] = js.native
   /**
     * @see _.flatMapDepth
     */
@@ -399,27 +399,20 @@ trait Object[T]
     * @see _.forEach
     */
   def forEach(): Object[T] = js.native
-  def forEach(iteratee: ObjectIterator[T, js.Any]): Object[T] = js.native
+  def forEach(iteratee: ObjectIterator[T, Any]): Object[T] = js.native
   
   /**
     * @see _.forEachRight
     */
   def forEachRight(): Object[T] = js.native
-  def forEachRight(iteratee: ObjectIterator[T, js.Any]): Object[T] = js.native
+  def forEachRight(iteratee: ObjectIterator[T, Any]): Object[T] = js.native
   
   /**
     * @see _.get
     */
-  def get(path: PropertyPath): js.Any = js.native
-  def get(path: PropertyPath, defaultValue: js.Any): js.Any = js.native
+  def get(path: PropertyPath): Any = js.native
+  def get(path: PropertyPath, defaultValue: Any): Any = js.native
   def get[TKey /* <: /* keyof T */ java.lang.String */](path: js.Array[TKey]): /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any = js.native
-  /**
-    * @see _.get
-    */
-  def get[TKey /* <: /* keyof T */ java.lang.String */, TDefault](path: TKey, defaultValue: TDefault): (Exclude[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any, 
-    Unit
-  ]) | TDefault = js.native
   def get[TKey /* <: /* keyof T */ java.lang.String */, TDefault](path: js.Array[TKey], defaultValue: TDefault): (Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any, 
     Unit
@@ -461,7 +454,15 @@ trait Object[T]
     * @see _.get
     */
   @JSName("get")
-  def get_TKey_String[TKey /* <: /* keyof T */ java.lang.String */](path: TKey): /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any = js.native
+  def get_TKey_StringTDefault_Union[TKey /* <: /* keyof T */ java.lang.String */, TDefault](path: TKey, defaultValue: TDefault): (Exclude[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any, 
+    Unit
+  ]) | TDefault = js.native
+  /**
+    * @see _.get
+    */
+  @JSName("get")
+  def get_TKey_String_Any[TKey /* <: /* keyof T */ java.lang.String */](path: TKey): /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any = js.native
   
   /**
     * @see _.groupBy
@@ -538,11 +539,11 @@ trait Object[T]
   /**
     * @see _.map
     */
-  def map(iteratee: js.Tuple2[PropertyName, js.Any]): Collection[Boolean] = js.native
+  def map(iteratee: js.Tuple2[PropertyName, Any]): Collection[Boolean] = js.native
   /**
     * @see _.map
     */
-  def map(iteratee: PropertyName): Collection[js.Any] = js.native
+  def map(iteratee: PropertyName): Collection[Any] = js.native
   /**
     * @see _.map
     */
@@ -572,7 +573,7 @@ trait Object[T]
   def mapValues(iteratee: java.lang.String): Object[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
-    */ typings.lodash.lodashStrings.Object & TopLevel[js.Any]
+    */ typings.lodash.lodashStrings.Object & TopLevel[Any]
   ] = js.native
   /**
     * @see _.mapValues
@@ -580,7 +581,7 @@ trait Object[T]
   def mapValues(iteratee: js.Object): Object[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: boolean}
-    */ typings.lodash.lodashStrings.Object & TopLevel[js.Any]
+    */ typings.lodash.lodashStrings.Object & TopLevel[Any]
   ] = js.native
   /**
     * @see _.mapValues
@@ -593,7 +594,7 @@ trait Object[T]
   ): Object[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: TResult}
-    */ typings.lodash.lodashStrings.Object & TopLevel[js.Any]
+    */ typings.lodash.lodashStrings.Object & TopLevel[Any]
   ] = js.native
   /**
     * @see _.mapValues
@@ -615,7 +616,7 @@ trait Object[T]
   /**
     * @see _.merge
     */
-  def merge(otherArgs: js.Any*): Object[js.Any] = js.native
+  def merge(otherArgs: Any*): Object[Any] = js.native
   /**
     * @see _.merge
     */
@@ -636,7 +637,7 @@ trait Object[T]
   /**
     * @see _.mergeWith
     */
-  def mergeWith(otherArgs: js.Any*): Object[js.Any] = js.native
+  def mergeWith(otherArgs: Any*): Object[Any] = js.native
   /**
     * @see _.mergeWith
     */
@@ -717,17 +718,29 @@ trait Object[T]
   /**
     * @see _.pick
     */
-  def pick(props: PropertyPath*): Object[PartialObject[T]] = js.native
+  def pick(props: Many[PropertyPath]*): Object[PartialObject[T]] = js.native
   
   /**
     * @see _.pickBy
     */
-  def pickBy(): Object[PartialObject[T]] = js.native
+  def pickBy(): Object[
+    PartialObject[T] | (NumericDictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]) | (Dictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ])
+  ] = js.native
   def pickBy(
     predicate: ValueKeyIteratee[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
-  ): Object[PartialObject[T]] = js.native
+  ): Object[
+    PartialObject[T] | (NumericDictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]) | (Dictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ])
+  ] = js.native
   /**
     * @see _.pickBy
     */
@@ -849,19 +862,21 @@ trait Object[T]
   /**
     * @see _.transform
     */
-  def transform(): ImpChain[T | Dictionary[js.Any]] = js.native
+  def transform(): ImpChain[T | Dictionary[Any]] = js.native
   /**
     * @see _.transform
     */
   def transform[TResult](
     iteratee: MemoVoidDictionaryIterator[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
+      java.lang.String, 
       TResult
     ]
   ): ImpChain[TResult] = js.native
   def transform[TResult](
     iteratee: MemoVoidDictionaryIterator[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
+      java.lang.String, 
       TResult
     ],
     accumulator: TResult
@@ -870,21 +885,21 @@ trait Object[T]
   /**
     * @see _.updateWith
     */
-  def updateWith(path: PropertyPath, updater: js.Function1[/* oldValue */ js.Any, js.Any]): this.type = js.native
+  def updateWith(path: PropertyPath, updater: js.Function1[/* oldValue */ Any, Any]): this.type = js.native
   def updateWith(
     path: PropertyPath,
-    updater: js.Function1[/* oldValue */ js.Any, js.Any],
+    updater: js.Function1[/* oldValue */ Any, Any],
     customizer: SetWithCustomizer[T]
   ): this.type = js.native
   /**
     * @see _.updateWith
     */
   @JSName("updateWith")
-  def updateWith_TResult_Object[TResult](path: PropertyPath, updater: js.Function1[/* oldValue */ js.Any, js.Any]): Object[TResult] = js.native
+  def updateWith_TResult_Object[TResult](path: PropertyPath, updater: js.Function1[/* oldValue */ Any, Any]): Object[TResult] = js.native
   @JSName("updateWith")
   def updateWith_TResult_Object[TResult](
     path: PropertyPath,
-    updater: js.Function1[/* oldValue */ js.Any, js.Any],
+    updater: js.Function1[/* oldValue */ Any, Any],
     customizer: SetWithCustomizer[T]
   ): Object[TResult] = js.native
   

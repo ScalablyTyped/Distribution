@@ -2,7 +2,6 @@ package typings.powerappsComponentFramework.ComponentFramework
 
 import typings.powerappsComponentFramework.ComponentFramework.UserSettingApi.DateFormattingInfo
 import typings.powerappsComponentFramework.ComponentFramework.UserSettingApi.NumberFormattingInfo
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ trait UserSettings extends StObject {
     * @param date date to get the offset from utc for
     */
   def getTimeZoneOffsetMinutes(): Double = js.native
-  def getTimeZoneOffsetMinutes(date: Date): Double = js.native
+  def getTimeZoneOffsetMinutes(date: js.Date): Double = js.native
   
   /**
     * Returns true if the language is right to left

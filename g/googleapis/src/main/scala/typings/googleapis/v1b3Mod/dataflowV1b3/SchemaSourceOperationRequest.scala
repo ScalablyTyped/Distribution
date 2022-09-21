@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A work item that represents the different operations that can be performed
-  * on a user-defined Source specification.
-  */
 trait SchemaSourceOperationRequest extends StObject {
   
   /**
@@ -18,13 +14,12 @@ trait SchemaSourceOperationRequest extends StObject {
   /**
     * User-provided name of the Read instruction for this source.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * System-defined name for the Read instruction for this source in the
-    * original workflow graph.
+    * System-defined name for the Read instruction for this source in the original workflow graph.
     */
-  var originalName: js.UndefOr[String] = js.undefined
+  var originalName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Information about a request to split a source.
@@ -32,16 +27,14 @@ trait SchemaSourceOperationRequest extends StObject {
   var split: js.UndefOr[SchemaSourceSplitRequest] = js.undefined
   
   /**
-    * System-defined name of the stage containing the source operation. Unique
-    * across the workflow.
+    * System-defined name of the stage containing the source operation. Unique across the workflow.
     */
-  var stageName: js.UndefOr[String] = js.undefined
+  var stageName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * System-defined name of the Read instruction for this source. Unique
-    * across the workflow.
+    * System-defined name of the Read instruction for this source. Unique across the workflow.
     */
-  var systemName: js.UndefOr[String] = js.undefined
+  var systemName: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSourceOperationRequest {
   
@@ -58,9 +51,13 @@ object SchemaSourceOperationRequest {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalNameNull: Self = StObject.set(x, "originalName", null)
     
     inline def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
     
@@ -70,9 +67,13 @@ object SchemaSourceOperationRequest {
     
     inline def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
+    inline def setStageNameNull: Self = StObject.set(x, "stageName", null)
+    
     inline def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
     
     inline def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
+    
+    inline def setSystemNameNull: Self = StObject.set(x, "systemName", null)
     
     inline def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
   }

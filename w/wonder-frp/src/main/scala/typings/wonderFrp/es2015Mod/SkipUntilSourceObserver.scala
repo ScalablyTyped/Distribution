@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/es2015", "SkipUntilSourceObserver")
 @js.native
-class SkipUntilSourceObserver protected ()
+open class SkipUntilSourceObserver protected ()
   extends typings.wonderFrp.observerSkipUntilSourceObserverMod.SkipUntilSourceObserver {
   def this(
     prevObserver: IObserver,

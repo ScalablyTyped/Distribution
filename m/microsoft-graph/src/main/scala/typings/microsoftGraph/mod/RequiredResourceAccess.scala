@@ -28,7 +28,7 @@ object RequiredResourceAccess {
     
     inline def setResourceAccessUndefined: Self = StObject.set(x, "resourceAccess", js.undefined)
     
-    inline def setResourceAccessVarargs(value: ResourceAccess*): Self = StObject.set(x, "resourceAccess", js.Array(value :_*))
+    inline def setResourceAccessVarargs(value: ResourceAccess*): Self = StObject.set(x, "resourceAccess", js.Array(value*))
     
     inline def setResourceAppId(value: String): Self = StObject.set(x, "resourceAppId", value.asInstanceOf[js.Any])
     

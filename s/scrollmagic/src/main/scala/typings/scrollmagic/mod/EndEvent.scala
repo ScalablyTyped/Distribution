@@ -1,7 +1,6 @@
 package typings.scrollmagic.mod
 
 import typings.scrollmagic.scrollmagicStrings.end
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,8 +21,8 @@ object EndEvent {
     progress: Double,
     state: SceneState,
     target: Scene,
-    timeStamp: Date,
-    timestamp: Date
+    timeStamp: js.Date,
+    timestamp: js.Date
   ): EndEvent = {
     val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("end")

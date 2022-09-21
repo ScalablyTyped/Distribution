@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.MathUtils")
 @js.native
-class MathUtils ()
+open class MathUtils ()
   extends StObject
      with typings.phaser.spine.MathUtils
 object MathUtils {

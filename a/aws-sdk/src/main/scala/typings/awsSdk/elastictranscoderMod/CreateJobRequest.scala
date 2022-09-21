@@ -63,7 +63,7 @@ object CreateJobRequest {
     
     inline def setInputsUndefined: Self = StObject.set(x, "Inputs", js.undefined)
     
-    inline def setInputsVarargs(value: JobInput*): Self = StObject.set(x, "Inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: JobInput*): Self = StObject.set(x, "Inputs", js.Array(value*))
     
     inline def setOutput(value: CreateJobOutput): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
     
@@ -77,7 +77,7 @@ object CreateJobRequest {
     
     inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
-    inline def setOutputsVarargs(value: CreateJobOutput*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: CreateJobOutput*): Self = StObject.set(x, "Outputs", js.Array(value*))
     
     inline def setPipelineId(value: Id): Self = StObject.set(x, "PipelineId", value.asInstanceOf[js.Any])
     
@@ -85,7 +85,7 @@ object CreateJobRequest {
     
     inline def setPlaylistsUndefined: Self = StObject.set(x, "Playlists", js.undefined)
     
-    inline def setPlaylistsVarargs(value: CreateJobPlaylist*): Self = StObject.set(x, "Playlists", js.Array(value :_*))
+    inline def setPlaylistsVarargs(value: CreateJobPlaylist*): Self = StObject.set(x, "Playlists", js.Array(value*))
     
     inline def setUserMetadata(value: UserMetadata): Self = StObject.set(x, "UserMetadata", value.asInstanceOf[js.Any])
     

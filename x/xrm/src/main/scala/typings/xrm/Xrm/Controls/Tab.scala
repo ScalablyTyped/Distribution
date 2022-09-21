@@ -57,6 +57,7 @@ trait Tab
   /**
     * Sets display state of the tab.
     * @param displayState Display state of the tab, as either "expanded" or "collapsed"
+    * @deprecated Deprecated in the 2021 release wave 1 (April 2021). Use the setFocus method in Unified Interface to ensure the correct tab is opened on a form.
     */
   def setDisplayState(displayState: DisplayState): Unit
 }

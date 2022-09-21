@@ -1,7 +1,6 @@
 package typings.ebml.mod
 
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +41,7 @@ object Tag {
     
     var b: Double
     
-    var d: Date
+    var d: js.Date
     
     var f: Double
     
@@ -56,7 +55,7 @@ object Tag {
   }
   object DataTypeToTypeMap {
     
-    inline def apply(`8`: String, b: Double, d: Date, f: Double, i: Double, m: Unit, s: String, u: Double): DataTypeToTypeMap = {
+    inline def apply(`8`: String, b: Double, d: js.Date, f: Double, i: Double, m: Unit, s: String, u: Double): DataTypeToTypeMap = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any])
       __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataTypeToTypeMap]
@@ -68,7 +67,7 @@ object Tag {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      inline def setD(value: Date): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+      inline def setD(value: js.Date): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
       inline def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
       

@@ -53,11 +53,11 @@ object BuildOptionDefinition {
     
     inline def setGroups(value: js.Array[BuildOptionGroupDefinition]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    inline def setGroupsVarargs(value: BuildOptionGroupDefinition*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: BuildOptionGroupDefinition*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setInputs(value: js.Array[BuildOptionInputDefinition]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    inline def setInputsVarargs(value: BuildOptionInputDefinition*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: BuildOptionInputDefinition*): Self = StObject.set(x, "inputs", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ConsensusRegisterRequest.
   * @param [properties] Properties to set
   */
-class ConsensusRegisterRequest ()
+open class ConsensusRegisterRequest ()
   extends StObject
      with IConsensusRegisterRequest {
   def this(properties: IConsensusRegisterRequest) = this()
@@ -28,7 +27,7 @@ class ConsensusRegisterRequest ()
     * Converts this ConsensusRegisterRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
   
   /** ConsensusRegisterRequest version. */
   @JSName("version")
@@ -49,6 +48,8 @@ object ConsensusRegisterRequest {
   inline def create(): ConsensusRegisterRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ConsensusRegisterRequest]
   inline def create(properties: IConsensusRegisterRequest): ConsensusRegisterRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ConsensusRegisterRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ConsensusRegisterRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusRegisterRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ConsensusRegisterRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusRegisterRequest]
   /**
     * Decodes a ConsensusRegisterRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -59,9 +60,8 @@ object ConsensusRegisterRequest {
     */
   inline def decode(reader: Reader): ConsensusRegisterRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusRegisterRequest]
   inline def decode(reader: Reader, length: Double): ConsensusRegisterRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusRegisterRequest]
-  inline def decode(reader: Uint8Array): ConsensusRegisterRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusRegisterRequest]
-  inline def decode(reader: Uint8Array, length: Double): ConsensusRegisterRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusRegisterRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ConsensusRegisterRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusRegisterRequest]
   /**
     * Decodes a ConsensusRegisterRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -70,7 +70,6 @@ object ConsensusRegisterRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): ConsensusRegisterRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusRegisterRequest]
-  inline def decodeDelimited(reader: Uint8Array): ConsensusRegisterRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusRegisterRequest]
   
   /**
     * Encodes the specified ConsensusRegisterRequest message. Does not implicitly {@link ConsensusRegisterRequest.verify|verify} messages.
@@ -95,7 +94,7 @@ object ConsensusRegisterRequest {
     * @param object Plain object
     * @returns ConsensusRegisterRequest
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ConsensusRegisterRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusRegisterRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): ConsensusRegisterRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusRegisterRequest]
   
   /**
     * Creates a plain object from a ConsensusRegisterRequest message. Also converts values to other types if specified.
@@ -103,13 +102,13 @@ object ConsensusRegisterRequest {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: ConsensusRegisterRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ConsensusRegisterRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ConsensusRegisterRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ConsensusRegisterRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ConsensusRegisterRequest message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

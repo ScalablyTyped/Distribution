@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PointCloudRendererConstructor
   extends StObject
-     with Instantiable0[PointCloudRenderer]
+     with /**
+  * A PointCloudRenderer allows you to specify how points in a [PointCloudLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html) are rendered.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html)
+  */
+Instantiable0[PointCloudRenderer]
      with Instantiable1[/* properties */ PointCloudRendererProperties, PointCloudRenderer] {
   
-  def fromJSON(json: js.Any): PointCloudRenderer = js.native
+  def fromJSON(json: Any): PointCloudRenderer = js.native
 }

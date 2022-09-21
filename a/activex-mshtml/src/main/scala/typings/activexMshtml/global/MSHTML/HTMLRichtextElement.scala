@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLRichtextElement")
 @js.native
-/* private */ class HTMLRichtextElement ()
+/* private */ open class HTMLRichtextElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLRichtextElement

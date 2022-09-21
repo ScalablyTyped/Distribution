@@ -27,10 +27,10 @@ object WorkspaceFoldersChangeEvent {
     
     inline def setAdded(value: js.Array[WorkspaceFolder]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    inline def setAddedVarargs(value: WorkspaceFolder*): Self = StObject.set(x, "added", js.Array(value :_*))
+    inline def setAddedVarargs(value: WorkspaceFolder*): Self = StObject.set(x, "added", js.Array(value*))
     
     inline def setRemoved(value: js.Array[WorkspaceFolder]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    inline def setRemovedVarargs(value: WorkspaceFolder*): Self = StObject.set(x, "removed", js.Array(value :_*))
+    inline def setRemovedVarargs(value: WorkspaceFolder*): Self = StObject.set(x, "removed", js.Array(value*))
   }
 }

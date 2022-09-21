@@ -16,7 +16,9 @@ trait RayOptions extends StObject {
   
   var from: js.Tuple2[Double, Double]
   
-  var mode: js.UndefOr[Double] = js.undefined
+  var mode: js.UndefOr[
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Ray.CLOSEST */ Any
+  ] = js.undefined
   
   var skipBackfaces: js.UndefOr[Boolean] = js.undefined
   
@@ -49,7 +51,7 @@ object RayOptions {
     
     inline def setFrom(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Ray.CLOSEST */ Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     

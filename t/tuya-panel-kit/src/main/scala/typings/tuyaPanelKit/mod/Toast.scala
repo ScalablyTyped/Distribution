@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "Toast")
 @js.native
-class Toast protected ()
-  extends Component[ToastProps, js.Object, js.Any] {
+open class Toast protected ()
+  extends Component[ToastProps, js.Object, Any] {
   def this(props: ToastProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ToastProps, context: js.Any) = this()
+  def this(props: ToastProps, context: Any) = this()
 }
 /* static members */
 object Toast {

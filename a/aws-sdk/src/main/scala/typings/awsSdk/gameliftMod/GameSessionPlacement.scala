@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GameSessionPlacement extends StObject {
   
   /**
-    * DNS identifier assigned to the instance that is running the game session. Values have the following format:   TLS-enabled fleets: &lt;unique identifier&gt;.&lt;region identifier&gt;.amazongamelift.com.   Non-TLS-enabled fleets: ec2-&lt;unique identifier&gt;.compute.amazonaws.com. (See Amazon EC2 Instance IP Addressing.)   When connecting to a game session that is running on a TLS-enabled fleet, you must use the DNS name, not the IP address.
+    * The DNS identifier assigned to the instance that is running the game session. Values have the following format:   TLS-enabled fleets: &lt;unique identifier&gt;.&lt;region identifier&gt;.amazongamelift.com.   Non-TLS-enabled fleets: ec2-&lt;unique identifier&gt;.compute.amazonaws.com. (See Amazon EC2 Instance IP Addressing.)   When connecting to a game session that is running on a TLS-enabled fleet, you must use the DNS name, not the IP address.
     */
   var DnsName: js.UndefOr[typings.awsSdk.gameliftMod.DnsName] = js.undefined
   
   /**
     * Time stamp indicating when this request was completed, canceled, or timed out.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Set of custom properties for a game session, formatted as key:value pairs. These properties are passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session).
+    * A set of custom properties for a game session, formatted as key:value pairs. These properties are passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session).
     */
   var GameProperties: js.UndefOr[GamePropertyList] = js.undefined
   
@@ -27,9 +27,9 @@ trait GameSessionPlacement extends StObject {
   var GameSessionArn: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * Set of custom game session properties, formatted as a single string value. This data is passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session).
+    * A set of custom game session properties, formatted as a single string value. This data is passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session).
     */
-  var GameSessionData: js.UndefOr[typings.awsSdk.gameliftMod.GameSessionData] = js.undefined
+  var GameSessionData: js.UndefOr[LargeGameSessionData] = js.undefined
   
   /**
     * A unique identifier for the game session. This value is set once the new game session is placed (placement status is FULFILLED).
@@ -52,7 +52,7 @@ trait GameSessionPlacement extends StObject {
   var GameSessionRegion: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * IP address of the instance that is running the game session. When connecting to a Amazon GameLift game server, a client needs to reference an IP address (or DNS name) and port number. This value is set once the new game session is placed (placement status is FULFILLED). 
+    * The IP address of the game session. To connect to a GameLift game server, an app needs both the IP address and port number. This value is set once the new game session is placed (placement status is FULFILLED). 
     */
   var IpAddress: js.UndefOr[typings.awsSdk.gameliftMod.IpAddress] = js.undefined
   
@@ -77,19 +77,19 @@ trait GameSessionPlacement extends StObject {
   var PlacementId: js.UndefOr[IdStringModel] = js.undefined
   
   /**
-    * Set of values, expressed in milliseconds, indicating the amount of latency that a player experiences when connected to AWS Regions.
+    * A set of values, expressed in milliseconds, that indicates the amount of latency that a player experiences when connected to @aws; Regions.
     */
   var PlayerLatencies: js.UndefOr[PlayerLatencyList] = js.undefined
   
   /**
-    * Port number for the game session. To connect to a Amazon GameLift game server, an app needs both the IP address and port number. This value is set once the new game session is placed (placement status is FULFILLED).
+    * The port number for the game session. To connect to a GameLift game server, an app needs both the IP address and port number. This value is set once the new game session is placed (placement status is FULFILLED).
     */
   var Port: js.UndefOr[PortNumber] = js.undefined
   
   /**
     * Time stamp indicating when this request was placed in the queue. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var StartTime: js.UndefOr[Timestamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Current status of the game session placement request.    PENDING -- The placement request is currently in the queue waiting to be processed.    FULFILLED -- A new game session and player sessions (if requested) have been successfully created. Values for GameSessionArn and GameSessionRegion are available.     CANCELLED -- The placement request was canceled with a call to StopGameSessionPlacement.    TIMED_OUT -- A new game session was not successfully created before the time limit expired. You can resubmit the placement request as needed.    FAILED -- GameLift is not able to complete the process of placing the game session. Common reasons are the game session terminated before the placement process was completed, or an unexpected internal error.  
@@ -109,7 +109,7 @@ object GameSessionPlacement {
     
     inline def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -117,13 +117,13 @@ object GameSessionPlacement {
     
     inline def setGamePropertiesUndefined: Self = StObject.set(x, "GameProperties", js.undefined)
     
-    inline def setGamePropertiesVarargs(value: GameProperty*): Self = StObject.set(x, "GameProperties", js.Array(value :_*))
+    inline def setGamePropertiesVarargs(value: GameProperty*): Self = StObject.set(x, "GameProperties", js.Array(value*))
     
     inline def setGameSessionArn(value: NonZeroAndMaxString): Self = StObject.set(x, "GameSessionArn", value.asInstanceOf[js.Any])
     
     inline def setGameSessionArnUndefined: Self = StObject.set(x, "GameSessionArn", js.undefined)
     
-    inline def setGameSessionData(value: GameSessionData): Self = StObject.set(x, "GameSessionData", value.asInstanceOf[js.Any])
+    inline def setGameSessionData(value: LargeGameSessionData): Self = StObject.set(x, "GameSessionData", value.asInstanceOf[js.Any])
     
     inline def setGameSessionDataUndefined: Self = StObject.set(x, "GameSessionData", js.undefined)
     
@@ -159,7 +159,7 @@ object GameSessionPlacement {
     
     inline def setPlacedPlayerSessionsUndefined: Self = StObject.set(x, "PlacedPlayerSessions", js.undefined)
     
-    inline def setPlacedPlayerSessionsVarargs(value: PlacedPlayerSession*): Self = StObject.set(x, "PlacedPlayerSessions", js.Array(value :_*))
+    inline def setPlacedPlayerSessionsVarargs(value: PlacedPlayerSession*): Self = StObject.set(x, "PlacedPlayerSessions", js.Array(value*))
     
     inline def setPlacementId(value: IdStringModel): Self = StObject.set(x, "PlacementId", value.asInstanceOf[js.Any])
     
@@ -169,13 +169,13 @@ object GameSessionPlacement {
     
     inline def setPlayerLatenciesUndefined: Self = StObject.set(x, "PlayerLatencies", js.undefined)
     
-    inline def setPlayerLatenciesVarargs(value: PlayerLatency*): Self = StObject.set(x, "PlayerLatencies", js.Array(value :_*))
+    inline def setPlayerLatenciesVarargs(value: PlayerLatency*): Self = StObject.set(x, "PlayerLatencies", js.Array(value*))
     
     inline def setPort(value: PortNumber): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

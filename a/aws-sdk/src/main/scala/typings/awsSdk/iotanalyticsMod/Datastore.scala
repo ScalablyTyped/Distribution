@@ -14,17 +14,27 @@ trait Datastore extends StObject {
   /**
     * When the data store was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.undefined
+  var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The last time when a new message arrived in the data store. AWS IoT Analytics updates this value at most once per minute for one data store. Hence, the lastMessageArrivalTime value is an approximation. This feature only applies to messages that arrived in the data store after October 23, 2020. 
+    *  Contains information about the partition dimensions in a data store. 
     */
-  var lastMessageArrivalTime: js.UndefOr[Timestamp] = js.undefined
+  var datastorePartitions: js.UndefOr[DatastorePartitions] = js.undefined
+  
+  /**
+    * Contains the configuration information of file formats. IoT Analytics data stores support JSON and Parquet. The default file format is JSON. You can specify only one format. You can't change the file format after you create the data store.
+    */
+  var fileFormatConfiguration: js.UndefOr[FileFormatConfiguration] = js.undefined
+  
+  /**
+    * The last time when a new message arrived in the data store. IoT Analytics updates this value at most once per minute for Amazon Simple Storage Service one data store. Hence, the lastMessageArrivalTime value is an approximation. This feature only applies to messages that arrived in the data store after October 23, 2020. 
+    */
+  var lastMessageArrivalTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The last time the data store was updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the data store.
@@ -42,7 +52,7 @@ trait Datastore extends StObject {
   var status: js.UndefOr[DatastoreStatus] = js.undefined
   
   /**
-    * Where data store data is stored. You can choose one of serviceManagedS3 or customerManagedS3 storage. If not specified, the default is serviceManagedS3. You cannot change this storage option after the data store is created.
+    * Where data in a data store is stored.. You can choose serviceManagedS3 storage, customerManagedS3 storage, or iotSiteWiseMultiLayerStorage storage. The default is serviceManagedS3. You can't change the choice of Amazon S3 storage after your data store is created. 
     */
   var storage: js.UndefOr[DatastoreStorage] = js.undefined
 }
@@ -59,15 +69,23 @@ object Datastore {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    inline def setLastMessageArrivalTime(value: Timestamp): Self = StObject.set(x, "lastMessageArrivalTime", value.asInstanceOf[js.Any])
+    inline def setDatastorePartitions(value: DatastorePartitions): Self = StObject.set(x, "datastorePartitions", value.asInstanceOf[js.Any])
+    
+    inline def setDatastorePartitionsUndefined: Self = StObject.set(x, "datastorePartitions", js.undefined)
+    
+    inline def setFileFormatConfiguration(value: FileFormatConfiguration): Self = StObject.set(x, "fileFormatConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setFileFormatConfigurationUndefined: Self = StObject.set(x, "fileFormatConfiguration", js.undefined)
+    
+    inline def setLastMessageArrivalTime(value: js.Date): Self = StObject.set(x, "lastMessageArrivalTime", value.asInstanceOf[js.Any])
     
     inline def setLastMessageArrivalTimeUndefined: Self = StObject.set(x, "lastMessageArrivalTime", js.undefined)
     
-    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     

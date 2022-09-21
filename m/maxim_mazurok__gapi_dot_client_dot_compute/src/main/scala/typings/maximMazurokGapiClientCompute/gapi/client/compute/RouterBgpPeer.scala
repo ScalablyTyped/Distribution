@@ -10,11 +10,9 @@ trait RouterBgpPeer extends StObject {
   var advertiseMode: js.UndefOr[String] = js.undefined
   
   /**
-    * User-specified list of prefix groups to advertise in custom mode, which can take one of the following options:
-    * - ALL_SUBNETS: Advertises all available subnets, including peer VPC subnets.
-    * - ALL_VPC_SUBNETS: Advertises the router's own VPC subnets.
-    * - ALL_PEER_VPC_SUBNETS: Advertises peer subnets of the router's VPC network. Note that this field can only be populated if advertise_mode is CUSTOM and overrides the list defined
-    * for the router (in the "bgp" message). These groups are advertised in addition to any specified prefixes. Leave this field blank to advertise no custom groups.
+    * User-specified list of prefix groups to advertise in custom mode, which can take one of the following options: - ALL_SUBNETS: Advertises all available subnets, including peer VPC
+    * subnets. - ALL_VPC_SUBNETS: Advertises the router's own VPC subnets. Note that this field can only be populated if advertise_mode is CUSTOM and overrides the list defined for the
+    * router (in the "bgp" message). These groups are advertised in addition to any specified prefixes. Leave this field blank to advertise no custom groups.
     */
   var advertisedGroups: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -27,6 +25,12 @@ trait RouterBgpPeer extends StObject {
   /** The priority of routes advertised to this BGP peer. Where there is more than one matching route of maximum length, the routes with the lowest priority value win. */
   var advertisedRoutePriority: js.UndefOr[Double] = js.undefined
   
+  /**
+    * The status of the BGP peer connection. If set to FALSE, any active session with the peer is terminated and all associated routing information is removed. If set to TRUE, the peer
+    * connection can be established with routing information. The default is TRUE.
+    */
+  var enable: js.UndefOr[String] = js.undefined
+  
   /** Name of the interface the BGP peer is associated with. */
   var interfaceName: js.UndefOr[String] = js.undefined
   
@@ -34,10 +38,9 @@ trait RouterBgpPeer extends StObject {
   var ipAddress: js.UndefOr[String] = js.undefined
   
   /**
-    * [Output Only] The resource that configures and manages this BGP peer.
-    * - MANAGED_BY_USER is the default value and can be managed by you or other users
-    * - MANAGED_BY_ATTACHMENT is a BGP peer that is configured and managed by Cloud Interconnect, specifically by an InterconnectAttachment of type PARTNER. Google automatically creates,
-    * updates, and deletes this type of BGP peer when the PARTNER InterconnectAttachment is created, updated, or deleted.
+    * [Output Only] The resource that configures and manages this BGP peer. - MANAGED_BY_USER is the default value and can be managed by you or other users - MANAGED_BY_ATTACHMENT is a
+    * BGP peer that is configured and managed by Cloud Interconnect, specifically by an InterconnectAttachment of type PARTNER. Google automatically creates, updates, and deletes this
+    * type of BGP peer when the PARTNER InterconnectAttachment is created, updated, or deleted.
     */
   var managementType: js.UndefOr[String] = js.undefined
   
@@ -71,17 +74,21 @@ object RouterBgpPeer {
     
     inline def setAdvertisedGroupsUndefined: Self = StObject.set(x, "advertisedGroups", js.undefined)
     
-    inline def setAdvertisedGroupsVarargs(value: String*): Self = StObject.set(x, "advertisedGroups", js.Array(value :_*))
+    inline def setAdvertisedGroupsVarargs(value: String*): Self = StObject.set(x, "advertisedGroups", js.Array(value*))
     
     inline def setAdvertisedIpRanges(value: js.Array[RouterAdvertisedIpRange]): Self = StObject.set(x, "advertisedIpRanges", value.asInstanceOf[js.Any])
     
     inline def setAdvertisedIpRangesUndefined: Self = StObject.set(x, "advertisedIpRanges", js.undefined)
     
-    inline def setAdvertisedIpRangesVarargs(value: RouterAdvertisedIpRange*): Self = StObject.set(x, "advertisedIpRanges", js.Array(value :_*))
+    inline def setAdvertisedIpRangesVarargs(value: RouterAdvertisedIpRange*): Self = StObject.set(x, "advertisedIpRanges", js.Array(value*))
     
     inline def setAdvertisedRoutePriority(value: Double): Self = StObject.set(x, "advertisedRoutePriority", value.asInstanceOf[js.Any])
     
     inline def setAdvertisedRoutePriorityUndefined: Self = StObject.set(x, "advertisedRoutePriority", js.undefined)
+    
+    inline def setEnable(value: String): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
     inline def setInterfaceName(value: String): Self = StObject.set(x, "interfaceName", value.asInstanceOf[js.Any])
     

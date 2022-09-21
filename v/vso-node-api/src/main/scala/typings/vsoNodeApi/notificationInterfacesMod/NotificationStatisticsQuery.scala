@@ -19,6 +19,6 @@ object NotificationStatisticsQuery {
     
     inline def setConditions(value: js.Array[NotificationStatisticsQueryConditions]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    inline def setConditionsVarargs(value: NotificationStatisticsQueryConditions*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: NotificationStatisticsQueryConditions*): Self = StObject.set(x, "conditions", js.Array(value*))
   }
 }

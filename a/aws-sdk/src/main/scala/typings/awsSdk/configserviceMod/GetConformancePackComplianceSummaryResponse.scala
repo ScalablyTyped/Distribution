@@ -29,7 +29,7 @@ object GetConformancePackComplianceSummaryResponse {
     
     inline def setConformancePackComplianceSummaryListUndefined: Self = StObject.set(x, "ConformancePackComplianceSummaryList", js.undefined)
     
-    inline def setConformancePackComplianceSummaryListVarargs(value: ConformancePackComplianceSummary*): Self = StObject.set(x, "ConformancePackComplianceSummaryList", js.Array(value :_*))
+    inline def setConformancePackComplianceSummaryListVarargs(value: ConformancePackComplianceSummary*): Self = StObject.set(x, "ConformancePackComplianceSummaryList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

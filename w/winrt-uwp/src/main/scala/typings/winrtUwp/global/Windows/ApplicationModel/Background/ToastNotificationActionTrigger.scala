@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.ToastNotificationActionTrigger")
 @js.native
 /** Creates and initializes a new instance of the ToastNotificationActionTrigger class. */
-class ToastNotificationActionTrigger ()
+open class ToastNotificationActionTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.ToastNotificationActionTrigger {
   /**

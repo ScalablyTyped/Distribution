@@ -8,7 +8,10 @@ import typings.jupyterlabMainmenu.runMod.RunMenu
 import typings.jupyterlabMainmenu.settingsMod.SettingsMenu
 import typings.jupyterlabMainmenu.tabsMod.TabsMenu
 import typings.jupyterlabMainmenu.tokensMod.IMainMenu
+import typings.jupyterlabMainmenu.tokensMod.IMainMenu.IMenuOptions
 import typings.jupyterlabMainmenu.viewMod.ViewMenu
+import typings.jupyterlabTranslation.tokensMod.TranslationBundle
+import typings.jupyterlabUiComponents.mod.RankedMenu
 import typings.luminoCommands.mod.CommandRegistry
 import typings.luminoMessaging.mod.Message
 import typings.luminoWidgets.mod.MenuBar
@@ -20,7 +23,7 @@ object mainmenuMod {
   
   @JSImport("@jupyterlab/mainmenu/lib/mainmenu", "MainMenu")
   @js.native
-  class MainMenu protected ()
+  open class MainMenu protected ()
     extends MenuBar
        with IMainMenu {
     /**
@@ -28,12 +31,30 @@ object mainmenuMod {
       */
     def this(commands: CommandRegistry) = this()
     
-    /* private */ var _items: js.Any = js.native
+    /* private */ var _commands: Any = js.native
+    
+    /* private */ var _editMenu: Any = js.native
+    
+    /* private */ var _fileMenu: Any = js.native
+    
+    /* private */ var _helpMenu: Any = js.native
+    
+    /* private */ var _items: Any = js.native
+    
+    /* private */ var _kernelMenu: Any = js.native
     
     /**
       * Handle the disposal of a menu.
       */
-    /* private */ var _onMenuDisposed: js.Any = js.native
+    /* private */ var _onMenuDisposed: Any = js.native
+    
+    /* private */ var _runMenu: Any = js.native
+    
+    /* private */ var _settingsMenu: Any = js.native
+    
+    /* private */ var _tabsMenu: Any = js.native
+    
+    /* private */ var _viewMenu: Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -53,25 +74,25 @@ object mainmenuMod {
       * The application "Edit" menu.
       */
     @JSName("editMenu")
-    val editMenu_MainMenu: EditMenu = js.native
+    def editMenu_MMainMenu: EditMenu = js.native
     
     /**
       * The application "File" menu.
       */
     @JSName("fileMenu")
-    val fileMenu_MainMenu: FileMenu = js.native
+    def fileMenu_MMainMenu: FileMenu = js.native
     
     /**
       * The application "Help" menu.
       */
     @JSName("helpMenu")
-    val helpMenu_MainMenu: HelpMenu = js.native
+    def helpMenu_MMainMenu: HelpMenu = js.native
     
     /**
       * The application "Kernel" menu.
       */
     @JSName("kernelMenu")
-    val kernelMenu_MainMenu: KernelMenu = js.native
+    def kernelMenu_MMainMenu: KernelMenu = js.native
     
     /**
       * Process a message sent to the handler.
@@ -85,24 +106,40 @@ object mainmenuMod {
       * The application "Run" menu.
       */
     @JSName("runMenu")
-    val runMenu_MainMenu: RunMenu = js.native
+    def runMenu_MMainMenu: RunMenu = js.native
     
     /**
       * The application "Settings" menu.
       */
     @JSName("settingsMenu")
-    val settingsMenu_MainMenu: SettingsMenu = js.native
+    def settingsMenu_MMainMenu: SettingsMenu = js.native
     
     /**
       * The application "Tabs" menu.
       */
     @JSName("tabsMenu")
-    val tabsMenu_MainMenu: TabsMenu = js.native
+    def tabsMenu_MMainMenu: TabsMenu = js.native
     
     /**
       * The application "View" menu.
       */
     @JSName("viewMenu")
-    val viewMenu_MainMenu: ViewMenu = js.native
+    def viewMenu_MMainMenu: ViewMenu = js.native
+  }
+  /* static members */
+  object MainMenu {
+    
+    @JSImport("@jupyterlab/mainmenu/lib/mainmenu", "MainMenu")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Generate the menu.
+      *
+      * @param commands The command registry
+      * @param options The main menu options.
+      * @param trans - The application language translator.
+      */
+    inline def generateMenu(commands: CommandRegistry, options: IMenuOptions, trans: TranslationBundle): RankedMenu = (^.asInstanceOf[js.Dynamic].applyDynamic("generateMenu")(commands.asInstanceOf[js.Any], options.asInstanceOf[js.Any], trans.asInstanceOf[js.Any])).asInstanceOf[RankedMenu]
   }
 }

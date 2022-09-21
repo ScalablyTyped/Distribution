@@ -8,7 +8,7 @@ trait IFormattingOptions extends StObject {
   
   var capSQL: js.UndefOr[Boolean] = js.undefined
   
-  var `def`: js.UndefOr[js.Any] = js.undefined
+  var `def`: js.UndefOr[Any] = js.undefined
   
   var partial: js.UndefOr[Boolean] = js.undefined
 }
@@ -25,7 +25,7 @@ object IFormattingOptions {
     
     inline def setCapSQLUndefined: Self = StObject.set(x, "capSQL", js.undefined)
     
-    inline def setDef(value: js.Any): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
+    inline def setDef(value: Any): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
     
     inline def setDefUndefined: Self = StObject.set(x, "def", js.undefined)
     

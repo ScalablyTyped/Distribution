@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Specifies a single test to be executed in a single environment.
-  */
 trait SchemaTestExecution extends StObject {
   
   /**
@@ -15,25 +12,29 @@ trait SchemaTestExecution extends StObject {
   var environment: js.UndefOr[SchemaEnvironment] = js.undefined
   
   /**
-    * Output only. Unique id set by the backend.
+    * Output only. Unique id set by the service.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Output only. Id of the containing TestMatrix.
     */
-  var matrixId: js.UndefOr[String] = js.undefined
+  var matrixId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Output only. The cloud project that owns the test execution.
     */
-  var projectId: js.UndefOr[String] = js.undefined
+  var projectId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Output only. Indicates the current progress of the test execution (e.g.,
-    * FINISHED).
+    * Output only. Details about the shard.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var shard: js.UndefOr[SchemaShard] = js.undefined
+  
+  /**
+    * Output only. Indicates the current progress of the test execution (e.g., FINISHED).
+    */
+  var state: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Output only. Additional details about the running test.
@@ -48,7 +49,7 @@ trait SchemaTestExecution extends StObject {
   /**
     * Output only. The time this test execution was initially created.
     */
-  var timestamp: js.UndefOr[String] = js.undefined
+  var timestamp: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Output only. Where the results for this execution are written.
@@ -70,17 +71,29 @@ object SchemaTestExecution {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setMatrixId(value: String): Self = StObject.set(x, "matrixId", value.asInstanceOf[js.Any])
+    
+    inline def setMatrixIdNull: Self = StObject.set(x, "matrixId", null)
     
     inline def setMatrixIdUndefined: Self = StObject.set(x, "matrixId", js.undefined)
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
+    inline def setProjectIdNull: Self = StObject.set(x, "projectId", null)
+    
     inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
+    inline def setShard(value: SchemaShard): Self = StObject.set(x, "shard", value.asInstanceOf[js.Any])
+    
+    inline def setShardUndefined: Self = StObject.set(x, "shard", js.undefined)
+    
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
@@ -93,6 +106,8 @@ object SchemaTestExecution {
     inline def setTestSpecificationUndefined: Self = StObject.set(x, "testSpecification", js.undefined)
     
     inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampNull: Self = StObject.set(x, "timestamp", null)
     
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     

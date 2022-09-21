@@ -22,17 +22,17 @@ trait DirectoryLimits extends StObject {
   var CloudOnlyDirectoriesLimitReached: js.UndefOr[typings.awsSdk.directoryserviceMod.CloudOnlyDirectoriesLimitReached] = js.undefined
   
   /**
-    * The current number of AWS Managed Microsoft AD directories in the region.
+    * The current number of Managed Microsoft AD directories in the region.
     */
   var CloudOnlyMicrosoftADCurrentCount: js.UndefOr[Limit] = js.undefined
   
   /**
-    * The maximum number of AWS Managed Microsoft AD directories allowed in the region.
+    * The maximum number of Managed Microsoft AD directories allowed in the region.
     */
   var CloudOnlyMicrosoftADLimit: js.UndefOr[Limit] = js.undefined
   
   /**
-    * Indicates if the AWS Managed Microsoft AD directory limit has been reached.
+    * Indicates if the Managed Microsoft AD directory limit has been reached.
     */
   var CloudOnlyMicrosoftADLimitReached: js.UndefOr[CloudOnlyDirectoriesLimitReached] = js.undefined
   

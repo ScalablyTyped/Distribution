@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.AtlasAttachmentLoader")
 @js.native
-class AtlasAttachmentLoader protected ()
+open class AtlasAttachmentLoader protected ()
   extends StObject
      with typings.phaser.spine.AtlasAttachmentLoader {
   def this(atlas: typings.phaser.spine.TextureAtlas) = this()

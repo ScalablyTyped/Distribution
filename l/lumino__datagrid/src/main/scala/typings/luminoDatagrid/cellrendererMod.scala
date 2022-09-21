@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cellrendererMod {
   
-  @JSImport("@lumino/datagrid/lib/cellrenderer", "CellRenderer")
+  @JSImport("@lumino/datagrid/types/cellrenderer", "CellRenderer")
   @js.native
   abstract class CellRenderer () extends StObject {
     
@@ -35,7 +35,7 @@ object cellrendererMod {
   }
   object CellRenderer {
     
-    @JSImport("@lumino/datagrid/lib/cellrenderer", "CellRenderer")
+    @JSImport("@lumino/datagrid/types/cellrenderer", "CellRenderer")
     @js.native
     val ^ : js.Any = js.native
     
@@ -83,7 +83,7 @@ object cellrendererMod {
       /**
         * The value for the cell.
         */
-      val value: js.Any
+      val value: Any
       
       /**
         * The width of the cell rectangle, in viewport pixels.
@@ -108,7 +108,7 @@ object cellrendererMod {
         metadata: Metadata,
         region: CellRegion,
         row: Double,
-        value: js.Any,
+        value: Any,
         width: Double,
         x: Double,
         y: Double
@@ -129,7 +129,7 @@ object cellrendererMod {
         
         inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
         
-        inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
         inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         

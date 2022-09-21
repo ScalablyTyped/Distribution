@@ -1,20 +1,41 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.abstractSceneMod.AbstractScene
 import typings.babylonjs.animatableInterfaceMod.IAnimatable
 import typings.babylonjs.animationMod.Animation
 import typings.babylonjs.anon.PartialIMaterialCompilati
 import typings.babylonjs.baseTextureMod.BaseTexture
+import typings.babylonjs.drawWrapperMod.DrawWrapper
 import typings.babylonjs.effectMod.Effect
 import typings.babylonjs.iInspectableMod.IInspectable
+import typings.babylonjs.imaterialcontextMod.IMaterialContext
 import typings.babylonjs.materialDefinesMod.MaterialDefines
+import typings.babylonjs.materialPluginEventMod.MaterialPluginBindForSubMesh
+import typings.babylonjs.materialPluginEventMod.MaterialPluginCreated
+import typings.babylonjs.materialPluginEventMod.MaterialPluginDisposed
+import typings.babylonjs.materialPluginEventMod.MaterialPluginFillRenderTargetTextures
+import typings.babylonjs.materialPluginEventMod.MaterialPluginGetActiveTextures
+import typings.babylonjs.materialPluginEventMod.MaterialPluginGetAnimatables
+import typings.babylonjs.materialPluginEventMod.MaterialPluginGetDefineNames
+import typings.babylonjs.materialPluginEventMod.MaterialPluginHardBindForSubMesh
+import typings.babylonjs.materialPluginEventMod.MaterialPluginHasRenderTargetTextures
+import typings.babylonjs.materialPluginEventMod.MaterialPluginHasTexture
+import typings.babylonjs.materialPluginEventMod.MaterialPluginIsReadyForSubMesh
+import typings.babylonjs.materialPluginEventMod.MaterialPluginPrepareDefines
+import typings.babylonjs.materialPluginEventMod.MaterialPluginPrepareEffect
+import typings.babylonjs.materialPluginEventMod.MaterialPluginPrepareUniformBuffer
+import typings.babylonjs.materialPluginManagerMod.MaterialPluginManager
+import typings.babylonjs.materialStencilStateMod.MaterialStencilState
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.prePassRendererMod.PrePassRenderer
 import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.sceneMod.Scene
+import typings.babylonjs.shaderProcessingOptionsMod.ShaderCustomProcessingFunction
 import typings.babylonjs.shadowDepthWrapperMod.ShadowDepthWrapper
 import typings.babylonjs.smartArrayMod.SmartArray
 import typings.babylonjs.subMeshMod.SubMesh
@@ -28,7 +49,7 @@ object materialMod {
   
   @JSImport("babylonjs/Materials/material", "Material")
   @js.native
-  class Material protected ()
+  open class Material protected ()
     extends StObject
        with IAnimatable {
     /**
@@ -37,15 +58,20 @@ object materialMod {
       * @param scene defines the scene to reference
       * @param doNotAdd specifies if the material should be added to the scene
       */
-    def this(name: String, scene: Scene) = this()
-    def this(name: String, scene: Scene, doNotAdd: Boolean) = this()
+    def this(name: String) = this()
+    def this(name: String, scene: Nullable[Scene]) = this()
+    def this(name: String, scene: Unit, doNotAdd: Boolean) = this()
+    def this(name: String, scene: Nullable[Scene], doNotAdd: Boolean) = this()
     
     /**
       * Processes to execute after binding the material to a mesh
       * @param mesh defines the rendered mesh
+      * @param effect
       */
     /* protected */ def _afterBind(): Unit = js.native
+    /* protected */ def _afterBind(mesh: Unit, effect: Nullable[Effect]): Unit = js.native
     /* protected */ def _afterBind(mesh: Mesh): Unit = js.native
+    /* protected */ def _afterBind(mesh: Mesh, effect: Nullable[Effect]): Unit = js.native
     
     /**
       * The alpha value of the material
@@ -55,7 +81,7 @@ object materialMod {
     /**
       * Stores the value of the alpha mode
       */
-    /* private */ var _alphaMode: js.Any = js.native
+    /* private */ var _alphaMode: Any = js.native
     
     /**
       * Specifies if back face culling is enabled
@@ -65,38 +91,74 @@ object materialMod {
     /**
       * Specifies if the color write state should be cached
       */
-    /* private */ var _cachedColorWriteState: js.Any = js.native
+    /* private */ var _cachedColorWriteState: Any = js.native
     
     /**
       * Specifies if the depth function state should be cached
       */
-    /* private */ var _cachedDepthFunctionState: js.Any = js.native
+    /* private */ var _cachedDepthFunctionState: Any = js.native
     
     /**
       * Specifies if the depth write state should be cached
       */
-    /* private */ var _cachedDepthWriteState: js.Any = js.native
+    /* private */ var _cachedDepthWriteState: Any = js.native
+    
+    /** @hidden */
+    def _callbackPluginEventBindForSubMesh(eventData: MaterialPluginBindForSubMesh): Unit = js.native
+    
+    /** @hidden */
+    def _callbackPluginEventFillRenderTargetTextures(eventData: MaterialPluginFillRenderTargetTextures): Unit = js.native
+    
+    def _callbackPluginEventGeneric(id: Double, info: MaterialPluginDisposed): Unit = js.native
+    /** @hidden */
+    def _callbackPluginEventGeneric(id: Double, info: MaterialPluginGetActiveTextures): Unit = js.native
+    def _callbackPluginEventGeneric(id: Double, info: MaterialPluginGetAnimatables): Unit = js.native
+    def _callbackPluginEventGeneric(id: Double, info: MaterialPluginGetDefineNames): Unit = js.native
+    def _callbackPluginEventGeneric(id: Double, info: MaterialPluginHasTexture): Unit = js.native
+    def _callbackPluginEventGeneric(id: Double, info: MaterialPluginPrepareEffect): Unit = js.native
+    def _callbackPluginEventGeneric(id: Double, info: MaterialPluginPrepareUniformBuffer): Unit = js.native
+    
+    /** @hidden */
+    def _callbackPluginEventHardBindForSubMesh(eventData: MaterialPluginHardBindForSubMesh): Unit = js.native
+    
+    /** @hidden */
+    def _callbackPluginEventHasRenderTargetTextures(eventData: MaterialPluginHasRenderTargetTextures): Unit = js.native
+    
+    /** @hidden */
+    def _callbackPluginEventIsReadyForSubMesh(eventData: MaterialPluginIsReadyForSubMesh): Unit = js.native
+    
+    /** @hidden */
+    def _callbackPluginEventPrepareDefines(eventData: MaterialPluginPrepareDefines): Unit = js.native
+    
+    /** @hidden */
+    def _callbackPluginEventPrepareDefinesBeforeAttributes(eventData: MaterialPluginPrepareDefines): Unit = js.native
+    
+    /**
+      * Specifies if back or front faces should be culled (when culling is enabled)
+      */
+    /* protected */ var _cullBackFaces: Boolean = js.native
+    
+    /** @hidden */
+    var _dirtyCallbacks: NumberDictionary[js.Function0[Unit]] = js.native
     
     /**
       * Returns true if alpha blending should be disabled.
       */
     /* protected */ def _disableAlphaBlending: Boolean = js.native
     
-    /**
-      * @hidden
-      * Stores the effects for the material
-      */
-    var _effect: Nullable[Effect] = js.native
+    /* protected */ var _drawWrapper: DrawWrapper = js.native
+    
+    /* protected */ var _eventInfo: MaterialPluginCreated & MaterialPluginDisposed & MaterialPluginHasTexture & MaterialPluginIsReadyForSubMesh & MaterialPluginGetDefineNames & MaterialPluginPrepareEffect & MaterialPluginPrepareDefines & MaterialPluginPrepareUniformBuffer & MaterialPluginBindForSubMesh & MaterialPluginGetAnimatables & MaterialPluginGetActiveTextures & MaterialPluginFillRenderTargetTextures & MaterialPluginHasRenderTargetTextures & MaterialPluginHardBindForSubMesh = js.native
     
     /**
       * Stores the fill mode state
       */
-    /* private */ var _fillMode: js.Any = js.native
+    /* private */ var _fillMode: Any = js.native
     
     /**
-      * Stores the state specifing if fog should be enabled
+      * Stores the state specifying if fog should be enabled
       */
-    /* private */ var _fogEnabled: js.Any = js.native
+    /* private */ var _fogEnabled: Any = js.native
     
     /**
       * Enforces alpha test in opaque or blend mode in order to improve the performances of some situations.
@@ -104,7 +166,13 @@ object materialMod {
     /* protected */ var _forceAlphaTest: Boolean = js.native
     
     /** @hidden */
+    def _getDrawWrapper(): DrawWrapper = js.native
+    
+    /** @hidden */
     var _indexInSceneMaterialArray: Double = js.native
+    
+    /** @hidden */
+    var _loadedUniqueId: String = js.native
     
     /**
       * Indicates that we need to re-calculated for all submeshes
@@ -168,36 +236,59 @@ object materialMod {
     /* protected */ def _markScenePrePassDirty(): Unit = js.native
     
     /**
+      * @hidden
+      * Stores the effects for the material
+      */
+    /* protected */ var _materialContext: js.UndefOr[IMaterialContext] = js.native
+    
+    /**
       * Stores the state of the need depth pre-pass value
       */
-    /* private */ var _needDepthPrePass: js.Any = js.native
+    /* private */ var _needDepthPrePass: Any = js.native
     
-    /* private */ var _onBindObservable: js.Any = js.native
+    /* protected */ var _needToBindSceneUbo: Boolean = js.native
+    
+    /* private */ var _onBindObservable: Any = js.native
     
     /**
       * An observer which watches for bind events
       */
-    /* private */ var _onBindObserver: js.Any = js.native
+    /* private */ var _onBindObserver: Any = js.native
     
     /**
       * An observer which watches for dispose events
       */
-    /* private */ var _onDisposeObserver: js.Any = js.native
+    /* private */ var _onDisposeObserver: Any = js.native
     
     /* protected */ var _onEffectCreatedObservable: Nullable[Observable[typings.babylonjs.anon.Effect]] = js.native
     
-    /* private */ var _onUnBindObservable: js.Any = js.native
+    /* private */ var _onUnBindObservable: Any = js.native
     
     /** @hidden */
+    var _parentContainer: Nullable[AbstractScene] = js.native
+    
+    /**
+      * @param effect
+      * @param overrideOrientation
+      * @hidden
+      */
     def _preBind(): Boolean = js.native
     def _preBind(effect: Unit, overrideOrientation: Nullable[Double]): Boolean = js.native
+    def _preBind(effect: DrawWrapper): Boolean = js.native
+    def _preBind(effect: DrawWrapper, overrideOrientation: Nullable[Double]): Boolean = js.native
     def _preBind(effect: Effect): Boolean = js.native
     def _preBind(effect: Effect, overrideOrientation: Nullable[Double]): Boolean = js.native
     
     /**
       * Stores a reference to the scene
       */
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
+    
+    /**
+      * @param drawWrapper
+      * @hidden
+      */
+    def _setDrawWrapper(drawWrapper: DrawWrapper): Unit = js.native
     
     /**
       * Specifies if material alpha testing should be turned on for the mesh
@@ -217,13 +308,17 @@ object materialMod {
     
     /**
       * Stores the uniform buffer
+      * @hidden
       */
-    /* protected */ var _uniformBuffer: UniformBuffer = js.native
+    var _uniformBuffer: UniformBuffer = js.native
+    
+    /** @hidden */
+    var _uniformBufferLayoutBuilt: Boolean = js.native
     
     /**
       * Specifies if uniform buffers should be used
       */
-    /* private */ var _useUBO: js.Any = js.native
+    /* private */ var _useUBO: Any = js.native
     
     /**
       * Gets or sets a boolean indicating that the material is allowed (if supported) to do shader hot swapping.
@@ -273,11 +368,11 @@ object materialMod {
     var animations: Nullable[js.Array[Animation]] = js.native
     
     /**
-      * Gets the back-face culling state
+      * Gets the culling state
       */
     def backFaceCulling: Boolean = js.native
     /**
-      * Sets the back-face culling state
+      * Sets the culling state (true to enable culling, false to disable)
       */
     def backFaceCulling_=(value: Boolean): Unit = js.native
     
@@ -288,6 +383,14 @@ object materialMod {
       */
     def bind(world: Matrix): Unit = js.native
     def bind(world: Matrix, mesh: Mesh): Unit = js.native
+    
+    /**
+      * Binds the view matrix to the effect
+      * @param effect defines the effect to bind the view matrix to
+      * @param variableName name of the shader variable that will hold the eye position
+      */
+    def bindEyePosition(effect: Effect): Unit = js.native
+    def bindEyePosition(effect: Effect, variableName: String): Unit = js.native
     
     /**
       * Binds the submesh to the material
@@ -304,23 +407,21 @@ object materialMod {
     def bindOnlyWorldMatrix(world: Matrix): Unit = js.native
     
     /**
-      * Binds the scene's uniform buffer to the effect.
-      * @param effect defines the effect to bind to the scene uniform buffer
-      * @param sceneUbo defines the uniform buffer storing scene data
-      */
-    def bindSceneUniformBuffer(effect: Effect, sceneUbo: UniformBuffer): Unit = js.native
-    
-    /**
       * Binds the view matrix to the effect
       * @param effect defines the effect to bind the view matrix to
       */
     def bindView(effect: Effect): Unit = js.native
     
     /**
-      * Binds the view projection matrix to the effect
-      * @param effect defines the effect to bind the view projection matrix to
+      * Binds the view projection and projection matrices to the effect
+      * @param effect defines the effect to bind the view projection and projection matrices to
       */
     def bindViewProjection(effect: Effect): Unit = js.native
+    
+    /**
+      * Initializes the uniform buffer layout for the shader.
+      */
+    def buildUniformLayout(): Unit = js.native
     
     /**
       * If the material can be rendered to several textures with MRT extension
@@ -343,6 +444,15 @@ object materialMod {
       * @returns the cloned material
       */
     def clone(name: String): Nullable[Material] = js.native
+    
+    /**
+      * Gets the type of faces that should be culled
+      */
+    def cullBackFaces: Boolean = js.native
+    /**
+      * Sets the type of faces that should be culled (true for back faces, false for front faces)
+      */
+    def cullBackFaces_=(value: Boolean): Unit = js.native
     
     def customShaderNameResolve(
       shaderName: String,
@@ -539,6 +649,12 @@ object materialMod {
     def getAlphaTestTexture(): Nullable[BaseTexture] = js.native
     
     /**
+      * Returns the animatable textures.
+      * @returns - Array of animatable textures.
+      */
+    def getAnimatables(): js.Array[IAnimatable] = js.native
+    
+    /**
       * Gets the meshes bound to the material
       * @returns an array of meshes bound to the material
       */
@@ -596,6 +712,11 @@ object materialMod {
     def isFrozen: Boolean = js.native
     
     /**
+      * Can this material render to prepass
+      */
+    def isPrePassCapable: Boolean = js.native
+    
+    /**
       * Specifies if the material is ready to be used
       * @param mesh defines the mesh to check
       * @param useInstances specifies if instances should be used
@@ -633,7 +754,7 @@ object materialMod {
     /**
       * Gets or sets user defined metadata
       */
-    var metadata: js.Any = js.native
+    var metadata: Any = js.native
     
     /**
       * The name of the material
@@ -709,6 +830,11 @@ object materialMod {
     def onUnBindObservable: Observable[Material] = js.native
     
     /**
+      * Plugin manager for this material
+      */
+    var pluginManager: js.UndefOr[MaterialPluginManager] = js.native
+    
+    /**
       * Stores the size of points
       */
     var pointSize: Double = js.native
@@ -722,13 +848,22 @@ object materialMod {
       */
     def pointsCloud_=(value: Boolean): Unit = js.native
     
-    /** @hidden */
-    /* private */ var releaseVertexArrayObject: js.Any = js.native
+    /**
+      * @param mesh
+      * @param forceDisposeEffect
+      * @hidden
+      */
+    /* private */ var releaseVertexArrayObject: Any = js.native
     
     /**
       * For internal use only. Please do not use.
       */
-    var reservedDataStore: js.Any = js.native
+    var reservedDataStore: Any = js.native
+    
+    /**
+      * Resets the draw wrappers cache for all submeshes that are using this material
+      */
+    def resetDrawCache(): Unit = js.native
     
     /**
       * Specifies if there should be a separate pass for culling
@@ -739,7 +874,7 @@ object materialMod {
       * Serializes this material
       * @returns the serialized material object
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
     
     /**
       * Sets the required values to the prepass renderer.
@@ -762,6 +897,11 @@ object materialMod {
       * The state of the material
       */
     var state: String = js.native
+    
+    /**
+      * Gives access to the stencil properties of the material
+      */
+    val stencil: MaterialStencilState = js.native
     
     def toString(fullDetails: Boolean): String = js.native
     
@@ -804,9 +944,14 @@ object materialMod {
     def wireframe_=(value: Boolean): Unit = js.native
     
     /**
-      * Stores the z offset value
+      * Stores the z offset Factor value
       */
     var zOffset: Double = js.native
+    
+    /**
+      * Stores the z offset Units value
+      */
+    var zOffsetUnits: Double = js.native
   }
   /* static members */
   object Material {
@@ -931,13 +1076,21 @@ object materialMod {
     val MiscDirtyFlag: Double = js.native
     
     /**
+      * Event observable which raises global events common to all materials (like MaterialPluginEvent.Created)
+      */
+    @JSImport("babylonjs/Materials/material", "Material.OnEventObservable")
+    @js.native
+    def OnEventObservable: Observable[Material] = js.native
+    inline def OnEventObservable_=(x: Observable[Material]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnEventObservable")(x.asInstanceOf[js.Any])
+    
+    /**
       * Creates a material from parsed material data
       * @param parsedMaterial defines parsed material data
       * @param scene defines the hosting scene
       * @param rootUrl defines the root URL to use to load textures
       * @returns a new material
       */
-    inline def Parse(parsedMaterial: js.Any, scene: Scene, rootUrl: String): Nullable[Material] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMaterial.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[Material]]
+    inline def Parse(parsedMaterial: Any, scene: Scene, rootUrl: String): Nullable[Material] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMaterial.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[Material]]
     
     /**
       * Returns the point fill mode
@@ -997,53 +1150,53 @@ object materialMod {
     
     @JSImport("babylonjs/Materials/material", "Material._AllDirtyCallBack")
     @js.native
-    val _AllDirtyCallBack: js.Any = js.native
+    val _AllDirtyCallBack: Any = js.native
     
     @JSImport("babylonjs/Materials/material", "Material._AttributeDirtyCallBack")
     @js.native
-    val _AttributeDirtyCallBack: js.Any = js.native
+    val _AttributeDirtyCallBack: Any = js.native
     
     @JSImport("babylonjs/Materials/material", "Material._DirtyCallbackArray")
     @js.native
-    val _DirtyCallbackArray: js.Any = js.native
+    val _DirtyCallbackArray: Any = js.native
     
     @JSImport("babylonjs/Materials/material", "Material._FresnelAndMiscDirtyCallBack")
     @js.native
-    def _FresnelAndMiscDirtyCallBack: js.Any = js.native
-    inline def _FresnelAndMiscDirtyCallBack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FresnelAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
+    def _FresnelAndMiscDirtyCallBack: Any = js.native
+    inline def _FresnelAndMiscDirtyCallBack_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FresnelAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Materials/material", "Material._FresnelDirtyCallBack")
     @js.native
-    val _FresnelDirtyCallBack: js.Any = js.native
+    val _FresnelDirtyCallBack: Any = js.native
     
     @JSImport("babylonjs/Materials/material", "Material._ImageProcessingDirtyCallBack")
     @js.native
-    val _ImageProcessingDirtyCallBack: js.Any = js.native
+    val _ImageProcessingDirtyCallBack: Any = js.native
     
     @JSImport("babylonjs/Materials/material", "Material._LightsDirtyCallBack")
     @js.native
-    val _LightsDirtyCallBack: js.Any = js.native
+    val _LightsDirtyCallBack: Any = js.native
     
     @JSImport("babylonjs/Materials/material", "Material._MiscDirtyCallBack")
     @js.native
-    val _MiscDirtyCallBack: js.Any = js.native
+    val _MiscDirtyCallBack: Any = js.native
     
     @JSImport("babylonjs/Materials/material", "Material._PrePassDirtyCallBack")
     @js.native
-    val _PrePassDirtyCallBack: js.Any = js.native
+    val _PrePassDirtyCallBack: Any = js.native
     
     @JSImport("babylonjs/Materials/material", "Material._RunDirtyCallBacks")
     @js.native
-    val _RunDirtyCallBacks: js.Any = js.native
+    val _RunDirtyCallBacks: Any = js.native
     
     @JSImport("babylonjs/Materials/material", "Material._TextureAndMiscDirtyCallBack")
     @js.native
-    def _TextureAndMiscDirtyCallBack: js.Any = js.native
-    inline def _TextureAndMiscDirtyCallBack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TextureAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
+    def _TextureAndMiscDirtyCallBack: Any = js.native
+    inline def _TextureAndMiscDirtyCallBack_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TextureAndMiscDirtyCallBack")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Materials/material", "Material._TextureDirtyCallBack")
     @js.native
-    val _TextureDirtyCallBack: js.Any = js.native
+    val _TextureDirtyCallBack: Any = js.native
   }
   
   trait ICustomShaderNameResolveOptions extends StObject {
@@ -1051,7 +1204,7 @@ object materialMod {
     /**
       * If provided, will be called two times with the vertex and fragment code so that this code can be updated before it is compiled by the GPU
       */
-    var processFinalCode: js.UndefOr[Nullable[js.Function2[/* shaderType */ String, /* code */ String, String]]] = js.undefined
+    var processFinalCode: js.UndefOr[Nullable[ShaderCustomProcessingFunction]] = js.undefined
   }
   object ICustomShaderNameResolveOptions {
     

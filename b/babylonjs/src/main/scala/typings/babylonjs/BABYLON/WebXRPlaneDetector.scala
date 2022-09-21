@@ -9,23 +9,23 @@ trait WebXRPlaneDetector
   extends StObject
      with WebXRAbstractFeature {
   
-  /* private */ var _detectedPlanes: js.Any = js.native
+  /* private */ var _detectedPlanes: Any = js.native
   
-  /* private */ var _enabled: js.Any = js.native
-  
-  /* private */ var _init: js.Any = js.native
-  
-  /* private */ var _lastFrameDetected: js.Any = js.native
-  
-  /* private */ var _options: js.Any = js.native
-  
-  /* private */ var _updatePlaneWithXRPlane: js.Any = js.native
+  /* private */ var _enabled: Any = js.native
   
   /**
     * avoiding using Array.find for global support.
     * @param xrPlane the plane to find in the array
     */
-  /* private */ var findIndexInPlaneArray: js.Any = js.native
+  /* private */ var _findIndexInPlaneArray: Any = js.native
+  
+  /* private */ var _init: Any = js.native
+  
+  /* private */ var _lastFrameDetected: Any = js.native
+  
+  /* private */ var _options: Any = js.native
+  
+  /* private */ var _updatePlaneWithXRPlane: Any = js.native
   
   /**
     * Observers registered here will be executed when a new plane was added to the session

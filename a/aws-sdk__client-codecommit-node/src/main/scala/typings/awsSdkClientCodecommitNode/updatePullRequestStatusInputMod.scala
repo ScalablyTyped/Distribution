@@ -8,5 +8,5 @@ object updatePullRequestStatusInputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/UpdatePullRequestStatusInput", "UpdatePullRequestStatusInput")
   @js.native
-  val UpdatePullRequestStatusInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UpdatePullRequestStatusInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

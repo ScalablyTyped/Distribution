@@ -78,7 +78,7 @@ object XHyphenator {
     hasLocale: Locale => Boolean,
     hyphenate: (String, Locale, Double, PropertyValues) => XHyphenatedWord,
     queryAlternativeSpelling: (String, Locale, Double, PropertyValues) => XHyphenatedWord,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XHyphenator = {
     val __obj = js.Dynamic.literal(Locales = Locales.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), createPossibleHyphens = js.Any.fromFunction3(createPossibleHyphens), getLocales = js.Any.fromFunction0(getLocales), hasLocale = js.Any.fromFunction1(hasLocale), hyphenate = js.Any.fromFunction4(hyphenate), queryAlternativeSpelling = js.Any.fromFunction4(queryAlternativeSpelling), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

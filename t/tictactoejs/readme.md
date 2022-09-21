@@ -11,9 +11,9 @@ provide a library like chess.js but for tic tac toe.. you can make your own GUI
 | Full name          | tictactoejs |
 | Keywords           | tic, tac, toe, move, generation, tic-tac-toe |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 5223 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 101.66666666666667 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/ryanhs/TicTacToeJS#readme)

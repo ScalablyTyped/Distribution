@@ -7,6 +7,8 @@ import typings.intercomClient.anon.Segments
 import typings.intercomClient.anon.Socialprofiles
 import typings.intercomClient.anon.Tags
 import typings.intercomClient.intercomClientStrings.contact
+import typings.intercomClient.intercomClientStrings.lead
+import typings.intercomClient.intercomClientStrings.user
 import typings.intercomClient.intercomClientStrings.userDotlist
 import typings.intercomClient.userMod.Avatar
 import typings.intercomClient.userMod.LocationData
@@ -24,7 +26,7 @@ object leadMod {
     
     val created_at: Double
     
-    var custom_attributes: StringDictionary[js.Any]
+    var custom_attributes: StringDictionary[Any]
     
     var email: String | Null
     
@@ -41,6 +43,8 @@ object leadMod {
     var phone: String | Null
     
     var referrer: String | Null
+    
+    var role: user | lead
     
     var segments: Segments
     
@@ -64,16 +68,17 @@ object leadMod {
       avatar: Avatar,
       companies: Companies,
       created_at: Double,
-      custom_attributes: StringDictionary[js.Any],
+      custom_attributes: StringDictionary[Any],
       id: String,
       location_data: LocationData | js.Object,
+      role: user | lead,
       segments: Segments,
       social_profiles: Socialprofiles,
       tags: Tags,
       unsubscribed_from_emails: Boolean,
       updated_at: Double
     ): Lead = {
-      val __obj = js.Dynamic.literal(avatar = avatar.asInstanceOf[js.Any], companies = companies.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_attributes = custom_attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location_data = location_data.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], social_profiles = social_profiles.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], unsubscribed_from_emails = unsubscribed_from_emails.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], email = null, last_request_at = null, last_seen_ip = null, name = null, phone = null, referrer = null, user_agent_data = null, user_id = null)
+      val __obj = js.Dynamic.literal(avatar = avatar.asInstanceOf[js.Any], companies = companies.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_attributes = custom_attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location_data = location_data.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], social_profiles = social_profiles.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], unsubscribed_from_emails = unsubscribed_from_emails.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], email = null, last_request_at = null, last_seen_ip = null, name = null, phone = null, referrer = null, user_agent_data = null, user_id = null)
       __obj.updateDynamic("type")("contact")
       __obj.asInstanceOf[Lead]
     }
@@ -86,7 +91,7 @@ object leadMod {
       
       inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      inline def setCustom_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
+      inline def setCustom_attributes(value: StringDictionary[Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -116,6 +121,8 @@ object leadMod {
       
       inline def setReferrerNull: Self = StObject.set(x, "referrer", null)
       
+      inline def setRole(value: user | lead): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
       inline def setSegments(value: Segments): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       
       inline def setSocial_profiles(value: Socialprofiles): Self = StObject.set(x, "social_profiles", value.asInstanceOf[js.Any])
@@ -138,16 +145,35 @@ object leadMod {
     }
   }
   
+  trait LeadIdIdentifier
+    extends StObject
+       with LeadIdentifier {
+    
+    var id: String
+  }
+  object LeadIdIdentifier {
+    
+    inline def apply(id: String): LeadIdIdentifier = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LeadIdIdentifier]
+    }
+    
+    extension [Self <: LeadIdIdentifier](x: Self) {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* Rewritten from type alias, can be one of: 
-    - typings.intercomClient.anon.Id
+    - typings.intercomClient.leadMod.LeadIdIdentifier
     - typings.intercomClient.anon.Userid
   */
   trait LeadIdentifier extends StObject
   object LeadIdentifier {
     
-    inline def Id(id: String): typings.intercomClient.anon.Id = {
+    inline def LeadIdIdentifier(id: String): typings.intercomClient.leadMod.LeadIdIdentifier = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.intercomClient.anon.Id]
+      __obj.asInstanceOf[typings.intercomClient.leadMod.LeadIdIdentifier]
     }
     
     inline def Userid(user_id: String): typings.intercomClient.anon.Userid = {
@@ -178,7 +204,7 @@ object leadMod {
       
       inline def setContacts(value: js.Array[Lead]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
       
-      inline def setContactsVarargs(value: Lead*): Self = StObject.set(x, "contacts", js.Array(value :_*))
+      inline def setContactsVarargs(value: Lead*): Self = StObject.set(x, "contacts", js.Array(value*))
       
       inline def setPages(value: Next): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       

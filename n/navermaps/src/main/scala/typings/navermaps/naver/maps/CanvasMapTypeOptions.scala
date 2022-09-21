@@ -8,7 +8,7 @@ trait CanvasMapTypeOptions extends StObject {
   
   var darktheme: js.UndefOr[Boolean] = js.undefined
   
-  var getTileData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getTileData: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var maxZoom: Double
   
@@ -41,7 +41,7 @@ object CanvasMapTypeOptions {
     
     inline def setDarkthemeUndefined: Self = StObject.set(x, "darktheme", js.undefined)
     
-    inline def setGetTileData(value: () => js.Any): Self = StObject.set(x, "getTileData", js.Any.fromFunction0(value))
+    inline def setGetTileData(value: () => Any): Self = StObject.set(x, "getTileData", js.Any.fromFunction0(value))
     
     inline def setGetTileDataUndefined: Self = StObject.set(x, "getTileData", js.undefined)
     
@@ -57,7 +57,7 @@ object CanvasMapTypeOptions {
     
     inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    inline def setProviderVarargs(value: MapDataProvider*): Self = StObject.set(x, "provider", js.Array(value :_*))
+    inline def setProviderVarargs(value: MapDataProvider*): Self = StObject.set(x, "provider", js.Array(value*))
     
     inline def setRepeatX(value: Boolean): Self = StObject.set(x, "repeatX", value.asInstanceOf[js.Any])
     

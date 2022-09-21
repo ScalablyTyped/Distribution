@@ -8,7 +8,7 @@ object globalSettingsMod {
   
   @JSImport("@uifabric/utilities/lib/GlobalSettings", "GlobalSettings")
   @js.native
-  class GlobalSettings () extends StObject
+  open class GlobalSettings () extends StObject
   /* static members */
   object GlobalSettings {
     
@@ -31,13 +31,13 @@ object globalSettingsMod {
     
     var key: String
     
-    var oldValue: js.Any
+    var oldValue: Any
     
-    var value: js.Any
+    var value: Any
   }
   object IChangeDescription {
     
-    inline def apply(key: String, oldValue: js.Any, value: js.Any): IChangeDescription = {
+    inline def apply(key: String, oldValue: Any, value: Any): IChangeDescription = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IChangeDescription]
     }
@@ -46,9 +46,9 @@ object globalSettingsMod {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

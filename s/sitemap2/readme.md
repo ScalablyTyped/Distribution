@@ -11,9 +11,9 @@ Sitemap-generating framework
 | Full name          | sitemap2 |
 | Keywords           | sitemap, sitemap.xml, nested sitemaps |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1275 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 859.3333333333334 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/vlkosinov/sitemap2#readme)

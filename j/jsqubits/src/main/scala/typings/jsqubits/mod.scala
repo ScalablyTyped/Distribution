@@ -81,7 +81,7 @@ object mod extends Shortcut {
       
       inline def setQuotients(value: js.Array[Double]): Self = StObject.set(x, "quotients", value.asInstanceOf[js.Any])
       
-      inline def setQuotientsVarargs(value: Double*): Self = StObject.set(x, "quotients", js.Array(value :_*))
+      inline def setQuotientsVarargs(value: Double*): Self = StObject.set(x, "quotients", js.Array(value*))
     }
   }
   
@@ -211,6 +211,11 @@ object mod extends Shortcut {
   trait StateWithAmplitudeStatic
     extends StObject
        with Instantiable3[/* numBits */ Double, /* index */ Double, /* amplitude */ Complex, StateWithAmplitude]
+  
+  type ToffoliArgs = /* import warning: importer.ImportType#apply c repeated non-array type: [jsqubits.jsqubits.SingleQubitOperatorTargetQubits, ...std.Array<jsqubits.jsqubits.SingleQubitOperatorTargetQubits>] */ /* controlBits */ js.Array[Array[SingleQubitOperatorTargetQubits]]
+  
+  // At least one control bit must be supplied to toffoli()
+  type ToffoliControlQubits = Array[SingleQubitOperatorTargetQubits]
   
   trait _SingleQubitOperatorTargetQubits extends StObject
   
@@ -441,13 +446,9 @@ object mod extends Shortcut {
       
       def tensorProduct(qState: QState): QState = js.native
       
-      /**
-        * toffoli args is
-        * (...controlBit: SingleQubitOperatorTargetQubits[], targetBit: SingleQubitOperatorTargetQubits)
-        * but TypeScript3.4 cannot define this args.
-        * welcome Pull Request.
-        */
-      def toffoli(args: SingleQubitOperatorTargetQubits*): QState = js.native
+      def toffoli(
+        /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ToffoliArgs is not an array type */ args: ToffoliArgs
+      ): QState = js.native
       
       def x(targetBits: SingleQubitOperatorTargetQubits): QState = js.native
       

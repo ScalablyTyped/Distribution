@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.PageHeader")
 @js.native
-class PageHeader ()
+open class PageHeader ()
   extends typings.reactBootstrap.mod.PageHeader

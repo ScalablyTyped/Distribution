@@ -1,9 +1,9 @@
 package typings.reactTwitterAuth
 
 import typings.react.mod.CSSProperties
+import typings.react.mod.ElementType
+import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
-import typings.react.mod.ReactType
-import typings.react.mod.StatelessComponent
 import typings.reactTwitterAuth.reactTwitterAuthStrings.`same-origin`
 import typings.reactTwitterAuth.reactTwitterAuthStrings.include
 import typings.reactTwitterAuth.reactTwitterAuthStrings.omit
@@ -20,8 +20,8 @@ object mod {
   
   @JSImport("react-twitter-auth", JSImport.Default)
   @js.native
-  def default: StatelessComponent[TwitterLoginProps] = js.native
-  inline def default_=(x: StatelessComponent[TwitterLoginProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  def default: FunctionComponent[TwitterLoginProps] = js.native
+  inline def default_=(x: FunctionComponent[TwitterLoginProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   trait TwitterLoginProps extends StObject {
     
@@ -51,7 +51,7 @@ object mod {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tag: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
     
     var text: js.UndefOr[String] = js.undefined
   }
@@ -76,7 +76,7 @@ object mod {
       
       inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
       
-      inline def setCustomHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "customHeaders", js.Array(value :_*))
+      inline def setCustomHeadersVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "customHeaders", js.Array(value*))
       
       inline def setDialogHeight(value: Double): Self = StObject.set(x, "dialogHeight", value.asInstanceOf[js.Any])
       
@@ -110,7 +110,7 @@ object mod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTag(value: ReactType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       

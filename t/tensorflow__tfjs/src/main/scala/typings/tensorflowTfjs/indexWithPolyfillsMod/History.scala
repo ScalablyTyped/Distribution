@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "History")
 @js.native
-class History ()
+open class History ()
   extends typings.tensorflowTfjs.mod.History

@@ -1,7 +1,7 @@
 
 # Scala.js typings for opossum
 
-Typings are for version 4.1
+Typings are for version 6.2
 
 ## Library description:
 A fail-fast circuit breaker for promises and callbacks
@@ -10,10 +10,10 @@ A fail-fast circuit breaker for promises and callbacks
 | ------------------ | :-------------: |
 | Full name          | opossum |
 | Keywords           | circuit breaker, circuit-breaker, fail-fast, circuit, breaker, hystrix, rate-limiting |
-| # releases         | 25 |
-| # dependents       | 14 |
-| # downloads        | 2597743 |
-| # stars            | 3 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 673854.3333333334 |
+| # stars            | 785.0 |
 
 ## Links
 - [Homepage](https://nodeshift.dev/opossum)

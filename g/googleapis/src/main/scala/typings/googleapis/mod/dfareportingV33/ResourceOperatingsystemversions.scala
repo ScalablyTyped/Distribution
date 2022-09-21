@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis", "dfareporting_v3_3.Resource$Operatingsystemversions")
 @js.native
-class ResourceOperatingsystemversions protected ()
+open class ResourceOperatingsystemversions protected ()
   extends typings.googleapis.v33Mod.dfareportingV33.ResourceOperatingsystemversions {
   def this(context: APIRequestContext) = this()
 }

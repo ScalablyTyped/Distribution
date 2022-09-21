@@ -10,7 +10,7 @@ trait DirectoryAudit
   
   /**
     * Indicates the date and time the activity was performed. The Timestamp type is always in UTC time. For example, midnight
-    * UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     */
   var activityDateTime: js.UndefOr[String] = js.undefined
   
@@ -44,12 +44,16 @@ trait DirectoryAudit
     */
   var loggedByService: js.UndefOr[NullableOption[String]] = js.undefined
   
+  /**
+    * Indicates the type of operation that was performed. The possible values include but are not limited to the following:
+    * Add, Assign, Update, Unassign, and Delete.
+    */
   var operationType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates the result of the activity. Possible values are: success, failure, timeout, unknownFutureValue.
   var result: js.UndefOr[NullableOption[OperationResult]] = js.undefined
   
-  // Describes cause of 'failure' or 'timeout' results.
+  // Indicates the reason for failure if the result is failure or timeout.
   var resultReason: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
@@ -81,7 +85,7 @@ object DirectoryAudit {
     
     inline def setAdditionalDetailsUndefined: Self = StObject.set(x, "additionalDetails", js.undefined)
     
-    inline def setAdditionalDetailsVarargs(value: KeyValue*): Self = StObject.set(x, "additionalDetails", js.Array(value :_*))
+    inline def setAdditionalDetailsVarargs(value: KeyValue*): Self = StObject.set(x, "additionalDetails", js.Array(value*))
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
@@ -127,6 +131,6 @@ object DirectoryAudit {
     
     inline def setTargetResourcesUndefined: Self = StObject.set(x, "targetResources", js.undefined)
     
-    inline def setTargetResourcesVarargs(value: TargetResource*): Self = StObject.set(x, "targetResources", js.Array(value :_*))
+    inline def setTargetResourcesVarargs(value: TargetResource*): Self = StObject.set(x, "targetResources", js.Array(value*))
   }
 }

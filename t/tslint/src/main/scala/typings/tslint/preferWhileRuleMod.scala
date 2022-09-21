@@ -11,12 +11,12 @@ object preferWhileRuleMod {
   
   @JSImport("tslint/lib/rules/preferWhileRule", "Rule")
   @js.native
-  class Rule protected () extends AbstractRule {
+  open class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
     
-    /* private */ var createFailure: js.Any = js.native
+    /* private */ var createFailure: Any = js.native
     
-    /* private */ var doesNodeViolateRule: js.Any = js.native
+    /* private */ var doesNodeViolateRule: Any = js.native
   }
   /* static members */
   object Rule {

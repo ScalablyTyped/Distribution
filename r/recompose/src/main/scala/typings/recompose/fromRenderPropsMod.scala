@@ -14,11 +14,11 @@ object fromRenderPropsMod {
   val ^ : js.Any = js.native
   
   inline def default[TInner, TOutter, TRenderProps](
-    RenderPropsComponent: ComponentType[js.Any],
+    RenderPropsComponent: ComponentType[Any],
     propsMapper: js.Function1[/* props */ TRenderProps, TInner]
   ): ComponentEnhancer[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(RenderPropsComponent.asInstanceOf[js.Any], propsMapper.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[TInner & TOutter, TOutter]]
   inline def default[TInner, TOutter, TRenderProps](
-    RenderPropsComponent: ComponentType[js.Any],
+    RenderPropsComponent: ComponentType[Any],
     propsMapper: js.Function1[/* props */ TRenderProps, TInner],
     renderPropName: String
   ): ComponentEnhancer[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(RenderPropsComponent.asInstanceOf[js.Any], propsMapper.asInstanceOf[js.Any], renderPropName.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[TInner & TOutter, TOutter]]

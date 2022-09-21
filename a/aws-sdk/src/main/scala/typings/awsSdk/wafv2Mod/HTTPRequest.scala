@@ -61,7 +61,7 @@ object HTTPRequest {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
     
-    inline def setHeadersVarargs(value: HTTPHeader*): Self = StObject.set(x, "Headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: HTTPHeader*): Self = StObject.set(x, "Headers", js.Array(value*))
     
     inline def setMethod(value: HTTPMethod): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
     

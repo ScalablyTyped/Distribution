@@ -19,6 +19,6 @@ object UseSortByState {
     
     inline def setSortBy(value: js.Array[SortingRule[D]]): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    inline def setSortByVarargs(value: SortingRule[D]*): Self = StObject.set(x, "sortBy", js.Array(value :_*))
+    inline def setSortByVarargs(value: SortingRule[D]*): Self = StObject.set(x, "sortBy", js.Array(value*))
   }
 }

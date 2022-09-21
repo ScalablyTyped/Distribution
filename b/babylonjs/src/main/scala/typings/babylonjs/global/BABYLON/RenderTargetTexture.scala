@@ -1,7 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
-import typings.babylonjs.anon.Height
+import typings.babylonjs.anon.Layers
 import typings.babylonjs.anon.Ratio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.RenderTargetTexture")
 @js.native
-class RenderTargetTexture protected ()
+open class RenderTargetTexture protected ()
   extends StObject
      with typings.babylonjs.BABYLON.RenderTargetTexture {
   /**
-    * Instantiate a render target texture. This is mainly used to render of screen the scene to for instance apply post processse
+    * Instantiate a render target texture. This is mainly used to render of screen the scene to for instance apply post process
     * or used a shadow, depth texture...
     * @param name The friendly name of the texture
     * @param size The size of the RTT (number if square, or {width: number, height:number} or {ratio:} to define a ratio from the main scene)
@@ -28,11 +28,15 @@ class RenderTargetTexture protected ()
     * @param isMulti True if multiple textures need to be created (Draw Buffers)
     * @param format The internal format of the buffer in the RTT (RED, RG, RGB, RGBA, ALPHA...)
     * @param delayAllocation if the texture allocation should be delayed (default: false)
+    * @param samples sample count to use when creating the RTT
+    * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
+    * @param noColorTarget True to indicate that no color target should be created. Useful if you only want to write to the depth buffer, for eg
+    * @param useSRGBBuffer True to create a SRGB texture
     */
   def this(
     name: String,
-    size: Double | Height | Ratio,
-    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    size: Double | Layers | Ratio,
+    scene: js.UndefOr[Nullable[typings.babylonjs.BABYLON.Scene]],
     generateMipMaps: js.UndefOr[Boolean],
     doNotChangeAspectRatio: js.UndefOr[Boolean],
     `type`: js.UndefOr[Double],
@@ -42,7 +46,11 @@ class RenderTargetTexture protected ()
     generateStencilBuffer: js.UndefOr[Boolean],
     isMulti: js.UndefOr[Boolean],
     format: js.UndefOr[Double],
-    delayAllocation: js.UndefOr[Boolean]
+    delayAllocation: js.UndefOr[Boolean],
+    samples: js.UndefOr[Double],
+    creationFlags: js.UndefOr[Double],
+    noColorTarget: js.UndefOr[Boolean],
+    useSRGBBuffer: js.UndefOr[Boolean]
   ) = this()
   
   /**
@@ -50,6 +58,12 @@ class RenderTargetTexture protected ()
     */
   /* CompleteClass */
   var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
+  
+  /**
+    * Entry point to access the wrapper on a texture.
+    */
+  /* CompleteClass */
+  var renderTarget: Nullable[typings.babylonjs.BABYLON.RenderTargetWrapper] = js.native
 }
 /* static members */
 object RenderTargetTexture {
@@ -62,7 +76,7 @@ object RenderTargetTexture {
   val REFRESHRATE_RENDER_ONCE: Double = js.native
   
   /**
-    * The texture will only be rendered rendered every frame and is recomended for dynamic contents.
+    * The texture will only be rendered rendered every frame and is recommended for dynamic contents.
     */
   @JSGlobal("BABYLON.RenderTargetTexture.REFRESHRATE_RENDER_ONEVERYFRAME")
   @js.native

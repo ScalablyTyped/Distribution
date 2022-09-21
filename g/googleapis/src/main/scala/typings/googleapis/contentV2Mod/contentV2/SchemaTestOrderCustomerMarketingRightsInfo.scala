@@ -7,16 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaTestOrderCustomerMarketingRightsInfo extends StObject {
   
   /**
-    * Last know user use selection regards marketing preferences. In certain
-    * cases selection might not be known, so this field would be empty.
+    * Last know user use selection regards marketing preferences. In certain cases selection might not be known, so this field would be empty. Acceptable values are: - "`denied`" - "`granted`"
     */
-  var explicitMarketingPreference: js.UndefOr[String] = js.undefined
+  var explicitMarketingPreference: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Timestamp when last time marketing preference was updated. Could be
-    * empty, if user wasn&#39;t offered a selection yet.
+    * Timestamp when last time marketing preference was updated. Could be empty, if user wasn't offered a selection yet.
     */
-  var lastUpdatedTimestamp: js.UndefOr[String] = js.undefined
+  var lastUpdatedTimestamp: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTestOrderCustomerMarketingRightsInfo {
   
@@ -29,9 +27,13 @@ object SchemaTestOrderCustomerMarketingRightsInfo {
     
     inline def setExplicitMarketingPreference(value: String): Self = StObject.set(x, "explicitMarketingPreference", value.asInstanceOf[js.Any])
     
+    inline def setExplicitMarketingPreferenceNull: Self = StObject.set(x, "explicitMarketingPreference", null)
+    
     inline def setExplicitMarketingPreferenceUndefined: Self = StObject.set(x, "explicitMarketingPreference", js.undefined)
     
     inline def setLastUpdatedTimestamp(value: String): Self = StObject.set(x, "lastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setLastUpdatedTimestampNull: Self = StObject.set(x, "lastUpdatedTimestamp", null)
     
     inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "lastUpdatedTimestamp", js.undefined)
   }

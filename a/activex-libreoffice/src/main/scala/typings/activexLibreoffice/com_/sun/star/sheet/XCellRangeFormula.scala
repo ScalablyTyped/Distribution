@@ -49,7 +49,7 @@ object XCellRangeFormula {
     FormulaArray: SafeArray[SafeArray[String]],
     acquire: () => Unit,
     getFormulaArray: () => SafeArray[SafeArray[String]],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setFormulaArray: SeqEquiv[SeqEquiv[String]] => Unit
   ): XCellRangeFormula = {

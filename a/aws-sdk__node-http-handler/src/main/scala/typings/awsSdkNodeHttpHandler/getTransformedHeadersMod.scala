@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object getTransformedHeadersMod {
   
-  @JSImport("@aws-sdk/node-http-handler/dist/cjs/get-transformed-headers", JSImport.Namespace)
+  @JSImport("@aws-sdk/node-http-handler/dist-types/get-transformed-headers", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ldapjs", "SearchRequest")
 @js.native
-class SearchRequest () extends StObject {
+open class SearchRequest () extends StObject {
   
-  var attributes: js.UndefOr[js.Any] = js.native
+  var attributes: js.UndefOr[Any] = js.native
   
   var baseObject: String = js.native
   
   var derefAliases: Double = js.native
   
-  var filter: js.Any = js.native
+  var filter: Any = js.native
   
   var scope: base | one | sub = js.native
   

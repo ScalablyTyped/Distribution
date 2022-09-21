@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.KVOArray")
 @js.native
-class KVOArray protected ()
+open class KVOArray protected ()
   extends StObject
      with typings.navermaps.naver.maps.KVOArray {
-  def this(array: js.Array[js.Any]) = this()
+  def this(array: js.Array[Any]) = this()
 }

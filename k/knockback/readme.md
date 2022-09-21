@@ -9,13 +9,13 @@ Knockback.js provides Knockout.js magic for Backbone.js Models and Collections
 | ------------------ | :-------------: |
 | Full name          | knockback |
 | Keywords           | knockback, knockbackjs, backbone, backbonejs, knockout, knockoutjs |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 33174 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4445.666666666667 |
+| # stars            | 1057.0 |
 
 ## Links
-- [Homepage](http://kmalakoff.github.com/knockback/)
+- [Homepage](https://github.com/kmalakoff/knockback#readme)
 - [Bugs](https://github.com/kmalakoff/knockback/issues)
 - [Repository](https://github.com/kmalakoff/knockback)
 - [Npm](https://www.npmjs.com/package/knockback)

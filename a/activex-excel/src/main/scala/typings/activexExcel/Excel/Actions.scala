@@ -19,7 +19,7 @@ trait Actions extends StObject {
   def Item(Index: String): Action = js.native
   def Item(Index: Double): Action = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Default(Index: String): Action = js.native
   def _Default(Index: Double): Action = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object colorToRgbaMod {
   
-  @JSImport("@react-spring/shared/cjs/colorToRgba", JSImport.Namespace)
+  @JSImport("@react-spring/shared/dist/declarations/src/colorToRgba", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

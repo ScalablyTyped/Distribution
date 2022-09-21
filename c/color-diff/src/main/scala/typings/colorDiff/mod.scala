@@ -28,17 +28,20 @@ object mod {
   inline def labPaletteMapKey(c: LabColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lab_palette_map_key")(c.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def mapPalette(a: js.Array[RGBColor], b: js.Array[RGBColor]): StringDictionary[RGBColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("map_palette")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[RGBColor]]
+  inline def mapPalette(a: js.Array[RGBColor], b: js.Array[RGBColor], `type`: closest | furthest): StringDictionary[RGBColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("map_palette")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[RGBColor]]
+  inline def mapPalette(
+    a: js.Array[RGBColor],
+    b: js.Array[RGBColor],
+    `type`: closest | furthest,
+    backgroundColor: RGBColor
+  ): StringDictionary[RGBColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("map_palette")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], backgroundColor.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[RGBColor]]
   inline def mapPalette(a: js.Array[RGBColor], b: js.Array[RGBColor], `type`: Unit, backgroundColor: RGBColor): StringDictionary[RGBColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("map_palette")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], backgroundColor.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[RGBColor]]
   
   inline def mapPaletteLab(p1: js.Array[LabColor], p2: js.Array[LabColor]): StringDictionary[LabColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("map_palette_lab")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[LabColor]]
   
-  inline def mapPalette_closest(a: js.Array[RGBColor], b: js.Array[RGBColor], `type`: closest): StringDictionary[RGBColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("map_palette")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[RGBColor]]
-  inline def mapPalette_closest(a: js.Array[RGBColor], b: js.Array[RGBColor], `type`: closest, backgroundColor: RGBColor): StringDictionary[RGBColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("map_palette")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], backgroundColor.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[RGBColor]]
-  
-  inline def mapPalette_furthest(a: js.Array[RGBColor], b: js.Array[RGBColor], `type`: furthest): StringDictionary[RGBColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("map_palette")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[RGBColor]]
-  inline def mapPalette_furthest(a: js.Array[RGBColor], b: js.Array[RGBColor], `type`: furthest, backgroundColor: RGBColor): StringDictionary[RGBColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("map_palette")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], backgroundColor.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[RGBColor]]
-  
   inline def matchPaletteLab(target_color: LabColor, palette: js.Array[LabColor], find_furthest: Boolean): LabColor = (^.asInstanceOf[js.Dynamic].applyDynamic("match_palette_lab")(target_color.asInstanceOf[js.Any], palette.asInstanceOf[js.Any], find_furthest.asInstanceOf[js.Any])).asInstanceOf[LabColor]
+  
+  inline def normalizeRgb(c: RGBColor): RGBColor = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize_rgb")(c.asInstanceOf[js.Any]).asInstanceOf[RGBColor]
   
   inline def paletteMapKey(c: RGBColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("palette_map_key")(c.asInstanceOf[js.Any]).asInstanceOf[String]
   

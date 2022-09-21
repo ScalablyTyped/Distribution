@@ -159,7 +159,7 @@ object Axis {
     
     inline def setLimitLinesUndefined: Self = StObject.set(x, "limitLines", js.undefined)
     
-    inline def setLimitLinesVarargs(value: AxisLimitLine*): Self = StObject.set(x, "limitLines", js.Array(value :_*))
+    inline def setLimitLinesVarargs(value: AxisLimitLine*): Self = StObject.set(x, "limitLines", js.Array(value*))
     
     inline def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
@@ -185,6 +185,6 @@ object Axis {
     
     inline def setValueFormatterUndefined: Self = StObject.set(x, "valueFormatter", js.undefined)
     
-    inline def setValueFormatterVarargs(value: String*): Self = StObject.set(x, "valueFormatter", js.Array(value :_*))
+    inline def setValueFormatterVarargs(value: String*): Self = StObject.set(x, "valueFormatter", js.Array(value*))
   }
 }

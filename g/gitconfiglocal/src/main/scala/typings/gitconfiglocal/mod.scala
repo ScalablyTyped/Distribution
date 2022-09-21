@@ -2,7 +2,6 @@ package typings.gitconfiglocal
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.gitconfiglocal.gitconfiglocalBooleans.`false`
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type GitConfig = StringDictionary[js.Any]
+  type GitConfig = StringDictionary[Any]
   
   trait Options extends StObject {
     
@@ -37,5 +36,5 @@ object mod {
     }
   }
   
-  type callback = js.Function2[/* error */ Error | `false`, /* config */ GitConfig, Unit]
+  type callback = js.Function2[/* error */ js.Error | `false`, /* config */ GitConfig, Unit]
 }

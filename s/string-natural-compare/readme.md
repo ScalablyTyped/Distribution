@@ -10,15 +10,12 @@ Compare alphanumeric strings the same way a human would, using a natural order a
 | ------------------ | :-------------: |
 | Full name          | string-natural-compare |
 | Keywords           | string, natural, compare, comparison, order, natcmp, strnatcmp, sort, natsort, alphanum, alphanumeric |
-| # releases         | 4 |
-| # dependents       | 32 |
-| # downloads        | 2890817 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3234365333333334E7 |
+| # stars            | 41.0 |
 
 ## Links
-- [Homepage](https://github.com/nwoltman/string-natural-compare)
-- [Bugs](https://github.com/nwoltman/string-natural-compare/issues)
-- [Repository](https://github.com/nwoltman/string-natural-compare)
 - [Npm](https://www.npmjs.com/package/string-natural-compare)
     
 

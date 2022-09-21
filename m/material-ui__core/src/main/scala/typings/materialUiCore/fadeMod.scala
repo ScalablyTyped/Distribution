@@ -1,20 +1,16 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.fadeFadeMod.FadeProps
-import typings.react.mod.ComponentType
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object fadeMod extends Shortcut {
+object fadeMod {
   
-  @JSImport("@material-ui/core/Fade", JSImport.Default)
+  @JSImport("@material-ui/core/Fade", JSImport.Namespace)
   @js.native
-  val default: ComponentType[FadeProps] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ComponentType[FadeProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `fadeMod.foo` */
-  override def _to: ComponentType[FadeProps] = default
+  inline def default(props: FadeProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

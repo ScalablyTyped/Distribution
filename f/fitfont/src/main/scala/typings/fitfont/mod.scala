@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("fitfont", "FitFont")
   @js.native
-  class FitFont protected () extends StObject {
+  open class FitFont protected () extends StObject {
     def this(options: Options) = this()
     
     /**

@@ -1,8 +1,8 @@
 package typings.sipJs
 
-import typings.sipJs.ackMod.OutgoingAckRequest
 import typings.sipJs.incomingRequestMod.IncomingRequest
 import typings.sipJs.incomingResponseMod.IncomingResponse
+import typings.sipJs.methodsAckMod.OutgoingAckRequest
 import typings.sipJs.outgoingRequestMod.OutgoingRequest
 import typings.sipJs.outgoingRequestMod.OutgoingRequestDelegate
 import typings.sipJs.outgoingRequestMod.RequestOptions

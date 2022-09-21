@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__common
 
-Typings are for version 11.0.2
+Typings are for version 14.2.3
 
 ## Library description:
 Angular - commonly needed directives and services
@@ -10,10 +10,10 @@ Angular - commonly needed directives and services
 | ------------------ | :-------------: |
 | Full name          | @angular/common |
 | Keywords           | - |
-| # releases         | 210 |
-| # dependents       | 8325 |
-| # downloads        | 79937572 |
-| # stars            | 13 |
+| # releases         | 220 |
+| # dependents       | 0.0 |
+| # downloads        | 9540403.666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/angular/angular#readme)

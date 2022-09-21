@@ -9,19 +9,19 @@ trait IContainer
   extends StObject
      with INode {
   
-  def add(child: INode): js.Any = js.native
+  def add(child: INode): Any = js.native
   
   def destroyChildren(): IContainer = js.native
   
-  def find(selector: String): js.Any = js.native
+  def find(selector: String): Any = js.native
   
-  def get(selector: js.Any): js.Any = js.native
+  def get(selector: Any): Any = js.native
   
   def getChildren(): js.Array[INode] = js.native
   
-  def getIntersections(point: js.Any): js.Any = js.native
+  def getIntersections(point: Any): Any = js.native
   
-  def isAncestorOf(node: js.Any): js.Any = js.native
+  def isAncestorOf(node: Any): Any = js.native
   
-  def removeChildren(): js.Any = js.native
+  def removeChildren(): Any = js.native
 }

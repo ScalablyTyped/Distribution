@@ -8,5 +8,5 @@ object policyNameListMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/_PolicyNameList", "_PolicyNameList")
   @js.native
-  val PolicyNameList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val PolicyNameList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

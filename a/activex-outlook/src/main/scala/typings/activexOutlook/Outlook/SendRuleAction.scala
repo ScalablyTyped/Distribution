@@ -17,7 +17,7 @@ trait SendRuleAction extends StObject {
   /* private */ @JSName("Outlook.SendRuleAction_typekey")
   var OutlookDotSendRuleAction_typekey: SendRuleAction
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Recipients: typings.activexOutlook.Outlook.Recipients
   
@@ -31,7 +31,7 @@ object SendRuleAction {
     Class: OlObjectClass,
     Enabled: Boolean,
     OutlookDotSendRuleAction_typekey: SendRuleAction,
-    Parent: js.Any,
+    Parent: Any,
     Recipients: Recipients,
     Session: NameSpace
   ): SendRuleAction = {
@@ -52,7 +52,7 @@ object SendRuleAction {
     
     inline def setOutlookDotSendRuleAction_typekey(value: SendRuleAction): Self = StObject.set(x, "Outlook.SendRuleAction_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRecipients(value: Recipients): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object jwtMod {
   
-  @JSImport("@firebase/util/dist/src/jwt", JSImport.Namespace)
+  @JSImport("@firebase/util/dist/node-esm/src/jwt", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

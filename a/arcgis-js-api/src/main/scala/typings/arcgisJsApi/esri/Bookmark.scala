@@ -10,13 +10,6 @@ trait Bookmark
      with Accessor {
   
   /**
-    * The extent of the specified bookmark item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#extent)
-    */
-  var extent: Extent = js.native
-  
-  /**
     * The name of the bookmark item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#name)
@@ -29,6 +22,13 @@ trait Bookmark
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#thumbnail)
     */
   var thumbnail: BookmarkThumbnail = js.native
+  
+  /**
+    * The time extent of the bookmark item.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#timeExtent)
+    */
+  var timeExtent: TimeExtent = js.native
   
   /**
     * The viewpoint of the bookmark item.

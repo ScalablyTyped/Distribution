@@ -11,7 +11,7 @@ object colorManipulatorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def convertColorToString(color: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertColorToString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertColorToString(color: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertColorToString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def convertHexToRGB(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertHexToRGB")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   

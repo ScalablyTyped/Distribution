@@ -6,12 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait And extends StObject {
   
+  /**
+    * The &apos;and&apos; operation&apos;s description.
+    */
   var and: js.UndefOr[String] = js.undefined
   
+  /**
+    * The &apos;notand&apos; operation&apos;s description.
+    */
   var notAnd: js.UndefOr[String] = js.undefined
   
+  /**
+    * The &apos;notor&apos; operation&apos;s description.
+    */
   var notOr: js.UndefOr[String] = js.undefined
   
+  /**
+    * The &apos;or&apos; operation&apos;s description.
+    */
   var or: js.UndefOr[String] = js.undefined
 }
 object And {

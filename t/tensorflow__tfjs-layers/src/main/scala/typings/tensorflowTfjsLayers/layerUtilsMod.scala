@@ -18,25 +18,25 @@ object layerUtilsMod {
     model: Container,
     lineLength: Double,
     positions: js.Array[Double],
-    printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+    printFn: js.Function2[/* message */ js.UndefOr[Any], /* repeated */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printSummary")(model.asInstanceOf[js.Any], lineLength.asInstanceOf[js.Any], positions.asInstanceOf[js.Any], printFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def printSummary(
     model: Container,
     lineLength: Double,
     positions: Unit,
-    printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+    printFn: js.Function2[/* message */ js.UndefOr[Any], /* repeated */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printSummary")(model.asInstanceOf[js.Any], lineLength.asInstanceOf[js.Any], positions.asInstanceOf[js.Any], printFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def printSummary(model: Container, lineLength: Unit, positions: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printSummary")(model.asInstanceOf[js.Any], lineLength.asInstanceOf[js.Any], positions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def printSummary(
     model: Container,
     lineLength: Unit,
     positions: js.Array[Double],
-    printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+    printFn: js.Function2[/* message */ js.UndefOr[Any], /* repeated */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printSummary")(model.asInstanceOf[js.Any], lineLength.asInstanceOf[js.Any], positions.asInstanceOf[js.Any], printFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def printSummary(
     model: Container,
     lineLength: Unit,
     positions: Unit,
-    printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+    printFn: js.Function2[/* message */ js.UndefOr[Any], /* repeated */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printSummary")(model.asInstanceOf[js.Any], lineLength.asInstanceOf[js.Any], positions.asInstanceOf[js.Any], printFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

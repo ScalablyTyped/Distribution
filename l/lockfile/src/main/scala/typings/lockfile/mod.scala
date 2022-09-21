@@ -1,6 +1,5 @@
 package typings.lockfile
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,23 +10,23 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def check(path: String, callback: js.Function2[/* err */ Error | Null, /* isLocked */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def check(path: String, callback: js.Function2[/* err */ js.Error | Null, /* isLocked */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def check(
     path: String,
     opts: Options,
-    callback: js.Function2[/* err */ Error | Null, /* isLocked */ Boolean, Unit]
+    callback: js.Function2[/* err */ js.Error | Null, /* isLocked */ Boolean, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def checkSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def checkSync(path: String, opts: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkSync")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def lock(path: String, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lock")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def lock(path: String, opts: Options, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lock")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lock(path: String, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lock")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lock(path: String, opts: Options, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lock")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def lockSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lockSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def lockSync(path: String, opts: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lockSync")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def unlock(path: String, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unlock(path: String, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def unlockSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlockSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

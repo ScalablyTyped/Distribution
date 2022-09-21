@@ -66,7 +66,7 @@ object XAccessibleStateSet {
     containsAll: SeqEquiv[Double] => Boolean,
     getStates: () => SafeArray[Double],
     isEmpty: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAccessibleStateSet = {
     val __obj = js.Dynamic.literal(States = States.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), contains = js.Any.fromFunction1(contains), containsAll = js.Any.fromFunction1(containsAll), getStates = js.Any.fromFunction0(getStates), isEmpty = js.Any.fromFunction0(isEmpty), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

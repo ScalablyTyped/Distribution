@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluent__react
 
-Typings are for version 0.10
+Typings are for version 0.14.1
 
 ## Library description:
 Fluent bindings for React
@@ -10,10 +10,10 @@ Fluent bindings for React
 | ------------------ | :-------------: |
 | Full name          | @fluent/react |
 | Keywords           | localization, l10n, internationalization, i18n, ftl, plural, gender, locale, language, formatting, translate, translation, format, parser, react, reactjs |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 35897 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 8364.333333333334 |
+| # stars            | 751.0 |
 
 ## Links
 - [Homepage](https://projectfluent.org)
@@ -24,7 +24,7 @@ Fluent bindings for React
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

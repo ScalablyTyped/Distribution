@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LevelsParam extends StObject {
   
-  var levels: js.Array[js.Any]
+  var levels: js.Array[Any]
   
   var width: Double
 }
 object LevelsParam {
   
-  inline def apply(levels: js.Array[js.Any], width: Double): LevelsParam = {
+  inline def apply(levels: js.Array[Any], width: Double): LevelsParam = {
     val __obj = js.Dynamic.literal(levels = levels.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[LevelsParam]
   }
   
   extension [Self <: LevelsParam](x: Self) {
     
-    inline def setLevels(value: js.Array[js.Any]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: js.Array[Any]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    inline def setLevelsVarargs(value: js.Any*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: Any*): Self = StObject.set(x, "levels", js.Array(value*))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }

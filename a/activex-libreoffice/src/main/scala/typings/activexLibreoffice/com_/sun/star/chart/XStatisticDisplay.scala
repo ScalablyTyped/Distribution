@@ -64,7 +64,7 @@ object XStatisticDisplay {
     getDownBar: () => XPropertySet,
     getMinMaxLine: () => XPropertySet,
     getUpBar: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XStatisticDisplay = {
     val __obj = js.Dynamic.literal(DownBar = DownBar.asInstanceOf[js.Any], MinMaxLine = MinMaxLine.asInstanceOf[js.Any], UpBar = UpBar.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDownBar = js.Any.fromFunction0(getDownBar), getMinMaxLine = js.Any.fromFunction0(getMinMaxLine), getUpBar = js.Any.fromFunction0(getUpBar), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

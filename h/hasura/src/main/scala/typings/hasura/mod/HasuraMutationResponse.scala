@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HasuraMutationResponse[T /* <: Record[String, js.Any] */] extends StObject {
+trait HasuraMutationResponse[T /* <: Record[String, Any] */] extends StObject {
   
   var affected_rows: js.UndefOr[Double] = js.undefined
   
@@ -13,12 +13,12 @@ trait HasuraMutationResponse[T /* <: Record[String, js.Any] */] extends StObject
 }
 object HasuraMutationResponse {
   
-  inline def apply[T /* <: Record[String, js.Any] */](returning: js.Array[HasuraDataItem[T]]): HasuraMutationResponse[T] = {
+  inline def apply[T /* <: Record[String, Any] */](returning: js.Array[HasuraDataItem[T]]): HasuraMutationResponse[T] = {
     val __obj = js.Dynamic.literal(returning = returning.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasuraMutationResponse[T]]
   }
   
-  extension [Self <: HasuraMutationResponse[?], T /* <: Record[String, js.Any] */](x: Self & HasuraMutationResponse[T]) {
+  extension [Self <: HasuraMutationResponse[?], T /* <: Record[String, Any] */](x: Self & HasuraMutationResponse[T]) {
     
     inline def setAffected_rows(value: Double): Self = StObject.set(x, "affected_rows", value.asInstanceOf[js.Any])
     
@@ -26,6 +26,6 @@ object HasuraMutationResponse {
     
     inline def setReturning(value: js.Array[HasuraDataItem[T]]): Self = StObject.set(x, "returning", value.asInstanceOf[js.Any])
     
-    inline def setReturningVarargs(value: HasuraDataItem[T]*): Self = StObject.set(x, "returning", js.Array(value :_*))
+    inline def setReturningVarargs(value: HasuraDataItem[T]*): Self = StObject.set(x, "returning", js.Array(value*))
   }
 }

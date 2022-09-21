@@ -1,6 +1,5 @@
 package typings.sipJs
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,7 +78,7 @@ object simpleUserDelegateMod {
       *
       * @param error - An Error if server caused the disconnect. Otherwise undefined.
       */
-    var onServerDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], Unit]] = js.undefined
+    var onServerDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Error], Unit]] = js.undefined
     
     /**
       * Called when user is no longer registered to received calls.
@@ -131,7 +130,7 @@ object simpleUserDelegateMod {
       
       inline def setOnServerConnectUndefined: Self = StObject.set(x, "onServerConnect", js.undefined)
       
-      inline def setOnServerDisconnect(value: /* error */ js.UndefOr[Error] => Unit): Self = StObject.set(x, "onServerDisconnect", js.Any.fromFunction1(value))
+      inline def setOnServerDisconnect(value: /* error */ js.UndefOr[js.Error] => Unit): Self = StObject.set(x, "onServerDisconnect", js.Any.fromFunction1(value))
       
       inline def setOnServerDisconnectUndefined: Self = StObject.set(x, "onServerDisconnect", js.undefined)
       

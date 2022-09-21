@@ -16,9 +16,9 @@ trait Condition extends StObject {
   
   var operator: String
   
-  var predicates: js.Any
+  var predicates: Any
   
-  var value: js.Any
+  var value: Any
 }
 object Condition {
   
@@ -28,8 +28,8 @@ object Condition {
     ignoreCase: Boolean,
     isComplex: Boolean,
     operator: String,
-    predicates: js.Any,
-    value: js.Any
+    predicates: Any,
+    value: Any
   ): Condition = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], ignoreCase = ignoreCase.asInstanceOf[js.Any], isComplex = isComplex.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], predicates = predicates.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Condition]
@@ -47,8 +47,8 @@ object Condition {
     
     inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    inline def setPredicates(value: js.Any): Self = StObject.set(x, "predicates", value.asInstanceOf[js.Any])
+    inline def setPredicates(value: Any): Self = StObject.set(x, "predicates", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

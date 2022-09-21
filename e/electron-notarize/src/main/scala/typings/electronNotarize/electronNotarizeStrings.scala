@@ -15,6 +15,14 @@ object electronNotarizeStrings {
   inline def invalid: invalid = "invalid".asInstanceOf[invalid]
   
   @js.native
+  sealed trait legacy extends StObject
+  inline def legacy: legacy = "legacy".asInstanceOf[legacy]
+  
+  @js.native
+  sealed trait notarytool extends StObject
+  inline def notarytool: notarytool = "notarytool".asInstanceOf[notarytool]
+  
+  @js.native
   sealed trait success extends StObject
   inline def success: success = "success".asInstanceOf[success]
 }

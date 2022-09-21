@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OAuthInfoConstructor
   extends StObject
-     with Instantiable0[OAuthInfo]
+     with /**
+  * This class contains information about an OAuth 2.0 configuration.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html)
+  */
+Instantiable0[OAuthInfo]
      with Instantiable1[/* properties */ OAuthInfoProperties, OAuthInfo] {
   
-  def fromJSON(json: js.Any): OAuthInfo = js.native
+  def fromJSON(json: Any): OAuthInfo = js.native
 }

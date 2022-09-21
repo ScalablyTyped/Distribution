@@ -31,12 +31,16 @@ trait HeightModelInfo
   /**
     * The surface type or height model of the vertical coordinate system (VCS).
     *
+    * @default "gravity-related-height"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-HeightModelInfo.html#heightModel)
     */
   val heightModel: `gravity-related-height` | ellipsoidal = js.native
   
   /**
     * The unit of the vertical coordinate system.
+    *
+    * @default "meters"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-HeightModelInfo.html#heightUnit)
     */

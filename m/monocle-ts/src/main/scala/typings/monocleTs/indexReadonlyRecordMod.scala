@@ -1,7 +1,7 @@
 package typings.monocleTs
 
+import typings.fpTs.readonlyRecordMod.ReadonlyRecord_
 import typings.monocleTs.mod.Index_
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,5 +12,5 @@ object indexReadonlyRecordMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def indexReadonlyRecord[A](): Index_[Record[String, A], String, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyRecord")().asInstanceOf[Index_[Record[String, A], String, A]]
+  inline def indexReadonlyRecord[A](): Index_[ReadonlyRecord_[String, A], String, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyRecord")().asInstanceOf[Index_[ReadonlyRecord_[String, A], String, A]]
 }

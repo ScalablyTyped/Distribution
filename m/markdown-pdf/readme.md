@@ -11,9 +11,9 @@ Markdown to PDF converter
 | Full name          | markdown-pdf |
 | Keywords           | markdown, pdf, convert, template |
 | # releases         | 2 |
-| # dependents       | 38 |
-| # downloads        | 268893 |
-| # stars            | 42 |
+| # dependents       | 0.0 |
+| # downloads        | 17971.333333333332 |
+| # stars            | 2429.0 |
 
 ## Links
 - [Homepage](https://github.com/alanshaw/markdown-pdf)

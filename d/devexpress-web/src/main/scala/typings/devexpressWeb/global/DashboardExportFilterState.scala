@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DashboardExportFilterState")
 @js.native
-class DashboardExportFilterState ()
+open class DashboardExportFilterState ()
   extends StObject
      with typings.devexpressWeb.DashboardExportFilterState
 object DashboardExportFilterState {

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ChartObject")
 @js.native
-/* private */ class ChartObject ()
+/* private */ open class ChartObject ()
   extends StObject
      with typings.activexExcel.Excel.ChartObject

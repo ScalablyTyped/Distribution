@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFloatingActionButtonCollapseReason")
 @js.native
-class ASPxClientFloatingActionButtonCollapseReason ()
+open class ASPxClientFloatingActionButtonCollapseReason ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFloatingActionButtonCollapseReason {
   

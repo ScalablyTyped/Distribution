@@ -4,41 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A rule declaring which mitigating actions to take when a device is not
-  * compliant with its policy. For every rule, there is always an implicit
-  * mitigating action to set policy_compliant to false for the Device resource,
-  * and display a message on the device indicating that the device is not
-  * compliant with its policy. Other mitigating actions may optionally be taken
-  * as well, depending on the field values in the rule.
-  */
 trait SchemaComplianceRule extends StObject {
   
   /**
-    * A condition which is satisfied if the Android Framework API level on the
-    * device doesn&#39;t meet a minimum requirement.
+    * A condition which is satisfied if the Android Framework API level on the device doesn't meet a minimum requirement.
     */
   var apiLevelCondition: js.UndefOr[SchemaApiLevelCondition] = js.undefined
   
   /**
-    * If set to true, the rule includes a mitigating action to disable apps so
-    * that the device is effectively disabled, but app data is preserved. If
-    * the device is running an app in locked task mode, the app will be closed
-    * and a UI showing the reason for non-compliance will be displayed.
+    * If set to true, the rule includes a mitigating action to disable apps so that the device is effectively disabled, but app data is preserved. If the device is running an app in locked task mode, the app will be closed and a UI showing the reason for non-compliance will be displayed.
     */
-  var disableApps: js.UndefOr[Boolean] = js.undefined
+  var disableApps: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * A condition which is satisfied if there exists any matching
-    * NonComplianceDetail for the device.
+    * A condition which is satisfied if there exists any matching NonComplianceDetail for the device.
     */
   var nonComplianceDetailCondition: js.UndefOr[SchemaNonComplianceDetailCondition] = js.undefined
   
   /**
-    * If set, the rule includes a mitigating action to disable apps specified
-    * in the list, but app data is preserved.
+    * If set, the rule includes a mitigating action to disable apps specified in the list, but app data is preserved.
     */
-  var packageNamesToDisable: js.UndefOr[js.Array[String]] = js.undefined
+  var packageNamesToDisable: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaComplianceRule {
   
@@ -55,6 +41,8 @@ object SchemaComplianceRule {
     
     inline def setDisableApps(value: Boolean): Self = StObject.set(x, "disableApps", value.asInstanceOf[js.Any])
     
+    inline def setDisableAppsNull: Self = StObject.set(x, "disableApps", null)
+    
     inline def setDisableAppsUndefined: Self = StObject.set(x, "disableApps", js.undefined)
     
     inline def setNonComplianceDetailCondition(value: SchemaNonComplianceDetailCondition): Self = StObject.set(x, "nonComplianceDetailCondition", value.asInstanceOf[js.Any])
@@ -63,8 +51,10 @@ object SchemaComplianceRule {
     
     inline def setPackageNamesToDisable(value: js.Array[String]): Self = StObject.set(x, "packageNamesToDisable", value.asInstanceOf[js.Any])
     
+    inline def setPackageNamesToDisableNull: Self = StObject.set(x, "packageNamesToDisable", null)
+    
     inline def setPackageNamesToDisableUndefined: Self = StObject.set(x, "packageNamesToDisable", js.undefined)
     
-    inline def setPackageNamesToDisableVarargs(value: String*): Self = StObject.set(x, "packageNamesToDisable", js.Array(value :_*))
+    inline def setPackageNamesToDisableVarargs(value: String*): Self = StObject.set(x, "packageNamesToDisable", js.Array(value*))
   }
 }

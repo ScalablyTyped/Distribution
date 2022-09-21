@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMMSTransitionEvent")
 @js.native
-/* private */ class DOMMSTransitionEvent ()
+/* private */ open class DOMMSTransitionEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMMSTransitionEvent {
   

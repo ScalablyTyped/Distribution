@@ -173,23 +173,23 @@ object typesMod {
       
       inline def setEnums(value: js.Array[Enum]): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
       
-      inline def setEnumsVarargs(value: Enum*): Self = StObject.set(x, "enums", js.Array(value :_*))
+      inline def setEnumsVarargs(value: Enum*): Self = StObject.set(x, "enums", js.Array(value*))
       
       inline def setExtends(value: js.Array[Extend]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       
-      inline def setExtendsVarargs(value: Extend*): Self = StObject.set(x, "extends", js.Array(value :_*))
+      inline def setExtendsVarargs(value: Extend*): Self = StObject.set(x, "extends", js.Array(value*))
       
       inline def setExtensions(value: js.Array[Extension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -284,19 +284,19 @@ object typesMod {
       
       inline def setEnums(value: js.Array[Enum]): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
       
-      inline def setEnumsVarargs(value: Enum*): Self = StObject.set(x, "enums", js.Array(value :_*))
+      inline def setEnumsVarargs(value: Enum*): Self = StObject.set(x, "enums", js.Array(value*))
       
       inline def setExtends(value: js.Array[Extend]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       
-      inline def setExtendsVarargs(value: Extend*): Self = StObject.set(x, "extends", js.Array(value :_*))
+      inline def setExtendsVarargs(value: Extend*): Self = StObject.set(x, "extends", js.Array(value*))
       
       inline def setImports(value: js.Array[String]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
       
-      inline def setImportsVarargs(value: String*): Self = StObject.set(x, "imports", js.Array(value :_*))
+      inline def setImportsVarargs(value: String*): Self = StObject.set(x, "imports", js.Array(value*))
       
       inline def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value*))
       
       inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -304,7 +304,7 @@ object typesMod {
       
       inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
       
-      inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value :_*))
+      inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value*))
       
       inline def setSyntax(value: Double): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
       
@@ -333,7 +333,7 @@ object typesMod {
       
       inline def setMethods(value: js.Array[Method]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      inline def setMethodsVarargs(value: Method*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: Method*): Self = StObject.set(x, "methods", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

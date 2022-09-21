@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("dashjs", "TextTrackInfo")
 @js.native
-class TextTrackInfo () extends StObject {
+open class TextTrackInfo () extends MediaInfo {
   
   var captionData: js.Array[CaptionData] | Null = js.native
   
   var defaultTrack: Boolean = js.native
-  
-  var index: Double = js.native
   
   var isEmbedded: Boolean = js.native
   
@@ -23,8 +21,4 @@ class TextTrackInfo () extends StObject {
   var kind: String = js.native
   
   var label: String | Null = js.native
-  
-  var lang: String | Null = js.native
-  
-  var roles: js.Array[String] | Null = js.native
 }

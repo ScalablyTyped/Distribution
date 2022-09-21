@@ -1,7 +1,7 @@
 
 # Scala.js typings for http-server
 
-Typings are for version 0.10
+Typings are for version 0.12
 
 ## Library description:
 A simple zero-configuration command-line http server
@@ -9,11 +9,11 @@ A simple zero-configuration command-line http server
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | http-server |
-| Keywords           | cli, command, http, server |
-| # releases         | 5 |
-| # dependents       | 563 |
-| # downloads        | 16135447 |
-| # stars            | 520 |
+| Keywords           | cli, command, static, http, https, http-server, https-server, server |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 5195079.666666667 |
+| # stars            | 11943.0 |
 
 ## Links
 - [Homepage](https://github.com/http-party/http-server#readme)

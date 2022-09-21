@@ -279,7 +279,7 @@ object SchedulerDataConfig {
     
     inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     
-    inline def setViewsVarargs(value: View*): Self = StObject.set(x, "views", js.Array(value :_*))
+    inline def setViewsVarargs(value: View*): Self = StObject.set(x, "views", js.Array(value*))
     
     inline def setWeekCellWidth(value: Double): Self = StObject.set(x, "weekCellWidth", value.asInstanceOf[js.Any])
     

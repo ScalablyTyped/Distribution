@@ -5,24 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-	 * @see https://developer.knuddels.de/docs/classes/ChannelRestrictions.html
-	 */
+  * @see https://developer.knuddels.de/docs/classes/ChannelRestrictions.html
+  */
 @JSGlobal("ChannelRestrictions")
 @js.native
-class ChannelRestrictions () extends StObject {
+open class ChannelRestrictions () extends StObject {
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/ChannelRestrictions.html#method_getColorMutedUsers
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/ChannelRestrictions.html#method_getColorMutedUsers
+    */
   def getColorMutedUsers(): js.Array[User] = js.native
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/ChannelRestrictions.html#method_getLockedUsers
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/ChannelRestrictions.html#method_getLockedUsers
+    */
   def getLockedUsers(): js.Array[User] = js.native
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/ChannelRestrictions.html#method_getMutedUsers
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/ChannelRestrictions.html#method_getMutedUsers
+    */
   def getMutedUsers(): js.Array[User] = js.native
 }

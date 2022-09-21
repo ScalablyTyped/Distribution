@@ -14,7 +14,7 @@ trait Table extends StObject {
   /**
     * The time when the table definition was created in the Data Catalog.
     */
-  var CreateTime: js.UndefOr[Timestamp] = js.undefined
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The person or entity who created the table.
@@ -32,19 +32,19 @@ trait Table extends StObject {
   var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
-    * Indicates whether the table has been registered with AWS Lake Formation.
+    * Indicates whether the table has been registered with Lake Formation.
     */
   var IsRegisteredWithLakeFormation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The last time that the table was accessed. This is usually taken from HDFS, and might not be reliable.
     */
-  var LastAccessTime: js.UndefOr[Timestamp] = js.undefined
+  var LastAccessTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The last time that column statistics were computed for this table.
     */
-  var LastAnalyzedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastAnalyzedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The table name. For Hive compatibility, this must be entirely lowercase.
@@ -89,7 +89,12 @@ trait Table extends StObject {
   /**
     * The last time that the table was updated.
     */
-  var UpdateTime: js.UndefOr[Timestamp] = js.undefined
+  var UpdateTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The ID of the table version.
+    */
+  var VersionId: js.UndefOr[VersionString] = js.undefined
   
   /**
     * If the table is a view, the expanded text of the view; otherwise null.
@@ -114,7 +119,7 @@ object Table {
     
     inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    inline def setCreateTime(value: Timestamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
@@ -134,11 +139,11 @@ object Table {
     
     inline def setIsRegisteredWithLakeFormationUndefined: Self = StObject.set(x, "IsRegisteredWithLakeFormation", js.undefined)
     
-    inline def setLastAccessTime(value: Timestamp): Self = StObject.set(x, "LastAccessTime", value.asInstanceOf[js.Any])
+    inline def setLastAccessTime(value: js.Date): Self = StObject.set(x, "LastAccessTime", value.asInstanceOf[js.Any])
     
     inline def setLastAccessTimeUndefined: Self = StObject.set(x, "LastAccessTime", js.undefined)
     
-    inline def setLastAnalyzedTime(value: Timestamp): Self = StObject.set(x, "LastAnalyzedTime", value.asInstanceOf[js.Any])
+    inline def setLastAnalyzedTime(value: js.Date): Self = StObject.set(x, "LastAnalyzedTime", value.asInstanceOf[js.Any])
     
     inline def setLastAnalyzedTimeUndefined: Self = StObject.set(x, "LastAnalyzedTime", js.undefined)
     
@@ -156,7 +161,7 @@ object Table {
     
     inline def setPartitionKeysUndefined: Self = StObject.set(x, "PartitionKeys", js.undefined)
     
-    inline def setPartitionKeysVarargs(value: Column*): Self = StObject.set(x, "PartitionKeys", js.Array(value :_*))
+    inline def setPartitionKeysVarargs(value: Column*): Self = StObject.set(x, "PartitionKeys", js.Array(value*))
     
     inline def setRetention(value: NonNegativeInteger): Self = StObject.set(x, "Retention", value.asInstanceOf[js.Any])
     
@@ -174,9 +179,13 @@ object Table {
     
     inline def setTargetTableUndefined: Self = StObject.set(x, "TargetTable", js.undefined)
     
-    inline def setUpdateTime(value: Timestamp): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: js.Date): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "UpdateTime", js.undefined)
+    
+    inline def setVersionId(value: VersionString): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
     
     inline def setViewExpandedText(value: ViewTextString): Self = StObject.set(x, "ViewExpandedText", value.asInstanceOf[js.Any])
     

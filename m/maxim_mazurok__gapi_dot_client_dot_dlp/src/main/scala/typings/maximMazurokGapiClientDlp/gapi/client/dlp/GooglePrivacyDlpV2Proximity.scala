@@ -9,7 +9,10 @@ trait GooglePrivacyDlpV2Proximity extends StObject {
   /** Number of characters after the finding to consider. */
   var windowAfter: js.UndefOr[Double] = js.undefined
   
-  /** Number of characters before the finding to consider. */
+  /**
+    * Number of characters before the finding to consider. For tabular data, if you want to modify the likelihood of an entire column of findngs, set this to 1. For more information, see
+    * [Hotword example: Set the match likelihood of a table column] (https://cloud.google.com/dlp/docs/creating-custom-infotypes-likelihood#match-column-values).
+    */
   var windowBefore: js.UndefOr[Double] = js.undefined
 }
 object GooglePrivacyDlpV2Proximity {

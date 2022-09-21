@@ -43,7 +43,7 @@ object OperationObject {
     
     inline def setConsumesUndefined: Self = StObject.set(x, "consumes", js.undefined)
     
-    inline def setConsumesVarargs(value: String*): Self = StObject.set(x, "consumes", js.Array(value :_*))
+    inline def setConsumesVarargs(value: String*): Self = StObject.set(x, "consumes", js.Array(value*))
     
     inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
@@ -65,13 +65,13 @@ object OperationObject {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: (ParameterObject | ReferenceObject)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: (ParameterObject | ReferenceObject)*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setProduces(value: MimeTypes): Self = StObject.set(x, "produces", value.asInstanceOf[js.Any])
     
     inline def setProducesUndefined: Self = StObject.set(x, "produces", js.undefined)
     
-    inline def setProducesVarargs(value: String*): Self = StObject.set(x, "produces", js.Array(value :_*))
+    inline def setProducesVarargs(value: String*): Self = StObject.set(x, "produces", js.Array(value*))
     
     inline def setResponses(value: ResponsesObject): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
@@ -79,13 +79,13 @@ object OperationObject {
     
     inline def setSchemesUndefined: Self = StObject.set(x, "schemes", js.undefined)
     
-    inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
+    inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value*))
     
     inline def setSecurity(value: js.Array[SecurityRequirementObject]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     
     inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
     
-    inline def setSecurityVarargs(value: SecurityRequirementObject*): Self = StObject.set(x, "security", js.Array(value :_*))
+    inline def setSecurityVarargs(value: SecurityRequirementObject*): Self = StObject.set(x, "security", js.Array(value*))
     
     inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
@@ -95,6 +95,6 @@ object OperationObject {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

@@ -12,14 +12,14 @@ object customConditionMod {
   
   @JSImport("express-validator/src/context-items/custom-condition", "CustomCondition")
   @js.native
-  class CustomCondition protected ()
+  open class CustomCondition protected ()
     extends StObject
        with ContextItem {
     def this(condition: CustomValidator) = this()
     
-    /* private */ val condition: js.Any = js.native
+    /* private */ val condition: Any = js.native
     
     /* CompleteClass */
-    override def run(context: Context, value: js.Any, meta: Meta): js.Promise[Unit] = js.native
+    override def run(context: Context, value: Any, meta: Meta): js.Promise[Unit] = js.native
   }
 }

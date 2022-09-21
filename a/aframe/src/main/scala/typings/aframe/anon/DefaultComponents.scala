@@ -9,11 +9,11 @@ trait DefaultComponents extends StObject {
   
   var defaultComponents: Material
   
-  var mappings: StringDictionary[js.Any]
+  var mappings: StringDictionary[Any]
 }
 object DefaultComponents {
   
-  inline def apply(defaultComponents: Material, mappings: StringDictionary[js.Any]): DefaultComponents = {
+  inline def apply(defaultComponents: Material, mappings: StringDictionary[Any]): DefaultComponents = {
     val __obj = js.Dynamic.literal(defaultComponents = defaultComponents.asInstanceOf[js.Any], mappings = mappings.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultComponents]
   }
@@ -22,6 +22,6 @@ object DefaultComponents {
     
     inline def setDefaultComponents(value: Material): Self = StObject.set(x, "defaultComponents", value.asInstanceOf[js.Any])
     
-    inline def setMappings(value: StringDictionary[js.Any]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
+    inline def setMappings(value: StringDictionary[Any]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
   }
 }

@@ -7,82 +7,82 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VirtualJoystick extends StObject {
   
-  /* private */ var _action: js.Any = js.native
+  /* private */ var _action: Any = js.native
   
-  /* private */ var _alwaysVisible: js.Any = js.native
+  /* private */ var _alwaysVisible: Any = js.native
   
-  /* private */ var _axisTargetedByLeftAndRight: js.Any = js.native
+  /* private */ var _axisTargetedByLeftAndRight: Any = js.native
   
-  /* private */ var _axisTargetedByUpAndDown: js.Any = js.native
+  /* private */ var _axisTargetedByUpAndDown: Any = js.native
   
-  /* private */ var _clearContainerSize: js.Any = js.native
+  /* private */ var _clearContainerSize: Any = js.native
   
-  /* private */ var _clearContainerSizeOffset: js.Any = js.native
+  /* private */ var _clearContainerSizeOffset: Any = js.native
   
   /**
     * Clears the canvas from the previous puck / container draw
     */
-  /* private */ var _clearPreviousDraw: js.Any = js.native
+  /* private */ var _clearPreviousDraw: Any = js.native
   
-  /* private */ var _clearPuckSize: js.Any = js.native
+  /* private */ var _clearPuckSize: Any = js.native
   
-  /* private */ var _clearPuckSizeOffset: js.Any = js.native
+  /* private */ var _clearPuckSizeOffset: Any = js.native
   
-  /* private */ var _containerImage: js.Any = js.native
+  /* private */ var _containerImage: Any = js.native
   
-  /* private */ var _deltaJoystickVector: js.Any = js.native
+  /* private */ var _deltaJoystickVector: Any = js.native
   
   /**
     * Draws the Virtual Joystick's container
     */
-  /* private */ var _drawContainer: js.Any = js.native
+  /* private */ var _drawContainer: Any = js.native
   
   /**
     * Draws the Virtual Joystick's puck
     */
-  /* private */ var _drawPuck: js.Any = js.native
+  /* private */ var _drawPuck: Any = js.native
   
-  /* private */ var _drawVirtualJoystick: js.Any = js.native
+  /* private */ var _drawVirtualJoystick: Any = js.native
   
-  /* private */ var _inversedSensibility: js.Any = js.native
+  /* private */ var _inversedSensibility: Any = js.native
   
-  /* private */ var _joystickColor: js.Any = js.native
+  /* private */ var _joystickColor: Any = js.native
   
-  /* private */ var _joystickContainerSize: js.Any = js.native
+  /* private */ var _joystickContainerSize: Any = js.native
   
-  /* private */ var _joystickPointerID: js.Any = js.native
+  /* private */ var _joystickPointerId: Any = js.native
   
-  /* private */ var _joystickPointerPos: js.Any = js.native
+  /* private */ var _joystickPointerPos: Any = js.native
   
-  /* private */ var _joystickPointerStartPos: js.Any = js.native
+  /* private */ var _joystickPointerStartPos: Any = js.native
   
-  /* private */ var _joystickPosition: js.Any = js.native
+  /* private */ var _joystickPosition: Any = js.native
   
-  /* private */ var _joystickPreviousPointerPos: js.Any = js.native
+  /* private */ var _joystickPreviousPointerPos: Any = js.native
   
-  /* private */ var _joystickPuckSize: js.Any = js.native
+  /* private */ var _joystickPuckSize: Any = js.native
   
-  /* private */ var _joystickSensibility: js.Any = js.native
+  /* private */ var _joystickSensibility: Any = js.native
   
-  /* private */ var _leftJoystick: js.Any = js.native
+  /* private */ var _leftJoystick: Any = js.native
   
-  /* private */ var _onPointerDown: js.Any = js.native
+  /* private */ var _onPointerDown: Any = js.native
   
-  /* private */ var _onPointerDownHandlerRef: js.Any = js.native
+  /* private */ var _onPointerDownHandlerRef: Any = js.native
   
-  /* private */ var _onPointerMove: js.Any = js.native
+  /* private */ var _onPointerMove: Any = js.native
   
-  /* private */ var _onPointerMoveHandlerRef: js.Any = js.native
+  /* private */ var _onPointerMoveHandlerRef: Any = js.native
   
-  /* private */ var _onPointerUp: js.Any = js.native
+  /* private */ var _onPointerUp: Any = js.native
   
-  /* private */ var _onPointerUpHandlerRef: js.Any = js.native
+  /* private */ var _onPointerUpHandlerRef: Any = js.native
   
-  /* private */ var _onResize: js.Any = js.native
+  /* private */ var _onResize: Any = js.native
   
-  /* private */ var _puckImage: js.Any = js.native
+  /* private */ var _puckImage: Any = js.native
   
-  /* private */ var _touches: js.Any = js.native
+  /* private */ var _touches: Any = js.native
   
   def alwaysVisible: Boolean = js.native
   /**
@@ -141,7 +141,7 @@ trait VirtualJoystick extends StObject {
     * Defines a callback to call when the joystick is touched
     * @param action defines the callback
     */
-  def setActionOnTouch(action: js.Function0[js.Any]): Unit = js.native
+  def setActionOnTouch(action: js.Function0[Any]): Unit = js.native
   
   /**
     * Defines which axis you'd like to control for left & right
@@ -168,7 +168,7 @@ trait VirtualJoystick extends StObject {
   def setJoystickColor(newColor: String): Unit = js.native
   
   /**
-    * Defines joystick sensibility (ie. the ratio beteen a physical move and virtual joystick position change)
+    * Defines joystick sensibility (ie. the ratio between a physical move and virtual joystick position change)
     * @param newJoystickSensibility defines the new sensibility
     */
   def setJoystickSensibility(newJoystickSensibility: Double): Unit = js.native

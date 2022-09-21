@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An `AccessLevel` is a label that can be applied to requests to GCP
-  * services, along with a list of requirements necessary for the label to be
-  * applied.
-  */
 trait SchemaAccessLevel extends StObject {
   
   /**
@@ -17,31 +12,24 @@ trait SchemaAccessLevel extends StObject {
   var basic: js.UndefOr[SchemaBasicLevel] = js.undefined
   
   /**
-    * Output only. Time the `AccessLevel` was created in UTC.
+    * A `CustomLevel` written in the Common Expression Language.
     */
-  var createTime: js.UndefOr[String] = js.undefined
+  var custom: js.UndefOr[SchemaCustomLevel] = js.undefined
   
   /**
     * Description of the `AccessLevel` and its use. Does not affect behavior.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Required. Resource name for the Access Level. The `short_name` component
-    * must begin with a letter and only include alphanumeric and &#39;_&#39;.
-    * Format: `accessPolicies/{policy_id}/accessLevels/{short_name}`
+    * Required. Resource name for the Access Level. The `short_name` component must begin with a letter and only include alphanumeric and '_'. Format: `accessPolicies/{policy_id\}/accessLevels/{short_name\}`. The maximum length // of the `short_name` component is 50 characters.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Human readable title. Must be unique within the Policy.
     */
-  var title: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Output only. Time the `AccessLevel` was updated in UTC.
-    */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAccessLevel {
   
@@ -56,24 +44,26 @@ object SchemaAccessLevel {
     
     inline def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
     
-    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCustom(value: SchemaCustomLevel): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
+    
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
-    
-    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

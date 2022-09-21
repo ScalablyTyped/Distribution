@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Sequelize
   extends StObject
      with SequelizeStaticAndInstance
-     with Hooks[js.Any] {
+     with Hooks[Any] {
   
   /**
     * A reference to Sequelize constructor from sequelize. Useful for accessing DataTypes, Errors etc.
@@ -57,7 +57,7 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def createSchema(schema: String, options: `2`): typings.bluebird.mod.^[js.Any] = js.native
+  def createSchema(schema: String, options: `2`): typings.bluebird.mod.^[Any] = js.native
   
   /**
     * Returns the database version
@@ -129,8 +129,8 @@ trait Sequelize
     *
     * @param options The options passed to each call to Model.drop
     */
-  def drop(): typings.bluebird.mod.^[js.Any] = js.native
-  def drop(options: DropOptions): typings.bluebird.mod.^[js.Any] = js.native
+  def drop(): typings.bluebird.mod.^[Any] = js.native
+  def drop(options: DropOptions): typings.bluebird.mod.^[Any] = js.native
   
   /**
     * Drop all schemas
@@ -142,7 +142,7 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def dropAllSchemas(options: `2`): typings.bluebird.mod.^[js.Any] = js.native
+  def dropAllSchemas(options: `2`): typings.bluebird.mod.^[Any] = js.native
   
   /**
     * Drop a single schema
@@ -155,7 +155,7 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def dropSchema(schema: String, options: `2`): typings.bluebird.mod.^[js.Any] = js.native
+  def dropSchema(schema: String, options: `2`): typings.bluebird.mod.^[Any] = js.native
   
   /**
     * Escape value.
@@ -246,10 +246,10 @@ trait Sequelize
     * @param sql
     * @param options Query options
     */
-  def query(sql: String): typings.bluebird.mod.^[js.Any] = js.native
-  def query(sql: String, options: QueryOptions): typings.bluebird.mod.^[js.Any] = js.native
-  def query(sql: Query): typings.bluebird.mod.^[js.Any] = js.native
-  def query(sql: Query, options: QueryOptions): typings.bluebird.mod.^[js.Any] = js.native
+  def query(sql: String): typings.bluebird.mod.^[Any] = js.native
+  def query(sql: String, options: QueryOptions): typings.bluebird.mod.^[Any] = js.native
+  def query(sql: Query): typings.bluebird.mod.^[Any] = js.native
+  def query(sql: Query, options: QueryOptions): typings.bluebird.mod.^[Any] = js.native
   
   /**
     * Get the fn for random based on the dialect
@@ -265,7 +265,7 @@ trait Sequelize
     * @param variables Object with multiple variables.
     * @param options Query options.
     */
-  def set(variables: js.Object, options: QueryOptionsTransactionRequired): typings.bluebird.mod.^[js.Any] = js.native
+  def set(variables: js.Object, options: QueryOptionsTransactionRequired): typings.bluebird.mod.^[Any] = js.native
   
   /**
     * Show all defined schemas
@@ -277,15 +277,15 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def showAllSchemas(options: `2`): typings.bluebird.mod.^[js.Any] = js.native
+  def showAllSchemas(options: `2`): typings.bluebird.mod.^[Any] = js.native
   
   /**
     * Sync all defined models to the DB.
     *
     * @param options Sync Options
     */
-  def sync(): typings.bluebird.mod.^[js.Any] = js.native
-  def sync(options: SyncOptions): typings.bluebird.mod.^[js.Any] = js.native
+  def sync(): typings.bluebird.mod.^[Any] = js.native
+  def sync(options: SyncOptions): typings.bluebird.mod.^[Any] = js.native
   
   def transaction(): typings.bluebird.mod.^[Transaction] = js.native
   def transaction(options: TransactionOptions): typings.bluebird.mod.^[Transaction] = js.native
@@ -345,8 +345,8 @@ trait Sequelize
     * @param {Boolean|function} [options.transaction]
     * @param {Boolean|function} [options.logging] A function that logs sql queries, or false for no logging
     */
-  def truncate(): typings.bluebird.mod.^[js.Any] = js.native
-  def truncate(options: DestroyOptions): typings.bluebird.mod.^[js.Any] = js.native
+  def truncate(): typings.bluebird.mod.^[Any] = js.native
+  def truncate(options: DestroyOptions): typings.bluebird.mod.^[Any] = js.native
   
   def validate(): typings.bluebird.mod.^[ValidationError] = js.native
   def validate(options: QueryOptions): typings.bluebird.mod.^[ValidationError] = js.native

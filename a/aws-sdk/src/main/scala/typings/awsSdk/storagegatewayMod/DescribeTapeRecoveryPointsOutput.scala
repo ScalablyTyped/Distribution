@@ -39,6 +39,6 @@ object DescribeTapeRecoveryPointsOutput {
     
     inline def setTapeRecoveryPointInfosUndefined: Self = StObject.set(x, "TapeRecoveryPointInfos", js.undefined)
     
-    inline def setTapeRecoveryPointInfosVarargs(value: TapeRecoveryPointInfo*): Self = StObject.set(x, "TapeRecoveryPointInfos", js.Array(value :_*))
+    inline def setTapeRecoveryPointInfosVarargs(value: TapeRecoveryPointInfo*): Self = StObject.set(x, "TapeRecoveryPointInfos", js.Array(value*))
   }
 }

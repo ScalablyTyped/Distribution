@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsdom
 
-Typings are for version 16.2
+Typings are for version 20.0
 
 ## Library description:
 A JavaScript implementation of many web standards
@@ -10,10 +10,10 @@ A JavaScript implementation of many web standards
 | ------------------ | :-------------: |
 | Full name          | jsdom |
 | Keywords           | dom, html, whatwg, w3c |
-| # releases         | 16 |
-| # dependents       | 3345 |
-| # downloads        | 621386555 |
-| # stars            | 231 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 8.3529581E7 |
+| # stars            | 17626.0 |
 
 ## Links
 - [Homepage](https://github.com/jsdom/jsdom#readme)

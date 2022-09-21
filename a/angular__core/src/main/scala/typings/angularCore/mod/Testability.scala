@@ -6,24 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/core", "Testability")
 @js.native
-class Testability protected ()
+open class Testability protected ()
   extends StObject
      with PublicTestability {
-  def this(_ngZone: NgZone) = this()
+  def this(_ngZone: NgZone, registry: TestabilityRegistry, testabilityGetter: GetTestability) = this()
   
-  /* private */ var _callbacks: js.Any = js.native
+  /* private */ var _callbacks: Any = js.native
   
-  /* private */ var _isZoneStable: js.Any = js.native
+  /* private */ var _isZoneStable: Any = js.native
   
-  /* private */ var _ngZone: js.Any = js.native
+  /* private */ var _ngZone: Any = js.native
   
-  /* private */ var _pendingCount: js.Any = js.native
+  /* private */ var _pendingCount: Any = js.native
   
-  /* private */ var _runCallbacksIfReady: js.Any = js.native
+  /* private */ var _runCallbacksIfReady: Any = js.native
   
-  /* private */ var _watchAngularEvents: js.Any = js.native
+  /* private */ var _watchAngularEvents: Any = js.native
   
-  /* private */ var addCallback: js.Any = js.native
+  /* private */ var addCallback: Any = js.native
   
   /**
     * Decreases the number of pending request
@@ -37,7 +37,7 @@ class Testability protected ()
     */
   def getPendingRequestCount(): Double = js.native
   
-  /* private */ var getPendingTasks: js.Any = js.native
+  /* private */ var getPendingTasks: Any = js.native
   
   /**
     * Increases the number of pending request
@@ -45,5 +45,24 @@ class Testability protected ()
     */
   def increasePendingRequestCount(): Double = js.native
   
-  /* private */ var taskTrackingZone: js.Any = js.native
+  /* private */ var registry: Any = js.native
+  
+  /* private */ var taskTrackingZone: Any = js.native
+}
+/* static members */
+object Testability {
+  
+  @JSImport("@angular/core", "Testability")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/core", "Testability.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[Testability, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[Testability, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/core", "Testability.\u0275prov")
+  @js.native
+  def ɵprov: ɵɵInjectableDeclaration[Testability] = js.native
+  inline def ɵprov_=(x: ɵɵInjectableDeclaration[Testability]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
 }

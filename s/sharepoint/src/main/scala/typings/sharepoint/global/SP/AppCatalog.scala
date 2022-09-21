@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.AppCatalog")
 @js.native
-class AppCatalog ()
+open class AppCatalog ()
   extends StObject
      with typings.sharepoint.SP.AppCatalog
 object AppCatalog {

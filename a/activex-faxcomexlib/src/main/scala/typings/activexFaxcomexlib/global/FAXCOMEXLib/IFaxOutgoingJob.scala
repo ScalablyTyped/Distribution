@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** IFaxOutgoingJob interface */
 @JSGlobal("FAXCOMEXLib.IFaxOutgoingJob")
 @js.native
-/* private */ class IFaxOutgoingJob ()
+/* private */ open class IFaxOutgoingJob ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.IFaxOutgoingJob {
   

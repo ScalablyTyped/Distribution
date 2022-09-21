@@ -8,5 +8,5 @@ object getBlobMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/GetBlob", "GetBlob")
   @js.native
-  val GetBlob: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetBlob: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

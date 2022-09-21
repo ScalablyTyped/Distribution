@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFloatingObjectTextWrappingCommand")
 @js.native
-class ChangeFloatingObjectTextWrappingCommand ()
+open class ChangeFloatingObjectTextWrappingCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFloatingObjectTextWrappingCommand {
   

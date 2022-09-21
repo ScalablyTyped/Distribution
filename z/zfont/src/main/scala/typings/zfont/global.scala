@@ -33,7 +33,7 @@ object global {
         */
       @JSImport("zdog", "Font")
       @js.native
-      class Font protected () extends StObject {
+      open class Font protected () extends StObject {
         def this(options: typings.zfont.mod.zdogAugmentingMod.FontOptions) = this()
         
         /**
@@ -49,7 +49,7 @@ object global {
         */
       @JSImport("zdog", "Text")
       @js.native
-      class Text[T /* <: typings.zfont.mod.zdogAugmentingMod.MultilineText */] protected () extends Shape {
+      open class Text[T /* <: typings.zfont.mod.zdogAugmentingMod.MultilineText */] protected () extends Shape {
         def this(options: typings.zfont.mod.zdogAugmentingMod.TextOptions[T]) = this()
         
         /** @see {@link TextOptions#font} */
@@ -76,7 +76,7 @@ object global {
         */
       @JSImport("zdog", "TextGroup")
       @js.native
-      class TextGroup[T /* <: typings.zfont.mod.zdogAugmentingMod.MultilineText */] protected () extends Group {
+      open class TextGroup[T /* <: typings.zfont.mod.zdogAugmentingMod.MultilineText */] protected () extends Group {
         def this(options: typings.zfont.mod.zdogAugmentingMod.TextGroupOptions[T]) = this()
         
         /**

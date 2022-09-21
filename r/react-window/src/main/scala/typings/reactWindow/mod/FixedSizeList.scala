@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-window", "FixedSizeList")
 @js.native
-class FixedSizeList protected ()
-  extends Component[FixedSizeListProps, js.Object, js.Any] {
-  def this(props: FixedSizeListProps) = this()
+open class FixedSizeList[T] protected ()
+  extends Component[FixedSizeListProps[T], js.Object, Any] {
+  def this(props: FixedSizeListProps[T]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: FixedSizeListProps, context: js.Any) = this()
+  def this(props: FixedSizeListProps[T], context: Any) = this()
   
   /**
     * Scroll to the specified offset (scrollTop or scrollLeft, depending on the direction prop).

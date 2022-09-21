@@ -36,21 +36,21 @@ object LinkedWorkItemsQuery {
     
     inline def setAutomatedTestNames(value: js.Array[String]): Self = StObject.set(x, "automatedTestNames", value.asInstanceOf[js.Any])
     
-    inline def setAutomatedTestNamesVarargs(value: String*): Self = StObject.set(x, "automatedTestNames", js.Array(value :_*))
+    inline def setAutomatedTestNamesVarargs(value: String*): Self = StObject.set(x, "automatedTestNames", js.Array(value*))
     
     inline def setPlanId(value: Double): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
     inline def setPointIds(value: js.Array[Double]): Self = StObject.set(x, "pointIds", value.asInstanceOf[js.Any])
     
-    inline def setPointIdsVarargs(value: Double*): Self = StObject.set(x, "pointIds", js.Array(value :_*))
+    inline def setPointIdsVarargs(value: Double*): Self = StObject.set(x, "pointIds", js.Array(value*))
     
     inline def setSuiteIds(value: js.Array[Double]): Self = StObject.set(x, "suiteIds", value.asInstanceOf[js.Any])
     
-    inline def setSuiteIdsVarargs(value: Double*): Self = StObject.set(x, "suiteIds", js.Array(value :_*))
+    inline def setSuiteIdsVarargs(value: Double*): Self = StObject.set(x, "suiteIds", js.Array(value*))
     
     inline def setTestCaseIds(value: js.Array[Double]): Self = StObject.set(x, "testCaseIds", value.asInstanceOf[js.Any])
     
-    inline def setTestCaseIdsVarargs(value: Double*): Self = StObject.set(x, "testCaseIds", js.Array(value :_*))
+    inline def setTestCaseIdsVarargs(value: Double*): Self = StObject.set(x, "testCaseIds", js.Array(value*))
     
     inline def setWorkItemCategory(value: String): Self = StObject.set(x, "workItemCategory", value.asInstanceOf[js.Any])
   }

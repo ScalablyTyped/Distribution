@@ -10,10 +10,10 @@ Minimalist virtual dom library
 | ------------------ | :-------------: |
 | Full name          | petit-dom |
 | Keywords           | javascript, virtual dom |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 2626 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 161.0 |
+| # stars            | 471.0 |
 
 ## Links
 - [Homepage](https://github.com/yelouafi/petit-dom#readme)

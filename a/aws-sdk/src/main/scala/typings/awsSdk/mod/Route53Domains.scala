@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class Route53Domains ()
+open class Route53Domains ()
   extends typings.awsSdk.allMod.Route53Domains {
   def this(options: ClientConfiguration) = this()
 }

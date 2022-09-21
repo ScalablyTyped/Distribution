@@ -18,7 +18,7 @@ trait ChartFormat extends StObject {
   
   val Line: LineFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PictureFormat: typings.activexPowerpoint.PowerPoint.PictureFormat
   
@@ -41,7 +41,7 @@ object ChartFormat {
     Fill: FillFormat,
     Glow: GlowFormat,
     Line: LineFormat,
-    Parent: js.Any,
+    Parent: Any,
     PictureFormat: PictureFormat,
     PowerPointDotChartFormat_typekey: ChartFormat,
     Shadow: ShadowFormat,
@@ -66,7 +66,7 @@ object ChartFormat {
     
     inline def setLine(value: LineFormat): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPictureFormat(value: PictureFormat): Self = StObject.set(x, "PictureFormat", value.asInstanceOf[js.Any])
     

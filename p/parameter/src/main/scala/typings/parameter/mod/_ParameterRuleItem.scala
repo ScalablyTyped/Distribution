@@ -32,7 +32,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _ParameterRuleItem extends StObject
+trait _ParameterRuleItem
+  extends StObject
+     with _ParameterRule
 object _ParameterRuleItem {
   
   inline def ParameterRuleArray(`type`: array | arrayQuestionmark): typings.parameter.mod.ParameterRuleArray = {
@@ -61,7 +63,7 @@ object _ParameterRuleItem {
     __obj.asInstanceOf[typings.parameter.mod.ParameterRuleEmail]
   }
   
-  inline def ParameterRuleEnum(`type`: `enum` | enumQuestionmark, values: js.Array[js.Any]): typings.parameter.mod.ParameterRuleEnum = {
+  inline def ParameterRuleEnum(`type`: `enum` | enumQuestionmark, values: js.Array[Any]): typings.parameter.mod.ParameterRuleEnum = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.parameter.mod.ParameterRuleEnum]

@@ -414,7 +414,7 @@ object anon {
       
       inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
       
-      inline def setLevelsVarargs(value: String*): Self = StObject.set(x, "levels", js.Array(value :_*))
+      inline def setLevelsVarargs(value: String*): Self = StObject.set(x, "levels", js.Array(value*))
       
       inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
       
@@ -432,7 +432,7 @@ object anon {
       
       inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
       
-      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value*))
       
       inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
       
@@ -532,7 +532,7 @@ object anon {
       
       inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
       
-      inline def setLevelsVarargs(value: String*): Self = StObject.set(x, "levels", js.Array(value :_*))
+      inline def setLevelsVarargs(value: String*): Self = StObject.set(x, "levels", js.Array(value*))
       
       inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
       
@@ -556,7 +556,7 @@ object anon {
       
       inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
       
-      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value*))
       
       inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
       

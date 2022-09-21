@@ -33,6 +33,6 @@ object ListProvisionedProductPlansOutput {
     
     inline def setProvisionedProductPlansUndefined: Self = StObject.set(x, "ProvisionedProductPlans", js.undefined)
     
-    inline def setProvisionedProductPlansVarargs(value: ProvisionedProductPlanSummary*): Self = StObject.set(x, "ProvisionedProductPlans", js.Array(value :_*))
+    inline def setProvisionedProductPlansVarargs(value: ProvisionedProductPlanSummary*): Self = StObject.set(x, "ProvisionedProductPlans", js.Array(value*))
   }
 }

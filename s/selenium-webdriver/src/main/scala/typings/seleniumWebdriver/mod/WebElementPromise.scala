@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("selenium-webdriver", "WebElementPromise")
 @js.native
-class WebElementPromise protected ()
+open class WebElementPromise protected ()
   extends WebElement
      with Promise[WebElement] {
   /**

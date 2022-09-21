@@ -10,13 +10,13 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | backbone.localstorage |
 | Keywords           | backbone, localstorage, local, storage, cache, sync |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 238766 |
-| # stars            | 5 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 34644.666666666664 |
+| # stars            | 1912.0 |
 
 ## Links
-- [Homepage](https://github.com/jeromegn/backbone.localstorage)
+- [Homepage](https://github.com/jeromegn/backbone.localstorage#readme)
 - [Bugs](https://github.com/jeromegn/backbone.localstorage/issues)
 - [Repository](https://github.com/jeromegn/backbone.localstorage)
 - [Npm](https://www.npmjs.com/package/backbone.localstorage)

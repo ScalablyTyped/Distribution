@@ -10,18 +10,18 @@ object quickActionMod {
   
   @JSImport("jsforce/quick-action", "QuickAction")
   @js.native
-  class QuickAction () extends StObject {
+  open class QuickAction () extends StObject {
     
     /** Retrieve default field values in the action */
-    def defaultValues(): js.Promise[Record[js.Any]] = js.native
-    def defaultValues(callback: Callback[Record[js.Any]]): js.Promise[Record[js.Any]] = js.native
+    def defaultValues(): js.Promise[Record[Any]] = js.native
+    def defaultValues(callback: Callback[Record[Any]]): js.Promise[Record[Any]] = js.native
     /**
       * Retrieve default field values in the action for the given record
       * @param contextId Id of record
       * @param callback Callback function
       */
-    def defaultValues(contextId: String): js.Promise[Record[js.Any]] = js.native
-    def defaultValues(contextId: String, callback: Callback[Record[js.Any]]): js.Promise[Record[js.Any]] = js.native
+    def defaultValues(contextId: String): js.Promise[Record[Any]] = js.native
+    def defaultValues(contextId: String, callback: Callback[Record[Any]]): js.Promise[Record[Any]] = js.native
     
     /**
       * Describe the action's information (including layout, etc.)

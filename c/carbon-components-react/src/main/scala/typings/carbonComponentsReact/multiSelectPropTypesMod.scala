@@ -87,7 +87,7 @@ object multiSelectPropTypesMod {
       
       inline def setSelectedItems(value: js.Array[ItemType]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
-      inline def setSelectedItemsVarargs(value: ItemType*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+      inline def setSelectedItemsVarargs(value: ItemType*): Self = StObject.set(x, "selectedItems", js.Array(value*))
     }
   }
 }

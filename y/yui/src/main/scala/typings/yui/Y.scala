@@ -25,15 +25,15 @@ object Y {
       
       inline def setOptional(value: js.Array[String]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      inline def setOptionalVarargs(value: String*): Self = StObject.set(x, "optional", js.Array(value :_*))
+      inline def setOptionalVarargs(value: String*): Self = StObject.set(x, "optional", js.Array(value*))
       
       inline def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
       
-      inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
+      inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value*))
       
       inline def setUse(value: js.Array[String]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
-      inline def setUseVarargs(value: String*): Self = StObject.set(x, "use", js.Array(value :_*))
+      inline def setUseVarargs(value: String*): Self = StObject.set(x, "use", js.Array(value*))
     }
   }
 }

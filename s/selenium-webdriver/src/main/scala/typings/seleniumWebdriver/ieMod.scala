@@ -14,7 +14,7 @@ object ieMod {
   
   @JSImport("selenium-webdriver/ie", "Driver")
   @js.native
-  class Driver protected () extends WebDriver {
+  open class Driver protected () extends WebDriver {
     def this(session: js.Promise[Session], executor: Executor) = this()
     // region Constructors
     /**
@@ -57,7 +57,7 @@ object ieMod {
   
   @JSImport("selenium-webdriver/ie", "Options")
   @js.native
-  class Options () extends Capabilities {
+  open class Options () extends Capabilities {
     
     /**
       * Specifies command-line switches to use when launching Internet Explorer.
@@ -221,7 +221,7 @@ object ieMod {
     * @param {string=} opt_exe Path to the server executable to use. If omitted,
     *     the builder will attempt to locate the IEDriverServer on the system PATH.
     */
-  class ServiceBuilder () extends Builder {
+  open class ServiceBuilder () extends Builder {
     def this(opt_exe: String) = this()
   }
   

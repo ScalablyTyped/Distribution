@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogMessageParams extends StObject {
   
   /**
-    * The actual message
+    * The actual message.
     */
   var message: String
   

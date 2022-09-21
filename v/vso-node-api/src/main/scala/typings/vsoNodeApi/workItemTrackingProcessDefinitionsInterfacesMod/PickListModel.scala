@@ -32,6 +32,6 @@ object PickListModel {
     
     inline def setItems(value: js.Array[PickListItemModel]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: PickListItemModel*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PickListItemModel*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("jsrsasign.KJUR.asn1.DERObjectIdentifier")
 @js.native
-class DERObjectIdentifier ()
+open class DERObjectIdentifier ()
   extends typings.jsrsasign.mod.KJUR.asn1.DERObjectIdentifier {
   def this(params: HexParam) = this()
   def this(params: NameParam) = this()

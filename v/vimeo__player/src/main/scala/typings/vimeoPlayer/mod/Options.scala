@@ -24,6 +24,10 @@ trait Options extends StObject {
   
   var id: js.UndefOr[Double] = js.undefined
   
+  var interactive_params: js.UndefOr[String] = js.undefined
+  
+  var keyboard: js.UndefOr[Boolean] = js.undefined
+  
   var loop: js.UndefOr[Boolean] = js.undefined
   
   var maxheight: js.UndefOr[Double] = js.undefined
@@ -31,6 +35,8 @@ trait Options extends StObject {
   var maxwidth: js.UndefOr[Double] = js.undefined
   
   var muted: js.UndefOr[Boolean] = js.undefined
+  
+  var pip: js.UndefOr[Boolean] = js.undefined
   
   var playsinline: js.UndefOr[Boolean] = js.undefined
   
@@ -97,6 +103,14 @@ object Options {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
+    inline def setInteractive_params(value: String): Self = StObject.set(x, "interactive_params", value.asInstanceOf[js.Any])
+    
+    inline def setInteractive_paramsUndefined: Self = StObject.set(x, "interactive_params", js.undefined)
+    
+    inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+    
     inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
@@ -112,6 +126,10 @@ object Options {
     inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
     inline def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
+    
+    inline def setPip(value: Boolean): Self = StObject.set(x, "pip", value.asInstanceOf[js.Any])
+    
+    inline def setPipUndefined: Self = StObject.set(x, "pip", js.undefined)
     
     inline def setPlaysinline(value: Boolean): Self = StObject.set(x, "playsinline", value.asInstanceOf[js.Any])
     

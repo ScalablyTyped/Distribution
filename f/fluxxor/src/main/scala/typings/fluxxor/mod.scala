@@ -16,8 +16,8 @@ object mod {
   
   @JSImport("fluxxor", "Dispatcher")
   @js.native
-  class Dispatcher protected () extends StObject {
-    def this(stores: js.Any) = this()
+  open class Dispatcher protected () extends StObject {
+    def this(stores: Any) = this()
     
     def addStore(name: String, store: Store): Unit = js.native
     
@@ -30,25 +30,25 @@ object mod {
   
   @JSImport("fluxxor", "Flux")
   @js.native
-  class Flux protected ()
+  open class Flux protected ()
     extends StObject
-       with EventEmitter[String | js.Symbol, js.Any] {
-    def this(stores: js.Any, actions: js.Any) = this()
+       with EventEmitter[String | js.Symbol, Any] {
+    def this(stores: Any, actions: Any) = this()
     
-    var actions: js.Any = js.native
+    var actions: Any = js.native
     
     def addAction(args: (String | js.Function)*): Unit = js.native
     def addAction(names: js.Array[String], action: js.Function): Unit = js.native
     
-    def addActions(actions: js.Any): Unit = js.native
+    def addActions(actions: Any): Unit = js.native
     
     def addStore(name: String, store: Store): Unit = js.native
     
-    def addStores(stores: js.Any): Unit = js.native
+    def addStores(stores: Any): Unit = js.native
     
-    def store(name: String): js.Any = js.native
+    def store(name: String): Any = js.native
     
-    var stores: js.Any = js.native
+    var stores: Any = js.native
   }
   
   trait FluxChildMixin extends StObject {
@@ -126,7 +126,7 @@ object mod {
   @js.native
   trait Store
     extends StObject
-       with EventEmitter[String | js.Symbol, js.Any] {
+       with EventEmitter[String | js.Symbol, Any] {
     
     def bindActions(args: (String | js.Function)*): Unit = js.native
     def bindActions(args: js.Array[String | js.Function]): Unit = js.native
@@ -137,15 +137,15 @@ object mod {
   @js.native
   trait StoreClass
     extends StObject
-       with Instantiable0[js.Any]
-       with Instantiable1[/* options */ js.Object, js.Any]
+       with Instantiable0[Any]
+       with Instantiable1[/* options */ js.Object, Any]
   
   trait StoreSpec extends StObject {
     
-    var actions: js.UndefOr[js.Any] = js.undefined
+    var actions: js.UndefOr[Any] = js.undefined
     
     var initialize: js.UndefOr[
-        js.Function2[/* instance */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Object], Unit]
+        js.Function2[/* instance */ js.UndefOr[Any], /* options */ js.UndefOr[js.Object], Unit]
       ] = js.undefined
   }
   object StoreSpec {
@@ -157,11 +157,11 @@ object mod {
     
     extension [Self <: StoreSpec](x: Self) {
       
-      inline def setActions(value: js.Any): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: Any): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
       inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      inline def setInitialize(value: (/* instance */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
+      inline def setInitialize(value: (/* instance */ js.UndefOr[Any], /* options */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
       
       inline def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
     }

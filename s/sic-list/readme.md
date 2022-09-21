@@ -10,10 +10,10 @@ Standard industrial classification list based on the excellent country-list pack
 | ------------------ | :-------------: |
 | Full name          | sic-list |
 | Keywords           | standard industrial classification, sic |
-| # releases         | 26 |
-| # dependents       | 0 |
-| # downloads        | 4549 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 126.66666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/596050/sic)

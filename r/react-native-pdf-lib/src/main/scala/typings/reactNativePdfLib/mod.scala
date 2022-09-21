@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("react-native-pdf-lib", "PDFDocument")
   @js.native
-  class PDFDocument () extends StObject {
+  open class PDFDocument () extends StObject {
     
     def addPages(pages: js.Array[PDFPage]): PDFDocument = js.native
     
@@ -36,7 +36,7 @@ object mod {
   
   @JSImport("react-native-pdf-lib", "PDFPage")
   @js.native
-  class PDFPage () extends StObject {
+  open class PDFPage () extends StObject {
     
     def drawImage(imageUri: String): PDFPage = js.native
     def drawImage(imageUri: String, options: ImageDrawingOptions): PDFPage = js.native

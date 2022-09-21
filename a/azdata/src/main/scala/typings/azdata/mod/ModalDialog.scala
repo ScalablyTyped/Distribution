@@ -32,26 +32,18 @@ trait ModalDialog extends StObject {
   /**
     * Raised when dialog closed.
     */
-  def onClosed(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable = js.native
-  def onClosed(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onClosed(
-    listener: js.Function1[/* e */ js.Any, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onClosed(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onClosed(listener: js.Function1[/* e */ Any, Any]): Disposable = js.native
+  def onClosed(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable = js.native
+  def onClosed(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onClosed(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * Raised when the webview posts a message.
     */
-  def onMessage(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable = js.native
-  def onMessage(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onMessage(
-    listener: js.Function1[/* e */ js.Any, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onMessage(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onMessage(listener: js.Function1[/* e */ Any, Any]): Disposable = js.native
+  def onMessage(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable = js.native
+  def onMessage(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onMessage(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * Opens the dialog.
@@ -63,7 +55,7 @@ trait ModalDialog extends StObject {
     *
     * @param message Body of the message.
     */
-  def postMessage(message: js.Any): Thenable[js.Any] = js.native
+  def postMessage(message: Any): Thenable[Any] = js.native
   
   /**
     * Title of the webview.

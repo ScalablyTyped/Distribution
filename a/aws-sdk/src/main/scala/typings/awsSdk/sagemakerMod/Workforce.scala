@@ -14,12 +14,17 @@ trait Workforce extends StObject {
   /**
     * The date that the workforce is created.
     */
-  var CreateDate: js.UndefOr[Timestamp] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The reason your workforce failed.
+    */
+  var FailureReason: js.UndefOr[WorkforceFailureReason] = js.undefined
   
   /**
     * The most recent date that was used to successfully add one or more IP address ranges (CIDRs) to a private workforce's allow list.
     */
-  var LastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The configuration of an OIDC Identity Provider (IdP) private workforce.
@@ -30,6 +35,11 @@ trait Workforce extends StObject {
     * A list of one to ten IP address ranges (CIDRs) to be added to the workforce allow list. By default, a workforce isn't restricted to specific IP addresses.
     */
   var SourceIpConfig: js.UndefOr[typings.awsSdk.sagemakerMod.SourceIpConfig] = js.undefined
+  
+  /**
+    * The status of your workforce.
+    */
+  var Status: js.UndefOr[WorkforceStatus] = js.undefined
   
   /**
     * The subdomain for your OIDC Identity Provider.
@@ -45,6 +55,11 @@ trait Workforce extends StObject {
     * The name of the private workforce.
     */
   var WorkforceName: typings.awsSdk.sagemakerMod.WorkforceName
+  
+  /**
+    * The configuration of a VPC workforce.
+    */
+  var WorkforceVpcConfig: js.UndefOr[WorkforceVpcConfigResponse] = js.undefined
 }
 object Workforce {
   
@@ -59,11 +74,15 @@ object Workforce {
     
     inline def setCognitoConfigUndefined: Self = StObject.set(x, "CognitoConfig", js.undefined)
     
-    inline def setCreateDate(value: Timestamp): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
-    inline def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "LastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: WorkforceFailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
+    
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
+    
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "LastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "LastUpdatedDate", js.undefined)
     
@@ -75,6 +94,10 @@ object Workforce {
     
     inline def setSourceIpConfigUndefined: Self = StObject.set(x, "SourceIpConfig", js.undefined)
     
+    inline def setStatus(value: WorkforceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
     inline def setSubDomain(value: String): Self = StObject.set(x, "SubDomain", value.asInstanceOf[js.Any])
     
     inline def setSubDomainUndefined: Self = StObject.set(x, "SubDomain", js.undefined)
@@ -82,5 +105,9 @@ object Workforce {
     inline def setWorkforceArn(value: WorkforceArn): Self = StObject.set(x, "WorkforceArn", value.asInstanceOf[js.Any])
     
     inline def setWorkforceName(value: WorkforceName): Self = StObject.set(x, "WorkforceName", value.asInstanceOf[js.Any])
+    
+    inline def setWorkforceVpcConfig(value: WorkforceVpcConfigResponse): Self = StObject.set(x, "WorkforceVpcConfig", value.asInstanceOf[js.Any])
+    
+    inline def setWorkforceVpcConfigUndefined: Self = StObject.set(x, "WorkforceVpcConfig", js.undefined)
   }
 }

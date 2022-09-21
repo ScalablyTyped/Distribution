@@ -10,10 +10,10 @@ A tiny (183B to 210B) and fast utility to ascend parent directories
 | ------------------ | :-------------: |
 | Full name          | escalade |
 | Keywords           | find, parent, parents, directory, search, walk |
-| # releases         | 10 |
-| # dependents       | 25 |
-| # downloads        | 115142030 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0375253466666667E8 |
+| # stars            | 128.0 |
 
 ## Links
 - [Homepage](https://github.com/lukeed/escalade#readme)

@@ -8,12 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLCollectionOf[T /* <: Element */]
   extends StObject
-     with /* n */ NumberDictionary[T] {
+     with /* standard es5 */
+/* n */ NumberDictionary[T] {
   
+  /* standard dom */
   def item(index: Double): T | Null = js.native
   
+  /* standard dom.iterable */
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[T]] = js.native
   
+  /* standard dom */
   def namedItem(name: java.lang.String): T | Null = js.native
 }

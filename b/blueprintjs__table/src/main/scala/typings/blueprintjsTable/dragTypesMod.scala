@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dragTypesMod {
   
+  type ClientCoordinates = IClientCoordinates
+  
+  type CoordinateData = ICoordinateData
+  
+  type DragHandler = IDragHandler
+  
   type IClientCoordinates = js.Tuple2[Double, Double]
   
   trait ICoordinateData extends StObject {
@@ -108,12 +114,14 @@ object dragTypesMod {
     /**
       * This prevents mouse events from performing their default operation such
       * as text selection.
+      *
       * @default true
       */
     var preventDefault: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This prevents the event from propagating up to parent elements.
+      *
       * @default false
       */
     var stopPropagation: js.UndefOr[Boolean] = js.undefined

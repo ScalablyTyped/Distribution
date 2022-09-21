@@ -9,8 +9,7 @@ import typings.actionsOnGoogle.frameworkFrameworkMod.StandardHandler
 import typings.actionsOnGoogle.frameworkFrameworkMod.StandardResponse
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,8 +36,14 @@ object assistantMod {
     ): js.Promise[StandardResponse] = js.native
     /* InferMemberOverrides */
     override def apply(
-      arg1: /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query],
-      arg2: /* response */ Response_[js.Any]
+      arg1: /* request */ Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      arg2: /* response */ Response_[Any, Record[String, Any]]
     ): Unit = js.native
   }
   
@@ -81,7 +86,7 @@ object assistantMod {
       debug: Boolean,
       frameworks: BuiltinFrameworks,
       handler: (/* body */ JsonObject, /* headers */ Headers, /* metadata */ js.UndefOr[BuiltinFrameworkMetadata]) => js.Promise[StandardResponse],
-      use: Plugin[js.Any, js.Any] => BaseApp & js.Any
+      use: Plugin[Any, Any] => BaseApp & Any
     ): BaseApp = {
       val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], frameworks = frameworks.asInstanceOf[js.Any], handler = js.Any.fromFunction3(handler), use = js.Any.fromFunction1(use))
       __obj.asInstanceOf[BaseApp]
@@ -93,13 +98,13 @@ object assistantMod {
       
       inline def setFrameworks(value: BuiltinFrameworks): Self = StObject.set(x, "frameworks", value.asInstanceOf[js.Any])
       
-      inline def setUse(value: Plugin[js.Any, js.Any] => BaseApp & js.Any): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
+      inline def setUse(value: Plugin[Any, Any] => BaseApp & Any): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
     }
   }
   
   type Plugin[TService, TPlugin] = js.Function1[
-    /* app */ AppHandler & TService & js.Any, 
-    (AppHandler & TService & js.Any & TPlugin) | Unit
+    /* app */ AppHandler & TService & Any, 
+    (AppHandler & TService & Any & TPlugin) | Unit
   ]
   
   trait ServiceBaseApp extends StObject {

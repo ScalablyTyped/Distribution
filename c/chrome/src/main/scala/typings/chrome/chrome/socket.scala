@@ -1,6 +1,5 @@
 package typings.chrome.chrome
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,20 +72,20 @@ object socket {
   
   trait ReadInfo extends StObject {
     
-    var data: ArrayBuffer
+    var data: js.typedarray.ArrayBuffer
     
     var resultCode: Double
   }
   object ReadInfo {
     
-    inline def apply(data: ArrayBuffer, resultCode: Double): ReadInfo = {
+    inline def apply(data: js.typedarray.ArrayBuffer, resultCode: Double): ReadInfo = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], resultCode = resultCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadInfo]
     }
     
     extension [Self <: ReadInfo](x: Self) {
       
-      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setResultCode(value: Double): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
     }
@@ -96,7 +95,7 @@ object socket {
     
     var address: String
     
-    var data: ArrayBuffer
+    var data: js.typedarray.ArrayBuffer
     
     var port: Double
     
@@ -104,7 +103,7 @@ object socket {
   }
   object RecvFromInfo {
     
-    inline def apply(address: String, data: ArrayBuffer, port: Double, resultCode: Double): RecvFromInfo = {
+    inline def apply(address: String, data: js.typedarray.ArrayBuffer, port: Double, resultCode: Double): RecvFromInfo = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], resultCode = resultCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecvFromInfo]
     }
@@ -113,7 +112,7 @@ object socket {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       

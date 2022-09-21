@@ -322,7 +322,7 @@ object ContentRating {
     
     inline def setDjctqRatingReasonsUndefined: Self = StObject.set(x, "djctqRatingReasons", js.undefined)
     
-    inline def setDjctqRatingReasonsVarargs(value: String*): Self = StObject.set(x, "djctqRatingReasons", js.Array(value :_*))
+    inline def setDjctqRatingReasonsVarargs(value: String*): Self = StObject.set(x, "djctqRatingReasons", js.Array(value*))
     
     inline def setDjctqRatingUndefined: Self = StObject.set(x, "djctqRating", js.undefined)
     
@@ -360,7 +360,7 @@ object ContentRating {
     
     inline def setFpbRatingReasonsUndefined: Self = StObject.set(x, "fpbRatingReasons", js.undefined)
     
-    inline def setFpbRatingReasonsVarargs(value: String*): Self = StObject.set(x, "fpbRatingReasons", js.Array(value :_*))
+    inline def setFpbRatingReasonsVarargs(value: String*): Self = StObject.set(x, "fpbRatingReasons", js.Array(value*))
     
     inline def setFpbRatingUndefined: Self = StObject.set(x, "fpbRating", js.undefined)
     

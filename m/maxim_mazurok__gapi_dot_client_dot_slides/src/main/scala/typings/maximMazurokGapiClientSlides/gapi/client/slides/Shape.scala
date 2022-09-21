@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Shape extends StObject {
   
   /**
-    * Placeholders are shapes that are inherit from corresponding placeholders on layouts and masters. If set, the shape is a placeholder shape and any inherited properties can be
+    * Placeholders are page elements that inherit from corresponding placeholders on layouts and masters. If set, the shape is a placeholder shape and any inherited properties can be
     * resolved by looking at the parent placeholder identified by the Placeholder.parent_object_id field.
     */
   var placeholder: js.UndefOr[Placeholder] = js.undefined

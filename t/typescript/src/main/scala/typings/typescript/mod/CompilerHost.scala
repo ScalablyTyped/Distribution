@@ -1,5 +1,7 @@
 package typings.typescript.mod
 
+import typings.typescript.mod.ModuleKind.CommonJS
+import typings.typescript.mod.ModuleKind.ESNext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,25 +26,48 @@ trait CompilerHost
   
   var getEnvironmentVariable: js.UndefOr[js.Function1[/* name */ java.lang.String, js.UndefOr[java.lang.String]]] = js.native
   
+  /**
+    * Returns the module resolution cache used by a provided `resolveModuleNames` implementation so that any non-name module resolution operations (eg, package.json lookup) can reuse it
+    */
+  var getModuleResolutionCache: js.UndefOr[js.Function0[js.UndefOr[ModuleResolutionCache]]] = js.native
+  
   def getNewLine(): java.lang.String = js.native
   
   var getParsedCommandLine: js.UndefOr[js.Function1[/* fileName */ java.lang.String, js.UndefOr[ParsedCommandLine]]] = js.native
   
-  def getSourceFile(fileName: java.lang.String, languageVersion: ScriptTarget): js.UndefOr[SourceFile] = js.native
+  def getSourceFile(fileName: java.lang.String, languageVersionOrOptions: CreateSourceFileOptions): js.UndefOr[SourceFile] = js.native
   def getSourceFile(
     fileName: java.lang.String,
-    languageVersion: ScriptTarget,
+    languageVersionOrOptions: CreateSourceFileOptions,
     onError: js.Function1[/* message */ java.lang.String, Unit]
   ): js.UndefOr[SourceFile] = js.native
   def getSourceFile(
     fileName: java.lang.String,
-    languageVersion: ScriptTarget,
+    languageVersionOrOptions: CreateSourceFileOptions,
     onError: js.Function1[/* message */ java.lang.String, Unit],
     shouldCreateNewSourceFile: Boolean
   ): js.UndefOr[SourceFile] = js.native
   def getSourceFile(
     fileName: java.lang.String,
-    languageVersion: ScriptTarget,
+    languageVersionOrOptions: CreateSourceFileOptions,
+    onError: Unit,
+    shouldCreateNewSourceFile: Boolean
+  ): js.UndefOr[SourceFile] = js.native
+  def getSourceFile(fileName: java.lang.String, languageVersionOrOptions: ScriptTarget): js.UndefOr[SourceFile] = js.native
+  def getSourceFile(
+    fileName: java.lang.String,
+    languageVersionOrOptions: ScriptTarget,
+    onError: js.Function1[/* message */ java.lang.String, Unit]
+  ): js.UndefOr[SourceFile] = js.native
+  def getSourceFile(
+    fileName: java.lang.String,
+    languageVersionOrOptions: ScriptTarget,
+    onError: js.Function1[/* message */ java.lang.String, Unit],
+    shouldCreateNewSourceFile: Boolean
+  ): js.UndefOr[SourceFile] = js.native
+  def getSourceFile(
+    fileName: java.lang.String,
+    languageVersionOrOptions: ScriptTarget,
     onError: Unit,
     shouldCreateNewSourceFile: Boolean
   ): js.UndefOr[SourceFile] = js.native
@@ -51,7 +76,7 @@ trait CompilerHost
     js.Function5[
       /* fileName */ java.lang.String, 
       /* path */ Path, 
-      /* languageVersion */ ScriptTarget, 
+      /* languageVersionOrOptions */ ScriptTarget | CreateSourceFileOptions, 
       /* onError */ js.UndefOr[js.Function1[/* message */ java.lang.String, Unit]], 
       /* shouldCreateNewSourceFile */ js.UndefOr[Boolean], 
       js.UndefOr[SourceFile]
@@ -70,12 +95,13 @@ trait CompilerHost
   ] = js.native
   
   var resolveModuleNames: js.UndefOr[
-    js.Function5[
+    js.Function6[
       /* moduleNames */ js.Array[java.lang.String], 
       /* containingFile */ java.lang.String, 
       /* reusedNames */ js.UndefOr[js.Array[java.lang.String]], 
       /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
       /* options */ CompilerOptions, 
+      /* containingSourceFile */ js.UndefOr[SourceFile], 
       js.Array[js.UndefOr[ResolvedModule]]
     ]
   ] = js.native
@@ -84,37 +110,71 @@ trait CompilerHost
     * This method is a companion for 'resolveModuleNames' and is used to resolve 'types' references to actual type declaration files
     */
   var resolveTypeReferenceDirectives: js.UndefOr[
-    js.Function4[
-      /* typeReferenceDirectiveNames */ js.Array[java.lang.String], 
+    js.Function5[
+      /* typeReferenceDirectiveNames */ js.Array[FileReference | java.lang.String], 
       /* containingFile */ java.lang.String, 
       /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
       /* options */ CompilerOptions, 
+      /* containingFileMode */ js.UndefOr[ESNext | CommonJS], 
       js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ]
   ] = js.native
   
-  def useCaseSensitiveFileNames(): Boolean = js.native
+  @JSName("useCaseSensitiveFileNames")
+  def useCaseSensitiveFileNames_MCompilerHost(): Boolean = js.native
   
-  def writeFile(fileName: java.lang.String, data: java.lang.String, writeByteOrderMark: Boolean): Unit = js.native
+  def writeFile(fileName: java.lang.String, text: java.lang.String, writeByteOrderMark: Boolean): Unit = js.native
   def writeFile(
     fileName: java.lang.String,
-    data: java.lang.String,
+    text: java.lang.String,
     writeByteOrderMark: Boolean,
     onError: js.Function1[/* message */ java.lang.String, Unit]
   ): Unit = js.native
   def writeFile(
     fileName: java.lang.String,
-    data: java.lang.String,
+    text: java.lang.String,
     writeByteOrderMark: Boolean,
     onError: js.Function1[/* message */ java.lang.String, Unit],
     sourceFiles: js.Array[SourceFile]
   ): Unit = js.native
   def writeFile(
     fileName: java.lang.String,
-    data: java.lang.String,
+    text: java.lang.String,
+    writeByteOrderMark: Boolean,
+    onError: js.Function1[/* message */ java.lang.String, Unit],
+    sourceFiles: js.Array[SourceFile],
+    data: WriteFileCallbackData
+  ): Unit = js.native
+  def writeFile(
+    fileName: java.lang.String,
+    text: java.lang.String,
+    writeByteOrderMark: Boolean,
+    onError: js.Function1[/* message */ java.lang.String, Unit],
+    sourceFiles: Unit,
+    data: WriteFileCallbackData
+  ): Unit = js.native
+  def writeFile(
+    fileName: java.lang.String,
+    text: java.lang.String,
     writeByteOrderMark: Boolean,
     onError: Unit,
     sourceFiles: js.Array[SourceFile]
+  ): Unit = js.native
+  def writeFile(
+    fileName: java.lang.String,
+    text: java.lang.String,
+    writeByteOrderMark: Boolean,
+    onError: Unit,
+    sourceFiles: js.Array[SourceFile],
+    data: WriteFileCallbackData
+  ): Unit = js.native
+  def writeFile(
+    fileName: java.lang.String,
+    text: java.lang.String,
+    writeByteOrderMark: Boolean,
+    onError: Unit,
+    sourceFiles: Unit,
+    data: WriteFileCallbackData
   ): Unit = js.native
   @JSName("writeFile")
   var writeFile_Original: WriteFileCallback = js.native

@@ -11,14 +11,14 @@ object filesMod {
   
   @JSImport("webdriver-manager/built/lib/files", "DownloadedBinary")
   @js.native
-  class DownloadedBinary protected ()
+  open class DownloadedBinary protected ()
     extends typings.webdriverManager.downloadedBinaryMod.DownloadedBinary {
     def this(binary: Binary) = this()
   }
   
   @JSImport("webdriver-manager/built/lib/files", "Downloader")
   @js.native
-  class Downloader ()
+  open class Downloader ()
     extends typings.webdriverManager.downloaderMod.Downloader
   /* static members */
   object Downloader {
@@ -53,7 +53,7 @@ object filesMod {
   
   @JSImport("webdriver-manager/built/lib/files", "FileManager")
   @js.native
-  class FileManager ()
+  open class FileManager ()
     extends typings.webdriverManager.fileManagerMod.FileManager
   /* static members */
   object FileManager {

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("playmusic", JSImport.Default)
 @js.native
-class default ()
+open class default ()
   extends StObject
      with PlayMusic

@@ -1,7 +1,7 @@
 
 # Scala.js typings for markdown-it-emoji
 
-Typings are for version 1.4
+Typings are for version 2.0
 
 ## Library description:
 Emoji plugin for markdown-it markdown parser.
@@ -10,13 +10,13 @@ Emoji plugin for markdown-it markdown parser.
 | ------------------ | :-------------: |
 | Full name          | markdown-it-emoji |
 | Keywords           | markdown-it-plugin, markdown-it, markdown, emoji, emojies, emoticon, emoticons |
-| # releases         | 0 |
-| # dependents       | 251 |
-| # downloads        | 4206743 |
-| # stars            | 4 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1297023.3333333333 |
+| # stars            | 538.0 |
 
 ## Links
-- [Homepage](https://github.com/markdown-it/markdown-it-emoji)
+- [Homepage](https://github.com/markdown-it/markdown-it-emoji#readme)
 - [Bugs](https://github.com/markdown-it/markdown-it-emoji/issues)
 - [Repository](https://github.com/markdown-it/markdown-it-emoji)
 - [Npm](https://www.npmjs.com/package/markdown-it-emoji)

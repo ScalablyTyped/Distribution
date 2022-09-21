@@ -60,11 +60,11 @@ object ISearchPage {
     
     inline def setQGroupItemOptions(value: js.Array[ISearchGroupItemOptions]): Self = StObject.set(x, "qGroupItemOptions", value.asInstanceOf[js.Any])
     
-    inline def setQGroupItemOptionsVarargs(value: ISearchGroupItemOptions*): Self = StObject.set(x, "qGroupItemOptions", js.Array(value :_*))
+    inline def setQGroupItemOptionsVarargs(value: ISearchGroupItemOptions*): Self = StObject.set(x, "qGroupItemOptions", js.Array(value*))
     
     inline def setQGroupOptions(value: js.Array[ISearchGroupOptions]): Self = StObject.set(x, "qGroupOptions", value.asInstanceOf[js.Any])
     
-    inline def setQGroupOptionsVarargs(value: ISearchGroupOptions*): Self = StObject.set(x, "qGroupOptions", js.Array(value :_*))
+    inline def setQGroupOptionsVarargs(value: ISearchGroupOptions*): Self = StObject.set(x, "qGroupOptions", js.Array(value*))
     
     inline def setQMaxNbrFieldMatches(value: Double): Self = StObject.set(x, "qMaxNbrFieldMatches", value.asInstanceOf[js.Any])
     

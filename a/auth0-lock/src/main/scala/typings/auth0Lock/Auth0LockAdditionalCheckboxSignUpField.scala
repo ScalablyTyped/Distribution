@@ -4,6 +4,7 @@ import typings.auth0Lock.anon.Hint
 import typings.auth0Lock.auth0LockStrings.`false`
 import typings.auth0Lock.auth0LockStrings.`true`
 import typings.auth0Lock.auth0LockStrings.checkbox
+import typings.auth0Lock.auth0LockStrings.root
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,6 +20,8 @@ trait Auth0LockAdditionalCheckboxSignUpField
   var placeholder: String
   
   var prefill: `true` | `false`
+  
+  var storage: js.UndefOr[root] = js.undefined
   
   var `type`: js.UndefOr[checkbox] = js.undefined
   
@@ -42,6 +45,10 @@ object Auth0LockAdditionalCheckboxSignUpField {
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     inline def setPrefill(value: `true` | `false`): Self = StObject.set(x, "prefill", value.asInstanceOf[js.Any])
+    
+    inline def setStorage(value: root): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    
+    inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
     
     inline def setType(value: checkbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

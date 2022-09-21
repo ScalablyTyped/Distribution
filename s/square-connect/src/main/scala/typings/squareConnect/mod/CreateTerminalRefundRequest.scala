@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CreateTerminalRefundRequest")
 @js.native
-class CreateTerminalRefundRequest () extends StObject {
+open class CreateTerminalRefundRequest () extends StObject {
   
   /**
     * A unique string that identifies this `CreateRefund` request.

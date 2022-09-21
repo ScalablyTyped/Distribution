@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ptomasroos/react-native-multi-slider" : "2.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ptomasroos/react-native-multi-slider" : "2.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

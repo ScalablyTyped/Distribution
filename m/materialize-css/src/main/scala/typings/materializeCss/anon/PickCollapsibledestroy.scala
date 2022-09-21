@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<materialize-css.M.Collapsible, 'destroy'> */
 trait PickCollapsibledestroy extends StObject {
   
-  var destroy: js.UndefOr[js.Any] = js.undefined
+  var destroy: js.UndefOr[Any] = js.undefined
 }
 object PickCollapsibledestroy {
   
@@ -18,7 +18,7 @@ object PickCollapsibledestroy {
   
   extension [Self <: PickCollapsibledestroy](x: Self) {
     
-    inline def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    inline def setDestroy(value: Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
   }

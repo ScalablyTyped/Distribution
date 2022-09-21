@@ -44,7 +44,7 @@ trait ApplicationDetail extends StObject {
   /**
     * Time stamp when the application version was created.
     */
-  var CreateTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CreateTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Describes the application input configuration. For more information, see Configuring Application Input. 
@@ -54,7 +54,7 @@ trait ApplicationDetail extends StObject {
   /**
     * Time stamp when the application was last updated.
     */
-  var LastUpdateTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdateTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Describes the application output configuration. For more information, see Configuring Application Output. 
@@ -100,9 +100,9 @@ object ApplicationDetail {
     
     inline def setCloudWatchLoggingOptionDescriptionsUndefined: Self = StObject.set(x, "CloudWatchLoggingOptionDescriptions", js.undefined)
     
-    inline def setCloudWatchLoggingOptionDescriptionsVarargs(value: CloudWatchLoggingOptionDescription*): Self = StObject.set(x, "CloudWatchLoggingOptionDescriptions", js.Array(value :_*))
+    inline def setCloudWatchLoggingOptionDescriptionsVarargs(value: CloudWatchLoggingOptionDescription*): Self = StObject.set(x, "CloudWatchLoggingOptionDescriptions", js.Array(value*))
     
-    inline def setCreateTimestamp(value: Timestamp): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreateTimestamp(value: js.Date): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreateTimestampUndefined: Self = StObject.set(x, "CreateTimestamp", js.undefined)
     
@@ -110,9 +110,9 @@ object ApplicationDetail {
     
     inline def setInputDescriptionsUndefined: Self = StObject.set(x, "InputDescriptions", js.undefined)
     
-    inline def setInputDescriptionsVarargs(value: InputDescription*): Self = StObject.set(x, "InputDescriptions", js.Array(value :_*))
+    inline def setInputDescriptionsVarargs(value: InputDescription*): Self = StObject.set(x, "InputDescriptions", js.Array(value*))
     
-    inline def setLastUpdateTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdateTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTimestamp(value: js.Date): Self = StObject.set(x, "LastUpdateTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateTimestampUndefined: Self = StObject.set(x, "LastUpdateTimestamp", js.undefined)
     
@@ -120,12 +120,12 @@ object ApplicationDetail {
     
     inline def setOutputDescriptionsUndefined: Self = StObject.set(x, "OutputDescriptions", js.undefined)
     
-    inline def setOutputDescriptionsVarargs(value: OutputDescription*): Self = StObject.set(x, "OutputDescriptions", js.Array(value :_*))
+    inline def setOutputDescriptionsVarargs(value: OutputDescription*): Self = StObject.set(x, "OutputDescriptions", js.Array(value*))
     
     inline def setReferenceDataSourceDescriptions(value: ReferenceDataSourceDescriptions): Self = StObject.set(x, "ReferenceDataSourceDescriptions", value.asInstanceOf[js.Any])
     
     inline def setReferenceDataSourceDescriptionsUndefined: Self = StObject.set(x, "ReferenceDataSourceDescriptions", js.undefined)
     
-    inline def setReferenceDataSourceDescriptionsVarargs(value: ReferenceDataSourceDescription*): Self = StObject.set(x, "ReferenceDataSourceDescriptions", js.Array(value :_*))
+    inline def setReferenceDataSourceDescriptionsVarargs(value: ReferenceDataSourceDescription*): Self = StObject.set(x, "ReferenceDataSourceDescriptions", js.Array(value*))
   }
 }

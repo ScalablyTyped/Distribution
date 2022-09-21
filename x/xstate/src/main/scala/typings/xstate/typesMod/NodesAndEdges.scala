@@ -2,6 +2,7 @@ package typings.xstate.typesMod
 
 import typings.xstate.anon.ContextAny
 import typings.xstate.stateNodeMod.StateNode
+import typings.xstate.typegenTypesMod.TypegenDisabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ trait NodesAndEdges[TContext, TEvent /* <: EventObject */] extends StObject {
     ]
   ]
   
-  var nodes: js.Array[StateNode[js.Any, js.Any, EventObject, ContextAny]]
+  var nodes: js.Array[StateNode[Any, Any, EventObject, ContextAny, ServiceMap, TypegenDisabled]]
 }
 object NodesAndEdges {
   
@@ -28,7 +29,7 @@ object NodesAndEdges {
         /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
       ]
     ],
-    nodes: js.Array[StateNode[js.Any, js.Any, EventObject, ContextAny]]
+    nodes: js.Array[StateNode[Any, Any, EventObject, ContextAny, ServiceMap, TypegenDisabled]]
   ): NodesAndEdges[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesAndEdges[TContext, TEvent]]
@@ -52,10 +53,10 @@ object NodesAndEdges {
           TEvent, 
           /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
         ])*
-    ): Self = StObject.set(x, "edges", js.Array(value :_*))
+    ): Self = StObject.set(x, "edges", js.Array(value*))
     
-    inline def setNodes(value: js.Array[StateNode[js.Any, js.Any, EventObject, ContextAny]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[StateNode[Any, Any, EventObject, ContextAny, ServiceMap, TypegenDisabled]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: (StateNode[js.Any, js.Any, EventObject, ContextAny])*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: (StateNode[Any, Any, EventObject, ContextAny, ServiceMap, TypegenDisabled])*): Self = StObject.set(x, "nodes", js.Array(value*))
   }
 }

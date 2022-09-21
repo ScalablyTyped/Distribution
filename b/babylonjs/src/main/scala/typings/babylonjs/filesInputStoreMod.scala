@@ -10,7 +10,7 @@ object filesInputStoreMod {
   
   @JSImport("babylonjs/Misc/filesInputStore", "FilesInputStore")
   @js.native
-  class FilesInputStore () extends StObject
+  open class FilesInputStore () extends StObject
   /* static members */
   object FilesInputStore {
     

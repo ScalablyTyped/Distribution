@@ -1,5 +1,6 @@
 package typings.lightMyRequest
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.lightMyRequest.anon.Close
 import typings.lightMyRequest.anon.Hostname
@@ -11,14 +12,15 @@ import typings.lightMyRequest.lightMyRequestStrings.options_
 import typings.lightMyRequest.lightMyRequestStrings.patch_
 import typings.lightMyRequest.lightMyRequestStrings.post_
 import typings.lightMyRequest.lightMyRequestStrings.put_
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingHttpHeaders
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.OutgoingHttpHeaders
+import typings.node.httpMod.RequestListener
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.streamMod.Readable
-import typings.std.Error
+import typings.node.nodeNetMod.Socket
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,10 +37,27 @@ object mod {
   inline def inject(dispatchFunc: DispatchFunc, options: InjectOptions): Chain = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chain]
   inline def inject(dispatchFunc: DispatchFunc, options: InjectOptions, callback: CallbackFunc): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def isInjection(obj: Request): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInjection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def isInjection(obj: Response): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInjection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInjection(obj: IncomingMessage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInjection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInjection(obj: ServerResponse[IncomingMessage]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInjection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  type CallbackFunc = js.Function2[/* err */ Error, /* response */ Response, Unit]
+  trait AbortSignal extends StObject {
+    
+    val aborted: Boolean
+  }
+  object AbortSignal {
+    
+    inline def apply(aborted: Boolean): AbortSignal = {
+      val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AbortSignal]
+    }
+    
+    extension [Self <: AbortSignal](x: Self) {
+      
+      inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type CallbackFunc = js.Function2[/* err */ js.Error, /* response */ Response, Unit]
   
   @js.native
   trait Chain
@@ -70,12 +89,19 @@ object mod {
     
     def put(url: String): Chain = js.native
     
-    def query(query: js.Object): Chain = js.native
+    def query(query: String): Chain = js.native
+    def query(query: StringDictionary[String | js.Array[String]]): Chain = js.native
     
     def trace(url: String): Chain = js.native
   }
   
-  type DispatchFunc = js.Function2[/* req */ Request, /* res */ Response, Unit]
+  type DispatchFunc = RequestListener[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ]
   
   /* Rewritten from type alias, can be one of: 
     - typings.lightMyRequest.lightMyRequestStrings.DELETE
@@ -127,6 +153,8 @@ object mod {
   
   trait InjectOptions extends StObject {
     
+    var Request: js.UndefOr[js.Object] = js.undefined
+    
     var authority: js.UndefOr[String] = js.undefined
     
     var cookies: js.UndefOr[StringDictionary[String]] = js.undefined
@@ -143,7 +171,17 @@ object mod {
     
     var remoteAddress: js.UndefOr[String] = js.undefined
     
-    var server: js.UndefOr[Server] = js.undefined
+    var server: js.UndefOr[
+        Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]
+      ] = js.undefined
+    
+    var signal: js.UndefOr[AbortSignal] = js.undefined
     
     var simulate: js.UndefOr[Close] = js.undefined
     
@@ -192,9 +230,25 @@ object mod {
       
       inline def setRemoteAddressUndefined: Self = StObject.set(x, "remoteAddress", js.undefined)
       
-      inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setRequest(value: js.Object): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
+      
+      inline def setRequestUndefined: Self = StObject.set(x, "Request", js.undefined)
+      
+      inline def setServer(
+        value: Server[
+              Instantiable1[/* socket */ Socket, IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                ServerResponse[IncomingMessage]
+              ]
+            ]
+      ): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
       inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+      
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
       inline def setSimulate(value: Close): Self = StObject.set(x, "simulate", value.asInstanceOf[js.Any])
       
@@ -210,42 +264,71 @@ object mod {
     }
   }
   
-  type InjectPayload = String | js.Object | Buffer | ReadableStream
+  type InjectPayload = String | js.Object | Buffer | ReadableStream[Any]
   
-  @js.native
-  trait Request extends Readable {
+  trait Response extends StObject {
     
-    // @deprecated
-    var connection: js.Object = js.native
+    var body: String
     
-    var headers: IncomingHttpHeaders = js.native
+    var cookies: js.Array[js.Object]
     
-    var httpVersion: String = js.native
+    var headers: OutgoingHttpHeaders
     
-    var method: HTTPMethods = js.native
+    def json[T](): T
     
-    def prepare(next: js.Function0[Unit]): Unit = js.native
+    var payload: String
     
-    var url: String = js.native
+    var raw: Req
+    
+    var rawPayload: Buffer
+    
+    var statusCode: Double
+    
+    var statusMessage: String
+    
+    var trailers: StringDictionary[String]
   }
-  
-  @js.native
-  trait Response extends ServerResponse {
+  object Response {
     
-    var body: String = js.native
+    inline def apply(
+      body: String,
+      cookies: js.Array[js.Object],
+      headers: OutgoingHttpHeaders,
+      json: () => Any,
+      payload: String,
+      raw: Req,
+      rawPayload: Buffer,
+      statusCode: Double,
+      statusMessage: String,
+      trailers: StringDictionary[String]
+    ): Response = {
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), payload = payload.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], rawPayload = rawPayload.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any], trailers = trailers.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Response]
+    }
     
-    var cookies: js.Array[js.Object] = js.native
-    
-    var headers: OutgoingHttpHeaders = js.native
-    
-    def json[T](): T = js.native
-    
-    var payload: String = js.native
-    
-    var raw: Req = js.native
-    
-    var rawPayload: Buffer = js.native
-    
-    var trailers: StringDictionary[String] = js.native
+    extension [Self <: Response](x: Self) {
+      
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setCookies(value: js.Array[js.Object]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      
+      inline def setCookiesVarargs(value: js.Object*): Self = StObject.set(x, "cookies", js.Array(value*))
+      
+      inline def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setJson(value: () => Any): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      
+      inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      
+      inline def setRaw(value: Req): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      
+      inline def setRawPayload(value: Buffer): Self = StObject.set(x, "rawPayload", value.asInstanceOf[js.Any])
+      
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      
+      inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+      
+      inline def setTrailers(value: StringDictionary[String]): Self = StObject.set(x, "trailers", value.asInstanceOf[js.Any])
+    }
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega
 
-Typings are for version 5.17.0
+Typings are for version 5.22.1
 
 ## Library description:
 The Vega visualization grammar.
@@ -10,15 +10,12 @@ The Vega visualization grammar.
 | ------------------ | :-------------: |
 | Full name          | vega |
 | Keywords           | vega, visualization, interaction, dataflow, library, data, d3 |
-| # releases         | 47 |
-| # dependents       | 89 |
-| # downloads        | 3366237 |
-| # stars            | 3 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 1044185.0 |
+| # stars            | 9848.0 |
 
 ## Links
-- [Homepage](https://github.com/vega/vega#readme)
-- [Bugs](https://github.com/vega/vega/issues)
-- [Repository](https://github.com/vega/vega)
 - [Npm](https://www.npmjs.com/package/vega)
     
 

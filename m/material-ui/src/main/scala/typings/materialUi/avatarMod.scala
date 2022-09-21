@@ -10,10 +10,10 @@ object avatarMod {
   
   @JSImport("material-ui/Avatar", JSImport.Default)
   @js.native
-  class default () extends Avatar
+  open class default () extends Avatar
   
   @JSImport("material-ui/Avatar", "Avatar")
   @js.native
-  class Avatar ()
-    extends Component[AvatarProps, js.Object, js.Any]
+  open class Avatar ()
+    extends Component[AvatarProps, js.Object, Any]
 }

@@ -42,6 +42,6 @@ object ComposeEnvironmentsMessage {
     
     inline def setVersionLabelsUndefined: Self = StObject.set(x, "VersionLabels", js.undefined)
     
-    inline def setVersionLabelsVarargs(value: VersionLabel*): Self = StObject.set(x, "VersionLabels", js.Array(value :_*))
+    inline def setVersionLabelsVarargs(value: VersionLabel*): Self = StObject.set(x, "VersionLabels", js.Array(value*))
   }
 }

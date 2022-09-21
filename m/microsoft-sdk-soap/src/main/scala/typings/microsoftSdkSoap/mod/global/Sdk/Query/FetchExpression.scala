@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Query.FetchExpression")
 @js.native
-class FetchExpression protected () extends StObject {
+open class FetchExpression protected () extends StObject {
   /**
     * @param fetchXml The FetchXml to be used in a query.
     */

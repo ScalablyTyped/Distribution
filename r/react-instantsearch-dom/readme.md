@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-instantsearch-dom
 
-Typings are for version 6.3
+Typings are for version 6.12
 
 ## Library description:
 ⚡ Lightning-fast search for React DOM, by Algolia
@@ -10,10 +10,10 @@ Typings are for version 6.3
 | ------------------ | :-------------: |
 | Full name          | react-instantsearch-dom |
 | Keywords           | algolia, components, fast, instantsearch, react, react-dom, search |
-| # releases         | 19 |
-| # dependents       | 43 |
-| # downloads        | 7825411 |
-| # stars            | 0 |
+| # releases         | 51 |
+| # dependents       | 0.0 |
+| # downloads        | 759849.0 |
+| # stars            | 1897.0 |
 
 ## Links
 - [Homepage](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react/)

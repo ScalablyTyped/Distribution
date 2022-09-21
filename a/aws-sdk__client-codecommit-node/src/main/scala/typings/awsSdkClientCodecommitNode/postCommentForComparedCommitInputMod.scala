@@ -8,5 +8,5 @@ object postCommentForComparedCommitInputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/PostCommentForComparedCommitInput", "PostCommentForComparedCommitInput")
   @js.native
-  val PostCommentForComparedCommitInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PostCommentForComparedCommitInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

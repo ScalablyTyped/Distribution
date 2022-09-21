@@ -70,6 +70,6 @@ object MeshCollisionData {
     
     inline def set_surroundingMeshesNull: Self = StObject.set(x, "_surroundingMeshes", null)
     
-    inline def set_surroundingMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "_surroundingMeshes", js.Array(value :_*))
+    inline def set_surroundingMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "_surroundingMeshes", js.Array(value*))
   }
 }

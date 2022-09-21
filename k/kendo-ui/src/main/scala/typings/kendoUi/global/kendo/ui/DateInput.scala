@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.DateInput")
 @js.native
-class DateInput protected ()
+open class DateInput protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.DateInput {
   def this(element: Element) = this()

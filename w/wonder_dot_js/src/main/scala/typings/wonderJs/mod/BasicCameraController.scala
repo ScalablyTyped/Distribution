@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "BasicCameraController")
 @js.native
-class BasicCameraController protected ()
+open class BasicCameraController protected ()
   extends typings.wonderJs.basicCameraControllerMod.BasicCameraController {
   def this(cameraComponent: typings.wonderJs.cameraMod.Camera) = this()
 }

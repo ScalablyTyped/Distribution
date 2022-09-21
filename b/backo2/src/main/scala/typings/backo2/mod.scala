@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("backo2", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Backoff {
     def this(opts: BackoffOptions) = this()

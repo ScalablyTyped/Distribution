@@ -19,9 +19,9 @@ object mod {
   
   @JSImport("ecmarkdown/dist/ecmarkdown", "emit")
   @js.native
-  def emit: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof Emitter.emit */ js.Any = js.native
+  def emit: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof Emitter.emit */ Any = js.native
   inline def emit_=(
-    x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof Emitter.emit */ js.Any
+    x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof Emitter.emit */ Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emit")(x.asInstanceOf[js.Any])
   
   @JSImport("ecmarkdown/dist/ecmarkdown", "fragment")
@@ -31,17 +31,18 @@ object mod {
   
   @JSImport("ecmarkdown/dist/ecmarkdown", "parseAlgorithm")
   @js.native
-  def parseAlgorithm: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof Parser.parseAlgorithm */ js.Any = js.native
+  def parseAlgorithm: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof Parser.parseAlgorithm */ Any = js.native
   inline def parseAlgorithm_=(
-    x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof Parser.parseAlgorithm */ js.Any
+    x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof Parser.parseAlgorithm */ Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseAlgorithm")(x.asInstanceOf[js.Any])
   
   @JSImport("ecmarkdown/dist/ecmarkdown", "parseFragment")
   @js.native
-  def parseFragment: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof Parser.parseFragment */ js.Any = js.native
+  def parseFragment: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof Parser.parseFragment */ Any = js.native
   inline def parseFragment_=(
-    x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof Parser.parseFragment */ js.Any
+    x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof Parser.parseFragment */ Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseFragment")(x.asInstanceOf[js.Any])
   
+  inline def visit(node: js.Array[Node], observer: Observer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("visit")(node.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def visit(node: Node, observer: Observer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("visit")(node.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

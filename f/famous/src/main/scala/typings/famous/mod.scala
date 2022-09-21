@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("famous/components", "Align")
   @js.native
-  class Align protected () extends StObject {
+  open class Align protected () extends StObject {
     def this(node: Node) = this()
     
     def getX(): Double = js.native
@@ -28,33 +28,33 @@ object mod {
     def set(x: Double): Align = js.native
     def set(x: Double, y: Double): Align = js.native
     def set(x: Double, y: Double, z: Double): Align = js.native
-    def set(x: Double, y: Double, z: Double, transition: js.Any): Align = js.native
-    def set(x: Double, y: Double, z: Double, transition: js.Any, callback: js.Function): Align = js.native
+    def set(x: Double, y: Double, z: Double, transition: Any): Align = js.native
+    def set(x: Double, y: Double, z: Double, transition: Any, callback: js.Function): Align = js.native
     def set(x: Double, y: Double, z: Double, transition: Unit, callback: js.Function): Align = js.native
-    def set(x: Double, y: Double, z: Unit, transition: js.Any): Align = js.native
-    def set(x: Double, y: Double, z: Unit, transition: js.Any, callback: js.Function): Align = js.native
+    def set(x: Double, y: Double, z: Unit, transition: Any): Align = js.native
+    def set(x: Double, y: Double, z: Unit, transition: Any, callback: js.Function): Align = js.native
     def set(x: Double, y: Double, z: Unit, transition: Unit, callback: js.Function): Align = js.native
     def set(x: Double, y: Unit, z: Double): Align = js.native
-    def set(x: Double, y: Unit, z: Double, transition: js.Any): Align = js.native
-    def set(x: Double, y: Unit, z: Double, transition: js.Any, callback: js.Function): Align = js.native
+    def set(x: Double, y: Unit, z: Double, transition: Any): Align = js.native
+    def set(x: Double, y: Unit, z: Double, transition: Any, callback: js.Function): Align = js.native
     def set(x: Double, y: Unit, z: Double, transition: Unit, callback: js.Function): Align = js.native
-    def set(x: Double, y: Unit, z: Unit, transition: js.Any): Align = js.native
-    def set(x: Double, y: Unit, z: Unit, transition: js.Any, callback: js.Function): Align = js.native
+    def set(x: Double, y: Unit, z: Unit, transition: Any): Align = js.native
+    def set(x: Double, y: Unit, z: Unit, transition: Any, callback: js.Function): Align = js.native
     def set(x: Double, y: Unit, z: Unit, transition: Unit, callback: js.Function): Align = js.native
     
     def setX(`val`: Double): Align = js.native
-    def setX(`val`: Double, transition: js.Any): Align = js.native
-    def setX(`val`: Double, transition: js.Any, callback: js.Function): Align = js.native
+    def setX(`val`: Double, transition: Any): Align = js.native
+    def setX(`val`: Double, transition: Any, callback: js.Function): Align = js.native
     def setX(`val`: Double, transition: Unit, callback: js.Function): Align = js.native
     
     def setY(`val`: Double): Align = js.native
-    def setY(`val`: Double, transition: js.Any): Align = js.native
-    def setY(`val`: Double, transition: js.Any, callback: js.Function): Align = js.native
+    def setY(`val`: Double, transition: Any): Align = js.native
+    def setY(`val`: Double, transition: Any, callback: js.Function): Align = js.native
     def setY(`val`: Double, transition: Unit, callback: js.Function): Align = js.native
     
     def setZ(`val`: Double): Align = js.native
-    def setZ(`val`: Double, transition: js.Any): Align = js.native
-    def setZ(`val`: Double, transition: js.Any, callback: js.Function): Align = js.native
+    def setZ(`val`: Double, transition: Any): Align = js.native
+    def setZ(`val`: Double, transition: Any, callback: js.Function): Align = js.native
     def setZ(`val`: Double, transition: Unit, callback: js.Function): Align = js.native
     
     def update(): Unit = js.native
@@ -62,7 +62,7 @@ object mod {
   
   @JSImport("famous/components", "GestureHandler")
   @js.native
-  class GestureHandler protected () extends StObject {
+  open class GestureHandler protected () extends StObject {
     def this(node: Node) = this()
     def this(node: Node, events: js.Array[IGestureEvent]) = this()
     
@@ -79,7 +79,7 @@ object mod {
   
   @JSImport("famous/components", "MountPoint")
   @js.native
-  class MountPoint protected () extends StObject {
+  open class MountPoint protected () extends StObject {
     def this(node: Node) = this()
     
     def getX(): Double = js.native
@@ -97,33 +97,33 @@ object mod {
     def set(x: Double): MountPoint = js.native
     def set(x: Double, y: Double): MountPoint = js.native
     def set(x: Double, y: Double, z: Double): MountPoint = js.native
-    def set(x: Double, y: Double, z: Double, transition: js.Any): MountPoint = js.native
-    def set(x: Double, y: Double, z: Double, transition: js.Any, callback: js.Function): MountPoint = js.native
+    def set(x: Double, y: Double, z: Double, transition: Any): MountPoint = js.native
+    def set(x: Double, y: Double, z: Double, transition: Any, callback: js.Function): MountPoint = js.native
     def set(x: Double, y: Double, z: Double, transition: Unit, callback: js.Function): MountPoint = js.native
-    def set(x: Double, y: Double, z: Unit, transition: js.Any): MountPoint = js.native
-    def set(x: Double, y: Double, z: Unit, transition: js.Any, callback: js.Function): MountPoint = js.native
+    def set(x: Double, y: Double, z: Unit, transition: Any): MountPoint = js.native
+    def set(x: Double, y: Double, z: Unit, transition: Any, callback: js.Function): MountPoint = js.native
     def set(x: Double, y: Double, z: Unit, transition: Unit, callback: js.Function): MountPoint = js.native
     def set(x: Double, y: Unit, z: Double): MountPoint = js.native
-    def set(x: Double, y: Unit, z: Double, transition: js.Any): MountPoint = js.native
-    def set(x: Double, y: Unit, z: Double, transition: js.Any, callback: js.Function): MountPoint = js.native
+    def set(x: Double, y: Unit, z: Double, transition: Any): MountPoint = js.native
+    def set(x: Double, y: Unit, z: Double, transition: Any, callback: js.Function): MountPoint = js.native
     def set(x: Double, y: Unit, z: Double, transition: Unit, callback: js.Function): MountPoint = js.native
-    def set(x: Double, y: Unit, z: Unit, transition: js.Any): MountPoint = js.native
-    def set(x: Double, y: Unit, z: Unit, transition: js.Any, callback: js.Function): MountPoint = js.native
+    def set(x: Double, y: Unit, z: Unit, transition: Any): MountPoint = js.native
+    def set(x: Double, y: Unit, z: Unit, transition: Any, callback: js.Function): MountPoint = js.native
     def set(x: Double, y: Unit, z: Unit, transition: Unit, callback: js.Function): MountPoint = js.native
     
     def setX(`val`: Double): MountPoint = js.native
-    def setX(`val`: Double, transition: js.Any): MountPoint = js.native
-    def setX(`val`: Double, transition: js.Any, callback: js.Function): MountPoint = js.native
+    def setX(`val`: Double, transition: Any): MountPoint = js.native
+    def setX(`val`: Double, transition: Any, callback: js.Function): MountPoint = js.native
     def setX(`val`: Double, transition: Unit, callback: js.Function): MountPoint = js.native
     
     def setY(`val`: Double): MountPoint = js.native
-    def setY(`val`: Double, transition: js.Any): MountPoint = js.native
-    def setY(`val`: Double, transition: js.Any, callback: js.Function): MountPoint = js.native
+    def setY(`val`: Double, transition: Any): MountPoint = js.native
+    def setY(`val`: Double, transition: Any, callback: js.Function): MountPoint = js.native
     def setY(`val`: Double, transition: Unit, callback: js.Function): MountPoint = js.native
     
     def setZ(`val`: Double): MountPoint = js.native
-    def setZ(`val`: Double, transition: js.Any): MountPoint = js.native
-    def setZ(`val`: Double, transition: js.Any, callback: js.Function): MountPoint = js.native
+    def setZ(`val`: Double, transition: Any): MountPoint = js.native
+    def setZ(`val`: Double, transition: Any, callback: js.Function): MountPoint = js.native
     def setZ(`val`: Double, transition: Unit, callback: js.Function): MountPoint = js.native
     
     def update(): Unit = js.native
@@ -131,7 +131,7 @@ object mod {
   
   @JSImport("famous/components", "Opacity")
   @js.native
-  class Opacity protected () extends StObject {
+  open class Opacity protected () extends StObject {
     def this(node: Node) = this()
     
     def get(): Double = js.native
@@ -143,8 +143,8 @@ object mod {
     def onUpdate(): Unit = js.native
     
     def set(value: Double): Opacity = js.native
-    def set(value: Double, transition: js.Any): Opacity = js.native
-    def set(value: Double, transition: js.Any, callback: js.Function): Opacity = js.native
+    def set(value: Double, transition: Any): Opacity = js.native
+    def set(value: Double, transition: Any, callback: js.Function): Opacity = js.native
     def set(value: Double, transition: Unit, callback: js.Function): Opacity = js.native
     
     def update(): Unit = js.native
@@ -152,7 +152,7 @@ object mod {
   
   @JSImport("famous/components", "Origin")
   @js.native
-  class Origin protected () extends StObject {
+  open class Origin protected () extends StObject {
     def this(node: Node) = this()
     
     def getX(): Double = js.native
@@ -170,33 +170,33 @@ object mod {
     def set(x: Double): Origin = js.native
     def set(x: Double, y: Double): Origin = js.native
     def set(x: Double, y: Double, z: Double): Origin = js.native
-    def set(x: Double, y: Double, z: Double, transition: js.Any): Origin = js.native
-    def set(x: Double, y: Double, z: Double, transition: js.Any, callback: js.Function): Origin = js.native
+    def set(x: Double, y: Double, z: Double, transition: Any): Origin = js.native
+    def set(x: Double, y: Double, z: Double, transition: Any, callback: js.Function): Origin = js.native
     def set(x: Double, y: Double, z: Double, transition: Unit, callback: js.Function): Origin = js.native
-    def set(x: Double, y: Double, z: Unit, transition: js.Any): Origin = js.native
-    def set(x: Double, y: Double, z: Unit, transition: js.Any, callback: js.Function): Origin = js.native
+    def set(x: Double, y: Double, z: Unit, transition: Any): Origin = js.native
+    def set(x: Double, y: Double, z: Unit, transition: Any, callback: js.Function): Origin = js.native
     def set(x: Double, y: Double, z: Unit, transition: Unit, callback: js.Function): Origin = js.native
     def set(x: Double, y: Unit, z: Double): Origin = js.native
-    def set(x: Double, y: Unit, z: Double, transition: js.Any): Origin = js.native
-    def set(x: Double, y: Unit, z: Double, transition: js.Any, callback: js.Function): Origin = js.native
+    def set(x: Double, y: Unit, z: Double, transition: Any): Origin = js.native
+    def set(x: Double, y: Unit, z: Double, transition: Any, callback: js.Function): Origin = js.native
     def set(x: Double, y: Unit, z: Double, transition: Unit, callback: js.Function): Origin = js.native
-    def set(x: Double, y: Unit, z: Unit, transition: js.Any): Origin = js.native
-    def set(x: Double, y: Unit, z: Unit, transition: js.Any, callback: js.Function): Origin = js.native
+    def set(x: Double, y: Unit, z: Unit, transition: Any): Origin = js.native
+    def set(x: Double, y: Unit, z: Unit, transition: Any, callback: js.Function): Origin = js.native
     def set(x: Double, y: Unit, z: Unit, transition: Unit, callback: js.Function): Origin = js.native
     
     def setX(`val`: Double): Origin = js.native
-    def setX(`val`: Double, transition: js.Any): Origin = js.native
-    def setX(`val`: Double, transition: js.Any, callback: js.Function): Origin = js.native
+    def setX(`val`: Double, transition: Any): Origin = js.native
+    def setX(`val`: Double, transition: Any, callback: js.Function): Origin = js.native
     def setX(`val`: Double, transition: Unit, callback: js.Function): Origin = js.native
     
     def setY(`val`: Double): Origin = js.native
-    def setY(`val`: Double, transition: js.Any): Origin = js.native
-    def setY(`val`: Double, transition: js.Any, callback: js.Function): Origin = js.native
+    def setY(`val`: Double, transition: Any): Origin = js.native
+    def setY(`val`: Double, transition: Any, callback: js.Function): Origin = js.native
     def setY(`val`: Double, transition: Unit, callback: js.Function): Origin = js.native
     
     def setZ(`val`: Double): Origin = js.native
-    def setZ(`val`: Double, transition: js.Any): Origin = js.native
-    def setZ(`val`: Double, transition: js.Any, callback: js.Function): Origin = js.native
+    def setZ(`val`: Double, transition: Any): Origin = js.native
+    def setZ(`val`: Double, transition: Any, callback: js.Function): Origin = js.native
     def setZ(`val`: Double, transition: Unit, callback: js.Function): Origin = js.native
     
     def update(): Unit = js.native
@@ -204,7 +204,7 @@ object mod {
   
   @JSImport("famous/components", "Position")
   @js.native
-  class Position protected () extends StObject {
+  open class Position protected () extends StObject {
     def this(node: Node) = this()
     
     def getX(): Double = js.native
@@ -222,33 +222,33 @@ object mod {
     def set(x: Double): Position = js.native
     def set(x: Double, y: Double): Position = js.native
     def set(x: Double, y: Double, z: Double): Position = js.native
-    def set(x: Double, y: Double, z: Double, transition: js.Any): Position = js.native
-    def set(x: Double, y: Double, z: Double, transition: js.Any, callback: js.Function): Position = js.native
+    def set(x: Double, y: Double, z: Double, transition: Any): Position = js.native
+    def set(x: Double, y: Double, z: Double, transition: Any, callback: js.Function): Position = js.native
     def set(x: Double, y: Double, z: Double, transition: Unit, callback: js.Function): Position = js.native
-    def set(x: Double, y: Double, z: Unit, transition: js.Any): Position = js.native
-    def set(x: Double, y: Double, z: Unit, transition: js.Any, callback: js.Function): Position = js.native
+    def set(x: Double, y: Double, z: Unit, transition: Any): Position = js.native
+    def set(x: Double, y: Double, z: Unit, transition: Any, callback: js.Function): Position = js.native
     def set(x: Double, y: Double, z: Unit, transition: Unit, callback: js.Function): Position = js.native
     def set(x: Double, y: Unit, z: Double): Position = js.native
-    def set(x: Double, y: Unit, z: Double, transition: js.Any): Position = js.native
-    def set(x: Double, y: Unit, z: Double, transition: js.Any, callback: js.Function): Position = js.native
+    def set(x: Double, y: Unit, z: Double, transition: Any): Position = js.native
+    def set(x: Double, y: Unit, z: Double, transition: Any, callback: js.Function): Position = js.native
     def set(x: Double, y: Unit, z: Double, transition: Unit, callback: js.Function): Position = js.native
-    def set(x: Double, y: Unit, z: Unit, transition: js.Any): Position = js.native
-    def set(x: Double, y: Unit, z: Unit, transition: js.Any, callback: js.Function): Position = js.native
+    def set(x: Double, y: Unit, z: Unit, transition: Any): Position = js.native
+    def set(x: Double, y: Unit, z: Unit, transition: Any, callback: js.Function): Position = js.native
     def set(x: Double, y: Unit, z: Unit, transition: Unit, callback: js.Function): Position = js.native
     
     def setX(`val`: Double): Position = js.native
-    def setX(`val`: Double, transition: js.Any): Position = js.native
-    def setX(`val`: Double, transition: js.Any, callback: js.Function): Position = js.native
+    def setX(`val`: Double, transition: Any): Position = js.native
+    def setX(`val`: Double, transition: Any, callback: js.Function): Position = js.native
     def setX(`val`: Double, transition: Unit, callback: js.Function): Position = js.native
     
     def setY(`val`: Double): Position = js.native
-    def setY(`val`: Double, transition: js.Any): Position = js.native
-    def setY(`val`: Double, transition: js.Any, callback: js.Function): Position = js.native
+    def setY(`val`: Double, transition: Any): Position = js.native
+    def setY(`val`: Double, transition: Any, callback: js.Function): Position = js.native
     def setY(`val`: Double, transition: Unit, callback: js.Function): Position = js.native
     
     def setZ(`val`: Double): Position = js.native
-    def setZ(`val`: Double, transition: js.Any): Position = js.native
-    def setZ(`val`: Double, transition: js.Any, callback: js.Function): Position = js.native
+    def setZ(`val`: Double, transition: Any): Position = js.native
+    def setZ(`val`: Double, transition: Any, callback: js.Function): Position = js.native
     def setZ(`val`: Double, transition: Unit, callback: js.Function): Position = js.native
     
     def update(): Unit = js.native
@@ -256,7 +256,7 @@ object mod {
   
   @JSImport("famous/components", "Rotation")
   @js.native
-  class Rotation protected () extends StObject {
+  open class Rotation protected () extends StObject {
     def this(node: Node) = this()
     
     def getX(): Double = js.native
@@ -274,33 +274,33 @@ object mod {
     def set(x: Double): Rotation = js.native
     def set(x: Double, y: Double): Rotation = js.native
     def set(x: Double, y: Double, z: Double): Rotation = js.native
-    def set(x: Double, y: Double, z: Double, transition: js.Any): Rotation = js.native
-    def set(x: Double, y: Double, z: Double, transition: js.Any, callback: js.Function): Rotation = js.native
+    def set(x: Double, y: Double, z: Double, transition: Any): Rotation = js.native
+    def set(x: Double, y: Double, z: Double, transition: Any, callback: js.Function): Rotation = js.native
     def set(x: Double, y: Double, z: Double, transition: Unit, callback: js.Function): Rotation = js.native
-    def set(x: Double, y: Double, z: Unit, transition: js.Any): Rotation = js.native
-    def set(x: Double, y: Double, z: Unit, transition: js.Any, callback: js.Function): Rotation = js.native
+    def set(x: Double, y: Double, z: Unit, transition: Any): Rotation = js.native
+    def set(x: Double, y: Double, z: Unit, transition: Any, callback: js.Function): Rotation = js.native
     def set(x: Double, y: Double, z: Unit, transition: Unit, callback: js.Function): Rotation = js.native
     def set(x: Double, y: Unit, z: Double): Rotation = js.native
-    def set(x: Double, y: Unit, z: Double, transition: js.Any): Rotation = js.native
-    def set(x: Double, y: Unit, z: Double, transition: js.Any, callback: js.Function): Rotation = js.native
+    def set(x: Double, y: Unit, z: Double, transition: Any): Rotation = js.native
+    def set(x: Double, y: Unit, z: Double, transition: Any, callback: js.Function): Rotation = js.native
     def set(x: Double, y: Unit, z: Double, transition: Unit, callback: js.Function): Rotation = js.native
-    def set(x: Double, y: Unit, z: Unit, transition: js.Any): Rotation = js.native
-    def set(x: Double, y: Unit, z: Unit, transition: js.Any, callback: js.Function): Rotation = js.native
+    def set(x: Double, y: Unit, z: Unit, transition: Any): Rotation = js.native
+    def set(x: Double, y: Unit, z: Unit, transition: Any, callback: js.Function): Rotation = js.native
     def set(x: Double, y: Unit, z: Unit, transition: Unit, callback: js.Function): Rotation = js.native
     
     def setX(`val`: Double): Rotation = js.native
-    def setX(`val`: Double, transition: js.Any): Rotation = js.native
-    def setX(`val`: Double, transition: js.Any, callback: js.Function): Rotation = js.native
+    def setX(`val`: Double, transition: Any): Rotation = js.native
+    def setX(`val`: Double, transition: Any, callback: js.Function): Rotation = js.native
     def setX(`val`: Double, transition: Unit, callback: js.Function): Rotation = js.native
     
     def setY(`val`: Double): Rotation = js.native
-    def setY(`val`: Double, transition: js.Any): Rotation = js.native
-    def setY(`val`: Double, transition: js.Any, callback: js.Function): Rotation = js.native
+    def setY(`val`: Double, transition: Any): Rotation = js.native
+    def setY(`val`: Double, transition: Any, callback: js.Function): Rotation = js.native
     def setY(`val`: Double, transition: Unit, callback: js.Function): Rotation = js.native
     
     def setZ(`val`: Double): Rotation = js.native
-    def setZ(`val`: Double, transition: js.Any): Rotation = js.native
-    def setZ(`val`: Double, transition: js.Any, callback: js.Function): Rotation = js.native
+    def setZ(`val`: Double, transition: Any): Rotation = js.native
+    def setZ(`val`: Double, transition: Any, callback: js.Function): Rotation = js.native
     def setZ(`val`: Double, transition: Unit, callback: js.Function): Rotation = js.native
     
     def update(): Unit = js.native
@@ -308,7 +308,7 @@ object mod {
   
   @JSImport("famous/components", "Scale")
   @js.native
-  class Scale protected () extends StObject {
+  open class Scale protected () extends StObject {
     def this(node: Node) = this()
     
     def getX(): Double = js.native
@@ -326,33 +326,33 @@ object mod {
     def set(x: Double): Scale = js.native
     def set(x: Double, y: Double): Scale = js.native
     def set(x: Double, y: Double, z: Double): Scale = js.native
-    def set(x: Double, y: Double, z: Double, transition: js.Any): Scale = js.native
-    def set(x: Double, y: Double, z: Double, transition: js.Any, callback: js.Function): Scale = js.native
+    def set(x: Double, y: Double, z: Double, transition: Any): Scale = js.native
+    def set(x: Double, y: Double, z: Double, transition: Any, callback: js.Function): Scale = js.native
     def set(x: Double, y: Double, z: Double, transition: Unit, callback: js.Function): Scale = js.native
-    def set(x: Double, y: Double, z: Unit, transition: js.Any): Scale = js.native
-    def set(x: Double, y: Double, z: Unit, transition: js.Any, callback: js.Function): Scale = js.native
+    def set(x: Double, y: Double, z: Unit, transition: Any): Scale = js.native
+    def set(x: Double, y: Double, z: Unit, transition: Any, callback: js.Function): Scale = js.native
     def set(x: Double, y: Double, z: Unit, transition: Unit, callback: js.Function): Scale = js.native
     def set(x: Double, y: Unit, z: Double): Scale = js.native
-    def set(x: Double, y: Unit, z: Double, transition: js.Any): Scale = js.native
-    def set(x: Double, y: Unit, z: Double, transition: js.Any, callback: js.Function): Scale = js.native
+    def set(x: Double, y: Unit, z: Double, transition: Any): Scale = js.native
+    def set(x: Double, y: Unit, z: Double, transition: Any, callback: js.Function): Scale = js.native
     def set(x: Double, y: Unit, z: Double, transition: Unit, callback: js.Function): Scale = js.native
-    def set(x: Double, y: Unit, z: Unit, transition: js.Any): Scale = js.native
-    def set(x: Double, y: Unit, z: Unit, transition: js.Any, callback: js.Function): Scale = js.native
+    def set(x: Double, y: Unit, z: Unit, transition: Any): Scale = js.native
+    def set(x: Double, y: Unit, z: Unit, transition: Any, callback: js.Function): Scale = js.native
     def set(x: Double, y: Unit, z: Unit, transition: Unit, callback: js.Function): Scale = js.native
     
     def setX(`val`: Double): Scale = js.native
-    def setX(`val`: Double, transition: js.Any): Scale = js.native
-    def setX(`val`: Double, transition: js.Any, callback: js.Function): Scale = js.native
+    def setX(`val`: Double, transition: Any): Scale = js.native
+    def setX(`val`: Double, transition: Any, callback: js.Function): Scale = js.native
     def setX(`val`: Double, transition: Unit, callback: js.Function): Scale = js.native
     
     def setY(`val`: Double): Scale = js.native
-    def setY(`val`: Double, transition: js.Any): Scale = js.native
-    def setY(`val`: Double, transition: js.Any, callback: js.Function): Scale = js.native
+    def setY(`val`: Double, transition: Any): Scale = js.native
+    def setY(`val`: Double, transition: Any, callback: js.Function): Scale = js.native
     def setY(`val`: Double, transition: Unit, callback: js.Function): Scale = js.native
     
     def setZ(`val`: Double): Scale = js.native
-    def setZ(`val`: Double, transition: js.Any): Scale = js.native
-    def setZ(`val`: Double, transition: js.Any, callback: js.Function): Scale = js.native
+    def setZ(`val`: Double, transition: Any): Scale = js.native
+    def setZ(`val`: Double, transition: Any, callback: js.Function): Scale = js.native
     def setZ(`val`: Double, transition: Unit, callback: js.Function): Scale = js.native
     
     def update(): Unit = js.native
@@ -360,46 +360,46 @@ object mod {
   
   @JSImport("famous/components", "Size")
   @js.native
-  class Size protected () extends StObject {
+  open class Size protected () extends StObject {
     def this(node: Node) = this()
     
     def setAbsolute(): Unit = js.native
     def setAbsolute(x: Double): Unit = js.native
     def setAbsolute(x: Double, y: Double): Unit = js.native
     def setAbsolute(x: Double, y: Double, z: Double): Unit = js.native
-    def setAbsolute(x: Double, y: Double, z: Double, options: js.Any): Unit = js.native
-    def setAbsolute(x: Double, y: Double, z: Double, options: js.Any, callback: js.Function): Unit = js.native
+    def setAbsolute(x: Double, y: Double, z: Double, options: Any): Unit = js.native
+    def setAbsolute(x: Double, y: Double, z: Double, options: Any, callback: js.Function): Unit = js.native
     def setAbsolute(x: Double, y: Double, z: Double, options: Unit, callback: js.Function): Unit = js.native
-    def setAbsolute(x: Double, y: Double, z: Unit, options: js.Any): Unit = js.native
-    def setAbsolute(x: Double, y: Double, z: Unit, options: js.Any, callback: js.Function): Unit = js.native
+    def setAbsolute(x: Double, y: Double, z: Unit, options: Any): Unit = js.native
+    def setAbsolute(x: Double, y: Double, z: Unit, options: Any, callback: js.Function): Unit = js.native
     def setAbsolute(x: Double, y: Double, z: Unit, options: Unit, callback: js.Function): Unit = js.native
     def setAbsolute(x: Double, y: Unit, z: Double): Unit = js.native
-    def setAbsolute(x: Double, y: Unit, z: Double, options: js.Any): Unit = js.native
-    def setAbsolute(x: Double, y: Unit, z: Double, options: js.Any, callback: js.Function): Unit = js.native
+    def setAbsolute(x: Double, y: Unit, z: Double, options: Any): Unit = js.native
+    def setAbsolute(x: Double, y: Unit, z: Double, options: Any, callback: js.Function): Unit = js.native
     def setAbsolute(x: Double, y: Unit, z: Double, options: Unit, callback: js.Function): Unit = js.native
-    def setAbsolute(x: Double, y: Unit, z: Unit, options: js.Any): Unit = js.native
-    def setAbsolute(x: Double, y: Unit, z: Unit, options: js.Any, callback: js.Function): Unit = js.native
+    def setAbsolute(x: Double, y: Unit, z: Unit, options: Any): Unit = js.native
+    def setAbsolute(x: Double, y: Unit, z: Unit, options: Any, callback: js.Function): Unit = js.native
     def setAbsolute(x: Double, y: Unit, z: Unit, options: Unit, callback: js.Function): Unit = js.native
     def setAbsolute(x: Unit, y: Double): Unit = js.native
     def setAbsolute(x: Unit, y: Double, z: Double): Unit = js.native
-    def setAbsolute(x: Unit, y: Double, z: Double, options: js.Any): Unit = js.native
-    def setAbsolute(x: Unit, y: Double, z: Double, options: js.Any, callback: js.Function): Unit = js.native
+    def setAbsolute(x: Unit, y: Double, z: Double, options: Any): Unit = js.native
+    def setAbsolute(x: Unit, y: Double, z: Double, options: Any, callback: js.Function): Unit = js.native
     def setAbsolute(x: Unit, y: Double, z: Double, options: Unit, callback: js.Function): Unit = js.native
-    def setAbsolute(x: Unit, y: Double, z: Unit, options: js.Any): Unit = js.native
-    def setAbsolute(x: Unit, y: Double, z: Unit, options: js.Any, callback: js.Function): Unit = js.native
+    def setAbsolute(x: Unit, y: Double, z: Unit, options: Any): Unit = js.native
+    def setAbsolute(x: Unit, y: Double, z: Unit, options: Any, callback: js.Function): Unit = js.native
     def setAbsolute(x: Unit, y: Double, z: Unit, options: Unit, callback: js.Function): Unit = js.native
     def setAbsolute(x: Unit, y: Unit, z: Double): Unit = js.native
-    def setAbsolute(x: Unit, y: Unit, z: Double, options: js.Any): Unit = js.native
-    def setAbsolute(x: Unit, y: Unit, z: Double, options: js.Any, callback: js.Function): Unit = js.native
+    def setAbsolute(x: Unit, y: Unit, z: Double, options: Any): Unit = js.native
+    def setAbsolute(x: Unit, y: Unit, z: Double, options: Any, callback: js.Function): Unit = js.native
     def setAbsolute(x: Unit, y: Unit, z: Double, options: Unit, callback: js.Function): Unit = js.native
-    def setAbsolute(x: Unit, y: Unit, z: Unit, options: js.Any): Unit = js.native
-    def setAbsolute(x: Unit, y: Unit, z: Unit, options: js.Any, callback: js.Function): Unit = js.native
+    def setAbsolute(x: Unit, y: Unit, z: Unit, options: Any): Unit = js.native
+    def setAbsolute(x: Unit, y: Unit, z: Unit, options: Any, callback: js.Function): Unit = js.native
     def setAbsolute(x: Unit, y: Unit, z: Unit, options: Unit, callback: js.Function): Unit = js.native
   }
   
   @JSImport("famous/components", "Transform")
   @js.native
-  class Transform protected () extends StObject {
+  open class Transform protected () extends StObject {
     def this(node: Node) = this()
     
     def clean(): Unit = js.native
@@ -464,7 +464,7 @@ object mod {
       
       inline def setPointers(value: js.Array[IGesturePointer]): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
       
-      inline def setPointersVarargs(value: IGesturePointer*): Self = StObject.set(x, "pointers", js.Array(value :_*))
+      inline def setPointersVarargs(value: IGesturePointer*): Self = StObject.set(x, "pointers", js.Array(value*))
       
       inline def setPoints(value: Double): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       

@@ -10,10 +10,10 @@ arrive.js provides events to watch for DOM elements creation and removal. It mak
 | ------------------ | :-------------: |
 | Full name          | arrive |
 | Keywords           | jquery, javascript, js, watch, dynamic, creation, new, element, insertion, listen |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 399394 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 46461.0 |
+| # stars            | 811.0 |
 
 ## Links
 - [Homepage](https://github.com/uzairfarooq/arrive#readme)

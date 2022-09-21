@@ -38,7 +38,7 @@ object DescribeMountTargetsResponse {
     
     inline def setMountTargetsUndefined: Self = StObject.set(x, "MountTargets", js.undefined)
     
-    inline def setMountTargetsVarargs(value: MountTargetDescription*): Self = StObject.set(x, "MountTargets", js.Array(value :_*))
+    inline def setMountTargetsVarargs(value: MountTargetDescription*): Self = StObject.set(x, "MountTargets", js.Array(value*))
     
     inline def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

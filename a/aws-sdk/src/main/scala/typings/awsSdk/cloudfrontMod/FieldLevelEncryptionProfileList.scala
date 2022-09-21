@@ -39,7 +39,7 @@ object FieldLevelEncryptionProfileList {
     
     inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    inline def setItemsVarargs(value: FieldLevelEncryptionProfileSummary*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: FieldLevelEncryptionProfileSummary*): Self = StObject.set(x, "Items", js.Array(value*))
     
     inline def setMaxItems(value: integer): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     

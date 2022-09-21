@@ -1,9 +1,5 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +9,7 @@ trait ParamsResourceCreativesList
      with StandardParameters {
   
   /**
-    * Select only active creatives. Leave blank to select active and inactive
-    * creatives.
+    * Select only active creatives. Leave blank to select active and inactive creatives.
     */
   var active: js.UndefOr[Boolean] = js.undefined
   
@@ -24,15 +19,9 @@ trait ParamsResourceCreativesList
   var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
-    * Select only archived creatives. Leave blank to select archived and
-    * unarchived creatives.
+    * Select only archived creatives. Leave blank to select archived and unarchived creatives.
     */
   var archived: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only creatives with this campaign ID.
@@ -75,13 +64,7 @@ trait ParamsResourceCreativesList
   var renderingIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Allows searching for objects by name or ID. Wildcards (*) are allowed.
-    * For example, "creative*2015" will return objects with names like
-    * "creative June 2015", "creative April 2015", or simply "creative 2015".
-    * Most of the searches also add wildcards implicitly at the start and the
-    * end of the search string. For example, a search string of "creative" will
-    * match objects with name "my creative", "creative 2015", or simply
-    * "creative".
+    * Allows searching for objects by name or ID. Wildcards (*) are allowed. For example, "creative*2015" will return objects with names like "creative June 2015", "creative April 2015", or simply "creative 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "creative" will match objects with name "my creative", "creative 2015", or simply "creative".
     */
   var searchString: js.UndefOr[String] = js.undefined
   
@@ -131,10 +114,6 @@ object ParamsResourceCreativesList {
     
     inline def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
     inline def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
@@ -143,19 +122,19 @@ object ParamsResourceCreativesList {
     
     inline def setCompanionCreativeIdsUndefined: Self = StObject.set(x, "companionCreativeIds", js.undefined)
     
-    inline def setCompanionCreativeIdsVarargs(value: String*): Self = StObject.set(x, "companionCreativeIds", js.Array(value :_*))
+    inline def setCompanionCreativeIdsVarargs(value: String*): Self = StObject.set(x, "companionCreativeIds", js.Array(value*))
     
     inline def setCreativeFieldIds(value: js.Array[String]): Self = StObject.set(x, "creativeFieldIds", value.asInstanceOf[js.Any])
     
     inline def setCreativeFieldIdsUndefined: Self = StObject.set(x, "creativeFieldIds", js.undefined)
     
-    inline def setCreativeFieldIdsVarargs(value: String*): Self = StObject.set(x, "creativeFieldIds", js.Array(value :_*))
+    inline def setCreativeFieldIdsVarargs(value: String*): Self = StObject.set(x, "creativeFieldIds", js.Array(value*))
     
     inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -173,7 +152,7 @@ object ParamsResourceCreativesList {
     
     inline def setRenderingIdsUndefined: Self = StObject.set(x, "renderingIds", js.undefined)
     
-    inline def setRenderingIdsVarargs(value: String*): Self = StObject.set(x, "renderingIds", js.Array(value :_*))
+    inline def setRenderingIdsVarargs(value: String*): Self = StObject.set(x, "renderingIds", js.Array(value*))
     
     inline def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
     
@@ -183,7 +162,7 @@ object ParamsResourceCreativesList {
     
     inline def setSizeIdsUndefined: Self = StObject.set(x, "sizeIds", js.undefined)
     
-    inline def setSizeIdsVarargs(value: String*): Self = StObject.set(x, "sizeIds", js.Array(value :_*))
+    inline def setSizeIdsVarargs(value: String*): Self = StObject.set(x, "sizeIds", js.Array(value*))
     
     inline def setSortField(value: String): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
     
@@ -201,6 +180,6 @@ object ParamsResourceCreativesList {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

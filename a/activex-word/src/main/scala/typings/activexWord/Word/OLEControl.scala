@@ -10,7 +10,7 @@ trait OLEControl extends StObject {
   
   var AltHTML: String
   
-  val Automation: js.Any
+  val Automation: Any
   
   def Copy(): Unit
   
@@ -38,7 +38,7 @@ object OLEControl {
   inline def apply(
     Activate: () => Unit,
     AltHTML: String,
-    Automation: js.Any,
+    Automation: Any,
     Copy: () => Unit,
     Cut: () => Unit,
     Delete: () => Unit,
@@ -61,7 +61,7 @@ object OLEControl {
     
     inline def setAltHTML(value: String): Self = StObject.set(x, "AltHTML", value.asInstanceOf[js.Any])
     
-    inline def setAutomation(value: js.Any): Self = StObject.set(x, "Automation", value.asInstanceOf[js.Any])
+    inline def setAutomation(value: Any): Self = StObject.set(x, "Automation", value.asInstanceOf[js.Any])
     
     inline def setCopy(value: () => Unit): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     

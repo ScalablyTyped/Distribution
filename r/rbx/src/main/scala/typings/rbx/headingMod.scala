@@ -54,7 +54,7 @@ object headingMod {
   
   @JSImport("rbx/elements/other/heading", "Heading")
   @js.native
-  val Heading: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Heading: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait HeadingProps extends StObject {

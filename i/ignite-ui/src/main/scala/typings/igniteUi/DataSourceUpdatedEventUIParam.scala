@@ -9,7 +9,7 @@ trait DataSourceUpdatedEventUIParam extends StObject {
   /**
     * Gets a reference to the data source.
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * See if an error has occured during update.
@@ -19,12 +19,12 @@ trait DataSourceUpdatedEventUIParam extends StObject {
   /**
     * Gets a reference to the data selector.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the result of the update operation.
     */
-  var result: js.UndefOr[js.Any] = js.undefined
+  var result: js.UndefOr[Any] = js.undefined
 }
 object DataSourceUpdatedEventUIParam {
   
@@ -35,7 +35,7 @@ object DataSourceUpdatedEventUIParam {
   
   extension [Self <: DataSourceUpdatedEventUIParam](x: Self) {
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -43,11 +43,11 @@ object DataSourceUpdatedEventUIParam {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }

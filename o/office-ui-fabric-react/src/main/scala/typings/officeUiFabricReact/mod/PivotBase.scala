@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "PivotBase")
 @js.native
-class PivotBase protected ()
+open class PivotBase protected ()
   extends typings.officeUiFabricReact.libPivotMod.PivotBase {
   def this(props: IPivotProps) = this()
 }

@@ -10,7 +10,7 @@ trait IgTileManagerSplitterOptionsEvents
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Event fired after collapsing is performed. Not cancellable.
@@ -19,7 +19,7 @@ trait IgTileManagerSplitterOptionsEvents
     *                     Use ui.owner to get a reference to the splitter instance.
     *                     Use ui.index to get an index of collased panel.
     */
-  var collapsed: js.UndefOr[js.Any] = js.undefined
+  var collapsed: js.UndefOr[Any] = js.undefined
   
   /**
     * Event fired after expanding is performed. Not cancellable.
@@ -28,7 +28,7 @@ trait IgTileManagerSplitterOptionsEvents
     *                     Use ui.owner to get a reference to the splitter instance.
     *                     Use ui.index to get an index of expanded panel.
     */
-  var expanded: js.UndefOr[js.Any] = js.undefined
+  var expanded: js.UndefOr[Any] = js.undefined
 }
 object IgTileManagerSplitterOptionsEvents {
   
@@ -39,11 +39,11 @@ object IgTileManagerSplitterOptionsEvents {
   
   extension [Self <: IgTileManagerSplitterOptionsEvents](x: Self) {
     
-    inline def setCollapsed(value: js.Any): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    inline def setCollapsed(value: Any): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
-    inline def setExpanded(value: js.Any): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: Any): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
   }

@@ -4,7 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ElementType
 import typings.react.mod.HTMLAttributes
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.reactstrapStrings.fluid
+import typings.reactstrap.reactstrapStrings.lg
+import typings.reactstrap.reactstrapStrings.md
+import typings.reactstrap.reactstrapStrings.sm
+import typings.reactstrap.reactstrapStrings.xl
+import typings.reactstrap.reactstrapStrings.xxl
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,17 +18,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object navbarMod {
   
-  @JSImport("reactstrap/lib/Navbar", JSImport.Default)
+  @JSImport("reactstrap/types/lib/Navbar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[NavbarProps, js.Object, js.Any]
+  open class default ()
+    extends Component[NavbarProps, js.Object, Any]
   
-  type Navbar = Component[NavbarProps, js.Object, js.Any]
+  type Navbar = Component[NavbarProps, js.Object, Any]
   
   trait NavbarProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
+    
+    var container: js.UndefOr[Boolean | fluid | sm | md | lg | xl | xxl] = js.undefined
     
     var cssModule: js.UndefOr[CSSModule] = js.undefined
     
@@ -38,7 +46,7 @@ object navbarMod {
     
     var sticky: js.UndefOr[String] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
   }
   object NavbarProps {
     
@@ -48,6 +56,10 @@ object navbarMod {
     }
     
     extension [Self <: NavbarProps](x: Self) {
+      
+      inline def setContainer(value: Boolean | fluid | sm | md | lg | xl | xxl): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
@@ -77,7 +89,7 @@ object navbarMod {
       
       inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }

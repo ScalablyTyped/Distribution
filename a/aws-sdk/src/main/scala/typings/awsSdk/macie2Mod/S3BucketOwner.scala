@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3BucketOwner extends StObject {
   
   /**
-    * The display name of the user who owns the bucket.
+    * The display name of the account that owns the bucket.
     */
   var displayName: js.UndefOr[string] = js.undefined
   
   /**
-    * The AWS account ID for the user who owns the bucket.
+    * The canonical user ID for the account that owns the bucket.
     */
   var id: js.UndefOr[string] = js.undefined
 }

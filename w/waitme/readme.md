@@ -10,10 +10,10 @@ waitMe ======
 | ------------------ | :-------------: |
 | Full name          | waitme |
 | Keywords           | waitMe, spinner |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 3148 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 350.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/vadimsva/waitMe)

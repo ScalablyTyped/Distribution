@@ -63,7 +63,7 @@ object Structure {
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    inline def setRequiredVarargs(value: java.lang.String*): Self = StObject.set(x, "required", js.Array(value :_*))
+    inline def setRequiredVarargs(value: java.lang.String*): Self = StObject.set(x, "required", js.Array(value*))
     
     inline def setTopLevel(value: input | output): Self = StObject.set(x, "topLevel", value.asInstanceOf[js.Any])
     

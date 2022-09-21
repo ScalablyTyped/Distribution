@@ -9,7 +9,7 @@ object ignoreMod {
   
   @JSImport("nodegit/ignore", "Ignore")
   @js.native
-  class Ignore () extends StObject
+  open class Ignore () extends StObject
   /* static members */
   object Ignore {
     

@@ -1,7 +1,6 @@
 package typings.exceljs.mod
 
 import typings.exceljs.anon.Error
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait CellSharedFormulaValue
   
   val formula: js.UndefOr[String] = js.undefined
   
-  var result: js.UndefOr[Double | String | Date | Error] = js.undefined
+  var result: js.UndefOr[Double | String | js.Date | Error] = js.undefined
   
   var sharedFormula: String
 }
@@ -33,7 +32,7 @@ object CellSharedFormulaValue {
     
     inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
-    inline def setResult(value: Double | String | Date | Error): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Double | String | js.Date | Error): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     

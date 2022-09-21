@@ -77,13 +77,13 @@ object ContainerVersion {
     
     inline def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
     
-    inline def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
+    inline def setBuiltInVariableVarargs(value: BuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value*))
     
     inline def setClient(value: js.Array[Client]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
-    inline def setClientVarargs(value: Client*): Self = StObject.set(x, "client", js.Array(value :_*))
+    inline def setClientVarargs(value: Client*): Self = StObject.set(x, "client", js.Array(value*))
     
     inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
@@ -101,7 +101,7 @@ object ContainerVersion {
     
     inline def setCustomTemplateUndefined: Self = StObject.set(x, "customTemplate", js.undefined)
     
-    inline def setCustomTemplateVarargs(value: CustomTemplate*): Self = StObject.set(x, "customTemplate", js.Array(value :_*))
+    inline def setCustomTemplateVarargs(value: CustomTemplate*): Self = StObject.set(x, "customTemplate", js.Array(value*))
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
@@ -119,7 +119,7 @@ object ContainerVersion {
     
     inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
-    inline def setFolderVarargs(value: Folder*): Self = StObject.set(x, "folder", js.Array(value :_*))
+    inline def setFolderVarargs(value: Folder*): Self = StObject.set(x, "folder", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -137,24 +137,24 @@ object ContainerVersion {
     
     inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    inline def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
+    inline def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value*))
     
     inline def setTrigger(value: js.Array[Trigger]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
-    inline def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+    inline def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value*))
     
     inline def setVariable(value: js.Array[Variable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
     inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     
-    inline def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value :_*))
+    inline def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value*))
     
     inline def setZone(value: js.Array[Zone]): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
     inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
     
-    inline def setZoneVarargs(value: Zone*): Self = StObject.set(x, "zone", js.Array(value :_*))
+    inline def setZoneVarargs(value: Zone*): Self = StObject.set(x, "zone", js.Array(value*))
   }
 }

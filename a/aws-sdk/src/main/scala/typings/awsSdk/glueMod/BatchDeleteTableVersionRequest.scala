@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchDeleteTableVersionRequest extends StObject {
   
   /**
-    * The ID of the Data Catalog where the tables reside. If none is provided, the AWS account ID is used by default.
+    * The ID of the Data Catalog where the tables reside. If none is provided, the Amazon Web Services account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
@@ -45,6 +45,6 @@ object BatchDeleteTableVersionRequest {
     
     inline def setVersionIds(value: BatchDeleteTableVersionList): Self = StObject.set(x, "VersionIds", value.asInstanceOf[js.Any])
     
-    inline def setVersionIdsVarargs(value: VersionString*): Self = StObject.set(x, "VersionIds", js.Array(value :_*))
+    inline def setVersionIdsVarargs(value: VersionString*): Self = StObject.set(x, "VersionIds", js.Array(value*))
   }
 }

@@ -30,14 +30,14 @@ object Altitude {
     
     inline def setAltitude(value: js.Array[AltitudeKeys]): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    inline def setAltitudeVarargs(value: AltitudeKeys*): Self = StObject.set(x, "altitude", js.Array(value :_*))
+    inline def setAltitudeVarargs(value: AltitudeKeys*): Self = StObject.set(x, "altitude", js.Array(value*))
     
     inline def setLatitude(value: js.Array[LatitudeKeys]): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    inline def setLatitudeVarargs(value: LatitudeKeys*): Self = StObject.set(x, "latitude", js.Array(value :_*))
+    inline def setLatitudeVarargs(value: LatitudeKeys*): Self = StObject.set(x, "latitude", js.Array(value*))
     
     inline def setLongitude(value: js.Array[LongitudeKeys]): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    inline def setLongitudeVarargs(value: LongitudeKeys*): Self = StObject.set(x, "longitude", js.Array(value :_*))
+    inline def setLongitudeVarargs(value: LongitudeKeys*): Self = StObject.set(x, "longitude", js.Array(value*))
   }
 }

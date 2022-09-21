@@ -17,12 +17,12 @@ trait ListFunctionsRequest extends StObject {
   var Marker: js.UndefOr[String] = js.undefined
   
   /**
-    * For Lambda@Edge functions, the AWS Region of the master function. For example, us-east-1 filters the list of functions to only include Lambda@Edge functions replicated from a master function in US East (N. Virginia). If specified, you must set FunctionVersion to ALL.
+    * For Lambda@Edge functions, the Amazon Web Services Region of the master function. For example, us-east-1 filters the list of functions to only include Lambda@Edge functions replicated from a master function in US East (N. Virginia). If specified, you must set FunctionVersion to ALL.
     */
   var MasterRegion: js.UndefOr[typings.awsSdk.lambdaMod.MasterRegion] = js.undefined
   
   /**
-    * The maximum number of functions to return.
+    * The maximum number of functions to return in the response. Note that ListFunctions returns a maximum of 50 items in each response, even if you set the number higher.
     */
   var MaxItems: js.UndefOr[MaxListItems] = js.undefined
 }

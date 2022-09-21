@@ -29,12 +29,12 @@ trait Certificate extends StObject {
   /**
     * The starting date-time from which the certificate is valid. Example: 2019-07-31T17:57:09Z 
     */
-  var ValidFrom: js.UndefOr[TStamp] = js.undefined
+  var ValidFrom: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date-time after which the certificate is no longer valid. Example: 2024-07-31T17:57:09Z 
     */
-  var ValidTill: js.UndefOr[TStamp] = js.undefined
+  var ValidTill: js.UndefOr[js.Date] = js.undefined
 }
 object Certificate {
   
@@ -61,11 +61,11 @@ object Certificate {
     
     inline def setThumbprintUndefined: Self = StObject.set(x, "Thumbprint", js.undefined)
     
-    inline def setValidFrom(value: TStamp): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
+    inline def setValidFrom(value: js.Date): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
     
     inline def setValidFromUndefined: Self = StObject.set(x, "ValidFrom", js.undefined)
     
-    inline def setValidTill(value: TStamp): Self = StObject.set(x, "ValidTill", value.asInstanceOf[js.Any])
+    inline def setValidTill(value: js.Date): Self = StObject.set(x, "ValidTill", value.asInstanceOf[js.Any])
     
     inline def setValidTillUndefined: Self = StObject.set(x, "ValidTill", js.undefined)
   }

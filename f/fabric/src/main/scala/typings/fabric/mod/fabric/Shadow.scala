@@ -1,14 +1,13 @@
 package typings.fabric.mod.fabric
 
 import typings.fabric.fabricImplMod.IShadowOptions
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.Shadow")
 @js.native
-class Shadow ()
+open class Shadow ()
   extends typings.fabric.fabricImplMod.Shadow {
   def this(options: String) = this()
   def this(options: IShadowOptions) = this()
@@ -28,6 +27,6 @@ object Shadow {
     */
   @JSImport("fabric", "fabric.Shadow.reOffsetsAndBlur")
   @js.native
-  def reOffsetsAndBlur: RegExp = js.native
-  inline def reOffsetsAndBlur_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reOffsetsAndBlur")(x.asInstanceOf[js.Any])
+  def reOffsetsAndBlur: js.RegExp = js.native
+  inline def reOffsetsAndBlur_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reOffsetsAndBlur")(x.asInstanceOf[js.Any])
 }

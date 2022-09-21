@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Message captures metadata about the serving status of a deal.
-  */
 trait SchemaDealServingMetadata extends StObject {
   
   /**
-    * Tracks which parties (if any) have paused a deal. @OutputOnly
+    * Output only. Tracks which parties (if any) have paused a deal.
     */
   var dealPauseStatus: js.UndefOr[SchemaDealPauseStatus] = js.undefined
 }

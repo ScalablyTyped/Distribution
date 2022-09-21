@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("@pollyjs/persister-fs", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.pollyjsPersister.mod.default
   
   type FSPersister = typings.pollyjsPersister.mod.default

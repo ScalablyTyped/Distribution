@@ -262,7 +262,7 @@ object Net {
       * Registers a handler for the completed request event of the Web request.
       * @see {@link http://msdn.microsoft.com/en-us/library/bb310841(v=vs.100).aspx}
       */
-    def add_completed(handler: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit]): Unit
+    def add_completed(handler: js.Function2[/* reference */ Any, /* eventArgs */ EventArgs, Unit]): Unit
     
     /**
       * Raises the completed event for the associated Sys.Net.WebRequest instance.
@@ -291,7 +291,7 @@ object Net {
     //#region Members
     def get_url(): String
     
-    def get_userContext(): js.Any
+    def get_userContext(): Any
     
     /**
       * Executes a Web request.
@@ -302,7 +302,7 @@ object Net {
       * Removes the event handler added by the add_completed method.
       * @see {@link http://msdn.microsoft.com/en-us/library/bb397454(v=vs.100).aspx}
       */
-    def remove_completed(handler: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit]): Unit
+    def remove_completed(handler: js.Function2[/* reference */ Any, /* eventArgs */ EventArgs, Unit]): Unit
     
     def set_body(value: String): Unit
     
@@ -314,12 +314,12 @@ object Net {
     
     def set_url(value: String): Unit
     
-    def set_userContext(value: js.Any): Unit
+    def set_userContext(value: Any): Unit
   }
   object WebRequest {
     
     inline def apply(
-      add_completed: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit] => Unit,
+      add_completed: js.Function2[/* reference */ Any, /* eventArgs */ EventArgs, Unit] => Unit,
       completed: EventArgs => Unit,
       getResolvedUrl: () => String,
       get_body: () => String,
@@ -328,15 +328,15 @@ object Net {
       get_httpVerb: () => String,
       get_timeout: () => Double,
       get_url: () => String,
-      get_userContext: () => js.Any,
+      get_userContext: () => Any,
       invoke: () => Unit,
-      remove_completed: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit] => Unit,
+      remove_completed: js.Function2[/* reference */ Any, /* eventArgs */ EventArgs, Unit] => Unit,
       set_body: String => Unit,
       set_executor: WebRequestExecutor => Unit,
       set_httpVerb: String => Unit,
       set_timeout: Double => Unit,
       set_url: String => Unit,
-      set_userContext: js.Any => Unit
+      set_userContext: Any => Unit
     ): WebRequest = {
       val __obj = js.Dynamic.literal(add_completed = js.Any.fromFunction1(add_completed), completed = js.Any.fromFunction1(completed), getResolvedUrl = js.Any.fromFunction0(getResolvedUrl), get_body = js.Any.fromFunction0(get_body), get_executor = js.Any.fromFunction0(get_executor), get_headers = js.Any.fromFunction0(get_headers), get_httpVerb = js.Any.fromFunction0(get_httpVerb), get_timeout = js.Any.fromFunction0(get_timeout), get_url = js.Any.fromFunction0(get_url), get_userContext = js.Any.fromFunction0(get_userContext), invoke = js.Any.fromFunction0(invoke), remove_completed = js.Any.fromFunction1(remove_completed), set_body = js.Any.fromFunction1(set_body), set_executor = js.Any.fromFunction1(set_executor), set_httpVerb = js.Any.fromFunction1(set_httpVerb), set_timeout = js.Any.fromFunction1(set_timeout), set_url = js.Any.fromFunction1(set_url), set_userContext = js.Any.fromFunction1(set_userContext))
       __obj.asInstanceOf[WebRequest]
@@ -344,7 +344,7 @@ object Net {
     
     extension [Self <: WebRequest](x: Self) {
       
-      inline def setAdd_completed(value: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit] => Unit): Self = StObject.set(x, "add_completed", js.Any.fromFunction1(value))
+      inline def setAdd_completed(value: js.Function2[/* reference */ Any, /* eventArgs */ EventArgs, Unit] => Unit): Self = StObject.set(x, "add_completed", js.Any.fromFunction1(value))
       
       inline def setCompleted(value: EventArgs => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction1(value))
       
@@ -362,11 +362,11 @@ object Net {
       
       inline def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
       
-      inline def setGet_userContext(value: () => js.Any): Self = StObject.set(x, "get_userContext", js.Any.fromFunction0(value))
+      inline def setGet_userContext(value: () => Any): Self = StObject.set(x, "get_userContext", js.Any.fromFunction0(value))
       
       inline def setInvoke(value: () => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction0(value))
       
-      inline def setRemove_completed(value: js.Function2[/* reference */ js.Any, /* eventArgs */ EventArgs, Unit] => Unit): Self = StObject.set(x, "remove_completed", js.Any.fromFunction1(value))
+      inline def setRemove_completed(value: js.Function2[/* reference */ Any, /* eventArgs */ EventArgs, Unit] => Unit): Self = StObject.set(x, "remove_completed", js.Any.fromFunction1(value))
       
       inline def setSet_body(value: String => Unit): Self = StObject.set(x, "set_body", js.Any.fromFunction1(value))
       
@@ -378,7 +378,7 @@ object Net {
       
       inline def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
       
-      inline def setSet_userContext(value: js.Any => Unit): Self = StObject.set(x, "set_userContext", js.Any.fromFunction1(value))
+      inline def setSet_userContext(value: Any => Unit): Self = StObject.set(x, "set_userContext", js.Any.fromFunction1(value))
     }
   }
   
@@ -488,7 +488,7 @@ object Net {
       * Gets the JSON-evaluated object from the response.
       * @return The JSON-evaluated response object.
       */
-    def `object`(): js.Any
+    def `object`(): Any
   }
   object WebRequestExecutor {
     
@@ -506,7 +506,7 @@ object Net {
       get_timedOut: () => Boolean,
       get_webRequest: () => WebRequest,
       get_xml: () => XMLDocument,
-      `object`: () => js.Any
+      `object`: () => Any
     ): WebRequestExecutor = {
       val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), executeRequest = js.Any.fromFunction0(executeRequest), getAllResponseHeaders = js.Any.fromFunction0(getAllResponseHeaders), getResponseHeader = js.Any.fromFunction1(getResponseHeader), get_aborted = js.Any.fromFunction0(get_aborted), get_responseAvailable = js.Any.fromFunction0(get_responseAvailable), get_responseData = js.Any.fromFunction0(get_responseData), get_started = js.Any.fromFunction0(get_started), get_statusCode = js.Any.fromFunction0(get_statusCode), get_statusText = js.Any.fromFunction0(get_statusText), get_timedOut = js.Any.fromFunction0(get_timedOut), get_webRequest = js.Any.fromFunction0(get_webRequest), get_xml = js.Any.fromFunction0(get_xml))
       __obj.updateDynamic("object")(js.Any.fromFunction0(`object`))
@@ -541,15 +541,15 @@ object Net {
       
       inline def setGet_xml(value: () => XMLDocument): Self = StObject.set(x, "get_xml", js.Any.fromFunction0(value))
       
-      inline def setObject(value: () => js.Any): Self = StObject.set(x, "object", js.Any.fromFunction0(value))
+      inline def setObject(value: () => Any): Self = StObject.set(x, "object", js.Any.fromFunction0(value))
     }
   }
   
   trait WebServiceError extends StObject {
     
-    def get_errorObject(): js.Any
+    def get_errorObject(): Any
     
-    def get_exceptionType(): js.Any
+    def get_exceptionType(): Any
     
     def get_message(): String
     
@@ -562,8 +562,8 @@ object Net {
   object WebServiceError {
     
     inline def apply(
-      get_errorObject: () => js.Any,
-      get_exceptionType: () => js.Any,
+      get_errorObject: () => Any,
+      get_exceptionType: () => Any,
       get_message: () => String,
       get_stackTrace: () => String,
       get_statusCode: () => Double,
@@ -575,9 +575,9 @@ object Net {
     
     extension [Self <: WebServiceError](x: Self) {
       
-      inline def setGet_errorObject(value: () => js.Any): Self = StObject.set(x, "get_errorObject", js.Any.fromFunction0(value))
+      inline def setGet_errorObject(value: () => Any): Self = StObject.set(x, "get_errorObject", js.Any.fromFunction0(value))
       
-      inline def setGet_exceptionType(value: () => js.Any): Self = StObject.set(x, "get_exceptionType", js.Any.fromFunction0(value))
+      inline def setGet_exceptionType(value: () => Any): Self = StObject.set(x, "get_exceptionType", js.Any.fromFunction0(value))
       
       inline def setGet_message(value: () => String): Self = StObject.set(x, "get_message", js.Any.fromFunction0(value))
       

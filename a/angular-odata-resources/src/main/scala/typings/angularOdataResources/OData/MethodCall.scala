@@ -9,7 +9,7 @@ trait MethodCall
   extends StObject
      with IExecutable {
   
-  /* private */ var methodName: js.Any = js.native
+  /* private */ var methodName: Any = js.native
   
-  /* private */ var params: js.Any = js.native
+  /* private */ var params: Any = js.native
 }

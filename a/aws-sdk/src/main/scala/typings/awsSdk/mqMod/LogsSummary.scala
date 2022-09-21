@@ -19,12 +19,12 @@ trait LogsSummary extends StObject {
   /**
     * Enables general logging.
     */
-  var General: js.UndefOr[boolean] = js.undefined
+  var General: boolean
   
   /**
     * The location of the CloudWatch Logs log group where general logs are sent.
     */
-  var GeneralLogGroup: js.UndefOr[string] = js.undefined
+  var GeneralLogGroup: string
   
   /**
     * The list of information about logs pending to be deployed for the specified broker.
@@ -33,8 +33,8 @@ trait LogsSummary extends StObject {
 }
 object LogsSummary {
   
-  inline def apply(): LogsSummary = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(General: boolean, GeneralLogGroup: string): LogsSummary = {
+    val __obj = js.Dynamic.literal(General = General.asInstanceOf[js.Any], GeneralLogGroup = GeneralLogGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogsSummary]
   }
   
@@ -51,10 +51,6 @@ object LogsSummary {
     inline def setGeneral(value: boolean): Self = StObject.set(x, "General", value.asInstanceOf[js.Any])
     
     inline def setGeneralLogGroup(value: string): Self = StObject.set(x, "GeneralLogGroup", value.asInstanceOf[js.Any])
-    
-    inline def setGeneralLogGroupUndefined: Self = StObject.set(x, "GeneralLogGroup", js.undefined)
-    
-    inline def setGeneralUndefined: Self = StObject.set(x, "General", js.undefined)
     
     inline def setPending(value: PendingLogs): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
     

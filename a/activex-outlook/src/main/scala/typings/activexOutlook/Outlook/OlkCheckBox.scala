@@ -34,7 +34,7 @@ trait OlkCheckBox extends StObject {
   
   var TripleState: Boolean
   
-  var Value: js.Any
+  var Value: Any
   
   var WordWrap: Boolean
 }
@@ -53,7 +53,7 @@ object OlkCheckBox {
     MousePointer: OlMousePointer,
     OutlookDotOlkCheckBox_typekey: OlkCheckBox,
     TripleState: Boolean,
-    Value: js.Any,
+    Value: Any,
     WordWrap: Boolean
   ): OlkCheckBox = {
     val __obj = js.Dynamic.literal(Accelerator = Accelerator.asInstanceOf[js.Any], Alignment = Alignment.asInstanceOf[js.Any], BackColor = BackColor.asInstanceOf[js.Any], BackStyle = BackStyle.asInstanceOf[js.Any], Caption = Caption.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Font = Font.asInstanceOf[js.Any], ForeColor = ForeColor.asInstanceOf[js.Any], MouseIcon = MouseIcon.asInstanceOf[js.Any], MousePointer = MousePointer.asInstanceOf[js.Any], TripleState = TripleState.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any], WordWrap = WordWrap.asInstanceOf[js.Any])
@@ -87,7 +87,7 @@ object OlkCheckBox {
     
     inline def setTripleState(value: Boolean): Self = StObject.set(x, "TripleState", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     inline def setWordWrap(value: Boolean): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
   }

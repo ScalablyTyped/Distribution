@@ -1,8 +1,10 @@
 package typings.reactSwipeable
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.reactSwipeable.anon.Event
+import typings.reactSwipeable.anon.Passive
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.TouchEvent
@@ -12,56 +14,95 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesMod {
   
-  @JSImport("react-swipeable/dist/types", "DOWN")
+  @JSImport("react-swipeable/es/types", "DOWN")
   @js.native
   val DOWN: /* "Down" */ String = js.native
   
-  @JSImport("react-swipeable/dist/types", "LEFT")
+  @JSImport("react-swipeable/es/types", "LEFT")
   @js.native
   val LEFT: /* "Left" */ String = js.native
   
-  @JSImport("react-swipeable/dist/types", "RIGHT")
+  @JSImport("react-swipeable/es/types", "RIGHT")
   @js.native
   val RIGHT: /* "Right" */ String = js.native
   
-  @JSImport("react-swipeable/dist/types", "UP")
+  @JSImport("react-swipeable/es/types", "UP")
   @js.native
   val UP: /* "Up" */ String = js.native
   
-  type AttachTouch = js.Function2[/* el */ HTMLElement, /* passive */ Boolean, js.Function0[Unit]]
+  type AttachTouch = js.Function2[
+    /* el */ HTMLElement, 
+    /* props */ SwipeablePropsWithDefaultOptions, 
+    js.Function0[Unit]
+  ]
+  
+  type ConfigurationOptionDelta = Double | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in std.Lowercase<react-swipeable.react-swipeable/es/types.SwipeDirections> ]:? number}
+    */ typings.reactSwipeable.reactSwipeableStrings.ConfigurationOptionDelta & TopLevel[Any])
   
   trait ConfigurationOptions extends StObject {
     
-    var delta: Double
+    /**
+      * Min distance(px) before a swipe starts. **Default**: `10`
+      */
+    var delta: ConfigurationOptionDelta
     
-    var preventDefaultTouchmoveEvent: Boolean
+    /**
+      * Prevents scroll during swipe in most cases. **Default**: `false`
+      */
+    var preventScrollOnSwipe: Boolean
     
+    /**
+      * Set a rotation angle. **Default**: `0`
+      */
     var rotationAngle: Double
     
+    /**
+      * Allowable duration of a swipe (ms). **Default**: `Infinity`
+      */
+    var swipeDuration: Double
+    
+    /**
+      * Options for touch event listeners
+      */
+    var touchEventOptions: Passive
+    
+    /**
+      * Track mouse input. **Default**: `false`
+      */
     var trackMouse: Boolean
     
+    /**
+      * Track touch input. **Default**: `true`
+      */
     var trackTouch: Boolean
   }
   object ConfigurationOptions {
     
     inline def apply(
-      delta: Double,
-      preventDefaultTouchmoveEvent: Boolean,
+      delta: ConfigurationOptionDelta,
+      preventScrollOnSwipe: Boolean,
       rotationAngle: Double,
+      swipeDuration: Double,
+      touchEventOptions: Passive,
       trackMouse: Boolean,
       trackTouch: Boolean
     ): ConfigurationOptions = {
-      val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], preventDefaultTouchmoveEvent = preventDefaultTouchmoveEvent.asInstanceOf[js.Any], rotationAngle = rotationAngle.asInstanceOf[js.Any], trackMouse = trackMouse.asInstanceOf[js.Any], trackTouch = trackTouch.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], preventScrollOnSwipe = preventScrollOnSwipe.asInstanceOf[js.Any], rotationAngle = rotationAngle.asInstanceOf[js.Any], swipeDuration = swipeDuration.asInstanceOf[js.Any], touchEventOptions = touchEventOptions.asInstanceOf[js.Any], trackMouse = trackMouse.asInstanceOf[js.Any], trackTouch = trackTouch.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigurationOptions]
     }
     
     extension [Self <: ConfigurationOptions](x: Self) {
       
-      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: ConfigurationOptionDelta): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      inline def setPreventDefaultTouchmoveEvent(value: Boolean): Self = StObject.set(x, "preventDefaultTouchmoveEvent", value.asInstanceOf[js.Any])
+      inline def setPreventScrollOnSwipe(value: Boolean): Self = StObject.set(x, "preventScrollOnSwipe", value.asInstanceOf[js.Any])
       
       inline def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
+      
+      inline def setSwipeDuration(value: Double): Self = StObject.set(x, "swipeDuration", value.asInstanceOf[js.Any])
+      
+      inline def setTouchEventOptions(value: Passive): Self = StObject.set(x, "touchEventOptions", value.asInstanceOf[js.Any])
       
       inline def setTrackMouse(value: Boolean): Self = StObject.set(x, "trackMouse", value.asInstanceOf[js.Any])
       
@@ -85,24 +126,54 @@ object typesMod {
   
   trait SwipeEventData extends StObject {
     
+    /**
+      * Absolute displacement of swipe in x. Math.abs(deltaX);
+      */
     var absX: Double
     
+    /**
+      * Absolute displacement of swipe in y. Math.abs(deltaY);
+      */
     var absY: Double
     
+    /**
+      * Displacement of swipe in x. (current.x - initial.x)
+      */
     var deltaX: Double
     
+    /**
+      * Displacement of swipe in y. (current.y - initial.y)
+      */
     var deltaY: Double
     
+    /**
+      * Direction of swipe - Left | Right | Up | Down
+      */
     var dir: SwipeDirections
     
+    /**
+      * Source event.
+      */
     var event: HandledEvents
     
+    /**
+      * True for the first event of a tracked swipe.
+      */
     var first: Boolean
     
+    /**
+      * Location where swipe started - [x, y].
+      */
     var initial: Vector2
     
+    /**
+      * "Absolute velocity" (speed) - √(absX^2 + absY^2) / time
+      */
     var velocity: Double
     
+    /**
+      * Velocity per axis - [ deltaX/time, deltaY/time ]
+      */
     var vxvy: Vector2
   }
   object SwipeEventData {
@@ -147,40 +218,109 @@ object typesMod {
     }
   }
   
-  trait SwipeableCallbacks extends StObject {
+  trait SwipeableCallbacks
+    extends StObject
+       with SwipeableDirectionCallbacks {
     
+    /**
+      * Called at start of a tracked swipe.
+      */
+    var onSwipeStart: SwipeCallback
+    
+    /**
+      * Called after any swipe.
+      */
     var onSwiped: SwipeCallback
     
-    var onSwipedDown: SwipeCallback
-    
-    var onSwipedLeft: SwipeCallback
-    
-    var onSwipedRight: SwipeCallback
-    
-    var onSwipedUp: SwipeCallback
-    
+    /**
+      * Called for each move event during a tracked swipe.
+      */
     var onSwiping: SwipeCallback
     
+    /**
+      * Called after a tap. A touch under the min distance, `delta`.
+      */
     var onTap: TapCallback
+    
+    /**
+      * Called for `touchend` and `mouseup`.
+      */
+    var onTouchEndOrOnMouseUp: TapCallback
+    
+    /**
+      * Called for `touchstart` and `mousedown`.
+      */
+    var onTouchStartOrOnMouseDown: TapCallback
   }
   object SwipeableCallbacks {
     
     inline def apply(
+      onSwipeStart: /* eventData */ SwipeEventData => Unit,
       onSwiped: /* eventData */ SwipeEventData => Unit,
       onSwipedDown: /* eventData */ SwipeEventData => Unit,
       onSwipedLeft: /* eventData */ SwipeEventData => Unit,
       onSwipedRight: /* eventData */ SwipeEventData => Unit,
       onSwipedUp: /* eventData */ SwipeEventData => Unit,
       onSwiping: /* eventData */ SwipeEventData => Unit,
-      onTap: /* hasEvent */ Event => Unit
+      onTap: /* hasEvent */ Event => Unit,
+      onTouchEndOrOnMouseUp: /* hasEvent */ Event => Unit,
+      onTouchStartOrOnMouseDown: /* hasEvent */ Event => Unit
     ): SwipeableCallbacks = {
-      val __obj = js.Dynamic.literal(onSwiped = js.Any.fromFunction1(onSwiped), onSwipedDown = js.Any.fromFunction1(onSwipedDown), onSwipedLeft = js.Any.fromFunction1(onSwipedLeft), onSwipedRight = js.Any.fromFunction1(onSwipedRight), onSwipedUp = js.Any.fromFunction1(onSwipedUp), onSwiping = js.Any.fromFunction1(onSwiping), onTap = js.Any.fromFunction1(onTap))
+      val __obj = js.Dynamic.literal(onSwipeStart = js.Any.fromFunction1(onSwipeStart), onSwiped = js.Any.fromFunction1(onSwiped), onSwipedDown = js.Any.fromFunction1(onSwipedDown), onSwipedLeft = js.Any.fromFunction1(onSwipedLeft), onSwipedRight = js.Any.fromFunction1(onSwipedRight), onSwipedUp = js.Any.fromFunction1(onSwipedUp), onSwiping = js.Any.fromFunction1(onSwiping), onTap = js.Any.fromFunction1(onTap), onTouchEndOrOnMouseUp = js.Any.fromFunction1(onTouchEndOrOnMouseUp), onTouchStartOrOnMouseDown = js.Any.fromFunction1(onTouchStartOrOnMouseDown))
       __obj.asInstanceOf[SwipeableCallbacks]
     }
     
     extension [Self <: SwipeableCallbacks](x: Self) {
       
+      inline def setOnSwipeStart(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipeStart", js.Any.fromFunction1(value))
+      
       inline def setOnSwiped(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiped", js.Any.fromFunction1(value))
+      
+      inline def setOnSwiping(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiping", js.Any.fromFunction1(value))
+      
+      inline def setOnTap(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
+      
+      inline def setOnTouchEndOrOnMouseUp(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTouchEndOrOnMouseUp", js.Any.fromFunction1(value))
+      
+      inline def setOnTouchStartOrOnMouseDown(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTouchStartOrOnMouseDown", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait SwipeableDirectionCallbacks extends StObject {
+    
+    /**
+      * Called after a DOWN swipe
+      */
+    var onSwipedDown: SwipeCallback
+    
+    /**
+      * Called after a LEFT swipe
+      */
+    var onSwipedLeft: SwipeCallback
+    
+    /**
+      * Called after a RIGHT swipe
+      */
+    var onSwipedRight: SwipeCallback
+    
+    /**
+      * Called after a UP swipe
+      */
+    var onSwipedUp: SwipeCallback
+  }
+  object SwipeableDirectionCallbacks {
+    
+    inline def apply(
+      onSwipedDown: /* eventData */ SwipeEventData => Unit,
+      onSwipedLeft: /* eventData */ SwipeEventData => Unit,
+      onSwipedRight: /* eventData */ SwipeEventData => Unit,
+      onSwipedUp: /* eventData */ SwipeEventData => Unit
+    ): SwipeableDirectionCallbacks = {
+      val __obj = js.Dynamic.literal(onSwipedDown = js.Any.fromFunction1(onSwipedDown), onSwipedLeft = js.Any.fromFunction1(onSwipedLeft), onSwipedRight = js.Any.fromFunction1(onSwipedRight), onSwipedUp = js.Any.fromFunction1(onSwipedUp))
+      __obj.asInstanceOf[SwipeableDirectionCallbacks]
+    }
+    
+    extension [Self <: SwipeableDirectionCallbacks](x: Self) {
       
       inline def setOnSwipedDown(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedDown", js.Any.fromFunction1(value))
       
@@ -189,10 +329,6 @@ object typesMod {
       inline def setOnSwipedRight(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedRight", js.Any.fromFunction1(value))
       
       inline def setOnSwipedUp(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedUp", js.Any.fromFunction1(value))
-      
-      inline def setOnSwiping(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiping", js.Any.fromFunction1(value))
-      
-      inline def setOnTap(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
     }
   }
   
@@ -205,10 +341,12 @@ object typesMod {
     def ref(element: HTMLElement): Unit = js.native
   }
   
-  /* Inlined std.Partial<react-swipeable.react-swipeable/dist/types.SwipeableCallbacks & react-swipeable.react-swipeable/dist/types.ConfigurationOptions> */
+  /* Inlined std.Partial<react-swipeable.react-swipeable/es/types.SwipeableCallbacks & react-swipeable.react-swipeable/es/types.ConfigurationOptions> */
   trait SwipeableProps extends StObject {
     
-    var delta: js.UndefOr[Double] = js.undefined
+    var delta: js.UndefOr[ConfigurationOptionDelta] = js.undefined
+    
+    var onSwipeStart: js.UndefOr[SwipeCallback] = js.undefined
     
     var onSwiped: js.UndefOr[SwipeCallback] = js.undefined
     
@@ -224,9 +362,17 @@ object typesMod {
     
     var onTap: js.UndefOr[TapCallback] = js.undefined
     
-    var preventDefaultTouchmoveEvent: js.UndefOr[Boolean] = js.undefined
+    var onTouchEndOrOnMouseUp: js.UndefOr[TapCallback] = js.undefined
+    
+    var onTouchStartOrOnMouseDown: js.UndefOr[TapCallback] = js.undefined
+    
+    var preventScrollOnSwipe: js.UndefOr[Boolean] = js.undefined
     
     var rotationAngle: js.UndefOr[Double] = js.undefined
+    
+    var swipeDuration: js.UndefOr[Double] = js.undefined
+    
+    var touchEventOptions: js.UndefOr[Passive] = js.undefined
     
     var trackMouse: js.UndefOr[Boolean] = js.undefined
     
@@ -241,9 +387,13 @@ object typesMod {
     
     extension [Self <: SwipeableProps](x: Self) {
       
-      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: ConfigurationOptionDelta): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
       inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+      
+      inline def setOnSwipeStart(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipeStart", js.Any.fromFunction1(value))
+      
+      inline def setOnSwipeStartUndefined: Self = StObject.set(x, "onSwipeStart", js.undefined)
       
       inline def setOnSwiped(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiped", js.Any.fromFunction1(value))
       
@@ -273,13 +423,29 @@ object typesMod {
       
       inline def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
       
-      inline def setPreventDefaultTouchmoveEvent(value: Boolean): Self = StObject.set(x, "preventDefaultTouchmoveEvent", value.asInstanceOf[js.Any])
+      inline def setOnTouchEndOrOnMouseUp(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTouchEndOrOnMouseUp", js.Any.fromFunction1(value))
       
-      inline def setPreventDefaultTouchmoveEventUndefined: Self = StObject.set(x, "preventDefaultTouchmoveEvent", js.undefined)
+      inline def setOnTouchEndOrOnMouseUpUndefined: Self = StObject.set(x, "onTouchEndOrOnMouseUp", js.undefined)
+      
+      inline def setOnTouchStartOrOnMouseDown(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTouchStartOrOnMouseDown", js.Any.fromFunction1(value))
+      
+      inline def setOnTouchStartOrOnMouseDownUndefined: Self = StObject.set(x, "onTouchStartOrOnMouseDown", js.undefined)
+      
+      inline def setPreventScrollOnSwipe(value: Boolean): Self = StObject.set(x, "preventScrollOnSwipe", value.asInstanceOf[js.Any])
+      
+      inline def setPreventScrollOnSwipeUndefined: Self = StObject.set(x, "preventScrollOnSwipe", js.undefined)
       
       inline def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
       
       inline def setRotationAngleUndefined: Self = StObject.set(x, "rotationAngle", js.undefined)
+      
+      inline def setSwipeDuration(value: Double): Self = StObject.set(x, "swipeDuration", value.asInstanceOf[js.Any])
+      
+      inline def setSwipeDurationUndefined: Self = StObject.set(x, "swipeDuration", js.undefined)
+      
+      inline def setTouchEventOptions(value: Passive): Self = StObject.set(x, "touchEventOptions", value.asInstanceOf[js.Any])
+      
+      inline def setTouchEventOptionsUndefined: Self = StObject.set(x, "touchEventOptions", js.undefined)
       
       inline def setTrackMouse(value: Boolean): Self = StObject.set(x, "trackMouse", value.asInstanceOf[js.Any])
       
@@ -291,10 +457,15 @@ object typesMod {
     }
   }
   
-  /* Inlined std.Partial<react-swipeable.react-swipeable/dist/types.SwipeableCallbacks> & react-swipeable.react-swipeable/dist/types.ConfigurationOptions */
+  /* Inlined std.Partial<react-swipeable.react-swipeable/es/types.SwipeableCallbacks> & react-swipeable.react-swipeable/es/types.ConfigurationOptions */
   trait SwipeablePropsWithDefaultOptions extends StObject {
     
-    var delta: Double
+    /**
+      * Min distance(px) before a swipe starts. **Default**: `10`
+      */
+    var delta: ConfigurationOptionDelta
+    
+    var onSwipeStart: js.UndefOr[SwipeCallback] = js.undefined
     
     var onSwiped: js.UndefOr[SwipeCallback] = js.undefined
     
@@ -310,30 +481,62 @@ object typesMod {
     
     var onTap: js.UndefOr[TapCallback] = js.undefined
     
-    var preventDefaultTouchmoveEvent: Boolean
+    var onTouchEndOrOnMouseUp: js.UndefOr[TapCallback] = js.undefined
     
+    var onTouchStartOrOnMouseDown: js.UndefOr[TapCallback] = js.undefined
+    
+    /**
+      * Prevents scroll during swipe in most cases. **Default**: `false`
+      */
+    var preventScrollOnSwipe: Boolean
+    
+    /**
+      * Set a rotation angle. **Default**: `0`
+      */
     var rotationAngle: Double
     
+    /**
+      * Allowable duration of a swipe (ms). **Default**: `Infinity`
+      */
+    var swipeDuration: Double
+    
+    /**
+      * Options for touch event listeners
+      */
+    var touchEventOptions: Passive
+    
+    /**
+      * Track mouse input. **Default**: `false`
+      */
     var trackMouse: Boolean
     
+    /**
+      * Track touch input. **Default**: `true`
+      */
     var trackTouch: Boolean
   }
   object SwipeablePropsWithDefaultOptions {
     
     inline def apply(
-      delta: Double,
-      preventDefaultTouchmoveEvent: Boolean,
+      delta: ConfigurationOptionDelta,
+      preventScrollOnSwipe: Boolean,
       rotationAngle: Double,
+      swipeDuration: Double,
+      touchEventOptions: Passive,
       trackMouse: Boolean,
       trackTouch: Boolean
     ): SwipeablePropsWithDefaultOptions = {
-      val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], preventDefaultTouchmoveEvent = preventDefaultTouchmoveEvent.asInstanceOf[js.Any], rotationAngle = rotationAngle.asInstanceOf[js.Any], trackMouse = trackMouse.asInstanceOf[js.Any], trackTouch = trackTouch.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], preventScrollOnSwipe = preventScrollOnSwipe.asInstanceOf[js.Any], rotationAngle = rotationAngle.asInstanceOf[js.Any], swipeDuration = swipeDuration.asInstanceOf[js.Any], touchEventOptions = touchEventOptions.asInstanceOf[js.Any], trackMouse = trackMouse.asInstanceOf[js.Any], trackTouch = trackTouch.asInstanceOf[js.Any])
       __obj.asInstanceOf[SwipeablePropsWithDefaultOptions]
     }
     
     extension [Self <: SwipeablePropsWithDefaultOptions](x: Self) {
       
-      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: ConfigurationOptionDelta): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      
+      inline def setOnSwipeStart(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipeStart", js.Any.fromFunction1(value))
+      
+      inline def setOnSwipeStartUndefined: Self = StObject.set(x, "onSwipeStart", js.undefined)
       
       inline def setOnSwiped(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwiped", js.Any.fromFunction1(value))
       
@@ -363,9 +566,21 @@ object typesMod {
       
       inline def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
       
-      inline def setPreventDefaultTouchmoveEvent(value: Boolean): Self = StObject.set(x, "preventDefaultTouchmoveEvent", value.asInstanceOf[js.Any])
+      inline def setOnTouchEndOrOnMouseUp(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTouchEndOrOnMouseUp", js.Any.fromFunction1(value))
+      
+      inline def setOnTouchEndOrOnMouseUpUndefined: Self = StObject.set(x, "onTouchEndOrOnMouseUp", js.undefined)
+      
+      inline def setOnTouchStartOrOnMouseDown(value: /* hasEvent */ Event => Unit): Self = StObject.set(x, "onTouchStartOrOnMouseDown", js.Any.fromFunction1(value))
+      
+      inline def setOnTouchStartOrOnMouseDownUndefined: Self = StObject.set(x, "onTouchStartOrOnMouseDown", js.undefined)
+      
+      inline def setPreventScrollOnSwipe(value: Boolean): Self = StObject.set(x, "preventScrollOnSwipe", value.asInstanceOf[js.Any])
       
       inline def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
+      
+      inline def setSwipeDuration(value: Double): Self = StObject.set(x, "swipeDuration", value.asInstanceOf[js.Any])
+      
+      inline def setTouchEventOptions(value: Passive): Self = StObject.set(x, "touchEventOptions", value.asInstanceOf[js.Any])
       
       inline def setTrackMouse(value: Boolean): Self = StObject.set(x, "trackMouse", value.asInstanceOf[js.Any])
       

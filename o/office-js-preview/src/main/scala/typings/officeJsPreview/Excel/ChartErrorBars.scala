@@ -19,9 +19,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * This object represents the attributes for a chart's error bars.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -34,25 +34,25 @@ trait ChartErrorBars
   var context_ChartErrorBars: RequestContext = js.native
   
   /**
-    *
     * Specifies if error bars have an end style cap.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endStyleCap: Boolean = js.native
   
   /**
-    *
     * Specifies the formatting type of the error bars.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val format: ChartErrorBarsFormat = js.native
   
   /**
-    *
     * Specifies which parts of the error bars to include.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var include: ChartErrorBarsInclude | Both | MinusValues | PlusValues = js.native
@@ -70,14 +70,8 @@ trait ChartErrorBars
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartErrorBars): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartErrorBars): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -91,17 +85,17 @@ trait ChartErrorBars
   def toJSON(): ChartErrorBarsData = js.native
   
   /**
-    *
     * The type of range marked by the error bars.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var `type`: ChartErrorBarsType | FixedValue | Percent | StDev | StError | Custom = js.native
   
   /**
-    *
     * Specifies whether the error bars are displayed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var visible: Boolean = js.native

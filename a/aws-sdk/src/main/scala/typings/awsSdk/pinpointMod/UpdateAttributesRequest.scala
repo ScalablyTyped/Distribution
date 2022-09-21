@@ -24,6 +24,6 @@ object UpdateAttributesRequest {
     
     inline def setBlacklistUndefined: Self = StObject.set(x, "Blacklist", js.undefined)
     
-    inline def setBlacklistVarargs(value: string*): Self = StObject.set(x, "Blacklist", js.Array(value :_*))
+    inline def setBlacklistVarargs(value: string*): Self = StObject.set(x, "Blacklist", js.Array(value*))
   }
 }

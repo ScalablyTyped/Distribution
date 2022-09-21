@@ -2,10 +2,10 @@ package typings.reactMdButton
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdButton.anon.PickButtonHTMLAttributesH
 import typings.reactMdButton.buttonMod.ButtonProps
 import typings.reactMdButton.buttonThemeClassNamesMod.ButtonThemeProps
 import typings.reactMdButton.fabMod.FABProps
+import typings.reactMdButton.unstyledButtonMod.UnstyledButtonProps
 import typings.std.HTMLButtonElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
@@ -28,7 +28,7 @@ object mod {
   
   @JSImport("@react-md/button", "UnstyledButton")
   @js.native
-  val UnstyledButton: ForwardRefExoticComponent[PickButtonHTMLAttributesH] = js.native
+  val UnstyledButton: ForwardRefExoticComponent[UnstyledButtonProps & RefAttributes[HTMLButtonElement]] = js.native
   
   inline def buttonThemeClassNames(hasPropThemeThemeTypeButtonTypePropDisabledClassName: ButtonThemeProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonThemeClassNames")(hasPropThemeThemeTypeButtonTypePropDisabledClassName.asInstanceOf[js.Any]).asInstanceOf[String]
 }

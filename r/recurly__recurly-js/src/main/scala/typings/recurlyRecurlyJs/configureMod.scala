@@ -2,6 +2,7 @@ package typings.recurlyRecurlyJs
 
 import typings.recurlyRecurlyJs.anon.All
 import typings.recurlyRecurlyJs.anon.Braintree
+import typings.recurlyRecurlyJs.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,6 +27,8 @@ object configureMod {
     var publicKey: String
     
     var required: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var risk: js.UndefOr[`0`] = js.undefined
     
     var timeout: js.UndefOr[Double] = js.undefined
   }
@@ -60,7 +63,11 @@ object configureMod {
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value*))
+      
+      inline def setRisk(value: `0`): Self = StObject.set(x, "risk", value.asInstanceOf[js.Any])
+      
+      inline def setRiskUndefined: Self = StObject.set(x, "risk", js.undefined)
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

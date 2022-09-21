@@ -15,12 +15,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocDB extends Service {
   
   /**
-    * Adds metadata tags to an Amazon DocumentDB resource. You can use these tags with cost allocation reporting to track costs that are associated with Amazon DocumentDB resources. or in a Condition statement in an AWS Identity and Access Management (IAM) policy for Amazon DocumentDB.
+    * Adds a source identifier to an existing event notification subscription.
+    */
+  def addSourceIdentifierToSubscription(): Request[AddSourceIdentifierToSubscriptionResult, AWSError] = js.native
+  def addSourceIdentifierToSubscription(
+    callback: js.Function2[/* err */ AWSError, /* data */ AddSourceIdentifierToSubscriptionResult, Unit]
+  ): Request[AddSourceIdentifierToSubscriptionResult, AWSError] = js.native
+  /**
+    * Adds a source identifier to an existing event notification subscription.
+    */
+  def addSourceIdentifierToSubscription(params: AddSourceIdentifierToSubscriptionMessage): Request[AddSourceIdentifierToSubscriptionResult, AWSError] = js.native
+  def addSourceIdentifierToSubscription(
+    params: AddSourceIdentifierToSubscriptionMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ AddSourceIdentifierToSubscriptionResult, Unit]
+  ): Request[AddSourceIdentifierToSubscriptionResult, AWSError] = js.native
+  
+  /**
+    * Adds metadata tags to an Amazon DocumentDB resource. You can use these tags with cost allocation reporting to track costs that are associated with Amazon DocumentDB resources or in a Condition statement in an Identity and Access Management (IAM) policy for Amazon DocumentDB.
     */
   def addTagsToResource(): Request[js.Object, AWSError] = js.native
   def addTagsToResource(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Adds metadata tags to an Amazon DocumentDB resource. You can use these tags with cost allocation reporting to track costs that are associated with Amazon DocumentDB resources. or in a Condition statement in an AWS Identity and Access Management (IAM) policy for Amazon DocumentDB.
+    * Adds metadata tags to an Amazon DocumentDB resource. You can use these tags with cost allocation reporting to track costs that are associated with Amazon DocumentDB resources or in a Condition statement in an Identity and Access Management (IAM) policy for Amazon DocumentDB.
     */
   def addTagsToResource(params: AddTagsToResourceMessage): Request[js.Object, AWSError] = js.native
   def addTagsToResource(
@@ -60,12 +76,12 @@ trait DocDB extends Service {
   ): Request[CopyDBClusterParameterGroupResult, AWSError] = js.native
   
   /**
-    * Copies a snapshot of a cluster. To copy a cluster snapshot from a shared manual cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared cluster snapshot. You can only copy a shared DB cluster snapshot, whether encrypted or not, in the same AWS Region. To cancel the copy operation after it is in progress, delete the target cluster snapshot identified by TargetDBClusterSnapshotIdentifier while that cluster snapshot is in the copying status.
+    * Copies a snapshot of a cluster. To copy a cluster snapshot from a shared manual cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared cluster snapshot. You can only copy a shared DB cluster snapshot, whether encrypted or not, in the same Amazon Web Services Region. To cancel the copy operation after it is in progress, delete the target cluster snapshot identified by TargetDBClusterSnapshotIdentifier while that cluster snapshot is in the copying status.
     */
   def copyDBClusterSnapshot(): Request[CopyDBClusterSnapshotResult, AWSError] = js.native
   def copyDBClusterSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ CopyDBClusterSnapshotResult, Unit]): Request[CopyDBClusterSnapshotResult, AWSError] = js.native
   /**
-    * Copies a snapshot of a cluster. To copy a cluster snapshot from a shared manual cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared cluster snapshot. You can only copy a shared DB cluster snapshot, whether encrypted or not, in the same AWS Region. To cancel the copy operation after it is in progress, delete the target cluster snapshot identified by TargetDBClusterSnapshotIdentifier while that cluster snapshot is in the copying status.
+    * Copies a snapshot of a cluster. To copy a cluster snapshot from a shared manual cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared cluster snapshot. You can only copy a shared DB cluster snapshot, whether encrypted or not, in the same Amazon Web Services Region. To cancel the copy operation after it is in progress, delete the target cluster snapshot identified by TargetDBClusterSnapshotIdentifier while that cluster snapshot is in the copying status.
     */
   def copyDBClusterSnapshot(params: CopyDBClusterSnapshotMessage): Request[CopyDBClusterSnapshotResult, AWSError] = js.native
   def copyDBClusterSnapshot(
@@ -130,18 +146,46 @@ trait DocDB extends Service {
   ): Request[CreateDBInstanceResult, AWSError] = js.native
   
   /**
-    * Creates a new subnet group. subnet groups must contain at least one subnet in at least two Availability Zones in the AWS Region.
+    * Creates a new subnet group. subnet groups must contain at least one subnet in at least two Availability Zones in the Amazon Web Services Region.
     */
   def createDBSubnetGroup(): Request[CreateDBSubnetGroupResult, AWSError] = js.native
   def createDBSubnetGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateDBSubnetGroupResult, Unit]): Request[CreateDBSubnetGroupResult, AWSError] = js.native
   /**
-    * Creates a new subnet group. subnet groups must contain at least one subnet in at least two Availability Zones in the AWS Region.
+    * Creates a new subnet group. subnet groups must contain at least one subnet in at least two Availability Zones in the Amazon Web Services Region.
     */
   def createDBSubnetGroup(params: CreateDBSubnetGroupMessage): Request[CreateDBSubnetGroupResult, AWSError] = js.native
   def createDBSubnetGroup(
     params: CreateDBSubnetGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDBSubnetGroupResult, Unit]
   ): Request[CreateDBSubnetGroupResult, AWSError] = js.native
+  
+  /**
+    * Creates an Amazon DocumentDB event notification subscription. This action requires a topic Amazon Resource Name (ARN) created by using the Amazon DocumentDB console, the Amazon SNS console, or the Amazon SNS API. To obtain an ARN with Amazon SNS, you must create a topic in Amazon SNS and subscribe to the topic. The ARN is displayed in the Amazon SNS console. You can specify the type of source (SourceType) that you want to be notified of. You can also provide a list of Amazon DocumentDB sources (SourceIds) that trigger the events, and you can provide a list of event categories (EventCategories) for events that you want to be notified of. For example, you can specify SourceType = db-instance, SourceIds = mydbinstance1, mydbinstance2 and EventCategories = Availability, Backup. If you specify both the SourceType and SourceIds (such as SourceType = db-instance and SourceIdentifier = myDBInstance1), you are notified of all the db-instance events for the specified source. If you specify a SourceType but do not specify a SourceIdentifier, you receive notice of the events for that source type for all your Amazon DocumentDB sources. If you do not specify either the SourceType or the SourceIdentifier, you are notified of events generated from all Amazon DocumentDB sources belonging to your customer account.
+    */
+  def createEventSubscription(): Request[CreateEventSubscriptionResult, AWSError] = js.native
+  def createEventSubscription(callback: js.Function2[/* err */ AWSError, /* data */ CreateEventSubscriptionResult, Unit]): Request[CreateEventSubscriptionResult, AWSError] = js.native
+  /**
+    * Creates an Amazon DocumentDB event notification subscription. This action requires a topic Amazon Resource Name (ARN) created by using the Amazon DocumentDB console, the Amazon SNS console, or the Amazon SNS API. To obtain an ARN with Amazon SNS, you must create a topic in Amazon SNS and subscribe to the topic. The ARN is displayed in the Amazon SNS console. You can specify the type of source (SourceType) that you want to be notified of. You can also provide a list of Amazon DocumentDB sources (SourceIds) that trigger the events, and you can provide a list of event categories (EventCategories) for events that you want to be notified of. For example, you can specify SourceType = db-instance, SourceIds = mydbinstance1, mydbinstance2 and EventCategories = Availability, Backup. If you specify both the SourceType and SourceIds (such as SourceType = db-instance and SourceIdentifier = myDBInstance1), you are notified of all the db-instance events for the specified source. If you specify a SourceType but do not specify a SourceIdentifier, you receive notice of the events for that source type for all your Amazon DocumentDB sources. If you do not specify either the SourceType or the SourceIdentifier, you are notified of events generated from all Amazon DocumentDB sources belonging to your customer account.
+    */
+  def createEventSubscription(params: CreateEventSubscriptionMessage): Request[CreateEventSubscriptionResult, AWSError] = js.native
+  def createEventSubscription(
+    params: CreateEventSubscriptionMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateEventSubscriptionResult, Unit]
+  ): Request[CreateEventSubscriptionResult, AWSError] = js.native
+  
+  /**
+    * Creates an Amazon DocumentDB global cluster that can span multiple multiple Amazon Web Services Regions. The global cluster contains one primary cluster with read-write capability, and up-to give read-only secondary clusters. Global clusters uses storage-based fast replication across regions with latencies less than one second, using dedicated infrastructure with no impact to your workload’s performance.  You can create a global cluster that is initially empty, and then add a primary and a secondary to it. Or you can specify an existing cluster during the create operation, and this cluster becomes the primary of the global cluster.   This action only applies to Amazon DocumentDB clusters. 
+    */
+  def createGlobalCluster(): Request[CreateGlobalClusterResult, AWSError] = js.native
+  def createGlobalCluster(callback: js.Function2[/* err */ AWSError, /* data */ CreateGlobalClusterResult, Unit]): Request[CreateGlobalClusterResult, AWSError] = js.native
+  /**
+    * Creates an Amazon DocumentDB global cluster that can span multiple multiple Amazon Web Services Regions. The global cluster contains one primary cluster with read-write capability, and up-to give read-only secondary clusters. Global clusters uses storage-based fast replication across regions with latencies less than one second, using dedicated infrastructure with no impact to your workload’s performance.  You can create a global cluster that is initially empty, and then add a primary and a secondary to it. Or you can specify an existing cluster during the create operation, and this cluster becomes the primary of the global cluster.   This action only applies to Amazon DocumentDB clusters. 
+    */
+  def createGlobalCluster(params: CreateGlobalClusterMessage): Request[CreateGlobalClusterResult, AWSError] = js.native
+  def createGlobalCluster(
+    params: CreateGlobalClusterMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateGlobalClusterResult, Unit]
+  ): Request[CreateGlobalClusterResult, AWSError] = js.native
   
   /**
     * Deletes a previously provisioned cluster. When you delete a cluster, all automated backups for that cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified cluster are not deleted. 
@@ -186,12 +230,12 @@ trait DocDB extends Service {
   ): Request[DeleteDBClusterSnapshotResult, AWSError] = js.native
   
   /**
-    * Deletes a previously provisioned instance. 
+    * Deletes a previously provisioned instance.
     */
   def deleteDBInstance(): Request[DeleteDBInstanceResult, AWSError] = js.native
   def deleteDBInstance(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDBInstanceResult, Unit]): Request[DeleteDBInstanceResult, AWSError] = js.native
   /**
-    * Deletes a previously provisioned instance. 
+    * Deletes a previously provisioned instance.
     */
   def deleteDBInstance(params: DeleteDBInstanceMessage): Request[DeleteDBInstanceResult, AWSError] = js.native
   def deleteDBInstance(
@@ -214,12 +258,40 @@ trait DocDB extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Returns a list of certificate authority (CA) certificates provided by Amazon DocumentDB for this AWS account.
+    * Deletes an Amazon DocumentDB event notification subscription.
+    */
+  def deleteEventSubscription(): Request[DeleteEventSubscriptionResult, AWSError] = js.native
+  def deleteEventSubscription(callback: js.Function2[/* err */ AWSError, /* data */ DeleteEventSubscriptionResult, Unit]): Request[DeleteEventSubscriptionResult, AWSError] = js.native
+  /**
+    * Deletes an Amazon DocumentDB event notification subscription.
+    */
+  def deleteEventSubscription(params: DeleteEventSubscriptionMessage): Request[DeleteEventSubscriptionResult, AWSError] = js.native
+  def deleteEventSubscription(
+    params: DeleteEventSubscriptionMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteEventSubscriptionResult, Unit]
+  ): Request[DeleteEventSubscriptionResult, AWSError] = js.native
+  
+  /**
+    * Deletes a global cluster. The primary and secondary clusters must already be detached or deleted before attempting to delete a global cluster.  This action only applies to Amazon DocumentDB clusters. 
+    */
+  def deleteGlobalCluster(): Request[DeleteGlobalClusterResult, AWSError] = js.native
+  def deleteGlobalCluster(callback: js.Function2[/* err */ AWSError, /* data */ DeleteGlobalClusterResult, Unit]): Request[DeleteGlobalClusterResult, AWSError] = js.native
+  /**
+    * Deletes a global cluster. The primary and secondary clusters must already be detached or deleted before attempting to delete a global cluster.  This action only applies to Amazon DocumentDB clusters. 
+    */
+  def deleteGlobalCluster(params: DeleteGlobalClusterMessage): Request[DeleteGlobalClusterResult, AWSError] = js.native
+  def deleteGlobalCluster(
+    params: DeleteGlobalClusterMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteGlobalClusterResult, Unit]
+  ): Request[DeleteGlobalClusterResult, AWSError] = js.native
+  
+  /**
+    * Returns a list of certificate authority (CA) certificates provided by Amazon DocumentDB for this Amazon Web Services account.
     */
   def describeCertificates(): Request[CertificateMessage, AWSError] = js.native
   def describeCertificates(callback: js.Function2[/* err */ AWSError, /* data */ CertificateMessage, Unit]): Request[CertificateMessage, AWSError] = js.native
   /**
-    * Returns a list of certificate authority (CA) certificates provided by Amazon DocumentDB for this AWS account.
+    * Returns a list of certificate authority (CA) certificates provided by Amazon DocumentDB for this Amazon Web Services account.
     */
   def describeCertificates(params: DescribeCertificatesMessage): Request[CertificateMessage, AWSError] = js.native
   def describeCertificates(
@@ -256,14 +328,14 @@ trait DocDB extends Service {
   ): Request[DBClusterParameterGroupDetails, AWSError] = js.native
   
   /**
-    * Returns a list of cluster snapshot attribute names and values for a manual DB cluster snapshot. When you share snapshots with other AWS accounts, DescribeDBClusterSnapshotAttributes returns the restore attribute and a list of IDs for the AWS accounts that are authorized to copy or restore the manual cluster snapshot. If all is included in the list of values for the restore attribute, then the manual cluster snapshot is public and can be copied or restored by all AWS accounts.
+    * Returns a list of cluster snapshot attribute names and values for a manual DB cluster snapshot. When you share snapshots with other Amazon Web Services accounts, DescribeDBClusterSnapshotAttributes returns the restore attribute and a list of IDs for the Amazon Web Services accounts that are authorized to copy or restore the manual cluster snapshot. If all is included in the list of values for the restore attribute, then the manual cluster snapshot is public and can be copied or restored by all Amazon Web Services accounts.
     */
   def describeDBClusterSnapshotAttributes(): Request[DescribeDBClusterSnapshotAttributesResult, AWSError] = js.native
   def describeDBClusterSnapshotAttributes(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDBClusterSnapshotAttributesResult, Unit]
   ): Request[DescribeDBClusterSnapshotAttributesResult, AWSError] = js.native
   /**
-    * Returns a list of cluster snapshot attribute names and values for a manual DB cluster snapshot. When you share snapshots with other AWS accounts, DescribeDBClusterSnapshotAttributes returns the restore attribute and a list of IDs for the AWS accounts that are authorized to copy or restore the manual cluster snapshot. If all is included in the list of values for the restore attribute, then the manual cluster snapshot is public and can be copied or restored by all AWS accounts.
+    * Returns a list of cluster snapshot attribute names and values for a manual DB cluster snapshot. When you share snapshots with other Amazon Web Services accounts, DescribeDBClusterSnapshotAttributes returns the restore attribute and a list of IDs for the Amazon Web Services accounts that are authorized to copy or restore the manual cluster snapshot. If all is included in the list of values for the restore attribute, then the manual cluster snapshot is public and can be copied or restored by all Amazon Web Services accounts.
     */
   def describeDBClusterSnapshotAttributes(params: DescribeDBClusterSnapshotAttributesMessage): Request[DescribeDBClusterSnapshotAttributesResult, AWSError] = js.native
   def describeDBClusterSnapshotAttributes(
@@ -372,6 +444,20 @@ trait DocDB extends Service {
   ): Request[EventCategoriesMessage, AWSError] = js.native
   
   /**
+    * Lists all the subscription descriptions for a customer account. The description for a subscription includes SubscriptionName, SNSTopicARN, CustomerID, SourceType, SourceID, CreationTime, and Status. If you specify a SubscriptionName, lists the description for that subscription.
+    */
+  def describeEventSubscriptions(): Request[EventSubscriptionsMessage, AWSError] = js.native
+  def describeEventSubscriptions(callback: js.Function2[/* err */ AWSError, /* data */ EventSubscriptionsMessage, Unit]): Request[EventSubscriptionsMessage, AWSError] = js.native
+  /**
+    * Lists all the subscription descriptions for a customer account. The description for a subscription includes SubscriptionName, SNSTopicARN, CustomerID, SourceType, SourceID, CreationTime, and Status. If you specify a SubscriptionName, lists the description for that subscription.
+    */
+  def describeEventSubscriptions(params: DescribeEventSubscriptionsMessage): Request[EventSubscriptionsMessage, AWSError] = js.native
+  def describeEventSubscriptions(
+    params: DescribeEventSubscriptionsMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ EventSubscriptionsMessage, Unit]
+  ): Request[EventSubscriptionsMessage, AWSError] = js.native
+  
+  /**
     * Returns events related to instances, security groups, snapshots, and DB parameter groups for the past 14 days. You can obtain events specific to a particular DB instance, security group, snapshot, or parameter group by providing the name as a parameter. By default, the events of the past hour are returned.
     */
   def describeEvents(): Request[EventsMessage, AWSError] = js.native
@@ -384,6 +470,20 @@ trait DocDB extends Service {
     params: DescribeEventsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ EventsMessage, Unit]
   ): Request[EventsMessage, AWSError] = js.native
+  
+  /**
+    * Returns information about Amazon DocumentDB global clusters. This API supports pagination.  This action only applies to Amazon DocumentDB clusters. 
+    */
+  def describeGlobalClusters(): Request[GlobalClustersMessage, AWSError] = js.native
+  def describeGlobalClusters(callback: js.Function2[/* err */ AWSError, /* data */ GlobalClustersMessage, Unit]): Request[GlobalClustersMessage, AWSError] = js.native
+  /**
+    * Returns information about Amazon DocumentDB global clusters. This API supports pagination.  This action only applies to Amazon DocumentDB clusters. 
+    */
+  def describeGlobalClusters(params: DescribeGlobalClustersMessage): Request[GlobalClustersMessage, AWSError] = js.native
+  def describeGlobalClusters(
+    params: DescribeGlobalClustersMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ GlobalClustersMessage, Unit]
+  ): Request[GlobalClustersMessage, AWSError] = js.native
   
   /**
     * Returns a list of orderable instance options for the specified engine.
@@ -470,14 +570,14 @@ trait DocDB extends Service {
   ): Request[DBClusterParameterGroupNameMessage, AWSError] = js.native
   
   /**
-    * Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual cluster snapshot with other AWS accounts, specify restore as the AttributeName, and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual cluster snapshot. Use the value all to make the manual cluster snapshot public, which means that it can be copied or restored by all AWS accounts. Do not add the all value for any manual DB cluster snapshots that contain private information that you don't want available to all AWS accounts. If a manual cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case.
+    * Adds an attribute and values to, or removes an attribute and values from, a manual cluster snapshot. To share a manual cluster snapshot with other Amazon Web Services accounts, specify restore as the AttributeName, and use the ValuesToAdd parameter to add a list of IDs of the Amazon Web Services accounts that are authorized to restore the manual cluster snapshot. Use the value all to make the manual cluster snapshot public, which means that it can be copied or restored by all Amazon Web Services accounts. Do not add the all value for any manual cluster snapshots that contain private information that you don't want available to all Amazon Web Services accounts. If a manual cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized Amazon Web Services account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case.
     */
   def modifyDBClusterSnapshotAttribute(): Request[ModifyDBClusterSnapshotAttributeResult, AWSError] = js.native
   def modifyDBClusterSnapshotAttribute(
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBClusterSnapshotAttributeResult, Unit]
   ): Request[ModifyDBClusterSnapshotAttributeResult, AWSError] = js.native
   /**
-    * Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual cluster snapshot with other AWS accounts, specify restore as the AttributeName, and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual cluster snapshot. Use the value all to make the manual cluster snapshot public, which means that it can be copied or restored by all AWS accounts. Do not add the all value for any manual DB cluster snapshots that contain private information that you don't want available to all AWS accounts. If a manual cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case.
+    * Adds an attribute and values to, or removes an attribute and values from, a manual cluster snapshot. To share a manual cluster snapshot with other Amazon Web Services accounts, specify restore as the AttributeName, and use the ValuesToAdd parameter to add a list of IDs of the Amazon Web Services accounts that are authorized to restore the manual cluster snapshot. Use the value all to make the manual cluster snapshot public, which means that it can be copied or restored by all Amazon Web Services accounts. Do not add the all value for any manual cluster snapshots that contain private information that you don't want available to all Amazon Web Services accounts. If a manual cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized Amazon Web Services account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case.
     */
   def modifyDBClusterSnapshotAttribute(params: ModifyDBClusterSnapshotAttributeMessage): Request[ModifyDBClusterSnapshotAttributeResult, AWSError] = js.native
   def modifyDBClusterSnapshotAttribute(
@@ -500,18 +600,46 @@ trait DocDB extends Service {
   ): Request[ModifyDBInstanceResult, AWSError] = js.native
   
   /**
-    * Modifies an existing subnet group. subnet groups must contain at least one subnet in at least two Availability Zones in the AWS Region.
+    * Modifies an existing subnet group. subnet groups must contain at least one subnet in at least two Availability Zones in the Amazon Web Services Region.
     */
   def modifyDBSubnetGroup(): Request[ModifyDBSubnetGroupResult, AWSError] = js.native
   def modifyDBSubnetGroup(callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBSubnetGroupResult, Unit]): Request[ModifyDBSubnetGroupResult, AWSError] = js.native
   /**
-    * Modifies an existing subnet group. subnet groups must contain at least one subnet in at least two Availability Zones in the AWS Region.
+    * Modifies an existing subnet group. subnet groups must contain at least one subnet in at least two Availability Zones in the Amazon Web Services Region.
     */
   def modifyDBSubnetGroup(params: ModifyDBSubnetGroupMessage): Request[ModifyDBSubnetGroupResult, AWSError] = js.native
   def modifyDBSubnetGroup(
     params: ModifyDBSubnetGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBSubnetGroupResult, Unit]
   ): Request[ModifyDBSubnetGroupResult, AWSError] = js.native
+  
+  /**
+    * Modifies an existing Amazon DocumentDB event notification subscription.
+    */
+  def modifyEventSubscription(): Request[ModifyEventSubscriptionResult, AWSError] = js.native
+  def modifyEventSubscription(callback: js.Function2[/* err */ AWSError, /* data */ ModifyEventSubscriptionResult, Unit]): Request[ModifyEventSubscriptionResult, AWSError] = js.native
+  /**
+    * Modifies an existing Amazon DocumentDB event notification subscription.
+    */
+  def modifyEventSubscription(params: ModifyEventSubscriptionMessage): Request[ModifyEventSubscriptionResult, AWSError] = js.native
+  def modifyEventSubscription(
+    params: ModifyEventSubscriptionMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyEventSubscriptionResult, Unit]
+  ): Request[ModifyEventSubscriptionResult, AWSError] = js.native
+  
+  /**
+    * Modify a setting for an Amazon DocumentDB global cluster. You can change one or more configuration parameters (for example: deletion protection), or the global cluster identifier by specifying these parameters and the new values in the request.  This action only applies to Amazon DocumentDB clusters. 
+    */
+  def modifyGlobalCluster(): Request[ModifyGlobalClusterResult, AWSError] = js.native
+  def modifyGlobalCluster(callback: js.Function2[/* err */ AWSError, /* data */ ModifyGlobalClusterResult, Unit]): Request[ModifyGlobalClusterResult, AWSError] = js.native
+  /**
+    * Modify a setting for an Amazon DocumentDB global cluster. You can change one or more configuration parameters (for example: deletion protection), or the global cluster identifier by specifying these parameters and the new values in the request.  This action only applies to Amazon DocumentDB clusters. 
+    */
+  def modifyGlobalCluster(params: ModifyGlobalClusterMessage): Request[ModifyGlobalClusterResult, AWSError] = js.native
+  def modifyGlobalCluster(
+    params: ModifyGlobalClusterMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyGlobalClusterResult, Unit]
+  ): Request[ModifyGlobalClusterResult, AWSError] = js.native
   
   /**
     * You might need to reboot your instance, usually for maintenance reasons. For example, if you make certain changes, or if you change the cluster parameter group that is associated with the instance, you must reboot the instance for the changes to take effect.  Rebooting an instance restarts the database engine service. Rebooting an instance results in a momentary outage, during which the instance status is set to rebooting. 
@@ -526,6 +654,36 @@ trait DocDB extends Service {
     params: RebootDBInstanceMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ RebootDBInstanceResult, Unit]
   ): Request[RebootDBInstanceResult, AWSError] = js.native
+  
+  /**
+    * Detaches an Amazon DocumentDB secondary cluster from a global cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary in a different region.   This action only applies to Amazon DocumentDB clusters. 
+    */
+  def removeFromGlobalCluster(): Request[RemoveFromGlobalClusterResult, AWSError] = js.native
+  def removeFromGlobalCluster(callback: js.Function2[/* err */ AWSError, /* data */ RemoveFromGlobalClusterResult, Unit]): Request[RemoveFromGlobalClusterResult, AWSError] = js.native
+  /**
+    * Detaches an Amazon DocumentDB secondary cluster from a global cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary in a different region.   This action only applies to Amazon DocumentDB clusters. 
+    */
+  def removeFromGlobalCluster(params: RemoveFromGlobalClusterMessage): Request[RemoveFromGlobalClusterResult, AWSError] = js.native
+  def removeFromGlobalCluster(
+    params: RemoveFromGlobalClusterMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveFromGlobalClusterResult, Unit]
+  ): Request[RemoveFromGlobalClusterResult, AWSError] = js.native
+  
+  /**
+    * Removes a source identifier from an existing Amazon DocumentDB event notification subscription.
+    */
+  def removeSourceIdentifierFromSubscription(): Request[RemoveSourceIdentifierFromSubscriptionResult, AWSError] = js.native
+  def removeSourceIdentifierFromSubscription(
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveSourceIdentifierFromSubscriptionResult, Unit]
+  ): Request[RemoveSourceIdentifierFromSubscriptionResult, AWSError] = js.native
+  /**
+    * Removes a source identifier from an existing Amazon DocumentDB event notification subscription.
+    */
+  def removeSourceIdentifierFromSubscription(params: RemoveSourceIdentifierFromSubscriptionMessage): Request[RemoveSourceIdentifierFromSubscriptionResult, AWSError] = js.native
+  def removeSourceIdentifierFromSubscription(
+    params: RemoveSourceIdentifierFromSubscriptionMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveSourceIdentifierFromSubscriptionResult, Unit]
+  ): Request[RemoveSourceIdentifierFromSubscriptionResult, AWSError] = js.native
   
   /**
     * Removes metadata tags from an Amazon DocumentDB resource.

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the iterative calculation settings.
   *
-  * Represents the Iterative Calculation settings.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait IterativeCalculationLoadOptions extends StObject {
@@ -19,25 +19,25 @@ trait IterativeCalculationLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * True if Excel will use iteration to resolve circular references.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the maximum amount of change between each iteration as Excel resolves circular references.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var maxChange: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the maximum number of iterations that Excel can use to resolve a circular reference.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var maxIteration: js.UndefOr[Boolean] = js.undefined

@@ -15,10 +15,7 @@ trait Animation
   extends StObject
      with EventTarget {
   
-  @JSName("addEventListener")
-  def addEventListener_cancel(`type`: cancel, handler: EventListener): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_finish(`type`: finish, handler: EventListener): Unit = js.native
+  def addEventListener(`type`: finish | cancel, handler: EventListener): Unit = js.native
   
   def cancel(): Unit = js.native
   
@@ -46,10 +43,7 @@ trait Animation
   
   val ready: js.Promise[Animation] = js.native
   
-  @JSName("removeEventListener")
-  def removeEventListener_cancel(`type`: cancel, handler: EventListener): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_finish(`type`: finish, handler: EventListener): Unit = js.native
+  def removeEventListener(`type`: finish | cancel, handler: EventListener): Unit = js.native
   
   def reverse(): Unit = js.native
   

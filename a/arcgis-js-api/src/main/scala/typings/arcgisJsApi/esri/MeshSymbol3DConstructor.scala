@@ -17,5 +17,5 @@ trait MeshSymbol3DConstructor
 Instantiable0[MeshSymbol3D]
      with Instantiable1[/* properties */ MeshSymbol3DProperties, MeshSymbol3D] {
   
-  def fromJSON(json: js.Any): MeshSymbol3D = js.native
+  def fromJSON(json: Any): MeshSymbol3D = js.native
 }

@@ -36,7 +36,7 @@ object JQueryFileUploadChangeObject {
     
     inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setForm(value: JQuery): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object JQueryFileUploadChangeObject {
     
     inline def setOriginalFiles(value: js.Array[File]): Self = StObject.set(x, "originalFiles", value.asInstanceOf[js.Any])
     
-    inline def setOriginalFilesVarargs(value: File*): Self = StObject.set(x, "originalFiles", js.Array(value :_*))
+    inline def setOriginalFilesVarargs(value: File*): Self = StObject.set(x, "originalFiles", js.Array(value*))
   }
 }

@@ -101,7 +101,7 @@ object TeleconferenceDeviceQuality {
     
     inline def setMediaQualityListUndefined: Self = StObject.set(x, "mediaQualityList", js.undefined)
     
-    inline def setMediaQualityListVarargs(value: TeleconferenceDeviceMediaQuality*): Self = StObject.set(x, "mediaQualityList", js.Array(value :_*))
+    inline def setMediaQualityListVarargs(value: TeleconferenceDeviceMediaQuality*): Self = StObject.set(x, "mediaQualityList", js.Array(value*))
     
     inline def setParticipantId(value: String): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
     

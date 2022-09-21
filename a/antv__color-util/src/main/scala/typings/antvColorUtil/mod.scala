@@ -18,12 +18,12 @@ object mod {
     
     inline def rgb2arr(str: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2arr")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
-    inline def toCSSGradient(gradientColor: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toCSSGradient")(gradientColor.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def toCSSGradient(gradientColor: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toCSSGradient")(gradientColor.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     @JSImport("@antv/color-util", "default.toRGB")
     @js.native
     def toRGB: Call = js.native
-    inline def toRGB(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toRGB")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def toRGB(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toRGB")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
     inline def toRGB_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toRGB")(x.asInstanceOf[js.Any])
   }
 }

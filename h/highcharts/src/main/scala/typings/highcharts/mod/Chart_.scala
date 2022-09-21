@@ -1,7 +1,7 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
-import typings.highcharts.boostMod.highchartsAugmentingMod.Chart
+import typings.highcharts.boostCanvasMod.highchartsAugmentingMod.Chart
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("highcharts", "Chart")
 @js.native
-class Chart_ protected () extends StObject {
+open class Chart_ protected () extends StObject {
   /**
     * The Chart class. The recommended constructor is Highcharts#chart.
     *
@@ -48,7 +48,7 @@ class Chart_ protected () extends StObject {
     * @param options
     *        The annotation options for the new, detailed annotation.
     *
-    * @return - The newly generated annotation.
+    * @return The newly generated annotation.
     */
   def addAnnotation(options: AnnotationsOptions): Annotation = js.native
   def addAnnotation(options: AnnotationsOptions, redraw: Boolean): Annotation = js.native
@@ -163,7 +163,7 @@ class Chart_ protected () extends StObject {
     * @param options
     *        The series options for the new, detailed series.
     */
-  def addSeriesAsDrilldown(point: Point, options: SeriesOptionsType): Unit = js.native
+  def addSeriesAsDrilldown(point: typings.highcharts.drilldownMod.highchartsAugmentingMod.Point, options: SeriesOptionsType): Unit = js.native
   
   /**
     * All the axes in the chart.
@@ -188,12 +188,6 @@ class Chart_ protected () extends StObject {
     * The current pixel width of the chart.
     */
   var chartWidth: Double = js.native
-  
-  /**
-    * These collections (arrays) implement update() methods with support for
-    * one-to-one option.
-    */
-  var collectionsWithUpdate: js.Any = js.native
   
   /**
     * The containing HTML element of the chart. The container is dynamically
@@ -221,11 +215,6 @@ class Chart_ protected () extends StObject {
     * @fires Highcharts.Chart#destroy
     */
   def destroy(): Unit = js.native
-  
-  /**
-    * Dismiss popup content in chart, including export menu and tooltip.
-    */
-  def dismissPopupContent(): Unit = js.native
   
   /**
     * Generates a data URL of CSV for local download in the browser. This
@@ -283,20 +272,17 @@ class Chart_ protected () extends StObject {
   def exportChartLocal(exportingOptions: ExportingOptions, chartOptions: Options): Unit = js.native
   
   /**
-    * Highmaps only. Get chart coordinates from latitude/longitude. Returns
-    * an object with x and y values corresponding to the `xAxis` and
-    * `yAxis`.
+    * Deprecated. Use `MapView.lonLatToProjectedUnits` instead.
     *
-    * @param latLon
+    * @param lonLat
     *        Coordinates.
     *
-    * @return X and Y coordinates in terms of chart axis values.
+    * @return X and Y coordinates in terms of projected values
     */
-  def fromLatLonToPoint(latLon: typings.highcharts.mapMod.highchartsAugmentingMod.MapLatLonObject): typings.highcharts.mapMod.highchartsAugmentingMod.MapCoordinateObject = js.native
+  def fromLatLonToPoint(lonLat: typings.highcharts.mapMod.highchartsAugmentingMod.MapLonLatObject): typings.highcharts.mapMod.highchartsAugmentingMod.ProjectedXY = js.native
   
   /**
-    * Highmaps only. Calculate latitude/longitude values for a point.
-    * Returns an object with the numeric properties `lat` and `lon`.
+    * Deprecated. Use `MapView.projectedUnitsToLonLat` instead.
     *
     * @param point
     *        A `Point` instance or anything containing `x` and `y`
@@ -304,10 +290,10 @@ class Chart_ protected () extends StObject {
     *
     * @return An object with `lat` and `lon` properties.
     */
-  def fromPointToLatLon(point: typings.highcharts.mapMod.highchartsAugmentingMod.MapCoordinateObject): js.UndefOr[typings.highcharts.mapMod.highchartsAugmentingMod.MapLatLonObject] = js.native
-  def fromPointToLatLon(point: typings.highcharts.mapMod.highchartsAugmentingMod.Point): js.UndefOr[typings.highcharts.mapMod.highchartsAugmentingMod.MapLatLonObject] = js.native
+  def fromPointToLatLon(point: typings.highcharts.mapMod.highchartsAugmentingMod.Point): js.UndefOr[typings.highcharts.mapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
+  def fromPointToLatLon(point: typings.highcharts.mapMod.highchartsAugmentingMod.ProjectedXY): js.UndefOr[typings.highcharts.mapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
   
-  var fullscreen: typings.highcharts.exportingMod.highchartsAugmentingMod.Fullscreen & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Fullscreen */ js.Any) = js.native
+  var fullscreen: typings.highcharts.exportingMod.highchartsAugmentingMod.Fullscreen & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Fullscreen */ Any) = js.native
   
   /**
     * Get an axis, series or point object by `id` as given in the configuration
@@ -493,6 +479,15 @@ class Chart_ protected () extends StObject {
     * @return true if the chart is in series boost mode
     */
   def isChartSeriesBoosting(chart: Chart): Boolean = js.native
+  /**
+    * Returns true if the chart is in series boost mode.
+    *
+    * @param chart
+    *        the chart to check
+    *
+    * @return true if the chart is in series boost mode
+    */
+  def isChartSeriesBoosting(chart: typings.highcharts.boostMod.highchartsAugmentingMod.Chart): Boolean = js.native
   
   /**
     * Check whether a given point is within the plot area.
@@ -503,13 +498,13 @@ class Chart_ protected () extends StObject {
     * @param plotY
     *        Pixel y relative to the plot area.
     *
-    * @param inverted
-    *        Whether the chart is inverted.
+    * @param options
+    *        Options object.
     *
     * @return Returns true if the given point is inside the plot area.
     */
   def isInsidePlot(plotX: Double, plotY: Double): Boolean = js.native
-  def isInsidePlot(plotX: Double, plotY: Double, inverted: Boolean): Boolean = js.native
+  def isInsidePlot(plotX: Double, plotY: Double, options: ChartIsInsideOptionsObject): Boolean = js.native
   
   /**
     * Apply context to a format string from lang options of the chart.
@@ -522,7 +517,7 @@ class Chart_ protected () extends StObject {
     *
     * @return The formatted string.
     */
-  def langFormat(langKey: String, context: Dictionary[js.Any]): String = js.native
+  def langFormat(langKey: String, context: Dictionary[Any]): String = js.native
   
   /**
     * The overview of the chart's series.
@@ -530,61 +525,65 @@ class Chart_ protected () extends StObject {
   var legend: Legend = js.native
   
   /**
-    * Highmaps only. Zoom in or out of the map. See also Point#zoomTo. See
-    * Chart#fromLatLonToPoint for how to get the `centerX` and `centerY`
-    * parameters for a geographic location.
+    * Highcharts Maps only. Zoom in or out of the map. See also
+    * Point#zoomTo. See Chart#fromLatLonToPoint for how to get the
+    * `centerX` and `centerY` parameters for a geographic location.
+    *
+    * Deprecated as of v9.3 in favor of MapView.zoomBy.
     *
     * @param howMuch
     *        How much to zoom the map. Values less than 1 zooms in. 0.5
     *        zooms in to half the current view. 2 zooms to twice the
     *        current view. If omitted, the zoom is reset.
     *
-    * @param centerX
-    *        The X axis position to center around if available space.
+    * @param xProjected
+    *        The projected x position to keep stationary when zooming, if
+    *        available space.
     *
-    * @param centerY
-    *        The Y axis position to center around if available space.
+    * @param yProjected
+    *        The projected y position to keep stationary when zooming, if
+    *        available space.
     *
-    * @param mouseX
-    *        Fix the zoom to this position if possible. This is used for
-    *        example in mousewheel events, where the area under the mouse
-    *        should be fixed as we zoom in.
+    * @param chartX
+    *        Keep this chart position stationary if possible. This is used
+    *        for example in mousewheel events, where the area under the
+    *        mouse should be fixed as we zoom in.
     *
-    * @param mouseY
-    *        Fix the zoom to this position if possible.
+    * @param chartY
+    *        Keep this chart position stationary if possible.
     */
   def mapZoom(): Unit = js.native
   def mapZoom(howMuch: Double): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Double): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Double, centerY: Double): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Double, centerY: Double, mouseX: Double): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Double, centerY: Double, mouseX: Double, mouseY: Double): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Double, centerY: Double, mouseX: Unit, mouseY: Double): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Double, centerY: Unit, mouseX: Double): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Double, centerY: Unit, mouseX: Double, mouseY: Double): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Double, centerY: Unit, mouseX: Unit, mouseY: Double): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Unit, centerY: Double): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Unit, centerY: Double, mouseX: Double): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Unit, centerY: Double, mouseX: Double, mouseY: Double): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Unit, centerY: Double, mouseX: Unit, mouseY: Double): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Unit, centerY: Unit, mouseX: Double): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Unit, centerY: Unit, mouseX: Double, mouseY: Double): Unit = js.native
-  def mapZoom(howMuch: Double, centerX: Unit, centerY: Unit, mouseX: Unit, mouseY: Double): Unit = js.native
-  def mapZoom(howMuch: Unit, centerX: Double): Unit = js.native
-  def mapZoom(howMuch: Unit, centerX: Double, centerY: Double): Unit = js.native
-  def mapZoom(howMuch: Unit, centerX: Double, centerY: Double, mouseX: Double): Unit = js.native
-  def mapZoom(howMuch: Unit, centerX: Double, centerY: Double, mouseX: Double, mouseY: Double): Unit = js.native
-  def mapZoom(howMuch: Unit, centerX: Double, centerY: Double, mouseX: Unit, mouseY: Double): Unit = js.native
-  def mapZoom(howMuch: Unit, centerX: Double, centerY: Unit, mouseX: Double): Unit = js.native
-  def mapZoom(howMuch: Unit, centerX: Double, centerY: Unit, mouseX: Double, mouseY: Double): Unit = js.native
-  def mapZoom(howMuch: Unit, centerX: Double, centerY: Unit, mouseX: Unit, mouseY: Double): Unit = js.native
-  def mapZoom(howMuch: Unit, centerX: Unit, centerY: Double): Unit = js.native
-  def mapZoom(howMuch: Unit, centerX: Unit, centerY: Double, mouseX: Double): Unit = js.native
-  def mapZoom(howMuch: Unit, centerX: Unit, centerY: Double, mouseX: Double, mouseY: Double): Unit = js.native
-  def mapZoom(howMuch: Unit, centerX: Unit, centerY: Double, mouseX: Unit, mouseY: Double): Unit = js.native
-  def mapZoom(howMuch: Unit, centerX: Unit, centerY: Unit, mouseX: Double): Unit = js.native
-  def mapZoom(howMuch: Unit, centerX: Unit, centerY: Unit, mouseX: Double, mouseY: Double): Unit = js.native
-  def mapZoom(howMuch: Unit, centerX: Unit, centerY: Unit, mouseX: Unit, mouseY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, xProjected: Double): Unit = js.native
+  def mapZoom(howMuch: Double, xProjected: Double, yProjected: Double): Unit = js.native
+  def mapZoom(howMuch: Double, xProjected: Double, yProjected: Double, chartX: Double): Unit = js.native
+  def mapZoom(howMuch: Double, xProjected: Double, yProjected: Double, chartX: Double, chartY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, xProjected: Double, yProjected: Double, chartX: Unit, chartY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, xProjected: Double, yProjected: Unit, chartX: Double): Unit = js.native
+  def mapZoom(howMuch: Double, xProjected: Double, yProjected: Unit, chartX: Double, chartY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, xProjected: Double, yProjected: Unit, chartX: Unit, chartY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, xProjected: Unit, yProjected: Double): Unit = js.native
+  def mapZoom(howMuch: Double, xProjected: Unit, yProjected: Double, chartX: Double): Unit = js.native
+  def mapZoom(howMuch: Double, xProjected: Unit, yProjected: Double, chartX: Double, chartY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, xProjected: Unit, yProjected: Double, chartX: Unit, chartY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, xProjected: Unit, yProjected: Unit, chartX: Double): Unit = js.native
+  def mapZoom(howMuch: Double, xProjected: Unit, yProjected: Unit, chartX: Double, chartY: Double): Unit = js.native
+  def mapZoom(howMuch: Double, xProjected: Unit, yProjected: Unit, chartX: Unit, chartY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, xProjected: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, xProjected: Double, yProjected: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, xProjected: Double, yProjected: Double, chartX: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, xProjected: Double, yProjected: Double, chartX: Double, chartY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, xProjected: Double, yProjected: Double, chartX: Unit, chartY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, xProjected: Double, yProjected: Unit, chartX: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, xProjected: Double, yProjected: Unit, chartX: Double, chartY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, xProjected: Double, yProjected: Unit, chartX: Unit, chartY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, xProjected: Unit, yProjected: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, xProjected: Unit, yProjected: Double, chartX: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, xProjected: Unit, yProjected: Double, chartX: Double, chartY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, xProjected: Unit, yProjected: Double, chartX: Unit, chartY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, xProjected: Unit, yProjected: Unit, chartX: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, xProjected: Unit, yProjected: Unit, chartX: Double, chartY: Double): Unit = js.native
+  def mapZoom(howMuch: Unit, xProjected: Unit, yProjected: Unit, chartX: Unit, chartY: Double): Unit = js.native
   
   /**
     * Callback function to override the default function that formats all the
@@ -652,24 +651,6 @@ class Chart_ protected () extends StObject {
     * @fires Highcharts.Chart#afterPrint
     */
   def print(): Unit = js.native
-  
-  /**
-    * These properties cause isDirtyBox to be set to true when updating. Can be
-    * extended from plugins.
-    */
-  var propsRequireDirtyBox: js.Any = js.native
-  
-  /**
-    * These properties require a full reflow of chart elements, best
-    * implemented through running `Chart.setSize` internally (#8190).
-    */
-  var propsRequireReflow: js.Array[js.Any] = js.native
-  
-  /**
-    * These properties cause all series to be updated when updating. Can be
-    * extended from plugins.
-    */
-  var propsRequireUpdateSeries: js.Any = js.native
   
   /**
     * Redraw the chart after changes have been done to the data, axis extremes
@@ -930,8 +911,8 @@ class Chart_ protected () extends StObject {
   var tooltip: Tooltip = js.native
   
   /**
-    * Highmaps only. Get point from latitude and longitude using specified
-    * transform definition.
+    * Highcharts Maps only. Get point from latitude and longitude using
+    * specified transform definition.
     *
     * @param latLon
     *        A latitude/longitude object.
@@ -942,10 +923,10 @@ class Chart_ protected () extends StObject {
     *
     * @return An object with `x` and `y` properties.
     */
-  def transformFromLatLon(latLon: typings.highcharts.mapMod.highchartsAugmentingMod.MapLatLonObject, transform: js.Any): typings.highcharts.mapMod.highchartsAugmentingMod.MapCoordinateObject = js.native
+  def transformFromLatLon(latLon: typings.highcharts.mapMod.highchartsAugmentingMod.MapLonLatObject, transform: Any): typings.highcharts.mapMod.highchartsAugmentingMod.ProjectedXY = js.native
   
   /**
-    * Highmaps only. Get latLon from point using specified transform
+    * Highcharts Maps only. Get latLon from point using specified transform
     * definition. The method returns an object with the numeric properties
     * `lat` and `lon`.
     *
@@ -959,8 +940,8 @@ class Chart_ protected () extends StObject {
     *
     * @return An object with `lat` and `lon` properties.
     */
-  def transformToLatLon(point: typings.highcharts.mapMod.highchartsAugmentingMod.MapCoordinateObject, transform: js.Any): js.UndefOr[typings.highcharts.mapMod.highchartsAugmentingMod.MapLatLonObject] = js.native
-  def transformToLatLon(point: typings.highcharts.mapMod.highchartsAugmentingMod.Point, transform: js.Any): js.UndefOr[typings.highcharts.mapMod.highchartsAugmentingMod.MapLatLonObject] = js.native
+  def transformToLatLon(point: typings.highcharts.mapMod.highchartsAugmentingMod.Point, transform: Any): js.UndefOr[typings.highcharts.mapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
+  def transformToLatLon(point: typings.highcharts.mapMod.highchartsAugmentingMod.ProjectedXY, transform: Any): js.UndefOr[typings.highcharts.mapMod.highchartsAugmentingMod.MapLonLatObject] = js.native
   
   /**
     * A generic function to update any element of the chart. Elements can be

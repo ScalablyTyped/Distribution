@@ -21,7 +21,7 @@ object global {
       *
       * @param color - the color as one of the valid color input format.
       */
-    class ^ ()
+    open class ^ ()
       extends StObject
          with Instance {
       def this(color: ColorInput) = this()

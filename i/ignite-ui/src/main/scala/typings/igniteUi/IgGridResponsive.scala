@@ -11,7 +11,7 @@ trait IgGridResponsive
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * When windowWidthToRenderVertically is null, determine minimal widths columns can take before
@@ -88,7 +88,7 @@ trait IgGridResponsive
     * The recognized types of environments and their configuration.
     *
     */
-  var responsiveModes: js.UndefOr[js.Any] = js.undefined
+  var responsiveModes: js.UndefOr[Any] = js.undefined
   
   /**
     * The amount of pixels the window needs to resize with for the grid to respond.
@@ -100,7 +100,7 @@ trait IgGridResponsive
     * Specifies a template to render a record with in a list-view style layout per mode.
     *
     */
-  var singleColumnTemplate: js.UndefOr[js.Any] = js.undefined
+  var singleColumnTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * The width of the values column when vertical rendering is enabled
@@ -140,7 +140,7 @@ object IgGridResponsive {
     
     inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    inline def setColumnSettingsVarargs(value: IgGridResponsiveColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
+    inline def setColumnSettingsVarargs(value: IgGridResponsiveColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value*))
     
     inline def setEnableVerticalRendering(value: Boolean): Self = StObject.set(x, "enableVerticalRendering", value.asInstanceOf[js.Any])
     
@@ -182,7 +182,7 @@ object IgGridResponsive {
     
     inline def setResponsiveModeChangedUndefined: Self = StObject.set(x, "responsiveModeChanged", js.undefined)
     
-    inline def setResponsiveModes(value: js.Any): Self = StObject.set(x, "responsiveModes", value.asInstanceOf[js.Any])
+    inline def setResponsiveModes(value: Any): Self = StObject.set(x, "responsiveModes", value.asInstanceOf[js.Any])
     
     inline def setResponsiveModesUndefined: Self = StObject.set(x, "responsiveModes", js.undefined)
     
@@ -190,7 +190,7 @@ object IgGridResponsive {
     
     inline def setResponsiveSensitivityUndefined: Self = StObject.set(x, "responsiveSensitivity", js.undefined)
     
-    inline def setSingleColumnTemplate(value: js.Any): Self = StObject.set(x, "singleColumnTemplate", value.asInstanceOf[js.Any])
+    inline def setSingleColumnTemplate(value: Any): Self = StObject.set(x, "singleColumnTemplate", value.asInstanceOf[js.Any])
     
     inline def setSingleColumnTemplateUndefined: Self = StObject.set(x, "singleColumnTemplate", js.undefined)
     

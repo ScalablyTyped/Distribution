@@ -1,7 +1,6 @@
 package typings.loglevelPluginPrefix
 
 import typings.loglevel.mod.Logger
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object mod {
         js.Function3[
           /* level */ String, 
           /* name */ js.UndefOr[String], 
-          /* timestamp */ Date, 
+          /* timestamp */ js.Date, 
           js.UndefOr[String]
         ]
       ] = js.undefined
@@ -34,7 +33,7 @@ object mod {
     
     var template: js.UndefOr[String] = js.undefined
     
-    var timestampFormatter: js.UndefOr[js.Function1[/* date */ Date, String]] = js.undefined
+    var timestampFormatter: js.UndefOr[js.Function1[/* date */ js.Date, String]] = js.undefined
   }
   object LoglevelPluginPrefixOptions {
     
@@ -46,7 +45,7 @@ object mod {
     extension [Self <: LoglevelPluginPrefixOptions](x: Self) {
       
       inline def setFormat(
-        value: (/* level */ String, /* name */ js.UndefOr[String], /* timestamp */ Date) => js.UndefOr[String]
+        value: (/* level */ String, /* name */ js.UndefOr[String], /* timestamp */ js.Date) => js.UndefOr[String]
       ): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
@@ -63,7 +62,7 @@ object mod {
       
       inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      inline def setTimestampFormatter(value: /* date */ Date => String): Self = StObject.set(x, "timestampFormatter", js.Any.fromFunction1(value))
+      inline def setTimestampFormatter(value: /* date */ js.Date => String): Self = StObject.set(x, "timestampFormatter", js.Any.fromFunction1(value))
       
       inline def setTimestampFormatterUndefined: Self = StObject.set(x, "timestampFormatter", js.undefined)
     }

@@ -10,7 +10,7 @@ object scaleBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/scaleBlock", "ScaleBlock")
   @js.native
-  class ScaleBlock protected () extends NodeMaterialBlock {
+  open class ScaleBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new ScaleBlock
       * @param name defines the block name

@@ -21,17 +21,17 @@ trait WLResourceRequest extends StObject {
   
   def getMethod(): String = js.native
   
-  def getQueryParameters(): js.Any = js.native
+  def getQueryParameters(): Any = js.native
   
   // JSON
   def getTimeout(): Double = js.native
   
   def getUrl(): String = js.native
   
-  def send(): JQueryDeferred[js.Any] = js.native
-  def send(content: js.Any): JQueryDeferred[js.Any] = js.native
+  def send(): JQueryDeferred[Any] = js.native
+  def send(content: Any): JQueryDeferred[Any] = js.native
   
-  def sendFormParameters(json: js.Object): JQueryDeferred[js.Any] = js.native
+  def sendFormParameters(json: js.Object): JQueryDeferred[Any] = js.native
   
   def setHeader(name: String, value: String): Unit = js.native
   def setHeader(name: String, value: Boolean): Unit = js.native

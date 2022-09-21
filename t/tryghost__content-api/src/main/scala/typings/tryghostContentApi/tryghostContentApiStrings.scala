@@ -62,4 +62,12 @@ object tryghostContentApiStrings {
   @js.native
   sealed trait v3 extends StObject
   inline def v3: v3 = "v3".asInstanceOf[v3]
+  
+  @js.native
+  sealed trait v4 extends StObject
+  inline def v4: v4 = "v4".asInstanceOf[v4]
+  
+  @js.native
+  sealed trait v5Dot0 extends StObject
+  inline def v5Dot0: v5Dot0 = "v5.0".asInstanceOf[v5Dot0]
 }

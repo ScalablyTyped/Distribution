@@ -22,10 +22,9 @@ object accordionAccordionAccordionMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Accordion/AccordionAccordion", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[AccordionAccordionProps, ComponentState, js.Any] {
+  open class default protected () extends Component[AccordionAccordionProps, ComponentState, Any] {
     def this(props: AccordionAccordionProps) = this()
-    def this(props: AccordionAccordionProps, context: js.Any) = this()
+    def this(props: AccordionAccordionProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Accordion/AccordionAccordion", JSImport.Default)
   @js.native
@@ -34,7 +33,7 @@ object accordionAccordionAccordionMod extends Shortcut {
   trait AccordionAccordionProps
     extends StObject
        with StrictAccordionAccordionProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object AccordionAccordionProps {
     
     inline def apply(): AccordionAccordionProps = {
@@ -49,7 +48,7 @@ object accordionAccordionAccordionMod extends Shortcut {
     var activeIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -93,9 +92,9 @@ object accordionAccordionAccordionMod extends Shortcut {
       
       inline def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
       
-      inline def setActiveIndexVarargs(value: Double*): Self = StObject.set(x, "activeIndex", js.Array(value :_*))
+      inline def setActiveIndexVarargs(value: Double*): Self = StObject.set(x, "activeIndex", js.Array(value*))
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -111,7 +110,7 @@ object accordionAccordionAccordionMod extends Shortcut {
       
       inline def setDefaultActiveIndexUndefined: Self = StObject.set(x, "defaultActiveIndex", js.undefined)
       
-      inline def setDefaultActiveIndexVarargs(value: Double*): Self = StObject.set(x, "defaultActiveIndex", js.Array(value :_*))
+      inline def setDefaultActiveIndexVarargs(value: Double*): Self = StObject.set(x, "defaultActiveIndex", js.Array(value*))
       
       inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
@@ -127,7 +126,7 @@ object accordionAccordionAccordionMod extends Shortcut {
       
       inline def setPanelsUndefined: Self = StObject.set(x, "panels", js.undefined)
       
-      inline def setPanelsVarargs(value: SemanticShorthandItem[AccordionPanelProps]*): Self = StObject.set(x, "panels", js.Array(value :_*))
+      inline def setPanelsVarargs(value: SemanticShorthandItem[AccordionPanelProps]*): Self = StObject.set(x, "panels", js.Array(value*))
     }
   }
   

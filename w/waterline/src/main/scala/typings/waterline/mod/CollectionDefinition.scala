@@ -15,7 +15,7 @@ trait CollectionDefinition
   
   var connection: js.UndefOr[String] = js.undefined
   
-  var dataEncryptionKeys: js.UndefOr[js.Any] = js.undefined
+  var dataEncryptionKeys: js.UndefOr[Any] = js.undefined
   
   var datastore: js.UndefOr[String] = js.undefined
   
@@ -29,7 +29,7 @@ trait CollectionDefinition
   
   var tableName: js.UndefOr[String] = js.undefined
   
-  var types: js.UndefOr[js.Any] = js.undefined
+  var types: js.UndefOr[Any] = js.undefined
 }
 object CollectionDefinition {
   
@@ -48,7 +48,7 @@ object CollectionDefinition {
     
     inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
-    inline def setDataEncryptionKeys(value: js.Any): Self = StObject.set(x, "dataEncryptionKeys", value.asInstanceOf[js.Any])
+    inline def setDataEncryptionKeys(value: Any): Self = StObject.set(x, "dataEncryptionKeys", value.asInstanceOf[js.Any])
     
     inline def setDataEncryptionKeysUndefined: Self = StObject.set(x, "dataEncryptionKeys", js.undefined)
     
@@ -76,7 +76,7 @@ object CollectionDefinition {
     
     inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
     
-    inline def setTypes(value: js.Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
   }

@@ -9,11 +9,10 @@ sealed trait ItemNotificationMessageType extends StObject
 /**
   * Specifies the notification message type for an appointment or message.
   *
+  * @remarks
   * [Api set: Mailbox 1.3]
   *
-  * @remarks
-  *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.ItemNotificationMessageType")
 @js.native
@@ -38,9 +37,8 @@ object ItemNotificationMessageType extends StObject {
   /**
     * The notification message is an informational message with actions.
     *
-    * [Api set: Mailbox Preview]
-    *
-    * @beta
+    * @remarks
+    * [Api set: Mailbox 1.10]
     */
   @js.native
   sealed trait InsightMessage

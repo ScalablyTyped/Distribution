@@ -8,8 +8,10 @@ trait RTCPeerConnectionIceEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var candidate: js.UndefOr[RTCIceCandidate | Null] = js.undefined
   
+  /* standard dom */
   var url: js.UndefOr[java.lang.String | Null] = js.undefined
 }
 object RTCPeerConnectionIceEventInit {

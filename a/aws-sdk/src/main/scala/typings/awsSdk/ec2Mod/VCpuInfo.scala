@@ -56,12 +56,12 @@ object VCpuInfo {
     
     inline def setValidCoresUndefined: Self = StObject.set(x, "ValidCores", js.undefined)
     
-    inline def setValidCoresVarargs(value: CoreCount*): Self = StObject.set(x, "ValidCores", js.Array(value :_*))
+    inline def setValidCoresVarargs(value: CoreCount*): Self = StObject.set(x, "ValidCores", js.Array(value*))
     
     inline def setValidThreadsPerCore(value: ThreadsPerCoreList): Self = StObject.set(x, "ValidThreadsPerCore", value.asInstanceOf[js.Any])
     
     inline def setValidThreadsPerCoreUndefined: Self = StObject.set(x, "ValidThreadsPerCore", js.undefined)
     
-    inline def setValidThreadsPerCoreVarargs(value: ThreadsPerCore*): Self = StObject.set(x, "ValidThreadsPerCore", js.Array(value :_*))
+    inline def setValidThreadsPerCoreVarargs(value: ThreadsPerCore*): Self = StObject.set(x, "ValidThreadsPerCore", js.Array(value*))
   }
 }

@@ -1,7 +1,6 @@
 package typings.durandal
 
 import typings.durandal.anon.Callback
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +14,12 @@ trait DurandalRouterBase[T]
     * An observable surfacing the active routing instruction that is currently being processed or has recently finished processing.
     * The instruction object has `config`, `fragment`, `queryString`, `params` and `queryParams` properties.
     */
-  var activeInstruction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<DurandalRouteInstruction> */ js.Any = js.native
+  var activeInstruction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<DurandalRouteInstruction> */ Any = js.native
   
   /**
     * The active item/screen based on the current navigation state.
     */
-  var activeItem: DurandalActivator[js.Any] = js.native
+  var activeItem: DurandalActivator[Any] = js.native
   
   /**
     * Builds an observable array designed to bind a navigation UI to. The model will exist in the `navigationModel` property.
@@ -80,7 +79,7 @@ trait DurandalRouterBase[T]
   /**
     * Indicates that the router (or a child router) is currently in the process of navigating.
     */
-  var isNavigating: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any = js.native
+  var isNavigating: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ Any = js.native
   
   /**
     * Attempt to load the specified URL fragment. If a route succeeds with a match, returns `true`. If no defined routes matches the fragment, returns `false`.
@@ -141,14 +140,14 @@ trait DurandalRouterBase[T]
     * @param {RouteConfiguration} config The route's configuration.
     * @chainable
     */
-  def map(route: RegExp, config: DurandalRouteConfiguration): T = js.native
+  def map(route: js.RegExp, config: DurandalRouteConfiguration): T = js.native
   /**
     * Maps route patterns to modules.
     * @param {RegExp} route A route pattern.
     * @param {string} moduleId The module id to map the route to.
     * @chainable
     */
-  def map(route: RegExp, moduleId: String): T = js.native
+  def map(route: js.RegExp, moduleId: String): T = js.native
   
   /**
     * Configures the router to map unknown routes to modules at the same path.
@@ -210,7 +209,7 @@ trait DurandalRouterBase[T]
   /**
     * The route configurations that have been designated as displayable in a nav ui (nav:true).
     */
-  var navigationModel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<DurandalRouteConfiguration> */ js.Any = js.native
+  var navigationModel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<DurandalRouteConfiguration> */ Any = js.native
   
   /**
     * Parent router of the current child router.
@@ -235,7 +234,7 @@ trait DurandalRouterBase[T]
     * @param {RegEx} routePattern The route pattern to test against.
     * @param {function} callback The callback to execute when the route pattern is matched.
     */
-  def route(routePattern: RegExp, callback: js.Function1[/* fragment */ String, Unit]): Unit = js.native
+  def route(routePattern: js.RegExp, callback: js.Function1[/* fragment */ String, Unit]): Unit = js.native
   
   /**
     * The route configs that are registered.

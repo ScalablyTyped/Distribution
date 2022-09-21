@@ -1,7 +1,6 @@
 package typings.nodeSchedule
 
 import typings.node.eventsMod.EventEmitter
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +13,10 @@ object mod {
   
   @JSImport("node-schedule", "Invocation")
   @js.native
-  class Invocation protected () extends StObject {
-    def this(job: Job, fireDate: Date, recurrenceRule: RecurrenceRule) = this()
+  open class Invocation protected () extends StObject {
+    def this(job: Job, fireDate: js.Date, recurrenceRule: RecurrenceRule) = this()
     
-    var fireDate: Date = js.native
+    var fireDate: js.Date = js.native
     
     var job: Job = js.native
     
@@ -28,7 +27,7 @@ object mod {
   
   @JSImport("node-schedule", "Job")
   @js.native
-  class Job protected () extends EventEmitter {
+  open class Job protected () extends EventEmitter {
     /**
       * Use the function scheduleJob() to create new Job objects.
       *
@@ -73,7 +72,7 @@ object mod {
     val name: String = js.native
     
     /** The Date on which this Job will be run next. */
-    def nextInvocation(): Date = js.native
+    def nextInvocation(): js.Date = js.native
     
     /** A list of all pending Invocations */
     def pendingInvocations(): js.Array[Invocation] = js.native
@@ -87,12 +86,12 @@ object mod {
     def reschedule(spec: RecurrenceRule): Boolean = js.native
     
     /** schedule this Job to be run on the specified date. */
-    def runOnDate(date: Date): Unit = js.native
+    def runOnDate(date: js.Date): Unit = js.native
     
     def schedule(date: String): Boolean = js.native
-    def schedule(date: Double): Boolean = js.native
     /** set scheduling information */
-    def schedule(date: Date): Boolean = js.native
+    def schedule(date: js.Date): Boolean = js.native
+    def schedule(date: Double): Boolean = js.native
     
     /**
       * set the number of currently running Jobs.
@@ -123,7 +122,7 @@ object mod {
   
   @JSImport("node-schedule", "Range")
   @js.native
-  class Range () extends StObject {
+  open class Range () extends StObject {
     def this(start: Double) = this()
     def this(start: Double, end: Double) = this()
     def this(start: Unit, end: Double) = this()
@@ -138,7 +137,7 @@ object mod {
   
   @JSImport("node-schedule", "RecurrenceRule")
   @js.native
-  class RecurrenceRule protected () extends StObject {
+  open class RecurrenceRule protected () extends StObject {
     def this(
       year: js.UndefOr[RecurrenceSegment],
       month: js.UndefOr[RecurrenceSegment],
@@ -163,7 +162,7 @@ object mod {
     
     var month: RecurrenceSegment = js.native
     
-    def nextInvocationDate(base: Date): Date = js.native
+    def nextInvocationDate(base: js.Date): js.Date = js.native
     
     var second: RecurrenceSegment = js.native
     
@@ -175,31 +174,33 @@ object mod {
   inline def cancelJob(job: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelJob")(job.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def cancelJob(job: Job): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelJob")(job.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  inline def gracefulShutdown(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("gracefulShutdown")().asInstanceOf[js.Promise[Unit]]
+  
   inline def rescheduleJob(job: String, spec: String): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def rescheduleJob(job: String, spec: js.Date): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def rescheduleJob(job: String, spec: RecurrenceRule): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def rescheduleJob(job: String, spec: RecurrenceSpecDateRange): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def rescheduleJob(job: String, spec: RecurrenceSpecObjLit): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
-  inline def rescheduleJob(job: String, spec: Date): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def rescheduleJob(job: Job, spec: String): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def rescheduleJob(job: Job, spec: js.Date): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def rescheduleJob(job: Job, spec: RecurrenceRule): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def rescheduleJob(job: Job, spec: RecurrenceSpecDateRange): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def rescheduleJob(job: Job, spec: RecurrenceSpecObjLit): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
-  inline def rescheduleJob(job: Job, spec: Date): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("rescheduleJob")(job.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Job]
   
   inline def scheduleJob(name: String, rule: String, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def scheduleJob(name: String, rule: js.Date, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def scheduleJob(name: String, rule: Double, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def scheduleJob(name: String, rule: RecurrenceRule, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def scheduleJob(name: String, rule: RecurrenceSpecDateRange, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def scheduleJob(name: String, rule: RecurrenceSpecObjLit, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
-  inline def scheduleJob(name: String, rule: Date, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(name.asInstanceOf[js.Any], rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def scheduleJob(rule: String, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
+  inline def scheduleJob(rule: js.Date, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def scheduleJob(rule: Double, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def scheduleJob(rule: RecurrenceRule, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def scheduleJob(rule: RecurrenceSpecDateRange, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
   inline def scheduleJob(rule: RecurrenceSpecObjLit, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
-  inline def scheduleJob(rule: Date, callback: JobCallback): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleJob")(rule.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Job]
   
-  type JobCallback = js.Function1[/* fireDate */ Date, Unit]
+  type JobCallback = js.Function1[/* fireDate */ js.Date, Unit | js.Promise[Any]]
   
   type Recurrence = Double | Range | String
   
@@ -210,7 +211,7 @@ object mod {
     /**
       * Ending date in date range.
       */
-    var end: js.UndefOr[Date | String | Double] = js.undefined
+    var end: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * Cron expression string.
@@ -220,7 +221,7 @@ object mod {
     /**
       * Starting date in date range.
       */
-    var start: js.UndefOr[Date | String | Double] = js.undefined
+    var start: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * Timezone
@@ -236,13 +237,13 @@ object mod {
     
     extension [Self <: RecurrenceSpecDateRange](x: Self) {
       
-      inline def setEnd(value: Date | String | Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: js.Date | String | Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
       inline def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
-      inline def setStart(value: Date | String | Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Date | String | Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
@@ -289,37 +290,37 @@ object mod {
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      inline def setDateVarargs(value: Recurrence*): Self = StObject.set(x, "date", js.Array(value :_*))
+      inline def setDateVarargs(value: Recurrence*): Self = StObject.set(x, "date", js.Array(value*))
       
       inline def setDayOfWeek(value: RecurrenceSegment): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
       
       inline def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
       
-      inline def setDayOfWeekVarargs(value: Recurrence*): Self = StObject.set(x, "dayOfWeek", js.Array(value :_*))
+      inline def setDayOfWeekVarargs(value: Recurrence*): Self = StObject.set(x, "dayOfWeek", js.Array(value*))
       
       inline def setHour(value: RecurrenceSegment): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
       inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
       
-      inline def setHourVarargs(value: Recurrence*): Self = StObject.set(x, "hour", js.Array(value :_*))
+      inline def setHourVarargs(value: Recurrence*): Self = StObject.set(x, "hour", js.Array(value*))
       
       inline def setMinute(value: RecurrenceSegment): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
       inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
       
-      inline def setMinuteVarargs(value: Recurrence*): Self = StObject.set(x, "minute", js.Array(value :_*))
+      inline def setMinuteVarargs(value: Recurrence*): Self = StObject.set(x, "minute", js.Array(value*))
       
       inline def setMonth(value: RecurrenceSegment): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
       inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
       
-      inline def setMonthVarargs(value: Recurrence*): Self = StObject.set(x, "month", js.Array(value :_*))
+      inline def setMonthVarargs(value: Recurrence*): Self = StObject.set(x, "month", js.Array(value*))
       
       inline def setSecond(value: RecurrenceSegment): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
       inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
       
-      inline def setSecondVarargs(value: Recurrence*): Self = StObject.set(x, "second", js.Array(value :_*))
+      inline def setSecondVarargs(value: Recurrence*): Self = StObject.set(x, "second", js.Array(value*))
       
       inline def setTz(value: Timezone): Self = StObject.set(x, "tz", value.asInstanceOf[js.Any])
       
@@ -329,7 +330,7 @@ object mod {
       
       inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
       
-      inline def setYearVarargs(value: Recurrence*): Self = StObject.set(x, "year", js.Array(value :_*))
+      inline def setYearVarargs(value: Recurrence*): Self = StObject.set(x, "year", js.Array(value*))
     }
   }
   

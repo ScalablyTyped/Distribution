@@ -12,7 +12,7 @@ trait AnalyzedResourceSummary extends StObject {
   var resourceArn: ResourceArn
   
   /**
-    * The AWS account ID that owns the resource.
+    * The Amazon Web Services account ID that owns the resource.
     */
   var resourceOwnerAccount: String
   

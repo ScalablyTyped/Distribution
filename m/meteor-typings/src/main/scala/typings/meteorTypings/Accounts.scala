@@ -17,7 +17,7 @@ object Accounts {
     
     var error: Error
     
-    var methodArguments: js.Array[js.Any]
+    var methodArguments: js.Array[Any]
     
     var methodName: String
     
@@ -31,7 +31,7 @@ object Accounts {
       allowed: Boolean,
       connection: Connection,
       error: Error,
-      methodArguments: js.Array[js.Any],
+      methodArguments: js.Array[Any],
       methodName: String,
       `type`: String,
       user: User
@@ -49,9 +49,9 @@ object Accounts {
       
       inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setMethodArguments(value: js.Array[js.Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
+      inline def setMethodArguments(value: js.Array[Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
       
-      inline def setMethodArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "methodArguments", js.Array(value :_*))
+      inline def setMethodArgumentsVarargs(value: Any*): Self = StObject.set(x, "methodArguments", js.Array(value*))
       
       inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       

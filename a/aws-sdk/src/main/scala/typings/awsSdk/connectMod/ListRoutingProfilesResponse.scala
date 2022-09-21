@@ -33,6 +33,6 @@ object ListRoutingProfilesResponse {
     
     inline def setRoutingProfileSummaryListUndefined: Self = StObject.set(x, "RoutingProfileSummaryList", js.undefined)
     
-    inline def setRoutingProfileSummaryListVarargs(value: RoutingProfileSummary*): Self = StObject.set(x, "RoutingProfileSummaryList", js.Array(value :_*))
+    inline def setRoutingProfileSummaryListVarargs(value: RoutingProfileSummary*): Self = StObject.set(x, "RoutingProfileSummaryList", js.Array(value*))
   }
 }

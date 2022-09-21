@@ -9,7 +9,7 @@ object languageMod {
   
   @JSImport("yadda/lib/localisation/Language", JSImport.Namespace)
   @js.native
-  class ^[TLibrary /* <: Library */] protected ()
+  open class ^[TLibrary /* <: Library */] protected ()
     extends StObject
        with Language[TLibrary] {
     def this(name: String, vocabulary: Vocabulary) = this()
@@ -45,7 +45,7 @@ object languageMod {
       
       inline def set_steps(value: js.Array[String]): Self = StObject.set(x, "_steps", value.asInstanceOf[js.Any])
       
-      inline def set_stepsVarargs(value: String*): Self = StObject.set(x, "_steps", js.Array(value :_*))
+      inline def set_stepsVarargs(value: String*): Self = StObject.set(x, "_steps", js.Array(value*))
     }
   }
 }

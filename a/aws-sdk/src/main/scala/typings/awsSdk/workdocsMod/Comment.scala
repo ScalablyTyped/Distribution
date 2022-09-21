@@ -19,7 +19,7 @@ trait Comment extends StObject {
   /**
     * The time that the comment was created.
     */
-  var CreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the parent comment.
@@ -66,7 +66,7 @@ object Comment {
     
     inline def setContributorUndefined: Self = StObject.set(x, "Contributor", js.undefined)
     
-    inline def setCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     

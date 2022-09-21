@@ -24,6 +24,6 @@ object DataSetSchema {
     
     inline def setColumnSchemaListUndefined: Self = StObject.set(x, "ColumnSchemaList", js.undefined)
     
-    inline def setColumnSchemaListVarargs(value: ColumnSchema*): Self = StObject.set(x, "ColumnSchemaList", js.Array(value :_*))
+    inline def setColumnSchemaListVarargs(value: ColumnSchema*): Self = StObject.set(x, "ColumnSchemaList", js.Array(value*))
   }
 }

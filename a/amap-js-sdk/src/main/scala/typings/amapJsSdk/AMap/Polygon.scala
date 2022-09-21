@@ -15,7 +15,7 @@ trait Polygon
   
   def getBounds(): Bounds = js.native
   
-  def getExtData(): js.Any = js.native
+  def getExtData(): Any = js.native
   
   def getOptions(): PolygonOptions = js.native
   
@@ -23,7 +23,7 @@ trait Polygon
   
   def hide(): Unit = js.native
   
-  def setExtData(ext: js.Any): Unit = js.native
+  def setExtData(ext: Any): Unit = js.native
   
   def setMap(map: Map): Unit = js.native
   

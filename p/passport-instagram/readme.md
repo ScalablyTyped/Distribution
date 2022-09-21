@@ -10,10 +10,10 @@ Instagram authentication strategy for Passport.
 | ------------------ | :-------------: |
 | Full name          | passport-instagram |
 | Keywords           | passport, instagram, auth, authn, authentication, identity |
-| # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 182567 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 17155.0 |
+| # stars            | 160.0 |
 
 ## Links
 - [Homepage](https://github.com/jaredhanson/passport-instagram)

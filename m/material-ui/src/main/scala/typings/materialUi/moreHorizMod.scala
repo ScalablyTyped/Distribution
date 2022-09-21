@@ -10,10 +10,10 @@ object moreHorizMod {
   
   @JSImport("material-ui/svg-icons/navigation/more-horiz", JSImport.Default)
   @js.native
-  class default () extends NavigationMoreHoriz
+  open class default () extends NavigationMoreHoriz
   
   @JSImport("material-ui/svg-icons/navigation/more-horiz", "NavigationMoreHoriz")
   @js.native
-  class NavigationMoreHoriz ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationMoreHoriz ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

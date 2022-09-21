@@ -37,7 +37,7 @@ object ServerConfig {
     
     inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    inline def setChannelsVarargs(value: ReleaseChannelConfig*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: ReleaseChannelConfig*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setDefaultClusterVersion(value: String): Self = StObject.set(x, "defaultClusterVersion", value.asInstanceOf[js.Any])
     
@@ -51,18 +51,18 @@ object ServerConfig {
     
     inline def setValidImageTypesUndefined: Self = StObject.set(x, "validImageTypes", js.undefined)
     
-    inline def setValidImageTypesVarargs(value: String*): Self = StObject.set(x, "validImageTypes", js.Array(value :_*))
+    inline def setValidImageTypesVarargs(value: String*): Self = StObject.set(x, "validImageTypes", js.Array(value*))
     
     inline def setValidMasterVersions(value: js.Array[String]): Self = StObject.set(x, "validMasterVersions", value.asInstanceOf[js.Any])
     
     inline def setValidMasterVersionsUndefined: Self = StObject.set(x, "validMasterVersions", js.undefined)
     
-    inline def setValidMasterVersionsVarargs(value: String*): Self = StObject.set(x, "validMasterVersions", js.Array(value :_*))
+    inline def setValidMasterVersionsVarargs(value: String*): Self = StObject.set(x, "validMasterVersions", js.Array(value*))
     
     inline def setValidNodeVersions(value: js.Array[String]): Self = StObject.set(x, "validNodeVersions", value.asInstanceOf[js.Any])
     
     inline def setValidNodeVersionsUndefined: Self = StObject.set(x, "validNodeVersions", js.undefined)
     
-    inline def setValidNodeVersionsVarargs(value: String*): Self = StObject.set(x, "validNodeVersions", js.Array(value :_*))
+    inline def setValidNodeVersionsVarargs(value: String*): Self = StObject.set(x, "validNodeVersions", js.Array(value*))
   }
 }

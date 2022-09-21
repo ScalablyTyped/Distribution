@@ -1,7 +1,7 @@
 
 # Scala.js typings for yoctodelay
 
-Typings are for version 1.1
+Typings are for version 2.0.0
 
 ## Library description:
 Delay a promise a specified amount of time
@@ -10,10 +10,10 @@ Delay a promise a specified amount of time
 | ------------------ | :-------------: |
 | Full name          | yoctodelay |
 | Keywords           | promise, resolve, delay, defer, wait, stall, timeout, settimeout, event, loop, next, tick, delay, async, await, promises, bluebird |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 20316 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 111537.66666666667 |
+| # stars            | 111.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/yoctodelay#readme)
@@ -24,7 +24,7 @@ Delay a promise a specified amount of time
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

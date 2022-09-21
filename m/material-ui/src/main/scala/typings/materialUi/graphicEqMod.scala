@@ -10,10 +10,10 @@ object graphicEqMod {
   
   @JSImport("material-ui/svg-icons/device/graphic-eq", JSImport.Default)
   @js.native
-  class default () extends DeviceGraphicEq
+  open class default () extends DeviceGraphicEq
   
   @JSImport("material-ui/svg-icons/device/graphic-eq", "DeviceGraphicEq")
   @js.native
-  class DeviceGraphicEq ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceGraphicEq ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

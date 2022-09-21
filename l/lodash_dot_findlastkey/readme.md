@@ -10,10 +10,10 @@ The lodash method `_.findLastKey` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.findlastkey |
 | Keywords           | lodash-modularized, findlastkey |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 4250 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 262.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

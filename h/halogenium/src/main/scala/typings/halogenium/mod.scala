@@ -9,194 +9,194 @@ object mod {
   
   @JSImport("halogenium", "BeatLoader")
   @js.native
-  class BeatLoader protected ()
-    extends Component[MarginLoaderProps, js.Object, js.Any] {
+  open class BeatLoader protected ()
+    extends Component[MarginLoaderProps, js.Object, Any] {
     def this(props: MarginLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MarginLoaderProps, context: js.Any) = this()
+    def this(props: MarginLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogenium", "BounceLoader")
   @js.native
-  class BounceLoader protected ()
-    extends Component[SizeLoaderProps, js.Object, js.Any] {
+  open class BounceLoader protected ()
+    extends Component[SizeLoaderProps, js.Object, Any] {
     def this(props: SizeLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SizeLoaderProps, context: js.Any) = this()
+    def this(props: SizeLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogenium", "ClipLoader")
   @js.native
-  class ClipLoader protected ()
-    extends Component[SizeLoaderProps, js.Object, js.Any] {
+  open class ClipLoader protected ()
+    extends Component[SizeLoaderProps, js.Object, Any] {
     def this(props: SizeLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SizeLoaderProps, context: js.Any) = this()
+    def this(props: SizeLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogenium", "DotLoader")
   @js.native
-  class DotLoader protected ()
-    extends Component[SizeLoaderProps, js.Object, js.Any] {
+  open class DotLoader protected ()
+    extends Component[SizeLoaderProps, js.Object, Any] {
     def this(props: SizeLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SizeLoaderProps, context: js.Any) = this()
+    def this(props: SizeLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogenium", "FadeLoader")
   @js.native
-  class FadeLoader protected ()
-    extends Component[RadiusLoaderProps, js.Object, js.Any] {
+  open class FadeLoader protected ()
+    extends Component[RadiusLoaderProps, js.Object, Any] {
     def this(props: RadiusLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: RadiusLoaderProps, context: js.Any) = this()
+    def this(props: RadiusLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogenium", "GridLoader")
   @js.native
-  class GridLoader protected ()
-    extends Component[MarginLoaderProps, js.Object, js.Any] {
+  open class GridLoader protected ()
+    extends Component[MarginLoaderProps, js.Object, Any] {
     def this(props: MarginLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MarginLoaderProps, context: js.Any) = this()
+    def this(props: MarginLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogenium", "MoonLoader")
   @js.native
-  class MoonLoader protected ()
-    extends Component[SizeLoaderProps, js.Object, js.Any] {
+  open class MoonLoader protected ()
+    extends Component[SizeLoaderProps, js.Object, Any] {
     def this(props: SizeLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SizeLoaderProps, context: js.Any) = this()
+    def this(props: SizeLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogenium", "PacmanLoader")
   @js.native
-  class PacmanLoader protected ()
-    extends Component[MarginLoaderProps, js.Object, js.Any] {
+  open class PacmanLoader protected ()
+    extends Component[MarginLoaderProps, js.Object, Any] {
     def this(props: MarginLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MarginLoaderProps, context: js.Any) = this()
+    def this(props: MarginLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogenium", "PulseLoader")
   @js.native
-  class PulseLoader protected ()
-    extends Component[MarginLoaderProps, js.Object, js.Any] {
+  open class PulseLoader protected ()
+    extends Component[MarginLoaderProps, js.Object, Any] {
     def this(props: MarginLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MarginLoaderProps, context: js.Any) = this()
+    def this(props: MarginLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogenium", "RingLoader")
   @js.native
-  class RingLoader protected ()
-    extends Component[SizeLoaderProps, js.Object, js.Any] {
+  open class RingLoader protected ()
+    extends Component[SizeLoaderProps, js.Object, Any] {
     def this(props: SizeLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SizeLoaderProps, context: js.Any) = this()
+    def this(props: SizeLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogenium", "RiseLoader")
   @js.native
-  class RiseLoader protected ()
-    extends Component[MarginLoaderProps, js.Object, js.Any] {
+  open class RiseLoader protected ()
+    extends Component[MarginLoaderProps, js.Object, Any] {
     def this(props: MarginLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MarginLoaderProps, context: js.Any) = this()
+    def this(props: MarginLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogenium", "RotateLoader")
   @js.native
-  class RotateLoader protected ()
-    extends Component[MarginLoaderProps, js.Object, js.Any] {
+  open class RotateLoader protected ()
+    extends Component[MarginLoaderProps, js.Object, Any] {
     def this(props: MarginLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MarginLoaderProps, context: js.Any) = this()
+    def this(props: MarginLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogenium", "ScaleLoader")
   @js.native
-  class ScaleLoader protected ()
-    extends Component[RadiusLoaderProps, js.Object, js.Any] {
+  open class ScaleLoader protected ()
+    extends Component[RadiusLoaderProps, js.Object, Any] {
     def this(props: RadiusLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: RadiusLoaderProps, context: js.Any) = this()
+    def this(props: RadiusLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogenium", "SkewLoader")
   @js.native
-  class SkewLoader protected ()
-    extends Component[SizeLoaderProps, js.Object, js.Any] {
+  open class SkewLoader protected ()
+    extends Component[SizeLoaderProps, js.Object, Any] {
     def this(props: SizeLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SizeLoaderProps, context: js.Any) = this()
+    def this(props: SizeLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogenium", "SquareLoader")
   @js.native
-  class SquareLoader protected ()
-    extends Component[SizeLoaderProps, js.Object, js.Any] {
+  open class SquareLoader protected ()
+    extends Component[SizeLoaderProps, js.Object, Any] {
     def this(props: SizeLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SizeLoaderProps, context: js.Any) = this()
+    def this(props: SizeLoaderProps, context: Any) = this()
   }
   
   @JSImport("halogenium", "SyncLoader")
   @js.native
-  class SyncLoader protected ()
-    extends Component[MarginLoaderProps, js.Object, js.Any] {
+  open class SyncLoader protected ()
+    extends Component[MarginLoaderProps, js.Object, Any] {
     def this(props: MarginLoaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MarginLoaderProps, context: js.Any) = this()
+    def this(props: MarginLoaderProps, context: Any) = this()
   }
   
   trait HalogenCommonProps extends StObject {

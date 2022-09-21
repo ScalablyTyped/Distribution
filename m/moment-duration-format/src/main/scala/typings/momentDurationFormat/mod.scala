@@ -94,7 +94,7 @@ object mod {
         
         inline def setGroupingUndefined: Self = StObject.set(x, "grouping", js.undefined)
         
-        inline def setGroupingVarargs(value: Double*): Self = StObject.set(x, "grouping", js.Array(value :_*))
+        inline def setGroupingVarargs(value: Double*): Self = StObject.set(x, "grouping", js.Array(value*))
         
         inline def setLargest(value: Double): Self = StObject.set(x, "largest", value.asInstanceOf[js.Any])
         
@@ -124,7 +124,7 @@ object mod {
         
         inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
         
-        inline def setTrimVarargs(value: (UnitOfTrim | String)*): Self = StObject.set(x, "trim", js.Array(value :_*))
+        inline def setTrimVarargs(value: (UnitOfTrim | String)*): Self = StObject.set(x, "trim", js.Array(value*))
         
         inline def setTrunc(value: `true`): Self = StObject.set(x, "trunc", value.asInstanceOf[js.Any])
         
@@ -509,7 +509,7 @@ object mod {
         
         inline def setDurationLabelTypesUndefined: Self = StObject.set(x, "durationLabelTypes", js.undefined)
         
-        inline def setDurationLabelTypesVarargs(value: DurationLabelTypeDef*): Self = StObject.set(x, "durationLabelTypes", js.Array(value :_*))
+        inline def setDurationLabelTypesVarargs(value: DurationLabelTypeDef*): Self = StObject.set(x, "durationLabelTypes", js.Array(value*))
         
         inline def setDurationLabelsLong(value: DurationLabelDef): Self = StObject.set(x, "durationLabelsLong", value.asInstanceOf[js.Any])
         

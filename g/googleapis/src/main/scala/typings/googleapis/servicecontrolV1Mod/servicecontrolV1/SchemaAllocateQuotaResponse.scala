@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for the AllocateQuota method.
-  */
 trait SchemaAllocateQuotaResponse extends StObject {
   
   /**
@@ -20,27 +17,19 @@ trait SchemaAllocateQuotaResponse extends StObject {
   var allocateInfo: js.UndefOr[SchemaAllocateInfo] = js.undefined
   
   /**
-    * The same operation_id value used in the AllocateQuotaRequest. Used for
-    * logging and diagnostics purposes.
+    * The same operation_id value used in the AllocateQuotaRequest. Used for logging and diagnostics purposes.
     */
-  var operationId: js.UndefOr[String] = js.undefined
+  var operationId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Quota metrics to indicate the result of allocation. Depending on the
-    * request, one or more of the following metrics will be included:  1. Per
-    * quota group or per quota metric incremental usage will be specified using
-    * the following delta metric :
-    * &quot;serviceruntime.googleapis.com/api/consumer/quota_used_count&quot;
-    * 2. The quota limit reached condition will be specified using the
-    * following boolean metric :
-    * &quot;serviceruntime.googleapis.com/quota/exceeded&quot;
+    * Quota metrics to indicate the result of allocation. Depending on the request, one or more of the following metrics will be included: 1. Per quota group or per quota metric incremental usage will be specified using the following delta metric : "serviceruntime.googleapis.com/api/consumer/quota_used_count" 2. The quota limit reached condition will be specified using the following boolean metric : "serviceruntime.googleapis.com/quota/exceeded"
     */
   var quotaMetrics: js.UndefOr[js.Array[SchemaMetricValueSet]] = js.undefined
   
   /**
     * ID of the actual config used to process the request.
     */
-  var serviceConfigId: js.UndefOr[String] = js.undefined
+  var serviceConfigId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAllocateQuotaResponse {
   
@@ -55,7 +44,7 @@ object SchemaAllocateQuotaResponse {
     
     inline def setAllocateErrorsUndefined: Self = StObject.set(x, "allocateErrors", js.undefined)
     
-    inline def setAllocateErrorsVarargs(value: SchemaQuotaError*): Self = StObject.set(x, "allocateErrors", js.Array(value :_*))
+    inline def setAllocateErrorsVarargs(value: SchemaQuotaError*): Self = StObject.set(x, "allocateErrors", js.Array(value*))
     
     inline def setAllocateInfo(value: SchemaAllocateInfo): Self = StObject.set(x, "allocateInfo", value.asInstanceOf[js.Any])
     
@@ -63,15 +52,19 @@ object SchemaAllocateQuotaResponse {
     
     inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
+    inline def setOperationIdNull: Self = StObject.set(x, "operationId", null)
+    
     inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
     inline def setQuotaMetrics(value: js.Array[SchemaMetricValueSet]): Self = StObject.set(x, "quotaMetrics", value.asInstanceOf[js.Any])
     
     inline def setQuotaMetricsUndefined: Self = StObject.set(x, "quotaMetrics", js.undefined)
     
-    inline def setQuotaMetricsVarargs(value: SchemaMetricValueSet*): Self = StObject.set(x, "quotaMetrics", js.Array(value :_*))
+    inline def setQuotaMetricsVarargs(value: SchemaMetricValueSet*): Self = StObject.set(x, "quotaMetrics", js.Array(value*))
     
     inline def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
+    
+    inline def setServiceConfigIdNull: Self = StObject.set(x, "serviceConfigId", null)
     
     inline def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
   }

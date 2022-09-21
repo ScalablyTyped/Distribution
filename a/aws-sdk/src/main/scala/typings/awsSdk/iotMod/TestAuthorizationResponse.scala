@@ -24,6 +24,6 @@ object TestAuthorizationResponse {
     
     inline def setAuthResultsUndefined: Self = StObject.set(x, "authResults", js.undefined)
     
-    inline def setAuthResultsVarargs(value: AuthResult*): Self = StObject.set(x, "authResults", js.Array(value :_*))
+    inline def setAuthResultsVarargs(value: AuthResult*): Self = StObject.set(x, "authResults", js.Array(value*))
   }
 }

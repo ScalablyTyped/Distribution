@@ -10,10 +10,10 @@ The lodash method `_.assign` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.assign |
 | Keywords           | lodash-modularized, assign |
-| # releases         | 0 |
-| # dependents       | 876 |
-| # downloads        | 152515972 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1552670666666666E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

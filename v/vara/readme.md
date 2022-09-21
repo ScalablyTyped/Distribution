@@ -10,10 +10,10 @@ Vara can create realistic text drawing animations using SVG and a JSON file that
 | ------------------ | :-------------: |
 | Full name          | vara |
 | Keywords           | text, animation, drawing |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 670 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 197.0 |
+| # stars            | 157.0 |
 
 ## Links
 - [Homepage](https://github.com/akzhy/vara#readme)

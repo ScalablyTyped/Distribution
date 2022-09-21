@@ -9,13 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FeatureTableViewModelConstructor
   extends StObject
-     with Instantiable0[FeatureTableViewModel]
-     with Instantiable1[/* properties */ FeatureTableViewModelProperties, FeatureTableViewModel] {
-  
-  /**
-    * Returns a field value given the specified row (feature) `ObjectId` and an associated `fieldName`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#getValue)
-    */
-  def getValue(objectId: Double, fieldName: String): String | Double | js.Any = js.native
-}
+     with /**
+  * Provides the logic for the [FeatureTable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html) widget, which allows users to view content from feature attributes in a tabular format.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html)
+  */
+Instantiable0[FeatureTableViewModel]
+     with Instantiable1[/* properties */ FeatureTableViewModelProperties, FeatureTableViewModel]

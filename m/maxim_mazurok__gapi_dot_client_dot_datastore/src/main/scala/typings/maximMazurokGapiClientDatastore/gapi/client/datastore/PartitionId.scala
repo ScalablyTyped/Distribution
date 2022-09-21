@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PartitionId extends StObject {
   
+  /** If not empty, the ID of the database to which the entities belong. */
+  var databaseId: js.UndefOr[String] = js.undefined
+  
   /** If not empty, the ID of the namespace to which the entities belong. */
   var namespaceId: js.UndefOr[String] = js.undefined
   
@@ -20,6 +23,10 @@ object PartitionId {
   }
   
   extension [Self <: PartitionId](x: Self) {
+    
+    inline def setDatabaseId(value: String): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseIdUndefined: Self = StObject.set(x, "databaseId", js.undefined)
     
     inline def setNamespaceId(value: String): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
     

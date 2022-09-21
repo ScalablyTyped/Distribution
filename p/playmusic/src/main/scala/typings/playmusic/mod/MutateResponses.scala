@@ -21,6 +21,6 @@ object MutateResponses {
     
     inline def setMutate_responseUndefined: Self = StObject.set(x, "mutate_response", js.undefined)
     
-    inline def setMutate_responseVarargs(value: MutateResponse*): Self = StObject.set(x, "mutate_response", js.Array(value :_*))
+    inline def setMutate_responseVarargs(value: MutateResponse*): Self = StObject.set(x, "mutate_response", js.Array(value*))
   }
 }

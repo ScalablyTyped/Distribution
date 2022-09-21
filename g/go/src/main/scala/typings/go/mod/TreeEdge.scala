@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an edge that does not know about any Link.
   */
-class TreeEdge () extends LayoutEdge {
+open class TreeEdge () extends LayoutEdge {
   
   /**Gets or sets a Point, relative to the parent node, that may be useful in routing this link.*/
   var relativePoint: Point = js.native

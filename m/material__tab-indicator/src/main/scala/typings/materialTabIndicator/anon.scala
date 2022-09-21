@@ -1,6 +1,6 @@
 package typings.materialTabIndicator
 
-import typings.std.ClientRect
+import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,7 +54,7 @@ object anon {
     
     var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var computeContentClientRect: js.UndefOr[js.Function0[ClientRect]] = js.undefined
+    var computeContentClientRect: js.UndefOr[js.Function0[DOMRect]] = js.undefined
     
     var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
@@ -73,7 +73,7 @@ object anon {
       
       inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
       
-      inline def setComputeContentClientRect(value: () => ClientRect): Self = StObject.set(x, "computeContentClientRect", js.Any.fromFunction0(value))
+      inline def setComputeContentClientRect(value: () => DOMRect): Self = StObject.set(x, "computeContentClientRect", js.Any.fromFunction0(value))
       
       inline def setComputeContentClientRectUndefined: Self = StObject.set(x, "computeContentClientRect", js.undefined)
       

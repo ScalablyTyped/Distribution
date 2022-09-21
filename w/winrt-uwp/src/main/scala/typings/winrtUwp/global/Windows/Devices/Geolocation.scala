@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Devices.Geolocation.AltitudeReferenceSystem
 import typings.winrtUwp.Windows.Devices.Geolocation.BasicGeoposition
 import typings.winrtUwp.Windows.Devices.Geolocation.Geofencing.GeofenceRemovalReason
@@ -65,13 +64,13 @@ object Geolocation {
     
     /** Unsupported API. */
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   /** Represents a rectangle that defines a geographic area. */
   @JSGlobal("Windows.Devices.Geolocation.GeoboundingBox")
   @js.native
-  class GeoboundingBox protected ()
+  open class GeoboundingBox protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Geolocation.GeoboundingBox {
     /**
@@ -176,7 +175,7 @@ object Geolocation {
   /** Describes a geographic circle with a center point and a radius. */
   @JSGlobal("Windows.Devices.Geolocation.Geocircle")
   @js.native
-  class Geocircle protected ()
+  open class Geocircle protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Geolocation.Geocircle {
     /**
@@ -268,7 +267,7 @@ object Geolocation {
     
     /** Gets the time at which the associated Geocoordinate position was calculated. */
     /* CompleteClass */
-    var positionSourceTimestamp: Date = js.native
+    var positionSourceTimestamp: js.Date = js.native
     
     /** Gets information about the satellites used to obtain a Geocoordinate. */
     /* CompleteClass */
@@ -280,7 +279,7 @@ object Geolocation {
     
     /** The system time at which the location was determined. */
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   /** Provides additional information about a Geocoordinate . This information is only applicable to position estimates obtained using satellite signals. */
@@ -309,7 +308,7 @@ object Geolocation {
     /** Contains the information to define a geofence, an area of interest, to monitor. */
     @JSGlobal("Windows.Devices.Geolocation.Geofencing.Geofence")
     @js.native
-    class Geofence protected ()
+    open class Geofence protected ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.Geolocation.Geofencing.Geofence {
       /**
@@ -357,7 +356,7 @@ object Geolocation {
         monitoredStates: MonitoredGeofenceStates,
         singleUse: Boolean,
         dwellTime: Double,
-        startTime: Date,
+        startTime: js.Date,
         duration: Double
       ) = this()
       
@@ -387,7 +386,7 @@ object Geolocation {
       
       /** The time to start monitoring the Geofence . */
       /* CompleteClass */
-      var startTime: Date = js.native
+      var startTime: js.Date = js.native
     }
     
     /** Contains the information about the monitored Geofence objects. */
@@ -528,7 +527,7 @@ object Geolocation {
   @JSGlobal("Windows.Devices.Geolocation.Geolocator")
   @js.native
   /** Initializes a new Geolocator object. */
-  class Geolocator ()
+  open class Geolocator ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Geolocation.Geolocator
   object Geolocator {
@@ -543,7 +542,7 @@ object Geolocation {
       * @return Positions (of type Geoposition ) that were collected during the specified time span.
       */
     /* static member */
-    inline def getGeopositionHistoryAsync(startTime: Date): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeopositionHistoryAsync")(startTime.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getGeopositionHistoryAsync(startTime: js.Date): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeopositionHistoryAsync")(startTime.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     /**
       * Starts an asynchronous operation to retrieve the location history of the device.
       * @param startTime Represents the beginning of the time span for which positions are to be returned.
@@ -551,7 +550,7 @@ object Geolocation {
       * @return Positions (of type Geoposition ) that were collected during the specified time span.
       */
     /* static member */
-    inline def getGeopositionHistoryAsync(startTime: Date, duration: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGeopositionHistoryAsync")(startTime.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getGeopositionHistoryAsync(startTime: js.Date, duration: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGeopositionHistoryAsync")(startTime.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /**
       * Requests permission to access location data.
@@ -564,7 +563,7 @@ object Geolocation {
   /** Represents an ordered series of geographic points. */
   @JSGlobal("Windows.Devices.Geolocation.Geopath")
   @js.native
-  class Geopath protected ()
+  open class Geopath protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Geolocation.Geopath {
     /**
@@ -610,7 +609,7 @@ object Geolocation {
   /** Describes a geographic point. */
   @JSGlobal("Windows.Devices.Geolocation.Geopoint")
   @js.native
-  class Geopoint protected ()
+  open class Geopoint protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Geolocation.Geopoint {
     /**

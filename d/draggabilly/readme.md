@@ -10,10 +10,10 @@ make that shiz draggable
 | ------------------ | :-------------: |
 | Full name          | draggabilly |
 | Keywords           | DOM, drag, draggable, touch, multitouch |
-| # releases         | 2 |
-| # dependents       | 52 |
-| # downloads        | 561240 |
-| # stars            | 3 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 64036.666666666664 |
+| # stars            | 3772.0 |
 
 ## Links
 - [Homepage](https://draggabilly.desandro.com/)

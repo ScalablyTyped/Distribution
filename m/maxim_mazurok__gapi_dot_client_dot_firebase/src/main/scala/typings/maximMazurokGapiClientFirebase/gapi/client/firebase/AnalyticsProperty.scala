@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AnalyticsProperty extends StObject {
   
+  /** Output only. The ID of the [Google Analytics account](https://www.google.com/analytics/) for the Google Analytics property associated with the specified FirebaseProject. */
+  var analyticsAccountId: js.UndefOr[String] = js.undefined
+  
   /** The display name of the Google Analytics property associated with the specified `FirebaseProject`. */
   var displayName: js.UndefOr[String] = js.undefined
   
@@ -24,6 +27,10 @@ object AnalyticsProperty {
   }
   
   extension [Self <: AnalyticsProperty](x: Self) {
+    
+    inline def setAnalyticsAccountId(value: String): Self = StObject.set(x, "analyticsAccountId", value.asInstanceOf[js.Any])
+    
+    inline def setAnalyticsAccountIdUndefined: Self = StObject.set(x, "analyticsAccountId", js.undefined)
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

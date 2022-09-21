@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLStyleSheetPage")
 @js.native
-/* private */ class HTMLStyleSheetPage ()
+/* private */ open class HTMLStyleSheetPage ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLStyleSheetPage {
   
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MSHTMLDotHTMLStyleSheetPage_typekey: typings.activexMshtml.MSHTML.HTMLStyleSheetPage = js.native
   
   /* CompleteClass */
-  override val constructor: js.Any = js.native
+  override val constructor: Any = js.native
   
   /* CompleteClass */
   var cssText: String = js.native

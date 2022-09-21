@@ -22,6 +22,6 @@ object SendWorkerMessagesResponse {
     
     inline def setWorkerMessageResponsesUndefined: Self = StObject.set(x, "workerMessageResponses", js.undefined)
     
-    inline def setWorkerMessageResponsesVarargs(value: WorkerMessageResponse*): Self = StObject.set(x, "workerMessageResponses", js.Array(value :_*))
+    inline def setWorkerMessageResponsesVarargs(value: WorkerMessageResponse*): Self = StObject.set(x, "workerMessageResponses", js.Array(value*))
   }
 }

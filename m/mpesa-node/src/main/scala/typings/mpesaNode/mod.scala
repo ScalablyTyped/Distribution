@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("mpesa-node", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Mpesa {
     def this(config: ConfigOptions) = this()
@@ -81,8 +81,8 @@ object mod {
   @js.native
   trait Mpesa extends StObject {
     
-    def accountBalance(shortCode: String, idType: String, queueUrl: String, resultUrl: String): AxiosPromise[js.Any] = js.native
-    def accountBalance(shortCode: String, idType: String, queueUrl: String, resultUrl: String, remarks: String): AxiosPromise[js.Any] = js.native
+    def accountBalance(shortCode: String, idType: String, queueUrl: String, resultUrl: String): AxiosPromise[Any] = js.native
+    def accountBalance(shortCode: String, idType: String, queueUrl: String, resultUrl: String, remarks: String): AxiosPromise[Any] = js.native
     def accountBalance(
       shortCode: String,
       idType: String,
@@ -90,7 +90,7 @@ object mod {
       resultUrl: String,
       remarks: String,
       initiator: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def accountBalance(
       shortCode: String,
       idType: String,
@@ -99,7 +99,7 @@ object mod {
       remarks: String,
       initiator: String,
       commandId: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def accountBalance(
       shortCode: String,
       idType: String,
@@ -108,7 +108,7 @@ object mod {
       remarks: String,
       initiator: Unit,
       commandId: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def accountBalance(
       shortCode: String,
       idType: String,
@@ -116,7 +116,7 @@ object mod {
       resultUrl: String,
       remarks: Unit,
       initiator: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def accountBalance(
       shortCode: String,
       idType: String,
@@ -125,7 +125,7 @@ object mod {
       remarks: Unit,
       initiator: String,
       commandId: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def accountBalance(
       shortCode: String,
       idType: String,
@@ -134,7 +134,7 @@ object mod {
       remarks: Unit,
       initiator: Unit,
       commandId: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     
     def b2b(
       senderParty: String,
@@ -148,9 +148,9 @@ object mod {
       commandId: js.UndefOr[String],
       accountRef: js.UndefOr[String],
       remarks: js.UndefOr[String]
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     
-    def b2c(senderParty: String, receiverParty: String, amount: Double, queueUrl: String, resultUrl: String): AxiosPromise[js.Any] = js.native
+    def b2c(senderParty: String, receiverParty: String, amount: Double, queueUrl: String, resultUrl: String): AxiosPromise[Any] = js.native
     def b2c(
       senderParty: String,
       receiverParty: String,
@@ -158,7 +158,7 @@ object mod {
       queueUrl: String,
       resultUrl: String,
       commandId: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def b2c(
       senderParty: String,
       receiverParty: String,
@@ -167,7 +167,7 @@ object mod {
       resultUrl: String,
       commandId: String,
       initiatorName: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def b2c(
       senderParty: String,
       receiverParty: String,
@@ -177,7 +177,7 @@ object mod {
       commandId: String,
       initiatorName: String,
       remarks: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def b2c(
       senderParty: String,
       receiverParty: String,
@@ -188,7 +188,7 @@ object mod {
       initiatorName: String,
       remarks: String,
       occasion: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def b2c(
       senderParty: String,
       receiverParty: String,
@@ -199,7 +199,7 @@ object mod {
       initiatorName: String,
       remarks: Unit,
       occasion: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def b2c(
       senderParty: String,
       receiverParty: String,
@@ -209,7 +209,7 @@ object mod {
       commandId: String,
       initiatorName: Unit,
       remarks: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def b2c(
       senderParty: String,
       receiverParty: String,
@@ -220,7 +220,7 @@ object mod {
       initiatorName: Unit,
       remarks: String,
       occasion: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def b2c(
       senderParty: String,
       receiverParty: String,
@@ -231,7 +231,7 @@ object mod {
       initiatorName: Unit,
       remarks: Unit,
       occasion: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def b2c(
       senderParty: String,
       receiverParty: String,
@@ -240,7 +240,7 @@ object mod {
       resultUrl: String,
       commandId: Unit,
       initiatorName: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def b2c(
       senderParty: String,
       receiverParty: String,
@@ -250,7 +250,7 @@ object mod {
       commandId: Unit,
       initiatorName: String,
       remarks: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def b2c(
       senderParty: String,
       receiverParty: String,
@@ -261,7 +261,7 @@ object mod {
       initiatorName: String,
       remarks: String,
       occasion: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def b2c(
       senderParty: String,
       receiverParty: String,
@@ -272,7 +272,7 @@ object mod {
       initiatorName: String,
       remarks: Unit,
       occasion: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def b2c(
       senderParty: String,
       receiverParty: String,
@@ -282,7 +282,7 @@ object mod {
       commandId: Unit,
       initiatorName: Unit,
       remarks: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def b2c(
       senderParty: String,
       receiverParty: String,
@@ -293,7 +293,7 @@ object mod {
       initiatorName: Unit,
       remarks: String,
       occasion: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def b2c(
       senderParty: String,
       receiverParty: String,
@@ -304,26 +304,26 @@ object mod {
       initiatorName: Unit,
       remarks: Unit,
       occasion: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     
-    def c2bRegister(confirmationUrl: String, validationUrl: String): AxiosPromise[js.Any] = js.native
-    def c2bRegister(confirmationUrl: String, validationUrl: String, shortCode: String): AxiosPromise[js.Any] = js.native
-    def c2bRegister(confirmationUrl: String, validationUrl: String, shortCode: String, responseType: String): AxiosPromise[js.Any] = js.native
-    def c2bRegister(confirmationUrl: String, validationUrl: String, shortCode: Unit, responseType: String): AxiosPromise[js.Any] = js.native
+    def c2bRegister(confirmationUrl: String, validationUrl: String): AxiosPromise[Any] = js.native
+    def c2bRegister(confirmationUrl: String, validationUrl: String, shortCode: String): AxiosPromise[Any] = js.native
+    def c2bRegister(confirmationUrl: String, validationUrl: String, shortCode: String, responseType: String): AxiosPromise[Any] = js.native
+    def c2bRegister(confirmationUrl: String, validationUrl: String, shortCode: Unit, responseType: String): AxiosPromise[Any] = js.native
     
-    def c2bSimulate(msisdn: String, amount: Double, billRefNumber: String): AxiosPromise[js.Any] = js.native
-    def c2bSimulate(msisdn: String, amount: Double, billRefNumber: String, commandId: String): AxiosPromise[js.Any] = js.native
-    def c2bSimulate(msisdn: String, amount: Double, billRefNumber: String, commandId: String, shortCode: String): AxiosPromise[js.Any] = js.native
-    def c2bSimulate(msisdn: String, amount: Double, billRefNumber: String, commandId: Unit, shortCode: String): AxiosPromise[js.Any] = js.native
+    def c2bSimulate(msisdn: String, amount: Double, billRefNumber: String): AxiosPromise[Any] = js.native
+    def c2bSimulate(msisdn: String, amount: Double, billRefNumber: String, commandId: String): AxiosPromise[Any] = js.native
+    def c2bSimulate(msisdn: String, amount: Double, billRefNumber: String, commandId: String, shortCode: String): AxiosPromise[Any] = js.native
+    def c2bSimulate(msisdn: String, amount: Double, billRefNumber: String, commandId: Unit, shortCode: String): AxiosPromise[Any] = js.native
     
-    def lipaNaMpesaOnline(senderMsisdn: String, amount: Double, callbackUrl: String, accountRef: String): AxiosPromise[js.Any] = js.native
+    def lipaNaMpesaOnline(senderMsisdn: String, amount: Double, callbackUrl: String, accountRef: String): AxiosPromise[Any] = js.native
     def lipaNaMpesaOnline(
       senderMsisdn: String,
       amount: Double,
       callbackUrl: String,
       accountRef: String,
       transactionDesc: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def lipaNaMpesaOnline(
       senderMsisdn: String,
       amount: Double,
@@ -331,7 +331,7 @@ object mod {
       accountRef: String,
       transactionDesc: String,
       transactionType: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def lipaNaMpesaOnline(
       senderMsisdn: String,
       amount: Double,
@@ -340,7 +340,7 @@ object mod {
       transactionDesc: String,
       transactionType: String,
       shortCode: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def lipaNaMpesaOnline(
       senderMsisdn: String,
       amount: Double,
@@ -350,7 +350,7 @@ object mod {
       transactionType: String,
       shortCode: String,
       passKey: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def lipaNaMpesaOnline(
       senderMsisdn: String,
       amount: Double,
@@ -360,7 +360,7 @@ object mod {
       transactionType: String,
       shortCode: Unit,
       passKey: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def lipaNaMpesaOnline(
       senderMsisdn: String,
       amount: Double,
@@ -369,7 +369,7 @@ object mod {
       transactionDesc: String,
       transactionType: Unit,
       shortCode: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def lipaNaMpesaOnline(
       senderMsisdn: String,
       amount: Double,
@@ -379,7 +379,7 @@ object mod {
       transactionType: Unit,
       shortCode: String,
       passKey: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def lipaNaMpesaOnline(
       senderMsisdn: String,
       amount: Double,
@@ -389,7 +389,7 @@ object mod {
       transactionType: Unit,
       shortCode: Unit,
       passKey: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def lipaNaMpesaOnline(
       senderMsisdn: String,
       amount: Double,
@@ -397,7 +397,7 @@ object mod {
       accountRef: String,
       transactionDesc: Unit,
       transactionType: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def lipaNaMpesaOnline(
       senderMsisdn: String,
       amount: Double,
@@ -406,7 +406,7 @@ object mod {
       transactionDesc: Unit,
       transactionType: String,
       shortCode: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def lipaNaMpesaOnline(
       senderMsisdn: String,
       amount: Double,
@@ -416,7 +416,7 @@ object mod {
       transactionType: String,
       shortCode: String,
       passKey: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def lipaNaMpesaOnline(
       senderMsisdn: String,
       amount: Double,
@@ -426,7 +426,7 @@ object mod {
       transactionType: String,
       shortCode: Unit,
       passKey: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def lipaNaMpesaOnline(
       senderMsisdn: String,
       amount: Double,
@@ -435,7 +435,7 @@ object mod {
       transactionDesc: Unit,
       transactionType: Unit,
       shortCode: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def lipaNaMpesaOnline(
       senderMsisdn: String,
       amount: Double,
@@ -445,7 +445,7 @@ object mod {
       transactionType: Unit,
       shortCode: String,
       passKey: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     def lipaNaMpesaOnline(
       senderMsisdn: String,
       amount: Double,
@@ -455,15 +455,15 @@ object mod {
       transactionType: Unit,
       shortCode: Unit,
       passKey: String
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     
-    def lipaNaMpesaQuery(checkoutRequestId: String): AxiosPromise[js.Any] = js.native
-    def lipaNaMpesaQuery(checkoutRequestId: String, shortCode: String): AxiosPromise[js.Any] = js.native
-    def lipaNaMpesaQuery(checkoutRequestId: String, shortCode: String, passKey: String): AxiosPromise[js.Any] = js.native
-    def lipaNaMpesaQuery(checkoutRequestId: String, shortCode: Unit, passKey: String): AxiosPromise[js.Any] = js.native
+    def lipaNaMpesaQuery(checkoutRequestId: String): AxiosPromise[Any] = js.native
+    def lipaNaMpesaQuery(checkoutRequestId: String, shortCode: String): AxiosPromise[Any] = js.native
+    def lipaNaMpesaQuery(checkoutRequestId: String, shortCode: String, passKey: String): AxiosPromise[Any] = js.native
+    def lipaNaMpesaQuery(checkoutRequestId: String, shortCode: Unit, passKey: String): AxiosPromise[Any] = js.native
     
-    def oAuth(consumerKey: String, consumerSecret: String): AxiosPromise[js.Any] = js.native
-    def oAuth(consumerKey: String, consumerSecret: String, baseURL: String): AxiosPromise[js.Any] = js.native
+    def oAuth(consumerKey: String, consumerSecret: String): AxiosPromise[Any] = js.native
+    def oAuth(consumerKey: String, consumerSecret: String, baseURL: String): AxiosPromise[Any] = js.native
     
     def reversal(
       transactionId: String,
@@ -476,7 +476,7 @@ object mod {
       initiator: js.UndefOr[String],
       receiverIdType: js.UndefOr[String],
       commandId: js.UndefOr[String]
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
     
     def transactionStatus(
       transactionId: String,
@@ -489,6 +489,6 @@ object mod {
       initiator: js.UndefOr[String],
       receiverIdType: js.UndefOr[String],
       commandId: js.UndefOr[String]
-    ): AxiosPromise[js.Any] = js.native
+    ): AxiosPromise[Any] = js.native
   }
 }

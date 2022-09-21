@@ -24,7 +24,7 @@ object TakeCoverageDeltaResponse {
     
     inline def setCoverage(value: js.Array[RuleUsage]): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
-    inline def setCoverageVarargs(value: RuleUsage*): Self = StObject.set(x, "coverage", js.Array(value :_*))
+    inline def setCoverageVarargs(value: RuleUsage*): Self = StObject.set(x, "coverage", js.Array(value*))
     
     inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }

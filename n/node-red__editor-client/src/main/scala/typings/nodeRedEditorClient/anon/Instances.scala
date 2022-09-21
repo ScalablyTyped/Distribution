@@ -19,6 +19,6 @@ object Instances {
     
     inline def setInstances(value: js.Array[js.Object]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    inline def setInstancesVarargs(value: js.Object*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: js.Object*): Self = StObject.set(x, "instances", js.Array(value*))
   }
 }

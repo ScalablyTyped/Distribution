@@ -19,7 +19,7 @@ trait ClusterListEntry extends StObject {
   /**
     * The creation date for this cluster.
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Defines an optional description of the cluster, for example Environmental Data Cluster-01.
@@ -43,7 +43,7 @@ object ClusterListEntry {
     
     inline def setClusterStateUndefined: Self = StObject.set(x, "ClusterState", js.undefined)
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     

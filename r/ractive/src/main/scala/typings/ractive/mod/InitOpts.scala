@@ -13,7 +13,7 @@ trait InitOpts[T /* <: Ractive[T] */]
   @JSName("append")
   var append_InitOpts: js.UndefOr[`true`] = js.undefined
   
-  /** Initiial data for this instance. */
+  /** Initial data for this instance. */
   var data: js.UndefOr[Data | DataFn[T]] = js.undefined
   
   /** The target element into which to render this instance. */
@@ -26,7 +26,7 @@ trait InitOpts[T /* <: Ractive[T] */]
   var target: js.UndefOr[Target] = js.undefined
   
   /** An array of plugins to apply to the instance. */
-  var use: js.UndefOr[js.Array[PluginInstance]] = js.undefined
+  var use: js.UndefOr[js.Array[Plugin]] = js.undefined
 }
 object InitOpts {
   
@@ -57,10 +57,10 @@ object InitOpts {
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def setUse(value: js.Array[PluginInstance]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+    inline def setUse(value: js.Array[Plugin]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
     inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     
-    inline def setUseVarargs(value: PluginInstance*): Self = StObject.set(x, "use", js.Array(value :_*))
+    inline def setUseVarargs(value: Plugin*): Self = StObject.set(x, "use", js.Array(value*))
   }
 }

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DimensionKeyDescription extends StObject {
   
   /**
+    * A map that contains the value for each additional metric.
+    */
+  var AdditionalMetrics: js.UndefOr[AdditionalMetricsMap] = js.undefined
+  
+  /**
     * A map of name-value pairs for the dimensions in the group.
     */
   var Dimensions: js.UndefOr[DimensionMap] = js.undefined
@@ -17,7 +22,7 @@ trait DimensionKeyDescription extends StObject {
   var Partitions: js.UndefOr[MetricValuesList] = js.undefined
   
   /**
-    * The aggregated metric value for the dimension(s), over the requested time range.
+    * The aggregated metric value for the dimensions, over the requested time range.
     */
   var Total: js.UndefOr[Double] = js.undefined
 }
@@ -30,6 +35,10 @@ object DimensionKeyDescription {
   
   extension [Self <: DimensionKeyDescription](x: Self) {
     
+    inline def setAdditionalMetrics(value: AdditionalMetricsMap): Self = StObject.set(x, "AdditionalMetrics", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalMetricsUndefined: Self = StObject.set(x, "AdditionalMetrics", js.undefined)
+    
     inline def setDimensions(value: DimensionMap): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
@@ -38,7 +47,7 @@ object DimensionKeyDescription {
     
     inline def setPartitionsUndefined: Self = StObject.set(x, "Partitions", js.undefined)
     
-    inline def setPartitionsVarargs(value: Double*): Self = StObject.set(x, "Partitions", js.Array(value :_*))
+    inline def setPartitionsVarargs(value: Double*): Self = StObject.set(x, "Partitions", js.Array(value*))
     
     inline def setTotal(value: Double): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     

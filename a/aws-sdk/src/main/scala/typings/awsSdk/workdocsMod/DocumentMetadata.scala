@@ -9,7 +9,7 @@ trait DocumentMetadata extends StObject {
   /**
     * The time when the document was created.
     */
-  var CreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the creator.
@@ -34,7 +34,7 @@ trait DocumentMetadata extends StObject {
   /**
     * The time when the document was updated.
     */
-  var ModifiedTimestamp: js.UndefOr[TimestampType] = js.undefined
+  var ModifiedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the parent folder.
@@ -55,7 +55,7 @@ object DocumentMetadata {
   
   extension [Self <: DocumentMetadata](x: Self) {
     
-    inline def setCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
@@ -71,13 +71,13 @@ object DocumentMetadata {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
-    inline def setLabelsVarargs(value: SharedLabel*): Self = StObject.set(x, "Labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: SharedLabel*): Self = StObject.set(x, "Labels", js.Array(value*))
     
     inline def setLatestVersionMetadata(value: DocumentVersionMetadata): Self = StObject.set(x, "LatestVersionMetadata", value.asInstanceOf[js.Any])
     
     inline def setLatestVersionMetadataUndefined: Self = StObject.set(x, "LatestVersionMetadata", js.undefined)
     
-    inline def setModifiedTimestamp(value: TimestampType): Self = StObject.set(x, "ModifiedTimestamp", value.asInstanceOf[js.Any])
+    inline def setModifiedTimestamp(value: js.Date): Self = StObject.set(x, "ModifiedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setModifiedTimestampUndefined: Self = StObject.set(x, "ModifiedTimestamp", js.undefined)
     

@@ -1,9 +1,16 @@
 package typings.babelParser
 
+import typings.babelParser.anon.Errors
+import typings.babelParser.anon.ParseResultFile
+import typings.babelParser.babelParserStrings.Numbersign
+import typings.babelParser.babelParserStrings.Percentsign
+import typings.babelParser.babelParserStrings.`@@`
+import typings.babelParser.babelParserStrings.`^^`
 import typings.babelParser.babelParserStrings.bar
 import typings.babelParser.babelParserStrings.decorators
 import typings.babelParser.babelParserStrings.flow
 import typings.babelParser.babelParserStrings.fsharp
+import typings.babelParser.babelParserStrings.hack
 import typings.babelParser.babelParserStrings.hash
 import typings.babelParser.babelParserStrings.minimal
 import typings.babelParser.babelParserStrings.module
@@ -11,9 +18,9 @@ import typings.babelParser.babelParserStrings.pipelineOperator
 import typings.babelParser.babelParserStrings.recordAndTuple
 import typings.babelParser.babelParserStrings.script
 import typings.babelParser.babelParserStrings.smart
+import typings.babelParser.babelParserStrings.typescript
 import typings.babelParser.babelParserStrings.unambiguous
 import typings.babelTypes.mod.Expression
-import typings.babelTypes.mod.File_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,11 +31,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def parse(input: String): File_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[File_]
-  inline def parse(input: String, options: ParserOptions): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[File_]
+  inline def parse(input: String): ParseResultFile = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[ParseResultFile]
+  inline def parse(input: String, options: ParserOptions): ParseResultFile = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParseResultFile]
   
-  inline def parseExpression(input: String): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any]).asInstanceOf[Expression]
-  inline def parseExpression(input: String, options: ParserOptions): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Expression]
+  inline def parseExpression(input: String): ParseResult[Expression] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any]).asInstanceOf[ParseResult[Expression]]
+  inline def parseExpression(input: String, options: ParserOptions): ParseResult[Expression] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParseResult[Expression]]
   
   trait DecoratorsPluginOptions extends StObject {
     
@@ -52,6 +59,8 @@ object mod {
   trait FlowPluginOptions extends StObject {
     
     var all: js.UndefOr[Boolean] = js.undefined
+    
+    var enums: js.UndefOr[Boolean] = js.undefined
   }
   object FlowPluginOptions {
     
@@ -65,8 +74,35 @@ object mod {
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
       inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      
+      inline def setEnums(value: Boolean): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
+      
+      inline def setEnumsUndefined: Self = StObject.set(x, "enums", js.undefined)
     }
   }
+  
+  trait ParseError extends StObject {
+    
+    var code: String
+    
+    var reasonCode: String
+  }
+  object ParseError {
+    
+    inline def apply(code: String, reasonCode: String): ParseError = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reasonCode = reasonCode.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ParseError]
+    }
+    
+    extension [Self <: ParseError](x: Self) {
+      
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      
+      inline def setReasonCode(value: String): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type ParseResult[Result] = Result & Errors
   
   trait ParserOptions extends StObject {
     
@@ -97,12 +133,30 @@ object mod {
     var allowUndeclaredExports: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * By default, Babel attaches comments to adjacent AST nodes.
+      * When this option is set to false, comments are not attached.
+      * It can provide up to 30% performance improvement when the input code has many comments.
+      * @babel/eslint-parser will set it for you.
+      * It is not recommended to use attachComment: false with Babel transform,
+      * as doing so removes all the comments in output code, and renders annotations such as
+      * / * istanbul ignore next *\/ nonfunctional.
+      */
+    var attachComment: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * By default, the parser adds information about parentheses by setting
       * `extra.parenthesized` to `true` as needed.
       * When this option is `true` the parser creates `ParenthesizedExpression`
       * AST nodes instead of using the `extra` property.
       */
     var createParenthesizedExpressions: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * By default, Babel always throws an error when it finds some invalid code.
+      * When this option is set to true, it will store the parsing error and
+      * try to continue parsing the invalid input file.
+      */
+    var errorRecovery: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Array containing the plugins that you want to enable.
@@ -128,6 +182,13 @@ object mod {
       * Files with ES6 imports and exports are considered "module" and are otherwise "script".
       */
     var sourceType: js.UndefOr[script | module | unambiguous] = js.undefined
+    
+    /**
+      * By default, the parsed code is treated as if it starts from line 1, column 0.
+      * You can provide a column number to alternatively start with.
+      * Useful for integration with other source tools.
+      */
+    var startColumn: js.UndefOr[Double] = js.undefined
     
     /**
       * By default, the first line of code parsed is treated as line 1.
@@ -176,15 +237,23 @@ object mod {
       
       inline def setAllowUndeclaredExportsUndefined: Self = StObject.set(x, "allowUndeclaredExports", js.undefined)
       
+      inline def setAttachComment(value: Boolean): Self = StObject.set(x, "attachComment", value.asInstanceOf[js.Any])
+      
+      inline def setAttachCommentUndefined: Self = StObject.set(x, "attachComment", js.undefined)
+      
       inline def setCreateParenthesizedExpressions(value: Boolean): Self = StObject.set(x, "createParenthesizedExpressions", value.asInstanceOf[js.Any])
       
       inline def setCreateParenthesizedExpressionsUndefined: Self = StObject.set(x, "createParenthesizedExpressions", js.undefined)
+      
+      inline def setErrorRecovery(value: Boolean): Self = StObject.set(x, "errorRecovery", value.asInstanceOf[js.Any])
+      
+      inline def setErrorRecoveryUndefined: Self = StObject.set(x, "errorRecovery", js.undefined)
       
       inline def setPlugins(value: js.Array[ParserPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: ParserPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: ParserPlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setRanges(value: Boolean): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
       
@@ -197,6 +266,10 @@ object mod {
       inline def setSourceType(value: script | module | unambiguous): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       
       inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+      
+      inline def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
+      
+      inline def setStartColumnUndefined: Self = StObject.set(x, "startColumn", js.undefined)
       
       inline def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
       
@@ -213,6 +286,7 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
+    - typings.babelParser.babelParserStrings.asyncDoExpressions
     - typings.babelParser.babelParserStrings.asyncGenerators
     - typings.babelParser.babelParserStrings.bigInt
     - typings.babelParser.babelParserStrings.classPrivateMethods
@@ -222,6 +296,8 @@ object mod {
     - typings.babelParser.babelParserStrings.decimal
     - typings.babelParser.babelParserStrings.decorators
     - typings.babelParser.babelParserStrings.`decorators-legacy`
+    - typings.babelParser.babelParserStrings.decoratorAutoAccessors
+    - typings.babelParser.babelParserStrings.destructuringPrivate
     - typings.babelParser.babelParserStrings.doExpressions
     - typings.babelParser.babelParserStrings.dynamicImport
     - typings.babelParser.babelParserStrings.estree
@@ -235,6 +311,7 @@ object mod {
     - typings.babelParser.babelParserStrings.jsx
     - typings.babelParser.babelParserStrings.logicalAssignment
     - typings.babelParser.babelParserStrings.importAssertions
+    - typings.babelParser.babelParserStrings.moduleBlocks
     - typings.babelParser.babelParserStrings.moduleStringNames
     - typings.babelParser.babelParserStrings.nullishCoalescingOperator
     - typings.babelParser.babelParserStrings.numericSeparator
@@ -245,6 +322,8 @@ object mod {
     - typings.babelParser.babelParserStrings.pipelineOperator
     - typings.babelParser.babelParserStrings.placeholders
     - typings.babelParser.babelParserStrings.privateIn
+    - typings.babelParser.babelParserStrings.recordAndTuple
+    - typings.babelParser.babelParserStrings.regexpUnicodeSets
     - typings.babelParser.babelParserStrings.throwExpressions
     - typings.babelParser.babelParserStrings.topLevelAwait
     - typings.babelParser.babelParserStrings.typescript
@@ -254,41 +333,76 @@ object mod {
   type ParserPlugin = _ParserPlugin | ParserPluginWithOptions
   
   type ParserPluginWithOptions = js.Tuple2[
-    decorators | pipelineOperator | recordAndTuple | flow, 
-    DecoratorsPluginOptions | FlowPluginOptions | PipelineOperatorPluginOptions | RecordAndTuplePluginOptions
+    decorators | pipelineOperator | recordAndTuple | flow | typescript, 
+    DecoratorsPluginOptions | FlowPluginOptions | PipelineOperatorPluginOptions | RecordAndTuplePluginOptions | TypeScriptPluginOptions
   ]
   
   trait PipelineOperatorPluginOptions extends StObject {
     
-    var proposal: fsharp | minimal | smart
+    var proposal: minimal | fsharp | hack | smart
+    
+    var topicToken: js.UndefOr[
+        Percentsign | Numbersign | `@@` | `^^` | typings.babelParser.babelParserStrings.^
+      ] = js.undefined
   }
   object PipelineOperatorPluginOptions {
     
-    inline def apply(proposal: fsharp | minimal | smart): PipelineOperatorPluginOptions = {
+    inline def apply(proposal: minimal | fsharp | hack | smart): PipelineOperatorPluginOptions = {
       val __obj = js.Dynamic.literal(proposal = proposal.asInstanceOf[js.Any])
       __obj.asInstanceOf[PipelineOperatorPluginOptions]
     }
     
     extension [Self <: PipelineOperatorPluginOptions](x: Self) {
       
-      inline def setProposal(value: fsharp | minimal | smart): Self = StObject.set(x, "proposal", value.asInstanceOf[js.Any])
+      inline def setProposal(value: minimal | fsharp | hack | smart): Self = StObject.set(x, "proposal", value.asInstanceOf[js.Any])
+      
+      inline def setTopicToken(value: Percentsign | Numbersign | `@@` | `^^` | typings.babelParser.babelParserStrings.^): Self = StObject.set(x, "topicToken", value.asInstanceOf[js.Any])
+      
+      inline def setTopicTokenUndefined: Self = StObject.set(x, "topicToken", js.undefined)
     }
   }
   
   trait RecordAndTuplePluginOptions extends StObject {
     
-    var syntaxType: bar | hash
+    var syntaxType: js.UndefOr[bar | hash] = js.undefined
   }
   object RecordAndTuplePluginOptions {
     
-    inline def apply(syntaxType: bar | hash): RecordAndTuplePluginOptions = {
-      val __obj = js.Dynamic.literal(syntaxType = syntaxType.asInstanceOf[js.Any])
+    inline def apply(): RecordAndTuplePluginOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RecordAndTuplePluginOptions]
     }
     
     extension [Self <: RecordAndTuplePluginOptions](x: Self) {
       
       inline def setSyntaxType(value: bar | hash): Self = StObject.set(x, "syntaxType", value.asInstanceOf[js.Any])
+      
+      inline def setSyntaxTypeUndefined: Self = StObject.set(x, "syntaxType", js.undefined)
+    }
+  }
+  
+  trait TypeScriptPluginOptions extends StObject {
+    
+    var disallowAmbiguousJSXLike: js.UndefOr[Boolean] = js.undefined
+    
+    var dts: js.UndefOr[Boolean] = js.undefined
+  }
+  object TypeScriptPluginOptions {
+    
+    inline def apply(): TypeScriptPluginOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TypeScriptPluginOptions]
+    }
+    
+    extension [Self <: TypeScriptPluginOptions](x: Self) {
+      
+      inline def setDisallowAmbiguousJSXLike(value: Boolean): Self = StObject.set(x, "disallowAmbiguousJSXLike", value.asInstanceOf[js.Any])
+      
+      inline def setDisallowAmbiguousJSXLikeUndefined: Self = StObject.set(x, "disallowAmbiguousJSXLike", js.undefined)
+      
+      inline def setDts(value: Boolean): Self = StObject.set(x, "dts", value.asInstanceOf[js.Any])
+      
+      inline def setDtsUndefined: Self = StObject.set(x, "dts", js.undefined)
     }
   }
   

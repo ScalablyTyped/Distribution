@@ -25,7 +25,7 @@ object typesGetQueueAttributesOutputMod {
     var Attributes: js.UndefOr[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in 'All' | 'Policy' | 'VisibilityTimeout' | 'MaximumMessageSize' | 'MessageRetentionPeriod' | 'ApproximateNumberOfMessages' | 'ApproximateNumberOfMessagesNotVisible' | 'CreatedTimestamp' | 'LastModifiedTimestamp' | 'QueueArn' | 'ApproximateNumberOfMessagesDelayed' | 'DelaySeconds' | 'ReceiveMessageWaitTimeSeconds' | 'RedrivePolicy' | 'FifoQueue' | 'ContentBasedDeduplication' | 'KmsMasterKeyId' | 'KmsDataKeyReusePeriodSeconds' | string ]: string}
-      */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.GetQueueAttributesOutput & TopLevel[js.Any]
+      */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.GetQueueAttributesOutput & TopLevel[Any]
       ] = js.undefined
   }
   object GetQueueAttributesOutput {
@@ -42,7 +42,7 @@ object typesGetQueueAttributesOutputMod {
       inline def setAttributes(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ key in 'All' | 'Policy' | 'VisibilityTimeout' | 'MaximumMessageSize' | 'MessageRetentionPeriod' | 'ApproximateNumberOfMessages' | 'ApproximateNumberOfMessagesNotVisible' | 'CreatedTimestamp' | 'LastModifiedTimestamp' | 'QueueArn' | 'ApproximateNumberOfMessagesDelayed' | 'DelaySeconds' | 'ReceiveMessageWaitTimeSeconds' | 'RedrivePolicy' | 'FifoQueue' | 'ContentBasedDeduplication' | 'KmsMasterKeyId' | 'KmsDataKeyReusePeriodSeconds' | string ]: string}
-        */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.GetQueueAttributesOutput & TopLevel[js.Any]
+        */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.GetQueueAttributesOutput & TopLevel[Any]
       ): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)

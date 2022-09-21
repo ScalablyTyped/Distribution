@@ -15,8 +15,8 @@ object fixednumberMod {
   
   @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedFormat")
   @js.native
-  class FixedFormat protected () extends StObject {
-    def this(constructorGuard: js.Any, signed: Boolean, width: Double, decimals: Double) = this()
+  open class FixedFormat protected () extends StObject {
+    def this(constructorGuard: Any, signed: Boolean, width: Double, decimals: Double) = this()
     
     val _multiplier: String = js.native
     
@@ -35,14 +35,14 @@ object fixednumberMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def from(value: js.Any): FixedFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[FixedFormat]
+    inline def from(value: Any): FixedFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[FixedFormat]
   }
   
   @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber")
   @js.native
-  class FixedNumber protected () extends StObject {
-    def this(constructorGuard: js.Any, hex: String, value: String) = this()
-    def this(constructorGuard: js.Any, hex: String, value: String, format: FixedFormat) = this()
+  open class FixedNumber protected () extends StObject {
+    def this(constructorGuard: Any, hex: String, value: String) = this()
+    def this(constructorGuard: Any, hex: String, value: String, format: FixedFormat) = this()
     
     def _checkFormat(other: FixedNumber): Unit = js.native
     
@@ -88,26 +88,31 @@ object fixednumberMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def from(value: js.Any): FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[FixedNumber]
-    inline def from(value: js.Any, format: String): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
-    inline def from(value: js.Any, format: FixedFormat): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
+    inline def from(value: Any): FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[FixedNumber]
+    inline def from(value: Any, format: String): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
+    inline def from(value: Any, format: Double): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
+    inline def from(value: Any, format: FixedFormat): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
     
     inline def fromBytes(value: BytesLike): FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(value.asInstanceOf[js.Any]).asInstanceOf[FixedNumber]
     inline def fromBytes(value: BytesLike, format: String): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
+    inline def fromBytes(value: BytesLike, format: Double): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
     inline def fromBytes(value: BytesLike, format: FixedFormat): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
     
     inline def fromString(value: String): FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[FixedNumber]
     inline def fromString(value: String, format: String): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
+    inline def fromString(value: String, format: Double): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
     inline def fromString(value: String, format: FixedFormat): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
     
     inline def fromValue(value: BigNumber): FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any]).asInstanceOf[FixedNumber]
     inline def fromValue(value: BigNumber, decimals: Unit, format: String): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
+    inline def fromValue(value: BigNumber, decimals: Unit, format: Double): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
     inline def fromValue(value: BigNumber, decimals: Unit, format: FixedFormat): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
     inline def fromValue(value: BigNumber, decimals: BigNumberish): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
     inline def fromValue(value: BigNumber, decimals: BigNumberish, format: String): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
+    inline def fromValue(value: BigNumber, decimals: BigNumberish, format: Double): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
     inline def fromValue(value: BigNumber, decimals: BigNumberish, format: FixedFormat): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
     
-    inline def isFixedNumber(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFixedNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean]
+    inline def isFixedNumber(value: Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFixedNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean]
   }
   
   inline def formatFixed(value: BigNumberish): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatFixed")(value.asInstanceOf[js.Any]).asInstanceOf[String]

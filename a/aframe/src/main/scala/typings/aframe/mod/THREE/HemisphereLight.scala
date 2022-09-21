@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aframe", "THREE.HemisphereLight")
 @js.native
 /**
-	 * @param skyColor
-	 * @param groundColor
-	 * @param [intensity=1]
-	 */
-class HemisphereLight ()
+  * @param skyColor
+  * @param groundColor
+  * @param [intensity=1]
+  */
+open class HemisphereLight ()
   extends typings.three.mod.HemisphereLight

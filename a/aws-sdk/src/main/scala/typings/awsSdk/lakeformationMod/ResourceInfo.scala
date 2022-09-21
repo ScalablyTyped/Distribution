@@ -9,7 +9,7 @@ trait ResourceInfo extends StObject {
   /**
     * The date and time the resource was last modified.
     */
-  var LastModified: js.UndefOr[LastModifiedTimestamp] = js.undefined
+  var LastModified: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
@@ -30,7 +30,7 @@ object ResourceInfo {
   
   extension [Self <: ResourceInfo](x: Self) {
     
-    inline def setLastModified(value: LastModifiedTimestamp): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     

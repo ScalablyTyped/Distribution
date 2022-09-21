@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_SubProcess")
 @js.native
-class ClassSubProcess ()
+open class ClassSubProcess ()
   extends StObject
      with typings.fibjs.ClassSubProcess

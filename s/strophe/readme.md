@@ -1,7 +1,7 @@
 
 # Scala.js typings for strophe
 
-Typings are for version v1.2.0
+Typings are for version 1.2
 
 ## Library description:
 Strophe.js is an XMPP library for JavaScript
@@ -11,9 +11,9 @@ Strophe.js is an XMPP library for JavaScript
 | Full name          | strophe |
 | Keywords           | xmpp, message, browser |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 7686 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 606.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](http://strophe.im/strophejs)

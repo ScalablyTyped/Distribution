@@ -9,14 +9,15 @@ object resizeNearestNeighborGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/resize_nearest_neighbor_gpu", "ResizeNearestNeighborProgram")
   @js.native
-  class ResizeNearestNeighborProgram protected ()
+  open class ResizeNearestNeighborProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(
       inputShape: js.Tuple4[Double, Double, Double, Double],
       newHeight: Double,
       newWidth: Double,
-      alignCorners: Boolean
+      alignCorners: Boolean,
+      halfPixelCenters: Boolean
     ) = this()
     
     /* CompleteClass */

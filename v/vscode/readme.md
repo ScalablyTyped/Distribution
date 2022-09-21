@@ -1,7 +1,7 @@
 
 # Scala.js typings for vscode
 
-Typings are for version 1.51
+Typings are for version 1.71
 
 ## Library description:
 ## ⚠️ Deprecated, use @types/vscode and vscode-test instead ⚠️
@@ -10,15 +10,12 @@ Typings are for version 1.51
 | ------------------ | :-------------: |
 | Full name          | vscode |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 25 |
-| # downloads        | 2466041 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 33726.666666666664 |
+| # stars            | 121.0 |
 
 ## Links
-- [Homepage](https://github.com/Microsoft/vscode-extension-vscode#readme)
-- [Bugs](https://github.com/Microsoft/vscode-extension-vscode/issues)
-- [Repository](https://github.com/Microsoft/vscode-extension-vscode)
 - [Npm](https://www.npmjs.com/package/vscode)
     
 

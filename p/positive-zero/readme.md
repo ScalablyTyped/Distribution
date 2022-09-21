@@ -1,7 +1,7 @@
 
 # Scala.js typings for positive-zero
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Check if a number is positive zero
@@ -11,14 +11,11 @@ Check if a number is positive zero
 | Full name          | positive-zero |
 | Keywords           | number, is, check, detect, positive, zero |
 | # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 1241 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 57.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/positive-zero#readme)
-- [Bugs](https://github.com/sindresorhus/positive-zero/issues)
-- [Repository](https://github.com/sindresorhus/positive-zero)
 - [Npm](https://www.npmjs.com/package/positive-zero)
     
 

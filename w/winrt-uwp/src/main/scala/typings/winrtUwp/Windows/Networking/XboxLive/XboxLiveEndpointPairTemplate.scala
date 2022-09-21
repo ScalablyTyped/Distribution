@@ -20,7 +20,7 @@ trait XboxLiveEndpointPairTemplate extends StObject {
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   var acceptorBoundPortRangeUpper: Double = js.native
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_inboundendpointpaircreated(
     `type`: inboundendpointpaircreated,
@@ -82,7 +82,7 @@ trait XboxLiveEndpointPairTemplate extends StObject {
   @JSName("oninboundendpointpaircreated")
   var oninboundendpointpaircreated_Original: TypedEventHandler[XboxLiveEndpointPairTemplate, XboxLiveInboundEndpointPairCreatedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_inboundendpointpaircreated(
     `type`: inboundendpointpaircreated,

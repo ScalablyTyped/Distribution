@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "crc" : "4.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "crc" : "4.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

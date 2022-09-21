@@ -16,12 +16,16 @@ trait MeshMaterialProperties extends StObject {
   /**
     * Specifies how transparency on the object is handled.
     *
+    * @default 0.5
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#alphaCutoff)
     */
   var alphaCutoff: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies how transparency on the object is handled.
+    *
+    * @default "auto"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#alphaMode)
     */
@@ -45,6 +49,8 @@ trait MeshMaterialProperties extends StObject {
   
   /**
     * Specifies whether both sides of each triangle are displayed, or only the front sides.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#doubleSided)
     */
@@ -84,7 +90,7 @@ object MeshMaterialProperties {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setDoubleSided(value: Boolean): Self = StObject.set(x, "doubleSided", value.asInstanceOf[js.Any])
     

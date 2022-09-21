@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SortField")
 @js.native
-/* private */ class SortField ()
+/* private */ open class SortField ()
   extends StObject
      with typings.activexExcel.Excel.SortField {
   
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Creator: XlCreator = js.native
   
   /* CompleteClass */
-  var CustomOrder: js.Any = js.native
+  var CustomOrder: Any = js.native
   
   /* CompleteClass */
   var DataOption: XlSortDataOption = js.native
@@ -51,7 +51,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Order: XlSortOrder = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Priority: Double = js.native
@@ -63,5 +63,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var SortOn: XlSortOn = js.native
   
   /* CompleteClass */
-  override val SortOnValue: js.Any = js.native
+  override val SortOnValue: Any = js.native
 }

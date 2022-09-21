@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.MouseEvent")
 @js.native
-class MouseEvent protected ()
+open class MouseEvent protected ()
   extends StObject
      with typings.easeljs.createjs.MouseEvent {
   def this(
@@ -32,11 +32,11 @@ class MouseEvent protected ()
   var cancelable: Boolean = js.native
   
   /* CompleteClass */
-  var currentTarget: js.Any = js.native
+  var currentTarget: Any = js.native
   
   // other event payloads
   /* CompleteClass */
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   // It is 'Object' type officially, but 'any' is easier to use.
   /* CompleteClass */
@@ -58,7 +58,7 @@ class MouseEvent protected ()
   var immediatePropagationStopped: Boolean = js.native
   
   /* CompleteClass */
-  var item: js.Any = js.native
+  var item: Any = js.native
   
   /* CompleteClass */
   var loaded: Double = js.native
@@ -70,7 +70,7 @@ class MouseEvent protected ()
   var next: String = js.native
   
   /* CompleteClass */
-  var params: js.Any = js.native
+  var params: Any = js.native
   
   /* CompleteClass */
   var paused: Boolean = js.native
@@ -85,7 +85,7 @@ class MouseEvent protected ()
   var propagationStopped: Boolean = js.native
   
   /* CompleteClass */
-  var rawResult: js.Any = js.native
+  var rawResult: Any = js.native
   
   /* CompleteClass */
   override def remove(): Unit = js.native
@@ -94,7 +94,7 @@ class MouseEvent protected ()
   var removed: Boolean = js.native
   
   /* CompleteClass */
-  var result: js.Any = js.native
+  var result: Any = js.native
   
   /* CompleteClass */
   var runTime: Double = js.native
@@ -112,7 +112,7 @@ class MouseEvent protected ()
   override def stopPropagation(): Unit = js.native
   
   /* CompleteClass */
-  var target: js.Any = js.native
+  var target: Any = js.native
   
   /* CompleteClass */
   var time: Double = js.native

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("AMap.CanvasLayer")
 @js.native
-class CanvasLayer ()
+open class CanvasLayer ()
   extends StObject
      with typings.amapJsApi.AMap.CanvasLayer

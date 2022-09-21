@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.InputParameterObject")
 @js.native
-/* private */ class InputParameterObject ()
+/* private */ open class InputParameterObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.InputParameterObject {
   

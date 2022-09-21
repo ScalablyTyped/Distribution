@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PhononPageEventObject extends StObject {
   
-  def addEvent(event: String, callback: js.Function1[/* parameter */ js.UndefOr[js.Any], Unit]): Unit
+  def addEvent(event: String, callback: js.Function1[/* parameter */ js.UndefOr[Any], Unit]): Unit
 }
 object PhononPageEventObject {
   
-  inline def apply(addEvent: (String, js.Function1[/* parameter */ js.UndefOr[js.Any], Unit]) => Unit): PhononPageEventObject = {
+  inline def apply(addEvent: (String, js.Function1[/* parameter */ js.UndefOr[Any], Unit]) => Unit): PhononPageEventObject = {
     val __obj = js.Dynamic.literal(addEvent = js.Any.fromFunction2(addEvent))
     __obj.asInstanceOf[PhononPageEventObject]
   }
   
   extension [Self <: PhononPageEventObject](x: Self) {
     
-    inline def setAddEvent(value: (String, js.Function1[/* parameter */ js.UndefOr[js.Any], Unit]) => Unit): Self = StObject.set(x, "addEvent", js.Any.fromFunction2(value))
+    inline def setAddEvent(value: (String, js.Function1[/* parameter */ js.UndefOr[Any], Unit]) => Unit): Self = StObject.set(x, "addEvent", js.Any.fromFunction2(value))
   }
 }

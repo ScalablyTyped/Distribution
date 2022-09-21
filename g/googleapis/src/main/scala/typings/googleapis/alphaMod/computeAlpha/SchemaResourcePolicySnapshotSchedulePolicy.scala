@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A snapshot schedule policy specifies when and how frequently snapshots are
-  * to be created for the target disk. Also specifies how many and how long
-  * these scheduled snapshots should be retained.
-  */
 trait SchemaResourcePolicySnapshotSchedulePolicy extends StObject {
   
   /**
@@ -17,15 +12,12 @@ trait SchemaResourcePolicySnapshotSchedulePolicy extends StObject {
   var retentionPolicy: js.UndefOr[SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy] = js.undefined
   
   /**
-    * A Vm Maintenance Policy specifies what kind of infrastructure maintenance
-    * we are allowed to perform on this VM and when. Schedule that is applied
-    * to disks covered by this policy.
+    * A Vm Maintenance Policy specifies what kind of infrastructure maintenance we are allowed to perform on this VM and when. Schedule that is applied to disks covered by this policy.
     */
   var schedule: js.UndefOr[SchemaResourcePolicySnapshotSchedulePolicySchedule] = js.undefined
   
   /**
-    * Properties with which snapshots are created such as labels, encryption
-    * keys.
+    * Properties with which snapshots are created such as labels, encryption keys.
     */
   var snapshotProperties: js.UndefOr[SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties] = js.undefined
 }

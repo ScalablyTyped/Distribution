@@ -4,10 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<carbon-components-react.carbon-components-react/lib/components/DataTable/TableContainer.TableContainerProps, 'stickyHeader'> */
+/* Inlined std.Pick<carbon-components-react.carbon-components-react/lib/components/DataTable/TableContainer.TableContainerProps, 'stickyHeader' | 'useStaticWidth'> */
 trait PickTableContainerPropsst extends StObject {
   
   var stickyHeader: js.UndefOr[Boolean] = js.undefined
+  
+  var useStaticWidth: js.UndefOr[Boolean] = js.undefined
 }
 object PickTableContainerPropsst {
   
@@ -21,5 +23,9 @@ object PickTableContainerPropsst {
     inline def setStickyHeader(value: Boolean): Self = StObject.set(x, "stickyHeader", value.asInstanceOf[js.Any])
     
     inline def setStickyHeaderUndefined: Self = StObject.set(x, "stickyHeader", js.undefined)
+    
+    inline def setUseStaticWidth(value: Boolean): Self = StObject.set(x, "useStaticWidth", value.asInstanceOf[js.Any])
+    
+    inline def setUseStaticWidthUndefined: Self = StObject.set(x, "useStaticWidth", js.undefined)
   }
 }

@@ -32,12 +32,12 @@ object GoogleCloudAssetV1IdentityList {
     
     inline def setGroupEdgesUndefined: Self = StObject.set(x, "groupEdges", js.undefined)
     
-    inline def setGroupEdgesVarargs(value: GoogleCloudAssetV1Edge*): Self = StObject.set(x, "groupEdges", js.Array(value :_*))
+    inline def setGroupEdgesVarargs(value: GoogleCloudAssetV1Edge*): Self = StObject.set(x, "groupEdges", js.Array(value*))
     
     inline def setIdentities(value: js.Array[GoogleCloudAssetV1Identity]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     
     inline def setIdentitiesUndefined: Self = StObject.set(x, "identities", js.undefined)
     
-    inline def setIdentitiesVarargs(value: GoogleCloudAssetV1Identity*): Self = StObject.set(x, "identities", js.Array(value :_*))
+    inline def setIdentitiesVarargs(value: GoogleCloudAssetV1Identity*): Self = StObject.set(x, "identities", js.Array(value*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.reactOnsenui.anon
 
 import typings.react.mod.ChangeEvent
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Autofocus extends StObject {
   
   var autofocus: js.UndefOr[Boolean] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -19,7 +22,7 @@ trait Autofocus extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* e */ ChangeEvent[js.Any], Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ ChangeEvent[Any], Unit]] = js.undefined
   
   var required: js.UndefOr[Boolean] = js.undefined
   
@@ -39,6 +42,10 @@ object Autofocus {
     inline def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
     
     inline def setAutofocusUndefined: Self = StObject.set(x, "autofocus", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
@@ -60,7 +67,7 @@ object Autofocus {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOnChange(value: /* e */ ChangeEvent[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* e */ ChangeEvent[Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     

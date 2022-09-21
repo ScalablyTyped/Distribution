@@ -49,7 +49,7 @@ object SchemaInvoiceSummary {
     
     inline def setAdditionalChargeSummariesUndefined: Self = StObject.set(x, "additionalChargeSummaries", js.undefined)
     
-    inline def setAdditionalChargeSummariesVarargs(value: SchemaInvoiceSummaryAdditionalChargeSummary*): Self = StObject.set(x, "additionalChargeSummaries", js.Array(value :_*))
+    inline def setAdditionalChargeSummariesVarargs(value: SchemaInvoiceSummaryAdditionalChargeSummary*): Self = StObject.set(x, "additionalChargeSummaries", js.Array(value*))
     
     inline def setCustomerBalance(value: SchemaAmount): Self = StObject.set(x, "customerBalance", value.asInstanceOf[js.Any])
     
@@ -71,6 +71,6 @@ object SchemaInvoiceSummary {
     
     inline def setPromotionSummariesUndefined: Self = StObject.set(x, "promotionSummaries", js.undefined)
     
-    inline def setPromotionSummariesVarargs(value: SchemaPromotion*): Self = StObject.set(x, "promotionSummaries", js.Array(value :_*))
+    inline def setPromotionSummariesVarargs(value: SchemaPromotion*): Self = StObject.set(x, "promotionSummaries", js.Array(value*))
   }
 }

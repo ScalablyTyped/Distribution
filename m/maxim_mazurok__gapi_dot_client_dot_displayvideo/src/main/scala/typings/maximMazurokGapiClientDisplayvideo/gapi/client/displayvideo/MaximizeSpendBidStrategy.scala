@@ -20,6 +20,9 @@ trait MaximizeSpendBidStrategy extends StObject {
     * supported for this strategy.
     */
   var performanceGoalType: js.UndefOr[String] = js.undefined
+  
+  /** Whether the strategy takes deal floor prices into account. */
+  var raiseBidForDeals: js.UndefOr[Boolean] = js.undefined
 }
 object MaximizeSpendBidStrategy {
   
@@ -41,5 +44,9 @@ object MaximizeSpendBidStrategy {
     inline def setPerformanceGoalType(value: String): Self = StObject.set(x, "performanceGoalType", value.asInstanceOf[js.Any])
     
     inline def setPerformanceGoalTypeUndefined: Self = StObject.set(x, "performanceGoalType", js.undefined)
+    
+    inline def setRaiseBidForDeals(value: Boolean): Self = StObject.set(x, "raiseBidForDeals", value.asInstanceOf[js.Any])
+    
+    inline def setRaiseBidForDealsUndefined: Self = StObject.set(x, "raiseBidForDeals", js.undefined)
   }
 }

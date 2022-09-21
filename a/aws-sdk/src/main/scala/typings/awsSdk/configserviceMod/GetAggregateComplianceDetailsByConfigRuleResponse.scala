@@ -29,7 +29,7 @@ object GetAggregateComplianceDetailsByConfigRuleResponse {
     
     inline def setAggregateEvaluationResultsUndefined: Self = StObject.set(x, "AggregateEvaluationResults", js.undefined)
     
-    inline def setAggregateEvaluationResultsVarargs(value: AggregateEvaluationResult*): Self = StObject.set(x, "AggregateEvaluationResults", js.Array(value :_*))
+    inline def setAggregateEvaluationResultsVarargs(value: AggregateEvaluationResult*): Self = StObject.set(x, "AggregateEvaluationResults", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

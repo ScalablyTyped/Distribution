@@ -34,6 +34,12 @@ object mobileMessagingCordovaStrings {
   inline def actionTapped: actionTapped = "actionTapped".asInstanceOf[actionTapped]
   
   @js.native
+  sealed trait deeplink
+    extends StObject
+       with Event
+  inline def deeplink: deeplink = "deeplink".asInstanceOf[deeplink]
+  
+  @js.native
   sealed trait depersonalized
     extends StObject
        with Event

@@ -90,7 +90,7 @@ object typesMod {
       
       inline def setBootstrapNodes(value: js.Array[BootstrapNode]): Self = StObject.set(x, "bootstrapNodes", value.asInstanceOf[js.Any])
       
-      inline def setBootstrapNodesVarargs(value: BootstrapNode*): Self = StObject.set(x, "bootstrapNodes", js.Array(value :_*))
+      inline def setBootstrapNodesVarargs(value: BootstrapNode*): Self = StObject.set(x, "bootstrapNodes", js.Array(value*))
       
       inline def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
       
@@ -100,7 +100,7 @@ object typesMod {
       
       inline def setHardforks(value: js.Array[Hardfork]): Self = StObject.set(x, "hardforks", value.asInstanceOf[js.Any])
       
-      inline def setHardforksVarargs(value: Hardfork*): Self = StObject.set(x, "hardforks", js.Array(value :_*))
+      inline def setHardforksVarargs(value: Hardfork*): Self = StObject.set(x, "hardforks", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -166,13 +166,13 @@ object typesMod {
     
     var consensus: String
     
-    var finality: js.Any
+    var finality: Any
     
     var name: String
   }
   object Hardfork {
     
-    inline def apply(consensus: String, finality: js.Any, name: String): Hardfork = {
+    inline def apply(consensus: String, finality: Any, name: String): Hardfork = {
       val __obj = js.Dynamic.literal(consensus = consensus.asInstanceOf[js.Any], finality = finality.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], block = null)
       __obj.asInstanceOf[Hardfork]
     }
@@ -185,7 +185,7 @@ object typesMod {
       
       inline def setConsensus(value: String): Self = StObject.set(x, "consensus", value.asInstanceOf[js.Any])
       
-      inline def setFinality(value: js.Any): Self = StObject.set(x, "finality", value.asInstanceOf[js.Any])
+      inline def setFinality(value: Any): Self = StObject.set(x, "finality", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -193,7 +193,7 @@ object typesMod {
   
   trait chainsType
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var names: StringDictionary[String]
   }

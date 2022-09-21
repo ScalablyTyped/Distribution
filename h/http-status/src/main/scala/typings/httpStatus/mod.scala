@@ -426,6 +426,12 @@ object mod extends Shortcut {
     
     val `502`: String
     
+    val `502_CLASS`: String
+    
+    val `502_MESSAGE`: String
+    
+    val `502_NAME`: String
+    
     val `503`: String
     
     val `503_CLASS`: String
@@ -609,12 +615,6 @@ object mod extends Shortcut {
     val USE_PROXY: Double
     
     val VARIANT_ALSO_NEGOTIATES: Double
-    
-    val _CLASS: String
-    
-    val _MESSAGE: String
-    
-    val _NAME: String
     
     var classes: HttpStatusClasses
     
@@ -828,6 +828,9 @@ object mod extends Shortcut {
       `501_MESSAGE`: String,
       `501_NAME`: String,
       `502`: String,
+      `502_CLASS`: String,
+      `502_MESSAGE`: String,
+      `502_NAME`: String,
       `503`: String,
       `503_CLASS`: String,
       `503_MESSAGE`: String,
@@ -873,12 +876,9 @@ object mod extends Shortcut {
       FOUND: Double,
       GATEWAY_TIMEOUT: Double,
       GONE: Double,
-      HTTP_VERSION_NOT_SUPPORTED: Double,
-      IM_A_TEAPOT: Double,
-      IM_USED: Double,
-      INSUFFICIENT_STORAGE: Double
+      HTTP_VERSION_NOT_SUPPORTED: Double
     ): HttpStatus = {
-      val __obj = js.Dynamic.literal(ACCEPTED = ACCEPTED.asInstanceOf[js.Any], ALREADY_REPORTED = ALREADY_REPORTED.asInstanceOf[js.Any], BAD_GATEWAY = BAD_GATEWAY.asInstanceOf[js.Any], BAD_REQUEST = BAD_REQUEST.asInstanceOf[js.Any], CONFLICT = CONFLICT.asInstanceOf[js.Any], CONTINUE = CONTINUE.asInstanceOf[js.Any], CREATED = CREATED.asInstanceOf[js.Any], EXPECTATION_FAILED = EXPECTATION_FAILED.asInstanceOf[js.Any], FAILED_DEPENDENCY = FAILED_DEPENDENCY.asInstanceOf[js.Any], FORBIDDEN = FORBIDDEN.asInstanceOf[js.Any], FOUND = FOUND.asInstanceOf[js.Any], GATEWAY_TIMEOUT = GATEWAY_TIMEOUT.asInstanceOf[js.Any], GONE = GONE.asInstanceOf[js.Any], HTTP_VERSION_NOT_SUPPORTED = HTTP_VERSION_NOT_SUPPORTED.asInstanceOf[js.Any], IM_A_TEAPOT = IM_A_TEAPOT.asInstanceOf[js.Any], IM_USED = IM_USED.asInstanceOf[js.Any], INSUFFICIENT_STORAGE = INSUFFICIENT_STORAGE.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(ACCEPTED = ACCEPTED.asInstanceOf[js.Any], ALREADY_REPORTED = ALREADY_REPORTED.asInstanceOf[js.Any], BAD_GATEWAY = BAD_GATEWAY.asInstanceOf[js.Any], BAD_REQUEST = BAD_REQUEST.asInstanceOf[js.Any], CONFLICT = CONFLICT.asInstanceOf[js.Any], CONTINUE = CONTINUE.asInstanceOf[js.Any], CREATED = CREATED.asInstanceOf[js.Any], EXPECTATION_FAILED = EXPECTATION_FAILED.asInstanceOf[js.Any], FAILED_DEPENDENCY = FAILED_DEPENDENCY.asInstanceOf[js.Any], FORBIDDEN = FORBIDDEN.asInstanceOf[js.Any], FOUND = FOUND.asInstanceOf[js.Any], GATEWAY_TIMEOUT = GATEWAY_TIMEOUT.asInstanceOf[js.Any], GONE = GONE.asInstanceOf[js.Any], HTTP_VERSION_NOT_SUPPORTED = HTTP_VERSION_NOT_SUPPORTED.asInstanceOf[js.Any])
       __obj.updateDynamic("100")(`100`.asInstanceOf[js.Any])
       __obj.updateDynamic("100_CLASS")(`100_CLASS`.asInstanceOf[js.Any])
       __obj.updateDynamic("100_MESSAGE")(`100_MESSAGE`.asInstanceOf[js.Any])
@@ -1084,6 +1084,9 @@ object mod extends Shortcut {
       __obj.updateDynamic("501_MESSAGE")(`501_MESSAGE`.asInstanceOf[js.Any])
       __obj.updateDynamic("501_NAME")(`501_NAME`.asInstanceOf[js.Any])
       __obj.updateDynamic("502")(`502`.asInstanceOf[js.Any])
+      __obj.updateDynamic("502_CLASS")(`502_CLASS`.asInstanceOf[js.Any])
+      __obj.updateDynamic("502_MESSAGE")(`502_MESSAGE`.asInstanceOf[js.Any])
+      __obj.updateDynamic("502_NAME")(`502_NAME`.asInstanceOf[js.Any])
       __obj.updateDynamic("503")(`503`.asInstanceOf[js.Any])
       __obj.updateDynamic("503_CLASS")(`503_CLASS`.asInstanceOf[js.Any])
       __obj.updateDynamic("503_MESSAGE")(`503_MESSAGE`.asInstanceOf[js.Any])
@@ -1531,6 +1534,12 @@ object mod extends Shortcut {
       
       inline def set502(value: String): Self = StObject.set(x, "502", value.asInstanceOf[js.Any])
       
+      inline def set502_CLASS(value: String): Self = StObject.set(x, "502_CLASS", value.asInstanceOf[js.Any])
+      
+      inline def set502_MESSAGE(value: String): Self = StObject.set(x, "502_MESSAGE", value.asInstanceOf[js.Any])
+      
+      inline def set502_NAME(value: String): Self = StObject.set(x, "502_NAME", value.asInstanceOf[js.Any])
+      
       inline def set503(value: String): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
       
       inline def set503_CLASS(value: String): Self = StObject.set(x, "503_CLASS", value.asInstanceOf[js.Any])
@@ -1718,12 +1727,6 @@ object mod extends Shortcut {
       inline def setUSE_PROXY(value: Double): Self = StObject.set(x, "USE_PROXY", value.asInstanceOf[js.Any])
       
       inline def setVARIANT_ALSO_NEGOTIATES(value: Double): Self = StObject.set(x, "VARIANT_ALSO_NEGOTIATES", value.asInstanceOf[js.Any])
-      
-      inline def set_CLASS(value: String): Self = StObject.set(x, "_CLASS", value.asInstanceOf[js.Any])
-      
-      inline def set_MESSAGE(value: String): Self = StObject.set(x, "_MESSAGE", value.asInstanceOf[js.Any])
-      
-      inline def set_NAME(value: String): Self = StObject.set(x, "_NAME", value.asInstanceOf[js.Any])
     }
   }
   

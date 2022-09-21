@@ -11,9 +11,9 @@ Simple /etc/hosts manipulation
 | Full name          | hostile |
 | Keywords           | /etc/hosts, change hosts, etc hosts, hostname, hosts file |
 | # releases         | 2 |
-| # dependents       | 90 |
-| # downloads        | 2164807 |
-| # stars            | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 121489.33333333333 |
+| # stars            | 711.0 |
 
 ## Links
 - [Homepage](https://github.com/feross/hostile)

@@ -9,7 +9,7 @@ trait IdTokenResult extends StObject {
   
   var authTime: String
   
-  var claims: StringDictionary[js.Any]
+  var claims: StringDictionary[Any]
   
   var expirationTime: String
   
@@ -23,7 +23,7 @@ object IdTokenResult {
   
   inline def apply(
     authTime: String,
-    claims: StringDictionary[js.Any],
+    claims: StringDictionary[Any],
     expirationTime: String,
     issuedAtTime: String,
     token: String
@@ -36,7 +36,7 @@ object IdTokenResult {
     
     inline def setAuthTime(value: String): Self = StObject.set(x, "authTime", value.asInstanceOf[js.Any])
     
-    inline def setClaims(value: StringDictionary[js.Any]): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
+    inline def setClaims(value: StringDictionary[Any]): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
     
     inline def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     

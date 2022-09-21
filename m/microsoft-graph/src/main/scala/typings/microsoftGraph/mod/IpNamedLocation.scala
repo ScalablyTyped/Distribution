@@ -8,10 +8,13 @@ trait IpNamedLocation
   extends StObject
      with NamedLocation {
   
-  // List of IP address ranges in IPv4 CIDR format (e.g. 1.2.3.4/32) or any allowable IPv6 format from IETF RFC596.
+  /**
+    * List of IP address ranges in IPv4 CIDR format (e.g. 1.2.3.4/32) or any allowable IPv6 format from IETF RFC596.
+    * Required.
+    */
   var ipRanges: js.UndefOr[js.Array[IpRange]] = js.undefined
   
-  // True if this location is explicitly trusted.
+  // true if this location is explicitly trusted. Optional. Default value is false.
   var isTrusted: js.UndefOr[Boolean] = js.undefined
 }
 object IpNamedLocation {
@@ -27,7 +30,7 @@ object IpNamedLocation {
     
     inline def setIpRangesUndefined: Self = StObject.set(x, "ipRanges", js.undefined)
     
-    inline def setIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "ipRanges", js.Array(value :_*))
+    inline def setIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "ipRanges", js.Array(value*))
     
     inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     

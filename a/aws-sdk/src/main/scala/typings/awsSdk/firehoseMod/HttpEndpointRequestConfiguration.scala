@@ -29,7 +29,7 @@ object HttpEndpointRequestConfiguration {
     
     inline def setCommonAttributesUndefined: Self = StObject.set(x, "CommonAttributes", js.undefined)
     
-    inline def setCommonAttributesVarargs(value: HttpEndpointCommonAttribute*): Self = StObject.set(x, "CommonAttributes", js.Array(value :_*))
+    inline def setCommonAttributesVarargs(value: HttpEndpointCommonAttribute*): Self = StObject.set(x, "CommonAttributes", js.Array(value*))
     
     inline def setContentEncoding(value: ContentEncoding): Self = StObject.set(x, "ContentEncoding", value.asInstanceOf[js.Any])
     

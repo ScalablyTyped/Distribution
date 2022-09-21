@@ -24,6 +24,6 @@ object DescribeTagsOutput {
     
     inline def setTagDescriptionsUndefined: Self = StObject.set(x, "TagDescriptions", js.undefined)
     
-    inline def setTagDescriptionsVarargs(value: TagDescription*): Self = StObject.set(x, "TagDescriptions", js.Array(value :_*))
+    inline def setTagDescriptionsVarargs(value: TagDescription*): Self = StObject.set(x, "TagDescriptions", js.Array(value*))
   }
 }

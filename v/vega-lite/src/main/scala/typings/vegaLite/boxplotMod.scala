@@ -8,6 +8,8 @@ import typings.vegaLite.encodingMod.Encoding
 import typings.vegaLite.normalizeBaseMod.NormalizerParams
 import typings.vegaLite.specLayerMod.NormalizedLayerSpec
 import typings.vegaLite.specUnitMod.GenericUnitSpec
+import typings.vegaLite.srcSelectionMod.SelectionParameter
+import typings.vegaLite.srcSelectionMod.SelectionType
 import typings.vegaLite.vegaLiteStrings.`min-max`
 import typings.vegaLite.vegaLiteStrings.box
 import typings.vegaLite.vegaLiteStrings.boxplot
@@ -42,12 +44,15 @@ object boxplotMod {
   
   inline def getBoxPlotType_minmax(extent: `min-max`): `min-max` | tukey = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoxPlotType")(extent.asInstanceOf[js.Any]).asInstanceOf[`min-max` | tukey]
   
-  inline def normalizeBoxPlot(spec: GenericUnitSpec[Encoding[String], BoxPlot | BoxPlotDef], hasConfig: NormalizerParams): NormalizedLayerSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBoxPlot")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec]
+  inline def normalizeBoxPlot(
+    spec: GenericUnitSpec[Encoding[String], BoxPlot | BoxPlotDef, SelectionParameter[SelectionType]],
+    hasConfig: NormalizerParams
+  ): NormalizedLayerSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBoxPlot")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec]
   
   type BoxPlot = boxplot
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof std.Record<vega-lite.vega-lite/build/src/compositemark/boxplot.BoxPlotPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef>> ]:? std.Record<vega-lite.vega-lite/build/src/compositemark/boxplot.BoxPlotPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef>>[P]} */ trait BoxPlotConfig extends StObject {
+  - Dropped {[ P in keyof std.Record<vega-lite.vega-lite/build/src/compositemark/boxplot.BoxPlotPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> ]:? std.Record<vega-lite.vega-lite/build/src/compositemark/boxplot.BoxPlotPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>>[P]} */ trait BoxPlotConfig extends StObject {
     
     /**
       * The extent of the whiskers. Available options include:

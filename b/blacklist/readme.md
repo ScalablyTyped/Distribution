@@ -10,10 +10,10 @@ Returns a shallow copy of an object without blacklisted properties
 | ------------------ | :-------------: |
 | Full name          | blacklist |
 | Keywords           | blacklist, filter, object, utility |
-| # releases         | 0 |
-| # dependents       | 136 |
-| # downloads        | 4017643 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 453258.6666666667 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/dcousens/blacklist)

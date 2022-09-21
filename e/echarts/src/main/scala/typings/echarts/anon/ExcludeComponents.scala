@@ -35,7 +35,7 @@ object ExcludeComponents {
     
     inline def setExcludeComponentsUndefined: Self = StObject.set(x, "excludeComponents", js.undefined)
     
-    inline def setExcludeComponentsVarargs(value: String*): Self = StObject.set(x, "excludeComponents", js.Array(value :_*))
+    inline def setExcludeComponentsVarargs(value: String*): Self = StObject.set(x, "excludeComponents", js.Array(value*))
     
     inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     

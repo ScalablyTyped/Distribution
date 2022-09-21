@@ -12,7 +12,7 @@ trait Shard extends StObject {
   /** Output only. The index of the shard among all the shards. */
   var shardIndex: js.UndefOr[Double] = js.undefined
   
-  /** Output only. Test targets for each shard. */
+  /** Output only. Test targets for each shard. Only set for manual sharding. */
   var testTargetsForShard: js.UndefOr[TestTargetsForShard] = js.undefined
 }
 object Shard {

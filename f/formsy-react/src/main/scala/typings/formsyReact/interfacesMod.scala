@@ -20,32 +20,32 @@ object interfacesMod {
     extends StObject
        with ComponentClass[js.Object, ComponentState] {
     
-    var defaultValue: js.UndefOr[js.Any] = js.native
+    var defaultValue: js.UndefOr[Any] = js.native
   }
   
   trait FormsyContextInterface extends StObject {
     
-    def attachToForm(component: InputComponent[js.Any]): Unit
+    def attachToForm(component: InputComponent[Any]): Unit
     
-    def detachFromForm(component: InputComponent[js.Any]): Unit
+    def detachFromForm(component: InputComponent[Any]): Unit
     
     var isFormDisabled: Boolean
     
-    def isValidValue(component: InputComponent[js.Any], value: js.Any): Boolean
+    def isValidValue(component: InputComponent[Any], value: Any): Boolean
     
-    def runValidation(component: InputComponent[js.Any]): IsRequired
+    def runValidation(component: InputComponent[Any]): IsRequired
     
-    def validate(component: InputComponent[js.Any]): Unit
+    def validate(component: InputComponent[Any]): Unit
   }
   object FormsyContextInterface {
     
     inline def apply(
-      attachToForm: InputComponent[js.Any] => Unit,
-      detachFromForm: InputComponent[js.Any] => Unit,
+      attachToForm: InputComponent[Any] => Unit,
+      detachFromForm: InputComponent[Any] => Unit,
       isFormDisabled: Boolean,
-      isValidValue: (InputComponent[js.Any], js.Any) => Boolean,
-      runValidation: InputComponent[js.Any] => IsRequired,
-      validate: InputComponent[js.Any] => Unit
+      isValidValue: (InputComponent[Any], Any) => Boolean,
+      runValidation: InputComponent[Any] => IsRequired,
+      validate: InputComponent[Any] => Unit
     ): FormsyContextInterface = {
       val __obj = js.Dynamic.literal(attachToForm = js.Any.fromFunction1(attachToForm), detachFromForm = js.Any.fromFunction1(detachFromForm), isFormDisabled = isFormDisabled.asInstanceOf[js.Any], isValidValue = js.Any.fromFunction2(isValidValue), runValidation = js.Any.fromFunction1(runValidation), validate = js.Any.fromFunction1(validate))
       __obj.asInstanceOf[FormsyContextInterface]
@@ -53,21 +53,21 @@ object interfacesMod {
     
     extension [Self <: FormsyContextInterface](x: Self) {
       
-      inline def setAttachToForm(value: InputComponent[js.Any] => Unit): Self = StObject.set(x, "attachToForm", js.Any.fromFunction1(value))
+      inline def setAttachToForm(value: InputComponent[Any] => Unit): Self = StObject.set(x, "attachToForm", js.Any.fromFunction1(value))
       
-      inline def setDetachFromForm(value: InputComponent[js.Any] => Unit): Self = StObject.set(x, "detachFromForm", js.Any.fromFunction1(value))
+      inline def setDetachFromForm(value: InputComponent[Any] => Unit): Self = StObject.set(x, "detachFromForm", js.Any.fromFunction1(value))
       
       inline def setIsFormDisabled(value: Boolean): Self = StObject.set(x, "isFormDisabled", value.asInstanceOf[js.Any])
       
-      inline def setIsValidValue(value: (InputComponent[js.Any], js.Any) => Boolean): Self = StObject.set(x, "isValidValue", js.Any.fromFunction2(value))
+      inline def setIsValidValue(value: (InputComponent[Any], Any) => Boolean): Self = StObject.set(x, "isValidValue", js.Any.fromFunction2(value))
       
-      inline def setRunValidation(value: InputComponent[js.Any] => IsRequired): Self = StObject.set(x, "runValidation", js.Any.fromFunction1(value))
+      inline def setRunValidation(value: InputComponent[Any] => IsRequired): Self = StObject.set(x, "runValidation", js.Any.fromFunction1(value))
       
-      inline def setValidate(value: InputComponent[js.Any] => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: InputComponent[Any] => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     }
   }
   
-  type IModel = js.Any
+  type IModel = Any
   
   type IResetModel = js.Function1[/* model */ js.UndefOr[IModel], Unit]
   
@@ -80,8 +80,7 @@ object interfacesMod {
   type IUpdateInputsWithValue[V] = js.Function2[/* values */ StringDictionary[V], /* validate */ js.UndefOr[Boolean], Unit]
   
   @js.native
-  trait InputComponent[V]
-    extends Component[WrapperProps[V], WrapperState[V], js.Any] {
+  trait InputComponent[V] extends Component[WrapperProps[V], WrapperState[V], Any] {
     
     var requiredValidations: js.UndefOr[Validations[V]] = js.native
     
@@ -97,7 +96,7 @@ object interfacesMod {
   type ValidationFunction[V] = js.Function3[
     /* values */ Values, 
     /* value */ V, 
-    /* extra */ js.UndefOr[js.Any], 
+    /* extra */ js.UndefOr[Any], 
     Boolean | ValidationError
   ]
   
@@ -105,7 +104,7 @@ object interfacesMod {
   
   type ValidationsStructure[V] = StringDictionary[Validation[V]]
   
-  type Values = StringDictionary[js.Any]
+  type Values = StringDictionary[Any]
   
   type WrappedComponentClass = FC[js.Object] | ComponentWithStaticAttributes
 }

@@ -22,6 +22,6 @@ object FilterExpressionList {
     
     inline def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
     
-    inline def setExpressionsVarargs(value: FilterExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: FilterExpression*): Self = StObject.set(x, "expressions", js.Array(value*))
   }
 }

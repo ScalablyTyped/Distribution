@@ -7,14 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Build extends StObject {
   
+  /** Output only. Describes this build's approval configuration, status, and result. */
+  var approval: js.UndefOr[BuildApproval] = js.undefined
+  
   /** Artifacts produced by the build that should be uploaded upon successful completion of all build steps. */
   var artifacts: js.UndefOr[Artifacts] = js.undefined
+  
+  /** Secrets and secret environment variables. */
+  var availableSecrets: js.UndefOr[Secrets] = js.undefined
   
   /** Output only. The ID of the `BuildTrigger` that triggered this build, if it was triggered automatically. */
   var buildTriggerId: js.UndefOr[String] = js.undefined
   
   /** Output only. Time at which the request to create the build was received. */
   var createTime: js.UndefOr[String] = js.undefined
+  
+  /** Output only. Contains information about the build when status=FAILURE. */
+  var failureInfo: js.UndefOr[FailureInfo] = js.undefined
   
   /** Output only. Time at which execution of the build was finished. The difference between finish_time and start_time is the duration of the build's execution. */
   var finishTime: js.UndefOr[String] = js.undefined
@@ -55,12 +64,15 @@ trait Build extends StObject {
   /** Output only. Results of the build. */
   var results: js.UndefOr[Results] = js.undefined
   
-  /** Secrets to decrypt using Cloud Key Management Service. */
+  /**
+    * Secrets to decrypt using Cloud Key Management Service. Note: Secret Manager is the recommended technique for managing sensitive data with Cloud Build. Use `available_secrets` to
+    * configure builds to access secrets from Secret Manager. For instructions, see: https://cloud.google.com/cloud-build/docs/securing-builds/use-secrets
+    */
   var secrets: js.UndefOr[js.Array[Secret]] = js.undefined
   
   /**
     * IAM service account whose credentials will be used at build runtime. Must be of the format `projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}`. ACCOUNT can be email address or
-    * uniqueId of the service account. This field is in alpha and is not publicly available.
+    * uniqueId of the service account.
     */
   var serviceAccount: js.UndefOr[String] = js.undefined
   
@@ -86,7 +98,7 @@ trait Build extends StObject {
   var substitutions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Build & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Build & TopLevel[Any]
   ] = js.undefined
   
   /** Tags for annotation of a `Build`. These are not docker tags. */
@@ -99,14 +111,17 @@ trait Build extends StObject {
   var timeout: js.UndefOr[String] = js.undefined
   
   /**
-    * Output only. Stores timing information for phases of the build. Valid keys are: * BUILD: time to execute all build steps * PUSH: time to push all specified images. * FETCHSOURCE:
-    * time to fetch source. If the build does not specify source or images, these keys will not be included.
+    * Output only. Stores timing information for phases of the build. Valid keys are: * BUILD: time to execute all build steps. * PUSH: time to push all specified images. * FETCHSOURCE:
+    * time to fetch source. * SETUPBUILD: time to set up build. If the build does not specify source or images, these keys will not be included.
     */
   var timing: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.cloudbuild.gapi.client.cloudbuild.TimeSpan}
-    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Build & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Build & TopLevel[Any]
   ] = js.undefined
+  
+  /** Output only. Non-fatal problems encountered during the execution of the build. */
+  var warnings: js.UndefOr[js.Array[Warning]] = js.undefined
 }
 object Build {
   
@@ -117,9 +132,17 @@ object Build {
   
   extension [Self <: Build](x: Self) {
     
+    inline def setApproval(value: BuildApproval): Self = StObject.set(x, "approval", value.asInstanceOf[js.Any])
+    
+    inline def setApprovalUndefined: Self = StObject.set(x, "approval", js.undefined)
+    
     inline def setArtifacts(value: Artifacts): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     inline def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
+    
+    inline def setAvailableSecrets(value: Secrets): Self = StObject.set(x, "availableSecrets", value.asInstanceOf[js.Any])
+    
+    inline def setAvailableSecretsUndefined: Self = StObject.set(x, "availableSecrets", js.undefined)
     
     inline def setBuildTriggerId(value: String): Self = StObject.set(x, "buildTriggerId", value.asInstanceOf[js.Any])
     
@@ -128,6 +151,10 @@ object Build {
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    
+    inline def setFailureInfo(value: FailureInfo): Self = StObject.set(x, "failureInfo", value.asInstanceOf[js.Any])
+    
+    inline def setFailureInfoUndefined: Self = StObject.set(x, "failureInfo", js.undefined)
     
     inline def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
@@ -141,7 +168,7 @@ object Build {
     
     inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setLogUrl(value: String): Self = StObject.set(x, "logUrl", value.asInstanceOf[js.Any])
     
@@ -175,7 +202,7 @@ object Build {
     
     inline def setSecretsUndefined: Self = StObject.set(x, "secrets", js.undefined)
     
-    inline def setSecretsVarargs(value: Secret*): Self = StObject.set(x, "secrets", js.Array(value :_*))
+    inline def setSecretsVarargs(value: Secret*): Self = StObject.set(x, "secrets", js.Array(value*))
     
     inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
@@ -205,12 +232,12 @@ object Build {
     
     inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    inline def setStepsVarargs(value: BuildStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: BuildStep*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setSubstitutions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Build & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Build & TopLevel[Any]
     ): Self = StObject.set(x, "substitutions", value.asInstanceOf[js.Any])
     
     inline def setSubstitutionsUndefined: Self = StObject.set(x, "substitutions", js.undefined)
@@ -219,7 +246,7 @@ object Build {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
@@ -228,9 +255,15 @@ object Build {
     inline def setTiming(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudbuild.gapi.client.cloudbuild.TimeSpan}
-      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Build & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Build & TopLevel[Any]
     ): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
     inline def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
+    
+    inline def setWarnings(value: js.Array[Warning]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    
+    inline def setWarningsVarargs(value: Warning*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

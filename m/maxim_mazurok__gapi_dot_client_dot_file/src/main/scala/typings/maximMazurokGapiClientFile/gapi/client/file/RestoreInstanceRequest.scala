@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RestoreInstanceRequest extends StObject {
   
-  /** Required. Name of the file share in the Cloud Filestore instance that the backup is being restored to. */
+  /** Required. Name of the file share in the Filestore instance that the backup is being restored to. */
   var fileShare: js.UndefOr[String] = js.undefined
   
-  /** The resource name of the backup, in the format projects/{project_number}/locations/{location_id}/backups/{backup_id}. */
+  /** The resource name of the backup, in the format `projects/{project_number}/locations/{location_id}/backups/{backup_id}`. */
   var sourceBackup: js.UndefOr[String] = js.undefined
 }
 object RestoreInstanceRequest {

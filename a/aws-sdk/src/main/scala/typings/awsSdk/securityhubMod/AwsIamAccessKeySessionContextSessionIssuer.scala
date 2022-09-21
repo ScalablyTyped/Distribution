@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsIamAccessKeySessionContextSessionIssuer extends StObject {
   
   /**
-    * The identifier of the AWS account that created the session.
+    * The identifier of the Amazon Web Services account that created the session.
     */
   var AccountId: js.UndefOr[NonEmptyString] = js.undefined
   

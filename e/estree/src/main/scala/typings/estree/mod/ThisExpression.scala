@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ThisExpression
   extends StObject
-     with BaseNode
-     with Expression {
+     with BaseNode {
   
   @JSName("type")
   var type_ThisExpression: typings.estree.estreeStrings.ThisExpression

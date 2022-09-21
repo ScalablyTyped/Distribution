@@ -51,7 +51,7 @@ object XInplaceObject {
   inline def apply(
     acquire: () => Unit,
     enableModeless: Boolean => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setObjectRectangles: (Rectangle, Rectangle) => Unit,
     translateAccelerators: SeqEquiv[KeyEvent] => Unit

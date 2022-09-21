@@ -1,75 +1,40 @@
 package typings.pngImg
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.pngImg.typesMod.Color
+import typings.pngImg.typesMod.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-    * Lite self-contained png image processing library for macOS and Linux.
-    */
-  @JSImport("png-img", JSImport.Namespace)
+  @JSImport("png-img", "PngImg")
   @js.native
-  class ^ protected ()
-    extends StObject
-       with PngImg {
+  open class PngImg protected () extends StObject {
     /**
       * Create PngImg object from passed buffer with image
       */
-    def this(buffer: Buffer) = this()
-  }
-  
-  trait Color extends StObject {
-    
-    var a: Double
-    
-    var b: Double
-    
-    var g: Double
-    
-    var r: Double
-  }
-  object Color {
-    
-    inline def apply(a: Double, b: Double, g: Double, r: Double): Color = {
-      val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Color]
-    }
-    
-    extension [Self <: Color](x: Self) {
-      
-      inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
-      
-      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
-      
-      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
-      
-      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /**
-    * Lite self-contained png image processing library for macOS and Linux.
-    */
-  @js.native
-  trait PngImg extends StObject {
+    def this(rawImg: Buffer) = this()
     
     /**
       * Crop image. Modifies current image.
       * Throws if new image is not inside the current image.
+      * @param offsetX offset from left side of the image
+      * @param offsetY offset from top side of the image
       */
     def crop(offsetX: Double, offsetY: Double, width: Double, height: Double): this.type = js.native
     
-    def fill(x: Double, y: Double, width: Double, height: Double, color: String): this.type = js.native
+    def fill(offsetX: Double, offsetY: Double, width: Double, height: Double, color: String): this.type = js.native
     /**
       * Fill region with passed color. Modifies current image.
+      * @param offsetX offset from left side of the image
+      * @param offsetY offset from top side of the image
       * @param x x coordinate (left to right)
       * @param y y coordinate (top to bottom)
       * @param color color as rgb object or as a '#XXXXXX' string
       */
-    def fill(x: Double, y: Double, width: Double, height: Double, color: Color): this.type = js.native
+    def fill(offsetX: Double, offsetY: Double, width: Double, height: Double, color: Color): this.type = js.native
     
     /**
       * Get pixel color and alpha.
@@ -78,15 +43,18 @@ object mod {
       */
     def get(x: Double, y: Double): Color = js.native
     
+    /* private */ var img_ : Any = js.native
+    
     /**
       * Inserts image into specified place.
       * @param img image to insert
-      *
+      * @param offsetX offset from left side of the image
+      * @param offsetY offset from top side of the image
       */
     def insert(img: PngImg, offsetX: Double, offsetY: Double): this.type = js.native
     
     /**
-      * Rotates image 90 degress counterclockwise
+      * Rotates image 90 degrees counterclockwise
       */
     def rotateLeft(): this.type = js.native
     
@@ -96,11 +64,9 @@ object mod {
     def rotateRight(): this.type = js.native
     
     /**
-      * Save image to file. Asynchronous operation.
-      * @param file - path to file to save image
-      * @param callback - will be called after save operation finish or on error
+      * Save image to file
       */
-    def save(file: String, callback: SaveCallback): Unit = js.native
+    def save(file: String): js.Promise[Unit] = js.native
     
     def set(x: Double, y: Double, color: String): this.type = js.native
     /**
@@ -115,7 +81,7 @@ object mod {
     
     /**
       * Sets new image size. Modifies current image.
-      * If new size is less or equal than current size, than crop will be performed.
+      * If new size is less or equal than current size, then crop will be performed.
       */
     def setSize(width: Double, height: Double): this.type = js.native
     
@@ -123,28 +89,5 @@ object mod {
       * Get image size as an object.
       */
     def size(): Size = js.native
-  }
-  
-  type SaveCallback = js.Function1[/* error */ String, Unit]
-  
-  trait Size extends StObject {
-    
-    var height: Double
-    
-    var width: Double
-  }
-  object Size {
-    
-    inline def apply(height: Double, width: Double): Size = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Size]
-    }
-    
-    extension [Self <: Size](x: Self) {
-      
-      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    }
   }
 }

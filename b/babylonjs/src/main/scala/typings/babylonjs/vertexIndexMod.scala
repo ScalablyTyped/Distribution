@@ -8,7 +8,7 @@ object vertexIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Vertex/index", "BonesBlock")
   @js.native
-  class BonesBlock protected ()
+  open class BonesBlock protected ()
     extends typings.babylonjs.bonesBlockMod.BonesBlock {
     /**
       * Creates a new BonesBlock
@@ -19,7 +19,7 @@ object vertexIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Vertex/index", "InstancesBlock")
   @js.native
-  class InstancesBlock protected ()
+  open class InstancesBlock protected ()
     extends typings.babylonjs.instancesBlockMod.InstancesBlock {
     /**
       * Creates a new InstancesBlock
@@ -30,7 +30,7 @@ object vertexIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Vertex/index", "LightInformationBlock")
   @js.native
-  class LightInformationBlock protected ()
+  open class LightInformationBlock protected ()
     extends typings.babylonjs.lightInformationBlockMod.LightInformationBlock {
     /**
       * Creates a new LightInformationBlock
@@ -41,7 +41,7 @@ object vertexIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Vertex/index", "MorphTargetsBlock")
   @js.native
-  class MorphTargetsBlock protected ()
+  open class MorphTargetsBlock protected ()
     extends typings.babylonjs.morphTargetsBlockMod.MorphTargetsBlock {
     /**
       * Create a new MorphTargetsBlock
@@ -52,7 +52,7 @@ object vertexIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Vertex/index", "VertexOutputBlock")
   @js.native
-  class VertexOutputBlock protected ()
+  open class VertexOutputBlock protected ()
     extends typings.babylonjs.vertexOutputBlockMod.VertexOutputBlock {
     /**
       * Creates a new VertexOutputBlock

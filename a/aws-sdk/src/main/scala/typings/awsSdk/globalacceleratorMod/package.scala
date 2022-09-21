@@ -5,16 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+type AcceleratorEvents = js.Array[AcceleratorEvent]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEPLOYED
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
   - java.lang.String
 */
-type AcceleratorStatus = typings.awsSdk.globalacceleratorMod._AcceleratorStatus | java.lang.String
+type AcceleratorStatus = _AcceleratorStatus | String
 
-type Accelerators = js.Array[typings.awsSdk.globalacceleratorMod.Accelerator]
+type Accelerators = js.Array[Accelerator]
 
-type ByoipCidrEvents = js.Array[typings.awsSdk.globalacceleratorMod.ByoipCidrEvent]
+type ByoipCidrEvents = js.Array[ByoipCidrEvent]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING_PROVISIONING
@@ -30,32 +32,79 @@ type ByoipCidrEvents = js.Array[typings.awsSdk.globalacceleratorMod.ByoipCidrEve
   - typings.awsSdk.awsSdkStrings.FAILED_DEPROVISION
   - java.lang.String
 */
-type ByoipCidrState = typings.awsSdk.globalacceleratorMod._ByoipCidrState | java.lang.String
+type ByoipCidrState = _ByoipCidrState | String
 
-type ByoipCidrs = js.Array[typings.awsSdk.globalacceleratorMod.ByoipCidr]
+type ByoipCidrs = js.Array[ByoipCidr]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.SOURCE_IP
   - java.lang.String
 */
-type ClientAffinity = typings.awsSdk.globalacceleratorMod._ClientAffinity | java.lang.String
+type ClientAffinity = _ClientAffinity | String
 
-type EndpointConfigurations = js.Array[typings.awsSdk.globalacceleratorMod.EndpointConfiguration]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DEPLOYED
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - java.lang.String
+*/
+type CustomRoutingAcceleratorStatus = _CustomRoutingAcceleratorStatus | String
 
-type EndpointDescriptions = js.Array[typings.awsSdk.globalacceleratorMod.EndpointDescription]
+type CustomRoutingAccelerators = js.Array[CustomRoutingAccelerator]
 
-type EndpointGroups = js.Array[typings.awsSdk.globalacceleratorMod.EndpointGroup]
+type CustomRoutingDestinationConfigurations = js.Array[CustomRoutingDestinationConfiguration]
 
-type EndpointWeight = scala.Double
+type CustomRoutingDestinationDescriptions = js.Array[CustomRoutingDestinationDescription]
 
-type GenericBoolean = scala.Boolean
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALLOW
+  - typings.awsSdk.awsSdkStrings.DENY
+  - java.lang.String
+*/
+type CustomRoutingDestinationTrafficState = _CustomRoutingDestinationTrafficState | String
 
-type GenericString = java.lang.String
+type CustomRoutingEndpointConfigurations = js.Array[CustomRoutingEndpointConfiguration]
 
-type HealthCheckIntervalSeconds = scala.Double
+type CustomRoutingEndpointDescriptions = js.Array[CustomRoutingEndpointDescription]
 
-type HealthCheckPort = scala.Double
+type CustomRoutingEndpointGroups = js.Array[CustomRoutingEndpointGroup]
+
+type CustomRoutingListeners = js.Array[CustomRoutingListener]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TCP
+  - typings.awsSdk.awsSdkStrings.UDP
+  - java.lang.String
+*/
+type CustomRoutingProtocol = _CustomRoutingProtocol | String
+
+type CustomRoutingProtocols = js.Array[CustomRoutingProtocol]
+
+type DestinationAddresses = js.Array[IpAddress]
+
+type DestinationPortMappings = js.Array[DestinationPortMapping]
+
+type DestinationPorts = js.Array[PortNumber]
+
+type EndpointConfigurations = js.Array[EndpointConfiguration]
+
+type EndpointDescriptions = js.Array[EndpointDescription]
+
+type EndpointGroups = js.Array[EndpointGroup]
+
+type EndpointIds = js.Array[GenericString]
+
+type EndpointWeight = Double
+
+type GenericBoolean = Boolean
+
+type GenericString = String
+
+type HealthCheckIntervalSeconds = Double
+
+type HealthCheckPath = String
+
+type HealthCheckPort = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TCP
@@ -63,7 +112,7 @@ type HealthCheckPort = scala.Double
   - typings.awsSdk.awsSdkStrings.HTTPS
   - java.lang.String
 */
-type HealthCheckProtocol = typings.awsSdk.globalacceleratorMod._HealthCheckProtocol | java.lang.String
+type HealthCheckProtocol = _HealthCheckProtocol | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIAL
@@ -71,54 +120,74 @@ type HealthCheckProtocol = typings.awsSdk.globalacceleratorMod._HealthCheckProto
   - typings.awsSdk.awsSdkStrings.UNHEALTHY
   - java.lang.String
 */
-type HealthState = typings.awsSdk.globalacceleratorMod._HealthState | java.lang.String
+type HealthState = _HealthState | String
 
-type IdempotencyToken = java.lang.String
+type IdempotencyToken = String
 
-type IpAddress = java.lang.String
+type IpAddress = String
 
-type IpAddressType = typings.awsSdk.awsSdkStrings.IPV4 | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IPv4_
+  - typings.awsSdk.awsSdkStrings.IPv6_
+  - java.lang.String
+*/
+type IpAddressFamily = _IpAddressFamily | String
 
-type IpAddresses = js.Array[typings.awsSdk.globalacceleratorMod.IpAddress]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IPV4
+  - typings.awsSdk.awsSdkStrings.DUAL_STACK
+  - java.lang.String
+*/
+type IpAddressType = _IpAddressType | String
 
-type IpSets = js.Array[typings.awsSdk.globalacceleratorMod.IpSet]
+type IpAddresses = js.Array[IpAddress]
 
-type Listeners = js.Array[typings.awsSdk.globalacceleratorMod.Listener]
+type IpSets = js.Array[IpSet]
 
-type MaxResults = scala.Double
+type Listeners = js.Array[Listener]
 
-type PortNumber = scala.Double
+type MaxResults = Double
 
-type PortOverrides = js.Array[typings.awsSdk.globalacceleratorMod.PortOverride]
+type PortMappings = js.Array[PortMapping]
 
-type PortRanges = js.Array[typings.awsSdk.globalacceleratorMod.PortRange]
+type PortMappingsMaxResults = Double
+
+type PortNumber = Double
+
+type PortOverrides = js.Array[PortOverride]
+
+type PortRanges = js.Array[PortRange]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TCP
   - typings.awsSdk.awsSdkStrings.UDP
   - java.lang.String
 */
-type Protocol = typings.awsSdk.globalacceleratorMod._Protocol | java.lang.String
+type Protocol = _Protocol | String
 
-type ResourceArn = java.lang.String
+type Protocols = js.Array[Protocol]
 
-type TagKey = java.lang.String
+type ResourceArn = String
 
-type TagKeys = js.Array[typings.awsSdk.globalacceleratorMod.TagKey]
+type SocketAddresses = js.Array[SocketAddress]
 
-type TagValue = java.lang.String
+type TagKey = String
 
-type Tags = js.Array[typings.awsSdk.globalacceleratorMod.Tag]
+type TagKeys = js.Array[TagKey]
 
-type ThresholdCount = scala.Double
+type TagValue = String
 
-type Timestamp = typings.std.Date
+type Tags = js.Array[Tag]
 
-type TrafficDialPercentage = scala.Double
+type ThresholdCount = Double
+
+type Timestamp = js.Date
+
+type TrafficDialPercentage = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-08-08`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.globalacceleratorMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

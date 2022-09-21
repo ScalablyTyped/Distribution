@@ -47,6 +47,6 @@ object b2WorldManifold {
     
     inline def setM_points(value: js.Array[b2Vec2]): Self = StObject.set(x, "m_points", value.asInstanceOf[js.Any])
     
-    inline def setM_pointsVarargs(value: b2Vec2*): Self = StObject.set(x, "m_points", js.Array(value :_*))
+    inline def setM_pointsVarargs(value: b2Vec2*): Self = StObject.set(x, "m_points", js.Array(value*))
   }
 }

@@ -11,7 +11,7 @@ object requestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getSvgContent(url: String, sanitize: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSvgContent")(url.asInstanceOf[js.Any], sanitize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def getSvgContent(url: String, sanitize: Boolean): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSvgContent")(url.asInstanceOf[js.Any], sanitize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   @JSImport("ionicons/dist/types/components/icon/request", "ioniconContent")
   @js.native

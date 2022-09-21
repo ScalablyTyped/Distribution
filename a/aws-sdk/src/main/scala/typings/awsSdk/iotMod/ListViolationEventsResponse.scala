@@ -33,6 +33,6 @@ object ListViolationEventsResponse {
     
     inline def setViolationEventsUndefined: Self = StObject.set(x, "violationEvents", js.undefined)
     
-    inline def setViolationEventsVarargs(value: ViolationEvent*): Self = StObject.set(x, "violationEvents", js.Array(value :_*))
+    inline def setViolationEventsVarargs(value: ViolationEvent*): Self = StObject.set(x, "violationEvents", js.Array(value*))
   }
 }

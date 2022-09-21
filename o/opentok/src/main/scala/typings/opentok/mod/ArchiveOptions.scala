@@ -1,5 +1,7 @@
 package typings.opentok.mod
 
+import typings.opentok.opentokStrings.auto
+import typings.opentok.opentokStrings.manual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,6 +19,8 @@ trait ArchiveOptions extends StObject {
   var outputMode: js.UndefOr[OutputMode] = js.undefined
   
   var resolution: js.UndefOr[String] = js.undefined
+  
+  var streamMode: js.UndefOr[auto | manual] = js.undefined
 }
 object ArchiveOptions {
   
@@ -50,5 +54,9 @@ object ArchiveOptions {
     inline def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+    
+    inline def setStreamMode(value: auto | manual): Self = StObject.set(x, "streamMode", value.asInstanceOf[js.Any])
+    
+    inline def setStreamModeUndefined: Self = StObject.set(x, "streamMode", js.undefined)
   }
 }

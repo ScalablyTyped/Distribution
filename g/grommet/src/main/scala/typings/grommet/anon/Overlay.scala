@@ -13,11 +13,11 @@ trait Overlay extends StObject {
   
   var background: js.UndefOr[BackgroundType] = js.undefined
   
-  var border: js.UndefOr[`11`] = js.undefined
+  var border: js.UndefOr[IntelligentRounding] = js.undefined
   
-  var container: js.UndefOr[ZIndex] = js.undefined
+  var container: js.UndefOr[Elevation] = js.undefined
   
-  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
+  var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
   var overlay: js.UndefOr[`5`] = js.undefined
   
@@ -38,17 +38,17 @@ object Overlay {
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setBorder(value: `11`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: IntelligentRounding): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setContainer(value: ZIndex): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Elevation): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: ExtendType[Record[String, Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, Any]] => ExtendValue[Record[String, Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     

@@ -10,10 +10,10 @@ Remember Me cookie authentication strategy for Passport.
 | ------------------ | :-------------: |
 | Full name          | passport-remember-me-extended |
 | Keywords           | passport, cookie, persistent, rememberme, auth, authn, authentication |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 70086 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 936.3333333333334 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/dereklakin/passport-remember-me#readme)

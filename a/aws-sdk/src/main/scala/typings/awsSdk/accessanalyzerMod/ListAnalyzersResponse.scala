@@ -27,7 +27,7 @@ object ListAnalyzersResponse {
     
     inline def setAnalyzers(value: AnalyzersList): Self = StObject.set(x, "analyzers", value.asInstanceOf[js.Any])
     
-    inline def setAnalyzersVarargs(value: AnalyzerSummary*): Self = StObject.set(x, "analyzers", js.Array(value :_*))
+    inline def setAnalyzersVarargs(value: AnalyzerSummary*): Self = StObject.set(x, "analyzers", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

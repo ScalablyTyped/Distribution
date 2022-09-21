@@ -9,7 +9,7 @@ object option {
   
   @JSImport("yandex-maps", "option.Manager")
   @js.native
-  class Manager ()
+  open class Manager ()
     extends StObject
        with IOptionManager {
     def this(options: js.Object) = this()
@@ -66,8 +66,8 @@ object option {
     /* CompleteClass */
     var events: IEventManager[js.Object] = js.native
     
-    def fire(`type`: String, eventobject: js.Object): this.type = js.native
-    def fire(`type`: String, eventobject: IEvent[js.Object, js.Object]): this.type = js.native
+    def fire(`type`: String, eventObject: js.Object): this.type = js.native
+    def fire(`type`: String, eventObject: IEvent[js.Object, js.Object]): this.type = js.native
     
     def group(): IEventGroup = js.native
     

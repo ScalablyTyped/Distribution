@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlkListBox extends StObject {
   
   def AddItem(ItemText: String): Unit = js.native
-  def AddItem(ItemText: String, Index: js.Any): Unit = js.native
+  def AddItem(ItemText: String, Index: Any): Unit = js.native
   
   var BackColor: OLE_COLOR = js.native
   
@@ -60,5 +60,5 @@ trait OlkListBox extends StObject {
   
   var TopIndex: Double = js.native
   
-  var Value: js.Any = js.native
+  var Value: Any = js.native
 }

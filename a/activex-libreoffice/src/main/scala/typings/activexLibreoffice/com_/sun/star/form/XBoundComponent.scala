@@ -31,7 +31,7 @@ object XBoundComponent {
     acquire: () => Unit,
     addUpdateListener: XUpdateListener => Unit,
     commit: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeUpdateListener: XUpdateListener => Unit
   ): XBoundComponent = {

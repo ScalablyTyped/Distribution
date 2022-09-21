@@ -35,7 +35,7 @@ object tagMod {
       
       inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
       
@@ -91,7 +91,7 @@ object tagMod {
       
       inline def setUsers(value: js.Array[Id]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      inline def setUsersVarargs(value: Id*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: Id*): Self = StObject.set(x, "users", js.Array(value*))
     }
   }
   
@@ -151,7 +151,7 @@ object tagMod {
       
       inline def setUsers(value: js.Array[UserIdentifier]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      inline def setUsersVarargs(value: UserIdentifier*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: UserIdentifier*): Self = StObject.set(x, "users", js.Array(value*))
     }
   }
 }

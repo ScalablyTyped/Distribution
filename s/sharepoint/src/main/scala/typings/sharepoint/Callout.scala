@@ -48,7 +48,7 @@ trait Callout extends StObject {
   def getOpenOptions(): CalloutOpenOptions
   
   /** Returns the position algorithm function defined for the callout during its creation. */
-  def getPositionAlgorithm(): js.Any
+  def getPositionAlgorithm(): Any
   
   /** Returns the title of the callout. */
   def getTitle(): String
@@ -75,7 +75,7 @@ trait Callout extends StObject {
   def refreshActions(): Unit
   
   /** Sets options for the callout. Not all options can be changed for the callout after its creation. */
-  def set(options: CalloutOptions): js.Any
+  def set(options: CalloutOptions): Any
   
   /** Display if hidden, hide if shown. */
   def toggle(): Unit
@@ -96,7 +96,7 @@ object Callout {
     getID: () => String,
     getLaunchPoint: () => HTMLElement,
     getOpenOptions: () => CalloutOpenOptions,
-    getPositionAlgorithm: () => js.Any,
+    getPositionAlgorithm: () => Any,
     getTitle: () => String,
     isClosed: () => Boolean,
     isClosing: () => Boolean,
@@ -105,7 +105,7 @@ object Callout {
     isOpening: () => Boolean,
     open: Boolean => Unit,
     refreshActions: () => Unit,
-    set: CalloutOptions => js.Any,
+    set: CalloutOptions => Any,
     toggle: () => Unit
   ): Callout = {
     val __obj = js.Dynamic.literal(addAction = js.Any.fromFunction1(addAction), addEventCallback = js.Any.fromFunction2(addEventCallback), close = js.Any.fromFunction1(close), destroy = js.Any.fromFunction0(destroy), getActionMenu = js.Any.fromFunction0(getActionMenu), getBeakOrientation = js.Any.fromFunction0(getBeakOrientation), getBoundingBox = js.Any.fromFunction0(getBoundingBox), getContent = js.Any.fromFunction0(getContent), getContentElement = js.Any.fromFunction0(getContentElement), getContentWidth = js.Any.fromFunction0(getContentWidth), getID = js.Any.fromFunction0(getID), getLaunchPoint = js.Any.fromFunction0(getLaunchPoint), getOpenOptions = js.Any.fromFunction0(getOpenOptions), getPositionAlgorithm = js.Any.fromFunction0(getPositionAlgorithm), getTitle = js.Any.fromFunction0(getTitle), isClosed = js.Any.fromFunction0(isClosed), isClosing = js.Any.fromFunction0(isClosing), isOpen = js.Any.fromFunction0(isOpen), isOpenOrOpening = js.Any.fromFunction0(isOpenOrOpening), isOpening = js.Any.fromFunction0(isOpening), open = js.Any.fromFunction1(open), refreshActions = js.Any.fromFunction0(refreshActions), set = js.Any.fromFunction1(set), toggle = js.Any.fromFunction0(toggle))
@@ -140,7 +140,7 @@ object Callout {
     
     inline def setGetOpenOptions(value: () => CalloutOpenOptions): Self = StObject.set(x, "getOpenOptions", js.Any.fromFunction0(value))
     
-    inline def setGetPositionAlgorithm(value: () => js.Any): Self = StObject.set(x, "getPositionAlgorithm", js.Any.fromFunction0(value))
+    inline def setGetPositionAlgorithm(value: () => Any): Self = StObject.set(x, "getPositionAlgorithm", js.Any.fromFunction0(value))
     
     inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
@@ -158,7 +158,7 @@ object Callout {
     
     inline def setRefreshActions(value: () => Unit): Self = StObject.set(x, "refreshActions", js.Any.fromFunction0(value))
     
-    inline def setSet(value: CalloutOptions => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: CalloutOptions => Any): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
     inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
   }

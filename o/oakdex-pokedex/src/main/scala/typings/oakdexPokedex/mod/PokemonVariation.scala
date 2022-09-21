@@ -42,7 +42,7 @@ object PokemonVariation {
     
     inline def setAbilitiesUndefined: Self = StObject.set(x, "abilities", js.undefined)
     
-    inline def setAbilitiesVarargs(value: String*): Self = StObject.set(x, "abilities", js.Array(value :_*))
+    inline def setAbilitiesVarargs(value: String*): Self = StObject.set(x, "abilities", js.Array(value*))
     
     inline def setBase_stats(value: StatObject): Self = StObject.set(x, "base_stats", value.asInstanceOf[js.Any])
     
@@ -72,7 +72,7 @@ object PokemonVariation {
     
     inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setWeight_eu(value: String): Self = StObject.set(x, "weight_eu", value.asInstanceOf[js.Any])
     

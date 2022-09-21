@@ -25,7 +25,7 @@ object XDocumentEventListener {
     acquire: () => Unit,
     disposing: typings.activexLibreoffice.com_.sun.star.lang.EventObject => Unit,
     documentEventOccured: DocumentEvent => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDocumentEventListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), documentEventOccured = js.Any.fromFunction1(documentEventOccured), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

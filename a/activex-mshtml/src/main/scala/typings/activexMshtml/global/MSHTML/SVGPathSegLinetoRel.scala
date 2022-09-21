@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGPathSegLinetoRel")
 @js.native
-/* private */ class SVGPathSegLinetoRel ()
+/* private */ open class SVGPathSegLinetoRel ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGPathSegLinetoRel {
   

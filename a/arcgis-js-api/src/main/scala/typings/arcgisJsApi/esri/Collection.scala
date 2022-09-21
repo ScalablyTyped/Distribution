@@ -8,6 +8,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`before-add`
 import typings.arcgisJsApi.arcgisJsApiStrings.`before-changes`
 import typings.arcgisJsApi.arcgisJsApiStrings.`before-remove`
 import typings.arcgisJsApi.arcgisJsApiStrings.change
+import typings.arcgisJsApi.esriImplementsIteration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,15 +17,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Collection[T]
   extends StObject
      with Accessor
-     with Evented {
+     with Evented
+     with esriImplementsIteration[T] {
   
-  def add(item: T): Unit = js.native
-  def add(item: T, index: Double): Unit = js.native
+  def add(item: T): scala.Unit = js.native
+  def add(item: T, index: Double): scala.Unit = js.native
   
-  def addMany(items: js.Array[T]): Unit = js.native
-  def addMany(items: js.Array[T], index: Double): Unit = js.native
-  def addMany(items: Collection[T]): Unit = js.native
-  def addMany(items: Collection[T], index: Double): Unit = js.native
+  def addMany(items: js.Array[T]): scala.Unit = js.native
+  def addMany(items: js.Array[T], index: Double): scala.Unit = js.native
+  def addMany(items: Collection[T]): scala.Unit = js.native
+  def addMany(items: Collection[T], index: Double): scala.Unit = js.native
+  
+  def at(index: Double): T = js.native
   
   def concat(value: js.Array[T]): Collection[T] = js.native
   def concat(value: Collection[T]): Collection[T] = js.native
@@ -43,7 +47,7 @@ trait Collection[T]
   @JSName("flatten")
   def flatten_U[U](callback: js.Function2[/* item */ U, /* index */ Double, js.Array[U] | Collection[U]]): Collection[U] = js.native
   
-  def forEach(callback: ItemCallback[T]): Unit = js.native
+  def forEach(callback: ItemCallback[T]): scala.Unit = js.native
   
   def getItemAt(index: Double): T = js.native
   
@@ -87,11 +91,11 @@ trait Collection[T]
   def reduceRight[R](callback: ItemReduceCallback[T, R]): R = js.native
   def reduceRight[R](callback: ItemReduceCallback[T, R], initialValue: R): R = js.native
   
-  def remove(item: T): Unit = js.native
+  def remove(item: T): scala.Unit = js.native
   
-  def removeAll(): Unit = js.native
+  def removeAll(): scala.Unit = js.native
   
-  def removeAt(index: Double): js.Any = js.native
+  def removeAt(index: Double): Any = js.native
   
   def removeMany(items: js.Array[T]): js.Array[T] = js.native
   def removeMany(items: Collection[T]): js.Array[T] = js.native
@@ -105,12 +109,12 @@ trait Collection[T]
   def slice(): Collection[T] = js.native
   def slice(begin: Double): Collection[T] = js.native
   def slice(begin: Double, end: Double): Collection[T] = js.native
-  def slice(begin: Unit, end: Double): Collection[T] = js.native
+  def slice(begin: scala.Unit, end: Double): Collection[T] = js.native
   
   def some(callback: ItemCallback[T]): Boolean = js.native
   
-  def sort(): Unit = js.native
-  def sort(compareFunction: ItemCompareCallback[T]): Unit = js.native
+  def sort(): scala.Unit = js.native
+  def sort(compareFunction: ItemCompareCallback[T]): scala.Unit = js.native
   
   def splice(start: Double, deleteCount: Double, items: T*): js.Array[T] = js.native
   

@@ -1,19 +1,18 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ReleaseTaskAttachment extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
-  var createdOn: Date
+  var createdOn: js.Date
   
   var modifiedBy: String
   
-  var modifiedOn: Date
+  var modifiedOn: js.Date
   
   var name: String
   
@@ -26,10 +25,10 @@ trait ReleaseTaskAttachment extends StObject {
 object ReleaseTaskAttachment {
   
   inline def apply(
-    _links: js.Any,
-    createdOn: Date,
+    _links: Any,
+    createdOn: js.Date,
     modifiedBy: String,
-    modifiedOn: Date,
+    modifiedOn: js.Date,
     name: String,
     recordId: String,
     timelineId: String,
@@ -42,11 +41,11 @@ object ReleaseTaskAttachment {
   
   extension [Self <: ReleaseTaskAttachment](x: Self) {
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setModifiedBy(value: String): Self = StObject.set(x, "modifiedBy", value.asInstanceOf[js.Any])
     
-    inline def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
+    inline def setModifiedOn(value: js.Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -56,6 +55,6 @@ object ReleaseTaskAttachment {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

@@ -6,8 +6,6 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Date
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +14,9 @@ object timestampPbMod {
   
   @JSImport("google-protobuf/google/protobuf/timestamp_pb", "Timestamp")
   @js.native
-  class Timestamp () extends Message {
+  open class Timestamp () extends Message {
     
-    def fromDate(date: Date): Unit = js.native
+    def fromDate(date: js.Date): Unit = js.native
     
     def getNanos(): Double = js.native
     
@@ -28,7 +26,7 @@ object timestampPbMod {
     
     def setSeconds(value: Double): Timestamp = js.native
     
-    def toDate(): Date = js.native
+    def toDate(): js.Date = js.native
   }
   /* static members */
   object Timestamp {
@@ -37,7 +35,7 @@ object timestampPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
     
     inline def deserializeBinaryFromReader(message: Timestamp, reader: BinaryReader): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
     
@@ -51,6 +49,8 @@ object timestampPbMod {
     inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
     inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    
+    inline def fromDate(date: js.Date): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
     
     inline def serializeBinaryToWriter(message: Timestamp, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     

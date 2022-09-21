@@ -162,13 +162,13 @@ object PaymentGatewayAccounts {
     
     inline def setSupportedCurrenciesUndefined: Self = StObject.set(x, "supportedCurrencies", js.undefined)
     
-    inline def setSupportedCurrenciesVarargs(value: String*): Self = StObject.set(x, "supportedCurrencies", js.Array(value :_*))
+    inline def setSupportedCurrenciesVarargs(value: String*): Self = StObject.set(x, "supportedCurrencies", js.Array(value*))
     
     inline def setSupportedPaymentMethods(value: js.Array[String]): Self = StObject.set(x, "supportedPaymentMethods", value.asInstanceOf[js.Any])
     
     inline def setSupportedPaymentMethodsUndefined: Self = StObject.set(x, "supportedPaymentMethods", js.undefined)
     
-    inline def setSupportedPaymentMethodsVarargs(value: String*): Self = StObject.set(x, "supportedPaymentMethods", js.Array(value :_*))
+    inline def setSupportedPaymentMethodsVarargs(value: String*): Self = StObject.set(x, "supportedPaymentMethods", js.Array(value*))
     
     inline def setSupportedPaymentMethodsWithOptions(
       value: js.Array[
@@ -182,6 +182,6 @@ object PaymentGatewayAccounts {
     inline def setSupportedPaymentMethodsWithOptionsVarargs(
       value: (/* This object contains information about a payment method that the gateway accepts and the payment options that are compatible with it.
       */ PaymentMethodWithOptions)*
-    ): Self = StObject.set(x, "supportedPaymentMethodsWithOptions", js.Array(value :_*))
+    ): Self = StObject.set(x, "supportedPaymentMethodsWithOptions", js.Array(value*))
   }
 }

@@ -6,7 +6,6 @@ import typings.eurekaJsClient.mod.EurekaClient.EurekaConfig
 import typings.eurekaJsClient.mod.EurekaClient.EurekaInstanceConfig
 import typings.eurekaJsClient.mod.EurekaClient.EurekaMiddlewareConfig
 import typings.eurekaJsClient.mod.EurekaClient.EurekaYmlConfig
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object mod {
   
   @JSImport("eureka-js-client", "Eureka")
   @js.native
-  class Eureka protected () extends StObject {
+  open class Eureka protected () extends StObject {
     def this(config: EurekaConfig) = this()
     def this(config: EurekaMiddlewareConfig) = this()
     def this(config: EurekaYmlConfig) = this()
@@ -25,10 +24,10 @@ object mod {
     def getInstancesByVipAddress(vidAddress: String): js.Array[EurekaInstanceConfig] = js.native
     
     def start(): Unit = js.native
-    def start(cb: js.Function2[/* err */ Error, /* repeated */ js.Any, Unit]): Unit = js.native
+    def start(cb: js.Function2[/* err */ js.Error, /* repeated */ Any, Unit]): Unit = js.native
     
     def stop(): Unit = js.native
-    def stop(cb: js.Function2[/* err */ Error, /* repeated */ js.Any, Unit]): Unit = js.native
+    def stop(cb: js.Function2[/* err */ js.Error, /* repeated */ Any, Unit]): Unit = js.native
   }
   
   object EurekaClient {
@@ -216,7 +215,7 @@ object mod {
       var logger: js.UndefOr[Debug] = js.undefined
       
       var requestMiddleware: js.UndefOr[
-            js.Function2[/* requestOpts */ js.Any, /* done */ js.Function1[/* opts */ js.Any, Unit], Unit]
+            js.Function2[/* requestOpts */ Any, /* done */ js.Function1[/* opts */ Any, Unit], Unit]
           ] = js.undefined
       
       var shouldUseDelta: js.UndefOr[Boolean] = js.undefined
@@ -238,7 +237,7 @@ object mod {
         
         inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
         
-        inline def setRequestMiddleware(value: (/* requestOpts */ js.Any, /* done */ js.Function1[/* opts */ js.Any, Unit]) => Unit): Self = StObject.set(x, "requestMiddleware", js.Any.fromFunction2(value))
+        inline def setRequestMiddleware(value: (/* requestOpts */ Any, /* done */ js.Function1[/* opts */ Any, Unit]) => Unit): Self = StObject.set(x, "requestMiddleware", js.Any.fromFunction2(value))
         
         inline def setRequestMiddlewareUndefined: Self = StObject.set(x, "requestMiddleware", js.undefined)
         
@@ -397,18 +396,18 @@ object mod {
     
     trait EurekaMiddlewareConfig extends StObject {
       
-      def requestMiddleware(requestOpts: js.Any, done: js.Function1[/* opts */ js.Any, Unit]): Unit
+      def requestMiddleware(requestOpts: Any, done: js.Function1[/* opts */ Any, Unit]): Unit
     }
     object EurekaMiddlewareConfig {
       
-      inline def apply(requestMiddleware: (js.Any, js.Function1[/* opts */ js.Any, Unit]) => Unit): EurekaMiddlewareConfig = {
+      inline def apply(requestMiddleware: (Any, js.Function1[/* opts */ Any, Unit]) => Unit): EurekaMiddlewareConfig = {
         val __obj = js.Dynamic.literal(requestMiddleware = js.Any.fromFunction2(requestMiddleware))
         __obj.asInstanceOf[EurekaMiddlewareConfig]
       }
       
       extension [Self <: EurekaMiddlewareConfig](x: Self) {
         
-        inline def setRequestMiddleware(value: (js.Any, js.Function1[/* opts */ js.Any, Unit]) => Unit): Self = StObject.set(x, "requestMiddleware", js.Any.fromFunction2(value))
+        inline def setRequestMiddleware(value: (Any, js.Function1[/* opts */ Any, Unit]) => Unit): Self = StObject.set(x, "requestMiddleware", js.Any.fromFunction2(value))
       }
     }
     

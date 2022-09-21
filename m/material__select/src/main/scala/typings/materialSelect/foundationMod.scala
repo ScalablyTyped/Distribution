@@ -17,7 +17,7 @@ object foundationMod {
     * @param adapter
     * @param foundationMap Map from subcomponent names to their subfoundations.
     */
-  class default () extends MDCSelectFoundation {
+  open class default () extends MDCSelectFoundation {
     def this(adapter: PartialMDCSelectAdapter) = this()
     def this(adapter: Unit, foundationMap: PartialMDCSelectFoundatio) = this()
     def this(adapter: PartialMDCSelectAdapter, foundationMap: PartialMDCSelectFoundatio) = this()
@@ -29,10 +29,21 @@ object foundationMod {
     * @param adapter
     * @param foundationMap Map from subcomponent names to their subfoundations.
     */
-  class MDCSelectFoundation () extends MDCFoundation[MDCSelectAdapter] {
+  open class MDCSelectFoundation () extends MDCFoundation[MDCSelectAdapter] {
     def this(adapter: PartialMDCSelectAdapter) = this()
     def this(adapter: Unit, foundationMap: PartialMDCSelectFoundatio) = this()
     def this(adapter: PartialMDCSelectAdapter, foundationMap: PartialMDCSelectFoundatio) = this()
+    
+    /**
+      * Unfocuses the select component.
+      */
+    /* private */ var blur: Any = js.native
+    
+    /* private */ var clickDebounceTimeout: Any = js.native
+    
+    /* private */ var customValidity: Any = js.native
+    
+    /* private */ var disabled: Any = js.native
     
     def getDisabled(): Boolean = js.native
     
@@ -40,6 +51,8 @@ object foundationMod {
     
     /** Returns the index of the currently selected menu item, or -1 if none. */
     def getSelectedIndex(): Double = js.native
+    
+    def getUseDefaultValidation(): Boolean = js.native
     
     def getValue(): String = js.native
     
@@ -68,11 +81,19 @@ object foundationMod {
     
     def handleMenuClosed(): Unit = js.native
     
+    def handleMenuClosing(): Unit = js.native
+    
     def handleMenuItemAction(index: Double): Unit = js.native
     
     def handleMenuOpened(): Unit = js.native
     
+    /* private */ val helperText: Any = js.native
+    
+    /* private */ var isMenuOpen: Any = js.native
+    
     def isValid(): Boolean = js.native
+    
+    /* private */ var lastSelectedIndex: Any = js.native
     
     /**
       * Re-calculates if the notched outline should be notched and if the label
@@ -86,6 +107,8 @@ object foundationMod {
       */
     def layoutOptions(): Unit = js.native
     
+    /* private */ val leadingIcon: Any = js.native
+    
     /**
       * Opens/closes the notched outline.
       */
@@ -93,6 +116,10 @@ object foundationMod {
     
     /** Opens the menu. */
     def openMenu(): Unit = js.native
+    
+    /* private */ var recentlyClicked: Any = js.native
+    
+    /* private */ var setClickDebounceTimeout: Any = js.native
     
     def setDisabled(isDisabled: Boolean): Unit = js.native
     
@@ -124,5 +151,9 @@ object foundationMod {
     
     def setValue(value: String): Unit = js.native
     def setValue(value: String, skipNotify: Boolean): Unit = js.native
+    
+    /* private */ var syncHelperTextValidity: Any = js.native
+    
+    /* private */ var useDefaultValidation: Any = js.native
   }
 }

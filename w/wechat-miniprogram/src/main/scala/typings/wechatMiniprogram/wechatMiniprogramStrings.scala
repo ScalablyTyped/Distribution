@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object wechatMiniprogramStrings {
   
   @js.native
+  sealed trait `2d` extends StObject
+  inline def `2d`: `2d` = "2d".asInstanceOf[`2d`]
+  
+  @js.native
   sealed trait `2g` extends StObject
   inline def `2g`: `2g` = "2g".asInstanceOf[`2g`]
   
@@ -189,6 +193,14 @@ object wechatMiniprogramStrings {
   inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
+  sealed trait a extends StObject
+  inline def a: a = "a".asInstanceOf[a]
+  
+  @js.native
+  sealed trait aPlussign extends StObject
+  inline def aPlussign: aPlussign = "a+".asInstanceOf[aPlussign]
+  
+  @js.native
   sealed trait aac extends StObject
   inline def aac: aac = "aac".asInstanceOf[aac]
   
@@ -223,6 +235,14 @@ object wechatMiniprogramStrings {
   inline def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
   @js.native
+  sealed trait as extends StObject
+  inline def as: as = "as".asInstanceOf[as]
+  
+  @js.native
+  sealed trait asPlussign extends StObject
+  inline def asPlussign: asPlussign = "as+".asInstanceOf[asPlussign]
+  
+  @js.native
   sealed trait ascii extends StObject
   inline def ascii: ascii = "ascii".asInstanceOf[ascii]
   
@@ -241,6 +261,14 @@ object wechatMiniprogramStrings {
   @js.native
   sealed trait autoplay extends StObject
   inline def autoplay: autoplay = "autoplay".asInstanceOf[autoplay]
+  
+  @js.native
+  sealed trait ax extends StObject
+  inline def ax: ax = "ax".asInstanceOf[ax]
+  
+  @js.native
+  sealed trait axPlussign extends StObject
+  inline def axPlussign: axPlussign = "ax+".asInstanceOf[axPlussign]
   
   @js.native
   sealed trait back extends StObject
@@ -419,6 +447,10 @@ object wechatMiniprogramStrings {
   inline def enqueue: enqueue = "enqueue".asInstanceOf[enqueue]
   
   @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
   sealed trait facial extends StObject
   inline def facial: facial = "facial".asInstanceOf[facial]
   
@@ -498,6 +530,10 @@ object wechatMiniprogramStrings {
   inline def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
+  sealed trait landscape extends StObject
+  inline def landscape: landscape = "landscape".asInstanceOf[landscape]
+  
+  @js.native
   sealed trait latin1 extends StObject
   inline def latin1: latin1 = "latin1".asInstanceOf[latin1]
   
@@ -530,6 +566,14 @@ object wechatMiniprogramStrings {
   @js.native
   sealed trait low extends StObject
   inline def low: low = "low".asInstanceOf[low]
+  
+  @js.native
+  sealed trait markerClusterClick extends StObject
+  inline def markerClusterClick: markerClusterClick = "markerClusterClick".asInstanceOf[markerClusterClick]
+  
+  @js.native
+  sealed trait markerClusterCreate extends StObject
+  inline def markerClusterCreate: markerClusterCreate = "markerClusterCreate".asInstanceOf[markerClusterCreate]
   
   @js.native
   sealed trait md5_ extends StObject
@@ -608,6 +652,10 @@ object wechatMiniprogramStrings {
   inline def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
+  sealed trait pause extends StObject
+  inline def pause: pause = "pause".asInstanceOf[pause]
+  
+  @js.native
   sealed trait pdf extends StObject
   inline def pdf: pdf = "pdf".asInstanceOf[pdf]
   
@@ -624,6 +672,10 @@ object wechatMiniprogramStrings {
   inline def png: png = "png".asInstanceOf[png]
   
   @js.native
+  sealed trait portrait extends StObject
+  inline def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
+  @js.native
   sealed trait ppt extends StObject
   inline def ppt: ppt = "ppt".asInstanceOf[ppt]
   
@@ -634,6 +686,14 @@ object wechatMiniprogramStrings {
   @js.native
   sealed trait qrCode extends StObject
   inline def qrCode: qrCode = "qrCode".asInstanceOf[qrCode]
+  
+  @js.native
+  sealed trait r extends StObject
+  inline def r: r = "r".asInstanceOf[r]
+  
+  @js.native
+  sealed trait rPlussign extends StObject
+  inline def rPlussign: rPlussign = "r+".asInstanceOf[rPlussign]
   
   @js.native
   sealed trait release extends StObject
@@ -664,6 +724,10 @@ object wechatMiniprogramStrings {
   inline def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
+  sealed trait resume extends StObject
+  inline def resume: resume = "resume".asInstanceOf[resume]
+  
+  @js.native
   sealed trait right extends StObject
   inline def right: right = "right".asInstanceOf[right]
   
@@ -682,6 +746,18 @@ object wechatMiniprogramStrings {
   @js.native
   sealed trait scale extends StObject
   inline def scale: scale = "scale".asInstanceOf[scale]
+  
+  @js.native
+  sealed trait scopeDotcamera extends StObject
+  inline def scopeDotcamera: scopeDotcamera = "scope.camera".asInstanceOf[scopeDotcamera]
+  
+  @js.native
+  sealed trait scopeDotrecord extends StObject
+  inline def scopeDotrecord: scopeDotrecord = "scope.record".asInstanceOf[scopeDotrecord]
+  
+  @js.native
+  sealed trait scopeDotwritePhotosAlbum extends StObject
+  inline def scopeDotwritePhotosAlbum: scopeDotwritePhotosAlbum = "scope.writePhotosAlbum".asInstanceOf[scopeDotwritePhotosAlbum]
   
   @js.native
   sealed trait seek extends StObject
@@ -738,6 +814,10 @@ object wechatMiniprogramStrings {
   @js.native
   sealed trait text extends StObject
   inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait timeupdate extends StObject
+  inline def timeupdate: timeupdate = "timeupdate".asInstanceOf[timeupdate]
   
   @js.native
   sealed trait top extends StObject
@@ -847,12 +927,32 @@ object wechatMiniprogramStrings {
   inline def voice_recognition: voice_recognition = "voice_recognition".asInstanceOf[voice_recognition]
   
   @js.native
+  sealed trait w extends StObject
+  inline def w: w = "w".asInstanceOf[w]
+  
+  @js.native
+  sealed trait wPlussign extends StObject
+  inline def wPlussign: wPlussign = "w+".asInstanceOf[wPlussign]
+  
+  @js.native
   sealed trait wav extends StObject
   inline def wav: wav = "wav".asInstanceOf[wav]
   
   @js.native
+  sealed trait webgl extends StObject
+  inline def webgl: webgl = "webgl".asInstanceOf[webgl]
+  
+  @js.native
   sealed trait wifi extends StObject
   inline def wifi: wifi = "wifi".asInstanceOf[wifi]
+  
+  @js.native
+  sealed trait wx extends StObject
+  inline def wx: wx = "wx".asInstanceOf[wx]
+  
+  @js.native
+  sealed trait wxPlussign extends StObject
+  inline def wxPlussign: wxPlussign = "wx+".asInstanceOf[wxPlussign]
   
   @js.native
   sealed trait xls extends StObject

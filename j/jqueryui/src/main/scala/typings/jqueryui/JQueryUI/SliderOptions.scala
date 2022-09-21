@@ -9,7 +9,7 @@ trait SliderOptions
   extends StObject
      with SliderEvents {
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var classes: js.UndefOr[SliderClasses] = js.undefined
   
@@ -24,7 +24,7 @@ trait SliderOptions
   
   var orientation: js.UndefOr[String] = js.undefined
   
-  var range: js.UndefOr[js.Any] = js.undefined
+  var range: js.UndefOr[Any] = js.undefined
   
   // boolean or string
   var step: js.UndefOr[Double] = js.undefined
@@ -42,7 +42,7 @@ object SliderOptions {
   
   extension [Self <: SliderOptions](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -70,7 +70,7 @@ object SliderOptions {
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    inline def setRange(value: js.Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
@@ -86,6 +86,6 @@ object SliderOptions {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

@@ -11,14 +11,14 @@ trait Private extends StObject {
   var `private`: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Private & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Private & TopLevel[Any]
   ] = js.undefined
   
   /** Properties that are shared between copies of the event on other attendees' calendars. */
   var shared: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Private & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Private & TopLevel[Any]
   ] = js.undefined
 }
 object Private {
@@ -33,7 +33,7 @@ object Private {
     inline def setPrivate(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Private & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Private & TopLevel[Any]
     ): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
     inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
@@ -41,7 +41,7 @@ object Private {
     inline def setShared(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Private & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Private & TopLevel[Any]
     ): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
     inline def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)

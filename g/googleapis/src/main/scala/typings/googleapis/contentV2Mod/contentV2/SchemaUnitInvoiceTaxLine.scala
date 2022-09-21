@@ -12,15 +12,14 @@ trait SchemaUnitInvoiceTaxLine extends StObject {
   var taxAmount: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
-    * Optional name of the tax type. This should only be provided if taxType is
-    * otherFeeTax.
+    * Optional name of the tax type. This should only be provided if `taxType` is `otherFeeTax`.
     */
-  var taxName: js.UndefOr[String] = js.undefined
+  var taxName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [required] Type of the tax.
+    * [required] Type of the tax. Acceptable values are: - "`otherFee`" - "`otherFeeTax`" - "`sales`"
     */
-  var taxType: js.UndefOr[String] = js.undefined
+  var taxType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUnitInvoiceTaxLine {
   
@@ -37,9 +36,13 @@ object SchemaUnitInvoiceTaxLine {
     
     inline def setTaxName(value: String): Self = StObject.set(x, "taxName", value.asInstanceOf[js.Any])
     
+    inline def setTaxNameNull: Self = StObject.set(x, "taxName", null)
+    
     inline def setTaxNameUndefined: Self = StObject.set(x, "taxName", js.undefined)
     
     inline def setTaxType(value: String): Self = StObject.set(x, "taxType", value.asInstanceOf[js.Any])
+    
+    inline def setTaxTypeNull: Self = StObject.set(x, "taxType", null)
     
     inline def setTaxTypeUndefined: Self = StObject.set(x, "taxType", js.undefined)
   }

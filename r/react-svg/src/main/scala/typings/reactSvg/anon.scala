@@ -2,6 +2,7 @@ package typings.reactSvg
 
 import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.Validator
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +19,8 @@ object anon {
     
     var fallback: Null
     
+    var httpRequestWithCredentials: Boolean
+    
     var loading: Null
     
     var renumerateIRIElements: Boolean
@@ -33,12 +36,13 @@ object anon {
       beforeInjection: () => Unit,
       evalScripts: String,
       fallback: Null,
+      httpRequestWithCredentials: Boolean,
       loading: Null,
       renumerateIRIElements: Boolean,
       useRequestCache: Boolean,
       wrapper: String
     ): AfterInjection = {
-      val __obj = js.Dynamic.literal(afterInjection = js.Any.fromFunction0(afterInjection), beforeInjection = js.Any.fromFunction0(beforeInjection), evalScripts = evalScripts.asInstanceOf[js.Any], fallback = fallback.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], renumerateIRIElements = renumerateIRIElements.asInstanceOf[js.Any], useRequestCache = useRequestCache.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(afterInjection = js.Any.fromFunction0(afterInjection), beforeInjection = js.Any.fromFunction0(beforeInjection), evalScripts = evalScripts.asInstanceOf[js.Any], fallback = fallback.asInstanceOf[js.Any], httpRequestWithCredentials = httpRequestWithCredentials.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], renumerateIRIElements = renumerateIRIElements.asInstanceOf[js.Any], useRequestCache = useRequestCache.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
       __obj.asInstanceOf[AfterInjection]
     }
     
@@ -52,6 +56,8 @@ object anon {
       
       inline def setFallback(value: Null): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
+      inline def setHttpRequestWithCredentials(value: Boolean): Self = StObject.set(x, "httpRequestWithCredentials", value.asInstanceOf[js.Any])
+      
       inline def setLoading(value: Null): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
       inline def setRenumerateIRIElements(value: Boolean): Self = StObject.set(x, "renumerateIRIElements", value.asInstanceOf[js.Any])
@@ -64,15 +70,17 @@ object anon {
   
   trait BeforeInjection extends StObject {
     
-    var afterInjection: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+    var afterInjection: Requireable[js.Function1[/* repeated */ Any, Any]]
     
-    var beforeInjection: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+    var beforeInjection: Requireable[js.Function1[/* repeated */ Any, Any]]
     
     var evalScripts: Requireable[String]
     
-    var fallback: Requireable[String | js.Object]
+    var fallback: Requireable[NonNullable[js.UndefOr[String | js.Object | Null]]]
     
-    var loading: Requireable[String | js.Object]
+    var httpRequestWithCredentials: Requireable[Boolean]
+    
+    var loading: Requireable[NonNullable[js.UndefOr[String | js.Object | Null]]]
     
     var renumerateIRIElements: Requireable[Boolean]
     
@@ -85,31 +93,34 @@ object anon {
   object BeforeInjection {
     
     inline def apply(
-      afterInjection: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
-      beforeInjection: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      afterInjection: Requireable[js.Function1[/* repeated */ Any, Any]],
+      beforeInjection: Requireable[js.Function1[/* repeated */ Any, Any]],
       evalScripts: Requireable[String],
-      fallback: Requireable[String | js.Object],
-      loading: Requireable[String | js.Object],
+      fallback: Requireable[NonNullable[js.UndefOr[String | js.Object | Null]]],
+      httpRequestWithCredentials: Requireable[Boolean],
+      loading: Requireable[NonNullable[js.UndefOr[String | js.Object | Null]]],
       renumerateIRIElements: Requireable[Boolean],
       src: Validator[String],
       useRequestCache: Requireable[Boolean],
       wrapper: Requireable[String]
     ): BeforeInjection = {
-      val __obj = js.Dynamic.literal(afterInjection = afterInjection.asInstanceOf[js.Any], beforeInjection = beforeInjection.asInstanceOf[js.Any], evalScripts = evalScripts.asInstanceOf[js.Any], fallback = fallback.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], renumerateIRIElements = renumerateIRIElements.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], useRequestCache = useRequestCache.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(afterInjection = afterInjection.asInstanceOf[js.Any], beforeInjection = beforeInjection.asInstanceOf[js.Any], evalScripts = evalScripts.asInstanceOf[js.Any], fallback = fallback.asInstanceOf[js.Any], httpRequestWithCredentials = httpRequestWithCredentials.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], renumerateIRIElements = renumerateIRIElements.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], useRequestCache = useRequestCache.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeforeInjection]
     }
     
     extension [Self <: BeforeInjection](x: Self) {
       
-      inline def setAfterInjection(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "afterInjection", value.asInstanceOf[js.Any])
+      inline def setAfterInjection(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "afterInjection", value.asInstanceOf[js.Any])
       
-      inline def setBeforeInjection(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "beforeInjection", value.asInstanceOf[js.Any])
+      inline def setBeforeInjection(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "beforeInjection", value.asInstanceOf[js.Any])
       
       inline def setEvalScripts(value: Requireable[String]): Self = StObject.set(x, "evalScripts", value.asInstanceOf[js.Any])
       
-      inline def setFallback(value: Requireable[String | js.Object]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: Requireable[NonNullable[js.UndefOr[String | js.Object | Null]]]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      inline def setLoading(value: Requireable[String | js.Object]): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setHttpRequestWithCredentials(value: Requireable[Boolean]): Self = StObject.set(x, "httpRequestWithCredentials", value.asInstanceOf[js.Any])
+      
+      inline def setLoading(value: Requireable[NonNullable[js.UndefOr[String | js.Object | Null]]]): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
       inline def setRenumerateIRIElements(value: Requireable[Boolean]): Self = StObject.set(x, "renumerateIRIElements", value.asInstanceOf[js.Any])
       

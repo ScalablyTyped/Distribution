@@ -10,7 +10,7 @@ trait AggregatedDataForResultTrend extends StObject {
   /**
     * This is tests execution duration.
     */
-  var duration: js.Any
+  var duration: Any
   
   var resultsByOutcome: NumberDictionary[AggregatedResultsByOutcome]
   
@@ -21,7 +21,7 @@ trait AggregatedDataForResultTrend extends StObject {
 object AggregatedDataForResultTrend {
   
   inline def apply(
-    duration: js.Any,
+    duration: Any,
     resultsByOutcome: NumberDictionary[AggregatedResultsByOutcome],
     testResultsContext: TestResultsContext,
     totalTests: Double
@@ -32,7 +32,7 @@ object AggregatedDataForResultTrend {
   
   extension [Self <: AggregatedDataForResultTrend](x: Self) {
     
-    inline def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     inline def setResultsByOutcome(value: NumberDictionary[AggregatedResultsByOutcome]): Self = StObject.set(x, "resultsByOutcome", value.asInstanceOf[js.Any])
     

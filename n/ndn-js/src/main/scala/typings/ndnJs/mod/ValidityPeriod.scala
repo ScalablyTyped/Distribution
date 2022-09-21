@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ndn-js", "ValidityPeriod")
 @js.native
-class ValidityPeriod ()
+open class ValidityPeriod ()
   extends typings.ndnJs.signatureMod.ValidityPeriod {
   def this(validity: typings.ndnJs.signatureMod.ValidityPeriod) = this()
   def this(notBefore: Double, notAfter: Double) = this()

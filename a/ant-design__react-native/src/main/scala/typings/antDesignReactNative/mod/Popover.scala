@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "Popover")
 @js.native
-class Popover () extends default
+open class Popover () extends default
 /* static members */
 object Popover {
   

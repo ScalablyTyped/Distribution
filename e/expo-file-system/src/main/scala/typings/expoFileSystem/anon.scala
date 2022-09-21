@@ -4,7 +4,9 @@ import typings.expoFileSystem.expoFileSystemBooleans.`false`
 import typings.expoFileSystem.expoFileSystemBooleans.`true`
 import typings.expoFileSystem.fileSystemTypesMod.FileInfo
 import typings.expoFileSystem.fileSystemTypesMod.FileSystemAcceptedUploadHttpMethod
+import typings.expoFileSystem.fileSystemTypesMod.FileSystemRequestDirectoryPermissionsResult
 import typings.expoFileSystem.fileSystemTypesMod.FileSystemSessionType
+import typings.expoFileSystem.fileSystemTypesMod.FileSystemUploadOptions
 import typings.expoFileSystem.fileSystemTypesMod.FileSystemUploadType.BINARY_CONTENT
 import typings.expoFileSystem.fileSystemTypesMod.FileSystemUploadType.MULTIPART
 import typings.std.Record
@@ -13,6 +15,29 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait DirectoryUri
+    extends StObject
+       with FileSystemRequestDirectoryPermissionsResult {
+    
+    var directoryUri: String
+    
+    var granted: `true`
+  }
+  object DirectoryUri {
+    
+    inline def apply(directoryUri: String): DirectoryUri = {
+      val __obj = js.Dynamic.literal(directoryUri = directoryUri.asInstanceOf[js.Any], granted = true)
+      __obj.asInstanceOf[DirectoryUri]
+    }
+    
+    extension [Self <: DirectoryUri](x: Self) {
+      
+      inline def setDirectoryUri(value: String): Self = StObject.set(x, "directoryUri", value.asInstanceOf[js.Any])
+      
+      inline def setGranted(value: `true`): Self = StObject.set(x, "granted", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait Exists
     extends StObject
@@ -55,41 +80,6 @@ object anon {
     }
   }
   
-  trait FieldName extends StObject {
-    
-    var fieldName: js.UndefOr[String] = js.undefined
-    
-    var mimeType: js.UndefOr[String] = js.undefined
-    
-    var parameters: js.UndefOr[Record[String, String]] = js.undefined
-    
-    var uploadType: MULTIPART
-  }
-  object FieldName {
-    
-    inline def apply(uploadType: MULTIPART): FieldName = {
-      val __obj = js.Dynamic.literal(uploadType = uploadType.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FieldName]
-    }
-    
-    extension [Self <: FieldName](x: Self) {
-      
-      inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
-      
-      inline def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
-      
-      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
-      
-      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
-      
-      inline def setParameters(value: Record[String, String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
-      
-      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
-      
-      inline def setUploadType(value: MULTIPART): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait From extends StObject {
     
     var from: String
@@ -111,34 +101,22 @@ object anon {
     }
   }
   
-  trait Headers extends StObject {
+  trait Granted
+    extends StObject
+       with FileSystemRequestDirectoryPermissionsResult {
     
-    var headers: js.UndefOr[Record[String, String]] = js.undefined
-    
-    var httpMethod: js.UndefOr[FileSystemAcceptedUploadHttpMethod] = js.undefined
-    
-    var sessionType: js.UndefOr[FileSystemSessionType] = js.undefined
+    var granted: `false`
   }
-  object Headers {
+  object Granted {
     
-    inline def apply(): Headers = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Headers]
+    inline def apply(): Granted = {
+      val __obj = js.Dynamic.literal(granted = false)
+      __obj.asInstanceOf[Granted]
     }
     
-    extension [Self <: Headers](x: Self) {
+    extension [Self <: Granted](x: Self) {
       
-      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
-      
-      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
-      
-      inline def setHttpMethod(value: FileSystemAcceptedUploadHttpMethod): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
-      
-      inline def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
-      
-      inline def setSessionType(value: FileSystemSessionType): Self = StObject.set(x, "sessionType", value.asInstanceOf[js.Any])
-      
-      inline def setSessionTypeUndefined: Self = StObject.set(x, "sessionType", js.undefined)
+      inline def setGranted(value: `false`): Self = StObject.set(x, "granted", value.asInstanceOf[js.Any])
     }
   }
   
@@ -244,43 +222,99 @@ object anon {
     }
   }
   
-  trait TotalBytesExpectedToWrite extends StObject {
+  /* Inlined {  uploadType :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemUploadType.BINARY_CONTENT | undefined} & {  headers :std.Record<string, string> | undefined,   httpMethod :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemAcceptedUploadHttpMethod | undefined,   sessionType :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemSessionType | undefined} */
+  trait uploadTypeBINARYCONTENTun
+    extends StObject
+       with FileSystemUploadOptions {
     
-    var totalBytesExpectedToWrite: Double
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
     
-    var totalBytesWritten: Double
-  }
-  object TotalBytesExpectedToWrite {
+    var httpMethod: js.UndefOr[FileSystemAcceptedUploadHttpMethod] = js.undefined
     
-    inline def apply(totalBytesExpectedToWrite: Double, totalBytesWritten: Double): TotalBytesExpectedToWrite = {
-      val __obj = js.Dynamic.literal(totalBytesExpectedToWrite = totalBytesExpectedToWrite.asInstanceOf[js.Any], totalBytesWritten = totalBytesWritten.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TotalBytesExpectedToWrite]
-    }
-    
-    extension [Self <: TotalBytesExpectedToWrite](x: Self) {
-      
-      inline def setTotalBytesExpectedToWrite(value: Double): Self = StObject.set(x, "totalBytesExpectedToWrite", value.asInstanceOf[js.Any])
-      
-      inline def setTotalBytesWritten(value: Double): Self = StObject.set(x, "totalBytesWritten", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait UploadType extends StObject {
+    var sessionType: js.UndefOr[FileSystemSessionType] = js.undefined
     
     var uploadType: js.UndefOr[BINARY_CONTENT] = js.undefined
   }
-  object UploadType {
+  object uploadTypeBINARYCONTENTun {
     
-    inline def apply(): UploadType = {
+    inline def apply(): uploadTypeBINARYCONTENTun = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[UploadType]
+      __obj.asInstanceOf[uploadTypeBINARYCONTENTun]
     }
     
-    extension [Self <: UploadType](x: Self) {
+    extension [Self <: uploadTypeBINARYCONTENTun](x: Self) {
+      
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setHttpMethod(value: FileSystemAcceptedUploadHttpMethod): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+      
+      inline def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
+      
+      inline def setSessionType(value: FileSystemSessionType): Self = StObject.set(x, "sessionType", value.asInstanceOf[js.Any])
+      
+      inline def setSessionTypeUndefined: Self = StObject.set(x, "sessionType", js.undefined)
       
       inline def setUploadType(value: BINARY_CONTENT): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
       
       inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+    }
+  }
+  
+  /* Inlined {  uploadType :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemUploadType.MULTIPART,   fieldName :string | undefined,   mimeType :string | undefined,   parameters :std.Record<string, string> | undefined} & {  headers :std.Record<string, string> | undefined,   httpMethod :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemAcceptedUploadHttpMethod | undefined,   sessionType :expo-file-system.expo-file-system/build/FileSystem.types.FileSystemSessionType | undefined} */
+  trait uploadTypeMULTIPARTfieldN
+    extends StObject
+       with FileSystemUploadOptions {
+    
+    var fieldName: js.UndefOr[String] = js.undefined
+    
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
+    
+    var httpMethod: js.UndefOr[FileSystemAcceptedUploadHttpMethod] = js.undefined
+    
+    var mimeType: js.UndefOr[String] = js.undefined
+    
+    var parameters: js.UndefOr[Record[String, String]] = js.undefined
+    
+    var sessionType: js.UndefOr[FileSystemSessionType] = js.undefined
+    
+    var uploadType: MULTIPART
+  }
+  object uploadTypeMULTIPARTfieldN {
+    
+    inline def apply(uploadType: MULTIPART): uploadTypeMULTIPARTfieldN = {
+      val __obj = js.Dynamic.literal(uploadType = uploadType.asInstanceOf[js.Any])
+      __obj.asInstanceOf[uploadTypeMULTIPARTfieldN]
+    }
+    
+    extension [Self <: uploadTypeMULTIPARTfieldN](x: Self) {
+      
+      inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+      
+      inline def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
+      
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setHttpMethod(value: FileSystemAcceptedUploadHttpMethod): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+      
+      inline def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
+      
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+      
+      inline def setParameters(value: Record[String, String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      
+      inline def setSessionType(value: FileSystemSessionType): Self = StObject.set(x, "sessionType", value.asInstanceOf[js.Any])
+      
+      inline def setSessionTypeUndefined: Self = StObject.set(x, "sessionType", js.undefined)
+      
+      inline def setUploadType(value: MULTIPART): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     }
   }
 }

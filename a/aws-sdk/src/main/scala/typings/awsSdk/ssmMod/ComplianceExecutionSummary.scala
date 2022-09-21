@@ -14,7 +14,7 @@ trait ComplianceExecutionSummary extends StObject {
   /**
     * The time the execution ran as a datetime object that is saved in the following format: yyyy-MM-dd'T'HH:mm:ss'Z'.
     */
-  var ExecutionTime: DateTime
+  var ExecutionTime: js.Date
   
   /**
     * The type of execution. For example, Command is a valid execution type.
@@ -23,7 +23,7 @@ trait ComplianceExecutionSummary extends StObject {
 }
 object ComplianceExecutionSummary {
   
-  inline def apply(ExecutionTime: DateTime): ComplianceExecutionSummary = {
+  inline def apply(ExecutionTime: js.Date): ComplianceExecutionSummary = {
     val __obj = js.Dynamic.literal(ExecutionTime = ExecutionTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComplianceExecutionSummary]
   }
@@ -34,7 +34,7 @@ object ComplianceExecutionSummary {
     
     inline def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
     
-    inline def setExecutionTime(value: DateTime): Self = StObject.set(x, "ExecutionTime", value.asInstanceOf[js.Any])
+    inline def setExecutionTime(value: js.Date): Self = StObject.set(x, "ExecutionTime", value.asInstanceOf[js.Any])
     
     inline def setExecutionType(value: ComplianceExecutionType): Self = StObject.set(x, "ExecutionType", value.asInstanceOf[js.Any])
     

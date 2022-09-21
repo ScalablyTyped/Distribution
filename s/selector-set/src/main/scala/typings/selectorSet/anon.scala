@@ -49,7 +49,7 @@ object anon {
       
       inline def setElements(value: js.Array[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      inline def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value*))
       
       inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeTabsCommand")
 @js.native
-class ChangeTabsCommand ()
+open class ChangeTabsCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeTabsCommand {
   

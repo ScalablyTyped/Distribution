@@ -24,6 +24,6 @@ object DescribeUserProfilesRequest {
     
     inline def setIamUserArnsUndefined: Self = StObject.set(x, "IamUserArns", js.undefined)
     
-    inline def setIamUserArnsVarargs(value: String*): Self = StObject.set(x, "IamUserArns", js.Array(value :_*))
+    inline def setIamUserArnsVarargs(value: String*): Self = StObject.set(x, "IamUserArns", js.Array(value*))
   }
 }

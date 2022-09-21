@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A face-specific landmark (for example, a face feature).
-  */
 trait SchemaGoogleCloudVisionV1p1beta1FaceAnnotationLandmark extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaGoogleCloudVisionV1p1beta1FaceAnnotationLandmark extends StObject {
   /**
     * Face landmark type.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p1beta1FaceAnnotationLandmark {
   
@@ -33,6 +30,8 @@ object SchemaGoogleCloudVisionV1p1beta1FaceAnnotationLandmark {
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

@@ -9,7 +9,7 @@ trait StreamInfo extends StObject {
   /**
     * A time stamp that indicates when the stream was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * How long the stream retains data, in hours.
@@ -22,7 +22,7 @@ trait StreamInfo extends StObject {
   var DeviceName: js.UndefOr[typings.awsSdk.kinesisvideoMod.DeviceName] = js.undefined
   
   /**
-    * The ID of the AWS Key Management Service (AWS KMS) key that Kinesis Video Streams uses to encrypt data on the stream.
+    * The ID of the Key Management Service (KMS) key that Kinesis Video Streams uses to encrypt data on the stream.
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.kinesisvideoMod.KmsKeyId] = js.undefined
   
@@ -60,7 +60,7 @@ object StreamInfo {
   
   extension [Self <: StreamInfo](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

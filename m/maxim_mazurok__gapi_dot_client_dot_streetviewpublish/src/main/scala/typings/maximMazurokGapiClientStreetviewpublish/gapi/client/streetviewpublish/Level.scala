@@ -10,8 +10,8 @@ trait Level extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Floor number, used for ordering. 0 indicates the ground level, 1 indicates the first level above ground level, -1 indicates the first level under ground level. Non-integer values
-    * are OK.
+    * Optional. Floor number, used for ordering. 0 indicates the ground level, 1 indicates the first level above ground level, -1 indicates the first level under ground level. Non-integer
+    * values are OK.
     */
   var number: js.UndefOr[Double] = js.undefined
 }

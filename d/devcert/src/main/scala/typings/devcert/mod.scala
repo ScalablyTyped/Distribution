@@ -1,7 +1,7 @@
 package typings.devcert
 
 import typings.devcert.userInterfaceMod.UserInterface
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,20 +12,24 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def certificateFor[O /* <: Options */](domain: String): js.Promise[IReturnData[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("certificateFor")(domain.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IReturnData[O]]]
-  inline def certificateFor[O /* <: Options */](domain: String, options: O): js.Promise[IReturnData[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("certificateFor")(domain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IReturnData[O]]]
+  inline def certificateFor[O /* <: Options */](requestedDomains: String): js.Promise[IReturnData[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("certificateFor")(requestedDomains.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IReturnData[O]]]
+  inline def certificateFor[O /* <: Options */](requestedDomains: String, options: O): js.Promise[IReturnData[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("certificateFor")(requestedDomains.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IReturnData[O]]]
+  inline def certificateFor[O /* <: Options */](requestedDomains: js.Array[String]): js.Promise[IReturnData[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("certificateFor")(requestedDomains.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IReturnData[O]]]
+  inline def certificateFor[O /* <: Options */](requestedDomains: js.Array[String], options: O): js.Promise[IReturnData[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("certificateFor")(requestedDomains.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IReturnData[O]]]
   
   inline def configuredDomains(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("configuredDomains")().asInstanceOf[js.Array[String]]
   
-  inline def hasCertificateFor(domain: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasCertificateFor")(domain.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasCertificateFor(requestedDomains: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasCertificateFor")(requestedDomains.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasCertificateFor(requestedDomains: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasCertificateFor")(requestedDomains.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def removeDomain(domain: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeDomain(requestedDomains: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDomain")(requestedDomains.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeDomain(requestedDomains: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDomain")(requestedDomains.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def uninstall(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")().asInstanceOf[Unit]
   
   trait ICaBuffer
     extends StObject
-       with IReturnCa[js.Any] {
+       with IReturnCa[Any] {
     
     var ca: Buffer
   }
@@ -44,7 +48,7 @@ object mod {
   
   trait ICaPath
     extends StObject
-       with IReturnCaPath[js.Any] {
+       with IReturnCaPath[Any] {
     
     var caPath: String
   }

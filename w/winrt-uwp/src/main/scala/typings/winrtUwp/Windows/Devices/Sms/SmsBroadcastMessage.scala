@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +44,7 @@ trait SmsBroadcastMessage extends StObject {
   var simIccId: String
   
   /** Gets the timestamp of the broadcast SMS message. */
-  var timestamp: Date
+  var timestamp: js.Date
   
   /** Gets the recipient phone number of the broadcast SMS message. */
   var to: String
@@ -68,7 +67,7 @@ object SmsBroadcastMessage {
     messageCode: Double,
     messageType: SmsMessageType,
     simIccId: String,
-    timestamp: Date,
+    timestamp: js.Date,
     to: String,
     updateNumber: Double
   ): SmsBroadcastMessage = {
@@ -102,7 +101,7 @@ object SmsBroadcastMessage {
     
     inline def setSimIccId(value: String): Self = StObject.set(x, "simIccId", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     

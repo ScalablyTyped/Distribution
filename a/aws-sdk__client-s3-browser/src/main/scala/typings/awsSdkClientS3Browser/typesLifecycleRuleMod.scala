@@ -14,7 +14,6 @@ import typings.awsSdkClientS3Browser.typesNoncurrentVersionTransitionMod.Noncurr
 import typings.awsSdkClientS3Browser.typesNoncurrentVersionTransitionMod.UnmarshalledNoncurrentVersionTransition
 import typings.awsSdkClientS3Browser.typesTransitionMod.Transition
 import typings.awsSdkClientS3Browser.typesTransitionMod.UnmarshalledTransition
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +54,7 @@ object typesLifecycleRuleMod {
     /**
       * _NoncurrentVersionTransitionList shape
       */
-    var NoncurrentVersionTransitions: js.UndefOr[js.Array[NoncurrentVersionTransition] | Iterable[NoncurrentVersionTransition]] = js.undefined
+    var NoncurrentVersionTransitions: js.UndefOr[js.Array[NoncurrentVersionTransition] | js.Iterable[NoncurrentVersionTransition]] = js.undefined
     
     /**
       * <p>Prefix identifying one or more objects to which the rule applies. This is deprecated; use Filter instead.</p>
@@ -70,7 +69,7 @@ object typesLifecycleRuleMod {
     /**
       * _TransitionList shape
       */
-    var Transitions: js.UndefOr[js.Array[Transition] | Iterable[Transition]] = js.undefined
+    var Transitions: js.UndefOr[js.Array[Transition] | js.Iterable[Transition]] = js.undefined
   }
   object LifecycleRule {
     
@@ -101,11 +100,11 @@ object typesLifecycleRuleMod {
       
       inline def setNoncurrentVersionExpirationUndefined: Self = StObject.set(x, "NoncurrentVersionExpiration", js.undefined)
       
-      inline def setNoncurrentVersionTransitions(value: js.Array[NoncurrentVersionTransition] | Iterable[NoncurrentVersionTransition]): Self = StObject.set(x, "NoncurrentVersionTransitions", value.asInstanceOf[js.Any])
+      inline def setNoncurrentVersionTransitions(value: js.Array[NoncurrentVersionTransition] | js.Iterable[NoncurrentVersionTransition]): Self = StObject.set(x, "NoncurrentVersionTransitions", value.asInstanceOf[js.Any])
       
       inline def setNoncurrentVersionTransitionsUndefined: Self = StObject.set(x, "NoncurrentVersionTransitions", js.undefined)
       
-      inline def setNoncurrentVersionTransitionsVarargs(value: NoncurrentVersionTransition*): Self = StObject.set(x, "NoncurrentVersionTransitions", js.Array(value :_*))
+      inline def setNoncurrentVersionTransitionsVarargs(value: NoncurrentVersionTransition*): Self = StObject.set(x, "NoncurrentVersionTransitions", js.Array(value*))
       
       inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
       
@@ -113,11 +112,11 @@ object typesLifecycleRuleMod {
       
       inline def setStatus(value: Enabled | Disabled | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      inline def setTransitions(value: js.Array[Transition] | Iterable[Transition]): Self = StObject.set(x, "Transitions", value.asInstanceOf[js.Any])
+      inline def setTransitions(value: js.Array[Transition] | js.Iterable[Transition]): Self = StObject.set(x, "Transitions", value.asInstanceOf[js.Any])
       
       inline def setTransitionsUndefined: Self = StObject.set(x, "Transitions", js.undefined)
       
-      inline def setTransitionsVarargs(value: Transition*): Self = StObject.set(x, "Transitions", js.Array(value :_*))
+      inline def setTransitionsVarargs(value: Transition*): Self = StObject.set(x, "Transitions", js.Array(value*))
     }
   }
   
@@ -190,13 +189,13 @@ object typesLifecycleRuleMod {
       
       inline def setNoncurrentVersionTransitionsUndefined: Self = StObject.set(x, "NoncurrentVersionTransitions", js.undefined)
       
-      inline def setNoncurrentVersionTransitionsVarargs(value: UnmarshalledNoncurrentVersionTransition*): Self = StObject.set(x, "NoncurrentVersionTransitions", js.Array(value :_*))
+      inline def setNoncurrentVersionTransitionsVarargs(value: UnmarshalledNoncurrentVersionTransition*): Self = StObject.set(x, "NoncurrentVersionTransitions", js.Array(value*))
       
       inline def setTransitions(value: js.Array[UnmarshalledTransition]): Self = StObject.set(x, "Transitions", value.asInstanceOf[js.Any])
       
       inline def setTransitionsUndefined: Self = StObject.set(x, "Transitions", js.undefined)
       
-      inline def setTransitionsVarargs(value: UnmarshalledTransition*): Self = StObject.set(x, "Transitions", js.Array(value :_*))
+      inline def setTransitionsVarargs(value: UnmarshalledTransition*): Self = StObject.set(x, "Transitions", js.Array(value*))
     }
   }
 }

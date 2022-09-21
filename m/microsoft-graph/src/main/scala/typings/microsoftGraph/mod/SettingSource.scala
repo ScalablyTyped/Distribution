@@ -11,6 +11,9 @@ trait SettingSource extends StObject {
   
   // Not yet documented
   var id: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // Not yet documented. Possible values are: deviceConfiguration, deviceIntent.
+  var sourceType: js.UndefOr[SettingSourceType] = js.undefined
 }
 object SettingSource {
   
@@ -32,5 +35,9 @@ object SettingSource {
     inline def setIdNull: Self = StObject.set(x, "id", null)
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setSourceType(value: SettingSourceType): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
   }
 }

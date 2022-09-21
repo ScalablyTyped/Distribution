@@ -1,80 +1,53 @@
 package typings.viewportMercatorProject.mod
 
+import typings.glMatrix.mod.mat4
+import typings.viewportMercatorProject.anon.Altitude
+import typings.viewportMercatorProject.anon.Bottom
+import typings.viewportMercatorProject.anon.Latitude
+import typings.viewportMercatorProject.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def addMetersToLngLat(
-  lngLatZ: typings.viewportMercatorProject.mod.CoordinatesZ,
-  xyz: typings.viewportMercatorProject.mod.CoordinatesZ
-): typings.viewportMercatorProject.mod.CoordinatesZ = (typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addMetersToLngLat")(lngLatZ.asInstanceOf[js.Any], xyz.asInstanceOf[js.Any])).asInstanceOf[typings.viewportMercatorProject.mod.CoordinatesZ]
-inline def addMetersToLngLat(
-  lngLat: typings.viewportMercatorProject.mod.Coordinates,
-  xy: typings.viewportMercatorProject.mod.Coordinates
-): typings.viewportMercatorProject.mod.Coordinates = (typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addMetersToLngLat")(lngLat.asInstanceOf[js.Any], xy.asInstanceOf[js.Any])).asInstanceOf[typings.viewportMercatorProject.mod.Coordinates]
+inline def addMetersToLngLat(lngLatZ: CoordinatesZ, xyz: CoordinatesZ): CoordinatesZ = (^.asInstanceOf[js.Dynamic].applyDynamic("addMetersToLngLat")(lngLatZ.asInstanceOf[js.Any], xyz.asInstanceOf[js.Any])).asInstanceOf[CoordinatesZ]
+inline def addMetersToLngLat(lngLat: Coordinates, xy: Coordinates): Coordinates = (^.asInstanceOf[js.Dynamic].applyDynamic("addMetersToLngLat")(lngLat.asInstanceOf[js.Any], xy.asInstanceOf[js.Any])).asInstanceOf[Coordinates]
 
-inline def fitBounds(options: typings.viewportMercatorProject.anon.Bounds): typings.viewportMercatorProject.mod.FittedBounds = typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fitBounds")(options.asInstanceOf[js.Any]).asInstanceOf[typings.viewportMercatorProject.mod.FittedBounds]
+inline def fitBounds(options: typings.viewportMercatorProject.anon.Bounds): FittedBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("fitBounds")(options.asInstanceOf[js.Any]).asInstanceOf[FittedBounds]
 
-inline def flyToViewport(
-  startProps: typings.viewportMercatorProject.mod.FlyToViewportProps,
-  endProps: typings.viewportMercatorProject.mod.FlyToViewportProps,
-  t: scala.Double
-): typings.viewportMercatorProject.mod.TransitionViewport = (typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("flyToViewport")(startProps.asInstanceOf[js.Any], endProps.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[typings.viewportMercatorProject.mod.TransitionViewport]
+inline def flyToViewport(startProps: FlyToViewportProps, endProps: FlyToViewportProps, t: Double): TransitionViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("flyToViewport")(startProps.asInstanceOf[js.Any], endProps.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[TransitionViewport]
 
-inline def getDistanceScales(input: typings.viewportMercatorProject.mod.DistanceScalesInput): typings.viewportMercatorProject.mod.DistanceScales = typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceScales")(input.asInstanceOf[js.Any]).asInstanceOf[typings.viewportMercatorProject.mod.DistanceScales]
-inline def getDistanceScales(input: typings.viewportMercatorProject.mod.HighPrecisionDistanceScalesInput): typings.viewportMercatorProject.mod.HighPrecisionDistanceScales = typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceScales")(input.asInstanceOf[js.Any]).asInstanceOf[typings.viewportMercatorProject.mod.HighPrecisionDistanceScales]
+inline def getDistanceScales(input: DistanceScalesInput): DistanceScales = ^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceScales")(input.asInstanceOf[js.Any]).asInstanceOf[DistanceScales]
+inline def getDistanceScales(input: HighPrecisionDistanceScalesInput): HighPrecisionDistanceScales = ^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceScales")(input.asInstanceOf[js.Any]).asInstanceOf[HighPrecisionDistanceScales]
 
-inline def getMeterZoom(input: typings.viewportMercatorProject.anon.Latitude): scala.Double = typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMeterZoom")(input.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+inline def getMeterZoom(input: Latitude): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeterZoom")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
 
-inline def getProjectionMatrix(input: typings.viewportMercatorProject.mod.ProjectionParametersInput): typings.glMatrix.mod.mat4 = typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getProjectionMatrix")(input.asInstanceOf[js.Any]).asInstanceOf[typings.glMatrix.mod.mat4]
+inline def getProjectionMatrix(input: ProjectionParametersInput): mat4 = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectionMatrix")(input.asInstanceOf[js.Any]).asInstanceOf[mat4]
 
-inline def getProjectionParameters(input: typings.viewportMercatorProject.mod.ProjectionParametersInput): typings.viewportMercatorProject.mod.ProjectionParameters = typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getProjectionParameters")(input.asInstanceOf[js.Any]).asInstanceOf[typings.viewportMercatorProject.mod.ProjectionParameters]
+inline def getProjectionParameters(input: ProjectionParametersInput): ProjectionParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectionParameters")(input.asInstanceOf[js.Any]).asInstanceOf[ProjectionParameters]
 
-inline def getViewMatrix(input: typings.viewportMercatorProject.anon.Altitude): typings.viewportMercatorProject.mod.ViewMatrix = typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getViewMatrix")(input.asInstanceOf[js.Any]).asInstanceOf[typings.viewportMercatorProject.mod.ViewMatrix]
+inline def getViewMatrix(input: Altitude): ViewMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewMatrix")(input.asInstanceOf[js.Any]).asInstanceOf[ViewMatrix]
 
-inline def lngLatToWorld(lngLat: typings.viewportMercatorProject.mod.Coordinates, scale: scala.Double): typings.viewportMercatorProject.mod.Coordinates = (typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lngLatToWorld")(lngLat.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[typings.viewportMercatorProject.mod.Coordinates]
+inline def lngLatToWorld(lngLat: Coordinates, scale: Double): Coordinates = (^.asInstanceOf[js.Dynamic].applyDynamic("lngLatToWorld")(lngLat.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Coordinates]
 
-inline def normalizeViewportProps(props: typings.viewportMercatorProject.mod.ViewportProps): typings.viewportMercatorProject.mod.NormalizedViewportProps = typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeViewportProps")(props.asInstanceOf[js.Any]).asInstanceOf[typings.viewportMercatorProject.mod.NormalizedViewportProps]
+inline def normalizeViewportProps(props: ViewportProps): NormalizedViewportProps = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeViewportProps")(props.asInstanceOf[js.Any]).asInstanceOf[NormalizedViewportProps]
 
-inline def pixelsToWorld(
-  pixels: typings.viewportMercatorProject.mod.CoordinatesZ,
-  pixelUnprojectionMatrix: typings.glMatrix.mod.mat4
-): typings.viewportMercatorProject.mod.CoordinatesZ = (typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pixelsToWorld")(pixels.asInstanceOf[js.Any], pixelUnprojectionMatrix.asInstanceOf[js.Any])).asInstanceOf[typings.viewportMercatorProject.mod.CoordinatesZ]
-inline def pixelsToWorld(
-  pixels: typings.viewportMercatorProject.mod.CoordinatesZ,
-  pixelUnprojectionMatrix: typings.glMatrix.mod.mat4,
-  targetZ: scala.Double
-): typings.viewportMercatorProject.mod.CoordinatesZ = (typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pixelsToWorld")(pixels.asInstanceOf[js.Any], pixelUnprojectionMatrix.asInstanceOf[js.Any], targetZ.asInstanceOf[js.Any])).asInstanceOf[typings.viewportMercatorProject.mod.CoordinatesZ]
-inline def pixelsToWorld(
-  pixels: typings.viewportMercatorProject.mod.Coordinates,
-  pixelUnprojectionMatrix: typings.glMatrix.mod.mat4
-): typings.viewportMercatorProject.mod.CoordinatesZ = (typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pixelsToWorld")(pixels.asInstanceOf[js.Any], pixelUnprojectionMatrix.asInstanceOf[js.Any])).asInstanceOf[typings.viewportMercatorProject.mod.CoordinatesZ]
-inline def pixelsToWorld(
-  pixels: typings.viewportMercatorProject.mod.Coordinates,
-  pixelUnprojectionMatrix: typings.glMatrix.mod.mat4,
-  targetZ: scala.Double
-): typings.viewportMercatorProject.mod.CoordinatesZ = (typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pixelsToWorld")(pixels.asInstanceOf[js.Any], pixelUnprojectionMatrix.asInstanceOf[js.Any], targetZ.asInstanceOf[js.Any])).asInstanceOf[typings.viewportMercatorProject.mod.CoordinatesZ]
+inline def pixelsToWorld(pixels: CoordinatesZ, pixelUnprojectionMatrix: mat4): CoordinatesZ = (^.asInstanceOf[js.Dynamic].applyDynamic("pixelsToWorld")(pixels.asInstanceOf[js.Any], pixelUnprojectionMatrix.asInstanceOf[js.Any])).asInstanceOf[CoordinatesZ]
+inline def pixelsToWorld(pixels: CoordinatesZ, pixelUnprojectionMatrix: mat4, targetZ: Double): CoordinatesZ = (^.asInstanceOf[js.Dynamic].applyDynamic("pixelsToWorld")(pixels.asInstanceOf[js.Any], pixelUnprojectionMatrix.asInstanceOf[js.Any], targetZ.asInstanceOf[js.Any])).asInstanceOf[CoordinatesZ]
+inline def pixelsToWorld(pixels: Coordinates, pixelUnprojectionMatrix: mat4): CoordinatesZ = (^.asInstanceOf[js.Dynamic].applyDynamic("pixelsToWorld")(pixels.asInstanceOf[js.Any], pixelUnprojectionMatrix.asInstanceOf[js.Any])).asInstanceOf[CoordinatesZ]
+inline def pixelsToWorld(pixels: Coordinates, pixelUnprojectionMatrix: mat4, targetZ: Double): CoordinatesZ = (^.asInstanceOf[js.Dynamic].applyDynamic("pixelsToWorld")(pixels.asInstanceOf[js.Any], pixelUnprojectionMatrix.asInstanceOf[js.Any], targetZ.asInstanceOf[js.Any])).asInstanceOf[CoordinatesZ]
 
-inline def worldToLngLat(point: typings.viewportMercatorProject.mod.Coordinates, scale: scala.Double): typings.viewportMercatorProject.mod.Coordinates = (typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("worldToLngLat")(point.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[typings.viewportMercatorProject.mod.Coordinates]
+inline def worldToLngLat(point: Coordinates, scale: Double): Coordinates = (^.asInstanceOf[js.Dynamic].applyDynamic("worldToLngLat")(point.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Coordinates]
 
-inline def worldToPixels(
-  coordinates: typings.viewportMercatorProject.mod.CoordinatesZ,
-  pixelProjectionMatrix: typings.glMatrix.mod.mat4
-): typings.viewportMercatorProject.mod.CoordinatesZ = (typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("worldToPixels")(coordinates.asInstanceOf[js.Any], pixelProjectionMatrix.asInstanceOf[js.Any])).asInstanceOf[typings.viewportMercatorProject.mod.CoordinatesZ]
-inline def worldToPixels(
-  coordinates: typings.viewportMercatorProject.mod.Coordinates,
-  pixelProjectionMatrix: typings.glMatrix.mod.mat4
-): typings.viewportMercatorProject.mod.CoordinatesZ = (typings.viewportMercatorProject.mod.^.asInstanceOf[js.Dynamic].applyDynamic("worldToPixels")(coordinates.asInstanceOf[js.Any], pixelProjectionMatrix.asInstanceOf[js.Any])).asInstanceOf[typings.viewportMercatorProject.mod.CoordinatesZ]
+inline def worldToPixels(coordinates: CoordinatesZ, pixelProjectionMatrix: mat4): CoordinatesZ = (^.asInstanceOf[js.Dynamic].applyDynamic("worldToPixels")(coordinates.asInstanceOf[js.Any], pixelProjectionMatrix.asInstanceOf[js.Any])).asInstanceOf[CoordinatesZ]
+inline def worldToPixels(coordinates: Coordinates, pixelProjectionMatrix: mat4): CoordinatesZ = (^.asInstanceOf[js.Dynamic].applyDynamic("worldToPixels")(coordinates.asInstanceOf[js.Any], pixelProjectionMatrix.asInstanceOf[js.Any])).asInstanceOf[CoordinatesZ]
 
-type Bounds = js.Tuple2[
-typings.viewportMercatorProject.mod.Coordinates, 
-typings.viewportMercatorProject.mod.Coordinates]
+type Bounds = js.Tuple2[Coordinates, Coordinates]
 
-type Coordinates = js.Tuple2[scala.Double, scala.Double]
+type Coordinates = js.Tuple2[Double, Double]
 
-type CoordinatesZ = js.Tuple3[scala.Double, scala.Double, scala.Double]
+type CoordinatesZ = js.Tuple3[Double, Double, Double]
 
-type Padding = scala.Double | typings.viewportMercatorProject.anon.Bottom
+type Padding = Double | Bottom
 
-type ViewMatrix = js.Array[scala.Double]
+type ViewMatrix = js.Array[Double]

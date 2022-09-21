@@ -10,10 +10,10 @@ The lodash method `_.drop` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.drop |
 | Keywords           | lodash-modularized, drop |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 132533 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 13126.666666666666 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

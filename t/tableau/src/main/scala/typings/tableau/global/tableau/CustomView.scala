@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.CustomView")
 @js.native
-class CustomView ()
+open class CustomView ()
   extends StObject
      with typings.tableau.tableau.CustomView {
   

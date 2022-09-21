@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object solarizeMod {
   
-  @JSImport("konva/types/filters/Solarize", "Solarize")
+  @JSImport("konva/lib/filters/Solarize", "Solarize")
   @js.native
   val Solarize: Filter = js.native
 }

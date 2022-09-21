@@ -12,6 +12,8 @@ object anon {
     
     var acceptAllDevices: Boolean
     
+    var optionalManufacturerData: js.UndefOr[js.Array[Double]] = js.undefined
+    
     var optionalServices: js.UndefOr[js.Array[BluetoothServiceUUID]] = js.undefined
   }
   object AcceptAllDevices {
@@ -25,11 +27,17 @@ object anon {
       
       inline def setAcceptAllDevices(value: Boolean): Self = StObject.set(x, "acceptAllDevices", value.asInstanceOf[js.Any])
       
+      inline def setOptionalManufacturerData(value: js.Array[Double]): Self = StObject.set(x, "optionalManufacturerData", value.asInstanceOf[js.Any])
+      
+      inline def setOptionalManufacturerDataUndefined: Self = StObject.set(x, "optionalManufacturerData", js.undefined)
+      
+      inline def setOptionalManufacturerDataVarargs(value: Double*): Self = StObject.set(x, "optionalManufacturerData", js.Array(value*))
+      
       inline def setOptionalServices(value: js.Array[BluetoothServiceUUID]): Self = StObject.set(x, "optionalServices", value.asInstanceOf[js.Any])
       
       inline def setOptionalServicesUndefined: Self = StObject.set(x, "optionalServices", js.undefined)
       
-      inline def setOptionalServicesVarargs(value: BluetoothServiceUUID*): Self = StObject.set(x, "optionalServices", js.Array(value :_*))
+      inline def setOptionalServicesVarargs(value: BluetoothServiceUUID*): Self = StObject.set(x, "optionalServices", js.Array(value*))
     }
   }
   
@@ -37,28 +45,36 @@ object anon {
     extends StObject
        with RequestDeviceOptions {
     
-    var filters: js.Array[BluetoothRequestDeviceFilter]
+    var filters: js.Array[BluetoothLEScanFilter]
+    
+    var optionalManufacturerData: js.UndefOr[js.Array[Double]] = js.undefined
     
     var optionalServices: js.UndefOr[js.Array[BluetoothServiceUUID]] = js.undefined
   }
   object Filters {
     
-    inline def apply(filters: js.Array[BluetoothRequestDeviceFilter]): Filters = {
+    inline def apply(filters: js.Array[BluetoothLEScanFilter]): Filters = {
       val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
       __obj.asInstanceOf[Filters]
     }
     
     extension [Self <: Filters](x: Self) {
       
-      inline def setFilters(value: js.Array[BluetoothRequestDeviceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[BluetoothLEScanFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      inline def setFiltersVarargs(value: BluetoothRequestDeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: BluetoothLEScanFilter*): Self = StObject.set(x, "filters", js.Array(value*))
+      
+      inline def setOptionalManufacturerData(value: js.Array[Double]): Self = StObject.set(x, "optionalManufacturerData", value.asInstanceOf[js.Any])
+      
+      inline def setOptionalManufacturerDataUndefined: Self = StObject.set(x, "optionalManufacturerData", js.undefined)
+      
+      inline def setOptionalManufacturerDataVarargs(value: Double*): Self = StObject.set(x, "optionalManufacturerData", js.Array(value*))
       
       inline def setOptionalServices(value: js.Array[BluetoothServiceUUID]): Self = StObject.set(x, "optionalServices", value.asInstanceOf[js.Any])
       
       inline def setOptionalServicesUndefined: Self = StObject.set(x, "optionalServices", js.undefined)
       
-      inline def setOptionalServicesVarargs(value: BluetoothServiceUUID*): Self = StObject.set(x, "optionalServices", js.Array(value :_*))
+      inline def setOptionalServicesVarargs(value: BluetoothServiceUUID*): Self = StObject.set(x, "optionalServices", js.Array(value*))
     }
   }
 }

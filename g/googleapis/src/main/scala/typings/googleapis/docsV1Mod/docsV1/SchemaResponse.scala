@@ -4,10 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A single response from an update.
-  */
 trait SchemaResponse extends StObject {
+  
+  /**
+    * The result of creating a footer.
+    */
+  var createFooter: js.UndefOr[SchemaCreateFooterResponse] = js.undefined
+  
+  /**
+    * The result of creating a footnote.
+    */
+  var createFootnote: js.UndefOr[SchemaCreateFootnoteResponse] = js.undefined
+  
+  /**
+    * The result of creating a header.
+    */
+  var createHeader: js.UndefOr[SchemaCreateHeaderResponse] = js.undefined
   
   /**
     * The result of creating a named range.
@@ -37,6 +49,18 @@ object SchemaResponse {
   }
   
   extension [Self <: SchemaResponse](x: Self) {
+    
+    inline def setCreateFooter(value: SchemaCreateFooterResponse): Self = StObject.set(x, "createFooter", value.asInstanceOf[js.Any])
+    
+    inline def setCreateFooterUndefined: Self = StObject.set(x, "createFooter", js.undefined)
+    
+    inline def setCreateFootnote(value: SchemaCreateFootnoteResponse): Self = StObject.set(x, "createFootnote", value.asInstanceOf[js.Any])
+    
+    inline def setCreateFootnoteUndefined: Self = StObject.set(x, "createFootnote", js.undefined)
+    
+    inline def setCreateHeader(value: SchemaCreateHeaderResponse): Self = StObject.set(x, "createHeader", value.asInstanceOf[js.Any])
+    
+    inline def setCreateHeaderUndefined: Self = StObject.set(x, "createHeader", js.undefined)
     
     inline def setCreateNamedRange(value: SchemaCreateNamedRangeResponse): Self = StObject.set(x, "createNamedRange", value.asInstanceOf[js.Any])
     

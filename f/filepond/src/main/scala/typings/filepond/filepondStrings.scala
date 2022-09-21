@@ -156,6 +156,10 @@ object filepondStrings {
   inline def compact: compact = "compact".asInstanceOf[compact]
   
   @js.native
+  sealed trait `compact circle` extends StObject
+  inline def `compact circle`: `compact circle` = ("compact circle").asInstanceOf[`compact circle`]
+  
+  @js.native
   sealed trait error
     extends StObject
        with FilePondEvent
@@ -174,6 +178,10 @@ object filepondStrings {
   @js.native
   sealed trait integrated extends StObject
   inline def integrated: integrated = "integrated".asInstanceOf[integrated]
+  
+  @js.native
+  sealed trait `integrated circle` extends StObject
+  inline def `integrated circle`: `integrated circle` = ("integrated circle").asInstanceOf[`integrated circle`]
   
   @js.native
   sealed trait limbo extends StObject

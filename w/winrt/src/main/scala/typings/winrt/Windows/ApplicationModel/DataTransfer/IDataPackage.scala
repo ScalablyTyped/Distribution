@@ -14,9 +14,9 @@ trait IDataPackage extends StObject {
   
   def getView(): DataPackageView = js.native
   
-  var ondestroyed: js.Any = js.native
+  var ondestroyed: Any = js.native
   
-  var onoperationcompleted: js.Any = js.native
+  var onoperationcompleted: Any = js.native
   
   var properties: DataPackagePropertySet = js.native
   
@@ -26,7 +26,7 @@ trait IDataPackage extends StObject {
   
   def setBitmap(value: RandomAccessStreamReference): Unit = js.native
   
-  def setData(formatId: String, value: js.Any): Unit = js.native
+  def setData(formatId: String, value: Any): Unit = js.native
   
   def setDataProvider(formatId: String, delayRenderer: DataProviderHandler): Unit = js.native
   

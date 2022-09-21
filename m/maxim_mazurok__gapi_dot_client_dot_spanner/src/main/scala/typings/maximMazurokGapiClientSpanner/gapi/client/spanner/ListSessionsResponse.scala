@@ -29,6 +29,6 @@ object ListSessionsResponse {
     
     inline def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
     
-    inline def setSessionsVarargs(value: Session*): Self = StObject.set(x, "sessions", js.Array(value :_*))
+    inline def setSessionsVarargs(value: Session*): Self = StObject.set(x, "sessions", js.Array(value*))
   }
 }

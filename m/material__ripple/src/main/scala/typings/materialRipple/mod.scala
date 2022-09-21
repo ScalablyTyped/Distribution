@@ -1,12 +1,12 @@
 package typings.materialRipple
 
+import typings.materialBase.Element
 import typings.materialRipple.adapterMod.MDCRippleAdapter
 import typings.materialRipple.anon.PartialMDCRippleAdapter
 import typings.materialRipple.typesMod.MDCRippleAttachOpts
 import typings.materialRipple.typesMod.MDCRippleCapableSurface
 import typings.materialRipple.typesMod.MDCRipplePoint
-import typings.std.ClientRect
-import typings.std.Element
+import typings.std.DOMRect
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,10 +16,10 @@ object mod {
   
   @JSImport("@material/ripple", "MDCRipple")
   @js.native
-  class MDCRipple protected ()
+  open class MDCRipple protected ()
     extends typings.materialRipple.componentMod.MDCRipple {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: typings.materialRipple.foundationMod.MDCRippleFoundation, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: typings.materialRipple.foundationMod.MDCRippleFoundation, args: Any*) = this()
   }
   /* static members */
   object MDCRipple {
@@ -28,15 +28,15 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialRipple.componentMod.MDCRipple = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialRipple.componentMod.MDCRipple]
-    inline def attachTo(root: Element, opts: MDCRippleAttachOpts): typings.materialRipple.componentMod.MDCRipple = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.materialRipple.componentMod.MDCRipple]
+    inline def attachTo(root: typings.std.Element): typings.materialRipple.componentMod.MDCRipple = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialRipple.componentMod.MDCRipple]
+    inline def attachTo(root: typings.std.Element, opts: MDCRippleAttachOpts): typings.materialRipple.componentMod.MDCRipple = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.materialRipple.componentMod.MDCRipple]
     
     inline def createAdapter(instance: MDCRippleCapableSurface): MDCRippleAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("createAdapter")(instance.asInstanceOf[js.Any]).asInstanceOf[MDCRippleAdapter]
   }
   
   @JSImport("@material/ripple", "MDCRippleFoundation")
   @js.native
-  class MDCRippleFoundation ()
+  open class MDCRippleFoundation ()
     extends typings.materialRipple.foundationMod.MDCRippleFoundation {
     def this(adapter: PartialMDCRippleAdapter) = this()
   }
@@ -148,10 +148,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getNormalizedEventCoords(evt: Unit, pageOffset: MDCRipplePoint, clientRect: ClientRect): MDCRipplePoint = (^.asInstanceOf[js.Dynamic].applyDynamic("getNormalizedEventCoords")(evt.asInstanceOf[js.Any], pageOffset.asInstanceOf[js.Any], clientRect.asInstanceOf[js.Any])).asInstanceOf[MDCRipplePoint]
-    inline def getNormalizedEventCoords(evt: Event, pageOffset: MDCRipplePoint, clientRect: ClientRect): MDCRipplePoint = (^.asInstanceOf[js.Dynamic].applyDynamic("getNormalizedEventCoords")(evt.asInstanceOf[js.Any], pageOffset.asInstanceOf[js.Any], clientRect.asInstanceOf[js.Any])).asInstanceOf[MDCRipplePoint]
+    inline def getNormalizedEventCoords(evt: Unit, pageOffset: MDCRipplePoint, clientRect: DOMRect): MDCRipplePoint = (^.asInstanceOf[js.Dynamic].applyDynamic("getNormalizedEventCoords")(evt.asInstanceOf[js.Any], pageOffset.asInstanceOf[js.Any], clientRect.asInstanceOf[js.Any])).asInstanceOf[MDCRipplePoint]
+    inline def getNormalizedEventCoords(evt: Event, pageOffset: MDCRipplePoint, clientRect: DOMRect): MDCRipplePoint = (^.asInstanceOf[js.Dynamic].applyDynamic("getNormalizedEventCoords")(evt.asInstanceOf[js.Any], pageOffset.asInstanceOf[js.Any], clientRect.asInstanceOf[js.Any])).asInstanceOf[MDCRipplePoint]
     
-    inline def supportsCssVariables(windowObj: /* globalThis */ js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsCssVariables")(windowObj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    inline def supportsCssVariables(windowObj: /* globalThis */ js.Any, forceRefresh: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("supportsCssVariables")(windowObj.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def supportsCssVariables(windowObj: /* globalThis */ Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsCssVariables")(windowObj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def supportsCssVariables(windowObj: /* globalThis */ Any, forceRefresh: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("supportsCssVariables")(windowObj.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

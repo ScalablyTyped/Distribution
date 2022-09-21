@@ -1,77 +1,74 @@
 package typings.summernote.mod.global.Summernote
 
+import org.scalablytyped.runtime.TopLevel
+import typings.jquery.JQuery.Node
+import typings.summernote.summernoteStrings.color
+import typings.summernote.summernoteStrings.float
+import typings.summernote.summernoteStrings.font
+import typings.summernote.summernoteStrings.fontname_
+import typings.summernote.summernoteStrings.fontsize_
+import typings.summernote.summernoteStrings.height
+import typings.summernote.summernoteStrings.help
+import typings.summernote.summernoteStrings.imagesize
+import typings.summernote.summernoteStrings.insert
+import typings.summernote.summernoteStrings.link
+import typings.summernote.summernoteStrings.misc
+import typings.summernote.summernoteStrings.para
+import typings.summernote.summernoteStrings.remove
+import typings.summernote.summernoteStrings.removeMedia
+import typings.summernote.summernoteStrings.style
+import typings.summernote.summernoteStrings.table
+import typings.summernote.summernoteStrings.view
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type EditImageCallback = js.Function1[/* $image */ typings.jquery.JQuery.Node, scala.Unit]
+type EditImageCallback = js.Function1[/* $image */ Node, Unit]
 
-type colorsDef = js.Array[js.Array[js.Array[java.lang.String]]]
+type SummernoteUndocumentedCallbacks = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+{[ key in std.Exclude<'onBeforeCommand' | 'onChange' | 'onChangeCodeview' | 'onDialogShown' | 'onEnter' | 'onFocus' | 'onBlur' | 'onBlurCodeview' | 'onImageLinkInsert' | 'onImageUpload' | 'onImageUploadError' | 'onInit' | 'onKeyup' | 'onKeydown' | 'onMouseDown' | 'onMouseUp' | 'onPaste' | 'onScroll', string> ]: (args : ...any): void}
+  */ typings.summernote.summernoteStrings.SummernoteUndocumentedCallbacks & TopLevel[Any]
 
-type htmlElement = java.lang.String
+type colorsDef = js.Array[js.Array[js.Array[String]]]
+
+type htmlElement = String
 
 type popoverAirDef = js.Tuple5[
-js.Tuple2[
-  typings.summernote.summernoteStrings.color, 
-  typings.summernote.mod.global.Summernote.popoverAirOptionsColor
-], 
-js.Tuple2[
-  typings.summernote.summernoteStrings.font, 
-  typings.summernote.mod.global.Summernote.popoverAirOptionsFont
-], 
-js.Tuple2[
-  typings.summernote.summernoteStrings.para, 
-  typings.summernote.mod.global.Summernote.popoverAirOptionsPara
-], 
-js.Tuple2[
-  typings.summernote.summernoteStrings.table, 
-  typings.summernote.mod.global.Summernote.popoverAirOptionsTable
-], 
-js.Tuple2[
-  typings.summernote.summernoteStrings.insert, 
-  typings.summernote.mod.global.Summernote.popoverAirOptionsInsert
-]]
+js.Tuple2[color, popoverAirOptionsColor], 
+js.Tuple2[font, popoverAirOptionsFont], 
+js.Tuple2[para, popoverAirOptionsPara], 
+js.Tuple2[table, popoverAirOptionsTable], 
+js.Tuple2[insert, popoverAirOptionsInsert]]
 
-type popoverAirOptionsColor = typings.summernote.summernoteStrings.color
+type popoverAirOptionsColor = color
 
-type popoverAirOptionsTable = typings.summernote.summernoteStrings.table
+type popoverAirOptionsTable = table
 
 type popoverImageDef = js.Tuple3[
-js.Tuple2[
-  typings.summernote.summernoteStrings.imagesize, 
-  js.Array[typings.summernote.mod.global.Summernote.popoverImageOptionsImagesize]
-], 
-js.Tuple2[
-  typings.summernote.summernoteStrings.float, 
-  js.Array[typings.summernote.mod.global.Summernote.popoverImageOptionsFloat]
-], 
-js.Tuple2[
-  typings.summernote.summernoteStrings.remove, 
-  js.Array[typings.summernote.mod.global.Summernote.popoverImageOptionsRemove]
-]]
+js.Tuple2[imagesize, js.Array[popoverImageOptionsImagesize]], 
+js.Tuple2[float, js.Array[popoverImageOptionsFloat]], 
+js.Tuple2[remove, js.Array[popoverImageOptionsRemove]]]
 
-type popoverImageOptionsRemove = typings.summernote.summernoteStrings.removeMedia
+type popoverImageOptionsRemove = removeMedia
 
-type popoverLinkDef = js.Array[
-js.Tuple2[
-  typings.summernote.summernoteStrings.link, 
-  js.Array[typings.summernote.mod.global.Summernote.popoverLinkLinkOptions]
-]]
+type popoverLinkDef = js.Array[js.Tuple2[link, js.Array[popoverLinkLinkOptions]]]
 
-type toolbarColorGroupOptions = typings.summernote.summernoteStrings.color
+type toolbarColorGroupOptions = color
 
 // type toolbarDef = [string, string[]][]
 type toolbarDef = js.Array[
 js.Tuple2[
-  typings.summernote.summernoteStrings.style | typings.summernote.summernoteStrings.font | typings.summernote.summernoteStrings.fontsize_ | typings.summernote.summernoteStrings.color | typings.summernote.summernoteStrings.para | typings.summernote.summernoteStrings.height | typings.summernote.summernoteStrings.table | typings.summernote.summernoteStrings.insert | typings.summernote.summernoteStrings.view | typings.summernote.summernoteStrings.help | typings.summernote.summernoteStrings.misc, 
+  style | font | fontname_ | fontsize_ | color | para | height | table | insert | view | help | misc, 
   js.Array[
-    typings.summernote.mod.global.Summernote.miscGroupOptions | typings.summernote.mod.global.Summernote.toolbarColorGroupOptions | typings.summernote.mod.global.Summernote.toolbarFontGroupOptions | typings.summernote.mod.global.Summernote.toolbarFontsizeGroupOptions | typings.summernote.mod.global.Summernote.toolbarHeightGroupOptions | typings.summernote.mod.global.Summernote.toolbarHelpGroupOptions | typings.summernote.mod.global.Summernote.toolbarInsertGroupOptions | typings.summernote.mod.global.Summernote.toolbarParaGroupOptions | typings.summernote.mod.global.Summernote.toolbarStyleGroupOptions | typings.summernote.mod.global.Summernote.toolbarTableGroupOptions | typings.summernote.mod.global.Summernote.toolbarViewGroupOptions
+    miscGroupOptions | toolbarColorGroupOptions | toolbarFontGroupOptions | toolbarFontNameOptions | toolbarFontsizeGroupOptions | toolbarHeightGroupOptions | toolbarHelpGroupOptions | toolbarInsertGroupOptions | toolbarParaGroupOptions | toolbarStyleGroupOptions | toolbarTableGroupOptions | toolbarViewGroupOptions
   ]
 ]]
 
-type toolbarHeightGroupOptions = typings.summernote.summernoteStrings.height
+type toolbarFontNameOptions = String
 
-type toolbarHelpGroupOptions = typings.summernote.summernoteStrings.help
+type toolbarHeightGroupOptions = height
 
-type toolbarTableGroupOptions = typings.summernote.summernoteStrings.table
+type toolbarHelpGroupOptions = help
+
+type toolbarTableGroupOptions = table

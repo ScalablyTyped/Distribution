@@ -10,10 +10,10 @@ Provides the number of physical cores
 | ------------------ | :-------------: |
 | Full name          | physical-cpu-count |
 | Keywords           | os, cpu, cpus, length, physical, logical, cores |
-| # releases         | 0 |
-| # dependents       | 39 |
-| # downloads        | 25941038 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2143084.6666666665 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/physical-cpu-count)

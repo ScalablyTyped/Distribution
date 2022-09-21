@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vast-client", "VASTTracker")
 @js.native
-class VASTTracker protected () extends EventEmitter {
+open class VASTTracker protected () extends EventEmitter {
   def this(
     /**
     * An optional instance of VASTClient that can be updated by the tracker.
@@ -215,11 +215,7 @@ class VASTTracker protected () extends EventEmitter {
     * The name of the event. Call the specified event tracking URLs. Emit the specified event when done.
     */
   eventName: String,
-    /**
-    * Indicate if the event has to be tracked only once.
-    * Default: false
-    */
-  once: Boolean
+    trackOptions: TrackOptions
   ): Unit = js.native
   
   /**

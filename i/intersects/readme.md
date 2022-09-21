@@ -10,10 +10,10 @@ a simple collection of 2d collision/intersects functions, supporting points, cir
 | ------------------ | :-------------: |
 | Full name          | intersects |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 3 |
-| # downloads        | 365287 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 53662.666666666664 |
+| # stars            | 433.0 |
 
 ## Links
 - [Homepage](https://github.com/davidfig/intersects#readme)

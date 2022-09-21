@@ -1,6 +1,6 @@
 package typings.vsoNodeApi
 
-import typings.node.NodeJS.ReadableStream
+import typings.std.ReadableStream
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
 import typings.vsoNodeApi.coreInterfacesMod.WebApiCreateTagRequestData
 import typings.vsoNodeApi.coreInterfacesMod.WebApiTagDefinition
@@ -61,7 +61,7 @@ object gitApiMod {
   
   @JSImport("vso-node-api/GitApi", "GitApi")
   @js.native
-  class GitApi protected () extends IGitApi {
+  open class GitApi protected () extends IGitApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
@@ -79,15 +79,15 @@ object gitApiMod {
     def createAnnotatedTag(tagObject: GitAnnotatedTag, project: String, repositoryId: String): js.Promise[GitAnnotatedTag] = js.native
     
     def createAttachment(
-      customHeaders: js.Any,
-      contentStream: ReadableStream,
+      customHeaders: Any,
+      contentStream: ReadableStream[Any],
       fileName: String,
       repositoryId: String,
       pullRequestId: Double
     ): js.Promise[Attachment] = js.native
     def createAttachment(
-      customHeaders: js.Any,
-      contentStream: ReadableStream,
+      customHeaders: Any,
+      contentStream: ReadableStream[Any],
       fileName: String,
       repositoryId: String,
       pullRequestId: Double,
@@ -246,11 +246,11 @@ object gitApiMod {
     
     def getAnnotatedTag(project: String, repositoryId: String, objectId: String): js.Promise[GitAnnotatedTag] = js.native
     
-    def getAttachmentContent(fileName: String, repositoryId: String, pullRequestId: Double): js.Promise[ReadableStream] = js.native
-    def getAttachmentContent(fileName: String, repositoryId: String, pullRequestId: Double, project: String): js.Promise[ReadableStream] = js.native
+    def getAttachmentContent(fileName: String, repositoryId: String, pullRequestId: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getAttachmentContent(fileName: String, repositoryId: String, pullRequestId: Double, project: String): js.Promise[ReadableStream[Any]] = js.native
     
-    def getAttachmentZip(fileName: String, repositoryId: String, pullRequestId: Double): js.Promise[ReadableStream] = js.native
-    def getAttachmentZip(fileName: String, repositoryId: String, pullRequestId: Double, project: String): js.Promise[ReadableStream] = js.native
+    def getAttachmentZip(fileName: String, repositoryId: String, pullRequestId: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getAttachmentZip(fileName: String, repositoryId: String, pullRequestId: Double, project: String): js.Promise[ReadableStream[Any]] = js.native
     
     def getAttachments(repositoryId: String, pullRequestId: Double): js.Promise[js.Array[Attachment]] = js.native
     def getAttachments(repositoryId: String, pullRequestId: Double, project: String): js.Promise[js.Array[Attachment]] = js.native
@@ -264,28 +264,28 @@ object gitApiMod {
     def getBlob(repositoryId: String, sha1: String, project: Unit, download: Boolean, fileName: String): js.Promise[GitBlobRef] = js.native
     def getBlob(repositoryId: String, sha1: String, project: Unit, download: Unit, fileName: String): js.Promise[GitBlobRef] = js.native
     
-    def getBlobContent(repositoryId: String, sha1: String): js.Promise[ReadableStream] = js.native
-    def getBlobContent(repositoryId: String, sha1: String, project: String): js.Promise[ReadableStream] = js.native
-    def getBlobContent(repositoryId: String, sha1: String, project: String, download: Boolean): js.Promise[ReadableStream] = js.native
-    def getBlobContent(repositoryId: String, sha1: String, project: String, download: Boolean, fileName: String): js.Promise[ReadableStream] = js.native
-    def getBlobContent(repositoryId: String, sha1: String, project: String, download: Unit, fileName: String): js.Promise[ReadableStream] = js.native
-    def getBlobContent(repositoryId: String, sha1: String, project: Unit, download: Boolean): js.Promise[ReadableStream] = js.native
-    def getBlobContent(repositoryId: String, sha1: String, project: Unit, download: Boolean, fileName: String): js.Promise[ReadableStream] = js.native
-    def getBlobContent(repositoryId: String, sha1: String, project: Unit, download: Unit, fileName: String): js.Promise[ReadableStream] = js.native
+    def getBlobContent(repositoryId: String, sha1: String): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobContent(repositoryId: String, sha1: String, project: String): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobContent(repositoryId: String, sha1: String, project: String, download: Boolean): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobContent(repositoryId: String, sha1: String, project: String, download: Boolean, fileName: String): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobContent(repositoryId: String, sha1: String, project: String, download: Unit, fileName: String): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobContent(repositoryId: String, sha1: String, project: Unit, download: Boolean): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobContent(repositoryId: String, sha1: String, project: Unit, download: Boolean, fileName: String): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobContent(repositoryId: String, sha1: String, project: Unit, download: Unit, fileName: String): js.Promise[ReadableStream[Any]] = js.native
     
-    def getBlobZip(repositoryId: String, sha1: String): js.Promise[ReadableStream] = js.native
-    def getBlobZip(repositoryId: String, sha1: String, project: String): js.Promise[ReadableStream] = js.native
-    def getBlobZip(repositoryId: String, sha1: String, project: String, download: Boolean): js.Promise[ReadableStream] = js.native
-    def getBlobZip(repositoryId: String, sha1: String, project: String, download: Boolean, fileName: String): js.Promise[ReadableStream] = js.native
-    def getBlobZip(repositoryId: String, sha1: String, project: String, download: Unit, fileName: String): js.Promise[ReadableStream] = js.native
-    def getBlobZip(repositoryId: String, sha1: String, project: Unit, download: Boolean): js.Promise[ReadableStream] = js.native
-    def getBlobZip(repositoryId: String, sha1: String, project: Unit, download: Boolean, fileName: String): js.Promise[ReadableStream] = js.native
-    def getBlobZip(repositoryId: String, sha1: String, project: Unit, download: Unit, fileName: String): js.Promise[ReadableStream] = js.native
+    def getBlobZip(repositoryId: String, sha1: String): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobZip(repositoryId: String, sha1: String, project: String): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobZip(repositoryId: String, sha1: String, project: String, download: Boolean): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobZip(repositoryId: String, sha1: String, project: String, download: Boolean, fileName: String): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobZip(repositoryId: String, sha1: String, project: String, download: Unit, fileName: String): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobZip(repositoryId: String, sha1: String, project: Unit, download: Boolean): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobZip(repositoryId: String, sha1: String, project: Unit, download: Boolean, fileName: String): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobZip(repositoryId: String, sha1: String, project: Unit, download: Unit, fileName: String): js.Promise[ReadableStream[Any]] = js.native
     
-    def getBlobsZip(blobIds: js.Array[String], repositoryId: String): js.Promise[ReadableStream] = js.native
-    def getBlobsZip(blobIds: js.Array[String], repositoryId: String, project: String): js.Promise[ReadableStream] = js.native
-    def getBlobsZip(blobIds: js.Array[String], repositoryId: String, project: String, filename: String): js.Promise[ReadableStream] = js.native
-    def getBlobsZip(blobIds: js.Array[String], repositoryId: String, project: Unit, filename: String): js.Promise[ReadableStream] = js.native
+    def getBlobsZip(blobIds: js.Array[String], repositoryId: String): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobsZip(blobIds: js.Array[String], repositoryId: String, project: String): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobsZip(blobIds: js.Array[String], repositoryId: String, project: String, filename: String): js.Promise[ReadableStream[Any]] = js.native
+    def getBlobsZip(blobIds: js.Array[String], repositoryId: String, project: Unit, filename: String): js.Promise[ReadableStream[Any]] = js.native
     
     def getBranch(repositoryId: String, name: String): js.Promise[GitBranchStats] = js.native
     def getBranch(repositoryId: String, name: String, project: String): js.Promise[GitBranchStats] = js.native
@@ -504,7 +504,7 @@ object gitApiMod {
       latestProcessedChange: js.UndefOr[Boolean],
       download: js.UndefOr[Boolean],
       versionDescriptor: js.UndefOr[GitVersionDescriptor]
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     
     def getItemText(
       repositoryId: String,
@@ -516,7 +516,7 @@ object gitApiMod {
       latestProcessedChange: js.UndefOr[Boolean],
       download: js.UndefOr[Boolean],
       versionDescriptor: js.UndefOr[GitVersionDescriptor]
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     
     def getItemZip(
       repositoryId: String,
@@ -528,7 +528,7 @@ object gitApiMod {
       latestProcessedChange: js.UndefOr[Boolean],
       download: js.UndefOr[Boolean],
       versionDescriptor: js.UndefOr[GitVersionDescriptor]
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     
     def getItems(
       repositoryId: String,
@@ -781,8 +781,8 @@ object gitApiMod {
     def getPullRequestLabels(repositoryId: String, pullRequestId: Double, project: String, projectId: String): js.Promise[js.Array[WebApiTagDefinition]] = js.native
     def getPullRequestLabels(repositoryId: String, pullRequestId: Double, project: Unit, projectId: String): js.Promise[js.Array[WebApiTagDefinition]] = js.native
     
-    def getPullRequestProperties(repositoryId: String, pullRequestId: Double): js.Promise[js.Any] = js.native
-    def getPullRequestProperties(repositoryId: String, pullRequestId: Double, project: String): js.Promise[js.Any] = js.native
+    def getPullRequestProperties(repositoryId: String, pullRequestId: Double): js.Promise[Any] = js.native
+    def getPullRequestProperties(repositoryId: String, pullRequestId: Double, project: String): js.Promise[Any] = js.native
     
     def getPullRequestQuery(queries: GitPullRequestQuery, repositoryId: String): js.Promise[GitPullRequestQuery] = js.native
     def getPullRequestQuery(queries: GitPullRequestQuery, repositoryId: String, project: String): js.Promise[GitPullRequestQuery] = js.native
@@ -1408,10 +1408,10 @@ object gitApiMod {
       fileName: String
     ): js.Promise[GitTreeRef] = js.native
     
-    def getTreeZip(repositoryId: String, sha1: String): js.Promise[ReadableStream] = js.native
-    def getTreeZip(repositoryId: String, sha1: String, project: String): js.Promise[ReadableStream] = js.native
-    def getTreeZip(repositoryId: String, sha1: String, project: String, projectId: String): js.Promise[ReadableStream] = js.native
-    def getTreeZip(repositoryId: String, sha1: String, project: String, projectId: String, recursive: Boolean): js.Promise[ReadableStream] = js.native
+    def getTreeZip(repositoryId: String, sha1: String): js.Promise[ReadableStream[Any]] = js.native
+    def getTreeZip(repositoryId: String, sha1: String, project: String): js.Promise[ReadableStream[Any]] = js.native
+    def getTreeZip(repositoryId: String, sha1: String, project: String, projectId: String): js.Promise[ReadableStream[Any]] = js.native
+    def getTreeZip(repositoryId: String, sha1: String, project: String, projectId: String, recursive: Boolean): js.Promise[ReadableStream[Any]] = js.native
     def getTreeZip(
       repositoryId: String,
       sha1: String,
@@ -1419,7 +1419,7 @@ object gitApiMod {
       projectId: String,
       recursive: Boolean,
       fileName: String
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     def getTreeZip(
       repositoryId: String,
       sha1: String,
@@ -1427,8 +1427,8 @@ object gitApiMod {
       projectId: String,
       recursive: Unit,
       fileName: String
-    ): js.Promise[ReadableStream] = js.native
-    def getTreeZip(repositoryId: String, sha1: String, project: String, projectId: Unit, recursive: Boolean): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
+    def getTreeZip(repositoryId: String, sha1: String, project: String, projectId: Unit, recursive: Boolean): js.Promise[ReadableStream[Any]] = js.native
     def getTreeZip(
       repositoryId: String,
       sha1: String,
@@ -1436,7 +1436,7 @@ object gitApiMod {
       projectId: Unit,
       recursive: Boolean,
       fileName: String
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     def getTreeZip(
       repositoryId: String,
       sha1: String,
@@ -1444,9 +1444,9 @@ object gitApiMod {
       projectId: Unit,
       recursive: Unit,
       fileName: String
-    ): js.Promise[ReadableStream] = js.native
-    def getTreeZip(repositoryId: String, sha1: String, project: Unit, projectId: String): js.Promise[ReadableStream] = js.native
-    def getTreeZip(repositoryId: String, sha1: String, project: Unit, projectId: String, recursive: Boolean): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
+    def getTreeZip(repositoryId: String, sha1: String, project: Unit, projectId: String): js.Promise[ReadableStream[Any]] = js.native
+    def getTreeZip(repositoryId: String, sha1: String, project: Unit, projectId: String, recursive: Boolean): js.Promise[ReadableStream[Any]] = js.native
     def getTreeZip(
       repositoryId: String,
       sha1: String,
@@ -1454,7 +1454,7 @@ object gitApiMod {
       projectId: String,
       recursive: Boolean,
       fileName: String
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     def getTreeZip(
       repositoryId: String,
       sha1: String,
@@ -1462,8 +1462,8 @@ object gitApiMod {
       projectId: String,
       recursive: Unit,
       fileName: String
-    ): js.Promise[ReadableStream] = js.native
-    def getTreeZip(repositoryId: String, sha1: String, project: Unit, projectId: Unit, recursive: Boolean): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
+    def getTreeZip(repositoryId: String, sha1: String, project: Unit, projectId: Unit, recursive: Boolean): js.Promise[ReadableStream[Any]] = js.native
     def getTreeZip(
       repositoryId: String,
       sha1: String,
@@ -1471,7 +1471,7 @@ object gitApiMod {
       projectId: Unit,
       recursive: Boolean,
       fileName: String
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     def getTreeZip(
       repositoryId: String,
       sha1: String,
@@ -1479,7 +1479,7 @@ object gitApiMod {
       projectId: Unit,
       recursive: Unit,
       fileName: String
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     
     def queryImportRequests(project: String, repositoryId: String): js.Promise[js.Array[GitImportRequest]] = js.native
     def queryImportRequests(project: String, repositoryId: String, includeAbandoned: Boolean): js.Promise[js.Array[GitImportRequest]] = js.native
@@ -1535,14 +1535,14 @@ object gitApiMod {
     ): js.Promise[js.Array[GitConflictUpdateResult]] = js.native
     
     def updatePullRequestIterationStatuses(
-      customHeaders: js.Any,
+      customHeaders: Any,
       patchDocument: JsonPatchDocument,
       repositoryId: String,
       pullRequestId: Double,
       iterationId: Double
     ): js.Promise[Unit] = js.native
     def updatePullRequestIterationStatuses(
-      customHeaders: js.Any,
+      customHeaders: Any,
       patchDocument: JsonPatchDocument,
       repositoryId: String,
       pullRequestId: Double,
@@ -1550,19 +1550,14 @@ object gitApiMod {
       project: String
     ): js.Promise[Unit] = js.native
     
+    def updatePullRequestProperties(customHeaders: Any, patchDocument: JsonPatchDocument, repositoryId: String, pullRequestId: Double): js.Promise[Any] = js.native
     def updatePullRequestProperties(
-      customHeaders: js.Any,
-      patchDocument: JsonPatchDocument,
-      repositoryId: String,
-      pullRequestId: Double
-    ): js.Promise[js.Any] = js.native
-    def updatePullRequestProperties(
-      customHeaders: js.Any,
+      customHeaders: Any,
       patchDocument: JsonPatchDocument,
       repositoryId: String,
       pullRequestId: Double,
       project: String
-    ): js.Promise[js.Any] = js.native
+    ): js.Promise[Any] = js.native
     
     def updatePullRequestReviewers(patchVotes: js.Array[IdentityRefWithVote], repositoryId: String, pullRequestId: Double): js.Promise[Unit] = js.native
     def updatePullRequestReviewers(
@@ -1572,14 +1567,9 @@ object gitApiMod {
       project: String
     ): js.Promise[Unit] = js.native
     
+    def updatePullRequestStatuses(customHeaders: Any, patchDocument: JsonPatchDocument, repositoryId: String, pullRequestId: Double): js.Promise[Unit] = js.native
     def updatePullRequestStatuses(
-      customHeaders: js.Any,
-      patchDocument: JsonPatchDocument,
-      repositoryId: String,
-      pullRequestId: Double
-    ): js.Promise[Unit] = js.native
-    def updatePullRequestStatuses(
-      customHeaders: js.Any,
+      customHeaders: Any,
       patchDocument: JsonPatchDocument,
       repositoryId: String,
       pullRequestId: Double,

@@ -1,7 +1,7 @@
 
 # Scala.js typings for microsoft-graph
 
-Typings are for version 1.27
+Typings are for version 2.24
 
 
 

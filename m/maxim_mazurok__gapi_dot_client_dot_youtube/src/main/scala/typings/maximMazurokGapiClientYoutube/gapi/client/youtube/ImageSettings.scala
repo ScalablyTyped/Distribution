@@ -9,7 +9,7 @@ trait ImageSettings extends StObject {
   /** The URL for the background image shown on the video watch page. The image should be 1200px by 615px, with a maximum file size of 128k. */
   var backgroundImageUrl: js.UndefOr[LocalizedProperty] = js.undefined
   
-  /** This is used only in update requests; if it's set, we use this URL to generate all of the above banner URLs. */
+  /** This is generated when a ChannelBanner.Insert request has succeeded for the given channel. */
   var bannerExternalUrl: js.UndefOr[String] = js.undefined
   
   /** Banner image. Desktop size (1060x175). */

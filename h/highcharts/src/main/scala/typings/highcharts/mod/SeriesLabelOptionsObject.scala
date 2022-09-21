@@ -89,7 +89,7 @@ object SeriesLabelOptionsObject {
     
     inline def setBoxesToAvoidUndefined: Self = StObject.set(x, "boxesToAvoid", js.undefined)
     
-    inline def setBoxesToAvoidVarargs(value: LabelIntersectBoxObject*): Self = StObject.set(x, "boxesToAvoid", js.Array(value :_*))
+    inline def setBoxesToAvoidVarargs(value: LabelIntersectBoxObject*): Self = StObject.set(x, "boxesToAvoid", js.Array(value*))
     
     inline def setConnectorAllowed(value: Boolean): Self = StObject.set(x, "connectorAllowed", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hedron
 
-Typings are for version 1.0
+Typings are for version 1.0.1
 
 ## Library description:
 A no-frills flexbox grid system for React.
@@ -10,10 +10,10 @@ A no-frills flexbox grid system for React.
 | ------------------ | :-------------: |
 | Full name          | hedron |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 13887 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1040.6666666666667 |
+| # stars            | 857.0 |
 
 ## Links
 - [Homepage](https://github.com/garetmckinley/hedron)
@@ -24,7 +24,7 @@ A no-frills flexbox grid system for React.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

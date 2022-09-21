@@ -13,5 +13,5 @@ object checkSerializableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(o: StringDictionary[js.Any]): Serializable | Location = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(o.asInstanceOf[js.Any]).asInstanceOf[Serializable | Location]
+  inline def default(o: StringDictionary[Any]): Serializable | Location = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(o.asInstanceOf[js.Any]).asInstanceOf[Serializable | Location]
 }

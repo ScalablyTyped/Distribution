@@ -1,7 +1,7 @@
 
 # Scala.js typings for prepend-http
 
-Typings are for version 3.0.1
+Typings are for version 4.0.0
 
 ## Library description:
 Prepend `https://` to humanized URLs like sindresorhus.com and localhost
@@ -9,11 +9,11 @@ Prepend `https://` to humanized URLs like sindresorhus.com and localhost
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | prepend-http |
-| Keywords           | prepend, protocol, scheme, url, uri, http, https, humanized |
-| # releases         | 3 |
-| # dependents       | 70 |
-| # downloads        | 572640159 |
-| # stars            | 1 |
+| Keywords           | prepend, protocol, scheme, url, http, https, humanized |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 7.903261933333333E7 |
+| # stars            | 60.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/prepend-http#readme)

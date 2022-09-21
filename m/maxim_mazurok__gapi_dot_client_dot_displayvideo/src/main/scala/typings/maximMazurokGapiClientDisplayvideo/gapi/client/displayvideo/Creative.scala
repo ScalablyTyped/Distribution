@@ -130,6 +130,12 @@ trait Creative extends StObject {
     */
   var mediaDuration: js.UndefOr[String] = js.undefined
   
+  /**
+    * Output only. Indicates the third-party audio creative supports MP3. Output only and only valid for third-party audio creatives. Third-party audio creatives are creatives with
+    * following hosting_source: * `HOSTING_SOURCE_THIRD_PARTY` combined with following creative_type: * `CREATIVE_TYPE_AUDIO`
+    */
+  var mp3Audio: js.UndefOr[Boolean] = js.undefined
+  
   /** Output only. The resource name of the creative. */
   var name: js.UndefOr[String] = js.undefined
   
@@ -138,6 +144,12 @@ trait Creative extends StObject {
   
   /** Specifies the OBA icon for a video creative. This field is only supported in following creative_type: * `CREATIVE_TYPE_VIDEO` */
   var obaIcon: js.UndefOr[ObaIcon] = js.undefined
+  
+  /**
+    * Output only. Indicates the third-party audio creative supports OGG. Output only and only valid for third-party audio creatives. Third-party audio creatives are creatives with
+    * following hosting_source: * `HOSTING_SOURCE_THIRD_PARTY` combined with following creative_type: * `CREATIVE_TYPE_AUDIO`
+    */
+  var oggAudio: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Amount of time to play the video before counting a view. This field is required when skippable is true. This field is only supported for the following creative_type: *
@@ -162,7 +174,7 @@ trait Creative extends StObject {
     * Optional. Indicates that the creative will wait for a return ping for attribution. Only valid when using a Campaign Manager 360 tracking ad with a third-party ad server parameter
     * and the ${DC_DBM_TOKEN} macro. Optional and only valid for third-party tag creatives or third-party VAST tag creatives. Third-party tag creatives are creatives with following
     * hosting_source: * `HOSTING_SOURCE_THIRD_PARTY` combined with following creative_type: * `CREATIVE_TYPE_STANDARD` * `CREATIVE_TYPE_EXPANDABLE` Third-party VAST tag creatives are
-    * creatives with following hosting_source: * `HOSTING_SOURCE_THIRD_PARTY` combined with following creative_type: * `CREATIVE_TYPE_VIDEO`
+    * creatives with following hosting_source: * `HOSTING_SOURCE_THIRD_PARTY` combined with following creative_type: * `CREATIVE_TYPE_AUDIO` * `CREATIVE_TYPE_VIDEO`
     */
   var requirePingForAttribution: js.UndefOr[Boolean] = js.undefined
   
@@ -217,12 +229,12 @@ trait Creative extends StObject {
     */
   var universalAdId: js.UndefOr[UniversalAdId] = js.undefined
   
-  /** Output only. The timestamp when the creative was last updated. Assigned by the system. */
+  /** Output only. The timestamp when the creative was last updated, either by the user or system (e.g. creative review). Assigned by the system. */
   var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The URL of the VAST tag for a third-party VAST tag creative. Required and only valid for third-party VAST tag creatives. Third-party VAST tag creatives are creatives with
-    * following hosting_source: * `HOSTING_SOURCE_THIRD_PARTY` combined with following creative_type: * `CREATIVE_TYPE_VIDEO`
+    * following hosting_source: * `HOSTING_SOURCE_THIRD_PARTY` combined with following creative_type: * `CREATIVE_TYPE_AUDIO` * `CREATIVE_TYPE_VIDEO`
     */
   var vastTagUrl: js.UndefOr[String] = js.undefined
   
@@ -245,7 +257,7 @@ object Creative {
     
     inline def setAdditionalDimensionsUndefined: Self = StObject.set(x, "additionalDimensions", js.undefined)
     
-    inline def setAdditionalDimensionsVarargs(value: Dimensions*): Self = StObject.set(x, "additionalDimensions", js.Array(value :_*))
+    inline def setAdditionalDimensionsVarargs(value: Dimensions*): Self = StObject.set(x, "additionalDimensions", js.Array(value*))
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
@@ -259,7 +271,7 @@ object Creative {
     
     inline def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
     
-    inline def setAssetsVarargs(value: AssetAssociation*): Self = StObject.set(x, "assets", js.Array(value :_*))
+    inline def setAssetsVarargs(value: AssetAssociation*): Self = StObject.set(x, "assets", js.Array(value*))
     
     inline def setCmPlacementId(value: String): Self = StObject.set(x, "cmPlacementId", value.asInstanceOf[js.Any])
     
@@ -273,13 +285,13 @@ object Creative {
     
     inline def setCompanionCreativeIdsUndefined: Self = StObject.set(x, "companionCreativeIds", js.undefined)
     
-    inline def setCompanionCreativeIdsVarargs(value: String*): Self = StObject.set(x, "companionCreativeIds", js.Array(value :_*))
+    inline def setCompanionCreativeIdsVarargs(value: String*): Self = StObject.set(x, "companionCreativeIds", js.Array(value*))
     
     inline def setCounterEvents(value: js.Array[CounterEvent]): Self = StObject.set(x, "counterEvents", value.asInstanceOf[js.Any])
     
     inline def setCounterEventsUndefined: Self = StObject.set(x, "counterEvents", js.undefined)
     
-    inline def setCounterEventsVarargs(value: CounterEvent*): Self = StObject.set(x, "counterEvents", js.Array(value :_*))
+    inline def setCounterEventsVarargs(value: CounterEvent*): Self = StObject.set(x, "counterEvents", js.Array(value*))
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
@@ -289,7 +301,7 @@ object Creative {
     
     inline def setCreativeAttributesUndefined: Self = StObject.set(x, "creativeAttributes", js.undefined)
     
-    inline def setCreativeAttributesVarargs(value: String*): Self = StObject.set(x, "creativeAttributes", js.Array(value :_*))
+    inline def setCreativeAttributesVarargs(value: String*): Self = StObject.set(x, "creativeAttributes", js.Array(value*))
     
     inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
@@ -319,7 +331,7 @@ object Creative {
     
     inline def setExitEventsUndefined: Self = StObject.set(x, "exitEvents", js.undefined)
     
-    inline def setExitEventsVarargs(value: ExitEvent*): Self = StObject.set(x, "exitEvents", js.Array(value :_*))
+    inline def setExitEventsVarargs(value: ExitEvent*): Self = StObject.set(x, "exitEvents", js.Array(value*))
     
     inline def setExpandOnHover(value: Boolean): Self = StObject.set(x, "expandOnHover", value.asInstanceOf[js.Any])
     
@@ -353,11 +365,15 @@ object Creative {
     
     inline def setLineItemIdsUndefined: Self = StObject.set(x, "lineItemIds", js.undefined)
     
-    inline def setLineItemIdsVarargs(value: String*): Self = StObject.set(x, "lineItemIds", js.Array(value :_*))
+    inline def setLineItemIdsVarargs(value: String*): Self = StObject.set(x, "lineItemIds", js.Array(value*))
     
     inline def setMediaDuration(value: String): Self = StObject.set(x, "mediaDuration", value.asInstanceOf[js.Any])
     
     inline def setMediaDurationUndefined: Self = StObject.set(x, "mediaDuration", js.undefined)
+    
+    inline def setMp3Audio(value: Boolean): Self = StObject.set(x, "mp3Audio", value.asInstanceOf[js.Any])
+    
+    inline def setMp3AudioUndefined: Self = StObject.set(x, "mp3Audio", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -370,6 +386,10 @@ object Creative {
     inline def setObaIcon(value: ObaIcon): Self = StObject.set(x, "obaIcon", value.asInstanceOf[js.Any])
     
     inline def setObaIconUndefined: Self = StObject.set(x, "obaIcon", js.undefined)
+    
+    inline def setOggAudio(value: Boolean): Self = StObject.set(x, "oggAudio", value.asInstanceOf[js.Any])
+    
+    inline def setOggAudioUndefined: Self = StObject.set(x, "oggAudio", js.undefined)
     
     inline def setProgressOffset(value: AudioVideoOffset): Self = StObject.set(x, "progressOffset", value.asInstanceOf[js.Any])
     
@@ -407,25 +427,25 @@ object Creative {
     
     inline def setThirdPartyUrlsUndefined: Self = StObject.set(x, "thirdPartyUrls", js.undefined)
     
-    inline def setThirdPartyUrlsVarargs(value: ThirdPartyUrl*): Self = StObject.set(x, "thirdPartyUrls", js.Array(value :_*))
+    inline def setThirdPartyUrlsVarargs(value: ThirdPartyUrl*): Self = StObject.set(x, "thirdPartyUrls", js.Array(value*))
     
     inline def setTimerEvents(value: js.Array[TimerEvent]): Self = StObject.set(x, "timerEvents", value.asInstanceOf[js.Any])
     
     inline def setTimerEventsUndefined: Self = StObject.set(x, "timerEvents", js.undefined)
     
-    inline def setTimerEventsVarargs(value: TimerEvent*): Self = StObject.set(x, "timerEvents", js.Array(value :_*))
+    inline def setTimerEventsVarargs(value: TimerEvent*): Self = StObject.set(x, "timerEvents", js.Array(value*))
     
     inline def setTrackerUrls(value: js.Array[String]): Self = StObject.set(x, "trackerUrls", value.asInstanceOf[js.Any])
     
     inline def setTrackerUrlsUndefined: Self = StObject.set(x, "trackerUrls", js.undefined)
     
-    inline def setTrackerUrlsVarargs(value: String*): Self = StObject.set(x, "trackerUrls", js.Array(value :_*))
+    inline def setTrackerUrlsVarargs(value: String*): Self = StObject.set(x, "trackerUrls", js.Array(value*))
     
     inline def setTranscodes(value: js.Array[Transcode]): Self = StObject.set(x, "transcodes", value.asInstanceOf[js.Any])
     
     inline def setTranscodesUndefined: Self = StObject.set(x, "transcodes", js.undefined)
     
-    inline def setTranscodesVarargs(value: Transcode*): Self = StObject.set(x, "transcodes", js.Array(value :_*))
+    inline def setTranscodesVarargs(value: Transcode*): Self = StObject.set(x, "transcodes", js.Array(value*))
     
     inline def setUniversalAdId(value: UniversalAdId): Self = StObject.set(x, "universalAdId", value.asInstanceOf[js.Any])
     

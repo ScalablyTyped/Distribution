@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BusProps extends StObject {
   
-  var children: js.UndefOr[js.Any] = js.undefined
+  var children: js.UndefOr[Any] = js.undefined
   
   var index: Double
   
@@ -21,7 +21,7 @@ object BusProps {
   
   extension [Self <: BusProps](x: Self) {
     
-    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

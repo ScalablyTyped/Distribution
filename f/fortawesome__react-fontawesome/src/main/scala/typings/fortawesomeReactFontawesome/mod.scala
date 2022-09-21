@@ -83,6 +83,7 @@ import typings.fortawesomeReactFontawesome.fortawesomeReactFontawesomeStrings.ye
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -95,6 +96,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
@@ -104,7 +106,7 @@ import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
-import typings.react.mod.RefObject
+import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -135,6 +137,7 @@ object mod {
   type BackwardCompatibleOmit[T, K /* <: /* keyof any */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
   /* Inlined parent @fortawesome/react-fontawesome.@fortawesome/react-fontawesome.BackwardCompatibleOmit<react.react.SVGAttributes<std.SVGSVGElement>, 'children' | 'mask' | 'transform'> */
+  /* Inlined parent react.react.RefAttributes<std.SVGSVGElement> */
   trait FontAwesomeIconProps extends StObject {
     
     var accentHeight: js.UndefOr[Double | String] = js.undefined
@@ -157,11 +160,11 @@ object mod {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -179,21 +182,21 @@ object mod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -207,11 +210,11 @@ object mod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -223,13 +226,13 @@ object mod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -239,7 +242,7 @@ object mod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -271,11 +274,17 @@ object mod {
     
     var bbox: js.UndefOr[Double | String] = js.undefined
     
+    var beat: js.UndefOr[Boolean] = js.undefined
+    
+    var beatFade: js.UndefOr[Boolean] = js.undefined
+    
     var begin: js.UndefOr[Double | String] = js.undefined
     
     var bias: js.UndefOr[Double | String] = js.undefined
     
     var border: js.UndefOr[Boolean] = js.undefined
+    
+    var bounce: js.UndefOr[Boolean] = js.undefined
     
     var by: js.UndefOr[Double | String] = js.undefined
     
@@ -351,6 +360,8 @@ object mod {
     
     var externalResourcesRequired: js.UndefOr[Booleanish] = js.undefined
     
+    var fade: js.UndefOr[Boolean] = js.undefined
+    
     var fill: js.UndefOr[String] = js.undefined
     
     var fillOpacity: js.UndefOr[Double | String] = js.undefined
@@ -389,7 +400,7 @@ object mod {
     
     var format: js.UndefOr[Double | String] = js.undefined
     
-    var forwardedRef: js.UndefOr[(js.Function1[/* e */ js.Any, Unit]) | RefObject[js.Any]] = js.undefined
+    var fr: js.UndefOr[Double | String] = js.undefined
     
     var from: js.UndefOr[Double | String] = js.undefined
     
@@ -455,6 +466,8 @@ object mod {
     
     var kerning: js.UndefOr[Double | String] = js.undefined
     
+    var key: js.UndefOr[Key | Null] = js.undefined
+    
     var keyPoints: js.UndefOr[Double | String] = js.undefined
     
     var keySplines: js.UndefOr[Double | String] = js.undefined
@@ -490,6 +503,8 @@ object mod {
     var mask: js.UndefOr[IconProp] = js.undefined
     
     var maskContentUnits: js.UndefOr[Double | String] = js.undefined
+    
+    var maskId: js.UndefOr[String] = js.undefined
     
     var maskUnits: js.UndefOr[Double | String] = js.undefined
     
@@ -725,6 +740,8 @@ object mod {
     
     var radius: js.UndefOr[Double | String] = js.undefined
     
+    var ref: js.UndefOr[Ref[SVGSVGElement]] = js.undefined
+    
     var refX: js.UndefOr[Double | String] = js.undefined
     
     var refY: js.UndefOr[Double | String] = js.undefined
@@ -743,7 +760,7 @@ object mod {
     
     var result: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var rotate: js.UndefOr[Double | String] = js.undefined
     
@@ -756,6 +773,8 @@ object mod {
     var scale: js.UndefOr[Double | String] = js.undefined
     
     var seed: js.UndefOr[Double | String] = js.undefined
+    
+    var shake: js.UndefOr[Boolean] = js.undefined
     
     var shapeRendering: js.UndefOr[Double | String] = js.undefined
     
@@ -772,6 +791,10 @@ object mod {
     var speed: js.UndefOr[Double | String] = js.undefined
     
     var spin: js.UndefOr[Boolean] = js.undefined
+    
+    var spinPulse: js.UndefOr[Boolean] = js.undefined
+    
+    var spinReverse: js.UndefOr[Boolean] = js.undefined
     
     var spreadMethod: js.UndefOr[String] = js.undefined
     
@@ -840,6 +863,8 @@ object mod {
     var textRendering: js.UndefOr[Double | String] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
+    
+    var titleId: js.UndefOr[String] = js.undefined
     
     var to: js.UndefOr[Double | String] = js.undefined
     
@@ -985,7 +1010,7 @@ object mod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -993,7 +1018,7 @@ object mod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -1029,7 +1054,7 @@ object mod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -1041,7 +1066,7 @@ object mod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -1049,7 +1074,7 @@ object mod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -1057,7 +1082,7 @@ object mod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -1085,15 +1110,15 @@ object mod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -1117,7 +1142,7 @@ object mod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -1127,7 +1152,7 @@ object mod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -1147,7 +1172,7 @@ object mod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -1211,6 +1236,14 @@ object mod {
       
       inline def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
       
+      inline def setBeat(value: Boolean): Self = StObject.set(x, "beat", value.asInstanceOf[js.Any])
+      
+      inline def setBeatFade(value: Boolean): Self = StObject.set(x, "beatFade", value.asInstanceOf[js.Any])
+      
+      inline def setBeatFadeUndefined: Self = StObject.set(x, "beatFade", js.undefined)
+      
+      inline def setBeatUndefined: Self = StObject.set(x, "beat", js.undefined)
+      
       inline def setBegin(value: Double | String): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
       
       inline def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
@@ -1222,6 +1255,10 @@ object mod {
       inline def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
       inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+      
+      inline def setBounce(value: Boolean): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
+      
+      inline def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
       
       inline def setBy(value: Double | String): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
       
@@ -1371,6 +1408,10 @@ object mod {
       
       inline def setExternalResourcesRequiredUndefined: Self = StObject.set(x, "externalResourcesRequired", js.undefined)
       
+      inline def setFade(value: Boolean): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
+      
+      inline def setFadeUndefined: Self = StObject.set(x, "fade", js.undefined)
+      
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
       inline def setFillOpacity(value: Double | String): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
@@ -1447,11 +1488,9 @@ object mod {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setForwardedRef(value: (js.Function1[/* e */ js.Any, Unit]) | RefObject[js.Any]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
+      inline def setFr(value: Double | String): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
       
-      inline def setForwardedRefFunction1(value: /* e */ js.Any => Unit): Self = StObject.set(x, "forwardedRef", js.Any.fromFunction1(value))
-      
-      inline def setForwardedRefUndefined: Self = StObject.set(x, "forwardedRef", js.undefined)
+      inline def setFrUndefined: Self = StObject.set(x, "fr", js.undefined)
       
       inline def setFrom(value: Double | String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -1579,6 +1618,10 @@ object mod {
       
       inline def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
       
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyNull: Self = StObject.set(x, "key", null)
+      
       inline def setKeyPoints(value: Double | String): Self = StObject.set(x, "keyPoints", value.asInstanceOf[js.Any])
       
       inline def setKeyPointsUndefined: Self = StObject.set(x, "keyPoints", js.undefined)
@@ -1590,6 +1633,8 @@ object mod {
       inline def setKeyTimes(value: Double | String): Self = StObject.set(x, "keyTimes", value.asInstanceOf[js.Any])
       
       inline def setKeyTimesUndefined: Self = StObject.set(x, "keyTimes", js.undefined)
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
@@ -1648,6 +1693,10 @@ object mod {
       inline def setMaskContentUnits(value: Double | String): Self = StObject.set(x, "maskContentUnits", value.asInstanceOf[js.Any])
       
       inline def setMaskContentUnitsUndefined: Self = StObject.set(x, "maskContentUnits", js.undefined)
+      
+      inline def setMaskId(value: String): Self = StObject.set(x, "maskId", value.asInstanceOf[js.Any])
+      
+      inline def setMaskIdUndefined: Self = StObject.set(x, "maskId", js.undefined)
       
       inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
@@ -1715,7 +1764,7 @@ object mod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[SVGSVGElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[SVGSVGElement, typings.std.Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1815,7 +1864,7 @@ object mod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[SVGSVGElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[SVGSVGElement, typings.std.Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -2119,6 +2168,14 @@ object mod {
       
       inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
+      inline def setRef(value: Ref[SVGSVGElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ SVGSVGElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      
       inline def setRefX(value: Double | String): Self = StObject.set(x, "refX", value.asInstanceOf[js.Any])
       
       inline def setRefXUndefined: Self = StObject.set(x, "refX", js.undefined)
@@ -2155,7 +2212,7 @@ object mod {
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -2182,6 +2239,10 @@ object mod {
       inline def setSeed(value: Double | String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
       
       inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+      
+      inline def setShake(value: Boolean): Self = StObject.set(x, "shake", value.asInstanceOf[js.Any])
+      
+      inline def setShakeUndefined: Self = StObject.set(x, "shake", js.undefined)
       
       inline def setShapeRendering(value: Double | String): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
       
@@ -2212,6 +2273,14 @@ object mod {
       inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
       inline def setSpin(value: Boolean): Self = StObject.set(x, "spin", value.asInstanceOf[js.Any])
+      
+      inline def setSpinPulse(value: Boolean): Self = StObject.set(x, "spinPulse", value.asInstanceOf[js.Any])
+      
+      inline def setSpinPulseUndefined: Self = StObject.set(x, "spinPulse", js.undefined)
+      
+      inline def setSpinReverse(value: Boolean): Self = StObject.set(x, "spinReverse", value.asInstanceOf[js.Any])
+      
+      inline def setSpinReverseUndefined: Self = StObject.set(x, "spinReverse", js.undefined)
       
       inline def setSpinUndefined: Self = StObject.set(x, "spin", js.undefined)
       
@@ -2348,6 +2417,10 @@ object mod {
       inline def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleId(value: String): Self = StObject.set(x, "titleId", value.asInstanceOf[js.Any])
+      
+      inline def setTitleIdUndefined: Self = StObject.set(x, "titleId", js.undefined)
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       

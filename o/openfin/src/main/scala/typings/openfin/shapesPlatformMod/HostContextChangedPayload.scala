@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HostContextChangedPayload extends StObject {
   
-  var context: js.Any
+  var context: Any
   
   var reason: HostContextChangedReasons
 }
 object HostContextChangedPayload {
   
-  inline def apply(context: js.Any, reason: HostContextChangedReasons): HostContextChangedPayload = {
+  inline def apply(context: Any, reason: HostContextChangedReasons): HostContextChangedPayload = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostContextChangedPayload]
   }
   
   extension [Self <: HostContextChangedPayload](x: Self) {
     
-    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setReason(value: HostContextChangedReasons): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }

@@ -9,141 +9,141 @@ object lambdaModelMod {
   
   @JSImport("lambda-phi/lib/lambda-model", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with LambdaModel {
     
     /* private */ /* CompleteClass */
-    var _anyMethod: js.Any = js.native
+    var _anyMethod: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _basePath: js.Any = js.native
+    var _basePath: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _bodyProperty: js.Any = js.native
+    var _bodyProperty: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _callbackProperty: js.Any = js.native
+    var _callbackProperty: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _config: js.Any = js.native
+    var _config: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _contextProperty: js.Any = js.native
+    var _contextProperty: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _eventContextProperty: js.Any = js.native
+    var _eventContextProperty: Any = js.native
     
     /**
       * Lambda Properties
       */
     /* private */ /* CompleteClass */
-    var _eventProperty: js.Any = js.native
+    var _eventProperty: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _handlerMethod: js.Any = js.native
+    var _handlerMethod: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _headersProperty: js.Any = js.native
+    var _headersProperty: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _httpVerbs: js.Any = js.native
+    var _httpVerbs: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _instance: js.Any = js.native
+    var _instance: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _methodProperty: js.Any = js.native
+    var _methodProperty: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _name: js.Any = js.native
+    var _name: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _pathParams: js.Any = js.native
+    var _pathParams: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _pathParamsProperty: js.Any = js.native
+    var _pathParamsProperty: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _paths: js.Any = js.native
+    var _paths: Any = js.native
     
     /**
       * API Properties
       */
     /* private */ /* CompleteClass */
-    var _postConstructorMethod: js.Any = js.native
+    var _postConstructorMethod: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _preLambdaCallbackMethod: js.Any = js.native
+    var _preLambdaCallbackMethod: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _preLambdaTimeoutMethod: js.Any = js.native
+    var _preLambdaTimeoutMethod: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _preLambdaTimeoutTime: js.Any = js.native
+    var _preLambdaTimeoutTime: Any = js.native
     
     /**
       * Api Gateway Properties
       */
     /* private */ /* CompleteClass */
-    var _queryParamsProperty: js.Any = js.native
+    var _queryParamsProperty: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _stageVariablesProperty: js.Any = js.native
+    var _stageVariablesProperty: Any = js.native
     
     /* CompleteClass */
-    var anyMethod: js.Any = js.native
+    var anyMethod: Any = js.native
     
     /* CompleteClass */
     var basePath: String = js.native
     
     /* CompleteClass */
-    var bodyProperty: js.Any = js.native
+    var bodyProperty: Any = js.native
     
     /* CompleteClass */
-    var callbackProperty: js.Any = js.native
+    var callbackProperty: Any = js.native
     
     /* CompleteClass */
     var config: LambdaConfig = js.native
     
     /* CompleteClass */
-    var contextProperty: js.Any = js.native
+    var contextProperty: Any = js.native
     
     /* CompleteClass */
-    var eventContextProperty: js.Any = js.native
+    var eventContextProperty: Any = js.native
     
     /* CompleteClass */
-    var eventProperty: js.Any = js.native
+    var eventProperty: Any = js.native
     
     /* CompleteClass */
-    var handlerMethod: js.Any = js.native
+    var handlerMethod: Any = js.native
     
     /* CompleteClass */
-    var headersProperty: js.Any = js.native
+    var headersProperty: Any = js.native
     
     /* CompleteClass */
     var httpVerbs: js.Array[typings.lambdaPhi.httpVerbModelMod.default] = js.native
     
     /* CompleteClass */
-    var instance: js.Any = js.native
+    var instance: Any = js.native
     
     /* CompleteClass */
-    var methodProperty: js.Any = js.native
+    var methodProperty: Any = js.native
     
     /* CompleteClass */
-    var name: js.Any = js.native
+    var name: Any = js.native
     
     /* CompleteClass */
     var pathParams: js.Array[typings.lambdaPhi.pathParamModelMod.default] = js.native
     
     /* CompleteClass */
-    var pathParamsProperty: js.Any = js.native
+    var pathParamsProperty: Any = js.native
     
     /* CompleteClass */
     var paths: js.Array[typings.lambdaPhi.pathModelMod.default] = js.native
     
     /* CompleteClass */
-    var postConstructorMethod: js.Any = js.native
+    var postConstructorMethod: Any = js.native
     
     /* CompleteClass */
     var preLambdaCallbackMethod: String = js.native
@@ -155,104 +155,104 @@ object lambdaModelMod {
     var preLambdaTimeoutTime: Double = js.native
     
     /* CompleteClass */
-    var queryParamsProperty: js.Any = js.native
+    var queryParamsProperty: Any = js.native
     
     /* CompleteClass */
-    var stageVariablesProperty: js.Any = js.native
+    var stageVariablesProperty: Any = js.native
   }
   
   trait LambdaModel extends StObject {
     
-    /* private */ var _anyMethod: js.Any
+    /* private */ var _anyMethod: Any
     
-    /* private */ var _basePath: js.Any
+    /* private */ var _basePath: Any
     
-    /* private */ var _bodyProperty: js.Any
+    /* private */ var _bodyProperty: Any
     
-    /* private */ var _callbackProperty: js.Any
+    /* private */ var _callbackProperty: Any
     
-    /* private */ var _config: js.Any
+    /* private */ var _config: Any
     
-    /* private */ var _contextProperty: js.Any
+    /* private */ var _contextProperty: Any
     
-    /* private */ var _eventContextProperty: js.Any
+    /* private */ var _eventContextProperty: Any
     
     /**
       * Lambda Properties
       */
-    /* private */ var _eventProperty: js.Any
+    /* private */ var _eventProperty: Any
     
-    /* private */ var _handlerMethod: js.Any
+    /* private */ var _handlerMethod: Any
     
-    /* private */ var _headersProperty: js.Any
+    /* private */ var _headersProperty: Any
     
-    /* private */ var _httpVerbs: js.Any
+    /* private */ var _httpVerbs: Any
     
-    /* private */ var _instance: js.Any
+    /* private */ var _instance: Any
     
-    /* private */ var _methodProperty: js.Any
+    /* private */ var _methodProperty: Any
     
-    /* private */ var _name: js.Any
+    /* private */ var _name: Any
     
-    /* private */ var _pathParams: js.Any
+    /* private */ var _pathParams: Any
     
-    /* private */ var _pathParamsProperty: js.Any
+    /* private */ var _pathParamsProperty: Any
     
-    /* private */ var _paths: js.Any
+    /* private */ var _paths: Any
     
     /**
       * API Properties
       */
-    /* private */ var _postConstructorMethod: js.Any
+    /* private */ var _postConstructorMethod: Any
     
-    /* private */ var _preLambdaCallbackMethod: js.Any
+    /* private */ var _preLambdaCallbackMethod: Any
     
-    /* private */ var _preLambdaTimeoutMethod: js.Any
+    /* private */ var _preLambdaTimeoutMethod: Any
     
-    /* private */ var _preLambdaTimeoutTime: js.Any
+    /* private */ var _preLambdaTimeoutTime: Any
     
     /**
       * Api Gateway Properties
       */
-    /* private */ var _queryParamsProperty: js.Any
+    /* private */ var _queryParamsProperty: Any
     
-    /* private */ var _stageVariablesProperty: js.Any
+    /* private */ var _stageVariablesProperty: Any
     
-    var anyMethod: js.Any
+    var anyMethod: Any
     
     var basePath: String
     
-    var bodyProperty: js.Any
+    var bodyProperty: Any
     
-    var callbackProperty: js.Any
+    var callbackProperty: Any
     
     var config: LambdaConfig
     
-    var contextProperty: js.Any
+    var contextProperty: Any
     
-    var eventContextProperty: js.Any
+    var eventContextProperty: Any
     
-    var eventProperty: js.Any
+    var eventProperty: Any
     
-    var handlerMethod: js.Any
+    var handlerMethod: Any
     
-    var headersProperty: js.Any
+    var headersProperty: Any
     
     var httpVerbs: js.Array[typings.lambdaPhi.httpVerbModelMod.default]
     
-    var instance: js.Any
+    var instance: Any
     
-    var methodProperty: js.Any
+    var methodProperty: Any
     
-    var name: js.Any
+    var name: Any
     
     var pathParams: js.Array[typings.lambdaPhi.pathParamModelMod.default]
     
-    var pathParamsProperty: js.Any
+    var pathParamsProperty: Any
     
     var paths: js.Array[typings.lambdaPhi.pathModelMod.default]
     
-    var postConstructorMethod: js.Any
+    var postConstructorMethod: Any
     
     var preLambdaCallbackMethod: String
     
@@ -260,59 +260,59 @@ object lambdaModelMod {
     
     var preLambdaTimeoutTime: Double
     
-    var queryParamsProperty: js.Any
+    var queryParamsProperty: Any
     
-    var stageVariablesProperty: js.Any
+    var stageVariablesProperty: Any
   }
   object LambdaModel {
     
     inline def apply(
-      _anyMethod: js.Any,
-      _basePath: js.Any,
-      _bodyProperty: js.Any,
-      _callbackProperty: js.Any,
-      _config: js.Any,
-      _contextProperty: js.Any,
-      _eventContextProperty: js.Any,
-      _eventProperty: js.Any,
-      _handlerMethod: js.Any,
-      _headersProperty: js.Any,
-      _httpVerbs: js.Any,
-      _instance: js.Any,
-      _methodProperty: js.Any,
-      _name: js.Any,
-      _pathParams: js.Any,
-      _pathParamsProperty: js.Any,
-      _paths: js.Any,
-      _postConstructorMethod: js.Any,
-      _preLambdaCallbackMethod: js.Any,
-      _preLambdaTimeoutMethod: js.Any,
-      _preLambdaTimeoutTime: js.Any,
-      _queryParamsProperty: js.Any,
-      _stageVariablesProperty: js.Any,
-      anyMethod: js.Any,
+      _anyMethod: Any,
+      _basePath: Any,
+      _bodyProperty: Any,
+      _callbackProperty: Any,
+      _config: Any,
+      _contextProperty: Any,
+      _eventContextProperty: Any,
+      _eventProperty: Any,
+      _handlerMethod: Any,
+      _headersProperty: Any,
+      _httpVerbs: Any,
+      _instance: Any,
+      _methodProperty: Any,
+      _name: Any,
+      _pathParams: Any,
+      _pathParamsProperty: Any,
+      _paths: Any,
+      _postConstructorMethod: Any,
+      _preLambdaCallbackMethod: Any,
+      _preLambdaTimeoutMethod: Any,
+      _preLambdaTimeoutTime: Any,
+      _queryParamsProperty: Any,
+      _stageVariablesProperty: Any,
+      anyMethod: Any,
       basePath: String,
-      bodyProperty: js.Any,
-      callbackProperty: js.Any,
+      bodyProperty: Any,
+      callbackProperty: Any,
       config: LambdaConfig,
-      contextProperty: js.Any,
-      eventContextProperty: js.Any,
-      eventProperty: js.Any,
-      handlerMethod: js.Any,
-      headersProperty: js.Any,
+      contextProperty: Any,
+      eventContextProperty: Any,
+      eventProperty: Any,
+      handlerMethod: Any,
+      headersProperty: Any,
       httpVerbs: js.Array[typings.lambdaPhi.httpVerbModelMod.default],
-      instance: js.Any,
-      methodProperty: js.Any,
-      name: js.Any,
+      instance: Any,
+      methodProperty: Any,
+      name: Any,
       pathParams: js.Array[typings.lambdaPhi.pathParamModelMod.default],
-      pathParamsProperty: js.Any,
+      pathParamsProperty: Any,
       paths: js.Array[typings.lambdaPhi.pathModelMod.default],
-      postConstructorMethod: js.Any,
+      postConstructorMethod: Any,
       preLambdaCallbackMethod: String,
       preLambdaTimeoutMethod: String,
       preLambdaTimeoutTime: Double,
-      queryParamsProperty: js.Any,
-      stageVariablesProperty: js.Any
+      queryParamsProperty: Any,
+      stageVariablesProperty: Any
     ): LambdaModel = {
       val __obj = js.Dynamic.literal(_anyMethod = _anyMethod.asInstanceOf[js.Any], _basePath = _basePath.asInstanceOf[js.Any], _bodyProperty = _bodyProperty.asInstanceOf[js.Any], _callbackProperty = _callbackProperty.asInstanceOf[js.Any], _config = _config.asInstanceOf[js.Any], _contextProperty = _contextProperty.asInstanceOf[js.Any], _eventContextProperty = _eventContextProperty.asInstanceOf[js.Any], _eventProperty = _eventProperty.asInstanceOf[js.Any], _handlerMethod = _handlerMethod.asInstanceOf[js.Any], _headersProperty = _headersProperty.asInstanceOf[js.Any], _httpVerbs = _httpVerbs.asInstanceOf[js.Any], _instance = _instance.asInstanceOf[js.Any], _methodProperty = _methodProperty.asInstanceOf[js.Any], _name = _name.asInstanceOf[js.Any], _pathParams = _pathParams.asInstanceOf[js.Any], _pathParamsProperty = _pathParamsProperty.asInstanceOf[js.Any], _paths = _paths.asInstanceOf[js.Any], _postConstructorMethod = _postConstructorMethod.asInstanceOf[js.Any], _preLambdaCallbackMethod = _preLambdaCallbackMethod.asInstanceOf[js.Any], _preLambdaTimeoutMethod = _preLambdaTimeoutMethod.asInstanceOf[js.Any], _preLambdaTimeoutTime = _preLambdaTimeoutTime.asInstanceOf[js.Any], _queryParamsProperty = _queryParamsProperty.asInstanceOf[js.Any], _stageVariablesProperty = _stageVariablesProperty.asInstanceOf[js.Any], anyMethod = anyMethod.asInstanceOf[js.Any], basePath = basePath.asInstanceOf[js.Any], bodyProperty = bodyProperty.asInstanceOf[js.Any], callbackProperty = callbackProperty.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], contextProperty = contextProperty.asInstanceOf[js.Any], eventContextProperty = eventContextProperty.asInstanceOf[js.Any], eventProperty = eventProperty.asInstanceOf[js.Any], handlerMethod = handlerMethod.asInstanceOf[js.Any], headersProperty = headersProperty.asInstanceOf[js.Any], httpVerbs = httpVerbs.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], methodProperty = methodProperty.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pathParams = pathParams.asInstanceOf[js.Any], pathParamsProperty = pathParamsProperty.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], postConstructorMethod = postConstructorMethod.asInstanceOf[js.Any], preLambdaCallbackMethod = preLambdaCallbackMethod.asInstanceOf[js.Any], preLambdaTimeoutMethod = preLambdaTimeoutMethod.asInstanceOf[js.Any], preLambdaTimeoutTime = preLambdaTimeoutTime.asInstanceOf[js.Any], queryParamsProperty = queryParamsProperty.asInstanceOf[js.Any], stageVariablesProperty = stageVariablesProperty.asInstanceOf[js.Any])
       __obj.asInstanceOf[LambdaModel]
@@ -320,47 +320,47 @@ object lambdaModelMod {
     
     extension [Self <: LambdaModel](x: Self) {
       
-      inline def setAnyMethod(value: js.Any): Self = StObject.set(x, "anyMethod", value.asInstanceOf[js.Any])
+      inline def setAnyMethod(value: Any): Self = StObject.set(x, "anyMethod", value.asInstanceOf[js.Any])
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      inline def setBodyProperty(value: js.Any): Self = StObject.set(x, "bodyProperty", value.asInstanceOf[js.Any])
+      inline def setBodyProperty(value: Any): Self = StObject.set(x, "bodyProperty", value.asInstanceOf[js.Any])
       
-      inline def setCallbackProperty(value: js.Any): Self = StObject.set(x, "callbackProperty", value.asInstanceOf[js.Any])
+      inline def setCallbackProperty(value: Any): Self = StObject.set(x, "callbackProperty", value.asInstanceOf[js.Any])
       
       inline def setConfig(value: LambdaConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      inline def setContextProperty(value: js.Any): Self = StObject.set(x, "contextProperty", value.asInstanceOf[js.Any])
+      inline def setContextProperty(value: Any): Self = StObject.set(x, "contextProperty", value.asInstanceOf[js.Any])
       
-      inline def setEventContextProperty(value: js.Any): Self = StObject.set(x, "eventContextProperty", value.asInstanceOf[js.Any])
+      inline def setEventContextProperty(value: Any): Self = StObject.set(x, "eventContextProperty", value.asInstanceOf[js.Any])
       
-      inline def setEventProperty(value: js.Any): Self = StObject.set(x, "eventProperty", value.asInstanceOf[js.Any])
+      inline def setEventProperty(value: Any): Self = StObject.set(x, "eventProperty", value.asInstanceOf[js.Any])
       
-      inline def setHandlerMethod(value: js.Any): Self = StObject.set(x, "handlerMethod", value.asInstanceOf[js.Any])
+      inline def setHandlerMethod(value: Any): Self = StObject.set(x, "handlerMethod", value.asInstanceOf[js.Any])
       
-      inline def setHeadersProperty(value: js.Any): Self = StObject.set(x, "headersProperty", value.asInstanceOf[js.Any])
+      inline def setHeadersProperty(value: Any): Self = StObject.set(x, "headersProperty", value.asInstanceOf[js.Any])
       
       inline def setHttpVerbs(value: js.Array[typings.lambdaPhi.httpVerbModelMod.default]): Self = StObject.set(x, "httpVerbs", value.asInstanceOf[js.Any])
       
-      inline def setHttpVerbsVarargs(value: typings.lambdaPhi.httpVerbModelMod.default*): Self = StObject.set(x, "httpVerbs", js.Array(value :_*))
+      inline def setHttpVerbsVarargs(value: typings.lambdaPhi.httpVerbModelMod.default*): Self = StObject.set(x, "httpVerbs", js.Array(value*))
       
-      inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      inline def setMethodProperty(value: js.Any): Self = StObject.set(x, "methodProperty", value.asInstanceOf[js.Any])
+      inline def setMethodProperty(value: Any): Self = StObject.set(x, "methodProperty", value.asInstanceOf[js.Any])
       
-      inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setPathParams(value: js.Array[typings.lambdaPhi.pathParamModelMod.default]): Self = StObject.set(x, "pathParams", value.asInstanceOf[js.Any])
       
-      inline def setPathParamsProperty(value: js.Any): Self = StObject.set(x, "pathParamsProperty", value.asInstanceOf[js.Any])
+      inline def setPathParamsProperty(value: Any): Self = StObject.set(x, "pathParamsProperty", value.asInstanceOf[js.Any])
       
-      inline def setPathParamsVarargs(value: typings.lambdaPhi.pathParamModelMod.default*): Self = StObject.set(x, "pathParams", js.Array(value :_*))
+      inline def setPathParamsVarargs(value: typings.lambdaPhi.pathParamModelMod.default*): Self = StObject.set(x, "pathParams", js.Array(value*))
       
       inline def setPaths(value: js.Array[typings.lambdaPhi.pathModelMod.default]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      inline def setPathsVarargs(value: typings.lambdaPhi.pathModelMod.default*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: typings.lambdaPhi.pathModelMod.default*): Self = StObject.set(x, "paths", js.Array(value*))
       
-      inline def setPostConstructorMethod(value: js.Any): Self = StObject.set(x, "postConstructorMethod", value.asInstanceOf[js.Any])
+      inline def setPostConstructorMethod(value: Any): Self = StObject.set(x, "postConstructorMethod", value.asInstanceOf[js.Any])
       
       inline def setPreLambdaCallbackMethod(value: String): Self = StObject.set(x, "preLambdaCallbackMethod", value.asInstanceOf[js.Any])
       
@@ -368,55 +368,55 @@ object lambdaModelMod {
       
       inline def setPreLambdaTimeoutTime(value: Double): Self = StObject.set(x, "preLambdaTimeoutTime", value.asInstanceOf[js.Any])
       
-      inline def setQueryParamsProperty(value: js.Any): Self = StObject.set(x, "queryParamsProperty", value.asInstanceOf[js.Any])
+      inline def setQueryParamsProperty(value: Any): Self = StObject.set(x, "queryParamsProperty", value.asInstanceOf[js.Any])
       
-      inline def setStageVariablesProperty(value: js.Any): Self = StObject.set(x, "stageVariablesProperty", value.asInstanceOf[js.Any])
+      inline def setStageVariablesProperty(value: Any): Self = StObject.set(x, "stageVariablesProperty", value.asInstanceOf[js.Any])
       
-      inline def set_anyMethod(value: js.Any): Self = StObject.set(x, "_anyMethod", value.asInstanceOf[js.Any])
+      inline def set_anyMethod(value: Any): Self = StObject.set(x, "_anyMethod", value.asInstanceOf[js.Any])
       
-      inline def set_basePath(value: js.Any): Self = StObject.set(x, "_basePath", value.asInstanceOf[js.Any])
+      inline def set_basePath(value: Any): Self = StObject.set(x, "_basePath", value.asInstanceOf[js.Any])
       
-      inline def set_bodyProperty(value: js.Any): Self = StObject.set(x, "_bodyProperty", value.asInstanceOf[js.Any])
+      inline def set_bodyProperty(value: Any): Self = StObject.set(x, "_bodyProperty", value.asInstanceOf[js.Any])
       
-      inline def set_callbackProperty(value: js.Any): Self = StObject.set(x, "_callbackProperty", value.asInstanceOf[js.Any])
+      inline def set_callbackProperty(value: Any): Self = StObject.set(x, "_callbackProperty", value.asInstanceOf[js.Any])
       
-      inline def set_config(value: js.Any): Self = StObject.set(x, "_config", value.asInstanceOf[js.Any])
+      inline def set_config(value: Any): Self = StObject.set(x, "_config", value.asInstanceOf[js.Any])
       
-      inline def set_contextProperty(value: js.Any): Self = StObject.set(x, "_contextProperty", value.asInstanceOf[js.Any])
+      inline def set_contextProperty(value: Any): Self = StObject.set(x, "_contextProperty", value.asInstanceOf[js.Any])
       
-      inline def set_eventContextProperty(value: js.Any): Self = StObject.set(x, "_eventContextProperty", value.asInstanceOf[js.Any])
+      inline def set_eventContextProperty(value: Any): Self = StObject.set(x, "_eventContextProperty", value.asInstanceOf[js.Any])
       
-      inline def set_eventProperty(value: js.Any): Self = StObject.set(x, "_eventProperty", value.asInstanceOf[js.Any])
+      inline def set_eventProperty(value: Any): Self = StObject.set(x, "_eventProperty", value.asInstanceOf[js.Any])
       
-      inline def set_handlerMethod(value: js.Any): Self = StObject.set(x, "_handlerMethod", value.asInstanceOf[js.Any])
+      inline def set_handlerMethod(value: Any): Self = StObject.set(x, "_handlerMethod", value.asInstanceOf[js.Any])
       
-      inline def set_headersProperty(value: js.Any): Self = StObject.set(x, "_headersProperty", value.asInstanceOf[js.Any])
+      inline def set_headersProperty(value: Any): Self = StObject.set(x, "_headersProperty", value.asInstanceOf[js.Any])
       
-      inline def set_httpVerbs(value: js.Any): Self = StObject.set(x, "_httpVerbs", value.asInstanceOf[js.Any])
+      inline def set_httpVerbs(value: Any): Self = StObject.set(x, "_httpVerbs", value.asInstanceOf[js.Any])
       
-      inline def set_instance(value: js.Any): Self = StObject.set(x, "_instance", value.asInstanceOf[js.Any])
+      inline def set_instance(value: Any): Self = StObject.set(x, "_instance", value.asInstanceOf[js.Any])
       
-      inline def set_methodProperty(value: js.Any): Self = StObject.set(x, "_methodProperty", value.asInstanceOf[js.Any])
+      inline def set_methodProperty(value: Any): Self = StObject.set(x, "_methodProperty", value.asInstanceOf[js.Any])
       
-      inline def set_name(value: js.Any): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+      inline def set_name(value: Any): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
       
-      inline def set_pathParams(value: js.Any): Self = StObject.set(x, "_pathParams", value.asInstanceOf[js.Any])
+      inline def set_pathParams(value: Any): Self = StObject.set(x, "_pathParams", value.asInstanceOf[js.Any])
       
-      inline def set_pathParamsProperty(value: js.Any): Self = StObject.set(x, "_pathParamsProperty", value.asInstanceOf[js.Any])
+      inline def set_pathParamsProperty(value: Any): Self = StObject.set(x, "_pathParamsProperty", value.asInstanceOf[js.Any])
       
-      inline def set_paths(value: js.Any): Self = StObject.set(x, "_paths", value.asInstanceOf[js.Any])
+      inline def set_paths(value: Any): Self = StObject.set(x, "_paths", value.asInstanceOf[js.Any])
       
-      inline def set_postConstructorMethod(value: js.Any): Self = StObject.set(x, "_postConstructorMethod", value.asInstanceOf[js.Any])
+      inline def set_postConstructorMethod(value: Any): Self = StObject.set(x, "_postConstructorMethod", value.asInstanceOf[js.Any])
       
-      inline def set_preLambdaCallbackMethod(value: js.Any): Self = StObject.set(x, "_preLambdaCallbackMethod", value.asInstanceOf[js.Any])
+      inline def set_preLambdaCallbackMethod(value: Any): Self = StObject.set(x, "_preLambdaCallbackMethod", value.asInstanceOf[js.Any])
       
-      inline def set_preLambdaTimeoutMethod(value: js.Any): Self = StObject.set(x, "_preLambdaTimeoutMethod", value.asInstanceOf[js.Any])
+      inline def set_preLambdaTimeoutMethod(value: Any): Self = StObject.set(x, "_preLambdaTimeoutMethod", value.asInstanceOf[js.Any])
       
-      inline def set_preLambdaTimeoutTime(value: js.Any): Self = StObject.set(x, "_preLambdaTimeoutTime", value.asInstanceOf[js.Any])
+      inline def set_preLambdaTimeoutTime(value: Any): Self = StObject.set(x, "_preLambdaTimeoutTime", value.asInstanceOf[js.Any])
       
-      inline def set_queryParamsProperty(value: js.Any): Self = StObject.set(x, "_queryParamsProperty", value.asInstanceOf[js.Any])
+      inline def set_queryParamsProperty(value: Any): Self = StObject.set(x, "_queryParamsProperty", value.asInstanceOf[js.Any])
       
-      inline def set_stageVariablesProperty(value: js.Any): Self = StObject.set(x, "_stageVariablesProperty", value.asInstanceOf[js.Any])
+      inline def set_stageVariablesProperty(value: Any): Self = StObject.set(x, "_stageVariablesProperty", value.asInstanceOf[js.Any])
     }
   }
 }

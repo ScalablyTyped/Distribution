@@ -42,7 +42,7 @@ object ManagedAppPolicyDeploymentSummary {
     
     inline def setConfigurationDeploymentSummaryPerAppUndefined: Self = StObject.set(x, "configurationDeploymentSummaryPerApp", js.undefined)
     
-    inline def setConfigurationDeploymentSummaryPerAppVarargs(value: ManagedAppPolicyDeploymentSummaryPerApp*): Self = StObject.set(x, "configurationDeploymentSummaryPerApp", js.Array(value :_*))
+    inline def setConfigurationDeploymentSummaryPerAppVarargs(value: ManagedAppPolicyDeploymentSummaryPerApp*): Self = StObject.set(x, "configurationDeploymentSummaryPerApp", js.Array(value*))
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

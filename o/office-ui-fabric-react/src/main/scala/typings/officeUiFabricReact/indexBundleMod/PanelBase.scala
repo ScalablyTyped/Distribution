@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "PanelBase")
 @js.native
-class PanelBase protected ()
+open class PanelBase protected ()
   extends typings.officeUiFabricReact.mod.PanelBase {
   def this(props: IPanelProps) = this()
 }

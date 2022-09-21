@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.User")
 @js.native
-class User () extends StObject {
+open class User () extends StObject {
   def this(args: typings.evernote.anon.AccountLimits) = this()
   
   var accountLimits: js.UndefOr[AccountLimits] = js.native

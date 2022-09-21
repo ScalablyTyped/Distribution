@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Bing extends StObject {
   
+  /**
+    * A key used to authenticate the component within Bing Maps.
+    */
   var bing: js.UndefOr[String] = js.undefined
   
+  /**
+    * A key used to authenticate the component within Google Maps.
+    */
   var google: js.UndefOr[String] = js.undefined
   
+  /**
+    * A key used to authenticate the component within Google Maps Static.
+    */
   var googleStatic: js.UndefOr[String] = js.undefined
 }
 object Bing {

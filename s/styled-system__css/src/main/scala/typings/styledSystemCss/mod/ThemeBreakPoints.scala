@@ -21,6 +21,6 @@ object ThemeBreakPoints {
     
     inline def setBreakpoints(value: js.Array[Double | String]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
-    inline def setBreakpointsVarargs(value: (Double | String)*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
+    inline def setBreakpointsVarargs(value: (Double | String)*): Self = StObject.set(x, "breakpoints", js.Array(value*))
   }
 }

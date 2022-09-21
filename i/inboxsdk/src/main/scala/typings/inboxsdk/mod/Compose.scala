@@ -164,7 +164,7 @@ object Compose {
     
     def addButton(buttonDescriptor: ComposeButtonDescriptor): Unit = js.native
     
-    def addComposeNotice(composeNoticeDescriptor: ComposeNoticeDescriptor): Unit = js.native
+    def addComposeNotice(composeNoticeDescriptor: ComposeNoticeDescriptor): SimpleElementView = js.native
     
     def addStatusBar(statusBarDescriptor: StatusBarDescriptor): StatusBarView = js.native
     
@@ -227,26 +227,18 @@ object Compose {
     
     def isReply(): Boolean = js.native
     
-    @JSName("on")
-    def on_bccContactAdded(name: bccContactAdded, cb: js.Function1[/* event */ typings.inboxsdk.anon.Contact, Unit]): Unit = js.native
-    @JSName("on")
-    def on_bccContactRemoved(name: bccContactRemoved, cb: js.Function1[/* event */ typings.inboxsdk.anon.Contact, Unit]): Unit = js.native
-    @JSName("on")
-    def on_bodyChanged(name: bodyChanged, cb: js.Function0[Unit]): Unit = js.native
-    @JSName("on")
-    def on_ccContactAdded(name: ccContactAdded, cb: js.Function1[/* event */ typings.inboxsdk.anon.Contact, Unit]): Unit = js.native
-    @JSName("on")
-    def on_ccContactRemoved(name: ccContactRemoved, cb: js.Function1[/* event */ typings.inboxsdk.anon.Contact, Unit]): Unit = js.native
+    def on(
+      name: discard | sendCanceled | sending | bodyChanged | minimized | restored,
+      cb: js.Function0[Unit]
+    ): Unit = js.native
+    def on(
+      name: fromContactChanged | toContactAdded | toContactRemoved | ccContactAdded | ccContactRemoved | bccContactAdded | bccContactRemoved,
+      cb: js.Function1[/* event */ typings.inboxsdk.anon.Contact, Unit]
+    ): Unit = js.native
     @JSName("on")
     def on_destroy(name: destroy, cb: js.Function1[/* event */ ClosedByInboxSDK, Unit]): Unit = js.native
     @JSName("on")
-    def on_discard(name: discard, cb: js.Function0[Unit]): Unit = js.native
-    @JSName("on")
-    def on_fromContactChanged(name: fromContactChanged, cb: js.Function1[/* event */ typings.inboxsdk.anon.Contact, Unit]): Unit = js.native
-    @JSName("on")
     def on_fullscreenChanged(name: fullscreenChanged, cb: js.Function1[/* event */ Fullscreen, Unit]): Unit = js.native
-    @JSName("on")
-    def on_minimized(name: minimized, cb: js.Function0[Unit]): Unit = js.native
     @JSName("on")
     def on_presending(name: presending, cb: js.Function1[/* event */ Cancel, Unit]): Unit = js.native
     @JSName("on")
@@ -254,17 +246,7 @@ object Compose {
     @JSName("on")
     def on_responseTypeChanged(name: responseTypeChanged, cb: js.Function1[/* event */ IsForward, Unit]): Unit = js.native
     @JSName("on")
-    def on_restored(name: restored, cb: js.Function0[Unit]): Unit = js.native
-    @JSName("on")
-    def on_sendCanceled(name: sendCanceled, cb: js.Function0[Unit]): Unit = js.native
-    @JSName("on")
-    def on_sending(name: sending, cb: js.Function0[Unit]): Unit = js.native
-    @JSName("on")
     def on_sent(name: sent, cb: js.Function1[/* event */ GetMessageID, Unit]): Unit = js.native
-    @JSName("on")
-    def on_toContactAdded(name: toContactAdded, cb: js.Function1[/* event */ typings.inboxsdk.anon.Contact, Unit]): Unit = js.native
-    @JSName("on")
-    def on_toContactRemoved(name: toContactRemoved, cb: js.Function1[/* event */ typings.inboxsdk.anon.Contact, Unit]): Unit = js.native
     
     def popOut(): js.Promise[ComposeView] = js.native
     

@@ -53,7 +53,7 @@ object EntityRecognizerInputDataConfig {
     
     inline def setAugmentedManifestsUndefined: Self = StObject.set(x, "AugmentedManifests", js.undefined)
     
-    inline def setAugmentedManifestsVarargs(value: AugmentedManifestsListItem*): Self = StObject.set(x, "AugmentedManifests", js.Array(value :_*))
+    inline def setAugmentedManifestsVarargs(value: AugmentedManifestsListItem*): Self = StObject.set(x, "AugmentedManifests", js.Array(value*))
     
     inline def setDataFormat(value: EntityRecognizerDataFormat): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
     
@@ -69,6 +69,6 @@ object EntityRecognizerInputDataConfig {
     
     inline def setEntityTypes(value: EntityTypesList): Self = StObject.set(x, "EntityTypes", value.asInstanceOf[js.Any])
     
-    inline def setEntityTypesVarargs(value: EntityTypesListItem*): Self = StObject.set(x, "EntityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: EntityTypesListItem*): Self = StObject.set(x, "EntityTypes", js.Array(value*))
   }
 }

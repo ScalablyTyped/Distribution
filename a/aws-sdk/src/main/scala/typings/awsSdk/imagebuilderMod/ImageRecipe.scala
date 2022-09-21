@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageRecipe extends StObject {
   
   /**
+    * Before you create a new AMI, Image Builder launches temporary Amazon EC2 instances to build and test your image configuration. Instance configuration adds a layer of control over those instances. You can define settings and add scripts to run when an instance is launched from your AMI.
+    */
+  var additionalInstanceConfiguration: js.UndefOr[AdditionalInstanceConfiguration] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the image recipe.
     */
   var arn: js.UndefOr[ImageBuilderArn] = js.undefined
@@ -42,7 +47,7 @@ trait ImageRecipe extends StObject {
   var owner: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The parent image of the image recipe.
+    * The base image of the image recipe.
     */
   var parentImage: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -55,6 +60,11 @@ trait ImageRecipe extends StObject {
     * The tags of the image recipe.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
+  
+  /**
+    * Specifies which type of image is created by the recipe - an AMI or a container image.
+    */
+  var `type`: js.UndefOr[ImageType] = js.undefined
   
   /**
     * The version of the image recipe.
@@ -75,6 +85,10 @@ object ImageRecipe {
   
   extension [Self <: ImageRecipe](x: Self) {
     
+    inline def setAdditionalInstanceConfiguration(value: AdditionalInstanceConfiguration): Self = StObject.set(x, "additionalInstanceConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalInstanceConfigurationUndefined: Self = StObject.set(x, "additionalInstanceConfiguration", js.undefined)
+    
     inline def setArn(value: ImageBuilderArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
@@ -83,13 +97,13 @@ object ImageRecipe {
     
     inline def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "blockDeviceMappings", js.undefined)
     
-    inline def setBlockDeviceMappingsVarargs(value: InstanceBlockDeviceMapping*): Self = StObject.set(x, "blockDeviceMappings", js.Array(value :_*))
+    inline def setBlockDeviceMappingsVarargs(value: InstanceBlockDeviceMapping*): Self = StObject.set(x, "blockDeviceMappings", js.Array(value*))
     
     inline def setComponents(value: ComponentConfigurationList): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
-    inline def setComponentsVarargs(value: ComponentConfiguration*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: ComponentConfiguration*): Self = StObject.set(x, "components", js.Array(value*))
     
     inline def setDateCreated(value: DateTime): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     
@@ -118,6 +132,10 @@ object ImageRecipe {
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setType(value: ImageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setVersion(value: VersionNumber): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

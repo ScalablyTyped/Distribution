@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorPasteFromWordDialog")
 @js.native
-class ASPxClientHtmlEditorPasteFromWordDialog ()
+open class ASPxClientHtmlEditorPasteFromWordDialog ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorPasteFromWordDialog {
   

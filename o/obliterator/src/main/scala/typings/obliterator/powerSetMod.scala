@@ -1,12 +1,15 @@
 package typings.obliterator
 
+import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("obliterator/power-set", JSImport.Namespace)
-@js.native
-object powerSetMod extends js.Object {
-  def default[T](array: js.Array[T]): typings.obliterator.iteratorMod.default[js.Array[T]] = js.native
+object powerSetMod {
+  
+  @JSImport("obliterator/power-set", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[T](array: js.Array[T]): IterableIterator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(array.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[js.Array[T]]]
 }
-

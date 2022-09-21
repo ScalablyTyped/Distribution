@@ -11,13 +11,13 @@ object global {
     @JSGlobal("jsrp.client")
     @js.native
     /** Client SRP constructor */
-    class client ()
+    open class client ()
       extends typings.jsrp.mod.client
     
     @JSGlobal("jsrp.server")
     @js.native
     /** Client SRP constructor */
-    class server ()
+    open class server ()
       extends typings.jsrp.mod.server
   }
 }

@@ -21,10 +21,10 @@ object GHSNGN {
     
     inline def setGHS(value: js.Array[String]): Self = StObject.set(x, "GHS", value.asInstanceOf[js.Any])
     
-    inline def setGHSVarargs(value: String*): Self = StObject.set(x, "GHS", js.Array(value :_*))
+    inline def setGHSVarargs(value: String*): Self = StObject.set(x, "GHS", js.Array(value*))
     
     inline def setNGN(value: js.Array[String]): Self = StObject.set(x, "NGN", value.asInstanceOf[js.Any])
     
-    inline def setNGNVarargs(value: String*): Self = StObject.set(x, "NGN", js.Array(value :_*))
+    inline def setNGNVarargs(value: String*): Self = StObject.set(x, "NGN", js.Array(value*))
   }
 }

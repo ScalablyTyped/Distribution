@@ -4,75 +4,68 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait TextEditChange extends StObject {
   
+  def add(edit: AnnotatedTextEdit): Unit = js.native
   /**
     * Adds a text edit.
+    *
     * @param edit the text edit to add.
+    *
+    * @since 3.16.0 - support for annotated text edits. This is usually
+    * guarded using a client capability.
     */
-  def add(edit: TextEdit): Unit
+  def add(edit: TextEdit): Unit = js.native
   
   /**
     * Gets all text edits for this change.
     *
     * @return An array of text edits.
+    *
+    * @since 3.16.0 - support for annotated text edits. This is usually
+    * guarded using a client capability.
     */
-  def all(): js.Array[TextEdit]
+  def all(): js.Array[TextEdit | AnnotatedTextEdit] = js.native
   
   /**
     * Clears the edits for this change.
     */
-  def clear(): Unit
+  def clear(): Unit = js.native
   
+  def delete(range: Range): ChangeAnnotationIdentifier = js.native
+  def delete(range: Range, annotation: ChangeAnnotation): ChangeAnnotationIdentifier = js.native
+  def delete(range: Range, annotation: ChangeAnnotationIdentifier): ChangeAnnotationIdentifier = js.native
   /**
     * Delete the text at the given range.
     *
     * @param range A range.
+    * @param annotation An optional annotation.
     */
-  def delete(range: Range): Unit
+  @JSName("delete")
+  def delete_Unit(range: Range): Unit = js.native
   
   /**
     * Insert the given text at the given position.
     *
     * @param position A position.
     * @param newText A string.
+    * @param annotation An optional annotation.
     */
-  def insert(position: Position, newText: String): Unit
+  def insert(position: Position, newText: String): Unit = js.native
+  def insert(position: Position, newText: String, annotation: ChangeAnnotation): ChangeAnnotationIdentifier = js.native
+  def insert(position: Position, newText: String, annotation: ChangeAnnotationIdentifier): ChangeAnnotationIdentifier = js.native
   
+  def replace(range: Range, newText: String): ChangeAnnotationIdentifier = js.native
+  def replace(range: Range, newText: String, annotation: ChangeAnnotation): ChangeAnnotationIdentifier = js.native
+  def replace(range: Range, newText: String, annotation: ChangeAnnotationIdentifier): ChangeAnnotationIdentifier = js.native
   /**
     * Replace the given range with given text for the given resource.
     *
     * @param range A range.
     * @param newText A string.
+    * @param annotation An optional annotation.
     */
-  def replace(range: Range, newText: String): Unit
-}
-object TextEditChange {
-  
-  inline def apply(
-    add: TextEdit => Unit,
-    all: () => js.Array[TextEdit],
-    clear: () => Unit,
-    delete: Range => Unit,
-    insert: (Position, String) => Unit,
-    replace: (Range, String) => Unit
-  ): TextEditChange = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), all = js.Any.fromFunction0(all), clear = js.Any.fromFunction0(clear), delete = js.Any.fromFunction1(delete), insert = js.Any.fromFunction2(insert), replace = js.Any.fromFunction2(replace))
-    __obj.asInstanceOf[TextEditChange]
-  }
-  
-  extension [Self <: TextEditChange](x: Self) {
-    
-    inline def setAdd(value: TextEdit => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
-    
-    inline def setAll(value: () => js.Array[TextEdit]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
-    
-    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
-    
-    inline def setDelete(value: Range => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
-    
-    inline def setInsert(value: (Position, String) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
-    
-    inline def setReplace(value: (Range, String) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
-  }
+  @JSName("replace")
+  def replace_Unit(range: Range, newText: String): Unit = js.native
 }

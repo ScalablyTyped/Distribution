@@ -34,7 +34,7 @@ object global {
       
       @JSGlobal("deku.diff.Actions")
       @js.native
-      class Actions ()
+      open class Actions ()
         extends typings.deku.mod.diff.Actions
       object Actions {
         
@@ -43,46 +43,46 @@ object global {
         val ^ : js.Any = js.native
         
         /* static member */
-        inline def `case`(pat: js.Any, action: typings.deku.mod.diff.Actions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("case")(pat.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+        inline def `case`(pat: Any, action: typings.deku.mod.diff.Actions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("case")(pat.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Any]
         
         /* static member */
         inline def insertBefore(a: Double): typings.deku.mod.diff.Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(a.asInstanceOf[js.Any]).asInstanceOf[typings.deku.mod.diff.Actions]
         
         /* static member */
-        inline def insertChild(a: js.Any, b: Double, c: String): typings.deku.mod.diff.Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("insertChild")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[typings.deku.mod.diff.Actions]
+        inline def insertChild(a: Any, b: Double, c: String): typings.deku.mod.diff.Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("insertChild")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[typings.deku.mod.diff.Actions]
         
         /* static member */
-        inline def removeAttribute(a: String, b: js.Any): typings.deku.mod.diff.Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAttribute")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.deku.mod.diff.Actions]
+        inline def removeAttribute(a: String, b: Any): typings.deku.mod.diff.Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAttribute")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.deku.mod.diff.Actions]
         
         /* static member */
         inline def removeChild(a: Double): typings.deku.mod.diff.Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("removeChild")(a.asInstanceOf[js.Any]).asInstanceOf[typings.deku.mod.diff.Actions]
         
         /* static member */
-        inline def removeNode(a: js.Any): typings.deku.mod.diff.Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNode")(a.asInstanceOf[js.Any]).asInstanceOf[typings.deku.mod.diff.Actions]
+        inline def removeNode(a: Any): typings.deku.mod.diff.Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNode")(a.asInstanceOf[js.Any]).asInstanceOf[typings.deku.mod.diff.Actions]
         
         /* static member */
-        inline def replaceNode(a: js.Any, b: js.Any, c: String): typings.deku.mod.diff.Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceNode")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[typings.deku.mod.diff.Actions]
+        inline def replaceNode(a: Any, b: Any, c: String): typings.deku.mod.diff.Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceNode")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[typings.deku.mod.diff.Actions]
         
         /* static member */
         inline def sameNode(): typings.deku.mod.diff.Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("sameNode")().asInstanceOf[typings.deku.mod.diff.Actions]
         
         /* static member */
-        inline def setAttribute(a: String, b: js.Any, c: js.Any): typings.deku.mod.diff.Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("setAttribute")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[typings.deku.mod.diff.Actions]
+        inline def setAttribute(a: String, b: Any, c: Any): typings.deku.mod.diff.Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("setAttribute")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[typings.deku.mod.diff.Actions]
         
         /* static member */
-        inline def updateChild(a: Double, b: js.Array[js.Any]): typings.deku.mod.diff.Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("updateChild")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.deku.mod.diff.Actions]
+        inline def updateChild(a: Double, b: js.Array[Any]): typings.deku.mod.diff.Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("updateChild")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.deku.mod.diff.Actions]
         
         /* static member */
-        inline def updateChildren(a: js.Array[js.Any]): typings.deku.mod.diff.Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("updateChildren")(a.asInstanceOf[js.Any]).asInstanceOf[typings.deku.mod.diff.Actions]
+        inline def updateChildren(a: js.Array[Any]): typings.deku.mod.diff.Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("updateChildren")(a.asInstanceOf[js.Any]).asInstanceOf[typings.deku.mod.diff.Actions]
         
         /* static member */
-        inline def updateThunk(a: js.Any, b: js.Any, c: String): typings.deku.mod.diff.Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("updateThunk")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[typings.deku.mod.diff.Actions]
+        inline def updateThunk(a: Any, b: Any, c: String): typings.deku.mod.diff.Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("updateThunk")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[typings.deku.mod.diff.Actions]
       }
       
       /**
         * Compare two virtual nodes and return an array of changes to turn the left into the right.
         */
-      inline def diffNode(prevNode: VirtualElement, nextNode: VirtualElement): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffNode")(prevNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      inline def diffNode(prevNode: VirtualElement, nextNode: VirtualElement): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffNode")(prevNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     }
     
     object dom {
@@ -110,13 +110,13 @@ object global {
       */
     inline def element(`type`: String): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(`type`.asInstanceOf[js.Any]).asInstanceOf[VirtualElement]
     inline def element(`type`: Thunk): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(`type`.asInstanceOf[js.Any]).asInstanceOf[VirtualElement]
-    inline def element[A](`type`: String, attributes: A, children: js.Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
-    inline def element[A](`type`: Thunk, attributes: A, children: js.Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
+    inline def element[A](`type`: String, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
+    inline def element[A](`type`: Thunk, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
     
     inline def h(`type`: String): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VirtualElement]
     inline def h(`type`: Thunk): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VirtualElement]
-    inline def h[A](`type`: String, attributes: A, children: js.Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
-    inline def h[A](`type`: Thunk, attributes: A, children: js.Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
+    inline def h[A](`type`: String, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("h")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
+    inline def h[A](`type`: Thunk, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("h")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
     
     object string {
       
@@ -146,9 +146,9 @@ object global {
       /* was `typeof element` */
       inline def create(`type`: Thunk): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any]).asInstanceOf[VirtualElement]
       /* was `typeof element` */
-      inline def create[A](`type`: String, attributes: A, children: js.Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
+      inline def create[A](`type`: String, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
       /* was `typeof element` */
-      inline def create[A](`type`: Thunk, attributes: A, children: js.Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
+      inline def create[A](`type`: Thunk, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
       
       inline def createEmptyElement(): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyElement")().asInstanceOf[VirtualElement]
       
@@ -156,7 +156,7 @@ object global {
       /**
         * Create a node path, eg. (23,5,2,4) => '23.5.2.4'
         */
-      inline def createPath(paths: (Double | String)*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def createPath(paths: (Double | String)*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(paths.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
       
       /**
         * Text nodes are stored as objects to keep things simple

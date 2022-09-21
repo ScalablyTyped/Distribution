@@ -3,7 +3,7 @@ package typings.antDesignReactNative
 import typings.antDesignReactNative.modalPropsTypeMod.Action
 import typings.antDesignReactNative.modalPropsTypeMod.CallbackOnBackHandler
 import typings.antDesignReactNative.modalPropsTypeMod.CallbackOrActions
-import typings.propTypes.mod.Requireable
+import typings.react.mod.Context
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
@@ -14,7 +14,7 @@ object modalMod {
   
   @JSImport("@ant-design/react-native/lib/modal", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.antDesignReactNative.modalModalMod.default
   object default {
     
@@ -44,17 +44,10 @@ object modalMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alert")(x.asInstanceOf[js.Any])
     
     /* static member */
-    object contextTypes {
-      
-      @JSImport("@ant-design/react-native/lib/modal", "default.contextTypes")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@ant-design/react-native/lib/modal", "default.contextTypes.antLocale")
-      @js.native
-      def antLocale: Requireable[js.Object] = js.native
-      inline def antLocale_=(x: Requireable[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("antLocale")(x.asInstanceOf[js.Any])
-    }
+    @JSImport("@ant-design/react-native/lib/modal", "default.contextType")
+    @js.native
+    def contextType: Context[js.Object] = js.native
+    inline def contextType_=(x: Context[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     /* static member */
     object defaultProps {
@@ -116,13 +109,13 @@ object modalMod {
     @JSImport("@ant-design/react-native/lib/modal", "default.operation")
     @js.native
     def operation: js.Function2[
-        /* actions */ js.Array[js.Any], 
+        /* actions */ js.Array[Any], 
         /* onBackHandler */ js.UndefOr[CallbackOnBackHandler], 
         Double
       ] = js.native
     inline def operation_=(
       x: js.Function2[
-          /* actions */ js.Array[js.Any], 
+          /* actions */ js.Array[Any], 
           /* onBackHandler */ js.UndefOr[CallbackOnBackHandler], 
           Double
         ]

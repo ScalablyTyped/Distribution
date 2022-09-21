@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartTrendlineFormatData extends StObject {
   
   /**
-    *
     * Represents chart line formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var line: js.UndefOr[ChartLineFormatData] = js.undefined

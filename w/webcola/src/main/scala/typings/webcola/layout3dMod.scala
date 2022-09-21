@@ -12,11 +12,11 @@ object layout3dMod {
   
   @JSImport("webcola/dist/src/layout3d", "Layout3D")
   @js.native
-  class Layout3D protected () extends StObject {
+  open class Layout3D protected () extends StObject {
     def this(nodes: js.Array[Node3D], links: js.Array[Link3D]) = this()
     def this(nodes: js.Array[Node3D], links: js.Array[Link3D], idealLinkLength: Double) = this()
     
-    var constraints: js.Array[js.Any] = js.native
+    var constraints: js.Array[Any] = js.native
     
     var descent: Descent = js.native
     
@@ -57,7 +57,7 @@ object layout3dMod {
   
   @JSImport("webcola/dist/src/layout3d", "Link3D")
   @js.native
-  class Link3D protected () extends StObject {
+  open class Link3D protected () extends StObject {
     def this(source: Double, target: Double) = this()
     
     def actualLength(x: js.Array[js.Array[Double]]): Double = js.native
@@ -71,7 +71,7 @@ object layout3dMod {
   
   @JSImport("webcola/dist/src/layout3d", "Node3D")
   @js.native
-  class Node3D ()
+  open class Node3D ()
     extends StObject
        with GraphNode {
     def this(x: Double) = this()

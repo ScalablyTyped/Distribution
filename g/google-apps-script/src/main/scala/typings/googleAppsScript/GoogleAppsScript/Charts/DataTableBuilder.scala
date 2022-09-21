@@ -24,19 +24,19 @@ trait DataTableBuilder extends StObject {
   
   def addColumn(`type`: ColumnType, label: String): DataTableBuilder
   
-  def addRow(values: js.Array[js.Any]): DataTableBuilder
+  def addRow(values: js.Array[Any]): DataTableBuilder
   
   def build(): DataTable
   
-  def setValue(row: Integer, column: Integer, value: js.Any): DataTableBuilder
+  def setValue(row: Integer, column: Integer, value: Any): DataTableBuilder
 }
 object DataTableBuilder {
   
   inline def apply(
     addColumn: (ColumnType, String) => DataTableBuilder,
-    addRow: js.Array[js.Any] => DataTableBuilder,
+    addRow: js.Array[Any] => DataTableBuilder,
     build: () => DataTable,
-    setValue: (Integer, Integer, js.Any) => DataTableBuilder
+    setValue: (Integer, Integer, Any) => DataTableBuilder
   ): DataTableBuilder = {
     val __obj = js.Dynamic.literal(addColumn = js.Any.fromFunction2(addColumn), addRow = js.Any.fromFunction1(addRow), build = js.Any.fromFunction0(build), setValue = js.Any.fromFunction3(setValue))
     __obj.asInstanceOf[DataTableBuilder]
@@ -46,10 +46,10 @@ object DataTableBuilder {
     
     inline def setAddColumn(value: (ColumnType, String) => DataTableBuilder): Self = StObject.set(x, "addColumn", js.Any.fromFunction2(value))
     
-    inline def setAddRow(value: js.Array[js.Any] => DataTableBuilder): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
+    inline def setAddRow(value: js.Array[Any] => DataTableBuilder): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
     
     inline def setBuild(value: () => DataTable): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    inline def setSetValue(value: (Integer, Integer, js.Any) => DataTableBuilder): Self = StObject.set(x, "setValue", js.Any.fromFunction3(value))
+    inline def setSetValue(value: (Integer, Integer, Any) => DataTableBuilder): Self = StObject.set(x, "setValue", js.Any.fromFunction3(value))
   }
 }

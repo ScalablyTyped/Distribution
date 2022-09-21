@@ -6,12 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "Interpolation")
 @js.native
-class Interpolation protected ()
-  extends typings.angularCompiler.compilerMod.Interpolation {
+open class Interpolation protected () extends AST {
   def this(
-    span: typings.angularCompiler.astMod.ParseSpan,
-    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
-    strings: js.Array[js.Any],
-    expressions: js.Array[js.Any]
+    span: ParseSpan,
+    sourceSpan: AbsoluteSourceSpan,
+    strings: js.Array[Any],
+    expressions: js.Array[Any]
   ) = this()
+  
+  var expressions: js.Array[Any] = js.native
+  
+  var strings: js.Array[Any] = js.native
 }

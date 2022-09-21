@@ -94,9 +94,11 @@ object testUtilsMod {
     
     var required: js.UndefOr[Boolean] = js.undefined
     
+    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
+    
     var `type`: String
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object ExpectedProp {
     
@@ -130,9 +132,13 @@ object testUtilsMod {
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }

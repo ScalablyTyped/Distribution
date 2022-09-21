@@ -29,11 +29,11 @@ object device {
       */
     @JSName("relayEvents")
     var relayEvents_IAbstract: js.UndefOr[
-        js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+        js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
       ] = js.undefined
     
     /** [Property] (Object/Boolean) */
-    var scheme: js.UndefOr[js.Any] = js.undefined
+    var scheme: js.UndefOr[Any] = js.undefined
     
     /** [Property] (String) */
     var uuid: js.UndefOr[String] = js.undefined
@@ -59,11 +59,11 @@ object device {
       
       inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
       inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
-      inline def setScheme(value: js.Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
       inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
       
@@ -153,7 +153,7 @@ object device {
       * @param url Object
       */
     @JSName("openURL")
-    var openURL_ISencha: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var openURL_ISencha: js.UndefOr[js.Function1[/* url */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ISencha {
     
@@ -164,7 +164,7 @@ object device {
     
     extension [Self <: ISencha](x: Self) {
       
-      inline def setOpenURL(value: /* url */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "openURL", js.Any.fromFunction1(value))
+      inline def setOpenURL(value: /* url */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "openURL", js.Any.fromFunction1(value))
       
       inline def setOpenURLUndefined: Self = StObject.set(x, "openURL", js.undefined)
     }

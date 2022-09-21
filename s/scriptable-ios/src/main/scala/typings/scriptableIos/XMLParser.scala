@@ -27,7 +27,7 @@ trait XMLParser extends StObject {
     * Called by the parser when it encounters an end tag for an element. The function takes the element name as a parameter.
     * @see https://docs.scriptable.app/xmlparser/#didendelement
     */
-  def didEndElement(arg0: String): Unit
+  def didEndElement(name: String): Unit
   
   /**
     * _Function called when the parser begins parsing a document._
@@ -53,7 +53,7 @@ trait XMLParser extends StObject {
     * The parser calls this function with a string whenever it finds characters for the current element. This function may be called several times for a single element.
     * @see https://docs.scriptable.app/xmlparser/#foundcharacters
     */
-  def foundCharacters(arg0: String): Unit
+  def foundCharacters(str: String): Unit
   
   /**
     * _Starts parsing._
@@ -69,7 +69,7 @@ trait XMLParser extends StObject {
     * The parser will call this function when it encounters a fatal error preventing it from continuing to parse. When the function is called the parsing is stopped.
     * @see https://docs.scriptable.app/xmlparser/#parseerroroccurred
     */
-  def parseErrorOccurred(arg0: String): Unit
+  def parseErrorOccurred(error: String): Unit
   
   /**
     * _XML string to be parsed._

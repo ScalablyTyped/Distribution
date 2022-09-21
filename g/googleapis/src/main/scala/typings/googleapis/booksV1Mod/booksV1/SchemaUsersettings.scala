@@ -11,14 +11,14 @@ trait SchemaUsersettings extends StObject {
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * User settings in sub-objects, each for different purposes.
     */
-  var notesExport: js.UndefOr[FolderName] = js.undefined
+  var notesExport: js.UndefOr[FolderName | Null] = js.undefined
   
-  var notification: js.UndefOr[MatchMyInterests] = js.undefined
+  var notification: js.UndefOr[MatchMyInterests | Null] = js.undefined
 }
 object SchemaUsersettings {
   
@@ -31,13 +31,19 @@ object SchemaUsersettings {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setNotesExport(value: FolderName): Self = StObject.set(x, "notesExport", value.asInstanceOf[js.Any])
     
+    inline def setNotesExportNull: Self = StObject.set(x, "notesExport", null)
+    
     inline def setNotesExportUndefined: Self = StObject.set(x, "notesExport", js.undefined)
     
     inline def setNotification(value: MatchMyInterests): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationNull: Self = StObject.set(x, "notification", null)
     
     inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
   }

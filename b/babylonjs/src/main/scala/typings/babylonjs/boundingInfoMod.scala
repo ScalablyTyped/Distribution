@@ -15,7 +15,7 @@ object boundingInfoMod {
   
   @JSImport("babylonjs/Culling/boundingInfo", "BoundingInfo")
   @js.native
-  class BoundingInfo protected ()
+  open class BoundingInfo protected ()
     extends StObject
        with ICullable {
     /**
@@ -31,10 +31,13 @@ object boundingInfoMod {
       worldMatrix: DeepImmutable[Matrix]
     ) = this()
     
-    /** @hidden */
+    /**
+      * @param collider
+      * @hidden
+      */
     def _checkCollision(collider: Collider): Boolean = js.native
     
-    /* private */ var _isLocked: js.Any = js.native
+    /* private */ var _isLocked: Any = js.native
     
     /**
       * Bounding box for the mesh
@@ -60,6 +63,20 @@ object boundingInfoMod {
     def diagonalLength: Double = js.native
     
     /**
+      * Grows the bounding info to include the given point.
+      * @param point The point that will be included in the current bounding info
+      * @returns the current bounding info
+      */
+    def encapsulate(point: Vector3): BoundingInfo = js.native
+    
+    /**
+      * Grows the bounding info to encapsulate the given bounding info.
+      * @param toEncapsulate The bounding info that will be encapsulated in the current bounding info
+      * @returns the current bounding info
+      */
+    def encapsulateBoundingInfo(toEncapsulate: BoundingInfo): BoundingInfo = js.native
+    
+    /**
       * Checks if another bounding info intersects the bounding box and bounding sphere or the mesh
       * @see https://doc.babylonjs.com/babylon101/intersect_collisions_-_mesh
       * @param boundingInfo the bounding info to check intersection with
@@ -78,7 +95,7 @@ object boundingInfoMod {
     
     /**
       * Checks if a cullable object (mesh...) is in the camera frustum
-      * Unlike isInFrustum this cheks the full bounding box
+      * Unlike isInFrustum this checks the full bounding box
       * @param frustumPlanes Camera near/planes
       * @returns true if the object is in frustum otherwise false
       */
@@ -135,16 +152,16 @@ object boundingInfoMod {
   /* static members */
   object BoundingInfo {
     
-    @JSImport("babylonjs/Culling/boundingInfo", "BoundingInfo.TmpVector3")
+    @JSImport("babylonjs/Culling/boundingInfo", "BoundingInfo._TmpVector3")
     @js.native
-    val TmpVector3: js.Any = js.native
+    val _TmpVector3: Any = js.native
   }
   
   trait ICullable extends StObject {
     
     /**
       * Checks if a cullable object (mesh...) is in the camera frustum
-      * Unlike isInFrustum this cheks the full bounding box
+      * Unlike isInFrustum this checks the full bounding box
       * @param frustumPlanes Camera near/planes
       * @returns true if the object is in frustum otherwise false
       */

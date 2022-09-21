@@ -40,17 +40,17 @@ object JobEnvironment {
     
     inline def setEndpoints(value: js.Array[ServiceEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
-    inline def setEndpointsVarargs(value: ServiceEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: ServiceEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value*))
     
     inline def setMask(value: js.Array[MaskHint]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    inline def setMaskVarargs(value: MaskHint*): Self = StObject.set(x, "mask", js.Array(value :_*))
+    inline def setMaskVarargs(value: MaskHint*): Self = StObject.set(x, "mask", js.Array(value*))
     
     inline def setOptions(value: StringDictionary[JobOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setSecureFiles(value: js.Array[SecureFile]): Self = StObject.set(x, "secureFiles", value.asInstanceOf[js.Any])
     
-    inline def setSecureFilesVarargs(value: SecureFile*): Self = StObject.set(x, "secureFiles", js.Array(value :_*))
+    inline def setSecureFilesVarargs(value: SecureFile*): Self = StObject.set(x, "secureFiles", js.Array(value*))
     
     inline def setSystemConnection(value: ServiceEndpoint): Self = StObject.set(x, "systemConnection", value.asInstanceOf[js.Any])
     

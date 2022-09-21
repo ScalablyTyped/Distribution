@@ -10,7 +10,7 @@ trait HttpRequestValidation extends StObject {
   
   var parameters: js.UndefOr[HttpRequestParametersValidation] = js.undefined
   
-  var schema: js.UndefOr[StringDictionary[Record[String, js.Any]]] = js.undefined
+  var schemas: js.UndefOr[StringDictionary[Record[String, Any]]] = js.undefined
 }
 object HttpRequestValidation {
   
@@ -25,8 +25,8 @@ object HttpRequestValidation {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setSchema(value: StringDictionary[Record[String, js.Any]]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: StringDictionary[Record[String, Any]]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
-    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
   }
 }

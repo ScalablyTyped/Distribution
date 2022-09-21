@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.Beam")
 @js.native
-class Beam protected ()
+open class Beam protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.Beam {
   def this(notes: js.Array[typings.vexflow.Vex.Flow.StemmableNote]) = this()

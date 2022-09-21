@@ -6,10 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Enum representing all accepted conditions by which a date filter can be applied.
   Used to configure the type of PivotFilter that is applied to the field.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @JSGlobal("Excel.DateFilterCondition")

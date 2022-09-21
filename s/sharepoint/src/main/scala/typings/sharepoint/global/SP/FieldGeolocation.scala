@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.FieldGeolocation")
 @js.native
-class FieldGeolocation ()
+open class FieldGeolocation ()
   extends StObject
      with typings.sharepoint.SP.Field

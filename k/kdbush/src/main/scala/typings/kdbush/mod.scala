@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("kdbush", JSImport.Namespace)
   @js.native
-  class ^[T] protected ()
+  open class ^[T] protected ()
     extends StObject
        with KDBush[T] {
     def this(points: Points) = this()
@@ -90,17 +90,17 @@ object mod {
       
       inline def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      inline def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value :_*))
+      inline def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value*))
       
       inline def setIds(value: js.Array[Double]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      inline def setIdsVarargs(value: Double*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: Double*): Self = StObject.set(x, "ids", js.Array(value*))
       
       inline def setNodeSize(value: Double): Self = StObject.set(x, "nodeSize", value.asInstanceOf[js.Any])
       
       inline def setPoints(value: js.Array[T]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      inline def setPointsVarargs(value: T*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: T*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setRange(value: (Double, Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "range", js.Any.fromFunction4(value))
       

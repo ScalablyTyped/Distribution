@@ -23,14 +23,14 @@ object gapi {
         var fullResourceName: js.UndefOr[String] = js.undefined
         
         /**
-          * Required. The IAM permission to check for the specified member and resource. For a complete list of IAM permissions, see https://cloud.google.com/iam/help/permissions/reference. For
-          * a complete list of predefined IAM roles and the permissions in each role, see https://cloud.google.com/iam/help/roles/reference.
+          * Required. The IAM permission to check for the specified principal and resource. For a complete list of IAM permissions, see https://cloud.google.com/iam/help/permissions/reference.
+          * For a complete list of predefined IAM roles and the permissions in each role, see https://cloud.google.com/iam/help/roles/reference.
           */
         var permission: js.UndefOr[String] = js.undefined
         
         /**
-          * Required. The member, or principal, whose access you want to check, in the form of the email address that represents that member. For example, `alice@example.com` or
-          * `my-service-account@my-project.iam.gserviceaccount.com`. The member must be a Google Account or a service account. Other types of members are not supported.
+          * Required. The principal whose access you want to check, in the form of the email address that represents that principal. For example, `alice@example.com` or
+          * `my-service-account@my-project.iam.gserviceaccount.com`. The principal must be a Google Account or a service account. Other types of principals are not supported.
           */
         var principal: js.UndefOr[String] = js.undefined
       }
@@ -60,26 +60,30 @@ object gapi {
       trait GoogleCloudPolicytroubleshooterV1BindingExplanation extends StObject {
         
         /**
-          * Required. Indicates whether _this binding_ provides the specified permission to the specified member for the specified resource. This field does _not_ indicate whether the member
-          * actually has the permission for the resource. There might be another binding that overrides this binding. To determine whether the member actually has the permission, use the
-          * `access` field in the TroubleshootIamPolicyResponse.
+          * Required. Indicates whether _this binding_ provides the specified permission to the specified principal for the specified resource. This field does _not_ indicate whether the
+          * principal actually has the permission for the resource. There might be another binding that overrides this binding. To determine whether the principal actually has the permission,
+          * use the `access` field in the TroubleshootIamPolicyResponse.
           */
         var access: js.UndefOr[String] = js.undefined
         
-        /** A condition expression that prevents access unless the expression evaluates to `true`. To learn about IAM Conditions, see http://cloud.google.com/iam/help/conditions/overview. */
+        /**
+          * A condition expression that prevents this binding from granting access unless the expression evaluates to `true`. To learn about IAM Conditions, see
+          * https://cloud.google.com/iam/help/conditions/overview.
+          */
         var condition: js.UndefOr[GoogleTypeExpr] = js.undefined
         
         /**
-          * Indicates whether each member in the binding includes the member specified in the request, either directly or indirectly. Each key identifies a member in the binding, and each value
-          * indicates whether the member in the binding includes the member in the request. For example, suppose that a binding includes the following members: * `user:alice@example.com` *
-          * `group:product-eng@example.com` You want to troubleshoot access for `user:bob@example.com`. This user is a member of the group `group:product-eng@example.com`. For the first member
-          * in the binding, the key is `user:alice@example.com`, and the `membership` field in the value is set to `MEMBERSHIP_NOT_INCLUDED`. For the second member in the binding, the key is
-          * `group:product-eng@example.com`, and the `membership` field in the value is set to `MEMBERSHIP_INCLUDED`.
+          * Indicates whether each principal in the binding includes the principal specified in the request, either directly or indirectly. Each key identifies a principal in the binding, and
+          * each value indicates whether the principal in the binding includes the principal in the request. For example, suppose that a binding includes the following principals: *
+          * `user:alice@example.com` * `group:product-eng@example.com` You want to troubleshoot access for `user:bob@example.com`. This user is a principal of the group
+          * `group:product-eng@example.com`. For the first principal in the binding, the key is `user:alice@example.com`, and the `membership` field in the value is set to
+          * `MEMBERSHIP_NOT_INCLUDED`. For the second principal in the binding, the key is `group:product-eng@example.com`, and the `membership` field in the value is set to
+          * `MEMBERSHIP_INCLUDED`.
           */
         var memberships: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: @maxim_mazurok/gapi.client.policytroubleshooter.gapi.client.policytroubleshooter.GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership}
-          */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleCloudPolicytroubleshooterV1BindingExplanation & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleCloudPolicytroubleshooterV1BindingExplanation & TopLevel[Any]
               ] = js.undefined
         
         /** The relevance of this binding to the overall determination for the entire policy. */
@@ -117,7 +121,7 @@ object gapi {
           inline def setMemberships(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.policytroubleshooter.gapi.client.policytroubleshooter.GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership}
-            */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleCloudPolicytroubleshooterV1BindingExplanation & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleCloudPolicytroubleshooterV1BindingExplanation & TopLevel[Any]
           ): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
           
           inline def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
@@ -142,10 +146,10 @@ object gapi {
       
       trait GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership extends StObject {
         
-        /** Indicates whether the binding includes the member. */
+        /** Indicates whether the binding includes the principal. */
         var membership: js.UndefOr[String] = js.undefined
         
-        /** The relevance of the member's status to the overall determination for the binding. */
+        /** The relevance of the principal's status to the overall determination for the binding. */
         var relevance: js.UndefOr[String] = js.undefined
       }
       object GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership {
@@ -170,15 +174,15 @@ object gapi {
       trait GoogleCloudPolicytroubleshooterV1ExplainedPolicy extends StObject {
         
         /**
-          * Indicates whether _this policy_ provides the specified permission to the specified member for the specified resource. This field does _not_ indicate whether the member actually has
-          * the permission for the resource. There might be another policy that overrides this policy. To determine whether the member actually has the permission, use the `access` field in the
-          * TroubleshootIamPolicyResponse.
+          * Indicates whether _this policy_ provides the specified permission to the specified principal for the specified resource. This field does _not_ indicate whether the principal
+          * actually has the permission for the resource. There might be another policy that overrides this policy. To determine whether the principal actually has the permission, use the
+          * `access` field in the TroubleshootIamPolicyResponse.
           */
         var access: js.UndefOr[String] = js.undefined
         
         /**
-          * Details about how each binding in the policy affects the member's ability, or inability, to use the permission for the resource. If the sender of the request does not have access to
-          * the policy, this field is omitted.
+          * Details about how each binding in the policy affects the principal's ability, or inability, to use the permission for the resource. If the sender of the request does not have access
+          * to the policy, this field is omitted.
           */
         var bindingExplanations: js.UndefOr[js.Array[GoogleCloudPolicytroubleshooterV1BindingExplanation]] = js.undefined
         
@@ -215,7 +219,7 @@ object gapi {
           
           inline def setBindingExplanationsUndefined: Self = StObject.set(x, "bindingExplanations", js.undefined)
           
-          inline def setBindingExplanationsVarargs(value: GoogleCloudPolicytroubleshooterV1BindingExplanation*): Self = StObject.set(x, "bindingExplanations", js.Array(value :_*))
+          inline def setBindingExplanationsVarargs(value: GoogleCloudPolicytroubleshooterV1BindingExplanation*): Self = StObject.set(x, "bindingExplanations", js.Array(value*))
           
           inline def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
           
@@ -233,7 +237,7 @@ object gapi {
       
       trait GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest extends StObject {
         
-        /** The information to use for checking whether a member has a permission for a resource. */
+        /** The information to use for checking whether a principal has a permission for a resource. */
         var accessTuple: js.UndefOr[GoogleCloudPolicytroubleshooterV1AccessTuple] = js.undefined
       }
       object GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest {
@@ -253,11 +257,14 @@ object gapi {
       
       trait GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse extends StObject {
         
-        /** Indicates whether the member has the specified permission for the specified resource, based on evaluating all of the applicable IAM policies. */
+        /** Indicates whether the principal has the specified permission for the specified resource, based on evaluating all of the applicable IAM policies. */
         var access: js.UndefOr[String] = js.undefined
         
+        /** The general errors contained in the troubleshooting response. */
+        var errors: js.UndefOr[js.Array[GoogleRpcStatus]] = js.undefined
+        
         /**
-          * List of IAM policies that were evaluated to check the member's permissions, with annotations to indicate how each policy contributed to the final result. The list of policies can
+          * List of IAM policies that were evaluated to check the principal's permissions, with annotations to indicate how each policy contributed to the final result. The list of policies can
           * include the policy for the resource itself. It can also include policies that are inherited from higher levels of the resource hierarchy, including the organization, the folder, and
           * the project. To learn more about the resource hierarchy, see https://cloud.google.com/iam/help/resource-hierarchy.
           */
@@ -276,11 +283,17 @@ object gapi {
           
           inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
           
+          inline def setErrors(value: js.Array[GoogleRpcStatus]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+          
+          inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+          
+          inline def setErrorsVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "errors", js.Array(value*))
+          
           inline def setExplainedPolicies(value: js.Array[GoogleCloudPolicytroubleshooterV1ExplainedPolicy]): Self = StObject.set(x, "explainedPolicies", value.asInstanceOf[js.Any])
           
           inline def setExplainedPoliciesUndefined: Self = StObject.set(x, "explainedPolicies", js.undefined)
           
-          inline def setExplainedPoliciesVarargs(value: GoogleCloudPolicytroubleshooterV1ExplainedPolicy*): Self = StObject.set(x, "explainedPolicies", js.Array(value :_*))
+          inline def setExplainedPoliciesVarargs(value: GoogleCloudPolicytroubleshooterV1ExplainedPolicy*): Self = StObject.set(x, "explainedPolicies", js.Array(value*))
         }
       }
       
@@ -308,7 +321,7 @@ object gapi {
           
           inline def setAuditLogConfigsUndefined: Self = StObject.set(x, "auditLogConfigs", js.undefined)
           
-          inline def setAuditLogConfigsVarargs(value: GoogleIamV1AuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value :_*))
+          inline def setAuditLogConfigsVarargs(value: GoogleIamV1AuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value*))
           
           inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
           
@@ -337,7 +350,7 @@ object gapi {
           
           inline def setExemptedMembersUndefined: Self = StObject.set(x, "exemptedMembers", js.undefined)
           
-          inline def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value :_*))
+          inline def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value*))
           
           inline def setLogType(value: String): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
           
@@ -349,17 +362,19 @@ object gapi {
         
         /**
           * The condition that is associated with this binding. If the condition evaluates to `true`, then this binding applies to the current request. If the condition evaluates to `false`,
-          * then this binding does not apply to the current request. However, a different role binding might grant the same role to one or more of the members in this binding. To learn which
+          * then this binding does not apply to the current request. However, a different role binding might grant the same role to one or more of the principals in this binding. To learn which
           * resources support conditions in their IAM policies, see the [IAM documentation](https://cloud.google.com/iam/help/conditions/resource-policies).
           */
         var condition: js.UndefOr[GoogleTypeExpr] = js.undefined
         
         /**
-          * Specifies the identities requesting access for a Cloud Platform resource. `members` can have the following values: * `allUsers`: A special identifier that represents anyone who is
-          * on the internet; with or without a Google account. * `allAuthenticatedUsers`: A special identifier that represents anyone who is authenticated with a Google account or a service
+          * Specifies the principals requesting access for a Google Cloud resource. `members` can have the following values: * `allUsers`: A special identifier that represents anyone who is on
+          * the internet; with or without a Google account. * `allAuthenticatedUsers`: A special identifier that represents anyone who is authenticated with a Google account or a service
           * account. * `user:{emailid}`: An email address that represents a specific Google account. For example, `alice@example.com` . * `serviceAccount:{emailid}`: An email address that
-          * represents a service account. For example, `my-other-app@appspot.gserviceaccount.com`. * `group:{emailid}`: An email address that represents a Google group. For example,
-          * `admins@example.com`. * `deleted:user:{emailid}?uid={uniqueid}`: An email address (plus unique identifier) representing a user that has been recently deleted. For example,
+          * represents a Google service account. For example, `my-other-app@appspot.gserviceaccount.com`. * `serviceAccount:{projectid}.svc.id.goog[{namespace}/{kubernetes-sa}]`: An identifier
+          * for a [Kubernetes service account](https://cloud.google.com/kubernetes-engine/docs/how-to/kubernetes-service-accounts). For example,
+          * `my-project.svc.id.goog[my-namespace/my-kubernetes-sa]`. * `group:{emailid}`: An email address that represents a Google group. For example, `admins@example.com`. *
+          * `deleted:user:{emailid}?uid={uniqueid}`: An email address (plus unique identifier) representing a user that has been recently deleted. For example,
           * `alice@example.com?uid=123456789012345678901`. If the user is recovered, this value reverts to `user:{emailid}` and the recovered user retains the role in the binding. *
           * `deleted:serviceAccount:{emailid}?uid={uniqueid}`: An email address (plus unique identifier) representing a service account that has been recently deleted. For example,
           * `my-other-app@appspot.gserviceaccount.com?uid=123456789012345678901`. If the service account is undeleted, this value reverts to `serviceAccount:{emailid}` and the undeleted service
@@ -369,7 +384,7 @@ object gapi {
           */
         var members: js.UndefOr[js.Array[String]] = js.undefined
         
-        /** Role that is assigned to `members`. For example, `roles/viewer`, `roles/editor`, or `roles/owner`. */
+        /** Role that is assigned to the list of `members`, or principals. For example, `roles/viewer`, `roles/editor`, or `roles/owner`. */
         var role: js.UndefOr[String] = js.undefined
       }
       object GoogleIamV1Binding {
@@ -389,7 +404,7 @@ object gapi {
           
           inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
           
-          inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+          inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value*))
           
           inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
           
@@ -403,8 +418,10 @@ object gapi {
         var auditConfigs: js.UndefOr[js.Array[GoogleIamV1AuditConfig]] = js.undefined
         
         /**
-          * Associates a list of `members` to a `role`. Optionally, may specify a `condition` that determines how and when the `bindings` are applied. Each of the `bindings` must contain at
-          * least one member.
+          * Associates a list of `members`, or principals, with a `role`. Optionally, may specify a `condition` that determines how and when the `bindings` are applied. Each of the `bindings`
+          * must contain at least one principal. The `bindings` in a `Policy` can refer to up to 1,500 principals; up to 250 of these principals can be Google groups. Each occurrence of a
+          * principal counts towards these limits. For example, if the `bindings` grant 50 different roles to `user:alice@example.com`, and not to any other principal, then you can add another
+          * 1,450 principals to the `bindings` in the `Policy`.
           */
         var bindings: js.UndefOr[js.Array[GoogleIamV1Binding]] = js.undefined
         
@@ -440,13 +457,13 @@ object gapi {
           
           inline def setAuditConfigsUndefined: Self = StObject.set(x, "auditConfigs", js.undefined)
           
-          inline def setAuditConfigsVarargs(value: GoogleIamV1AuditConfig*): Self = StObject.set(x, "auditConfigs", js.Array(value :_*))
+          inline def setAuditConfigsVarargs(value: GoogleIamV1AuditConfig*): Self = StObject.set(x, "auditConfigs", js.Array(value*))
           
           inline def setBindings(value: js.Array[GoogleIamV1Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
           
           inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
           
-          inline def setBindingsVarargs(value: GoogleIamV1Binding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+          inline def setBindingsVarargs(value: GoogleIamV1Binding*): Self = StObject.set(x, "bindings", js.Array(value*))
           
           inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
           
@@ -455,6 +472,61 @@ object gapi {
           inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
           
           inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+        }
+      }
+      
+      trait GoogleRpcStatus extends StObject {
+        
+        /** The status code, which should be an enum value of google.rpc.Code. */
+        var code: js.UndefOr[Double] = js.undefined
+        
+        /** A list of messages that carry the error details. There is a common set of message types for APIs to use. */
+        var details: js.UndefOr[
+                js.Array[
+                  /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+        {[ P in string ]: any}
+          */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleRpcStatus & TopLevel[Any]
+                ]
+              ] = js.undefined
+        
+        /**
+          * A developer-facing error message, which should be in English. Any user-facing error message should be localized and sent in the google.rpc.Status.details field, or localized by the
+          * client.
+          */
+        var message: js.UndefOr[String] = js.undefined
+      }
+      object GoogleRpcStatus {
+        
+        inline def apply(): GoogleRpcStatus = {
+          val __obj = js.Dynamic.literal()
+          __obj.asInstanceOf[GoogleRpcStatus]
+        }
+        
+        extension [Self <: GoogleRpcStatus](x: Self) {
+          
+          inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+          
+          inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+          
+          inline def setDetails(
+            value: js.Array[
+                      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+          {[ P in string ]: any}
+            */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleRpcStatus & TopLevel[Any]
+                    ]
+          ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+          
+          inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+          
+          inline def setDetailsVarargs(
+            value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+          {[ P in string ]: any}
+            */ typings.maximMazurokGapiClientPolicytroubleshooter.maximMazurokGapiClientPolicytroubleshooterStrings.GoogleRpcStatus & TopLevel[Any])*
+          ): Self = StObject.set(x, "details", js.Array(value*))
+          
+          inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+          
+          inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
         }
       }
       
@@ -502,7 +574,7 @@ object gapi {
       @js.native
       trait IamResource extends StObject {
         
-        /** Checks whether a member has a specific permission for a specific resource, and explains why the member does or does not have that permission. */
+        /** Checks whether a principal has a specific permission for a specific resource, and explains why the principal does or does not have that permission. */
         def troubleshoot(request: Accesstoken): Request[GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse] = js.native
         def troubleshoot(request: Alt, body: GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest): Request[GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse] = js.native
       }

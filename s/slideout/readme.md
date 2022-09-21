@@ -11,9 +11,9 @@ A touch slideout navigation menu for your mobile web apps.
 | Full name          | slideout |
 | Keywords           | slideout, offcanvas, menu, touch |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 340002 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 27764.0 |
+| # stars            | 7982.0 |
 
 ## Links
 - [Homepage](https://github.com/mango/slideout#readme)

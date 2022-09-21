@@ -1,38 +1,180 @@
 package typings.antDesignReactNative
 
-import typings.reactNative.mod.View
+import typings.react.mod.PureComponent
+import typings.react.mod.ReactNode
+import typings.react.mod.ReactText
+import typings.reactNative.mod.GestureResponderEvent
+import typings.reactNative.mod.NativeSyntheticEvent
+import typings.reactNative.mod.StyleProp
+import typings.reactNative.mod.TextLayoutEventData
+import typings.reactNative.mod.TextPropsAndroid
+import typings.reactNative.mod.TextPropsIOS
+import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewProps
+import typings.reactNative.mod.ViewStyle
+import typings.reactNative.reactNativeStrings.clip
+import typings.reactNative.reactNativeStrings.head
+import typings.reactNative.reactNativeStrings.middle
+import typings.reactNative.reactNativeStrings.tail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewMod {
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixinType */ @JSImport("@ant-design/react-native/lib/view", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/view", JSImport.Default)
   @js.native
-  class default protected () extends View {
-    def this(props: ViewProps) = this()
+  open class default () extends AntmView
+  
+  @js.native
+  trait AntmView
+    extends PureComponent[ViewInterface, js.Object, Any]
+  
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.reactNative.mod.AccessibilityPropsIOS because Already inherited
+  - typings.reactNative.mod.AccessibilityPropsAndroid because Already inherited
+  - typings.reactNative.mod.AccessibilityProps because Already inherited
+  - typings.reactNative.mod.TextProps because var conflicts: accessibilityActions, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLabelledBy, accessibilityLanguage, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityValue, accessibilityViewIsModal, accessible, children, importantForAccessibility, nativeID, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, style, testID. Inlined onPress, onPressOut, ellipsizeMode, maxFontSizeMultiplier, lineBreakMode, allowFontScaling, onLongPress, numberOfLines, onTextLayout, onPressIn */ trait ViewInterface
+    extends StObject
+       with ViewProps
+       with TextPropsIOS
+       with TextPropsAndroid {
+    
     /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * Specifies whether fonts should scale to respect Text Size accessibility settings.
+      * The default is `true`.
       */
-    def this(props: ViewProps, context: js.Any) = this()
+    var allowFontScaling: js.UndefOr[Boolean] = js.undefined
+    
+    @JSName("children")
+    var children_ViewInterface: js.UndefOr[ReactNode | ReactText] = js.undefined
+    
+    /**
+      * This can be one of the following values:
+      *
+      * - `head` - The line is displayed so that the end fits in the container and the missing text
+      * at the beginning of the line is indicated by an ellipsis glyph. e.g., "...wxyz"
+      * - `middle` - The line is displayed so that the beginning and end fit in the container and the
+      * missing text in the middle is indicated by an ellipsis glyph. "ab...yz"
+      * - `tail` - The line is displayed so that the beginning fits in the container and the
+      * missing text at the end of the line is indicated by an ellipsis glyph. e.g., "abcd..."
+      * - `clip` - Lines are not drawn past the edge of the text container.
+      *
+      * The default is `tail`.
+      *
+      * `numberOfLines` must be set in conjunction with this prop.
+      *
+      * > `clip` is working only for iOS
+      */
+    var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
+    
+    /**
+      * Line Break mode. Works only with numberOfLines.
+      * clip is working only for iOS
+      */
+    var lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.undefined
+    
+    /**
+      * Specifies largest possible scale a font can reach when allowFontScaling is enabled. Possible values:
+      * - null/undefined (default): inherit from the parent node or the global default (0)
+      * - 0: no max, ignore parent/global default
+      * - >= 1: sets the maxFontSizeMultiplier of this node to this value
+      */
+    var maxFontSizeMultiplier: js.UndefOr[Double | Null] = js.undefined
+    
+    /**
+      * Used to truncate the text with an ellipsis after computing the text
+      * layout, including line wrapping, such that the total number of lines
+      * does not exceed this number.
+      *
+      * This prop is commonly used with `ellipsizeMode`.
+      */
+    var numberOfLines: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * This function is called on long press.
+      * e.g., `onLongPress={this.increaseSize}>``
+      */
+    var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+    
+    /**
+      * This function is called on press.
+      * Text intrinsically supports press handling with a default highlight state (which can be disabled with suppressHighlighting).
+      */
+    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+    
+    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+    
+    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+    
+    /**
+      * Invoked on Text layout
+      */
+    var onTextLayout: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[TextLayoutEventData], Unit]] = js.undefined
+    
+    @JSName("style")
+    var style_ViewInterface: js.UndefOr[StyleProp[TextStyle | ViewStyle]] = js.undefined
   }
-  /* static members */
-  object default {
+  object ViewInterface {
     
-    @JSImport("@ant-design/react-native/lib/view", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
+    inline def apply(): ViewInterface = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ViewInterface]
+    }
     
-    /**
-      * Is 3D Touch / Force Touch available (i.e. will touch events include `force`)
-      * @platform ios
-      */
-    @JSImport("@ant-design/react-native/lib/view", "default.forceTouchAvailable")
-    @js.native
-    def forceTouchAvailable: Boolean = js.native
-    inline def forceTouchAvailable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceTouchAvailable")(x.asInstanceOf[js.Any])
+    extension [Self <: ViewInterface](x: Self) {
+      
+      inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
+      
+      inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
+      
+      inline def setChildren(value: ReactNode | ReactText): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
+      
+      inline def setEllipsizeModeUndefined: Self = StObject.set(x, "ellipsizeMode", js.undefined)
+      
+      inline def setLineBreakMode(value: head | middle | tail | clip): Self = StObject.set(x, "lineBreakMode", value.asInstanceOf[js.Any])
+      
+      inline def setLineBreakModeUndefined: Self = StObject.set(x, "lineBreakMode", js.undefined)
+      
+      inline def setMaxFontSizeMultiplier(value: Double): Self = StObject.set(x, "maxFontSizeMultiplier", value.asInstanceOf[js.Any])
+      
+      inline def setMaxFontSizeMultiplierNull: Self = StObject.set(x, "maxFontSizeMultiplier", null)
+      
+      inline def setMaxFontSizeMultiplierUndefined: Self = StObject.set(x, "maxFontSizeMultiplier", js.undefined)
+      
+      inline def setNumberOfLines(value: Double): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
+      
+      inline def setNumberOfLinesUndefined: Self = StObject.set(x, "numberOfLines", js.undefined)
+      
+      inline def setOnLongPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
+      
+      inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
+      
+      inline def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+      
+      inline def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
+      
+      inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+      
+      inline def setOnPressOut(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
+      
+      inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
+      
+      inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+      
+      inline def setOnTextLayout(value: /* event */ NativeSyntheticEvent[TextLayoutEventData] => Unit): Self = StObject.set(x, "onTextLayout", js.Any.fromFunction1(value))
+      
+      inline def setOnTextLayoutUndefined: Self = StObject.set(x, "onTextLayout", js.undefined)
+      
+      inline def setStyle(value: StyleProp[TextStyle | ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    }
   }
 }

@@ -1,5 +1,6 @@
 package typings.antd
 
+import typings.react.mod.CSSProperties
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +22,7 @@ object paragraphMod {
     
     var rows: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var width: js.UndefOr[widthUnit | js.Array[widthUnit]] = js.undefined
   }
@@ -46,7 +47,7 @@ object paragraphMod {
       
       inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
@@ -54,7 +55,7 @@ object paragraphMod {
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      inline def setWidthVarargs(value: widthUnit*): Self = StObject.set(x, "width", js.Array(value :_*))
+      inline def setWidthVarargs(value: widthUnit*): Self = StObject.set(x, "width", js.Array(value*))
     }
   }
   

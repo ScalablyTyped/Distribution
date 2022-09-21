@@ -15,7 +15,7 @@ trait ReadonlySet[T] extends StObject {
   def forEach(callbackfn: js.Function3[/* value */ T, /* value2 */ T, /* set */ ReadonlySet[T], Unit]): Unit = js.native
   def forEach(
     callbackfn: js.Function3[/* value */ T, /* value2 */ T, /* set */ ReadonlySet[T], Unit],
-    thisArg: js.Any
+    thisArg: Any
   ): Unit = js.native
   
   def has(value: T): scala.Boolean = js.native

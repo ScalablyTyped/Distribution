@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,8 +30,8 @@ type PaymentAuthorizedHandler = /**
   * [[PaymentDataError.message|`message`]] to be displayed to the user.
   */
 js.Function1[
-/* paymentData */ typings.googlepay.google.payments.api.PaymentData, 
-js.Promise[typings.googlepay.google.payments.api.PaymentAuthorizationResult] | typings.googlepay.google.payments.api.PaymentAuthorizationResult]
+/* paymentData */ PaymentData, 
+js.Promise[PaymentAuthorizationResult] | PaymentAuthorizationResult]
 
 /**
   * This handler is used when payment data changes in the payment sheet
@@ -52,8 +53,8 @@ type PaymentDataChangedHandler = /**
   * reject if possible.*
   */
 js.Function1[
-/* intermediatePaymentData */ typings.googlepay.google.payments.api.IntermediatePaymentData, 
-js.Promise[typings.googlepay.google.payments.api.PaymentDataRequestUpdate] | typings.googlepay.google.payments.api.PaymentDataRequestUpdate]
+/* intermediatePaymentData */ IntermediatePaymentData, 
+js.Promise[PaymentDataRequestUpdate] | PaymentDataRequestUpdate]
 
 /**
   * Specific tokenization parameters used for
@@ -81,4 +82,4 @@ type PaymentGatewayTokenizationParameters = /**
   *
   * All values must be strings.
   */
-org.scalablytyped.runtime.StringDictionary[java.lang.String]
+StringDictionary[String]

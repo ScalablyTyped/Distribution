@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SearchOrdersFulfillmentFilter")
 @js.native
-class SearchOrdersFulfillmentFilter () extends StObject {
+open class SearchOrdersFulfillmentFilter () extends StObject {
   
   /**
     * List of `fulfillment states` to filter for. Will return orders if any of its fulfillments match any of the

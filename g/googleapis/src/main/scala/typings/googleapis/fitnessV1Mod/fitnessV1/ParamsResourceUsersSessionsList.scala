@@ -1,9 +1,5 @@
 package typings.googleapis.fitnessV1Mod.fitnessV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,43 +9,32 @@ trait ParamsResourceUsersSessionsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * If non-empty, only sessions with these activity types should be returned.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var activityType: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * An RFC3339 timestamp. Only sessions ending between the start and end
-    * times will be included in the response.
+    * An RFC3339 timestamp. Only sessions ending between the start and end times will be included in the response. If this time is omitted but startTime is specified, all sessions from startTime to the end of time will be returned.
     */
   var endTime: js.UndefOr[String] = js.undefined
   
   /**
-    * If true, deleted sessions will be returned. When set to true, sessions
-    * returned in this response will only have an ID and will not have any
-    * other fields.
+    * If true, and if both startTime and endTime are omitted, session deletions will be returned.
     */
   var includeDeleted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The continuation token, which is used for incremental syncing. To get the
-    * next batch of changes, set this parameter to the value of nextPageToken
-    * from the previous response. This token is treated as a timestamp (in
-    * millis since epoch). If specified, the API returns sessions modified
-    * since this time. The page token is ignored if either start or end time is
-    * specified. If none of start time, end time, and the page token is
-    * specified, sessions modified in the last 30 days are returned.
+    * The continuation token, which is used for incremental syncing. To get the next batch of changes, set this parameter to the value of nextPageToken from the previous response. The page token is ignored if either start or end time is specified. If none of start time, end time, and the page token is specified, sessions modified in the last 30 days are returned.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * An RFC3339 timestamp. Only sessions ending between the start and end
-    * times will be included in the response.
+    * An RFC3339 timestamp. Only sessions ending between the start and end times will be included in the response. If this time is omitted but endTime is specified, all sessions from the start of time up to endTime will be returned.
     */
   var startTime: js.UndefOr[String] = js.undefined
   
   /**
-    * List sessions for the person identified. Use me to indicate the
-    * authenticated user. Only me is supported at this time.
+    * List sessions for the person identified. Use me to indicate the authenticated user. Only me is supported at this time.
     */
   var userId: js.UndefOr[String] = js.undefined
 }
@@ -62,9 +47,11 @@ object ParamsResourceUsersSessionsList {
   
   extension [Self <: ParamsResourceUsersSessionsList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setActivityType(value: js.Array[Double]): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
+    
+    inline def setActivityTypeVarargs(value: Double*): Self = StObject.set(x, "activityType", js.Array(value*))
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

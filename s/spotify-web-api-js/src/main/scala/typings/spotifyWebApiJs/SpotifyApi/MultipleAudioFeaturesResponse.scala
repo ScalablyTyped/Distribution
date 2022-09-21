@@ -25,6 +25,6 @@ object MultipleAudioFeaturesResponse {
     
     inline def setAudio_features(value: js.Array[AudioFeaturesObject]): Self = StObject.set(x, "audio_features", value.asInstanceOf[js.Any])
     
-    inline def setAudio_featuresVarargs(value: AudioFeaturesObject*): Self = StObject.set(x, "audio_features", js.Array(value :_*))
+    inline def setAudio_featuresVarargs(value: AudioFeaturesObject*): Self = StObject.set(x, "audio_features", js.Array(value*))
   }
 }

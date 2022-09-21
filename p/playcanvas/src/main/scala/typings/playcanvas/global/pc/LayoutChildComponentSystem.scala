@@ -5,13 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new LayoutChildComponentSystem.
-  * @param app - The application.
+  * Manages creation of {@link LayoutChildComponent}s.
+  *
+  * @augments ComponentSystem
   */
 @JSGlobal("pc.LayoutChildComponentSystem")
 @js.native
-class LayoutChildComponentSystem protected ()
-  extends StObject
-     with typings.playcanvas.pc.EventHandler {
-  def this(app: typings.playcanvas.pc.Application) = this()
+open class LayoutChildComponentSystem protected ()
+  extends typings.playcanvas.mod.LayoutChildComponentSystem {
+  /**
+    * Create a new ComponentSystem instance.
+    *
+    * @param {AppBase} app - The application managing this system.
+    */
+  def this(app: typings.playcanvas.mod.AppBase) = this()
 }

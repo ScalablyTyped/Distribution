@@ -27,6 +27,6 @@ object QueryState {
     
     inline def setR(value: js.Array[RefinementCategory]): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    inline def setRVarargs(value: RefinementCategory*): Self = StObject.set(x, "r", js.Array(value :_*))
+    inline def setRVarargs(value: RefinementCategory*): Self = StObject.set(x, "r", js.Array(value*))
   }
 }

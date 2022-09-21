@@ -9,25 +9,30 @@ trait ResourceShareInvitation extends StObject {
   /**
     * The date and time when the invitation was sent.
     */
-  var invitationTimestamp: js.UndefOr[DateTime] = js.undefined
+  var invitationTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The ID of the AWS account that received the invitation.
+    * The ID of the Amazon Web Services account that received the invitation.
     */
   var receiverAccountId: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the resource share.
+    * The Amazon Resoure Name (ARN) of the IAM user or role that received the invitation.
+    */
+  var receiverArn: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon Resoure Name (ARN) of the resource share
     */
   var resourceShareArn: js.UndefOr[String] = js.undefined
   
   /**
-    * To view the resources associated with a pending resource share invitation, use  ListPendingInvitationResources.
+    * To view the resources associated with a pending resource share invitation, use ListPendingInvitationResources.
     */
   var resourceShareAssociations: js.UndefOr[ResourceShareAssociationList] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the invitation.
+    * The Amazon Resoure Name (ARN) of the invitation.
     */
   var resourceShareInvitationArn: js.UndefOr[String] = js.undefined
   
@@ -37,12 +42,12 @@ trait ResourceShareInvitation extends StObject {
   var resourceShareName: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS account that sent the invitation.
+    * The ID of the Amazon Web Services account that sent the invitation.
     */
   var senderAccountId: js.UndefOr[String] = js.undefined
   
   /**
-    * The status of the invitation.
+    * The current status of the invitation.
     */
   var status: js.UndefOr[ResourceShareInvitationStatus] = js.undefined
 }
@@ -55,13 +60,17 @@ object ResourceShareInvitation {
   
   extension [Self <: ResourceShareInvitation](x: Self) {
     
-    inline def setInvitationTimestamp(value: DateTime): Self = StObject.set(x, "invitationTimestamp", value.asInstanceOf[js.Any])
+    inline def setInvitationTimestamp(value: js.Date): Self = StObject.set(x, "invitationTimestamp", value.asInstanceOf[js.Any])
     
     inline def setInvitationTimestampUndefined: Self = StObject.set(x, "invitationTimestamp", js.undefined)
     
     inline def setReceiverAccountId(value: String): Self = StObject.set(x, "receiverAccountId", value.asInstanceOf[js.Any])
     
     inline def setReceiverAccountIdUndefined: Self = StObject.set(x, "receiverAccountId", js.undefined)
+    
+    inline def setReceiverArn(value: String): Self = StObject.set(x, "receiverArn", value.asInstanceOf[js.Any])
+    
+    inline def setReceiverArnUndefined: Self = StObject.set(x, "receiverArn", js.undefined)
     
     inline def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
     
@@ -71,7 +80,7 @@ object ResourceShareInvitation {
     
     inline def setResourceShareAssociationsUndefined: Self = StObject.set(x, "resourceShareAssociations", js.undefined)
     
-    inline def setResourceShareAssociationsVarargs(value: ResourceShareAssociation*): Self = StObject.set(x, "resourceShareAssociations", js.Array(value :_*))
+    inline def setResourceShareAssociationsVarargs(value: ResourceShareAssociation*): Self = StObject.set(x, "resourceShareAssociations", js.Array(value*))
     
     inline def setResourceShareInvitationArn(value: String): Self = StObject.set(x, "resourceShareInvitationArn", value.asInstanceOf[js.Any])
     

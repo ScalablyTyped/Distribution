@@ -11,6 +11,8 @@ trait UpdateFlowRequest extends StObject {
     */
   var FlowArn: string
   
+  var Maintenance: js.UndefOr[UpdateMaintenance] = js.undefined
+  
   var SourceFailoverConfig: js.UndefOr[UpdateFailoverConfig] = js.undefined
 }
 object UpdateFlowRequest {
@@ -23,6 +25,10 @@ object UpdateFlowRequest {
   extension [Self <: UpdateFlowRequest](x: Self) {
     
     inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenance(value: UpdateMaintenance): Self = StObject.set(x, "Maintenance", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceUndefined: Self = StObject.set(x, "Maintenance", js.undefined)
     
     inline def setSourceFailoverConfig(value: UpdateFailoverConfig): Self = StObject.set(x, "SourceFailoverConfig", value.asInstanceOf[js.Any])
     

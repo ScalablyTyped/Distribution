@@ -8,5 +8,5 @@ object commitRequiredExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/CommitRequiredException", "CommitRequiredException")
   @js.native
-  val CommitRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CommitRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -22,20 +22,20 @@ trait ASPxClientDashboardItemRequestUnderlyingDataParameters extends StObject {
   /**
     * Gets or sets the unique dimension value used to obtain the underlying data.
     */
-  var UniqueValuesByAxisName: js.Any
+  var UniqueValuesByAxisName: Any
   
   /**
     * Gets or sets the dimension value used to obtain the underlying data.
     */
-  var ValuesByAxisName: js.Any
+  var ValuesByAxisName: Any
 }
 object ASPxClientDashboardItemRequestUnderlyingDataParameters {
   
   inline def apply(
     AxisPoints: js.Array[ASPxClientDashboardItemDataAxisPoint],
     DataMembers: js.Array[String],
-    UniqueValuesByAxisName: js.Any,
-    ValuesByAxisName: js.Any
+    UniqueValuesByAxisName: Any,
+    ValuesByAxisName: Any
   ): ASPxClientDashboardItemRequestUnderlyingDataParameters = {
     val __obj = js.Dynamic.literal(AxisPoints = AxisPoints.asInstanceOf[js.Any], DataMembers = DataMembers.asInstanceOf[js.Any], UniqueValuesByAxisName = UniqueValuesByAxisName.asInstanceOf[js.Any], ValuesByAxisName = ValuesByAxisName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardItemRequestUnderlyingDataParameters]
@@ -45,14 +45,14 @@ object ASPxClientDashboardItemRequestUnderlyingDataParameters {
     
     inline def setAxisPoints(value: js.Array[ASPxClientDashboardItemDataAxisPoint]): Self = StObject.set(x, "AxisPoints", value.asInstanceOf[js.Any])
     
-    inline def setAxisPointsVarargs(value: ASPxClientDashboardItemDataAxisPoint*): Self = StObject.set(x, "AxisPoints", js.Array(value :_*))
+    inline def setAxisPointsVarargs(value: ASPxClientDashboardItemDataAxisPoint*): Self = StObject.set(x, "AxisPoints", js.Array(value*))
     
     inline def setDataMembers(value: js.Array[String]): Self = StObject.set(x, "DataMembers", value.asInstanceOf[js.Any])
     
-    inline def setDataMembersVarargs(value: String*): Self = StObject.set(x, "DataMembers", js.Array(value :_*))
+    inline def setDataMembersVarargs(value: String*): Self = StObject.set(x, "DataMembers", js.Array(value*))
     
-    inline def setUniqueValuesByAxisName(value: js.Any): Self = StObject.set(x, "UniqueValuesByAxisName", value.asInstanceOf[js.Any])
+    inline def setUniqueValuesByAxisName(value: Any): Self = StObject.set(x, "UniqueValuesByAxisName", value.asInstanceOf[js.Any])
     
-    inline def setValuesByAxisName(value: js.Any): Self = StObject.set(x, "ValuesByAxisName", value.asInstanceOf[js.Any])
+    inline def setValuesByAxisName(value: Any): Self = StObject.set(x, "ValuesByAxisName", value.asInstanceOf[js.Any])
   }
 }

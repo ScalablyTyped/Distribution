@@ -42,7 +42,7 @@ trait NavigationBehaviorOptions extends StObject {
     * the router adds the `navigationId` on each navigation.
     *
     */
-  var state: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var state: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
 object NavigationBehaviorOptions {
   
@@ -61,7 +61,7 @@ object NavigationBehaviorOptions {
     
     inline def setSkipLocationChangeUndefined: Self = StObject.set(x, "skipLocationChange", js.undefined)
     
-    inline def setState(value: StringDictionary[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: StringDictionary[Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

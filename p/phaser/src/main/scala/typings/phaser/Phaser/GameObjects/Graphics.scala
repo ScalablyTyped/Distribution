@@ -13,7 +13,6 @@ import typings.phaser.Phaser.Geom.Point
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Types.GameObjects.Graphics.RoundedRectRadius
 import typings.phaser.Phaser.Types.GameObjects.Graphics.Styles
-import typings.phaser.integer
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -133,7 +132,7 @@ trait Graphics
   /**
     * The array of commands used to render the Graphics.
     */
-  var commandBuffer: js.Array[js.Any] = js.native
+  var commandBuffer: js.Array[Any] = js.native
   
   /**
     * The default fill alpha for shapes rendered by this Graphics object.
@@ -201,7 +200,7 @@ trait Graphics
     * @param smoothness The number of points to draw the ellipse with. Default 32.
     */
   def fillEllipse(x: Double, y: Double, width: Double, height: Double): this.type = js.native
-  def fillEllipse(x: Double, y: Double, width: Double, height: Double, smoothness: integer): this.type = js.native
+  def fillEllipse(x: Double, y: Double, width: Double, height: Double, smoothness: Double): this.type = js.native
   
   /**
     * Fill the given ellipse.
@@ -209,7 +208,7 @@ trait Graphics
     * @param smoothness The number of points to draw the ellipse with. Default 32.
     */
   def fillEllipseShape(ellipse: typings.phaser.Phaser.Geom.Ellipse): this.type = js.native
-  def fillEllipseShape(ellipse: typings.phaser.Phaser.Geom.Ellipse, smoothness: integer): this.type = js.native
+  def fillEllipseShape(ellipse: typings.phaser.Phaser.Geom.Ellipse, smoothness: Double): this.type = js.native
   
   /**
     * Sets a gradient fill style. This is a WebGL only feature.
@@ -225,14 +224,149 @@ trait Graphics
     * Note that for objects such as arcs or ellipses, or anything which is made out of triangles, each triangle used
     * will be filled with a gradient on its own. There is no ability to gradient fill a shape or path as a single
     * entity at this time.
-    * @param topLeft The tint being applied to the top-left of the Game Object.
-    * @param topRight The tint being applied to the top-right of the Game Object.
-    * @param bottomLeft The tint being applied to the bottom-left of the Game Object.
-    * @param bottomRight The tint being applied to the bottom-right of the Game Object.
-    * @param alpha The fill alpha. Default 1.
+    * @param topLeft The top left fill color.
+    * @param topRight The top right fill color.
+    * @param bottomLeft The bottom left fill color.
+    * @param bottomRight The bottom right fill color. Not used when filling triangles.
+    * @param alphaTopLeft The top left alpha value. If you give only this value, it's used for all corners. Default 1.
+    * @param alphaTopRight The top right alpha value. Default 1.
+    * @param alphaBottomLeft The bottom left alpha value. Default 1.
+    * @param alphaBottomRight The bottom right alpha value. Default 1.
     */
-  def fillGradientStyle(topLeft: integer, topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
-  def fillGradientStyle(topLeft: integer, topRight: integer, bottomLeft: integer, bottomRight: integer, alpha: Double): this.type = js.native
+  def fillGradientStyle(topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double): this.type = js.native
+  def fillGradientStyle(topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double, alphaTopLeft: Double): this.type = js.native
+  def fillGradientStyle(
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: Double,
+    bottomRight: Double,
+    alphaTopLeft: Double,
+    alphaTopRight: Double
+  ): this.type = js.native
+  def fillGradientStyle(
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: Double,
+    bottomRight: Double,
+    alphaTopLeft: Double,
+    alphaTopRight: Double,
+    alphaBottomLeft: Double
+  ): this.type = js.native
+  def fillGradientStyle(
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: Double,
+    bottomRight: Double,
+    alphaTopLeft: Double,
+    alphaTopRight: Double,
+    alphaBottomLeft: Double,
+    alphaBottomRight: Double
+  ): this.type = js.native
+  def fillGradientStyle(
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: Double,
+    bottomRight: Double,
+    alphaTopLeft: Double,
+    alphaTopRight: Double,
+    alphaBottomLeft: Unit,
+    alphaBottomRight: Double
+  ): this.type = js.native
+  def fillGradientStyle(
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: Double,
+    bottomRight: Double,
+    alphaTopLeft: Double,
+    alphaTopRight: Unit,
+    alphaBottomLeft: Double
+  ): this.type = js.native
+  def fillGradientStyle(
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: Double,
+    bottomRight: Double,
+    alphaTopLeft: Double,
+    alphaTopRight: Unit,
+    alphaBottomLeft: Double,
+    alphaBottomRight: Double
+  ): this.type = js.native
+  def fillGradientStyle(
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: Double,
+    bottomRight: Double,
+    alphaTopLeft: Double,
+    alphaTopRight: Unit,
+    alphaBottomLeft: Unit,
+    alphaBottomRight: Double
+  ): this.type = js.native
+  def fillGradientStyle(
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: Double,
+    bottomRight: Double,
+    alphaTopLeft: Unit,
+    alphaTopRight: Double
+  ): this.type = js.native
+  def fillGradientStyle(
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: Double,
+    bottomRight: Double,
+    alphaTopLeft: Unit,
+    alphaTopRight: Double,
+    alphaBottomLeft: Double
+  ): this.type = js.native
+  def fillGradientStyle(
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: Double,
+    bottomRight: Double,
+    alphaTopLeft: Unit,
+    alphaTopRight: Double,
+    alphaBottomLeft: Double,
+    alphaBottomRight: Double
+  ): this.type = js.native
+  def fillGradientStyle(
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: Double,
+    bottomRight: Double,
+    alphaTopLeft: Unit,
+    alphaTopRight: Double,
+    alphaBottomLeft: Unit,
+    alphaBottomRight: Double
+  ): this.type = js.native
+  def fillGradientStyle(
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: Double,
+    bottomRight: Double,
+    alphaTopLeft: Unit,
+    alphaTopRight: Unit,
+    alphaBottomLeft: Double
+  ): this.type = js.native
+  def fillGradientStyle(
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: Double,
+    bottomRight: Double,
+    alphaTopLeft: Unit,
+    alphaTopRight: Unit,
+    alphaBottomLeft: Double,
+    alphaBottomRight: Double
+  ): this.type = js.native
+  def fillGradientStyle(
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: Double,
+    bottomRight: Double,
+    alphaTopLeft: Unit,
+    alphaTopRight: Unit,
+    alphaBottomLeft: Unit,
+    alphaBottomRight: Double
+  ): this.type = js.native
   
   /**
     * Fill the current path.
@@ -275,14 +409,14 @@ trait Graphics
     * @param closePath When `true`, the path is closed before being stroked. Default false.
     * @param endIndex The index of `points` to stop at. Defaults to `points.length`.
     */
-  def fillPoints(points: js.Array[js.Any | Point]): this.type = js.native
-  def fillPoints(points: js.Array[js.Any | Point], closeShape: Boolean): this.type = js.native
-  def fillPoints(points: js.Array[js.Any | Point], closeShape: Boolean, closePath: Boolean): this.type = js.native
-  def fillPoints(points: js.Array[js.Any | Point], closeShape: Boolean, closePath: Boolean, endIndex: integer): this.type = js.native
-  def fillPoints(points: js.Array[js.Any | Point], closeShape: Boolean, closePath: Unit, endIndex: integer): this.type = js.native
-  def fillPoints(points: js.Array[js.Any | Point], closeShape: Unit, closePath: Boolean): this.type = js.native
-  def fillPoints(points: js.Array[js.Any | Point], closeShape: Unit, closePath: Boolean, endIndex: integer): this.type = js.native
-  def fillPoints(points: js.Array[js.Any | Point], closeShape: Unit, closePath: Unit, endIndex: integer): this.type = js.native
+  def fillPoints(points: js.Array[Any | Point]): this.type = js.native
+  def fillPoints(points: js.Array[Any | Point], closeShape: Boolean): this.type = js.native
+  def fillPoints(points: js.Array[Any | Point], closeShape: Boolean, closePath: Boolean): this.type = js.native
+  def fillPoints(points: js.Array[Any | Point], closeShape: Boolean, closePath: Boolean, endIndex: Double): this.type = js.native
+  def fillPoints(points: js.Array[Any | Point], closeShape: Boolean, closePath: Unit, endIndex: Double): this.type = js.native
+  def fillPoints(points: js.Array[Any | Point], closeShape: Unit, closePath: Boolean): this.type = js.native
+  def fillPoints(points: js.Array[Any | Point], closeShape: Unit, closePath: Boolean, endIndex: Double): this.type = js.native
+  def fillPoints(points: js.Array[Any | Point], closeShape: Unit, closePath: Unit, endIndex: Double): this.type = js.native
   
   /**
     * Fill a rectangle with the given position and size.
@@ -344,18 +478,22 @@ trait Graphics
     * 
     * If `key` is a Canvas it will draw the texture to that canvas context. Note that it will NOT
     * automatically upload it to the GPU in WebGL mode.
+    * 
+    * Please understand that the texture is created via the Canvas API of the browser, therefore some
+    * Graphics features, such as `fillGradientStyle`, will not appear on the resulting texture,
+    * as they're unsupported by the Canvas API.
     * @param key The key to store the texture with in the Texture Manager, or a Canvas to draw to.
     * @param width The width of the graphics to generate.
     * @param height The height of the graphics to generate.
     */
   def generateTexture(key: String): this.type = js.native
-  def generateTexture(key: String, width: Unit, height: integer): this.type = js.native
-  def generateTexture(key: String, width: integer): this.type = js.native
-  def generateTexture(key: String, width: integer, height: integer): this.type = js.native
+  def generateTexture(key: String, width: Double): this.type = js.native
+  def generateTexture(key: String, width: Double, height: Double): this.type = js.native
+  def generateTexture(key: String, width: Unit, height: Double): this.type = js.native
   def generateTexture(key: HTMLCanvasElement): this.type = js.native
-  def generateTexture(key: HTMLCanvasElement, width: Unit, height: integer): this.type = js.native
-  def generateTexture(key: HTMLCanvasElement, width: integer): this.type = js.native
-  def generateTexture(key: HTMLCanvasElement, width: integer, height: integer): this.type = js.native
+  def generateTexture(key: HTMLCanvasElement, width: Double): this.type = js.native
+  def generateTexture(key: HTMLCanvasElement, width: Double, height: Double): this.type = js.native
+  def generateTexture(key: HTMLCanvasElement, width: Unit, height: Double): this.type = js.native
   
   /**
     * Draw a line between the given points.
@@ -385,13 +523,13 @@ trait Graphics
     * @param bottomRight The tint being applied to the bottom-right of the Game Object.
     * @param alpha The fill alpha. Default 1.
     */
-  def lineGradientStyle(lineWidth: Double, topLeft: integer, topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
+  def lineGradientStyle(lineWidth: Double, topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double): this.type = js.native
   def lineGradientStyle(
     lineWidth: Double,
-    topLeft: integer,
-    topRight: integer,
-    bottomLeft: integer,
-    bottomRight: integer,
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: Double,
+    bottomRight: Double,
     alpha: Double
   ): this.type = js.native
   
@@ -473,36 +611,6 @@ trait Graphics
   def setDefaultStyles(options: Styles): this.type = js.native
   
   /**
-    * Sets the texture frame this Graphics Object will use when drawing all shapes defined after calling this.
-    * 
-    * Textures are referenced by their string-based keys, as stored in the Texture Manager.
-    * 
-    * Once set, all shapes will use this texture. Call this method with no arguments to clear it.
-    * 
-    * The textures are not tiled. They are stretched to the dimensions of the shapes being rendered. For this reason,
-    * it works best with seamless / tileable textures.
-    * 
-    * The mode argument controls how the textures are combined with the fill colors. The default value (0) will
-    * multiply the texture by the fill color. A value of 1 will use just the fill color, but the alpha data from the texture,
-    * and a value of 2 will use just the texture and no fill color at all.
-    * @param key The key of the texture to be used, as stored in the Texture Manager. Leave blank to clear a previously set texture.
-    * @param frame The name or index of the frame within the Texture.
-    * @param mode The texture tint mode. 0 is multiply, 1 is alpha only and 2 is texture only. Default 0.
-    */
-  def setTexture(): this.type = js.native
-  def setTexture(key: String): this.type = js.native
-  def setTexture(key: String, frame: String): this.type = js.native
-  def setTexture(key: String, frame: String, mode: Double): this.type = js.native
-  def setTexture(key: String, frame: Unit, mode: Double): this.type = js.native
-  def setTexture(key: String, frame: integer): this.type = js.native
-  def setTexture(key: String, frame: integer, mode: Double): this.type = js.native
-  def setTexture(key: Unit, frame: String): this.type = js.native
-  def setTexture(key: Unit, frame: String, mode: Double): this.type = js.native
-  def setTexture(key: Unit, frame: Unit, mode: Double): this.type = js.native
-  def setTexture(key: Unit, frame: integer): this.type = js.native
-  def setTexture(key: Unit, frame: integer, mode: Double): this.type = js.native
-  
-  /**
     * Creates a pie-chart slice shape centered at `x`, `y` with the given radius.
     * You must define the start and end angle of the slice.
     * 
@@ -571,7 +679,7 @@ trait Graphics
     * @param smoothness The number of points to draw the ellipse with. Default 32.
     */
   def strokeEllipse(x: Double, y: Double, width: Double, height: Double): this.type = js.native
-  def strokeEllipse(x: Double, y: Double, width: Double, height: Double, smoothness: integer): this.type = js.native
+  def strokeEllipse(x: Double, y: Double, width: Double, height: Double, smoothness: Double): this.type = js.native
   
   /**
     * Stroke the given ellipse.
@@ -579,7 +687,7 @@ trait Graphics
     * @param smoothness The number of points to draw the ellipse with. Default 32.
     */
   def strokeEllipseShape(ellipse: typings.phaser.Phaser.Geom.Ellipse): this.type = js.native
-  def strokeEllipseShape(ellipse: typings.phaser.Phaser.Geom.Ellipse, smoothness: integer): this.type = js.native
+  def strokeEllipseShape(ellipse: typings.phaser.Phaser.Geom.Ellipse, smoothness: Double): this.type = js.native
   
   /**
     * Draw the given line.
@@ -603,14 +711,14 @@ trait Graphics
     * @param closePath When `true`, the path is closed before being stroked. Default false.
     * @param endIndex The index of `points` to stop drawing at. Defaults to `points.length`.
     */
-  def strokePoints(points: js.Array[js.Any | Point]): this.type = js.native
-  def strokePoints(points: js.Array[js.Any | Point], closeShape: Boolean): this.type = js.native
-  def strokePoints(points: js.Array[js.Any | Point], closeShape: Boolean, closePath: Boolean): this.type = js.native
-  def strokePoints(points: js.Array[js.Any | Point], closeShape: Boolean, closePath: Boolean, endIndex: integer): this.type = js.native
-  def strokePoints(points: js.Array[js.Any | Point], closeShape: Boolean, closePath: Unit, endIndex: integer): this.type = js.native
-  def strokePoints(points: js.Array[js.Any | Point], closeShape: Unit, closePath: Boolean): this.type = js.native
-  def strokePoints(points: js.Array[js.Any | Point], closeShape: Unit, closePath: Boolean, endIndex: integer): this.type = js.native
-  def strokePoints(points: js.Array[js.Any | Point], closeShape: Unit, closePath: Unit, endIndex: integer): this.type = js.native
+  def strokePoints(points: js.Array[Any | Point]): this.type = js.native
+  def strokePoints(points: js.Array[Any | Point], closeShape: Boolean): this.type = js.native
+  def strokePoints(points: js.Array[Any | Point], closeShape: Boolean, closePath: Boolean): this.type = js.native
+  def strokePoints(points: js.Array[Any | Point], closeShape: Boolean, closePath: Boolean, endIndex: Double): this.type = js.native
+  def strokePoints(points: js.Array[Any | Point], closeShape: Boolean, closePath: Unit, endIndex: Double): this.type = js.native
+  def strokePoints(points: js.Array[Any | Point], closeShape: Unit, closePath: Boolean): this.type = js.native
+  def strokePoints(points: js.Array[Any | Point], closeShape: Unit, closePath: Boolean, endIndex: Double): this.type = js.native
+  def strokePoints(points: js.Array[Any | Point], closeShape: Unit, closePath: Unit, endIndex: Double): this.type = js.native
   
   /**
     * Stroke a rectangle with the given position and size.

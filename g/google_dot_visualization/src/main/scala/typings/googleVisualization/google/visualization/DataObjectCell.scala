@@ -8,9 +8,9 @@ trait DataObjectCell extends StObject {
   
   var f: js.UndefOr[String] = js.undefined
   
-  var p: js.UndefOr[js.Any] = js.undefined
+  var p: js.UndefOr[Any] = js.undefined
   
-  var v: js.UndefOr[js.Any] = js.undefined
+  var v: js.UndefOr[Any] = js.undefined
 }
 object DataObjectCell {
   
@@ -25,11 +25,11 @@ object DataObjectCell {
     
     inline def setFUndefined: Self = StObject.set(x, "f", js.undefined)
     
-    inline def setP(value: js.Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
-    inline def setV(value: js.Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
     inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
   }

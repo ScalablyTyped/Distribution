@@ -26,7 +26,7 @@ object ASPxClientHtmlEditorInsertVideoCommandArguments {
     loop: Boolean,
     posterUrl: String,
     preloadMode: String,
-    selectedElement: js.Any,
+    selectedElement: Any,
     showPlayerControls: Boolean,
     src: String,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings

@@ -19,7 +19,7 @@ trait NodeInfo extends StObject {
   /**
     * 节点的dataset
     */
-  var dataset: js.UndefOr[js.Any] = js.undefined
+  var dataset: js.UndefOr[Any] = js.undefined
   
   /**
     * 节点的高度
@@ -78,7 +78,7 @@ object NodeInfo {
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    inline def setDataset(value: js.Any): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: Any): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     

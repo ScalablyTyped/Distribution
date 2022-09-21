@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MUIDataTableBodyCell extends StObject {
   
-  var children: js.UndefOr[js.Any] = js.undefined
+  var children: js.UndefOr[Any] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -14,13 +14,13 @@ trait MUIDataTableBodyCell extends StObject {
   
   var colIndex: js.UndefOr[Double] = js.undefined
   
-  var columnHeader: js.UndefOr[js.Any] = js.undefined
+  var columnHeader: js.UndefOr[Any] = js.undefined
   
   var dataIndex: js.UndefOr[Double] = js.undefined
   
   var options: js.UndefOr[MUIDataTableOptions] = js.undefined
   
-  var otherProps: js.UndefOr[js.Any] = js.undefined
+  var otherProps: js.UndefOr[Any] = js.undefined
   
   var rowIndex: js.UndefOr[Double] = js.undefined
 }
@@ -33,7 +33,7 @@ object MUIDataTableBodyCell {
   
   extension [Self <: MUIDataTableBodyCell](x: Self) {
     
-    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -49,7 +49,7 @@ object MUIDataTableBodyCell {
     
     inline def setColIndexUndefined: Self = StObject.set(x, "colIndex", js.undefined)
     
-    inline def setColumnHeader(value: js.Any): Self = StObject.set(x, "columnHeader", value.asInstanceOf[js.Any])
+    inline def setColumnHeader(value: Any): Self = StObject.set(x, "columnHeader", value.asInstanceOf[js.Any])
     
     inline def setColumnHeaderUndefined: Self = StObject.set(x, "columnHeader", js.undefined)
     
@@ -61,7 +61,7 @@ object MUIDataTableBodyCell {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOtherProps(value: js.Any): Self = StObject.set(x, "otherProps", value.asInstanceOf[js.Any])
+    inline def setOtherProps(value: Any): Self = StObject.set(x, "otherProps", value.asInstanceOf[js.Any])
     
     inline def setOtherPropsUndefined: Self = StObject.set(x, "otherProps", js.undefined)
     

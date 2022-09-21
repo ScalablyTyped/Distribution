@@ -9,6 +9,8 @@ import typings.officeUiFabricReact.panelBaseMod.PanelBase
 import typings.officeUiFabricReact.popupTypesMod.IPopupProps
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.global.JSX.Element
 import typings.std.Event
@@ -352,7 +354,9 @@ object panelTypesMod {
     /**
       * Optional custom function to handle clicks outside this component
       */
-    var onOuterClick: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var onOuterClick: js.UndefOr[
+        js.Function1[/* ev */ js.UndefOr[MouseEvent[HTMLDivElement, NativeMouseEvent]], Unit]
+      ] = js.undefined
     
     /**
       * Optional custom renderer for body region. Replaces any children passed into the component.
@@ -521,7 +525,7 @@ object panelTypesMod {
       
       inline def setOnOpenedUndefined: Self = StObject.set(x, "onOpened", js.undefined)
       
-      inline def setOnOuterClick(value: () => Unit): Self = StObject.set(x, "onOuterClick", js.Any.fromFunction0(value))
+      inline def setOnOuterClick(value: /* ev */ js.UndefOr[MouseEvent[HTMLDivElement, NativeMouseEvent]] => Unit): Self = StObject.set(x, "onOuterClick", js.Any.fromFunction1(value))
       
       inline def setOnOuterClickUndefined: Self = StObject.set(x, "onOuterClick", js.undefined)
       

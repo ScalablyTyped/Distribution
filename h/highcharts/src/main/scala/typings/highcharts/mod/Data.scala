@@ -48,8 +48,7 @@ trait Data extends StObject {
   /**
     * Parse a CSV input string
     */
-  def parseCSV(): js.Array[js.Array[DataValueType]] = js.native
-  def parseCSV(inOptions: DataOptions): js.Array[js.Array[DataValueType]] = js.native
+  def parseCSV(): Unit = js.native
   
   /**
     * Parse a single column. Set properties like .isDatetime and
@@ -67,7 +66,7 @@ trait Data extends StObject {
     * Parse a date and return it as a number. Overridable through
     * `options.parseDate`.
     */
-  def parseDate(`val`: String): Double = js.native
+  def parseDate(): Unit = js.native
   
   /**
     * Parse a Google spreadsheet.
@@ -79,7 +78,7 @@ trait Data extends StObject {
   /**
     * Parse a HTML table
     */
-  def parseTable(): js.Array[js.Array[DataValueType]] = js.native
+  def parseTable(): Unit = js.native
   
   /**
     * Parse numeric cells in to number types and date types in to true
@@ -90,12 +89,7 @@ trait Data extends StObject {
   /**
     * A hook for working directly on the parsed columns
     */
-  def parsed(): js.UndefOr[Boolean] = js.native
-  
-  /**
-    * Reorganize rows into columns.
-    */
-  def rowsToColumns(rows: js.Array[js.Array[DataValueType]]): js.UndefOr[js.Array[js.Array[DataValueType]]] = js.native
+  def parsed(): Unit = js.native
   
   /**
     * Trim a string from whitespaces.

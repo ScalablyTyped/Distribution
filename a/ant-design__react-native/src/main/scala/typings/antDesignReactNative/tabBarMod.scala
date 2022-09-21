@@ -14,13 +14,13 @@ object tabBarMod {
   
   @JSImport("@ant-design/react-native/lib/tab-bar", JSImport.Default)
   @js.native
-  class default () extends TabBar
+  open class default () extends TabBar
   object default {
     
     /* was `typeof TabBarItem` */
     @JSImport("@ant-design/react-native/lib/tab-bar", "default.Item")
     @js.native
-    class Item ()
+    open class Item ()
       extends typings.antDesignReactNative.tabBarItemMod.default
     /* static members */
     object Item {
@@ -60,10 +60,9 @@ object tabBarMod {
   }
   
   @js.native
-  trait TabBar
-    extends Component[TabBarNativeProps, js.Any, js.Any] {
+  trait TabBar extends Component[TabBarNativeProps, Any, Any] {
     
-    def getPanes(styles: ReturnType[js.Function1[/* theme */ Theme, TabBarStyle]], content: Boolean): js.Array[js.Any] = js.native
+    def getPanes(styles: ReturnType[js.Function1[/* theme */ Theme, TabBarStyle]], content: Boolean): js.Array[Any] = js.native
   }
   object TabBar {
     

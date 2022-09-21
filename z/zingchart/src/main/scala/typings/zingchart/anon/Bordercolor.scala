@@ -19,35 +19,22 @@ trait Bordercolor extends StObject {
     */
   var `background-color`: js.UndefOr[String] = js.undefined
   
+  var backgroundColor: js.UndefOr[String] = js.undefined
+  
   /**
-    * Sets the border color of the object. "none" | "transparent" | "purple" | "#33ccff" | "rgb(100, 15, 15)" | ...
+    * Requires border-width. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
   var `border-color`: js.UndefOr[String] = js.undefined
   
   /**
-    * Sets the border width of the object. 1 | 3 | | "6px" | ...
+    * Sets the border width of the object, applicable on closed shapes. Defaults to black when border-color is not defined. See also lin
+    * e-width for closed shapes. 4 | "6px" | ...
     */
-  var `border-width`: js.UndefOr[Double] = js.undefined
+  var `border-width`: js.UndefOr[Any] = js.undefined
   
-  /**
-    * Sets the line color of the object. "none" | "transparent" | "purple" | "#33ccff" | "rgb(100, 15, 15)" | ...
-    */
-  var `line-color`: js.UndefOr[String] = js.undefined
+  var borderColor: js.UndefOr[String] = js.undefined
   
-  /**
-    * Sets the line width of the object. 1 | 3 | | "6px" | ...
-    */
-  var `line-width`: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * Sets the size of the object. 4 | "6px" | ...
-    */
-  var size: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * Sets the shape type of the object. "circle" | "diamond" | "cross" | "arrow"
-    */
-  var `type`: js.UndefOr[String] = js.undefined
+  var borderWidth: js.UndefOr[Any] = js.undefined
 }
 object Bordercolor {
   
@@ -66,28 +53,24 @@ object Bordercolor {
     
     inline def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
     
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
     inline def `setBorder-color`(value: String): Self = StObject.set(x, "border-color", value.asInstanceOf[js.Any])
     
     inline def `setBorder-colorUndefined`: Self = StObject.set(x, "border-color", js.undefined)
     
-    inline def `setBorder-width`(value: Double): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
+    inline def `setBorder-width`(value: Any): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
     
     inline def `setBorder-widthUndefined`: Self = StObject.set(x, "border-width", js.undefined)
     
-    inline def `setLine-color`(value: String): Self = StObject.set(x, "line-color", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    inline def `setLine-colorUndefined`: Self = StObject.set(x, "line-color", js.undefined)
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    inline def `setLine-width`(value: Double): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Any): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    inline def `setLine-widthUndefined`: Self = StObject.set(x, "line-width", js.undefined)
-    
-    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-    
-    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.AccessRequests")
 @js.native
-class AccessRequests ()
+open class AccessRequests ()
   extends StObject
      with typings.sharepoint.SP.AccessRequests
 object AccessRequests {

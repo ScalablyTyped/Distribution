@@ -3,7 +3,7 @@ package typings.yamlFrontMatter
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.jsYaml.mod.LoadOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.yamlFrontMatter.anon.ContentKeyName
 import typings.yamlFrontMatter.anon.Dictkey
 import typings.yamlFrontMatter.yamlFrontMatterStrings.loadFront
@@ -23,14 +23,14 @@ object mod {
   inline def loadFront(content: Buffer): Dictkey = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFront")(content.asInstanceOf[js.Any]).asInstanceOf[Dictkey]
   inline def loadFront(content: Buffer, options: LoadOptions): Dictkey = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Dictkey]
   
-  inline def loadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: String, options: LoadOptions & ContentKeyName[contentKeyName]): loadFront & TopLevel[js.Any] & StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[loadFront & TopLevel[js.Any] & StringDictionary[js.Any]]
-  inline def loadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: Buffer, options: LoadOptions & ContentKeyName[contentKeyName]): loadFront & TopLevel[js.Any] & StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[loadFront & TopLevel[js.Any] & StringDictionary[js.Any]]
+  inline def loadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: String, options: LoadOptions & ContentKeyName[contentKeyName]): loadFront & TopLevel[Any] & StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[loadFront & TopLevel[Any] & StringDictionary[Any]]
+  inline def loadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: Buffer, options: LoadOptions & ContentKeyName[contentKeyName]): loadFront & TopLevel[Any] & StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[loadFront & TopLevel[Any] & StringDictionary[Any]]
   
   inline def safeLoadFront(content: String): Dictkey = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadFront")(content.asInstanceOf[js.Any]).asInstanceOf[Dictkey]
   inline def safeLoadFront(content: String, options: LoadOptions): Dictkey = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Dictkey]
   inline def safeLoadFront(content: Buffer): Dictkey = ^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadFront")(content.asInstanceOf[js.Any]).asInstanceOf[Dictkey]
   inline def safeLoadFront(content: Buffer, options: LoadOptions): Dictkey = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Dictkey]
   
-  inline def safeLoadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: String, options: LoadOptions & ContentKeyName[contentKeyName]): safeLoadFront & TopLevel[js.Any] & StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[safeLoadFront & TopLevel[js.Any] & StringDictionary[js.Any]]
-  inline def safeLoadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: Buffer, options: LoadOptions & ContentKeyName[contentKeyName]): safeLoadFront & TopLevel[js.Any] & StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[safeLoadFront & TopLevel[js.Any] & StringDictionary[js.Any]]
+  inline def safeLoadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: String, options: LoadOptions & ContentKeyName[contentKeyName]): safeLoadFront & TopLevel[Any] & StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[safeLoadFront & TopLevel[Any] & StringDictionary[Any]]
+  inline def safeLoadFront_contentKeyName_String_Intersection[contentKeyName /* <: String */](content: Buffer, options: LoadOptions & ContentKeyName[contentKeyName]): safeLoadFront & TopLevel[Any] & StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeLoadFront")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[safeLoadFront & TopLevel[Any] & StringDictionary[Any]]
 }

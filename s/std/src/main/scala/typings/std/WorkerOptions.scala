@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WorkerOptions extends StObject {
   
+  /* standard dom */
   var credentials: js.UndefOr[RequestCredentials] = js.undefined
   
+  /* standard dom */
   var name: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var `type`: js.UndefOr[WorkerType] = js.undefined
 }
 object WorkerOptions {

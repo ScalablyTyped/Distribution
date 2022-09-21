@@ -1,7 +1,7 @@
 
 # Scala.js typings for moment-mini
 
-Typings are for version 2.22.1
+Typings are for version 2.29.4
 
 ## Library description:
 Parse, validate, manipulate, and display dates
@@ -10,10 +10,10 @@ Parse, validate, manipulate, and display dates
 | ------------------ | :-------------: |
 | Full name          | moment-mini |
 | Keywords           | moment, date, time, parse, format, validate, i18n, l10n, ender |
-| # releases         | 2 |
-| # dependents       | 42 |
-| # downloads        | 4089266 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 801693.0 |
+| # stars            | 82.0 |
 
 ## Links
 - [Homepage](https://github.com/ksloan/moment-mini#readme)

@@ -35,12 +35,12 @@ object AnalyzeSyntaxResponse {
     
     inline def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
     
-    inline def setSentencesVarargs(value: Sentence*): Self = StObject.set(x, "sentences", js.Array(value :_*))
+    inline def setSentencesVarargs(value: Sentence*): Self = StObject.set(x, "sentences", js.Array(value*))
     
     inline def setTokens(value: js.Array[Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
     
-    inline def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value*))
   }
 }

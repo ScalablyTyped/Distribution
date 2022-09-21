@@ -1,12 +1,9 @@
 package typings.rcMentions
 
-import org.scalablytyped.runtime.TopLevel
 import typings.rcMentions.anon.SelectionLocation
 import typings.rcMentions.mentionsMod.MentionsProps
 import typings.rcMentions.optionMod.OptionProps
-import typings.std.Exclude
 import typings.std.HTMLTextAreaElement
-import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,13 +18,7 @@ object utilMod {
   
   inline def getBeforeSelectionText(input: HTMLTextAreaElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBeforeSelectionText")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getLastMeasureIndex(text: String): MeasureIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastMeasureIndex")(text.asInstanceOf[js.Any]).asInstanceOf[MeasureIndex]
-  inline def getLastMeasureIndex(text: String, prefix: String): MeasureIndex = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastMeasureIndex")(text.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[MeasureIndex]
   inline def getLastMeasureIndex(text: String, prefix: js.Array[String]): MeasureIndex = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastMeasureIndex")(text.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[MeasureIndex]
-  
-  @JSImport("rc-mentions/es/util", "omit")
-  @js.native
-  val omit: OmitFunc = js.native
   
   inline def replaceWithMeasure(text: String, measureConfig: MeasureConfig): SelectionLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceWithMeasure")(text.asInstanceOf[js.Any], measureConfig.asInstanceOf[js.Any])).asInstanceOf[SelectionLocation]
   
@@ -88,14 +79,4 @@ object utilMod {
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     }
   }
-  
-  type OmitFunc = js.Function2[
-    /* obj */ js.Object, 
-    /* keys */ Array[/* keyof object */ String], 
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K2 in std.Exclude<keyof object, [...std.Array<keyof object>][number]> ]: object[K2]}
-    */ typings.rcMentions.rcMentionsStrings.OmitFunc & TopLevel[js.Object]
-  ]
-  
-  type Omit_[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
 }

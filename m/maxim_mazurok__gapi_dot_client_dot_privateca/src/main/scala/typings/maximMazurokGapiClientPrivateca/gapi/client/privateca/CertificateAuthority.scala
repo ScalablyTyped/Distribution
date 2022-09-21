@@ -13,17 +13,17 @@ trait CertificateAuthority extends StObject {
   /** Output only. A structured description of this CertificateAuthority's CA certificate and its issuers. Ordered as self-to-root. */
   var caCertificateDescriptions: js.UndefOr[js.Array[CertificateDescription]] = js.undefined
   
-  /** Optional. The CertificateAuthorityPolicy to enforce when issuing Certificates from this CertificateAuthority. */
-  var certificatePolicy: js.UndefOr[CertificateAuthorityPolicy] = js.undefined
-  
   /** Required. Immutable. The config used to create a self-signed X.509 certificate or CSR. */
   var config: js.UndefOr[CertificateConfig] = js.undefined
   
   /** Output only. The time at which this CertificateAuthority was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** Output only. The time at which this CertificateAuthority will be deleted, if scheduled for deletion. */
+  /** Output only. The time at which this CertificateAuthority was soft deleted, if it is in the DELETED state. */
   var deleteTime: js.UndefOr[String] = js.undefined
+  
+  /** Output only. The time at which this CertificateAuthority will be permanently purged, if it is in the DELETED state. */
+  var expireTime: js.UndefOr[String] = js.undefined
   
   /**
     * Immutable. The name of a Cloud Storage bucket where this CertificateAuthority will publish content, such as the CA certificate and CRLs. This must be a bucket name, without any
@@ -31,9 +31,6 @@ trait CertificateAuthority extends StObject {
     * bucket will be created.
     */
   var gcsBucket: js.UndefOr[String] = js.undefined
-  
-  /** Optional. The IssuingOptions to follow when issuing Certificates from this CertificateAuthority. */
-  var issuingOptions: js.UndefOr[IssuingOptions] = js.undefined
   
   /**
     * Required. Immutable. Used when issuing certificates for this CertificateAuthority. If this CertificateAuthority is a self-signed CertificateAuthority, this key is also used to sign
@@ -45,13 +42,13 @@ trait CertificateAuthority extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateAuthority & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateAuthority & TopLevel[Any]
   ] = js.undefined
   
-  /** Required. The desired lifetime of the CA certificate. Used to create the "not_before_time" and "not_after_time" fields inside an X.509 certificate. */
+  /** Required. Immutable. The desired lifetime of the CA certificate. Used to create the "not_before_time" and "not_after_time" fields inside an X.509 certificate. */
   var lifetime: js.UndefOr[String] = js.undefined
   
-  /** Output only. The resource name for this CertificateAuthority in the format `projects/∗/locations/∗/certificateAuthorities/ *`. */
+  /** Output only. The resource name for this CertificateAuthority in the format `projects/ *‍/locations/ *‍/caPools/ *‍/certificateAuthorities/ *`. */
   var name: js.UndefOr[String] = js.undefined
   
   /**
@@ -69,13 +66,13 @@ trait CertificateAuthority extends StObject {
     */
   var subordinateConfig: js.UndefOr[SubordinateConfig] = js.undefined
   
-  /** Required. Immutable. The Tier of this CertificateAuthority. */
+  /** Output only. The CaPool.Tier of the CaPool that includes this CertificateAuthority. */
   var tier: js.UndefOr[String] = js.undefined
   
   /** Required. Immutable. The Type of this CertificateAuthority. */
   var `type`: js.UndefOr[String] = js.undefined
   
-  /** Output only. The time at which this CertificateAuthority was updated. */
+  /** Output only. The time at which this CertificateAuthority was last updated. */
   var updateTime: js.UndefOr[String] = js.undefined
 }
 object CertificateAuthority {
@@ -95,11 +92,7 @@ object CertificateAuthority {
     
     inline def setCaCertificateDescriptionsUndefined: Self = StObject.set(x, "caCertificateDescriptions", js.undefined)
     
-    inline def setCaCertificateDescriptionsVarargs(value: CertificateDescription*): Self = StObject.set(x, "caCertificateDescriptions", js.Array(value :_*))
-    
-    inline def setCertificatePolicy(value: CertificateAuthorityPolicy): Self = StObject.set(x, "certificatePolicy", value.asInstanceOf[js.Any])
-    
-    inline def setCertificatePolicyUndefined: Self = StObject.set(x, "certificatePolicy", js.undefined)
+    inline def setCaCertificateDescriptionsVarargs(value: CertificateDescription*): Self = StObject.set(x, "caCertificateDescriptions", js.Array(value*))
     
     inline def setConfig(value: CertificateConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
@@ -113,13 +106,13 @@ object CertificateAuthority {
     
     inline def setDeleteTimeUndefined: Self = StObject.set(x, "deleteTime", js.undefined)
     
+    inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+    
+    inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+    
     inline def setGcsBucket(value: String): Self = StObject.set(x, "gcsBucket", value.asInstanceOf[js.Any])
     
     inline def setGcsBucketUndefined: Self = StObject.set(x, "gcsBucket", js.undefined)
-    
-    inline def setIssuingOptions(value: IssuingOptions): Self = StObject.set(x, "issuingOptions", value.asInstanceOf[js.Any])
-    
-    inline def setIssuingOptionsUndefined: Self = StObject.set(x, "issuingOptions", js.undefined)
     
     inline def setKeySpec(value: KeyVersionSpec): Self = StObject.set(x, "keySpec", value.asInstanceOf[js.Any])
     
@@ -128,7 +121,7 @@ object CertificateAuthority {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateAuthority & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateAuthority & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -145,7 +138,7 @@ object CertificateAuthority {
     
     inline def setPemCaCertificatesUndefined: Self = StObject.set(x, "pemCaCertificates", js.undefined)
     
-    inline def setPemCaCertificatesVarargs(value: String*): Self = StObject.set(x, "pemCaCertificates", js.Array(value :_*))
+    inline def setPemCaCertificatesVarargs(value: String*): Self = StObject.set(x, "pemCaCertificates", js.Array(value*))
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

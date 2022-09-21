@@ -2,7 +2,6 @@ package typings.azureArmResource
 
 import typings.msRestAzure.mod.CloudErrorParameters
 import typings.std.Array
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +10,12 @@ object managementModelsMod {
   
   @JSImport("azure-arm-resource/lib/management/models", "BaseResource")
   @js.native
-  class BaseResource ()
+  open class BaseResource ()
     extends typings.msRestAzure.mod.BaseResource
   
   @JSImport("azure-arm-resource/lib/management/models", "CloudError")
   @js.native
-  class CloudError protected ()
+  open class CloudError protected ()
     extends typings.msRestAzure.mod.CloudError {
     def this(parameters: CloudErrorParameters) = this()
   }
@@ -165,7 +164,7 @@ object managementModelsMod {
     
     var updatedBy: js.UndefOr[String] = js.undefined
     
-    var updatedTime: js.UndefOr[Date] = js.undefined
+    var updatedTime: js.UndefOr[js.Date] = js.undefined
     
     var version: js.UndefOr[Double] = js.undefined
   }
@@ -190,7 +189,7 @@ object managementModelsMod {
       
       inline def setUpdatedByUndefined: Self = StObject.set(x, "updatedBy", js.undefined)
       
-      inline def setUpdatedTime(value: Date): Self = StObject.set(x, "updatedTime", value.asInstanceOf[js.Any])
+      inline def setUpdatedTime(value: js.Date): Self = StObject.set(x, "updatedTime", value.asInstanceOf[js.Any])
       
       inline def setUpdatedTimeUndefined: Self = StObject.set(x, "updatedTime", js.undefined)
       
@@ -284,7 +283,7 @@ object managementModelsMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ManagementGroupRecursiveChildInfo*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ManagementGroupRecursiveChildInfo*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -325,7 +324,7 @@ object managementModelsMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ManagementGroupChildInfo*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ManagementGroupChildInfo*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDetails(value: ManagementGroupDetailsProperties): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -382,7 +381,7 @@ object managementModelsMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ManagementGroupRecursiveChildInfo*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ManagementGroupRecursiveChildInfo*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDetails(value: ManagementGroupDetailsProperties): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       

@@ -9,7 +9,7 @@ trait ICustomShaderNameResolveOptions extends StObject {
   /**
     * If provided, will be called two times with the vertex and fragment code so that this code can be updated before it is compiled by the GPU
     */
-  var processFinalCode: js.UndefOr[Nullable[js.Function2[/* shaderType */ String, /* code */ String, String]]] = js.undefined
+  var processFinalCode: js.UndefOr[Nullable[ShaderCustomProcessingFunction]] = js.undefined
 }
 object ICustomShaderNameResolveOptions {
   

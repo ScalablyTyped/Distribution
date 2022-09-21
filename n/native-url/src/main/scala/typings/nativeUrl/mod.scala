@@ -3,8 +3,6 @@ package typings.nativeUrl
 import org.scalablytyped.runtime.StringDictionary
 import typings.nativeUrl.nativeUrlBooleans.`false`
 import typings.nativeUrl.nativeUrlBooleans.`true`
-import typings.node.querystringMod.ParsedUrlQuery
-import typings.node.querystringMod.ParsedUrlQueryInput
 import typings.std.Iterable
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
@@ -19,14 +17,14 @@ object mod {
   
   @JSImport("url", "URLSearchParams")
   @js.native
-  class URLSearchParams ()
+  open class URLSearchParams ()
     extends StObject
        with Iterable[js.Tuple2[String, String]] {
     def this(init: String) = this()
     def this(init: js.Array[js.Tuple2[String, String]]) = this()
+    def this(init: js.Iterable[js.Tuple2[String, String]]) = this()
     def this(init: StringDictionary[js.UndefOr[String | js.Array[String]]]) = this()
     def this(init: URLSearchParams) = this()
-    def this(init: Iterable[js.Tuple2[String, String]]) = this()
     
     def append(name: String, value: String): Unit = js.native
     
@@ -56,7 +54,7 @@ object mod {
   
   @JSImport("url", "URL")
   @js.native
-  class URL_ protected () extends StObject {
+  open class URL_ protected () extends StObject {
     def this(input: String) = this()
     def this(input: String, base: String) = this()
     def this(input: String, base: URL_) = this()
@@ -183,7 +181,7 @@ object mod {
     
     var protocol: String | Null
     
-    var query: String | Null | ParsedUrlQuery
+    var query: String | Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any)
     
     var search: String | Null
     
@@ -232,7 +230,9 @@ object mod {
       
       inline def setProtocolNull: Self = StObject.set(x, "protocol", null)
       
-      inline def setQuery(value: String | ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(
+        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any)
+      ): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryNull: Self = StObject.set(x, "query", null)
       
@@ -267,7 +267,9 @@ object mod {
     
     var protocol: js.UndefOr[String | Null] = js.undefined
     
-    var query: js.UndefOr[String | Null | ParsedUrlQueryInput] = js.undefined
+    var query: js.UndefOr[
+        String | Null | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQueryInput */ Any)
+      ] = js.undefined
     
     var search: js.UndefOr[String | Null] = js.undefined
     
@@ -336,7 +338,9 @@ object mod {
       
       inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      inline def setQuery(value: String | ParsedUrlQueryInput): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(
+        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQueryInput */ Any)
+      ): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryNull: Self = StObject.set(x, "query", null)
       
@@ -358,21 +362,12 @@ object mod {
   
   trait UrlWithParsedQuery
     extends StObject
-       with Url {
-    
-    @JSName("query")
-    var query_UrlWithParsedQuery: ParsedUrlQuery
-  }
+       with Url
   object UrlWithParsedQuery {
     
-    inline def apply(href: String, query: ParsedUrlQuery): UrlWithParsedQuery = {
-      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], auth = null, hash = null, host = null, hostname = null, path = null, pathname = null, port = null, protocol = null, search = null, slashes = null)
+    inline def apply(href: String): UrlWithParsedQuery = {
+      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], auth = null, hash = null, host = null, hostname = null, path = null, pathname = null, port = null, protocol = null, query = null, search = null, slashes = null)
       __obj.asInstanceOf[UrlWithParsedQuery]
-    }
-    
-    extension [Self <: UrlWithParsedQuery](x: Self) {
-      
-      inline def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
   

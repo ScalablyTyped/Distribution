@@ -35,7 +35,7 @@ object ITableViewBroomPointSaveInfo {
     
     inline def setQFields(value: js.Array[String]): Self = StObject.set(x, "qFields", value.asInstanceOf[js.Any])
     
-    inline def setQFieldsVarargs(value: String*): Self = StObject.set(x, "qFields", js.Array(value :_*))
+    inline def setQFieldsVarargs(value: String*): Self = StObject.set(x, "qFields", js.Array(value*))
     
     inline def setQPos(value: IPoint): Self = StObject.set(x, "qPos", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CreateShiftRequest")
 @js.native
-class CreateShiftRequest () extends StObject {
+open class CreateShiftRequest () extends StObject {
   
   /**
     * Unique string value to insure the idempotency of the operation.

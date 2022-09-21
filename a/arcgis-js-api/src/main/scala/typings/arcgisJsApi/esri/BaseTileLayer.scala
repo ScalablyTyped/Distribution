@@ -1,7 +1,9 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`base-tile`
 import typings.arcgisJsApi.arcgisJsApiStrings.`bing-maps`
+import typings.arcgisJsApi.arcgisJsApiStrings.refresh
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
@@ -17,11 +19,11 @@ trait BaseTileLayer
      with BlendLayer {
   
   /**
-    * Adds a promise to the layer's [loadable](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#loadable) chain.
+    * Adds a promise to the layer's [loadable](https://developers.arcgis.com/javascript/latest/programming-patterns/#loadable) chain.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseTileLayer.html#addResolvingPromise)
     */
-  def addResolvingPromise(promiseToLoad: js.Promise[js.Any]): js.Promise[js.Any] = js.native
+  def addResolvingPromise(promiseToLoad: js.Promise[Any]): js.Promise[Any] = js.native
   
   /**
     * This method fetches a tile for the given level, row and column present in the view.
@@ -46,8 +48,13 @@ trait BaseTileLayer
     */
   def getTileUrl(level: Double, row: Double, col: Double): String = js.native
   
+  @JSName("on")
+  def on_refresh(name: refresh, eventHandler: BaseTileLayerRefreshEventHandler): IHandle = js.native
+  
   /**
     * The spatial reference of the layer.
+    *
+    * @default {@link module:esri/geometry/SpatialReference#WebMercator SpatialReference.WebMercator}
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseTileLayer.html#spatialReference)
     */

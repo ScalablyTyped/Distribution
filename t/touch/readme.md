@@ -11,9 +11,9 @@ like touch(1) in node
 | Full name          | touch |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 712 |
-| # downloads        | 174817140 |
-| # stars            | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1017384666666668E7 |
+| # stars            | 119.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/node-touch#readme)

@@ -11,13 +11,17 @@ object foundationMod {
   
   @JSImport("@material/form-field/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCFormFieldFoundation {
+  open class default () extends MDCFormFieldFoundation {
     def this(adapter: PartialMDCFormFieldAdapte) = this()
   }
   
   @JSImport("@material/form-field/foundation", "MDCFormFieldFoundation")
   @js.native
-  class MDCFormFieldFoundation () extends MDCFoundation[MDCFormFieldAdapter] {
+  open class MDCFormFieldFoundation () extends MDCFoundation[MDCFormFieldAdapter] {
     def this(adapter: PartialMDCFormFieldAdapte) = this()
+    
+    /* private */ val click: Any = js.native
+    
+    /* private */ var handleClick: Any = js.native
   }
 }

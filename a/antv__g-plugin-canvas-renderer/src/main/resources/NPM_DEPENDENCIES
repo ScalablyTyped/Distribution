@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@antv/g-plugin-canvas-renderer" : "1.7.20"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@antv/g-plugin-canvas-renderer" : "1.7.20"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

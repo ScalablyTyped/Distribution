@@ -9,7 +9,7 @@ trait ColumnLegacy extends StObject {
   
   var _bAutoType: Boolean
   
-  var aDataSort: js.Any
+  var aDataSort: Any
   
   var asSorting: js.Array[String]
   
@@ -19,19 +19,19 @@ trait ColumnLegacy extends StObject {
   
   var bVisible: Boolean
   
-  def fnCreatedCell(cell: Node, cellData: js.Any, rowData: js.Any, row: Double, col: Double): Unit
+  def fnCreatedCell(cell: Node, cellData: Any, rowData: Any, row: Double, col: Double): Unit
   @JSName("fnCreatedCell")
   var fnCreatedCell_Original: FunctionColumnCreatedCell
   
-  def fnGetData(data: js.Any, specific: String): js.Any
+  def fnGetData(data: Any, specific: String): Any
   
-  def fnSetData(data: js.Any, value: js.Any): Unit
+  def fnSetData(data: Any, value: Any): Unit
   
   var idx: Double
   
-  var mData: js.Any
+  var mData: Any
   
-  var mRender: js.Any
+  var mRender: Any
   
   var nIf: Node
   
@@ -63,17 +63,17 @@ object ColumnLegacy {
   
   inline def apply(
     _bAutoType: Boolean,
-    aDataSort: js.Any,
+    aDataSort: Any,
     asSorting: js.Array[String],
     bSearchable: Boolean,
     bSortable: Boolean,
     bVisible: Boolean,
-    fnCreatedCell: (/* cell */ Node, /* cellData */ js.Any, /* rowData */ js.Any, /* row */ Double, /* col */ Double) => Unit,
-    fnGetData: (js.Any, String) => js.Any,
-    fnSetData: (js.Any, js.Any) => Unit,
+    fnCreatedCell: (/* cell */ Node, /* cellData */ Any, /* rowData */ Any, /* row */ Double, /* col */ Double) => Unit,
+    fnGetData: (Any, String) => Any,
+    fnSetData: (Any, Any) => Unit,
     idx: Double,
-    mData: js.Any,
-    mRender: js.Any,
+    mData: Any,
+    mRender: Any,
     nIf: Node,
     nTh: Node,
     sClass: String,
@@ -94,11 +94,11 @@ object ColumnLegacy {
   
   extension [Self <: ColumnLegacy](x: Self) {
     
-    inline def setADataSort(value: js.Any): Self = StObject.set(x, "aDataSort", value.asInstanceOf[js.Any])
+    inline def setADataSort(value: Any): Self = StObject.set(x, "aDataSort", value.asInstanceOf[js.Any])
     
     inline def setAsSorting(value: js.Array[String]): Self = StObject.set(x, "asSorting", value.asInstanceOf[js.Any])
     
-    inline def setAsSortingVarargs(value: String*): Self = StObject.set(x, "asSorting", js.Array(value :_*))
+    inline def setAsSortingVarargs(value: String*): Self = StObject.set(x, "asSorting", js.Array(value*))
     
     inline def setBSearchable(value: Boolean): Self = StObject.set(x, "bSearchable", value.asInstanceOf[js.Any])
     
@@ -107,18 +107,18 @@ object ColumnLegacy {
     inline def setBVisible(value: Boolean): Self = StObject.set(x, "bVisible", value.asInstanceOf[js.Any])
     
     inline def setFnCreatedCell(
-      value: (/* cell */ Node, /* cellData */ js.Any, /* rowData */ js.Any, /* row */ Double, /* col */ Double) => Unit
+      value: (/* cell */ Node, /* cellData */ Any, /* rowData */ Any, /* row */ Double, /* col */ Double) => Unit
     ): Self = StObject.set(x, "fnCreatedCell", js.Any.fromFunction5(value))
     
-    inline def setFnGetData(value: (js.Any, String) => js.Any): Self = StObject.set(x, "fnGetData", js.Any.fromFunction2(value))
+    inline def setFnGetData(value: (Any, String) => Any): Self = StObject.set(x, "fnGetData", js.Any.fromFunction2(value))
     
-    inline def setFnSetData(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "fnSetData", js.Any.fromFunction2(value))
+    inline def setFnSetData(value: (Any, Any) => Unit): Self = StObject.set(x, "fnSetData", js.Any.fromFunction2(value))
     
     inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     
-    inline def setMData(value: js.Any): Self = StObject.set(x, "mData", value.asInstanceOf[js.Any])
+    inline def setMData(value: Any): Self = StObject.set(x, "mData", value.asInstanceOf[js.Any])
     
-    inline def setMRender(value: js.Any): Self = StObject.set(x, "mRender", value.asInstanceOf[js.Any])
+    inline def setMRender(value: Any): Self = StObject.set(x, "mRender", value.asInstanceOf[js.Any])
     
     inline def setNIf(value: Node): Self = StObject.set(x, "nIf", value.asInstanceOf[js.Any])
     

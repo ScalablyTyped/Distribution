@@ -8,5 +8,5 @@ object abortMultipartUploadOutputMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/AbortMultipartUploadOutput", "AbortMultipartUploadOutput")
   @js.native
-  val AbortMultipartUploadOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val AbortMultipartUploadOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

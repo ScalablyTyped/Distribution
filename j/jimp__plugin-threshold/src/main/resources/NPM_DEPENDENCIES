@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/plugin-threshold" : "0.16.1"
+      "@jimp/plugin-threshold" : "0.16.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/plugin-threshold" : "0.16.1"
+      "@jimp/plugin-threshold" : "0.16.2"
     }
   ],
   "compile-devDependencies" : [

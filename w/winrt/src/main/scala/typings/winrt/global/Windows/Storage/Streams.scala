@@ -19,7 +19,7 @@ object Streams {
   
   @JSGlobal("Windows.Storage.Streams.Buffer")
   @js.native
-  class Buffer protected ()
+  open class Buffer protected ()
     extends StObject
        with typings.winrt.Windows.Storage.Streams.Buffer {
     def this(capacity: Double) = this()
@@ -45,7 +45,7 @@ object Streams {
   
   @JSGlobal("Windows.Storage.Streams.DataReader")
   @js.native
-  class DataReader protected ()
+  open class DataReader protected ()
     extends StObject
        with typings.winrt.Windows.Storage.Streams.DataReader {
     def this(inputStream: IInputStream) = this()
@@ -65,7 +65,7 @@ object Streams {
   
   @JSGlobal("Windows.Storage.Streams.DataReaderLoadOperation")
   @js.native
-  class DataReaderLoadOperation ()
+  open class DataReaderLoadOperation ()
     extends StObject
        with typings.winrt.Windows.Storage.Streams.DataReaderLoadOperation {
     
@@ -87,7 +87,7 @@ object Streams {
   
   @JSGlobal("Windows.Storage.Streams.DataWriter")
   @js.native
-  class DataWriter ()
+  open class DataWriter ()
     extends StObject
        with typings.winrt.Windows.Storage.Streams.DataWriter {
     def this(outputStream: IOutputStream) = this()
@@ -98,7 +98,7 @@ object Streams {
   
   @JSGlobal("Windows.Storage.Streams.DataWriterStoreOperation")
   @js.native
-  class DataWriterStoreOperation ()
+  open class DataWriterStoreOperation ()
     extends StObject
        with typings.winrt.Windows.Storage.Streams.DataWriterStoreOperation {
     
@@ -120,7 +120,7 @@ object Streams {
   
   @JSGlobal("Windows.Storage.Streams.FileInputStream")
   @js.native
-  class FileInputStream ()
+  open class FileInputStream ()
     extends StObject
        with typings.winrt.Windows.Storage.Streams.FileInputStream {
     
@@ -136,7 +136,7 @@ object Streams {
   
   @JSGlobal("Windows.Storage.Streams.FileOutputStream")
   @js.native
-  class FileOutputStream ()
+  open class FileOutputStream ()
     extends StObject
        with typings.winrt.Windows.Storage.Streams.FileOutputStream {
     
@@ -155,7 +155,7 @@ object Streams {
   
   @JSGlobal("Windows.Storage.Streams.FileRandomAccessStream")
   @js.native
-  class FileRandomAccessStream ()
+  open class FileRandomAccessStream ()
     extends StObject
        with typings.winrt.Windows.Storage.Streams.FileRandomAccessStream {
     
@@ -201,7 +201,7 @@ object Streams {
   
   @JSGlobal("Windows.Storage.Streams.InMemoryRandomAccessStream")
   @js.native
-  class InMemoryRandomAccessStream ()
+  open class InMemoryRandomAccessStream ()
     extends StObject
        with typings.winrt.Windows.Storage.Streams.InMemoryRandomAccessStream {
     
@@ -261,7 +261,7 @@ object Streams {
   
   @JSGlobal("Windows.Storage.Streams.InputStreamOverStream")
   @js.native
-  class InputStreamOverStream ()
+  open class InputStreamOverStream ()
     extends StObject
        with typings.winrt.Windows.Storage.Streams.InputStreamOverStream {
     
@@ -277,7 +277,7 @@ object Streams {
   
   @JSGlobal("Windows.Storage.Streams.OutputStreamOverStream")
   @js.native
-  class OutputStreamOverStream ()
+  open class OutputStreamOverStream ()
     extends StObject
        with typings.winrt.Windows.Storage.Streams.OutputStreamOverStream {
     
@@ -296,7 +296,7 @@ object Streams {
   
   @JSGlobal("Windows.Storage.Streams.RandomAccessStream")
   @js.native
-  class RandomAccessStream ()
+  open class RandomAccessStream ()
     extends StObject
        with typings.winrt.Windows.Storage.Streams.RandomAccessStream
   /* static members */
@@ -314,7 +314,7 @@ object Streams {
   
   @JSGlobal("Windows.Storage.Streams.RandomAccessStreamOverStream")
   @js.native
-  class RandomAccessStreamOverStream ()
+  open class RandomAccessStreamOverStream ()
     extends StObject
        with typings.winrt.Windows.Storage.Streams.RandomAccessStreamOverStream {
     
@@ -360,7 +360,7 @@ object Streams {
   
   @JSGlobal("Windows.Storage.Streams.RandomAccessStreamReference")
   @js.native
-  class RandomAccessStreamReference ()
+  open class RandomAccessStreamReference ()
     extends StObject
        with typings.winrt.Windows.Storage.Streams.RandomAccessStreamReference {
     

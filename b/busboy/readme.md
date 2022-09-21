@@ -1,7 +1,7 @@
 
 # Scala.js typings for busboy
 
-Typings are for version v0.2.13
+Typings are for version 1.5
 
 ## Library description:
 A streaming parser for HTML form data for node.js
@@ -10,10 +10,10 @@ A streaming parser for HTML form data for node.js
 | ------------------ | :-------------: |
 | Full name          | busboy |
 | Keywords           | uploads, forms, multipart, form-data |
-| # releases         | 3 |
-| # dependents       | 480 |
-| # downloads        | 107163678 |
-| # stars            | 83 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1426798333333332E7 |
+| # stars            | 2369.0 |
 
 ## Links
 - [Homepage](https://github.com/mscdex/busboy#readme)

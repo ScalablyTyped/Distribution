@@ -6,28 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IncrementPos extends StObject {
   
-  var incrementPos: js.Any
+  var incrementPos: Any
   
-  var matchedString: js.Any
+  var matchedString: Any
   
-  var pos: js.Any
+  var pos: Any
   
   var success: Boolean
 }
 object IncrementPos {
   
-  inline def apply(incrementPos: js.Any, matchedString: js.Any, pos: js.Any, success: Boolean): IncrementPos = {
+  inline def apply(incrementPos: Any, matchedString: Any, pos: Any, success: Boolean): IncrementPos = {
     val __obj = js.Dynamic.literal(incrementPos = incrementPos.asInstanceOf[js.Any], matchedString = matchedString.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncrementPos]
   }
   
   extension [Self <: IncrementPos](x: Self) {
     
-    inline def setIncrementPos(value: js.Any): Self = StObject.set(x, "incrementPos", value.asInstanceOf[js.Any])
+    inline def setIncrementPos(value: Any): Self = StObject.set(x, "incrementPos", value.asInstanceOf[js.Any])
     
-    inline def setMatchedString(value: js.Any): Self = StObject.set(x, "matchedString", value.asInstanceOf[js.Any])
+    inline def setMatchedString(value: Any): Self = StObject.set(x, "matchedString", value.asInstanceOf[js.Any])
     
-    inline def setPos(value: js.Any): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: Any): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }

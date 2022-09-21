@@ -10,5 +10,5 @@ object isRelayModernEnvironmentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isRelayModernEnvironment(environment: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRelayModernEnvironment")(environment.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRelayModernEnvironment(environment: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRelayModernEnvironment")(environment.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteAccountCustomizationRequest extends StObject {
   
   /**
-    * The ID for the AWS account that you want to delete QuickSight customizations from in this AWS Region.
+    * The ID for the Amazon Web Services account that you want to delete Amazon QuickSight customizations from in this Amazon Web Services Region.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
-    * The QuickSight namespace that you're deleting the customizations from.
+    * The Amazon QuickSight namespace that you're deleting the customizations from.
     */
   var Namespace: js.UndefOr[typings.awsSdk.quicksightMod.Namespace] = js.undefined
 }

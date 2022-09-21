@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Create a new instance of the CertAuthenticator class.
   */
-class CertAuthenticator ()
+open class CertAuthenticator ()
   extends StObject
      with Authenticator {
   

@@ -1,9 +1,5 @@
 package typings.googleapis.v41Mod.adsensehostV41
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,20 +14,12 @@ trait ParamsResourceAccountsAdclientsList
   var accountId: js.UndefOr[String] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The maximum number of ad clients to include in the response, used for
-    * paging.
+    * The maximum number of ad clients to include in the response, used for paging.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * A continuation token, used to page through ad clients. To retrieve the
-    * next page, set this parameter to the value of "nextPageToken" from the
-    * previous response.
+    * A continuation token, used to page through ad clients. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous response.
     */
   var pageToken: js.UndefOr[String] = js.undefined
 }
@@ -47,10 +35,6 @@ object ParamsResourceAccountsAdclientsList {
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

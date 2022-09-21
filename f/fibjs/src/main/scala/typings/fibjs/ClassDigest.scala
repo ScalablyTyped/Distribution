@@ -23,8 +23,8 @@ trait ClassDigest
     * 
     * 
     */
-  def digest(): js.Any = js.native
-  def digest(codec: String): js.Any = js.native
+  def digest(): Any = js.native
+  def digest(codec: String): Any = js.native
   
   /**
     * class prop 

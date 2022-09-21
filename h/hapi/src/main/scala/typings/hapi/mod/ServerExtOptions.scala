@@ -42,13 +42,13 @@ object ServerExtOptions {
     
     inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
+    inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value*))
     
     inline def setBefore(value: String | js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
+    inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value*))
     
     inline def setBind(value: js.Object): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
     

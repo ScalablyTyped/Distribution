@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html)
   */
-class ScaleRangeSliderCls ()
+open class ScaleRangeSliderCls ()
   extends StObject
      with typings.arcgisJsApi.esri.ScaleRangeSlider {
   def this(properties: ScaleRangeSliderProperties) = this()

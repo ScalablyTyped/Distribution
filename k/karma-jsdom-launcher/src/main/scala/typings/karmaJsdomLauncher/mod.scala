@@ -1,5 +1,6 @@
 package typings.karmaJsdomLauncher
 
+import typings.jsdom.mod.ConstructorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,22 +36,18 @@ object mod {
       * You can pass options directly to jsdom as shown below.
       * See jsdom's own documentation for all supported options.
       */
-    var jsdom: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jsdom.ConstructorOptions */ js.Any
+    var jsdom: ConstructorOptions
   }
   object JsdomLauncherOptions {
     
-    inline def apply(
-      jsdom: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jsdom.ConstructorOptions */ js.Any
-    ): JsdomLauncherOptions = {
+    inline def apply(jsdom: ConstructorOptions): JsdomLauncherOptions = {
       val __obj = js.Dynamic.literal(jsdom = jsdom.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsdomLauncherOptions]
     }
     
     extension [Self <: JsdomLauncherOptions](x: Self) {
       
-      inline def setJsdom(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jsdom.ConstructorOptions */ js.Any
-      ): Self = StObject.set(x, "jsdom", value.asInstanceOf[js.Any])
+      inline def setJsdom(value: ConstructorOptions): Self = StObject.set(x, "jsdom", value.asInstanceOf[js.Any])
     }
   }
 }

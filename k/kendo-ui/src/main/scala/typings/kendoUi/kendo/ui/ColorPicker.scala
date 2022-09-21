@@ -26,6 +26,9 @@ trait ColorPicker
   @JSName("options")
   var options_ColorPicker: ColorPickerOptions = js.native
   
+  def setBackgroundColor(color: String): Unit = js.native
+  def setBackgroundColor(color: Color): Unit = js.native
+  
   def toggle(): Unit = js.native
   
   def value(): String = js.native

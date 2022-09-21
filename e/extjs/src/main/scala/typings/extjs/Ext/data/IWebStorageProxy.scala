@@ -10,7 +10,7 @@ trait IWebStorageProxy
      with IClient {
   
   /** [Property] (Object) */
-  var cache: js.UndefOr[js.Any] = js.undefined
+  var cache: js.UndefOr[Any] = js.undefined
   
   /** [Method] inherit docs
     * @param operation Object
@@ -20,9 +20,9 @@ trait IWebStorageProxy
   @JSName("create")
   var create_IWebStorageProxy: js.UndefOr[
     js.Function3[
-      /* operation */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* operation */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -35,9 +35,9 @@ trait IWebStorageProxy
   @JSName("destroy")
   var destroy_IWebStorageProxy: js.UndefOr[
     js.Function3[
-      /* operation */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* operation */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -53,9 +53,9 @@ trait IWebStorageProxy
   @JSName("read")
   var read_IWebStorageProxy: js.UndefOr[
     js.Function3[
-      /* operation */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* operation */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -74,9 +74,9 @@ trait IWebStorageProxy
   @JSName("update")
   var update_IWebStorageProxy: js.UndefOr[
     js.Function3[
-      /* operation */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* operation */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -90,18 +90,18 @@ object IWebStorageProxy {
   
   extension [Self <: IWebStorageProxy](x: Self) {
     
-    inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     inline def setCreate(
-      value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* operation */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
     
     inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     inline def setDestroy(
-      value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* operation */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "destroy", js.Any.fromFunction3(value))
     
     inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
@@ -111,7 +111,7 @@ object IWebStorageProxy {
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setRead(
-      value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* operation */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
     
     inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
@@ -121,7 +121,7 @@ object IWebStorageProxy {
     inline def setSetRecordUndefined: Self = StObject.set(x, "setRecord", js.undefined)
     
     inline def setUpdate(
-      value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* operation */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)

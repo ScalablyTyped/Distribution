@@ -18,14 +18,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.ddTrace.mod.plugins.Integration because Already inherited
 - typings.ddTrace.mod.plugins.Instrumentation because Already inherited
 - typings.ddTrace.mod.plugins.Http_ because Already inherited
-- typings.ddTrace.mod.plugins.HttpServer because var conflicts: analytics, blacklist, enabled, headers, hooks, service, validateStatus, whitelist. Inlined middleware */ trait http
+- typings.ddTrace.mod.plugins.HttpServer because var conflicts: allowlist, blacklist, blocklist, enabled, headers, hooks, measured, service, validateStatus, whitelist. Inlined middleware */ trait http
   extends StObject
      with HttpClient {
   
   /**
     * Configuration for HTTP clients.
     */
-  var client: js.UndefOr[HttpClient] = js.undefined
+  var client: js.UndefOr[HttpClient | Boolean] = js.undefined
   
   /**
     * Hooks to run before spans are finished.
@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var hooks_http: js.UndefOr[`2`] = js.undefined
   
   /**
-    * Whether to enable instrumention of <plugin>.middleware spans
+    * Whether to enable instrumentation of <plugin>.middleware spans
     *
     * @default true
     */
@@ -43,7 +43,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /**
     * Configuration for HTTP servers.
     */
-  var server: js.UndefOr[HttpServer] = js.undefined
+  var server: js.UndefOr[HttpServer | Boolean] = js.undefined
 }
 object http {
   
@@ -54,7 +54,7 @@ object http {
   
   extension [Self <: http](x: Self) {
     
-    inline def setClient(value: HttpClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: HttpClient | Boolean): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
@@ -66,7 +66,7 @@ object http {
     
     inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
     
-    inline def setServer(value: HttpServer): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: HttpServer | Boolean): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }

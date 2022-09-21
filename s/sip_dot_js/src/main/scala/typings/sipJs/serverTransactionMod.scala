@@ -22,7 +22,7 @@ object serverTransactionMod {
       loggerCategory: String
     ) = this()
     
-    /* private */ var _request: js.Any = js.native
+    /* private */ var _request: Any = js.native
     
     /**
       * Receive incoming requests from the transport which match this transaction.

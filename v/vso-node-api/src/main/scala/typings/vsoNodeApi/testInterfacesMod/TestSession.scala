@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +20,7 @@ trait TestSession extends StObject {
   /**
     * Duration of the session
     */
-  var endDate: Date
+  var endDate: js.Date
   
   /**
     * Id of the test session
@@ -36,7 +35,7 @@ trait TestSession extends StObject {
   /**
     * Last updated date
     */
-  var lastUpdatedDate: Date
+  var lastUpdatedDate: js.Date
   
   /**
     * Owner of the test session
@@ -66,7 +65,7 @@ trait TestSession extends StObject {
   /**
     * Start date
     */
-  var startDate: Date
+  var startDate: js.Date
   
   /**
     * State of the test session
@@ -88,16 +87,16 @@ object TestSession {
   inline def apply(
     area: ShallowReference,
     comment: String,
-    endDate: Date,
+    endDate: js.Date,
     id: Double,
     lastUpdatedBy: IdentityRef,
-    lastUpdatedDate: Date,
+    lastUpdatedDate: js.Date,
     owner: IdentityRef,
     project: ShallowReference,
     propertyBag: PropertyBag,
     revision: Double,
     source: TestSessionSource,
-    startDate: Date,
+    startDate: js.Date,
     state: TestSessionState,
     title: String,
     url: String
@@ -112,13 +111,13 @@ object TestSession {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedBy(value: IdentityRef): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setOwner(value: IdentityRef): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
@@ -130,7 +129,7 @@ object TestSession {
     
     inline def setSource(value: TestSessionSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     inline def setState(value: TestSessionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

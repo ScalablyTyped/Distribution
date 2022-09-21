@@ -1,12 +1,11 @@
 package typings.passportAzureAd
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.passport.mod.Strategy
 import typings.passportAzureAd.commonMod.IBaseStrategyOption
 import typings.passportAzureAd.commonMod.ITokenPayload
 import typings.passportAzureAd.commonMod.VerifyCallback
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,13 +14,22 @@ object bearerStrategyMod {
   
   @JSImport("passport-azure-ad/bearer-strategy", "BearerStrategy")
   @js.native
-  class BearerStrategy protected ()
+  open class BearerStrategy protected ()
     extends StObject
        with Strategy {
     def this(options: IBearerStrategyOptionWithRequest, verify: VerifyBearerFunctionWithReq) = this()
     def this(options: IBearerStrategyOption, verify: VerifyBearerFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: js.Object
+    ): Unit = js.native
     
     @JSName("name")
     var name_BearerStrategy: String = js.native
@@ -56,7 +64,7 @@ object bearerStrategyMod {
       
       inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
+      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value*))
       
       inline def setPolicyName(value: String): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
       
@@ -66,7 +74,7 @@ object bearerStrategyMod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
     }
   }
   
@@ -92,7 +100,13 @@ object bearerStrategyMod {
   type VerifyBearerFunction = js.Function2[/* token */ ITokenPayload, /* done */ VerifyCallback, Unit]
   
   type VerifyBearerFunctionWithReq = js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* token */ ITokenPayload, 
     /* done */ VerifyCallback, 
     Unit

@@ -11,12 +11,10 @@ object mod {
   
   @JSImport("react-dotdotdot", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DotdotdotProps, js.Object, js.Any]
+  open class default ()
+    extends Component[DotdotdotProps, js.Object, Any]
   
-  @js.native
-  trait Dotdotdot
-    extends Component[DotdotdotProps, js.Object, js.Any]
+  type Dotdotdot = Component[DotdotdotProps, js.Object, Any]
   
   trait DotdotdotProps
     extends StObject
@@ -68,7 +66,7 @@ object mod {
       
       inline def setSplitOnCharsUndefined: Self = StObject.set(x, "splitOnChars", js.undefined)
       
-      inline def setSplitOnCharsVarargs(value: String*): Self = StObject.set(x, "splitOnChars", js.Array(value :_*))
+      inline def setSplitOnCharsVarargs(value: String*): Self = StObject.set(x, "splitOnChars", js.Array(value*))
       
       inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       

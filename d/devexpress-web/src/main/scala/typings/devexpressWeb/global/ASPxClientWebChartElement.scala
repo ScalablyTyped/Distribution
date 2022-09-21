@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientWebChartElement")
 @js.native
-class ASPxClientWebChartElement ()
+open class ASPxClientWebChartElement ()
   extends StObject
      with typings.devexpressWeb.ASPxClientWebChartElement {
   

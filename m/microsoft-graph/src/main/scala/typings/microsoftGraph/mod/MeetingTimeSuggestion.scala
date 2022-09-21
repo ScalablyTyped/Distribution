@@ -48,7 +48,7 @@ object MeetingTimeSuggestion {
     
     inline def setAttendeeAvailabilityUndefined: Self = StObject.set(x, "attendeeAvailability", js.undefined)
     
-    inline def setAttendeeAvailabilityVarargs(value: AttendeeAvailability*): Self = StObject.set(x, "attendeeAvailability", js.Array(value :_*))
+    inline def setAttendeeAvailabilityVarargs(value: AttendeeAvailability*): Self = StObject.set(x, "attendeeAvailability", js.Array(value*))
     
     inline def setConfidence(value: NullableOption[Double]): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
@@ -62,7 +62,7 @@ object MeetingTimeSuggestion {
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setMeetingTimeSlot(value: NullableOption[TimeSlot]): Self = StObject.set(x, "meetingTimeSlot", value.asInstanceOf[js.Any])
     

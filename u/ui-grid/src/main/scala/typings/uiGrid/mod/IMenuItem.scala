@@ -14,7 +14,7 @@ trait IMenuItem extends StObject {
   var active: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** context to pass to the action function, available in this.context in your handler */
-  var context: js.UndefOr[js.Any] = js.undefined
+  var context: js.UndefOr[Any] = js.undefined
   
   /** the icon shown alongside that title */
   var icon: js.UndefOr[String] = js.undefined
@@ -45,7 +45,7 @@ object IMenuItem {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     

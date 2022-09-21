@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Section")
 @js.native
-/* private */ class Section ()
+/* private */ open class Section ()
   extends StObject
      with typings.activexWord.Word.Section {
   
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var PageSetup: typings.activexWord.Word.PageSetup = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var ProtectedForForms: Boolean = js.native

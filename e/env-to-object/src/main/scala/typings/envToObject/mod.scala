@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(map: Mappings): js.Any = ^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(map: Mappings, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(map: Mappings): Any = ^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(map: Mappings, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("env-to-object", JSImport.Namespace)
   @js.native
@@ -42,7 +42,7 @@ object mod {
   
   trait GenericMapping
     extends StObject
-       with /* opt */ StringDictionary[js.Any]
+       with /* opt */ StringDictionary[Any]
        with Mapping {
     
     var keypath: String
@@ -137,5 +137,5 @@ object mod {
     }
   }
   
-  type Parsers = StringDictionary[js.Function2[/* str */ String, /* opts */ js.Any, js.Any]]
+  type Parsers = StringDictionary[js.Function2[/* str */ String, /* opts */ Any, Any]]
 }

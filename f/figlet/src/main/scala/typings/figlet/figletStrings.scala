@@ -123,6 +123,12 @@ object figletStrings {
   inline def `AMC Untitled`: `AMC Untitled` = ("AMC Untitled").asInstanceOf[`AMC Untitled`]
   
   @js.native
+  sealed trait `ANSI Regular`
+    extends StObject
+       with Fonts_
+  inline def `ANSI Regular`: `ANSI Regular` = ("ANSI Regular").asInstanceOf[`ANSI Regular`]
+  
+  @js.native
   sealed trait `ANSI Shadow`
     extends StObject
        with Fonts_
@@ -1177,6 +1183,12 @@ object figletStrings {
     extends StObject
        with Fonts_
   inline def `Old Banner`: `Old Banner` = ("Old Banner").asInstanceOf[`Old Banner`]
+  
+  @js.native
+  sealed trait Pagga
+    extends StObject
+       with Fonts_
+  inline def Pagga: Pagga = "Pagga".asInstanceOf[Pagga]
   
   @js.native
   sealed trait `Patorjk-HeX`

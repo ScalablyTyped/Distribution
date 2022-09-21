@@ -29,6 +29,6 @@ object GoogleAnalyticsAdminV1alphaAuditUserLinksResponse {
     
     inline def setUserLinksUndefined: Self = StObject.set(x, "userLinks", js.undefined)
     
-    inline def setUserLinksVarargs(value: GoogleAnalyticsAdminV1alphaAuditUserLink*): Self = StObject.set(x, "userLinks", js.Array(value :_*))
+    inline def setUserLinksVarargs(value: GoogleAnalyticsAdminV1alphaAuditUserLink*): Self = StObject.set(x, "userLinks", js.Array(value*))
   }
 }

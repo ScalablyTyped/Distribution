@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Declarations extends StObject {
   
   /** List of components, directives, and pipes declared by this module. */
-  var declarations: js.UndefOr[js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]] = js.undefined
+  var declarations: js.UndefOr[js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]] = js.undefined
   
   /**
     * List of modules, `ModuleWithProviders`, components, directives, or pipes exported by this
     * module.
     */
-  var exports: js.UndefOr[js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]] = js.undefined
+  var exports: js.UndefOr[js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]] = js.undefined
   
   /** List of modules or `ModuleWithProviders` imported by this module. */
-  var imports: js.UndefOr[js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]] = js.undefined
+  var imports: js.UndefOr[js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]] = js.undefined
 }
 object Declarations {
   
@@ -28,28 +28,28 @@ object Declarations {
   
   extension [Self <: Declarations](x: Self) {
     
-    inline def setDeclarations(value: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+    inline def setDeclarations(value: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     
-    inline def setDeclarationsFunction0(value: () => js.Array[Type[js.Any]]): Self = StObject.set(x, "declarations", js.Any.fromFunction0(value))
+    inline def setDeclarationsFunction0(value: () => js.Array[Type[Any]]): Self = StObject.set(x, "declarations", js.Any.fromFunction0(value))
     
     inline def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
     
-    inline def setDeclarationsVarargs(value: Type[js.Any]*): Self = StObject.set(x, "declarations", js.Array(value :_*))
+    inline def setDeclarationsVarargs(value: Type[Any]*): Self = StObject.set(x, "declarations", js.Array(value*))
     
-    inline def setExports(value: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    inline def setExports(value: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
-    inline def setExportsFunction0(value: () => js.Array[Type[js.Any]]): Self = StObject.set(x, "exports", js.Any.fromFunction0(value))
+    inline def setExportsFunction0(value: () => js.Array[Type[Any]]): Self = StObject.set(x, "exports", js.Any.fromFunction0(value))
     
     inline def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
     
-    inline def setExportsVarargs(value: Type[js.Any]*): Self = StObject.set(x, "exports", js.Array(value :_*))
+    inline def setExportsVarargs(value: Type[Any]*): Self = StObject.set(x, "exports", js.Array(value*))
     
-    inline def setImports(value: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    inline def setImportsFunction0(value: () => js.Array[Type[js.Any]]): Self = StObject.set(x, "imports", js.Any.fromFunction0(value))
+    inline def setImportsFunction0(value: () => js.Array[Type[Any]]): Self = StObject.set(x, "imports", js.Any.fromFunction0(value))
     
     inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    inline def setImportsVarargs(value: Type[js.Any]*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: Type[Any]*): Self = StObject.set(x, "imports", js.Array(value*))
   }
 }

@@ -8,5 +8,5 @@ object createIdentityPoolInputMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/CreateIdentityPoolInput", "CreateIdentityPoolInput")
   @js.native
-  val CreateIdentityPoolInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CreateIdentityPoolInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -10,15 +10,12 @@ Test if a process with a given pid is running
 | ------------------ | :-------------: |
 | Full name          | is-running |
 | Keywords           | pid, running, child, exec, spawn |
-| # releases         | 0 |
-| # dependents       | 93 |
-| # downloads        | 8466197 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 974442.6666666666 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/nisaacson/is-running#readme)
-- [Bugs](https://github.com/nisaacson/is-running/issues)
-- [Repository](https://github.com/nisaacson/is-running)
 - [Npm](https://www.npmjs.com/package/is-running)
     
 

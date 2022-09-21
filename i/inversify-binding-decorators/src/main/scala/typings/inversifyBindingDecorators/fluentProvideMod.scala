@@ -12,5 +12,5 @@ object fluentProvideMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(serviceIdentifier: ServiceIdentifier[js.Any]): ProvideInWhenOnSyntax[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[ProvideInWhenOnSyntax[js.Any]]
+  inline def default(serviceIdentifier: ServiceIdentifier[Any]): ProvideInWhenOnSyntax[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[ProvideInWhenOnSyntax[Any]]
 }

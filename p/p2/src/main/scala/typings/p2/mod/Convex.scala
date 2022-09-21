@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "Convex")
 @js.native
-class Convex () extends Shape {
+open class Convex () extends Shape {
   def this(options: ConvexOptions) = this()
   
   var axes: js.Array[js.Tuple2[Double, Double]] = js.native

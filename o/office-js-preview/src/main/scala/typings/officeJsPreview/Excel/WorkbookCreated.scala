@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * The `WorkbookCreated` object is the top level object created by `Application.CreateWorkbook`. A `WorkbookCreated` object is a special Workbook object.
   *
-  * The WorkbookCreated object is the top level object created by Application.CreateWorkbook. A WorkbookCreated object is a special Workbook object.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @js.native

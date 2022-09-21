@@ -25,7 +25,7 @@ object ITokenInfo {
     
     inline def setLeadingTriviaUndefined: Self = StObject.set(x, "leadingTrivia", js.undefined)
     
-    inline def setLeadingTriviaVarargs(value: ISyntaxTrivia*): Self = StObject.set(x, "leadingTrivia", js.Array(value :_*))
+    inline def setLeadingTriviaVarargs(value: ISyntaxTrivia*): Self = StObject.set(x, "leadingTrivia", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
@@ -35,6 +35,6 @@ object ITokenInfo {
     
     inline def setTrailingTriviaUndefined: Self = StObject.set(x, "trailingTrivia", js.undefined)
     
-    inline def setTrailingTriviaVarargs(value: ISyntaxTrivia*): Self = StObject.set(x, "trailingTrivia", js.Array(value :_*))
+    inline def setTrailingTriviaVarargs(value: ISyntaxTrivia*): Self = StObject.set(x, "trailingTrivia", js.Array(value*))
   }
 }

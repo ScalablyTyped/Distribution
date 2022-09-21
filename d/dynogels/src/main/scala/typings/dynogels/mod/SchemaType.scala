@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaType
   extends StObject
-     with /* key */ StringDictionary[AnySchema | SchemaType]
+     with /* key */ StringDictionary[AnySchema[Any] | SchemaType]
 object SchemaType {
   
   inline def apply(): SchemaType = {

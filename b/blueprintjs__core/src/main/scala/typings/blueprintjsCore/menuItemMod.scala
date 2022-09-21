@@ -1,6 +1,9 @@
 package typings.blueprintjsCore
 
 import typings.blueprintjsCore.anon.PartialIPopoverProps
+import typings.blueprintjsCore.anon.PartialMenuProps
+import typings.blueprintjsCore.blueprintjsCoreStrings.listoption
+import typings.blueprintjsCore.blueprintjsCoreStrings.menuitem
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IActionProps
 import typings.blueprintjsCore.propsMod.ILinkProps
@@ -15,14 +18,14 @@ object menuItemMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/menu/menuItem", "MenuItem")
   @js.native
-  class MenuItem protected ()
-    extends AbstractPureComponent2[IMenuItemProps & AnchorHTMLAttributes[HTMLAnchorElement], js.Object, js.Object] {
-    def this(props: IMenuItemProps & AnchorHTMLAttributes[HTMLAnchorElement]) = this()
-    def this(props: IMenuItemProps & AnchorHTMLAttributes[HTMLAnchorElement], context: js.Any) = this()
+  open class MenuItem protected ()
+    extends AbstractPureComponent2[MenuItemProps & AnchorHTMLAttributes[HTMLAnchorElement], js.Object, js.Object] {
+    def this(props: MenuItemProps & AnchorHTMLAttributes[HTMLAnchorElement]) = this()
+    def this(props: MenuItemProps & AnchorHTMLAttributes[HTMLAnchorElement], context: Any) = this()
     
-    /* private */ var maybeRenderLabel: js.Any = js.native
+    /* private */ var maybeRenderLabel: Any = js.native
     
-    /* private */ var maybeRenderPopover: js.Any = js.native
+    /* private */ var maybeRenderPopover: Any = js.native
   }
   /* static members */
   object MenuItem {
@@ -33,8 +36,8 @@ object menuItemMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/menu/menuItem", "MenuItem.defaultProps")
     @js.native
-    def defaultProps: IMenuItemProps = js.native
-    inline def defaultProps_=(x: IMenuItemProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: MenuItemProps = js.native
+    inline def defaultProps_=(x: MenuItemProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/menu/menuItem", "MenuItem.displayName")
     @js.native
@@ -47,7 +50,9 @@ object menuItemMod {
        with IActionProps
        with ILinkProps {
     
-    /** Whether this menu item should appear with an active state. */
+    /**
+      * Whether this item should render with an active appearance. Used to indicate keyboard focus.
+      */
     var active: js.UndefOr[Boolean] = js.undefined
     
     /**
@@ -84,6 +89,7 @@ object menuItemMod {
     /**
       * Whether the text should be allowed to wrap to multiple lines.
       * If `false`, text will be truncated with an ellipsis when it reaches `max-width`.
+      *
       * @default false
       */
     var multiline: js.UndefOr[Boolean] = js.undefined
@@ -96,17 +102,51 @@ object menuItemMod {
     var popoverProps: js.UndefOr[PartialIPopoverProps] = js.undefined
     
     /**
+      * Changes the ARIA `role` property structure of this MenuItem to accomodate for various
+      * different `role`s of the parent Menu `ul` element.
+      *
+      * If `menuitem`, role structure becomes:
+      *
+      * `<li role="none"`
+      *     `<a role="menuitem"`
+      *
+      * which is proper role structure for a `<ul role="menu"` parent (this is the default `role` of a `Menu`).
+      *
+      * If `listoption`, role structure becomes:
+      *
+      * `<li role="option"`
+      *     `<a role=undefined`
+      *
+      *  which is proper role structure for a `<ul role="listbox"` parent, or a `<select>` parent.
+      *
+      * @default "menuitem"
+      */
+    var roleStructure: js.UndefOr[menuitem | listoption] = js.undefined
+    
+    /**
+      * Whether this item is selected. This will set the `aria-selected` attribute.
+      */
+    var selected: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Whether an enabled item without a submenu should automatically close its parent popover when clicked.
+      *
       * @default true
       */
     var shouldDismissPopover: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Props to spread to the child `Menu` component if this item has a submenu.
+      */
+    var submenuProps: js.UndefOr[PartialMenuProps] = js.undefined
+    
+    /**
       * Name of the HTML tag that wraps the MenuItem.
+      *
       * @default "a"
       */
     var tagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
       ] = js.undefined
     
     /**
@@ -159,11 +199,23 @@ object menuItemMod {
       
       inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
       
+      inline def setRoleStructure(value: menuitem | listoption): Self = StObject.set(x, "roleStructure", value.asInstanceOf[js.Any])
+      
+      inline def setRoleStructureUndefined: Self = StObject.set(x, "roleStructure", js.undefined)
+      
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      
       inline def setShouldDismissPopover(value: Boolean): Self = StObject.set(x, "shouldDismissPopover", value.asInstanceOf[js.Any])
       
       inline def setShouldDismissPopoverUndefined: Self = StObject.set(x, "shouldDismissPopover", js.undefined)
       
-      inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setSubmenuProps(value: PartialMenuProps): Self = StObject.set(x, "submenuProps", value.asInstanceOf[js.Any])
+      
+      inline def setSubmenuPropsUndefined: Self = StObject.set(x, "submenuProps", js.undefined)
+      
+      inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
       
@@ -176,4 +228,6 @@ object menuItemMod {
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
+  
+  type MenuItemProps = IMenuItemProps
 }

@@ -12,14 +12,14 @@ object global {
     
     @JSGlobal("ScrollMagic.Controller")
     @js.native
-    class Controller ()
+    open class Controller ()
       extends typings.scrollmagic.mod.Controller {
       def this(options: ControllerConstructorOptions) = this()
     }
     
     @JSGlobal("ScrollMagic.Scene")
     @js.native
-    class Scene ()
+    open class Scene ()
       extends typings.scrollmagic.mod.Scene {
       def this(options: SceneConstructorOptions) = this()
     }

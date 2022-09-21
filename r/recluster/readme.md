@@ -10,15 +10,12 @@ Clustering library with support for zero-downtime reloading
 | ------------------ | :-------------: |
 | Full name          | recluster |
 | Keywords           | load, balancer, cluster, zero, downtime, reload, sticky, websockets, socket.io |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 316322 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 12674.666666666666 |
+| # stars            | 523.0 |
 
 ## Links
-- [Homepage](https://github.com/doxout/recluster#readme)
-- [Bugs](https://github.com/doxout/recluster/issues)
-- [Repository](https://github.com/doxout/recluster)
 - [Npm](https://www.npmjs.com/package/recluster)
     
 

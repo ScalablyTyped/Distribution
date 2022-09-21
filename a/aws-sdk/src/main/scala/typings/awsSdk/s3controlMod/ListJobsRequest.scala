@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListJobsRequest extends StObject {
   
   /**
-    * 
+    * The Amazon Web Services account ID associated with the S3 Batch Operations job.
     */
   var AccountId: typings.awsSdk.s3controlMod.AccountId
   
@@ -41,7 +41,7 @@ object ListJobsRequest {
     
     inline def setJobStatusesUndefined: Self = StObject.set(x, "JobStatuses", js.undefined)
     
-    inline def setJobStatusesVarargs(value: JobStatus*): Self = StObject.set(x, "JobStatuses", js.Array(value :_*))
+    inline def setJobStatusesVarargs(value: JobStatus*): Self = StObject.set(x, "JobStatuses", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

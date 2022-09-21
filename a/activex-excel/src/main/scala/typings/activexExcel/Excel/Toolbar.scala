@@ -23,7 +23,7 @@ trait Toolbar extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: Double
   
@@ -52,7 +52,7 @@ object Toolbar {
     Height: Double,
     Left: Double,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Position: Double,
     Protection: XlToolbarProtection,
     Reset: () => Unit,
@@ -84,7 +84,7 @@ object Toolbar {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     

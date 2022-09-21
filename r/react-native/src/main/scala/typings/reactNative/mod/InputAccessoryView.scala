@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native", "InputAccessoryView")
 @js.native
-class InputAccessoryView protected ()
-  extends Component[InputAccessoryViewProps, js.Object, js.Any] {
+open class InputAccessoryView protected ()
+  extends Component[InputAccessoryViewProps, js.Object, Any] {
   def this(props: InputAccessoryViewProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: InputAccessoryViewProps, context: js.Any) = this()
+  def this(props: InputAccessoryViewProps, context: Any) = this()
 }

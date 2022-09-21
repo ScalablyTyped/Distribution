@@ -37,36 +37,36 @@ object IdFilter {
     
     inline def setAdGroupAdIdsUndefined: Self = StObject.set(x, "adGroupAdIds", js.undefined)
     
-    inline def setAdGroupAdIdsVarargs(value: String*): Self = StObject.set(x, "adGroupAdIds", js.Array(value :_*))
+    inline def setAdGroupAdIdsVarargs(value: String*): Self = StObject.set(x, "adGroupAdIds", js.Array(value*))
     
     inline def setAdGroupIds(value: js.Array[String]): Self = StObject.set(x, "adGroupIds", value.asInstanceOf[js.Any])
     
     inline def setAdGroupIdsUndefined: Self = StObject.set(x, "adGroupIds", js.undefined)
     
-    inline def setAdGroupIdsVarargs(value: String*): Self = StObject.set(x, "adGroupIds", js.Array(value :_*))
+    inline def setAdGroupIdsVarargs(value: String*): Self = StObject.set(x, "adGroupIds", js.Array(value*))
     
     inline def setCampaignIds(value: js.Array[String]): Self = StObject.set(x, "campaignIds", value.asInstanceOf[js.Any])
     
     inline def setCampaignIdsUndefined: Self = StObject.set(x, "campaignIds", js.undefined)
     
-    inline def setCampaignIdsVarargs(value: String*): Self = StObject.set(x, "campaignIds", js.Array(value :_*))
+    inline def setCampaignIdsVarargs(value: String*): Self = StObject.set(x, "campaignIds", js.Array(value*))
     
     inline def setInsertionOrderIds(value: js.Array[String]): Self = StObject.set(x, "insertionOrderIds", value.asInstanceOf[js.Any])
     
     inline def setInsertionOrderIdsUndefined: Self = StObject.set(x, "insertionOrderIds", js.undefined)
     
-    inline def setInsertionOrderIdsVarargs(value: String*): Self = StObject.set(x, "insertionOrderIds", js.Array(value :_*))
+    inline def setInsertionOrderIdsVarargs(value: String*): Self = StObject.set(x, "insertionOrderIds", js.Array(value*))
     
     inline def setLineItemIds(value: js.Array[String]): Self = StObject.set(x, "lineItemIds", value.asInstanceOf[js.Any])
     
     inline def setLineItemIdsUndefined: Self = StObject.set(x, "lineItemIds", js.undefined)
     
-    inline def setLineItemIdsVarargs(value: String*): Self = StObject.set(x, "lineItemIds", js.Array(value :_*))
+    inline def setLineItemIdsVarargs(value: String*): Self = StObject.set(x, "lineItemIds", js.Array(value*))
     
     inline def setMediaProductIds(value: js.Array[String]): Self = StObject.set(x, "mediaProductIds", value.asInstanceOf[js.Any])
     
     inline def setMediaProductIdsUndefined: Self = StObject.set(x, "mediaProductIds", js.undefined)
     
-    inline def setMediaProductIdsVarargs(value: String*): Self = StObject.set(x, "mediaProductIds", js.Array(value :_*))
+    inline def setMediaProductIdsVarargs(value: String*): Self = StObject.set(x, "mediaProductIds", js.Array(value*))
   }
 }

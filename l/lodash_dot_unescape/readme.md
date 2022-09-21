@@ -10,10 +10,10 @@ The lodash method `_.unescape` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.unescape |
 | Keywords           | lodash-modularized, unescape |
-| # releases         | 0 |
-| # dependents       | 55 |
-| # downloads        | 88322635 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4210584.666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

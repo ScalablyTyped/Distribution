@@ -10,10 +10,10 @@ The lodash method `_.pick` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.pick |
 | Keywords           | lodash-modularized, pick |
-| # releases         | 0 |
-| # dependents       | 819 |
-| # downloads        | 88914813 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5715646E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

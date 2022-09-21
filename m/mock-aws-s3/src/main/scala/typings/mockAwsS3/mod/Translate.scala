@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class Translate ()
+open class Translate ()
   extends typings.awsSdk.mod.Translate {
   def this(options: ClientConfiguration) = this()
 }

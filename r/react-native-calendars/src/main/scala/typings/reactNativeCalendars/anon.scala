@@ -58,4 +58,21 @@ object anon {
       inline def setEnableSwipeMonthsUndefined: Self = StObject.set(x, "enableSwipeMonths", js.undefined)
     }
   }
+  
+  trait Today extends StObject {
+    
+    var today: String
+  }
+  object Today {
+    
+    inline def apply(today: String): Today = {
+      val __obj = js.Dynamic.literal(today = today.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Today]
+    }
+    
+    extension [Self <: Today](x: Self) {
+      
+      inline def setToday(value: String): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+    }
+  }
 }

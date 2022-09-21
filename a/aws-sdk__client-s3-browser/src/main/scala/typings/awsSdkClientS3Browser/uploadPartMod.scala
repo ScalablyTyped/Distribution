@@ -8,5 +8,5 @@ object uploadPartMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/UploadPart", "UploadPart")
   @js.native
-  val UploadPart: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val UploadPart: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

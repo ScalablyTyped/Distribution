@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "TopChildrenQuery")
 @js.native
-class TopChildrenQuery protected ()
+open class TopChildrenQuery protected ()
   extends StObject
      with Query {
   /*
@@ -64,7 +64,7 @@ class TopChildrenQuery protected ()
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /*
     Sets the child document type to search against

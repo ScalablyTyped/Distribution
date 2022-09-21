@@ -109,7 +109,7 @@ object XDocumentTemplates {
     addGroup: String => Boolean,
     addTemplate: (String, String, String) => Boolean,
     getContent: () => XContent,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeGroup: String => Boolean,
     removeTemplate: (String, String) => Boolean,

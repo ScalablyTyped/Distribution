@@ -1,21 +1,46 @@
 package typings.eventHooksWebpackPlugin
 
-import typings.std.Plugin
+import typings.webpack.mod.Compiler
+import typings.webpack.mod.WebpackPluginInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  /**
+    * This webpack plugin is similar to `webpack-shell-plugin`
+    * but this allows you to execute arbitrary JavaScriptinstead of commands on any event hook that is exposed by the Webpack compile
+    */
   @JSImport("event-hooks-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
-       with Plugin {
+       with EventHooksPlugin {
     def this(options: Options) = this()
+    
+    /**
+    	 * The run point of the plugin, required method.
+    	 */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(compiler: Compiler): Unit = js.native
   }
   
-  type EventHooksPlugin = Plugin
+  /**
+    * This webpack plugin is similar to `webpack-shell-plugin`
+    * but this allows you to execute arbitrary JavaScriptinstead of commands on any event hook that is exposed by the Webpack compile
+    */
+  trait EventHooksPlugin
+    extends StObject
+       with WebpackPluginInstance
+  object EventHooksPlugin {
+    
+    inline def apply(apply: Compiler => Unit): EventHooksPlugin = {
+      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
+      __obj.asInstanceOf[EventHooksPlugin]
+    }
+  }
   
   trait Options extends StObject {
     

@@ -18,17 +18,40 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def debug(message: js.Any, rest: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(message: Any, rest: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(List(message.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
-    inline def error(message: js.Any, rest: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def error(message: Any, rest: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(List(message.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
-    inline def info(message: js.Any, rest: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(message.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def info(message: Any, rest: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(List(message.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
-    inline def log(message: js.Any, rest: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def log(message: Any, rest: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(message.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
-    inline def trace(message: js.Any, rest: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trace")(message.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def trace(message: Any, rest: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(List(message.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
-    inline def warn(message: js.Any, rest: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def warn(message: Any, rest: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(List(message.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  }
+  
+  object once {
+    
+    inline def apply(`type`: /* keyof @storybook/client-logger.anon.Debug */ trace | debug | info | warn | error | log): js.Function2[/* message */ Any, /* repeated */ Any, Unit] = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* message */ Any, /* repeated */ Any, Unit]]
+    
+    @JSImport("@storybook/client-logger", "once")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+    
+    inline def debug(message: Any, rest: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(List(message.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    
+    inline def error(message: Any, rest: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(List(message.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    
+    inline def info(message: Any, rest: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(List(message.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    
+    inline def log(message: Any, rest: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(message.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    
+    inline def trace(message: Any, rest: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(List(message.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    
+    inline def warn(message: Any, rest: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(List(message.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   }
   
   object pretty {
@@ -39,14 +62,14 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def debug(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def debug(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
     
-    inline def error(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def error(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
     
-    inline def info(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def info(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
     
-    inline def trace(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def trace(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
     
-    inline def warn(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def warn(args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "FresnelBlock")
 @js.native
-class FresnelBlock protected ()
+open class FresnelBlock protected ()
   extends typings.babylonjs.materialsIndexMod.FresnelBlock {
   /**
     * Create a new FresnelBlock

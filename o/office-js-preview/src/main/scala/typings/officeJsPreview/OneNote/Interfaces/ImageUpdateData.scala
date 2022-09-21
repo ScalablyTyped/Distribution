@@ -4,37 +4,37 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the Image object, for use in "image.set({ ... })". */
+/** An interface for updating data on the Image object, for use in `image.set({ ... })`. */
 trait ImageUpdateData extends StObject {
   
   /**
-    *
     * Gets or sets the description of the Image.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets the height of the Image layout.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Gets or sets the hyperlink of the Image.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var hyperlink: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets the width of the Image layout.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var width: js.UndefOr[Double] = js.undefined

@@ -48,7 +48,6 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PureComponent
-import typings.react.mod.ReactType
 import typings.react.mod.Ref
 import typings.std.Element
 import typings.std.HTMLElement
@@ -61,11 +60,10 @@ object navbarItemContainerMod {
   
   @JSImport("rbx/components/navbar/navbar-item-container", "NavbarItemContainer")
   @js.native
-  class NavbarItemContainer protected ()
-    extends PureComponent[NavbarItemContainerProps, NavbarItemContainerState, js.Any] {
+  open class NavbarItemContainer protected () extends PureComponent[NavbarItemContainerProps, NavbarItemContainerState, Any] {
     def this(props: NavbarItemContainerProps) = this()
     
-    /* private */ var active: js.Any = js.native
+    /* private */ var active: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MNavbarItemContainer(): Unit = js.native
@@ -73,11 +71,11 @@ object navbarItemContainerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MNavbarItemContainer(): Unit = js.native
     
-    /* private */ val handleDocumentClick: js.Any = js.native
+    /* private */ val handleDocumentClick: Any = js.native
     
-    /* private */ val handleOnClick: js.Any = js.native
+    /* private */ val handleOnClick: Any = js.native
     
-    /* private */ val ref: js.Any = js.native
+    /* private */ val ref: Any = js.native
   }
   /* static members */
   object NavbarItemContainer {
@@ -96,7 +94,9 @@ object navbarItemContainerMod {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
-    var as: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var as: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ] = js.undefined
     
     var dropdown: js.UndefOr[Boolean] = js.undefined
     
@@ -127,7 +127,9 @@ object navbarItemContainerMod {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -174,7 +176,9 @@ object navbarItemContainerMod {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
-    var as: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var as: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ] = js.undefined
     
     var backgroundColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -279,7 +283,9 @@ object navbarItemContainerMod {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

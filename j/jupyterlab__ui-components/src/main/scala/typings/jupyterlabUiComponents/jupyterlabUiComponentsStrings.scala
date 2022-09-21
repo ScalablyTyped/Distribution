@@ -198,6 +198,10 @@ object jupyterlabUiComponentsStrings {
   inline def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
   
   @js.native
+  sealed trait value extends StObject
+  inline def value: value = "value".asInstanceOf[value]
+  
+  @js.native
   sealed trait xlarge
     extends StObject
        with ISize

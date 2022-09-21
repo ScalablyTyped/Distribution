@@ -25,6 +25,6 @@ object RequestContextDebugInfo {
     
     inline def setPendingStatements(value: js.Array[String]): Self = StObject.set(x, "pendingStatements", value.asInstanceOf[js.Any])
     
-    inline def setPendingStatementsVarargs(value: String*): Self = StObject.set(x, "pendingStatements", js.Array(value :_*))
+    inline def setPendingStatementsVarargs(value: String*): Self = StObject.set(x, "pendingStatements", js.Array(value*))
   }
 }

@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("sentiment", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Sentiment {
     def this(options: SentimentOptions) = this()
@@ -76,27 +76,27 @@ object mod {
       
       inline def setCalculation(value: js.Array[StringDictionary[Double]]): Self = StObject.set(x, "calculation", value.asInstanceOf[js.Any])
       
-      inline def setCalculationVarargs(value: StringDictionary[Double]*): Self = StObject.set(x, "calculation", js.Array(value :_*))
+      inline def setCalculationVarargs(value: StringDictionary[Double]*): Self = StObject.set(x, "calculation", js.Array(value*))
       
       inline def setComparative(value: Double): Self = StObject.set(x, "comparative", value.asInstanceOf[js.Any])
       
       inline def setNegative(value: js.Array[String]): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
       
-      inline def setNegativeVarargs(value: String*): Self = StObject.set(x, "negative", js.Array(value :_*))
+      inline def setNegativeVarargs(value: String*): Self = StObject.set(x, "negative", js.Array(value*))
       
       inline def setPositive(value: js.Array[String]): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
       
-      inline def setPositiveVarargs(value: String*): Self = StObject.set(x, "positive", js.Array(value :_*))
+      inline def setPositiveVarargs(value: String*): Self = StObject.set(x, "positive", js.Array(value*))
       
       inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
       
       inline def setTokens(value: js.Array[String]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      inline def setTokensVarargs(value: String*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: String*): Self = StObject.set(x, "tokens", js.Array(value*))
       
       inline def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value*))
     }
   }
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for trim-newlines
 
-Typings are for version 3.0.0
+Typings are for version 4.0.2
 
 ## Library description:
 Trim newlines from the start and/or end of a string
@@ -10,10 +10,10 @@ Trim newlines from the start and/or end of a string
 | ------------------ | :-------------: |
 | Full name          | trim-newlines |
 | Keywords           | trim, newline, newlines, linebreak, lf, crlf, left, right, start, end, string, remove, delete, strip |
-| # releases         | 2 |
-| # dependents       | 74 |
-| # downloads        | 483067660 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 5.929405E7 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/trim-newlines#readme)

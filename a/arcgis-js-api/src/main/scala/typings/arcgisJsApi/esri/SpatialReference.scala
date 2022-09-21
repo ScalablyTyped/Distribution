@@ -22,7 +22,7 @@ trait SpatialReference
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#imageCoordinateSystem)
     */
-  var imageCoordinateSystem: js.Any = js.native
+  var imageCoordinateSystem: Any = js.native
   
   /**
     * Indicates if the spatial reference refers to a geographic coordinate system.

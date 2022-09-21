@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of one or more rectangular ranges in multiple worksheets.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 trait WorkbookRangeAreasLoadOptions extends StObject {
@@ -19,9 +19,9 @@ trait WorkbookRangeAreasLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Returns an array of addresses in A1-style. Address values contain the worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
     *
-    * Returns an array of address in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var addresses: js.UndefOr[Boolean] = js.undefined

@@ -82,7 +82,7 @@ object AcquireMethod {
     
     inline def setAcquireMethodUndefined: Self = StObject.set(x, "acquireMethod", js.undefined)
     
-    inline def setAcquireMethodVarargs(value: String*): Self = StObject.set(x, "acquireMethod", js.Array(value :_*))
+    inline def setAcquireMethodVarargs(value: String*): Self = StObject.set(x, "acquireMethod", js.Array(value*))
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -124,7 +124,7 @@ object AcquireMethod {
     
     inline def setProcessingStateUndefined: Self = StObject.set(x, "processingState", js.undefined)
     
-    inline def setProcessingStateVarargs(value: String*): Self = StObject.set(x, "processingState", js.Array(value :_*))
+    inline def setProcessingStateVarargs(value: String*): Self = StObject.set(x, "processingState", js.Array(value*))
     
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     

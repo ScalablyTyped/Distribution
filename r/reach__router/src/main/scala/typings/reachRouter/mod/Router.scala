@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@reach/router", "Router")
 @js.native
-class Router protected ()
-  extends Component[RouterProps & HTMLProps[HTMLDivElement], js.Object, js.Any] {
+open class Router protected ()
+  extends Component[RouterProps & HTMLProps[HTMLDivElement], js.Object, Any] {
   def this(props: RouterProps & HTMLProps[HTMLDivElement]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: RouterProps & HTMLProps[HTMLDivElement], context: js.Any) = this()
+  def this(props: RouterProps & HTMLProps[HTMLDivElement], context: Any) = this()
 }

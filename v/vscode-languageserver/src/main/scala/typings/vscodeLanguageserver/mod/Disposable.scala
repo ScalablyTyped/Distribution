@@ -10,5 +10,5 @@ object Disposable {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def create(func: js.Function0[Unit]): typings.vscodeJsonrpc.eventsMod.Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(func.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeJsonrpc.eventsMod.Disposable]
+  inline def create(func: js.Function0[Unit]): typings.vscodeJsonrpc.disposableMod.Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(func.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeJsonrpc.disposableMod.Disposable]
 }

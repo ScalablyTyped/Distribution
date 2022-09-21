@@ -41,9 +41,9 @@ object jsonPropertyMod {
     /* "TOJSON_ONLY" */ val TOJSON_ONLY: typings.hyperlorisTyson.jsonPropertyMod.Access.TOJSON_ONLY & String = js.native
   }
   
-  inline def JsonProperty(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")().asInstanceOf[js.Any]
-  inline def JsonProperty(options: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def JsonProperty(options: JsonPropertyOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def JsonProperty(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")().asInstanceOf[Any]
+  inline def JsonProperty(options: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def JsonProperty(options: JsonPropertyOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   trait JsonPropertyOptions extends StObject {
     
@@ -82,7 +82,7 @@ object jsonPropertyMod {
       * This is mandatory for arrays (single and multi-type).
       * NOTE: if it's a Date object, you MUST specify the type!
       */
-    var `type`: js.UndefOr[ClassType[js.Any] | js.Array[js.Any]] = js.undefined
+    var `type`: js.UndefOr[ClassType[Any] | js.Array[Any]] = js.undefined
   }
   object JsonPropertyOptions {
     
@@ -109,11 +109,11 @@ object jsonPropertyMod {
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      inline def setType(value: ClassType[js.Any] | js.Array[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ClassType[Any] | js.Array[Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setTypeVarargs(value: js.Any*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: Any*): Self = StObject.set(x, "type", js.Array(value*))
     }
   }
 }

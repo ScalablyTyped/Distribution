@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashDefer extends StObject {
   
-  def apply(func: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): Double = js.native
+  def apply(func: js.Function1[/* repeated */ Any, Any], args: Any*): Double = js.native
 }

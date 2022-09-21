@@ -10,10 +10,10 @@ Sorts JSON object alphabetically. It supports nested objects, arrays and collect
 | ------------------ | :-------------: |
 | Full name          | jsonabc |
 | Keywords           | sorting, beautify, alphabet, sorts json, json, utility |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 113707 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 18340.333333333332 |
+| # stars            | 118.0 |
 
 ## Links
 - [Homepage](http://novicelab.org/jsonabc)

@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FacetResult extends StObject {
   
-  /** FacetBuckets for values in response containing at least a single result. */
+  /** FacetBuckets for values in response containing at least a single result with the corresponding filter. */
   var buckets: js.UndefOr[js.Array[FacetBucket]] = js.undefined
   
   /** Object type for which facet results are returned. Can be empty. */
   var objectType: js.UndefOr[String] = js.undefined
   
-  /** Name of the operator chosen for faceting. @see cloudsearch.SchemaPropertyOptions */
+  /** The name of the operator chosen for faceting. @see cloudsearch.SchemaPropertyOptions */
   var operatorName: js.UndefOr[String] = js.undefined
   
   /** Source name for which facet results are returned. Will not be empty. */
@@ -31,7 +31,7 @@ object FacetResult {
     
     inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
-    inline def setBucketsVarargs(value: FacetBucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: FacetBucket*): Self = StObject.set(x, "buckets", js.Array(value*))
     
     inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     

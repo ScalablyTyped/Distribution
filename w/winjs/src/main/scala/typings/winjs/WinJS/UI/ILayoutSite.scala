@@ -44,7 +44,7 @@ trait ILayoutSite extends StObject {
   /**
     * This API is no longer supported. Starting with the Windows Library for JavaScript 2.0 Preview, use a the ILayoutSite2 interface.
     **/
-  var viewportSize: js.Any
+  var viewportSize: Any
 }
 object ILayoutSite {
   
@@ -55,7 +55,7 @@ object ILayoutSite {
     scrollbarPos: Double,
     surface: HTMLElement,
     viewport: HTMLElement,
-    viewportSize: js.Any
+    viewportSize: Any
   ): ILayoutSite = {
     val __obj = js.Dynamic.literal(animationsDisabled = animationsDisabled.asInstanceOf[js.Any], itemSurface = itemSurface.asInstanceOf[js.Any], rtl = rtl.asInstanceOf[js.Any], scrollbarPos = scrollbarPos.asInstanceOf[js.Any], surface = surface.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any], viewportSize = viewportSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILayoutSite]
@@ -75,6 +75,6 @@ object ILayoutSite {
     
     inline def setViewport(value: HTMLElement): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
-    inline def setViewportSize(value: js.Any): Self = StObject.set(x, "viewportSize", value.asInstanceOf[js.Any])
+    inline def setViewportSize(value: Any): Self = StObject.set(x, "viewportSize", value.asInstanceOf[js.Any])
   }
 }

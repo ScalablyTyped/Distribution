@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.Msg")
 @js.native
-class Msg ()
+open class Msg ()
   extends StObject
      with typings.extjs.Ext.Msg
 /* static members */
@@ -114,8 +114,8 @@ object Msg {
     * @param component Ext.Component[]|Object[]/Ext.Component.../Object... Either one or more Components to add or an Array of Components to add. See items for additional information.
     * @returns Ext.Component[]/Ext.Component The Components that were added.
     */
-  inline def add(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[js.Any]
-  inline def add(component: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def add(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[Any]
+  inline def add(component: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(component.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Adds a CSS class to the body element
     * @param cls String The class to add
@@ -132,23 +132,23 @@ object Msg {
     * @returns Ext.Component Returns the Component to allow method chaining.
     */
   inline def addClass(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("addClass")().asInstanceOf[IComponent]
-  inline def addClass(cls: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(cls.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def addClass(cls: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(cls.asInstanceOf[js.Any]).asInstanceOf[IComponent]
   
   /** [Method] Adds a CSS class to the top level element representing this component
     * @param cls String/String[] The CSS class name to add.
     * @returns Ext.Component Returns the Component to allow method chaining.
     */
   inline def addCls(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("addCls")().asInstanceOf[IComponent]
-  inline def addCls(cls: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def addCls(cls: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("addCls")(cls.asInstanceOf[js.Any]).asInstanceOf[IComponent]
   
   /** [Method] Adds a cls to the uiCls array which will also call addUIClsToElement and adds to all elements of this component
     * @param classes String/String[] A string or an array of strings to add to the uiCls.
     * @param skip Object (Boolean) skip true to skip adding it to the class and do it later (via the return).
     */
   inline def addClsWithUI(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addClsWithUI")().asInstanceOf[Unit]
-  inline def addClsWithUI(classes: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addClsWithUI")(classes.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def addClsWithUI(classes: js.Any, skip: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClsWithUI")(classes.asInstanceOf[js.Any], skip.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addClsWithUI(classes: Unit, skip: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClsWithUI")(classes.asInstanceOf[js.Any], skip.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addClsWithUI(classes: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addClsWithUI")(classes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addClsWithUI(classes: Any, skip: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClsWithUI")(classes.asInstanceOf[js.Any], skip.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addClsWithUI(classes: Unit, skip: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClsWithUI")(classes.asInstanceOf[js.Any], skip.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Adds docked item s to the container
     * @param component Object/Object[] The Component or array of components to add. The components must include a 'dock' parameter on each component to indicate where it should be docked ('top', 'right', 'bottom', 'left').
@@ -156,15 +156,15 @@ object Msg {
     * @returns Ext.Component[] The added components.
     */
   inline def addDocked(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("addDocked")().asInstanceOf[typings.extjs.Ext.Array]
-  inline def addDocked(component: js.Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("addDocked")(component.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
-  inline def addDocked(component: js.Any, pos: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("addDocked")(component.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def addDocked(component: Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("addDocked")(component.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  inline def addDocked(component: Any, pos: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("addDocked")(component.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   inline def addDocked(component: Unit, pos: Double): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("addDocked")(component.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Adds the specified events to the list of events which this Observable may fire
     * @param eventNames Object/String... Either an object with event names as properties with a value of true. For example: this.addEvents({  storeloaded: true,  storecleared: true });  Or any number of event names as separate parameters. For example: this.addEvents('storeloaded', 'storecleared');
     */
   inline def addEvents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addEvents")().asInstanceOf[Unit]
-  inline def addEvents(eventNames: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addEvents")(eventNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addEvents(eventNames: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addEvents")(eventNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Appends an event handler to this object
     * @param element Object
@@ -173,22 +173,22 @@ object Msg {
     * @param options Object
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
-  inline def addListener(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addListener")().asInstanceOf[js.Any]
-  inline def addListener(element: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def addListener(element: js.Any, listeners: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addListener(element: js.Any, listeners: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addListener(element: js.Any, listeners: js.Any, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addListener(element: js.Any, listeners: js.Any, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addListener(element: js.Any, listeners: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addListener(element: js.Any, listeners: Unit, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addListener(element: js.Any, listeners: Unit, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addListener(element: Unit, listeners: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addListener(element: Unit, listeners: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addListener(element: Unit, listeners: js.Any, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addListener(element: Unit, listeners: js.Any, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addListener(element: Unit, listeners: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addListener(element: Unit, listeners: Unit, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addListener(element: Unit, listeners: Unit, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def addListener(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addListener")().asInstanceOf[Any]
+  inline def addListener(element: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def addListener(element: Any, listeners: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(element: Any, listeners: Any, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(element: Any, listeners: Any, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(element: Any, listeners: Any, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(element: Any, listeners: Unit, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(element: Any, listeners: Unit, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(element: Any, listeners: Unit, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(element: Unit, listeners: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(element: Unit, listeners: Any, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(element: Unit, listeners: Any, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(element: Unit, listeners: Any, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(element: Unit, listeners: Unit, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(element: Unit, listeners: Unit, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addListener(element: Unit, listeners: Unit, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(element.asInstanceOf[js.Any], listeners.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Method] Adds listeners to any Observable object or Ext Element which are automatically removed when this Component is destr
     * @param item Ext.util.Observable/Ext.Element The item to which to add a listener/listeners.
@@ -198,38 +198,38 @@ object Msg {
     * @param options Object If the ename parameter was an event name, this is the addListener options.
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
-  inline def addManagedListener(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")().asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any, ename: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any, ename: js.Any, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any, ename: js.Any, fn: Unit, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any, ename: js.Any, fn: Unit, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any, ename: Unit, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any, ename: Unit, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any, ename: Unit, fn: js.Any, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any, ename: Unit, fn: js.Any, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any, ename: Unit, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any, ename: Unit, fn: Unit, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: js.Any, ename: Unit, fn: Unit, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: Unit, ename: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: Unit, ename: js.Any, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: Unit, ename: js.Any, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: Unit, ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: Unit, ename: js.Any, fn: js.Any, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: Unit, ename: js.Any, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: Unit, ename: js.Any, fn: Unit, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: Unit, ename: js.Any, fn: Unit, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: Unit, ename: Unit, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: Unit, ename: Unit, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: Unit, ename: Unit, fn: js.Any, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: Unit, ename: Unit, fn: js.Any, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: Unit, ename: Unit, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: Unit, ename: Unit, fn: Unit, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def addManagedListener(item: Unit, ename: Unit, fn: Unit, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def addManagedListener(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")().asInstanceOf[Any]
+  inline def addManagedListener(item: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def addManagedListener(item: Any, ename: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Any, ename: Any, fn: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Any, ename: Any, fn: Any, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Any, ename: Any, fn: Any, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Any, ename: Any, fn: Any, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Any, ename: Any, fn: Unit, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Any, ename: Any, fn: Unit, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Any, ename: Any, fn: Unit, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Any, ename: Unit, fn: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Any, ename: Unit, fn: Any, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Any, ename: Unit, fn: Any, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Any, ename: Unit, fn: Any, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Any, ename: Unit, fn: Unit, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Any, ename: Unit, fn: Unit, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Any, ename: Unit, fn: Unit, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Unit, ename: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Unit, ename: Any, fn: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Unit, ename: Any, fn: Any, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Unit, ename: Any, fn: Any, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Unit, ename: Any, fn: Any, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Unit, ename: Any, fn: Unit, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Unit, ename: Any, fn: Unit, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Unit, ename: Any, fn: Unit, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Unit, ename: Unit, fn: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Unit, ename: Unit, fn: Any, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Unit, ename: Unit, fn: Any, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Unit, ename: Unit, fn: Any, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Unit, ename: Unit, fn: Unit, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Unit, ename: Unit, fn: Unit, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def addManagedListener(item: Unit, ename: Unit, fn: Unit, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Method] Save a property to the given state object if it is not its default or configured value
     * @param state Object The state object.
@@ -238,10 +238,10 @@ object Msg {
     * @returns Boolean The state object or a new object if state was null and the property was saved.
     */
   inline def addPropertyToState(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("addPropertyToState")().asInstanceOf[Boolean]
-  inline def addPropertyToState(state: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("addPropertyToState")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def addPropertyToState(state: js.Any, propName: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addPropertyToState")(state.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def addPropertyToState(state: js.Any, propName: java.lang.String, value: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addPropertyToState")(state.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def addPropertyToState(state: js.Any, propName: Unit, value: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addPropertyToState")(state.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def addPropertyToState(state: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("addPropertyToState")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def addPropertyToState(state: Any, propName: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addPropertyToState")(state.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def addPropertyToState(state: Any, propName: java.lang.String, value: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addPropertyToState")(state.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def addPropertyToState(state: Any, propName: Unit, value: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addPropertyToState")(state.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def addPropertyToState(state: Unit, propName: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addPropertyToState")(state.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def addPropertyToState(state: Unit, propName: java.lang.String, value: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addPropertyToState")(state.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def addPropertyToState(state: Unit, propName: Unit, value: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addPropertyToState")(state.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -250,19 +250,19 @@ object Msg {
     * @param events String/String[] The event name or an array of event names.
     */
   inline def addStateEvents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addStateEvents")().asInstanceOf[Unit]
-  inline def addStateEvents(events: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addStateEvents")(events.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addStateEvents(events: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addStateEvents")(events.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Add tools to this panel
     * @param tools Object[]/Ext.panel.Tool[] The tools to add
     */
   inline def addTool(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTool")().asInstanceOf[Unit]
-  inline def addTool(tools: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTool")(tools.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addTool(tools: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTool")(tools.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] inherit docs
     * @param cls Object
     */
   inline def addUIClsToElement(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addUIClsToElement")().asInstanceOf[Unit]
-  inline def addUIClsToElement(cls: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addUIClsToElement")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addUIClsToElement(cls: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addUIClsToElement")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Invoked after the Panel is Collapsed  */
   inline def afterCollapse(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterCollapse")().asInstanceOf[Unit]
@@ -284,9 +284,9 @@ object Msg {
     * @param ay Object
     */
   inline def afterSetPosition(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSetPosition")().asInstanceOf[Unit]
-  inline def afterSetPosition(ax: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSetPosition")(ax.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def afterSetPosition(ax: js.Any, ay: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSetPosition")(ax.asInstanceOf[js.Any], ay.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def afterSetPosition(ax: Unit, ay: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSetPosition")(ax.asInstanceOf[js.Any], ay.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSetPosition(ax: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSetPosition")(ax.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterSetPosition(ax: Any, ay: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSetPosition")(ax.asInstanceOf[js.Any], ay.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSetPosition(ax: Unit, ay: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSetPosition")(ax.asInstanceOf[js.Any], ay.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Invoked after the Component is shown after onShow is called
     * @param animateTarget String/Ext.Element
@@ -294,13 +294,13 @@ object Msg {
     * @param scope Object
     */
   inline def afterShow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterShow")().asInstanceOf[Unit]
-  inline def afterShow(animateTarget: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterShow")(animateTarget.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def afterShow(animateTarget: js.Any, callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterShow")(animateTarget.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def afterShow(animateTarget: js.Any, callback: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterShow")(animateTarget.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def afterShow(animateTarget: js.Any, callback: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterShow")(animateTarget.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def afterShow(animateTarget: Unit, callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterShow")(animateTarget.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def afterShow(animateTarget: Unit, callback: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterShow")(animateTarget.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def afterShow(animateTarget: Unit, callback: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterShow")(animateTarget.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterShow(animateTarget: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterShow")(animateTarget.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterShow(animateTarget: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterShow")(animateTarget.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterShow(animateTarget: Any, callback: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterShow")(animateTarget.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterShow(animateTarget: Any, callback: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterShow")(animateTarget.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterShow(animateTarget: Unit, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterShow")(animateTarget.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterShow(animateTarget: Unit, callback: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterShow")(animateTarget.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterShow(animateTarget: Unit, callback: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterShow")(animateTarget.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Displays a standard read only message box with an OK button comparable to the basic JavaScript alert prompt
     * @param title String The title bar text
@@ -312,19 +312,19 @@ object Msg {
   inline def alert(): IMessageBox = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")().asInstanceOf[IMessageBox]
   inline def alert(title: java.lang.String): IMessageBox = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any]).asInstanceOf[IMessageBox]
   inline def alert(title: java.lang.String, msg: java.lang.String): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def alert(title: java.lang.String, msg: java.lang.String, fn: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def alert(title: java.lang.String, msg: java.lang.String, fn: js.Any, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def alert(title: java.lang.String, msg: java.lang.String, fn: Unit, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def alert(title: java.lang.String, msg: Unit, fn: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def alert(title: java.lang.String, msg: Unit, fn: js.Any, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def alert(title: java.lang.String, msg: Unit, fn: Unit, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def alert(title: java.lang.String, msg: java.lang.String, fn: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def alert(title: java.lang.String, msg: java.lang.String, fn: Any, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def alert(title: java.lang.String, msg: java.lang.String, fn: Unit, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def alert(title: java.lang.String, msg: Unit, fn: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def alert(title: java.lang.String, msg: Unit, fn: Any, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def alert(title: java.lang.String, msg: Unit, fn: Unit, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
   inline def alert(title: Unit, msg: java.lang.String): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def alert(title: Unit, msg: java.lang.String, fn: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def alert(title: Unit, msg: java.lang.String, fn: js.Any, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def alert(title: Unit, msg: java.lang.String, fn: Unit, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def alert(title: Unit, msg: Unit, fn: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def alert(title: Unit, msg: Unit, fn: js.Any, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def alert(title: Unit, msg: Unit, fn: Unit, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def alert(title: Unit, msg: java.lang.String, fn: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def alert(title: Unit, msg: java.lang.String, fn: Any, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def alert(title: Unit, msg: java.lang.String, fn: Unit, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def alert(title: Unit, msg: Unit, fn: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def alert(title: Unit, msg: Unit, fn: Any, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def alert(title: Unit, msg: Unit, fn: Unit, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
   
   /** [Method] Aligns the element with another element relative to the specified anchor points
     * @param element Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or id of the element to align to.
@@ -334,21 +334,21 @@ object Msg {
     * @returns Ext.util.Positionable this
     */
   inline def alignTo(): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")().asInstanceOf[IPositionable]
-  inline def alignTo(element: js.Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
-  inline def alignTo(element: js.Any, position: java.lang.String): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
-  inline def alignTo(element: js.Any, position: java.lang.String, offsets: Unit, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
-  inline def alignTo(element: js.Any, position: java.lang.String, offsets: typings.extjs.Ext.Array): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
-  inline def alignTo(element: js.Any, position: java.lang.String, offsets: typings.extjs.Ext.Array, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
-  inline def alignTo(element: js.Any, position: Unit, offsets: Unit, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
-  inline def alignTo(element: js.Any, position: Unit, offsets: typings.extjs.Ext.Array): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
-  inline def alignTo(element: js.Any, position: Unit, offsets: typings.extjs.Ext.Array, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def alignTo(element: Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
+  inline def alignTo(element: Any, position: java.lang.String): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def alignTo(element: Any, position: java.lang.String, offsets: Unit, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def alignTo(element: Any, position: java.lang.String, offsets: typings.extjs.Ext.Array): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def alignTo(element: Any, position: java.lang.String, offsets: typings.extjs.Ext.Array, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def alignTo(element: Any, position: Unit, offsets: Unit, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def alignTo(element: Any, position: Unit, offsets: typings.extjs.Ext.Array): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def alignTo(element: Any, position: Unit, offsets: typings.extjs.Ext.Array, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
   inline def alignTo(element: Unit, position: java.lang.String): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
-  inline def alignTo(element: Unit, position: java.lang.String, offsets: Unit, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def alignTo(element: Unit, position: java.lang.String, offsets: Unit, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
   inline def alignTo(element: Unit, position: java.lang.String, offsets: typings.extjs.Ext.Array): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
-  inline def alignTo(element: Unit, position: java.lang.String, offsets: typings.extjs.Ext.Array, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
-  inline def alignTo(element: Unit, position: Unit, offsets: Unit, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def alignTo(element: Unit, position: java.lang.String, offsets: typings.extjs.Ext.Array, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def alignTo(element: Unit, position: Unit, offsets: Unit, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
   inline def alignTo(element: Unit, position: Unit, offsets: typings.extjs.Ext.Array): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
-  inline def alignTo(element: Unit, position: Unit, offsets: typings.extjs.Ext.Array, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def alignTo(element: Unit, position: Unit, offsets: typings.extjs.Ext.Array, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("alignTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
   
   /** [Method] Anchors an element to another element and realigns it when the window is resized
     * @param element Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or id of the element to align to.
@@ -360,26 +360,26 @@ object Msg {
     * @returns Ext.util.Positionable this
     */
   inline def anchorTo(
-    element: js.UndefOr[js.Any],
+    element: js.UndefOr[Any],
     position: js.UndefOr[java.lang.String],
     offsets: js.UndefOr[typings.extjs.Ext.Array],
-    animate: js.UndefOr[js.Any],
-    monitorScroll: js.UndefOr[js.Any],
-    callback: js.UndefOr[js.Any]
+    animate: js.UndefOr[Any],
+    monitorScroll: js.UndefOr[Any],
+    callback: js.UndefOr[Any]
   ): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("anchorTo")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any], animate.asInstanceOf[js.Any], monitorScroll.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
   
   /** [Method] Performs custom animation on this object
     * @param animObj Object
     * @returns Object this
     */
-  inline def animate(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("animate")().asInstanceOf[js.Any]
-  inline def animate(animObj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("animate")(animObj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def animate(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("animate")().asInstanceOf[Any]
+  inline def animate(animObj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("animate")(animObj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Applies the state to the object
     * @param state Object
     */
   inline def applyState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyState")().asInstanceOf[Unit]
-  inline def applyState(state: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyState")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def applyState(state: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyState")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Template method to do any pre blur processing
     * @param e Ext.EventObject The event object
@@ -421,19 +421,19 @@ object Msg {
     * @returns Ext.Component this
     */
   inline def bubble(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("bubble")().asInstanceOf[IComponent]
-  inline def bubble(fn: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("bubble")(fn.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  inline def bubble(fn: js.Any, scope: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("bubble")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def bubble(fn: js.Any, scope: js.Any, args: typings.extjs.Ext.Array): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("bubble")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def bubble(fn: js.Any, scope: Unit, args: typings.extjs.Ext.Array): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("bubble")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def bubble(fn: Unit, scope: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("bubble")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def bubble(fn: Unit, scope: js.Any, args: typings.extjs.Ext.Array): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("bubble")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def bubble(fn: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("bubble")(fn.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def bubble(fn: Any, scope: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("bubble")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def bubble(fn: Any, scope: Any, args: typings.extjs.Ext.Array): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("bubble")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def bubble(fn: Any, scope: Unit, args: typings.extjs.Ext.Array): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("bubble")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def bubble(fn: Unit, scope: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("bubble")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def bubble(fn: Unit, scope: Any, args: typings.extjs.Ext.Array): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("bubble")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   inline def bubble(fn: Unit, scope: Unit, args: typings.extjs.Ext.Array): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("bubble")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   
   /** [Property] (Object) */
   @JSGlobal("Ext.Msg.buttonText")
   @js.native
-  def buttonText: js.Any = js.native
-  inline def buttonText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonText")(x.asInstanceOf[js.Any])
+  def buttonText: Any = js.native
+  inline def buttonText_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonText")(x.asInstanceOf[js.Any])
   
   /** [Method] Calculates the new x y position to move this Positionable into a constrain region
     * @param constrainTo String/HTMLElement/Ext.Element/Ext.util.Region The Element or Region into which this Component is to be constrained. Defaults to the element into which this Positionable was rendered, or this Component's {@link Ext.Component.constrainTo.
@@ -443,20 +443,20 @@ object Msg {
     * @returns Number[] If the element needs to be translated, the new [X, Y] position within constraints if possible, giving priority to keeping the top and left edge in the constrain region. Otherwise, false.
     */
   inline def calculateConstrainedPosition(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateConstrainedPosition")().asInstanceOf[typings.extjs.Ext.Array]
-  inline def calculateConstrainedPosition(constrainTo: js.Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateConstrainedPosition")(constrainTo.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
-  inline def calculateConstrainedPosition(constrainTo: js.Any, proposedPosition: Unit, local: Boolean): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateConstrainedPosition")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
-  inline def calculateConstrainedPosition(constrainTo: js.Any, proposedPosition: Unit, local: Boolean, proposedSize: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateConstrainedPosition")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], local.asInstanceOf[js.Any], proposedSize.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
-  inline def calculateConstrainedPosition(constrainTo: js.Any, proposedPosition: Unit, local: Unit, proposedSize: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateConstrainedPosition")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], local.asInstanceOf[js.Any], proposedSize.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
-  inline def calculateConstrainedPosition(constrainTo: js.Any, proposedPosition: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateConstrainedPosition")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
-  inline def calculateConstrainedPosition(constrainTo: js.Any, proposedPosition: typings.extjs.Ext.Array, local: Boolean): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateConstrainedPosition")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def calculateConstrainedPosition(constrainTo: Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateConstrainedPosition")(constrainTo.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  inline def calculateConstrainedPosition(constrainTo: Any, proposedPosition: Unit, local: Boolean): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateConstrainedPosition")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def calculateConstrainedPosition(constrainTo: Any, proposedPosition: Unit, local: Boolean, proposedSize: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateConstrainedPosition")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], local.asInstanceOf[js.Any], proposedSize.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def calculateConstrainedPosition(constrainTo: Any, proposedPosition: Unit, local: Unit, proposedSize: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateConstrainedPosition")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], local.asInstanceOf[js.Any], proposedSize.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def calculateConstrainedPosition(constrainTo: Any, proposedPosition: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateConstrainedPosition")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def calculateConstrainedPosition(constrainTo: Any, proposedPosition: typings.extjs.Ext.Array, local: Boolean): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateConstrainedPosition")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   inline def calculateConstrainedPosition(
-    constrainTo: js.Any,
+    constrainTo: Any,
     proposedPosition: typings.extjs.Ext.Array,
     local: Boolean,
     proposedSize: typings.extjs.Ext.Array
   ): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateConstrainedPosition")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], local.asInstanceOf[js.Any], proposedSize.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   inline def calculateConstrainedPosition(
-    constrainTo: js.Any,
+    constrainTo: Any,
     proposedPosition: typings.extjs.Ext.Array,
     local: Unit,
     proposedSize: typings.extjs.Ext.Array
@@ -483,22 +483,22 @@ object Msg {
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
     * @returns Object Returns the result of calling the overridden method
     */
-  inline def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
-  inline def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callOverridden(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[Any]
+  inline def callOverridden(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Call the parent method of the current method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
     * @returns Object Returns the result of calling the parent method
     */
-  inline def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
-  inline def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callParent(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Any]
+  inline def callParent(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
     * @returns Object Returns the result of calling the superclass method
     */
-  inline def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
-  inline def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callSuper(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[Any]
+  inline def callSuper(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Cancel any deferred focus on this component */
   inline def cancelFocus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelFocus")().asInstanceOf[Unit]
@@ -510,12 +510,12 @@ object Msg {
     * @returns Ext.Container this
     */
   inline def cascade(): typings.extjs.Ext.IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("cascade")().asInstanceOf[typings.extjs.Ext.IContainer]
-  inline def cascade(fn: js.Any): typings.extjs.Ext.IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("cascade")(fn.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.IContainer]
-  inline def cascade(fn: js.Any, scope: js.Any): typings.extjs.Ext.IContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("cascade")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.IContainer]
-  inline def cascade(fn: js.Any, scope: js.Any, args: typings.extjs.Ext.Array): typings.extjs.Ext.IContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("cascade")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.IContainer]
-  inline def cascade(fn: js.Any, scope: Unit, args: typings.extjs.Ext.Array): typings.extjs.Ext.IContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("cascade")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.IContainer]
-  inline def cascade(fn: Unit, scope: js.Any): typings.extjs.Ext.IContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("cascade")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.IContainer]
-  inline def cascade(fn: Unit, scope: js.Any, args: typings.extjs.Ext.Array): typings.extjs.Ext.IContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("cascade")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.IContainer]
+  inline def cascade(fn: Any): typings.extjs.Ext.IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("cascade")(fn.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.IContainer]
+  inline def cascade(fn: Any, scope: Any): typings.extjs.Ext.IContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("cascade")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.IContainer]
+  inline def cascade(fn: Any, scope: Any, args: typings.extjs.Ext.Array): typings.extjs.Ext.IContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("cascade")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.IContainer]
+  inline def cascade(fn: Any, scope: Unit, args: typings.extjs.Ext.Array): typings.extjs.Ext.IContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("cascade")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.IContainer]
+  inline def cascade(fn: Unit, scope: Any): typings.extjs.Ext.IContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("cascade")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.IContainer]
+  inline def cascade(fn: Unit, scope: Any, args: typings.extjs.Ext.Array): typings.extjs.Ext.IContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("cascade")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.IContainer]
   inline def cascade(fn: Unit, scope: Unit, args: typings.extjs.Ext.Array): typings.extjs.Ext.IContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("cascade")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.IContainer]
   
   /** [Method] Center this Component in its container
@@ -527,8 +527,8 @@ object Msg {
     * @param selector String/Ext.Component An Ext.ComponentQuery selector. If no selector is specified, the first child will be returned.
     * @returns Object Ext.Component The matching child Ext.Component (or null if no match was found).
     */
-  inline def child(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("child")().asInstanceOf[js.Any]
-  inline def child(selector: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("child")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def child(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("child")().asInstanceOf[Any]
+  inline def child(selector: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("child")(selector.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Removes all listeners for this object including the managed listeners */
   inline def clearListeners(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearListeners")().asInstanceOf[Unit]
@@ -541,7 +541,7 @@ object Msg {
     * @returns Ext.Component clone The cloned copy of this component
     */
   inline def cloneConfig(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneConfig")().asInstanceOf[IComponent]
-  inline def cloneConfig(overrides: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneConfig")(overrides.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def cloneConfig(overrides: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneConfig")(overrides.asInstanceOf[js.Any]).asInstanceOf[IComponent]
   
   /** [Method] Closes the Panel  */
   inline def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
@@ -566,19 +566,19 @@ object Msg {
   inline def confirm(): IMessageBox = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")().asInstanceOf[IMessageBox]
   inline def confirm(title: java.lang.String): IMessageBox = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any]).asInstanceOf[IMessageBox]
   inline def confirm(title: java.lang.String, msg: java.lang.String): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def confirm(title: java.lang.String, msg: java.lang.String, fn: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def confirm(title: java.lang.String, msg: java.lang.String, fn: js.Any, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def confirm(title: java.lang.String, msg: java.lang.String, fn: Unit, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def confirm(title: java.lang.String, msg: Unit, fn: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def confirm(title: java.lang.String, msg: Unit, fn: js.Any, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def confirm(title: java.lang.String, msg: Unit, fn: Unit, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def confirm(title: java.lang.String, msg: java.lang.String, fn: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def confirm(title: java.lang.String, msg: java.lang.String, fn: Any, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def confirm(title: java.lang.String, msg: java.lang.String, fn: Unit, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def confirm(title: java.lang.String, msg: Unit, fn: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def confirm(title: java.lang.String, msg: Unit, fn: Any, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def confirm(title: java.lang.String, msg: Unit, fn: Unit, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
   inline def confirm(title: Unit, msg: java.lang.String): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def confirm(title: Unit, msg: java.lang.String, fn: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def confirm(title: Unit, msg: java.lang.String, fn: js.Any, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def confirm(title: Unit, msg: java.lang.String, fn: Unit, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def confirm(title: Unit, msg: Unit, fn: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def confirm(title: Unit, msg: Unit, fn: js.Any, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def confirm(title: Unit, msg: Unit, fn: Unit, scope: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def confirm(title: Unit, msg: java.lang.String, fn: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def confirm(title: Unit, msg: java.lang.String, fn: Any, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def confirm(title: Unit, msg: java.lang.String, fn: Unit, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def confirm(title: Unit, msg: Unit, fn: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def confirm(title: Unit, msg: Unit, fn: Any, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def confirm(title: Unit, msg: Unit, fn: Unit, scope: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
   
   /** [Method] Determines whether the passed Component is either an immediate child of this Container or whether it is a descendant
     * @param comp Ext.Component The Component to test.
@@ -600,7 +600,7 @@ object Msg {
     * @param collapseDir Object
     */
   inline def convertCollapseDir(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCollapseDir")().asInstanceOf[Unit]
-  inline def convertCollapseDir(collapseDir: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCollapseDir")(collapseDir.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def convertCollapseDir(collapseDir: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCollapseDir")(collapseDir.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Property] (Ext.util.ComponentDragger) */
   @JSGlobal("Ext.Msg.dd")
@@ -631,7 +631,7 @@ object Msg {
     * @param constrainTo String/HTMLElement/Ext.Element/Ext.util.Region The Element or Region into which this Component is to be constrained. Defaults to the element into which this floating Component was rendered.
     */
   inline def doConstrain(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("doConstrain")().asInstanceOf[Unit]
-  inline def doConstrain(constrainTo: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("doConstrain")(constrainTo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def doConstrain(constrainTo: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("doConstrain")(constrainTo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Manually force this container s layout to be recalculated
     * @returns Ext.container.Container this
@@ -642,8 +642,8 @@ object Msg {
     * @param selector String/Ext.Component An Ext.ComponentQuery selector or Ext.Component. If no selector is specified, the first child will be returned.
     * @returns Object Ext.Component The matching descendant Ext.Component (or null if no match was found).
     */
-  inline def down(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("down")().asInstanceOf[js.Any]
-  inline def down(selector: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("down")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def down(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("down")().asInstanceOf[Any]
+  inline def down(selector: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("down")(selector.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Property] (Boolean) */
   @JSGlobal("Ext.Msg.draggable")
@@ -655,7 +655,7 @@ object Msg {
     * @param eventNames String/String[] The event name to bubble, or an Array of event names.
     */
   inline def enableBubble(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBubble")().asInstanceOf[Unit]
-  inline def enableBubble(eventNames: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBubble")(eventNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableBubble(eventNames: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBubble")(eventNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Ensures that this component is attached to document body
     * @param runLayout Boolean True to run the component's layout.
@@ -675,14 +675,14 @@ object Msg {
     * @returns Ext.container.Container The first Container for which the custom function returns true
     */
   inline def findParentBy(): typings.extjs.Ext.container.IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("findParentBy")().asInstanceOf[typings.extjs.Ext.container.IContainer]
-  inline def findParentBy(fn: js.Any): typings.extjs.Ext.container.IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("findParentBy")(fn.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.container.IContainer]
+  inline def findParentBy(fn: Any): typings.extjs.Ext.container.IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("findParentBy")(fn.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.container.IContainer]
   
   /** [Method] Find a container above this component at any level by xtype or class See also the up method
     * @param xtype String/Ext.Class The xtype string for a component, or the class of the component directly
     * @returns Ext.container.Container The first Container which matches the given xtype or class
     */
   inline def findParentByType(): typings.extjs.Ext.container.IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("findParentByType")().asInstanceOf[typings.extjs.Ext.container.IContainer]
-  inline def findParentByType(xtype: js.Any): typings.extjs.Ext.container.IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("findParentByType")(xtype.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.container.IContainer]
+  inline def findParentByType(xtype: Any): typings.extjs.Ext.container.IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("findParentByType")(xtype.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.container.IContainer]
   
   /** [Method] Retrieves plugin from this component s collection by its ptype
     * @param ptype String The Plugin's ptype as specified by the class's alias configuration.
@@ -696,7 +696,7 @@ object Msg {
     * @param args Object... Variable number of parameters are passed to handlers.
     * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
     */
-  inline def fireEvent(eventName: java.lang.String, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def fireEvent(eventName: java.lang.String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(List(eventName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
   /** [Method] Fires the specified event with the passed parameter list
     * @param eventName String The name of the event to fire.
@@ -723,20 +723,20 @@ object Msg {
     */
   inline def focus(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("focus")().asInstanceOf[IComponent]
   inline def focus(selectText: Boolean): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  inline def focus(selectText: Boolean, delay: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def focus(selectText: Boolean, delay: js.Any, callback: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def focus(selectText: Boolean, delay: js.Any, callback: js.Any, scope: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def focus(selectText: Boolean, delay: js.Any, callback: Unit, scope: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def focus(selectText: Boolean, delay: Unit, callback: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def focus(selectText: Boolean, delay: Unit, callback: js.Any, scope: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def focus(selectText: Boolean, delay: Unit, callback: Unit, scope: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def focus(selectText: Unit, delay: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def focus(selectText: Unit, delay: js.Any, callback: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def focus(selectText: Unit, delay: js.Any, callback: js.Any, scope: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def focus(selectText: Unit, delay: js.Any, callback: Unit, scope: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def focus(selectText: Unit, delay: Unit, callback: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def focus(selectText: Unit, delay: Unit, callback: js.Any, scope: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def focus(selectText: Unit, delay: Unit, callback: Unit, scope: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def focus(selectText: Boolean, delay: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def focus(selectText: Boolean, delay: Any, callback: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def focus(selectText: Boolean, delay: Any, callback: Any, scope: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def focus(selectText: Boolean, delay: Any, callback: Unit, scope: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def focus(selectText: Boolean, delay: Unit, callback: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def focus(selectText: Boolean, delay: Unit, callback: Any, scope: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def focus(selectText: Boolean, delay: Unit, callback: Unit, scope: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def focus(selectText: Unit, delay: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def focus(selectText: Unit, delay: Any, callback: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def focus(selectText: Unit, delay: Any, callback: Any, scope: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def focus(selectText: Unit, delay: Any, callback: Unit, scope: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def focus(selectText: Unit, delay: Unit, callback: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def focus(selectText: Unit, delay: Unit, callback: Any, scope: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def focus(selectText: Unit, delay: Unit, callback: Unit, scope: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(selectText.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   
   /** [Method] Forces this component to redo its componentLayout  */
   inline def forceComponentLayout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceComponentLayout")().asInstanceOf[Unit]
@@ -744,13 +744,13 @@ object Msg {
   /** [Property] (Object) */
   @JSGlobal("Ext.Msg.frameSize")
   @js.native
-  def frameSize: js.Any = js.native
-  inline def frameSize_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameSize")(x.asInstanceOf[js.Any])
+  def frameSize: Any = js.native
+  inline def frameSize_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameSize")(x.asInstanceOf[js.Any])
   
   /** [Method] Returns the current animation if this object has any effects actively running or queued else returns false
     * @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
     */
-  inline def getActiveAnimation(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveAnimation")().asInstanceOf[js.Any]
+  inline def getActiveAnimation(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveAnimation")().asInstanceOf[Any]
   
   /** [Method] Gets the x y coordinates to align this element with another element
     * @param element Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or id of the element to align to.
@@ -759,10 +759,10 @@ object Msg {
     * @returns Number[] [x, y]
     */
   inline def getAlignToXY(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlignToXY")().asInstanceOf[typings.extjs.Ext.Array]
-  inline def getAlignToXY(element: js.Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlignToXY")(element.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
-  inline def getAlignToXY(element: js.Any, position: java.lang.String): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignToXY")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
-  inline def getAlignToXY(element: js.Any, position: java.lang.String, offsets: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignToXY")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
-  inline def getAlignToXY(element: js.Any, position: Unit, offsets: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignToXY")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def getAlignToXY(element: Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlignToXY")(element.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  inline def getAlignToXY(element: Any, position: java.lang.String): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignToXY")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def getAlignToXY(element: Any, position: java.lang.String, offsets: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignToXY")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def getAlignToXY(element: Any, position: Unit, offsets: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignToXY")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   inline def getAlignToXY(element: Unit, position: java.lang.String): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignToXY")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   inline def getAlignToXY(element: Unit, position: java.lang.String, offsets: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignToXY")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   inline def getAlignToXY(element: Unit, position: Unit, offsets: typings.extjs.Ext.Array): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignToXY")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
@@ -776,21 +776,21 @@ object Msg {
   inline def getAnchorXY(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnchorXY")().asInstanceOf[typings.extjs.Ext.Array]
   inline def getAnchorXY(anchor: java.lang.String): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnchorXY")(anchor.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
   inline def getAnchorXY(anchor: java.lang.String, local: Boolean): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAnchorXY")(anchor.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
-  inline def getAnchorXY(anchor: java.lang.String, local: Boolean, size: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAnchorXY")(anchor.asInstanceOf[js.Any], local.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
-  inline def getAnchorXY(anchor: java.lang.String, local: Unit, size: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAnchorXY")(anchor.asInstanceOf[js.Any], local.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def getAnchorXY(anchor: java.lang.String, local: Boolean, size: Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAnchorXY")(anchor.asInstanceOf[js.Any], local.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def getAnchorXY(anchor: java.lang.String, local: Unit, size: Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAnchorXY")(anchor.asInstanceOf[js.Any], local.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   inline def getAnchorXY(anchor: Unit, local: Boolean): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAnchorXY")(anchor.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
-  inline def getAnchorXY(anchor: Unit, local: Boolean, size: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAnchorXY")(anchor.asInstanceOf[js.Any], local.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
-  inline def getAnchorXY(anchor: Unit, local: Unit, size: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAnchorXY")(anchor.asInstanceOf[js.Any], local.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def getAnchorXY(anchor: Unit, local: Boolean, size: Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAnchorXY")(anchor.asInstanceOf[js.Any], local.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def getAnchorXY(anchor: Unit, local: Unit, size: Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getAnchorXY")(anchor.asInstanceOf[js.Any], local.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Return an object defining the area of this Element which can be passed to setBox to set another Element s size locati
     * @param contentBox Boolean If true a box for the content of the element is returned.
     * @param local Boolean If true the element's left and top relative to its offsetParent are returned instead of page x/y.
     * @returns Object box An object in the format: {  x: &lt;Element's X position&gt;,  y: &lt;Element's Y position&gt;,  left: &lt;Element's X position (an alias for x)&gt;,  top: &lt;Element's Y position (an alias for y)&gt;,  width: &lt;Element's width&gt;,  height: &lt;Element's height&gt;,  bottom: &lt;Element's lower bound&gt;,  right: &lt;Element's rightmost bound&gt; }  The returned object may also be addressed as an Array where index 0 contains the X position and index 1 contains the Y position. The result may also be used for setXY
     */
-  inline def getBox(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBox")().asInstanceOf[js.Any]
-  inline def getBox(contentBox: Boolean): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBox")(contentBox.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def getBox(contentBox: Boolean, local: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBox")(contentBox.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def getBox(contentBox: Unit, local: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBox")(contentBox.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getBox(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBox")().asInstanceOf[Any]
+  inline def getBox(contentBox: Boolean): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBox")(contentBox.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getBox(contentBox: Boolean, local: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBox")(contentBox.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getBox(contentBox: Unit, local: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBox")(contentBox.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Method] Implements an upward event bubbling policy  */
   inline def getBubbleTarget(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBubbleTarget")().asInstanceOf[Unit]
@@ -801,21 +801,21 @@ object Msg {
     * @returns Ext.Component The child item which contains the passed element.
     */
   inline def getChildByElement(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildByElement")().asInstanceOf[IComponent]
-  inline def getChildByElement(el: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildByElement")(el.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  inline def getChildByElement(el: js.Any, deep: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildByElement")(el.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def getChildByElement(el: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildByElement")(el.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def getChildByElement(el: Any, deep: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildByElement")(el.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   inline def getChildByElement(el: Unit, deep: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildByElement")(el.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   
   /** [Method] Returns the current collapsed state of the panel
     * @returns Boolean/String False when not collapsed, otherwise the value of collapseDirection.
     */
-  inline def getCollapsed(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCollapsed")().asInstanceOf[js.Any]
+  inline def getCollapsed(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCollapsed")().asInstanceOf[Any]
   
   /** [Method] Attempts a default component lookup see Ext container Container getComponent
     * @param comp String/Number The component id, itemId or position to find
     * @returns Ext.Component The component (if found)
     */
   inline def getComponent(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")().asInstanceOf[IComponent]
-  inline def getComponent(comp: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(comp.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def getComponent(comp: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(comp.asInstanceOf[js.Any]).asInstanceOf[IComponent]
   
   /** [Method] Returns the X Y vector by which this Positionable s element must be translated to make a best attempt to constrain
     * @param constrainTo Ext.util.Positionable/HTMLElement/String/Ext.util.Region The Positionable, HTMLElement, element id, or Region into which the element is to be constrained.
@@ -823,22 +823,18 @@ object Msg {
     * @param proposedSize Number[] A proposed [width, height] size to constrain instead of using the element's current size
     * @returns Number[]/Boolean If the element needs to be translated, an [X, Y] vector by which this element must be translated. Otherwise, false.
     */
-  inline def getConstrainVector(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")().asInstanceOf[js.Any]
-  inline def getConstrainVector(constrainTo: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")(constrainTo.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def getConstrainVector(constrainTo: js.Any, proposedPosition: Unit, proposedSize: typings.extjs.Ext.Array): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], proposedSize.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def getConstrainVector(constrainTo: js.Any, proposedPosition: typings.extjs.Ext.Array): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def getConstrainVector(
-    constrainTo: js.Any,
-    proposedPosition: typings.extjs.Ext.Array,
-    proposedSize: typings.extjs.Ext.Array
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], proposedSize.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def getConstrainVector(constrainTo: Unit, proposedPosition: Unit, proposedSize: typings.extjs.Ext.Array): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], proposedSize.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def getConstrainVector(constrainTo: Unit, proposedPosition: typings.extjs.Ext.Array): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getConstrainVector(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")().asInstanceOf[Any]
+  inline def getConstrainVector(constrainTo: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")(constrainTo.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getConstrainVector(constrainTo: Any, proposedPosition: Unit, proposedSize: typings.extjs.Ext.Array): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], proposedSize.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getConstrainVector(constrainTo: Any, proposedPosition: typings.extjs.Ext.Array): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getConstrainVector(constrainTo: Any, proposedPosition: typings.extjs.Ext.Array, proposedSize: typings.extjs.Ext.Array): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], proposedSize.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getConstrainVector(constrainTo: Unit, proposedPosition: Unit, proposedSize: typings.extjs.Ext.Array): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], proposedSize.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getConstrainVector(constrainTo: Unit, proposedPosition: typings.extjs.Ext.Array): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def getConstrainVector(
     constrainTo: Unit,
     proposedPosition: typings.extjs.Ext.Array,
     proposedSize: typings.extjs.Ext.Array
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], proposedSize.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstrainVector")(constrainTo.asInstanceOf[js.Any], proposedPosition.asInstanceOf[js.Any], proposedSize.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Method] Gets the configured default focus item  */
   inline def getDefaultFocus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFocus")().asInstanceOf[Unit]
@@ -848,7 +844,7 @@ object Msg {
     * @returns Ext.Component The docked component (if found)
     */
   inline def getDockedComponent(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getDockedComponent")().asInstanceOf[IComponent]
-  inline def getDockedComponent(comp: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getDockedComponent")(comp.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def getDockedComponent(comp: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getDockedComponent")(comp.asInstanceOf[js.Any]).asInstanceOf[IComponent]
   
   /** [Method] Retrieves an array of all currently docked Components
     * @param selector String A ComponentQuery selector string to filter the returned items.
@@ -882,15 +878,15 @@ object Msg {
     * @param name String Name of the config option to return.
     * @returns Object/Mixed The full config object or a single config value when name parameter specified.
     */
-  inline def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
-  inline def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getInitialConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[Any]
+  inline def getInitialConfig(name: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] This function takes the position argument passed to onRender and returns a DOM element that you can use in the insert
     * @param position String/Number/Ext.dom.Element/HTMLElement Index, element id or element you want to put this component before.
     * @returns HTMLElement DOM element that you can use in the insertBefore
     */
   inline def getInsertPosition(): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getInsertPosition")().asInstanceOf[HTMLElement]
-  inline def getInsertPosition(position: js.Any): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getInsertPosition")(position.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def getInsertPosition(position: Any): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getInsertPosition")(position.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   
   /** [Method] Returns the value of itemId assigned to this component or when that is not set returns the value of id
     * @returns String
@@ -927,7 +923,7 @@ object Msg {
     * @returns Number[] The XY page offsets (e.g. [100, -200])
     */
   inline def getOffsetsTo(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getOffsetsTo")().asInstanceOf[typings.extjs.Ext.Array]
-  inline def getOffsetsTo(offsetsTo: js.Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getOffsetsTo")(offsetsTo.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  inline def getOffsetsTo(offsetsTo: Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getOffsetsTo")(offsetsTo.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Retrieves a plugin from this component s collection by its pluginId
     * @param pluginId String
@@ -947,7 +943,7 @@ object Msg {
     * @param deep Object
     */
   inline def getRefItems(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRefItems")().asInstanceOf[Unit]
-  inline def getRefItems(deep: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRefItems")(deep.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getRefItems(deep: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRefItems")(deep.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Returns a region object that defines the area of this element
     * @returns Ext.util.Region A Region containing "top, left, bottom, right" properties.
@@ -957,14 +953,14 @@ object Msg {
   /** [Method] Gets the current size of the component s underlying element
     * @returns Object An object containing the element's size {width: (element width), height: (element height)}
     */
-  inline def getSize(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSize")().asInstanceOf[js.Any]
+  inline def getSize(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSize")().asInstanceOf[Any]
   
   /** [Method] Returns an object that describes how this component s width and height are managed
     * @param ownerCtSizeModel Object
     * @returns Object The size model for this component.
     */
-  inline def getSizeModel(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeModel")().asInstanceOf[js.Any]
-  inline def getSizeModel(ownerCtSizeModel: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeModel")(ownerCtSizeModel.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getSizeModel(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeModel")().asInstanceOf[Any]
+  inline def getSizeModel(ownerCtSizeModel: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeModel")(ownerCtSizeModel.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Returns the content region of this element
     * @returns Ext.util.Region A Region containing "top, left, bottom, right" member data.
@@ -1004,7 +1000,7 @@ object Msg {
   /** [Method] Returns the current animation if this object has any effects actively running or queued else returns false
     * @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
     */
-  inline def hasActiveFx(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hasActiveFx")().asInstanceOf[js.Any]
+  inline def hasActiveFx(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hasActiveFx")().asInstanceOf[Any]
   
   /** [Method] Checks if the specified CSS class exists on this element s DOM node
     * @param className String The CSS class to check for.
@@ -1023,8 +1019,8 @@ object Msg {
   /** [Property] (Object) */
   @JSGlobal("Ext.Msg.hasListeners")
   @js.native
-  def hasListeners: js.Any = js.native
-  inline def hasListeners_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasListeners")(x.asInstanceOf[js.Any])
+  def hasListeners: Any = js.native
+  inline def hasListeners_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasListeners")(x.asInstanceOf[js.Any])
   
   /** [Method] Checks if there is currently a specified uiCls
     * @param cls String The cls to check.
@@ -1042,7 +1038,7 @@ object Msg {
     * @returns Ext.Base this
     */
   inline def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
-  inline def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
+  inline def initConfig(config: Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
   
   /** [Method] Initialize any events on this component */
   inline def initEvents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initEvents")().asInstanceOf[Unit]
@@ -1054,8 +1050,8 @@ object Msg {
     */
   inline def insert(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")().asInstanceOf[IComponent]
   inline def insert(index: Double): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  inline def insert(index: Double, component: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def insert(index: Unit, component: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def insert(index: Double, component: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def insert(index: Unit, component: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(index.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   
   /** [Method] Inserts docked item s to the panel at the indicated position
     * @param pos Number The index at which the Component will be inserted
@@ -1063,8 +1059,8 @@ object Msg {
     */
   inline def insertDocked(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertDocked")().asInstanceOf[Unit]
   inline def insertDocked(pos: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertDocked")(pos.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def insertDocked(pos: Double, component: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDocked")(pos.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def insertDocked(pos: Unit, component: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDocked")(pos.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertDocked(pos: Double, component: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDocked")(pos.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertDocked(pos: Unit, component: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDocked")(pos.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Tests whether this Component matches the selector string
     * @param selector String The selector string to test against.
@@ -1142,7 +1138,7 @@ object Msg {
     * @returns Boolean true if this component is visible, false otherwise.
     */
   inline def isVisible(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")().asInstanceOf[Boolean]
-  inline def isVisible(deep: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")(deep.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isVisible(deep: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")(deep.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** [Property] (Boolean) */
   @JSGlobal("Ext.Msg.isWindow")
@@ -1204,38 +1200,38 @@ object Msg {
     * @param options Object If the ename parameter was an event name, this is the addListener options.
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
-  inline def mon(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mon")().asInstanceOf[js.Any]
-  inline def mon(item: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def mon(item: js.Any, ename: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: js.Any, ename: js.Any, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: js.Any, ename: js.Any, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: js.Any, ename: js.Any, fn: Unit, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: js.Any, ename: js.Any, fn: Unit, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: js.Any, ename: Unit, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: js.Any, ename: Unit, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: js.Any, ename: Unit, fn: js.Any, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: js.Any, ename: Unit, fn: js.Any, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: js.Any, ename: Unit, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: js.Any, ename: Unit, fn: Unit, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: js.Any, ename: Unit, fn: Unit, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: Unit, ename: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: Unit, ename: js.Any, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: Unit, ename: js.Any, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: Unit, ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: Unit, ename: js.Any, fn: js.Any, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: Unit, ename: js.Any, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: Unit, ename: js.Any, fn: Unit, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: Unit, ename: js.Any, fn: Unit, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: Unit, ename: Unit, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: Unit, ename: Unit, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: Unit, ename: Unit, fn: js.Any, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: Unit, ename: Unit, fn: js.Any, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: Unit, ename: Unit, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: Unit, ename: Unit, fn: Unit, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mon(item: Unit, ename: Unit, fn: Unit, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mon(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mon")().asInstanceOf[Any]
+  inline def mon(item: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def mon(item: Any, ename: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Any, ename: Any, fn: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Any, ename: Any, fn: Any, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Any, ename: Any, fn: Any, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Any, ename: Any, fn: Any, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Any, ename: Any, fn: Unit, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Any, ename: Any, fn: Unit, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Any, ename: Any, fn: Unit, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Any, ename: Unit, fn: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Any, ename: Unit, fn: Any, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Any, ename: Unit, fn: Any, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Any, ename: Unit, fn: Any, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Any, ename: Unit, fn: Unit, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Any, ename: Unit, fn: Unit, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Any, ename: Unit, fn: Unit, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Unit, ename: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Unit, ename: Any, fn: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Unit, ename: Any, fn: Any, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Unit, ename: Any, fn: Any, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Unit, ename: Any, fn: Any, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Unit, ename: Any, fn: Unit, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Unit, ename: Any, fn: Unit, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Unit, ename: Any, fn: Unit, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Unit, ename: Unit, fn: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Unit, ename: Unit, fn: Any, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Unit, ename: Unit, fn: Any, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Unit, ename: Unit, fn: Any, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Unit, ename: Unit, fn: Unit, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Unit, ename: Unit, fn: Unit, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mon(item: Unit, ename: Unit, fn: Unit, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mon")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Method] Moves a Component within the Container
     * @param fromIdx Number/Ext.Component The index/component to move.
@@ -1243,8 +1239,8 @@ object Msg {
     * @returns Ext.Component component The Component that was moved.
     */
   inline def move(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("move")().asInstanceOf[IComponent]
-  inline def move(fromIdx: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(fromIdx.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  inline def move(fromIdx: js.Any, toIdx: Double): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(fromIdx.asInstanceOf[js.Any], toIdx.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def move(fromIdx: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(fromIdx.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def move(fromIdx: Any, toIdx: Double): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(fromIdx.asInstanceOf[js.Any], toIdx.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   inline def move(fromIdx: Unit, toIdx: Double): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(fromIdx.asInstanceOf[js.Any], toIdx.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   
   /** [Method] Shorthand for removeManagedListener
@@ -1254,21 +1250,21 @@ object Msg {
     * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
     */
   inline def mun(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mun")().asInstanceOf[Unit]
-  inline def mun(item: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def mun(item: js.Any, ename: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mun(item: js.Any, ename: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mun(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mun(item: js.Any, ename: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mun(item: js.Any, ename: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mun(item: js.Any, ename: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mun(item: js.Any, ename: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mun(item: Unit, ename: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mun(item: Unit, ename: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mun(item: Unit, ename: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mun(item: Unit, ename: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mun(item: Unit, ename: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mun(item: Unit, ename: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def mun(item: Unit, ename: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(item: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def mun(item: Any, ename: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(item: Any, ename: Any, fn: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(item: Any, ename: Any, fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(item: Any, ename: Any, fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(item: Any, ename: Unit, fn: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(item: Any, ename: Unit, fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(item: Any, ename: Unit, fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(item: Unit, ename: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(item: Unit, ename: Any, fn: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(item: Unit, ename: Any, fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(item: Unit, ename: Any, fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(item: Unit, ename: Unit, fn: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(item: Unit, ename: Unit, fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mun(item: Unit, ename: Unit, fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mun")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Returns the next node in the Component tree in tree traversal order
     * @param selector String A ComponentQuery selector to filter the following nodes.
@@ -1291,22 +1287,22 @@ object Msg {
     * @param options Object An object containing handler configuration.  Note: Unlike in ExtJS 3.x, the options object will also be passed as the last argument to every event handler.  This object may contain any of the following properties:
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
-  inline def on(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("on")().asInstanceOf[js.Any]
-  inline def on(eventName: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def on(eventName: js.Any, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def on(eventName: js.Any, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def on(eventName: js.Any, fn: js.Any, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def on(eventName: js.Any, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def on(eventName: js.Any, fn: Unit, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def on(eventName: js.Any, fn: Unit, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def on(eventName: Unit, fn: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def on(eventName: Unit, fn: js.Any, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def on(eventName: Unit, fn: js.Any, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def on(eventName: Unit, fn: js.Any, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def on(eventName: Unit, fn: Unit, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def on(eventName: Unit, fn: Unit, scope: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def on(eventName: Unit, fn: Unit, scope: Unit, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def on(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("on")().asInstanceOf[Any]
+  inline def on(eventName: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def on(eventName: Any, fn: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(eventName: Any, fn: Any, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(eventName: Any, fn: Any, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(eventName: Any, fn: Any, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(eventName: Any, fn: Unit, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(eventName: Any, fn: Unit, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(eventName: Any, fn: Unit, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(eventName: Unit, fn: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(eventName: Unit, fn: Any, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(eventName: Unit, fn: Any, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(eventName: Unit, fn: Any, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(eventName: Unit, fn: Unit, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(eventName: Unit, fn: Unit, scope: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def on(eventName: Unit, fn: Unit, scope: Unit, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Method] This method is invoked after a new Component has been added
     * @param component Ext.Component
@@ -1366,7 +1362,7 @@ object Msg {
     * @param destroying Object
     */
   inline def onRemoved(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRemoved")().asInstanceOf[Unit]
-  inline def onRemoved(destroying: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRemoved")(destroying.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onRemoved(destroying: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRemoved")(destroying.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Allows addition of behavior to the resize operation  */
   inline def onResize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onResize")().asInstanceOf[Unit]
@@ -1379,9 +1375,9 @@ object Msg {
     * @param scope Object
     */
   inline def onShowComplete(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onShowComplete")().asInstanceOf[Unit]
-  inline def onShowComplete(callback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onShowComplete")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def onShowComplete(callback: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onShowComplete")(callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def onShowComplete(callback: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onShowComplete")(callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onShowComplete(callback: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onShowComplete")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onShowComplete(callback: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onShowComplete")(callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onShowComplete(callback: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onShowComplete")(callback.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Property] (Ext.Container) */
   @JSGlobal("Ext.Msg.ownerCt")
@@ -1436,9 +1432,9 @@ object Msg {
   inline def prompt(
     title: js.UndefOr[java.lang.String],
     msg: js.UndefOr[java.lang.String],
-    fn: js.UndefOr[js.Any],
-    scope: js.UndefOr[js.Any],
-    multiline: js.UndefOr[js.Any],
+    fn: js.UndefOr[Any],
+    scope: js.UndefOr[Any],
+    multiline: js.UndefOr[Any],
     value: js.UndefOr[java.lang.String]
   ): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(title.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], multiline.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
   
@@ -1455,9 +1451,9 @@ object Msg {
     * @returns Ext.Component[] Components matched by the passed function
     */
   inline def queryBy(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("queryBy")().asInstanceOf[typings.extjs.Ext.Array]
-  inline def queryBy(fn: js.Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("queryBy")(fn.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
-  inline def queryBy(fn: js.Any, scope: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("queryBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
-  inline def queryBy(fn: Unit, scope: js.Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("queryBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def queryBy(fn: Any): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("queryBy")(fn.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
+  inline def queryBy(fn: Any, scope: Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("queryBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
+  inline def queryBy(fn: Unit, scope: Any): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("queryBy")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Finds a component at any level under this container matching the id itemId
     * @param id String The id to find
@@ -1470,7 +1466,7 @@ object Msg {
     * @param cmp Object
     */
   inline def registerFloatingItem(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFloatingItem")().asInstanceOf[Unit]
-  inline def registerFloatingItem(cmp: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFloatingItem")(cmp.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerFloatingItem(cmp: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFloatingItem")(cmp.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param origin Object The Observable whose events this object is to relay.
@@ -1478,14 +1474,14 @@ object Msg {
     * @param prefix String A common prefix to prepend to the event names. For example: this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Now the grid will forward 'load' and 'clear' events of store as 'storeload' and 'storeclear'.
     * @returns Object A Destroyable object. An object which implements the destroy method which, when destroyed, removes all relayers. For example: this.storeRelayers = this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Can be undone by calling Ext.destroy(this.storeRelayers);  or this.store.relayers.destroy();
     */
-  inline def relayEvents(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")().asInstanceOf[js.Any]
-  inline def relayEvents(origin: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(origin.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def relayEvents(origin: js.Any, events: Unit, prefix: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(origin.asInstanceOf[js.Any], events.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def relayEvents(origin: js.Any, events: typings.extjs.Ext.Array): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(origin.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def relayEvents(origin: js.Any, events: typings.extjs.Ext.Array, prefix: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(origin.asInstanceOf[js.Any], events.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def relayEvents(origin: Unit, events: Unit, prefix: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(origin.asInstanceOf[js.Any], events.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def relayEvents(origin: Unit, events: typings.extjs.Ext.Array): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(origin.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def relayEvents(origin: Unit, events: typings.extjs.Ext.Array, prefix: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(origin.asInstanceOf[js.Any], events.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def relayEvents(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")().asInstanceOf[Any]
+  inline def relayEvents(origin: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(origin.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def relayEvents(origin: Any, events: Unit, prefix: java.lang.String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(origin.asInstanceOf[js.Any], events.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def relayEvents(origin: Any, events: typings.extjs.Ext.Array): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(origin.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def relayEvents(origin: Any, events: typings.extjs.Ext.Array, prefix: java.lang.String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(origin.asInstanceOf[js.Any], events.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def relayEvents(origin: Unit, events: Unit, prefix: java.lang.String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(origin.asInstanceOf[js.Any], events.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def relayEvents(origin: Unit, events: typings.extjs.Ext.Array): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(origin.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def relayEvents(origin: Unit, events: typings.extjs.Ext.Array, prefix: java.lang.String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("relayEvents")(origin.asInstanceOf[js.Any], events.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Method] Removes a component from this container
     * @param component Ext.Component/String The component reference or id to remove.
@@ -1493,8 +1489,8 @@ object Msg {
     * @returns Ext.Component component The Component that was removed.
     */
   inline def remove(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")().asInstanceOf[IComponent]
-  inline def remove(component: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(component.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  inline def remove(component: js.Any, autoDestroy: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(component.asInstanceOf[js.Any], autoDestroy.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def remove(component: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(component.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def remove(component: Any, autoDestroy: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(component.asInstanceOf[js.Any], autoDestroy.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   inline def remove(component: Unit, autoDestroy: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(component.asInstanceOf[js.Any], autoDestroy.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   
   /** [Method] Removes all components from this container
@@ -1520,20 +1516,20 @@ object Msg {
     * @param testFn Function The test function.
     */
   inline def removeChildEls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeChildEls")().asInstanceOf[Unit]
-  inline def removeChildEls(testFn: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeChildEls")(testFn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeChildEls(testFn: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeChildEls")(testFn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Removes a CSS class from the top level element representing this component
     * @param cls String/String[] The CSS class name to remove.
     * @returns Ext.Component Returns the Component to allow method chaining.
     */
   inline def removeCls(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")().asInstanceOf[IComponent]
-  inline def removeCls(cls: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def removeCls(cls: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCls")(cls.asInstanceOf[js.Any]).asInstanceOf[IComponent]
   
   /** [Method] Removes a cls to the uiCls array which will also call removeUIClsFromElement and removes it from all elements of thi
     * @param cls String/String[] A string or an array of strings to remove to the uiCls.
     */
   inline def removeClsWithUI(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeClsWithUI")().asInstanceOf[Unit]
-  inline def removeClsWithUI(cls: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeClsWithUI")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeClsWithUI(cls: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeClsWithUI")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Removes the docked item from the panel
     * @param item Ext.Component The Component to remove.
@@ -1551,12 +1547,12 @@ object Msg {
     */
   inline def removeListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")().asInstanceOf[Unit]
   inline def removeListener(eventName: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def removeListener(eventName: java.lang.String, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeListener(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeListener(eventName: java.lang.String, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeListener(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeListener(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeListener(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: java.lang.String, fn: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: java.lang.String, fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: java.lang.String, fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(eventName: Unit, fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Removes listeners that were added by the mon method
     * @param item Ext.util.Observable/Ext.Element The item from which to remove a listener/listeners.
@@ -1565,36 +1561,36 @@ object Msg {
     * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
     */
   inline def removeManagedListener(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")().asInstanceOf[Unit]
-  inline def removeManagedListener(item: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def removeManagedListener(item: js.Any, ename: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeManagedListener(item: js.Any, ename: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeManagedListener(item: js.Any, ename: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeManagedListener(item: js.Any, ename: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeManagedListener(item: js.Any, ename: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeManagedListener(item: js.Any, ename: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeManagedListener(item: Unit, ename: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeManagedListener(item: Unit, ename: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeManagedListener(item: Unit, ename: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeManagedListener(item: Unit, ename: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeManagedListener(item: Unit, ename: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeManagedListener(item: Unit, ename: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeManagedListener(item: Unit, ename: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(item: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeManagedListener(item: Any, ename: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(item: Any, ename: Any, fn: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(item: Any, ename: Any, fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(item: Any, ename: Any, fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(item: Any, ename: Unit, fn: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(item: Any, ename: Unit, fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(item: Any, ename: Unit, fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(item: Unit, ename: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(item: Unit, ename: Any, fn: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(item: Unit, ename: Any, fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(item: Unit, ename: Any, fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(item: Unit, ename: Unit, fn: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(item: Unit, ename: Unit, fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeManagedListener(item: Unit, ename: Unit, fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeManagedListener")(item.asInstanceOf[js.Any], ename.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] inherit docs
     * @param cls Object
     */
   inline def removeUIClsFromElement(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUIClsFromElement")().asInstanceOf[Unit]
-  inline def removeUIClsFromElement(cls: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUIClsFromElement")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeUIClsFromElement(cls: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUIClsFromElement")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Renders the Component into the passed HTML element
     * @param container Ext.Element/HTMLElement/String The element this Component should be rendered into. If it is being created from existing markup, this should be omitted.
     * @param position String/Number The element ID or DOM node index within the container before which this component will be inserted (defaults to appending to the end of the container)
     */
   inline def render(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")().asInstanceOf[Unit]
-  inline def render(container: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def render(container: js.Any, position: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(container.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def render(container: Unit, position: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(container.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def render(container: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def render(container: Any, position: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(container.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def render(container: Unit, position: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(container.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Property] (Boolean) */
   @JSGlobal("Ext.Msg.rendered")
@@ -1607,12 +1603,12 @@ object Msg {
     * @returns Ext.window.Window this
     */
   inline def restore(): IWindow = ^.asInstanceOf[js.Dynamic].applyDynamic("restore")().asInstanceOf[IWindow]
-  inline def restore(animate: js.Any): IWindow = ^.asInstanceOf[js.Dynamic].applyDynamic("restore")(animate.asInstanceOf[js.Any]).asInstanceOf[IWindow]
+  inline def restore(animate: Any): IWindow = ^.asInstanceOf[js.Dynamic].applyDynamic("restore")(animate.asInstanceOf[js.Any]).asInstanceOf[IWindow]
   
   /** [Method] Resumes firing of the named event s
     * @param eventName String... Multiple event names to resume.
     */
-  inline def resumeEvent(eventName: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resumeEvent")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def resumeEvent(eventName: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resumeEvent")(eventName.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   /** [Method] Resumes firing events see suspendEvents */
   inline def resumeEvents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resumeEvents")().asInstanceOf[Unit]
@@ -1625,11 +1621,11 @@ object Msg {
     */
   inline def savePropToState(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("savePropToState")().asInstanceOf[Boolean]
   inline def savePropToState(propName: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("savePropToState")(propName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def savePropToState(propName: java.lang.String, state: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("savePropToState")(propName.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def savePropToState(propName: java.lang.String, state: js.Any, stateName: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("savePropToState")(propName.asInstanceOf[js.Any], state.asInstanceOf[js.Any], stateName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def savePropToState(propName: java.lang.String, state: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("savePropToState")(propName.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def savePropToState(propName: java.lang.String, state: Any, stateName: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("savePropToState")(propName.asInstanceOf[js.Any], state.asInstanceOf[js.Any], stateName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def savePropToState(propName: java.lang.String, state: Unit, stateName: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("savePropToState")(propName.asInstanceOf[js.Any], state.asInstanceOf[js.Any], stateName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def savePropToState(propName: Unit, state: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("savePropToState")(propName.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def savePropToState(propName: Unit, state: js.Any, stateName: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("savePropToState")(propName.asInstanceOf[js.Any], state.asInstanceOf[js.Any], stateName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def savePropToState(propName: Unit, state: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("savePropToState")(propName.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def savePropToState(propName: Unit, state: Any, stateName: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("savePropToState")(propName.asInstanceOf[js.Any], state.asInstanceOf[js.Any], stateName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def savePropToState(propName: Unit, state: Unit, stateName: java.lang.String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("savePropToState")(propName.asInstanceOf[js.Any], state.asInstanceOf[js.Any], stateName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /** [Method] Gathers additional named properties of the instance and adds their current values to the passed state object
@@ -1637,10 +1633,10 @@ object Msg {
     * @param state Object The state object in to which to save the property values.
     * @returns Object state
     */
-  inline def savePropsToState(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("savePropsToState")().asInstanceOf[js.Any]
-  inline def savePropsToState(propNames: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("savePropsToState")(propNames.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def savePropsToState(propNames: js.Any, state: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("savePropsToState")(propNames.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def savePropsToState(propNames: Unit, state: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("savePropsToState")(propNames.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def savePropsToState(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("savePropsToState")().asInstanceOf[Any]
+  inline def savePropsToState(propNames: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("savePropsToState")(propNames.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def savePropsToState(propNames: Any, state: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("savePropsToState")(propNames.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def savePropsToState(propNames: Unit, state: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("savePropsToState")(propNames.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Method] Saves the state of the object to the persistence store  */
   inline def saveState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveState")().asInstanceOf[Unit]
@@ -1651,19 +1647,19 @@ object Msg {
     * @param animate Boolean/Object Animate flag/config object if the delta values were passed separately.
     */
   inline def scrollBy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollBy")().asInstanceOf[Unit]
-  inline def scrollBy(deltaX: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollBy")(deltaX.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def scrollBy(deltaX: js.Any, deltaY: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollBy")(deltaX.asInstanceOf[js.Any], deltaY.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def scrollBy(deltaX: js.Any, deltaY: js.Any, animate: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollBy")(deltaX.asInstanceOf[js.Any], deltaY.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def scrollBy(deltaX: js.Any, deltaY: Unit, animate: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollBy")(deltaX.asInstanceOf[js.Any], deltaY.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def scrollBy(deltaX: Unit, deltaY: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollBy")(deltaX.asInstanceOf[js.Any], deltaY.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def scrollBy(deltaX: Unit, deltaY: js.Any, animate: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollBy")(deltaX.asInstanceOf[js.Any], deltaY.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def scrollBy(deltaX: Unit, deltaY: Unit, animate: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollBy")(deltaX.asInstanceOf[js.Any], deltaY.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def scrollBy(deltaX: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollBy")(deltaX.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def scrollBy(deltaX: Any, deltaY: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollBy")(deltaX.asInstanceOf[js.Any], deltaY.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def scrollBy(deltaX: Any, deltaY: Any, animate: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollBy")(deltaX.asInstanceOf[js.Any], deltaY.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def scrollBy(deltaX: Any, deltaY: Unit, animate: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollBy")(deltaX.asInstanceOf[js.Any], deltaY.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def scrollBy(deltaX: Unit, deltaY: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollBy")(deltaX.asInstanceOf[js.Any], deltaY.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def scrollBy(deltaX: Unit, deltaY: Any, animate: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollBy")(deltaX.asInstanceOf[js.Any], deltaY.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def scrollBy(deltaX: Unit, deltaY: Unit, animate: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollBy")(deltaX.asInstanceOf[js.Any], deltaY.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Property] (Object) */
   @JSGlobal("Ext.Msg.scrollFlags")
   @js.native
-  def scrollFlags: js.Any = js.native
-  inline def scrollFlags_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scrollFlags")(x.asInstanceOf[js.Any])
+  def scrollFlags: Any = js.native
+  inline def scrollFlags_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scrollFlags")(x.asInstanceOf[js.Any])
   
   /** [Property] (Ext.Class) */
   @JSGlobal("Ext.Msg.self")
@@ -1674,7 +1670,7 @@ object Msg {
   /** [Method] Ensures that all effects queued after sequenceFx is called on this object are run in sequence
     * @returns Object this
     */
-  inline def sequenceFx(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceFx")().asInstanceOf[js.Any]
+  inline def sequenceFx(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceFx")().asInstanceOf[Any]
   
   /** [Method] This method is called internally by Ext ZIndexManager to signal that a floating Component has either been moved to th
     * @param active Boolean True to activate the Component, false to deactivate it.
@@ -1698,8 +1694,8 @@ object Msg {
     * @returns Ext.panel.Panel this
     */
   inline def setBodyStyle(): IPanel = ^.asInstanceOf[js.Dynamic].applyDynamic("setBodyStyle")().asInstanceOf[IPanel]
-  inline def setBodyStyle(style: js.Any): IPanel = ^.asInstanceOf[js.Dynamic].applyDynamic("setBodyStyle")(style.asInstanceOf[js.Any]).asInstanceOf[IPanel]
-  inline def setBodyStyle(style: js.Any, value: java.lang.String): IPanel = (^.asInstanceOf[js.Dynamic].applyDynamic("setBodyStyle")(style.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IPanel]
+  inline def setBodyStyle(style: Any): IPanel = ^.asInstanceOf[js.Dynamic].applyDynamic("setBodyStyle")(style.asInstanceOf[js.Any]).asInstanceOf[IPanel]
+  inline def setBodyStyle(style: Any, value: java.lang.String): IPanel = (^.asInstanceOf[js.Dynamic].applyDynamic("setBodyStyle")(style.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IPanel]
   inline def setBodyStyle(style: Unit, value: java.lang.String): IPanel = (^.asInstanceOf[js.Dynamic].applyDynamic("setBodyStyle")(style.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IPanel]
   
   /** [Method]
@@ -1707,9 +1703,9 @@ object Msg {
     * @param targetEl Object
     */
   inline def setBorder(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBorder")().asInstanceOf[Unit]
-  inline def setBorder(border: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBorder")(border.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def setBorder(border: js.Any, targetEl: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBorder")(border.asInstanceOf[js.Any], targetEl.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def setBorder(border: Unit, targetEl: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBorder")(border.asInstanceOf[js.Any], targetEl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setBorder(border: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBorder")(border.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setBorder(border: Any, targetEl: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBorder")(border.asInstanceOf[js.Any], targetEl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setBorder(border: Unit, targetEl: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBorder")(border.asInstanceOf[js.Any], targetEl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] This method changes the region config property for this border region
     * @param region String The new region value ("north", "south", "east" or "west").
@@ -1724,9 +1720,9 @@ object Msg {
     * @returns Ext.util.Positionable this
     */
   inline def setBox(): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setBox")().asInstanceOf[IPositionable]
-  inline def setBox(box: js.Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setBox")(box.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
-  inline def setBox(box: js.Any, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setBox")(box.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
-  inline def setBox(box: Unit, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setBox")(box.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def setBox(box: Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setBox")(box.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
+  inline def setBox(box: Any, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setBox")(box.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def setBox(box: Unit, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setBox")(box.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
   
   /** [Method] Enable or disable the component
     * @param disabled Boolean true to disable.
@@ -1740,15 +1736,15 @@ object Msg {
     * @returns Ext.Component this
     */
   inline def setDocked(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("setDocked")().asInstanceOf[IComponent]
-  inline def setDocked(dock: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("setDocked")(dock.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  inline def setDocked(dock: js.Any, layoutParent: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setDocked")(dock.asInstanceOf[js.Any], layoutParent.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def setDocked(dock: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("setDocked")(dock.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def setDocked(dock: Any, layoutParent: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setDocked")(dock.asInstanceOf[js.Any], layoutParent.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   inline def setDocked(dock: Unit, layoutParent: Boolean): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setDocked")(dock.asInstanceOf[js.Any], layoutParent.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   
   /** [Method] Set the glyph for the panel s header
     * @param newGlyph Number/String The new glyph This parameter expects a format consistent with that of glyph
     */
   inline def setGlyph(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlyph")().asInstanceOf[Unit]
-  inline def setGlyph(newGlyph: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlyph")(newGlyph.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setGlyph(newGlyph: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlyph")(newGlyph.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the height of the component
     * @param height Number The new height to set. This may be one of:  A Number specifying the new height in the Element's Ext.Element.defaultUnits (by default, pixels). A String used to set the CSS height style. undefined to leave the height unchanged.
@@ -1784,8 +1780,8 @@ object Msg {
     * @returns Ext.LoadMask The LoadMask instance that has just been shown.
     */
   inline def setLoading(): ILoadMask = ^.asInstanceOf[js.Dynamic].applyDynamic("setLoading")().asInstanceOf[ILoadMask]
-  inline def setLoading(load: js.Any): ILoadMask = ^.asInstanceOf[js.Dynamic].applyDynamic("setLoading")(load.asInstanceOf[js.Any]).asInstanceOf[ILoadMask]
-  inline def setLoading(load: js.Any, targetEl: Boolean): ILoadMask = (^.asInstanceOf[js.Dynamic].applyDynamic("setLoading")(load.asInstanceOf[js.Any], targetEl.asInstanceOf[js.Any])).asInstanceOf[ILoadMask]
+  inline def setLoading(load: Any): ILoadMask = ^.asInstanceOf[js.Dynamic].applyDynamic("setLoading")(load.asInstanceOf[js.Any]).asInstanceOf[ILoadMask]
+  inline def setLoading(load: Any, targetEl: Boolean): ILoadMask = (^.asInstanceOf[js.Dynamic].applyDynamic("setLoading")(load.asInstanceOf[js.Any], targetEl.asInstanceOf[js.Any])).asInstanceOf[ILoadMask]
   inline def setLoading(load: Unit, targetEl: Boolean): ILoadMask = (^.asInstanceOf[js.Dynamic].applyDynamic("setLoading")(load.asInstanceOf[js.Any], targetEl.asInstanceOf[js.Any])).asInstanceOf[ILoadMask]
   
   /** [Method] Overridden in Ext rtl AbstractComponent
@@ -1793,7 +1789,7 @@ object Msg {
     * @returns Ext.util.Positionable this
     */
   inline def setLocalX(): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocalX")().asInstanceOf[IPositionable]
-  inline def setLocalX(x: js.Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocalX")(x.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
+  inline def setLocalX(x: Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocalX")(x.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
   
   /** [Method] Overridden in Ext rtl AbstractComponent
     * @param x Object
@@ -1801,22 +1797,22 @@ object Msg {
     * @returns Ext.util.Positionable this
     */
   inline def setLocalXY(): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocalXY")().asInstanceOf[IPositionable]
-  inline def setLocalXY(x: js.Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocalXY")(x.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
-  inline def setLocalXY(x: js.Any, y: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocalXY")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
-  inline def setLocalXY(x: Unit, y: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocalXY")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def setLocalXY(x: Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocalXY")(x.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
+  inline def setLocalXY(x: Any, y: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocalXY")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def setLocalXY(x: Unit, y: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocalXY")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
   
   /** [Method] Sets the local y coordinate of this element using CSS style
     * @param y Object
     * @returns Ext.util.Positionable this
     */
   inline def setLocalY(): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocalY")().asInstanceOf[IPositionable]
-  inline def setLocalY(y: js.Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocalY")(y.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
+  inline def setLocalY(y: Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocalY")(y.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
   
   /** [Method] Sets the margin on the target element
     * @param margin Number/String The margin to set. See the margin config.
     */
   inline def setMargin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMargin")().asInstanceOf[Unit]
-  inline def setMargin(margin: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMargin")(margin.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setMargin(margin: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMargin")(margin.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Sets the overflow x y on the content element of the component
     * @param overflowX String The overflow-x value.
@@ -1835,13 +1831,13 @@ object Msg {
     * @returns Ext.Component this
     */
   inline def setPagePosition(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("setPagePosition")().asInstanceOf[IComponent]
-  inline def setPagePosition(x: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("setPagePosition")(x.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  inline def setPagePosition(x: js.Any, y: Double): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPagePosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def setPagePosition(x: js.Any, y: Double, animate: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPagePosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def setPagePosition(x: js.Any, y: Unit, animate: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPagePosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def setPagePosition(x: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("setPagePosition")(x.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def setPagePosition(x: Any, y: Double): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPagePosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def setPagePosition(x: Any, y: Double, animate: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPagePosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def setPagePosition(x: Any, y: Unit, animate: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPagePosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   inline def setPagePosition(x: Unit, y: Double): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPagePosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def setPagePosition(x: Unit, y: Double, animate: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPagePosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def setPagePosition(x: Unit, y: Unit, animate: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPagePosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def setPagePosition(x: Unit, y: Double, animate: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPagePosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def setPagePosition(x: Unit, y: Unit, animate: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPagePosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   
   /** [Method] Sets the left and top of the component
     * @param x Number/Number[]/Object The new left, an array of [x,y], or animation config object containing x and y properties.
@@ -1850,13 +1846,13 @@ object Msg {
     * @returns Ext.Component this
     */
   inline def setPosition(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")().asInstanceOf[IComponent]
-  inline def setPosition(x: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(x.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  inline def setPosition(x: js.Any, y: Double): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def setPosition(x: js.Any, y: Double, animate: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def setPosition(x: js.Any, y: Unit, animate: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def setPosition(x: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(x.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def setPosition(x: Any, y: Double): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def setPosition(x: Any, y: Double, animate: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def setPosition(x: Any, y: Unit, animate: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   inline def setPosition(x: Unit, y: Double): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def setPosition(x: Unit, y: Double, animate: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def setPosition(x: Unit, y: Unit, animate: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def setPosition(x: Unit, y: Double, animate: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def setPosition(x: Unit, y: Unit, animate: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   
   /** [Method] Sets the element s position and size to the specified region
     * @param region Ext.util.Region The region to fill
@@ -1864,9 +1860,9 @@ object Msg {
     * @returns Ext.util.Positionable this
     */
   inline def setRegion(): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setRegion")().asInstanceOf[IPositionable]
-  inline def setRegion(region: Unit, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setRegion")(region.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def setRegion(region: Unit, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setRegion")(region.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
   inline def setRegion(region: IRegion): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setRegion")(region.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
-  inline def setRegion(region: IRegion, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setRegion")(region.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def setRegion(region: IRegion, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setRegion")(region.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
   
   /** [Method] Sets the weight config property for this component
     * @param weight Number The new weight value.
@@ -1881,9 +1877,9 @@ object Msg {
     * @returns Ext.Component this
     */
   inline def setSize(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("setSize")().asInstanceOf[IComponent]
-  inline def setSize(width: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("setSize")(width.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  inline def setSize(width: js.Any, height: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setSize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def setSize(width: Unit, height: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setSize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def setSize(width: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("setSize")(width.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def setSize(width: Any, height: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setSize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def setSize(width: Unit, height: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("setSize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   
   /** [Method] Set a title for the panel s header
     * @param newTitle String
@@ -1895,7 +1891,7 @@ object Msg {
     * @param ui Object
     */
   inline def setUI(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUI")().asInstanceOf[Unit]
-  inline def setUI(ui: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUI")(ui.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setUI(ui: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUI")(ui.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Convenience function to hide or show this component by Boolean
     * @param visible Boolean true to show, false to hide.
@@ -1917,9 +1913,9 @@ object Msg {
     * @returns Ext.util.Positionable this
     */
   inline def setX(): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setX")().asInstanceOf[IPositionable]
-  inline def setX(x: js.Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setX")(x.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
-  inline def setX(x: js.Any, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setX")(x.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
-  inline def setX(x: Unit, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setX")(x.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def setX(x: Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setX")(x.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
+  inline def setX(x: Any, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setX")(x.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def setX(x: Unit, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setX")(x.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
   
   /** [Method] Sets the position of the DOM element in page coordinates
     * @param xy Object
@@ -1927,9 +1923,9 @@ object Msg {
     * @returns Ext.util.Positionable this
     */
   inline def setXY(): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setXY")().asInstanceOf[IPositionable]
-  inline def setXY(xy: js.Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setXY")(xy.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
-  inline def setXY(xy: js.Any, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setXY")(xy.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
-  inline def setXY(xy: Unit, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setXY")(xy.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def setXY(xy: Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setXY")(xy.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
+  inline def setXY(xy: Any, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setXY")(xy.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def setXY(xy: Unit, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setXY")(xy.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
   
   /** [Method] Sets the Y position of the DOM element based on page coordinates
     * @param y Object
@@ -1937,16 +1933,16 @@ object Msg {
     * @returns Ext.util.Positionable this
     */
   inline def setY(): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setY")().asInstanceOf[IPositionable]
-  inline def setY(y: js.Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setY")(y.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
-  inline def setY(y: js.Any, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setY")(y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
-  inline def setY(y: Unit, animate: js.Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setY")(y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def setY(y: Any): IPositionable = ^.asInstanceOf[js.Dynamic].applyDynamic("setY")(y.asInstanceOf[js.Any]).asInstanceOf[IPositionable]
+  inline def setY(y: Any, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setY")(y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
+  inline def setY(y: Unit, animate: Any): IPositionable = (^.asInstanceOf[js.Dynamic].applyDynamic("setY")(y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IPositionable]
   
   /** [Method] Displays a new message box or reinitializes an existing message box based on the config options passed in
     * @param config Object The following config options are supported:
     * @returns Ext.window.MessageBox this
     */
   inline def show(): IMessageBox = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[IMessageBox]
-  inline def show(config: js.Any): IMessageBox = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(config.asInstanceOf[js.Any]).asInstanceOf[IMessageBox]
+  inline def show(config: Any): IMessageBox = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(config.asInstanceOf[js.Any]).asInstanceOf[IMessageBox]
   
   /** [Method] Displays component at specific xy position
     * @param x Number/Number[] The new x position or array of [x,y].
@@ -1955,13 +1951,13 @@ object Msg {
     * @returns Ext.Component this
     */
   inline def showAt(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("showAt")().asInstanceOf[IComponent]
-  inline def showAt(x: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("showAt")(x.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  inline def showAt(x: js.Any, y: Double): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def showAt(x: js.Any, y: Double, animate: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def showAt(x: js.Any, y: Unit, animate: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def showAt(x: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("showAt")(x.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def showAt(x: Any, y: Double): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def showAt(x: Any, y: Double, animate: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def showAt(x: Any, y: Unit, animate: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   inline def showAt(x: Unit, y: Double): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def showAt(x: Unit, y: Double, animate: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def showAt(x: Unit, y: Unit, animate: js.Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def showAt(x: Unit, y: Double, animate: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def showAt(x: Unit, y: Unit, animate: Any): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], animate.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   
   /** [Method] Shows this component by the specified Component or Element
     * @param component Ext.Component/Ext.dom.Element The Ext.Component or Ext.Element to show the component by.
@@ -1970,10 +1966,10 @@ object Msg {
     * @returns Ext.Component this
     */
   inline def showBy(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("showBy")().asInstanceOf[IComponent]
-  inline def showBy(component: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any]).asInstanceOf[IComponent]
-  inline def showBy(component: js.Any, position: java.lang.String): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def showBy(component: js.Any, position: java.lang.String, offsets: typings.extjs.Ext.Array): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[IComponent]
-  inline def showBy(component: js.Any, position: Unit, offsets: typings.extjs.Ext.Array): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def showBy(component: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def showBy(component: Any, position: java.lang.String): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def showBy(component: Any, position: java.lang.String, offsets: typings.extjs.Ext.Array): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[IComponent]
+  inline def showBy(component: Any, position: Unit, offsets: typings.extjs.Ext.Array): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   inline def showBy(component: Unit, position: java.lang.String): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   inline def showBy(component: Unit, position: java.lang.String, offsets: typings.extjs.Ext.Array): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[IComponent]
   inline def showBy(component: Unit, position: Unit, offsets: typings.extjs.Ext.Array): IComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("showBy")(component.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsets.asInstanceOf[js.Any])).asInstanceOf[IComponent]
@@ -1996,7 +1992,7 @@ object Msg {
   /** [Method] Suspends firing of the named event s
     * @param eventName String... Multiple event names to suspend.
     */
-  inline def suspendEvent(eventName: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("suspendEvent")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def suspendEvent(eventName: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("suspendEvent")(eventName.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   /** [Method] Suspends the firing of all events
     * @param queueSuspended Boolean Pass as true to queue up suspended events to be fired after the resumeEvents call instead of discarding all suspended events.
@@ -2007,7 +2003,7 @@ object Msg {
   /** [Method] Ensures that all effects queued after syncFx is called on this object are run concurrently
     * @returns Object this
     */
-  inline def syncFx(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("syncFx")().asInstanceOf[js.Any]
+  inline def syncFx(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("syncFx")().asInstanceOf[Any]
   
   /** [Method] Sends this Component to the back of lower z index than any other visible windows
     * @returns Ext.Component this
@@ -2036,10 +2032,10 @@ object Msg {
     * @param y Number The page y, required if x is not an array
     * @returns Object An object with left and top properties. e.g. {left: (value), top: (value)}
     */
-  inline def translatePoints(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("translatePoints")().asInstanceOf[js.Any]
-  inline def translatePoints(x: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("translatePoints")(x.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def translatePoints(x: js.Any, y: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("translatePoints")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def translatePoints(x: Unit, y: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("translatePoints")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def translatePoints(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("translatePoints")().asInstanceOf[Any]
+  inline def translatePoints(x: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("translatePoints")(x.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def translatePoints(x: Any, y: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("translatePoints")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def translatePoints(x: Unit, y: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("translatePoints")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** [Method] Shorthand for removeListener
     * @param eventName String The type of event the handler was associated with.
@@ -2048,12 +2044,12 @@ object Msg {
     */
   inline def un(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("un")().asInstanceOf[Unit]
   inline def un(eventName: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def un(eventName: java.lang.String, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def un(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def un(eventName: java.lang.String, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def un(eventName: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def un(eventName: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def un(eventName: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: java.lang.String, fn: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: java.lang.String, fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: java.lang.String, fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def un(eventName: Unit, fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Navigates up the ownership hierarchy searching for an ancestor Container which matches any passed simple selector or
     * @param selector String/Ext.Component The simple selector component or actual component to test. If not passed the immediate owner/activater is returned.
@@ -2061,9 +2057,9 @@ object Msg {
     * @returns Ext.container.Container The matching ancestor Container (or undefined if no match was found).
     */
   inline def up(): typings.extjs.Ext.container.IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("up")().asInstanceOf[typings.extjs.Ext.container.IContainer]
-  inline def up(selector: js.Any): typings.extjs.Ext.container.IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("up")(selector.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.container.IContainer]
-  inline def up(selector: js.Any, limit: js.Any): typings.extjs.Ext.container.IContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("up")(selector.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.container.IContainer]
-  inline def up(selector: Unit, limit: js.Any): typings.extjs.Ext.container.IContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("up")(selector.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.container.IContainer]
+  inline def up(selector: Any): typings.extjs.Ext.container.IContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("up")(selector.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.container.IContainer]
+  inline def up(selector: Any, limit: Any): typings.extjs.Ext.container.IContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("up")(selector.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.container.IContainer]
+  inline def up(selector: Unit, limit: Any): typings.extjs.Ext.container.IContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("up")(selector.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[typings.extjs.Ext.container.IContainer]
   
   /** [Method] Update the content area of a component
     * @param htmlOrData String/Object If this component has been configured with a template via the tpl config then it will use this argument as data to populate the template. If this component was not configured with a template, the components content area will be updated via Ext.Element update.
@@ -2071,26 +2067,26 @@ object Msg {
     * @param callback Function Only legitimate when using the html configuration. Callback to execute when scripts have finished loading.
     */
   inline def update(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")().asInstanceOf[Unit]
-  inline def update(htmlOrData: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(htmlOrData.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def update(htmlOrData: js.Any, loadScripts: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(htmlOrData.asInstanceOf[js.Any], loadScripts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def update(htmlOrData: js.Any, loadScripts: Boolean, callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(htmlOrData.asInstanceOf[js.Any], loadScripts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def update(htmlOrData: js.Any, loadScripts: Unit, callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(htmlOrData.asInstanceOf[js.Any], loadScripts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(htmlOrData: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(htmlOrData.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def update(htmlOrData: Any, loadScripts: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(htmlOrData.asInstanceOf[js.Any], loadScripts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(htmlOrData: Any, loadScripts: Boolean, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(htmlOrData.asInstanceOf[js.Any], loadScripts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(htmlOrData: Any, loadScripts: Unit, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(htmlOrData.asInstanceOf[js.Any], loadScripts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def update(htmlOrData: Unit, loadScripts: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(htmlOrData.asInstanceOf[js.Any], loadScripts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def update(htmlOrData: Unit, loadScripts: Boolean, callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(htmlOrData.asInstanceOf[js.Any], loadScripts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def update(htmlOrData: Unit, loadScripts: Unit, callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(htmlOrData.asInstanceOf[js.Any], loadScripts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(htmlOrData: Unit, loadScripts: Boolean, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(htmlOrData.asInstanceOf[js.Any], loadScripts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(htmlOrData: Unit, loadScripts: Unit, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(htmlOrData.asInstanceOf[js.Any], loadScripts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Sets the current box measurements of the component s underlying element
     * @param box Object An object in the format {x, y, width, height}
     * @returns Ext.Component this
     */
   inline def updateBox(): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("updateBox")().asInstanceOf[IComponent]
-  inline def updateBox(box: js.Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("updateBox")(box.asInstanceOf[js.Any]).asInstanceOf[IComponent]
+  inline def updateBox(box: Any): IComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("updateBox")(box.asInstanceOf[js.Any]).asInstanceOf[IComponent]
   
   /** [Method] Updates this component s layout
     * @param options Object An object with layout options.
     */
   inline def updateLayout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateLayout")().asInstanceOf[Unit]
-  inline def updateLayout(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateLayout")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def updateLayout(options: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateLayout")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Updates a progress style message box s text and progress bar
     * @param value Number Any number between 0 and 1 (e.g., .5)
@@ -2109,11 +2105,11 @@ object Msg {
   
   inline def wait(msg: java.lang.String): IMessageBox = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(msg.asInstanceOf[js.Any]).asInstanceOf[IMessageBox]
   inline def wait(msg: java.lang.String, title: java.lang.String): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(msg.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def wait(msg: java.lang.String, title: java.lang.String, config: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(msg.asInstanceOf[js.Any], title.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def wait(msg: java.lang.String, title: Unit, config: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(msg.asInstanceOf[js.Any], title.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def wait(msg: java.lang.String, title: java.lang.String, config: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(msg.asInstanceOf[js.Any], title.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def wait(msg: java.lang.String, title: Unit, config: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(msg.asInstanceOf[js.Any], title.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
   inline def wait(msg: Unit, title: java.lang.String): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(msg.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def wait(msg: Unit, title: java.lang.String, config: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(msg.asInstanceOf[js.Any], title.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
-  inline def wait(msg: Unit, title: Unit, config: js.Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(msg.asInstanceOf[js.Any], title.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def wait(msg: Unit, title: java.lang.String, config: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(msg.asInstanceOf[js.Any], title.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
+  inline def wait(msg: Unit, title: Unit, config: Any): IMessageBox = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(msg.asInstanceOf[js.Any], title.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[IMessageBox]
   
   /** [Property] (Ext.ZIndexManager) */
   @JSGlobal("Ext.Msg.zIndexManager")

@@ -10,10 +10,10 @@ The lodash method `_.functionsIn` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.functionsin |
 | Keywords           | lodash-modularized, functionsin |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 833 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 94.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

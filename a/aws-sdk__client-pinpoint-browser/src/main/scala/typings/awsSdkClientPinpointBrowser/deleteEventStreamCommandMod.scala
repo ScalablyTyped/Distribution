@@ -16,7 +16,7 @@ object deleteEventStreamCommandMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteEventStreamCommand", "DeleteEventStreamCommand")
   @js.native
-  class DeleteEventStreamCommand protected ()
+  open class DeleteEventStreamCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object deleteEventStreamCommandMod {
     override val middlewareStack: MiddlewareStack[DeleteEventStreamInput, DeleteEventStreamOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: PinpointResolvedConfiguration
     ): Handler[DeleteEventStreamInput, DeleteEventStreamOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: PinpointResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DeleteEventStreamInput, DeleteEventStreamOutput] = js.native
   }
 }

@@ -21,7 +21,7 @@ trait Firestore extends StObject {
   
   def enablePersistence(enabled: Boolean): js.Promise[Unit]
   
-  def runTransaction(updateFunction: js.Function1[/* transaction */ Transaction, js.Promise[js.Any]]): js.Promise[js.Any]
+  def runTransaction(updateFunction: js.Function1[/* transaction */ Transaction, js.Promise[Any]]): js.Promise[Any]
   
   def settings(settings: Settings): js.Promise[Unit]
 }
@@ -35,7 +35,7 @@ object Firestore {
     doc: String => DocumentReference,
     enableNetwork: () => js.Promise[Unit],
     enablePersistence: Boolean => js.Promise[Unit],
-    runTransaction: js.Function1[/* transaction */ Transaction, js.Promise[js.Any]] => js.Promise[js.Any],
+    runTransaction: js.Function1[/* transaction */ Transaction, js.Promise[Any]] => js.Promise[Any],
     settings: Settings => js.Promise[Unit]
   ): Firestore = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], batch = js.Any.fromFunction0(batch), collection = js.Any.fromFunction1(collection), disableNetwork = js.Any.fromFunction0(disableNetwork), doc = js.Any.fromFunction1(doc), enableNetwork = js.Any.fromFunction0(enableNetwork), enablePersistence = js.Any.fromFunction1(enablePersistence), runTransaction = js.Any.fromFunction1(runTransaction), settings = js.Any.fromFunction1(settings))
@@ -58,7 +58,7 @@ object Firestore {
     
     inline def setEnablePersistence(value: Boolean => js.Promise[Unit]): Self = StObject.set(x, "enablePersistence", js.Any.fromFunction1(value))
     
-    inline def setRunTransaction(value: js.Function1[/* transaction */ Transaction, js.Promise[js.Any]] => js.Promise[js.Any]): Self = StObject.set(x, "runTransaction", js.Any.fromFunction1(value))
+    inline def setRunTransaction(value: js.Function1[/* transaction */ Transaction, js.Promise[Any]] => js.Promise[Any]): Self = StObject.set(x, "runTransaction", js.Any.fromFunction1(value))
     
     inline def setSettings(value: Settings => js.Promise[Unit]): Self = StObject.set(x, "settings", js.Any.fromFunction1(value))
   }

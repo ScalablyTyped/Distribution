@@ -18,7 +18,7 @@ object DateTimeFormatting {
   /** Formats dates and times. */
   @JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter")
   @js.native
-  class DateTimeFormatter protected ()
+  open class DateTimeFormatter protected ()
     extends StObject
        with typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DateTimeFormatter {
     /**

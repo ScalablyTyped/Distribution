@@ -35,7 +35,7 @@ object ListNotificationChannelsResponse {
     
     inline def setNotificationChannelsUndefined: Self = StObject.set(x, "notificationChannels", js.undefined)
     
-    inline def setNotificationChannelsVarargs(value: NotificationChannel*): Self = StObject.set(x, "notificationChannels", js.Array(value :_*))
+    inline def setNotificationChannelsVarargs(value: NotificationChannel*): Self = StObject.set(x, "notificationChannels", js.Array(value*))
     
     inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     

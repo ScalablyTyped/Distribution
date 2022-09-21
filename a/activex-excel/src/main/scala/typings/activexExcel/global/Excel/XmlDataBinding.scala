@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.XmlDataBinding")
 @js.native
-/* private */ class XmlDataBinding ()
+/* private */ open class XmlDataBinding ()
   extends StObject
      with typings.activexExcel.Excel.XmlDataBinding {
   
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def LoadSettings(Url: String): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Refresh(): XlXmlImportResult = js.native

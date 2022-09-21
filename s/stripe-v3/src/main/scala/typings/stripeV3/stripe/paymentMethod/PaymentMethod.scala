@@ -24,7 +24,7 @@ trait PaymentMethod extends StObject {
     * If this is an card_present PaymentMethod, this hash contains details
     * about the Card Present payment method.
     */
-  var card_present: js.UndefOr[js.Any] = js.undefined
+  var card_present: js.UndefOr[Any] = js.undefined
   
   /**
     * Time at which the object was created. Measured in seconds since the
@@ -87,7 +87,7 @@ object PaymentMethod {
     
     inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     
-    inline def setCard_present(value: js.Any): Self = StObject.set(x, "card_present", value.asInstanceOf[js.Any])
+    inline def setCard_present(value: Any): Self = StObject.set(x, "card_present", value.asInstanceOf[js.Any])
     
     inline def setCard_presentUndefined: Self = StObject.set(x, "card_present", js.undefined)
     

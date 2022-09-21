@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaBooksVolumesRecommendedRateResponse extends StObject {
   
-  var consistency_token: js.UndefOr[String] = js.undefined
+  var consistency_token: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBooksVolumesRecommendedRateResponse {
   
@@ -18,6 +18,8 @@ object SchemaBooksVolumesRecommendedRateResponse {
   extension [Self <: SchemaBooksVolumesRecommendedRateResponse](x: Self) {
     
     inline def setConsistency_token(value: String): Self = StObject.set(x, "consistency_token", value.asInstanceOf[js.Any])
+    
+    inline def setConsistency_tokenNull: Self = StObject.set(x, "consistency_token", null)
     
     inline def setConsistency_tokenUndefined: Self = StObject.set(x, "consistency_token", js.undefined)
   }

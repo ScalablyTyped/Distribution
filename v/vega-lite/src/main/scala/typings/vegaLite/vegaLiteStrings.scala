@@ -34,6 +34,7 @@ import typings.vegaLite.sortMod.SortByChannel
 import typings.vegaLite.sortMod.SortByChannelDesc
 import typings.vegaLite.sortMod.SortOrder
 import typings.vegaLite.specBaseMod.SpecType
+import typings.vegaLite.specBaseMod.StepFor
 import typings.vegaLite.splitMod.SplitParentProperty
 import typings.vegaLite.srcDataMod.DataFormatType
 import typings.vegaLite.srcDataMod._ParseValue
@@ -194,10 +195,6 @@ object vegaLiteStrings {
     extends StObject
        with VgEncodeChannel
   inline def align: align = "align".asInstanceOf[align]
-  
-  @js.native
-  sealed trait all extends StObject
-  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait always extends StObject
@@ -434,14 +431,6 @@ object vegaLiteStrings {
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait `bottom-left` extends StObject
-  inline def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
-  
-  @js.native
-  sealed trait `bottom-right` extends StObject
-  inline def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
-  
-  @js.native
   sealed trait box
     extends StObject
        with BoxPlotPart
@@ -506,8 +495,20 @@ object vegaLiteStrings {
   inline def clip: clip = "clip".asInstanceOf[clip]
   
   @js.native
+  sealed trait clipAngle extends StObject
+  inline def clipAngle: clipAngle = "clipAngle".asInstanceOf[clipAngle]
+  
+  @js.native
+  sealed trait clipExtent extends StObject
+  inline def clipExtent: clipExtent = "clipExtent".asInstanceOf[clipExtent]
+  
+  @js.native
   sealed trait clipHeight extends StObject
   inline def clipHeight: clipHeight = "clipHeight".asInstanceOf[clipHeight]
+  
+  @js.native
+  sealed trait coefficient extends StObject
+  inline def coefficient: coefficient = "coefficient".asInstanceOf[coefficient]
   
   @js.native
   sealed trait color
@@ -731,6 +732,10 @@ object vegaLiteStrings {
   inline def discretizing: discretizing = "discretizing".asInstanceOf[discretizing]
   
   @js.native
+  sealed trait distance extends StObject
+  inline def distance: distance = "distance".asInstanceOf[distance]
+  
+  @js.native
   sealed trait distinct
     extends StObject
        with Aggregate
@@ -800,10 +805,6 @@ object vegaLiteStrings {
     extends StObject
        with VgEncodeChannel
   inline def dy: dy = "dy".asInstanceOf[dy]
-  
-  @js.native
-  sealed trait each extends StObject
-  inline def each: each = "each".asInstanceOf[each]
   
   @js.native
   sealed trait ellipsis
@@ -959,6 +960,10 @@ object vegaLiteStrings {
   @js.native
   sealed trait formatType extends StObject
   inline def formatType: formatType = "formatType".asInstanceOf[formatType]
+  
+  @js.native
+  sealed trait fraction extends StObject
+  inline def fraction: fraction = "fraction".asInstanceOf[fraction]
   
   @js.native
   sealed trait frame extends StObject
@@ -1367,7 +1372,7 @@ object vegaLiteStrings {
     extends StObject
        with Channel
        with GeoPositionChannel
-       with _MainChannelOf[js.Any]
+       with _MainChannelOf[Any]
   inline def latitude: latitude = "latitude".asInstanceOf[latitude]
   
   @js.native
@@ -1376,7 +1381,7 @@ object vegaLiteStrings {
        with Channel
        with GeoPositionChannel
        with SecondaryRangeChannel
-       with _SecondaryChannelOf[js.Any]
+       with _SecondaryChannelOf[Any]
   inline def latitude2: latitude2 = "latitude2".asInstanceOf[latitude2]
   
   @js.native
@@ -1441,6 +1446,10 @@ object vegaLiteStrings {
   inline def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
+  sealed trait lobes extends StObject
+  inline def lobes: lobes = "lobes".asInstanceOf[lobes]
+  
+  @js.native
   sealed trait log
     extends StObject
        with ScaleType
@@ -1451,7 +1460,7 @@ object vegaLiteStrings {
     extends StObject
        with Channel
        with GeoPositionChannel
-       with _MainChannelOf[js.Any]
+       with _MainChannelOf[Any]
   inline def longitude: longitude = "longitude".asInstanceOf[longitude]
   
   @js.native
@@ -1460,7 +1469,7 @@ object vegaLiteStrings {
        with Channel
        with GeoPositionChannel
        with SecondaryRangeChannel
-       with _SecondaryChannelOf[js.Any]
+       with _SecondaryChannelOf[Any]
   inline def longitude2: longitude2 = "longitude2".asInstanceOf[longitude2]
   
   @js.native
@@ -1587,12 +1596,6 @@ object vegaLiteStrings {
   inline def monthdatehoursminutesseconds: monthdatehoursminutesseconds = "monthdatehoursminutesseconds".asInstanceOf[monthdatehoursminutesseconds]
   
   @js.native
-  sealed trait multi
-    extends StObject
-       with SelectionType
-  inline def multi: multi = "multi".asInstanceOf[multi]
-  
-  @js.native
   sealed trait nice extends StObject
   inline def nice: nice = "nice".asInstanceOf[nice]
   
@@ -1639,7 +1642,9 @@ object vegaLiteStrings {
   inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
-  sealed trait offset extends StObject
+  sealed trait offset
+    extends StObject
+       with StepFor
   inline def offset: offset = "offset".asInstanceOf[offset]
   
   @js.native
@@ -1710,12 +1715,16 @@ object vegaLiteStrings {
   inline def paddingOuter: paddingOuter = "paddingOuter".asInstanceOf[paddingOuter]
   
   @js.native
-  sealed trait parent extends StObject
-  inline def parent: parent = "parent".asInstanceOf[parent]
+  sealed trait parallel extends StObject
+  inline def parallel: parallel = "parallel".asInstanceOf[parallel]
   
   @js.native
-  sealed trait parity extends StObject
-  inline def parity: parity = "parity".asInstanceOf[parity]
+  sealed trait parallels extends StObject
+  inline def parallels: parallels = "parallels".asInstanceOf[parallels]
+  
+  @js.native
+  sealed trait parent extends StObject
+  inline def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
   sealed trait path
@@ -1738,14 +1747,21 @@ object vegaLiteStrings {
     extends StObject
        with Mark
        with ScaleType
+       with SelectionType
   inline def point: point = "point".asInstanceOf[point]
+  
+  @js.native
+  sealed trait pointRadius extends StObject
+  inline def pointRadius: pointRadius = "pointRadius".asInstanceOf[pointRadius]
   
   @js.native
   sealed trait poly extends StObject
   inline def poly: poly = "poly".asInstanceOf[poly]
   
   @js.native
-  sealed trait position extends StObject
+  sealed trait position
+    extends StObject
+       with StepFor
   inline def position: position = "position".asInstanceOf[position]
   
   @js.native
@@ -1753,6 +1769,10 @@ object vegaLiteStrings {
     extends StObject
        with ScaleType
   inline def pow: pow = "pow".asInstanceOf[pow]
+  
+  @js.native
+  sealed trait precision extends StObject
+  inline def precision: precision = "precision".asInstanceOf[precision]
   
   @js.native
   sealed trait product
@@ -1822,7 +1842,7 @@ object vegaLiteStrings {
        with PolarPositionChannel
        with PolarPositionScaleChannel
        with VgEncodeChannel
-       with _MainChannelOf[js.Any]
+       with _MainChannelOf[Any]
   inline def radius: radius = "radius".asInstanceOf[radius]
   
   @js.native
@@ -1831,7 +1851,7 @@ object vegaLiteStrings {
        with Channel
        with PolarPositionChannel
        with SecondaryRangeChannel
-       with _SecondaryChannelOf[js.Any]
+       with _SecondaryChannelOf[Any]
   inline def radius2: radius2 = "radius2".asInstanceOf[radius2]
   
   @js.native
@@ -1861,6 +1881,10 @@ object vegaLiteStrings {
   inline def rank: rank = "rank".asInstanceOf[rank]
   
   @js.native
+  sealed trait ratio extends StObject
+  inline def ratio: ratio = "ratio".asInstanceOf[ratio]
+  
+  @js.native
   sealed trait raw
     extends StObject
        with ErrorInputType
@@ -1873,6 +1897,14 @@ object vegaLiteStrings {
   inline def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
+  sealed trait reflectX extends StObject
+  inline def reflectX: reflectX = "reflectX".asInstanceOf[reflectX]
+  
+  @js.native
+  sealed trait reflectY extends StObject
+  inline def reflectY: reflectY = "reflectY".asInstanceOf[reflectY]
+  
+  @js.native
   sealed trait repeat extends StObject
   inline def repeat: repeat = "repeat".asInstanceOf[repeat]
   
@@ -1883,6 +1915,10 @@ object vegaLiteStrings {
   @js.native
   sealed trait right extends StObject
   inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
+  sealed trait rotate extends StObject
+  inline def rotate: rotate = "rotate".asInstanceOf[rotate]
   
   @js.native
   sealed trait round extends StObject
@@ -1977,12 +2013,6 @@ object vegaLiteStrings {
   inline def shared: shared = "shared".asInstanceOf[shared]
   
   @js.native
-  sealed trait single
-    extends StObject
-       with SelectionType
-  inline def single: single = "single".asInstanceOf[single]
-  
-  @js.native
   sealed trait size
     extends StObject
        with Channel
@@ -1993,6 +2023,10 @@ object vegaLiteStrings {
   @js.native
   sealed trait smooth extends StObject
   inline def smooth: smooth = "smooth".asInstanceOf[smooth]
+  
+  @js.native
+  sealed trait spacing extends StObject
+  inline def spacing: spacing = "spacing".asInstanceOf[spacing]
   
   @js.native
   sealed trait sqrt
@@ -2253,7 +2287,7 @@ object vegaLiteStrings {
        with PolarPositionChannel
        with PolarPositionScaleChannel
        with VgEncodeChannel
-       with _MainChannelOf[js.Any]
+       with _MainChannelOf[Any]
   inline def theta: theta = "theta".asInstanceOf[theta]
   
   @js.native
@@ -2262,7 +2296,7 @@ object vegaLiteStrings {
        with Channel
        with PolarPositionChannel
        with SecondaryRangeChannel
-       with _SecondaryChannelOf[js.Any]
+       with _SecondaryChannelOf[Any]
   inline def theta2: theta2 = "theta2".asInstanceOf[theta2]
   
   @js.native
@@ -2362,18 +2396,22 @@ object vegaLiteStrings {
   inline def ticks: ticks = "ticks".asInstanceOf[ticks]
   
   @js.native
+  sealed trait tilt extends StObject
+  inline def tilt: tilt = "tilt".asInstanceOf[tilt]
+  
+  @js.native
   sealed trait time
     extends StObject
        with ScaleType
   inline def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait timeUnitBand extends StObject
-  inline def timeUnitBand: timeUnitBand = "timeUnitBand".asInstanceOf[timeUnitBand]
-  
-  @js.native
   sealed trait timeUnitBandPosition extends StObject
   inline def timeUnitBandPosition: timeUnitBandPosition = "timeUnitBandPosition".asInstanceOf[timeUnitBandPosition]
+  
+  @js.native
+  sealed trait timeUnitBandSize extends StObject
+  inline def timeUnitBandSize: timeUnitBandSize = "timeUnitBandSize".asInstanceOf[timeUnitBandSize]
   
   @js.native
   sealed trait title
@@ -2455,14 +2493,6 @@ object vegaLiteStrings {
   @js.native
   sealed trait top extends StObject
   inline def top: top = "top".asInstanceOf[top]
-  
-  @js.native
-  sealed trait `top-left` extends StObject
-  inline def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
-  
-  @js.native
-  sealed trait `top-right` extends StObject
-  inline def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   
   @js.native
   sealed trait topojson
@@ -2806,6 +2836,10 @@ object vegaLiteStrings {
   inline def verbal: verbal = "verbal".asInstanceOf[verbal]
   
   @js.native
+  sealed trait visual extends StObject
+  inline def visual: visual = "visual".asInstanceOf[visual]
+  
+  @js.native
   sealed trait week
     extends StObject
        with LocalSingleTimeUnit
@@ -2851,7 +2885,7 @@ object vegaLiteStrings {
        with PositionScaleChannel
        with SortByChannel
        with VgEncodeChannel
-       with _MainChannelOf[js.Any]
+       with _MainChannelOf[Any]
   inline def x: x = "x".asInstanceOf[x]
   
   @js.native
@@ -2861,7 +2895,7 @@ object vegaLiteStrings {
        with PositionChannel
        with SecondaryRangeChannel
        with VgEncodeChannel
-       with _SecondaryChannelOf[js.Any]
+       with _SecondaryChannelOf[Any]
   inline def x2: x2 = "x2".asInstanceOf[x2]
   
   @js.native
@@ -2869,7 +2903,9 @@ object vegaLiteStrings {
   inline def x2Offset: x2Offset = "x2Offset".asInstanceOf[x2Offset]
   
   @js.native
-  sealed trait xOffset extends StObject
+  sealed trait xOffset
+    extends StObject
+       with Channel
   inline def xOffset: xOffset = "xOffset".asInstanceOf[xOffset]
   
   @js.native
@@ -2886,7 +2922,7 @@ object vegaLiteStrings {
        with PositionScaleChannel
        with SortByChannel
        with VgEncodeChannel
-       with _MainChannelOf[js.Any]
+       with _MainChannelOf[Any]
   inline def y: y = "y".asInstanceOf[y]
   
   @js.native
@@ -2896,7 +2932,7 @@ object vegaLiteStrings {
        with PositionChannel
        with SecondaryRangeChannel
        with VgEncodeChannel
-       with _SecondaryChannelOf[js.Any]
+       with _SecondaryChannelOf[Any]
   inline def y2: y2 = "y2".asInstanceOf[y2]
   
   @js.native
@@ -2904,7 +2940,9 @@ object vegaLiteStrings {
   inline def y2Offset: y2Offset = "y2Offset".asInstanceOf[y2Offset]
   
   @js.native
-  sealed trait yOffset extends StObject
+  sealed trait yOffset
+    extends StObject
+       with Channel
   inline def yOffset: yOffset = "yOffset".asInstanceOf[yOffset]
   
   @js.native

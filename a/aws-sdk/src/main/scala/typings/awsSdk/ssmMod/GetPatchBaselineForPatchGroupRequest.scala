@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetPatchBaselineForPatchGroupRequest extends StObject {
   
   /**
-    * Returns he operating system rule specified for patch groups using the patch baseline.
+    * Returns the operating system rule specified for patch groups using the patch baseline.
     */
   var OperatingSystem: js.UndefOr[typings.awsSdk.ssmMod.OperatingSystem] = js.undefined
   

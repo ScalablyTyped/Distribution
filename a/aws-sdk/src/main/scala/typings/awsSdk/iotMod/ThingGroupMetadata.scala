@@ -9,7 +9,7 @@ trait ThingGroupMetadata extends StObject {
   /**
     * The UNIX timestamp of when the thing group was created.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The parent thing group name.
@@ -30,7 +30,7 @@ object ThingGroupMetadata {
   
   extension [Self <: ThingGroupMetadata](x: Self) {
     
-    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
@@ -42,6 +42,6 @@ object ThingGroupMetadata {
     
     inline def setRootToParentThingGroupsUndefined: Self = StObject.set(x, "rootToParentThingGroups", js.undefined)
     
-    inline def setRootToParentThingGroupsVarargs(value: GroupNameAndArn*): Self = StObject.set(x, "rootToParentThingGroups", js.Array(value :_*))
+    inline def setRootToParentThingGroupsVarargs(value: GroupNameAndArn*): Self = StObject.set(x, "rootToParentThingGroups", js.Array(value*))
   }
 }

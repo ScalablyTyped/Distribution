@@ -4,83 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudtasks/v2beta2", "cloudtasks_v2beta2.Resource$Projects$Locations")
 @js.native
-class ResourceProjectsLocations protected () extends StObject {
+open class ResourceProjectsLocations protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * cloudtasks.projects.locations.get
-    * @desc Gets information about a location.
-    * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Cloud Tasks API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/cloudtasks
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
-    *
-    * var google = require('googleapis');
-    * var cloudTasks = google.cloudtasks('v2beta2');
-    *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Resource name for the location.
-    *     name: 'projects/my-project/locations/my-location',  // TODO: Update
-    * placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   cloudTasks.projects.locations.get(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
-    *   });
-    * });
-    *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias cloudtasks.projects.locations.get
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Resource name for the location.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def get(): GaxiosPromise[SchemaLocation] = js.native
   def get(callback: BodyResponseCallback[SchemaLocation]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLocation] = js.native
@@ -88,8 +24,8 @@ class ResourceProjectsLocations protected () extends StObject {
   def get(params: ParamsResourceProjectsLocationsGet, callback: BodyResponseCallback[SchemaLocation]): Unit = js.native
   def get(
     params: ParamsResourceProjectsLocationsGet,
-    options: BodyResponseCallback[SchemaLocation],
-    callback: BodyResponseCallback[SchemaLocation]
+    options: BodyResponseCallback[Readable | SchemaLocation],
+    callback: BodyResponseCallback[Readable | SchemaLocation]
   ): Unit = js.native
   def get(params: ParamsResourceProjectsLocationsGet, options: MethodOptions): GaxiosPromise[SchemaLocation] = js.native
   def get(
@@ -97,88 +33,67 @@ class ResourceProjectsLocations protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLocation]
   ): Unit = js.native
-  
   /**
-    * cloudtasks.projects.locations.list
-    * @desc Lists information about the supported locations for this service.
+    * Gets information about a location.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Cloud Tasks API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/cloudtasks
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/cloudtasks.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var cloudTasks = google.cloudtasks('v2beta2');
+    * const {google} = require('googleapis');
+    * const cloudtasks = google.cloudtasks('v2beta2');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // The resource that owns the locations collection, if applicable.
-    *     name: 'projects/my-project',  // TODO: Update placeholder value.
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
     *
-    *     auth: authClient,
-    *   };
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
     *
-    *   var handlePage = function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
+    *   // Do the magic
+    *   const res = await cloudtasks.projects.locations.get({
+    *     // Resource name for the location.
+    *     name: 'projects/my-project/locations/my-location',
+    *   });
+    *   console.log(res.data);
     *
-    *     var locationsPage = response['locations'];
-    *     if (!locationsPage) {
-    *       return;
-    *     }
-    *     for (var i = 0; i < locationsPage.length; i++) {
-    *       // TODO: Change code below to process each resource in
-    * `locationsPage`: console.log(JSON.stringify(locationsPage[i], null, 2));
-    *     }
+    *   // Example response
+    *   // {
+    *   //   "displayName": "my_displayName",
+    *   //   "labels": {},
+    *   //   "locationId": "my_locationId",
+    *   //   "metadata": {},
+    *   //   "name": "my_name"
+    *   // }
+    * }
     *
-    *     if (response.nextPageToken) {
-    *       request.pageToken = response.nextPageToken;
-    *       cloudTasks.projects.locations.list(request, handlePage);
-    *     }
-    *   };
-    *
-    *   cloudTasks.projects.locations.list(request, handlePage);
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias cloudtasks.projects.locations.list
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter The standard list filter.
-    * @param {string} params.name The resource that owns the locations collection, if applicable.
-    * @param {integer=} params.pageSize The standard list page size.
-    * @param {string=} params.pageToken The standard list page token.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceProjectsLocationsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceProjectsLocationsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaListLocationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListLocationsResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListLocationsResponse] = js.native
@@ -189,14 +104,77 @@ class ResourceProjectsLocations protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceProjectsLocationsList,
-    options: BodyResponseCallback[SchemaListLocationsResponse],
-    callback: BodyResponseCallback[SchemaListLocationsResponse]
+    options: BodyResponseCallback[Readable | SchemaListLocationsResponse],
+    callback: BodyResponseCallback[Readable | SchemaListLocationsResponse]
   ): Unit = js.native
   def list(params: ParamsResourceProjectsLocationsList, options: MethodOptions): GaxiosPromise[SchemaListLocationsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsList,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListLocationsResponse]
+  ): Unit = js.native
+  /**
+    * Lists information about the supported locations for this service.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/cloudtasks.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const cloudtasks = google.cloudtasks('v2beta2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await cloudtasks.projects.locations.list({
+    *     // A filter to narrow down results to a preferred subset. The filtering language accepts strings like `"displayName=tokyo"`, and is documented in more detail in [AIP-160](https://google.aip.dev/160).
+    *     filter: 'placeholder-value',
+    *     // The resource that owns the locations collection, if applicable.
+    *     name: 'projects/my-project',
+    *     // The maximum number of results to return. If not set, the service selects a default.
+    *     pageSize: 'placeholder-value',
+    *     // A page token received from the `next_page_token` field in the response. Send that page token to receive the subsequent page.
+    *     pageToken: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "locations": [],
+    *   //   "nextPageToken": "my_nextPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceProjectsLocationsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceProjectsLocationsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
   var queues: ResourceProjectsLocationsQueues = js.native

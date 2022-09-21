@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DecomposeOptions
   extends StObject
-     with /* foreignTable */ StringDictionary[DecomposeOptions | js.Any] {
+     with /* foreignTable */ StringDictionary[DecomposeOptions | Any] {
   
   var columns: js.UndefOr[js.Array[String] | AnyObject[String]] = js.undefined
   
@@ -26,7 +26,7 @@ object DecomposeOptions {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
   }

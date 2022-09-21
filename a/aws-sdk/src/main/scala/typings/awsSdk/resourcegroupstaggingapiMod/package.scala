@@ -1,28 +1,29 @@
 package typings.awsSdk.resourcegroupstaggingapiMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AmazonResourceType = java.lang.String
+type AmazonResourceType = String
 
-type ComplianceStatus = scala.Boolean
+type ComplianceStatus = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.InternalServiceException
   - typings.awsSdk.awsSdkStrings.InvalidParameterException
   - java.lang.String
 */
-type ErrorCode = typings.awsSdk.resourcegroupstaggingapiMod._ErrorCode | java.lang.String
+type ErrorCode = _ErrorCode | String
 
-type ErrorMessage = java.lang.String
+type ErrorMessage = String
 
-type ExcludeCompliantResources = scala.Boolean
+type ExcludeCompliantResources = Boolean
 
-type FailedResourcesMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.resourcegroupstaggingapiMod.FailureInfo]
+type FailedResourcesMap = StringDictionary[FailureInfo]
 
-type GroupBy = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.GroupByAttribute]
+type GroupBy = js.Array[GroupByAttribute]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TARGET_ID
@@ -30,67 +31,69 @@ type GroupBy = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.GroupByAttrib
   - typings.awsSdk.awsSdkStrings.RESOURCE_TYPE
   - java.lang.String
 */
-type GroupByAttribute = typings.awsSdk.resourcegroupstaggingapiMod._GroupByAttribute | java.lang.String
+type GroupByAttribute = _GroupByAttribute | String
 
-type IncludeComplianceDetails = scala.Boolean
+type IncludeComplianceDetails = Boolean
 
-type LastUpdated = java.lang.String
+type LastUpdated = String
 
-type MaxResultsGetComplianceSummary = scala.Double
+type MaxResultsGetComplianceSummary = Double
 
-type NonCompliantResources = scala.Double
+type NonCompliantResources = Double
 
-type PaginationToken = java.lang.String
+type PaginationToken = String
 
-type Region = java.lang.String
+type Region = String
 
-type RegionFilterList = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.Region]
+type RegionFilterList = js.Array[Region]
 
-type ResourceARN = java.lang.String
+type ResourceARN = String
 
-type ResourceARNList = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.ResourceARN]
+type ResourceARNListForGet = js.Array[ResourceARN]
 
-type ResourceTagMappingList = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.ResourceTagMapping]
+type ResourceARNListForTagUntag = js.Array[ResourceARN]
 
-type ResourceTypeFilterList = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.AmazonResourceType]
+type ResourceTagMappingList = js.Array[ResourceTagMapping]
 
-type ResourcesPerPage = scala.Double
+type ResourceTypeFilterList = js.Array[AmazonResourceType]
 
-type S3Bucket = java.lang.String
+type ResourcesPerPage = Double
 
-type S3Location = java.lang.String
+type S3Bucket = String
 
-type Status = java.lang.String
+type S3Location = String
 
-type StatusCode = scala.Double
+type Status = String
 
-type SummaryList = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.Summary]
+type StatusCode = Double
 
-type TagFilterList = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.TagFilter]
+type SummaryList = js.Array[Summary]
 
-type TagKey = java.lang.String
+type TagFilterList = js.Array[TagFilter]
 
-type TagKeyFilterList = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.TagKey]
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.TagKey]
+type TagKeyFilterList = js.Array[TagKey]
 
-type TagKeyListForUntag = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.Tag]
+type TagKeyListForUntag = js.Array[TagKey]
 
-type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.resourcegroupstaggingapiMod.TagValue]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagMap = StringDictionary[TagValue]
 
-type TagValueList = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.TagValue]
+type TagValue = String
 
-type TagValuesOutputList = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.TagValue]
+type TagValueList = js.Array[TagValue]
 
-type TagsPerPage = scala.Double
+type TagValuesOutputList = js.Array[TagValue]
 
-type TargetId = java.lang.String
+type TagsPerPage = Double
 
-type TargetIdFilterList = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.TargetId]
+type TargetId = String
+
+type TargetIdFilterList = js.Array[TargetId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACCOUNT
@@ -98,11 +101,11 @@ type TargetIdFilterList = js.Array[typings.awsSdk.resourcegroupstaggingapiMod.Ta
   - typings.awsSdk.awsSdkStrings.ROOT
   - java.lang.String
 */
-type TargetIdType = typings.awsSdk.resourcegroupstaggingapiMod._TargetIdType | java.lang.String
+type TargetIdType = _TargetIdType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-01-26`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.resourcegroupstaggingapiMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

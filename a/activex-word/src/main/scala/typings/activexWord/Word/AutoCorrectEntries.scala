@@ -16,9 +16,9 @@ trait AutoCorrectEntries extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): AutoCorrectEntry
+  def Item(Index: Any): AutoCorrectEntry
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.AutoCorrectEntries_typekey")
   var WordDotAutoCorrectEntries_typekey: AutoCorrectEntries
@@ -31,8 +31,8 @@ object AutoCorrectEntries {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => AutoCorrectEntry,
-    Parent: js.Any,
+    Item: Any => AutoCorrectEntry,
+    Parent: Any,
     WordDotAutoCorrectEntries_typekey: AutoCorrectEntries
   ): AutoCorrectEntries = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), AddRichText = js.Any.fromFunction2(AddRichText), Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -52,9 +52,9 @@ object AutoCorrectEntries {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => AutoCorrectEntry): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => AutoCorrectEntry): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotAutoCorrectEntries_typekey(value: AutoCorrectEntries): Self = StObject.set(x, "Word.AutoCorrectEntries_typekey", value.asInstanceOf[js.Any])
   }

@@ -26,6 +26,12 @@ object ColorThemeKind extends StObject {
   /* 3 */ val HighContrast: typings.vscode.mod.ColorThemeKind.HighContrast & Double = js.native
   
   @js.native
+  sealed trait HighContrastLight
+    extends StObject
+       with ColorThemeKind
+  /* 4 */ val HighContrastLight: typings.vscode.mod.ColorThemeKind.HighContrastLight & Double = js.native
+  
+  @js.native
   sealed trait Light
     extends StObject
        with ColorThemeKind

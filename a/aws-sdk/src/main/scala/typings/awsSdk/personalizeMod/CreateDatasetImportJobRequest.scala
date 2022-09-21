@@ -17,6 +17,11 @@ trait CreateDatasetImportJobRequest extends StObject {
   var datasetArn: Arn
   
   /**
+    * Specify how to add the new records to an existing dataset. The default import mode is FULL. If you haven't imported bulk records into the dataset previously, you can only specify FULL.   Specify FULL to overwrite all existing bulk data in your dataset. Data you imported individually is not replaced.   Specify INCREMENTAL to append the new records to the existing data in your dataset. Amazon Personalize replaces any record with the same ID with the new one.  
+    */
+  var importMode: js.UndefOr[ImportMode] = js.undefined
+  
+  /**
     * The name for the dataset import job.
     */
   var jobName: Name
@@ -25,6 +30,11 @@ trait CreateDatasetImportJobRequest extends StObject {
     * The ARN of the IAM role that has permissions to read from the Amazon S3 data source.
     */
   var roleArn: RoleArn
+  
+  /**
+    * A list of tags to apply to the dataset import job.
+    */
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object CreateDatasetImportJobRequest {
   
@@ -39,8 +49,18 @@ object CreateDatasetImportJobRequest {
     
     inline def setDatasetArn(value: Arn): Self = StObject.set(x, "datasetArn", value.asInstanceOf[js.Any])
     
+    inline def setImportMode(value: ImportMode): Self = StObject.set(x, "importMode", value.asInstanceOf[js.Any])
+    
+    inline def setImportModeUndefined: Self = StObject.set(x, "importMode", js.undefined)
+    
     inline def setJobName(value: Name): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

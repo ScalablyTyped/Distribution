@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-navigation
 
-Typings are for version 4.4.3
+Typings are for version 4.4.4
 
 ## Library description:
 Routing and navigation for your React Native apps
@@ -10,10 +10,10 @@ Routing and navigation for your React Native apps
 | ------------------ | :-------------: |
 | Full name          | react-navigation |
 | Keywords           | - |
-| # releases         | 60 |
-| # dependents       | 392 |
-| # downloads        | 9683025 |
-| # stars            | 16 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 475884.6666666667 |
+| # stars            | 21315.0 |
 
 ## Links
 - [Homepage](https://github.com/react-navigation/react-navigation#readme)

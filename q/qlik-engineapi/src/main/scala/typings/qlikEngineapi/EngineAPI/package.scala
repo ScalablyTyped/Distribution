@@ -8,60 +8,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * BookmarkListObject width extend GenericObject
   */
-type IBookmarkListObject = typings.qlikEngineapi.EngineAPI.IGenericObjectPrototype[
-typings.qlikEngineapi.EngineAPI.IGenericBookmarkListProperties, 
-typings.qlikEngineapi.EngineAPI.IGenericBookmarkListLayout]
+type IBookmarkListObject = IGenericObjectPrototype[IGenericBookmarkListProperties, IGenericBookmarkListLayout]
 
-type IDimensionListObject = typings.qlikEngineapi.EngineAPI.IGenericObjectPrototype[
-typings.qlikEngineapi.EngineAPI.IGenericDimensionsListProperties, 
-typings.qlikEngineapi.EngineAPI.IGenericDimensionListLayout]
+type IDimensionListObject = IGenericObjectPrototype[IGenericDimensionsListProperties, IGenericDimensionListLayout]
 
 /**
   * FieldListObject width extend GenericObject
   */
-type IFieldListObject = typings.qlikEngineapi.EngineAPI.IGenericObjectPrototype[
-typings.qlikEngineapi.EngineAPI.IGenericFieldListProperties, 
-typings.qlikEngineapi.EngineAPI.IGenericFieldLayout]
+type IFieldListObject = IGenericObjectPrototype[IGenericFieldListProperties, IGenericFieldLayout]
 
 /**
   * GenericBookmarkProperties width extend GenericProperties
   */
-type IGenericBookmarkProperties = typings.qlikEngineapi.EngineAPI.IGenericProperties
+type IGenericBookmarkProperties = IGenericProperties
 
-type IGenericDerivedFieldProperties = typings.qlikEngineapi.EngineAPI.IGenericProperties
+type IGenericDerivedFieldProperties = IGenericProperties
 
 /**
   * GenericList...
   */
-type IGenericList = typings.qlikEngineapi.EngineAPI.IGenericObjectPrototype[
-typings.qlikEngineapi.EngineAPI.IGenericListProperties, 
-typings.qlikEngineapi.EngineAPI.IGenericListLayout]
+type IGenericList = IGenericObjectPrototype[IGenericListProperties, IGenericListLayout]
 
 /**
   * HyperCubeObject width extend GenericObjectPrototype<GenericHyperCubeProperties, GenericHyperCubeLayout>
   */
-type IHyperCubeObject = typings.qlikEngineapi.EngineAPI.IGenericObjectPrototype[
-typings.qlikEngineapi.EngineAPI.IGenericHyperCubeProperties, 
-typings.qlikEngineapi.EngineAPI.IGenericHyperCubeLayout]
+type IHyperCubeObject = IGenericObjectPrototype[IGenericHyperCubeProperties, IGenericHyperCubeLayout]
 
 /**
   * IMeassureListObject
   */
-type IMeassureListObject = typings.qlikEngineapi.EngineAPI.IGenericObjectPrototype[
-typings.qlikEngineapi.EngineAPI.IGenericMeasureListProperties, 
-typings.qlikEngineapi.EngineAPI.IGenericMeasureListLayout]
+type IMeassureListObject = IGenericObjectPrototype[IGenericMeasureListProperties, IGenericMeasureListLayout]
 
 /**
   * NxCellRows...
   */
-type INxCellRows = js.Array[typings.qlikEngineapi.EngineAPI.INxCell]
+type INxCellRows = js.Array[INxCell]
 
 /**
   * VariableListObject width extend GenericObject
   */
-type IVariableListObject = typings.qlikEngineapi.EngineAPI.IGenericObjectPrototype[
-typings.qlikEngineapi.EngineAPI.IGenericVariableListProperties, 
-typings.qlikEngineapi.EngineAPI.IGenericVariableListLayout]
+type IVariableListObject = IGenericObjectPrototype[IGenericVariableListProperties, IGenericVariableListLayout]
 
 /* Rewritten from type alias, can be one of: 
   - typings.qlikEngineapi.qlikEngineapiStrings.N
@@ -69,4 +55,4 @@ typings.qlikEngineapi.EngineAPI.IGenericVariableListLayout]
   - typings.qlikEngineapi.qlikEngineapiStrings.C
   - java.lang.String
 */
-type NxGrpType = typings.qlikEngineapi.EngineAPI._NxGrpType | java.lang.String
+type NxGrpType = _NxGrpType | String

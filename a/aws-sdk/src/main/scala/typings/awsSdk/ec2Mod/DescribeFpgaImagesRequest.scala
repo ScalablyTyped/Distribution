@@ -12,7 +12,7 @@ trait DescribeFpgaImagesRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The filters.    create-time - The creation time of the AFI.    fpga-image-id - The FPGA image identifier (AFI ID).    fpga-image-global-id - The global FPGA image identifier (AGFI ID).    name - The name of the AFI.    owner-id - The AWS account ID of the AFI owner.    product-code - The product code.    shell-version - The version of the AWS Shell that was used to create the bitstream.    state - The state of the AFI (pending | failed | available | unavailable).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    update-time - The time of the most recent update.  
+    * The filters.    create-time - The creation time of the AFI.    fpga-image-id - The FPGA image identifier (AFI ID).    fpga-image-global-id - The global FPGA image identifier (AGFI ID).    name - The name of the AFI.    owner-id - The Amazon Web Services account ID of the AFI owner.    product-code - The product code.    shell-version - The version of the Amazon Web Services Shell that was used to create the bitstream.    state - The state of the AFI (pending | failed | available | unavailable).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    update-time - The time of the most recent update.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
@@ -32,7 +32,7 @@ trait DescribeFpgaImagesRequest extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.ec2Mod.NextToken] = js.undefined
   
   /**
-    * Filters the AFI by owner. Specify an AWS account ID, self (owner is the sender of the request), or an AWS owner alias (valid values are amazon | aws-marketplace).
+    * Filters the AFI by owner. Specify an Amazon Web Services account ID, self (owner is the sender of the request), or an Amazon Web Services owner alias (valid values are amazon | aws-marketplace).
     */
   var Owners: js.UndefOr[OwnerStringList] = js.undefined
 }
@@ -53,13 +53,13 @@ object DescribeFpgaImagesRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setFpgaImageIds(value: FpgaImageIdList): Self = StObject.set(x, "FpgaImageIds", value.asInstanceOf[js.Any])
     
     inline def setFpgaImageIdsUndefined: Self = StObject.set(x, "FpgaImageIds", js.undefined)
     
-    inline def setFpgaImageIdsVarargs(value: FpgaImageId*): Self = StObject.set(x, "FpgaImageIds", js.Array(value :_*))
+    inline def setFpgaImageIdsVarargs(value: FpgaImageId*): Self = StObject.set(x, "FpgaImageIds", js.Array(value*))
     
     inline def setMaxResults(value: DescribeFpgaImagesMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -73,6 +73,6 @@ object DescribeFpgaImagesRequest {
     
     inline def setOwnersUndefined: Self = StObject.set(x, "Owners", js.undefined)
     
-    inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "Owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "Owners", js.Array(value*))
   }
 }

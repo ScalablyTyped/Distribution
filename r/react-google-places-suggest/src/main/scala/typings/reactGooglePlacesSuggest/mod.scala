@@ -1,8 +1,8 @@
 package typings.reactGooglePlacesSuggest
 
-import typings.googlemaps.google.maps.GeocoderResult
-import typings.googlemaps.google.maps.places.AutocompletePrediction
-import typings.googlemaps.google.maps.places.AutocompletionRequest
+import typings.googleMaps.google.maps.GeocoderResult
+import typings.googleMaps.google.maps.places.AutocompletePrediction
+import typings.googleMaps.google.maps.places.AutocompletionRequest
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
@@ -16,8 +16,8 @@ object mod {
   
   @JSImport("react-google-places-suggest", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Props, js.Object, js.Any]
+  open class default ()
+    extends Component[Props, js.Object, Any]
   
   object ReactGooglePlacesSuggest {
     
@@ -41,7 +41,7 @@ object mod {
             js.Function2[
               /* geocodedPrediction */ GeocodedPrediction, 
               /* originalPrediction */ Prediction, 
-              js.Any
+              Any
             ]
           ] = js.undefined
       
@@ -72,9 +72,7 @@ object mod {
         
         inline def setGoogleMaps(value: Typeofmaps): Self = StObject.set(x, "googleMaps", value.asInstanceOf[js.Any])
         
-        inline def setOnSelectSuggest(
-          value: (/* geocodedPrediction */ GeocodedPrediction, /* originalPrediction */ Prediction) => js.Any
-        ): Self = StObject.set(x, "onSelectSuggest", js.Any.fromFunction2(value))
+        inline def setOnSelectSuggest(value: (/* geocodedPrediction */ GeocodedPrediction, /* originalPrediction */ Prediction) => Any): Self = StObject.set(x, "onSelectSuggest", js.Any.fromFunction2(value))
         
         inline def setOnSelectSuggestUndefined: Self = StObject.set(x, "onSelectSuggest", js.undefined)
         
@@ -86,5 +84,5 @@ object mod {
       }
     }
   }
-  type ReactGooglePlacesSuggest = Component[Props, js.Object, js.Any]
+  type ReactGooglePlacesSuggest = Component[Props, js.Object, Any]
 }

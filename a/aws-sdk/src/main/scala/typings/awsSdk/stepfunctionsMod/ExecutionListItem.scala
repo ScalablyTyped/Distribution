@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExecutionListItem extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) that id entifies the execution.
+    * The Amazon Resource Name (ARN) that identifies the execution.
     */
   var executionArn: Arn
   
@@ -19,7 +19,7 @@ trait ExecutionListItem extends StObject {
   /**
     * The date the execution started.
     */
-  var startDate: Timestamp
+  var startDate: js.Date
   
   /**
     * The Amazon Resource Name (ARN) of the executed state machine.
@@ -34,11 +34,11 @@ trait ExecutionListItem extends StObject {
   /**
     * If the execution already ended, the date the execution stopped.
     */
-  var stopDate: js.UndefOr[Timestamp] = js.undefined
+  var stopDate: js.UndefOr[js.Date] = js.undefined
 }
 object ExecutionListItem {
   
-  inline def apply(executionArn: Arn, name: Name, startDate: Timestamp, stateMachineArn: Arn, status: ExecutionStatus): ExecutionListItem = {
+  inline def apply(executionArn: Arn, name: Name, startDate: js.Date, stateMachineArn: Arn, status: ExecutionStatus): ExecutionListItem = {
     val __obj = js.Dynamic.literal(executionArn = executionArn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], stateMachineArn = stateMachineArn.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionListItem]
   }
@@ -49,13 +49,13 @@ object ExecutionListItem {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     inline def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: ExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setStopDate(value: Timestamp): Self = StObject.set(x, "stopDate", value.asInstanceOf[js.Any])
+    inline def setStopDate(value: js.Date): Self = StObject.set(x, "stopDate", value.asInstanceOf[js.Any])
     
     inline def setStopDateUndefined: Self = StObject.set(x, "stopDate", js.undefined)
   }

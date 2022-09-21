@@ -10,10 +10,10 @@ A modern approach for Computer Vision on the web.
 | ------------------ | :-------------: |
 | Full name          | tracking |
 | Keywords           | tracking, trackingjs, webrtc |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 42613 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3542.6666666666665 |
+| # stars            | 9153.0 |
 
 ## Links
 - [Homepage](http://trackingjs.com)

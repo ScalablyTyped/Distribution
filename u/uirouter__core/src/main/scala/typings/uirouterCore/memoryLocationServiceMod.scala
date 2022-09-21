@@ -10,7 +10,7 @@ object memoryLocationServiceMod {
   
   @JSImport("@uirouter/core/lib/vanilla/memoryLocationService", "MemoryLocationService")
   @js.native
-  class MemoryLocationService protected () extends BaseLocationServices {
+  open class MemoryLocationService protected () extends BaseLocationServices {
     def this(router: UIRouter) = this()
     
     var _url: String = js.native

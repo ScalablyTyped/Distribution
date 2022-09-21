@@ -8,5 +8,5 @@ object commentIdRequiredExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/CommentIdRequiredException", "CommentIdRequiredException")
   @js.native
-  val CommentIdRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CommentIdRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

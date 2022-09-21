@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EncryptResponse extends StObject {
   
   /**
-    * The encrypted plaintext. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
+    * The encrypted plaintext. When you use the HTTP API or the Amazon Web Services CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
     */
   var CiphertextBlob: js.UndefOr[CiphertextType] = js.undefined
   
@@ -17,7 +17,7 @@ trait EncryptResponse extends StObject {
   var EncryptionAlgorithm: js.UndefOr[EncryptionAlgorithmSpec] = js.undefined
   
   /**
-    * The Amazon Resource Name (key ARN) of the CMK that was used to encrypt the plaintext.
+    * The Amazon Resource Name (key ARN) of the KMS key that was used to encrypt the plaintext.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.undefined
 }

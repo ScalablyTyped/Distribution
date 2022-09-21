@@ -16,7 +16,7 @@ object abortMultipartUploadCommandMod {
   
   @JSImport("@aws-sdk/client-s3-browser/commands/AbortMultipartUploadCommand", "AbortMultipartUploadCommand")
   @js.native
-  class AbortMultipartUploadCommand protected ()
+  open class AbortMultipartUploadCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -33,17 +33,17 @@ object abortMultipartUploadCommandMod {
     /* CompleteClass */
     override val middlewareStack: MiddlewareStack[AbortMultipartUploadInput, AbortMultipartUploadOutput] = js.native
     
-    val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ js.Any = js.native
+    val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ Any = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: S3ResolvedConfiguration
     ): Handler[AbortMultipartUploadInput, AbortMultipartUploadOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: S3ResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[AbortMultipartUploadInput, AbortMultipartUploadOutput] = js.native
   }
 }

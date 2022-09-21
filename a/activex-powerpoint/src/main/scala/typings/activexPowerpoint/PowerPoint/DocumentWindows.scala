@@ -17,7 +17,7 @@ trait DocumentWindows extends StObject {
   
   def Item(Index: Double): DocumentWindow = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.DocumentWindows_typekey")
   var PowerPointDotDocumentWindows_typekey: DocumentWindows = js.native

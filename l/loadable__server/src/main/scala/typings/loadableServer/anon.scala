@@ -1,5 +1,6 @@
 package typings.loadableServer
 
+import typings.loadableServer.mod.ChunkExtractorOptions
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +25,10 @@ object anon {
     }
   }
   
-  trait Entrypoints extends StObject {
+  /* Inlined {  statsFile :string} & {  entrypoints :string | std.Array<string> | undefined,   outputPath :string | undefined,   publicPath :string | undefined,   namespace :string | undefined,   inputFileSystem :object | undefined} */
+  trait statsFilestringentrypoint
+    extends StObject
+       with ChunkExtractorOptions {
     
     /**
       * Webpack entrypoints to load (default to `["main"]`)
@@ -50,21 +54,26 @@ object anon {
       * Optional public path to override stats.publicPath at runtime
       */
     var publicPath: js.UndefOr[String] = js.undefined
-  }
-  object Entrypoints {
     
-    inline def apply(): Entrypoints = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Entrypoints]
+    /**
+      * Stats file path generated using `@loadable/webpack-plugin`
+      */
+    var statsFile: String
+  }
+  object statsFilestringentrypoint {
+    
+    inline def apply(statsFile: String): statsFilestringentrypoint = {
+      val __obj = js.Dynamic.literal(statsFile = statsFile.asInstanceOf[js.Any])
+      __obj.asInstanceOf[statsFilestringentrypoint]
     }
     
-    extension [Self <: Entrypoints](x: Self) {
+    extension [Self <: statsFilestringentrypoint](x: Self) {
       
       inline def setEntrypoints(value: String | js.Array[String]): Self = StObject.set(x, "entrypoints", value.asInstanceOf[js.Any])
       
       inline def setEntrypointsUndefined: Self = StObject.set(x, "entrypoints", js.undefined)
       
-      inline def setEntrypointsVarargs(value: String*): Self = StObject.set(x, "entrypoints", js.Array(value :_*))
+      inline def setEntrypointsVarargs(value: String*): Self = StObject.set(x, "entrypoints", js.Array(value*))
       
       inline def setInputFileSystem(value: js.Object): Self = StObject.set(x, "inputFileSystem", value.asInstanceOf[js.Any])
       
@@ -81,46 +90,78 @@ object anon {
       inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
       inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
+      
+      inline def setStatsFile(value: String): Self = StObject.set(x, "statsFile", value.asInstanceOf[js.Any])
     }
   }
   
-  trait Stats extends StObject {
+  /* Inlined {  stats :object} & {  entrypoints :string | std.Array<string> | undefined,   outputPath :string | undefined,   publicPath :string | undefined,   namespace :string | undefined,   inputFileSystem :object | undefined} */
+  trait statsobjectentrypointsstr
+    extends StObject
+       with ChunkExtractorOptions {
+    
+    /**
+      * Webpack entrypoints to load (default to `["main"]`)
+      */
+    var entrypoints: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    /**
+      * File system used to read files (default to fs)
+      */
+    var inputFileSystem: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Optional namespace in case of multiple apps on same page
+      */
+    var namespace: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Optional output path (only for `requireEntrypoint`)
+      */
+    var outputPath: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Optional public path to override stats.publicPath at runtime
+      */
+    var publicPath: js.UndefOr[String] = js.undefined
     
     /**
       * Stats generated using `@loadable/webpack-plugin`.
       */
     var stats: js.Object
   }
-  object Stats {
+  object statsobjectentrypointsstr {
     
-    inline def apply(stats: js.Object): Stats = {
+    inline def apply(stats: js.Object): statsobjectentrypointsstr = {
       val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Stats]
+      __obj.asInstanceOf[statsobjectentrypointsstr]
     }
     
-    extension [Self <: Stats](x: Self) {
+    extension [Self <: statsobjectentrypointsstr](x: Self) {
+      
+      inline def setEntrypoints(value: String | js.Array[String]): Self = StObject.set(x, "entrypoints", value.asInstanceOf[js.Any])
+      
+      inline def setEntrypointsUndefined: Self = StObject.set(x, "entrypoints", js.undefined)
+      
+      inline def setEntrypointsVarargs(value: String*): Self = StObject.set(x, "entrypoints", js.Array(value*))
+      
+      inline def setInputFileSystem(value: js.Object): Self = StObject.set(x, "inputFileSystem", value.asInstanceOf[js.Any])
+      
+      inline def setInputFileSystemUndefined: Self = StObject.set(x, "inputFileSystem", js.undefined)
+      
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      
+      inline def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
+      
+      inline def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
+      
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      
+      inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
       inline def setStats(value: js.Object): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait StatsFile extends StObject {
-    
-    /**
-      * Stats file path generated using `@loadable/webpack-plugin`
-      */
-    var statsFile: String
-  }
-  object StatsFile {
-    
-    inline def apply(statsFile: String): StatsFile = {
-      val __obj = js.Dynamic.literal(statsFile = statsFile.asInstanceOf[js.Any])
-      __obj.asInstanceOf[StatsFile]
-    }
-    
-    extension [Self <: StatsFile](x: Self) {
-      
-      inline def setStatsFile(value: String): Self = StObject.set(x, "statsFile", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,7 +12,7 @@ object kernelspecValidateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def validateSpecModel(data: js.Any): ISpecModel = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSpecModel")(data.asInstanceOf[js.Any]).asInstanceOf[ISpecModel]
+  inline def validateSpecModel(data: Any): ISpecModel = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSpecModel")(data.asInstanceOf[js.Any]).asInstanceOf[ISpecModel]
   
-  inline def validateSpecModels(data: js.Any): ISpecModels = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSpecModels")(data.asInstanceOf[js.Any]).asInstanceOf[ISpecModels]
+  inline def validateSpecModels(data: Any): ISpecModels = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSpecModels")(data.asInstanceOf[js.Any]).asInstanceOf[ISpecModels]
 }

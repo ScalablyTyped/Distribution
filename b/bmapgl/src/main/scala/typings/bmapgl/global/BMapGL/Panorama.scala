@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Panorama")
 @js.native
-class Panorama protected ()
+open class Panorama protected ()
   extends StObject
      with typings.bmapgl.BMapGL.Panorama {
   def this(container: String) = this()

@@ -16,6 +16,12 @@ trait UploadType extends StObject {
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
+  /**
+    * The optional assignment ID. Assignment name will be generated automatically if this field is empty. This field must only contain lower case alphanumeric characters or dashes.
+    * Max length is 64 characters.
+    */
+  var assignmentId: js.UndefOr[String] = js.undefined
+  
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
@@ -28,7 +34,7 @@ trait UploadType extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Project, location. E.g., `projects/myproject/locations/US` */
+  /** Required. The parent resource name of the assignment E.g. `projects/myproject/locations/US/reservations/team1-prod` */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -36,9 +42,6 @@ trait UploadType extends StObject {
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  
-  /** The reservation ID. This field must only contain lower case alphanumeric characters or dash. Max length is 64 characters. */
-  var reservationId: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -67,6 +70,10 @@ object UploadType {
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
+    inline def setAssignmentId(value: String): Self = StObject.set(x, "assignmentId", value.asInstanceOf[js.Any])
+    
+    inline def setAssignmentIdUndefined: Self = StObject.set(x, "assignmentId", js.undefined)
+    
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
@@ -92,10 +99,6 @@ object UploadType {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setReservationId(value: String): Self = StObject.set(x, "reservationId", value.asInstanceOf[js.Any])
-    
-    inline def setReservationIdUndefined: Self = StObject.set(x, "reservationId", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

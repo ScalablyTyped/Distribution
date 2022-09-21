@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("FloatingObjectTextWrappingSettings")
 @js.native
-class FloatingObjectTextWrappingSettings ()
+open class FloatingObjectTextWrappingSettings ()
   extends StObject
      with typings.devexpressWeb.FloatingObjectTextWrappingSettings {
   

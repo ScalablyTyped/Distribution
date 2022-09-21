@@ -6,14 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "BindingPipe")
 @js.native
-class BindingPipe protected ()
-  extends typings.angularCompiler.compilerMod.BindingPipe {
+open class BindingPipe protected () extends ASTWithName {
   def this(
-    span: typings.angularCompiler.astMod.ParseSpan,
-    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
-    exp: typings.angularCompiler.astMod.AST,
+    span: ParseSpan,
+    sourceSpan: AbsoluteSourceSpan,
+    exp: AST,
     name: String,
-    args: js.Array[js.Any],
-    nameSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan
+    args: js.Array[Any],
+    nameSpan: AbsoluteSourceSpan
   ) = this()
+  
+  var args: js.Array[Any] = js.native
+  
+  var exp: AST = js.native
+  
+  var name: String = js.native
 }

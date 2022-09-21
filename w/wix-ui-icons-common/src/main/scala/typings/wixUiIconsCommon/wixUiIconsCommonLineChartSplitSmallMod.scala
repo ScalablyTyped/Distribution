@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.lineChartSplitSmallMod.LineChartSplitSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonLineChartSplitSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/LineChartSplitSmall", JSImport.Default)
   @js.native
-  val default: SFC[LineChartSplitSmallProps] = js.native
+  val default: FC[LineChartSplitSmallProps] = js.native
   
-  type _To = SFC[LineChartSplitSmallProps]
+  type _To = FC[LineChartSplitSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonLineChartSplitSmallMod.foo` */
-  override def _to: SFC[LineChartSplitSmallProps] = default
+  override def _to: FC[LineChartSplitSmallProps] = default
 }

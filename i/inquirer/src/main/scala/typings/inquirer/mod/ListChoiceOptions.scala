@@ -4,15 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides options for a choice of the `ListPrompt`.
-  *
-  * @template T
-  * The type of the answers.
-  */
 trait ListChoiceOptions[T /* <: Answers */]
   extends StObject
-     with ChoiceOptions[T] {
+     with ChoiceOptions {
   
   /**
     * A value indicating whether the choice is disabled.

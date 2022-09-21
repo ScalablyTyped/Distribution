@@ -1,6 +1,5 @@
 package typings.aframe.mod.global.AFRAME.THREE
 
-import typings.three.meshPhysicalMaterialMod.MeshPhysicalMaterialParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.MeshPhysicalMaterial")
 @js.native
-class MeshPhysicalMaterial protected ()
-  extends typings.three.mod.MeshPhysicalMaterial {
-  def this(parameters: MeshPhysicalMaterialParameters) = this()
-}
+open class MeshPhysicalMaterial ()
+  extends typings.three.mod.MeshPhysicalMaterial

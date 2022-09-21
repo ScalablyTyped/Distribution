@@ -1,115 +1,172 @@
 package typings.rxjs
 
 import typings.rxjs.internalObservableMod.Observable
+import typings.rxjs.internalTypesMod.CompleteNotification
+import typings.rxjs.internalTypesMod.ErrorNotification
+import typings.rxjs.internalTypesMod.NextNotification
+import typings.rxjs.internalTypesMod.ObservableNotification
+import typings.rxjs.internalTypesMod.PartialObserver
 import typings.rxjs.rxjsStrings.C
 import typings.rxjs.rxjsStrings.E
 import typings.rxjs.rxjsStrings.N
-import typings.rxjs.typesMod.PartialObserver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationMod {
   
-  @JSImport("rxjs/internal/Notification", "Notification")
+  @JSImport("rxjs/dist/types/internal/Notification", JSImport.Namespace)
   @js.native
-  class Notification[T] protected () extends StObject {
+  val ^ : js.Any = js.native
+  
+  @JSImport("rxjs/dist/types/internal/Notification", "Notification")
+  @js.native
+  open class Notification[T] protected () extends StObject {
+    /**
+      * Creates a "completion" notification object.
+      * @param kind Always `'C'`
+      * @deprecated Internal implementation detail. Use {@link Notification#createComplete createComplete} instead.
+      */
     def this(kind: C) = this()
-    def this(kind: E) = this()
+    /**
+      * Creates a "Next" notification object.
+      * @param kind Always `'N'`
+      * @param value The value to notify with if observed.
+      * @deprecated Internal implementation detail. Use {@link Notification#createNext createNext} instead.
+      */
     def this(kind: N) = this()
-    def this(kind: C, value: T) = this()
-    def this(kind: E, value: T) = this()
     def this(kind: N, value: T) = this()
-    def this(kind: C, value: T, error: js.Any) = this()
-    def this(kind: C, value: Unit, error: js.Any) = this()
-    def this(kind: E, value: T, error: js.Any) = this()
-    def this(kind: E, value: Unit, error: js.Any) = this()
-    def this(kind: N, value: T, error: js.Any) = this()
-    def this(kind: N, value: Unit, error: js.Any) = this()
-    
-    def accept(nextOrObserver: js.Function1[/* value */ T, Unit]): js.Any = js.native
-    def accept(nextOrObserver: js.Function1[/* value */ T, Unit], error: js.Function1[/* err */ js.Any, Unit]): js.Any = js.native
-    def accept(
-      nextOrObserver: js.Function1[/* value */ T, Unit],
-      error: js.Function1[/* err */ js.Any, Unit],
-      complete: js.Function0[Unit]
-    ): js.Any = js.native
-    def accept(nextOrObserver: js.Function1[/* value */ T, Unit], error: Unit, complete: js.Function0[Unit]): js.Any = js.native
     /**
-      * Takes an Observer or its individual callback functions, and calls `observe`
-      * or `do` methods accordingly.
-      * @param {Observer|function(value: T): void} nextOrObserver An Observer or
-      * the `next` callback.
-      * @param {function(err: any): void} [error] An Observer `error` callback.
-      * @param {function(): void} [complete] An Observer `complete` callback.
-      * @return {any}
+      * Creates an "Error" notification object.
+      * @param kind Always `'E'`
+      * @param value Always `undefined`
+      * @param error The error to notify with if observed.
+      * @deprecated Internal implementation detail. Use {@link Notification#createError createError} instead.
       */
-    def accept(nextOrObserver: PartialObserver[T]): js.Any = js.native
-    def accept(nextOrObserver: PartialObserver[T], error: js.Function1[/* err */ js.Any, Unit]): js.Any = js.native
-    def accept(
-      nextOrObserver: PartialObserver[T],
-      error: js.Function1[/* err */ js.Any, Unit],
-      complete: js.Function0[Unit]
-    ): js.Any = js.native
-    def accept(nextOrObserver: PartialObserver[T], error: Unit, complete: js.Function0[Unit]): js.Any = js.native
+    def this(kind: E, value: Unit, error: Any) = this()
     
     /**
-      * Given some {@link Observer} callbacks, deliver the value represented by the
-      * current Notification to the correctly corresponding callback.
-      * @param {function(value: T): void} next An Observer `next` callback.
-      * @param {function(err: any): void} [error] An Observer `error` callback.
-      * @param {function(): void} [complete] An Observer `complete` callback.
-      * @return {any}
+      * Executes the next handler if the Notification is of `kind` `"N"`. Otherwise
+      * this will not error, and it will be a noop.
+      * @param next The next handler
+      * @deprecated Replaced with {@link Notification#observe observe}. Will be removed in v8.
       */
-    def `do`(next: js.Function1[/* value */ T, Unit]): js.Any = js.native
-    def `do`(next: js.Function1[/* value */ T, Unit], error: js.Function1[/* err */ js.Any, Unit]): js.Any = js.native
+    def accept(next: js.Function1[/* value */ T, Unit]): Unit = js.native
+    /**
+      * Executes a notification on the appropriate handler from a list provided.
+      * If a handler is missing for the kind of notification, nothing is called
+      * and no error is thrown, it will be a noop.
+      * @param next A next handler
+      * @param error An error handler
+      * @deprecated Replaced with {@link Notification#observe observe}. Will be removed in v8.
+      */
+    def accept(next: js.Function1[/* value */ T, Unit], error: js.Function1[/* err */ Any, Unit]): Unit = js.native
+    /**
+      * Executes a notification on the appropriate handler from a list provided.
+      * If a handler is missing for the kind of notification, nothing is called
+      * and no error is thrown, it will be a noop.
+      * @param next A next handler
+      * @param error An error handler
+      * @param complete A complete handler
+      * @deprecated Replaced with {@link Notification#observe observe}. Will be removed in v8.
+      */
+    def accept(
+      next: js.Function1[/* value */ T, Unit],
+      error: js.Function1[/* err */ Any, Unit],
+      complete: js.Function0[Unit]
+    ): Unit = js.native
+    /**
+      * Executes the appropriate handler on a passed `observer` given the `kind` of notification.
+      * If the handler is missing it will do nothing. Even if the notification is an error, if
+      * there is no error handler on the observer, an error will not be thrown, it will noop.
+      * @param observer The observer to notify.
+      * @deprecated Replaced with {@link Notification#observe observe}. Will be removed in v8.
+      */
+    def accept(observer: PartialObserver[T]): Unit = js.native
+    
+    /**
+      * Executes the next handler if the Notification is of `kind` `"N"`. Otherwise
+      * this will not error, and it will be a noop.
+      * @param next The next handler
+      * @deprecated Replaced with {@link Notification#observe observe}. Will be removed in v8.
+      */
+    def `do`(next: js.Function1[/* value */ T, Unit]): Unit = js.native
+    /**
+      * Executes a notification on the appropriate handler from a list provided.
+      * If a handler is missing for the kind of notification, nothing is called
+      * and no error is thrown, it will be a noop.
+      * @param next A next handler
+      * @param error An error handler
+      * @deprecated Replaced with {@link Notification#observe observe}. Will be removed in v8.
+      */
+    def `do`(next: js.Function1[/* value */ T, Unit], error: js.Function1[/* err */ Any, Unit]): Unit = js.native
+    /**
+      * Executes a notification on the appropriate handler from a list provided.
+      * If a handler is missing for the kind of notification, nothing is called
+      * and no error is thrown, it will be a noop.
+      * @param next A next handler
+      * @param error An error handler
+      * @param complete A complete handler
+      * @deprecated Replaced with {@link Notification#observe observe}. Will be removed in v8.
+      */
     def `do`(
       next: js.Function1[/* value */ T, Unit],
-      error: js.Function1[/* err */ js.Any, Unit],
+      error: js.Function1[/* err */ Any, Unit],
       complete: js.Function0[Unit]
-    ): js.Any = js.native
-    def `do`(next: js.Function1[/* value */ T, Unit], error: Unit, complete: js.Function0[Unit]): js.Any = js.native
+    ): Unit = js.native
     
-    var error: js.UndefOr[js.Any] = js.native
-    
-    var hasValue: Boolean = js.native
-    
-    var kind: N | E | C = js.native
+    val error: js.UndefOr[Any] = js.native
     
     /**
-      * Delivers to the given `observer` the value wrapped by this Notification.
-      * @param {Observer} observer
-      * @return
+      * A value signifying that the notification will "next" if observed. In truth,
+      * This is really synonymous with just checking `kind === "N"`.
+      * @deprecated Will be removed in v8. Instead, just check to see if the value of `kind` is `"N"`.
       */
-    def observe(observer: PartialObserver[T]): js.Any = js.native
+    val hasValue: Boolean = js.native
+    
+    val kind: N | E | C = js.native
+    
+    /**
+      * Executes the appropriate handler on a passed `observer` given the `kind` of notification.
+      * If the handler is missing it will do nothing. Even if the notification is an error, if
+      * there is no error handler on the observer, an error will not be thrown, it will noop.
+      * @param observer The observer to notify.
+      */
+    def observe(observer: PartialObserver[T]): Unit = js.native
     
     /**
       * Returns a simple Observable that just delivers the notification represented
       * by this Notification instance.
-      * @return {any}
+      *
+      * @deprecated Will be removed in v8. To convert a `Notification` to an {@link Observable},
+      * use {@link of} and {@link dematerialize}: `of(notification).pipe(dematerialize())`.
       */
     def toObservable(): Observable[T] = js.native
     
-    var value: js.UndefOr[T] = js.native
+    val value: js.UndefOr[T] = js.native
   }
   /* static members */
   object Notification {
     
-    @JSImport("rxjs/internal/Notification", "Notification")
+    @JSImport("rxjs/dist/types/internal/Notification", "Notification")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("rxjs/internal/Notification", "Notification.completeNotification")
+    @JSImport("rxjs/dist/types/internal/Notification", "Notification.completeNotification")
     @js.native
-    def completeNotification: js.Any = js.native
-    inline def completeNotification_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completeNotification")(x.asInstanceOf[js.Any])
+    def completeNotification: Any = js.native
+    inline def completeNotification_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completeNotification")(x.asInstanceOf[js.Any])
     
     /**
       * A shortcut to create a Notification instance of the type `complete`.
       * @return {Notification<any>} The valueless "complete" Notification.
       * @nocollapse
+      * @deprecated It is NOT recommended to create instances of `Notification` directly.
+      * Rather, try to create POJOs matching the signature outlined in {@link ObservableNotification}.
+      * For example: `{ kind: 'N', value: 1 }`, `{ kind: 'E', error: new Error('bad') }`, or `{ kind: 'C' }`.
+      * Will be removed in v8.
       */
-    inline def createComplete(): Notification[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createComplete")().asInstanceOf[Notification[js.Any]]
+    inline def createComplete(): Notification[scala.Nothing] & CompleteNotification = ^.asInstanceOf[js.Dynamic].applyDynamic("createComplete")().asInstanceOf[Notification[scala.Nothing] & CompleteNotification]
     
     /**
       * A shortcut to create a Notification instance of the type `error` from a
@@ -118,9 +175,13 @@ object notificationMod {
       * @return {Notification<T>} The "error" Notification representing the
       * argument.
       * @nocollapse
+      * @deprecated It is NOT recommended to create instances of `Notification` directly.
+      * Rather, try to create POJOs matching the signature outlined in {@link ObservableNotification}.
+      * For example: `{ kind: 'N', value: 1 }`, `{ kind: 'E', error: new Error('bad') }`, or `{ kind: 'C' }`.
+      * Will be removed in v8.
       */
-    inline def createError[T](): Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createError")().asInstanceOf[Notification[T]]
-    inline def createError[T](err: js.Any): Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createError")(err.asInstanceOf[js.Any]).asInstanceOf[Notification[T]]
+    inline def createError(): Notification[scala.Nothing] & ErrorNotification = ^.asInstanceOf[js.Dynamic].applyDynamic("createError")().asInstanceOf[Notification[scala.Nothing] & ErrorNotification]
+    inline def createError(err: Any): Notification[scala.Nothing] & ErrorNotification = ^.asInstanceOf[js.Dynamic].applyDynamic("createError")(err.asInstanceOf[js.Any]).asInstanceOf[Notification[scala.Nothing] & ErrorNotification]
     
     /**
       * A shortcut to create a Notification instance of the type `next` from a
@@ -129,18 +190,17 @@ object notificationMod {
       * @return {Notification<T>} The "next" Notification representing the
       * argument.
       * @nocollapse
+      * @deprecated It is NOT recommended to create instances of `Notification` directly.
+      * Rather, try to create POJOs matching the signature outlined in {@link ObservableNotification}.
+      * For example: `{ kind: 'N', value: 1 }`, `{ kind: 'E', error: new Error('bad') }`, or `{ kind: 'C' }`.
+      * Will be removed in v8.
       */
-    inline def createNext[T](value: T): Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNext")(value.asInstanceOf[js.Any]).asInstanceOf[Notification[T]]
-    
-    @JSImport("rxjs/internal/Notification", "Notification.undefinedValueNotification")
-    @js.native
-    def undefinedValueNotification: js.Any = js.native
-    inline def undefinedValueNotification_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefinedValueNotification")(x.asInstanceOf[js.Any])
+    inline def createNext[T](value: T): Notification[T] & NextNotification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNext")(value.asInstanceOf[js.Any]).asInstanceOf[Notification[T] & NextNotification[T]]
   }
   
   @js.native
   sealed trait NotificationKind extends StObject
-  @JSImport("rxjs/internal/Notification", "NotificationKind")
+  @JSImport("rxjs/dist/types/internal/Notification", "NotificationKind")
   @js.native
   object NotificationKind extends StObject {
     
@@ -165,4 +225,6 @@ object notificationMod {
          with NotificationKind
     /* "N" */ val NEXT: typings.rxjs.notificationMod.NotificationKind.NEXT & String = js.native
   }
+  
+  inline def observeNotification[T](notification: ObservableNotification[T], observer: PartialObserver[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("observeNotification")(notification.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

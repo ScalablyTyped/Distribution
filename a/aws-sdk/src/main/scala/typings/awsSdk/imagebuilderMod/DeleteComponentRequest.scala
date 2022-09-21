@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteComponentRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the component build version to delete. 
+    * The Amazon Resource Name (ARN) of the component build version to delete.
     */
   var componentBuildVersionArn: ComponentBuildVersionArn
 }

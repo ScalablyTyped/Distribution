@@ -12,13 +12,13 @@ trait IWebGeolocation extends StObject {
   
   def clearWatch(watchId: Double): Unit = js.native
   
-  def getCurrentPosition(successCallback: js.Any): Unit = js.native
-  def getCurrentPosition(successCallback: js.Any, errorCallback: js.Any): Unit = js.native
-  def getCurrentPosition(successCallback: js.Any, errorCallback: js.Any, options: js.Any): Unit = js.native
-  def getCurrentPosition(successCallback: js.Any, errorCallback: Unit, options: js.Any): Unit = js.native
+  def getCurrentPosition(successCallback: Any): Unit = js.native
+  def getCurrentPosition(successCallback: Any, errorCallback: Any): Unit = js.native
+  def getCurrentPosition(successCallback: Any, errorCallback: Any, options: Any): Unit = js.native
+  def getCurrentPosition(successCallback: Any, errorCallback: Unit, options: Any): Unit = js.native
   
-  def watchPosition(successCallback: js.Any): Double = js.native
-  def watchPosition(successCallback: js.Any, errorCallback: js.Any): Double = js.native
-  def watchPosition(successCallback: js.Any, errorCallback: js.Any, options: js.Any): Double = js.native
-  def watchPosition(successCallback: js.Any, errorCallback: Unit, options: js.Any): Double = js.native
+  def watchPosition(successCallback: Any): Double = js.native
+  def watchPosition(successCallback: Any, errorCallback: Any): Double = js.native
+  def watchPosition(successCallback: Any, errorCallback: Any, options: Any): Double = js.native
+  def watchPosition(successCallback: Any, errorCallback: Unit, options: Any): Double = js.native
 }

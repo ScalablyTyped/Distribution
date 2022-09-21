@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ClientAction")
 @js.native
-class ClientAction ()
+open class ClientAction ()
   extends StObject
      with typings.sharepoint.SP.ClientAction {
   

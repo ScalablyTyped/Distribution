@@ -2,150 +2,177 @@ package typings.pgPacketStream
 
 import typings.pgPacketStream.messagesMod.MessageName
 import typings.pgPacketStream.messagesMod.Mode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pgPacketStreamStrings {
-  @js.native
-  sealed trait authenticationCleartextPassword extends MessageName
   
   @js.native
-  sealed trait authenticationMD5Password extends MessageName
+  sealed trait authenticationCleartextPassword
+    extends StObject
+       with MessageName
+  inline def authenticationCleartextPassword: authenticationCleartextPassword = "authenticationCleartextPassword".asInstanceOf[authenticationCleartextPassword]
   
   @js.native
-  sealed trait authenticationOk extends MessageName
+  sealed trait authenticationMD5Password
+    extends StObject
+       with MessageName
+  inline def authenticationMD5Password: authenticationMD5Password = "authenticationMD5Password".asInstanceOf[authenticationMD5Password]
   
   @js.native
-  sealed trait authenticationSASL extends MessageName
+  sealed trait authenticationOk
+    extends StObject
+       with MessageName
+  inline def authenticationOk: authenticationOk = "authenticationOk".asInstanceOf[authenticationOk]
   
   @js.native
-  sealed trait authenticationSASLContinue extends MessageName
+  sealed trait authenticationSASL
+    extends StObject
+       with MessageName
+  inline def authenticationSASL: authenticationSASL = "authenticationSASL".asInstanceOf[authenticationSASL]
   
   @js.native
-  sealed trait authenticationSASLFinal extends MessageName
+  sealed trait authenticationSASLContinue
+    extends StObject
+       with MessageName
+  inline def authenticationSASLContinue: authenticationSASLContinue = "authenticationSASLContinue".asInstanceOf[authenticationSASLContinue]
   
   @js.native
-  sealed trait backendKeyData extends MessageName
+  sealed trait authenticationSASLFinal
+    extends StObject
+       with MessageName
+  inline def authenticationSASLFinal: authenticationSASLFinal = "authenticationSASLFinal".asInstanceOf[authenticationSASLFinal]
   
   @js.native
-  sealed trait binary extends Mode
+  sealed trait backendKeyData
+    extends StObject
+       with MessageName
+  inline def backendKeyData: backendKeyData = "backendKeyData".asInstanceOf[backendKeyData]
   
   @js.native
-  sealed trait bindComplete extends MessageName
+  sealed trait binary
+    extends StObject
+       with Mode
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
-  sealed trait closeComplete extends MessageName
+  sealed trait bindComplete
+    extends StObject
+       with MessageName
+  inline def bindComplete: bindComplete = "bindComplete".asInstanceOf[bindComplete]
   
   @js.native
-  sealed trait commandComplete extends MessageName
+  sealed trait closeComplete
+    extends StObject
+       with MessageName
+  inline def closeComplete: closeComplete = "closeComplete".asInstanceOf[closeComplete]
   
   @js.native
-  sealed trait copyData extends MessageName
+  sealed trait commandComplete
+    extends StObject
+       with MessageName
+  inline def commandComplete: commandComplete = "commandComplete".asInstanceOf[commandComplete]
   
   @js.native
-  sealed trait copyDone extends MessageName
+  sealed trait copyData
+    extends StObject
+       with MessageName
+  inline def copyData: copyData = "copyData".asInstanceOf[copyData]
   
   @js.native
-  sealed trait copyInResponse extends MessageName
+  sealed trait copyDone
+    extends StObject
+       with MessageName
+  inline def copyDone: copyDone = "copyDone".asInstanceOf[copyDone]
   
   @js.native
-  sealed trait copyOutResponse extends MessageName
+  sealed trait copyInResponse
+    extends StObject
+       with MessageName
+  inline def copyInResponse: copyInResponse = "copyInResponse".asInstanceOf[copyInResponse]
   
   @js.native
-  sealed trait dataRow extends MessageName
+  sealed trait copyOutResponse
+    extends StObject
+       with MessageName
+  inline def copyOutResponse: copyOutResponse = "copyOutResponse".asInstanceOf[copyOutResponse]
   
   @js.native
-  sealed trait emptyQuery extends MessageName
+  sealed trait dataRow
+    extends StObject
+       with MessageName
+  inline def dataRow: dataRow = "dataRow".asInstanceOf[dataRow]
   
   @js.native
-  sealed trait error extends MessageName
+  sealed trait emptyQuery
+    extends StObject
+       with MessageName
+  inline def emptyQuery: emptyQuery = "emptyQuery".asInstanceOf[emptyQuery]
   
   @js.native
-  sealed trait noData extends MessageName
+  sealed trait error
+    extends StObject
+       with MessageName
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait notice extends MessageName
+  sealed trait noData
+    extends StObject
+       with MessageName
+  inline def noData: noData = "noData".asInstanceOf[noData]
   
   @js.native
-  sealed trait notification extends MessageName
+  sealed trait notice
+    extends StObject
+       with MessageName
+  inline def notice: notice = "notice".asInstanceOf[notice]
   
   @js.native
-  sealed trait parameterStatus extends MessageName
+  sealed trait notification
+    extends StObject
+       with MessageName
+  inline def notification: notification = "notification".asInstanceOf[notification]
   
   @js.native
-  sealed trait parseComplete extends MessageName
+  sealed trait parameterStatus
+    extends StObject
+       with MessageName
+  inline def parameterStatus: parameterStatus = "parameterStatus".asInstanceOf[parameterStatus]
   
   @js.native
-  sealed trait portalSuspended extends MessageName
+  sealed trait parseComplete
+    extends StObject
+       with MessageName
+  inline def parseComplete: parseComplete = "parseComplete".asInstanceOf[parseComplete]
   
   @js.native
-  sealed trait readyForQuery extends MessageName
+  sealed trait portalSuspended
+    extends StObject
+       with MessageName
+  inline def portalSuspended: portalSuspended = "portalSuspended".asInstanceOf[portalSuspended]
   
   @js.native
-  sealed trait replicationStart extends MessageName
+  sealed trait readyForQuery
+    extends StObject
+       with MessageName
+  inline def readyForQuery: readyForQuery = "readyForQuery".asInstanceOf[readyForQuery]
   
   @js.native
-  sealed trait rowDescription extends MessageName
+  sealed trait replicationStart
+    extends StObject
+       with MessageName
+  inline def replicationStart: replicationStart = "replicationStart".asInstanceOf[replicationStart]
   
   @js.native
-  sealed trait text extends Mode
+  sealed trait rowDescription
+    extends StObject
+       with MessageName
+  inline def rowDescription: rowDescription = "rowDescription".asInstanceOf[rowDescription]
   
-  @scala.inline
-  def authenticationCleartextPassword: authenticationCleartextPassword = "authenticationCleartextPassword".asInstanceOf[authenticationCleartextPassword]
-  @scala.inline
-  def authenticationMD5Password: authenticationMD5Password = "authenticationMD5Password".asInstanceOf[authenticationMD5Password]
-  @scala.inline
-  def authenticationOk: authenticationOk = "authenticationOk".asInstanceOf[authenticationOk]
-  @scala.inline
-  def authenticationSASL: authenticationSASL = "authenticationSASL".asInstanceOf[authenticationSASL]
-  @scala.inline
-  def authenticationSASLContinue: authenticationSASLContinue = "authenticationSASLContinue".asInstanceOf[authenticationSASLContinue]
-  @scala.inline
-  def authenticationSASLFinal: authenticationSASLFinal = "authenticationSASLFinal".asInstanceOf[authenticationSASLFinal]
-  @scala.inline
-  def backendKeyData: backendKeyData = "backendKeyData".asInstanceOf[backendKeyData]
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
-  @scala.inline
-  def bindComplete: bindComplete = "bindComplete".asInstanceOf[bindComplete]
-  @scala.inline
-  def closeComplete: closeComplete = "closeComplete".asInstanceOf[closeComplete]
-  @scala.inline
-  def commandComplete: commandComplete = "commandComplete".asInstanceOf[commandComplete]
-  @scala.inline
-  def copyData: copyData = "copyData".asInstanceOf[copyData]
-  @scala.inline
-  def copyDone: copyDone = "copyDone".asInstanceOf[copyDone]
-  @scala.inline
-  def copyInResponse: copyInResponse = "copyInResponse".asInstanceOf[copyInResponse]
-  @scala.inline
-  def copyOutResponse: copyOutResponse = "copyOutResponse".asInstanceOf[copyOutResponse]
-  @scala.inline
-  def dataRow: dataRow = "dataRow".asInstanceOf[dataRow]
-  @scala.inline
-  def emptyQuery: emptyQuery = "emptyQuery".asInstanceOf[emptyQuery]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def noData: noData = "noData".asInstanceOf[noData]
-  @scala.inline
-  def notice: notice = "notice".asInstanceOf[notice]
-  @scala.inline
-  def notification: notification = "notification".asInstanceOf[notification]
-  @scala.inline
-  def parameterStatus: parameterStatus = "parameterStatus".asInstanceOf[parameterStatus]
-  @scala.inline
-  def parseComplete: parseComplete = "parseComplete".asInstanceOf[parseComplete]
-  @scala.inline
-  def portalSuspended: portalSuspended = "portalSuspended".asInstanceOf[portalSuspended]
-  @scala.inline
-  def readyForQuery: readyForQuery = "readyForQuery".asInstanceOf[readyForQuery]
-  @scala.inline
-  def replicationStart: replicationStart = "replicationStart".asInstanceOf[replicationStart]
-  @scala.inline
-  def rowDescription: rowDescription = "rowDescription".asInstanceOf[rowDescription]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  @js.native
+  sealed trait text
+    extends StObject
+       with Mode
+  inline def text: text = "text".asInstanceOf[text]
 }
-

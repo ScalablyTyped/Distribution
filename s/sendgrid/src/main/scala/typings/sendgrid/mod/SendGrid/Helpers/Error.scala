@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Error {
   
-  type SendGridError = typings.std.Error
+  type SendGridError = js.Error
 }

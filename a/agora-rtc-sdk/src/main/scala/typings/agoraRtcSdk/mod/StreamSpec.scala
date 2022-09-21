@@ -93,9 +93,23 @@ trait StreamSpec extends StObject {
     * - `true`: (Default) Mirror the local video.
     * - `false`: Do not mirror the local video.
     *
-    *  Agora recommends enabling this function when using the front camera, and disabling it when using the rear camera.
+    * Agora recommends enabling this function when using the front camera, and disabling it when using the rear camera.
     */
   var mirror: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * **Since**
+    * <br>&emsp;&emsp;&emsp;*3.2.0*
+    *
+    * Sets the video transmission optimization strategy:
+    * - `"motion"`: Prioritizes video smoothness. In most cases, the SDK does not reduce the frame rate, but may reduce the sending resolution.
+    * - `"detail"`: Prioritizes clarity. In most cases, the SDK does not reduce the sending resolution, but may reduce the frame rate.
+    *
+    * If you leave this property empty, the SDK uses the default transmission optimization strategy:
+    * - For a screen-sharing video stream (setting the `screen` property as `true` when calling {@link createStream}, the default transmission optimization strategy is to prioritizes clarity.
+    * - For the other types of video streams, the SDK may reduce the frame rate or the sending resolution in poor network conditions.
+    */
+  var optimizationMode: js.UndefOr[String] = js.undefined
   
   /**
     * Marks whether this stream contains a screen-sharing track. See [Share the Screen](../../../screensharing_web?platform=Web) for details.
@@ -115,7 +129,7 @@ trait StreamSpec extends StObject {
     *
     * **Note**
     *
-    * - This function supports only Chrome 73 or later on Windows.
+    * - This function supports only Chrome 74 or later on Windows.
     * - For the audio sharing to take effect, the user must check **Share audio** in the pop-up window when sharing the screen.
     */
   var screenAudio: js.UndefOr[Boolean] = js.undefined
@@ -183,6 +197,10 @@ object StreamSpec {
     inline def setMirror(value: Boolean): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
     
     inline def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
+    
+    inline def setOptimizationMode(value: String): Self = StObject.set(x, "optimizationMode", value.asInstanceOf[js.Any])
+    
+    inline def setOptimizationModeUndefined: Self = StObject.set(x, "optimizationMode", js.undefined)
     
     inline def setScreen(value: Boolean): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     

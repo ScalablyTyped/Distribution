@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Validation based on regular expressions.
-  */
 trait SchemaRegexValidation extends StObject {
   
   /**
-    * Required. RE2 regular expressions used to validate the parameter&#39;s
-    * value. The value must match the regex in its entirety (substring matches
-    * are not sufficient).
+    * Required. RE2 regular expressions used to validate the parameter's value. The value must match the regex in its entirety (substring matches are not sufficient).
     */
-  var regexes: js.UndefOr[js.Array[String]] = js.undefined
+  var regexes: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaRegexValidation {
   
@@ -27,8 +22,10 @@ object SchemaRegexValidation {
     
     inline def setRegexes(value: js.Array[String]): Self = StObject.set(x, "regexes", value.asInstanceOf[js.Any])
     
+    inline def setRegexesNull: Self = StObject.set(x, "regexes", null)
+    
     inline def setRegexesUndefined: Self = StObject.set(x, "regexes", js.undefined)
     
-    inline def setRegexesVarargs(value: String*): Self = StObject.set(x, "regexes", js.Array(value :_*))
+    inline def setRegexesVarargs(value: String*): Self = StObject.set(x, "regexes", js.Array(value*))
   }
 }

@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "AsyncLoop")
 @js.native
-class AsyncLoop protected ()
+open class AsyncLoop protected ()
   extends typings.babylonjs.legacyMod.AsyncLoop {
   /**
     * Constructor.
     * @param iterations the number of iterations.
     * @param func the function to run each iteration
-    * @param successCallback the callback that will be called upon succesful execution
+    * @param successCallback the callback that will be called upon successful execution
     * @param offset starting offset.
     */
   def this(
@@ -44,7 +44,7 @@ object AsyncLoop {
     * Create and run an async loop.
     * @param iterations the number of iterations.
     * @param fn the function to run each iteration
-    * @param successCallback the callback that will be called upon succesful execution
+    * @param successCallback the callback that will be called upon successful execution
     * @param offset starting offset.
     * @returns the created async loop object
     */

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "package-name-conflict" : "1.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "package-name-conflict" : "1.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

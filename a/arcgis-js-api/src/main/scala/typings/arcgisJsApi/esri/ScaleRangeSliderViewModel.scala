@@ -77,6 +77,8 @@ trait ScaleRangeSliderViewModel
   /**
     * The current state of the widget.
     *
+    * @default disabled
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider-ScaleRangeSliderViewModel.html#state)
     */
   val state: disabled | ready = js.native

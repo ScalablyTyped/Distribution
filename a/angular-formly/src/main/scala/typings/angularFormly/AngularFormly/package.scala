@@ -1,5 +1,6 @@
 package typings.angularFormly.AngularFormly
 
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,17 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * see http://docs.angular-formly.com/docs/formly-expressions#expressionproperties-validators--messages
   */
-type IExpressionFunction = js.Function3[
-/* $viewValue */ js.Any, 
-/* $modelValue */ js.Any, 
-/* scope */ typings.angularFormly.AngularFormly.ITemplateScope, 
-js.Any]
+type IExpressionFunction = js.Function3[/* $viewValue */ Any, /* $modelValue */ Any, /* scope */ ITemplateScope, Any]
 
-type IFieldArray = js.Array[
-typings.angularFormly.AngularFormly.IFieldConfigurationObject | typings.angularFormly.AngularFormly.IFieldGroup]
+type IFieldArray = js.Array[IFieldConfigurationObject | IFieldGroup]
 
 type ITemplateManipulator = js.Function3[
-/* template */ java.lang.String | typings.std.HTMLElement, 
+/* template */ String | HTMLElement, 
 /* options */ js.Object, 
-/* scope */ typings.angularFormly.AngularFormly.ITemplateScope, 
-java.lang.String | typings.std.HTMLElement]
+/* scope */ ITemplateScope, 
+String | HTMLElement]

@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HawkOptions extends StObject {
   
-  var credentials: js.Any
+  var credentials: Any
 }
 object HawkOptions {
   
-  inline def apply(credentials: js.Any): HawkOptions = {
+  inline def apply(credentials: Any): HawkOptions = {
     val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[HawkOptions]
   }
   
   extension [Self <: HawkOptions](x: Self) {
     
-    inline def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
   }
 }

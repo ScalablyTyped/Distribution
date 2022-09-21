@@ -1,14 +1,13 @@
 package typings.jsToJava
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(className: String, value: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].apply(className.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def apply(className: String, value: Any): js.Object = (^.asInstanceOf[js.Dynamic].apply(className.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   @JSImport("js-to-java", JSImport.Namespace)
   @js.native
@@ -26,7 +25,7 @@ object mod {
   
   trait Currency
     extends StObject
-       with /* k */ StringDictionary[js.Any] {
+       with /* k */ StringDictionary[Any] {
     
     var currencyCode: String
   }
@@ -52,14 +51,14 @@ object mod {
   
   inline def Double_(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("Double")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
+  inline def Enum(className: String, value: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("Enum")(className.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  
   inline def Enumeration(value: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("Enumeration")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   inline def Float_(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("Float")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   inline def HashMap(value: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("HashMap")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  // Note: enum is keyword
-  // function enum(className: string, value: string): object;
   inline def Integer(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("Integer")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   inline def Iterator(value: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("Iterator")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
@@ -78,11 +77,11 @@ object mod {
   
   inline def String(value: java.lang.String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("String")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  inline def `abstract`(abstractClassName: String, className: String, value: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("abstract")(abstractClassName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def `abstract`(abstractClassName: String, className: String, value: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("abstract")(abstractClassName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   object array {
     
-    inline def apply(className: String, value: js.Array[js.Any]): js.Object = (^.asInstanceOf[js.Dynamic].apply(className.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def apply(className: String, value: js.Array[Any]): js.Object = (^.asInstanceOf[js.Dynamic].apply(className.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
     @JSImport("js-to-java", "array")
     @js.native
@@ -103,6 +102,8 @@ object mod {
     inline def Dictionary(value: js.Array[js.Object]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("Dictionary")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     inline def Double_(value: js.Array[Double]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("Double")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    
+    inline def Enum(value: js.Array[Boolean]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("Enum")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     inline def Enumeration(value: js.Array[js.Object]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("Enumeration")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
@@ -155,11 +156,11 @@ object mod {
   
   inline def chars(value: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("chars")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  inline def combine(className: String, value: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(className.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def combine(className: String, value: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(className.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   inline def double(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("double")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  inline def exception(error: Error, className: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("exception")(error.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def exception(error: js.Error, className: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("exception")(error.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   inline def float(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("float")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
@@ -167,7 +168,7 @@ object mod {
   
   inline def long(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("long")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  inline def revert(javaObject: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("revert")(javaObject.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def revert(javaObject: js.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("revert")(javaObject.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def short(value: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("short")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

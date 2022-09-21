@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-appsflyer
 
-Typings are for version 5.1
+Typings are for version 6.8.2
 
 ## Library description:
 React Native Appsflyer plugin
@@ -10,10 +10,10 @@ React Native Appsflyer plugin
 | ------------------ | :-------------: |
 | Full name          | react-native-appsflyer |
 | Keywords           | react-native, react, native, appsflyer |
-| # releases         | 27 |
-| # dependents       | 2 |
-| # downloads        | 929236 |
-| # stars            | 0 |
+| # releases         | 36 |
+| # dependents       | 0.0 |
+| # downloads        | 185165.66666666666 |
+| # stars            | 220.0 |
 
 ## Links
 - [Homepage](https://github.com/AppsFlyerSDK/react-native-appsflyer#readme)
@@ -24,7 +24,7 @@ React Native Appsflyer plugin
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

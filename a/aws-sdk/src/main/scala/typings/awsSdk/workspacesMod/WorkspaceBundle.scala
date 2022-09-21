@@ -7,29 +7,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkspaceBundle extends StObject {
   
   /**
-    * The bundle identifier.
+    * The identifier of the bundle.
     */
   var BundleId: js.UndefOr[typings.awsSdk.workspacesMod.BundleId] = js.undefined
   
   /**
-    * The compute type. For more information, see Amazon WorkSpaces Bundles.
+    * The compute type of the bundle. For more information, see Amazon WorkSpaces Bundles.
     */
   var ComputeType: js.UndefOr[typings.awsSdk.workspacesMod.ComputeType] = js.undefined
   
   /**
-    * A description.
+    * The time when the bundle was created.
+    */
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The description of the bundle.
     */
   var Description: js.UndefOr[typings.awsSdk.workspacesMod.Description] = js.undefined
   
   /**
-    * The image identifier of the bundle.
+    * The identifier of the image that was used to create the bundle.
     */
   var ImageId: js.UndefOr[WorkspaceImageId] = js.undefined
   
   /**
     * The last time that the bundle was updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the bundle.
@@ -37,7 +42,7 @@ trait WorkspaceBundle extends StObject {
   var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The owner of the bundle. This is the account identifier of the owner, or AMAZON if the bundle is provided by AWS.
+    * The owner of the bundle. This is the account identifier of the owner, or AMAZON if the bundle is provided by Amazon Web Services.
     */
   var Owner: js.UndefOr[BundleOwner] = js.undefined
   
@@ -47,7 +52,7 @@ trait WorkspaceBundle extends StObject {
   var RootStorage: js.UndefOr[typings.awsSdk.workspacesMod.RootStorage] = js.undefined
   
   /**
-    * The size of the user storage.
+    * The size of the user volume.
     */
   var UserStorage: js.UndefOr[typings.awsSdk.workspacesMod.UserStorage] = js.undefined
 }
@@ -68,6 +73,10 @@ object WorkspaceBundle {
     
     inline def setComputeTypeUndefined: Self = StObject.set(x, "ComputeType", js.undefined)
     
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
@@ -76,7 +85,7 @@ object WorkspaceBundle {
     
     inline def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
     
-    inline def setLastUpdatedTime(value: Timestamp): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     

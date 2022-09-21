@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object emailFilledMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/EmailFilled", JSImport.Default)
   @js.native
-  val default: SFC[EmailFilledProps] = js.native
+  val default: FC[EmailFilledProps] = js.native
   
   trait EmailFilledProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object EmailFilledProps {
     
@@ -29,14 +29,14 @@ object emailFilledMod extends Shortcut {
     
     extension [Self <: EmailFilledProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[EmailFilledProps]
+  type _To = FC[EmailFilledProps]
   
   /* This means you don't have to write `default`, but can instead just say `emailFilledMod.foo` */
-  override def _to: SFC[EmailFilledProps] = default
+  override def _to: FC[EmailFilledProps] = default
 }

@@ -1,24 +1,24 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.NullableTypeAnnotation
+import typings.babelTraverse.babelTraverseStrings.TSNonNullExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `96` extends StObject {
   
-  var `type`: NullableTypeAnnotation
+  var `type`: TSNonNullExpression
 }
 object `96` {
   
   inline def apply(): `96` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("NullableTypeAnnotation")
+    __obj.updateDynamic("type")("TSNonNullExpression")
     __obj.asInstanceOf[`96`]
   }
   
   extension [Self <: `96`](x: Self) {
     
-    inline def setType(value: NullableTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSNonNullExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -6,7 +6,6 @@ import typings.fundamentalReact.anon.PartialLocalizationEditor
 import typings.fundamentalReact.anon.WeakValidationMapLocaliza
 import typings.fundamentalReact.fundamentalReactStrings.LocalizationEditor
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import typings.std.HTMLDivElement
@@ -19,8 +18,8 @@ object localizationEditorMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/LocalizationEditor/LocalizationEditor.LocalizationEditorProps> & {  displayName :'LocalizationEditor'} */
   object default {
     
-    inline def apply(props: PropsWithChildren[LocalizationEditorProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildren[LocalizationEditorProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: LocalizationEditorProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: LocalizationEditorProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("fundamental-react/lib/LocalizationEditor/LocalizationEditor", JSImport.Default)
     @js.native
@@ -28,8 +27,8 @@ object localizationEditorMod {
     
     @JSImport("fundamental-react/lib/LocalizationEditor/LocalizationEditor", "default.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/LocalizationEditor/LocalizationEditor", "default.defaultProps")
     @js.native
@@ -59,11 +58,11 @@ object localizationEditorMod {
     
     var inputClassName: js.UndefOr[String] = js.undefined
     
-    var listProps: js.UndefOr[js.Any] = js.undefined
+    var listProps: js.UndefOr[Any] = js.undefined
     
     var menu: js.Array[InputProps]
     
-    var popoverProps: js.UndefOr[js.Any] = js.undefined
+    var popoverProps: js.UndefOr[Any] = js.undefined
     
     var textarea: js.UndefOr[Boolean] = js.undefined
   }
@@ -90,15 +89,15 @@ object localizationEditorMod {
       
       inline def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
       
-      inline def setListProps(value: js.Any): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
+      inline def setListProps(value: Any): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
       
       inline def setListPropsUndefined: Self = StObject.set(x, "listProps", js.undefined)
       
       inline def setMenu(value: js.Array[InputProps]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
-      inline def setMenuVarargs(value: InputProps*): Self = StObject.set(x, "menu", js.Array(value :_*))
+      inline def setMenuVarargs(value: InputProps*): Self = StObject.set(x, "menu", js.Array(value*))
       
-      inline def setPopoverProps(value: js.Any): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
+      inline def setPopoverProps(value: Any): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
       
       inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
       

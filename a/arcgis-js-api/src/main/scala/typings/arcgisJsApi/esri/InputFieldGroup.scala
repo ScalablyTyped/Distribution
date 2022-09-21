@@ -21,11 +21,9 @@ trait InputFieldGroup
   /**
     * The result of `visibilityExpression`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#evaluatedVisibility)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#evaluatedVisibilityExpression)
     */
-  val evaluatedVisibility: Boolean = js.native
-  
-  var initialState: expanded | collapsed = js.native
+  val evaluatedVisibilityExpression: Boolean = js.native
   
   /**
     * The input fields belonging to this group.
@@ -41,8 +39,13 @@ trait InputFieldGroup
     */
   val label: String = js.native
   
+  var state: expanded | collapsed = js.native
+  
   /**
     * Arcade expression to determine whether this group is visible or not.
+    *
+    * @default null
+    * @deprecated Since 4.23. Use {@link esri/form/elements/GroupElement#visibilityExpression groupElement.visibilityExpression}
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#visibilityExpression)
     */

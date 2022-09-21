@@ -8,7 +8,7 @@ trait DataSourceGroup
   extends StObject
      with DataSourceItemOrGroup {
   
-  var aggregates: js.Array[js.Any]
+  var aggregates: js.Array[Any]
   
   var field: String
   
@@ -16,16 +16,16 @@ trait DataSourceGroup
   
   var items: js.Array[DataSourceItemOrGroup]
   
-  var value: js.Any
+  var value: Any
 }
 object DataSourceGroup {
   
   inline def apply(
-    aggregates: js.Array[js.Any],
+    aggregates: js.Array[Any],
     field: String,
     hasSubgroups: Boolean,
     items: js.Array[DataSourceItemOrGroup],
-    value: js.Any
+    value: Any
   ): DataSourceGroup = {
     val __obj = js.Dynamic.literal(aggregates = aggregates.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasSubgroups = hasSubgroups.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceGroup]
@@ -33,9 +33,9 @@ object DataSourceGroup {
   
   extension [Self <: DataSourceGroup](x: Self) {
     
-    inline def setAggregates(value: js.Array[js.Any]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
+    inline def setAggregates(value: js.Array[Any]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
     
-    inline def setAggregatesVarargs(value: js.Any*): Self = StObject.set(x, "aggregates", js.Array(value :_*))
+    inline def setAggregatesVarargs(value: Any*): Self = StObject.set(x, "aggregates", js.Array(value*))
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
@@ -43,8 +43,8 @@ object DataSourceGroup {
     
     inline def setItems(value: js.Array[DataSourceItemOrGroup]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: DataSourceItemOrGroup*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: DataSourceItemOrGroup*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -60,7 +60,7 @@ object mod {
       
       inline def setHeaders(value: js.Array[IncomingHttpHeaders]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setHeadersVarargs(value: IncomingHttpHeaders*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: IncomingHttpHeaders*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       

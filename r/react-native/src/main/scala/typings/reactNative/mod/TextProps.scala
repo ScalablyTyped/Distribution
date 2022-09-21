@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import typings.react.mod.ReactNode
 import typings.reactNative.reactNativeStrings.clip
 import typings.reactNative.reactNativeStrings.head
 import typings.reactNative.reactNativeStrings.middle
@@ -19,6 +20,8 @@ trait TextProps
     * The default is `true`.
     */
   var allowFontScaling: js.UndefOr[Boolean] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * This can be one of the following values:
@@ -86,6 +89,10 @@ trait TextProps
     */
   var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
+  var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
+  var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  
   /**
     * Invoked on Text layout
     */
@@ -113,6 +120,10 @@ object TextProps {
     inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
     
     inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
     
@@ -145,6 +156,14 @@ object TextProps {
     inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
     
     inline def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+    
+    inline def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
+    
+    inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+    
+    inline def setOnPressOut(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
+    
+    inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
     
     inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     

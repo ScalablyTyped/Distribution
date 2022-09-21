@@ -21,7 +21,7 @@ trait DisputeGateway extends StObject {
   
   def removeEvidence(disputeId: String, evidenceId: String): js.Promise[ValidatedResponse[Dispute]]
   
-  def search(searchFn: js.Any): Readable
+  def search(searchFn: Any): Readable
 }
 object DisputeGateway {
   
@@ -32,7 +32,7 @@ object DisputeGateway {
     finalize_ : String => js.Promise[ValidatedResponse[Dispute]],
     find: String => js.Promise[Dispute],
     removeEvidence: (String, String) => js.Promise[ValidatedResponse[Dispute]],
-    search: js.Any => Readable
+    search: Any => Readable
   ): DisputeGateway = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), addFileEvidence = js.Any.fromFunction2(addFileEvidence), addTextEvidence = js.Any.fromFunction2(addTextEvidence), find = js.Any.fromFunction1(find), removeEvidence = js.Any.fromFunction2(removeEvidence), search = js.Any.fromFunction1(search))
     __obj.updateDynamic("finalize")(js.Any.fromFunction1(finalize_))
@@ -53,6 +53,6 @@ object DisputeGateway {
     
     inline def setRemoveEvidence(value: (String, String) => js.Promise[ValidatedResponse[Dispute]]): Self = StObject.set(x, "removeEvidence", js.Any.fromFunction2(value))
     
-    inline def setSearch(value: js.Any => Readable): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+    inline def setSearch(value: Any => Readable): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
   }
 }

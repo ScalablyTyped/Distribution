@@ -45,8 +45,8 @@ trait InAppBrowser extends StObject {
     *                  For multi-line scripts, this is the return value of the last statement,
     *                  or the last expression evaluated.
     */
-  def executeScript(script: Code, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def executeScript(script: File, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def executeScript(script: Code, callback: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def executeScript(script: File, callback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /** Hides the InAppBrowser window. Calling this has no effect if the InAppBrowser was already hidden. */
   def hide(): Unit = js.native

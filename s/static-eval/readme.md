@@ -10,10 +10,10 @@ evaluate statically-analyzable expressions
 | ------------------ | :-------------: |
 | Full name          | static-eval |
 | Keywords           | static, eval, expression, esprima, ast, abstract, syntax, tree, analysis |
-| # releases         | 7 |
-| # dependents       | 58 |
-| # downloads        | 60708391 |
-| # stars            | 6 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8005992.0 |
+| # stars            | 161.0 |
 
 ## Links
 - [Homepage](https://github.com/browserify/static-eval)

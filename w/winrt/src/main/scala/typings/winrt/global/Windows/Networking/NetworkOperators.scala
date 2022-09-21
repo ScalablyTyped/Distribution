@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.Networking
 
-import typings.std.Uint8Array
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrt.Windows.Devices.Sms.CellularClass
 import typings.winrt.Windows.Devices.Sms.ISmsMessage
@@ -66,7 +65,7 @@ object NetworkOperators {
   
   @JSGlobal("Windows.Networking.NetworkOperators.HotspotAuthenticationContext")
   @js.native
-  class HotspotAuthenticationContext ()
+  open class HotspotAuthenticationContext ()
     extends StObject
        with typings.winrt.Windows.Networking.NetworkOperators.HotspotAuthenticationContext {
     
@@ -95,7 +94,7 @@ object NetworkOperators {
     override def triggerAttentionRequired(packageRelativeApplicationId: String, applicationParameters: String): Unit = js.native
     
     /* CompleteClass */
-    var wirelessNetworkId: Uint8Array = js.native
+    var wirelessNetworkId: js.typedarray.Uint8Array = js.native
   }
   /* static members */
   object HotspotAuthenticationContext {
@@ -109,7 +108,7 @@ object NetworkOperators {
   
   @JSGlobal("Windows.Networking.NetworkOperators.HotspotAuthenticationEventDetails")
   @js.native
-  class HotspotAuthenticationEventDetails ()
+  open class HotspotAuthenticationEventDetails ()
     extends StObject
        with typings.winrt.Windows.Networking.NetworkOperators.HotspotAuthenticationEventDetails {
     
@@ -119,7 +118,7 @@ object NetworkOperators {
   
   @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccount")
   @js.native
-  class MobileBroadbandAccount ()
+  open class MobileBroadbandAccount ()
     extends StObject
        with typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandAccount {
     
@@ -155,7 +154,7 @@ object NetworkOperators {
   
   @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccountEventArgs")
   @js.native
-  class MobileBroadbandAccountEventArgs ()
+  open class MobileBroadbandAccountEventArgs ()
     extends StObject
        with typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandAccountEventArgs {
     
@@ -165,7 +164,7 @@ object NetworkOperators {
   
   @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccountUpdatedEventArgs")
   @js.native
-  class MobileBroadbandAccountUpdatedEventArgs ()
+  open class MobileBroadbandAccountUpdatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandAccountUpdatedEventArgs {
     
@@ -181,24 +180,24 @@ object NetworkOperators {
   
   @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher")
   @js.native
-  class MobileBroadbandAccountWatcher ()
+  open class MobileBroadbandAccountWatcher ()
     extends StObject
        with typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher {
     
     /* CompleteClass */
-    var onaccountadded: js.Any = js.native
+    var onaccountadded: Any = js.native
     
     /* CompleteClass */
-    var onaccountremoved: js.Any = js.native
+    var onaccountremoved: Any = js.native
     
     /* CompleteClass */
-    var onaccountupdated: js.Any = js.native
+    var onaccountupdated: Any = js.native
     
     /* CompleteClass */
-    var onenumerationcompleted: js.Any = js.native
+    var onenumerationcompleted: Any = js.native
     
     /* CompleteClass */
-    var onstopped: js.Any = js.native
+    var onstopped: Any = js.native
     
     /* CompleteClass */
     override def start(): Unit = js.native
@@ -232,7 +231,7 @@ object NetworkOperators {
   
   @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandDeviceInformation")
   @js.native
-  class MobileBroadbandDeviceInformation ()
+  open class MobileBroadbandDeviceInformation ()
     extends StObject
        with typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandDeviceInformation {
     
@@ -299,7 +298,7 @@ object NetworkOperators {
   
   @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandNetwork")
   @js.native
-  class MobileBroadbandNetwork ()
+  open class MobileBroadbandNetwork ()
     extends StObject
        with typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandNetwork {
     
@@ -404,7 +403,7 @@ object NetworkOperators {
   
   @JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails")
   @js.native
-  class NetworkOperatorNotificationEventDetails ()
+  open class NetworkOperatorNotificationEventDetails ()
     extends StObject
        with typings.winrt.Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails {
     
@@ -465,7 +464,7 @@ object NetworkOperators {
   
   @JSGlobal("Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults")
   @js.native
-  class ProvisionFromXmlDocumentResults ()
+  open class ProvisionFromXmlDocumentResults ()
     extends StObject
        with typings.winrt.Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults {
     
@@ -478,7 +477,7 @@ object NetworkOperators {
   
   @JSGlobal("Windows.Networking.NetworkOperators.ProvisionedProfile")
   @js.native
-  class ProvisionedProfile ()
+  open class ProvisionedProfile ()
     extends StObject
        with typings.winrt.Windows.Networking.NetworkOperators.ProvisionedProfile {
     
@@ -491,7 +490,7 @@ object NetworkOperators {
   
   @JSGlobal("Windows.Networking.NetworkOperators.ProvisioningAgent")
   @js.native
-  class ProvisioningAgent ()
+  open class ProvisioningAgent ()
     extends StObject
        with typings.winrt.Windows.Networking.NetworkOperators.ProvisioningAgent {
     
@@ -515,7 +514,7 @@ object NetworkOperators {
   
   @JSGlobal("Windows.Networking.NetworkOperators.UssdMessage")
   @js.native
-  class UssdMessage protected ()
+  open class UssdMessage protected ()
     extends StObject
        with typings.winrt.Windows.Networking.NetworkOperators.UssdMessage {
     def this(messageText: String) = this()
@@ -524,18 +523,18 @@ object NetworkOperators {
     var dataCodingScheme: Double = js.native
     
     /* CompleteClass */
-    override def getPayload(): Uint8Array = js.native
+    override def getPayload(): js.typedarray.Uint8Array = js.native
     
     /* CompleteClass */
     var payloadAsText: String = js.native
     
     /* CompleteClass */
-    override def setPayload(value: Uint8Array): Unit = js.native
+    override def setPayload(value: js.typedarray.Uint8Array): Unit = js.native
   }
   
   @JSGlobal("Windows.Networking.NetworkOperators.UssdReply")
   @js.native
-  class UssdReply ()
+  open class UssdReply ()
     extends StObject
        with typings.winrt.Windows.Networking.NetworkOperators.UssdReply {
     
@@ -568,7 +567,7 @@ object NetworkOperators {
   
   @JSGlobal("Windows.Networking.NetworkOperators.UssdSession")
   @js.native
-  class UssdSession ()
+  open class UssdSession ()
     extends StObject
        with typings.winrt.Windows.Networking.NetworkOperators.UssdSession {
     

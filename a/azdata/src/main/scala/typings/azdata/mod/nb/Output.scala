@@ -1,6 +1,5 @@
 package typings.azdata.mod.nb
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Output extends StObject
 object Output {
   
-  inline def IDisplayData(data: StringDictionary[js.Any]): typings.azdata.mod.nb.IDisplayData = {
+  inline def IDisplayData(data: DisplayResultData): typings.azdata.mod.nb.IDisplayData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], output_type = "display_data")
     __obj.asInstanceOf[typings.azdata.mod.nb.IDisplayData]
   }
@@ -25,7 +24,7 @@ object Output {
     __obj.asInstanceOf[typings.azdata.mod.nb.IErrorResult]
   }
   
-  inline def IExecuteResult(data: StringDictionary[js.Any], execution_count: Double): typings.azdata.mod.nb.IExecuteResult = {
+  inline def IExecuteResult(data: DisplayResultData, execution_count: Double): typings.azdata.mod.nb.IExecuteResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], execution_count = execution_count.asInstanceOf[js.Any], output_type = "execute_result")
     __obj.asInstanceOf[typings.azdata.mod.nb.IExecuteResult]
   }
@@ -35,7 +34,7 @@ object Output {
     __obj.asInstanceOf[typings.azdata.mod.nb.IStreamResult]
   }
   
-  inline def IUpdateDisplayData(data: StringDictionary[js.Any]): typings.azdata.mod.nb.IUpdateDisplayData = {
+  inline def IUpdateDisplayData(data: DisplayResultData): typings.azdata.mod.nb.IUpdateDisplayData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], output_type = "update_display_data")
     __obj.asInstanceOf[typings.azdata.mod.nb.IUpdateDisplayData]
   }

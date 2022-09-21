@@ -10,7 +10,7 @@ trait DocumentLink extends StObject {
     * A data entry field that is preserved on a document link between a
     * DocumentLinkRequest and a DocumentLinkResolveRequest.
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[LSPAny] = js.undefined
   
   /**
     * The range this link applies to.
@@ -18,7 +18,7 @@ trait DocumentLink extends StObject {
   var range: Range
   
   /**
-    * The uri this link points to.
+    * The uri this link points to. If missing a resolve request is sent later.
     */
   var target: js.UndefOr[String] = js.undefined
   
@@ -49,17 +49,17 @@ object DocumentLink {
     */
   inline def create(range: Range): DocumentLink = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any]).asInstanceOf[DocumentLink]
   inline def create(range: Range, target: String): DocumentLink = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[DocumentLink]
-  inline def create(range: Range, target: String, data: js.Any): DocumentLink = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], target.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[DocumentLink]
-  inline def create(range: Range, target: Unit, data: js.Any): DocumentLink = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], target.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[DocumentLink]
+  inline def create(range: Range, target: String, data: LSPAny): DocumentLink = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], target.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[DocumentLink]
+  inline def create(range: Range, target: Unit, data: LSPAny): DocumentLink = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], target.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[DocumentLink]
   
   /**
     * Checks whether the given literal conforms to the [DocumentLink](#DocumentLink) interface.
     */
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentLink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DocumentLink */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentLink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DocumentLink */ Boolean]
   
   extension [Self <: DocumentLink](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: LSPAny): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

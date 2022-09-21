@@ -69,7 +69,7 @@ object IVaultProperties {
     
     inline def setIcon(value: js.Array[Double]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
-    inline def setIconVarargs(value: Double*): Self = StObject.set(x, "Icon", js.Array(value :_*))
+    inline def setIconVarargs(value: Double*): Self = StObject.set(x, "Icon", js.Array(value*))
     
     inline def setMainDataFolder(value: String): Self = StObject.set(x, "MainDataFolder", value.asInstanceOf[js.Any])
     

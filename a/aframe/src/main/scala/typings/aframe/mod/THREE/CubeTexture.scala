@@ -1,11 +1,11 @@
 package typings.aframe.mod.THREE
 
-import typings.three.constantsMod.Mapping
-import typings.three.constantsMod.PixelFormat
-import typings.three.constantsMod.TextureDataType
-import typings.three.constantsMod.TextureEncoding
-import typings.three.constantsMod.TextureFilter
-import typings.three.constantsMod.Wrapping
+import typings.three.srcConstantsMod.Mapping
+import typings.three.srcConstantsMod.PixelFormat
+import typings.three.srcConstantsMod.TextureDataType
+import typings.three.srcConstantsMod.TextureEncoding
+import typings.three.srcConstantsMod.TextureFilter
+import typings.three.srcConstantsMod.Wrapping
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,22 +13,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.CubeTexture")
 @js.native
-class CubeTexture protected ()
+open class CubeTexture protected ()
   extends typings.three.mod.CubeTexture {
   /**
-  	 * @param [images=[]]
-  	 * @param [mapping=THREE.CubeReflectionMapping]
-  	 * @param [wrapS=THREE.ClampToEdgeWrapping]
-  	 * @param [wrapT=THREE.ClampToEdgeWrapping]
-  	 * @param [magFilter=THREE.LinearFilter]
-  	 * @param [minFilter=THREE.LinearMipmapLinearFilter]
-  	 * @param [format=THREE.RGBFormat]
-  	 * @param [type=THREE.UnsignedByteType]
-  	 * @param [anisotropy=1]
-  	 * @param [encoding=THREE.LinearEncoding]
-  	 */
+    * @param [images=[]]
+    * @param [mapping=THREE.CubeReflectionMapping]
+    * @param [wrapS=THREE.ClampToEdgeWrapping]
+    * @param [wrapT=THREE.ClampToEdgeWrapping]
+    * @param [magFilter=THREE.LinearFilter]
+    * @param [minFilter=THREE.LinearMipmapLinearFilter]
+    * @param [format=THREE.RGBAFormat]
+    * @param [type=THREE.UnsignedByteType]
+    * @param [anisotropy=1]
+    * @param [encoding=THREE.LinearEncoding]
+    */
   def this(
-    images: js.UndefOr[js.Array[js.Any]],
+    images: js.UndefOr[js.Array[Any]],
     // HTMLImageElement or HTMLCanvasElement
   mapping: js.UndefOr[Mapping],
     wrapS: js.UndefOr[Wrapping],

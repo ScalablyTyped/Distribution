@@ -27,7 +27,7 @@ object HistoryResponse {
     
     inline def setMessages(value: js.Array[HistoryMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    inline def setMessagesVarargs(value: HistoryMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: HistoryMessage*): Self = StObject.set(x, "messages", js.Array(value*))
     
     inline def setStartTimeToken(value: String | Double): Self = StObject.set(x, "startTimeToken", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HttpHeader extends StObject {
   
   /**
-    * The header name
+    * The header name.
     */
   var headerName: js.UndefOr[StringType] = js.undefined
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutBucketLifecycleConfigurationRequest extends StObject {
   
   /**
-    * The AWS account ID of the Outposts bucket.
+    * The Amazon Web Services account ID of the Outposts bucket.
     */
   var AccountId: typings.awsSdk.s3controlMod.AccountId
   

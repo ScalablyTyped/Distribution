@@ -12,14 +12,14 @@ trait IntArraySupportOption
      with BaseSupportOption[int]
      with _SupportOption {
   
-  var default: js.Array[Value]
+  var default: js.UndefOr[js.Array[Value]] = js.undefined
   
   var array: `true`
 }
 object IntArraySupportOption {
   
-  inline def apply(category: String, default: js.Array[Value], since: String): IntArraySupportOption = {
-    val __obj = js.Dynamic.literal(array = true, category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
+  inline def apply(category: String, since: String): IntArraySupportOption = {
+    val __obj = js.Dynamic.literal(array = true, category = category.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("int")
     __obj.asInstanceOf[IntArraySupportOption]
   }
@@ -30,6 +30,8 @@ object IntArraySupportOption {
     
     inline def setDefault(value: js.Array[Value]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    inline def setDefaultVarargs(value: Value*): Self = StObject.set(x, "default", js.Array(value :_*))
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setDefaultVarargs(value: Value*): Self = StObject.set(x, "default", js.Array(value*))
   }
 }

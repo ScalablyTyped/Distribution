@@ -9,10 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InterpolationOptions extends StObject {
   
   /**
+    * Always format interpolated values.
+    * @default false
+    */
+  var alwaysFormat: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Global variables to use in interpolation replacements
     * @default undefined
     */
-  var defaultVariables: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var defaultVariables: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
     * Escape function
@@ -88,7 +94,7 @@ trait InterpolationOptions extends StObject {
   
   /**
     * If true, it will skip to interpolate the variables
-    * @default false
+    * @default true
     */
   var skipOnVariables: js.UndefOr[Boolean] = js.undefined
   
@@ -131,7 +137,11 @@ object InterpolationOptions {
   
   extension [Self <: InterpolationOptions](x: Self) {
     
-    inline def setDefaultVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "defaultVariables", value.asInstanceOf[js.Any])
+    inline def setAlwaysFormat(value: Boolean): Self = StObject.set(x, "alwaysFormat", value.asInstanceOf[js.Any])
+    
+    inline def setAlwaysFormatUndefined: Self = StObject.set(x, "alwaysFormat", js.undefined)
+    
+    inline def setDefaultVariables(value: StringDictionary[Any]): Self = StObject.set(x, "defaultVariables", value.asInstanceOf[js.Any])
     
     inline def setDefaultVariablesUndefined: Self = StObject.set(x, "defaultVariables", js.undefined)
     
@@ -144,7 +154,7 @@ object InterpolationOptions {
     inline def setEscapeValueUndefined: Self = StObject.set(x, "escapeValue", js.undefined)
     
     inline def setFormat(
-      value: (/* value */ js.Any, /* format */ js.UndefOr[String], /* lng */ js.UndefOr[String], /* options */ js.UndefOr[InterpolationOptionskeyst]) => String
+      value: (/* value */ Any, /* format */ js.UndefOr[String], /* lng */ js.UndefOr[String], /* options */ js.UndefOr[InterpolationOptionskeyst]) => String
     ): Self = StObject.set(x, "format", js.Any.fromFunction4(value))
     
     inline def setFormatSeparator(value: String): Self = StObject.set(x, "formatSeparator", value.asInstanceOf[js.Any])

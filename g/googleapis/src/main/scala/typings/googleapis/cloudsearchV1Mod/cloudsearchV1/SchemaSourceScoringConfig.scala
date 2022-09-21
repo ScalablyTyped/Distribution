@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Set the scoring configuration. This allows modifying the ranking of results
-  * for a source.
-  */
 trait SchemaSourceScoringConfig extends StObject {
   
   /**
     * Importance of the source.
     */
-  var sourceImportance: js.UndefOr[String] = js.undefined
+  var sourceImportance: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSourceScoringConfig {
   
@@ -25,6 +21,8 @@ object SchemaSourceScoringConfig {
   extension [Self <: SchemaSourceScoringConfig](x: Self) {
     
     inline def setSourceImportance(value: String): Self = StObject.set(x, "sourceImportance", value.asInstanceOf[js.Any])
+    
+    inline def setSourceImportanceNull: Self = StObject.set(x, "sourceImportance", null)
     
     inline def setSourceImportanceUndefined: Self = StObject.set(x, "sourceImportance", js.undefined)
   }

@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   def adjustScrollTop(scrollTop: Double, force: Boolean): Unit
   
-  var columns: js.Array[js.Any]
+  var columns: js.Array[Any]
   
-  var configGroups: js.Array[js.Any]
+  var configGroups: js.Array[Any]
   
   var elementsNeedMeasuring: Boolean
   
@@ -33,13 +33,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   def groupBy(col: IColumn): Unit
   
-  var headerRow: js.Any
+  var headerRow: Any
   
-  def headerScrollerDim(): js.Any
+  def headerScrollerDim(): Any
   
-  var i18n: js.Any
+  var i18n: Any
   
-  var jqueryUITheme: js.Any
+  var jqueryUITheme: Any
   
   var multiSelect: Boolean
   
@@ -47,13 +47,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   def removeGroup(index: Double): Unit
   
-  var renderedColumns: js.Array[js.Any]
+  var renderedColumns: js.Array[Any]
   
-  var renderedRows: js.Array[js.Any]
+  var renderedRows: js.Array[Any]
   
   var rowHeight: Double
   
-  var selectedItems: js.Array[js.Any]
+  var selectedItems: js.Array[Any]
   
   var selectionProvider: ISelectionProvider
   
@@ -61,7 +61,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var showFooter: Boolean
   
-  def showGroupPanel(): js.Any
+  def showGroupPanel(): Any
   
   var showMenu: Boolean
   
@@ -86,8 +86,8 @@ object IGridScope {
   inline def apply(
     adjustScrollLeft: Double => Unit,
     adjustScrollTop: (Double, Boolean) => Unit,
-    columns: js.Array[js.Any],
-    configGroups: js.Array[js.Any],
+    columns: js.Array[Any],
+    configGroups: js.Array[Any],
     elementsNeedMeasuring: Boolean,
     enableCellEditOnFocus: Boolean,
     enableCellSelection: Boolean,
@@ -97,21 +97,21 @@ object IGridScope {
     forceSyncScrolling: Boolean,
     gridId: String,
     groupBy: IColumn => Unit,
-    headerRow: js.Any,
-    headerScrollerDim: () => js.Any,
-    i18n: js.Any,
-    jqueryUITheme: js.Any,
+    headerRow: Any,
+    headerScrollerDim: () => Any,
+    i18n: Any,
+    jqueryUITheme: Any,
     multiSelect: Boolean,
     pagingOptions: IPagingOptions,
     removeGroup: Double => Unit,
-    renderedColumns: js.Array[js.Any],
-    renderedRows: js.Array[js.Any],
+    renderedColumns: js.Array[Any],
+    renderedRows: js.Array[Any],
     rowHeight: Double,
-    selectedItems: js.Array[js.Any],
+    selectedItems: js.Array[Any],
     selectionProvider: ISelectionProvider,
     showColumnMenu: Boolean,
     showFooter: Boolean,
-    showGroupPanel: () => js.Any,
+    showGroupPanel: () => Any,
     showMenu: Boolean,
     showSelectionCheckbox: Boolean,
     togglePin: IColumn => Unit,
@@ -132,13 +132,13 @@ object IGridScope {
     
     inline def setAdjustScrollTop(value: (Double, Boolean) => Unit): Self = StObject.set(x, "adjustScrollTop", js.Any.fromFunction2(value))
     
-    inline def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Any*): Self = StObject.set(x, "columns", js.Array(value*))
     
-    inline def setConfigGroups(value: js.Array[js.Any]): Self = StObject.set(x, "configGroups", value.asInstanceOf[js.Any])
+    inline def setConfigGroups(value: js.Array[Any]): Self = StObject.set(x, "configGroups", value.asInstanceOf[js.Any])
     
-    inline def setConfigGroupsVarargs(value: js.Any*): Self = StObject.set(x, "configGroups", js.Array(value :_*))
+    inline def setConfigGroupsVarargs(value: Any*): Self = StObject.set(x, "configGroups", js.Array(value*))
     
     inline def setElementsNeedMeasuring(value: Boolean): Self = StObject.set(x, "elementsNeedMeasuring", value.asInstanceOf[js.Any])
     
@@ -158,13 +158,13 @@ object IGridScope {
     
     inline def setGroupBy(value: IColumn => Unit): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
     
-    inline def setHeaderRow(value: js.Any): Self = StObject.set(x, "headerRow", value.asInstanceOf[js.Any])
+    inline def setHeaderRow(value: Any): Self = StObject.set(x, "headerRow", value.asInstanceOf[js.Any])
     
-    inline def setHeaderScrollerDim(value: () => js.Any): Self = StObject.set(x, "headerScrollerDim", js.Any.fromFunction0(value))
+    inline def setHeaderScrollerDim(value: () => Any): Self = StObject.set(x, "headerScrollerDim", js.Any.fromFunction0(value))
     
-    inline def setI18n(value: js.Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+    inline def setI18n(value: Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
-    inline def setJqueryUITheme(value: js.Any): Self = StObject.set(x, "jqueryUITheme", value.asInstanceOf[js.Any])
+    inline def setJqueryUITheme(value: Any): Self = StObject.set(x, "jqueryUITheme", value.asInstanceOf[js.Any])
     
     inline def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
     
@@ -172,19 +172,19 @@ object IGridScope {
     
     inline def setRemoveGroup(value: Double => Unit): Self = StObject.set(x, "removeGroup", js.Any.fromFunction1(value))
     
-    inline def setRenderedColumns(value: js.Array[js.Any]): Self = StObject.set(x, "renderedColumns", value.asInstanceOf[js.Any])
+    inline def setRenderedColumns(value: js.Array[Any]): Self = StObject.set(x, "renderedColumns", value.asInstanceOf[js.Any])
     
-    inline def setRenderedColumnsVarargs(value: js.Any*): Self = StObject.set(x, "renderedColumns", js.Array(value :_*))
+    inline def setRenderedColumnsVarargs(value: Any*): Self = StObject.set(x, "renderedColumns", js.Array(value*))
     
-    inline def setRenderedRows(value: js.Array[js.Any]): Self = StObject.set(x, "renderedRows", value.asInstanceOf[js.Any])
+    inline def setRenderedRows(value: js.Array[Any]): Self = StObject.set(x, "renderedRows", value.asInstanceOf[js.Any])
     
-    inline def setRenderedRowsVarargs(value: js.Any*): Self = StObject.set(x, "renderedRows", js.Array(value :_*))
+    inline def setRenderedRowsVarargs(value: Any*): Self = StObject.set(x, "renderedRows", js.Array(value*))
     
     inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
-    inline def setSelectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    inline def setSelectedItems(value: js.Array[Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
-    inline def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: Any*): Self = StObject.set(x, "selectedItems", js.Array(value*))
     
     inline def setSelectionProvider(value: ISelectionProvider): Self = StObject.set(x, "selectionProvider", value.asInstanceOf[js.Any])
     
@@ -192,7 +192,7 @@ object IGridScope {
     
     inline def setShowFooter(value: Boolean): Self = StObject.set(x, "showFooter", value.asInstanceOf[js.Any])
     
-    inline def setShowGroupPanel(value: () => js.Any): Self = StObject.set(x, "showGroupPanel", js.Any.fromFunction0(value))
+    inline def setShowGroupPanel(value: () => Any): Self = StObject.set(x, "showGroupPanel", js.Any.fromFunction0(value))
     
     inline def setShowMenu(value: Boolean): Self = StObject.set(x, "showMenu", value.asInstanceOf[js.Any])
     

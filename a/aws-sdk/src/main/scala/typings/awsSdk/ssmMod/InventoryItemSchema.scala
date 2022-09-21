@@ -17,7 +17,7 @@ trait InventoryItemSchema extends StObject {
   var DisplayName: js.UndefOr[InventoryTypeDisplayName] = js.undefined
   
   /**
-    * The name of the inventory type. Default inventory item type names start with AWS. Custom inventory type names will start with Custom. Default inventory item types include the following: AWS:AWSComponent, AWS:Application, AWS:InstanceInformation, AWS:Network, and AWS:WindowsUpdate.
+    * The name of the inventory type. Default inventory item type names start with Amazon Web Services. Custom inventory type names will start with Custom. Default inventory item types include the following: AWS:AWSComponent, AWS:Application, AWS:InstanceInformation, AWS:Network, and AWS:WindowsUpdate.
     */
   var TypeName: InventoryItemTypeName
   
@@ -37,7 +37,7 @@ object InventoryItemSchema {
     
     inline def setAttributes(value: InventoryItemAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    inline def setAttributesVarargs(value: InventoryItemAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: InventoryItemAttribute*): Self = StObject.set(x, "Attributes", js.Array(value*))
     
     inline def setDisplayName(value: InventoryTypeDisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     

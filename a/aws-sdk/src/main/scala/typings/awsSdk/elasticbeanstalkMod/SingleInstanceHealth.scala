@@ -49,7 +49,7 @@ trait SingleInstanceHealth extends StObject {
   /**
     * The time at which the EC2 instance was launched.
     */
-  var LaunchedAt: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.LaunchedAt] = js.undefined
+  var LaunchedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Operating system metrics from the instance.
@@ -77,7 +77,7 @@ object SingleInstanceHealth {
     
     inline def setCausesUndefined: Self = StObject.set(x, "Causes", js.undefined)
     
-    inline def setCausesVarargs(value: Cause*): Self = StObject.set(x, "Causes", js.Array(value :_*))
+    inline def setCausesVarargs(value: Cause*): Self = StObject.set(x, "Causes", js.Array(value*))
     
     inline def setColor(value: String): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
@@ -99,7 +99,7 @@ object SingleInstanceHealth {
     
     inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    inline def setLaunchedAt(value: LaunchedAt): Self = StObject.set(x, "LaunchedAt", value.asInstanceOf[js.Any])
+    inline def setLaunchedAt(value: js.Date): Self = StObject.set(x, "LaunchedAt", value.asInstanceOf[js.Any])
     
     inline def setLaunchedAtUndefined: Self = StObject.set(x, "LaunchedAt", js.undefined)
     

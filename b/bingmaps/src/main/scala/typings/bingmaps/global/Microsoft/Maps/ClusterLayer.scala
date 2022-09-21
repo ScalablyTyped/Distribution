@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.ClusterLayer")
 @js.native
-class ClusterLayer protected ()
+open class ClusterLayer protected ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.ClusterLayer {
   /**

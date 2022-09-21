@@ -21,7 +21,7 @@ trait Sort extends StObject {
   
   var Orientation: XlSortOrientation
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Rng(Address: String): Range
   def Rng(RowIndex: Double): Range
@@ -31,7 +31,7 @@ trait Sort extends StObject {
   
   def SetRange(Rng: Range): Unit
   
-  def SortFields(Index: js.Any): SortField
+  def SortFields(Index: Any): SortField
   @JSName("SortFields")
   val SortFields_Original: SortFields
   
@@ -47,7 +47,7 @@ object Sort {
     Header: XlYesNoGuess,
     MatchCase: Boolean,
     Orientation: XlSortOrientation,
-    Parent: js.Any,
+    Parent: Any,
     Rng: Range,
     SetRange: Range => Unit,
     SortFields: SortFields,
@@ -74,7 +74,7 @@ object Sort {
     
     inline def setOrientation(value: XlSortOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRng(value: Range): Self = StObject.set(x, "Rng", value.asInstanceOf[js.Any])
     

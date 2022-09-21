@@ -13,23 +13,19 @@ trait `7` extends StObject {
     element: HTMLElement,
     valueAccessor: js.Function0[js.Function],
     allBindings: AllBindings,
-    viewModel: js.Any,
-    bindingContext: BindingContext[js.Any]
+    viewModel: Any,
+    bindingContext: BindingContext[Any]
   ): Unit
 }
 object `7` {
   
-  inline def apply(
-    init: (HTMLElement, js.Function0[js.Function], AllBindings, js.Any, BindingContext[js.Any]) => Unit
-  ): `7` = {
+  inline def apply(init: (HTMLElement, js.Function0[js.Function], AllBindings, Any, BindingContext[Any]) => Unit): `7` = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction5(init))
     __obj.asInstanceOf[`7`]
   }
   
   extension [Self <: `7`](x: Self) {
     
-    inline def setInit(
-      value: (HTMLElement, js.Function0[js.Function], AllBindings, js.Any, BindingContext[js.Any]) => Unit
-    ): Self = StObject.set(x, "init", js.Any.fromFunction5(value))
+    inline def setInit(value: (HTMLElement, js.Function0[js.Function], AllBindings, Any, BindingContext[Any]) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction5(value))
   }
 }

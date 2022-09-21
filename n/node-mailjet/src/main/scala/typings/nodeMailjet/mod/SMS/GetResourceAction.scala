@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResourceAction extends StObject {
   
   def id(value: String): GetResourceActionId = js.native
+  def id(value: Double): GetResourceActionId = js.native
   
   def request(): js.Promise[GetResponseAction] = js.native
   def request(params: GetParams): js.Promise[GetResponseAction] = js.native

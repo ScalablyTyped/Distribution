@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/PostProcesses/index", "PostProcessRenderEffect")
 @js.native
-class PostProcessRenderEffect protected ()
+open class PostProcessRenderEffect protected ()
   extends typings.babylonjs.renderPipelineIndexMod.PostProcessRenderEffect {
   /**
     * Instantiates a post process render effect.

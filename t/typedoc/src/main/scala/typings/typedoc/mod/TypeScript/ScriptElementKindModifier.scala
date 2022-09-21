@@ -15,7 +15,15 @@ object ScriptElementKindModifier extends StObject {
   
   /* "declare" */ val ambientModifier: typings.typescript.mod.ScriptElementKindModifier.ambientModifier & String = js.native
   
+  /* ".cjs" */ val cjsModifier: typings.typescript.mod.ScriptElementKindModifier.cjsModifier & String = js.native
+  
+  /* ".cts" */ val ctsModifier: typings.typescript.mod.ScriptElementKindModifier.ctsModifier & String = js.native
+  
+  /* ".d.cts" */ val dctsModifier: typings.typescript.mod.ScriptElementKindModifier.dctsModifier & String = js.native
+  
   /* "deprecated" */ val deprecatedModifier: typings.typescript.mod.ScriptElementKindModifier.deprecatedModifier & String = js.native
+  
+  /* ".d.mts" */ val dmtsModifier: typings.typescript.mod.ScriptElementKindModifier.dmtsModifier & String = js.native
   
   /* ".d.ts" */ val dtsModifier: typings.typescript.mod.ScriptElementKindModifier.dtsModifier & String = js.native
   
@@ -26,6 +34,10 @@ object ScriptElementKindModifier extends StObject {
   /* ".json" */ val jsonModifier: typings.typescript.mod.ScriptElementKindModifier.jsonModifier & String = js.native
   
   /* ".jsx" */ val jsxModifier: typings.typescript.mod.ScriptElementKindModifier.jsxModifier & String = js.native
+  
+  /* ".mjs" */ val mjsModifier: typings.typescript.mod.ScriptElementKindModifier.mjsModifier & String = js.native
+  
+  /* ".mts" */ val mtsModifier: typings.typescript.mod.ScriptElementKindModifier.mtsModifier & String = js.native
   
   /* "" */ val none: typings.typescript.mod.ScriptElementKindModifier.none & String = js.native
   

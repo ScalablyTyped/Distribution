@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("akumina-core", "PropertyExpression")
 @js.native
-class PropertyExpression () extends Expression {
-  def this(param: js.Any) = this()
+open class PropertyExpression () extends Expression {
+  def this(param: Any) = this()
 }

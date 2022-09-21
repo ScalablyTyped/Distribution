@@ -11,11 +11,11 @@ trait AttributeFilterOperator[D] extends StObject {
   
   var op: AttributeOperator
   
-  var value: js.Any
+  var value: Any
 }
 object AttributeFilterOperator {
   
-  inline def apply[D](attribute: String, op: AttributeOperator, value: js.Any): AttributeFilterOperator[D] = {
+  inline def apply[D](attribute: String, op: AttributeOperator, value: Any): AttributeFilterOperator[D] = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeFilterOperator[D]]
   }
@@ -26,7 +26,7 @@ object AttributeFilterOperator {
     
     inline def setOp(value: AttributeOperator): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
   
   /* Rewritten from type alias, can be one of: 

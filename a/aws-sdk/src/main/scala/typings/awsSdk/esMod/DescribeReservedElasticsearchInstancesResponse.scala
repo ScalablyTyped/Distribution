@@ -33,6 +33,6 @@ object DescribeReservedElasticsearchInstancesResponse {
     
     inline def setReservedElasticsearchInstancesUndefined: Self = StObject.set(x, "ReservedElasticsearchInstances", js.undefined)
     
-    inline def setReservedElasticsearchInstancesVarargs(value: ReservedElasticsearchInstance*): Self = StObject.set(x, "ReservedElasticsearchInstances", js.Array(value :_*))
+    inline def setReservedElasticsearchInstancesVarargs(value: ReservedElasticsearchInstance*): Self = StObject.set(x, "ReservedElasticsearchInstances", js.Array(value*))
   }
 }

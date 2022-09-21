@@ -9,7 +9,7 @@ object lazyRenderBoxMod {
   
   @JSImport("rmc-dialog/lib/LazyRenderBox", JSImport.Default)
   @js.native
-  class default () extends LazyRenderBox
+  open class default () extends LazyRenderBox
   
   trait ILazyRenderBoxPropTypes extends StObject {
     
@@ -55,10 +55,9 @@ object lazyRenderBoxMod {
   }
   
   @js.native
-  trait LazyRenderBox
-    extends Component[ILazyRenderBoxPropTypes, js.Any, js.Any] {
+  trait LazyRenderBox extends Component[ILazyRenderBoxPropTypes, Any, Any] {
     
     @JSName("shouldComponentUpdate")
-    def shouldComponentUpdate_MLazyRenderBox(nextProps: js.Any): Boolean = js.native
+    def shouldComponentUpdate_MLazyRenderBox(nextProps: Any): Boolean = js.native
   }
 }

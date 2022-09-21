@@ -34,7 +34,7 @@ object commonMod {
     LodashDecorator
   ]) & LodashDecorator
   
-  type BiTypedDecoratorN = (js.Function1[/* repeated */ js.Any, LodashDecorator]) & LodashDecorator
+  type BiTypedDecoratorN = (js.Function1[/* repeated */ Any, LodashDecorator]) & LodashDecorator
   
   type BiTypedMethodDecorator = js.Function0[LodashMethodDecorator] & LodashMethodDecorator
   
@@ -49,7 +49,7 @@ object commonMod {
     LodashMethodDecorator
   ]) & LodashMethodDecorator
   
-  type BiTypedMethodDecoratorN = (js.Function1[/* repeated */ js.Any, LodashMethodDecorator]) & LodashMethodDecorator
+  type BiTypedMethodDecoratorN = (js.Function1[/* repeated */ Any, LodashMethodDecorator]) & LodashMethodDecorator
   
   trait InstanceChainContext extends StObject {
     
@@ -61,11 +61,11 @@ object commonMod {
     
     var setter: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.Any
+    var value: Any
   }
   object InstanceChainContext {
     
-    inline def apply(value: js.Any): InstanceChainContext = {
+    inline def apply(value: Any): InstanceChainContext = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstanceChainContext]
     }
@@ -88,7 +88,7 @@ object commonMod {
       
       inline def setSetterUndefined: Self = StObject.set(x, "setter", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,7 +124,7 @@ object commonMod {
       
       inline def setFns(value: js.Array[js.Function]): Self = StObject.set(x, "fns", value.asInstanceOf[js.Any])
       
-      inline def setFnsVarargs(value: js.Function*): Self = StObject.set(x, "fns", js.Array(value :_*))
+      inline def setFnsVarargs(value: js.Function*): Self = StObject.set(x, "fns", js.Array(value*))
       
       inline def setIsGetter(value: Boolean): Self = StObject.set(x, "isGetter", value.asInstanceOf[js.Any])
       
@@ -136,7 +136,7 @@ object commonMod {
       
       inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value*))
     }
   }
   
@@ -151,8 +151,8 @@ object commonMod {
     override def apply(
       arg1: /* target */ js.Object,
       arg2: /* propertyKey */ String | js.Symbol,
-      arg3: /* descriptor */ TypedPropertyDescriptor[js.Any]
-    ): TypedPropertyDescriptor[js.Any] | Unit = js.native
+      arg3: /* descriptor */ TypedPropertyDescriptor[Any]
+    ): TypedPropertyDescriptor[Any] | Unit = js.native
   }
   
   type LodashMethodDecorator = MethodDecorator

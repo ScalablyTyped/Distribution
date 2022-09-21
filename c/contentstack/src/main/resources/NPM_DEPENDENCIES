@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "contentstack" : "3.15.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "contentstack" : "3.15.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

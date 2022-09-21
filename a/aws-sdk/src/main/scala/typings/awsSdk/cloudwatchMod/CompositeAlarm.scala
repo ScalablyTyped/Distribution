@@ -12,6 +12,31 @@ trait CompositeAlarm extends StObject {
   var ActionsEnabled: js.UndefOr[typings.awsSdk.cloudwatchMod.ActionsEnabled] = js.undefined
   
   /**
+    *  When the value is ALARM, it means that the actions are suppressed because the suppressor alarm is in ALARM When the value is WaitPeriod, it means that the actions are suppressed because the composite alarm is waiting for the suppressor alarm to go into into the ALARM state. The maximum waiting time is as specified in ActionsSuppressorWaitPeriod. After this time, the composite alarm performs its actions. When the value is ExtensionPeriod, it means that the actions are suppressed because the composite alarm is waiting after the suppressor alarm went out of the ALARM state. The maximum waiting time is as specified in ActionsSuppressorExtensionPeriod. After this time, the composite alarm performs its actions. 
+    */
+  var ActionsSuppressedBy: js.UndefOr[typings.awsSdk.cloudwatchMod.ActionsSuppressedBy] = js.undefined
+  
+  /**
+    *  Captures the reason for action suppression. 
+    */
+  var ActionsSuppressedReason: js.UndefOr[typings.awsSdk.cloudwatchMod.ActionsSuppressedReason] = js.undefined
+  
+  /**
+    *  Actions will be suppressed if the suppressor alarm is in the ALARM state. ActionsSuppressor can be an AlarmName or an Amazon Resource Name (ARN) from an existing alarm. 
+    */
+  var ActionsSuppressor: js.UndefOr[AlarmArn] = js.undefined
+  
+  /**
+    *  The maximum time in seconds that the composite alarm waits after suppressor alarm goes out of the ALARM state. After this time, the composite alarm performs its actions.    ExtensionPeriod is required only when ActionsSuppressor is specified.  
+    */
+  var ActionsSuppressorExtensionPeriod: js.UndefOr[SuppressorPeriod] = js.undefined
+  
+  /**
+    *  The maximum time in seconds that the composite alarm waits for the suppressor alarm to go into the ALARM state. After this time, the composite alarm performs its actions.    WaitPeriod is required only when ActionsSuppressor is specified.  
+    */
+  var ActionsSuppressorWaitPeriod: js.UndefOr[SuppressorPeriod] = js.undefined
+  
+  /**
     * The actions to execute when this alarm transitions to the ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
     */
   var AlarmActions: js.UndefOr[ResourceList] = js.undefined
@@ -24,7 +49,7 @@ trait CompositeAlarm extends StObject {
   /**
     * The time stamp of the last update to the alarm configuration.
     */
-  var AlarmConfigurationUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var AlarmConfigurationUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the alarm.
@@ -62,9 +87,14 @@ trait CompositeAlarm extends StObject {
   var StateReasonData: js.UndefOr[typings.awsSdk.cloudwatchMod.StateReasonData] = js.undefined
   
   /**
-    * The time stamp of the last update to the alarm state.
+    *  The timestamp of the last change to the alarm's StateValue. 
     */
-  var StateUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var StateTransitionedTimestamp: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * Tracks the timestamp of any state update, even if StateValue doesn't change.
+    */
+  var StateUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state value for the alarm.
@@ -84,17 +114,37 @@ object CompositeAlarm {
     
     inline def setActionsEnabledUndefined: Self = StObject.set(x, "ActionsEnabled", js.undefined)
     
+    inline def setActionsSuppressedBy(value: ActionsSuppressedBy): Self = StObject.set(x, "ActionsSuppressedBy", value.asInstanceOf[js.Any])
+    
+    inline def setActionsSuppressedByUndefined: Self = StObject.set(x, "ActionsSuppressedBy", js.undefined)
+    
+    inline def setActionsSuppressedReason(value: ActionsSuppressedReason): Self = StObject.set(x, "ActionsSuppressedReason", value.asInstanceOf[js.Any])
+    
+    inline def setActionsSuppressedReasonUndefined: Self = StObject.set(x, "ActionsSuppressedReason", js.undefined)
+    
+    inline def setActionsSuppressor(value: AlarmArn): Self = StObject.set(x, "ActionsSuppressor", value.asInstanceOf[js.Any])
+    
+    inline def setActionsSuppressorExtensionPeriod(value: SuppressorPeriod): Self = StObject.set(x, "ActionsSuppressorExtensionPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setActionsSuppressorExtensionPeriodUndefined: Self = StObject.set(x, "ActionsSuppressorExtensionPeriod", js.undefined)
+    
+    inline def setActionsSuppressorUndefined: Self = StObject.set(x, "ActionsSuppressor", js.undefined)
+    
+    inline def setActionsSuppressorWaitPeriod(value: SuppressorPeriod): Self = StObject.set(x, "ActionsSuppressorWaitPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setActionsSuppressorWaitPeriodUndefined: Self = StObject.set(x, "ActionsSuppressorWaitPeriod", js.undefined)
+    
     inline def setAlarmActions(value: ResourceList): Self = StObject.set(x, "AlarmActions", value.asInstanceOf[js.Any])
     
     inline def setAlarmActionsUndefined: Self = StObject.set(x, "AlarmActions", js.undefined)
     
-    inline def setAlarmActionsVarargs(value: ResourceName*): Self = StObject.set(x, "AlarmActions", js.Array(value :_*))
+    inline def setAlarmActionsVarargs(value: ResourceName*): Self = StObject.set(x, "AlarmActions", js.Array(value*))
     
     inline def setAlarmArn(value: AlarmArn): Self = StObject.set(x, "AlarmArn", value.asInstanceOf[js.Any])
     
     inline def setAlarmArnUndefined: Self = StObject.set(x, "AlarmArn", js.undefined)
     
-    inline def setAlarmConfigurationUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "AlarmConfigurationUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setAlarmConfigurationUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "AlarmConfigurationUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setAlarmConfigurationUpdatedTimestampUndefined: Self = StObject.set(x, "AlarmConfigurationUpdatedTimestamp", js.undefined)
     
@@ -114,13 +164,13 @@ object CompositeAlarm {
     
     inline def setInsufficientDataActionsUndefined: Self = StObject.set(x, "InsufficientDataActions", js.undefined)
     
-    inline def setInsufficientDataActionsVarargs(value: ResourceName*): Self = StObject.set(x, "InsufficientDataActions", js.Array(value :_*))
+    inline def setInsufficientDataActionsVarargs(value: ResourceName*): Self = StObject.set(x, "InsufficientDataActions", js.Array(value*))
     
     inline def setOKActions(value: ResourceList): Self = StObject.set(x, "OKActions", value.asInstanceOf[js.Any])
     
     inline def setOKActionsUndefined: Self = StObject.set(x, "OKActions", js.undefined)
     
-    inline def setOKActionsVarargs(value: ResourceName*): Self = StObject.set(x, "OKActions", js.Array(value :_*))
+    inline def setOKActionsVarargs(value: ResourceName*): Self = StObject.set(x, "OKActions", js.Array(value*))
     
     inline def setStateReason(value: StateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
     
@@ -130,7 +180,11 @@ object CompositeAlarm {
     
     inline def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
     
-    inline def setStateUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "StateUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setStateTransitionedTimestamp(value: js.Date): Self = StObject.set(x, "StateTransitionedTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setStateTransitionedTimestampUndefined: Self = StObject.set(x, "StateTransitionedTimestamp", js.undefined)
+    
+    inline def setStateUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "StateUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setStateUpdatedTimestampUndefined: Self = StObject.set(x, "StateUpdatedTimestamp", js.undefined)
     

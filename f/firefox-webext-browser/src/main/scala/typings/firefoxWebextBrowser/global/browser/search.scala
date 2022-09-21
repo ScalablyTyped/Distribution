@@ -24,5 +24,5 @@ object search {
   inline def get(): js.Promise[js.Array[SearchEngine]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[js.Array[SearchEngine]]]
   
   /** Perform a search. */
-  inline def search(searchProperties: SearchSearchProperties): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(searchProperties.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def search(searchProperties: SearchSearchProperties): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(searchProperties.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 }

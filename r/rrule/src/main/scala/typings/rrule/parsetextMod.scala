@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object parsetextMod {
   
-  @JSImport("rrule/dist/esm/src/nlp/parsetext", JSImport.Namespace)
+  @JSImport("rrule/dist/esm/nlp/parsetext", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(text: String): PartialOptions | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[PartialOptions | Null]
-  inline def default(text: String, language: Language): PartialOptions | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[PartialOptions | Null]
+  inline def default(text: String): PartialOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[PartialOptions]
+  inline def default(text: String, language: Language): PartialOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[PartialOptions]
 }

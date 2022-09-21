@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaRegionCommitmentsUpdateReservationsRequest extends StObject {
   
   /**
-    * List of reservations for the capacity move of VMs with accelerators and
-    * local ssds.
+    * A list of two reservations to transfer GPUs and local SSD between.
     */
   var reservations: js.UndefOr[js.Array[SchemaReservation]] = js.undefined
 }
@@ -25,6 +24,6 @@ object SchemaRegionCommitmentsUpdateReservationsRequest {
     
     inline def setReservationsUndefined: Self = StObject.set(x, "reservations", js.undefined)
     
-    inline def setReservationsVarargs(value: SchemaReservation*): Self = StObject.set(x, "reservations", js.Array(value :_*))
+    inline def setReservationsVarargs(value: SchemaReservation*): Self = StObject.set(x, "reservations", js.Array(value*))
   }
 }

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Row_
   extends StObject
-     with Expression[js.Any]
+     with Expression[Any]

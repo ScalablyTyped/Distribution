@@ -10,16 +10,16 @@ trait TokenSpan
   extends StObject
      with TextSpan {
   
-  /* private */ var _kind: js.Any
+  /* private */ var _kind: Any
   
   def kind(): SyntaxKind
 }
 object TokenSpan {
   
   inline def apply(
-    _kind: js.Any,
-    _length: js.Any,
-    _start: js.Any,
+    _kind: Any,
+    _length: Any,
+    _start: Any,
     containsPosition: Double => Boolean,
     containsTextSpan: TextSpan => Boolean,
     end: () => Double,
@@ -42,6 +42,6 @@ object TokenSpan {
     
     inline def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
     
-    inline def set_kind(value: js.Any): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
+    inline def set_kind(value: Any): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
   }
 }

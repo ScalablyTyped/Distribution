@@ -15,17 +15,17 @@ trait DeploymentException
      with Exception {
   
   /** reflects the cause of the error. Commonly an exception. */
-  var Cause: js.Any
+  var Cause: Any
 }
 object DeploymentException {
   
-  inline def apply(Cause: js.Any, Context: XInterface, Message: String): DeploymentException = {
+  inline def apply(Cause: Any, Context: XInterface, Message: String): DeploymentException = {
     val __obj = js.Dynamic.literal(Cause = Cause.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentException]
   }
   
   extension [Self <: DeploymentException](x: Self) {
     
-    inline def setCause(value: js.Any): Self = StObject.set(x, "Cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: Any): Self = StObject.set(x, "Cause", value.asInstanceOf[js.Any])
   }
 }

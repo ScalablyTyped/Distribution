@@ -10,7 +10,7 @@ object id3v2tagreaderMod {
   
   @JSImport("jsmediatags/build2/ID3v2TagReader", JSImport.Default)
   @js.native
-  class default () extends ID3v2TagReader
+  open class default () extends ID3v2TagReader
   /* static members */
   object default {
     
@@ -27,6 +27,6 @@ object id3v2tagreaderMod {
   trait ID3v2TagReader
     extends typings.jsmediatags.mediaTagReaderMod.default {
     
-    def _getFrameData(frames: TagFrames, ids: js.Array[String]): js.Any = js.native
+    def _getFrameData(frames: TagFrames, ids: js.Array[String]): Any = js.native
   }
 }

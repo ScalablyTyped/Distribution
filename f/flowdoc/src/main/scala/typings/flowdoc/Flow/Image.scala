@@ -29,7 +29,7 @@ object Image {
     
     inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
-    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value*))
     
     inline def setType(value: IMAGE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

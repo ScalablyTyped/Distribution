@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CallInfo extends StObject {
   
   /** All arguments passed to the call */
-  var args: js.Array[js.Any]
+  var args: js.Array[scala.Any]
   
   /** The context (the this) for the call */
-  var `object`: js.Any
+  var `object`: scala.Any
   
   /** The return value of the call */
-  var returnValue: js.Any
+  var returnValue: scala.Any
 }
 object CallInfo {
   
-  inline def apply(args: js.Array[js.Any], `object`: js.Any, returnValue: js.Any): CallInfo = {
+  inline def apply(args: js.Array[scala.Any], `object`: scala.Any, returnValue: scala.Any): CallInfo = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallInfo]
@@ -25,12 +25,12 @@ object CallInfo {
   
   extension [Self <: CallInfo](x: Self) {
     
-    inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[scala.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: scala.Any*): Self = StObject.set(x, "args", js.Array(value*))
     
-    inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: scala.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    inline def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: scala.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

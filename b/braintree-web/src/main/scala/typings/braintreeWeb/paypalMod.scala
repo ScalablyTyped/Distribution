@@ -279,18 +279,18 @@ object paypalMod {
   
   trait PayPalTokenizeReturn extends StObject {
     
-    def close(): js.Any
+    def close(): Any
   }
   object PayPalTokenizeReturn {
     
-    inline def apply(close: () => js.Any): PayPalTokenizeReturn = {
+    inline def apply(close: () => Any): PayPalTokenizeReturn = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
       __obj.asInstanceOf[PayPalTokenizeReturn]
     }
     
     extension [Self <: PayPalTokenizeReturn](x: Self) {
       
-      inline def setClose(value: () => js.Any): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Any): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     }
   }
 }

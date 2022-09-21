@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "just-performance" : "4.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "just-performance" : "4.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

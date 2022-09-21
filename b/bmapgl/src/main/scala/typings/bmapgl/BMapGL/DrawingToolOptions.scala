@@ -42,7 +42,7 @@ object DrawingToolOptions {
     
     inline def setDrawingModesUndefined: Self = StObject.set(x, "drawingModes", js.undefined)
     
-    inline def setDrawingModesVarargs(value: DrawingType*): Self = StObject.set(x, "drawingModes", js.Array(value :_*))
+    inline def setDrawingModesVarargs(value: DrawingType*): Self = StObject.set(x, "drawingModes", js.Array(value*))
     
     inline def setEnableTips(value: Boolean): Self = StObject.set(x, "enableTips", value.asInstanceOf[js.Any])
     

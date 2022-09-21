@@ -17,7 +17,7 @@ object mod {
   /**
     * Constructor function.
     */
-  class CircularLinkedList () extends LinkedList {
+  open class CircularLinkedList () extends LinkedList {
     
     /**
       * Appends a node into the list.
@@ -47,7 +47,7 @@ object mod {
     /**
       * Retrieves a node given a data. Returns `null` upon no matches.
       */
-    def withData(data: js.Any): LinkedListNode | Null = js.native
+    def withData(data: Any): LinkedListNode | Null = js.native
   }
   /* static members */
   object CircularLinkedList {
@@ -59,12 +59,12 @@ object mod {
     /**
       * Creates a linked list from an array
       */
-    inline def fromArray(list: js.Array[js.Any], useNodes: Boolean): CircularLinkedList = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(list.asInstanceOf[js.Any], useNodes.asInstanceOf[js.Any])).asInstanceOf[CircularLinkedList]
+    inline def fromArray(list: js.Array[Any], useNodes: Boolean): CircularLinkedList = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(list.asInstanceOf[js.Any], useNodes.asInstanceOf[js.Any])).asInstanceOf[CircularLinkedList]
   }
   
   @JSImport("sylvester-es6", "Line")
   @js.native
-  class Line protected () extends StObject {
+  open class Line protected () extends StObject {
     /**
       * Constructor function.
       */
@@ -192,7 +192,7 @@ object mod {
   
   @JSImport("sylvester-es6", "LineSegment")
   @js.native
-  class LineSegment protected () extends StObject {
+  open class LineSegment protected () extends StObject {
     def this(v1: js.Array[Double], v2: js.Array[Double]) = this()
     def this(v1: js.Array[Double], v2: Vector) = this()
     def this(v1: Vector, v2: js.Array[Double]) = this()
@@ -292,14 +292,14 @@ object mod {
   /**
     * Constructor function.
     */
-  class LinkedList () extends StObject {
+  open class LinkedList () extends StObject {
     
     /**
       * Get the node at a given index.
       */
     def at(i: Double): LinkedListNode = js.native
     
-    def each(fn: js.Function2[/* node */ LinkedListNode, /* i */ Double, js.Any], context: js.Any): Unit = js.native
+    def each(fn: js.Function2[/* node */ LinkedListNode, /* i */ Double, Any], context: Any): Unit = js.native
     
     /**
       * The first element in the linked list.
@@ -309,7 +309,7 @@ object mod {
     /**
       * Executes a function to each of the node.
       */
-    def forEach(fn: js.Function2[/* node */ LinkedListNode, /* i */ Double, js.Any], context: js.Any): Unit = js.native
+    def forEach(fn: js.Function2[/* node */ LinkedListNode, /* i */ Double, Any], context: Any): Unit = js.native
     
     /**
       * The last element in the linked list.
@@ -329,7 +329,7 @@ object mod {
     /**
       * Convert this linked list into an array.
       */
-    def toArray(): js.Array[js.Any] = js.native
+    def toArray(): js.Array[Any] = js.native
   }
   /* static members */
   object LinkedList {
@@ -341,41 +341,41 @@ object mod {
     /**
       * Creates a circular linked list
       */
-    inline def Circular(data: js.Any): CircularLinkedList = ^.asInstanceOf[js.Dynamic].applyDynamic("Circular")(data.asInstanceOf[js.Any]).asInstanceOf[CircularLinkedList]
+    inline def Circular(data: Any): CircularLinkedList = ^.asInstanceOf[js.Dynamic].applyDynamic("Circular")(data.asInstanceOf[js.Any]).asInstanceOf[CircularLinkedList]
     
     /**
       * Creates a node given the data.
       */
-    inline def Node(data: js.Any): LinkedListNode = ^.asInstanceOf[js.Dynamic].applyDynamic("Node")(data.asInstanceOf[js.Any]).asInstanceOf[LinkedListNode]
+    inline def Node(data: Any): LinkedListNode = ^.asInstanceOf[js.Dynamic].applyDynamic("Node")(data.asInstanceOf[js.Any]).asInstanceOf[LinkedListNode]
   }
   
   @JSImport("sylvester-es6", "LinkedListNode")
   @js.native
-  class LinkedListNode protected () extends StObject {
+  open class LinkedListNode protected () extends StObject {
     /**
       * Constructor function.
       */
-    def this(data: js.Any) = this()
+    def this(data: Any) = this()
     
     /**
       * Current data.
       */
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     /**
       * Next data.
       */
-    var next: js.Any = js.native
+    var next: Any = js.native
     
     /**
       * Previous data.
       */
-    var prev: js.Any = js.native
+    var prev: Any = js.native
   }
   
   @JSImport("sylvester-es6", "Matrix")
   @js.native
-  class Matrix protected () extends StObject {
+  open class Matrix protected () extends StObject {
     /**
       * Constructor function.
       */
@@ -429,7 +429,7 @@ object mod {
     /**
       * Returns the number of rows/columns the matrix has.
       */
-    def dimensions(): js.Any = js.native
+    def dimensions(): Any = js.native
     
     /**
       * Returns a copy of the matrix.
@@ -439,7 +439,7 @@ object mod {
     /**
       * Returns element (i,j) of the matrix.
       */
-    def e(i: Double, j: Double): js.Any = js.native
+    def e(i: Double, j: Double): Any = js.native
     
     /**
       * Gets a nested array containing the matrix's elements.
@@ -457,7 +457,7 @@ object mod {
     /**
       * Returns the indices of the first match found by reading row-by-row from left to right.
       */
-    def indexOf(x: Double): js.Any = js.native
+    def indexOf(x: Double): Any = js.native
     
     /**
       * Returns a string representation of the matrix.
@@ -489,7 +489,7 @@ object mod {
     /**
       * Maps the matrix to another matrix (of the same dimensions) according to the given function.
       */
-    def map(fn: js.Function3[/* x */ Double, /* i */ Double, /* j */ Double, js.Any]): Matrix = js.native
+    def map(fn: js.Function3[/* x */ Double, /* i */ Double, /* j */ Double, Any]): Matrix = js.native
     
     /**
       * Returns the (absolute) largest element of the matrix.
@@ -630,7 +630,7 @@ object mod {
   
   @JSImport("sylvester-es6", "Plane")
   @js.native
-  class Plane protected () extends StObject {
+  open class Plane protected () extends StObject {
     /**
       * Constructor function.
       */
@@ -785,7 +785,7 @@ object mod {
   
   @JSImport("sylvester-es6", "Polygon")
   @js.native
-  class Polygon protected () extends StObject {
+  open class Polygon protected () extends StObject {
     /**
       * Constructor function.
       */
@@ -847,7 +847,7 @@ object mod {
     /**
       * Gets the node given the vertex.
       */
-    def nodeFor(vertex: js.Any): LinkedListNode = js.native
+    def nodeFor(vertex: Any): LinkedListNode = js.native
     
     /**
       * Populates the vertex type lists.
@@ -862,7 +862,7 @@ object mod {
     /**
       * Removes a vertex from the polygon.
       */
-    def removeVertex(vertex: js.Any): Polygon | Null = js.native
+    def removeVertex(vertex: Any): Polygon | Null = js.native
     
     /**
       * Rotates the polygon.
@@ -877,7 +877,7 @@ object mod {
     /**
       * Sets the cache of this polygon.
       */
-    def setCache(key: String, value: js.Any): js.Any = js.native
+    def setCache(key: String, value: Any): Any = js.native
     
     /**
       * Set the vertices of the polygon.
@@ -913,7 +913,7 @@ object mod {
       * Updates the plane properties of all the cached triangles belonging to the
       * polygon according to the given function.
       */
-    def updateTrianglePlanes(fn: js.Function1[/* plane */ Plane, js.Any]): Unit = js.native
+    def updateTrianglePlanes(fn: js.Function1[/* plane */ Plane, Any]): Unit = js.native
     
     /**
       * Gets the data of the vertex given the index.
@@ -928,7 +928,7 @@ object mod {
   
   @JSImport("sylvester-es6", "Vector")
   @js.native
-  class Vector protected () extends StObject {
+  open class Vector protected () extends StObject {
     def this(elements: js.Array[Double]) = this()
     /**
       * Constructor function.
@@ -985,7 +985,7 @@ object mod {
     /**
       * Calls the iterator for each element of the vector in turn.
       */
-    def each(fn: js.Function2[/* x */ Double, /* i */ Double, js.Any]): Unit = js.native
+    def each(fn: js.Function2[/* x */ Double, /* i */ Double, Any]): Unit = js.native
     
     /**
       * Gets an array containing the vector's elements.
@@ -1036,7 +1036,7 @@ object mod {
     /**
       * Maps the vector to another vector according to the given function.
       */
-    def map(fn: js.Function2[/* x */ Double, /* i */ Double, js.Any]): Vector = js.native
+    def map(fn: js.Function2[/* x */ Double, /* i */ Double, Any]): Vector = js.native
     
     /**
       * Returns the (absolute) largest element of the vector.
@@ -1147,7 +1147,7 @@ object mod {
   
   @JSImport("sylvester-es6", "Vertex")
   @js.native
-  class Vertex protected () extends Vector {
+  open class Vertex protected () extends Vector {
     def this(point: js.Array[Double]) = this()
     /**
       * The constructor function.

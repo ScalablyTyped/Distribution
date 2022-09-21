@@ -48,7 +48,7 @@ object typesGetTraceGraphOutputMod {
       
       inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
       
-      inline def setServicesVarargs(value: UnmarshalledService*): Self = StObject.set(x, "Services", js.Array(value :_*))
+      inline def setServicesVarargs(value: UnmarshalledService*): Self = StObject.set(x, "Services", js.Array(value*))
     }
   }
 }

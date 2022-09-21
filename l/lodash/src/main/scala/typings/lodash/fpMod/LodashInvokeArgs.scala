@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LodashInvokeArgs extends StObject {
   
   def apply(path: PropertyPath): LodashInvokeArgs1x1 = js.native
-  def apply(path: PropertyPath, args: js.Array[js.Any]): LodashInvokeArgs1x3 = js.native
-  def apply(path: PropertyPath, args: js.Array[js.Any], `object`: js.Any): js.Any = js.native
-  def apply(path: PropertyPath, args: __, `object`: js.Any): LodashInvokeArgs1x5 = js.native
-  def apply(path: __, args: js.Array[js.Any]): LodashInvokeArgs1x2 = js.native
-  def apply(path: __, args: js.Array[js.Any], `object`: js.Any): LodashInvokeArgs1x6 = js.native
-  def apply(path: __, args: __, `object`: js.Any): LodashInvokeArgs1x4 = js.native
+  def apply(path: PropertyPath, args: js.Array[Any]): LodashInvokeArgs1x3 = js.native
+  def apply(path: PropertyPath, args: js.Array[Any], `object`: Any): Any = js.native
+  def apply(path: PropertyPath, args: __, `object`: Any): LodashInvokeArgs1x5 = js.native
+  def apply(path: __, args: js.Array[Any]): LodashInvokeArgs1x2 = js.native
+  def apply(path: __, args: js.Array[Any], `object`: Any): LodashInvokeArgs1x6 = js.native
+  def apply(path: __, args: __, `object`: Any): LodashInvokeArgs1x4 = js.native
 }

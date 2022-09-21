@@ -22,7 +22,7 @@ object basemapGalleryMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with BasemapGallery {
     def this(properties: BasemapGalleryProperties) = this()

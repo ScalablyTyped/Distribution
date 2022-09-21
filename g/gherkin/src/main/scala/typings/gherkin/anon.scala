@@ -62,27 +62,27 @@ object anon {
       
       inline def setAnd(value: js.Array[String]): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       
-      inline def setAndVarargs(value: String*): Self = StObject.set(x, "and", js.Array(value :_*))
+      inline def setAndVarargs(value: String*): Self = StObject.set(x, "and", js.Array(value*))
       
       inline def setBackground(value: js.Array[String]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      inline def setBackgroundVarargs(value: String*): Self = StObject.set(x, "background", js.Array(value :_*))
+      inline def setBackgroundVarargs(value: String*): Self = StObject.set(x, "background", js.Array(value*))
       
       inline def setBut(value: js.Array[String]): Self = StObject.set(x, "but", value.asInstanceOf[js.Any])
       
-      inline def setButVarargs(value: String*): Self = StObject.set(x, "but", js.Array(value :_*))
+      inline def setButVarargs(value: String*): Self = StObject.set(x, "but", js.Array(value*))
       
       inline def setExamples(value: js.Array[String]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
       
-      inline def setExamplesVarargs(value: String*): Self = StObject.set(x, "examples", js.Array(value :_*))
+      inline def setExamplesVarargs(value: String*): Self = StObject.set(x, "examples", js.Array(value*))
       
       inline def setFeature(value: js.Array[String]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
-      inline def setFeatureVarargs(value: String*): Self = StObject.set(x, "feature", js.Array(value :_*))
+      inline def setFeatureVarargs(value: String*): Self = StObject.set(x, "feature", js.Array(value*))
       
       inline def setGiven(value: js.Array[String]): Self = StObject.set(x, "given", value.asInstanceOf[js.Any])
       
-      inline def setGivenVarargs(value: String*): Self = StObject.set(x, "given", js.Array(value :_*))
+      inline def setGivenVarargs(value: String*): Self = StObject.set(x, "given", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -90,23 +90,23 @@ object anon {
       
       inline def setRule(value: js.Array[String]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
-      inline def setRuleVarargs(value: String*): Self = StObject.set(x, "rule", js.Array(value :_*))
+      inline def setRuleVarargs(value: String*): Self = StObject.set(x, "rule", js.Array(value*))
       
       inline def setScenario(value: js.Array[String]): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
       
       inline def setScenarioOutline(value: js.Array[String]): Self = StObject.set(x, "scenarioOutline", value.asInstanceOf[js.Any])
       
-      inline def setScenarioOutlineVarargs(value: String*): Self = StObject.set(x, "scenarioOutline", js.Array(value :_*))
+      inline def setScenarioOutlineVarargs(value: String*): Self = StObject.set(x, "scenarioOutline", js.Array(value*))
       
-      inline def setScenarioVarargs(value: String*): Self = StObject.set(x, "scenario", js.Array(value :_*))
+      inline def setScenarioVarargs(value: String*): Self = StObject.set(x, "scenario", js.Array(value*))
       
       inline def setThen(value: js.Array[String]): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
       
-      inline def setThenVarargs(value: String*): Self = StObject.set(x, "then", js.Array(value :_*))
+      inline def setThenVarargs(value: String*): Self = StObject.set(x, "then", js.Array(value*))
       
       inline def setWhen(value: js.Array[String]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
       
-      inline def setWhenVarargs(value: String*): Self = StObject.set(x, "when", js.Array(value :_*))
+      inline def setWhenVarargs(value: String*): Self = StObject.set(x, "when", js.Array(value*))
     }
   }
   

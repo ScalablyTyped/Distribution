@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
 import typings.node.eventsMod.EventEmitter
-import typings.redis.mod.ClientOpts
-import typings.redis.mod.RedisClient
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +13,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rsmq-worker", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Client {
+  open class ^ protected () extends Client {
     def this(queuename: String) = this()
     def this(queuename: String, options: Options) = this()
   }
@@ -24,7 +21,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : js.Object & RSMQWorkerStatic = js.native
   
-  type CallbackT[R] = js.Function2[/* e */ js.UndefOr[Error], /* res */ js.UndefOr[R], Unit]
+  type CallbackT[R] = js.Function2[/* e */ js.UndefOr[js.Error], /* res */ js.UndefOr[R], Unit]
   
   @js.native
   trait Client extends EventEmitter {
@@ -47,7 +44,7 @@ object mod extends Shortcut {
   }
   
   type CustomExceedCheckCallback = js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisSMQ.Message */ /* message */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisSMQ.Message */ /* message */ Any, 
     Boolean
   ]
   
@@ -67,11 +64,15 @@ object mod extends Shortcut {
     
     var maxReceiveCount: js.UndefOr[Double] = js.undefined
     
-    var options: js.UndefOr[ClientOpts] = js.undefined
+    var options: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.ClientOpts */ Any
+      ] = js.undefined
     
     var port: js.UndefOr[Double] = js.undefined
     
-    var redis: js.UndefOr[RedisClient] = js.undefined
+    var redis: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.RedisClient */ Any
+      ] = js.undefined
     
     var redisPrefix: js.UndefOr[String] = js.undefined
     
@@ -93,7 +94,7 @@ object mod extends Shortcut {
       inline def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
       
       inline def setCustomExceedCheck(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisSMQ.Message */ /* message */ js.Any => Boolean
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisSMQ.Message */ /* message */ Any => Boolean
       ): Self = StObject.set(x, "customExceedCheck", js.Any.fromFunction1(value))
       
       inline def setCustomExceedCheckUndefined: Self = StObject.set(x, "customExceedCheck", js.undefined)
@@ -118,7 +119,9 @@ object mod extends Shortcut {
       
       inline def setMaxReceiveCountUndefined: Self = StObject.set(x, "maxReceiveCount", js.undefined)
       
-      inline def setOptions(value: ClientOpts): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.ClientOpts */ Any
+      ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
@@ -126,7 +129,9 @@ object mod extends Shortcut {
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      inline def setRedis(value: RedisClient): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
+      inline def setRedis(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.RedisClient */ Any
+      ): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
       
       inline def setRedisPrefix(value: String): Self = StObject.set(x, "redisPrefix", value.asInstanceOf[js.Any])
       

@@ -10,7 +10,7 @@ object segmentedControlPropsTypeMod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* e */ Any, Unit]] = js.undefined
     
     var onValueChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
@@ -35,7 +35,7 @@ object segmentedControlPropsTypeMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setOnChange(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -59,7 +59,7 @@ object segmentedControlPropsTypeMod {
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
 }

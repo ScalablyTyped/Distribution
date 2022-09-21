@@ -34,7 +34,7 @@ object AutoInstallPolicy {
     
     inline def setAutoInstallConstraintUndefined: Self = StObject.set(x, "autoInstallConstraint", js.undefined)
     
-    inline def setAutoInstallConstraintVarargs(value: AutoInstallConstraint*): Self = StObject.set(x, "autoInstallConstraint", js.Array(value :_*))
+    inline def setAutoInstallConstraintVarargs(value: AutoInstallConstraint*): Self = StObject.set(x, "autoInstallConstraint", js.Array(value*))
     
     inline def setAutoInstallMode(value: String): Self = StObject.set(x, "autoInstallMode", value.asInstanceOf[js.Any])
     

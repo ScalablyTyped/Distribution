@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DialRequestedEventArgs extends StObject {
   
   /** Returns the contact that was dialed. */
-  var contact: js.Any
+  var contact: Any
   
   /** Indicates that the DialRequested event has been handled. */
   def handled(): Unit
 }
 object DialRequestedEventArgs {
   
-  inline def apply(contact: js.Any, handled: () => Unit): DialRequestedEventArgs = {
+  inline def apply(contact: Any, handled: () => Unit): DialRequestedEventArgs = {
     val __obj = js.Dynamic.literal(contact = contact.asInstanceOf[js.Any], handled = js.Any.fromFunction0(handled))
     __obj.asInstanceOf[DialRequestedEventArgs]
   }
   
   extension [Self <: DialRequestedEventArgs](x: Self) {
     
-    inline def setContact(value: js.Any): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    inline def setContact(value: Any): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     inline def setHandled(value: () => Unit): Self = StObject.set(x, "handled", js.Any.fromFunction0(value))
   }

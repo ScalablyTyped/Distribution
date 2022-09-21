@@ -36,7 +36,16 @@ trait PortalQueryParams
   var extent: Extent = js.native
   
   /**
+    * Structured filter to use instead of the [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#query) property.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#filter)
+    */
+  var filter: String = js.native
+  
+  /**
     * The maximum number of results to be included in the [result](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#results) set response.
+    *
+    * @default 10
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#num)
     */
@@ -59,12 +68,16 @@ trait PortalQueryParams
   /**
     * The order in which to sort the results.
     *
+    * @default asc
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#sortOrder)
     */
   var sortOrder: asc_ | desc_ = js.native
   
   /**
     * The index of the first entry in the result set response.
+    *
+    * @default 1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#start)
     */

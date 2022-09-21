@@ -68,23 +68,23 @@ object optionsMod {
       
       inline def setAbbrDayNames(value: js.Array[String]): Self = StObject.set(x, "abbrDayNames", value.asInstanceOf[js.Any])
       
-      inline def setAbbrDayNamesVarargs(value: String*): Self = StObject.set(x, "abbrDayNames", js.Array(value :_*))
+      inline def setAbbrDayNamesVarargs(value: String*): Self = StObject.set(x, "abbrDayNames", js.Array(value*))
       
       inline def setAbbrMonthNames(value: js.Array[String]): Self = StObject.set(x, "abbrMonthNames", value.asInstanceOf[js.Any])
       
-      inline def setAbbrMonthNamesVarargs(value: String*): Self = StObject.set(x, "abbrMonthNames", js.Array(value :_*))
+      inline def setAbbrMonthNamesVarargs(value: String*): Self = StObject.set(x, "abbrMonthNames", js.Array(value*))
       
       inline def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
       
       inline def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
       
-      inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
+      inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value*))
       
       inline def setDs(value: String): Self = StObject.set(x, "ds", value.asInstanceOf[js.Any])
       
       inline def setGenMonthNames(value: js.Array[String]): Self = StObject.set(x, "genMonthNames", value.asInstanceOf[js.Any])
       
-      inline def setGenMonthNamesVarargs(value: String*): Self = StObject.set(x, "genMonthNames", js.Array(value :_*))
+      inline def setGenMonthNamesVarargs(value: String*): Self = StObject.set(x, "genMonthNames", js.Array(value*))
       
       inline def setLongDate(value: String): Self = StObject.set(x, "longDate", value.asInstanceOf[js.Any])
       
@@ -94,7 +94,7 @@ object optionsMod {
       
       inline def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
       
-      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value*))
       
       inline def setPm(value: String): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
       
@@ -221,7 +221,7 @@ object optionsMod {
       
       inline def setCurrGroups(value: js.Array[Double]): Self = StObject.set(x, "currGroups", value.asInstanceOf[js.Any])
       
-      inline def setCurrGroupsVarargs(value: Double*): Self = StObject.set(x, "currGroups", js.Array(value :_*))
+      inline def setCurrGroupsVarargs(value: Double*): Self = StObject.set(x, "currGroups", js.Array(value*))
       
       inline def setCurrNegPattern(value: Double): Self = StObject.set(x, "currNegPattern", value.asInstanceOf[js.Any])
       
@@ -237,7 +237,7 @@ object optionsMod {
       
       inline def setNumGroups(value: js.Array[Double]): Self = StObject.set(x, "numGroups", value.asInstanceOf[js.Any])
       
-      inline def setNumGroupsVarargs(value: Double*): Self = StObject.set(x, "numGroups", js.Array(value :_*))
+      inline def setNumGroupsVarargs(value: Double*): Self = StObject.set(x, "numGroups", js.Array(value*))
       
       inline def setNumNan(value: String): Self = StObject.set(x, "numNan", value.asInstanceOf[js.Any])
       

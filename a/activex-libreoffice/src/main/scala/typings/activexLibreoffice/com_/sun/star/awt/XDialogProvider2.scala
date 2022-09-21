@@ -40,7 +40,7 @@ object XDialogProvider2 {
     createDialog: String => XDialog,
     createDialogWithArguments: (String, SeqEquiv[NamedValue]) => XDialog,
     createDialogWithHandler: (String, XInterface) => XDialog,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDialogProvider2 = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDialog = js.Any.fromFunction1(createDialog), createDialogWithArguments = js.Any.fromFunction2(createDialogWithArguments), createDialogWithHandler = js.Any.fromFunction2(createDialogWithHandler), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

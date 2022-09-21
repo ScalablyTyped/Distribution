@@ -1,18 +1,18 @@
 package typings.mangopay2NodejsSdk.mod.models
 
 import typings.mangopay2NodejsSdk.anon.PartialDisputeData
-import typings.mangopay2NodejsSdk.mod.MoneyData
-import typings.mangopay2NodejsSdk.mod.Timestamp
-import typings.mangopay2NodejsSdk.mod.dispute.DisputeData
-import typings.mangopay2NodejsSdk.mod.dispute.DisputeStatus
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
+import typings.mangopay2NodejsSdk.disputeMod.dispute.DisputeData
+import typings.mangopay2NodejsSdk.disputeMod.dispute.DisputeStatus
+import typings.mangopay2NodejsSdk.moneyMod.money.MoneyData
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionType
+import typings.mangopay2NodejsSdk.typesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.Dispute")
 @js.native
-class Dispute protected ()
+open class Dispute protected ()
   extends EntityBase[DisputeData]
      with DisputeData {
   def this(data: PartialDisputeData) = this()
@@ -36,13 +36,13 @@ class Dispute protected ()
     * Info about the reason for the dispute
     */
   /* CompleteClass */
-  var DisputeReason: typings.mangopay2NodejsSdk.mod.dispute.DisputeReason = js.native
+  var DisputeReason: typings.mangopay2NodejsSdk.disputeMod.dispute.DisputeReason = js.native
   
   /**
     * The type of dispute
     */
   /* CompleteClass */
-  var DisputeType: typings.mangopay2NodejsSdk.mod.dispute.DisputeType = js.native
+  var DisputeType: typings.mangopay2NodejsSdk.disputeMod.dispute.DisputeType = js.native
   
   /**
     * The amount of funds that were disputed

@@ -9,11 +9,11 @@ Podcast RSS feed generator. A really simple API to add Podcast-RSS feeds to any 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | podcast |
-| Keywords           | - |
+| Keywords           | podcast, rss, typescript, feed, nodejs |
 | # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 30240 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 6296.333333333333 |
+| # stars            | 126.0 |
 
 ## Links
 - [Homepage](http://github.com/maxnowack/node-podcast)

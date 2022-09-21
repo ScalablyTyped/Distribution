@@ -5,15 +5,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Corresponds to the `Response` field in the Dialogflow console.
-  */
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessage extends StObject {
   
   /**
     * Displays a basic card for Actions on Google.
     */
   var basicCard: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCard] = js.undefined
+  
+  /**
+    * Browse carousel card for Actions on Google.
+    */
+  var browseCarouselCard: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCard] = js.undefined
   
   /**
     * Displays a card.
@@ -41,21 +43,39 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentMessage extends StObject {
   var listSelect: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelect] = js.undefined
   
   /**
-    * Returns a response containing a custom, platform-specific payload. See
-    * the Intent.Message.Platform type for a description of the structure that
-    * may be required for your platform.
+    * The media content card for Actions on Google.
     */
-  var payload: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var mediaContent: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageMediaContent] = js.undefined
+  
+  /**
+    * A custom platform-specific response.
+    */
+  var payload: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
   
   /**
     * Optional. The platform that this message is intended for.
     */
-  var platform: js.UndefOr[String] = js.undefined
+  var platform: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Displays quick replies.
     */
   var quickReplies: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageQuickReplies] = js.undefined
+  
+  /**
+    * Rich Business Messaging (RBM) carousel rich card response.
+    */
+  var rbmCarouselRichCard: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard] = js.undefined
+  
+  /**
+    * Standalone Rich Business Messaging (RBM) rich card response.
+    */
+  var rbmStandaloneRichCard: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageRbmStandaloneCard] = js.undefined
+  
+  /**
+    * Rich Business Messaging (RBM) text response. RBM allows businesses to send enriched and branded versions of SMS. See https://jibe.google.com/business-messaging.
+    */
+  var rbmText: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageRbmText] = js.undefined
   
   /**
     * Returns a voice or text-only response for Actions on Google.
@@ -66,6 +86,11 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentMessage extends StObject {
     * Displays suggestion chips for Actions on Google.
     */
   var suggestions: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestions] = js.undefined
+  
+  /**
+    * Table card for Actions on Google.
+    */
+  var tableCard: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1IntentMessageTableCard] = js.undefined
   
   /**
     * Plays audio from a file in Telephony Gateway.
@@ -100,6 +125,10 @@ object SchemaGoogleCloudDialogflowV2beta1IntentMessage {
     
     inline def setBasicCardUndefined: Self = StObject.set(x, "basicCard", js.undefined)
     
+    inline def setBrowseCarouselCard(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCard): Self = StObject.set(x, "browseCarouselCard", value.asInstanceOf[js.Any])
+    
+    inline def setBrowseCarouselCardUndefined: Self = StObject.set(x, "browseCarouselCard", js.undefined)
+    
     inline def setCard(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
@@ -120,17 +149,37 @@ object SchemaGoogleCloudDialogflowV2beta1IntentMessage {
     
     inline def setListSelectUndefined: Self = StObject.set(x, "listSelect", js.undefined)
     
-    inline def setPayload(value: StringDictionary[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setMediaContent(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageMediaContent): Self = StObject.set(x, "mediaContent", value.asInstanceOf[js.Any])
+    
+    inline def setMediaContentUndefined: Self = StObject.set(x, "mediaContent", js.undefined)
+    
+    inline def setPayload(value: StringDictionary[Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setPayloadNull: Self = StObject.set(x, "payload", null)
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformNull: Self = StObject.set(x, "platform", null)
     
     inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     inline def setQuickReplies(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageQuickReplies): Self = StObject.set(x, "quickReplies", value.asInstanceOf[js.Any])
     
     inline def setQuickRepliesUndefined: Self = StObject.set(x, "quickReplies", js.undefined)
+    
+    inline def setRbmCarouselRichCard(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard): Self = StObject.set(x, "rbmCarouselRichCard", value.asInstanceOf[js.Any])
+    
+    inline def setRbmCarouselRichCardUndefined: Self = StObject.set(x, "rbmCarouselRichCard", js.undefined)
+    
+    inline def setRbmStandaloneRichCard(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageRbmStandaloneCard): Self = StObject.set(x, "rbmStandaloneRichCard", value.asInstanceOf[js.Any])
+    
+    inline def setRbmStandaloneRichCardUndefined: Self = StObject.set(x, "rbmStandaloneRichCard", js.undefined)
+    
+    inline def setRbmText(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageRbmText): Self = StObject.set(x, "rbmText", value.asInstanceOf[js.Any])
+    
+    inline def setRbmTextUndefined: Self = StObject.set(x, "rbmText", js.undefined)
     
     inline def setSimpleResponses(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageSimpleResponses): Self = StObject.set(x, "simpleResponses", value.asInstanceOf[js.Any])
     
@@ -139,6 +188,10 @@ object SchemaGoogleCloudDialogflowV2beta1IntentMessage {
     inline def setSuggestions(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageSuggestions): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
     inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
+    
+    inline def setTableCard(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageTableCard): Self = StObject.set(x, "tableCard", value.asInstanceOf[js.Any])
+    
+    inline def setTableCardUndefined: Self = StObject.set(x, "tableCard", js.undefined)
     
     inline def setTelephonyPlayAudio(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio): Self = StObject.set(x, "telephonyPlayAudio", value.asInstanceOf[js.Any])
     

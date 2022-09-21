@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SpeechRecognitionAlternative extends StObject {
   
+  /* standard dom */
   val confidence: Double
   
+  /* standard dom */
   val transcript: java.lang.String
 }
 object SpeechRecognitionAlternative {

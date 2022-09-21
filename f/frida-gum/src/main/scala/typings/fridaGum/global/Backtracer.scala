@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // tslint:disable-next-line:no-unnecessary-class
 @JSGlobal("Backtracer")
 @js.native
-class Backtracer ()
+open class Backtracer ()
   extends StObject
      with typings.fridaGum.Backtracer
 object Backtracer {

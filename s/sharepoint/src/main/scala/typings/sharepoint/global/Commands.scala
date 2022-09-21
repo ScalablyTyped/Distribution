@@ -8,7 +8,7 @@ object Commands {
   
   @JSGlobal("Commands.CommandIds")
   @js.native
-  class CommandIds ()
+  open class CommandIds ()
     extends StObject
        with typings.sharepoint.Commands.CommandIds
   object CommandIds {
@@ -50,7 +50,7 @@ object Commands {
   
   @JSGlobal("Commands.GlobalRedoProperties")
   @js.native
-  class GlobalRedoProperties ()
+  open class GlobalRedoProperties ()
     extends StObject
        with typings.sharepoint.Commands.GlobalRedoProperties
   object GlobalRedoProperties {
@@ -68,7 +68,7 @@ object Commands {
   
   @JSGlobal("Commands.GlobalUndoProperties")
   @js.native
-  class GlobalUndoProperties ()
+  open class GlobalUndoProperties ()
     extends StObject
        with typings.sharepoint.Commands.GlobalUndoProperties
   object GlobalUndoProperties {
@@ -86,7 +86,7 @@ object Commands {
   
   @JSGlobal("Commands.RedoProperties")
   @js.native
-  class RedoProperties ()
+  open class RedoProperties ()
     extends StObject
        with typings.sharepoint.Commands.RedoProperties
   object RedoProperties {
@@ -104,7 +104,7 @@ object Commands {
   
   @JSGlobal("Commands.UndoProperties")
   @js.native
-  class UndoProperties ()
+  open class UndoProperties ()
     extends StObject
        with typings.sharepoint.Commands.UndoProperties
   object UndoProperties {

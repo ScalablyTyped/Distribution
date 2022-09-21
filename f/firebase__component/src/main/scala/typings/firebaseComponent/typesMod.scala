@@ -23,22 +23,52 @@ object typesMod {
     inline def VERSION: typings.firebaseComponent.firebaseComponentStrings.VERSION = "VERSION".asInstanceOf[typings.firebaseComponent.firebaseComponentStrings.VERSION]
   }
   
-  type Dictionary = StringDictionary[js.Any]
+  type Dictionary = StringDictionary[Any]
+  
+  type InitializeOptions = InstanceFactoryOptions
   
   type InstanceFactory[T /* <: Name */] = js.Function2[
     /* container */ ComponentContainer, 
-    /* instanceIdentifier */ js.UndefOr[String], 
-    /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any
+    /* options */ InstanceFactoryOptions, 
+    /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/esm/src/types.NameServiceMapping[T] */ js.Any
   ]
+  
+  trait InstanceFactoryOptions extends StObject {
+    
+    var instanceIdentifier: js.UndefOr[String] = js.undefined
+    
+    var options: js.UndefOr[js.Object] = js.undefined
+  }
+  object InstanceFactoryOptions {
+    
+    inline def apply(): InstanceFactoryOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InstanceFactoryOptions]
+    }
+    
+    extension [Self <: InstanceFactoryOptions](x: Self) {
+      
+      inline def setInstanceIdentifier(value: String): Self = StObject.set(x, "instanceIdentifier", value.asInstanceOf[js.Any])
+      
+      inline def setInstanceIdentifierUndefined: Self = StObject.set(x, "instanceIdentifier", js.undefined)
+      
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    }
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.firebaseComponent.firebaseComponentStrings.LAZY
     - typings.firebaseComponent.firebaseComponentStrings.EAGER
+    - typings.firebaseComponent.firebaseComponentStrings.EXPLICIT
   */
   trait InstantiationMode extends StObject
   object InstantiationMode {
     
     inline def EAGER: typings.firebaseComponent.firebaseComponentStrings.EAGER = "EAGER".asInstanceOf[typings.firebaseComponent.firebaseComponentStrings.EAGER]
+    
+    inline def EXPLICIT: typings.firebaseComponent.firebaseComponentStrings.EXPLICIT = "EXPLICIT".asInstanceOf[typings.firebaseComponent.firebaseComponentStrings.EXPLICIT]
     
     inline def LAZY: typings.firebaseComponent.firebaseComponentStrings.LAZY = "LAZY".asInstanceOf[typings.firebaseComponent.firebaseComponentStrings.LAZY]
   }
@@ -54,6 +84,19 @@ object typesMod {
   
   trait NameServiceMapping extends StObject
   
-  /* Inlined @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[@firebase/component.@firebase/component/dist/src/types.Name] */
+  type OnInitCallBack[T /* <: Name */] = js.Function2[
+    /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/esm/src/types.NameServiceMapping[T] */ /* instance */ js.Any, 
+    /* identifier */ String, 
+    Unit
+  ]
+  
+  /* Inlined @firebase/component.@firebase/component/dist/esm/src/types.NameServiceMapping[@firebase/component.@firebase/component/dist/esm/src/types.Name] */
   type Service = scala.Nothing
+  
+  type onInstanceCreatedCallback[T /* <: Name */] = js.Function3[
+    /* container */ ComponentContainer, 
+    /* instanceIdentifier */ String, 
+    /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/esm/src/types.NameServiceMapping[T] */ /* instance */ js.Any, 
+    Unit
+  ]
 }

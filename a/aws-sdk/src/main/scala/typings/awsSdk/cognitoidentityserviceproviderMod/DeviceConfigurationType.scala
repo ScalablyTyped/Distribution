@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceConfigurationType extends StObject {
   
   /**
-    * Indicates whether a challenge is required on a new device. Only applicable to a new device.
+    * When true, a remembered device can sign in with device authentication instead of SMS and time-based one-time password (TOTP) factors for multi-factor authentication (MFA).  Whether or not ChallengeRequiredOnNewDevice is true, users who sign in with devices that have not been confirmed or remembered must still provide a second factor in a user pool that requires MFA. 
     */
   var ChallengeRequiredOnNewDevice: js.UndefOr[BooleanType] = js.undefined
   
   /**
-    * If true, a device is only remembered on user prompt.
+    * When true, Amazon Cognito doesn't automatically remember a user's device when your app sends a  ConfirmDevice API request. In your app, create a prompt for your user to choose whether they want to remember their device. Return the user's choice in an  UpdateDeviceStatus API request. When DeviceOnlyRememberedOnUserPrompt is false, Amazon Cognito immediately remembers devices that you register in a ConfirmDevice API request.
     */
   var DeviceOnlyRememberedOnUserPrompt: js.UndefOr[BooleanType] = js.undefined
 }

@@ -19,5 +19,5 @@ object isFullWidthMod {
   inline def IsFullWidth_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFullWidth")().asInstanceOf[PropertyDecorator]
   inline def IsFullWidth_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFullWidth")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  inline def isFullWidth(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullWidth")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFullWidth(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullWidth")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -1,7 +1,7 @@
 package typings.rascal.mod
 
+import typings.rascal.anon.ClientProperties
 import typings.rascal.anon.Dictkey
-import typings.rascal.anon.Timeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +28,7 @@ trait ConnectionAttributes extends StObject {
   
   var slashes: js.UndefOr[Boolean] = js.undefined
   
-  var socketOptions: js.UndefOr[Timeout] = js.undefined
+  var socketOptions: js.UndefOr[ClientProperties] = js.undefined
   
   var url: js.UndefOr[String] = js.undefined
   
@@ -85,7 +85,7 @@ object ConnectionAttributes {
     
     inline def setSlashesUndefined: Self = StObject.set(x, "slashes", js.undefined)
     
-    inline def setSocketOptions(value: Timeout): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
+    inline def setSocketOptions(value: ClientProperties): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
     
     inline def setSocketOptionsUndefined: Self = StObject.set(x, "socketOptions", js.undefined)
     

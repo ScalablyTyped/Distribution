@@ -14,7 +14,7 @@ trait SmartArray[T]
     * Concats the active data with a given array.
     * @param array defines the data to concatenate with.
     */
-  def concat(array: js.Any): Unit
+  def concat(array: Any): Unit
   
   /**
     * Returns whether an element is part of the active data.
@@ -62,7 +62,7 @@ object SmartArray {
   
   inline def apply[T](
     _id: Double,
-    concat: js.Any => Unit,
+    concat: Any => Unit,
     contains: T => Boolean,
     data: js.Array[T],
     dispose: () => Unit,
@@ -79,7 +79,7 @@ object SmartArray {
   
   extension [Self <: SmartArray[?], T](x: Self & SmartArray[T]) {
     
-    inline def setConcat(value: js.Any => Unit): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
+    inline def setConcat(value: Any => Unit): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     
     inline def setContains(value: T => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     

@@ -22,6 +22,6 @@ object BatchGetVariableRequest {
     
     inline def setNames(value: NameList): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
   }
 }

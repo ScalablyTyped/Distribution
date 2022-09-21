@@ -33,14 +33,14 @@ trait ISortable
     * @returns Ext.util.Sorter[]
     */
   var sort: js.UndefOr[
-    js.Function2[/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String], Array]
+    js.Function2[/* sorters */ js.UndefOr[Any], /* direction */ js.UndefOr[String], Array]
   ] = js.undefined
   
   /** [Config Option] (String) */
   var sortRoot: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Ext.util.Sorter[]/Object[]) */
-  var sorters: js.UndefOr[js.Any] = js.undefined
+  var sorters: js.UndefOr[Any] = js.undefined
 }
 object ISortable {
   
@@ -71,7 +71,7 @@ object ISortable {
     
     inline def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
     
-    inline def setSort(value: (/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String]) => Array): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+    inline def setSort(value: (/* sorters */ js.UndefOr[Any], /* direction */ js.UndefOr[String]) => Array): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
     
     inline def setSortRoot(value: String): Self = StObject.set(x, "sortRoot", value.asInstanceOf[js.Any])
     
@@ -79,7 +79,7 @@ object ISortable {
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    inline def setSorters(value: js.Any): Self = StObject.set(x, "sorters", value.asInstanceOf[js.Any])
+    inline def setSorters(value: Any): Self = StObject.set(x, "sorters", value.asInstanceOf[js.Any])
     
     inline def setSortersUndefined: Self = StObject.set(x, "sorters", js.undefined)
   }

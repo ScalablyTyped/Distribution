@@ -13,7 +13,7 @@ trait DatetimeValue extends StObject {
   
   var intValue: js.UndefOr[String] = js.undefined
   
-  var msgValue: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
+  var msgValue: js.UndefOr[js.Array[StringDictionary[Any]]] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -40,11 +40,11 @@ object DatetimeValue {
     
     inline def setIntValueUndefined: Self = StObject.set(x, "intValue", js.undefined)
     
-    inline def setMsgValue(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "msgValue", value.asInstanceOf[js.Any])
+    inline def setMsgValue(value: js.Array[StringDictionary[Any]]): Self = StObject.set(x, "msgValue", value.asInstanceOf[js.Any])
     
     inline def setMsgValueUndefined: Self = StObject.set(x, "msgValue", js.undefined)
     
-    inline def setMsgValueVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "msgValue", js.Array(value :_*))
+    inline def setMsgValueVarargs(value: StringDictionary[Any]*): Self = StObject.set(x, "msgValue", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

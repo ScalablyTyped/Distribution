@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +11,11 @@ trait LightSensorReading extends StObject {
   var illuminanceInLux: Double
   
   /** Gets the time at which the sensor reported the reading. */
-  var timestamp: Date
+  var timestamp: js.Date
 }
 object LightSensorReading {
   
-  inline def apply(illuminanceInLux: Double, timestamp: Date): LightSensorReading = {
+  inline def apply(illuminanceInLux: Double, timestamp: js.Date): LightSensorReading = {
     val __obj = js.Dynamic.literal(illuminanceInLux = illuminanceInLux.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[LightSensorReading]
   }
@@ -25,6 +24,6 @@ object LightSensorReading {
     
     inline def setIlluminanceInLux(value: Double): Self = StObject.set(x, "illuminanceInLux", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

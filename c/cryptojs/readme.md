@@ -10,10 +10,10 @@ Following googlecode project crypto-js, provide standard and secure cryptographi
 | ------------------ | :-------------: |
 | Full name          | cryptojs |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 36 |
-| # downloads        | 112124 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 18883.666666666668 |
+| # stars            | 317.0 |
 
 ## Links
 - [Homepage](https://github.com/gwjjeff/cryptojs)

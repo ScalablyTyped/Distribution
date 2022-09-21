@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.PublishObject")
 @js.native
-/* private */ class PublishObject ()
+/* private */ open class PublishObject ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.PublishObject {
   
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var HTMLVersion: PpHTMLVersion = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.PublishObject_typekey")

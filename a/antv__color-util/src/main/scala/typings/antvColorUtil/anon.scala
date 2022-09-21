@@ -10,8 +10,8 @@ object anon {
   @js.native
   trait Call extends StObject {
     
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(args: Any*): Any = js.native
     
-    var cache: Map[js.Any, js.Any] = js.native
+    var cache: Map[Any, Any] = js.native
   }
 }

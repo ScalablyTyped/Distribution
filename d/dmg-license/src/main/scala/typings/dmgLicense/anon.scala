@@ -1,0 +1,156 @@
+package typings.dmgLicense
+
+import typings.dmgLicense.dmgLicenseBooleans.`false`
+import typings.dmgLicense.dmgLicenseBooleans.`true`
+import typings.dmgLicense.dmgLicenseStrings.TEXT
+import typings.dmgLicense.dmgLicenseStrings.`RTF `
+import typings.dmgLicense.languageMod.Language
+import typings.dmgLicense.languageMod.Localization
+import typings.node.bufferMod.global.Buffer
+import typings.plist.mod.PlistObject
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object anon {
+  
+  trait `0`[U] extends StObject {
+    
+    def onNoLanguageName(): js.Promise[U]
+  }
+  object `0` {
+    
+    inline def apply[U](onNoLanguageName: () => js.Promise[U]): `0`[U] = {
+      val __obj = js.Dynamic.literal(onNoLanguageName = js.Any.fromFunction0(onNoLanguageName))
+      __obj.asInstanceOf[`0`[U]]
+    }
+    
+    extension [Self <: `0`[?], U](x: Self & `0`[U]) {
+      
+      inline def setOnNoLanguageName(value: () => js.Promise[U]): Self = StObject.set(x, "onNoLanguageName", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait `1`[U] extends StObject {
+    
+    def onNoLanguageName(): U
+  }
+  object `1` {
+    
+    inline def apply[U](onNoLanguageName: () => U): `1`[U] = {
+      val __obj = js.Dynamic.literal(onNoLanguageName = js.Any.fromFunction0(onNoLanguageName))
+      __obj.asInstanceOf[`1`[U]]
+    }
+    
+    extension [Self <: `1`[?], U](x: Self & `1`[U]) {
+      
+      inline def setOnNoLanguageName(value: () => U): Self = StObject.set(x, "onNoLanguageName", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait `2`[T /* <: Localization */, U] extends StObject {
+    
+    def map(`object`: T, lang: Language): U
+  }
+  object `2` {
+    
+    inline def apply[T /* <: Localization */, U](map: (T, Language) => U): `2`[T, U] = {
+      val __obj = js.Dynamic.literal(map = js.Any.fromFunction2(map))
+      __obj.asInstanceOf[`2`[T, U]]
+    }
+    
+    extension [Self <: `2`[?, ?], T /* <: Localization */, U](x: Self & (`2`[T, U])) {
+      
+      inline def setMap(value: (T, Language) => U): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    }
+  }
+  
+  /* Inlined dmg-license.dmg-license/lib/Labels.Labels.CreateOptions & {  includeLanguageName :true} */
+  trait CreateOptionsincludeLangu extends StObject {
+    
+    var includeLanguageName: js.UndefOr[Boolean] & `true`
+  }
+  object CreateOptionsincludeLangu {
+    
+    inline def apply(includeLanguageName: js.UndefOr[Boolean] & `true`): CreateOptionsincludeLangu = {
+      val __obj = js.Dynamic.literal(includeLanguageName = includeLanguageName.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CreateOptionsincludeLangu]
+    }
+    
+    extension [Self <: CreateOptionsincludeLangu](x: Self) {
+      
+      inline def setIncludeLanguageName(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "includeLanguageName", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined dmg-license.dmg-license/lib/Labels.Labels.CreateOptions & {  includeLanguageName :false | undefined} */
+  trait CreateOptionsincludeLanguIncludeLanguageName extends StObject {
+    
+    var includeLanguageName: js.UndefOr[Boolean] & js.UndefOr[`false`]
+  }
+  object CreateOptionsincludeLanguIncludeLanguageName {
+    
+    inline def apply(includeLanguageName: js.UndefOr[Boolean] & js.UndefOr[`false`]): CreateOptionsincludeLanguIncludeLanguageName = {
+      val __obj = js.Dynamic.literal(includeLanguageName = includeLanguageName.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CreateOptionsincludeLanguIncludeLanguageName]
+    }
+    
+    extension [Self <: CreateOptionsincludeLanguIncludeLanguageName](x: Self) {
+      
+      inline def setIncludeLanguageName(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "includeLanguageName", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Data extends StObject {
+    
+    var data: Buffer
+    
+    var `type`: (`RTF `) | TEXT
+  }
+  object Data {
+    
+    inline def apply(data: Buffer, `type`: (`RTF `) | TEXT): Data = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Data]
+    }
+    
+    extension [Self <: Data](x: Self) {
+      
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: (`RTF `) | TEXT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Map extends StObject {
+    
+    var map: js.UndefOr[scala.Nothing] = js.undefined
+  }
+  
+  trait OnNoLanguageName extends StObject {
+    
+    var onNoLanguageName: js.UndefOr[scala.Nothing] = js.undefined
+  }
+  
+  trait Plist extends StObject {
+    
+    var plist: PlistObject
+    
+    var plistText: String
+  }
+  object Plist {
+    
+    inline def apply(plist: PlistObject, plistText: String): Plist = {
+      val __obj = js.Dynamic.literal(plist = plist.asInstanceOf[js.Any], plistText = plistText.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Plist]
+    }
+    
+    extension [Self <: Plist](x: Self) {
+      
+      inline def setPlist(value: PlistObject): Self = StObject.set(x, "plist", value.asInstanceOf[js.Any])
+      
+      inline def setPlistText(value: String): Self = StObject.set(x, "plistText", value.asInstanceOf[js.Any])
+    }
+  }
+}

@@ -12,7 +12,7 @@ trait GetSchemaByDefinitionResponse extends StObject {
   var CreatedTime: js.UndefOr[CreatedTimestamp] = js.undefined
   
   /**
-    * The data format of the schema definition. Currently only AVRO is supported.
+    * The data format of the schema definition. Currently AVRO, JSON and PROTOBUF are supported.
     */
   var DataFormat: js.UndefOr[typings.awsSdk.glueMod.DataFormat] = js.undefined
   

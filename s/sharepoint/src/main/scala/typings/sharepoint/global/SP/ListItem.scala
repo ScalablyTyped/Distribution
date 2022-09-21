@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents an item or row in a list. */
 @JSGlobal("SP.ListItem")
 @js.native
-class ListItem[T] ()
+open class ListItem[T] ()
   extends StObject
      with typings.sharepoint.SP.ListItem[T]

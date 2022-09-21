@@ -7,20 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait DelegatePermissions extends StObject
 /**
-  * This bit mask represents a delegate's permissions on a shared folder.
-  *
-  * [Api set: Mailbox 1.8]
+  * This bitmask represents a delegate's permissions on a shared folder, or a user's permissions on a shared mailbox.
   *
   * @remarks
+  * [Api set: Mailbox 1.8]
   *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.DelegatePermissions")
 @js.native
 object DelegatePermissions extends StObject {
   
   /**
-    * Delegate has permission to delete any items.
+    * Delegate or user has permission to delete any items.
     */
   @js.native
   sealed trait DeleteAll
@@ -28,7 +27,7 @@ object DelegatePermissions extends StObject {
        with DelegatePermissions
   
   /**
-    * Delegate has permission to delete only the items they created.
+    * Delegate or user has permission to delete only the items they created.
     */
   @js.native
   sealed trait DeleteOwn
@@ -36,7 +35,7 @@ object DelegatePermissions extends StObject {
        with DelegatePermissions
   
   /**
-    * Delegate has permission to edit any items.
+    * Delegate or user has permission to edit any items.
     */
   @js.native
   sealed trait EditAll
@@ -44,7 +43,7 @@ object DelegatePermissions extends StObject {
        with DelegatePermissions
   
   /**
-    * Delegate has permission to edit only they items they created.
+    * Delegate or user has permission to edit only they items they created.
     */
   @js.native
   sealed trait EditOwn
@@ -52,7 +51,7 @@ object DelegatePermissions extends StObject {
        with DelegatePermissions
   
   /**
-    * Delegate has permission to read items.
+    * Delegate or user has permission to read items.
     */
   @js.native
   sealed trait Read
@@ -60,7 +59,7 @@ object DelegatePermissions extends StObject {
        with DelegatePermissions
   
   /**
-    * Delegate has permission to create and write items.
+    * Delegate or user has permission to create and write items.
     */
   @js.native
   sealed trait Write

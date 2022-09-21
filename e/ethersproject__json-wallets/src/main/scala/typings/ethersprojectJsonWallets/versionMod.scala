@@ -8,5 +8,5 @@ object versionMod {
   
   @JSImport("@ethersproject/json-wallets/lib/_version", "version")
   @js.native
-  val version: /* "json-wallets/5.0.8" */ String = js.native
+  val version: /* "json-wallets/5.7.0" */ String = js.native
 }

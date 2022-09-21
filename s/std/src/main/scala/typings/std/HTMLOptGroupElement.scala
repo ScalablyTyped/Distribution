@@ -11,26 +11,21 @@ trait HTMLOptGroupElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   var disabled: scala.Boolean = js.native
   
-  /**
-    * Retrieves a reference to the form that the object is embedded in.
-    */
-  val form: HTMLFormElement | Null = js.native
-  
-  /**
-    * Sets or retrieves a value that you can use to implement your own label functionality for the object.
-    */
+  /** Sets or retrieves a value that you can use to implement your own label functionality for the object. */
+  /* standard dom */
   var label: java.lang.String = js.native
   
   /* InferMemberOverrides */

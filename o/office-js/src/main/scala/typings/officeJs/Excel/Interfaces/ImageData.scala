@@ -15,17 +15,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageData extends StObject {
   
   /**
-    *
     * Returns the format of the image.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var format: js.UndefOr[PictureFormat | UNKNOWN | BMP | JPEG | GIF | PNG | SVG] = js.undefined
   
   /**
-    *
     * Specifies the shape identifier for the image object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[String] = js.undefined

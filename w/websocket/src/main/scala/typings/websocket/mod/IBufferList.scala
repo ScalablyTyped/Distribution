@@ -1,6 +1,6 @@
 package typings.websocket.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.websocket.websocketStrings.advance
 import typings.websocket.websocketStrings.write
@@ -49,15 +49,15 @@ trait IBufferList extends EventEmitter {
   
   def push(): Unit = js.native
   
-  def take(): js.Any = js.native
-  def take(encoding: String): js.Any = js.native
+  def take(): Any = js.native
+  def take(encoding: String): Any = js.native
   /**
     * Take `n` bytes from the start of the buffers.
     * If there are less than `n` bytes in all the buffers or `n` is undefined,
     * returns the entire concatenated buffer string.
     */
-  def take(n: Double): js.Any = js.native
-  def take(n: Double, encoding: String): js.Any = js.native
+  def take(n: Double): Any = js.native
+  def take(n: Double, encoding: String): Any = js.native
   
   def write(buf: Buffer): Boolean = js.native
 }

@@ -26,13 +26,13 @@ trait Scenarios extends StObject {
   def Add(Name: String, ChangingCells: Range, Values: Unit, Comment: Unit, Locked: Boolean): Scenario = js.native
   def Add(Name: String, ChangingCells: Range, Values: Unit, Comment: Unit, Locked: Boolean, Hidden: Boolean): Scenario = js.native
   def Add(Name: String, ChangingCells: Range, Values: Unit, Comment: Unit, Locked: Unit, Hidden: Boolean): Scenario = js.native
-  def Add(Name: String, ChangingCells: Range, Values: SafeArray[js.Any]): Scenario = js.native
-  def Add(Name: String, ChangingCells: Range, Values: SafeArray[js.Any], Comment: String): Scenario = js.native
-  def Add(Name: String, ChangingCells: Range, Values: SafeArray[js.Any], Comment: String, Locked: Boolean): Scenario = js.native
+  def Add(Name: String, ChangingCells: Range, Values: SafeArray[Any]): Scenario = js.native
+  def Add(Name: String, ChangingCells: Range, Values: SafeArray[Any], Comment: String): Scenario = js.native
+  def Add(Name: String, ChangingCells: Range, Values: SafeArray[Any], Comment: String, Locked: Boolean): Scenario = js.native
   def Add(
     Name: String,
     ChangingCells: Range,
-    Values: SafeArray[js.Any],
+    Values: SafeArray[Any],
     Comment: String,
     Locked: Boolean,
     Hidden: Boolean
@@ -40,16 +40,16 @@ trait Scenarios extends StObject {
   def Add(
     Name: String,
     ChangingCells: Range,
-    Values: SafeArray[js.Any],
+    Values: SafeArray[Any],
     Comment: String,
     Locked: Unit,
     Hidden: Boolean
   ): Scenario = js.native
-  def Add(Name: String, ChangingCells: Range, Values: SafeArray[js.Any], Comment: Unit, Locked: Boolean): Scenario = js.native
+  def Add(Name: String, ChangingCells: Range, Values: SafeArray[Any], Comment: Unit, Locked: Boolean): Scenario = js.native
   def Add(
     Name: String,
     ChangingCells: Range,
-    Values: SafeArray[js.Any],
+    Values: SafeArray[Any],
     Comment: Unit,
     Locked: Boolean,
     Hidden: Boolean
@@ -57,7 +57,7 @@ trait Scenarios extends StObject {
   def Add(
     Name: String,
     ChangingCells: Range,
-    Values: SafeArray[js.Any],
+    Values: SafeArray[Any],
     Comment: Unit,
     Locked: Unit,
     Hidden: Boolean
@@ -68,18 +68,18 @@ trait Scenarios extends StObject {
   val Count: Double = js.native
   
   /** @param ReportType [ReportType=1] */
-  def CreateSummary(): js.Any = js.native
-  def CreateSummary(ReportType: Unit, ResultCells: Range): js.Any = js.native
-  def CreateSummary(ReportType: XlSummaryReportType): js.Any = js.native
-  def CreateSummary(ReportType: XlSummaryReportType, ResultCells: Range): js.Any = js.native
+  def CreateSummary(): Any = js.native
+  def CreateSummary(ReportType: Unit, ResultCells: Range): Any = js.native
+  def CreateSummary(ReportType: XlSummaryReportType): Any = js.native
+  def CreateSummary(ReportType: XlSummaryReportType, ResultCells: Range): Any = js.native
   
   val Creator: XlCreator = js.native
   
   def Item(Index: String): Scenario = js.native
   def Item(Index: Double): Scenario = js.native
   
-  def Merge(Source: String): js.Any = js.native
-  def Merge(Source: Worksheet): js.Any = js.native
+  def Merge(Source: String): Any = js.native
+  def Merge(Source: Worksheet): Any = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

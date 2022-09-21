@@ -1,7 +1,7 @@
 
 # Scala.js typings for retry-axios
 
-Typings are for version 0.3.2
+Typings are for version 3.0.0
 
 ## Library description:
 Retry HTTP requests with Axios.
@@ -10,10 +10,10 @@ Retry HTTP requests with Axios.
 | ------------------ | :-------------: |
 | Full name          | retry-axios |
 | Keywords           | axios, retry |
-| # releases         | 15 |
-| # dependents       | 33 |
-| # downloads        | 26270610 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2314599.6666666665 |
+| # stars            | 408.0 |
 
 ## Links
 - [Homepage](https://github.com/JustinBeckwith/retry-axios#readme)

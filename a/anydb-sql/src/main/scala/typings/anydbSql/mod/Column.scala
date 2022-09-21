@@ -22,11 +22,9 @@ trait Column[T] extends StObject {
   
   def distinct(): Column[T] = js.native
   
-  def equals(node: js.Any): BinaryNode = js.native
+  def gt(node: Any): BinaryNode = js.native
   
-  def gt(node: js.Any): BinaryNode = js.native
-  
-  def gte(node: js.Any): BinaryNode = js.native
+  def gte(node: Any): BinaryNode = js.native
   
   def in(arr: js.Array[T]): BinaryNode = js.native
   def in(subQuery: SubQuery[T]): BinaryNode = js.native
@@ -37,9 +35,9 @@ trait Column[T] extends StObject {
   
   def like(str: String): BinaryNode = js.native
   
-  def lt(node: js.Any): BinaryNode = js.native
+  def lt(node: Any): BinaryNode = js.native
   
-  def lte(node: js.Any): BinaryNode = js.native
+  def lte(node: Any): BinaryNode = js.native
   
   def max(): Column[T] = js.native
   def max(name: String): Column[T] = js.native
@@ -52,11 +50,11 @@ trait Column[T] extends StObject {
   
   var name: String = js.native
   
-  def notEquals(node: js.Any): BinaryNode = js.native
+  def notEquals(node: Any): BinaryNode = js.native
   
   def notIn(arr: js.Array[T]): BinaryNode = js.native
   
   def sum(): Column[Double] = js.native
   
-  var table: Table[js.Any] = js.native
+  var table: Table[Any] = js.native
 }

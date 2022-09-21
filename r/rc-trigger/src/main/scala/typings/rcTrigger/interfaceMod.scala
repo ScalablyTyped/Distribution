@@ -1,10 +1,10 @@
 package typings.rcTrigger
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.rcMotion.cssmotionMod.CSSMotionProps
 import typings.rcTrigger.anon.AdjustX
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,7 +76,7 @@ object interfaceMod {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
       
       inline def setOverflow(value: AdjustX): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
@@ -86,13 +86,13 @@ object interfaceMod {
       
       inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
       
-      inline def setPointsVarargs(value: AlignPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: AlignPoint*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setTargetOffset(value: js.Array[Double]): Self = StObject.set(x, "targetOffset", value.asInstanceOf[js.Any])
       
       inline def setTargetOffsetUndefined: Self = StObject.set(x, "targetOffset", js.undefined)
       
-      inline def setTargetOffsetVarargs(value: Double*): Self = StObject.set(x, "targetOffset", js.Array(value :_*))
+      inline def setTargetOffsetVarargs(value: Double*): Self = StObject.set(x, "targetOffset", js.Array(value*))
       
       inline def setUseCssBottom(value: Boolean): Self = StObject.set(x, "useCssBottom", value.asInstanceOf[js.Any])
       
@@ -110,7 +110,7 @@ object interfaceMod {
   
   type AnimationType = String
   
-  type BuildInPlacements = StringDictionary[AlignType]
+  type BuildInPlacements = Record[String, AlignType]
   
   trait CommonEventHandler extends StObject {
     

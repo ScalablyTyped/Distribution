@@ -12,19 +12,19 @@ trait ChannelMembership extends StObject {
   var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
-    * The time at which the channel membership was created. 
+    * The time at which the channel membership was created.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The identifier of the member who invited another member. Taken from the message header.
+    * The identifier of the member who invited another member.
     */
   var InvitedBy: js.UndefOr[Identity] = js.undefined
   
   /**
     * The time at which a channel membership was last updated.
     */
-  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The data of the channel member.
@@ -49,7 +49,7 @@ object ChannelMembership {
     
     inline def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
     
-    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
@@ -57,7 +57,7 @@ object ChannelMembership {
     
     inline def setInvitedByUndefined: Self = StObject.set(x, "InvitedBy", js.undefined)
     
-    inline def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
     

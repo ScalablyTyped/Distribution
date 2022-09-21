@@ -17,7 +17,7 @@ object anon {
   trait AsyncPlaceholder extends StObject {
     
     var asyncPlaceholder: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
       ] = js.undefined
   }
   object AsyncPlaceholder {
@@ -29,7 +29,7 @@ object anon {
     
     extension [Self <: AsyncPlaceholder](x: Self) {
       
-      inline def setAsyncPlaceholder(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ js.Any): Self = StObject.set(x, "asyncPlaceholder", value.asInstanceOf[js.Any])
+      inline def setAsyncPlaceholder(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "asyncPlaceholder", value.asInstanceOf[js.Any])
       
       inline def setAsyncPlaceholderUndefined: Self = StObject.set(x, "asyncPlaceholder", js.undefined)
     }
@@ -57,7 +57,7 @@ object anon {
       
       inline def set__cachedInputs__(value: js.Array[js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]]]): Self = StObject.set(x, "__cachedInputs__", value.asInstanceOf[js.Any])
       
-      inline def set__cachedInputs__Varargs(value: (js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]])*): Self = StObject.set(x, "__cachedInputs__", js.Array(value :_*))
+      inline def set__cachedInputs__Varargs(value: (js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]])*): Self = StObject.set(x, "__cachedInputs__", js.Array(value*))
       
       inline def set__noStyleOverride__(value: Boolean): Self = StObject.set(x, "__noStyleOverride__", value.asInstanceOf[js.Any])
     }

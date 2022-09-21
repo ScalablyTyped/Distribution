@@ -54,7 +54,7 @@ object IosManagedAppProtection {
     
     inline def setAppsUndefined: Self = StObject.set(x, "apps", js.undefined)
     
-    inline def setAppsVarargs(value: ManagedMobileApp*): Self = StObject.set(x, "apps", js.Array(value :_*))
+    inline def setAppsVarargs(value: ManagedMobileApp*): Self = StObject.set(x, "apps", js.Array(value*))
     
     inline def setCustomBrowserProtocol(value: NullableOption[String]): Self = StObject.set(x, "customBrowserProtocol", value.asInstanceOf[js.Any])
     

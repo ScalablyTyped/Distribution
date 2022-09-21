@@ -23,7 +23,7 @@ object geolocationMod {
   
   @JSImport("ol/Geolocation", JSImport.Default)
   @js.native
-  class default () extends Geolocation {
+  open class default () extends Geolocation {
     def this(opt_options: Options) = this()
   }
   

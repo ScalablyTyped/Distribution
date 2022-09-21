@@ -4,35 +4,37 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A worker pool resource in the Remote Build Execution API.
-  */
 trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool extends StObject {
   
   /**
-    * WorkerPool resource name formatted as:
-    * `projects/[PROJECT_ID]/instances/[INSTANCE_ID]/workerpools/[POOL_ID]`.
-    * name should not be populated when creating a worker pool since it is
-    * provided in the `poolId` field.
+    * The autoscale policy to apply on a pool.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var autoscale: js.UndefOr[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale] = js.undefined
+  
+  /**
+    * Channel specifies the release channel of the pool.
+    */
+  var channel: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * WorkerPool resource name formatted as: `projects/[PROJECT_ID]/instances/[INSTANCE_ID]/workerpools/[POOL_ID]`. name should not be populated when creating a worker pool since it is provided in the `poolId` field.
+    */
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Output only. State of the worker pool.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Specifies the properties, such as machine type and disk size, used for
-    * creating workers in a worker pool.
+    * Specifies the properties, such as machine type and disk size, used for creating workers in a worker pool.
     */
   var workerConfig: js.UndefOr[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig] = js.undefined
   
   /**
-    * The desired number of workers in the worker pool. Must be a value between
-    * 0 and 1000.
+    * The desired number of workers in the worker pool. Must be a value between 0 and 15000.
     */
-  var workerCount: js.UndefOr[String] = js.undefined
+  var workerCount: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool {
   
@@ -43,11 +45,25 @@ object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool {
   
   extension [Self <: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool](x: Self) {
     
+    inline def setAutoscale(value: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale): Self = StObject.set(x, "autoscale", value.asInstanceOf[js.Any])
+    
+    inline def setAutoscaleUndefined: Self = StObject.set(x, "autoscale", js.undefined)
+    
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    
+    inline def setChannelNull: Self = StObject.set(x, "channel", null)
+    
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
@@ -56,6 +72,8 @@ object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool {
     inline def setWorkerConfigUndefined: Self = StObject.set(x, "workerConfig", js.undefined)
     
     inline def setWorkerCount(value: String): Self = StObject.set(x, "workerCount", value.asInstanceOf[js.Any])
+    
+    inline def setWorkerCountNull: Self = StObject.set(x, "workerCount", null)
     
     inline def setWorkerCountUndefined: Self = StObject.set(x, "workerCount", js.undefined)
   }

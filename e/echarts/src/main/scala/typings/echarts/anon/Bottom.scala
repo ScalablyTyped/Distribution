@@ -24,7 +24,7 @@ trait Bottom extends StObject {
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis
     */
-  var emphasis: js.UndefOr[`26`] = js.undefined
+  var emphasis: js.UndefOr[`27`] = js.undefined
   
   /**
     * When is no content in breadcrumb, this minimal width need
@@ -133,7 +133,7 @@ object Bottom {
     
     inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    inline def setEmphasis(value: `26`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+    inline def setEmphasis(value: `27`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     
     inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
     

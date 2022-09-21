@@ -1,25 +1,48 @@
 package typings.octokitPluginPaginateRest.anon
 
-import typings.octokitTypes.anon.Allowmergecommit
+import typings.octokitTypes.endpointsMod.ExtractOctokitResponse
+import typings.octokitTypes.endpointsMod.RequiredPreview
+import typings.octokitTypes.endpointsMod.ToOctokitParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `3` extends StObject {
   
-  var data: js.Array[Allowmergecommit]
+  var parameters: (ToOctokitParameters[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/organizations']['get'] */ js.Any
+  ]) & RequiredPreview[Any]
+  
+  var response: (ExtractOctokitResponse[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/organizations']['get'] */ js.Any
+  ]) & `2`
 }
 object `3` {
   
-  inline def apply(data: js.Array[Allowmergecommit]): `3` = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+  inline def apply(
+    parameters: (ToOctokitParameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/organizations']['get'] */ js.Any
+    ]) & RequiredPreview[Any],
+    response: (ExtractOctokitResponse[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/organizations']['get'] */ js.Any
+    ]) & `2`
+  ): `3` = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`3`]
   }
   
   extension [Self <: `3`](x: Self) {
     
-    inline def setData(value: js.Array[Allowmergecommit]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setParameters(
+      value: (ToOctokitParameters[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/organizations']['get'] */ js.Any
+        ]) & RequiredPreview[Any]
+    ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Allowmergecommit*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setResponse(
+      value: (ExtractOctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/organizations']['get'] */ js.Any
+        ]) & `2`
+    ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

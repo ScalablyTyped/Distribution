@@ -8,5 +8,5 @@ object policyEnforcedExceptionMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/PolicyEnforcedException", "PolicyEnforcedException")
   @js.native
-  val PolicyEnforcedException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PolicyEnforcedException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

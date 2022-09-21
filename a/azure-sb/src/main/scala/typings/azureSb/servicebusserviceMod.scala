@@ -30,7 +30,7 @@ object servicebusserviceMod {
   
   @JSImport("azure-sb/lib/servicebusservice", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ServiceBusService {
+  open class ^ protected () extends ServiceBusService {
     def this(
       configOrNamespaceOrConnectionString: js.UndefOr[String],
       accessKey: js.UndefOr[String],

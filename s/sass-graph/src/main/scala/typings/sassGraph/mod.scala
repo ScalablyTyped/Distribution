@@ -47,13 +47,13 @@ object mod {
       */
     def visit(
       filepath: String,
-      callback: js.Function2[/* edge */ String, /* node */ Node, js.Any],
-      edgeCallback: js.Function2[/* errorMsg */ String, /* node */ Node, js.Any]
+      callback: js.Function2[/* edge */ String, /* node */ Node, Any],
+      edgeCallback: js.Function2[/* errorMsg */ String, /* node */ Node, Any]
     ): Unit = js.native
     def visit(
       filepath: String,
-      callback: js.Function2[/* edge */ String, /* node */ Node, js.Any],
-      edgeCallback: js.Function2[/* errorMsg */ String, /* node */ Node, js.Any],
+      callback: js.Function2[/* edge */ String, /* node */ Node, Any],
+      edgeCallback: js.Function2[/* errorMsg */ String, /* node */ Node, Any],
       visited: js.Array[String]
     ): Unit = js.native
     
@@ -62,14 +62,14 @@ object mod {
       * @param {string}   filepath Path to the file to visit
       * @param {Function} callback Called when a node is visited
       */
-    def visitAncestors(filepath: String, callback: js.Function2[/* edge */ String, /* node */ Node, js.Any]): Unit = js.native
+    def visitAncestors(filepath: String, callback: js.Function2[/* edge */ String, /* node */ Node, Any]): Unit = js.native
     
     /**
       * Visits all files that are descendents of the provided file
       * @param {string}   filepath Path to the file to visit
       * @param {Function} callback Called when a node is visited
       */
-    def visitDescendents(filepath: String, callback: js.Function2[/* edge */ String, /* node */ Node, js.Any]): Unit = js.native
+    def visitDescendents(filepath: String, callback: js.Function2[/* edge */ String, /* node */ Node, Any]): Unit = js.native
   }
   
   type Node = StringDictionary[ImportedBy]
@@ -93,13 +93,13 @@ object mod {
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setLoadPath(value: js.Array[String]): Self = StObject.set(x, "loadPath", value.asInstanceOf[js.Any])
       
       inline def setLoadPathUndefined: Self = StObject.set(x, "loadPath", js.undefined)
       
-      inline def setLoadPathVarargs(value: String*): Self = StObject.set(x, "loadPath", js.Array(value :_*))
+      inline def setLoadPathVarargs(value: String*): Self = StObject.set(x, "loadPath", js.Array(value*))
     }
   }
 }

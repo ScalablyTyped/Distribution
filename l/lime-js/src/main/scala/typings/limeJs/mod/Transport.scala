@@ -18,7 +18,7 @@ trait Transport
   
   def getSupportedEncryption(): js.Array[String]
   
-  def onEnvelope(envelope: Envelope): js.Any
+  def onEnvelope(envelope: Envelope): Any
   
   def open(uri: String): Unit
   
@@ -37,7 +37,7 @@ object Transport {
     getSupportedCompression: () => js.Array[String],
     getSupportedEncryption: () => js.Array[String],
     onClose: () => Unit,
-    onEnvelope: Envelope => js.Any,
+    onEnvelope: Envelope => Any,
     onError: String => Unit,
     onOpen: () => Unit,
     open: String => Unit,
@@ -61,7 +61,7 @@ object Transport {
     
     inline def setGetSupportedEncryption(value: () => js.Array[String]): Self = StObject.set(x, "getSupportedEncryption", js.Any.fromFunction0(value))
     
-    inline def setOnEnvelope(value: Envelope => js.Any): Self = StObject.set(x, "onEnvelope", js.Any.fromFunction1(value))
+    inline def setOnEnvelope(value: Envelope => Any): Self = StObject.set(x, "onEnvelope", js.Any.fromFunction1(value))
     
     inline def setOpen(value: String => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     

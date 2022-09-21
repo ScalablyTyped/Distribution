@@ -14,32 +14,25 @@ trait AttachedDisk extends StObject {
   
   /**
     * Specifies a unique device name of your choice that is reflected into the /dev/disk/by-id/google-* tree of a Linux operating system running within the instance. This name can be used
-    * to reference the device for mounting, resizing, and so on, from within the instance.
-    *
-    * If not specified, the server chooses a default device name to apply to this disk, in the form persistent-disk-x, where x is a number assigned by Google Compute Engine. This field is
-    * only applicable for persistent disks.
+    * to reference the device for mounting, resizing, and so on, from within the instance. If not specified, the server chooses a default device name to apply to this disk, in the form
+    * persistent-disk-x, where x is a number assigned by Google Compute Engine. This field is only applicable for persistent disks.
     */
   var deviceName: js.UndefOr[String] = js.undefined
   
   /**
-    * Encrypts or decrypts a disk using a customer-supplied encryption key.
-    *
-    * If you are creating a new disk, this field encrypts the new disk using an encryption key that you provide. If you are attaching an existing disk that is already encrypted, this
-    * field decrypts the disk using the customer-supplied encryption key.
-    *
-    * If you encrypt a disk using a customer-supplied key, you must provide the same key again when you attempt to use this resource at a later time. For example, you must provide the key
-    * when you create a snapshot or an image from the disk or when you attach the disk to a virtual machine instance.
-    *
-    * If you do not provide an encryption key, then the disk will be encrypted using an automatically generated key and you do not need to provide a key to use the disk later.
-    *
-    * Instance templates do not store customer-supplied encryption keys, so you cannot use your own keys to encrypt disks in a managed instance group.
+    * Encrypts or decrypts a disk using a customer-supplied encryption key. If you are creating a new disk, this field encrypts the new disk using an encryption key that you provide. If
+    * you are attaching an existing disk that is already encrypted, this field decrypts the disk using the customer-supplied encryption key. If you encrypt a disk using a
+    * customer-supplied key, you must provide the same key again when you attempt to use this resource at a later time. For example, you must provide the key when you create a snapshot or
+    * an image from the disk or when you attach the disk to a virtual machine instance. If you do not provide an encryption key, then the disk will be encrypted using an automatically
+    * generated key and you do not need to provide a key to use the disk later. Instance templates do not store customer-supplied encryption keys, so you cannot use your own keys to
+    * encrypt disks in a managed instance group.
     */
   var diskEncryptionKey: js.UndefOr[CustomerEncryptionKey] = js.undefined
   
   /** The size of the disk in GB. */
   var diskSizeGb: js.UndefOr[String] = js.undefined
   
-  /** A list of features to enable on the guest operating system. Applicable only for bootable images. Read  Enabling guest operating system features to see a list of available options. */
+  /** A list of features to enable on the guest operating system. Applicable only for bootable images. Read Enabling guest operating system features to see a list of available options. */
   var guestOsFeatures: js.UndefOr[js.Array[GuestOsFeature]] = js.undefined
   
   /** [Output Only] A zero-based index to this disk, where 0 is reserved for the boot disk. If you have many disks attached to an instance, each disk would have a unique index number. */
@@ -47,9 +40,7 @@ trait AttachedDisk extends StObject {
   
   /**
     * [Input Only] Specifies the parameters for a new disk that will be created alongside the new instance. Use initialization parameters to create boot disks or local SSDs attached to
-    * the new instance.
-    *
-    * This property is mutually exclusive with the source property; you can only define one or the other, but not both.
+    * the new instance. This property is mutually exclusive with the source property; you can only define one or the other, but not both.
     */
   var initializeParams: js.UndefOr[AttachedDiskInitializeParams] = js.undefined
   
@@ -74,11 +65,8 @@ trait AttachedDisk extends StObject {
   
   /**
     * Specifies a valid partial or full URL to an existing Persistent Disk resource. When creating a new instance, one of initializeParams.sourceImage or initializeParams.sourceSnapshot
-    * or disks.source is required except for local SSD.
-    *
-    * If desired, you can also attach existing non-root persistent disks using this property. This field is only applicable for persistent disks.
-    *
-    * Note that for InstanceTemplate, specify the disk name, not the URL for the disk.
+    * or disks.source is required except for local SSD. If desired, you can also attach existing non-root persistent disks using this property. This field is only applicable for
+    * persistent disks. Note that for InstanceTemplate, specify the disk name, not the URL for the disk.
     */
   var source: js.UndefOr[String] = js.undefined
   
@@ -118,7 +106,7 @@ object AttachedDisk {
     
     inline def setGuestOsFeaturesUndefined: Self = StObject.set(x, "guestOsFeatures", js.undefined)
     
-    inline def setGuestOsFeaturesVarargs(value: GuestOsFeature*): Self = StObject.set(x, "guestOsFeatures", js.Array(value :_*))
+    inline def setGuestOsFeaturesVarargs(value: GuestOsFeature*): Self = StObject.set(x, "guestOsFeatures", js.Array(value*))
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
@@ -140,7 +128,7 @@ object AttachedDisk {
     
     inline def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
     
-    inline def setLicensesVarargs(value: String*): Self = StObject.set(x, "licenses", js.Array(value :_*))
+    inline def setLicensesVarargs(value: String*): Self = StObject.set(x, "licenses", js.Array(value*))
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

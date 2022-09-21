@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TablesOfFigures")
 @js.native
-/* private */ class TablesOfFigures ()
+/* private */ open class TablesOfFigures ()
   extends StObject
      with typings.activexWord.Word.TablesOfFigures

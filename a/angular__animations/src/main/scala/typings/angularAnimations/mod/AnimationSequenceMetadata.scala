@@ -36,6 +36,6 @@ object AnimationSequenceMetadata {
     
     inline def setSteps(value: js.Array[AnimationMetadata]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    inline def setStepsVarargs(value: AnimationMetadata*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: AnimationMetadata*): Self = StObject.set(x, "steps", js.Array(value*))
   }
 }

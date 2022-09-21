@@ -18,10 +18,10 @@ object stackedpanelMod {
     *
     * @param options - The options for initializing the panel.
     */
-  class StackedPanel () extends Panel {
+  open class StackedPanel () extends Panel {
     def this(options: IOptions) = this()
     
-    /* private */ var _widgetRemoved: js.Any = js.native
+    /* private */ var _widgetRemoved: Any = js.native
     
     /**
       * A signal emitted when a widget is removed from a stacked panel.

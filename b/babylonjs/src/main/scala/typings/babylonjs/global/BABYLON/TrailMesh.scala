@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.TrailMesh")
 @js.native
-class TrailMesh protected ()
+open class TrailMesh protected ()
   extends StObject
      with typings.babylonjs.BABYLON.TrailMesh {
   /**
@@ -20,16 +20,32 @@ class TrailMesh protected ()
     * @param length Length of trailing mesh. Default is 60.
     * @param autoStart Automatically start trailing mesh. Default true.
     */
+  def this(name: String, generator: typings.babylonjs.BABYLON.TransformNode) = this()
   def this(
     name: String,
     generator: typings.babylonjs.BABYLON.TransformNode,
     scene: typings.babylonjs.BABYLON.Scene
   ) = this()
+  def this(name: String, generator: typings.babylonjs.BABYLON.TransformNode, scene: Unit, diameter: Double) = this()
   def this(
     name: String,
     generator: typings.babylonjs.BABYLON.TransformNode,
     scene: typings.babylonjs.BABYLON.Scene,
     diameter: Double
+  ) = this()
+  def this(
+    name: String,
+    generator: typings.babylonjs.BABYLON.TransformNode,
+    scene: Unit,
+    diameter: Double,
+    length: Double
+  ) = this()
+  def this(
+    name: String,
+    generator: typings.babylonjs.BABYLON.TransformNode,
+    scene: Unit,
+    diameter: Unit,
+    length: Double
   ) = this()
   def this(
     name: String,
@@ -44,6 +60,38 @@ class TrailMesh protected ()
     scene: typings.babylonjs.BABYLON.Scene,
     diameter: Unit,
     length: Double
+  ) = this()
+  def this(
+    name: String,
+    generator: typings.babylonjs.BABYLON.TransformNode,
+    scene: Unit,
+    diameter: Double,
+    length: Double,
+    autoStart: Boolean
+  ) = this()
+  def this(
+    name: String,
+    generator: typings.babylonjs.BABYLON.TransformNode,
+    scene: Unit,
+    diameter: Double,
+    length: Unit,
+    autoStart: Boolean
+  ) = this()
+  def this(
+    name: String,
+    generator: typings.babylonjs.BABYLON.TransformNode,
+    scene: Unit,
+    diameter: Unit,
+    length: Double,
+    autoStart: Boolean
+  ) = this()
+  def this(
+    name: String,
+    generator: typings.babylonjs.BABYLON.TransformNode,
+    scene: Unit,
+    diameter: Unit,
+    length: Unit,
+    autoStart: Boolean
   ) = this()
   def this(
     name: String,
@@ -102,7 +150,7 @@ class TrailMesh protected ()
   
   /**
     * Checks if a cullable object (mesh...) is in the camera frustum
-    * Unlike isInFrustum this cheks the full bounding box
+    * Unlike isInFrustum this checks the full bounding box
     * @param frustumPlanes Camera near/planes
     * @returns true if the object is in frustum otherwise false
     */
@@ -138,5 +186,5 @@ object TrailMesh {
     * @param scene the scene to create the trail mesh in
     * @returns the created trail mesh
     */
-  inline def Parse(parsedMesh: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.TrailMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.TrailMesh]
+  inline def Parse(parsedMesh: Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.TrailMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.TrailMesh]
 }

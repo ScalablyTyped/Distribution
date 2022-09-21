@@ -19,6 +19,8 @@ trait TimeIntervalProperties extends StObject {
   /**
     * Temporal units.
     *
+    * @default milliseconds
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html#unit)
     */
   var unit: js.UndefOr[
@@ -27,6 +29,8 @@ trait TimeIntervalProperties extends StObject {
   
   /**
     * The numerical value of the time extent.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html#value)
     */

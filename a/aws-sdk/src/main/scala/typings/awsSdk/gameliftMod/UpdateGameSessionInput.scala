@@ -22,7 +22,7 @@ trait UpdateGameSessionInput extends StObject {
   var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * Policy determining whether or not the game session accepts new players.
+    * A policy that determines whether the game session is accepting new players.
     */
   var PlayerSessionCreationPolicy: js.UndefOr[typings.awsSdk.gameliftMod.PlayerSessionCreationPolicy] = js.undefined
   

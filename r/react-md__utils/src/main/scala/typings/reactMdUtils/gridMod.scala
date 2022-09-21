@@ -37,7 +37,7 @@ object gridMod {
       * Note: if this prop is provided, all of the `HTMLAttributes` props will be
       * ignored as well as the `clone` and `wrapOnly` props.
       *
-      * @since 2.3.0
+      * @remarks \@since 2.3.0
       */
     var cloneStyles: js.UndefOr[Boolean] = js.undefined
     
@@ -52,7 +52,7 @@ object gridMod {
     
     /**
       * An optional number of columns to apply for all media types. Providing one
-      * of the media-spcific column props will override this value for those
+      * of the media-specific column props will override this value for those
       * breakpoints still.
       */
     var columns: js.UndefOr[Double] = js.undefined

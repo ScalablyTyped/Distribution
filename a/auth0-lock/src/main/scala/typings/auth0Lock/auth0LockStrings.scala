@@ -35,12 +35,24 @@ object auth0LockStrings {
   inline def forgotPassword: forgotPassword = "forgotPassword".asInstanceOf[forgotPassword]
   
   @js.native
+  sealed trait hidden extends StObject
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @js.native
   sealed trait hide extends StObject
   inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
+  sealed trait info extends StObject
+  inline def info: info = "info".asInstanceOf[info]
+  
+  @js.native
   sealed trait login extends StObject
   inline def login: login = "login".asInstanceOf[login]
+  
+  @js.native
+  sealed trait root extends StObject
+  inline def root: root = "root".asInstanceOf[root]
   
   @js.native
   sealed trait select extends StObject

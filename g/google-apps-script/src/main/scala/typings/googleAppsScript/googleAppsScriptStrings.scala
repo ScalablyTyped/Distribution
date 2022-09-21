@@ -1,5 +1,10 @@
 package typings.googleAppsScript
 
+import typings.googleAppsScript.GoogleAppsScript.Addons.EntryPointFeature
+import typings.googleAppsScript.GoogleAppsScript.Addons.EntryPointType
+import typings.googleAppsScript.GoogleAppsScript.Addons.HostApplication
+import typings.googleAppsScript.GoogleAppsScript.Addons.InvitationResponseStatus
+import typings.googleAppsScript.GoogleAppsScript.Addons.Platform
 import typings.googleAppsScript.GoogleAppsScript.DataStudio.NumericOperator
 import typings.googleAppsScript.GoogleAppsScript.DataStudio.RegexpOperator
 import typings.googleAppsScript.GoogleAppsScript.Events.SheetsOnChangeChangeType
@@ -14,12 +19,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object googleAppsScriptStrings {
   
   @js.native
+  sealed trait ANDROID
+    extends StObject
+       with Platform
+  inline def ANDROID: ANDROID = "ANDROID".asInstanceOf[ANDROID]
+  
+  @js.native
   sealed trait BETWEEN extends StObject
   inline def BETWEEN: BETWEEN = "BETWEEN".asInstanceOf[BETWEEN]
   
   @js.native
+  sealed trait CALENDAR
+    extends StObject
+       with HostApplication
+  inline def CALENDAR: CALENDAR = "CALENDAR".asInstanceOf[CALENDAR]
+  
+  @js.native
   sealed trait CONTAINS extends StObject
   inline def CONTAINS: CONTAINS = "CONTAINS".asInstanceOf[CONTAINS]
+  
+  @js.native
+  sealed trait DEFAULT extends StObject
+  inline def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
+  
+  @js.native
+  sealed trait DOCS
+    extends StObject
+       with HostApplication
+  inline def DOCS: DOCS = "DOCS".asInstanceOf[DOCS]
+  
+  @js.native
+  sealed trait DRIVE
+    extends StObject
+       with HostApplication
+  inline def DRIVE: DRIVE = "DRIVE".asInstanceOf[DRIVE]
   
   @js.native
   sealed trait EDIT
@@ -36,10 +69,24 @@ object googleAppsScriptStrings {
   inline def EXCLUDE: EXCLUDE = "EXCLUDE".asInstanceOf[EXCLUDE]
   
   @js.native
+  sealed trait FASTER extends StObject
+  inline def FASTER: FASTER = "FASTER".asInstanceOf[FASTER]
+  
+  @js.native
   sealed trait FORMAT
     extends StObject
        with SheetsOnChangeChangeType
   inline def FORMAT: FORMAT = "FORMAT".asInstanceOf[FORMAT]
+  
+  @js.native
+  sealed trait GMAIL
+    extends StObject
+       with HostApplication
+  inline def GMAIL: GMAIL = "GMAIL".asInstanceOf[GMAIL]
+  
+  @js.native
+  sealed trait HIGHER_PRECISION extends StObject
+  inline def HIGHER_PRECISION: HIGHER_PRECISION = "HIGHER_PRECISION".asInstanceOf[HIGHER_PRECISION]
   
   @js.native
   sealed trait INCLUDE extends StObject
@@ -66,6 +113,12 @@ object googleAppsScriptStrings {
   @js.native
   sealed trait IN_LIST extends StObject
   inline def IN_LIST: IN_LIST = "IN_LIST".asInstanceOf[IN_LIST]
+  
+  @js.native
+  sealed trait IOS
+    extends StObject
+       with Platform
+  inline def IOS: IOS = "IOS".asInstanceOf[IOS]
   
   @js.native
   sealed trait IS_NULL extends StObject
@@ -132,6 +185,30 @@ object googleAppsScriptStrings {
   inline def REMOVE_ROW: REMOVE_ROW = "REMOVE_ROW".asInstanceOf[REMOVE_ROW]
   
   @js.native
+  sealed trait SHEETS
+    extends StObject
+       with HostApplication
+  inline def SHEETS: SHEETS = "SHEETS".asInstanceOf[SHEETS]
+  
+  @js.native
+  sealed trait SLIDES
+    extends StObject
+       with HostApplication
+  inline def SLIDES: SLIDES = "SLIDES".asInstanceOf[SLIDES]
+  
+  @js.native
+  sealed trait WEB
+    extends StObject
+       with Platform
+  inline def WEB: WEB = "WEB".asInstanceOf[WEB]
+  
+  @js.native
+  sealed trait accepted
+    extends StObject
+       with InvitationResponseStatus
+  inline def accepted: accepted = "accepted".asInstanceOf[accepted]
+  
+  @js.native
   sealed trait bold
     extends StObject
        with FontWeight
@@ -146,16 +223,38 @@ object googleAppsScriptStrings {
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
+  sealed trait declined
+    extends StObject
+       with InvitationResponseStatus
+  inline def declined: declined = "declined".asInstanceOf[declined]
+  
+  @js.native
   sealed trait delete
     extends StObject
        with HttpMethod
   inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
+  sealed trait eventHangout extends StObject
+  inline def eventHangout: eventHangout = "eventHangout".asInstanceOf[eventHangout]
+  
+  @js.native
+  sealed trait eventNamedHangout extends StObject
+  inline def eventNamedHangout: eventNamedHangout = "eventNamedHangout".asInstanceOf[eventNamedHangout]
+  
+  @js.native
+  sealed trait fileOrganizer extends StObject
+  inline def fileOrganizer: fileOrganizer = "fileOrganizer".asInstanceOf[fileOrganizer]
+  
+  @js.native
   sealed trait get
     extends StObject
        with HttpMethod
   inline def get: get = "get".asInstanceOf[get]
+  
+  @js.native
+  sealed trait hangoutsMeet extends StObject
+  inline def hangoutsMeet: hangoutsMeet = "hangoutsMeet".asInstanceOf[hangoutsMeet]
   
   @js.native
   sealed trait html extends StObject
@@ -182,6 +281,18 @@ object googleAppsScriptStrings {
   inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
+  sealed trait more
+    extends StObject
+       with EntryPointType
+  inline def more: more = "more".asInstanceOf[more]
+  
+  @js.native
+  sealed trait needsAction
+    extends StObject
+       with InvitationResponseStatus
+  inline def needsAction: needsAction = "needsAction".asInstanceOf[needsAction]
+  
+  @js.native
   sealed trait none
     extends StObject
        with FontLine
@@ -195,10 +306,24 @@ object googleAppsScriptStrings {
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
+  sealed trait organizer extends StObject
+  inline def organizer: organizer = "organizer".asInstanceOf[organizer]
+  
+  @js.native
+  sealed trait owner extends StObject
+  inline def owner: owner = "owner".asInstanceOf[owner]
+  
+  @js.native
   sealed trait patch
     extends StObject
        with HttpMethod
   inline def patch: patch = "patch".asInstanceOf[patch]
+  
+  @js.native
+  sealed trait phone
+    extends StObject
+       with EntryPointType
+  inline def phone: phone = "phone".asInstanceOf[phone]
   
   @js.native
   sealed trait post
@@ -213,8 +338,40 @@ object googleAppsScriptStrings {
   inline def put: put = "put".asInstanceOf[put]
   
   @js.native
+  sealed trait reader extends StObject
+  inline def reader: reader = "reader".asInstanceOf[reader]
+  
+  @js.native
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
+  sealed trait sip
+    extends StObject
+       with EntryPointType
+  inline def sip: sip = "sip".asInstanceOf[sip]
+  
+  @js.native
+  sealed trait tentative
+    extends StObject
+       with InvitationResponseStatus
+  inline def tentative: tentative = "tentative".asInstanceOf[tentative]
+  
+  @js.native
   sealed trait text extends StObject
   inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait toll
+    extends StObject
+       with EntryPointFeature
+  inline def toll: toll = "toll".asInstanceOf[toll]
+  
+  @js.native
+  sealed trait toll_free
+    extends StObject
+       with EntryPointFeature
+  inline def toll_free: toll_free = "toll_free".asInstanceOf[toll_free]
   
   @js.native
   sealed trait top extends StObject
@@ -225,4 +382,14 @@ object googleAppsScriptStrings {
     extends StObject
        with FontLine
   inline def underline: underline = "underline".asInstanceOf[underline]
+  
+  @js.native
+  sealed trait video
+    extends StObject
+       with EntryPointType
+  inline def video: video = "video".asInstanceOf[video]
+  
+  @js.native
+  sealed trait writer extends StObject
+  inline def writer: writer = "writer".asInstanceOf[writer]
 }

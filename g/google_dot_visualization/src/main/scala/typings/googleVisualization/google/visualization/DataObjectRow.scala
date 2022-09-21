@@ -8,7 +8,7 @@ trait DataObjectRow extends StObject {
   
   var c: js.Array[DataObjectCell]
   
-  var p: js.UndefOr[js.Any] = js.undefined
+  var p: js.UndefOr[Any] = js.undefined
 }
 object DataObjectRow {
   
@@ -21,9 +21,9 @@ object DataObjectRow {
     
     inline def setC(value: js.Array[DataObjectCell]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    inline def setCVarargs(value: DataObjectCell*): Self = StObject.set(x, "c", js.Array(value :_*))
+    inline def setCVarargs(value: DataObjectCell*): Self = StObject.set(x, "c", js.Array(value*))
     
-    inline def setP(value: js.Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
   }

@@ -19,7 +19,7 @@ trait DashboardEntry extends StObject {
   /**
     * The time stamp of when the dashboard was last modified, either by an API call or through the console. This number is expressed as the number of milliseconds since Jan 1, 1970 00:00:00 UTC.
     */
-  var LastModified: js.UndefOr[typings.awsSdk.cloudwatchMod.LastModified] = js.undefined
+  var LastModified: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The size of the dashboard, in bytes.
@@ -43,7 +43,7 @@ object DashboardEntry {
     
     inline def setDashboardNameUndefined: Self = StObject.set(x, "DashboardName", js.undefined)
     
-    inline def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     

@@ -10,5 +10,5 @@ object operatorPublishLastMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def publishLast[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("publishLast")().asInstanceOf[js.Any]
+  inline def publishLast[T](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("publishLast")().asInstanceOf[Any]
 }

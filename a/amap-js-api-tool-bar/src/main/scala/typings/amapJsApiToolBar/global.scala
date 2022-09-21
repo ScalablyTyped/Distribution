@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("AMap.ToolBar")
     @js.native
-    class ToolBar ()
+    open class ToolBar ()
       extends StObject
          with typings.amapJsApiToolBar.AMap.ToolBar {
       def this(options: Options) = this()

@@ -18,7 +18,7 @@ object pollMod {
   
   @JSImport("@lumino/polling/types/poll", "Poll")
   @js.native
-  class Poll[T, U, V /* <: String */] protected ()
+  open class Poll[T, U, V /* <: String */] protected ()
     extends StObject
        with IObservableDisposable
        with IPoll[T, U, V] {
@@ -29,26 +29,26 @@ object pollMod {
       */
     def this(options: IOptions[T, U, V]) = this()
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
     /**
       * Execute a new poll factory promise or stand by if necessary.
       */
-    /* private */ var _execute: js.Any = js.native
+    /* private */ var _execute: Any = js.native
     
-    /* private */ var _factory: js.Any = js.native
+    /* private */ var _factory: Any = js.native
     
-    /* private */ var _frequency: js.Any = js.native
+    /* private */ var _frequency: Any = js.native
     
-    /* private */ var _standby: js.Any = js.native
+    /* private */ var _standby: Any = js.native
     
-    /* private */ var _state: js.Any = js.native
+    /* private */ var _state: Any = js.native
     
-    /* private */ var _tick: js.Any = js.native
+    /* private */ var _tick: Any = js.native
     
-    /* private */ var _ticked: js.Any = js.native
+    /* private */ var _ticked: Any = js.native
     
-    /* private */ var _timeout: js.Any = js.native
+    /* private */ var _timeout: Any = js.native
     
     /**
       * Dispose of the resources held by the object.

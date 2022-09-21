@@ -15,7 +15,7 @@ object bingMapsMod {
   
   @JSImport("ol/source/BingMaps", JSImport.Default)
   @js.native
-  class default protected () extends BingMaps {
+  open class default protected () extends BingMaps {
     def this(options: Options) = this()
   }
   
@@ -66,7 +66,7 @@ object bingMapsMod {
       
       inline def setResourceSets(value: js.Array[ResourceSet]): Self = StObject.set(x, "resourceSets", value.asInstanceOf[js.Any])
       
-      inline def setResourceSetsVarargs(value: ResourceSet*): Self = StObject.set(x, "resourceSets", js.Array(value :_*))
+      inline def setResourceSetsVarargs(value: ResourceSet*): Self = StObject.set(x, "resourceSets", js.Array(value*))
       
       inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
@@ -93,7 +93,7 @@ object bingMapsMod {
       
       inline def setBbox(value: js.Array[Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      inline def setBboxVarargs(value: Double*): Self = StObject.set(x, "bbox", js.Array(value :_*))
+      inline def setBboxVarargs(value: Double*): Self = StObject.set(x, "bbox", js.Array(value*))
       
       inline def setZoomMax(value: Double): Self = StObject.set(x, "zoomMax", value.asInstanceOf[js.Any])
       
@@ -122,7 +122,7 @@ object bingMapsMod {
       
       inline def setCoverageAreas(value: js.Array[CoverageArea]): Self = StObject.set(x, "coverageAreas", value.asInstanceOf[js.Any])
       
-      inline def setCoverageAreasVarargs(value: CoverageArea*): Self = StObject.set(x, "coverageAreas", js.Array(value :_*))
+      inline def setCoverageAreasVarargs(value: CoverageArea*): Self = StObject.set(x, "coverageAreas", js.Array(value*))
     }
   }
   
@@ -239,7 +239,7 @@ object bingMapsMod {
       
       inline def setImageUrlSubdomains(value: js.Array[String]): Self = StObject.set(x, "imageUrlSubdomains", value.asInstanceOf[js.Any])
       
-      inline def setImageUrlSubdomainsVarargs(value: String*): Self = StObject.set(x, "imageUrlSubdomains", js.Array(value :_*))
+      inline def setImageUrlSubdomainsVarargs(value: String*): Self = StObject.set(x, "imageUrlSubdomains", js.Array(value*))
       
       inline def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
       
@@ -247,7 +247,7 @@ object bingMapsMod {
       
       inline def setImageryProvidersUndefined: Self = StObject.set(x, "imageryProviders", js.undefined)
       
-      inline def setImageryProvidersVarargs(value: ImageryProvider*): Self = StObject.set(x, "imageryProviders", js.Array(value :_*))
+      inline def setImageryProvidersVarargs(value: ImageryProvider*): Self = StObject.set(x, "imageryProviders", js.Array(value*))
       
       inline def setZoomMax(value: Double): Self = StObject.set(x, "zoomMax", value.asInstanceOf[js.Any])
       
@@ -270,7 +270,7 @@ object bingMapsMod {
       
       inline def setResources(value: js.Array[Resource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value*))
     }
   }
 }

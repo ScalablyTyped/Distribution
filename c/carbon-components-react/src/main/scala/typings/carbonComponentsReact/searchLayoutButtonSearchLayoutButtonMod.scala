@@ -13,13 +13,13 @@ object searchLayoutButtonSearchLayoutButtonMod {
     */
   @JSImport("carbon-components-react/lib/components/SearchLayoutButton/SearchLayoutButton", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SearchLayoutButtonProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SearchLayoutButtonProps, js.Object, Any]
   
   /**
     * @deprecated
     */
-  type SearchLayoutButton = Component[SearchLayoutButtonProps, js.Object, js.Any]
+  type SearchLayoutButton = Component[SearchLayoutButtonProps, js.Object, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.carbonComponentsReact.carbonComponentsReactStrings.grid

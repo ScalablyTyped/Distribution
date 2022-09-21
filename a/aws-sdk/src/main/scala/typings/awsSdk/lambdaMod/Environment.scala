@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Environment extends StObject {
   
   /**
-    * Environment variable key-value pairs.
+    * Environment variable key-value pairs. For more information, see Using Lambda environment variables.
     */
   var Variables: js.UndefOr[EnvironmentVariables] = js.undefined
 }

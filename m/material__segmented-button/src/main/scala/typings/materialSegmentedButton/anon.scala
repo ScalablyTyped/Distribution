@@ -1,7 +1,7 @@
 package typings.materialSegmentedButton
 
 import typings.materialSegmentedButton.typesMod.SegmentDetail
-import typings.std.ClientRect
+import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +59,7 @@ object anon {
     
     var getAttr: js.UndefOr[js.Function1[/* attrName */ String, String | Null]] = js.undefined
     
-    var getRootBoundingClientRect: js.UndefOr[js.Function0[ClientRect]] = js.undefined
+    var getRootBoundingClientRect: js.UndefOr[js.Function0[DOMRect]] = js.undefined
     
     var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
@@ -88,7 +88,7 @@ object anon {
       
       inline def setGetAttrUndefined: Self = StObject.set(x, "getAttr", js.undefined)
       
-      inline def setGetRootBoundingClientRect(value: () => ClientRect): Self = StObject.set(x, "getRootBoundingClientRect", js.Any.fromFunction0(value))
+      inline def setGetRootBoundingClientRect(value: () => DOMRect): Self = StObject.set(x, "getRootBoundingClientRect", js.Any.fromFunction0(value))
       
       inline def setGetRootBoundingClientRectUndefined: Self = StObject.set(x, "getRootBoundingClientRect", js.undefined)
       

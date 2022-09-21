@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CreateLoyaltyRewardRequest")
 @js.native
-class CreateLoyaltyRewardRequest () extends StObject {
+open class CreateLoyaltyRewardRequest () extends StObject {
   
   /**
     * A unique string that identifies this `CreateLoyaltyReward` request. Keys can be any valid string, but must be unique for every request.

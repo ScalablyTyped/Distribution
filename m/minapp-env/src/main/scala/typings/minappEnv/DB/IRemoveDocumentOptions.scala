@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IRemoveDocumentOptions
   extends StObject
-     with IAPIParam[js.Any] {
+     with IAPIParam[Any] {
   
   var query: IQueryCondition
 }

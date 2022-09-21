@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientReportDesignerDialogEventArgs")
 @js.native
-class ASPxClientReportDesignerDialogEventArgs protected ()
+open class ASPxClientReportDesignerDialogEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientReportDesignerDialogEventArgs {
   /**
@@ -17,13 +17,13 @@ class ASPxClientReportDesignerDialogEventArgs protected ()
     * @param url Specifies the URL of the report currently being processed. This value is assigned to the ASPxClientReportDesignerDialogEventArgs.Url property.
     * @param report Specifies the report currently being processed. This value is assigned to the ASPxClientReportDesignerDialogEventArgs.Report property.
     */
-  def this(url: String, report: js.Any) = this()
+  def this(url: String, report: Any) = this()
   
   /**
     * Specifies the report currently being processed.
     */
   /* CompleteClass */
-  var Report: js.Any = js.native
+  var Report: Any = js.native
   
   /**
     * Specifies the URL of the report currently being processed.

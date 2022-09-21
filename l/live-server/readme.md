@@ -11,9 +11,9 @@ simple development http server with live reload capability
 | Full name          | live-server |
 | Keywords           | front-end, development, tool, server, http, cli |
 | # releases         | 1 |
-| # dependents       | 168 |
-| # downloads        | 9104371 |
-| # stars            | 145 |
+| # dependents       | 0.0 |
+| # downloads        | 481488.3333333333 |
+| # stars            | 3909.0 |
 
 ## Links
 - [Homepage](https://github.com/tapio/live-server#readme)

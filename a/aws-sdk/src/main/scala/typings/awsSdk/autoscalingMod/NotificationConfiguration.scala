@@ -9,7 +9,7 @@ trait NotificationConfiguration extends StObject {
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: js.UndefOr[ResourceName] = js.undefined
+  var AutoScalingGroupName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * One of the following event notification types:    autoscaling:EC2_INSTANCE_LAUNCH     autoscaling:EC2_INSTANCE_LAUNCH_ERROR     autoscaling:EC2_INSTANCE_TERMINATE     autoscaling:EC2_INSTANCE_TERMINATE_ERROR     autoscaling:TEST_NOTIFICATION   
@@ -17,9 +17,9 @@ trait NotificationConfiguration extends StObject {
   var NotificationType: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (Amazon SNS) topic.
+    * The Amazon Resource Name (ARN) of the Amazon SNS topic.
     */
-  var TopicARN: js.UndefOr[ResourceName] = js.undefined
+  var TopicARN: js.UndefOr[XmlStringMaxLen255] = js.undefined
 }
 object NotificationConfiguration {
   
@@ -30,7 +30,7 @@ object NotificationConfiguration {
   
   extension [Self <: NotificationConfiguration](x: Self) {
     
-    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     inline def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
     
@@ -38,7 +38,7 @@ object NotificationConfiguration {
     
     inline def setNotificationTypeUndefined: Self = StObject.set(x, "NotificationType", js.undefined)
     
-    inline def setTopicARN(value: ResourceName): Self = StObject.set(x, "TopicARN", value.asInstanceOf[js.Any])
+    inline def setTopicARN(value: XmlStringMaxLen255): Self = StObject.set(x, "TopicARN", value.asInstanceOf[js.Any])
     
     inline def setTopicARNUndefined: Self = StObject.set(x, "TopicARN", js.undefined)
   }

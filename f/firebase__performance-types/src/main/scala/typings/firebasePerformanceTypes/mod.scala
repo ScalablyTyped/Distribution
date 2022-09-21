@@ -70,7 +70,8 @@ object mod {
     
     /**
       * Adds to the value of a custom metric. If a custom metric with the provided name does not
-      * exist, it creates one with that name and the value equal to the given number.
+      * exist, it creates one with that name and the value equal to the given number. The value will be floored down to an
+      * integer.
       *
       * @param metricName The name of the custom metric.
       * @param num The number to be added to the value of the custom metric. If not provided, it
@@ -89,7 +90,8 @@ object mod {
     
     /**
       * Sets the value of the specified custom metric to the given number regardless of whether
-      * a metric with that name already exists on the trace instance or not.
+      * a metric with that name already exists on the trace instance or not. The value will be floored down to an
+      * integer.
       *
       * @param metricName Name of the custom metric.
       * @param num Value to of the custom metric.
@@ -131,18 +133,19 @@ object mod {
     
     trait NameServiceMapping extends StObject {
       
-      var performance: FirebasePerformance
+      var `performance-compat`: FirebasePerformance
     }
     object NameServiceMapping {
       
-      inline def apply(performance: FirebasePerformance): NameServiceMapping = {
-        val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
+      inline def apply(`performance-compat`: FirebasePerformance): NameServiceMapping = {
+        val __obj = js.Dynamic.literal()
+        __obj.updateDynamic("performance-compat")(`performance-compat`.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
       extension [Self <: NameServiceMapping](x: Self) {
         
-        inline def setPerformance(value: FirebasePerformance): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+        inline def `setPerformance-compat`(value: FirebasePerformance): Self = StObject.set(x, "performance-compat", value.asInstanceOf[js.Any])
       }
     }
   }

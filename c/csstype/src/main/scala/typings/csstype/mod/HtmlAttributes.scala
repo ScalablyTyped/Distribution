@@ -1,12 +1,10 @@
 package typings.csstype.mod
 
-import typings.csstype.csstypeStrings.`[referrerpolicy]_`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.csstype.csstypeStrings.`[-webkit-dropzone]`
   - typings.csstype.csstypeStrings.`[abbr]`
   - typings.csstype.csstypeStrings.`[accept-charset]`
   - typings.csstype.csstypeStrings.`[accept]`
@@ -31,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[bgcolor]`
   - typings.csstype.csstypeStrings.`[border]`
   - typings.csstype.csstypeStrings.`[bottommargin]`
-  - typings.csstype.csstypeStrings.`[buffered]`
+  - typings.csstype.csstypeStrings.`[capture]`
   - typings.csstype.csstypeStrings.`[cellpadding]`
   - typings.csstype.csstypeStrings.`[cellspacing]`
   - typings.csstype.csstypeStrings.`[char]`
@@ -66,14 +64,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[defer]`
   - typings.csstype.csstypeStrings.`[dir]`
   - typings.csstype.csstypeStrings.`[direction]`
+  - typings.csstype.csstypeStrings.`[dirname]`
   - typings.csstype.csstypeStrings.`[disabled]`
   - typings.csstype.csstypeStrings.`[download]`
   - typings.csstype.csstypeStrings.`[draggable]`
-  - typings.csstype.csstypeStrings.`[dropzone]`
   - typings.csstype.csstypeStrings.`[enctype]`
   - typings.csstype.csstypeStrings.`[enterkeyhint]`
   - typings.csstype.csstypeStrings.`[exportparts]`
   - typings.csstype.csstypeStrings.`[face]`
+  - typings.csstype.csstypeStrings.`[fetchpriority]`
   - typings.csstype.csstypeStrings.`[for]`
   - typings.csstype.csstypeStrings.`[form]`
   - typings.csstype.csstypeStrings.`[formaction]`
@@ -93,9 +92,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[http-equiv]`
   - typings.csstype.csstypeStrings.`[icon]`
   - typings.csstype.csstypeStrings.`[id]`
+  - typings.csstype.csstypeStrings.`[imagesizes]`
+  - typings.csstype.csstypeStrings.`[imagesrcset]`
+  - typings.csstype.csstypeStrings.`[inert]`
   - typings.csstype.csstypeStrings.`[inputmode]`
   - typings.csstype.csstypeStrings.`[integrity]`
-  - typings.csstype.csstypeStrings.`[intrinsicsize]`
   - typings.csstype.csstypeStrings.`[is]`
   - typings.csstype.csstypeStrings.`[ismap]`
   - typings.csstype.csstypeStrings.`[itemid]`
@@ -109,6 +110,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[language]`
   - typings.csstype.csstypeStrings.`[leftmargin]`
   - typings.csstype.csstypeStrings.`[link]`
+  - typings.csstype.csstypeStrings.`[list]`
   - typings.csstype.csstypeStrings.`[loading]`
   - typings.csstype.csstypeStrings.`[longdesc]`
   - typings.csstype.csstypeStrings.`[loop]`
@@ -126,51 +128,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[minlength]`
   - typings.csstype.csstypeStrings.`[moz-opaque]`
   - typings.csstype.csstypeStrings.`[mozallowfullscreen]`
-  - typings.csstype.csstypeStrings.`[mozcurrentsampleoffset]`
   - typings.csstype.csstypeStrings.`[msallowfullscreen]`
   - typings.csstype.csstypeStrings.`[multiple]`
   - typings.csstype.csstypeStrings.`[muted]`
   - typings.csstype.csstypeStrings.`[name]`
   - typings.csstype.csstypeStrings.`[nohref]`
   - typings.csstype.csstypeStrings.`[nomodule]`
+  - typings.csstype.csstypeStrings.`[nonce]`
   - typings.csstype.csstypeStrings.`[noresize]`
   - typings.csstype.csstypeStrings.`[noshade]`
   - typings.csstype.csstypeStrings.`[novalidate]`
   - typings.csstype.csstypeStrings.`[nowrap]`
   - typings.csstype.csstypeStrings.`[object]`
-  - typings.csstype.csstypeStrings.`[onafterprint]`
-  - typings.csstype.csstypeStrings.`[onbeforeprint]`
-  - typings.csstype.csstypeStrings.`[onbeforeunload]`
-  - typings.csstype.csstypeStrings.`[onblur]`
   - typings.csstype.csstypeStrings.`[onerror]`
-  - typings.csstype.csstypeStrings.`[onfocus]`
-  - typings.csstype.csstypeStrings.`[onhashchange]`
-  - typings.csstype.csstypeStrings.`[onlanguagechange]`
-  - typings.csstype.csstypeStrings.`[onload]`
-  - typings.csstype.csstypeStrings.`[onmessage]`
-  - typings.csstype.csstypeStrings.`[onoffline]`
-  - typings.csstype.csstypeStrings.`[ononline]`
-  - typings.csstype.csstypeStrings.`[onpopstate]`
-  - typings.csstype.csstypeStrings.`[onredo]`
-  - typings.csstype.csstypeStrings.`[onresize]`
-  - typings.csstype.csstypeStrings.`[onstorage]`
-  - typings.csstype.csstypeStrings.`[onundo]`
-  - typings.csstype.csstypeStrings.`[onunload]`
   - typings.csstype.csstypeStrings.`[open]`
   - typings.csstype.csstypeStrings.`[optimum]`
   - typings.csstype.csstypeStrings.`[part]`
+  - typings.csstype.csstypeStrings.`[pattern]`
   - typings.csstype.csstypeStrings.`[ping]`
   - typings.csstype.csstypeStrings.`[placeholder]`
-  - typings.csstype.csstypeStrings.`[played]`
   - typings.csstype.csstypeStrings.`[poster]`
   - typings.csstype.csstypeStrings.`[prefetch]`
   - typings.csstype.csstypeStrings.`[preload]`
   - typings.csstype.csstypeStrings.`[profile]`
-  - typings.csstype.csstypeStrings.`[prompt]`
   - typings.csstype.csstypeStrings.`[radiogroup]`
   - typings.csstype.csstypeStrings.`[readonly]`
-  - typings.csstype.csstypeStrings.`[referrerPolicy]`
-  - typings.csstype.csstypeStrings.`[referrerpolicy]_`
+  - typings.csstype.csstypeStrings.`[referrerpolicy]`
   - typings.csstype.csstypeStrings.`[rel]`
   - typings.csstype.csstypeStrings.`[required]`
   - typings.csstype.csstypeStrings.`[rev]`
@@ -184,15 +167,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[sandbox-allow-popups-to-escape-sandbox]`
   - typings.csstype.csstypeStrings.`[sandbox-allow-popups]`
   - typings.csstype.csstypeStrings.`[sandbox-allow-presentation]`
+  - typings.csstype.csstypeStrings.`[sandbox-allow-same-origin]`
   - typings.csstype.csstypeStrings.`[sandbox-allow-storage-access-by-user-activation]`
   - typings.csstype.csstypeStrings.`[sandbox-allow-top-navigation-by-user-activation]`
   - typings.csstype.csstypeStrings.`[sandbox]`
   - typings.csstype.csstypeStrings.`[scope]`
-  - typings.csstype.csstypeStrings.`[scoped]`
   - typings.csstype.csstypeStrings.`[scrollamount]`
   - typings.csstype.csstypeStrings.`[scrolldelay]`
   - typings.csstype.csstypeStrings.`[scrolling]`
   - typings.csstype.csstypeStrings.`[selected]`
+  - typings.csstype.csstypeStrings.`[shadowroot]`
   - typings.csstype.csstypeStrings.`[shape]`
   - typings.csstype.csstypeStrings.`[size]`
   - typings.csstype.csstypeStrings.`[sizes]`
@@ -205,6 +189,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[srcset]`
   - typings.csstype.csstypeStrings.`[standby]`
   - typings.csstype.csstypeStrings.`[start]`
+  - typings.csstype.csstypeStrings.`[step]`
   - typings.csstype.csstypeStrings.`[style]`
   - typings.csstype.csstypeStrings.`[summary]`
   - typings.csstype.csstypeStrings.`[tabindex]`
@@ -215,24 +200,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[translate]`
   - typings.csstype.csstypeStrings.`[truespeed]`
   - typings.csstype.csstypeStrings.`[type]`
-  - typings.csstype.csstypeStrings.`[typemustmatch]`
   - typings.csstype.csstypeStrings.`[usemap]`
   - typings.csstype.csstypeStrings.`[valign]`
   - typings.csstype.csstypeStrings.`[value]`
   - typings.csstype.csstypeStrings.`[valuetype]`
   - typings.csstype.csstypeStrings.`[version]`
   - typings.csstype.csstypeStrings.`[vlink]`
-  - typings.csstype.csstypeStrings.`[volume]`
   - typings.csstype.csstypeStrings.`[vspace]`
   - typings.csstype.csstypeStrings.`[webkitallowfullscreen]`
   - typings.csstype.csstypeStrings.`[width]`
   - typings.csstype.csstypeStrings.`[wrap]`
+  - typings.csstype.csstypeStrings.`[x-moz-errormessage]`
   - typings.csstype.csstypeStrings.`[xmlns]`
 */
 trait HtmlAttributes extends StObject
 object HtmlAttributes {
-  
-  inline def `[-webkit-dropzone]`: typings.csstype.csstypeStrings.`[-webkit-dropzone]` = "[-webkit-dropzone]".asInstanceOf[typings.csstype.csstypeStrings.`[-webkit-dropzone]`]
   
   inline def `[abbr]`: typings.csstype.csstypeStrings.`[abbr]` = "[abbr]".asInstanceOf[typings.csstype.csstypeStrings.`[abbr]`]
   
@@ -282,7 +264,7 @@ object HtmlAttributes {
   
   inline def `[bottommargin]`: typings.csstype.csstypeStrings.`[bottommargin]` = "[bottommargin]".asInstanceOf[typings.csstype.csstypeStrings.`[bottommargin]`]
   
-  inline def `[buffered]`: typings.csstype.csstypeStrings.`[buffered]` = "[buffered]".asInstanceOf[typings.csstype.csstypeStrings.`[buffered]`]
+  inline def `[capture]`: typings.csstype.csstypeStrings.`[capture]` = "[capture]".asInstanceOf[typings.csstype.csstypeStrings.`[capture]`]
   
   inline def `[cellpadding]`: typings.csstype.csstypeStrings.`[cellpadding]` = "[cellpadding]".asInstanceOf[typings.csstype.csstypeStrings.`[cellpadding]`]
   
@@ -352,13 +334,13 @@ object HtmlAttributes {
   
   inline def `[direction]`: typings.csstype.csstypeStrings.`[direction]` = "[direction]".asInstanceOf[typings.csstype.csstypeStrings.`[direction]`]
   
+  inline def `[dirname]`: typings.csstype.csstypeStrings.`[dirname]` = "[dirname]".asInstanceOf[typings.csstype.csstypeStrings.`[dirname]`]
+  
   inline def `[disabled]`: typings.csstype.csstypeStrings.`[disabled]` = "[disabled]".asInstanceOf[typings.csstype.csstypeStrings.`[disabled]`]
   
   inline def `[download]`: typings.csstype.csstypeStrings.`[download]` = "[download]".asInstanceOf[typings.csstype.csstypeStrings.`[download]`]
   
   inline def `[draggable]`: typings.csstype.csstypeStrings.`[draggable]` = "[draggable]".asInstanceOf[typings.csstype.csstypeStrings.`[draggable]`]
-  
-  inline def `[dropzone]`: typings.csstype.csstypeStrings.`[dropzone]` = "[dropzone]".asInstanceOf[typings.csstype.csstypeStrings.`[dropzone]`]
   
   inline def `[enctype]`: typings.csstype.csstypeStrings.`[enctype]` = "[enctype]".asInstanceOf[typings.csstype.csstypeStrings.`[enctype]`]
   
@@ -367,6 +349,8 @@ object HtmlAttributes {
   inline def `[exportparts]`: typings.csstype.csstypeStrings.`[exportparts]` = "[exportparts]".asInstanceOf[typings.csstype.csstypeStrings.`[exportparts]`]
   
   inline def `[face]`: typings.csstype.csstypeStrings.`[face]` = "[face]".asInstanceOf[typings.csstype.csstypeStrings.`[face]`]
+  
+  inline def `[fetchpriority]`: typings.csstype.csstypeStrings.`[fetchpriority]` = "[fetchpriority]".asInstanceOf[typings.csstype.csstypeStrings.`[fetchpriority]`]
   
   inline def `[for]`: typings.csstype.csstypeStrings.`[for]` = "[for]".asInstanceOf[typings.csstype.csstypeStrings.`[for]`]
   
@@ -406,11 +390,15 @@ object HtmlAttributes {
   
   inline def `[id]`: typings.csstype.csstypeStrings.`[id]` = "[id]".asInstanceOf[typings.csstype.csstypeStrings.`[id]`]
   
+  inline def `[imagesizes]`: typings.csstype.csstypeStrings.`[imagesizes]` = "[imagesizes]".asInstanceOf[typings.csstype.csstypeStrings.`[imagesizes]`]
+  
+  inline def `[imagesrcset]`: typings.csstype.csstypeStrings.`[imagesrcset]` = "[imagesrcset]".asInstanceOf[typings.csstype.csstypeStrings.`[imagesrcset]`]
+  
+  inline def `[inert]`: typings.csstype.csstypeStrings.`[inert]` = "[inert]".asInstanceOf[typings.csstype.csstypeStrings.`[inert]`]
+  
   inline def `[inputmode]`: typings.csstype.csstypeStrings.`[inputmode]` = "[inputmode]".asInstanceOf[typings.csstype.csstypeStrings.`[inputmode]`]
   
   inline def `[integrity]`: typings.csstype.csstypeStrings.`[integrity]` = "[integrity]".asInstanceOf[typings.csstype.csstypeStrings.`[integrity]`]
-  
-  inline def `[intrinsicsize]`: typings.csstype.csstypeStrings.`[intrinsicsize]` = "[intrinsicsize]".asInstanceOf[typings.csstype.csstypeStrings.`[intrinsicsize]`]
   
   inline def `[is]`: typings.csstype.csstypeStrings.`[is]` = "[is]".asInstanceOf[typings.csstype.csstypeStrings.`[is]`]
   
@@ -437,6 +425,8 @@ object HtmlAttributes {
   inline def `[leftmargin]`: typings.csstype.csstypeStrings.`[leftmargin]` = "[leftmargin]".asInstanceOf[typings.csstype.csstypeStrings.`[leftmargin]`]
   
   inline def `[link]`: typings.csstype.csstypeStrings.`[link]` = "[link]".asInstanceOf[typings.csstype.csstypeStrings.`[link]`]
+  
+  inline def `[list]`: typings.csstype.csstypeStrings.`[list]` = "[list]".asInstanceOf[typings.csstype.csstypeStrings.`[list]`]
   
   inline def `[loading]`: typings.csstype.csstypeStrings.`[loading]` = "[loading]".asInstanceOf[typings.csstype.csstypeStrings.`[loading]`]
   
@@ -472,8 +462,6 @@ object HtmlAttributes {
   
   inline def `[mozallowfullscreen]`: typings.csstype.csstypeStrings.`[mozallowfullscreen]` = "[mozallowfullscreen]".asInstanceOf[typings.csstype.csstypeStrings.`[mozallowfullscreen]`]
   
-  inline def `[mozcurrentsampleoffset]`: typings.csstype.csstypeStrings.`[mozcurrentsampleoffset]` = "[mozcurrentsampleoffset]".asInstanceOf[typings.csstype.csstypeStrings.`[mozcurrentsampleoffset]`]
-  
   inline def `[msallowfullscreen]`: typings.csstype.csstypeStrings.`[msallowfullscreen]` = "[msallowfullscreen]".asInstanceOf[typings.csstype.csstypeStrings.`[msallowfullscreen]`]
   
   inline def `[multiple]`: typings.csstype.csstypeStrings.`[multiple]` = "[multiple]".asInstanceOf[typings.csstype.csstypeStrings.`[multiple]`]
@@ -486,6 +474,8 @@ object HtmlAttributes {
   
   inline def `[nomodule]`: typings.csstype.csstypeStrings.`[nomodule]` = "[nomodule]".asInstanceOf[typings.csstype.csstypeStrings.`[nomodule]`]
   
+  inline def `[nonce]`: typings.csstype.csstypeStrings.`[nonce]` = "[nonce]".asInstanceOf[typings.csstype.csstypeStrings.`[nonce]`]
+  
   inline def `[noresize]`: typings.csstype.csstypeStrings.`[noresize]` = "[noresize]".asInstanceOf[typings.csstype.csstypeStrings.`[noresize]`]
   
   inline def `[noshade]`: typings.csstype.csstypeStrings.`[noshade]` = "[noshade]".asInstanceOf[typings.csstype.csstypeStrings.`[noshade]`]
@@ -496,41 +486,7 @@ object HtmlAttributes {
   
   inline def `[object]`: typings.csstype.csstypeStrings.`[object]` = "[object]".asInstanceOf[typings.csstype.csstypeStrings.`[object]`]
   
-  inline def `[onafterprint]`: typings.csstype.csstypeStrings.`[onafterprint]` = "[onafterprint]".asInstanceOf[typings.csstype.csstypeStrings.`[onafterprint]`]
-  
-  inline def `[onbeforeprint]`: typings.csstype.csstypeStrings.`[onbeforeprint]` = "[onbeforeprint]".asInstanceOf[typings.csstype.csstypeStrings.`[onbeforeprint]`]
-  
-  inline def `[onbeforeunload]`: typings.csstype.csstypeStrings.`[onbeforeunload]` = "[onbeforeunload]".asInstanceOf[typings.csstype.csstypeStrings.`[onbeforeunload]`]
-  
-  inline def `[onblur]`: typings.csstype.csstypeStrings.`[onblur]` = "[onblur]".asInstanceOf[typings.csstype.csstypeStrings.`[onblur]`]
-  
   inline def `[onerror]`: typings.csstype.csstypeStrings.`[onerror]` = "[onerror]".asInstanceOf[typings.csstype.csstypeStrings.`[onerror]`]
-  
-  inline def `[onfocus]`: typings.csstype.csstypeStrings.`[onfocus]` = "[onfocus]".asInstanceOf[typings.csstype.csstypeStrings.`[onfocus]`]
-  
-  inline def `[onhashchange]`: typings.csstype.csstypeStrings.`[onhashchange]` = "[onhashchange]".asInstanceOf[typings.csstype.csstypeStrings.`[onhashchange]`]
-  
-  inline def `[onlanguagechange]`: typings.csstype.csstypeStrings.`[onlanguagechange]` = "[onlanguagechange]".asInstanceOf[typings.csstype.csstypeStrings.`[onlanguagechange]`]
-  
-  inline def `[onload]`: typings.csstype.csstypeStrings.`[onload]` = "[onload]".asInstanceOf[typings.csstype.csstypeStrings.`[onload]`]
-  
-  inline def `[onmessage]`: typings.csstype.csstypeStrings.`[onmessage]` = "[onmessage]".asInstanceOf[typings.csstype.csstypeStrings.`[onmessage]`]
-  
-  inline def `[onoffline]`: typings.csstype.csstypeStrings.`[onoffline]` = "[onoffline]".asInstanceOf[typings.csstype.csstypeStrings.`[onoffline]`]
-  
-  inline def `[ononline]`: typings.csstype.csstypeStrings.`[ononline]` = "[ononline]".asInstanceOf[typings.csstype.csstypeStrings.`[ononline]`]
-  
-  inline def `[onpopstate]`: typings.csstype.csstypeStrings.`[onpopstate]` = "[onpopstate]".asInstanceOf[typings.csstype.csstypeStrings.`[onpopstate]`]
-  
-  inline def `[onredo]`: typings.csstype.csstypeStrings.`[onredo]` = "[onredo]".asInstanceOf[typings.csstype.csstypeStrings.`[onredo]`]
-  
-  inline def `[onresize]`: typings.csstype.csstypeStrings.`[onresize]` = "[onresize]".asInstanceOf[typings.csstype.csstypeStrings.`[onresize]`]
-  
-  inline def `[onstorage]`: typings.csstype.csstypeStrings.`[onstorage]` = "[onstorage]".asInstanceOf[typings.csstype.csstypeStrings.`[onstorage]`]
-  
-  inline def `[onundo]`: typings.csstype.csstypeStrings.`[onundo]` = "[onundo]".asInstanceOf[typings.csstype.csstypeStrings.`[onundo]`]
-  
-  inline def `[onunload]`: typings.csstype.csstypeStrings.`[onunload]` = "[onunload]".asInstanceOf[typings.csstype.csstypeStrings.`[onunload]`]
   
   inline def `[open]`: typings.csstype.csstypeStrings.`[open]` = "[open]".asInstanceOf[typings.csstype.csstypeStrings.`[open]`]
   
@@ -538,11 +494,11 @@ object HtmlAttributes {
   
   inline def `[part]`: typings.csstype.csstypeStrings.`[part]` = "[part]".asInstanceOf[typings.csstype.csstypeStrings.`[part]`]
   
+  inline def `[pattern]`: typings.csstype.csstypeStrings.`[pattern]` = "[pattern]".asInstanceOf[typings.csstype.csstypeStrings.`[pattern]`]
+  
   inline def `[ping]`: typings.csstype.csstypeStrings.`[ping]` = "[ping]".asInstanceOf[typings.csstype.csstypeStrings.`[ping]`]
   
   inline def `[placeholder]`: typings.csstype.csstypeStrings.`[placeholder]` = "[placeholder]".asInstanceOf[typings.csstype.csstypeStrings.`[placeholder]`]
-  
-  inline def `[played]`: typings.csstype.csstypeStrings.`[played]` = "[played]".asInstanceOf[typings.csstype.csstypeStrings.`[played]`]
   
   inline def `[poster]`: typings.csstype.csstypeStrings.`[poster]` = "[poster]".asInstanceOf[typings.csstype.csstypeStrings.`[poster]`]
   
@@ -552,15 +508,11 @@ object HtmlAttributes {
   
   inline def `[profile]`: typings.csstype.csstypeStrings.`[profile]` = "[profile]".asInstanceOf[typings.csstype.csstypeStrings.`[profile]`]
   
-  inline def `[prompt]`: typings.csstype.csstypeStrings.`[prompt]` = "[prompt]".asInstanceOf[typings.csstype.csstypeStrings.`[prompt]`]
-  
   inline def `[radiogroup]`: typings.csstype.csstypeStrings.`[radiogroup]` = "[radiogroup]".asInstanceOf[typings.csstype.csstypeStrings.`[radiogroup]`]
   
   inline def `[readonly]`: typings.csstype.csstypeStrings.`[readonly]` = "[readonly]".asInstanceOf[typings.csstype.csstypeStrings.`[readonly]`]
   
-  inline def `[referrerPolicy]`: typings.csstype.csstypeStrings.`[referrerPolicy]` = "[referrerPolicy]".asInstanceOf[typings.csstype.csstypeStrings.`[referrerPolicy]`]
-  
-  inline def `[referrerpolicy]`: `[referrerpolicy]_` = "[referrerpolicy]".asInstanceOf[`[referrerpolicy]_`]
+  inline def `[referrerpolicy]`: typings.csstype.csstypeStrings.`[referrerpolicy]` = "[referrerpolicy]".asInstanceOf[typings.csstype.csstypeStrings.`[referrerpolicy]`]
   
   inline def `[rel]`: typings.csstype.csstypeStrings.`[rel]` = "[rel]".asInstanceOf[typings.csstype.csstypeStrings.`[rel]`]
   
@@ -588,6 +540,8 @@ object HtmlAttributes {
   
   inline def `[sandbox-allow-presentation]`: typings.csstype.csstypeStrings.`[sandbox-allow-presentation]` = "[sandbox-allow-presentation]".asInstanceOf[typings.csstype.csstypeStrings.`[sandbox-allow-presentation]`]
   
+  inline def `[sandbox-allow-same-origin]`: typings.csstype.csstypeStrings.`[sandbox-allow-same-origin]` = "[sandbox-allow-same-origin]".asInstanceOf[typings.csstype.csstypeStrings.`[sandbox-allow-same-origin]`]
+  
   inline def `[sandbox-allow-storage-access-by-user-activation]`: typings.csstype.csstypeStrings.`[sandbox-allow-storage-access-by-user-activation]` = "[sandbox-allow-storage-access-by-user-activation]".asInstanceOf[typings.csstype.csstypeStrings.`[sandbox-allow-storage-access-by-user-activation]`]
   
   inline def `[sandbox-allow-top-navigation-by-user-activation]`: typings.csstype.csstypeStrings.`[sandbox-allow-top-navigation-by-user-activation]` = "[sandbox-allow-top-navigation-by-user-activation]".asInstanceOf[typings.csstype.csstypeStrings.`[sandbox-allow-top-navigation-by-user-activation]`]
@@ -596,8 +550,6 @@ object HtmlAttributes {
   
   inline def `[scope]`: typings.csstype.csstypeStrings.`[scope]` = "[scope]".asInstanceOf[typings.csstype.csstypeStrings.`[scope]`]
   
-  inline def `[scoped]`: typings.csstype.csstypeStrings.`[scoped]` = "[scoped]".asInstanceOf[typings.csstype.csstypeStrings.`[scoped]`]
-  
   inline def `[scrollamount]`: typings.csstype.csstypeStrings.`[scrollamount]` = "[scrollamount]".asInstanceOf[typings.csstype.csstypeStrings.`[scrollamount]`]
   
   inline def `[scrolldelay]`: typings.csstype.csstypeStrings.`[scrolldelay]` = "[scrolldelay]".asInstanceOf[typings.csstype.csstypeStrings.`[scrolldelay]`]
@@ -605,6 +557,8 @@ object HtmlAttributes {
   inline def `[scrolling]`: typings.csstype.csstypeStrings.`[scrolling]` = "[scrolling]".asInstanceOf[typings.csstype.csstypeStrings.`[scrolling]`]
   
   inline def `[selected]`: typings.csstype.csstypeStrings.`[selected]` = "[selected]".asInstanceOf[typings.csstype.csstypeStrings.`[selected]`]
+  
+  inline def `[shadowroot]`: typings.csstype.csstypeStrings.`[shadowroot]` = "[shadowroot]".asInstanceOf[typings.csstype.csstypeStrings.`[shadowroot]`]
   
   inline def `[shape]`: typings.csstype.csstypeStrings.`[shape]` = "[shape]".asInstanceOf[typings.csstype.csstypeStrings.`[shape]`]
   
@@ -630,6 +584,8 @@ object HtmlAttributes {
   
   inline def `[start]`: typings.csstype.csstypeStrings.`[start]` = "[start]".asInstanceOf[typings.csstype.csstypeStrings.`[start]`]
   
+  inline def `[step]`: typings.csstype.csstypeStrings.`[step]` = "[step]".asInstanceOf[typings.csstype.csstypeStrings.`[step]`]
+  
   inline def `[style]`: typings.csstype.csstypeStrings.`[style]` = "[style]".asInstanceOf[typings.csstype.csstypeStrings.`[style]`]
   
   inline def `[summary]`: typings.csstype.csstypeStrings.`[summary]` = "[summary]".asInstanceOf[typings.csstype.csstypeStrings.`[summary]`]
@@ -650,8 +606,6 @@ object HtmlAttributes {
   
   inline def `[type]`: typings.csstype.csstypeStrings.`[type]` = "[type]".asInstanceOf[typings.csstype.csstypeStrings.`[type]`]
   
-  inline def `[typemustmatch]`: typings.csstype.csstypeStrings.`[typemustmatch]` = "[typemustmatch]".asInstanceOf[typings.csstype.csstypeStrings.`[typemustmatch]`]
-  
   inline def `[usemap]`: typings.csstype.csstypeStrings.`[usemap]` = "[usemap]".asInstanceOf[typings.csstype.csstypeStrings.`[usemap]`]
   
   inline def `[valign]`: typings.csstype.csstypeStrings.`[valign]` = "[valign]".asInstanceOf[typings.csstype.csstypeStrings.`[valign]`]
@@ -664,8 +618,6 @@ object HtmlAttributes {
   
   inline def `[vlink]`: typings.csstype.csstypeStrings.`[vlink]` = "[vlink]".asInstanceOf[typings.csstype.csstypeStrings.`[vlink]`]
   
-  inline def `[volume]`: typings.csstype.csstypeStrings.`[volume]` = "[volume]".asInstanceOf[typings.csstype.csstypeStrings.`[volume]`]
-  
   inline def `[vspace]`: typings.csstype.csstypeStrings.`[vspace]` = "[vspace]".asInstanceOf[typings.csstype.csstypeStrings.`[vspace]`]
   
   inline def `[webkitallowfullscreen]`: typings.csstype.csstypeStrings.`[webkitallowfullscreen]` = "[webkitallowfullscreen]".asInstanceOf[typings.csstype.csstypeStrings.`[webkitallowfullscreen]`]
@@ -673,6 +625,8 @@ object HtmlAttributes {
   inline def `[width]`: typings.csstype.csstypeStrings.`[width]` = "[width]".asInstanceOf[typings.csstype.csstypeStrings.`[width]`]
   
   inline def `[wrap]`: typings.csstype.csstypeStrings.`[wrap]` = "[wrap]".asInstanceOf[typings.csstype.csstypeStrings.`[wrap]`]
+  
+  inline def `[x-moz-errormessage]`: typings.csstype.csstypeStrings.`[x-moz-errormessage]` = "[x-moz-errormessage]".asInstanceOf[typings.csstype.csstypeStrings.`[x-moz-errormessage]`]
   
   inline def `[xmlns]`: typings.csstype.csstypeStrings.`[xmlns]` = "[xmlns]".asInstanceOf[typings.csstype.csstypeStrings.`[xmlns]`]
 }

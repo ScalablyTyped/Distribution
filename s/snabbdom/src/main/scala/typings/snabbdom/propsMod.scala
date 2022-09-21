@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object propsMod {
   
-  @JSImport("snabbdom/build/package/modules/props", "propsModule")
+  @JSImport("snabbdom/build/modules/props", "propsModule")
   @js.native
   val propsModule: Module = js.native
   
-  type Props = Record[String, js.Any]
+  type Props = Record[String, Any]
 }

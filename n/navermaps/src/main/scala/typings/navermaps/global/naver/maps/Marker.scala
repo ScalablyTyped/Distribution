@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.Marker")
 @js.native
-class Marker protected ()
+open class Marker protected ()
   extends StObject
      with typings.navermaps.naver.maps.Marker {
   def this(options: MarkerOptions) = this()

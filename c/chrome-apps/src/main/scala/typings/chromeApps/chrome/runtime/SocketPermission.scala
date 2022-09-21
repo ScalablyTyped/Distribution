@@ -31,6 +31,6 @@ object SocketPermission {
     
     inline def setSocket(value: js.Array[String]): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
-    inline def setSocketVarargs(value: String*): Self = StObject.set(x, "socket", js.Array(value :_*))
+    inline def setSocketVarargs(value: String*): Self = StObject.set(x, "socket", js.Array(value*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel.Interfaces
 
+import typings.officeJsPreview.Excel.CellValue
 import typings.officeJsPreview.Excel.LinkedDataTypeState
 import typings.officeJsPreview.Excel.NumberFormatCategory
 import typings.officeJsPreview.Excel.RangeHyperlink
@@ -12,273 +13,296 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RangeData extends StObject {
   
   /**
+    * Specifies the range reference in A1-style. Address value contains the sheet reference (e.g., "Sheet1!A1:B4").
     *
-    * Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var address: js.UndefOr[String] = js.undefined
   
   /**
+    * Represents the range reference for the specified range in the language of the user.
     *
-    * Specifies the range reference for the specified range in the language of the user.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var addressLocal: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647).
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var cellCount: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies the total number of columns in the range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var columnCount: js.UndefOr[Double] = js.undefined
   
   /**
+    * Represents if all columns in the current range are hidden. Value is `true` when all columns in a range are hidden. Value is `false` when no columns in the range are hidden. Value is `null` when some columns in a range are hidden and other columns in the same range are not hidden.
     *
-    * Represents if all columns of the current range are hidden.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var columnHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the column number of the first cell in the range. Zero-indexed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var columnIndex: js.UndefOr[Double] = js.undefined
   
   /**
+    * The collection of `ConditionalFormats` that intersect the range.
     *
-    * The collection of ConditionalFormats that intersect the range.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var conditionalFormats: js.UndefOr[js.Array[ConditionalFormatData]] = js.undefined
   
   /**
-    *
     * Returns a data validation object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var dataValidation: js.UndefOr[DataValidationData] = js.undefined
   
   /**
-    *
     * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var format: js.UndefOr[RangeFormatData] = js.undefined
   
   /**
-    *
     * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
-  var formulas: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var formulas: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
   
   /**
-    *
     * Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its value is returned instead.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
-  var formulasLocal: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var formulasLocal: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
   
   /**
-    *
     * Represents the formula in R1C1-style notation. If a cell has no formula, its value is returned instead.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
-  var formulasR1C1: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var formulasR1C1: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
   
   /**
-    *
     * Represents if all cells have a spill border.
-    Returns true if all cells have a spill border, or false if all cells do not have a spill border.
-    Returns null if there are cells both with and without spill borders within the range.
+    Returns `true` if all cells have a spill border, or `false` if all cells do not have a spill border.
+    Returns `null` if there are cells both with and without spill borders within the range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var hasSpill: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Returns the distance in points, for 100% zoom, from the top edge of the range to the bottom edge of the range.
     *
-    * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
+    * Represents if all cells in the current range are hidden. Value is `true` when all cells in a range are hidden. Value is `false` when no cells in the range are hidden. Value is `null` when some cells in a range are hidden and other cells in the same range are not hidden.
     *
-    * Represents if all cells of the current range are hidden.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the hyperlink for the current range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var hyperlink: js.UndefOr[RangeHyperlink] = js.undefined
   
   /**
-    *
     * Represents if the current range is an entire column.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var isEntireColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents if the current range is an entire row.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var isEntireRow: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Returns the distance in points, for 100% zoom, from the left edge of the worksheet to the left edge of the range.
     *
-    * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var left: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Represents the data type state of each cell.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var linkedDataTypeState: js.UndefOr[js.Array[js.Array[LinkedDataTypeState]]] = js.undefined
   
   /**
+    * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
     *
-    * Represents Excel's number format code for the given range.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
-  var numberFormat: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var numberFormat: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
   
   /**
-    *
     * Represents the category of number format of each cell.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var numberFormatCategories: js.UndefOr[js.Array[js.Array[NumberFormatCategory]]] = js.undefined
   
   /**
-    *
-    * Represents Excel's number format code for the given range, based on the language settings of the user.​
+    * Represents Excel's number format code for the given range, based on the language settings of the user.
     Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
     Any returned text uses the locally-formatted strings based on the language specified in the system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
-  var numberFormatLocal: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var numberFormatLocal: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
   
   /**
-    *
     * Returns the total number of rows in the range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var rowCount: js.UndefOr[Double] = js.undefined
   
   /**
+    * Represents if all rows in the current range are hidden. Value is `true` when all rows in a range are hidden. Value is `false` when no rows in the range are hidden. Value is `null` when some rows in a range are hidden and other rows in the same range are not hidden.
     *
-    * Represents if all rows of the current range are hidden.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var rowHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Returns the row number of the first cell in the range. Zero-indexed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var rowIndex: js.UndefOr[Double] = js.undefined
   
   /**
+    * Represents if all the cells would be saved as an array formula.
+    Returns `true` if all cells would be saved as an array formula, or `false` if all cells would not be saved as an array formula.
+    Returns `null` if some cells would be saved as an array formula and some would not be.
     *
-    * Represents if ALL the cells would be saved as an array formula.
-    Returns true if ALL cells would be saved as an array formula, or false if ALL cells would NOT be saved as an array formula.
-    Returns null if some cells would be saved as an array formula and some would not be.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var savedAsArray: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the style of the current range.
-    If the styles of the cells are inconsistent, null will be returned.
-    For custom styles, the style name will be returned. For built-in styles, a string representing a value in the BuiltInStyle enum will be returned.
+    If the styles of the cells are inconsistent, `null` will be returned.
+    For custom styles, the style name will be returned. For built-in styles, a string representing a value in the `BuiltInStyle` enum will be returned.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var style: js.UndefOr[String] = js.undefined
   
   /**
+    * Text values of the specified range. The text value will not depend on the cell width. The number sign (#) substitution that happens in the Excel UI will not affect the text value returned by the API.
     *
-    * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var text: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
   /**
+    * Returns the distance in points, for 100% zoom, from the top edge of the worksheet to the top edge of the range.
     *
-    * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var top: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies the type of data in each cell.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var valueTypes: js.UndefOr[js.Array[js.Array[RangeValueType]]] = js.undefined
   
   /**
+    * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+    If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
     *
-    * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
-  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var values: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
   
   /**
+    * A JSON representation of the values in the cells in this range.
+    Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+    Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
     *
-    * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range.
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var valuesAsJson: js.UndefOr[js.Array[js.Array[CellValue]]] = js.undefined
+  
+  /**
+    * A JSON representation of the values in the cells in this range.
+    Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+    Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
     *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var valuesAsJsonLocal: js.UndefOr[js.Array[js.Array[CellValue]]] = js.undefined
+  
+  /**
+    * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
+    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var width: js.UndefOr[Double] = js.undefined
@@ -320,7 +344,7 @@ object RangeData {
     
     inline def setConditionalFormatsUndefined: Self = StObject.set(x, "conditionalFormats", js.undefined)
     
-    inline def setConditionalFormatsVarargs(value: ConditionalFormatData*): Self = StObject.set(x, "conditionalFormats", js.Array(value :_*))
+    inline def setConditionalFormatsVarargs(value: ConditionalFormatData*): Self = StObject.set(x, "conditionalFormats", js.Array(value*))
     
     inline def setDataValidation(value: DataValidationData): Self = StObject.set(x, "dataValidation", value.asInstanceOf[js.Any])
     
@@ -330,23 +354,23 @@ object RangeData {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setFormulas(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
+    inline def setFormulas(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
     
-    inline def setFormulasLocal(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
+    inline def setFormulasLocal(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
     
     inline def setFormulasLocalUndefined: Self = StObject.set(x, "formulasLocal", js.undefined)
     
-    inline def setFormulasLocalVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulasLocal", js.Array(value :_*))
+    inline def setFormulasLocalVarargs(value: js.Array[Any]*): Self = StObject.set(x, "formulasLocal", js.Array(value*))
     
-    inline def setFormulasR1C1(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
+    inline def setFormulasR1C1(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
     
     inline def setFormulasR1C1Undefined: Self = StObject.set(x, "formulasR1C1", js.undefined)
     
-    inline def setFormulasR1C1Varargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulasR1C1", js.Array(value :_*))
+    inline def setFormulasR1C1Varargs(value: js.Array[Any]*): Self = StObject.set(x, "formulasR1C1", js.Array(value*))
     
     inline def setFormulasUndefined: Self = StObject.set(x, "formulas", js.undefined)
     
-    inline def setFormulasVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulas", js.Array(value :_*))
+    inline def setFormulasVarargs(value: js.Array[Any]*): Self = StObject.set(x, "formulas", js.Array(value*))
     
     inline def setHasSpill(value: Boolean): Self = StObject.set(x, "hasSpill", value.asInstanceOf[js.Any])
     
@@ -380,25 +404,25 @@ object RangeData {
     
     inline def setLinkedDataTypeStateUndefined: Self = StObject.set(x, "linkedDataTypeState", js.undefined)
     
-    inline def setLinkedDataTypeStateVarargs(value: js.Array[LinkedDataTypeState]*): Self = StObject.set(x, "linkedDataTypeState", js.Array(value :_*))
+    inline def setLinkedDataTypeStateVarargs(value: js.Array[LinkedDataTypeState]*): Self = StObject.set(x, "linkedDataTypeState", js.Array(value*))
     
-    inline def setNumberFormat(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     inline def setNumberFormatCategories(value: js.Array[js.Array[NumberFormatCategory]]): Self = StObject.set(x, "numberFormatCategories", value.asInstanceOf[js.Any])
     
     inline def setNumberFormatCategoriesUndefined: Self = StObject.set(x, "numberFormatCategories", js.undefined)
     
-    inline def setNumberFormatCategoriesVarargs(value: js.Array[NumberFormatCategory]*): Self = StObject.set(x, "numberFormatCategories", js.Array(value :_*))
+    inline def setNumberFormatCategoriesVarargs(value: js.Array[NumberFormatCategory]*): Self = StObject.set(x, "numberFormatCategories", js.Array(value*))
     
-    inline def setNumberFormatLocal(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "numberFormatLocal", value.asInstanceOf[js.Any])
+    inline def setNumberFormatLocal(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "numberFormatLocal", value.asInstanceOf[js.Any])
     
     inline def setNumberFormatLocalUndefined: Self = StObject.set(x, "numberFormatLocal", js.undefined)
     
-    inline def setNumberFormatLocalVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "numberFormatLocal", js.Array(value :_*))
+    inline def setNumberFormatLocalVarargs(value: js.Array[Any]*): Self = StObject.set(x, "numberFormatLocal", js.Array(value*))
     
     inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
-    inline def setNumberFormatVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "numberFormat", js.Array(value :_*))
+    inline def setNumberFormatVarargs(value: js.Array[Any]*): Self = StObject.set(x, "numberFormat", js.Array(value*))
     
     inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
@@ -424,7 +448,7 @@ object RangeData {
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setTextVarargs(value: js.Array[String]*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: js.Array[String]*): Self = StObject.set(x, "text", js.Array(value*))
     
     inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
@@ -434,13 +458,25 @@ object RangeData {
     
     inline def setValueTypesUndefined: Self = StObject.set(x, "valueTypes", js.undefined)
     
-    inline def setValueTypesVarargs(value: js.Array[RangeValueType]*): Self = StObject.set(x, "valueTypes", js.Array(value :_*))
+    inline def setValueTypesVarargs(value: js.Array[RangeValueType]*): Self = StObject.set(x, "valueTypes", js.Array(value*))
     
-    inline def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesAsJson(value: js.Array[js.Array[CellValue]]): Self = StObject.set(x, "valuesAsJson", value.asInstanceOf[js.Any])
+    
+    inline def setValuesAsJsonLocal(value: js.Array[js.Array[CellValue]]): Self = StObject.set(x, "valuesAsJsonLocal", value.asInstanceOf[js.Any])
+    
+    inline def setValuesAsJsonLocalUndefined: Self = StObject.set(x, "valuesAsJsonLocal", js.undefined)
+    
+    inline def setValuesAsJsonLocalVarargs(value: js.Array[CellValue]*): Self = StObject.set(x, "valuesAsJsonLocal", js.Array(value*))
+    
+    inline def setValuesAsJsonUndefined: Self = StObject.set(x, "valuesAsJson", js.undefined)
+    
+    inline def setValuesAsJsonVarargs(value: js.Array[CellValue]*): Self = StObject.set(x, "valuesAsJson", js.Array(value*))
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Array[Any]*): Self = StObject.set(x, "values", js.Array(value*))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

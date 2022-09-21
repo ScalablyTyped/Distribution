@@ -15,7 +15,7 @@ trait ModernizrAPI extends StObject {
   
   def addTest(feature: String, test: js.Function0[Boolean]): ModernizrStatic = js.native
   def addTest(feature: String, test: Boolean): ModernizrStatic = js.native
-  def addTest(feature: Dictionary[js.Any]): ModernizrStatic = js.native
+  def addTest(feature: Dictionary[Any]): ModernizrStatic = js.native
   
   def atRule(prop: String): Boolean = js.native
   
@@ -24,11 +24,11 @@ trait ModernizrAPI extends StObject {
   
   def mq(mq: String): Boolean = js.native
   
-  def on(feature: String, cb: js.Function1[/* result */ Boolean, js.Any]): Unit = js.native
+  def on(feature: String, cb: js.Function1[/* result */ Boolean, Any]): Unit = js.native
   
   def prefixed(prop: String): String = js.native
-  def prefixed(prop: String, obj: EventTarget): js.Any = js.native
-  def prefixed(prop: String, obj: EventTarget, element: Boolean): js.Any = js.native
+  def prefixed(prop: String, obj: EventTarget): Any = js.native
+  def prefixed(prop: String, obj: EventTarget, element: Boolean): Any = js.native
   
   def prefixedCSS(prop: String): String = js.native
   

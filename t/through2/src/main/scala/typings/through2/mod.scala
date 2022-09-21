@@ -1,6 +1,6 @@
 package typings.through2
 
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.streamMod.DuplexOptions
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
@@ -69,11 +69,11 @@ object mod {
     def apply(opts: DuplexOptions): Transform = js.native
   }
   
-  type TransformCallback = js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
+  type TransformCallback = js.Function2[/* err */ js.UndefOr[Any], /* data */ js.UndefOr[Any], Unit]
   
   type TransformFunction = js.ThisFunction3[
     /* this */ Transform, 
-    /* chunk */ js.Any, 
+    /* chunk */ Any, 
     /* enc */ BufferEncoding, 
     /* callback */ TransformCallback, 
     Unit

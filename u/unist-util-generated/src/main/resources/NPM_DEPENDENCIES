@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "unist-util-generated" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "unist-util-generated" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

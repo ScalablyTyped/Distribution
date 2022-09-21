@@ -10,11 +10,11 @@ trait EntityKey extends StObject {
   
   def equals(entityKey: EntityKey): Boolean
   
-  var values: js.Array[js.Any]
+  var values: js.Array[Any]
 }
 object EntityKey {
   
-  inline def apply(entityType: EntityType, equals_ : EntityKey => Boolean, values: js.Array[js.Any]): EntityKey = {
+  inline def apply(entityType: EntityType, equals_ : EntityKey => Boolean, values: js.Array[Any]): EntityKey = {
     val __obj = js.Dynamic.literal(entityType = entityType.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[EntityKey]
@@ -26,8 +26,8 @@ object EntityKey {
     
     inline def setEquals_(value: EntityKey => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

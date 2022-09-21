@@ -10,65 +10,79 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.`pending-reboot`
   - java.lang.String
 */
-type ApplyMethod = typings.awsSdk.docdbMod._ApplyMethod | java.lang.String
+type ApplyMethod = _ApplyMethod | java.lang.String
 
-type AttributeValueList = js.Array[typings.awsSdk.docdbMod.String]
+type AttributeValueList = js.Array[String]
 
-type AvailabilityZoneList = js.Array[typings.awsSdk.docdbMod.AvailabilityZone]
+type AvailabilityZoneList = js.Array[AvailabilityZone]
 
-type AvailabilityZones = js.Array[typings.awsSdk.docdbMod.String]
+type AvailabilityZones = js.Array[String]
 
 type Boolean = scala.Boolean
 
 type BooleanOptional = scala.Boolean
 
-type CertificateList = js.Array[typings.awsSdk.docdbMod.Certificate]
+type CertificateList = js.Array[Certificate]
 
-type DBClusterList = js.Array[typings.awsSdk.docdbMod.DBCluster]
+type DBClusterList = js.Array[DBCluster]
 
-type DBClusterMemberList = js.Array[typings.awsSdk.docdbMod.DBClusterMember]
+type DBClusterMemberList = js.Array[DBClusterMember]
 
-type DBClusterParameterGroupList = js.Array[typings.awsSdk.docdbMod.DBClusterParameterGroup]
+type DBClusterParameterGroupList = js.Array[DBClusterParameterGroup]
 
-type DBClusterRoles = js.Array[typings.awsSdk.docdbMod.DBClusterRole]
+type DBClusterRoles = js.Array[DBClusterRole]
 
-type DBClusterSnapshotAttributeList = js.Array[typings.awsSdk.docdbMod.DBClusterSnapshotAttribute]
+type DBClusterSnapshotAttributeList = js.Array[DBClusterSnapshotAttribute]
 
-type DBClusterSnapshotList = js.Array[typings.awsSdk.docdbMod.DBClusterSnapshot]
+type DBClusterSnapshotList = js.Array[DBClusterSnapshot]
 
-type DBEngineVersionList = js.Array[typings.awsSdk.docdbMod.DBEngineVersion]
+type DBEngineVersionList = js.Array[DBEngineVersion]
 
-type DBInstanceList = js.Array[typings.awsSdk.docdbMod.DBInstance]
+type DBInstanceList = js.Array[DBInstance]
 
-type DBInstanceStatusInfoList = js.Array[typings.awsSdk.docdbMod.DBInstanceStatusInfo]
+type DBInstanceStatusInfoList = js.Array[DBInstanceStatusInfo]
 
-type DBSubnetGroups = js.Array[typings.awsSdk.docdbMod.DBSubnetGroup]
+type DBSubnetGroups = js.Array[DBSubnetGroup]
 
-type EventCategoriesList = js.Array[typings.awsSdk.docdbMod.String]
+type EventCategoriesList = js.Array[String]
 
-type EventCategoriesMapList = js.Array[typings.awsSdk.docdbMod.EventCategoriesMap]
+type EventCategoriesMapList = js.Array[EventCategoriesMap]
 
-type EventList = js.Array[typings.awsSdk.docdbMod.Event]
+type EventList = js.Array[Event]
 
-type FilterList = js.Array[typings.awsSdk.docdbMod.Filter]
+type EventSubscriptionsList = js.Array[EventSubscription]
 
-type FilterValueList = js.Array[typings.awsSdk.docdbMod.String]
+type FilterList = js.Array[Filter]
 
-type Integer = scala.Double
+type FilterValueList = js.Array[String]
 
-type IntegerOptional = scala.Double
+type GlobalClusterIdentifier = java.lang.String
 
-type KeyList = js.Array[typings.awsSdk.docdbMod.String]
+type GlobalClusterList = js.Array[GlobalCluster]
 
-type LogTypeList = js.Array[typings.awsSdk.docdbMod.String]
+type GlobalClusterMemberList = js.Array[GlobalClusterMember]
 
-type OrderableDBInstanceOptionsList = js.Array[typings.awsSdk.docdbMod.OrderableDBInstanceOption]
+type Integer = Double
 
-type ParametersList = js.Array[typings.awsSdk.docdbMod.Parameter]
+type IntegerOptional = Double
 
-type PendingMaintenanceActionDetails = js.Array[typings.awsSdk.docdbMod.PendingMaintenanceAction]
+type KeyList = js.Array[String]
 
-type PendingMaintenanceActions = js.Array[typings.awsSdk.docdbMod.ResourcePendingMaintenanceActions]
+type LogTypeList = js.Array[String]
+
+type OrderableDBInstanceOptionsList = js.Array[OrderableDBInstanceOption]
+
+type ParametersList = js.Array[Parameter]
+
+type PendingMaintenanceActionDetails = js.Array[PendingMaintenanceAction]
+
+type PendingMaintenanceActions = js.Array[ResourcePendingMaintenanceActions]
+
+type ReadReplicaIdentifierList = js.Array[String]
+
+type ReadersArnList = js.Array[String]
+
+type SourceIdsList = js.Array[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`db-instance`
@@ -79,27 +93,27 @@ type PendingMaintenanceActions = js.Array[typings.awsSdk.docdbMod.ResourcePendin
   - typings.awsSdk.awsSdkStrings.`db-cluster-snapshot`
   - java.lang.String
 */
-type SourceType = typings.awsSdk.docdbMod._SourceType | java.lang.String
+type SourceType = _SourceType | java.lang.String
 
 type String = java.lang.String
 
-type SubnetIdentifierList = js.Array[typings.awsSdk.docdbMod.String]
+type SubnetIdentifierList = js.Array[String]
 
-type SubnetList = js.Array[typings.awsSdk.docdbMod.Subnet]
+type SubnetList = js.Array[Subnet]
 
-type TStamp = typings.std.Date
+type TStamp = js.Date
 
-type TagList = js.Array[typings.awsSdk.docdbMod.Tag]
+type TagList = js.Array[Tag]
 
-type ValidUpgradeTargetList = js.Array[typings.awsSdk.docdbMod.UpgradeTarget]
+type ValidUpgradeTargetList = js.Array[UpgradeTarget]
 
-type VpcSecurityGroupIdList = js.Array[typings.awsSdk.docdbMod.String]
+type VpcSecurityGroupIdList = js.Array[String]
 
-type VpcSecurityGroupMembershipList = js.Array[typings.awsSdk.docdbMod.VpcSecurityGroupMembership]
+type VpcSecurityGroupMembershipList = js.Array[VpcSecurityGroupMembership]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2014-10-31`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.docdbMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

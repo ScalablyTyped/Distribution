@@ -33,7 +33,7 @@ object XMembersSupplier {
     Members: XMembersAccess,
     acquire: () => Unit,
     getMembers: () => XMembersAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XMembersSupplier = {
     val __obj = js.Dynamic.literal(Members = Members.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getMembers = js.Any.fromFunction0(getMembers), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

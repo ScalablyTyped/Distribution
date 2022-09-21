@@ -15,6 +15,11 @@ trait ResultSetSummary extends StObject {
   var id: Double
   
   var rowCount: Double
+  
+  /**
+    * The visualization options for the result set.
+    */
+  var visualization: js.UndefOr[VisualizationOptions] = js.undefined
 }
 object ResultSetSummary {
   
@@ -29,12 +34,16 @@ object ResultSetSummary {
     
     inline def setColumnInfo(value: js.Array[IDbColumn]): Self = StObject.set(x, "columnInfo", value.asInstanceOf[js.Any])
     
-    inline def setColumnInfoVarargs(value: IDbColumn*): Self = StObject.set(x, "columnInfo", js.Array(value :_*))
+    inline def setColumnInfoVarargs(value: IDbColumn*): Self = StObject.set(x, "columnInfo", js.Array(value*))
     
     inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    
+    inline def setVisualization(value: VisualizationOptions): Self = StObject.set(x, "visualization", value.asInstanceOf[js.Any])
+    
+    inline def setVisualizationUndefined: Self = StObject.set(x, "visualization", js.undefined)
   }
 }

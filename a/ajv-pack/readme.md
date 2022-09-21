@@ -10,10 +10,10 @@ Produces a compact module exporting JSON-schema validation functions compiled by
 | ------------------ | :-------------: |
 | Full name          | ajv-pack |
 | Keywords           | Ajv, JSON-Schema |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 1812436 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 130327.0 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/epoberezkin/ajv-pack#readme)

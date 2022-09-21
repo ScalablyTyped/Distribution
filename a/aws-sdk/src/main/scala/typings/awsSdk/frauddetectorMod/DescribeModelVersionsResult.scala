@@ -29,7 +29,7 @@ object DescribeModelVersionsResult {
     
     inline def setModelVersionDetailsUndefined: Self = StObject.set(x, "modelVersionDetails", js.undefined)
     
-    inline def setModelVersionDetailsVarargs(value: ModelVersionDetail*): Self = StObject.set(x, "modelVersionDetails", js.Array(value :_*))
+    inline def setModelVersionDetailsVarargs(value: ModelVersionDetail*): Self = StObject.set(x, "modelVersionDetails", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CallMediaState extends StObject {
   
-  // The audio media state. Possible values are: active, inactive.
+  // The audio media state. Possible values are: active, inactive, unknownFutureValue.
   var audio: js.UndefOr[NullableOption[MediaState]] = js.undefined
 }
 object CallMediaState {

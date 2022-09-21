@@ -12,8 +12,8 @@ object linearScaleMod {
   /**
     * @constructor
     */
-  class Linear () extends QuantitativeScale[Double] {
+  open class Linear () extends QuantitativeScale[Double] {
     
-    /* private */ var _d3Scale: js.Any = js.native
+    /* private */ var _d3Scale: Any = js.native
   }
 }

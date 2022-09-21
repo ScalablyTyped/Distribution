@@ -16,7 +16,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.AdminMessageRequest")
   @js.native
-  class AdminMessageRequest protected ()
+  open class AdminMessageRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.AdminMessageRequest {
     /**
@@ -35,7 +35,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.BanUserRequest")
   @js.native
-  class BanUserRequest protected ()
+  open class BanUserRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.BanUserRequest {
     /**
@@ -100,7 +100,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.ChangeRoomCapacityRequest")
   @js.native
-  class ChangeRoomCapacityRequest protected ()
+  open class ChangeRoomCapacityRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.ChangeRoomCapacityRequest {
     /**
@@ -114,7 +114,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.ChangeRoomNameRequest")
   @js.native
-  class ChangeRoomNameRequest protected ()
+  open class ChangeRoomNameRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.ChangeRoomNameRequest {
     /**
@@ -127,7 +127,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.ChangeRoomPasswordStateRequest")
   @js.native
-  class ChangeRoomPasswordStateRequest protected ()
+  open class ChangeRoomPasswordStateRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.ChangeRoomPasswordStateRequest {
     /**
@@ -140,7 +140,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.CreateRoomRequest")
   @js.native
-  class CreateRoomRequest protected ()
+  open class CreateRoomRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.CreateRoomRequest {
     /**
@@ -161,7 +161,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.ExtensionRequest")
   @js.native
-  class ExtensionRequest protected ()
+  open class ExtensionRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.ExtensionRequest {
     /**
@@ -178,7 +178,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.FindRoomsRequest")
   @js.native
-  class FindRoomsRequest protected ()
+  open class FindRoomsRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.FindRoomsRequest {
     /**
@@ -195,7 +195,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.FindUsersRequest")
   @js.native
-  class FindUsersRequest protected ()
+  open class FindUsersRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.FindUsersRequest {
     /**
@@ -205,14 +205,14 @@ object System {
       * @param {number}                         [limit=0]  The maximum size of the list of users that will be returned by the userFindResult event. If 0, all the found users are returned.
       */
     def this(expr: MatchExpression) = this()
-    def this(expr: MatchExpression, target: js.Any) = this()
-    def this(expr: MatchExpression, target: js.Any, limit: Double) = this()
+    def this(expr: MatchExpression, target: Any) = this()
+    def this(expr: MatchExpression, target: Any, limit: Double) = this()
     def this(expr: MatchExpression, target: Unit, limit: Double) = this()
   }
   
   @JSGlobal("SFS2X.Requests.System.JoinRoomRequest")
   @js.native
-  class JoinRoomRequest protected ()
+  open class JoinRoomRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.JoinRoomRequest {
     /**
@@ -222,19 +222,19 @@ object System {
       * @param {number}  [roomIdToLeave] The id of a previously joined Room that the user should leave when joining the new Room. By default, the last joined Room is left; if a negative number is passed, no previous Room is left.
       * @param {boolean} [asSpect=false]       true to join the Room as a spectator (in Game Rooms only).
       */
-    def this(room: js.Any) = this()
-    def this(room: js.Any, password: String) = this()
-    def this(room: js.Any, password: String, roomIdToLeave: Double) = this()
-    def this(room: js.Any, password: Unit, roomIdToLeave: Double) = this()
-    def this(room: js.Any, password: String, roomIdToLeave: Double, asSpect: Boolean) = this()
-    def this(room: js.Any, password: String, roomIdToLeave: Unit, asSpect: Boolean) = this()
-    def this(room: js.Any, password: Unit, roomIdToLeave: Double, asSpect: Boolean) = this()
-    def this(room: js.Any, password: Unit, roomIdToLeave: Unit, asSpect: Boolean) = this()
+    def this(room: Any) = this()
+    def this(room: Any, password: String) = this()
+    def this(room: Any, password: String, roomIdToLeave: Double) = this()
+    def this(room: Any, password: Unit, roomIdToLeave: Double) = this()
+    def this(room: Any, password: String, roomIdToLeave: Double, asSpect: Boolean) = this()
+    def this(room: Any, password: String, roomIdToLeave: Unit, asSpect: Boolean) = this()
+    def this(room: Any, password: Unit, roomIdToLeave: Double, asSpect: Boolean) = this()
+    def this(room: Any, password: Unit, roomIdToLeave: Unit, asSpect: Boolean) = this()
   }
   
   @JSGlobal("SFS2X.Requests.System.KickUserRequest")
   @js.native
-  class KickUserRequest protected ()
+  open class KickUserRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.KickUserRequest {
     /**
@@ -255,7 +255,7 @@ object System {
     * Creates a new LeaveRoomRequest instance.
     * @param {Entities.SFSRoom} [room=null] The SFSRoom object corresponding to the Room that the current user must leave. If null, the last Room joined by the user is left.
     */
-  class LeaveRoomRequest ()
+  open class LeaveRoomRequest ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.LeaveRoomRequest {
     def this(room: SFSRoom) = this()
@@ -263,7 +263,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.LoginRequest")
   @js.native
-  class LoginRequest protected ()
+  open class LoginRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.LoginRequest {
     /**
@@ -288,13 +288,13 @@ object System {
   /**
     * Creates a new LogoutRequest instance.
     */
-  class LogoutRequest ()
+  open class LogoutRequest ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.LogoutRequest
   
   @JSGlobal("SFS2X.Requests.System.ModeratorMessageRequest")
   @js.native
-  class ModeratorMessageRequest protected ()
+  open class ModeratorMessageRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.ModeratorMessageRequest {
     /**
@@ -313,7 +313,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.ObjectMessageRequest")
   @js.native
-  class ObjectMessageRequest protected ()
+  open class ObjectMessageRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.ObjectMessageRequest {
     /**
@@ -334,7 +334,7 @@ object System {
     * Creates a new SpectatorToPlayerRequest instance.
     * @param {Entities.SFSRoom} [targetRoom=null] The SFSRoom object corresponding to the Room in which the spectator should be turned to player. If null, the last Room joined by the user is used.
     */
-  class PlayerToSpectatorRequest ()
+  open class PlayerToSpectatorRequest ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.PlayerToSpectatorRequest {
     def this(targetRoom: SFSRoom) = this()
@@ -342,7 +342,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.PrivateMessageRequest")
   @js.native
-  class PrivateMessageRequest protected ()
+  open class PrivateMessageRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.PrivateMessageRequest {
     /**
@@ -357,7 +357,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.PublicMessageRequest")
   @js.native
-  class PublicMessageRequest protected ()
+  open class PublicMessageRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.PublicMessageRequest {
     /**
@@ -374,7 +374,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.SetRoomVariablesRequest")
   @js.native
-  class SetRoomVariablesRequest protected ()
+  open class SetRoomVariablesRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.SetRoomVariablesRequest {
     /**
@@ -387,7 +387,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.SetUserVariablesRequest")
   @js.native
-  class SetUserVariablesRequest protected ()
+  open class SetUserVariablesRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.SetUserVariablesRequest {
     /**
@@ -399,7 +399,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.SpectatorToPlayerRequest")
   @js.native
-  class SpectatorToPlayerRequest protected ()
+  open class SpectatorToPlayerRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.SpectatorToPlayerRequest {
     /**
@@ -411,7 +411,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.SubscribeRoomGroupRequest")
   @js.native
-  class SubscribeRoomGroupRequest protected ()
+  open class SubscribeRoomGroupRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.SubscribeRoomGroupRequest {
     /**
@@ -423,7 +423,7 @@ object System {
   
   @JSGlobal("SFS2X.Requests.System.UnsubscribeRoomGroupRequest")
   @js.native
-  class UnsubscribeRoomGroupRequest protected ()
+  open class UnsubscribeRoomGroupRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.System.UnsubscribeRoomGroupRequest {
     /**

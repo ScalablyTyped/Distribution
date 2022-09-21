@@ -11,9 +11,9 @@ Load environment variables from .env, .env.local, .env.production, etc. when run
 | Full name          | dotenv-load |
 | Keywords           | dotenv, yarn, npm run |
 | # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 471966 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 37716.333333333336 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](https://github.com/formatlos/dotenv-load)

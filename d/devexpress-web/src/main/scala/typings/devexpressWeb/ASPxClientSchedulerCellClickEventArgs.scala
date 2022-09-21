@@ -14,7 +14,7 @@ trait ASPxClientSchedulerCellClickEventArgs
   /**
     * Gets the HTML element that the event was triggered on.
     */
-  var htmlElement: js.Any
+  var htmlElement: Any
   
   /**
     * Gets the time interval of the time cells related to the event.
@@ -28,14 +28,14 @@ trait ASPxClientSchedulerCellClickEventArgs
 }
 object ASPxClientSchedulerCellClickEventArgs {
   
-  inline def apply(htmlElement: js.Any, interval: ASPxClientTimeInterval, resource: String): ASPxClientSchedulerCellClickEventArgs = {
+  inline def apply(htmlElement: Any, interval: ASPxClientTimeInterval, resource: String): ASPxClientSchedulerCellClickEventArgs = {
     val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSchedulerCellClickEventArgs]
   }
   
   extension [Self <: ASPxClientSchedulerCellClickEventArgs](x: Self) {
     
-    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
     inline def setInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

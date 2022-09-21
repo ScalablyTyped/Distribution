@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Used to return a list of metrics for a single DateRange / dimension
-  * combination
-  */
 trait SchemaDateRangeValues extends StObject {
   
   /**
@@ -18,7 +14,7 @@ trait SchemaDateRangeValues extends StObject {
   /**
     * Each value corresponds to each Metric in the request.
     */
-  var values: js.UndefOr[js.Array[String]] = js.undefined
+  var values: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaDateRangeValues {
   
@@ -33,12 +29,14 @@ object SchemaDateRangeValues {
     
     inline def setPivotValueRegionsUndefined: Self = StObject.set(x, "pivotValueRegions", js.undefined)
     
-    inline def setPivotValueRegionsVarargs(value: SchemaPivotValueRegion*): Self = StObject.set(x, "pivotValueRegions", js.Array(value :_*))
+    inline def setPivotValueRegionsVarargs(value: SchemaPivotValueRegion*): Self = StObject.set(x, "pivotValueRegions", js.Array(value*))
     
     inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
+    inline def setValuesNull: Self = StObject.set(x, "values", null)
+    
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

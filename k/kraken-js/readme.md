@@ -11,9 +11,9 @@ An express-based Node.js web application bootstrapping module.
 | Full name          | kraken-js |
 | Keywords           | node.js, node, javascript, js, web, express, connect |
 | # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 110899 |
-| # stars            | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 10309.666666666666 |
+| # stars            | 4930.0 |
 
 ## Links
 - [Homepage](https://github.com/krakenjs/kraken-js#readme)

@@ -12,7 +12,7 @@ trait DBClusterCapacityInfo extends StObject {
   var CurrentCapacity: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * A user-supplied DB cluster identifier. This identifier is the unique key that identifies a DB cluster. 
+    * A user-supplied DB cluster identifier. This identifier is the unique key that identifies a DB cluster.
     */
   var DBClusterIdentifier: js.UndefOr[String] = js.undefined
   

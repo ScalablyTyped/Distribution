@@ -14,7 +14,7 @@ trait DescribeSpotFleetRequestHistoryResponse extends StObject {
   /**
     * The last date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). All records up to this time were retrieved. If nextToken indicates that there are more results, this value is not present.
     */
-  var LastEvaluatedTime: js.UndefOr[DateTime] = js.undefined
+  var LastEvaluatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The token required to retrieve the next set of results. This value is null when there are no more results to return.
@@ -29,7 +29,7 @@ trait DescribeSpotFleetRequestHistoryResponse extends StObject {
   /**
     * The starting date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var StartTime: js.UndefOr[DateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object DescribeSpotFleetRequestHistoryResponse {
   
@@ -44,9 +44,9 @@ object DescribeSpotFleetRequestHistoryResponse {
     
     inline def setHistoryRecordsUndefined: Self = StObject.set(x, "HistoryRecords", js.undefined)
     
-    inline def setHistoryRecordsVarargs(value: HistoryRecord*): Self = StObject.set(x, "HistoryRecords", js.Array(value :_*))
+    inline def setHistoryRecordsVarargs(value: HistoryRecord*): Self = StObject.set(x, "HistoryRecords", js.Array(value*))
     
-    inline def setLastEvaluatedTime(value: DateTime): Self = StObject.set(x, "LastEvaluatedTime", value.asInstanceOf[js.Any])
+    inline def setLastEvaluatedTime(value: js.Date): Self = StObject.set(x, "LastEvaluatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastEvaluatedTimeUndefined: Self = StObject.set(x, "LastEvaluatedTime", js.undefined)
     
@@ -58,7 +58,7 @@ object DescribeSpotFleetRequestHistoryResponse {
     
     inline def setSpotFleetRequestIdUndefined: Self = StObject.set(x, "SpotFleetRequestId", js.undefined)
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

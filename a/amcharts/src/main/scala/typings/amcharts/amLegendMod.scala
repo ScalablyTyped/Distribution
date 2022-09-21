@@ -9,7 +9,7 @@ object amLegendMod {
   
   @JSImport("amcharts/AmLegend", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with AmLegend {
     
@@ -79,7 +79,7 @@ object amLegendMod {
       * [{title: "One", color: "#3366CC"},{title: "Two", color: "#FFCC33"}]
       */
     /* CompleteClass */
-    var data: js.Array[js.Any] = js.native
+    var data: js.Array[Any] = js.native
     
     /**
       * Specifies if each of legend entry should be equal to the most wide entry.
@@ -212,7 +212,7 @@ object amLegendMod {
       * Removes event listener from chart object.
       */
     /* CompleteClass */
-    override def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit = js.native
+    override def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: Any): Unit = js.native
     
     /**
       * Specifies whether legend entries should be placed in reversed order.
@@ -389,7 +389,7 @@ object amLegendMod {
       * You can pass array of objects with title, color, markerType values, for example:
       * [{title: "One", color: "#3366CC"},{title: "Two", color: "#FFCC33"}]
       */
-    var data: js.Array[js.Any]
+    var data: js.Array[Any]
     
     /**
       * Specifies if each of legend entry should be equal to the most wide entry.
@@ -503,7 +503,7 @@ object amLegendMod {
     /**
       * Removes event listener from chart object.
       */
-    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit
+    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: Any): Unit
     
     /**
       * Specifies whether legend entries should be placed in reversed order.
@@ -616,7 +616,7 @@ object amLegendMod {
       borderColor: String,
       bottom: Double,
       color: String,
-      data: js.Array[js.Any],
+      data: js.Array[Any],
       equalWidths: Boolean,
       fontSize: String,
       horizontalGap: Double,
@@ -635,7 +635,7 @@ object amLegendMod {
       markerType: String,
       maxColumns: Double,
       position: String,
-      removeListener: (typings.amcharts.amChartMod.default, String, js.Any) => Unit,
+      removeListener: (typings.amcharts.amChartMod.default, String, Any) => Unit,
       reversedOrder: Boolean,
       right: Double,
       rollOverColor: String,
@@ -678,9 +678,9 @@ object amLegendMod {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setEqualWidths(value: Boolean): Self = StObject.set(x, "equalWidths", value.asInstanceOf[js.Any])
       
@@ -718,7 +718,7 @@ object amLegendMod {
       
       inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      inline def setRemoveListener(value: (typings.amcharts.amChartMod.default, String, js.Any) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
+      inline def setRemoveListener(value: (typings.amcharts.amChartMod.default, String, Any) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
       
       inline def setReversedOrder(value: Boolean): Self = StObject.set(x, "reversedOrder", value.asInstanceOf[js.Any])
       

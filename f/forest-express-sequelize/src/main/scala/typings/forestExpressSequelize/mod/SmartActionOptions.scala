@@ -42,7 +42,7 @@ object SmartActionOptions {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: Description*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Description*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
@@ -54,7 +54,7 @@ object SmartActionOptions {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setValues(value: /* record */ js.Any => js.Object): Self = StObject.set(x, "values", js.Any.fromFunction1(value))
+    inline def setValues(value: /* record */ Any => js.Object): Self = StObject.set(x, "values", js.Any.fromFunction1(value))
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }

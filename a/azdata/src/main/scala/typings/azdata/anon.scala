@@ -2,88 +2,54 @@ package typings.azdata
 
 import typings.azdata.mod.Component
 import typings.azdata.mod.FormItemLayout
-import typings.vscode.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Azdatacellguid extends StObject {
+  trait Content extends StObject {
     
-    var azdata_cell_guid: js.UndefOr[String] = js.undefined
-    
-    var language: js.UndefOr[String] = js.undefined
-    
-    var tags: js.UndefOr[js.Array[String]] = js.undefined
+    var content: js.UndefOr[String] = js.undefined
   }
-  object Azdatacellguid {
+  object Content {
     
-    inline def apply(): Azdatacellguid = {
+    inline def apply(): Content = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Azdatacellguid]
+      __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Azdatacellguid](x: Self) {
+    extension [Self <: Content](x: Self) {
       
-      inline def setAzdata_cell_guid(value: String): Self = StObject.set(x, "azdata_cell_guid", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setAzdata_cell_guidUndefined: Self = StObject.set(x, "azdata_cell_guid", js.undefined)
-      
-      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
-      
-      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
-      
-      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
-      
-      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
-      
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     }
   }
   
-  trait AzdatachartOptions extends StObject {
+  trait EncryptorName extends StObject {
     
-    var azdata_chartOptions: js.UndefOr[js.Any] = js.undefined
+    var encryptorName: String
+    
+    var encryptorType: Double
   }
-  object AzdatachartOptions {
+  object EncryptorName {
     
-    inline def apply(): AzdatachartOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AzdatachartOptions]
+    inline def apply(encryptorName: String, encryptorType: Double): EncryptorName = {
+      val __obj = js.Dynamic.literal(encryptorName = encryptorName.asInstanceOf[js.Any], encryptorType = encryptorType.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EncryptorName]
     }
     
-    extension [Self <: AzdatachartOptions](x: Self) {
+    extension [Self <: EncryptorName](x: Self) {
       
-      inline def setAzdata_chartOptions(value: js.Any): Self = StObject.set(x, "azdata_chartOptions", value.asInstanceOf[js.Any])
+      inline def setEncryptorName(value: String): Self = StObject.set(x, "encryptorName", value.asInstanceOf[js.Any])
       
-      inline def setAzdata_chartOptionsUndefined: Self = StObject.set(x, "azdata_chartOptions", js.undefined)
-    }
-  }
-  
-  trait Dark extends StObject {
-    
-    var dark: String | Uri
-    
-    var light: String | Uri
-  }
-  object Dark {
-    
-    inline def apply(dark: String | Uri, light: String | Uri): Dark = {
-      val __obj = js.Dynamic.literal(dark = dark.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Dark]
-    }
-    
-    extension [Self <: Dark](x: Self) {
-      
-      inline def setDark(value: String | Uri): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
-      
-      inline def setLight(value: String | Uri): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+      inline def setEncryptorType(value: Double): Self = StObject.set(x, "encryptorType", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined azdata.azdata.FormComponent & {  layout :azdata.azdata.FormItemLayout | undefined} */
-  trait FormComponentlayoutFormIt extends StObject {
+  /* Inlined azdata.azdata.FormComponent<azdata.azdata.Component> & {  layout :azdata.azdata.FormItemLayout | undefined} */
+  trait FormComponentComponentlay extends StObject {
     
     var actions: js.UndefOr[js.Array[Component]] = js.undefined
     
@@ -93,22 +59,22 @@ object anon {
     
     var required: js.UndefOr[Boolean] = js.undefined
     
-    var title: String
+    var title: js.UndefOr[String] = js.undefined
   }
-  object FormComponentlayoutFormIt {
+  object FormComponentComponentlay {
     
-    inline def apply(component: Component, title: String): FormComponentlayoutFormIt = {
-      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FormComponentlayoutFormIt]
+    inline def apply(component: Component): FormComponentComponentlay = {
+      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FormComponentComponentlay]
     }
     
-    extension [Self <: FormComponentlayoutFormIt](x: Self) {
+    extension [Self <: FormComponentComponentlay](x: Self) {
       
       inline def setActions(value: js.Array[Component]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
       inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      inline def setActionsVarargs(value: Component*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Component*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setComponent(value: Component): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -121,6 +87,8 @@ object anon {
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -163,29 +131,6 @@ object anon {
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Token extends StObject {
-    
-    var token: String
-    
-    var tokenType: js.UndefOr[String] = js.undefined
-  }
-  object Token {
-    
-    inline def apply(token: String): Token = {
-      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Token]
-    }
-    
-    extension [Self <: Token](x: Self) {
-      
-      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
-      
-      inline def setTokenType(value: String): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
-      
-      inline def setTokenTypeUndefined: Self = StObject.set(x, "tokenType", js.undefined)
     }
   }
   

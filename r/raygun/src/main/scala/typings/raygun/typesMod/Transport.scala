@@ -1,13 +1,22 @@
 package typings.raygun.typesMod
 
-import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transport extends StObject {
   
-  def send(message: String): Unit = js.native
-  def send(message: String, callback: Callback[IncomingMessage]): Unit = js.native
+  def send(options: SendOptions): Unit
+}
+object Transport {
+  
+  inline def apply(send: SendOptions => Unit): Transport = {
+    val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send))
+    __obj.asInstanceOf[Transport]
+  }
+  
+  extension [Self <: Transport](x: Self) {
+    
+    inline def setSend(value: SendOptions => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+  }
 }

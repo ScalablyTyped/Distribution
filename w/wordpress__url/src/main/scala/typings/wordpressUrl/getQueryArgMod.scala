@@ -11,13 +11,18 @@ object getQueryArgMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getQueryArg(url: String, arg: String): js.UndefOr[
-    String | js.Array[String] | (StringDictionary[String | js.Array[String] | js.Any])
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueryArg")(url.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
-    String | js.Array[String] | (StringDictionary[String | js.Array[String] | js.Any])
-  ]]
+  inline def getQueryArg(url: String, arg: String): QueryArgParsed | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueryArg")(url.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[QueryArgParsed | Unit]
   
-  type QueryArgObject = StringDictionary[String | js.Array[String] | js.Any]
+  trait QueryArgObject
+    extends StObject
+       with /* key */ StringDictionary[QueryArgParsed]
+  object QueryArgObject {
+    
+    inline def apply(): QueryArgObject = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QueryArgObject]
+    }
+  }
   
-  type QueryArgParsed = String | js.Array[String] | (StringDictionary[String | js.Array[String] | js.Any])
+  type QueryArgParsed = String | js.Array[String] | QueryArgObject
 }

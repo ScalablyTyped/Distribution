@@ -22,23 +22,23 @@ object mod {
   
   @JSImport("maquette", "createCache")
   @js.native
-  def createCache: js.Function0[CalculationCache[js.Any]] = js.native
-  inline def createCache_=(x: js.Function0[CalculationCache[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createCache")(x.asInstanceOf[js.Any])
+  def createCache: js.Function0[CalculationCache[Any]] = js.native
+  inline def createCache_=(x: js.Function0[CalculationCache[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createCache")(x.asInstanceOf[js.Any])
   
   @JSImport("maquette", "createMapping")
   @js.native
   def createMapping: js.Function3[
-    /* getSourceKey */ js.Function1[/* source */ js.Any, String | Double], 
-    /* createResult */ js.Function2[/* source */ js.Any, /* index */ Double, js.Any], 
-    /* updateResult */ js.Function3[/* source */ js.Any, /* target */ js.Any, /* index */ Double, Unit], 
-    Mapping[js.Any, js.Any]
+    /* getSourceKey */ js.Function1[/* source */ Any, String | Double], 
+    /* createResult */ js.Function2[/* source */ Any, /* index */ Double, Any], 
+    /* updateResult */ js.Function3[/* source */ Any, /* target */ Any, /* index */ Double, Unit], 
+    Mapping[Any, Any]
   ] = js.native
   inline def createMapping_=(
     x: js.Function3[
-      /* getSourceKey */ js.Function1[/* source */ js.Any, String | Double], 
-      /* createResult */ js.Function2[/* source */ js.Any, /* index */ Double, js.Any], 
-      /* updateResult */ js.Function3[/* source */ js.Any, /* target */ js.Any, /* index */ Double, Unit], 
-      Mapping[js.Any, js.Any]
+      /* getSourceKey */ js.Function1[/* source */ Any, String | Double], 
+      /* createResult */ js.Function2[/* source */ Any, /* index */ Double, Any], 
+      /* updateResult */ js.Function3[/* source */ Any, /* target */ Any, /* index */ Double, Unit], 
+      Mapping[Any, Any]
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createMapping")(x.asInstanceOf[js.Any])
   

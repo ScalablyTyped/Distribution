@@ -44,6 +44,9 @@ trait Advertiser extends StObject {
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#advertiser". */
   var kind: js.UndefOr[String] = js.undefined
   
+  /** Measurement partner advertiser link for tag wrapping. */
+  var measurementPartnerLink: js.UndefOr[MeasurementPartnerAdvertiserLink] = js.undefined
+  
   /** Name of this advertiser. This is a required field and must be less than 256 characters long and unique among advertisers of the same account. */
   var name: js.UndefOr[String] = js.undefined
   
@@ -110,6 +113,10 @@ object Advertiser {
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    
+    inline def setMeasurementPartnerLink(value: MeasurementPartnerAdvertiserLink): Self = StObject.set(x, "measurementPartnerLink", value.asInstanceOf[js.Any])
+    
+    inline def setMeasurementPartnerLinkUndefined: Self = StObject.set(x, "measurementPartnerLink", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

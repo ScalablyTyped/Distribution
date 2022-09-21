@@ -14,7 +14,7 @@ trait S3Source extends StObject {
   /**
     * Key name of the bucket object that contains your unsigned code.
     */
-  var key: Key_
+  var key: Key
   
   /**
     * Version of your source image in your version enabled S3 bucket.
@@ -23,7 +23,7 @@ trait S3Source extends StObject {
 }
 object S3Source {
   
-  inline def apply(bucketName: BucketName, key: Key_, version: Version): S3Source = {
+  inline def apply(bucketName: BucketName, key: Key, version: Version): S3Source = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Source]
   }
@@ -32,7 +32,7 @@ object S3Source {
     
     inline def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    inline def setKey(value: Key_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

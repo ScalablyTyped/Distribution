@@ -21,7 +21,7 @@ trait Design extends StObject {
   
   var Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Design_typekey")
   var PowerPointDotDesign_typekey: Design
@@ -42,7 +42,7 @@ object Design {
     Index: Double,
     MoveTo: Double => Unit,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotDesign_typekey: Design,
     Preserved: MsoTriState,
     SlideMaster: Master,
@@ -69,7 +69,7 @@ object Design {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotDesign_typekey(value: Design): Self = StObject.set(x, "PowerPoint.Design_typekey", value.asInstanceOf[js.Any])
     

@@ -316,7 +316,7 @@ object ChartAxisXOptions {
     
     inline def setStripLinesUndefined: Self = StObject.set(x, "stripLines", js.undefined)
     
-    inline def setStripLinesVarargs(value: ChartStripLinesOptions*): Self = StObject.set(x, "stripLines", js.Array(value :_*))
+    inline def setStripLinesVarargs(value: ChartStripLinesOptions*): Self = StObject.set(x, "stripLines", js.Array(value*))
     
     inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     

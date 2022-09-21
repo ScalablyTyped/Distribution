@@ -17,7 +17,7 @@ trait ResourceTagMapping extends StObject {
   var ResourceARN: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.ResourceARN] = js.undefined
   
   /**
-    * The tags that have been applied to one or more AWS resources.
+    * The tags that have been applied to one or more Amazon Web Services resources.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
@@ -42,6 +42,6 @@ object ResourceTagMapping {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

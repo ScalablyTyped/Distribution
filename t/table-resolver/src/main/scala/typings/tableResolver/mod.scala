@@ -19,5 +19,5 @@ object mod {
   
   inline def nested[T](args: Column[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("nested")(args.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def resolve[T](args: Method[T]): js.Function1[/* data */ js.Any, js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(args.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ js.Any, js.Array[T]]]
+  inline def resolve[T](args: Method[T]): js.Function1[/* data */ Any, js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(args.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ Any, js.Array[T]]]
 }

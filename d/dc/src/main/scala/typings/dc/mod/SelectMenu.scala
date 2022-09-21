@@ -25,18 +25,18 @@ trait SelectMenu
   @JSName("numberVisible")
   var numberVisible_Original: IGetSet[Double, SelectMenu] = js.native
   
-  def order(): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
-  def order(t: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): SelectMenu = js.native
+  def order(): js.Function2[/* a */ Any, /* b */ Any, Double] = js.native
+  def order(t: js.Function2[/* a */ Any, /* b */ Any, Double]): SelectMenu = js.native
   @JSName("order")
-  var order_Original: IGetSet[js.Function2[/* a */ js.Any, /* b */ js.Any, Double], SelectMenu] = js.native
+  var order_Original: IGetSet[js.Function2[/* a */ Any, /* b */ Any, Double], SelectMenu] = js.native
   
   def promptText(): String = js.native
   def promptText(t: String): SelectMenu = js.native
   @JSName("promptText")
   var promptText_Original: IGetSet[String, SelectMenu] = js.native
   
-  def promptValue(): js.Any = js.native
-  def promptValue(t: js.Any): SelectMenu = js.native
+  def promptValue(): Any = js.native
+  def promptValue(t: Any): SelectMenu = js.native
   @JSName("promptValue")
-  var promptValue_Original: IGetSet[js.Any, SelectMenu] = js.native
+  var promptValue_Original: IGetSet[Any, SelectMenu] = js.native
 }

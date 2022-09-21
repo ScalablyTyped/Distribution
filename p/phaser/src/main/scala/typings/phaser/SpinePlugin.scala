@@ -35,10 +35,10 @@ trait SpinePlugin
   
   var cache: BaseCache = js.native
   
-  def createAnimationState(skeleton: Skeleton): js.Any = js.native
+  def createAnimationState(skeleton: Skeleton): Any = js.native
   
-  def createSkeleton(key: String): js.Any | Null = js.native
-  def createSkeleton(key: String, skeletonJSON: js.Object): js.Any | Null = js.native
+  def createSkeleton(key: String): Any | Null = js.native
+  def createSkeleton(key: String, skeletonJSON: js.Object): Any | Null = js.native
   
   var drawDebug: Boolean = js.native
   
@@ -46,7 +46,7 @@ trait SpinePlugin
   
   def getAtlasWebGL(key: String): TextureAtlas = js.native
   
-  def getBounds(skeleton: Skeleton): js.Any = js.native
+  def getBounds(skeleton: Skeleton): Any = js.native
   
   def getVector2(x: Double, y: Double): Vector2 = js.native
   

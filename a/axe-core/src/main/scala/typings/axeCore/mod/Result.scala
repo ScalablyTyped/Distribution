@@ -52,10 +52,10 @@ object Result {
     
     inline def setNodes(value: js.Array[NodeResult]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: NodeResult*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: NodeResult*): Self = StObject.set(x, "nodes", js.Array(value*))
     
     inline def setTags(value: js.Array[TagValue]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: TagValue*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagValue*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

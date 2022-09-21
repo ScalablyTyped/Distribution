@@ -9,11 +9,11 @@ object mod {
   
   @JSImport("@cyberblast/config", "Config")
   @js.native
-  class Config protected () extends StObject {
+  open class Config protected () extends StObject {
     def this(filePath: String) = this()
     
-    def load(): js.Promise[StringDictionary[js.Any]] = js.native
+    def load(): js.Promise[StringDictionary[Any]] = js.native
     
-    var settings: StringDictionary[js.Any] = js.native
+    var settings: StringDictionary[Any] = js.native
   }
 }

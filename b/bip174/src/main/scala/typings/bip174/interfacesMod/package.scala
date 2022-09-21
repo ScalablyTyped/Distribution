@@ -1,38 +1,42 @@
 package typings.bip174.interfacesMod
 
+import typings.bip174.anon.InputCount
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type FinalScriptSig = typings.node.Buffer
+type ControlBlock = Buffer
 
-type FinalScriptWitness = typings.node.Buffer
+type FinalScriptSig = Buffer
 
-type NonWitnessUtxo = typings.node.Buffer
+type FinalScriptWitness = Buffer
 
-type PorCommitment = java.lang.String
+type NonWitnessUtxo = Buffer
 
-type RedeemScript = typings.node.Buffer
+type PorCommitment = String
 
-type SighashType = scala.Double
+type RedeemScript = Buffer
 
-type TransactionFromBuffer = js.Function1[/* buffer */ typings.node.Buffer, typings.bip174.interfacesMod.Transaction]
+type SighashType = Double
 
-type TransactionIOCountGetter = js.Function1[/* txBuffer */ typings.node.Buffer, typings.bip174.anon.InputCount]
+type TapInternalKey = Buffer
 
-type TransactionInputAdder = js.Function2[
-/* input */ typings.bip174.interfacesMod.TransactionInput, 
-/* txBuffer */ typings.node.Buffer, 
-typings.node.Buffer]
+type TapKeySig = Buffer
 
-type TransactionLocktimeSetter = js.Function2[/* locktime */ scala.Double, /* txBuffer */ typings.node.Buffer, typings.node.Buffer]
+type TapMerkleRoot = Buffer
 
-type TransactionOutputAdder = js.Function2[
-/* output */ typings.bip174.interfacesMod.TransactionOutput, 
-/* txBuffer */ typings.node.Buffer, 
-typings.node.Buffer]
+type TransactionFromBuffer = js.Function1[/* buffer */ Buffer, Transaction]
 
-type TransactionVersionSetter = js.Function2[/* version */ scala.Double, /* txBuffer */ typings.node.Buffer, typings.node.Buffer]
+type TransactionIOCountGetter = js.Function1[/* txBuffer */ Buffer, InputCount]
 
-type WitnessScript = typings.node.Buffer
+type TransactionInputAdder = js.Function2[/* input */ TransactionInput, /* txBuffer */ Buffer, Buffer]
+
+type TransactionLocktimeSetter = js.Function2[/* locktime */ Double, /* txBuffer */ Buffer, Buffer]
+
+type TransactionOutputAdder = js.Function2[/* output */ TransactionOutput, /* txBuffer */ Buffer, Buffer]
+
+type TransactionVersionSetter = js.Function2[/* version */ Double, /* txBuffer */ Buffer, Buffer]
+
+type WitnessScript = Buffer

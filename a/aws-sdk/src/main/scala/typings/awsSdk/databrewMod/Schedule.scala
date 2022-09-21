@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Schedule extends StObject {
   
   /**
-    * The ID of the AWS account that owns the schedule.
+    * The ID of the Amazon Web Services account that owns the schedule.
     */
   var AccountId: js.UndefOr[typings.awsSdk.databrewMod.AccountId] = js.undefined
   
   /**
     * The date and time that the schedule was created.
     */
-  var CreateDate: js.UndefOr[Date] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The identifier (the user name) of the user who created the schedule.
+    * The Amazon Resource Name (ARN) of the user who created the schedule.
     */
   var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.undefined
   
   /**
-    * The date(s) and time(s), in cron format, when the job will run.
+    * The dates and times when the job is to run. For more information, see Cron expressions in the Glue DataBrew Developer Guide.
     */
   var CronExpression: js.UndefOr[typings.awsSdk.databrewMod.CronExpression] = js.undefined
   
@@ -32,14 +32,14 @@ trait Schedule extends StObject {
   var JobNames: js.UndefOr[JobNameList] = js.undefined
   
   /**
-    * The identifier (the user name) of the user who last modified the schedule.
+    * The Amazon Resource Name (ARN) of the user who last modified the schedule.
     */
   var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.undefined
   
   /**
     * The date and time when the schedule was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the schedule.
@@ -69,7 +69,7 @@ object Schedule {
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    inline def setCreateDate(value: Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
@@ -85,13 +85,13 @@ object Schedule {
     
     inline def setJobNamesUndefined: Self = StObject.set(x, "JobNames", js.undefined)
     
-    inline def setJobNamesVarargs(value: JobName*): Self = StObject.set(x, "JobNames", js.Array(value :_*))
+    inline def setJobNamesVarargs(value: JobName*): Self = StObject.set(x, "JobNames", js.Array(value*))
     
     inline def setLastModifiedBy(value: LastModifiedBy): Self = StObject.set(x, "LastModifiedBy", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     

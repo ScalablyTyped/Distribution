@@ -1,11 +1,15 @@
 package typings.ionicons.stencilPublicRuntimeMod.JSXBase
 
+import typings.ionicons.stencilPublicRuntimeMod.JSXAttributes
+import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SlotAttributes extends StObject {
+trait SlotAttributes
+  extends StObject
+     with JSXAttributes[Element] {
   
   var name: js.UndefOr[String] = js.undefined
   

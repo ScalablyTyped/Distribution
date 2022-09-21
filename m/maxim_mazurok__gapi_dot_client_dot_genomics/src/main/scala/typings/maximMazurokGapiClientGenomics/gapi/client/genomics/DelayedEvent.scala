@@ -32,6 +32,6 @@ object DelayedEvent {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value*))
   }
 }

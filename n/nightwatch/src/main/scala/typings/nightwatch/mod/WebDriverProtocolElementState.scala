@@ -1,6 +1,6 @@
 package typings.nightwatch.mod
 
-import typings.nightwatch.anon.Height
+import typings.nightwatch.anon.Width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,7 +72,7 @@ trait WebDriverProtocolElementState extends StObject {
   def elementIdSize(id: String): this.type = js.native
   def elementIdSize(
     id: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Height], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Width], Unit]
   ): this.type = js.native
   
   /**

@@ -12,5 +12,5 @@ trait ArcGISImageServiceConstructor
      with Instantiable0[ArcGISImageService]
      with Instantiable1[/* properties */ ArcGISImageServiceProperties, ArcGISImageService] {
   
-  def fromJSON(json: js.Any): ArcGISImageService = js.native
+  def fromJSON(json: Any): ArcGISImageService = js.native
 }

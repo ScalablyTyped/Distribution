@@ -1,6 +1,5 @@
 package typings.devexpressWeb.global
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientParseDateEventArgs")
 @js.native
-class ASPxClientParseDateEventArgs protected ()
+open class ASPxClientParseDateEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientParseDateEventArgs {
   /**
@@ -23,7 +22,7 @@ class ASPxClientParseDateEventArgs protected ()
     * Gets or sets the edit value of the date editor.
     */
   /* CompleteClass */
-  var date: Date = js.native
+  var date: js.Date = js.native
   
   /**
     * Gets or sets a value specifying whether the event was handled.

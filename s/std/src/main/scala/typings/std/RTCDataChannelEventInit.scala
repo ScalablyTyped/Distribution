@@ -8,6 +8,7 @@ trait RTCDataChannelEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var channel: RTCDataChannel
 }
 object RTCDataChannelEventInit {

@@ -1,0 +1,7 @@
+package typings.googleapis.pubsubliteV1Mod.pubsubliteV1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaCommitCursorResponse extends StObject

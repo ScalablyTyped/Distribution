@@ -9,9 +9,9 @@ trait BackgroundBorder extends StObject {
   
   var background: js.UndefOr[BackgroundType] = js.undefined
   
-  var border: js.UndefOr[`3`] = js.undefined
+  var border: js.UndefOr[`4`] = js.undefined
   
-  var label: js.UndefOr[`3`] = js.undefined
+  var label: js.UndefOr[`4`] = js.undefined
 }
 object BackgroundBorder {
   
@@ -26,11 +26,11 @@ object BackgroundBorder {
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setBorder(value: `3`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: `4`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setLabel(value: `3`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: `4`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }

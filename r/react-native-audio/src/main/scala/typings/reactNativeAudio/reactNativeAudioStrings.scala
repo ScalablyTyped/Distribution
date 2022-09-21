@@ -21,12 +21,14 @@ object reactNativeAudioStrings {
   sealed trait MAC3
     extends StObject
        with AudioEncodingIOSType
+       with AudioEncodingType
   inline def MAC3: MAC3 = "MAC3".asInstanceOf[MAC3]
   
   @js.native
   sealed trait MAC6
     extends StObject
        with AudioEncodingIOSType
+       with AudioEncodingType
   inline def MAC6: MAC6 = "MAC6".asInstanceOf[MAC6]
   
   @js.native
@@ -50,18 +52,21 @@ object reactNativeAudioStrings {
   sealed trait alac
     extends StObject
        with AudioEncodingIOSType
+       with AudioEncodingType
   inline def alac: alac = "alac".asInstanceOf[alac]
   
   @js.native
   sealed trait alaw
     extends StObject
        with AudioEncodingIOSType
+       with AudioEncodingType
   inline def alaw: alaw = "alaw".asInstanceOf[alaw]
   
   @js.native
   sealed trait amr
     extends StObject
        with AudioEncodingIOSType
+       with AudioEncodingType
   inline def amr: amr = "amr".asInstanceOf[amr]
   
   @js.native
@@ -89,30 +94,35 @@ object reactNativeAudioStrings {
   sealed trait ima4
     extends StObject
        with AudioEncodingIOSType
+       with AudioEncodingType
   inline def ima4: ima4 = "ima4".asInstanceOf[ima4]
   
   @js.native
   sealed trait lpcm
     extends StObject
        with AudioEncodingIOSType
+       with AudioEncodingType
   inline def lpcm: lpcm = "lpcm".asInstanceOf[lpcm]
   
   @js.native
   sealed trait mp1
     extends StObject
        with AudioEncodingIOSType
+       with AudioEncodingType
   inline def mp1: mp1 = "mp1".asInstanceOf[mp1]
   
   @js.native
   sealed trait mp2
     extends StObject
        with AudioEncodingIOSType
+       with AudioEncodingType
   inline def mp2: mp2 = "mp2".asInstanceOf[mp2]
   
   @js.native
   sealed trait ulaw
     extends StObject
        with AudioEncodingIOSType
+       with AudioEncodingType
   inline def ulaw: ulaw = "ulaw".asInstanceOf[ulaw]
   
   @js.native

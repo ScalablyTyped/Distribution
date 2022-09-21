@@ -24,6 +24,6 @@ object Evidence {
     
     inline def setThreatIntelligenceDetailsUndefined: Self = StObject.set(x, "ThreatIntelligenceDetails", js.undefined)
     
-    inline def setThreatIntelligenceDetailsVarargs(value: ThreatIntelligenceDetail*): Self = StObject.set(x, "ThreatIntelligenceDetails", js.Array(value :_*))
+    inline def setThreatIntelligenceDetailsVarargs(value: ThreatIntelligenceDetail*): Self = StObject.set(x, "ThreatIntelligenceDetails", js.Array(value*))
   }
 }

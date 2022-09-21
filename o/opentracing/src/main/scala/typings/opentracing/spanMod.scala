@@ -9,13 +9,13 @@ object spanMod {
   
   @JSImport("opentracing/lib/span", JSImport.Default)
   @js.native
-  class default () extends Span
+  open class default () extends Span
   
   @JSImport("opentracing/lib/span", "Span")
   @js.native
-  class Span () extends StObject {
+  open class Span () extends StObject {
     
-    /* protected */ def _addTags(keyValuePairs: StringDictionary[js.Any]): Unit = js.native
+    /* protected */ def _addTags(keyValuePairs: StringDictionary[Any]): Unit = js.native
     
     /* protected */ def _context(): typings.opentracing.spanContextMod.default = js.native
     
@@ -24,8 +24,8 @@ object spanMod {
     
     /* protected */ def _getBaggageItem(key: String): js.UndefOr[String] = js.native
     
-    /* protected */ def _log(keyValuePairs: StringDictionary[js.Any]): Unit = js.native
-    /* protected */ def _log(keyValuePairs: StringDictionary[js.Any], timestamp: Double): Unit = js.native
+    /* protected */ def _log(keyValuePairs: StringDictionary[Any]): Unit = js.native
+    /* protected */ def _log(keyValuePairs: StringDictionary[Any], timestamp: Double): Unit = js.native
     
     /* protected */ def _setBaggageItem(key: String, value: String): Unit = js.native
     
@@ -49,7 +49,7 @@ object spanMod {
       *
       * @return {[type]} [description]
       */
-    def addTags(keyValueMap: StringDictionary[js.Any]): this.type = js.native
+    def addTags(keyValueMap: StringDictionary[Any]): this.type = js.native
     
     /**
       * Returns the SpanContext object associated with this Span.
@@ -112,13 +112,13 @@ object spanMod {
       *        not specified, the implementation is expected to use its notion
       *        of the current time of the call.
       */
-    def log(keyValuePairs: StringDictionary[js.Any]): this.type = js.native
-    def log(keyValuePairs: StringDictionary[js.Any], timestamp: Double): this.type = js.native
+    def log(keyValuePairs: StringDictionary[Any]): this.type = js.native
+    def log(keyValuePairs: StringDictionary[Any], timestamp: Double): this.type = js.native
     
     /**
       * DEPRECATED
       */
-    def logEvent(eventName: String, payload: js.Any): Unit = js.native
+    def logEvent(eventName: String, payload: Any): Unit = js.native
     
     /**
       * Sets a key:value pair on this Span that also propagates to future
@@ -155,7 +155,7 @@ object spanMod {
       * @param {string} key
       * @param {any} value
       */
-    def setTag(key: String, value: js.Any): this.type = js.native
+    def setTag(key: String, value: Any): this.type = js.native
     
     /**
       * Returns the Tracer object used to create this Span.

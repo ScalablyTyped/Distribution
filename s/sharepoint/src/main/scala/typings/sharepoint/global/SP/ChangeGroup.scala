@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ChangeGroup")
 @js.native
-class ChangeGroup ()
+open class ChangeGroup ()
   extends StObject
      with typings.sharepoint.SP.ChangeGroup

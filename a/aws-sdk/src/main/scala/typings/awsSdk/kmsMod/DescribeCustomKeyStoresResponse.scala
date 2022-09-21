@@ -34,7 +34,7 @@ object DescribeCustomKeyStoresResponse {
     
     inline def setCustomKeyStoresUndefined: Self = StObject.set(x, "CustomKeyStores", js.undefined)
     
-    inline def setCustomKeyStoresVarargs(value: CustomKeyStoresListEntry*): Self = StObject.set(x, "CustomKeyStores", js.Array(value :_*))
+    inline def setCustomKeyStoresVarargs(value: CustomKeyStoresListEntry*): Self = StObject.set(x, "CustomKeyStores", js.Array(value*))
     
     inline def setNextMarker(value: MarkerType): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

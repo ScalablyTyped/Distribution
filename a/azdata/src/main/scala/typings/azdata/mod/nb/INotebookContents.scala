@@ -30,7 +30,7 @@ object INotebookContents {
     
     inline def setCells(value: js.Array[ICellContents]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    inline def setCellsVarargs(value: ICellContents*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: ICellContents*): Self = StObject.set(x, "cells", js.Array(value*))
     
     inline def setMetadata(value: INotebookMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

@@ -1,0 +1,18 @@
+package typings.shakacodeRecompose
+
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
+import typings.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+// https://github.com/shakacode/recompose/blob/master/docs/API.md#nest
+object nestMod {
+  
+  @JSImport("@shakacode/recompose/nest", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(Components: (String | ComponentType[Any])*): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Components.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ComponentClass[Any, ComponentState]]
+}

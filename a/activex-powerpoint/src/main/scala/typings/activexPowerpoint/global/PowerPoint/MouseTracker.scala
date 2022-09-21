@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.MouseTracker")
 @js.native
-/* private */ class MouseTracker ()
+/* private */ open class MouseTracker ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.MouseTracker {
   

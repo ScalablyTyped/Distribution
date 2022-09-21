@@ -10,10 +10,10 @@ Medium.com WYSIWYG editor clone.
 | ------------------ | :-------------: |
 | Full name          | medium-editor |
 | Keywords           | contenteditable, editor, medium, wysiwyg, rich-text |
-| # releases         | 0 |
-| # dependents       | 71 |
-| # downloads        | 1461821 |
-| # stars            | 19 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 149403.0 |
+| # stars            | 15607.0 |
 
 ## Links
 - [Homepage](http://yabwe.github.io/medium-editor/)

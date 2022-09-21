@@ -12,7 +12,7 @@ trait ObjectVerbs extends StObject {
   
   def Item(Index: Double): String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.ObjectVerbs_typekey")
   var PowerPointDotObjectVerbs_typekey: ObjectVerbs
@@ -23,7 +23,7 @@ object ObjectVerbs {
     Application: Application,
     Count: Double,
     Item: Double => String,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotObjectVerbs_typekey: ObjectVerbs
   ): ObjectVerbs = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object ObjectVerbs {
     
     inline def setItem(value: Double => String): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotObjectVerbs_typekey(value: ObjectVerbs): Self = StObject.set(x, "PowerPoint.ObjectVerbs_typekey", value.asInstanceOf[js.Any])
   }

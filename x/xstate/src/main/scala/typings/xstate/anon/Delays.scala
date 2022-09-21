@@ -1,0 +1,43 @@
+package typings.xstate.anon
+
+import typings.xstate.typesMod.MachineOptionsDelays
+import typings.xstate.typesMod.Prop
+import typings.xstate.xstateStrings.eventsCausingDelays
+import typings.xstate.xstateStrings.indexedEvents
+import typings.xstate.xstateStrings.resolved
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Delays[TContext, TResolvedTypesMeta] extends StObject {
+  
+  var delays: js.UndefOr[
+    MachineOptionsDelays[
+      TContext, 
+      TResolvedTypesMeta, 
+      Prop[Prop[TResolvedTypesMeta, resolved], eventsCausingDelays], 
+      Prop[Prop[TResolvedTypesMeta, resolved], indexedEvents]
+    ]
+  ] = js.undefined
+}
+object Delays {
+  
+  inline def apply[TContext, TResolvedTypesMeta](): Delays[TContext, TResolvedTypesMeta] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[Delays[TContext, TResolvedTypesMeta]]
+  }
+  
+  extension [Self <: Delays[?, ?], TContext, TResolvedTypesMeta](x: Self & (Delays[TContext, TResolvedTypesMeta])) {
+    
+    inline def setDelays(
+      value: MachineOptionsDelays[
+          TContext, 
+          TResolvedTypesMeta, 
+          Prop[Prop[TResolvedTypesMeta, resolved], eventsCausingDelays], 
+          Prop[Prop[TResolvedTypesMeta, resolved], indexedEvents]
+        ]
+    ): Self = StObject.set(x, "delays", value.asInstanceOf[js.Any])
+    
+    inline def setDelaysUndefined: Self = StObject.set(x, "delays", js.undefined)
+  }
+}

@@ -1,7 +1,6 @@
 package typings.vscodeLanguageclient.mod
 
 import typings.vscodeLanguageclient.vscodeLanguageclientStrings.textDocumentSlashwillSaveWaitUntil
-import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.WillSaveTextDocumentParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,13 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object WillSaveTextDocumentWaitUntilRequest {
   
+  @JSImport("vscode-languageclient", "WillSaveTextDocumentWaitUntilRequest.messageDirection")
+  @js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  
   @JSImport("vscode-languageclient", "WillSaveTextDocumentWaitUntilRequest.method")
   @js.native
   val method: textDocumentSlashwillSaveWaitUntil = js.native
   
   @JSImport("vscode-languageclient", "WillSaveTextDocumentWaitUntilRequest.type")
   @js.native
-  val `type`: ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
     WillSaveTextDocumentParams, 
     js.Array[typings.vscodeLanguageserverTypes.mod.TextEdit] | Null, 
     scala.Nothing, 

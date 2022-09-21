@@ -10,10 +10,10 @@ Collect, rollup, and batch Datadog statsd metrics
 | ------------------ | :-------------: |
 | Full name          | datadog-statsd-metrics-collector |
 | Keywords           | datadog, statsd, collector, batch |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 5742 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 247.33333333333334 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/xzyfer/datadog-statsd-metrics-collector#readme)

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage.Pickers
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
@@ -99,7 +98,7 @@ object Provider {
   @js.native
   trait FileOpenPickerUI extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_closing(`type`: closing, listener: TypedEventHandler[FileOpenPickerUI, PickerClosingEventArgs]): Unit = js.native
     @JSName("addEventListener")
@@ -142,7 +141,7 @@ object Provider {
     @JSName("onfileremoved")
     var onfileremoved_Original: TypedEventHandler[FileOpenPickerUI, FileRemovedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_closing(`type`: closing, listener: TypedEventHandler[FileOpenPickerUI, PickerClosingEventArgs]): Unit = js.native
     @JSName("removeEventListener")
@@ -187,9 +186,9 @@ object Provider {
   @js.native
   trait FileSavePickerUI extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_filenamechanged(`type`: filenamechanged, listener: TypedEventHandler[FileSavePickerUI, js.Any]): Unit = js.native
+    def addEventListener_filenamechanged(`type`: filenamechanged, listener: TypedEventHandler[FileSavePickerUI, Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_targetfilerequested(
       `type`: targetfilerequested,
@@ -203,10 +202,10 @@ object Provider {
     var fileName: String = js.native
     
     /** Fired when the user changes the file name in the file name text box or changes the extension in the file type drop-down menu. */
-    def onfilenamechanged(ev: js.Any & WinRTEvent[FileSavePickerUI]): Unit = js.native
+    def onfilenamechanged(ev: Any & WinRTEvent[FileSavePickerUI]): Unit = js.native
     /** Fired when the user changes the file name in the file name text box or changes the extension in the file type drop-down menu. */
     @JSName("onfilenamechanged")
-    var onfilenamechanged_Original: TypedEventHandler[FileSavePickerUI, js.Any] = js.native
+    var onfilenamechanged_Original: TypedEventHandler[FileSavePickerUI, Any] = js.native
     
     /** Fires when the user commits a file to be saved in the file picker. */
     def ontargetfilerequested(ev: TargetFileRequestedEventArgs & WinRTEvent[FileSavePickerUI]): Unit = js.native
@@ -214,9 +213,9 @@ object Provider {
     @JSName("ontargetfilerequested")
     var ontargetfilerequested_Original: TypedEventHandler[FileSavePickerUI, TargetFileRequestedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_filenamechanged(`type`: filenamechanged, listener: TypedEventHandler[FileSavePickerUI, js.Any]): Unit = js.native
+    def removeEventListener_filenamechanged(`type`: filenamechanged, listener: TypedEventHandler[FileSavePickerUI, Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_targetfilerequested(
       `type`: targetfilerequested,
@@ -284,7 +283,7 @@ object Provider {
   trait PickerClosingOperation extends StObject {
     
     /** Gets a dateTime object that indicates when the system will shut down the app that is providing files through the file picker without further notice. */
-    var deadline: Date
+    var deadline: js.Date
     
     /**
       * Gets a pickerClosingDeferral that the app providing files through the file picker can use to respond asynchronously to a closing event.
@@ -294,14 +293,14 @@ object Provider {
   }
   object PickerClosingOperation {
     
-    inline def apply(deadline: Date, getDeferral: () => PickerClosingDeferral): PickerClosingOperation = {
+    inline def apply(deadline: js.Date, getDeferral: () => PickerClosingDeferral): PickerClosingOperation = {
       val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral))
       __obj.asInstanceOf[PickerClosingOperation]
     }
     
     extension [Self <: PickerClosingOperation](x: Self) {
       
-      inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+      inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
       
       inline def setGetDeferral(value: () => PickerClosingDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     }

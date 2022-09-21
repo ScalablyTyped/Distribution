@@ -16,7 +16,7 @@ trait ScaleEffect extends StObject {
   
   var FromY: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.ScaleEffect_typekey")
   var PowerPointDotScaleEffect_typekey: ScaleEffect
@@ -33,7 +33,7 @@ object ScaleEffect {
     ByY: Double,
     FromX: Double,
     FromY: Double,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotScaleEffect_typekey: ScaleEffect,
     ToX: Double,
     ToY: Double
@@ -55,7 +55,7 @@ object ScaleEffect {
     
     inline def setFromY(value: Double): Self = StObject.set(x, "FromY", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotScaleEffect_typekey(value: ScaleEffect): Self = StObject.set(x, "PowerPoint.ScaleEffect_typekey", value.asInstanceOf[js.Any])
     

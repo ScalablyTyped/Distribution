@@ -50,7 +50,7 @@ object CacheExpires {
     
     inline def setContainingNotebooksUndefined: Self = StObject.set(x, "containingNotebooks", js.undefined)
     
-    inline def setContainingNotebooksVarargs(value: NotebookDescriptor*): Self = StObject.set(x, "containingNotebooks", js.Array(value :_*))
+    inline def setContainingNotebooksVarargs(value: NotebookDescriptor*): Self = StObject.set(x, "containingNotebooks", js.Array(value*))
     
     inline def setDebugInfo(value: String): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
     
@@ -60,30 +60,30 @@ object CacheExpires {
     
     inline def setExpertsUndefined: Self = StObject.set(x, "experts", js.undefined)
     
-    inline def setExpertsVarargs(value: UserProfile*): Self = StObject.set(x, "experts", js.Array(value :_*))
+    inline def setExpertsVarargs(value: UserProfile*): Self = StObject.set(x, "experts", js.Array(value*))
     
     inline def setNotebooks(value: js.Array[Notebook]): Self = StObject.set(x, "notebooks", value.asInstanceOf[js.Any])
     
     inline def setNotebooksUndefined: Self = StObject.set(x, "notebooks", js.undefined)
     
-    inline def setNotebooksVarargs(value: Notebook*): Self = StObject.set(x, "notebooks", js.Array(value :_*))
+    inline def setNotebooksVarargs(value: Notebook*): Self = StObject.set(x, "notebooks", js.Array(value*))
     
     inline def setNotes(value: js.Array[typings.evernote.mod.Types.Note]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    inline def setNotesVarargs(value: typings.evernote.mod.Types.Note*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: typings.evernote.mod.Types.Note*): Self = StObject.set(x, "notes", js.Array(value*))
     
     inline def setRelatedContent(value: js.Array[RelatedContent]): Self = StObject.set(x, "relatedContent", value.asInstanceOf[js.Any])
     
     inline def setRelatedContentUndefined: Self = StObject.set(x, "relatedContent", js.undefined)
     
-    inline def setRelatedContentVarargs(value: RelatedContent*): Self = StObject.set(x, "relatedContent", js.Array(value :_*))
+    inline def setRelatedContentVarargs(value: RelatedContent*): Self = StObject.set(x, "relatedContent", js.Array(value*))
     
     inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

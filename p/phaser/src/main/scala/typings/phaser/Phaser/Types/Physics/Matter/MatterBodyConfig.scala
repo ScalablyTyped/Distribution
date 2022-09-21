@@ -111,7 +111,7 @@ trait MatterBodyConfig extends StObject {
   /**
     * A collision callback dictionary used by the `Body.setOnCollideWith` function.
     */
-  var onCollideWith: js.UndefOr[js.Any] = js.undefined
+  var onCollideWith: js.UndefOr[Any] = js.undefined
   
   /**
     * An array of bodies that make up this body. The first body in the array must always be a self reference to the current body instance. All bodies in the `parts` array together form a single rigid compound body.
@@ -121,7 +121,7 @@ trait MatterBodyConfig extends StObject {
   /**
     * An object reserved for storing plugin-specific properties.
     */
-  var plugin: js.UndefOr[js.Any] = js.undefined
+  var plugin: js.UndefOr[Any] = js.undefined
   
   /**
     * A `Vector` that specifies the current world-space position of the body.
@@ -185,7 +185,7 @@ object MatterBodyConfig {
     
     inline def setChamferUndefined: Self = StObject.set(x, "chamfer", js.undefined)
     
-    inline def setChamferVarargs(value: Double*): Self = StObject.set(x, "chamfer", js.Array(value :_*))
+    inline def setChamferVarargs(value: Double*): Self = StObject.set(x, "chamfer", js.Array(value*))
     
     inline def setCircleRadius(value: Double): Self = StObject.set(x, "circleRadius", value.asInstanceOf[js.Any])
     
@@ -259,7 +259,7 @@ object MatterBodyConfig {
     
     inline def setOnCollideEndCallbackUndefined: Self = StObject.set(x, "onCollideEndCallback", js.undefined)
     
-    inline def setOnCollideWith(value: js.Any): Self = StObject.set(x, "onCollideWith", value.asInstanceOf[js.Any])
+    inline def setOnCollideWith(value: Any): Self = StObject.set(x, "onCollideWith", value.asInstanceOf[js.Any])
     
     inline def setOnCollideWithUndefined: Self = StObject.set(x, "onCollideWith", js.undefined)
     
@@ -267,9 +267,9 @@ object MatterBodyConfig {
     
     inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
     
-    inline def setPartsVarargs(value: BodyType*): Self = StObject.set(x, "parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: BodyType*): Self = StObject.set(x, "parts", js.Array(value*))
     
-    inline def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
     inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
     
@@ -309,6 +309,6 @@ object MatterBodyConfig {
     
     inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
-    inline def setVerticesVarargs(value: Vector2Like*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: Vector2Like*): Self = StObject.set(x, "vertices", js.Array(value*))
   }
 }

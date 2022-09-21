@@ -42,7 +42,7 @@ object StoreCluster {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setNameVarargs(value: LocalizedText*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: LocalizedText*): Self = StObject.set(x, "name", js.Array(value*))
     
     inline def setOrderInPage(value: String): Self = StObject.set(x, "orderInPage", value.asInstanceOf[js.Any])
     
@@ -52,6 +52,6 @@ object StoreCluster {
     
     inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    inline def setProductIdVarargs(value: String*): Self = StObject.set(x, "productId", js.Array(value :_*))
+    inline def setProductIdVarargs(value: String*): Self = StObject.set(x, "productId", js.Array(value*))
   }
 }

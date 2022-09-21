@@ -33,6 +33,6 @@ object ResultSetMetadata {
     
     inline def setColumnMetadataUndefined: Self = StObject.set(x, "columnMetadata", js.undefined)
     
-    inline def setColumnMetadataVarargs(value: ColumnMetadata*): Self = StObject.set(x, "columnMetadata", js.Array(value :_*))
+    inline def setColumnMetadataVarargs(value: ColumnMetadata*): Self = StObject.set(x, "columnMetadata", js.Array(value*))
   }
 }

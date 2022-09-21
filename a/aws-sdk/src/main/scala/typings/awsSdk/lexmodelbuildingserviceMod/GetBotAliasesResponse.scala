@@ -29,7 +29,7 @@ object GetBotAliasesResponse {
     
     inline def setBotAliasesUndefined: Self = StObject.set(x, "BotAliases", js.undefined)
     
-    inline def setBotAliasesVarargs(value: BotAliasMetadata*): Self = StObject.set(x, "BotAliases", js.Array(value :_*))
+    inline def setBotAliasesVarargs(value: BotAliasMetadata*): Self = StObject.set(x, "BotAliases", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

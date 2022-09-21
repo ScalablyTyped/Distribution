@@ -1,12 +1,17 @@
 package typings.karmaSummaryReporter
 
+import typings.karmaSummaryReporter.anon.Failure
 import typings.karmaSummaryReporter.karmaSummaryReporterStrings.all
+import typings.karmaSummaryReporter.karmaSummaryReporterStrings.always
 import typings.karmaSummaryReporter.karmaSummaryReporterStrings.failed
+import typings.karmaSummaryReporter.karmaSummaryReporterStrings.ifneeded
+import typings.karmaSummaryReporter.karmaSummaryReporterStrings.never
 import typings.karmaSummaryReporter.karmaSummaryReporterStrings.skipped
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* augmented module */
 object mod {
   
   trait ConfigOptions extends StObject {
@@ -36,6 +41,14 @@ object mod {
   trait SummaryReporterConfig extends StObject {
     
     /**
+      * Show the list of connected browsers before the result table:
+      * * 'always': Show always (default)
+      * * 'never': Show never
+      * * 'ifneeded': Show only if there are test results shown from multiple browsers
+      */
+    var browserList: js.UndefOr[always | never | ifneeded] = js.undefined
+    
+    /**
       * Shows a overview column in the results table, showing the total result of a test over all browsers
       * ("failed" if the test failed anywhere, ...)
       */
@@ -53,6 +66,13 @@ object mod {
       * Space reserved to display the spec label (width of the first column in the results table).
       */
     var specLength: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Use custom symbols to indicate success and failure:
+      * * success: used for successful test results
+      * * failure: used for failed test results
+      */
+    var symbols: js.UndefOr[Failure] = js.undefined
   }
   object SummaryReporterConfig {
     
@@ -62,6 +82,10 @@ object mod {
     }
     
     extension [Self <: SummaryReporterConfig](x: Self) {
+      
+      inline def setBrowserList(value: always | never | ifneeded): Self = StObject.set(x, "browserList", value.asInstanceOf[js.Any])
+      
+      inline def setBrowserListUndefined: Self = StObject.set(x, "browserList", js.undefined)
       
       inline def setOverviewColumn(value: Boolean): Self = StObject.set(x, "overviewColumn", value.asInstanceOf[js.Any])
       
@@ -74,6 +98,10 @@ object mod {
       inline def setSpecLength(value: Double): Self = StObject.set(x, "specLength", value.asInstanceOf[js.Any])
       
       inline def setSpecLengthUndefined: Self = StObject.set(x, "specLength", js.undefined)
+      
+      inline def setSymbols(value: Failure): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+      
+      inline def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
     }
   }
 }

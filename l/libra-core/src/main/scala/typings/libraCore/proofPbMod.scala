@@ -7,7 +7,6 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.transactionInfoPbMod.TransactionInfo
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object proofPbMod {
   
   @JSImport("libra-core/lib/@/generated/proof_pb", "AccountStateProof")
   @js.native
-  class AccountStateProof () extends Message {
+  open class AccountStateProof () extends Message {
     
     def clearLedgerInfoToTransactionInfoProof(): Unit = js.native
     
@@ -52,7 +51,7 @@ object proofPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): AccountStateProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccountStateProof]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): AccountStateProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccountStateProof]
     
     inline def deserializeBinaryFromReader(message: AccountStateProof, reader: BinaryReader): AccountStateProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AccountStateProof]
     
@@ -105,26 +104,26 @@ object proofPbMod {
   
   @JSImport("libra-core/lib/@/generated/proof_pb", "AccumulatorProof")
   @js.native
-  class AccumulatorProof () extends Message {
+  open class AccumulatorProof () extends Message {
     
-    def addNonDefaultSiblings(value: String): Uint8Array | String = js.native
-    def addNonDefaultSiblings(value: String, index: Double): Uint8Array | String = js.native
-    def addNonDefaultSiblings(value: Uint8Array): Uint8Array | String = js.native
-    def addNonDefaultSiblings(value: Uint8Array, index: Double): Uint8Array | String = js.native
+    def addNonDefaultSiblings(value: String): js.typedarray.Uint8Array | String = js.native
+    def addNonDefaultSiblings(value: String, index: Double): js.typedarray.Uint8Array | String = js.native
+    def addNonDefaultSiblings(value: js.typedarray.Uint8Array): js.typedarray.Uint8Array | String = js.native
+    def addNonDefaultSiblings(value: js.typedarray.Uint8Array, index: Double): js.typedarray.Uint8Array | String = js.native
     
     def clearNonDefaultSiblingsList(): Unit = js.native
     
     def getBitmap(): String = js.native
     
-    def getNonDefaultSiblingsList(): js.Array[Uint8Array | String] = js.native
+    def getNonDefaultSiblingsList(): js.Array[js.typedarray.Uint8Array | String] = js.native
     
     def getNonDefaultSiblingsList_asB64(): js.Array[String] = js.native
     
-    def getNonDefaultSiblingsList_asU8(): js.Array[Uint8Array] = js.native
+    def getNonDefaultSiblingsList_asU8(): js.Array[js.typedarray.Uint8Array] = js.native
     
     def setBitmap(value: String): Unit = js.native
     
-    def setNonDefaultSiblingsList(value: js.Array[Uint8Array | String]): Unit = js.native
+    def setNonDefaultSiblingsList(value: js.Array[js.typedarray.Uint8Array | String]): Unit = js.native
   }
   /* static members */
   object AccumulatorProof {
@@ -133,7 +132,7 @@ object proofPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): AccumulatorProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccumulatorProof]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): AccumulatorProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccumulatorProof]
     
     inline def deserializeBinaryFromReader(message: AccumulatorProof, reader: BinaryReader): AccumulatorProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AccumulatorProof]
     
@@ -156,11 +155,11 @@ object proofPbMod {
       
       var bitmap: String
       
-      var nonDefaultSiblingsList: js.Array[Uint8Array | String]
+      var nonDefaultSiblingsList: js.Array[js.typedarray.Uint8Array | String]
     }
     object AsObject {
       
-      inline def apply(bitmap: String, nonDefaultSiblingsList: js.Array[Uint8Array | String]): AsObject = {
+      inline def apply(bitmap: String, nonDefaultSiblingsList: js.Array[js.typedarray.Uint8Array | String]): AsObject = {
         val __obj = js.Dynamic.literal(bitmap = bitmap.asInstanceOf[js.Any], nonDefaultSiblingsList = nonDefaultSiblingsList.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
@@ -169,16 +168,16 @@ object proofPbMod {
         
         inline def setBitmap(value: String): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
         
-        inline def setNonDefaultSiblingsList(value: js.Array[Uint8Array | String]): Self = StObject.set(x, "nonDefaultSiblingsList", value.asInstanceOf[js.Any])
+        inline def setNonDefaultSiblingsList(value: js.Array[js.typedarray.Uint8Array | String]): Self = StObject.set(x, "nonDefaultSiblingsList", value.asInstanceOf[js.Any])
         
-        inline def setNonDefaultSiblingsListVarargs(value: (Uint8Array | String)*): Self = StObject.set(x, "nonDefaultSiblingsList", js.Array(value :_*))
+        inline def setNonDefaultSiblingsListVarargs(value: (js.typedarray.Uint8Array | String)*): Self = StObject.set(x, "nonDefaultSiblingsList", js.Array(value*))
       }
     }
   }
   
   @JSImport("libra-core/lib/@/generated/proof_pb", "EventProof")
   @js.native
-  class EventProof () extends Message {
+  open class EventProof () extends Message {
     
     def clearLedgerInfoToTransactionInfoProof(): Unit = js.native
     
@@ -214,7 +213,7 @@ object proofPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): EventProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EventProof]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): EventProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EventProof]
     
     inline def deserializeBinaryFromReader(message: EventProof, reader: BinaryReader): EventProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[EventProof]
     
@@ -267,7 +266,7 @@ object proofPbMod {
   
   @JSImport("libra-core/lib/@/generated/proof_pb", "SignedTransactionProof")
   @js.native
-  class SignedTransactionProof () extends Message {
+  open class SignedTransactionProof () extends Message {
     
     def clearLedgerInfoToTransactionInfoProof(): Unit = js.native
     
@@ -294,7 +293,7 @@ object proofPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): SignedTransactionProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SignedTransactionProof]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): SignedTransactionProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SignedTransactionProof]
     
     inline def deserializeBinaryFromReader(message: SignedTransactionProof, reader: BinaryReader): SignedTransactionProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SignedTransactionProof]
     
@@ -341,40 +340,40 @@ object proofPbMod {
   
   @JSImport("libra-core/lib/@/generated/proof_pb", "SparseMerkleProof")
   @js.native
-  class SparseMerkleProof () extends Message {
+  open class SparseMerkleProof () extends Message {
     
-    def addNonDefaultSiblings(value: String): Uint8Array | String = js.native
-    def addNonDefaultSiblings(value: String, index: Double): Uint8Array | String = js.native
-    def addNonDefaultSiblings(value: Uint8Array): Uint8Array | String = js.native
-    def addNonDefaultSiblings(value: Uint8Array, index: Double): Uint8Array | String = js.native
+    def addNonDefaultSiblings(value: String): js.typedarray.Uint8Array | String = js.native
+    def addNonDefaultSiblings(value: String, index: Double): js.typedarray.Uint8Array | String = js.native
+    def addNonDefaultSiblings(value: js.typedarray.Uint8Array): js.typedarray.Uint8Array | String = js.native
+    def addNonDefaultSiblings(value: js.typedarray.Uint8Array, index: Double): js.typedarray.Uint8Array | String = js.native
     
     def clearNonDefaultSiblingsList(): Unit = js.native
     
-    def getBitmap(): Uint8Array | String = js.native
+    def getBitmap(): js.typedarray.Uint8Array | String = js.native
     
     def getBitmap_asB64(): String = js.native
     
-    def getBitmap_asU8(): Uint8Array = js.native
+    def getBitmap_asU8(): js.typedarray.Uint8Array = js.native
     
-    def getLeaf(): Uint8Array | String = js.native
+    def getLeaf(): js.typedarray.Uint8Array | String = js.native
     
     def getLeaf_asB64(): String = js.native
     
-    def getLeaf_asU8(): Uint8Array = js.native
+    def getLeaf_asU8(): js.typedarray.Uint8Array = js.native
     
-    def getNonDefaultSiblingsList(): js.Array[Uint8Array | String] = js.native
+    def getNonDefaultSiblingsList(): js.Array[js.typedarray.Uint8Array | String] = js.native
     
     def getNonDefaultSiblingsList_asB64(): js.Array[String] = js.native
     
-    def getNonDefaultSiblingsList_asU8(): js.Array[Uint8Array] = js.native
+    def getNonDefaultSiblingsList_asU8(): js.Array[js.typedarray.Uint8Array] = js.native
     
     def setBitmap(value: String): Unit = js.native
-    def setBitmap(value: Uint8Array): Unit = js.native
+    def setBitmap(value: js.typedarray.Uint8Array): Unit = js.native
     
     def setLeaf(value: String): Unit = js.native
-    def setLeaf(value: Uint8Array): Unit = js.native
+    def setLeaf(value: js.typedarray.Uint8Array): Unit = js.native
     
-    def setNonDefaultSiblingsList(value: js.Array[Uint8Array | String]): Unit = js.native
+    def setNonDefaultSiblingsList(value: js.Array[js.typedarray.Uint8Array | String]): Unit = js.native
   }
   /* static members */
   object SparseMerkleProof {
@@ -383,7 +382,7 @@ object proofPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): SparseMerkleProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SparseMerkleProof]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): SparseMerkleProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SparseMerkleProof]
     
     inline def deserializeBinaryFromReader(message: SparseMerkleProof, reader: BinaryReader): SparseMerkleProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SparseMerkleProof]
     
@@ -404,18 +403,18 @@ object proofPbMod {
     
     trait AsObject extends StObject {
       
-      var bitmap: Uint8Array | String
+      var bitmap: js.typedarray.Uint8Array | String
       
-      var leaf: Uint8Array | String
+      var leaf: js.typedarray.Uint8Array | String
       
-      var nonDefaultSiblingsList: js.Array[Uint8Array | String]
+      var nonDefaultSiblingsList: js.Array[js.typedarray.Uint8Array | String]
     }
     object AsObject {
       
       inline def apply(
-        bitmap: Uint8Array | String,
-        leaf: Uint8Array | String,
-        nonDefaultSiblingsList: js.Array[Uint8Array | String]
+        bitmap: js.typedarray.Uint8Array | String,
+        leaf: js.typedarray.Uint8Array | String,
+        nonDefaultSiblingsList: js.Array[js.typedarray.Uint8Array | String]
       ): AsObject = {
         val __obj = js.Dynamic.literal(bitmap = bitmap.asInstanceOf[js.Any], leaf = leaf.asInstanceOf[js.Any], nonDefaultSiblingsList = nonDefaultSiblingsList.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
@@ -423,13 +422,13 @@ object proofPbMod {
       
       extension [Self <: AsObject](x: Self) {
         
-        inline def setBitmap(value: Uint8Array | String): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
+        inline def setBitmap(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
         
-        inline def setLeaf(value: Uint8Array | String): Self = StObject.set(x, "leaf", value.asInstanceOf[js.Any])
+        inline def setLeaf(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "leaf", value.asInstanceOf[js.Any])
         
-        inline def setNonDefaultSiblingsList(value: js.Array[Uint8Array | String]): Self = StObject.set(x, "nonDefaultSiblingsList", value.asInstanceOf[js.Any])
+        inline def setNonDefaultSiblingsList(value: js.Array[js.typedarray.Uint8Array | String]): Self = StObject.set(x, "nonDefaultSiblingsList", value.asInstanceOf[js.Any])
         
-        inline def setNonDefaultSiblingsListVarargs(value: (Uint8Array | String)*): Self = StObject.set(x, "nonDefaultSiblingsList", js.Array(value :_*))
+        inline def setNonDefaultSiblingsListVarargs(value: (js.typedarray.Uint8Array | String)*): Self = StObject.set(x, "nonDefaultSiblingsList", js.Array(value*))
       }
     }
   }

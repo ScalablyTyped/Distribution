@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "twilio-sync" : "0.12.4"
+      "twilio-sync" : "3.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "twilio-sync" : "0.12.4"
+      "twilio-sync" : "3.1.0"
     }
   ],
   "compile-devDependencies" : [

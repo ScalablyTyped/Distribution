@@ -5,52 +5,55 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains a collection of TableRow objects.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 trait TableRowCollectionLoadOptions extends StObject {
   
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the number of cells in the row. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var cellCount: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the cells in the row.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var cells: js.UndefOr[TableCellCollectionLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the ID of the row. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the parent table.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the index of the row in its parent table. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var rowIndex: js.UndefOr[Boolean] = js.undefined

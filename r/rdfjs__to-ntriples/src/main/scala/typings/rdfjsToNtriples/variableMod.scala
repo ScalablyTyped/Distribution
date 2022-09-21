@@ -1,6 +1,6 @@
 package typings.rdfjsToNtriples
 
-import typings.rdfJs.mod.Variable
+import typings.rdfjsTypes.dataModelMod.Variable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

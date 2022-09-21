@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Ref
   extends StObject
-     with _Selectable[js.Any] {
+     with _Selectable[Any] {
   
   var ref: String
 }

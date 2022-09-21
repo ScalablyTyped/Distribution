@@ -13,10 +13,9 @@ trait SchemaAutoscalersScopedList extends StObject {
   var autoscalers: js.UndefOr[js.Array[SchemaAutoscaler]] = js.undefined
   
   /**
-    * [Output Only] Informational warning which replaces the list of
-    * autoscalers when the list is empty.
+    * [Output Only] Informational warning which replaces the list of autoscalers when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaAutoscalersScopedList {
   
@@ -31,9 +30,11 @@ object SchemaAutoscalersScopedList {
     
     inline def setAutoscalersUndefined: Self = StObject.set(x, "autoscalers", js.undefined)
     
-    inline def setAutoscalersVarargs(value: SchemaAutoscaler*): Self = StObject.set(x, "autoscalers", js.Array(value :_*))
+    inline def setAutoscalersVarargs(value: SchemaAutoscaler*): Self = StObject.set(x, "autoscalers", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

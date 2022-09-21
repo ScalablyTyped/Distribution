@@ -1,17 +1,17 @@
 package typings.rxjs
 
+import typings.rxjs.internalTypesMod.SchedulerAction
 import typings.rxjs.schedulerMod.Scheduler
 import typings.rxjs.subscriptionMod.Subscription
-import typings.rxjs.typesMod.SchedulerAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionMod {
   
-  @JSImport("rxjs/internal/scheduler/Action", "Action")
+  @JSImport("rxjs/dist/types/internal/scheduler/Action", "Action")
   @js.native
-  class Action[T] protected () extends Subscription {
+  open class Action[T] protected () extends Subscription {
     def this(
       scheduler: Scheduler,
       work: js.ThisFunction1[/* this */ SchedulerAction[T], /* state */ js.UndefOr[T], Unit]

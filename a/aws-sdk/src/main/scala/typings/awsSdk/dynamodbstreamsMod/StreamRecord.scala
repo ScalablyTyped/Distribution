@@ -9,7 +9,7 @@ trait StreamRecord extends StObject {
   /**
     * The approximate date and time when the stream record was created, in UNIX epoch time format.
     */
-  var ApproximateCreationDateTime: js.UndefOr[Date] = js.undefined
+  var ApproximateCreationDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The primary key attribute(s) for the DynamoDB item that was modified.
@@ -50,7 +50,7 @@ object StreamRecord {
   
   extension [Self <: StreamRecord](x: Self) {
     
-    inline def setApproximateCreationDateTime(value: Date): Self = StObject.set(x, "ApproximateCreationDateTime", value.asInstanceOf[js.Any])
+    inline def setApproximateCreationDateTime(value: js.Date): Self = StObject.set(x, "ApproximateCreationDateTime", value.asInstanceOf[js.Any])
     
     inline def setApproximateCreationDateTimeUndefined: Self = StObject.set(x, "ApproximateCreationDateTime", js.undefined)
     

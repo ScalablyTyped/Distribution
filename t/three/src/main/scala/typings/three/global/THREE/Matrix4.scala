@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.Matrix4")
 @js.native
-class Matrix4 ()
+open class Matrix4 ()
   extends typings.three.mod.Matrix4

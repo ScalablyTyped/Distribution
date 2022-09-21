@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ot", "EditorClient")
 @js.native
-class EditorClient protected () extends Client {
+open class EditorClient protected () extends Client {
   def this(
     revision: Double,
     clients: js.Array[ClientObj],
@@ -23,13 +23,13 @@ class EditorClient protected () extends Client {
   
   var clients: StringDictionary[OtherClient] = js.native
   
-  var editorAdapter: js.Any = js.native
+  var editorAdapter: Any = js.native
   
   def getClientObject(clientId: String): ClientObj = js.native
   
   def initializeClientList(): Unit = js.native
   
-  def initializeClients(clients: Clients[js.Any]): Unit = js.native
+  def initializeClients(clients: Clients[Any]): Unit = js.native
   
   def onBlur(): Unit = js.native
   
@@ -43,7 +43,7 @@ class EditorClient protected () extends Client {
   
   def sendSelection(selection: Selection): Unit = js.native
   
-  var serverAdapter: js.Any = js.native
+  var serverAdapter: Any = js.native
   
   def undo(): Unit = js.native
   
@@ -53,9 +53,9 @@ object EditorClient {
   
   @JSImport("ot", "EditorClient.OtherClient")
   @js.native
-  class OtherClient () extends StObject
+  open class OtherClient () extends StObject
   
   @JSImport("ot", "EditorClient.SelfMeta")
   @js.native
-  class SelfMeta () extends StObject
+  open class SelfMeta () extends StObject
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.PointCollection")
 @js.native
-class PointCollection protected ()
+open class PointCollection protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.PointCollection {
   def this(points: js.Array[typings.baidumapWebSdk.BMap.Point]) = this()

@@ -18,12 +18,12 @@ trait IScrollView
   /** [Method] Returns the value of element
     * @returns Object
     */
-  var getElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getElement: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of indicators
     * @returns Object
     */
-  var getIndicators: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getIndicators: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of indicatorsHidingDelay
     * @returns Number
@@ -51,12 +51,12 @@ trait IScrollView
   /** [Method] Sets the value of element
     * @param element Object The new value.
     */
-  var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of indicators
     * @param indicators Object The new value.
     */
-  var setIndicators: js.UndefOr[js.Function1[/* indicators */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setIndicators: js.UndefOr[js.Function1[/* indicators */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of indicatorsHidingDelay
     * @param indicatorsHidingDelay Number The new value.
@@ -71,7 +71,7 @@ trait IScrollView
   /** [Method] Sets the value of scroller
     * @param scroller Object The new value.
     */
-  var setScroller: js.UndefOr[js.Function1[/* scroller */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setScroller: js.UndefOr[js.Function1[/* scroller */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IScrollView {
   
@@ -86,11 +86,11 @@ object IScrollView {
     
     inline def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
     
-    inline def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+    inline def setGetElement(value: () => Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     
     inline def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
     
-    inline def setGetIndicators(value: () => js.Any): Self = StObject.set(x, "getIndicators", js.Any.fromFunction0(value))
+    inline def setGetIndicators(value: () => Any): Self = StObject.set(x, "getIndicators", js.Any.fromFunction0(value))
     
     inline def setGetIndicatorsHidingDelay(value: () => Double): Self = StObject.set(x, "getIndicatorsHidingDelay", js.Any.fromFunction0(value))
     
@@ -114,11 +114,11 @@ object IScrollView {
     
     inline def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
     
-    inline def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
+    inline def setSetElement(value: /* element */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
     
     inline def setSetElementUndefined: Self = StObject.set(x, "setElement", js.undefined)
     
-    inline def setSetIndicators(value: /* indicators */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setIndicators", js.Any.fromFunction1(value))
+    inline def setSetIndicators(value: /* indicators */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setIndicators", js.Any.fromFunction1(value))
     
     inline def setSetIndicatorsHidingDelay(value: /* indicatorsHidingDelay */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setIndicatorsHidingDelay", js.Any.fromFunction1(value))
     
@@ -130,7 +130,7 @@ object IScrollView {
     
     inline def setSetIndicatorsUndefined: Self = StObject.set(x, "setIndicators", js.undefined)
     
-    inline def setSetScroller(value: /* scroller */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScroller", js.Any.fromFunction1(value))
+    inline def setSetScroller(value: /* scroller */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setScroller", js.Any.fromFunction1(value))
     
     inline def setSetScrollerUndefined: Self = StObject.set(x, "setScroller", js.undefined)
   }

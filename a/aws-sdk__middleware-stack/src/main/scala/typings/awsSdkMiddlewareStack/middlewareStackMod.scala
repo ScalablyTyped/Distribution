@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object middlewareStackMod {
   
-  @JSImport("@aws-sdk/middleware-stack/dist/cjs/MiddlewareStack", JSImport.Namespace)
+  @JSImport("@aws-sdk/middleware-stack/dist-types/MiddlewareStack", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

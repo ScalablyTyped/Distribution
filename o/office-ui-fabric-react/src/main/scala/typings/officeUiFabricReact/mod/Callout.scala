@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "Callout")
 @js.native
-class Callout protected ()
+open class Callout protected ()
   extends typings.officeUiFabricReact.libCalloutMod.Callout {
   def this(props: ICalloutProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ICalloutProps, context: js.Any) = this()
+  def this(props: ICalloutProps, context: Any) = this()
 }

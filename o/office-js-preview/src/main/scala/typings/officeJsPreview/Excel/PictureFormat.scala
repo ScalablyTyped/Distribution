@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait PictureFormat extends StObject
 /**
-  *
   * The format of the image.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PictureFormat")
@@ -18,7 +18,8 @@ object PictureFormat extends StObject {
   
   /**
     * Bitmap image.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait bmp
@@ -27,7 +28,8 @@ object PictureFormat extends StObject {
   
   /**
     * Graphics Interchange Format.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait gif
@@ -36,7 +38,8 @@ object PictureFormat extends StObject {
   
   /**
     * Joint Photographic Experts Group.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait jpeg
@@ -45,7 +48,8 @@ object PictureFormat extends StObject {
   
   /**
     * Portable Network Graphics.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait png
@@ -54,13 +58,18 @@ object PictureFormat extends StObject {
   
   /**
     * Scalable Vector Graphic.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait svg
     extends StObject
        with PictureFormat
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
   sealed trait unknown
     extends StObject

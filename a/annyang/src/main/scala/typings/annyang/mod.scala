@@ -1,7 +1,6 @@
 package typings.annyang
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +33,7 @@ object mod {
           /* results */ js.UndefOr[js.Array[String]], 
           Unit
         ],
-      context: js.Any
+      context: Any
     ): Unit = js.native
     
     /**
@@ -64,7 +63,7 @@ object mod {
       * Returns the instance of the browser's SpeechRecognition object used by annyang.
       * Useful in case you want direct access to the browser's Speech Recognition engine.
       */
-    def getSpeechRecognizer(): js.Any = js.native
+    def getSpeechRecognizer(): Any = js.native
     
     /**
       * Returns true if speech recognition is currently on.
@@ -163,11 +162,11 @@ object mod {
     
     def callback(): Unit
     
-    var regexp: RegExp
+    var regexp: js.RegExp
   }
   object CommandOptionRegex {
     
-    inline def apply(callback: () => Unit, regexp: RegExp): CommandOptionRegex = {
+    inline def apply(callback: () => Unit, regexp: js.RegExp): CommandOptionRegex = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), regexp = regexp.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandOptionRegex]
     }
@@ -176,7 +175,7 @@ object mod {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      inline def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+      inline def setRegexp(value: js.RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     }
   }
   

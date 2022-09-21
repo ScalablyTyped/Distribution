@@ -1,13 +1,12 @@
 package typings.send
 
-import typings.mime.mod.TypeMap
 import typings.node.fsMod.Stats
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Stream
 import typings.send.sendStrings.allow
 import typings.send.sendStrings.deny
 import typings.send.sendStrings.ignore
-import typings.std.Error
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,19 +24,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  object mime {
-    
-    @JSImport("send", "mime")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def define(mimes: TypeMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def define(mimes: TypeMap, force: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def getExtension(mime: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(mime.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-    
-    inline def getType(path: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  }
+  @JSImport("send", "mime")
+  @js.native
+  val mime: typings.mime.mimeMod.^ = js.native
   
   trait SendOptions extends StObject {
     
@@ -83,6 +72,14 @@ object mod {
       * This is skipped if the requested file already has an extension.
       */
     var extensions: js.UndefOr[js.Array[String] | String | Boolean] = js.undefined
+    
+    /**
+      * Enable or disable the immutable directive in the Cache-Control response header, defaults to false.
+      * If set to true, the maxAge option should also be specified to enable caching.
+      * The immutable directive will prevent supported clients from making conditional requests during the life of the maxAge option to check if the file has changed.
+      * @default false
+      */
+    var immutable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default send supports "index.html" files, to disable this set false or to supply a new index pass a string or an array in preferred order.
@@ -145,13 +142,17 @@ object mod {
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
+      
+      inline def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
+      
+      inline def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
       
       inline def setIndex(value: js.Array[String] | String | Boolean): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
       
       inline def setLastModified(value: Boolean): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       
@@ -176,10 +177,9 @@ object mod {
     
     /**
       * Emit error with `status`.
-      * @private
       */
     def error(status: Double): Unit = js.native
-    def error(status: Double, error: Error): Unit = js.native
+    def error(status: Double, error: js.Error): Unit = js.native
     
     /**
       * @deprecated pass etag as option
@@ -195,13 +195,11 @@ object mod {
     
     /**
       * Check if the pathname ends with "/".
-      * @private
       */
     def hasTrailingSlash(): Boolean = js.native
     
     /**
       * Raise error that headers already sent.
-      * @private
       */
     def headersAlreadySent(): Unit = js.native
     
@@ -220,25 +218,21 @@ object mod {
     
     /**
       * Check if the request is cacheable, aka responded with 2xx or 304 (see RFC 2616 section 14.2{5,6}).
-      * @private
       */
     def isCachable(): Boolean = js.native
     
     /**
       * Check if this is a conditional GET request.
-      * @private
       */
     def isConditionalGET(): Boolean = js.native
     
     /**
       * Check if the cache is fresh.
-      * @private
       */
     def isFresh(): Boolean = js.native
     
     /**
       * Check if the range is fresh.
-      * @private
       */
     def isRangeFresh(): Boolean = js.native
     
@@ -251,25 +245,26 @@ object mod {
     
     /**
       * Respond with 304 not modified.
-      * @private
       */
     def notModified(): Unit = js.native
     
     /**
       * Handle stat() error.
-      * @private
       */
-    def onStatError(error: Error): Unit = js.native
+    def onStatError(error: js.Error): Unit = js.native
+    
+    /**
+      * Pipe to `res`.
+      */
+    def pipe[T /* <: WritableStream[Any] */](res: T): T = js.native
     
     /**
       * Redirect to path.
-      * @private
       */
     def redirect(path: String): Unit = js.native
     
     /**
       * Strip content-* header fields.
-      * @private
       */
     def removeContentHeaderFields(): Unit = js.native
     
@@ -287,32 +282,27 @@ object mod {
     
     /**
       * Transfer file for `path`.
-      * @private
       */
     def sendFile(path: String): Unit = js.native
     
     /**
       * Transfer index for `path`.
-      * @private
       */
     def sendIndex(path: String): Unit = js.native
     
     /**
       * Set response header fields, most fields may be pre-defined.
-      * @private
       */
     def setHeader(path: String, stat: Stats): Unit = js.native
     
     /**
       * Transfer index for `path`.
-      * @private
       */
     def stream(path: String): Unit = js.native
     def stream(path: String, options: js.Object): Unit = js.native
     
     /**
       * Set content-type based on `path` if it hasn't been explicitly set.
-      * @private
       */
     def `type`(path: String): Unit = js.native
   }

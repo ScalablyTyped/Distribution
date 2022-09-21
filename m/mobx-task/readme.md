@@ -1,7 +1,7 @@
 
 # Scala.js typings for mobx-task
 
-Typings are for version 2.0.1
+Typings are for version 3.0.0
 
 ## Library description:
 Removes boilerplate of tracking when an async function is running for MobX.
@@ -10,10 +10,10 @@ Removes boilerplate of tracking when an async function is running for MobX.
 | ------------------ | :-------------: |
 | Full name          | mobx-task |
 | Keywords           | async, mobx, state, loading, promise |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 49056 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 14001.666666666666 |
+| # stars            | 230.0 |
 
 ## Links
 - [Homepage](https://github.com/jeffijoe/mobx-task#readme)

@@ -10,10 +10,10 @@ List of archive file extensions
 | ------------------ | :-------------: |
 | Full name          | archive-extensions |
 | Keywords           | extensions, extension, file, json, list, array, archive, compressed, compress, archive, zip, tar, rar, 7z |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 1220 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 109.0 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/archive-extensions#readme)

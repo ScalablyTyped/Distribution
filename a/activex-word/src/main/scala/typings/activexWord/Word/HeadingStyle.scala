@@ -14,9 +14,9 @@ trait HeadingStyle extends StObject {
   
   var Level: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
-  var Style: js.Any
+  var Style: Any
   
   /* private */ @JSName("Word.HeadingStyle_typekey")
   var WordDotHeadingStyle_typekey: HeadingStyle
@@ -28,8 +28,8 @@ object HeadingStyle {
     Creator: Double,
     Delete: () => Unit,
     Level: Double,
-    Parent: js.Any,
-    Style: js.Any,
+    Parent: Any,
+    Style: Any,
     WordDotHeadingStyle_typekey: HeadingStyle
   ): HeadingStyle = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Level = Level.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Style = Style.asInstanceOf[js.Any])
@@ -47,9 +47,9 @@ object HeadingStyle {
     
     inline def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setStyle(value: js.Any): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Any): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     inline def setWordDotHeadingStyle_typekey(value: HeadingStyle): Self = StObject.set(x, "Word.HeadingStyle_typekey", value.asInstanceOf[js.Any])
   }

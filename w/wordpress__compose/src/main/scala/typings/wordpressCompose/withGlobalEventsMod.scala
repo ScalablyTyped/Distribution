@@ -15,5 +15,5 @@ object withGlobalEventsMod {
   val ^ : js.Any = js.native
   
   // prettier-ignore
-  inline def default(eventMapper: kinkeyofWindowEventMapstr): js.Function1[/* component */ ComponentClass[js.Any, ComponentState], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventMapper.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentClass[js.Any, ComponentState], ComponentType[js.Any]]]
+  inline def default(eventMapper: kinkeyofWindowEventMapstr): js.Function1[/* component */ ComponentClass[Any, ComponentState], ComponentType[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventMapper.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentClass[Any, ComponentState], ComponentType[Any]]]
 }

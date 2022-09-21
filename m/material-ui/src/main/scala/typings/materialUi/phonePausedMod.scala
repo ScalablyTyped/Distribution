@@ -10,10 +10,10 @@ object phonePausedMod {
   
   @JSImport("material-ui/svg-icons/notification/phone-paused", JSImport.Default)
   @js.native
-  class default () extends NotificationPhonePaused
+  open class default () extends NotificationPhonePaused
   
   @JSImport("material-ui/svg-icons/notification/phone-paused", "NotificationPhonePaused")
   @js.native
-  class NotificationPhonePaused ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationPhonePaused ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

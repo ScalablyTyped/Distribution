@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("ErrorEvent")
 @js.native
-class ErrorEvent protected ()
+open class ErrorEvent protected ()
   extends StObject
      with typings.tabris.ErrorEvent {
   def this(`type`: String) = this()
@@ -39,7 +39,7 @@ class ErrorEvent protected ()
   override val defaultPrevented: Boolean = js.native
   
   /* CompleteClass */
-  override val error: js.Any = js.native
+  override val error: Any = js.native
   
   /* CompleteClass */
   override val eventPhase: Double = js.native

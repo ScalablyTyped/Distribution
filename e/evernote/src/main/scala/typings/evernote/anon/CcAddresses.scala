@@ -31,7 +31,7 @@ object CcAddresses {
     
     inline def setCcAddressesUndefined: Self = StObject.set(x, "ccAddresses", js.undefined)
     
-    inline def setCcAddressesVarargs(value: String*): Self = StObject.set(x, "ccAddresses", js.Array(value :_*))
+    inline def setCcAddressesVarargs(value: String*): Self = StObject.set(x, "ccAddresses", js.Array(value*))
     
     inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
@@ -53,6 +53,6 @@ object CcAddresses {
     
     inline def setToAddressesUndefined: Self = StObject.set(x, "toAddresses", js.undefined)
     
-    inline def setToAddressesVarargs(value: String*): Self = StObject.set(x, "toAddresses", js.Array(value :_*))
+    inline def setToAddressesVarargs(value: String*): Self = StObject.set(x, "toAddresses", js.Array(value*))
   }
 }

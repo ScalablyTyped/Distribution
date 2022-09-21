@@ -11,7 +11,7 @@ trait StructurePowerBank
   extends StObject
      with OwnedStructure[STRUCTURE_POWER_BANK]
      with AnyOwnedStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * The amount of power containing.

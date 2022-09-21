@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PasswordCredentialPropertyStore extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, js.Any]): Unit = js.native
+  def addEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, Any]): Unit = js.native
   
   /** This method is reserved for internal use and is not intended to be used in your code. */
   def clear(): Unit = js.native
@@ -24,20 +24,20 @@ trait PasswordCredentialPropertyStore extends StObject {
   /**
     * This method is reserved for internal use and is not intended to be used in your code.
     */
-  def first(): js.Any = js.native
+  def first(): Any = js.native
   
   /* unmapped return type */
   /**
     * This method is reserved for internal use and is not intended to be used in your code.
     */
-  def getView(): js.Any = js.native
+  def getView(): Any = js.native
   
   /* unmapped return type */
   /**
     * This method is reserved for internal use and is not intended to be used in your code.
     * @param key Reserved.
     */
-  def hasKey(key: String): js.Any = js.native
+  def hasKey(key: String): Any = js.native
   
   /* unmapped return type */
   /**
@@ -45,22 +45,22 @@ trait PasswordCredentialPropertyStore extends StObject {
     * @param key Reserved.
     * @param value Reserved.
     */
-  def insert(key: String, value: js.Any): js.Any = js.native
+  def insert(key: String, value: Any): Any = js.native
   
   /* unmapped return type */
   /**
     * This method is reserved for internal use and is not intended to be used in your code.
     * @param key Reserved.
     */
-  def lookup(key: String): js.Any = js.native
+  def lookup(key: String): Any = js.native
   
   /* unmapped return type */
   /** This method is reserved for internal use and is not intended to be used in your code. */
-  def onmapchanged(ev: IMapChangedEventArgs[String] & (WinRTEvent[IObservableMap[String, js.Any]])): Unit = js.native
+  def onmapchanged(ev: IMapChangedEventArgs[String] & (WinRTEvent[IObservableMap[String, Any]])): Unit = js.native
   /* unmapped return type */
   /** This method is reserved for internal use and is not intended to be used in your code. */
   @JSName("onmapchanged")
-  var onmapchanged_Original: MapChangedEventHandler[String, js.Any] = js.native
+  var onmapchanged_Original: MapChangedEventHandler[String, Any] = js.native
   
   /**
     * This method is reserved for internal use and is not intended to be used in your code.
@@ -68,9 +68,9 @@ trait PasswordCredentialPropertyStore extends StObject {
     */
   def remove(key: String): Unit = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, js.Any]): Unit = js.native
+  def removeEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, Any]): Unit = js.native
   
   /** This method is reserved for internal use and is not intended to be used in your code. */
   var size: Double = js.native

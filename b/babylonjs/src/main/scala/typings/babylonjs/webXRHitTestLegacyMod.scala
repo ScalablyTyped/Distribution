@@ -15,9 +15,9 @@ object webXRHitTestLegacyMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.babylonjs.sceneMod.IDisposable because Already inherited
   - typings.babylonjs.webXRFeaturesManagerMod.IWebXRFeature because Already inherited
-  - typings.babylonjs.webXRHitTestLegacyMod.IWebXRHitTestFeature because var conflicts: attached, dependsOn, disableAutoAttach, isDisposed, xrNativeFeatureName. Inlined onHitTestResultObservable */ @JSImport("babylonjs/XR/features/WebXRHitTestLegacy", "WebXRHitTestLegacy")
+  - typings.babylonjs.webXRHitTestLegacyMod.IWebXRHitTestFeature because var conflicts: attached, dependsOn, disableAutoAttach, getXRSessionInitExtension, isDisposed, xrNativeFeatureName. Inlined onHitTestResultObservable */ @JSImport("babylonjs/XR/features/WebXRHitTestLegacy", "WebXRHitTestLegacy")
   @js.native
-  class WebXRHitTestLegacy protected () extends WebXRAbstractFeature {
+  open class WebXRHitTestLegacy protected () extends WebXRAbstractFeature {
     /**
       * Creates a new instance of the (legacy version) hit test feature
       * @param _xrSessionManager an instance of WebXRSessionManager
@@ -32,17 +32,17 @@ object webXRHitTestLegacyMod {
     options: IWebXRLegacyHitTestOptions
     ) = this()
     
-    /* private */ var _direction: js.Any = js.native
+    /* private */ var _direction: Any = js.native
     
-    /* private */ var _mat: js.Any = js.native
+    /* private */ var _mat: Any = js.native
     
-    /* private */ var _onHitTestResults: js.Any = js.native
+    /* private */ var _onHitTestResults: Any = js.native
     
-    /* private */ var _onSelect: js.Any = js.native
+    /* private */ var _onSelect: Any = js.native
     
-    /* private */ var _onSelectEnabled: js.Any = js.native
+    /* private */ var _onSelectEnabled: Any = js.native
     
-    /* private */ var _origin: js.Any = js.native
+    /* private */ var _origin: Any = js.native
     
     /**
       * Populated with the last native XR Hit Results

@@ -3,7 +3,6 @@ package typings.reactNavigation.mod
 import typings.react.mod.ComponentType
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ trait NavigationContainerProps[State, Options, ScreenProps] extends StObject {
     */
   var enableURLHandling: js.UndefOr[Boolean] = js.undefined
   
-  var loadNavigationState: js.UndefOr[js.Function0[js.Promise[js.Any]]] = js.undefined
+  var loadNavigationState: js.UndefOr[js.Function0[js.Promise[Any]]] = js.undefined
   
   var navigation: js.UndefOr[NavigationScreenProp[State, NavigationParams]] = js.undefined
   
@@ -33,7 +32,7 @@ trait NavigationContainerProps[State, Options, ScreenProps] extends StObject {
     ]
   ] = js.undefined
   
-  var persistNavigationState: js.UndefOr[js.Function1[/* state */ NavigationState, js.Promise[js.Any]]] = js.undefined
+  var persistNavigationState: js.UndefOr[js.Function1[/* state */ NavigationState, js.Promise[Any]]] = js.undefined
   
   /*
     * This prop is no longer supported. Use `loadNavigationState` and
@@ -47,7 +46,7 @@ trait NavigationContainerProps[State, Options, ScreenProps] extends StObject {
   
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var uriPrefix: js.UndefOr[String | RegExp] = js.undefined
+  var uriPrefix: js.UndefOr[String | js.RegExp] = js.undefined
 }
 object NavigationContainerProps {
   
@@ -62,7 +61,7 @@ object NavigationContainerProps {
     
     inline def setEnableURLHandlingUndefined: Self = StObject.set(x, "enableURLHandling", js.undefined)
     
-    inline def setLoadNavigationState(value: () => js.Promise[js.Any]): Self = StObject.set(x, "loadNavigationState", js.Any.fromFunction0(value))
+    inline def setLoadNavigationState(value: () => js.Promise[Any]): Self = StObject.set(x, "loadNavigationState", js.Any.fromFunction0(value))
     
     inline def setLoadNavigationStateUndefined: Self = StObject.set(x, "loadNavigationState", js.undefined)
     
@@ -80,7 +79,7 @@ object NavigationContainerProps {
     
     inline def setOnNavigationStateChangeUndefined: Self = StObject.set(x, "onNavigationStateChange", js.undefined)
     
-    inline def setPersistNavigationState(value: /* state */ NavigationState => js.Promise[js.Any]): Self = StObject.set(x, "persistNavigationState", js.Any.fromFunction1(value))
+    inline def setPersistNavigationState(value: /* state */ NavigationState => js.Promise[Any]): Self = StObject.set(x, "persistNavigationState", js.Any.fromFunction1(value))
     
     inline def setPersistNavigationStateUndefined: Self = StObject.set(x, "persistNavigationState", js.undefined)
     
@@ -104,7 +103,7 @@ object NavigationContainerProps {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setUriPrefix(value: String | RegExp): Self = StObject.set(x, "uriPrefix", value.asInstanceOf[js.Any])
+    inline def setUriPrefix(value: String | js.RegExp): Self = StObject.set(x, "uriPrefix", value.asInstanceOf[js.Any])
     
     inline def setUriPrefixUndefined: Self = StObject.set(x, "uriPrefix", js.undefined)
   }

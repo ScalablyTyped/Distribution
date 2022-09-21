@@ -1,15 +1,19 @@
 package typings.highlightJs
 
+import org.scalablytyped.runtime.Shortcut
+import typings.highlightJs.mod.LanguageFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object AsteriskMod {
+object AsteriskMod extends Shortcut {
   
-  @JSImport("highlight.js/lib/languages/*", JSImport.Namespace)
+  @JSImport("highlight.js/lib/languages/*", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
+  val default: LanguageFn = js.native
   
-  inline def default(): LanguageDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[LanguageDetail]
-  inline def default(hljs: HLJSApi): LanguageDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hljs.asInstanceOf[js.Any]).asInstanceOf[LanguageDetail]
+  type _To = LanguageFn
+  
+  /* This means you don't have to write `default`, but can instead just say `AsteriskMod.foo` */
+  override def _to: LanguageFn = default
 }

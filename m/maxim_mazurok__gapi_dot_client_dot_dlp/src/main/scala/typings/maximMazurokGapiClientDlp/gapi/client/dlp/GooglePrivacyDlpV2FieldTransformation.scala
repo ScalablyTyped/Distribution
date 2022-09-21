@@ -13,7 +13,10 @@ trait GooglePrivacyDlpV2FieldTransformation extends StObject {
     */
   var condition: js.UndefOr[GooglePrivacyDlpV2RecordCondition] = js.undefined
   
-  /** Required. Input field(s) to apply the transformation to. */
+  /**
+    * Required. Input field(s) to apply the transformation to. When you have columns that reference their position within a list, omit the index from the FieldId. FieldId name matching
+    * ignores the index. For example, instead of "contact.nums[0].type", use "contact.nums.type".
+    */
   var fields: js.UndefOr[js.Array[GooglePrivacyDlpV2FieldId]] = js.undefined
   
   /** Treat the contents of the field as free text, and selectively transform content that matches an `InfoType`. */
@@ -39,7 +42,7 @@ object GooglePrivacyDlpV2FieldTransformation {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setInfoTypeTransformations(value: GooglePrivacyDlpV2InfoTypeTransformations): Self = StObject.set(x, "infoTypeTransformations", value.asInstanceOf[js.Any])
     

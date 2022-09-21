@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a column in a table.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.TableColumn")
 @js.native
-class TableColumn ()
+open class TableColumn ()
   extends StObject
      with typings.officeJsPreview.Excel.TableColumn {
   

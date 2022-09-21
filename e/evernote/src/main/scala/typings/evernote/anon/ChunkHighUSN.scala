@@ -61,67 +61,67 @@ object ChunkHighUSN {
     
     inline def setExpungedLinkedNotebooksUndefined: Self = StObject.set(x, "expungedLinkedNotebooks", js.undefined)
     
-    inline def setExpungedLinkedNotebooksVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "expungedLinkedNotebooks", js.Array(value :_*))
+    inline def setExpungedLinkedNotebooksVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "expungedLinkedNotebooks", js.Array(value*))
     
     inline def setExpungedNotebooks(value: js.Array[typings.evernote.mod.Types.Guid]): Self = StObject.set(x, "expungedNotebooks", value.asInstanceOf[js.Any])
     
     inline def setExpungedNotebooksUndefined: Self = StObject.set(x, "expungedNotebooks", js.undefined)
     
-    inline def setExpungedNotebooksVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "expungedNotebooks", js.Array(value :_*))
+    inline def setExpungedNotebooksVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "expungedNotebooks", js.Array(value*))
     
     inline def setExpungedNotes(value: js.Array[typings.evernote.mod.Types.Guid]): Self = StObject.set(x, "expungedNotes", value.asInstanceOf[js.Any])
     
     inline def setExpungedNotesUndefined: Self = StObject.set(x, "expungedNotes", js.undefined)
     
-    inline def setExpungedNotesVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "expungedNotes", js.Array(value :_*))
+    inline def setExpungedNotesVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "expungedNotes", js.Array(value*))
     
     inline def setExpungedSearches(value: js.Array[typings.evernote.mod.Types.Guid]): Self = StObject.set(x, "expungedSearches", value.asInstanceOf[js.Any])
     
     inline def setExpungedSearchesUndefined: Self = StObject.set(x, "expungedSearches", js.undefined)
     
-    inline def setExpungedSearchesVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "expungedSearches", js.Array(value :_*))
+    inline def setExpungedSearchesVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "expungedSearches", js.Array(value*))
     
     inline def setExpungedTags(value: js.Array[typings.evernote.mod.Types.Guid]): Self = StObject.set(x, "expungedTags", value.asInstanceOf[js.Any])
     
     inline def setExpungedTagsUndefined: Self = StObject.set(x, "expungedTags", js.undefined)
     
-    inline def setExpungedTagsVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "expungedTags", js.Array(value :_*))
+    inline def setExpungedTagsVarargs(value: typings.evernote.mod.Types.Guid*): Self = StObject.set(x, "expungedTags", js.Array(value*))
     
     inline def setLinkedNotebooks(value: js.Array[LinkedNotebook]): Self = StObject.set(x, "linkedNotebooks", value.asInstanceOf[js.Any])
     
     inline def setLinkedNotebooksUndefined: Self = StObject.set(x, "linkedNotebooks", js.undefined)
     
-    inline def setLinkedNotebooksVarargs(value: LinkedNotebook*): Self = StObject.set(x, "linkedNotebooks", js.Array(value :_*))
+    inline def setLinkedNotebooksVarargs(value: LinkedNotebook*): Self = StObject.set(x, "linkedNotebooks", js.Array(value*))
     
     inline def setNotebooks(value: js.Array[Notebook]): Self = StObject.set(x, "notebooks", value.asInstanceOf[js.Any])
     
     inline def setNotebooksUndefined: Self = StObject.set(x, "notebooks", js.undefined)
     
-    inline def setNotebooksVarargs(value: Notebook*): Self = StObject.set(x, "notebooks", js.Array(value :_*))
+    inline def setNotebooksVarargs(value: Notebook*): Self = StObject.set(x, "notebooks", js.Array(value*))
     
     inline def setNotes(value: js.Array[typings.evernote.mod.Types.Note]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    inline def setNotesVarargs(value: typings.evernote.mod.Types.Note*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: typings.evernote.mod.Types.Note*): Self = StObject.set(x, "notes", js.Array(value*))
     
     inline def setResources(value: js.Array[Resource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value*))
     
     inline def setSearches(value: js.Array[SavedSearch]): Self = StObject.set(x, "searches", value.asInstanceOf[js.Any])
     
     inline def setSearchesUndefined: Self = StObject.set(x, "searches", js.undefined)
     
-    inline def setSearchesVarargs(value: SavedSearch*): Self = StObject.set(x, "searches", js.Array(value :_*))
+    inline def setSearchesVarargs(value: SavedSearch*): Self = StObject.set(x, "searches", js.Array(value*))
     
     inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setUpdateCount(value: Double): Self = StObject.set(x, "updateCount", value.asInstanceOf[js.Any])
     

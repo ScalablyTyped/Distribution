@@ -8,13 +8,13 @@ trait DataSourceGroupCompareItem extends StObject {
   
   var field: String
   
-  var items: js.Array[js.Any]
+  var items: js.Array[Any]
   
-  var value: js.Any
+  var value: Any
 }
 object DataSourceGroupCompareItem {
   
-  inline def apply(field: String, items: js.Array[js.Any], value: js.Any): DataSourceGroupCompareItem = {
+  inline def apply(field: String, items: js.Array[Any], value: Any): DataSourceGroupCompareItem = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceGroupCompareItem]
   }
@@ -23,10 +23,10 @@ object DataSourceGroupCompareItem {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

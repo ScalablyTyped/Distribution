@@ -34,7 +34,7 @@ object DrawOrderTimeline {
     
     inline def setDrawOrders(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "drawOrders", value.asInstanceOf[js.Any])
     
-    inline def setDrawOrdersVarargs(value: js.Array[Double]*): Self = StObject.set(x, "drawOrders", js.Array(value :_*))
+    inline def setDrawOrdersVarargs(value: js.Array[Double]*): Self = StObject.set(x, "drawOrders", js.Array(value*))
     
     inline def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     

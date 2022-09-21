@@ -16,6 +16,8 @@ trait Celebrity extends StObject {
     */
   var Id: js.UndefOr[RekognitionUniqueId] = js.undefined
   
+  var KnownGender: js.UndefOr[typings.awsSdk.rekognitionMod.KnownGender] = js.undefined
+  
   /**
     * The confidence, in percentage, that Amazon Rekognition has that the recognized face is the celebrity.
     */
@@ -48,6 +50,10 @@ object Celebrity {
     
     inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
+    inline def setKnownGender(value: KnownGender): Self = StObject.set(x, "KnownGender", value.asInstanceOf[js.Any])
+    
+    inline def setKnownGenderUndefined: Self = StObject.set(x, "KnownGender", js.undefined)
+    
     inline def setMatchConfidence(value: Percent): Self = StObject.set(x, "MatchConfidence", value.asInstanceOf[js.Any])
     
     inline def setMatchConfidenceUndefined: Self = StObject.set(x, "MatchConfidence", js.undefined)
@@ -60,6 +66,6 @@ object Celebrity {
     
     inline def setUrlsUndefined: Self = StObject.set(x, "Urls", js.undefined)
     
-    inline def setUrlsVarargs(value: Url*): Self = StObject.set(x, "Urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: Url*): Self = StObject.set(x, "Urls", js.Array(value*))
   }
 }

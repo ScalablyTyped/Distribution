@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Team Drives to search
-  */
 trait SchemaTeamDriveInfo extends StObject {
   
   /**
-    * List of Team Drive ids, as provided by &lt;a
-    * href=&quot;https://developers.google.com/drive&quot;&gt;Drive
-    * API&lt;/a&gt;.
+    * List of Team Drive IDs, as provided by the [Drive API](https://developers.google.com/drive).
     */
-  var teamDriveIds: js.UndefOr[js.Array[String]] = js.undefined
+  var teamDriveIds: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaTeamDriveInfo {
   
@@ -27,8 +22,10 @@ object SchemaTeamDriveInfo {
     
     inline def setTeamDriveIds(value: js.Array[String]): Self = StObject.set(x, "teamDriveIds", value.asInstanceOf[js.Any])
     
+    inline def setTeamDriveIdsNull: Self = StObject.set(x, "teamDriveIds", null)
+    
     inline def setTeamDriveIdsUndefined: Self = StObject.set(x, "teamDriveIds", js.undefined)
     
-    inline def setTeamDriveIdsVarargs(value: String*): Self = StObject.set(x, "teamDriveIds", js.Array(value :_*))
+    inline def setTeamDriveIdsVarargs(value: String*): Self = StObject.set(x, "teamDriveIds", js.Array(value*))
   }
 }

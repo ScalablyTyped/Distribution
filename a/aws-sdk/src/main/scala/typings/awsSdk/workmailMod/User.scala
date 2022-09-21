@@ -9,7 +9,7 @@ trait User extends StObject {
   /**
     * The date indicating when the user was disabled from Amazon WorkMail use.
     */
-  var DisabledDate: js.UndefOr[Timestamp] = js.undefined
+  var DisabledDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The display name of the user.
@@ -24,7 +24,7 @@ trait User extends StObject {
   /**
     * The date indicating when the user was enabled for Amazon WorkMail use.
     */
-  var EnabledDate: js.UndefOr[Timestamp] = js.undefined
+  var EnabledDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier of the user.
@@ -55,7 +55,7 @@ object User {
   
   extension [Self <: User](x: Self) {
     
-    inline def setDisabledDate(value: Timestamp): Self = StObject.set(x, "DisabledDate", value.asInstanceOf[js.Any])
+    inline def setDisabledDate(value: js.Date): Self = StObject.set(x, "DisabledDate", value.asInstanceOf[js.Any])
     
     inline def setDisabledDateUndefined: Self = StObject.set(x, "DisabledDate", js.undefined)
     
@@ -67,7 +67,7 @@ object User {
     
     inline def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
     
-    inline def setEnabledDate(value: Timestamp): Self = StObject.set(x, "EnabledDate", value.asInstanceOf[js.Any])
+    inline def setEnabledDate(value: js.Date): Self = StObject.set(x, "EnabledDate", value.asInstanceOf[js.Any])
     
     inline def setEnabledDateUndefined: Self = StObject.set(x, "EnabledDate", js.undefined)
     

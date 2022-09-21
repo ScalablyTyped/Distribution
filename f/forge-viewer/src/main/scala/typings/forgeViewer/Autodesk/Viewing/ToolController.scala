@@ -10,7 +10,7 @@ trait ToolController extends StObject {
   
   def deactivateTool(name: String): Boolean
   
-  def deregisterTool(tool: js.Any): Boolean
+  def deregisterTool(tool: Any): Boolean
   
   def getActiveTool(): ToolInterface
   
@@ -24,7 +24,9 @@ trait ToolController extends StObject {
   
   def getToolNames(): js.Array[String]
   
-  def registerTool(tool: js.Any): Boolean
+  def recordHomeView(): Unit
+  
+  def registerTool(tool: Any): Boolean
   
   def setIsLocked(state: Boolean): Boolean
 }
@@ -33,17 +35,18 @@ object ToolController {
   inline def apply(
     activateTool: String => Boolean,
     deactivateTool: String => Boolean,
-    deregisterTool: js.Any => Boolean,
+    deregisterTool: Any => Boolean,
     getActiveTool: () => ToolInterface,
     getActiveToolName: () => String,
     getDefaultTool: () => ToolInterface,
     getIsLocked: () => Boolean,
     getTool: String => ToolInterface,
     getToolNames: () => js.Array[String],
-    registerTool: js.Any => Boolean,
+    recordHomeView: () => Unit,
+    registerTool: Any => Boolean,
     setIsLocked: Boolean => Boolean
   ): ToolController = {
-    val __obj = js.Dynamic.literal(activateTool = js.Any.fromFunction1(activateTool), deactivateTool = js.Any.fromFunction1(deactivateTool), deregisterTool = js.Any.fromFunction1(deregisterTool), getActiveTool = js.Any.fromFunction0(getActiveTool), getActiveToolName = js.Any.fromFunction0(getActiveToolName), getDefaultTool = js.Any.fromFunction0(getDefaultTool), getIsLocked = js.Any.fromFunction0(getIsLocked), getTool = js.Any.fromFunction1(getTool), getToolNames = js.Any.fromFunction0(getToolNames), registerTool = js.Any.fromFunction1(registerTool), setIsLocked = js.Any.fromFunction1(setIsLocked))
+    val __obj = js.Dynamic.literal(activateTool = js.Any.fromFunction1(activateTool), deactivateTool = js.Any.fromFunction1(deactivateTool), deregisterTool = js.Any.fromFunction1(deregisterTool), getActiveTool = js.Any.fromFunction0(getActiveTool), getActiveToolName = js.Any.fromFunction0(getActiveToolName), getDefaultTool = js.Any.fromFunction0(getDefaultTool), getIsLocked = js.Any.fromFunction0(getIsLocked), getTool = js.Any.fromFunction1(getTool), getToolNames = js.Any.fromFunction0(getToolNames), recordHomeView = js.Any.fromFunction0(recordHomeView), registerTool = js.Any.fromFunction1(registerTool), setIsLocked = js.Any.fromFunction1(setIsLocked))
     __obj.asInstanceOf[ToolController]
   }
   
@@ -53,7 +56,7 @@ object ToolController {
     
     inline def setDeactivateTool(value: String => Boolean): Self = StObject.set(x, "deactivateTool", js.Any.fromFunction1(value))
     
-    inline def setDeregisterTool(value: js.Any => Boolean): Self = StObject.set(x, "deregisterTool", js.Any.fromFunction1(value))
+    inline def setDeregisterTool(value: Any => Boolean): Self = StObject.set(x, "deregisterTool", js.Any.fromFunction1(value))
     
     inline def setGetActiveTool(value: () => ToolInterface): Self = StObject.set(x, "getActiveTool", js.Any.fromFunction0(value))
     
@@ -67,7 +70,9 @@ object ToolController {
     
     inline def setGetToolNames(value: () => js.Array[String]): Self = StObject.set(x, "getToolNames", js.Any.fromFunction0(value))
     
-    inline def setRegisterTool(value: js.Any => Boolean): Self = StObject.set(x, "registerTool", js.Any.fromFunction1(value))
+    inline def setRecordHomeView(value: () => Unit): Self = StObject.set(x, "recordHomeView", js.Any.fromFunction0(value))
+    
+    inline def setRegisterTool(value: Any => Boolean): Self = StObject.set(x, "registerTool", js.Any.fromFunction1(value))
     
     inline def setSetIsLocked(value: Boolean => Boolean): Self = StObject.set(x, "setIsLocked", js.Any.fromFunction1(value))
   }

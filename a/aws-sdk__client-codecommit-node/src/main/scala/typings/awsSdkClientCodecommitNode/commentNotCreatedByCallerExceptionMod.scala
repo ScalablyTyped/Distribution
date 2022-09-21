@@ -8,5 +8,5 @@ object commentNotCreatedByCallerExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/CommentNotCreatedByCallerException", "CommentNotCreatedByCallerException")
   @js.native
-  val CommentNotCreatedByCallerException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CommentNotCreatedByCallerException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

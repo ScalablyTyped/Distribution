@@ -14,10 +14,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-svg-morph", "MorphReplace")
   @js.native
-  class MorphReplace protected ()
-    extends Component[MorphReplaceProps, ComponentState, js.Any] {
+  open class MorphReplace protected () extends Component[MorphReplaceProps, ComponentState, Any] {
     def this(props: MorphReplaceProps) = this()
-    def this(props: MorphReplaceProps, context: js.Any) = this()
+    def this(props: MorphReplaceProps, context: Any) = this()
   }
   @JSImport("react-svg-morph", "MorphReplace")
   @js.native
@@ -26,10 +25,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-svg-morph", "MorphReplaceResize")
   @js.native
-  class MorphReplaceResize protected ()
-    extends Component[MorphReplaceProps, ComponentState, js.Any] {
+  open class MorphReplaceResize protected () extends Component[MorphReplaceProps, ComponentState, Any] {
     def this(props: MorphReplaceProps) = this()
-    def this(props: MorphReplaceProps, context: js.Any) = this()
+    def this(props: MorphReplaceProps, context: Any) = this()
   }
   @JSImport("react-svg-morph", "MorphReplaceResize")
   @js.native
@@ -38,10 +36,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-svg-morph", "MorphTransition")
   @js.native
-  class MorphTransition protected ()
-    extends Component[MorphTransitionProps, ComponentState, js.Any] {
+  open class MorphTransition protected () extends Component[MorphTransitionProps, ComponentState, Any] {
     def this(props: MorphTransitionProps) = this()
-    def this(props: MorphTransitionProps, context: js.Any) = this()
+    def this(props: MorphTransitionProps, context: Any) = this()
   }
   @JSImport("react-svg-morph", "MorphTransition")
   @js.native
@@ -50,10 +47,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-svg-morph", "MorphTransitionResize")
   @js.native
-  class MorphTransitionResize protected ()
-    extends Component[MorphTransitionProps, ComponentState, js.Any] {
+  open class MorphTransitionResize protected () extends Component[MorphTransitionProps, ComponentState, Any] {
     def this(props: MorphTransitionProps) = this()
-    def this(props: MorphTransitionProps, context: js.Any) = this()
+    def this(props: MorphTransitionProps, context: Any) = this()
   }
   @JSImport("react-svg-morph", "MorphTransitionResize")
   @js.native
@@ -65,7 +61,7 @@ object mod {
     
     var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* props */ js.Any, Double]] = js.undefined
+    var easing: js.UndefOr[js.Function1[/* props */ Any, Double]] = js.undefined
     
     var height: js.UndefOr[Double] = js.undefined
     
@@ -92,7 +88,7 @@ object mod {
       
       inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      inline def setEasing(value: /* props */ js.Any => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+      inline def setEasing(value: /* props */ Any => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
       
       inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       

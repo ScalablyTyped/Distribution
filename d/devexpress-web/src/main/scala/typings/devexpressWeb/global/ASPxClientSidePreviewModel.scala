@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxClientSidePreviewModel")
 @js.native
-class ASPxClientSidePreviewModel ()
+open class ASPxClientSidePreviewModel ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSidePreviewModel

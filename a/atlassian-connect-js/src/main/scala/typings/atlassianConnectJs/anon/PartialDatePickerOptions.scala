@@ -1,6 +1,5 @@
 package typings.atlassianConnectJs.anon
 
-import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +12,7 @@ trait PartialDatePickerOptions extends StObject {
   
   var element: js.UndefOr[HTMLElement] = js.undefined
   
-  var onSelect: js.UndefOr[js.Function2[/* isoDate */ String, /* date */ Date, Unit]] = js.undefined
+  var onSelect: js.UndefOr[js.Function2[/* isoDate */ String, /* date */ js.Date, Unit]] = js.undefined
   
   var position: js.UndefOr[Left] = js.undefined
   
@@ -36,7 +35,7 @@ object PartialDatePickerOptions {
     
     inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    inline def setOnSelect(value: (/* isoDate */ String, /* date */ Date) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+    inline def setOnSelect(value: (/* isoDate */ String, /* date */ js.Date) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
     
     inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     

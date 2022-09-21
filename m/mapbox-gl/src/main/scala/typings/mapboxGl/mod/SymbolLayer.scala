@@ -7,14 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SymbolLayer
   extends StObject
-     with LayerBase
-     with Layer {
+     with Layer
+     with AnyLayer {
   
-  var layout: js.UndefOr[SymbolLayout] = js.undefined
+  @JSName("layout")
+  var layout_SymbolLayer: js.UndefOr[SymbolLayout] = js.undefined
   
-  var paint: js.UndefOr[SymbolPaint] = js.undefined
+  @JSName("paint")
+  var paint_SymbolLayer: js.UndefOr[SymbolPaint] = js.undefined
   
-  var `type`: symbol
+  @JSName("type")
+  var type_SymbolLayer: symbol
 }
 object SymbolLayer {
   

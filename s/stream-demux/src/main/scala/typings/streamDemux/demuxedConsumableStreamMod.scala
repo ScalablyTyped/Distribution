@@ -8,7 +8,7 @@ object demuxedConsumableStreamMod {
   
   @JSImport("stream-demux/demuxed-consumable-stream", JSImport.Namespace)
   @js.native
-  class ^[T] protected () extends DemuxedConsumableStream[T] {
+  open class ^[T] protected () extends DemuxedConsumableStream[T] {
     def this(streamDemux: typings.streamDemux.mod.^[T], name: String) = this()
   }
   

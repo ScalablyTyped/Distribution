@@ -144,7 +144,7 @@ trait IPath
     * @param target Object Optional object to receive the result.
     * @returns Object Object with x, y, width and height
     */
-  var getDimension: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getDimension: js.UndefOr[js.Function1[/* target */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Get the bounding box as if the path is transformed by a matrix
     * @param matrix Ext.draw.Matrix
@@ -152,7 +152,7 @@ trait IPath
     * @returns Object An object with x, y, width and height.
     */
   var getDimensionWithTransform: js.UndefOr[
-    js.Function2[/* matrix */ js.UndefOr[IMatrix], /* target */ js.UndefOr[js.Any], js.Any]
+    js.Function2[/* matrix */ js.UndefOr[IMatrix], /* target */ js.UndefOr[Any], Any]
   ] = js.undefined
   
   /** [Method] Test whether the given point is on or inside the path
@@ -282,11 +282,11 @@ object IPath {
     
     inline def setFromSvgStringUndefined: Self = StObject.set(x, "fromSvgString", js.undefined)
     
-    inline def setGetDimension(value: /* target */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getDimension", js.Any.fromFunction1(value))
+    inline def setGetDimension(value: /* target */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getDimension", js.Any.fromFunction1(value))
     
     inline def setGetDimensionUndefined: Self = StObject.set(x, "getDimension", js.undefined)
     
-    inline def setGetDimensionWithTransform(value: (/* matrix */ js.UndefOr[IMatrix], /* target */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "getDimensionWithTransform", js.Any.fromFunction2(value))
+    inline def setGetDimensionWithTransform(value: (/* matrix */ js.UndefOr[IMatrix], /* target */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "getDimensionWithTransform", js.Any.fromFunction2(value))
     
     inline def setGetDimensionWithTransformUndefined: Self = StObject.set(x, "getDimensionWithTransform", js.undefined)
     

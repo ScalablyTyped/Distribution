@@ -34,7 +34,7 @@ object BillingInvoicesResponse {
     
     inline def setBillingInvoicesUndefined: Self = StObject.set(x, "billingInvoices", js.undefined)
     
-    inline def setBillingInvoicesVarargs(value: BillingInvoice*): Self = StObject.set(x, "billingInvoices", js.Array(value :_*))
+    inline def setBillingInvoicesVarargs(value: BillingInvoice*): Self = StObject.set(x, "billingInvoices", js.Array(value*))
     
     inline def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
     

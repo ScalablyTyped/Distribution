@@ -20,10 +20,10 @@ trait TreeListDataSource
   
   def insert(index: Double, model: TreeListModel): TreeListModel = js.native
   
-  def level(model: js.Any): Double = js.native
+  def level(model: Any): Double = js.native
   def level(model: TreeListModel): Double = js.native
   
-  def load(model: TreeListModel): JQueryPromise[js.Any] = js.native
+  def load(model: TreeListModel): JQueryPromise[Any] = js.native
   
   def parentNode(model: TreeListModel): TreeListModel = js.native
   

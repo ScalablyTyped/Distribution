@@ -1,9 +1,5 @@
 package typings.googleapis.v21Mod.contentV21
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,16 +14,14 @@ trait ParamsResourceAccountsGet
   var accountId: js.UndefOr[String] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The ID of the managing account. If this parameter is not the same as
-    * accountId, then this account must be a multi-client account and accountId
-    * must be the ID of a sub-account of this account.
+    * The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and `accountId` must be the ID of a sub-account of this account.
     */
   var merchantId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Controls which fields will be populated. Acceptable values are: "merchant" and "css". The default value is "merchant".
+    */
+  var view: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAccountsGet {
   
@@ -42,12 +36,12 @@ object ParamsResourceAccountsGet {
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
     inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

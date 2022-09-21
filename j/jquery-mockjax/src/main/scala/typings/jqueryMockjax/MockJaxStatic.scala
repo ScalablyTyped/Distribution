@@ -15,12 +15,12 @@ trait MockJaxStatic extends StObject {
   
   def clearRetainedAjaxCalls(): Unit = js.native
   
-  def handler(): js.Any = js.native
-  def handler(id: Double): js.Any = js.native
+  def handler(): Any = js.native
+  def handler(id: Double): Any = js.native
   
-  def mockedAjaxCalls(): js.Array[js.Any] = js.native
+  def mockedAjaxCalls(): js.Array[Any] = js.native
   
-  def unfiredHandlers(): js.Array[js.Any] = js.native
+  def unfiredHandlers(): js.Array[Any] = js.native
   
-  def unmockedAjaxCalls(): js.Array[js.Any] = js.native
+  def unmockedAjaxCalls(): js.Array[Any] = js.native
 }

@@ -6,29 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Radius extends StObject {
   
-  var radius: Double
+  var height: js.UndefOr[Double] = js.undefined
   
-  var segments: Double
-  
-  var thetaLength: Double
-  
-  var thetaStart: Double
+  var radius: js.UndefOr[Double] = js.undefined
 }
 object Radius {
   
-  inline def apply(radius: Double, segments: Double, thetaLength: Double, thetaStart: Double): Radius = {
-    val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], thetaLength = thetaLength.asInstanceOf[js.Any], thetaStart = thetaStart.asInstanceOf[js.Any])
+  inline def apply(): Radius = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Radius]
   }
   
   extension [Self <: Radius](x: Self) {
     
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    inline def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
-    
-    inline def setThetaLength(value: Double): Self = StObject.set(x, "thetaLength", value.asInstanceOf[js.Any])
-    
-    inline def setThetaStart(value: Double): Self = StObject.set(x, "thetaStart", value.asInstanceOf[js.Any])
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

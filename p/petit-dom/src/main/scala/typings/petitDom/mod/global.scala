@@ -2,12 +2,10 @@ package typings.petitDom.mod
 
 import typings.petitDom.anon.PropsElement
 import typings.petitDom.anon.PropsHTMLAnchorElementcon
-import typings.petitDom.anon.PropsHTMLAppletElementcon
 import typings.petitDom.anon.PropsHTMLAreaElementconte
 import typings.petitDom.anon.PropsHTMLAudioElementcont
 import typings.petitDom.anon.PropsHTMLBRElementcontent
 import typings.petitDom.anon.PropsHTMLBaseElementconte
-import typings.petitDom.anon.PropsHTMLBaseFontElementc
 import typings.petitDom.anon.PropsHTMLBodyElementconte
 import typings.petitDom.anon.PropsHTMLButtonElementcon
 import typings.petitDom.anon.PropsHTMLCanvasElementcon
@@ -16,15 +14,11 @@ import typings.petitDom.anon.PropsHTMLDataElementconte
 import typings.petitDom.anon.PropsHTMLDataListElementc
 import typings.petitDom.anon.PropsHTMLDetailsElementco
 import typings.petitDom.anon.PropsHTMLDialogElementcon
-import typings.petitDom.anon.PropsHTMLDirectoryElement
 import typings.petitDom.anon.PropsHTMLDivElementconten
 import typings.petitDom.anon.PropsHTMLElementcontentCo
 import typings.petitDom.anon.PropsHTMLEmbedElementcont
 import typings.petitDom.anon.PropsHTMLFieldSetElementc
-import typings.petitDom.anon.PropsHTMLFontElementconte
 import typings.petitDom.anon.PropsHTMLFormElementconte
-import typings.petitDom.anon.PropsHTMLFrameElementcont
-import typings.petitDom.anon.PropsHTMLFrameSetElementc
 import typings.petitDom.anon.PropsHTMLHRElementcontent
 import typings.petitDom.anon.PropsHTMLHeadElementconte
 import typings.petitDom.anon.PropsHTMLHeadingElementco
@@ -37,7 +31,6 @@ import typings.petitDom.anon.PropsHTMLLabelElementcont
 import typings.petitDom.anon.PropsHTMLLegendElementcon
 import typings.petitDom.anon.PropsHTMLLinkElementconte
 import typings.petitDom.anon.PropsHTMLMapElementconten
-import typings.petitDom.anon.PropsHTMLMarqueeElementco
 import typings.petitDom.anon.PropsHTMLMenuElementconte
 import typings.petitDom.anon.PropsHTMLMetaElementconte
 import typings.petitDom.anon.PropsHTMLMeterElementcont
@@ -48,7 +41,6 @@ import typings.petitDom.anon.PropsHTMLOptGroupElementc
 import typings.petitDom.anon.PropsHTMLOptionElementcon
 import typings.petitDom.anon.PropsHTMLOutputElementcon
 import typings.petitDom.anon.PropsHTMLParagraphElement
-import typings.petitDom.anon.PropsHTMLParamElementcont
 import typings.petitDom.anon.PropsHTMLPictureElementco
 import typings.petitDom.anon.PropsHTMLPreElementconten
 import typings.petitDom.anon.PropsHTMLProgressElementc
@@ -60,10 +52,9 @@ import typings.petitDom.anon.PropsHTMLSourceElementcon
 import typings.petitDom.anon.PropsHTMLSpanElementconte
 import typings.petitDom.anon.PropsHTMLStyleElementcont
 import typings.petitDom.anon.PropsHTMLTableCaptionElem
+import typings.petitDom.anon.PropsHTMLTableCellElement
 import typings.petitDom.anon.PropsHTMLTableColElementc
-import typings.petitDom.anon.PropsHTMLTableDataCellEle
 import typings.petitDom.anon.PropsHTMLTableElementcont
-import typings.petitDom.anon.PropsHTMLTableHeaderCellE
 import typings.petitDom.anon.PropsHTMLTableRowElementc
 import typings.petitDom.anon.PropsHTMLTableSectionElem
 import typings.petitDom.anon.PropsHTMLTemplateElementc
@@ -73,6 +64,9 @@ import typings.petitDom.anon.PropsHTMLTitleElementcont
 import typings.petitDom.anon.PropsHTMLTrackElementcont
 import typings.petitDom.anon.PropsHTMLUListElementcont
 import typings.petitDom.anon.PropsHTMLVideoElementcont
+import typings.petitDom.anon.PropsSVGAnimateElementcon
+import typings.petitDom.anon.PropsSVGAnimateMotionElem
+import typings.petitDom.anon.PropsSVGAnimateTransformE
 import typings.petitDom.anon.PropsSVGCircleElementcont
 import typings.petitDom.anon.PropsSVGClipPathElementco
 import typings.petitDom.anon.PropsSVGDefsElementconten
@@ -86,6 +80,7 @@ import typings.petitDom.anon.PropsSVGFEConvolveMatrixE
 import typings.petitDom.anon.PropsSVGFEDiffuseLighting
 import typings.petitDom.anon.PropsSVGFEDisplacementMap
 import typings.petitDom.anon.PropsSVGFEDistantLightEle
+import typings.petitDom.anon.PropsSVGFEDropShadowEleme
 import typings.petitDom.anon.PropsSVGFEFloodElementcon
 import typings.petitDom.anon.PropsSVGFEFuncAElementcon
 import typings.petitDom.anon.PropsSVGFEFuncBElementcon
@@ -108,6 +103,7 @@ import typings.petitDom.anon.PropsSVGGElementcontentCo
 import typings.petitDom.anon.PropsSVGImageElementconte
 import typings.petitDom.anon.PropsSVGLineElementconten
 import typings.petitDom.anon.PropsSVGLinearGradientEle
+import typings.petitDom.anon.PropsSVGMPathElementconte
 import typings.petitDom.anon.PropsSVGMarkerElementcont
 import typings.petitDom.anon.PropsSVGMaskElementconten
 import typings.petitDom.anon.PropsSVGMetadataElementco
@@ -118,6 +114,7 @@ import typings.petitDom.anon.PropsSVGPolylineElementco
 import typings.petitDom.anon.PropsSVGRadialGradientEle
 import typings.petitDom.anon.PropsSVGRectElementconten
 import typings.petitDom.anon.PropsSVGSVGElementcontent
+import typings.petitDom.anon.PropsSVGSetElementcontent
 import typings.petitDom.anon.PropsSVGStopElementconten
 import typings.petitDom.anon.PropsSVGSwitchElementcont
 import typings.petitDom.anon.PropsSVGSymbolElementcont
@@ -198,7 +195,7 @@ object global {
         
         inline def setContent(value: js.Array[VNode]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        inline def setContentVarargs(value: VNode*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: VNode*): Self = StObject.set(x, "content", js.Array(value*))
       }
     }
     
@@ -250,7 +247,7 @@ object global {
       var addEventListener: js.UndefOr[
             js.Function2[
               fullscreenchange, 
-              /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any], 
+              /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any], 
               Unit
             ]
           ] = js.undefined
@@ -261,7 +258,79 @@ object global {
       
       var append: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
       
-      var appendChild: js.UndefOr[js.Function1[/* newChild */ Node, Node]] = js.undefined
+      var appendChild: js.UndefOr[js.Function1[/* node */ Node, Node]] = js.undefined
+      
+      var ariaAtomic: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaAutoComplete: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaBusy: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaChecked: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaColCount: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaColIndex: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaColSpan: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaCurrent: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaDisabled: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaExpanded: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaHasPopup: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaHidden: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaKeyShortcuts: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaLabel: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaLevel: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaLive: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaModal: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaMultiLine: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaMultiSelectable: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaOrientation: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaPlaceholder: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaPosInSet: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaPressed: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaReadOnly: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaRequired: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaRoleDescription: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaRowCount: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaRowIndex: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaRowSpan: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaSelected: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaSetSize: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaSort: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaValueMax: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaValueMin: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaValueNow: js.UndefOr[String | Null] = js.undefined
+      
+      var ariaValueText: js.UndefOr[String | Null] = js.undefined
       
       var assignedSlot: js.UndefOr[HTMLSlotElement | Null] = js.undefined
       
@@ -353,17 +422,17 @@ object global {
       
       var insertAdjacentElement: js.UndefOr[
             js.Function2[
-              /* position */ InsertPosition, 
-              /* insertedElement */ typings.std.Element, 
+              /* where */ InsertPosition, 
+              /* element */ typings.std.Element, 
               typings.std.Element | Null
             ]
           ] = js.undefined
       
-      var insertAdjacentHTML: js.UndefOr[js.Function2[/* where */ InsertPosition, /* html */ String, Unit]] = js.undefined
+      var insertAdjacentHTML: js.UndefOr[js.Function2[/* position */ InsertPosition, /* text */ String, Unit]] = js.undefined
       
-      var insertAdjacentText: js.UndefOr[js.Function2[/* where */ InsertPosition, /* text */ String, Unit]] = js.undefined
+      var insertAdjacentText: js.UndefOr[js.Function2[/* where */ InsertPosition, /* data */ String, Unit]] = js.undefined
       
-      var insertBefore: js.UndefOr[js.Function1[/* newChild */ Node, Node]] = js.undefined
+      var insertBefore: js.UndefOr[js.Function1[/* node */ Node, Node]] = js.undefined
       
       var isConnected: js.UndefOr[Boolean] = js.undefined
       
@@ -387,8 +456,6 @@ object global {
       
       var matches: js.UndefOr[js.Function1[/* selectors */ String, Boolean]] = js.undefined
       
-      var msGetRegionContent: js.UndefOr[js.Function0[js.Any]] = js.undefined
-      
       var namespaceURI: js.UndefOr[String | Null] = js.undefined
       
       var nextElementSibling: js.UndefOr[typings.std.Element | Null] = js.undefined
@@ -403,9 +470,9 @@ object global {
       
       var normalize: js.UndefOr[js.Function0[Unit]] = js.undefined
       
-      var onfullscreenchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+      var onfullscreenchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
       
-      var onfullscreenerror: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
+      var onfullscreenerror: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
       
       var outerHTML: js.UndefOr[String] = js.undefined
       
@@ -413,7 +480,9 @@ object global {
       
       var parentElement: js.UndefOr[HTMLElement | Null] = js.undefined
       
-      var parentNode: js.UndefOr[(Node & ParentNode) | Null] = js.undefined
+      var parentNode: js.UndefOr[ParentNode | Null] = js.undefined
+      
+      var part: js.UndefOr[DOMTokenList] = js.undefined
       
       var prefix: js.UndefOr[String | Null] = js.undefined
       
@@ -437,17 +506,19 @@ object global {
       
       var removeAttributeNode: js.UndefOr[js.Function1[/* attr */ Attr, Attr]] = js.undefined
       
-      var removeChild: js.UndefOr[js.Function1[/* oldChild */ Node, Node]] = js.undefined
+      var removeChild: js.UndefOr[js.Function1[/* child */ Node, Node]] = js.undefined
       
       var removeEventListener: js.UndefOr[
             js.Function2[
               fullscreenchange, 
-              /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any], 
+              /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any], 
               Unit
             ]
           ] = js.undefined
       
-      var replaceChild: js.UndefOr[js.Function2[/* newChild */ Node, /* oldChild */ Node, Node]] = js.undefined
+      var replaceChild: js.UndefOr[js.Function2[/* node */ Node, /* child */ Node, Node]] = js.undefined
+      
+      var replaceChildren: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
       
       var replaceWith: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
       
@@ -509,7 +580,7 @@ object global {
         inline def setATTRIBUTE_NODEUndefined: Self = StObject.set(x, "ATTRIBUTE_NODE", js.undefined)
         
         inline def setAddEventListener(
-          value: (fullscreenchange, /* listener */ js.ThisFunction1[IntrinsicClassAttributes[T], /* ev */ Event, js.Any]) => Unit
+          value: (fullscreenchange, /* listener */ js.ThisFunction1[IntrinsicClassAttributes[T], /* ev */ Event, Any]) => Unit
         ): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
         
         inline def setAddEventListenerUndefined: Self = StObject.set(x, "addEventListener", js.undefined)
@@ -524,11 +595,227 @@ object global {
         
         inline def setAppend(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
         
-        inline def setAppendChild(value: /* newChild */ Node => Node): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
+        inline def setAppendChild(value: /* node */ Node => Node): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
         
         inline def setAppendChildUndefined: Self = StObject.set(x, "appendChild", js.undefined)
         
         inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+        
+        inline def setAriaAtomic(value: String): Self = StObject.set(x, "ariaAtomic", value.asInstanceOf[js.Any])
+        
+        inline def setAriaAtomicNull: Self = StObject.set(x, "ariaAtomic", null)
+        
+        inline def setAriaAtomicUndefined: Self = StObject.set(x, "ariaAtomic", js.undefined)
+        
+        inline def setAriaAutoComplete(value: String): Self = StObject.set(x, "ariaAutoComplete", value.asInstanceOf[js.Any])
+        
+        inline def setAriaAutoCompleteNull: Self = StObject.set(x, "ariaAutoComplete", null)
+        
+        inline def setAriaAutoCompleteUndefined: Self = StObject.set(x, "ariaAutoComplete", js.undefined)
+        
+        inline def setAriaBusy(value: String): Self = StObject.set(x, "ariaBusy", value.asInstanceOf[js.Any])
+        
+        inline def setAriaBusyNull: Self = StObject.set(x, "ariaBusy", null)
+        
+        inline def setAriaBusyUndefined: Self = StObject.set(x, "ariaBusy", js.undefined)
+        
+        inline def setAriaChecked(value: String): Self = StObject.set(x, "ariaChecked", value.asInstanceOf[js.Any])
+        
+        inline def setAriaCheckedNull: Self = StObject.set(x, "ariaChecked", null)
+        
+        inline def setAriaCheckedUndefined: Self = StObject.set(x, "ariaChecked", js.undefined)
+        
+        inline def setAriaColCount(value: String): Self = StObject.set(x, "ariaColCount", value.asInstanceOf[js.Any])
+        
+        inline def setAriaColCountNull: Self = StObject.set(x, "ariaColCount", null)
+        
+        inline def setAriaColCountUndefined: Self = StObject.set(x, "ariaColCount", js.undefined)
+        
+        inline def setAriaColIndex(value: String): Self = StObject.set(x, "ariaColIndex", value.asInstanceOf[js.Any])
+        
+        inline def setAriaColIndexNull: Self = StObject.set(x, "ariaColIndex", null)
+        
+        inline def setAriaColIndexUndefined: Self = StObject.set(x, "ariaColIndex", js.undefined)
+        
+        inline def setAriaColSpan(value: String): Self = StObject.set(x, "ariaColSpan", value.asInstanceOf[js.Any])
+        
+        inline def setAriaColSpanNull: Self = StObject.set(x, "ariaColSpan", null)
+        
+        inline def setAriaColSpanUndefined: Self = StObject.set(x, "ariaColSpan", js.undefined)
+        
+        inline def setAriaCurrent(value: String): Self = StObject.set(x, "ariaCurrent", value.asInstanceOf[js.Any])
+        
+        inline def setAriaCurrentNull: Self = StObject.set(x, "ariaCurrent", null)
+        
+        inline def setAriaCurrentUndefined: Self = StObject.set(x, "ariaCurrent", js.undefined)
+        
+        inline def setAriaDisabled(value: String): Self = StObject.set(x, "ariaDisabled", value.asInstanceOf[js.Any])
+        
+        inline def setAriaDisabledNull: Self = StObject.set(x, "ariaDisabled", null)
+        
+        inline def setAriaDisabledUndefined: Self = StObject.set(x, "ariaDisabled", js.undefined)
+        
+        inline def setAriaExpanded(value: String): Self = StObject.set(x, "ariaExpanded", value.asInstanceOf[js.Any])
+        
+        inline def setAriaExpandedNull: Self = StObject.set(x, "ariaExpanded", null)
+        
+        inline def setAriaExpandedUndefined: Self = StObject.set(x, "ariaExpanded", js.undefined)
+        
+        inline def setAriaHasPopup(value: String): Self = StObject.set(x, "ariaHasPopup", value.asInstanceOf[js.Any])
+        
+        inline def setAriaHasPopupNull: Self = StObject.set(x, "ariaHasPopup", null)
+        
+        inline def setAriaHasPopupUndefined: Self = StObject.set(x, "ariaHasPopup", js.undefined)
+        
+        inline def setAriaHidden(value: String): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
+        
+        inline def setAriaHiddenNull: Self = StObject.set(x, "ariaHidden", null)
+        
+        inline def setAriaHiddenUndefined: Self = StObject.set(x, "ariaHidden", js.undefined)
+        
+        inline def setAriaKeyShortcuts(value: String): Self = StObject.set(x, "ariaKeyShortcuts", value.asInstanceOf[js.Any])
+        
+        inline def setAriaKeyShortcutsNull: Self = StObject.set(x, "ariaKeyShortcuts", null)
+        
+        inline def setAriaKeyShortcutsUndefined: Self = StObject.set(x, "ariaKeyShortcuts", js.undefined)
+        
+        inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+        
+        inline def setAriaLabelNull: Self = StObject.set(x, "ariaLabel", null)
+        
+        inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+        
+        inline def setAriaLevel(value: String): Self = StObject.set(x, "ariaLevel", value.asInstanceOf[js.Any])
+        
+        inline def setAriaLevelNull: Self = StObject.set(x, "ariaLevel", null)
+        
+        inline def setAriaLevelUndefined: Self = StObject.set(x, "ariaLevel", js.undefined)
+        
+        inline def setAriaLive(value: String): Self = StObject.set(x, "ariaLive", value.asInstanceOf[js.Any])
+        
+        inline def setAriaLiveNull: Self = StObject.set(x, "ariaLive", null)
+        
+        inline def setAriaLiveUndefined: Self = StObject.set(x, "ariaLive", js.undefined)
+        
+        inline def setAriaModal(value: String): Self = StObject.set(x, "ariaModal", value.asInstanceOf[js.Any])
+        
+        inline def setAriaModalNull: Self = StObject.set(x, "ariaModal", null)
+        
+        inline def setAriaModalUndefined: Self = StObject.set(x, "ariaModal", js.undefined)
+        
+        inline def setAriaMultiLine(value: String): Self = StObject.set(x, "ariaMultiLine", value.asInstanceOf[js.Any])
+        
+        inline def setAriaMultiLineNull: Self = StObject.set(x, "ariaMultiLine", null)
+        
+        inline def setAriaMultiLineUndefined: Self = StObject.set(x, "ariaMultiLine", js.undefined)
+        
+        inline def setAriaMultiSelectable(value: String): Self = StObject.set(x, "ariaMultiSelectable", value.asInstanceOf[js.Any])
+        
+        inline def setAriaMultiSelectableNull: Self = StObject.set(x, "ariaMultiSelectable", null)
+        
+        inline def setAriaMultiSelectableUndefined: Self = StObject.set(x, "ariaMultiSelectable", js.undefined)
+        
+        inline def setAriaOrientation(value: String): Self = StObject.set(x, "ariaOrientation", value.asInstanceOf[js.Any])
+        
+        inline def setAriaOrientationNull: Self = StObject.set(x, "ariaOrientation", null)
+        
+        inline def setAriaOrientationUndefined: Self = StObject.set(x, "ariaOrientation", js.undefined)
+        
+        inline def setAriaPlaceholder(value: String): Self = StObject.set(x, "ariaPlaceholder", value.asInstanceOf[js.Any])
+        
+        inline def setAriaPlaceholderNull: Self = StObject.set(x, "ariaPlaceholder", null)
+        
+        inline def setAriaPlaceholderUndefined: Self = StObject.set(x, "ariaPlaceholder", js.undefined)
+        
+        inline def setAriaPosInSet(value: String): Self = StObject.set(x, "ariaPosInSet", value.asInstanceOf[js.Any])
+        
+        inline def setAriaPosInSetNull: Self = StObject.set(x, "ariaPosInSet", null)
+        
+        inline def setAriaPosInSetUndefined: Self = StObject.set(x, "ariaPosInSet", js.undefined)
+        
+        inline def setAriaPressed(value: String): Self = StObject.set(x, "ariaPressed", value.asInstanceOf[js.Any])
+        
+        inline def setAriaPressedNull: Self = StObject.set(x, "ariaPressed", null)
+        
+        inline def setAriaPressedUndefined: Self = StObject.set(x, "ariaPressed", js.undefined)
+        
+        inline def setAriaReadOnly(value: String): Self = StObject.set(x, "ariaReadOnly", value.asInstanceOf[js.Any])
+        
+        inline def setAriaReadOnlyNull: Self = StObject.set(x, "ariaReadOnly", null)
+        
+        inline def setAriaReadOnlyUndefined: Self = StObject.set(x, "ariaReadOnly", js.undefined)
+        
+        inline def setAriaRequired(value: String): Self = StObject.set(x, "ariaRequired", value.asInstanceOf[js.Any])
+        
+        inline def setAriaRequiredNull: Self = StObject.set(x, "ariaRequired", null)
+        
+        inline def setAriaRequiredUndefined: Self = StObject.set(x, "ariaRequired", js.undefined)
+        
+        inline def setAriaRoleDescription(value: String): Self = StObject.set(x, "ariaRoleDescription", value.asInstanceOf[js.Any])
+        
+        inline def setAriaRoleDescriptionNull: Self = StObject.set(x, "ariaRoleDescription", null)
+        
+        inline def setAriaRoleDescriptionUndefined: Self = StObject.set(x, "ariaRoleDescription", js.undefined)
+        
+        inline def setAriaRowCount(value: String): Self = StObject.set(x, "ariaRowCount", value.asInstanceOf[js.Any])
+        
+        inline def setAriaRowCountNull: Self = StObject.set(x, "ariaRowCount", null)
+        
+        inline def setAriaRowCountUndefined: Self = StObject.set(x, "ariaRowCount", js.undefined)
+        
+        inline def setAriaRowIndex(value: String): Self = StObject.set(x, "ariaRowIndex", value.asInstanceOf[js.Any])
+        
+        inline def setAriaRowIndexNull: Self = StObject.set(x, "ariaRowIndex", null)
+        
+        inline def setAriaRowIndexUndefined: Self = StObject.set(x, "ariaRowIndex", js.undefined)
+        
+        inline def setAriaRowSpan(value: String): Self = StObject.set(x, "ariaRowSpan", value.asInstanceOf[js.Any])
+        
+        inline def setAriaRowSpanNull: Self = StObject.set(x, "ariaRowSpan", null)
+        
+        inline def setAriaRowSpanUndefined: Self = StObject.set(x, "ariaRowSpan", js.undefined)
+        
+        inline def setAriaSelected(value: String): Self = StObject.set(x, "ariaSelected", value.asInstanceOf[js.Any])
+        
+        inline def setAriaSelectedNull: Self = StObject.set(x, "ariaSelected", null)
+        
+        inline def setAriaSelectedUndefined: Self = StObject.set(x, "ariaSelected", js.undefined)
+        
+        inline def setAriaSetSize(value: String): Self = StObject.set(x, "ariaSetSize", value.asInstanceOf[js.Any])
+        
+        inline def setAriaSetSizeNull: Self = StObject.set(x, "ariaSetSize", null)
+        
+        inline def setAriaSetSizeUndefined: Self = StObject.set(x, "ariaSetSize", js.undefined)
+        
+        inline def setAriaSort(value: String): Self = StObject.set(x, "ariaSort", value.asInstanceOf[js.Any])
+        
+        inline def setAriaSortNull: Self = StObject.set(x, "ariaSort", null)
+        
+        inline def setAriaSortUndefined: Self = StObject.set(x, "ariaSort", js.undefined)
+        
+        inline def setAriaValueMax(value: String): Self = StObject.set(x, "ariaValueMax", value.asInstanceOf[js.Any])
+        
+        inline def setAriaValueMaxNull: Self = StObject.set(x, "ariaValueMax", null)
+        
+        inline def setAriaValueMaxUndefined: Self = StObject.set(x, "ariaValueMax", js.undefined)
+        
+        inline def setAriaValueMin(value: String): Self = StObject.set(x, "ariaValueMin", value.asInstanceOf[js.Any])
+        
+        inline def setAriaValueMinNull: Self = StObject.set(x, "ariaValueMin", null)
+        
+        inline def setAriaValueMinUndefined: Self = StObject.set(x, "ariaValueMin", js.undefined)
+        
+        inline def setAriaValueNow(value: String): Self = StObject.set(x, "ariaValueNow", value.asInstanceOf[js.Any])
+        
+        inline def setAriaValueNowNull: Self = StObject.set(x, "ariaValueNow", null)
+        
+        inline def setAriaValueNowUndefined: Self = StObject.set(x, "ariaValueNow", js.undefined)
+        
+        inline def setAriaValueText(value: String): Self = StObject.set(x, "ariaValueText", value.asInstanceOf[js.Any])
+        
+        inline def setAriaValueTextNull: Self = StObject.set(x, "ariaValueText", null)
+        
+        inline def setAriaValueTextUndefined: Self = StObject.set(x, "ariaValueText", js.undefined)
         
         inline def setAssignedSlot(value: HTMLSlotElement): Self = StObject.set(x, "assignedSlot", value.asInstanceOf[js.Any])
         
@@ -616,7 +903,7 @@ object global {
         
         inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        inline def setContentVarargs(value: Content*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: Content*): Self = StObject.set(x, "content", js.Array(value*))
         
         inline def setDOCUMENT_FRAGMENT_NODE(value: Double): Self = StObject.set(x, "DOCUMENT_FRAGMENT_NODE", value.asInstanceOf[js.Any])
         
@@ -761,20 +1048,20 @@ object global {
         inline def setInnerHTMLUndefined: Self = StObject.set(x, "innerHTML", js.undefined)
         
         inline def setInsertAdjacentElement(
-          value: (/* position */ InsertPosition, /* insertedElement */ typings.std.Element) => typings.std.Element | Null
+          value: (/* where */ InsertPosition, /* element */ typings.std.Element) => typings.std.Element | Null
         ): Self = StObject.set(x, "insertAdjacentElement", js.Any.fromFunction2(value))
         
         inline def setInsertAdjacentElementUndefined: Self = StObject.set(x, "insertAdjacentElement", js.undefined)
         
-        inline def setInsertAdjacentHTML(value: (/* where */ InsertPosition, /* html */ String) => Unit): Self = StObject.set(x, "insertAdjacentHTML", js.Any.fromFunction2(value))
+        inline def setInsertAdjacentHTML(value: (/* position */ InsertPosition, /* text */ String) => Unit): Self = StObject.set(x, "insertAdjacentHTML", js.Any.fromFunction2(value))
         
         inline def setInsertAdjacentHTMLUndefined: Self = StObject.set(x, "insertAdjacentHTML", js.undefined)
         
-        inline def setInsertAdjacentText(value: (/* where */ InsertPosition, /* text */ String) => Unit): Self = StObject.set(x, "insertAdjacentText", js.Any.fromFunction2(value))
+        inline def setInsertAdjacentText(value: (/* where */ InsertPosition, /* data */ String) => Unit): Self = StObject.set(x, "insertAdjacentText", js.Any.fromFunction2(value))
         
         inline def setInsertAdjacentTextUndefined: Self = StObject.set(x, "insertAdjacentText", js.undefined)
         
-        inline def setInsertBefore(value: /* newChild */ Node => Node): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
+        inline def setInsertBefore(value: /* node */ Node => Node): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
         
         inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
         
@@ -826,10 +1113,6 @@ object global {
         
         inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
         
-        inline def setMsGetRegionContent(value: () => js.Any): Self = StObject.set(x, "msGetRegionContent", js.Any.fromFunction0(value))
-        
-        inline def setMsGetRegionContentUndefined: Self = StObject.set(x, "msGetRegionContent", js.undefined)
-        
         inline def setNOTATION_NODE(value: Double): Self = StObject.set(x, "NOTATION_NODE", value.asInstanceOf[js.Any])
         
         inline def setNOTATION_NODEUndefined: Self = StObject.set(x, "NOTATION_NODE", js.undefined)
@@ -870,13 +1153,13 @@ object global {
         
         inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
         
-        inline def setOnfullscreenchange(value: js.ThisFunction1[IntrinsicClassAttributes[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onfullscreenchange", value.asInstanceOf[js.Any])
+        inline def setOnfullscreenchange(value: js.ThisFunction1[IntrinsicClassAttributes[T], /* ev */ Event, Any]): Self = StObject.set(x, "onfullscreenchange", value.asInstanceOf[js.Any])
         
         inline def setOnfullscreenchangeNull: Self = StObject.set(x, "onfullscreenchange", null)
         
         inline def setOnfullscreenchangeUndefined: Self = StObject.set(x, "onfullscreenchange", js.undefined)
         
-        inline def setOnfullscreenerror(value: js.ThisFunction1[IntrinsicClassAttributes[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onfullscreenerror", value.asInstanceOf[js.Any])
+        inline def setOnfullscreenerror(value: js.ThisFunction1[IntrinsicClassAttributes[T], /* ev */ Event, Any]): Self = StObject.set(x, "onfullscreenerror", value.asInstanceOf[js.Any])
         
         inline def setOnfullscreenerrorNull: Self = StObject.set(x, "onfullscreenerror", null)
         
@@ -900,11 +1183,15 @@ object global {
         
         inline def setParentElementUndefined: Self = StObject.set(x, "parentElement", js.undefined)
         
-        inline def setParentNode(value: Node & ParentNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+        inline def setParentNode(value: ParentNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
         
         inline def setParentNodeNull: Self = StObject.set(x, "parentNode", null)
         
         inline def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
+        
+        inline def setPart(value: DOMTokenList): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+        
+        inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
         
         inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
         
@@ -954,21 +1241,25 @@ object global {
         
         inline def setRemoveAttributeUndefined: Self = StObject.set(x, "removeAttribute", js.undefined)
         
-        inline def setRemoveChild(value: /* oldChild */ Node => Node): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
+        inline def setRemoveChild(value: /* child */ Node => Node): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
         
         inline def setRemoveChildUndefined: Self = StObject.set(x, "removeChild", js.undefined)
         
         inline def setRemoveEventListener(
-          value: (fullscreenchange, /* listener */ js.ThisFunction1[IntrinsicClassAttributes[T], /* ev */ Event, js.Any]) => Unit
+          value: (fullscreenchange, /* listener */ js.ThisFunction1[IntrinsicClassAttributes[T], /* ev */ Event, Any]) => Unit
         ): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
         
         inline def setRemoveEventListenerUndefined: Self = StObject.set(x, "removeEventListener", js.undefined)
         
         inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
         
-        inline def setReplaceChild(value: (/* newChild */ Node, /* oldChild */ Node) => Node): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
+        inline def setReplaceChild(value: (/* node */ Node, /* child */ Node) => Node): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
         
         inline def setReplaceChildUndefined: Self = StObject.set(x, "replaceChild", js.undefined)
+        
+        inline def setReplaceChildren(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "replaceChildren", js.Any.fromFunction1(value))
+        
+        inline def setReplaceChildrenUndefined: Self = StObject.set(x, "replaceChildren", js.undefined)
         
         inline def setReplaceWith(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
         
@@ -1077,7 +1368,11 @@ object global {
       
       var address: PropsHTMLElementcontentCo
       
-      var applet: PropsHTMLAppletElementcon
+      var animate: PropsSVGAnimateElementcon
+      
+      var animateMotion: PropsSVGAnimateMotionElem
+      
+      var animateTransform: PropsSVGAnimateTransformE
       
       var area: PropsHTMLAreaElementconte
       
@@ -1090,8 +1385,6 @@ object global {
       var b: PropsHTMLElementcontentCo
       
       var base: PropsHTMLBaseElementconte
-      
-      var basefont: PropsHTMLBaseFontElementc
       
       var bdi: PropsHTMLElementcontentCo
       
@@ -1139,8 +1432,6 @@ object global {
       
       var dialog: PropsHTMLDialogElementcon
       
-      var dir: PropsHTMLDirectoryElement
-      
       var div: PropsHTMLDivElementconten
       
       var dl: PropsHTMLDListElementcont
@@ -1168,6 +1459,8 @@ object global {
       var feDisplacementMap: PropsSVGFEDisplacementMap
       
       var feDistantLight: PropsSVGFEDistantLightEle
+      
+      var feDropShadow: PropsSVGFEDropShadowEleme
       
       var feFlood: PropsSVGFEFloodElementcon
       
@@ -1209,17 +1502,11 @@ object global {
       
       var filter: PropsSVGFilterElementcont
       
-      var font: PropsHTMLFontElementconte
-      
       var footer: PropsHTMLElementcontentCo
       
       var foreignObject: PropsSVGForeignObjectElem
       
       var form: PropsHTMLFormElementconte
-      
-      var frame: PropsHTMLFrameElementcont
-      
-      var frameset: PropsHTMLFrameSetElementc
       
       var g: PropsSVGGElementcontentCo
       
@@ -1279,8 +1566,6 @@ object global {
       
       var marker: PropsSVGMarkerElementcont
       
-      var marquee: PropsHTMLMarqueeElementco
-      
       var mask: PropsSVGMaskElementconten
       
       var menu: PropsHTMLMenuElementconte
@@ -1290,6 +1575,8 @@ object global {
       var metadata: PropsSVGMetadataElementco
       
       var meter: PropsHTMLMeterElementcont
+      
+      var mpath: PropsSVGMPathElementconte
       
       var nav: PropsHTMLElementcontentCo
       
@@ -1306,8 +1593,6 @@ object global {
       var output: PropsHTMLOutputElementcon
       
       var p: PropsHTMLParagraphElement
-      
-      var param: PropsHTMLParamElementcont
       
       var path: PropsSVGPathElementconten
       
@@ -1345,6 +1630,8 @@ object global {
       
       var select: PropsHTMLSelectElementcon
       
+      var set: PropsSVGSetElementcontent
+      
       var slot: PropsHTMLSlotElementconte
       
       var small: PropsHTMLElementcontentCo
@@ -1375,7 +1662,7 @@ object global {
       
       var tbody: PropsHTMLTableSectionElem
       
-      var td: PropsHTMLTableDataCellEle
+      var td: PropsHTMLTableCellElement
       
       var template: PropsHTMLTemplateElementc
       
@@ -1387,7 +1674,7 @@ object global {
       
       var tfoot: PropsHTMLTableSectionElem
       
-      var th: PropsHTMLTableHeaderCellE
+      var th: PropsHTMLTableCellElement
       
       var thead: PropsHTMLTableSectionElem
       
@@ -1421,14 +1708,15 @@ object global {
         a: PropsHTMLAnchorElementcon,
         abbr: PropsHTMLElementcontentCo,
         address: PropsHTMLElementcontentCo,
-        applet: PropsHTMLAppletElementcon,
+        animate: PropsSVGAnimateElementcon,
+        animateMotion: PropsSVGAnimateMotionElem,
+        animateTransform: PropsSVGAnimateTransformE,
         area: PropsHTMLAreaElementconte,
         article: PropsHTMLElementcontentCo,
         aside: PropsHTMLElementcontentCo,
         audio: PropsHTMLAudioElementcont,
         b: PropsHTMLElementcontentCo,
         base: PropsHTMLBaseElementconte,
-        basefont: PropsHTMLBaseFontElementc,
         bdi: PropsHTMLElementcontentCo,
         bdo: PropsHTMLElementcontentCo,
         blockquote: PropsHTMLQuoteElementcont,
@@ -1452,7 +1740,6 @@ object global {
         details: PropsHTMLDetailsElementco,
         dfn: PropsHTMLElementcontentCo,
         dialog: PropsHTMLDialogElementcon,
-        dir: PropsHTMLDirectoryElement,
         div: PropsHTMLDivElementconten,
         dl: PropsHTMLDListElementcont,
         dt: PropsHTMLElementcontentCo,
@@ -1467,6 +1754,7 @@ object global {
         feDiffuseLighting: PropsSVGFEDiffuseLighting,
         feDisplacementMap: PropsSVGFEDisplacementMap,
         feDistantLight: PropsSVGFEDistantLightEle,
+        feDropShadow: PropsSVGFEDropShadowEleme,
         feFlood: PropsSVGFEFloodElementcon,
         feFuncA: PropsSVGFEFuncAElementcon,
         feFuncB: PropsSVGFEFuncBElementcon,
@@ -1487,12 +1775,9 @@ object global {
         figcaption: PropsHTMLElementcontentCo,
         figure: PropsHTMLElementcontentCo,
         filter: PropsSVGFilterElementcont,
-        font: PropsHTMLFontElementconte,
         footer: PropsHTMLElementcontentCo,
         foreignObject: PropsSVGForeignObjectElem,
         form: PropsHTMLFormElementconte,
-        frame: PropsHTMLFrameElementcont,
-        frameset: PropsHTMLFrameSetElementc,
         g: PropsSVGGElementcontentCo,
         h1: PropsHTMLHeadingElementco,
         h2: PropsHTMLHeadingElementco,
@@ -1522,12 +1807,12 @@ object global {
         map: PropsHTMLMapElementconten,
         mark: PropsHTMLElementcontentCo,
         marker: PropsSVGMarkerElementcont,
-        marquee: PropsHTMLMarqueeElementco,
         mask: PropsSVGMaskElementconten,
         menu: PropsHTMLMenuElementconte,
         meta: PropsHTMLMetaElementconte,
         metadata: PropsSVGMetadataElementco,
         meter: PropsHTMLMeterElementcont,
+        mpath: PropsSVGMPathElementconte,
         nav: PropsHTMLElementcontentCo,
         noscript: PropsHTMLElementcontentCo,
         `object`: PropsHTMLObjectElementcon,
@@ -1536,7 +1821,6 @@ object global {
         option: PropsHTMLOptionElementcon,
         output: PropsHTMLOutputElementcon,
         p: PropsHTMLParagraphElement,
-        param: PropsHTMLParamElementcont,
         path: PropsSVGPathElementconten,
         pattern: PropsSVGPatternElementcon,
         picture: PropsHTMLPictureElementco,
@@ -1555,6 +1839,7 @@ object global {
         script: PropsHTMLScriptElementcon,
         section: PropsHTMLElementcontentCo,
         select: PropsHTMLSelectElementcon,
+        set: PropsSVGSetElementcontent,
         slot: PropsHTMLSlotElementconte,
         small: PropsHTMLElementcontentCo,
         source: PropsHTMLSourceElementcon,
@@ -1570,13 +1855,13 @@ object global {
         symbol: PropsSVGSymbolElementcont,
         table: PropsHTMLTableElementcont,
         tbody: PropsHTMLTableSectionElem,
-        td: PropsHTMLTableDataCellEle,
+        td: PropsHTMLTableCellElement,
         template: PropsHTMLTemplateElementc,
         text: PropsSVGTextElementconten,
         textPath: PropsSVGTextPathElementco,
         textarea: PropsHTMLTextAreaElementc,
         tfoot: PropsHTMLTableSectionElem,
-        th: PropsHTMLTableHeaderCellE,
+        th: PropsHTMLTableCellElement,
         thead: PropsHTMLTableSectionElem,
         time: PropsHTMLTimeElementconte,
         title: PropsHTMLTitleElementcont,
@@ -1591,7 +1876,7 @@ object global {
         view: PropsSVGViewElementconten,
         wbr: PropsHTMLElementcontentCo
       ): IntrinsicElements = {
-        val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], applet = applet.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], basefont = basefont.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], frameset = frameset.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], marquee = marquee.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateMotion = animateMotion.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], mpath = mpath.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
         __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
         __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
         __obj.asInstanceOf[IntrinsicElements]
@@ -1605,7 +1890,11 @@ object global {
         
         inline def setAddress(value: PropsHTMLElementcontentCo): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
-        inline def setApplet(value: PropsHTMLAppletElementcon): Self = StObject.set(x, "applet", value.asInstanceOf[js.Any])
+        inline def setAnimate(value: PropsSVGAnimateElementcon): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+        
+        inline def setAnimateMotion(value: PropsSVGAnimateMotionElem): Self = StObject.set(x, "animateMotion", value.asInstanceOf[js.Any])
+        
+        inline def setAnimateTransform(value: PropsSVGAnimateTransformE): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
         
         inline def setArea(value: PropsHTMLAreaElementconte): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
         
@@ -1618,8 +1907,6 @@ object global {
         inline def setB(value: PropsHTMLElementcontentCo): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
         
         inline def setBase(value: PropsHTMLBaseElementconte): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
-        
-        inline def setBasefont(value: PropsHTMLBaseFontElementc): Self = StObject.set(x, "basefont", value.asInstanceOf[js.Any])
         
         inline def setBdi(value: PropsHTMLElementcontentCo): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
         
@@ -1667,8 +1954,6 @@ object global {
         
         inline def setDialog(value: PropsHTMLDialogElementcon): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
         
-        inline def setDir(value: PropsHTMLDirectoryElement): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
-        
         inline def setDiv(value: PropsHTMLDivElementconten): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
         
         inline def setDl(value: PropsHTMLDListElementcont): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
@@ -1696,6 +1981,8 @@ object global {
         inline def setFeDisplacementMap(value: PropsSVGFEDisplacementMap): Self = StObject.set(x, "feDisplacementMap", value.asInstanceOf[js.Any])
         
         inline def setFeDistantLight(value: PropsSVGFEDistantLightEle): Self = StObject.set(x, "feDistantLight", value.asInstanceOf[js.Any])
+        
+        inline def setFeDropShadow(value: PropsSVGFEDropShadowEleme): Self = StObject.set(x, "feDropShadow", value.asInstanceOf[js.Any])
         
         inline def setFeFlood(value: PropsSVGFEFloodElementcon): Self = StObject.set(x, "feFlood", value.asInstanceOf[js.Any])
         
@@ -1737,17 +2024,11 @@ object global {
         
         inline def setFilter(value: PropsSVGFilterElementcont): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
-        inline def setFont(value: PropsHTMLFontElementconte): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
-        
         inline def setFooter(value: PropsHTMLElementcontentCo): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
         
         inline def setForeignObject(value: PropsSVGForeignObjectElem): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
         
         inline def setForm(value: PropsHTMLFormElementconte): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
-        
-        inline def setFrame(value: PropsHTMLFrameElementcont): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
-        
-        inline def setFrameset(value: PropsHTMLFrameSetElementc): Self = StObject.set(x, "frameset", value.asInstanceOf[js.Any])
         
         inline def setG(value: PropsSVGGElementcontentCo): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
         
@@ -1807,8 +2088,6 @@ object global {
         
         inline def setMarker(value: PropsSVGMarkerElementcont): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
         
-        inline def setMarquee(value: PropsHTMLMarqueeElementco): Self = StObject.set(x, "marquee", value.asInstanceOf[js.Any])
-        
         inline def setMask(value: PropsSVGMaskElementconten): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
         
         inline def setMenu(value: PropsHTMLMenuElementconte): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
@@ -1818,6 +2097,8 @@ object global {
         inline def setMetadata(value: PropsSVGMetadataElementco): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
         inline def setMeter(value: PropsHTMLMeterElementcont): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
+        
+        inline def setMpath(value: PropsSVGMPathElementconte): Self = StObject.set(x, "mpath", value.asInstanceOf[js.Any])
         
         inline def setNav(value: PropsHTMLElementcontentCo): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
         
@@ -1834,8 +2115,6 @@ object global {
         inline def setOutput(value: PropsHTMLOutputElementcon): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
         
         inline def setP(value: PropsHTMLParagraphElement): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
-        
-        inline def setParam(value: PropsHTMLParamElementcont): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
         
         inline def setPath(value: PropsSVGPathElementconten): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
@@ -1873,6 +2152,8 @@ object global {
         
         inline def setSelect(value: PropsHTMLSelectElementcon): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
         
+        inline def setSet(value: PropsSVGSetElementcontent): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+        
         inline def setSlot(value: PropsHTMLSlotElementconte): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
         
         inline def setSmall(value: PropsHTMLElementcontentCo): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
@@ -1903,7 +2184,7 @@ object global {
         
         inline def setTbody(value: PropsHTMLTableSectionElem): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
         
-        inline def setTd(value: PropsHTMLTableDataCellEle): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
+        inline def setTd(value: PropsHTMLTableCellElement): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
         
         inline def setTemplate(value: PropsHTMLTemplateElementc): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         
@@ -1915,7 +2196,7 @@ object global {
         
         inline def setTfoot(value: PropsHTMLTableSectionElem): Self = StObject.set(x, "tfoot", value.asInstanceOf[js.Any])
         
-        inline def setTh(value: PropsHTMLTableHeaderCellE): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
+        inline def setTh(value: PropsHTMLTableCellElement): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
         
         inline def setThead(value: PropsHTMLTableSectionElem): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
         

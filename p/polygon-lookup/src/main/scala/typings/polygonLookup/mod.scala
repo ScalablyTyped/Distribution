@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("polygon-lookup", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with PolygonLookup {
     def this(featureCollection: FeatureCollection[Geometry, GeoJsonProperties]) = this()

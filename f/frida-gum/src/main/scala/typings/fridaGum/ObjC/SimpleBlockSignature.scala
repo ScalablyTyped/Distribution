@@ -29,7 +29,7 @@ object SimpleBlockSignature {
     
     inline def setArgTypes(value: js.Array[String]): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
     
-    inline def setArgTypesVarargs(value: String*): Self = StObject.set(x, "argTypes", js.Array(value :_*))
+    inline def setArgTypesVarargs(value: String*): Self = StObject.set(x, "argTypes", js.Array(value*))
     
     inline def setRetType(value: String): Self = StObject.set(x, "retType", value.asInstanceOf[js.Any])
   }

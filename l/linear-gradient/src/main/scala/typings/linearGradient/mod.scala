@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("linear-gradient", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Gradient {
     def this(colors: js.Array[Color]) = this()

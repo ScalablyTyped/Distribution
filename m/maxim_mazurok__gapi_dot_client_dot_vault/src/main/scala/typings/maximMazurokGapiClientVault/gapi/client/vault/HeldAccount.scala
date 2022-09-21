@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeldAccount extends StObject {
   
-  /** The account's ID as provided by the Admin SDK. */
+  /** The account ID, as provided by the [Admin SDK](https://developers.google.com/admin-sdk/). */
   var accountId: js.UndefOr[String] = js.undefined
   
-  /** The primary email address of the account. If used as an input, this takes precedence over account ID. */
+  /** The primary email address of the account. If used as an input, this takes precedence over **accountId**. */
   var email: js.UndefOr[String] = js.undefined
   
   /** Output only. The first name of the account holder. */

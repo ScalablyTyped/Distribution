@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Media
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
@@ -163,7 +162,7 @@ object SpeechRecognition {
   /** A constraint for a SpeechRecognizer object based on a Speech Recognition Grammar Specification (SRGS) file. */
   @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionGrammarFileConstraint")
   @js.native
-  class SpeechRecognitionGrammarFileConstraint protected ()
+  open class SpeechRecognitionGrammarFileConstraint protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionGrammarFileConstraint {
     /**
@@ -226,7 +225,7 @@ object SpeechRecognition {
   /** A constraint for a SpeechRecognizer object based on a list of words or phrases. When initialized, this object is added to the Constraints collection. */
   @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint")
   @js.native
-  class SpeechRecognitionListConstraint protected ()
+  open class SpeechRecognitionListConstraint protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint {
     /**
@@ -303,7 +302,7 @@ object SpeechRecognition {
     
     /** Gets the start time of the utterance. */
     /* CompleteClass */
-    var phraseStartTime: Date = js.native
+    var phraseStartTime: js.Date = js.native
     
     /** Gets a value that indicates the relative confidence of the SpeechRecognitionResult when compared with a collection of alternatives returned with the recognition result. */
     /* CompleteClass */
@@ -385,13 +384,13 @@ object SpeechRecognition {
     
     /** Gets a dictionary of the semantic properties. */
     /* CompleteClass */
-    var properties: IMapView[String, IVectorView[js.Any]] = js.native
+    var properties: IMapView[String, IVectorView[Any]] = js.native
   }
   
   /** A pre-defined grammar constraint (specifed by SpeechRecognitionScenario ) provided through a web service. */
   @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionTopicConstraint")
   @js.native
-  class SpeechRecognitionTopicConstraint protected ()
+  open class SpeechRecognitionTopicConstraint protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionTopicConstraint {
     /**
@@ -461,7 +460,7 @@ object SpeechRecognition {
   @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizer")
   @js.native
   /** Creates a new instance of the SpeechRecognizer class. */
-  class SpeechRecognizer ()
+  open class SpeechRecognizer ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognizer {
     /**

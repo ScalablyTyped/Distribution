@@ -10,10 +10,10 @@ Encode/decode sourcemap mappings
 | ------------------ | :-------------: |
 | Full name          | sourcemap-codec |
 | Keywords           | sourcemap, vlq |
-| # releases         | 5 |
-| # dependents       | 68 |
-| # downloads        | 164329684 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3.8644264E7 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](https://github.com/Rich-Harris/sourcemap-codec)

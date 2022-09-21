@@ -10,10 +10,10 @@ object importantDevicesMod {
   
   @JSImport("material-ui/svg-icons/action/important-devices", JSImport.Default)
   @js.native
-  class default () extends ActionImportantDevices
+  open class default () extends ActionImportantDevices
   
   @JSImport("material-ui/svg-icons/action/important-devices", "ActionImportantDevices")
   @js.native
-  class ActionImportantDevices ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionImportantDevices ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

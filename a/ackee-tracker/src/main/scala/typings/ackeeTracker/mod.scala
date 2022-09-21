@@ -3,7 +3,6 @@ package typings.ackeeTracker
 import typings.ackeeTracker.ackeeTrackerBooleans.`false`
 import typings.ackeeTracker.ackeeTrackerBooleans.`true`
 import typings.ackeeTracker.anon.FnCall
-import typings.ackeeTracker.anon.Stop
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,21 +15,77 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def attributes(): DefaultData = ^.asInstanceOf[js.Dynamic].applyDynamic("attributes")().asInstanceOf[DefaultData]
+  inline def attributes(detailed: Boolean): DefaultData | (DefaultData & DetailedData) = ^.asInstanceOf[js.Dynamic].applyDynamic("attributes")(detailed.asInstanceOf[js.Any]).asInstanceOf[DefaultData | (DefaultData & DetailedData)]
+  
+  inline def attributes_Union(): DefaultData | (DefaultData & DetailedData) = ^.asInstanceOf[js.Dynamic].applyDynamic("attributes")().asInstanceOf[DefaultData | (DefaultData & DetailedData)]
   
   inline def attributes_false(detailed: `false`): DefaultData = ^.asInstanceOf[js.Dynamic].applyDynamic("attributes")(detailed.asInstanceOf[js.Any]).asInstanceOf[DefaultData]
   
   inline def attributes_true(detailed: `true`): DefaultData & DetailedData = ^.asInstanceOf[js.Dynamic].applyDynamic("attributes")(detailed.asInstanceOf[js.Any]).asInstanceOf[DefaultData & DetailedData]
   
-  inline def create(server: ServerDetails): AckeeInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(server.asInstanceOf[js.Any]).asInstanceOf[AckeeInstance]
-  inline def create(server: ServerDetails, options: TrackingOptions): AckeeInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AckeeInstance]
+  inline def create(server: String): AckeeInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(server.asInstanceOf[js.Any]).asInstanceOf[AckeeInstance]
+  inline def create(server: String, options: TrackingOptions): AckeeInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AckeeInstance]
   
   inline def detect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")().asInstanceOf[Unit]
   
   @js.native
   trait AckeeInstance extends StObject {
     
-    def record(): Stop = js.native
-    def record(attrs: ReturnType[FnCall]): Stop = js.native
+    def action(eventId: String, attributes: ActionAttributes): Unit = js.native
+    def action(eventId: String, attributes: ActionAttributes, callback: js.Function1[/* actionId */ String, Unit]): Unit = js.native
+    
+    def record(domainId: String): AckeeTrackingReturn = js.native
+    def record(domainId: String, attrs: ReturnType[FnCall]): AckeeTrackingReturn = js.native
+    
+    def updateAction(actionId: String, attributes: ActionAttributes): Unit = js.native
+    
+    def updateRecord(recordId: String): AckeeTrackingReturn = js.native
+  }
+  
+  trait AckeeTrackingReturn extends StObject {
+    
+    def stop(): Unit
+  }
+  object AckeeTrackingReturn {
+    
+    inline def apply(stop: () => Unit): AckeeTrackingReturn = {
+      val __obj = js.Dynamic.literal(stop = js.Any.fromFunction0(stop))
+      __obj.asInstanceOf[AckeeTrackingReturn]
+    }
+    
+    extension [Self <: AckeeTrackingReturn](x: Self) {
+      
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait ActionAttributes extends StObject {
+    
+    /**
+      * Key that will be used to group similar actions in the Ackee UI.
+      */
+    var key: String
+    
+    /**
+      * Positive float value that is added to all other numerical values of the key.
+      */
+    var value: js.UndefOr[Double] = js.undefined
+  }
+  object ActionAttributes {
+    
+    inline def apply(key: String): ActionAttributes = {
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ActionAttributes]
+    }
+    
+    extension [Self <: ActionAttributes](x: Self) {
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
   }
   
   trait DefaultData extends StObject {
@@ -134,27 +189,6 @@ object mod {
     }
   }
   
-  trait ServerDetails extends StObject {
-    
-    var domainId: String
-    
-    var server: String
-  }
-  object ServerDetails {
-    
-    inline def apply(domainId: String, server: String): ServerDetails = {
-      val __obj = js.Dynamic.literal(domainId = domainId.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ServerDetails]
-    }
-    
-    extension [Self <: ServerDetails](x: Self) {
-      
-      inline def setDomainId(value: String): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
-      
-      inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait TrackingOptions extends StObject {
     
     /**
@@ -166,6 +200,11 @@ object mod {
       * Defaults to `true`
       */
     var ignoreLocalhost: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Defaults to `true`
+      */
+    var ignoreOwnVisits: js.UndefOr[Boolean] = js.undefined
   }
   object TrackingOptions {
     
@@ -183,6 +222,10 @@ object mod {
       inline def setIgnoreLocalhost(value: Boolean): Self = StObject.set(x, "ignoreLocalhost", value.asInstanceOf[js.Any])
       
       inline def setIgnoreLocalhostUndefined: Self = StObject.set(x, "ignoreLocalhost", js.undefined)
+      
+      inline def setIgnoreOwnVisits(value: Boolean): Self = StObject.set(x, "ignoreOwnVisits", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreOwnVisitsUndefined: Self = StObject.set(x, "ignoreOwnVisits", js.undefined)
     }
   }
 }

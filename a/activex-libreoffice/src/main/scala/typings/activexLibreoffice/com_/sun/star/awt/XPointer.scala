@@ -26,7 +26,7 @@ object XPointer {
     Type: Double,
     acquire: () => Unit,
     getType: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setType: Double => Unit
   ): XPointer = {

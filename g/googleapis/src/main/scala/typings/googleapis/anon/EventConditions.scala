@@ -23,7 +23,7 @@ object EventConditions {
     
     inline def setEventConditionsUndefined: Self = StObject.set(x, "eventConditions", js.undefined)
     
-    inline def setEventConditionsVarargs(value: ComparisonType*): Self = StObject.set(x, "eventConditions", js.Array(value :_*))
+    inline def setEventConditionsVarargs(value: ComparisonType*): Self = StObject.set(x, "eventConditions", js.Array(value*))
     
     inline def setUseEventValue(value: Boolean): Self = StObject.set(x, "useEventValue", value.asInstanceOf[js.Any])
     

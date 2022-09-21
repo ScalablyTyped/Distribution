@@ -15,7 +15,7 @@ trait BodyType
     * @property _original
     * @type any
     */
-  var _original: js.Any
+  var _original: Any
   
   /**
     * A `Number` specifying the angle of the body, in radians.
@@ -173,7 +173,7 @@ trait BodyType
     * @property events
     * @type any
     */
-  var events: js.UndefOr[js.Any] = js.undefined
+  var events: js.UndefOr[Any] = js.undefined
   
   /**
     * A `Vector` that specifies the force to apply in the current step. It is zeroed after every `Body.update`. See also `Body.applyForce`.
@@ -232,7 +232,7 @@ trait BodyType
     * @property gameObject
     * @type Phaser.GameObjects.GameObject
     */
-  var gameObject: js.UndefOr[js.Any] = js.undefined
+  var gameObject: js.UndefOr[Any] = js.undefined
   
   /**
     * Scale the influence of World gravity when applied to this body.
@@ -395,7 +395,7 @@ trait BodyType
     * @type object
     * @default null
     */
-  var onCollideWith: js.UndefOr[js.Any] = js.undefined
+  var onCollideWith: js.UndefOr[Any] = js.undefined
   
   /**
     * A self reference if the body is _not_ a part of another body.
@@ -426,7 +426,7 @@ trait BodyType
     * @property plugin
     * @type {}
     */
-  var plugin: js.Any
+  var plugin: Any
   
   /**
     * A `Vector` that specifies the current world-space position of the body.
@@ -602,7 +602,7 @@ trait BodyType
 object BodyType {
   
   inline def apply(
-    _original: js.Any,
+    _original: Any,
     angle: Double,
     anglePrev: Double,
     angularSpeed: Double,
@@ -634,7 +634,7 @@ object BodyType {
     motion: Double,
     parent: BodyType,
     parts: js.Array[BodyType],
-    plugin: js.Any,
+    plugin: Any,
     position: Vector,
     positionImpulse: Vector,
     positionPrev: Vector,
@@ -673,7 +673,7 @@ object BodyType {
     
     inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
-    inline def setAxesVarargs(value: Vector*): Self = StObject.set(x, "axes", js.Array(value :_*))
+    inline def setAxesVarargs(value: Vector*): Self = StObject.set(x, "axes", js.Array(value*))
     
     inline def setBounds(value: IBound): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
@@ -693,7 +693,7 @@ object BodyType {
     
     inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
@@ -705,7 +705,7 @@ object BodyType {
     
     inline def setFrictionStatic(value: Double): Self = StObject.set(x, "frictionStatic", value.asInstanceOf[js.Any])
     
-    inline def setGameObject(value: js.Any): Self = StObject.set(x, "gameObject", value.asInstanceOf[js.Any])
+    inline def setGameObject(value: Any): Self = StObject.set(x, "gameObject", value.asInstanceOf[js.Any])
     
     inline def setGameObjectUndefined: Self = StObject.set(x, "gameObject", js.undefined)
     
@@ -747,7 +747,7 @@ object BodyType {
     
     inline def setOnCollideEndCallbackUndefined: Self = StObject.set(x, "onCollideEndCallback", js.undefined)
     
-    inline def setOnCollideWith(value: js.Any): Self = StObject.set(x, "onCollideWith", value.asInstanceOf[js.Any])
+    inline def setOnCollideWith(value: Any): Self = StObject.set(x, "onCollideWith", value.asInstanceOf[js.Any])
     
     inline def setOnCollideWithUndefined: Self = StObject.set(x, "onCollideWith", js.undefined)
     
@@ -755,9 +755,9 @@ object BodyType {
     
     inline def setParts(value: js.Array[BodyType]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
-    inline def setPartsVarargs(value: BodyType*): Self = StObject.set(x, "parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: BodyType*): Self = StObject.set(x, "parts", js.Array(value*))
     
-    inline def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: Vector): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
@@ -795,8 +795,8 @@ object BodyType {
     
     inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
-    inline def setVerticesVarargs(value: Vector*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: Vector*): Self = StObject.set(x, "vertices", js.Array(value*))
     
-    inline def set_original(value: js.Any): Self = StObject.set(x, "_original", value.asInstanceOf[js.Any])
+    inline def set_original(value: Any): Self = StObject.set(x, "_original", value.asInstanceOf[js.Any])
   }
 }

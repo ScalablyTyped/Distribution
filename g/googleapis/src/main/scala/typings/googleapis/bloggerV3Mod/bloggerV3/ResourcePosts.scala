@@ -4,30 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/blogger/v3", "blogger_v3.Resource$Posts")
 @js.native
-class ResourcePosts protected () extends StObject {
+open class ResourcePosts protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * blogger.posts.delete
-    * @desc Delete a post by ID.
-    * @alias blogger.posts.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.blogId The ID of the Blog.
-    * @param {string} params.postId The ID of the Post.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
@@ -35,29 +24,64 @@ class ResourcePosts protected () extends StObject {
   def delete(params: ParamsResourcePostsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
     params: ParamsResourcePostsDelete,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
   ): Unit = js.native
   def delete(params: ParamsResourcePostsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePostsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
-  
   /**
-    * blogger.posts.get
-    * @desc Get a post by ID.
-    * @alias blogger.posts.get
-    * @memberOf! ()
+    * Deletes a post by blog id and post id.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/blogger.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.blogId ID of the blog to fetch the post from.
-    * @param {boolean=} params.fetchBody Whether the body content of the post is included (default: true). This should be set to false when the post bodies are not required, to help minimize traffic.
-    * @param {boolean=} params.fetchImages Whether image URL metadata for each post is included (default: false).
-    * @param {integer=} params.maxComments Maximum number of comments to pull back on a post.
-    * @param {string} params.postId The ID of the post
-    * @param {string=} params.view Access level with which to view the returned result. Note that some fields require elevated access.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const blogger = google.blogger('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/blogger'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await blogger.posts.delete({
+    *     blogId: 'placeholder-value',
+    *
+    *     postId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourcePostsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourcePostsDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaPost] = js.native
   def get(callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
@@ -65,27 +89,99 @@ class ResourcePosts protected () extends StObject {
   def get(params: ParamsResourcePostsGet, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def get(
     params: ParamsResourcePostsGet,
-    options: BodyResponseCallback[SchemaPost],
-    callback: BodyResponseCallback[SchemaPost]
+    options: BodyResponseCallback[Readable | SchemaPost],
+    callback: BodyResponseCallback[Readable | SchemaPost]
   ): Unit = js.native
   def get(params: ParamsResourcePostsGet, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def get(params: ParamsResourcePostsGet, options: MethodOptions, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
-  
   /**
-    * blogger.posts.getByPath
-    * @desc Retrieve a Post by Path.
-    * @alias blogger.posts.getByPath
-    * @memberOf! ()
+    * Gets a post by blog id and post id
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/blogger.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.blogId ID of the blog to fetch the post from.
-    * @param {integer=} params.maxComments Maximum number of comments to pull back on a post.
-    * @param {string} params.path Path of the Post to retrieve.
-    * @param {string=} params.view Access level with which to view the returned result. Note that some fields require elevated access.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const blogger = google.blogger('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/blogger',
+    *       'https://www.googleapis.com/auth/blogger.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await blogger.posts.get({
+    *     blogId: 'placeholder-value',
+    *
+    *     fetchBody: 'placeholder-value',
+    *
+    *     fetchImages: 'placeholder-value',
+    *
+    *     maxComments: 'placeholder-value',
+    *
+    *     postId: 'placeholder-value',
+    *
+    *     view: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "author": {},
+    *   //   "blog": {},
+    *   //   "content": "my_content",
+    *   //   "customMetaData": "my_customMetaData",
+    *   //   "etag": "my_etag",
+    *   //   "id": "my_id",
+    *   //   "images": [],
+    *   //   "kind": "my_kind",
+    *   //   "labels": [],
+    *   //   "location": {},
+    *   //   "published": "my_published",
+    *   //   "readerComments": "my_readerComments",
+    *   //   "replies": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "status": "my_status",
+    *   //   "title": "my_title",
+    *   //   "titleLink": "my_titleLink",
+    *   //   "trashed": "my_trashed",
+    *   //   "updated": "my_updated",
+    *   //   "url": "my_url"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourcePostsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourcePostsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def getByPath(): GaxiosPromise[SchemaPost] = js.native
   def getByPath(callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def getByPath(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
@@ -93,8 +189,8 @@ class ResourcePosts protected () extends StObject {
   def getByPath(params: ParamsResourcePostsGetbypath, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def getByPath(
     params: ParamsResourcePostsGetbypath,
-    options: BodyResponseCallback[SchemaPost],
-    callback: BodyResponseCallback[SchemaPost]
+    options: BodyResponseCallback[Readable | SchemaPost],
+    callback: BodyResponseCallback[Readable | SchemaPost]
   ): Unit = js.native
   def getByPath(params: ParamsResourcePostsGetbypath, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def getByPath(
@@ -102,23 +198,90 @@ class ResourcePosts protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPost]
   ): Unit = js.native
-  
   /**
-    * blogger.posts.insert
-    * @desc Add a post.
-    * @alias blogger.posts.insert
-    * @memberOf! ()
+    * Gets a post by path.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/blogger.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.blogId ID of the blog to add the post to.
-    * @param {boolean=} params.fetchBody Whether the body content of the post is included with the result (default: true).
-    * @param {boolean=} params.fetchImages Whether image URL metadata for each post is included in the returned result (default: false).
-    * @param {boolean=} params.isDraft Whether to create the post as a draft (default: false).
-    * @param {().Post} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const blogger = google.blogger('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/blogger',
+    *       'https://www.googleapis.com/auth/blogger.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await blogger.posts.getByPath({
+    *     blogId: 'placeholder-value',
+    *
+    *     maxComments: 'placeholder-value',
+    *
+    *     path: 'placeholder-value',
+    *
+    *     view: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "author": {},
+    *   //   "blog": {},
+    *   //   "content": "my_content",
+    *   //   "customMetaData": "my_customMetaData",
+    *   //   "etag": "my_etag",
+    *   //   "id": "my_id",
+    *   //   "images": [],
+    *   //   "kind": "my_kind",
+    *   //   "labels": [],
+    *   //   "location": {},
+    *   //   "published": "my_published",
+    *   //   "readerComments": "my_readerComments",
+    *   //   "replies": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "status": "my_status",
+    *   //   "title": "my_title",
+    *   //   "titleLink": "my_titleLink",
+    *   //   "trashed": "my_trashed",
+    *   //   "updated": "my_updated",
+    *   //   "url": "my_url"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def getByPath(params: ParamsResourcePostsGetbypath, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getByPath(
+    params: ParamsResourcePostsGetbypath,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaPost] = js.native
   def insert(callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
@@ -126,8 +289,8 @@ class ResourcePosts protected () extends StObject {
   def insert(params: ParamsResourcePostsInsert, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def insert(
     params: ParamsResourcePostsInsert,
-    options: BodyResponseCallback[SchemaPost],
-    callback: BodyResponseCallback[SchemaPost]
+    options: BodyResponseCallback[Readable | SchemaPost],
+    callback: BodyResponseCallback[Readable | SchemaPost]
   ): Unit = js.native
   def insert(params: ParamsResourcePostsInsert, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def insert(
@@ -135,29 +298,114 @@ class ResourcePosts protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPost]
   ): Unit = js.native
-  
   /**
-    * blogger.posts.list
-    * @desc Retrieves a list of posts, possibly filtered.
-    * @alias blogger.posts.list
-    * @memberOf! ()
+    * Inserts a post.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/blogger.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.blogId ID of the blog to fetch posts from.
-    * @param {string=} params.endDate Latest post date to fetch, a date-time with RFC 3339 formatting.
-    * @param {boolean=} params.fetchBodies Whether the body content of posts is included (default: true). This should be set to false when the post bodies are not required, to help minimize traffic.
-    * @param {boolean=} params.fetchImages Whether image URL metadata for each post is included.
-    * @param {string=} params.labels Comma-separated list of labels to search for.
-    * @param {integer=} params.maxResults Maximum number of posts to fetch.
-    * @param {string=} params.orderBy Sort search results
-    * @param {string=} params.pageToken Continuation token if the request is paged.
-    * @param {string=} params.startDate Earliest post date to fetch, a date-time with RFC 3339 formatting.
-    * @param {string=} params.status Statuses to include in the results.
-    * @param {string=} params.view Access level with which to view the returned result. Note that some fields require escalated access.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const blogger = google.blogger('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/blogger'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await blogger.posts.insert({
+    *     blogId: 'placeholder-value',
+    *
+    *     fetchBody: 'placeholder-value',
+    *
+    *     fetchImages: 'placeholder-value',
+    *
+    *     isDraft: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "author": {},
+    *       //   "blog": {},
+    *       //   "content": "my_content",
+    *       //   "customMetaData": "my_customMetaData",
+    *       //   "etag": "my_etag",
+    *       //   "id": "my_id",
+    *       //   "images": [],
+    *       //   "kind": "my_kind",
+    *       //   "labels": [],
+    *       //   "location": {},
+    *       //   "published": "my_published",
+    *       //   "readerComments": "my_readerComments",
+    *       //   "replies": {},
+    *       //   "selfLink": "my_selfLink",
+    *       //   "status": "my_status",
+    *       //   "title": "my_title",
+    *       //   "titleLink": "my_titleLink",
+    *       //   "trashed": "my_trashed",
+    *       //   "updated": "my_updated",
+    *       //   "url": "my_url"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "author": {},
+    *   //   "blog": {},
+    *   //   "content": "my_content",
+    *   //   "customMetaData": "my_customMetaData",
+    *   //   "etag": "my_etag",
+    *   //   "id": "my_id",
+    *   //   "images": [],
+    *   //   "kind": "my_kind",
+    *   //   "labels": [],
+    *   //   "location": {},
+    *   //   "published": "my_published",
+    *   //   "readerComments": "my_readerComments",
+    *   //   "replies": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "status": "my_status",
+    *   //   "title": "my_title",
+    *   //   "titleLink": "my_titleLink",
+    *   //   "trashed": "my_trashed",
+    *   //   "updated": "my_updated",
+    *   //   "url": "my_url"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourcePostsInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourcePostsInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaPostList] = js.native
   def list(callback: BodyResponseCallback[SchemaPostList]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPostList] = js.native
@@ -165,8 +413,8 @@ class ResourcePosts protected () extends StObject {
   def list(params: ParamsResourcePostsList, callback: BodyResponseCallback[SchemaPostList]): Unit = js.native
   def list(
     params: ParamsResourcePostsList,
-    options: BodyResponseCallback[SchemaPostList],
-    callback: BodyResponseCallback[SchemaPostList]
+    options: BodyResponseCallback[Readable | SchemaPostList],
+    callback: BodyResponseCallback[Readable | SchemaPostList]
   ): Unit = js.native
   def list(params: ParamsResourcePostsList, options: MethodOptions): GaxiosPromise[SchemaPostList] = js.native
   def list(
@@ -174,26 +422,89 @@ class ResourcePosts protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPostList]
   ): Unit = js.native
-  
   /**
-    * blogger.posts.patch
-    * @desc Update a post. This method supports patch semantics.
-    * @alias blogger.posts.patch
-    * @memberOf! ()
+    * Lists posts.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/blogger.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.blogId The ID of the Blog.
-    * @param {boolean=} params.fetchBody Whether the body content of the post is included with the result (default: true).
-    * @param {boolean=} params.fetchImages Whether image URL metadata for each post is included in the returned result (default: false).
-    * @param {integer=} params.maxComments Maximum number of comments to retrieve with the returned post.
-    * @param {string} params.postId The ID of the Post.
-    * @param {boolean=} params.publish Whether a publish action should be performed when the post is updated (default: false).
-    * @param {boolean=} params.revert Whether a revert action should be performed when the post is updated (default: false).
-    * @param {().Post} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const blogger = google.blogger('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/blogger',
+    *       'https://www.googleapis.com/auth/blogger.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await blogger.posts.list({
+    *     blogId: 'placeholder-value',
+    *
+    *     endDate: 'placeholder-value',
+    *
+    *     fetchBodies: 'placeholder-value',
+    *
+    *     fetchImages: 'placeholder-value',
+    *
+    *     labels: 'placeholder-value',
+    *
+    *     maxResults: 'placeholder-value',
+    *
+    *     orderBy: 'placeholder-value',
+    *
+    *     pageToken: 'placeholder-value',
+    *
+    *     startDate: 'placeholder-value',
+    *
+    *     status: 'placeholder-value',
+    *
+    *     view: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "items": [],
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "prevPageToken": "my_prevPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourcePostsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourcePostsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaPost] = js.native
   def patch(callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
@@ -201,8 +512,8 @@ class ResourcePosts protected () extends StObject {
   def patch(params: ParamsResourcePostsPatch, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def patch(
     params: ParamsResourcePostsPatch,
-    options: BodyResponseCallback[SchemaPost],
-    callback: BodyResponseCallback[SchemaPost]
+    options: BodyResponseCallback[Readable | SchemaPost],
+    callback: BodyResponseCallback[Readable | SchemaPost]
   ): Unit = js.native
   def patch(params: ParamsResourcePostsPatch, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def patch(
@@ -210,22 +521,120 @@ class ResourcePosts protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPost]
   ): Unit = js.native
-  
   /**
-    * blogger.posts.publish
-    * @desc Publishes a draft post, optionally at the specific time of the
-    * given publishDate parameter.
-    * @alias blogger.posts.publish
-    * @memberOf! ()
+    * Patches a post.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/blogger.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.blogId The ID of the Blog.
-    * @param {string} params.postId The ID of the Post.
-    * @param {string=} params.publishDate Optional date and time to schedule the publishing of the Blog. If no publishDate parameter is given, the post is either published at the a previously saved schedule date (if present), or the current time. If a future date is given, the post will be scheduled to be published.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const blogger = google.blogger('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/blogger'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await blogger.posts.patch({
+    *     blogId: 'placeholder-value',
+    *
+    *     fetchBody: 'placeholder-value',
+    *
+    *     fetchImages: 'placeholder-value',
+    *
+    *     maxComments: 'placeholder-value',
+    *
+    *     postId: 'placeholder-value',
+    *
+    *     publish: 'placeholder-value',
+    *
+    *     revert: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "author": {},
+    *       //   "blog": {},
+    *       //   "content": "my_content",
+    *       //   "customMetaData": "my_customMetaData",
+    *       //   "etag": "my_etag",
+    *       //   "id": "my_id",
+    *       //   "images": [],
+    *       //   "kind": "my_kind",
+    *       //   "labels": [],
+    *       //   "location": {},
+    *       //   "published": "my_published",
+    *       //   "readerComments": "my_readerComments",
+    *       //   "replies": {},
+    *       //   "selfLink": "my_selfLink",
+    *       //   "status": "my_status",
+    *       //   "title": "my_title",
+    *       //   "titleLink": "my_titleLink",
+    *       //   "trashed": "my_trashed",
+    *       //   "updated": "my_updated",
+    *       //   "url": "my_url"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "author": {},
+    *   //   "blog": {},
+    *   //   "content": "my_content",
+    *   //   "customMetaData": "my_customMetaData",
+    *   //   "etag": "my_etag",
+    *   //   "id": "my_id",
+    *   //   "images": [],
+    *   //   "kind": "my_kind",
+    *   //   "labels": [],
+    *   //   "location": {},
+    *   //   "published": "my_published",
+    *   //   "readerComments": "my_readerComments",
+    *   //   "replies": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "status": "my_status",
+    *   //   "title": "my_title",
+    *   //   "titleLink": "my_titleLink",
+    *   //   "trashed": "my_trashed",
+    *   //   "updated": "my_updated",
+    *   //   "url": "my_url"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def patch(params: ParamsResourcePostsPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourcePostsPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def publish(): GaxiosPromise[SchemaPost] = js.native
   def publish(callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def publish(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
@@ -233,8 +642,8 @@ class ResourcePosts protected () extends StObject {
   def publish(params: ParamsResourcePostsPublish, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def publish(
     params: ParamsResourcePostsPublish,
-    options: BodyResponseCallback[SchemaPost],
-    callback: BodyResponseCallback[SchemaPost]
+    options: BodyResponseCallback[Readable | SchemaPost],
+    callback: BodyResponseCallback[Readable | SchemaPost]
   ): Unit = js.native
   def publish(params: ParamsResourcePostsPublish, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def publish(
@@ -242,20 +651,85 @@ class ResourcePosts protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPost]
   ): Unit = js.native
-  
   /**
-    * blogger.posts.revert
-    * @desc Revert a published or scheduled post to draft state.
-    * @alias blogger.posts.revert
-    * @memberOf! ()
+    * Publishes a post.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/blogger.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.blogId The ID of the Blog.
-    * @param {string} params.postId The ID of the Post.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const blogger = google.blogger('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/blogger'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await blogger.posts.publish({
+    *     blogId: 'placeholder-value',
+    *
+    *     postId: 'placeholder-value',
+    *
+    *     publishDate: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "author": {},
+    *   //   "blog": {},
+    *   //   "content": "my_content",
+    *   //   "customMetaData": "my_customMetaData",
+    *   //   "etag": "my_etag",
+    *   //   "id": "my_id",
+    *   //   "images": [],
+    *   //   "kind": "my_kind",
+    *   //   "labels": [],
+    *   //   "location": {},
+    *   //   "published": "my_published",
+    *   //   "readerComments": "my_readerComments",
+    *   //   "replies": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "status": "my_status",
+    *   //   "title": "my_title",
+    *   //   "titleLink": "my_titleLink",
+    *   //   "trashed": "my_trashed",
+    *   //   "updated": "my_updated",
+    *   //   "url": "my_url"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def publish(params: ParamsResourcePostsPublish, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def publish(
+    params: ParamsResourcePostsPublish,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def revert(): GaxiosPromise[SchemaPost] = js.native
   def revert(callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def revert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
@@ -263,8 +737,8 @@ class ResourcePosts protected () extends StObject {
   def revert(params: ParamsResourcePostsRevert, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def revert(
     params: ParamsResourcePostsRevert,
-    options: BodyResponseCallback[SchemaPost],
-    callback: BodyResponseCallback[SchemaPost]
+    options: BodyResponseCallback[Readable | SchemaPost],
+    callback: BodyResponseCallback[Readable | SchemaPost]
   ): Unit = js.native
   def revert(params: ParamsResourcePostsRevert, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def revert(
@@ -272,22 +746,83 @@ class ResourcePosts protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPost]
   ): Unit = js.native
-  
   /**
-    * blogger.posts.search
-    * @desc Search for a post.
-    * @alias blogger.posts.search
-    * @memberOf! ()
+    * Reverts a published or scheduled post to draft state.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/blogger.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.blogId ID of the blog to fetch the post from.
-    * @param {boolean=} params.fetchBodies Whether the body content of posts is included (default: true). This should be set to false when the post bodies are not required, to help minimize traffic.
-    * @param {string=} params.orderBy Sort search results
-    * @param {string} params.q Query terms to search this blog for matching posts.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const blogger = google.blogger('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/blogger'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await blogger.posts.revert({
+    *     blogId: 'placeholder-value',
+    *
+    *     postId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "author": {},
+    *   //   "blog": {},
+    *   //   "content": "my_content",
+    *   //   "customMetaData": "my_customMetaData",
+    *   //   "etag": "my_etag",
+    *   //   "id": "my_id",
+    *   //   "images": [],
+    *   //   "kind": "my_kind",
+    *   //   "labels": [],
+    *   //   "location": {},
+    *   //   "published": "my_published",
+    *   //   "readerComments": "my_readerComments",
+    *   //   "replies": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "status": "my_status",
+    *   //   "title": "my_title",
+    *   //   "titleLink": "my_titleLink",
+    *   //   "trashed": "my_trashed",
+    *   //   "updated": "my_updated",
+    *   //   "url": "my_url"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def revert(params: ParamsResourcePostsRevert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def revert(
+    params: ParamsResourcePostsRevert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def search(): GaxiosPromise[SchemaPostList] = js.native
   def search(callback: BodyResponseCallback[SchemaPostList]): Unit = js.native
   def search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPostList] = js.native
@@ -295,8 +830,8 @@ class ResourcePosts protected () extends StObject {
   def search(params: ParamsResourcePostsSearch, callback: BodyResponseCallback[SchemaPostList]): Unit = js.native
   def search(
     params: ParamsResourcePostsSearch,
-    options: BodyResponseCallback[SchemaPostList],
-    callback: BodyResponseCallback[SchemaPostList]
+    options: BodyResponseCallback[Readable | SchemaPostList],
+    callback: BodyResponseCallback[Readable | SchemaPostList]
   ): Unit = js.native
   def search(params: ParamsResourcePostsSearch, options: MethodOptions): GaxiosPromise[SchemaPostList] = js.native
   def search(
@@ -304,26 +839,75 @@ class ResourcePosts protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPostList]
   ): Unit = js.native
-  
   /**
-    * blogger.posts.update
-    * @desc Update a post.
-    * @alias blogger.posts.update
-    * @memberOf! ()
+    * Searches for posts matching given query terms in the specified blog.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/blogger.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.blogId The ID of the Blog.
-    * @param {boolean=} params.fetchBody Whether the body content of the post is included with the result (default: true).
-    * @param {boolean=} params.fetchImages Whether image URL metadata for each post is included in the returned result (default: false).
-    * @param {integer=} params.maxComments Maximum number of comments to retrieve with the returned post.
-    * @param {string} params.postId The ID of the Post.
-    * @param {boolean=} params.publish Whether a publish action should be performed when the post is updated (default: false).
-    * @param {boolean=} params.revert Whether a revert action should be performed when the post is updated (default: false).
-    * @param {().Post} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const blogger = google.blogger('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/blogger',
+    *       'https://www.googleapis.com/auth/blogger.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await blogger.posts.search({
+    *     blogId: 'placeholder-value',
+    *
+    *     fetchBodies: 'placeholder-value',
+    *
+    *     orderBy: 'placeholder-value',
+    *
+    *     q: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "items": [],
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "prevPageToken": "my_prevPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def search(params: ParamsResourcePostsSearch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def search(
+    params: ParamsResourcePostsSearch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaPost] = js.native
   def update(callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
@@ -331,13 +915,126 @@ class ResourcePosts protected () extends StObject {
   def update(params: ParamsResourcePostsUpdate, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def update(
     params: ParamsResourcePostsUpdate,
-    options: BodyResponseCallback[SchemaPost],
-    callback: BodyResponseCallback[SchemaPost]
+    options: BodyResponseCallback[Readable | SchemaPost],
+    callback: BodyResponseCallback[Readable | SchemaPost]
   ): Unit = js.native
   def update(params: ParamsResourcePostsUpdate, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def update(
     params: ParamsResourcePostsUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPost]
+  ): Unit = js.native
+  /**
+    * Updates a post by blog id and post id.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/blogger.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const blogger = google.blogger('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/blogger'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await blogger.posts.update({
+    *     blogId: 'placeholder-value',
+    *
+    *     fetchBody: 'placeholder-value',
+    *
+    *     fetchImages: 'placeholder-value',
+    *
+    *     maxComments: 'placeholder-value',
+    *
+    *     postId: 'placeholder-value',
+    *
+    *     publish: 'placeholder-value',
+    *
+    *     revert: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "author": {},
+    *       //   "blog": {},
+    *       //   "content": "my_content",
+    *       //   "customMetaData": "my_customMetaData",
+    *       //   "etag": "my_etag",
+    *       //   "id": "my_id",
+    *       //   "images": [],
+    *       //   "kind": "my_kind",
+    *       //   "labels": [],
+    *       //   "location": {},
+    *       //   "published": "my_published",
+    *       //   "readerComments": "my_readerComments",
+    *       //   "replies": {},
+    *       //   "selfLink": "my_selfLink",
+    *       //   "status": "my_status",
+    *       //   "title": "my_title",
+    *       //   "titleLink": "my_titleLink",
+    *       //   "trashed": "my_trashed",
+    *       //   "updated": "my_updated",
+    *       //   "url": "my_url"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "author": {},
+    *   //   "blog": {},
+    *   //   "content": "my_content",
+    *   //   "customMetaData": "my_customMetaData",
+    *   //   "etag": "my_etag",
+    *   //   "id": "my_id",
+    *   //   "images": [],
+    *   //   "kind": "my_kind",
+    *   //   "labels": [],
+    *   //   "location": {},
+    *   //   "published": "my_published",
+    *   //   "readerComments": "my_readerComments",
+    *   //   "replies": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "status": "my_status",
+    *   //   "title": "my_title",
+    *   //   "titleLink": "my_titleLink",
+    *   //   "trashed": "my_trashed",
+    *   //   "updated": "my_updated",
+    *   //   "url": "my_url"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourcePostsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourcePostsUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

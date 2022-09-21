@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReaderFragment
   extends StObject
      with GeneratedNode
-     with ReaderSelectableNode
+     with ReaderNode
      with _GraphQLTaggedNode {
   
   val abstractKey: js.UndefOr[String | Null] = js.undefined
@@ -52,7 +52,7 @@ object ReaderFragment {
     
     inline def setArgumentDefinitions(value: js.Array[ReaderArgumentDefinition]): Self = StObject.set(x, "argumentDefinitions", value.asInstanceOf[js.Any])
     
-    inline def setArgumentDefinitionsVarargs(value: ReaderArgumentDefinition*): Self = StObject.set(x, "argumentDefinitions", js.Array(value :_*))
+    inline def setArgumentDefinitionsVarargs(value: ReaderArgumentDefinition*): Self = StObject.set(x, "argumentDefinitions", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -66,7 +66,7 @@ object ReaderFragment {
     
     inline def setSelections(value: js.Array[ReaderSelection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
-    inline def setSelectionsVarargs(value: ReaderSelection*): Self = StObject.set(x, "selections", js.Array(value :_*))
+    inline def setSelectionsVarargs(value: ReaderSelection*): Self = StObject.set(x, "selections", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

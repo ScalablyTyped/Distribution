@@ -12,7 +12,7 @@ trait ListGraphqlApisResponse extends StObject {
   var graphqlApis: js.UndefOr[GraphqlApis] = js.undefined
   
   /**
-    * An identifier to be passed in the next request to this operation to return the next set of items in the list.
+    * An identifier to pass in the next request to this operation to return the next set of items in the list.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListGraphqlApisResponse {
     
     inline def setGraphqlApisUndefined: Self = StObject.set(x, "graphqlApis", js.undefined)
     
-    inline def setGraphqlApisVarargs(value: GraphqlApi*): Self = StObject.set(x, "graphqlApis", js.Array(value :_*))
+    inline def setGraphqlApisVarargs(value: GraphqlApi*): Self = StObject.set(x, "graphqlApis", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

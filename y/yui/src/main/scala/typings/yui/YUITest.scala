@@ -108,7 +108,7 @@ object YUITest {
     
     def assert(condition: Boolean, message: String): Unit = js.native
     
-    def callback(args: js.Any*): js.Function = js.native
+    def callback(args: Any*): js.Function = js.native
     
     def destroy(): Unit = js.native
     
@@ -163,18 +163,18 @@ object YUITest {
     def add(testObject: TestSuite): Unit = js.native
     
     //Object|String
-    def callback(args: js.Any*): js.Function = js.native
+    def callback(args: Any*): js.Function = js.native
     
     def clear(): Unit = js.native
     
     //Object|String
-    def getCoverage(): js.Any = js.native
-    def getCoverage(format: js.Function): js.Any = js.native
+    def getCoverage(): Any = js.native
+    def getCoverage(format: js.Function): Any = js.native
     
     def getName(): String = js.native
     
-    def getResults(): js.Any = js.native
-    def getResults(format: js.Function): js.Any = js.native
+    def getResults(): Any = js.native
+    def getResults(format: js.Function): Any = js.native
     
     def isRunning(): Boolean = js.native
     

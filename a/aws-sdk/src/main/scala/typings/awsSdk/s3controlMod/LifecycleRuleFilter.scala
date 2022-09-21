@@ -12,7 +12,7 @@ trait LifecycleRuleFilter extends StObject {
   var And: js.UndefOr[LifecycleRuleAndOperator] = js.undefined
   
   /**
-    * Prefix identifying one or more objects to which the rule applies.
+    * Prefix identifying one or more objects to which the rule applies.  Replacement must be made for object keys containing special characters (such as carriage returns) when using XML requests. For more information, see  XML related object key constraints. 
     */
   var Prefix: js.UndefOr[typings.awsSdk.s3controlMod.Prefix] = js.undefined
   

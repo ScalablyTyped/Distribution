@@ -24,16 +24,16 @@ trait SkottieAnimation
     * @param canvas
     * @param dstRect
     */
-  def render(canvas: SkCanvas): Unit = js.native
-  def render(canvas: SkCanvas, dstRect: InputRect): Unit = js.native
+  def render(canvas: Canvas): Unit = js.native
+  def render(canvas: Canvas, dstRect: InputRect): Unit = js.native
   
   /**
     * [deprecated] - use seekFrame
     * @param t - value from [0.0, 1.0]; 0 is first frame, 1 is final frame.
     * @param damageRect - will copy damage frame into this if provided.
     */
-  def seek(t: Double): SkRect = js.native
-  def seek(t: Double, damageRect: SkRect): SkRect = js.native
+  def seek(t: Double): js.typedarray.Float32Array = js.native
+  def seek(t: Double, damageRect: js.typedarray.Float32Array): js.typedarray.Float32Array = js.native
   
   /**
     * Update the animation state to match |t|, specified as a frame index
@@ -47,10 +47,15 @@ trait SkottieAnimation
     *                0.5 -> halfway between first and second frame
     * @param damageRect - will copy damage frame into this if provided.
     */
-  def seekFrame(frame: Double): SkRect = js.native
-  def seekFrame(frame: Double, damageRect: SkRect): SkRect = js.native
+  def seekFrame(frame: Double): js.typedarray.Float32Array = js.native
+  def seekFrame(frame: Double, damageRect: js.typedarray.Float32Array): js.typedarray.Float32Array = js.native
   
-  def size(): SkPoint = js.native
+  /**
+    * Return the size of this animation.
+    * @param outputSize - If provided, the size will be copied into here as width, height.
+    */
+  def size(): js.typedarray.Float32Array = js.native
+  def size(outputSize: js.typedarray.Float32Array): js.typedarray.Float32Array = js.native
   
   def version(): String = js.native
 }

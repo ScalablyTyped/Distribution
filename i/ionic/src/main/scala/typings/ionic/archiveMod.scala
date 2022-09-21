@@ -2,7 +2,6 @@ package typings.ionic
 
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
-import typings.std.Error
 import typings.tar.anon.CreateOptionsFileOptionss
 import typings.tar.anon.ExtractOptionsFileOptions
 import typings.tar.anon.ListOptionsFileOptionssyn
@@ -12,6 +11,7 @@ import typings.tar.mod.FileOptions
 import typings.tar.mod.HeaderProperties
 import typings.tar.mod.ListOptions
 import typings.tar.mod.PackStream
+import typings.tar.mod.ParseOptions
 import typings.tar.mod.ParseStream
 import typings.tar.mod.ReplaceOptions
 import org.scalablytyped.runtime.StObject
@@ -32,7 +32,13 @@ object archiveMod {
     inline def Pack(): PackStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Pack")().asInstanceOf[PackStream]
     inline def Pack(props: HeaderProperties): PackStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Pack")(props.asInstanceOf[js.Any]).asInstanceOf[PackStream]
     
-    inline def Parse(): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")().asInstanceOf[ParseStream]
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("ionic/lib/utils/archive", "tar.ParseCls")
+    @js.native
+    open class ParseCls ()
+      extends typings.tar.mod.ParseCls {
+      def this(opt: ParseOptions) = this()
+    }
     
     @JSImport("ionic/lib/utils/archive", "tar.blockSize")
     @js.native
@@ -42,7 +48,7 @@ object archiveMod {
     inline def c(
       options: CreateOptions & FileOptions,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def c(options: CreateOptionsFileOptionss, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -50,14 +56,14 @@ object archiveMod {
     inline def c_Readable(
       options: CreateOptions,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     inline def create(options: CreateOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     inline def create(
       options: CreateOptions & FileOptions,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def create(options: CreateOptionsFileOptionss, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -65,7 +71,7 @@ object archiveMod {
     inline def create_Readable(
       options: CreateOptions,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     inline def extract(options: ExtractOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
@@ -73,12 +79,12 @@ object archiveMod {
     inline def extract(
       options: ExtractOptions & FileOptions,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def extract(
       options: ExtractOptions & FileOptions,
       fileList: Unit,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def extract(options: ExtractOptionsFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def extract(options: ExtractOptionsFileOptions, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -88,9 +94,13 @@ object archiveMod {
     inline def extract_Writable(
       options: ExtractOptions,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-    inline def extract_Writable(options: ExtractOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    inline def extract_Writable(
+      options: ExtractOptions,
+      fileList: Unit,
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
     
     @JSImport("ionic/lib/utils/archive", "tar.fieldEnds")
     @js.native
@@ -191,20 +201,20 @@ object archiveMod {
     inline def list(
       options: ListOptions & FileOptions,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
     inline def list(
       options: ListOptions & FileOptions,
       fileList: Unit,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
     inline def list(options: Unit, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
     inline def list(
       options: Unit,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-    inline def list(options: Unit, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    inline def list(options: Unit, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
     inline def list(options: ListOptionsFileOptionssyn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def list(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -355,18 +365,26 @@ object archiveMod {
     inline def r(
       options: ReplaceOptions,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("r")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    inline def r(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("r")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def r(
+      options: ReplaceOptions,
+      fileList: Unit,
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+    ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("r")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     inline def replace(options: ReplaceOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     inline def replace(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     inline def replace(
       options: ReplaceOptions,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    inline def replace(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def replace(
+      options: ReplaceOptions,
+      fileList: Unit,
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+    ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     inline def t(): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("t")().asInstanceOf[Writable]
     inline def t(options: ListOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
@@ -374,20 +392,20 @@ object archiveMod {
     inline def t(
       options: ListOptions & FileOptions,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
     inline def t(
       options: ListOptions & FileOptions,
       fileList: Unit,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
     inline def t(options: Unit, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
     inline def t(
       options: Unit,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-    inline def t(options: Unit, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    inline def t(options: Unit, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
     inline def t(options: ListOptionsFileOptionssyn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def t(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -607,30 +625,38 @@ object archiveMod {
     inline def u(
       options: ReplaceOptions,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("u")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    inline def u(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("u")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def u(
+      options: ReplaceOptions,
+      fileList: Unit,
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+    ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("u")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     inline def update(options: ReplaceOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     inline def update(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     inline def update(
       options: ReplaceOptions,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    inline def update(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def update(
+      options: ReplaceOptions,
+      fileList: Unit,
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+    ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     inline def x(options: ExtractOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     inline def x(options: ExtractOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     inline def x(
       options: ExtractOptions & FileOptions,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def x(
       options: ExtractOptions & FileOptions,
       fileList: Unit,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def x(options: ExtractOptionsFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def x(options: ExtractOptionsFileOptions, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -640,8 +666,12 @@ object archiveMod {
     inline def x_Writable(
       options: ExtractOptions,
       fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-    inline def x_Writable(options: ExtractOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    inline def x_Writable(
+      options: ExtractOptions,
+      fileList: Unit,
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
   }
 }

@@ -1,7 +1,6 @@
 package typings.graylog2
 
 import typings.graylog2.mod.GraylogDeflate
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,28 +12,28 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(message: String): Unit = js.native
-    def apply(message: String, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
-    def apply(message: String, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def apply(message: String, _underscore: Unit, additionalFields: Record[String, Any]): Unit = js.native
+    def apply(message: String, _underscore: Unit, additionalFields: Record[String, Any], timestamp: Double): Unit = js.native
     def apply(message: String, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
-    def apply(message: String, additionalFields: Record[String, js.Any]): Unit = js.native
-    def apply(message: String, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
+    def apply(message: String, additionalFields: Record[String, Any]): Unit = js.native
+    def apply(message: String, additionalFields: Record[String, Any], _underscore: Unit, timestamp: Double): Unit = js.native
     def apply(message: String, fullMessage: String): Unit = js.native
     def apply(message: String, fullMessage: String, additionalFields: Unit, timestamp: Double): Unit = js.native
-    def apply(message: String, fullMessage: String, additionalFields: Record[String, js.Any]): Unit = js.native
-    def apply(message: String, fullMessage: String, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
-    def apply(message: Error): Unit = js.native
-    def apply(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
-    def apply(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
-    def apply(message: Error, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
-    def apply(message: Error, additionalFields: Record[String, js.Any]): Unit = js.native
-    def apply(message: Error, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
-    def apply(message: Record[String, js.Any]): Unit = js.native
-    def apply(message: Record[String, js.Any], _underscore: Unit, additionalFields: Unit, timestamp: Double): Unit = js.native
-    def apply(message: Record[String, js.Any], _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def apply(message: String, fullMessage: String, additionalFields: Record[String, Any]): Unit = js.native
+    def apply(message: String, fullMessage: String, additionalFields: Record[String, Any], timestamp: Double): Unit = js.native
+    def apply(message: js.Error): Unit = js.native
+    def apply(message: js.Error, _underscore: Unit, additionalFields: Record[String, Any]): Unit = js.native
+    def apply(message: js.Error, _underscore: Unit, additionalFields: Record[String, Any], timestamp: Double): Unit = js.native
+    def apply(message: js.Error, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def apply(message: js.Error, additionalFields: Record[String, Any]): Unit = js.native
+    def apply(message: js.Error, additionalFields: Record[String, Any], _underscore: Unit, timestamp: Double): Unit = js.native
+    def apply(message: Record[String, Any]): Unit = js.native
+    def apply(message: Record[String, Any], _underscore: Unit, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def apply(message: Record[String, Any], _underscore: Unit, additionalFields: Record[String, Any]): Unit = js.native
     def apply(
-      message: Record[String, js.Any],
+      message: Record[String, Any],
       _underscore: Unit,
-      additionalFields: Record[String, js.Any],
+      additionalFields: Record[String, Any],
       timestamp: Double
     ): Unit = js.native
   }
@@ -79,7 +78,7 @@ object anon {
       
       inline def setServers(value: js.Array[Readonlyhoststringportnum]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
       
-      inline def setServersVarargs(value: Readonlyhoststringportnum*): Self = StObject.set(x, "servers", js.Array(value :_*))
+      inline def setServersVarargs(value: Readonlyhoststringportnum*): Self = StObject.set(x, "servers", js.Array(value*))
     }
   }
   

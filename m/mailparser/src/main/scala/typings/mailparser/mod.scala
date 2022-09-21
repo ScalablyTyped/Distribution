@@ -1,6 +1,7 @@
 package typings.mailparser
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.iconvLite.DecoderStream
 import typings.mailparser.anon.Key
 import typings.mailparser.mailparserBooleans.`false`
 import typings.mailparser.mailparserStrings.attachment
@@ -11,11 +12,10 @@ import typings.mailparser.mailparserStrings.low
 import typings.mailparser.mailparserStrings.normal
 import typings.mailparser.mailparserStrings.readable
 import typings.mailparser.mailparserStrings.text
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Stream
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
-import typings.std.Date
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,24 +29,22 @@ object mod {
   
   @JSImport("mailparser", "MailParser")
   @js.native
-  class MailParser () extends Transform {
-    def this(options: TransformOptions) = this()
+  open class MailParser () extends Transform {
+    def this(options: MailParserOptions) = this()
     
-    @JSName("on")
-    def on_data(event: data, callback: js.Function1[/* data */ AttachmentStream | MessageText, Unit]): this.type = js.native
+    def on(event: data | readable, callback: js.Function1[/* data */ AttachmentStream | MessageText, Unit]): this.type = js.native
+    def on(event: String, callback: js.Function1[/* any */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_headers(event: headers, callback: js.Function1[/* headers */ Headers, Unit]): this.type = js.native
-    @JSName("on")
-    def on_readable(event: readable, callback: js.Function1[/* data */ AttachmentStream | MessageText, Unit]): this.type = js.native
   }
   
   inline def simpleParser(source: Source): js.Promise[ParsedMail] = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleParser")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ParsedMail]]
-  inline def simpleParser(source: Source, callback: js.Function2[/* err */ js.Any, /* mail */ ParsedMail, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleParser")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def simpleParser(source: Source, callback: js.Function2[/* err */ Any, /* mail */ ParsedMail, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleParser")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def simpleParser(source: Source, options: SimpleParserOptions): js.Promise[ParsedMail] = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleParser")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParsedMail]]
   inline def simpleParser(
     source: Source,
     options: SimpleParserOptions,
-    callback: js.Function2[/* err */ js.Any, /* mail */ ParsedMail, Unit]
+    callback: js.Function2[/* err */ Any, /* mail */ ParsedMail, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleParser")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait AddressObject
@@ -83,7 +81,7 @@ object mod {
       
       inline def setValue(value: js.Array[EmailAddress]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: EmailAddress*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: EmailAddress*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -144,7 +142,7 @@ object mod {
     /**
       * Attachment contents.
       */
-    var content: js.Any
+    var content: Any
     
     /**
       * Content disposition type for the attachment,
@@ -198,7 +196,7 @@ object mod {
     
     inline def apply(
       checksum: String,
-      content: js.Any,
+      content: Any,
       contentDisposition: String,
       contentType: String,
       headerLines: HeaderLines,
@@ -218,7 +216,7 @@ object mod {
       
       inline def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
       
-      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
       
@@ -234,7 +232,7 @@ object mod {
       
       inline def setHeaderLines(value: HeaderLines): Self = StObject.set(x, "headerLines", value.asInstanceOf[js.Any])
       
-      inline def setHeaderLinesVarargs(value: Key*): Self = StObject.set(x, "headerLines", js.Array(value :_*))
+      inline def setHeaderLinesVarargs(value: Key*): Self = StObject.set(x, "headerLines", js.Array(value*))
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -322,7 +320,7 @@ object mod {
       
       inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      inline def setGroupVarargs(value: EmailAddress*): Self = StObject.set(x, "group", js.Array(value :_*))
+      inline def setGroupVarargs(value: EmailAddress*): Self = StObject.set(x, "group", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -334,12 +332,75 @@ object mod {
     - java.lang.String
     - js.Array[java.lang.String]
     - typings.mailparser.mod.AddressObject
-    - typings.std.Date
+    - js.Date
     - typings.mailparser.mod.StructuredHeader
   */
-  type HeaderValue = _HeaderValue | js.Array[String] | String | Date
+  type HeaderValue = _HeaderValue | js.Array[String] | String | js.Date
   
   type Headers = Map[String, HeaderValue]
+  
+  trait MailParserOptions
+    extends StObject
+       with TransformOptions {
+    
+    var Iconv: js.UndefOr[DecoderStream] = js.undefined
+    
+    var formatDateString: js.UndefOr[js.Function1[/* d */ js.Date, String]] = js.undefined
+    
+    var keepCidLinks: js.UndefOr[Boolean] = js.undefined
+    
+    var maxHtmlLengthToParse: js.UndefOr[Double] = js.undefined
+    
+    var skipHtmlToText: js.UndefOr[Boolean] = js.undefined
+    
+    var skipImageLinks: js.UndefOr[Boolean] = js.undefined
+    
+    var skipTextLinks: js.UndefOr[Boolean] = js.undefined
+    
+    var skipTextToHtml: js.UndefOr[Boolean] = js.undefined
+  }
+  object MailParserOptions {
+    
+    inline def apply(): MailParserOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MailParserOptions]
+    }
+    
+    extension [Self <: MailParserOptions](x: Self) {
+      
+      inline def setFormatDateString(value: /* d */ js.Date => String): Self = StObject.set(x, "formatDateString", js.Any.fromFunction1(value))
+      
+      inline def setFormatDateStringUndefined: Self = StObject.set(x, "formatDateString", js.undefined)
+      
+      inline def setIconv(value: DecoderStream): Self = StObject.set(x, "Iconv", value.asInstanceOf[js.Any])
+      
+      inline def setIconvUndefined: Self = StObject.set(x, "Iconv", js.undefined)
+      
+      inline def setKeepCidLinks(value: Boolean): Self = StObject.set(x, "keepCidLinks", value.asInstanceOf[js.Any])
+      
+      inline def setKeepCidLinksUndefined: Self = StObject.set(x, "keepCidLinks", js.undefined)
+      
+      inline def setMaxHtmlLengthToParse(value: Double): Self = StObject.set(x, "maxHtmlLengthToParse", value.asInstanceOf[js.Any])
+      
+      inline def setMaxHtmlLengthToParseUndefined: Self = StObject.set(x, "maxHtmlLengthToParse", js.undefined)
+      
+      inline def setSkipHtmlToText(value: Boolean): Self = StObject.set(x, "skipHtmlToText", value.asInstanceOf[js.Any])
+      
+      inline def setSkipHtmlToTextUndefined: Self = StObject.set(x, "skipHtmlToText", js.undefined)
+      
+      inline def setSkipImageLinks(value: Boolean): Self = StObject.set(x, "skipImageLinks", value.asInstanceOf[js.Any])
+      
+      inline def setSkipImageLinksUndefined: Self = StObject.set(x, "skipImageLinks", js.undefined)
+      
+      inline def setSkipTextLinks(value: Boolean): Self = StObject.set(x, "skipTextLinks", value.asInstanceOf[js.Any])
+      
+      inline def setSkipTextLinksUndefined: Self = StObject.set(x, "skipTextLinks", js.undefined)
+      
+      inline def setSkipTextToHtml(value: Boolean): Self = StObject.set(x, "skipTextToHtml", value.asInstanceOf[js.Any])
+      
+      inline def setSkipTextToHtmlUndefined: Self = StObject.set(x, "skipTextToHtml", js.undefined)
+    }
+  }
   
   trait MessageText extends StObject {
     
@@ -403,19 +464,20 @@ object mod {
     var attachments: js.Array[Attachment]
     
     /**
-      * An address object for the `Bcc:` header (usually not present).
+      * An address object or array of address objects for the `Bcc:` header.
+      * (usually not present)
       */
-    var bcc: js.UndefOr[AddressObject] = js.undefined
+    var bcc: js.UndefOr[AddressObject | js.Array[AddressObject]] = js.undefined
     
     /**
-      * An address object for the `Cc:` header.
+      * An address object or array of address objects for the `Cc:` header.
       */
-    var cc: js.UndefOr[AddressObject] = js.undefined
+    var cc: js.UndefOr[AddressObject | js.Array[AddressObject]] = js.undefined
     
     /**
       * A Date object for the `Date:` header.
       */
-    var date: js.UndefOr[Date] = js.undefined
+    var date: js.UndefOr[js.Date] = js.undefined
     
     /**
       * An address object for the `From:` header.
@@ -463,11 +525,11 @@ object mod {
     var priority: js.UndefOr[normal | low | high] = js.undefined
     
     /**
-      * An array of referenced Message-ID values.
+      * Either an array of two or more referenced Message-ID values or a single Message-ID value.
       *
       * Not set if no reference values present.
       */
-    var references: js.UndefOr[js.Array[String]] = js.undefined
+    var references: js.UndefOr[js.Array[String] | String] = js.undefined
     
     /**
       * An address object for the `Reply-To:` header.
@@ -490,9 +552,9 @@ object mod {
     var textAsHtml: js.UndefOr[String] = js.undefined
     
     /**
-      * An address object for the `To:` header.
+      * An address object or array of address objects for the `To:` header.
       */
-    var to: js.UndefOr[AddressObject] = js.undefined
+    var to: js.UndefOr[AddressObject | js.Array[AddressObject]] = js.undefined
   }
   object ParsedMail {
     
@@ -510,17 +572,21 @@ object mod {
       
       inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
-      inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value*))
       
-      inline def setBcc(value: AddressObject): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
+      inline def setBcc(value: AddressObject | js.Array[AddressObject]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
       inline def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
       
-      inline def setCc(value: AddressObject): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
+      inline def setBccVarargs(value: AddressObject*): Self = StObject.set(x, "bcc", js.Array(value*))
+      
+      inline def setCc(value: AddressObject | js.Array[AddressObject]): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
       
       inline def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setCcVarargs(value: AddressObject*): Self = StObject.set(x, "cc", js.Array(value*))
+      
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -530,7 +596,7 @@ object mod {
       
       inline def setHeaderLines(value: HeaderLines): Self = StObject.set(x, "headerLines", value.asInstanceOf[js.Any])
       
-      inline def setHeaderLinesVarargs(value: Key*): Self = StObject.set(x, "headerLines", js.Array(value :_*))
+      inline def setHeaderLinesVarargs(value: Key*): Self = StObject.set(x, "headerLines", js.Array(value*))
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -548,11 +614,11 @@ object mod {
       
       inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      inline def setReferences(value: js.Array[String]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+      inline def setReferences(value: js.Array[String] | String): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
       
       inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
       
-      inline def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value :_*))
+      inline def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value*))
       
       inline def setReplyTo(value: AddressObject): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
       
@@ -570,32 +636,15 @@ object mod {
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setTo(value: AddressObject): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: AddressObject | js.Array[AddressObject]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
       inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      
+      inline def setToVarargs(value: AddressObject*): Self = StObject.set(x, "to", js.Array(value*))
     }
   }
   
-  trait SimpleParserOptions
-    extends StObject
-       with TransformOptions {
-    
-    var keepCidLinks: js.UndefOr[Boolean] = js.undefined
-  }
-  object SimpleParserOptions {
-    
-    inline def apply(): SimpleParserOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SimpleParserOptions]
-    }
-    
-    extension [Self <: SimpleParserOptions](x: Self) {
-      
-      inline def setKeepCidLinks(value: Boolean): Self = StObject.set(x, "keepCidLinks", value.asInstanceOf[js.Any])
-      
-      inline def setKeepCidLinksUndefined: Self = StObject.set(x, "keepCidLinks", js.undefined)
-    }
-  }
+  type SimpleParserOptions = MailParserOptions
   
   type Source = Buffer | Stream | String
   

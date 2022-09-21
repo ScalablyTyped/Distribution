@@ -4,29 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Mock function definition.  Mocks must refer to a function declared by the
-  * target service. The type of the function args and result will be inferred
-  * at test time. If either the arg or result values are not compatible with
-  * function type declaration, the request will be considered invalid.  More
-  * than one `FunctionMock` may be provided for a given function name so long
-  * as the `Arg` matchers are distinct. There may be only one function for a
-  * given overload where all `Arg` values are `Arg.any_value`.
-  */
 trait SchemaFunctionMock extends StObject {
   
   /**
-    * The list of `Arg` values to match. The order in which the arguments are
-    * provided is the order in which they must appear in the function
-    * invocation.
+    * The list of `Arg` values to match. The order in which the arguments are provided is the order in which they must appear in the function invocation.
     */
   var args: js.UndefOr[js.Array[SchemaArg]] = js.undefined
   
   /**
-    * The name of the function.  The function name must match one provided by a
-    * service declaration.
+    * The name of the function. The function name must match one provided by a service declaration.
     */
-  var function: js.UndefOr[String] = js.undefined
+  var function: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The mock result of the function call.
@@ -46,9 +34,11 @@ object SchemaFunctionMock {
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: SchemaArg*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: SchemaArg*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    
+    inline def setFunctionNull: Self = StObject.set(x, "function", null)
     
     inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     

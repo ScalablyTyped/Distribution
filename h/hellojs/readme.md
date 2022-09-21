@@ -1,7 +1,7 @@
 
 # Scala.js typings for hellojs
 
-Typings are for version 1.16
+Typings are for version 1.19
 
 ## Library description:
 A clientside Javascript library for standardizing requests to OAuth2 web services (and OAuth1 - with a shim)
@@ -10,10 +10,10 @@ A clientside Javascript library for standardizing requests to OAuth2 web service
 | ------------------ | :-------------: |
 | Full name          | hellojs |
 | Keywords           | oauth, oauth1.0, oauth2, api, facebooks, google, windows, linkedin, twitter |
-| # releases         | 5 |
-| # dependents       | 13 |
-| # downloads        | 320436 |
-| # stars            | 3 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 35122.333333333336 |
+| # stars            | 4613.0 |
 
 ## Links
 - [Homepage](https://adodson.com/hello.js)

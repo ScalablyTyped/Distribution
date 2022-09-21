@@ -10,12 +10,14 @@ object vertexOutputBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Vertex/vertexOutputBlock", "VertexOutputBlock")
   @js.native
-  class VertexOutputBlock protected () extends NodeMaterialBlock {
+  open class VertexOutputBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new VertexOutputBlock
       * @param name defines the block name
       */
     def this(name: String) = this()
+    
+    /* private */ var _isLogarithmicDepthEnabled: Any = js.native
     
     /**
       * Gets the vector input component

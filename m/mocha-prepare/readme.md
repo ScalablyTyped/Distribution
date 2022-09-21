@@ -10,10 +10,10 @@ Add prepare/unprepare async hooks to your Mocha test environment.
 | ------------------ | :-------------: |
 | Full name          | mocha-prepare |
 | Keywords           | mocha, async, prepare |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 432034 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 36198.0 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/enobufs/mocha-prepare#readme)

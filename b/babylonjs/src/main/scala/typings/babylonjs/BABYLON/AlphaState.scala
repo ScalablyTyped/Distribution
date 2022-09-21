@@ -1,6 +1,6 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.WebGLRenderingContext
+import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AlphaState extends StObject {
   
-  /* private */ var _alphaBlend: js.Any = js.native
+  /* private */ var _alphaBlend: Any = js.native
   
-  /* private */ var _blendConstants: js.Any = js.native
+  var _blendConstants: js.Array[Nullable[Double]] = js.native
   
-  /* private */ var _blendEquationParameters: js.Any = js.native
+  var _blendEquationParameters: js.Array[Nullable[Double]] = js.native
   
-  /* private */ var _blendFunctionParameters: js.Any = js.native
+  var _blendFunctionParameters: js.Array[Nullable[Double]] = js.native
   
-  /* private */ var _isAlphaBlendDirty: js.Any = js.native
+  /* private */ var _isAlphaBlendDirty: Any = js.native
   
-  /* private */ var _isBlendConstantsDirty: js.Any = js.native
+  var _isBlendConstantsDirty: Boolean = js.native
   
-  /* private */ var _isBlendEquationParametersDirty: js.Any = js.native
+  /* private */ var _isBlendEquationParametersDirty: Any = js.native
   
-  /* private */ var _isBlendFunctionParametersDirty: js.Any = js.native
+  /* private */ var _isBlendFunctionParametersDirty: Any = js.native
   
   def alphaBlend: Boolean = js.native
   def alphaBlend_=(value: Boolean): Unit = js.native

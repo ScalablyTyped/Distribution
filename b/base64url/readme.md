@@ -10,10 +10,10 @@ For encoding to/from base64urls
 | ------------------ | :-------------: |
 | Full name          | base64url |
 | Keywords           | base64, base64url |
-| # releases         | 2 |
-| # dependents       | 469 |
-| # downloads        | 37906620 |
-| # stars            | 16 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6569306.666666667 |
+| # stars            | 202.0 |
 
 ## Links
 - [Homepage](https://github.com/brianloveswords/base64url#readme)

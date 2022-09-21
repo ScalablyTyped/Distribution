@@ -1,9 +1,17 @@
 package typings.pigpio
 
-import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.EventEmitter
 import typings.pigpio.anon.Alert
 import typings.pigpio.anon.Bits
+import typings.pigpio.pigpioNumbers.`0`
+import typings.pigpio.pigpioNumbers.`1`
+import typings.pigpio.pigpioNumbers.`2`
+import typings.pigpio.pigpioNumbers.`3`
+import typings.pigpio.pigpioNumbers.`4`
+import typings.pigpio.pigpioNumbers.`8`
+import typings.pigpio.pigpioStrings.alert
+import typings.pigpio.pigpioStrings.interrupt
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +30,21 @@ object mod {
   @js.native
   val CLOCK_PWM: Double = js.native
   
+  @JSImport("pigpio", "DISABLE_ALERT")
+  @js.native
+  val DISABLE_ALERT: `8` = js.native
+  
+  @JSImport("pigpio", "DISABLE_FIFO_IF")
+  @js.native
+  val DISABLE_FIFO_IF: `1` = js.native
+  
+  @JSImport("pigpio", "DISABLE_SOCK_IF")
+  @js.native
+  val DISABLE_SOCK_IF: `2` = js.native
+  
   @JSImport("pigpio", "Gpio")
   @js.native
-  class Gpio protected () extends EventEmitter {
+  open class Gpio protected () extends EventEmitter {
     /**
       * Returns a new Gpio object for accessing a GPIO
       * @param gpio      an unsigned integer specifying the GPIO number
@@ -32,6 +52,45 @@ object mod {
       */
     def this(gpio: Double) = this()
     def this(gpio: Double, options: Alert) = this()
+    
+    /**
+      * @param level the GPIO level when the state change occurred, 0 or 1
+      * @param tick the time stamp of the state change, an unsigned 32 bit integer
+      * `tick` is the number of microseconds since system boot and it should be accurate to a few microseconds.
+      *
+      * As tick is an unsigned 32 bit quantity it wraps around after 2^32 microseconds, which is approximately 1 hour 12 minutes.
+      *
+      * It's not necessary to worry about wrap around when subtracting one tick from another tick if the JavaScript sign propagating right shift operator >> is used.
+      *
+      * @example <caption>Wrong: simply subtracting startTick from endTick prints -4294967294 which isn't the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log(endTick - startTick); // prints -4294967294 which isn't what we want
+      *
+      * @example <caption>right shifts both startTick and endTick 0 bits to the right before subtracting prints 2 which is the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log((endTick >> 0) - (startTick >> 0)); // prints 2 which is what we want
+      */
+    def addListener(event: alert, listener: js.Function2[/* level */ `0` | `1`, /* tick */ Double, Unit]): this.type = js.native
+    /**
+      * @param level - the GPIO level when the interrupt occurred, 0, 1, or TIMEOUT (2)
+      * @param tick - the time stamp of the state change, an unsigned 32 bit integer
+      * You can find more information about ticks in the event `alert`.
+      *
+      * Emitted on interrupts.
+      *
+      * Interrupts can have an optional timeout.
+      * The level argument passed to the interrupt event listener will be TIMEOUT (2) if the optional interrupt timeout expires.
+      */
+    def addListener(
+      event: interrupt,
+      listener: js.Function2[
+          /* level */ `0` | `1` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Gpio.TIMEOUT */ Any), 
+          /* tick */ Double, 
+          Unit
+        ]
+    ): this.type = js.native
     
     /**
       * The same to #pwmWrite.
@@ -96,7 +155,7 @@ object mod {
     
     /**
       * Returns the real range used for the GPIO.
-      * If hardware PWM is active on the GPIO the reported real range will be approximately 250M divided by the set PWM frequency.
+      * If hardware PWM is active on the GPIO the reported real range will be approximately 250M (375M for the BCM2711) divided by the set PWM frequency.
       */
     def getPwmRealRange(): Double = js.native
     
@@ -113,16 +172,212 @@ object mod {
     
     /**
       * Starts hardware PWM on the GPIO at the specified frequency and dutyCycle. Frequencies above 30MHz are unlikely to work.
-      * @param frequency     an unsigned integer >= 0 and <= 125000000
+      * @param frequency     an unsigned integer >= 0 and <= 125000000 (>= 0 and <= 187500000 for the BCM2711)
       * @param dutyCycle     an unsigned integer >= 0 (off) and <= 1000000 (fully on).
       */
     def hardwarePwmWrite(frequency: Double, dutyCycle: Double): Gpio = js.native
+    
+    /**
+      * @param level the GPIO level when the state change occurred, 0 or 1
+      * @param tick the time stamp of the state change, an unsigned 32 bit integer
+      * `tick` is the number of microseconds since system boot and it should be accurate to a few microseconds.
+      *
+      * As tick is an unsigned 32 bit quantity it wraps around after 2^32 microseconds, which is approximately 1 hour 12 minutes.
+      *
+      * It's not necessary to worry about wrap around when subtracting one tick from another tick if the JavaScript sign propagating right shift operator >> is used.
+      *
+      * @example <caption>Wrong: simply subtracting startTick from endTick prints -4294967294 which isn't the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log(endTick - startTick); // prints -4294967294 which isn't what we want
+      *
+      * @example <caption>right shifts both startTick and endTick 0 bits to the right before subtracting prints 2 which is the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log((endTick >> 0) - (startTick >> 0)); // prints 2 which is what we want
+      */
+    @JSName("listeners")
+    def listeners_alert(event: alert): js.Array[js.Function2[/* level */ `0` | `1`, /* tick */ Double, Unit]] = js.native
+    /**
+      * @param level - the GPIO level when the interrupt occurred, 0, 1, or TIMEOUT (2)
+      * @param tick - the time stamp of the state change, an unsigned 32 bit integer
+      * You can find more information about ticks in the event `alert`.
+      *
+      * Emitted on interrupts.
+      *
+      * Interrupts can have an optional timeout.
+      * The level argument passed to the interrupt event listener will be TIMEOUT (2) if the optional interrupt timeout expires.
+      */
+    @JSName("listeners")
+    def listeners_interrupt(event: interrupt): js.Array[
+        js.Function2[
+          /* level */ `0` | `1` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Gpio.TIMEOUT */ Any), 
+          /* tick */ Double, 
+          Unit
+        ]
+      ] = js.native
     
     /**
       * Sets the GPIO mode.
       * @param mode  INPUT, OUTPUT, ALT0, ALT1, ALT2, ALT3, ALT4, or ALT5
       */
     def mode(mode: Double): Gpio = js.native
+    
+    /**
+      * @param level the GPIO level when the state change occurred, 0 or 1
+      * @param tick the time stamp of the state change, an unsigned 32 bit integer
+      * `tick` is the number of microseconds since system boot and it should be accurate to a few microseconds.
+      *
+      * As tick is an unsigned 32 bit quantity it wraps around after 2^32 microseconds, which is approximately 1 hour 12 minutes.
+      *
+      * It's not necessary to worry about wrap around when subtracting one tick from another tick if the JavaScript sign propagating right shift operator >> is used.
+      *
+      * @example <caption>Wrong: simply subtracting startTick from endTick prints -4294967294 which isn't the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log(endTick - startTick); // prints -4294967294 which isn't what we want
+      *
+      * @example <caption>right shifts both startTick and endTick 0 bits to the right before subtracting prints 2 which is the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log((endTick >> 0) - (startTick >> 0)); // prints 2 which is what we want
+      */
+    def on(event: alert, listener: js.Function2[/* level */ `0` | `1`, /* tick */ Double, Unit]): this.type = js.native
+    /**
+      * @param level - the GPIO level when the interrupt occurred, 0, 1, or TIMEOUT (2)
+      * @param tick - the time stamp of the state change, an unsigned 32 bit integer
+      * You can find more information about ticks in the event `alert`.
+      *
+      * Emitted on interrupts.
+      *
+      * Interrupts can have an optional timeout.
+      * The level argument passed to the interrupt event listener will be TIMEOUT (2) if the optional interrupt timeout expires.
+      */
+    def on(
+      event: interrupt,
+      listener: js.Function2[
+          /* level */ `0` | `1` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Gpio.TIMEOUT */ Any), 
+          /* tick */ Double, 
+          Unit
+        ]
+    ): this.type = js.native
+    
+    /**
+      * @param level the GPIO level when the state change occurred, 0 or 1
+      * @param tick the time stamp of the state change, an unsigned 32 bit integer
+      * `tick` is the number of microseconds since system boot and it should be accurate to a few microseconds.
+      *
+      * As tick is an unsigned 32 bit quantity it wraps around after 2^32 microseconds, which is approximately 1 hour 12 minutes.
+      *
+      * It's not necessary to worry about wrap around when subtracting one tick from another tick if the JavaScript sign propagating right shift operator >> is used.
+      *
+      * @example <caption>Wrong: simply subtracting startTick from endTick prints -4294967294 which isn't the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log(endTick - startTick); // prints -4294967294 which isn't what we want
+      *
+      * @example <caption>right shifts both startTick and endTick 0 bits to the right before subtracting prints 2 which is the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log((endTick >> 0) - (startTick >> 0)); // prints 2 which is what we want
+      */
+    def once(event: alert, listener: js.Function2[/* level */ `0` | `1`, /* tick */ Double, Unit]): this.type = js.native
+    /**
+      * @param level - the GPIO level when the interrupt occurred, 0, 1, or TIMEOUT (2)
+      * @param tick - the time stamp of the state change, an unsigned 32 bit integer
+      * You can find more information about ticks in the event `alert`.
+      *
+      * Emitted on interrupts.
+      *
+      * Interrupts can have an optional timeout.
+      * The level argument passed to the interrupt event listener will be TIMEOUT (2) if the optional interrupt timeout expires.
+      */
+    def once(
+      event: interrupt,
+      listener: js.Function2[
+          /* level */ `0` | `1` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Gpio.TIMEOUT */ Any), 
+          /* tick */ Double, 
+          Unit
+        ]
+    ): this.type = js.native
+    
+    /**
+      * @param level the GPIO level when the state change occurred, 0 or 1
+      * @param tick the time stamp of the state change, an unsigned 32 bit integer
+      * `tick` is the number of microseconds since system boot and it should be accurate to a few microseconds.
+      *
+      * As tick is an unsigned 32 bit quantity it wraps around after 2^32 microseconds, which is approximately 1 hour 12 minutes.
+      *
+      * It's not necessary to worry about wrap around when subtracting one tick from another tick if the JavaScript sign propagating right shift operator >> is used.
+      *
+      * @example <caption>Wrong: simply subtracting startTick from endTick prints -4294967294 which isn't the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log(endTick - startTick); // prints -4294967294 which isn't what we want
+      *
+      * @example <caption>right shifts both startTick and endTick 0 bits to the right before subtracting prints 2 which is the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log((endTick >> 0) - (startTick >> 0)); // prints 2 which is what we want
+      */
+    def prependListener(event: alert, listener: js.Function2[/* level */ `0` | `1`, /* tick */ Double, Unit]): this.type = js.native
+    /**
+      * @param level - the GPIO level when the interrupt occurred, 0, 1, or TIMEOUT (2)
+      * @param tick - the time stamp of the state change, an unsigned 32 bit integer
+      * You can find more information about ticks in the event `alert`.
+      *
+      * Emitted on interrupts.
+      *
+      * Interrupts can have an optional timeout.
+      * The level argument passed to the interrupt event listener will be TIMEOUT (2) if the optional interrupt timeout expires.
+      */
+    def prependListener(
+      event: interrupt,
+      listener: js.Function2[
+          /* level */ `0` | `1` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Gpio.TIMEOUT */ Any), 
+          /* tick */ Double, 
+          Unit
+        ]
+    ): this.type = js.native
+    
+    /**
+      * @param level the GPIO level when the state change occurred, 0 or 1
+      * @param tick the time stamp of the state change, an unsigned 32 bit integer
+      * `tick` is the number of microseconds since system boot and it should be accurate to a few microseconds.
+      *
+      * As tick is an unsigned 32 bit quantity it wraps around after 2^32 microseconds, which is approximately 1 hour 12 minutes.
+      *
+      * It's not necessary to worry about wrap around when subtracting one tick from another tick if the JavaScript sign propagating right shift operator >> is used.
+      *
+      * @example <caption>Wrong: simply subtracting startTick from endTick prints -4294967294 which isn't the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log(endTick - startTick); // prints -4294967294 which isn't what we want
+      *
+      * @example <caption>right shifts both startTick and endTick 0 bits to the right before subtracting prints 2 which is the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log((endTick >> 0) - (startTick >> 0)); // prints 2 which is what we want
+      */
+    def prependOnceListener(event: alert, listener: js.Function2[/* level */ `0` | `1`, /* tick */ Double, Unit]): this.type = js.native
+    /**
+      * @param level - the GPIO level when the interrupt occurred, 0, 1, or TIMEOUT (2)
+      * @param tick - the time stamp of the state change, an unsigned 32 bit integer
+      * You can find more information about ticks in the event `alert`.
+      *
+      * Emitted on interrupts.
+      *
+      * Interrupts can have an optional timeout.
+      * The level argument passed to the interrupt event listener will be TIMEOUT (2) if the optional interrupt timeout expires.
+      */
+    def prependOnceListener(
+      event: interrupt,
+      listener: js.Function2[
+          /* level */ `0` | `1` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Gpio.TIMEOUT */ Any), 
+          /* tick */ Double, 
+          Unit
+        ]
+    ): this.type = js.native
     
     /**
       * Sets or clears the resistor pull type for the GPIO.
@@ -147,6 +402,85 @@ object mod {
       * @param dutyCycle     an unsigned integer >= 0 (off) and <= range (fully on). range defaults to 255.
       */
     def pwmWrite(dutyCycle: Double): Gpio = js.native
+    
+    /**
+      * @param level the GPIO level when the state change occurred, 0 or 1
+      * @param tick the time stamp of the state change, an unsigned 32 bit integer
+      * `tick` is the number of microseconds since system boot and it should be accurate to a few microseconds.
+      *
+      * As tick is an unsigned 32 bit quantity it wraps around after 2^32 microseconds, which is approximately 1 hour 12 minutes.
+      *
+      * It's not necessary to worry about wrap around when subtracting one tick from another tick if the JavaScript sign propagating right shift operator >> is used.
+      *
+      * @example <caption>Wrong: simply subtracting startTick from endTick prints -4294967294 which isn't the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log(endTick - startTick); // prints -4294967294 which isn't what we want
+      *
+      * @example <caption>right shifts both startTick and endTick 0 bits to the right before subtracting prints 2 which is the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log((endTick >> 0) - (startTick >> 0)); // prints 2 which is what we want
+      */
+    @JSName("rawListeners")
+    def rawListeners_alert(event: alert): js.Array[js.Function2[/* level */ `0` | `1`, /* tick */ Double, Unit]] = js.native
+    /**
+      * @param level - the GPIO level when the interrupt occurred, 0, 1, or TIMEOUT (2)
+      * @param tick - the time stamp of the state change, an unsigned 32 bit integer
+      * You can find more information about ticks in the event `alert`.
+      *
+      * Emitted on interrupts.
+      *
+      * Interrupts can have an optional timeout.
+      * The level argument passed to the interrupt event listener will be TIMEOUT (2) if the optional interrupt timeout expires.
+      */
+    @JSName("rawListeners")
+    def rawListeners_interrupt(event: interrupt): js.Array[
+        js.Function2[
+          /* level */ `0` | `1` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Gpio.TIMEOUT */ Any), 
+          /* tick */ Double, 
+          Unit
+        ]
+      ] = js.native
+    
+    /**
+      * @param level the GPIO level when the state change occurred, 0 or 1
+      * @param tick the time stamp of the state change, an unsigned 32 bit integer
+      * `tick` is the number of microseconds since system boot and it should be accurate to a few microseconds.
+      *
+      * As tick is an unsigned 32 bit quantity it wraps around after 2^32 microseconds, which is approximately 1 hour 12 minutes.
+      *
+      * It's not necessary to worry about wrap around when subtracting one tick from another tick if the JavaScript sign propagating right shift operator >> is used.
+      *
+      * @example <caption>Wrong: simply subtracting startTick from endTick prints -4294967294 which isn't the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log(endTick - startTick); // prints -4294967294 which isn't what we want
+      *
+      * @example <caption>right shifts both startTick and endTick 0 bits to the right before subtracting prints 2 which is the difference we're looking for</caption>
+      * const startTick = 0xffffffff; // 2^32-1 or 4294967295, the max unsigned 32 bit integer
+      * const endTick = 1;
+      * console.log((endTick >> 0) - (startTick >> 0)); // prints 2 which is what we want
+      */
+    def removeListener(event: alert, listener: js.Function2[/* level */ `0` | `1`, /* tick */ Double, Unit]): this.type = js.native
+    /**
+      * @param level - the GPIO level when the interrupt occurred, 0, 1, or TIMEOUT (2)
+      * @param tick - the time stamp of the state change, an unsigned 32 bit integer
+      * You can find more information about ticks in the event `alert`.
+      *
+      * Emitted on interrupts.
+      *
+      * Interrupts can have an optional timeout.
+      * The level argument passed to the interrupt event listener will be TIMEOUT (2) if the optional interrupt timeout expires.
+      */
+    def removeListener(
+      event: interrupt,
+      listener: js.Function2[
+          /* level */ `0` | `1` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Gpio.TIMEOUT */ Any), 
+          /* tick */ Double, 
+          Unit
+        ]
+    ): this.type = js.native
     
     /**
       * Starts servo pulses at 50Hz on the GPIO, 0 (off), 500 (most anti-clockwise) to 2500 (most clockwise)
@@ -261,8 +595,8 @@ object mod {
     
     /*----------------------*
       * gpio numbers
-      *----------------------*
-      / **
+      *----------------------*/
+    /**
       * The smallest GPIO number.
       */
     @JSImport("pigpio", "Gpio.MIN_GPIO")
@@ -334,7 +668,7 @@ object mod {
     * Returns a new GpioBank object for accessing up to 32 GPIOs as one operation.
     * @param bank  BANK1 or BANK2 (optional, defaults to BANK1)
     */
-  class GpioBank () extends StObject {
+  open class GpioBank () extends StObject {
     def this(bank: Double) = this()
     
     /**
@@ -383,13 +717,17 @@ object mod {
     inline def BANK1_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BANK1")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("pigpio", "LOCALHOST_SOCK_IF")
+  @js.native
+  val LOCALHOST_SOCK_IF: `4` = js.native
+  
   @JSImport("pigpio", "Notifier")
   @js.native
   /**
     * Returns a new Notifier object that contains a stream which provides notifications about state changes on any of GPIOs 0 through 31 concurrently.
     * @param options   Used to configure which GPIOs notifications should be provided for.
     */
-  class Notifier () extends StObject {
+  open class Notifier () extends StObject {
     def this(options: Bits) = this()
     
     /**
@@ -412,7 +750,7 @@ object mod {
     /**
       * Returns the notification stream which is a Readable stream.
       */
-    def stream(): ReadableStream = js.native
+    def stream(): ReadableStream[Any] = js.native
   }
   /* static members */
   object Notifier {
@@ -438,7 +776,25 @@ object mod {
     inline def PI_NTFY_FLAGS_ALIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PI_NTFY_FLAGS_ALIVE")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("pigpio", "WAVE_MODE_ONE_SHOT")
+  @js.native
+  val WAVE_MODE_ONE_SHOT: `0` = js.native
+  
+  @JSImport("pigpio", "WAVE_MODE_ONE_SHOT_SYNC")
+  @js.native
+  val WAVE_MODE_ONE_SHOT_SYNC: `2` = js.native
+  
+  @JSImport("pigpio", "WAVE_MODE_REPEAT")
+  @js.native
+  val WAVE_MODE_REPEAT: `1` = js.native
+  
+  @JSImport("pigpio", "WAVE_MODE_REPEAT_SYNC")
+  @js.native
+  val WAVE_MODE_REPEAT_SYNC: `3` = js.native
+  
   inline def configureClock(microseconds: Double, peripheral: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configureClock")(microseconds.asInstanceOf[js.Any], peripheral.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def configureInterfaces(interfaceMask: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureInterfaces")(interfaceMask.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def configureSocketPort(port: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureSocketPort")(port.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -451,4 +807,82 @@ object mod {
   inline def terminate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("terminate")().asInstanceOf[Unit]
   
   inline def tickDiff(startTick: Double, endTick: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tickDiff")(startTick.asInstanceOf[js.Any], endTick.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def waveAddGeneric(pulses: js.Array[GenericWaveStep]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waveAddGeneric")(pulses.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def waveAddNew(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waveAddNew")().asInstanceOf[Unit]
+  
+  inline def waveChain(chain: js.Array[WaveId | WaveChainCommands]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waveChain")(chain.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def waveClear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waveClear")().asInstanceOf[Unit]
+  
+  inline def waveCreate(): WaveId = ^.asInstanceOf[js.Dynamic].applyDynamic("waveCreate")().asInstanceOf[WaveId]
+  
+  inline def waveDelete(waveId: WaveId): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waveDelete")(waveId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def waveGetCbs(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("waveGetCbs")().asInstanceOf[Double]
+  
+  inline def waveGetHighCbs(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("waveGetHighCbs")().asInstanceOf[Double]
+  
+  inline def waveGetHighMicros(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("waveGetHighMicros")().asInstanceOf[Double]
+  
+  inline def waveGetHighPulses(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("waveGetHighPulses")().asInstanceOf[Double]
+  
+  inline def waveGetMaxCbs(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("waveGetMaxCbs")().asInstanceOf[Double]
+  
+  inline def waveGetMaxMicros(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("waveGetMaxMicros")().asInstanceOf[Double]
+  
+  inline def waveGetMaxPulses(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("waveGetMaxPulses")().asInstanceOf[Double]
+  
+  inline def waveGetMicros(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("waveGetMicros")().asInstanceOf[Double]
+  
+  inline def waveGetPulses(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("waveGetPulses")().asInstanceOf[Double]
+  
+  inline def waveTxAt(): WaveId = ^.asInstanceOf[js.Dynamic].applyDynamic("waveTxAt")().asInstanceOf[WaveId]
+  
+  inline def waveTxBusy(): `1` | `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("waveTxBusy")().asInstanceOf[`1` | `0`]
+  
+  inline def waveTxSend(waveId: WaveId, waveMode: `0` | `1` | `2` | `3`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("waveTxSend")(waveId.asInstanceOf[js.Any], waveMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def waveTxStop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waveTxStop")().asInstanceOf[Unit]
+  
+  trait GenericWaveStep extends StObject {
+    
+    /**
+      * an unsigned integer specifying the GPIO number to be turned off.
+      * 0 means don't change
+      */
+    var gpioOff: Double
+    
+    /**
+      * an unsigned integer specifying the GPIO number to be turned on.
+      * 0 means don't change
+      */
+    var gpioOn: Double
+    
+    /**
+      * an unsigned integer specifying the pulse length in microseconds.
+      */
+    var usDelay: Double
+  }
+  object GenericWaveStep {
+    
+    inline def apply(gpioOff: Double, gpioOn: Double, usDelay: Double): GenericWaveStep = {
+      val __obj = js.Dynamic.literal(gpioOff = gpioOff.asInstanceOf[js.Any], gpioOn = gpioOn.asInstanceOf[js.Any], usDelay = usDelay.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GenericWaveStep]
+    }
+    
+    extension [Self <: GenericWaveStep](x: Self) {
+      
+      inline def setGpioOff(value: Double): Self = StObject.set(x, "gpioOff", value.asInstanceOf[js.Any])
+      
+      inline def setGpioOn(value: Double): Self = StObject.set(x, "gpioOn", value.asInstanceOf[js.Any])
+      
+      inline def setUsDelay(value: Double): Self = StObject.set(x, "usDelay", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type WaveChainCommands = Double
+  
+  type WaveId = Double
 }

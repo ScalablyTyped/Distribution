@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@aws-sdk/util-defaults-mode-node" : "3.171.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@aws-sdk/util-defaults-mode-node" : "3.171.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

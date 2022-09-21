@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeLimitsOutput extends StObject {
   
   /**
+    *  Indicates the number of data streams with the on-demand capacity mode.
+    */
+  var OnDemandStreamCount: OnDemandStreamCountObject
+  
+  /**
+    *  The maximum number of data streams with the on-demand capacity mode. 
+    */
+  var OnDemandStreamCountLimit: OnDemandStreamCountLimitObject
+  
+  /**
     * The number of open shards.
     */
   var OpenShardCount: ShardCountObject
@@ -18,12 +28,21 @@ trait DescribeLimitsOutput extends StObject {
 }
 object DescribeLimitsOutput {
   
-  inline def apply(OpenShardCount: ShardCountObject, ShardLimit: ShardCountObject): DescribeLimitsOutput = {
-    val __obj = js.Dynamic.literal(OpenShardCount = OpenShardCount.asInstanceOf[js.Any], ShardLimit = ShardLimit.asInstanceOf[js.Any])
+  inline def apply(
+    OnDemandStreamCount: OnDemandStreamCountObject,
+    OnDemandStreamCountLimit: OnDemandStreamCountLimitObject,
+    OpenShardCount: ShardCountObject,
+    ShardLimit: ShardCountObject
+  ): DescribeLimitsOutput = {
+    val __obj = js.Dynamic.literal(OnDemandStreamCount = OnDemandStreamCount.asInstanceOf[js.Any], OnDemandStreamCountLimit = OnDemandStreamCountLimit.asInstanceOf[js.Any], OpenShardCount = OpenShardCount.asInstanceOf[js.Any], ShardLimit = ShardLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLimitsOutput]
   }
   
   extension [Self <: DescribeLimitsOutput](x: Self) {
+    
+    inline def setOnDemandStreamCount(value: OnDemandStreamCountObject): Self = StObject.set(x, "OnDemandStreamCount", value.asInstanceOf[js.Any])
+    
+    inline def setOnDemandStreamCountLimit(value: OnDemandStreamCountLimitObject): Self = StObject.set(x, "OnDemandStreamCountLimit", value.asInstanceOf[js.Any])
     
     inline def setOpenShardCount(value: ShardCountObject): Self = StObject.set(x, "OpenShardCount", value.asInstanceOf[js.Any])
     

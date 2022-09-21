@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NavigateToMiniProgramArgs
   extends StObject
-     with AsyncCallback[Unit] {
+     with AsyncVoidCallback {
   
   var appId: String
   
@@ -14,7 +14,7 @@ trait NavigateToMiniProgramArgs
     * The extra data that needs to be passed to the target Mini Program,
     * and the target Mini Program can get it in `App.onLaunch()` or `App.onShow()`.
     */
-  var extraData: js.UndefOr[js.Any] = js.undefined
+  var extraData: js.UndefOr[Any] = js.undefined
   
   var path: js.UndefOr[String] = js.undefined
 }
@@ -29,7 +29,7 @@ object NavigateToMiniProgramArgs {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
     inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     

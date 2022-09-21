@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListBackupsResponse extends StObject {
   
   /**
-    * A list of backups in the project for the specified location. If the {location} value in the request is "-", the response contains a list of backups from all locations. If any
+    * A list of backups in the project for the specified location. If the `{location}` value in the request is "-", the response contains a list of backups from all locations. If any
     * location is unreachable, the response will only return backups in reachable locations and the "unreachable" field will be populated with a list of unreachable locations.
     */
   var backups: js.UndefOr[js.Array[Backup]] = js.undefined
@@ -31,7 +31,7 @@ object ListBackupsResponse {
     
     inline def setBackupsUndefined: Self = StObject.set(x, "backups", js.undefined)
     
-    inline def setBackupsVarargs(value: Backup*): Self = StObject.set(x, "backups", js.Array(value :_*))
+    inline def setBackupsVarargs(value: Backup*): Self = StObject.set(x, "backups", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
@@ -41,6 +41,6 @@ object ListBackupsResponse {
     
     inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
-    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
+    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value*))
   }
 }

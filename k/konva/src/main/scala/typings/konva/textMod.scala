@@ -1,6 +1,7 @@
 package typings.konva
 
 import typings.konva.anon.HeightNumber
+import typings.konva.anon.LastInParagraph
 import typings.konva.shapeMod.Shape
 import typings.konva.shapeMod.ShapeConfig
 import typings.konva.typesMod.GetSet
@@ -10,22 +11,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object textMod {
   
-  @JSImport("konva/types/shapes/Text", JSImport.Namespace)
+  @JSImport("konva/lib/shapes/Text", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("konva/types/shapes/Text", "Text")
+  @JSImport("konva/lib/shapes/Text", "Text")
   @js.native
-  class Text () extends Shape[TextConfig] {
+  open class Text () extends Shape[TextConfig] {
     def this(config: TextConfig) = this()
     
-    def _addTextLine(line: js.Any): Double = js.native
+    def _addTextLine(line: Any): Double = js.native
     
     def _getContextFont(): String = js.native
     
-    def _getTextWidth(text: js.Any): js.Any = js.native
+    def _getTextWidth(text: Any): Any = js.native
     
-    def _hitFunc(context: js.Any): Unit = js.native
+    def _hitFunc(context: Any): Unit = js.native
     
     var _partialText: String = js.native
     
@@ -33,9 +34,13 @@ object textMod {
     
     var _partialTextY: Double = js.native
     
-    def _sceneFunc(context: js.Any): Unit = js.native
+    def _sceneFunc(context: Any): Unit = js.native
     
     def _setTextData(): Unit = js.native
+    
+    def _shouldHandleEllipsis(currentHeightPx: Double): Boolean = js.native
+    
+    def _tryToAddEllipsisToLastLine(): Unit = js.native
     
     def align(): String = js.native
     def align(v: String): this.type = js.native
@@ -67,7 +72,7 @@ object textMod {
     @JSName("fontVariant")
     var fontVariant_Original: GetSet[String, this.type] = js.native
     
-    def getHeight(): js.Any = js.native
+    def getHeight(): Any = js.native
     
     def getStrokeScaleEnabled(): Boolean = js.native
     
@@ -75,7 +80,7 @@ object textMod {
     
     def getTextWidth(): Double = js.native
     
-    def getWidth(): js.Any = js.native
+    def getWidth(): Any = js.native
     
     def letterSpacing(): Double = js.native
     def letterSpacing(v: Double): this.type = js.native
@@ -87,19 +92,19 @@ object textMod {
     @JSName("lineHeight")
     var lineHeight_Original: GetSet[Double, this.type] = js.native
     
-    def measureSize(text: js.Any): HeightNumber = js.native
+    def measureSize(text: Any): HeightNumber = js.native
     
     def padding(): Double = js.native
     def padding(v: Double): this.type = js.native
     @JSName("padding")
     var padding_Original: GetSet[Double, this.type] = js.native
     
-    def setText(text: js.Any): this.type = js.native
+    def setText(text: Any): this.type = js.native
     
     def text(): String = js.native
     def text(v: String): this.type = js.native
     
-    var textArr: js.Array[typings.konva.anon.Text] = js.native
+    var textArr: js.Array[LastInParagraph] = js.native
     
     def textDecoration(): String = js.native
     def textDecoration(v: String): this.type = js.native
@@ -141,6 +146,8 @@ object textMod {
     var fontStyle: js.UndefOr[String] = js.undefined
     
     var fontVariant: js.UndefOr[String] = js.undefined
+    
+    var letterSpacing: js.UndefOr[Double] = js.undefined
     
     var lineHeight: js.UndefOr[Double] = js.undefined
     
@@ -186,6 +193,10 @@ object textMod {
       inline def setFontVariant(value: String): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
       
       inline def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
+      
+      inline def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+      
+      inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
       
       inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       

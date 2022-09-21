@@ -12,7 +12,7 @@ object useNavigationStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](selector: Selector[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def default[ParamList /* <: ParamListBase */, T](selector: Selector[ParamList, T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  type Selector[T] = js.Function1[/* state */ NavigationState[ParamListBase], T]
+  type Selector[ParamList /* <: ParamListBase */, T] = js.Function1[/* state */ NavigationState[ParamList], T]
 }

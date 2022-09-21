@@ -1,5 +1,17 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.fridaGum.fridaGumBooleans.`true`
+import typings.fridaGum.fridaGumStrings.DotDotDot
+import typings.fridaGum.fridaGumStrings.`apsr-nzcvq`
+import typings.fridaGum.fridaGumStrings.block
+import typings.fridaGum.fridaGumStrings.call
+import typings.fridaGum.fridaGumStrings.compile
+import typings.fridaGum.fridaGumStrings.exec
+import typings.fridaGum.fridaGumStrings.ret
+import typings.fridaGum.fridaGumStrings.stop
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fridaGum.Int64
   - typings.fridaGum.NativePointerValue
 */
-type Arm64CallArgument = typings.fridaGum._Arm64CallArgument | scala.Double
+type Arm64CallArgument = _Arm64CallArgument | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.fridaGum.ArmRegister
@@ -21,45 +33,78 @@ type Arm64CallArgument = typings.fridaGum._Arm64CallArgument | scala.Double
   - typings.fridaGum.Int64
   - typings.fridaGum.NativePointerValue
 */
-type ArmCallArgument = typings.fridaGum._ArmCallArgument | scala.Double
+type ArmCallArgument = _ArmCallArgument | Double
 
-type ArmSystemRegister = typings.fridaGum.fridaGumStrings.`apsr-nzcvq`
+type ArmSystemRegister = `apsr-nzcvq`
 
-type CSymbols = org.scalablytyped.runtime.StringDictionary[typings.fridaGum.NativePointerValue]
+/**
+  * Preprocessor defines present when constructing a CModule from C source code.
+  *
+  * The mapping to GCC-style command-line arguments depends on the type of the value:
+  * `string`: `-Dname=value`
+  * `true`: `-Dname`
+  */
+type CModuleDefines = StringDictionary[String | `true`]
 
-type EnumerateAction = typings.fridaGum.fridaGumStrings.stop
+/**
+  * C headers present when constructing a CModule from C source code.
+  *
+  * The `name` is a relative filesystem path, and the value is the contents of
+  * the header.
+  */
+type CModuleHeaders = StringDictionary[String]
 
-type ExceptionHandlerCallback = js.Function1[/* exception */ typings.fridaGum.ExceptionDetails, scala.Boolean | scala.Unit]
+type CSymbols = StringDictionary[NativePointerValue]
+
+type EnumerateAction = stop
+
+type ExceptionHandlerCallback = js.Function1[/* exception */ ExceptionDetails, Boolean | Unit]
+
+type GetNativeCallbackArgumentValue[T /* <: NativeCallbackArgumentType */] = GetValue[
+NativeCallbackArgumentTypeMap, 
+NativeCallbackArgumentValue, 
+NativeCallbackArgumentType, 
+T]
+
+type GetNativeCallbackReturnValue[T /* <: NativeCallbackReturnType */] = GetValue[NativeCallbackReturnTypeMap, NativeCallbackReturnValue, NativeCallbackReturnType, T]
+
+type GetNativeFunctionArgumentValue[T /* <: NativeFunctionArgumentType */] = GetValue[
+NativeFunctionArgumentTypeMap, 
+NativeFunctionArgumentValue, 
+NativeFunctionArgumentType, 
+T]
+
+type GetNativeFunctionReturnValue[T /* <: NativeFunctionReturnType */] = GetValue[NativeFunctionReturnTypeMap, NativeFunctionReturnValue, NativeFunctionReturnType, T]
+
+type GetValue[Map, Value, Type, T /* <: Type */] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+{[ P in keyof T ]: T[P] extends Type? frida-gum.GetValue<Map, Value, Type, T[P]> : never}
+  */ typings.fridaGum.fridaGumStrings.GetValue & TopLevel[Any]) | (/* import warning: importer.ImportType#apply Failed type conversion: Map[T] */ js.Any) | Value
 
 /**
   * Opaque ID returned by `setImmediate()`. Pass it to `clearImmediate()` to cancel a pending `setImmediate()`.
   */
-type ImmediateId = scala.Double
+type ImmediateId = Double
 
 /**
   * Callback to invoke when an instruction is about to be executed.
   */
-type InstructionProbeCallback = js.ThisFunction1[
-/* this */ typings.fridaGum.InvocationContext, 
-/* args */ typings.fridaGum.InvocationArguments, 
-scala.Unit]
+type InstructionProbeCallback = js.ThisFunction1[/* this */ InvocationContext, /* args */ InvocationArguments, Unit]
 
 /**
   * Opaque ID returned by `setInterval()`. Pass it to `clearInterval()` to cancel a pending `setInterval()`.
   */
-type IntervalId = scala.Double
+type IntervalId = Double
 
 /**
   * Virtual array providing access to the argument list. Agnostic to the number of arguments and their types.
   */
-type InvocationArguments = js.Array[typings.fridaGum.NativePointer]
+type InvocationArguments = js.Array[NativePointer]
 
-type MemoryPatchApplyCallback = js.Function1[/* code */ typings.fridaGum.NativePointer, scala.Unit]
+type MemoryAllocOptions = (Record[Any, scala.Nothing]) | MemoryAllocNearOptions
 
-type MessageCallback = js.Function2[
-/* message */ js.Any, 
-/* data */ typings.fridaGum.ArrayBuffer | scala.Null, 
-scala.Unit]
+type MemoryPatchApplyCallback = js.Function1[/* code */ NativePointer, Unit]
+
+type MessageCallback = js.Function2[/* message */ Any, /* data */ ArrayBuffer | Null, Unit]
 
 /* Rewritten from type alias, can be one of: 
   - typings.fridaGum.MipsRegister
@@ -68,180 +113,157 @@ scala.Unit]
   - typings.fridaGum.Int64
   - typings.fridaGum.NativePointerValue
 */
-type MipsCallArgument = typings.fridaGum._MipsCallArgument | scala.Double
+type MipsCallArgument = _MipsCallArgument | Double
 
-type ModuleMapFilter = js.Function1[/* m */ typings.fridaGum.Module, scala.Boolean]
+type ModuleMapFilter = js.Function1[/* m */ Module, Boolean]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.fridaGum.NativePointerValue
-  - typings.fridaGum.UInt64
-  - typings.fridaGum.Int64
-  - scala.Double
-  - scala.Boolean
-  - js.Array[js.Any]
-*/
-type NativeArgumentValue = typings.fridaGum._NativeArgumentValue | js.Array[js.Any] | scala.Double | scala.Boolean
+type NativeCallback[RetType /* <: NativeCallbackReturnType */, ArgTypes /* <: js.Array[Any | NativeCallbackArgumentType] */] = NativePointer
 
-type NativeCallback = typings.fridaGum.NativePointer
+type NativeCallbackArgumentType = RecursiveKeysOf[NativeCallbackArgumentTypeMap]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.fridaGum.NativePointer
-  - typings.fridaGum.UInt64
-  - typings.fridaGum.Int64
-  - scala.Double
-  - scala.Boolean
-  - js.Array[js.Any]
-*/
-type NativeReturnValue = typings.fridaGum._NativeReturnValue | js.Array[js.Any] | scala.Double | scala.Boolean
+type NativeCallbackArgumentValue = RecursiveValuesOf[NativeCallbackArgumentTypeMap]
 
-type NativeType = java.lang.String | js.Array[js.Any]
+type NativeCallbackImplementation[RetType /* <: NativeCallbackReturnValue */, ArgTypes /* <: js.Array[Any | NativeCallbackArgumentValue] */] = js.ThisFunction1[/* this */ CallbackContext | InvocationContext, /* args */ ArgTypes, RetType]
+
+type NativeCallbackReturnType = RecursiveKeysOf[NativeCallbackReturnTypeMap]
+
+type NativeCallbackReturnValue = RecursiveValuesOf[NativeCallbackReturnTypeMap]
+
+type NativeFunctionArgumentType = RecursiveKeysOf[NativeFunctionArgumentTypeMap]
+
+type NativeFunctionArgumentValue = RecursiveValuesOf[NativeFunctionArgumentTypeMap]
+
+type NativeFunctionReturnType = RecursiveKeysOf[NativeFunctionReturnTypeMap]
+
+type NativeFunctionReturnValue = RecursiveValuesOf[NativeFunctionReturnTypeMap]
 
 /**
   * Given as a string of the form: rwx, where rw- means “readable and writable”.
   */
-type PageProtection = java.lang.String
+type PageProtection = String
 
-type RpcExports = org.scalablytyped.runtime.StringDictionary[typings.fridaGum.AnyFunction]
+type RecursiveKeysOf[T] = (/* keyof T */ String) | js.Array[Any]
 
-type StalkerArm32TransformCallback = js.Function1[
-/* iterator */ typings.fridaGum.StalkerArmIterator | typings.fridaGum.StalkerThumbIterator, 
-scala.Unit]
+type RecursiveValuesOf[T] = (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any) | js.Array[Any]
 
-type StalkerArm64TransformCallback = js.Function1[/* iterator */ typings.fridaGum.StalkerArm64Iterator, scala.Unit]
+type ResolveVariadic[List /* <: js.Array[Any] */] = js.Array[Any] | (Array[
+/* import warning: importer.ImportType#apply Failed type conversion: any[0] */ js.Any])
 
-type StalkerBlockEventBare = js.Tuple2[
-typings.fridaGum.NativePointer | java.lang.String, 
-typings.fridaGum.NativePointer | java.lang.String]
+type RpcExports = StringDictionary[AnyFunction]
 
-type StalkerBlockEventFull = js.Tuple3[
-typings.fridaGum.fridaGumStrings.block, 
-typings.fridaGum.NativePointer | java.lang.String, 
-typings.fridaGum.NativePointer | java.lang.String]
+type StalkerArm32TransformCallback = js.Function1[/* iterator */ StalkerArmIterator | StalkerThumbIterator, Unit]
 
-type StalkerCallEventBare = js.Tuple3[
-typings.fridaGum.NativePointer | java.lang.String, 
-typings.fridaGum.NativePointer | java.lang.String, 
-scala.Double]
+type StalkerArm64TransformCallback = js.Function1[/* iterator */ StalkerArm64Iterator, Unit]
 
-type StalkerCallEventFull = js.Tuple4[
-typings.fridaGum.fridaGumStrings.call, 
-typings.fridaGum.NativePointer | java.lang.String, 
-typings.fridaGum.NativePointer | java.lang.String, 
-scala.Double]
+type StalkerBlockEventBare = js.Tuple2[NativePointer | String, NativePointer | String]
 
-type StalkerCallProbeCallback = typings.fridaGum.StalkerScriptCallProbeCallback | typings.fridaGum.StalkerNativeCallProbeCallback
+type StalkerBlockEventFull = js.Tuple3[block, NativePointer | String, NativePointer | String]
 
-type StalkerCallProbeId = scala.Double
+type StalkerCallEventBare = js.Tuple3[NativePointer | String, NativePointer | String, Double]
 
-type StalkerCallSummary = org.scalablytyped.runtime.StringDictionary[scala.Double]
+type StalkerCallEventFull = js.Tuple4[call, NativePointer | String, NativePointer | String, Double]
 
-type StalkerCallout = typings.fridaGum.StalkerScriptCallout | typings.fridaGum.StalkerNativeCallout
+type StalkerCallProbeCallback = StalkerScriptCallProbeCallback | StalkerNativeCallProbeCallback
 
-type StalkerCompileEventBare = js.Tuple2[
-typings.fridaGum.NativePointer | java.lang.String, 
-typings.fridaGum.NativePointer | java.lang.String]
+type StalkerCallProbeId = Double
 
-type StalkerCompileEventFull = js.Tuple3[
-typings.fridaGum.fridaGumStrings.compile, 
-typings.fridaGum.NativePointer | java.lang.String, 
-typings.fridaGum.NativePointer | java.lang.String]
+type StalkerCallSummary = StringDictionary[Double]
 
-type StalkerEventBare = typings.fridaGum.StalkerCallEventBare | typings.fridaGum.StalkerRetEventBare | typings.fridaGum.StalkerExecEventBare | typings.fridaGum.StalkerBlockEventBare | typings.fridaGum.StalkerCompileEventBare
+type StalkerCallout = StalkerScriptCallout | StalkerNativeCallout
 
-type StalkerEventFull = typings.fridaGum.StalkerCallEventFull | typings.fridaGum.StalkerRetEventFull | typings.fridaGum.StalkerExecEventFull | typings.fridaGum.StalkerBlockEventFull | typings.fridaGum.StalkerCompileEventFull
+type StalkerCompileEventBare = js.Tuple2[NativePointer | String, NativePointer | String]
 
-type StalkerExecEventBare = js.Array[typings.fridaGum.NativePointer | java.lang.String]
+type StalkerCompileEventFull = js.Tuple3[compile, NativePointer | String, NativePointer | String]
 
-type StalkerExecEventFull = js.Tuple2[
-typings.fridaGum.fridaGumStrings.exec, 
-typings.fridaGum.NativePointer | java.lang.String]
+type StalkerEventBare = StalkerCallEventBare | StalkerRetEventBare | StalkerExecEventBare | StalkerBlockEventBare | StalkerCompileEventBare
+
+type StalkerEventFull = StalkerCallEventFull | StalkerRetEventFull | StalkerExecEventFull | StalkerBlockEventFull | StalkerCompileEventFull
+
+type StalkerExecEventBare = js.Array[NativePointer | String]
+
+type StalkerExecEventFull = js.Tuple2[exec, NativePointer | String]
 
 /**
   * Called synchronously when a call is made to the given address.
   *
   * Signature: `void onCall (GumCallSite * site, gpointer user_data)`
   */
-type StalkerNativeCallProbeCallback = typings.fridaGum.NativePointer
+type StalkerNativeCallProbeCallback = NativePointer
 
 /**
   * Signature: `void onAesEnc (GumCpuContext * cpu_context, gpointer user_data)`
   */
-type StalkerNativeCallout = typings.fridaGum.NativePointer
+type StalkerNativeCallout = NativePointer
 
 /**
   * Signature: `void process (const GumEvent * event, GumCpuContext * cpu_context, gpointer user_data)`
   */
-type StalkerNativeEventCallback = typings.fridaGum.NativePointer
+type StalkerNativeEventCallback = NativePointer
 
 /**
   * Signature: `void transform (GumStalkerIterator * iterator, GumStalkerOutput * output, gpointer user_data)`
   */
-type StalkerNativeTransformCallback = typings.fridaGum.NativePointer
+type StalkerNativeTransformCallback = NativePointer
 
-type StalkerRetEventBare = js.Tuple3[
-typings.fridaGum.NativePointer | java.lang.String, 
-typings.fridaGum.NativePointer | java.lang.String, 
-scala.Double]
+type StalkerRetEventBare = js.Tuple3[NativePointer | String, NativePointer | String, Double]
 
-type StalkerRetEventFull = js.Tuple4[
-typings.fridaGum.fridaGumStrings.ret, 
-typings.fridaGum.NativePointer | java.lang.String, 
-typings.fridaGum.NativePointer | java.lang.String, 
-scala.Double]
+type StalkerRetEventFull = js.Tuple4[ret, NativePointer | String, NativePointer | String, Double]
 
 /**
   * Called synchronously when a call is made to the given address.
   */
-type StalkerScriptCallProbeCallback = js.Function1[/* args */ typings.fridaGum.InvocationArguments, scala.Unit]
+type StalkerScriptCallProbeCallback = js.Function1[/* args */ InvocationArguments, Unit]
 
-type StalkerScriptCallout = js.Function1[/* context */ typings.fridaGum.CpuContext, scala.Unit]
+type StalkerScriptCallout = js.Function1[/* context */ CpuContext, Unit]
 
-type StalkerTransformCallback = typings.fridaGum.StalkerX86TransformCallback | typings.fridaGum.StalkerArm32TransformCallback | typings.fridaGum.StalkerArm64TransformCallback | typings.fridaGum.StalkerNativeTransformCallback
+type StalkerTransformCallback = StalkerX86TransformCallback | StalkerArm32TransformCallback | StalkerArm64TransformCallback | StalkerNativeTransformCallback
 
-type StalkerX86TransformCallback = js.Function1[/* iterator */ typings.fridaGum.StalkerX86Iterator, scala.Unit]
+type StalkerX86TransformCallback = js.Function1[/* iterator */ StalkerX86Iterator, Unit]
 
-type ThreadId = scala.Double
+type ThreadId = Double
 
 /**
   * Opaque ID returned by `setTimeout()`. Pass it to `clearTimeout()` to cancel a pending `setTimeout()`.
   */
-type TimeoutId = scala.Double
+type TimeoutId = Double
 
 /**
   * Input stream backed by a file descriptor.
   *
   * Only available on UNIX-like OSes.
   */
-type UnixInputStream = typings.fridaGum.InputStream
+type UnixInputStream = InputStream
 
 /**
   * Output stream backed by a file descriptor.
   *
   * Only available on UNIX-like OSes.
   */
-type UnixOutputStream = typings.fridaGum.OutputStream
+type UnixOutputStream = OutputStream
 
-type WeakRefCallback = js.Function0[scala.Unit]
+type Variadic = DotDotDot
+
+type WeakRefCallback = js.Function0[Unit]
 
 /**
-  * Opaque ID returned by `WeakRef.bind()`. Pass it to `WeakRef.unbind()` to
-  * stop monitoring the target value.
+  * Opaque ID returned by `Script.bindWeak()`. Pass it to `Script.unbindWeak()`
+  * to stop monitoring the target value.
   */
-type WeakRefId = scala.Double
+type WeakRefId = Double
 
 /**
   * Input stream backed by a Windows file handle.
   *
   * Only available on Windows.
   */
-type Win32InputStream = typings.fridaGum.InputStream
+type Win32InputStream = InputStream
 
 /**
   * Output stream backed by a Windows file handle.
   *
   * Only available on Windows.
   */
-type Win32OutputStream = typings.fridaGum.OutputStream
+type Win32OutputStream = OutputStream
 
 /* Rewritten from type alias, can be one of: 
   - typings.fridaGum.X86Register
@@ -250,4 +272,4 @@ type Win32OutputStream = typings.fridaGum.OutputStream
   - typings.fridaGum.Int64
   - typings.fridaGum.NativePointerValue
 */
-type X86CallArgument = typings.fridaGum._X86CallArgument | scala.Double
+type X86CallArgument = _X86CallArgument | Double

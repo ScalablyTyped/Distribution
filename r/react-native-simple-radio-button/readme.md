@@ -10,15 +10,12 @@ simple and useful animated radio button component for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-simple-radio-button |
 | Keywords           | react-component, react-native, ios, android, form, button, radio-button |
-| # releases         | 2 |
-| # dependents       | 12 |
-| # downloads        | 585097 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 79868.33333333333 |
+| # stars            | 445.0 |
 
 ## Links
-- [Homepage](https://github.com/moschan/react-native-simple-radio-button#readme)
-- [Bugs](https://github.com/moschan/react-native-simple-radio-button/issues)
-- [Repository](https://github.com/moschan/react-native-simple-radio-button)
 - [Npm](https://www.npmjs.com/package/react-native-simple-radio-button)
     
 

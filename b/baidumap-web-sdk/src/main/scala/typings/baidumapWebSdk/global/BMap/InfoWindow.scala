@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.InfoWindow")
 @js.native
-class InfoWindow protected ()
+open class InfoWindow protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.InfoWindow {
   def this(content: String) = this()

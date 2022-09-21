@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__app-bar
 
-Typings are for version 2.4.2
+Typings are for version 5.1.3
 
 ## Library description:
 This small package implments the AppBar spec in material design.
@@ -10,10 +10,10 @@ This small package implments the AppBar spec in material design.
 | ------------------ | :-------------: |
 | Full name          | @react-md/app-bar |
 | Keywords           | react-md, material design, react, app bar, appbar, toolbar, component |
-| # releases         | 39 |
-| # dependents       | 4 |
-| # downloads        | 20725 |
-| # stars            | 0 |
+| # releases         | 43 |
+| # dependents       | 0.0 |
+| # downloads        | 6221.0 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/app-bar/demos)

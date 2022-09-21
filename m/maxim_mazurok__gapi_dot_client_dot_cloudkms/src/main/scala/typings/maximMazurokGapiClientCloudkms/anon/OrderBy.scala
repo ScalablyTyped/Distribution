@@ -41,15 +41,15 @@ trait OrderBy extends StObject {
   var orderBy: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. Optional limit on the number of CryptoKeys to include in the response. Further CryptoKeys can subsequently be obtained by including the
-    * ListCryptoKeysResponse.next_page_token in a subsequent request. If unspecified, the server will pick an appropriate default.
+    * Optional. Optional limit on the number of CryptoKeyVersions to include in the response. Further CryptoKeyVersions can subsequently be obtained by including the
+    * ListCryptoKeyVersionsResponse.next_page_token in a subsequent request. If unspecified, the server will pick an appropriate default.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** Optional. Optional pagination token, returned earlier via ListCryptoKeysResponse.next_page_token. */
+  /** Optional. Optional pagination token, returned earlier via ListCryptoKeyVersionsResponse.next_page_token. */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** Required. The resource name of the KeyRing to list, in the format `projects/∗/locations/∗/keyRings/ *`. */
+  /** Required. The resource name of the CryptoKey to list, in the format `projects/ *‍/locations/ *‍/keyRings/ *‍/cryptoKeys/ *`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -64,8 +64,8 @@ trait OrderBy extends StObject {
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
   
-  /** The fields of the primary version to include in the response. */
-  var versionView: js.UndefOr[String] = js.undefined
+  /** The fields to include in the response. */
+  var view: js.UndefOr[String] = js.undefined
 }
 object OrderBy {
   
@@ -138,8 +138,8 @@ object OrderBy {
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
     
-    inline def setVersionView(value: String): Self = StObject.set(x, "versionView", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    inline def setVersionViewUndefined: Self = StObject.set(x, "versionView", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

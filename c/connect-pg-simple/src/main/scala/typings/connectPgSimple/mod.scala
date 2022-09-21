@@ -2,14 +2,12 @@ package typings.connectPgSimple
 
 import typings.connectPgSimple.connectPgSimpleBooleans.`false`
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressSession.mod.SessionData
 import typings.expressSession.mod.SessionOptions
 import typings.expressSession.mod.Store
 import typings.pg.mod.Pool
 import typings.pg.mod.PoolConfig
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +17,15 @@ object mod {
   inline def apply(
     session: js.Function1[
       /* options */ js.UndefOr[SessionOptions], 
-      RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+      RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]
     ]
-  ): js.Any = ^.asInstanceOf[js.Dynamic].apply(session.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  ): Any = ^.asInstanceOf[js.Dynamic].apply(session.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("connect-pg-simple", JSImport.Namespace)
   @js.native
@@ -29,13 +33,13 @@ object mod {
   
   @JSImport("connect-pg-simple", "PGStore")
   @js.native
-  class PGStore () extends Store {
+  open class PGStore () extends Store {
     def this(options: PGStoreOptions) = this()
     
     def close(): Unit = js.native
     
     def pruneSessions(): Unit = js.native
-    def pruneSessions(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def pruneSessions(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     @JSName("touch")
     def touch_MPGStore(sid: String, session: SessionData): Unit = js.native
@@ -50,7 +54,11 @@ object mod {
     // not typed to avoid dependency to "pg-promise" module (which includes its own types)
     var conString: js.UndefOr[String] = js.undefined
     
-    var errorLog: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var createTableIfMissing: js.UndefOr[Boolean] = js.undefined
+    
+    var disableTouch: js.UndefOr[Boolean] = js.undefined
+    
+    var errorLog: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     var pgPromise: js.UndefOr[js.Object] = js.undefined
     
@@ -81,7 +89,15 @@ object mod {
       
       inline def setConStringUndefined: Self = StObject.set(x, "conString", js.undefined)
       
-      inline def setErrorLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "errorLog", js.Any.fromFunction1(value))
+      inline def setCreateTableIfMissing(value: Boolean): Self = StObject.set(x, "createTableIfMissing", value.asInstanceOf[js.Any])
+      
+      inline def setCreateTableIfMissingUndefined: Self = StObject.set(x, "createTableIfMissing", js.undefined)
+      
+      inline def setDisableTouch(value: Boolean): Self = StObject.set(x, "disableTouch", value.asInstanceOf[js.Any])
+      
+      inline def setDisableTouchUndefined: Self = StObject.set(x, "disableTouch", js.undefined)
+      
+      inline def setErrorLog(value: /* repeated */ Any => Unit): Self = StObject.set(x, "errorLog", js.Any.fromFunction1(value))
       
       inline def setErrorLogUndefined: Self = StObject.set(x, "errorLog", js.undefined)
       

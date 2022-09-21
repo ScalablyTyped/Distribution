@@ -27,7 +27,7 @@ object ExportJobsResponse {
     
     inline def setItem(value: ListOfExportJobResponse): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    inline def setItemVarargs(value: ExportJobResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+    inline def setItemVarargs(value: ExportJobResponse*): Self = StObject.set(x, "Item", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

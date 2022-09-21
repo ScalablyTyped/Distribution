@@ -51,7 +51,7 @@ trait OLEDBConnection extends StObject {
   
   val OLAP: Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Reconnect(): Unit = js.native
   

@@ -21,7 +21,7 @@ trait FormTemplateProperties extends StObject {
   var elements: js.UndefOr[js.Array[ElementProperties]] = js.undefined
   
   /**
-    * An array of objects or [ExpressionInfo[]](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html) that reference [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions.
+    * An array of objects or [ExpressionInfo[]](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html) that reference [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expressions following the specification defined by the [Constraint Profile](https://developers.arcgis.com/javascript/latest/arcade/#constraint) or the [Form Calculation Profile](https://developers.arcgis.com/javascript/latest/arcade/#form-calculation).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html#expressionInfos)
     */
@@ -51,13 +51,13 @@ object FormTemplateProperties {
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    inline def setElementsVarargs(value: ElementProperties*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: ElementProperties*): Self = StObject.set(x, "elements", js.Array(value*))
     
     inline def setExpressionInfos(value: js.Array[ExpressionInfoProperties]): Self = StObject.set(x, "expressionInfos", value.asInstanceOf[js.Any])
     
     inline def setExpressionInfosUndefined: Self = StObject.set(x, "expressionInfos", js.undefined)
     
-    inline def setExpressionInfosVarargs(value: ExpressionInfoProperties*): Self = StObject.set(x, "expressionInfos", js.Array(value :_*))
+    inline def setExpressionInfosVarargs(value: ExpressionInfoProperties*): Self = StObject.set(x, "expressionInfos", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

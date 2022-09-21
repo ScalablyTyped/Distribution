@@ -10,10 +10,10 @@ Web scraper for NodeJS
 | ------------------ | :-------------: |
 | Full name          | osmosis |
 | Keywords           | web, scraper, crawler, html, xml, dom, parser |
-| # releases         | 3 |
-| # dependents       | 40 |
-| # downloads        | 37684 |
-| # stars            | 21 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2432.0 |
+| # stars            | 4032.0 |
 
 ## Links
 - [Homepage](https://github.com/rchipka/node-osmosis#readme)

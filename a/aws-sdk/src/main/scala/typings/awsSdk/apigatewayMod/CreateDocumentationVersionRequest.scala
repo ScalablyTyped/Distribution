@@ -12,12 +12,12 @@ trait CreateDocumentationVersionRequest extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] The version identifier of the new snapshot.
+    * The version identifier of the new snapshot.
     */
   var documentationVersion: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
   

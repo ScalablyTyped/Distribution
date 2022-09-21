@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webidl2", "WebIDLParseError")
 @js.native
-class WebIDLParseError protected ()
+open class WebIDLParseError protected ()
   extends StObject
      with Error {
   def this(options: BareMessage) = this()
@@ -23,9 +23,11 @@ class WebIDLParseError protected ()
   /** the line at which the error occurred. */
   var line: Double = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
   @JSName("name")

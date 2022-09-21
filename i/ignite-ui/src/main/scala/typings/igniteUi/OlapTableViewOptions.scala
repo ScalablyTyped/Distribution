@@ -10,7 +10,7 @@ trait OlapTableViewOptions
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Optional="false" a value indicating whether the result has one or more hierarchies in the columns.
@@ -25,7 +25,7 @@ trait OlapTableViewOptions
   /**
     * Optional="false" an object of type $.ig.OlapResult.
     */
-  var result: js.UndefOr[js.Any] = js.undefined
+  var result: js.UndefOr[Any] = js.undefined
   
   /**
     * Optional="false" an object containing the table view configuration options as properties.
@@ -49,7 +49,7 @@ object OlapTableViewOptions {
     
     inline def setHasRowsUndefined: Self = StObject.set(x, "hasRows", js.undefined)
     
-    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     

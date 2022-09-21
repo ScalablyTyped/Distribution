@@ -1,7 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`standard-time`
+import typings.arcgisJsApi.arcgisJsApiStrings.`vector-direction`
 import typings.arcgisJsApi.arcgisJsApiStrings.`vector-magdir`
+import typings.arcgisJsApi.arcgisJsApiStrings.`vector-magnitude`
+import typings.arcgisJsApi.arcgisJsApiStrings.`vector-u`
 import typings.arcgisJsApi.arcgisJsApiStrings.`vector-uv`
+import typings.arcgisJsApi.arcgisJsApiStrings.`vector-v`
 import typings.arcgisJsApi.arcgisJsApiStrings.elevation
 import typings.arcgisJsApi.arcgisJsApiStrings.f32
 import typings.arcgisJsApi.arcgisJsApiStrings.f64
@@ -49,7 +54,7 @@ trait RasterInfoProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#dataType)
     */
   var dataType: js.UndefOr[
-    generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir`
+    generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-u` | `vector-v` | `vector-magdir` | `vector-magnitude` | `vector-direction` | `standard-time`
   ] = js.undefined
   
   /**
@@ -58,6 +63,13 @@ trait RasterInfoProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#extent)
     */
   var extent: js.UndefOr[ExtentProperties] = js.undefined
+  
+  /**
+    * Indicates whether the source multidimensional data has been transposed
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#hasMultidimensionalTranspose)
+    */
+  var hasMultidimensionalTranspose: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Raster height (row count) in pixels.
@@ -71,21 +83,21 @@ trait RasterInfoProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#histograms)
     */
-  var histograms: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var histograms: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Raster key properties.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#keyProperties)
     */
-  var keyProperties: js.UndefOr[js.Any] = js.undefined
+  var keyProperties: js.UndefOr[Any] = js.undefined
   
   /**
-    * The multidimensional information associated with the raster.
+    * Returns the multidimensional information associated with the raster service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#multidimensionalInfo)
     */
-  var multidimensionalInfo: js.UndefOr[js.Any] = js.undefined
+  var multidimensionalInfo: js.UndefOr[RasterMultidimensionalInfo] = js.undefined
   
   /**
     * The pixel value representing no available information.
@@ -150,9 +162,11 @@ object RasterInfoProperties {
     
     inline def setColormapUndefined: Self = StObject.set(x, "colormap", js.undefined)
     
-    inline def setColormapVarargs(value: js.Array[Double]*): Self = StObject.set(x, "colormap", js.Array(value :_*))
+    inline def setColormapVarargs(value: js.Array[Double]*): Self = StObject.set(x, "colormap", js.Array(value*))
     
-    inline def setDataType(value: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir`): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(
+      value: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-u` | `vector-v` | `vector-magdir` | `vector-magnitude` | `vector-direction` | `standard-time`
+    ): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
@@ -160,21 +174,25 @@ object RasterInfoProperties {
     
     inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
+    inline def setHasMultidimensionalTranspose(value: Boolean): Self = StObject.set(x, "hasMultidimensionalTranspose", value.asInstanceOf[js.Any])
+    
+    inline def setHasMultidimensionalTransposeUndefined: Self = StObject.set(x, "hasMultidimensionalTranspose", js.undefined)
+    
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHistograms(value: js.Array[js.Any]): Self = StObject.set(x, "histograms", value.asInstanceOf[js.Any])
+    inline def setHistograms(value: js.Array[Any]): Self = StObject.set(x, "histograms", value.asInstanceOf[js.Any])
     
     inline def setHistogramsUndefined: Self = StObject.set(x, "histograms", js.undefined)
     
-    inline def setHistogramsVarargs(value: js.Any*): Self = StObject.set(x, "histograms", js.Array(value :_*))
+    inline def setHistogramsVarargs(value: Any*): Self = StObject.set(x, "histograms", js.Array(value*))
     
-    inline def setKeyProperties(value: js.Any): Self = StObject.set(x, "keyProperties", value.asInstanceOf[js.Any])
+    inline def setKeyProperties(value: Any): Self = StObject.set(x, "keyProperties", value.asInstanceOf[js.Any])
     
     inline def setKeyPropertiesUndefined: Self = StObject.set(x, "keyProperties", js.undefined)
     
-    inline def setMultidimensionalInfo(value: js.Any): Self = StObject.set(x, "multidimensionalInfo", value.asInstanceOf[js.Any])
+    inline def setMultidimensionalInfo(value: RasterMultidimensionalInfo): Self = StObject.set(x, "multidimensionalInfo", value.asInstanceOf[js.Any])
     
     inline def setMultidimensionalInfoUndefined: Self = StObject.set(x, "multidimensionalInfo", js.undefined)
     
@@ -182,7 +200,7 @@ object RasterInfoProperties {
     
     inline def setNoDataValueUndefined: Self = StObject.set(x, "noDataValue", js.undefined)
     
-    inline def setNoDataValueVarargs(value: Double*): Self = StObject.set(x, "noDataValue", js.Array(value :_*))
+    inline def setNoDataValueVarargs(value: Double*): Self = StObject.set(x, "noDataValue", js.Array(value*))
     
     inline def setPixelSize(value: RasterInfoPixelSize): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     
@@ -200,7 +218,7 @@ object RasterInfoProperties {
     
     inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
-    inline def setStatisticsVarargs(value: RasterInfoStatistics*): Self = StObject.set(x, "statistics", js.Array(value :_*))
+    inline def setStatisticsVarargs(value: RasterInfoStatistics*): Self = StObject.set(x, "statistics", js.Array(value*))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

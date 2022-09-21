@@ -11,7 +11,7 @@ trait ViewportProps extends StObject {
   
   var bearing: Double
   
-  var height: Double
+  var height: Double | String
   
   var latitude: Double
   
@@ -35,7 +35,7 @@ trait ViewportProps extends StObject {
   
   var transitionInterruption: js.UndefOr[TRANSITION_EVENTS] = js.undefined
   
-  var width: Double
+  var width: Double | String
   
   var zoom: Double
 }
@@ -44,7 +44,7 @@ object ViewportProps {
   inline def apply(
     altitude: Double,
     bearing: Double,
-    height: Double,
+    height: Double | String,
     latitude: Double,
     longitude: Double,
     maxPitch: Double,
@@ -52,7 +52,7 @@ object ViewportProps {
     minPitch: Double,
     minZoom: Double,
     pitch: Double,
-    width: Double,
+    width: Double | String,
     zoom: Double
   ): ViewportProps = {
     val __obj = js.Dynamic.literal(altitude = altitude.asInstanceOf[js.Any], bearing = bearing.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], maxPitch = maxPitch.asInstanceOf[js.Any], maxZoom = maxZoom.asInstanceOf[js.Any], minPitch = minPitch.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], pitch = pitch.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
@@ -65,7 +65,7 @@ object ViewportProps {
     
     inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     
-    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
@@ -97,7 +97,7 @@ object ViewportProps {
     
     inline def setTransitionInterruptionUndefined: Self = StObject.set(x, "transitionInterruption", js.undefined)
     
-    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }

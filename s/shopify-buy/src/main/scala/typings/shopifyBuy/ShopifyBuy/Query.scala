@@ -23,12 +23,12 @@ trait Query extends StObject {
   
   var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var sortBy: String
+  var sortKey: String
 }
 object Query {
   
-  inline def apply(query: String, sortBy: String): Query = {
-    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], sortBy = sortBy.asInstanceOf[js.Any])
+  inline def apply(query: String, sortKey: String): Query = {
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], sortKey = sortKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
   
@@ -56,6 +56,6 @@ object Query {
     
     inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
-    inline def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortKey(value: String): Self = StObject.set(x, "sortKey", value.asInstanceOf[js.Any])
   }
 }

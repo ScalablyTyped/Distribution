@@ -15,7 +15,7 @@ trait MatchingJob extends StObject {
   /** A summary of the job with core information that's displayed on the search results listing page. */
   var jobSummary: js.UndefOr[String] = js.undefined
   
-  /** Contains snippets of text from the Job.job_title field most closely matching a search query's keywords, if available. The matching query keywords are enclosed in HTML bold tags. */
+  /** Contains snippets of text from the Job.title field most closely matching a search query's keywords, if available. The matching query keywords are enclosed in HTML bold tags. */
   var jobTitleSnippet: js.UndefOr[String] = js.undefined
   
   /**

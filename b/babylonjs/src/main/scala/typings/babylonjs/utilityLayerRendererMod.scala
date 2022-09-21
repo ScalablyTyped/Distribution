@@ -15,7 +15,7 @@ object utilityLayerRendererMod {
   
   @JSImport("babylonjs/Rendering/utilityLayerRenderer", "UtilityLayerRenderer")
   @js.native
-  class UtilityLayerRenderer protected ()
+  open class UtilityLayerRenderer protected ()
     extends StObject
        with IDisposable {
     /**
@@ -31,7 +31,7 @@ object utilityLayerRendererMod {
       handleEvents: Boolean
     ) = this()
     
-    /* private */ var _afterRenderObserver: js.Any = js.native
+    /* private */ var _afterRenderObserver: Any = js.native
     
     /**
       * @hidden
@@ -39,21 +39,21 @@ object utilityLayerRendererMod {
       */
     def _getSharedGizmoLight(): HemisphericLight = js.native
     
-    /* private */ var _lastPointerEvents: js.Any = js.native
+    /* private */ var _lastPointerEvents: Any = js.native
     
-    /* private */ var _notifyObservers: js.Any = js.native
+    /* private */ var _notifyObservers: Any = js.native
     
-    /* private */ var _originalPointerObserver: js.Any = js.native
+    /* private */ var _originalPointerObserver: Any = js.native
     
-    /* private */ var _pointerCaptures: js.Any = js.native
+    /* private */ var _pointerCaptures: Any = js.native
     
-    /* private */ var _renderCamera: js.Any = js.native
+    /* private */ var _renderCamera: Any = js.native
     
-    /* private */ var _sceneDisposeObserver: js.Any = js.native
+    /* private */ var _sceneDisposeObserver: Any = js.native
     
-    /* private */ var _sharedGizmoLight: js.Any = js.native
+    /* private */ var _sharedGizmoLight: Any = js.native
     
-    /* private */ var _updateCamera: js.Any = js.native
+    /* private */ var _updateCamera: Any = js.native
     
     /**
       * Releases all held resources
@@ -73,7 +73,7 @@ object utilityLayerRendererMod {
     def mainSceneTrackerPredicate(mesh: Nullable[AbstractMesh]): Boolean = js.native
     
     /**
-      * Observable raised when the pointer move from the utility layer scene to the main scene
+      * Observable raised when the pointer moves from the utility layer scene to the main scene
       */
     var onPointerOutObservable: Observable[Double] = js.native
     
@@ -89,6 +89,11 @@ object utilityLayerRendererMod {
       * If the picking should be done on the utility layer prior to the actual scene (Default: true)
       */
     var pickUtilitySceneFirst: Boolean = js.native
+    
+    /**
+      * Set to false to disable picking
+      */
+    var pickingEnabled: Boolean = js.native
     
     /**
       * If set to false, only pointerUp, pointerDown and pointerMove will be sent to the utilityLayerScene (false by default)
@@ -123,14 +128,23 @@ object utilityLayerRendererMod {
     @js.native
     val ^ : js.Any = js.native
     
+    /**
+      * Creates an utility layer, and set it as a default utility layer
+      * @param scene associated scene
+      * @hidden
+      */
+    inline def _CreateDefaultUtilityLayerFromScene(scene: Scene): UtilityLayerRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("_CreateDefaultUtilityLayerFromScene")(scene.asInstanceOf[js.Any]).asInstanceOf[UtilityLayerRenderer]
+    
+    /** @hidden */
     @JSImport("babylonjs/Rendering/utilityLayerRenderer", "UtilityLayerRenderer._DefaultKeepDepthUtilityLayer")
     @js.native
-    def _DefaultKeepDepthUtilityLayer: js.Any = js.native
-    inline def _DefaultKeepDepthUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultKeepDepthUtilityLayer")(x.asInstanceOf[js.Any])
+    def _DefaultKeepDepthUtilityLayer: Nullable[UtilityLayerRenderer] = js.native
+    inline def _DefaultKeepDepthUtilityLayer_=(x: Nullable[UtilityLayerRenderer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultKeepDepthUtilityLayer")(x.asInstanceOf[js.Any])
     
+    /** @hidden */
     @JSImport("babylonjs/Rendering/utilityLayerRenderer", "UtilityLayerRenderer._DefaultUtilityLayer")
     @js.native
-    def _DefaultUtilityLayer: js.Any = js.native
-    inline def _DefaultUtilityLayer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultUtilityLayer")(x.asInstanceOf[js.Any])
+    def _DefaultUtilityLayer: Nullable[UtilityLayerRenderer] = js.native
+    inline def _DefaultUtilityLayer_=(x: Nullable[UtilityLayerRenderer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultUtilityLayer")(x.asInstanceOf[js.Any])
   }
 }

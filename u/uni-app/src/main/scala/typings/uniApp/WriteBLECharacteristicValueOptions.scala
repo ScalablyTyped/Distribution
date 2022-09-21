@@ -39,7 +39,7 @@ trait WriteBLECharacteristicValueOptions extends StObject {
   /**
     * 蓝牙设备特征值对应的二进制值
     */
-  var value: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var value: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object WriteBLECharacteristicValueOptions {
   
@@ -74,10 +74,10 @@ object WriteBLECharacteristicValueOptions {
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

@@ -22,6 +22,6 @@ object PolylineWithCurves {
     
     inline def setCurvePaths(value: js.Array[js.Array[Position | JsonCurve]]): Self = StObject.set(x, "curvePaths", value.asInstanceOf[js.Any])
     
-    inline def setCurvePathsVarargs(value: (js.Array[Position | JsonCurve])*): Self = StObject.set(x, "curvePaths", js.Array(value :_*))
+    inline def setCurvePathsVarargs(value: (js.Array[Position | JsonCurve])*): Self = StObject.set(x, "curvePaths", js.Array(value*))
   }
 }

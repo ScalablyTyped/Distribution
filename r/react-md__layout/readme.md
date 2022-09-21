@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__layout
 
-Typings are for version 2.4.3
+Typings are for version 5.1.4
 
 ## Library description:
 This package is used to configure most of react-md as well as create some pre-defined layouts
@@ -10,10 +10,10 @@ This package is used to configure most of react-md as well as create some pre-de
 | ------------------ | :-------------: |
 | Full name          | @react-md/layout |
 | Keywords           | accessibility, a11y, react-md, material design, react, layout, configuration, context providers, setup, component, components |
-| # releases         | 43 |
-| # dependents       | 1 |
-| # downloads        | 36270 |
-| # stars            | 0 |
+| # releases         | 52 |
+| # dependents       | 0.0 |
+| # downloads        | 5192.333333333333 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/layout/demos)

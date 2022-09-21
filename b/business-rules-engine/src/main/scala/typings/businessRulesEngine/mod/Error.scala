@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("business-rules-engine", "Error")
 @js.native
-class Error ()
+open class Error ()
   extends StObject
      with IError {
   

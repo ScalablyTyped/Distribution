@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".handlebars-PfdZsGKG" : "4.7.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".handlebars-PfdZsGKG" : "4.7.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IExecutable extends StObject {
   
   def execute(): String = js.native
-  def execute(noParenthesis: js.Any): String = js.native
+  def execute(noParenthesis: Any): String = js.native
 }

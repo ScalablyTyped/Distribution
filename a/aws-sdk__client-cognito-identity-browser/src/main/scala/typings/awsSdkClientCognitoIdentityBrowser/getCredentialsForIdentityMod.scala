@@ -8,5 +8,5 @@ object getCredentialsForIdentityMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/GetCredentialsForIdentity", "GetCredentialsForIdentity")
   @js.native
-  val GetCredentialsForIdentity: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetCredentialsForIdentity: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

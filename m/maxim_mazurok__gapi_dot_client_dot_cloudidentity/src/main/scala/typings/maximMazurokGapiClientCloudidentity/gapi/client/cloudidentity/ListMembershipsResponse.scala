@@ -25,7 +25,7 @@ object ListMembershipsResponse {
     
     inline def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
     
-    inline def setMembershipsVarargs(value: Membership*): Self = StObject.set(x, "memberships", js.Array(value :_*))
+    inline def setMembershipsVarargs(value: Membership*): Self = StObject.set(x, "memberships", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Loading mask plugin for jQuery.
 | ------------------ | :-------------: |
 | Full name          | p-loading |
 | Keywords           | jquery-plugin, jquery, loading, spinner, mask, plugins |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 1048 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 104.33333333333333 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](http://joseshiru.github.io/p-loading/)

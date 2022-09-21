@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListPackagesRequest extends StObject {
   
   /**
-    *  The domain that contains the repository that contains the requested list of packages. 
+    *  The name of the domain that contains the repository that contains the requested packages. 
     */
   var domain: DomainName
   
   /**
-    *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
+    *  The 12-digit account number of the Amazon Web Services account that owns the domain. It does not include dashes or spaces. 
     */
   var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
-    *  The format of the packages. The valid package types are:     npm: A Node Package Manager (npm) package.     pypi: A Python Package Index (PyPI) package.     maven: A Maven package that contains compiled code in a distributable format, such as a JAR file.   
+    * The format used to filter requested packages. Only packages from the provided format will be returned.
     */
   var format: js.UndefOr[PackageFormat] = js.undefined
   
@@ -27,7 +27,7 @@ trait ListPackagesRequest extends StObject {
   var maxResults: js.UndefOr[ListPackagesMaxResults] = js.undefined
   
   /**
-    *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
+    * The namespace used to filter requested packages. Only packages with the provided namespace will be returned. The package component that specifies its namespace depends on its type. For example:    The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     Python and NuGet packages do not contain a corresponding component, packages of those formats do not have a namespace.   
     */
   var namespace: js.UndefOr[PackageNamespace] = js.undefined
   
@@ -37,14 +37,24 @@ trait ListPackagesRequest extends StObject {
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    *  A prefix used to filter returned repositories. Only repositories with names that start with repositoryPrefix are returned. 
+    *  A prefix used to filter requested packages. Only packages with names that start with packagePrefix are returned. 
     */
   var packagePrefix: js.UndefOr[PackageName] = js.undefined
   
   /**
-    *  The name of the repository from which packages are to be listed. 
+    * The value of the Publish package origin control restriction used to filter requested packages. Only packages with the provided restriction are returned. For more information, see PackageOriginRestrictions.
+    */
+  var publish: js.UndefOr[AllowPublish] = js.undefined
+  
+  /**
+    *  The name of the repository that contains the requested packages. 
     */
   var repository: RepositoryName
+  
+  /**
+    * The value of the Upstream package origin control restriction used to filter requested packages. Only packages with the provided restriction are returned. For more information, see PackageOriginRestrictions.
+    */
+  var upstream: js.UndefOr[AllowUpstream] = js.undefined
 }
 object ListPackagesRequest {
   
@@ -81,6 +91,14 @@ object ListPackagesRequest {
     
     inline def setPackagePrefixUndefined: Self = StObject.set(x, "packagePrefix", js.undefined)
     
+    inline def setPublish(value: AllowPublish): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
+    
+    inline def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
+    
     inline def setRepository(value: RepositoryName): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    
+    inline def setUpstream(value: AllowUpstream): Self = StObject.set(x, "upstream", value.asInstanceOf[js.Any])
+    
+    inline def setUpstreamUndefined: Self = StObject.set(x, "upstream", js.undefined)
   }
 }

@@ -50,7 +50,7 @@ object TemplateOverridesOptions {
     
     inline def setOnPostRenderUndefined: Self = StObject.set(x, "OnPostRender", js.undefined)
     
-    inline def setOnPostRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPostRender", js.Array(value :_*))
+    inline def setOnPostRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPostRender", js.Array(value*))
     
     inline def setOnPreRender(value: RenderCallback | js.Array[RenderCallback]): Self = StObject.set(x, "OnPreRender", value.asInstanceOf[js.Any])
     
@@ -58,7 +58,7 @@ object TemplateOverridesOptions {
     
     inline def setOnPreRenderUndefined: Self = StObject.set(x, "OnPreRender", js.undefined)
     
-    inline def setOnPreRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPreRender", js.Array(value :_*))
+    inline def setOnPreRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPreRender", js.Array(value*))
     
     inline def setTemplates(value: TemplateOverrides): Self = StObject.set(x, "Templates", value.asInstanceOf[js.Any])
     

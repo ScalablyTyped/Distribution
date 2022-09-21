@@ -1,6 +1,7 @@
 package typings.materialUiCore
 
 import typings.enzyme.mod.EnzymeSelector
+import typings.enzyme.mod.ShallowRendererProps
 import typings.materialUiCore.anon.Fn1
 import typings.materialUiCore.anon.PartialShallowOptions
 import typings.react.mod.global.JSX.Element
@@ -17,7 +18,9 @@ object createShallowMod {
   inline def default(): Fn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Fn1]
   inline def default(options: PartialShallowOptions): Fn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Fn1]
   
-  trait ShallowOptions extends StObject {
+  trait ShallowOptions
+    extends StObject
+       with ShallowRendererProps {
     
     var dive: Boolean
     
@@ -40,7 +43,7 @@ object createShallowMod {
       
       inline def setUntilSelector(value: EnzymeSelector): Self = StObject.set(x, "untilSelector", value.asInstanceOf[js.Any])
       
-      inline def setUntilSelectorFunction2(value: (js.Any, /* context */ js.UndefOr[js.Any]) => Element | Null): Self = StObject.set(x, "untilSelector", js.Any.fromFunction2(value))
+      inline def setUntilSelectorFunction2(value: (Any, /* context */ js.UndefOr[Any]) => Element | Null): Self = StObject.set(x, "untilSelector", js.Any.fromFunction2(value))
     }
   }
 }

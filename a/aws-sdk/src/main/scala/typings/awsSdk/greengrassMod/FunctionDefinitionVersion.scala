@@ -33,6 +33,6 @@ object FunctionDefinitionVersion {
     
     inline def setFunctionsUndefined: Self = StObject.set(x, "Functions", js.undefined)
     
-    inline def setFunctionsVarargs(value: Function*): Self = StObject.set(x, "Functions", js.Array(value :_*))
+    inline def setFunctionsVarargs(value: Function*): Self = StObject.set(x, "Functions", js.Array(value*))
   }
 }

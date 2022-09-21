@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DefaultDate extends StObject {
   
-  var date: js.Any
+  var date: Any
   
-  var defaultDate: js.Any
+  var defaultDate: Any
 }
 object DefaultDate {
   
-  inline def apply(date: js.Any, defaultDate: js.Any): DefaultDate = {
+  inline def apply(date: Any, defaultDate: Any): DefaultDate = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], defaultDate = defaultDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultDate]
   }
   
   extension [Self <: DefaultDate](x: Self) {
     
-    inline def setDate(value: js.Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    inline def setDefaultDate(value: js.Any): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
+    inline def setDefaultDate(value: Any): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
   }
 }

@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("enzyme-adapter-react-15.4", JSImport.Namespace)
   @js.native
-  class ^ () extends EnzymeAdapter
+  open class ^ () extends EnzymeAdapter
   
   type ReactFifteenFourAdapter = EnzymeAdapter
 }

@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for the `CallFunction` method.
-  */
 trait SchemaCallFunctionRequest extends StObject {
   
   /**
-    * Input to be passed to the function.
+    * Required. Input to be passed to the function.
     */
-  var data: js.UndefOr[String] = js.undefined
+  var data: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCallFunctionRequest {
   
@@ -24,6 +21,8 @@ object SchemaCallFunctionRequest {
   extension [Self <: SchemaCallFunctionRequest](x: Self) {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataNull: Self = StObject.set(x, "data", null)
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }

@@ -9,12 +9,15 @@ import typings.reactAce.reactAceBooleans.`false`
 import typings.reactAce.reactAceBooleans.`true`
 import typings.reactAce.reactAceStrings.ace
 import typings.reactAce.reactAceStrings.always
+import typings.reactAce.reactAceStrings.error
 import typings.reactAce.reactAceStrings.fullLine
+import typings.reactAce.reactAceStrings.info
 import typings.reactAce.reactAceStrings.line
 import typings.reactAce.reactAceStrings.screenLine
 import typings.reactAce.reactAceStrings.slim
 import typings.reactAce.reactAceStrings.smooth
 import typings.reactAce.reactAceStrings.text
+import typings.reactAce.reactAceStrings.warning
 import typings.reactAce.reactAceStrings.wide
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
@@ -27,7 +30,7 @@ object typesMod {
   trait IAceEditor
     extends StObject
        with Editor
-       with /* index */ StringDictionary[js.Any] {
+       with /* index */ StringDictionary[Any] {
     
     @JSName("renderer")
     var renderer_IAceEditor: IRenderer = js.native
@@ -35,7 +38,7 @@ object typesMod {
   
   trait IAceOptions
     extends StObject
-       with /* index */ StringDictionary[js.Any] {
+       with /* index */ StringDictionary[Any] {
     
     var animatedScroll: js.UndefOr[Boolean] = js.undefined
     
@@ -362,11 +365,11 @@ object typesMod {
     
     var text: String
     
-    var `type`: String
+    var `type`: error | info | warning
   }
   object IAnnotation {
     
-    inline def apply(column: Double, row: Double, text: String, `type`: String): IAnnotation = {
+    inline def apply(column: Double, row: Double, text: String, `type`: error | info | warning): IAnnotation = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAnnotation]
@@ -380,7 +383,7 @@ object typesMod {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: error | info | warning): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -405,7 +408,7 @@ object typesMod {
       
       inline def setExec(value: String | ICommandExecFunction): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
       
-      inline def setExecFunction2(value: (/* editor */ Editor, /* args */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "exec", js.Any.fromFunction2(value))
+      inline def setExecFunction2(value: (/* editor */ Editor, /* args */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "exec", js.Any.fromFunction2(value))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -432,32 +435,32 @@ object typesMod {
     }
   }
   
-  type ICommandExecFunction = js.Function2[/* editor */ Editor, /* args */ js.UndefOr[js.Any], js.Any]
+  type ICommandExecFunction = js.Function2[/* editor */ Editor, /* args */ js.UndefOr[Any], Any]
   
   trait ICommandManager extends StObject {
     
-    def addCommand(command: js.Any): Unit
+    def addCommand(command: Any): Unit
     
-    def addCommands(commands: js.Array[js.Any]): Unit
+    def addCommands(commands: js.Array[Any]): Unit
     
-    var bindKey: js.UndefOr[js.Function2[/* bindKey */ js.Any, /* command */ js.Any, Unit]] = js.undefined
+    var bindKey: js.UndefOr[js.Function2[/* bindKey */ Any, /* command */ Any, Unit]] = js.undefined
     
-    var byName: js.Any
+    var byName: Any
     
-    var commands: js.Any
+    var commands: Any
     
-    def exec(name: String, editor: js.Any, args: js.Any): Unit
+    def exec(name: String, editor: Any, args: Any): Unit
     
     var platform: String
   }
   object ICommandManager {
     
     inline def apply(
-      addCommand: js.Any => Unit,
-      addCommands: js.Array[js.Any] => Unit,
-      byName: js.Any,
-      commands: js.Any,
-      exec: (String, js.Any, js.Any) => Unit,
+      addCommand: Any => Unit,
+      addCommands: js.Array[Any] => Unit,
+      byName: Any,
+      commands: Any,
+      exec: (String, Any, Any) => Unit,
       platform: String
     ): ICommandManager = {
       val __obj = js.Dynamic.literal(addCommand = js.Any.fromFunction1(addCommand), addCommands = js.Any.fromFunction1(addCommands), byName = byName.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], exec = js.Any.fromFunction3(exec), platform = platform.asInstanceOf[js.Any])
@@ -466,19 +469,19 @@ object typesMod {
     
     extension [Self <: ICommandManager](x: Self) {
       
-      inline def setAddCommand(value: js.Any => Unit): Self = StObject.set(x, "addCommand", js.Any.fromFunction1(value))
+      inline def setAddCommand(value: Any => Unit): Self = StObject.set(x, "addCommand", js.Any.fromFunction1(value))
       
-      inline def setAddCommands(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "addCommands", js.Any.fromFunction1(value))
+      inline def setAddCommands(value: js.Array[Any] => Unit): Self = StObject.set(x, "addCommands", js.Any.fromFunction1(value))
       
-      inline def setBindKey(value: (/* bindKey */ js.Any, /* command */ js.Any) => Unit): Self = StObject.set(x, "bindKey", js.Any.fromFunction2(value))
+      inline def setBindKey(value: (/* bindKey */ Any, /* command */ Any) => Unit): Self = StObject.set(x, "bindKey", js.Any.fromFunction2(value))
       
       inline def setBindKeyUndefined: Self = StObject.set(x, "bindKey", js.undefined)
       
-      inline def setByName(value: js.Any): Self = StObject.set(x, "byName", value.asInstanceOf[js.Any])
+      inline def setByName(value: Any): Self = StObject.set(x, "byName", value.asInstanceOf[js.Any])
       
-      inline def setCommands(value: js.Any): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+      inline def setCommands(value: Any): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      inline def setExec(value: (String, js.Any, js.Any) => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction3(value))
+      inline def setExec(value: (String, Any, Any) => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction3(value))
       
       inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }
@@ -486,7 +489,7 @@ object typesMod {
   
   trait IEditorProps
     extends StObject
-       with /* index */ StringDictionary[js.Any] {
+       with /* index */ StringDictionary[Any] {
     
     @JSName("$blockScrolling")
     var $blockScrolling: js.UndefOr[Double | Boolean] = js.undefined
@@ -507,64 +510,64 @@ object typesMod {
     var $highlightTagPending: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$multiselectOnSessionChange")
-    var $multiselectOnSessionChange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $multiselectOnSessionChange: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onAddRange")
-    var $onAddRange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onAddRange: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onChangeAnnotation")
-    var $onChangeAnnotation: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onChangeAnnotation: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onChangeBackMarker")
-    var $onChangeBackMarker: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onChangeBackMarker: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onChangeBreakpoint")
-    var $onChangeBreakpoint: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onChangeBreakpoint: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onChangeFold")
-    var $onChangeFold: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onChangeFold: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onChangeFrontMarker")
-    var $onChangeFrontMarker: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onChangeFrontMarker: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onChangeMode")
-    var $onChangeMode: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onChangeMode: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onChangeTabSize")
-    var $onChangeTabSize: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onChangeTabSize: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onChangeWrapLimit")
-    var $onChangeWrapLimit: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onChangeWrapLimit: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onChangeWrapMode")
-    var $onChangeWrapMode: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onChangeWrapMode: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onCursorChange")
-    var $onCursorChange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onCursorChange: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onDocumentChange")
-    var $onDocumentChange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onDocumentChange: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onMultiSelect")
-    var $onMultiSelect: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onMultiSelect: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onRemoveRange")
-    var $onRemoveRange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onRemoveRange: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onScrollLeftChange")
-    var $onScrollLeftChange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onScrollLeftChange: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onScrollTopChange")
-    var $onScrollTopChange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onScrollTopChange: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onSelectionChange")
-    var $onSelectionChange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onSelectionChange: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onSingleSelect")
-    var $onSingleSelect: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onSingleSelect: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     @JSName("$onTokenizerUpdate")
-    var $onTokenizerUpdate: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var $onTokenizerUpdate: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   }
   object IEditorProps {
     
@@ -599,83 +602,83 @@ object typesMod {
       
       inline def set$highlightTagPendingUndefined: Self = StObject.set(x, "$highlightTagPending", js.undefined)
       
-      inline def set$multiselectOnSessionChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$multiselectOnSessionChange", js.Any.fromFunction1(value))
+      inline def set$multiselectOnSessionChange(value: /* repeated */ Any => Any): Self = StObject.set(x, "$multiselectOnSessionChange", js.Any.fromFunction1(value))
       
       inline def set$multiselectOnSessionChangeUndefined: Self = StObject.set(x, "$multiselectOnSessionChange", js.undefined)
       
-      inline def set$onAddRange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onAddRange", js.Any.fromFunction1(value))
+      inline def set$onAddRange(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onAddRange", js.Any.fromFunction1(value))
       
       inline def set$onAddRangeUndefined: Self = StObject.set(x, "$onAddRange", js.undefined)
       
-      inline def set$onChangeAnnotation(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onChangeAnnotation", js.Any.fromFunction1(value))
+      inline def set$onChangeAnnotation(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onChangeAnnotation", js.Any.fromFunction1(value))
       
       inline def set$onChangeAnnotationUndefined: Self = StObject.set(x, "$onChangeAnnotation", js.undefined)
       
-      inline def set$onChangeBackMarker(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onChangeBackMarker", js.Any.fromFunction1(value))
+      inline def set$onChangeBackMarker(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onChangeBackMarker", js.Any.fromFunction1(value))
       
       inline def set$onChangeBackMarkerUndefined: Self = StObject.set(x, "$onChangeBackMarker", js.undefined)
       
-      inline def set$onChangeBreakpoint(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onChangeBreakpoint", js.Any.fromFunction1(value))
+      inline def set$onChangeBreakpoint(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onChangeBreakpoint", js.Any.fromFunction1(value))
       
       inline def set$onChangeBreakpointUndefined: Self = StObject.set(x, "$onChangeBreakpoint", js.undefined)
       
-      inline def set$onChangeFold(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onChangeFold", js.Any.fromFunction1(value))
+      inline def set$onChangeFold(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onChangeFold", js.Any.fromFunction1(value))
       
       inline def set$onChangeFoldUndefined: Self = StObject.set(x, "$onChangeFold", js.undefined)
       
-      inline def set$onChangeFrontMarker(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onChangeFrontMarker", js.Any.fromFunction1(value))
+      inline def set$onChangeFrontMarker(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onChangeFrontMarker", js.Any.fromFunction1(value))
       
       inline def set$onChangeFrontMarkerUndefined: Self = StObject.set(x, "$onChangeFrontMarker", js.undefined)
       
-      inline def set$onChangeMode(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onChangeMode", js.Any.fromFunction1(value))
+      inline def set$onChangeMode(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onChangeMode", js.Any.fromFunction1(value))
       
       inline def set$onChangeModeUndefined: Self = StObject.set(x, "$onChangeMode", js.undefined)
       
-      inline def set$onChangeTabSize(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onChangeTabSize", js.Any.fromFunction1(value))
+      inline def set$onChangeTabSize(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onChangeTabSize", js.Any.fromFunction1(value))
       
       inline def set$onChangeTabSizeUndefined: Self = StObject.set(x, "$onChangeTabSize", js.undefined)
       
-      inline def set$onChangeWrapLimit(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onChangeWrapLimit", js.Any.fromFunction1(value))
+      inline def set$onChangeWrapLimit(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onChangeWrapLimit", js.Any.fromFunction1(value))
       
       inline def set$onChangeWrapLimitUndefined: Self = StObject.set(x, "$onChangeWrapLimit", js.undefined)
       
-      inline def set$onChangeWrapMode(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onChangeWrapMode", js.Any.fromFunction1(value))
+      inline def set$onChangeWrapMode(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onChangeWrapMode", js.Any.fromFunction1(value))
       
       inline def set$onChangeWrapModeUndefined: Self = StObject.set(x, "$onChangeWrapMode", js.undefined)
       
-      inline def set$onCursorChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onCursorChange", js.Any.fromFunction1(value))
+      inline def set$onCursorChange(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onCursorChange", js.Any.fromFunction1(value))
       
       inline def set$onCursorChangeUndefined: Self = StObject.set(x, "$onCursorChange", js.undefined)
       
-      inline def set$onDocumentChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onDocumentChange", js.Any.fromFunction1(value))
+      inline def set$onDocumentChange(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onDocumentChange", js.Any.fromFunction1(value))
       
       inline def set$onDocumentChangeUndefined: Self = StObject.set(x, "$onDocumentChange", js.undefined)
       
-      inline def set$onMultiSelect(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onMultiSelect", js.Any.fromFunction1(value))
+      inline def set$onMultiSelect(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onMultiSelect", js.Any.fromFunction1(value))
       
       inline def set$onMultiSelectUndefined: Self = StObject.set(x, "$onMultiSelect", js.undefined)
       
-      inline def set$onRemoveRange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onRemoveRange", js.Any.fromFunction1(value))
+      inline def set$onRemoveRange(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onRemoveRange", js.Any.fromFunction1(value))
       
       inline def set$onRemoveRangeUndefined: Self = StObject.set(x, "$onRemoveRange", js.undefined)
       
-      inline def set$onScrollLeftChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onScrollLeftChange", js.Any.fromFunction1(value))
+      inline def set$onScrollLeftChange(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onScrollLeftChange", js.Any.fromFunction1(value))
       
       inline def set$onScrollLeftChangeUndefined: Self = StObject.set(x, "$onScrollLeftChange", js.undefined)
       
-      inline def set$onScrollTopChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onScrollTopChange", js.Any.fromFunction1(value))
+      inline def set$onScrollTopChange(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onScrollTopChange", js.Any.fromFunction1(value))
       
       inline def set$onScrollTopChangeUndefined: Self = StObject.set(x, "$onScrollTopChange", js.undefined)
       
-      inline def set$onSelectionChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onSelectionChange", js.Any.fromFunction1(value))
+      inline def set$onSelectionChange(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onSelectionChange", js.Any.fromFunction1(value))
       
       inline def set$onSelectionChangeUndefined: Self = StObject.set(x, "$onSelectionChange", js.undefined)
       
-      inline def set$onSingleSelect(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onSingleSelect", js.Any.fromFunction1(value))
+      inline def set$onSingleSelect(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onSingleSelect", js.Any.fromFunction1(value))
       
       inline def set$onSingleSelectUndefined: Self = StObject.set(x, "$onSingleSelect", js.undefined)
       
-      inline def set$onTokenizerUpdate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "$onTokenizerUpdate", js.Any.fromFunction1(value))
+      inline def set$onTokenizerUpdate(value: /* repeated */ Any => Any): Self = StObject.set(x, "$onTokenizerUpdate", js.Any.fromFunction1(value))
       
       inline def set$onTokenizerUpdateUndefined: Self = StObject.set(x, "$onTokenizerUpdate", js.undefined)
     }
@@ -731,7 +734,7 @@ object typesMod {
       inline def setType(value: fullLine | screenLine | text | MarkerRenderer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeFunction5(
-        value: (/* html */ js.Array[String], /* range */ Range, /* left */ Double, /* top */ Double, /* config */ js.Any) => Unit
+        value: (/* html */ js.Array[String], /* range */ Range, /* left */ Double, /* top */ Double, /* config */ Any) => Unit
       ): Self = StObject.set(x, "type", js.Any.fromFunction5(value))
     }
   }
@@ -743,6 +746,7 @@ object typesMod {
     
     var placeholderNode: js.UndefOr[HTMLDivElement] = js.native
     
-    var scroller: js.UndefOr[HTMLDivElement] = js.native
+    @JSName("scroller")
+    var scroller_IRenderer: js.UndefOr[HTMLDivElement] = js.native
   }
 }

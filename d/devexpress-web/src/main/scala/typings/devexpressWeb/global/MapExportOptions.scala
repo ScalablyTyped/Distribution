@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MapExportOptions")
 @js.native
-class MapExportOptions ()
+open class MapExportOptions ()
   extends StObject
      with typings.devexpressWeb.MapExportOptions {
   

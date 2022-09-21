@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Mylibrary")
 @js.native
-class ResourceMylibrary protected () extends StObject {
+open class ResourceMylibrary protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var annotations: ResourceMylibraryAnnotations = js.native

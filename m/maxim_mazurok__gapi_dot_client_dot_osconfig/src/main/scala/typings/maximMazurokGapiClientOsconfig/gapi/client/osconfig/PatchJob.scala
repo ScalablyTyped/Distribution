@@ -30,7 +30,7 @@ trait PatchJob extends StObject {
   /** Instances to patch. */
   var instanceFilter: js.UndefOr[PatchInstanceFilter] = js.undefined
   
-  /** Unique identifier for this patch job in the form `projects/∗/patchJobs/ *` */
+  /** Unique identifier for this patch job in the form `projects/ *‍/patchJobs/ *` */
   var name: js.UndefOr[String] = js.undefined
   
   /** Patch configuration being applied. */

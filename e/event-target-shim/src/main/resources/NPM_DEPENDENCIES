@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "event-target-shim" : "5.0.1"
+      "event-target-shim" : "6.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "event-target-shim" : "5.0.1"
+      "event-target-shim" : "6.0.2"
     }
   ],
   "compile-devDependencies" : [

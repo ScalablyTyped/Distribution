@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaId extends StObject {
   
+  /**
+    * The name of the schema registry that contains the schema.
+    */
   var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.undefined
   
+  /**
+    * The Amazon Resource Name (ARN) of the schema. One of SchemaArn or SchemaName has to be provided.
+    */
   var SchemaArn: js.UndefOr[GlueResourceArn] = js.undefined
   
+  /**
+    * The name of the schema. One of SchemaArn or SchemaName has to be provided.
+    */
   var SchemaName: js.UndefOr[SchemaRegistryNameString] = js.undefined
 }
 object SchemaId {

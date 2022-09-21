@@ -1,13 +1,15 @@
 package typings.antDesignProLayout
 
-import org.scalablytyped.runtime.Shortcut
-import typings.antDesignProLayout.anon.PageHeaderPropschildrenRe
+import typings.antDesignProLayout.anon.OmitAffixPropschildren
+import typings.antDesignProLayout.anon.PageContainerPropsprefixe
+import typings.antDesignProLayout.anon.PartialPageHeaderPropschi
 import typings.antDesignProLayout.anon.TabPanePropskeyReactTextu
 import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
 import typings.antDesignProLayout.typingsMod.WithFalse
-import typings.antd.affixMod.AffixProps
+import typings.antDesignProLayout.waterMarkMod.WaterMarkProps
 import typings.antd.avatarAvatarMod.AvatarProps
 import typings.antd.breadcrumbBreadcrumbMod.BreadcrumbProps
+import typings.antd.spinMod.SpinProps
 import typings.antd.tabsMod.TabsProps
 import typings.rcTabs.interfaceMod.TabBarExtraContent
 import typings.react.mod.CSSProperties
@@ -16,32 +18,57 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.std.HTMLDivElement
+import typings.react.mod.global.JSX.Element
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object pageContainerMod extends Shortcut {
+object pageContainerMod {
   
-  @JSImport("@ant-design/pro-layout/lib/PageContainer", JSImport.Default)
+  @JSImport("@ant-design/pro-layout/es/components/PageContainer", JSImport.Namespace)
   @js.native
-  val default: FC[PageContainerProps] = js.native
+  val ^ : js.Any = js.native
   
-  /* Inlined parent @ant-design/pro-layout.@ant-design/pro-layout/lib/PageContainer.PageHeaderTabConfig */
-  /* Inlined parent std.Omit<antd.antd/lib/page-header.PageHeaderProps, 'title'> */
+  @JSImport("@ant-design/pro-layout/es/components/PageContainer", "PageContainer")
+  @js.native
+  val PageContainer: FC[PageContainerProps] = js.native
+  
+  /**
+    * 配置与面包屑相同，只是增加了自动根据路由计算面包屑的功能。此功能必须要在 ProLayout 中使用。
+    *
+    * @param props
+    * @returns
+    */
+  @JSImport("@ant-design/pro-layout/es/components/PageContainer", "ProBreadcrumb")
+  @js.native
+  val ProBreadcrumb: FC[BreadcrumbProps] = js.native
+  
+  inline def ProPageHeader(props: PageContainerPropsprefixe): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ProPageHeader")(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
+  /* Inlined {  title :react.react.ReactNode | false | undefined,   content :react.react.ReactNode | undefined,   extraContent :react.react.ReactNode | undefined,   prefixCls :string | undefined,   footer :std.Array<react.react.ReactNode> | undefined,   header :std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/components/PageHeader.PageHeaderProps> & {  children :react.react.ReactNode | undefined} | undefined,   pageHeaderRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.WithFalse<(props : @ant-design/pro-layout.@ant-design/pro-layout/es/components/PageContainer.PageContainerProps): react.react.ReactNode> | undefined,   affixProps :std.Omit<antd.antd.AffixProps, 'children'> | undefined,   loading :boolean | antd.antd.SpinProps | react.react.ReactNode | undefined,   breadcrumbRender :@ant-design/pro-layout.@ant-design/pro-layout/es/components/PageHeader.PageHeaderProps['breadcrumbRender'] | false | undefined,   waterMarkProps :@ant-design/pro-layout.@ant-design/pro-layout/es/components/WaterMark.WaterMarkProps | undefined,   breadcrumb :antd.antd.BreadcrumbProps | undefined,   children :react.react.ReactNode | undefined} & @ant-design/pro-layout.@ant-design/pro-layout/es/components/PageContainer.PageHeaderTabConfig & std.Omit<@ant-design/pro-layout.@ant-design/pro-layout/es/components/PageHeader.PageHeaderProps, 'title' | 'footer' | 'breadcrumbRender' | 'breadcrumb'> */
   trait PageContainerProps extends StObject {
     
     /**
+      * 与 antd 完全相同
+      *
       * @name 固钉的配置
-      * @description 与 antd 完全相同
       */
-    var affixProps: js.UndefOr[AffixProps] = js.undefined
+    var affixProps: js.UndefOr[OmitAffixPropschildren] = js.undefined
     
     var avatar: js.UndefOr[AvatarProps] = js.undefined
     
     var backIcon: js.UndefOr[ReactNode] = js.undefined
     
+    /** @name 配置面包屑 */
     var breadcrumb: js.UndefOr[BreadcrumbProps] = js.undefined
+    
+    /** 自定义 breadcrumb,返回false不展示 */
+    var breadcrumbRender: js.UndefOr[
+        (js.Function2[/* props */ this.type, /* defaultDom */ ReactNode, ReactNode]) | `false`
+      ] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -52,45 +79,40 @@ object pageContainerMod extends Shortcut {
     var extraContent: js.UndefOr[ReactNode] = js.undefined
     
     /**
-      * @name 固定 PageHeader 到页面顶部
       * @deprecated 请使用 fixedHeader
+      * @name 固定 PageHeader 到页面顶部
       */
     var fixHeader: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * @name 固定 PageHeader 到页面顶部
-      */
+    /** @name 固定 PageHeader 到页面顶部 */
     var fixedHeader: js.UndefOr[Boolean] = js.undefined
     
     var footer: js.UndefOr[js.Array[ReactNode]] = js.undefined
     
-    /**
-      * @name 是否显示背景色
-      */
     var ghost: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * 与 antd 完全相同
+      *
       * @name PageHeader 的配置
-      * @description 与 antd 完全相同
       */
-    var header: js.UndefOr[PageHeaderPropschildrenRe] = js.undefined
+    var header: js.UndefOr[PartialPageHeaderPropschi] = js.undefined
     
     /**
+      * 只加载内容区域
+      *
       * @name 是否加载
-      * @description 只加载内容区域
       */
-    var loading: js.UndefOr[Boolean] = js.undefined
+    var loading: js.UndefOr[Boolean | SpinProps | ReactNode] = js.undefined
     
-    var onBack: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.undefined
+    var onBack: js.UndefOr[
+        js.Function1[/* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], Unit]
+      ] = js.undefined
     
-    /**
-      * @name tab 修改时触发
-      */
+    /** @name tab 修改时触发 */
     var onTabChange: js.UndefOr[js.Function1[/* activeKey */ String, Unit]] = js.undefined
     
-    /**
-      * @name 自定义 pageHeader
-      */
+    /** @name 自定义 pageHeader */
     var pageHeaderRender: js.UndefOr[WithFalse[js.Function1[/* props */ this.type, ReactNode]]] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
@@ -99,29 +121,24 @@ object pageContainerMod extends Shortcut {
     
     var subTitle: js.UndefOr[ReactNode] = js.undefined
     
-    /**
-      * @name 当前选中 tab 的 key
-      */
+    /** @name 当前选中 tab 的 key */
     var tabActiveKey: js.UndefOr[String] = js.undefined
     
-    /**
-      * @name tab 上多余的区域
-      */
+    /** @name tab 上额外的区域 */
     var tabBarExtraContent: js.UndefOr[TabBarExtraContent] = js.undefined
     
-    /**
-      * @name tabs 的列表
-      */
+    /** @name tabs 的列表 */
     var tabList: js.UndefOr[js.Array[TabPanePropskeyReactTextu]] = js.undefined
     
-    /**
-      * @name tabs 的其他配置
-      */
+    /** @name tabs 的其他配置 */
     var tabProps: js.UndefOr[TabsProps] = js.undefined
     
     var tags: js.UndefOr[ReactElement | js.Array[ReactElement]] = js.undefined
     
     var title: js.UndefOr[ReactNode | `false`] = js.undefined
+    
+    /** @name 水印的配置 */
+    var waterMarkProps: js.UndefOr[WaterMarkProps] = js.undefined
   }
   object PageContainerProps {
     
@@ -132,7 +149,7 @@ object pageContainerMod extends Shortcut {
     
     extension [Self <: PageContainerProps](x: Self) {
       
-      inline def setAffixProps(value: AffixProps): Self = StObject.set(x, "affixProps", value.asInstanceOf[js.Any])
+      inline def setAffixProps(value: OmitAffixPropschildren): Self = StObject.set(x, "affixProps", value.asInstanceOf[js.Any])
       
       inline def setAffixPropsUndefined: Self = StObject.set(x, "affixProps", js.undefined)
       
@@ -146,7 +163,17 @@ object pageContainerMod extends Shortcut {
       
       inline def setBreadcrumb(value: BreadcrumbProps): Self = StObject.set(x, "breadcrumb", value.asInstanceOf[js.Any])
       
+      inline def setBreadcrumbRender(value: (js.Function2[PageContainerProps, /* defaultDom */ ReactNode, ReactNode]) | `false`): Self = StObject.set(x, "breadcrumbRender", value.asInstanceOf[js.Any])
+      
+      inline def setBreadcrumbRenderFunction2(value: (PageContainerProps, /* defaultDom */ ReactNode) => ReactNode): Self = StObject.set(x, "breadcrumbRender", js.Any.fromFunction2(value))
+      
+      inline def setBreadcrumbRenderUndefined: Self = StObject.set(x, "breadcrumbRender", js.undefined)
+      
       inline def setBreadcrumbUndefined: Self = StObject.set(x, "breadcrumb", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -176,21 +203,21 @@ object pageContainerMod extends Shortcut {
       
       inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      inline def setFooterVarargs(value: ReactNode*): Self = StObject.set(x, "footer", js.Array(value :_*))
+      inline def setFooterVarargs(value: ReactNode*): Self = StObject.set(x, "footer", js.Array(value*))
       
       inline def setGhost(value: Boolean): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
       
       inline def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
       
-      inline def setHeader(value: PageHeaderPropschildrenRe): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: PartialPageHeaderPropschi): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean | SpinProps | ReactNode): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      inline def setOnBack(value: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction1(value))
+      inline def setOnBack(value: /* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]] => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction1(value))
       
       inline def setOnBackUndefined: Self = StObject.set(x, "onBack", js.undefined)
       
@@ -228,7 +255,7 @@ object pageContainerMod extends Shortcut {
       
       inline def setTabListUndefined: Self = StObject.set(x, "tabList", js.undefined)
       
-      inline def setTabListVarargs(value: TabPanePropskeyReactTextu*): Self = StObject.set(x, "tabList", js.Array(value :_*))
+      inline def setTabListVarargs(value: TabPanePropskeyReactTextu*): Self = StObject.set(x, "tabList", js.Array(value*))
       
       inline def setTabProps(value: TabsProps): Self = StObject.set(x, "tabProps", value.asInstanceOf[js.Any])
       
@@ -238,50 +265,42 @@ object pageContainerMod extends Shortcut {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: ReactElement*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: ReactElement*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setTitle(value: ReactNode | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      
+      inline def setWaterMarkProps(value: WaterMarkProps): Self = StObject.set(x, "waterMarkProps", value.asInstanceOf[js.Any])
+      
+      inline def setWaterMarkPropsUndefined: Self = StObject.set(x, "waterMarkProps", js.undefined)
     }
   }
   
   trait PageHeaderTabConfig extends StObject {
     
     /**
-      * @name 固定 PageHeader 到页面顶部
       * @deprecated 请使用 fixedHeader
+      * @name 固定 PageHeader 到页面顶部
       */
     var fixHeader: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * @name 固定 PageHeader 到页面顶部
-      */
+    /** @name 固定 PageHeader 到页面顶部 */
     var fixedHeader: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * @name tab 修改时触发
-      */
+    /** @name tab 修改时触发 */
     var onTabChange: js.UndefOr[js.Function1[/* activeKey */ String, Unit]] = js.undefined
     
-    /**
-      * @name 当前选中 tab 的 key
-      */
+    /** @name 当前选中 tab 的 key */
     var tabActiveKey: js.UndefOr[String] = js.undefined
     
-    /**
-      * @name tab 上多余的区域
-      */
+    /** @name tab 上额外的区域 */
     var tabBarExtraContent: js.UndefOr[TabBarExtraContent] = js.undefined
     
-    /**
-      * @name tabs 的列表
-      */
+    /** @name tabs 的列表 */
     var tabList: js.UndefOr[js.Array[TabPanePropskeyReactTextu]] = js.undefined
     
-    /**
-      * @name tabs 的其他配置
-      */
+    /** @name tabs 的其他配置 */
     var tabProps: js.UndefOr[TabsProps] = js.undefined
   }
   object PageHeaderTabConfig {
@@ -317,16 +336,11 @@ object pageContainerMod extends Shortcut {
       
       inline def setTabListUndefined: Self = StObject.set(x, "tabList", js.undefined)
       
-      inline def setTabListVarargs(value: TabPanePropskeyReactTextu*): Self = StObject.set(x, "tabList", js.Array(value :_*))
+      inline def setTabListVarargs(value: TabPanePropskeyReactTextu*): Self = StObject.set(x, "tabList", js.Array(value*))
       
       inline def setTabProps(value: TabsProps): Self = StObject.set(x, "tabProps", value.asInstanceOf[js.Any])
       
       inline def setTabPropsUndefined: Self = StObject.set(x, "tabProps", js.undefined)
     }
   }
-  
-  type _To = FC[PageContainerProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `pageContainerMod.foo` */
-  override def _to: FC[PageContainerProps] = default
 }

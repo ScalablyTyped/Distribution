@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Record<keyof Resources, tabris.tabris.Selectable<tabris.tabris.ColorValue>> */
 trait ColorResourceData[Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in keyof Resources ]: tabris.tabris.Color}
-  */ typings.tabris.tabrisStrings.ColorResourceData & TopLevel[js.Any] */] extends StObject {
+  */ typings.tabris.tabrisStrings.ColorResourceData & TopLevel[Any] */] extends StObject {
   
   var build: Selectable[ColorValue]
   
@@ -18,14 +18,14 @@ object ColorResourceData {
   
   inline def apply[Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Resources ]: tabris.tabris.Color}
-    */ typings.tabris.tabrisStrings.ColorResourceData & TopLevel[js.Any] */](): ColorResourceData[Resources] = {
+    */ typings.tabris.tabrisStrings.ColorResourceData & TopLevel[Any] */](): ColorResourceData[Resources] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorResourceData[Resources]]
   }
   
   extension [Self <: ColorResourceData[?], Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Resources ]: tabris.tabris.Color}
-    */ typings.tabris.tabrisStrings.ColorResourceData & TopLevel[js.Any] */](x: Self & ColorResourceData[Resources]) {
+    */ typings.tabris.tabrisStrings.ColorResourceData & TopLevel[Any] */](x: Self & ColorResourceData[Resources]) {
     
     inline def setBuild(value: Selectable[ColorValue]): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

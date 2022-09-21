@@ -10,10 +10,10 @@ Generate an image thumbnail.
 | ------------------ | :-------------: |
 | Full name          | image-thumbnail |
 | Keywords           | image, javascript, thumbnail, resize, sharp, percentage |
-| # releases         | 12 |
-| # dependents       | 8 |
-| # downloads        | 240143 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 39424.0 |
+| # stars            | 66.0 |
 
 ## Links
 - [Homepage](https://github.com/onildoaguiar/image-thumbnail#readme)

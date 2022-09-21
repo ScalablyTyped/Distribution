@@ -30,7 +30,7 @@ object DescribeMetadataResult {
     
     inline def setMetadataObjects(value: js.Array[MetadataObject]): Self = StObject.set(x, "metadataObjects", value.asInstanceOf[js.Any])
     
-    inline def setMetadataObjectsVarargs(value: MetadataObject*): Self = StObject.set(x, "metadataObjects", js.Array(value :_*))
+    inline def setMetadataObjectsVarargs(value: MetadataObject*): Self = StObject.set(x, "metadataObjects", js.Array(value*))
     
     inline def setOrganizationNamespace(value: String): Self = StObject.set(x, "organizationNamespace", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ object vignetteMod {
   
   @JSImport("material-ui/svg-icons/image/vignette", JSImport.Default)
   @js.native
-  class default () extends ImageVignette
+  open class default () extends ImageVignette
   
   @JSImport("material-ui/svg-icons/image/vignette", "ImageVignette")
   @js.native
-  class ImageVignette ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageVignette ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

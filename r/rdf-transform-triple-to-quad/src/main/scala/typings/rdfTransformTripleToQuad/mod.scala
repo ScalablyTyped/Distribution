@@ -1,14 +1,11 @@
 package typings.rdfTransformTripleToQuad
 
-import typings.node.Buffer
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.streamMod.Transform
-import typings.rdfJs.mod.BaseQuad
-import typings.rdfJs.mod.DataFactory
-import typings.rdfJs.mod.Quad
-import typings.rdfJs.mod.QuadGraph
-import typings.rdfJs.mod.Stream
+import typings.rdfjsTypes.dataModelMod.BaseQuad
+import typings.rdfjsTypes.dataModelMod.DataFactory
+import typings.rdfjsTypes.dataModelMod.Quad
+import typings.rdfjsTypes.dataModelMod.QuadGraph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,21 +14,20 @@ object mod {
   
   @JSImport("rdf-transform-triple-to-quad", JSImport.Namespace)
   @js.native
-  class ^[Q /* <: BaseQuad */] () extends TripleToQuadTransform[Q] {
+  open class ^[Q /* <: BaseQuad */] () extends TripleToQuadTransform[Q] {
+    def this(graph: String) = this()
     def this(graph: QuadGraph) = this()
+    def this(graph: String, options: TripleToQuadTransformOptions) = this()
     def this(graph: Unit, options: TripleToQuadTransformOptions) = this()
     def this(graph: QuadGraph, options: TripleToQuadTransformOptions) = this()
   }
   
-  @js.native
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.node.eventsMod.EventEmitter because Inheritance from two classes. Inlined 
+  - typings.rdfjsTypes.streamMod.Stream because Inheritance from two classes. Inlined read */ @js.native
   trait TripleToQuadTransform[Q /* <: BaseQuad */]
     extends Transform
-       with Stream[Q] {
-    
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
+       with EventEmitter {
     
     /**
       * This method pulls a quad out of the internal buffer and returns it.
@@ -39,8 +35,7 @@ object mod {
       *
       * @return A quad from the internal buffer, or null if none is available.
       */
-    /* InferMemberOverrides */
-    override def read(): (Q | Null) & (String | Buffer) = js.native
+    def read(): Q | Null = js.native
   }
   
   trait TripleToQuadTransformOptions extends StObject {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase
 
-Typings are for version 8.1.1
+Typings are for version 9.10.0
 
 ## Library description:
 Firebase JavaScript library for web and Node.js
@@ -9,11 +9,11 @@ Firebase JavaScript library for web and Node.js
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | firebase |
-| Keywords           | authentication, database, Firebase, firebase, firestore, realtime, storage, performance, remote-config |
-| # releases         | 1295 |
-| # dependents       | 1639 |
-| # downloads        | 36811772 |
-| # stars            | 131 |
+| Keywords           | authentication, database, Firebase, firebase, realtime, storage, performance, remote-config |
+| # releases         | 1386 |
+| # dependents       | 0.0 |
+| # downloads        | 5522288.333333333 |
+| # stars            | 4194.0 |
 
 ## Links
 - [Homepage](https://firebase.google.com/)

@@ -1,9 +1,6 @@
 package typings.loadableServer
 
 import typings.loadableServer.anon.Default
-import typings.loadableServer.anon.Entrypoints
-import typings.loadableServer.anon.Stats
-import typings.loadableServer.anon.StatsFile
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
@@ -15,7 +12,7 @@ object mod {
   
   @JSImport("@loadable/server", "ChunkExtractor")
   @js.native
-  class ChunkExtractor protected () extends StObject {
+  open class ChunkExtractor protected () extends StObject {
     def this(options: ChunkExtractorOptions) = this()
     
     /**
@@ -66,6 +63,11 @@ object mod {
     def getMainAssets(scriptType: String): js.Array[Chunk] = js.native
     
     /**
+      * Returns the preload assets lists.
+      */
+    def getPreAssets(): js.Array[Chunk] = js.native
+    
+    /**
       * Get scripts as an array of React `<script>` elements.
       */
     def getScriptElements(): js.Array[ReactElement] = js.native
@@ -102,14 +104,14 @@ object mod {
   
   @JSImport("@loadable/server", "ChunkExtractorManager")
   @js.native
-  class ChunkExtractorManager protected ()
-    extends Component[ChunkExtractorManagerProps, js.Object, js.Any] {
+  open class ChunkExtractorManager protected ()
+    extends Component[ChunkExtractorManagerProps, js.Object, Any] {
     def this(props: ChunkExtractorManagerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ChunkExtractorManagerProps, context: js.Any) = this()
+    def this(props: ChunkExtractorManagerProps, context: Any) = this()
   }
   
   type AttrFn = js.Function1[/* chunk */ Chunk, js.Object]
@@ -181,5 +183,21 @@ object mod {
     }
   }
   
-  type ChunkExtractorOptions = Entrypoints & (StatsFile | Stats)
+  /* Rewritten from type alias, can be one of: 
+    - typings.loadableServer.anon.statsFilestringentrypoint
+    - typings.loadableServer.anon.statsobjectentrypointsstr
+  */
+  trait ChunkExtractorOptions extends StObject
+  object ChunkExtractorOptions {
+    
+    inline def statsFilestringentrypoint(statsFile: String): typings.loadableServer.anon.statsFilestringentrypoint = {
+      val __obj = js.Dynamic.literal(statsFile = statsFile.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.loadableServer.anon.statsFilestringentrypoint]
+    }
+    
+    inline def statsobjectentrypointsstr(stats: js.Object): typings.loadableServer.anon.statsobjectentrypointsstr = {
+      val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.loadableServer.anon.statsobjectentrypointsstr]
+    }
+  }
 }

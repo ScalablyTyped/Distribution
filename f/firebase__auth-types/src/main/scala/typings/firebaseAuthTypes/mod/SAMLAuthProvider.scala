@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/auth-types", "SAMLAuthProvider")
 @js.native
-class SAMLAuthProvider protected ()
+open class SAMLAuthProvider protected ()
   extends StObject
      with AuthProvider {
   def this(providerId: String) = this()

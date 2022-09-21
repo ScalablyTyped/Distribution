@@ -1,7 +1,7 @@
 
 # Scala.js typings for socketcluster-server
 
-Typings are for version 15.0
+Typings are for version 16.1
 
 ## Library description:
 Server module for SocketCluster
@@ -10,10 +10,10 @@ Server module for SocketCluster
 | ------------------ | :-------------: |
 | Full name          | socketcluster-server |
 | Keywords           | websocket, realtime, socketcluster |
-| # releases         | 9 |
-| # dependents       | 17 |
-| # downloads        | 919541 |
-| # stars            | 1 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 46915.0 |
+| # stars            | 93.0 |
 
 ## Links
 - [Homepage](https://github.com/SocketCluster/socketcluster-server#readme)

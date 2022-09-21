@@ -38,7 +38,7 @@ trait QuotaUser extends StObject {
   /** Request body */
   var resource: Rollout
   
-  /** Required. The name of the service. See the [overview](/service-management/overview) for naming requirements. For example: `example.googleapis.com`. */
+  /** Required. The name of the service. See the [overview](https://cloud.google.com/service-management/overview) for naming requirements. For example: `example.googleapis.com`. */
   var serviceName: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

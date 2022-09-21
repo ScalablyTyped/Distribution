@@ -10,10 +10,10 @@ object takeUntilObserverMod {
   
   @JSImport("wonder-frp/dist/commonjs/observer/TakeUntilObserver", "TakeUntilObserver")
   @js.native
-  class TakeUntilObserver protected () extends Observer {
+  open class TakeUntilObserver protected () extends Observer {
     def this(prevObserver: IObserver) = this()
     
-    /* private */ var _prevObserver: js.Any = js.native
+    /* private */ var _prevObserver: Any = js.native
   }
   /* static members */
   object TakeUntilObserver {

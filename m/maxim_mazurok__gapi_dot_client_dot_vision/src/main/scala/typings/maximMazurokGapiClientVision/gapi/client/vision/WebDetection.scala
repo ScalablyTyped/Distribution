@@ -40,36 +40,36 @@ object WebDetection {
     
     inline def setBestGuessLabelsUndefined: Self = StObject.set(x, "bestGuessLabels", js.undefined)
     
-    inline def setBestGuessLabelsVarargs(value: WebLabel*): Self = StObject.set(x, "bestGuessLabels", js.Array(value :_*))
+    inline def setBestGuessLabelsVarargs(value: WebLabel*): Self = StObject.set(x, "bestGuessLabels", js.Array(value*))
     
     inline def setFullMatchingImages(value: js.Array[WebImage]): Self = StObject.set(x, "fullMatchingImages", value.asInstanceOf[js.Any])
     
     inline def setFullMatchingImagesUndefined: Self = StObject.set(x, "fullMatchingImages", js.undefined)
     
-    inline def setFullMatchingImagesVarargs(value: WebImage*): Self = StObject.set(x, "fullMatchingImages", js.Array(value :_*))
+    inline def setFullMatchingImagesVarargs(value: WebImage*): Self = StObject.set(x, "fullMatchingImages", js.Array(value*))
     
     inline def setPagesWithMatchingImages(value: js.Array[WebPage]): Self = StObject.set(x, "pagesWithMatchingImages", value.asInstanceOf[js.Any])
     
     inline def setPagesWithMatchingImagesUndefined: Self = StObject.set(x, "pagesWithMatchingImages", js.undefined)
     
-    inline def setPagesWithMatchingImagesVarargs(value: WebPage*): Self = StObject.set(x, "pagesWithMatchingImages", js.Array(value :_*))
+    inline def setPagesWithMatchingImagesVarargs(value: WebPage*): Self = StObject.set(x, "pagesWithMatchingImages", js.Array(value*))
     
     inline def setPartialMatchingImages(value: js.Array[WebImage]): Self = StObject.set(x, "partialMatchingImages", value.asInstanceOf[js.Any])
     
     inline def setPartialMatchingImagesUndefined: Self = StObject.set(x, "partialMatchingImages", js.undefined)
     
-    inline def setPartialMatchingImagesVarargs(value: WebImage*): Self = StObject.set(x, "partialMatchingImages", js.Array(value :_*))
+    inline def setPartialMatchingImagesVarargs(value: WebImage*): Self = StObject.set(x, "partialMatchingImages", js.Array(value*))
     
     inline def setVisuallySimilarImages(value: js.Array[WebImage]): Self = StObject.set(x, "visuallySimilarImages", value.asInstanceOf[js.Any])
     
     inline def setVisuallySimilarImagesUndefined: Self = StObject.set(x, "visuallySimilarImages", js.undefined)
     
-    inline def setVisuallySimilarImagesVarargs(value: WebImage*): Self = StObject.set(x, "visuallySimilarImages", js.Array(value :_*))
+    inline def setVisuallySimilarImagesVarargs(value: WebImage*): Self = StObject.set(x, "visuallySimilarImages", js.Array(value*))
     
     inline def setWebEntities(value: js.Array[WebEntity]): Self = StObject.set(x, "webEntities", value.asInstanceOf[js.Any])
     
     inline def setWebEntitiesUndefined: Self = StObject.set(x, "webEntities", js.undefined)
     
-    inline def setWebEntitiesVarargs(value: WebEntity*): Self = StObject.set(x, "webEntities", js.Array(value :_*))
+    inline def setWebEntitiesVarargs(value: WebEntity*): Self = StObject.set(x, "webEntities", js.Array(value*))
   }
 }

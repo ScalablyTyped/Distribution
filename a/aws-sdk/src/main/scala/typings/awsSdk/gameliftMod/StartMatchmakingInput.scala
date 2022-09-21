@@ -34,7 +34,7 @@ object StartMatchmakingInput {
     
     inline def setPlayers(value: PlayerList): Self = StObject.set(x, "Players", value.asInstanceOf[js.Any])
     
-    inline def setPlayersVarargs(value: Player*): Self = StObject.set(x, "Players", js.Array(value :_*))
+    inline def setPlayersVarargs(value: Player*): Self = StObject.set(x, "Players", js.Array(value*))
     
     inline def setTicketId(value: MatchmakingIdStringModel): Self = StObject.set(x, "TicketId", value.asInstanceOf[js.Any])
     

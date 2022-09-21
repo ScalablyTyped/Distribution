@@ -32,7 +32,7 @@ object Anomaly {
     
     inline def setInstances(value: AnomalyInstances): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    inline def setInstancesVarargs(value: AnomalyInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: AnomalyInstance*): Self = StObject.set(x, "instances", js.Array(value*))
     
     inline def setMetric(value: Metric): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     

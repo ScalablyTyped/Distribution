@@ -1,6 +1,7 @@
 package typings.flatpickr
 
 import typings.flatpickr.anon.Config
+import typings.flatpickr.anon.Hours
 import typings.flatpickr.globalsMod.global.Date
 import typings.flatpickr.localeMod.Locale
 import typings.flatpickr.optionsMod.ParsedOptions
@@ -13,6 +14,8 @@ object datesMod {
   @JSImport("flatpickr/dist/utils/dates", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def calculateSecondsSinceMidnight(hours: Double, minutes: Double, seconds: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateSecondsSinceMidnight")(hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def compareDates(date1: Date, date2: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDates")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def compareDates(date1: Date, date2: Date, timeless: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDates")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any], timeless.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -47,7 +50,11 @@ object datesMod {
     inline def DAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DAY")(x.asInstanceOf[js.Any])
   }
   
+  inline def getDefaultHours(config: ParsedOptions): Hours = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultHours")(config.asInstanceOf[js.Any]).asInstanceOf[Hours]
+  
   inline def isBetween(ts: Double, ts1: Double, ts2: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBetween")(ts.asInstanceOf[js.Any], ts1.asInstanceOf[js.Any], ts2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def parseSeconds(secondsSinceMidnight: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSeconds")(secondsSinceMidnight.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   trait FormatterArgs extends StObject {
     

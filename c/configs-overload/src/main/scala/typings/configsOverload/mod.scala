@@ -41,5 +41,5 @@ object mod {
     }
   }
   
-  type ExtendableConfig = StringDictionary[js.Any]
+  type ExtendableConfig = StringDictionary[Any]
 }

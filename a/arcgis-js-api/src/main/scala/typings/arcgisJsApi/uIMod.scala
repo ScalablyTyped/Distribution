@@ -22,7 +22,7 @@ object uIMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with UI {
     def this(properties: UIProperties) = this()

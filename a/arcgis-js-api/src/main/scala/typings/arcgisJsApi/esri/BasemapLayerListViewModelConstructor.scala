@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BasemapLayerListViewModelConstructor
   extends StObject
-     with Instantiable0[BasemapLayerListViewModel]
+     with /**
+  * Provides logic for the [BasemapLayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html)
+  */
+Instantiable0[BasemapLayerListViewModel]
      with Instantiable1[/* properties */ BasemapLayerListViewModelProperties, BasemapLayerListViewModel]

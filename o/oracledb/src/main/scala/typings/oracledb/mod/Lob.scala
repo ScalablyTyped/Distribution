@@ -1,6 +1,6 @@
 package typings.oracledb.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Duplex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -47,13 +47,13 @@ trait Lob extends Duplex {
   
   /**
     * Return all the LOB data. CLOBs and NCLOBs will be returned as strings. BLOBs will be returned as a Buffer.
-    * 
+    *
     * This method is usable for LOBs up to 1 GB in length.
-    * 
+    *
     * For queries returning LOB columns, it can be more efficient to use fetchAsString, fetchAsBuffer, or fetchInfo instead of lob.getData().
-    * 
+    *
     * Note it is an asynchronous method and requires a round-trip to the database.
-    * 
+    *
     * @since 4.0
     */
   def getData(): js.Promise[String | Buffer] = js.native

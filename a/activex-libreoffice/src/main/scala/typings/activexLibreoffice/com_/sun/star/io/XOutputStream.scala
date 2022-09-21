@@ -42,7 +42,7 @@ object XOutputStream {
     acquire: () => Unit,
     closeOutput: () => Unit,
     flush: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     writeBytes: SeqEquiv[Double] => Unit
   ): XOutputStream = {

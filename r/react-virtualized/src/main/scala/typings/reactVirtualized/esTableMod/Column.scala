@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-virtualized/dist/es/Table", "Column")
 @js.native
-class Column protected ()
-  extends Component[ColumnProps, js.Object, js.Any] {
+open class Column protected ()
+  extends Component[ColumnProps, js.Object, Any] {
   def this(props: ColumnProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ColumnProps, context: js.Any) = this()
+  def this(props: ColumnProps, context: Any) = this()
 }
 /* static members */
 object Column {

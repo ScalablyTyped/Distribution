@@ -15,7 +15,7 @@ trait RunQueryRequest extends StObject {
   /** A structured query. */
   var structuredQuery: js.UndefOr[StructuredQuery] = js.undefined
   
-  /** Reads documents in a transaction. */
+  /** Run the query within an already active transaction. The value here is the opaque transaction ID to execute the query in. */
   var transaction: js.UndefOr[String] = js.undefined
 }
 object RunQueryRequest {

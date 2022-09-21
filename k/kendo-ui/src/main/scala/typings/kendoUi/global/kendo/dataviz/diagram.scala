@@ -9,7 +9,6 @@ import typings.kendoUi.kendo.dataviz.diagram.LayoutOptions
 import typings.kendoUi.kendo.dataviz.diagram.LineOptions
 import typings.kendoUi.kendo.dataviz.diagram.PathOptions
 import typings.kendoUi.kendo.dataviz.diagram.PolylineOptions
-import typings.kendoUi.kendo.dataviz.diagram.RectOptions
 import typings.kendoUi.kendo.dataviz.diagram.RectangleOptions
 import typings.kendoUi.kendo.dataviz.diagram.ShapeOptions
 import typings.kendoUi.kendo.dataviz.diagram.TextBlockOptions
@@ -21,7 +20,7 @@ object diagram {
   
   @JSGlobal("kendo.dataviz.diagram.Circle")
   @js.native
-  class Circle ()
+  open class Circle ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.diagram.Circle {
     def this(options: CircleOptions) = this()
@@ -29,15 +28,25 @@ object diagram {
   
   @JSGlobal("kendo.dataviz.diagram.Connection")
   @js.native
-  class Connection ()
+  open class Connection ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.diagram.Connection {
-    def this(options: ConnectionOptions) = this()
+    def this(from: typings.kendoUi.kendo.dataviz.diagram.Shape) = this()
+    def this(from: Unit, to: typings.kendoUi.kendo.dataviz.diagram.Shape) = this()
+    def this(from: typings.kendoUi.kendo.dataviz.diagram.Shape, to: typings.kendoUi.kendo.dataviz.diagram.Shape) = this()
+    def this(from: Unit, to: Unit, options: ConnectionOptions) = this()
+    def this(from: Unit, to: typings.kendoUi.kendo.dataviz.diagram.Shape, options: ConnectionOptions) = this()
+    def this(from: typings.kendoUi.kendo.dataviz.diagram.Shape, to: Unit, options: ConnectionOptions) = this()
+    def this(
+      from: typings.kendoUi.kendo.dataviz.diagram.Shape,
+      to: typings.kendoUi.kendo.dataviz.diagram.Shape,
+      options: ConnectionOptions
+    ) = this()
   }
   
   @JSGlobal("kendo.dataviz.diagram.Connector")
   @js.native
-  class Connector ()
+  open class Connector ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.diagram.Connector {
     def this(options: ConnectorOptions) = this()
@@ -45,7 +54,7 @@ object diagram {
   
   @JSGlobal("kendo.dataviz.diagram.Group")
   @js.native
-  class Group ()
+  open class Group ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.diagram.Group {
     def this(options: GroupOptions) = this()
@@ -53,7 +62,7 @@ object diagram {
   
   @JSGlobal("kendo.dataviz.diagram.Image")
   @js.native
-  class Image ()
+  open class Image ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.diagram.Image {
     def this(options: ImageOptions) = this()
@@ -61,7 +70,7 @@ object diagram {
   
   @JSGlobal("kendo.dataviz.diagram.Layout")
   @js.native
-  class Layout protected ()
+  open class Layout protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.diagram.Layout {
     def this(rect: typings.kendoUi.kendo.dataviz.diagram.Rect) = this()
@@ -70,7 +79,7 @@ object diagram {
   
   @JSGlobal("kendo.dataviz.diagram.Line")
   @js.native
-  class Line ()
+  open class Line ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.diagram.Line {
     def this(options: LineOptions) = this()
@@ -78,7 +87,7 @@ object diagram {
   
   @JSGlobal("kendo.dataviz.diagram.Path")
   @js.native
-  class Path ()
+  open class Path ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.diagram.Path {
     def this(options: PathOptions) = this()
@@ -86,7 +95,7 @@ object diagram {
   
   @JSGlobal("kendo.dataviz.diagram.Point")
   @js.native
-  class Point protected ()
+  open class Point protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.diagram.Point {
     def this(x: Double, y: Double) = this()
@@ -94,7 +103,7 @@ object diagram {
   
   @JSGlobal("kendo.dataviz.diagram.Polyline")
   @js.native
-  class Polyline ()
+  open class Polyline ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.diagram.Polyline {
     def this(options: PolylineOptions) = this()
@@ -102,15 +111,29 @@ object diagram {
   
   @JSGlobal("kendo.dataviz.diagram.Rect")
   @js.native
-  class Rect ()
+  open class Rect ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.diagram.Rect {
-    def this(options: RectOptions) = this()
+    def this(x: Double) = this()
+    def this(x: Double, y: Double) = this()
+    def this(x: Unit, y: Double) = this()
+    def this(x: Double, y: Double, width: Double) = this()
+    def this(x: Double, y: Unit, width: Double) = this()
+    def this(x: Unit, y: Double, width: Double) = this()
+    def this(x: Unit, y: Unit, width: Double) = this()
+    def this(x: Double, y: Double, width: Double, height: Double) = this()
+    def this(x: Double, y: Double, width: Unit, height: Double) = this()
+    def this(x: Double, y: Unit, width: Double, height: Double) = this()
+    def this(x: Double, y: Unit, width: Unit, height: Double) = this()
+    def this(x: Unit, y: Double, width: Double, height: Double) = this()
+    def this(x: Unit, y: Double, width: Unit, height: Double) = this()
+    def this(x: Unit, y: Unit, width: Double, height: Double) = this()
+    def this(x: Unit, y: Unit, width: Unit, height: Double) = this()
   }
   
   @JSGlobal("kendo.dataviz.diagram.Rectangle")
   @js.native
-  class Rectangle ()
+  open class Rectangle ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.diagram.Rectangle {
     def this(options: RectangleOptions) = this()
@@ -118,7 +141,7 @@ object diagram {
   
   @JSGlobal("kendo.dataviz.diagram.Shape")
   @js.native
-  class Shape ()
+  open class Shape ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.diagram.Shape {
     def this(options: ShapeOptions) = this()
@@ -126,7 +149,7 @@ object diagram {
   
   @JSGlobal("kendo.dataviz.diagram.TextBlock")
   @js.native
-  class TextBlock ()
+  open class TextBlock ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.diagram.TextBlock {
     def this(options: TextBlockOptions) = this()

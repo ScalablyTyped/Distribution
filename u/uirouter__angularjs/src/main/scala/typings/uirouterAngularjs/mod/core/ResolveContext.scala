@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/angularjs", "core.ResolveContext")
 @js.native
-class ResolveContext protected ()
+open class ResolveContext protected ()
   extends typings.uirouterCore.mod.ResolveContext {
   def this(_path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]) = this()
 }

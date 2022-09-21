@@ -10,7 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def list(callback: js.Function2[/* error */ js.Any, /* drives */ js.Array[Drive], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def list(callback: js.Function2[/* error */ Any, /* drives */ js.Array[Drive], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.drivelist.drivelistStrings.SATA
@@ -52,7 +52,7 @@ object mod {
     
     var enumerator: String
     
-    var error: js.Any
+    var error: Any
     
     var isCard: Boolean | Null
     
@@ -86,7 +86,7 @@ object mod {
       description: String,
       device: String,
       enumerator: String,
-      error: js.Any,
+      error: Any,
       isReadOnly: Boolean,
       isSystem: Boolean,
       mountpoints: js.Array[MountPoint],
@@ -118,7 +118,7 @@ object mod {
       
       inline def setEnumerator(value: String): Self = StObject.set(x, "enumerator", value.asInstanceOf[js.Any])
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setIsCard(value: Boolean): Self = StObject.set(x, "isCard", value.asInstanceOf[js.Any])
       
@@ -154,7 +154,7 @@ object mod {
       
       inline def setMountpoints(value: js.Array[MountPoint]): Self = StObject.set(x, "mountpoints", value.asInstanceOf[js.Any])
       
-      inline def setMountpointsVarargs(value: MountPoint*): Self = StObject.set(x, "mountpoints", js.Array(value :_*))
+      inline def setMountpointsVarargs(value: MountPoint*): Self = StObject.set(x, "mountpoints", js.Array(value*))
       
       inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       

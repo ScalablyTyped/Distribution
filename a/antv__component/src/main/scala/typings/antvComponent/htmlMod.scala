@@ -9,7 +9,7 @@ object htmlMod {
   
   @JSImport("@antv/component/lib/annotation/html", JSImport.Default)
   @js.native
-  class default () extends HtmlAnnotation
+  open class default () extends HtmlAnnotation
   
   @js.native
   trait HtmlAnnotation

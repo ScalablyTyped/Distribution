@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // bestowed by ko.editable(target)
 trait KnockoutEditable extends StObject {
   
-  def addEditable(target: js.Any): js.Any
+  def addEditable(target: Any): Any
   
   def beginEdit(): Unit
   
@@ -20,7 +20,7 @@ trait KnockoutEditable extends StObject {
 object KnockoutEditable {
   
   inline def apply(
-    addEditable: js.Any => js.Any,
+    addEditable: Any => Any,
     beginEdit: () => Unit,
     commit: () => Unit,
     hasChanges: () => Boolean,
@@ -32,7 +32,7 @@ object KnockoutEditable {
   
   extension [Self <: KnockoutEditable](x: Self) {
     
-    inline def setAddEditable(value: js.Any => js.Any): Self = StObject.set(x, "addEditable", js.Any.fromFunction1(value))
+    inline def setAddEditable(value: Any => Any): Self = StObject.set(x, "addEditable", js.Any.fromFunction1(value))
     
     inline def setBeginEdit(value: () => Unit): Self = StObject.set(x, "beginEdit", js.Any.fromFunction0(value))
     

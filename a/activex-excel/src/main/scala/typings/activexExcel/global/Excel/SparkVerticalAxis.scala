@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SparkVerticalAxis")
 @js.native
-/* private */ class SparkVerticalAxis ()
+/* private */ open class SparkVerticalAxis ()
   extends StObject
      with typings.activexExcel.Excel.SparkVerticalAxis {
   
@@ -19,10 +19,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Creator: XlCreator = js.native
   
   /* CompleteClass */
-  var CustomMaxScaleValue: js.Any = js.native
+  var CustomMaxScaleValue: Any = js.native
   
   /* CompleteClass */
-  var CustomMinScaleValue: js.Any = js.native
+  var CustomMinScaleValue: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Excel.SparkVerticalAxis_typekey")
@@ -35,5 +35,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MinScaleType: XlSparkScale = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
 }

@@ -32,7 +32,7 @@ object mod {
   
   inline def rf(n: Double, df1: Double, df2: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rf")(n.asInstanceOf[js.Any], df1.asInstanceOf[js.Any], df2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  inline def rfml(n: Double, loc: Double, p: Double, cap: Double, trace: js.Any): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rfml")(n.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], p.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], trace.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def rfml(n: Double, loc: Double, p: Double, cap: Double, trace: Any): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rfml")(n.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], p.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], trace.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   inline def rgamma(n: Double, alpha: Double, rate: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rgamma")(n.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], rate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
@@ -54,7 +54,7 @@ object mod {
   
   inline def rword(len: Double, alphabet: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rword")(len.asInstanceOf[js.Any], alphabet.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def sample(collection: js.Array[js.Any], n: Double, replace: Boolean, ratios: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(collection.asInstanceOf[js.Any], n.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], ratios.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def sample(collection: js.Array[Any], n: Double, replace: Boolean, ratios: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(collection.asInstanceOf[js.Any], n.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], ratios.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
-  inline def visualize(data: js.Array[js.Any], domID: String, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("visualize")(data.asInstanceOf[js.Any], domID.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def visualize(data: js.Array[Any], domID: String, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("visualize")(data.asInstanceOf[js.Any], domID.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

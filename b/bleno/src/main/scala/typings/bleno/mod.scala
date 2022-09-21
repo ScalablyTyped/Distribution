@@ -13,9 +13,8 @@ import typings.bleno.blenoStrings.rssiUpdate
 import typings.bleno.blenoStrings.servicesSet
 import typings.bleno.blenoStrings.servicesSetError
 import typings.bleno.blenoStrings.stateChange
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.global.NodeJS.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("bleno", "Characteristic")
   @js.native
-  class CharacteristicCls protected ()
+  open class CharacteristicCls protected ()
     extends StObject
        with Characteristic {
     def this(options: CharacteristicOptions) = this()
@@ -62,7 +61,7 @@ object mod extends Shortcut {
     override def onReadRequest(offset: Double, callback: js.Function2[/* result */ Double, /* data */ js.UndefOr[Buffer], Unit]): Unit = js.native
     
     /* CompleteClass */
-    override def onSubscribe(maxValueSize: Double, updateValueCallback: js.Any): Unit = js.native
+    override def onSubscribe(maxValueSize: Double, updateValueCallback: Any): Unit = js.native
     
     /* CompleteClass */
     override def onUnsubscribe(): Unit = js.native
@@ -91,7 +90,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("bleno", "Descriptor")
   @js.native
-  class DescriptorCls protected ()
+  open class DescriptorCls protected ()
     extends StObject
        with Descriptor {
     def this(options: DescriptorOptions) = this()
@@ -106,7 +105,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("bleno", "PrimaryService")
   @js.native
-  class PrimaryServiceCls protected ()
+  open class PrimaryServiceCls protected ()
     extends StObject
        with PrimaryService {
     def this(options: PrimaryServiceOptions) = this()
@@ -138,9 +137,9 @@ object mod extends Shortcut {
     @JSName("on")
     def on_accept(event: accept, cb: js.Function1[/* address */ String, Unit]): this.type = js.native
     @JSName("on")
-    def on_advertisingStart(event: advertisingStart, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): this.type = js.native
+    def on_advertisingStart(event: advertisingStart, cb: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): this.type = js.native
     @JSName("on")
-    def on_advertisingStartError(event: advertisingStartError, cb: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_advertisingStartError(event: advertisingStartError, cb: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_advertisingStop(event: advertisingStop, cb: js.Function0[Unit]): this.type = js.native
     @JSName("on")
@@ -150,9 +149,9 @@ object mod extends Shortcut {
     @JSName("on")
     def on_rssiUpdate(event: rssiUpdate, cb: js.Function1[/* rssi */ Double, Unit]): this.type = js.native
     @JSName("on")
-    def on_servicesSet(event: servicesSet, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): this.type = js.native
+    def on_servicesSet(event: servicesSet, cb: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): this.type = js.native
     @JSName("on")
-    def on_servicesSetError(event: servicesSetError, cb: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_servicesSetError(event: servicesSetError, cb: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_stateChange(event: stateChange, cb: js.Function1[/* state */ State, Unit]): this.type = js.native
     
@@ -163,7 +162,7 @@ object mod extends Shortcut {
     def setServices(services: js.Array[typings.bleno.mod.PrimaryService]): Unit = js.native
     def setServices(
       services: js.Array[typings.bleno.mod.PrimaryService],
-      callback: js.Function1[/* arg */ js.UndefOr[Error | Null], Unit]
+      callback: js.Function1[/* arg */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
     
     def startAdvertising(name: String): Unit = js.native
@@ -171,9 +170,13 @@ object mod extends Shortcut {
     def startAdvertising(
       name: String,
       serviceUuids: js.Array[String],
-      callback: js.Function1[/* arg */ js.UndefOr[Error | Null], Unit]
+      callback: js.Function1[/* arg */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
-    def startAdvertising(name: String, serviceUuids: Unit, callback: js.Function1[/* arg */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    def startAdvertising(
+      name: String,
+      serviceUuids: Unit,
+      callback: js.Function1[/* arg */ js.UndefOr[js.Error | Null], Unit]
+    ): Unit = js.native
     
     def startAdvertisingIBeacon(uuid: String, major: Double, minor: Double, measuredPower: Double): Unit = js.native
     def startAdvertisingIBeacon(
@@ -181,16 +184,16 @@ object mod extends Shortcut {
       major: Double,
       minor: Double,
       measuredPower: Double,
-      callback: js.Function1[/* arg */ js.UndefOr[Error | Null], Unit]
+      callback: js.Function1[/* arg */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
     
     def startAdvertisingWithEIRData(advertisementData: Buffer): Unit = js.native
-    def startAdvertisingWithEIRData(advertisementData: Buffer, callback: js.Function1[/* arg */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    def startAdvertisingWithEIRData(advertisementData: Buffer, callback: js.Function1[/* arg */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
     def startAdvertisingWithEIRData(advertisementData: Buffer, scanData: Buffer): Unit = js.native
     def startAdvertisingWithEIRData(
       advertisementData: Buffer,
       scanData: Buffer,
-      callback: js.Function1[/* arg */ js.UndefOr[Error | Null], Unit]
+      callback: js.Function1[/* arg */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
     
     val state: State = js.native
@@ -222,7 +225,7 @@ object mod extends Shortcut {
     
     def onReadRequest(offset: Double, callback: js.Function2[/* result */ Double, /* data */ js.UndefOr[Buffer], Unit]): Unit
     
-    def onSubscribe(maxValueSize: Double, updateValueCallback: js.Any): Unit
+    def onSubscribe(maxValueSize: Double, updateValueCallback: Any): Unit
     
     def onUnsubscribe(): Unit
     
@@ -253,7 +256,7 @@ object mod extends Shortcut {
       onIndicate: () => Unit,
       onNotify: () => Unit,
       onReadRequest: (Double, js.Function2[/* result */ Double, /* data */ js.UndefOr[Buffer], Unit]) => Unit,
-      onSubscribe: (Double, js.Any) => Unit,
+      onSubscribe: (Double, Any) => Unit,
       onUnsubscribe: () => Unit,
       onWriteRequest: (Buffer, Double, Boolean, js.Function1[/* result */ Double, Unit]) => Unit,
       properties: js.Array[Property],
@@ -268,7 +271,7 @@ object mod extends Shortcut {
       
       inline def setDescriptors(value: js.Array[Descriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
-      inline def setDescriptorsVarargs(value: Descriptor*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
+      inline def setDescriptorsVarargs(value: Descriptor*): Self = StObject.set(x, "descriptors", js.Array(value*))
       
       inline def setOnIndicate(value: () => Unit): Self = StObject.set(x, "onIndicate", js.Any.fromFunction0(value))
       
@@ -276,7 +279,7 @@ object mod extends Shortcut {
       
       inline def setOnReadRequest(value: (Double, js.Function2[/* result */ Double, /* data */ js.UndefOr[Buffer], Unit]) => Unit): Self = StObject.set(x, "onReadRequest", js.Any.fromFunction2(value))
       
-      inline def setOnSubscribe(value: (Double, js.Any) => Unit): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction2(value))
+      inline def setOnSubscribe(value: (Double, Any) => Unit): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction2(value))
       
       inline def setOnUnsubscribe(value: () => Unit): Self = StObject.set(x, "onUnsubscribe", js.Any.fromFunction0(value))
       
@@ -284,7 +287,7 @@ object mod extends Shortcut {
       
       inline def setProperties(value: js.Array[Property]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      inline def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value*))
       
       inline def setRESULT_ATTR_NOT_LONG(value: Double): Self = StObject.set(x, "RESULT_ATTR_NOT_LONG", value.asInstanceOf[js.Any])
       
@@ -298,7 +301,7 @@ object mod extends Shortcut {
       
       inline def setSecure(value: js.Array[Property]): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      inline def setSecureVarargs(value: Property*): Self = StObject.set(x, "secure", js.Array(value :_*))
+      inline def setSecureVarargs(value: Property*): Self = StObject.set(x, "secure", js.Array(value*))
       
       inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
@@ -325,7 +328,7 @@ object mod extends Shortcut {
       ] = js.undefined
     
     var onSubscribe: js.UndefOr[
-        (js.Function2[/* maxValueSize */ Double, /* updateValueCallback */ js.Any, Unit]) | Null
+        (js.Function2[/* maxValueSize */ Double, /* updateValueCallback */ Any, Unit]) | Null
       ] = js.undefined
     
     var onUnsubscribe: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
@@ -363,7 +366,7 @@ object mod extends Shortcut {
       
       inline def setDescriptorsUndefined: Self = StObject.set(x, "descriptors", js.undefined)
       
-      inline def setDescriptorsVarargs(value: Descriptor*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
+      inline def setDescriptorsVarargs(value: Descriptor*): Self = StObject.set(x, "descriptors", js.Array(value*))
       
       inline def setOnIndicate(value: () => Unit): Self = StObject.set(x, "onIndicate", js.Any.fromFunction0(value))
       
@@ -385,7 +388,7 @@ object mod extends Shortcut {
       
       inline def setOnReadRequestUndefined: Self = StObject.set(x, "onReadRequest", js.undefined)
       
-      inline def setOnSubscribe(value: (/* maxValueSize */ Double, /* updateValueCallback */ js.Any) => Unit): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction2(value))
+      inline def setOnSubscribe(value: (/* maxValueSize */ Double, /* updateValueCallback */ Any) => Unit): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction2(value))
       
       inline def setOnSubscribeNull: Self = StObject.set(x, "onSubscribe", null)
       
@@ -411,7 +414,7 @@ object mod extends Shortcut {
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      inline def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value*))
       
       inline def setSecure(value: js.Array[Property]): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
@@ -419,7 +422,7 @@ object mod extends Shortcut {
       
       inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       
-      inline def setSecureVarargs(value: Property*): Self = StObject.set(x, "secure", js.Array(value :_*))
+      inline def setSecureVarargs(value: Property*): Self = StObject.set(x, "secure", js.Array(value*))
       
       inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
@@ -494,7 +497,7 @@ object mod extends Shortcut {
       
       inline def setCharacteristics(value: js.Array[Characteristic]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
       
-      inline def setCharacteristicsVarargs(value: Characteristic*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
+      inline def setCharacteristicsVarargs(value: Characteristic*): Self = StObject.set(x, "characteristics", js.Array(value*))
       
       inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
@@ -521,7 +524,7 @@ object mod extends Shortcut {
       
       inline def setCharacteristicsUndefined: Self = StObject.set(x, "characteristics", js.undefined)
       
-      inline def setCharacteristicsVarargs(value: Characteristic*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
+      inline def setCharacteristicsVarargs(value: Characteristic*): Self = StObject.set(x, "characteristics", js.Array(value*))
       
       inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }

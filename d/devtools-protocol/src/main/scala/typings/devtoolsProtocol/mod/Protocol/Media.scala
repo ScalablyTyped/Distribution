@@ -3,8 +3,6 @@ package typings.devtoolsProtocol.mod.Protocol
 import typings.devtoolsProtocol.devtoolsProtocolStrings.debug
 import typings.devtoolsProtocol.devtoolsProtocolStrings.error
 import typings.devtoolsProtocol.devtoolsProtocolStrings.info
-import typings.devtoolsProtocol.devtoolsProtocolStrings.media_error
-import typings.devtoolsProtocol.devtoolsProtocolStrings.pipeline_error
 import typings.devtoolsProtocol.devtoolsProtocolStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,45 +13,79 @@ object Media {
   trait PlayerError extends StObject {
     
     /**
-      * When this switches to using media::Status instead of PipelineStatus
-      * we can remove "errorCode" and replace it with the fields from
-      * a Status instance. This also seems like a duplicate of the error
-      * level enum - there is a todo bug to have that level removed and
-      * use this instead. (crbug.com/1068454)
+      * Errors potentially have a root cause error, ie, a DecoderError might be
+      * caused by an WindowsError
       */
-    var errorCode: String
+    var cause: js.Array[PlayerError]
     
     /**
-      *  (PlayerErrorType enum)
+      * Code is the numeric enum entry for a specific set of error codes, such
+      * as PipelineStatusCodes in media/base/pipeline_status.h
       */
-    var `type`: pipeline_error | media_error
+    var code: integer
+    
+    /**
+      * Extra data attached to an error, such as an HRESULT, Video Codec, etc.
+      */
+    var data: Any
+    
+    var errorType: String
+    
+    /**
+      * A trace of where this error was caused / where it passed through.
+      */
+    var stack: js.Array[PlayerErrorSourceLocation]
   }
   object PlayerError {
     
-    inline def apply(errorCode: String, `type`: pipeline_error | media_error): PlayerError = {
-      val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    inline def apply(
+      cause: js.Array[PlayerError],
+      code: integer,
+      data: Any,
+      errorType: String,
+      stack: js.Array[PlayerErrorSourceLocation]
+    ): PlayerError = {
+      val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], errorType = errorType.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlayerError]
     }
     
     extension [Self <: PlayerError](x: Self) {
       
-      inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setCause(value: js.Array[PlayerError]): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
-      inline def setType(value: pipeline_error | media_error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setCauseVarargs(value: PlayerError*): Self = StObject.set(x, "cause", js.Array(value*))
+      
+      inline def setCode(value: integer): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
+      
+      inline def setStack(value: js.Array[PlayerErrorSourceLocation]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      
+      inline def setStackVarargs(value: PlayerErrorSourceLocation*): Self = StObject.set(x, "stack", js.Array(value*))
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.devtoolsProtocol.devtoolsProtocolStrings.pipeline_error
-    - typings.devtoolsProtocol.devtoolsProtocolStrings.media_error
-  */
-  trait PlayerErrorType extends StObject
-  object PlayerErrorType {
+  trait PlayerErrorSourceLocation extends StObject {
     
-    inline def Media_error: media_error = "media_error".asInstanceOf[media_error]
+    var file: String
     
-    inline def Pipeline_error: pipeline_error = "pipeline_error".asInstanceOf[pipeline_error]
+    var line: integer
+  }
+  object PlayerErrorSourceLocation {
+    
+    inline def apply(file: String, line: integer): PlayerErrorSourceLocation = {
+      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PlayerErrorSourceLocation]
+    }
+    
+    extension [Self <: PlayerErrorSourceLocation](x: Self) {
+      
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      
+      inline def setLine(value: integer): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    }
   }
   
   trait PlayerErrorsRaisedEvent extends StObject {
@@ -73,7 +105,7 @@ object Media {
       
       inline def setErrors(value: js.Array[PlayerError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: PlayerError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: PlayerError*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setPlayerId(value: PlayerId): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
     }
@@ -117,7 +149,7 @@ object Media {
       
       inline def setEvents(value: js.Array[PlayerEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setEventsVarargs(value: PlayerEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: PlayerEvent*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setPlayerId(value: PlayerId): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
     }
@@ -192,7 +224,7 @@ object Media {
       
       inline def setMessages(value: js.Array[PlayerMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      inline def setMessagesVarargs(value: PlayerMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: PlayerMessage*): Self = StObject.set(x, "messages", js.Array(value*))
       
       inline def setPlayerId(value: PlayerId): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
     }
@@ -217,7 +249,7 @@ object Media {
       
       inline def setProperties(value: js.Array[PlayerProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      inline def setPropertiesVarargs(value: PlayerProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: PlayerProperty*): Self = StObject.set(x, "properties", js.Array(value*))
     }
   }
   
@@ -257,7 +289,7 @@ object Media {
       
       inline def setPlayers(value: js.Array[PlayerId]): Self = StObject.set(x, "players", value.asInstanceOf[js.Any])
       
-      inline def setPlayersVarargs(value: PlayerId*): Self = StObject.set(x, "players", js.Array(value :_*))
+      inline def setPlayersVarargs(value: PlayerId*): Self = StObject.set(x, "players", js.Array(value*))
     }
   }
   

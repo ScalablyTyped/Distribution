@@ -51,13 +51,13 @@ trait RowChart
   def x(): Scale[Double] = js.native
   def x(t: Scale[Double]): RowChart = js.native
   
-  def xAxis(): js.Any = js.native
+  def xAxis(): Any = js.native
   def xAxis(
-    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any
+    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any
   ): RowChart = js.native
   @JSName("xAxis")
   var xAxis_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any, 
     RowChart
   ] = js.native
   

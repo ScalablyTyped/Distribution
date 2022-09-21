@@ -26,6 +26,11 @@ trait HlsPackage extends StObject {
   var Encryption: js.UndefOr[HlsEncryption] = js.undefined
   
   /**
+    * When enabled, MediaPackage passes through digital video broadcasting (DVB) subtitles into the output.
+    */
+  var IncludeDvbSubtitles: js.UndefOr[boolean] = js.undefined
+  
+  /**
     * When enabled, an I-Frame only stream will be included in the output.
     */
   var IncludeIframeOnlyStream: js.UndefOr[boolean] = js.undefined
@@ -85,7 +90,7 @@ object HlsPackage {
     
     inline def setAdTriggersUndefined: Self = StObject.set(x, "AdTriggers", js.undefined)
     
-    inline def setAdTriggersVarargs(value: AdTriggersElement*): Self = StObject.set(x, "AdTriggers", js.Array(value :_*))
+    inline def setAdTriggersVarargs(value: AdTriggersElement*): Self = StObject.set(x, "AdTriggers", js.Array(value*))
     
     inline def setAdsOnDeliveryRestrictions(value: AdsOnDeliveryRestrictions): Self = StObject.set(x, "AdsOnDeliveryRestrictions", value.asInstanceOf[js.Any])
     
@@ -94,6 +99,10 @@ object HlsPackage {
     inline def setEncryption(value: HlsEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    
+    inline def setIncludeDvbSubtitles(value: boolean): Self = StObject.set(x, "IncludeDvbSubtitles", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeDvbSubtitlesUndefined: Self = StObject.set(x, "IncludeDvbSubtitles", js.undefined)
     
     inline def setIncludeIframeOnlyStream(value: boolean): Self = StObject.set(x, "IncludeIframeOnlyStream", value.asInstanceOf[js.Any])
     

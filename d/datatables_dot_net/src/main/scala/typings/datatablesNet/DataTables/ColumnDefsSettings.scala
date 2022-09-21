@@ -21,6 +21,6 @@ object ColumnDefsSettings {
     
     inline def setTargets(value: String | Double | (js.Array[Double | String])): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    inline def setTargetsVarargs(value: (Double | String)*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: (Double | String)*): Self = StObject.set(x, "targets", js.Array(value*))
   }
 }

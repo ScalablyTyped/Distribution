@@ -10,10 +10,10 @@ Pure JavaScript NETCONF library.
 | ------------------ | :-------------: |
 | Full name          | netconf |
 | Keywords           | xml-rpc, netconf, juniper |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 807 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 102.0 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/darylturner/node-netconf#readme)

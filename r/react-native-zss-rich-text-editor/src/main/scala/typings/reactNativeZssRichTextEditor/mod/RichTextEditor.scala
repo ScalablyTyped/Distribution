@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-zss-rich-text-editor", "RichTextEditor")
 @js.native
-class RichTextEditor protected ()
-  extends Component[PartialRichTextEditorProp, js.Object, js.Any] {
+open class RichTextEditor protected ()
+  extends Component[PartialRichTextEditorProp, js.Object, Any] {
   def this(props: PartialRichTextEditorProp) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: PartialRichTextEditorProp, context: js.Any) = this()
+  def this(props: PartialRichTextEditorProp, context: Any) = this()
   
   var alignCenter: FunctionWithZeroArgs = js.native
   

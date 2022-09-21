@@ -10,10 +10,10 @@ Handbrake for node.js. Brings video encoding.
 | ------------------ | :-------------: |
 | Full name          | handbrake-js |
 | Keywords           | handbrake, encode, transcode, video, mp4, m4v, avi, h.264, h.265, vp8, mp3 |
-| # releases         | 8 |
-| # dependents       | 14 |
-| # downloads        | 25259 |
-| # stars            | 7 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 5108.0 |
+| # stars            | 482.0 |
 
 ## Links
 - [Homepage](https://github.com/75lb/handbrake-js#readme)

@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * RangeView represents a set of visible cells of the parent range.
   *
+  * @remarks
   * [Api set: ExcelApi 1.3]
   */
 @JSGlobal("Excel.RangeView")
 @js.native
-class RangeView ()
+open class RangeView ()
   extends StObject
      with typings.officeJs.Excel.RangeView {
   

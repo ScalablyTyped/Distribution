@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetOpsSummaryResult extends StObject {
   
   /**
-    * The list of aggregated and filtered OpsItems.
+    * The list of aggregated details and filtered OpsData.
     */
   var Entities: js.UndefOr[OpsEntityList] = js.undefined
   
@@ -29,7 +29,7 @@ object GetOpsSummaryResult {
     
     inline def setEntitiesUndefined: Self = StObject.set(x, "Entities", js.undefined)
     
-    inline def setEntitiesVarargs(value: OpsEntity*): Self = StObject.set(x, "Entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: OpsEntity*): Self = StObject.set(x, "Entities", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

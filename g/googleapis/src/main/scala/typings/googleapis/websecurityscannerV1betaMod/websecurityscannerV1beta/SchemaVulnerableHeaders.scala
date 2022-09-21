@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about vulnerable or missing HTTP Headers.
-  */
 trait SchemaVulnerableHeaders extends StObject {
   
   /**
@@ -32,12 +29,12 @@ object SchemaVulnerableHeaders {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: SchemaHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: SchemaHeader*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setMissingHeaders(value: js.Array[SchemaHeader]): Self = StObject.set(x, "missingHeaders", value.asInstanceOf[js.Any])
     
     inline def setMissingHeadersUndefined: Self = StObject.set(x, "missingHeaders", js.undefined)
     
-    inline def setMissingHeadersVarargs(value: SchemaHeader*): Self = StObject.set(x, "missingHeaders", js.Array(value :_*))
+    inline def setMissingHeadersVarargs(value: SchemaHeader*): Self = StObject.set(x, "missingHeaders", js.Array(value*))
   }
 }

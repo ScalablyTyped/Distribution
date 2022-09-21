@@ -9,7 +9,7 @@ trait GetTraceSummariesResult extends StObject {
   /**
     * The start time of this page of results.
     */
-  var ApproximateTime: js.UndefOr[Timestamp] = js.undefined
+  var ApproximateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If the requested time frame contained more than one page of results, you can use this token to retrieve the next page. The first page contains the most recent results, closest to the end of the time frame.
@@ -35,7 +35,7 @@ object GetTraceSummariesResult {
   
   extension [Self <: GetTraceSummariesResult](x: Self) {
     
-    inline def setApproximateTime(value: Timestamp): Self = StObject.set(x, "ApproximateTime", value.asInstanceOf[js.Any])
+    inline def setApproximateTime(value: js.Date): Self = StObject.set(x, "ApproximateTime", value.asInstanceOf[js.Any])
     
     inline def setApproximateTimeUndefined: Self = StObject.set(x, "ApproximateTime", js.undefined)
     
@@ -47,7 +47,7 @@ object GetTraceSummariesResult {
     
     inline def setTraceSummariesUndefined: Self = StObject.set(x, "TraceSummaries", js.undefined)
     
-    inline def setTraceSummariesVarargs(value: TraceSummary*): Self = StObject.set(x, "TraceSummaries", js.Array(value :_*))
+    inline def setTraceSummariesVarargs(value: TraceSummary*): Self = StObject.set(x, "TraceSummaries", js.Array(value*))
     
     inline def setTracesProcessedCount(value: NullableLong): Self = StObject.set(x, "TracesProcessedCount", value.asInstanceOf[js.Any])
     

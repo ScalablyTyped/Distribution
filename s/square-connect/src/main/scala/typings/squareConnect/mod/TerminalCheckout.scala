@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "TerminalCheckout")
 @js.native
-class TerminalCheckout () extends StObject {
+open class TerminalCheckout () extends StObject {
   
   /**
     * The amount of money (including tax amount) that the Square Terminal device should try to collect.

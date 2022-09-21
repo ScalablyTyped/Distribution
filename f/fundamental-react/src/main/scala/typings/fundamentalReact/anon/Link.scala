@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Link extends StObject {
   
-  var callback: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var callback: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
   var glyph: js.UndefOr[String] = js.undefined
   
@@ -29,7 +29,7 @@ object Link {
   
   extension [Self <: Link](x: Self) {
     
-    inline def setCallback(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: /* repeated */ Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     

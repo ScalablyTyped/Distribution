@@ -27,9 +27,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the font attributes, such as font name, font size, and color, for a shape's `TextRange` object.
   *
-  * Represents the font attributes, such as font name, font size, and color, for a shape's TextRange object.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -38,17 +38,17 @@ trait ShapeFont
      with ClientObject {
   
   /**
+    * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
     *
-    * Represents the bold status of font. Returns null the TextRange includes both bold and non-bold text fragments.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var bold: Boolean = js.native
   
   /**
+    * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
     *
-    * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var color: String = js.native
@@ -58,9 +58,9 @@ trait ShapeFont
   var context_ShapeFont: RequestContext = js.native
   
   /**
+    * Represents the italic status of font. Returns `null` if the `TextRange` includes both italic and non-italic text fragments.
     *
-    * Represents the italic status of font. Returns null if the TextRange includes both italic and non-italic text fragments.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var italic: Boolean = js.native
@@ -77,21 +77,15 @@ trait ShapeFont
   def load(propertyNames: js.Array[String]): ShapeFont = js.native
   
   /**
+    * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
     *
-    * Represents font name (e.g., "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var name: String = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ShapeFont): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -101,9 +95,9 @@ trait ShapeFont
   def set(properties: ShapeFont): Unit = js.native
   
   /**
+    * Represents font size in points (e.g., 11). Returns `null` if the `TextRange` includes text fragments with different font sizes.
     *
-    * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var size: Double = js.native
@@ -115,9 +109,9 @@ trait ShapeFont
   def toJSON(): ShapeFontData = js.native
   
   /**
+    * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See `Excel.ShapeFontUnderlineStyle` for details.
     *
-    * Type of underline applied to the font. Returns null if the TextRange includes text fragments with different underline styles. See Excel.ShapeFontUnderlineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var underline: ShapeFontUnderlineStyle | None | Single | typings.officeJs.officeJsStrings.Double | Heavy | Dotted | DottedHeavy | Dash | DashHeavy | DashLong | DashLongHeavy | DotDash | DotDashHeavy | DotDotDash | DotDotDashHeavy | Wavy | WavyHeavy | WavyDouble = js.native

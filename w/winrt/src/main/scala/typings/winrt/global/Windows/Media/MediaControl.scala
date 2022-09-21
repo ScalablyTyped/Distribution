@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Media.MediaControl")
 @js.native
-class MediaControl ()
+open class MediaControl ()
   extends StObject
      with typings.winrt.Windows.Media.MediaControl
 /* static members */
@@ -34,63 +34,63 @@ object MediaControl {
   
   @JSGlobal("Windows.Media.MediaControl.onchanneldownpressed")
   @js.native
-  def onchanneldownpressed: js.Any = js.native
-  inline def onchanneldownpressed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onchanneldownpressed")(x.asInstanceOf[js.Any])
+  def onchanneldownpressed: Any = js.native
+  inline def onchanneldownpressed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onchanneldownpressed")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Windows.Media.MediaControl.onchanneluppressed")
   @js.native
-  def onchanneluppressed: js.Any = js.native
-  inline def onchanneluppressed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onchanneluppressed")(x.asInstanceOf[js.Any])
+  def onchanneluppressed: Any = js.native
+  inline def onchanneluppressed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onchanneluppressed")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Windows.Media.MediaControl.onfastforwardpressed")
   @js.native
-  def onfastforwardpressed: js.Any = js.native
-  inline def onfastforwardpressed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onfastforwardpressed")(x.asInstanceOf[js.Any])
+  def onfastforwardpressed: Any = js.native
+  inline def onfastforwardpressed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onfastforwardpressed")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Windows.Media.MediaControl.onnexttrackpressed")
   @js.native
-  def onnexttrackpressed: js.Any = js.native
-  inline def onnexttrackpressed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnexttrackpressed")(x.asInstanceOf[js.Any])
+  def onnexttrackpressed: Any = js.native
+  inline def onnexttrackpressed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnexttrackpressed")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Windows.Media.MediaControl.onpausepressed")
   @js.native
-  def onpausepressed: js.Any = js.native
-  inline def onpausepressed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onpausepressed")(x.asInstanceOf[js.Any])
+  def onpausepressed: Any = js.native
+  inline def onpausepressed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onpausepressed")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Windows.Media.MediaControl.onplaypausetogglepressed")
   @js.native
-  def onplaypausetogglepressed: js.Any = js.native
-  inline def onplaypausetogglepressed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onplaypausetogglepressed")(x.asInstanceOf[js.Any])
+  def onplaypausetogglepressed: Any = js.native
+  inline def onplaypausetogglepressed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onplaypausetogglepressed")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Windows.Media.MediaControl.onplaypressed")
   @js.native
-  def onplaypressed: js.Any = js.native
-  inline def onplaypressed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onplaypressed")(x.asInstanceOf[js.Any])
+  def onplaypressed: Any = js.native
+  inline def onplaypressed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onplaypressed")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Windows.Media.MediaControl.onprevioustrackpressed")
   @js.native
-  def onprevioustrackpressed: js.Any = js.native
-  inline def onprevioustrackpressed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprevioustrackpressed")(x.asInstanceOf[js.Any])
+  def onprevioustrackpressed: Any = js.native
+  inline def onprevioustrackpressed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprevioustrackpressed")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Windows.Media.MediaControl.onrecordpressed")
   @js.native
-  def onrecordpressed: js.Any = js.native
-  inline def onrecordpressed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecordpressed")(x.asInstanceOf[js.Any])
+  def onrecordpressed: Any = js.native
+  inline def onrecordpressed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecordpressed")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Windows.Media.MediaControl.onrewindpressed")
   @js.native
-  def onrewindpressed: js.Any = js.native
-  inline def onrewindpressed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrewindpressed")(x.asInstanceOf[js.Any])
+  def onrewindpressed: Any = js.native
+  inline def onrewindpressed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrewindpressed")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Windows.Media.MediaControl.onsoundlevelchanged")
   @js.native
-  def onsoundlevelchanged: js.Any = js.native
-  inline def onsoundlevelchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onsoundlevelchanged")(x.asInstanceOf[js.Any])
+  def onsoundlevelchanged: Any = js.native
+  inline def onsoundlevelchanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onsoundlevelchanged")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Windows.Media.MediaControl.onstoppressed")
   @js.native
-  def onstoppressed: js.Any = js.native
-  inline def onstoppressed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onstoppressed")(x.asInstanceOf[js.Any])
+  def onstoppressed: Any = js.native
+  inline def onstoppressed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onstoppressed")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Windows.Media.MediaControl.soundLevel")
   @js.native

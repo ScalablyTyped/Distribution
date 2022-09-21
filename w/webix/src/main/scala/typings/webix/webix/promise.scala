@@ -10,20 +10,20 @@ trait promise
   extends StObject
      with Instantiable1[
       /* executor */ js.Function2[
-        /* resolve */ js.Function1[/* value */ js.UndefOr[js.Any], Unit], 
-        /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+        /* resolve */ js.Function1[/* value */ js.UndefOr[Any], Unit], 
+        /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
         Unit
       ], 
-      js.Promise[js.Any]
+      js.Promise[Any]
     ] {
   
-  def all(promises: js.Array[js.Promise[js.Any]]): js.Promise[js.Any] = js.native
+  def all(promises: js.Array[js.Promise[Any]]): js.Promise[Any] = js.native
   
-  def defer(): js.Promise[js.Any] = js.native
+  def defer(): js.Promise[Any] = js.native
   
-  def race(promises: js.Array[js.Promise[js.Any]]): js.Promise[js.Any] = js.native
+  def race(promises: js.Array[js.Promise[Any]]): js.Promise[Any] = js.native
   
-  def reject(value: js.Any): js.Promise[js.Any] = js.native
+  def reject(value: Any): js.Promise[Any] = js.native
   
-  def resolve(value: js.Any): js.Promise[js.Any] = js.native
+  def resolve(value: Any): js.Promise[Any] = js.native
 }

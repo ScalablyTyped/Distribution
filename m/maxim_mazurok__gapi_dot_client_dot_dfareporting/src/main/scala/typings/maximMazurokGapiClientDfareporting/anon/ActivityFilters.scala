@@ -47,7 +47,7 @@ object ActivityFilters {
     
     inline def setActivityFiltersUndefined: Self = StObject.set(x, "activityFilters", js.undefined)
     
-    inline def setActivityFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "activityFilters", js.Array(value :_*))
+    inline def setActivityFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "activityFilters", js.Array(value*))
     
     inline def setCustomChannelGrouping(value: ChannelGrouping): Self = StObject.set(x, "customChannelGrouping", value.asInstanceOf[js.Any])
     
@@ -61,7 +61,7 @@ object ActivityFilters {
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
     
     inline def setFloodlightConfigId(value: DimensionValue): Self = StObject.set(x, "floodlightConfigId", value.asInstanceOf[js.Any])
     
@@ -71,12 +71,12 @@ object ActivityFilters {
     
     inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
     
-    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value*))
     
     inline def setPathFilters(value: js.Array[PathFilter]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
     inline def setPathFiltersUndefined: Self = StObject.set(x, "pathFilters", js.undefined)
     
-    inline def setPathFiltersVarargs(value: PathFilter*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
+    inline def setPathFiltersVarargs(value: PathFilter*): Self = StObject.set(x, "pathFilters", js.Array(value*))
   }
 }

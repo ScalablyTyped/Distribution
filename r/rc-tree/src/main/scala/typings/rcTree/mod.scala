@@ -1,10 +1,14 @@
 package typings.rcTree
 
-import typings.rcTree.anon.PartialTreeState
+import typings.rcTree.anon.DropLevelOffset
+import typings.rcTree.anon.PartialTreeStateDataNode
+import typings.rcTree.interfaceMod.BasicDataNode
+import typings.rcTree.interfaceMod.DataNode
 import typings.rcTree.treeMod.TreeProps
 import typings.rcTree.treeMod.TreeState
 import typings.rcTree.treeNodeMod.TreeNodeProps
 import typings.react.mod.FC
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +17,8 @@ object mod {
   
   @JSImport("rc-tree", JSImport.Default)
   @js.native
-  class default ()
-    extends typings.rcTree.treeMod.default
+  open class default[TreeDataType /* <: DataNode | BasicDataNode */] ()
+    extends typings.rcTree.treeMod.default[TreeDataType]
   object default {
     
     @JSImport("rc-tree", JSImport.Default)
@@ -24,8 +28,8 @@ object mod {
     /* static member */
     @JSImport("rc-tree", "default.TreeNode")
     @js.native
-    def TreeNode: FC[TreeNodeProps] = js.native
-    inline def TreeNode_=(x: FC[TreeNodeProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeNode")(x.asInstanceOf[js.Any])
+    def TreeNode: FC[TreeNodeProps[DataNode]] = js.native
+    inline def TreeNode_=(x: FC[TreeNodeProps[DataNode]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeNode")(x.asInstanceOf[js.Any])
     
     /* static member */
     object defaultProps {
@@ -33,6 +37,8 @@ object mod {
       @JSImport("rc-tree", "default.defaultProps")
       @js.native
       val ^ : js.Any = js.native
+      
+      inline def allowDrop(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowDrop")().asInstanceOf[Boolean]
       
       @JSImport("rc-tree", "default.defaultProps.autoExpandParent")
       @js.native
@@ -51,8 +57,8 @@ object mod {
       
       @JSImport("rc-tree", "default.defaultProps.defaultCheckedKeys")
       @js.native
-      def defaultCheckedKeys: js.Array[js.Any] = js.native
-      inline def defaultCheckedKeys_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultCheckedKeys")(x.asInstanceOf[js.Any])
+      def defaultCheckedKeys: js.Array[Any] = js.native
+      inline def defaultCheckedKeys_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultCheckedKeys")(x.asInstanceOf[js.Any])
       
       @JSImport("rc-tree", "default.defaultProps.defaultExpandAll")
       @js.native
@@ -66,13 +72,13 @@ object mod {
       
       @JSImport("rc-tree", "default.defaultProps.defaultExpandedKeys")
       @js.native
-      def defaultExpandedKeys: js.Array[js.Any] = js.native
-      inline def defaultExpandedKeys_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultExpandedKeys")(x.asInstanceOf[js.Any])
+      def defaultExpandedKeys: js.Array[Any] = js.native
+      inline def defaultExpandedKeys_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultExpandedKeys")(x.asInstanceOf[js.Any])
       
       @JSImport("rc-tree", "default.defaultProps.defaultSelectedKeys")
       @js.native
-      def defaultSelectedKeys: js.Array[js.Any] = js.native
-      inline def defaultSelectedKeys_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSelectedKeys")(x.asInstanceOf[js.Any])
+      def defaultSelectedKeys: js.Array[Any] = js.native
+      inline def defaultSelectedKeys_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSelectedKeys")(x.asInstanceOf[js.Any])
       
       @JSImport("rc-tree", "default.defaultProps.disabled")
       @js.native
@@ -83,6 +89,16 @@ object mod {
       @js.native
       def draggable: Boolean = js.native
       inline def draggable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("draggable")(x.asInstanceOf[js.Any])
+      
+      @JSImport("rc-tree", "default.defaultProps.dropIndicatorRender")
+      @js.native
+      def dropIndicatorRender: js.Function1[/* hasDropPositionDropLevelOffsetIndent */ DropLevelOffset, Element] = js.native
+      inline def dropIndicatorRender_=(x: js.Function1[/* hasDropPositionDropLevelOffsetIndent */ DropLevelOffset, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropIndicatorRender")(x.asInstanceOf[js.Any])
+      
+      @JSImport("rc-tree", "default.defaultProps.expandAction")
+      @js.native
+      def expandAction: Boolean = js.native
+      inline def expandAction_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expandAction")(x.asInstanceOf[js.Any])
       
       @JSImport("rc-tree", "default.defaultProps.multiple")
       @js.native
@@ -111,10 +127,10 @@ object mod {
     }
     
     /* static member */
-    inline def getDerivedStateFromProps(props: TreeProps, prevState: TreeState): PartialTreeState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[PartialTreeState]
+    inline def getDerivedStateFromProps(props: TreeProps[DataNode], prevState: TreeState[DataNode]): PartialTreeStateDataNode = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[PartialTreeStateDataNode]
   }
   
   @JSImport("rc-tree", "TreeNode")
   @js.native
-  val TreeNode: FC[TreeNodeProps] = js.native
+  val TreeNode: FC[TreeNodeProps[DataNode]] = js.native
 }

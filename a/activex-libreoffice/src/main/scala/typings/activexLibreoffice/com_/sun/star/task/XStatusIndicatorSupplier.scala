@@ -32,7 +32,7 @@ object XStatusIndicatorSupplier {
     StatusIndicator: XStatusIndicator,
     acquire: () => Unit,
     getStatusIndicator: () => XStatusIndicator,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XStatusIndicatorSupplier = {
     val __obj = js.Dynamic.literal(StatusIndicator = StatusIndicator.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getStatusIndicator = js.Any.fromFunction0(getStatusIndicator), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

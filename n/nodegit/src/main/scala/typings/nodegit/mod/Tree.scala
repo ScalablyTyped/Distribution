@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Tree")
 @js.native
-class Tree ()
+open class Tree ()
   extends typings.nodegit.treeMod.Tree
 /* static members */
 object Tree {

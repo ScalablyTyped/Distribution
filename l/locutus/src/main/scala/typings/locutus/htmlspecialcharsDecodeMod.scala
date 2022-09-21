@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object htmlspecialcharsDecodeMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(string: js.Any, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(string: Unit, quoteStyle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(string: Any): Any = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(string: Any, quoteStyle: Any): Any = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(string: Unit, quoteStyle: Any): Any = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], quoteStyle.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/htmlspecialchars_decode", JSImport.Namespace)
   @js.native

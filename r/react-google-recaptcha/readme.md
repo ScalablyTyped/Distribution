@@ -10,10 +10,10 @@ React Component Wrapper for Google reCAPTCHA
 | ------------------ | :-------------: |
 | Full name          | react-google-recaptcha |
 | Keywords           | react, react-component, captcha, recaptcha, google-recaptcha |
-| # releases         | 7 |
-| # dependents       | 81 |
-| # downloads        | 8871795 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1902747.0 |
+| # stars            | 836.0 |
 
 ## Links
 - [Homepage](https://github.com/dozoisch/react-google-recaptcha)

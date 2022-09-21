@@ -25,9 +25,9 @@ abstract class CameraSettingsActivatedEventArgs ()
   
   /** Gets the object that controls device settings on the camera. */
   /* CompleteClass */
-  var videoDeviceController: js.Any = js.native
+  var videoDeviceController: Any = js.native
   
   /** Gets the object that implements additional extended settings for the camera. */
   /* CompleteClass */
-  var videoDeviceExtension: js.Any = js.native
+  var videoDeviceExtension: Any = js.native
 }

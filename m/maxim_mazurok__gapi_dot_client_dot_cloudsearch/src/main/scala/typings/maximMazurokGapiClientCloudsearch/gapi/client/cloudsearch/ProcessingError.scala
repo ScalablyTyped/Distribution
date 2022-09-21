@@ -9,7 +9,7 @@ trait ProcessingError extends StObject {
   /** Error code indicating the nature of the error. */
   var code: js.UndefOr[String] = js.undefined
   
-  /** Description of the error. */
+  /** The description of the error. */
   var errorMessage: js.UndefOr[String] = js.undefined
   
   /** In case the item fields are invalid, this field contains the details about the validation errors. */
@@ -36,6 +36,6 @@ object ProcessingError {
     
     inline def setFieldViolationsUndefined: Self = StObject.set(x, "fieldViolations", js.undefined)
     
-    inline def setFieldViolationsVarargs(value: FieldViolation*): Self = StObject.set(x, "fieldViolations", js.Array(value :_*))
+    inline def setFieldViolationsVarargs(value: FieldViolation*): Self = StObject.set(x, "fieldViolations", js.Array(value*))
   }
 }

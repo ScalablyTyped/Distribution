@@ -1,7 +1,7 @@
 package typings.postcssSelectorParser.mod
 
 import typings.postcssSelectorParser.anon.Before
-import typings.postcssSelectorParser.anon.Insensitive
+import typings.postcssSelectorParser.anon.Operator
 import typings.postcssSelectorParser.postcssSelectorParserStrings._empty
 import typings.postcssSelectorParser.postcssSelectorParserStrings.attributeNS
 import typings.postcssSelectorParser.postcssSelectorParserStrings.i
@@ -42,14 +42,6 @@ trait Attribute_
     */
   val insensitiveFlag: i | _empty = js.native
   
-  @JSName("offsetOf")
-  def offsetOf_attribute(part: typings.postcssSelectorParser.postcssSelectorParserStrings.attribute): Double = js.native
-  @JSName("offsetOf")
-  def offsetOf_attributeNS(part: attributeNS): Double = js.native
-  @JSName("offsetOf")
-  def offsetOf_insensitive(part: insensitive): Double = js.native
-  @JSName("offsetOf")
-  def offsetOf_namespace(part: namespace): Double = js.native
   /**
     * returns the offset of the attribute part specified relative to the
     * start of the node of the output string.
@@ -64,12 +56,9 @@ trait Attribute_
     * @param part One of the possible values inside an attribute.
     * @returns -1 if the name is invalid or the value doesn't exist in this attribute.
     */
-  @JSName("offsetOf")
-  def offsetOf_ns(part: ns): Double = js.native
-  @JSName("offsetOf")
-  def offsetOf_operator(part: operator): Double = js.native
-  @JSName("offsetOf")
-  def offsetOf_value(part: value): Double = js.native
+  def offsetOf(
+    part: ns | namespace | typings.postcssSelectorParser.postcssSelectorParserStrings.attribute | attributeNS | operator | value | insensitive
+  ): Double = js.native
   
   var operator: js.UndefOr[AttributeOperator] = js.native
   
@@ -89,7 +78,7 @@ trait Attribute_
   
   var quoted: js.UndefOr[Boolean] = js.native
   
-  var raws: Insensitive = js.native
+  var raws: Operator = js.native
   
   /**
     * Set the unescaped value with the specified quotation options. The value

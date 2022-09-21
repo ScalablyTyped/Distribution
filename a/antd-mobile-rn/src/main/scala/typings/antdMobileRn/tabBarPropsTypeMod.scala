@@ -63,7 +63,7 @@ object tabBarPropsTypeMod {
     var barTintColor: js.UndefOr[String] = js.undefined
     
     /** rn android only**/
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
     
     /** default: false */
     var swipeable: js.UndefOr[Boolean] = js.undefined
@@ -89,7 +89,7 @@ object tabBarPropsTypeMod {
       
       inline def setBarTintColorUndefined: Self = StObject.set(x, "barTintColor", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       

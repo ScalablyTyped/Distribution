@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Base component for plain JS classes
 @JSImport("react", "Component")
 @js.native
-class Component[P, S, SS] protected ()
+open class Component[P, S, SS] protected ()
   extends StObject
      with ComponentLifecycle[P, S, SS] {
   def this(props: P) = this()
@@ -17,7 +17,7 @@ class Component[P, S, SS] protected ()
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: P, context: js.Any) = this()
+  def this(props: P, context: Any) = this()
   
   /**
     * If using the new style context, re-declare this in your class to be the
@@ -34,18 +34,12 @@ class Component[P, S, SS] protected ()
     *
     * @see https://reactjs.org/docs/context.html
     */
-  // TODO (TypeScript 3.0): unknown
-  var context: js.Any = js.native
+  var context: Any = js.native
   
   def forceUpdate(): Unit = js.native
   def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
   
-  // React.Props<T> is now deprecated, which means that the `children`
-  // property is not available on `P` by default, even though you can
-  // always pass children as variadic arguments to `createElement`.
-  // In the future, if we can define its call signature conditionally
-  // on the existence of `children` in `P`, then we should remove this.
-  val props: P & typings.react.anon.Children = js.native
+  val props: P = js.native
   
   /**
     * @deprecated
@@ -102,6 +96,6 @@ object Component {
   /* static member */
   @JSImport("react", "Component.contextType")
   @js.native
-  def contextType: js.UndefOr[Context[js.Any]] = js.native
-  inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+  def contextType: js.UndefOr[Context[Any]] = js.native
+  inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
 }

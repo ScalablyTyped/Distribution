@@ -38,13 +38,13 @@ object pem {
     
     var body: Bytes
     
-    var contentDomain: js.UndefOr[js.Any] = js.undefined
+    var contentDomain: js.UndefOr[Any] = js.undefined
     
-    var dekInfo: js.UndefOr[js.Any] = js.undefined
+    var dekInfo: js.UndefOr[Any] = js.undefined
     
-    var headers: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var headers: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var procType: js.UndefOr[js.Any] = js.undefined
+    var procType: js.UndefOr[Any] = js.undefined
     
     var `type`: String
   }
@@ -60,21 +60,21 @@ object pem {
       
       inline def setBody(value: Bytes): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setContentDomain(value: js.Any): Self = StObject.set(x, "contentDomain", value.asInstanceOf[js.Any])
+      inline def setContentDomain(value: Any): Self = StObject.set(x, "contentDomain", value.asInstanceOf[js.Any])
       
       inline def setContentDomainUndefined: Self = StObject.set(x, "contentDomain", js.undefined)
       
-      inline def setDekInfo(value: js.Any): Self = StObject.set(x, "dekInfo", value.asInstanceOf[js.Any])
+      inline def setDekInfo(value: Any): Self = StObject.set(x, "dekInfo", value.asInstanceOf[js.Any])
       
       inline def setDekInfoUndefined: Self = StObject.set(x, "dekInfo", js.undefined)
       
-      inline def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Array[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: Any*): Self = StObject.set(x, "headers", js.Array(value*))
       
-      inline def setProcType(value: js.Any): Self = StObject.set(x, "procType", value.asInstanceOf[js.Any])
+      inline def setProcType(value: Any): Self = StObject.set(x, "procType", value.asInstanceOf[js.Any])
       
       inline def setProcTypeUndefined: Self = StObject.set(x, "procType", js.undefined)
       

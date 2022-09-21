@@ -23,7 +23,7 @@ object Geometry {
     
     inline def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value*))
     
     inline def setType(value: Point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

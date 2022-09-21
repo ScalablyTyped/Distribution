@@ -12,10 +12,10 @@ object anon {
   trait Instantiable
     extends StObject
        with Instantiable0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingProvider */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingProvider */ Any
         ]
        with Instantiable1[
           /* options */ KnockoutSecureBindingOptions, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingProvider */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingProvider */ Any
         ]
 }

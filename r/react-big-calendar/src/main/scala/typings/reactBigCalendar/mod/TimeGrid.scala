@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-big-calendar", "TimeGrid")
 @js.native
-class TimeGrid[TEvent /* <: js.Object */, TResource /* <: js.Object */] protected ()
-  extends Component[TimeGridProps[TEvent, TResource], js.Object, js.Any] {
+open class TimeGrid[TEvent /* <: js.Object */, TResource /* <: js.Object */] protected ()
+  extends Component[TimeGridProps[TEvent, TResource], js.Object, Any] {
   def this(props: TimeGridProps[TEvent, TResource]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TimeGridProps[TEvent, TResource], context: js.Any) = this()
+  def this(props: TimeGridProps[TEvent, TResource], context: Any) = this()
 }

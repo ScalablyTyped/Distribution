@@ -16,14 +16,18 @@ trait IndexSignatureDeclaration
   extends StObject
      with SignatureDeclarationBase
      with HasJSDoc
+     with HasModifiers
      with SignatureDeclaration {
   
-  var _classElementBrand: js.Any = js.native
+  var _classElementBrand: Any = js.native
   
-  var _typeElementBrand: js.Any = js.native
+  var _typeElementBrand: Any = js.native
   
   @JSName("kind")
   val kind_IndexSignatureDeclaration: IndexSignature = js.native
+  
+  @JSName("modifiers")
+  val modifiers_IndexSignatureDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
   
   @JSName("parent")
   val parent_IndexSignatureDeclaration: ObjectTypeDeclaration = js.native

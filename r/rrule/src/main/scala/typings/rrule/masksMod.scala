@@ -6,39 +6,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object masksMod {
   
-  @JSImport("rrule/dist/esm/src/masks", "M365MASK")
+  @JSImport("rrule/dist/esm/masks", "M365MASK")
   @js.native
   val M365MASK: js.Array[Double | js.Array[Double]] = js.native
   
-  @JSImport("rrule/dist/esm/src/masks", "M365RANGE")
+  @JSImport("rrule/dist/esm/masks", "M365RANGE")
   @js.native
   val M365RANGE: js.Array[Double] = js.native
   
-  @JSImport("rrule/dist/esm/src/masks", "M366MASK")
+  @JSImport("rrule/dist/esm/masks", "M366MASK")
   @js.native
   val M366MASK: js.Array[Double | js.Array[Double]] = js.native
   
-  @JSImport("rrule/dist/esm/src/masks", "M366RANGE")
+  @JSImport("rrule/dist/esm/masks", "M366RANGE")
   @js.native
   val M366RANGE: js.Array[Double] = js.native
   
-  @JSImport("rrule/dist/esm/src/masks", "MDAY365MASK")
+  @JSImport("rrule/dist/esm/masks", "MDAY365MASK")
   @js.native
   val MDAY365MASK: js.Array[Double] = js.native
   
-  @JSImport("rrule/dist/esm/src/masks", "MDAY366MASK")
+  @JSImport("rrule/dist/esm/masks", "MDAY366MASK")
   @js.native
   val MDAY366MASK: js.Array[Double] = js.native
   
-  @JSImport("rrule/dist/esm/src/masks", "NMDAY365MASK")
+  @JSImport("rrule/dist/esm/masks", "NMDAY365MASK")
   @js.native
   val NMDAY365MASK: js.Array[Double] = js.native
   
-  @JSImport("rrule/dist/esm/src/masks", "NMDAY366MASK")
+  @JSImport("rrule/dist/esm/masks", "NMDAY366MASK")
   @js.native
   val NMDAY366MASK: js.Array[Double] = js.native
   
-  @JSImport("rrule/dist/esm/src/masks", "WDAYMASK")
+  @JSImport("rrule/dist/esm/masks", "WDAYMASK")
   @js.native
   val WDAYMASK: js.Array[Double] = js.native
 }

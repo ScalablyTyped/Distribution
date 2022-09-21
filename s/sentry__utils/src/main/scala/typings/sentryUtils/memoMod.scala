@@ -6,26 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object memoMod {
   
-  @JSImport("@sentry/utils/dist/memo", "Memo")
+  @JSImport("@sentry/utils/types/memo", JSImport.Namespace)
   @js.native
-  class Memo () extends StObject {
-    
-    /** Determines if WeakSet is available */
-    /* private */ val _hasWeakSet: js.Any = js.native
-    
-    /** Either WeakSet or Array */
-    /* private */ val _inner: js.Any = js.native
-    
-    /**
-      * Sets obj to remember.
-      * @param obj Object to remember
-      */
-    def memoize(obj: js.Any): Boolean = js.native
-    
-    /**
-      * Removes object from internal storage.
-      * @param obj Object to forget
-      */
-    def unmemoize(obj: js.Any): Unit = js.native
-  }
+  val ^ : js.Any = js.native
+  
+  inline def memoBuilder(): MemoFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("memoBuilder")().asInstanceOf[MemoFunc]
+  
+  type MemoFunc = js.Tuple2[js.Function1[/* obj */ Any, Boolean], js.Function1[/* obj */ Any, Unit]]
 }

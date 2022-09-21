@@ -1,9 +1,5 @@
 package typings.googleapis.storageV1Mod.storageV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,20 +9,17 @@ trait ParamsResourceObjectsCopy
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Name of the bucket in which to store the new object. Overrides the
-    * provided object metadata's bucket value, if any.For information about how
-    * to URL encode object names to be path safe, see Encoding URI Path Parts.
+    * Name of the bucket in which to store the new object. Overrides the provided object metadata's bucket value, if any.For information about how to URL encode object names to be path safe, see Encoding URI Path Parts.
     */
   var destinationBucket: js.UndefOr[String] = js.undefined
   
   /**
-    * Name of the new object. Required when the object metadata is not
-    * otherwise provided. Overrides the object metadata's name value, if any.
+    * Resource name of the Cloud KMS key, of the form projects/my-project/locations/global/keyRings/my-kr/cryptoKeys/my-key, that will be used to encrypt the object. Overrides the object metadata's kms_key_name value, if any.
+    */
+  var destinationKmsKeyName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Name of the new object. Required when the object metadata is not otherwise provided. Overrides the object metadata's name value, if any.
     */
   var destinationObject: js.UndefOr[String] = js.undefined
   
@@ -36,59 +29,47 @@ trait ParamsResourceObjectsCopy
   var destinationPredefinedAcl: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the destination object's
-    * current generation matches the given value. Setting to 0 makes the
-    * operation succeed only if there are no live versions of the object.
+    * Makes the operation conditional on whether the destination object's current generation matches the given value. Setting to 0 makes the operation succeed only if there are no live versions of the object.
     */
   var ifGenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the destination object's
-    * current generation does not match the given value. If no live object
-    * exists, the precondition fails. Setting to 0 makes the operation succeed
-    * only if there is a live version of the object.
+    * Makes the operation conditional on whether the destination object's current generation does not match the given value. If no live object exists, the precondition fails. Setting to 0 makes the operation succeed only if there is a live version of the object.
     */
   var ifGenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the destination object's
-    * current metageneration matches the given value.
+    * Makes the operation conditional on whether the destination object's current metageneration matches the given value.
     */
   var ifMetagenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the destination object's
-    * current metageneration does not match the given value.
+    * Makes the operation conditional on whether the destination object's current metageneration does not match the given value.
     */
   var ifMetagenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the source object's current
-    * generation matches the given value.
+    * Makes the operation conditional on whether the source object's current generation matches the given value.
     */
   var ifSourceGenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the source object's current
-    * generation does not match the given value.
+    * Makes the operation conditional on whether the source object's current generation does not match the given value.
     */
   var ifSourceGenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the source object's current
-    * metageneration matches the given value.
+    * Makes the operation conditional on whether the source object's current metageneration matches the given value.
     */
   var ifSourceMetagenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the source object's current
-    * metageneration does not match the given value.
+    * Makes the operation conditional on whether the source object's current metageneration does not match the given value.
     */
   var ifSourceMetagenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Set of properties to return. Defaults to noAcl, unless the object
-    * resource specifies the acl property, when it defaults to full.
+    * Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full.
     */
   var projection: js.UndefOr[String] = js.undefined
   
@@ -103,20 +84,17 @@ trait ParamsResourceObjectsCopy
   var sourceBucket: js.UndefOr[String] = js.undefined
   
   /**
-    * If present, selects a specific revision of the source object (as opposed
-    * to the latest version, the default).
+    * If present, selects a specific revision of the source object (as opposed to the latest version, the default).
     */
   var sourceGeneration: js.UndefOr[String] = js.undefined
   
   /**
-    * Name of the source object. For information about how to URL encode object
-    * names to be path safe, see Encoding URI Path Parts.
+    * Name of the source object. For information about how to URL encode object names to be path safe, see Encoding URI Path Parts.
     */
   var sourceObject: js.UndefOr[String] = js.undefined
   
   /**
-    * The project to be billed for this request. Required for Requester Pays
-    * buckets.
+    * The project to be billed for this request. Required for Requester Pays buckets.
     */
   var userProject: js.UndefOr[String] = js.undefined
 }
@@ -129,13 +107,13 @@ object ParamsResourceObjectsCopy {
   
   extension [Self <: ParamsResourceObjectsCopy](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setDestinationBucket(value: String): Self = StObject.set(x, "destinationBucket", value.asInstanceOf[js.Any])
     
     inline def setDestinationBucketUndefined: Self = StObject.set(x, "destinationBucket", js.undefined)
+    
+    inline def setDestinationKmsKeyName(value: String): Self = StObject.set(x, "destinationKmsKeyName", value.asInstanceOf[js.Any])
+    
+    inline def setDestinationKmsKeyNameUndefined: Self = StObject.set(x, "destinationKmsKeyName", js.undefined)
     
     inline def setDestinationObject(value: String): Self = StObject.set(x, "destinationObject", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,6 @@ import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.VisibilityTimeout
 import typings.awsSdkClientSqsNode.typesChangeMessageVisibilityBatchRequestEntryMod.ChangeMessageVisibilityBatchRequestEntry
 import typings.awsSdkClientSqsNode.typesDeleteMessageBatchRequestEntryMod.DeleteMessageBatchRequestEntry
 import typings.awsSdkClientSqsNode.typesSendMessageBatchRequestEntryMod.SendMessageBatchRequestEntry
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,8 +55,8 @@ object inputTypesUnionMod {
   object InputTypesUnion {
     
     inline def AddPermissionInput(
-      AWSAccountIds: js.Array[String] | Iterable[String],
-      Actions: js.Array[String] | Iterable[String],
+      AWSAccountIds: js.Array[String] | js.Iterable[String],
+      Actions: js.Array[String] | js.Iterable[String],
       Label: String,
       QueueUrl: String
     ): typings.awsSdkClientSqsNode.typesAddPermissionInputMod.AddPermissionInput = {
@@ -66,7 +65,7 @@ object inputTypesUnionMod {
     }
     
     inline def ChangeMessageVisibilityBatchInput(
-      Entries: js.Array[ChangeMessageVisibilityBatchRequestEntry] | Iterable[ChangeMessageVisibilityBatchRequestEntry],
+      Entries: js.Array[ChangeMessageVisibilityBatchRequestEntry] | js.Iterable[ChangeMessageVisibilityBatchRequestEntry],
       QueueUrl: String
     ): typings.awsSdkClientSqsNode.typesChangeMessageVisibilityBatchInputMod.ChangeMessageVisibilityBatchInput = {
       val __obj = js.Dynamic.literal(Entries = Entries.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
@@ -84,7 +83,7 @@ object inputTypesUnionMod {
     }
     
     inline def DeleteMessageBatchInput(
-      Entries: js.Array[DeleteMessageBatchRequestEntry] | Iterable[DeleteMessageBatchRequestEntry],
+      Entries: js.Array[DeleteMessageBatchRequestEntry] | js.Iterable[DeleteMessageBatchRequestEntry],
       QueueUrl: String
     ): typings.awsSdkClientSqsNode.typesDeleteMessageBatchInputMod.DeleteMessageBatchInput = {
       val __obj = js.Dynamic.literal(Entries = Entries.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
@@ -142,7 +141,7 @@ object inputTypesUnionMod {
     }
     
     inline def SendMessageBatchInput(
-      Entries: js.Array[SendMessageBatchRequestEntry] | Iterable[SendMessageBatchRequestEntry],
+      Entries: js.Array[SendMessageBatchRequestEntry] | js.Iterable[SendMessageBatchRequestEntry],
       QueueUrl: String
     ): typings.awsSdkClientSqsNode.typesSendMessageBatchInputMod.SendMessageBatchInput = {
       val __obj = js.Dynamic.literal(Entries = Entries.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
@@ -157,7 +156,7 @@ object inputTypesUnionMod {
     inline def SetQueueAttributesInput(
       Attributes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in 'All' | 'Policy' | 'VisibilityTimeout' | 'MaximumMessageSize' | 'MessageRetentionPeriod' | 'ApproximateNumberOfMessages' | 'ApproximateNumberOfMessagesNotVisible' | 'CreatedTimestamp' | 'LastModifiedTimestamp' | 'QueueArn' | 'ApproximateNumberOfMessagesDelayed' | 'DelaySeconds' | 'ReceiveMessageWaitTimeSeconds' | 'RedrivePolicy' | 'FifoQueue' | 'ContentBasedDeduplication' | 'KmsMasterKeyId' | 'KmsDataKeyReusePeriodSeconds' | string ]: string}
-      */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.SetQueueAttributesInput & TopLevel[js.Any]) | (Iterable[
+      */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.SetQueueAttributesInput & TopLevel[Any]) | (js.Iterable[
           js.Tuple2[
             All | Policy | VisibilityTimeout | MaximumMessageSize | MessageRetentionPeriod | ApproximateNumberOfMessages | ApproximateNumberOfMessagesNotVisible | CreatedTimestamp | LastModifiedTimestamp | QueueArn | ApproximateNumberOfMessagesDelayed | DelaySeconds | ReceiveMessageWaitTimeSeconds | RedrivePolicy | FifoQueue | ContentBasedDeduplication | KmsMasterKeyId | KmsDataKeyReusePeriodSeconds | String, 
             String
@@ -169,12 +168,12 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesSetQueueAttributesInputMod.SetQueueAttributesInput]
     }
     
-    inline def TagQueueInput(QueueUrl: String, Tags: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): typings.awsSdkClientSqsNode.typesTagQueueInputMod.TagQueueInput = {
+    inline def TagQueueInput(QueueUrl: String, Tags: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): typings.awsSdkClientSqsNode.typesTagQueueInputMod.TagQueueInput = {
       val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesTagQueueInputMod.TagQueueInput]
     }
     
-    inline def UntagQueueInput(QueueUrl: String, TagKeys: js.Array[String] | Iterable[String]): typings.awsSdkClientSqsNode.typesUntagQueueInputMod.UntagQueueInput = {
+    inline def UntagQueueInput(QueueUrl: String, TagKeys: js.Array[String] | js.Iterable[String]): typings.awsSdkClientSqsNode.typesUntagQueueInputMod.UntagQueueInput = {
       val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesUntagQueueInputMod.UntagQueueInput]
     }

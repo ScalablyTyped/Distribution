@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A Firestore query.
-  */
 trait SchemaStructuredQuery extends StObject {
   
   /**
@@ -20,29 +17,17 @@ trait SchemaStructuredQuery extends StObject {
   var from: js.UndefOr[js.Array[SchemaCollectionSelector]] = js.undefined
   
   /**
-    * The maximum number of results to return.  Applies after all other
-    * constraints. Must be &gt;= 0 if specified.
+    * The maximum number of results to return. Applies after all other constraints. Must be \>= 0 if specified.
     */
-  var limit: js.UndefOr[Double] = js.undefined
+  var limit: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The number of results to skip.  Applies before limit, but after all other
-    * constraints. Must be &gt;= 0 if specified.
+    * The number of results to skip. Applies before limit, but after all other constraints. Must be \>= 0 if specified.
     */
-  var offset: js.UndefOr[Double] = js.undefined
+  var offset: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The order to apply to the query results.  Firestore guarantees a stable
-    * ordering through the following rules:   * Any field required to appear in
-    * `order_by`, that is not already    specified in `order_by`, is appended
-    * to the order in field name order    by default.  * If an order on
-    * `__name__` is not specified, it is appended by default.  Fields are
-    * appended with the same sort direction as the last order specified, or
-    * &#39;ASCENDING&#39; if no order was specified. For example:   * `SELECT *
-    * FROM Foo ORDER BY A` becomes    `SELECT * FROM Foo ORDER BY A, __name__`
-    * * `SELECT * FROM Foo ORDER BY A DESC` becomes    `SELECT * FROM Foo ORDER
-    * BY A DESC, __name__ DESC`  * `SELECT * FROM Foo WHERE A &gt; 1` becomes
-    * `SELECT * FROM Foo WHERE A &gt; 1 ORDER BY A, __name__`
+    * The order to apply to the query results. Firestore allows callers to provide a full ordering, a partial ordering, or no ordering at all. In all cases, Firestore guarantees a stable ordering through the following rules: * The `order_by` is required to reference all fields used with an inequality filter. * All fields that are required to be in the `order_by` but are not already present are appended in lexicographical ordering of the field name. * If an order on `__name__` is not specified, it is appended by default. Fields are appended with the same sort direction as the last order specified, or 'ASCENDING' if no order was specified. For example: * `ORDER BY a` becomes `ORDER BY a ASC, __name__ ASC` * `ORDER BY a DESC` becomes `ORDER BY a DESC, __name__ DESC` * `WHERE a \> 1` becomes `WHERE a \> 1 ORDER BY a ASC, __name__ ASC` * `WHERE __name__ \> ... AND a \> 1` becomes `WHERE __name__ \> ... AND a \> 1 ORDER BY a ASC, __name__ ASC`
     */
   var orderBy: js.UndefOr[js.Array[SchemaOrder]] = js.undefined
   
@@ -78,13 +63,17 @@ object SchemaStructuredQuery {
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    inline def setFromVarargs(value: SchemaCollectionSelector*): Self = StObject.set(x, "from", js.Array(value :_*))
+    inline def setFromVarargs(value: SchemaCollectionSelector*): Self = StObject.set(x, "from", js.Array(value*))
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitNull: Self = StObject.set(x, "limit", null)
     
     inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetNull: Self = StObject.set(x, "offset", null)
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
@@ -92,7 +81,7 @@ object SchemaStructuredQuery {
     
     inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    inline def setOrderByVarargs(value: SchemaOrder*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
+    inline def setOrderByVarargs(value: SchemaOrder*): Self = StObject.set(x, "orderBy", js.Array(value*))
     
     inline def setSelect(value: SchemaProjection): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     

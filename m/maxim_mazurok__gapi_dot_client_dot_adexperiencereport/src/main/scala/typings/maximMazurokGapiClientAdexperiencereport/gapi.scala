@@ -68,7 +68,7 @@ object gapi {
           
           inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
           
-          inline def setRegionVarargs(value: String*): Self = StObject.set(x, "region", js.Array(value :_*))
+          inline def setRegionVarargs(value: String*): Self = StObject.set(x, "region", js.Array(value*))
           
           inline def setReportUrl(value: String): Self = StObject.set(x, "reportUrl", value.asInstanceOf[js.Any])
           
@@ -148,7 +148,7 @@ object gapi {
           
           inline def setViolatingSitesUndefined: Self = StObject.set(x, "violatingSites", js.undefined)
           
-          inline def setViolatingSitesVarargs(value: SiteSummaryResponse*): Self = StObject.set(x, "violatingSites", js.Array(value :_*))
+          inline def setViolatingSitesVarargs(value: SiteSummaryResponse*): Self = StObject.set(x, "violatingSites", js.Array(value*))
         }
       }
     }

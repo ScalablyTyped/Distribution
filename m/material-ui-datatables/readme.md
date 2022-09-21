@@ -10,10 +10,10 @@ An another React Data tables component.
 | ------------------ | :-------------: |
 | Full name          | material-ui-datatables |
 | Keywords           | react, react-component, material design, material-ui, datatables |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 42113 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1582.6666666666667 |
+| # stars            | 166.0 |
 
 ## Links
 - [Homepage](https://github.com/hyojin/material-ui-datatables#readme)

@@ -42,6 +42,6 @@ object GetTranscriptResponse {
     
     inline def setTranscriptUndefined: Self = StObject.set(x, "Transcript", js.undefined)
     
-    inline def setTranscriptVarargs(value: Item*): Self = StObject.set(x, "Transcript", js.Array(value :_*))
+    inline def setTranscriptVarargs(value: Item*): Self = StObject.set(x, "Transcript", js.Array(value*))
   }
 }

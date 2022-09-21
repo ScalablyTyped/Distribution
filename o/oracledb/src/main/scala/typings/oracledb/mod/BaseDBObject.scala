@@ -18,7 +18,7 @@ trait BaseDBObject[T] extends StObject {
   def append(value: T): Unit
   
   /**
-    * When dbObject.isCollection is false, this will be an object containing attributes corresponding to the Oracle Database object attributes. 
+    * When dbObject.isCollection is false, this will be an object containing attributes corresponding to the Oracle Database object attributes.
     */
   var attributes: Record[String, TypeClass[T]]
   
@@ -41,7 +41,7 @@ trait BaseDBObject[T] extends StObject {
   /**
     * Return the value associated with the given index.
     */
-  def getElement(index: Double): js.Any
+  def getElement(index: Double): Any
   
   /**
     * Returns the first index for later use to obtain the value.
@@ -110,7 +110,7 @@ object BaseDBObject {
     elementTypeClass: DBObjectClass[T],
     elementTypeName: String,
     fqn: String,
-    getElement: Double => js.Any,
+    getElement: Double => Any,
     getFirstIndex: () => Double,
     getKeys: () => js.Array[Double | (/* keyof T */ String)],
     getLastIndex: () => Double,
@@ -144,7 +144,7 @@ object BaseDBObject {
     
     inline def setFqn(value: String): Self = StObject.set(x, "fqn", value.asInstanceOf[js.Any])
     
-    inline def setGetElement(value: Double => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction1(value))
+    inline def setGetElement(value: Double => Any): Self = StObject.set(x, "getElement", js.Any.fromFunction1(value))
     
     inline def setGetFirstIndex(value: () => Double): Self = StObject.set(x, "getFirstIndex", js.Any.fromFunction0(value))
     

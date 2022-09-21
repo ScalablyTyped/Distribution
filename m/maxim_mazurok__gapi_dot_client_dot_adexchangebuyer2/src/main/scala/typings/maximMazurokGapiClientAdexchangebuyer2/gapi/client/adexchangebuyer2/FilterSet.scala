@@ -17,13 +17,13 @@ trait FilterSet extends StObject {
   
   /**
     * The ID of the creative on which to filter; optional. This field may be set only for a filter set that accesses account-level troubleshooting data, i.e., one whose name matches the
-    * `bidders/∗/accounts/∗/filterSets/ *` pattern.
+    * `bidders/ *‍/accounts/ *‍/filterSets/ *` pattern.
     */
   var creativeId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the deal on which to filter; optional. This field may be set only for a filter set that accesses account-level troubleshooting data, i.e., one whose name matches the
-    * `bidders/∗/accounts/∗/filterSets/ *` pattern.
+    * `bidders/ *‍/accounts/ *‍/filterSets/ *` pattern.
     */
   var dealId: js.UndefOr[String] = js.undefined
   
@@ -40,8 +40,8 @@ trait FilterSet extends StObject {
   var formats: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * A user-defined name of the filter set. Filter set names must be unique globally and match one of the patterns: - `bidders/∗/filterSets/ *` (for accessing bidder-level troubleshooting
-    * data) - `bidders/∗/accounts/∗/filterSets/ *` (for accessing account-level troubleshooting data) This field is required in create operations.
+    * A user-defined name of the filter set. Filter set names must be unique globally and match one of the patterns: - `bidders/ *‍/filterSets/ *` (for accessing bidder-level
+    * troubleshooting data) - `bidders/ *‍/accounts/ *‍/filterSets/ *` (for accessing account-level troubleshooting data) This field is required in create operations.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -87,7 +87,7 @@ object FilterSet {
     
     inline def setBreakdownDimensionsUndefined: Self = StObject.set(x, "breakdownDimensions", js.undefined)
     
-    inline def setBreakdownDimensionsVarargs(value: String*): Self = StObject.set(x, "breakdownDimensions", js.Array(value :_*))
+    inline def setBreakdownDimensionsVarargs(value: String*): Self = StObject.set(x, "breakdownDimensions", js.Array(value*))
     
     inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
@@ -109,7 +109,7 @@ object FilterSet {
     
     inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
     
-    inline def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value :_*))
+    inline def setFormatsVarargs(value: String*): Self = StObject.set(x, "formats", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -119,13 +119,13 @@ object FilterSet {
     
     inline def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
     
-    inline def setPlatformsVarargs(value: String*): Self = StObject.set(x, "platforms", js.Array(value :_*))
+    inline def setPlatformsVarargs(value: String*): Self = StObject.set(x, "platforms", js.Array(value*))
     
     inline def setPublisherIdentifiers(value: js.Array[String]): Self = StObject.set(x, "publisherIdentifiers", value.asInstanceOf[js.Any])
     
     inline def setPublisherIdentifiersUndefined: Self = StObject.set(x, "publisherIdentifiers", js.undefined)
     
-    inline def setPublisherIdentifiersVarargs(value: String*): Self = StObject.set(x, "publisherIdentifiers", js.Array(value :_*))
+    inline def setPublisherIdentifiersVarargs(value: String*): Self = StObject.set(x, "publisherIdentifiers", js.Array(value*))
     
     inline def setRealtimeTimeRange(value: RealtimeTimeRange): Self = StObject.set(x, "realtimeTimeRange", value.asInstanceOf[js.Any])
     
@@ -139,7 +139,7 @@ object FilterSet {
     
     inline def setSellerNetworkIdsUndefined: Self = StObject.set(x, "sellerNetworkIds", js.undefined)
     
-    inline def setSellerNetworkIdsVarargs(value: Double*): Self = StObject.set(x, "sellerNetworkIds", js.Array(value :_*))
+    inline def setSellerNetworkIdsVarargs(value: Double*): Self = StObject.set(x, "sellerNetworkIds", js.Array(value*))
     
     inline def setTimeSeriesGranularity(value: String): Self = StObject.set(x, "timeSeriesGranularity", value.asInstanceOf[js.Any])
     

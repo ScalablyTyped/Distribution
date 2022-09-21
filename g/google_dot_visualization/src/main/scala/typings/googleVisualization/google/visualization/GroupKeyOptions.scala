@@ -12,7 +12,7 @@ trait GroupKeyOptions extends StObject {
   
   var label: js.UndefOr[String] = js.undefined
   
-  var modifier: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
+  var modifier: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
   
   var `type`: String
 }
@@ -36,7 +36,7 @@ object GroupKeyOptions {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setModifier(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "modifier", js.Any.fromFunction1(value))
+    inline def setModifier(value: /* value */ Any => Any): Self = StObject.set(x, "modifier", js.Any.fromFunction1(value))
     
     inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     

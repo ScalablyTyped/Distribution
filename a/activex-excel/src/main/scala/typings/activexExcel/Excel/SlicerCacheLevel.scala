@@ -21,7 +21,7 @@ trait SlicerCacheLevel extends StObject {
   
   val Ordinal: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   def SlicerItems(Index: String): SlicerItem
   def SlicerItems(Index: Double): SlicerItem
@@ -30,7 +30,7 @@ trait SlicerCacheLevel extends StObject {
   
   var SortItems: XlSlicerSort
   
-  val VisibleSlicerItemsList: js.Any
+  val VisibleSlicerItemsList: Any
 }
 object SlicerCacheLevel {
   
@@ -42,10 +42,10 @@ object SlicerCacheLevel {
     ExcelDotSlicerCacheLevel_typekey: SlicerCacheLevel,
     Name: String,
     Ordinal: Double,
-    Parent: js.Any,
+    Parent: Any,
     SlicerItems: SlicerItems,
     SortItems: XlSlicerSort,
-    VisibleSlicerItemsList: js.Any
+    VisibleSlicerItemsList: Any
   ): SlicerCacheLevel = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], CrossFilterType = CrossFilterType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Ordinal = Ordinal.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], SlicerItems = SlicerItems.asInstanceOf[js.Any], SortItems = SortItems.asInstanceOf[js.Any], VisibleSlicerItemsList = VisibleSlicerItemsList.asInstanceOf[js.Any])
     __obj.updateDynamic("Excel.SlicerCacheLevel_typekey")(ExcelDotSlicerCacheLevel_typekey.asInstanceOf[js.Any])
@@ -68,12 +68,12 @@ object SlicerCacheLevel {
     
     inline def setOrdinal(value: Double): Self = StObject.set(x, "Ordinal", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSlicerItems(value: SlicerItems): Self = StObject.set(x, "SlicerItems", value.asInstanceOf[js.Any])
     
     inline def setSortItems(value: XlSlicerSort): Self = StObject.set(x, "SortItems", value.asInstanceOf[js.Any])
     
-    inline def setVisibleSlicerItemsList(value: js.Any): Self = StObject.set(x, "VisibleSlicerItemsList", value.asInstanceOf[js.Any])
+    inline def setVisibleSlicerItemsList(value: Any): Self = StObject.set(x, "VisibleSlicerItemsList", value.asInstanceOf[js.Any])
   }
 }

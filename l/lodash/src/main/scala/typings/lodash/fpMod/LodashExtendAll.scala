@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashExtendAll extends StObject {
   
-  def apply[TResult](`object`: js.Array[js.Any]): TResult = js.native
+  def apply[TResult](`object`: js.Array[Any]): TResult = js.native
   def apply[TObject, TSource](`object`: js.Tuple2[TObject, TSource]): TObject & TSource = js.native
   def apply[TObject, TSource1, TSource2](`object`: js.Tuple3[TObject, TSource1, TSource2]): TObject & TSource1 & TSource2 = js.native
   def apply[TObject, TSource1, TSource2, TSource3](`object`: js.Tuple4[TObject, TSource1, TSource2, TSource3]): TObject & TSource1 & TSource2 & TSource3 = js.native

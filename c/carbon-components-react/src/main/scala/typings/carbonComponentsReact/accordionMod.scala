@@ -16,7 +16,7 @@ object accordionMod extends Shortcut {
   
   @JSImport("carbon-components-react/lib/components/Accordion", "AccordingItem")
   @js.native
-  class AccordingItem ()
+  open class AccordingItem ()
     extends typings.carbonComponentsReact.accordionItemMod.default
   
   @JSImport("carbon-components-react/lib/components/Accordion", "AccordionSkeleton")

@@ -1,6 +1,5 @@
 package typings.extjs.Ext
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ trait IDatePicker
   var disabledDates: js.UndefOr[Array] = js.undefined
   
   /** [Config Option] (RegExp) */
-  var disabledDatesRE: js.UndefOr[RegExp] = js.undefined
+  var disabledDatesRE: js.UndefOr[js.RegExp] = js.undefined
   
   /** [Config Option] (String) */
   var disabledDatesText: js.UndefOr[java.lang.String] = js.undefined
@@ -49,15 +48,15 @@ trait IDatePicker
     * @param value Object
     * @returns String The character
     */
-  var getDayInitial: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
+  var getDayInitial: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], java.lang.String]] = js.undefined
   
   /** [Method] Gets the current selected value of the date field
     * @returns Date The selected date
     */
-  var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getValue: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (Function) */
-  var handler: js.UndefOr[js.Any] = js.undefined
+  var handler: js.UndefOr[Any] = js.undefined
   
   /** [Method] Hides the month picker if it s visible
     * @param animate Boolean Indicates whether to animate this action. If the animate parameter is not specified, the behavior will use disableAnim to determine whether to animate or not.
@@ -66,19 +65,19 @@ trait IDatePicker
   var hideMonthPicker: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Boolean], typings.extjs.Ext.picker.IDate]] = js.undefined
   
   /** [Config Option] (Object) */
-  var keyNavConfig: js.UndefOr[js.Any] = js.undefined
+  var keyNavConfig: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var longDayFormat: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Date) */
-  var maxDate: js.UndefOr[js.Any] = js.undefined
+  var maxDate: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var maxText: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Date) */
-  var minDate: js.UndefOr[js.Any] = js.undefined
+  var minDate: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var minText: js.UndefOr[java.lang.String] = js.undefined
@@ -99,7 +98,7 @@ trait IDatePicker
   var prevText: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the current value to today
     * @returns Ext.picker.Date this
@@ -114,7 +113,7 @@ trait IDatePicker
     * @returns Ext.picker.Date this
     */
   var setDisabledDates: js.UndefOr[
-    js.Function1[/* disabledDates */ js.UndefOr[js.Any], typings.extjs.Ext.picker.IDate]
+    js.Function1[/* disabledDates */ js.UndefOr[Any], typings.extjs.Ext.picker.IDate]
   ] = js.undefined
   
   /** [Method] Replaces any existing disabled days by index 0 6 with new values and refreshes the DatePicker
@@ -129,19 +128,19 @@ trait IDatePicker
     * @param value Date The maximum date that can be selected
     * @returns Ext.picker.Date this
     */
-  var setMaxDate: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], typings.extjs.Ext.picker.IDate]] = js.undefined
+  var setMaxDate: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], typings.extjs.Ext.picker.IDate]] = js.undefined
   
   /** [Method] Replaces any existing minDate with the new value and refreshes the DatePicker
     * @param value Date The minimum date that can be selected
     * @returns Ext.picker.Date this
     */
-  var setMinDate: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], typings.extjs.Ext.picker.IDate]] = js.undefined
+  var setMinDate: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], typings.extjs.Ext.picker.IDate]] = js.undefined
   
   /** [Method] Sets the value of the date field
     * @param value Date The date to set
     * @returns Ext.picker.Date this
     */
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], typings.extjs.Ext.picker.IDate]] = js.undefined
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], typings.extjs.Ext.picker.IDate]] = js.undefined
   
   /** [Method] Show the month picker
     * @param animate Boolean Indicates whether to animate this action. If the animate parameter is not specified, the behavior will use disableAnim to determine whether to animate or not.
@@ -153,7 +152,7 @@ trait IDatePicker
     * @param e Object
     * @returns Ext.picker.Date this
     */
-  var showNextMonth: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], typings.extjs.Ext.picker.IDate]] = js.undefined
+  var showNextMonth: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], typings.extjs.Ext.picker.IDate]] = js.undefined
   
   /** [Method] Show the next year
     * @returns Ext.picker.Date this
@@ -164,7 +163,7 @@ trait IDatePicker
     * @param e Object
     * @returns Ext.picker.Date this
     */
-  var showPrevMonth: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], typings.extjs.Ext.picker.IDate]] = js.undefined
+  var showPrevMonth: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], typings.extjs.Ext.picker.IDate]] = js.undefined
   
   /** [Method] Show the previous year
     * @returns Ext.picker.Date this
@@ -214,7 +213,7 @@ object IDatePicker {
     
     inline def setDisabledDates(value: Array): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
     
-    inline def setDisabledDatesRE(value: RegExp): Self = StObject.set(x, "disabledDatesRE", value.asInstanceOf[js.Any])
+    inline def setDisabledDatesRE(value: js.RegExp): Self = StObject.set(x, "disabledDatesRE", value.asInstanceOf[js.Any])
     
     inline def setDisabledDatesREUndefined: Self = StObject.set(x, "disabledDatesRE", js.undefined)
     
@@ -240,15 +239,15 @@ object IDatePicker {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setGetDayInitial(value: /* value */ js.UndefOr[js.Any] => java.lang.String): Self = StObject.set(x, "getDayInitial", js.Any.fromFunction1(value))
+    inline def setGetDayInitial(value: /* value */ js.UndefOr[Any] => java.lang.String): Self = StObject.set(x, "getDayInitial", js.Any.fromFunction1(value))
     
     inline def setGetDayInitialUndefined: Self = StObject.set(x, "getDayInitial", js.undefined)
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
-    inline def setHandler(value: js.Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
@@ -256,7 +255,7 @@ object IDatePicker {
     
     inline def setHideMonthPickerUndefined: Self = StObject.set(x, "hideMonthPicker", js.undefined)
     
-    inline def setKeyNavConfig(value: js.Any): Self = StObject.set(x, "keyNavConfig", value.asInstanceOf[js.Any])
+    inline def setKeyNavConfig(value: Any): Self = StObject.set(x, "keyNavConfig", value.asInstanceOf[js.Any])
     
     inline def setKeyNavConfigUndefined: Self = StObject.set(x, "keyNavConfig", js.undefined)
     
@@ -264,7 +263,7 @@ object IDatePicker {
     
     inline def setLongDayFormatUndefined: Self = StObject.set(x, "longDayFormat", js.undefined)
     
-    inline def setMaxDate(value: js.Any): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    inline def setMaxDate(value: Any): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
     inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
@@ -272,7 +271,7 @@ object IDatePicker {
     
     inline def setMaxTextUndefined: Self = StObject.set(x, "maxText", js.undefined)
     
-    inline def setMinDate(value: js.Any): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    inline def setMinDate(value: Any): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
     inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     
@@ -300,7 +299,7 @@ object IDatePicker {
     
     inline def setPrevTextUndefined: Self = StObject.set(x, "prevText", js.undefined)
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
@@ -312,7 +311,7 @@ object IDatePicker {
     
     inline def setSelectedClsUndefined: Self = StObject.set(x, "selectedCls", js.undefined)
     
-    inline def setSetDisabledDates(value: /* disabledDates */ js.UndefOr[js.Any] => typings.extjs.Ext.picker.IDate): Self = StObject.set(x, "setDisabledDates", js.Any.fromFunction1(value))
+    inline def setSetDisabledDates(value: /* disabledDates */ js.UndefOr[Any] => typings.extjs.Ext.picker.IDate): Self = StObject.set(x, "setDisabledDates", js.Any.fromFunction1(value))
     
     inline def setSetDisabledDatesUndefined: Self = StObject.set(x, "setDisabledDates", js.undefined)
     
@@ -320,15 +319,15 @@ object IDatePicker {
     
     inline def setSetDisabledDaysUndefined: Self = StObject.set(x, "setDisabledDays", js.undefined)
     
-    inline def setSetMaxDate(value: /* value */ js.UndefOr[js.Any] => typings.extjs.Ext.picker.IDate): Self = StObject.set(x, "setMaxDate", js.Any.fromFunction1(value))
+    inline def setSetMaxDate(value: /* value */ js.UndefOr[Any] => typings.extjs.Ext.picker.IDate): Self = StObject.set(x, "setMaxDate", js.Any.fromFunction1(value))
     
     inline def setSetMaxDateUndefined: Self = StObject.set(x, "setMaxDate", js.undefined)
     
-    inline def setSetMinDate(value: /* value */ js.UndefOr[js.Any] => typings.extjs.Ext.picker.IDate): Self = StObject.set(x, "setMinDate", js.Any.fromFunction1(value))
+    inline def setSetMinDate(value: /* value */ js.UndefOr[Any] => typings.extjs.Ext.picker.IDate): Self = StObject.set(x, "setMinDate", js.Any.fromFunction1(value))
     
     inline def setSetMinDateUndefined: Self = StObject.set(x, "setMinDate", js.undefined)
     
-    inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => typings.extjs.Ext.picker.IDate): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[Any] => typings.extjs.Ext.picker.IDate): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
@@ -336,7 +335,7 @@ object IDatePicker {
     
     inline def setShowMonthPickerUndefined: Self = StObject.set(x, "showMonthPicker", js.undefined)
     
-    inline def setShowNextMonth(value: /* e */ js.UndefOr[js.Any] => typings.extjs.Ext.picker.IDate): Self = StObject.set(x, "showNextMonth", js.Any.fromFunction1(value))
+    inline def setShowNextMonth(value: /* e */ js.UndefOr[Any] => typings.extjs.Ext.picker.IDate): Self = StObject.set(x, "showNextMonth", js.Any.fromFunction1(value))
     
     inline def setShowNextMonthUndefined: Self = StObject.set(x, "showNextMonth", js.undefined)
     
@@ -344,7 +343,7 @@ object IDatePicker {
     
     inline def setShowNextYearUndefined: Self = StObject.set(x, "showNextYear", js.undefined)
     
-    inline def setShowPrevMonth(value: /* e */ js.UndefOr[js.Any] => typings.extjs.Ext.picker.IDate): Self = StObject.set(x, "showPrevMonth", js.Any.fromFunction1(value))
+    inline def setShowPrevMonth(value: /* e */ js.UndefOr[Any] => typings.extjs.Ext.picker.IDate): Self = StObject.set(x, "showPrevMonth", js.Any.fromFunction1(value))
     
     inline def setShowPrevMonthUndefined: Self = StObject.set(x, "showPrevMonth", js.undefined)
     

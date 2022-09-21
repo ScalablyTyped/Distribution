@@ -10,7 +10,7 @@ object powBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/powBlock", "PowBlock")
   @js.native
-  class PowBlock protected () extends NodeMaterialBlock {
+  open class PowBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new PowBlock
       * @param name defines the block name

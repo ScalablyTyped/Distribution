@@ -1,5 +1,6 @@
 package typings.typedJs
 
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,11 @@ object mod {
   
   @JSImport("typed.js", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Typed {
     def this(elementId: String, options: TypedOptions) = this()
+    def this(elementId: Element, options: TypedOptions) = this()
   }
   
   @js.native
@@ -79,7 +81,7 @@ object mod {
     /**
       * Fade out delay in milliseconds
       */
-    var fadeOutDelay: js.UndefOr[Boolean] = js.undefined
+    var fadeOutDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * loop strings
@@ -167,9 +169,9 @@ object mod {
     var strings: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
-      * ID of element containing string children
+      * ID or instance of HTML element of element containing string children
       */
-    var stringsElement: js.UndefOr[String] = js.undefined
+    var stringsElement: js.UndefOr[String | Element] = js.undefined
     
     /**
       * type speed in milliseconds
@@ -219,7 +221,7 @@ object mod {
       
       inline def setFadeOutClassUndefined: Self = StObject.set(x, "fadeOutClass", js.undefined)
       
-      inline def setFadeOutDelay(value: Boolean): Self = StObject.set(x, "fadeOutDelay", value.asInstanceOf[js.Any])
+      inline def setFadeOutDelay(value: Double): Self = StObject.set(x, "fadeOutDelay", value.asInstanceOf[js.Any])
       
       inline def setFadeOutDelayUndefined: Self = StObject.set(x, "fadeOutDelay", js.undefined)
       
@@ -291,13 +293,13 @@ object mod {
       
       inline def setStrings(value: js.Array[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
       
-      inline def setStringsElement(value: String): Self = StObject.set(x, "stringsElement", value.asInstanceOf[js.Any])
+      inline def setStringsElement(value: String | Element): Self = StObject.set(x, "stringsElement", value.asInstanceOf[js.Any])
       
       inline def setStringsElementUndefined: Self = StObject.set(x, "stringsElement", js.undefined)
       
       inline def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
       
-      inline def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value :_*))
+      inline def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value*))
       
       inline def setTypeSpeed(value: Double): Self = StObject.set(x, "typeSpeed", value.asInstanceOf[js.Any])
       

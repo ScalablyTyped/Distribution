@@ -32,7 +32,7 @@ object SearchDevicesRequest {
     
     inline def setFilters(value: SearchDevicesRequestFiltersList): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    inline def setFiltersVarargs(value: SearchDevicesFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: SearchDevicesFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setMaxResults(value: SearchDevicesRequestMaxResultsInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

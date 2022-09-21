@@ -1,6 +1,6 @@
 package typings.wxServerSdk.anon
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.ReadStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -15,7 +15,7 @@ object formLabelMod extends Shortcut {
   
   trait FormLabelProps
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var className: js.UndefOr[String] = js.undefined
     

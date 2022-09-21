@@ -14,34 +14,34 @@ object aa {
   
   trait IExternalFormValidationConfig extends StObject {
     
-    var globals: js.UndefOr[js.Any] = js.undefined
+    var globals: js.UndefOr[Any] = js.undefined
     
-    var ignore: js.UndefOr[js.Any] = js.undefined
+    var ignore: js.UndefOr[Any] = js.undefined
     
-    var resolve: js.UndefOr[js.Any] = js.undefined
+    var resolve: js.UndefOr[Any] = js.undefined
     
     var resolveFn: js.UndefOr[js.Function1[/* modelValue */ String, String]] = js.undefined
     
-    var validations: js.Any
+    var validations: Any
   }
   object IExternalFormValidationConfig {
     
-    inline def apply(validations: js.Any): IExternalFormValidationConfig = {
+    inline def apply(validations: Any): IExternalFormValidationConfig = {
       val __obj = js.Dynamic.literal(validations = validations.asInstanceOf[js.Any])
       __obj.asInstanceOf[IExternalFormValidationConfig]
     }
     
     extension [Self <: IExternalFormValidationConfig](x: Self) {
       
-      inline def setGlobals(value: js.Any): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+      inline def setGlobals(value: Any): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
       
       inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
       
-      inline def setIgnore(value: js.Any): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: Any): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setResolve(value: js.Any): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: Any): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
       inline def setResolveFn(value: /* modelValue */ String => String): Self = StObject.set(x, "resolveFn", js.Any.fromFunction1(value))
       
@@ -49,7 +49,7 @@ object aa {
       
       inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
       
-      inline def setValidations(value: js.Any): Self = StObject.set(x, "validations", value.asInstanceOf[js.Any])
+      inline def setValidations(value: Any): Self = StObject.set(x, "validations", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,7 +94,7 @@ object aa {
   object IFormExtensionsProvider {
     
     inline def apply(
-      $get: js.Any,
+      $get: Any,
       confirmResetStrategy: () => Boolean,
       defaultFieldGroupStrategy: String,
       defaultLabelStrategy: String,
@@ -152,7 +152,7 @@ object aa {
     }
   }
   
-  type IGlobalSettings = StringDictionary[js.Any]
+  type IGlobalSettings = StringDictionary[Any]
   
   type ILabelStrategies = StringDictionary[
     js.Function3[
@@ -210,18 +210,18 @@ object aa {
     
     var defaultTargetContainerName: String
     
-    var notifyConfigs: js.Any
+    var notifyConfigs: Any
     
     def optionsTransformer(options: INotifyOptions, $sce: ISCEService): Unit
   }
   object INotifyConfigProvider {
     
     inline def apply(
-      $get: js.Any,
+      $get: Any,
       addOrUpdateNotifyConfig: (String, INotifyConfig) => Unit,
       defaultNotifyConfig: String,
       defaultTargetContainerName: String,
-      notifyConfigs: js.Any,
+      notifyConfigs: Any,
       optionsTransformer: (INotifyOptions, ISCEService) => Unit
     ): INotifyConfigProvider = {
       val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], addOrUpdateNotifyConfig = js.Any.fromFunction2(addOrUpdateNotifyConfig), defaultNotifyConfig = defaultNotifyConfig.asInstanceOf[js.Any], defaultTargetContainerName = defaultTargetContainerName.asInstanceOf[js.Any], notifyConfigs = notifyConfigs.asInstanceOf[js.Any], optionsTransformer = js.Any.fromFunction2(optionsTransformer))
@@ -236,7 +236,7 @@ object aa {
       
       inline def setDefaultTargetContainerName(value: String): Self = StObject.set(x, "defaultTargetContainerName", value.asInstanceOf[js.Any])
       
-      inline def setNotifyConfigs(value: js.Any): Self = StObject.set(x, "notifyConfigs", value.asInstanceOf[js.Any])
+      inline def setNotifyConfigs(value: Any): Self = StObject.set(x, "notifyConfigs", value.asInstanceOf[js.Any])
       
       inline def setOptionsTransformer(value: (INotifyOptions, ISCEService) => Unit): Self = StObject.set(x, "optionsTransformer", js.Any.fromFunction2(value))
     }
@@ -244,34 +244,34 @@ object aa {
   
   trait INotifyDefaults extends StObject {
     
-    def danger(message: String, options: js.Any, notifier: js.Any): js.Any
+    def danger(message: String, options: Any, notifier: Any): Any
     @JSName("danger")
     var danger_Original: INotifyPredicate
     
-    def error(message: String, options: js.Any, notifier: js.Any): js.Any
+    def error(message: String, options: Any, notifier: Any): Any
     @JSName("error")
     var error_Original: INotifyPredicate
     
-    def info(message: String, options: js.Any, notifier: js.Any): js.Any
+    def info(message: String, options: Any, notifier: Any): Any
     @JSName("info")
     var info_Original: INotifyPredicate
     
-    def success(message: String, options: js.Any, notifier: js.Any): js.Any
+    def success(message: String, options: Any, notifier: Any): Any
     @JSName("success")
     var success_Original: INotifyPredicate
     
-    def warning(message: String, options: js.Any, notifier: js.Any): js.Any
+    def warning(message: String, options: Any, notifier: Any): Any
     @JSName("warning")
     var warning_Original: INotifyPredicate
   }
   object INotifyDefaults {
     
     inline def apply(
-      danger: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any,
-      error: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any,
-      info: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any,
-      success: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any,
-      warning: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any
+      danger: (/* message */ String, /* options */ Any, /* notifier */ Any) => Any,
+      error: (/* message */ String, /* options */ Any, /* notifier */ Any) => Any,
+      info: (/* message */ String, /* options */ Any, /* notifier */ Any) => Any,
+      success: (/* message */ String, /* options */ Any, /* notifier */ Any) => Any,
+      warning: (/* message */ String, /* options */ Any, /* notifier */ Any) => Any
     ): INotifyDefaults = {
       val __obj = js.Dynamic.literal(danger = js.Any.fromFunction3(danger), error = js.Any.fromFunction3(error), info = js.Any.fromFunction3(info), success = js.Any.fromFunction3(success), warning = js.Any.fromFunction3(warning))
       __obj.asInstanceOf[INotifyDefaults]
@@ -279,15 +279,15 @@ object aa {
     
     extension [Self <: INotifyDefaults](x: Self) {
       
-      inline def setDanger(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "danger", js.Any.fromFunction3(value))
+      inline def setDanger(value: (/* message */ String, /* options */ Any, /* notifier */ Any) => Any): Self = StObject.set(x, "danger", js.Any.fromFunction3(value))
       
-      inline def setError(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+      inline def setError(value: (/* message */ String, /* options */ Any, /* notifier */ Any) => Any): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
       
-      inline def setInfo(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "info", js.Any.fromFunction3(value))
+      inline def setInfo(value: (/* message */ String, /* options */ Any, /* notifier */ Any) => Any): Self = StObject.set(x, "info", js.Any.fromFunction3(value))
       
-      inline def setSuccess(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+      inline def setSuccess(value: (/* message */ String, /* options */ Any, /* notifier */ Any) => Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
       
-      inline def setWarning(value: (/* message */ String, /* options */ js.Any, /* notifier */ js.Any) => js.Any): Self = StObject.set(x, "warning", js.Any.fromFunction3(value))
+      inline def setWarning(value: (/* message */ String, /* options */ Any, /* notifier */ Any) => Any): Self = StObject.set(x, "warning", js.Any.fromFunction3(value))
     }
   }
   
@@ -322,7 +322,7 @@ object aa {
     }
   }
   
-  type INotifyPredicate = js.Function3[/* message */ String, /* options */ js.Any, /* notifier */ js.Any, js.Any]
+  type INotifyPredicate = js.Function3[/* message */ String, /* options */ Any, /* notifier */ Any, Any]
   
   type IOnNavigateAwayStrategies = StringDictionary[
     js.Function3[

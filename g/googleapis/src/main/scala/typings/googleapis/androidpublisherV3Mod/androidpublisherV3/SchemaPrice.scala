@@ -7,15 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaPrice extends StObject {
   
   /**
-    * 3 letter Currency code, as defined by ISO 4217.
+    * 3 letter Currency code, as defined by ISO 4217. See java/com/google/common/money/CurrencyCode.java
     */
-  var currency: js.UndefOr[String] = js.undefined
+  var currency: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The price in millionths of the currency base unit represented as a
-    * string.
+    * Price in 1/million of the currency base unit, represented as a string.
     */
-  var priceMicros: js.UndefOr[String] = js.undefined
+  var priceMicros: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPrice {
   
@@ -28,9 +27,13 @@ object SchemaPrice {
     
     inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
+    inline def setCurrencyNull: Self = StObject.set(x, "currency", null)
+    
     inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     inline def setPriceMicros(value: String): Self = StObject.set(x, "priceMicros", value.asInstanceOf[js.Any])
+    
+    inline def setPriceMicrosNull: Self = StObject.set(x, "priceMicros", null)
     
     inline def setPriceMicrosUndefined: Self = StObject.set(x, "priceMicros", js.undefined)
   }

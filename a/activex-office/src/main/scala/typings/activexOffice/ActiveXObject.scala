@@ -75,6 +75,11 @@ trait ActiveXObject extends StObject {
   
   def on(
     obj: CommandBarButton,
+    event: AddRef | Release,
+    handler: js.ThisFunction1[/* this */ CommandBarButton, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  def on(
+    obj: CommandBarButton,
     event: Click,
     argNames: js.Tuple2[Ctrl, CancelDefault],
     handler: js.ThisFunction1[
@@ -109,6 +114,11 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: CommandBarComboBox,
+    event: AddRef | Release,
+    handler: js.ThisFunction1[/* this */ CommandBarComboBox, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  def on(
+    obj: CommandBarComboBox,
     event: Change,
     argNames: js.Array[Ctrl],
     handler: js.ThisFunction1[/* this */ CommandBarComboBox, /* parameter */ typings.activexOffice.anon.Ctrl, Unit]
@@ -139,6 +149,11 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: CommandBars,
+    event: AddRef | OnUpdate | Release,
+    handler: js.ThisFunction1[/* this */ CommandBars, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  def on(
+    obj: CommandBars,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
     handler: js.ThisFunction1[/* this */ CommandBars, /* parameter */ CNames, Unit]
@@ -163,13 +178,18 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: CustomTaskPane,
-    event: DockPositionStateChange,
+    event: DockPositionStateChange | VisibleStateChange,
     argNames: js.Array[CustomTaskPaneInst],
     handler: js.ThisFunction1[
       /* this */ CustomTaskPane, 
       /* parameter */ typings.activexOffice.anon.CustomTaskPaneInst, 
       Unit
     ]
+  ): Unit = js.native
+  def on(
+    obj: CustomTaskPane,
+    event: AddRef | Release,
+    handler: js.ThisFunction1[/* this */ CustomTaskPane, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: CustomTaskPane,
@@ -196,14 +216,9 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ CustomTaskPane, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
-    obj: CustomTaskPane,
-    event: VisibleStateChange,
-    argNames: js.Array[CustomTaskPaneInst],
-    handler: js.ThisFunction1[
-      /* this */ CustomTaskPane, 
-      /* parameter */ typings.activexOffice.anon.CustomTaskPaneInst, 
-      Unit
-    ]
+    obj: CustomXMLPart,
+    event: AddRef | Release,
+    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: CustomXMLPart,
@@ -253,6 +268,11 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: CustomXMLParts,
+    event: AddRef | Release,
+    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  def on(
+    obj: CustomXMLParts,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
     handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ CNames, Unit]
@@ -293,52 +313,9 @@ trait ActiveXObject extends StObject {
     argNames: js.Tuple2[riid, ppvObj],
     handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
-  @JSName("on")
-  def on_AddRef(
-    obj: CommandBarButton,
-    event: AddRef,
-    handler: js.ThisFunction1[/* this */ CommandBarButton, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AddRef(
-    obj: CommandBarComboBox,
-    event: AddRef,
-    handler: js.ThisFunction1[/* this */ CommandBarComboBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AddRef(
-    obj: CommandBars,
-    event: AddRef,
-    handler: js.ThisFunction1[/* this */ CommandBars, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AddRef(
-    obj: CustomTaskPane,
-    event: AddRef,
-    handler: js.ThisFunction1[/* this */ CustomTaskPane, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AddRef(
-    obj: CustomXMLPart,
-    event: AddRef,
-    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AddRef(
-    obj: CustomXMLParts,
-    event: AddRef,
-    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_EnvelopeHide(
+  def on(
     obj: MsoEnvelope,
-    event: EnvelopeHide,
-    handler: js.ThisFunction1[/* this */ MsoEnvelope, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_EnvelopeShow(
-    obj: MsoEnvelope,
-    event: EnvelopeShow,
+    event: EnvelopeHide | EnvelopeShow,
     handler: js.ThisFunction1[/* this */ MsoEnvelope, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
@@ -387,62 +364,19 @@ trait ActiveXObject extends StObject {
     argNames: CustomXMLPartsInvokeArgNames,
     handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ CustomXMLPartsInvokeParameter, Unit]
   ): Unit = js.native
-  @JSName("on")
-  def on_OnUpdate(
-    obj: CommandBars,
-    event: OnUpdate,
-    handler: js.ThisFunction1[/* this */ CommandBars, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Release(
-    obj: CommandBarButton,
-    event: Release,
-    handler: js.ThisFunction1[/* this */ CommandBarButton, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Release(
-    obj: CommandBarComboBox,
-    event: Release,
-    handler: js.ThisFunction1[/* this */ CommandBarComboBox, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Release(
-    obj: CommandBars,
-    event: Release,
-    handler: js.ThisFunction1[/* this */ CommandBars, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Release(
-    obj: CustomTaskPane,
-    event: Release,
-    handler: js.ThisFunction1[/* this */ CustomTaskPane, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Release(
-    obj: CustomXMLPart,
-    event: Release,
-    handler: js.ThisFunction1[/* this */ CustomXMLPart, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Release(
-    obj: CustomXMLParts,
-    event: Release,
-    handler: js.ThisFunction1[/* this */ CustomXMLParts, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
   
-  @JSName("set")
-  def set_List(obj: CommandBarComboBox, propertyName: List, parameterTypes: js.Array[Double], newValue: String): Unit = js.native
-  @JSName("set")
-  def set_accName(obj: CommandBarButton, propertyName: accName, parameterTypes: js.Array[js.Any], newValue: String): Unit = js.native
-  @JSName("set")
-  def set_accName(obj: CommandBarComboBox, propertyName: accName, parameterTypes: js.Array[js.Any], newValue: String): Unit = js.native
-  @JSName("set")
-  def set_accValue(obj: CommandBarButton, propertyName: accValue, parameterTypes: js.Array[js.Any], newValue: String): Unit = js.native
-  @JSName("set")
-  def set_accValue(
-    obj: CommandBarComboBox,
-    propertyName: accValue,
-    parameterTypes: js.Array[js.Any],
+  def set(
+    obj: CommandBarButton,
+    propertyName: accName | accValue,
+    parameterTypes: js.Array[Any],
     newValue: String
   ): Unit = js.native
+  def set(
+    obj: CommandBarComboBox,
+    propertyName: accName | accValue,
+    parameterTypes: js.Array[Any],
+    newValue: String
+  ): Unit = js.native
+  @JSName("set")
+  def set_List(obj: CommandBarComboBox, propertyName: List, parameterTypes: js.Array[Double], newValue: String): Unit = js.native
 }

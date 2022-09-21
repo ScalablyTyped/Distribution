@@ -1,18 +1,27 @@
 package typings.externalEditor
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("external-editor/main/errors/LaunchEditorError", JSImport.Namespace)
-@js.native
-object launchEditorErrorMod extends js.Object {
-  @js.native
-  class LaunchEditorError protected () extends Error {
-    def this(originalError: Error) = this()
-    var originalError: Error = js.native
-  }
+object launchEditorErrorMod {
   
+  @JSImport("external-editor/main/errors/LaunchEditorError", "LaunchEditorError")
+  @js.native
+  open class LaunchEditorError protected ()
+    extends StObject
+       with Error {
+    def this(originalError: js.Error) = this()
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    var originalError: js.Error = js.native
+  }
 }
-

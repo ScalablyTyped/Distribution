@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://easings.net/#easeInBack
   * @param amplitude Defines the amplitude of the function
   */
-class BackEase ()
+open class BackEase ()
   extends typings.babylonjs.indexMod.BackEase {
   def this(/** Defines the amplitude of the function */
   amplitude: Double) = this()

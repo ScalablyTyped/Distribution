@@ -28,7 +28,7 @@ object entityObjectMod {
     
     def clearCache(): Unit = js.native
     
-    def clone(config: CloneEntityObjectConfigData): js.Any = js.native
+    def clone(config: CloneEntityObjectConfigData): Any = js.native
     
     var componentDirty: Boolean = js.native
     
@@ -36,7 +36,7 @@ object entityObjectMod {
     
     /* protected */ def createTransform(): Transform = js.native
     
-    var customEventMap: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<Collection<CustomEventRegisterData>> */ js.Any = js.native
+    var customEventMap: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<Collection<CustomEventRegisterData>> */ Any = js.native
     
     def dispose(): Unit = js.native
     
@@ -44,13 +44,13 @@ object entityObjectMod {
     
     def forEachComponent(func: js.Function1[/* component */ Component, Unit]): this.type = js.native
     
-    def getChildren(): js.Any = js.native
+    def getChildren(): Any = js.native
     
-    def getComponent[T](_class: js.Any): T = js.native
+    def getComponent[T](_class: Any): T = js.native
     
     def getGeometry(): Geometry = js.native
     
-    /* protected */ def getRenderList(): js.Any = js.native
+    /* protected */ def getRenderList(): Any = js.native
     
     def hasChild(child: EntityObject): Boolean = js.native
     
@@ -67,8 +67,8 @@ object entityObjectMod {
     
     def removeChild(child: EntityObject): EntityObject = js.native
     
-    def removeComponent(_class: js.Function): js.Any = js.native
-    def removeComponent(component: Component): js.Any = js.native
+    def removeComponent(_class: js.Function): Any = js.native
+    def removeComponent(component: Component): Any = js.native
     
     def render(renderer: Renderer, camera: GameObject): Unit = js.native
     

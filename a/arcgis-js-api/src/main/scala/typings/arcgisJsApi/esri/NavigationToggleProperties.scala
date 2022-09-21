@@ -20,6 +20,8 @@ trait NavigationToggleProperties
   /**
     * Sets the layout of the widget to either `horizontal` or `vertical`.
     *
+    * @default vertical
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle.html#layout)
     */
   var layout: js.UndefOr[vertical | horizontal] = js.undefined

@@ -44,7 +44,7 @@ object CreateComputerRequest {
     
     inline def setComputerAttributesUndefined: Self = StObject.set(x, "ComputerAttributes", js.undefined)
     
-    inline def setComputerAttributesVarargs(value: Attribute*): Self = StObject.set(x, "ComputerAttributes", js.Array(value :_*))
+    inline def setComputerAttributesVarargs(value: Attribute*): Self = StObject.set(x, "ComputerAttributes", js.Array(value*))
     
     inline def setComputerName(value: ComputerName): Self = StObject.set(x, "ComputerName", value.asInstanceOf[js.Any])
     

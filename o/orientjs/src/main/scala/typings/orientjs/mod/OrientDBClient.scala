@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("orientjs", "OrientDBClient")
 @js.native
-class OrientDBClient () extends EventEmitter {
+open class OrientDBClient () extends EventEmitter {
   def this(options: OrientDBClientConfig) = this()
   
   def close(): js.Promise[Unit] = js.native
@@ -25,8 +25,8 @@ class OrientDBClient () extends EventEmitter {
   def existsDatabase(): js.Promise[Boolean] = js.native
   def existsDatabase(options: DatabaseOptions): js.Promise[Boolean] = js.native
   
-  def listDatabases(): js.Promise[js.Array[js.Any]] = js.native
-  def listDatabases(options: ServerOptions): js.Promise[js.Array[js.Any]] = js.native
+  def listDatabases(): js.Promise[js.Array[Any]] = js.native
+  def listDatabases(options: ServerOptions): js.Promise[js.Array[Any]] = js.native
   
   def migrator(): MigrationManager = js.native
   def migrator(config: MigrationManagerConfig): MigrationManager = js.native

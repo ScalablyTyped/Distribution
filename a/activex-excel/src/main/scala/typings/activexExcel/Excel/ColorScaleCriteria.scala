@@ -13,5 +13,5 @@ trait ColorScaleCriteria extends StObject {
   
   def Item(Index: Double): ColorScaleCriterion = js.native
   
-  def _Default(Index: js.Any): ColorScaleCriterion = js.native
+  def _Default(Index: Any): ColorScaleCriterion = js.native
 }

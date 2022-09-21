@@ -151,11 +151,11 @@ object anon {
     /* Inlined {[ name in bunyan.bunyan.LogLevelString ]: number} */
     val levelFromName: TypeoflevelFromName
     
-    val nameFromLevel: js.Any
+    val nameFromLevel: Any
     
     def resolveLevel(value: LogLevel): Double
     
-    def safeCycles(): js.Function2[/* key */ String, /* value */ js.Any, js.Any]
+    def safeCycles(): js.Function2[/* key */ String, /* value */ Any, Any]
     
     val stdSerializers: StdSerializers_
   }
@@ -172,9 +172,9 @@ object anon {
       WARN: Double,
       createLogger: LoggerOptions => Logger,
       levelFromName: TypeoflevelFromName,
-      nameFromLevel: js.Any,
+      nameFromLevel: Any,
       resolveLevel: LogLevel => Double,
-      safeCycles: () => js.Function2[/* key */ String, /* value */ js.Any, js.Any],
+      safeCycles: () => js.Function2[/* key */ String, /* value */ Any, Any],
       stdSerializers: StdSerializers_
     ): Typeofbunyan = {
       val __obj = js.Dynamic.literal(DEBUG = DEBUG.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], FATAL = FATAL.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], RingBuffer = RingBuffer.asInstanceOf[js.Any], RotatingFileStream = RotatingFileStream.asInstanceOf[js.Any], TRACE = TRACE.asInstanceOf[js.Any], WARN = WARN.asInstanceOf[js.Any], createLogger = js.Any.fromFunction1(createLogger), levelFromName = levelFromName.asInstanceOf[js.Any], nameFromLevel = nameFromLevel.asInstanceOf[js.Any], resolveLevel = js.Any.fromFunction1(resolveLevel), safeCycles = js.Any.fromFunction0(safeCycles), stdSerializers = stdSerializers.asInstanceOf[js.Any])
@@ -195,7 +195,7 @@ object anon {
       
       inline def setLevelFromName(value: TypeoflevelFromName): Self = StObject.set(x, "levelFromName", value.asInstanceOf[js.Any])
       
-      inline def setNameFromLevel(value: js.Any): Self = StObject.set(x, "nameFromLevel", value.asInstanceOf[js.Any])
+      inline def setNameFromLevel(value: Any): Self = StObject.set(x, "nameFromLevel", value.asInstanceOf[js.Any])
       
       inline def setResolveLevel(value: LogLevel => Double): Self = StObject.set(x, "resolveLevel", js.Any.fromFunction1(value))
       
@@ -203,7 +203,7 @@ object anon {
       
       inline def setRotatingFileStream(value: Instantiable1[/* options */ RotatingFileStreamOptions, RotatingFileStream]): Self = StObject.set(x, "RotatingFileStream", value.asInstanceOf[js.Any])
       
-      inline def setSafeCycles(value: () => js.Function2[/* key */ String, /* value */ js.Any, js.Any]): Self = StObject.set(x, "safeCycles", js.Any.fromFunction0(value))
+      inline def setSafeCycles(value: () => js.Function2[/* key */ String, /* value */ Any, Any]): Self = StObject.set(x, "safeCycles", js.Any.fromFunction0(value))
       
       inline def setStdSerializers(value: StdSerializers_): Self = StObject.set(x, "stdSerializers", value.asInstanceOf[js.Any])
       

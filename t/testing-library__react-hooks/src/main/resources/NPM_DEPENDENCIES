@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@testing-library/react-hooks" : "8.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@testing-library/react-hooks" : "8.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

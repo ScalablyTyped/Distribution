@@ -76,7 +76,7 @@ object gapi {
         * Executes all requests in the batch. The supplied callback is executed on success or failure.
         * @param callback The callback to execute when the batch returns.
         */
-      def execute(callback: js.Function2[/* responseMap */ ResponseMap[T], /* rawBatchResponse */ String, js.Any]): Unit = js.native
+      def execute(callback: js.Function2[/* responseMap */ ResponseMap[T], /* rawBatchResponse */ String, Any]): Unit = js.native
     }
     
     /**
@@ -90,7 +90,7 @@ object gapi {
         * Executes the request and runs the supplied callback on response.
         * @param callback The callback function which executes when the request succeeds or fails.
         */
-      def execute(callback: js.Function1[/* response */ Response[T], js.Any]): Unit = js.native
+      def execute(callback: js.Function1[/* response */ Response[T], Any]): Unit = js.native
     }
     
     /**
@@ -102,7 +102,7 @@ object gapi {
       var body: String
       
       // The map of HTTP response headers.
-      var headers: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var headers: js.UndefOr[StringDictionary[String]] = js.undefined
       
       // The JSON-parsed result.
       var result: T
@@ -124,11 +124,9 @@ object gapi {
         
         inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        inline def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+        inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
         inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
-        
-        inline def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
         
         inline def setResult(value: T): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
         

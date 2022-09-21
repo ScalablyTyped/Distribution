@@ -19,11 +19,11 @@ trait Feature
   
   def getOverlays(): js.Array[Marker | Polygon | Polyline] = js.native
   
-  def getProperty(name: String): js.Any = js.native
+  def getProperty(name: String): Any = js.native
   
   def getRaw(): GeoJSON = js.native
   
-  def setProperty(name: String, value: js.Any): Unit = js.native
+  def setProperty(name: String, value: Any): Unit = js.native
   
   def setStyle(styleOptions: StyleOptions): Unit = js.native
 }

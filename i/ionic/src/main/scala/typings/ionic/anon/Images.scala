@@ -24,11 +24,11 @@ object Images {
     
     inline def setImages(value: js.Array[ResourcesImageConfig]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    inline def setImagesVarargs(value: ResourcesImageConfig*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: ResourcesImageConfig*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setNodeAttributes(value: js.Array[String]): Self = StObject.set(x, "nodeAttributes", value.asInstanceOf[js.Any])
     
-    inline def setNodeAttributesVarargs(value: String*): Self = StObject.set(x, "nodeAttributes", js.Array(value :_*))
+    inline def setNodeAttributesVarargs(value: String*): Self = StObject.set(x, "nodeAttributes", js.Array(value*))
     
     inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
   }

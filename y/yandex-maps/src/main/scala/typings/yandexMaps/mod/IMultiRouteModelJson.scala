@@ -23,6 +23,6 @@ object IMultiRouteModelJson {
     
     inline def setReferencePoints(value: js.Array[IMultiRouteReferencePoint]): Self = StObject.set(x, "referencePoints", value.asInstanceOf[js.Any])
     
-    inline def setReferencePointsVarargs(value: IMultiRouteReferencePoint*): Self = StObject.set(x, "referencePoints", js.Array(value :_*))
+    inline def setReferencePointsVarargs(value: IMultiRouteReferencePoint*): Self = StObject.set(x, "referencePoints", js.Array(value*))
   }
 }

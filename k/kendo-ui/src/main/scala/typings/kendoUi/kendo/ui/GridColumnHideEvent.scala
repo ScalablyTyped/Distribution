@@ -8,7 +8,7 @@ trait GridColumnHideEvent
   extends StObject
      with GridEvent {
   
-  var column: js.UndefOr[js.Any] = js.undefined
+  var column: js.UndefOr[Any] = js.undefined
 }
 object GridColumnHideEvent {
   
@@ -19,7 +19,7 @@ object GridColumnHideEvent {
   
   extension [Self <: GridColumnHideEvent](x: Self) {
     
-    inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
   }

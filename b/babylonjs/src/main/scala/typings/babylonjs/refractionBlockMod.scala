@@ -13,7 +13,7 @@ object refractionBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/PBR/refractionBlock", "RefractionBlock")
   @js.native
-  class RefractionBlock protected () extends NodeMaterialBlock {
+  open class RefractionBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new RefractionBlock
       * @param name defines the block name
@@ -43,7 +43,7 @@ object refractionBlockMod {
     /** @hidden */
     var _refractionMatrixName: String = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
     /** @hidden */
     var _vRefractionFilteringInfoName: String = js.native
@@ -82,7 +82,7 @@ object refractionBlockMod {
     def isReady(): Boolean = js.native
     
     /**
-      * This parameters will make the material used its opacity to control how much it is refracting aginst not.
+      * This parameters will make the material used its opacity to control how much it is refracting against not.
       * Materials half opaque for instance using refraction could benefit from this control.
       */
     var linkRefractionWithTransparency: Boolean = js.native
@@ -103,6 +103,11 @@ object refractionBlockMod {
     def tintAtDistance: NodeMaterialConnectionPoint = js.native
     
     /**
+      * Controls if refraction needs to be inverted on Y. This could be useful for procedural texture.
+      */
+    var useThicknessAsDepth: Boolean = js.native
+    
+    /**
       * Gets the view input component
       */
     def view: NodeMaterialConnectionPoint = js.native
@@ -114,5 +119,10 @@ object refractionBlockMod {
       */
     /** @hidden */
     var viewConnectionPoint: NodeMaterialConnectionPoint = js.native
+    
+    /**
+      * Gets the volume index of refraction input component
+      */
+    def volumeIndexOfRefraction: NodeMaterialConnectionPoint = js.native
   }
 }

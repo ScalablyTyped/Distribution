@@ -1,12 +1,13 @@
 package typings.w3cCssTypedObjectModelLevel1
 
+import typings.std.CSSNumberish
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type CSSImageValue = typings.w3cCssTypedObjectModelLevel1.CSSStyleValue
+type CSSImageValue = CSSStyleValue
 
-type CSSNumberish = scala.Double | typings.w3cCssTypedObjectModelLevel1.CSSNumericValue
+type CSSNumberOrNumeric = CSSNumberish | CSSNumericValue
 
-type CSSUnparsedSegment = java.lang.String | typings.w3cCssTypedObjectModelLevel1.CSSVariableReferenceValue
+type CSSUnparsedSegment = String | CSSVariableReferenceValue

@@ -1,7 +1,6 @@
 package typings.opentypeJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.ArrayBuffer
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("opentype.js", "Font")
 @js.native
-class Font protected () extends StObject {
+open class Font protected () extends StObject {
   def this(options: FontConstructorOptions) = this()
   
   var ascender: Double = js.native
@@ -531,7 +530,7 @@ class Font protected () extends StObject {
   
   def stringToGlyphs(s: String): js.Array[Glyph] = js.native
   
-  def substitution(font: Font): js.Any = js.native
+  def substitution(font: Font): Any = js.native
   @JSName("substitution")
   var substitution_Original: Substitution = js.native
   
@@ -539,9 +538,9 @@ class Font protected () extends StObject {
   
   var tables: StringDictionary[Table] = js.native
   
-  def toArrayBuffer(): ArrayBuffer = js.native
+  def toArrayBuffer(): js.typedarray.ArrayBuffer = js.native
   
-  def toBuffer(): ArrayBuffer = js.native
+  def toBuffer(): js.typedarray.ArrayBuffer = js.native
   
   def toTables(): Table = js.native
   

@@ -54,7 +54,7 @@ object fieldBodyMod {
   
   @JSImport("rbx/elements/form/field-body", "FieldBody")
   @js.native
-  val FieldBody: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val FieldBody: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait FieldBodyProps extends StObject {

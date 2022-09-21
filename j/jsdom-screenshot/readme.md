@@ -10,10 +10,10 @@ Generate screenshots of jsdom
 | ------------------ | :-------------: |
 | Full name          | jsdom-screenshot |
 | Keywords           | jsdom, screenshot, snapshot, puppeteer, image |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 143805 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 26419.666666666668 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](https://github.com/dferber90/jsdom-screenshot#readme)

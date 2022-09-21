@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "nocache" : "2.1.0"
+      "nocache" : "3.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "nocache" : "2.1.0"
+      "nocache" : "3.0.4"
     }
   ],
   "compile-devDependencies" : [

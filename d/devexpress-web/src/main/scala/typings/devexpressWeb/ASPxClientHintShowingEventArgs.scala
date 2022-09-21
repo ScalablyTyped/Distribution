@@ -19,32 +19,26 @@ trait ASPxClientHintShowingEventArgs
   /**
     * Gets the object that is the hint's content.
     */
-  var contentElement: js.Any
+  var contentElement: Any
   
   /**
     * Gets the object that is the hint.
     */
-  var hintElement: js.Any
+  var hintElement: Any
   
   /**
     * Gets the object that is the hint's target element.
     */
-  var targetElement: js.Any
+  var targetElement: Any
   
   /**
     * Gets the object that is the hint's title.
     */
-  var titleElement: js.Any
+  var titleElement: Any
 }
 object ASPxClientHintShowingEventArgs {
   
-  inline def apply(
-    cancel: Boolean,
-    contentElement: js.Any,
-    hintElement: js.Any,
-    targetElement: js.Any,
-    titleElement: js.Any
-  ): ASPxClientHintShowingEventArgs = {
+  inline def apply(cancel: Boolean, contentElement: Any, hintElement: Any, targetElement: Any, titleElement: Any): ASPxClientHintShowingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], contentElement = contentElement.asInstanceOf[js.Any], hintElement = hintElement.asInstanceOf[js.Any], targetElement = targetElement.asInstanceOf[js.Any], titleElement = titleElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHintShowingEventArgs]
   }
@@ -53,12 +47,12 @@ object ASPxClientHintShowingEventArgs {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    inline def setContentElement(value: js.Any): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
+    inline def setContentElement(value: Any): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
     
-    inline def setHintElement(value: js.Any): Self = StObject.set(x, "hintElement", value.asInstanceOf[js.Any])
+    inline def setHintElement(value: Any): Self = StObject.set(x, "hintElement", value.asInstanceOf[js.Any])
     
-    inline def setTargetElement(value: js.Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
+    inline def setTargetElement(value: Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
     
-    inline def setTitleElement(value: js.Any): Self = StObject.set(x, "titleElement", value.asInstanceOf[js.Any])
+    inline def setTitleElement(value: Any): Self = StObject.set(x, "titleElement", value.asInstanceOf[js.Any])
   }
 }

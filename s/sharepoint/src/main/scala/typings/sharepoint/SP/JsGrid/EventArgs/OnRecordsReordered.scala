@@ -27,6 +27,6 @@ object OnRecordsReordered {
     
     inline def setReorderedKeys(value: js.Array[String]): Self = StObject.set(x, "reorderedKeys", value.asInstanceOf[js.Any])
     
-    inline def setReorderedKeysVarargs(value: String*): Self = StObject.set(x, "reorderedKeys", js.Array(value :_*))
+    inline def setReorderedKeysVarargs(value: String*): Self = StObject.set(x, "reorderedKeys", js.Array(value*))
   }
 }

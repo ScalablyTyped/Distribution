@@ -9,10 +9,10 @@ trait Environment extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the environment.
     */
-  var arn: js.UndefOr[String] = js.undefined
+  var arn: String
   
   /**
-    * The connection type used for connecting to an Amazon EC2 environment.
+    * The connection type used for connecting to an Amazon EC2 environment. CONNECT_SSH is selected by default.
     */
   var connectionType: js.UndefOr[ConnectionType] = js.undefined
   
@@ -32,6 +32,11 @@ trait Environment extends StObject {
   var lifecycle: js.UndefOr[EnvironmentLifecycle] = js.undefined
   
   /**
+    * Describes the status of Amazon Web Services managed temporary credentials for the Cloud9 environment. Available values are:    ENABLED_ON_CREATE     ENABLED_BY_OWNER     DISABLED_BY_DEFAULT     DISABLED_BY_OWNER     DISABLED_BY_COLLABORATOR     PENDING_REMOVAL_BY_COLLABORATOR     PENDING_REMOVAL_BY_OWNER     FAILED_REMOVAL_BY_COLLABORATOR     ENABLED_BY_OWNER     DISABLED_BY_DEFAULT   
+    */
+  var managedCredentialsStatus: js.UndefOr[ManagedCredentialsStatus] = js.undefined
+  
+  /**
     * The name of the environment.
     */
   var name: js.UndefOr[EnvironmentName] = js.undefined
@@ -39,25 +44,24 @@ trait Environment extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the environment owner.
     */
-  var ownerArn: js.UndefOr[String] = js.undefined
+  var ownerArn: String
   
   /**
     * The type of environment. Valid values include the following:    ec2: An Amazon Elastic Compute Cloud (Amazon EC2) instance connects to the environment.    ssh: Your own server connects to the environment.  
     */
-  var `type`: js.UndefOr[EnvironmentType] = js.undefined
+  var `type`: EnvironmentType
 }
 object Environment {
   
-  inline def apply(): Environment = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(arn: String, ownerArn: String, `type`: EnvironmentType): Environment = {
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], ownerArn = ownerArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Environment]
   }
   
   extension [Self <: Environment](x: Self) {
     
     inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
-    
-    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     inline def setConnectionType(value: ConnectionType): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
     
@@ -75,16 +79,16 @@ object Environment {
     
     inline def setLifecycleUndefined: Self = StObject.set(x, "lifecycle", js.undefined)
     
+    inline def setManagedCredentialsStatus(value: ManagedCredentialsStatus): Self = StObject.set(x, "managedCredentialsStatus", value.asInstanceOf[js.Any])
+    
+    inline def setManagedCredentialsStatusUndefined: Self = StObject.set(x, "managedCredentialsStatus", js.undefined)
+    
     inline def setName(value: EnvironmentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setOwnerArn(value: String): Self = StObject.set(x, "ownerArn", value.asInstanceOf[js.Any])
     
-    inline def setOwnerArnUndefined: Self = StObject.set(x, "ownerArn", js.undefined)
-    
     inline def setType(value: EnvironmentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

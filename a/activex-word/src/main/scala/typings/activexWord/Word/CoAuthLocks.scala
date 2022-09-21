@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoAuthLocks extends StObject {
   
   /** @param Word.WdLockType [Type=1] */
-  def Add(Range: js.Any): CoAuthLock = js.native
-  def Add(Range: js.Any, Type: WdLockType): CoAuthLock = js.native
+  def Add(Range: Any): CoAuthLock = js.native
+  def Add(Range: Any, Type: WdLockType): CoAuthLock = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -19,7 +19,7 @@ trait CoAuthLocks extends StObject {
   
   def Item(Index: Double): CoAuthLock = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def RemoveEphemeralLocks(): Unit = js.native
   

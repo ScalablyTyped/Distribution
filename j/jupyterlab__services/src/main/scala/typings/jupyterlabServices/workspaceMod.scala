@@ -17,7 +17,7 @@ object workspaceMod {
   /**
     * Create a new workspace manager.
     */
-  class WorkspaceManager () extends DataConnector[IWorkspace, IWorkspace, String, String] {
+  open class WorkspaceManager () extends DataConnector[IWorkspace, IWorkspace, String, String] {
     def this(options: IOptions) = this()
     
     /**

@@ -11,7 +11,7 @@ trait InstancesListServerCasResponse extends StObject {
   /** List of server CA certificates for the instance. */
   var certs: js.UndefOr[js.Array[SslCert]] = js.undefined
   
-  /** This is always *sql#instancesListServerCas*. */
+  /** This is always `sql#instancesListServerCas`. */
   var kind: js.UndefOr[String] = js.undefined
 }
 object InstancesListServerCasResponse {
@@ -31,7 +31,7 @@ object InstancesListServerCasResponse {
     
     inline def setCertsUndefined: Self = StObject.set(x, "certs", js.undefined)
     
-    inline def setCertsVarargs(value: SslCert*): Self = StObject.set(x, "certs", js.Array(value :_*))
+    inline def setCertsVarargs(value: SslCert*): Self = StObject.set(x, "certs", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

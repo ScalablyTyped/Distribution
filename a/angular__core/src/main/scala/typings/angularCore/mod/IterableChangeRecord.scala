@@ -16,11 +16,11 @@ trait IterableChangeRecord[V] extends StObject {
   val previousIndex: Double | Null
   
   /** Track by identity as computed by the `TrackByFunction`. */
-  val trackById: js.Any
+  val trackById: Any
 }
 object IterableChangeRecord {
   
-  inline def apply[V](item: V, trackById: js.Any): IterableChangeRecord[V] = {
+  inline def apply[V](item: V, trackById: Any): IterableChangeRecord[V] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], trackById = trackById.asInstanceOf[js.Any], currentIndex = null, previousIndex = null)
     __obj.asInstanceOf[IterableChangeRecord[V]]
   }
@@ -37,6 +37,6 @@ object IterableChangeRecord {
     
     inline def setPreviousIndexNull: Self = StObject.set(x, "previousIndex", null)
     
-    inline def setTrackById(value: js.Any): Self = StObject.set(x, "trackById", value.asInstanceOf[js.Any])
+    inline def setTrackById(value: Any): Self = StObject.set(x, "trackById", value.asInstanceOf[js.Any])
   }
 }

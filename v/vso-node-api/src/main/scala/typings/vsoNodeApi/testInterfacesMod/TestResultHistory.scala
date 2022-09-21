@@ -23,6 +23,6 @@ object TestResultHistory {
     
     inline def setResultsForGroup(value: js.Array[TestResultHistoryDetailsForGroup]): Self = StObject.set(x, "resultsForGroup", value.asInstanceOf[js.Any])
     
-    inline def setResultsForGroupVarargs(value: TestResultHistoryDetailsForGroup*): Self = StObject.set(x, "resultsForGroup", js.Array(value :_*))
+    inline def setResultsForGroupVarargs(value: TestResultHistoryDetailsForGroup*): Self = StObject.set(x, "resultsForGroup", js.Array(value*))
   }
 }

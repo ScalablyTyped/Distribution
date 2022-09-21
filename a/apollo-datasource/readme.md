@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-datasource
 
-Typings are for version 0.7.2
+Typings are for version 3.3.2
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 0.7.2
 | ------------------ | :-------------: |
 | Full name          | apollo-datasource |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 59 |
-| # downloads        | 58154789 |
-| # stars            | 0 |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0410154333333334E7 |
+| # stars            | 12821.0 |
 
 ## Links
 - [Homepage](https://github.com/apollographql/apollo-server#readme)

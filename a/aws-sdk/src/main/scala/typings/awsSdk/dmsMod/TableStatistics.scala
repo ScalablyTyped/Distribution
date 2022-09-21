@@ -24,7 +24,7 @@ trait TableStatistics extends StObject {
   /**
     * The time when the full load operation completed.
     */
-  var FullLoadEndTime: js.UndefOr[TStamp] = js.undefined
+  var FullLoadEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The number of rows that failed to load during the full load operation (valid only for migrations where DynamoDB is the target).
@@ -44,7 +44,7 @@ trait TableStatistics extends StObject {
   /**
     * The time when the full load operation started.
     */
-  var FullLoadStartTime: js.UndefOr[TStamp] = js.undefined
+  var FullLoadStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The number of insert actions performed on a table.
@@ -54,7 +54,7 @@ trait TableStatistics extends StObject {
   /**
     * The last time a table was updated.
     */
-  var LastUpdateTime: js.UndefOr[TStamp] = js.undefined
+  var LastUpdateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The schema name.
@@ -67,7 +67,7 @@ trait TableStatistics extends StObject {
   var TableName: js.UndefOr[String] = js.undefined
   
   /**
-    * The state of the tables described. Valid states: Table does not exist | Before load | Full load | Table completed | Table cancelled | Table error | Table all | Table updates | Table is being reloaded
+    * The state of the tables described. Valid states: Table does not exist | Before load | Full load | Table completed | Table cancelled | Table error | Table is being reloaded
     */
   var TableState: js.UndefOr[String] = js.undefined
   
@@ -122,7 +122,7 @@ object TableStatistics {
     
     inline def setFullLoadCondtnlChkFailedRowsUndefined: Self = StObject.set(x, "FullLoadCondtnlChkFailedRows", js.undefined)
     
-    inline def setFullLoadEndTime(value: TStamp): Self = StObject.set(x, "FullLoadEndTime", value.asInstanceOf[js.Any])
+    inline def setFullLoadEndTime(value: js.Date): Self = StObject.set(x, "FullLoadEndTime", value.asInstanceOf[js.Any])
     
     inline def setFullLoadEndTimeUndefined: Self = StObject.set(x, "FullLoadEndTime", js.undefined)
     
@@ -138,7 +138,7 @@ object TableStatistics {
     
     inline def setFullLoadRowsUndefined: Self = StObject.set(x, "FullLoadRows", js.undefined)
     
-    inline def setFullLoadStartTime(value: TStamp): Self = StObject.set(x, "FullLoadStartTime", value.asInstanceOf[js.Any])
+    inline def setFullLoadStartTime(value: js.Date): Self = StObject.set(x, "FullLoadStartTime", value.asInstanceOf[js.Any])
     
     inline def setFullLoadStartTimeUndefined: Self = StObject.set(x, "FullLoadStartTime", js.undefined)
     
@@ -146,7 +146,7 @@ object TableStatistics {
     
     inline def setInsertsUndefined: Self = StObject.set(x, "Inserts", js.undefined)
     
-    inline def setLastUpdateTime(value: TStamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     

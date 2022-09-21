@@ -4,243 +4,222 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Hls error details
-  */
-/* static member */
-object ErrorDetails {
+@js.native
+sealed trait ErrorDetails extends StObject
+@JSImport("hls.js", "ErrorDetails")
+@js.native
+object ErrorDetails extends StObject {
   
-  @JSImport("hls.js", "ErrorDetails")
-  @js.native
-  val ^ : js.Any = js.native
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[ErrorDetails & String] = js.native
   
-  /**
-    * raised when audio track loading fails because of a network error
-    * data: { type: NETWORK_ERROR, details: Hls.ErrorDetails.AUDIO_TRACK_LOAD_ERROR, fatal: false, url: audio URL, loader: URL loader }
-    */
-  @JSImport("hls.js", "ErrorDetails.AUDIO_TRACK_LOAD_ERROR")
   @js.native
-  def AUDIO_TRACK_LOAD_ERROR: K_AUDIO_TRACK_LOAD_ERROR = js.native
-  inline def AUDIO_TRACK_LOAD_ERROR_=(x: K_AUDIO_TRACK_LOAD_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUDIO_TRACK_LOAD_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait AUDIO_TRACK_LOAD_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "audioTrackLoadError" */ val AUDIO_TRACK_LOAD_ERROR: typings.hlsJs.mod.ErrorDetails.AUDIO_TRACK_LOAD_ERROR & String = js.native
   
-  /**
-    * raised when audio track loading fails because of a timeout
-    * data: { type: NETWORK_ERROR, details: Hls.ErrorDetails.AUDIO_TRACK_LOAD_TIMEOUT, fatal: false, url: audio URL, response: { code: error code, text: error text }, loader: URL loader }
-    */
-  @JSImport("hls.js", "ErrorDetails.AUDIO_TRACK_LOAD_TIMEOUT")
   @js.native
-  def AUDIO_TRACK_LOAD_TIMEOUT: K_AUDIO_TRACK_LOAD_TIMEOUT = js.native
-  inline def AUDIO_TRACK_LOAD_TIMEOUT_=(x: K_AUDIO_TRACK_LOAD_TIMEOUT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUDIO_TRACK_LOAD_TIMEOUT")(x.asInstanceOf[js.Any])
+  sealed trait AUDIO_TRACK_LOAD_TIMEOUT
+    extends StObject
+       with ErrorDetails
+  /* "audioTrackLoadTimeOut" */ val AUDIO_TRACK_LOAD_TIMEOUT: typings.hlsJs.mod.ErrorDetails.AUDIO_TRACK_LOAD_TIMEOUT & String = js.native
   
-  /**
-    *  raised when MediaSource fails to add new sourceBuffer
-    * data: { type : MEDIA_ERROR, details : Hls.ErrorDetails.BUFFER_ADD_CODEC_ERROR, fatal : false, err : error raised by MediaSource, mimeType: mimeType on which the failure happened }
-    */
-  @JSImport("hls.js", "ErrorDetails.BUFFER_ADD_CODEC_ERROR")
   @js.native
-  def BUFFER_ADD_CODEC_ERROR: K_BUFFER_ADD_CODEC_ERROR = js.native
-  inline def BUFFER_ADD_CODEC_ERROR_=(x: K_BUFFER_ADD_CODEC_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_ADD_CODEC_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_ADD_CODEC_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "bufferAddCodecError" */ val BUFFER_ADD_CODEC_ERROR: typings.hlsJs.mod.ErrorDetails.BUFFER_ADD_CODEC_ERROR & String = js.native
   
-  /**
-    * raised when exception is raised during buffer appending
-    * data: { type : MEDIA_ERROR, details : Hls.ErrorDetails.BUFFER_APPENDING_ERROR, fatal : false }
-    */
-  @JSImport("hls.js", "ErrorDetails.BUFFER_APPENDING_ERROR")
   @js.native
-  def BUFFER_APPENDING_ERROR: K_BUFFER_APPENDING_ERROR = js.native
-  inline def BUFFER_APPENDING_ERROR_=(x: K_BUFFER_APPENDING_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_APPENDING_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_APPENDING_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "bufferAppendingError" */ val BUFFER_APPENDING_ERROR: typings.hlsJs.mod.ErrorDetails.BUFFER_APPENDING_ERROR & String = js.native
   
-  /**
-    * raised when exception is raised while calling buffer append
-    * data: { type : MEDIA_ERROR, details : Hls.ErrorDetails.BUFFER_APPEND_ERROR, fatal : true, frag : fragment object }
-    */
-  @JSImport("hls.js", "ErrorDetails.BUFFER_APPEND_ERROR")
   @js.native
-  def BUFFER_APPEND_ERROR: K_BUFFER_APPEND_ERROR = js.native
-  inline def BUFFER_APPEND_ERROR_=(x: K_BUFFER_APPEND_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_APPEND_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_APPEND_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "bufferAppendError" */ val BUFFER_APPEND_ERROR: typings.hlsJs.mod.ErrorDetails.BUFFER_APPEND_ERROR & String = js.native
   
-  /**
-    * raised when no data can be appended anymore in media buffer because it is full.
-    * This error is recovered automatically by performing a smooth level switching that empty buffers (without disrupting the playback) and reducing the max buffer length.
-    * data: { type : MEDIA_ERROR, details : Hls.ErrorDetails.BUFFER_FULL_ERROR, fatal : false }
-    */
-  @JSImport("hls.js", "ErrorDetails.BUFFER_FULL_ERROR")
   @js.native
-  def BUFFER_FULL_ERROR: K_BUFFER_FULL_ERROR = js.native
-  inline def BUFFER_FULL_ERROR_=(x: K_BUFFER_FULL_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_FULL_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_FULL_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "bufferFullError" */ val BUFFER_FULL_ERROR: typings.hlsJs.mod.ErrorDetails.BUFFER_FULL_ERROR & String = js.native
   
-  /**
-    * raised when playback is stuck although currentTime is in a buffered aread
-    * data: { type: MEDIA_ERROR, details: Hls.ErrorDetails.BUFFERED_STALLED_ERROR, fatal: true }
-    */
-  @JSImport("hls.js", "ErrorDetails.BUFFER_NUDGE_ON_STALL")
   @js.native
-  def BUFFER_NUDGE_ON_STALL: K_BUFFER_NUDGE_ON_STALL = js.native
-  inline def BUFFER_NUDGE_ON_STALL_=(x: K_BUFFER_NUDGE_ON_STALL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_NUDGE_ON_STALL")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_INCOMPATIBLE_CODECS_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "bufferIncompatibleCodecsError" */ val BUFFER_INCOMPATIBLE_CODECS_ERROR: typings.hlsJs.mod.ErrorDetails.BUFFER_INCOMPATIBLE_CODECS_ERROR & String = js.native
   
-  /**
-    * raised after hls.js seeks over a buffer hole to unstuck the playback,
-    * data: { type : MEDIA_ERROR, details : Hls.ErrorDetails.BUFFER_SEEK_OVER_HOLE, fatal : false, hole : hole duration }
-    */
-  @JSImport("hls.js", "ErrorDetails.BUFFER_SEEK_OVER_HOLE")
   @js.native
-  def BUFFER_SEEK_OVER_HOLE: K_BUFFER_SEEK_OVER_HOLE = js.native
-  inline def BUFFER_SEEK_OVER_HOLE_=(x: K_BUFFER_SEEK_OVER_HOLE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_SEEK_OVER_HOLE")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_NUDGE_ON_STALL
+    extends StObject
+       with ErrorDetails
+  /* "bufferNudgeOnStall" */ val BUFFER_NUDGE_ON_STALL: typings.hlsJs.mod.ErrorDetails.BUFFER_NUDGE_ON_STALL & String = js.native
   
-  /**
-    * raised when playback is stuck because buffer is running out of data
-    * data: { type : MEDIA_ERROR, details : Hls.ErrorDetails.BUFFER_STALLED_ERROR, fatal : false }
-    */
-  @JSImport("hls.js", "ErrorDetails.BUFFER_STALLED_ERROR")
   @js.native
-  def BUFFER_STALLED_ERROR: K_BUFFER_STALLED_ERROR = js.native
-  inline def BUFFER_STALLED_ERROR_=(x: K_BUFFER_STALLED_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_STALLED_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_SEEK_OVER_HOLE
+    extends StObject
+       with ErrorDetails
+  /* "bufferSeekOverHole" */ val BUFFER_SEEK_OVER_HOLE: typings.hlsJs.mod.ErrorDetails.BUFFER_SEEK_OVER_HOLE & String = js.native
   
-  /**
-    * raised when fragment decryption fails
-    * data: { type: MEDIA_ERROR, details: Hls.ErrorDetails.FRAG_DECRYPT_ERROR, fatal: true, reason: failure reason }
-    */
-  @JSImport("hls.js", "ErrorDetails.FRAG_DECRYPT_ERROR")
   @js.native
-  def FRAG_DECRYPT_ERROR: K_FRAG_DECRYPT_ERROR = js.native
-  inline def FRAG_DECRYPT_ERROR_=(x: K_FRAG_DECRYPT_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_DECRYPT_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_STALLED_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "bufferStalledError" */ val BUFFER_STALLED_ERROR: typings.hlsJs.mod.ErrorDetails.BUFFER_STALLED_ERROR & String = js.native
   
-  /**
-    * raised when fragment loading fails because of a network error
-    * data: { type : NETWORK_ERROR, details : Hls.ErrorDetails.FRAG_LOAD_ERROR, fatal : true or false, frag : fragment object, response : { code: error code, text: error text } }
-    */
-  @JSImport("hls.js", "ErrorDetails.FRAG_LOAD_ERROR")
   @js.native
-  def FRAG_LOAD_ERROR: K_FRAG_LOAD_ERROR = js.native
-  inline def FRAG_LOAD_ERROR_=(x: K_FRAG_LOAD_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_LOAD_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait FRAG_DECRYPT_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "fragDecryptError" */ val FRAG_DECRYPT_ERROR: typings.hlsJs.mod.ErrorDetails.FRAG_DECRYPT_ERROR & String = js.native
   
-  /**
-    * raised when fragment loading fails because of a timeout
-    * data: { type : NETWORK_ERROR, details : Hls.ErrorDetails.FRAG_LOAD_TIMEOUT, fatal : true or false, frag : fragment object }
-    */
-  @JSImport("hls.js", "ErrorDetails.FRAG_LOAD_TIMEOUT")
   @js.native
-  def FRAG_LOAD_TIMEOUT: K_FRAG_LOAD_TIMEOUT = js.native
-  inline def FRAG_LOAD_TIMEOUT_=(x: K_FRAG_LOAD_TIMEOUT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_LOAD_TIMEOUT")(x.asInstanceOf[js.Any])
+  sealed trait FRAG_LOAD_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "fragLoadError" */ val FRAG_LOAD_ERROR: typings.hlsJs.mod.ErrorDetails.FRAG_LOAD_ERROR & String = js.native
   
-  /**
-    * raised upon detection of same fragment being requested in loop
-    * data: { type : NETWORK_ERROR, details : Hls.ErrorDetails.FRAG_LOOP_LOADING_ERROR, fatal : true or false, frag : fragment object }
-    */
-  @JSImport("hls.js", "ErrorDetails.FRAG_LOOP_LOADING_ERROR")
   @js.native
-  def FRAG_LOOP_LOADING_ERROR: K_FRAG_LOOP_LOADING_ERROR = js.native
-  inline def FRAG_LOOP_LOADING_ERROR_=(x: K_FRAG_LOOP_LOADING_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_LOOP_LOADING_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait FRAG_LOAD_TIMEOUT
+    extends StObject
+       with ErrorDetails
+  /* "fragLoadTimeOut" */ val FRAG_LOAD_TIMEOUT: typings.hlsJs.mod.ErrorDetails.FRAG_LOAD_TIMEOUT & String = js.native
   
-  /**
-    * raised when fragment parsing fails
-    * data: { type : NETWORK_ERROR, details : Hls.ErrorDetails.FRAG_PARSING_ERROR, fatal : true or false, reason : failure reason }
-    */
-  @JSImport("hls.js", "ErrorDetails.FRAG_PARSING_ERROR")
   @js.native
-  def FRAG_PARSING_ERROR: K_FRAG_PARSING_ERROR = js.native
-  inline def FRAG_PARSING_ERROR_=(x: K_FRAG_PARSING_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_PARSING_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait FRAG_PARSING_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "fragParsingError" */ val FRAG_PARSING_ERROR: typings.hlsJs.mod.ErrorDetails.FRAG_PARSING_ERROR & String = js.native
   
-  /**
-    * raised when an exception occurs in an internal hls.js event handler
-    * data: { type: OTHER_ERROR, details: Hls.ErrorDetails.INTERNAL_EXCEPTION, fatal: true or false, event: event object or string, error: { message: error message } }
-    */
-  @JSImport("hls.js", "ErrorDetails.INTERNAL_EXCEPTION")
   @js.native
-  def INTERNAL_EXCEPTION: K_INTERNAL_EXCEPTION = js.native
-  inline def INTERNAL_EXCEPTION_=(x: K_INTERNAL_EXCEPTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERNAL_EXCEPTION")(x.asInstanceOf[js.Any])
+  sealed trait INTERNAL_ABORTED
+    extends StObject
+       with ErrorDetails
+  /* "aborted" */ val INTERNAL_ABORTED: typings.hlsJs.mod.ErrorDetails.INTERNAL_ABORTED & String = js.native
   
-  /**
-    * raised when decrypt key loading fails because of a network error
-    * data: { type: NETWORK_ERROR, details: Hls.ErrorDetails.KEY_LOAD_ERROR, fatal: false, frag: fragment object }
-    */
-  @JSImport("hls.js", "ErrorDetails.KEY_LOAD_ERROR")
   @js.native
-  def KEY_LOAD_ERROR: K_KEY_LOAD_ERROR = js.native
-  inline def KEY_LOAD_ERROR_=(x: K_KEY_LOAD_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KEY_LOAD_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait INTERNAL_EXCEPTION
+    extends StObject
+       with ErrorDetails
+  /* "internalException" */ val INTERNAL_EXCEPTION: typings.hlsJs.mod.ErrorDetails.INTERNAL_EXCEPTION & String = js.native
   
-  /**
-    * raised when decrypt key loading fails because of timeout
-    * data: { type: NETWORK_EROR, details: Hls.ErrorDetails.KEY_LOAD_TIMEOUT, fatal: true, frag: fragment object }
-    */
-  @JSImport("hls.js", "ErrorDetails.KEY_LOAD_TIMEOUT")
   @js.native
-  def KEY_LOAD_TIMEOUT: K_KEY_LOAD_TIMEOUT = js.native
-  inline def KEY_LOAD_TIMEOUT_=(x: K_KEY_LOAD_TIMEOUT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KEY_LOAD_TIMEOUT")(x.asInstanceOf[js.Any])
+  sealed trait KEY_LOAD_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "keyLoadError" */ val KEY_LOAD_ERROR: typings.hlsJs.mod.ErrorDetails.KEY_LOAD_ERROR & String = js.native
   
-  /**
-    * raised when level loading fails because of a network error
-    * data: { type : NETWORK_ERROR, details : Hls.ErrorDetails.LEVEL_LOAD_ERROR, fatal : true, url : level URL, response : { code: error code, text: error text }, loader : URL loader }
-    */
-  @JSImport("hls.js", "ErrorDetails.LEVEL_LOAD_ERROR")
   @js.native
-  def LEVEL_LOAD_ERROR: K_LEVEL_LOAD_ERROR = js.native
-  inline def LEVEL_LOAD_ERROR_=(x: K_LEVEL_LOAD_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEVEL_LOAD_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait KEY_LOAD_TIMEOUT
+    extends StObject
+       with ErrorDetails
+  /* "keyLoadTimeOut" */ val KEY_LOAD_TIMEOUT: typings.hlsJs.mod.ErrorDetails.KEY_LOAD_TIMEOUT & String = js.native
   
-  /**
-    * raised when level loading fails because of a timeout
-    * data: { type : NETWORK_ERROR, details : Hls.ErrorDetails.LEVEL_LOAD_TIMEOUT, fatal : true, url : level URL, loader : URL loader }
-    */
-  @JSImport("hls.js", "ErrorDetails.LEVEL_LOAD_TIMEOUT")
   @js.native
-  def LEVEL_LOAD_TIMEOUT: K_LEVEL_LOAD_TIMEOUT = js.native
-  inline def LEVEL_LOAD_TIMEOUT_=(x: K_LEVEL_LOAD_TIMEOUT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEVEL_LOAD_TIMEOUT")(x.asInstanceOf[js.Any])
+  sealed trait KEY_SYSTEM_LICENSE_REQUEST_FAILED
+    extends StObject
+       with ErrorDetails
+  /* "keySystemLicenseRequestFailed" */ val KEY_SYSTEM_LICENSE_REQUEST_FAILED: typings.hlsJs.mod.ErrorDetails.KEY_SYSTEM_LICENSE_REQUEST_FAILED & String = js.native
   
-  // OTHER_ERROR //
-  /**
-    * raised when level switching fails
-    * data: { type : OTHER_ERROR, details : Hls.ErrorDetails.LEVEL_SWITCH_ERROR, fatal : false, level : failed level index, reason : failure reason }
-    */
-  @JSImport("hls.js", "ErrorDetails.LEVEL_SWITCH_ERROR")
   @js.native
-  def LEVEL_SWITCH_ERROR: K_LEVEL_SWITCH_ERROR = js.native
-  inline def LEVEL_SWITCH_ERROR_=(x: K_LEVEL_SWITCH_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEVEL_SWITCH_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait KEY_SYSTEM_NO_ACCESS
+    extends StObject
+       with ErrorDetails
+  /* "keySystemNoAccess" */ val KEY_SYSTEM_NO_ACCESS: typings.hlsJs.mod.ErrorDetails.KEY_SYSTEM_NO_ACCESS & String = js.native
   
-  // MEDIA_ERRORS //
-  /**
-    * raised when manifest only contains quality level with codecs incompatible with MediaSource Engine.
-    * data: { type : MEDIA_ERROR, details : Hls.ErrorDetails.MANIFEST_INCOMPATIBLE_CODECS_ERROR, fatal : true, url : manifest URL }
-    */
-  @JSImport("hls.js", "ErrorDetails.MANIFEST_INCOMPATIBLE_CODECS_ERROR")
   @js.native
-  def MANIFEST_INCOMPATIBLE_CODECS_ERROR: K_MANIFEST_INCOMPATIBLE_CODECS_ERROR = js.native
-  inline def MANIFEST_INCOMPATIBLE_CODECS_ERROR_=(x: K_MANIFEST_INCOMPATIBLE_CODECS_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MANIFEST_INCOMPATIBLE_CODECS_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait KEY_SYSTEM_NO_INIT_DATA
+    extends StObject
+       with ErrorDetails
+  /* "keySystemNoInitData" */ val KEY_SYSTEM_NO_INIT_DATA: typings.hlsJs.mod.ErrorDetails.KEY_SYSTEM_NO_INIT_DATA & String = js.native
   
-  // NETWORK_ERRORS //
-  /**
-    * raised when manifest loading fails because of a network error
-    * data: { type : NETWORK_ERROR, details : Hls.ErrorDetails.MANIFEST_LOAD_ERROR, fatal : true, url : manifest URL, response : { code: error code, text: error text }, loader : URL loader }
-    */
-  @JSImport("hls.js", "ErrorDetails.MANIFEST_LOAD_ERROR")
   @js.native
-  def MANIFEST_LOAD_ERROR: K_MANIFEST_LOAD_ERROR = js.native
-  inline def MANIFEST_LOAD_ERROR_=(x: K_MANIFEST_LOAD_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MANIFEST_LOAD_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait KEY_SYSTEM_NO_KEYS
+    extends StObject
+       with ErrorDetails
+  /* "keySystemNoKeys" */ val KEY_SYSTEM_NO_KEYS: typings.hlsJs.mod.ErrorDetails.KEY_SYSTEM_NO_KEYS & String = js.native
   
-  /**
-    * raised when manifest loading fails because of a timeout
-    * data: { type : NETWORK_ERROR, details : Hls.ErrorDetails.MANIFEST_LOAD_TIMEOUT, fatal : true, url : manifest URL, loader : URL loader }
-    */
-  @JSImport("hls.js", "ErrorDetails.MANIFEST_LOAD_TIMEOUT")
   @js.native
-  def MANIFEST_LOAD_TIMEOUT: K_MANIFEST_LOAD_TIMEOUT = js.native
-  inline def MANIFEST_LOAD_TIMEOUT_=(x: K_MANIFEST_LOAD_TIMEOUT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MANIFEST_LOAD_TIMEOUT")(x.asInstanceOf[js.Any])
+  sealed trait KEY_SYSTEM_NO_SESSION
+    extends StObject
+       with ErrorDetails
+  /* "keySystemNoSession" */ val KEY_SYSTEM_NO_SESSION: typings.hlsJs.mod.ErrorDetails.KEY_SYSTEM_NO_SESSION & String = js.native
   
-  /**
-    * raised when manifest parsing failed to find proper content
-    * data: { type : NETWORK_ERROR, details : Hls.ErrorDetails.MANIFEST_PARSING_ERROR, fatal : true, url : manifest URL, reason : parsing error reason }
-    */
-  @JSImport("hls.js", "ErrorDetails.MANIFEST_PARSING_ERROR")
   @js.native
-  def MANIFEST_PARSING_ERROR: K_MANIFEST_PARSING_ERROR = js.native
-  inline def MANIFEST_PARSING_ERROR_=(x: K_MANIFEST_PARSING_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MANIFEST_PARSING_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait LEVEL_EMPTY_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "levelEmptyError" */ val LEVEL_EMPTY_ERROR: typings.hlsJs.mod.ErrorDetails.LEVEL_EMPTY_ERROR & String = js.native
   
-  // MUX_ERROR //
-  /**
-    * raised when memory allocation fails during remuxing
-    * data: { type: MUX_ERROR, details: Hls.ErrorDetails.REMUX_ALLOC_ERROR, fatal: false, bytes: mdat size, reason: failure reason }
-    */
-  @JSImport("hls.js", "ErrorDetails.REMUX_ALLOC_ERROR")
   @js.native
-  def REMUX_ALLOC_ERROR: K_REMUX_ALLOC_ERROR = js.native
-  inline def REMUX_ALLOC_ERROR_=(x: K_REMUX_ALLOC_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REMUX_ALLOC_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait LEVEL_LOAD_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "levelLoadError" */ val LEVEL_LOAD_ERROR: typings.hlsJs.mod.ErrorDetails.LEVEL_LOAD_ERROR & String = js.native
+  
+  @js.native
+  sealed trait LEVEL_LOAD_TIMEOUT
+    extends StObject
+       with ErrorDetails
+  /* "levelLoadTimeOut" */ val LEVEL_LOAD_TIMEOUT: typings.hlsJs.mod.ErrorDetails.LEVEL_LOAD_TIMEOUT & String = js.native
+  
+  @js.native
+  sealed trait LEVEL_SWITCH_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "levelSwitchError" */ val LEVEL_SWITCH_ERROR: typings.hlsJs.mod.ErrorDetails.LEVEL_SWITCH_ERROR & String = js.native
+  
+  @js.native
+  sealed trait MANIFEST_INCOMPATIBLE_CODECS_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "manifestIncompatibleCodecsError" */ val MANIFEST_INCOMPATIBLE_CODECS_ERROR: typings.hlsJs.mod.ErrorDetails.MANIFEST_INCOMPATIBLE_CODECS_ERROR & String = js.native
+  
+  @js.native
+  sealed trait MANIFEST_LOAD_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "manifestLoadError" */ val MANIFEST_LOAD_ERROR: typings.hlsJs.mod.ErrorDetails.MANIFEST_LOAD_ERROR & String = js.native
+  
+  @js.native
+  sealed trait MANIFEST_LOAD_TIMEOUT
+    extends StObject
+       with ErrorDetails
+  /* "manifestLoadTimeOut" */ val MANIFEST_LOAD_TIMEOUT: typings.hlsJs.mod.ErrorDetails.MANIFEST_LOAD_TIMEOUT & String = js.native
+  
+  @js.native
+  sealed trait MANIFEST_PARSING_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "manifestParsingError" */ val MANIFEST_PARSING_ERROR: typings.hlsJs.mod.ErrorDetails.MANIFEST_PARSING_ERROR & String = js.native
+  
+  @js.native
+  sealed trait REMUX_ALLOC_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "remuxAllocError" */ val REMUX_ALLOC_ERROR: typings.hlsJs.mod.ErrorDetails.REMUX_ALLOC_ERROR & String = js.native
+  
+  @js.native
+  sealed trait SUBTITLE_LOAD_ERROR
+    extends StObject
+       with ErrorDetails
+  /* "subtitleTrackLoadError" */ val SUBTITLE_LOAD_ERROR: typings.hlsJs.mod.ErrorDetails.SUBTITLE_LOAD_ERROR & String = js.native
+  
+  @js.native
+  sealed trait SUBTITLE_TRACK_LOAD_TIMEOUT
+    extends StObject
+       with ErrorDetails
+  /* "subtitleTrackLoadTimeOut" */ val SUBTITLE_TRACK_LOAD_TIMEOUT: typings.hlsJs.mod.ErrorDetails.SUBTITLE_TRACK_LOAD_TIMEOUT & String = js.native
+  
+  @js.native
+  sealed trait UNKNOWN
+    extends StObject
+       with ErrorDetails
+  /* "unknown" */ val UNKNOWN: typings.hlsJs.mod.ErrorDetails.UNKNOWN & String = js.native
 }

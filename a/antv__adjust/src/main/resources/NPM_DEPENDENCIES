@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@antv/adjust" : "0.2.3"
+      "@antv/adjust" : "0.2.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@antv/adjust" : "0.2.3"
+      "@antv/adjust" : "0.2.5"
     }
   ],
   "compile-devDependencies" : [

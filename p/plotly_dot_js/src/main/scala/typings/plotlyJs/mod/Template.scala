@@ -1,14 +1,14 @@
 package typings.plotlyJs.mod
 
 import typings.plotlyJs.anon.PartialLayout
-import typings.plotlyJs.anon.typeinPlotTypePartialPlot
+import typings.plotlyJs.anon.typeinPlotTypeArrayPartia
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Template extends StObject {
   
-  var data: js.UndefOr[typeinPlotTypePartialPlot] = js.undefined
+  var data: js.UndefOr[typeinPlotTypeArrayPartia] = js.undefined
   
   var layout: js.UndefOr[PartialLayout] = js.undefined
 }
@@ -21,7 +21,7 @@ object Template {
   
   extension [Self <: Template](x: Self) {
     
-    inline def setData(value: typeinPlotTypePartialPlot): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: typeinPlotTypeArrayPartia): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

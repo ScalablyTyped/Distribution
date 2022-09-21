@@ -9,10 +9,10 @@ An NPM mirror of mbostock's box.js.
 | ------------------ | :-------------: |
 | Full name          | d3-box |
 | Keywords           | d3, box, whisker, plot |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 667 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 196.66666666666666 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/JacksonGariety/d3-box#readme)

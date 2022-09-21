@@ -10,10 +10,10 @@ Check if the given value is an Array
 | ------------------ | :-------------: |
 | Full name          | is-array |
 | Keywords           | isArray, es5, array |
-| # releases         | 0 |
-| # dependents       | 77 |
-| # downloads        | 3479938 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 325619.6666666667 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/retrofox/is-array)

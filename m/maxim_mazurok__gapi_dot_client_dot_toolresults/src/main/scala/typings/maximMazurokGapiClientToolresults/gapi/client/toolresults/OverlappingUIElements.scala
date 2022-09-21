@@ -25,7 +25,7 @@ object OverlappingUIElements {
     
     inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    inline def setResourceNameVarargs(value: String*): Self = StObject.set(x, "resourceName", js.Array(value :_*))
+    inline def setResourceNameVarargs(value: String*): Self = StObject.set(x, "resourceName", js.Array(value*))
     
     inline def setScreenId(value: String): Self = StObject.set(x, "screenId", value.asInstanceOf[js.Any])
     

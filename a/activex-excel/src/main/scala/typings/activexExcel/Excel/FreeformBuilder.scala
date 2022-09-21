@@ -33,5 +33,5 @@ trait FreeformBuilder extends StObject {
   /* private */ @JSName("Excel.FreeformBuilder_typekey")
   var ExcelDotFreeformBuilder_typekey: FreeformBuilder = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

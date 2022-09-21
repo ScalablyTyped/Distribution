@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Entities extends StObject {
   
-  def apply(Index: js.Any): Entity = js.native
+  def apply(Index: Any): Entity = js.native
   
   val Count: Double = js.native
   
   def IsMemberSafe(dispid: Double): Boolean = js.native
   
-  def Item(Index: js.Any): Entity = js.native
+  def Item(Index: Any): Entity = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

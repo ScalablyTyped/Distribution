@@ -10,8 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait IToolbarItem extends StObject {
   
+  /**
+    * Item name
+    */
   var name: String
   
+  /**
+    * Toolbar widget
+    */
   var widget: Widget
 }
 object IToolbarItem {

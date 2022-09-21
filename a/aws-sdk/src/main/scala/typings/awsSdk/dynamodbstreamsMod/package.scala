@@ -1,23 +1,25 @@
 package typings.awsSdk.dynamodbstreamsMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AttributeMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbstreamsMod.AttributeValue]
+type AttributeMap = StringDictionary[AttributeValue]
 
 type AttributeName = java.lang.String
 
-type BinaryAttributeValue = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.dynamodbstreamsMod.Blob | java.lang.String
+type BinaryAttributeValue = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
-type BinarySetAttributeValue = js.Array[typings.awsSdk.dynamodbstreamsMod.BinaryAttributeValue]
+type BinarySetAttributeValue = js.Array[BinaryAttributeValue]
 
-type BooleanAttributeValue = scala.Boolean
+type BooleanAttributeValue = Boolean
 
-type Date = typings.std.Date
+type Date = js.Date
 
-type KeySchema = js.Array[typings.awsSdk.dynamodbstreamsMod.KeySchemaElement]
+type KeySchema = js.Array[KeySchemaElement]
 
 type KeySchemaAttributeName = java.lang.String
 
@@ -26,17 +28,17 @@ type KeySchemaAttributeName = java.lang.String
   - typings.awsSdk.awsSdkStrings.RANGE
   - java.lang.String
 */
-type KeyType = typings.awsSdk.dynamodbstreamsMod._KeyType | java.lang.String
+type KeyType = _KeyType | java.lang.String
 
-type ListAttributeValue = js.Array[typings.awsSdk.dynamodbstreamsMod.AttributeValue]
+type ListAttributeValue = js.Array[AttributeValue]
 
-type MapAttributeValue = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.dynamodbstreamsMod.AttributeValue]
+type MapAttributeValue = StringDictionary[AttributeValue]
 
-type NullAttributeValue = scala.Boolean
+type NullAttributeValue = Boolean
 
 type NumberAttributeValue = java.lang.String
 
-type NumberSetAttributeValue = js.Array[typings.awsSdk.dynamodbstreamsMod.NumberAttributeValue]
+type NumberSetAttributeValue = js.Array[NumberAttributeValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INSERT
@@ -44,17 +46,17 @@ type NumberSetAttributeValue = js.Array[typings.awsSdk.dynamodbstreamsMod.Number
   - typings.awsSdk.awsSdkStrings.REMOVE
   - java.lang.String
 */
-type OperationType = typings.awsSdk.dynamodbstreamsMod._OperationType | java.lang.String
+type OperationType = _OperationType | java.lang.String
 
-type PositiveIntegerObject = scala.Double
+type PositiveIntegerObject = Double
 
-type PositiveLongObject = scala.Double
+type PositiveLongObject = Double
 
-type RecordList = js.Array[typings.awsSdk.dynamodbstreamsMod.Record]
+type RecordList = js.Array[Record]
 
 type SequenceNumber = java.lang.String
 
-type ShardDescriptionList = js.Array[typings.awsSdk.dynamodbstreamsMod.Shard]
+type ShardDescriptionList = js.Array[Shard]
 
 type ShardId = java.lang.String
 
@@ -67,11 +69,11 @@ type ShardIterator = java.lang.String
   - typings.awsSdk.awsSdkStrings.AFTER_SEQUENCE_NUMBER
   - java.lang.String
 */
-type ShardIteratorType = typings.awsSdk.dynamodbstreamsMod._ShardIteratorType | java.lang.String
+type ShardIteratorType = _ShardIteratorType | java.lang.String
 
 type StreamArn = java.lang.String
 
-type StreamList = js.Array[typings.awsSdk.dynamodbstreamsMod.Stream]
+type StreamList = js.Array[Stream]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLING
@@ -80,7 +82,7 @@ type StreamList = js.Array[typings.awsSdk.dynamodbstreamsMod.Stream]
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type StreamStatus = typings.awsSdk.dynamodbstreamsMod._StreamStatus | java.lang.String
+type StreamStatus = _StreamStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NEW_IMAGE
@@ -89,13 +91,13 @@ type StreamStatus = typings.awsSdk.dynamodbstreamsMod._StreamStatus | java.lang.
   - typings.awsSdk.awsSdkStrings.KEYS_ONLY
   - java.lang.String
 */
-type StreamViewType = typings.awsSdk.dynamodbstreamsMod._StreamViewType | java.lang.String
+type StreamViewType = _StreamViewType | java.lang.String
 
 type String = java.lang.String
 
 type StringAttributeValue = java.lang.String
 
-type StringSetAttributeValue = js.Array[typings.awsSdk.dynamodbstreamsMod.StringAttributeValue]
+type StringSetAttributeValue = js.Array[StringAttributeValue]
 
 type TableName = java.lang.String
 
@@ -104,4 +106,4 @@ type TableName = java.lang.String
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.dynamodbstreamsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

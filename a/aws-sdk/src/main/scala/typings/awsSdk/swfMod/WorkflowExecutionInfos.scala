@@ -27,7 +27,7 @@ object WorkflowExecutionInfos {
     
     inline def setExecutionInfos(value: WorkflowExecutionInfoList): Self = StObject.set(x, "executionInfos", value.asInstanceOf[js.Any])
     
-    inline def setExecutionInfosVarargs(value: WorkflowExecutionInfo*): Self = StObject.set(x, "executionInfos", js.Array(value :_*))
+    inline def setExecutionInfosVarargs(value: WorkflowExecutionInfo*): Self = StObject.set(x, "executionInfos", js.Array(value*))
     
     inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

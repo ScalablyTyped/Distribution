@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructor
   * @param numWorkers The number of workers for async operations. Specify `0` to disable web workers and run synchronously in the current context.
   */
-class DracoCompression ()
+open class DracoCompression ()
   extends StObject
      with typings.babylonjs.BABYLON.DracoCompression {
   def this(numWorkers: Double) = this()
@@ -50,11 +50,11 @@ object DracoCompression {
   
   @JSGlobal("BABYLON.DracoCompression.GetDefaultNumWorkers")
   @js.native
-  def GetDefaultNumWorkers: js.Any = js.native
-  inline def GetDefaultNumWorkers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDefaultNumWorkers")(x.asInstanceOf[js.Any])
+  def GetDefaultNumWorkers: Any = js.native
+  inline def GetDefaultNumWorkers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDefaultNumWorkers")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.DracoCompression._Default")
   @js.native
-  def _Default: js.Any = js.native
-  inline def _Default_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Default")(x.asInstanceOf[js.Any])
+  def _Default: Any = js.native
+  inline def _Default_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Default")(x.asInstanceOf[js.Any])
 }

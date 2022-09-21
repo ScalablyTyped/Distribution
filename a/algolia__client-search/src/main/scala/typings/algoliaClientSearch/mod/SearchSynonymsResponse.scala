@@ -27,7 +27,7 @@ object SearchSynonymsResponse {
     
     inline def setHits(value: js.Array[Synonym]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
-    inline def setHitsVarargs(value: Synonym*): Self = StObject.set(x, "hits", js.Array(value :_*))
+    inline def setHitsVarargs(value: Synonym*): Self = StObject.set(x, "hits", js.Array(value*))
     
     inline def setNbHits(value: Double): Self = StObject.set(x, "nbHits", value.asInstanceOf[js.Any])
   }

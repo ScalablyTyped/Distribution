@@ -1,9 +1,6 @@
 package typings.vinylFs
 
 import typings.globStream.mod.Options
-import typings.node.NodeJS.ReadWriteStream
-import typings.std.Date
-import typings.std.Error
 import typings.vinyl.mod.File
 import typings.vinylFs.anon.Cwd
 import typings.vinylFs.anon.DirMode
@@ -18,19 +15,19 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def dest(folder: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("dest")(folder.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  inline def dest(folder: String, opt: DestOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("dest")(folder.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
-  inline def dest(getFolderPath: js.Function1[/* file */ File, String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("dest")(getFolderPath.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def dest(folder: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dest")(folder.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def dest(folder: String, opt: DestOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dest")(folder.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def dest(getFolderPath: js.Function1[/* file */ File, String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dest")(getFolderPath.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def src(globs: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  inline def src(globs: String, opt: SrcOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
-  inline def src(globs: js.Array[String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  inline def src(globs: js.Array[String], opt: SrcOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def src(globs: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def src(globs: String, opt: SrcOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def src(globs: js.Array[String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def src(globs: js.Array[String], opt: SrcOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("src")(globs.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def symlink(folder: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(folder.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  inline def symlink(folder: String, opts: Cwd): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(folder.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
-  inline def symlink(getFolderPath: js.Function1[/* File */ File, String]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(getFolderPath.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  inline def symlink(getFolderPath: js.Function1[/* File */ File, String], opts: DirMode): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(getFolderPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def symlink(folder: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(folder.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def symlink(folder: String, opts: Cwd): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(folder.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def symlink(getFolderPath: js.Function1[/* File */ File, String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(getFolderPath.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def symlink(getFolderPath: js.Function1[/* File */ File, String], opts: DirMode): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(getFolderPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait DestOptions extends StObject {
     
@@ -166,7 +163,7 @@ object mod {
     var resolveSymlinks: js.UndefOr[Boolean] = js.undefined
     
     /** Only find files that have been modified since the time specified */
-    var since: js.UndefOr[Date | Double] = js.undefined
+    var since: js.UndefOr[js.Date | Double] = js.undefined
     
     /**
       * Setting this to true will enable sourcemaps.
@@ -221,7 +218,7 @@ object mod {
       
       inline def setResolveSymlinksUndefined: Self = StObject.set(x, "resolveSymlinks", js.undefined)
       
-      inline def setSince(value: Date | Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+      inline def setSince(value: js.Date | Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
       
       inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
       
@@ -242,8 +239,8 @@ object mod {
       @js.native
       trait WritableStream extends StObject {
         
-        def write(buffer: js.Any): Boolean = js.native
-        def write(buffer: js.Any, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
+        def write(buffer: Any): Boolean = js.native
+        def write(buffer: Any, cb: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Boolean = js.native
       }
     }
   }

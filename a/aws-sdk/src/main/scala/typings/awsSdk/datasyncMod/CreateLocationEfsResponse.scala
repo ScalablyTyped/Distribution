@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateLocationEfsResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the Amazon EFS file system location that is created.
+    * The Amazon Resource Name (ARN) of the Amazon EFS file system location that you create.
     */
   var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.undefined
 }

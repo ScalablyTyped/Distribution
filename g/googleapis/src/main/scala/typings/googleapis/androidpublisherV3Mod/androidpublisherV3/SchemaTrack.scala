@@ -7,15 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaTrack extends StObject {
   
   /**
-    * A list of all active releases in this track during a read request. On an
-    * update request, it represents desired changes.
+    * In a read request, represents all active releases in the track. In an update request, represents desired changes.
     */
   var releases: js.UndefOr[js.Array[SchemaTrackRelease]] = js.undefined
   
   /**
-    * Identifier for this track.
+    * Identifier of the track.
     */
-  var track: js.UndefOr[String] = js.undefined
+  var track: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTrack {
   
@@ -30,9 +29,11 @@ object SchemaTrack {
     
     inline def setReleasesUndefined: Self = StObject.set(x, "releases", js.undefined)
     
-    inline def setReleasesVarargs(value: SchemaTrackRelease*): Self = StObject.set(x, "releases", js.Array(value :_*))
+    inline def setReleasesVarargs(value: SchemaTrackRelease*): Self = StObject.set(x, "releases", js.Array(value*))
     
     inline def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    
+    inline def setTrackNull: Self = StObject.set(x, "track", null)
     
     inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
   }

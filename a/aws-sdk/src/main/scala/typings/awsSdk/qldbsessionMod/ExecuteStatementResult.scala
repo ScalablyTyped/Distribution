@@ -7,9 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExecuteStatementResult extends StObject {
   
   /**
+    * Contains metrics about the number of I/O requests that were consumed.
+    */
+  var ConsumedIOs: js.UndefOr[IOUsage] = js.undefined
+  
+  /**
     * Contains the details of the first fetched page.
     */
   var FirstPage: js.UndefOr[Page] = js.undefined
+  
+  /**
+    * Contains server-side performance information for the command.
+    */
+  var TimingInformation: js.UndefOr[typings.awsSdk.qldbsessionMod.TimingInformation] = js.undefined
 }
 object ExecuteStatementResult {
   
@@ -20,8 +30,16 @@ object ExecuteStatementResult {
   
   extension [Self <: ExecuteStatementResult](x: Self) {
     
+    inline def setConsumedIOs(value: IOUsage): Self = StObject.set(x, "ConsumedIOs", value.asInstanceOf[js.Any])
+    
+    inline def setConsumedIOsUndefined: Self = StObject.set(x, "ConsumedIOs", js.undefined)
+    
     inline def setFirstPage(value: Page): Self = StObject.set(x, "FirstPage", value.asInstanceOf[js.Any])
     
     inline def setFirstPageUndefined: Self = StObject.set(x, "FirstPage", js.undefined)
+    
+    inline def setTimingInformation(value: TimingInformation): Self = StObject.set(x, "TimingInformation", value.asInstanceOf[js.Any])
+    
+    inline def setTimingInformationUndefined: Self = StObject.set(x, "TimingInformation", js.undefined)
   }
 }

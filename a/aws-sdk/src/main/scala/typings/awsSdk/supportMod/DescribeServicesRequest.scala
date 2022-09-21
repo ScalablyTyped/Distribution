@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeServicesRequest extends StObject {
   
   /**
-    * The ISO 639-1 code for the language in which AWS provides support. AWS Support currently supports English ("en") and Japanese ("ja"). Language parameters must be passed explicitly for operations that take them.
+    * The ISO 639-1 code for the language in which Amazon Web Services provides support. Amazon Web Services Support currently supports English ("en") and Japanese ("ja"). Language parameters must be passed explicitly for operations that take them.
     */
   var language: js.UndefOr[Language] = js.undefined
   
   /**
-    * A JSON-formatted list of service codes available for AWS services.
+    * A JSON-formatted list of service codes available for Amazon Web Services services.
     */
   var serviceCodeList: js.UndefOr[ServiceCodeList] = js.undefined
 }
@@ -33,6 +33,6 @@ object DescribeServicesRequest {
     
     inline def setServiceCodeListUndefined: Self = StObject.set(x, "serviceCodeList", js.undefined)
     
-    inline def setServiceCodeListVarargs(value: ServiceCode*): Self = StObject.set(x, "serviceCodeList", js.Array(value :_*))
+    inline def setServiceCodeListVarargs(value: ServiceCode*): Self = StObject.set(x, "serviceCodeList", js.Array(value*))
   }
 }

@@ -1,6 +1,5 @@
 package typings.xmljs
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +9,13 @@ object mod {
   /*~ Write your module's methods and properties in this class */
   @JSImport("xmljs", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with XmlParser {
     def this(oPar: ParserParameters) = this()
     
     /* CompleteClass */
-    var errors: js.Array[Error] = js.native
+    var errors: js.Array[js.Error] = js.native
     
     /**
       * Parses a xml string
@@ -25,7 +24,7 @@ object mod {
       * @returns whenever or not there where any errors
       */
     /* CompleteClass */
-    override def parseString(xml: String, cb: js.Function2[/* err */ Null | js.Array[Error], /* xmlNode */ Node, Unit]): Boolean = js.native
+    override def parseString(xml: String, cb: js.Function2[/* err */ Null | js.Array[js.Error], /* xmlNode */ Node, Unit]): Boolean = js.native
   }
   @JSImport("xmljs", JSImport.Namespace)
   @js.native
@@ -222,7 +221,7 @@ object mod {
   /*~ Write your module's methods and properties in this class */
   trait XmlParser extends StObject {
     
-    var errors: js.Array[Error]
+    var errors: js.Array[js.Error]
     
     /**
       * Parses a xml string
@@ -230,13 +229,13 @@ object mod {
       * @param cb Callback function with error and the result (an Node)
       * @returns whenever or not there where any errors
       */
-    def parseString(xml: String, cb: js.Function2[/* err */ Null | js.Array[Error], /* xmlNode */ Node, Unit]): Boolean
+    def parseString(xml: String, cb: js.Function2[/* err */ Null | js.Array[js.Error], /* xmlNode */ Node, Unit]): Boolean
   }
   object XmlParser {
     
     inline def apply(
-      errors: js.Array[Error],
-      parseString: (String, js.Function2[/* err */ Null | js.Array[Error], /* xmlNode */ Node, Unit]) => Boolean
+      errors: js.Array[js.Error],
+      parseString: (String, js.Function2[/* err */ Null | js.Array[js.Error], /* xmlNode */ Node, Unit]) => Boolean
     ): XmlParser = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], parseString = js.Any.fromFunction2(parseString))
       __obj.asInstanceOf[XmlParser]
@@ -244,12 +243,12 @@ object mod {
     
     extension [Self <: XmlParser](x: Self) {
       
-      inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[js.Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: js.Error*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setParseString(
-        value: (String, js.Function2[/* err */ Null | js.Array[Error], /* xmlNode */ Node, Unit]) => Boolean
+        value: (String, js.Function2[/* err */ Null | js.Array[js.Error], /* xmlNode */ Node, Unit]) => Boolean
       ): Self = StObject.set(x, "parseString", js.Any.fromFunction2(value))
     }
   }

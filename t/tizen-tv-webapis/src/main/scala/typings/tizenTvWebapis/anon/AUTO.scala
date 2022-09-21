@@ -13,32 +13,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AUTO extends StObject {
   
   /**
-    *  DHCP: Connected to wired or wireless IPv4 network through automatic IP configuration
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var AUTO: `3`
   
   /**
     * Connected to wired or wireless IPv6 network through dynamic IP configuration
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var DYNAMIC: `2`
   
   /**
     * Connected to cellular network through fixed IP configuration
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var FIXED: `4`
   
   /**
     * No network IP mode configured
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var NONE: `0`
   
   /**
     * Connected to wired or wireless IPv4 network through static IP configuration
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var STATIC: `1`
   
   /**
     * No wired or wireless connection
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var UNKNOWN: `5`
 }

@@ -1,7 +1,6 @@
 package typings.properLockfile
 
 import typings.retry.mod.OperationOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +32,7 @@ object mod {
   trait CheckOptions extends StObject {
     
     // default: true
-    var fs: js.UndefOr[js.Any] = js.undefined
+    var fs: js.UndefOr[Any] = js.undefined
     
     // default: graceful-fs
     var lockfilePath: js.UndefOr[String] = js.undefined
@@ -52,7 +51,7 @@ object mod {
     
     extension [Self <: CheckOptions](x: Self) {
       
-      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
@@ -73,13 +72,13 @@ object mod {
   trait LockOptions extends StObject {
     
     // default: true
-    var fs: js.UndefOr[js.Any] = js.undefined
+    var fs: js.UndefOr[Any] = js.undefined
     
     // default: (err) => throw err
     var lockfilePath: js.UndefOr[String] = js.undefined
     
     // default: graceful-fs
-    var onCompromised: js.UndefOr[js.Function1[/* err */ Error, js.Any]] = js.undefined
+    var onCompromised: js.UndefOr[js.Function1[/* err */ js.Error, Any]] = js.undefined
     
     // default: 0
     var realpath: js.UndefOr[Boolean] = js.undefined
@@ -101,7 +100,7 @@ object mod {
     
     extension [Self <: LockOptions](x: Self) {
       
-      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
@@ -109,7 +108,7 @@ object mod {
       
       inline def setLockfilePathUndefined: Self = StObject.set(x, "lockfilePath", js.undefined)
       
-      inline def setOnCompromised(value: /* err */ Error => js.Any): Self = StObject.set(x, "onCompromised", js.Any.fromFunction1(value))
+      inline def setOnCompromised(value: /* err */ js.Error => Any): Self = StObject.set(x, "onCompromised", js.Any.fromFunction1(value))
       
       inline def setOnCompromisedUndefined: Self = StObject.set(x, "onCompromised", js.undefined)
       
@@ -120,6 +119,8 @@ object mod {
       inline def setRetries(value: Double | OperationOptions): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
       inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      
+      inline def setRetriesVarargs(value: Double*): Self = StObject.set(x, "retries", js.Array(value*))
       
       inline def setStale(value: Double): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,7 @@ object mod {
   trait UnlockOptions extends StObject {
     
     // default: true
-    var fs: js.UndefOr[js.Any] = js.undefined
+    var fs: js.UndefOr[Any] = js.undefined
     
     // default: graceful-fs
     var lockfilePath: js.UndefOr[String] = js.undefined
@@ -150,7 +151,7 @@ object mod {
     
     extension [Self <: UnlockOptions](x: Self) {
       
-      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       

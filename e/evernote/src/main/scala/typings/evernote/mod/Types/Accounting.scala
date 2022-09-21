@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.Accounting")
 @js.native
-class Accounting () extends StObject {
+open class Accounting () extends StObject {
   def this(args: AvailablePoints) = this()
   
   var availablePoints: js.UndefOr[Double] = js.native

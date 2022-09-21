@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-import
 
-Typings are for version 12.0
+Typings are for version 14.0
 
 ## Library description:
 PostCSS plugin to import CSS files
@@ -10,10 +10,10 @@ PostCSS plugin to import CSS files
 | ------------------ | :-------------: |
 | Full name          | postcss-import |
 | Keywords           | css, postcss, postcss-plugin, import, node modules, npm |
-| # releases         | 3 |
-| # dependents       | 1275 |
-| # downloads        | 124079771 |
-| # stars            | 25 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2.3711947666666668E7 |
+| # stars            | 1229.0 |
 
 ## Links
 - [Homepage](https://github.com/postcss/postcss-import#readme)

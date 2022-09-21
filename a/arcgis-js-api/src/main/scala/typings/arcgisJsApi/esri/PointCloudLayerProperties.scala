@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.PointCloudReturnFilterPro
+import typings.arcgisJsApi.anon.PointCloudValueFilterProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +11,8 @@ trait PointCloudLayerProperties
      with LayerProperties
      with SceneServiceProperties
      with PortalLayerProperties
-     with ScaleRangeLayerProperties {
+     with ScaleRangeLayerProperties
+     with APIKeyMixinProperties {
   
   /**
     * Specifies how points are placed on the vertical axis (z).
@@ -30,10 +33,12 @@ trait PointCloudLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html#filters)
     */
-  var filters: js.UndefOr[js.Array[PointCloudValueFilterProperties | PointCloudReturnFilterProperties]] = js.undefined
+  var filters: js.UndefOr[js.Array[PointCloudValueFilterProp | PointCloudReturnFilterPro]] = js.undefined
   
   /**
     * Indicates whether the layer will be included in the legend.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html#legendEnabled)
     */
@@ -42,12 +47,16 @@ trait PointCloudLayerProperties
   /**
     * An array of field names from the service to include with each feature.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html#outFields)
     */
   var outFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates whether to display popups when points in the layer are clicked.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html#popupEnabled)
     */
@@ -84,13 +93,13 @@ object PointCloudLayerProperties {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value*))
     
-    inline def setFilters(value: js.Array[PointCloudValueFilterProperties | PointCloudReturnFilterProperties]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[PointCloudValueFilterProp | PointCloudReturnFilterPro]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: (PointCloudValueFilterProperties | PointCloudReturnFilterProperties)*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: (PointCloudValueFilterProp | PointCloudReturnFilterPro)*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
@@ -100,7 +109,7 @@ object PointCloudLayerProperties {
     
     inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
-    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value*))
     
     inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     

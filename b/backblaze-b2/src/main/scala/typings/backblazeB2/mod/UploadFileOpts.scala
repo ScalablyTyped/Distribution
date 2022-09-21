@@ -1,6 +1,6 @@
 package typings.backblazeB2.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -75,7 +75,7 @@ object UploadFileOpts {
     
     inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
-    inline def setOnUploadProgress(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
+    inline def setOnUploadProgress(value: /* event */ Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
     
     inline def setOnUploadProgressNull: Self = StObject.set(x, "onUploadProgress", null)
     

@@ -10,17 +10,17 @@ trait Refinement
   extends StObject
      with DisplayControl {
   
-  def addRefinementFilter(filterName: String, filterToken: js.Any): Unit
+  def addRefinementFilter(filterName: String, filterToken: Any): Unit
   
-  def addRefinementFilters(refiners: js.Array[js.Any]): Unit
+  def addRefinementFilters(refiners: js.Array[Any]): Unit
   
   def addRefinementFiltersJSON(refinersJSON: String): Unit
   
   def addRefinementFiltersJSONWithOr(refinersJSON: String): Unit
   
-  def addRefinementFiltersWithOp(refiners: js.Array[js.Any], op: String): Unit
+  def addRefinementFiltersWithOp(refiners: js.Array[Any], op: String): Unit
   
-  def getCurrentRefinementCategory(refinementName: String): js.Any
+  def getCurrentRefinementCategory(refinementName: String): Any
   
   /** Gets refinement control with the specified propertyName */
   def getRefinementControl(refinerName: String): RefinementControl
@@ -40,13 +40,13 @@ trait Refinement
   /** Returns true if selected refinement controls collection contains a control with the specified propertyName */
   def hasRefiner(refinerName: String): Boolean
   
-  def removeRefinementCategory(rcs: js.Any, filterName: String): Unit
+  def removeRefinementCategory(rcs: Any, filterName: String): Unit
   
   def removeRefinementFilter(filterName: String, filterToken: String): Unit
   
   def removeRefinementFiltersJSON(refinersJSON: String): Unit
   
-  def replaceRefinementFilter(oldRefinementFilter: js.Any, newRefinementFilter: js.Any): Unit
+  def replaceRefinementFilter(oldRefinementFilter: Any, newRefinementFilter: Any): Unit
   
   def set_emptyRefinementMessageId(value: String): String
   
@@ -62,10 +62,10 @@ trait Refinement
     filterTokens: js.Array[String],
     op: String,
     useKQL: Boolean,
-    tokenToDisplayValueMap: js.Any
+    tokenToDisplayValueMap: Any
   ): Unit
   
-  def updateRefiners(refiners: js.Array[js.Any], op: String, useKQL: Boolean, tokenToDisplayValueMap: js.Any): Unit
+  def updateRefiners(refiners: js.Array[Any], op: String, useKQL: Boolean, tokenToDisplayValueMap: Any): Unit
   
   def updateRefinersJSON(refinersJSON: String): Unit
 }
@@ -73,39 +73,39 @@ object Refinement {
   
   inline def apply(
     addCssClass: String => Unit,
-    addRefinementFilter: (String, js.Any) => Unit,
-    addRefinementFilters: js.Array[js.Any] => Unit,
+    addRefinementFilter: (String, Any) => Unit,
+    addRefinementFilters: js.Array[Any] => Unit,
     addRefinementFiltersJSON: String => Unit,
     addRefinementFiltersJSONWithOr: String => Unit,
-    addRefinementFiltersWithOp: (js.Array[js.Any], String) => Unit,
+    addRefinementFiltersWithOp: (js.Array[Any], String) => Unit,
     add_disposing: js.Function => Unit,
-    add_oneTimeResultRendered: js.Any => Unit,
+    add_oneTimeResultRendered: Any => Unit,
     add_propertyChanged: js.Function => Unit,
-    add_queryReady: js.Any => Unit,
-    add_resultRendered: js.Any => Unit,
-    alternateRenderContext: js.Any,
-    alternateRenderer: js.Any,
+    add_queryReady: Any => Unit,
+    add_resultRendered: Any => Unit,
+    alternateRenderContext: Any,
+    alternateRenderer: Any,
     beginUpdate: () => Unit,
-    clickHandler: Event => js.Any,
-    dataProvider_QueryIssuing: (js.Any, js.Any) => Unit,
-    dataProvider_ResultReady: (js.Any, js.Any) => Unit,
+    clickHandler: Event => Any,
+    dataProvider_QueryIssuing: (Any, Any) => Unit,
+    dataProvider_ResultReady: (Any, Any) => Unit,
     dispose: () => Unit,
     endUpdate: () => Unit,
-    getCurrentRefinementCategory: String => js.Any,
+    getCurrentRefinementCategory: String => Any,
     getRefinementControl: String => RefinementControl,
     get_alternateErrorMessage: () => String,
-    get_currentResultTableCollection: () => js.Any,
+    get_currentResultTableCollection: () => Any,
     get_dataProvider: () => DataProvider,
     get_delayLoadTemplateScripts: () => Boolean,
     get_element: () => HTMLElement,
     get_emptyMessage: () => String,
     get_emptyRefinementMessageId: () => String,
-    get_events: () => js.Any,
+    get_events: () => Any,
     get_id: () => String,
     get_isInitialLoad: () => Boolean,
     get_isInitialized: () => Boolean,
     get_isUpdating: () => Boolean,
-    get_messages: () => js.Array[js.Any],
+    get_messages: () => js.Array[Any],
     get_nextUniqueId: () => String,
     get_queryGroupName: () => String,
     get_renderTemplateId: () => String,
@@ -113,69 +113,69 @@ object Refinement {
     get_selectedRefinementControls: () => js.Array[RefinementControl],
     get_shouldShowNoResultMessage: () => Boolean,
     get_showDataErrors: () => Boolean,
-    get_states: () => js.Any,
+    get_states: () => Any,
     get_useManagedNavigationRefiners: () => Boolean,
     hasAllRefinementFilters: (String, js.Array[String]) => Boolean,
-    hasMessages: () => js.Any,
+    hasMessages: () => Any,
     hasRefinementCategory: String => Boolean,
     hasRefinementFilter: (String, String) => Boolean,
     hasRefiner: String => Boolean,
     initialize: () => Unit,
-    invokeAlternateRender: (js.Any, js.Any, js.Any) => js.Any,
-    invokeClientRenderer: (js.Any, js.Any) => js.Any,
-    loadRenderTemplateScripts: (js.Any, js.Any, js.Any, js.Any, js.Any) => Boolean,
+    invokeAlternateRender: (Any, Any, Any) => Any,
+    invokeClientRenderer: (Any, Any) => Any,
+    loadRenderTemplateScripts: (Any, Any, Any, Any, Any) => Boolean,
     loadServerTemplateScripts: () => Unit,
     loaded: Boolean,
-    onBubbleEvent: (js.Any, js.Any) => Boolean,
-    processDataErrorMessages: js.Any => js.Any,
-    processDataProviderErrors: js.Any => Unit,
-    processQueryIssuing: js.Any => Unit,
-    processRenderingErrorMessages: js.Any => js.Any,
-    processResultReady: js.Any => Unit,
-    raiseBubbleEvent: (js.Any, js.Any) => Unit,
-    raiseOneTimeResultRenderedEvent: js.Any => Unit,
+    onBubbleEvent: (Any, Any) => Boolean,
+    processDataErrorMessages: Any => Any,
+    processDataProviderErrors: Any => Unit,
+    processQueryIssuing: Any => Unit,
+    processRenderingErrorMessages: Any => Any,
+    processResultReady: Any => Unit,
+    raiseBubbleEvent: (Any, Any) => Unit,
+    raiseOneTimeResultRenderedEvent: Any => Unit,
     raisePropertyChanged: String => Unit,
-    raiseQueryReadyEvent: js.Any => Unit,
-    raiseResultRenderedEvent: js.Any => Unit,
-    refresh: js.Any => Unit,
+    raiseQueryReadyEvent: Any => Unit,
+    raiseResultRenderedEvent: Any => Unit,
+    refresh: Any => Unit,
     removeCssClass: String => Unit,
-    removeRefinementCategory: (js.Any, String) => Unit,
+    removeRefinementCategory: (Any, String) => Unit,
     removeRefinementFilter: (String, String) => Unit,
     removeRefinementFiltersJSON: String => Unit,
     remove_disposing: js.Function => Unit,
-    remove_oneTimeResultRendered: js.Any => Unit,
+    remove_oneTimeResultRendered: Any => Unit,
     remove_propertyChanged: js.Function => Unit,
-    remove_queryReady: js.Any => Unit,
-    remove_resultRendered: js.Any => Unit,
+    remove_queryReady: Any => Unit,
+    remove_resultRendered: Any => Unit,
     render: () => Unit,
-    renderControl: (js.Any, js.Any) => Unit,
-    replaceRefinementFilter: (js.Any, js.Any) => Unit,
-    scriptApplication_Load: (js.Any, js.Any) => Unit,
-    scriptApplication_PostLoad: (js.Any, js.Any) => Unit,
-    scriptApplication_PreLoad: (js.Any, js.Any) => Unit,
+    renderControl: (Any, Any) => Unit,
+    replaceRefinementFilter: (Any, Any) => Unit,
+    scriptApplication_Load: (Any, Any) => Unit,
+    scriptApplication_PostLoad: (Any, Any) => Unit,
+    scriptApplication_PreLoad: (Any, Any) => Unit,
     serverTemplateScriptsCallback: () => Unit,
-    serverTemplateScriptsToLoad: js.Array[js.Any],
-    setControlElementVisibility: Boolean => js.Any,
+    serverTemplateScriptsToLoad: js.Array[Any],
+    setControlElementVisibility: Boolean => Any,
     set_alternateErrorMessage: String => String,
-    set_currentResultTableCollection: js.Any => js.Any,
+    set_currentResultTableCollection: Any => Any,
     set_delayLoadTemplateScripts: Boolean => Boolean,
     set_emptyMessage: String => String,
     set_emptyRefinementMessageId: String => String,
     set_id: String => Unit,
-    set_messages: js.Array[js.Any] => js.Array[js.Any],
+    set_messages: js.Array[Any] => js.Array[Any],
     set_queryGroupName: String => String,
     set_renderTemplateId: String => String,
     set_renderedResult: Boolean => Boolean,
     set_selectedRefinementControls: js.Array[RefinementControl] => js.Array[RefinementControl],
     set_shouldShowNoResultMessage: Boolean => Boolean,
     set_showDataErrors: Boolean => Boolean,
-    set_states: js.Any => js.Any,
+    set_states: Any => Any,
     set_useManagedNavigationRefiners: Boolean => Boolean,
     toggleCssClass: String => Unit,
-    updateDisplayControlWithNewMessages: () => js.Any,
+    updateDisplayControlWithNewMessages: () => Any,
     updateRefinementControls: js.Array[RefinementControl] => Unit,
-    updateRefinementFilters: (String, js.Array[String], String, Boolean, js.Any) => Unit,
-    updateRefiners: (js.Array[js.Any], String, Boolean, js.Any) => Unit,
+    updateRefinementFilters: (String, js.Array[String], String, Boolean, Any) => Unit,
+    updateRefiners: (js.Array[Any], String, Boolean, Any) => Unit,
     updateRefinersJSON: String => Unit,
     updated: () => Unit
   ): Refinement = {
@@ -185,17 +185,17 @@ object Refinement {
   
   extension [Self <: Refinement](x: Self) {
     
-    inline def setAddRefinementFilter(value: (String, js.Any) => Unit): Self = StObject.set(x, "addRefinementFilter", js.Any.fromFunction2(value))
+    inline def setAddRefinementFilter(value: (String, Any) => Unit): Self = StObject.set(x, "addRefinementFilter", js.Any.fromFunction2(value))
     
-    inline def setAddRefinementFilters(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "addRefinementFilters", js.Any.fromFunction1(value))
+    inline def setAddRefinementFilters(value: js.Array[Any] => Unit): Self = StObject.set(x, "addRefinementFilters", js.Any.fromFunction1(value))
     
     inline def setAddRefinementFiltersJSON(value: String => Unit): Self = StObject.set(x, "addRefinementFiltersJSON", js.Any.fromFunction1(value))
     
     inline def setAddRefinementFiltersJSONWithOr(value: String => Unit): Self = StObject.set(x, "addRefinementFiltersJSONWithOr", js.Any.fromFunction1(value))
     
-    inline def setAddRefinementFiltersWithOp(value: (js.Array[js.Any], String) => Unit): Self = StObject.set(x, "addRefinementFiltersWithOp", js.Any.fromFunction2(value))
+    inline def setAddRefinementFiltersWithOp(value: (js.Array[Any], String) => Unit): Self = StObject.set(x, "addRefinementFiltersWithOp", js.Any.fromFunction2(value))
     
-    inline def setGetCurrentRefinementCategory(value: String => js.Any): Self = StObject.set(x, "getCurrentRefinementCategory", js.Any.fromFunction1(value))
+    inline def setGetCurrentRefinementCategory(value: String => Any): Self = StObject.set(x, "getCurrentRefinementCategory", js.Any.fromFunction1(value))
     
     inline def setGetRefinementControl(value: String => RefinementControl): Self = StObject.set(x, "getRefinementControl", js.Any.fromFunction1(value))
     
@@ -213,13 +213,13 @@ object Refinement {
     
     inline def setHasRefiner(value: String => Boolean): Self = StObject.set(x, "hasRefiner", js.Any.fromFunction1(value))
     
-    inline def setRemoveRefinementCategory(value: (js.Any, String) => Unit): Self = StObject.set(x, "removeRefinementCategory", js.Any.fromFunction2(value))
+    inline def setRemoveRefinementCategory(value: (Any, String) => Unit): Self = StObject.set(x, "removeRefinementCategory", js.Any.fromFunction2(value))
     
     inline def setRemoveRefinementFilter(value: (String, String) => Unit): Self = StObject.set(x, "removeRefinementFilter", js.Any.fromFunction2(value))
     
     inline def setRemoveRefinementFiltersJSON(value: String => Unit): Self = StObject.set(x, "removeRefinementFiltersJSON", js.Any.fromFunction1(value))
     
-    inline def setReplaceRefinementFilter(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "replaceRefinementFilter", js.Any.fromFunction2(value))
+    inline def setReplaceRefinementFilter(value: (Any, Any) => Unit): Self = StObject.set(x, "replaceRefinementFilter", js.Any.fromFunction2(value))
     
     inline def setSet_emptyRefinementMessageId(value: String => String): Self = StObject.set(x, "set_emptyRefinementMessageId", js.Any.fromFunction1(value))
     
@@ -229,9 +229,9 @@ object Refinement {
     
     inline def setUpdateRefinementControls(value: js.Array[RefinementControl] => Unit): Self = StObject.set(x, "updateRefinementControls", js.Any.fromFunction1(value))
     
-    inline def setUpdateRefinementFilters(value: (String, js.Array[String], String, Boolean, js.Any) => Unit): Self = StObject.set(x, "updateRefinementFilters", js.Any.fromFunction5(value))
+    inline def setUpdateRefinementFilters(value: (String, js.Array[String], String, Boolean, Any) => Unit): Self = StObject.set(x, "updateRefinementFilters", js.Any.fromFunction5(value))
     
-    inline def setUpdateRefiners(value: (js.Array[js.Any], String, Boolean, js.Any) => Unit): Self = StObject.set(x, "updateRefiners", js.Any.fromFunction4(value))
+    inline def setUpdateRefiners(value: (js.Array[Any], String, Boolean, Any) => Unit): Self = StObject.set(x, "updateRefiners", js.Any.fromFunction4(value))
     
     inline def setUpdateRefinersJSON(value: String => Unit): Self = StObject.set(x, "updateRefinersJSON", js.Any.fromFunction1(value))
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "TextEdit")
 @js.native
-class TextEdit protected () extends StObject {
+open class TextEdit protected () extends StObject {
   /**
     * Create a new TextEdit.
     *

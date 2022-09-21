@@ -10,10 +10,10 @@ A low-level Node.js LevelDB binding
 | ------------------ | :-------------: |
 | Full name          | leveldown |
 | Keywords           | leveldb, level |
-| # releases         | 17 |
-| # dependents       | 477 |
-| # downloads        | 6538291 |
-| # stars            | 21 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1191763.3333333333 |
+| # stars            | 731.0 |
 
 ## Links
 - [Homepage](https://github.com/Level/leveldown)

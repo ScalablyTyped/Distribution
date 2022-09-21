@@ -17,8 +17,8 @@ object typesetterMod {
   
   @JSImport("typesettable/build/src/typesetter", "Typesetter")
   @js.native
-  class Typesetter protected () extends StObject {
-    def this(context: ITypesetterContext[js.Any]) = this()
+  open class Typesetter protected () extends StObject {
+    def this(context: ITypesetterContext[Any]) = this()
     
     /**
       * Clears the `Measurer`'s CacheMeasurer.
@@ -27,7 +27,7 @@ object typesetterMod {
       */
     def clearMeasurerCache(): Unit = js.native
     
-    /* private */ var context: js.Any = js.native
+    /* private */ var context: Any = js.native
     
     var measurer: CacheMeasurer = js.native
     
@@ -40,9 +40,9 @@ object typesetterMod {
       * Delegates to `Writer.write` using the internal `ITypesetterContext`.
       */
     def write(text: String, width: Double, height: Double): Unit = js.native
-    def write(text: String, width: Double, height: Double, options: Unit, into: js.Any): Unit = js.native
+    def write(text: String, width: Double, height: Double, options: Unit, into: Any): Unit = js.native
     def write(text: String, width: Double, height: Double, options: IWriteOptions): Unit = js.native
-    def write(text: String, width: Double, height: Double, options: IWriteOptions, into: js.Any): Unit = js.native
+    def write(text: String, width: Double, height: Double, options: IWriteOptions, into: Any): Unit = js.native
     
     var writer: Writer = js.native
   }

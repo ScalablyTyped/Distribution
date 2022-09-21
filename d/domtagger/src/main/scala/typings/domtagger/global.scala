@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  inline def domtagger(opts: Options): js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, HTMLElement] = js.Dynamic.global.applyDynamic("domtagger")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, HTMLElement]]
-  inline def domtagger(opts: SVGOptions): js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, SVGElement] = js.Dynamic.global.applyDynamic("domtagger")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ js.Any, SVGElement]]
+  inline def domtagger(opts: Options): js.Function2[/* template */ TemplateStringsArray, /* repeated */ Any, HTMLElement] = js.Dynamic.global.applyDynamic("domtagger")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ Any, HTMLElement]]
+  inline def domtagger(opts: SVGOptions): js.Function2[/* template */ TemplateStringsArray, /* repeated */ Any, SVGElement] = js.Dynamic.global.applyDynamic("domtagger")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* template */ TemplateStringsArray, /* repeated */ Any, SVGElement]]
 }

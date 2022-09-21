@@ -31,7 +31,7 @@ object blazeMod {
     trait Template extends StObject {
       
       @JSName("$")
-      var $: js.Any
+      var $: Any
       
       def constructView(): View
       
@@ -69,7 +69,7 @@ object blazeMod {
       
       extension [Self <: Template](x: Self) {
         
-        inline def set$(value: js.Any): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
+        inline def set$(value: Any): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
         
         inline def setConstructView(value: () => View): Self = StObject.set(x, "constructView", js.Any.fromFunction0(value))
         
@@ -104,7 +104,7 @@ object blazeMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/blaze", "Blaze.Template")
     @js.native
-    class TemplateCls ()
+    open class TemplateCls ()
       extends StObject
          with Template {
       def this(viewName: String) = this()
@@ -113,7 +113,7 @@ object blazeMod {
       
       /* CompleteClass */
       @JSName("$")
-      var $: js.Any = js.native
+      var $: Any = js.native
       
       /* CompleteClass */
       override def constructView(): View = js.native
@@ -161,7 +161,7 @@ object blazeMod {
     trait TemplateInstance extends StObject {
       
       @JSName("$")
-      def $(selector: String): js.Any
+      def $(selector: String): Any
       
       def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation
       
@@ -175,7 +175,7 @@ object blazeMod {
       
       var lastNode: js.Object
       
-      def subscribe(name: String, args: js.Any*): SubscriptionHandle
+      def subscribe(name: String, args: Any*): SubscriptionHandle
       
       def subscriptionsReady(): Boolean
       
@@ -189,7 +189,7 @@ object blazeMod {
       
       extension [Self <: TemplateInstance](x: Self) {
         
-        inline def set$(value: String => js.Any): Self = StObject.set(x, "$", js.Any.fromFunction1(value))
+        inline def set$(value: String => Any): Self = StObject.set(x, "$", js.Any.fromFunction1(value))
         
         inline def setAutorun(value: js.Function1[/* computation */ Computation, Unit] => Computation): Self = StObject.set(x, "autorun", js.Any.fromFunction1(value))
         
@@ -203,7 +203,7 @@ object blazeMod {
         
         inline def setLastNode(value: js.Object): Self = StObject.set(x, "lastNode", value.asInstanceOf[js.Any])
         
-        inline def setSubscribe(value: (String, /* repeated */ js.Any) => SubscriptionHandle): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
+        inline def setSubscribe(value: (String, /* repeated */ Any) => SubscriptionHandle): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
         
         inline def setSubscriptionsReady(value: () => Boolean): Self = StObject.set(x, "subscriptionsReady", js.Any.fromFunction0(value))
         
@@ -214,14 +214,14 @@ object blazeMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/blaze", "Blaze.TemplateInstance")
     @js.native
-    class TemplateInstanceCls protected ()
+    open class TemplateInstanceCls protected ()
       extends StObject
          with TemplateInstance {
       def this(view: View) = this()
       
       /* CompleteClass */
       @JSName("$")
-      override def $(selector: String): js.Any = js.native
+      override def $(selector: String): Any = js.native
       
       /* CompleteClass */
       override def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation = js.native
@@ -242,7 +242,7 @@ object blazeMod {
       var lastNode: js.Object = js.native
       
       /* CompleteClass */
-      override def subscribe(name: String, args: js.Any*): SubscriptionHandle = js.native
+      override def subscribe(name: String, args: Any*): SubscriptionHandle = js.native
       
       /* CompleteClass */
       override def subscriptionsReady(): Boolean = js.native
@@ -325,7 +325,7 @@ object blazeMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/blaze", "Blaze.View")
     @js.native
-    class ViewCls ()
+    open class ViewCls ()
       extends StObject
          with View {
       def this(name: String) = this()
@@ -390,7 +390,7 @@ object blazeMod {
     inline def getView(): View = ^.asInstanceOf[js.Dynamic].applyDynamic("getView")().asInstanceOf[View]
     inline def getView(element: HTMLElement): View = ^.asInstanceOf[js.Dynamic].applyDynamic("getView")(element.asInstanceOf[js.Any]).asInstanceOf[View]
     
-    inline def isTemplate(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTemplate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isTemplate(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTemplate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def remove(renderedView: View): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(renderedView.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -448,11 +448,11 @@ object blazeMod {
               Template
             ] {
       
-      def currentData(): js.Any = js.native
+      def currentData(): Any = js.native
       
       def instance(): TemplateInstance = js.native
       
-      def parentData(numLevels: Double): js.Any = js.native
+      def parentData(numLevels: Double): Any = js.native
       
       def registerHelper(name: String, func: js.Function): Unit = js.native
     }

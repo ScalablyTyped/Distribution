@@ -4,23 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for `UnbindDeviceFromGateway`.
-  */
 trait SchemaUnbindDeviceFromGatewayRequest extends StObject {
   
   /**
-    * The device to disassociate from the specified gateway. The value of
-    * `device_id` can be either the device numeric ID or the user-defined
-    * device identifier.
+    * Required. The device to disassociate from the specified gateway. The value of `device_id` can be either the device numeric ID or the user-defined device identifier.
     */
-  var deviceId: js.UndefOr[String] = js.undefined
+  var deviceId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The value of `gateway_id` can be either the device numeric ID or the
-    * user-defined device identifier.
+    * Required. The value of `gateway_id` can be either the device numeric ID or the user-defined device identifier.
     */
-  var gatewayId: js.UndefOr[String] = js.undefined
+  var gatewayId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUnbindDeviceFromGatewayRequest {
   
@@ -33,9 +27,13 @@ object SchemaUnbindDeviceFromGatewayRequest {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
+    inline def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
+    
     inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
     inline def setGatewayId(value: String): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
+    
+    inline def setGatewayIdNull: Self = StObject.set(x, "gatewayId", null)
     
     inline def setGatewayIdUndefined: Self = StObject.set(x, "gatewayId", js.undefined)
   }

@@ -16,41 +16,62 @@ trait GoogleCloudSaasacceleratorManagementProvidersV1Instance extends StObject {
   /** Output only. Timestamp when the resource was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
+  /**
+    * Optional. The instance_type of this instance of format: projects/{project_number}/locations/{location_id}/instanceTypes/{instance_type_id}. Instance Type represents a high-level
+    * tier or SKU of the service that this instance belong to. When enabled(eg: Maintenance Rollout), Rollout uses 'instance_type' along with 'software_versions' to determine whether
+    * instance needs an update or not.
+    */
+  var instanceType: js.UndefOr[String] = js.undefined
+  
   /** Optional. Resource labels to represent user provided metadata. Each label is a key-value pair, where both the key and the value are arbitrary strings provided by the user. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[Any]
   ] = js.undefined
   
   /**
-    * Deprecated. The MaintenancePolicies that have been attached to the instance. The key must be of the type name of the oneof policy name defined in MaintenancePolicy, and the
-    * referenced policy must define the same policy type. For complete details of MaintenancePolicy, please refer to go/cloud-saas-mw-ug.
+    * Optional. Deprecated. The MaintenancePolicies that have been attached to the instance. The key must be of the type name of the oneof policy name defined in MaintenancePolicy, and
+    * the referenced policy must define the same policy type. For complete details of MaintenancePolicy, please refer to go/cloud-saas-mw-ug.
     */
   var maintenancePolicyNames: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[Any]
   ] = js.undefined
   
   /** The MaintenanceSchedule contains the scheduling information of published maintenance schedule with same key as software_versions. */
   var maintenanceSchedules: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.memcache.gapi.client.memcache.GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule}
-    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[Any]
   ] = js.undefined
   
   /** Optional. The MaintenanceSettings associated with instance. */
   var maintenanceSettings: js.UndefOr[GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings] = js.undefined
   
-  /** Unique name of the resource. It uses the form: `projects/{project_id}/locations/{location_id}/instances/{instance_id}` */
+  /**
+    * Unique name of the resource. It uses the form: `projects/{project_number}/locations/{location_id}/instances/{instance_id}` Note: This name is passed, stored and logged across the
+    * rollout system. So use of consumer project_id or any other consumer PII in the name is strongly discouraged for wipeout (go/wipeout) compliance. See
+    * go/elysium/project_ids#storage-guidance for more details.
+    */
   var name: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Optional. notification_parameter are information that service producers may like to include that is not relevant to Rollout. This parameter will only be passed to Gamma and Cloud
+    * Logging for notification/logging purpose.
+    */
+  var notificationParameters: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: @maxim_mazurok/gapi.client.memcache.gapi.client.memcache.GoogleCloudSaasacceleratorManagementProvidersV1NotificationParameter}
+    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[Any]
+  ] = js.undefined
   
   /** Output only. Custom string attributes used primarily to expose producer-specific information in monitoring dashboards. See go/get-instance-metadata. */
   var producerMetadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The list of data plane resources provisioned for this instance, e.g. compute VMs. See go/get-instance-metadata. */
@@ -69,7 +90,7 @@ trait GoogleCloudSaasacceleratorManagementProvidersV1Instance extends StObject {
   var softwareVersions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. Current lifecycle state of the resource (e.g. if it's being created or ready to use). */
@@ -98,10 +119,14 @@ object GoogleCloudSaasacceleratorManagementProvidersV1Instance {
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
+    
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -109,7 +134,7 @@ object GoogleCloudSaasacceleratorManagementProvidersV1Instance {
     inline def setMaintenancePolicyNames(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[Any]
     ): Self = StObject.set(x, "maintenancePolicyNames", value.asInstanceOf[js.Any])
     
     inline def setMaintenancePolicyNamesUndefined: Self = StObject.set(x, "maintenancePolicyNames", js.undefined)
@@ -117,7 +142,7 @@ object GoogleCloudSaasacceleratorManagementProvidersV1Instance {
     inline def setMaintenanceSchedules(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.memcache.gapi.client.memcache.GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule}
-      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[Any]
     ): Self = StObject.set(x, "maintenanceSchedules", value.asInstanceOf[js.Any])
     
     inline def setMaintenanceSchedulesUndefined: Self = StObject.set(x, "maintenanceSchedules", js.undefined)
@@ -130,10 +155,18 @@ object GoogleCloudSaasacceleratorManagementProvidersV1Instance {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
+    inline def setNotificationParameters(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: @maxim_mazurok/gapi.client.memcache.gapi.client.memcache.GoogleCloudSaasacceleratorManagementProvidersV1NotificationParameter}
+      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[Any]
+    ): Self = StObject.set(x, "notificationParameters", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationParametersUndefined: Self = StObject.set(x, "notificationParameters", js.undefined)
+    
     inline def setProducerMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[Any]
     ): Self = StObject.set(x, "producerMetadata", value.asInstanceOf[js.Any])
     
     inline def setProducerMetadataUndefined: Self = StObject.set(x, "producerMetadata", js.undefined)
@@ -142,7 +175,7 @@ object GoogleCloudSaasacceleratorManagementProvidersV1Instance {
     
     inline def setProvisionedResourcesUndefined: Self = StObject.set(x, "provisionedResources", js.undefined)
     
-    inline def setProvisionedResourcesVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource*): Self = StObject.set(x, "provisionedResources", js.Array(value :_*))
+    inline def setProvisionedResourcesVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource*): Self = StObject.set(x, "provisionedResources", js.Array(value*))
     
     inline def setSlmInstanceTemplate(value: String): Self = StObject.set(x, "slmInstanceTemplate", value.asInstanceOf[js.Any])
     
@@ -155,7 +188,7 @@ object GoogleCloudSaasacceleratorManagementProvidersV1Instance {
     inline def setSoftwareVersions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[Any]
     ): Self = StObject.set(x, "softwareVersions", value.asInstanceOf[js.Any])
     
     inline def setSoftwareVersionsUndefined: Self = StObject.set(x, "softwareVersions", js.undefined)

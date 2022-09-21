@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("source-map", "SourceMapConsumer")
 @js.native
-class SourceMapConsumerCls protected ()
+open class SourceMapConsumerCls protected ()
   extends StObject
      with Promise[BasicSourceMapConsumer] {
   def this(rawSourceMap: RawSourceMap) = this()

@@ -79,7 +79,7 @@ object OptionGroupOptionSetting {
     
     inline def setMinimumEngineVersionPerAllowedValueUndefined: Self = StObject.set(x, "MinimumEngineVersionPerAllowedValue", js.undefined)
     
-    inline def setMinimumEngineVersionPerAllowedValueVarargs(value: MinimumEngineVersionPerAllowedValue*): Self = StObject.set(x, "MinimumEngineVersionPerAllowedValue", js.Array(value :_*))
+    inline def setMinimumEngineVersionPerAllowedValueVarargs(value: MinimumEngineVersionPerAllowedValue*): Self = StObject.set(x, "MinimumEngineVersionPerAllowedValue", js.Array(value*))
     
     inline def setSettingDescription(value: String): Self = StObject.set(x, "SettingDescription", value.asInstanceOf[js.Any])
     

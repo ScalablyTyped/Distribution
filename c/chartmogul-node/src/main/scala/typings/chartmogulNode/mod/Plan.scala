@@ -122,7 +122,7 @@ object Plan {
       
       inline def setPlans(value: js.Array[typings.chartmogulNode.mod.Plan.Plan]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
       
-      inline def setPlansVarargs(value: typings.chartmogulNode.mod.Plan.Plan*): Self = StObject.set(x, "plans", js.Array(value :_*))
+      inline def setPlansVarargs(value: typings.chartmogulNode.mod.Plan.Plan*): Self = StObject.set(x, "plans", js.Array(value*))
     }
   }
 }

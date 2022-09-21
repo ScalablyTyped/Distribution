@@ -1,9 +1,7 @@
 package typings.syslogClient
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +14,7 @@ object mod {
   
   @JSImport("syslog-client", "Client")
   @js.native
-  class Client () extends EventEmitter {
+  open class Client () extends EventEmitter {
     def this(target: String) = this()
     def this(target: String, options: ClientOptions) = this()
     def this(target: Unit, options: ClientOptions) = this()
@@ -25,16 +23,16 @@ object mod {
     
     def close(): Client = js.native
     
-    def getTransport(cb: js.Function2[/* error */ Error | Null, /* transport */ Transport, Unit]): Unit = js.native
+    def getTransport(cb: js.Function2[/* error */ js.Error | Null, /* transport */ Transport, Unit]): Unit = js.native
     
     def log(message: String): Client = js.native
-    def log(message: String, options: Unit, cb: js.Function1[/* error */ Error | Null, Unit]): Client = js.native
+    def log(message: String, options: Unit, cb: js.Function1[/* error */ js.Error | Null, Unit]): Client = js.native
     def log(message: String, options: MessageOptions): Client = js.native
-    def log(message: String, options: MessageOptions, cb: js.Function1[/* error */ Error | Null, Unit]): Client = js.native
+    def log(message: String, options: MessageOptions, cb: js.Function1[/* error */ js.Error | Null, Unit]): Client = js.native
     
     def onClose(): Client = js.native
     
-    def onError(error: Error): Client = js.native
+    def onError(error: js.Error): Client = js.native
   }
   
   @js.native
@@ -227,7 +225,7 @@ object mod {
     
     var tcpTimeout: js.UndefOr[Double] = js.undefined
     
-    var timestamp: js.UndefOr[Date] = js.undefined
+    var timestamp: js.UndefOr[js.Date] = js.undefined
     
     var transport: js.UndefOr[Transport] = js.undefined
   }
@@ -276,7 +274,7 @@ object mod {
       
       inline def setTcpTimeoutUndefined: Self = StObject.set(x, "tcpTimeout", js.undefined)
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
@@ -300,7 +298,7 @@ object mod {
     
     var syslogHostname: js.UndefOr[String] = js.undefined
     
-    var timestamp: js.UndefOr[Date] = js.undefined
+    var timestamp: js.UndefOr[js.Date] = js.undefined
   }
   object MessageOptions {
     
@@ -335,7 +333,7 @@ object mod {
       
       inline def setSyslogHostnameUndefined: Self = StObject.set(x, "syslogHostname", js.undefined)
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     }

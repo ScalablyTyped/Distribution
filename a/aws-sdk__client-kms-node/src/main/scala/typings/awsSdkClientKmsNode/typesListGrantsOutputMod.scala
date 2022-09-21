@@ -49,7 +49,7 @@ object typesListGrantsOutputMod {
       
       inline def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
       
-      inline def setGrantsVarargs(value: UnmarshalledGrantListEntry*): Self = StObject.set(x, "Grants", js.Array(value :_*))
+      inline def setGrantsVarargs(value: UnmarshalledGrantListEntry*): Self = StObject.set(x, "Grants", js.Array(value*))
       
       inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
       

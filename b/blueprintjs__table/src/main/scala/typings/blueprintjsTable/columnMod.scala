@@ -1,9 +1,9 @@
 package typings.blueprintjsTable
 
 import typings.blueprintjsCore.propsMod.IProps
-import typings.blueprintjsTable.cellMod.ICellRenderer
+import typings.blueprintjsTable.cellMod.CellRenderer
 import typings.blueprintjsTable.columnHeaderCellMod.IColumnNameProps
-import typings.blueprintjsTable.columnHeaderMod.IColumnHeaderRenderer
+import typings.blueprintjsTable.columnHeaderMod.ColumnHeaderRenderer
 import typings.blueprintjsTable.esmRegionsMod.ColumnLoadingOption
 import typings.react.mod.PureComponent
 import typings.react.mod.ReactElement
@@ -15,14 +15,14 @@ object columnMod {
   
   @JSImport("@blueprintjs/table/lib/esm/column", "Column")
   @js.native
-  class Column protected ()
-    extends PureComponent[IColumnProps, js.Object, js.Any] {
+  open class Column protected ()
+    extends PureComponent[IColumnProps, js.Object, Any] {
     def this(props: IColumnProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IColumnProps, context: js.Any) = this()
+    def this(props: IColumnProps, context: Any) = this()
   }
   /* static members */
   object Column {
@@ -42,22 +42,24 @@ object columnMod {
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
+  type ColumnProps = IColumnProps
+  
   trait IColumnProps
     extends StObject
        with IColumnNameProps
        with IProps {
     
     /**
-      * An instance of `ICellRenderer`, a function that takes a row and column
+      * An instance of `CellRenderer`, a function that takes a row and column
       * index, and returns a `Cell` React element.
       */
-    var cellRenderer: js.UndefOr[ICellRenderer] = js.undefined
+    var cellRenderer: js.UndefOr[CellRenderer] = js.undefined
     
     /**
-      * An instance of `IColumnHeaderRenderer`, a function that takes a column
-      * index and returns a `ColumnHeaderCell` React element.
+      * An instance of `ColumnHeaderRenderer`, a function that takes a column
+      * index and returns a `ColumnHeaderCell2` React element.
       */
-    var columnHeaderCellRenderer: js.UndefOr[IColumnHeaderRenderer] = js.undefined
+    var columnHeaderCellRenderer: js.UndefOr[ColumnHeaderRenderer] = js.undefined
     
     /**
       * A unique ID, similar to React's `key`. This is used, for example, to
@@ -87,11 +89,11 @@ object columnMod {
     
     extension [Self <: IColumnProps](x: Self) {
       
-      inline def setCellRenderer(value: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction2(value))
+      inline def setCellRenderer(value: (/* rowIndex */ Double, /* columnIndex */ Double) => js.UndefOr[ReactElement]): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction2(value))
       
       inline def setCellRendererUndefined: Self = StObject.set(x, "cellRenderer", js.undefined)
       
-      inline def setColumnHeaderCellRenderer(value: /* columnIndex */ Double => ReactElement): Self = StObject.set(x, "columnHeaderCellRenderer", js.Any.fromFunction1(value))
+      inline def setColumnHeaderCellRenderer(value: /* columnIndex */ Double => ReactElement | Null): Self = StObject.set(x, "columnHeaderCellRenderer", js.Any.fromFunction1(value))
       
       inline def setColumnHeaderCellRendererUndefined: Self = StObject.set(x, "columnHeaderCellRenderer", js.undefined)
       
@@ -103,7 +105,7 @@ object columnMod {
       
       inline def setLoadingOptionsUndefined: Self = StObject.set(x, "loadingOptions", js.undefined)
       
-      inline def setLoadingOptionsVarargs(value: ColumnLoadingOption*): Self = StObject.set(x, "loadingOptions", js.Array(value :_*))
+      inline def setLoadingOptionsVarargs(value: ColumnLoadingOption*): Self = StObject.set(x, "loadingOptions", js.Array(value*))
     }
   }
 }

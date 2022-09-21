@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Autodesk.Viewing.GuiViewer3D")
 @js.native
-class GuiViewer3D ()
+open class GuiViewer3D ()
   extends StObject
      with typings.forgeViewer.Autodesk.Viewing.GuiViewer3D

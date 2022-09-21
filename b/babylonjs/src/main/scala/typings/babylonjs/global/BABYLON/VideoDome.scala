@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.VideoDome")
 @js.native
-class VideoDome ()
+open class VideoDome ()
   extends StObject
      with typings.babylonjs.BABYLON.VideoDome {
   
@@ -44,19 +44,19 @@ object VideoDome {
     */
   @JSGlobal("BABYLON.VideoDome.MODE_MONOSCOPIC")
   @js.native
-  val MODE_MONOSCOPIC: Double = js.native
+  val MODE_MONOSCOPIC: /* 0 */ Double = js.native
   
   /**
     * Define the video source as a Stereoscopic Side by Side panoramic 360 video.
     */
   @JSGlobal("BABYLON.VideoDome.MODE_SIDEBYSIDE")
   @js.native
-  val MODE_SIDEBYSIDE: Double = js.native
+  val MODE_SIDEBYSIDE: /* 2 */ Double = js.native
   
   /**
     * Define the video source as a Stereoscopic TopBottom/OverUnder panoramic 360 video.
     */
   @JSGlobal("BABYLON.VideoDome.MODE_TOPBOTTOM")
   @js.native
-  val MODE_TOPBOTTOM: Double = js.native
+  val MODE_TOPBOTTOM: /* 1 */ Double = js.native
 }

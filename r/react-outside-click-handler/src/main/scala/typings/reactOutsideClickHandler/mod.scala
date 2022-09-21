@@ -1,15 +1,13 @@
 package typings.reactOutsideClickHandler
 
 import typings.react.mod.Component
-import typings.react.mod.MouseEvent
-import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.reactOutsideClickHandler.reactOutsideClickHandlerStrings.`inline-block`
 import typings.reactOutsideClickHandler.reactOutsideClickHandlerStrings.`inline`
 import typings.reactOutsideClickHandler.reactOutsideClickHandlerStrings.block
 import typings.reactOutsideClickHandler.reactOutsideClickHandlerStrings.contents
 import typings.reactOutsideClickHandler.reactOutsideClickHandlerStrings.flex
-import typings.std.HTMLElement
+import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,8 +16,8 @@ object mod {
   
   @JSImport("react-outside-click-handler", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Props, js.Object, js.Any]
+  open class default ()
+    extends Component[Props, js.Object, Any]
   /* static members */
   object default {
     
@@ -62,7 +60,7 @@ object mod {
     }
   }
   
-  type OutsideClickHandler = Component[Props, js.Object, js.Any]
+  type OutsideClickHandler = Component[Props, js.Object, Any]
   
   /* Inlined parent std.Partial<react-outside-click-handler.react-outside-click-handler.DefaultProps> */
   trait Props extends StObject {
@@ -73,13 +71,13 @@ object mod {
     
     var display: js.UndefOr[block | flex | `inline` | `inline-block` | contents] = js.undefined
     
-    def onOutsideClick(e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit
+    def onOutsideClick(e: MouseEvent): Unit
     
     var useCapture: js.UndefOr[Boolean] = js.undefined
   }
   object Props {
     
-    inline def apply(onOutsideClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Props = {
+    inline def apply(onOutsideClick: MouseEvent => Unit): Props = {
       val __obj = js.Dynamic.literal(onOutsideClick = js.Any.fromFunction1(onOutsideClick))
       __obj.asInstanceOf[Props]
     }
@@ -98,7 +96,7 @@ object mod {
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      inline def setOnOutsideClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onOutsideClick", js.Any.fromFunction1(value))
+      inline def setOnOutsideClick(value: MouseEvent => Unit): Self = StObject.set(x, "onOutsideClick", js.Any.fromFunction1(value))
       
       inline def setUseCapture(value: Boolean): Self = StObject.set(x, "useCapture", value.asInstanceOf[js.Any])
       

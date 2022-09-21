@@ -23,7 +23,7 @@ object AdditionalRoles {
     
     inline def setAdditionalRolesUndefined: Self = StObject.set(x, "additionalRoles", js.undefined)
     
-    inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value :_*))
+    inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value*))
     
     inline def setPrimaryRole(value: String): Self = StObject.set(x, "primaryRole", value.asInstanceOf[js.Any])
     

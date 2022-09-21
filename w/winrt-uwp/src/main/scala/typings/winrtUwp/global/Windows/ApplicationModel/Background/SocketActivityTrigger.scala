@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.SocketActivityTrigger")
 @js.native
 /** Initializes a new instance of a socket activity trigger. */
-class SocketActivityTrigger ()
+open class SocketActivityTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.SocketActivityTrigger

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LogConfigCloudAuditOptions extends StObject {
   
-  /** Information used by the Cloud Audit Logging pipeline. */
+  /** This is deprecated and has no effect. Do not use. */
   var authorizationLoggingOptions: js.UndefOr[AuthorizationLoggingOptions] = js.undefined
   
-  /** The log_name to populate in the Cloud Audit Record. */
+  /** This is deprecated and has no effect. Do not use. */
   var logName: js.UndefOr[String] = js.undefined
 }
 object LogConfigCloudAuditOptions {

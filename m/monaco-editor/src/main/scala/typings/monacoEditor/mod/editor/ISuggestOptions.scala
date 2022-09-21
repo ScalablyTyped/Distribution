@@ -1,8 +1,10 @@
 package typings.monacoEditor.mod.editor
 
-import typings.monacoEditor.anon.Visible
 import typings.monacoEditor.monacoEditorStrings.insert
+import typings.monacoEditor.monacoEditorStrings.prefix
 import typings.monacoEditor.monacoEditorStrings.replace
+import typings.monacoEditor.monacoEditorStrings.subword
+import typings.monacoEditor.monacoEditorStrings.subwordSmart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,14 +22,19 @@ trait ISuggestOptions extends StObject {
   var insertMode: js.UndefOr[insert | replace] = js.undefined
   
   /**
-    * Favours words that appear close to the cursor.
+    * Favors words that appear close to the cursor.
     */
   var localityBonus: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Max suggestions to show in suggestions. Defaults to 12.
+    * Enable or disable the rendering of the suggestion preview.
     */
-  var maxVisibleSuggestions: js.UndefOr[Double] = js.undefined
+  var preview: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Configures the mode of the preview.
+    */
+  var previewMode: js.UndefOr[prefix | subword | subwordSmart] = js.undefined
   
   /**
     * Enable using global storage for remembering suggestions.
@@ -53,6 +60,11 @@ trait ISuggestOptions extends StObject {
     * Show constructor-suggestions.
     */
   var showConstructors: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Show deprecated-suggestions.
+    */
+  var showDeprecated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show enumMember-suggestions.
@@ -93,6 +105,11 @@ trait ISuggestOptions extends StObject {
     * Enable or disable icons in suggestions. Defaults to true.
     */
   var showIcons: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Show details inline with the label. Defaults to true.
+    */
+  var showInlineDetails: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show interface-suggestions.
@@ -140,6 +157,11 @@ trait ISuggestOptions extends StObject {
   var showSnippets: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Enable or disable the suggest status bar.
+    */
+  var showStatusBar: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Show struct-suggestions.
     */
   var showStructs: js.UndefOr[Boolean] = js.undefined
@@ -178,11 +200,6 @@ trait ISuggestOptions extends StObject {
     * Prevent quick suggestions when a snippet is active. Defaults to true.
     */
   var snippetsPreventQuickSuggestions: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Status bar related settings.
-    */
-  var statusBar: js.UndefOr[Visible] = js.undefined
 }
 object ISuggestOptions {
   
@@ -205,9 +222,13 @@ object ISuggestOptions {
     
     inline def setLocalityBonusUndefined: Self = StObject.set(x, "localityBonus", js.undefined)
     
-    inline def setMaxVisibleSuggestions(value: Double): Self = StObject.set(x, "maxVisibleSuggestions", value.asInstanceOf[js.Any])
+    inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    inline def setMaxVisibleSuggestionsUndefined: Self = StObject.set(x, "maxVisibleSuggestions", js.undefined)
+    inline def setPreviewMode(value: prefix | subword | subwordSmart): Self = StObject.set(x, "previewMode", value.asInstanceOf[js.Any])
+    
+    inline def setPreviewModeUndefined: Self = StObject.set(x, "previewMode", js.undefined)
+    
+    inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
     inline def setShareSuggestSelections(value: Boolean): Self = StObject.set(x, "shareSuggestSelections", value.asInstanceOf[js.Any])
     
@@ -228,6 +249,10 @@ object ISuggestOptions {
     inline def setShowConstructors(value: Boolean): Self = StObject.set(x, "showConstructors", value.asInstanceOf[js.Any])
     
     inline def setShowConstructorsUndefined: Self = StObject.set(x, "showConstructors", js.undefined)
+    
+    inline def setShowDeprecated(value: Boolean): Self = StObject.set(x, "showDeprecated", value.asInstanceOf[js.Any])
+    
+    inline def setShowDeprecatedUndefined: Self = StObject.set(x, "showDeprecated", js.undefined)
     
     inline def setShowEnumMembers(value: Boolean): Self = StObject.set(x, "showEnumMembers", value.asInstanceOf[js.Any])
     
@@ -260,6 +285,10 @@ object ISuggestOptions {
     inline def setShowIcons(value: Boolean): Self = StObject.set(x, "showIcons", value.asInstanceOf[js.Any])
     
     inline def setShowIconsUndefined: Self = StObject.set(x, "showIcons", js.undefined)
+    
+    inline def setShowInlineDetails(value: Boolean): Self = StObject.set(x, "showInlineDetails", value.asInstanceOf[js.Any])
+    
+    inline def setShowInlineDetailsUndefined: Self = StObject.set(x, "showInlineDetails", js.undefined)
     
     inline def setShowInterfaces(value: Boolean): Self = StObject.set(x, "showInterfaces", value.asInstanceOf[js.Any])
     
@@ -297,6 +326,10 @@ object ISuggestOptions {
     
     inline def setShowSnippetsUndefined: Self = StObject.set(x, "showSnippets", js.undefined)
     
+    inline def setShowStatusBar(value: Boolean): Self = StObject.set(x, "showStatusBar", value.asInstanceOf[js.Any])
+    
+    inline def setShowStatusBarUndefined: Self = StObject.set(x, "showStatusBar", js.undefined)
+    
     inline def setShowStructs(value: Boolean): Self = StObject.set(x, "showStructs", value.asInstanceOf[js.Any])
     
     inline def setShowStructsUndefined: Self = StObject.set(x, "showStructs", js.undefined)
@@ -328,9 +361,5 @@ object ISuggestOptions {
     inline def setSnippetsPreventQuickSuggestions(value: Boolean): Self = StObject.set(x, "snippetsPreventQuickSuggestions", value.asInstanceOf[js.Any])
     
     inline def setSnippetsPreventQuickSuggestionsUndefined: Self = StObject.set(x, "snippetsPreventQuickSuggestions", js.undefined)
-    
-    inline def setStatusBar(value: Visible): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
-    
-    inline def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
   }
 }

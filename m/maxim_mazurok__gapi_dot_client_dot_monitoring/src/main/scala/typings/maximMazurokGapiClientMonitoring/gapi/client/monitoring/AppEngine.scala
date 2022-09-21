@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppEngine extends StObject {
   
   /**
-    * The ID of the App Engine module underlying this service. Corresponds to the module_id resource label in the gae_app monitored resource:
-    * https://cloud.google.com/monitoring/api/resources#tag_gae_app
+    * The ID of the App Engine module underlying this service. Corresponds to the module_id resource label in the gae_app monitored resource
+    * (https://cloud.google.com/monitoring/api/resources#tag_gae_app).
     */
   var moduleId: js.UndefOr[String] = js.undefined
 }

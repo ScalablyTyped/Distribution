@@ -4,7 +4,6 @@ import typings.react.mod.PureComponent
 import typings.rmcCalendar.dataTypesMod.Models.Locale
 import typings.rmcCalendar.rmcCalendarStrings.one
 import typings.rmcCalendar.rmcCalendarStrings.range
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object confirmPanelMod {
   
   @JSImport("rmc-calendar/lib/calendar/ConfirmPanel", JSImport.Default)
   @js.native
-  class default () extends ConfirmPanel
+  open class default () extends ConfirmPanel
   /* static members */
   object default {
     
@@ -29,9 +28,9 @@ object confirmPanelMod {
   
   @js.native
   trait ConfirmPanel
-    extends PureComponent[ConfirmPanelPropsType, js.Object, js.Any] {
+    extends PureComponent[ConfirmPanelPropsType, js.Object, Any] {
     
-    def formatDate(date: Date): String = js.native
+    def formatDate(date: js.Date): String = js.native
     
     def onConfirm(): Unit = js.native
   }
@@ -40,7 +39,7 @@ object confirmPanelMod {
     
     var disableBtn: js.UndefOr[Boolean] = js.undefined
     
-    var endDateTime: js.UndefOr[Date] = js.undefined
+    var endDateTime: js.UndefOr[js.Date] = js.undefined
     
     var formatStr: js.UndefOr[String] = js.undefined
     
@@ -50,7 +49,7 @@ object confirmPanelMod {
     
     var onlyConfirm: js.UndefOr[Boolean] = js.undefined
     
-    var startDateTime: js.UndefOr[Date] = js.undefined
+    var startDateTime: js.UndefOr[js.Date] = js.undefined
     
     var `type`: js.UndefOr[one | range] = js.undefined
   }
@@ -67,7 +66,7 @@ object confirmPanelMod {
       
       inline def setDisableBtnUndefined: Self = StObject.set(x, "disableBtn", js.undefined)
       
-      inline def setEndDateTime(value: Date): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
+      inline def setEndDateTime(value: js.Date): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
       
       inline def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
       
@@ -83,7 +82,7 @@ object confirmPanelMod {
       
       inline def setOnlyConfirmUndefined: Self = StObject.set(x, "onlyConfirm", js.undefined)
       
-      inline def setStartDateTime(value: Date): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+      inline def setStartDateTime(value: js.Date): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
       
       inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
       

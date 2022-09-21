@@ -17,17 +17,17 @@ trait OfficeDocumentView
 object OfficeDocumentView {
   
   inline def apply(
-    Selection: js.Any,
+    Selection: Any,
     ViewSettings: XPropertySet,
     acquire: () => Unit,
     addSelectionChangeListener: XSelectionChangeListener => Unit,
     getControl: XControlModel => XControl,
-    getSelection: () => js.Any,
+    getSelection: () => Any,
     getViewSettings: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeSelectionChangeListener: XSelectionChangeListener => Unit,
-    select: js.Any => Boolean
+    select: Any => Boolean
   ): OfficeDocumentView = {
     val __obj = js.Dynamic.literal(Selection = Selection.asInstanceOf[js.Any], ViewSettings = ViewSettings.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addSelectionChangeListener = js.Any.fromFunction1(addSelectionChangeListener), getControl = js.Any.fromFunction1(getControl), getSelection = js.Any.fromFunction0(getSelection), getViewSettings = js.Any.fromFunction0(getViewSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSelectionChangeListener = js.Any.fromFunction1(removeSelectionChangeListener), select = js.Any.fromFunction1(select))
     __obj.asInstanceOf[OfficeDocumentView]

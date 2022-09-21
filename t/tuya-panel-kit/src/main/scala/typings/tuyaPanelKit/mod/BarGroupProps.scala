@@ -15,17 +15,69 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BarGroupProps extends StObject {
   
+  /**
+    * @language zh-CN
+    * @description 子元素
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Sub element
+    * @defaultValue undefined
+    */
   var children: ReactNode
   
+  /**
+    * @language zh-CN
+    * @description 按钮的大小
+    * @defaultValue  'normal'
+    */
+  /**
+    * @language en-US
+    * @description The size of the button
+    * @defaultValue  'normal'
+    */
   var size: js.UndefOr[large | normal | small | Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 组合底部栏的容器样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description Container styles for combining bottom columns
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 当 type 为 'swiper' 时的配置参数
+    * @types <a target='_blank' href='https://github.com/DefinitelyTyped/DefinitelyTyped/blob/15d697b0e21723a4c284a837cddc9c35e86a85a3/types/tuya-panel-kit/index.d.ts#L119'>CarouselProps</a>
+    * @defaultValue { selectIndex: 0 }
+    */
+  /**
+    * @language en-US
+    * @description When type is swiper, this is the configuration of swiper.
+    * @types <a target='_blank' href='https://github.com/DefinitelyTyped/DefinitelyTyped/blob/15d697b0e21723a4c284a837cddc9c35e86a85a3/types/tuya-panel-kit/index.d.ts#L119'>CarouselProps</a>
+    * @defaultValue { selectIndex: 0 }
+    */
   var swiperConfig: js.UndefOr[CarouselProps] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 组合底部栏的类型
+    * @defaultValue 'warp'
+    */
+  /**
+    * @language en-US
+    * @description Type of the bottom column of the group
+    * @defaultValue 'warp'
+    */
   var `type`: js.UndefOr[warp | swiper | divide] = js.undefined
-  
-  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object BarGroupProps {
   
@@ -57,11 +109,5 @@ object BarGroupProps {
     inline def setType(value: warp | swiper | divide): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-    
-    inline def setWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
-    
-    inline def setWrapperStyleNull: Self = StObject.set(x, "wrapperStyle", null)
-    
-    inline def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
   }
 }

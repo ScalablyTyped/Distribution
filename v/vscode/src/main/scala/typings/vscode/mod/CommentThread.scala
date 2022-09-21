@@ -27,17 +27,17 @@ trait CommentThread extends StObject {
     * Context value of the comment thread. This can be used to contribute thread specific actions.
     * For example, a comment thread is given a context value as `editable`. When contributing actions to `comments/commentThread/title`
     * using `menus` extension point, you can specify context value for key `commentThread` in `when` expression like `commentThread == editable`.
-    * ```
-    *    "contributes": {
-    *        "menus": {
-    *            "comments/commentThread/title": [
-    *                {
-    *                    "command": "extension.deleteCommentThread",
-    *                    "when": "commentThread == editable"
-    *                }
-    *            ]
-    *        }
-    *    }
+    * ```json
+    * "contributes": {
+    *   "menus": {
+    *     "comments/commentThread/title": [
+    *       {
+    *         "command": "extension.deleteCommentThread",
+    *         "when": "commentThread == editable"
+    *       }
+    *     ]
+    *   }
+    * }
     * ```
     * This will show action `extension.deleteCommentThread` only for comment threads with `contextValue` is `editable`.
     */
@@ -51,13 +51,13 @@ trait CommentThread extends StObject {
   def dispose(): Unit
   
   /**
-    * The optional human-readable label describing the [Comment Thread](#CommentThread)
+    * The optional human-readable label describing the {@link CommentThread Comment Thread}
     */
   var label: js.UndefOr[String] = js.undefined
   
   /**
     * The range the comment thread is located within the document. The thread icon will be shown
-    * at the first line of the range.
+    * at the last line of the range.
     */
   var range: Range
   
@@ -88,7 +88,7 @@ object CommentThread {
     
     inline def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value*))
     
     inline def setContextValue(value: String): Self = StObject.set(x, "contextValue", value.asInstanceOf[js.Any])
     

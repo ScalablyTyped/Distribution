@@ -50,7 +50,7 @@ object Block {
     
     inline def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
     
-    inline def setParagraphsVarargs(value: Paragraph*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
+    inline def setParagraphsVarargs(value: Paragraph*): Self = StObject.set(x, "paragraphs", js.Array(value*))
     
     inline def setProperty(value: TextProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     

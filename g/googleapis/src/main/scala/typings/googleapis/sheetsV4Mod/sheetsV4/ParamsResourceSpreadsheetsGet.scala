@@ -1,9 +1,5 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,7 @@ trait ParamsResourceSpreadsheetsGet
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * True if grid data should be returned. This parameter is ignored if a
-    * field mask was set in the request.
+    * True if grid data should be returned. This parameter is ignored if a field mask was set in the request.
     */
   var includeGridData: js.UndefOr[Boolean] = js.undefined
   
@@ -42,10 +32,6 @@ object ParamsResourceSpreadsheetsGet {
   
   extension [Self <: ParamsResourceSpreadsheetsGet](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setIncludeGridData(value: Boolean): Self = StObject.set(x, "includeGridData", value.asInstanceOf[js.Any])
     
     inline def setIncludeGridDataUndefined: Self = StObject.set(x, "includeGridData", js.undefined)
@@ -54,7 +40,7 @@ object ParamsResourceSpreadsheetsGet {
     
     inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    inline def setRangesVarargs(value: String*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: String*): Self = StObject.set(x, "ranges", js.Array(value*))
     
     inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     

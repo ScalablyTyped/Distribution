@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.UI.WebUI
 
-import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Activation.ActivationKind
 import typings.winrtUwp.Windows.ApplicationModel.Activation.ApplicationExecutionState
 import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
@@ -37,7 +36,7 @@ abstract class WebUIAppointmentsProviderShowTimeFrameActivatedEventArgs ()
   
   /** Gets the starting date and time of the time frame to be shown. */
   /* CompleteClass */
-  var timeToShow: Date = js.native
+  var timeToShow: js.Date = js.native
   
   /** Gets the action to be performed by the appointments provider. */
   /* CompleteClass */

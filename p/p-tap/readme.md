@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-tap
 
-Typings are for version 3.1.0
+Typings are for version 4.0.0
 
 ## Library description:
 Tap into a promise chain without affecting its value or state
@@ -10,10 +10,10 @@ Tap into a promise chain without affecting its value or state
 | ------------------ | :-------------: |
 | Full name          | p-tap |
 | Keywords           | promise, tap, debug, log, then, catch, error, chain, pipeline, thunk, function, async, await, promises, bluebird |
-| # releases         | 3 |
-| # dependents       | 13 |
-| # downloads        | 321662 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 42337.666666666664 |
+| # stars            | 132.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-tap#readme)

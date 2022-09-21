@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("simplecrawler", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends typings.simplecrawler.crawlerMod.^ {
     def this(initialURL: String) = this()
   }

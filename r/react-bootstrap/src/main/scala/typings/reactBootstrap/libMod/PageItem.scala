@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap/lib", "PageItem")
 @js.native
-class PageItem () extends ^
+open class PageItem () extends ^

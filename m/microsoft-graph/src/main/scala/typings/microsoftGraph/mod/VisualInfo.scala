@@ -19,7 +19,7 @@ trait VisualInfo extends StObject {
     * Optional. Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell
     * UI
     */
-  var content: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var content: js.UndefOr[NullableOption[Any]] = js.undefined
   
   /**
     * Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or
@@ -54,7 +54,7 @@ object VisualInfo {
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NullableOption[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentNull: Self = StObject.set(x, "content", null)
     

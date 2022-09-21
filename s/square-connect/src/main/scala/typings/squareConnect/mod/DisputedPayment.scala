@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "DisputedPayment")
 @js.native
-class DisputedPayment () extends StObject {
+open class DisputedPayment () extends StObject {
   
   /**
     * Square-generated unique ID of the payment being disputed.

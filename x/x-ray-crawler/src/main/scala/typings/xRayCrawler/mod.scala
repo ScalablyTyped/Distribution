@@ -3,7 +3,6 @@ package typings.xRayCrawler
 import typings.httpContext.mod.Context
 import typings.httpContext.mod.Request
 import typings.httpContext.mod.Response
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback[T] = js.Function2[/* err */ Error, /* obj */ T, Unit]
+  type Callback[T] = js.Function2[/* err */ js.Error, /* obj */ T, Unit]
   
   type Driver = js.Function2[/* context */ Context, /* callback */ Callback[Context], Unit]
   

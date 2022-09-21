@@ -1,7 +1,5 @@
 package typings.zipJs
 
-import typings.std.Date
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,26 +27,21 @@ object zip {
     
     var filename: String = js.native
     
-    def getData(writer: Writer, onend: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+    def getData(writer: Writer, onend: js.Function1[/* result */ Any, Unit]): Unit = js.native
     def getData(
       writer: Writer,
-      onend: js.Function1[/* result */ js.Any, Unit],
+      onend: js.Function1[/* result */ Any, Unit],
       onprogress: js.Function2[/* progress */ Double, /* total */ Double, Unit]
     ): Unit = js.native
     def getData(
       writer: Writer,
-      onend: js.Function1[/* result */ js.Any, Unit],
+      onend: js.Function1[/* result */ Any, Unit],
       onprogress: js.Function2[/* progress */ Double, /* total */ Double, Unit],
       checkCrc32: Boolean
     ): Unit = js.native
-    def getData(
-      writer: Writer,
-      onend: js.Function1[/* result */ js.Any, Unit],
-      onprogress: Unit,
-      checkCrc32: Boolean
-    ): Unit = js.native
+    def getData(writer: Writer, onend: js.Function1[/* result */ Any, Unit], onprogress: Unit, checkCrc32: Boolean): Unit = js.native
     
-    var lastModDate: Date = js.native
+    var lastModDate: js.Date = js.native
     
     var lastModDateRaw: Double = js.native
     
@@ -62,14 +55,14 @@ object zip {
   @js.native
   trait Reader extends StObject {
     
-    def init(callback: js.Function0[Unit], onerror: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    def init(callback: js.Function0[Unit], onerror: js.Function1[/* error */ Any, Unit]): Unit = js.native
     
-    def readUint8Array(index: Double, length: Double, callback: js.Function1[/* result */ Uint8Array, Unit]): Unit = js.native
+    def readUint8Array(index: Double, length: Double, callback: js.Function1[/* result */ js.typedarray.Uint8Array, Unit]): Unit = js.native
     def readUint8Array(
       index: Double,
       length: Double,
-      callback: js.Function1[/* result */ Uint8Array, Unit],
-      onerror: js.Function1[/* error */ js.Any, Unit]
+      callback: js.Function1[/* result */ js.typedarray.Uint8Array, Unit],
+      onerror: js.Function1[/* error */ Any, Unit]
     ): Unit = js.native
     
     var size: Double = js.native
@@ -85,7 +78,7 @@ object zip {
     
     var directory: js.UndefOr[Boolean] = js.undefined
     
-    var lastModDate: js.UndefOr[Date] = js.undefined
+    var lastModDate: js.UndefOr[js.Date] = js.undefined
     
     var level: js.UndefOr[Double] = js.undefined
     
@@ -108,7 +101,7 @@ object zip {
       
       inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
       
-      inline def setLastModDate(value: Date): Self = StObject.set(x, "lastModDate", value.asInstanceOf[js.Any])
+      inline def setLastModDate(value: js.Date): Self = StObject.set(x, "lastModDate", value.asInstanceOf[js.Any])
       
       inline def setLastModDateUndefined: Self = StObject.set(x, "lastModDate", js.undefined)
       
@@ -125,14 +118,18 @@ object zip {
   @js.native
   trait Writer extends StObject {
     
-    def getData(callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
-    def getData(callback: js.Function1[/* data */ js.Any, Unit], onerror: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    def getData(callback: js.Function1[/* data */ Any, Unit]): Unit = js.native
+    def getData(callback: js.Function1[/* data */ Any, Unit], onerror: js.Function1[/* error */ Any, Unit]): Unit = js.native
     
     def init(callback: js.Function0[Unit]): Unit = js.native
-    def init(callback: js.Function0[Unit], onerror: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    def init(callback: js.Function0[Unit], onerror: js.Function1[/* error */ Any, Unit]): Unit = js.native
     
-    def writeUint8Array(array: Uint8Array, callback: js.Function0[Unit]): Unit = js.native
-    def writeUint8Array(array: Uint8Array, callback: js.Function0[Unit], onerror: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    def writeUint8Array(array: js.typedarray.Uint8Array, callback: js.Function0[Unit]): Unit = js.native
+    def writeUint8Array(
+      array: js.typedarray.Uint8Array,
+      callback: js.Function0[Unit],
+      onerror: js.Function1[/* error */ Any, Unit]
+    ): Unit = js.native
   }
   
   @js.native
@@ -163,6 +160,6 @@ object zip {
     ): Unit = js.native
     def add(name: String, reader: Reader, onend: js.Function0[Unit], onprogress: Unit, options: WriteOptions): Unit = js.native
     
-    def close(callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+    def close(callback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   }
 }

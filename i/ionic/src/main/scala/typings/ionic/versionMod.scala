@@ -10,7 +10,7 @@ object versionMod {
   
   @JSImport("ionic/commands/version", "VersionCommand")
   @js.native
-  class VersionCommand protected () extends Command {
+  open class VersionCommand protected () extends Command {
     def this(namespace: INamespace) = this()
   }
 }

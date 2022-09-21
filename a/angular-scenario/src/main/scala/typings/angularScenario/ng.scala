@@ -8,18 +8,18 @@ object ng {
   
   trait IAngularStatic extends StObject {
     
-    var scenario: js.Any
+    var scenario: Any
   }
   object IAngularStatic {
     
-    inline def apply(scenario: js.Any): IAngularStatic = {
+    inline def apply(scenario: Any): IAngularStatic = {
       val __obj = js.Dynamic.literal(scenario = scenario.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAngularStatic]
     }
     
     extension [Self <: IAngularStatic](x: Self) {
       
-      inline def setScenario(value: js.Any): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
+      inline def setScenario(value: Any): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
     }
   }
 }

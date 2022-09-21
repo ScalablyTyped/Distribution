@@ -27,7 +27,7 @@ object ListAutoMLJobsResponse {
     
     inline def setAutoMLJobSummaries(value: AutoMLJobSummaries): Self = StObject.set(x, "AutoMLJobSummaries", value.asInstanceOf[js.Any])
     
-    inline def setAutoMLJobSummariesVarargs(value: AutoMLJobSummary*): Self = StObject.set(x, "AutoMLJobSummaries", js.Array(value :_*))
+    inline def setAutoMLJobSummariesVarargs(value: AutoMLJobSummary*): Self = StObject.set(x, "AutoMLJobSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,7 @@ object XTransactionListener {
     disposing: EventObject => Unit,
     preCommit: EventObject => Unit,
     preRevert: EventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     reverted: EventObject => Unit
   ): XTransactionListener = {

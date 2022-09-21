@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SmartTags extends StObject {
   
   def Add(Name: String): SmartTag = js.native
-  def Add(Name: String, Range: js.Any): SmartTag = js.native
-  def Add(Name: String, Range: js.Any, Properties: js.Any): SmartTag = js.native
-  def Add(Name: String, Range: Unit, Properties: js.Any): SmartTag = js.native
+  def Add(Name: String, Range: Any): SmartTag = js.native
+  def Add(Name: String, Range: Any, Properties: Any): SmartTag = js.native
+  def Add(Name: String, Range: Unit, Properties: Any): SmartTag = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -18,9 +18,9 @@ trait SmartTags extends StObject {
   
   val Creator: Double = js.native
   
-  def Item(Index: js.Any): SmartTag = js.native
+  def Item(Index: Any): SmartTag = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def SmartTagsByType(Name: String): SmartTags = js.native
   

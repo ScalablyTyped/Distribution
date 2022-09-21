@@ -1,16 +1,21 @@
 package typings.googleapis
 
 import typings.gaxios.commonMod.GaxiosPromise
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
+import typings.googleAuthLibrary.googleauthMod.JSONClient
 import typings.googleapis.googleapisStrings.v1
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.googleapisCommon.mod.BaseExternalAccountClient
+import typings.googleapisCommon.mod.Compute
+import typings.googleapisCommon.mod.GoogleAuth
+import typings.googleapisCommon.mod.JWT
+import typings.googleapisCommon.mod.OAuth2Client
+import typings.googleapisCommon.mod.UserRefreshClient
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,24 +24,9 @@ object kgsearchV1Mod {
   
   object kgsearchV1 {
     
-    /**
-      * Knowledge Graph Search API
-      *
-      * Searches the Google Knowledge Graph for entities.
-      *
-      * @example
-      * const {google} = require('googleapis');
-      * const kgsearch = google.kgsearch('v1');
-      *
-      * @namespace kgsearch
-      * @type {Function}
-      * @version v1
-      * @variation v1
-      * @param {object=} options Options for Kgsearch
-      */
     @JSImport("googleapis/build/src/apis/kgsearch/v1", "kgsearch_v1.Kgsearch")
     @js.native
-    class Kgsearch protected () extends StObject {
+    open class Kgsearch protected () extends StObject {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
       
@@ -47,31 +37,11 @@ object kgsearchV1Mod {
     
     @JSImport("googleapis/build/src/apis/kgsearch/v1", "kgsearch_v1.Resource$Entities")
     @js.native
-    class ResourceEntities protected () extends StObject {
+    open class ResourceEntities protected () extends StObject {
       def this(context: APIRequestContext) = this()
       
       var context: APIRequestContext = js.native
       
-      /**
-        * kgsearch.entities.search
-        * @desc Searches Knowledge Graph for entities that match the constraints. A
-        * list of matched entities will be returned in response, which will be in
-        * JSON-LD format and compatible with http://schema.org
-        * @alias kgsearch.entities.search
-        * @memberOf! ()
-        *
-        * @param {object} params Parameters for request
-        * @param {string=} params.ids The list of entity id to be used for search instead of query string. To specify multiple ids in the HTTP request, repeat the parameter in the URL as in ...?ids=A&ids=B
-        * @param {boolean=} params.indent Enables indenting of json results.
-        * @param {string=} params.languages The list of language codes (defined in ISO 693) to run the query with, e.g. 'en'.
-        * @param {integer=} params.limit Limits the number of entities to be returned.
-        * @param {boolean=} params.prefix Enables prefix match against names and aliases of entities
-        * @param {string=} params.query The literal query string for search.
-        * @param {string=} params.types Restricts returned entities with these types, e.g. Person (as defined in http://schema.org/Person). If multiple types are specified, returned entities will contain one or more of these types.
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
-        */
       def search(): GaxiosPromise[SchemaSearchResponse] = js.native
       def search(callback: BodyResponseCallback[SchemaSearchResponse]): Unit = js.native
       def search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSearchResponse] = js.native
@@ -79,14 +49,84 @@ object kgsearchV1Mod {
       def search(params: ParamsResourceEntitiesSearch, callback: BodyResponseCallback[SchemaSearchResponse]): Unit = js.native
       def search(
         params: ParamsResourceEntitiesSearch,
-        options: BodyResponseCallback[SchemaSearchResponse],
-        callback: BodyResponseCallback[SchemaSearchResponse]
+        options: BodyResponseCallback[Readable | SchemaSearchResponse],
+        callback: BodyResponseCallback[Readable | SchemaSearchResponse]
       ): Unit = js.native
       def search(params: ParamsResourceEntitiesSearch, options: MethodOptions): GaxiosPromise[SchemaSearchResponse] = js.native
       def search(
         params: ParamsResourceEntitiesSearch,
         options: MethodOptions,
         callback: BodyResponseCallback[SchemaSearchResponse]
+      ): Unit = js.native
+      /**
+        * Searches Knowledge Graph for entities that match the constraints. A list of matched entities will be returned in response, which will be in JSON-LD format and compatible with http://schema.org
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/kgsearch.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
+        *
+        * const {google} = require('googleapis');
+        * const kgsearch = google.kgsearch('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: [],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await kgsearch.entities.search({
+        *     // The list of entity id to be used for search instead of query string. To specify multiple ids in the HTTP request, repeat the parameter in the URL as in ...?ids=A&ids=B
+        *     ids: 'placeholder-value',
+        *     // Enables indenting of json results.
+        *     indent: 'placeholder-value',
+        *     // The list of language codes (defined in ISO 693) to run the query with, e.g. 'en'.
+        *     languages: 'placeholder-value',
+        *     // Limits the number of entities to be returned.
+        *     limit: 'placeholder-value',
+        *     // Enables prefix match against names and aliases of entities
+        *     prefix: 'placeholder-value',
+        *     // The literal query string for search.
+        *     query: 'placeholder-value',
+        *     // Restricts returned entities with these types, e.g. Person (as defined in http://schema.org/Person). If multiple types are specified, returned entities will contain one or more of these types.
+        *     types: 'placeholder-value',
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {
+        *   //   "@context": {},
+        *   //   "@type": {},
+        *   //   "itemListElement": []
+        *   // }
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
+        */
+      def search(params: ParamsResourceEntitiesSearch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def search(
+        params: ParamsResourceEntitiesSearch,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
       ): Unit = js.native
     }
     
@@ -114,14 +154,7 @@ object kgsearchV1Mod {
          with StandardParameters {
       
       /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-      
-      /**
-        * The list of entity id to be used for search instead of query string. To
-        * specify multiple ids in the HTTP request, repeat the parameter in the URL
-        * as in ...?ids=A&ids=B
+        * The list of entity id to be used for search instead of query string. To specify multiple ids in the HTTP request, repeat the parameter in the URL as in ...?ids=A&ids=B
         */
       var ids: js.UndefOr[js.Array[String]] = js.undefined
       
@@ -131,8 +164,7 @@ object kgsearchV1Mod {
       var indent: js.UndefOr[Boolean] = js.undefined
       
       /**
-        * The list of language codes (defined in ISO 693) to run the query with,
-        * e.g. 'en'.
+        * The list of language codes (defined in ISO 693) to run the query with, e.g. 'en'.
         */
       var languages: js.UndefOr[js.Array[String]] = js.undefined
       
@@ -152,9 +184,7 @@ object kgsearchV1Mod {
       var query: js.UndefOr[String] = js.undefined
       
       /**
-        * Restricts returned entities with these types, e.g. Person (as defined in
-        * http://schema.org/Person). If multiple types are specified, returned
-        * entities will contain one or more of these types.
+        * Restricts returned entities with these types, e.g. Person (as defined in http://schema.org/Person). If multiple types are specified, returned entities will contain one or more of these types.
         */
       var types: js.UndefOr[js.Array[String]] = js.undefined
     }
@@ -167,15 +197,11 @@ object kgsearchV1Mod {
       
       extension [Self <: ParamsResourceEntitiesSearch](x: Self) {
         
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-        
         inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
         
         inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
         
-        inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+        inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
         
         inline def setIndent(value: Boolean): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
         
@@ -185,7 +211,7 @@ object kgsearchV1Mod {
         
         inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
         
-        inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+        inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value*))
         
         inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
         
@@ -203,31 +229,26 @@ object kgsearchV1Mod {
         
         inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
         
-        inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+        inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
       }
     }
     
-    /**
-      * Response message includes the context and a list of matching results which
-      * contain the detail of associated entities.
-      */
     trait SchemaSearchResponse extends StObject {
       
       /**
-        * The local context applicable for the response. See more details at
-        * http://www.w3.org/TR/json-ld/#context-definitions.
+        * The local context applicable for the response. See more details at http://www.w3.org/TR/json-ld/#context-definitions.
         */
-      var `@context`: js.UndefOr[js.Any] = js.undefined
+      var `@context`: js.UndefOr[Any | Null] = js.undefined
       
       /**
         * The schema type of top-level JSON-LD object, e.g. ItemList.
         */
-      var `@type`: js.UndefOr[js.Any] = js.undefined
+      var `@type`: js.UndefOr[Any | Null] = js.undefined
       
       /**
         * The item list of search results.
         */
-      var itemListElement: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var itemListElement: js.UndefOr[js.Array[Any] | Null] = js.undefined
     }
     object SchemaSearchResponse {
       
@@ -238,19 +259,25 @@ object kgsearchV1Mod {
       
       extension [Self <: SchemaSearchResponse](x: Self) {
         
-        inline def `set@context`(value: js.Any): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
+        inline def `set@context`(value: Any): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
+        
+        inline def `set@contextNull`: Self = StObject.set(x, "@context", null)
         
         inline def `set@contextUndefined`: Self = StObject.set(x, "@context", js.undefined)
         
-        inline def `set@type`(value: js.Any): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
+        inline def `set@type`(value: Any): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
+        
+        inline def `set@typeNull`: Self = StObject.set(x, "@type", null)
         
         inline def `set@typeUndefined`: Self = StObject.set(x, "@type", js.undefined)
         
-        inline def setItemListElement(value: js.Array[js.Any]): Self = StObject.set(x, "itemListElement", value.asInstanceOf[js.Any])
+        inline def setItemListElement(value: js.Array[Any]): Self = StObject.set(x, "itemListElement", value.asInstanceOf[js.Any])
+        
+        inline def setItemListElementNull: Self = StObject.set(x, "itemListElement", null)
         
         inline def setItemListElementUndefined: Self = StObject.set(x, "itemListElement", js.undefined)
         
-        inline def setItemListElementVarargs(value: js.Any*): Self = StObject.set(x, "itemListElement", js.Array(value :_*))
+        inline def setItemListElementVarargs(value: Any*): Self = StObject.set(x, "itemListElement", js.Array(value*))
       }
     }
     
@@ -273,6 +300,13 @@ object kgsearchV1Mod {
       var alt: js.UndefOr[String] = js.undefined
       
       /**
+        * Auth client or API Key for the request
+        */
+      var auth: js.UndefOr[
+            String | OAuth2Client | JWT | Compute | UserRefreshClient | BaseExternalAccountClient | GoogleAuth[JSONClient]
+          ] = js.undefined
+      
+      /**
         * JSONP
         */
       var callback: js.UndefOr[String] = js.undefined
@@ -283,9 +317,7 @@ object kgsearchV1Mod {
       var fields: js.UndefOr[String] = js.undefined
       
       /**
-        * API key. Your API key identifies your project and provides you with API
-        * access, quota, and reports. Required unless you provide an OAuth 2.0
-        * token.
+        * API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.
         */
       var key: js.UndefOr[String] = js.undefined
       
@@ -300,9 +332,7 @@ object kgsearchV1Mod {
       var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
-        * Available to use for quota purposes for server-side applications. Can be
-        * any arbitrary string assigned to a user, but should not exceed 40
-        * characters.
+        * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
         */
       var quotaUser: js.UndefOr[String] = js.undefined
       
@@ -336,6 +366,12 @@ object kgsearchV1Mod {
         inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         
         inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+        
+        inline def setAuth(
+          value: String | OAuth2Client | JWT | Compute | UserRefreshClient | BaseExternalAccountClient | GoogleAuth[JSONClient]
+        ): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
         inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
         

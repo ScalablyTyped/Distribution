@@ -10,31 +10,30 @@ object ratingBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Rating/Rating.base", "RatingBase")
   @js.native
-  class RatingBase protected ()
-    extends Component[IRatingProps, IRatingState, js.Any] {
+  open class RatingBase protected () extends Component[IRatingProps, IRatingState, Any] {
     def this(props: IRatingProps) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _getClampedRating: js.Any = js.native
+    /* private */ var _getClampedRating: Any = js.native
     
-    /* private */ var _getFillingPercentage: js.Any = js.native
+    /* private */ var _getFillingPercentage: Any = js.native
     
-    /* private */ var _getInitialValue: js.Any = js.native
+    /* private */ var _getInitialValue: Any = js.native
     
-    /* private */ var _getLabel: js.Any = js.native
+    /* private */ var _getLabel: Any = js.native
     
-    /* private */ var _getRating: js.Any = js.native
+    /* private */ var _getRating: Any = js.native
     
-    /* private */ var _getStarId: js.Any = js.native
+    /* private */ var _getStarId: Any = js.native
     
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _id: Any = js.native
     
-    /* private */ var _labelId: js.Any = js.native
+    /* private */ var _labelId: Any = js.native
     
-    /* private */ var _min: js.Any = js.native
+    /* private */ var _min: Any = js.native
     
-    /* private */ var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: Any = js.native
   }
   /* static members */
   object RatingBase {

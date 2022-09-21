@@ -10,7 +10,7 @@ trait IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDim
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * A caption for the measures dimension.
@@ -55,7 +55,7 @@ object IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDi
     
     inline def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
     
-    inline def setMeasuresVarargs(value: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMeasure*): Self = StObject.set(x, "measures", js.Array(value :_*))
+    inline def setMeasuresVarargs(value: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMeasure*): Self = StObject.set(x, "measures", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

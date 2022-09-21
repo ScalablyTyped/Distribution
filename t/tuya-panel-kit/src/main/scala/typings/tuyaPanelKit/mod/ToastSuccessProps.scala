@@ -10,12 +10,54 @@ trait ToastSuccessProps
   extends StObject
      with ToastProps {
   
+  /**
+    * @language zh-CN
+    * @description 图标颜色
+    * @defaultValue '#FFF'
+    */
+  /**
+    * @language en-US
+    * @description Icon color
+    * @defaultValue '#FFF'
+    */
   var color: js.UndefOr[String] = js.undefined
   
-  var d: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 图标路径
+    * @defaultValue <a target="_blank" href="https://github.com/tuya/tuya-panel-kit/blob/master/src/components/res/iconfont.json#L4">iconfont.correct</a>
+    */
+  /**
+    * @language en-US
+    * @description 图标路径
+    * @defaultValue <a target="_blank" href="https://github.com/tuya/tuya-panel-kit/blob/master/src/components/res/iconfont.json#L4">iconfont.correct</a>
+    */
+  var d: js.UndefOr[String | js.Array[Any]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Icon style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var iconfontStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标尺寸
+    * @defaultValue cx(28)
+    */
+  /**
+    * @language en-US
+    * @description Icon size
+    * @defaultValue cx(40)
+    */
   var size: js.UndefOr[Double] = js.undefined
 }
 object ToastSuccessProps {
@@ -31,11 +73,11 @@ object ToastSuccessProps {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setD(value: String | js.Array[js.Any]): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: String | js.Array[Any]): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
-    inline def setDVarargs(value: js.Any*): Self = StObject.set(x, "d", js.Array(value :_*))
+    inline def setDVarargs(value: Any*): Self = StObject.set(x, "d", js.Array(value*))
     
     inline def setIconfontStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "iconfontStyle", value.asInstanceOf[js.Any])
     

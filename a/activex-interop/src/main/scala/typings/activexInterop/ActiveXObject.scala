@@ -10,5 +10,5 @@ trait ActiveXObject
   extends StObject
      with Instantiable1[
       /* keyof activex-interop.ActiveXObjectNameMap */ /* progid */ String, 
-      /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[keyof activex-interop.ActiveXObjectNameMap] */ js.Any
+      (/* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[keyof activex-interop.ActiveXObjectNameMap] */ js.Any) | Any
     ]

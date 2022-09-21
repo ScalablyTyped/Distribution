@@ -1,0 +1,15 @@
+package typings.workerbApi
+
+import typings.workerbApi.workerbApiStrings.`by_$LeftcurlybracketQueryMethods Verticalline ApostrophelabelApostrophe Verticalline ApostropheplaceholderApostropheRightcurlybracket`
+import typings.workerbApi.workerbApiStrings.`by_$LeftcurlybracketQueryMethods Verticalline Apostrophequery_selector_allApostropheRightcurlybracket`
+import typings.workerbApi.workerbApiStrings.by_$LeftcurlybracketQueryMethodsRightcurlybracket
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+
+type clickQueryMethods = by_$LeftcurlybracketQueryMethodsRightcurlybracket
+
+type getAttributeQueryMethods = `by_$LeftcurlybracketQueryMethods Verticalline Apostrophequery_selector_allApostropheRightcurlybracket`
+
+type typeQueryMethods = `by_$LeftcurlybracketQueryMethods Verticalline ApostrophelabelApostrophe Verticalline ApostropheplaceholderApostropheRightcurlybracket`

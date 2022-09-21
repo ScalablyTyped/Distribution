@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("blob/BlobMetadata", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with BlobMetadata {
     

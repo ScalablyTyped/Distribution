@@ -10,10 +10,10 @@ Provides an interface to convert PDF's pages to png files in Node.js by using Im
 | ------------------ | :-------------: |
 | Full name          | pdf-image |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 425352 |
-| # stars            | 13 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 22078.0 |
+| # stars            | 220.0 |
 
 ## Links
 - [Homepage](https://github.com/mooz/node-pdf-image#readme)

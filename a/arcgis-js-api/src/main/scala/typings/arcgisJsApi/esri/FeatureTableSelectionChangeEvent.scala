@@ -24,10 +24,10 @@ object FeatureTableSelectionChangeEvent {
     
     inline def setAdded(value: js.Array[FeatureTableSelectionChangeEventAdded]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    inline def setAddedVarargs(value: FeatureTableSelectionChangeEventAdded*): Self = StObject.set(x, "added", js.Array(value :_*))
+    inline def setAddedVarargs(value: FeatureTableSelectionChangeEventAdded*): Self = StObject.set(x, "added", js.Array(value*))
     
     inline def setRemoved(value: js.Array[FeatureTableSelectionChangeEventRemoved]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    inline def setRemovedVarargs(value: FeatureTableSelectionChangeEventRemoved*): Self = StObject.set(x, "removed", js.Array(value :_*))
+    inline def setRemovedVarargs(value: FeatureTableSelectionChangeEventRemoved*): Self = StObject.set(x, "removed", js.Array(value*))
   }
 }

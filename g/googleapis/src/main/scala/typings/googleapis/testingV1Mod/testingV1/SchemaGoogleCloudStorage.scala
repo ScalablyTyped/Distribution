@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A storage location within Google cloud storage (GCS).
-  */
 trait SchemaGoogleCloudStorage extends StObject {
   
   /**
-    * Required. The path to a directory in GCS that will eventually contain the
-    * results for this test. The requesting user must have write access on the
-    * bucket in the supplied path.
+    * Required. The path to a directory in GCS that will eventually contain the results for this test. The requesting user must have write access on the bucket in the supplied path.
     */
-  var gcsPath: js.UndefOr[String] = js.undefined
+  var gcsPath: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudStorage {
   
@@ -26,6 +21,8 @@ object SchemaGoogleCloudStorage {
   extension [Self <: SchemaGoogleCloudStorage](x: Self) {
     
     inline def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
+    
+    inline def setGcsPathNull: Self = StObject.set(x, "gcsPath", null)
     
     inline def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
   }

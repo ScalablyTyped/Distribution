@@ -18,6 +18,7 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,10 +31,10 @@ object inputMod extends Shortcut {
   
   trait InputProps extends StObject {
     
-    var accessibilityIndex: Double
+    var activeDescendantId: js.UndefOr[String] = js.undefined
     
     /** Pass accessibility props to input */
-    var attrs: js.Object
+    var attrs: Record[String, Any]
     
     var autoComplete: String
     
@@ -46,6 +47,8 @@ object inputMod extends Shortcut {
     var id: String
     
     var inputElement: ReactElement
+    
+    var maxLength: js.UndefOr[Double] = js.undefined
     
     var onChange: ChangeEventHandler[HTMLInputElement | HTMLTextAreaElement | HTMLElement]
     
@@ -70,8 +73,7 @@ object inputMod extends Shortcut {
   object InputProps {
     
     inline def apply(
-      accessibilityIndex: Double,
-      attrs: js.Object,
+      attrs: Record[String, Any],
       autoComplete: String,
       autoFocus: Boolean,
       disabled: Boolean,
@@ -89,15 +91,17 @@ object inputMod extends Shortcut {
       tabIndex: Double,
       value: String
     ): InputProps = {
-      val __obj = js.Dynamic.literal(accessibilityIndex = accessibilityIndex.asInstanceOf[js.Any], attrs = attrs.asInstanceOf[js.Any], autoComplete = autoComplete.asInstanceOf[js.Any], autoFocus = autoFocus.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inputElement = inputElement.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), onCompositionEnd = js.Any.fromFunction1(onCompositionEnd), onCompositionStart = js.Any.fromFunction1(onCompositionStart), onKeyDown = js.Any.fromFunction1(onKeyDown), onMouseDown = js.Any.fromFunction1(onMouseDown), onPaste = js.Any.fromFunction1(onPaste), open = open.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], autoComplete = autoComplete.asInstanceOf[js.Any], autoFocus = autoFocus.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inputElement = inputElement.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), onCompositionEnd = js.Any.fromFunction1(onCompositionEnd), onCompositionStart = js.Any.fromFunction1(onCompositionStart), onKeyDown = js.Any.fromFunction1(onKeyDown), onMouseDown = js.Any.fromFunction1(onMouseDown), onPaste = js.Any.fromFunction1(onPaste), open = open.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputProps]
     }
     
     extension [Self <: InputProps](x: Self) {
       
-      inline def setAccessibilityIndex(value: Double): Self = StObject.set(x, "accessibilityIndex", value.asInstanceOf[js.Any])
+      inline def setActiveDescendantId(value: String): Self = StObject.set(x, "activeDescendantId", value.asInstanceOf[js.Any])
       
-      inline def setAttrs(value: js.Object): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setActiveDescendantIdUndefined: Self = StObject.set(x, "activeDescendantId", js.undefined)
+      
+      inline def setAttrs(value: Record[String, Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
       inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
       
@@ -110,6 +114,10 @@ object inputMod extends Shortcut {
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setInputElement(value: ReactElement): Self = StObject.set(x, "inputElement", value.asInstanceOf[js.Any])
+      
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
       inline def setOnChange(value: ChangeEvent[HTMLInputElement | HTMLTextAreaElement | HTMLElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       

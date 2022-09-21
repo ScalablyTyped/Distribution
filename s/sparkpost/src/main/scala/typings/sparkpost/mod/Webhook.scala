@@ -14,10 +14,10 @@ trait Webhook extends StObject {
   var active: js.UndefOr[Boolean] = js.undefined
   
   /** Object containing credentials needed to make authorized POST requests to target */
-  var auth_credentials: js.UndefOr[js.Any] = js.undefined
+  var auth_credentials: js.UndefOr[Any] = js.undefined
   
   /** Object containing details needed to request authorization credentials, as necessary */
-  var auth_request_details: js.UndefOr[js.Any] = js.undefined
+  var auth_request_details: js.UndefOr[Any] = js.undefined
   
   /** Authentication token to present in the X-MessageSystems-Webhook-Token header of POST requests to target */
   var auth_token: js.UndefOr[String] = js.undefined
@@ -47,11 +47,11 @@ object Webhook {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setAuth_credentials(value: js.Any): Self = StObject.set(x, "auth_credentials", value.asInstanceOf[js.Any])
+    inline def setAuth_credentials(value: Any): Self = StObject.set(x, "auth_credentials", value.asInstanceOf[js.Any])
     
     inline def setAuth_credentialsUndefined: Self = StObject.set(x, "auth_credentials", js.undefined)
     
-    inline def setAuth_request_details(value: js.Any): Self = StObject.set(x, "auth_request_details", value.asInstanceOf[js.Any])
+    inline def setAuth_request_details(value: Any): Self = StObject.set(x, "auth_request_details", value.asInstanceOf[js.Any])
     
     inline def setAuth_request_detailsUndefined: Self = StObject.set(x, "auth_request_details", js.undefined)
     
@@ -65,7 +65,7 @@ object Webhook {
     
     inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

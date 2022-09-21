@@ -1,6 +1,5 @@
 package typings.uirouterCore
 
-import typings.std.RegExp
 import typings.uirouterCore.paramMod.Param
 import typings.uirouterCore.paramTypesMod.ParamTypes
 import typings.uirouterCore.paramsInterfaceMod.RawParams
@@ -14,7 +13,7 @@ object urlMatcherMod {
   
   @JSImport("@uirouter/core/lib/url/urlMatcher", "UrlMatcher")
   @js.native
-  class UrlMatcher protected () extends StObject {
+  open class UrlMatcher protected () extends StObject {
     /**
       * @param pattern The pattern to compile into a matcher.
       * @param paramTypes The [[ParamTypes]] registry
@@ -30,21 +29,21 @@ object urlMatcherMod {
     ) = this()
     
     /** @internal */
-    /* private */ var _cache: js.Any = js.native
+    /* private */ var _cache: Any = js.native
     
     /** @internal */
-    /* private */ var _children: js.Any = js.native
+    /* private */ var _children: Any = js.native
     
     /** @internal */
-    /* private */ var _compiled: js.Any = js.native
+    /* private */ var _compiled: Any = js.native
     
-    /* private */ var _getDecodedParamValue: js.Any = js.native
-    
-    /** @internal */
-    /* private */ var _params: js.Any = js.native
+    /* private */ var _getDecodedParamValue: Any = js.native
     
     /** @internal */
-    /* private */ var _segments: js.Any = js.native
+    /* private */ var _params: Any = js.native
+    
+    /** @internal */
+    /* private */ var _segments: Any = js.native
     
     /**
       * Creates a new concatenated UrlMatcher
@@ -56,7 +55,7 @@ object urlMatcherMod {
     def append(url: UrlMatcher): UrlMatcher = js.native
     
     /** @internal */
-    /* private */ val config: js.Any = js.native
+    /* private */ val config: Any = js.native
     
     /**
       * Tests the specified url/path against this matcher.
@@ -85,13 +84,13 @@ object urlMatcherMod {
       * @returns The captured parameter values.
       */
     def exec(path: String): RawParams = js.native
-    def exec(path: String, search: js.Any): RawParams = js.native
-    def exec(path: String, search: js.Any, hash: String): RawParams = js.native
-    def exec(path: String, search: js.Any, hash: String, options: js.Any): RawParams = js.native
-    def exec(path: String, search: js.Any, hash: Unit, options: js.Any): RawParams = js.native
+    def exec(path: String, search: Any): RawParams = js.native
+    def exec(path: String, search: Any, hash: String): RawParams = js.native
+    def exec(path: String, search: Any, hash: String, options: Any): RawParams = js.native
+    def exec(path: String, search: Any, hash: Unit, options: Any): RawParams = js.native
     def exec(path: String, search: Unit, hash: String): RawParams = js.native
-    def exec(path: String, search: Unit, hash: String, options: js.Any): RawParams = js.native
-    def exec(path: String, search: Unit, hash: Unit, options: js.Any): RawParams = js.native
+    def exec(path: String, search: Unit, hash: String, options: Any): RawParams = js.native
+    def exec(path: String, search: Unit, hash: Unit, options: Any): RawParams = js.native
     
     /**
       * Given a set of parameter values, creates a URL from this UrlMatcher.
@@ -123,7 +122,7 @@ object urlMatcherMod {
       * @returns {T|Param|any|boolean|UrlMatcher|null}
       */
     def parameter(id: String): Param = js.native
-    def parameter(id: String, opts: js.Any): Param = js.native
+    def parameter(id: String, opts: Any): Param = js.native
     
     /**
       * @internal
@@ -133,7 +132,7 @@ object urlMatcherMod {
       *    pattern has no parameters, an empty array is returned.
       */
     def parameters(): js.Array[Param] = js.native
-    def parameters(opts: js.Any): js.Array[Param] = js.native
+    def parameters(opts: Any): js.Array[Param] = js.native
     
     /** The pattern that was passed into the constructor */
     var pattern: String = js.native
@@ -173,11 +172,11 @@ object urlMatcherMod {
     /** @internal */
     @JSImport("@uirouter/core/lib/url/urlMatcher", "UrlMatcher.nameValidator")
     @js.native
-    def nameValidator: RegExp = js.native
-    inline def nameValidator_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameValidator")(x.asInstanceOf[js.Any])
+    def nameValidator: js.RegExp = js.native
+    inline def nameValidator_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameValidator")(x.asInstanceOf[js.Any])
     
     /** @internal Given a matcher, return an array with the matcher's path segments and path params, in order */
-    inline def pathSegmentsAndParams(matcher: UrlMatcher): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pathSegmentsAndParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def pathSegmentsAndParams(matcher: UrlMatcher): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pathSegmentsAndParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** @internal Given a matcher, return an array with the matcher's query params */
     inline def queryParams(matcher: UrlMatcher): js.Array[Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Array[Param]]

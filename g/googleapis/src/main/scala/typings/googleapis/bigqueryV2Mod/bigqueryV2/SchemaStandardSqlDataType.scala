@@ -4,33 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The type of a variable, e.g., a function argument. Examples: INT64:
-  * {type_kind=&quot;INT64&quot;} ARRAY&lt;STRING&gt;:
-  * {type_kind=&quot;ARRAY&quot;, array_element_type=&quot;STRING&quot;}
-  * STRUCT&lt;x STRING, y ARRAY&lt;DATE&gt;&gt;: {type_kind=&quot;STRUCT&quot;,
-  * struct_type={fields=[      {name=&quot;x&quot;,
-  * type={type_kind=&quot;STRING&quot;}},      {name=&quot;y&quot;,
-  * type={type_kind=&quot;ARRAY&quot;, array_element_type=&quot;DATE&quot;}}
-  * ]}}
-  */
 trait SchemaStandardSqlDataType extends StObject {
   
   /**
-    * The type of the array&#39;s elements, if type_kind = &quot;ARRAY&quot;.
+    * The type of the array's elements, if type_kind = "ARRAY".
     */
   var arrayElementType: js.UndefOr[SchemaStandardSqlDataType] = js.undefined
   
   /**
-    * The fields of this struct, in order, if type_kind = &quot;STRUCT&quot;.
+    * The fields of this struct, in order, if type_kind = "STRUCT".
     */
   var structType: js.UndefOr[SchemaStandardSqlStructType] = js.undefined
   
   /**
-    * Required. The top level type of this field. Can be any standard SQL data
-    * type (e.g., &quot;INT64&quot;, &quot;DATE&quot;, &quot;ARRAY&quot;).
+    * Required. The top level type of this field. Can be any standard SQL data type (e.g., "INT64", "DATE", "ARRAY").
     */
-  var typeKind: js.UndefOr[String] = js.undefined
+  var typeKind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaStandardSqlDataType {
   
@@ -50,6 +39,8 @@ object SchemaStandardSqlDataType {
     inline def setStructTypeUndefined: Self = StObject.set(x, "structType", js.undefined)
     
     inline def setTypeKind(value: String): Self = StObject.set(x, "typeKind", value.asInstanceOf[js.Any])
+    
+    inline def setTypeKindNull: Self = StObject.set(x, "typeKind", null)
     
     inline def setTypeKindUndefined: Self = StObject.set(x, "typeKind", js.undefined)
   }

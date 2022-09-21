@@ -44,7 +44,7 @@ object b2WeldJointDef {
     localAnchorB: b2Vec2,
     referenceAngle: Double,
     `type`: Double,
-    userData: js.Any
+    userData: Any
   ): b2WeldJointDef = {
     val __obj = js.Dynamic.literal(Initialize = js.Any.fromFunction3(Initialize), bodyA = bodyA.asInstanceOf[js.Any], bodyB = bodyB.asInstanceOf[js.Any], collideConnected = collideConnected.asInstanceOf[js.Any], localAnchorA = localAnchorA.asInstanceOf[js.Any], localAnchorB = localAnchorB.asInstanceOf[js.Any], referenceAngle = referenceAngle.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeEndpointOutput extends StObject {
   
   /**
+    * Returns the description of an endpoint configuration created using the  CreateEndpointConfig  API.
+    */
+  var AsyncInferenceConfig: js.UndefOr[typings.awsSdk.sagemakerMod.AsyncInferenceConfig] = js.undefined
+  
+  /**
     * A timestamp that shows when the endpoint was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   var DataCaptureConfig: js.UndefOr[DataCaptureConfigSummary] = js.undefined
   
@@ -39,9 +44,19 @@ trait DescribeEndpointOutput extends StObject {
   var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
+    * The most recent deployment configuration for the endpoint.
+    */
+  var LastDeploymentConfig: js.UndefOr[DeploymentConfig] = js.undefined
+  
+  /**
     * A timestamp that shows when the endpoint was last modified.
     */
-  var LastModifiedTime: Timestamp
+  var LastModifiedTime: js.Date
+  
+  /**
+    * Returns the summary of an in-progress deployment. This field is only returned when the endpoint is creating or updating with a new endpoint configuration.
+    */
+  var PendingDeploymentSummary: js.UndefOr[typings.awsSdk.sagemakerMod.PendingDeploymentSummary] = js.undefined
   
   /**
     *  An array of ProductionVariantSummary objects, one for each model hosted behind this endpoint. 
@@ -51,12 +66,12 @@ trait DescribeEndpointOutput extends StObject {
 object DescribeEndpointOutput {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     EndpointArn: EndpointArn,
     EndpointConfigName: EndpointConfigName,
     EndpointName: EndpointName,
     EndpointStatus: EndpointStatus,
-    LastModifiedTime: Timestamp
+    LastModifiedTime: js.Date
   ): DescribeEndpointOutput = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], EndpointArn = EndpointArn.asInstanceOf[js.Any], EndpointConfigName = EndpointConfigName.asInstanceOf[js.Any], EndpointName = EndpointName.asInstanceOf[js.Any], EndpointStatus = EndpointStatus.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEndpointOutput]
@@ -64,7 +79,11 @@ object DescribeEndpointOutput {
   
   extension [Self <: DescribeEndpointOutput](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setAsyncInferenceConfig(value: AsyncInferenceConfig): Self = StObject.set(x, "AsyncInferenceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncInferenceConfigUndefined: Self = StObject.set(x, "AsyncInferenceConfig", js.undefined)
+    
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setDataCaptureConfig(value: DataCaptureConfigSummary): Self = StObject.set(x, "DataCaptureConfig", value.asInstanceOf[js.Any])
     
@@ -82,12 +101,20 @@ object DescribeEndpointOutput {
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastDeploymentConfig(value: DeploymentConfig): Self = StObject.set(x, "LastDeploymentConfig", value.asInstanceOf[js.Any])
+    
+    inline def setLastDeploymentConfigUndefined: Self = StObject.set(x, "LastDeploymentConfig", js.undefined)
+    
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    
+    inline def setPendingDeploymentSummary(value: PendingDeploymentSummary): Self = StObject.set(x, "PendingDeploymentSummary", value.asInstanceOf[js.Any])
+    
+    inline def setPendingDeploymentSummaryUndefined: Self = StObject.set(x, "PendingDeploymentSummary", js.undefined)
     
     inline def setProductionVariants(value: ProductionVariantSummaryList): Self = StObject.set(x, "ProductionVariants", value.asInstanceOf[js.Any])
     
     inline def setProductionVariantsUndefined: Self = StObject.set(x, "ProductionVariants", js.undefined)
     
-    inline def setProductionVariantsVarargs(value: ProductionVariantSummary*): Self = StObject.set(x, "ProductionVariants", js.Array(value :_*))
+    inline def setProductionVariantsVarargs(value: ProductionVariantSummary*): Self = StObject.set(x, "ProductionVariants", js.Array(value*))
   }
 }

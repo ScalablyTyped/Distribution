@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(req: IncomingMessage, res: ServerResponse): js.Function1[/* err */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* err */ js.Any, Unit]]
-  inline def apply(req: IncomingMessage, res: ServerResponse, options: Options): js.Function1[/* err */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* err */ js.Any, Unit]]
+  inline def apply(req: IncomingMessage, res: ServerResponse[IncomingMessage]): js.Function1[/* err */ js.UndefOr[Any], Unit] = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* err */ js.UndefOr[Any], Unit]]
+  inline def apply(req: IncomingMessage, res: ServerResponse[IncomingMessage], options: Options): js.Function1[/* err */ js.UndefOr[Any], Unit] = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* err */ js.UndefOr[Any], Unit]]
   
   @JSImport("finalhandler", JSImport.Namespace)
   @js.native
@@ -20,7 +20,12 @@ object mod {
     var env: js.UndefOr[String] = js.undefined
     
     var onerror: js.UndefOr[
-        js.Function3[/* err */ js.Any, /* req */ IncomingMessage, /* res */ ServerResponse, Unit]
+        js.Function3[
+          /* err */ Any, 
+          /* req */ IncomingMessage, 
+          /* res */ ServerResponse[IncomingMessage], 
+          Unit
+        ]
       ] = js.undefined
   }
   object Options {
@@ -36,7 +41,9 @@ object mod {
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      inline def setOnerror(value: (/* err */ js.Any, /* req */ IncomingMessage, /* res */ ServerResponse) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction3(value))
+      inline def setOnerror(
+        value: (/* err */ Any, /* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage]) => Unit
+      ): Self = StObject.set(x, "onerror", js.Any.fromFunction3(value))
       
       inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     }

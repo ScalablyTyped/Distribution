@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("matter", "Grid")
 @js.native
-class Grid ()
+open class Grid ()
   extends StObject
      with typings.phaser.MatterJS.Grid
 object Grid {

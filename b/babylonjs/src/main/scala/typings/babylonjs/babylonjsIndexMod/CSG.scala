@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Meshes/index", "CSG")
 @js.native
-class CSG ()
+open class CSG ()
   extends typings.babylonjs.csgMod.CSG
 /* static members */
 object CSG {
@@ -18,16 +18,18 @@ object CSG {
   /**
     * Convert the Mesh to CSG
     * @param mesh The Mesh to convert to CSG
+    * @param absolute If true, the final (local) matrix transformation is set to the identity and not to that of `mesh`. It can help when dealing with right-handed meshes (default: false)
     * @returns A new CSG from the Mesh
     */
   inline def FromMesh(mesh: typings.babylonjs.meshMod.Mesh): typings.babylonjs.csgMod.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.csgMod.CSG]
+  inline def FromMesh(mesh: typings.babylonjs.meshMod.Mesh, absolute: Boolean): typings.babylonjs.csgMod.CSG = (^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.csgMod.CSG]
   
   /**
     * Construct a CSG solid from a list of `CSG.Polygon` instances.
     * @param polygons Polygons used to construct a CSG solid
     */
-  @JSImport("babylonjs/Meshes/index", "CSG.FromPolygons")
+  @JSImport("babylonjs/Meshes/index", "CSG._FromPolygons")
   @js.native
-  def FromPolygons: js.Any = js.native
-  inline def FromPolygons_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FromPolygons")(x.asInstanceOf[js.Any])
+  def _FromPolygons: Any = js.native
+  inline def _FromPolygons_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FromPolygons")(x.asInstanceOf[js.Any])
 }

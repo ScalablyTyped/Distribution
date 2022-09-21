@@ -33,6 +33,6 @@ object ListRoutingProfileQueuesResponse {
     
     inline def setRoutingProfileQueueConfigSummaryListUndefined: Self = StObject.set(x, "RoutingProfileQueueConfigSummaryList", js.undefined)
     
-    inline def setRoutingProfileQueueConfigSummaryListVarargs(value: RoutingProfileQueueConfigSummary*): Self = StObject.set(x, "RoutingProfileQueueConfigSummaryList", js.Array(value :_*))
+    inline def setRoutingProfileQueueConfigSummaryListVarargs(value: RoutingProfileQueueConfigSummary*): Self = StObject.set(x, "RoutingProfileQueueConfigSummaryList", js.Array(value*))
   }
 }

@@ -21,7 +21,7 @@ object anon {
       
       inline def setDep(value: js.Array[String]): Self = StObject.set(x, "dep", value.asInstanceOf[js.Any])
       
-      inline def setDepVarargs(value: String*): Self = StObject.set(x, "dep", js.Array(value :_*))
+      inline def setDepVarargs(value: String*): Self = StObject.set(x, "dep", js.Array(value*))
     }
   }
   
@@ -48,15 +48,15 @@ object anon {
       
       inline def setMissingTasks(value: js.Array[String]): Self = StObject.set(x, "missingTasks", value.asInstanceOf[js.Any])
       
-      inline def setMissingTasksVarargs(value: String*): Self = StObject.set(x, "missingTasks", js.Array(value :_*))
+      inline def setMissingTasksVarargs(value: String*): Self = StObject.set(x, "missingTasks", js.Array(value*))
       
       inline def setRecursiveDependencies(value: js.Array[String]): Self = StObject.set(x, "recursiveDependencies", value.asInstanceOf[js.Any])
       
-      inline def setRecursiveDependenciesVarargs(value: String*): Self = StObject.set(x, "recursiveDependencies", js.Array(value :_*))
+      inline def setRecursiveDependenciesVarargs(value: String*): Self = StObject.set(x, "recursiveDependencies", js.Array(value*))
       
       inline def setSequence(value: js.Array[String]): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
       
-      inline def setSequenceVarargs(value: String*): Self = StObject.set(x, "sequence", js.Array(value :_*))
+      inline def setSequenceVarargs(value: String*): Self = StObject.set(x, "sequence", js.Array(value*))
     }
   }
 }

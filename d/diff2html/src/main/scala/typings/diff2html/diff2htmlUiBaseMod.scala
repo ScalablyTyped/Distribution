@@ -6,7 +6,7 @@ import typings.diff2html.typesMod.DiffFile
 import typings.diff2html.typesMod.DiffStyleType
 import typings.diff2html.typesMod.LineMatchingType
 import typings.diff2html.typesMod.OutputFormatType
-import typings.highlightJs.HLJSApi
+import typings.highlightJs.mod.HLJSApi
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object diff2htmlUiBaseMod {
   
   @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "Diff2HtmlUI")
   @js.native
-  class Diff2HtmlUI protected () extends StObject {
+  open class Diff2HtmlUI protected () extends StObject {
     def this(target: HTMLElement) = this()
     def this(target: HTMLElement, diffInput: String) = this()
     def this(target: HTMLElement, diffInput: js.Array[DiffFile]) = this()
@@ -38,17 +38,17 @@ object diff2htmlUiBaseMod {
     
     def draw(): Unit = js.native
     
+    def fileContentToggle(): Unit = js.native
+    
     def fileListToggle(startVisible: Boolean): Unit = js.native
     
-    /* private */ var getHashTag: js.Any = js.native
+    /* private */ var getHashTag: Any = js.native
     
     def highlightCode(): Unit = js.native
     
     val hljs: HLJSApi | Null = js.native
     
-    /* private */ var instanceOfHighlightResult: js.Any = js.native
-    
-    /* private */ var isElement: js.Any = js.native
+    /* private */ var isElement: Any = js.native
     
     def smartSelection(): Unit = js.native
     
@@ -72,6 +72,11 @@ object diff2htmlUiBaseMod {
     @js.native
     def drawFileList: Boolean = js.native
     inline def drawFileList_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("drawFileList")(x.asInstanceOf[js.Any])
+    
+    @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.fileContentToggle")
+    @js.native
+    def fileContentToggle: Boolean = js.native
+    inline def fileContentToggle_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fileContentToggle")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.fileListStartVisible")
     @js.native
@@ -139,6 +144,8 @@ object diff2htmlUiBaseMod {
     extends StObject
        with Diff2HtmlConfig {
     
+    var fileContentToggle: js.UndefOr[Boolean] = js.undefined
+    
     var fileListStartVisible: js.UndefOr[Boolean] = js.undefined
     
     var fileListToggle: js.UndefOr[Boolean] = js.undefined
@@ -157,6 +164,10 @@ object diff2htmlUiBaseMod {
     }
     
     extension [Self <: Diff2HtmlUIConfig](x: Self) {
+      
+      inline def setFileContentToggle(value: Boolean): Self = StObject.set(x, "fileContentToggle", value.asInstanceOf[js.Any])
+      
+      inline def setFileContentToggleUndefined: Self = StObject.set(x, "fileContentToggle", js.undefined)
       
       inline def setFileListStartVisible(value: Boolean): Self = StObject.set(x, "fileListStartVisible", value.asInstanceOf[js.Any])
       

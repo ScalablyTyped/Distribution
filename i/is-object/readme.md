@@ -11,9 +11,9 @@ Checks whether a value is an object
 | Full name          | is-object |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 156 |
-| # downloads        | 208435142 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7895552E7 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/inspect-js/is-object)

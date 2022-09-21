@@ -1,10 +1,19 @@
 package typings.materializeCss
 
+import typings.materializeCss.M.Views
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materializeCssStrings {
+  
+  @js.native
+  sealed trait AM extends StObject
+  inline def AM: AM = "AM".asInstanceOf[AM]
+  
+  @js.native
+  sealed trait PM extends StObject
+  inline def PM: PM = "PM".asInstanceOf[PM]
   
   @js.native
   sealed trait addChip extends StObject
@@ -39,7 +48,9 @@ object materializeCssStrings {
   inline def gotoDate: gotoDate = "gotoDate".asInstanceOf[gotoDate]
   
   @js.native
-  sealed trait hours extends StObject
+  sealed trait hours
+    extends StObject
+       with Views
   inline def hours: hours = "hours".asInstanceOf[hours]
   
   @js.native
@@ -47,7 +58,9 @@ object materializeCssStrings {
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait minutes extends StObject
+  sealed trait minutes
+    extends StObject
+       with Views
   inline def minutes: minutes = "minutes".asInstanceOf[minutes]
   
   @js.native
@@ -121,4 +134,12 @@ object materializeCssStrings {
   @js.native
   sealed trait updateData extends StObject
   inline def updateData: updateData = "updateData".asInstanceOf[updateData]
+  
+  @js.native
+  sealed trait vibrate extends StObject
+  inline def vibrate: vibrate = "vibrate".asInstanceOf[vibrate]
+  
+  @js.native
+  sealed trait webkitVibrate extends StObject
+  inline def webkitVibrate: webkitVibrate = "webkitVibrate".asInstanceOf[webkitVibrate]
 }

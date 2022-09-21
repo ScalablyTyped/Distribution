@@ -32,10 +32,10 @@ trait Rectangle
   
   def setClickable(clickable: Boolean): Unit = js.native
   
-  def setOptions(key: String, value: js.Any): Unit = js.native
+  def setOptions(key: String, value: Any): Unit = js.native
   def setOptions(options: RectangleOptions): Unit = js.native
   
-  def setStyles(key: String, value: js.Any): Unit = js.native
+  def setStyles(key: String, value: Any): Unit = js.native
   def setStyles(options: RectangleOptions): Unit = js.native
   
   def setVisible(visible: Boolean): Unit = js.native

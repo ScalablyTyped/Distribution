@@ -86,7 +86,7 @@ trait Typeofwebgl extends StObject {
   
   var ManagedWebGLRenderingContext: Instantiable2[
     /* canvasOrContext */ HTMLCanvasElement | WebGLRenderingContext, 
-    /* contextConfig */ js.UndefOr[js.Any], 
+    /* contextConfig */ js.UndefOr[Any], 
     typings.phaser.spine.webgl.ManagedWebGLRenderingContext
   ]
   
@@ -200,7 +200,7 @@ object Typeofwebgl {
     M33: /* 15 */ Double,
     ManagedWebGLRenderingContext: Instantiable2[
       /* canvasOrContext */ HTMLCanvasElement | WebGLRenderingContext, 
-      /* contextConfig */ js.UndefOr[js.Any], 
+      /* contextConfig */ js.UndefOr[Any], 
       ManagedWebGLRenderingContext
     ],
     Matrix4: Instantiable0[Matrix4] & TypeofMatrix4,
@@ -323,7 +323,7 @@ object Typeofwebgl {
     inline def setManagedWebGLRenderingContext(
       value: Instantiable2[
           /* canvasOrContext */ HTMLCanvasElement | WebGLRenderingContext, 
-          /* contextConfig */ js.UndefOr[js.Any], 
+          /* contextConfig */ js.UndefOr[Any], 
           ManagedWebGLRenderingContext
         ]
     ): Self = StObject.set(x, "ManagedWebGLRenderingContext", value.asInstanceOf[js.Any])

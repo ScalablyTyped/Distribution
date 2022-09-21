@@ -14,12 +14,12 @@ object eventsMod {
   val ^ : js.Any = js.native
   
   inline def listen(target: EventTargetLike, `type`: String, listener: ListenerFunction): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
-  inline def listen(target: EventTargetLike, `type`: String, listener: ListenerFunction, opt_this: js.Any): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_this.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
+  inline def listen(target: EventTargetLike, `type`: String, listener: ListenerFunction, opt_this: Any): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_this.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
   inline def listen(
     target: EventTargetLike,
     `type`: String,
     listener: ListenerFunction,
-    opt_this: js.Any,
+    opt_this: Any,
     opt_once: Boolean
   ): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_this.asInstanceOf[js.Any], opt_once.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
   inline def listen(
@@ -31,7 +31,7 @@ object eventsMod {
   ): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_this.asInstanceOf[js.Any], opt_once.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
   
   inline def listenOnce(target: EventTargetLike, `type`: String, listener: ListenerFunction): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listenOnce")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
-  inline def listenOnce(target: EventTargetLike, `type`: String, listener: ListenerFunction, opt_this: js.Any): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listenOnce")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_this.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
+  inline def listenOnce(target: EventTargetLike, `type`: String, listener: ListenerFunction, opt_this: Any): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listenOnce")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_this.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
   
   inline def unlistenByKey(key: EventsKey): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlistenByKey")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

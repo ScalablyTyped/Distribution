@@ -11,11 +11,15 @@ object NodeMaterialSystemValues extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.BABYLON.NodeMaterialSystemValues & Double] = js.native
   
+  /* 10 */ val CameraParameters: typings.babylonjs.BABYLON.NodeMaterialSystemValues.CameraParameters & Double = js.native
+  
   /* 7 */ val CameraPosition: typings.babylonjs.BABYLON.NodeMaterialSystemValues.CameraPosition & Double = js.native
   
   /* 9 */ val DeltaTime: typings.babylonjs.BABYLON.NodeMaterialSystemValues.DeltaTime & Double = js.native
   
   /* 8 */ val FogColor: typings.babylonjs.BABYLON.NodeMaterialSystemValues.FogColor & Double = js.native
+  
+  /* 11 */ val MaterialAlpha: typings.babylonjs.BABYLON.NodeMaterialSystemValues.MaterialAlpha & Double = js.native
   
   /* 3 */ val Projection: typings.babylonjs.BABYLON.NodeMaterialSystemValues.Projection & Double = js.native
   

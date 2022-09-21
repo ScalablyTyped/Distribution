@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.VertexBuffer")
 @js.native
-class VertexBuffer protected ()
+open class VertexBuffer protected ()
   extends StObject
      with typings.babylonjs.BABYLON.VertexBuffer {
   /**
@@ -28,8 +28,8 @@ class VertexBuffer protected ()
     * @param takeBufferOwnership defines if the buffer should be released when the vertex buffer is disposed
     */
   def this(
-    engine: js.Any,
-    data: DataArray | typings.babylonjs.BABYLON.Buffer,
+    engine: Any,
+    data: DataArray | typings.babylonjs.BABYLON.Buffer | typings.babylonjs.BABYLON.DataBuffer,
     kind: String,
     updatable: Boolean,
     postponeInternalCreation: js.UndefOr[Boolean],
@@ -56,14 +56,21 @@ object VertexBuffer {
     */
   @JSGlobal("BABYLON.VertexBuffer.BYTE")
   @js.native
-  val BYTE: Double = js.native
+  val BYTE: /* 5120 */ Double = js.native
+  
+  /**
+    * Instance Colors
+    */
+  @JSGlobal("BABYLON.VertexBuffer.ColorInstanceKind")
+  @js.native
+  val ColorInstanceKind: /* "instanceColor" */ String = js.native
   
   /**
     * Colors
     */
   @JSGlobal("BABYLON.VertexBuffer.ColorKind")
   @js.native
-  val ColorKind: String = js.native
+  val ColorKind: /* "color" */ String = js.native
   
   /**
     * Deduces the stride given a kind.
@@ -77,7 +84,7 @@ object VertexBuffer {
     */
   @JSGlobal("BABYLON.VertexBuffer.FLOAT")
   @js.native
-  val FLOAT: Double = js.native
+  val FLOAT: /* 5126 */ Double = js.native
   
   /**
     * Enumerates each value of the given parameters as numbers.
@@ -113,129 +120,134 @@ object VertexBuffer {
     */
   @JSGlobal("BABYLON.VertexBuffer.INT")
   @js.native
-  val INT: Double = js.native
+  val INT: /* 5124 */ Double = js.native
   
   /**
     * Additional matrix indices (for bones)
     */
   @JSGlobal("BABYLON.VertexBuffer.MatricesIndicesExtraKind")
   @js.native
-  val MatricesIndicesExtraKind: String = js.native
+  val MatricesIndicesExtraKind: /* "matricesIndicesExtra" */ String = js.native
   
   /**
     * Matrix indices (for bones)
     */
   @JSGlobal("BABYLON.VertexBuffer.MatricesIndicesKind")
   @js.native
-  val MatricesIndicesKind: String = js.native
+  val MatricesIndicesKind: /* "matricesIndices" */ String = js.native
   
   /**
     * Additional matrix weights (for bones)
     */
   @JSGlobal("BABYLON.VertexBuffer.MatricesWeightsExtraKind")
   @js.native
-  val MatricesWeightsExtraKind: String = js.native
+  val MatricesWeightsExtraKind: /* "matricesWeightsExtra" */ String = js.native
   
   /**
     * Matrix weights (for bones)
     */
   @JSGlobal("BABYLON.VertexBuffer.MatricesWeightsKind")
   @js.native
-  val MatricesWeightsKind: String = js.native
+  val MatricesWeightsKind: /* "matricesWeights" */ String = js.native
   
   /**
     * Normals
     */
   @JSGlobal("BABYLON.VertexBuffer.NormalKind")
   @js.native
-  val NormalKind: String = js.native
+  val NormalKind: /* "normal" */ String = js.native
   
   /**
     * Positions
     */
   @JSGlobal("BABYLON.VertexBuffer.PositionKind")
   @js.native
-  val PositionKind: String = js.native
+  val PositionKind: /* "position" */ String = js.native
   
   /**
     * The short type.
     */
   @JSGlobal("BABYLON.VertexBuffer.SHORT")
   @js.native
-  val SHORT: Double = js.native
+  val SHORT: /* 5122 */ Double = js.native
   
   /**
     * Tangents
     */
   @JSGlobal("BABYLON.VertexBuffer.TangentKind")
   @js.native
-  val TangentKind: String = js.native
+  val TangentKind: /* "tangent" */ String = js.native
   
   /**
     * The unsigned byte type.
     */
   @JSGlobal("BABYLON.VertexBuffer.UNSIGNED_BYTE")
   @js.native
-  val UNSIGNED_BYTE: Double = js.native
+  val UNSIGNED_BYTE: /* 5121 */ Double = js.native
   
   /**
     * The unsigned integer type.
     */
   @JSGlobal("BABYLON.VertexBuffer.UNSIGNED_INT")
   @js.native
-  val UNSIGNED_INT: Double = js.native
+  val UNSIGNED_INT: /* 5125 */ Double = js.native
   
   /**
     * The unsigned short type.
     */
   @JSGlobal("BABYLON.VertexBuffer.UNSIGNED_SHORT")
   @js.native
-  val UNSIGNED_SHORT: Double = js.native
+  val UNSIGNED_SHORT: /* 5123 */ Double = js.native
   
   /**
     * Texture coordinates 2
     */
   @JSGlobal("BABYLON.VertexBuffer.UV2Kind")
   @js.native
-  val UV2Kind: String = js.native
+  val UV2Kind: /* "uv2" */ String = js.native
   
   /**
     * Texture coordinates 3
     */
   @JSGlobal("BABYLON.VertexBuffer.UV3Kind")
   @js.native
-  val UV3Kind: String = js.native
+  val UV3Kind: /* "uv3" */ String = js.native
   
   /**
     * Texture coordinates 4
     */
   @JSGlobal("BABYLON.VertexBuffer.UV4Kind")
   @js.native
-  val UV4Kind: String = js.native
+  val UV4Kind: /* "uv4" */ String = js.native
   
   /**
     * Texture coordinates 5
     */
   @JSGlobal("BABYLON.VertexBuffer.UV5Kind")
   @js.native
-  val UV5Kind: String = js.native
+  val UV5Kind: /* "uv5" */ String = js.native
   
   /**
     * Texture coordinates 6
     */
   @JSGlobal("BABYLON.VertexBuffer.UV6Kind")
   @js.native
-  val UV6Kind: String = js.native
+  val UV6Kind: /* "uv6" */ String = js.native
   
   /**
     * Texture coordinates
     */
   @JSGlobal("BABYLON.VertexBuffer.UVKind")
   @js.native
-  val UVKind: String = js.native
+  val UVKind: /* "uv" */ String = js.native
+  
+  @JSGlobal("BABYLON.VertexBuffer._Counter")
+  @js.native
+  def _Counter: Any = js.native
+  inline def _Counter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Counter")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.VertexBuffer._GetFloatValue")
   @js.native
-  def _GetFloatValue: js.Any = js.native
-  inline def _GetFloatValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFloatValue")(x.asInstanceOf[js.Any])
+  def _GetFloatValue: Any = js.native
+  inline def _GetFloatValue_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFloatValue")(x.asInstanceOf[js.Any])
 }

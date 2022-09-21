@@ -2,8 +2,6 @@ package typings.googleCloudPaginator
 
 import typings.googleCloudPaginator.googleCloudPaginatorStrings.data
 import typings.googleCloudPaginator.mod.ParsedArguments
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +11,7 @@ object resourceStreamMod {
   
   @JSImport("@google-cloud/paginator/build/src/resource-stream", "ResourceStream")
   @js.native
-  class ResourceStream[T] protected ()
+  open class ResourceStream[T] protected ()
     extends Transform
        with ResourceEvents[T] {
     def this(args: ParsedArguments, requestFn: js.Function) = this()
@@ -42,7 +40,7 @@ object resourceStreamMod {
     @JSName("emit")
     override def emit_data(event: data, data: T): Boolean = js.native
     
-    def end(args: js.Any*): Unit = js.native
+    def end(args: Any*): Unit | this.type = js.native
     
     /* CompleteClass */
     @JSName("on")
@@ -51,11 +49,6 @@ object resourceStreamMod {
     /* CompleteClass */
     @JSName("once")
     override def once_data(event: data, listener: js.Function1[T, Unit]): this.type = js.native
-    
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
     
     /* CompleteClass */
     @JSName("prependListener")

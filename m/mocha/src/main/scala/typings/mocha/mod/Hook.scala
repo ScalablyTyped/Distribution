@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mocha", "Hook")
 @js.native
-class Hook ()
+open class Hook ()
   extends StObject
      with typings.mocha.Mocha.Hook

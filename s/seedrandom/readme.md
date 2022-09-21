@@ -1,7 +1,7 @@
 
 # Scala.js typings for seedrandom
 
-Typings are for version 2.4.2
+Typings are for version 3.0
 
 ## Library description:
 Seeded random number generator for Javascript.
@@ -10,10 +10,10 @@ Seeded random number generator for Javascript.
 | ------------------ | :-------------: |
 | Full name          | seedrandom |
 | Keywords           | seed, random, crypto |
-| # releases         | 7 |
-| # dependents       | 399 |
-| # downloads        | 14193953 |
-| # stars            | 10 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5356673.0 |
+| # stars            | 1751.0 |
 
 ## Links
 - [Homepage](http://davidbau.com/archives/2010/01/30/random_seeds_coded_hints_and_quintillions.html)

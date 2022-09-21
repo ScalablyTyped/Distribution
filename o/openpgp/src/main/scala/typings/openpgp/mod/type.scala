@@ -2,7 +2,6 @@ package typings.openpgp.mod
 
 import typings.openpgp.mod.enums.hash
 import typings.openpgp.mod.enums.symmetric
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,20 +15,20 @@ object `type` {
     
     @JSImport("openpgp", "type.ecdh_symkey.ECDHSymmetricKey")
     @js.native
-    class ECDHSymmetricKey () extends StObject {
+    open class ECDHSymmetricKey () extends StObject {
       
       /**
         * Read an ECDHSymmetricKey from an Uint8Array
         * @param input Where to read the encoded symmetric key from
         * @returns Number of read bytes
         */
-      def read(input: Uint8Array): Double = js.native
+      def read(input: js.typedarray.Uint8Array): Double = js.native
       
       /**
         * Write an ECDHSymmetricKey as an Uint8Array
         * @returns An array containing the value
         */
-      def write(): Uint8Array = js.native
+      def write(): js.typedarray.Uint8Array = js.native
     }
   }
   
@@ -45,7 +44,7 @@ object `type` {
     
     @JSImport("openpgp", "type.kdf_params.KDFParams")
     @js.native
-    class KDFParams protected () extends StObject {
+    open class KDFParams protected () extends StObject {
       /**
         * @param hash Hash algorithm
         * @param cipher Symmetric algorithm
@@ -57,13 +56,13 @@ object `type` {
         * @param input Where to read the KDFParams from
         * @returns Number of read bytes
         */
-      def read(input: Uint8Array): Double = js.native
+      def read(input: js.typedarray.Uint8Array): Double = js.native
       
       /**
         * Write KDFParams to an Uint8Array
         * @returns Array with the KDFParams value
         */
-      def write(): Uint8Array = js.native
+      def write(): js.typedarray.Uint8Array = js.native
     }
   }
   
@@ -79,7 +78,7 @@ object `type` {
     
     @JSImport("openpgp", "type.keyid.Keyid")
     @js.native
-    class Keyid () extends StObject {
+    open class Keyid () extends StObject {
       
       /**
         * Checks equality of Key ID's
@@ -92,7 +91,7 @@ object `type` {
         * Parsing method for a key id
         * @param input Input to read the key id from
         */
-      def read(input: Uint8Array): Unit = js.native
+      def read(input: js.typedarray.Uint8Array): Unit = js.native
     }
   }
   
@@ -109,7 +108,7 @@ object `type` {
     
     @JSImport("openpgp", "type.mpi.MPI")
     @js.native
-    class MPI () extends StObject {
+    open class MPI () extends StObject {
       
       /**
         * Parsing function for a MPI ( {@link https://tools.ietf.org/html/rfc4880#section-3.2|RFC 4880 3.2}).
@@ -117,7 +116,7 @@ object `type` {
         * @param endian Endianness of the data; 'be' for big-endian or 'le' for little-endian
         * @returns Length of data read
         */
-      def read(input: Uint8Array, endian: String): Integer = js.native
+      def read(input: js.typedarray.Uint8Array, endian: String): Integer = js.native
       
       /**
         * Converts the mpi object to a bytes as specified in
@@ -126,7 +125,7 @@ object `type` {
         * @param length Length of the data part of the MPI
         * @returns mpi Byte representation
         */
-      def write(endian: String, length: Integer): Uint8Array = js.native
+      def write(endian: String, length: Integer): js.typedarray.Uint8Array = js.native
     }
   }
   
@@ -148,7 +147,7 @@ object `type` {
     
     @JSImport("openpgp", "type.oid.OID")
     @js.native
-    class OID () extends StObject {
+    open class OID () extends StObject {
       
       /**
         * If a known curve object identifier, return the canonical name of the curve
@@ -161,7 +160,7 @@ object `type` {
         * @param input Where to read the OID from
         * @returns Number of read bytes
         */
-      def read(input: Uint8Array): Double = js.native
+      def read(input: js.typedarray.Uint8Array): Double = js.native
       
       /**
         * Serialize an OID object as a hex string
@@ -173,7 +172,7 @@ object `type` {
         * Serialize an OID object
         * @returns Array with the serialized value the OID
         */
-      def write(): Uint8Array = js.native
+      def write(): js.typedarray.Uint8Array = js.native
     }
   }
   
@@ -190,7 +189,7 @@ object `type` {
     
     @JSImport("openpgp", "type.s2k.S2K")
     @js.native
-    class S2K () extends StObject {
+    open class S2K () extends StObject {
       
       var algorithm: hash = js.native
       
@@ -203,7 +202,7 @@ object `type` {
         * @returns Produced key with a length corresponding to
         *          hashAlgorithm hash length
         */
-      def produce_key(passphrase: String): Uint8Array = js.native
+      def produce_key(passphrase: String): js.typedarray.Uint8Array = js.native
       
       /**
         * Parsing function for a string-to-key specifier ( {@link https://tools.ietf.org/html/rfc4880#section-3.7|RFC 4880 3.7}).
@@ -223,7 +222,7 @@ object `type` {
         * Serializes s2k information
         * @returns binary representation of s2k
         */
-      def write(): Uint8Array = js.native
+      def write(): js.typedarray.Uint8Array = js.native
     }
   }
 }

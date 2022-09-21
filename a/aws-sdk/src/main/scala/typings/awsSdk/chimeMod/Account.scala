@@ -12,6 +12,11 @@ trait Account extends StObject {
   var AccountId: String
   
   /**
+    * The status of the account.
+    */
+  var AccountStatus: js.UndefOr[typings.awsSdk.chimeMod.AccountStatus] = js.undefined
+  
+  /**
     * The Amazon Chime account type. For more information about different account types, see Managing Your Amazon Chime Accounts in the Amazon Chime Administration Guide.
     */
   var AccountType: js.UndefOr[typings.awsSdk.chimeMod.AccountType] = js.undefined
@@ -24,7 +29,7 @@ trait Account extends StObject {
   /**
     * The Amazon Chime account creation timestamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The default license for the Amazon Chime account.
@@ -57,13 +62,17 @@ object Account {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
+    inline def setAccountStatus(value: AccountStatus): Self = StObject.set(x, "AccountStatus", value.asInstanceOf[js.Any])
+    
+    inline def setAccountStatusUndefined: Self = StObject.set(x, "AccountStatus", js.undefined)
+    
     inline def setAccountType(value: AccountType): Self = StObject.set(x, "AccountType", value.asInstanceOf[js.Any])
     
     inline def setAccountTypeUndefined: Self = StObject.set(x, "AccountType", js.undefined)
     
     inline def setAwsAccountId(value: String): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
@@ -77,12 +86,12 @@ object Account {
     
     inline def setSigninDelegateGroupsUndefined: Self = StObject.set(x, "SigninDelegateGroups", js.undefined)
     
-    inline def setSigninDelegateGroupsVarargs(value: SigninDelegateGroup*): Self = StObject.set(x, "SigninDelegateGroups", js.Array(value :_*))
+    inline def setSigninDelegateGroupsVarargs(value: SigninDelegateGroup*): Self = StObject.set(x, "SigninDelegateGroups", js.Array(value*))
     
     inline def setSupportedLicenses(value: LicenseList): Self = StObject.set(x, "SupportedLicenses", value.asInstanceOf[js.Any])
     
     inline def setSupportedLicensesUndefined: Self = StObject.set(x, "SupportedLicenses", js.undefined)
     
-    inline def setSupportedLicensesVarargs(value: License*): Self = StObject.set(x, "SupportedLicenses", js.Array(value :_*))
+    inline def setSupportedLicensesVarargs(value: License*): Self = StObject.set(x, "SupportedLicenses", js.Array(value*))
   }
 }

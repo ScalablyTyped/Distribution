@@ -6,13 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "Binary")
 @js.native
-class Binary protected ()
-  extends typings.angularCompiler.compilerMod.Binary {
-  def this(
-    span: typings.angularCompiler.astMod.ParseSpan,
-    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
-    operation: String,
-    left: typings.angularCompiler.astMod.AST,
-    right: typings.angularCompiler.astMod.AST
-  ) = this()
+open class Binary protected () extends AST {
+  def this(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, operation: String, left: AST, right: AST) = this()
+  
+  var left: AST = js.native
+  
+  var operation: String = js.native
+  
+  var right: AST = js.native
 }

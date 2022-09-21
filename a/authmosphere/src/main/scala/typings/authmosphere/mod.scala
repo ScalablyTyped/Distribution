@@ -53,7 +53,7 @@ object mod {
     */
   @JSImport("authmosphere", "TokenCache")
   @js.native
-  class TokenCache protected ()
+  open class TokenCache protected ()
     extends typings.authmosphere.tokenCacheMod.TokenCache {
     /**
       * @param tokenConfig
@@ -107,8 +107,8 @@ object mod {
     * @param logger - optional logger
     * @returns {Promise<T>}
     */
-  inline def getAccessToken(options: OAuthConfig): js.Promise[Token[Record[String, js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Token[Record[String, js.Any]]]]
-  inline def getAccessToken(options: OAuthConfig, logger: Logger): js.Promise[Token[Record[String, js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Token[Record[String, js.Any]]]]
+  inline def getAccessToken(options: OAuthConfig): js.Promise[Token[Record[String | Double | js.Symbol, Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Token[Record[String | Double | js.Symbol, Any]]]]
+  inline def getAccessToken(options: OAuthConfig, logger: Logger): js.Promise[Token[Record[String | Double | js.Symbol, Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Token[Record[String | Double | js.Symbol, Any]]]]
   
   /**
     * Makes a request to the `tokenInfoUrl` to validate the given `accessToken`.
@@ -125,7 +125,7 @@ object mod {
     */
   @JSImport("authmosphere", "getTokenInfo")
   @js.native
-  val getTokenInfo: GetTokenInfo[Record[String, js.Any]] = js.native
+  val getTokenInfo: GetTokenInfo[Record[String | Double | js.Symbol, Any]] = js.native
   
   /**
     * Creates a __very basic__ mock of token endpoint as defined in [RFC 6749](https://tools.ietf.org/html/rfc6749).
@@ -138,7 +138,7 @@ object mod {
   inline def mockAccessTokenEndpoint(options: MockOptions): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpoint")(options.asInstanceOf[js.Any]).asInstanceOf[Scope]
   
   inline def mockAccessTokenEndpointWithErrorResponse(options: MockOptions, httpStatus: Double): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any])).asInstanceOf[Scope]
-  inline def mockAccessTokenEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: Record[String, js.Any]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any], responseBody.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  inline def mockAccessTokenEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: Record[String | Double | js.Symbol, Any]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockAccessTokenEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any], responseBody.asInstanceOf[js.Any])).asInstanceOf[Scope]
   
   /**
     * Creates a __very basic__ mock of a token validation endpoint.
@@ -149,10 +149,10 @@ object mod {
     * @throws on parse error of options.url
     */
   inline def mockTokeninfoEndpoint(options: MockOptions): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpoint")(options.asInstanceOf[js.Any]).asInstanceOf[Scope]
-  inline def mockTokeninfoEndpoint(options: MockOptions, tokens: js.Array[Token[Record[String, js.Any]]]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpoint")(options.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  inline def mockTokeninfoEndpoint(options: MockOptions, tokens: js.Array[Token[Record[String | Double | js.Symbol, Any]]]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpoint")(options.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[Scope]
   
   inline def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any])).asInstanceOf[Scope]
-  inline def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: Record[String, js.Any]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any], responseBody.asInstanceOf[js.Any])).asInstanceOf[Scope]
+  inline def mockTokeninfoEndpointWithErrorResponse(options: MockOptions, httpStatus: Double, responseBody: Record[String | Double | js.Symbol, Any]): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("mockTokeninfoEndpointWithErrorResponse")(options.asInstanceOf[js.Any], httpStatus.asInstanceOf[js.Any], responseBody.asInstanceOf[js.Any])).asInstanceOf[Scope]
   
   @JSImport("authmosphere", "requireScopesMiddleware")
   @js.native

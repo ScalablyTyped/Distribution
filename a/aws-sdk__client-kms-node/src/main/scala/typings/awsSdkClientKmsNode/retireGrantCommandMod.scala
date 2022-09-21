@@ -16,7 +16,7 @@ object retireGrantCommandMod {
   
   @JSImport("@aws-sdk/client-kms-node/commands/RetireGrantCommand", "RetireGrantCommand")
   @js.native
-  class RetireGrantCommand protected ()
+  open class RetireGrantCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object retireGrantCommandMod {
     override val middlewareStack: MiddlewareStack[RetireGrantInput, RetireGrantOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[RetireGrantInput, RetireGrantOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[RetireGrantInput, RetireGrantOutput] = js.native
   }
 }

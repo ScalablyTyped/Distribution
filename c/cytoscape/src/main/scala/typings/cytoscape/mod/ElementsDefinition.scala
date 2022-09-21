@@ -21,10 +21,10 @@ object ElementsDefinition {
     
     inline def setEdges(value: js.Array[EdgeDefinition]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    inline def setEdgesVarargs(value: EdgeDefinition*): Self = StObject.set(x, "edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: EdgeDefinition*): Self = StObject.set(x, "edges", js.Array(value*))
     
     inline def setNodes(value: js.Array[NodeDefinition]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: NodeDefinition*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: NodeDefinition*): Self = StObject.set(x, "nodes", js.Array(value*))
   }
 }

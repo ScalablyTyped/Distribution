@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-links
 
-Typings are for version 6.1.2
+Typings are for version 6.5.12
 
 ## Library description:
 Link stories together to build demos and prototypes with your UI components
@@ -9,14 +9,14 @@ Link stories together to build demos and prototypes with your UI components
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-links |
-| Keywords           | addon, storybook |
-| # releases         | 553 |
-| # dependents       | 173 |
-| # downloads        | 52876726 |
-| # stars            | 0 |
+| Keywords           | addon, storybook, organize |
+| # releases         | 476 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1233992333333334E7 |
+| # stars            | 73947.0 |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/addons/links)
+- [Homepage](https://github.com/storybookjs/storybook/tree/main/addons/links)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
 - [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Faddon-links)

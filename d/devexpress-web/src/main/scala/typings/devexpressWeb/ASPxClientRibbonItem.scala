@@ -17,7 +17,7 @@ trait ASPxClientRibbonItem extends StObject {
   /**
     * Returns the item value.
     */
-  def GetValue(): js.Any
+  def GetValue(): Any
   
   /**
     * Returns a value specifying whether a ribbon item is displayed.
@@ -34,7 +34,7 @@ trait ASPxClientRibbonItem extends StObject {
     * Sets the item value.
     * @param value An  that specifies the item value.
     */
-  def SetValue(value: js.Any): Unit
+  def SetValue(value: Any): Unit
   
   /**
     * Gets the client group object to which the current item belongs.
@@ -60,10 +60,10 @@ object ASPxClientRibbonItem {
   
   inline def apply(
     GetEnabled: () => Boolean,
-    GetValue: () => js.Any,
+    GetValue: () => Any,
     GetVisible: () => Boolean,
     SetEnabled: Boolean => Unit,
-    SetValue: js.Any => Unit,
+    SetValue: Any => Unit,
     group: ASPxClientRibbonGroup,
     index: Double,
     name: String,
@@ -77,7 +77,7 @@ object ASPxClientRibbonItem {
     
     inline def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     
     inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
     
@@ -91,6 +91,6 @@ object ASPxClientRibbonItem {
     
     inline def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
     
-    inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: Any => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
   }
 }

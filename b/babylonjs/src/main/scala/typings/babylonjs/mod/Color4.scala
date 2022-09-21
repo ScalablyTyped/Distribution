@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param b defines the blue component (between 0 and 1, default is 0)
   * @param a defines the alpha component (between 0 and 1, default is 1)
   */
-class Color4 ()
+open class Color4 ()
   extends typings.babylonjs.legacyMod.Color4 {
   def this(/**
     * Defines the red component (between 0 and 1, default is 0)
@@ -294,7 +294,16 @@ object Color4 {
   inline def FromColor3(color3: DeepImmutable[typings.babylonjs.mathColorMod.Color3], alpha: Double): typings.babylonjs.mathColorMod.Color4 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromColor3")(color3.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathColorMod.Color4]
   
   /**
-    * Creates a new Color4 from the string containing valid hexadecimal values
+    * Creates a new Color4 from the string containing valid hexadecimal values.
+    *
+    * A valid hex string is either in the format #RRGGBB or #RRGGBBAA.
+    *
+    * When a hex string without alpha is passed, the resulting Color4 has
+    * its alpha value set to 1.0.
+    *
+    * An invalid string results in a Color with all its channels set to 0.0,
+    * i.e. "transparent black".
+    *
     * @param hex defines a string containing valid hexadecimal values
     * @returns a new Color4 object
     */
@@ -309,6 +318,58 @@ object Color4 {
     * @returns a new Color3 object
     */
   inline def FromInts(r: Double, g: Double, b: Double, a: Double): typings.babylonjs.mathColorMod.Color4 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromInts")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathColorMod.Color4]
+  
+  /**
+    * Interpolate between two Color4 using Hermite interpolation
+    * @param value1 defines first Color4
+    * @param tangent1 defines the incoming tangent
+    * @param value2 defines second Color4
+    * @param tangent2 defines the outgoing tangent
+    * @param amount defines the target Color4
+    * @returns the new interpolated Color4
+    */
+  inline def Hermite(
+    value1: DeepImmutable[typings.babylonjs.mathColorMod.Color4],
+    tangent1: DeepImmutable[typings.babylonjs.mathColorMod.Color4],
+    value2: DeepImmutable[typings.babylonjs.mathColorMod.Color4],
+    tangent2: DeepImmutable[typings.babylonjs.mathColorMod.Color4],
+    amount: Double
+  ): typings.babylonjs.mathColorMod.Color4 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathColorMod.Color4]
+  
+  /**
+    * Returns a new Color4 which is the 1st derivative of the Hermite spline defined by the colors "value1", "value2", "tangent1", "tangent2".
+    * @param value1 defines the first control point
+    * @param tangent1 defines the first tangent
+    * @param value2 defines the second control point
+    * @param tangent2 defines the second tangent
+    * @param time define where the derivative must be done
+    * @returns 1st derivative
+    */
+  inline def Hermite1stDerivative(
+    value1: DeepImmutable[typings.babylonjs.mathColorMod.Color4],
+    tangent1: DeepImmutable[typings.babylonjs.mathColorMod.Color4],
+    value2: DeepImmutable[typings.babylonjs.mathColorMod.Color4],
+    tangent2: DeepImmutable[typings.babylonjs.mathColorMod.Color4],
+    time: Double
+  ): typings.babylonjs.mathColorMod.Color4 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivative")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathColorMod.Color4]
+  
+  /**
+    * Update a Color4 with the 1st derivative of the Hermite spline defined by the colors "value1", "value2", "tangent1", "tangent2".
+    * @param value1 defines the first control point
+    * @param tangent1 defines the first tangent
+    * @param value2 defines the second control point
+    * @param tangent2 defines the second tangent
+    * @param time define where the derivative must be done
+    * @param result define where to store the derivative
+    */
+  inline def Hermite1stDerivativeToRef(
+    value1: DeepImmutable[typings.babylonjs.mathColorMod.Color4],
+    tangent1: DeepImmutable[typings.babylonjs.mathColorMod.Color4],
+    value2: DeepImmutable[typings.babylonjs.mathColorMod.Color4],
+    tangent2: DeepImmutable[typings.babylonjs.mathColorMod.Color4],
+    time: Double,
+    result: typings.babylonjs.mathColorMod.Color4
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivativeToRef")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a new Color4 object set with the linearly interpolated values of "amount" between the left Color4 object and the right Color4 object

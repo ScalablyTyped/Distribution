@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.JsGrid.CommandManager")
 @js.native
-class CommandManager ()
+open class CommandManager ()
   extends StObject
      with typings.sharepoint.SP.JsGrid.CommandManager

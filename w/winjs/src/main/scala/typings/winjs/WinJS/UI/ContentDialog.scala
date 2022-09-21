@@ -28,7 +28,7 @@ trait ContentDialog extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Disposes this control.
@@ -50,7 +50,7 @@ trait ContentDialog extends StObject {
     * @param result A value indicating why the dialog is being hidden. The promise returned by show will be fulfilled with this value.
     **/
   def hide(): Unit = js.native
-  def hide(result: js.Any): Unit = js.native
+  def hide(result: Any): Unit = js.native
   
   /**
     * Raised immediately after a dialog is fully hidden.

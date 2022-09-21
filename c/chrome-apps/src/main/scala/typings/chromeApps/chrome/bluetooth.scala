@@ -200,7 +200,7 @@ object bluetooth {
       
       inline def setUuidsUndefined: Self = StObject.set(x, "uuids", js.undefined)
       
-      inline def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
+      inline def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value*))
       
       inline def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
       

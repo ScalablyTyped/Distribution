@@ -2,7 +2,6 @@ package typings.textBuffer.mod.global.TextBuffer
 
 import typings.eventKit.mod.Disposable
 import typings.pathwatcher.mod.File
-import typings.std.RegExp
 import typings.textBuffer.anon.ExclusiveInvalidate
 import typings.textBuffer.anon.Invalidate
 import typings.textBuffer.anon.MaintainHistory
@@ -47,13 +46,13 @@ trait TextBuffer extends StObject {
     *  Scan regular expression matches in the entire buffer in reverse order,
     *  calling the given iterator function on each match.
     */
-  def backwardsScan(regex: RegExp, iterator: js.Function1[/* params */ BufferScanResult, Unit]): Unit = js.native
+  def backwardsScan(regex: js.RegExp, iterator: js.Function1[/* params */ BufferScanResult, Unit]): Unit = js.native
   /**
     *  Scan regular expression matches in the entire buffer in reverse order,
     *  calling the given iterator function on each match.
     */
   def backwardsScan(
-    regex: RegExp,
+    regex: js.RegExp,
     options: ScanContext,
     iterator: js.Function1[/* params */ ContextualBufferScanResult, Unit]
   ): Unit = js.native
@@ -62,13 +61,17 @@ trait TextBuffer extends StObject {
     *  Scan regular expression matches in a given range in reverse order,
     *  calling the given iterator function on each match.
     */
-  def backwardsScanInRange(regex: RegExp, range: RangeCompatible, iterator: js.Function1[/* params */ BufferScanResult, Unit]): Unit = js.native
+  def backwardsScanInRange(
+    regex: js.RegExp,
+    range: RangeCompatible,
+    iterator: js.Function1[/* params */ BufferScanResult, Unit]
+  ): Unit = js.native
   /**
     *  Scan regular expression matches in a given range in reverse order,
     *  calling the given iterator function on each match.
     */
   def backwardsScanInRange(
-    regex: RegExp,
+    regex: js.RegExp,
     range: RangeCompatible,
     options: ScanContext,
     iterator: js.Function1[/* params */ ContextualBufferScanResult, Unit]
@@ -387,7 +390,7 @@ trait TextBuffer extends StObject {
   def reload(): Unit = js.native
   
   /** Replace all regular expression matches in the entire buffer. */
-  def replace(regex: RegExp, replacementText: String): Double = js.native
+  def replace(regex: js.RegExp, replacementText: String): Double = js.native
   
   /** Retains the text buffer, preventing its destruction via TextBuffer::release. */
   def retain(): typings.textBuffer.mod.global.TextBuffer.TextBuffer = js.native
@@ -410,13 +413,13 @@ trait TextBuffer extends StObject {
     *  Scan regular expression matches in the entire buffer, calling the given
     *  iterator function on each match.
     */
-  def scan(regex: RegExp, iterator: js.Function1[/* params */ BufferScanResult, Unit]): Unit = js.native
+  def scan(regex: js.RegExp, iterator: js.Function1[/* params */ BufferScanResult, Unit]): Unit = js.native
   /**
     *  Scan regular expression matches in the entire buffer, calling the given
     *  iterator function on each match.
     */
   def scan(
-    regex: RegExp,
+    regex: js.RegExp,
     options: ScanContext,
     iterator: js.Function1[/* params */ ContextualBufferScanResult, Unit]
   ): Unit = js.native
@@ -425,13 +428,17 @@ trait TextBuffer extends StObject {
     *  Scan regular expression matches in a given range , calling the given
     *  iterator function on each match.
     */
-  def scanInRange(regex: RegExp, range: RangeCompatible, iterator: js.Function1[/* params */ BufferScanResult, Unit]): Unit = js.native
+  def scanInRange(
+    regex: js.RegExp,
+    range: RangeCompatible,
+    iterator: js.Function1[/* params */ BufferScanResult, Unit]
+  ): Unit = js.native
   /**
     *  Scan regular expression matches in a given range , calling the given
     *  iterator function on each match.
     */
   def scanInRange(
-    regex: RegExp,
+    regex: js.RegExp,
     range: RangeCompatible,
     options: ScanContext,
     iterator: js.Function1[/* params */ ContextualBufferScanResult, Unit]

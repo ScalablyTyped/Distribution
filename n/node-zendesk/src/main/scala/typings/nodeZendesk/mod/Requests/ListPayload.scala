@@ -22,6 +22,6 @@ object ListPayload {
     
     inline def setRequests(value: js.Array[ResponseModel]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    inline def setRequestsVarargs(value: ResponseModel*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: ResponseModel*): Self = StObject.set(x, "requests", js.Array(value*))
   }
 }

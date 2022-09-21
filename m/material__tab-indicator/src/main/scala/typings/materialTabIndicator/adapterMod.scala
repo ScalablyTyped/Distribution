@@ -1,6 +1,6 @@
 package typings.materialTabIndicator
 
-import typings.std.ClientRect
+import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ object adapterMod {
     /**
       * Returns the client rect of the content element.
       */
-    def computeContentClientRect(): ClientRect
+    def computeContentClientRect(): DOMRect
     
     /**
       * Removes the given className from the root element.
@@ -37,7 +37,7 @@ object adapterMod {
     
     inline def apply(
       addClass: String => Unit,
-      computeContentClientRect: () => ClientRect,
+      computeContentClientRect: () => DOMRect,
       removeClass: String => Unit,
       setContentStyleProperty: (String, String) => Unit
     ): MDCTabIndicatorAdapter = {
@@ -49,7 +49,7 @@ object adapterMod {
       
       inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      inline def setComputeContentClientRect(value: () => ClientRect): Self = StObject.set(x, "computeContentClientRect", js.Any.fromFunction0(value))
+      inline def setComputeContentClientRect(value: () => DOMRect): Self = StObject.set(x, "computeContentClientRect", js.Any.fromFunction0(value))
       
       inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       

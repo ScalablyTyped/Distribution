@@ -15,7 +15,7 @@ object Popups {
   /** Represents a dialog. The dialog has a command bar that can support up to three commands. If you don't specify any commands, then a default command is added to close the dialog. */
   @JSGlobal("Windows.UI.Popups.MessageDialog")
   @js.native
-  class MessageDialog protected ()
+  open class MessageDialog protected ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Popups.MessageDialog {
     /**
@@ -98,7 +98,7 @@ object Popups {
   @JSGlobal("Windows.UI.Popups.PopupMenu")
   @js.native
   /** Creates a new instance of the PopupMenu class. */
-  class PopupMenu ()
+  open class PopupMenu ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Popups.PopupMenu
   
@@ -106,7 +106,7 @@ object Popups {
   @JSGlobal("Windows.UI.Popups.UICommand")
   @js.native
   /** Creates a new instance of the UICommand class. */
-  class UICommand ()
+  open class UICommand ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Popups.UICommand {
     /**
@@ -126,11 +126,11 @@ object Popups {
       * @param action The event handler for the new command.
       * @param commandId The command identifier for the new command.
       */
-    def this(label: String, action: UICommandInvokedHandler, commandId: js.Any) = this()
+    def this(label: String, action: UICommandInvokedHandler, commandId: Any) = this()
     
     /** Gets or sets the identifier of the command. */
     /* CompleteClass */
-    var id: js.Any = js.native
+    var id: Any = js.native
     
     /** Gets or sets the handler for the event that is fired when the user selects the UICommand . */
     /* CompleteClass */
@@ -149,13 +149,13 @@ object Popups {
   @JSGlobal("Windows.UI.Popups.UICommandSeparator")
   @js.native
   /** Creates a new instance of the UICommandSeparator class. */
-  class UICommandSeparator ()
+  open class UICommandSeparator ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Popups.UICommandSeparator {
     
     /** Gets or sets the identifier of the command separator. */
     /* CompleteClass */
-    var id: js.Any = js.native
+    var id: Any = js.native
     
     /** Gets or sets the handler for the event that is fired for the command separator. */
     /* CompleteClass */

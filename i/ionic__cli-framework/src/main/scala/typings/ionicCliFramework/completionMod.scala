@@ -27,7 +27,7 @@ object completionMod {
   
   @JSImport("@ionic/cli-framework/lib/completion", "ZshCompletionFormatter")
   @js.native
-  class ZshCompletionFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends CompletionFormatter[C, N, M, I, O] {
+  open class ZshCompletionFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends CompletionFormatter[C, N, M, I, O] {
     def this(hasNamespace: CompletionFormatterDeps[C, N, M, I, O]) = this()
   }
   

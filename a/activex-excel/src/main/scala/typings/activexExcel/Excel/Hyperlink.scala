@@ -83,7 +83,7 @@ trait Hyperlink extends StObject {
   
   val Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Range(Address: String): typings.activexExcel.Excel.Range = js.native
   def Range(RowIndex: Double): typings.activexExcel.Excel.Range = js.native

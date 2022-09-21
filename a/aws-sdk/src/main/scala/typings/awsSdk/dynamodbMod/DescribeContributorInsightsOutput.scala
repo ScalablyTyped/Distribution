@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeContributorInsightsOutput extends StObject {
   
   /**
-    * List of names of the associated Alpine rules.
+    * List of names of the associated contributor insights rules.
     */
   var ContributorInsightsRuleList: js.UndefOr[typings.awsSdk.dynamodbMod.ContributorInsightsRuleList] = js.undefined
   
   /**
-    * Current Status contributor insights.
+    * Current status of contributor insights.
     */
   var ContributorInsightsStatus: js.UndefOr[typings.awsSdk.dynamodbMod.ContributorInsightsStatus] = js.undefined
   
   /**
-    * Returns information about the last failure that encountered. The most common exceptions for a FAILED status are:   LimitExceededException - Per-account Amazon CloudWatch Contributor Insights rule limit reached. Please disable Contributor Insights for other tables/indexes OR disable Contributor Insights rules before retrying.   AccessDeniedException - Amazon CloudWatch Contributor Insights rules cannot be modified due to insufficient permissions.   AccessDeniedException - Failed to create service-linked role for Contributor Insights due to insufficient permissions.   InternalServerError - Failed to create Amazon CloudWatch Contributor Insights rules. Please retry request.  
+    * Returns information about the last failure that was encountered. The most common exceptions for a FAILED status are:   LimitExceededException - Per-account Amazon CloudWatch Contributor Insights rule limit reached. Please disable Contributor Insights for other tables/indexes OR disable Contributor Insights rules before retrying.   AccessDeniedException - Amazon CloudWatch Contributor Insights rules cannot be modified due to insufficient permissions.   AccessDeniedException - Failed to create service-linked role for Contributor Insights due to insufficient permissions.   InternalServerError - Failed to create Amazon CloudWatch Contributor Insights rules. Please retry request.  
     */
   var FailureException: js.UndefOr[typings.awsSdk.dynamodbMod.FailureException] = js.undefined
   
@@ -29,7 +29,7 @@ trait DescribeContributorInsightsOutput extends StObject {
   /**
     * Timestamp of the last time the status was changed.
     */
-  var LastUpdateDateTime: js.UndefOr[typings.awsSdk.dynamodbMod.LastUpdateDateTime] = js.undefined
+  var LastUpdateDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the table being described.
@@ -49,7 +49,7 @@ object DescribeContributorInsightsOutput {
     
     inline def setContributorInsightsRuleListUndefined: Self = StObject.set(x, "ContributorInsightsRuleList", js.undefined)
     
-    inline def setContributorInsightsRuleListVarargs(value: ContributorInsightsRule*): Self = StObject.set(x, "ContributorInsightsRuleList", js.Array(value :_*))
+    inline def setContributorInsightsRuleListVarargs(value: ContributorInsightsRule*): Self = StObject.set(x, "ContributorInsightsRuleList", js.Array(value*))
     
     inline def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
     
@@ -63,7 +63,7 @@ object DescribeContributorInsightsOutput {
     
     inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
-    inline def setLastUpdateDateTime(value: LastUpdateDateTime): Self = StObject.set(x, "LastUpdateDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateDateTime(value: js.Date): Self = StObject.set(x, "LastUpdateDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateDateTimeUndefined: Self = StObject.set(x, "LastUpdateDateTime", js.undefined)
     

@@ -9,7 +9,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Database")
   @js.native
-  class Database protected ()
+  open class Database protected ()
     extends StObject
        with typings.cordovaPluginWebsql.Database {
     /** Constructor for Database object */
@@ -73,7 +73,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("SqlTransaction")
   @js.native
-  class SqlTransaction ()
+  open class SqlTransaction ()
     extends StObject
        with typings.cordovaPluginWebsql.SqlTransaction
 }

@@ -24,11 +24,11 @@ trait Account extends StObject {
   /**
     * Custom properties stored with the account
     */
-  var properties: js.Any
+  var properties: Any
 }
 object Account {
   
-  inline def apply(displayInfo: AccountDisplayInfo, isStale: Boolean, key: AccountKey, properties: js.Any): Account = {
+  inline def apply(displayInfo: AccountDisplayInfo, isStale: Boolean, key: AccountKey, properties: Any): Account = {
     val __obj = js.Dynamic.literal(displayInfo = displayInfo.asInstanceOf[js.Any], isStale = isStale.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
@@ -41,6 +41,6 @@ object Account {
     
     inline def setKey(value: AccountKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

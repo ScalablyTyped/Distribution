@@ -23,7 +23,7 @@ trait Rule extends StObject {
   var NoncurrentVersionTransition: js.UndefOr[typings.awsSdk.s3Mod.NoncurrentVersionTransition] = js.undefined
   
   /**
-    * Object key prefix that identifies one or more objects to which this rule applies.
+    * Object key prefix that identifies one or more objects to which this rule applies.  Replacement must be made for object keys containing special characters (such as carriage returns) when using XML requests. For more information, see  XML related object key constraints. 
     */
   var Prefix: typings.awsSdk.s3Mod.Prefix
   
@@ -33,7 +33,7 @@ trait Rule extends StObject {
   var Status: ExpirationStatus
   
   /**
-    * Specifies when an object transitions to a specified storage class. For more information about Amazon S3 lifecycle configuration rules, see Transitioning Objects Using Amazon S3 Lifecycle in the Amazon Simple Storage Service Developer Guide.
+    * Specifies when an object transitions to a specified storage class. For more information about Amazon S3 lifecycle configuration rules, see Transitioning Objects Using Amazon S3 Lifecycle in the Amazon S3 User Guide.
     */
   var Transition: js.UndefOr[typings.awsSdk.s3Mod.Transition] = js.undefined
 }

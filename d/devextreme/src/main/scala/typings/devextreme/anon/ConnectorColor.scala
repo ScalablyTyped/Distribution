@@ -1,24 +1,44 @@
 package typings.devextreme.anon
 
-import typings.devextreme.mod.DevExpress.ui.format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ConnectorColor extends StObject {
   
+  /**
+    * Specifies a color for the label connector text.
+    */
   var connectorColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the width of the label connector in pixels.
+    */
   var connectorWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies a callback function that returns a text for labels.
+    */
   var customizeText: js.UndefOr[js.Function1[/* barValue */ ValueText, String]] = js.undefined
   
+  /**
+    * Specifies font properties for bar labels.
+    */
   var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
+  /**
+    * Formats a value before it is displayed in a label. Accepts only numeric formats.
+    */
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.Format] = js.undefined
   
+  /**
+    * Specifies the distance between the upper bar and bar labels in pixels.
+    */
   var indent: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies whether bar labels appear on a gauge or not.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ConnectorColor {
@@ -46,9 +66,9 @@ object ConnectorColor {
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    inline def setFormat(value: format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: typings.devextreme.mod.DevExpress.ui.Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    inline def setFormatFunction1(value: js.Date | Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     

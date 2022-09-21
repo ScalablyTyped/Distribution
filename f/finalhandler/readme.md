@@ -1,7 +1,7 @@
 
 # Scala.js typings for finalhandler
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 Node.js final http responder
@@ -11,9 +11,9 @@ Node.js final http responder
 | Full name          | finalhandler |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 536 |
-| # downloads        | 670955991 |
-| # stars            | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0681895533333333E8 |
+| # stars            | 199.0 |
 
 ## Links
 - [Homepage](https://github.com/pillarjs/finalhandler#readme)

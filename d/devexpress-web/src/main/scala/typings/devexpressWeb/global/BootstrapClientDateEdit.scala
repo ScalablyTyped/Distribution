@@ -9,7 +9,6 @@ import typings.devexpressWeb.ASPxClientEditValidationEventHandler
 import typings.devexpressWeb.ASPxClientEventHandler
 import typings.devexpressWeb.ASPxClientParseDateEventHandler
 import typings.devexpressWeb.ASPxClientProcessingModeEventHandler
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientDateEdit")
 @js.native
-class BootstrapClientDateEdit ()
+open class BootstrapClientDateEdit ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientDateEdit {
   
@@ -66,7 +65,7 @@ class BootstrapClientDateEdit ()
   var CloseUp: typings.devexpressWeb.ASPxClientEvent[ASPxClientEventHandler[typings.devexpressWeb.ASPxClientDropDownEditBase]] = js.native
   
   /**
-    * Fires after the selected date has been changed within the date editor.
+    * Occurs on the client after a user changes the selected date in the date editor.
     */
   /* CompleteClass */
   var DateChanged: typings.devexpressWeb.ASPxClientEvent[ASPxClientProcessingModeEventHandler[typings.devexpressWeb.ASPxClientDateEdit]] = js.native
@@ -88,7 +87,7 @@ class BootstrapClientDateEdit ()
     * @param number A button index.
     */
   /* CompleteClass */
-  override def GetButton(number: Double): js.Any = js.native
+  override def GetButton(number: Double): Any = js.native
   
   /**
     * Returns a value specifying whether a button is displayed. true, if the button visible; otherwise, false.
@@ -126,7 +125,7 @@ class BootstrapClientDateEdit ()
     * Gets the date that is the editor's value.
     */
   /* CompleteClass */
-  override def GetDate(): Date = js.native
+  override def GetDate(): js.Date = js.native
   
   /**
     * Returns a value indicating whether an editor is enabled.
@@ -147,10 +146,10 @@ class BootstrapClientDateEdit ()
   override def GetHeight(): Double = js.native
   
   /**
-    * Returns an HTML element that represents the control's input element.
+    * Returns an HTML element that is the control's input element.
     */
   /* CompleteClass */
-  override def GetInputElement(): js.Any = js.native
+  override def GetInputElement(): Any = js.native
   
   /**
     * Gets a value that indicates whether the editor's value passes validation.
@@ -162,25 +161,25 @@ class BootstrapClientDateEdit ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Gets the maximum date of the editor.
     */
   /* CompleteClass */
-  override def GetMaxDate(): Date = js.native
+  override def GetMaxDate(): js.Date = js.native
   
   /**
     * Gets the minimum date of the editor.
     */
   /* CompleteClass */
-  override def GetMinDate(): Date = js.native
+  override def GetMinDate(): js.Date = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns the number of days in a range selected within a date edit.
@@ -216,7 +215,7 @@ class BootstrapClientDateEdit ()
     * Returns the editor's value.
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -337,7 +336,7 @@ class BootstrapClientDateEdit ()
     * @param date The date.
     */
   /* CompleteClass */
-  override def SetDate(date: Date): Unit = js.native
+  override def SetDate(date: js.Date): Unit = js.native
   
   /**
     * Specifies whether an editor is enabled.
@@ -372,14 +371,14 @@ class BootstrapClientDateEdit ()
     * @param date A DateTime object representing the maximum date.
     */
   /* CompleteClass */
-  override def SetMaxDate(date: Date): Unit = js.native
+  override def SetMaxDate(date: js.Date): Unit = js.native
   
   /**
     * Sets the minimum date of the editor.
     * @param date A DateTime object representing the minimum date.
     */
   /* CompleteClass */
-  override def SetMinDate(date: Date): Unit = js.native
+  override def SetMinDate(date: js.Date): Unit = js.native
   
   /**
     * Specifies whether the control's state is read-only on the client side.
@@ -409,7 +408,7 @@ class BootstrapClientDateEdit ()
     * @param value An object representing the data to be assigned to the editor's edit value.
     */
   /* CompleteClass */
-  override def SetValue(value: js.Any): Unit = js.native
+  override def SetValue(value: Any): Unit = js.native
   
   /**
     * Specifies whether a control is displayed.
@@ -432,7 +431,7 @@ class BootstrapClientDateEdit ()
   override def ShowDropDown(): Unit = js.native
   
   /**
-    * Fires on the client side when the editor's text is changed and focus moves out of the editor by end-user interactions.
+    * Occurs on the client when a user changes the editor's text and the editor loses focus.
     */
   /* CompleteClass */
   var TextChanged: typings.devexpressWeb.ASPxClientEvent[ASPxClientProcessingModeEventHandler[typings.devexpressWeb.ASPxClientTextEdit]] = js.native
@@ -444,7 +443,7 @@ class BootstrapClientDateEdit ()
   var TextChanged_ASPxClientDateEdit: typings.devexpressWeb.ASPxClientEvent[ASPxClientProcessingModeEventHandler[typings.devexpressWeb.ASPxClientDateEdit]] = js.native
   
   /**
-    * Fires on the client side when the editor's input value is changed before the focus moves out of the editor by end-user interactions.
+    * Fires on the client each time a user changes an editor's input value.
     */
   /* CompleteClass */
   var UserInput: typings.devexpressWeb.ASPxClientEvent[ASPxClientEventHandler[typings.devexpressWeb.ASPxClientTextEdit]] = js.native

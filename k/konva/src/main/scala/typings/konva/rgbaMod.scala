@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object rgbaMod {
   
-  @JSImport("konva/types/filters/RGBA", "RGBA")
+  @JSImport("konva/lib/filters/RGBA", "RGBA")
   @js.native
   val RGBA: Filter = js.native
 }

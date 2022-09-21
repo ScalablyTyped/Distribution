@@ -10,10 +10,10 @@ JavaScript gallery
 | ------------------ | :-------------: |
 | Full name          | photoswipe |
 | Keywords           | gallery, lightbox, photo, image, touch, swipe, zoom |
-| # releases         | 0 |
-| # dependents       | 200 |
-| # downloads        | 2753926 |
-| # stars            | 20 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 425768.3333333333 |
+| # stars            | 22134.0 |
 
 ## Links
 - [Homepage](https://photoswipe.com)

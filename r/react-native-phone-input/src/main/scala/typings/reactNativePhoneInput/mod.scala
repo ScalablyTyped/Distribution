@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("react-native-phone-input", JSImport.Default)
   @js.native
-  class default[TextComponentType /* <: ComponentType[js.Object] */] () extends ReactNativePhoneInput[TextComponentType]
+  open class default[TextComponentType /* <: ComponentType[js.Object] */] () extends ReactNativePhoneInput[TextComponentType]
   
   trait CountriesListItem extends StObject {
     
@@ -43,7 +43,7 @@ object mod {
       
       inline def setAreaCodesNull: Self = StObject.set(x, "areaCodes", null)
       
-      inline def setAreaCodesVarargs(value: String*): Self = StObject.set(x, "areaCodes", js.Array(value :_*))
+      inline def setAreaCodesVarargs(value: String*): Self = StObject.set(x, "areaCodes", js.Array(value*))
       
       inline def setDialCode(value: String): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
       
@@ -90,7 +90,7 @@ object mod {
   
   @js.native
   trait ReactNativePhoneInput[TextComponentType /* <: ComponentType[js.Object] */]
-    extends Component[ReactNativePhoneInputProps[TextComponentType], js.Object, js.Any] {
+    extends Component[ReactNativePhoneInputProps[TextComponentType], js.Object, Any] {
     
     /**
       * Blur the phone input
@@ -293,7 +293,7 @@ object mod {
       
       inline def setCountriesListUndefined: Self = StObject.set(x, "countriesList", js.undefined)
       
-      inline def setCountriesListVarargs(value: CountriesListItem*): Self = StObject.set(x, "countriesList", js.Array(value :_*))
+      inline def setCountriesListVarargs(value: CountriesListItem*): Self = StObject.set(x, "countriesList", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

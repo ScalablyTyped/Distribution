@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "focus-trap" : "4.0.2"
+      "focus-trap" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "focus-trap" : "4.0.2"
+      "focus-trap" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

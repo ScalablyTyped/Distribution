@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a mobile network operator notification trigger. */
 @JSGlobal("Windows.ApplicationModel.Background.NetworkOperatorNotificationTrigger")
 @js.native
-class NetworkOperatorNotificationTrigger protected ()
+open class NetworkOperatorNotificationTrigger protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.NetworkOperatorNotificationTrigger {
   /**

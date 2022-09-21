@@ -13,14 +13,24 @@ object foundationMod {
   
   @JSImport("@material/snackbar/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCSnackbarFoundation {
+  open class default () extends MDCSnackbarFoundation {
     def this(adapter: PartialMDCSnackbarAdapter) = this()
   }
   
   @JSImport("@material/snackbar/foundation", "MDCSnackbarFoundation")
   @js.native
-  class MDCSnackbarFoundation () extends MDCFoundation[MDCSnackbarAdapter] {
+  open class MDCSnackbarFoundation () extends MDCFoundation[MDCSnackbarAdapter] {
     def this(adapter: PartialMDCSnackbarAdapter) = this()
+    
+    /* private */ var animationFrame: Any = js.native
+    
+    /* private */ var animationTimer: Any = js.native
+    
+    /* private */ var autoDismissTimeoutMs: Any = js.native
+    
+    /* private */ var autoDismissTimer: Any = js.native
+    
+    /* private */ var clearAutoDismissTimer: Any = js.native
     
     /**
       * @param reason Why the snackbar was closed. Value will be passed to CLOSING_EVENT and CLOSED_EVENT via the
@@ -30,6 +40,8 @@ object foundationMod {
     def close(): Unit = js.native
     def close(reason: String): Unit = js.native
     
+    /* private */ var closeOnEscape: Any = js.native
+    
     def getCloseOnEscape(): Boolean = js.native
     
     def getTimeoutMs(): Double = js.native
@@ -38,11 +50,20 @@ object foundationMod {
     
     def handleActionIconClick(_evt: MouseEvent): Unit = js.native
     
+    /* private */ var handleAnimationTimerEnd: Any = js.native
+    
     def handleKeyDown(evt: KeyboardEvent): Unit = js.native
     
     def isOpen(): Boolean = js.native
     
     def open(): Unit = js.native
+    
+    /* private */ var opened: Any = js.native
+    
+    /**
+      * Runs the given logic on the next animation frame, using setTimeout to factor in Firefox reflow behavior.
+      */
+    /* private */ var runNextAnimationFrame: Any = js.native
     
     def setCloseOnEscape(closeOnEscape: Boolean): Unit = js.native
     

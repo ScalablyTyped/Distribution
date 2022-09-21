@@ -8,14 +8,14 @@ trait Prometheus extends StObject {
   
   /**
     * 
-    Indicates whether you want to enable or disable the JMX Exporter.
+    Indicates whether you want to turn on or turn off the JMX Exporter.
     
     */
   var JmxExporter: js.UndefOr[typings.awsSdk.kafkaMod.JmxExporter] = js.undefined
   
   /**
     * 
-    Indicates whether you want to enable or disable the Node Exporter.
+    Indicates whether you want to turn on or turn off the Node Exporter.
     
     */
   var NodeExporter: js.UndefOr[typings.awsSdk.kafkaMod.NodeExporter] = js.undefined

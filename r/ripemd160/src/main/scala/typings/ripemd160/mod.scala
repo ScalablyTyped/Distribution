@@ -12,7 +12,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("ripemd160", JSImport.Namespace)
   @js.native
-  class ^ () extends Hash
+  open class ^ () extends Hash
   @JSImport("ripemd160", JSImport.Namespace)
   @js.native
   val ^ : RIPEMD160Static = js.native

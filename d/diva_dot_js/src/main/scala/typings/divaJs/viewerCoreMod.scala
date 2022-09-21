@@ -21,7 +21,7 @@ object viewerCoreMod {
   
   @JSImport("diva.js/viewer-core", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ViewerCore {
     def this(element: HTMLElement, options: Options, publicInstance: Diva) = this()
@@ -62,8 +62,8 @@ object viewerCoreMod {
     
     def getPadding(): Document = js.native
     
-    def getPageData(pageIndex: Double, attribute: String): js.Any = js.native
-    def getPageData(pageIndex: Double, attribute: js.Symbol): js.Any = js.native
+    def getPageData(pageIndex: Double, attribute: String): Any = js.native
+    def getPageData(pageIndex: Double, attribute: js.Symbol): Any = js.native
     
     def getPageName(pageIndex: Double): String = js.native
     
@@ -99,7 +99,7 @@ object viewerCoreMod {
     
     def initializeRenderer(): Unit = js.native
     
-    def isValidOption(key: String, value: js.Any): Boolean = js.native
+    def isValidOption(key: String, value: Any): Boolean = js.native
     
     def onResize(): Unit = js.native
     

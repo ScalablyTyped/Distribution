@@ -17,5 +17,5 @@ trait BackgroundConstructor
 Instantiable0[Background]
      with Instantiable1[/* properties */ BackgroundProperties, Background] {
   
-  def fromJSON(json: js.Any): Background = js.native
+  def fromJSON(json: Any): Background = js.native
 }

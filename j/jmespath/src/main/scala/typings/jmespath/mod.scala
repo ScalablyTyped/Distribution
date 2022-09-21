@@ -10,5 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def search(jsonDoc: js.Any, query: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(jsonDoc.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def search(jsonDoc: Any, query: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(jsonDoc.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

@@ -57,7 +57,7 @@ object MetricDataResult {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
     
-    inline def setMessagesVarargs(value: MessageData*): Self = StObject.set(x, "Messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: MessageData*): Self = StObject.set(x, "Messages", js.Array(value*))
     
     inline def setStatusCode(value: StatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
@@ -67,12 +67,12 @@ object MetricDataResult {
     
     inline def setTimestampsUndefined: Self = StObject.set(x, "Timestamps", js.undefined)
     
-    inline def setTimestampsVarargs(value: Timestamp*): Self = StObject.set(x, "Timestamps", js.Array(value :_*))
+    inline def setTimestampsVarargs(value: js.Date*): Self = StObject.set(x, "Timestamps", js.Array(value*))
     
     inline def setValues(value: DatapointValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: DatapointValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: DatapointValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

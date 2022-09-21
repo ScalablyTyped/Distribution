@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sudo-block" : "3.0.0"
+      "sudo-block" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "sudo-block" : "3.0.0"
+      "sudo-block" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

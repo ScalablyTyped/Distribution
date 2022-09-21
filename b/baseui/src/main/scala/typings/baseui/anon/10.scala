@@ -1,33 +1,28 @@
 package typings.baseui.anon
 
-import typings.baseui.baseuiStrings.BH
-import typings.baseui.baseuiStrings.Plussign973
-import typings.baseui.baseuiStrings.`Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `10` extends StObject {
+trait `10`[T] extends StObject {
   
-  var dialCode: Plussign973
-  
-  var id: BH
-  
-  var label: `Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis`
+  var date: js.UndefOr[T | Null | js.Array[T]] = js.undefined
 }
 object `10` {
   
-  inline def apply(): `10` = {
-    val __obj = js.Dynamic.literal(dialCode = "+973", id = "BH", label = "Bahrain (\u202B\u0627\u0644\u0628\u062D\u0631\u064A\u0646\u202C\u200E)")
-    __obj.asInstanceOf[`10`]
+  inline def apply[T](): `10`[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`10`[T]]
   }
   
-  extension [Self <: `10`](x: Self) {
+  extension [Self <: `10`[?], T](x: Self & `10`[T]) {
     
-    inline def setDialCode(value: Plussign973): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
+    inline def setDate(value: T | js.Array[T]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    inline def setId(value: BH): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setDateNull: Self = StObject.set(x, "date", null)
     
-    inline def setLabel(value: `Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setDateVarargs(value: T*): Self = StObject.set(x, "date", js.Array(value*))
   }
 }

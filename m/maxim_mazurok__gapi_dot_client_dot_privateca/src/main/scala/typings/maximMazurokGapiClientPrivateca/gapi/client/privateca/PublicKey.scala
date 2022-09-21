@@ -6,14 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PublicKey extends StObject {
   
-  /**
-    * Required. A public key. When this is specified in a request, the padding and encoding can be any of the options described by the respective 'KeyType' value. When this is generated
-    * by the service, it will always be an RFC 5280 [SubjectPublicKeyInfo](https://tools.ietf.org/html/rfc5280#section-4.1) structure containing an algorithm identifier and a key.
-    */
-  var key: js.UndefOr[String] = js.undefined
+  /** Required. The format of the public key. */
+  var format: js.UndefOr[String] = js.undefined
   
-  /** Required. The type of public key. */
-  var `type`: js.UndefOr[String] = js.undefined
+  /** Required. A public key. The padding and encoding must match with the `KeyFormat` value specified for the `format` field. */
+  var key: js.UndefOr[String] = js.undefined
 }
 object PublicKey {
   
@@ -24,12 +21,12 @@ object PublicKey {
   
   extension [Self <: PublicKey](x: Self) {
     
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-    
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

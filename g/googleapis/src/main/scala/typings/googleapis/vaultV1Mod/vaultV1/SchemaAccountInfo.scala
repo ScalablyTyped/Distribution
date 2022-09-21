@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Accounts to search
-  */
 trait SchemaAccountInfo extends StObject {
   
   /**
     * A set of accounts to search.
     */
-  var emails: js.UndefOr[js.Array[String]] = js.undefined
+  var emails: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaAccountInfo {
   
@@ -25,8 +22,10 @@ object SchemaAccountInfo {
     
     inline def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
+    inline def setEmailsNull: Self = StObject.set(x, "emails", null)
+    
     inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
-    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value*))
   }
 }

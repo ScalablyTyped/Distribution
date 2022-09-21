@@ -1,13 +1,13 @@
 package typings.yandexMaps.mod.control
 
-import typings.yandexMaps.anon.`1`
+import typings.yandexMaps.anon.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IZoomControlParameters extends StObject {
   
-  var options: js.UndefOr[`1`] = js.undefined
+  var options: js.UndefOr[Size] = js.undefined
 }
 object IZoomControlParameters {
   
@@ -18,7 +18,7 @@ object IZoomControlParameters {
   
   extension [Self <: IZoomControlParameters](x: Self) {
     
-    inline def setOptions(value: `1`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Size): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** IFaxServer interface */
 @JSGlobal("FAXCOMEXLib.IFaxServer")
 @js.native
-class IFaxServer ()
+open class IFaxServer ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.IFaxServer {
   
@@ -50,7 +50,7 @@ class IFaxServer ()
   
   /** Return server level extention property */
   /* CompleteClass */
-  override def GetExtensionProperty(bstrGUID: String): js.Any = js.native
+  override def GetExtensionProperty(bstrGUID: String): Any = js.native
   
   /** The inbound routing configuration object */
   /* CompleteClass */
@@ -100,7 +100,7 @@ class IFaxServer ()
   
   /** Register inbound routing extension */
   /* CompleteClass */
-  override def RegisterInboundRoutingExtension(bstrExtensionName: String, bstrFriendlyName: String, bstrImageName: String, vMethods: js.Any): Unit = js.native
+  override def RegisterInboundRoutingExtension(bstrExtensionName: String, bstrFriendlyName: String, bstrImageName: String, vMethods: Any): Unit = js.native
   
   /** Events the fax Server is listening to */
   /* CompleteClass */
@@ -116,7 +116,7 @@ class IFaxServer ()
   
   /** Set server level extention property */
   /* CompleteClass */
-  override def SetExtensionProperty(bstrGUID: String, vProperty: SafeArray[js.Any]): Unit = js.native
+  override def SetExtensionProperty(bstrGUID: String, vProperty: SafeArray[Any]): Unit = js.native
   
   /** Unregister device provider */
   /* CompleteClass */

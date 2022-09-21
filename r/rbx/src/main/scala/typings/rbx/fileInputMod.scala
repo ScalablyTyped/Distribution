@@ -54,7 +54,7 @@ object fileInputMod {
   
   @JSImport("rbx/elements/form/file-input", "FileInput")
   @js.native
-  val FileInput: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val FileInput: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait FileInputProps extends StObject {

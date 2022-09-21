@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "Unparser")
 @js.native
-class Unparser protected ()
+open class Unparser protected ()
   extends StObject
      with ExpressionVisitor {
   def this(buffer: js.Array[String]) = this()

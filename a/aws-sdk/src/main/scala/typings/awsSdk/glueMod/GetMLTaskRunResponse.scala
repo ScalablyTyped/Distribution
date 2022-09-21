@@ -9,7 +9,7 @@ trait GetMLTaskRunResponse extends StObject {
   /**
     * The date and time when this task run was completed.
     */
-  var CompletedOn: js.UndefOr[Timestamp] = js.undefined
+  var CompletedOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The error strings that are associated with the task run.
@@ -24,7 +24,7 @@ trait GetMLTaskRunResponse extends StObject {
   /**
     * The date and time when this task run was last modified.
     */
-  var LastModifiedOn: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The names of the log groups that are associated with the task run.
@@ -39,7 +39,7 @@ trait GetMLTaskRunResponse extends StObject {
   /**
     * The date and time when this task run started.
     */
-  var StartedOn: js.UndefOr[Timestamp] = js.undefined
+  var StartedOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status for this task run.
@@ -65,7 +65,7 @@ object GetMLTaskRunResponse {
   
   extension [Self <: GetMLTaskRunResponse](x: Self) {
     
-    inline def setCompletedOn(value: Timestamp): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
+    inline def setCompletedOn(value: js.Date): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
     
     inline def setCompletedOnUndefined: Self = StObject.set(x, "CompletedOn", js.undefined)
     
@@ -77,7 +77,7 @@ object GetMLTaskRunResponse {
     
     inline def setExecutionTimeUndefined: Self = StObject.set(x, "ExecutionTime", js.undefined)
     
-    inline def setLastModifiedOn(value: Timestamp): Self = StObject.set(x, "LastModifiedOn", value.asInstanceOf[js.Any])
+    inline def setLastModifiedOn(value: js.Date): Self = StObject.set(x, "LastModifiedOn", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedOnUndefined: Self = StObject.set(x, "LastModifiedOn", js.undefined)
     
@@ -89,7 +89,7 @@ object GetMLTaskRunResponse {
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
     
-    inline def setStartedOn(value: Timestamp): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
+    inline def setStartedOn(value: js.Date): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
     
     inline def setStartedOnUndefined: Self = StObject.set(x, "StartedOn", js.undefined)
     

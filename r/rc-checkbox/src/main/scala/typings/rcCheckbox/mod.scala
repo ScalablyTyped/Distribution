@@ -5,6 +5,7 @@ import typings.react.mod.Component
 import typings.react.mod.FocusEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
@@ -15,10 +16,10 @@ object mod {
   
   @JSImport("rc-checkbox", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Props, js.Object, js.Any]
+  open class default ()
+    extends Component[Props, js.Object, Any]
   
-  type CheckBox = Component[Props, js.Object, js.Any]
+  type CheckBox = Component[Props, js.Object, Any]
   
   trait Props extends StObject {
     
@@ -36,13 +37,13 @@ object mod {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLInputElement], Unit]] = js.undefined
+    var onBlur: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
     var onChange: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
     var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLInputElement, NativeMouseEvent], Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLInputElement], Unit]] = js.undefined
+    var onFocus: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -56,7 +57,7 @@ object mod {
     
     var `type`: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object Props {
     
@@ -95,7 +96,7 @@ object mod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnBlur(value: /* e */ FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: /* e */ FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -107,7 +108,7 @@ object mod {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnFocus(value: /* e */ FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: /* e */ FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -135,7 +136,7 @@ object mod {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }

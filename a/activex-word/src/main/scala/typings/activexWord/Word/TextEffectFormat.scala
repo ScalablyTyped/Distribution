@@ -28,7 +28,7 @@ trait TextEffectFormat extends StObject {
   
   var NormalizedHeight: MsoTriState
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PresetShape: MsoPresetTextEffectShape
   
@@ -57,7 +57,7 @@ object TextEffectFormat {
     FontSize: Double,
     KernedPairs: MsoTriState,
     NormalizedHeight: MsoTriState,
-    Parent: js.Any,
+    Parent: Any,
     PresetShape: MsoPresetTextEffectShape,
     PresetTextEffect: MsoPresetTextEffect,
     RotatedChars: MsoTriState,
@@ -91,7 +91,7 @@ object TextEffectFormat {
     
     inline def setNormalizedHeight(value: MsoTriState): Self = StObject.set(x, "NormalizedHeight", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPresetShape(value: MsoPresetTextEffectShape): Self = StObject.set(x, "PresetShape", value.asInstanceOf[js.Any])
     

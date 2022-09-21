@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ol.Overlay")
 @js.native
-class Overlay protected ()
+open class Overlay protected ()
   extends typings.openlayers.mod.Overlay {
   /**
     * @classdesc

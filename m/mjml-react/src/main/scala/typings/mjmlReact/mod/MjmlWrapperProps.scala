@@ -1,29 +1,41 @@
 package typings.mjmlReact.mod
 
-import typings.csstype.mod.BackgroundColorProperty
-import typings.csstype.mod.BackgroundRepeatProperty
-import typings.csstype.mod.BackgroundSizeProperty
-import typings.csstype.mod.TextAlignProperty
-import typings.csstype.mod.VerticalAlignProperty
+import typings.csstype.mod.Property.BackgroundColor
+import typings.csstype.mod.Property.BackgroundPosition
+import typings.csstype.mod.Property.BackgroundPositionX
+import typings.csstype.mod.Property.BackgroundPositionY
+import typings.csstype.mod.Property.BackgroundRepeat
+import typings.csstype.mod.Property.BackgroundSize
+import typings.csstype.mod.Property.TextAlign
+import typings.csstype.mod.Property.VerticalAlign
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MjmlWrapperProps extends StObject {
   
-  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
+  var backgroundColor: js.UndefOr[BackgroundColor] = js.undefined
   
-  var backgroundRepeat: js.UndefOr[BackgroundRepeatProperty] = js.undefined
+  var backgroundPosition: js.UndefOr[BackgroundPosition[String | Double]] = js.undefined
   
-  var backgroundSize: js.UndefOr[BackgroundSizeProperty[String | Double]] = js.undefined
+  var backgroundPositionX: js.UndefOr[BackgroundPositionX[String | Double]] = js.undefined
+  
+  var backgroundPositionY: js.UndefOr[BackgroundPositionY[String | Double]] = js.undefined
+  
+  var backgroundRepeat: js.UndefOr[BackgroundRepeat] = js.undefined
+  
+  var backgroundSize: js.UndefOr[BackgroundSize[String | Double]] = js.undefined
   
   var backgroundUrl: js.UndefOr[String] = js.undefined
   
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
   var fullWidth: js.UndefOr[Boolean] = js.undefined
   
-  var textAlign: js.UndefOr[TextAlignProperty] = js.undefined
+  var textAlign: js.UndefOr[TextAlign] = js.undefined
   
-  var verticalAlign: js.UndefOr[VerticalAlignProperty[String | Double]] = js.undefined
+  var verticalAlign: js.UndefOr[VerticalAlign[String | Double]] = js.undefined
 }
 object MjmlWrapperProps {
   
@@ -34,15 +46,27 @@ object MjmlWrapperProps {
   
   extension [Self <: MjmlWrapperProps](x: Self) {
     
-    inline def setBackgroundColor(value: BackgroundColorProperty): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setBackgroundRepeat(value: BackgroundRepeatProperty): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
+    inline def setBackgroundPosition(value: BackgroundPosition[String | Double]): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
+    
+    inline def setBackgroundPositionX(value: BackgroundPositionX[String | Double]): Self = StObject.set(x, "backgroundPositionX", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundPositionXUndefined: Self = StObject.set(x, "backgroundPositionX", js.undefined)
+    
+    inline def setBackgroundPositionY(value: BackgroundPositionY[String | Double]): Self = StObject.set(x, "backgroundPositionY", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundPositionYUndefined: Self = StObject.set(x, "backgroundPositionY", js.undefined)
+    
+    inline def setBackgroundRepeat(value: BackgroundRepeat): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
     
     inline def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
     
-    inline def setBackgroundSize(value: BackgroundSizeProperty[String | Double]): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
+    inline def setBackgroundSize(value: BackgroundSize[String | Double]): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
     
     inline def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
     
@@ -50,15 +74,19 @@ object MjmlWrapperProps {
     
     inline def setBackgroundUrlUndefined: Self = StObject.set(x, "backgroundUrl", js.undefined)
     
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
     inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
     inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
-    inline def setTextAlign(value: TextAlignProperty): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: TextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
-    inline def setVerticalAlign(value: VerticalAlignProperty[String | Double]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: VerticalAlign[String | Double]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
   }

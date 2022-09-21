@@ -10,10 +10,10 @@ A requirable version of Date.now()
 | ------------------ | :-------------: |
 | Full name          | date-now |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 44 |
-| # downloads        | 131391741 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7138313.333333333 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/Raynos/date-now)

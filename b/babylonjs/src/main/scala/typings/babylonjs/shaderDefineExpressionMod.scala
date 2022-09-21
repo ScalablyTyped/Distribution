@@ -9,7 +9,7 @@ object shaderDefineExpressionMod {
   
   @JSImport("babylonjs/Engines/Processors/Expressions/shaderDefineExpression", "ShaderDefineExpression")
   @js.native
-  class ShaderDefineExpression () extends StObject {
+  open class ShaderDefineExpression () extends StObject {
     
     def isTrue(preprocessors: StringDictionary[String]): Boolean = js.native
   }
@@ -22,13 +22,13 @@ object shaderDefineExpressionMod {
     
     @JSImport("babylonjs/Engines/Processors/Expressions/shaderDefineExpression", "ShaderDefineExpression._OperatorPriority")
     @js.native
-    def _OperatorPriority: js.Any = js.native
-    inline def _OperatorPriority_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OperatorPriority")(x.asInstanceOf[js.Any])
+    def _OperatorPriority: Any = js.native
+    inline def _OperatorPriority_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OperatorPriority")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Engines/Processors/Expressions/shaderDefineExpression", "ShaderDefineExpression._Stack")
     @js.native
-    def _Stack: js.Any = js.native
-    inline def _Stack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Stack")(x.asInstanceOf[js.Any])
+    def _Stack: Any = js.native
+    inline def _Stack_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Stack")(x.asInstanceOf[js.Any])
     
     inline def infixToPostfix(infix: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("infixToPostfix")(infix.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     

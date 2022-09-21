@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Iterator extends StObject {
   
-  def getKey(): js.Any = js.native
+  def getKey(): Any = js.native
   
-  def getPrimaryKey(): js.Any = js.native
+  def getPrimaryKey(): Any = js.native
   
-  def join(peer_store_name: String): js.Any = js.native
-  def join(peer_store_name: String, peer_field_name: String): js.Any = js.native
-  def join(peer_store_name: String, peer_field_name: String, value: js.Any): js.Any = js.native
-  def join(peer_store_name: String, peer_field_name: Unit, value: js.Any): js.Any = js.native
+  def join(peer_store_name: String): Any = js.native
+  def join(peer_store_name: String, peer_field_name: String): Any = js.native
+  def join(peer_store_name: String, peer_field_name: String, value: Any): Any = js.native
+  def join(peer_store_name: String, peer_field_name: Unit, value: Any): Any = js.native
   
   def reset(): Iterator = js.native
   
-  def restrict(peer_field_name: String, value: js.Any): js.Any = js.native
+  def restrict(peer_field_name: String, value: Any): Any = js.native
   
-  def resume(key: js.Any, index_key: js.Any): Iterator = js.native
+  def resume(key: Any, index_key: Any): Iterator = js.native
   
-  def reverse(key: js.Any, index_key: js.Any): Iterator = js.native
+  def reverse(key: Any, index_key: Any): Iterator = js.native
 }

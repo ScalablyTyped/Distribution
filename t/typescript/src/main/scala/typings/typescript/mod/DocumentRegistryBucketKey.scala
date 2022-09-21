@@ -9,5 +9,5 @@ trait DocumentRegistryBucketKey
   extends StObject
      with typings.std.String {
   
-  var __bucketKey: js.Any = js.native
+  var __bucketKey: Any = js.native
 }

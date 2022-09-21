@@ -17,7 +17,6 @@ import typings.koaSession.koaSessionStrings.lax
 import typings.koaSession.koaSessionStrings.none
 import typings.koaSession.koaSessionStrings.session
 import typings.koaSession.koaSessionStrings.strict
-import typings.std.Date
 import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
@@ -26,8 +25,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(CONFIG: Partialopts, app: typings.koa.mod.^[DefaultState, DefaultContext]): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(CONFIG.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  inline def apply(app: typings.koa.mod.^[DefaultState, DefaultContext]): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(CONFIG: Partialopts, app: typings.koa.mod.^[DefaultState, DefaultContext]): Middleware[DefaultState, DefaultContext, Any] = (^.asInstanceOf[js.Dynamic].apply(CONFIG.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
+  inline def apply(app: typings.koa.mod.^[DefaultState, DefaultContext]): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   @JSImport("koa-session", JSImport.Namespace)
   @js.native
@@ -64,7 +63,7 @@ object mod {
     /**
       * internal logic of `ctx.session=`
       */
-    def set(`val`: js.Any): Unit
+    def set(`val`: Any): Unit
     
     var store: stores
   }
@@ -79,7 +78,7 @@ object mod {
       opts: opts,
       prevHash: String,
       session: Session | `false`,
-      set: js.Any => Unit,
+      set: Any => Unit,
       store: stores
     ): ContextSession = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], commit = js.Any.fromFunction0(commit), ctx = ctx.asInstanceOf[js.Any], get = js.Any.fromFunction0(get), initFromExternal = js.Any.fromFunction0(initFromExternal), opts = opts.asInstanceOf[js.Any], prevHash = prevHash.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], set = js.Any.fromFunction1(set), store = store.asInstanceOf[js.Any])
@@ -104,7 +103,7 @@ object mod {
       
       inline def setSession(value: Session | `false`): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      inline def setSet(value: js.Any => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: Any => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       
       inline def setStore(value: stores): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }
@@ -115,25 +114,25 @@ object mod {
     /**
       * get session object by key
       */
-    def get(ctx: Context): String
+    def get(ctx: Context): js.UndefOr[String]
     
     /**
       * set session object for key, with a maxAge (in ms)
       */
-    def set(ctx: Context, value: js.Any): Unit
+    def set(ctx: Context, value: Any): Unit
   }
   object ExternalKeys {
     
-    inline def apply(get: Context => String, set: (Context, js.Any) => Unit): ExternalKeys = {
+    inline def apply(get: Context => js.UndefOr[String], set: (Context, Any) => Unit): ExternalKeys = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[ExternalKeys]
     }
     
     extension [Self <: ExternalKeys](x: Self) {
       
-      inline def setGet(value: Context => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: Context => js.UndefOr[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      inline def setSet(value: (Context, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (Context, Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -147,7 +146,7 @@ object mod {
        with /**
     * allow to put any value on session object
     */
-  /* _ */ StringDictionary[js.Any] {
+  /* _ */ StringDictionary[Any] {
     
     /**
       * alias to `toJSON`
@@ -159,6 +158,11 @@ object mod {
       * Used to see if it"s "populated".
       */
     val length: Double
+    
+    /**
+      * commit this session's headers if autoCommit is set to false.
+      */
+    def manuallyCommit(): js.Promise[Unit]
     
     /**
       * get/set session maxAge
@@ -185,11 +189,12 @@ object mod {
     inline def apply(
       inspect: () => js.Object,
       length: Double,
+      manuallyCommit: () => js.Promise[Unit],
       populated: Boolean,
       save: () => Unit,
       toJSON: () => js.Object
     ): Session = {
-      val __obj = js.Dynamic.literal(inspect = js.Any.fromFunction0(inspect), length = length.asInstanceOf[js.Any], populated = populated.asInstanceOf[js.Any], save = js.Any.fromFunction0(save), toJSON = js.Any.fromFunction0(toJSON))
+      val __obj = js.Dynamic.literal(inspect = js.Any.fromFunction0(inspect), length = length.asInstanceOf[js.Any], manuallyCommit = js.Any.fromFunction0(manuallyCommit), populated = populated.asInstanceOf[js.Any], save = js.Any.fromFunction0(save), toJSON = js.Any.fromFunction0(toJSON))
       __obj.asInstanceOf[Session]
     }
     
@@ -198,6 +203,8 @@ object mod {
       inline def setInspect(value: () => js.Object): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      
+      inline def setManuallyCommit(value: () => js.Promise[Unit]): Self = StObject.set(x, "manuallyCommit", js.Any.fromFunction0(value))
       
       inline def setMaxAge(value: Double | session): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
@@ -251,6 +258,11 @@ object mod {
     var ContextStore: js.UndefOr[Instantiable] = js.undefined
     
     /**
+      * (boolean) automatically commit headers (default true).
+      */
+    var autoCommit: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Hook: before save session
       */
     var beforeSave: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ Session, Unit]] = js.undefined
@@ -277,7 +289,7 @@ object mod {
     @JSName("encode")
     var encode_Original: js.Function1[/* obj */ js.Object, String]
     
-    var expires: js.UndefOr[Date] = js.undefined
+    var expires: js.UndefOr[js.Date] = js.undefined
     
     /**
       * External key is used the cookie by default,
@@ -355,6 +367,10 @@ object mod {
     
     extension [Self <: opts](x: Self) {
       
+      inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
+      
+      inline def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
+      
       inline def setBeforeSave(value: (/* ctx */ Context, /* session */ Session) => Unit): Self = StObject.set(x, "beforeSave", js.Any.fromFunction2(value))
       
       inline def setBeforeSaveUndefined: Self = StObject.set(x, "beforeSave", js.undefined)
@@ -371,7 +387,7 @@ object mod {
       
       inline def setEncode(value: /* obj */ js.Object => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
@@ -443,23 +459,23 @@ object mod {
     /**
       * destroy session for key
       */
-    def destroy(key: String): js.Any = js.native
+    def destroy(key: String): Any = js.native
     
     /**
       * get session object by key
       */
-    def get(key: String, maxAge: Double, data: Rolling): js.Any = js.native
-    def get(key: String, maxAge: Unit, data: Rolling): js.Any = js.native
+    def get(key: String, maxAge: Double, data: Rolling): Any = js.native
+    def get(key: String, maxAge: Unit, data: Rolling): Any = js.native
     @JSName("get")
-    def get_session(key: String, maxAge: session, data: Rolling): js.Any = js.native
+    def get_session(key: String, maxAge: session, data: Rolling): Any = js.native
     
     /**
       * set session object for key, with a maxAge (in ms)
       */
-    def set(key: String, sess: PartialSessionexpirenumbe, maxAge: Double, data: Changed): js.Any = js.native
-    def set(key: String, sess: PartialSessionexpirenumbe, maxAge: Unit, data: Changed): js.Any = js.native
+    def set(key: String, sess: PartialSessionexpirenumbe, maxAge: Double, data: Changed): Any = js.native
+    def set(key: String, sess: PartialSessionexpirenumbe, maxAge: Unit, data: Changed): Any = js.native
     @JSName("set")
-    def set_session(key: String, sess: PartialSessionexpirenumbe, maxAge: session, data: Changed): js.Any = js.native
+    def set_session(key: String, sess: PartialSessionexpirenumbe, maxAge: session, data: Changed): Any = js.native
   }
   
   trait util extends StObject {
@@ -474,11 +490,11 @@ object mod {
       */
     def encode(obj: js.Object): String
     
-    def hash(sess: js.Any): String
+    def hash(sess: Any): String
   }
   object util {
     
-    inline def apply(decode: String => js.Object, encode: js.Object => String, hash: js.Any => String): util = {
+    inline def apply(decode: String => js.Object, encode: js.Object => String, hash: Any => String): util = {
       val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode), hash = js.Any.fromFunction1(hash))
       __obj.asInstanceOf[util]
     }
@@ -489,7 +505,7 @@ object mod {
       
       inline def setEncode(value: js.Object => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
       
-      inline def setHash(value: js.Any => String): Self = StObject.set(x, "hash", js.Any.fromFunction1(value))
+      inline def setHash(value: Any => String): Self = StObject.set(x, "hash", js.Any.fromFunction1(value))
     }
   }
 }

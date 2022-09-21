@@ -14,14 +14,14 @@ object dmgUtilMod {
   
   @JSImport("dmg-builder/out/dmgUtil", "DmgTarget")
   @js.native
-  class DmgTarget protected ()
+  open class DmgTarget protected ()
     extends typings.dmgBuilder.mod.DmgTarget {
     def this(packager: default, outDir: String) = this()
   }
   
-  inline def attachAndExecute(dmgPath: String, readWrite: Boolean, task: js.Function0[js.Promise[js.Any]]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachAndExecute")(dmgPath.asInstanceOf[js.Any], readWrite.asInstanceOf[js.Any], task.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def attachAndExecute(dmgPath: String, readWrite: Boolean, task: js.Function0[js.Promise[Any]]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachAndExecute")(dmgPath.asInstanceOf[js.Any], readWrite.asInstanceOf[js.Any], task.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
-  inline def computeBackground(packager: PlatformPackager[js.Any]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeBackground")(packager.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def computeBackground(packager: PlatformPackager[Any]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeBackground")(packager.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   inline def detach(name: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   

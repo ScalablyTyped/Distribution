@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetDomainNameRequest extends StObject {
   
   /**
-    * [Required] The name of the DomainName resource.
+    * The name of the DomainName resource.
     */
   var domainName: String
 }

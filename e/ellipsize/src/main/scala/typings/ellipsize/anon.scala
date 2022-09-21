@@ -37,7 +37,7 @@ object anon {
       
       inline def setCharsUndefined: Self = StObject.set(x, "chars", js.undefined)
       
-      inline def setCharsVarargs(value: String*): Self = StObject.set(x, "chars", js.Array(value :_*))
+      inline def setCharsVarargs(value: String*): Self = StObject.set(x, "chars", js.Array(value*))
       
       inline def setEllipse(value: String): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
       

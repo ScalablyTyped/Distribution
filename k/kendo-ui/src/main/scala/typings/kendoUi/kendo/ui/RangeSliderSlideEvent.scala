@@ -8,7 +8,7 @@ trait RangeSliderSlideEvent
   extends StObject
      with RangeSliderEvent {
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object RangeSliderSlideEvent {
   
@@ -19,7 +19,7 @@ object RangeSliderSlideEvent {
   
   extension [Self <: RangeSliderSlideEvent](x: Self) {
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

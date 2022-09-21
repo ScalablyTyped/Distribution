@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier
+import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,13 +14,13 @@ trait DidSaveTextDocumentParams extends StObject {
   var text: js.UndefOr[String] = js.undefined
   
   /**
-    * The document that was closed.
+    * The document that was saved.
     */
-  var textDocument: VersionedTextDocumentIdentifier
+  var textDocument: TextDocumentIdentifier
 }
 object DidSaveTextDocumentParams {
   
-  inline def apply(textDocument: VersionedTextDocumentIdentifier): DidSaveTextDocumentParams = {
+  inline def apply(textDocument: TextDocumentIdentifier): DidSaveTextDocumentParams = {
     val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[DidSaveTextDocumentParams]
   }
@@ -29,7 +29,7 @@ object DidSaveTextDocumentParams {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def setTextDocument(value: VersionedTextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }

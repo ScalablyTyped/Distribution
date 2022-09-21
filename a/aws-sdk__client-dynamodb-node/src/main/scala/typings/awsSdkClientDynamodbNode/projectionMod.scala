@@ -8,5 +8,5 @@ object projectionMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/_Projection", "_Projection")
   @js.native
-  val Projection: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Projection: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

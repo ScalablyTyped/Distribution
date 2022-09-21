@@ -24,14 +24,14 @@ trait IPoint
     * @param point Ext.util.Point/Object .
     * @returns Ext.util.Point This point.
     */
-  var copyFrom: js.UndefOr[js.Function1[/* point */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var copyFrom: js.UndefOr[js.Function1[/* point */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Compare this point and another point
     * @param point Ext.util.Point/Object The point to compare with, either an instance of Ext.util.Point or an object with x and y properties.
     * @returns Boolean Returns whether they are equivalent.
     */
   @JSName("equals")
-  var equals_FIPoint: js.UndefOr[js.Function1[/* point */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var equals_FIPoint: js.UndefOr[js.Function1[/* point */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Whether the given point is not away from this point within the given threshold amount
     * @param point Ext.util.Point/Object The point to check with, either an instance of Ext.util.Point or an object with x and y properties.
@@ -39,7 +39,7 @@ trait IPoint
     * @returns Boolean
     */
   var isCloseTo: js.UndefOr[
-    js.Function2[/* point */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any], Boolean]
+    js.Function2[/* point */ js.UndefOr[Any], /* threshold */ js.UndefOr[Any], Boolean]
   ] = js.undefined
   
   /** [Method] Returns true if this point is close to another one
@@ -51,7 +51,7 @@ trait IPoint
     * @param point Ext.util.Point/Object The point to compare with, either an instance of Ext.util.Point or an object with x and y properties.
     * @returns Boolean
     */
-  var roundedEquals: js.UndefOr[js.Function1[/* point */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var roundedEquals: js.UndefOr[js.Function1[/* point */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Returns a human eye friendly string that represents this point useful for debugging
     * @returns String For example Point[12,8].
@@ -81,17 +81,17 @@ object IPoint {
     
     inline def setCopy(value: () => IPoint): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    inline def setCopyFrom(value: /* point */ js.UndefOr[js.Any] => IPoint): Self = StObject.set(x, "copyFrom", js.Any.fromFunction1(value))
+    inline def setCopyFrom(value: /* point */ js.UndefOr[Any] => IPoint): Self = StObject.set(x, "copyFrom", js.Any.fromFunction1(value))
     
     inline def setCopyFromUndefined: Self = StObject.set(x, "copyFrom", js.undefined)
     
     inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
-    inline def setEquals_(value: /* point */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: /* point */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
-    inline def setIsCloseTo(value: (/* point */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "isCloseTo", js.Any.fromFunction2(value))
+    inline def setIsCloseTo(value: (/* point */ js.UndefOr[Any], /* threshold */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "isCloseTo", js.Any.fromFunction2(value))
     
     inline def setIsCloseToUndefined: Self = StObject.set(x, "isCloseTo", js.undefined)
     
@@ -99,7 +99,7 @@ object IPoint {
     
     inline def setIsWithinUndefined: Self = StObject.set(x, "isWithin", js.undefined)
     
-    inline def setRoundedEquals(value: /* point */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "roundedEquals", js.Any.fromFunction1(value))
+    inline def setRoundedEquals(value: /* point */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "roundedEquals", js.Any.fromFunction1(value))
     
     inline def setRoundedEqualsUndefined: Self = StObject.set(x, "roundedEquals", js.undefined)
     

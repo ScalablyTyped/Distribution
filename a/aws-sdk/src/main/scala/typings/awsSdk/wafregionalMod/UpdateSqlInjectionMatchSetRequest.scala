@@ -36,6 +36,6 @@ object UpdateSqlInjectionMatchSetRequest {
     
     inline def setUpdates(value: SqlInjectionMatchSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
-    inline def setUpdatesVarargs(value: SqlInjectionMatchSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: SqlInjectionMatchSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value*))
   }
 }

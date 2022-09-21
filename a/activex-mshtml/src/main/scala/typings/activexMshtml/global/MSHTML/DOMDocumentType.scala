@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMDocumentType")
 @js.native
-/* private */ class DOMDocumentType ()
+/* private */ open class DOMDocumentType ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMDocumentType

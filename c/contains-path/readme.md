@@ -10,10 +10,10 @@ Return true if a file path contains the given path.
 | ------------------ | :-------------: |
 | Full name          | contains-path |
 | Keywords           | contains, directory, dirname, exec, ext, extname, file, filepath, fp, has, match, matches, path, regex, test |
-| # releases         | 0 |
-| # dependents       | 62 |
-| # downloads        | 345233060 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7192063333333332E7 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/contains-path)

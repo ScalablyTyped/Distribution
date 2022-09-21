@@ -3,7 +3,6 @@ package typings.asyncWriter
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Stream
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,20 +15,20 @@ object mod {
   
   @JSImport("async-writer", "AsyncWriter")
   @js.native
-  class AsyncWriter () extends StObject {
-    def this(writer: js.Any) = this()
-    def this(writer: js.Any, global: StringDictionary[js.Any]) = this()
-    def this(writer: Unit, global: StringDictionary[js.Any]) = this()
-    def this(writer: js.Any, global: StringDictionary[js.Any], async: Boolean) = this()
-    def this(writer: js.Any, global: Unit, async: Boolean) = this()
-    def this(writer: Unit, global: StringDictionary[js.Any], async: Boolean) = this()
+  open class AsyncWriter () extends StObject {
+    def this(writer: Any) = this()
+    def this(writer: Any, global: StringDictionary[Any]) = this()
+    def this(writer: Unit, global: StringDictionary[Any]) = this()
+    def this(writer: Any, global: StringDictionary[Any], async: Boolean) = this()
+    def this(writer: Any, global: Unit, async: Boolean) = this()
+    def this(writer: Unit, global: StringDictionary[Any], async: Boolean) = this()
     def this(writer: Unit, global: Unit, async: Boolean) = this()
-    def this(writer: js.Any, global: StringDictionary[js.Any], async: Boolean, buffer: Boolean) = this()
-    def this(writer: js.Any, global: StringDictionary[js.Any], async: Unit, buffer: Boolean) = this()
-    def this(writer: js.Any, global: Unit, async: Boolean, buffer: Boolean) = this()
-    def this(writer: js.Any, global: Unit, async: Unit, buffer: Boolean) = this()
-    def this(writer: Unit, global: StringDictionary[js.Any], async: Boolean, buffer: Boolean) = this()
-    def this(writer: Unit, global: StringDictionary[js.Any], async: Unit, buffer: Boolean) = this()
+    def this(writer: Any, global: StringDictionary[Any], async: Boolean, buffer: Boolean) = this()
+    def this(writer: Any, global: StringDictionary[Any], async: Unit, buffer: Boolean) = this()
+    def this(writer: Any, global: Unit, async: Boolean, buffer: Boolean) = this()
+    def this(writer: Any, global: Unit, async: Unit, buffer: Boolean) = this()
+    def this(writer: Unit, global: StringDictionary[Any], async: Boolean, buffer: Boolean) = this()
+    def this(writer: Unit, global: StringDictionary[Any], async: Unit, buffer: Boolean) = this()
     def this(writer: Unit, global: Unit, async: Boolean, buffer: Boolean) = this()
     def this(writer: Unit, global: Unit, async: Unit, buffer: Boolean) = this()
     
@@ -44,18 +43,18 @@ object mod {
     def createNestedWriter(writer: BufferedWriter): AsyncWriter = js.native
     def createNestedWriter(writer: StringWriter): AsyncWriter = js.native
     
-    def emit(arg: js.Any): AsyncWriter = js.native
+    def emit(arg: Any): AsyncWriter = js.native
     
     def end(): AsyncWriter = js.native
-    def end(data: js.Any): AsyncWriter = js.native
+    def end(data: Any): AsyncWriter = js.native
     
-    def error(e: Error): Unit = js.native
+    def error(e: js.Error): Unit = js.native
     
     def flush(): Unit = js.native
     
-    def getAttribute(): js.Any = js.native
+    def getAttribute(): Any = js.native
     
-    def getAttributes(): StringDictionary[js.Any] = js.native
+    def getAttributes(): StringDictionary[Any] = js.native
     
     def getOutput(): String = js.native
     
@@ -95,7 +94,7 @@ object mod {
   
   @JSImport("async-writer", "BufferedWriter")
   @js.native
-  class BufferedWriter protected () extends StObject {
+  open class BufferedWriter protected () extends StObject {
     def this(wrappedStream: Stream) = this()
     
     def clear(): Unit = js.native
@@ -113,7 +112,7 @@ object mod {
   
   @JSImport("async-writer", "StringWriter")
   @js.native
-  class StringWriter protected () extends StObject {
+  open class StringWriter protected () extends StObject {
     def this(events: EventEmitter) = this()
     
     def end(): Unit = js.native
@@ -122,8 +121,8 @@ object mod {
   }
   
   inline def create(): AsyncWriter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[AsyncWriter]
-  inline def create(writer: js.Any): AsyncWriter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(writer.asInstanceOf[js.Any]).asInstanceOf[AsyncWriter]
-  inline def create(writer: js.Any, options: AsyncWriterOptions): AsyncWriter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(writer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncWriter]
+  inline def create(writer: Any): AsyncWriter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(writer.asInstanceOf[js.Any]).asInstanceOf[AsyncWriter]
+  inline def create(writer: Any, options: AsyncWriterOptions): AsyncWriter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(writer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncWriter]
   inline def create(writer: Unit, options: AsyncWriterOptions): AsyncWriter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(writer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncWriter]
   
   inline def enableAsyncStackTrace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAsyncStackTrace")().asInstanceOf[Unit]
@@ -132,7 +131,7 @@ object mod {
     
     var buffer: js.UndefOr[Boolean] = js.undefined
     
-    var global: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var global: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object AsyncWriterOptions {
     
@@ -147,7 +146,7 @@ object mod {
       
       inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      inline def setGlobal(value: StringDictionary[js.Any]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: StringDictionary[Any]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
       inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     }

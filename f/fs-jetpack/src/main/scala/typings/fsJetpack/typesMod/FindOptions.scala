@@ -10,6 +10,8 @@ trait FindOptions extends StObject {
   
   var files: js.UndefOr[Boolean] = js.undefined
   
+  var filter: js.UndefOr[js.Function1[/* fileInspect */ InspectResult, Boolean | js.Promise[Boolean]]] = js.undefined
+  
   var ignoreCase: js.UndefOr[Boolean] = js.undefined
   
   var matching: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -33,6 +35,10 @@ object FindOptions {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
+    inline def setFilter(value: /* fileInspect */ InspectResult => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
     inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
     inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
@@ -41,7 +47,7 @@ object FindOptions {
     
     inline def setMatchingUndefined: Self = StObject.set(x, "matching", js.undefined)
     
-    inline def setMatchingVarargs(value: String*): Self = StObject.set(x, "matching", js.Array(value :_*))
+    inline def setMatchingVarargs(value: String*): Self = StObject.set(x, "matching", js.Array(value*))
     
     inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     

@@ -1,42 +1,20 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.react.mod.FC
+import typings.wixUiIconsCommon.componentsChevronUpMod.ChevronUpProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chevronUpMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/ChevronUp", JSImport.Default)
+  @JSImport("wix-ui-icons-common/classic-editor/ChevronUp", JSImport.Default)
   @js.native
-  val default: SFC[ChevronUpProps] = js.native
+  val default: FC[ChevronUpProps] = js.native
   
-  trait ChevronUpProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String] = js.undefined
-  }
-  object ChevronUpProps {
-    
-    inline def apply(): ChevronUpProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ChevronUpProps]
-    }
-    
-    extension [Self <: ChevronUpProps](x: Self) {
-      
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
-  
-  type _To = SFC[ChevronUpProps]
+  type _To = FC[ChevronUpProps]
   
   /* This means you don't have to write `default`, but can instead just say `chevronUpMod.foo` */
-  override def _to: SFC[ChevronUpProps] = default
+  override def _to: FC[ChevronUpProps] = default
 }

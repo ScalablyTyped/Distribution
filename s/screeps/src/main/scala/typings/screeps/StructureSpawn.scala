@@ -17,7 +17,7 @@ trait StructureSpawn
      with OwnedStructure[STRUCTURE_SPAWN]
      with AnyOwnedStructure
      with AnyStoreStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * Check if a creep can be created.

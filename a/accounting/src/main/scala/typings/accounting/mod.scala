@@ -123,21 +123,21 @@ object mod extends Shortcut {
   
   trait Settings extends StObject {
     
-    var currency: CurrencySettings[js.Any]
+    var currency: CurrencySettings[Any]
     
     // IAccountingCurrencySettings<string> or IAccountingCurrencySettings<IAccountingCurrencyFormat>
     var number: NumberSettings
   }
   object Settings {
     
-    inline def apply(currency: CurrencySettings[js.Any], number: NumberSettings): Settings = {
+    inline def apply(currency: CurrencySettings[Any], number: NumberSettings): Settings = {
       val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
       __obj.asInstanceOf[Settings]
     }
     
     extension [Self <: Settings](x: Self) {
       
-      inline def setCurrency(value: CurrencySettings[js.Any]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: CurrencySettings[Any]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
       inline def setNumber(value: NumberSettings): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     }
@@ -353,20 +353,20 @@ object mod extends Shortcut {
     def formatMoney(number: String, options: CurrencySettings[CurrencyFormat | String]): String = js.native
     def formatMoney(number: Double, options: CurrencySettings[CurrencyFormat | String]): String = js.native
     // generic case (any array of numbers)
-    def formatMoney(numbers: js.Array[js.Any | Double]): js.Array[String] = js.native
-    def formatMoney(numbers: js.Array[js.Any | Double], options: CurrencySettings[CurrencyFormat | String]): js.Array[String] = js.native
-    def formatMoney(numbers: js.Array[js.Any | Double], symbol: String): js.Array[String] = js.native
-    def formatMoney(numbers: js.Array[js.Any | Double], symbol: String, precision: Double): js.Array[String] = js.native
-    def formatMoney(numbers: js.Array[js.Any | Double], symbol: String, precision: Double, thousand: String): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[Any | Double]): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[Any | Double], options: CurrencySettings[CurrencyFormat | String]): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[Any | Double], symbol: String): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[Any | Double], symbol: String, precision: Double): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[Any | Double], symbol: String, precision: Double, thousand: String): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: String,
       precision: Double,
       thousand: String,
       decimal: String
     ): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: String,
       precision: Double,
       thousand: String,
@@ -374,7 +374,7 @@ object mod extends Shortcut {
       format: String
     ): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: String,
       precision: Double,
       thousand: String,
@@ -382,14 +382,14 @@ object mod extends Shortcut {
       format: String
     ): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: String,
       precision: Double,
       thousand: Unit,
       decimal: String
     ): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: String,
       precision: Double,
       thousand: Unit,
@@ -397,23 +397,23 @@ object mod extends Shortcut {
       format: String
     ): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: String,
       precision: Double,
       thousand: Unit,
       decimal: Unit,
       format: String
     ): js.Array[String] = js.native
-    def formatMoney(numbers: js.Array[js.Any | Double], symbol: String, precision: Unit, thousand: String): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[Any | Double], symbol: String, precision: Unit, thousand: String): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: String,
       precision: Unit,
       thousand: String,
       decimal: String
     ): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: String,
       precision: Unit,
       thousand: String,
@@ -421,22 +421,16 @@ object mod extends Shortcut {
       format: String
     ): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: String,
       precision: Unit,
       thousand: String,
       decimal: Unit,
       format: String
     ): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[Any | Double], symbol: String, precision: Unit, thousand: Unit, decimal: String): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
-      symbol: String,
-      precision: Unit,
-      thousand: Unit,
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: String,
       precision: Unit,
       thousand: Unit,
@@ -444,24 +438,24 @@ object mod extends Shortcut {
       format: String
     ): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: String,
       precision: Unit,
       thousand: Unit,
       decimal: Unit,
       format: String
     ): js.Array[String] = js.native
-    def formatMoney(numbers: js.Array[js.Any | Double], symbol: Unit, precision: Double): js.Array[String] = js.native
-    def formatMoney(numbers: js.Array[js.Any | Double], symbol: Unit, precision: Double, thousand: String): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[Any | Double], symbol: Unit, precision: Double): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[Any | Double], symbol: Unit, precision: Double, thousand: String): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: Unit,
       precision: Double,
       thousand: String,
       decimal: String
     ): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: Unit,
       precision: Double,
       thousand: String,
@@ -469,22 +463,16 @@ object mod extends Shortcut {
       format: String
     ): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: Unit,
       precision: Double,
       thousand: String,
       decimal: Unit,
       format: String
     ): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[Any | Double], symbol: Unit, precision: Double, thousand: Unit, decimal: String): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
-      symbol: Unit,
-      precision: Double,
-      thousand: Unit,
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: Unit,
       precision: Double,
       thousand: Unit,
@@ -492,23 +480,17 @@ object mod extends Shortcut {
       format: String
     ): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: Unit,
       precision: Double,
       thousand: Unit,
       decimal: Unit,
       format: String
     ): js.Array[String] = js.native
-    def formatMoney(numbers: js.Array[js.Any | Double], symbol: Unit, precision: Unit, thousand: String): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[Any | Double], symbol: Unit, precision: Unit, thousand: String): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[Any | Double], symbol: Unit, precision: Unit, thousand: String, decimal: String): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
-      symbol: Unit,
-      precision: Unit,
-      thousand: String,
-      decimal: String
-    ): js.Array[String] = js.native
-    def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: Unit,
       precision: Unit,
       thousand: String,
@@ -516,16 +498,16 @@ object mod extends Shortcut {
       format: String
     ): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: Unit,
       precision: Unit,
       thousand: String,
       decimal: Unit,
       format: String
     ): js.Array[String] = js.native
-    def formatMoney(numbers: js.Array[js.Any | Double], symbol: Unit, precision: Unit, thousand: Unit, decimal: String): js.Array[String] = js.native
+    def formatMoney(numbers: js.Array[Any | Double], symbol: Unit, precision: Unit, thousand: Unit, decimal: String): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: Unit,
       precision: Unit,
       thousand: Unit,
@@ -533,7 +515,7 @@ object mod extends Shortcut {
       format: String
     ): js.Array[String] = js.native
     def formatMoney(
-      numbers: js.Array[js.Any | Double],
+      numbers: js.Array[Any | Double],
       symbol: Unit,
       precision: Unit,
       thousand: Unit,
@@ -541,15 +523,15 @@ object mod extends Shortcut {
       format: String
     ): js.Array[String] = js.native
     
-    def formatNumber(number: js.Array[js.Any | Double]): js.Array[String] = js.native
-    def formatNumber(number: js.Array[js.Any | Double], options: NumberSettings): js.Array[String] = js.native
-    def formatNumber(number: js.Array[js.Any | Double], precision: Double): js.Array[String] = js.native
-    def formatNumber(number: js.Array[js.Any | Double], precision: Double, thousand: String): js.Array[String] = js.native
-    def formatNumber(number: js.Array[js.Any | Double], precision: Double, thousand: String, decimal: String): js.Array[String] = js.native
-    def formatNumber(number: js.Array[js.Any | Double], precision: Double, thousand: Unit, decimal: String): js.Array[String] = js.native
-    def formatNumber(number: js.Array[js.Any | Double], precision: Unit, thousand: String): js.Array[String] = js.native
-    def formatNumber(number: js.Array[js.Any | Double], precision: Unit, thousand: String, decimal: String): js.Array[String] = js.native
-    def formatNumber(number: js.Array[js.Any | Double], precision: Unit, thousand: Unit, decimal: String): js.Array[String] = js.native
+    def formatNumber(number: js.Array[Any | Double]): js.Array[String] = js.native
+    def formatNumber(number: js.Array[Any | Double], options: NumberSettings): js.Array[String] = js.native
+    def formatNumber(number: js.Array[Any | Double], precision: Double): js.Array[String] = js.native
+    def formatNumber(number: js.Array[Any | Double], precision: Double, thousand: String): js.Array[String] = js.native
+    def formatNumber(number: js.Array[Any | Double], precision: Double, thousand: String, decimal: String): js.Array[String] = js.native
+    def formatNumber(number: js.Array[Any | Double], precision: Double, thousand: Unit, decimal: String): js.Array[String] = js.native
+    def formatNumber(number: js.Array[Any | Double], precision: Unit, thousand: String): js.Array[String] = js.native
+    def formatNumber(number: js.Array[Any | Double], precision: Unit, thousand: String, decimal: String): js.Array[String] = js.native
+    def formatNumber(number: js.Array[Any | Double], precision: Unit, thousand: Unit, decimal: String): js.Array[String] = js.native
     // format a number with custom precision and localisation
     def formatNumber(number: Double): String = js.native
     def formatNumber(number: Double, options: NumberSettings): String = js.native

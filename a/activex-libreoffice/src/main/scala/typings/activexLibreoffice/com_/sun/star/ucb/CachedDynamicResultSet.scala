@@ -28,7 +28,7 @@ object CachedDynamicResultSet {
     dispose: () => Unit,
     getCapabilities: () => Double,
     getStaticResultSet: () => XResultSet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     setListener: XDynamicResultSetListener => Unit,

@@ -93,7 +93,7 @@ object XFrame2 {
     isTop: () => Boolean,
     queryDispatch: (URL, String, Double) => XDispatch,
     queryDispatches: SeqEquiv[DispatchDescriptor] => SafeArray[XDispatch],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerDispatchProviderInterceptor: XDispatchProviderInterceptor => Unit,
     release: () => Unit,
     releaseDispatchProviderInterceptor: XDispatchProviderInterceptor => Unit,

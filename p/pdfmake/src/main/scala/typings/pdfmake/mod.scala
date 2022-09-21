@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("pdfmake", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with PdfPrinter {
     def this(fontDescriptors: TFontDictionary) = this()

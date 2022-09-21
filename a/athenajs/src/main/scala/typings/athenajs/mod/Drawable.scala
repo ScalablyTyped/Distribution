@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("athenajs", "Drawable")
 @js.native
-class Drawable protected () extends StObject {
+open class Drawable protected () extends StObject {
   def this(`type`: String, options: DrawableOptions) = this()
   
   def addChild(child: Drawable): Unit = js.native
@@ -28,13 +28,13 @@ class Drawable protected () extends StObject {
   var data: JSObject = js.native
   
   def destroy(): Unit = js.native
-  def destroy(data: js.Any): Unit = js.native
+  def destroy(data: Any): Unit = js.native
   
   def getCurrentHeight(): Double = js.native
   
   def getCurrentWidth(): Double = js.native
   
-  def getProperty(prop: String): js.Any = js.native
+  def getProperty(prop: String): Any = js.native
   
   var height: Double = js.native
   
@@ -70,7 +70,7 @@ class Drawable protected () extends StObject {
   def setMask(mask: MaskOptions): Unit = js.native
   def setMask(mask: MaskOptions, exclude: Boolean): Unit = js.native
   
-  def setProperty(prop: String, value: js.Any): Unit = js.native
+  def setProperty(prop: String, value: Any): Unit = js.native
   
   def setScale(scale: Double): Unit = js.native
   

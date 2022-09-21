@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("matter", "SAT")
 @js.native
-class SAT ()
+open class SAT ()
   extends StObject
      with typings.phaser.MatterJS.SAT
 object SAT {

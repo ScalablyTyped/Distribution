@@ -27,7 +27,7 @@ trait Rule extends StObject {
   var EventPattern: js.UndefOr[typings.awsSdk.eventbridgeMod.EventPattern] = js.undefined
   
   /**
-    * If the rule was created on behalf of your account by an AWS service, this field displays the principal name of the service that created the rule.
+    * If the rule was created on behalf of your account by an Amazon Web Services service, this field displays the principal name of the service that created the rule.
     */
   var ManagedBy: js.UndefOr[typings.awsSdk.eventbridgeMod.ManagedBy] = js.undefined
   
@@ -37,12 +37,12 @@ trait Rule extends StObject {
   var Name: js.UndefOr[RuleName] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the role that is used for target invocation.
+    * The Amazon Resource Name (ARN) of the role that is used for target invocation. If you're setting an event bus in another account as the target and that account granted permission to your account through an organization instead of directly by the account ID, you must specify a RoleArn with proper permissions in the Target structure, instead of here in this parameter.
     */
   var RoleArn: js.UndefOr[typings.awsSdk.eventbridgeMod.RoleArn] = js.undefined
   
   /**
-    * The scheduling expression. For example, "cron(0 20 * * ? *)", "rate(5 minutes)".
+    * The scheduling expression. For example, "cron(0 20 * * ? *)", "rate(5 minutes)". For more information, see Creating an Amazon EventBridge rule that runs on a schedule.
     */
   var ScheduleExpression: js.UndefOr[typings.awsSdk.eventbridgeMod.ScheduleExpression] = js.undefined
   

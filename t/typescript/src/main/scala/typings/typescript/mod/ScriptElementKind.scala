@@ -46,7 +46,10 @@ object ScriptElementKind extends StObject {
        with ScriptElementKind
   /* "construct" */ val constructSignatureElement: typings.typescript.mod.ScriptElementKind.constructSignatureElement & java.lang.String = js.native
   
-  /** class X { constructor() { } } */
+  /**
+    * class X { constructor() { } }
+    * class X { static { } }
+    */
   @js.native
   sealed trait constructorImplementationElement
     extends StObject
@@ -104,6 +107,7 @@ object ScriptElementKind extends StObject {
   
   /**
     * <JsxTagName attribute1 attribute2={0} />
+    * @deprecated
     */
   @js.native
   sealed trait jsxAttribute
@@ -129,6 +133,27 @@ object ScriptElementKind extends StObject {
     extends StObject
        with ScriptElementKind
   /* "let" */ val letElement: typings.typescript.mod.ScriptElementKind.letElement & java.lang.String = js.native
+  
+  /** Jsdoc @link: in `{@link C link text}`, the before and after text "{@link " and "}" */
+  @js.native
+  sealed trait link
+    extends StObject
+       with ScriptElementKind
+  /* "link" */ val link: typings.typescript.mod.ScriptElementKind.link & java.lang.String = js.native
+  
+  /** Jsdoc @link: in `{@link C link text}`, the entity name "C" */
+  @js.native
+  sealed trait linkName
+    extends StObject
+       with ScriptElementKind
+  /* "link name" */ val linkName: typings.typescript.mod.ScriptElementKind.linkName & java.lang.String = js.native
+  
+  /** Jsdoc @link: in `{@link C link text}`, the link text "link text" */
+  @js.native
+  sealed trait linkText
+    extends StObject
+       with ScriptElementKind
+  /* "link text" */ val linkText: typings.typescript.mod.ScriptElementKind.linkText & java.lang.String = js.native
   
   /** var x = class X {} */
   @js.native

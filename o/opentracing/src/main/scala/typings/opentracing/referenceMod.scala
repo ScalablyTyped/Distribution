@@ -8,7 +8,7 @@ object referenceMod {
   
   @JSImport("opentracing/lib/reference", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Reference {
     /**

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StopDBInstanceMessage extends StObject {
   
   /**
-    *  The user-supplied instance identifier. 
+    * The user-supplied instance identifier.
     */
   var DBInstanceIdentifier: String
   
   /**
-    *  The user-supplied instance identifier of the DB Snapshot created immediately before the DB instance is stopped. 
+    * The user-supplied instance identifier of the DB Snapshot created immediately before the DB instance is stopped.
     */
   var DBSnapshotIdentifier: js.UndefOr[String] = js.undefined
 }

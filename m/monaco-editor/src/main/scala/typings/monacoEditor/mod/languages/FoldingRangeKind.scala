@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("monaco-editor", "languages.FoldingRangeKind")
 @js.native
-class FoldingRangeKind protected () extends StObject {
+open class FoldingRangeKind protected () extends StObject {
   /**
-    * Creates a new [FoldingRangeKind](#FoldingRangeKind).
+    * Creates a new {@link FoldingRangeKind}.
     *
     * @param value of the kind.
     */

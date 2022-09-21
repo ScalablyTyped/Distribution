@@ -18,6 +18,9 @@ trait SetInnerAudioOption extends StObject {
   /** （仅在 iOS 生效）是否遵循静音开关，设置为 false 之后，即使是在静音模式下，也能播放声音 */
   var obeyMuteSwitch: js.UndefOr[Boolean] = js.undefined
   
+  /** true 代表用扬声器播放，false 代表听筒播放，默认值为 true。 */
+  var speakerOn: js.UndefOr[Boolean] = js.undefined
+  
   /** 接口调用成功的回调函数 */
   var success: js.UndefOr[SetInnerAudioOptionSuccessCallback] = js.undefined
 }
@@ -45,6 +48,10 @@ object SetInnerAudioOption {
     inline def setObeyMuteSwitch(value: Boolean): Self = StObject.set(x, "obeyMuteSwitch", value.asInstanceOf[js.Any])
     
     inline def setObeyMuteSwitchUndefined: Self = StObject.set(x, "obeyMuteSwitch", js.undefined)
+    
+    inline def setSpeakerOn(value: Boolean): Self = StObject.set(x, "speakerOn", value.asInstanceOf[js.Any])
+    
+    inline def setSpeakerOnUndefined: Self = StObject.set(x, "speakerOn", js.undefined)
     
     inline def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

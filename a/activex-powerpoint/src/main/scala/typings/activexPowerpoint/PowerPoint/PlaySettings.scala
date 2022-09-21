@@ -15,7 +15,7 @@ trait PlaySettings extends StObject {
   
   var LoopUntilStopped: MsoTriState
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PauseAnimation: MsoTriState
   
@@ -35,7 +35,7 @@ object PlaySettings {
     Application: Application,
     HideWhileNotPlaying: MsoTriState,
     LoopUntilStopped: MsoTriState,
-    Parent: js.Any,
+    Parent: Any,
     PauseAnimation: MsoTriState,
     PlayOnEntry: MsoTriState,
     PowerPointDotPlaySettings_typekey: PlaySettings,
@@ -57,7 +57,7 @@ object PlaySettings {
     
     inline def setLoopUntilStopped(value: MsoTriState): Self = StObject.set(x, "LoopUntilStopped", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPauseAnimation(value: MsoTriState): Self = StObject.set(x, "PauseAnimation", value.asInstanceOf[js.Any])
     

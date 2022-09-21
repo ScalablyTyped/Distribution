@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.KiiAnalytics")
 @js.native
-class KiiAnalytics ()
+open class KiiAnalytics ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.KiiAnalytics
 object KiiAnalytics {
@@ -188,7 +188,7 @@ object KiiAnalytics {
     *     </ul>
     */
   /* static member */
-  inline def trackEventWithExtras(eventName: String, extras: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEventWithExtras")(eventName.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def trackEventWithExtras(eventName: String, extras: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEventWithExtras")(eventName.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Log a single event to be uploaded to KiiAnalytics
@@ -213,6 +213,6 @@ object KiiAnalytics {
     *     </ul>
     */
   /* static member */
-  inline def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEventWithExtrasAndCallbacks")(eventName.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any, callbacks: `19`): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEventWithExtrasAndCallbacks")(eventName.asInstanceOf[js.Any], extras.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def trackEventWithExtrasAndCallbacks(eventName: String, extras: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEventWithExtrasAndCallbacks")(eventName.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def trackEventWithExtrasAndCallbacks(eventName: String, extras: Any, callbacks: `19`): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEventWithExtrasAndCallbacks")(eventName.asInstanceOf[js.Any], extras.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for unist-builder
 
-Typings are for version 2.0.3
+Typings are for version 3.0.0
 
 ## Library description:
 unist utility to create a new trees with a nice syntax
@@ -10,10 +10,10 @@ unist utility to create a new trees with a nice syntax
 | ------------------ | :-------------: |
 | Full name          | unist-builder |
 | Keywords           | unist, unist-util, util, utility, tree, ast, build, builder, create, dsl, hyperscript, sugar, syntax |
-| # releases         | 7 |
-| # dependents       | 116 |
-| # downloads        | 24104863 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7985202E7 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/syntax-tree/unist-builder#readme)

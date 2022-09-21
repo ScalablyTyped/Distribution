@@ -1,7 +1,7 @@
 
 # Scala.js typings for integer
 
-Typings are for version 1.0
+Typings are for version 4.0
 
 ## Library description:
 Native 64-bit integers with overflow protection.
@@ -10,10 +10,10 @@ Native 64-bit integers with overflow protection.
 | ------------------ | :-------------: |
 | Full name          | integer |
 | Keywords           | integer, 64-bit, 64bit, int, overflow, native |
-| # releases         | 6 |
-| # dependents       | 8 |
-| # downloads        | 2046134 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 22634.0 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/JoshuaWise/integer#readme)

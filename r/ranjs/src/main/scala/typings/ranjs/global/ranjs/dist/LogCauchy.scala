@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.LogCauchy")
 @js.native
-class LogCauchy ()
+open class LogCauchy ()
   extends typings.ranjs.mod.dist.LogCauchy {
   def this(mu: Double) = this()
   def this(mu: Double, sigma: Double) = this()

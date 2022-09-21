@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The result of adding a group.
-  */
 trait SchemaAddDimensionGroupResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaAddDimensionGroupResponse {
     
     inline def setDimensionGroupsUndefined: Self = StObject.set(x, "dimensionGroups", js.undefined)
     
-    inline def setDimensionGroupsVarargs(value: SchemaDimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value :_*))
+    inline def setDimensionGroupsVarargs(value: SchemaDimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value*))
   }
 }

@@ -10,15 +10,13 @@ JavaScript Vector Library
 | ------------------ | :-------------: |
 | Full name          | raphael |
 | Keywords           | svg, vml, javascript |
-| # releases         | 3 |
-| # dependents       | 112 |
-| # downloads        | 4990028 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 628908.3333333334 |
+| # stars            | 11078.0 |
 
 ## Links
 - [Homepage](http://dmitrybaranovskiy.github.io/raphael/)
-- [Bugs](https://github.com/DmitryBaranovskiy/raphael/issues)
-- [Repository](https://github.com/DmitryBaranovskiy/raphael)
 - [Npm](https://www.npmjs.com/package/raphael)
     
 

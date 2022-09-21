@@ -33,6 +33,6 @@ object ListRunsResult {
     
     inline def setRunsUndefined: Self = StObject.set(x, "runs", js.undefined)
     
-    inline def setRunsVarargs(value: Run*): Self = StObject.set(x, "runs", js.Array(value :_*))
+    inline def setRunsVarargs(value: Run*): Self = StObject.set(x, "runs", js.Array(value*))
   }
 }

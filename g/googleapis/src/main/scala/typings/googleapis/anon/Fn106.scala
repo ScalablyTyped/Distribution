@@ -1,10 +1,8 @@
 package typings.googleapis.anon
 
-import typings.googleapis.googleapisStrings.v1
-import typings.googleapis.googleapisStrings.v1beta1a
-import typings.googleapis.googleapisStrings.v1beta2
-import typings.googleapis.pubsubV1Mod.pubsubV1.Options
-import typings.googleapis.pubsubV1Mod.pubsubV1.Pubsub
+import typings.googleapis.fcmdataV1beta1Mod.fcmdataV1beta1.Fcmdata
+import typings.googleapis.fcmdataV1beta1Mod.fcmdataV1beta1.Options
+import typings.googleapis.googleapisStrings.v1beta1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn106 extends StObject {
   
-  def apply(options: Options): Pubsub = js.native
-  def apply(options: typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2.Options): typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2.Pubsub = js.native
-  def apply(options: typings.googleapis.v1beta1aMod.pubsubV1beta1a.Options): typings.googleapis.v1beta1aMod.pubsubV1beta1a.Pubsub = js.native
-  def apply(version: v1): Pubsub = js.native
-  def apply(version: v1beta1a): typings.googleapis.v1beta1aMod.pubsubV1beta1a.Pubsub = js.native
-  def apply(version: v1beta2): typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2.Pubsub = js.native
+  def apply(options: Options): Fcmdata = js.native
+  def apply(version: v1beta1): Fcmdata = js.native
 }

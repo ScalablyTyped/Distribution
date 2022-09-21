@@ -10,10 +10,10 @@ Assert that the name of the current branch of a git repository has a particular 
 | ------------------ | :-------------: |
 | Full name          | git-branch-is |
 | Keywords           | assert, assertion, cli, git, test |
-| # releases         | 4 |
-| # dependents       | 9 |
-| # downloads        | 946460 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 130999.0 |
+| # stars            | 78.0 |
 
 ## Links
 - [Homepage](https://github.com/kevinoid/git-branch-is)

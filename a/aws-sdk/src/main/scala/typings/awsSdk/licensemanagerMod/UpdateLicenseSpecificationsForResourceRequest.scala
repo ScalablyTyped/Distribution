@@ -17,7 +17,7 @@ trait UpdateLicenseSpecificationsForResourceRequest extends StObject {
   var RemoveLicenseSpecifications: js.UndefOr[LicenseSpecifications] = js.undefined
   
   /**
-    * Amazon Resource Name (ARN) of the AWS resource.
+    * Amazon Resource Name (ARN) of the Amazon Web Services resource.
     */
   var ResourceArn: String
 }
@@ -34,13 +34,13 @@ object UpdateLicenseSpecificationsForResourceRequest {
     
     inline def setAddLicenseSpecificationsUndefined: Self = StObject.set(x, "AddLicenseSpecifications", js.undefined)
     
-    inline def setAddLicenseSpecificationsVarargs(value: LicenseSpecification*): Self = StObject.set(x, "AddLicenseSpecifications", js.Array(value :_*))
+    inline def setAddLicenseSpecificationsVarargs(value: LicenseSpecification*): Self = StObject.set(x, "AddLicenseSpecifications", js.Array(value*))
     
     inline def setRemoveLicenseSpecifications(value: LicenseSpecifications): Self = StObject.set(x, "RemoveLicenseSpecifications", value.asInstanceOf[js.Any])
     
     inline def setRemoveLicenseSpecificationsUndefined: Self = StObject.set(x, "RemoveLicenseSpecifications", js.undefined)
     
-    inline def setRemoveLicenseSpecificationsVarargs(value: LicenseSpecification*): Self = StObject.set(x, "RemoveLicenseSpecifications", js.Array(value :_*))
+    inline def setRemoveLicenseSpecificationsVarargs(value: LicenseSpecification*): Self = StObject.set(x, "RemoveLicenseSpecifications", js.Array(value*))
     
     inline def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }

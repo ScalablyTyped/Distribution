@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This creates a List that may check the types of the values.
   * @param {string=} type if supplied, this must be one of: 'number', 'string', 'boolean', or 'function' for the value type.
   */
-class List[T] ()
+open class List[T] ()
   extends typings.go.mod.List[T] {
   def this(`type`: String) = this()
   /**

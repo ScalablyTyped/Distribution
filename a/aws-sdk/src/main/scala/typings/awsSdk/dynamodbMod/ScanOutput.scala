@@ -52,7 +52,7 @@ object ScanOutput {
     
     inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    inline def setItemsVarargs(value: AttributeMap*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: AttributeMap*): Self = StObject.set(x, "Items", js.Array(value*))
     
     inline def setLastEvaluatedKey(value: Key): Self = StObject.set(x, "LastEvaluatedKey", value.asInstanceOf[js.Any])
     

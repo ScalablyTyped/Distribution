@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TranslatableExposed extends StObject {
   
-  var translations: js.UndefOr[StringDictionary[String | (js.Function1[/* repeated */ js.Any, String])]] = js.undefined
+  var translations: js.UndefOr[StringDictionary[String | (js.Function1[/* repeated */ Any, String])]] = js.undefined
 }
 object TranslatableExposed {
   
@@ -18,7 +18,7 @@ object TranslatableExposed {
   
   extension [Self <: TranslatableExposed](x: Self) {
     
-    inline def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ js.Any, String])]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    inline def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ Any, String])]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
   }

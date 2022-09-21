@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KeyValue extends StObject {
   
   /**
-    * The unique identifier of a key value pair.
+    * The unique identifier of a key-value pair.
     */
   var Key: js.UndefOr[XmlString] = js.undefined
   

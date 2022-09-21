@@ -15,7 +15,7 @@ object anon {
     
     var b: Double
     
-    var format: js.Any
+    var format: Any
     
     var g: Double
     
@@ -25,7 +25,7 @@ object anon {
   }
   object A {
     
-    inline def apply(a: Double, b: Double, format: js.Any, g: Double, ok: Boolean, r: Double): A = {
+    inline def apply(a: Double, b: Double, format: Any, g: Double, ok: Boolean, r: Double): A = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[A]
     }
@@ -36,7 +36,7 @@ object anon {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      inline def setFormat(value: js.Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       

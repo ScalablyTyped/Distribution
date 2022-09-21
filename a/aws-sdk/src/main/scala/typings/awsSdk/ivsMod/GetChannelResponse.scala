@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetChannelResponse extends StObject {
   
+  /**
+    * 
+    */
   var channel: js.UndefOr[Channel] = js.undefined
 }
 object GetChannelResponse {

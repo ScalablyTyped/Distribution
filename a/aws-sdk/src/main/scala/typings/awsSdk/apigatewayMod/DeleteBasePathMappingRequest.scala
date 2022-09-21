@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteBasePathMappingRequest extends StObject {
   
   /**
-    * [Required] The base path name of the BasePathMapping resource to delete. To specify an empty base path, set this parameter to '(none)'.
+    * The base path name of the BasePathMapping resource to delete. To specify an empty base path, set this parameter to '(none)'.
     */
   var basePath: String
   
   /**
-    * [Required] The domain name of the BasePathMapping resource to delete.
+    * The domain name of the BasePathMapping resource to delete.
     */
   var domainName: String
 }

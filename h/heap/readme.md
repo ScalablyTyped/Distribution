@@ -1,7 +1,7 @@
 
 # Scala.js typings for heap
 
-Typings are for version 0.2.6
+Typings are for version 0.2.7
 
 ## Library description:
 binary heap (priority queue) algorithms (ported from Python's heapq module)
@@ -10,10 +10,10 @@ binary heap (priority queue) algorithms (ported from Python's heapq module)
 | ------------------ | :-------------: |
 | Full name          | heap |
 | Keywords           | algorithm, data structure, heap |
-| # releases         | 0 |
-| # dependents       | 117 |
-| # downloads        | 14850779 |
-| # stars            | 7 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3084964.0 |
+| # stars            | 114.0 |
 
 ## Links
 - [Homepage](https://github.com/qiao/heap.js)

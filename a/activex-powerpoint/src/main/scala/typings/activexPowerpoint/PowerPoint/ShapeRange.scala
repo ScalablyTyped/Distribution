@@ -32,7 +32,7 @@ trait ShapeRange extends StObject {
   
   val AnimationSettings: typings.activexPowerpoint.PowerPoint.AnimationSettings = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   def Apply(): Unit = js.native
   
@@ -160,7 +160,7 @@ trait ShapeRange extends StObject {
   
   def IncrementTop(Increment: Double): Unit = js.native
   
-  def Item(Index: js.Any): Shape = js.native
+  def Item(Index: Any): Shape = js.native
   
   var Left: Double = js.native
   
@@ -180,7 +180,7 @@ trait ShapeRange extends StObject {
   
   val OLEFormat: typings.activexPowerpoint.PowerPoint.OLEFormat = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ParentGroup: Shape = js.native
   
@@ -255,7 +255,7 @@ trait ShapeRange extends StObject {
   
   val VerticalFlip: MsoTriState = js.native
   
-  val Vertices: js.Any = js.native
+  val Vertices: Any = js.native
   
   var Visible: MsoTriState = js.native
   

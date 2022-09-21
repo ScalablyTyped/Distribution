@@ -11,14 +11,13 @@ object mod {
   
   @JSImport("react-broadcast", "Broadcast")
   @js.native
-  class Broadcast[T] protected ()
-    extends Component[Props[T], js.Any, js.Any] {
+  open class Broadcast[T] protected () extends Component[Props[T], Any, Any] {
     def this(props: Props[T]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props[T], context: js.Any) = this()
+    def this(props: Props[T], context: Any) = this()
   }
   object Broadcast {
     
@@ -76,14 +75,14 @@ object mod {
   
   @JSImport("react-broadcast", "Subscriber")
   @js.native
-  class Subscriber[T] protected ()
-    extends Component[typings.reactBroadcast.mod.Subscriber.Props[T], js.Any, js.Any] {
+  open class Subscriber[T] protected ()
+    extends Component[typings.reactBroadcast.mod.Subscriber.Props[T], Any, Any] {
     def this(props: typings.reactBroadcast.mod.Subscriber.Props[T]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: typings.reactBroadcast.mod.Subscriber.Props[T], context: js.Any) = this()
+    def this(props: typings.reactBroadcast.mod.Subscriber.Props[T], context: Any) = this()
   }
   object Subscriber {
     

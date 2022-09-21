@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Chat.ChatConversationThreadingInfo")
 @js.native
 /** Initializes a new instance of the ChatConversationThreadingInfo class. */
-class ChatConversationThreadingInfo ()
+open class ChatConversationThreadingInfo ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.ChatConversationThreadingInfo {
   

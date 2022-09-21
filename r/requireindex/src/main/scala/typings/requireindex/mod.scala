@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(path: String): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def apply(path: String, basenames: js.Array[String]): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], basenames.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def apply(path: String): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def apply(path: String, basenames: js.Array[String]): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], basenames.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   @JSImport("requireindex", JSImport.Namespace)
   @js.native

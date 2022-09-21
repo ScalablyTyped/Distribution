@@ -15,7 +15,7 @@ trait SyncObject extends StObject {
   /* private */ @JSName("Outlook.SyncObject_typekey")
   var OutlookDotSyncObject_typekey: SyncObject
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -30,7 +30,7 @@ object SyncObject {
     Class: OlObjectClass,
     Name: String,
     OutlookDotSyncObject_typekey: SyncObject,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     Start: () => Unit,
     Stop: () => Unit
@@ -50,7 +50,7 @@ object SyncObject {
     
     inline def setOutlookDotSyncObject_typekey(value: SyncObject): Self = StObject.set(x, "Outlook.SyncObject_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

@@ -21,10 +21,10 @@ object SemanticTokensLegend {
     
     inline def setTokenModifiers(value: js.Array[String]): Self = StObject.set(x, "tokenModifiers", value.asInstanceOf[js.Any])
     
-    inline def setTokenModifiersVarargs(value: String*): Self = StObject.set(x, "tokenModifiers", js.Array(value :_*))
+    inline def setTokenModifiersVarargs(value: String*): Self = StObject.set(x, "tokenModifiers", js.Array(value*))
     
     inline def setTokenTypes(value: js.Array[String]): Self = StObject.set(x, "tokenTypes", value.asInstanceOf[js.Any])
     
-    inline def setTokenTypesVarargs(value: String*): Self = StObject.set(x, "tokenTypes", js.Array(value :_*))
+    inline def setTokenTypesVarargs(value: String*): Self = StObject.set(x, "tokenTypes", js.Array(value*))
   }
 }

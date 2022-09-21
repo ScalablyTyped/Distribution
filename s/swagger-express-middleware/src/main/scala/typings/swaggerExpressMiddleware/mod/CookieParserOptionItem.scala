@@ -9,7 +9,7 @@ trait CookieParserOptionItem extends StObject {
   /**
     *  an object that is passed to cookie.parse as the second option
     */
-  var options: js.UndefOr[js.Any] = js.undefined
+  var options: js.UndefOr[Any] = js.undefined
   
   /**
     * A string or array used for signing cookies.
@@ -28,7 +28,7 @@ object CookieParserOptionItem {
   
   extension [Self <: CookieParserOptionItem](x: Self) {
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
@@ -36,6 +36,6 @@ object CookieParserOptionItem {
     
     inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
-    inline def setSecretVarargs(value: String*): Self = StObject.set(x, "secret", js.Array(value :_*))
+    inline def setSecretVarargs(value: String*): Self = StObject.set(x, "secret", js.Array(value*))
   }
 }

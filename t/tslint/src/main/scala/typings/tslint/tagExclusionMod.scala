@@ -13,16 +13,16 @@ object tagExclusionMod {
   
   @JSImport("tslint/lib/rules/completed-docs/tagExclusion", "TagExclusion")
   @js.native
-  class TagExclusion () extends Exclusion[ITagExclusionDescriptor] {
+  open class TagExclusion () extends Exclusion[ITagExclusionDescriptor] {
     def this(descriptor: Partial[ITagExclusionDescriptor]) = this()
     
-    /* private */ val contentTags: js.Any = js.native
+    /* private */ val contentTags: Any = js.native
     
-    /* private */ val existenceTags: js.Any = js.native
+    /* private */ val existenceTags: Any = js.native
     
-    /* private */ var getDocumentationNode: js.Any = js.native
+    /* private */ var getDocumentationNode: Any = js.native
     
-    /* private */ var parseTagsWithContents: js.Any = js.native
+    /* private */ var parseTagsWithContents: Any = js.native
   }
   
   type IContentTags = StringDictionary[String]

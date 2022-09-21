@@ -14,7 +14,7 @@ object modalMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Modal", "ModalBase")
   @js.native
-  class ModalBase protected ()
+  open class ModalBase protected ()
     extends typings.officeUiFabricReact.modalBaseMod.ModalBase {
     def this(props: IModalProps) = this()
   }

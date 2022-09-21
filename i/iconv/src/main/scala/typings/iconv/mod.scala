@@ -1,71 +1,51 @@
 package typings.iconv
 
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Shortcut
-import typings.iconv.anon.End
-import typings.node.Buffer
-import typings.node.NodeJS.WritableStream
+import typings.iconv.iconvBooleans.`true`
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
+import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
-  
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("iconv", JSImport.Namespace)
-  @js.native
-  class ^ protected ()
-    extends StObject
-       with Iconv {
-    def this(fromEncoding: String, toEncoding: String) = this()
-  }
-  @JSImport("iconv", JSImport.Namespace)
-  @js.native
-  val ^ : Static = js.native
+object mod {
   
   @js.native
-  trait Iconv
-    extends StObject
-       with WritableStream {
+  trait Iconv extends Stream {
     
     def convert(input: String): Buffer = js.native
-    def convert(input: String, encoding: String): Buffer = js.native
+    def convert(input: String, encoding: BufferEncoding): Buffer = js.native
     def convert(input: Buffer): Buffer = js.native
-    def convert(input: Buffer, encoding: String): Buffer = js.native
     
-    def end(buffer: Buffer, cb: js.Function): Unit = js.native
-    def end(input: String, encoding: String): Unit = js.native
-    def end(input: Unit, encoding: String): Unit = js.native
+    def end(): Unit = js.native
+    def end(input: String): Unit = js.native
+    def end(input: String, encoding: BufferEncoding): Unit = js.native
     def end(input: Buffer): Unit = js.native
-    def end(input: Buffer, encoding: String): Unit = js.native
-    def end(str: String, cb: js.Function): Unit = js.native
-    def end(str: String, encoding: String, cb: js.Function): Unit = js.native
-    def end(str: String, encoding: Unit, cb: js.Function): Unit = js.native
     
-    // copy from stream.Stream
-    def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
+    val writable: `true` = js.native
     
-    def write(buffer: String, cb: js.Function): Boolean = js.native
-    def write(buffer: Buffer, cb: js.Function): Boolean = js.native
-    def write(input: String, encoding: String): Boolean = js.native
-    // copy from NodeJS.WritableStream for compatibility
+    def write(input: String): Boolean = js.native
+    def write(input: String, encoding: BufferEncoding): Boolean = js.native
     def write(input: Buffer): Boolean = js.native
-    def write(input: Buffer, encoding: String): Boolean = js.native
-    def write(str: String, encoding: String, cb: js.Function): Boolean = js.native
-    def write(str: String, encoding: Unit, cb: js.Function): Boolean = js.native
+  }
+  @JSImport("iconv", "Iconv")
+  @js.native
+  val Iconv: Static = js.native
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("iconv", "Iconv")
+  @js.native
+  open class IconvCls protected ()
+    extends typings.iconv.mod.Iconv {
+    def this(fromEncoding: String, toEncoding: String) = this()
   }
   
   @js.native
   trait Static
     extends StObject
-       with Instantiable2[/* fromEncoding */ String, /* toEncoding */ String, Iconv] {
+       with Instantiable2[/* fromEncoding */ String, /* toEncoding */ String, typings.iconv.mod.Iconv] {
     
-    def apply(fromEncoding: String, toEncoding: String): Iconv = js.native
+    def apply(fromEncoding: String, toEncoding: String): typings.iconv.mod.Iconv = js.native
   }
-  
-  type _To = Static
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Static = ^
 }

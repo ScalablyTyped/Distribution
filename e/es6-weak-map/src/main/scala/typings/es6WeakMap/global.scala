@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("WeakMap")
     @js.native
-    class ^[K, V] ()
+    open class ^[K, V] ()
       extends typings.es6WeakMap.mod.^[K, V] {
       def this(iterable: Iterable[js.Tuple2[K, V]]) = this()
     }

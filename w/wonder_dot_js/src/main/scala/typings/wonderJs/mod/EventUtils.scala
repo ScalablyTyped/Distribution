@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "EventUtils")
 @js.native
-class EventUtils ()
+open class EventUtils ()
   extends typings.wonderJs.eventUtilsMod.EventUtils
 /* static members */
 object EventUtils {
@@ -17,5 +17,5 @@ object EventUtils {
   
   inline def isEntityObject(arg: typings.wonderJs.entityObjectMod.EntityObject): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEntityObject")(arg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isEvent(arg: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEvent")(arg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEvent(arg: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEvent")(arg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeCodeReviewRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the  CodeReview  object. 
+    * The Amazon Resource Name (ARN) of the CodeReview object. 
     */
   var CodeReviewArn: Arn
 }

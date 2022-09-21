@@ -9,7 +9,7 @@ object wellKnownMimeTypeMod {
   
   @JSImport("rsocket-core/WellKnownMimeType", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with WellKnownMimeType {
     def this(str: String, identifier: Double) = this()
@@ -187,9 +187,21 @@ object wellKnownMimeTypeMod {
   @js.native
   val IMAGE_TIFF: WellKnownMimeType = js.native
   
+  @JSImport("rsocket-core/WellKnownMimeType", "MESSAGE_RSOCKET_ACCEPT_MIMETYPES")
+  @js.native
+  val MESSAGE_RSOCKET_ACCEPT_MIMETYPES: WellKnownMimeType = js.native
+  
+  @JSImport("rsocket-core/WellKnownMimeType", "MESSAGE_RSOCKET_AUTHENTICATION")
+  @js.native
+  val MESSAGE_RSOCKET_AUTHENTICATION: WellKnownMimeType = js.native
+  
   @JSImport("rsocket-core/WellKnownMimeType", "MESSAGE_RSOCKET_COMPOSITE_METADATA")
   @js.native
   val MESSAGE_RSOCKET_COMPOSITE_METADATA: WellKnownMimeType = js.native
+  
+  @JSImport("rsocket-core/WellKnownMimeType", "MESSAGE_RSOCKET_MIMETYPE")
+  @js.native
+  val MESSAGE_RSOCKET_MIMETYPE: WellKnownMimeType = js.native
   
   @JSImport("rsocket-core/WellKnownMimeType", "MESSAGE_RSOCKET_ROUTING")
   @js.native

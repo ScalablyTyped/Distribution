@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MountPoint extends StObject {
   
   /**
-    * The path on the container at which to mount the host volume.
+    * The path on the container where the host volume is mounted.
     */
   var containerPath: js.UndefOr[String] = js.undefined
   
   /**
-    * If this value is true, the container has read-only access to the volume; otherwise, the container can write to the volume. The default value is false.
+    * If this value is true, the container has read-only access to the volume. Otherwise, the container can write to the volume. The default value is false.
     */
   var readOnly: js.UndefOr[Boolean] = js.undefined
   

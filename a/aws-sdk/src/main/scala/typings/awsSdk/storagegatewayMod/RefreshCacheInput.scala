@@ -36,7 +36,7 @@ object RefreshCacheInput {
     
     inline def setFolderListUndefined: Self = StObject.set(x, "FolderList", js.undefined)
     
-    inline def setFolderListVarargs(value: Folder*): Self = StObject.set(x, "FolderList", js.Array(value :_*))
+    inline def setFolderListVarargs(value: Folder*): Self = StObject.set(x, "FolderList", js.Array(value*))
     
     inline def setRecursive(value: Boolean): Self = StObject.set(x, "Recursive", value.asInstanceOf[js.Any])
     

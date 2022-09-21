@@ -11,9 +11,9 @@ assert with status codes
 | Full name          | http-assert |
 | Keywords           | assert, http |
 | # releases         | 2 |
-| # dependents       | 53 |
-| # downloads        | 25873567 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4835604.0 |
+| # stars            | 144.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/http-assert#readme)

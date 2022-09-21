@@ -37,7 +37,7 @@ object modifiedLogScaleMod {
     *        The base of the log. Must be > 1.
     *
     */
-  class ModifiedLog () extends QuantitativeScale[Double] {
+  open class ModifiedLog () extends QuantitativeScale[Double] {
     def this(base: Double) = this()
     
     /**
@@ -48,11 +48,11 @@ object modifiedLogScaleMod {
       * (0 to 1) scaling factor is added such that at 0 the value is
       * adjusted to 1, resulting in a returned result of 0.
       */
-    /* private */ def _adjustedLog(x: js.Any): js.Any = js.native
+    /* private */ var _adjustedLog: Any = js.native
     
-    /* private */ var _base: js.Any = js.native
+    /* private */ var _base: Any = js.native
     
-    /* private */ var _d3Scale: js.Any = js.native
+    /* private */ var _d3Scale: Any = js.native
     
     /**
       * How many ticks does the range [lower, upper] deserve?
@@ -61,11 +61,11 @@ object modifiedLogScaleMod {
       * I would get 1/2 of the ticks. The range 10, 100 takes up 1/2 of the
       * distance when plotted.
       */
-    /* private */ def _howManyTicks(lower: js.Any, upper: js.Any): js.Any = js.native
+    /* private */ var _howManyTicks: Any = js.native
     
-    /* private */ def _invertedAdjustedLog(x: js.Any): js.Any = js.native
+    /* private */ var _invertedAdjustedLog: Any = js.native
     
-    /* private */ var _logTickGenerator: js.Any = js.native
+    /* private */ var _logTickGenerator: Any = js.native
     
     /**
       * Return an appropriate number of ticks from lower to upper.
@@ -80,10 +80,10 @@ object modifiedLogScaleMod {
       * This function will generate clusters as large as it can while not
       * drastically exceeding its number of ticks.
       */
-    /* private */ def _logTicks(lower: js.Any, upper: js.Any): js.Any = js.native
+    /* private */ var _logTicks: Any = js.native
     
-    /* private */ var _pivot: js.Any = js.native
+    /* private */ var _pivot: Any = js.native
     
-    /* private */ var _untransformedDomain: js.Any = js.native
+    /* private */ var _untransformedDomain: Any = js.native
   }
 }

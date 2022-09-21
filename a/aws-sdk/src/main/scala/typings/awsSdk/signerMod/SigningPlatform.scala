@@ -32,6 +32,11 @@ trait SigningPlatform extends StObject {
   var platformId: js.UndefOr[String] = js.undefined
   
   /**
+    * Indicates whether revocation is supported for the platform.
+    */
+  var revocationSupported: js.UndefOr[bool] = js.undefined
+  
+  /**
     * The configuration of a code signing platform. This includes the designated hash algorithm and encryption algorithm of a signing platform.
     */
   var signingConfiguration: js.UndefOr[SigningConfiguration] = js.undefined
@@ -71,6 +76,10 @@ object SigningPlatform {
     inline def setPlatformId(value: String): Self = StObject.set(x, "platformId", value.asInstanceOf[js.Any])
     
     inline def setPlatformIdUndefined: Self = StObject.set(x, "platformId", js.undefined)
+    
+    inline def setRevocationSupported(value: bool): Self = StObject.set(x, "revocationSupported", value.asInstanceOf[js.Any])
+    
+    inline def setRevocationSupportedUndefined: Self = StObject.set(x, "revocationSupported", js.undefined)
     
     inline def setSigningConfiguration(value: SigningConfiguration): Self = StObject.set(x, "signingConfiguration", value.asInstanceOf[js.Any])
     

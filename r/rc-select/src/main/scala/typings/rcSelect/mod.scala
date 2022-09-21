@@ -1,41 +1,33 @@
 package typings.rcSelect
 
+import typings.rcSelect.anon.Children
+import typings.rcSelect.baseSelectMod.BaseSelectProps
+import typings.rcSelect.baseSelectMod.BaseSelectRef
 import typings.rcSelect.optGroupMod.OptionGroupFC
 import typings.rcSelect.optionMod.OptionFC
+import typings.rcSelect.selectMod.DefaultOptionType
+import typings.rcSelect.selectMod.SelectProps
+import typings.rcSelect.useBasePropsMod.BaseSelectContextProps
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.ReactElement
+import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-    * Typescript not support generic with function component,
-    * we have to wrap an class component to handle this.
-    */
+  @JSImport("rc-select", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("rc-select", JSImport.Default)
   @js.native
-  class default[VT] ()
-    extends typings.rcSelect.selectMod.default[VT]
-  object default {
-    
-    @JSImport("rc-select", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    /* was `typeof OptGroup` */
-    @JSImport("rc-select", "default.OptGroup")
-    @js.native
-    def OptGroup: OptionGroupFC = js.native
-    inline def OptGroup_=(x: OptionGroupFC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OptGroup")(x.asInstanceOf[js.Any])
-    
-    /* static member */
-    /* was `typeof Option` */
-    @JSImport("rc-select", "default.Option")
-    @js.native
-    def Option: OptionFC = js.native
-    inline def Option_=(x: OptionFC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Option")(x.asInstanceOf[js.Any])
-  }
+  val default: (js.Function1[/* props */ Children & (SelectProps[Any, DefaultOptionType]), ReactElement]) & typings.rcSelect.anon.OptGroup = js.native
+  
+  @JSImport("rc-select", "BaseSelect")
+  @js.native
+  val BaseSelect: ForwardRefExoticComponent[BaseSelectProps & RefAttributes[BaseSelectRef]] = js.native
   
   /** This is a placeholder, not real render in dom */
   @JSImport("rc-select", "OptGroup")
@@ -46,4 +38,6 @@ object mod {
   @JSImport("rc-select", "Option")
   @js.native
   val Option: OptionFC = js.native
+  
+  inline def useBaseProps(): BaseSelectContextProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useBaseProps")().asInstanceOf[BaseSelectContextProps]
 }

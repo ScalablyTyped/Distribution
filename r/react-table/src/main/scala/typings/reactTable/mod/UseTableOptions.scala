@@ -5,8 +5,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  columns :std.Array<react-table.react-table.Column<D>>,   data :std.Array<D>} & std.Partial<{  initialState :std.Partial<react-table.react-table.TableState<D>>, stateReducer (newState : react-table.react-table.TableState<D>, action : react-table.react-table.ActionType, previousState : react-table.react-table.TableState<D>, instance : react-table.react-table.TableInstance<D> | undefined): react-table.react-table.TableState<D>, useControlledState (state : react-table.react-table.TableState<D>, meta : react-table.react-table.Meta<D, never, react-table.react-table.MetaBase<D>>): react-table.react-table.TableState<D>,   defaultColumn :std.Partial<react-table.react-table.Column<D>>, getSubRows (originalRow : D, relativeIndex : number): std.Array<D>, getRowId (originalRow : D, relativeIndex : number, parent : react-table.react-table.Row<D> | undefined): string}> */
+/* Inlined {  columns :std.ReadonlyArray<react-table.react-table.Column<D>>,   data :std.Array<D>} & std.Partial<{  initialState :std.Partial<react-table.react-table.TableState<D>>, stateReducer (newState : react-table.react-table.TableState<D>, action : react-table.react-table.ActionType, previousState : react-table.react-table.TableState<D>, instance : react-table.react-table.TableInstance<D> | undefined): react-table.react-table.TableState<D>, useControlledState (state : react-table.react-table.TableState<D>, meta : react-table.react-table.Meta<D, never, react-table.react-table.MetaBase<D>>): react-table.react-table.TableState<D>,   defaultColumn :std.Partial<react-table.react-table.Column<D>>, getSubRows (originalRow : D, relativeIndex : number): std.Array<D>, getRowId (originalRow : D, relativeIndex : number, parent : react-table.react-table.Row<D> | undefined): string,   autoResetHiddenColumns :boolean}> */
 trait UseTableOptions[D /* <: js.Object */] extends StObject {
+  
+  var autoResetHiddenColumns: js.UndefOr[Boolean] = js.undefined
   
   var columns: js.Array[Column[D]]
   
@@ -54,13 +56,17 @@ object UseTableOptions {
   
   extension [Self <: UseTableOptions[?], D /* <: js.Object */](x: Self & UseTableOptions[D]) {
     
+    inline def setAutoResetHiddenColumns(value: Boolean): Self = StObject.set(x, "autoResetHiddenColumns", value.asInstanceOf[js.Any])
+    
+    inline def setAutoResetHiddenColumnsUndefined: Self = StObject.set(x, "autoResetHiddenColumns", js.undefined)
+    
     inline def setColumns(value: js.Array[Column[D]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: Column[D]*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Column[D]*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setData(value: js.Array[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: D*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: D*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDefaultColumn(value: Partial[Column[D]]): Self = StObject.set(x, "defaultColumn", value.asInstanceOf[js.Any])
     

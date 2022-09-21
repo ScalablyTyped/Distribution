@@ -10,10 +10,10 @@ object snoozeMod {
   
   @JSImport("material-ui/svg-icons/av/snooze", JSImport.Default)
   @js.native
-  class default () extends AvSnooze
+  open class default () extends AvSnooze
   
   @JSImport("material-ui/svg-icons/av/snooze", "AvSnooze")
   @js.native
-  class AvSnooze ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvSnooze ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

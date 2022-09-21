@@ -13,10 +13,6 @@ trait OidcToken extends StObject {
     */
   var audience: js.UndefOr[String] = js.undefined
   
-  /**
-    * [Service account email](https://cloud.google.com/iam/docs/service-accounts) to be used for generating the OIDC token. The caller (for CreateSubscription, UpdateSubscription, and
-    * ModifyPushConfig RPCs) must have the iam.serviceAccounts.actAs permission for the service account.
-    */
   var serviceAccountEmail: js.UndefOr[String] = js.undefined
 }
 object OidcToken {

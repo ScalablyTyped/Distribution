@@ -8,6 +8,7 @@ import typings.conventionalChangelogCore.mod.Options.Logger
 import typings.conventionalChangelogCore.mod.Options.Pkg
 import typings.conventionalChangelogCore.mod.Options.Transform
 import typings.conventionalCommitsParser.mod.Commit
+import typings.gitRawCommits.mod.ExecOptions
 import typings.gitRawCommits.mod.GitOptions
 import typings.node.streamMod.Readable
 import typings.std.Partial
@@ -28,163 +29,14 @@ object mod {
     * @param writerOpts
     */
   // tslint:disable-next-line max-line-length
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](): Readable = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Readable]
   inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Unit,
-    context: Unit,
-    gitRawCommitsOpts: Unit,
-    parserOpts: Unit,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Unit, gitRawCommitsOpts: Unit, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Unit,
-    context: Unit,
-    gitRawCommitsOpts: Unit,
-    parserOpts: ParserOptions,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Unit, gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Unit,
-    context: Unit,
-    gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: Unit,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Unit, gitRawCommitsOpts: GitRawCommitsOptions, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Unit,
-    context: Unit,
-    gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: ParserOptions,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Partial[TContext]): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Unit,
-    context: Partial[TContext],
-    gitRawCommitsOpts: Unit,
-    parserOpts: Unit,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Partial[TContext], gitRawCommitsOpts: Unit, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Unit,
-    context: Partial[TContext],
-    gitRawCommitsOpts: Unit,
-    parserOpts: ParserOptions,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Unit, context: Partial[TContext], gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Unit,
-    context: Partial[TContext],
-    gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: Unit,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Unit,
-    context: Partial[TContext],
-    gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: ParserOptions
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Unit,
-    context: Partial[TContext],
-    gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: ParserOptions,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Options[TCommit, TContext]): Readable = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Options[TCommit, TContext],
-    context: Unit,
-    gitRawCommitsOpts: Unit,
-    parserOpts: Unit,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Options[TCommit, TContext],
-    context: Unit,
-    gitRawCommitsOpts: Unit,
-    parserOpts: ParserOptions
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Options[TCommit, TContext],
-    context: Unit,
-    gitRawCommitsOpts: Unit,
-    parserOpts: ParserOptions,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Options[TCommit, TContext], context: Unit, gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Options[TCommit, TContext],
-    context: Unit,
-    gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: Unit,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Options[TCommit, TContext],
-    context: Unit,
-    gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: ParserOptions
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Options[TCommit, TContext],
-    context: Unit,
-    gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: ParserOptions,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](options: Options[TCommit, TContext], context: Partial[TContext]): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Options[TCommit, TContext],
-    context: Partial[TContext],
-    gitRawCommitsOpts: Unit,
-    parserOpts: Unit,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Options[TCommit, TContext],
-    context: Partial[TContext],
-    gitRawCommitsOpts: Unit,
-    parserOpts: ParserOptions
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Options[TCommit, TContext],
-    context: Partial[TContext],
-    gitRawCommitsOpts: Unit,
-    parserOpts: ParserOptions,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Options[TCommit, TContext],
-    context: Partial[TContext],
-    gitRawCommitsOpts: GitRawCommitsOptions
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Options[TCommit, TContext],
-    context: Partial[TContext],
-    gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: Unit,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Options[TCommit, TContext],
-    context: Partial[TContext],
-    gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: ParserOptions
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
-  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](
-    options: Options[TCommit, TContext],
-    context: Partial[TContext],
-    gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: ParserOptions,
-    writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    options: js.UndefOr[Options[TCommit, TContext]],
+    context: js.UndefOr[Partial[TContext]],
+    gitRawCommitsOpts: js.UndefOr[GitRawCommitsOptions],
+    parserOpts: js.UndefOr[ParserOptions],
+    writerOpts: js.UndefOr[WriterOptions[TCommit, TContext]],
+    execOpts: js.UndefOr[ExecOptions]
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any], execOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
   
   @JSImport("conventional-changelog-core", JSImport.Namespace)
   @js.native
@@ -310,7 +162,7 @@ object mod {
         
         inline def setGitSemverTagsUndefined: Self = StObject.set(x, "gitSemverTags", js.undefined)
         
-        inline def setGitSemverTagsVarargs(value: String*): Self = StObject.set(x, "gitSemverTags", js.Array(value :_*))
+        inline def setGitSemverTagsVarargs(value: String*): Self = StObject.set(x, "gitSemverTags", js.Array(value*))
         
         inline def setPackageData(value: ReadonlyPartialPackage): Self = StObject.set(x, "packageData", value.asInstanceOf[js.Any])
         
@@ -388,6 +240,11 @@ object mod {
     var releaseCount: js.UndefOr[Double] = js.undefined
     
     /**
+      * If given, unstable tags (e.g. `x.x.x-alpha.1`, `x.x.x-rc.2`) will be skipped.
+      */
+    var skipUnstable: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Specify a prefix for the git tag that will be taken into account during the
       * comparison. For instance if your version tag is prefixed by `version/`
       * instead of `v` you would specify `--tagPrefix=version/`.
@@ -420,7 +277,7 @@ object mod {
       
       object FunctionType {
         
-        type Callback[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */] = js.Function2[/* error */ js.Any, /* config */ ObjectType[TCommit, TContext], Unit]
+        type Callback[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */] = js.Function2[/* error */ Any, /* config */ ObjectType[TCommit, TContext], Unit]
       }
       type FunctionType[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */] = js.Function1[/* callback */ Callback[TCommit, TContext], Unit]
       
@@ -470,7 +327,7 @@ object mod {
     // tslint:disable-next-line max-line-length
     type Config[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */] = js.Promise[js.Object] | js.Function | js.Object
     
-    type Logger = js.Function1[/* message */ js.UndefOr[js.Any], Unit]
+    type Logger = js.Function1[/* message */ js.UndefOr[Any], Unit]
     
     extension [Self <: Options[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: typings.conventionalChangelogWriter.mod.Context */](x: Self & (Options[TCommit, TContext])) {
       
@@ -482,7 +339,7 @@ object mod {
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      inline def setDebug(value: /* message */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* message */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
@@ -504,6 +361,10 @@ object mod {
       
       inline def setReleaseCountUndefined: Self = StObject.set(x, "releaseCount", js.undefined)
       
+      inline def setSkipUnstable(value: Boolean): Self = StObject.set(x, "skipUnstable", value.asInstanceOf[js.Any])
+      
+      inline def setSkipUnstableUndefined: Self = StObject.set(x, "skipUnstable", js.undefined)
+      
       inline def setTagPrefix(value: String): Self = StObject.set(x, "tagPrefix", value.asInstanceOf[js.Any])
       
       inline def setTagPrefixUndefined: Self = StObject.set(x, "tagPrefix", js.undefined)
@@ -512,7 +373,7 @@ object mod {
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      inline def setWarn(value: /* message */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* message */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
       
       inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
     }
@@ -533,7 +394,7 @@ object mod {
         * @defaults
         * Pass through.
         */
-      var transform: js.UndefOr[js.Function1[/* pkg */ Record[String, js.Any], Record[String, js.Any]]] = js.undefined
+      var transform: js.UndefOr[js.Function1[/* pkg */ Record[String, Any], Record[String, Any]]] = js.undefined
     }
     object Pkg {
       
@@ -548,7 +409,7 @@ object mod {
         
         inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        inline def setTransform(value: /* pkg */ Record[String, js.Any] => Record[String, js.Any]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+        inline def setTransform(value: /* pkg */ Record[String, Any] => Record[String, Any]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
         
         inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       }
@@ -556,7 +417,7 @@ object mod {
     
     object Transform {
       
-      type Callback[T /* <: Commit[String | Double | js.Symbol] */] = js.Function2[/* error */ js.Any, /* commit */ T, Unit]
+      type Callback[T /* <: Commit[String | Double | js.Symbol] */] = js.Function2[/* error */ Any, /* commit */ T, Unit]
     }
     type Transform[T /* <: Commit[String | Double | js.Symbol] */] = js.ThisFunction2[
         /* this */ typings.node.streamMod.Transform, 

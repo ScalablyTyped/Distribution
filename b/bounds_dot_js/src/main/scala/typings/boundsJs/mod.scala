@@ -19,7 +19,7 @@ object mod {
   
   @JSImport("bounds.js", "Boundary")
   @js.native
-  class Boundary () extends StObject {
+  open class Boundary () extends StObject {
     
     /**
       * The check method will return a `boolean`, indicating if the provided `element` is currently inside the boundary.

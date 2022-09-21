@@ -12,7 +12,7 @@ trait PrintRange extends StObject {
   
   val End: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.PrintRange_typekey")
   var PowerPointDotPrintRange_typekey: PrintRange
@@ -25,7 +25,7 @@ object PrintRange {
     Application: Application,
     Delete: () => Unit,
     End: Double,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotPrintRange_typekey: PrintRange,
     Start: Double
   ): PrintRange = {
@@ -42,7 +42,7 @@ object PrintRange {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotPrintRange_typekey(value: PrintRange): Self = StObject.set(x, "PowerPoint.PrintRange_typekey", value.asInstanceOf[js.Any])
     

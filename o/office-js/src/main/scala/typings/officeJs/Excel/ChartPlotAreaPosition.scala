@@ -7,17 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ChartPlotAreaPosition extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.ChartPlotAreaPosition")
 @js.native
 object ChartPlotAreaPosition extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
   sealed trait automatic
     extends StObject
        with ChartPlotAreaPosition
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
   sealed trait custom
     extends StObject

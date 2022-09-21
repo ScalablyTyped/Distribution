@@ -21,25 +21,67 @@ trait MediaElement
   
   def connect(sink: MediaElement): js.Promise[Unit] = js.native
   def connect(sink: MediaElement, callback: Callback[Unit]): js.Promise[Unit] = js.native
+  def connect(sink: MediaElement, mediaType: MediaType): js.Promise[Unit] = js.native
+  def connect(sink: MediaElement, mediaType: MediaType, callback: Callback[Unit]): js.Promise[Unit] = js.native
+  def connect(sink: MediaElement, mediaType: MediaType, sourceMediaDescription: String): js.Promise[Unit] = js.native
+  def connect(sink: MediaElement, mediaType: MediaType, sourceMediaDescription: String, callback: Callback[Unit]): js.Promise[Unit] = js.native
+  def connect(
+    sink: MediaElement,
+    mediaType: MediaType,
+    sourceMediaDescription: String,
+    sinkMediaDescriptionopt: String
+  ): js.Promise[Unit] = js.native
+  def connect(
+    sink: MediaElement,
+    mediaType: MediaType,
+    sourceMediaDescription: String,
+    sinkMediaDescriptionopt: String,
+    callback: Callback[Unit]
+  ): js.Promise[Unit] = js.native
   
   def disconnect(sink: MediaElement): js.Promise[Unit] = js.native
   def disconnect(sink: MediaElement, callback: Callback[Unit]): js.Promise[Unit] = js.native
+  def disconnect(sink: MediaElement, mediaType: MediaType): js.Promise[Unit] = js.native
+  def disconnect(sink: MediaElement, mediaType: MediaType, callback: Callback[Unit]): js.Promise[Unit] = js.native
+  def disconnect(sink: MediaElement, mediaType: MediaType, sourceMediaDescription: String): js.Promise[Unit] = js.native
+  def disconnect(sink: MediaElement, mediaType: MediaType, sourceMediaDescription: String, callback: Callback[Unit]): js.Promise[Unit] = js.native
+  def disconnect(
+    sink: MediaElement,
+    mediaType: MediaType,
+    sourceMediaDescription: String,
+    sinkMediaDescriptionopt: String
+  ): js.Promise[Unit] = js.native
+  def disconnect(
+    sink: MediaElement,
+    mediaType: MediaType,
+    sourceMediaDescription: String,
+    sinkMediaDescriptionopt: String,
+    callback: Callback[Unit]
+  ): js.Promise[Unit] = js.native
   
   def getSinkConnections(): js.Promise[js.Array[ElementConnectionData]] = js.native
   def getSinkConnections(callback: Callback[js.Array[ElementConnectionData]]): js.Promise[js.Array[ElementConnectionData]] = js.native
+  def getSinkConnections(mediaType: MediaType): js.Promise[js.Array[ElementConnectionData]] = js.native
+  def getSinkConnections(mediaType: MediaType, callback: Callback[js.Array[ElementConnectionData]]): js.Promise[js.Array[ElementConnectionData]] = js.native
+  def getSinkConnections(mediaType: MediaType, description: String): js.Promise[js.Array[ElementConnectionData]] = js.native
+  def getSinkConnections(mediaType: MediaType, description: String, callback: Callback[js.Array[ElementConnectionData]]): js.Promise[js.Array[ElementConnectionData]] = js.native
   
   def getSourceConnections(): js.Promise[js.Array[ElementConnectionData]] = js.native
   def getSourceConnections(callback: Callback[js.Array[ElementConnectionData]]): js.Promise[js.Array[ElementConnectionData]] = js.native
+  def getSourceConnections(mediaType: MediaType): js.Promise[js.Array[ElementConnectionData]] = js.native
+  def getSourceConnections(mediaType: MediaType, callback: Callback[js.Array[ElementConnectionData]]): js.Promise[js.Array[ElementConnectionData]] = js.native
+  def getSourceConnections(mediaType: MediaType, description: String): js.Promise[js.Array[ElementConnectionData]] = js.native
+  def getSourceConnections(mediaType: MediaType, description: String, callback: Callback[js.Array[ElementConnectionData]]): js.Promise[js.Array[ElementConnectionData]] = js.native
   
   def isMediaFlowingIn(mediaType: MediaType): js.Promise[Boolean] = js.native
-  def isMediaFlowingIn(mediaType: MediaType, sinkMediaDescriptionopt: String): js.Promise[Boolean] = js.native
-  def isMediaFlowingIn(mediaType: MediaType, sinkMediaDescriptionopt: String, callbackopt: Callback[Boolean]): js.Promise[Boolean] = js.native
-  def isMediaFlowingIn(mediaType: MediaType, sinkMediaDescriptionopt: Unit, callbackopt: Callback[Boolean]): js.Promise[Boolean] = js.native
+  def isMediaFlowingIn(mediaType: MediaType, sinkMediaDescription: String): js.Promise[Boolean] = js.native
+  def isMediaFlowingIn(mediaType: MediaType, sinkMediaDescription: String, callbackopt: Callback[Boolean]): js.Promise[Boolean] = js.native
+  def isMediaFlowingIn(mediaType: MediaType, sinkMediaDescription: Unit, callbackopt: Callback[Boolean]): js.Promise[Boolean] = js.native
   
   def isMediaFlowingOut(mediaType: MediaType): js.Promise[Boolean] = js.native
-  def isMediaFlowingOut(mediaType: MediaType, sinkMediaDescriptionopt: String): js.Promise[Boolean] = js.native
-  def isMediaFlowingOut(mediaType: MediaType, sinkMediaDescriptionopt: String, callbackopt: Callback[Boolean]): js.Promise[Boolean] = js.native
-  def isMediaFlowingOut(mediaType: MediaType, sinkMediaDescriptionopt: Unit, callbackopt: Callback[Boolean]): js.Promise[Boolean] = js.native
+  def isMediaFlowingOut(mediaType: MediaType, sinkMediaDescription: String): js.Promise[Boolean] = js.native
+  def isMediaFlowingOut(mediaType: MediaType, sinkMediaDescription: String, callbackopt: Callback[Boolean]): js.Promise[Boolean] = js.native
+  def isMediaFlowingOut(mediaType: MediaType, sinkMediaDescription: Unit, callbackopt: Callback[Boolean]): js.Promise[Boolean] = js.native
   
   @JSName("on")
   def on_ElementConnected(eventName: ElementConnected, callback: js.Function1[/* event */ EventElementConnectedsink, Unit]): MediaElement = js.native

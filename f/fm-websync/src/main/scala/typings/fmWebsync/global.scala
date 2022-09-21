@@ -13,7 +13,7 @@ object global {
       
       @JSGlobal("fm.websync.client")
       @js.native
-      class client ()
+      open class client ()
         extends StObject
            with typings.fmWebsync.fm.websync.client
       object client {

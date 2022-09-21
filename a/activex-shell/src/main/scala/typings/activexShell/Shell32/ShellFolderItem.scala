@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShellFolderItem extends StObject {
   
   /** Get Application object */
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   /** Access an extended property */
-  def ExtendedProperty(bstrPropName: String): js.Any = js.native
+  def ExtendedProperty(bstrPropName: String): Any = js.native
   
   /** If item is a folder return folder object */
   val GetFolder: Folder3 | Null = js.native
@@ -58,7 +58,7 @@ trait ShellFolderItem extends StObject {
   var Name: String = js.native
   
   /** Get Parent object */
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /** Get the pathname to the item */
   val Path: String = js.native

@@ -11,7 +11,7 @@ object shadowsMod extends Shortcut {
   @js.native
   val default: Shadows = js.native
   
-  type Shadows = js.Array[js.Any]
+  type Shadows = js.Array[Any]
   
   type _To = Shadows
   

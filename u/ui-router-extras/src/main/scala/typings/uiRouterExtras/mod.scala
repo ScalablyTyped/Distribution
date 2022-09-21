@@ -59,7 +59,7 @@ object mod {
         
         inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         
-        inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
+        inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value*))
       }
     }
     
@@ -85,7 +85,7 @@ object mod {
       */
     trait IFutureState
       extends StObject
-         with /* key */ StringDictionary[js.Any] {
+         with /* key */ StringDictionary[Any] {
       
       /**
         * The placeholder state name (fully qualified).
@@ -127,10 +127,10 @@ object mod {
       */
     type IFutureStateFactory = Injectable[
         js.Function1[
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           IPromise[
             js.UndefOr[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ js.Any
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ Any
             ]
           ]
         ]
@@ -184,15 +184,15 @@ object mod {
     trait IPreviousState extends StObject {
       
       var params: js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ Any
           ] = js.undefined
       
-      var state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ js.Any
+      var state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ Any
     }
     object IPreviousState {
       
       inline def apply(
-        state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ js.Any
+        state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ Any
       ): IPreviousState = {
         val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
         __obj.asInstanceOf[IPreviousState]
@@ -201,13 +201,13 @@ object mod {
       extension [Self <: IPreviousState](x: Self) {
         
         inline def setParams(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ Any
         ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
         inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         
         inline def setState(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ Any
         ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       }
     }
@@ -238,11 +238,11 @@ object mod {
         * @param options State options
         * @return Promise
         */
-      def go(memoName: String): IPromise[js.Any] = js.native
+      def go(memoName: String): IPromise[Any] = js.native
       def go(
         memoName: String,
-        options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateOptions */ js.Any
-      ): IPromise[js.Any] = js.native
+        options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateOptions */ Any
+      ): IPromise[Any] = js.native
       
       /**
         * Memorize a state
@@ -259,7 +259,7 @@ object mod {
     trait IRedirectParams extends StObject {
       
       var params: js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ Any
           ] = js.undefined
       
       var state: String
@@ -274,7 +274,7 @@ object mod {
       extension [Self <: IRedirectParams](x: Self) {
         
         inline def setParams(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ Any
         ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
         inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
@@ -283,7 +283,7 @@ object mod {
       }
     }
     
-    type IResolveFunction = Injectable[js.Function1[/* repeated */ js.Any, IPromise[js.Any]]]
+    type IResolveFunction = Injectable[js.Function1[/* repeated */ Any, IPromise[Any]]]
     
     @js.native
     trait IStateProvider
@@ -315,12 +315,12 @@ object mod {
       /*
         * Function (injectable). Called when a sticky state is navigated away from (inactivated).
         */
-      var onInactivate: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+      var onInactivate: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
       
       /*
         * Function (injectable). Called when an inactive sticky state is navigated to (reactivated).
         */
-      var onReactivate: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+      var onReactivate: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
       
       /*
         * When marking a state sticky, the state must target its own unique named ui-view.
@@ -333,7 +333,7 @@ object mod {
         */
       var views: js.UndefOr[
             StringDictionary[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ js.Any
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ Any
             ]
           ] = js.undefined
     }
@@ -354,11 +354,11 @@ object mod {
         
         inline def setDsrUndefined: Self = StObject.set(x, "dsr", js.undefined)
         
-        inline def setOnInactivate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onInactivate", js.Any.fromFunction1(value))
+        inline def setOnInactivate(value: /* repeated */ Any => Unit): Self = StObject.set(x, "onInactivate", js.Any.fromFunction1(value))
         
         inline def setOnInactivateUndefined: Self = StObject.set(x, "onInactivate", js.undefined)
         
-        inline def setOnReactivate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onReactivate", js.Any.fromFunction1(value))
+        inline def setOnReactivate(value: /* repeated */ Any => Unit): Self = StObject.set(x, "onReactivate", js.Any.fromFunction1(value))
         
         inline def setOnReactivateUndefined: Self = StObject.set(x, "onReactivate", js.undefined)
         
@@ -368,7 +368,7 @@ object mod {
         
         inline def setViews(
           value: StringDictionary[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ js.Any
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ Any
                 ]
         ): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
         
@@ -392,7 +392,7 @@ object mod {
     object IStickyStateProvider {
       
       inline def apply(
-        $get: js.Any,
+        $get: Any,
         debugMode: () => Boolean,
         enableDebug: Boolean => Boolean,
         registerStickyState: IStickyState => Unit

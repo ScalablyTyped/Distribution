@@ -1,46 +1,60 @@
 package typings.cssnano
 
-import org.scalablytyped.runtime.Shortcut
-import typings.postcss.mod.Plugin_
+import typings.cssnano.cssnanoBooleans.`true`
+import typings.postcss.mod.Processor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  /**
+    * @type {import('postcss').PluginCreator<Options>}
+    * @param {Options=} options
+    * @return {import('postcss').Processor}
+    */
+  inline def apply(): Processor = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Processor]
+  inline def apply(options: Options): Processor = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Processor]
   
   @JSImport("cssnano", JSImport.Namespace)
   @js.native
-  val ^ : CssNano = js.native
+  val ^ : js.Any = js.native
   
-  type CssNano = Plugin_[CssNanoOptions]
+  @JSImport("cssnano", "postcss")
+  @js.native
+  def postcss: `true` = js.native
+  inline def postcss_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("postcss")(x.asInstanceOf[js.Any])
   
-  trait CssNanoOptions extends StObject {
+  trait Options extends StObject {
     
     var configFile: js.UndefOr[String] = js.undefined
     
-    var preset: js.UndefOr[(js.Tuple2[String, js.Object]) | String] = js.undefined
-  }
-  object CssNanoOptions {
+    var plugins: js.UndefOr[js.Array[Any]] = js.undefined
     
-    inline def apply(): CssNanoOptions = {
+    var preset: js.UndefOr[Any] = js.undefined
+  }
+  object Options {
+    
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CssNanoOptions]
+      __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: CssNanoOptions](x: Self) {
+    extension [Self <: Options](x: Self) {
       
       inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
       
       inline def setConfigFileUndefined: Self = StObject.set(x, "configFile", js.undefined)
       
-      inline def setPreset(value: (js.Tuple2[String, js.Object]) | String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      
+      inline def setPluginsVarargs(value: Any*): Self = StObject.set(x, "plugins", js.Array(value*))
+      
+      inline def setPreset(value: Any): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       
       inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
     }
   }
-  
-  type _To = CssNano
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: CssNano = ^
 }

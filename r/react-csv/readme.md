@@ -10,10 +10,10 @@ Build CSV files on the fly basing on Array/literal object of data
 | ------------------ | :-------------: |
 | Full name          | react-csv |
 | Keywords           | csv, excel, react, file, IO, download, hyperlink, component, reuse, ES7, babel, IE11 |
-| # releases         | 6 |
-| # dependents       | 52 |
-| # downloads        | 7519000 |
-| # stars            | 2 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 1323786.0 |
+| # stars            | 940.0 |
 
 ## Links
 - [Homepage](https://github.com/react-csv/react-csv#readme)

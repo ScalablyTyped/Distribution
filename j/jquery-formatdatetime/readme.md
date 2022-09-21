@@ -10,10 +10,10 @@ A jQuery plugin that converts a date object to a supplied format. It was forked 
 | ------------------ | :-------------: |
 | Full name          | jquery-formatdatetime |
 | Keywords           | format, date, time, datetime |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 6629 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 388.6666666666667 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/agschwender/jquery.formatDateTime)

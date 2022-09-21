@@ -1,7 +1,6 @@
 package typings.gulpIntercept
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +12,10 @@ object mod extends Shortcut {
   @js.native
   val ^ : Intercept = js.native
   
-  type Intercept = js.Function1[/* interceptFunction */ InterceptFunction, ReadWriteStream]
+  type Intercept = js.Function1[
+    /* interceptFunction */ InterceptFunction, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+  ]
   
   type InterceptFunction = js.Function1[/* file */ File, File]
   

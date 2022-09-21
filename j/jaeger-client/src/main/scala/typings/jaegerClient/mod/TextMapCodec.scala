@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("jaeger-client", "TextMapCodec")
 @js.native
-class TextMapCodec protected ()
+open class TextMapCodec protected ()
   extends StObject
      with Injector
      with Extractor {
   def this(options: TextMapCodecOptions) = this()
   
   /* CompleteClass */
-  override def extract(carrier: js.Any): SpanContext | Null = js.native
+  override def extract(carrier: Any): SpanContext | Null = js.native
   
   /* CompleteClass */
-  override def inject(spanContext: SpanContext, carrier: js.Any): Unit = js.native
+  override def inject(spanContext: SpanContext, carrier: Any): Unit = js.native
 }

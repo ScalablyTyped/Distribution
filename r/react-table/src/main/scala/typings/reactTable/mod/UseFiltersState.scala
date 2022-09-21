@@ -20,6 +20,6 @@ object UseFiltersState {
     
     inline def setFilters(value: Filters[D]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    inline def setFiltersVarargs(value: Value[D]*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Value[D]*): Self = StObject.set(x, "filters", js.Array(value*))
   }
 }

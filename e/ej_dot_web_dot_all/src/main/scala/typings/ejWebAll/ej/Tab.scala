@@ -229,7 +229,7 @@ object Tab {
     
     /** returns AJAX data details.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the tab model.
       */
@@ -252,7 +252,7 @@ object Tab {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -375,7 +375,7 @@ object Tab {
     /** It specifies the data as an object, will be passed in the query string.
       * @Default {{}}
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** It specifies the type of data that you're expecting back from the response.
       * @Default {html}
@@ -408,7 +408,7 @@ object Tab {
       
       inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       
@@ -434,11 +434,11 @@ object Tab {
     
     /** returns content of AJAX request.
       */
-    var content: js.UndefOr[js.Any] = js.undefined
+    var content: js.UndefOr[Any] = js.undefined
     
     /** return AJAX data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the tab model.
       */
@@ -461,11 +461,11 @@ object Tab {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -768,7 +768,7 @@ object Tab {
     
     /** returns new added tab content panel.
       */
-    var tabContent: js.UndefOr[js.Any] = js.undefined
+    var tabContent: js.UndefOr[Any] = js.undefined
     
     /** returns new added tab header.
       */
@@ -795,7 +795,7 @@ object Tab {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTabContent(value: js.Any): Self = StObject.set(x, "tabContent", value.asInstanceOf[js.Any])
+      inline def setTabContent(value: Any): Self = StObject.set(x, "tabContent", value.asInstanceOf[js.Any])
       
       inline def setTabContentUndefined: Self = StObject.set(x, "tabContent", js.undefined)
       
@@ -969,12 +969,12 @@ object Tab {
     /** Specifies to hide a pane of Tab control.
       * @Default {[]}
       */
-    var hiddenItemIndex: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var hiddenItemIndex: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the HTML Attributes of the Tab.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** The idPrefix property appends the given string on the added tab item idâ€™s in runtime.
       * @Default {ej-tab-}
@@ -1079,7 +1079,7 @@ object Tab {
       
       inline def setDisabledItemIndexUndefined: Self = StObject.set(x, "disabledItemIndex", js.undefined)
       
-      inline def setDisabledItemIndexVarargs(value: Double*): Self = StObject.set(x, "disabledItemIndex", js.Array(value :_*))
+      inline def setDisabledItemIndexVarargs(value: Double*): Self = StObject.set(x, "disabledItemIndex", js.Array(value*))
       
       inline def setEnableAnimation(value: Boolean): Self = StObject.set(x, "enableAnimation", value.asInstanceOf[js.Any])
       
@@ -1103,7 +1103,7 @@ object Tab {
       
       inline def setEnabledItemIndexUndefined: Self = StObject.set(x, "enabledItemIndex", js.undefined)
       
-      inline def setEnabledItemIndexVarargs(value: Double*): Self = StObject.set(x, "enabledItemIndex", js.Array(value :_*))
+      inline def setEnabledItemIndexVarargs(value: Double*): Self = StObject.set(x, "enabledItemIndex", js.Array(value*))
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
@@ -1127,13 +1127,13 @@ object Tab {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHiddenItemIndex(value: js.Array[js.Any]): Self = StObject.set(x, "hiddenItemIndex", value.asInstanceOf[js.Any])
+      inline def setHiddenItemIndex(value: js.Array[Any]): Self = StObject.set(x, "hiddenItemIndex", value.asInstanceOf[js.Any])
       
       inline def setHiddenItemIndexUndefined: Self = StObject.set(x, "hiddenItemIndex", js.undefined)
       
-      inline def setHiddenItemIndexVarargs(value: js.Any*): Self = StObject.set(x, "hiddenItemIndex", js.Array(value :_*))
+      inline def setHiddenItemIndexVarargs(value: Any*): Self = StObject.set(x, "hiddenItemIndex", js.Array(value*))
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       

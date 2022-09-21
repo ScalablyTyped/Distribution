@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("proton-native", "Form")
 @js.native
-class Form protected ()
-  extends Component[FormProps, js.Object, js.Any] {
+open class Form protected ()
+  extends Component[FormProps, js.Object, Any] {
   def this(props: FormProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: FormProps, context: js.Any) = this()
+  def this(props: FormProps, context: Any) = this()
 }

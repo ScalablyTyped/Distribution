@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ObjectConstructor extends StObject {
   
-  def like(obj: js.Any): ObjectConstructor
+  def like(obj: Any): ObjectConstructor
   
-  def reference(obj: js.Any): ObjectConstructor
+  def reference(obj: Any): ObjectConstructor
 }
 object ObjectConstructor {
   
-  inline def apply(like: js.Any => ObjectConstructor, reference: js.Any => ObjectConstructor): ObjectConstructor = {
+  inline def apply(like: Any => ObjectConstructor, reference: Any => ObjectConstructor): ObjectConstructor = {
     val __obj = js.Dynamic.literal(like = js.Any.fromFunction1(like), reference = js.Any.fromFunction1(reference))
     __obj.asInstanceOf[ObjectConstructor]
   }
   
   extension [Self <: ObjectConstructor](x: Self) {
     
-    inline def setLike(value: js.Any => ObjectConstructor): Self = StObject.set(x, "like", js.Any.fromFunction1(value))
+    inline def setLike(value: Any => ObjectConstructor): Self = StObject.set(x, "like", js.Any.fromFunction1(value))
     
-    inline def setReference(value: js.Any => ObjectConstructor): Self = StObject.set(x, "reference", js.Any.fromFunction1(value))
+    inline def setReference(value: Any => ObjectConstructor): Self = StObject.set(x, "reference", js.Any.fromFunction1(value))
   }
 }

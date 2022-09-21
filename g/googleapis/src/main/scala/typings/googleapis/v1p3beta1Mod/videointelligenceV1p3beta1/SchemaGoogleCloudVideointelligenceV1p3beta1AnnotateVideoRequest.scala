@@ -4,53 +4,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Video annotation request.
-  */
 trait SchemaGoogleCloudVideointelligenceV1p3beta1AnnotateVideoRequest extends StObject {
   
   /**
-    * Requested video annotation features.
+    * Required. Requested video annotation features.
     */
-  var features: js.UndefOr[js.Array[String]] = js.undefined
+  var features: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The video data bytes. If unset, the input video(s) should be specified
-    * via `input_uri`. If set, `input_uri` should be unset.
+    * The video data bytes. If unset, the input video(s) should be specified via the `input_uri`. If set, `input_uri` must be unset.
     */
-  var inputContent: js.UndefOr[String] = js.undefined
+  var inputContent: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Input video location. Currently, only [Google Cloud
-    * Storage](https://cloud.google.com/storage/) URIs are supported, which
-    * must be specified in the following format: `gs://bucket-id/object-id`
-    * (other URI formats return google.rpc.Code.INVALID_ARGUMENT). For more
-    * information, see [Request URIs](/storage/docs/reference-uris). A video
-    * URI may include wildcards in `object-id`, and thus identify multiple
-    * videos. Supported wildcards: &#39;*&#39; to match 0 or more characters;
-    * &#39;?&#39; to match 1 character. If unset, the input video should be
-    * embedded in the request as `input_content`. If set, `input_content`
-    * should be unset.
+    * Input video location. Currently, only [Cloud Storage](https://cloud.google.com/storage/) URIs are supported. URIs must be specified in the following format: `gs://bucket-id/object-id` (other URI formats return google.rpc.Code.INVALID_ARGUMENT). For more information, see [Request URIs](https://cloud.google.com/storage/docs/request-endpoints). To identify multiple videos, a video URI may include wildcards in the `object-id`. Supported wildcards: '*' to match 0 or more characters; '?' to match 1 character. If unset, the input video should be embedded in the request as `input_content`. If set, `input_content` must be unset.
     */
-  var inputUri: js.UndefOr[String] = js.undefined
+  var inputUri: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional cloud region where annotation should take place. Supported cloud
-    * regions: `us-east1`, `us-west1`, `europe-west1`, `asia-east1`. If no
-    * region is specified, a region will be determined based on video file
-    * location.
+    * Optional. Cloud region where annotation should take place. Supported cloud regions are: `us-east1`, `us-west1`, `europe-west1`, `asia-east1`. If no region is specified, the region will be determined based on video file location.
     */
-  var locationId: js.UndefOr[String] = js.undefined
+  var locationId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional location where the output (in JSON format) should be stored.
-    * Currently, only [Google Cloud Storage](https://cloud.google.com/storage/)
-    * URIs are supported, which must be specified in the following format:
-    * `gs://bucket-id/object-id` (other URI formats return
-    * google.rpc.Code.INVALID_ARGUMENT). For more information, see [Request
-    * URIs](/storage/docs/reference-uris).
+    * Optional. Location where the output (in JSON format) should be stored. Currently, only [Cloud Storage](https://cloud.google.com/storage/) URIs are supported. These must be specified in the following format: `gs://bucket-id/object-id` (other URI formats return google.rpc.Code.INVALID_ARGUMENT). For more information, see [Request URIs](https://cloud.google.com/storage/docs/request-endpoints).
     */
-  var outputUri: js.UndefOr[String] = js.undefined
+  var outputUri: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Additional video context and/or feature-specific parameters.
@@ -68,23 +47,33 @@ object SchemaGoogleCloudVideointelligenceV1p3beta1AnnotateVideoRequest {
     
     inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
+    inline def setFeaturesNull: Self = StObject.set(x, "features", null)
+    
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setInputContent(value: String): Self = StObject.set(x, "inputContent", value.asInstanceOf[js.Any])
+    
+    inline def setInputContentNull: Self = StObject.set(x, "inputContent", null)
     
     inline def setInputContentUndefined: Self = StObject.set(x, "inputContent", js.undefined)
     
     inline def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
     
+    inline def setInputUriNull: Self = StObject.set(x, "inputUri", null)
+    
     inline def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
     
     inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
+    inline def setLocationIdNull: Self = StObject.set(x, "locationId", null)
+    
     inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
     inline def setOutputUri(value: String): Self = StObject.set(x, "outputUri", value.asInstanceOf[js.Any])
+    
+    inline def setOutputUriNull: Self = StObject.set(x, "outputUri", null)
     
     inline def setOutputUriUndefined: Self = StObject.set(x, "outputUri", js.undefined)
     

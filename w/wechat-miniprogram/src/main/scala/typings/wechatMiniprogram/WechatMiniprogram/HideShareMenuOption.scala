@@ -41,7 +41,7 @@ object HideShareMenuOption {
     
     inline def setMenusUndefined: Self = StObject.set(x, "menus", js.undefined)
     
-    inline def setMenusVarargs(value: String*): Self = StObject.set(x, "menus", js.Array(value :_*))
+    inline def setMenusVarargs(value: String*): Self = StObject.set(x, "menus", js.Array(value*))
     
     inline def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

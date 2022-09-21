@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SceneOptimizer")
 @js.native
-class SceneOptimizer protected ()
+open class SceneOptimizer protected ()
   extends StObject
      with typings.babylonjs.BABYLON.SceneOptimizer {
   /**

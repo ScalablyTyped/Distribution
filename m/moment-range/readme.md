@@ -10,10 +10,10 @@ Fancy date ranges for Moment.js
 | ------------------ | :-------------: |
 | Full name          | moment-range |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 354 |
-| # downloads        | 12096698 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1324150.3333333333 |
+| # stars            | 1654.0 |
 
 ## Links
 - [Homepage](https://github.com/rotaready/moment-range)

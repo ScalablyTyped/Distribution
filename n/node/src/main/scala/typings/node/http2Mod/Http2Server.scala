@@ -1,20 +1,22 @@
 package typings.node.http2Mod
 
-import typings.node.netMod.Server
 import typings.node.nodeStrings.checkContinue
 import typings.node.nodeStrings.request
 import typings.node.nodeStrings.session
 import typings.node.nodeStrings.sessionError
 import typings.node.nodeStrings.stream
 import typings.node.nodeStrings.timeout
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Http2Server extends Server {
+trait Http2Server
+  extends StObject
+     with HTTP2ServerCommon {
   
+  def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_checkContinue(
     event: checkContinue,
@@ -28,7 +30,7 @@ trait Http2Server extends Server {
   @JSName("addListener")
   def addListener_session(event: session, listener: js.Function1[/* session */ ServerHttp2Session, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_sessionError(event: sessionError, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def addListener_sessionError(event: sessionError, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_stream(
     event: stream,
@@ -42,6 +44,8 @@ trait Http2Server extends Server {
   @JSName("addListener")
   def addListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
   
+  def emit(event: String, args: Any*): Boolean = js.native
+  def emit(event: js.Symbol, args: Any*): Boolean = js.native
   @JSName("emit")
   def emit_checkContinue(event: checkContinue, request: Http2ServerRequest, response: Http2ServerResponse): Boolean = js.native
   @JSName("emit")
@@ -49,12 +53,14 @@ trait Http2Server extends Server {
   @JSName("emit")
   def emit_session(event: session, session: ServerHttp2Session): Boolean = js.native
   @JSName("emit")
-  def emit_sessionError(event: sessionError, err: Error): Boolean = js.native
+  def emit_sessionError(event: sessionError, err: js.Error): Boolean = js.native
   @JSName("emit")
   def emit_stream(event: stream, stream: ServerHttp2Stream, headers: IncomingHttpHeaders, flags: Double): Boolean = js.native
   @JSName("emit")
   def emit_timeout(event: timeout): Boolean = js.native
   
+  def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("on")
   def on_checkContinue(
     event: checkContinue,
@@ -68,7 +74,7 @@ trait Http2Server extends Server {
   @JSName("on")
   def on_session(event: session, listener: js.Function1[/* session */ ServerHttp2Session, Unit]): this.type = js.native
   @JSName("on")
-  def on_sessionError(event: sessionError, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def on_sessionError(event: sessionError, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("on")
   def on_stream(
     event: stream,
@@ -82,6 +88,8 @@ trait Http2Server extends Server {
   @JSName("on")
   def on_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
   
+  def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("once")
   def once_checkContinue(
     event: checkContinue,
@@ -95,7 +103,7 @@ trait Http2Server extends Server {
   @JSName("once")
   def once_session(event: session, listener: js.Function1[/* session */ ServerHttp2Session, Unit]): this.type = js.native
   @JSName("once")
-  def once_sessionError(event: sessionError, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def once_sessionError(event: sessionError, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("once")
   def once_stream(
     event: stream,
@@ -109,6 +117,8 @@ trait Http2Server extends Server {
   @JSName("once")
   def once_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
   
+  def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_checkContinue(
     event: checkContinue,
@@ -122,7 +132,7 @@ trait Http2Server extends Server {
   @JSName("prependListener")
   def prependListener_session(event: session, listener: js.Function1[/* session */ ServerHttp2Session, Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_sessionError(event: sessionError, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def prependListener_sessionError(event: sessionError, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_stream(
     event: stream,
@@ -136,6 +146,8 @@ trait Http2Server extends Server {
   @JSName("prependListener")
   def prependListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
   
+  def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_checkContinue(
     event: checkContinue,
@@ -149,7 +161,7 @@ trait Http2Server extends Server {
   @JSName("prependOnceListener")
   def prependOnceListener_session(event: session, listener: js.Function1[/* session */ ServerHttp2Session, Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_sessionError(event: sessionError, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def prependOnceListener_sessionError(event: sessionError, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_stream(
     event: stream,
@@ -162,9 +174,4 @@ trait Http2Server extends Server {
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
-  
-  def setTimeout(): this.type = js.native
-  def setTimeout(msec: Double): this.type = js.native
-  def setTimeout(msec: Double, callback: js.Function0[Unit]): this.type = js.native
-  def setTimeout(msec: Unit, callback: js.Function0[Unit]): this.type = js.native
 }

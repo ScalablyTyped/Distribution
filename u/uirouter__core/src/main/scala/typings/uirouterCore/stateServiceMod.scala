@@ -23,7 +23,7 @@ object stateServiceMod {
   
   @JSImport("@uirouter/core/lib/state/stateService", "StateService")
   @js.native
-  class StateService protected () extends StObject {
+  open class StateService protected () extends StObject {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
     
@@ -36,7 +36,7 @@ object stateServiceMod {
     var $current: StateObject = js.native
     
     /** @internal */
-    /* private */ var _defaultErrorHandler: js.Any = js.native
+    /* private */ var _defaultErrorHandler: Any = js.native
     
     /**
       * Handler for when [[transitionTo]] is called with an invalid state.
@@ -49,7 +49,7 @@ object stateServiceMod {
       *
       * @internal
       */
-    /* private */ var _handleInvalidTargetState: js.Any = js.native
+    /* private */ var _handleInvalidTargetState: Any = js.native
     
     /**
       * The current [[StateDeclaration]]
@@ -82,8 +82,8 @@ object stateServiceMod {
       * @param handler a global error handler function
       * @returns the current global error handler
       */
-    def defaultErrorHandler(): js.Function1[/* error */ js.Any, Unit] = js.native
-    def defaultErrorHandler(handler: js.Function1[/* error */ js.Any, Unit]): js.Function1[/* error */ js.Any, Unit] = js.native
+    def defaultErrorHandler(): js.Function1[/* error */ Any, Unit] = js.native
+    def defaultErrorHandler(handler: js.Function1[/* error */ Any, Unit]): js.Function1[/* error */ Any, Unit] = js.native
     
     /** @internal */
     def dispose(): Unit = js.native
@@ -105,7 +105,7 @@ object stateServiceMod {
     def get(stateOrName: StateOrName, base: StateOrName): StateDeclaration = js.native
     
     /** @internal */
-    /* private */ var getCurrentPath: js.Any = js.native
+    /* private */ var getCurrentPath: Any = js.native
     
     /**
       * Transition to a different state and/or parameters
@@ -350,7 +350,7 @@ object stateServiceMod {
     def reload(): js.Promise[StateObject] = js.native
     def reload(reloadState: StateOrName): js.Promise[StateObject] = js.native
     
-    /* private */ var router: js.Any = js.native
+    /* private */ var router: Any = js.native
     
     /**
       * Creates a [[TargetState]]

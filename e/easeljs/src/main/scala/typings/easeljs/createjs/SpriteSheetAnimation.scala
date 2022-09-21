@@ -26,7 +26,7 @@ object SpriteSheetAnimation {
     
     inline def setFrames(value: js.Array[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    inline def setFramesVarargs(value: Double*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: Double*): Self = StObject.set(x, "frames", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

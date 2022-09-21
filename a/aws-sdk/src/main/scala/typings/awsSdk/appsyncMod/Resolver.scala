@@ -22,9 +22,14 @@ trait Resolver extends StObject {
   var fieldName: js.UndefOr[ResourceName] = js.undefined
   
   /**
-    * The resolver type.    UNIT: A UNIT resolver type. A UNIT resolver is the default resolver type. A UNIT resolver enables you to execute a GraphQL query against a single data source.    PIPELINE: A PIPELINE resolver type. A PIPELINE resolver enables you to execute a series of Function in a serial manner. You can use a pipeline resolver to execute a GraphQL query against multiple data sources.  
+    * The resolver type.    UNIT: A UNIT resolver type. A UNIT resolver is the default resolver type. You can use a UNIT resolver to run a GraphQL query against a single data source.    PIPELINE: A PIPELINE resolver type. You can use a PIPELINE resolver to invoke a series of Function objects in a serial manner. You can use a pipeline resolver to run a GraphQL query against multiple data sources.  
     */
   var kind: js.UndefOr[ResolverKind] = js.undefined
+  
+  /**
+    * The maximum batching size for a resolver.
+    */
+  var maxBatchSize: js.UndefOr[MaxBatchSize] = js.undefined
   
   /**
     * The PipelineConfig.
@@ -37,7 +42,7 @@ trait Resolver extends StObject {
   var requestMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
   
   /**
-    * The resolver ARN.
+    * The resolver Amazon Resource Name (ARN).
     */
   var resolverArn: js.UndefOr[String] = js.undefined
   
@@ -47,7 +52,7 @@ trait Resolver extends StObject {
   var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
   
   /**
-    * The SyncConfig for a resolver attached to a versioned datasource.
+    * The SyncConfig for a resolver attached to a versioned data source.
     */
   var syncConfig: js.UndefOr[SyncConfig] = js.undefined
   
@@ -80,6 +85,10 @@ object Resolver {
     inline def setKind(value: ResolverKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    
+    inline def setMaxBatchSize(value: MaxBatchSize): Self = StObject.set(x, "maxBatchSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxBatchSizeUndefined: Self = StObject.set(x, "maxBatchSize", js.undefined)
     
     inline def setPipelineConfig(value: PipelineConfig): Self = StObject.set(x, "pipelineConfig", value.asInstanceOf[js.Any])
     

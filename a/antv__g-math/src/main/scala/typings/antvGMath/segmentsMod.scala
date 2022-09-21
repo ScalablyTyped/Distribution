@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object segmentsMod {
   
-  @JSImport("@antv/g-math/lib/segments", JSImport.Namespace)
+  @JSImport("@antv/g-math/dist/segments", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -18,5 +18,5 @@ object segmentsMod {
   
   inline def lengthOfSegment(points: js.Array[PointTuple]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lengthOfSegment")(points.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def pointAtSegments(points: js.Array[PointTuple], t: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAtSegments")(points.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Point]
+  inline def pointAtSegments(points: js.Array[PointTuple], t: Double): Point | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAtSegments")(points.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Point | Null]
 }

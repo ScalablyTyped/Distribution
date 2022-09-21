@@ -1,38 +1,38 @@
 package typings.rdflib.anon
 
+import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Flags extends js.Object {
+trait Flags extends StObject {
+  
   /**
     * A string of letters, each of which set an options
     * e.g. `deinprstux`
     */
-  var flags: String = js.native
+  var flags: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A set of [prefix, uri] pairs that define namespace prefixes
+    */
+  var namespaces: js.UndefOr[Record[String, String]] = js.undefined
 }
-
 object Flags {
-  @scala.inline
-  def apply(flags: String): Flags = {
-    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
+  
+  inline def apply(): Flags = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Flags]
   }
-  @scala.inline
-  implicit class FlagsOps[Self <: Flags] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setFlags(value: String): Self = this.set("flags", value.asInstanceOf[js.Any])
-  }
   
+  extension [Self <: Flags](x: Self) {
+    
+    inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    
+    inline def setNamespaces(value: Record[String, String]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
+    
+    inline def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
+  }
 }
-

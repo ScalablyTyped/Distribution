@@ -12,7 +12,7 @@ trait RemoveTargetsRequest extends StObject {
   var EventBusName: js.UndefOr[EventBusNameOrArn] = js.undefined
   
   /**
-    * If this is a managed rule, created by an AWS service on your behalf, you must specify Force as True to remove targets. This parameter is ignored for rules that are not managed rules. You can check whether a rule is a managed rule by using DescribeRule or ListRules and checking the ManagedBy field of the response.
+    * If this is a managed rule, created by an Amazon Web Services service on your behalf, you must specify Force as True to remove targets. This parameter is ignored for rules that are not managed rules. You can check whether a rule is a managed rule by using DescribeRule or ListRules and checking the ManagedBy field of the response.
     */
   var Force: js.UndefOr[Boolean] = js.undefined
   
@@ -45,7 +45,7 @@ object RemoveTargetsRequest {
     
     inline def setIds(value: TargetIdList): Self = StObject.set(x, "Ids", value.asInstanceOf[js.Any])
     
-    inline def setIdsVarargs(value: TargetId*): Self = StObject.set(x, "Ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: TargetId*): Self = StObject.set(x, "Ids", js.Array(value*))
     
     inline def setRule(value: RuleName): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
   }

@@ -27,6 +27,6 @@ object Persistent {
     
     inline def setScripts(value: js.Array[ExtensionURL]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     
-    inline def setScriptsVarargs(value: ExtensionURL*): Self = StObject.set(x, "scripts", js.Array(value :_*))
+    inline def setScriptsVarargs(value: ExtensionURL*): Self = StObject.set(x, "scripts", js.Array(value*))
   }
 }

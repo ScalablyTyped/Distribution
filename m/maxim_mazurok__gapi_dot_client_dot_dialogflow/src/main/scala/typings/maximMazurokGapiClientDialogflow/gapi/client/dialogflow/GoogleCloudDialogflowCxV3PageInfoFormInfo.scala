@@ -22,6 +22,6 @@ object GoogleCloudDialogflowCxV3PageInfoFormInfo {
     
     inline def setParameterInfoUndefined: Self = StObject.set(x, "parameterInfo", js.undefined)
     
-    inline def setParameterInfoVarargs(value: GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfo*): Self = StObject.set(x, "parameterInfo", js.Array(value :_*))
+    inline def setParameterInfoVarargs(value: GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfo*): Self = StObject.set(x, "parameterInfo", js.Array(value*))
   }
 }

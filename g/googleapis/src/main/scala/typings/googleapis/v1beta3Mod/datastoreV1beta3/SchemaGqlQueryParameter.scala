@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A binding parameter for a GQL query.
-  */
 trait SchemaGqlQueryParameter extends StObject {
   
   /**
     * A query cursor. Query cursors are returned in query result batches.
     */
-  var cursor: js.UndefOr[String] = js.undefined
+  var cursor: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A value parameter.
@@ -29,6 +26,8 @@ object SchemaGqlQueryParameter {
   extension [Self <: SchemaGqlQueryParameter](x: Self) {
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorNull: Self = StObject.set(x, "cursor", null)
     
     inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     

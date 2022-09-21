@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@hapi/file" : "2.0.0"
+      "@hapi/file" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@hapi/file" : "2.0.0"
+      "@hapi/file" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

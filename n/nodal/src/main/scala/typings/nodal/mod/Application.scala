@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodal", "Application")
 @js.native
-class Application ()
+open class Application ()
   extends typings.fxn.mod.Application {
   
   /**
     * HTTP Error
     */
-  def error(req: js.Any, res: js.Any, start: js.Any, status: Double, message: String, err: js.Any): Unit = js.native
+  def error(req: Any, res: Any, start: Any, status: Double, message: String, err: Any): Unit = js.native
 }

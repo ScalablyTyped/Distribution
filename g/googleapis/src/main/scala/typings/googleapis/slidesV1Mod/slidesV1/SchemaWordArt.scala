@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A PageElement kind representing word art.
-  */
 trait SchemaWordArt extends StObject {
   
   /**
     * The text rendered as word art.
     */
-  var renderedText: js.UndefOr[String] = js.undefined
+  var renderedText: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaWordArt {
   
@@ -24,6 +21,8 @@ object SchemaWordArt {
   extension [Self <: SchemaWordArt](x: Self) {
     
     inline def setRenderedText(value: String): Self = StObject.set(x, "renderedText", value.asInstanceOf[js.Any])
+    
+    inline def setRenderedTextNull: Self = StObject.set(x, "renderedText", null)
     
     inline def setRenderedTextUndefined: Self = StObject.set(x, "renderedText", js.undefined)
   }

@@ -11,10 +11,12 @@ import typings.reactNative.reactNativeNumbers.`3`
 import typings.reactNative.reactNativeNumbers.`4`
 import typings.reactNative.reactNativeNumbers.`5`
 import typings.reactNative.reactNativeNumbers.`6`
+import typings.reactNative.reactNativeStrings.`inline`
+import typings.reactNative.reactNativeStrings.compact
 import typings.reactNative.reactNativeStrings.date
 import typings.reactNative.reactNativeStrings.datetime
+import typings.reactNative.reactNativeStrings.spinner
 import typings.reactNative.reactNativeStrings.time
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +28,7 @@ trait DatePickerIOSProps
   /**
     * The currently selected date.
     */
-  var date: js.UndefOr[Date | Null] = js.undefined
+  var date: js.UndefOr[js.Date | Null] = js.undefined
   
   /**
     * Provides an initial value that will change when the user starts selecting
@@ -36,7 +38,7 @@ trait DatePickerIOSProps
     * causes it to go out of sync with native. The initialDate prop is intended
     * to allow you to have native be source of truth.
     */
-  var initialDate: js.UndefOr[Date | Null] = js.undefined
+  var initialDate: js.UndefOr[js.Date | Null] = js.undefined
   
   /**
     * The date picker locale.
@@ -47,13 +49,13 @@ trait DatePickerIOSProps
     * Maximum date.
     * Restricts the range of possible date/time values.
     */
-  var maximumDate: js.UndefOr[Date] = js.undefined
+  var maximumDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Maximum date.
     * Restricts the range of possible date/time values.
     */
-  var minimumDate: js.UndefOr[Date] = js.undefined
+  var minimumDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  enum(1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30)
@@ -72,7 +74,14 @@ trait DatePickerIOSProps
     * This is called when the user changes the date or time in the UI.
     * The first and only argument is a Date object representing the new date and time.
     */
-  def onDateChange(newDate: Date): Unit
+  def onDateChange(newDate: js.Date): Unit
+  
+  /**
+    * The date picker style
+    * This is only available on devices with iOS 14.0 and later.
+    * 'spinner' is the default style if this prop isn't set.
+    */
+  var pickerStyle: js.UndefOr[compact | spinner | `inline`] = js.undefined
   
   /**
     * Timezone offset in minutes.
@@ -83,20 +92,20 @@ trait DatePickerIOSProps
 }
 object DatePickerIOSProps {
   
-  inline def apply(onDateChange: Date => Unit): DatePickerIOSProps = {
+  inline def apply(onDateChange: js.Date => Unit): DatePickerIOSProps = {
     val __obj = js.Dynamic.literal(onDateChange = js.Any.fromFunction1(onDateChange))
     __obj.asInstanceOf[DatePickerIOSProps]
   }
   
   extension [Self <: DatePickerIOSProps](x: Self) {
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateNull: Self = StObject.set(x, "date", null)
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    inline def setInitialDate(value: Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
+    inline def setInitialDate(value: js.Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
     
     inline def setInitialDateNull: Self = StObject.set(x, "initialDate", null)
     
@@ -106,11 +115,11 @@ object DatePickerIOSProps {
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    inline def setMaximumDate(value: Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
+    inline def setMaximumDate(value: js.Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
     
     inline def setMaximumDateUndefined: Self = StObject.set(x, "maximumDate", js.undefined)
     
-    inline def setMinimumDate(value: Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
+    inline def setMinimumDate(value: js.Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
     
     inline def setMinimumDateUndefined: Self = StObject.set(x, "minimumDate", js.undefined)
     
@@ -122,7 +131,11 @@ object DatePickerIOSProps {
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setOnDateChange(value: Date => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction1(value))
+    inline def setOnDateChange(value: js.Date => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction1(value))
+    
+    inline def setPickerStyle(value: compact | spinner | `inline`): Self = StObject.set(x, "pickerStyle", value.asInstanceOf[js.Any])
+    
+    inline def setPickerStyleUndefined: Self = StObject.set(x, "pickerStyle", js.undefined)
     
     inline def setTimeZoneOffsetInMinutes(value: Double): Self = StObject.set(x, "timeZoneOffsetInMinutes", value.asInstanceOf[js.Any])
     

@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FormatConstructor
   extends StObject
-     with Instantiable0[Format]
+     with /**
+  * The Format class represents one of the [formats](esri-widgets-CoordinateConversion.html#formats) in the [Coordinate Conversion widget](esri-widgets-CoordinateConversion.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html)
+  */
+Instantiable0[Format]
      with Instantiable1[/* properties */ FormatProperties, Format]

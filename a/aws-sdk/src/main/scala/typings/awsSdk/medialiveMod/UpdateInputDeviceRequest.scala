@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateInputDeviceRequest extends StObject {
   
   /**
-    * The settings that you want to apply to the input device.
+    * The settings that you want to apply to the HD input device.
     */
   var HdDeviceSettings: js.UndefOr[InputDeviceConfigurableSettings] = js.undefined
   
@@ -20,6 +20,11 @@ trait UpdateInputDeviceRequest extends StObject {
     * The name that you assigned to this input device (not the unique ID).
     */
   var Name: js.UndefOr[string] = js.undefined
+  
+  /**
+    * The settings that you want to apply to the UHD input device.
+    */
+  var UhdDeviceSettings: js.UndefOr[InputDeviceConfigurableSettings] = js.undefined
 }
 object UpdateInputDeviceRequest {
   
@@ -39,5 +44,9 @@ object UpdateInputDeviceRequest {
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setUhdDeviceSettings(value: InputDeviceConfigurableSettings): Self = StObject.set(x, "UhdDeviceSettings", value.asInstanceOf[js.Any])
+    
+    inline def setUhdDeviceSettingsUndefined: Self = StObject.set(x, "UhdDeviceSettings", js.undefined)
   }
 }

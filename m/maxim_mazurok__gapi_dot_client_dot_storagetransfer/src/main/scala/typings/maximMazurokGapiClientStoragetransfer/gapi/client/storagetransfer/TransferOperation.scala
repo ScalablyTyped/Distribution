@@ -21,7 +21,7 @@ trait TransferOperation extends StObject {
   /** Notification configuration. */
   var notificationConfig: js.UndefOr[NotificationConfig] = js.undefined
   
-  /** The ID of the Google Cloud Platform Project that owns the operation. */
+  /** The ID of the Google Cloud project that owns the operation. */
   var projectId: js.UndefOr[String] = js.undefined
   
   /** Start time of this transfer execution. */
@@ -57,7 +57,7 @@ object TransferOperation {
     
     inline def setErrorBreakdownsUndefined: Self = StObject.set(x, "errorBreakdowns", js.undefined)
     
-    inline def setErrorBreakdownsVarargs(value: ErrorSummary*): Self = StObject.set(x, "errorBreakdowns", js.Array(value :_*))
+    inline def setErrorBreakdownsVarargs(value: ErrorSummary*): Self = StObject.set(x, "errorBreakdowns", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

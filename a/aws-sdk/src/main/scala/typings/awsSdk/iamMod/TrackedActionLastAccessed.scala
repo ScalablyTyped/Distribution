@@ -14,14 +14,14 @@ trait TrackedActionLastAccessed extends StObject {
   var LastAccessedEntity: js.UndefOr[arnType] = js.undefined
   
   /**
-    * The Region from which the authenticated entity (user or role) last attempted to access the tracked action. AWS does not report unauthenticated requests. This field is null if no IAM entities attempted to access the service within the reporting period.
+    * The Region from which the authenticated entity (user or role) last attempted to access the tracked action. Amazon Web Services does not report unauthenticated requests. This field is null if no IAM entities attempted to access the service within the reporting period.
     */
   var LastAccessedRegion: js.UndefOr[stringType] = js.undefined
   
   /**
-    * The date and time, in ISO 8601 date-time format, when an authenticated entity most recently attempted to access the tracked service. AWS does not report unauthenticated requests. This field is null if no IAM entities attempted to access the service within the reporting period.
+    * The date and time, in ISO 8601 date-time format, when an authenticated entity most recently attempted to access the tracked service. Amazon Web Services does not report unauthenticated requests. This field is null if no IAM entities attempted to access the service within the reporting period.
     */
-  var LastAccessedTime: js.UndefOr[dateType] = js.undefined
+  var LastAccessedTime: js.UndefOr[js.Date] = js.undefined
 }
 object TrackedActionLastAccessed {
   
@@ -44,7 +44,7 @@ object TrackedActionLastAccessed {
     
     inline def setLastAccessedRegionUndefined: Self = StObject.set(x, "LastAccessedRegion", js.undefined)
     
-    inline def setLastAccessedTime(value: dateType): Self = StObject.set(x, "LastAccessedTime", value.asInstanceOf[js.Any])
+    inline def setLastAccessedTime(value: js.Date): Self = StObject.set(x, "LastAccessedTime", value.asInstanceOf[js.Any])
     
     inline def setLastAccessedTimeUndefined: Self = StObject.set(x, "LastAccessedTime", js.undefined)
   }

@@ -1,13 +1,21 @@
 package typings.p2.global.p2
 
 import typings.p2.mod.ShapeOptions
+import typings.p2.p2Numbers.`128`
+import typings.p2.p2Numbers.`16`
+import typings.p2.p2Numbers.`1`
+import typings.p2.p2Numbers.`2`
+import typings.p2.p2Numbers.`32`
+import typings.p2.p2Numbers.`4`
+import typings.p2.p2Numbers.`64`
+import typings.p2.p2Numbers.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("p2.Shape")
 @js.native
-class Shape ()
+open class Shape ()
   extends typings.p2.mod.Shape {
   def this(options: ShapeOptions) = this()
 }
@@ -20,43 +28,43 @@ object Shape {
   
   @JSGlobal("p2.Shape.BOX")
   @js.native
-  def BOX: Double = js.native
-  inline def BOX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOX")(x.asInstanceOf[js.Any])
+  def BOX: `32` = js.native
+  inline def BOX_=(x: `32`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOX")(x.asInstanceOf[js.Any])
   
   @JSGlobal("p2.Shape.CAPSULE")
   @js.native
-  def CAPSULE: Double = js.native
-  inline def CAPSULE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAPSULE")(x.asInstanceOf[js.Any])
+  def CAPSULE: `64` = js.native
+  inline def CAPSULE_=(x: `64`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAPSULE")(x.asInstanceOf[js.Any])
   
   @JSGlobal("p2.Shape.CIRCLE")
   @js.native
-  def CIRCLE: Double = js.native
-  inline def CIRCLE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CIRCLE")(x.asInstanceOf[js.Any])
+  def CIRCLE: `1` = js.native
+  inline def CIRCLE_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CIRCLE")(x.asInstanceOf[js.Any])
   
   @JSGlobal("p2.Shape.CONVEX")
   @js.native
-  def CONVEX: Double = js.native
-  inline def CONVEX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONVEX")(x.asInstanceOf[js.Any])
+  def CONVEX: `8` = js.native
+  inline def CONVEX_=(x: `8`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONVEX")(x.asInstanceOf[js.Any])
   
   @JSGlobal("p2.Shape.HEIGHTFIELD")
   @js.native
-  def HEIGHTFIELD: Double = js.native
-  inline def HEIGHTFIELD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEIGHTFIELD")(x.asInstanceOf[js.Any])
+  def HEIGHTFIELD: `128` = js.native
+  inline def HEIGHTFIELD_=(x: `128`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEIGHTFIELD")(x.asInstanceOf[js.Any])
   
   @JSGlobal("p2.Shape.LINE")
   @js.native
-  def LINE: Double = js.native
-  inline def LINE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE")(x.asInstanceOf[js.Any])
+  def LINE: `16` = js.native
+  inline def LINE_=(x: `16`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE")(x.asInstanceOf[js.Any])
   
   @JSGlobal("p2.Shape.PARTICLE")
   @js.native
-  def PARTICLE: Double = js.native
-  inline def PARTICLE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PARTICLE")(x.asInstanceOf[js.Any])
+  def PARTICLE: `2` = js.native
+  inline def PARTICLE_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PARTICLE")(x.asInstanceOf[js.Any])
   
   @JSGlobal("p2.Shape.PLANE")
   @js.native
-  def PLANE: Double = js.native
-  inline def PLANE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLANE")(x.asInstanceOf[js.Any])
+  def PLANE: `4` = js.native
+  inline def PLANE_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLANE")(x.asInstanceOf[js.Any])
   
   @JSGlobal("p2.Shape.idCounter")
   @js.native

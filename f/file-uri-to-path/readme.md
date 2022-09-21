@@ -1,7 +1,7 @@
 
 # Scala.js typings for file-uri-to-path
 
-Typings are for version 1.0.0
+Typings are for version 2.0.0
 
 ## Library description:
 Convert a file: URI to a file path
@@ -10,10 +10,10 @@ Convert a file: URI to a file path
 | ------------------ | :-------------: |
 | Full name          | file-uri-to-path |
 | Keywords           | file, uri, convert, path |
-| # releases         | 2 |
-| # dependents       | 49 |
-| # downloads        | 503538364 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7.305218666666667E7 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/TooTallNate/file-uri-to-path)

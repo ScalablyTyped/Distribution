@@ -29,7 +29,7 @@ object ListFargateProfilesResponse {
     
     inline def setFargateProfileNamesUndefined: Self = StObject.set(x, "fargateProfileNames", js.undefined)
     
-    inline def setFargateProfileNamesVarargs(value: String*): Self = StObject.set(x, "fargateProfileNames", js.Array(value :_*))
+    inline def setFargateProfileNamesVarargs(value: String*): Self = StObject.set(x, "fargateProfileNames", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

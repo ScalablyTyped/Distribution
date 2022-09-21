@@ -14,7 +14,7 @@ object progressIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/progress/index.native", JSImport.Default)
   @js.native
-  class default protected () extends Progress {
+  open class default protected () extends Progress {
     def this(props: ProgressProps) = this()
   }
   /* static members */
@@ -31,8 +31,7 @@ object progressIndexNativeMod {
   }
   
   @js.native
-  trait Progress
-    extends Component[ProgressProps, js.Any, js.Any] {
+  trait Progress extends Component[ProgressProps, Any, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MProgress(): Unit = js.native
@@ -43,8 +42,8 @@ object progressIndexNativeMod {
     def getWidth(): Double = js.native
     def getWidth(percent: Double): Double = js.native
     
-    def normalPercent(): js.Any = js.native
-    def normalPercent(percent: Double): js.Any = js.native
+    def normalPercent(): Any = js.native
+    def normalPercent(percent: Double): Any = js.native
     
     def onLayout(e: LayoutChangeEvent): Unit = js.native
   }
@@ -57,7 +56,7 @@ object progressIndexNativeMod {
     
     var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
     
     var wrapWidth: js.UndefOr[Double] = js.undefined
   }
@@ -82,7 +81,7 @@ object progressIndexNativeMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       

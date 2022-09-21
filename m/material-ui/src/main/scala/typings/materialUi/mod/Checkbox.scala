@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "Checkbox")
 @js.native
-class Checkbox ()
+open class Checkbox ()
   extends typings.materialUi.MaterialUI.Switches.Checkbox

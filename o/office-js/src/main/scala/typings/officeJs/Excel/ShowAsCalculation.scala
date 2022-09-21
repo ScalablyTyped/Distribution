@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ShowAsCalculation extends StObject
 /**
+  * The ShowAs calculation function for the DataPivotField.
   *
-  * The ShowAs Calculation function for the Data Pivot Field.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.ShowAsCalculation")
@@ -17,8 +17,9 @@ sealed trait ShowAsCalculation extends StObject
 object ShowAsCalculation extends StObject {
   
   /**
-    * Difference from the specified Base Field and Base Item.
-    *
+    * Difference from the specified Base field and Base item.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait differenceFrom
@@ -28,7 +29,8 @@ object ShowAsCalculation extends StObject {
   /**
     * Calculates the values as follows:
     ((value in cell) x (Grand Total of Grand Totals)) / ((Grand Row Total) x (Grand Column Total))
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait index
@@ -37,7 +39,8 @@ object ShowAsCalculation extends StObject {
   
   /**
     * No calculation is applied.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait none
@@ -45,8 +48,9 @@ object ShowAsCalculation extends StObject {
        with ShowAsCalculation
   
   /**
-    * Difference from the specified Base Field and Base Item.
-    *
+    * Difference from the specified Base field and Base item.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait percentDifferenceFrom
@@ -54,8 +58,9 @@ object ShowAsCalculation extends StObject {
        with ShowAsCalculation
   
   /**
-    * Percent of the specified Base Field and Base Item.
-    *
+    * Percent of the specified Base field and Base item.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait percentOf
@@ -64,7 +69,8 @@ object ShowAsCalculation extends StObject {
   
   /**
     * Percent of the column total.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait percentOfColumnTotal
@@ -73,7 +79,8 @@ object ShowAsCalculation extends StObject {
   
   /**
     * Percent of the grand total.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait percentOfGrandTotal
@@ -81,8 +88,9 @@ object ShowAsCalculation extends StObject {
        with ShowAsCalculation
   
   /**
-    * Percent of the column total for the specified Base Field.
-    *
+    * Percent of the column total for the specified Base field.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait percentOfParentColumnTotal
@@ -90,8 +98,9 @@ object ShowAsCalculation extends StObject {
        with ShowAsCalculation
   
   /**
-    * Percent of the row total for the specified Base Field.
-    *
+    * Percent of the row total for the specified Base field.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait percentOfParentRowTotal
@@ -99,8 +108,9 @@ object ShowAsCalculation extends StObject {
        with ShowAsCalculation
   
   /**
-    * Percent of the grand total for the specified Base Field.
-    *
+    * Percent of the grand total for the specified Base field.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait percentOfParentTotal
@@ -109,7 +119,8 @@ object ShowAsCalculation extends StObject {
   
   /**
     * Percent of the row total.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait percentOfRowTotal
@@ -117,8 +128,9 @@ object ShowAsCalculation extends StObject {
        with ShowAsCalculation
   
   /**
-    * Percent Running Total of the specified Base Field.
-    *
+    * Percent running total of the specified Base field.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait percentRunningTotal
@@ -126,8 +138,9 @@ object ShowAsCalculation extends StObject {
        with ShowAsCalculation
   
   /**
-    * Ascending Rank of the specified Base Field.
-    *
+    * Ascending rank of the specified Base field.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait rankAscending
@@ -135,8 +148,9 @@ object ShowAsCalculation extends StObject {
        with ShowAsCalculation
   
   /**
-    * Descending Rank of the specified Base Field.
-    *
+    * Descending rank of the specified Base field.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait rankDecending
@@ -144,8 +158,9 @@ object ShowAsCalculation extends StObject {
        with ShowAsCalculation
   
   /**
-    * Running Total of the specified Base Field.
-    *
+    * Running total of the specified Base field.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait runningTotal
@@ -154,7 +169,8 @@ object ShowAsCalculation extends StObject {
   
   /**
     * Calculation is unknown or unsupported.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait unknown

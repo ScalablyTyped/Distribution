@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-scale
 
-Typings are for version 7.1.1
+Typings are for version 7.2.0
 
 ## Library description:
 Scales and color schemes for visual encoding.
@@ -10,10 +10,10 @@ Scales and color schemes for visual encoding.
 | ------------------ | :-------------: |
 | Full name          | vega-scale |
 | Keywords           | vega, scale, color, palette |
-| # releases         | 14 |
-| # dependents       | 10 |
-| # downloads        | 2960659 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1102401.6666666667 |
+| # stars            | 9848.0 |
 
 ## Links
 - [Homepage](https://github.com/vega/vega#readme)

@@ -17,7 +17,7 @@ trait RunJobFlowInput extends StObject {
   var AmiVersion: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * Applies to Amazon EMR releases 4.0 and later. A case-insensitive list of applications for Amazon EMR to install and configure when launching the cluster. For a list of applications available for each Amazon EMR release version, see the Amazon EMR Release Guide.
+    * Applies to Amazon EMR releases 4.0 and later. A case-insensitive list of applications for Amazon EMR to install and configure when launching the cluster. For a list of applications available for each Amazon EMR release version, see the Amazon EMRRelease Guide.
     */
   var Applications: js.UndefOr[ApplicationList] = js.undefined
   
@@ -25,6 +25,8 @@ trait RunJobFlowInput extends StObject {
     * An IAM role for automatic scaling policies. The default role is EMR_AutoScaling_DefaultRole. The IAM role provides permissions that the automatic scaling feature requires to launch and terminate EC2 instances in an instance group.
     */
   var AutoScalingRole: js.UndefOr[XmlString] = js.undefined
+  
+  var AutoTerminationPolicy: js.UndefOr[typings.awsSdk.emrMod.AutoTerminationPolicy] = js.undefined
   
   /**
     * A list of bootstrap actions to run before Hadoop starts on the cluster nodes.
@@ -42,7 +44,7 @@ trait RunJobFlowInput extends StObject {
   var CustomAmiId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * The size, in GiB, of the EBS root device volume of the Linux AMI that is used for each EC2 instance. Available in Amazon EMR version 4.x and later.
+    * The size, in GiB, of the Amazon EBS root device volume of the Linux AMI that is used for each EC2 instance. Available in Amazon EMR version 4.x and later.
     */
   var EbsRootVolumeSize: js.UndefOr[Integer] = js.undefined
   
@@ -57,12 +59,12 @@ trait RunJobFlowInput extends StObject {
   var JobFlowRole: js.UndefOr[XmlString] = js.undefined
   
   /**
-    * Attributes for Kerberos configuration when Kerberos authentication is enabled using a security configuration. For more information see Use Kerberos Authentication in the EMR Management Guide.
+    * Attributes for Kerberos configuration when Kerberos authentication is enabled using a security configuration. For more information see Use Kerberos Authentication in the Amazon EMR Management Guide.
     */
   var KerberosAttributes: js.UndefOr[typings.awsSdk.emrMod.KerberosAttributes] = js.undefined
   
   /**
-    * The AWS KMS customer master key (CMK) used for encrypting log files. If a value is not provided, the logs will remain encrypted by AES-256. This attribute is only available with EMR version 5.30.0 and later, excluding EMR 6.0.0.
+    * The KMS key used for encrypting log files. If a value is not provided, the logs remain encrypted by AES-256. This attribute is only available with Amazon EMR version 5.30.0 and later, excluding Amazon EMR 6.0.0.
     */
   var LogEncryptionKmsKeyId: js.UndefOr[XmlString] = js.undefined
   
@@ -82,9 +84,14 @@ trait RunJobFlowInput extends StObject {
   var Name: XmlStringMaxLen256
   
   /**
-    *  For Amazon EMR releases 3.x and 2.x. For Amazon EMR releases 4.x and later, use Applications.  A list of strings that indicates third-party software to use with the job flow that accepts a user argument list. EMR accepts and forwards the argument list to the corresponding installation script as bootstrap action arguments. For more information, see "Launch a Job Flow on the MapR Distribution for Hadoop" in the Amazon EMR Developer Guide. Supported values are:   "mapr-m3" - launch the cluster using MapR M3 Edition.   "mapr-m5" - launch the cluster using MapR M5 Edition.   "mapr" with the user arguments specifying "--edition,m3" or "--edition,m5" - launch the job flow using MapR M3 or M5 Edition respectively.   "mapr-m7" - launch the cluster using MapR M7 Edition.   "hunk" - launch the cluster with the Hunk Big Data Analtics Platform.   "hue"- launch the cluster with Hue installed.   "spark" - launch the cluster with Apache Spark installed.   "ganglia" - launch the cluster with the Ganglia Monitoring System installed.  
+    *  For Amazon EMR releases 3.x and 2.x. For Amazon EMR releases 4.x and later, use Applications.  A list of strings that indicates third-party software to use with the job flow that accepts a user argument list. EMR accepts and forwards the argument list to the corresponding installation script as bootstrap action arguments. For more information, see "Launch a Job Flow on the MapR Distribution for Hadoop" in the Amazon EMR Developer Guide. Supported values are:   "mapr-m3" - launch the cluster using MapR M3 Edition.   "mapr-m5" - launch the cluster using MapR M5 Edition.   "mapr" with the user arguments specifying "--edition,m3" or "--edition,m5" - launch the job flow using MapR M3 or M5 Edition respectively.   "mapr-m7" - launch the cluster using MapR M7 Edition.   "hunk" - launch the cluster with the Hunk Big Data Analytics Platform.   "hue"- launch the cluster with Hue installed.   "spark" - launch the cluster with Apache Spark installed.   "ganglia" - launch the cluster with the Ganglia Monitoring System installed.  
     */
   var NewSupportedProducts: js.UndefOr[NewSupportedProductsList] = js.undefined
+  
+  /**
+    * Specifies a particular Amazon Linux release for all nodes in a cluster launch RunJobFlow request. If a release is not specified, Amazon EMR uses the latest validated Amazon Linux release for cluster launch.
+    */
+  var OSReleaseLabel: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
     * The specified placement group configuration for an Amazon EMR cluster.
@@ -102,7 +109,7 @@ trait RunJobFlowInput extends StObject {
   var RepoUpgradeOnBoot: js.UndefOr[typings.awsSdk.emrMod.RepoUpgradeOnBoot] = js.undefined
   
   /**
-    * Specifies the way that individual Amazon EC2 instances terminate when an automatic scale-in activity occurs or an instance group is resized. TERMINATE_AT_INSTANCE_HOUR indicates that Amazon EMR terminates nodes at the instance-hour boundary, regardless of when the request to terminate the instance was submitted. This option is only available with Amazon EMR 5.1.0 and later and is the default for clusters created using that version. TERMINATE_AT_TASK_COMPLETION indicates that Amazon EMR blacklists and drains tasks from nodes before terminating the Amazon EC2 instances, regardless of the instance-hour boundary. With either behavior, Amazon EMR removes the least active nodes first and blocks instance termination if it could lead to HDFS corruption. TERMINATE_AT_TASK_COMPLETION available only in Amazon EMR version 4.1.0 and later, and is the default for versions of Amazon EMR earlier than 5.1.0.
+    * Specifies the way that individual Amazon EC2 instances terminate when an automatic scale-in activity occurs or an instance group is resized. TERMINATE_AT_INSTANCE_HOUR indicates that Amazon EMR terminates nodes at the instance-hour boundary, regardless of when the request to terminate the instance was submitted. This option is only available with Amazon EMR 5.1.0 and later and is the default for clusters created using that version. TERMINATE_AT_TASK_COMPLETION indicates that Amazon EMR adds nodes to a deny list and drains tasks from nodes before terminating the Amazon EC2 instances, regardless of the instance-hour boundary. With either behavior, Amazon EMR removes the least active nodes first and blocks instance termination if it could lead to HDFS corruption. TERMINATE_AT_TASK_COMPLETION available only in Amazon EMR version 4.1.0 and later, and is the default for versions of Amazon EMR earlier than 5.1.0.
     */
   var ScaleDownBehavior: js.UndefOr[typings.awsSdk.emrMod.ScaleDownBehavior] = js.undefined
   
@@ -112,7 +119,7 @@ trait RunJobFlowInput extends StObject {
   var SecurityConfiguration: js.UndefOr[XmlString] = js.undefined
   
   /**
-    * The IAM role that will be assumed by the Amazon EMR service to access AWS resources on your behalf.
+    * The IAM role that Amazon EMR assumes in order to access Amazon Web Services resources on your behalf.
     */
   var ServiceRole: js.UndefOr[XmlString] = js.undefined
   
@@ -137,7 +144,7 @@ trait RunJobFlowInput extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * A value of true indicates that all IAM users in the AWS account can perform cluster actions if they have the proper IAM policy permissions. This is the default. A value of false indicates that only the IAM user who created the cluster can perform actions.
+    *  The VisibleToAllUsers parameter is no longer supported. By default, the value is set to true. Setting it to false now has no effect.  Set this value to true so that IAM principals in the Amazon Web Services account associated with the cluster can perform EMR actions on the cluster that their IAM policies allow. This value defaults to true for clusters created using the EMR API or the CLI create-cluster command. When set to false, only the IAM principal that created the cluster and the Amazon Web Services account root user can perform EMR actions for the cluster, regardless of the IAM permissions policies attached to other IAM principals. For more information, see Understanding the EMR Cluster VisibleToAllUsers Setting in the Amazon EMRManagement Guide.
     */
   var VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
 }
@@ -162,23 +169,27 @@ object RunJobFlowInput {
     
     inline def setApplicationsUndefined: Self = StObject.set(x, "Applications", js.undefined)
     
-    inline def setApplicationsVarargs(value: Application*): Self = StObject.set(x, "Applications", js.Array(value :_*))
+    inline def setApplicationsVarargs(value: Application*): Self = StObject.set(x, "Applications", js.Array(value*))
     
     inline def setAutoScalingRole(value: XmlString): Self = StObject.set(x, "AutoScalingRole", value.asInstanceOf[js.Any])
     
     inline def setAutoScalingRoleUndefined: Self = StObject.set(x, "AutoScalingRole", js.undefined)
     
+    inline def setAutoTerminationPolicy(value: AutoTerminationPolicy): Self = StObject.set(x, "AutoTerminationPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setAutoTerminationPolicyUndefined: Self = StObject.set(x, "AutoTerminationPolicy", js.undefined)
+    
     inline def setBootstrapActions(value: BootstrapActionConfigList): Self = StObject.set(x, "BootstrapActions", value.asInstanceOf[js.Any])
     
     inline def setBootstrapActionsUndefined: Self = StObject.set(x, "BootstrapActions", js.undefined)
     
-    inline def setBootstrapActionsVarargs(value: BootstrapActionConfig*): Self = StObject.set(x, "BootstrapActions", js.Array(value :_*))
+    inline def setBootstrapActionsVarargs(value: BootstrapActionConfig*): Self = StObject.set(x, "BootstrapActions", js.Array(value*))
     
     inline def setConfigurations(value: ConfigurationList): Self = StObject.set(x, "Configurations", value.asInstanceOf[js.Any])
     
     inline def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
     
-    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value*))
     
     inline def setCustomAmiId(value: XmlStringMaxLen256): Self = StObject.set(x, "CustomAmiId", value.asInstanceOf[js.Any])
     
@@ -216,13 +227,17 @@ object RunJobFlowInput {
     
     inline def setNewSupportedProductsUndefined: Self = StObject.set(x, "NewSupportedProducts", js.undefined)
     
-    inline def setNewSupportedProductsVarargs(value: SupportedProductConfig*): Self = StObject.set(x, "NewSupportedProducts", js.Array(value :_*))
+    inline def setNewSupportedProductsVarargs(value: SupportedProductConfig*): Self = StObject.set(x, "NewSupportedProducts", js.Array(value*))
+    
+    inline def setOSReleaseLabel(value: XmlStringMaxLen256): Self = StObject.set(x, "OSReleaseLabel", value.asInstanceOf[js.Any])
+    
+    inline def setOSReleaseLabelUndefined: Self = StObject.set(x, "OSReleaseLabel", js.undefined)
     
     inline def setPlacementGroupConfigs(value: PlacementGroupConfigList): Self = StObject.set(x, "PlacementGroupConfigs", value.asInstanceOf[js.Any])
     
     inline def setPlacementGroupConfigsUndefined: Self = StObject.set(x, "PlacementGroupConfigs", js.undefined)
     
-    inline def setPlacementGroupConfigsVarargs(value: PlacementGroupConfig*): Self = StObject.set(x, "PlacementGroupConfigs", js.Array(value :_*))
+    inline def setPlacementGroupConfigsVarargs(value: PlacementGroupConfig*): Self = StObject.set(x, "PlacementGroupConfigs", js.Array(value*))
     
     inline def setReleaseLabel(value: XmlStringMaxLen256): Self = StObject.set(x, "ReleaseLabel", value.asInstanceOf[js.Any])
     
@@ -252,19 +267,19 @@ object RunJobFlowInput {
     
     inline def setStepsUndefined: Self = StObject.set(x, "Steps", js.undefined)
     
-    inline def setStepsVarargs(value: StepConfig*): Self = StObject.set(x, "Steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: StepConfig*): Self = StObject.set(x, "Steps", js.Array(value*))
     
     inline def setSupportedProducts(value: SupportedProductsList): Self = StObject.set(x, "SupportedProducts", value.asInstanceOf[js.Any])
     
     inline def setSupportedProductsUndefined: Self = StObject.set(x, "SupportedProducts", js.undefined)
     
-    inline def setSupportedProductsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "SupportedProducts", js.Array(value :_*))
+    inline def setSupportedProductsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "SupportedProducts", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVisibleToAllUsers(value: Boolean): Self = StObject.set(x, "VisibleToAllUsers", value.asInstanceOf[js.Any])
     

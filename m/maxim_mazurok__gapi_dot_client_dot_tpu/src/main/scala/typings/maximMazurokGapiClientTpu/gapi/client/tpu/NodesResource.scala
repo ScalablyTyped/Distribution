@@ -40,6 +40,6 @@ trait NodesResource extends StObject {
   def start(request: Oauthtoken): Request[Operation] = js.native
   
   def stop(request: Accesstoken, body: StopNodeRequest): Request[Operation] = js.native
-  /** Stops a node. */
+  /** Stops a node, this operation is only available with single TPU nodes. */
   def stop(request: PrettyPrint): Request[Operation] = js.native
 }

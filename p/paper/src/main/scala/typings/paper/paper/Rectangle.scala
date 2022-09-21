@@ -205,7 +205,7 @@ trait Rectangle extends StObject {
     * parameters that is supported by the various {@link Rectangle}
     * constructors also work for calls of `set()`.
     */
-  def set(values: js.Any*): Rectangle = js.native
+  def set(values: Any*): Rectangle = js.native
   
   /** 
     * The size of the rectangle

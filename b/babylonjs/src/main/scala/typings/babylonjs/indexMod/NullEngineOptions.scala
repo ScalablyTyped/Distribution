@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "NullEngineOptions")
 @js.native
-class NullEngineOptions ()
+open class NullEngineOptions ()
   extends typings.babylonjs.enginesIndexMod.NullEngineOptions

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** IFaxOutgoingMessage interface */
 @JSGlobal("FAXCOMEXLib.IFaxOutgoingMessage")
 @js.native
-class IFaxOutgoingMessage ()
+open class IFaxOutgoingMessage ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.IFaxOutgoingMessage {
   

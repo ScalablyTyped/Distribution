@@ -14,5 +14,5 @@ trait Reporter extends StObject {
   // TODO: use span type opentracing.Span from package 'opentracing' which fails DTS linting on import 2019-05-28 jgeth
   def report(span: Span): Unit = js.native
   
-  def setProcess(serviceName: String, tags: js.Any): Unit = js.native
+  def setProcess(serviceName: String, tags: Any): Unit = js.native
 }

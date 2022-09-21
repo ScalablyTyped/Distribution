@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "GeoDistanceRangeFilter")
 @js.native
-class GeoDistanceRangeFilter protected ()
+open class GeoDistanceRangeFilter protected ()
   extends StObject
      with Filter {
   /*

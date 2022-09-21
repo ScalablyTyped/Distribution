@@ -138,7 +138,7 @@ object mod {
     var userAgent: js.UndefOr[String] = js.undefined
     
     var viewport: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Viewport */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Viewport */ Any
       ] = js.undefined
     
     @JSName("wait")
@@ -157,7 +157,7 @@ object mod {
       
       inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setBrowser(value: Browser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -183,7 +183,7 @@ object mod {
       
       inline def setIgnoreUrlUndefined: Self = StObject.set(x, "ignoreUrl", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setIncludeNotices(value: Boolean): Self = StObject.set(x, "includeNotices", value.asInstanceOf[js.Any])
       
@@ -213,7 +213,7 @@ object mod {
       
       inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
       
-      inline def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value*))
       
       inline def setPostData(value: String): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
       
@@ -231,13 +231,13 @@ object mod {
       
       inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      inline def setRulesVarargs(value: String*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: String*): Self = StObject.set(x, "rules", js.Array(value*))
       
       inline def setRunners(value: js.Array[String]): Self = StObject.set(x, "runners", value.asInstanceOf[js.Any])
       
       inline def setRunnersUndefined: Self = StObject.set(x, "runners", js.undefined)
       
-      inline def setRunnersVarargs(value: String*): Self = StObject.set(x, "runners", js.Array(value :_*))
+      inline def setRunnersVarargs(value: String*): Self = StObject.set(x, "runners", js.Array(value*))
       
       inline def setScreenCapture(value: String): Self = StObject.set(x, "screenCapture", value.asInstanceOf[js.Any])
       
@@ -260,7 +260,7 @@ object mod {
       inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
       
       inline def setViewport(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Viewport */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Viewport */ Any
       ): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
       
       inline def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
@@ -330,7 +330,7 @@ object mod {
       
       inline def setIssues(value: js.Array[ResultIssue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
       
-      inline def setIssuesVarargs(value: ResultIssue*): Self = StObject.set(x, "issues", js.Array(value :_*))
+      inline def setIssuesVarargs(value: ResultIssue*): Self = StObject.set(x, "issues", js.Array(value*))
       
       inline def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
     }

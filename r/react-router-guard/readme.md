@@ -10,15 +10,12 @@ React Router Guard
 | ------------------ | :-------------: |
 | Full name          | react-router-guard |
 | Keywords           | react, router, guard, react authentication router, react router auth, react router code splitting, react router lazy |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 4981 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 664.6666666666666 |
+| # stars            | 26.0 |
 
 ## Links
-- [Homepage](https://github.com/laptransang/react-router-guard#readme)
-- [Bugs](https://github.com/laptransang/react-router-guard/issues)
-- [Repository](https://github.com/laptransang/react-router-guard)
 - [Npm](https://www.npmjs.com/package/react-router-guard)
     
 

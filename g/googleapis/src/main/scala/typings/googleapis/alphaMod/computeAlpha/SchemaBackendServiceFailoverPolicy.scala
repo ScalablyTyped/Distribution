@@ -7,35 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaBackendServiceFailoverPolicy extends StObject {
   
   /**
-    * On failover or failback, this field indicates whether connection drain
-    * will be honored. Setting this to true has the following effect:
-    * connections to the old active pool are not drained. Connections to the
-    * new active pool use the timeout of 10 min (currently fixed). Setting to
-    * false has the following effect: both old and new connections will have a
-    * drain timeout of 10 min.  This can be set to true only if the protocol is
-    * TCP.  The default is false.
+    * This can be set to true only if the protocol is TCP. The default is false.
     */
-  var disableConnectionDrainOnFailover: js.UndefOr[Boolean] = js.undefined
+  var disableConnectionDrainOnFailover: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * This option is used only when no healthy VMs are detected in the primary
-    * and backup instance groups. When set to true, traffic is dropped. When
-    * set to false, new connections are sent across all VMs in the primary
-    * group.  The default is false.
+    * If set to true, connections to the load balancer are dropped when all primary and all backup backend VMs are unhealthy.If set to false, connections are distributed among all primary VMs when all primary and all backup backend VMs are unhealthy. For load balancers that have configurable failover: [Internal TCP/UDP Load Balancing](https://cloud.google.com/load-balancing/docs/internal/failover-overview) and [external TCP/UDP Load Balancing](https://cloud.google.com/load-balancing/docs/network/networklb-failover-overview). The default is false.
     */
-  var dropTrafficIfUnhealthy: js.UndefOr[Boolean] = js.undefined
+  var dropTrafficIfUnhealthy: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * The value of the field must be in [0, 1]. If the ratio of the healthy VMs
-    * in the primary backend is at or below this number, traffic arriving at
-    * the load-balanced IP will be directed to the failover backend.  In case
-    * where &#39;failoverRatio&#39; is not set or all the VMs in the backup
-    * backend are unhealthy, the traffic will be directed back to the primary
-    * backend in the &quot;force&quot; mode, where traffic will be spread to
-    * the healthy VMs with the best effort, or to all VMs when no VM is
-    * healthy.  This field is only used with l4 load balancing.
+    * The value of the field must be in the range [0, 1]. If the value is 0, the load balancer performs a failover when the number of healthy primary VMs equals zero. For all other values, the load balancer performs a failover when the total number of healthy primary VMs is less than this ratio. For load balancers that have configurable failover: [Internal TCP/UDP Load Balancing](https://cloud.google.com/load-balancing/docs/internal/failover-overview) and [external TCP/UDP Load Balancing](https://cloud.google.com/load-balancing/docs/network/networklb-failover-overview).
     */
-  var failoverRatio: js.UndefOr[Double] = js.undefined
+  var failoverRatio: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaBackendServiceFailoverPolicy {
   
@@ -48,13 +32,19 @@ object SchemaBackendServiceFailoverPolicy {
     
     inline def setDisableConnectionDrainOnFailover(value: Boolean): Self = StObject.set(x, "disableConnectionDrainOnFailover", value.asInstanceOf[js.Any])
     
+    inline def setDisableConnectionDrainOnFailoverNull: Self = StObject.set(x, "disableConnectionDrainOnFailover", null)
+    
     inline def setDisableConnectionDrainOnFailoverUndefined: Self = StObject.set(x, "disableConnectionDrainOnFailover", js.undefined)
     
     inline def setDropTrafficIfUnhealthy(value: Boolean): Self = StObject.set(x, "dropTrafficIfUnhealthy", value.asInstanceOf[js.Any])
     
+    inline def setDropTrafficIfUnhealthyNull: Self = StObject.set(x, "dropTrafficIfUnhealthy", null)
+    
     inline def setDropTrafficIfUnhealthyUndefined: Self = StObject.set(x, "dropTrafficIfUnhealthy", js.undefined)
     
     inline def setFailoverRatio(value: Double): Self = StObject.set(x, "failoverRatio", value.asInstanceOf[js.Any])
+    
+    inline def setFailoverRatioNull: Self = StObject.set(x, "failoverRatio", null)
     
     inline def setFailoverRatioUndefined: Self = StObject.set(x, "failoverRatio", js.undefined)
   }

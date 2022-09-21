@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@uifabric/merge-styles" : "7.19.1"
+      "@uifabric/merge-styles" : "7.20.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@uifabric/merge-styles" : "7.19.1"
+      "@uifabric/merge-styles" : "7.20.0"
     }
   ],
   "compile-devDependencies" : [

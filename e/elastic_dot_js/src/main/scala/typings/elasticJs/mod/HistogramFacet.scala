@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "HistogramFacet")
 @js.native
-class HistogramFacet protected ()
+open class HistogramFacet protected ()
   extends StObject
      with Facet {
   /*
@@ -122,7 +122,7 @@ class HistogramFacet protected ()
     Retrieves the internal facet object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /*
     Allows you to specify a different value field to aggrerate over.

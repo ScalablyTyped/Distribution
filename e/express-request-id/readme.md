@@ -4,19 +4,19 @@
 Typings are for version 1.4
 
 ## Library description:
-Generate UUID for request and add it to headers
+Generate UUID for request
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | express-request-id |
 | Keywords           | express, middleware, request, id, uuid |
-| # releases         | 0 |
-| # dependents       | 56 |
-| # downloads        | 2076112 |
-| # stars            | 5 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 298396.0 |
+| # stars            | 102.0 |
 
 ## Links
-- [Homepage](https://github.com/floatdrop/express-request-id)
+- [Homepage](https://github.com/floatdrop/express-request-id#readme)
 - [Bugs](https://github.com/floatdrop/express-request-id/issues)
 - [Repository](https://github.com/floatdrop/express-request-id)
 - [Npm](https://www.npmjs.com/package/express-request-id)

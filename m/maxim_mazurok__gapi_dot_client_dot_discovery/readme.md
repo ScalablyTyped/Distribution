@@ -3,6 +3,24 @@
 
 Typings are for version 1.0.20200806
 
+## Library description:
+TypeScript typings for API Discovery Service v1
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @maxim_mazurok/gapi.client.discovery |
+| Keywords           | - |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1864.0 |
+| # stars            | ? |
+
+## Links
+- [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)
+- [Bugs](https://github.com/Maxim-Mazurok/google-api-typings-generator/issues)
+- [Repository](https://github.com/Maxim-Mazurok/google-api-typings-generator)
+- [Npm](https://www.npmjs.com/package/%40maxim_mazurok%2Fgapi.client.discovery)
+    
 
 
 ## Note

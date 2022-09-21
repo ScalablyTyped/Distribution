@@ -10,7 +10,7 @@ trait TouchAction extends StObject {
   
   def preventDefaults(input: HammerInput): Unit
   
-  def preventSrc(srcEvent: js.Any): Unit
+  def preventSrc(srcEvent: Any): Unit
   
   def set(value: String): Unit
   
@@ -21,7 +21,7 @@ object TouchAction {
   inline def apply(
     compute: () => String,
     preventDefaults: HammerInput => Unit,
-    preventSrc: js.Any => Unit,
+    preventSrc: Any => Unit,
     set: String => Unit,
     update: () => Unit
   ): TouchAction = {
@@ -35,7 +35,7 @@ object TouchAction {
     
     inline def setPreventDefaults(value: HammerInput => Unit): Self = StObject.set(x, "preventDefaults", js.Any.fromFunction1(value))
     
-    inline def setPreventSrc(value: js.Any => Unit): Self = StObject.set(x, "preventSrc", js.Any.fromFunction1(value))
+    inline def setPreventSrc(value: Any => Unit): Self = StObject.set(x, "preventSrc", js.Any.fromFunction1(value))
     
     inline def setSet(value: String => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     

@@ -71,7 +71,10 @@ object mod {
       */
     def addSteps(steps: js.Array[Step]): IntroJs = js.native
     
+    def currentStep(): js.UndefOr[Double] = js.native
+    
     def exit(): IntroJs = js.native
+    def exit(force: Boolean): IntroJs = js.native
     
     def goToStep(step: Double): IntroJs = js.native
     
@@ -83,21 +86,21 @@ object mod {
     
     def nextStep(): IntroJs = js.native
     
-    def onafterchange(callback: js.Function1[/* element */ HTMLElement, js.Any]): IntroJs = js.native
+    def onafterchange(callback: js.Function1[/* element */ HTMLElement, Any]): IntroJs = js.native
     
-    def onbeforechange(callback: js.Function1[/* element */ HTMLElement, js.Any]): IntroJs = js.native
+    def onbeforechange(callback: js.Function1[/* element */ HTMLElement, Any]): IntroJs = js.native
     
-    def onchange(callback: js.Function1[/* element */ HTMLElement, js.Any]): IntroJs = js.native
+    def onbeforeexit(callback: js.Function0[Boolean | Unit]): IntroJs = js.native
+    
+    def onchange(callback: js.Function1[/* element */ HTMLElement, Any]): IntroJs = js.native
     
     def oncomplete(callback: js.Function): IntroJs = js.native
     
     def onexit(callback: js.Function): IntroJs = js.native
     
-    def onhintclick(
-      callback: js.Function3[/* hintElement */ HTMLElement, /* item */ Step, /* stepId */ Double, js.Any]
-    ): IntroJs = js.native
+    def onhintclick(callback: js.Function3[/* hintElement */ HTMLElement, /* item */ Step, /* stepId */ Double, Any]): IntroJs = js.native
     
-    def onhintclose(callback: js.Function1[/* stepId */ Double, js.Any]): IntroJs = js.native
+    def onhintclose(callback: js.Function1[/* stepId */ Double, Any]): IntroJs = js.native
     
     def onhintsadded(callback: js.Function): IntroJs = js.native
     
@@ -123,6 +126,8 @@ object mod {
   }
   
   trait Options extends StObject {
+    
+    var buttonClass: js.UndefOr[String] = js.undefined
     
     var disableInteraction: js.UndefOr[Boolean] = js.undefined
     
@@ -185,6 +190,10 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
+      inline def setButtonClass(value: String): Self = StObject.set(x, "buttonClass", value.asInstanceOf[js.Any])
+      
+      inline def setButtonClassUndefined: Self = StObject.set(x, "buttonClass", js.undefined)
+      
       inline def setDisableInteraction(value: Boolean): Self = StObject.set(x, "disableInteraction", value.asInstanceOf[js.Any])
       
       inline def setDisableInteractionUndefined: Self = StObject.set(x, "disableInteraction", js.undefined)
@@ -229,7 +238,7 @@ object mod {
       
       inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
       
-      inline def setHintsVarargs(value: Hint*): Self = StObject.set(x, "hints", js.Array(value :_*))
+      inline def setHintsVarargs(value: Hint*): Self = StObject.set(x, "hints", js.Array(value*))
       
       inline def setKeyboardNavigation(value: Boolean): Self = StObject.set(x, "keyboardNavigation", value.asInstanceOf[js.Any])
       
@@ -247,7 +256,7 @@ object mod {
       
       inline def setPositionPrecedenceUndefined: Self = StObject.set(x, "positionPrecedence", js.undefined)
       
-      inline def setPositionPrecedenceVarargs(value: String*): Self = StObject.set(x, "positionPrecedence", js.Array(value :_*))
+      inline def setPositionPrecedenceVarargs(value: String*): Self = StObject.set(x, "positionPrecedence", js.Array(value*))
       
       inline def setPrevLabel(value: String): Self = StObject.set(x, "prevLabel", value.asInstanceOf[js.Any])
       
@@ -285,7 +294,7 @@ object mod {
       
       inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
       
-      inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value*))
       
       inline def setTooltipClass(value: String): Self = StObject.set(x, "tooltipClass", value.asInstanceOf[js.Any])
       
@@ -312,6 +321,10 @@ object mod {
       ] = js.undefined
     
     var scrollTo: js.UndefOr[off | tooltip | element] = js.undefined
+    
+    var step: js.UndefOr[Double] = js.undefined
+    
+    var title: js.UndefOr[String] = js.undefined
     
     var tooltipClass: js.UndefOr[String] = js.undefined
   }
@@ -347,6 +360,14 @@ object mod {
       inline def setScrollTo(value: off | tooltip | element): Self = StObject.set(x, "scrollTo", value.asInstanceOf[js.Any])
       
       inline def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
+      
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       inline def setTooltipClass(value: String): Self = StObject.set(x, "tooltipClass", value.asInstanceOf[js.Any])
       

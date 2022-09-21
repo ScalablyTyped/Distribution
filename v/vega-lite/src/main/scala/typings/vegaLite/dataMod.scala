@@ -14,7 +14,7 @@ object dataMod {
   
   @JSImport("vega-lite/build/src/compile/data", "AncestorParse")
   @js.native
-  class AncestorParse () extends Split[Parse] {
+  open class AncestorParse () extends Split[Parse] {
     def this(explicit: js.Object) = this()
     def this(explicit: js.Object, `implicit`: js.Object) = this()
     def this(explicit: Unit, `implicit`: js.Object) = this()
@@ -109,7 +109,7 @@ object dataMod {
       
       inline def setSources(value: js.Array[SourceNode]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      inline def setSourcesVarargs(value: SourceNode*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: SourceNode*): Self = StObject.set(x, "sources", js.Array(value*))
     }
   }
 }

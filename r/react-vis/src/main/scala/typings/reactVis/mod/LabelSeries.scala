@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "LabelSeries")
 @js.native
-class LabelSeries protected () extends AbstractSeries[LabelSeriesProps] {
+open class LabelSeries protected () extends AbstractSeries[LabelSeriesProps] {
   def this(props: LabelSeriesProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: LabelSeriesProps, context: js.Any) = this()
+  def this(props: LabelSeriesProps, context: Any) = this()
 }

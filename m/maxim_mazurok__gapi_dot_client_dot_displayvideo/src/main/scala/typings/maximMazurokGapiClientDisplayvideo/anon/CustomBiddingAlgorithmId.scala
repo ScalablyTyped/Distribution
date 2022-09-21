@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.CustomBiddingScript
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ trait CustomBiddingAlgorithmId extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the DV360 partner that has access to the custom bidding algorithm. */
+  /** The ID of the advertiser that owns the parent custom bidding algorithm. */
   var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
@@ -22,7 +23,7 @@ trait CustomBiddingAlgorithmId extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Required. The ID of the custom bidding algorithm to fetch. */
+  /** Required. The ID of the custom bidding algorithm that owns the script. */
   var customBiddingAlgorithmId: String
   
   /** Selector specifying which fields to include in a partial response. */
@@ -34,7 +35,7 @@ trait CustomBiddingAlgorithmId extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the DV360 partner that has access to the custom bidding algorithm. */
+  /** The ID of the partner that owns the parent custom bidding algorithm. Only this partner will have write access to this custom bidding script. */
   var partnerId: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
@@ -42,6 +43,9 @@ trait CustomBiddingAlgorithmId extends StObject {
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Request body */
+  var resource: CustomBiddingScript
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -51,8 +55,8 @@ trait CustomBiddingAlgorithmId extends StObject {
 }
 object CustomBiddingAlgorithmId {
   
-  inline def apply(customBiddingAlgorithmId: String): CustomBiddingAlgorithmId = {
-    val __obj = js.Dynamic.literal(customBiddingAlgorithmId = customBiddingAlgorithmId.asInstanceOf[js.Any])
+  inline def apply(customBiddingAlgorithmId: String, resource: CustomBiddingScript): CustomBiddingAlgorithmId = {
+    val __obj = js.Dynamic.literal(customBiddingAlgorithmId = customBiddingAlgorithmId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomBiddingAlgorithmId]
   }
   
@@ -103,6 +107,8 @@ object CustomBiddingAlgorithmId {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: CustomBiddingScript): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

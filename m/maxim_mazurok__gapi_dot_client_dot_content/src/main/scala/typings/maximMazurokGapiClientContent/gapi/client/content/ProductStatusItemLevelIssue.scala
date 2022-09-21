@@ -46,7 +46,7 @@ object ProductStatusItemLevelIssue {
     
     inline def setApplicableCountriesUndefined: Self = StObject.set(x, "applicableCountries", js.undefined)
     
-    inline def setApplicableCountriesVarargs(value: String*): Self = StObject.set(x, "applicableCountries", js.Array(value :_*))
+    inline def setApplicableCountriesVarargs(value: String*): Self = StObject.set(x, "applicableCountries", js.Array(value*))
     
     inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     

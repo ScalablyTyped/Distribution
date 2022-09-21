@@ -3,7 +3,6 @@ package typings.simpleUrlCache
 import typings.simpleUrlCache.mod.privateN.CacheCategory
 import typings.simpleUrlCache.mod.privateN.CacheStorage
 import typings.simpleUrlCache.mod.privateN.StorageConfig
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object mod {
   
   @JSImport("simple-url-cache", "CacheEngine")
   @js.native
-  class CacheEngine protected () extends StObject {
+  open class CacheEngine protected () extends StObject {
     def this(storageConfig: FileStorageConfig, cacheRules: CacheRules) = this()
     def this(storageConfig: RedisStorageConfig, cacheRules: CacheRules) = this()
     
@@ -23,7 +22,7 @@ object mod {
   
   @JSImport("simple-url-cache", "FileStorage")
   @js.native
-  class FileStorage protected ()
+  open class FileStorage protected ()
     extends StObject
        with CacheCategory
        with CacheStorage {
@@ -44,7 +43,7 @@ object mod {
   
   @JSImport("simple-url-cache", "RedisStorage")
   @js.native
-  class RedisStorage protected ()
+  open class RedisStorage protected ()
     extends StObject
        with CacheCategory
        with CacheStorage {
@@ -89,15 +88,15 @@ object mod {
       
       inline def setCacheAlways(value: js.Array[RegexRule]): Self = StObject.set(x, "cacheAlways", value.asInstanceOf[js.Any])
       
-      inline def setCacheAlwaysVarargs(value: RegexRule*): Self = StObject.set(x, "cacheAlways", js.Array(value :_*))
+      inline def setCacheAlwaysVarargs(value: RegexRule*): Self = StObject.set(x, "cacheAlways", js.Array(value*))
       
       inline def setCacheMaxAge(value: js.Array[MaxAgeRegexRule]): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
       
-      inline def setCacheMaxAgeVarargs(value: MaxAgeRegexRule*): Self = StObject.set(x, "cacheMaxAge", js.Array(value :_*))
+      inline def setCacheMaxAgeVarargs(value: MaxAgeRegexRule*): Self = StObject.set(x, "cacheMaxAge", js.Array(value*))
       
       inline def setCacheNever(value: js.Array[RegexRule]): Self = StObject.set(x, "cacheNever", value.asInstanceOf[js.Any])
       
-      inline def setCacheNeverVarargs(value: RegexRule*): Self = StObject.set(x, "cacheNever", js.Array(value :_*))
+      inline def setCacheNeverVarargs(value: RegexRule*): Self = StObject.set(x, "cacheNever", js.Array(value*))
       
       inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
@@ -131,7 +130,7 @@ object mod {
   }
   object MaxAgeRegexRule {
     
-    inline def apply(maxAge: Double, regex: RegExp): MaxAgeRegexRule = {
+    inline def apply(maxAge: Double, regex: js.RegExp): MaxAgeRegexRule = {
       val __obj = js.Dynamic.literal(maxAge = maxAge.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaxAgeRegexRule]
     }
@@ -198,18 +197,18 @@ object mod {
   
   trait RegexRule extends StObject {
     
-    var regex: RegExp
+    var regex: js.RegExp
   }
   object RegexRule {
     
-    inline def apply(regex: RegExp): RegexRule = {
+    inline def apply(regex: js.RegExp): RegexRule = {
       val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegexRule]
     }
     
     extension [Self <: RegexRule](x: Self) {
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     }
   }
   

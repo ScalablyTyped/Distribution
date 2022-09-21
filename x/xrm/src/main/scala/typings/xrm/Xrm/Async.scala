@@ -155,8 +155,8 @@ object Async {
     def `then`[U](onFulfilled: js.Function1[/* value */ T, U | PromiseLike[U]]): PromiseLike[U] = js.native
     def `then`[U](
       onFulfilled: js.Function1[/* value */ T, PromiseLike[U] | U],
-      onRejected: js.Function1[/* error */ js.Any, PromiseLike[U] | U | Unit]
+      onRejected: js.Function1[/* error */ Any, PromiseLike[U] | U | Unit]
     ): PromiseLike[U] = js.native
-    def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ js.Any, PromiseLike[U] | U | Unit]): PromiseLike[U] = js.native
+    def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ Any, PromiseLike[U] | U | Unit]): PromiseLike[U] = js.native
   }
 }

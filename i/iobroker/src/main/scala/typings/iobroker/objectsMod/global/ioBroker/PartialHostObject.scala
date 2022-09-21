@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<std.Omit<iobroker.iobroker/objects.<global>.ioBroker.HostObject, 'common' | 'native'>> */
 trait PartialHostObject
   extends StObject
-     with PartialObject {
+     with AnyPartialObject {
   
   var _id: js.UndefOr[String] = js.undefined
   

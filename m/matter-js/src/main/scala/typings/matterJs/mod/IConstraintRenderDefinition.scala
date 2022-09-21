@@ -13,7 +13,7 @@ trait IConstraintRenderDefinition extends StObject {
     * A `Boolean` that defines if the constraint's anchor points should be rendered.
     *
     * @property render.anchors
-    * @type boolean
+    * @type {boolean}
     * @default true
     */
   var anchors: js.UndefOr[Boolean] = js.undefined
@@ -23,7 +23,7 @@ trait IConstraintRenderDefinition extends StObject {
     * A value of `0` means no outline will be rendered.
     *
     * @property render.lineWidth
-    * @type number
+    * @type {number}
     * @default 2
     */
   var lineWidth: js.UndefOr[Double] = js.undefined
@@ -33,7 +33,7 @@ trait IConstraintRenderDefinition extends StObject {
     * It is the same as when using a canvas, so it accepts CSS style property values.
     *
     * @property render.strokeStyle
-    * @type string
+    * @type {string}
     * @default a random colour
     */
   var strokeStyle: js.UndefOr[String] = js.undefined
@@ -44,7 +44,7 @@ trait IConstraintRenderDefinition extends StObject {
     * chosen unless one is given in options.
     *
     * @property render.type
-    * @type string
+    * @type {string}
     * @default 'line'
     */
   var `type`: js.UndefOr[line | pin | spring] = js.undefined
@@ -53,7 +53,7 @@ trait IConstraintRenderDefinition extends StObject {
     * A flag that indicates if the constraint should be rendered.
     *
     * @property render.visible
-    * @type boolean
+    * @type {boolean}
     * @default true
     */
   var visible: js.UndefOr[Boolean] = js.undefined

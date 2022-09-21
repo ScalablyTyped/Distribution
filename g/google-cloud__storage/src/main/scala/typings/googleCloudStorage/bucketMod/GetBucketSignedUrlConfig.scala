@@ -5,7 +5,6 @@ import typings.googleCloudStorage.googleCloudStorageStrings.v2
 import typings.googleCloudStorage.googleCloudStorageStrings.v4
 import typings.googleCloudStorage.signerMod.Query
 import typings.node.httpMod.OutgoingHttpHeaders
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ trait GetBucketSignedUrlConfig extends StObject {
   
   var cname: js.UndefOr[String] = js.undefined
   
-  var expires: String | Double | Date
+  var expires: String | Double | js.Date
   
   var extensionHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
   
@@ -28,7 +27,7 @@ trait GetBucketSignedUrlConfig extends StObject {
 }
 object GetBucketSignedUrlConfig {
   
-  inline def apply(expires: String | Double | Date): GetBucketSignedUrlConfig = {
+  inline def apply(expires: String | Double | js.Date): GetBucketSignedUrlConfig = {
     val __obj = js.Dynamic.literal(action = "list", expires = expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketSignedUrlConfig]
   }
@@ -41,7 +40,7 @@ object GetBucketSignedUrlConfig {
     
     inline def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
     
-    inline def setExpires(value: String | Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: String | Double | js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     inline def setExtensionHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "extensionHeaders", value.asInstanceOf[js.Any])
     

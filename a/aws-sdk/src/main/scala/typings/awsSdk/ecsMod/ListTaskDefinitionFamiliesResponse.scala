@@ -29,7 +29,7 @@ object ListTaskDefinitionFamiliesResponse {
     
     inline def setFamiliesUndefined: Self = StObject.set(x, "families", js.undefined)
     
-    inline def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value :_*))
+    inline def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

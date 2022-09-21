@@ -20,8 +20,20 @@ object ModuleResolutionKind extends StObject {
   /* 1 */ val Classic: typings.typescript.mod.ModuleResolutionKind.Classic & Double = js.native
   
   @js.native
+  sealed trait Node16
+    extends StObject
+       with ModuleResolutionKind
+  /* 3 */ val Node16: typings.typescript.mod.ModuleResolutionKind.Node16 & Double = js.native
+  
+  @js.native
   sealed trait NodeJs
     extends StObject
        with ModuleResolutionKind
   /* 2 */ val NodeJs: typings.typescript.mod.ModuleResolutionKind.NodeJs & Double = js.native
+  
+  @js.native
+  sealed trait NodeNext
+    extends StObject
+       with ModuleResolutionKind
+  /* 99 */ val NodeNext: typings.typescript.mod.ModuleResolutionKind.NodeNext & Double = js.native
 }

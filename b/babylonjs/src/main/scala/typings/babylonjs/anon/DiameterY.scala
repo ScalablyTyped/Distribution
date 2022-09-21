@@ -11,6 +11,8 @@ trait DiameterY extends StObject {
   
   var backUVs: js.UndefOr[Vector4] = js.undefined
   
+  var dedupTopBottomIndices: js.UndefOr[Boolean] = js.undefined
+  
   var diameter: js.UndefOr[Double] = js.undefined
   
   var diameterX: js.UndefOr[Double] = js.undefined
@@ -43,6 +45,10 @@ object DiameterY {
     inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     
     inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
+    
+    inline def setDedupTopBottomIndices(value: Boolean): Self = StObject.set(x, "dedupTopBottomIndices", value.asInstanceOf[js.Any])
+    
+    inline def setDedupTopBottomIndicesUndefined: Self = StObject.set(x, "dedupTopBottomIndices", js.undefined)
     
     inline def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package typings.phaser.Phaser.GameObjects
 
+import typings.phaser.Phaser.Animations.AnimationState
 import typings.phaser.Phaser.GameObjects.Components.AlphaSingle
-import typings.phaser.Phaser.GameObjects.Components.Animation
 import typings.phaser.Phaser.GameObjects.Components.BlendMode
 import typings.phaser.Phaser.GameObjects.Components.Depth
 import typings.phaser.Phaser.GameObjects.Components.Flip
@@ -13,9 +13,6 @@ import typings.phaser.Phaser.GameObjects.Components.Texture
 import typings.phaser.Phaser.GameObjects.Components.Transform
 import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.Phaser.Types.Math.Vector2Like
-import typings.phaser.integer
-import typings.std.Float32Array
-import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,12 +54,12 @@ trait Rope
     * You can modify the contents of this array directly in real-time, however, should you need to change the _size_
     * of the array, then you should use the `setAlphas` method instead.
     */
-  var alphas: Float32Array = js.native
+  var alphas: js.typedarray.Float32Array = js.native
   
   /**
-    * The Animation Controller of this Rope.
+    * The Animation State of this Rope.
     */
-  var anims: Animation = js.native
+  var anims: AnimationState = js.native
   
   /**
     * An array containing the color data for this Rope.
@@ -73,7 +70,7 @@ trait Rope
     * You can modify the contents of this array directly in real-time, however, should you need to change the _size_
     * of the array, then you should use the `setColors` method instead.
     */
-  var colors: Uint32Array = js.native
+  var colors: js.typedarray.Uint32Array = js.native
   
   /**
     * You can optionally choose to render the vertices of this Rope to a Graphics instance.
@@ -122,8 +119,8 @@ trait Rope
     */
   def play(key: String): this.type = js.native
   def play(key: String, ignoreIfPlaying: Boolean): this.type = js.native
-  def play(key: String, ignoreIfPlaying: Boolean, startFrame: integer): this.type = js.native
-  def play(key: String, ignoreIfPlaying: Unit, startFrame: integer): this.type = js.native
+  def play(key: String, ignoreIfPlaying: Boolean, startFrame: Double): this.type = js.native
+  def play(key: String, ignoreIfPlaying: Unit, startFrame: Double): this.type = js.native
   
   /**
     * An array containing the points data for this Rope.
@@ -155,14 +152,14 @@ trait Rope
     * @param meshLength The number of vertices in the mesh.
     * @param verts An array of translated vertex coordinates.
     */
-  def renderDebugVerts(src: Rope, meshLength: integer, verts: js.Array[Double]): Unit = js.native
+  def renderDebugVerts(src: Rope, meshLength: Double, verts: js.Array[Double]): Unit = js.native
   
   /**
     * Resizes all of the internal arrays: `vertices`, `uv`, `colors` and `alphas` to the new
     * given Rope segment total.
     * @param newSize The amount of segments to split the Rope in to.
     */
-  def resizeArrays(newSize: integer): this.type = js.native
+  def resizeArrays(newSize: Double): this.type = js.native
   
   /**
     * Set the alpha values used by the Rope during rendering.
@@ -216,9 +213,10 @@ trait Rope
   /**
     * This method enables rendering of the Rope vertices to the given Graphics instance.
     * 
-    * If you enable this feature, you must call `Graphics.clear()` in your Scene `update`,
-    * otherwise the Graphics instance will fill-in with draw calls. This is not done automatically
-    * to allow for you to debug render multiple Rope objects to a single Graphics instance.
+    * If you enable this feature, you **must** call `Graphics.clear()` in your Scene `update`,
+    * otherwise the Graphics instance you provide to debug will fill-up with draw calls,
+    * eventually crashing the browser. This is not done automatically to allow you to debug
+    * draw multiple Rope objects to a single Graphics instance.
     * 
     * The Rope class has a built-in debug rendering callback `Rope.renderDebugVerts`, however
     * you can also provide your own callback to be used instead. Do this by setting the `callback` parameter.
@@ -269,6 +267,15 @@ trait Rope
   def setHorizontal(points: js.Array[Vector2Like], colors: Double, alphas: Double): this.type = js.native
   def setHorizontal(points: js.Array[Vector2Like], colors: Unit, alphas: js.Array[Double]): this.type = js.native
   def setHorizontal(points: js.Array[Vector2Like], colors: Unit, alphas: Double): this.type = js.native
+  def setHorizontal(points: Double): this.type = js.native
+  def setHorizontal(points: Double, colors: js.Array[Double]): this.type = js.native
+  def setHorizontal(points: Double, colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
+  def setHorizontal(points: Double, colors: js.Array[Double], alphas: Double): this.type = js.native
+  def setHorizontal(points: Double, colors: Double): this.type = js.native
+  def setHorizontal(points: Double, colors: Double, alphas: js.Array[Double]): this.type = js.native
+  def setHorizontal(points: Double, colors: Double, alphas: Double): this.type = js.native
+  def setHorizontal(points: Double, colors: Unit, alphas: js.Array[Double]): this.type = js.native
+  def setHorizontal(points: Double, colors: Unit, alphas: Double): this.type = js.native
   def setHorizontal(points: Unit, colors: js.Array[Double]): this.type = js.native
   def setHorizontal(points: Unit, colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
   def setHorizontal(points: Unit, colors: js.Array[Double], alphas: Double): this.type = js.native
@@ -277,15 +284,6 @@ trait Rope
   def setHorizontal(points: Unit, colors: Double, alphas: Double): this.type = js.native
   def setHorizontal(points: Unit, colors: Unit, alphas: js.Array[Double]): this.type = js.native
   def setHorizontal(points: Unit, colors: Unit, alphas: Double): this.type = js.native
-  def setHorizontal(points: integer): this.type = js.native
-  def setHorizontal(points: integer, colors: js.Array[Double]): this.type = js.native
-  def setHorizontal(points: integer, colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
-  def setHorizontal(points: integer, colors: js.Array[Double], alphas: Double): this.type = js.native
-  def setHorizontal(points: integer, colors: Double): this.type = js.native
-  def setHorizontal(points: integer, colors: Double, alphas: js.Array[Double]): this.type = js.native
-  def setHorizontal(points: integer, colors: Double, alphas: Double): this.type = js.native
-  def setHorizontal(points: integer, colors: Unit, alphas: js.Array[Double]): this.type = js.native
-  def setHorizontal(points: integer, colors: Unit, alphas: Double): this.type = js.native
   
   /**
     * Sets the points used by this Rope.
@@ -332,6 +330,15 @@ trait Rope
   def setPoints(points: js.Array[Vector2Like], colors: Double, alphas: Double): this.type = js.native
   def setPoints(points: js.Array[Vector2Like], colors: Unit, alphas: js.Array[Double]): this.type = js.native
   def setPoints(points: js.Array[Vector2Like], colors: Unit, alphas: Double): this.type = js.native
+  def setPoints(points: Double): this.type = js.native
+  def setPoints(points: Double, colors: js.Array[Double]): this.type = js.native
+  def setPoints(points: Double, colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
+  def setPoints(points: Double, colors: js.Array[Double], alphas: Double): this.type = js.native
+  def setPoints(points: Double, colors: Double): this.type = js.native
+  def setPoints(points: Double, colors: Double, alphas: js.Array[Double]): this.type = js.native
+  def setPoints(points: Double, colors: Double, alphas: Double): this.type = js.native
+  def setPoints(points: Double, colors: Unit, alphas: js.Array[Double]): this.type = js.native
+  def setPoints(points: Double, colors: Unit, alphas: Double): this.type = js.native
   def setPoints(points: Unit, colors: js.Array[Double]): this.type = js.native
   def setPoints(points: Unit, colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
   def setPoints(points: Unit, colors: js.Array[Double], alphas: Double): this.type = js.native
@@ -340,33 +347,22 @@ trait Rope
   def setPoints(points: Unit, colors: Double, alphas: Double): this.type = js.native
   def setPoints(points: Unit, colors: Unit, alphas: js.Array[Double]): this.type = js.native
   def setPoints(points: Unit, colors: Unit, alphas: Double): this.type = js.native
-  def setPoints(points: integer): this.type = js.native
-  def setPoints(points: integer, colors: js.Array[Double]): this.type = js.native
-  def setPoints(points: integer, colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
-  def setPoints(points: integer, colors: js.Array[Double], alphas: Double): this.type = js.native
-  def setPoints(points: integer, colors: Double): this.type = js.native
-  def setPoints(points: integer, colors: Double, alphas: js.Array[Double]): this.type = js.native
-  def setPoints(points: integer, colors: Double, alphas: Double): this.type = js.native
-  def setPoints(points: integer, colors: Unit, alphas: js.Array[Double]): this.type = js.native
-  def setPoints(points: integer, colors: Unit, alphas: Double): this.type = js.native
   
   /**
     * Sets the tint fill mode.
     * 
-    * Mode 0 is an additive tint, the default, which blends the vertices colors with the texture.
+    * Mode 0 (`false`) is an additive tint, the default, which blends the vertices colors with the texture.
     * This mode respects the texture alpha.
     * 
-    * Mode 1 is a fill tint. Unlike an additive tint, a fill-tint literally replaces the pixel colors
+    * Mode 1 (`true`) is a fill tint. Unlike an additive tint, a fill-tint literally replaces the pixel colors
     * from the texture with those in the tint. You can use this for effects such as making a player flash 'white'
     * if hit by something. This mode respects the texture alpha.
     * 
-    * Mode 2 is a complete tint. The texture colors and alpha are replaced entirely by the vertices colors.
-    * 
     * See the `setColors` method for details of how to color each of the vertices.
-    * @param value Set to 0 for an Additive tint, 1 for a fill tint with alpha, or 2 for a fill tint without alpha. Default 0.
+    * @param value Set to `false` for an Additive tint or `true` fill tint with alpha. Default false.
     */
   def setTintFill(): this.type = js.native
-  def setTintFill(value: integer): this.type = js.native
+  def setTintFill(value: Boolean): this.type = js.native
   
   /**
     * Sets the alignment of the points in this Rope to be vertical, in a column format.
@@ -387,6 +383,15 @@ trait Rope
   def setVertical(points: js.Array[Vector2Like], colors: Double, alphas: Double): this.type = js.native
   def setVertical(points: js.Array[Vector2Like], colors: Unit, alphas: js.Array[Double]): this.type = js.native
   def setVertical(points: js.Array[Vector2Like], colors: Unit, alphas: Double): this.type = js.native
+  def setVertical(points: Double): this.type = js.native
+  def setVertical(points: Double, colors: js.Array[Double]): this.type = js.native
+  def setVertical(points: Double, colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
+  def setVertical(points: Double, colors: js.Array[Double], alphas: Double): this.type = js.native
+  def setVertical(points: Double, colors: Double): this.type = js.native
+  def setVertical(points: Double, colors: Double, alphas: js.Array[Double]): this.type = js.native
+  def setVertical(points: Double, colors: Double, alphas: Double): this.type = js.native
+  def setVertical(points: Double, colors: Unit, alphas: js.Array[Double]): this.type = js.native
+  def setVertical(points: Double, colors: Unit, alphas: Double): this.type = js.native
   def setVertical(points: Unit, colors: js.Array[Double]): this.type = js.native
   def setVertical(points: Unit, colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
   def setVertical(points: Unit, colors: js.Array[Double], alphas: Double): this.type = js.native
@@ -395,24 +400,14 @@ trait Rope
   def setVertical(points: Unit, colors: Double, alphas: Double): this.type = js.native
   def setVertical(points: Unit, colors: Unit, alphas: js.Array[Double]): this.type = js.native
   def setVertical(points: Unit, colors: Unit, alphas: Double): this.type = js.native
-  def setVertical(points: integer): this.type = js.native
-  def setVertical(points: integer, colors: js.Array[Double]): this.type = js.native
-  def setVertical(points: integer, colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
-  def setVertical(points: integer, colors: js.Array[Double], alphas: Double): this.type = js.native
-  def setVertical(points: integer, colors: Double): this.type = js.native
-  def setVertical(points: integer, colors: Double, alphas: js.Array[Double]): this.type = js.native
-  def setVertical(points: integer, colors: Double, alphas: Double): this.type = js.native
-  def setVertical(points: integer, colors: Unit, alphas: js.Array[Double]): this.type = js.native
-  def setVertical(points: integer, colors: Unit, alphas: Double): this.type = js.native
   
   /**
     * The tint fill mode.
     * 
-    * 0 = An additive tint (the default), where vertices colors are blended with the texture.
-    * 1 = A fill tint, where the vertices colors replace the texture, but respects texture alpha.
-    * 2 = A complete tint, where the vertices colors replace the texture, including alpha, entirely.
+    * `false` = An additive tint (the default), where vertices colors are blended with the texture.
+    * `true` = A fill tint, where the vertices colors replace the texture, but respects texture alpha.
     */
-  var tintFill: integer = js.native
+  var tintFill: Boolean = js.native
   
   /**
     * Updates all of the UVs based on the Rope.points and `flipX` and `flipY` settings.
@@ -433,12 +428,12 @@ trait Rope
     * 
     * This data is calculated automatically in the `setPoints` method, based on the points provided.
     */
-  var uv: Float32Array = js.native
+  var uv: js.typedarray.Float32Array = js.native
   
   /**
     * An array containing the vertices data for this Rope.
     * 
     * This data is calculated automatically in the `updateVertices` method, based on the points provided.
     */
-  var vertices: Float32Array = js.native
+  var vertices: js.typedarray.Float32Array = js.native
 }

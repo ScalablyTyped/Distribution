@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "just-pick" : "4.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "just-pick" : "4.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

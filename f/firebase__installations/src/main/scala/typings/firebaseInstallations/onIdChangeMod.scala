@@ -1,17 +1,17 @@
 package typings.firebaseInstallations
 
-import typings.firebaseInstallations.firebaseDependenciesMod.FirebaseDependencies
+import typings.firebaseInstallations.publicTypesMod.Installations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object onIdChangeMod {
   
-  @JSImport("@firebase/installations/dist/src/functions/on-id-change", JSImport.Namespace)
+  @JSImport("@firebase/installations/dist/esm/src/api/on-id-change", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def onIdChange(hasAppConfig: FirebaseDependencies, callback: IdChangeCallbackFn): IdChangeUnsubscribeFn = (^.asInstanceOf[js.Dynamic].applyDynamic("onIdChange")(hasAppConfig.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IdChangeUnsubscribeFn]
+  inline def onIdChange(installations: Installations, callback: IdChangeCallbackFn): IdChangeUnsubscribeFn = (^.asInstanceOf[js.Dynamic].applyDynamic("onIdChange")(installations.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IdChangeUnsubscribeFn]
   
   type IdChangeCallbackFn = js.Function1[/* installationId */ String, Unit]
   

@@ -46,7 +46,7 @@ object ScheduleOptions {
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value :_*))
+    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value*))
     
     inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
     

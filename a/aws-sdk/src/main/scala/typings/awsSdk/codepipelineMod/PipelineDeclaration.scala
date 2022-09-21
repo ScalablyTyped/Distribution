@@ -59,7 +59,7 @@ object PipelineDeclaration {
     
     inline def setStages(value: PipelineStageDeclarationList): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
     
-    inline def setStagesVarargs(value: StageDeclaration*): Self = StObject.set(x, "stages", js.Array(value :_*))
+    inline def setStagesVarargs(value: StageDeclaration*): Self = StObject.set(x, "stages", js.Array(value*))
     
     inline def setVersion(value: PipelineVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

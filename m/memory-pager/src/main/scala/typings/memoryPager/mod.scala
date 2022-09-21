@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import typings.memoryPager.memoryPagerBooleans.`false`
 import typings.memoryPager.memoryPagerBooleans.`true`
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ object mod extends Shortcut {
     * Create a new pager.
     * @param pageSize defaults to 1024.
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with PagerInstance {
     def this(pageSize: Double) = this()

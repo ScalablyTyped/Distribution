@@ -12,19 +12,19 @@ trait AssetEntry extends StObject {
   var Arn: typings.awsSdk.dataexchangeMod.Arn
   
   /**
-    * Information about the asset, including its size.
+    * Information about the asset.
     */
   var AssetDetails: typings.awsSdk.dataexchangeMod.AssetDetails
   
   /**
-    * The type of file your data is stored in. Currently, the supported asset type is S3_SNAPSHOT.
+    * The type of asset that is added to a data set.
     */
   var AssetType: typings.awsSdk.dataexchangeMod.AssetType
   
   /**
     * The date and time that the asset was created, in ISO 8601 format.
     */
-  var CreatedAt: Timestamp
+  var CreatedAt: js.Date
   
   /**
     * The unique identifier for the data set associated with this asset.
@@ -37,7 +37,7 @@ trait AssetEntry extends StObject {
   var Id: typings.awsSdk.dataexchangeMod.Id
   
   /**
-    * The name of the asset. When importing from Amazon S3, the S3 object key is used as the asset name. When exporting to Amazon S3, the asset name is used as default target S3 object key.
+    * The name of the asset. When importing from Amazon S3, the S3 object key is used as the asset name. When exporting to Amazon S3, the asset name is used as default target S3 object key. When importing from Amazon API Gateway API, the API name is used as the asset name. When importing from Amazon Redshift, the datashare name is used as the asset name.
     */
   var Name: AssetName
   
@@ -54,7 +54,7 @@ trait AssetEntry extends StObject {
   /**
     * The date and time that the asset was last updated, in ISO 8601 format.
     */
-  var UpdatedAt: Timestamp
+  var UpdatedAt: js.Date
 }
 object AssetEntry {
   
@@ -62,12 +62,12 @@ object AssetEntry {
     Arn: Arn,
     AssetDetails: AssetDetails,
     AssetType: AssetType,
-    CreatedAt: Timestamp,
+    CreatedAt: js.Date,
     DataSetId: Id,
     Id: Id,
     Name: AssetName,
     RevisionId: Id,
-    UpdatedAt: Timestamp
+    UpdatedAt: js.Date
   ): AssetEntry = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], AssetDetails = AssetDetails.asInstanceOf[js.Any], AssetType = AssetType.asInstanceOf[js.Any], CreatedAt = CreatedAt.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetEntry]
@@ -81,7 +81,7 @@ object AssetEntry {
     
     inline def setAssetType(value: AssetType): Self = StObject.set(x, "AssetType", value.asInstanceOf[js.Any])
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
@@ -95,6 +95,6 @@ object AssetEntry {
     
     inline def setSourceIdUndefined: Self = StObject.set(x, "SourceId", js.undefined)
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
   }
 }

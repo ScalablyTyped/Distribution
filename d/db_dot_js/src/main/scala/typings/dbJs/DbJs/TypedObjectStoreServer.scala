@@ -15,9 +15,9 @@ trait TypedObjectStoreServer[T] extends StObject {
   
   def clear(): js.Promise[Unit] = js.native
   
-  def count(key: js.Any): js.Promise[Double] = js.native
+  def count(key: Any): js.Promise[Double] = js.native
   
-  def get(key: js.Any): js.Promise[T] = js.native
+  def get(key: Any): js.Promise[T] = js.native
   
   def query(): IndexQuery[T] = js.native
   def query(index: String): IndexQuery[T] = js.native

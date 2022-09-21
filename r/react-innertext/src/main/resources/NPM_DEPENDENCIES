@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-innertext" : "1.1.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-innertext" : "1.1.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

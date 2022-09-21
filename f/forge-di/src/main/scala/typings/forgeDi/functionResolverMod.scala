@@ -8,7 +8,7 @@ object functionResolverMod {
   
   @JSImport("forge-di/dist/resolvers/FunctionResolver", JSImport.Default)
   @js.native
-  class default protected () extends FunctionResolver {
+  open class default protected () extends FunctionResolver {
     def this(
       forge: typings.forgeDi.forgeMod.default,
       binding: typings.forgeDi.bindingMod.default,

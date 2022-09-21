@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FunctionCode extends StObject {
   
   /**
-    * An Amazon S3 bucket in the same AWS Region as your function. The bucket can be in a different AWS account.
+    * URI of a container image in the Amazon ECR registry.
+    */
+  var ImageUri: js.UndefOr[String] = js.undefined
+  
+  /**
+    * An Amazon S3 bucket in the same Amazon Web Services Region as your function. The bucket can be in a different Amazon Web Services account.
     */
   var S3Bucket: js.UndefOr[typings.awsSdk.lambdaMod.S3Bucket] = js.undefined
   
@@ -22,7 +27,7 @@ trait FunctionCode extends StObject {
   var S3ObjectVersion: js.UndefOr[typings.awsSdk.lambdaMod.S3ObjectVersion] = js.undefined
   
   /**
-    * The base64-encoded contents of the deployment package. AWS SDK and AWS CLI clients handle the encoding for you.
+    * The base64-encoded contents of the deployment package. Amazon Web Services SDK and Amazon Web Services CLI clients handle the encoding for you.
     */
   var ZipFile: js.UndefOr[_Blob] = js.undefined
 }
@@ -34,6 +39,10 @@ object FunctionCode {
   }
   
   extension [Self <: FunctionCode](x: Self) {
+    
+    inline def setImageUri(value: String): Self = StObject.set(x, "ImageUri", value.asInstanceOf[js.Any])
+    
+    inline def setImageUriUndefined: Self = StObject.set(x, "ImageUri", js.undefined)
     
     inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     

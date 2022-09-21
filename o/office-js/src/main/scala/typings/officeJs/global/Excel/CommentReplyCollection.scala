@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of comment reply objects that are part of the comment.
   *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.CommentReplyCollection")
 @js.native
-class CommentReplyCollection ()
+open class CommentReplyCollection ()
   extends StObject
      with typings.officeJs.Excel.CommentReplyCollection {
   

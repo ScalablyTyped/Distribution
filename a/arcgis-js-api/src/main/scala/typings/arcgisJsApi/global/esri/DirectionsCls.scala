@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.Directions")
 @js.native
 /**
-  * The Directions Widget provides a way to build driving and walking directions using ArcGIS Online and custom Network Analysis Route services.
+  * The Directions widget provides a way to calculate directions, between two or more input locations with a [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html), using ArcGIS Online and custom Network Analysis Route services.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html)
   */
-class DirectionsCls ()
+open class DirectionsCls ()
   extends StObject
      with typings.arcgisJsApi.esri.Directions {
   def this(properties: DirectionsProperties) = this()
@@ -25,9 +25,9 @@ class DirectionsCls ()
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GoTo.html#goToOverride)
     */
   /* CompleteClass */
-  override def goToOverride(view: typings.arcgisJsApi.esri.MapView, goToParameters: js.Any): Unit = js.native
+  override def goToOverride(view: typings.arcgisJsApi.esri.MapView, goToParameters: Any): Unit = js.native
   /* CompleteClass */
-  override def goToOverride(view: typings.arcgisJsApi.esri.SceneView, goToParameters: js.Any): Unit = js.native
+  override def goToOverride(view: typings.arcgisJsApi.esri.SceneView, goToParameters: Any): Unit = js.native
   /**
     * This function provides the ability to override either the [MapView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#goTo) or [SceneView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo) methods.
     *

@@ -1,6 +1,5 @@
 package typings.winrt.Windows.ApplicationModel.DataTransfer
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object DataRequest {
   
   inline def apply(
     data: DataPackage,
-    deadline: Date,
+    deadline: js.Date,
     failWithDisplayText: String => Unit,
     getDeferral: () => DataRequestDeferral
   ): DataRequest = {

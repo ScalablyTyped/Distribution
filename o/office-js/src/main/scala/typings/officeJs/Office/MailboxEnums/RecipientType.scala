@@ -7,20 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait RecipientType extends StObject
 /**
-  * Specifies the type of recipient for an appointment.
-  *
-  * [Api set: Mailbox 1.1]
+  * Specifies the type of recipient of a message or appointment.
   *
   * @remarks
+  * [Api set: Mailbox 1.1]
   * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * 
+  * **Important**: A `recipientType` property value isn't returned by the 
+  * {@link https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-1.7#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync} 
+  * and {@link https://learn.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-1.7#outlook-office-organizer-getasync-member(1) | Office.context.mailbox.item.organizer.getAsync} methods.
+  * The email sender or appointment organizer is always a user whose email address is on the Exchange server.
   */
 @JSGlobal("Office.MailboxEnums.RecipientType")
 @js.native
 object RecipientType extends StObject {
   
   /**
-    * Specifies that the recipient is a distribution list containing a list of email addresses.
+    * Specifies the recipient is a distribution list containing a list of email addresses.
     */
   @js.native
   sealed trait DistributionList
@@ -28,7 +32,7 @@ object RecipientType extends StObject {
        with RecipientType
   
   /**
-    * Specifies that the recipient is an SMTP email address that is not on the Exchange server.
+    * Specifies the recipient is an SMTP email address that isn't on the Exchange server.
     */
   @js.native
   sealed trait ExternalUser
@@ -36,7 +40,8 @@ object RecipientType extends StObject {
        with RecipientType
   
   /**
-    * Specifies that the recipient is not one of the other recipient types.
+    * Specifies the recipient isn't one of the other recipient types. It also refers to a recipient that isn't resolved against the Exchange address book,
+    * and is therefore treated as an external SMTP address.
     */
   @js.native
   sealed trait Other
@@ -44,7 +49,7 @@ object RecipientType extends StObject {
        with RecipientType
   
   /**
-    * Specifies that the recipient is an SMTP email address that is on the Exchange server.
+    * Specifies the recipient is an SMTP email address on the Exchange server.
     */
   @js.native
   sealed trait User

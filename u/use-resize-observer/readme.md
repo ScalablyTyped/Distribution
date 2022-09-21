@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-resize-observer
 
-Typings are for version 6.0
+Typings are for version 9.0.2
 
 ## Library description:
 A React hook that allows you to use a ResizeObserver to measure an element's size.
@@ -9,11 +9,11 @@ A React hook that allows you to use a ResizeObserver to measure an element's siz
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | use-resize-observer |
-| Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 32 |
-| # downloads        | 1673941 |
-| # stars            | 0 |
+| Keywords           | react, hook, react hook, resize observer, resize observer hook, resize observer react hook, use-resize-observer, useresizeobserver, resize hook, size hook, container query, css in js, measure, size, resize |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1274762.0 |
+| # stars            | 490.0 |
 
 ## Links
 - [Homepage](https://github.com/ZeeCoder/use-resize-observer#readme)
@@ -24,7 +24,7 @@ A React hook that allows you to use a ResizeObserver to measure an element's siz
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

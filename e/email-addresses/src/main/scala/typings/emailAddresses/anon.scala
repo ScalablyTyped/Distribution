@@ -17,12 +17,12 @@ object anon {
     
     var local: ASTNode
     
-    var name: ASTNode
+    var name: ASTNode | Null
   }
   object Address {
     
-    inline def apply(address: ASTNode, comments: js.Array[ASTNode], domain: ASTNode, local: ASTNode, name: ASTNode): Address = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    inline def apply(address: ASTNode, comments: js.Array[ASTNode], domain: ASTNode, local: ASTNode): Address = {
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], name = null)
       __obj.asInstanceOf[Address]
     }
     
@@ -32,13 +32,15 @@ object anon {
       
       inline def setComments(value: js.Array[ASTNode]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      inline def setCommentsVarargs(value: ASTNode*): Self = StObject.set(x, "comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: ASTNode*): Self = StObject.set(x, "comments", js.Array(value*))
       
       inline def setDomain(value: ASTNode): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
       inline def setLocal(value: ASTNode): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
       inline def setName(value: ASTNode): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameNull: Self = StObject.set(x, "name", null)
     }
   }
   

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the shape collection inside a shape group.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait GroupShapeCollectionLoadOptions extends StObject {
@@ -19,205 +19,215 @@ trait GroupShapeCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies the alternative description text for a `Shape` object.
     *
-    * For EACH ITEM in the collection: Specifies the alternative description text for a Shape object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var altTextDescription: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies the alternative title text for a `Shape` object.
     *
-    * For EACH ITEM in the collection: Specifies the alternative title text for a Shape object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var altTextTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Returns the number of connection sites on this shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var connectionSiteCount: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Gets the display name of the shape. A newly created shape has a generated name
+    that is localized and may not match its `name`. In this scenario, you can use
+    this API to get the name that is displayed in the UI.
     *
+    * @remarks
+    * [Api set: ExcelApi 1.15]
+    */
+  var displayName: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * For EACH ITEM in the collection: Returns the fill formatting of this shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var fill: js.UndefOr[ShapeFillLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Returns the geometric shape associated with the shape. An error will be thrown if the shape type is not "GeometricShape".
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var geometricShape: js.UndefOr[GeometricShapeLoadOptions] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies the geometric shape type of this geometric shape. See `Excel.GeometricShapeType` for details. Returns `null` if the shape type is not "GeometricShape".
     *
-    * For EACH ITEM in the collection: Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var geometricShapeType: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Returns the shape group associated with the shape. An error will be thrown if the shape type is not "GroupShape".
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var group: js.UndefOr[ShapeGroupLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the height, in points, of the shape.
-    Throws an invalid argument exception when set with a negative value or zero as input.
+    Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var height: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the shape identifier.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Returns the image associated with the shape. An error will be thrown if the shape type is not "Image".
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var image: js.UndefOr[ImageLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the left side of the worksheet.
-    Throws an invalid argument exception when set with a negative value as input.
+    Throws an `InvalidArgument` exception when set with a negative value as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var left: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var level: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Returns the line associated with the shape. An error will be thrown if the shape type is not "Line".
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var line: js.UndefOr[LineLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Returns the line formatting of this shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var lineFormat: js.UndefOr[ShapeLineFormatLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the aspect ratio of this shape is locked.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the name of the shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the parent group of this shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var parentGroup: js.UndefOr[ShapeLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents how the object is attached to the cells below it.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var placement: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the rotation, in degrees, of the shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var rotation: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Returns the text frame object of this shape.
     *
-    * For EACH ITEM in the collection: Returns the text frame object of this shape. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var textFrame: js.UndefOr[TextFrameLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the top edge of the worksheet.
-    Throws an invalid argument exception when set with a negative value as input.
+    Throws an `InvalidArgument` exception when set with a negative value as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var top: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Returns the type of this shape. See `Excel.ShapeType` for details.
     *
-    * For EACH ITEM in the collection: Returns the type of this shape. See Excel.ShapeType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the shape is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the width, in points, of the shape.
-    Throws an invalid argument exception when set with a negative value or zero as input.
+    Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var width: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var zOrderPosition: js.UndefOr[Boolean] = js.undefined
@@ -246,6 +256,10 @@ object GroupShapeCollectionLoadOptions {
     inline def setConnectionSiteCount(value: Boolean): Self = StObject.set(x, "connectionSiteCount", value.asInstanceOf[js.Any])
     
     inline def setConnectionSiteCountUndefined: Self = StObject.set(x, "connectionSiteCount", js.undefined)
+    
+    inline def setDisplayName(value: Boolean): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     inline def setFill(value: ShapeFillLoadOptions): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

@@ -25,18 +25,18 @@ object DNSConfig {
     
     inline def setNameserversUndefined: Self = StObject.set(x, "Nameservers", js.undefined)
     
-    inline def setNameserversVarargs(value: String*): Self = StObject.set(x, "Nameservers", js.Array(value :_*))
+    inline def setNameserversVarargs(value: String*): Self = StObject.set(x, "Nameservers", js.Array(value*))
     
     inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
-    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "Options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "Options", js.Array(value*))
     
     inline def setSearch(value: js.Array[String]): Self = StObject.set(x, "Search", value.asInstanceOf[js.Any])
     
     inline def setSearchUndefined: Self = StObject.set(x, "Search", js.undefined)
     
-    inline def setSearchVarargs(value: String*): Self = StObject.set(x, "Search", js.Array(value :_*))
+    inline def setSearchVarargs(value: String*): Self = StObject.set(x, "Search", js.Array(value*))
   }
 }

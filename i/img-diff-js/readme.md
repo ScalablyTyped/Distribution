@@ -1,7 +1,7 @@
 
 # Scala.js typings for img-diff-js
 
-Typings are for version 0.4
+Typings are for version 0.5.2
 
 ## Library description:
 Library to compare 2 images
@@ -10,10 +10,10 @@ Library to compare 2 images
 | ------------------ | :-------------: |
 | Full name          | img-diff-js |
 | Keywords           | diff, image, compare |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 1228552 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 179541.66666666666 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/reg-viz/img-diff-js#readme)
@@ -24,7 +24,7 @@ Library to compare 2 images
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

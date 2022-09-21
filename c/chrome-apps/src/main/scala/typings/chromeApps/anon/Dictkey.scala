@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Dictkey
   extends StObject
      with /** Arguments, see original condition docs in chrome.webViewRequest */
-/* key */ StringDictionary[js.Any | js.Array[js.Any]] {
+/* key */ StringDictionary[Any | js.Array[Any]] {
   
   /** Condition */
   var `type`: DeclarativeWebRequestConditionsList

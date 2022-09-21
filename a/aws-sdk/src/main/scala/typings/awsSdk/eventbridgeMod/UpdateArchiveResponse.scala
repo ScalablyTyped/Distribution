@@ -14,7 +14,7 @@ trait UpdateArchiveResponse extends StObject {
   /**
     * The time at which the archive was updated.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state of the archive.
@@ -39,7 +39,7 @@ object UpdateArchiveResponse {
     
     inline def setArchiveArnUndefined: Self = StObject.set(x, "ArchiveArn", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

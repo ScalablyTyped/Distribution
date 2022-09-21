@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLDialog")
 @js.native
-/* private */ class HTMLDialog ()
+/* private */ open class HTMLDialog ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLDialog {
   
@@ -18,23 +18,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def close(): Unit = js.native
   
   /* CompleteClass */
-  override val dialogArguments: js.Any = js.native
+  override val dialogArguments: Any = js.native
   
   /* CompleteClass */
-  var dialogHeight: js.Any = js.native
+  var dialogHeight: Any = js.native
   
   /* CompleteClass */
-  var dialogLeft: js.Any = js.native
+  var dialogLeft: Any = js.native
   
   /* CompleteClass */
-  var dialogTop: js.Any = js.native
+  var dialogTop: Any = js.native
   
   /* CompleteClass */
-  var dialogWidth: js.Any = js.native
+  var dialogWidth: Any = js.native
   
   /* CompleteClass */
-  override val menuArguments: js.Any = js.native
+  override val menuArguments: Any = js.native
   
   /* CompleteClass */
-  var returnValue: js.Any = js.native
+  var returnValue: Any = js.native
 }

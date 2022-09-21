@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__transition
 
-Typings are for version 2.4.2
+Typings are for version 5.1.3
 
 ## Library description:
 A package for working with react-md to use some simple transitions.
@@ -10,10 +10,10 @@ A package for working with react-md to use some simple transitions.
 | ------------------ | :-------------: |
 | Full name          | @react-md/transition |
 | Keywords           | react-md, material design, react, transition, component, components, collapse |
-| # releases         | 38 |
-| # dependents       | 18 |
-| # downloads        | 26880 |
-| # stars            | 0 |
+| # releases         | 42 |
+| # dependents       | 0.0 |
+| # downloads        | 9812.666666666666 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/transition/demos)

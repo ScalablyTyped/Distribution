@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Entity")
 @js.native
-/* private */ class Entity ()
+/* private */ open class Entity ()
   extends StObject
      with typings.activexAccess.Access.Entity {
   
@@ -30,5 +30,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Operations_Original: Operations = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
 }

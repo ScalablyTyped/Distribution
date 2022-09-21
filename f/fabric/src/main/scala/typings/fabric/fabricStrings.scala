@@ -19,6 +19,10 @@ object fabricStrings {
   inline def bl: bl = "bl".asInstanceOf[bl]
   
   @js.native
+  sealed trait bottom extends StObject
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @js.native
   sealed trait br extends StObject
   inline def br: br = "br".asInstanceOf[br]
   
@@ -31,10 +35,6 @@ object fabricStrings {
   inline def equally: equally = "equally".asInstanceOf[equally]
   
   @js.native
-  sealed trait fill extends StObject
-  inline def fill: fill = "fill".asInstanceOf[fill]
-  
-  @js.native
   sealed trait getImageData extends StObject
   inline def getImageData: getImageData = "getImageData".asInstanceOf[getImageData]
   
@@ -43,12 +43,60 @@ object fabricStrings {
   inline def italic: italic = "italic".asInstanceOf[italic]
   
   @js.native
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
+  
+  @js.native
+  sealed trait ltr extends StObject
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
+  
+  @js.native
   sealed trait mb extends StObject
   inline def mb: mb = "mb".asInstanceOf[mb]
   
   @js.native
   sealed trait ml extends StObject
   inline def ml: ml = "ml".asInstanceOf[ml]
+  
+  @js.native
+  sealed trait mouseColondblclick extends StObject
+  inline def mouseColondblclick: mouseColondblclick = "mouse:dblclick".asInstanceOf[mouseColondblclick]
+  
+  @js.native
+  sealed trait mouseColondown extends StObject
+  inline def mouseColondown: mouseColondown = "mouse:down".asInstanceOf[mouseColondown]
+  
+  @js.native
+  sealed trait mouseColondownColonbefore extends StObject
+  inline def mouseColondownColonbefore: mouseColondownColonbefore = "mouse:down:before".asInstanceOf[mouseColondownColonbefore]
+  
+  @js.native
+  sealed trait mouseColonmove extends StObject
+  inline def mouseColonmove: mouseColonmove = "mouse:move".asInstanceOf[mouseColonmove]
+  
+  @js.native
+  sealed trait mouseColonmoveColonbefore extends StObject
+  inline def mouseColonmoveColonbefore: mouseColonmoveColonbefore = "mouse:move:before".asInstanceOf[mouseColonmoveColonbefore]
+  
+  @js.native
+  sealed trait mouseColonout extends StObject
+  inline def mouseColonout: mouseColonout = "mouse:out".asInstanceOf[mouseColonout]
+  
+  @js.native
+  sealed trait mouseColonover extends StObject
+  inline def mouseColonover: mouseColonover = "mouse:over".asInstanceOf[mouseColonover]
+  
+  @js.native
+  sealed trait mouseColonup extends StObject
+  inline def mouseColonup: mouseColonup = "mouse:up".asInstanceOf[mouseColonup]
+  
+  @js.native
+  sealed trait mouseColonupColonbefore extends StObject
+  inline def mouseColonupColonbefore: mouseColonupColonbefore = "mouse:up:before".asInstanceOf[mouseColonupColonbefore]
+  
+  @js.native
+  sealed trait mouseColonwheel extends StObject
+  inline def mouseColonwheel: mouseColonwheel = "mouse:wheel".asInstanceOf[mouseColonwheel]
   
   @js.native
   sealed trait mr extends StObject
@@ -75,12 +123,16 @@ object fabricStrings {
   inline def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
-  sealed trait setLineDash extends StObject
-  inline def setLineDash: setLineDash = "setLineDash".asInstanceOf[setLineDash]
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait stroke extends StObject
-  inline def stroke: stroke = "stroke".asInstanceOf[stroke]
+  sealed trait rtl extends StObject
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
+  
+  @js.native
+  sealed trait setLineDash extends StObject
+  inline def setLineDash: setLineDash = "setLineDash".asInstanceOf[setLineDash]
   
   @js.native
   sealed trait tl extends StObject
@@ -93,6 +145,10 @@ object fabricStrings {
   @js.native
   sealed trait toDataURLWithQuality extends StObject
   inline def toDataURLWithQuality: toDataURLWithQuality = "toDataURLWithQuality".asInstanceOf[toDataURLWithQuality]
+  
+  @js.native
+  sealed trait top extends StObject
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait tr extends StObject

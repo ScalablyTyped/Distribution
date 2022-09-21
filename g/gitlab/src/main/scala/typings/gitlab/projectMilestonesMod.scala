@@ -10,7 +10,7 @@ object projectMilestonesMod {
   
   @JSImport("gitlab/dist/types/core/services/ProjectMilestones", "ProjectMilestones")
   @js.native
-  class ProjectMilestones protected () extends ResourceMilestones {
+  open class ProjectMilestones protected () extends ResourceMilestones {
     def this(options: BaseServiceOptions) = this()
   }
 }

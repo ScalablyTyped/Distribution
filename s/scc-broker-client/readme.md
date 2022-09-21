@@ -1,7 +1,7 @@
 
 # Scala.js typings for scc-broker-client
 
-Typings are for version 7.0
+Typings are for version 8.0
 
 ## Library description:
 Client for SCC - For SocketCluster horizontal scalability.
@@ -10,10 +10,10 @@ Client for SCC - For SocketCluster horizontal scalability.
 | ------------------ | :-------------: |
 | Full name          | scc-broker-client |
 | Keywords           | socketcluster, cluster, scc, client, horizontal, scalability |
-| # releases         | 6 |
-| # dependents       | 7 |
-| # downloads        | 208876 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2871.6666666666665 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/SocketCluster/scc-broker-client)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "Angle")
 @js.native
-class Angle protected ()
+open class Angle protected ()
   extends typings.babylonjs.legacyMod.Angle {
   /**
     * Creates an Angle object of "radians" radians (float).

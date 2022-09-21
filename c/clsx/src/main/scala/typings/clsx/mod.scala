@@ -1,7 +1,6 @@
 package typings.clsx
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Array
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,14 +11,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(classes: ClassValue*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(classes.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(inputs: ClassValue*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(inputs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
-  @js.native
-  trait ClassArray
-    extends StObject
-       with Array[ClassValue]
+  inline def clsx(inputs: ClassValue*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("clsx")(inputs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
-  type ClassDictionary = StringDictionary[js.Any]
+  type ClassArray = js.Array[ClassValue]
   
-  type ClassValue = js.UndefOr[ClassArray | ClassDictionary | String | Double | Null | Boolean]
+  type ClassDictionary = Record[String, Any]
+  
+  type ClassValue = js.UndefOr[Any | ClassDictionary | String | Double | Null | Boolean]
 }

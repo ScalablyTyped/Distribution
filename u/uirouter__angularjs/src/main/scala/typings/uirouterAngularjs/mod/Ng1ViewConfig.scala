@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/angularjs", "Ng1ViewConfig")
 @js.native
-class Ng1ViewConfig protected ()
+open class Ng1ViewConfig protected ()
   extends typings.uirouterAngularjs.viewsMod.Ng1ViewConfig {
   def this(
     path: js.Array[typings.uirouterCore.mod.PathNode],

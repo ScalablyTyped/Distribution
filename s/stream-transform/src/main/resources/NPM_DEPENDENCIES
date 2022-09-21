@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "stream-transform" : "3.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "stream-transform" : "3.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -25,7 +25,7 @@ trait TableStyleElement extends StObject {
   
   val Interior: typings.activexExcel.Excel.Interior
   
-  val Parent: js.Any
+  val Parent: Any
   
   var StripeSize: Double
 }
@@ -40,7 +40,7 @@ object TableStyleElement {
     Font: Font,
     HasFormat: Boolean,
     Interior: Interior,
-    Parent: js.Any,
+    Parent: Any,
     StripeSize: Double
   ): TableStyleElement = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Borders = Borders.asInstanceOf[js.Any], Clear = js.Any.fromFunction0(Clear), Creator = Creator.asInstanceOf[js.Any], Font = Font.asInstanceOf[js.Any], HasFormat = HasFormat.asInstanceOf[js.Any], Interior = Interior.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], StripeSize = StripeSize.asInstanceOf[js.Any])
@@ -66,7 +66,7 @@ object TableStyleElement {
     
     inline def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setStripeSize(value: Double): Self = StObject.set(x, "StripeSize", value.asInstanceOf[js.Any])
   }

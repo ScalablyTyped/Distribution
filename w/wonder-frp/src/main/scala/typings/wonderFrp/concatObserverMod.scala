@@ -10,12 +10,12 @@ object concatObserverMod {
   
   @JSImport("wonder-frp/dist/commonjs/observer/ConcatObserver", "ConcatObserver")
   @js.native
-  class ConcatObserver protected () extends Observer {
+  open class ConcatObserver protected () extends Observer {
     def this(currentObserver: IObserver, startNextStream: js.Function) = this()
     
-    /* private */ var _startNextStream: js.Any = js.native
+    /* private */ var _startNextStream: Any = js.native
     
-    /* protected */ var currentObserver: js.Any = js.native
+    /* protected */ var currentObserver: Any = js.native
   }
   /* static members */
   object ConcatObserver {

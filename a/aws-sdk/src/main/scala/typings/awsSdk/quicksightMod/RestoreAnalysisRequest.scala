@@ -12,7 +12,7 @@ trait RestoreAnalysisRequest extends StObject {
   var AnalysisId: RestrictiveResourceId
   
   /**
-    * The ID of the AWS account that contains the analysis.
+    * The ID of the Amazon Web Services account that contains the analysis.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
 }

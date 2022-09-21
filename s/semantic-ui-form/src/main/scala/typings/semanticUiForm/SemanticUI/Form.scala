@@ -1,65 +1,11 @@
 package typings.semanticUiForm.SemanticUI
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jquery.JQuery.TriggeredEvent
 import typings.semanticUiForm.JQuery
-import typings.semanticUiForm.SemanticUI.Form.ClassNameSettings
 import typings.semanticUiForm.SemanticUI.Form.ClassNameSettings.Param
-import typings.semanticUiForm.SemanticUI.Form.ErrorSettings
-import typings.semanticUiForm.SemanticUI.Form.Field
 import typings.semanticUiForm.SemanticUI.Form.Fields
-import typings.semanticUiForm.SemanticUI.Form.MetadataSettings
-import typings.semanticUiForm.SemanticUI.Form.PromptSettings
 import typings.semanticUiForm.SemanticUI.Form.Rule
 import typings.semanticUiForm.SemanticUI.Form.Rules
-import typings.semanticUiForm.SemanticUI.Form.SelectorSettings
-import typings.semanticUiForm.SemanticUI.Form.TemplatesSettings
-import typings.semanticUiForm.SemanticUI.Form.TextSettings
-import typings.semanticUiForm.anon.PartialPickImplkeyofImplActive
-import typings.semanticUiForm.anon.PartialPickImplkeyofImplChecked
-import typings.semanticUiForm.anon.PartialPickImplkeyofImplError
-import typings.semanticUiForm.anon.PartialPickImplkeyofImplField
-import typings.semanticUiForm.anon.PartialPickImplkeyofImplUnspecifiedField
-import typings.semanticUiForm.anon.PickImplactive
-import typings.semanticUiForm.anon.PickImplchecked
-import typings.semanticUiForm.anon.PickImplcontain
-import typings.semanticUiForm.anon.PickImplcontainExactly
-import typings.semanticUiForm.anon.PickImplcreditCard
-import typings.semanticUiForm.anon.PickImpldecimal
-import typings.semanticUiForm.anon.PickImpldifferent
-import typings.semanticUiForm.anon.PickImpldisabled
-import typings.semanticUiForm.anon.PickImpldoesntContain
-import typings.semanticUiForm.anon.PickImpldoesntContainExac
-import typings.semanticUiForm.anon.PickImplemail
-import typings.semanticUiForm.anon.PickImplempty
-import typings.semanticUiForm.anon.PickImplerrorError
-import typings.semanticUiForm.anon.PickImplexactCount
-import typings.semanticUiForm.anon.PickImplexactLength
-import typings.semanticUiForm.anon.PickImplfield
-import typings.semanticUiForm.anon.PickImplgroup
-import typings.semanticUiForm.anon.PickImplinput
-import typings.semanticUiForm.anon.PickImplinteger
-import typings.semanticUiForm.anon.PickImplis
-import typings.semanticUiForm.anon.PickImplisExactly
-import typings.semanticUiForm.anon.PickImpllength
-import typings.semanticUiForm.anon.PickImplmatch
-import typings.semanticUiForm.anon.PickImplmaxCount
-import typings.semanticUiForm.anon.PickImplmaxLength
-import typings.semanticUiForm.anon.PickImplmessage
-import typings.semanticUiForm.anon.PickImplminCount
-import typings.semanticUiForm.anon.PickImplminLength
-import typings.semanticUiForm.anon.PickImplnot
-import typings.semanticUiForm.anon.PickImplnotExactly
-import typings.semanticUiForm.anon.PickImplnumber
-import typings.semanticUiForm.anon.PickImplplaceholder
-import typings.semanticUiForm.anon.PickImplpromptPrompt
-import typings.semanticUiForm.anon.PickImplpromptPromptString
-import typings.semanticUiForm.anon.PickImplregExp
-import typings.semanticUiForm.anon.PickImplsubmit
-import typings.semanticUiForm.anon.PickImplunspecifiedField
-import typings.semanticUiForm.anon.PickImplunspecifiedRule
-import typings.semanticUiForm.anon.PickImplurl
-import typings.semanticUiForm.anon.PickImplvisible
 import typings.semanticUiForm.semanticUiFormStrings.`add errors`
 import typings.semanticUiForm.semanticUiFormStrings.`add field`
 import typings.semanticUiForm.semanticUiFormStrings.`add fields`
@@ -71,7 +17,6 @@ import typings.semanticUiForm.semanticUiFormStrings.`get validation`
 import typings.semanticUiForm.semanticUiFormStrings.`get value`
 import typings.semanticUiForm.semanticUiFormStrings.`get values`
 import typings.semanticUiForm.semanticUiFormStrings.`has field`
-import typings.semanticUiForm.semanticUiFormStrings.`inline`
 import typings.semanticUiForm.semanticUiFormStrings.`is valid`
 import typings.semanticUiForm.semanticUiFormStrings.`remove field`
 import typings.semanticUiForm.semanticUiFormStrings.`remove fields`
@@ -80,38 +25,9 @@ import typings.semanticUiForm.semanticUiFormStrings.`remove rules`
 import typings.semanticUiForm.semanticUiFormStrings.`set value`
 import typings.semanticUiForm.semanticUiFormStrings.`set values`
 import typings.semanticUiForm.semanticUiFormStrings.`validate form`
-import typings.semanticUiForm.semanticUiFormStrings.blur
-import typings.semanticUiForm.semanticUiFormStrings.change
-import typings.semanticUiForm.semanticUiFormStrings.className
-import typings.semanticUiForm.semanticUiFormStrings.debug
-import typings.semanticUiForm.semanticUiFormStrings.defaults
-import typings.semanticUiForm.semanticUiFormStrings.delay
 import typings.semanticUiForm.semanticUiFormStrings.destroy
-import typings.semanticUiForm.semanticUiFormStrings.duration
-import typings.semanticUiForm.semanticUiFormStrings.error
-import typings.semanticUiForm.semanticUiFormStrings.fields
-import typings.semanticUiForm.semanticUiFormStrings.keyboardShortcuts
-import typings.semanticUiForm.semanticUiFormStrings.metadata
-import typings.semanticUiForm.semanticUiFormStrings.name
-import typings.semanticUiForm.semanticUiFormStrings.namespace
-import typings.semanticUiForm.semanticUiFormStrings.on
-import typings.semanticUiForm.semanticUiFormStrings.onFailure
-import typings.semanticUiForm.semanticUiFormStrings.onInvalid
-import typings.semanticUiForm.semanticUiFormStrings.onSuccess
-import typings.semanticUiForm.semanticUiFormStrings.onValid
-import typings.semanticUiForm.semanticUiFormStrings.performance
-import typings.semanticUiForm.semanticUiFormStrings.prompt
-import typings.semanticUiForm.semanticUiFormStrings.revalidate
-import typings.semanticUiForm.semanticUiFormStrings.rules
-import typings.semanticUiForm.semanticUiFormStrings.selector
 import typings.semanticUiForm.semanticUiFormStrings.setting
-import typings.semanticUiForm.semanticUiFormStrings.silent
 import typings.semanticUiForm.semanticUiFormStrings.submit
-import typings.semanticUiForm.semanticUiFormStrings.templates
-import typings.semanticUiForm.semanticUiFormStrings.text
-import typings.semanticUiForm.semanticUiFormStrings.transition
-import typings.semanticUiForm.semanticUiFormStrings.verbose
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -159,16 +75,16 @@ trait Form extends StObject {
   /**
     * Returns validation rules for a given jQuery-referenced input field
     */
-  def apply(behavior: `get validation`, element: JQuery): js.Any = js.native
+  def apply(behavior: `get validation`, element: JQuery): Any = js.native
   /**
     * Returns value of element with id
     */
-  def apply(behavior: `get value`, id: String): js.Any = js.native
+  def apply(behavior: `get value`, id: String): Any = js.native
   /**
     * Returns object of element values that match array of ids. If no IDS are passed will return all fields
     */
-  def apply(behavior: `get values`): js.Any = js.native
-  def apply(behavior: `get values`, ids: js.Array[String]): js.Any = js.native
+  def apply(behavior: `get values`): Any = js.native
+  def apply(behavior: `get values`, ids: js.Array[String]): Any = js.native
   /**
     * Returns whether a field exists
     */
@@ -207,90 +123,12 @@ trait Form extends StObject {
   /**
     * Sets key/value pairs from passed values object to matching ids
     */
-  def apply(behavior: `set values`, values: js.Any): JQuery = js.native
+  def apply(behavior: `set values`, values: Any): JQuery = js.native
   /**
     * Validates form and calls onSuccess or onFailure
     */
   def apply(behavior: `validate form`): JQuery = js.native
   def apply(behavior: destroy): JQuery = js.native
-  def apply(behavior: setting, name: `inline`, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: `inline`, value: Unit): Boolean = js.native
-  def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
-  def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
-  def apply(behavior: setting, name: defaults, value: StringDictionary[Field]): JQuery = js.native
-  def apply(behavior: setting, name: defaults, value: Unit): StringDictionary[Field] = js.native
-  def apply(behavior: setting, name: delay, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: delay, value: Unit): Boolean = js.native
-  def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
-  def apply(behavior: setting, name: duration, value: Unit): Double = js.native
-  def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
-  def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def apply(behavior: setting, name: fields, value: StringDictionary[String | js.Array[String] | Field]): JQuery = js.native
-  def apply(behavior: setting, name: fields, value: Unit): StringDictionary[String | js.Array[String] | Field] = js.native
-  def apply(behavior: setting, name: keyboardShortcuts, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: keyboardShortcuts, value: Unit): Boolean = js.native
-  def apply(behavior: setting, name: metadata, value: Unit): MetadataSettings = js.native
-  def apply(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-  def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-  def apply(behavior: setting, name: namespace, value: Unit): String = js.native
-  def apply(behavior: setting, name: name, value: String): JQuery = js.native
-  def apply(behavior: setting, name: name, value: Unit): String = js.native
-  def apply(
-    behavior: setting,
-    name: onFailure,
-    value: js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ js.Any, Unit]
-  ): JQuery = js.native
-  def apply(behavior: setting, name: onFailure, value: Unit): js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ js.Any, Unit] = js.native
-  def apply(behavior: setting, name: onInvalid, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def apply(behavior: setting, name: onInvalid, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def apply(
-    behavior: setting,
-    name: onSuccess,
-    value: js.ThisFunction2[
-      /* this */ JQuery, 
-      /* event */ TriggeredEvent[HTMLElement, js.Any, js.Any, js.Any], 
-      /* fields */ js.Any, 
-      Unit
-    ]
-  ): JQuery = js.native
-  def apply(behavior: setting, name: onSuccess, value: Unit): js.ThisFunction2[
-    /* this */ JQuery, 
-    /* event */ TriggeredEvent[HTMLElement, js.Any, js.Any, js.Any], 
-    /* fields */ js.Any, 
-    Unit
-  ] = js.native
-  def apply(behavior: setting, name: onValid, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def apply(behavior: setting, name: onValid, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def apply(behavior: setting, name: on, value: Unit): submit | blur | change = js.native
-  def apply(behavior: setting, name: on, value: blur): JQuery = js.native
-  def apply(behavior: setting, name: on, value: change): JQuery = js.native
-  def apply(behavior: setting, name: on, value: submit): JQuery = js.native
-  def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
-  def apply(behavior: setting, name: prompt, value: Unit): PromptSettings = js.native
-  def apply(behavior: setting, name: prompt, value: PromptSettings): JQuery = js.native
-  def apply(behavior: setting, name: revalidate, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: revalidate, value: Unit): Boolean = js.native
-  def apply(
-    behavior: setting,
-    name: rules,
-    value: StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ js.Any, Boolean]]
-  ): JQuery = js.native
-  def apply(behavior: setting, name: rules, value: Unit): StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ js.Any, Boolean]] = js.native
-  def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
-  def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
-  def apply(behavior: setting, name: templates, value: Unit): TemplatesSettings = js.native
-  def apply(behavior: setting, name: templates, value: TemplatesSettings): JQuery = js.native
-  def apply(behavior: setting, name: text, value: Unit): TextSettings = js.native
-  def apply(behavior: setting, name: text, value: TextSettings): JQuery = js.native
-  def apply(behavior: setting, name: transition, value: String): JQuery = js.native
-  def apply(behavior: setting, name: transition, value: Unit): String = js.native
-  def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
   def apply(behavior: setting, value: FormSettings): JQuery = js.native
   /**
     * Submits selected form
@@ -298,6 +136,12 @@ trait Form extends StObject {
   def apply(behavior: submit): JQuery = js.native
   def apply(settings: Fields): JQuery = js.native
   def apply(settings: FormSettings): JQuery = js.native
+  def apply[K /* <: /* keyof semantic-ui-form.SemanticUI.FormSettings */ String */](
+    behavior: setting,
+    name: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-form.SemanticUI.FormSettings._Impl[K] */ js.Any
+  ): JQuery = js.native
+  def apply[K /* <: /* keyof semantic-ui-form.SemanticUI.FormSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-form.SemanticUI.FormSettings._Impl[K] */ js.Any = js.native
   
   var settings: FormSettings = js.native
 }
@@ -346,7 +190,35 @@ object Form {
       }
     }
     
-    type Param = (PickImplactive | PickImplplaceholder | PickImpldisabled | PickImplvisible) & PartialPickImplkeyofImplActive
+    /* Rewritten from type alias, can be one of: 
+      - typings.semanticUiForm.anon.PickImplactivePartialPick
+      - typings.semanticUiForm.anon.PickImplplaceholderPartia
+      - typings.semanticUiForm.anon.PickImpldisabledPartialPi
+      - typings.semanticUiForm.anon.PickImplvisiblePartialPic
+    */
+    trait Param extends StObject
+    object Param {
+      
+      inline def PickImplactivePartialPick(active: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplactivePartialPick = {
+        val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplactivePartialPick]
+      }
+      
+      inline def PickImpldisabledPartialPi(disabled: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImpldisabledPartialPi = {
+        val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImpldisabledPartialPi]
+      }
+      
+      inline def PickImplplaceholderPartia(placeholder: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplplaceholderPartia = {
+        val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplplaceholderPartia]
+      }
+      
+      inline def PickImplvisiblePartialPic(visible: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplvisiblePartialPic = {
+        val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplvisiblePartialPic]
+      }
+    }
   }
   type ClassNameSettings = Param
   
@@ -431,7 +303,7 @@ object Form {
       
       inline def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value*))
     }
   }
   
@@ -718,7 +590,168 @@ object Form {
       }
     }
     
-    type Param = (PickImplempty | PickImplchecked | PickImplemail | PickImplurl | PickImplregExp | PickImplinteger | PickImpldecimal | PickImplnumber | PickImplis | PickImplisExactly | PickImplnot | PickImplnotExactly | PickImplcontain | PickImplcontainExactly | PickImpldoesntContain | PickImpldoesntContainExac | PickImplminLength | PickImpllength | PickImplexactLength | PickImplmaxLength | PickImplmatch | PickImpldifferent | PickImplcreditCard | PickImplminCount | PickImplexactCount | PickImplmaxCount) & PartialPickImplkeyofImplChecked
+    /* Rewritten from type alias, can be one of: 
+      - typings.semanticUiForm.anon.PickImplemptyPartialPickI
+      - typings.semanticUiForm.anon.PickImplcheckedPartialPic
+      - typings.semanticUiForm.anon.PickImplemailPartialPickI
+      - typings.semanticUiForm.anon.PickImplurlPartialPickImp
+      - typings.semanticUiForm.anon.PickImplregExpPartialPick
+      - typings.semanticUiForm.anon.PickImplintegerPartialPic
+      - typings.semanticUiForm.anon.PickImpldecimalPartialPic
+      - typings.semanticUiForm.anon.PickImplnumberPartialPick
+      - typings.semanticUiForm.anon.PickImplisPartialPickImpl
+      - typings.semanticUiForm.anon.PickImplisExactlyPartialP
+      - typings.semanticUiForm.anon.PickImplnotPartialPickImp
+      - typings.semanticUiForm.anon.PickImplnotExactlyPartial
+      - typings.semanticUiForm.anon.PickImplcontainPartialPic
+      - typings.semanticUiForm.anon.PickImplcontainExactlyPar
+      - typings.semanticUiForm.anon.PickImpldoesntContainPart
+      - typings.semanticUiForm.anon.PickImpldoesntContainExac
+      - typings.semanticUiForm.anon.PickImplminLengthPartialP
+      - typings.semanticUiForm.anon.PickImpllengthPartialPick
+      - typings.semanticUiForm.anon.PickImplexactLengthPartia
+      - typings.semanticUiForm.anon.PickImplmaxLengthPartialP
+      - typings.semanticUiForm.anon.PickImplmatchPartialPickI
+      - typings.semanticUiForm.anon.PickImpldifferentPartialP
+      - typings.semanticUiForm.anon.PickImplcreditCardPartial
+      - typings.semanticUiForm.anon.PickImplminCountPartialPi
+      - typings.semanticUiForm.anon.PickImplexactCountPartial
+      - typings.semanticUiForm.anon.PickImplmaxCountPartialPi
+    */
+    trait Param extends StObject
+    object Param {
+      
+      inline def PickImplcheckedPartialPic(checked: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplcheckedPartialPic = {
+        val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplcheckedPartialPic]
+      }
+      
+      inline def PickImplcontainExactlyPar(containExactly: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplcontainExactlyPar = {
+        val __obj = js.Dynamic.literal(containExactly = containExactly.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplcontainExactlyPar]
+      }
+      
+      inline def PickImplcontainPartialPic(contain: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplcontainPartialPic = {
+        val __obj = js.Dynamic.literal(contain = contain.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplcontainPartialPic]
+      }
+      
+      inline def PickImplcreditCardPartial(creditCard: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplcreditCardPartial = {
+        val __obj = js.Dynamic.literal(creditCard = creditCard.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplcreditCardPartial]
+      }
+      
+      inline def PickImpldecimalPartialPic(decimal: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImpldecimalPartialPic = {
+        val __obj = js.Dynamic.literal(decimal = decimal.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImpldecimalPartialPic]
+      }
+      
+      inline def PickImpldifferentPartialP(different: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImpldifferentPartialP = {
+        val __obj = js.Dynamic.literal(different = different.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImpldifferentPartialP]
+      }
+      
+      inline def PickImpldoesntContainExac(doesntContainExactly: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImpldoesntContainExac = {
+        val __obj = js.Dynamic.literal(doesntContainExactly = doesntContainExactly.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImpldoesntContainExac]
+      }
+      
+      inline def PickImpldoesntContainPart(doesntContain: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImpldoesntContainPart = {
+        val __obj = js.Dynamic.literal(doesntContain = doesntContain.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImpldoesntContainPart]
+      }
+      
+      inline def PickImplemailPartialPickI(email: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplemailPartialPickI = {
+        val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplemailPartialPickI]
+      }
+      
+      inline def PickImplemptyPartialPickI(empty: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplemptyPartialPickI = {
+        val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplemptyPartialPickI]
+      }
+      
+      inline def PickImplexactCountPartial(exactCount: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplexactCountPartial = {
+        val __obj = js.Dynamic.literal(exactCount = exactCount.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplexactCountPartial]
+      }
+      
+      inline def PickImplexactLengthPartia(exactLength: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplexactLengthPartia = {
+        val __obj = js.Dynamic.literal(exactLength = exactLength.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplexactLengthPartia]
+      }
+      
+      inline def PickImplintegerPartialPic(integer: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplintegerPartialPic = {
+        val __obj = js.Dynamic.literal(integer = integer.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplintegerPartialPic]
+      }
+      
+      inline def PickImplisExactlyPartialP(isExactly: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplisExactlyPartialP = {
+        val __obj = js.Dynamic.literal(isExactly = isExactly.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplisExactlyPartialP]
+      }
+      
+      inline def PickImplisPartialPickImpl(is: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplisPartialPickImpl = {
+        val __obj = js.Dynamic.literal(is = is.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplisPartialPickImpl]
+      }
+      
+      inline def PickImpllengthPartialPick(length: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImpllengthPartialPick = {
+        val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImpllengthPartialPick]
+      }
+      
+      inline def PickImplmatchPartialPickI(`match`: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplmatchPartialPickI = {
+        val __obj = js.Dynamic.literal()
+        __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplmatchPartialPickI]
+      }
+      
+      inline def PickImplmaxCountPartialPi(maxCount: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplmaxCountPartialPi = {
+        val __obj = js.Dynamic.literal(maxCount = maxCount.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplmaxCountPartialPi]
+      }
+      
+      inline def PickImplmaxLengthPartialP(maxLength: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplmaxLengthPartialP = {
+        val __obj = js.Dynamic.literal(maxLength = maxLength.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplmaxLengthPartialP]
+      }
+      
+      inline def PickImplminCountPartialPi(minCount: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplminCountPartialPi = {
+        val __obj = js.Dynamic.literal(minCount = minCount.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplminCountPartialPi]
+      }
+      
+      inline def PickImplminLengthPartialP(minLength: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplminLengthPartialP = {
+        val __obj = js.Dynamic.literal(minLength = minLength.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplminLengthPartialP]
+      }
+      
+      inline def PickImplnotExactlyPartial(notExactly: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplnotExactlyPartial = {
+        val __obj = js.Dynamic.literal(notExactly = notExactly.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplnotExactlyPartial]
+      }
+      
+      inline def PickImplnotPartialPickImp(not: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplnotPartialPickImp = {
+        val __obj = js.Dynamic.literal(not = not.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplnotPartialPickImp]
+      }
+      
+      inline def PickImplnumberPartialPick(number: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplnumberPartialPick = {
+        val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplnumberPartialPick]
+      }
+      
+      inline def PickImplregExpPartialPick(regExp: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplregExpPartialPick = {
+        val __obj = js.Dynamic.literal(regExp = regExp.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplregExpPartialPick]
+      }
+      
+      inline def PickImplurlPartialPickImp(url: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplurlPartialPickImp = {
+        val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplurlPartialPickImp]
+      }
+    }
   }
   type PromptSettings = typings.semanticUiForm.SemanticUI.Form.PromptSettings.Param
   
@@ -759,7 +792,7 @@ object Form {
       
       inline def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value*))
     }
   }
   
@@ -820,7 +853,47 @@ object Form {
       }
     }
     
-    type Param = (PickImplmessage | PickImplfield | PickImplgroup | PickImplinput | PickImplpromptPromptString | PickImplsubmit) & PartialPickImplkeyofImplField
+    /* Rewritten from type alias, can be one of: 
+      - typings.semanticUiForm.anon.PickImplmessagePartialPic
+      - typings.semanticUiForm.anon.PickImplfieldPartialPickI
+      - typings.semanticUiForm.anon.PickImplgroupPartialPickI
+      - typings.semanticUiForm.anon.PickImplinputPartialPickI
+      - typings.semanticUiForm.anon.PickImplpromptPartialPickField
+      - typings.semanticUiForm.anon.PickImplsubmitPartialPick
+    */
+    trait Param extends StObject
+    object Param {
+      
+      inline def PickImplfieldPartialPickI(field: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplfieldPartialPickI = {
+        val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplfieldPartialPickI]
+      }
+      
+      inline def PickImplgroupPartialPickI(group: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplgroupPartialPickI = {
+        val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplgroupPartialPickI]
+      }
+      
+      inline def PickImplinputPartialPickI(input: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplinputPartialPickI = {
+        val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplinputPartialPickI]
+      }
+      
+      inline def PickImplmessagePartialPic(message: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplmessagePartialPic = {
+        val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplmessagePartialPic]
+      }
+      
+      inline def PickImplpromptPartialPickField(prompt: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplpromptPartialPickField = {
+        val __obj = js.Dynamic.literal(prompt = prompt.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplpromptPartialPickField]
+      }
+      
+      inline def PickImplsubmitPartialPick(submit: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplsubmitPartialPick = {
+        val __obj = js.Dynamic.literal(submit = submit.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplsubmitPartialPick]
+      }
+    }
   }
   type SelectorSettings = typings.semanticUiForm.SemanticUI.Form.SelectorSettings.Param
   
@@ -847,7 +920,27 @@ object Form {
       }
     }
     
-    type Param = (PickImplerrorError | PickImplpromptPrompt) & PartialPickImplkeyofImplError
+    /* Rewritten from type alias, can be one of: 
+      - typings.semanticUiForm.anon.PickImplerrorPartialPickIError
+      - typings.semanticUiForm.anon.PickImplpromptPartialPickError
+    */
+    trait Param extends StObject
+    object Param {
+      
+      inline def PickImplerrorPartialPickIError(
+        error: (js.Function1[/* errors */ js.Array[String], JQuery]) & (js.UndefOr[js.Function1[/* errors */ js.Array[String], JQuery]])
+      ): typings.semanticUiForm.anon.PickImplerrorPartialPickIError = {
+        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplerrorPartialPickIError]
+      }
+      
+      inline def PickImplpromptPartialPickError(
+        prompt: (js.Function1[/* errors */ js.Array[String], JQuery]) & (js.UndefOr[js.Function1[/* errors */ js.Array[String], JQuery]])
+      ): typings.semanticUiForm.anon.PickImplpromptPartialPickError = {
+        val __obj = js.Dynamic.literal(prompt = prompt.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplpromptPartialPickError]
+      }
+    }
   }
   type TemplatesSettings = typings.semanticUiForm.SemanticUI.Form.TemplatesSettings.Param
   
@@ -880,7 +973,23 @@ object Form {
       }
     }
     
-    type Param = (PickImplunspecifiedRule | PickImplunspecifiedField) & PartialPickImplkeyofImplUnspecifiedField
+    /* Rewritten from type alias, can be one of: 
+      - typings.semanticUiForm.anon.PickImplunspecifiedRulePa
+      - typings.semanticUiForm.anon.PickImplunspecifiedFieldP
+    */
+    trait Param extends StObject
+    object Param {
+      
+      inline def PickImplunspecifiedFieldP(unspecifiedField: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplunspecifiedFieldP = {
+        val __obj = js.Dynamic.literal(unspecifiedField = unspecifiedField.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplunspecifiedFieldP]
+      }
+      
+      inline def PickImplunspecifiedRulePa(unspecifiedRule: String & js.UndefOr[String]): typings.semanticUiForm.anon.PickImplunspecifiedRulePa = {
+        val __obj = js.Dynamic.literal(unspecifiedRule = unspecifiedRule.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiForm.anon.PickImplunspecifiedRulePa]
+      }
+    }
   }
   type TextSettings = typings.semanticUiForm.SemanticUI.Form.TextSettings.Param
 }

@@ -9,7 +9,7 @@ object selectGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/select_gpu", "SelectProgram")
   @js.native
-  class SelectProgram protected ()
+  open class SelectProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(cRank: Double, shape: js.Array[Double], rank: Double) = this()

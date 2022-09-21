@@ -80,11 +80,11 @@ object mod {
       
       inline def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
       
-      inline def setTransitionsVarargs(value: Transition*): Self = StObject.set(x, "transitions", js.Array(value :_*))
+      inline def setTransitionsVarargs(value: Transition*): Self = StObject.set(x, "transitions", js.Array(value*))
       
       inline def setVideos(value: js.Array[String]): Self = StObject.set(x, "videos", value.asInstanceOf[js.Any])
       
-      inline def setVideosVarargs(value: String*): Self = StObject.set(x, "videos", js.Array(value :_*))
+      inline def setVideosVarargs(value: String*): Self = StObject.set(x, "videos", js.Array(value*))
     }
   }
   
@@ -94,7 +94,7 @@ object mod {
     
     var name: String
     
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
   }
   object Transition {
     
@@ -109,7 +109,7 @@ object mod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     }

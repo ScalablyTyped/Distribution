@@ -14,7 +14,7 @@ trait ListAuditMitigationActionsTasksRequest extends StObject {
   /**
     * Specify this filter to limit results to tasks that were completed or canceled on or before a specific date and time.
     */
-  var endTime: Timestamp
+  var endTime: js.Date
   
   /**
     * Specify this filter to limit results to tasks that were applied to a specific audit finding.
@@ -34,7 +34,7 @@ trait ListAuditMitigationActionsTasksRequest extends StObject {
   /**
     * Specify this filter to limit results to tasks that began on or after a specific date and time.
     */
-  var startTime: Timestamp
+  var startTime: js.Date
   
   /**
     * Specify this filter to limit results to tasks that are in a specific state.
@@ -43,7 +43,7 @@ trait ListAuditMitigationActionsTasksRequest extends StObject {
 }
 object ListAuditMitigationActionsTasksRequest {
   
-  inline def apply(endTime: Timestamp, startTime: Timestamp): ListAuditMitigationActionsTasksRequest = {
+  inline def apply(endTime: js.Date, startTime: js.Date): ListAuditMitigationActionsTasksRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAuditMitigationActionsTasksRequest]
   }
@@ -54,7 +54,7 @@ object ListAuditMitigationActionsTasksRequest {
     
     inline def setAuditTaskIdUndefined: Self = StObject.set(x, "auditTaskId", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setFindingId(value: FindingId): Self = StObject.set(x, "findingId", value.asInstanceOf[js.Any])
     
@@ -68,7 +68,7 @@ object ListAuditMitigationActionsTasksRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setTaskStatus(value: AuditMitigationActionsTaskStatus): Self = StObject.set(x, "taskStatus", value.asInstanceOf[js.Any])
     

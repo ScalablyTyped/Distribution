@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "Octree")
 @js.native
-class Octree[T] protected ()
+open class Octree[T] protected ()
   extends typings.babylonjs.legacyMod.Octree[T] {
   /**
     * Creates a octree
     * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
-    * @param creationFunc function to be used to instatiate the octree
+    * @param creationFunc function to be used to instantiate the octree
     * @param maxBlockCapacity defines the maximum number of meshes you want on your octree's leaves (default: 64)
     * @param maxDepth defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.)
     */
@@ -42,6 +42,8 @@ object Octree {
   
   /**
     * Adds a mesh into the octree block if it intersects the block
+    * @param entry
+    * @param block
     */
   inline def CreationFuncForMeshes(
     entry: typings.babylonjs.abstractMeshMod.AbstractMesh,
@@ -50,6 +52,8 @@ object Octree {
   
   /**
     * Adds a submesh into the octree block if it intersects the block
+    * @param entry
+    * @param block
     */
   inline def CreationFuncForSubMeshes(
     entry: typings.babylonjs.subMeshMod.SubMesh,

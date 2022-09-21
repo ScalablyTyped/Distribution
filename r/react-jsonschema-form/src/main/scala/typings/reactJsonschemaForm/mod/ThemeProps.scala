@@ -1,8 +1,8 @@
 package typings.reactJsonschemaForm.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.StatelessComponent
-import typings.std.RegExp
+import typings.react.mod.FunctionComponent
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Omit<react-jsonschema-form.react-jsonschema-form.FormProps<T>, 'schema'> */
 trait ThemeProps[T] extends StObject {
   
-  var ArrayFieldTemplate: js.UndefOr[StatelessComponent[ArrayFieldTemplateProps[js.Any]]] = js.undefined
+  var ArrayFieldTemplate: js.UndefOr[FunctionComponent[ArrayFieldTemplateProps[Any]]] = js.undefined
   
-  var ErrorList: js.UndefOr[StatelessComponent[ErrorListProps]] = js.undefined
+  var ErrorList: js.UndefOr[FunctionComponent[ErrorListProps]] = js.undefined
   
-  var FieldTemplate: js.UndefOr[StatelessComponent[FieldTemplateProps]] = js.undefined
+  var FieldTemplate: js.UndefOr[FunctionComponent[FieldTemplateProps]] = js.undefined
   
-  var ObjectFieldTemplate: js.UndefOr[StatelessComponent[ObjectFieldTemplateProps[js.Any]]] = js.undefined
+  var ObjectFieldTemplate: js.UndefOr[FunctionComponent[ObjectFieldTemplateProps[Any]]] = js.undefined
   
   var acceptcharset: js.UndefOr[String] = js.undefined
   
@@ -24,11 +24,17 @@ trait ThemeProps[T] extends StObject {
   
   var additionalMetaSchemas: js.UndefOr[js.Array[js.Object]] = js.undefined
   
+  var autoComplete: js.UndefOr[String] = js.undefined
+  
   var autocomplete: js.UndefOr[String] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
-  var customFormats: js.UndefOr[StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]] = js.undefined
+  var customFormats: js.UndefOr[
+    StringDictionary[String | js.RegExp | (js.Function1[/* data */ String, Boolean])]
+  ] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -36,7 +42,7 @@ trait ThemeProps[T] extends StObject {
   
   var fields: js.UndefOr[StringDictionary[Field]] = js.undefined
   
-  var formContext: js.UndefOr[js.Any] = js.undefined
+  var formContext: js.UndefOr[Any] = js.undefined
   
   var formData: js.UndefOr[T] = js.undefined
   
@@ -62,22 +68,22 @@ trait ThemeProps[T] extends StObject {
     js.Function2[/* id */ String, /* value */ Boolean | Double | String | Null, Unit]
   ] = js.undefined
   
-  var onChange: js.UndefOr[js.Function2[/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema], js.Any]] = js.undefined
+  var onChange: js.UndefOr[js.Function2[/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema], Any]] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
   var onFocus: js.UndefOr[
     js.Function2[/* id */ String, /* value */ Boolean | Double | String | Null, Unit]
   ] = js.undefined
   
-  var onSubmit: js.UndefOr[js.Function1[/* e */ ISubmitEvent[T], js.Any]] = js.undefined
+  var onSubmit: js.UndefOr[js.Function1[/* e */ ISubmitEvent[T], Any]] = js.undefined
   
   var safeRenderCompletion: js.UndefOr[Boolean] = js.undefined
   
   var showErrorList: js.UndefOr[Boolean] = js.undefined
   
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
   ] = js.undefined
   
   var target: js.UndefOr[String] = js.undefined
@@ -111,21 +117,25 @@ object ThemeProps {
     
     inline def setAdditionalMetaSchemasUndefined: Self = StObject.set(x, "additionalMetaSchemas", js.undefined)
     
-    inline def setAdditionalMetaSchemasVarargs(value: js.Object*): Self = StObject.set(x, "additionalMetaSchemas", js.Array(value :_*))
+    inline def setAdditionalMetaSchemasVarargs(value: js.Object*): Self = StObject.set(x, "additionalMetaSchemas", js.Array(value*))
     
-    inline def setArrayFieldTemplate(value: StatelessComponent[ArrayFieldTemplateProps[js.Any]]): Self = StObject.set(x, "ArrayFieldTemplate", value.asInstanceOf[js.Any])
+    inline def setArrayFieldTemplate(value: FunctionComponent[ArrayFieldTemplateProps[Any]]): Self = StObject.set(x, "ArrayFieldTemplate", value.asInstanceOf[js.Any])
     
     inline def setArrayFieldTemplateUndefined: Self = StObject.set(x, "ArrayFieldTemplate", js.undefined)
     
-    inline def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
+    inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
-    inline def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
+    inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setCustomFormats(value: StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
+    inline def setCustomFormats(value: StringDictionary[String | js.RegExp | (js.Function1[/* data */ String, Boolean])]): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
     
     inline def setCustomFormatsUndefined: Self = StObject.set(x, "customFormats", js.undefined)
     
@@ -137,11 +147,11 @@ object ThemeProps {
     
     inline def setEnctypeUndefined: Self = StObject.set(x, "enctype", js.undefined)
     
-    inline def setErrorList(value: StatelessComponent[ErrorListProps]): Self = StObject.set(x, "ErrorList", value.asInstanceOf[js.Any])
+    inline def setErrorList(value: FunctionComponent[ErrorListProps]): Self = StObject.set(x, "ErrorList", value.asInstanceOf[js.Any])
     
     inline def setErrorListUndefined: Self = StObject.set(x, "ErrorList", js.undefined)
     
-    inline def setFieldTemplate(value: StatelessComponent[FieldTemplateProps]): Self = StObject.set(x, "FieldTemplate", value.asInstanceOf[js.Any])
+    inline def setFieldTemplate(value: FunctionComponent[FieldTemplateProps]): Self = StObject.set(x, "FieldTemplate", value.asInstanceOf[js.Any])
     
     inline def setFieldTemplateUndefined: Self = StObject.set(x, "FieldTemplate", js.undefined)
     
@@ -149,7 +159,7 @@ object ThemeProps {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
+    inline def setFormContext(value: Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
     
     inline def setFormContextUndefined: Self = StObject.set(x, "formContext", js.undefined)
     
@@ -189,7 +199,7 @@ object ThemeProps {
     
     inline def setNoValidateUndefined: Self = StObject.set(x, "noValidate", js.undefined)
     
-    inline def setObjectFieldTemplate(value: StatelessComponent[ObjectFieldTemplateProps[js.Any]]): Self = StObject.set(x, "ObjectFieldTemplate", value.asInstanceOf[js.Any])
+    inline def setObjectFieldTemplate(value: FunctionComponent[ObjectFieldTemplateProps[Any]]): Self = StObject.set(x, "ObjectFieldTemplate", value.asInstanceOf[js.Any])
     
     inline def setObjectFieldTemplateUndefined: Self = StObject.set(x, "ObjectFieldTemplate", js.undefined)
     
@@ -201,11 +211,11 @@ object ThemeProps {
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    inline def setOnChange(value: (/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema]) => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+    inline def setOnChange(value: (/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema]) => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnError(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* e */ Any => Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
@@ -213,7 +223,7 @@ object ThemeProps {
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
-    inline def setOnSubmit(value: /* e */ ISubmitEvent[T] => js.Any): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+    inline def setOnSubmit(value: /* e */ ISubmitEvent[T] => Any): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
     
     inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
     
@@ -225,7 +235,7 @@ object ThemeProps {
     
     inline def setShowErrorListUndefined: Self = StObject.set(x, "showErrorList", js.undefined)
     
-    inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ js.Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     

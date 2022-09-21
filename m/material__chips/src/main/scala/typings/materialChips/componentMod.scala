@@ -1,47 +1,73 @@
 package typings.materialChips
 
+import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
-import typings.materialChips.chipComponentMod.MDCChip
-import typings.materialChips.chipComponentMod.MDCChipFactory
-import typings.materialChips.foundationMod.MDCChipSetFoundation
-import typings.std.Element
+import typings.materialChips.constantsMod.MDCChipActionFocusBehavior
+import typings.materialChips.constantsMod.MDCChipActionType
+import typings.materialChips.foundationMod.MDCChipActionFoundation
+import typings.materialRipple.componentMod.MDCRipple
+import typings.materialRipple.componentMod.MDCRippleFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
   
-  @JSImport("@material/chips/chip-set/component", "MDCChipSet")
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @JSImport("@material/chips/action/component", "MDCChipAction")
   @js.native
-  class MDCChipSet protected () extends MDCComponent[MDCChipSetFoundation] {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: MDCChipSetFoundation, args: js.Any*) = this()
+  open class MDCChipAction protected () extends MDCComponent[MDCChipActionFoundation] {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCChipActionFoundation, args: Any*) = this()
     
-    /**
-      * Adds a new chip object to the chip set from the given chip element.
-      */
-    def addChip(chipEl: Element): Unit = js.native
+    def actionType(): MDCChipActionType = js.native
     
-    def chips: js.Array[MDCChip] = js.native
+    /* private */ var computeRippleClientRect: Any = js.native
     
-    /**
-      * @param chipFactory A function which creates a new MDCChip.
-      */
+    var disabled: js.UndefOr[Boolean] = js.native
+    
+    /* private */ var handleClick: Any = js.native
+    
+    /* private */ var handleKeydown: Any = js.native
+    
     def initialize(): Unit = js.native
-    def initialize(chipFactory: MDCChipFactory): Unit = js.native
+    def initialize(rippleFactory: MDCRippleFactory): Unit = js.native
     
-    /**
-      * @return An array of the IDs of all selected chips.
-      */
-    def selectedChipIds: js.Array[String] = js.native
+    def isDisabled(): Boolean = js.native
+    
+    def isFocusable(): Boolean = js.native
+    
+    def isSelectable(): Boolean = js.native
+    
+    def isSelected(): Boolean = js.native
+    
+    def ripple: MDCRipple = js.native
+    
+    /* private */ var rippleInstance: Any = js.native
+    
+    /* private */ val rootHTML: Any = js.native
+    
+    def setDisabled(isDisabled: Boolean): Unit = js.native
+    
+    def setFocus(behavior: MDCChipActionFocusBehavior): Unit = js.native
+    
+    def setSelected(isSelected: Boolean): Unit = js.native
+    
+    var unbounded: js.UndefOr[Boolean] = js.native
   }
   /* static members */
-  object MDCChipSet {
+  object MDCChipAction {
     
-    @JSImport("@material/chips/chip-set/component", "MDCChipSet")
+    @JSImport("@material/chips/action/component", "MDCChipAction")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): MDCChipSet = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCChipSet]
+    inline def attachTo(root: typings.std.Element): MDCChipAction = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCChipAction]
   }
+  
+  type MDCChipActionFactory = js.Function2[
+    /* el */ typings.std.Element, 
+    /* foundation */ js.UndefOr[MDCChipActionFoundation], 
+    MDCChipAction
+  ]
 }

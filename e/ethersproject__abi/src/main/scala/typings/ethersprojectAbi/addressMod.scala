@@ -10,7 +10,7 @@ object addressMod {
   
   @JSImport("@ethersproject/abi/lib/coders/address", "AddressCoder")
   @js.native
-  class AddressCoder protected () extends Coder {
+  open class AddressCoder protected () extends Coder {
     def this(localName: String) = this()
     
     def encode(writer: Writer, value: String): Double = js.native

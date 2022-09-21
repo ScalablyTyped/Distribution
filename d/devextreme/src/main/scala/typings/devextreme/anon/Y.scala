@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Y extends StObject {
   
+  /**
+    * Specifies the horizontal cursor offset from the dragged row in pixels.
+    */
   var x: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the vertical cursor offset from the dragged row in pixels.
+    */
   var y: js.UndefOr[Double] = js.undefined
 }
 object Y {

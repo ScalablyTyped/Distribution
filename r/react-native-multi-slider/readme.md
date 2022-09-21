@@ -11,9 +11,9 @@ Pure JS slider component with multiple markers for React Native
 | Full name          | react-native-multi-slider |
 | Keywords           | react-component, react, native, slider, multiple, react-native, component, iOS |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 15814 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 5837.0 |
+| # stars            | 149.0 |
 
 ## Links
 - [Homepage](https://github.com/JackDanielsAndCode/react-native-multi-slider#readme)

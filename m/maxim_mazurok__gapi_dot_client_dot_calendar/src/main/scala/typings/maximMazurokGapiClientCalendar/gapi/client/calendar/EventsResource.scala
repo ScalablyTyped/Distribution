@@ -25,7 +25,7 @@ trait EventsResource extends StObject {
   def delete(): Request[Unit] = js.native
   def delete(request: EventId): Request[Unit] = js.native
   
-  /** Returns an event. */
+  /** Returns an event based on its Google Calendar ID. To retrieve an event using its iCalendar ID, call the events.list method using the iCalUID parameter. */
   def get(): Request[Event] = js.native
   def get(request: AlwaysIncludeEmail): Request[Event] = js.native
   

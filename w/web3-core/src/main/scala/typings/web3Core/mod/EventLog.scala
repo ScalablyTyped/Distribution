@@ -19,7 +19,7 @@ trait EventLog extends StObject {
   
   var raw: js.UndefOr[Data] = js.undefined
   
-  var returnValues: js.Any
+  var returnValues: Any
   
   var transactionHash: String
   
@@ -33,7 +33,7 @@ object EventLog {
     blockNumber: Double,
     event: String,
     logIndex: Double,
-    returnValues: js.Any,
+    returnValues: Any,
     transactionHash: String,
     transactionIndex: Double
   ): EventLog = {
@@ -57,7 +57,7 @@ object EventLog {
     
     inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    inline def setReturnValues(value: js.Any): Self = StObject.set(x, "returnValues", value.asInstanceOf[js.Any])
+    inline def setReturnValues(value: Any): Self = StObject.set(x, "returnValues", value.asInstanceOf[js.Any])
     
     inline def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
     

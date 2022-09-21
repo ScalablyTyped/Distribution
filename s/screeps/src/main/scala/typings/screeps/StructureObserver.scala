@@ -11,7 +11,7 @@ trait StructureObserver
   extends StObject
      with OwnedStructure[STRUCTURE_OBSERVER]
      with AnyOwnedStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * Provide visibility into a distant room from your script. The target room object will be available on the next tick. The maximum range is 5 rooms.

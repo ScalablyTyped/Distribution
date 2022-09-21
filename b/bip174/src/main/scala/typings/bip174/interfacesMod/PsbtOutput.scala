@@ -23,6 +23,6 @@ object PsbtOutput {
     
     inline def setUnknownKeyValsUndefined: Self = StObject.set(x, "unknownKeyVals", js.undefined)
     
-    inline def setUnknownKeyValsVarargs(value: KeyValue*): Self = StObject.set(x, "unknownKeyVals", js.Array(value :_*))
+    inline def setUnknownKeyValsVarargs(value: KeyValue*): Self = StObject.set(x, "unknownKeyVals", js.Array(value*))
   }
 }

@@ -10,7 +10,7 @@ object normalBlendBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/normalBlendBlock", "NormalBlendBlock")
   @js.native
-  class NormalBlendBlock protected () extends NodeMaterialBlock {
+  open class NormalBlendBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new NormalBlendBlock
       * @param name defines the block name

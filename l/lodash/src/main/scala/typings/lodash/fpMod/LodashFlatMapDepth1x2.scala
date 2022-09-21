@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LodashFlatMapDepth1x2 extends StObject {
   
   def apply(iteratee: String): LodashFlatMapDepth3x3 = js.native
-  def apply(iteratee: String, collection: js.Object): js.Array[js.Any] = js.native
+  def apply(iteratee: String, collection: js.Object): js.Array[Any] = js.native
   def apply(iteratee: js.Object): LodashFlatMapDepth4x3 = js.native
   def apply(iteratee: js.Object, collection: js.Object): js.Array[Boolean] = js.native
   def apply(iteratee: __): LodashFlatMapDepth3x6 = js.native

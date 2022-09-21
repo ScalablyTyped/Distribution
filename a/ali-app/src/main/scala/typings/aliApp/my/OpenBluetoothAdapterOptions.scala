@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region API https://docs.alipay.com/mini/api/bluetooth-api
 trait OpenBluetoothAdapterOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /** 不传的话默认是true，表示是否在离开当前页面时自动断开蓝牙(仅对android有效) */
   var autoClose: Boolean

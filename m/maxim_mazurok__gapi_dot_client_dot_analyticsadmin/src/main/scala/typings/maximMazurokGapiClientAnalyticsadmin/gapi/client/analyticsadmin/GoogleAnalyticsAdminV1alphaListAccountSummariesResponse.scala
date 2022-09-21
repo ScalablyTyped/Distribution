@@ -25,7 +25,7 @@ object GoogleAnalyticsAdminV1alphaListAccountSummariesResponse {
     
     inline def setAccountSummariesUndefined: Self = StObject.set(x, "accountSummaries", js.undefined)
     
-    inline def setAccountSummariesVarargs(value: GoogleAnalyticsAdminV1alphaAccountSummary*): Self = StObject.set(x, "accountSummaries", js.Array(value :_*))
+    inline def setAccountSummariesVarargs(value: GoogleAnalyticsAdminV1alphaAccountSummary*): Self = StObject.set(x, "accountSummaries", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,7 @@ object ListCryptoKeysResponse {
     
     inline def setCryptoKeysUndefined: Self = StObject.set(x, "cryptoKeys", js.undefined)
     
-    inline def setCryptoKeysVarargs(value: CryptoKey*): Self = StObject.set(x, "cryptoKeys", js.Array(value :_*))
+    inline def setCryptoKeysVarargs(value: CryptoKey*): Self = StObject.set(x, "cryptoKeys", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

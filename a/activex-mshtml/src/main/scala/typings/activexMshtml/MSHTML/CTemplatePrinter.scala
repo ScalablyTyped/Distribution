@@ -19,7 +19,7 @@ trait CTemplatePrinter extends StObject {
   
   var currentPageAvail: Boolean
   
-  def deviceSupports(bstrProperty: String): js.Any
+  def deviceSupports(bstrProperty: String): Any
   
   val duplex: Boolean
   
@@ -35,21 +35,21 @@ trait CTemplatePrinter extends StObject {
   
   var framesetDocument: Boolean
   
-  def getPageMarginBottom(pageRule: js.Any, pageWidth: Double, pageHeight: Double): js.Any
+  def getPageMarginBottom(pageRule: Any, pageWidth: Double, pageHeight: Double): Any
   
-  def getPageMarginBottomImportant(pageRule: js.Any): Boolean
+  def getPageMarginBottomImportant(pageRule: Any): Boolean
   
-  def getPageMarginLeft(pageRule: js.Any, pageWidth: Double, pageHeight: Double): js.Any
+  def getPageMarginLeft(pageRule: Any, pageWidth: Double, pageHeight: Double): Any
   
-  def getPageMarginLeftImportant(pageRule: js.Any): Boolean
+  def getPageMarginLeftImportant(pageRule: Any): Boolean
   
-  def getPageMarginRight(pageRule: js.Any, pageWidth: Double, pageHeight: Double): js.Any
+  def getPageMarginRight(pageRule: Any, pageWidth: Double, pageHeight: Double): Any
   
-  def getPageMarginRightImportant(pageRule: js.Any): Boolean
+  def getPageMarginRightImportant(pageRule: Any): Boolean
   
-  def getPageMarginTop(pageRule: js.Any, pageWidth: Double, pageHeight: Double): js.Any
+  def getPageMarginTop(pageRule: Any, pageWidth: Double, pageHeight: Double): Any
   
-  def getPageMarginTopImportant(pageRule: js.Any): Boolean
+  def getPageMarginTopImportant(pageRule: Any): Boolean
   
   var header: String
   
@@ -75,11 +75,11 @@ trait CTemplatePrinter extends StObject {
   
   def printBlankPage(): Unit
   
-  def printNonNative(pMarkup: js.Any): Boolean
+  def printNonNative(pMarkup: Any): Boolean
   
-  def printNonNativeFrames(pMarkup: js.Any, fActiveFrame: Boolean): Unit
+  def printNonNativeFrames(pMarkup: Any, fActiveFrame: Boolean): Unit
   
-  def printPage(pElemDisp: js.Any): Unit
+  def printPage(pElemDisp: Any): Unit
   
   var selectedPages: Boolean
   
@@ -118,7 +118,7 @@ object CTemplatePrinter {
     copies: Double,
     currentPage: Boolean,
     currentPageAvail: Boolean,
-    deviceSupports: String => js.Any,
+    deviceSupports: String => Any,
     duplex: Boolean,
     ensurePrintDialogDefaults: () => Boolean,
     footer: String,
@@ -126,14 +126,14 @@ object CTemplatePrinter {
     frameActiveEnabled: Boolean,
     frameAsShown: Boolean,
     framesetDocument: Boolean,
-    getPageMarginBottom: (js.Any, Double, Double) => js.Any,
-    getPageMarginBottomImportant: js.Any => Boolean,
-    getPageMarginLeft: (js.Any, Double, Double) => js.Any,
-    getPageMarginLeftImportant: js.Any => Boolean,
-    getPageMarginRight: (js.Any, Double, Double) => js.Any,
-    getPageMarginRightImportant: js.Any => Boolean,
-    getPageMarginTop: (js.Any, Double, Double) => js.Any,
-    getPageMarginTopImportant: js.Any => Boolean,
+    getPageMarginBottom: (Any, Double, Double) => Any,
+    getPageMarginBottomImportant: Any => Boolean,
+    getPageMarginLeft: (Any, Double, Double) => Any,
+    getPageMarginLeftImportant: Any => Boolean,
+    getPageMarginRight: (Any, Double, Double) => Any,
+    getPageMarginRightImportant: Any => Boolean,
+    getPageMarginTop: (Any, Double, Double) => Any,
+    getPageMarginTopImportant: Any => Boolean,
     header: String,
     headerFooterFont: String,
     marginBottom: Double,
@@ -146,9 +146,9 @@ object CTemplatePrinter {
     pageTo: Double,
     pageWidth: Double,
     printBlankPage: () => Unit,
-    printNonNative: js.Any => Boolean,
-    printNonNativeFrames: (js.Any, Boolean) => Unit,
-    printPage: js.Any => Unit,
+    printNonNative: Any => Boolean,
+    printNonNativeFrames: (Any, Boolean) => Unit,
+    printPage: Any => Unit,
     selectedPages: Boolean,
     selection: Boolean,
     selectionEnabled: Boolean,
@@ -181,7 +181,7 @@ object CTemplatePrinter {
     
     inline def setCurrentPageAvail(value: Boolean): Self = StObject.set(x, "currentPageAvail", value.asInstanceOf[js.Any])
     
-    inline def setDeviceSupports(value: String => js.Any): Self = StObject.set(x, "deviceSupports", js.Any.fromFunction1(value))
+    inline def setDeviceSupports(value: String => Any): Self = StObject.set(x, "deviceSupports", js.Any.fromFunction1(value))
     
     inline def setDuplex(value: Boolean): Self = StObject.set(x, "duplex", value.asInstanceOf[js.Any])
     
@@ -197,21 +197,21 @@ object CTemplatePrinter {
     
     inline def setFramesetDocument(value: Boolean): Self = StObject.set(x, "framesetDocument", value.asInstanceOf[js.Any])
     
-    inline def setGetPageMarginBottom(value: (js.Any, Double, Double) => js.Any): Self = StObject.set(x, "getPageMarginBottom", js.Any.fromFunction3(value))
+    inline def setGetPageMarginBottom(value: (Any, Double, Double) => Any): Self = StObject.set(x, "getPageMarginBottom", js.Any.fromFunction3(value))
     
-    inline def setGetPageMarginBottomImportant(value: js.Any => Boolean): Self = StObject.set(x, "getPageMarginBottomImportant", js.Any.fromFunction1(value))
+    inline def setGetPageMarginBottomImportant(value: Any => Boolean): Self = StObject.set(x, "getPageMarginBottomImportant", js.Any.fromFunction1(value))
     
-    inline def setGetPageMarginLeft(value: (js.Any, Double, Double) => js.Any): Self = StObject.set(x, "getPageMarginLeft", js.Any.fromFunction3(value))
+    inline def setGetPageMarginLeft(value: (Any, Double, Double) => Any): Self = StObject.set(x, "getPageMarginLeft", js.Any.fromFunction3(value))
     
-    inline def setGetPageMarginLeftImportant(value: js.Any => Boolean): Self = StObject.set(x, "getPageMarginLeftImportant", js.Any.fromFunction1(value))
+    inline def setGetPageMarginLeftImportant(value: Any => Boolean): Self = StObject.set(x, "getPageMarginLeftImportant", js.Any.fromFunction1(value))
     
-    inline def setGetPageMarginRight(value: (js.Any, Double, Double) => js.Any): Self = StObject.set(x, "getPageMarginRight", js.Any.fromFunction3(value))
+    inline def setGetPageMarginRight(value: (Any, Double, Double) => Any): Self = StObject.set(x, "getPageMarginRight", js.Any.fromFunction3(value))
     
-    inline def setGetPageMarginRightImportant(value: js.Any => Boolean): Self = StObject.set(x, "getPageMarginRightImportant", js.Any.fromFunction1(value))
+    inline def setGetPageMarginRightImportant(value: Any => Boolean): Self = StObject.set(x, "getPageMarginRightImportant", js.Any.fromFunction1(value))
     
-    inline def setGetPageMarginTop(value: (js.Any, Double, Double) => js.Any): Self = StObject.set(x, "getPageMarginTop", js.Any.fromFunction3(value))
+    inline def setGetPageMarginTop(value: (Any, Double, Double) => Any): Self = StObject.set(x, "getPageMarginTop", js.Any.fromFunction3(value))
     
-    inline def setGetPageMarginTopImportant(value: js.Any => Boolean): Self = StObject.set(x, "getPageMarginTopImportant", js.Any.fromFunction1(value))
+    inline def setGetPageMarginTopImportant(value: Any => Boolean): Self = StObject.set(x, "getPageMarginTopImportant", js.Any.fromFunction1(value))
     
     inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
@@ -239,11 +239,11 @@ object CTemplatePrinter {
     
     inline def setPrintBlankPage(value: () => Unit): Self = StObject.set(x, "printBlankPage", js.Any.fromFunction0(value))
     
-    inline def setPrintNonNative(value: js.Any => Boolean): Self = StObject.set(x, "printNonNative", js.Any.fromFunction1(value))
+    inline def setPrintNonNative(value: Any => Boolean): Self = StObject.set(x, "printNonNative", js.Any.fromFunction1(value))
     
-    inline def setPrintNonNativeFrames(value: (js.Any, Boolean) => Unit): Self = StObject.set(x, "printNonNativeFrames", js.Any.fromFunction2(value))
+    inline def setPrintNonNativeFrames(value: (Any, Boolean) => Unit): Self = StObject.set(x, "printNonNativeFrames", js.Any.fromFunction2(value))
     
-    inline def setPrintPage(value: js.Any => Unit): Self = StObject.set(x, "printPage", js.Any.fromFunction1(value))
+    inline def setPrintPage(value: Any => Unit): Self = StObject.set(x, "printPage", js.Any.fromFunction1(value))
     
     inline def setSelectedPages(value: Boolean): Self = StObject.set(x, "selectedPages", value.asInstanceOf[js.Any])
     

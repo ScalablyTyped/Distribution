@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "SSAO2RenderingPipeline")
 @js.native
-class SSAO2RenderingPipeline protected ()
+open class SSAO2RenderingPipeline protected ()
   extends typings.babylonjs.postProcessesIndexMod.SSAO2RenderingPipeline {
   /**
     * @constructor
@@ -15,27 +15,60 @@ class SSAO2RenderingPipeline protected ()
     * @param ratio The size of the postprocesses. Can be a number shared between passes or an object for more precision: { ssaoRatio: 0.5, blurRatio: 1.0 }
     * @param cameras The array of cameras that the rendering pipeline will be attached to
     * @param forceGeometryBuffer Set to true if you want to use the legacy geometry buffer renderer
+    * @param textureType The texture type used by the different post processes created by SSAO (default: Constants.TEXTURETYPE_UNSIGNED_INT)
     */
-  def this(name: String, scene: typings.babylonjs.sceneMod.Scene, ratio: js.Any) = this()
+  def this(name: String, scene: typings.babylonjs.sceneMod.Scene, ratio: Any) = this()
   def this(
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
-    ratio: js.Any,
+    ratio: Any,
     cameras: js.Array[typings.babylonjs.cameraMod.Camera]
   ) = this()
   def this(
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
-    ratio: js.Any,
+    ratio: Any,
     cameras: js.Array[typings.babylonjs.cameraMod.Camera],
     forceGeometryBuffer: Boolean
   ) = this()
   def this(
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
-    ratio: js.Any,
+    ratio: Any,
     cameras: Unit,
     forceGeometryBuffer: Boolean
+  ) = this()
+  def this(
+    name: String,
+    scene: typings.babylonjs.sceneMod.Scene,
+    ratio: Any,
+    cameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    forceGeometryBuffer: Boolean,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    scene: typings.babylonjs.sceneMod.Scene,
+    ratio: Any,
+    cameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    forceGeometryBuffer: Unit,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    scene: typings.babylonjs.sceneMod.Scene,
+    ratio: Any,
+    cameras: Unit,
+    forceGeometryBuffer: Boolean,
+    textureType: Double
+  ) = this()
+  def this(
+    name: String,
+    scene: typings.babylonjs.sceneMod.Scene,
+    ratio: Any,
+    cameras: Unit,
+    forceGeometryBuffer: Unit,
+    textureType: Double
   ) = this()
 }
 /* static members */
@@ -45,6 +78,14 @@ object SSAO2RenderingPipeline {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("babylonjs/index", "SSAO2RenderingPipeline.ORTHO_DEPTH_PROJECTION")
+  @js.native
+  val ORTHO_DEPTH_PROJECTION: Any = js.native
+  
+  @JSImport("babylonjs/index", "SSAO2RenderingPipeline.PERSPECTIVE_DEPTH_PROJECTION")
+  @js.native
+  val PERSPECTIVE_DEPTH_PROJECTION: Any = js.native
+  
   /**
     * Parse the serialized pipeline
     * @param source Source pipeline.
@@ -52,5 +93,5 @@ object SSAO2RenderingPipeline {
     * @param rootUrl The URL of the serialized pipeline.
     * @returns An instantiated pipeline from the serialized object.
     */
-  inline def Parse(source: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.ssao2RenderingPipelineMod.SSAO2RenderingPipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.ssao2RenderingPipelineMod.SSAO2RenderingPipeline]
+  inline def Parse(source: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.ssao2RenderingPipelineMod.SSAO2RenderingPipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.ssao2RenderingPipelineMod.SSAO2RenderingPipeline]
 }

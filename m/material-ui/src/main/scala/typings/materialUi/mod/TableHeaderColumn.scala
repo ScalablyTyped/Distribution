@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "TableHeaderColumn")
 @js.native
-class TableHeaderColumn ()
-  extends Component[TableHeaderColumnProps, js.Object, js.Any]
+open class TableHeaderColumn ()
+  extends Component[TableHeaderColumnProps, js.Object, Any]

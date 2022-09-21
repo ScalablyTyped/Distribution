@@ -72,11 +72,11 @@ object MatchDetail {
     
     inline def setParticipantIdentities(value: js.Array[ParticipantIdentity]): Self = StObject.set(x, "participantIdentities", value.asInstanceOf[js.Any])
     
-    inline def setParticipantIdentitiesVarargs(value: ParticipantIdentity*): Self = StObject.set(x, "participantIdentities", js.Array(value :_*))
+    inline def setParticipantIdentitiesVarargs(value: ParticipantIdentity*): Self = StObject.set(x, "participantIdentities", js.Array(value*))
     
     inline def setParticipants(value: js.Array[Participant]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
     
-    inline def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "participants", js.Array(value :_*))
+    inline def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "participants", js.Array(value*))
     
     inline def setPlateformId(value: String): Self = StObject.set(x, "plateformId", value.asInstanceOf[js.Any])
     
@@ -88,7 +88,7 @@ object MatchDetail {
     
     inline def setTeams(value: js.Array[Team]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
     
-    inline def setTeamsVarargs(value: Team*): Self = StObject.set(x, "teams", js.Array(value :_*))
+    inline def setTeamsVarargs(value: Team*): Self = StObject.set(x, "teams", js.Array(value*))
     
     inline def setTimeline(value: Timeline): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
   }

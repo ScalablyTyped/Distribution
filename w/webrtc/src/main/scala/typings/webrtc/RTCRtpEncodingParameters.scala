@@ -1,6 +1,5 @@
 package typings.webrtc
 
-import typings.std.RTCDtxStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,8 +10,7 @@ trait RTCRtpEncodingParameters extends StObject {
   //ssrc: number;
   //rtx: RTCRtpRtxParameters;
   //fec: RTCRtpFecParameters;
-  var dtx: js.UndefOr[RTCDtxStatus] = js.undefined
-  
+  // dtx?: RTCDtxStatus;
   //active: boolean;
   //priority: RTCPriorityType;
   //maxBitrate: number;
@@ -28,10 +26,6 @@ object RTCRtpEncodingParameters {
   }
   
   extension [Self <: RTCRtpEncodingParameters](x: Self) {
-    
-    inline def setDtx(value: RTCDtxStatus): Self = StObject.set(x, "dtx", value.asInstanceOf[js.Any])
-    
-    inline def setDtxUndefined: Self = StObject.set(x, "dtx", js.undefined)
     
     inline def setRid(value: String): Self = StObject.set(x, "rid", value.asInstanceOf[js.Any])
     

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vfile-sort" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vfile-sort" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

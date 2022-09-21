@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Octree[T] extends StObject {
   
-  /* private */ var _creationFunc: js.Any = js.native
+  /* private */ var _creationFunc: Any = js.native
   
-  /* private */ var _maxBlockCapacity: js.Any = js.native
+  /* private */ var _maxBlockCapacity: Any = js.native
   
-  /* private */ var _selectionContent: js.Any = js.native
+  /* private */ var _selectionContent: Any = js.native
   
   /**
     * Adds a mesh to the octree

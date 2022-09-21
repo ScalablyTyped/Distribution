@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LodashJoin extends StObject {
   
   def apply(separator: String): LodashJoin1x1 = js.native
-  def apply(separator: String, array: List[js.Any]): String = js.native
+  def apply(separator: String, array: List[Any]): String = js.native
   def apply(separator: __): LodashJoin1x2 = js.native
-  def apply(separator: __, array: List[js.Any]): LodashJoin1x2 = js.native
+  def apply(separator: __, array: List[Any]): LodashJoin1x2 = js.native
 }

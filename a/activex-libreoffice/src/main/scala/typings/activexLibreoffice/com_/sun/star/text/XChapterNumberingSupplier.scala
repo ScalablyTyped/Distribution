@@ -24,7 +24,7 @@ object XChapterNumberingSupplier {
     ChapterNumberingRules: XIndexReplace,
     acquire: () => Unit,
     getChapterNumberingRules: () => XIndexReplace,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XChapterNumberingSupplier = {
     val __obj = js.Dynamic.literal(ChapterNumberingRules = ChapterNumberingRules.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getChapterNumberingRules = js.Any.fromFunction0(getChapterNumberingRules), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

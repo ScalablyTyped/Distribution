@@ -12,7 +12,7 @@ trait ListTagsRequest extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies a list of trail ARNs whose tags will be listed. The list has a limit of 20 ARNs. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
+    * Specifies a list of trail and event data store ARNs whose tags will be listed. The list has a limit of 20 ARNs.
     */
   var ResourceIdList: typings.awsSdk.cloudtrailMod.ResourceIdList
 }
@@ -31,6 +31,6 @@ object ListTagsRequest {
     
     inline def setResourceIdList(value: ResourceIdList): Self = StObject.set(x, "ResourceIdList", value.asInstanceOf[js.Any])
     
-    inline def setResourceIdListVarargs(value: String*): Self = StObject.set(x, "ResourceIdList", js.Array(value :_*))
+    inline def setResourceIdListVarargs(value: String*): Self = StObject.set(x, "ResourceIdList", js.Array(value*))
   }
 }

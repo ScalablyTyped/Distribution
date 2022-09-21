@@ -23,7 +23,7 @@ object GeoMultiPolygon {
     
     inline def setPolygons(value: js.Array[GeoPolygon]): Self = StObject.set(x, "polygons", value.asInstanceOf[js.Any])
     
-    inline def setPolygonsVarargs(value: GeoPolygon*): Self = StObject.set(x, "polygons", js.Array(value :_*))
+    inline def setPolygonsVarargs(value: GeoPolygon*): Self = StObject.set(x, "polygons", js.Array(value*))
     
     inline def setToJSON(value: () => IGeoJSONMultiPolygon): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }

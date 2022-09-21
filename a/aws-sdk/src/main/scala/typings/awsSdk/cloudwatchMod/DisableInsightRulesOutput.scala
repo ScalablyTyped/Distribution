@@ -24,6 +24,6 @@ object DisableInsightRulesOutput {
     
     inline def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
     
-    inline def setFailuresVarargs(value: PartialFailure*): Self = StObject.set(x, "Failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: PartialFailure*): Self = StObject.set(x, "Failures", js.Array(value*))
   }
 }

@@ -10,7 +10,7 @@ trait TOptionsBase extends StObject {
   /**
     * Used for contexts (eg. male\female)
     */
-  var context: js.UndefOr[js.Any] = js.undefined
+  var context: js.UndefOr[Any] = js.undefined
   
   /**
     * Count value used for plurals
@@ -20,7 +20,7 @@ trait TOptionsBase extends StObject {
   /**
     * Default value to return if a translation was not found
     */
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   /**
     * Override language to lookup key if not found see fallbacks for details
@@ -70,7 +70,12 @@ trait TOptionsBase extends StObject {
   /**
     * Object with vars for interpolation - or put them directly in options
     */
-  var replace: js.UndefOr[js.Any] = js.undefined
+  var replace: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * Returns an object that includes information about the used language, namespace, key and value
+    */
+  var returnDetails: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Accessing an object not a translation string (can be set globally too)
@@ -86,7 +91,7 @@ object TOptionsBase {
   
   extension [Self <: TOptionsBase](x: Self) {
     
-    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
@@ -94,7 +99,7 @@ object TOptionsBase {
     
     inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
@@ -104,7 +109,7 @@ object TOptionsBase {
     
     inline def setFallbackLngUndefined: Self = StObject.set(x, "fallbackLng", js.undefined)
     
-    inline def setFallbackLngVarargs(value: String*): Self = StObject.set(x, "fallbackLng", js.Array(value :_*))
+    inline def setFallbackLngVarargs(value: String*): Self = StObject.set(x, "fallbackLng", js.Array(value*))
     
     inline def setInterpolation(value: InterpolationOptions): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
@@ -126,7 +131,7 @@ object TOptionsBase {
     
     inline def setLngsUndefined: Self = StObject.set(x, "lngs", js.undefined)
     
-    inline def setLngsVarargs(value: String*): Self = StObject.set(x, "lngs", js.Array(value :_*))
+    inline def setLngsVarargs(value: String*): Self = StObject.set(x, "lngs", js.Array(value*))
     
     inline def setNs(value: String | js.Array[String]): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     
@@ -136,17 +141,21 @@ object TOptionsBase {
     
     inline def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
     
-    inline def setNsVarargs(value: String*): Self = StObject.set(x, "ns", js.Array(value :_*))
+    inline def setNsVarargs(value: String*): Self = StObject.set(x, "ns", js.Array(value*))
     
     inline def setPostProcess(value: String | js.Array[String]): Self = StObject.set(x, "postProcess", value.asInstanceOf[js.Any])
     
     inline def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
     
-    inline def setPostProcessVarargs(value: String*): Self = StObject.set(x, "postProcess", js.Array(value :_*))
+    inline def setPostProcessVarargs(value: String*): Self = StObject.set(x, "postProcess", js.Array(value*))
     
-    inline def setReplace(value: js.Any): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: Any): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
     inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    
+    inline def setReturnDetails(value: Boolean): Self = StObject.set(x, "returnDetails", value.asInstanceOf[js.Any])
+    
+    inline def setReturnDetailsUndefined: Self = StObject.set(x, "returnDetails", js.undefined)
     
     inline def setReturnObjects(value: Boolean): Self = StObject.set(x, "returnObjects", value.asInstanceOf[js.Any])
     

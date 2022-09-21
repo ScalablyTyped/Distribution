@@ -22,9 +22,9 @@ trait FormattingContext extends StObject {
   
   var contextNode: IndentationNodeContext
   
-  /* private */ var contextNodeAllOnSameLine: js.Any
+  /* private */ var contextNodeAllOnSameLine: Any
   
-  /* private */ var contextNodeBlockIsOnOneLine: js.Any
+  /* private */ var contextNodeBlockIsOnOneLine: Any
   
   var currentTokenParent: IndentationNodeContext
   
@@ -32,17 +32,17 @@ trait FormattingContext extends StObject {
   
   var formattingRequestKind: FormattingRequestKind
   
-  /* private */ var nextNodeAllOnSameLine: js.Any
+  /* private */ var nextNodeAllOnSameLine: Any
   
-  /* private */ var nextNodeBlockIsOnOneLine: js.Any
+  /* private */ var nextNodeBlockIsOnOneLine: Any
   
   var nextTokenParent: IndentationNodeContext
   
   var nextTokenSpan: TokenSpan
   
-  /* private */ var snapshot: js.Any
+  /* private */ var snapshot: Any
   
-  /* private */ var tokensAreOnSameLine: js.Any
+  /* private */ var tokensAreOnSameLine: Any
   
   def updateContext(
     currentTokenSpan: TokenSpan,
@@ -63,17 +63,17 @@ object FormattingContext {
     NodeIsOnOneLine: IndentationNodeContext => Boolean,
     TokensAreOnSameLine: () => Boolean,
     contextNode: IndentationNodeContext,
-    contextNodeAllOnSameLine: js.Any,
-    contextNodeBlockIsOnOneLine: js.Any,
+    contextNodeAllOnSameLine: Any,
+    contextNodeBlockIsOnOneLine: Any,
     currentTokenParent: IndentationNodeContext,
     currentTokenSpan: TokenSpan,
     formattingRequestKind: FormattingRequestKind,
-    nextNodeAllOnSameLine: js.Any,
-    nextNodeBlockIsOnOneLine: js.Any,
+    nextNodeAllOnSameLine: Any,
+    nextNodeBlockIsOnOneLine: Any,
     nextTokenParent: IndentationNodeContext,
     nextTokenSpan: TokenSpan,
-    snapshot: js.Any,
-    tokensAreOnSameLine: js.Any,
+    snapshot: Any,
+    tokensAreOnSameLine: Any,
     updateContext: (TokenSpan, IndentationNodeContext, TokenSpan, IndentationNodeContext, IndentationNodeContext) => Unit
   ): FormattingContext = {
     val __obj = js.Dynamic.literal(BlockIsOnOneLine = js.Any.fromFunction1(BlockIsOnOneLine), ContextNodeAllOnSameLine = js.Any.fromFunction0(ContextNodeAllOnSameLine), ContextNodeBlockIsOnOneLine = js.Any.fromFunction0(ContextNodeBlockIsOnOneLine), NextNodeAllOnSameLine = js.Any.fromFunction0(NextNodeAllOnSameLine), NextNodeBlockIsOnOneLine = js.Any.fromFunction0(NextNodeBlockIsOnOneLine), NodeIsOnOneLine = js.Any.fromFunction1(NodeIsOnOneLine), TokensAreOnSameLine = js.Any.fromFunction0(TokensAreOnSameLine), contextNode = contextNode.asInstanceOf[js.Any], contextNodeAllOnSameLine = contextNodeAllOnSameLine.asInstanceOf[js.Any], contextNodeBlockIsOnOneLine = contextNodeBlockIsOnOneLine.asInstanceOf[js.Any], currentTokenParent = currentTokenParent.asInstanceOf[js.Any], currentTokenSpan = currentTokenSpan.asInstanceOf[js.Any], formattingRequestKind = formattingRequestKind.asInstanceOf[js.Any], nextNodeAllOnSameLine = nextNodeAllOnSameLine.asInstanceOf[js.Any], nextNodeBlockIsOnOneLine = nextNodeBlockIsOnOneLine.asInstanceOf[js.Any], nextTokenParent = nextTokenParent.asInstanceOf[js.Any], nextTokenSpan = nextTokenSpan.asInstanceOf[js.Any], snapshot = snapshot.asInstanceOf[js.Any], tokensAreOnSameLine = tokensAreOnSameLine.asInstanceOf[js.Any], updateContext = js.Any.fromFunction5(updateContext))
@@ -106,7 +106,7 @@ object FormattingContext {
     
     inline def setNodeIsOnOneLine(value: IndentationNodeContext => Boolean): Self = StObject.set(x, "NodeIsOnOneLine", js.Any.fromFunction1(value))
     
-    inline def setSnapshot(value: js.Any): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: Any): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
     inline def setTokensAreOnSameLine(value: () => Boolean): Self = StObject.set(x, "TokensAreOnSameLine", js.Any.fromFunction0(value))
     

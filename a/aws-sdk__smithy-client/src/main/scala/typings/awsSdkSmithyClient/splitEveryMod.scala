@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object splitEveryMod {
   
-  @JSImport("@aws-sdk/smithy-client/dist/cjs/split-every", JSImport.Namespace)
+  @JSImport("@aws-sdk/smithy-client/dist-types/split-every", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

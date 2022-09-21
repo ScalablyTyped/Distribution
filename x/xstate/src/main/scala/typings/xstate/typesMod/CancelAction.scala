@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CancelAction
   extends StObject
-     with ActionObject[js.Any, js.Any] {
+     with ActionObject[Any, Any]
+     with _BaseAction[Any, Any, Any] {
   
   var sendId: String | Double
 }

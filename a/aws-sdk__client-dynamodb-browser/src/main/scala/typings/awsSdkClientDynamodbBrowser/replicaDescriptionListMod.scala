@@ -8,5 +8,5 @@ object replicaDescriptionListMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/_ReplicaDescriptionList", "_ReplicaDescriptionList")
   @js.native
-  val ReplicaDescriptionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val ReplicaDescriptionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

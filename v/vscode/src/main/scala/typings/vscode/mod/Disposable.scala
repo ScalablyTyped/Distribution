@@ -7,18 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "Disposable")
 @js.native
-class Disposable protected () extends StObject {
+open class Disposable protected () extends StObject {
   /**
-    * Creates a new Disposable calling the provided function
+    * Creates a new disposable that calls the provided function
     * on dispose.
+    *
+    * *Note* that an asynchronous function is not awaited.
+    *
     * @param callOnDispose Function that disposes something.
     */
-  def this(callOnDispose: js.Function) = this()
+  def this(callOnDispose: js.Function0[Any]) = this()
   
   /**
     * Dispose this object.
     */
-  def dispose(): js.Any = js.native
+  def dispose(): Any = js.native
 }
 /* static members */
 object Disposable {
@@ -28,13 +31,13 @@ object Disposable {
   val ^ : js.Any = js.native
   
   /**
-    * Combine many disposable-likes into one. Use this method
-    * when having objects with a dispose function which are not
-    * instances of Disposable.
+    * Combine many disposable-likes into one. You can use this method when having objects with
+    * a dispose function which aren't instances of `Disposable`.
     *
-    * @param disposableLikes Objects that have at least a `dispose`-function member.
+    * @param disposableLikes Objects that have at least a `dispose`-function member. Note that asynchronous
+    * dispose-functions aren't awaited.
     * @return Returns a new disposable which, upon dispose, will
     * dispose all provided disposables.
     */
-  inline def from(disposableLikes: Dispose*): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(disposableLikes.asInstanceOf[js.Any]).asInstanceOf[Disposable]
+  inline def from(disposableLikes: Dispose*): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(disposableLikes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Disposable]
 }

@@ -21,7 +21,7 @@ object connectionMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers-Connection.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Connection
   

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.postmanCollection.mod.PropertyDefinition because Already inherited
 - typings.postmanCollection.mod.CertificateDefinition because var conflicts: description, disabled, id, name. Inlined matches, key, cert, passphrase */ @JSImport("postman-collection", "Certificate")
 @js.native
-class Certificate protected () extends Property[CertificateDefinition] {
+open class Certificate protected () extends Property[CertificateDefinition] {
   def this(options: CertificateDefinition) = this()
   
   def canApplyTo(url: String): Boolean = js.native
@@ -33,5 +33,5 @@ object Certificate {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isCertificate(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCertificate")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCertificate(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCertificate")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -12,8 +12,8 @@ trait MultiFactorError
 }
 object MultiFactorError {
   
-  inline def apply(code: String, message: String, resolver: MultiFactorResolver): MultiFactorError = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], resolver = resolver.asInstanceOf[js.Any])
+  inline def apply(code: String, message: String, name: String, resolver: MultiFactorResolver): MultiFactorError = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resolver = resolver.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiFactorError]
   }
   

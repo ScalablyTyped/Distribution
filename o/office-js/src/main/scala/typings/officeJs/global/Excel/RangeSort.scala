@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Manages sorting operations on `Range` objects.
   *
-  * Manages sorting operations on Range objects.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.RangeSort")
 @js.native
-class RangeSort ()
+open class RangeSort ()
   extends StObject
      with typings.officeJs.Excel.RangeSort {
   

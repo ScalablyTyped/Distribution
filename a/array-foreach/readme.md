@@ -10,10 +10,10 @@ Array#forEach ponyfill for older browsers
 | ------------------ | :-------------: |
 | Full name          | array-foreach |
 | Keywords           | array, browser, each, es5, forEach, ie6, ie7, ie8, polyfill, ponyfill, shim |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 207176 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14765.0 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/twada/array-foreach)

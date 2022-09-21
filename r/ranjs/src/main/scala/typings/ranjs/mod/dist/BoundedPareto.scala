@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.BoundedPareto")
 @js.native
-class BoundedPareto ()
+open class BoundedPareto ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.BoundedPareto] {
   def this(L: Double) = this()

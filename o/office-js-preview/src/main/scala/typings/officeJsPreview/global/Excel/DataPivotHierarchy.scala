@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel DataPivotHierarchy.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.DataPivotHierarchy")
 @js.native
-class DataPivotHierarchy ()
+open class DataPivotHierarchy ()
   extends StObject
      with typings.officeJsPreview.Excel.DataPivotHierarchy {
   

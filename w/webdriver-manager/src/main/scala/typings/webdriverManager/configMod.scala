@@ -9,7 +9,7 @@ object configMod {
   
   @JSImport("webdriver-manager/built/lib/config", "Config")
   @js.native
-  class Config () extends StObject
+  open class Config () extends StObject
   /* static members */
   object Config {
     
@@ -66,15 +66,15 @@ object configMod {
     
     @JSImport("webdriver-manager/built/lib/config", "Config.httpProxy_")
     @js.native
-    def httpProxy_ : js.Any = js.native
-    inline def httpProxy__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("httpProxy_")(x.asInstanceOf[js.Any])
+    def httpProxy_ : Any = js.native
+    inline def httpProxy__=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("httpProxy_")(x.asInstanceOf[js.Any])
     
     inline def httpsProxy(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("httpsProxy")().asInstanceOf[String]
     
     @JSImport("webdriver-manager/built/lib/config", "Config.httpsProxy_")
     @js.native
-    def httpsProxy_ : js.Any = js.native
-    inline def httpsProxy__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("httpsProxy_")(x.asInstanceOf[js.Any])
+    def httpsProxy_ : Any = js.native
+    inline def httpsProxy__=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("httpsProxy_")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/config", "Config.isLocalVersion")
     @js.native
@@ -95,8 +95,8 @@ object configMod {
     
     @JSImport("webdriver-manager/built/lib/config", "Config.noProxy_")
     @js.native
-    def noProxy_ : js.Any = js.native
-    inline def noProxy__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noProxy_")(x.asInstanceOf[js.Any])
+    def noProxy_ : Any = js.native
+    inline def noProxy__=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noProxy_")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/config", "Config.nodeModuleName")
     @js.native

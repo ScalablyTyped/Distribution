@@ -53,7 +53,7 @@ object CreatePlatformVersionRequest {
     
     inline def setOptionSettingsUndefined: Self = StObject.set(x, "OptionSettings", js.undefined)
     
-    inline def setOptionSettingsVarargs(value: ConfigurationOptionSetting*): Self = StObject.set(x, "OptionSettings", js.Array(value :_*))
+    inline def setOptionSettingsVarargs(value: ConfigurationOptionSetting*): Self = StObject.set(x, "OptionSettings", js.Array(value*))
     
     inline def setPlatformDefinitionBundle(value: S3Location): Self = StObject.set(x, "PlatformDefinitionBundle", value.asInstanceOf[js.Any])
     
@@ -65,6 +65,6 @@ object CreatePlatformVersionRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

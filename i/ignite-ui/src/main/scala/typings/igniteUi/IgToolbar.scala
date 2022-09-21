@@ -11,7 +11,7 @@ trait IgToolbar
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Get/Set whether the toolbar can be collapsed.
@@ -61,7 +61,7 @@ trait IgToolbar
     * Set/Get the widget height.
     *
     */
-  var height: js.UndefOr[js.Any] = js.undefined
+  var height: js.UndefOr[Any] = js.undefined
   
   /**
     * Get/Set whether the widget is expanded initially.
@@ -93,7 +93,7 @@ trait IgToolbar
     * Get/Set Toolbar's items.
     *
     */
-  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var items: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
@@ -139,7 +139,7 @@ trait IgToolbar
     * Set/Get the widget width.
     *
     */
-  var width: js.UndefOr[js.Any] = js.undefined
+  var width: js.UndefOr[Any] = js.undefined
   
   /**
     * Fired after the window is resized
@@ -187,7 +187,7 @@ object IgToolbar {
     
     inline def setExpandingUndefined: Self = StObject.set(x, "expanding", js.undefined)
     
-    inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
@@ -211,11 +211,11 @@ object IgToolbar {
     
     inline def setItemRemovedUndefined: Self = StObject.set(x, "itemRemoved", js.undefined)
     
-    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
@@ -249,7 +249,7 @@ object IgToolbar {
     
     inline def setToolbarCustomItemClickUndefined: Self = StObject.set(x, "toolbarCustomItemClick", js.undefined)
     
-    inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     

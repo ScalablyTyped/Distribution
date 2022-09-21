@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorBeforePasteEventArgs")
 @js.native
-class ASPxClientHtmlEditorBeforePasteEventArgs protected ()
+open class ASPxClientHtmlEditorBeforePasteEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorBeforePasteEventArgs {
   /**

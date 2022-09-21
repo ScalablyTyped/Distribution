@@ -27,9 +27,9 @@ trait SocialPostReference
 object SocialPostReference {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_digest: () => SocialThread,
     get_post: () => SocialPost,
     get_threadId: () => String,

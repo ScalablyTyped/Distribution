@@ -25,18 +25,18 @@ object CollectionOptions {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: SmartActionOptions*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: SmartActionOptions*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setFields(value: js.Array[SmartFieldOptions]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: SmartFieldOptions*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: SmartFieldOptions*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setSegments(value: js.Array[SmartSegmentOptions]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    inline def setSegmentsVarargs(value: SmartSegmentOptions*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: SmartSegmentOptions*): Self = StObject.set(x, "segments", js.Array(value*))
   }
 }

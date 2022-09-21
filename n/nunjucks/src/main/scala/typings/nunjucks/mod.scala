@@ -4,7 +4,10 @@ import typings.nunjucks.anon.Async
 import typings.nunjucks.anon.Autoescape
 import typings.nunjucks.anon.BlockEnd
 import typings.nunjucks.anon.Name
+import typings.nunjucks.anon.NoCache
+import typings.nunjucks.anon.TypeofLoader
 import typings.nunjucks.mod.lib.TemplateError
+import typings.nunjucks.nunjucksStrings.load
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +21,7 @@ object mod {
   
   @JSImport("nunjucks", "Environment")
   @js.native
-  class Environment () extends StObject {
+  open class Environment () extends StObject {
     def this(loader: js.Array[ILoader]) = this()
     def this(loader: ILoader) = this()
     def this(loader: js.Array[ILoader], opts: ConfigureOptions) = this()
@@ -28,29 +31,32 @@ object mod {
     
     def addExtension(name: String, ext: Extension): Environment = js.native
     
-    def addFilter(name: String, func: js.Function1[/* repeated */ js.Any, js.Any]): Environment = js.native
-    def addFilter(name: String, func: js.Function1[/* repeated */ js.Any, js.Any], async: Boolean): Environment = js.native
+    def addFilter(name: String, func: js.Function1[/* repeated */ Any, Any]): Environment = js.native
+    def addFilter(name: String, func: js.Function1[/* repeated */ Any, Any], async: Boolean): Environment = js.native
     
-    def addGlobal(name: String, value: js.Any): Environment = js.native
+    def addGlobal(name: String, value: Any): Environment = js.native
     
     def express(app: js.Object): Unit = js.native
     
     def getExtension(name: String): Extension = js.native
     
-    def getFilter(name: String): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+    def getFilter(name: String): js.Function1[/* repeated */ Any, Any] = js.native
     
-    def getGlobal(name: String): js.Any = js.native
+    def getGlobal(name: String): Any = js.native
     
     def getTemplate(name: String): Unit = js.native
     def getTemplate(name: String, eagerCompile: Boolean): Unit = js.native
-    def getTemplate(name: String, eagerCompile: Boolean, callback: Callback[Error, Template]): Unit = js.native
-    def getTemplate(name: String, eagerCompile: Unit, callback: Callback[Error, Template]): Unit = js.native
+    def getTemplate(name: String, eagerCompile: Boolean, callback: Callback[js.Error, Template]): Unit = js.native
+    def getTemplate(name: String, eagerCompile: Unit, callback: Callback[js.Error, Template]): Unit = js.native
     @JSName("getTemplate")
     def getTemplate_Template(name: String): Template = js.native
     @JSName("getTemplate")
     def getTemplate_Template(name: String, eagerCompile: Boolean): Template = js.native
     
     def hasExtension(name: String): Boolean = js.native
+    
+    @JSName("on")
+    def on_load(event: load, fn: js.Function3[/* name */ String, /* source */ NoCache, /* loader */ Loader, Unit]): Unit = js.native
     
     var options: Autoescape = js.native
     
@@ -72,59 +78,71 @@ object mod {
     def render_Unit(name: String, context: js.Object): Unit = js.native
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.nunjucks.mod.ILoader because var conflicts: extend. Inlined async, getSource, getSource */ @JSImport("nunjucks", "FileSystemLoader")
+  @JSImport("nunjucks", "FileSystemLoader")
   @js.native
-  class FileSystemLoader () extends Loader {
+  open class FileSystemLoader ()
+    extends Loader
+       with ILoader {
     def this(searchPaths: String) = this()
     def this(searchPaths: js.Array[String]) = this()
     def this(searchPaths: String, opts: FileSystemLoaderOptions) = this()
     def this(searchPaths: js.Array[String], opts: FileSystemLoaderOptions) = this()
     def this(searchPaths: Unit, opts: FileSystemLoaderOptions) = this()
-    
-    var async: js.UndefOr[Boolean] = js.native
-    
-    def getSource(name: String): LoaderSource = js.native
-    def getSource(name: String, callback: Callback[Error, LoaderSource]): Unit = js.native
-    
-    def init(searchPaths: js.Array[String], opts: js.Any): Unit = js.native
   }
   
   @JSImport("nunjucks", "Loader")
   @js.native
-  class Loader () extends StObject {
+  open class Loader () extends StObject {
     
-    def emit(name: String, args: js.Any*): Unit = js.native
-    
-    def extend(toExtend: ILoader): ILoader = js.native
+    def emit(name: String, args: Any*): Unit = js.native
     
     def isRelative(filename: String): Boolean = js.native
     
-    def on(name: String, func: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+    def on(name: String, func: js.Function1[/* repeated */ Any, Any]): Unit = js.native
     
     def resolve(from: String, to: String): String = js.native
   }
+  /* static members */
+  object Loader {
+    
+    @JSImport("nunjucks", "Loader")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def extend[LoaderClass /* <: TypeofLoader */](toExtend: ILoader): LoaderClass = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(toExtend.asInstanceOf[js.Any]).asInstanceOf[LoaderClass]
+  }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.nunjucks.mod.ILoader because var conflicts: extend. Inlined async, getSource, getSource */ @JSImport("nunjucks", "PrecompiledLoader")
+  @JSImport("nunjucks", "NodeResolveLoader")
   @js.native
-  class PrecompiledLoader () extends Loader {
-    
-    var async: js.UndefOr[Boolean] = js.native
-    
-    def getSource(name: String): LoaderSource = js.native
-    def getSource(name: String, callback: Callback[Error, LoaderSource]): Unit = js.native
-    
-    def init(searchPaths: js.Array[String], opts: js.Any): Unit = js.native
+  open class NodeResolveLoader ()
+    extends Loader
+       with ILoader {
+    def this(searchPaths: String) = this()
+    def this(searchPaths: js.Array[String]) = this()
+    def this(searchPaths: String, opts: NodeResolveLoaderOptions) = this()
+    def this(searchPaths: js.Array[String], opts: NodeResolveLoaderOptions) = this()
+    def this(searchPaths: Unit, opts: NodeResolveLoaderOptions) = this()
+  }
+  
+  @JSImport("nunjucks", "PrecompiledLoader")
+  @js.native
+  open class PrecompiledLoader ()
+    extends Loader
+       with ILoader {
+    def this(compiledTemplates: js.Array[Any]) = this()
   }
   
   @JSImport("nunjucks", "Template")
   @js.native
-  class Template protected () extends StObject {
+  open class Template protected () extends StObject {
     def this(src: String) = this()
     def this(src: String, env: Environment) = this()
-    def this(src: String, env: Unit, eagerCompile: Boolean) = this()
-    def this(src: String, env: Environment, eagerCompile: Boolean) = this()
+    def this(src: String, env: Unit, path: String) = this()
+    def this(src: String, env: Environment, path: String) = this()
+    def this(src: String, env: Unit, path: String, eagerCompile: Boolean) = this()
+    def this(src: String, env: Unit, path: Unit, eagerCompile: Boolean) = this()
+    def this(src: String, env: Environment, path: String, eagerCompile: Boolean) = this()
+    def this(src: String, env: Environment, path: Unit, eagerCompile: Boolean) = this()
     
     def render(): String = js.native
     def render(context: js.Object): String = js.native
@@ -136,17 +154,14 @@ object mod {
     def render_Unit(context: js.Object): Unit = js.native
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.nunjucks.mod.ILoader because var conflicts: extend. Inlined async, getSource, getSource */ @JSImport("nunjucks", "WebLoader")
+  @JSImport("nunjucks", "WebLoader")
   @js.native
-  class WebLoader protected () extends Loader {
+  open class WebLoader ()
+    extends Loader
+       with ILoader {
     def this(baseUrl: String) = this()
-    def this(baseUrl: String, opts: js.Any) = this()
-    
-    var async: js.UndefOr[Boolean] = js.native
-    
-    def getSource(name: String): LoaderSource = js.native
-    def getSource(name: String, callback: Callback[Error, LoaderSource]): Unit = js.native
+    def this(baseUrl: String, opts: WebLoaderOptions) = this()
+    def this(baseUrl: Unit, opts: WebLoaderOptions) = this()
   }
   
   inline def compile(src: String): Template = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(src.asInstanceOf[js.Any]).asInstanceOf[Template]
@@ -166,20 +181,23 @@ object mod {
     
     @JSImport("nunjucks", "lib.TemplateError")
     @js.native
-    class TemplateError protected ()
+    open class TemplateError protected ()
       extends StObject
          with Error {
       def this(message: String, lineno: Double, colno: Double) = this()
       
-      var cause: js.UndefOr[Error] = js.native
+      @JSName("cause")
+      var cause_TemplateError: js.UndefOr[js.Error] = js.native
       
       var colno: Double = js.native
       
       var lineno: Double = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var message: String = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var name: String = js.native
       
@@ -211,7 +229,7 @@ object mod {
     
     @JSImport("nunjucks", "runtime.SafeString")
     @js.native
-    class SafeString protected () extends StObject {
+    open class SafeString protected () extends StObject {
       def this(`val`: String) = this()
       
       var length: Double = js.native
@@ -292,28 +310,39 @@ object mod {
   trait Extension extends StObject {
     
     // Parser API is undocumented it is suggested to check the source: https://github.com/mozilla/nunjucks/blob/master/src/parser.js
-    def parse(parser: js.Any, nodes: js.Any, lexer: js.Any): js.Any
+    def parse(parser: Any, nodes: Any, lexer: Any): Any
     
     var tags: js.Array[String]
   }
   object Extension {
     
-    inline def apply(parse: (js.Any, js.Any, js.Any) => js.Any, tags: js.Array[String]): Extension = {
+    inline def apply(parse: (Any, Any, Any) => Any, tags: js.Array[String]): Extension = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction3(parse), tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[Extension]
     }
     
     extension [Self <: Extension](x: Self) {
       
-      inline def setParse(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
+      inline def setParse(value: (Any, Any, Any) => Any): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
       
       inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   
-  trait FileSystemLoaderOptions extends StObject {
+  type FileSystemLoaderOptions = LoaderOptions
+  
+  @js.native
+  trait ILoader extends StObject {
+    
+    var async: js.UndefOr[Boolean] = js.native
+    
+    def getSource(name: String): LoaderSource = js.native
+    def getSource(name: String, callback: Callback[js.Error, LoaderSource]): Unit = js.native
+  }
+  
+  trait LoaderOptions extends StObject {
     
     /**  if true, the system will avoid using a cache and templates will be recompiled every single time */
     var noCache: js.UndefOr[Boolean] = js.undefined
@@ -321,14 +350,14 @@ object mod {
     /** if true, the system will automatically update templates when they are changed on the filesystem */
     var watch: js.UndefOr[Boolean] = js.undefined
   }
-  object FileSystemLoaderOptions {
+  object LoaderOptions {
     
-    inline def apply(): FileSystemLoaderOptions = {
+    inline def apply(): LoaderOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FileSystemLoaderOptions]
+      __obj.asInstanceOf[LoaderOptions]
     }
     
-    extension [Self <: FileSystemLoaderOptions](x: Self) {
+    extension [Self <: LoaderOptions](x: Self) {
       
       inline def setNoCache(value: Boolean): Self = StObject.set(x, "noCache", value.asInstanceOf[js.Any])
       
@@ -338,17 +367,6 @@ object mod {
       
       inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
     }
-  }
-  
-  @js.native
-  trait ILoader extends StObject {
-    
-    var async: js.UndefOr[Boolean] = js.native
-    
-    var extend: js.UndefOr[js.Function1[/* extender */ this.type, this.type]] = js.native
-    
-    def getSource(name: String): LoaderSource = js.native
-    def getSource(name: String, callback: Callback[Error, LoaderSource]): Unit = js.native
   }
   
   trait LoaderSource extends StObject {
@@ -375,6 +393,8 @@ object mod {
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
   }
+  
+  type NodeResolveLoaderOptions = LoaderOptions
   
   trait PrecompileOptions extends StObject {
     
@@ -413,7 +433,7 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
@@ -423,7 +443,7 @@ object mod {
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -436,4 +456,29 @@ object mod {
   }
   
   type TemplateCallback[T] = js.Function2[/* err */ TemplateError | Null, /* res */ T | Null, Unit]
+  
+  trait WebLoaderOptions extends StObject {
+    
+    var async: js.UndefOr[Boolean] = js.undefined
+    
+    var useCache: js.UndefOr[Boolean] = js.undefined
+  }
+  object WebLoaderOptions {
+    
+    inline def apply(): WebLoaderOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WebLoaderOptions]
+    }
+    
+    extension [Self <: WebLoaderOptions](x: Self) {
+      
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      
+      inline def setUseCache(value: Boolean): Self = StObject.set(x, "useCache", value.asInstanceOf[js.Any])
+      
+      inline def setUseCacheUndefined: Self = StObject.set(x, "useCache", js.undefined)
+    }
+  }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.Touch")
 @js.native
-class Touch ()
+open class Touch ()
   extends StObject
      with typings.easeljs.createjs.Touch
 /* static members */

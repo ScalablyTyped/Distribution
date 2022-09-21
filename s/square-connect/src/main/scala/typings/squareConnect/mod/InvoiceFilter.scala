@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "InvoiceFilter")
 @js.native
-class InvoiceFilter () extends StObject {
+open class InvoiceFilter () extends StObject {
   
   /**
     * Limits the search to the specified customers, within the specified locations.

@@ -11,49 +11,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartFontData extends StObject {
   
   /**
-    *
     * Represents the bold status of font.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var color: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Represents the italic status of the font.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Font name (e.g., "Calibri")
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Size of the font (e.g., 11)
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var size: js.UndefOr[Double] = js.undefined
   
   /**
+    * Type of underline applied to the font. See `Excel.ChartUnderlineStyle` for details.
     *
-    * Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var underline: js.UndefOr[ChartUnderlineStyle | None | Single] = js.undefined

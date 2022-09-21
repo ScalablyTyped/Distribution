@@ -10,10 +10,10 @@ A JavaScript client library for Named Data Networking
 | ------------------ | :-------------: |
 | Full name          | ndn-js |
 | Keywords           | NDN |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 1096 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 94.0 |
+| # stars            | 97.0 |
 
 ## Links
 - [Homepage](https://github.com/named-data/ndn-js#readme)

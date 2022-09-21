@@ -1,7 +1,6 @@
 package typings.rcUtil
 
 import typings.rcUtil.anon.MockRestore
-import typings.std.PropertyDescriptor
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,5 +18,5 @@ object domHookMod {
   
   type ElementClass = js.Function
   
-  type Property = PropertyDescriptor | js.Function
+  type Property = js.PropertyDescriptor | js.Function
 }

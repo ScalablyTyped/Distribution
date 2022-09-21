@@ -33,6 +33,6 @@ object DescribeWorkspacesConnectionStatusRequest {
     
     inline def setWorkspaceIdsUndefined: Self = StObject.set(x, "WorkspaceIds", js.undefined)
     
-    inline def setWorkspaceIdsVarargs(value: WorkspaceId*): Self = StObject.set(x, "WorkspaceIds", js.Array(value :_*))
+    inline def setWorkspaceIdsVarargs(value: WorkspaceId*): Self = StObject.set(x, "WorkspaceIds", js.Array(value*))
   }
 }

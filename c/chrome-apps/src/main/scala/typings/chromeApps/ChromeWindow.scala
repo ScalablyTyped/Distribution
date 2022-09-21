@@ -25,7 +25,7 @@ trait ChromeWindow extends StObject {
   ///
   /// Other APIs
   ///
-  var AudioContext: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AudioContext */ js.Any = js.native
+  var AudioContext: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AudioContext */ Any = js.native
   
   ///
   /// Disabled Web Features
@@ -36,7 +36,7 @@ trait ChromeWindow extends StObject {
     * Work-around: Use a custom lightbox / popup.
     */
   def alert(): Unit = js.native
-  def alert(message: js.Any): Unit = js.native
+  def alert(message: Any): Unit = js.native
   
   /**
     * ❗ confirm is not available in packaged apps. ❗

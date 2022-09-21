@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "Vector2")
 @js.native
-class Vector2 ()
+open class Vector2 ()
   extends typings.wonderJs.vector2Mod.Vector2 {
-  def this(x: js.Any, y: js.Any) = this()
+  def this(x: Any, y: Any) = this()
 }
 /* static members */
 object Vector2 {
@@ -18,5 +18,5 @@ object Vector2 {
   val ^ : js.Any = js.native
   
   inline def create(): typings.wonderJs.vector2Mod.Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.vector2Mod.Vector2]
-  inline def create(x: js.Any, y: js.Any): typings.wonderJs.vector2Mod.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.vector2Mod.Vector2]
+  inline def create(x: Any, y: Any): typings.wonderJs.vector2Mod.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.vector2Mod.Vector2]
 }

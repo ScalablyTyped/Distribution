@@ -8,12 +8,18 @@ trait CompilerOptions extends StObject {
   
   var defaultEncapsulation: js.UndefOr[ViewEncapsulation] = js.undefined
   
+  /**
+    * @deprecated not used at all in Ivy, providing this config option has no effect.
+    */
   var missingTranslation: js.UndefOr[MissingTranslationStrategy] = js.undefined
   
   var preserveWhitespaces: js.UndefOr[Boolean] = js.undefined
   
   var providers: js.UndefOr[js.Array[StaticProvider]] = js.undefined
   
+  /**
+    * @deprecated not used at all in Ivy, providing this config option has no effect.
+    */
   var useJit: js.UndefOr[Boolean] = js.undefined
 }
 object CompilerOptions {
@@ -41,7 +47,7 @@ object CompilerOptions {
     
     inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    inline def setProvidersVarargs(value: StaticProvider*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: StaticProvider*): Self = StObject.set(x, "providers", js.Array(value*))
     
     inline def setUseJit(value: Boolean): Self = StObject.set(x, "useJit", value.asInstanceOf[js.Any])
     

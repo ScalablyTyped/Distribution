@@ -34,7 +34,7 @@ object RecommendedOptionProjectedMetric {
     
     inline def setProjectedMetricsUndefined: Self = StObject.set(x, "projectedMetrics", js.undefined)
     
-    inline def setProjectedMetricsVarargs(value: ProjectedMetric*): Self = StObject.set(x, "projectedMetrics", js.Array(value :_*))
+    inline def setProjectedMetricsVarargs(value: ProjectedMetric*): Self = StObject.set(x, "projectedMetrics", js.Array(value*))
     
     inline def setRank(value: Rank): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     

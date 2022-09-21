@@ -11,5 +11,5 @@ object imagePromiseFactoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasDecodeCrossOrigin: CrossOrigin): js.Function1[/* src */ js.Any, js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDecodeCrossOrigin.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* src */ js.Any, js.Promise[Unit]]]
+  inline def default(hasDecodeCrossOrigin: CrossOrigin): js.Function1[/* src */ Any, js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDecodeCrossOrigin.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* src */ Any, js.Promise[Unit]]]
 }

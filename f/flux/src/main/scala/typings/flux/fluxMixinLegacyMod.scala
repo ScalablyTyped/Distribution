@@ -21,8 +21,8 @@ object fluxMixinLegacyMod {
     * updated to contain the previous foo AND the bar that was just returned. Only
     * returning bar will not delete foo.
     */
-  inline def apply(stores: js.Array[typings.flux.fluxStoreMod.^[js.Any]]): js.Any = ^.asInstanceOf[js.Dynamic].apply(stores.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(stores: js.Array[typings.flux.fluxStoreMod.^[js.Any]], options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(stores.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(stores: js.Array[typings.flux.fluxStoreMod.^[Any]]): Any = ^.asInstanceOf[js.Dynamic].apply(stores.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(stores: js.Array[typings.flux.fluxStoreMod.^[Any]], options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(stores.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("flux/lib/FluxMixinLegacy", JSImport.Namespace)
   @js.native

@@ -1,7 +1,6 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import typings.dialogflow.mod.google.rpc.IStatus
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait IStreamingDetectIntentResponse extends StObject {
   var alternativeQueryResults: js.UndefOr[js.Array[IQueryResult] | Null] = js.undefined
   
   /** StreamingDetectIntentResponse outputAudio */
-  var outputAudio: js.UndefOr[Uint8Array | String | Null] = js.undefined
+  var outputAudio: js.UndefOr[js.typedarray.Uint8Array | String | Null] = js.undefined
   
   /** StreamingDetectIntentResponse outputAudioConfig */
   var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.undefined
@@ -45,9 +44,9 @@ object IStreamingDetectIntentResponse {
     
     inline def setAlternativeQueryResultsUndefined: Self = StObject.set(x, "alternativeQueryResults", js.undefined)
     
-    inline def setAlternativeQueryResultsVarargs(value: IQueryResult*): Self = StObject.set(x, "alternativeQueryResults", js.Array(value :_*))
+    inline def setAlternativeQueryResultsVarargs(value: IQueryResult*): Self = StObject.set(x, "alternativeQueryResults", js.Array(value*))
     
-    inline def setOutputAudio(value: Uint8Array | String): Self = StObject.set(x, "outputAudio", value.asInstanceOf[js.Any])
+    inline def setOutputAudio(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "outputAudio", value.asInstanceOf[js.Any])
     
     inline def setOutputAudioConfig(value: IOutputAudioConfig): Self = StObject.set(x, "outputAudioConfig", value.asInstanceOf[js.Any])
     

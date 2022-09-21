@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Security.Cryptography
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
@@ -25,7 +24,7 @@ object Certificates {
   /** Represents a cryptography certificate. */
   @JSGlobal("Windows.Security.Cryptography.Certificates.Certificate")
   @js.native
-  class Certificate protected ()
+  open class Certificate protected ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.Certificate {
     /**
@@ -156,7 +155,7 @@ object Certificates {
   @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateKeyUsages")
   @js.native
   /** Creates a new instance of the CertificateKeyUsages class. */
-  class CertificateKeyUsages ()
+  open class CertificateKeyUsages ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateKeyUsages {
     
@@ -197,7 +196,7 @@ object Certificates {
   @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateQuery")
   @js.native
   /** Creates a new instance of a certificate query. */
-  class CertificateQuery ()
+  open class CertificateQuery ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateQuery {
     
@@ -238,7 +237,7 @@ object Certificates {
   @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateRequestProperties")
   @js.native
   /** Creates and initializes a new instance of the CertificateRequestProperties . */
-  class CertificateRequestProperties ()
+  open class CertificateRequestProperties ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateRequestProperties {
     
@@ -354,14 +353,14 @@ object Certificates {
       * @return An asynchronous operation to retrieve the list of certificates.
       */
     /* static member */
-    inline def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     /**
       * Get all certificates from the certificate stores that match the specified query parameters.
       * @param query The certificate values to search for.
       * @return An asynchronous operation to retrieve the list of certificates.
       */
     /* static member */
-    inline def findAllAsync(query: typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateQuery): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(query.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findAllAsync(query: typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateQuery): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(query.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /**
       * Gets a certificate store from the collection of certificate stores by name.
@@ -390,7 +389,7 @@ object Certificates {
   @JSGlobal("Windows.Security.Cryptography.Certificates.ChainBuildingParameters")
   @js.native
   /** Creates a new instance of the ChainBuildingParameters class. */
-  class ChainBuildingParameters ()
+  open class ChainBuildingParameters ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.ChainBuildingParameters {
     
@@ -420,14 +419,14 @@ object Certificates {
     
     /** Gets or sets the time stamp used to determine whether the certificate chain was time valid. */
     /* CompleteClass */
-    var validationTimestamp: Date = js.native
+    var validationTimestamp: js.Date = js.native
   }
   
   /** Represents values to use when verifying a certificate chain. */
   @JSGlobal("Windows.Security.Cryptography.Certificates.ChainValidationParameters")
   @js.native
   /** Creates a new instance of the ChainValidationParameters class. */
-  class ChainValidationParameters ()
+  open class ChainValidationParameters ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.ChainValidationParameters {
     
@@ -482,7 +481,7 @@ object Certificates {
   /** Represents a signature attached to a signed CMS message. */
   @JSGlobal("Windows.Security.Cryptography.Certificates.CmsAttachedSignature")
   @js.native
-  class CmsAttachedSignature protected ()
+  open class CmsAttachedSignature protected ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.CmsAttachedSignature {
     /**
@@ -534,7 +533,7 @@ object Certificates {
   /** Represents a detached signature for a signed CMS message. */
   @JSGlobal("Windows.Security.Cryptography.Certificates.CmsDetachedSignature")
   @js.native
-  class CmsDetachedSignature protected ()
+  open class CmsDetachedSignature protected ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.CmsDetachedSignature {
     /**
@@ -584,7 +583,7 @@ object Certificates {
   @JSGlobal("Windows.Security.Cryptography.Certificates.CmsSignerInfo")
   @js.native
   /** Creates a new instance of the CmsSignerInfo class. */
-  class CmsSignerInfo ()
+  open class CmsSignerInfo ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.CmsSignerInfo {
     
@@ -618,7 +617,7 @@ object Certificates {
     
     /** Gets the date and time of the timestamp. */
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   /** Specifies the cryptographic operations that can be performed by the private key. This enumeration type is used in the KeyUsages property of a CertificateRequestProperties object. */
@@ -873,7 +872,7 @@ object Certificates {
   @JSGlobal("Windows.Security.Cryptography.Certificates.PfxImportParameters")
   @js.native
   /** Creates a new instance of the PfxImportParameters class. */
-  class PfxImportParameters ()
+  open class PfxImportParameters ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.PfxImportParameters {
     
@@ -931,7 +930,7 @@ object Certificates {
   @JSGlobal("Windows.Security.Cryptography.Certificates.SubjectAlternativeNameInfo")
   @js.native
   /** Creates a new instance of the SubjectAlternativeNameInfo class. */
-  class SubjectAlternativeNameInfo ()
+  open class SubjectAlternativeNameInfo ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.Certificates.SubjectAlternativeNameInfo {
     

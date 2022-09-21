@@ -15,7 +15,7 @@ object utilitiesMod {
     /**
       * Helper to clone an object.
       */
-    inline def clone_(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def clone_(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /**
       * Helper to find an item in an array.
@@ -25,7 +25,7 @@ object utilitiesMod {
     /**
       * Helper to iterate over all keys in an ovject.
       */
-    inline def forEachKey[T](obj: js.Any, iterator: js.Function2[/* key */ js.Any, /* value */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachKey")(obj.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def forEachKey[T](obj: Any, iterator: js.Function2[/* key */ Any, /* value */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachKey")(obj.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns a GUID such as xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx.

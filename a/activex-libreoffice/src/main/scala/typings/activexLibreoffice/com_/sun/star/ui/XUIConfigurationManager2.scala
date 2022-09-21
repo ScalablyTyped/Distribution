@@ -42,7 +42,7 @@ object XUIConfigurationManager2 {
     insertSettings: (String, XIndexAccess) => Unit,
     isModified: () => Boolean,
     isReadOnly: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     reload: () => Unit,
     removeConfigurationListener: XUIConfigurationListener => Unit,

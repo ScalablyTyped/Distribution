@@ -12,20 +12,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JsonRpcClientOptions
   extends StObject
-     with AjaxSettings[js.Any] {
+     with AjaxSettings[Any] {
   
   var ajaxUrl: String
   
   var getSockect: js.UndefOr[js.Function1[/* onmessageCb */ js.Function0[Unit], WebSocket]] = js.undefined
   
   @JSName("headers")
-  var headers_JsonRpcClientOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var headers_JsonRpcClientOptions: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var onclose: js.UndefOr[js.Function1[/* ev */ CloseEvent, Unit]] = js.undefined
   
   var onerror: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   
-  var onmessage: js.UndefOr[js.Function1[/* ev */ MessageEvent[js.Any], Unit]] = js.undefined
+  var onmessage: js.UndefOr[js.Function1[/* ev */ MessageEvent[Any], Unit]] = js.undefined
   
   var onopen: js.UndefOr[js.Function1[/* ev */ Event, Unit]] = js.undefined
   
@@ -46,7 +46,7 @@ object JsonRpcClientOptions {
     
     inline def setGetSockectUndefined: Self = StObject.set(x, "getSockect", js.undefined)
     
-    inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
@@ -58,7 +58,7 @@ object JsonRpcClientOptions {
     
     inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
-    inline def setOnmessage(value: /* ev */ MessageEvent[js.Any] => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
+    inline def setOnmessage(value: /* ev */ MessageEvent[Any] => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
     
     inline def setOnmessageUndefined: Self = StObject.set(x, "onmessage", js.undefined)
     

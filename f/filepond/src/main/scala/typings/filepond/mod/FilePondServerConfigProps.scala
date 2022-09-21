@@ -75,7 +75,7 @@ object FilePondServerConfigProps {
     
     inline def setChunkRetryDelaysUndefined: Self = StObject.set(x, "chunkRetryDelays", js.undefined)
     
-    inline def setChunkRetryDelaysVarargs(value: Double*): Self = StObject.set(x, "chunkRetryDelays", js.Array(value :_*))
+    inline def setChunkRetryDelaysVarargs(value: Double*): Self = StObject.set(x, "chunkRetryDelays", js.Array(value*))
     
     inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
@@ -89,7 +89,7 @@ object FilePondServerConfigProps {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: (FilePondInitialFile | ActualFileObject | Blob | String)*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: (FilePondInitialFile | ActualFileObject | Blob | String)*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setInstantUpload(value: Boolean): Self = StObject.set(x, "instantUpload", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetComplianceDetailsByConfigRuleResponse extends StObject {
   
   /**
-    * Indicates whether the AWS resource complies with the specified AWS Config rule.
+    * Indicates whether the Amazon Web Services resource complies with the specified Config rule.
     */
   var EvaluationResults: js.UndefOr[typings.awsSdk.configserviceMod.EvaluationResults] = js.undefined
   
@@ -29,7 +29,7 @@ object GetComplianceDetailsByConfigRuleResponse {
     
     inline def setEvaluationResultsUndefined: Self = StObject.set(x, "EvaluationResults", js.undefined)
     
-    inline def setEvaluationResultsVarargs(value: EvaluationResult*): Self = StObject.set(x, "EvaluationResults", js.Array(value :_*))
+    inline def setEvaluationResultsVarargs(value: EvaluationResult*): Self = StObject.set(x, "EvaluationResults", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,7 @@ object XPropertySetRegistryFactory {
   inline def apply(
     acquire: () => Unit,
     createPropertySetRegistry: String => XPropertySetRegistry,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XPropertySetRegistryFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createPropertySetRegistry = js.Any.fromFunction1(createPropertySetRegistry), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

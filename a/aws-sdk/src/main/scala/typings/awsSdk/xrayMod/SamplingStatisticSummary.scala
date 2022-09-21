@@ -29,7 +29,7 @@ trait SamplingStatisticSummary extends StObject {
   /**
     * The start time of the reporting window.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.xrayMod.Timestamp] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
 }
 object SamplingStatisticSummary {
   
@@ -56,7 +56,7 @@ object SamplingStatisticSummary {
     
     inline def setSampledCountUndefined: Self = StObject.set(x, "SampledCount", js.undefined)
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.EquiRectangularCubeTexture")
 @js.native
-class EquiRectangularCubeTexture protected ()
+open class EquiRectangularCubeTexture protected ()
   extends StObject
      with typings.babylonjs.BABYLON.EquiRectangularCubeTexture {
   /**
@@ -77,7 +77,7 @@ class EquiRectangularCubeTexture protected ()
     gammaSpace: Boolean,
     onLoad: Unit,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
   ) = this()
   def this(
@@ -88,7 +88,7 @@ class EquiRectangularCubeTexture protected ()
     gammaSpace: Boolean,
     onLoad: Nullable[js.Function0[Unit]],
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
   ) = this()
   def this(
@@ -99,7 +99,7 @@ class EquiRectangularCubeTexture protected ()
     gammaSpace: Unit,
     onLoad: Unit,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
   ) = this()
   def this(
@@ -110,7 +110,7 @@ class EquiRectangularCubeTexture protected ()
     gammaSpace: Unit,
     onLoad: Nullable[js.Function0[Unit]],
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
   ) = this()
   def this(
@@ -121,7 +121,7 @@ class EquiRectangularCubeTexture protected ()
     gammaSpace: Boolean,
     onLoad: Unit,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
   ) = this()
   def this(
@@ -132,7 +132,7 @@ class EquiRectangularCubeTexture protected ()
     gammaSpace: Boolean,
     onLoad: Nullable[js.Function0[Unit]],
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
   ) = this()
   def this(
@@ -143,7 +143,7 @@ class EquiRectangularCubeTexture protected ()
     gammaSpace: Unit,
     onLoad: Unit,
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
   ) = this()
   def this(
@@ -154,7 +154,7 @@ class EquiRectangularCubeTexture protected ()
     gammaSpace: Unit,
     onLoad: Nullable[js.Function0[Unit]],
     onError: Nullable[
-        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
       ]
   ) = this()
   
@@ -174,6 +174,6 @@ object EquiRectangularCubeTexture {
   /** The six faces of the cube. */
   @JSGlobal("BABYLON.EquiRectangularCubeTexture._FacesMapping")
   @js.native
-  def _FacesMapping: js.Any = js.native
-  inline def _FacesMapping_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FacesMapping")(x.asInstanceOf[js.Any])
+  def _FacesMapping: Any = js.native
+  inline def _FacesMapping_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FacesMapping")(x.asInstanceOf[js.Any])
 }

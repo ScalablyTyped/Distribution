@@ -10,10 +10,10 @@ A layout and template manager for Backbone.js applications.
 | ------------------ | :-------------: |
 | Full name          | backbone.layoutmanager |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 20449 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 579.0 |
+| # stars            | 1700.0 |
 
 ## Links
 - [Homepage](http://layoutmanager.org/)

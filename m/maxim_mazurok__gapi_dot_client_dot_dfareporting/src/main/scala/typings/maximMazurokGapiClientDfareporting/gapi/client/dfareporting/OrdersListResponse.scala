@@ -36,6 +36,6 @@ object OrdersListResponse {
     
     inline def setOrdersUndefined: Self = StObject.set(x, "orders", js.undefined)
     
-    inline def setOrdersVarargs(value: Order*): Self = StObject.set(x, "orders", js.Array(value :_*))
+    inline def setOrdersVarargs(value: Order*): Self = StObject.set(x, "orders", js.Array(value*))
   }
 }

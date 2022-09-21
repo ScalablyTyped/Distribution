@@ -12,7 +12,7 @@ trait IVariableListDef extends StObject {
   /**
     * Data Type JSON
     */
-  var qData: js.Any
+  var qData: Any
   
   /**
     * Shows the system variables if set to true.
@@ -31,14 +31,14 @@ trait IVariableListDef extends StObject {
 }
 object IVariableListDef {
   
-  inline def apply(qData: js.Any, qShowConfig: Boolean, qShowReserved: Boolean, qType: String): IVariableListDef = {
+  inline def apply(qData: Any, qShowConfig: Boolean, qShowReserved: Boolean, qType: String): IVariableListDef = {
     val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qShowConfig = qShowConfig.asInstanceOf[js.Any], qShowReserved = qShowReserved.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVariableListDef]
   }
   
   extension [Self <: IVariableListDef](x: Self) {
     
-    inline def setQData(value: js.Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
+    inline def setQData(value: Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
     inline def setQShowConfig(value: Boolean): Self = StObject.set(x, "qShowConfig", value.asInstanceOf[js.Any])
     

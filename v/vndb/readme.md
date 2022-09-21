@@ -11,9 +11,9 @@ VNDB API wrapper
 | Full name          | vndb |
 | Keywords           | VNDB, Visual Novel, API Wrapper |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 802 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 12.333333333333334 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/Permagate/vndb-reborn)

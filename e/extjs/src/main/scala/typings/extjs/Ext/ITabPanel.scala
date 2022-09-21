@@ -10,7 +10,7 @@ trait ITabPanel
      with typings.extjs.Ext.panel.IPanel {
   
   /** [Config Option] (String/Number/Ext.Component) */
-  var activeTab: js.UndefOr[js.Any] = js.undefined
+  var activeTab: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var deferredRender: js.UndefOr[Boolean] = js.undefined
@@ -39,9 +39,7 @@ trait ITabPanel
     * @param index Object
     */
   @JSName("onAdd")
-  var onAdd_ITabPanel: js.UndefOr[
-    js.Function2[/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var onAdd_ITabPanel: js.UndefOr[js.Function2[/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var plain: js.UndefOr[Boolean] = js.undefined
@@ -53,13 +51,13 @@ trait ITabPanel
     * @param card String/Number/Ext.Component The card to make active. Either an ID, index or the component itself.
     * @returns Ext.Component The resulting active child Component. The call may have been vetoed, or otherwise modified by an event listener.
     */
-  var setActiveTab: js.UndefOr[js.Function1[/* card */ js.UndefOr[js.Any], IComponent]] = js.undefined
+  var setActiveTab: js.UndefOr[js.Function1[/* card */ js.UndefOr[Any], IComponent]] = js.undefined
   
   /** [Config Option] (Object) */
-  var tabBar: js.UndefOr[js.Any] = js.undefined
+  var tabBar: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] ("top"/"bottom"/"left"/"right") */
-  var tabPosition: js.UndefOr[js.Any] = js.undefined
+  var tabPosition: js.UndefOr[Any] = js.undefined
 }
 object ITabPanel {
   
@@ -70,7 +68,7 @@ object ITabPanel {
   
   extension [Self <: ITabPanel](x: Self) {
     
-    inline def setActiveTab(value: js.Any): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
+    inline def setActiveTab(value: Any): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
     
     inline def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
     
@@ -98,7 +96,7 @@ object ITabPanel {
     
     inline def setMinTabWidthUndefined: Self = StObject.set(x, "minTabWidth", js.undefined)
     
-    inline def setOnAdd(value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction2(value))
+    inline def setOnAdd(value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction2(value))
     
     inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
     
@@ -110,15 +108,15 @@ object ITabPanel {
     
     inline def setRemovePanelHeaderUndefined: Self = StObject.set(x, "removePanelHeader", js.undefined)
     
-    inline def setSetActiveTab(value: /* card */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "setActiveTab", js.Any.fromFunction1(value))
+    inline def setSetActiveTab(value: /* card */ js.UndefOr[Any] => IComponent): Self = StObject.set(x, "setActiveTab", js.Any.fromFunction1(value))
     
     inline def setSetActiveTabUndefined: Self = StObject.set(x, "setActiveTab", js.undefined)
     
-    inline def setTabBar(value: js.Any): Self = StObject.set(x, "tabBar", value.asInstanceOf[js.Any])
+    inline def setTabBar(value: Any): Self = StObject.set(x, "tabBar", value.asInstanceOf[js.Any])
     
     inline def setTabBarUndefined: Self = StObject.set(x, "tabBar", js.undefined)
     
-    inline def setTabPosition(value: js.Any): Self = StObject.set(x, "tabPosition", value.asInstanceOf[js.Any])
+    inline def setTabPosition(value: Any): Self = StObject.set(x, "tabPosition", value.asInstanceOf[js.Any])
     
     inline def setTabPositionUndefined: Self = StObject.set(x, "tabPosition", js.undefined)
   }

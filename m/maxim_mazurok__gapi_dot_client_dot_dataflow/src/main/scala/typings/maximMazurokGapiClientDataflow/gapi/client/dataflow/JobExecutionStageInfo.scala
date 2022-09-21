@@ -22,6 +22,6 @@ object JobExecutionStageInfo {
     
     inline def setStepNameUndefined: Self = StObject.set(x, "stepName", js.undefined)
     
-    inline def setStepNameVarargs(value: String*): Self = StObject.set(x, "stepName", js.Array(value :_*))
+    inline def setStepNameVarargs(value: String*): Self = StObject.set(x, "stepName", js.Array(value*))
   }
 }

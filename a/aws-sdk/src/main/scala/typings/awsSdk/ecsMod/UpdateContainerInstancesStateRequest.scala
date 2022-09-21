@@ -12,12 +12,12 @@ trait UpdateContainerInstancesStateRequest extends StObject {
   var cluster: js.UndefOr[String] = js.undefined
   
   /**
-    * A list of container instance IDs or full ARN entries.
+    * A list of up to 10 container instance IDs or full ARN entries.
     */
   var containerInstances: StringList
   
   /**
-    * The container instance state with which to update the container instance. The only valid values for this action are ACTIVE and DRAINING. A container instance can only be updated to DRAINING status once it has reached an ACTIVE state. If a container instance is in REGISTERING, DEREGISTERING, or REGISTRATION_FAILED state you can describe the container instance but will be unable to update the container instance state.
+    * The container instance state to update the container instance with. The only valid values for this action are ACTIVE and DRAINING. A container instance can only be updated to DRAINING status once it has reached an ACTIVE state. If a container instance is in REGISTERING, DEREGISTERING, or REGISTRATION_FAILED state you can describe the container instance but can't update the container instance state.
     */
   var status: ContainerInstanceStatus
 }
@@ -36,7 +36,7 @@ object UpdateContainerInstancesStateRequest {
     
     inline def setContainerInstances(value: StringList): Self = StObject.set(x, "containerInstances", value.asInstanceOf[js.Any])
     
-    inline def setContainerInstancesVarargs(value: String*): Self = StObject.set(x, "containerInstances", js.Array(value :_*))
+    inline def setContainerInstancesVarargs(value: String*): Self = StObject.set(x, "containerInstances", js.Array(value*))
     
     inline def setStatus(value: ContainerInstanceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

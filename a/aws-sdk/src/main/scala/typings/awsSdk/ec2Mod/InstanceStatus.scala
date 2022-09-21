@@ -58,7 +58,7 @@ object InstanceStatus {
     
     inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
-    inline def setEventsVarargs(value: InstanceStatusEvent*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: InstanceStatusEvent*): Self = StObject.set(x, "Events", js.Array(value*))
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

@@ -84,8 +84,8 @@ object smarttags {
     
     inline def apply(
       acquire: () => Unit,
-      initialize: SeqEquiv[js.Any] => Unit,
-      queryInterface: `type` => js.Any,
+      initialize: SeqEquiv[Any] => Unit,
+      queryInterface: `type` => Any,
       recognizeTextRange: (XTextRange, SmartTagRecognizerMode, XTextMarkup, String, XController) => Unit,
       release: () => Unit
     ): XRangeBasedSmartTagRecognizer = {
@@ -251,11 +251,11 @@ object smarttags {
       getName: Locale => String,
       getSmartTagCaption: (Double, Locale) => String,
       getSmartTagName: Double => String,
-      initialize: SeqEquiv[js.Any] => Unit,
+      initialize: SeqEquiv[Any] => Unit,
       invokeAction: (Double, String, XController, XTextRange, XStringKeyMap, String, String, Locale) => Unit,
       isCaptionDynamic: (Double, String, XController, Locale) => Boolean,
       isShowSmartTagIndicator: (Double, String, XController, Locale) => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XSmartTagAction = {
       val __obj = js.Dynamic.literal(SmartTagCount = SmartTagCount.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getActionCaptionFromID = js.Any.fromFunction8(getActionCaptionFromID), getActionCount = js.Any.fromFunction3(getActionCount), getActionID = js.Any.fromFunction3(getActionID), getActionNameFromID = js.Any.fromFunction2(getActionNameFromID), getDescription = js.Any.fromFunction1(getDescription), getName = js.Any.fromFunction1(getName), getSmartTagCaption = js.Any.fromFunction2(getSmartTagCaption), getSmartTagName = js.Any.fromFunction1(getSmartTagName), initialize = js.Any.fromFunction1(initialize), invokeAction = js.Any.fromFunction8(invokeAction), isCaptionDynamic = js.Any.fromFunction4(isCaptionDynamic), isShowSmartTagIndicator = js.Any.fromFunction4(isShowSmartTagIndicator), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -383,8 +383,8 @@ object smarttags {
       getSmartTagDownloadURL: Double => String,
       getSmartTagName: Double => String,
       hasPropertyPage: (Double, Locale) => Boolean,
-      initialize: SeqEquiv[js.Any] => Unit,
-      queryInterface: `type` => js.Any,
+      initialize: SeqEquiv[Any] => Unit,
+      queryInterface: `type` => Any,
       recognize: (String, Double, Double, SmartTagRecognizerMode, Locale, XTextMarkup, String, XController, XBreakIterator) => Unit,
       release: () => Unit
     ): XSmartTagRecognizer = {

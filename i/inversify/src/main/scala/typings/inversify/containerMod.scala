@@ -1,61 +1,90 @@
 package typings.inversify
 
 import typings.inversify.interfacesMod.interfaces.ContainerOptions
-import typings.inversify.interfacesMod.interfaces.ServiceIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object containerMod {
   
-  @JSImport("inversify/dts/container/container", "Container")
+  @JSImport("inversify/lib/container/container", "Container")
   @js.native
-  class Container ()
+  open class Container ()
     extends StObject
        with typings.inversify.interfacesMod.interfaces.Container {
     def this(containerOptions: ContainerOptions) = this()
     
-    /* private */ var _bindingDictionary: js.Any = js.native
+    /* private */ var _activations: Any = js.native
     
-    /* private */ def _get[T](
-      avoidConstraints: js.Any,
-      isMultiInject: js.Any,
-      targetType: js.Any,
-      serviceIdentifier: js.Any,
-      key: js.Any,
-      value: js.Any
-    ): js.Any = js.native
+    /* private */ var _bindingDeactivationAndPreDestroy: Any = js.native
     
-    /* private */ def _getContainerModuleHelpersFactory(): js.Any = js.native
+    /* private */ var _bindingDeactivationAndPreDestroyAsync: Any = js.native
     
-    /* private */ var _metadataReader: js.Any = js.native
+    /* private */ var _bindingDictionary: Any = js.native
     
-    /* private */ var _middleware: js.Any = js.native
+    /* private */ var _deactivate: Any = js.native
     
-    /* private */ def _planAndResolve[T](): js.Any = js.native
+    /* private */ var _deactivateContainer: Any = js.native
     
-    /* private */ var _snapshots: js.Any = js.native
+    /* private */ var _deactivateContainerAsync: Any = js.native
+    
+    /* private */ var _deactivateIfSingleton: Any = js.native
+    
+    /* private */ var _deactivateSingletons: Any = js.native
+    
+    /* private */ var _deactivateSingletonsAsync: Any = js.native
+    
+    /* private */ var _deactivations: Any = js.native
+    
+    /* private */ var _get: Any = js.native
+    
+    /* private */ var _getAll: Any = js.native
+    
+    /* private */ var _getAllArgs: Any = js.native
+    
+    /* private */ var _getButThrowIfAsync: Any = js.native
+    
+    /* private */ var _getContainerModuleHelpersFactory: Any = js.native
+    
+    /* private */ var _getNotAllArgs: Any = js.native
+    
+    /* private */ var _handleDeactivationError: Any = js.native
+    
+    /* private */ var _metadataReader: Any = js.native
+    
+    /* private */ var _middleware: Any = js.native
+    
+    /* private */ var _moduleActivationStore: Any = js.native
+    
+    /* private */ var _planAndResolve: Any = js.native
+    
+    /* private */ var _preDestroy: Any = js.native
+    
+    /* private */ var _propagateContainerDeactivationThenBindingAndPreDestroy: Any = js.native
+    
+    /* private */ var _propagateContainerDeactivationThenBindingAndPreDestroyAsync: Any = js.native
+    
+    /* private */ var _removeModuleBindings: Any = js.native
+    
+    /* private */ var _removeModuleHandlers: Any = js.native
+    
+    /* private */ var _removeServiceFromDictionary: Any = js.native
+    
+    /* private */ var _snapshots: Any = js.native
     
     def createChild(containerOptions: ContainerOptions): Container = js.native
-    
-    def getAllNamed[T](serviceIdentifier: ServiceIdentifier[T], named: String): js.Array[T] = js.native
-    def getAllNamed[T](serviceIdentifier: ServiceIdentifier[T], named: js.Symbol): js.Array[T] = js.native
-    def getAllNamed[T](serviceIdentifier: ServiceIdentifier[T], named: Double): js.Array[T] = js.native
-    
-    def getAllTagged[T](serviceIdentifier: ServiceIdentifier[T], key: String, value: js.Any): js.Array[T] = js.native
-    def getAllTagged[T](serviceIdentifier: ServiceIdentifier[T], key: js.Symbol, value: js.Any): js.Array[T] = js.native
-    def getAllTagged[T](serviceIdentifier: ServiceIdentifier[T], key: Double, value: js.Any): js.Array[T] = js.native
   }
   object Container {
     
-    @JSImport("inversify/dts/container/container", "Container")
+    @JSImport("inversify/lib/container/container", "Container")
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
     inline def merge(
       container1: typings.inversify.interfacesMod.interfaces.Container,
-      container2: typings.inversify.interfacesMod.interfaces.Container
-    ): typings.inversify.interfacesMod.interfaces.Container = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(container1.asInstanceOf[js.Any], container2.asInstanceOf[js.Any])).asInstanceOf[typings.inversify.interfacesMod.interfaces.Container]
+      container2: typings.inversify.interfacesMod.interfaces.Container,
+      containers: typings.inversify.interfacesMod.interfaces.Container*
+    ): typings.inversify.interfacesMod.interfaces.Container = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")((List(container1.asInstanceOf[js.Any], container2.asInstanceOf[js.Any])).`++`(containers.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.inversify.interfacesMod.interfaces.Container]
   }
 }

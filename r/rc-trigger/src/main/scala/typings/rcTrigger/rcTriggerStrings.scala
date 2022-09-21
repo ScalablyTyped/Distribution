@@ -14,6 +14,12 @@ object rcTriggerStrings {
   inline def align: align = "align".asInstanceOf[align]
   
   @js.native
+  sealed trait alignPre
+    extends StObject
+       with _PopupStatus
+  inline def alignPre: alignPre = "alignPre".asInstanceOf[alignPre]
+  
+  @js.native
   sealed trait aligned
     extends StObject
        with _PopupStatus

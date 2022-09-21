@@ -83,7 +83,7 @@ trait PlusGalleryGalleryOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */
-  var selected: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var selected: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 是否使用系统相册文件选择界面
@@ -131,11 +131,11 @@ object PlusGalleryGalleryOptions {
     
     inline def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
     
-    inline def setSelected(value: js.Array[js.Any]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: js.Array[Any]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    inline def setSelectedVarargs(value: js.Any*): Self = StObject.set(x, "selected", js.Array(value :_*))
+    inline def setSelectedVarargs(value: Any*): Self = StObject.set(x, "selected", js.Array(value*))
     
     inline def setSystem(value: Boolean): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     

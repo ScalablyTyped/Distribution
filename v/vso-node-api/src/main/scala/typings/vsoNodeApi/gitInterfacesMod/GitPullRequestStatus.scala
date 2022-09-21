@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,22 +17,22 @@ trait GitPullRequestStatus
   /**
     * Custom properties of the status.
     */
-  var properties: js.Any
+  var properties: Any
 }
 object GitPullRequestStatus {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     context: GitStatusContext,
     createdBy: IdentityRef,
-    creationDate: Date,
+    creationDate: js.Date,
     description: String,
     id: Double,
     iterationId: Double,
-    properties: js.Any,
+    properties: Any,
     state: GitStatusState,
     targetUrl: String,
-    updatedDate: Date
+    updatedDate: js.Date
   ): GitPullRequestStatus = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], createdBy = createdBy.asInstanceOf[js.Any], creationDate = creationDate.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], iterationId = iterationId.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], targetUrl = targetUrl.asInstanceOf[js.Any], updatedDate = updatedDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitPullRequestStatus]
@@ -43,6 +42,6 @@ object GitPullRequestStatus {
     
     inline def setIterationId(value: Double): Self = StObject.set(x, "iterationId", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

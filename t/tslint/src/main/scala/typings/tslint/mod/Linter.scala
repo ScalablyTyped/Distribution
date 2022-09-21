@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tslint", "Linter")
 @js.native
-class Linter protected ()
+open class Linter protected ()
   extends typings.tslint.linterMod.Linter {
   def this(options: ILinterOptions) = this()
   def this(options: ILinterOptions, program: Program) = this()

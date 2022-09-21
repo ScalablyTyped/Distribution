@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Specifies the border style.
   *
+  * @remarks
   * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.TableBorder")
 @js.native
-class TableBorder ()
+open class TableBorder ()
   extends StObject
      with typings.officeJs.Word.TableBorder {
   

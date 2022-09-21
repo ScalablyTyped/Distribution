@@ -51,6 +51,9 @@ trait BatchReadSuccessfulResponse extends StObject {
     */
   var ListObjectParentPaths: js.UndefOr[BatchListObjectParentPathsResponse] = js.undefined
   
+  /**
+    * The list of parent objects to retrieve.
+    */
   var ListObjectParents: js.UndefOr[BatchListObjectParentsResponse] = js.undefined
   
   /**

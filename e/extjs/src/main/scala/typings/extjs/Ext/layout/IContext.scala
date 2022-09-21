@@ -33,7 +33,7 @@ trait IContext
     * @param full Boolean True if all properties should be invalidated, otherwise only those calculated by the component should be invalidated.
     */
   var invalidate: js.UndefOr[
-    js.Function2[/* components */ js.UndefOr[js.Any], /* full */ js.UndefOr[Boolean], Unit]
+    js.Function2[/* components */ js.UndefOr[Any], /* full */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   
   /** [Property] (Ext.util.Queue) */
@@ -54,9 +54,9 @@ trait IContext
     */
   var resetLayout: js.UndefOr[
     js.Function3[
-      /* layout */ js.UndefOr[js.Any], 
-      /* ownerContext */ js.UndefOr[js.Any], 
-      /* firstTime */ js.UndefOr[js.Any], 
+      /* layout */ js.UndefOr[Any], 
+      /* ownerContext */ js.UndefOr[Any], 
+      /* firstTime */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -78,7 +78,7 @@ trait IContext
     */
   var setItemSize: js.UndefOr[
     js.Function3[
-      /* items */ js.UndefOr[js.Any], 
+      /* items */ js.UndefOr[Any], 
       /* width */ js.UndefOr[Double], 
       /* height */ js.UndefOr[Double], 
       Unit
@@ -109,7 +109,7 @@ object IContext {
     
     inline def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
     
-    inline def setInvalidate(value: (/* components */ js.UndefOr[js.Any], /* full */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction2(value))
+    inline def setInvalidate(value: (/* components */ js.UndefOr[Any], /* full */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction2(value))
     
     inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
     
@@ -122,7 +122,7 @@ object IContext {
     inline def setRemoveElUndefined: Self = StObject.set(x, "removeEl", js.undefined)
     
     inline def setResetLayout(
-      value: (/* layout */ js.UndefOr[js.Any], /* ownerContext */ js.UndefOr[js.Any], /* firstTime */ js.UndefOr[js.Any]) => Unit
+      value: (/* layout */ js.UndefOr[Any], /* ownerContext */ js.UndefOr[Any], /* firstTime */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "resetLayout", js.Any.fromFunction3(value))
     
     inline def setResetLayoutUndefined: Self = StObject.set(x, "resetLayout", js.undefined)
@@ -136,7 +136,7 @@ object IContext {
     inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
     
     inline def setSetItemSize(
-      value: (/* items */ js.UndefOr[js.Any], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit
+      value: (/* items */ js.UndefOr[Any], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit
     ): Self = StObject.set(x, "setItemSize", js.Any.fromFunction3(value))
     
     inline def setSetItemSizeUndefined: Self = StObject.set(x, "setItemSize", js.undefined)

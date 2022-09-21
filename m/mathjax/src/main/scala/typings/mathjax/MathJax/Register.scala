@@ -16,26 +16,26 @@ trait Register extends StObject {
     * Processing, and New Math messages are sent). When the message equals the type, the callback will be called
     * with the message as its parameter.
     */
-  def MessageHook(`type`: String, callBack: js.Any): Unit
+  def MessageHook(`type`: String, callBack: Any): Unit
   
   /*Used by preprocessors to register themselves with MathJax so that they will be called during the
     * MathJax.Hub.PreProcess() action.
     */
-  def PreProcessor(callBack: js.Any): Unit
+  def PreProcessor(callBack: Any): Unit
   
   /*Registers a listener for a particular message being sent to the startup signal (where initialization and
     * component startup messages are sent). When the message equals the type, the callback will be called with the
     * message as its parameter. See the Using Signals documentation for more details.
     */
-  def StartupHook(`type`: String, callBack: js.Any): Unit
+  def StartupHook(`type`: String, callBack: Any): Unit
 }
 object Register {
   
   inline def apply(
     LoadHook: (String, js.Function) => Unit,
-    MessageHook: (String, js.Any) => Unit,
-    PreProcessor: js.Any => Unit,
-    StartupHook: (String, js.Any) => Unit
+    MessageHook: (String, Any) => Unit,
+    PreProcessor: Any => Unit,
+    StartupHook: (String, Any) => Unit
   ): Register = {
     val __obj = js.Dynamic.literal(LoadHook = js.Any.fromFunction2(LoadHook), MessageHook = js.Any.fromFunction2(MessageHook), PreProcessor = js.Any.fromFunction1(PreProcessor), StartupHook = js.Any.fromFunction2(StartupHook))
     __obj.asInstanceOf[Register]
@@ -45,10 +45,10 @@ object Register {
     
     inline def setLoadHook(value: (String, js.Function) => Unit): Self = StObject.set(x, "LoadHook", js.Any.fromFunction2(value))
     
-    inline def setMessageHook(value: (String, js.Any) => Unit): Self = StObject.set(x, "MessageHook", js.Any.fromFunction2(value))
+    inline def setMessageHook(value: (String, Any) => Unit): Self = StObject.set(x, "MessageHook", js.Any.fromFunction2(value))
     
-    inline def setPreProcessor(value: js.Any => Unit): Self = StObject.set(x, "PreProcessor", js.Any.fromFunction1(value))
+    inline def setPreProcessor(value: Any => Unit): Self = StObject.set(x, "PreProcessor", js.Any.fromFunction1(value))
     
-    inline def setStartupHook(value: (String, js.Any) => Unit): Self = StObject.set(x, "StartupHook", js.Any.fromFunction2(value))
+    inline def setStartupHook(value: (String, Any) => Unit): Self = StObject.set(x, "StartupHook", js.Any.fromFunction2(value))
   }
 }

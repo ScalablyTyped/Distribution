@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.BaseCollection")
 @js.native
-class BaseCollection[T] ()
+open class BaseCollection[T] ()
   extends StObject
      with typings.sharepoint.SP.BaseCollection[T] {
   

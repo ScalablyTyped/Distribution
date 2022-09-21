@@ -10,10 +10,10 @@ Binary chunking for WebRTC data channels & more.
 | ------------------ | :-------------: |
 | Full name          | chunked-dc |
 | Keywords           | saltyrtc, webrtc, ortc, chunking |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 285 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 29.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/saltyrtc/chunked-dc-js#readme)

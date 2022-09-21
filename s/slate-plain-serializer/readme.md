@@ -10,15 +10,12 @@ A plain text serializer for Slate editors.
 | ------------------ | :-------------: |
 | Full name          | slate-plain-serializer |
 | Keywords           | deserialize, editor, plain, plaintext, serialize, serializer, slate, string, text, xml |
-| # releases         | 96 |
-| # dependents       | 103 |
-| # downloads        | 4066463 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 392755.3333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/ianstormtaylor/slate#readme)
-- [Bugs](https://github.com/ianstormtaylor/slate/issues)
-- [Repository](https://github.com/ianstormtaylor/slate)
 - [Npm](https://www.npmjs.com/package/slate-plain-serializer)
     
 

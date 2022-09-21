@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@stylable/runtime" : "3.11.7"
+      "@stylable/runtime" : "5.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@stylable/runtime" : "3.11.7"
+      "@stylable/runtime" : "5.2.1"
     }
   ],
   "compile-devDependencies" : [

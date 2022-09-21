@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@stablelib/sha256" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@stablelib/sha256" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

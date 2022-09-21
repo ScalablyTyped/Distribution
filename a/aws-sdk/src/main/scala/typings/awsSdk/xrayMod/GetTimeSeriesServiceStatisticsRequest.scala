@@ -9,7 +9,7 @@ trait GetTimeSeriesServiceStatisticsRequest extends StObject {
   /**
     * The end of the time frame for which to aggregate statistics.
     */
-  var EndTime: Timestamp
+  var EndTime: js.Date
   
   /**
     * A filter expression defining entities that will be aggregated for statistics. Supports ID, service, and edge functions. If no selector expression is specified, edge statistics are returned. 
@@ -44,18 +44,18 @@ trait GetTimeSeriesServiceStatisticsRequest extends StObject {
   /**
     * The start of the time frame for which to aggregate statistics.
     */
-  var StartTime: Timestamp
+  var StartTime: js.Date
 }
 object GetTimeSeriesServiceStatisticsRequest {
   
-  inline def apply(EndTime: Timestamp, StartTime: Timestamp): GetTimeSeriesServiceStatisticsRequest = {
+  inline def apply(EndTime: js.Date, StartTime: js.Date): GetTimeSeriesServiceStatisticsRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTimeSeriesServiceStatisticsRequest]
   }
   
   extension [Self <: GetTimeSeriesServiceStatisticsRequest](x: Self) {
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEntitySelectorExpression(value: EntitySelectorExpression): Self = StObject.set(x, "EntitySelectorExpression", value.asInstanceOf[js.Any])
     
@@ -81,6 +81,6 @@ object GetTimeSeriesServiceStatisticsRequest {
     
     inline def setPeriodUndefined: Self = StObject.set(x, "Period", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

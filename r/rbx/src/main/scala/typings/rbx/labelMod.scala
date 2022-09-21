@@ -65,7 +65,7 @@ object labelMod {
   
   @JSImport("rbx/elements/form/label", "Label")
   @js.native
-  val Label: ForwardRefAsExoticComponent[LabelProps, ElementType[js.Any]] = js.native
+  val Label: ForwardRefAsExoticComponent[LabelProps, ElementType[Any]] = js.native
   
   trait LabelModifierProps extends StObject {
     

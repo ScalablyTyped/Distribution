@@ -7,6 +7,7 @@ import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.Custo
 import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.FirstAndThirdPartyAudiencesResource
 import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.FloodlightGroupsResource
 import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.GoogleAudiencesResource
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.GuaranteedOrdersResource
 import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.InventorySourceGroupsResource
 import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.InventorySourcesResource
 import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.MediaResource
@@ -60,6 +61,10 @@ object global {
         @js.native
         val googleAudiences: GoogleAudiencesResource = js.native
         
+        @JSGlobal("gapi.client.displayvideo.guaranteedOrders")
+        @js.native
+        val guaranteedOrders: GuaranteedOrdersResource = js.native
+        
         @JSGlobal("gapi.client.displayvideo.inventorySourceGroups")
         @js.native
         val inventorySourceGroups: InventorySourceGroupsResource = js.native
@@ -91,7 +96,7 @@ object global {
       
       /** Load Display & Video 360 API v1 */
       inline def load(name: displayvideo, version: v1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
-      inline def load(name: displayvideo, version: v1, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def load(name: displayvideo, version: v1, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
 }

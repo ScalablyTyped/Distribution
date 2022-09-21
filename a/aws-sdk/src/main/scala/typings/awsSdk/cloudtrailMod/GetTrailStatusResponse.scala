@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetTrailStatusResponse extends StObject {
   
   /**
-    * Whether the CloudTrail is currently logging AWS API calls.
+    * Whether the CloudTrail trail is currently logging Amazon Web Services API calls.
     */
   var IsLogging: js.UndefOr[Boolean] = js.undefined
   
@@ -19,7 +19,7 @@ trait GetTrailStatusResponse extends StObject {
   /**
     * Displays the most recent date and time when CloudTrail delivered logs to CloudWatch Logs.
     */
-  var LatestCloudWatchLogsDeliveryTime: js.UndefOr[Date] = js.undefined
+  var LatestCloudWatchLogsDeliveryTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * This field is no longer in use.
@@ -32,24 +32,24 @@ trait GetTrailStatusResponse extends StObject {
   var LatestDeliveryAttemptTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Displays any Amazon S3 error that CloudTrail encountered when attempting to deliver log files to the designated bucket. For more information see the topic Error Responses in the Amazon S3 API Reference.   This error occurs only when there is a problem with the destination S3 bucket and will not occur for timeouts. To resolve the issue, create a new bucket and call UpdateTrail to specify the new bucket, or fix the existing objects so that CloudTrail can again write to the bucket. 
+    * Displays any Amazon S3 error that CloudTrail encountered when attempting to deliver log files to the designated bucket. For more information, see Error Responses in the Amazon S3 API Reference.   This error occurs only when there is a problem with the destination S3 bucket, and does not occur for requests that time out. To resolve the issue, create a new bucket, and then call UpdateTrail to specify the new bucket; or fix the existing objects so that CloudTrail can again write to the bucket. 
     */
   var LatestDeliveryError: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the date and time that CloudTrail last delivered log files to an account's Amazon S3 bucket.
     */
-  var LatestDeliveryTime: js.UndefOr[Date] = js.undefined
+  var LatestDeliveryTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Displays any Amazon S3 error that CloudTrail encountered when attempting to deliver a digest file to the designated bucket. For more information see the topic Error Responses in the Amazon S3 API Reference.   This error occurs only when there is a problem with the destination S3 bucket and will not occur for timeouts. To resolve the issue, create a new bucket and call UpdateTrail to specify the new bucket, or fix the existing objects so that CloudTrail can again write to the bucket. 
+    * Displays any Amazon S3 error that CloudTrail encountered when attempting to deliver a digest file to the designated bucket. For more information, see Error Responses in the Amazon S3 API Reference.   This error occurs only when there is a problem with the destination S3 bucket, and does not occur for requests that time out. To resolve the issue, create a new bucket, and then call UpdateTrail to specify the new bucket; or fix the existing objects so that CloudTrail can again write to the bucket. 
     */
   var LatestDigestDeliveryError: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the date and time that CloudTrail last delivered a digest file to an account's Amazon S3 bucket.
     */
-  var LatestDigestDeliveryTime: js.UndefOr[Date] = js.undefined
+  var LatestDigestDeliveryTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * This field is no longer in use.
@@ -69,17 +69,17 @@ trait GetTrailStatusResponse extends StObject {
   /**
     * Specifies the date and time of the most recent Amazon SNS notification that CloudTrail has written a new log file to an account's Amazon S3 bucket.
     */
-  var LatestNotificationTime: js.UndefOr[Date] = js.undefined
+  var LatestNotificationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Specifies the most recent date and time when CloudTrail started recording API calls for an AWS account.
+    * Specifies the most recent date and time when CloudTrail started recording API calls for an Amazon Web Services account.
     */
-  var StartLoggingTime: js.UndefOr[Date] = js.undefined
+  var StartLoggingTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Specifies the most recent date and time when CloudTrail stopped recording API calls for an AWS account.
+    * Specifies the most recent date and time when CloudTrail stopped recording API calls for an Amazon Web Services account.
     */
-  var StopLoggingTime: js.UndefOr[Date] = js.undefined
+  var StopLoggingTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * This field is no longer in use.
@@ -108,7 +108,7 @@ object GetTrailStatusResponse {
     
     inline def setLatestCloudWatchLogsDeliveryErrorUndefined: Self = StObject.set(x, "LatestCloudWatchLogsDeliveryError", js.undefined)
     
-    inline def setLatestCloudWatchLogsDeliveryTime(value: Date): Self = StObject.set(x, "LatestCloudWatchLogsDeliveryTime", value.asInstanceOf[js.Any])
+    inline def setLatestCloudWatchLogsDeliveryTime(value: js.Date): Self = StObject.set(x, "LatestCloudWatchLogsDeliveryTime", value.asInstanceOf[js.Any])
     
     inline def setLatestCloudWatchLogsDeliveryTimeUndefined: Self = StObject.set(x, "LatestCloudWatchLogsDeliveryTime", js.undefined)
     
@@ -124,7 +124,7 @@ object GetTrailStatusResponse {
     
     inline def setLatestDeliveryErrorUndefined: Self = StObject.set(x, "LatestDeliveryError", js.undefined)
     
-    inline def setLatestDeliveryTime(value: Date): Self = StObject.set(x, "LatestDeliveryTime", value.asInstanceOf[js.Any])
+    inline def setLatestDeliveryTime(value: js.Date): Self = StObject.set(x, "LatestDeliveryTime", value.asInstanceOf[js.Any])
     
     inline def setLatestDeliveryTimeUndefined: Self = StObject.set(x, "LatestDeliveryTime", js.undefined)
     
@@ -132,7 +132,7 @@ object GetTrailStatusResponse {
     
     inline def setLatestDigestDeliveryErrorUndefined: Self = StObject.set(x, "LatestDigestDeliveryError", js.undefined)
     
-    inline def setLatestDigestDeliveryTime(value: Date): Self = StObject.set(x, "LatestDigestDeliveryTime", value.asInstanceOf[js.Any])
+    inline def setLatestDigestDeliveryTime(value: js.Date): Self = StObject.set(x, "LatestDigestDeliveryTime", value.asInstanceOf[js.Any])
     
     inline def setLatestDigestDeliveryTimeUndefined: Self = StObject.set(x, "LatestDigestDeliveryTime", js.undefined)
     
@@ -148,15 +148,15 @@ object GetTrailStatusResponse {
     
     inline def setLatestNotificationErrorUndefined: Self = StObject.set(x, "LatestNotificationError", js.undefined)
     
-    inline def setLatestNotificationTime(value: Date): Self = StObject.set(x, "LatestNotificationTime", value.asInstanceOf[js.Any])
+    inline def setLatestNotificationTime(value: js.Date): Self = StObject.set(x, "LatestNotificationTime", value.asInstanceOf[js.Any])
     
     inline def setLatestNotificationTimeUndefined: Self = StObject.set(x, "LatestNotificationTime", js.undefined)
     
-    inline def setStartLoggingTime(value: Date): Self = StObject.set(x, "StartLoggingTime", value.asInstanceOf[js.Any])
+    inline def setStartLoggingTime(value: js.Date): Self = StObject.set(x, "StartLoggingTime", value.asInstanceOf[js.Any])
     
     inline def setStartLoggingTimeUndefined: Self = StObject.set(x, "StartLoggingTime", js.undefined)
     
-    inline def setStopLoggingTime(value: Date): Self = StObject.set(x, "StopLoggingTime", value.asInstanceOf[js.Any])
+    inline def setStopLoggingTime(value: js.Date): Self = StObject.set(x, "StopLoggingTime", value.asInstanceOf[js.Any])
     
     inline def setStopLoggingTimeUndefined: Self = StObject.set(x, "StopLoggingTime", js.undefined)
     

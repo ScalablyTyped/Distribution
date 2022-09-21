@@ -14,42 +14,50 @@ trait SlicePlane
   /**
     * The heading angle (in degrees) of the slice plane.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SlicePlane.html#heading)
+    * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#heading)
     */
   var heading: Double = js.native
   
   /**
     * The height of the slice plane.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SlicePlane.html#height)
+    * @default 10
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#height)
     */
   var height: Double = js.native
   
   /**
     * A point specifying the position of the center of the plane.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SlicePlane.html#position)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#position)
     */
   var position: Point = js.native
   
   /**
     * The tilt angle (in degrees) of the slice plane.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SlicePlane.html#tilt)
+    * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#tilt)
     */
   var tilt: Double = js.native
   
   /**
     * The string value representing the type of the slice shape.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SlicePlane.html#type)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#type)
     */
   val `type`: plane = js.native
   
   /**
     * The width of the slice plane.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SlicePlane.html#width)
+    * @default 10
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#width)
     */
   var width: Double = js.native
 }

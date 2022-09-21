@@ -10,10 +10,10 @@ base64topdf
 | ------------------ | :-------------: |
 | Full name          | base64topdf |
 | Keywords           | base64, pdf, pdf, conversion, rtf, plain text, text, plain, encoding, decoding, string, stringtobase64, base64tostring, rtftobase64, base64tortf |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 95420 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 20212.333333333332 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/rpsankar001)

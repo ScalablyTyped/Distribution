@@ -24,7 +24,7 @@ trait IComponent
   /** [Method] Returns the value of background
     * @returns Object
     */
-  var getBackground: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getBackground: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of cls
     * @returns String
@@ -45,12 +45,12 @@ trait IComponent
   /** [Method] Returns the value of resizeHandler
     * @returns Function
     */
-  var getResizeHandler: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getResizeHandler: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of sprites
     * @returns Object
     */
-  var getSprites: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getSprites: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Get a surface by the given id or create one if it doesn t exist
     * @param id String
@@ -73,7 +73,7 @@ trait IComponent
   var renderFrame: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var resizeHandler: js.UndefOr[js.Any] = js.undefined
+  var resizeHandler: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the value of autoSize
     * @param autoSize Boolean The new value.
@@ -83,7 +83,7 @@ trait IComponent
   /** [Method] Sets the value of background
     * @param background Object The new value.
     */
-  var setBackground: js.UndefOr[js.Function1[/* background */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBackground: js.UndefOr[js.Function1[/* background */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of cls
     * @param cls String The new value.
@@ -104,12 +104,12 @@ trait IComponent
   /** [Method] Sets the value of resizeHandler
     * @param resizeHandler Function The new value.
     */
-  var setResizeHandler: js.UndefOr[js.Function1[/* resizeHandler */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setResizeHandler: js.UndefOr[js.Function1[/* resizeHandler */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of sprites
     * @param sprites Object The new value.
     */
-  var setSprites: js.UndefOr[js.Function1[/* sprites */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setSprites: js.UndefOr[js.Function1[/* sprites */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of viewBox
     * @param viewBox Boolean The new value.
@@ -140,7 +140,7 @@ object IComponent {
     
     inline def setGetAutoSizeUndefined: Self = StObject.set(x, "getAutoSize", js.undefined)
     
-    inline def setGetBackground(value: () => js.Any): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
+    inline def setGetBackground(value: () => Any): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
     
     inline def setGetBackgroundUndefined: Self = StObject.set(x, "getBackground", js.undefined)
     
@@ -156,11 +156,11 @@ object IComponent {
     
     inline def setGetGradientsUndefined: Self = StObject.set(x, "getGradients", js.undefined)
     
-    inline def setGetResizeHandler(value: () => js.Any): Self = StObject.set(x, "getResizeHandler", js.Any.fromFunction0(value))
+    inline def setGetResizeHandler(value: () => Any): Self = StObject.set(x, "getResizeHandler", js.Any.fromFunction0(value))
     
     inline def setGetResizeHandlerUndefined: Self = StObject.set(x, "getResizeHandler", js.undefined)
     
-    inline def setGetSprites(value: () => js.Any): Self = StObject.set(x, "getSprites", js.Any.fromFunction0(value))
+    inline def setGetSprites(value: () => Any): Self = StObject.set(x, "getSprites", js.Any.fromFunction0(value))
     
     inline def setGetSpritesUndefined: Self = StObject.set(x, "getSprites", js.undefined)
     
@@ -184,7 +184,7 @@ object IComponent {
     
     inline def setRenderFrameUndefined: Self = StObject.set(x, "renderFrame", js.undefined)
     
-    inline def setResizeHandler(value: js.Any): Self = StObject.set(x, "resizeHandler", value.asInstanceOf[js.Any])
+    inline def setResizeHandler(value: Any): Self = StObject.set(x, "resizeHandler", value.asInstanceOf[js.Any])
     
     inline def setResizeHandlerUndefined: Self = StObject.set(x, "resizeHandler", js.undefined)
     
@@ -192,7 +192,7 @@ object IComponent {
     
     inline def setSetAutoSizeUndefined: Self = StObject.set(x, "setAutoSize", js.undefined)
     
-    inline def setSetBackground(value: /* background */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction1(value))
+    inline def setSetBackground(value: /* background */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction1(value))
     
     inline def setSetBackgroundUndefined: Self = StObject.set(x, "setBackground", js.undefined)
     
@@ -208,11 +208,11 @@ object IComponent {
     
     inline def setSetGradientsUndefined: Self = StObject.set(x, "setGradients", js.undefined)
     
-    inline def setSetResizeHandler(value: /* resizeHandler */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setResizeHandler", js.Any.fromFunction1(value))
+    inline def setSetResizeHandler(value: /* resizeHandler */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setResizeHandler", js.Any.fromFunction1(value))
     
     inline def setSetResizeHandlerUndefined: Self = StObject.set(x, "setResizeHandler", js.undefined)
     
-    inline def setSetSprites(value: /* sprites */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSprites", js.Any.fromFunction1(value))
+    inline def setSetSprites(value: /* sprites */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setSprites", js.Any.fromFunction1(value))
     
     inline def setSetSpritesUndefined: Self = StObject.set(x, "setSprites", js.undefined)
     

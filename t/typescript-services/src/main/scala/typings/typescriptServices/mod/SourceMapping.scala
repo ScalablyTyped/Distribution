@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "SourceMapping")
 @js.native
-class SourceMapping ()
+open class SourceMapping ()
   extends StObject
      with typings.typescriptServices.TypeScript.SourceMapping {
   

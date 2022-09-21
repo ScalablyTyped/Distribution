@@ -1,9 +1,5 @@
 package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,7 @@ trait ParamsResourceSitesVersionsCreate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Required. The parent to create the version for, in the format:
-    * <code>sites/<var>site-name</var></code>
+    * Required. The site in which to create the version, in the format: sites/ SITE_ID
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -29,14 +19,12 @@ trait ParamsResourceSitesVersionsCreate
   var requestBody: js.UndefOr[SchemaVersion] = js.undefined
   
   /**
-    * The self-reported size of the version. This value is used for a
-    * pre-emptive quota check for legacy version uploads.
+    * The self-reported size of the version. This value is used for a pre-emptive quota check for legacy version uploads.
     */
   var sizeBytes: js.UndefOr[String] = js.undefined
   
   /**
-    * A unique id for the new version. This is only specified for legacy
-    * version creations.
+    * A unique id for the new version. This is was only specified for legacy version creations, and should be blank.
     */
   var versionId: js.UndefOr[String] = js.undefined
 }
@@ -48,10 +36,6 @@ object ParamsResourceSitesVersionsCreate {
   }
   
   extension [Self <: ParamsResourceSitesVersionsCreate](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

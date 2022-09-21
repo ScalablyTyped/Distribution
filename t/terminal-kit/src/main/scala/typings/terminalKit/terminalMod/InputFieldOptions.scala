@@ -1,7 +1,6 @@
 package typings.terminalKit.terminalMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import typings.terminalKit.terminalKitBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -48,7 +47,7 @@ trait InputFieldOptions extends StObject {
     ]
   ] = js.undefined
   
-  var tokenRegExp: js.UndefOr[RegExp] = js.undefined
+  var tokenRegExp: js.UndefOr[js.RegExp] = js.undefined
   
   var tokenResetHook: js.UndefOr[
     js.Function2[/* term */ Terminal, /* config */ js.UndefOr[HookConfig], String | CTerminal]
@@ -87,7 +86,7 @@ object InputFieldOptions {
     
     inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
     
-    inline def setAutoCompleteVarargs(value: String*): Self = StObject.set(x, "autoComplete", js.Array(value :_*))
+    inline def setAutoCompleteVarargs(value: String*): Self = StObject.set(x, "autoComplete", js.Array(value*))
     
     inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
@@ -117,7 +116,7 @@ object InputFieldOptions {
     
     inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value*))
     
     inline def setKeyBindings(value: StringDictionary[String]): Self = StObject.set(x, "keyBindings", value.asInstanceOf[js.Any])
     
@@ -141,7 +140,7 @@ object InputFieldOptions {
     
     inline def setTokenHookUndefined: Self = StObject.set(x, "tokenHook", js.undefined)
     
-    inline def setTokenRegExp(value: RegExp): Self = StObject.set(x, "tokenRegExp", value.asInstanceOf[js.Any])
+    inline def setTokenRegExp(value: js.RegExp): Self = StObject.set(x, "tokenRegExp", value.asInstanceOf[js.Any])
     
     inline def setTokenRegExpUndefined: Self = StObject.set(x, "tokenRegExp", js.undefined)
     

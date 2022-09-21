@@ -10,10 +10,10 @@ An Observable push stream
 | ------------------ | :-------------: |
 | Full name          | zen-push |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 3997488 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1349585.3333333333 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/zenparsing/zen-push)

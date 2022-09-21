@@ -1,7 +1,7 @@
 
 # Scala.js typings for bip21
 
-Typings are for version v1.1.2
+Typings are for version v2.0.0
 
 ## Library description:
 A BIP21 compatible URL encoding utility library
@@ -10,10 +10,10 @@ A BIP21 compatible URL encoding utility library
 | ------------------ | :-------------: |
 | Full name          | bip21 |
 | Keywords           | bip21, bitcoin |
-| # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 33403 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 11147.333333333334 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/bitcoinjs/bip21)

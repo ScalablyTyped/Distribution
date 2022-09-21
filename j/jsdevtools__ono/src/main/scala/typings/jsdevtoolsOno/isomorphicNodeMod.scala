@@ -13,7 +13,6 @@ object isomorphicNodeMod {
   
   inline def addInspectMethod[T](newError: OnoError[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addInspectMethod")(newError.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@jsdevtools/ono/esm/isomorphic.node", "format")
-  @js.native
-  val format: js.Function2[/* format */ js.Any, /* repeated */ js.Any, String] = js.native
+  inline def format(format: Any, param: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(format.asInstanceOf[js.Any]).`++`(param.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def format(format: Unit, param: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(format.asInstanceOf[js.Any]).`++`(param.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 }

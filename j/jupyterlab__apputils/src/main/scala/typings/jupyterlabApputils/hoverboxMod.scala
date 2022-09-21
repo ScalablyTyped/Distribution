@@ -1,5 +1,6 @@
 package typings.jupyterlabApputils
 
+import typings.jupyterlabApputils.anon.Bottom
 import typings.jupyterlabApputils.anon.Horizontal
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.above
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.below
@@ -46,8 +47,9 @@ object hoverboxMod {
         * The node that hosts the anchor.
         *
         * #### Notes
-        * The visibility of the anchor rectangle within this host node is the
-        * heuristic that determines whether the hover box ought to be visible.
+        * The visibility of the elements under hover box edges within this host
+        * node is the heuristic that determines whether the hover box ought to be
+        * visible.
         */
       var host: HTMLElement
       
@@ -83,6 +85,17 @@ object hoverboxMod {
         * the different render modes.
         */
       var offset: js.UndefOr[Horizontal] = js.undefined
+      
+      /**
+        * How to position the hover box if its edges extend beyond the view of the
+        * host element. Value 'sticky' positions the box at the (inner or outer)
+        * edge of the host element.
+        *
+        * #### Notes
+        * The default value for each edge is `'hidden-inside'` for left and top,
+        * and `hidden-outside` for right and bottom edges.
+        */
+      var outOfViewDisplay: js.UndefOr[Bottom] = js.undefined
       
       /**
         * If space is available both above and below the anchor, denote which
@@ -123,6 +136,10 @@ object hoverboxMod {
         
         inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
         
+        inline def setOutOfViewDisplay(value: Bottom): Self = StObject.set(x, "outOfViewDisplay", value.asInstanceOf[js.Any])
+        
+        inline def setOutOfViewDisplayUndefined: Self = StObject.set(x, "outOfViewDisplay", js.undefined)
+        
         inline def setPrivilege(value: above | below | forceAbove | forceBelow): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
         
         inline def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
@@ -132,5 +149,23 @@ object hoverboxMod {
         inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       }
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.jupyterlabApputils.jupyterlabApputilsStrings.`hidden-inside`
+    - typings.jupyterlabApputils.jupyterlabApputilsStrings.`hidden-outside`
+    - typings.jupyterlabApputils.jupyterlabApputilsStrings.`stick-inside`
+    - typings.jupyterlabApputils.jupyterlabApputilsStrings.`stick-outside`
+  */
+  trait OutOfViewDisplay extends StObject
+  object OutOfViewDisplay {
+    
+    inline def `hidden-inside`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`hidden-inside` = "hidden-inside".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`hidden-inside`]
+    
+    inline def `hidden-outside`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`hidden-outside` = "hidden-outside".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`hidden-outside`]
+    
+    inline def `stick-inside`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`stick-inside` = "stick-inside".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`stick-inside`]
+    
+    inline def `stick-outside`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`stick-outside` = "stick-outside".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`stick-outside`]
   }
 }

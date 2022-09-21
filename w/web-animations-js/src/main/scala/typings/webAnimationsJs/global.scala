@@ -11,7 +11,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Animation")
   @js.native
-  class Animation ()
+  open class Animation ()
     extends StObject
        with typings.webAnimationsJs.Animation {
     def this(effect: AnimationEffect) = this()
@@ -23,7 +23,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("AnimationPlaybackEvent")
   @js.native
-  class AnimationPlaybackEvent protected ()
+  open class AnimationPlaybackEvent protected ()
     extends StObject
        with typings.webAnimationsJs.AnimationPlaybackEvent {
     def this(`type`: String) = this()
@@ -62,7 +62,7 @@ object global {
   
   @JSGlobal("GroupEffect")
   @js.native
-  class GroupEffect protected ()
+  open class GroupEffect protected ()
     extends StObject
        with KeyframeEffect {
     def this(effects: js.Array[KeyframeEffect]) = this()
@@ -70,7 +70,7 @@ object global {
   
   @JSGlobal("SequenceEffect")
   @js.native
-  class SequenceEffect protected ()
+  open class SequenceEffect protected ()
     extends StObject
        with KeyframeEffect {
     def this(effects: js.Array[KeyframeEffect]) = this()

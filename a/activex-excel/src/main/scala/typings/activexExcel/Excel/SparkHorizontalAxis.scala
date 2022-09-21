@@ -17,7 +17,7 @@ trait SparkHorizontalAxis extends StObject {
   
   val IsDateAxis: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var RightToLeftPlotOrder: Boolean
 }
@@ -29,7 +29,7 @@ object SparkHorizontalAxis {
     Creator: XlCreator,
     ExcelDotSparkHorizontalAxis_typekey: SparkHorizontalAxis,
     IsDateAxis: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     RightToLeftPlotOrder: Boolean
   ): SparkHorizontalAxis = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Axis = Axis.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], IsDateAxis = IsDateAxis.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], RightToLeftPlotOrder = RightToLeftPlotOrder.asInstanceOf[js.Any])
@@ -49,7 +49,7 @@ object SparkHorizontalAxis {
     
     inline def setIsDateAxis(value: Boolean): Self = StObject.set(x, "IsDateAxis", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRightToLeftPlotOrder(value: Boolean): Self = StObject.set(x, "RightToLeftPlotOrder", value.asInstanceOf[js.Any])
   }

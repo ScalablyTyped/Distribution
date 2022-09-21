@@ -16,7 +16,7 @@ trait Rectangle extends StObject {
   
   val Lines: typings.activexWord.Word.Lines
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Range: typings.activexWord.Word.Range
   
@@ -37,7 +37,7 @@ object Rectangle {
     Height: Double,
     Left: Double,
     Lines: Lines,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     RectangleType: WdRectangleType,
     Top: Double,
@@ -61,7 +61,7 @@ object Rectangle {
     
     inline def setLines(value: Lines): Self = StObject.set(x, "Lines", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRichEditDocumentFormattedEventArgs")
 @js.native
-class ASPxClientRichEditDocumentFormattedEventArgs protected ()
+open class ASPxClientRichEditDocumentFormattedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRichEditDocumentFormattedEventArgs {
   /**

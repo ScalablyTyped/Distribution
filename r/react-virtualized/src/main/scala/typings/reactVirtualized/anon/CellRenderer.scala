@@ -28,7 +28,7 @@ trait CellRenderer extends StObject {
 object CellRenderer {
   
   inline def apply(
-    cellDataGetter: /* params */ TableCellDataGetterParams => js.Any,
+    cellDataGetter: /* params */ TableCellDataGetterParams => Any,
     cellRenderer: /* props */ TableCellProps => ReactNode,
     headerRenderer: /* props */ TableHeaderProps => ReactNode
   ): CellRenderer = {
@@ -38,7 +38,7 @@ object CellRenderer {
   
   extension [Self <: CellRenderer](x: Self) {
     
-    inline def setCellDataGetter(value: /* params */ TableCellDataGetterParams => js.Any): Self = StObject.set(x, "cellDataGetter", js.Any.fromFunction1(value))
+    inline def setCellDataGetter(value: /* params */ TableCellDataGetterParams => Any): Self = StObject.set(x, "cellDataGetter", js.Any.fromFunction1(value))
     
     inline def setCellRenderer(value: /* props */ TableCellProps => ReactNode): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction1(value))
     

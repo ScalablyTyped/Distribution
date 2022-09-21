@@ -10,10 +10,9 @@ object mod {
   
   @JSImport("react-document-title", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DocumentTitleProps, js.Any, js.Any]
+  open class default () extends Component[DocumentTitleProps, Any, Any]
   
-  type DocumentTitle = Component[DocumentTitleProps, js.Any, js.Any]
+  type DocumentTitle = Component[DocumentTitleProps, Any, Any]
   
   trait DocumentTitleProps extends StObject {
     

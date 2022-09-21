@@ -4,18 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides options for a question.
-  *
-  * @template T
-  * The type of the answers.
-  */
 trait Question[T /* <: Answers */] extends StObject {
   
   /**
     * The default value of the question.
     */
-  var default: js.UndefOr[AsyncDynamicQuestionProperty[js.Any, T]] = js.undefined
+  var default: js.UndefOr[AsyncDynamicQuestionProperty[Any, T]] = js.undefined
+  
+  /**
+    * Force to prompt the question if the answer already exists.
+    */
+  var askAnswered: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Post-processes the answer.
@@ -26,7 +25,7 @@ trait Question[T /* <: Answers */] extends StObject {
     * @param answers
     * The answers provided by the user.
     */
-  var filter: js.UndefOr[js.Function2[/* input */ js.Any, /* answers */ T, js.Any]] = js.undefined
+  var filter: js.UndefOr[js.Function2[/* input */ Any, /* answers */ T, Any]] = js.undefined
   
   /**
     * The message to show to the user.
@@ -39,12 +38,12 @@ trait Question[T /* <: Answers */] extends StObject {
   var name: js.UndefOr[KeyUnion[T]] = js.undefined
   
   /**
-    * The prefix of the `message`.
+    * The prefix of the {@link message `message`}.
     */
   var prefix: js.UndefOr[String] = js.undefined
   
   /**
-    * The suffix of the `message`.
+    * The suffix of the {@link message `message`}.
     */
   var suffix: js.UndefOr[String] = js.undefined
   
@@ -63,11 +62,11 @@ trait Question[T /* <: Answers */] extends StObject {
     * The answers provided by the user.
     *
     * @returns
-    * Either a value indicating whether the answer is valid or a `string` which describes the error.
+    * Either a value indicating whether the answer is valid or a {@link String `string`} which describes the error.
     */
   var validate: js.UndefOr[
     js.Function2[
-      /* input */ js.Any, 
+      /* input */ Any, 
       /* answers */ js.UndefOr[T], 
       Boolean | String | (js.Promise[Boolean | String])
     ]
@@ -87,13 +86,17 @@ object Question {
   
   extension [Self <: Question[?], T /* <: Answers */](x: Self & Question[T]) {
     
-    inline def setDefault(value: AsyncDynamicQuestionProperty[js.Any, T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setAskAnswered(value: Boolean): Self = StObject.set(x, "askAnswered", value.asInstanceOf[js.Any])
     
-    inline def setDefaultFunction1(value: T => js.Any | js.Promise[js.Any]): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
+    inline def setAskAnsweredUndefined: Self = StObject.set(x, "askAnswered", js.undefined)
+    
+    inline def setDefault(value: AsyncDynamicQuestionProperty[Any, T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultFunction1(value: T => Any | js.Promise[Any]): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    inline def setFilter(value: (/* input */ js.Any, /* answers */ T) => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+    inline def setFilter(value: (/* input */ Any, /* answers */ T) => Any): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
@@ -120,7 +123,7 @@ object Question {
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setValidate(
-      value: (/* input */ js.Any, /* answers */ js.UndefOr[T]) => Boolean | String | (js.Promise[Boolean | String])
+      value: (/* input */ Any, /* answers */ js.UndefOr[T]) => Boolean | String | (js.Promise[Boolean | String])
     ): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     
     inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)

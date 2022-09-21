@@ -2,6 +2,7 @@ package typings.antDesignReactNative.anon
 
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
+import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +13,7 @@ trait ReadonlyPickerPropsReadon extends StObject {
   
   val children: js.UndefOr[ReactNode] = js.undefined
   
-  val defaultSelectedValue: js.UndefOr[js.Any] = js.undefined
+  val defaultSelectedValue: js.UndefOr[Any] = js.undefined
   
   val disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -20,15 +21,15 @@ trait ReadonlyPickerPropsReadon extends StObject {
   
   val indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  val itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  val itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   val noAnimate: js.UndefOr[Boolean] = js.undefined
   
-  val onScrollChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+  val onScrollChange: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.undefined
   
-  val onValueChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+  val onValueChange: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.undefined
   
-  val selectedValue: js.UndefOr[js.Any] = js.undefined
+  val selectedValue: js.UndefOr[Any] = js.undefined
   
   val style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
@@ -45,7 +46,7 @@ object ReadonlyPickerPropsReadon {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setDefaultSelectedValue(value: js.Any): Self = StObject.set(x, "defaultSelectedValue", value.asInstanceOf[js.Any])
+    inline def setDefaultSelectedValue(value: Any): Self = StObject.set(x, "defaultSelectedValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultSelectedValueUndefined: Self = StObject.set(x, "defaultSelectedValue", js.undefined)
     
@@ -63,7 +64,7 @@ object ReadonlyPickerPropsReadon {
     
     inline def setIndicatorStyleUndefined: Self = StObject.set(x, "indicatorStyle", js.undefined)
     
-    inline def setItemStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     inline def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
     
@@ -73,15 +74,15 @@ object ReadonlyPickerPropsReadon {
     
     inline def setNoAnimateUndefined: Self = StObject.set(x, "noAnimate", js.undefined)
     
-    inline def setOnScrollChange(value: /* value */ js.Any => Unit): Self = StObject.set(x, "onScrollChange", js.Any.fromFunction1(value))
+    inline def setOnScrollChange(value: /* value */ Any => Unit): Self = StObject.set(x, "onScrollChange", js.Any.fromFunction1(value))
     
     inline def setOnScrollChangeUndefined: Self = StObject.set(x, "onScrollChange", js.undefined)
     
-    inline def setOnValueChange(value: /* value */ js.Any => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
+    inline def setOnValueChange(value: /* value */ Any => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
     
     inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
     
-    inline def setSelectedValue(value: js.Any): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
+    inline def setSelectedValue(value: Any): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
     
     inline def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
     

@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.rangeSliderMod.IRangeSliderProps
+import typings.blueprintjsCore.rangeSliderMod.RangeSliderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "RangeSlider")
 @js.native
-class RangeSlider protected ()
+open class RangeSlider protected ()
   extends typings.blueprintjsCore.componentsMod.RangeSlider {
-  def this(props: IRangeSliderProps) = this()
-  def this(props: IRangeSliderProps, context: js.Any) = this()
+  def this(props: RangeSliderProps) = this()
+  def this(props: RangeSliderProps, context: Any) = this()
 }
 /* static members */
 object RangeSlider {
@@ -21,8 +21,8 @@ object RangeSlider {
   
   @JSImport("@blueprintjs/core", "RangeSlider.defaultProps")
   @js.native
-  def defaultProps: IRangeSliderProps = js.native
-  inline def defaultProps_=(x: IRangeSliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: RangeSliderProps = js.native
+  inline def defaultProps_=(x: RangeSliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "RangeSlider.displayName")
   @js.native

@@ -17,7 +17,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@otplib/preset-v11", "authenticator.Authenticator")
     @js.native
-    class Authenticator ()
+    open class Authenticator ()
       extends StObject
          with typings.otplibPresetV11.Authenticator {
       
@@ -77,7 +77,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@otplib/preset-v11", "authenticator.HOTP")
     @js.native
-    class HOTP ()
+    open class HOTP ()
       extends StObject
          with typings.otplibPresetV11.HOTP {
       
@@ -109,7 +109,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@otplib/preset-v11", "authenticator.TOTP")
     @js.native
-    class TOTP ()
+    open class TOTP ()
       extends StObject
          with typings.otplibPresetV11.TOTP {
       
@@ -181,7 +181,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@otplib/preset-v11", "hotp.HOTP")
     @js.native
-    class HOTP ()
+    open class HOTP ()
       extends StObject
          with typings.otplibPresetV11.HOTP {
       
@@ -225,7 +225,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@otplib/preset-v11", "totp.HOTP")
     @js.native
-    class HOTP ()
+    open class HOTP ()
       extends StObject
          with typings.otplibPresetV11.HOTP {
       
@@ -257,7 +257,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@otplib/preset-v11", "totp.TOTP")
     @js.native
-    class TOTP ()
+    open class TOTP ()
       extends StObject
          with typings.otplibPresetV11.TOTP {
       

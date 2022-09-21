@@ -15,7 +15,7 @@ trait IParameterizedQuery
   
   var text: js.UndefOr[String | QueryFile] = js.undefined
   
-  var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var values: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object IParameterizedQuery {
   
@@ -38,10 +38,10 @@ object IParameterizedQuery {
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

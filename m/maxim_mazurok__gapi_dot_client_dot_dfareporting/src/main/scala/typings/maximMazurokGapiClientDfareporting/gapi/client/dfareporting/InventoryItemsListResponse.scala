@@ -28,7 +28,7 @@ object InventoryItemsListResponse {
     
     inline def setInventoryItemsUndefined: Self = StObject.set(x, "inventoryItems", js.undefined)
     
-    inline def setInventoryItemsVarargs(value: InventoryItem*): Self = StObject.set(x, "inventoryItems", js.Array(value :_*))
+    inline def setInventoryItemsVarargs(value: InventoryItem*): Self = StObject.set(x, "inventoryItems", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

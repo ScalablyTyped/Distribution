@@ -54,7 +54,7 @@ object BccEmailArchiveList {
     
     inline def setBccEmailArchivesUndefined: Self = StObject.set(x, "bccEmailArchives", js.undefined)
     
-    inline def setBccEmailArchivesVarargs(value: BccEmailArchive*): Self = StObject.set(x, "bccEmailArchives", js.Array(value :_*))
+    inline def setBccEmailArchivesVarargs(value: BccEmailArchive*): Self = StObject.set(x, "bccEmailArchives", js.Array(value*))
     
     inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     

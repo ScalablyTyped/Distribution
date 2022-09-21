@@ -32,7 +32,7 @@ object GeoSpatialColumnGroup {
     
     inline def setColumns(value: ColumnList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: ColumnName*): Self = StObject.set(x, "Columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: ColumnName*): Self = StObject.set(x, "Columns", js.Array(value*))
     
     inline def setCountryCode(value: GeoSpatialCountryCode): Self = StObject.set(x, "CountryCode", value.asInstanceOf[js.Any])
     

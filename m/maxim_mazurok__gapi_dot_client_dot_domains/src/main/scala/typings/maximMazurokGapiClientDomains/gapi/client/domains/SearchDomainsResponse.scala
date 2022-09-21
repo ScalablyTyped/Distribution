@@ -22,6 +22,6 @@ object SearchDomainsResponse {
     
     inline def setRegisterParametersUndefined: Self = StObject.set(x, "registerParameters", js.undefined)
     
-    inline def setRegisterParametersVarargs(value: RegisterParameters*): Self = StObject.set(x, "registerParameters", js.Array(value :_*))
+    inline def setRegisterParametersVarargs(value: RegisterParameters*): Self = StObject.set(x, "registerParameters", js.Array(value*))
   }
 }

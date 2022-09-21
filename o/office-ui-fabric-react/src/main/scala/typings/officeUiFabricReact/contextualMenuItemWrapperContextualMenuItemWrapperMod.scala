@@ -1,7 +1,6 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.contextualMenuItemWrapperTypesMod.IContextualMenuItemWrapperProps
-import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuItem
 import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
 import typings.std.HTMLElement
@@ -14,11 +13,9 @@ object contextualMenuItemWrapperContextualMenuItemWrapperMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenuItemWrapper/ContextualMenuItemWrapper", "ContextualMenuItemWrapper")
   @js.native
-  class ContextualMenuItemWrapper protected ()
-    extends Component[IContextualMenuItemWrapperProps, js.Object, js.Any] {
+  open class ContextualMenuItemWrapper protected ()
+    extends Component[IContextualMenuItemWrapperProps, js.Object, Any] {
     def this(props: IContextualMenuItemWrapperProps) = this()
-    
-    /* protected */ def _getSubMenuId(item: IContextualMenuItem): js.UndefOr[String] = js.native
     
     /* protected */ def _getSubmenuTarget(): js.UndefOr[HTMLElement] = js.native
     

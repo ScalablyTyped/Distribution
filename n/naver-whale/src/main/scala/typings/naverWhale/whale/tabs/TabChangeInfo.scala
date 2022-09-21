@@ -31,6 +31,12 @@ trait TabChangeInfo extends StObject {
   var favIconUrl: js.UndefOr[String] = js.undefined
   
   /**
+    * The tab's new group.
+    * @since Chrome 88
+    */
+  var groupId: js.UndefOr[Double] = js.undefined
+  
+  /**
     * The tab's new muted state and the reason for the change.
     * @since Chrome 46. Warning: this is the current Beta channel.
     */
@@ -78,6 +84,10 @@ object TabChangeInfo {
     inline def setFavIconUrl(value: String): Self = StObject.set(x, "favIconUrl", value.asInstanceOf[js.Any])
     
     inline def setFavIconUrlUndefined: Self = StObject.set(x, "favIconUrl", js.undefined)
+    
+    inline def setGroupId(value: Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    
+    inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
     inline def setMutedInfo(value: typings.chrome.chrome.tabs.MutedInfo): Self = StObject.set(x, "mutedInfo", value.asInstanceOf[js.Any])
     

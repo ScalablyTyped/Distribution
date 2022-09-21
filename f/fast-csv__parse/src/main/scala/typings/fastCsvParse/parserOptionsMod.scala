@@ -2,8 +2,7 @@ package typings.fastCsvParse
 
 import typings.fastCsvParse.typesMod.HeaderArray
 import typings.fastCsvParse.typesMod.HeaderTransformFunction
-import typings.node.BufferEncoding
-import typings.std.RegExp
+import typings.node.bufferMod.global.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +11,10 @@ object parserOptionsMod {
   
   @JSImport("@fast-csv/parse/build/src/ParserOptions", "ParserOptions")
   @js.native
-  class ParserOptions () extends StObject {
+  open class ParserOptions () extends StObject {
     def this(opts: ParserOptionsArgs) = this()
     
-    val NEXT_TOKEN_REGEXP: RegExp = js.native
+    val NEXT_TOKEN_REGEXP: js.RegExp = js.native
     
     val carriageReturn: String = js.native
     
@@ -133,7 +132,7 @@ object parserOptionsMod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: (js.UndefOr[String | Null])*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: (js.UndefOr[String | Null])*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setIgnoreEmpty(value: Boolean): Self = StObject.set(x, "ignoreEmpty", value.asInstanceOf[js.Any])
       

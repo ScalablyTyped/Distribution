@@ -75,13 +75,13 @@ object CreativeAssignment {
     
     inline def setCompanionCreativeOverridesUndefined: Self = StObject.set(x, "companionCreativeOverrides", js.undefined)
     
-    inline def setCompanionCreativeOverridesVarargs(value: CompanionClickThroughOverride*): Self = StObject.set(x, "companionCreativeOverrides", js.Array(value :_*))
+    inline def setCompanionCreativeOverridesVarargs(value: CompanionClickThroughOverride*): Self = StObject.set(x, "companionCreativeOverrides", js.Array(value*))
     
     inline def setCreativeGroupAssignments(value: js.Array[CreativeGroupAssignment]): Self = StObject.set(x, "creativeGroupAssignments", value.asInstanceOf[js.Any])
     
     inline def setCreativeGroupAssignmentsUndefined: Self = StObject.set(x, "creativeGroupAssignments", js.undefined)
     
-    inline def setCreativeGroupAssignmentsVarargs(value: CreativeGroupAssignment*): Self = StObject.set(x, "creativeGroupAssignments", js.Array(value :_*))
+    inline def setCreativeGroupAssignmentsVarargs(value: CreativeGroupAssignment*): Self = StObject.set(x, "creativeGroupAssignments", js.Array(value*))
     
     inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
@@ -99,7 +99,7 @@ object CreativeAssignment {
     
     inline def setRichMediaExitOverridesUndefined: Self = StObject.set(x, "richMediaExitOverrides", js.undefined)
     
-    inline def setRichMediaExitOverridesVarargs(value: RichMediaExitOverride*): Self = StObject.set(x, "richMediaExitOverrides", js.Array(value :_*))
+    inline def setRichMediaExitOverridesVarargs(value: RichMediaExitOverride*): Self = StObject.set(x, "richMediaExitOverrides", js.Array(value*))
     
     inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     

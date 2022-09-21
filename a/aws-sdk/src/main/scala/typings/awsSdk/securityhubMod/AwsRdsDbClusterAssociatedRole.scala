@@ -12,7 +12,7 @@ trait AwsRdsDbClusterAssociatedRole extends StObject {
   var RoleArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The status of the association between the IAM role and the DB cluster.
+    * The status of the association between the IAM role and the DB cluster. Valid values are as follows:    ACTIVE     INVALID     PENDING   
     */
   var Status: js.UndefOr[NonEmptyString] = js.undefined
 }

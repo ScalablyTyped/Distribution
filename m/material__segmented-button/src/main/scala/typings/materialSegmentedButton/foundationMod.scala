@@ -12,7 +12,7 @@ object foundationMod {
   
   @JSImport("@material/segmented-button/segmented-button/foundation", "MDCSegmentedButtonFoundation")
   @js.native
-  class MDCSegmentedButtonFoundation () extends MDCFoundation[MDCSegmentedButtonAdapter] {
+  open class MDCSegmentedButtonFoundation () extends MDCFoundation[MDCSegmentedButtonAdapter] {
     def this(adapter: PartialMDCSegmentedButton) = this()
     
     /**
@@ -31,13 +31,14 @@ object foundationMod {
       */
     def handleSelected(detail: SegmentDetail): Unit = js.native
     
-    def isSegmentSelected(indexOrSegmentId: String): Boolean = js.native
     /**
       * @param indexOrSegmentId Number index or string segmentId that identifies
       * child segment
       * @return Returns true if identified child segment is currently selected,
       * otherwise returns false
       */
+    def isSegmentSelected(): Boolean = js.native
+    def isSegmentSelected(indexOrSegmentId: String): Boolean = js.native
     def isSegmentSelected(indexOrSegmentId: Double): Boolean = js.native
     
     /**
@@ -61,7 +62,7 @@ object foundationMod {
       *
       * @param index Index of child segment to not unselect
       */
-    /* private */ var unselectPrevSelected: js.Any = js.native
+    /* private */ var unselectPrevSelected: Any = js.native
     
     def unselectSegment(indexOrSegmentId: String): Unit = js.native
     /**

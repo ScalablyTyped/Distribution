@@ -32,6 +32,6 @@ object BrandsRequest {
     
     inline def setBrandsUndefined: Self = StObject.set(x, "brands", js.undefined)
     
-    inline def setBrandsVarargs(value: (/* This request object contains information about a specific brand. */ BrandRequest)*): Self = StObject.set(x, "brands", js.Array(value :_*))
+    inline def setBrandsVarargs(value: (/* This request object contains information about a specific brand. */ BrandRequest)*): Self = StObject.set(x, "brands", js.Array(value*))
   }
 }

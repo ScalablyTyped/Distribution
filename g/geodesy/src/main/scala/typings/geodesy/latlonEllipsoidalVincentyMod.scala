@@ -13,12 +13,12 @@ object latlonEllipsoidalVincentyMod {
   
   @JSImport("geodesy/latlon-ellipsoidal-vincenty", JSImport.Default)
   @js.native
-  class default () extends LatLonEllipsoidalVincenty
+  open class default () extends LatLonEllipsoidalVincenty
   
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("geodesy/latlon-ellipsoidal-vincenty", "Dms")
   @js.native
-  class Dms ()
+  open class Dms ()
     extends typings.geodesy.latlonEllipsoidalMod.Dms
   object Dms {
     

@@ -1,7 +1,6 @@
 package typings.dotenvFlow
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -129,7 +128,7 @@ object mod {
   
   trait DotenvLoadOutput extends StObject {
     
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[js.Error] = js.undefined
     
     var parsed: js.UndefOr[DotenvParseOutput] = js.undefined
   }
@@ -142,7 +141,7 @@ object mod {
     
     extension [Self <: DotenvLoadOutput](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -160,6 +159,11 @@ object mod {
       * Encoding for reading the `.env*` files.
       */
     var encoding: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether to support suppressing the console output.
+      */
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object DotenvReadFileOptions {
     
@@ -173,6 +177,10 @@ object mod {
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
       inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
 }

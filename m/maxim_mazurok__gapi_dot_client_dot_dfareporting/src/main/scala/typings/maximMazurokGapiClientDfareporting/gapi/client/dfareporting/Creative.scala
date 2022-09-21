@@ -311,13 +311,13 @@ object Creative {
     
     inline def setAdTagKeysUndefined: Self = StObject.set(x, "adTagKeys", js.undefined)
     
-    inline def setAdTagKeysVarargs(value: String*): Self = StObject.set(x, "adTagKeys", js.Array(value :_*))
+    inline def setAdTagKeysVarargs(value: String*): Self = StObject.set(x, "adTagKeys", js.Array(value*))
     
     inline def setAdditionalSizes(value: js.Array[Size]): Self = StObject.set(x, "additionalSizes", value.asInstanceOf[js.Any])
     
     inline def setAdditionalSizesUndefined: Self = StObject.set(x, "additionalSizes", js.undefined)
     
-    inline def setAdditionalSizesVarargs(value: Size*): Self = StObject.set(x, "additionalSizes", js.Array(value :_*))
+    inline def setAdditionalSizesVarargs(value: Size*): Self = StObject.set(x, "additionalSizes", js.Array(value*))
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
@@ -359,7 +359,7 @@ object Creative {
     
     inline def setBackupImageFeaturesUndefined: Self = StObject.set(x, "backupImageFeatures", js.undefined)
     
-    inline def setBackupImageFeaturesVarargs(value: String*): Self = StObject.set(x, "backupImageFeatures", js.Array(value :_*))
+    inline def setBackupImageFeaturesVarargs(value: String*): Self = StObject.set(x, "backupImageFeatures", js.Array(value*))
     
     inline def setBackupImageReportingLabel(value: String): Self = StObject.set(x, "backupImageReportingLabel", value.asInstanceOf[js.Any])
     
@@ -373,7 +373,7 @@ object Creative {
     
     inline def setClickTagsUndefined: Self = StObject.set(x, "clickTags", js.undefined)
     
-    inline def setClickTagsVarargs(value: ClickTag*): Self = StObject.set(x, "clickTags", js.Array(value :_*))
+    inline def setClickTagsVarargs(value: ClickTag*): Self = StObject.set(x, "clickTags", js.Array(value*))
     
     inline def setCommercialId(value: String): Self = StObject.set(x, "commercialId", value.asInstanceOf[js.Any])
     
@@ -383,13 +383,13 @@ object Creative {
     
     inline def setCompanionCreativesUndefined: Self = StObject.set(x, "companionCreatives", js.undefined)
     
-    inline def setCompanionCreativesVarargs(value: String*): Self = StObject.set(x, "companionCreatives", js.Array(value :_*))
+    inline def setCompanionCreativesVarargs(value: String*): Self = StObject.set(x, "companionCreatives", js.Array(value*))
     
     inline def setCompatibility(value: js.Array[String]): Self = StObject.set(x, "compatibility", value.asInstanceOf[js.Any])
     
     inline def setCompatibilityUndefined: Self = StObject.set(x, "compatibility", js.undefined)
     
-    inline def setCompatibilityVarargs(value: String*): Self = StObject.set(x, "compatibility", js.Array(value :_*))
+    inline def setCompatibilityVarargs(value: String*): Self = StObject.set(x, "compatibility", js.Array(value*))
     
     inline def setConvertFlashToHtml5(value: Boolean): Self = StObject.set(x, "convertFlashToHtml5", value.asInstanceOf[js.Any])
     
@@ -399,7 +399,7 @@ object Creative {
     
     inline def setCounterCustomEventsUndefined: Self = StObject.set(x, "counterCustomEvents", js.undefined)
     
-    inline def setCounterCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "counterCustomEvents", js.Array(value :_*))
+    inline def setCounterCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "counterCustomEvents", js.Array(value*))
     
     inline def setCreativeAssetSelection(value: CreativeAssetSelection): Self = StObject.set(x, "creativeAssetSelection", value.asInstanceOf[js.Any])
     
@@ -409,19 +409,19 @@ object Creative {
     
     inline def setCreativeAssetsUndefined: Self = StObject.set(x, "creativeAssets", js.undefined)
     
-    inline def setCreativeAssetsVarargs(value: CreativeAsset*): Self = StObject.set(x, "creativeAssets", js.Array(value :_*))
+    inline def setCreativeAssetsVarargs(value: CreativeAsset*): Self = StObject.set(x, "creativeAssets", js.Array(value*))
     
     inline def setCreativeFieldAssignments(value: js.Array[CreativeFieldAssignment]): Self = StObject.set(x, "creativeFieldAssignments", value.asInstanceOf[js.Any])
     
     inline def setCreativeFieldAssignmentsUndefined: Self = StObject.set(x, "creativeFieldAssignments", js.undefined)
     
-    inline def setCreativeFieldAssignmentsVarargs(value: CreativeFieldAssignment*): Self = StObject.set(x, "creativeFieldAssignments", js.Array(value :_*))
+    inline def setCreativeFieldAssignmentsVarargs(value: CreativeFieldAssignment*): Self = StObject.set(x, "creativeFieldAssignments", js.Array(value*))
     
     inline def setCustomKeyValues(value: js.Array[String]): Self = StObject.set(x, "customKeyValues", value.asInstanceOf[js.Any])
     
     inline def setCustomKeyValuesUndefined: Self = StObject.set(x, "customKeyValues", js.undefined)
     
-    inline def setCustomKeyValuesVarargs(value: String*): Self = StObject.set(x, "customKeyValues", js.Array(value :_*))
+    inline def setCustomKeyValuesVarargs(value: String*): Self = StObject.set(x, "customKeyValues", js.Array(value*))
     
     inline def setDynamicAssetSelection(value: Boolean): Self = StObject.set(x, "dynamicAssetSelection", value.asInstanceOf[js.Any])
     
@@ -431,7 +431,7 @@ object Creative {
     
     inline def setExitCustomEventsUndefined: Self = StObject.set(x, "exitCustomEvents", js.undefined)
     
-    inline def setExitCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "exitCustomEvents", js.Array(value :_*))
+    inline def setExitCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "exitCustomEvents", js.Array(value*))
     
     inline def setFsCommand(value: FsCommand): Self = StObject.set(x, "fsCommand", value.asInstanceOf[js.Any])
     
@@ -557,13 +557,13 @@ object Creative {
     
     inline def setThirdPartyUrlsUndefined: Self = StObject.set(x, "thirdPartyUrls", js.undefined)
     
-    inline def setThirdPartyUrlsVarargs(value: ThirdPartyTrackingUrl*): Self = StObject.set(x, "thirdPartyUrls", js.Array(value :_*))
+    inline def setThirdPartyUrlsVarargs(value: ThirdPartyTrackingUrl*): Self = StObject.set(x, "thirdPartyUrls", js.Array(value*))
     
     inline def setTimerCustomEvents(value: js.Array[CreativeCustomEvent]): Self = StObject.set(x, "timerCustomEvents", value.asInstanceOf[js.Any])
     
     inline def setTimerCustomEventsUndefined: Self = StObject.set(x, "timerCustomEvents", js.undefined)
     
-    inline def setTimerCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "timerCustomEvents", js.Array(value :_*))
+    inline def setTimerCustomEventsVarargs(value: CreativeCustomEvent*): Self = StObject.set(x, "timerCustomEvents", js.Array(value*))
     
     inline def setTotalFileSize(value: String): Self = StObject.set(x, "totalFileSize", value.asInstanceOf[js.Any])
     

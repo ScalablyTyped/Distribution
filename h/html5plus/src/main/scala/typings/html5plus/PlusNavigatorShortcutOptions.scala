@@ -25,7 +25,7 @@ trait PlusNavigatorShortcutOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
-  var extra: js.UndefOr[js.Any] = js.undefined
+  var extra: js.UndefOr[Any] = js.undefined
   
   /**
     * 是否需要强制创建快捷方式
@@ -73,7 +73,7 @@ object PlusNavigatorShortcutOptions {
     
     inline def setClassnameUndefined: Self = StObject.set(x, "classname", js.undefined)
     
-    inline def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
     inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     

@@ -12,7 +12,7 @@ trait FlowDefinitionOutputConfig extends StObject {
   var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.undefined
   
   /**
-    * The Amazon S3 path where the object containing human output will be made available.
+    * The Amazon S3 path where the object containing human output will be made available. To learn more about the format of Amazon A2I output data, see Amazon A2I Output Data.
     */
   var S3OutputPath: S3Uri
 }

@@ -32,6 +32,11 @@ trait ColorCorrector extends StObject {
   var Hue: js.UndefOr[integerMinNegative180Max180] = js.undefined
   
   /**
+    * Specify the video color sample range for this output. To create a full range output, you must start with a full range YUV input and keep the default value, None (NONE). To create a limited range output from a full range input, choose Limited range (LIMITED_RANGE_SQUEEZE). With RGB inputs, your output is always limited range, regardless of your choice here. When you create a limited range output from a full range input, MediaConvert limits the active pixel values in a way that depends on the output's bit depth: 8-bit outputs contain only values from 16 through 235 and 10-bit outputs contain only values from 64 through 940. With this conversion, MediaConvert also changes the output metadata to note the limited range.
+    */
+  var SampleRangeConversion: js.UndefOr[typings.awsSdk.mediaconvertMod.SampleRangeConversion] = js.undefined
+  
+  /**
     * Saturation level.
     */
   var Saturation: js.UndefOr[integerMin1Max100] = js.undefined
@@ -64,6 +69,10 @@ object ColorCorrector {
     inline def setHue(value: integerMinNegative180Max180): Self = StObject.set(x, "Hue", value.asInstanceOf[js.Any])
     
     inline def setHueUndefined: Self = StObject.set(x, "Hue", js.undefined)
+    
+    inline def setSampleRangeConversion(value: SampleRangeConversion): Self = StObject.set(x, "SampleRangeConversion", value.asInstanceOf[js.Any])
+    
+    inline def setSampleRangeConversionUndefined: Self = StObject.set(x, "SampleRangeConversion", js.undefined)
     
     inline def setSaturation(value: integerMin1Max100): Self = StObject.set(x, "Saturation", value.asInstanceOf[js.Any])
     

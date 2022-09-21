@@ -22,12 +22,12 @@ trait DnsKey extends StObject {
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * Active keys will be used to sign subsequent changes to the ManagedZone. Inactive keys will still be present as DNSKEY Resource Records for the use of resolvers validating existing
+    * Active keys are used to sign subsequent changes to the ManagedZone. Inactive keys are still present as DNSKEY Resource Records for the use of resolvers validating existing
     * signatures.
     */
   var isActive: js.UndefOr[Boolean] = js.undefined
   
-  /** Length of the key in bits. Specified at creation time then immutable. */
+  /** Length of the key in bits. Specified at creation time, and then immutable. */
   var keyLength: js.UndefOr[Double] = js.undefined
   
   /**
@@ -43,8 +43,8 @@ trait DnsKey extends StObject {
   var publicKey: js.UndefOr[String] = js.undefined
   
   /**
-    * One of "KEY_SIGNING" or "ZONE_SIGNING". Keys of type KEY_SIGNING have the Secure Entry Point flag set and, when active, will be used to sign only resource record sets of type
-    * DNSKEY. Otherwise, the Secure Entry Point flag will be cleared and this key will be used to sign only resource record sets of other types. Immutable after creation time.
+    * One of "KEY_SIGNING" or "ZONE_SIGNING". Keys of type KEY_SIGNING have the Secure Entry Point flag set and, when active, are used to sign only resource record sets of type DNSKEY.
+    * Otherwise, the Secure Entry Point flag is cleared, and this key is used to sign only resource record sets of other types. Immutable after creation time.
     */
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -73,7 +73,7 @@ object DnsKey {
     
     inline def setDigestsUndefined: Self = StObject.set(x, "digests", js.undefined)
     
-    inline def setDigestsVarargs(value: DnsKeyDigest*): Self = StObject.set(x, "digests", js.Array(value :_*))
+    inline def setDigestsVarargs(value: DnsKeyDigest*): Self = StObject.set(x, "digests", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

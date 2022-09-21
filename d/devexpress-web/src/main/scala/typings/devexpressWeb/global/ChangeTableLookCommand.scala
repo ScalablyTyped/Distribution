@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeTableLookCommand")
 @js.native
-class ChangeTableLookCommand ()
+open class ChangeTableLookCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeTableLookCommand {
   

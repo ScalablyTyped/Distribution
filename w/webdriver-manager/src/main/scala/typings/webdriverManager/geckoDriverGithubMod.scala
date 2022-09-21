@@ -10,14 +10,14 @@ object geckoDriverGithubMod {
   
   @JSImport("webdriver-manager/built/lib/binaries/gecko_driver_github", "GeckoDriverGithub")
   @js.native
-  class GeckoDriverGithub () extends GithubApiConfigSource {
+  open class GeckoDriverGithub () extends GithubApiConfigSource {
     
-    /* private */ def getLatestGeckoDriverVersion(): js.Any = js.native
+    /* private */ def getLatestGeckoDriverVersion(): Any = js.native
     
-    /* private */ def getSpecificGeckoDrierVersion(inputVersion: js.Any): js.Any = js.native
+    /* private */ def getSpecificGeckoDrierVersion(inputVersion: Any): Any = js.native
     
     def getVersionsLookup(): js.Promise[js.Array[Index]] = js.native
     
-    /* private */ def oshelper(): js.Any = js.native
+    /* private */ def oshelper(): Any = js.native
   }
 }

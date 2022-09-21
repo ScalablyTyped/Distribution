@@ -17,47 +17,47 @@ object httpMod {
   
   @JSImport("http", "Client")
   @js.native
-  class Client ()
+  open class Client ()
     extends StObject
        with ClassHttpClient
   
   @JSImport("http", "Cookie")
   @js.native
-  class Cookie ()
+  open class Cookie ()
     extends StObject
        with ClassHttpCookie
   
   @JSImport("http", "Handler")
   @js.native
-  class Handler ()
+  open class Handler ()
     extends StObject
        with ClassHttpHandler
   
   @JSImport("http", "HttpsServer")
   @js.native
-  class HttpsServer ()
+  open class HttpsServer ()
     extends StObject
        with ClassHttpsServer
   
   @JSImport("http", "Request")
   @js.native
-  class Request_ ()
+  open class Request_ ()
     extends StObject
        with ClassHttpRequest
   
   @JSImport("http", "Response")
   @js.native
-  class Response ()
+  open class Response ()
     extends StObject
        with ClassHttpResponse
   
   @JSImport("http", "STATUS_CODES")
   @js.native
-  val STATUS_CODES: js.Array[js.Any] = js.native
+  val STATUS_CODES: js.Array[Any] = js.native
   
   @JSImport("http", "Server")
   @js.native
-  class Server ()
+  open class Server ()
     extends StObject
        with ClassHttpServer
   
@@ -67,7 +67,7 @@ object httpMod {
   
   @JSImport("http", "cookies")
   @js.native
-  val cookies: js.Array[js.Any] = js.native
+  val cookies: js.Array[Any] = js.native
   
   inline def del(url: String): ClassHttpResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any]).asInstanceOf[ClassHttpResponse]
   inline def del(url: String, opts: js.Object): ClassHttpResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassHttpResponse]

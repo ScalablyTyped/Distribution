@@ -1,7 +1,7 @@
 
 # Scala.js typings for formsy-react
 
-Typings are for version 2.2.1
+Typings are for version 2.2.7
 
 ## Library description:
 A form input builder and validator for React
@@ -10,10 +10,10 @@ A form input builder and validator for React
 | ------------------ | :-------------: |
 | Full name          | formsy-react |
 | Keywords           | form, forms, formsy, react, react-component, validation |
-| # releases         | 16 |
-| # dependents       | 74 |
-| # downloads        | 3182113 |
-| # stars            | 12 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 117789.66666666667 |
+| # stars            | 746.0 |
 
 ## Links
 - [Homepage](https://github.com/formsy/formsy-react)

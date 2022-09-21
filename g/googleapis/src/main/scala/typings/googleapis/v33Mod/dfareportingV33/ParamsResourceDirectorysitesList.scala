@@ -1,9 +1,5 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,33 +9,24 @@ trait ParamsResourceDirectorysitesList
      with StandardParameters {
   
   /**
-    * This search filter is no longer supported and will have no effect on the
-    * results returned.
+    * This search filter is no longer supported and will have no effect on the results returned.
     */
   var acceptsInStreamVideoPlacements: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * This search filter is no longer supported and will have no effect on the
-    * results returned.
+    * This search filter is no longer supported and will have no effect on the results returned.
     */
   var acceptsInterstitialPlacements: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Select only directory sites that accept publisher paid placements. This
-    * field can be left blank.
+    * Select only directory sites that accept publisher paid placements. This field can be left blank.
     */
   var acceptsPublisherPaidPlacements: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Select only active directory sites. Leave blank to retrieve both active
-    * and inactive directory sites.
+    * Select only active directory sites. Leave blank to retrieve both active and inactive directory sites.
     */
   var active: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only directory sites with this Ad Manager network code.
@@ -67,13 +54,7 @@ trait ParamsResourceDirectorysitesList
   var profileId: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows searching for objects by name, ID or URL. Wildcards (*) are
-    * allowed. For example, "directory site*2015" will return objects with
-    * names like "directory site June 2015", "directory site April 2015", or
-    * simply "directory site 2015". Most of the searches also add wildcards
-    * implicitly at the start and the end of the search string. For example, a
-    * search string of "directory site" will match objects with name "my
-    * directory site", "directory site 2015" or simply, "directory site".
+    * Allows searching for objects by name, ID or URL. Wildcards (*) are allowed. For example, "directory site*2015" will return objects with names like "directory site June 2015", "directory site April 2015", or simply "directory site 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "directory site" will match objects with name "my directory site", "directory site 2015" or simply, "directory site".
     */
   var searchString: js.UndefOr[String] = js.undefined
   
@@ -112,10 +93,6 @@ object ParamsResourceDirectorysitesList {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setDfpNetworkCode(value: String): Self = StObject.set(x, "dfpNetworkCode", value.asInstanceOf[js.Any])
     
     inline def setDfpNetworkCodeUndefined: Self = StObject.set(x, "dfpNetworkCode", js.undefined)
@@ -124,7 +101,7 @@ object ParamsResourceDirectorysitesList {
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

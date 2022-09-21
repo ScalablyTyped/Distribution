@@ -8,7 +8,7 @@ object global {
   
   @JSGlobal("Parallel")
   @js.native
-  class Parallel[T] protected ()
+  open class Parallel[T] protected ()
     extends StObject
        with typings.paralleljs.Parallel[T] {
     /**

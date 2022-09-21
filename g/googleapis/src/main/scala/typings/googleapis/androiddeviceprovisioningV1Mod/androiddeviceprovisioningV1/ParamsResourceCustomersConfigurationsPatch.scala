@@ -1,9 +1,5 @@
 package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovisioningV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +9,7 @@ trait ParamsResourceCustomersConfigurationsPatch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Output only. The API resource name in the format
-    * `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`. Assigned by
-    * the server.
+    * Output only. The API resource name in the format `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`. Assigned by the server.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -30,10 +19,7 @@ trait ParamsResourceCustomersConfigurationsPatch
   var requestBody: js.UndefOr[SchemaConfiguration] = js.undefined
   
   /**
-    * Required. The field mask applied to the target `Configuration` before
-    * updating the fields. To learn more about using field masks, read
-    * [FieldMask](/protocol-buffers/docs/reference/google.protobuf#fieldmask)
-    * in the Protocol Buffers documentation.
+    * Required. The field mask applied to the target `Configuration` before updating the fields. To learn more about using field masks, read [FieldMask](/protocol-buffers/docs/reference/google.protobuf#fieldmask) in the Protocol Buffers documentation.
     */
   var updateMask: js.UndefOr[String] = js.undefined
 }
@@ -45,10 +31,6 @@ object ParamsResourceCustomersConfigurationsPatch {
   }
   
   extension [Self <: ParamsResourceCustomersConfigurationsPatch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

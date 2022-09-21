@@ -67,30 +67,30 @@ object mod {
   
   trait Places extends StObject {
     
-    var query: js.Any
+    var query: Any
     
-    var rawAnswer: js.Any
+    var rawAnswer: Any
     
-    var suggestion: js.Any
+    var suggestion: Any
     
-    var suggestionIndex: js.Any
+    var suggestionIndex: Any
   }
   object Places {
     
-    inline def apply(query: js.Any, rawAnswer: js.Any, suggestion: js.Any, suggestionIndex: js.Any): Places = {
+    inline def apply(query: Any, rawAnswer: Any, suggestion: Any, suggestionIndex: Any): Places = {
       val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], rawAnswer = rawAnswer.asInstanceOf[js.Any], suggestion = suggestion.asInstanceOf[js.Any], suggestionIndex = suggestionIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Places]
     }
     
     extension [Self <: Places](x: Self) {
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      inline def setRawAnswer(value: js.Any): Self = StObject.set(x, "rawAnswer", value.asInstanceOf[js.Any])
+      inline def setRawAnswer(value: Any): Self = StObject.set(x, "rawAnswer", value.asInstanceOf[js.Any])
       
-      inline def setSuggestion(value: js.Any): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
+      inline def setSuggestion(value: Any): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
       
-      inline def setSuggestionIndex(value: js.Any): Self = StObject.set(x, "suggestionIndex", value.asInstanceOf[js.Any])
+      inline def setSuggestionIndex(value: Any): Self = StObject.set(x, "suggestionIndex", value.asInstanceOf[js.Any])
     }
   }
   

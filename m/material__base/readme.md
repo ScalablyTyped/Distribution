@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__base
 
-Typings are for version 8.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 The set of base classes for Material Components for the web
@@ -10,10 +10,10 @@ The set of base classes for Material Components for the web
 | ------------------ | :-------------: |
 | Full name          | @material/base |
 | Keywords           | - |
-| # releases         | 609 |
-| # dependents       | 75 |
-| # downloads        | 5089134 |
-| # stars            | 0 |
+| # releases         | 717 |
+| # dependents       | 0.0 |
+| # downloads        | 793016.0 |
+| # stars            | 16381.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

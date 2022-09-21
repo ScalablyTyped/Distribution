@@ -6,13 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "ColorInformation")
 @js.native
-class ColorInformation protected () extends StObject {
+open class ColorInformation protected () extends StObject {
   /**
     * Creates a new color range.
     *
     * @param range The range the color appears in. Must not be empty.
     * @param color The value of the color.
-    * @param format The format in which this color is currently formatted.
     */
   def this(range: Range, color: Color) = this()
   

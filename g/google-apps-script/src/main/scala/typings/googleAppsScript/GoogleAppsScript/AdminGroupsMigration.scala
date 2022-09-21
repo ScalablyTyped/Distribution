@@ -31,7 +31,7 @@ object AdminGroupsMigration {
       // Inserts a new mail into the archive of the Google group.
       def insert(groupId: String): typings.googleAppsScript.GoogleAppsScript.AdminGroupsMigration.Schema.Groups = js.native
       // Inserts a new mail into the archive of the Google group.
-      def insert(groupId: String, mediaData: js.Any): typings.googleAppsScript.GoogleAppsScript.AdminGroupsMigration.Schema.Groups = js.native
+      def insert(groupId: String, mediaData: Any): typings.googleAppsScript.GoogleAppsScript.AdminGroupsMigration.Schema.Groups = js.native
     }
   }
   

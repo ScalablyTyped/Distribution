@@ -4,8 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** Available only in secure contexts. */
 trait NavigatorStorage extends StObject {
   
+  /* standard dom */
   val storage: StorageManager
 }
 object NavigatorStorage {

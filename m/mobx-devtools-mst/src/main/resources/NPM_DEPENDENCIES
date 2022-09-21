@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mobx-devtools-mst" : "0.9.30"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mobx-devtools-mst" : "0.9.30"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -22,6 +22,6 @@ object DidChangeWatchedFilesParams {
     
     inline def setChanges(value: js.Array[FileEvent]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    inline def setChangesVarargs(value: FileEvent*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: FileEvent*): Self = StObject.set(x, "changes", js.Array(value*))
   }
 }

@@ -23,6 +23,8 @@ object monthSelectMod {
   
   trait Config extends StObject {
     
+    var _stubbedCurrentMonth: js.UndefOr[Double] = js.undefined
+    
     var altFormat: String
     
     var dateFormat: String
@@ -47,6 +49,10 @@ object monthSelectMod {
       inline def setShorthand(value: Boolean): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
       
       inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      
+      inline def set_stubbedCurrentMonth(value: Double): Self = StObject.set(x, "_stubbedCurrentMonth", value.asInstanceOf[js.Any])
+      
+      inline def set_stubbedCurrentMonthUndefined: Self = StObject.set(x, "_stubbedCurrentMonth", js.undefined)
     }
   }
   
@@ -67,11 +73,11 @@ object monthSelectMod {
     var $i: Double = js.native
     
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     var dateObj: Date = js.native
     

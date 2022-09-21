@@ -1,7 +1,6 @@
 package typings.shouldSinon
 
 import typings.should.mod.Assertion
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,19 +17,19 @@ object mod {
       * Assert stub was called with given object as this always. So if you call stub several times
       * all should be with the same object
       */
-    def alwaysCalledOn(obj: js.Any): Unit = js.native
+    def alwaysCalledOn(obj: Any): Unit = js.native
     
-    def alwaysCalledWith(args: js.Any*): Unit = js.native
+    def alwaysCalledWith(args: Any*): Unit = js.native
     
     /**
       * Passes if the spy was always called with the provided arguments and no others.
       */
-    def alwaysCalledWithExactly(args: js.Any*): Unit = js.native
+    def alwaysCalledWithExactly(args: Any*): Unit = js.native
     
     /**
       * Returns true if spy was always called with matching arguments (and possibly others).
       */
-    def alwaysCalledWithMatch(args: js.Any*): Unit = js.native
+    def alwaysCalledWithMatch(args: Any*): Unit = js.native
     
     def alwaysCalledWithNew(): Unit = js.native
     
@@ -40,7 +39,7 @@ object mod {
       * provided, the assertion passes if the spy ever threw any exception.
       */
     def alwaysThrew(ex: String): Unit = js.native
-    def alwaysThrew(ex: Error): Unit = js.native
+    def alwaysThrew(ex: js.Error): Unit = js.native
     
     /**
       * Assert stub was called at exact number of times
@@ -55,7 +54,7 @@ object mod {
     /**
       * Assert stub was called with given object as this
       */
-    def calledOn(obj: js.Any): Unit = js.native
+    def calledOn(obj: Any): Unit = js.native
     
     /**
       * Assert stub was called at exactly once
@@ -75,17 +74,17 @@ object mod {
     /**
       * Asserts that stub was called with given arguments
       */
-    def calledWith(args: js.Any*): Unit = js.native
+    def calledWith(args: Any*): Unit = js.native
     
     /**
       * Returns true if call received provided arguments and no others.
       */
-    def calledWithExactly(args: js.Any*): Unit = js.native
+    def calledWithExactly(args: Any*): Unit = js.native
     
     /**
       * Returns true if spy was called with matching arguments (and possibly others).
       */
-    def calledWithMatch(args: js.Any*): Unit = js.native
+    def calledWithMatch(args: Any*): Unit = js.native
     
     /**
       * Asserts that stub was called with new
@@ -95,12 +94,12 @@ object mod {
     /**
       * Returns true if the spy/stub was never called with the provided arguments.
       */
-    def neverCalledWith(args: js.Any*): Unit = js.native
+    def neverCalledWith(args: Any*): Unit = js.native
     
     /**
       * Returns true if the spy/stub was never called with matching arguments.
       */
-    def neverCalledWithMatch(args: js.Any*): Unit = js.native
+    def neverCalledWithMatch(args: Any*): Unit = js.native
     
     /**
       * Passes if the spy threw the given exception. The exception can be a
@@ -108,7 +107,7 @@ object mod {
       * provided, the assertion passes if the spy ever threw any exception.
       */
     def threw(ex: String): Unit = js.native
-    def threw(ex: Error): Unit = js.native
+    def threw(ex: js.Error): Unit = js.native
   }
   
   trait SinonSpyCallApi extends StObject {

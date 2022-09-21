@@ -33,6 +33,7 @@ trait CoreGraphManipulation extends StObject {
     * Add elements to the graph and return them.
     */
   def add(eles: ElementDefinition): CollectionReturnValue = js.native
+  def add(eles: ElementsDefinition): CollectionReturnValue = js.native
   
   /**
     * Allow for manipulation of elements without triggering multiple style calculations or multiple redraws.

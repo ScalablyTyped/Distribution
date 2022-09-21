@@ -18,7 +18,14 @@ trait FeatureLayerCapabilitiesQuery
   var maxRecordCount: Double
   
   /**
-    * Indicates if the query operation supports a [cache hint](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#cacheHint).
+    * List of supported aggregated geometries returned for each distinct group when [groupByFieldsForStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#groupByFieldsForStatistics) is used.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
+    */
+  var supportedSpatialStatisticAggregations: FeatureLayerCapabilitiesQuerySupportedSpatialStatisticAggregations
+  
+  /**
+    * Indicates if the query operation supports a [cache hint](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#cacheHint).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
@@ -32,7 +39,7 @@ trait FeatureLayerCapabilitiesQuery
   var supportsCentroid: Boolean
   
   /**
-    * Indicates if the query operation supports `disjoint` [spatial relationship](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#spatialRelationship).
+    * Indicates if the query operation supports `disjoint` [spatial relationship](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#spatialRelationship).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
@@ -67,7 +74,7 @@ trait FeatureLayerCapabilitiesQuery
   var supportsGeometryProperties: Boolean
   
   /**
-    * Indicates if the layer supports the [having](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#having) clause on the service.
+    * Indicates if the layer supports the [having](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#having) clause on the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
@@ -95,7 +102,7 @@ trait FeatureLayerCapabilitiesQuery
   var supportsPagination: Boolean
   
   /**
-    * Indicates if the layer supports [percentile statisticType](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticType).
+    * Indicates if the layer supports [percentile statisticType](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticType).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
@@ -116,7 +123,7 @@ trait FeatureLayerCapabilitiesQuery
   var supportsQuantizationEditMode: Boolean
   
   /**
-    * Indicates if the query response includes the [query geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#queryGeometry).
+    * Indicates if the query response includes the [query geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html#queryGeometry).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
@@ -130,14 +137,21 @@ trait FeatureLayerCapabilitiesQuery
   var supportsResultType: Boolean
   
   /**
-    * Indicates if the query operation supports SQL expressions.
+    * Indicates if the layer supports spatial extent, center or convex hull to be returned for each distinct group when [groupByFieldsForStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#groupByFieldsForStatistics) is used.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
+    */
+  var supportsSpatialAggregationStatistics: Boolean
+  
+  /**
+    * Indicates if the layer supports SQL expressions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsSqlExpression: Boolean
   
   /**
-    * Indicates if the query operation supports using standardized queries.
+    * Indicates if the layer supports using standardized queries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
@@ -157,6 +171,7 @@ object FeatureLayerCapabilitiesQuery {
     hasOwnProperty: PropertyKey => Boolean,
     maxRecordCount: Double,
     propertyIsEnumerable: PropertyKey => Boolean,
+    supportedSpatialStatisticAggregations: FeatureLayerCapabilitiesQuerySupportedSpatialStatisticAggregations,
     supportsCacheHint: Boolean,
     supportsCentroid: Boolean,
     supportsDisjointSpatialRelationship: Boolean,
@@ -173,17 +188,20 @@ object FeatureLayerCapabilitiesQuery {
     supportsQuantizationEditMode: Boolean,
     supportsQueryGeometry: Boolean,
     supportsResultType: Boolean,
+    supportsSpatialAggregationStatistics: Boolean,
     supportsSqlExpression: Boolean,
     supportsStandardizedQueriesOnly: Boolean,
     supportsStatistics: Boolean
   ): FeatureLayerCapabilitiesQuery = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxRecordCount = maxRecordCount.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsCacheHint = supportsCacheHint.asInstanceOf[js.Any], supportsCentroid = supportsCentroid.asInstanceOf[js.Any], supportsDisjointSpatialRelationship = supportsDisjointSpatialRelationship.asInstanceOf[js.Any], supportsDistance = supportsDistance.asInstanceOf[js.Any], supportsDistinct = supportsDistinct.asInstanceOf[js.Any], supportsExtent = supportsExtent.asInstanceOf[js.Any], supportsGeometryProperties = supportsGeometryProperties.asInstanceOf[js.Any], supportsHavingClause = supportsHavingClause.asInstanceOf[js.Any], supportsHistoricMoment = supportsHistoricMoment.asInstanceOf[js.Any], supportsOrderBy = supportsOrderBy.asInstanceOf[js.Any], supportsPagination = supportsPagination.asInstanceOf[js.Any], supportsPercentileStatistics = supportsPercentileStatistics.asInstanceOf[js.Any], supportsQuantization = supportsQuantization.asInstanceOf[js.Any], supportsQuantizationEditMode = supportsQuantizationEditMode.asInstanceOf[js.Any], supportsQueryGeometry = supportsQueryGeometry.asInstanceOf[js.Any], supportsResultType = supportsResultType.asInstanceOf[js.Any], supportsSqlExpression = supportsSqlExpression.asInstanceOf[js.Any], supportsStandardizedQueriesOnly = supportsStandardizedQueriesOnly.asInstanceOf[js.Any], supportsStatistics = supportsStatistics.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxRecordCount = maxRecordCount.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportedSpatialStatisticAggregations = supportedSpatialStatisticAggregations.asInstanceOf[js.Any], supportsCacheHint = supportsCacheHint.asInstanceOf[js.Any], supportsCentroid = supportsCentroid.asInstanceOf[js.Any], supportsDisjointSpatialRelationship = supportsDisjointSpatialRelationship.asInstanceOf[js.Any], supportsDistance = supportsDistance.asInstanceOf[js.Any], supportsDistinct = supportsDistinct.asInstanceOf[js.Any], supportsExtent = supportsExtent.asInstanceOf[js.Any], supportsGeometryProperties = supportsGeometryProperties.asInstanceOf[js.Any], supportsHavingClause = supportsHavingClause.asInstanceOf[js.Any], supportsHistoricMoment = supportsHistoricMoment.asInstanceOf[js.Any], supportsOrderBy = supportsOrderBy.asInstanceOf[js.Any], supportsPagination = supportsPagination.asInstanceOf[js.Any], supportsPercentileStatistics = supportsPercentileStatistics.asInstanceOf[js.Any], supportsQuantization = supportsQuantization.asInstanceOf[js.Any], supportsQuantizationEditMode = supportsQuantizationEditMode.asInstanceOf[js.Any], supportsQueryGeometry = supportsQueryGeometry.asInstanceOf[js.Any], supportsResultType = supportsResultType.asInstanceOf[js.Any], supportsSpatialAggregationStatistics = supportsSpatialAggregationStatistics.asInstanceOf[js.Any], supportsSqlExpression = supportsSqlExpression.asInstanceOf[js.Any], supportsStandardizedQueriesOnly = supportsStandardizedQueriesOnly.asInstanceOf[js.Any], supportsStatistics = supportsStatistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerCapabilitiesQuery]
   }
   
   extension [Self <: FeatureLayerCapabilitiesQuery](x: Self) {
     
     inline def setMaxRecordCount(value: Double): Self = StObject.set(x, "maxRecordCount", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedSpatialStatisticAggregations(value: FeatureLayerCapabilitiesQuerySupportedSpatialStatisticAggregations): Self = StObject.set(x, "supportedSpatialStatisticAggregations", value.asInstanceOf[js.Any])
     
     inline def setSupportsCacheHint(value: Boolean): Self = StObject.set(x, "supportsCacheHint", value.asInstanceOf[js.Any])
     
@@ -216,6 +234,8 @@ object FeatureLayerCapabilitiesQuery {
     inline def setSupportsQueryGeometry(value: Boolean): Self = StObject.set(x, "supportsQueryGeometry", value.asInstanceOf[js.Any])
     
     inline def setSupportsResultType(value: Boolean): Self = StObject.set(x, "supportsResultType", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsSpatialAggregationStatistics(value: Boolean): Self = StObject.set(x, "supportsSpatialAggregationStatistics", value.asInstanceOf[js.Any])
     
     inline def setSupportsSqlExpression(value: Boolean): Self = StObject.set(x, "supportsSqlExpression", value.asInstanceOf[js.Any])
     

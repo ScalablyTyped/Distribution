@@ -38,7 +38,7 @@ object anon {
       * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object
       * that is passed to a callback.
       */
-    var asyncContext: js.UndefOr[js.Any] = js.undefined
+    var asyncContext: js.UndefOr[Any] = js.undefined
     
     var isInline: Boolean
   }
@@ -51,7 +51,7 @@ object anon {
     
     extension [Self <: AsyncContextOptionsisInli](x: Self) {
       
-      inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+      inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
       
       inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
       
@@ -66,7 +66,7 @@ object anon {
       * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object
       * that is passed to a callback.
       */
-    var asyncContext: js.UndefOr[js.Any] = js.undefined
+    var asyncContext: js.UndefOr[Any] = js.undefined
     
     var isRest: js.UndefOr[Boolean] = js.undefined
   }
@@ -79,7 +79,7 @@ object anon {
     
     extension [Self <: AsyncContextOptionsisRest](x: Self) {
       
-      inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+      inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
       
       inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
       
@@ -851,22 +851,22 @@ object anon {
   
   trait Cells extends StObject {
     
-    var cells: js.Any
+    var cells: Any
     
-    var format: js.Any
+    var format: Any
   }
   object Cells {
     
-    inline def apply(cells: js.Any, format: js.Any): Cells = {
+    inline def apply(cells: Any, format: Any): Cells = {
       val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cells]
     }
     
     extension [Self <: Cells](x: Self) {
       
-      inline def setCells(value: js.Any): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+      inline def setCells(value: Any): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
-      inline def setFormat(value: js.Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
   
@@ -988,20 +988,47 @@ object anon {
     }
   }
   
+  trait InUse extends StObject {
+    
+    var inUse: Boolean
+    
+    var shortcut: String
+  }
+  object InUse {
+    
+    inline def apply(inUse: Boolean, shortcut: String): InUse = {
+      val __obj = js.Dynamic.literal(inUse = inUse.asInstanceOf[js.Any], shortcut = shortcut.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InUse]
+    }
+    
+    extension [Self <: InUse](x: Self) {
+      
+      inline def setInUse(value: Boolean): Self = StObject.set(x, "inUse", value.asInstanceOf[js.Any])
+      
+      inline def setShortcut(value: String): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Message extends StObject {
     
-    var message: String | Boolean
+    var message: String
+    
+    var origin: js.UndefOr[String] = js.undefined
   }
   object Message {
     
-    inline def apply(message: String | Boolean): Message = {
+    inline def apply(message: String): Message = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
     extension [Self <: Message](x: Self) {
       
-      inline def setMessage(value: String | Boolean): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     }
   }
 }

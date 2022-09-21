@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactNativeSvgChartsStrings {
   
   @js.native
-  sealed trait default extends StObject
-  inline def default: default = "default".asInstanceOf[default]
-  
-  @js.native
   sealed trait BOTH
     extends StObject
        with GridDirection
@@ -42,22 +38,6 @@ object reactNativeSvgChartsStrings {
   inline def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
   
   @js.native
-  sealed trait inherit extends StObject
-  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
-  
-  @js.native
-  sealed trait `non-scaling-stroke` extends StObject
-  inline def `non-scaling-stroke`: `non-scaling-stroke` = "non-scaling-stroke".asInstanceOf[`non-scaling-stroke`]
-  
-  @js.native
-  sealed trait nonScalingStroke extends StObject
-  inline def nonScalingStroke: nonScalingStroke = "nonScalingStroke".asInstanceOf[nonScalingStroke]
-  
-  @js.native
   sealed trait none extends StObject
   inline def none: none = "none".asInstanceOf[none]
-  
-  @js.native
-  sealed trait uri extends StObject
-  inline def uri: uri = "uri".asInstanceOf[uri]
 }

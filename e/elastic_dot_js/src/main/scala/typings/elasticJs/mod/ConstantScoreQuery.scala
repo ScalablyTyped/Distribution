@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   Constructs a query where each documents returned by the internal
   query or filter have a constant score equal to the boost factor.
   */
-class ConstantScoreQuery ()
+open class ConstantScoreQuery ()
   extends StObject
      with Query {
   
@@ -48,5 +48,5 @@ class ConstantScoreQuery ()
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

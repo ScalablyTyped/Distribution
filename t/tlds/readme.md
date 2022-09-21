@@ -1,7 +1,7 @@
 
 # Scala.js typings for tlds
 
-Typings are for version 1.212.0
+Typings are for version 1.231.0
 
 ## Library description:
 A list of TLDs.
@@ -10,15 +10,12 @@ A list of TLDs.
 | ------------------ | :-------------: |
 | Full name          | tlds |
 | Keywords           | data, tld, tlds, top, level, domains |
-| # releases         | 11 |
-| # dependents       | 78 |
-| # downloads        | 23476834 |
-| # stars            | 1 |
+| # releases         | 25 |
+| # dependents       | 0.0 |
+| # downloads        | 4126893.6666666665 |
+| # stars            | 109.0 |
 
 ## Links
-- [Homepage](https://github.com/stephenmathieson/node-tlds#readme)
-- [Bugs](https://github.com/stephenmathieson/node-tlds/issues)
-- [Repository](https://github.com/stephenmathieson/node-tlds)
 - [Npm](https://www.npmjs.com/package/tlds)
     
 

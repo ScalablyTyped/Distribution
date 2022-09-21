@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.bigtableadmin" : "2.0.20201007"
+      "@maxim_mazurok/gapi.client.bigtableadmin" : "2.0.20220725"
     }
   ],
   "test-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.bigtableadmin" : "2.0.20201007"
+      "@maxim_mazurok/gapi.client.bigtableadmin" : "2.0.20220725"
     }
   ],
   "compile-devDependencies" : [

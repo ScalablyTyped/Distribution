@@ -28,5 +28,5 @@ object mod {
   def defaults: DurandalActivatorSettings = js.native
   inline def defaults_=(x: DurandalActivatorSettings): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
   
-  inline def isActivator(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActivator")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isActivator(`object`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActivator")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

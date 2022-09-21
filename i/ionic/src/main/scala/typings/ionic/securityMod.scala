@@ -12,7 +12,7 @@ object securityMod {
   
   @JSImport("ionic/lib/security", "SecurityClient")
   @js.native
-  class SecurityClient protected ()
+  open class SecurityClient protected ()
     extends ResourceClient
        with ResourceClientLoad[SecurityProfile] {
     def this(hasClientToken: SecurityClientDeps) = this()

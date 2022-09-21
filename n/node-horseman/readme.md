@@ -10,15 +10,12 @@ Run PhantomJS from Node
 | ------------------ | :-------------: |
 | Full name          | node-horseman |
 | Keywords           | phantomjs, horseman, headless, browser |
-| # releases         | 0 |
-| # dependents       | 38 |
-| # downloads        | 85621 |
-| # stars            | 17 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 16401.333333333332 |
+| # stars            | 1471.0 |
 
 ## Links
-- [Homepage](https://github.com/johntitus/node-horseman#readme)
-- [Bugs](https://github.com/johntitus/node-horseman/issues)
-- [Repository](https://github.com/johntitus/node-horseman)
 - [Npm](https://www.npmjs.com/package/node-horseman)
     
 

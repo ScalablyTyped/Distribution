@@ -8,5 +8,5 @@ object deleteBaiduChannelMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/DeleteBaiduChannel", "DeleteBaiduChannel")
   @js.native
-  val DeleteBaiduChannel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DeleteBaiduChannel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

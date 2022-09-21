@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @brief mongodb 数据库数据唯一标识对象，用于存储传递 oid
   * @detail 
   */
-type ClassMongoID = typings.fibjs.ClassObject
+type ClassMongoID = ClassObject
 
-type ClassXmlCDATASection = typings.fibjs.ClassXmlText
+type ClassXmlCDATASection = ClassXmlText
 
-type ClassXmlComment = typings.fibjs.ClassXmlCharacterData
+type ClassXmlComment = ClassXmlCharacterData

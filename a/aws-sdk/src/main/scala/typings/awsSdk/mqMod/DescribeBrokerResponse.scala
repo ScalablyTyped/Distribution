@@ -7,17 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeBrokerResponse extends StObject {
   
   /**
-    * The authentication strategy used to secure the broker.
+    * A list of actions required for a broker.
+    */
+  var ActionsRequired: js.UndefOr[listOfActionRequired] = js.undefined
+  
+  /**
+    * The authentication strategy used to secure the broker. The default is SIMPLE.
     */
   var AuthenticationStrategy: js.UndefOr[typings.awsSdk.mqMod.AuthenticationStrategy] = js.undefined
   
   /**
-    * Required. Enables automatic upgrades to new minor versions for brokers, as Apache releases the versions. The automatic upgrades occur during the maintenance window of the broker or after a manual broker reboot.
+    * Enables automatic upgrades to new minor versions for brokers, as new versions are released and supported by Amazon MQ. Automatic upgrades occur during the scheduled maintenance window of the broker or after a manual broker reboot.
     */
   var AutoMinorVersionUpgrade: js.UndefOr[boolean] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the broker.
+    * The broker's Amazon Resource Name (ARN).
     */
   var BrokerArn: js.UndefOr[string] = js.undefined
   
@@ -32,12 +37,12 @@ trait DescribeBrokerResponse extends StObject {
   var BrokerInstances: js.UndefOr[listOfBrokerInstance] = js.undefined
   
   /**
-    * The name of the broker. This value must be unique in your AWS account, 1-50 characters long, must contain only letters, numbers, dashes, and underscores, and must not contain whitespaces, brackets, wildcard characters, or special characters.
+    * The broker's name. This value must be unique in your AWS account, 1-50 characters long, must contain only letters, numbers, dashes, and underscores, and must not contain white spaces, brackets, wildcard characters, or special characters.
     */
   var BrokerName: js.UndefOr[string] = js.undefined
   
   /**
-    * The status of the broker.
+    * The broker's status.
     */
   var BrokerState: js.UndefOr[typings.awsSdk.mqMod.BrokerState] = js.undefined
   
@@ -49,25 +54,25 @@ trait DescribeBrokerResponse extends StObject {
   /**
     * The time when the broker was created.
     */
-  var Created: js.UndefOr[timestampIso8601] = js.undefined
+  var Created: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Required. The deployment mode of the broker.
+    * The broker's deployment mode.
     */
   var DeploymentMode: js.UndefOr[typings.awsSdk.mqMod.DeploymentMode] = js.undefined
   
   /**
-    * Encryption options for the broker.
+    * Encryption options for the broker. Does not apply to RabbitMQ brokers.
     */
   var EncryptionOptions: js.UndefOr[typings.awsSdk.mqMod.EncryptionOptions] = js.undefined
   
   /**
-    * Required. The type of broker engine. Note: Currently, Amazon MQ supports ACTIVEMQ and RABBITMQ.
+    * The type of broker engine. Currently, Amazon MQ supports ACTIVEMQ and RABBITMQ.
     */
   var EngineType: js.UndefOr[typings.awsSdk.mqMod.EngineType] = js.undefined
   
   /**
-    * The version of the broker engine. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
+    * The broker engine's version. For a list of supported engine versions, see Supported engines.
     */
   var EngineVersion: js.UndefOr[string] = js.undefined
   
@@ -92,22 +97,22 @@ trait DescribeBrokerResponse extends StObject {
   var MaintenanceWindowStartTime: js.UndefOr[WeeklyStartTime] = js.undefined
   
   /**
-    * The authentication strategy that will be applied when the broker is rebooted.
+    * The authentication strategy that will be applied when the broker is rebooted. The default is SIMPLE.
     */
   var PendingAuthenticationStrategy: js.UndefOr[AuthenticationStrategy] = js.undefined
   
   /**
-    * The version of the broker engine to upgrade to. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
+    * The broker engine version to upgrade to. For a list of supported engine versions, see Supported engines.
     */
   var PendingEngineVersion: js.UndefOr[string] = js.undefined
   
   /**
-    * The host instance type of the broker to upgrade to. For a list of supported instance types, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide//broker.html#broker-instance-types
+    * The broker's host instance type to upgrade to. For a list of supported instance types, see Broker instance types.
     */
   var PendingHostInstanceType: js.UndefOr[string] = js.undefined
   
   /**
-    * The metadata of the LDAP server that will be used to authenticate and authorize connections to the broker once it is rebooted.
+    * The metadata of the LDAP server that will be used to authenticate and authorize connections to the broker after it is rebooted.
     */
   var PendingLdapServerMetadata: js.UndefOr[LdapServerMetadataOutput] = js.undefined
   
@@ -117,12 +122,12 @@ trait DescribeBrokerResponse extends StObject {
   var PendingSecurityGroups: js.UndefOr[listOfString] = js.undefined
   
   /**
-    * Required. Enables connections from applications outside of the VPC that hosts the broker's subnets.
+    * Enables connections from applications outside of the VPC that hosts the broker's subnets.
     */
   var PubliclyAccessible: js.UndefOr[boolean] = js.undefined
   
   /**
-    * The list of security groups (1 minimum, 5 maximum) that authorizes connections to brokers.
+    * The list of rules (1 minimum, 125 maximum) that authorize connections to brokers.
     */
   var SecurityGroups: js.UndefOr[listOfString] = js.undefined
   
@@ -132,7 +137,7 @@ trait DescribeBrokerResponse extends StObject {
   var StorageType: js.UndefOr[BrokerStorageType] = js.undefined
   
   /**
-    * The list of groups that define which subnets and IP ranges the broker can use from different Availability Zones. A SINGLE_INSTANCE deployment requires one subnet (for example, the default subnet). An ACTIVE_STANDBY_MULTI_AZ deployment (ACTIVEMQ) requires two subnets. A CLUSTER_MULTI_AZ deployment (RABBITMQ) has no subnet requirements when deployed with public accessibility, deployment without public accessibility requires at least one subnet.
+    * The list of groups that define which subnets and IP ranges the broker can use from different Availability Zones.
     */
   var SubnetIds: js.UndefOr[listOfString] = js.undefined
   
@@ -155,6 +160,12 @@ object DescribeBrokerResponse {
   
   extension [Self <: DescribeBrokerResponse](x: Self) {
     
+    inline def setActionsRequired(value: listOfActionRequired): Self = StObject.set(x, "ActionsRequired", value.asInstanceOf[js.Any])
+    
+    inline def setActionsRequiredUndefined: Self = StObject.set(x, "ActionsRequired", js.undefined)
+    
+    inline def setActionsRequiredVarargs(value: ActionRequired*): Self = StObject.set(x, "ActionsRequired", js.Array(value*))
+    
     inline def setAuthenticationStrategy(value: AuthenticationStrategy): Self = StObject.set(x, "AuthenticationStrategy", value.asInstanceOf[js.Any])
     
     inline def setAuthenticationStrategyUndefined: Self = StObject.set(x, "AuthenticationStrategy", js.undefined)
@@ -175,7 +186,7 @@ object DescribeBrokerResponse {
     
     inline def setBrokerInstancesUndefined: Self = StObject.set(x, "BrokerInstances", js.undefined)
     
-    inline def setBrokerInstancesVarargs(value: BrokerInstance*): Self = StObject.set(x, "BrokerInstances", js.Array(value :_*))
+    inline def setBrokerInstancesVarargs(value: BrokerInstance*): Self = StObject.set(x, "BrokerInstances", js.Array(value*))
     
     inline def setBrokerName(value: string): Self = StObject.set(x, "BrokerName", value.asInstanceOf[js.Any])
     
@@ -189,7 +200,7 @@ object DescribeBrokerResponse {
     
     inline def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
     
-    inline def setCreated(value: timestampIso8601): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
     
@@ -245,7 +256,7 @@ object DescribeBrokerResponse {
     
     inline def setPendingSecurityGroupsUndefined: Self = StObject.set(x, "PendingSecurityGroups", js.undefined)
     
-    inline def setPendingSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "PendingSecurityGroups", js.Array(value :_*))
+    inline def setPendingSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "PendingSecurityGroups", js.Array(value*))
     
     inline def setPubliclyAccessible(value: boolean): Self = StObject.set(x, "PubliclyAccessible", value.asInstanceOf[js.Any])
     
@@ -255,7 +266,7 @@ object DescribeBrokerResponse {
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setStorageType(value: BrokerStorageType): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     
@@ -265,7 +276,7 @@ object DescribeBrokerResponse {
     
     inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    inline def setSubnetIdsVarargs(value: string*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: string*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
     
     inline def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
@@ -275,6 +286,6 @@ object DescribeBrokerResponse {
     
     inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
-    inline def setUsersVarargs(value: UserSummary*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UserSummary*): Self = StObject.set(x, "Users", js.Array(value*))
   }
 }

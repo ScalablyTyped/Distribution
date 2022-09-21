@@ -47,7 +47,7 @@ trait UpdateStageRequest extends StObject {
   var RouteSettings: js.UndefOr[RouteSettingsMap] = js.undefined
   
   /**
-    * The stage name. Stage names can only contain alphanumeric characters, hyphens, and underscores. Maximum length is 128 characters.
+    * The stage name. Stage names can contain only alphanumeric characters, hyphens, and underscores, or be $default. Maximum length is 128 characters.
     */
   var StageName: string
   

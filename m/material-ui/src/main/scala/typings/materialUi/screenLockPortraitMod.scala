@@ -10,10 +10,10 @@ object screenLockPortraitMod {
   
   @JSImport("material-ui/svg-icons/device/screen-lock-portrait", JSImport.Default)
   @js.native
-  class default () extends DeviceScreenLockPortrait
+  open class default () extends DeviceScreenLockPortrait
   
   @JSImport("material-ui/svg-icons/device/screen-lock-portrait", "DeviceScreenLockPortrait")
   @js.native
-  class DeviceScreenLockPortrait ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceScreenLockPortrait ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

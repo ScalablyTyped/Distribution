@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "hast-util-to-nlcst" : "2.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "hast-util-to-nlcst" : "2.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

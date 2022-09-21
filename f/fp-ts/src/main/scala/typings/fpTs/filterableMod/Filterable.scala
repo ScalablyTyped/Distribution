@@ -1,12 +1,12 @@
 package typings.fpTs.filterableMod
 
 import typings.fpTs.compactableMod.Compactable
-import typings.fpTs.compactableMod.Separated
 import typings.fpTs.eitherMod.Either_
-import typings.fpTs.functionMod.Predicate
-import typings.fpTs.functionMod.Refinement
 import typings.fpTs.functorMod.Functor
 import typings.fpTs.optionMod.Option_
+import typings.fpTs.predicateMod.Predicate
+import typings.fpTs.refinementMod.Refinement
+import typings.fpTs.separatedMod.Separated_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,47 +24,47 @@ trait Filterable[F]
     * Filter a data structure based on a boolean predicate.
     */
   def filter[A](
-    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any,
+    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any,
     predicate: Predicate[A]
-  ): js.Any = js.native
+  ): Any = js.native
   
   /**
     * Map over a data structure and filter based on an option predicate.
     */
   def filterMap[A, B](
-    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any,
+    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any,
     f: js.Function1[/* a */ A, Option_[B]]
-  ): js.Any = js.native
+  ): Any = js.native
   
   /**
     * Filter a data structure based on a boolean predicate.
     */
   @JSName("filter")
   def filter_AB_A[A, B /* <: A */](
-    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any,
+    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any,
     refinement: Refinement[A, B]
-  ): js.Any = js.native
+  ): Any = js.native
   
   /**
     * Partition a data structure based on a boolean predicate.
     */
   def partition[A](
-    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any,
+    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any,
     predicate: Predicate[A]
-  ): Separated[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any
+  ): Separated_[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
   ] = js.native
   
   /**
     * Partition a data structure based on an either predicate.
     */
   def partitionMap[A, B, C](
-    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any,
+    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any,
     f: js.Function1[/* a */ A, Either_[B, C]]
-  ): Separated[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, C> */ js.Any
+  ): Separated_[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, C> */ Any
   ] = js.native
   
   /**
@@ -72,10 +72,10 @@ trait Filterable[F]
     */
   @JSName("partition")
   def partition_AB_A[A, B /* <: A */](
-    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any,
+    fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any,
     refinement: Refinement[A, B]
-  ): Separated[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
+  ): Separated_[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ Any
   ] = js.native
 }

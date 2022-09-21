@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TranslateTextResponse extends StObject {
   
   /**
+    * Settings that configure the translation output.
+    */
+  var AppliedSettings: js.UndefOr[TranslationSettings] = js.undefined
+  
+  /**
     * The names of the custom terminologies applied to the input text by Amazon Translate for the translated text response.
     */
   var AppliedTerminologies: js.UndefOr[AppliedTerminologyList] = js.undefined
@@ -39,11 +44,15 @@ object TranslateTextResponse {
   
   extension [Self <: TranslateTextResponse](x: Self) {
     
+    inline def setAppliedSettings(value: TranslationSettings): Self = StObject.set(x, "AppliedSettings", value.asInstanceOf[js.Any])
+    
+    inline def setAppliedSettingsUndefined: Self = StObject.set(x, "AppliedSettings", js.undefined)
+    
     inline def setAppliedTerminologies(value: AppliedTerminologyList): Self = StObject.set(x, "AppliedTerminologies", value.asInstanceOf[js.Any])
     
     inline def setAppliedTerminologiesUndefined: Self = StObject.set(x, "AppliedTerminologies", js.undefined)
     
-    inline def setAppliedTerminologiesVarargs(value: AppliedTerminology*): Self = StObject.set(x, "AppliedTerminologies", js.Array(value :_*))
+    inline def setAppliedTerminologiesVarargs(value: AppliedTerminology*): Self = StObject.set(x, "AppliedTerminologies", js.Array(value*))
     
     inline def setSourceLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "SourceLanguageCode", value.asInstanceOf[js.Any])
     

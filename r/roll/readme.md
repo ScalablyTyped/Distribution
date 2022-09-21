@@ -10,10 +10,10 @@ node.js package for rolling dice and adding modifiers. ex: 2d6+1
 | ------------------ | :-------------: |
 | Full name          | roll |
 | Keywords           | roll, random, dice, games, rpg, role playing |
-| # releases         | 3 |
-| # dependents       | 14 |
-| # downloads        | 20768 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1062.0 |
+| # stars            | 43.0 |
 
 ## Links
 - [Homepage](https://github.com/troygoode/node-roll/)

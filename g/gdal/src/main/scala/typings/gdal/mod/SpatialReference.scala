@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gdal", "SpatialReference")
 @js.native
-class SpatialReference () extends StObject {
+open class SpatialReference () extends StObject {
   def this(wkt: String) = this()
   
   def EPSGTreatsAsLatLong(): Boolean = js.native
@@ -72,7 +72,7 @@ object SpatialReference {
   
   inline def fromCRSURL(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCRSURL")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
-  inline def fromEPSG(input: String): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
+  inline def fromEPSG(input: Double): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   
   inline def fromEPSGA(input: Double): SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSGA")(input.asInstanceOf[js.Any]).asInstanceOf[SpatialReference]
   

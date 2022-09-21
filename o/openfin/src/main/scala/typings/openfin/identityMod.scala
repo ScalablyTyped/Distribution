@@ -47,7 +47,7 @@ object identityMod {
   
   trait Identity extends StObject {
     
-    var entityType: js.UndefOr[js.Any] = js.undefined
+    var entityType: js.UndefOr[Any] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
     
@@ -62,7 +62,7 @@ object identityMod {
     
     extension [Self <: Identity](x: Self) {
       
-      inline def setEntityType(value: js.Any): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+      inline def setEntityType(value: Any): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
       
       inline def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
       

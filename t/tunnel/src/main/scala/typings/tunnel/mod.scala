@@ -1,7 +1,7 @@
 package typings.tunnel
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,14 +16,14 @@ object mod {
   inline def httpOverHttp(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpOverHttp")().asInstanceOf[Agent]
   inline def httpOverHttp(options: HttpOptions): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpOverHttp")(options.asInstanceOf[js.Any]).asInstanceOf[Agent]
   
-  inline def httpOverHttps(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpOverHttps")().asInstanceOf[Agent]
-  inline def httpOverHttps(options: HttpOverHttpsOptions): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpOverHttps")(options.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  inline def httpOverHttps(): typings.node.httpsMod.Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpOverHttps")().asInstanceOf[typings.node.httpsMod.Agent]
+  inline def httpOverHttps(options: HttpOverHttpsOptions): typings.node.httpsMod.Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpOverHttps")(options.asInstanceOf[js.Any]).asInstanceOf[typings.node.httpsMod.Agent]
   
   inline def httpsOverHttp(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpsOverHttp")().asInstanceOf[Agent]
   inline def httpsOverHttp(options: HttpsOverHttpOptions): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpsOverHttp")(options.asInstanceOf[js.Any]).asInstanceOf[Agent]
   
-  inline def httpsOverHttps(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpsOverHttps")().asInstanceOf[Agent]
-  inline def httpsOverHttps(options: HttpsOverHttpsOptions): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpsOverHttps")(options.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  inline def httpsOverHttps(): typings.node.httpsMod.Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpsOverHttps")().asInstanceOf[typings.node.httpsMod.Agent]
+  inline def httpsOverHttps(options: HttpsOverHttpsOptions): typings.node.httpsMod.Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpsOverHttps")(options.asInstanceOf[js.Any]).asInstanceOf[typings.node.httpsMod.Agent]
   
   trait HttpOptions extends StObject {
     
@@ -95,7 +95,7 @@ object mod {
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCaVarargs(value: Buffer*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: Buffer*): Self = StObject.set(x, "ca", js.Array(value*))
       
       inline def setCert(value: Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -154,7 +154,7 @@ object mod {
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCaVarargs(value: Buffer*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: Buffer*): Self = StObject.set(x, "ca", js.Array(value*))
       
       inline def setCert(value: Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -172,7 +172,7 @@ object mod {
   
   trait ProxyOptions extends StObject {
     
-    var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var headers: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var host: String
     
@@ -191,7 +191,7 @@ object mod {
     
     extension [Self <: ProxyOptions](x: Self) {
       
-      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       

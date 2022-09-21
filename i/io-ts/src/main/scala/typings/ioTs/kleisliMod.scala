@@ -23,106 +23,132 @@ object kleisliMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def alt[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](A: Alt2C[F, E]): js.Function1[
-    /* that */ Lazy[Kleisli[F, js.Any, E, js.Any]], 
-    js.Function1[/* me */ Kleisli[F, js.Any, E, js.Any], Kleisli[F, js.Any, E, js.Any]]
+  inline def alt[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](A: Alt2C[F, E]): js.Function1[
+    /* that */ Lazy[Kleisli[F, Any, E, Any]], 
+    js.Function1[/* me */ Kleisli[F, Any, E, Any], Kleisli[F, Any, E, Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(A.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* that */ Lazy[Kleisli[F, js.Any, E, js.Any]], 
-    js.Function1[/* me */ Kleisli[F, js.Any, E, js.Any], Kleisli[F, js.Any, E, js.Any]]
+    /* that */ Lazy[Kleisli[F, Any, E, Any]], 
+    js.Function1[/* me */ Kleisli[F, Any, E, Any], Kleisli[F, Any, E, Any]]
   ]]
   
-  inline def compose[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: Monad2C[M, E]): js.Function1[
-    /* ab */ Kleisli[M, js.Any, E, js.Any], 
-    js.Function1[/* ia */ Kleisli[M, js.Any, E, js.Any], Kleisli[M, js.Any, E, js.Any]]
+  inline def compose[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: Monad2C[M, E]): js.Function1[
+    /* ab */ Kleisli[M, Any, E, Any], 
+    js.Function1[/* ia */ Kleisli[M, Any, E, Any], Kleisli[M, Any, E, Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* ab */ Kleisli[M, js.Any, E, js.Any], 
-    js.Function1[/* ia */ Kleisli[M, js.Any, E, js.Any], Kleisli[M, js.Any, E, js.Any]]
+    /* ab */ Kleisli[M, Any, E, Any], 
+    js.Function1[/* ia */ Kleisli[M, Any, E, Any], Kleisli[M, Any, E, Any]]
   ]]
   
-  inline def fromArray[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: (Applicative2C[M, E]) & Bifunctor2[M]): js.Function1[
+  inline def fromArray[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: (Applicative2C[M, E]) & Bifunctor2[M]): js.Function1[
     /* onItemError */ js.Function2[/* index */ Double, /* e */ E, E], 
-    js.Function1[
-      /* item */ Kleisli[M, js.Any, E, js.Any], 
-      Kleisli[M, js.Array[js.Any], E, js.Array[js.Any]]
-    ]
+    js.Function1[/* item */ Kleisli[M, Any, E, Any], Kleisli[M, js.Array[Any], E, js.Array[Any]]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* onItemError */ js.Function2[/* index */ Double, /* e */ E, E], 
-    js.Function1[
-      /* item */ Kleisli[M, js.Any, E, js.Any], 
-      Kleisli[M, js.Array[js.Any], E, js.Array[js.Any]]
-    ]
+    js.Function1[/* item */ Kleisli[M, Any, E, Any], Kleisli[M, js.Array[Any], E, js.Array[Any]]]
   ]]
   
-  inline def fromPartial[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: (Applicative2C[M, E]) & Bifunctor2[M]): js.Function1[
+  inline def fromPartial[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: (Applicative2C[M, E]) & Bifunctor2[M]): js.Function1[
     /* onPropertyError */ js.Function2[/* key */ String, /* e */ E, E], 
     js.Function1[
-      /* properties */ Record[String, Kleisli[M, js.Any, E, js.Any]], 
+      /* properties */ Record[String, Kleisli[M, Any, E, Any]], 
       Kleisli[
         M, 
         Partial[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.InputOf<M, std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
-    */ typings.ioTs.ioTsStrings.fromPartial & (TopLevel[Record[String, Kleisli[M, js.Any, E, js.Any]]])
+    */ typings.ioTs.ioTsStrings.fromPartial & (TopLevel[Record[String, Kleisli[M, Any, E, Any]]])
         ], 
         E, 
         Partial[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.TypeOf<M, std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
-    */ typings.ioTs.ioTsStrings.fromPartial & (TopLevel[Record[String, Kleisli[M, js.Any, E, js.Any]]])
+    */ typings.ioTs.ioTsStrings.fromPartial & (TopLevel[Record[String, Kleisli[M, Any, E, Any]]])
         ]
       ]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPartial")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* onPropertyError */ js.Function2[/* key */ String, /* e */ E, E], 
     js.Function1[
-      /* properties */ Record[String, Kleisli[M, js.Any, E, js.Any]], 
+      /* properties */ Record[String, Kleisli[M, Any, E, Any]], 
       Kleisli[
         M, 
         Partial[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.InputOf<M, std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
-    */ typings.ioTs.ioTsStrings.fromPartial & (TopLevel[Record[String, Kleisli[M, js.Any, E, js.Any]]])
+    */ typings.ioTs.ioTsStrings.fromPartial & (TopLevel[Record[String, Kleisli[M, Any, E, Any]]])
         ], 
         E, 
         Partial[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.TypeOf<M, std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
-    */ typings.ioTs.ioTsStrings.fromPartial & (TopLevel[Record[String, Kleisli[M, js.Any, E, js.Any]]])
+    */ typings.ioTs.ioTsStrings.fromPartial & (TopLevel[Record[String, Kleisli[M, Any, E, Any]]])
         ]
       ]
     ]
   ]]
   
-  inline def fromRecord[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: (Applicative2C[M, E]) & Bifunctor2[M]): js.Function1[
+  inline def fromRecord[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: (Applicative2C[M, E]) & Bifunctor2[M]): js.Function1[
     /* onKeyError */ js.Function2[/* key */ String, /* e */ E, E], 
     js.Function1[
-      /* codomain */ Kleisli[M, js.Any, E, js.Any], 
-      Kleisli[M, Record[String, js.Any], E, Record[String, js.Any]]
+      /* codomain */ Kleisli[M, Any, E, Any], 
+      Kleisli[M, Record[String, Any], E, Record[String, Any]]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRecord")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* onKeyError */ js.Function2[/* key */ String, /* e */ E, E], 
     js.Function1[
-      /* codomain */ Kleisli[M, js.Any, E, js.Any], 
-      Kleisli[M, Record[String, js.Any], E, Record[String, js.Any]]
+      /* codomain */ Kleisli[M, Any, E, Any], 
+      Kleisli[M, Record[String, Any], E, Record[String, Any]]
     ]
   ]]
   
-  inline def fromRefinement[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: MonadThrow2C[M, E]): js.Function2[
-    /* refinement */ Refinement[js.Any, js.Any], 
-    /* onError */ js.Function1[/* i */ js.Any, E], 
-    Kleisli[M, js.Any, E, js.Any]
+  inline def fromRefinement[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: MonadThrow2C[M, E]): js.Function2[
+    /* refinement */ Refinement[Any, Any], 
+    /* onError */ js.Function1[/* i */ Any, E], 
+    Kleisli[M, Any, E, Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRefinement")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* refinement */ Refinement[js.Any, js.Any], 
-    /* onError */ js.Function1[/* i */ js.Any, E], 
-    Kleisli[M, js.Any, E, js.Any]
+    /* refinement */ Refinement[Any, Any], 
+    /* onError */ js.Function1[/* i */ Any, E], 
+    Kleisli[M, Any, E, Any]
   ]]
   
-  inline def fromSum[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: MonadThrow2C[M, E]): js.Function1[
-    /* onTagError */ js.Function3[/* tag */ String, /* value */ js.Any, /* tags */ js.Array[String], E], 
+  inline def fromStruct[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: (Applicative2C[M, E]) & Bifunctor2[M]): js.Function1[
+    /* onPropertyError */ js.Function2[/* key */ String, /* e */ E, E], 
+    js.Function1[
+      /* properties */ Record[String, Kleisli[M, Any, E, Any]], 
+      Kleisli[
+        M, 
+        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.InputOf<M, std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
+    */ typings.ioTs.ioTsStrings.fromStruct & (TopLevel[Record[String, Kleisli[M, Any, E, Any]]]), 
+        E, 
+        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.TypeOf<M, std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
+    */ typings.ioTs.ioTsStrings.fromStruct & (TopLevel[Record[String, Kleisli[M, Any, E, Any]]])
+      ]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStruct")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* onPropertyError */ js.Function2[/* key */ String, /* e */ E, E], 
+    js.Function1[
+      /* properties */ Record[String, Kleisli[M, Any, E, Any]], 
+      Kleisli[
+        M, 
+        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.InputOf<M, std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
+    */ typings.ioTs.ioTsStrings.fromStruct & (TopLevel[Record[String, Kleisli[M, Any, E, Any]]]), 
+        E, 
+        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.TypeOf<M, std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
+    */ typings.ioTs.ioTsStrings.fromStruct & (TopLevel[Record[String, Kleisli[M, Any, E, Any]]])
+      ]
+    ]
+  ]]
+  
+  inline def fromSum[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: MonadThrow2C[M, E]): js.Function1[
+    /* onTagError */ js.Function3[/* tag */ String, /* value */ Any, /* tags */ js.Array[String], E], 
     js.Function1[
       /* tag */ String, 
       js.Function1[
-        /* members */ Record[String, Kleisli[M, js.Any, E, js.Any]], 
+        /* members */ Record[String, Kleisli[M, Any, E, Any]], 
         Kleisli[
           M, 
           InputOf[
@@ -138,11 +164,11 @@ object kleisliMod {
       ]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSum")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onTagError */ js.Function3[/* tag */ String, /* value */ js.Any, /* tags */ js.Array[String], E], 
+    /* onTagError */ js.Function3[/* tag */ String, /* value */ Any, /* tags */ js.Array[String], E], 
     js.Function1[
       /* tag */ String, 
       js.Function1[
-        /* members */ Record[String, Kleisli[M, js.Any, E, js.Any]], 
+        /* members */ Record[String, Kleisli[M, Any, E, Any]], 
         Kleisli[
           M, 
           InputOf[
@@ -159,184 +185,172 @@ object kleisliMod {
     ]
   ]]
   
-  inline def fromTuple[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: (Applicative2C[M, E]) & Bifunctor2[M]): js.Function1[
+  inline def fromTuple[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: (Applicative2C[M, E]) & Bifunctor2[M]): js.Function1[
     /* onIndexError */ js.Function2[/* index */ Double, /* e */ E, E], 
     js.Function1[
-      /* components */ js.Array[Kleisli[M, js.Any, E, js.Any]], 
+      /* components */ js.Array[Kleisli[M, Any, E, Any]], 
       Kleisli[
         M, 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.ReadonlyArray<io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.InputOf<M, std.ReadonlyArray<io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
-    */ typings.ioTs.ioTsStrings.fromTuple & (TopLevel[js.Array[Kleisli[M, js.Any, E, js.Any]]]), 
+    */ typings.ioTs.ioTsStrings.fromTuple & (TopLevel[js.Array[Kleisli[M, Any, E, Any]]]), 
         E, 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.ReadonlyArray<io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.TypeOf<M, std.ReadonlyArray<io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
-    */ typings.ioTs.ioTsStrings.fromTuple & (TopLevel[js.Array[Kleisli[M, js.Any, E, js.Any]]])
+    */ typings.ioTs.ioTsStrings.fromTuple & (TopLevel[js.Array[Kleisli[M, Any, E, Any]]])
       ]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTuple")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* onIndexError */ js.Function2[/* index */ Double, /* e */ E, E], 
     js.Function1[
-      /* components */ js.Array[Kleisli[M, js.Any, E, js.Any]], 
+      /* components */ js.Array[Kleisli[M, Any, E, Any]], 
       Kleisli[
         M, 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.ReadonlyArray<io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.InputOf<M, std.ReadonlyArray<io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
-    */ typings.ioTs.ioTsStrings.fromTuple & (TopLevel[js.Array[Kleisli[M, js.Any, E, js.Any]]]), 
+    */ typings.ioTs.ioTsStrings.fromTuple & (TopLevel[js.Array[Kleisli[M, Any, E, Any]]]), 
         E, 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.ReadonlyArray<io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.TypeOf<M, std.ReadonlyArray<io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
-    */ typings.ioTs.ioTsStrings.fromTuple & (TopLevel[js.Array[Kleisli[M, js.Any, E, js.Any]]])
+    */ typings.ioTs.ioTsStrings.fromTuple & (TopLevel[js.Array[Kleisli[M, Any, E, Any]]])
       ]
     ]
   ]]
   
-  inline def fromType[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: (Applicative2C[M, E]) & Bifunctor2[M]): js.Function1[
+  inline def fromType[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: (Applicative2C[M, E]) & Bifunctor2[M]): js.Function1[
     /* onPropertyError */ js.Function2[/* key */ String, /* e */ E, E], 
     js.Function1[
-      /* properties */ Record[String, Kleisli[M, js.Any, E, js.Any]], 
+      /* properties */ Record[String, Kleisli[M, Any, E, Any]], 
       Kleisli[
         M, 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.InputOf<M, std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
-    */ typings.ioTs.ioTsStrings.fromType & (TopLevel[Record[String, Kleisli[M, js.Any, E, js.Any]]]), 
+    */ typings.ioTs.ioTsStrings.apply & (TopLevel[Record[String, Kleisli[M, Any, E, Any]]]), 
         E, 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.TypeOf<M, std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
-    */ typings.ioTs.ioTsStrings.fromType & (TopLevel[Record[String, Kleisli[M, js.Any, E, js.Any]]])
+    */ typings.ioTs.ioTsStrings.apply & (TopLevel[Record[String, Kleisli[M, Any, E, Any]]])
       ]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromType")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* onPropertyError */ js.Function2[/* key */ String, /* e */ E, E], 
     js.Function1[
-      /* properties */ Record[String, Kleisli[M, js.Any, E, js.Any]], 
+      /* properties */ Record[String, Kleisli[M, Any, E, Any]], 
       Kleisli[
         M, 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.InputOf<M, std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
-    */ typings.ioTs.ioTsStrings.fromType & (TopLevel[Record[String, Kleisli[M, js.Any, E, js.Any]]]), 
+    */ typings.ioTs.ioTsStrings.apply & (TopLevel[Record[String, Kleisli[M, Any, E, Any]]]), 
         E, 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>> ]: io-ts.io-ts/lib/Kleisli.TypeOf<M, std.Record<string, io-ts.io-ts/lib/Kleisli.Kleisli<M, any, E, any>>[K]>}
-    */ typings.ioTs.ioTsStrings.fromType & (TopLevel[Record[String, Kleisli[M, js.Any, E, js.Any]]])
+    */ typings.ioTs.ioTsStrings.apply & (TopLevel[Record[String, Kleisli[M, Any, E, Any]]])
       ]
     ]
   ]]
   
-  inline def id[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: Applicative2C[M, E]): js.Function0[Kleisli[M, js.Any, E, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Kleisli[M, js.Any, E, js.Any]]]
+  inline def id[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: Applicative2C[M, E]): js.Function0[Kleisli[M, Any, E, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Kleisli[M, Any, E, Any]]]
   
-  inline def intersect[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: Apply2C[M, E]): js.Function1[
-    /* right */ Kleisli[M, js.Any, E, js.Any], 
-    js.Function1[/* left */ Kleisli[M, js.Any, E, js.Any], Kleisli[M, js.Any, E, js.Any]]
+  inline def intersect[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: Apply2C[M, E]): js.Function1[
+    /* right */ Kleisli[M, Any, E, Any], 
+    js.Function1[/* left */ Kleisli[M, Any, E, Any], Kleisli[M, Any, E, Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* right */ Kleisli[M, js.Any, E, js.Any], 
-    js.Function1[/* left */ Kleisli[M, js.Any, E, js.Any], Kleisli[M, js.Any, E, js.Any]]
+    /* right */ Kleisli[M, Any, E, Any], 
+    js.Function1[/* left */ Kleisli[M, Any, E, Any], Kleisli[M, Any, E, Any]]
   ]]
   
-  inline def `lazy`[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Bifunctor2[M]): js.Function1[
-    /* onError */ js.Function2[/* id */ String, /* e */ js.Any, js.Any], 
+  inline def `lazy`[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](M: Bifunctor2[M]): js.Function1[
+    /* onError */ js.Function2[/* id */ String, /* e */ Any, Any], 
     js.Function2[
       /* id */ String, 
-      /* f */ js.Function0[Kleisli[M, js.Any, js.Any, js.Any]], 
-      Kleisli[M, js.Any, js.Any, js.Any]
+      /* f */ js.Function0[Kleisli[M, Any, Any, Any]], 
+      Kleisli[M, Any, Any, Any]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onError */ js.Function2[/* id */ String, /* e */ js.Any, js.Any], 
+    /* onError */ js.Function2[/* id */ String, /* e */ Any, Any], 
     js.Function2[
       /* id */ String, 
-      /* f */ js.Function0[Kleisli[M, js.Any, js.Any, js.Any]], 
-      Kleisli[M, js.Any, js.Any, js.Any]
+      /* f */ js.Function0[Kleisli[M, Any, Any, Any]], 
+      Kleisli[M, Any, Any, Any]
     ]
   ]]
   
-  inline def literal[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: MonadThrow2C[M, E]): js.Function1[
-    /* onError */ js.Function2[/* i */ js.Any, /* values */ Array[Literal], E], 
+  inline def literal[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: MonadThrow2C[M, E]): js.Function1[
+    /* onError */ js.Function2[/* i */ Any, /* values */ Array[Literal], E], 
     js.Function1[
       /* values */ Array[Literal], 
       Kleisli[
         M, 
-        js.Any, 
+        Any, 
         E, 
-        /* import warning: importer.ImportType#apply Failed type conversion: [io-ts.io-ts/lib/Schemable.Literal, ...std.Array<io-ts.io-ts/lib/Schemable.Literal>][number] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: [io-ts.io-ts/lib/Schemable.Literal, ...std.ReadonlyArray<io-ts.io-ts/lib/Schemable.Literal>][number] */ js.Any
       ]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onError */ js.Function2[/* i */ js.Any, /* values */ Array[Literal], E], 
+    /* onError */ js.Function2[/* i */ Any, /* values */ Array[Literal], E], 
     js.Function1[
       /* values */ Array[Literal], 
       Kleisli[
         M, 
-        js.Any, 
+        Any, 
         E, 
-        /* import warning: importer.ImportType#apply Failed type conversion: [io-ts.io-ts/lib/Schemable.Literal, ...std.Array<io-ts.io-ts/lib/Schemable.Literal>][number] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: [io-ts.io-ts/lib/Schemable.Literal, ...std.ReadonlyArray<io-ts.io-ts/lib/Schemable.Literal>][number] */ js.Any
       ]
     ]
   ]]
   
-  inline def map[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](F: Functor2C[F, E]): js.Function1[
-    /* f */ js.Function1[/* a */ js.Any, js.Any], 
-    js.Function1[/* ia */ Kleisli[F, js.Any, E, js.Any], Kleisli[F, js.Any, E, js.Any]]
+  inline def map[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](F: Functor2C[F, E]): js.Function1[
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[/* ia */ Kleisli[F, Any, E, Any], Kleisli[F, Any, E, Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* f */ js.Function1[/* a */ js.Any, js.Any], 
-    js.Function1[/* ia */ Kleisli[F, js.Any, E, js.Any], Kleisli[F, js.Any, E, js.Any]]
+    /* f */ js.Function1[/* a */ Any, Any], 
+    js.Function1[/* ia */ Kleisli[F, Any, E, Any], Kleisli[F, Any, E, Any]]
   ]]
   
-  inline def mapLeftWithInput[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Bifunctor2[M]): js.Function1[
-    /* f */ js.Function2[/* i */ js.Any, /* e */ js.Any, js.Any], 
-    js.Function1[
-      /* decoder */ Kleisli[M, js.Any, js.Any, js.Any], 
-      Kleisli[M, js.Any, js.Any, js.Any]
-    ]
+  inline def mapLeftWithInput[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](M: Bifunctor2[M]): js.Function1[
+    /* f */ js.Function2[/* i */ Any, /* e */ Any, Any], 
+    js.Function1[/* decoder */ Kleisli[M, Any, Any, Any], Kleisli[M, Any, Any, Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLeftWithInput")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* f */ js.Function2[/* i */ js.Any, /* e */ js.Any, js.Any], 
-    js.Function1[
-      /* decoder */ Kleisli[M, js.Any, js.Any, js.Any], 
-      Kleisli[M, js.Any, js.Any, js.Any]
-    ]
+    /* f */ js.Function2[/* i */ Any, /* e */ Any, Any], 
+    js.Function1[/* decoder */ Kleisli[M, Any, Any, Any], Kleisli[M, Any, Any, Any]]
   ]]
   
-  inline def nullable[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: (Applicative2C[M, E]) & Bifunctor2[M]): js.Function1[
-    /* onError */ js.Function2[/* i */ js.Any, /* e */ E, E], 
-    js.Function1[
-      /* or */ Kleisli[M, js.Any, E, js.Any], 
-      Kleisli[M, Null | js.Any, E, Null | js.Any]
-    ]
+  inline def nullable[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: (Applicative2C[M, E]) & Bifunctor2[M]): js.Function1[
+    /* onError */ js.Function2[/* i */ Any, /* e */ E, E], 
+    js.Function1[/* or */ Kleisli[M, Any, E, Any], Kleisli[M, Null | Any, E, Null | Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("nullable")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* onError */ js.Function2[/* i */ js.Any, /* e */ E, E], 
-    js.Function1[
-      /* or */ Kleisli[M, js.Any, E, js.Any], 
-      Kleisli[M, Null | js.Any, E, Null | js.Any]
-    ]
+    /* onError */ js.Function2[/* i */ Any, /* e */ E, E], 
+    js.Function1[/* or */ Kleisli[M, Any, E, Any], Kleisli[M, Null | Any, E, Null | Any]]
   ]]
   
-  inline def parse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: Monad2C[M, E]): js.Function1[
+  inline def parse[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: Monad2C[M, E]): js.Function1[
     /* decode */ js.Function1[
-      /* a */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, B> */ js.Any
+      /* a */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, B> */ Any
     ], 
-    js.Function1[/* from */ Kleisli[M, js.Any, E, js.Any], Kleisli[M, js.Any, E, js.Any]]
+    js.Function1[/* from */ Kleisli[M, Any, E, Any], Kleisli[M, Any, E, Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* decode */ js.Function1[
-      /* a */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, B> */ js.Any
+      /* a */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, B> */ Any
     ], 
-    js.Function1[/* from */ Kleisli[M, js.Any, E, js.Any], Kleisli[M, js.Any, E, js.Any]]
+    js.Function1[/* from */ Kleisli[M, Any, E, Any], Kleisli[M, Any, E, Any]]
   ]]
   
-  inline def refine[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: (MonadThrow2C[M, E]) & Bifunctor2[M]): js.Function2[
-    /* refinement */ js.Function1[/* a */ js.Any, /* is any */ Boolean], 
-    /* onError */ js.Function1[/* a */ js.Any, E], 
-    js.Function1[/* from */ Kleisli[M, js.Any, E, js.Any], Kleisli[M, js.Any, E, js.Any]]
+  inline def refine[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: (MonadThrow2C[M, E]) & Bifunctor2[M]): js.Function2[
+    /* refinement */ js.Function1[/* a */ Any, /* is any */ Boolean], 
+    /* onError */ js.Function1[/* a */ Any, E], 
+    js.Function1[/* from */ Kleisli[M, Any, E, Any], Kleisli[M, Any, E, Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("refine")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* refinement */ js.Function1[/* a */ js.Any, /* is any */ Boolean], 
-    /* onError */ js.Function1[/* a */ js.Any, E], 
-    js.Function1[/* from */ Kleisli[M, js.Any, E, js.Any], Kleisli[M, js.Any, E, js.Any]]
+    /* refinement */ js.Function1[/* a */ Any, /* is any */ Boolean], 
+    /* onError */ js.Function1[/* a */ Any, E], 
+    js.Function1[/* from */ Kleisli[M, Any, E, Any], Kleisli[M, Any, E, Any]]
   ]]
   
-  inline def union[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: (Alt2C[M, E]) & Bifunctor2[M]): js.Function1[
+  inline def union[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](M: (Alt2C[M, E]) & Bifunctor2[M]): js.Function1[
     /* onMemberError */ js.Function2[/* index */ Double, /* e */ E, E], 
     js.Function1[
-      /* members */ Array[Kleisli[M, js.Any, E, js.Any]], 
+      /* members */ Array[Kleisli[M, Any, E, Any]], 
       Kleisli[
         M, 
         InputOf[
@@ -353,7 +367,7 @@ object kleisliMod {
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* onMemberError */ js.Function2[/* index */ Double, /* e */ E, E], 
     js.Function1[
-      /* members */ Array[Kleisli[M, js.Any, E, js.Any]], 
+      /* members */ Array[Kleisli[M, Any, E, Any]], 
       Kleisli[
         M, 
         InputOf[
@@ -369,24 +383,24 @@ object kleisliMod {
     ]
   ]]
   
-  type InputOf[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, KD] = js.Any
+  type InputOf[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, KD] = Any
   
-  trait Kleisli[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, I, E, A] extends StObject {
+  trait Kleisli[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, I, E, A] extends StObject {
     
-    def decode(i: I): js.Any
+    def decode(i: I): Any
   }
   object Kleisli {
     
-    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, I, E, A](decode: I => js.Any): Kleisli[M, I, E, A] = {
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, I, E, A](decode: I => Any): Kleisli[M, I, E, A] = {
       val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode))
       __obj.asInstanceOf[Kleisli[M, I, E, A]]
     }
     
-    extension [Self <: Kleisli[?, ?, ?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, I, E, A](x: Self & (Kleisli[M, I, E, A])) {
+    extension [Self <: Kleisli[?, ?, ?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, I, E, A](x: Self & (Kleisli[M, I, E, A])) {
       
-      inline def setDecode(value: I => js.Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      inline def setDecode(value: I => Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     }
   }
   
-  type TypeOf[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, KD] = js.Any
+  type TypeOf[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, KD] = Any
 }

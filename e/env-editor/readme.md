@@ -1,7 +1,7 @@
 
 # Scala.js typings for env-editor
 
-Typings are for version 0.4.1
+Typings are for version 1.1.0
 
 ## Library description:
 Get metadata on the default editor or a specific editor
@@ -10,10 +10,10 @@ Get metadata on the default editor or a specific editor
 | ------------------ | :-------------: |
 | Full name          | env-editor |
 | Keywords           | env, editor, environment, variable, default, editors, main, user, meta, metadata, info, name, binary, path, sublime, atom, vscode, webstorm, textmate, vim, neovim, intellij, nano, emacs |
-| # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 5061585 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 821462.3333333334 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/env-editor#readme)

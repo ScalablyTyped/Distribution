@@ -6,49 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object promisebufferMod {
   
-  @JSImport("@sentry/utils/dist/promisebuffer", "PromiseBuffer")
+  @JSImport("@sentry/utils/types/promisebuffer", JSImport.Namespace)
   @js.native
-  class PromiseBuffer[T] () extends StObject {
-    def this(_limit: Double) = this()
+  val ^ : js.Any = js.native
+  
+  inline def makePromiseBuffer[T](): PromiseBuffer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePromiseBuffer")().asInstanceOf[PromiseBuffer[T]]
+  inline def makePromiseBuffer[T](limit: Double): PromiseBuffer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePromiseBuffer")(limit.asInstanceOf[js.Any]).asInstanceOf[PromiseBuffer[T]]
+  
+  @js.native
+  trait PromiseBuffer[T] extends StObject {
     
-    /** Internal set of queued Promises */
-    /* private */ val _buffer: js.Any = js.native
+    @JSName("$")
+    var $: js.Array[js.Thenable[T]] = js.native
     
-    /* protected */ var _limit: js.UndefOr[Double] = js.native
+    def add(taskProducer: js.Function0[js.Thenable[T]]): js.Thenable[T] = js.native
     
-    /**
-      * Add a promise to the queue.
-      *
-      * @param task Can be any PromiseLike<T>
-      * @returns The original promise.
-      */
-    def add(task: js.Thenable[T]): js.Thenable[T] = js.native
-    
-    /**
-      * This will drain the whole queue, returns true if queue is empty or drained.
-      * If timeout is provided and the queue takes longer to drain, the promise still resolves but with false.
-      *
-      * @param timeout Number in ms to wait until it resolves with false.
-      */
     def drain(): js.Thenable[Boolean] = js.native
     def drain(timeout: Double): js.Thenable[Boolean] = js.native
-    
-    /**
-      * Says if the buffer is ready to take more requests
-      */
-    def isReady(): Boolean = js.native
-    
-    /**
-      * This function returns the number of unresolved promises in the queue.
-      */
-    def length(): Double = js.native
-    
-    /**
-      * Remove a promise to the queue.
-      *
-      * @param task Can be any PromiseLike<T>
-      * @returns Removed promise.
-      */
-    def remove(task: js.Thenable[T]): js.Thenable[T] = js.native
   }
 }

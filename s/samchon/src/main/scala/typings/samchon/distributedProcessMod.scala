@@ -26,12 +26,12 @@ object distributedProcessMod {
     /**
       * @hidden
       */
-    /* private */ var _Complete_history: js.Any = js.native
+    /* private */ var _Complete_history: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var _Compute_average_elapsed_time: js.Any = js.native
+    /* private */ var _Compute_average_elapsed_time: Any = js.native
     
     /**
       * Enforce resource index.
@@ -63,7 +63,7 @@ object distributedProcessMod {
     /**
       * @hidden
       */
-    /* private */ var enforced_ : js.Any = js.native
+    /* private */ var enforced_ : Any = js.native
     
     /**
       * Get name, who represents and identifies this process.
@@ -111,7 +111,7 @@ object distributedProcessMod {
     /**
       * @hidden
       */
-    /* private */ var history_list_ : js.Any = js.native
+    /* private */ var history_list_ : Any = js.native
     
     /**
       * A name, represents and identifies this {@link DistributedProcess process}.
@@ -125,7 +125,7 @@ object distributedProcessMod {
     /**
       * @hidden
       */
-    /* private */ var progress_list_ : js.Any = js.native
+    /* private */ var progress_list_ : Any = js.native
     
     /**
       * Sending message.
@@ -140,7 +140,7 @@ object distributedProcessMod {
     /**
       * @hidden
       */
-    /* private */ var resource: js.Any = js.native
+    /* private */ var resource: Any = js.native
     
     /**
       * Handling replied message.
@@ -197,6 +197,6 @@ object distributedProcessMod {
     /**
       * @hidden
       */
-    /* private */ var system_array_ : js.Any = js.native
+    /* private */ var system_array_ : Any = js.native
   }
 }

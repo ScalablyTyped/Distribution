@@ -12,7 +12,7 @@ object sphereMod {
   
   @JSImport("three/src/math/Sphere", "Sphere")
   @js.native
-  class Sphere () extends StObject {
+  open class Sphere () extends StObject {
     def this(center: Vector3) = this()
     def this(center: Unit, radius: Double) = this()
     def this(center: Vector3, radius: Double) = this()
@@ -20,8 +20,8 @@ object sphereMod {
     def applyMatrix4(matrix: Matrix4): Sphere = js.native
     
     /**
-    	 * @default new Vector3()
-    	 */
+      * @default new Vector3()
+      */
     var center: Vector3 = js.native
     
     def clampPoint(point: Vector3, target: Vector3): Vector3 = js.native
@@ -33,11 +33,13 @@ object sphereMod {
     def distanceToPoint(point: Vector3): Double = js.native
     
     /**
-    	 * @deprecated Use {@link Sphere#isEmpty .isEmpty()} instead.
-    	 */
-    def empty(): js.Any = js.native
+      * @deprecated Use {@link Sphere#isEmpty .isEmpty()} instead.
+      */
+    def empty(): Any = js.native
     
     def equals(sphere: Sphere): Boolean = js.native
+    
+    def expandByPoint(point: Vector3): this.type = js.native
     
     def getBoundingBox(target: Box3): Box3 = js.native
     
@@ -52,8 +54,8 @@ object sphereMod {
     def makeEmpty(): this.type = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var radius: Double = js.native
     
     def set(center: Vector3, radius: Double): Sphere = js.native
@@ -62,5 +64,7 @@ object sphereMod {
     def setFromPoints(points: js.Array[Vector3], optionalCenter: Vector3): Sphere = js.native
     
     def translate(offset: Vector3): Sphere = js.native
+    
+    def union(sphere: Sphere): this.type = js.native
   }
 }

@@ -1,7 +1,7 @@
 package typings.nodeForge.mod
 
+import typings.nodeForge.mod.md.Algorithm
 import typings.nodeForge.mod.md.MessageDigest
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ object pkcs5 {
     salt: String,
     iterations: Double,
     keySize: Double,
-    callback: js.Function2[/* err */ Error | Null, /* dk */ String | Null, js.Any]
+    callback: js.Function2[/* err */ js.Error | Null, /* dk */ String | Null, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def pbkdf2(
     password: String,
@@ -26,7 +26,16 @@ object pkcs5 {
     iterations: Double,
     keySize: Double,
     messageDigest: Unit,
-    callback: js.Function2[/* err */ Error | Null, /* dk */ String | Null, js.Any]
+    callback: js.Function2[/* err */ js.Error | Null, /* dk */ String, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], messageDigest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def pbkdf2(password: String, salt: String, iterations: Double, keySize: Double, messageDigest: Algorithm): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], messageDigest.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pbkdf2(
+    password: String,
+    salt: String,
+    iterations: Double,
+    keySize: Double,
+    messageDigest: Algorithm,
+    callback: js.Function2[/* err */ js.Error | Null, /* dk */ String, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], messageDigest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def pbkdf2(password: String, salt: String, iterations: Double, keySize: Double, messageDigest: MessageDigest): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], messageDigest.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def pbkdf2(
@@ -35,9 +44,10 @@ object pkcs5 {
     iterations: Double,
     keySize: Double,
     messageDigest: MessageDigest,
-    callback: js.Function2[/* err */ Error | Null, /* dk */ String | Null, js.Any]
+    callback: js.Function2[/* err */ js.Error | Null, /* dk */ String, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], messageDigest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def pbkdf2_Unit(password: String, salt: String, iterations: Double, keySize: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def pbkdf2_Unit(password: String, salt: String, iterations: Double, keySize: Double, messageDigest: Algorithm): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], messageDigest.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def pbkdf2_Unit(password: String, salt: String, iterations: Double, keySize: Double, messageDigest: MessageDigest): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], messageDigest.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

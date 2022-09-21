@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cssnano-preset-default" : "5.2.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cssnano-preset-default" : "5.2.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

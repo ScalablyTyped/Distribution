@@ -37,7 +37,7 @@ trait PageBreak extends StObject {
   
   var Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Properties(Index: String): AccessProperty = js.native
   def Properties(Index: Double): AccessProperty = js.native
@@ -54,7 +54,7 @@ trait PageBreak extends StObject {
   
   var Visible: Boolean = js.native
   
-  def _Evaluate(bstrExpr: String, ppsa: js.Any*): js.Any = js.native
+  def _Evaluate(bstrExpr: String, ppsa: Any*): Any = js.native
   
   var _Name: String = js.native
 }

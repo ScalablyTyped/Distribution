@@ -112,10 +112,24 @@ object tmiJsStrings {
   inline def anonsubgift: anonsubgift = "anonsubgift".asInstanceOf[anonsubgift]
   
   @js.native
+  sealed trait anonsubmysterygift extends StObject
+  inline def anonsubmysterygift: anonsubmysterygift = "anonsubmysterygift".asInstanceOf[anonsubmysterygift]
+  
+  @js.native
+  sealed trait automod extends StObject
+  inline def automod: automod = "automod".asInstanceOf[automod]
+  
+  @js.native
   sealed trait bad_ban_admin
     extends StObject
        with MsgID
   inline def bad_ban_admin: bad_ban_admin = "bad_ban_admin".asInstanceOf[bad_ban_admin]
+  
+  @js.native
+  sealed trait bad_ban_anon
+    extends StObject
+       with MsgID
+  inline def bad_ban_anon: bad_ban_anon = "bad_ban_anon".asInstanceOf[bad_ban_anon]
   
   @js.native
   sealed trait bad_ban_broadcaster
@@ -128,6 +142,12 @@ object tmiJsStrings {
     extends StObject
        with MsgID
   inline def bad_ban_global_mod: bad_ban_global_mod = "bad_ban_global_mod".asInstanceOf[bad_ban_global_mod]
+  
+  @js.native
+  sealed trait bad_ban_mod
+    extends StObject
+       with MsgID
+  inline def bad_ban_mod: bad_ban_mod = "bad_ban_mod".asInstanceOf[bad_ban_mod]
   
   @js.native
   sealed trait bad_ban_self
@@ -178,10 +198,22 @@ object tmiJsStrings {
   inline def bad_timeout_admin: bad_timeout_admin = "bad_timeout_admin".asInstanceOf[bad_timeout_admin]
   
   @js.native
+  sealed trait bad_timeout_anon
+    extends StObject
+       with MsgID
+  inline def bad_timeout_anon: bad_timeout_anon = "bad_timeout_anon".asInstanceOf[bad_timeout_anon]
+  
+  @js.native
   sealed trait bad_timeout_global_mod
     extends StObject
        with MsgID
   inline def bad_timeout_global_mod: bad_timeout_global_mod = "bad_timeout_global_mod".asInstanceOf[bad_timeout_global_mod]
+  
+  @js.native
+  sealed trait bad_timeout_mod
+    extends StObject
+       with MsgID
+  inline def bad_timeout_mod: bad_timeout_mod = "bad_timeout_mod".asInstanceOf[bad_timeout_mod]
   
   @js.native
   sealed trait bad_timeout_self
@@ -298,6 +330,10 @@ object tmiJsStrings {
   inline def global_mod: global_mod = "global_mod".asInstanceOf[global_mod]
   
   @js.native
+  sealed trait `highlighted-message` extends StObject
+  inline def `highlighted-message`: `highlighted-message` = "highlighted-message".asInstanceOf[`highlighted-message`]
+  
+  @js.native
   sealed trait host_target_went_offline
     extends StObject
        with MsgID
@@ -384,6 +420,14 @@ object tmiJsStrings {
   inline def msg_ratelimit: msg_ratelimit = "msg_ratelimit".asInstanceOf[msg_ratelimit]
   
   @js.native
+  sealed trait msg_rejected extends StObject
+  inline def msg_rejected: msg_rejected = "msg_rejected".asInstanceOf[msg_rejected]
+  
+  @js.native
+  sealed trait msg_rejected_mandatory extends StObject
+  inline def msg_rejected_mandatory: msg_rejected_mandatory = "msg_rejected_mandatory".asInstanceOf[msg_rejected_mandatory]
+  
+  @js.native
   sealed trait msg_subsonly
     extends StObject
        with MsgID
@@ -452,6 +496,10 @@ object tmiJsStrings {
   inline def pong: pong = "pong".asInstanceOf[pong]
   
   @js.native
+  sealed trait primepaidupgrade extends StObject
+  inline def primepaidupgrade: primepaidupgrade = "primepaidupgrade".asInstanceOf[primepaidupgrade]
+  
+  @js.native
   sealed trait r9kbeta extends StObject
   inline def r9kbeta: r9kbeta = "r9kbeta".asInstanceOf[r9kbeta]
   
@@ -470,6 +518,10 @@ object tmiJsStrings {
   @js.native
   sealed trait reconnect extends StObject
   inline def reconnect: reconnect = "reconnect".asInstanceOf[reconnect]
+  
+  @js.native
+  sealed trait redeem extends StObject
+  inline def redeem: redeem = "redeem".asInstanceOf[redeem]
   
   @js.native
   sealed trait removeEventListener
@@ -498,6 +550,10 @@ object tmiJsStrings {
   @js.native
   sealed trait serverchange extends StObject
   inline def serverchange: serverchange = "serverchange".asInstanceOf[serverchange]
+  
+  @js.native
+  sealed trait `skip-subs-mode-message` extends StObject
+  inline def `skip-subs-mode-message`: `skip-subs-mode-message` = "skip-subs-mode-message".asInstanceOf[`skip-subs-mode-message`]
   
   @js.native
   sealed trait slowmode extends StObject

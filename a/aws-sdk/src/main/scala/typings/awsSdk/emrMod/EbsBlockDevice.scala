@@ -12,7 +12,7 @@ trait EbsBlockDevice extends StObject {
   var Device: js.UndefOr[String] = js.undefined
   
   /**
-    * EBS volume specifications such as volume type, IOPS, and size (GiB) that will be requested for the EBS volume attached to an EC2 instance in the cluster.
+    * EBS volume specifications such as volume type, IOPS, size (GiB) and throughput (MiB/s) that are requested for the EBS volume attached to an EC2 instance in the cluster.
     */
   var VolumeSpecification: js.UndefOr[typings.awsSdk.emrMod.VolumeSpecification] = js.undefined
 }

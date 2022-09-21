@@ -14,12 +14,10 @@ object checkboxMod {
   
   @JSImport("react-bootstrap/lib/Checkbox", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[CheckboxProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[CheckboxProps, js.Object, Any]
   
-  @js.native
-  trait Checkbox
-    extends Component[CheckboxProps, js.Object, js.Any]
+  type Checkbox = Component[CheckboxProps, js.Object, Any]
   
   trait CheckboxProps
     extends StObject

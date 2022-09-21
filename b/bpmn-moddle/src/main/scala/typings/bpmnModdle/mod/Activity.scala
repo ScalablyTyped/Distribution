@@ -62,17 +62,17 @@ object Activity {
     
     inline def setBoundaryEventRefs(value: js.Array[BoundaryEvent]): Self = StObject.set(x, "boundaryEventRefs", value.asInstanceOf[js.Any])
     
-    inline def setBoundaryEventRefsVarargs(value: BoundaryEvent*): Self = StObject.set(x, "boundaryEventRefs", js.Array(value :_*))
+    inline def setBoundaryEventRefsVarargs(value: BoundaryEvent*): Self = StObject.set(x, "boundaryEventRefs", js.Array(value*))
     
     inline def setCompletionQuantity(value: Double): Self = StObject.set(x, "completionQuantity", value.asInstanceOf[js.Any])
     
     inline def setDataInputAssociations(value: js.Array[DataInputAssociation]): Self = StObject.set(x, "dataInputAssociations", value.asInstanceOf[js.Any])
     
-    inline def setDataInputAssociationsVarargs(value: DataInputAssociation*): Self = StObject.set(x, "dataInputAssociations", js.Array(value :_*))
+    inline def setDataInputAssociationsVarargs(value: DataInputAssociation*): Self = StObject.set(x, "dataInputAssociations", js.Array(value*))
     
     inline def setDataOutputAssociations(value: js.Array[DataOutputAssociation]): Self = StObject.set(x, "dataOutputAssociations", value.asInstanceOf[js.Any])
     
-    inline def setDataOutputAssociationsVarargs(value: DataOutputAssociation*): Self = StObject.set(x, "dataOutputAssociations", js.Array(value :_*))
+    inline def setDataOutputAssociationsVarargs(value: DataOutputAssociation*): Self = StObject.set(x, "dataOutputAssociations", js.Array(value*))
     
     inline def setDefault(value: SequenceFlow): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
@@ -84,7 +84,7 @@ object Activity {
     
     inline def setProperties(value: js.Array[Property]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setResources(value: ResourceRole): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     

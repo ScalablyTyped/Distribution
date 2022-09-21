@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WeightedTarget extends StObject {
   
   /**
+    * The targeted port of the weighted object.
+    */
+  var port: js.UndefOr[ListenerPort] = js.undefined
+  
+  /**
     * The virtual node to associate with the weighted target.
     */
   var virtualNode: ResourceName
@@ -24,6 +29,10 @@ object WeightedTarget {
   }
   
   extension [Self <: WeightedTarget](x: Self) {
+    
+    inline def setPort(value: ListenerPort): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     inline def setVirtualNode(value: ResourceName): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
     

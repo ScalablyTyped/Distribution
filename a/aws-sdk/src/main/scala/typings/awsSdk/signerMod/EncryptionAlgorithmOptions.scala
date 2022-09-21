@@ -27,7 +27,7 @@ object EncryptionAlgorithmOptions {
     
     inline def setAllowedValues(value: EncryptionAlgorithms): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     
-    inline def setAllowedValuesVarargs(value: EncryptionAlgorithm*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
+    inline def setAllowedValuesVarargs(value: EncryptionAlgorithm*): Self = StObject.set(x, "allowedValues", js.Array(value*))
     
     inline def setDefaultValue(value: EncryptionAlgorithm): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
   }

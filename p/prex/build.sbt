@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "prex"
-version := "0.4.7-27d003"
-scalaVersion := "3.0.1"
+version := "0.4.9-fefc54"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "esfx__cancelable" % "1.0.0-pre.13-8a50c5",
-  "org.scalablytyped" %%% "esfx__disposable" % "1.0.0-pre.13-dcbe03",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "esfx__cancelable" % "1.0.0-pre.41-a453a2",
+  "org.scalablytyped" %%% "esfx__disposable" % "1.0.0-pre.41-afca31",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -10,10 +10,10 @@ Group array of objects into lists.
 | ------------------ | :-------------: |
 | Full name          | group-array |
 | Keywords           | array, group, item, list, nested, prop, properties, property |
-| # releases         | 3 |
-| # dependents       | 25 |
-| # downloads        | 3640715 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 276193.0 |
+| # stars            | 52.0 |
 
 ## Links
 - [Homepage](https://github.com/doowb/group-array)

@@ -83,7 +83,7 @@ object Deployment {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: DeploymentLabelEntry*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: DeploymentLabelEntry*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     

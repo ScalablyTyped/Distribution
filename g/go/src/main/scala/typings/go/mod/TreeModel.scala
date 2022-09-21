@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This constructs an empty TreeModel unless one provides arguments as the initial data array values for the Model.nodeDataArray property.
   * @param {Array<Object>=} nodedataarray an optional Array containing JavaScript objects to be represented by Nodes.
   */
-class TreeModel () extends Model {
+open class TreeModel () extends Model {
   def this(nodedataarray: js.Array[js.Object]) = this()
   
   /**

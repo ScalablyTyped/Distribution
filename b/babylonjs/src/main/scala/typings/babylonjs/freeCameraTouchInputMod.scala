@@ -15,7 +15,7 @@ object freeCameraTouchInputMod {
     * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
     * @param allowMouse Defines if mouse events can be treated as touch events
     */
-  class FreeCameraTouchInput ()
+  open class FreeCameraTouchInput ()
     extends StObject
        with ICameraInput[FreeCamera] {
     def this(/**
@@ -23,17 +23,19 @@ object freeCameraTouchInputMod {
       */
     allowMouse: Boolean) = this()
     
-    /* private */ var _observer: js.Any = js.native
+    /* private */ var _isSafari: Any = js.native
     
-    /* private */ var _offsetX: js.Any = js.native
+    /* private */ var _observer: Any = js.native
     
-    /* private */ var _offsetY: js.Any = js.native
+    /* private */ var _offsetX: Any = js.native
     
-    /* private */ var _onLostFocus: js.Any = js.native
+    /* private */ var _offsetY: Any = js.native
     
-    /* private */ var _pointerInput: js.Any = js.native
+    /* private */ var _onLostFocus: Any = js.native
     
-    /* private */ var _pointerPressed: js.Any = js.native
+    /* private */ var _pointerInput: Any = js.native
+    
+    /* private */ var _pointerPressed: Any = js.native
     
     /**
       * Define if mouse events can be treated as touch events
@@ -54,14 +56,19 @@ object freeCameraTouchInputMod {
     def checkInputs_MFreeCameraTouchInput(): Unit = js.native
     
     /**
+      * Swap touch actions so that one touch is used for rotation and multiple for movement
+      */
+    var singleFingerRotate: Boolean = js.native
+    
+    /**
       * Defines the touch sensibility for rotation.
-      * The higher the faster.
+      * The lower the faster.
       */
     var touchAngularSensibility: Double = js.native
     
     /**
       * Defines the touch sensibility for move.
-      * The higher the faster.
+      * The lower the faster.
       */
     var touchMoveSensibility: Double = js.native
   }

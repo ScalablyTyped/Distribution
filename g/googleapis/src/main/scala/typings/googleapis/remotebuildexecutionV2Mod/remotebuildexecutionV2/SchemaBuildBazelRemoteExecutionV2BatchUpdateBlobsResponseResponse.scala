@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A response corresponding to a single blob that the client tried to upload.
-  */
 trait SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse extends StObject {
   
   /**

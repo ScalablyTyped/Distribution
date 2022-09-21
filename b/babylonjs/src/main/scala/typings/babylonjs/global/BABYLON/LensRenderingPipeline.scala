@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.LensRenderingPipeline")
 @js.native
-class LensRenderingPipeline protected ()
+open class LensRenderingPipeline protected ()
   extends StObject
      with typings.babylonjs.BABYLON.LensRenderingPipeline {
   /**
@@ -16,7 +16,7 @@ class LensRenderingPipeline protected ()
     * {
     *      chromatic_aberration: number;       // from 0 to x (1 for realism)
     *      edge_blur: number;                  // from 0 to x (1 for realism)
-    *      distortion: number;                 // from 0 to x (1 for realism)
+    *      distortion: number;                 // from 0 to x (1 for realism), note that this will effect the pointer position precision
     *      grain_amount: number;               // from 0 to 1
     *      grain_texture: BABYLON.Texture;     // texture to use for grain effect; if unset, use random B&W noise
     *      dof_focus_distance: number;         // depth-of-field: focus distance; unset to disable (disabled by default)
@@ -35,18 +35,18 @@ class LensRenderingPipeline protected ()
     * @param ratio The size of the postprocesses (0.5 means that your postprocess will have a width = canvas.width 0.5 and a height = canvas.height 0.5)
     * @param cameras The array of cameras that the rendering pipeline will be attached to
     */
-  def this(name: String, parameters: js.Any, scene: typings.babylonjs.BABYLON.Scene) = this()
-  def this(name: String, parameters: js.Any, scene: typings.babylonjs.BABYLON.Scene, ratio: Double) = this()
+  def this(name: String, parameters: Any, scene: typings.babylonjs.BABYLON.Scene) = this()
+  def this(name: String, parameters: Any, scene: typings.babylonjs.BABYLON.Scene, ratio: Double) = this()
   def this(
     name: String,
-    parameters: js.Any,
+    parameters: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     ratio: Double,
     cameras: js.Array[typings.babylonjs.BABYLON.Camera]
   ) = this()
   def this(
     name: String,
-    parameters: js.Any,
+    parameters: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     ratio: Unit,
     cameras: js.Array[typings.babylonjs.BABYLON.Camera]

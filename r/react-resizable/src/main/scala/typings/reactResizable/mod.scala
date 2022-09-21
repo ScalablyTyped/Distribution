@@ -1,11 +1,8 @@
 package typings.reactResizable
 
 import typings.react.mod.Component
-import typings.react.mod.ReactNode
-import typings.react.mod.SyntheticEvent
 import typings.reactResizable.anon.Height
-import typings.std.Element
-import typings.std.Event
+import typings.reactResizable.anon.Style
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,26 +12,24 @@ object mod {
   
   @JSImport("react-resizable", "Resizable")
   @js.native
-  class Resizable protected ()
-    extends Component[ResizableProps, ResizableState, js.Any] {
+  open class Resizable protected () extends Component[ResizableProps, ResizableState, Any] {
     def this(props: ResizableProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ResizableProps, context: js.Any) = this()
+    def this(props: ResizableProps, context: Any) = this()
   }
   
   @JSImport("react-resizable", "ResizableBox")
   @js.native
-  class ResizableBox protected ()
-    extends Component[ResizableBoxProps, ResizableBoxState, js.Any] {
+  open class ResizableBox protected () extends Component[ResizableBoxProps, ResizableBoxState, Any] {
     def this(props: ResizableBoxProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ResizableBoxProps, context: js.Any) = this()
+    def this(props: ResizableBoxProps, context: Any) = this()
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -104,7 +99,7 @@ object mod {
     }
   }
   
-  type ResizableBoxProps = ResizableProps
+  type ResizableBoxProps = ResizableProps & Style
   
   trait ResizableBoxState extends StObject {
     
@@ -127,106 +122,27 @@ object mod {
     }
   }
   
-  trait ResizableProps extends StObject {
-    
-    var axis: js.UndefOr[Axis] = js.undefined
-    
-    var className: js.UndefOr[String] = js.undefined
-    
-    var draggableOpts: js.UndefOr[js.Any] = js.undefined
-    
-    var handle: js.UndefOr[ReactNode | (js.Function1[/* resizeHandle */ ResizeHandle, ReactNode])] = js.undefined
-    
-    var handleSize: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
-    
-    var height: Double
-    
-    var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
-    
-    var maxConstraints: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
-    
-    var minConstraints: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
-    
-    var onResize: js.UndefOr[
-        js.Function2[/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData, js.Any]
-      ] = js.undefined
-    
-    var onResizeStart: js.UndefOr[
-        js.Function2[/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData, js.Any]
-      ] = js.undefined
-    
-    var onResizeStop: js.UndefOr[
-        js.Function2[/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData, js.Any]
-      ] = js.undefined
-    
-    var resizeHandles: js.UndefOr[js.Array[ResizeHandle]] = js.undefined
-    
-    var width: Double
-  }
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactResizable.anon.widthnumberheightnumberun
+    - typings.reactResizable.anon.widthnumberundefinedheigh
+    - typings.reactResizable.anon.widthnumberheightnumberax
+  */
+  trait ResizableProps extends StObject
   object ResizableProps {
     
-    inline def apply(height: Double, width: Double): ResizableProps = {
+    inline def widthnumberheightnumberax(height: Double, width: Double): typings.reactResizable.anon.widthnumberheightnumberax = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ResizableProps]
+      __obj.asInstanceOf[typings.reactResizable.anon.widthnumberheightnumberax]
     }
     
-    extension [Self <: ResizableProps](x: Self) {
-      
-      inline def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
-      
-      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      inline def setDraggableOpts(value: js.Any): Self = StObject.set(x, "draggableOpts", value.asInstanceOf[js.Any])
-      
-      inline def setDraggableOptsUndefined: Self = StObject.set(x, "draggableOpts", js.undefined)
-      
-      inline def setHandle(value: ReactNode | (js.Function1[/* resizeHandle */ ResizeHandle, ReactNode])): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
-      
-      inline def setHandleFunction1(value: /* resizeHandle */ ResizeHandle => ReactNode): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
-      
-      inline def setHandleSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "handleSize", value.asInstanceOf[js.Any])
-      
-      inline def setHandleSizeUndefined: Self = StObject.set(x, "handleSize", js.undefined)
-      
-      inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
-      
-      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setLockAspectRatio(value: Boolean): Self = StObject.set(x, "lockAspectRatio", value.asInstanceOf[js.Any])
-      
-      inline def setLockAspectRatioUndefined: Self = StObject.set(x, "lockAspectRatio", js.undefined)
-      
-      inline def setMaxConstraints(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "maxConstraints", value.asInstanceOf[js.Any])
-      
-      inline def setMaxConstraintsUndefined: Self = StObject.set(x, "maxConstraints", js.undefined)
-      
-      inline def setMinConstraints(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "minConstraints", value.asInstanceOf[js.Any])
-      
-      inline def setMinConstraintsUndefined: Self = StObject.set(x, "minConstraints", js.undefined)
-      
-      inline def setOnResize(value: (/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData) => js.Any): Self = StObject.set(x, "onResize", js.Any.fromFunction2(value))
-      
-      inline def setOnResizeStart(value: (/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData) => js.Any): Self = StObject.set(x, "onResizeStart", js.Any.fromFunction2(value))
-      
-      inline def setOnResizeStartUndefined: Self = StObject.set(x, "onResizeStart", js.undefined)
-      
-      inline def setOnResizeStop(value: (/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData) => js.Any): Self = StObject.set(x, "onResizeStop", js.Any.fromFunction2(value))
-      
-      inline def setOnResizeStopUndefined: Self = StObject.set(x, "onResizeStop", js.undefined)
-      
-      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
-      
-      inline def setResizeHandles(value: js.Array[ResizeHandle]): Self = StObject.set(x, "resizeHandles", value.asInstanceOf[js.Any])
-      
-      inline def setResizeHandlesUndefined: Self = StObject.set(x, "resizeHandles", js.undefined)
-      
-      inline def setResizeHandlesVarargs(value: ResizeHandle*): Self = StObject.set(x, "resizeHandles", js.Array(value :_*))
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def widthnumberheightnumberun(width: Double): typings.reactResizable.anon.widthnumberheightnumberun = {
+      val __obj = js.Dynamic.literal(axis = "x", width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.reactResizable.anon.widthnumberheightnumberun]
+    }
+    
+    inline def widthnumberundefinedheigh(height: Double): typings.reactResizable.anon.widthnumberundefinedheigh = {
+      val __obj = js.Dynamic.literal(axis = "y", height = height.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.reactResizable.anon.widthnumberundefinedheigh]
     }
   }
   

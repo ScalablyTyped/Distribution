@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Config")
 @js.native
-class Config ()
+open class Config ()
   extends typings.nodegit.configMod.Config
 /* static members */
 object Config {

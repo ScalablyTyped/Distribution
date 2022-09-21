@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-resize-detector
 
-Typings are for version 5.0
+Typings are for version 7.1.2
 
 ## Library description:
 React resize detector
@@ -9,22 +9,19 @@ React resize detector
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-resize-detector |
-| Keywords           | react, resize, detector |
+| Keywords           | react, resize, detector, resizeObserver, observer |
 | # releases         | 44 |
-| # dependents       | 266 |
-| # downloads        | 36277646 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 5623220.0 |
+| # stars            | 989.0 |
 
 ## Links
-- [Homepage](https://github.com/maslianok/react-resize-detector)
-- [Bugs](https://github.com/maslianok/react-resize-detector/issues)
-- [Repository](https://github.com/maslianok/react-resize-detector)
 - [Npm](https://www.npmjs.com/package/react-resize-detector)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

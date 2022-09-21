@@ -38,12 +38,12 @@ object PolicyParameter {
     
     inline def setMapEntriesUndefined: Self = StObject.set(x, "MapEntries", js.undefined)
     
-    inline def setMapEntriesVarargs(value: ParameterMapEntry*): Self = StObject.set(x, "MapEntries", js.Array(value :_*))
+    inline def setMapEntriesVarargs(value: ParameterMapEntry*): Self = StObject.set(x, "MapEntries", js.Array(value*))
     
     inline def setValues(value: StringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

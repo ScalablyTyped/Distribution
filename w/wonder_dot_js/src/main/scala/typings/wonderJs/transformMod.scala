@@ -14,7 +14,7 @@ object transformMod {
     
     def addChild(child: Transform): Unit = js.native
     
-    /* protected */ var children: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Transform> */ js.Any = js.native
+    /* protected */ var children: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Transform> */ Any = js.native
     
     /* protected */ def clearCache(): Unit = js.native
     
@@ -45,8 +45,8 @@ object transformMod {
     
     def removeChild(child: Transform): Unit = js.native
     
-    def setChildrenTransformState(state: Boolean): js.Any = js.native
-    def setChildrenTransformState(transformState: ETransformState, state: Boolean): js.Any = js.native
+    def setChildrenTransformState(state: Boolean): Any = js.native
+    def setChildrenTransformState(transformState: ETransformState, state: Boolean): Any = js.native
     
     /* protected */ def setParent(parent: Transform): Unit = js.native
   }

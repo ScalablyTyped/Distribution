@@ -13,12 +13,16 @@ trait SceneViewHighlightOptionsProperties
   /**
     * The color of the highlight.
     *
+    * @default #00ffff
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * The opacity of the fill (area within the halo).
+    *
+    * @default 0.25
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
     */
@@ -34,9 +38,38 @@ trait SceneViewHighlightOptionsProperties
   /**
     * The opacity of the highlight halo.
     *
+    * @default 1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
     */
   var haloOpacity: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The color of the highlighted feature's shadow.
+    *
+    * @default #000000
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
+    */
+  var shadowColor: js.UndefOr[Color_] = js.undefined
+  
+  /**
+    * Defines the intensity of the shadow area obtained by overlapping the shadow of the highlighted feature and the shadow of other objects in the scene.
+    *
+    * @default 0.375
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
+    */
+  var shadowDifference: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The opacity of the highlighted feature's shadow.
+    *
+    * @default 0.4
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
+    */
+  var shadowOpacity: js.UndefOr[Double] = js.undefined
 }
 object SceneViewHighlightOptionsProperties {
   
@@ -55,7 +88,7 @@ object SceneViewHighlightOptionsProperties {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
@@ -68,5 +101,17 @@ object SceneViewHighlightOptionsProperties {
     inline def setHaloOpacity(value: Double): Self = StObject.set(x, "haloOpacity", value.asInstanceOf[js.Any])
     
     inline def setHaloOpacityUndefined: Self = StObject.set(x, "haloOpacity", js.undefined)
+    
+    inline def setShadowColor(value: Color_): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    
+    inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
+    
+    inline def setShadowDifference(value: Double): Self = StObject.set(x, "shadowDifference", value.asInstanceOf[js.Any])
+    
+    inline def setShadowDifferenceUndefined: Self = StObject.set(x, "shadowDifference", js.undefined)
+    
+    inline def setShadowOpacity(value: Double): Self = StObject.set(x, "shadowOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setShadowOpacityUndefined: Self = StObject.set(x, "shadowOpacity", js.undefined)
   }
 }

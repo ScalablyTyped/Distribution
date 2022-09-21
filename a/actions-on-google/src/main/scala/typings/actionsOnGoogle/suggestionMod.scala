@@ -9,7 +9,7 @@ object suggestionMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/suggestion", "Suggestions")
   @js.native
-  class Suggestions protected () extends StObject {
+  open class Suggestions protected () extends StObject {
     /**
       * @param suggestions Texts of the suggestions.
       * @public

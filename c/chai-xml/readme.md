@@ -11,9 +11,9 @@ Xml assertions for Chai
 | Full name          | chai-xml |
 | Keywords           | chai-plugin, chai, xml, test, assert, assertion, assertXml |
 | # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 361040 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 42881.0 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/krampstudio/chai-xml)

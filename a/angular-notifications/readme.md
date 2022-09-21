@@ -9,15 +9,12 @@ Sweet notifications for your angular app
 | ------------------ | :-------------: |
 | Full name          | angular-notifications |
 | Keywords           | angular, notifications |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 932 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 50.0 |
+| # stars            | 0.0 |
 
 ## Links
-- [Homepage](https://github.com/nkt/angular-notifications)
-- [Bugs](https://github.com/nkt/angular-notifications/issues)
-- [Repository](https://github.com/nkt/angular-notifications)
 - [Npm](https://www.npmjs.com/package/angular-notifications)
     
 

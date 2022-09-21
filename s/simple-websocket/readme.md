@@ -10,10 +10,10 @@ Simple, EventEmitter API for WebSockets (browser)
 | ------------------ | :-------------: |
 | Full name          | simple-websocket |
 | Keywords           | simple, simple websocket, simple-websocket, socket, websocket, ws |
-| # releases         | 7 |
-| # dependents       | 34 |
-| # downloads        | 702902 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 299344.3333333333 |
+| # stars            | 177.0 |
 
 ## Links
 - [Homepage](https://github.com/feross/simple-websocket)

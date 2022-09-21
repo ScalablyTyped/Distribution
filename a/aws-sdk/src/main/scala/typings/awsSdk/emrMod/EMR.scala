@@ -45,12 +45,12 @@ trait EMR extends Service {
   ): Request[AddInstanceGroupsOutput, AWSError] = js.native
   
   /**
-    * AddJobFlowSteps adds new steps to a running cluster. A maximum of 256 steps are allowed in each job flow. If your cluster is long-running (such as a Hive data warehouse) or complex, you may require more than 256 steps to process your data. You can bypass the 256-step limitation in various ways, including using SSH to connect to the master node and submitting queries directly to the software running on the master node, such as Hive and Hadoop. For more information on how to do this, see Add More than 256 Steps to a Cluster in the Amazon EMR Management Guide. A step specifies the location of a JAR file stored either on the master node of the cluster or in Amazon S3. Each step is performed by the main function of the main class of the JAR file. The main class can be specified either in the manifest of the JAR or by using the MainFunction parameter of the step. Amazon EMR executes each step in the order listed. For a step to be considered complete, the main function must exit with a zero exit code and all Hadoop jobs started while the step was running must have completed and run successfully. You can only add steps to a cluster that is in one of the following states: STARTING, BOOTSTRAPPING, RUNNING, or WAITING.
+    * AddJobFlowSteps adds new steps to a running cluster. A maximum of 256 steps are allowed in each job flow. If your cluster is long-running (such as a Hive data warehouse) or complex, you may require more than 256 steps to process your data. You can bypass the 256-step limitation in various ways, including using SSH to connect to the master node and submitting queries directly to the software running on the master node, such as Hive and Hadoop. For more information on how to do this, see Add More than 256 Steps to a Cluster in the Amazon EMR Management Guide. A step specifies the location of a JAR file stored either on the master node of the cluster or in Amazon S3. Each step is performed by the main function of the main class of the JAR file. The main class can be specified either in the manifest of the JAR or by using the MainFunction parameter of the step. Amazon EMR executes each step in the order listed. For a step to be considered complete, the main function must exit with a zero exit code and all Hadoop jobs started while the step was running must have completed and run successfully. You can only add steps to a cluster that is in one of the following states: STARTING, BOOTSTRAPPING, RUNNING, or WAITING.  The string values passed into HadoopJarStep object cannot exceed a total of 10240 characters. 
     */
   def addJobFlowSteps(): Request[AddJobFlowStepsOutput, AWSError] = js.native
   def addJobFlowSteps(callback: js.Function2[/* err */ AWSError, /* data */ AddJobFlowStepsOutput, scala.Unit]): Request[AddJobFlowStepsOutput, AWSError] = js.native
   /**
-    * AddJobFlowSteps adds new steps to a running cluster. A maximum of 256 steps are allowed in each job flow. If your cluster is long-running (such as a Hive data warehouse) or complex, you may require more than 256 steps to process your data. You can bypass the 256-step limitation in various ways, including using SSH to connect to the master node and submitting queries directly to the software running on the master node, such as Hive and Hadoop. For more information on how to do this, see Add More than 256 Steps to a Cluster in the Amazon EMR Management Guide. A step specifies the location of a JAR file stored either on the master node of the cluster or in Amazon S3. Each step is performed by the main function of the main class of the JAR file. The main class can be specified either in the manifest of the JAR or by using the MainFunction parameter of the step. Amazon EMR executes each step in the order listed. For a step to be considered complete, the main function must exit with a zero exit code and all Hadoop jobs started while the step was running must have completed and run successfully. You can only add steps to a cluster that is in one of the following states: STARTING, BOOTSTRAPPING, RUNNING, or WAITING.
+    * AddJobFlowSteps adds new steps to a running cluster. A maximum of 256 steps are allowed in each job flow. If your cluster is long-running (such as a Hive data warehouse) or complex, you may require more than 256 steps to process your data. You can bypass the 256-step limitation in various ways, including using SSH to connect to the master node and submitting queries directly to the software running on the master node, such as Hive and Hadoop. For more information on how to do this, see Add More than 256 Steps to a Cluster in the Amazon EMR Management Guide. A step specifies the location of a JAR file stored either on the master node of the cluster or in Amazon S3. Each step is performed by the main function of the main class of the JAR file. The main class can be specified either in the manifest of the JAR or by using the MainFunction parameter of the step. Amazon EMR executes each step in the order listed. For a step to be considered complete, the main function must exit with a zero exit code and all Hadoop jobs started while the step was running must have completed and run successfully. You can only add steps to a cluster that is in one of the following states: STARTING, BOOTSTRAPPING, RUNNING, or WAITING.  The string values passed into HadoopJarStep object cannot exceed a total of 10240 characters. 
     */
   def addJobFlowSteps(params: AddJobFlowStepsInput): Request[AddJobFlowStepsOutput, AWSError] = js.native
   def addJobFlowSteps(
@@ -59,12 +59,12 @@ trait EMR extends Service {
   ): Request[AddJobFlowStepsOutput, AWSError] = js.native
   
   /**
-    * Adds tags to an Amazon EMR resource. Tags make it easier to associate clusters in various ways, such as grouping clusters to track your Amazon EMR resource allocation costs. For more information, see Tag Clusters. 
+    * Adds tags to an Amazon EMR resource, such as a cluster or an Amazon EMR Studio. Tags make it easier to associate resources in various ways, such as grouping clusters to track your Amazon EMR resource allocation costs. For more information, see Tag Clusters. 
     */
   def addTags(): Request[AddTagsOutput, AWSError] = js.native
   def addTags(callback: js.Function2[/* err */ AWSError, /* data */ AddTagsOutput, scala.Unit]): Request[AddTagsOutput, AWSError] = js.native
   /**
-    * Adds tags to an Amazon EMR resource. Tags make it easier to associate clusters in various ways, such as grouping clusters to track your Amazon EMR resource allocation costs. For more information, see Tag Clusters. 
+    * Adds tags to an Amazon EMR resource, such as a cluster or an Amazon EMR Studio. Tags make it easier to associate resources in various ways, such as grouping clusters to track your Amazon EMR resource allocation costs. For more information, see Tag Clusters. 
     */
   def addTags(params: AddTagsInput): Request[AddTagsOutput, AWSError] = js.native
   def addTags(
@@ -73,12 +73,12 @@ trait EMR extends Service {
   ): Request[AddTagsOutput, AWSError] = js.native
   
   /**
-    * Cancels a pending step or steps in a running cluster. Available only in Amazon EMR versions 4.8.0 and later, excluding version 5.0.0. A maximum of 256 steps are allowed in each CancelSteps request. CancelSteps is idempotent but asynchronous; it does not guarantee a step will be canceled, even if the request is successfully submitted. You can only cancel steps that are in a PENDING state.
+    * Cancels a pending step or steps in a running cluster. Available only in Amazon EMR versions 4.8.0 and later, excluding version 5.0.0. A maximum of 256 steps are allowed in each CancelSteps request. CancelSteps is idempotent but asynchronous; it does not guarantee that a step will be canceled, even if the request is successfully submitted. When you use Amazon EMR versions 5.28.0 and later, you can cancel steps that are in a PENDING or RUNNING state. In earlier versions of Amazon EMR, you can only cancel steps that are in a PENDING state. 
     */
   def cancelSteps(): Request[CancelStepsOutput, AWSError] = js.native
   def cancelSteps(callback: js.Function2[/* err */ AWSError, /* data */ CancelStepsOutput, scala.Unit]): Request[CancelStepsOutput, AWSError] = js.native
   /**
-    * Cancels a pending step or steps in a running cluster. Available only in Amazon EMR versions 4.8.0 and later, excluding version 5.0.0. A maximum of 256 steps are allowed in each CancelSteps request. CancelSteps is idempotent but asynchronous; it does not guarantee a step will be canceled, even if the request is successfully submitted. You can only cancel steps that are in a PENDING state.
+    * Cancels a pending step or steps in a running cluster. Available only in Amazon EMR versions 4.8.0 and later, excluding version 5.0.0. A maximum of 256 steps are allowed in each CancelSteps request. CancelSteps is idempotent but asynchronous; it does not guarantee that a step will be canceled, even if the request is successfully submitted. When you use Amazon EMR versions 5.28.0 and later, you can cancel steps that are in a PENDING or RUNNING state. In earlier versions of Amazon EMR, you can only cancel steps that are in a PENDING state. 
     */
   def cancelSteps(params: CancelStepsInput): Request[CancelStepsOutput, AWSError] = js.native
   def cancelSteps(
@@ -106,6 +106,34 @@ trait EMR extends Service {
   ): Request[CreateSecurityConfigurationOutput, AWSError] = js.native
   
   /**
+    * Creates a new Amazon EMR Studio.
+    */
+  def createStudio(): Request[CreateStudioOutput, AWSError] = js.native
+  def createStudio(callback: js.Function2[/* err */ AWSError, /* data */ CreateStudioOutput, scala.Unit]): Request[CreateStudioOutput, AWSError] = js.native
+  /**
+    * Creates a new Amazon EMR Studio.
+    */
+  def createStudio(params: CreateStudioInput): Request[CreateStudioOutput, AWSError] = js.native
+  def createStudio(
+    params: CreateStudioInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateStudioOutput, scala.Unit]
+  ): Request[CreateStudioOutput, AWSError] = js.native
+  
+  /**
+    * Maps a user or group to the Amazon EMR Studio specified by StudioId, and applies a session policy to refine Studio permissions for that user or group. Use CreateStudioSessionMapping to assign users to a Studio when you use Amazon Web Services SSO authentication. For instructions on how to assign users to a Studio when you use IAM authentication, see Assign a user or group to your EMR Studio.
+    */
+  def createStudioSessionMapping(): Request[js.Object, AWSError] = js.native
+  def createStudioSessionMapping(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Maps a user or group to the Amazon EMR Studio specified by StudioId, and applies a session policy to refine Studio permissions for that user or group. Use CreateStudioSessionMapping to assign users to a Studio when you use Amazon Web Services SSO authentication. For instructions on how to assign users to a Studio when you use IAM authentication, see Assign a user or group to your EMR Studio.
+    */
+  def createStudioSessionMapping(params: CreateStudioSessionMappingInput): Request[js.Object, AWSError] = js.native
+  def createStudioSessionMapping(
+    params: CreateStudioSessionMappingInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
     * Deletes a security configuration.
     */
   def deleteSecurityConfiguration(): Request[DeleteSecurityConfigurationOutput, AWSError] = js.native
@@ -122,12 +150,40 @@ trait EMR extends Service {
   ): Request[DeleteSecurityConfigurationOutput, AWSError] = js.native
   
   /**
-    * Provides cluster-level details including status, hardware and software configuration, VPC settings, and so on. 
+    * Removes an Amazon EMR Studio from the Studio metadata store.
+    */
+  def deleteStudio(): Request[js.Object, AWSError] = js.native
+  def deleteStudio(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Removes an Amazon EMR Studio from the Studio metadata store.
+    */
+  def deleteStudio(params: DeleteStudioInput): Request[js.Object, AWSError] = js.native
+  def deleteStudio(
+    params: DeleteStudioInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Removes a user or group from an Amazon EMR Studio.
+    */
+  def deleteStudioSessionMapping(): Request[js.Object, AWSError] = js.native
+  def deleteStudioSessionMapping(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Removes a user or group from an Amazon EMR Studio.
+    */
+  def deleteStudioSessionMapping(params: DeleteStudioSessionMappingInput): Request[js.Object, AWSError] = js.native
+  def deleteStudioSessionMapping(
+    params: DeleteStudioSessionMappingInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Provides cluster-level details including status, hardware and software configuration, VPC settings, and so on.
     */
   def describeCluster(): Request[DescribeClusterOutput, AWSError] = js.native
   def describeCluster(callback: js.Function2[/* err */ AWSError, /* data */ DescribeClusterOutput, scala.Unit]): Request[DescribeClusterOutput, AWSError] = js.native
   /**
-    * Provides cluster-level details including status, hardware and software configuration, VPC settings, and so on. 
+    * Provides cluster-level details including status, hardware and software configuration, VPC settings, and so on.
     */
   def describeCluster(params: DescribeClusterInput): Request[DescribeClusterOutput, AWSError] = js.native
   def describeCluster(
@@ -136,12 +192,12 @@ trait EMR extends Service {
   ): Request[DescribeClusterOutput, AWSError] = js.native
   
   /**
-    * This API is deprecated and will eventually be removed. We recommend you use ListClusters, DescribeCluster, ListSteps, ListInstanceGroups and ListBootstrapActions instead. DescribeJobFlows returns a list of job flows that match all of the supplied parameters. The parameters can include a list of job flow IDs, job flow states, and restrictions on job flow creation date and time. Regardless of supplied parameters, only job flows created within the last two months are returned. If no parameters are supplied, then job flows matching either of the following criteria are returned:   Job flows created and completed in the last two weeks    Job flows created within the last two months that are in one of the following states: RUNNING, WAITING, SHUTTING_DOWN, STARTING    Amazon EMR can return a maximum of 512 job flow descriptions.
+    * This API is no longer supported and will eventually be removed. We recommend you use ListClusters, DescribeCluster, ListSteps, ListInstanceGroups and ListBootstrapActions instead. DescribeJobFlows returns a list of job flows that match all of the supplied parameters. The parameters can include a list of job flow IDs, job flow states, and restrictions on job flow creation date and time. Regardless of supplied parameters, only job flows created within the last two months are returned. If no parameters are supplied, then job flows matching either of the following criteria are returned:   Job flows created and completed in the last two weeks    Job flows created within the last two months that are in one of the following states: RUNNING, WAITING, SHUTTING_DOWN, STARTING    Amazon EMR can return a maximum of 512 job flow descriptions.
     */
   def describeJobFlows(): Request[DescribeJobFlowsOutput, AWSError] = js.native
   def describeJobFlows(callback: js.Function2[/* err */ AWSError, /* data */ DescribeJobFlowsOutput, scala.Unit]): Request[DescribeJobFlowsOutput, AWSError] = js.native
   /**
-    * This API is deprecated and will eventually be removed. We recommend you use ListClusters, DescribeCluster, ListSteps, ListInstanceGroups and ListBootstrapActions instead. DescribeJobFlows returns a list of job flows that match all of the supplied parameters. The parameters can include a list of job flow IDs, job flow states, and restrictions on job flow creation date and time. Regardless of supplied parameters, only job flows created within the last two months are returned. If no parameters are supplied, then job flows matching either of the following criteria are returned:   Job flows created and completed in the last two weeks    Job flows created within the last two months that are in one of the following states: RUNNING, WAITING, SHUTTING_DOWN, STARTING    Amazon EMR can return a maximum of 512 job flow descriptions.
+    * This API is no longer supported and will eventually be removed. We recommend you use ListClusters, DescribeCluster, ListSteps, ListInstanceGroups and ListBootstrapActions instead. DescribeJobFlows returns a list of job flows that match all of the supplied parameters. The parameters can include a list of job flow IDs, job flow states, and restrictions on job flow creation date and time. Regardless of supplied parameters, only job flows created within the last two months are returned. If no parameters are supplied, then job flows matching either of the following criteria are returned:   Job flows created and completed in the last two weeks    Job flows created within the last two months that are in one of the following states: RUNNING, WAITING, SHUTTING_DOWN, STARTING    Amazon EMR can return a maximum of 512 job flow descriptions.
     */
   def describeJobFlows(params: DescribeJobFlowsInput): Request[DescribeJobFlowsOutput, AWSError] = js.native
   def describeJobFlows(
@@ -162,6 +218,20 @@ trait EMR extends Service {
     params: DescribeNotebookExecutionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeNotebookExecutionOutput, scala.Unit]
   ): Request[DescribeNotebookExecutionOutput, AWSError] = js.native
+  
+  /**
+    * Provides EMR release label details, such as releases available the region where the API request is run, and the available applications for a specific EMR release label. Can also list EMR release versions that support a specified version of Spark.
+    */
+  def describeReleaseLabel(): Request[DescribeReleaseLabelOutput, AWSError] = js.native
+  def describeReleaseLabel(callback: js.Function2[/* err */ AWSError, /* data */ DescribeReleaseLabelOutput, scala.Unit]): Request[DescribeReleaseLabelOutput, AWSError] = js.native
+  /**
+    * Provides EMR release label details, such as releases available the region where the API request is run, and the available applications for a specific EMR release label. Can also list EMR release versions that support a specified version of Spark.
+    */
+  def describeReleaseLabel(params: DescribeReleaseLabelInput): Request[DescribeReleaseLabelOutput, AWSError] = js.native
+  def describeReleaseLabel(
+    params: DescribeReleaseLabelInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReleaseLabelOutput, scala.Unit]
+  ): Request[DescribeReleaseLabelOutput, AWSError] = js.native
   
   /**
     * Provides the details of a security configuration by returning the configuration JSON.
@@ -194,14 +264,42 @@ trait EMR extends Service {
   ): Request[DescribeStepOutput, AWSError] = js.native
   
   /**
-    * Returns the Amazon EMR block public access configuration for your AWS account in the current Region. For more information see Configure Block Public Access for Amazon EMR in the Amazon EMR Management Guide.
+    * Returns details for the specified Amazon EMR Studio including ID, Name, VPC, Studio access URL, and so on.
+    */
+  def describeStudio(): Request[DescribeStudioOutput, AWSError] = js.native
+  def describeStudio(callback: js.Function2[/* err */ AWSError, /* data */ DescribeStudioOutput, scala.Unit]): Request[DescribeStudioOutput, AWSError] = js.native
+  /**
+    * Returns details for the specified Amazon EMR Studio including ID, Name, VPC, Studio access URL, and so on.
+    */
+  def describeStudio(params: DescribeStudioInput): Request[DescribeStudioOutput, AWSError] = js.native
+  def describeStudio(
+    params: DescribeStudioInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeStudioOutput, scala.Unit]
+  ): Request[DescribeStudioOutput, AWSError] = js.native
+  
+  /**
+    * Returns the auto-termination policy for an Amazon EMR cluster.
+    */
+  def getAutoTerminationPolicy(): Request[GetAutoTerminationPolicyOutput, AWSError] = js.native
+  def getAutoTerminationPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetAutoTerminationPolicyOutput, scala.Unit]): Request[GetAutoTerminationPolicyOutput, AWSError] = js.native
+  /**
+    * Returns the auto-termination policy for an Amazon EMR cluster.
+    */
+  def getAutoTerminationPolicy(params: GetAutoTerminationPolicyInput): Request[GetAutoTerminationPolicyOutput, AWSError] = js.native
+  def getAutoTerminationPolicy(
+    params: GetAutoTerminationPolicyInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAutoTerminationPolicyOutput, scala.Unit]
+  ): Request[GetAutoTerminationPolicyOutput, AWSError] = js.native
+  
+  /**
+    * Returns the Amazon EMR block public access configuration for your Amazon Web Services account in the current Region. For more information see Configure Block Public Access for Amazon EMR in the Amazon EMR Management Guide.
     */
   def getBlockPublicAccessConfiguration(): Request[GetBlockPublicAccessConfigurationOutput, AWSError] = js.native
   def getBlockPublicAccessConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ GetBlockPublicAccessConfigurationOutput, scala.Unit]
   ): Request[GetBlockPublicAccessConfigurationOutput, AWSError] = js.native
   /**
-    * Returns the Amazon EMR block public access configuration for your AWS account in the current Region. For more information see Configure Block Public Access for Amazon EMR in the Amazon EMR Management Guide.
+    * Returns the Amazon EMR block public access configuration for your Amazon Web Services account in the current Region. For more information see Configure Block Public Access for Amazon EMR in the Amazon EMR Management Guide.
     */
   def getBlockPublicAccessConfiguration(params: GetBlockPublicAccessConfigurationInput): Request[GetBlockPublicAccessConfigurationOutput, AWSError] = js.native
   def getBlockPublicAccessConfiguration(
@@ -210,18 +308,32 @@ trait EMR extends Service {
   ): Request[GetBlockPublicAccessConfigurationOutput, AWSError] = js.native
   
   /**
-    *  Fetches the attached managed scaling policy for an Amazon EMR cluster. 
+    * Fetches the attached managed scaling policy for an Amazon EMR cluster. 
     */
   def getManagedScalingPolicy(): Request[GetManagedScalingPolicyOutput, AWSError] = js.native
   def getManagedScalingPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetManagedScalingPolicyOutput, scala.Unit]): Request[GetManagedScalingPolicyOutput, AWSError] = js.native
   /**
-    *  Fetches the attached managed scaling policy for an Amazon EMR cluster. 
+    * Fetches the attached managed scaling policy for an Amazon EMR cluster. 
     */
   def getManagedScalingPolicy(params: GetManagedScalingPolicyInput): Request[GetManagedScalingPolicyOutput, AWSError] = js.native
   def getManagedScalingPolicy(
     params: GetManagedScalingPolicyInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetManagedScalingPolicyOutput, scala.Unit]
   ): Request[GetManagedScalingPolicyOutput, AWSError] = js.native
+  
+  /**
+    * Fetches mapping details for the specified Amazon EMR Studio and identity (user or group).
+    */
+  def getStudioSessionMapping(): Request[GetStudioSessionMappingOutput, AWSError] = js.native
+  def getStudioSessionMapping(callback: js.Function2[/* err */ AWSError, /* data */ GetStudioSessionMappingOutput, scala.Unit]): Request[GetStudioSessionMappingOutput, AWSError] = js.native
+  /**
+    * Fetches mapping details for the specified Amazon EMR Studio and identity (user or group).
+    */
+  def getStudioSessionMapping(params: GetStudioSessionMappingInput): Request[GetStudioSessionMappingOutput, AWSError] = js.native
+  def getStudioSessionMapping(
+    params: GetStudioSessionMappingInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetStudioSessionMappingOutput, scala.Unit]
+  ): Request[GetStudioSessionMappingOutput, AWSError] = js.native
   
   /**
     * Provides information about the bootstrap actions associated with a cluster.
@@ -238,12 +350,12 @@ trait EMR extends Service {
   ): Request[ListBootstrapActionsOutput, AWSError] = js.native
   
   /**
-    * Provides the status of all clusters visible to this AWS account. Allows you to filter the list of clusters based on certain criteria; for example, filtering by cluster creation date and time or by status. This call returns a maximum of 50 clusters per call, but returns a marker to track the paging of the cluster list across multiple ListClusters calls.
+    * Provides the status of all clusters visible to this Amazon Web Services account. Allows you to filter the list of clusters based on certain criteria; for example, filtering by cluster creation date and time or by status. This call returns a maximum of 50 clusters in unsorted order per call, but returns a marker to track the paging of the cluster list across multiple ListClusters calls.
     */
   def listClusters(): Request[ListClustersOutput, AWSError] = js.native
   def listClusters(callback: js.Function2[/* err */ AWSError, /* data */ ListClustersOutput, scala.Unit]): Request[ListClustersOutput, AWSError] = js.native
   /**
-    * Provides the status of all clusters visible to this AWS account. Allows you to filter the list of clusters based on certain criteria; for example, filtering by cluster creation date and time or by status. This call returns a maximum of 50 clusters per call, but returns a marker to track the paging of the cluster list across multiple ListClusters calls.
+    * Provides the status of all clusters visible to this Amazon Web Services account. Allows you to filter the list of clusters based on certain criteria; for example, filtering by cluster creation date and time or by status. This call returns a maximum of 50 clusters in unsorted order per call, but returns a marker to track the paging of the cluster list across multiple ListClusters calls.
     */
   def listClusters(params: ListClustersInput): Request[ListClustersOutput, AWSError] = js.native
   def listClusters(
@@ -308,6 +420,20 @@ trait EMR extends Service {
   ): Request[ListNotebookExecutionsOutput, AWSError] = js.native
   
   /**
+    * Retrieves release labels of EMR services in the region where the API is called.
+    */
+  def listReleaseLabels(): Request[ListReleaseLabelsOutput, AWSError] = js.native
+  def listReleaseLabels(callback: js.Function2[/* err */ AWSError, /* data */ ListReleaseLabelsOutput, scala.Unit]): Request[ListReleaseLabelsOutput, AWSError] = js.native
+  /**
+    * Retrieves release labels of EMR services in the region where the API is called.
+    */
+  def listReleaseLabels(params: ListReleaseLabelsInput): Request[ListReleaseLabelsOutput, AWSError] = js.native
+  def listReleaseLabels(
+    params: ListReleaseLabelsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListReleaseLabelsOutput, scala.Unit]
+  ): Request[ListReleaseLabelsOutput, AWSError] = js.native
+  
+  /**
     * Lists all the security configurations visible to this account, providing their creation dates and times, and their names. This call returns a maximum of 50 clusters per call, but returns a marker to track the paging of the cluster list across multiple ListSecurityConfigurations calls.
     */
   def listSecurityConfigurations(): Request[ListSecurityConfigurationsOutput, AWSError] = js.native
@@ -324,18 +450,46 @@ trait EMR extends Service {
   ): Request[ListSecurityConfigurationsOutput, AWSError] = js.native
   
   /**
-    * Provides a list of steps for the cluster in reverse order unless you specify stepIds with the request of filter by StepStates. You can specify a maximum of ten stepIDs.
+    * Provides a list of steps for the cluster in reverse order unless you specify stepIds with the request or filter by StepStates. You can specify a maximum of 10 stepIDs. The CLI automatically paginates results to return a list greater than 50 steps. To return more than 50 steps using the CLI, specify a Marker, which is a pagination token that indicates the next set of steps to retrieve.
     */
   def listSteps(): Request[ListStepsOutput, AWSError] = js.native
   def listSteps(callback: js.Function2[/* err */ AWSError, /* data */ ListStepsOutput, scala.Unit]): Request[ListStepsOutput, AWSError] = js.native
   /**
-    * Provides a list of steps for the cluster in reverse order unless you specify stepIds with the request of filter by StepStates. You can specify a maximum of ten stepIDs.
+    * Provides a list of steps for the cluster in reverse order unless you specify stepIds with the request or filter by StepStates. You can specify a maximum of 10 stepIDs. The CLI automatically paginates results to return a list greater than 50 steps. To return more than 50 steps using the CLI, specify a Marker, which is a pagination token that indicates the next set of steps to retrieve.
     */
   def listSteps(params: ListStepsInput): Request[ListStepsOutput, AWSError] = js.native
   def listSteps(
     params: ListStepsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListStepsOutput, scala.Unit]
   ): Request[ListStepsOutput, AWSError] = js.native
+  
+  /**
+    * Returns a list of all user or group session mappings for the Amazon EMR Studio specified by StudioId.
+    */
+  def listStudioSessionMappings(): Request[ListStudioSessionMappingsOutput, AWSError] = js.native
+  def listStudioSessionMappings(callback: js.Function2[/* err */ AWSError, /* data */ ListStudioSessionMappingsOutput, scala.Unit]): Request[ListStudioSessionMappingsOutput, AWSError] = js.native
+  /**
+    * Returns a list of all user or group session mappings for the Amazon EMR Studio specified by StudioId.
+    */
+  def listStudioSessionMappings(params: ListStudioSessionMappingsInput): Request[ListStudioSessionMappingsOutput, AWSError] = js.native
+  def listStudioSessionMappings(
+    params: ListStudioSessionMappingsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListStudioSessionMappingsOutput, scala.Unit]
+  ): Request[ListStudioSessionMappingsOutput, AWSError] = js.native
+  
+  /**
+    * Returns a list of all Amazon EMR Studios associated with the Amazon Web Services account. The list includes details such as ID, Studio Access URL, and creation time for each Studio.
+    */
+  def listStudios(): Request[ListStudiosOutput, AWSError] = js.native
+  def listStudios(callback: js.Function2[/* err */ AWSError, /* data */ ListStudiosOutput, scala.Unit]): Request[ListStudiosOutput, AWSError] = js.native
+  /**
+    * Returns a list of all Amazon EMR Studios associated with the Amazon Web Services account. The list includes details such as ID, Studio Access URL, and creation time for each Studio.
+    */
+  def listStudios(params: ListStudiosInput): Request[ListStudiosOutput, AWSError] = js.native
+  def listStudios(
+    params: ListStudiosInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListStudiosOutput, scala.Unit]
+  ): Request[ListStudiosOutput, AWSError] = js.native
   
   /**
     * Modifies the number of steps that can be executed concurrently for the cluster specified using ClusterID.
@@ -394,14 +548,28 @@ trait EMR extends Service {
   ): Request[PutAutoScalingPolicyOutput, AWSError] = js.native
   
   /**
-    * Creates or updates an Amazon EMR block public access configuration for your AWS account in the current Region. For more information see Configure Block Public Access for Amazon EMR in the Amazon EMR Management Guide.
+    *  Auto-termination is supported in Amazon EMR versions 5.30.0 and 6.1.0 and later. For more information, see Using an auto-termination policy.  Creates or updates an auto-termination policy for an Amazon EMR cluster. An auto-termination policy defines the amount of idle time in seconds after which a cluster automatically terminates. For alternative cluster termination options, see Control cluster termination.
+    */
+  def putAutoTerminationPolicy(): Request[PutAutoTerminationPolicyOutput, AWSError] = js.native
+  def putAutoTerminationPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutAutoTerminationPolicyOutput, scala.Unit]): Request[PutAutoTerminationPolicyOutput, AWSError] = js.native
+  /**
+    *  Auto-termination is supported in Amazon EMR versions 5.30.0 and 6.1.0 and later. For more information, see Using an auto-termination policy.  Creates or updates an auto-termination policy for an Amazon EMR cluster. An auto-termination policy defines the amount of idle time in seconds after which a cluster automatically terminates. For alternative cluster termination options, see Control cluster termination.
+    */
+  def putAutoTerminationPolicy(params: PutAutoTerminationPolicyInput): Request[PutAutoTerminationPolicyOutput, AWSError] = js.native
+  def putAutoTerminationPolicy(
+    params: PutAutoTerminationPolicyInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutAutoTerminationPolicyOutput, scala.Unit]
+  ): Request[PutAutoTerminationPolicyOutput, AWSError] = js.native
+  
+  /**
+    * Creates or updates an Amazon EMR block public access configuration for your Amazon Web Services account in the current Region. For more information see Configure Block Public Access for Amazon EMR in the Amazon EMR Management Guide.
     */
   def putBlockPublicAccessConfiguration(): Request[PutBlockPublicAccessConfigurationOutput, AWSError] = js.native
   def putBlockPublicAccessConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ PutBlockPublicAccessConfigurationOutput, scala.Unit]
   ): Request[PutBlockPublicAccessConfigurationOutput, AWSError] = js.native
   /**
-    * Creates or updates an Amazon EMR block public access configuration for your AWS account in the current Region. For more information see Configure Block Public Access for Amazon EMR in the Amazon EMR Management Guide.
+    * Creates or updates an Amazon EMR block public access configuration for your Amazon Web Services account in the current Region. For more information see Configure Block Public Access for Amazon EMR in the Amazon EMR Management Guide.
     */
   def putBlockPublicAccessConfiguration(params: PutBlockPublicAccessConfigurationInput): Request[PutBlockPublicAccessConfigurationOutput, AWSError] = js.native
   def putBlockPublicAccessConfiguration(
@@ -410,12 +578,12 @@ trait EMR extends Service {
   ): Request[PutBlockPublicAccessConfigurationOutput, AWSError] = js.native
   
   /**
-    *  Creates or updates a managed scaling policy for an Amazon EMR cluster. The managed scaling policy defines the limits for resources, such as EC2 instances that can be added or terminated from a cluster. The policy only applies to the core and task nodes. The master node cannot be scaled after initial configuration. 
+    * Creates or updates a managed scaling policy for an Amazon EMR cluster. The managed scaling policy defines the limits for resources, such as EC2 instances that can be added or terminated from a cluster. The policy only applies to the core and task nodes. The master node cannot be scaled after initial configuration. 
     */
   def putManagedScalingPolicy(): Request[PutManagedScalingPolicyOutput, AWSError] = js.native
   def putManagedScalingPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutManagedScalingPolicyOutput, scala.Unit]): Request[PutManagedScalingPolicyOutput, AWSError] = js.native
   /**
-    *  Creates or updates a managed scaling policy for an Amazon EMR cluster. The managed scaling policy defines the limits for resources, such as EC2 instances that can be added or terminated from a cluster. The policy only applies to the core and task nodes. The master node cannot be scaled after initial configuration. 
+    * Creates or updates a managed scaling policy for an Amazon EMR cluster. The managed scaling policy defines the limits for resources, such as EC2 instances that can be added or terminated from a cluster. The policy only applies to the core and task nodes. The master node cannot be scaled after initial configuration. 
     */
   def putManagedScalingPolicy(params: PutManagedScalingPolicyInput): Request[PutManagedScalingPolicyOutput, AWSError] = js.native
   def putManagedScalingPolicy(
@@ -438,6 +606,22 @@ trait EMR extends Service {
   ): Request[RemoveAutoScalingPolicyOutput, AWSError] = js.native
   
   /**
+    * Removes an auto-termination policy from an Amazon EMR cluster.
+    */
+  def removeAutoTerminationPolicy(): Request[RemoveAutoTerminationPolicyOutput, AWSError] = js.native
+  def removeAutoTerminationPolicy(
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveAutoTerminationPolicyOutput, scala.Unit]
+  ): Request[RemoveAutoTerminationPolicyOutput, AWSError] = js.native
+  /**
+    * Removes an auto-termination policy from an Amazon EMR cluster.
+    */
+  def removeAutoTerminationPolicy(params: RemoveAutoTerminationPolicyInput): Request[RemoveAutoTerminationPolicyOutput, AWSError] = js.native
+  def removeAutoTerminationPolicy(
+    params: RemoveAutoTerminationPolicyInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveAutoTerminationPolicyOutput, scala.Unit]
+  ): Request[RemoveAutoTerminationPolicyOutput, AWSError] = js.native
+  
+  /**
     *  Removes a managed scaling policy from a specified EMR cluster. 
     */
   def removeManagedScalingPolicy(): Request[RemoveManagedScalingPolicyOutput, AWSError] = js.native
@@ -454,12 +638,12 @@ trait EMR extends Service {
   ): Request[RemoveManagedScalingPolicyOutput, AWSError] = js.native
   
   /**
-    * Removes tags from an Amazon EMR resource. Tags make it easier to associate clusters in various ways, such as grouping clusters to track your Amazon EMR resource allocation costs. For more information, see Tag Clusters.  The following example removes the stack tag with value Prod from a cluster:
+    * Removes tags from an Amazon EMR resource, such as a cluster or Amazon EMR Studio. Tags make it easier to associate resources in various ways, such as grouping clusters to track your Amazon EMR resource allocation costs. For more information, see Tag Clusters.  The following example removes the stack tag with value Prod from a cluster:
     */
   def removeTags(): Request[RemoveTagsOutput, AWSError] = js.native
   def removeTags(callback: js.Function2[/* err */ AWSError, /* data */ RemoveTagsOutput, scala.Unit]): Request[RemoveTagsOutput, AWSError] = js.native
   /**
-    * Removes tags from an Amazon EMR resource. Tags make it easier to associate clusters in various ways, such as grouping clusters to track your Amazon EMR resource allocation costs. For more information, see Tag Clusters.  The following example removes the stack tag with value Prod from a cluster:
+    * Removes tags from an Amazon EMR resource, such as a cluster or Amazon EMR Studio. Tags make it easier to associate resources in various ways, such as grouping clusters to track your Amazon EMR resource allocation costs. For more information, see Tag Clusters.  The following example removes the stack tag with value Prod from a cluster:
     */
   def removeTags(params: RemoveTagsInput): Request[RemoveTagsOutput, AWSError] = js.native
   def removeTags(
@@ -496,12 +680,12 @@ trait EMR extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Sets the Cluster$VisibleToAllUsers value, which determines whether the cluster is visible to all IAM users of the AWS account associated with the cluster. Only the IAM user who created the cluster or the AWS account root user can call this action. The default value, true, indicates that all IAM users in the AWS account can perform cluster actions if they have the proper IAM policy permissions. If set to false, only the IAM user that created the cluster can perform actions. This action works on running clusters. You can override the default true setting when you create a cluster by using the VisibleToAllUsers parameter with RunJobFlow.
+    *  The SetVisibleToAllUsers parameter is no longer supported. Your cluster may be visible to all users in your account. To restrict cluster access using an IAM policy, see Identity and Access Management for EMR.   Sets the Cluster$VisibleToAllUsers value for an EMR cluster. When true, IAM principals in the Amazon Web Services account can perform EMR cluster actions that their IAM policies allow. When false, only the IAM principal that created the cluster and the Amazon Web Services account root user can perform EMR actions on the cluster, regardless of IAM permissions policies attached to other IAM principals. This action works on running clusters. When you create a cluster, use the RunJobFlowInput$VisibleToAllUsers parameter. For more information, see Understanding the EMR Cluster VisibleToAllUsers Setting in the Amazon EMRManagement Guide.
     */
   def setVisibleToAllUsers(): Request[js.Object, AWSError] = js.native
   def setVisibleToAllUsers(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Sets the Cluster$VisibleToAllUsers value, which determines whether the cluster is visible to all IAM users of the AWS account associated with the cluster. Only the IAM user who created the cluster or the AWS account root user can call this action. The default value, true, indicates that all IAM users in the AWS account can perform cluster actions if they have the proper IAM policy permissions. If set to false, only the IAM user that created the cluster can perform actions. This action works on running clusters. You can override the default true setting when you create a cluster by using the VisibleToAllUsers parameter with RunJobFlow.
+    *  The SetVisibleToAllUsers parameter is no longer supported. Your cluster may be visible to all users in your account. To restrict cluster access using an IAM policy, see Identity and Access Management for EMR.   Sets the Cluster$VisibleToAllUsers value for an EMR cluster. When true, IAM principals in the Amazon Web Services account can perform EMR cluster actions that their IAM policies allow. When false, only the IAM principal that created the cluster and the Amazon Web Services account root user can perform EMR actions on the cluster, regardless of IAM permissions policies attached to other IAM principals. This action works on running clusters. When you create a cluster, use the RunJobFlowInput$VisibleToAllUsers parameter. For more information, see Understanding the EMR Cluster VisibleToAllUsers Setting in the Amazon EMRManagement Guide.
     */
   def setVisibleToAllUsers(params: SetVisibleToAllUsersInput): Request[js.Object, AWSError] = js.native
   def setVisibleToAllUsers(
@@ -548,6 +732,34 @@ trait EMR extends Service {
   def terminateJobFlows(params: TerminateJobFlowsInput): Request[js.Object, AWSError] = js.native
   def terminateJobFlows(
     params: TerminateJobFlowsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Updates an Amazon EMR Studio configuration, including attributes such as name, description, and subnets.
+    */
+  def updateStudio(): Request[js.Object, AWSError] = js.native
+  def updateStudio(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Updates an Amazon EMR Studio configuration, including attributes such as name, description, and subnets.
+    */
+  def updateStudio(params: UpdateStudioInput): Request[js.Object, AWSError] = js.native
+  def updateStudio(
+    params: UpdateStudioInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Updates the session policy attached to the user or group for the specified Amazon EMR Studio.
+    */
+  def updateStudioSessionMapping(): Request[js.Object, AWSError] = js.native
+  def updateStudioSessionMapping(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Updates the session policy attached to the user or group for the specified Amazon EMR Studio.
+    */
+  def updateStudioSessionMapping(params: UpdateStudioSessionMappingInput): Request[js.Object, AWSError] = js.native
+  def updateStudioSessionMapping(
+    params: UpdateStudioSessionMappingInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
   ): Request[js.Object, AWSError] = js.native
   

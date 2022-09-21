@@ -19,7 +19,7 @@ trait ClusterDbRevision extends StObject {
   /**
     * The date on which the database revision was released.
     */
-  var DatabaseRevisionReleaseDate: js.UndefOr[TStamp] = js.undefined
+  var DatabaseRevisionReleaseDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A list of RevisionTarget objects, where each object describes the database revision that a cluster can be updated to.
@@ -43,7 +43,7 @@ object ClusterDbRevision {
     
     inline def setCurrentDatabaseRevisionUndefined: Self = StObject.set(x, "CurrentDatabaseRevision", js.undefined)
     
-    inline def setDatabaseRevisionReleaseDate(value: TStamp): Self = StObject.set(x, "DatabaseRevisionReleaseDate", value.asInstanceOf[js.Any])
+    inline def setDatabaseRevisionReleaseDate(value: js.Date): Self = StObject.set(x, "DatabaseRevisionReleaseDate", value.asInstanceOf[js.Any])
     
     inline def setDatabaseRevisionReleaseDateUndefined: Self = StObject.set(x, "DatabaseRevisionReleaseDate", js.undefined)
     
@@ -51,6 +51,6 @@ object ClusterDbRevision {
     
     inline def setRevisionTargetsUndefined: Self = StObject.set(x, "RevisionTargets", js.undefined)
     
-    inline def setRevisionTargetsVarargs(value: RevisionTarget*): Self = StObject.set(x, "RevisionTargets", js.Array(value :_*))
+    inline def setRevisionTargetsVarargs(value: RevisionTarget*): Self = StObject.set(x, "RevisionTargets", js.Array(value*))
   }
 }

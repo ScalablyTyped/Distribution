@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.RevoluteConstraint")
 @js.native
-class RevoluteConstraint protected ()
+open class RevoluteConstraint protected ()
   extends typings.p2.mod.RevoluteConstraint {
   def this(bodyA: typings.p2.mod.Body, bodyB: typings.p2.mod.Body) = this()
   def this(bodyA: typings.p2.mod.Body, bodyB: typings.p2.mod.Body, options: RevoluteConstraintOptions) = this()

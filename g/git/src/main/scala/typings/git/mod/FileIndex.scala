@@ -6,32 +6,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("git", "FileIndex")
 @js.native
-class FileIndex protected () extends StObject {
-  def this(repoPath: js.Any, callback: js.Function) = this()
+open class FileIndex protected () extends StObject {
+  def this(repoPath: Any, callback: js.Function) = this()
   
-  var all_files: js.Any = js.native
+  var all_files: Any = js.native
   
-  var commit_index: js.Any = js.native
+  var commit_index: Any = js.native
   
-  var commit_order: js.Any = js.native
+  var commit_order: Any = js.native
   
-  def commits_for(file: js.Any, callback: js.Function): Unit = js.native
+  def commits_for(file: Any, callback: js.Function): Unit = js.native
   
-  def commits_from(commitSha: js.Any, callback: js.Function): Unit = js.native
+  def commits_from(commitSha: Any, callback: js.Function): Unit = js.native
   
-  def count(commitSha: js.Any, callback: js.Function): Unit = js.native
+  def count(commitSha: Any, callback: js.Function): Unit = js.native
   
   def count_all(callback: js.Function): Unit = js.native
   
-  def files(commitSha: js.Any, callback: js.Function): Unit = js.native
+  def files(commitSha: Any, callback: js.Function): Unit = js.native
   
-  var index_file: js.Any = js.native
+  var index_file: Any = js.native
   
-  def last_commits(commitSha: js.Any, filesMatcher: js.Any, callback: js.Function): Unit = js.native
+  def last_commits(commitSha: Any, filesMatcher: Any, callback: js.Function): Unit = js.native
   
-  var repo_path: js.Any = js.native
+  var repo_path: Any = js.native
   
-  var sha_count: js.Any = js.native
+  var sha_count: Any = js.native
   
-  def sort_commits(shaArray: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def sort_commits(shaArray: js.Array[Any]): js.Array[Any] = js.native
 }

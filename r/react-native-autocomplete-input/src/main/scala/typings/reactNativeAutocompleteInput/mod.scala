@@ -1,27 +1,26 @@
 package typings.reactNativeAutocompleteInput
 
-import typings.react.mod.Component
-import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.Shortcut
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.FlatListProps
 import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.TextInputProperties
 import typings.reactNative.mod.TextInputProps
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeAutocompleteInput.anon.Index
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
+object mod extends Shortcut {
   
   @JSImport("react-native-autocomplete-input", JSImport.Default)
   @js.native
-  class default[T] ()
-    extends Component[AutocompleteProps[T], js.Object, js.Any]
+  val default: FC[AutocompleteProps[Any]] = js.native
   
-  type Autocomplete[T] = Component[AutocompleteProps[T], js.Object, js.Any]
+  @JSImport("react-native-autocomplete-input", "AutocompleteInput")
+  @js.native
+  val AutocompleteInput: FC[AutocompleteProps[Any]] = js.native
   
   trait AutocompleteProps[T]
     extends StObject
@@ -58,12 +57,6 @@ object mod {
     var inputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /**
-      * function
-      * keyExtractor will be called to get key for each item. It's up to you which string to return as a key.
-      */
-    var keyExtractor: js.UndefOr[js.Function2[/* item */ T, /* i */ Double, String]] = js.undefined
-    
-    /**
       * style
       * These styles will be applied to the container which surrounds the result list.
       */
@@ -77,39 +70,26 @@ object mod {
     
     /**
       * function
-      * onShowResult will be called when the autocomplete suggestions appear or disappear.
+      * onShowResults will be called when the autocomplete suggestions appear or disappear.
       */
-    var onShowResult: js.UndefOr[js.Function1[/* showResults */ Boolean, Unit]] = js.undefined
+    var onShowResults: js.UndefOr[js.Function1[/* showResults */ Boolean, Unit]] = js.undefined
     
     /**
       * function
-      * renderItem will be called to render the data objects which will be displayed in the result view below the text input.
+      * render custom result list. Can be used to replace FlatList. All props passed to this function.
       */
-    def renderItem(itemWithIndex: Index[T]): ReactNode
-    
-    /**
-      * function
-      * renderSeparator will be called to render the list separators which will be displayed between the list elements in the result view below the text input.
-      */
-    var renderSeparator: js.UndefOr[
-        js.Function3[
-          /* sectionID */ String | Double, 
-          /* rowID */ String | Double, 
-          /* adjacentRowHighlighted */ js.UndefOr[Boolean], 
-          ReactElement
-        ]
-      ] = js.undefined
+    var renderResultList: js.UndefOr[js.Function1[/* props */ AutocompleteProps[T], ReactNode]] = js.undefined
     
     /**
       * function
       * render custom TextInput. All props passed to this function.
       */
-    var renderTextInput: js.UndefOr[js.Function1[/* props */ TextInputProperties, ReactNode]] = js.undefined
+    var renderTextInput: js.UndefOr[js.Function1[/* props */ AutocompleteProps[T], ReactNode]] = js.undefined
   }
   object AutocompleteProps {
     
-    inline def apply[T](data: js.Array[T], renderItem: Index[T] => ReactNode): AutocompleteProps[T] = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], renderItem = js.Any.fromFunction1(renderItem))
+    inline def apply[T](data: js.Array[T]): AutocompleteProps[T] = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutocompleteProps[T]]
     }
     
@@ -123,7 +103,7 @@ object mod {
       
       inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setFlatListProps(value: Partial[FlatListProps[T]]): Self = StObject.set(x, "flatListProps", value.asInstanceOf[js.Any])
       
@@ -139,10 +119,6 @@ object mod {
       
       inline def setInputContainerStyleUndefined: Self = StObject.set(x, "inputContainerStyle", js.undefined)
       
-      inline def setKeyExtractor(value: (/* item */ T, /* i */ Double) => String): Self = StObject.set(x, "keyExtractor", js.Any.fromFunction2(value))
-      
-      inline def setKeyExtractorUndefined: Self = StObject.set(x, "keyExtractor", js.undefined)
-      
       inline def setListContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "listContainerStyle", value.asInstanceOf[js.Any])
       
       inline def setListContainerStyleNull: Self = StObject.set(x, "listContainerStyle", null)
@@ -155,21 +131,22 @@ object mod {
       
       inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
       
-      inline def setOnShowResult(value: /* showResults */ Boolean => Unit): Self = StObject.set(x, "onShowResult", js.Any.fromFunction1(value))
+      inline def setOnShowResults(value: /* showResults */ Boolean => Unit): Self = StObject.set(x, "onShowResults", js.Any.fromFunction1(value))
       
-      inline def setOnShowResultUndefined: Self = StObject.set(x, "onShowResult", js.undefined)
+      inline def setOnShowResultsUndefined: Self = StObject.set(x, "onShowResults", js.undefined)
       
-      inline def setRenderItem(value: Index[T] => ReactNode): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
+      inline def setRenderResultList(value: /* props */ AutocompleteProps[T] => ReactNode): Self = StObject.set(x, "renderResultList", js.Any.fromFunction1(value))
       
-      inline def setRenderSeparator(
-        value: (/* sectionID */ String | Double, /* rowID */ String | Double, /* adjacentRowHighlighted */ js.UndefOr[Boolean]) => ReactElement
-      ): Self = StObject.set(x, "renderSeparator", js.Any.fromFunction3(value))
+      inline def setRenderResultListUndefined: Self = StObject.set(x, "renderResultList", js.undefined)
       
-      inline def setRenderSeparatorUndefined: Self = StObject.set(x, "renderSeparator", js.undefined)
-      
-      inline def setRenderTextInput(value: /* props */ TextInputProperties => ReactNode): Self = StObject.set(x, "renderTextInput", js.Any.fromFunction1(value))
+      inline def setRenderTextInput(value: /* props */ AutocompleteProps[T] => ReactNode): Self = StObject.set(x, "renderTextInput", js.Any.fromFunction1(value))
       
       inline def setRenderTextInputUndefined: Self = StObject.set(x, "renderTextInput", js.undefined)
     }
   }
+  
+  type _To = FC[AutocompleteProps[Any]]
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: FC[AutocompleteProps[Any]] = default
 }

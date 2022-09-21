@@ -8,6 +8,6 @@ object dataMod {
   
   @JSImport("ng-table/src/core/data", "NgTableDefaultGetDataProvider")
   @js.native
-  class NgTableDefaultGetDataProvider ()
+  open class NgTableDefaultGetDataProvider ()
     extends typings.ngTable.ngTableDefaultGetDataMod.NgTableDefaultGetDataProvider
 }

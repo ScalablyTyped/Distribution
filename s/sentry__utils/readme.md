@@ -1,7 +1,7 @@
 
 # Scala.js typings for sentry__utils
 
-Typings are for version 5.27.4
+Typings are for version 7.13.0
 
 ## Library description:
 Utilities for all Sentry JavaScript SDKs
@@ -10,10 +10,10 @@ Utilities for all Sentry JavaScript SDKs
 | ------------------ | :-------------: |
 | Full name          | @sentry/utils |
 | Keywords           | - |
-| # releases         | 117 |
-| # dependents       | 37 |
-| # downloads        | 117509650 |
-| # stars            | 0 |
+| # releases         | 143 |
+| # dependents       | 0.0 |
+| # downloads        | 2.6042642333333332E7 |
+| # stars            | 6549.0 |
 
 ## Links
 - [Homepage](https://github.com/getsentry/sentry-javascript/tree/master/packages/utils)

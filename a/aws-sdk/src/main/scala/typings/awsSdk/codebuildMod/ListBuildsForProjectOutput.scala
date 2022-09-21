@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListBuildsForProjectOutput extends StObject {
   
   /**
-    * A list of build IDs for the specified build project, with each build ID representing a single build.
+    * A list of build identifiers for the specified build project, with each build ID representing a single build.
     */
   var ids: js.UndefOr[BuildIds] = js.undefined
   
@@ -29,7 +29,7 @@ object ListBuildsForProjectOutput {
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

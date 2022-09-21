@@ -10,10 +10,10 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | lerna-get-packages |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3097 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 68.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/azz/lerna-get-packages#readme)

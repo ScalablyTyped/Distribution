@@ -11,7 +11,7 @@ object global {
   
   @JSGlobal("Graph")
   @js.native
-  class Graph protected ()
+  open class Graph protected ()
     extends StObject
        with typings.javascriptAstar.Graph {
     def this(grid: js.Array[js.Array[Double]]) = this()
@@ -23,7 +23,7 @@ object global {
   
   @JSGlobal("GridNode")
   @js.native
-  class GridNode ()
+  open class GridNode ()
     extends StObject
        with typings.javascriptAstar.GridNode {
     

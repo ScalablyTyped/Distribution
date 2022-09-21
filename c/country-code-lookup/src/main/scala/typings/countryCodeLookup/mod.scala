@@ -10,20 +10,20 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def byCountry(country: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byCountry")(country.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
+  inline def byCountry(country: String): SearchOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("byCountry")(country.asInstanceOf[js.Any]).asInstanceOf[SearchOutput]
   
-  inline def byFips(code: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byFips")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
+  inline def byFips(code: String): SearchOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("byFips")(code.asInstanceOf[js.Any]).asInstanceOf[SearchOutput]
   
-  inline def byInternet(code: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byInternet")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
+  inline def byInternet(code: String): SearchOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("byInternet")(code.asInstanceOf[js.Any]).asInstanceOf[SearchOutput]
   
-  inline def byIso(code: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byIso")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
-  inline def byIso(code: Double): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byIso")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
+  inline def byIso(code: String): SearchOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("byIso")(code.asInstanceOf[js.Any]).asInstanceOf[SearchOutput]
+  inline def byIso(code: Double): SearchOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("byIso")(code.asInstanceOf[js.Any]).asInstanceOf[SearchOutput]
   
   @JSImport("country-code-lookup", "countries")
   @js.native
-  val countries: js.Array[CountryCode] = js.native
+  val countries: js.Array[Country] = js.native
   
-  trait CountryCode extends StObject {
+  trait Country extends StObject {
     
     var capital: String
     
@@ -43,7 +43,7 @@ object mod {
     
     var region: String
   }
-  object CountryCode {
+  object Country {
     
     inline def apply(
       capital: String,
@@ -55,12 +55,12 @@ object mod {
       iso3: String,
       isoNo: String,
       region: String
-    ): CountryCode = {
+    ): Country = {
       val __obj = js.Dynamic.literal(capital = capital.asInstanceOf[js.Any], continent = continent.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], fips = fips.asInstanceOf[js.Any], internet = internet.asInstanceOf[js.Any], iso2 = iso2.asInstanceOf[js.Any], iso3 = iso3.asInstanceOf[js.Any], isoNo = isoNo.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CountryCode]
+      __obj.asInstanceOf[Country]
     }
     
-    extension [Self <: CountryCode](x: Self) {
+    extension [Self <: Country](x: Self) {
       
       inline def setCapital(value: String): Self = StObject.set(x, "capital", value.asInstanceOf[js.Any])
       
@@ -81,4 +81,6 @@ object mod {
       inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     }
   }
+  
+  type SearchOutput = Country | Null
 }

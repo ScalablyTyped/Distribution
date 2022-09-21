@@ -1,7 +1,7 @@
 
 # Scala.js typings for pdf-viewer-reactjs
 
-Typings are for version 2.0
+Typings are for version 2.2
 
 ## Library description:
 Simple react PDF viewer component with controls based on PDF.js.
@@ -10,10 +10,10 @@ Simple react PDF viewer component with controls based on PDF.js.
 | ------------------ | :-------------: |
 | Full name          | pdf-viewer-reactjs |
 | Keywords           | pdf, document, pages, pdf viewer, pdf-viewer, rotate, rotate pdf, zoom, zoom pdf, react, reactjs, react-pdf, react-pdf-viewer |
-| # releases         | 21 |
-| # dependents       | 1 |
-| # downloads        | 167069 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 20373.0 |
+| # stars            | 108.0 |
 
 ## Links
 - [Homepage](https://github.com/ansu5555/pdf-viewer-reactjs#readme)

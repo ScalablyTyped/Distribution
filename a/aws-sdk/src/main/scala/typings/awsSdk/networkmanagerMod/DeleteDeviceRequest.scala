@@ -9,24 +9,24 @@ trait DeleteDeviceRequest extends StObject {
   /**
     * The ID of the device.
     */
-  var DeviceId: String
+  var DeviceId: typings.awsSdk.networkmanagerMod.DeviceId
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String
+  var GlobalNetworkId: typings.awsSdk.networkmanagerMod.GlobalNetworkId
 }
 object DeleteDeviceRequest {
   
-  inline def apply(DeviceId: String, GlobalNetworkId: String): DeleteDeviceRequest = {
+  inline def apply(DeviceId: DeviceId, GlobalNetworkId: GlobalNetworkId): DeleteDeviceRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any], GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDeviceRequest]
   }
   
   extension [Self <: DeleteDeviceRequest](x: Self) {
     
-    inline def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
   }
 }

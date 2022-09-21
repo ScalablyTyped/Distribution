@@ -2,7 +2,6 @@ package typings.gulpRemember
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,9 @@ object mod extends Shortcut {
   @js.native
   val ^ : IGulpRemember = js.native
   
-  type ICache = StringDictionary[ReadWriteStream]
+  type ICache = StringDictionary[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+  ]
   
   @js.native
   trait IGulpRemember extends StObject {
@@ -24,8 +25,8 @@ object mod extends Shortcut {
       *   2. Add all remembered files back into the stream when not present.
       * @param cacheName Name to give your cache
       */
-    def apply(): ReadWriteStream = js.native
-    def apply(cacheName: String): ReadWriteStream = js.native
+    def apply(): Any = js.native
+    def apply(cacheName: String): Any = js.native
     
     /**
       * Return a raw cache by name.

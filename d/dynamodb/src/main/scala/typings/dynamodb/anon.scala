@@ -1,13 +1,6 @@
 package typings.dynamodb
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.bunyan.mod.^
-import typings.dynamodb.callbackMod.Callback
 import typings.dynamodb.dynamoDBMod.DynamoDB
-import typings.dynamodb.modelMod.Model.OperationOptions
-import typings.dynamodb.queryMod.Query
-import typings.dynamodb.scanMod.ParallelScan
-import typings.dynamodb.scanMod.Scan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,22 +9,43 @@ object anon {
   
   trait AttributeNames extends StObject {
     
-    var attributeNames: js.Any
+    var attributeNames: Any
     
-    var attributeValues: js.Any
+    var attributeValues: Any
   }
   object AttributeNames {
     
-    inline def apply(attributeNames: js.Any, attributeValues: js.Any): AttributeNames = {
+    inline def apply(attributeNames: Any, attributeValues: Any): AttributeNames = {
       val __obj = js.Dynamic.literal(attributeNames = attributeNames.asInstanceOf[js.Any], attributeValues = attributeValues.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeNames]
     }
     
     extension [Self <: AttributeNames](x: Self) {
       
-      inline def setAttributeNames(value: js.Any): Self = StObject.set(x, "attributeNames", value.asInstanceOf[js.Any])
+      inline def setAttributeNames(value: Any): Self = StObject.set(x, "attributeNames", value.asInstanceOf[js.Any])
       
-      inline def setAttributeValues(value: js.Any): Self = StObject.set(x, "attributeValues", value.asInstanceOf[js.Any])
+      inline def setAttributeValues(value: Any): Self = StObject.set(x, "attributeValues", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait CapacityUnits extends StObject {
+    
+    var CapacityUnits: Double
+    
+    var TableName: String
+  }
+  object CapacityUnits {
+    
+    inline def apply(CapacityUnits: Double, TableName: String): CapacityUnits = {
+      val __obj = js.Dynamic.literal(CapacityUnits = CapacityUnits.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CapacityUnits]
+    }
+    
+    extension [Self <: CapacityUnits](x: Self) {
+      
+      inline def setCapacityUnits(value: Double): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
+      
+      inline def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,79 +93,5 @@ object anon {
       
       inline def setWriteCapacity(value: Double): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
     }
-  }
-  
-  @js.native
-  trait TypeofModel extends StObject {
-    
-    val after: js.Any = js.native
-    
-    def batchGetItems(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = js.native
-    def batchGetItems(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = js.native
-    
-    val before: js.Any = js.native
-    
-    def config(config: Dynamodb): js.Any = js.native
-    
-    def create(doc: js.Any): js.Promise[js.Any] = js.native
-    def create(doc: js.Any, callback: Callback): Unit = js.native
-    def create(doc: js.Any, params: OperationOptions): js.Promise[js.Any] = js.native
-    def create(doc: js.Any, params: OperationOptions, callback: Callback): Unit = js.native
-    
-    def createTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = js.native
-    def createTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = js.native
-    
-    def deleteTable(): js.Promise[js.Any] = js.native
-    def deleteTable(callback: Callback): Unit = js.native
-    
-    def describeTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = js.native
-    def describeTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = js.native
-    
-    def destroy(data: String, callback: Callback): Unit = js.native
-    def destroy(data: String, options: OperationOptions, callback: Callback): Unit = js.native
-    def destroy(data: StringDictionary[js.Any], callback: Callback): Unit = js.native
-    def destroy(data: StringDictionary[js.Any], options: OperationOptions, callback: Callback): Unit = js.native
-    def destroy(hashKey: String): js.Promise[js.Any] = js.native
-    def destroy(hashKey: String, options: String): js.Promise[js.Any] = js.native
-    def destroy(hashKey: String, options: OperationOptions): js.Promise[js.Any] = js.native
-    def destroy(hashKey: String, rangeKey: String, callback: Callback): Unit = js.native
-    def destroy(hashKey: String, rangeKey: String, options: OperationOptions): js.Promise[js.Any] = js.native
-    def destroy(hashKey: String, rangeKey: String, options: OperationOptions, callback: Callback): Unit = js.native
-    
-    def get(data: String, callback: Callback): Unit = js.native
-    def get(data: String, options: String, callback: Callback): Unit = js.native
-    def get(data: String, options: js.Object, callback: Callback): Unit = js.native
-    def get(data: js.Object, callback: Callback): Unit = js.native
-    def get(data: js.Object, options: String, callback: Callback): Unit = js.native
-    def get(data: js.Object, options: js.Object, callback: Callback): Unit = js.native
-    def get(hashKey: String): js.Promise[js.Any] = js.native
-    def get(hashKey: String, options: String): js.Promise[js.Any] = js.native
-    def get(hashKey: String, options: js.Object): js.Promise[js.Any] = js.native
-    def get(hashKey: String, rangeKey: String, options: js.Object): js.Promise[js.Any] = js.native
-    def get(hashKey: String, rangeKey: String, options: js.Object, callback: Callback): Unit = js.native
-    
-    def getItems(keys: js.Array[js.Any]): js.Promise[js.Any] = js.native
-    def getItems(keys: js.Array[js.Any], callback: Callback): Unit = js.native
-    def getItems(keys: js.Array[js.Any], options: js.Any): js.Promise[js.Any] = js.native
-    def getItems(keys: js.Array[js.Any], options: js.Any, callback: Callback): Unit = js.native
-    
-    val log: ^ = js.native
-    
-    def parallelScan(totalSegments: Double): ParallelScan = js.native
-    
-    def query(hashKey: String): Query = js.native
-    
-    def scan(): Scan = js.native
-    
-    def tableName(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] = js.native
-    def tableName(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): Unit = js.native
-    
-    def update(item: js.Any): js.Promise[js.Any] = js.native
-    def update(item: js.Any, callback: Callback): Unit = js.native
-    def update(item: js.Any, options: OperationOptions): js.Promise[js.Any] = js.native
-    def update(item: js.Any, options: OperationOptions, callback: Callback): Unit = js.native
-    
-    def updateTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = js.native
-    def updateTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = js.native
   }
 }

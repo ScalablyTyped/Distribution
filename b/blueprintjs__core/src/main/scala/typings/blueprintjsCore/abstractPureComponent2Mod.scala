@@ -11,7 +11,7 @@ object abstractPureComponent2Mod {
   @js.native
   abstract class AbstractPureComponent2[P, S, SS] protected () extends PureComponent[P, S, SS] {
     def this(props: P) = this()
-    def this(props: P, context: js.Any) = this()
+    def this(props: P, context: Any) = this()
     
     /**
       * Clear all known animation frame requests.
@@ -34,21 +34,23 @@ object abstractPureComponent2Mod {
     /**
       * Request an animation frame and remember its ID.
       * All pending requests will be canceled when component unmounts.
+      *
       * @returns a "cancel" function that will cancel the request when invoked.
       */
     def requestAnimationFrame(callback: js.Function0[Unit]): js.Function0[Unit] = js.native
     
-    /* private */ var requestIds: js.Any = js.native
+    /* private */ var requestIds: Any = js.native
     
     /**
       * Set a timeout and remember its ID.
       * All pending timeouts will be cleared when component unmounts.
+      *
       * @returns a "cancel" function that will clear timeout when invoked.
       */
     def setTimeout(callback: js.Function0[Unit]): js.Function0[Unit] = js.native
     def setTimeout(callback: js.Function0[Unit], timeout: Double): js.Function0[Unit] = js.native
     
-    /* private */ var timeoutIds: js.Any = js.native
+    /* private */ var timeoutIds: Any = js.native
     
     /**
       * Ensures that the props specified for a component are valid.

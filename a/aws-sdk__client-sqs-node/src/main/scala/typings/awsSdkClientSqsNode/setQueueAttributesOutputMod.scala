@@ -8,5 +8,5 @@ object setQueueAttributesOutputMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/SetQueueAttributesOutput", "SetQueueAttributesOutput")
   @js.native
-  val SetQueueAttributesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SetQueueAttributesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

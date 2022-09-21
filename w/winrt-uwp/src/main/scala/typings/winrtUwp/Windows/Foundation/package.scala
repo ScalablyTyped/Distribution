@@ -1,63 +1,54 @@
 package typings.winrtUwp.Windows.Foundation
 
+import typings.winrtUwp.Windows.WinRTEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 /** Represents a method that handles the completed event of an asynchronous action. */
-type AsyncActionCompletedHandler = js.Function2[
-/* asyncInfo */ typings.winrtUwp.Windows.Foundation.IAsyncAction, 
-/* asyncStatus */ typings.winrtUwp.Windows.Foundation.AsyncStatus, 
-scala.Unit]
+type AsyncActionCompletedHandler = js.Function2[/* asyncInfo */ IAsyncAction, /* asyncStatus */ AsyncStatus, Unit]
 
 /** Represents a method that handles progress update events of an asynchronous action that provides progress updates. */
 type AsyncActionProgressHandler[TProgress] = js.Function2[
-/* asyncInfo */ typings.winrtUwp.Windows.Foundation.IAsyncActionWithProgress[TProgress], 
+/* asyncInfo */ IAsyncActionWithProgress[TProgress], 
 /* progressInfo */ TProgress, 
-scala.Unit]
+Unit]
 
 /** Represents a method that handles the completed event of an asynchronous action that provides progress updates. */
 type AsyncActionWithProgressCompletedHandler[TProgress] = js.Function2[
-/* asyncInfo */ typings.winrtUwp.Windows.Foundation.IAsyncActionWithProgress[TProgress], 
-/* asyncStatus */ typings.winrtUwp.Windows.Foundation.AsyncStatus, 
-scala.Unit]
+/* asyncInfo */ IAsyncActionWithProgress[TProgress], 
+/* asyncStatus */ AsyncStatus, 
+Unit]
 
 /** Represents a method that handles the completed event of an asynchronous operation. */
-type AsyncOperationCompletedHandler[TResult] = js.Function2[
-/* asyncInfo */ typings.winrtUwp.Windows.Foundation.IAsyncOperation[TResult], 
-/* asyncStatus */ typings.winrtUwp.Windows.Foundation.AsyncStatus, 
-scala.Unit]
+type AsyncOperationCompletedHandler[TResult] = js.Function2[/* asyncInfo */ IAsyncOperation[TResult], /* asyncStatus */ AsyncStatus, Unit]
 
 /** Represents a method that handles progress update events of an asynchronous operation that provides progress updates. */
 type AsyncOperationProgressHandler[TResult, TProgress] = js.Function2[
-/* asyncInfo */ typings.winrtUwp.Windows.Foundation.IAsyncOperationWithProgress[TResult, TProgress], 
+/* asyncInfo */ IAsyncOperationWithProgress[TResult, TProgress], 
 /* progressInfo */ TProgress, 
-scala.Unit]
+Unit]
 
 /** Represents a method that handles the completed event of an asynchronous operation that provides progress updates. */
 type AsyncOperationWithProgressCompletedHandler[TResult, TProgress] = js.Function2[
-/* asyncInfo */ typings.winrtUwp.Windows.Foundation.IAsyncOperationWithProgress[TResult, TProgress], 
-/* asyncStatus */ typings.winrtUwp.Windows.Foundation.AsyncStatus, 
-scala.Unit]
+/* asyncInfo */ IAsyncOperationWithProgress[TResult, TProgress], 
+/* asyncStatus */ AsyncStatus, 
+Unit]
 
 /** Represents a method that handles the completed event of a deferred action. */
-type DeferralCompletedHandler = js.Function0[scala.Unit]
+type DeferralCompletedHandler = js.Function0[Unit]
 
 /** Represents a method that handles general events. */
-type EventHandler[T] = js.Function1[/* ev */ T & typings.winrtUwp.Windows.WinRTEvent[js.Any], scala.Unit]
+type EventHandler[T] = js.Function1[/* ev */ T & WinRTEvent[Any], Unit]
 
-type IPromiseWithIAsyncAction = typings.winrtUwp.Windows.Foundation.IPromiseWithOperation[scala.Unit, typings.winrtUwp.Windows.Foundation.IAsyncAction]
+type IPromiseWithIAsyncAction = IPromiseWithOperation[Unit, IAsyncAction]
 
-type IPromiseWithIAsyncActionWithProgress[TProgress] = typings.winrtUwp.Windows.Foundation.IPromiseWithOperation[
-scala.Unit, 
-typings.winrtUwp.Windows.Foundation.IAsyncActionWithProgress[TProgress]]
+type IPromiseWithIAsyncActionWithProgress[TProgress] = IPromiseWithOperation[Unit, IAsyncActionWithProgress[TProgress]]
 
-type IPromiseWithIAsyncOperation[TResult] = typings.winrtUwp.Windows.Foundation.IPromiseWithOperation[TResult, typings.winrtUwp.Windows.Foundation.IAsyncOperation[TResult]]
+type IPromiseWithIAsyncOperation[TResult] = IPromiseWithOperation[TResult, IAsyncOperation[TResult]]
 
-type IPromiseWithIAsyncOperationWithProgress[TResult, TProgress] = typings.winrtUwp.Windows.Foundation.IPromiseWithOperation[
-TResult, 
-typings.winrtUwp.Windows.Foundation.IAsyncOperationWithProgress[TResult, TProgress]]
+type IPromiseWithIAsyncOperationWithProgress[TResult, TProgress] = IPromiseWithOperation[TResult, IAsyncOperationWithProgress[TResult, TProgress]]
 
 /** Represents a method that handles general events. */
-type TypedEventHandler[TSender, TResult] = js.Function1[/* ev */ TResult & typings.winrtUwp.Windows.WinRTEvent[TSender], scala.Unit]
+type TypedEventHandler[TSender, TResult] = js.Function1[/* ev */ TResult & WinRTEvent[TSender], Unit]

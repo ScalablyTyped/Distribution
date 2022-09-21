@@ -10,10 +10,10 @@ Mess is Fisher–Yates shuffle algorithm implementation for node.js
 | ------------------ | :-------------: |
 | Full name          | mess |
 | Keywords           | mess, shuffle, array_shuffle, random, fisher, yates, array |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 18304 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 890.3333333333334 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/bobrik/node-mess)

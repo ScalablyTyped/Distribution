@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSpreadsheetRectangle")
 @js.native
-class ASPxClientSpreadsheetRectangle ()
+open class ASPxClientSpreadsheetRectangle ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSpreadsheetRectangle {
   

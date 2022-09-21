@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * NodeManagement defines the set of node management services turned on for
-  * the node pool.
-  */
 trait SchemaNodeManagement extends StObject {
   
   /**
     * Whether the nodes will be automatically repaired.
     */
-  var autoRepair: js.UndefOr[Boolean] = js.undefined
+  var autoRepair: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Whether the nodes will be automatically upgraded.
     */
-  var autoUpgrade: js.UndefOr[Boolean] = js.undefined
+  var autoUpgrade: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Specifies the Auto Upgrade knobs for the node pool.
@@ -36,9 +32,13 @@ object SchemaNodeManagement {
     
     inline def setAutoRepair(value: Boolean): Self = StObject.set(x, "autoRepair", value.asInstanceOf[js.Any])
     
+    inline def setAutoRepairNull: Self = StObject.set(x, "autoRepair", null)
+    
     inline def setAutoRepairUndefined: Self = StObject.set(x, "autoRepair", js.undefined)
     
     inline def setAutoUpgrade(value: Boolean): Self = StObject.set(x, "autoUpgrade", value.asInstanceOf[js.Any])
+    
+    inline def setAutoUpgradeNull: Self = StObject.set(x, "autoUpgrade", null)
     
     inline def setAutoUpgradeUndefined: Self = StObject.set(x, "autoUpgrade", js.undefined)
     

@@ -16,7 +16,7 @@ object ionic1BuildMod {
   
   @JSImport("ionic/lib/project/ionic1/build", "Ionic1BuildRunner")
   @js.native
-  class Ionic1BuildRunner protected () extends BuildRunner[Ionic1BuildOptions] {
+  open class Ionic1BuildRunner protected () extends BuildRunner[Ionic1BuildOptions] {
     def this(e: Ionic1BuildRunnerDeps) = this()
     
     /* protected */ @JSName("e")

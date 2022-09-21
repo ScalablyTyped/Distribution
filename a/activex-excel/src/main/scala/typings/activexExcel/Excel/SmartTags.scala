@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SmartTags extends StObject {
   
-  def apply(Index: js.Any): SmartTag = js.native
+  def apply(Index: Any): SmartTag = js.native
   
   def Add(SmartTagType: String): SmartTag = js.native
   
@@ -17,7 +17,7 @@ trait SmartTags extends StObject {
   
   val Creator: XlCreator = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): SmartTag = js.native
+  def _Default(Index: Any): SmartTag = js.native
 }

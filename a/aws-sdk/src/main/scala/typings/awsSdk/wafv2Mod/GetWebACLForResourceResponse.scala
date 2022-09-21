@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetWebACLForResourceResponse extends StObject {
   
   /**
-    * The Web ACL that is associated with the resource. If there is no associated resource, AWS WAF returns a null Web ACL.
+    * The web ACL that is associated with the resource. If there is no associated resource, WAF returns a null web ACL.
     */
   var WebACL: js.UndefOr[typings.awsSdk.wafv2Mod.WebACL] = js.undefined
 }

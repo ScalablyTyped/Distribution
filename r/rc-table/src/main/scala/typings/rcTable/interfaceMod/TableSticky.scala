@@ -13,6 +13,8 @@ trait TableSticky extends StObject {
   var offsetHeader: js.UndefOr[Double] = js.undefined
   
   var offsetScroll: js.UndefOr[Double] = js.undefined
+  
+  var offsetSummary: js.UndefOr[Double] = js.undefined
 }
 object TableSticky {
   
@@ -34,5 +36,9 @@ object TableSticky {
     inline def setOffsetScroll(value: Double): Self = StObject.set(x, "offsetScroll", value.asInstanceOf[js.Any])
     
     inline def setOffsetScrollUndefined: Self = StObject.set(x, "offsetScroll", js.undefined)
+    
+    inline def setOffsetSummary(value: Double): Self = StObject.set(x, "offsetSummary", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetSummaryUndefined: Self = StObject.set(x, "offsetSummary", js.undefined)
   }
 }

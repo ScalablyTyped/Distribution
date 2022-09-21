@@ -4,32 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/oslogin/v1", "oslogin_v1.Resource$Users")
 @js.native
-class ResourceUsers protected () extends StObject {
+open class ResourceUsers protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * oslogin.users.getLoginProfile
-    * @desc Retrieves the profile information used for logging in to a virtual
-    * machine on Google Compute Engine.
-    * @alias oslogin.users.getLoginProfile
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The unique ID for the user in format `users/{user}`.
-    * @param {string=} params.projectId The project ID of the Google Cloud Platform project.
-    * @param {string=} params.systemId A system ID for filtering the results of the request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def getLoginProfile(): GaxiosPromise[SchemaLoginProfile] = js.native
   def getLoginProfile(callback: BodyResponseCallback[SchemaLoginProfile]): Unit = js.native
   def getLoginProfile(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLoginProfile] = js.native
@@ -37,8 +24,8 @@ class ResourceUsers protected () extends StObject {
   def getLoginProfile(params: ParamsResourceUsersGetloginprofile, callback: BodyResponseCallback[SchemaLoginProfile]): Unit = js.native
   def getLoginProfile(
     params: ParamsResourceUsersGetloginprofile,
-    options: BodyResponseCallback[SchemaLoginProfile],
-    callback: BodyResponseCallback[SchemaLoginProfile]
+    options: BodyResponseCallback[Readable | SchemaLoginProfile],
+    callback: BodyResponseCallback[Readable | SchemaLoginProfile]
   ): Unit = js.native
   def getLoginProfile(params: ParamsResourceUsersGetloginprofile, options: MethodOptions): GaxiosPromise[SchemaLoginProfile] = js.native
   def getLoginProfile(
@@ -46,23 +33,74 @@ class ResourceUsers protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLoginProfile]
   ): Unit = js.native
-  
   /**
-    * oslogin.users.importSshPublicKey
-    * @desc Adds an SSH public key and returns the profile information. Default
-    * POSIX account information is set when no username and UID exist as part
-    * of the login profile.
-    * @alias oslogin.users.importSshPublicKey
-    * @memberOf! ()
+    * Retrieves the profile information used for logging in to a virtual machine on Google Compute Engine.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/oslogin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.parent The unique ID for the user in format `users/{user}`.
-    * @param {string=} params.projectId The project ID of the Google Cloud Platform project.
-    * @param {().SshPublicKey} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const oslogin = google.oslogin('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloud-platform.read-only',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await oslogin.users.getLoginProfile({
+    *     // Required. The unique ID for the user in format `users/{user\}`.
+    *     name: 'users/my-user',
+    *     // The project ID of the Google Cloud Platform project.
+    *     projectId: 'placeholder-value',
+    *     // A system ID for filtering the results of the request.
+    *     systemId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "name": "my_name",
+    *   //   "posixAccounts": [],
+    *   //   "sshPublicKeys": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def getLoginProfile(params: ParamsResourceUsersGetloginprofile, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getLoginProfile(
+    params: ParamsResourceUsersGetloginprofile,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def importSshPublicKey(): GaxiosPromise[SchemaImportSshPublicKeyResponse] = js.native
   def importSshPublicKey(callback: BodyResponseCallback[SchemaImportSshPublicKeyResponse]): Unit = js.native
   def importSshPublicKey(params: Unit, options: MethodOptions): GaxiosPromise[SchemaImportSshPublicKeyResponse] = js.native
@@ -73,14 +111,87 @@ class ResourceUsers protected () extends StObject {
   ): Unit = js.native
   def importSshPublicKey(
     params: ParamsResourceUsersImportsshpublickey,
-    options: BodyResponseCallback[SchemaImportSshPublicKeyResponse],
-    callback: BodyResponseCallback[SchemaImportSshPublicKeyResponse]
+    options: BodyResponseCallback[Readable | SchemaImportSshPublicKeyResponse],
+    callback: BodyResponseCallback[Readable | SchemaImportSshPublicKeyResponse]
   ): Unit = js.native
   def importSshPublicKey(params: ParamsResourceUsersImportsshpublickey, options: MethodOptions): GaxiosPromise[SchemaImportSshPublicKeyResponse] = js.native
   def importSshPublicKey(
     params: ParamsResourceUsersImportsshpublickey,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaImportSshPublicKeyResponse]
+  ): Unit = js.native
+  /**
+    * Adds an SSH public key and returns the profile information. Default POSIX account information is set when no username and UID exist as part of the login profile.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/oslogin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const oslogin = google.oslogin('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await oslogin.users.importSshPublicKey({
+    *     // Required. The unique ID for the user in format `users/{user\}`.
+    *     parent: 'users/my-user',
+    *     // The project ID of the Google Cloud Platform project.
+    *     projectId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "expirationTimeUsec": "my_expirationTimeUsec",
+    *       //   "fingerprint": "my_fingerprint",
+    *       //   "key": "my_key",
+    *       //   "name": "my_name"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "details": "my_details",
+    *   //   "loginProfile": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def importSshPublicKey(params: ParamsResourceUsersImportsshpublickey, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def importSshPublicKey(
+    params: ParamsResourceUsersImportsshpublickey,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
   var projects: ResourceUsersProjects = js.native

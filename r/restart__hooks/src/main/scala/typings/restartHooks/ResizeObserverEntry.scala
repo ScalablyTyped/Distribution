@@ -12,7 +12,7 @@ trait ResizeObserverEntry
      with /**
   * @param target The Element whose size has changed.
   */
-Instantiable1[/* target */ Element, js.Any] {
+Instantiable1[/* target */ Element, Any] {
   
   /**
     * Element's content rect when ResizeObserverCallback is invoked.

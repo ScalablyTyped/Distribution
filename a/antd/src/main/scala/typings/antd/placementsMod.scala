@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.anon.AdjustXAdjustY
+import typings.antd.anon.AdjustX
 import typings.antd.antdNumbers.`0`
 import typings.antd.antdNumbers.`1`
 import typings.rcTrigger.interfaceMod.BuildInPlacements
@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object placementsMod {
   
-  @JSImport("antd/lib/tooltip/placements", JSImport.Namespace)
+  @JSImport("antd/lib/_util/placements", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def default(config: PlacementsConfig): BuildInPlacements = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[BuildInPlacements]
   
-  inline def getOverflowOptions(): AdjustXAdjustY = ^.asInstanceOf[js.Dynamic].applyDynamic("getOverflowOptions")().asInstanceOf[AdjustXAdjustY]
-  inline def getOverflowOptions(autoAdjustOverflow: Boolean): AdjustXAdjustY = ^.asInstanceOf[js.Dynamic].applyDynamic("getOverflowOptions")(autoAdjustOverflow.asInstanceOf[js.Any]).asInstanceOf[AdjustXAdjustY]
-  inline def getOverflowOptions(autoAdjustOverflow: AdjustOverflow): AdjustXAdjustY = ^.asInstanceOf[js.Dynamic].applyDynamic("getOverflowOptions")(autoAdjustOverflow.asInstanceOf[js.Any]).asInstanceOf[AdjustXAdjustY]
+  inline def getOverflowOptions(): AdjustX = ^.asInstanceOf[js.Dynamic].applyDynamic("getOverflowOptions")().asInstanceOf[AdjustX]
+  inline def getOverflowOptions(autoAdjustOverflow: Boolean): AdjustX = ^.asInstanceOf[js.Dynamic].applyDynamic("getOverflowOptions")(autoAdjustOverflow.asInstanceOf[js.Any]).asInstanceOf[AdjustX]
+  inline def getOverflowOptions(autoAdjustOverflow: AdjustOverflow): AdjustX = ^.asInstanceOf[js.Dynamic].applyDynamic("getOverflowOptions")(autoAdjustOverflow.asInstanceOf[js.Any]).asInstanceOf[AdjustX]
   
   trait AdjustOverflow extends StObject {
     

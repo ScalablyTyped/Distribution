@@ -4,23 +4,23 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Value[TContext] extends StObject {
+trait Value[TC] extends StObject {
   
-  var context: TContext
+  var context: TC
   
-  var value: js.Any
+  var value: Any
 }
 object Value {
   
-  inline def apply[TContext](context: TContext, value: js.Any): Value[TContext] = {
+  inline def apply[TC](context: TC, value: Any): Value[TC] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Value[TContext]]
+    __obj.asInstanceOf[Value[TC]]
   }
   
-  extension [Self <: Value[?], TContext](x: Self & Value[TContext]) {
+  extension [Self <: Value[?], TC](x: Self & Value[TC]) {
     
-    inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: TC): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

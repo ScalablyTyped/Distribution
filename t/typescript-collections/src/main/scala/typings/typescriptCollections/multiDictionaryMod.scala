@@ -44,7 +44,7 @@ object multiDictionaryMod {
     *
     * @param allowDuplicateValues
     */
-  class default[K, V] ()
+  open class default[K, V] ()
     extends StObject
        with MultiDictionary[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
@@ -67,7 +67,7 @@ object multiDictionaryMod {
   @js.native
   trait MultiDictionary[K, V] extends StObject {
     
-    /* private */ var allowDuplicate: js.Any = js.native
+    /* private */ var allowDuplicate: Any = js.native
     
     /**
       * Removes all mappings from this dictionary.
@@ -83,9 +83,9 @@ object multiDictionaryMod {
       */
     def containsKey(key: K): Boolean = js.native
     
-    /* private */ var dict: js.Any = js.native
+    /* private */ var dict: Any = js.native
     
-    /* private */ var equalsF: js.Any = js.native
+    /* private */ var equalsF: Any = js.native
     
     /**
       * Returns an array holding the values to which this dictionary maps

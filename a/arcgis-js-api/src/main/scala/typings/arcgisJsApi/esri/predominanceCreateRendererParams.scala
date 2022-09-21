@@ -18,14 +18,9 @@ trait predominanceCreateRendererParams
      with Object {
   
   /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#createRenderer)
-    */
-  var basemap: js.UndefOr[String | Basemap] = js.undefined
-  
-  /**
     * **This option only applies to generating renderers for mesh SceneLayers**.
+    *
+    * @default replace
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#createRenderer)
     */
@@ -34,16 +29,11 @@ trait predominanceCreateRendererParams
   /**
     * Enables the `defaultSymbol` on the renderer and assigns it to features with no value.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#createRenderer)
-    */
-  var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Indicates whether to add edges to the output renderer.
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#createRenderer)
     */
-  var edgesType: js.UndefOr[String] = js.undefined
+  var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A set of competing numeric fields used as the basis of the predominance visualization.
@@ -71,7 +61,7 @@ trait predominanceCreateRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#createRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
   
   /**
     * Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
@@ -111,6 +101,8 @@ trait predominanceCreateRendererParams
   /**
     * Indicates how values should be sorted in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
+    * @default count
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#createRenderer)
     */
   var sortBy: js.UndefOr[count | value] = js.undefined
@@ -124,6 +116,8 @@ trait predominanceCreateRendererParams
   
   /**
     * The type of symbol to generate.
+    *
+    * @default 2d
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#createRenderer)
     */
@@ -142,7 +136,7 @@ object predominanceCreateRendererParams {
     constructor: js.Function,
     fields: js.Array[predominanceCreateRendererParamsFields],
     hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
     propertyIsEnumerable: PropertyKey => Boolean,
     view: View
   ): predominanceCreateRendererParams = {
@@ -152,10 +146,6 @@ object predominanceCreateRendererParams {
   
   extension [Self <: predominanceCreateRendererParams](x: Self) {
     
-    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
-    
-    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
-    
     inline def setColorMixMode(value: String): Self = StObject.set(x, "colorMixMode", value.asInstanceOf[js.Any])
     
     inline def setColorMixModeUndefined: Self = StObject.set(x, "colorMixMode", js.undefined)
@@ -164,13 +154,9 @@ object predominanceCreateRendererParams {
     
     inline def setDefaultSymbolEnabledUndefined: Self = StObject.set(x, "defaultSymbolEnabled", js.undefined)
     
-    inline def setEdgesType(value: String): Self = StObject.set(x, "edgesType", value.asInstanceOf[js.Any])
-    
-    inline def setEdgesTypeUndefined: Self = StObject.set(x, "edgesType", js.undefined)
-    
     inline def setFields(value: js.Array[predominanceCreateRendererParamsFields]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: predominanceCreateRendererParamsFields*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: predominanceCreateRendererParamsFields*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setIncludeOpacityVariable(value: Boolean): Self = StObject.set(x, "includeOpacityVariable", value.asInstanceOf[js.Any])
     
@@ -180,7 +166,7 @@ object predominanceCreateRendererParams {
     
     inline def setIncludeSizeVariableUndefined: Self = StObject.set(x, "includeSizeVariable", js.undefined)
     
-    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLegendOptions(value: predominanceCreateRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     

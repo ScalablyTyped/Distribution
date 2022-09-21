@@ -7,14 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `7` extends StObject {
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-sankey.data.emphasis.itemStyle
+    * Specify the left-top point.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.data.0
     */
-  var itemStyle: js.UndefOr[BorderType] = js.undefined
+  var `0`: js.UndefOr[Value] = js.undefined
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-sankey.data.emphasis.label
+    * Specify the right-bottom point.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-pie.markArea.data.1
     */
-  var label: js.UndefOr[Distance] = js.undefined
+  var `1`: js.UndefOr[Value] = js.undefined
 }
 object `7` {
   
@@ -25,12 +31,12 @@ object `7` {
   
   extension [Self <: `7`](x: Self) {
     
-    inline def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def set0(value: Value): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
-    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    inline def set0Undefined: Self = StObject.set(x, "0", js.undefined)
     
-    inline def setLabel(value: Distance): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def set1(value: Value): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
-    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def set1Undefined: Self = StObject.set(x, "1", js.undefined)
   }
 }

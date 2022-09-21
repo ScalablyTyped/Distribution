@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mjml-react", "MjmlBreakpoint")
 @js.native
-class MjmlBreakpoint protected ()
-  extends Component[MjmlBreakpointProps, js.Object, js.Any] {
+open class MjmlBreakpoint protected ()
+  extends Component[MjmlBreakpointProps, js.Object, Any] {
   def this(props: MjmlBreakpointProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MjmlBreakpointProps, context: js.Any) = this()
+  def this(props: MjmlBreakpointProps, context: Any) = this()
 }

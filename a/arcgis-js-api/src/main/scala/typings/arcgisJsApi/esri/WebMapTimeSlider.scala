@@ -15,51 +15,73 @@ trait WebMapTimeSlider
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
     */
-  var currentTimeExtent: js.UndefOr[TimeExtent] = js.undefined
+  var currentTimeExtent: TimeExtent
   
   /**
     * The temporal extent for the entire slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
     */
-  var fullTimeExtent: js.UndefOr[TimeExtent] = js.undefined
+  var fullTimeExtent: TimeExtent
+  
+  /**
+    * When `true`, the time slider will play its animation in a loop.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
+    */
+  var loop: Boolean
   
   /**
     * The number of stops.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
     */
-  var numStops: js.UndefOr[Double] = js.undefined
+  var numStops: Double
   
   /**
     * The thumb count.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
     */
-  var numThumbs: js.UndefOr[Double] = js.undefined
+  var numThumbs: Double
   
   /**
     * The time rate in milliseconds between animation steps.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
     */
-  var stopDelay: js.UndefOr[Double] = js.undefined
+  var stopDelay: Double
   
   /**
     * Defines regularly spaced stops on the time slider from a [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html) object.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
     */
-  var stopInterval: js.UndefOr[TimeInterval] = js.undefined
+  var stopInterval: TimeInterval
+  
+  /**
+    * An array of dates for the time slider widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
+    */
+  var stops: js.Array[js.Date]
 }
 object WebMapTimeSlider {
   
   inline def apply(
     constructor: js.Function,
+    currentTimeExtent: TimeExtent,
+    fullTimeExtent: TimeExtent,
     hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean
+    loop: Boolean,
+    numStops: Double,
+    numThumbs: Double,
+    propertyIsEnumerable: PropertyKey => Boolean,
+    stopDelay: Double,
+    stopInterval: TimeInterval,
+    stops: js.Array[js.Date]
   ): WebMapTimeSlider = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], currentTimeExtent = currentTimeExtent.asInstanceOf[js.Any], fullTimeExtent = fullTimeExtent.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), loop = loop.asInstanceOf[js.Any], numStops = numStops.asInstanceOf[js.Any], numThumbs = numThumbs.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stopDelay = stopDelay.asInstanceOf[js.Any], stopInterval = stopInterval.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebMapTimeSlider]
   }
   
@@ -67,26 +89,20 @@ object WebMapTimeSlider {
     
     inline def setCurrentTimeExtent(value: TimeExtent): Self = StObject.set(x, "currentTimeExtent", value.asInstanceOf[js.Any])
     
-    inline def setCurrentTimeExtentUndefined: Self = StObject.set(x, "currentTimeExtent", js.undefined)
-    
     inline def setFullTimeExtent(value: TimeExtent): Self = StObject.set(x, "fullTimeExtent", value.asInstanceOf[js.Any])
     
-    inline def setFullTimeExtentUndefined: Self = StObject.set(x, "fullTimeExtent", js.undefined)
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     inline def setNumStops(value: Double): Self = StObject.set(x, "numStops", value.asInstanceOf[js.Any])
     
-    inline def setNumStopsUndefined: Self = StObject.set(x, "numStops", js.undefined)
-    
     inline def setNumThumbs(value: Double): Self = StObject.set(x, "numThumbs", value.asInstanceOf[js.Any])
-    
-    inline def setNumThumbsUndefined: Self = StObject.set(x, "numThumbs", js.undefined)
     
     inline def setStopDelay(value: Double): Self = StObject.set(x, "stopDelay", value.asInstanceOf[js.Any])
     
-    inline def setStopDelayUndefined: Self = StObject.set(x, "stopDelay", js.undefined)
-    
     inline def setStopInterval(value: TimeInterval): Self = StObject.set(x, "stopInterval", value.asInstanceOf[js.Any])
     
-    inline def setStopIntervalUndefined: Self = StObject.set(x, "stopInterval", js.undefined)
+    inline def setStops(value: js.Array[js.Date]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    
+    inline def setStopsVarargs(value: js.Date*): Self = StObject.set(x, "stops", js.Array(value*))
   }
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.OLEFormat")
 @js.native
-/* private */ class OLEFormat ()
+/* private */ open class OLEFormat ()
   extends StObject
      with typings.activexExcel.Excel.OLEFormat

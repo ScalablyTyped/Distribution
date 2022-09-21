@@ -10,25 +10,25 @@ object iteratorMod {
   
   @JSImport("@devexpress/utils/lib/intervals/sparse/iterator", "SparseIntervalsIterator")
   @js.native
-  class SparseIntervalsIterator[T /* <: ConstInterval */] protected () extends StObject {
+  open class SparseIntervalsIterator[T /* <: ConstInterval */] protected () extends StObject {
     def this(sparseIntervals: SparseIntervals[T]) = this()
     
-    /* private */ var curr: js.Any = js.native
+    /* private */ var curr: Any = js.native
     
     var index: Double = js.native
     
     /* protected */ def initObject(): Unit = js.native
     
-    /* private */ var intervalIndex: js.Any = js.native
+    /* private */ var intervalIndex: Any = js.native
     
-    val isStarted: Boolean = js.native
+    def isStarted: Boolean = js.native
     
     def moveNext(): Boolean = js.native
     
     def movePrev(): Boolean = js.native
     
-    /* private */ var posInInterval: js.Any = js.native
+    /* private */ var posInInterval: Any = js.native
     
-    /* private */ var sparseIntervals: js.Any = js.native
+    /* private */ var sparseIntervals: Any = js.native
   }
 }

@@ -41,14 +41,14 @@ object XLibraryContainer {
     acquire: () => Unit,
     createLibrary: String => XNameContainer,
     createLibraryLink: (String, String, Boolean) => XNameAccess,
-    getByName: String => js.Any,
+    getByName: String => Any,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
     isLibraryLoaded: String => Boolean,
     loadLibrary: String => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeLibrary: String => Unit
   ): XLibraryContainer = {

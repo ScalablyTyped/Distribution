@@ -6,20 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait KeepRevisionForever extends StObject {
   
+  /** A comma-separated list of parent IDs to add. */
+  var addParents: js.UndefOr[String] = js.undefined
+  
   /** Data format for the response. */
   var alt: js.UndefOr[String] = js.undefined
   
-  /** Deprecated. Creating files in multiple folders is no longer supported. */
+  /** Deprecated. Adding files to multiple folders is no longer supported. Use shortcuts instead. */
   var enforceSingleParent: js.UndefOr[Boolean] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /**
-    * Whether to ignore the domain's default visibility settings for the created file. Domain administrators can choose to make all uploaded files visible to the domain by default;
-    * this parameter bypasses that behavior for the request. Permissions are still inherited from parent folders.
-    */
-  var ignoreDefaultVisibility: js.UndefOr[Boolean] = js.undefined
+  /** The ID of the file. */
+  var fileId: String
+  
+  /** A comma-separated list of IDs of labels to include in the labelInfo part of the response. */
+  var includeLabels: js.UndefOr[String] = js.undefined
   
   /** Specifies which additional view's permissions to include in the response. Only 'published' is supported. */
   var includePermissionsForView: js.UndefOr[String] = js.undefined
@@ -45,6 +48,9 @@ trait KeepRevisionForever extends StObject {
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** A comma-separated list of parent IDs to remove. */
+  var removeParents: js.UndefOr[String] = js.undefined
+  
   /** Whether the requesting application supports both My Drives and shared drives. */
   var supportsAllDrives: js.UndefOr[Boolean] = js.undefined
   
@@ -59,12 +65,16 @@ trait KeepRevisionForever extends StObject {
 }
 object KeepRevisionForever {
   
-  inline def apply(): KeepRevisionForever = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(fileId: String): KeepRevisionForever = {
+    val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeepRevisionForever]
   }
   
   extension [Self <: KeepRevisionForever](x: Self) {
+    
+    inline def setAddParents(value: String): Self = StObject.set(x, "addParents", value.asInstanceOf[js.Any])
+    
+    inline def setAddParentsUndefined: Self = StObject.set(x, "addParents", js.undefined)
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -78,9 +88,11 @@ object KeepRevisionForever {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setIgnoreDefaultVisibility(value: Boolean): Self = StObject.set(x, "ignoreDefaultVisibility", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    inline def setIgnoreDefaultVisibilityUndefined: Self = StObject.set(x, "ignoreDefaultVisibility", js.undefined)
+    inline def setIncludeLabels(value: String): Self = StObject.set(x, "includeLabels", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeLabelsUndefined: Self = StObject.set(x, "includeLabels", js.undefined)
     
     inline def setIncludePermissionsForView(value: String): Self = StObject.set(x, "includePermissionsForView", value.asInstanceOf[js.Any])
     
@@ -109,6 +121,10 @@ object KeepRevisionForever {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setRemoveParents(value: String): Self = StObject.set(x, "removeParents", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveParentsUndefined: Self = StObject.set(x, "removeParents", js.undefined)
     
     inline def setSupportsAllDrives(value: Boolean): Self = StObject.set(x, "supportsAllDrives", value.asInstanceOf[js.Any])
     

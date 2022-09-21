@@ -11,54 +11,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gl-react", "Bus")
 @js.native
-class Bus protected ()
-  extends Component[BusProps, js.Object, js.Any] {
+open class Bus protected ()
+  extends Component[BusProps, js.Object, Any] {
   def this(props: BusProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: BusProps, context: js.Any) = this()
+  def this(props: BusProps, context: Any) = this()
   
-  def capture(): js.Array[js.Any] = js.native
-  def capture(x: Double): js.Array[js.Any] = js.native
-  def capture(x: Double, y: Double): js.Array[js.Any] = js.native
-  def capture(x: Double, y: Double, w: Double): js.Array[js.Any] = js.native
-  def capture(x: Double, y: Double, w: Double, h: Double): js.Array[js.Any] = js.native
-  def capture(x: Double, y: Double, w: Unit, h: Double): js.Array[js.Any] = js.native
-  def capture(x: Double, y: Unit, w: Double): js.Array[js.Any] = js.native
-  def capture(x: Double, y: Unit, w: Double, h: Double): js.Array[js.Any] = js.native
-  def capture(x: Double, y: Unit, w: Unit, h: Double): js.Array[js.Any] = js.native
-  def capture(x: Unit, y: Double): js.Array[js.Any] = js.native
-  def capture(x: Unit, y: Double, w: Double): js.Array[js.Any] = js.native
-  def capture(x: Unit, y: Double, w: Double, h: Double): js.Array[js.Any] = js.native
-  def capture(x: Unit, y: Double, w: Unit, h: Double): js.Array[js.Any] = js.native
-  def capture(x: Unit, y: Unit, w: Double): js.Array[js.Any] = js.native
-  def capture(x: Unit, y: Unit, w: Double, h: Double): js.Array[js.Any] = js.native
-  def capture(x: Unit, y: Unit, w: Unit, h: Double): js.Array[js.Any] = js.native
+  def capture(): js.Array[Any] = js.native
+  def capture(x: Double): js.Array[Any] = js.native
+  def capture(x: Double, y: Double): js.Array[Any] = js.native
+  def capture(x: Double, y: Double, w: Double): js.Array[Any] = js.native
+  def capture(x: Double, y: Double, w: Double, h: Double): js.Array[Any] = js.native
+  def capture(x: Double, y: Double, w: Unit, h: Double): js.Array[Any] = js.native
+  def capture(x: Double, y: Unit, w: Double): js.Array[Any] = js.native
+  def capture(x: Double, y: Unit, w: Double, h: Double): js.Array[Any] = js.native
+  def capture(x: Double, y: Unit, w: Unit, h: Double): js.Array[Any] = js.native
+  def capture(x: Unit, y: Double): js.Array[Any] = js.native
+  def capture(x: Unit, y: Double, w: Double): js.Array[Any] = js.native
+  def capture(x: Unit, y: Double, w: Double, h: Double): js.Array[Any] = js.native
+  def capture(x: Unit, y: Double, w: Unit, h: Double): js.Array[Any] = js.native
+  def capture(x: Unit, y: Unit, w: Double): js.Array[Any] = js.native
+  def capture(x: Unit, y: Unit, w: Double, h: Double): js.Array[Any] = js.native
+  def capture(x: Unit, y: Unit, w: Unit, h: Double): js.Array[Any] = js.native
   
   @JSName("context")
   var context_Bus: GlParent = js.native
   
-  var dependents: js.Array[Node | Surface[js.Any]] = js.native
+  var dependents: js.Array[Node | Surface[Any]] = js.native
   
   def getChildContext(): GlParentBus = js.native
   
   def getGLName(): String = js.native
   
-  def getGLRenderableContent(): js.Any = js.native
+  def getGLRenderableContent(): Any = js.native
   
   def getGLRenderableNode(): Node = js.native
   
   def getGLShortName(): String = js.native
   
-  var glBusRootNode: js.Any = js.native
+  var glBusRootNode: Any = js.native
   
   var glNode: js.UndefOr[Node] = js.native
   
   var id: Double = js.native
   
-  def onRef(ref: js.Any): Unit = js.native
+  def onRef(ref: Any): Unit = js.native
   
   def redraw(): Unit = js.native
 }

@@ -19,7 +19,7 @@ trait SmartTag extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Properties(Index: String): CustomProperty
   def Properties(Index: Double): CustomProperty
@@ -32,7 +32,7 @@ trait SmartTag extends StObject {
   @JSName("Range")
   val Range_Original: Range
   
-  def SmartTagActions(Index: js.Any): SmartTagAction
+  def SmartTagActions(Index: Any): SmartTagAction
   @JSName("SmartTagActions")
   val SmartTagActions_Original: SmartTagActions
   
@@ -49,7 +49,7 @@ object SmartTag {
     DownloadURL: String,
     ExcelDotSmartTag_typekey: SmartTag,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Properties: CustomProperties,
     Range: Range,
     SmartTagActions: SmartTagActions,
@@ -75,7 +75,7 @@ object SmartTag {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setProperties(value: CustomProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     

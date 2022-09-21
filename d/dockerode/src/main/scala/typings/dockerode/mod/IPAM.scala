@@ -27,7 +27,7 @@ object IPAM {
     
     inline def setConfigUndefined: Self = StObject.set(x, "Config", js.undefined)
     
-    inline def setConfigVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "Config", js.Array(value :_*))
+    inline def setConfigVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "Config", js.Array(value*))
     
     inline def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     

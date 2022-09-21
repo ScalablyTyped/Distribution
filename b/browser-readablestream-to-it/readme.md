@@ -1,7 +1,7 @@
 
 # Scala.js typings for browser-readablestream-to-it
 
-Typings are for version 1.0.1
+Typings are for version 1.0.3
 
 ## Library description:
 Turns a browser readble stream into an async iterator
@@ -10,13 +10,13 @@ Turns a browser readble stream into an async iterator
 | ------------------ | :-------------: |
 | Full name          | browser-readablestream-to-it |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 277825 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 307275.3333333333 |
+| # stars            | 200.0 |
 
 ## Links
-- [Homepage](https://github.com/achingbrain/it#readme)
+- [Homepage](https://github.com/achingbrain/it/tree/master/packages/browser-readablestream-to-it#readme)
 - [Bugs](https://github.com/achingbrain/it/issues)
 - [Repository](https://github.com/achingbrain/it)
 - [Npm](https://www.npmjs.com/package/browser-readablestream-to-it)

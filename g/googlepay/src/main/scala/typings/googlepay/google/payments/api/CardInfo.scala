@@ -10,6 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait CardInfo extends StObject {
   
+  /*
+    *  AssuranceDetails
+    *
+    *  This object provides information about what validation
+    *  has been performed on the returned payment credentials
+    *  so that appropriate instrument risk checks can be applied.
+    *
+    *  To receive this object, set assuranceDetailsRequired: true inside CardParameters
+    */
+  var assuranceDetails: js.UndefOr[AssuranceDetails] = js.undefined
+  
   /**
     * The billing address associated with the card.
     *
@@ -54,6 +65,10 @@ object CardInfo {
   }
   
   extension [Self <: CardInfo](x: Self) {
+    
+    inline def setAssuranceDetails(value: AssuranceDetails): Self = StObject.set(x, "assuranceDetails", value.asInstanceOf[js.Any])
+    
+    inline def setAssuranceDetailsUndefined: Self = StObject.set(x, "assuranceDetails", js.undefined)
     
     inline def setBillingAddress(value: Address): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     

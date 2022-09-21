@@ -10,10 +10,10 @@ A lightweight Promise-returning helper for loading the Google Maps JavaScript AP
 | ------------------ | :-------------: |
 | Full name          | load-google-maps-api |
 | Keywords           | api, google, google-maps, google-maps-api, loader, maps, promise |
-| # releases         | 5 |
-| # dependents       | 21 |
-| # downloads        | 1148289 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 308177.0 |
+| # stars            | 169.0 |
 
 ## Links
 - [Homepage](https://github.com/yuanqing/load-google-maps-api#readme)

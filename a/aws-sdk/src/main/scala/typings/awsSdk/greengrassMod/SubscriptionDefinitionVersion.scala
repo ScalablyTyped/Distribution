@@ -24,6 +24,6 @@ object SubscriptionDefinitionVersion {
     
     inline def setSubscriptionsUndefined: Self = StObject.set(x, "Subscriptions", js.undefined)
     
-    inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "Subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "Subscriptions", js.Array(value*))
   }
 }

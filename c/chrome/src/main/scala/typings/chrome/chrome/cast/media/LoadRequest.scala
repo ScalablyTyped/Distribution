@@ -15,6 +15,8 @@ trait LoadRequest extends StObject {
   var customData: js.Object
   
   var media: MediaInfo
+  
+  var playbackRate: js.UndefOr[Double] = js.undefined
 }
 object LoadRequest {
   
@@ -33,7 +35,7 @@ object LoadRequest {
     
     inline def setActiveTrackIds(value: js.Array[Double]): Self = StObject.set(x, "activeTrackIds", value.asInstanceOf[js.Any])
     
-    inline def setActiveTrackIdsVarargs(value: Double*): Self = StObject.set(x, "activeTrackIds", js.Array(value :_*))
+    inline def setActiveTrackIdsVarargs(value: Double*): Self = StObject.set(x, "activeTrackIds", js.Array(value*))
     
     inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
@@ -42,5 +44,9 @@ object LoadRequest {
     inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     inline def setMedia(value: MediaInfo): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    
+    inline def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
+    
+    inline def setPlaybackRateUndefined: Self = StObject.set(x, "playbackRate", js.undefined)
   }
 }

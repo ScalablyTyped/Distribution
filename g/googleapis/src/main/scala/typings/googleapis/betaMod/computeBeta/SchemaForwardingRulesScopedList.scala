@@ -13,10 +13,9 @@ trait SchemaForwardingRulesScopedList extends StObject {
   var forwardingRules: js.UndefOr[js.Array[SchemaForwardingRule]] = js.undefined
   
   /**
-    * Informational warning which replaces the list of forwarding rules when
-    * the list is empty.
+    * Informational warning which replaces the list of forwarding rules when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaForwardingRulesScopedList {
   
@@ -31,9 +30,11 @@ object SchemaForwardingRulesScopedList {
     
     inline def setForwardingRulesUndefined: Self = StObject.set(x, "forwardingRules", js.undefined)
     
-    inline def setForwardingRulesVarargs(value: SchemaForwardingRule*): Self = StObject.set(x, "forwardingRules", js.Array(value :_*))
+    inline def setForwardingRulesVarargs(value: SchemaForwardingRule*): Self = StObject.set(x, "forwardingRules", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

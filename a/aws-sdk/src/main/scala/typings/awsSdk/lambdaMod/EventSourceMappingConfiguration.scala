@@ -7,17 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventSourceMappingConfiguration extends StObject {
   
   /**
-    * The maximum number of items to retrieve in a single batch.
+    * Specific configuration settings for an Amazon Managed Streaming for Apache Kafka (Amazon MSK) event source.
+    */
+  var AmazonManagedKafkaEventSourceConfig: js.UndefOr[typings.awsSdk.lambdaMod.AmazonManagedKafkaEventSourceConfig] = js.undefined
+  
+  /**
+    * The maximum number of records in each batch that Lambda pulls from your stream or queue and sends to your function. Lambda passes all of the records in the batch to the function in a single call, up to the payload limit for synchronous invocation (6 MB). Default value: Varies by service. For Amazon SQS, the default is 10. For all other services, the default is 100. Related setting: When you set BatchSize to a value greater than 10, you must set MaximumBatchingWindowInSeconds to at least 1.
     */
   var BatchSize: js.UndefOr[typings.awsSdk.lambdaMod.BatchSize] = js.undefined
   
   /**
-    * (Streams) If the function returns an error, split the batch in two and retry. The default value is false.
+    * (Streams only) If the function returns an error, split the batch in two and retry. The default value is false.
     */
   var BisectBatchOnFunctionError: js.UndefOr[typings.awsSdk.lambdaMod.BisectBatchOnFunctionError] = js.undefined
   
   /**
-    * (Streams) An Amazon SQS queue or Amazon SNS topic destination for discarded records.
+    * (Streams only) An Amazon SQS queue or Amazon SNS topic destination for discarded records.
     */
   var DestinationConfig: js.UndefOr[typings.awsSdk.lambdaMod.DestinationConfig] = js.undefined
   
@@ -27,59 +32,79 @@ trait EventSourceMappingConfiguration extends StObject {
   var EventSourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
+    * (Streams and Amazon SQS) An object that defines the filter criteria that determine whether Lambda should process an event. For more information, see Lambda event filtering.
+    */
+  var FilterCriteria: js.UndefOr[typings.awsSdk.lambdaMod.FilterCriteria] = js.undefined
+  
+  /**
     * The ARN of the Lambda function.
     */
   var FunctionArn: js.UndefOr[typings.awsSdk.lambdaMod.FunctionArn] = js.undefined
   
   /**
-    * The date that the event source mapping was last updated, or its state changed.
+    * (Streams and Amazon SQS) A list of current response type enums applied to the event source mapping.
     */
-  var LastModified: js.UndefOr[Date] = js.undefined
+  var FunctionResponseTypes: js.UndefOr[FunctionResponseTypeList] = js.undefined
   
   /**
-    * The result of the last AWS Lambda invocation of your Lambda function.
+    * The date that the event source mapping was last updated or that its state changed.
+    */
+  var LastModified: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The result of the last Lambda invocation of your function.
     */
   var LastProcessingResult: js.UndefOr[String] = js.undefined
   
   /**
-    * (Streams) The maximum amount of time to gather records before invoking the function, in seconds. The default value is zero.
+    * (Streams and Amazon SQS standard queues) The maximum amount of time, in seconds, that Lambda spends gathering records before invoking the function. Default: 0 Related setting: When you set BatchSize to a value greater than 10, you must set MaximumBatchingWindowInSeconds to at least 1.
     */
   var MaximumBatchingWindowInSeconds: js.UndefOr[typings.awsSdk.lambdaMod.MaximumBatchingWindowInSeconds] = js.undefined
   
   /**
-    * (Streams) Discard records older than the specified age. The default value is infinite (-1). When set to infinite (-1), failed records are retried until the record expires.
+    * (Streams only) Discard records older than the specified age. The default value is -1, which sets the maximum age to infinite. When the value is set to infinite, Lambda never discards old records. 
     */
   var MaximumRecordAgeInSeconds: js.UndefOr[typings.awsSdk.lambdaMod.MaximumRecordAgeInSeconds] = js.undefined
   
   /**
-    * (Streams) Discard records after the specified number of retries. The default value is infinite (-1). When set to infinite (-1), failed records are retried until the record expires.
+    * (Streams only) Discard records after the specified number of retries. The default value is -1, which sets the maximum number of retries to infinite. When MaximumRetryAttempts is infinite, Lambda retries failed records until the record expires in the event source.
     */
   var MaximumRetryAttempts: js.UndefOr[MaximumRetryAttemptsEventSourceMapping] = js.undefined
   
   /**
-    * (Streams) The number of batches to process from each shard concurrently. The default value is 1.
+    * (Streams only) The number of batches to process concurrently from each shard. The default value is 1.
     */
   var ParallelizationFactor: js.UndefOr[typings.awsSdk.lambdaMod.ParallelizationFactor] = js.undefined
   
   /**
-    *  (MQ) The name of the Amazon MQ broker destination queue to consume. 
+    *  (Amazon MQ) The name of the Amazon MQ broker destination queue to consume.
     */
   var Queues: js.UndefOr[typings.awsSdk.lambdaMod.Queues] = js.undefined
   
   /**
-    *  (MQ) The Secrets Manager secret that stores your broker credentials. To store your secret, use the following format:  { "username": "your username", "password": "your password" }  To reference the secret, use the following format: [ { "Type": "BASIC_AUTH", "URI": "secretARN" } ]  The value of Type is always BASIC_AUTH. To encrypt the secret, you can use customer or service managed keys. When using a customer managed KMS key, the Lambda execution role requires kms:Decrypt permissions.
+    * The self-managed Apache Kafka cluster for your event source.
+    */
+  var SelfManagedEventSource: js.UndefOr[typings.awsSdk.lambdaMod.SelfManagedEventSource] = js.undefined
+  
+  /**
+    * Specific configuration settings for a self-managed Apache Kafka event source.
+    */
+  var SelfManagedKafkaEventSourceConfig: js.UndefOr[typings.awsSdk.lambdaMod.SelfManagedKafkaEventSourceConfig] = js.undefined
+  
+  /**
+    * An array of the authentication protocol, VPC components, or virtual host to secure and define your event source.
     */
   var SourceAccessConfigurations: js.UndefOr[typings.awsSdk.lambdaMod.SourceAccessConfigurations] = js.undefined
   
   /**
-    * The position in a stream from which to start reading. Required for Amazon Kinesis, Amazon DynamoDB, and Amazon MSK Streams sources. AT_TIMESTAMP is only supported for Amazon Kinesis streams.
+    * The position in a stream from which to start reading. Required for Amazon Kinesis, Amazon DynamoDB, and Amazon MSK stream sources. AT_TIMESTAMP is supported only for Amazon Kinesis streams.
     */
   var StartingPosition: js.UndefOr[EventSourcePosition] = js.undefined
   
   /**
     * With StartingPosition set to AT_TIMESTAMP, the time from which to start reading.
     */
-  var StartingPositionTimestamp: js.UndefOr[Date] = js.undefined
+  var StartingPositionTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state of the event source mapping. It can be one of the following: Creating, Enabling, Enabled, Disabling, Disabled, Updating, or Deleting.
@@ -87,14 +112,19 @@ trait EventSourceMappingConfiguration extends StObject {
   var State: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether the last change to the event source mapping was made by a user, or by the Lambda service.
+    * Indicates whether a user or Lambda made the last change to the event source mapping.
     */
   var StateTransitionReason: js.UndefOr[String] = js.undefined
   
   /**
-    *  (MSK) The name of the Kafka topic to consume. 
+    * The name of the Kafka topic.
     */
   var Topics: js.UndefOr[typings.awsSdk.lambdaMod.Topics] = js.undefined
+  
+  /**
+    * (Streams only) The duration in seconds of a processing window. The range is 1–900 seconds.
+    */
+  var TumblingWindowInSeconds: js.UndefOr[typings.awsSdk.lambdaMod.TumblingWindowInSeconds] = js.undefined
   
   /**
     * The identifier of the event source mapping.
@@ -109,6 +139,10 @@ object EventSourceMappingConfiguration {
   }
   
   extension [Self <: EventSourceMappingConfiguration](x: Self) {
+    
+    inline def setAmazonManagedKafkaEventSourceConfig(value: AmazonManagedKafkaEventSourceConfig): Self = StObject.set(x, "AmazonManagedKafkaEventSourceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setAmazonManagedKafkaEventSourceConfigUndefined: Self = StObject.set(x, "AmazonManagedKafkaEventSourceConfig", js.undefined)
     
     inline def setBatchSize(value: BatchSize): Self = StObject.set(x, "BatchSize", value.asInstanceOf[js.Any])
     
@@ -126,11 +160,21 @@ object EventSourceMappingConfiguration {
     
     inline def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
     
+    inline def setFilterCriteria(value: FilterCriteria): Self = StObject.set(x, "FilterCriteria", value.asInstanceOf[js.Any])
+    
+    inline def setFilterCriteriaUndefined: Self = StObject.set(x, "FilterCriteria", js.undefined)
+    
     inline def setFunctionArn(value: FunctionArn): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
     
     inline def setFunctionArnUndefined: Self = StObject.set(x, "FunctionArn", js.undefined)
     
-    inline def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setFunctionResponseTypes(value: FunctionResponseTypeList): Self = StObject.set(x, "FunctionResponseTypes", value.asInstanceOf[js.Any])
+    
+    inline def setFunctionResponseTypesUndefined: Self = StObject.set(x, "FunctionResponseTypes", js.undefined)
+    
+    inline def setFunctionResponseTypesVarargs(value: FunctionResponseType*): Self = StObject.set(x, "FunctionResponseTypes", js.Array(value*))
+    
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
@@ -158,17 +202,25 @@ object EventSourceMappingConfiguration {
     
     inline def setQueuesUndefined: Self = StObject.set(x, "Queues", js.undefined)
     
-    inline def setQueuesVarargs(value: Queue*): Self = StObject.set(x, "Queues", js.Array(value :_*))
+    inline def setQueuesVarargs(value: Queue*): Self = StObject.set(x, "Queues", js.Array(value*))
+    
+    inline def setSelfManagedEventSource(value: SelfManagedEventSource): Self = StObject.set(x, "SelfManagedEventSource", value.asInstanceOf[js.Any])
+    
+    inline def setSelfManagedEventSourceUndefined: Self = StObject.set(x, "SelfManagedEventSource", js.undefined)
+    
+    inline def setSelfManagedKafkaEventSourceConfig(value: SelfManagedKafkaEventSourceConfig): Self = StObject.set(x, "SelfManagedKafkaEventSourceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setSelfManagedKafkaEventSourceConfigUndefined: Self = StObject.set(x, "SelfManagedKafkaEventSourceConfig", js.undefined)
     
     inline def setSourceAccessConfigurations(value: SourceAccessConfigurations): Self = StObject.set(x, "SourceAccessConfigurations", value.asInstanceOf[js.Any])
     
     inline def setSourceAccessConfigurationsUndefined: Self = StObject.set(x, "SourceAccessConfigurations", js.undefined)
     
-    inline def setSourceAccessConfigurationsVarargs(value: SourceAccessConfiguration*): Self = StObject.set(x, "SourceAccessConfigurations", js.Array(value :_*))
+    inline def setSourceAccessConfigurationsVarargs(value: SourceAccessConfiguration*): Self = StObject.set(x, "SourceAccessConfigurations", js.Array(value*))
     
     inline def setStartingPosition(value: EventSourcePosition): Self = StObject.set(x, "StartingPosition", value.asInstanceOf[js.Any])
     
-    inline def setStartingPositionTimestamp(value: Date): Self = StObject.set(x, "StartingPositionTimestamp", value.asInstanceOf[js.Any])
+    inline def setStartingPositionTimestamp(value: js.Date): Self = StObject.set(x, "StartingPositionTimestamp", value.asInstanceOf[js.Any])
     
     inline def setStartingPositionTimestampUndefined: Self = StObject.set(x, "StartingPositionTimestamp", js.undefined)
     
@@ -186,7 +238,11 @@ object EventSourceMappingConfiguration {
     
     inline def setTopicsUndefined: Self = StObject.set(x, "Topics", js.undefined)
     
-    inline def setTopicsVarargs(value: Topic*): Self = StObject.set(x, "Topics", js.Array(value :_*))
+    inline def setTopicsVarargs(value: Topic*): Self = StObject.set(x, "Topics", js.Array(value*))
+    
+    inline def setTumblingWindowInSeconds(value: TumblingWindowInSeconds): Self = StObject.set(x, "TumblingWindowInSeconds", value.asInstanceOf[js.Any])
+    
+    inline def setTumblingWindowInSecondsUndefined: Self = StObject.set(x, "TumblingWindowInSeconds", js.undefined)
     
     inline def setUUID(value: String): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
     

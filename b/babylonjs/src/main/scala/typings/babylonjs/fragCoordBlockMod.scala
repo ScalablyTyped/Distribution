@@ -11,7 +11,7 @@ object fragCoordBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Fragment/fragCoordBlock", "FragCoordBlock")
   @js.native
-  class FragCoordBlock protected () extends NodeMaterialBlock {
+  open class FragCoordBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new FragCoordBlock
       * @param name defines the block name

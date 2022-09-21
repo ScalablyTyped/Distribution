@@ -18,17 +18,17 @@ trait XDocument extends StObject {
   
   val DataObjects: DataObjectsCollection
   
-  def Errors(Index: js.Any): Error
+  def Errors(Index: Any): Error
   @JSName("Errors")
   val Errors_Original: Errors
   
-  val Extension: js.Any
+  val Extension: Any
   
   def GetDOM(bstrName: String): IXMLDOMDocument
   
   def GetDataVariable(lVariableNumber: Double): String
   
-  def GetNamedNodeProperty(varMainDOMNode: js.Any, bstrPropertyName: String, bstrDefaultValue: String): String
+  def GetNamedNodeProperty(varMainDOMNode: Any, bstrPropertyName: String, bstrDefaultValue: String): String
   
   def ImportDOM(pxDoc: IXMLDOMDocument): Unit
   
@@ -55,7 +55,7 @@ trait XDocument extends StObject {
   
   def Query(): Unit
   
-  val QueryAdapter: js.Any
+  val QueryAdapter: Any
   
   var Role: String
   
@@ -93,10 +93,10 @@ object XDocument {
     DataAdapters: DataAdaptersCollection,
     DataObjects: DataObjectsCollection,
     Errors: Errors,
-    Extension: js.Any,
+    Extension: Any,
     GetDOM: String => IXMLDOMDocument,
     GetDataVariable: Double => String,
-    GetNamedNodeProperty: (js.Any, String, String) => String,
+    GetNamedNodeProperty: (Any, String, String) => String,
     ImportDOM: IXMLDOMDocument => Unit,
     ImportFile: String => Unit,
     InfoPathDotXDocument_typekey: XDocument,
@@ -109,7 +109,7 @@ object XDocument {
     Language: String,
     PrintOut: () => Unit,
     Query: () => Unit,
-    QueryAdapter: js.Any,
+    QueryAdapter: Any,
     Role: String,
     Save: () => Unit,
     SaveAs: String => Unit,
@@ -142,13 +142,13 @@ object XDocument {
     
     inline def setErrors(value: Errors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    inline def setExtension(value: js.Any): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: Any): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
     inline def setGetDOM(value: String => IXMLDOMDocument): Self = StObject.set(x, "GetDOM", js.Any.fromFunction1(value))
     
     inline def setGetDataVariable(value: Double => String): Self = StObject.set(x, "GetDataVariable", js.Any.fromFunction1(value))
     
-    inline def setGetNamedNodeProperty(value: (js.Any, String, String) => String): Self = StObject.set(x, "GetNamedNodeProperty", js.Any.fromFunction3(value))
+    inline def setGetNamedNodeProperty(value: (Any, String, String) => String): Self = StObject.set(x, "GetNamedNodeProperty", js.Any.fromFunction3(value))
     
     inline def setImportDOM(value: IXMLDOMDocument => Unit): Self = StObject.set(x, "ImportDOM", js.Any.fromFunction1(value))
     
@@ -174,7 +174,7 @@ object XDocument {
     
     inline def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
-    inline def setQueryAdapter(value: js.Any): Self = StObject.set(x, "QueryAdapter", value.asInstanceOf[js.Any])
+    inline def setQueryAdapter(value: Any): Self = StObject.set(x, "QueryAdapter", value.asInstanceOf[js.Any])
     
     inline def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     

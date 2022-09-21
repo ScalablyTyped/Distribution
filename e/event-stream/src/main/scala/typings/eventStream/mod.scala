@@ -3,7 +3,6 @@ package typings.eventStream
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Stream
 import typings.node.streamMod.Writable
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,12 +13,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def child(child_process: js.Any): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("child")(child_process.asInstanceOf[js.Any]).asInstanceOf[MapStream]
+  inline def child(child_process: Any): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("child")(child_process.asInstanceOf[js.Any]).asInstanceOf[MapStream]
   
   inline def concat(streamArray: js.Array[MapStream]): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(streamArray.asInstanceOf[js.Any]).asInstanceOf[MapStream]
-  inline def concat(stream: MapStream*): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(stream.asInstanceOf[js.Any]).asInstanceOf[MapStream]
+  inline def concat(stream: MapStream*): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(stream.asInstanceOf[Seq[js.Any]]*).asInstanceOf[MapStream]
   
   inline def duplex(writeStream: Writable, readStream: Readable): MapStream = (^.asInstanceOf[js.Dynamic].applyDynamic("duplex")(writeStream.asInstanceOf[js.Any], readStream.asInstanceOf[js.Any])).asInstanceOf[MapStream]
+  
+  inline def filterSync(syncFunction: js.Function1[/* value */ Any, Boolean]): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSync")(syncFunction.asInstanceOf[js.Any]).asInstanceOf[MapStream]
   
   inline def join(separator: String): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(separator.asInstanceOf[js.Any]).asInstanceOf[MapStream]
   
@@ -28,24 +29,26 @@ object mod {
   inline def mapSync(syncFunction: js.Function): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("mapSync")(syncFunction.asInstanceOf[js.Any]).asInstanceOf[MapStream]
   
   inline def merge(streamArray: js.Array[MapStream]): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(streamArray.asInstanceOf[js.Any]).asInstanceOf[MapStream]
-  inline def merge(stream: MapStream*): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(stream.asInstanceOf[js.Any]).asInstanceOf[MapStream]
+  inline def merge(stream: MapStream*): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(stream.asInstanceOf[Seq[js.Any]]*).asInstanceOf[MapStream]
   
-  inline def parse(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[js.Any]
+  inline def parse(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[Any]
   
   inline def pause(): MapStream | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")().asInstanceOf[MapStream | Unit]
   
-  inline def readArray(array: js.Array[js.Any]): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("readArray")(array.asInstanceOf[js.Any]).asInstanceOf[MapStream]
+  inline def pipeline(streams: MapStream*): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(streams.asInstanceOf[Seq[js.Any]]*).asInstanceOf[MapStream]
+  
+  inline def readArray(array: js.Array[Any]): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("readArray")(array.asInstanceOf[js.Any]).asInstanceOf[MapStream]
   
   inline def readable(asyncFunction: js.Function): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("readable")(asyncFunction.asInstanceOf[js.Any]).asInstanceOf[MapStream]
   
   inline def replace(from: String, to: String): MapStream = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[MapStream]
-  inline def replace(from: String, to: RegExp): MapStream = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[MapStream]
-  inline def replace(from: RegExp, to: String): MapStream = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[MapStream]
-  inline def replace(from: RegExp, to: RegExp): MapStream = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[MapStream]
+  inline def replace(from: String, to: js.RegExp): MapStream = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[MapStream]
+  inline def replace(from: js.RegExp, to: String): MapStream = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[MapStream]
+  inline def replace(from: js.RegExp, to: js.RegExp): MapStream = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[MapStream]
   
   inline def split(): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("split")().asInstanceOf[MapStream]
   inline def split(matcher: String): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(matcher.asInstanceOf[js.Any]).asInstanceOf[MapStream]
-  inline def split(matcher: RegExp): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(matcher.asInstanceOf[js.Any]).asInstanceOf[MapStream]
+  inline def split(matcher: js.RegExp): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(matcher.asInstanceOf[js.Any]).asInstanceOf[MapStream]
   
   inline def stringify(): MapStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")().asInstanceOf[MapStream]
   
@@ -58,7 +61,7 @@ object mod {
     
     def destroy(): Unit = js.native
     
-    var end: js.Any = js.native
+    var end: Any = js.native
     
     def pause(): Unit = js.native
     
@@ -68,6 +71,6 @@ object mod {
     
     var writable: Boolean = js.native
     
-    var write: js.Any = js.native
+    var write: Any = js.native
   }
 }

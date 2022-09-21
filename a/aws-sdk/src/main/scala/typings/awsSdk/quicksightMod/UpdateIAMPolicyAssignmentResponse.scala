@@ -22,17 +22,17 @@ trait UpdateIAMPolicyAssignmentResponse extends StObject {
   var AssignmentStatus: js.UndefOr[typings.awsSdk.quicksightMod.AssignmentStatus] = js.undefined
   
   /**
-    * The QuickSight users, groups, or both that the IAM policy is assigned to.
+    * The Amazon QuickSight users, groups, or both that the IAM policy is assigned to.
     */
   var Identities: js.UndefOr[IdentityMap] = js.undefined
   
   /**
-    * The ARN for the IAM policy applied to the QuickSight users and groups specified in this assignment.
+    * The ARN for the IAM policy applied to the Amazon QuickSight users and groups specified in this assignment.
     */
   var PolicyArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   

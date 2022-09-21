@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates the FX class, adding the linear easing
   */
-class _FX () extends StObject {
+open class _FX () extends StObject {
   
   /**
     * Add a new easing function for other objects to use

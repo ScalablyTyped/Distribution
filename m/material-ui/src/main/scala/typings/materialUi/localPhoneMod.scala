@@ -10,10 +10,10 @@ object localPhoneMod {
   
   @JSImport("material-ui/svg-icons/maps/local-phone", JSImport.Default)
   @js.native
-  class default () extends MapsLocalPhone
+  open class default () extends MapsLocalPhone
   
   @JSImport("material-ui/svg-icons/maps/local-phone", "MapsLocalPhone")
   @js.native
-  class MapsLocalPhone ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalPhone ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

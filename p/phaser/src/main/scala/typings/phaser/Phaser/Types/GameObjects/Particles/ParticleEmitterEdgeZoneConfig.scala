@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.Types.GameObjects.Particles
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait ParticleEmitterEdgeZoneConfig extends StObject {
   /**
     * The number of particles to place on the source edge. Set to 0 to use `stepRate` instead.
     */
-  var quantity: integer
+  var quantity: Double
   
   /**
     * Whether one endpoint will be removed if it's identical to the other.
@@ -39,7 +38,7 @@ trait ParticleEmitterEdgeZoneConfig extends StObject {
 }
 object ParticleEmitterEdgeZoneConfig {
   
-  inline def apply(quantity: integer, source: EdgeZoneSource, `type`: String): ParticleEmitterEdgeZoneConfig = {
+  inline def apply(quantity: Double, source: EdgeZoneSource, `type`: String): ParticleEmitterEdgeZoneConfig = {
     val __obj = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticleEmitterEdgeZoneConfig]
@@ -47,7 +46,7 @@ object ParticleEmitterEdgeZoneConfig {
   
   extension [Self <: ParticleEmitterEdgeZoneConfig](x: Self) {
     
-    inline def setQuantity(value: integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     inline def setSeamless(value: Boolean): Self = StObject.set(x, "seamless", value.asInstanceOf[js.Any])
     

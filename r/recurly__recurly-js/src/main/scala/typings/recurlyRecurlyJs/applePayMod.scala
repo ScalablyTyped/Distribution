@@ -1,6 +1,8 @@
 package typings.recurlyRecurlyJs
 
+import typings.recurlyRecurlyJs.anon.ClientAuthorization
 import typings.recurlyRecurlyJs.checkoutMod.CheckoutPricingInstance
+import typings.recurlyRecurlyJs.checkoutMod.CheckoutPricingPromise
 import typings.recurlyRecurlyJs.emitterMod.Emitter
 import typings.std.HTMLFormElement
 import typings.std.VoidFunction
@@ -13,6 +15,11 @@ object applePayMod {
   type ApplePay = js.Function1[/* config */ ApplePayConfig, ApplePayInstance]
   
   trait ApplePayConfig extends StObject {
+    
+    /**
+      * If provided, will use Braintree to process the ApplePay transaction.
+      */
+    var braintree: js.UndefOr[ClientAuthorization] = js.undefined
     
     /**
       * Your ISO 3166 country code (ex: ‘US’). This is your country code as the merchant.
@@ -42,7 +49,7 @@ object applePayMod {
       * If provided, will override `options.total` and provide the current total price on the CheckoutPricing instance
       * when the Apple Pay flow is initiated.
       */
-    var pricing: js.UndefOr[CheckoutPricingInstance] = js.undefined
+    var pricing: js.UndefOr[CheckoutPricingInstance | CheckoutPricingPromise] = js.undefined
     
     /**
       * Total cost to display in the Apple Pay payment sheet. Required if `options.pricing` is not provided.
@@ -58,6 +65,10 @@ object applePayMod {
     
     extension [Self <: ApplePayConfig](x: Self) {
       
+      inline def setBraintree(value: ClientAuthorization): Self = StObject.set(x, "braintree", value.asInstanceOf[js.Any])
+      
+      inline def setBraintreeUndefined: Self = StObject.set(x, "braintree", js.undefined)
+      
       inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
@@ -68,7 +79,7 @@ object applePayMod {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      inline def setPricing(value: CheckoutPricingInstance): Self = StObject.set(x, "pricing", value.asInstanceOf[js.Any])
+      inline def setPricing(value: CheckoutPricingInstance | CheckoutPricingPromise): Self = StObject.set(x, "pricing", value.asInstanceOf[js.Any])
       
       inline def setPricingUndefined: Self = StObject.set(x, "pricing", js.undefined)
       

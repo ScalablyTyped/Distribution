@@ -64,13 +64,13 @@ object anon {
       
       inline def setGapsUndefined: Self = StObject.set(x, "gaps", js.undefined)
       
-      inline def setGapsVarargs(value: Double*): Self = StObject.set(x, "gaps", js.Array(value :_*))
+      inline def setGapsVarargs(value: Double*): Self = StObject.set(x, "gaps", js.Array(value*))
       
       inline def setLengths(value: js.Array[Double]): Self = StObject.set(x, "lengths", value.asInstanceOf[js.Any])
       
       inline def setLengthsUndefined: Self = StObject.set(x, "lengths", js.undefined)
       
-      inline def setLengthsVarargs(value: Double*): Self = StObject.set(x, "lengths", js.Array(value :_*))
+      inline def setLengthsVarargs(value: Double*): Self = StObject.set(x, "lengths", js.Array(value*))
       
       inline def setMatchStrength(value: Double): Self = StObject.set(x, "matchStrength", value.asInstanceOf[js.Any])
       
@@ -84,7 +84,7 @@ object anon {
       
       inline def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
       
-      inline def setPatternsVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "patterns", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

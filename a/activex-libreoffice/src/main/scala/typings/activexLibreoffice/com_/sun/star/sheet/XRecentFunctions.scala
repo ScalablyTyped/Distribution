@@ -54,7 +54,7 @@ object XRecentFunctions {
     acquire: () => Unit,
     getMaxRecentFunctions: () => Double,
     getRecentFunctionIds: () => SafeArray[Double],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setRecentFunctionIds: SeqEquiv[Double] => Unit
   ): XRecentFunctions = {

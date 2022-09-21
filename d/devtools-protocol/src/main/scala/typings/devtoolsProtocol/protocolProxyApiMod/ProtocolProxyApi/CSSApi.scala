@@ -19,6 +19,8 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.GetComputedStyleForNodeRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.GetComputedStyleForNodeResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.GetInlineStylesForNodeRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.GetInlineStylesForNodeResponse
+import typings.devtoolsProtocol.mod.Protocol.CSS.GetLayersForNodeRequest
+import typings.devtoolsProtocol.mod.Protocol.CSS.GetLayersForNodeResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.GetMatchedStylesForNodeRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.GetMatchedStylesForNodeResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.GetMediaQueriesResponse
@@ -26,6 +28,8 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.GetPlatformFontsForNodeRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.GetPlatformFontsForNodeResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.GetStyleSheetTextRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.GetStyleSheetTextResponse
+import typings.devtoolsProtocol.mod.Protocol.CSS.SetContainerQueryTextRequest
+import typings.devtoolsProtocol.mod.Protocol.CSS.SetContainerQueryTextResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetEffectivePropertyValueForNodeRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetKeyframeKeyRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetKeyframeKeyResponse
@@ -34,10 +38,14 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.SetMediaTextRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetMediaTextResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetRuleSelectorRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetRuleSelectorResponse
+import typings.devtoolsProtocol.mod.Protocol.CSS.SetScopeTextRequest
+import typings.devtoolsProtocol.mod.Protocol.CSS.SetScopeTextResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetStyleSheetTextRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetStyleSheetTextResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetStyleTextsRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetStyleTextsResponse
+import typings.devtoolsProtocol.mod.Protocol.CSS.SetSupportsTextRequest
+import typings.devtoolsProtocol.mod.Protocol.CSS.SetSupportsTextResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.StopRuleUsageTrackingResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.StyleSheetAddedEvent
 import typings.devtoolsProtocol.mod.Protocol.CSS.StyleSheetChangedEvent
@@ -99,6 +107,14 @@ trait CSSApi extends StObject {
   def getInlineStylesForNode(params: GetInlineStylesForNodeRequest): js.Promise[GetInlineStylesForNodeResponse] = js.native
   
   /**
+    * Returns all layers parsed by the rendering engine for the tree scope of a node.
+    * Given a DOM element identified by nodeId, getLayersForNode returns the root
+    * layer for the nearest ancestor document or shadow root. The layer root contains
+    * the full layer tree for the tree scope and their ordering.
+    */
+  def getLayersForNode(params: GetLayersForNodeRequest): js.Promise[GetLayersForNodeResponse] = js.native
+  
+  /**
     * Returns requested styles for a DOM node identified by `nodeId`.
     */
   def getMatchedStylesForNode(params: GetMatchedStylesForNodeRequest): js.Promise[GetMatchedStylesForNodeResponse] = js.native
@@ -148,6 +164,11 @@ trait CSSApi extends StObject {
   def on_styleSheetRemoved(event: styleSheetRemoved, listener: js.Function1[/* params */ StyleSheetRemovedEvent, Unit]): Unit = js.native
   
   /**
+    * Modifies the expression of a container query.
+    */
+  def setContainerQueryText(params: SetContainerQueryTextRequest): js.Promise[SetContainerQueryTextResponse] = js.native
+  
+  /**
     * Find a rule with the given active property for the given node and set the new value for this
     * property
     */
@@ -174,6 +195,11 @@ trait CSSApi extends StObject {
   def setRuleSelector(params: SetRuleSelectorRequest): js.Promise[SetRuleSelectorResponse] = js.native
   
   /**
+    * Modifies the expression of a scope at-rule.
+    */
+  def setScopeText(params: SetScopeTextRequest): js.Promise[SetScopeTextResponse] = js.native
+  
+  /**
     * Sets the new stylesheet text.
     */
   def setStyleSheetText(params: SetStyleSheetTextRequest): js.Promise[SetStyleSheetTextResponse] = js.native
@@ -182,6 +208,11 @@ trait CSSApi extends StObject {
     * Applies specified style edits one after another in the given order.
     */
   def setStyleTexts(params: SetStyleTextsRequest): js.Promise[SetStyleTextsResponse] = js.native
+  
+  /**
+    * Modifies the expression of a supports at-rule.
+    */
+  def setSupportsText(params: SetSupportsTextRequest): js.Promise[SetSupportsTextResponse] = js.native
   
   /**
     * Enables the selector recording.

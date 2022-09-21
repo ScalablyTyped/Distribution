@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait SaveBehavior extends StObject
 /**
+  * Specifies the save behavior for `Workbook.save`.
   *
-  * Specifies the save behavior for Workbook.save API.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.SaveBehavior")
@@ -17,9 +17,10 @@ sealed trait SaveBehavior extends StObject
 object SaveBehavior extends StObject {
   
   /**
-    * Prompts the saveas experience to the user if the workbook has not been saved,
+    * Prompts the "Save As" experience to the user if the workbook has not been saved,
     Ignored if the workbook was previously saved.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait prompt
@@ -28,8 +29,9 @@ object SaveBehavior extends StObject {
   
   /**
     * Save the workbook without prompting the user. If file is not saved,
-    it will save it with default name under default location.
-    *
+    it will save it with default name in the default location.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait save

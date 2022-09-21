@@ -11,19 +11,19 @@ trait PullTypeEnclosingTypeWalker extends StObject {
   
   def _getCurrentSymbol(): PullSymbol = js.native
   
-  /* private */ def _popSymbol(): js.Any = js.native
+  /* private */ def _popSymbol(): Any = js.native
   
-  /* private */ def _pushSymbol(symbol: js.Any): js.Any = js.native
+  /* private */ def _pushSymbol(symbol: Any): Any = js.native
   
-  /* private */ def _setEnclosingTypeOfParentDecl(decl: js.Any, setSignature: js.Any): js.Any = js.native
+  /* private */ def _setEnclosingTypeOfParentDecl(decl: Any, setSignature: Any): Any = js.native
   
-  /* private */ def canDeclBeUsedAsEnclosingType(decl: js.Any): js.Any = js.native
+  /* private */ def canDeclBeUsedAsEnclosingType(decl: Any): Any = js.native
   
-  /* private */ def canSymbolBeUsedAsEnclosingType(symbol: js.Any): js.Any = js.native
+  /* private */ def canSymbolBeUsedAsEnclosingType(symbol: Any): Any = js.native
   
-  /* private */ def canSymbolOrDeclBeUsedAsEnclosingTypeHelper(name: js.Any, kind: js.Any): js.Any = js.native
+  /* private */ def canSymbolOrDeclBeUsedAsEnclosingTypeHelper(name: Any, kind: Any): Any = js.native
   
-  /* private */ var enclosingTypeWalkerState: js.Any = js.native
+  /* private */ var enclosingTypeWalkerState: Any = js.native
   
   def endWalkingType(stateWhenStartedWalkingTypes: EnclosingTypeWalkerState): Unit = js.native
   
@@ -50,15 +50,15 @@ trait PullTypeEnclosingTypeWalker extends StObject {
   
   def resetEnclosingTypeWalkerState(): EnclosingTypeWalkerState = js.native
   
-  /* private */ def setDefaultTypeWalkerState(): js.Any = js.native
+  /* private */ def setDefaultTypeWalkerState(): Any = js.native
   
   def setEnclosingTypeForSymbol(symbol: PullSymbol): EnclosingTypeWalkerState = js.native
   
   def setEnclosingTypeWalkerState(enclosingTypeWalkerState: EnclosingTypeWalkerState): Unit = js.native
   
-  /* private */ def setNonGenericEnclosingTypeWalkerState(): js.Any = js.native
+  /* private */ def setNonGenericEnclosingTypeWalkerState(): Any = js.native
   
-  /* private */ def setSymbolAsEnclosingType(`type`: js.Any): js.Any = js.native
+  /* private */ def setSymbolAsEnclosingType(`type`: Any): Any = js.native
   
   def startWalkingType(symbol: PullTypeSymbol): EnclosingTypeWalkerState = js.native
   

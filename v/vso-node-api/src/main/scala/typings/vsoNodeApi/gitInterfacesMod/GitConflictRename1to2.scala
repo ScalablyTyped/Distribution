@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +24,7 @@ trait GitConflictRename1to2
 object GitConflictRename1to2 {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     baseBlob: GitBlobRef,
     conflictId: Double,
     conflictPath: String,
@@ -38,7 +37,7 @@ object GitConflictRename1to2 {
     resolutionError: GitResolutionError,
     resolutionStatus: GitResolutionStatus,
     resolvedBy: IdentityRef,
-    resolvedDate: Date,
+    resolvedDate: js.Date,
     sourceBlob: GitBlobRef,
     sourceNewPath: String,
     targetBlob: GitBlobRef,

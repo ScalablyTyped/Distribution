@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `23` extends StObject {
   
-  var duration: js.UndefOr[Double] = js.undefined
+  var weight: js.UndefOr[Double | String] = js.undefined
 }
 object `23` {
   
@@ -17,8 +17,8 @@ object `23` {
   
   extension [Self <: `23`](x: Self) {
     
-    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double | String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

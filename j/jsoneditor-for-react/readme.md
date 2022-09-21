@@ -10,15 +10,12 @@ React wrapper for josdejong/jsoneditor
 | ------------------ | :-------------: |
 | Full name          | jsoneditor-for-react |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 5021 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 321.0 |
+| # stars            | 5.0 |
 
 ## Links
-- [Homepage](https://github.com/mixj93/jsoneditor-for-react#readme)
-- [Bugs](https://github.com/mixj93/jsoneditor-for-react/issues)
-- [Repository](https://github.com/mixj93/jsoneditor-for-react)
 - [Npm](https://www.npmjs.com/package/jsoneditor-for-react)
     
 

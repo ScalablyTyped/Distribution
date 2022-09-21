@@ -1,6 +1,5 @@
 package typings.lodash.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait TruncateOptions extends StObject {
   /**
     * @see _.separator
     */
-  var separator: js.UndefOr[java.lang.String | RegExp] = js.undefined
+  var separator: js.UndefOr[java.lang.String | js.RegExp] = js.undefined
 }
 object TruncateOptions {
   
@@ -39,7 +38,7 @@ object TruncateOptions {
     
     inline def setOmissionUndefined: Self = StObject.set(x, "omission", js.undefined)
     
-    inline def setSeparator(value: java.lang.String | RegExp): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: java.lang.String | js.RegExp): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
   }

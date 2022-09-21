@@ -19,7 +19,7 @@ import typings.browserfs.fileSystemMod.FileSystem
 import typings.browserfs.indexedDBMod.IndexedDBFileSystem
 import typings.browserfs.zipFSMod.ZipTOC
 import typings.dropboxjs.Dropbox.Client
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -42,7 +42,7 @@ object backendsMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.AsyncMirror")
     @js.native
-    class AsyncMirror protected ()
+    open class AsyncMirror protected ()
       extends typings.browserfs.asyncMirrorMod.default {
       /**
         * **Deprecated; use AsyncMirror.Create() method instead.**
@@ -64,7 +64,7 @@ object backendsMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.Dropbox")
     @js.native
-    class Dropbox protected ()
+    open class Dropbox protected ()
       extends typings.browserfs.dropboxMod.default {
       /**
         * **Deprecated. Please use Dropbox.Create() method instead.**
@@ -84,13 +84,13 @@ object backendsMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.Emscripten")
     @js.native
-    class Emscripten protected ()
+    open class Emscripten protected ()
       extends typings.browserfs.emscriptenMod.default {
       /**
         * Creates a BrowserFS file system for the given Emscripten file system.
         * @param _FS The Emscripten file system (`FS`).
         */
-      def this(_FS: js.Any) = this()
+      def this(_FS: Any) = this()
     }
     @JSImport("browserfs/dist/node/core/backends", "default.Emscripten")
     @js.native
@@ -100,7 +100,7 @@ object backendsMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.FolderAdapter")
     @js.native
-    class FolderAdapter protected ()
+    open class FolderAdapter protected ()
       extends typings.browserfs.folderAdapterMod.default {
       /**
         * Wraps a file system, and uses the given folder as its root.
@@ -130,7 +130,7 @@ object backendsMod {
       * @param size storage quota to request, in megabytes. Allocated value may be less.
       * @param type window.PERSISTENT or window.TEMPORARY. Defaults to PERSISTENT.
       */
-    class HTML5FS ()
+    open class HTML5FS ()
       extends typings.browserfs.html5fsMod.default {
       def this(size: Double) = this()
       def this(size: Double, `type`: Double) = this()
@@ -148,7 +148,7 @@ object backendsMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.InMemory")
     @js.native
-    class InMemory ()
+    open class InMemory ()
       extends typings.browserfs.inMemoryMod.default
     @JSImport("browserfs/dist/node/core/backends", "default.InMemory")
     @js.native
@@ -158,7 +158,7 @@ object backendsMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.IndexedDB")
     @js.native
-    class IndexedDB protected ()
+    open class IndexedDB protected ()
       extends typings.browserfs.indexedDBMod.default {
       /**
         * **Deprecated. Use IndexedDB.Create() method instead.**
@@ -183,7 +183,7 @@ object backendsMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.IsoFS")
     @js.native
-    class IsoFS protected ()
+    open class IsoFS protected ()
       extends typings.browserfs.isoFSMod.default {
       /**
         * **Deprecated. Please use IsoFS.Create() method instead.**
@@ -208,7 +208,7 @@ object backendsMod {
     /**
       * Creates a new LocalStorage file system using the contents of `localStorage`.
       */
-    class LocalStorage ()
+    open class LocalStorage ()
       extends typings.browserfs.localStorageMod.default
     @JSImport("browserfs/dist/node/core/backends", "default.LocalStorage")
     @js.native
@@ -221,7 +221,7 @@ object backendsMod {
     /**
       * Creates a new, empty MountableFileSystem.
       */
-    class MountableFileSystem ()
+    open class MountableFileSystem ()
       extends typings.browserfs.mountableFileSystemMod.default
     @JSImport("browserfs/dist/node/core/backends", "default.MountableFileSystem")
     @js.native
@@ -231,7 +231,7 @@ object backendsMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.OverlayFS")
     @js.native
-    class OverlayFS protected ()
+    open class OverlayFS protected ()
       extends typings.browserfs.overlayFSMod.default {
       /**
         * **Deprecated. Please use OverlayFS.Create() method instead.**
@@ -249,7 +249,7 @@ object backendsMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.WorkerFS")
     @js.native
-    class WorkerFS protected ()
+    open class WorkerFS protected ()
       extends typings.browserfs.workerFSMod.default {
       /**
         * **Deprecated. Please use WorkerFS.Create() method instead.**
@@ -268,7 +268,7 @@ object backendsMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.XmlHttpRequest")
     @js.native
-    class XmlHttpRequest protected ()
+    open class XmlHttpRequest protected ()
       extends typings.browserfs.xmlHttpRequestMod.default {
       /**
         * **Deprecated. Please use XmlHttpRequest.Create() method instead to construct XmlHttpRequest objects.**
@@ -303,7 +303,7 @@ object backendsMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node/core/backends", "default.ZipFS")
     @js.native
-    class ZipFS protected ()
+    open class ZipFS protected ()
       extends typings.browserfs.zipFSMod.default {
       def this(input: ZipTOC) = this()
       /**

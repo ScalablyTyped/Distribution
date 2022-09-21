@@ -40,6 +40,6 @@ object GetHostedZoneResponse {
     
     inline def setVPCsUndefined: Self = StObject.set(x, "VPCs", js.undefined)
     
-    inline def setVPCsVarargs(value: VPC*): Self = StObject.set(x, "VPCs", js.Array(value :_*))
+    inline def setVPCsVarargs(value: VPC*): Self = StObject.set(x, "VPCs", js.Array(value*))
   }
 }

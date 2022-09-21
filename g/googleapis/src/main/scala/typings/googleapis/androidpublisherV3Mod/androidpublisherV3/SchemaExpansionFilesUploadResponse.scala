@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaExpansionFilesUploadResponse extends StObject {
   
+  /**
+    * The uploaded expansion file configuration.
+    */
   var expansionFile: js.UndefOr[SchemaExpansionFile] = js.undefined
 }
 object SchemaExpansionFilesUploadResponse {

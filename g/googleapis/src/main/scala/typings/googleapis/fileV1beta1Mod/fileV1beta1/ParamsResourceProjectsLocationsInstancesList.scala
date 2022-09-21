@@ -1,9 +1,5 @@
 package typings.googleapis.fileV1beta1Mod.fileV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceProjectsLocationsInstancesList
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * List filter.
@@ -33,17 +24,12 @@ trait ParamsResourceProjectsLocationsInstancesList
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The next_page_token value to use if there are additional results to
-    * retrieve for this list request.
+    * The next_page_token value to use if there are additional results to retrieve for this list request.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The project and location for which to retrieve instance information, in
-    * the format projects/{project_id}/locations/{location}. In Cloud
-    * Filestore, locations map to GCP zones, for example **us-west1-b**. To
-    * retrieve instance information for all locations, use "-" for the
-    * {location} value.
+    * Required. The project and location for which to retrieve instance information, in the format `projects/{project_id\}/locations/{location\}`. In Cloud Filestore, locations map to GCP zones, for example **us-west1-b**. To retrieve instance information for all locations, use "-" for the `{location\}` value.
     */
   var parent: js.UndefOr[String] = js.undefined
 }
@@ -55,10 +41,6 @@ object ParamsResourceProjectsLocationsInstancesList {
   }
   
   extension [Self <: ParamsResourceProjectsLocationsInstancesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

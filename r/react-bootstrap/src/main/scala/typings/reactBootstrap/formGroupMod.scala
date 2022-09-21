@@ -14,12 +14,10 @@ object formGroupMod {
   
   @JSImport("react-bootstrap/lib/FormGroup", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[FormGroupProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[FormGroupProps, js.Object, Any]
   
-  @js.native
-  trait FormGroup
-    extends Component[FormGroupProps, js.Object, js.Any]
+  type FormGroup = Component[FormGroupProps, js.Object, Any]
   
   trait FormGroupProps
     extends StObject

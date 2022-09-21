@@ -11,9 +11,9 @@ A ping utility using TCP connection
 | Full name          | tcp-ping |
 | Keywords           | ping, util, tcp, availability |
 | # releases         | 0 |
-| # dependents       | 57 |
-| # downloads        | 1105172 |
-| # stars            | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 44003.0 |
+| # stars            | 111.0 |
 
 ## Links
 - [Homepage](https://github.com/wesolyromek/tcp-ping)

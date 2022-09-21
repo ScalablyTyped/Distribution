@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListRecoveryPointsByBackupVaultInput extends StObject {
   
   /**
-    * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
+    * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the Amazon Web Services Region where they are created. They consist of lowercase letters, numbers, and hyphens.  Backup vault name might not be available when a supported service creates the backup. 
     */
   var BackupVaultName: typings.awsSdk.backupMod.BackupVaultName
   
@@ -19,12 +19,12 @@ trait ListRecoveryPointsByBackupVaultInput extends StObject {
   /**
     * Returns only recovery points that were created after the specified timestamp.
     */
-  var ByCreatedAfter: js.UndefOr[timestamp] = js.undefined
+  var ByCreatedAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Returns only recovery points that were created before the specified timestamp.
     */
-  var ByCreatedBefore: js.UndefOr[timestamp] = js.undefined
+  var ByCreatedBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Returns only recovery points that match the specified resource Amazon Resource Name (ARN).
@@ -61,11 +61,11 @@ object ListRecoveryPointsByBackupVaultInput {
     
     inline def setByBackupPlanIdUndefined: Self = StObject.set(x, "ByBackupPlanId", js.undefined)
     
-    inline def setByCreatedAfter(value: timestamp): Self = StObject.set(x, "ByCreatedAfter", value.asInstanceOf[js.Any])
+    inline def setByCreatedAfter(value: js.Date): Self = StObject.set(x, "ByCreatedAfter", value.asInstanceOf[js.Any])
     
     inline def setByCreatedAfterUndefined: Self = StObject.set(x, "ByCreatedAfter", js.undefined)
     
-    inline def setByCreatedBefore(value: timestamp): Self = StObject.set(x, "ByCreatedBefore", value.asInstanceOf[js.Any])
+    inline def setByCreatedBefore(value: js.Date): Self = StObject.set(x, "ByCreatedBefore", value.asInstanceOf[js.Any])
     
     inline def setByCreatedBeforeUndefined: Self = StObject.set(x, "ByCreatedBefore", js.undefined)
     

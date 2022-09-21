@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CodePanes extends StObject {
   
-  def apply(index: js.Any): CodePane = js.native
+  def apply(index: Any): CodePane = js.native
   
   val Count: Double = js.native
   
   var Current: CodePane = js.native
   
-  def Item(index: js.Any): CodePane = js.native
+  def Item(index: Any): CodePane = js.native
   
   val Parent: typings.activexVbide.VBIDE.VBE = js.native
   

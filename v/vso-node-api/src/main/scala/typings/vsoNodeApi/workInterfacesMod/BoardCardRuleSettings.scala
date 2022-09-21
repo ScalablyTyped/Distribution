@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BoardCardRuleSettings extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   var rules: StringDictionary[js.Array[Rule]]
   
@@ -15,7 +15,7 @@ trait BoardCardRuleSettings extends StObject {
 }
 object BoardCardRuleSettings {
   
-  inline def apply(_links: js.Any, rules: StringDictionary[js.Array[Rule]], url: String): BoardCardRuleSettings = {
+  inline def apply(_links: Any, rules: StringDictionary[js.Array[Rule]], url: String): BoardCardRuleSettings = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoardCardRuleSettings]
   }
@@ -26,6 +26,6 @@ object BoardCardRuleSettings {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

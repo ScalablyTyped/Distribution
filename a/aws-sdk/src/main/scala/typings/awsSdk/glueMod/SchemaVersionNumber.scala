@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaVersionNumber extends StObject {
   
+  /**
+    * The latest version available for the schema.
+    */
   var LatestVersion: js.UndefOr[LatestSchemaVersionBoolean] = js.undefined
   
+  /**
+    * The version number of the schema.
+    */
   var VersionNumber: js.UndefOr[VersionLongNumber] = js.undefined
 }
 object SchemaVersionNumber {

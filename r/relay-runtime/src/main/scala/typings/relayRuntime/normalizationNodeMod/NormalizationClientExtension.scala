@@ -6,12 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NormalizationClientExtension
   extends StObject
+     with NormalizationNode
      with NormalizationSelection {
   
-  var kind: String
+  val kind: String
   
-  // 'ClientExtension';
-  var selections: js.Array[NormalizationSelection]
+  // "ClientExtension";
+  val selections: js.Array[NormalizationSelection]
 }
 object NormalizationClientExtension {
   
@@ -26,6 +27,6 @@ object NormalizationClientExtension {
     
     inline def setSelections(value: js.Array[NormalizationSelection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
-    inline def setSelectionsVarargs(value: NormalizationSelection*): Self = StObject.set(x, "selections", js.Array(value :_*))
+    inline def setSelectionsVarargs(value: NormalizationSelection*): Self = StObject.set(x, "selections", js.Array(value*))
   }
 }

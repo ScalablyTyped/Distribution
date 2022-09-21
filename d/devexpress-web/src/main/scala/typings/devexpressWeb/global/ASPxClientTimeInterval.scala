@@ -1,6 +1,5 @@
 package typings.devexpressWeb.global
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTimeInterval")
 @js.native
-class ASPxClientTimeInterval protected ()
+open class ASPxClientTimeInterval protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTimeInterval {
   /**
@@ -18,7 +17,7 @@ class ASPxClientTimeInterval protected ()
     * @param start A DateTime object, representing the beginning of the period.
     * @param duration A TimeSpan structure, representing a time interval.
     */
-  def this(start: Date, duration: js.Any) = this()
+  def this(start: js.Date, duration: Any) = this()
   
   /**
     * Client-side function that determines whether the specified interval is contained within the current one. true if the specified interval is located within the current one; otherwise, false.
@@ -50,13 +49,13 @@ class ASPxClientTimeInterval protected ()
     * Client-side function that returns the end time of the interval.
     */
   /* CompleteClass */
-  override def GetEnd(): Date = js.native
+  override def GetEnd(): js.Date = js.native
   
   /**
     * Client-side function that returns the start time of the interval.
     */
   /* CompleteClass */
-  override def GetStart(): Date = js.native
+  override def GetStart(): js.Date = js.native
   
   /**
     * Checks if the current time interval intersects with the specified time interval. true, if the two time intervals intersect; otherwise, false.
@@ -84,21 +83,21 @@ class ASPxClientTimeInterval protected ()
     * @param value A TimeSpan  object, representing the duration of the time period.
     */
   /* CompleteClass */
-  override def SetDuration(value: js.Any): Unit = js.native
+  override def SetDuration(value: Any): Unit = js.native
   
   /**
     * Client-side function that sets the end time of the interval.
     * @param value A DateTime value, representing the end of the interval.
     */
   /* CompleteClass */
-  override def SetEnd(value: Date): Unit = js.native
+  override def SetEnd(value: js.Date): Unit = js.native
   
   /**
     * Client-side function that sets the start time of the interval.
     * @param value A DateTime value, representing the beginning of the interval.
     */
   /* CompleteClass */
-  override def SetStart(value: Date): Unit = js.native
+  override def SetStart(value: js.Date): Unit = js.native
 }
 object ASPxClientTimeInterval {
   
@@ -112,5 +111,5 @@ object ASPxClientTimeInterval {
     * @param end A DateTime value that specifies the end date time value.
     */
   /* static member */
-  inline def CalculateDuration(start: Date, end: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CalculateDuration")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def CalculateDuration(start: js.Date, end: js.Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CalculateDuration")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

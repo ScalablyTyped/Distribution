@@ -10,10 +10,10 @@ object imageAspectRatioMod {
   
   @JSImport("material-ui/svg-icons/image/image-aspect-ratio", JSImport.Default)
   @js.native
-  class default () extends ImageImageAspectRatio
+  open class default () extends ImageImageAspectRatio
   
   @JSImport("material-ui/svg-icons/image/image-aspect-ratio", "ImageImageAspectRatio")
   @js.native
-  class ImageImageAspectRatio ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageImageAspectRatio ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

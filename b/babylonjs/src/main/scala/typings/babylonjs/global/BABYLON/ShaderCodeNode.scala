@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ShaderCodeNode")
 @js.native
-class ShaderCodeNode ()
+open class ShaderCodeNode ()
   extends StObject
      with typings.babylonjs.BABYLON.ShaderCodeNode {
   

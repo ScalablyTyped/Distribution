@@ -5,7 +5,6 @@ import typings.sharepoint.SP.BusinessData.Entity
 import typings.sharepoint.SP.Utilities.IconSize
 import typings.sharepoint.SP.Workflow.WorkflowAssociationCollection
 import typings.sharepoint.SP.Workflow.WorkflowTemplateCollection
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +41,7 @@ trait Web
   
   def getAvailableWebTemplates(lcid: Double, doIncludeCrossLanguage: Boolean): WebTemplateCollection = js.native
   
-  def getCatalog(typeCatalog: Double): List[js.Any] = js.native
+  def getCatalog(typeCatalog: Double): List[Any] = js.native
   
   def getChanges(query: ChangeQuery): ChangeCollection = js.native
   
@@ -53,7 +52,7 @@ trait Web
   def getFolderByServerRelativeUrl(serverRelativeUrl: String): Folder = js.native
   
   /** Available after March 2015 CU for SharePoint 2013*/
-  def getList(url: String): List[js.Any] = js.native
+  def getList(url: String): List[Any] = js.native
   
   def getPushNotificationSubscriber(deviceAppInstanceId: Guid): PushNotificationSubscriber = js.native
   
@@ -93,7 +92,7 @@ trait Web
   
   def get_contentTypes(): ContentTypeCollection = js.native
   
-  def get_created(): Date = js.native
+  def get_created(): js.Date = js.native
   
   def get_currentUser(): User = js.native
   
@@ -119,7 +118,7 @@ trait Web
   
   def get_language(): Double = js.native
   
-  def get_lastItemModifiedDate(): Date = js.native
+  def get_lastItemModifiedDate(): js.Date = js.native
   
   def get_listTemplates(): ListTemplateCollection = js.native
   
@@ -155,7 +154,7 @@ trait Web
   
   def get_siteLogoUrl(): String = js.native
   
-  def get_siteUserInfoList(): List[js.Any] = js.native
+  def get_siteUserInfoList(): List[Any] = js.native
   
   def get_siteUsers(): UserCollection = js.native
   

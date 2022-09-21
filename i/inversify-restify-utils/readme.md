@@ -1,7 +1,7 @@
 
 # Scala.js typings for inversify-restify-utils
 
-Typings are for version 3.4.1
+Typings are for version 3.5.0
 
 ## Library description:
 Some utilities for the development of restify applications with Inversify
@@ -11,9 +11,9 @@ Some utilities for the development of restify applications with Inversify
 | Full name          | inversify-restify-utils |
 | Keywords           | InversifyJS, restify, dependency, injection |
 | # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 43220 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5693.666666666667 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/inversify/inversify-restify-utils#readme)

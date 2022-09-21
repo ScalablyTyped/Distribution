@@ -24,6 +24,6 @@ object RecordpreventbooleanArray {
     
     inline def setPrevent(value: Boolean | js.Array[EventType]): Self = StObject.set(x, "prevent", value.asInstanceOf[js.Any])
     
-    inline def setPreventVarargs(value: EventType*): Self = StObject.set(x, "prevent", js.Array(value :_*))
+    inline def setPreventVarargs(value: EventType*): Self = StObject.set(x, "prevent", js.Array(value*))
   }
 }

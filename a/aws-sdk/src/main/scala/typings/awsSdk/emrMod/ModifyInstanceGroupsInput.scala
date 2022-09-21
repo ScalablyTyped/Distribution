@@ -33,6 +33,6 @@ object ModifyInstanceGroupsInput {
     
     inline def setInstanceGroupsUndefined: Self = StObject.set(x, "InstanceGroups", js.undefined)
     
-    inline def setInstanceGroupsVarargs(value: InstanceGroupModifyConfig*): Self = StObject.set(x, "InstanceGroups", js.Array(value :_*))
+    inline def setInstanceGroupsVarargs(value: InstanceGroupModifyConfig*): Self = StObject.set(x, "InstanceGroups", js.Array(value*))
   }
 }

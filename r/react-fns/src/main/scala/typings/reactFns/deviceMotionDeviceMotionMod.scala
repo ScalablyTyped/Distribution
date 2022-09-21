@@ -2,9 +2,7 @@ package typings.reactFns
 
 import typings.react.mod.Component
 import typings.reactFns.typesMod.SharedRenderProps
-import typings.std.DeviceAcceleration
 import typings.std.DeviceMotionEvent
-import typings.std.DeviceRotationRate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +11,13 @@ object deviceMotionDeviceMotionMod {
   
   @JSImport("react-fns/dist/DeviceMotion/DeviceMotion", "DeviceMotion")
   @js.native
-  class DeviceMotion protected ()
-    extends Component[SharedRenderProps[DeviceMotionProps], DeviceMotionProps, js.Any] {
+  open class DeviceMotion protected () extends Component[SharedRenderProps[DeviceMotionProps], DeviceMotionProps, Any] {
     def this(props: SharedRenderProps[DeviceMotionProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SharedRenderProps[DeviceMotionProps], context: js.Any) = this()
+    def this(props: SharedRenderProps[DeviceMotionProps], context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MDeviceMotion(): Unit = js.native
@@ -33,13 +30,13 @@ object deviceMotionDeviceMotionMod {
   
   trait DeviceMotionProps extends StObject {
     
-    var acceleration: DeviceAcceleration | Null
+    var acceleration: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DeviceAcceleration */ Any) | Null
     
-    var accelerationIncludingGravity: DeviceAcceleration | Null
+    var accelerationIncludingGravity: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DeviceAcceleration */ Any) | Null
     
     var interval: Double | Null
     
-    var rotationRate: DeviceRotationRate | Null
+    var rotationRate: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DeviceRotationRate */ Any) | Null
   }
   object DeviceMotionProps {
     
@@ -50,9 +47,13 @@ object deviceMotionDeviceMotionMod {
     
     extension [Self <: DeviceMotionProps](x: Self) {
       
-      inline def setAcceleration(value: DeviceAcceleration): Self = StObject.set(x, "acceleration", value.asInstanceOf[js.Any])
+      inline def setAcceleration(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DeviceAcceleration */ Any
+      ): Self = StObject.set(x, "acceleration", value.asInstanceOf[js.Any])
       
-      inline def setAccelerationIncludingGravity(value: DeviceAcceleration): Self = StObject.set(x, "accelerationIncludingGravity", value.asInstanceOf[js.Any])
+      inline def setAccelerationIncludingGravity(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DeviceAcceleration */ Any
+      ): Self = StObject.set(x, "accelerationIncludingGravity", value.asInstanceOf[js.Any])
       
       inline def setAccelerationIncludingGravityNull: Self = StObject.set(x, "accelerationIncludingGravity", null)
       
@@ -62,7 +63,9 @@ object deviceMotionDeviceMotionMod {
       
       inline def setIntervalNull: Self = StObject.set(x, "interval", null)
       
-      inline def setRotationRate(value: DeviceRotationRate): Self = StObject.set(x, "rotationRate", value.asInstanceOf[js.Any])
+      inline def setRotationRate(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DeviceRotationRate */ Any
+      ): Self = StObject.set(x, "rotationRate", value.asInstanceOf[js.Any])
       
       inline def setRotationRateNull: Self = StObject.set(x, "rotationRate", null)
     }

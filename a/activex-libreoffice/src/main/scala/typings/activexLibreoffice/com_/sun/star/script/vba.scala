@@ -253,7 +253,7 @@ object vba {
       * @param aArgs Additional arguments needed to identify some event handlers, e.g. a sheet index for spreadsheet events.
       * @returns `TRUE` , if the VBA event handler exists. `FALSE` , for all other cases.
       */
-    def hasVbaEventHandler(nEventId: Double, aArgs: SeqEquiv[js.Any]): Boolean
+    def hasVbaEventHandler(nEventId: Double, aArgs: SeqEquiv[Any]): Boolean
     
     /**
       * Executes a VBA event handler.
@@ -263,13 +263,13 @@ object vba {
       * @throws com::sun::star::lang::IllegalArgumentException if the passed event identifier is not supported, or if the passed arguments do not conform to the
       * @throws com::sun::star::util::VetoException if the VBA event handler has indicated to veto the event.
       */
-    def processVbaEvent(nEventId: Double, aArgs: SeqEquiv[js.Any]): Boolean
+    def processVbaEvent(nEventId: Double, aArgs: SeqEquiv[Any]): Boolean
   }
   object XVBAEventProcessor {
     
     inline def apply(
-      hasVbaEventHandler: (Double, SeqEquiv[js.Any]) => Boolean,
-      processVbaEvent: (Double, SeqEquiv[js.Any]) => Boolean
+      hasVbaEventHandler: (Double, SeqEquiv[Any]) => Boolean,
+      processVbaEvent: (Double, SeqEquiv[Any]) => Boolean
     ): XVBAEventProcessor = {
       val __obj = js.Dynamic.literal(hasVbaEventHandler = js.Any.fromFunction2(hasVbaEventHandler), processVbaEvent = js.Any.fromFunction2(processVbaEvent))
       __obj.asInstanceOf[XVBAEventProcessor]
@@ -277,9 +277,9 @@ object vba {
     
     extension [Self <: XVBAEventProcessor](x: Self) {
       
-      inline def setHasVbaEventHandler(value: (Double, SeqEquiv[js.Any]) => Boolean): Self = StObject.set(x, "hasVbaEventHandler", js.Any.fromFunction2(value))
+      inline def setHasVbaEventHandler(value: (Double, SeqEquiv[Any]) => Boolean): Self = StObject.set(x, "hasVbaEventHandler", js.Any.fromFunction2(value))
       
-      inline def setProcessVbaEvent(value: (Double, SeqEquiv[js.Any]) => Boolean): Self = StObject.set(x, "processVbaEvent", js.Any.fromFunction2(value))
+      inline def setProcessVbaEvent(value: (Double, SeqEquiv[Any]) => Boolean): Self = StObject.set(x, "processVbaEvent", js.Any.fromFunction2(value))
     }
   }
   
@@ -363,7 +363,7 @@ object vba {
       acquire: () => Unit,
       disposing: EventObject => Unit,
       notifyVBAScriptEvent: VBAScriptEvent => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XVBAScriptListener = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), notifyVBAScriptEvent = js.Any.fromFunction1(notifyVBAScriptEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

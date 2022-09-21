@@ -11,7 +11,7 @@ object Toolbar {
   
   @JSGlobal("Toolbar.Toolbar")
   @js.native
-  class Toolbar protected ()
+  open class Toolbar protected ()
     extends StObject
        with typings.webgme.Toolbar.Toolbar {
     def this(element: Element) = this()
@@ -52,7 +52,7 @@ object Toolbar {
   
   @JSGlobal("Toolbar.ToolbarButton")
   @js.native
-  class ToolbarButton ()
+  open class ToolbarButton ()
     extends StObject
        with typings.webgme.Toolbar.ToolbarItem {
     
@@ -71,7 +71,7 @@ object Toolbar {
   
   @JSGlobal("Toolbar.ToolbarCheckBox")
   @js.native
-  class ToolbarCheckBox ()
+  open class ToolbarCheckBox ()
     extends StObject
        with typings.webgme.Toolbar.ToolbarItem {
     
@@ -90,7 +90,7 @@ object Toolbar {
   
   @JSGlobal("Toolbar.ToolbarColorPicker")
   @js.native
-  class ToolbarColorPicker ()
+  open class ToolbarColorPicker ()
     extends StObject
        with typings.webgme.Toolbar.ToolbarItem {
     
@@ -109,7 +109,7 @@ object Toolbar {
   
   @JSGlobal("Toolbar.ToolbarDropDownButton")
   @js.native
-  class ToolbarDropDownButton ()
+  open class ToolbarDropDownButton ()
     extends StObject
        with typings.webgme.Toolbar.ToolbarDropDownButton {
     
@@ -131,7 +131,7 @@ object Toolbar {
   
   @JSGlobal("Toolbar.ToolbarItem")
   @js.native
-  class ToolbarItem ()
+  open class ToolbarItem ()
     extends StObject
        with typings.webgme.Toolbar.ToolbarItem {
     
@@ -150,7 +150,7 @@ object Toolbar {
   
   @JSGlobal("Toolbar.ToolbarLabel")
   @js.native
-  class ToolbarLabel ()
+  open class ToolbarLabel ()
     extends StObject
        with typings.webgme.Toolbar.ToolbarItem {
     
@@ -169,7 +169,7 @@ object Toolbar {
   
   @JSGlobal("Toolbar.ToolbarRadioButtonGroup")
   @js.native
-  class ToolbarRadioButtonGroup ()
+  open class ToolbarRadioButtonGroup ()
     extends StObject
        with typings.webgme.Toolbar.ToolbarItem {
     
@@ -188,7 +188,7 @@ object Toolbar {
   
   @JSGlobal("Toolbar.ToolbarSeparator")
   @js.native
-  class ToolbarSeparator ()
+  open class ToolbarSeparator ()
     extends StObject
        with typings.webgme.Toolbar.ToolbarItem {
     
@@ -207,7 +207,7 @@ object Toolbar {
   
   @JSGlobal("Toolbar.ToolbarTextBox")
   @js.native
-  class ToolbarTextBox ()
+  open class ToolbarTextBox ()
     extends StObject
        with typings.webgme.Toolbar.ToolbarItem {
     
@@ -226,7 +226,7 @@ object Toolbar {
   
   @JSGlobal("Toolbar.ToolbarToggleButton")
   @js.native
-  class ToolbarToggleButton ()
+  open class ToolbarToggleButton ()
     extends StObject
        with typings.webgme.Toolbar.ToolbarItem {
     

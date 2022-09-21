@@ -17,7 +17,7 @@ trait TypeofLocalStorage
   /**
     * Creates a LocalStorageFileSystem instance.
     */
-  def Create(options: js.Any, cb: BFSCallback[LocalStorageFileSystem]): Unit = js.native
+  def Create(options: Any, cb: BFSCallback[LocalStorageFileSystem]): Unit = js.native
   
   val Name: String = js.native
   

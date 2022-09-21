@@ -9,5 +9,5 @@ object providerMod {
   
   @JSImport("rbac-a/lib/provider", JSImport.Namespace)
   @js.native
-  class ^ () extends Provider
+  open class ^ () extends Provider
 }

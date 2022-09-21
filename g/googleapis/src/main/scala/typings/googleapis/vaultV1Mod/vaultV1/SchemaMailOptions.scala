@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Mail search advanced options
-  */
 trait SchemaMailOptions extends StObject {
   
   /**
-    * Set to true to exclude drafts.
+    * Set to **true** to exclude drafts.
     */
-  var excludeDrafts: js.UndefOr[Boolean] = js.undefined
+  var excludeDrafts: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaMailOptions {
   
@@ -24,6 +21,8 @@ object SchemaMailOptions {
   extension [Self <: SchemaMailOptions](x: Self) {
     
     inline def setExcludeDrafts(value: Boolean): Self = StObject.set(x, "excludeDrafts", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeDraftsNull: Self = StObject.set(x, "excludeDrafts", null)
     
     inline def setExcludeDraftsUndefined: Self = StObject.set(x, "excludeDrafts", js.undefined)
   }

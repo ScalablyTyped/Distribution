@@ -2,7 +2,7 @@ package typings.istextorbinary
 
 import typings.istextorbinary.istextorbinaryStrings.binary
 import typings.istextorbinary.istextorbinaryStrings.utf8
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,46 +13,39 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getEncoding(buffer: Buffer, opts: Unit, next: js.Function2[/* err */ Null, /* result */ utf8 | binary, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getEncoding")(buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def getEncoding(
-    buffer: Buffer,
-    opts: Options,
-    next: js.Function2[/* err */ Null, /* result */ utf8 | binary, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getEncoding")(buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getEncoding(): utf8 | binary | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncoding")().asInstanceOf[utf8 | binary | Null]
+  inline def getEncoding(buffer: Null, opts: EncodingOpts): utf8 | binary | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getEncoding")(buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[utf8 | binary | Null]
+  inline def getEncoding(buffer: Buffer): utf8 | binary | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncoding")(buffer.asInstanceOf[js.Any]).asInstanceOf[utf8 | binary | Null]
+  inline def getEncoding(buffer: Buffer, opts: EncodingOpts): utf8 | binary | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getEncoding")(buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[utf8 | binary | Null]
   
-  inline def getEncodingSync(buffer: Buffer): utf8 | binary = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncodingSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[utf8 | binary]
-  inline def getEncodingSync(buffer: Buffer, opts: Options): utf8 | binary = (^.asInstanceOf[js.Dynamic].applyDynamic("getEncodingSync")(buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[utf8 | binary]
+  inline def isBinary(): Boolean | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")().asInstanceOf[Boolean | Null]
+  inline def isBinary(filename: String): Boolean | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean | Null]
+  inline def isBinary(filename: String, buffer: Buffer): Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Boolean | Null]
+  inline def isBinary(filename: Null, buffer: Buffer): Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Boolean | Null]
+  inline def isBinary(filename: Unit, buffer: Buffer): Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Boolean | Null]
   
-  inline def isBinary(filename: String, buffer: Unit, next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def isBinary(filename: String, buffer: Buffer, next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def isBinary(filename: Unit, buffer: Buffer, next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def isText(): Boolean | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isText")().asInstanceOf[Boolean | Null]
+  inline def isText(filename: String): Boolean | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isText")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean | Null]
+  inline def isText(filename: String, buffer: Buffer): Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("isText")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Boolean | Null]
+  inline def isText(filename: Null, buffer: Buffer): Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("isText")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Boolean | Null]
+  inline def isText(filename: Unit, buffer: Buffer): Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("isText")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Boolean | Null]
   
-  inline def isBinarySync(filename: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinarySync")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def isBinarySync(filename: String, buffer: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinarySync")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def isBinarySync(filename: Unit, buffer: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinarySync")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def isText(filename: String, buffer: Unit, next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isText")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def isText(filename: String, buffer: Buffer, next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isText")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def isText(filename: Unit, buffer: Buffer, next: js.Function2[/* err */ Null, /* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isText")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def isTextSync(filename: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTextSync")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def isTextSync(filename: String, buffer: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTextSync")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def isTextSync(filename: Unit, buffer: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTextSync")(filename.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  trait Options extends StObject {
+  trait EncodingOpts extends StObject {
     
+    /** If not provided, will check the start, beginning, and end */
     var chunkBegin: js.UndefOr[Double] = js.undefined
     
+    /** Defaults to 24 */
     var chunkLength: js.UndefOr[Double] = js.undefined
   }
-  object Options {
+  object EncodingOpts {
     
-    inline def apply(): Options = {
+    inline def apply(): EncodingOpts = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[EncodingOpts]
     }
     
-    extension [Self <: Options](x: Self) {
+    extension [Self <: EncodingOpts](x: Self) {
       
       inline def setChunkBegin(value: Double): Self = StObject.set(x, "chunkBegin", value.asInstanceOf[js.Any])
       

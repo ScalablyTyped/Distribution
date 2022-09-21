@@ -10,6 +10,11 @@ trait CreateDatasetGroupResponse extends StObject {
     * The Amazon Resource Name (ARN) of the new dataset group.
     */
   var datasetGroupArn: js.UndefOr[Arn] = js.undefined
+  
+  /**
+    * The domain for the new Domain dataset group.
+    */
+  var domain: js.UndefOr[Domain] = js.undefined
 }
 object CreateDatasetGroupResponse {
   
@@ -23,5 +28,9 @@ object CreateDatasetGroupResponse {
     inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
     
     inline def setDatasetGroupArnUndefined: Self = StObject.set(x, "datasetGroupArn", js.undefined)
+    
+    inline def setDomain(value: Domain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
   }
 }

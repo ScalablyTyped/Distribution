@@ -29,7 +29,7 @@ object TrackListMessage {
     
     inline def setMaintenanceTracksUndefined: Self = StObject.set(x, "MaintenanceTracks", js.undefined)
     
-    inline def setMaintenanceTracksVarargs(value: MaintenanceTrack*): Self = StObject.set(x, "MaintenanceTracks", js.Array(value :_*))
+    inline def setMaintenanceTracksVarargs(value: MaintenanceTrack*): Self = StObject.set(x, "MaintenanceTracks", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

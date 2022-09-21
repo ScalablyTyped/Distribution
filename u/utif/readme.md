@@ -10,10 +10,10 @@ Fast and advanced TIFF decoder
 | ------------------ | :-------------: |
 | Full name          | utif |
 | Keywords           | tiff, image, conversion |
-| # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 36709982 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4786631.666666667 |
+| # stars            | 310.0 |
 
 ## Links
 - [Homepage](https://github.com/photopea/UTIF.js)

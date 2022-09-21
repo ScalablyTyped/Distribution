@@ -31,7 +31,7 @@ object Journeys {
     
     inline def setJourneysUndefined: Self = StObject.set(x, "journeys", js.undefined)
     
-    inline def setJourneysVarargs(value: Journey*): Self = StObject.set(x, "journeys", js.Array(value :_*))
+    inline def setJourneysVarargs(value: Journey*): Self = StObject.set(x, "journeys", js.Array(value*))
     
     inline def setLaterRef(value: String): Self = StObject.set(x, "laterRef", value.asInstanceOf[js.Any])
     

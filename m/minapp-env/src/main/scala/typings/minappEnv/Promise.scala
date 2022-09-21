@@ -16,7 +16,7 @@ trait Promise[T] extends StObject {
     * @returns A Promise for the completion of the callback.
     */
   def `catch`[TResult](): Promise[T | TResult] = js.native
-  def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | PromiseLike[TResult]]): Promise[T | TResult] = js.native
+  def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | PromiseLike[TResult]]): Promise[T | TResult] = js.native
   
   /**
     * Attaches callbacks for the resolution and/or rejection of the Promise.
@@ -28,10 +28,10 @@ trait Promise[T] extends StObject {
   def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]]): Promise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     onfulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]],
-    onrejected: js.Function1[/* reason */ js.Any, TResult2 | PromiseLike[TResult2]]
+    onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
   ): Promise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | PromiseLike[TResult2]]): Promise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | PromiseLike[TResult2]]): Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): Promise[TResult1 | TResult2] = js.native
   
   @JSName(js.Symbol.toStringTag)
   val toStringTag: typings.minappEnv.minappEnvStrings.Promise = js.native

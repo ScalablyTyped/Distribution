@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientRealtimebidding.anon
 
-import typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding.UserList
+import typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding.OpenUserListRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,11 +26,7 @@ trait NameOauthtoken extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /**
-    * Output only. Name of the user list that must follow the pattern `buyers/{buyer}/userLists/{user_list}`, where `{buyer}` represents the account ID of the buyer who owns the user
-    * list. For a bidder accessing user lists on behalf of a child seat buyer, `{buyer}` represents the account ID of the child seat buyer. `{user_list}` is an int64 identifier
-    * assigned by Google to uniquely identify a user list.
-    */
+  /** Required. The name of the user list to open. See UserList.name */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -43,7 +39,7 @@ trait NameOauthtoken extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: UserList
+  var resource: OpenUserListRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -53,7 +49,7 @@ trait NameOauthtoken extends StObject {
 }
 object NameOauthtoken {
   
-  inline def apply(name: String, resource: UserList): NameOauthtoken = {
+  inline def apply(name: String, resource: OpenUserListRequest): NameOauthtoken = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameOauthtoken]
   }
@@ -98,7 +94,7 @@ object NameOauthtoken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: UserList): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: OpenUserListRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

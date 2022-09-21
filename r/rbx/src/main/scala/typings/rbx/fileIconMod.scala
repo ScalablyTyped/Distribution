@@ -54,7 +54,7 @@ object fileIconMod {
   
   @JSImport("rbx/elements/form/file-icon", "FileIcon")
   @js.native
-  val FileIcon: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val FileIcon: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait FileIconProps extends StObject {

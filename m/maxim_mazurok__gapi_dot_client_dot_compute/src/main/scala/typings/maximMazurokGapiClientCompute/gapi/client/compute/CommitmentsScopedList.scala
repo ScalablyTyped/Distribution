@@ -26,7 +26,7 @@ object CommitmentsScopedList {
     
     inline def setCommitmentsUndefined: Self = StObject.set(x, "commitments", js.undefined)
     
-    inline def setCommitmentsVarargs(value: Commitment*): Self = StObject.set(x, "commitments", js.Array(value :_*))
+    inline def setCommitmentsVarargs(value: Commitment*): Self = StObject.set(x, "commitments", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

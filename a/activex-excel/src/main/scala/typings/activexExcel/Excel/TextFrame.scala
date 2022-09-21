@@ -38,7 +38,7 @@ trait TextFrame extends StObject {
   
   var Orientation: MsoTextOrientation = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var ReadingOrder: Double = js.native
   

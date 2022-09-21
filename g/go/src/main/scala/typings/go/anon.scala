@@ -18,7 +18,7 @@ object anon {
     
     var background: js.UndefOr[BrushLike] = js.undefined
     
-    var details: js.UndefOr[js.Any] = js.undefined
+    var details: js.UndefOr[Any] = js.undefined
     
     var document: js.UndefOr[typings.std.Document] = js.undefined
     
@@ -53,7 +53,7 @@ object anon {
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      inline def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
       inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       

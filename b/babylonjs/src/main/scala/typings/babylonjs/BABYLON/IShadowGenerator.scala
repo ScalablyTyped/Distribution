@@ -11,9 +11,9 @@ trait IShadowGenerator extends StObject {
   /**
     * Binds the shadow related information inside of an effect (information like near, far, darkness...
     * defined in the generator but impacting the effect).
-    * It implies the unifroms available on the materials are the standard BJS ones.
+    * It implies the uniforms available on the materials are the standard BJS ones.
     * @param lightIndex Index of the light in the enabled light list of the material owning the effect
-    * @param effect The effect we are binfing the information for
+    * @param effect The effect we are binding the information for
     */
   def bindShadowLight(lightIndex: String, effect: Effect): Unit = js.native
   
@@ -23,7 +23,7 @@ trait IShadowGenerator extends StObject {
   def dispose(): Unit = js.native
   
   /**
-    * Forces all the attached effect to compile to enable rendering only once ready vs. lazyly compiling effects.
+    * Forces all the attached effect to compile to enable rendering only once ready vs. lazily compiling effects.
     * @param onCompiled Callback triggered at the and of the effects compilation
     * @param options Sets of optional options forcing the compilation with different modes
     */
@@ -33,7 +33,7 @@ trait IShadowGenerator extends StObject {
   def forceCompilation(onCompiled: Unit, options: PartialuseInstancesboolea): Unit = js.native
   
   /**
-    * Forces all the attached effect to compile to enable rendering only once ready vs. lazyly compiling effects.
+    * Forces all the attached effect to compile to enable rendering only once ready vs. lazily compiling effects.
     * @param options Sets of optional options forcing the compilation with different modes
     * @returns A promise that resolves when the compilation completes
     */
@@ -48,7 +48,7 @@ trait IShadowGenerator extends StObject {
   
   /**
     * Gets the transformation matrix used to project the meshes into the map from the light point of view.
-    * (eq to shadow prjection matrix * light transform matrix)
+    * (eq to shadow projection matrix * light transform matrix)
     * @returns The transform matrix used to create the shadow map
     */
   def getTransformMatrix(): Matrix = js.native
@@ -57,9 +57,9 @@ trait IShadowGenerator extends StObject {
   var id: String = js.native
   
   /**
-    * Determine wheter the shadow generator is ready or not (mainly all effects and related post processes needs to be ready).
+    * Determine whether the shadow generator is ready or not (mainly all effects and related post processes needs to be ready).
     * @param subMesh The submesh we want to render in the shadow map
-    * @param useInstances Defines wether will draw in the map using instances
+    * @param useInstances Defines whether will draw in the map using instances
     * @param isTransparent Indicates that isReady is called for a transparent subMesh
     * @returns true if ready otherwise, false
     */
@@ -82,5 +82,5 @@ trait IShadowGenerator extends StObject {
     * Serializes the shadow generator setup to a json object.
     * @returns The serialized JSON object
     */
-  def serialize(): js.Any = js.native
+  def serialize(): Any = js.native
 }

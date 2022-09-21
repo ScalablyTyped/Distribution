@@ -24,10 +24,10 @@ object Program {
     
     inline def setBlockParams(value: js.Array[String]): Self = StObject.set(x, "blockParams", value.asInstanceOf[js.Any])
     
-    inline def setBlockParamsVarargs(value: String*): Self = StObject.set(x, "blockParams", js.Array(value :_*))
+    inline def setBlockParamsVarargs(value: String*): Self = StObject.set(x, "blockParams", js.Array(value*))
     
     inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value*))
   }
 }

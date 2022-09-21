@@ -59,7 +59,7 @@ trait PlusNativeObjInputStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var onBlur: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.undefined
   
   /**
     * 输入框完成输入事件
@@ -67,7 +67,7 @@ trait PlusNativeObjInputStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var onComplete: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
+  var onComplete: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.undefined
   
   /**
     * 输入框获取焦点事件
@@ -75,7 +75,7 @@ trait PlusNativeObjInputStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var onFocus: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.undefined
   
   /**
     * 输入框的提示文本
@@ -131,15 +131,15 @@ object PlusNativeObjInputStyles {
     
     inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    inline def setOnBlur(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: /* result */ Any => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    inline def setOnComplete(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+    inline def setOnComplete(value: /* result */ Any => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
     inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
-    inline def setOnFocus(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: /* result */ Any => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     

@@ -10,12 +10,12 @@ object sequenceComparisonStringMod {
   
   @JSImport("@devexpress/utils/lib/sequence-comparison/string", "StringSequenceComparator")
   @js.native
-  class StringSequenceComparator protected () extends StObject {
+  open class StringSequenceComparator protected () extends StObject {
     def this(a: String, b: String) = this()
     
-    /* private */ var a: js.Any = js.native
+    /* private */ var a: Any = js.native
     
-    /* private */ var b: js.Any = js.native
+    /* private */ var b: Any = js.native
     
     def calculate(): js.Array[StringSesElem] = js.native
     
@@ -23,19 +23,19 @@ object sequenceComparisonStringMod {
     
     var lcs: String = js.native
     
-    /* private */ var m: js.Any = js.native
+    /* private */ var m: Any = js.native
     
-    /* private */ var n: js.Any = js.native
+    /* private */ var n: Any = js.native
     
-    /* private */ val offset: js.Any = js.native
+    /* private */ val offset: Any = js.native
     
-    /* private */ val path: js.Any = js.native
+    /* private */ val path: Any = js.native
     
-    /* private */ val pathposi: js.Any = js.native
+    /* private */ val pathposi: Any = js.native
     
     /* protected */ def recordSeq(epc: js.Array[PathElem]): Unit = js.native
     
-    /* private */ val reverse: js.Any = js.native
+    /* private */ val reverse: Any = js.native
     
     var ses: js.Array[StringSesElem] = js.native
     
@@ -44,7 +44,7 @@ object sequenceComparisonStringMod {
   
   @JSImport("@devexpress/utils/lib/sequence-comparison/string", "StringSequenceComparatorItertor")
   @js.native
-  class StringSequenceComparatorItertor protected ()
+  open class StringSequenceComparatorItertor protected ()
     extends StObject
        with ISequenceComparatorItertor[String] {
     def this(str: String) = this()
@@ -57,13 +57,15 @@ object sequenceComparisonStringMod {
     
     /* CompleteClass */
     var length: Double = js.native
+    @JSName("length")
+    def length_MStringSequenceComparatorItertor: Double = js.native
     
     var str: String = js.native
   }
   
   @JSImport("@devexpress/utils/lib/sequence-comparison/string", "StringSesElem")
   @js.native
-  class StringSesElem protected () extends StObject {
+  open class StringSesElem protected () extends StObject {
     def this(elem: String, `type`: SesType) = this()
     
     var elem: String = js.native

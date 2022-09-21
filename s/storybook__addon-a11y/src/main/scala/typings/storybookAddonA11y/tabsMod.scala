@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tabsMod {
   
-  @JSImport("@storybook/addon-a11y/dist/components/Tabs", "Tabs")
+  @JSImport("@storybook/addon-a11y/dist/ts3.9/components/Tabs", "Tabs")
   @js.native
   val Tabs: FC[TabsProps] = js.native
   
@@ -27,7 +27,7 @@ object tabsMod {
       
       inline def setTabs(value: js.Array[Items]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      inline def setTabsVarargs(value: Items*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Items*): Self = StObject.set(x, "tabs", js.Array(value*))
     }
   }
 }

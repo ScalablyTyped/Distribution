@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("TableWidthUnit")
 @js.native
-class TableWidthUnit ()
+open class TableWidthUnit ()
   extends StObject
      with typings.devexpressWeb.TableWidthUnit {
   

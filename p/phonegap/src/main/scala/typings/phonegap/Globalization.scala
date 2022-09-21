@@ -4,7 +4,6 @@ import typings.phonegap.anon.Dst
 import typings.phonegap.anon.Value
 import typings.phonegap.anon.ValueArray
 import typings.phonegap.anon.ValueNumber
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Globalization extends StObject {
   
   def dateToString(
-    date: Date,
+    date: js.Date,
     successCallback: js.Function1[/* properties */ Value, Unit],
     errorCallback: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
   def dateToString(
-    date: Date,
+    date: js.Date,
     successCallback: js.Function1[/* properties */ Value, Unit],
     errorCallback: js.Function1[/* error */ GlobalizationError, Unit],
     options: GlobalizationDateOptions
@@ -76,7 +75,7 @@ trait Globalization extends StObject {
   ): Unit = js.native
   
   def isDayLightSavingsTime(
-    date: Date,
+    date: js.Date,
     successCallback: js.Function1[/* properties */ Dst, Unit],
     errorCallback: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native

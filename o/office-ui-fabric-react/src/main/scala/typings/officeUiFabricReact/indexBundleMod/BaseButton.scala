@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "BaseButton")
 @js.native
-class BaseButton protected ()
+open class BaseButton protected ()
   extends typings.officeUiFabricReact.mod.BaseButton {
   def this(props: IBaseButtonProps) = this()
 }

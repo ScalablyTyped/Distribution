@@ -10,7 +10,7 @@ trait PropertyBag
      with /**
   * Additional Properties
   */
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[Any] {
   
   /**
     * A set of distinct strings that provide additional information.
@@ -30,6 +30,6 @@ object PropertyBag {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

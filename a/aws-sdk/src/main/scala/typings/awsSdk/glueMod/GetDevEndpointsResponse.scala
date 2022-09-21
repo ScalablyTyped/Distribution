@@ -29,7 +29,7 @@ object GetDevEndpointsResponse {
     
     inline def setDevEndpointsUndefined: Self = StObject.set(x, "DevEndpoints", js.undefined)
     
-    inline def setDevEndpointsVarargs(value: DevEndpoint*): Self = StObject.set(x, "DevEndpoints", js.Array(value :_*))
+    inline def setDevEndpointsVarargs(value: DevEndpoint*): Self = StObject.set(x, "DevEndpoints", js.Array(value*))
     
     inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

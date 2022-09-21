@@ -29,7 +29,7 @@ object ProcessorInfo {
     
     inline def setSupportedArchitecturesUndefined: Self = StObject.set(x, "SupportedArchitectures", js.undefined)
     
-    inline def setSupportedArchitecturesVarargs(value: ArchitectureType*): Self = StObject.set(x, "SupportedArchitectures", js.Array(value :_*))
+    inline def setSupportedArchitecturesVarargs(value: ArchitectureType*): Self = StObject.set(x, "SupportedArchitectures", js.Array(value*))
     
     inline def setSustainedClockSpeedInGhz(value: ProcessorSustainedClockSpeed): Self = StObject.set(x, "SustainedClockSpeedInGhz", value.asInstanceOf[js.Any])
     

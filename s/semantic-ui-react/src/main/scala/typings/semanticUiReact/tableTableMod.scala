@@ -3,11 +3,11 @@ package typings.semanticUiReact
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticCOLORS
 import typings.semanticUiReact.genericMod.SemanticShorthandCollection
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
@@ -41,7 +41,7 @@ object tableTableMod extends Shortcut {
   trait StrictTableProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Attach table to other content */
     var attached: js.UndefOr[Boolean | top | bottom] = js.undefined
@@ -49,7 +49,7 @@ object tableTableMod extends Shortcut {
     /** A table can reduce its complexity to increase readability. */
     var basic: js.UndefOr[Boolean | very] = js.undefined
     
-    /** A table may be divided each row into separate cells. */
+    /** A table may be divided into individual cells. */
     var celled: js.UndefOr[Boolean | internally] = js.undefined
     
     /** Primary content. */
@@ -100,7 +100,7 @@ object tableTableMod extends Shortcut {
       * @param {number} index - The index of the current element in `tableData`.
       * @returns {*} Shorthand for a Table.Row.
       */
-    var renderBodyRow: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, js.Any]] = js.undefined
+    var renderBodyRow: js.UndefOr[js.Function2[/* data */ Any, /* index */ Double, Any]] = js.undefined
     
     /** A table can have its rows appear selectable. */
     var selectable: js.UndefOr[Boolean] = js.undefined
@@ -124,7 +124,7 @@ object tableTableMod extends Shortcut {
     var structured: js.UndefOr[Boolean] = js.undefined
     
     /** Data to be passed to the renderBodyRow function. */
-    var tableData: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var tableData: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** A table can adjust its text alignment. */
     var textAlign: js.UndefOr[center | left | right] = js.undefined
@@ -144,7 +144,7 @@ object tableTableMod extends Shortcut {
     
     extension [Self <: StrictTableProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -212,7 +212,7 @@ object tableTableMod extends Shortcut {
       
       inline def setHeaderRowsUndefined: Self = StObject.set(x, "headerRows", js.undefined)
       
-      inline def setHeaderRowsVarargs(value: SemanticShorthandItem[TableRowProps]*): Self = StObject.set(x, "headerRows", js.Array(value :_*))
+      inline def setHeaderRowsVarargs(value: SemanticShorthandItem[TableRowProps]*): Self = StObject.set(x, "headerRows", js.Array(value*))
       
       inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
       
@@ -222,7 +222,7 @@ object tableTableMod extends Shortcut {
       
       inline def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
       
-      inline def setRenderBodyRow(value: (/* data */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "renderBodyRow", js.Any.fromFunction2(value))
+      inline def setRenderBodyRow(value: (/* data */ Any, /* index */ Double) => Any): Self = StObject.set(x, "renderBodyRow", js.Any.fromFunction2(value))
       
       inline def setRenderBodyRowUndefined: Self = StObject.set(x, "renderBodyRow", js.undefined)
       
@@ -254,11 +254,11 @@ object tableTableMod extends Shortcut {
       
       inline def setStructuredUndefined: Self = StObject.set(x, "structured", js.undefined)
       
-      inline def setTableData(value: js.Array[js.Any]): Self = StObject.set(x, "tableData", value.asInstanceOf[js.Any])
+      inline def setTableData(value: js.Array[Any]): Self = StObject.set(x, "tableData", value.asInstanceOf[js.Any])
       
       inline def setTableDataUndefined: Self = StObject.set(x, "tableData", js.undefined)
       
-      inline def setTableDataVarargs(value: js.Any*): Self = StObject.set(x, "tableData", js.Array(value :_*))
+      inline def setTableDataVarargs(value: Any*): Self = StObject.set(x, "tableData", js.Array(value*))
       
       inline def setTextAlign(value: center | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
@@ -279,23 +279,23 @@ object tableTableMod extends Shortcut {
     extends StObject
        with FunctionComponent[TableProps] {
     
-    var Body: StatelessComponent[TableBodyProps] = js.native
+    var Body: FC[TableBodyProps] = js.native
     
-    var Cell: StatelessComponent[TableCellProps] = js.native
+    var Cell: FC[TableCellProps] = js.native
     
-    var Footer: StatelessComponent[TableFooterProps] = js.native
+    var Footer: FC[TableFooterProps] = js.native
     
-    var Header: StatelessComponent[TableHeaderProps] = js.native
+    var Header: FC[TableHeaderProps] = js.native
     
-    var HeaderCell: StatelessComponent[TableHeaderCellProps] = js.native
+    var HeaderCell: FC[TableHeaderCellProps] = js.native
     
-    var Row: StatelessComponent[TableRowProps] = js.native
+    var Row: FC[TableRowProps] = js.native
   }
   
   trait TableProps
     extends StObject
        with StrictTableProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object TableProps {
     
     inline def apply(): TableProps = {

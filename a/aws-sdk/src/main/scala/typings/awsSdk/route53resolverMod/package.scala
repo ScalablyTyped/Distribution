@@ -1,35 +1,127 @@
 package typings.awsSdk.route53resolverMod
 
+import typings.awsSdk.awsSdkStrings.CNAME
+import typings.awsSdk.awsSdkStrings.REPLACE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccountId = java.lang.String
+type AccountId = String
 
-type Arn = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALLOW
+  - typings.awsSdk.awsSdkStrings.BLOCK
+  - typings.awsSdk.awsSdkStrings.ALERT
+  - java.lang.String
+*/
+type Action = _Action | String
+
+type Arn = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLE
+  - typings.awsSdk.awsSdkStrings.DISABLE
+  - java.lang.String
+*/
+type AutodefinedReverseFlag = _AutodefinedReverseFlag | String
+
+type BlockOverrideDnsType = CNAME | String
+
+type BlockOverrideDomain = String
+
+type BlockOverrideTtl = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NODATA
+  - typings.awsSdk.awsSdkStrings.NXDOMAIN
+  - typings.awsSdk.awsSdkStrings.OVERRIDE
+  - java.lang.String
+*/
+type BlockResponse = _BlockResponse | String
 
 type Boolean = scala.Boolean
 
-type Count = scala.Double
+type Count = Double
 
-type CreatorRequestId = java.lang.String
+type CreatorRequestId = String
 
-type DestinationArn = java.lang.String
+type DestinationArn = String
 
-type DomainName = java.lang.String
+type DomainListFileUrl = String
 
-type FilterName = java.lang.String
+type DomainName = String
 
-type FilterValue = java.lang.String
+type FilterName = String
 
-type FilterValues = js.Array[typings.awsSdk.route53resolverMod.FilterValue]
+type FilterValue = String
 
-type Filters = js.Array[typings.awsSdk.route53resolverMod.Filter]
+type FilterValues = js.Array[FilterValue]
 
-type Ip = java.lang.String
+type Filters = js.Array[Filter]
 
-type IpAddressCount = scala.Double
+type FirewallConfigList = js.Array[FirewallConfig]
+
+type FirewallDomainImportOperation = REPLACE | String
+
+type FirewallDomainListMetadataList = js.Array[FirewallDomainListMetadata]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.COMPLETE
+  - typings.awsSdk.awsSdkStrings.COMPLETE_IMPORT_FAILED
+  - typings.awsSdk.awsSdkStrings.IMPORTING
+  - typings.awsSdk.awsSdkStrings.DELETING
+  - typings.awsSdk.awsSdkStrings.UPDATING
+  - java.lang.String
+*/
+type FirewallDomainListStatus = _FirewallDomainListStatus | String
+
+type FirewallDomainName = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ADD
+  - typings.awsSdk.awsSdkStrings.REMOVE
+  - typings.awsSdk.awsSdkStrings.REPLACE
+  - java.lang.String
+*/
+type FirewallDomainUpdateOperation = _FirewallDomainUpdateOperation | String
+
+type FirewallDomains = js.Array[FirewallDomainName]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type FirewallFailOpenStatus = _FirewallFailOpenStatus | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.COMPLETE
+  - typings.awsSdk.awsSdkStrings.DELETING
+  - typings.awsSdk.awsSdkStrings.UPDATING
+  - java.lang.String
+*/
+type FirewallRuleGroupAssociationStatus = _FirewallRuleGroupAssociationStatus | String
+
+type FirewallRuleGroupAssociations = js.Array[FirewallRuleGroupAssociation]
+
+type FirewallRuleGroupMetadataList = js.Array[FirewallRuleGroupMetadata]
+
+type FirewallRuleGroupPolicy = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.COMPLETE
+  - typings.awsSdk.awsSdkStrings.DELETING
+  - typings.awsSdk.awsSdkStrings.UPDATING
+  - java.lang.String
+*/
+type FirewallRuleGroupStatus = _FirewallRuleGroupStatus | String
+
+type FirewallRules = js.Array[FirewallRule]
+
+type Ip = String
+
+type IpAddressCount = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -44,26 +136,63 @@ type IpAddressCount = scala.Double
   - typings.awsSdk.awsSdkStrings.DELETE_FAILED_FAS_EXPIRED
   - java.lang.String
 */
-type IpAddressStatus = typings.awsSdk.route53resolverMod._IpAddressStatus | java.lang.String
+type IpAddressStatus = _IpAddressStatus | String
 
-type IpAddressesRequest = js.Array[typings.awsSdk.route53resolverMod.IpAddressRequest]
+type IpAddressesRequest = js.Array[IpAddressRequest]
 
-type IpAddressesResponse = js.Array[typings.awsSdk.route53resolverMod.IpAddressResponse]
+type IpAddressesResponse = js.Array[IpAddressResponse]
 
-type MaxResults = scala.Double
+type ListDomainMaxResults = Double
 
-type Name = java.lang.String
+type ListFirewallConfigsMaxResult = Double
 
-type NextToken = java.lang.String
+type ListResolverConfigsMaxResult = Double
 
-type Port = scala.Double
+type MaxResults = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type MutationProtectionStatus = _MutationProtectionStatus | String
+
+type Name = String
+
+type NextToken = String
+
+type Port = Double
+
+type Priority = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLING
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLING
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type ResolverAutodefinedReverseStatus = _ResolverAutodefinedReverseStatus | String
+
+type ResolverConfigList = js.Array[ResolverConfig]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLING
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLING
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type ResolverDNSSECValidationStatus = _ResolverDNSSECValidationStatus | String
+
+type ResolverDnssecConfigList = js.Array[ResolverDnssecConfig]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INBOUND
   - typings.awsSdk.awsSdkStrings.OUTBOUND
   - java.lang.String
 */
-type ResolverEndpointDirection = typings.awsSdk.route53resolverMod._ResolverEndpointDirection | java.lang.String
+type ResolverEndpointDirection = _ResolverEndpointDirection | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -74,9 +203,9 @@ type ResolverEndpointDirection = typings.awsSdk.route53resolverMod._ResolverEndp
   - typings.awsSdk.awsSdkStrings.DELETING
   - java.lang.String
 */
-type ResolverEndpointStatus = typings.awsSdk.route53resolverMod._ResolverEndpointStatus | java.lang.String
+type ResolverEndpointStatus = _ResolverEndpointStatus | String
 
-type ResolverEndpoints = js.Array[typings.awsSdk.route53resolverMod.ResolverEndpoint]
+type ResolverEndpoints = js.Array[ResolverEndpoint]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -85,11 +214,11 @@ type ResolverEndpoints = js.Array[typings.awsSdk.route53resolverMod.ResolverEndp
   - typings.awsSdk.awsSdkStrings.INTERNAL_SERVICE_ERROR
   - java.lang.String
 */
-type ResolverQueryLogConfigAssociationError = typings.awsSdk.route53resolverMod._ResolverQueryLogConfigAssociationError | java.lang.String
+type ResolverQueryLogConfigAssociationError = _ResolverQueryLogConfigAssociationError | String
 
-type ResolverQueryLogConfigAssociationErrorMessage = java.lang.String
+type ResolverQueryLogConfigAssociationErrorMessage = String
 
-type ResolverQueryLogConfigAssociationList = js.Array[typings.awsSdk.route53resolverMod.ResolverQueryLogConfigAssociation]
+type ResolverQueryLogConfigAssociationList = js.Array[ResolverQueryLogConfigAssociation]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -99,13 +228,13 @@ type ResolverQueryLogConfigAssociationList = js.Array[typings.awsSdk.route53reso
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type ResolverQueryLogConfigAssociationStatus = typings.awsSdk.route53resolverMod._ResolverQueryLogConfigAssociationStatus | java.lang.String
+type ResolverQueryLogConfigAssociationStatus = _ResolverQueryLogConfigAssociationStatus | String
 
-type ResolverQueryLogConfigList = js.Array[typings.awsSdk.route53resolverMod.ResolverQueryLogConfig]
+type ResolverQueryLogConfigList = js.Array[ResolverQueryLogConfig]
 
-type ResolverQueryLogConfigName = java.lang.String
+type ResolverQueryLogConfigName = String
 
-type ResolverQueryLogConfigPolicy = java.lang.String
+type ResolverQueryLogConfigPolicy = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -114,7 +243,7 @@ type ResolverQueryLogConfigPolicy = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type ResolverQueryLogConfigStatus = typings.awsSdk.route53resolverMod._ResolverQueryLogConfigStatus | java.lang.String
+type ResolverQueryLogConfigStatus = _ResolverQueryLogConfigStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -124,11 +253,11 @@ type ResolverQueryLogConfigStatus = typings.awsSdk.route53resolverMod._ResolverQ
   - typings.awsSdk.awsSdkStrings.OVERRIDDEN
   - java.lang.String
 */
-type ResolverRuleAssociationStatus = typings.awsSdk.route53resolverMod._ResolverRuleAssociationStatus | java.lang.String
+type ResolverRuleAssociationStatus = _ResolverRuleAssociationStatus | String
 
-type ResolverRuleAssociations = js.Array[typings.awsSdk.route53resolverMod.ResolverRuleAssociation]
+type ResolverRuleAssociations = js.Array[ResolverRuleAssociation]
 
-type ResolverRulePolicy = java.lang.String
+type ResolverRulePolicy = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COMPLETE
@@ -137,13 +266,13 @@ type ResolverRulePolicy = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type ResolverRuleStatus = typings.awsSdk.route53resolverMod._ResolverRuleStatus | java.lang.String
+type ResolverRuleStatus = _ResolverRuleStatus | String
 
-type ResolverRules = js.Array[typings.awsSdk.route53resolverMod.ResolverRule]
+type ResolverRules = js.Array[ResolverRule]
 
-type ResourceId = java.lang.String
+type ResourceId = String
 
-type Rfc3339TimeString = java.lang.String
+type Rfc3339TimeString = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FORWARD
@@ -151,9 +280,11 @@ type Rfc3339TimeString = java.lang.String
   - typings.awsSdk.awsSdkStrings.RECURSIVE
   - java.lang.String
 */
-type RuleTypeOption = typings.awsSdk.route53resolverMod._RuleTypeOption | java.lang.String
+type RuleTypeOption = _RuleTypeOption | String
 
-type SecurityGroupIds = js.Array[typings.awsSdk.route53resolverMod.ResourceId]
+type SecurityGroupIds = js.Array[ResourceId]
+
+type ServicePrinciple = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_SHARED
@@ -161,34 +292,43 @@ type SecurityGroupIds = js.Array[typings.awsSdk.route53resolverMod.ResourceId]
   - typings.awsSdk.awsSdkStrings.SHARED_BY_ME
   - java.lang.String
 */
-type ShareStatus = typings.awsSdk.route53resolverMod._ShareStatus | java.lang.String
+type ShareStatus = _ShareStatus | String
 
-type SortByKey = java.lang.String
+type SortByKey = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASCENDING
   - typings.awsSdk.awsSdkStrings.DESCENDING
   - java.lang.String
 */
-type SortOrder = typings.awsSdk.route53resolverMod._SortOrder | java.lang.String
+type SortOrder = _SortOrder | String
 
-type StatusMessage = java.lang.String
+type StatusMessage = String
 
-type SubnetId = java.lang.String
+type SubnetId = String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.route53resolverMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.route53resolverMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type TargetList = js.Array[typings.awsSdk.route53resolverMod.TargetAddress]
+type TargetList = js.Array[TargetAddress]
+
+type Unsigned = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLE
+  - typings.awsSdk.awsSdkStrings.DISABLE
+  - java.lang.String
+*/
+type Validation = _Validation | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-04-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.route53resolverMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

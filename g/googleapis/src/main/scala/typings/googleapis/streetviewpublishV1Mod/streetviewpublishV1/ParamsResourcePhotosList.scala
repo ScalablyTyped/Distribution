@@ -1,9 +1,5 @@
 package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,44 +9,27 @@ trait ParamsResourcePhotosList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The filter expression. For example:
-    * `placeId=ChIJj61dQgK6j4AR4GeTYWZsKWw`.  The only filter supported at the
-    * moment is `placeId`.
+    * Optional. The filter expression. For example: `placeId=ChIJj61dQgK6j4AR4GeTYWZsKWw`. The filters supported are: `placeId`, `min_latitude`, `max_latitude`, `min_longitude`, and `max_longitude`. See https://google.aip.dev/160 for more information.
     */
   var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
-    * information, see
-    * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier. If
-    * language_code is unspecified, the user's language preference for Google
-    * services is used.
+    * Optional. The BCP-47 language code, such as "en-US" or "sr-Latn". For more information, see http://www.unicode.org/reports/tr35/#Unicode_locale_identifier. If language_code is unspecified, the user's language preference for Google services is used.
     */
   var languageCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of photos to return. `pageSize` must be non-negative.
-    * If `pageSize` is zero or is not provided, the default page size of 100 is
-    * used. The number of photos returned in the response may be less than
-    * `pageSize` if the number of photos that belong to the user is less than
-    * `pageSize`.
+    * Optional. The maximum number of photos to return. `pageSize` must be non-negative. If `pageSize` is zero or is not provided, the default page size of 100 is used. The number of photos returned in the response may be less than `pageSize` if the number of photos that belong to the user is less than `pageSize`.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The nextPageToken value returned from a previous ListPhotos request, if
-    * any.
+    * Optional. The nextPageToken value returned from a previous ListPhotos request, if any.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies if a download URL for the photos bytes should be returned in
-    * the Photos response.
+    * Required. Specifies if a download URL for the photos bytes should be returned in the Photos response.
     */
   var view: js.UndefOr[String] = js.undefined
 }
@@ -62,10 +41,6 @@ object ParamsResourcePhotosList {
   }
   
   extension [Self <: ParamsResourcePhotosList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

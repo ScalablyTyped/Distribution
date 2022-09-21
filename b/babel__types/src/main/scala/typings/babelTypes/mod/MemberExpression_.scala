@@ -12,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   extends StObject
      with BaseNode
      with Expression
-     with LVal {
+     with LVal
+     with Standardized {
   
   var computed: Boolean
   
-  var `object`: Expression
+  var `object`: Expression | Super_
   
   var optional: `true` | `false` | Null
   
@@ -27,7 +28,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object MemberExpression_ {
   
-  inline def apply(computed: Boolean, `object`: Expression, property: Expression | Identifier_ | PrivateName_): MemberExpression_ = {
+  inline def apply(
+    computed: Boolean,
+    `object`: Expression | Super_,
+    property: Expression | Identifier_ | PrivateName_
+  ): MemberExpression_ = {
     val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null)
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MemberExpression")
@@ -38,7 +43,7 @@ object MemberExpression_ {
     
     inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
-    inline def setObject(value: Expression): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Expression | Super_): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     inline def setOptional(value: `true` | `false`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     

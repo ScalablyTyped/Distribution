@@ -73,7 +73,7 @@ trait AgentServicesProvider
   
   def jobAction(ownerUri: String, jobName: String, action: String): Thenable[ResultStatus]
   
-  def registerOnUpdated(handler: js.Function0[js.Any]): Unit
+  def registerOnUpdated(handler: js.Function0[Any]): Unit
   
   def updateAlert(ownerUri: String, originalAlertName: String, alertInfo: AgentAlertInfo): Thenable[UpdateAgentAlertResult]
   
@@ -85,7 +85,7 @@ trait AgentServicesProvider
   
   def updateNotebook(
     ownerUri: String,
-    originialNotebookName: String,
+    originalNotebookName: String,
     notebook: AgentNotebookInfo,
     templateFilePath: String
   ): Thenable[UpdateAgentNotebookResult]
@@ -140,7 +140,7 @@ object AgentServicesProvider {
     getTemplateNotebook: (String, String, String) => Thenable[AgentNotebookTemplateResult],
     jobAction: (String, String, String) => Thenable[ResultStatus],
     providerId: String,
-    registerOnUpdated: js.Function0[js.Any] => Unit,
+    registerOnUpdated: js.Function0[Any] => Unit,
     updateAlert: (String, String, AgentAlertInfo) => Thenable[UpdateAgentAlertResult],
     updateJob: (String, String, AgentJobInfo) => Thenable[UpdateAgentJobResult],
     updateJobSchedule: (String, String, AgentJobScheduleInfo) => Thenable[UpdateAgentJobScheduleResult],
@@ -213,7 +213,7 @@ object AgentServicesProvider {
     
     inline def setJobAction(value: (String, String, String) => Thenable[ResultStatus]): Self = StObject.set(x, "jobAction", js.Any.fromFunction3(value))
     
-    inline def setRegisterOnUpdated(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "registerOnUpdated", js.Any.fromFunction1(value))
+    inline def setRegisterOnUpdated(value: js.Function0[Any] => Unit): Self = StObject.set(x, "registerOnUpdated", js.Any.fromFunction1(value))
     
     inline def setUpdateAlert(value: (String, String, AgentAlertInfo) => Thenable[UpdateAgentAlertResult]): Self = StObject.set(x, "updateAlert", js.Any.fromFunction3(value))
     

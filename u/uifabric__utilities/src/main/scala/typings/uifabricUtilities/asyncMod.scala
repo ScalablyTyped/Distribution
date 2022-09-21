@@ -12,28 +12,28 @@ object asyncMod {
   
   @JSImport("@uifabric/utilities/lib/Async", "Async")
   @js.native
-  class Async () extends StObject {
+  open class Async () extends StObject {
     def this(parent: js.Object) = this()
-    def this(parent: js.Object, onError: js.Function1[/* e */ js.Any, Unit]) = this()
-    def this(parent: Unit, onError: js.Function1[/* e */ js.Any, Unit]) = this()
+    def this(parent: js.Object, onError: js.Function1[/* e */ Any, Unit]) = this()
+    def this(parent: Unit, onError: js.Function1[/* e */ Any, Unit]) = this()
     
-    /* private */ var _animationFrameIds: js.Any = js.native
+    /* private */ var _animationFrameIds: Any = js.native
     
-    /* private */ var _immediateIds: js.Any = js.native
+    /* private */ var _immediateIds: Any = js.native
     
-    /* private */ var _intervalIds: js.Any = js.native
+    /* private */ var _intervalIds: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* protected */ def _logError(e: js.Any): Unit = js.native
+    /* protected */ def _logError(e: Any): Unit = js.native
     
-    /* private */ var _noop: js.Any = js.native
+    /* private */ var _noop: Any = js.native
     
-    /* private */ var _onErrorHandler: js.Any = js.native
+    /* private */ var _onErrorHandler: Any = js.native
     
-    /* private */ var _parent: js.Any = js.native
+    /* private */ var _parent: Any = js.native
     
-    /* private */ var _timeoutIds: js.Any = js.native
+    /* private */ var _timeoutIds: Any = js.native
     
     def cancelAnimationFrame(id: Double): Unit = js.native
     def cancelAnimationFrame(id: Double, targetElement: Element): Unit = js.native
@@ -73,10 +73,10 @@ object asyncMod {
       * @param options - The options object.
       * @returns The new debounced function.
       */
-    def debounce[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T): ICancelable[T] & T = js.native
-    def debounce[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Double): ICancelable[T] & T = js.native
-    def debounce[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Double, options: MaxWait): ICancelable[T] & T = js.native
-    def debounce[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Unit, options: MaxWait): ICancelable[T] & T = js.native
+    def debounce[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T): ICancelable[T] & T = js.native
+    def debounce[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: Double): ICancelable[T] & T = js.native
+    def debounce[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: Double, options: MaxWait): ICancelable[T] & T = js.native
+    def debounce[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: Unit, options: MaxWait): ICancelable[T] & T = js.native
     
     /**
       * Dispose function, clears all async operations.
@@ -125,13 +125,13 @@ object asyncMod {
       * @param options - The options object.
       * @returns The new throttled function.
       */
-    def throttle[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T): T = js.native
-    def throttle[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Double): T = js.native
-    def throttle[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Double, options: Leading): T = js.native
-    def throttle[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Unit, options: Leading): T = js.native
+    def throttle[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T): T = js.native
+    def throttle[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: Double): T = js.native
+    def throttle[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: Double, options: Leading): T = js.native
+    def throttle[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: Unit, options: Leading): T = js.native
   }
   
-  trait ICancelable[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] extends StObject {
+  trait ICancelable[T /* <: js.Function1[/* repeated */ Any, Any] */] extends StObject {
     
     def cancel(): Unit
     
@@ -141,12 +141,12 @@ object asyncMod {
   }
   object ICancelable {
     
-    inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](cancel: () => Unit, flush: () => ReturnType[T], pending: () => Boolean): ICancelable[T] = {
+    inline def apply[T /* <: js.Function1[/* repeated */ Any, Any] */](cancel: () => Unit, flush: () => ReturnType[T], pending: () => Boolean): ICancelable[T] = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), flush = js.Any.fromFunction0(flush), pending = js.Any.fromFunction0(pending))
       __obj.asInstanceOf[ICancelable[T]]
     }
     
-    extension [Self <: ICancelable[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & ICancelable[T]) {
+    extension [Self <: ICancelable[?], T /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & ICancelable[T]) {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       

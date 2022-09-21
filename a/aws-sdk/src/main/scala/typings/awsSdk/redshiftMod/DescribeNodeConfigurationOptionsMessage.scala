@@ -22,7 +22,7 @@ trait DescribeNodeConfigurationOptionsMessage extends StObject {
   var Filters: js.UndefOr[NodeConfigurationOptionsFilterList] = js.undefined
   
   /**
-    * An optional parameter that specifies the starting point to return a set of response records. When the results of a DescribeNodeConfigurationOptions request exceed the value specified in MaxRecords, AWS returns a value in the Marker field of the response. You can retrieve the next set of response records by providing the returned marker value in the Marker parameter and retrying the request. 
+    * An optional parameter that specifies the starting point to return a set of response records. When the results of a DescribeNodeConfigurationOptions request exceed the value specified in MaxRecords, Amazon Web Services returns a value in the Marker field of the response. You can retrieve the next set of response records by providing the returned marker value in the Marker parameter and retrying the request. 
     */
   var Marker: js.UndefOr[String] = js.undefined
   
@@ -32,9 +32,14 @@ trait DescribeNodeConfigurationOptionsMessage extends StObject {
   var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The AWS customer account used to create or copy the snapshot. Required if you are restoring a snapshot you do not own, optional if you own the snapshot.
+    * The Amazon Web Services account used to create or copy the snapshot. Required if you are restoring a snapshot you do not own, optional if you own the snapshot.
     */
   var OwnerAccount: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the snapshot associated with the message to describe node configuration.
+    */
+  var SnapshotArn: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier of the snapshot to evaluate for possible node configurations.
@@ -60,7 +65,7 @@ object DescribeNodeConfigurationOptionsMessage {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: NodeConfigurationOptionsFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: NodeConfigurationOptionsFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
@@ -73,6 +78,10 @@ object DescribeNodeConfigurationOptionsMessage {
     inline def setOwnerAccount(value: String): Self = StObject.set(x, "OwnerAccount", value.asInstanceOf[js.Any])
     
     inline def setOwnerAccountUndefined: Self = StObject.set(x, "OwnerAccount", js.undefined)
+    
+    inline def setSnapshotArn(value: String): Self = StObject.set(x, "SnapshotArn", value.asInstanceOf[js.Any])
+    
+    inline def setSnapshotArnUndefined: Self = StObject.set(x, "SnapshotArn", js.undefined)
     
     inline def setSnapshotIdentifier(value: String): Self = StObject.set(x, "SnapshotIdentifier", value.asInstanceOf[js.Any])
     

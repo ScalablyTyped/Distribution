@@ -17,17 +17,17 @@ object anon {
     def apply[U](onFulfill: js.Function1[/* value */ T, Resolvable[U]]): Bluebird[U] = js.native
     def apply[U](
       onFulfill: js.Function1[/* value */ T, Resolvable[U]],
-      onReject: js.Function1[/* error */ js.Any, Resolvable[U]]
+      onReject: js.Function1[/* error */ Any, Resolvable[U]]
     ): Bluebird[U] = js.native
-    def apply[U](onFulfill: Unit, onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U] = js.native
-    def apply[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
+    def apply[U](onFulfill: Unit, onReject: js.Function1[/* error */ Any, Resolvable[U]]): Bluebird[U] = js.native
+    def apply[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
   }
   
   @js.native
   trait FnCallFilter1Filter2Filter3Filter4Filter5OnReject[T] extends StObject {
     
     def apply[U](): Bluebird[U | T] = js.native
-    def apply[U](onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U | T] = js.native
+    def apply[U](onReject: js.Function1[/* error */ Any, Resolvable[U]]): Bluebird[U | T] = js.native
     def apply[U, E1](
       // tslint:disable-next-line:unified-signatures
     filter1: CatchFilter[E1],

@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("AjaxNavigate")
 @js.native
-class AjaxNavigate_ ()
+open class AjaxNavigate_ ()
   extends StObject
      with AjaxNavigate {
   
   /* CompleteClass */
-  override def add_navigate(handler: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
+  override def add_navigate(handler: js.Function2[/* obj */ Any, /* eventArgs */ Any, Unit]): Unit = js.native
   
   /* CompleteClass */
   override def convertMDSURLtoRegularURL(mdsPath: String): String = js.native
@@ -35,7 +35,7 @@ class AjaxNavigate_ ()
   override def get_search(): String = js.native
   
   /* CompleteClass */
-  override def remove_navigate(handler: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit]): Unit = js.native
+  override def remove_navigate(handler: js.Function2[/* obj */ Any, /* eventArgs */ Any, Unit]): Unit = js.native
   
   /* CompleteClass */
   override def submit(formToSubmit: HTMLFormElement): Unit = js.native

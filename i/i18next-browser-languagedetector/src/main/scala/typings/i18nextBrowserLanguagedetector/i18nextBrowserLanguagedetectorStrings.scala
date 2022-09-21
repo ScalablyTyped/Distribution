@@ -19,6 +19,10 @@ object i18nextBrowserLanguagedetectorStrings {
   inline def languageDetector: languageDetector = "languageDetector".asInstanceOf[languageDetector]
   
   @js.native
+  sealed trait lax extends StObject
+  inline def lax: lax = "lax".asInstanceOf[lax]
+  
+  @js.native
   sealed trait localStorage extends StObject
   inline def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
   
@@ -27,10 +31,18 @@ object i18nextBrowserLanguagedetectorStrings {
   inline def navigator: navigator = "navigator".asInstanceOf[navigator]
   
   @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
   sealed trait querystring extends StObject
   inline def querystring: querystring = "querystring".asInstanceOf[querystring]
   
   @js.native
   sealed trait sessionStorage extends StObject
   inline def sessionStorage: sessionStorage = "sessionStorage".asInstanceOf[sessionStorage]
+  
+  @js.native
+  sealed trait strict extends StObject
+  inline def strict: strict = "strict".asInstanceOf[strict]
 }

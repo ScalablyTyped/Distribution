@@ -43,7 +43,7 @@ trait Filter extends StObject {
   /** When set to the `next_page_token` from a prior response, provides the next page of results. */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** Required. The project and location from which to list `Registration`s, specified in the format `projects/∗/locations/ *`. */
+  /** Required. The project and location from which to list `Registration`s, specified in the format `projects/ *‍/locations/ *`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

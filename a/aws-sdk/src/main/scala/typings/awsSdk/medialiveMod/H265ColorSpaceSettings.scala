@@ -8,6 +8,8 @@ trait H265ColorSpaceSettings extends StObject {
   
   var ColorSpacePassthroughSettings: js.UndefOr[typings.awsSdk.medialiveMod.ColorSpacePassthroughSettings] = js.undefined
   
+  var DolbyVision81Settings: js.UndefOr[typings.awsSdk.medialiveMod.DolbyVision81Settings] = js.undefined
+  
   var Hdr10Settings: js.UndefOr[typings.awsSdk.medialiveMod.Hdr10Settings] = js.undefined
   
   var Rec601Settings: js.UndefOr[typings.awsSdk.medialiveMod.Rec601Settings] = js.undefined
@@ -26,6 +28,10 @@ object H265ColorSpaceSettings {
     inline def setColorSpacePassthroughSettings(value: ColorSpacePassthroughSettings): Self = StObject.set(x, "ColorSpacePassthroughSettings", value.asInstanceOf[js.Any])
     
     inline def setColorSpacePassthroughSettingsUndefined: Self = StObject.set(x, "ColorSpacePassthroughSettings", js.undefined)
+    
+    inline def setDolbyVision81Settings(value: DolbyVision81Settings): Self = StObject.set(x, "DolbyVision81Settings", value.asInstanceOf[js.Any])
+    
+    inline def setDolbyVision81SettingsUndefined: Self = StObject.set(x, "DolbyVision81Settings", js.undefined)
     
     inline def setHdr10Settings(value: Hdr10Settings): Self = StObject.set(x, "Hdr10Settings", value.asInstanceOf[js.Any])
     

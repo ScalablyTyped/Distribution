@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.Glyph")
 @js.native
-class Glyph protected ()
+open class Glyph protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.Glyph {
   def this(code: String, point: Double) = this()

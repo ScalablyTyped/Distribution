@@ -1,9 +1,7 @@
 package typings.nodemailerMailgunTransport
 
-import typings.nodemailer.mod.SentMessageInfo
 import typings.nodemailer.mod.Transport
 import typings.nodemailer.nodemailerBooleans.`true`
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,22 +16,22 @@ object mod {
   
   @JSImport("nodemailer-mailgun-transport", "MailgunTransport")
   @js.native
-  class MailgunTransport ()
+  open class MailgunTransport ()
     extends StObject
-       with Transport {
+       with Transport[Any] {
     
     /* CompleteClass */
     var name: String = js.native
     
     /* CompleteClass */
     override def send(
-      mail: typings.nodemailer.mailMessageMod.^,
-      callback: js.Function2[/* err */ Error | Null, /* info */ SentMessageInfo, Unit]
+      mail: typings.nodemailer.mailMessageMod.^[Any],
+      callback: js.Function2[/* err */ js.Error | Null, Any, Unit]
     ): Unit = js.native
     
     /* CompleteClass */
     var verify: (js.UndefOr[
-        js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
+        js.Function1[/* callback */ js.Function2[/* err */ js.Error | Null, `true`, Unit], Unit]
       ]) & js.UndefOr[js.Function0[js.Promise[`true`]]] = js.native
     
     /* CompleteClass */

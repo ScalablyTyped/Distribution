@@ -7,9 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGAttributes
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var d: js.UndefOr[String | SVGPathArray] = js.undefined
+  
+  var dx: js.UndefOr[Double] = js.undefined
+  
+  var dy: js.UndefOr[Double] = js.undefined
   
   var fill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
@@ -52,7 +56,15 @@ object SVGAttributes {
     
     inline def setDVarargs(
       value: (js.Array[SVGPathCommand] | (js.Tuple2[SVGPathCommand, Double]) | (js.Tuple3[SVGPathCommand, Double, Double]) | (js.Tuple5[SVGPathCommand, Double, Double, Double, Double]) | (js.Tuple7[SVGPathCommand, Double, Double, Double, Double, Double, Double]) | (js.Tuple8[SVGPathCommand, Double, Double, Double, Double, Double, Double, Double]))*
-    ): Self = StObject.set(x, "d", js.Array(value :_*))
+    ): Self = StObject.set(x, "d", js.Array(value*))
+    
+    inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+    
+    inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
+    
+    inline def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    
+    inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
     inline def setFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
@@ -66,7 +78,7 @@ object SVGAttributes {
     
     inline def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
     
-    inline def setMatrixVarargs(value: Double*): Self = StObject.set(x, "matrix", js.Array(value :_*))
+    inline def setMatrixVarargs(value: Double*): Self = StObject.set(x, "matrix", js.Array(value*))
     
     inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     

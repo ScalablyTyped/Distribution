@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("blessed", "Widgets.LayoutElement")
 @js.native
-class LayoutElement () extends BlessedElement {
+open class LayoutElement () extends BlessedElement {
   def this(options: LayoutOptions) = this()
   
   /**

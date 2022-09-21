@@ -36,7 +36,7 @@ object LogicalTable {
     
     inline def setDataTransformsUndefined: Self = StObject.set(x, "DataTransforms", js.undefined)
     
-    inline def setDataTransformsVarargs(value: TransformOperation*): Self = StObject.set(x, "DataTransforms", js.Array(value :_*))
+    inline def setDataTransformsVarargs(value: TransformOperation*): Self = StObject.set(x, "DataTransforms", js.Array(value*))
     
     inline def setSource(value: LogicalTableSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }

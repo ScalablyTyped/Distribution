@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "Expression")
 @js.native
-class Expression () extends StObject {
+open class Expression () extends StObject {
   
   /**
     * Accepts an expression visitor.
@@ -16,7 +16,7 @@ class Expression () extends StObject {
   /**
     * Assigns a value to the property represented by the expression.
     */
-  def assign(scope: Scope, value: js.Any, lookupFunctions: LookupFunctions): Unit = js.native
+  def assign(scope: Scope, value: Any, lookupFunctions: LookupFunctions): Unit = js.native
   
   /**
     * Subscribes a binding instance to the property change events along the path of the expression.
@@ -28,6 +28,6 @@ class Expression () extends StObject {
     * @param scope The scope (bindingContext + overrideContext)
     * @param lookupFunctions Required for BindingBehavior and ValueConverter expressions.
     */
-  def evaluate(scope: Scope): js.Any = js.native
-  def evaluate(scope: Scope, lookupFunctions: LookupFunctions): js.Any = js.native
+  def evaluate(scope: Scope): Any = js.native
+  def evaluate(scope: Scope, lookupFunctions: LookupFunctions): Any = js.native
 }

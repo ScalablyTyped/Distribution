@@ -12,7 +12,7 @@ trait Options extends StObject {
   
   var query: String | QueryFile
   
-  var values: js.UndefOr[js.Any] = js.undefined
+  var values: js.UndefOr[Any] = js.undefined
 }
 object Options {
   
@@ -29,7 +29,7 @@ object Options {
     
     inline def setQuery(value: String | QueryFile): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }

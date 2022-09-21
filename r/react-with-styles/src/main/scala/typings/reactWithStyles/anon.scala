@@ -267,7 +267,7 @@ object anon {
     extends StObject
        with /* propertyName */ /* pseudoSelectorOrMediaQuery */ StringDictionary[
           js.UndefOr[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 261 */ js.Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 261 */ Any
           ]
         ] {
     
@@ -486,7 +486,7 @@ object anon {
     /**
       * Defines the list of animations that apply to the element.
       */
-    var animationName: js.UndefOr[CSSWideKeyword | String | js.Array[js.Any] | js.Any] = js.undefined
+    var animationName: js.UndefOr[CSSWideKeyword | String | js.Array[Any] | Any] = js.undefined
     
     /**
       * Defines whether an animation is running or paused.
@@ -1957,11 +1957,11 @@ object anon {
       
       inline def setAnimationIterationCountUndefined: Self = StObject.set(x, "animationIterationCount", js.undefined)
       
-      inline def setAnimationName(value: CSSWideKeyword | String | js.Array[js.Any] | js.Any): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
+      inline def setAnimationName(value: CSSWideKeyword | String | js.Array[Any] | Any): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
       
       inline def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
       
-      inline def setAnimationNameVarargs(value: js.Any*): Self = StObject.set(x, "animationName", js.Array(value :_*))
+      inline def setAnimationNameVarargs(value: Any*): Self = StObject.set(x, "animationName", js.Array(value*))
       
       inline def setAnimationPlayState(value: CSSWideKeyword | running | paused): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
       
@@ -2597,7 +2597,7 @@ object anon {
       
       inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
-      inline def setFontFamilyVarargs(value: (FontFamily | CSSWideKeyword)*): Self = StObject.set(x, "fontFamily", js.Array(value :_*))
+      inline def setFontFamilyVarargs(value: (FontFamily | CSSWideKeyword)*): Self = StObject.set(x, "fontFamily", js.Array(value*))
       
       inline def setFontKerning(value: CSSWideKeyword | auto | normal | none): Self = StObject.set(x, "fontKerning", value.asInstanceOf[js.Any])
       
@@ -3369,45 +3369,45 @@ object anon {
   
   trait Direction extends StObject {
     
-    var direction: js.UndefOr[js.Any] = js.undefined
+    var direction: js.UndefOr[Any] = js.undefined
     
-    var stylesInterface: js.Any
+    var stylesInterface: Any
     
-    var stylesTheme: js.Any
+    var stylesTheme: Any
   }
   object Direction {
     
-    inline def apply(stylesInterface: js.Any, stylesTheme: js.Any): Direction = {
+    inline def apply(stylesInterface: Any, stylesTheme: Any): Direction = {
       val __obj = js.Dynamic.literal(stylesInterface = stylesInterface.asInstanceOf[js.Any], stylesTheme = stylesTheme.asInstanceOf[js.Any])
       __obj.asInstanceOf[Direction]
     }
     
     extension [Self <: Direction](x: Self) {
       
-      inline def setDirection(value: js.Any): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Any): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      inline def setStylesInterface(value: js.Any): Self = StObject.set(x, "stylesInterface", value.asInstanceOf[js.Any])
+      inline def setStylesInterface(value: Any): Self = StObject.set(x, "stylesInterface", value.asInstanceOf[js.Any])
       
-      inline def setStylesTheme(value: js.Any): Self = StObject.set(x, "stylesTheme", value.asInstanceOf[js.Any])
+      inline def setStylesTheme(value: Any): Self = StObject.set(x, "stylesTheme", value.asInstanceOf[js.Any])
     }
   }
   
   trait StylesFn[TStyles /* <: Styles */] extends StObject {
     
-    def stylesFn(args: js.Any*): TStyles
+    def stylesFn(args: Any*): TStyles
   }
   object StylesFn {
     
-    inline def apply[TStyles /* <: Styles */](stylesFn: /* repeated */ js.Any => TStyles): StylesFn[TStyles] = {
+    inline def apply[TStyles /* <: Styles */](stylesFn: /* repeated */ Any => TStyles): StylesFn[TStyles] = {
       val __obj = js.Dynamic.literal(stylesFn = js.Any.fromFunction1(stylesFn))
       __obj.asInstanceOf[StylesFn[TStyles]]
     }
     
     extension [Self <: StylesFn[?], TStyles /* <: Styles */](x: Self & StylesFn[TStyles]) {
       
-      inline def setStylesFn(value: /* repeated */ js.Any => TStyles): Self = StObject.set(x, "stylesFn", js.Any.fromFunction1(value))
+      inline def setStylesFn(value: /* repeated */ Any => TStyles): Self = StObject.set(x, "stylesFn", js.Any.fromFunction1(value))
     }
   }
 }

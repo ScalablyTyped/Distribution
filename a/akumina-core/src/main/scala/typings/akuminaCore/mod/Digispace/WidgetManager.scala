@@ -8,9 +8,9 @@ object WidgetManager {
   
   @JSImport("akumina-core", "Digispace.WidgetManager.Menu")
   @js.native
-  class Menu protected () extends StObject {
-    def this(p: js.Any) = this()
+  open class Menu protected () extends StObject {
+    def this(p: Any) = this()
     
-    def Open(parent: js.Any): js.Any = js.native
+    def Open(parent: Any): Any = js.native
   }
 }

@@ -13,7 +13,7 @@ object pickAssignMod {
   
   inline def pickAssign(shouldPick: TestString, sources: js.Array[Props]): Props = (^.asInstanceOf[js.Dynamic].applyDynamic("pickAssign")(shouldPick.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[Props]
   
-  type Props = StringDictionary[js.Any]
+  type Props = StringDictionary[Any]
   
   type TestString = js.Function1[/* key */ String, Boolean]
 }

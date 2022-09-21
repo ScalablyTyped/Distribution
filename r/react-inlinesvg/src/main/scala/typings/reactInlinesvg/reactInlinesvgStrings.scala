@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactInlinesvgStrings {
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait additions extends StObject
   inline def additions: additions = "additions".asInstanceOf[additions]
   
@@ -19,8 +23,20 @@ object reactInlinesvgStrings {
   inline def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
   
   @js.native
+  sealed trait `after-edge` extends StObject
+  inline def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
+  
+  @js.native
   sealed trait all extends StObject
   inline def all: all = "all".asInstanceOf[all]
+  
+  @js.native
+  sealed trait alphabetic extends StObject
+  inline def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
+  
+  @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
   sealed trait ascending extends StObject
@@ -31,8 +47,32 @@ object reactInlinesvgStrings {
   inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
+  sealed trait baseline extends StObject
+  inline def baseline: baseline = "baseline".asInstanceOf[baseline]
+  
+  @js.native
+  sealed trait `before-edge` extends StObject
+  inline def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
+  
+  @js.native
+  sealed trait bevel extends StObject
+  inline def bevel: bevel = "bevel".asInstanceOf[bevel]
+  
+  @js.native
   sealed trait both extends StObject
   inline def both: both = "both".asInstanceOf[both]
+  
+  @js.native
+  sealed trait butt extends StObject
+  inline def butt: butt = "butt".asInstanceOf[butt]
+  
+  @js.native
+  sealed trait central extends StObject
+  inline def central: central = "central".asInstanceOf[central]
   
   @js.native
   sealed trait copy extends StObject
@@ -43,10 +83,6 @@ object reactInlinesvgStrings {
   inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait decimal extends StObject
-  inline def decimal: decimal = "decimal".asInstanceOf[decimal]
-  
-  @js.native
   sealed trait descending extends StObject
   inline def descending: descending = "descending".asInstanceOf[descending]
   
@@ -55,8 +91,8 @@ object reactInlinesvgStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait email extends StObject
-  inline def email: email = "email".asInstanceOf[email]
+  sealed trait evenodd extends StObject
+  inline def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   
   @js.native
   sealed trait execute extends StObject
@@ -71,16 +107,36 @@ object reactInlinesvgStrings {
   inline def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
+  sealed trait hanging extends StObject
+  inline def hanging: hanging = "hanging".asInstanceOf[hanging]
+  
+  @js.native
   sealed trait horizontal extends StObject
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @js.native
+  sealed trait ideographic extends StObject
+  inline def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
   
   @js.native
   sealed trait inherit extends StObject
   inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
+  sealed trait initial extends StObject
+  inline def initial: initial = "initial".asInstanceOf[initial]
+  
+  @js.native
   sealed trait `inline` extends StObject
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @js.native
+  sealed trait isolated extends StObject
+  inline def isolated: isolated = "isolated".asInstanceOf[isolated]
+  
+  @js.native
+  sealed trait linearRGB extends StObject
+  inline def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
   
   @js.native
   sealed trait link extends StObject
@@ -99,8 +155,24 @@ object reactInlinesvgStrings {
   inline def location: location = "location".asInstanceOf[location]
   
   @js.native
+  sealed trait mathematical extends StObject
+  inline def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
+  
+  @js.native
+  sealed trait medial extends StObject
+  inline def medial: medial = "medial".asInstanceOf[medial]
+  
+  @js.native
   sealed trait menu extends StObject
   inline def menu: menu = "menu".asInstanceOf[menu]
+  
+  @js.native
+  sealed trait middle extends StObject
+  inline def middle: middle = "middle".asInstanceOf[middle]
+  
+  @js.native
+  sealed trait miter extends StObject
+  inline def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
   sealed trait mixed extends StObject
@@ -119,16 +191,12 @@ object reactInlinesvgStrings {
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait numeric extends StObject
-  inline def numeric: numeric = "numeric".asInstanceOf[numeric]
+  sealed trait nonzero extends StObject
+  inline def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   
   @js.native
   sealed trait off extends StObject
   inline def off: off = "off".asInstanceOf[off]
-  
-  @js.native
-  sealed trait on extends StObject
-  inline def on: on = "on".asInstanceOf[on]
   
   @js.native
   sealed trait other extends StObject
@@ -159,20 +227,36 @@ object reactInlinesvgStrings {
   inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait search extends StObject
-  inline def search: search = "search".asInstanceOf[search]
+  sealed trait replace extends StObject
+  inline def replace: replace = "replace".asInstanceOf[replace]
+  
+  @js.native
+  sealed trait round extends StObject
+  inline def round: round = "round".asInstanceOf[round]
+  
+  @js.native
+  sealed trait sRGB extends StObject
+  inline def sRGB: sRGB = "sRGB".asInstanceOf[sRGB]
   
   @js.native
   sealed trait spelling extends StObject
   inline def spelling: spelling = "spelling".asInstanceOf[spelling]
   
   @js.native
+  sealed trait square extends StObject
+  inline def square: square = "square".asInstanceOf[square]
+  
+  @js.native
   sealed trait step extends StObject
   inline def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait tel extends StObject
-  inline def tel: tel = "tel".asInstanceOf[tel]
+  sealed trait sum extends StObject
+  inline def sum: sum = "sum".asInstanceOf[sum]
+  
+  @js.native
+  sealed trait terminal extends StObject
+  inline def terminal: terminal = "terminal".asInstanceOf[terminal]
   
   @js.native
   sealed trait text extends StObject
@@ -187,6 +271,14 @@ object reactInlinesvgStrings {
   inline def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
   
   @js.native
+  sealed trait `text-after-edge` extends StObject
+  inline def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
+  
+  @js.native
+  sealed trait `text-before-edge` extends StObject
+  inline def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
+  
+  @js.native
   sealed trait time extends StObject
   inline def time: time = "time".asInstanceOf[time]
   
@@ -195,8 +287,8 @@ object reactInlinesvgStrings {
   inline def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
-  sealed trait url extends StObject
-  inline def url: url = "url".asInstanceOf[url]
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
   sealed trait vertical extends StObject

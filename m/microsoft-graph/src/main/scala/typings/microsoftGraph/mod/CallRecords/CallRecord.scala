@@ -13,7 +13,7 @@ trait CallRecord
   
   /**
     * UTC time when the last user left the call. The DateTimeOffset type represents date and time information using ISO 8601
-    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var endDateTime: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait CallRecord
   
   /**
     * UTC time when the call record was created. The DatetimeOffset type represents date and time information using ISO 8601
-    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
@@ -46,8 +46,7 @@ trait CallRecord
   
   /**
     * UTC time when the first user joined the call. The DatetimeOffset type represents date and time information using ISO
-    * 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
-    * '2014-01-01T00:00:00Z'
+    * 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     */
   var startDateTime: js.UndefOr[String] = js.undefined
   
@@ -87,7 +86,7 @@ object CallRecord {
     
     inline def setModalitiesUndefined: Self = StObject.set(x, "modalities", js.undefined)
     
-    inline def setModalitiesVarargs(value: Modality*): Self = StObject.set(x, "modalities", js.Array(value :_*))
+    inline def setModalitiesVarargs(value: Modality*): Self = StObject.set(x, "modalities", js.Array(value*))
     
     inline def setOrganizer(value: NullableOption[IdentitySet]): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
     
@@ -101,7 +100,7 @@ object CallRecord {
     
     inline def setParticipantsUndefined: Self = StObject.set(x, "participants", js.undefined)
     
-    inline def setParticipantsVarargs(value: IdentitySet*): Self = StObject.set(x, "participants", js.Array(value :_*))
+    inline def setParticipantsVarargs(value: IdentitySet*): Self = StObject.set(x, "participants", js.Array(value*))
     
     inline def setSessions(value: NullableOption[js.Array[Session]]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
     
@@ -109,7 +108,7 @@ object CallRecord {
     
     inline def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
     
-    inline def setSessionsVarargs(value: Session*): Self = StObject.set(x, "sessions", js.Array(value :_*))
+    inline def setSessionsVarargs(value: Session*): Self = StObject.set(x, "sessions", js.Array(value*))
     
     inline def setStartDateTime(value: String): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     

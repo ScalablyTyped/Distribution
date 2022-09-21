@@ -11,7 +11,7 @@ object poseGroupMod {
   
   @JSImport("react-pose/lib/components/Transition/PoseGroup", JSImport.Default)
   @js.native
-  class default () extends PoseGroup
+  open class default () extends PoseGroup
   /* static members */
   object default {
     
@@ -27,5 +27,5 @@ object poseGroupMod {
   
   @js.native
   trait PoseGroup
-    extends Component[Props, js.Object, js.Any]
+    extends Component[Props, js.Object, Any]
 }

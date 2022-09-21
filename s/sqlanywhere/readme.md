@@ -10,10 +10,10 @@ SQL Anywhere JavaScript Driver.
 | ------------------ | :-------------: |
 | Full name          | sqlanywhere |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 6984 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 261.6666666666667 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/sqlanywhere/node-sqlanywhere#readme)

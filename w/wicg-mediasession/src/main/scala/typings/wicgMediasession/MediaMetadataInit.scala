@@ -39,7 +39,7 @@ object MediaMetadataInit {
     
     inline def setArtworkUndefined: Self = StObject.set(x, "artwork", js.undefined)
     
-    inline def setArtworkVarargs(value: MediaImage*): Self = StObject.set(x, "artwork", js.Array(value :_*))
+    inline def setArtworkVarargs(value: MediaImage*): Self = StObject.set(x, "artwork", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

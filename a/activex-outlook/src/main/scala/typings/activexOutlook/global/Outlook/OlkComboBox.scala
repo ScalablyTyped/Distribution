@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkComboBox")
 @js.native
-/* private */ class OlkComboBox ()
+/* private */ open class OlkComboBox ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkComboBox

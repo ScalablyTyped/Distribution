@@ -12,7 +12,7 @@ trait DescribeLocalGatewayRouteTablesRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * One or more filters.    local-gateway-id - The ID of a local gateway.    local-gateway-route-table-id - The ID of a local gateway route table.    outpost-arn - The Amazon Resource Name (ARN) of the Outpost.    state - The state of the local gateway route table.  
+    * One or more filters.    local-gateway-id - The ID of a local gateway.    local-gateway-route-table-arn - The Amazon Resource Name (ARN) of the local gateway route table.    local-gateway-route-table-id - The ID of a local gateway route table.    outpost-arn - The Amazon Resource Name (ARN) of the Outpost.    owner-id - The ID of the Amazon Web Services account that owns the local gateway route table.    state - The state of the local gateway route table.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
@@ -48,13 +48,13 @@ object DescribeLocalGatewayRouteTablesRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setLocalGatewayRouteTableIds(value: LocalGatewayRouteTableIdSet): Self = StObject.set(x, "LocalGatewayRouteTableIds", value.asInstanceOf[js.Any])
     
     inline def setLocalGatewayRouteTableIdsUndefined: Self = StObject.set(x, "LocalGatewayRouteTableIds", js.undefined)
     
-    inline def setLocalGatewayRouteTableIdsVarargs(value: LocalGatewayRoutetableId*): Self = StObject.set(x, "LocalGatewayRouteTableIds", js.Array(value :_*))
+    inline def setLocalGatewayRouteTableIdsVarargs(value: LocalGatewayRoutetableId*): Self = StObject.set(x, "LocalGatewayRouteTableIds", js.Array(value*))
     
     inline def setMaxResults(value: LocalGatewayMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

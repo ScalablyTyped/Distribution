@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lumino/datagrid" : "0.6.0"
+      "@lumino/datagrid" : "0.36.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@lumino/datagrid" : "0.6.0"
+      "@lumino/datagrid" : "0.36.3"
     }
   ],
   "compile-devDependencies" : [

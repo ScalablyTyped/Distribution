@@ -8,7 +8,7 @@ trait ISyntaxNodeOrToken
   extends StObject
      with ISyntaxElement {
   
-  def accept(visitor: ISyntaxVisitor): js.Any
+  def accept(visitor: ISyntaxVisitor): Any
   
   def withLeadingTrivia(leadingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken
   
@@ -17,7 +17,7 @@ trait ISyntaxNodeOrToken
 object ISyntaxNodeOrToken {
   
   inline def apply(
-    accept: ISyntaxVisitor => js.Any,
+    accept: ISyntaxVisitor => Any,
     childAt: Double => ISyntaxElement,
     childCount: () => Double,
     collectTextElements: js.Array[String] => Unit,
@@ -46,7 +46,7 @@ object ISyntaxNodeOrToken {
   
   extension [Self <: ISyntaxNodeOrToken](x: Self) {
     
-    inline def setAccept(value: ISyntaxVisitor => js.Any): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
+    inline def setAccept(value: ISyntaxVisitor => Any): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
     
     inline def setWithLeadingTrivia(value: ISyntaxTriviaList => ISyntaxNodeOrToken): Self = StObject.set(x, "withLeadingTrivia", js.Any.fromFunction1(value))
     

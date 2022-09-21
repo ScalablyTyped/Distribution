@@ -23,6 +23,8 @@ trait GeometryProperties extends StObject {
   /**
     * The spatial reference of the geometry.
     *
+    * @default WGS84 (wkid: 4326)
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#spatialReference)
     */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined

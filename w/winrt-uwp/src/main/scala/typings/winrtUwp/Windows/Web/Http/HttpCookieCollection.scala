@@ -33,7 +33,7 @@ trait HttpCookieCollection
     */
   def getMany(startIndex: Double): ItemsHttpCookie = js.native
   
-  def indexOf(value: HttpCookie, extra: js.Any*): Index = js.native
+  def indexOf(value: HttpCookie, extra: Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: HttpCookie): Double = js.native

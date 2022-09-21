@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProvisioningTemplateVersionSummary extends StObject {
   
   /**
-    * The date when the fleet provisioning template version was created
+    * The date when the provisioning template version was created
     */
-  var creationDate: js.UndefOr[DateType] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * True if the fleet provisioning template version is the default version, otherwise false.
+    * True if the provisioning template version is the default version, otherwise false.
     */
   var isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined
   
@@ -30,7 +30,7 @@ object ProvisioningTemplateVersionSummary {
   
   extension [Self <: ProvisioningTemplateVersionSummary](x: Self) {
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     

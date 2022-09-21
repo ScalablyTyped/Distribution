@@ -34,7 +34,7 @@ trait ReimportApiResponse extends StObject {
   /**
     * The timestamp when the API was created.
     */
-  var CreatedDate: js.UndefOr[timestampIso8601] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the API.
@@ -115,7 +115,7 @@ object ReimportApiResponse {
     
     inline def setCorsConfigurationUndefined: Self = StObject.set(x, "CorsConfiguration", js.undefined)
     
-    inline def setCreatedDate(value: timestampIso8601): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
@@ -135,7 +135,7 @@ object ReimportApiResponse {
     
     inline def setImportInfoUndefined: Self = StObject.set(x, "ImportInfo", js.undefined)
     
-    inline def setImportInfoVarargs(value: string*): Self = StObject.set(x, "ImportInfo", js.Array(value :_*))
+    inline def setImportInfoVarargs(value: string*): Self = StObject.set(x, "ImportInfo", js.Array(value*))
     
     inline def setName(value: StringWithLengthBetween1And128): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -161,6 +161,6 @@ object ReimportApiResponse {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "Warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: string*): Self = StObject.set(x, "Warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: string*): Self = StObject.set(x, "Warnings", js.Array(value*))
   }
 }

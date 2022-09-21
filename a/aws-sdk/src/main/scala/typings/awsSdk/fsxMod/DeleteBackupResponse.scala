@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteBackupResponse extends StObject {
   
   /**
-    * The ID of the backup deleted.
+    * The ID of the backup that was deleted.
     */
   var BackupId: js.UndefOr[typings.awsSdk.fsxMod.BackupId] = js.undefined
   
   /**
-    * The lifecycle of the backup. Should be DELETED.
+    * The lifecycle status of the backup. If the DeleteBackup operation is successful, the status is DELETED.
     */
   var Lifecycle: js.UndefOr[BackupLifecycle] = js.undefined
 }

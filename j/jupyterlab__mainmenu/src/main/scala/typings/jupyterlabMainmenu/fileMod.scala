@@ -3,10 +3,11 @@ package typings.jupyterlabMainmenu
 import typings.jupyterlabApputils.widgettrackerMod.IWidgetTracker
 import typings.jupyterlabMainmenu.fileMod.IFileMenu.ICloseAndCleaner
 import typings.jupyterlabMainmenu.fileMod.IFileMenu.IConsoleCreator
-import typings.jupyterlabMainmenu.labmenuMod.IJupyterLabMenu
-import typings.jupyterlabMainmenu.labmenuMod.IMenuExtender
-import typings.jupyterlabMainmenu.labmenuMod.JupyterLabMenu
-import typings.luminoWidgets.menuMod.Menu.IOptions
+import typings.jupyterlabMainmenu.tokensMod.IMenuExtender
+import typings.jupyterlabUiComponents.menuMod.IRankedMenu
+import typings.jupyterlabUiComponents.menuMod.IRankedMenu.IOptions
+import typings.jupyterlabUiComponents.mod.RankedMenu
+import typings.luminoMessaging.mod.Message
 import typings.luminoWidgets.mod.Widget
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -15,39 +16,58 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object fileMod {
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.luminoDisposable.mod.IDisposable because Already inherited
-  - typings.jupyterlabMainmenu.labmenuMod.IJupyterLabMenu because Already inherited
-  - typings.jupyterlabMainmenu.fileMod.IFileMenu because var conflicts: isDisposed. Inlined quitEntry, newMenu, closeAndCleaners, consoleCreators */ @JSImport("@jupyterlab/mainmenu/lib/file", "FileMenu")
+  @JSImport("@jupyterlab/mainmenu/lib/file", "FileMenu")
   @js.native
-  class FileMenu protected () extends JupyterLabMenu {
+  open class FileMenu protected ()
+    extends RankedMenu
+       with IFileMenu {
     def this(options: IOptions) = this()
     
-    /**
-      * The close and cleanup extension point.
-      */
-    val closeAndCleaners: Set[ICloseAndCleaner[Widget]] = js.native
+    /* private */ var _newMenu: Any = js.native
     
     /**
-      * A set storing IConsoleCreators for the Kernel menu.
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
       */
-    val consoleCreators: Set[IConsoleCreator[Widget]] = js.native
+    /* InferMemberOverrides */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* InferMemberOverrides */
+    override val isDisposed: Boolean = js.native
     
     /**
       * The New submenu.
       */
-    val newMenu: IJupyterLabMenu | JupyterLabMenu = js.native
+    @JSName("newMenu")
+    def newMenu_MFileMenu: RankedMenu = js.native
     
     /**
-      * Option to add a `Quit` entry in File menu
+      * Process a message sent to the handler.
+      *
+      * @param msg - The message to be processed.
       */
-    var quitEntry: Boolean = js.native
+    /* InferMemberOverrides */
+    /* InferMemberOverrides */
+    override def processMessage(msg: Message): Unit = js.native
   }
   
   @js.native
   trait IFileMenu
     extends StObject
-       with IJupyterLabMenu {
+       with IRankedMenu {
     
     /**
       * The close and cleanup extension point.
@@ -62,7 +82,7 @@ object fileMod {
     /**
       * A submenu for creating new files/launching new activities.
       */
-    val newMenu: IJupyterLabMenu = js.native
+    val newMenu: IRankedMenu = js.native
     
     /**
       * Option to add a `Quit` entry in the File menu
@@ -80,34 +100,32 @@ object fileMod {
          with IMenuExtender[T] {
       
       /**
-        * A label to use for the cleanup action.
-        */
-      var action: String
-      
-      /**
         * A function to perform the close and cleanup action.
         */
       def closeAndCleanup(widget: T): js.Promise[Unit]
       
       /**
-        * A label to use for the activity that is being cleaned up.
+        * A function to create the label for the `closeAndCleanup`action.
+        *
+        * This function receives the number of items `n` to be able to provided
+        * correct pluralized forms of translations.
         */
-      var name: String
+      var closeAndCleanupLabel: js.UndefOr[js.Function1[/* n */ Double, String]] = js.undefined
     }
     object ICloseAndCleaner {
       
-      inline def apply[T /* <: Widget */](action: String, closeAndCleanup: T => js.Promise[Unit], name: String, tracker: IWidgetTracker[T]): ICloseAndCleaner[T] = {
-        val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], closeAndCleanup = js.Any.fromFunction1(closeAndCleanup), name = name.asInstanceOf[js.Any], tracker = tracker.asInstanceOf[js.Any])
+      inline def apply[T /* <: Widget */](closeAndCleanup: T => js.Promise[Unit], tracker: IWidgetTracker[T]): ICloseAndCleaner[T] = {
+        val __obj = js.Dynamic.literal(closeAndCleanup = js.Any.fromFunction1(closeAndCleanup), tracker = tracker.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICloseAndCleaner[T]]
       }
       
       extension [Self <: ICloseAndCleaner[?], T /* <: Widget */](x: Self & ICloseAndCleaner[T]) {
         
-        inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
-        
         inline def setCloseAndCleanup(value: T => js.Promise[Unit]): Self = StObject.set(x, "closeAndCleanup", js.Any.fromFunction1(value))
         
-        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setCloseAndCleanupLabel(value: /* n */ Double => String): Self = StObject.set(x, "closeAndCleanupLabel", js.Any.fromFunction1(value))
+        
+        inline def setCloseAndCleanupLabelUndefined: Self = StObject.set(x, "closeAndCleanupLabel", js.undefined)
       }
     }
     
@@ -124,14 +142,17 @@ object fileMod {
       def createConsole(widget: T): js.Promise[Unit]
       
       /**
-        * A label to use for the activity for which a console is being created.
+        * A function to create the label for the `createConsole`action.
+        *
+        * This function receives the number of items `n` to be able to provided
+        * correct pluralized forms of translations.
         */
-      var name: String
+      var createConsoleLabel: js.UndefOr[js.Function1[/* n */ Double, String]] = js.undefined
     }
     object IConsoleCreator {
       
-      inline def apply[T /* <: Widget */](createConsole: T => js.Promise[Unit], name: String, tracker: IWidgetTracker[T]): IConsoleCreator[T] = {
-        val __obj = js.Dynamic.literal(createConsole = js.Any.fromFunction1(createConsole), name = name.asInstanceOf[js.Any], tracker = tracker.asInstanceOf[js.Any])
+      inline def apply[T /* <: Widget */](createConsole: T => js.Promise[Unit], tracker: IWidgetTracker[T]): IConsoleCreator[T] = {
+        val __obj = js.Dynamic.literal(createConsole = js.Any.fromFunction1(createConsole), tracker = tracker.asInstanceOf[js.Any])
         __obj.asInstanceOf[IConsoleCreator[T]]
       }
       
@@ -139,7 +160,9 @@ object fileMod {
         
         inline def setCreateConsole(value: T => js.Promise[Unit]): Self = StObject.set(x, "createConsole", js.Any.fromFunction1(value))
         
-        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setCreateConsoleLabel(value: /* n */ Double => String): Self = StObject.set(x, "createConsoleLabel", js.Any.fromFunction1(value))
+        
+        inline def setCreateConsoleLabelUndefined: Self = StObject.set(x, "createConsoleLabel", js.undefined)
       }
     }
   }

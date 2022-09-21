@@ -10,10 +10,10 @@ Yet another node torrent scraper based on x-ray. (Support iptorrents, torrentlee
 | ------------------ | :-------------: |
 | Full name          | torrent-search-api |
 | Keywords           | torrent, scraper, crawler, node, api, yggtorrent, torrentz2, torrentleech, iptorrents, 1337x, thepiratebay, tpb, kickasstorrents, rarbg, torrentproject, yts, eztv, limetorrents |
-| # releases         | 11 |
-| # dependents       | 13 |
-| # downloads        | 61290 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 338132.6666666667 |
+| # stars            | 306.0 |
 
 ## Links
 - [Homepage](https://github.com/JimmyLaurent/torrent-search-api#readme)

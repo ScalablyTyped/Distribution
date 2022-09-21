@@ -29,12 +29,12 @@ object CloudwatchLogsExportConfiguration {
     
     inline def setDisableLogTypesUndefined: Self = StObject.set(x, "DisableLogTypes", js.undefined)
     
-    inline def setDisableLogTypesVarargs(value: String*): Self = StObject.set(x, "DisableLogTypes", js.Array(value :_*))
+    inline def setDisableLogTypesVarargs(value: String*): Self = StObject.set(x, "DisableLogTypes", js.Array(value*))
     
     inline def setEnableLogTypes(value: LogTypeList): Self = StObject.set(x, "EnableLogTypes", value.asInstanceOf[js.Any])
     
     inline def setEnableLogTypesUndefined: Self = StObject.set(x, "EnableLogTypes", js.undefined)
     
-    inline def setEnableLogTypesVarargs(value: String*): Self = StObject.set(x, "EnableLogTypes", js.Array(value :_*))
+    inline def setEnableLogTypesVarargs(value: String*): Self = StObject.set(x, "EnableLogTypes", js.Array(value*))
   }
 }

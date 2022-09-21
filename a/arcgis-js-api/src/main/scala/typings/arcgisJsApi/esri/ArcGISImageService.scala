@@ -34,6 +34,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArcGISImageService extends StObject {
   
   /**
+    * Defines a band combination using 0-based band indexes.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#bandIds)
+    */
+  var bandIds: js.Array[Double] = js.native
+  
+  /**
     * Describes the layer's supported capabilities.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
@@ -50,9 +59,49 @@ trait ArcGISImageService extends StObject {
   /**
     * Controls the tolerance of the lerc compression algorithm.
     *
+    * @default 0.01
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#compressionTolerance)
     */
   var compressionTolerance: Double = js.native
+  
+  /**
+    * Computes the rotation angle of a ImageryLayer at a given location.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#computeAngles)
+    */
+  def computeAngles(parameters: ImageAngleParameters): js.Promise[ImageAngleResult] = js.native
+  def computeAngles(parameters: ImageAngleParametersProperties): js.Promise[ImageAngleResult] = js.native
+  def computeAngles(parameters: ImageAngleParametersProperties, requestOptions: Any): js.Promise[ImageAngleResult] = js.native
+  def computeAngles(parameters: ImageAngleParameters, requestOptions: Any): js.Promise[ImageAngleResult] = js.native
+  
+  /**
+    * Computes histograms based on the provided [ImageHistogramParameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHistogramParameters.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#computeHistograms)
+    */
+  def computeHistograms(parameters: ImageHistogramParameters): js.Promise[Any] = js.native
+  def computeHistograms(parameters: ImageHistogramParametersProperties): js.Promise[Any] = js.native
+  def computeHistograms(parameters: ImageHistogramParametersProperties, requestOptions: Any): js.Promise[Any] = js.native
+  def computeHistograms(parameters: ImageHistogramParameters, requestOptions: Any): js.Promise[Any] = js.native
+  
+  /**
+    * Computes the corresponding pixel location in columns and rows for an image based on input geometry.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#computePixelSpaceLocations)
+    */
+  def computePixelSpaceLocations(parameters: ImagePixelLocationParameters): js.Promise[ImagePixelLocationResult] = js.native
+  def computePixelSpaceLocations(parameters: ImagePixelLocationParameters, requestOptions: Any): js.Promise[ImagePixelLocationResult] = js.native
+  
+  /**
+    * Computes [statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterBandStatistics) and [histograms](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterHistogram) for the provided [ImageHistogramParameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHistogramParameters.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#computeStatisticsHistograms)
+    */
+  def computeStatisticsHistograms(parameters: ImageHistogramParameters): js.Promise[Any] = js.native
+  def computeStatisticsHistograms(parameters: ImageHistogramParametersProperties): js.Promise[Any] = js.native
+  def computeStatisticsHistograms(parameters: ImageHistogramParametersProperties, requestOptions: Any): js.Promise[Any] = js.native
+  def computeStatisticsHistograms(parameters: ImageHistogramParameters, requestOptions: Any): js.Promise[Any] = js.native
   
   /**
     * The copyright text as defined by the service.
@@ -73,8 +122,8 @@ trait ArcGISImageService extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#fetchImage)
     */
-  def fetchImage(extent: Extent, width: Double, height: Double): js.Promise[js.Any] = js.native
-  def fetchImage(extent: Extent, width: Double, height: Double, options: ArcGISImageServiceFetchImageOptions): js.Promise[js.Any] = js.native
+  def fetchImage(extent: Extent, width: Double, height: Double): js.Promise[Any] = js.native
+  def fetchImage(extent: Extent, width: Double, height: Double, options: ArcGISImageServiceFetchImageOptions): js.Promise[Any] = js.native
   
   /**
     * An array of fields in the layer.
@@ -82,6 +131,13 @@ trait ArcGISImageService extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#fields)
     */
   var fields: js.Array[Field] = js.native
+  
+  /**
+    * A convenient property that can be used to make case-insensitive lookups for a [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#fields) by name.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#fieldsIndex)
+    */
+  val fieldsIndex: FieldsIndex = js.native
   
   /**
     * The format of the exported image.
@@ -96,14 +152,17 @@ trait ArcGISImageService extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#generateRasterInfo)
     */
   def generateRasterInfo(renderingRule: RasterFunction): js.Promise[RasterInfo] = js.native
+  def generateRasterInfo(renderingRule: RasterFunctionProperties): js.Promise[RasterInfo] = js.native
+  def generateRasterInfo(renderingRule: RasterFunctionProperties, abortOptions: AbortSignal): js.Promise[RasterInfo] = js.native
+  def generateRasterInfo(renderingRule: RasterFunction, abortOptions: AbortSignal): js.Promise[RasterInfo] = js.native
   
   /**
     * Gets the [image coordinate system](https://developers.arcgis.com/rest/services-reference/raster-ics.htm) information of a catalog item in an image service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#getCatalogItemICSInfo)
     */
-  def getCatalogItemICSInfo(rasterId: Double): js.Promise[js.Any] = js.native
-  def getCatalogItemICSInfo(rasterId: Double, abortOptions: AbortSignal): js.Promise[js.Any] = js.native
+  def getCatalogItemICSInfo(rasterId: Double): js.Promise[Any] = js.native
+  def getCatalogItemICSInfo(rasterId: Double, abortOptions: AbortSignal): js.Promise[Any] = js.native
   
   /**
     * Get the [raster info](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html) of a [catalog item](https://developers.arcgis.com/rest/services-reference/raster-catalog-item.htm) in an image service.
@@ -114,6 +173,16 @@ trait ArcGISImageService extends StObject {
   def getCatalogItemRasterInfo(rasterId: Double, abortOptions: AbortSignal): js.Promise[RasterInfo] = js.native
   
   /**
+    * Returns sample point locations, pixel values and corresponding resolutions of the source data for a given geometry.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#getSamples)
+    */
+  def getSamples(parameters: ImageSampleParameters): js.Promise[ImageSampleResult] = js.native
+  def getSamples(parameters: ImageSampleParametersProperties): js.Promise[ImageSampleResult] = js.native
+  def getSamples(parameters: ImageSampleParametersProperties, requestOptions: Any): js.Promise[ImageSampleResult] = js.native
+  def getSamples(parameters: ImageSampleParameters, requestOptions: Any): js.Promise[ImageSampleResult] = js.native
+  
+  /**
     * Indicates if the layer has [multidimensionalInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#multidimensionalInfo).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#hasMultidimensions)
@@ -121,7 +190,19 @@ trait ArcGISImageService extends StObject {
   var hasMultidimensions: Boolean = js.native
   
   /**
+    * Sends a request to the ArcGIS REST image service to identify content based on the specified [ImageIdentifyParameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#identify)
+    */
+  def identify(parameters: ImageIdentifyParameters): js.Promise[ImageIdentifyResult] = js.native
+  def identify(parameters: ImageIdentifyParametersProperties): js.Promise[ImageIdentifyResult] = js.native
+  def identify(parameters: ImageIdentifyParametersProperties, requestOptions: Any): js.Promise[ImageIdentifyResult] = js.native
+  def identify(parameters: ImageIdentifyParameters, requestOptions: Any): js.Promise[ImageIdentifyResult] = js.native
+  
+  /**
     * Indicates the maximum height of the image exported by the service.
+    *
+    * @default 4100
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#imageMaxHeight)
     */
@@ -129,6 +210,8 @@ trait ArcGISImageService extends StObject {
   
   /**
     * Indicates the maximum width of the image exported by the service.
+    *
+    * @default 15000
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#imageMaxWidth)
     */
@@ -151,9 +234,11 @@ trait ArcGISImageService extends StObject {
   /**
     * The multidimensional information associated with the layer if the layer's [hasMultidimensions](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#hasMultidimensions) property is `true`.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#multidimensionalInfo)
     */
-  var multidimensionalInfo: js.Any = js.native
+  val multidimensionalInfo: RasterMultidimensionalInfo = js.native
   
   /**
     * The pixel value representing no available information.
@@ -181,7 +266,7 @@ trait ArcGISImageService extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#pixelFilter)
     */
-  def pixelFilter(pixelData: PixelData): Unit = js.native
+  def pixelFilter(pixelData: PixelData): scala.Unit = js.native
   /**
     * A function that processes [pixelData](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-ImageryLayerView.html#pixelData).
     *
@@ -198,25 +283,61 @@ trait ArcGISImageService extends StObject {
   var pixelType: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64 = js.native
   
   /**
-    * Prefix used to define the fields from the raster attribute table.
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) against the image service and returns an array of Object IDs for the rasters.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterAttributeTableFieldPrefix)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#queryObjectIds)
     */
-  var rasterAttributeTableFieldPrefix: String = js.native
+  def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: scala.Unit, requestOptions: Any): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: QueryProperties, requestOptions: Any): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query_): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query_, requestOptions: Any): js.Promise[js.Array[Double]] = js.native
   
   /**
-    * A complete list of fields that consists of raster catalog fields, item pixel value, service pixel value, service pixel value with various server defined function templates, and raster attribute table fields.
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) against the image service and returns the number of rasters that satisfy the query.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#queryRasterCount)
+    */
+  def queryRasterCount(): js.Promise[Double] = js.native
+  def queryRasterCount(query: scala.Unit, requestOptions: Any): js.Promise[Double] = js.native
+  def queryRasterCount(query: QueryProperties): js.Promise[Double] = js.native
+  def queryRasterCount(query: QueryProperties, requestOptions: Any): js.Promise[Double] = js.native
+  def queryRasterCount(query: Query_): js.Promise[Double] = js.native
+  def queryRasterCount(query: Query_, requestOptions: Any): js.Promise[Double] = js.native
+  
+  def queryRasters(query: QueryProperties): js.Promise[FeatureSet] = js.native
+  def queryRasters(query: QueryProperties, requestOptions: Any): js.Promise[FeatureSet] = js.native
+  /**
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) against an image service and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html), which can be accessed using the `.then()` method once the promise resolves.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#queryRasters)
+    */
+  def queryRasters(query: Query_): js.Promise[FeatureSet] = js.native
+  def queryRasters(query: Query_, requestOptions: Any): js.Promise[FeatureSet] = js.native
+  
+  /**
+    * A complete list of fields that consists of raster attribute table fields, item pixel value, service pixel value, service pixel value with various server defined function templates, and raster attribute table fields.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterFields)
     */
   val rasterFields: js.Array[Field] = js.native
   
   /**
+    * Returns raster function information for the image services, including the name, description, help, function type, and a thumbnail of pre-configured raster function templates.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterFunctionInfos)
+    */
+  val rasterFunctionInfos: js.Array[RasterFunctionInfo] = js.native
+  
+  /**
     * The renderer assigned to the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#renderer)
     */
-  var renderer: ClassBreaksRenderer | UniqueValueRenderer | RasterStretchRenderer | RasterShadedReliefRenderer | RasterColormapRenderer = js.native
+  var renderer: ClassBreaksRenderer | UniqueValueRenderer | RasterStretchRenderer | RasterShadedReliefRenderer | RasterColormapRenderer | VectorFieldRenderer | FlowRenderer = js.native
   
   /**
     * Specifies the rule for how the requested image should be rendered.
@@ -237,7 +358,7 @@ trait ArcGISImageService extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#sourceJSON)
     */
-  var sourceJSON: js.Any = js.native
+  var sourceJSON: Any = js.native
   
   /**
     * The spatial reference of the image service.

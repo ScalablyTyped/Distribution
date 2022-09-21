@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "Tips")
 @js.native
-class Tips protected ()
-  extends Component[TipsProps, js.Object, js.Any] {
+open class Tips protected ()
+  extends Component[TipsProps, js.Object, Any] {
   def this(props: TipsProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TipsProps, context: js.Any) = this()
+  def this(props: TipsProps, context: Any) = this()
 }

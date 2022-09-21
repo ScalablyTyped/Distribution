@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "js-base64" : "3.7.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "js-base64" : "3.7.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

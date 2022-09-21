@@ -10,10 +10,10 @@ Simple server-side session support for hapi
 | ------------------ | :-------------: |
 | Full name          | hapi-server-session |
 | Keywords           | hapi, plugin, server, session |
-| # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 7696 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 554.6666666666666 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/btmorex/hapi-server-session)

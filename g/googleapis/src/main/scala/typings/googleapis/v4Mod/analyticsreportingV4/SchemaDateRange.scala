@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A contiguous set of days: startDate, startDate + 1 day, ..., endDate. The
-  * start and end dates are specified in
-  * [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) date format `YYYY-MM-DD`.
-  */
 trait SchemaDateRange extends StObject {
   
   /**
     * The end date for the query in the format `YYYY-MM-DD`.
     */
-  var endDate: js.UndefOr[String] = js.undefined
+  var endDate: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The start date for the query in the format `YYYY-MM-DD`.
     */
-  var startDate: js.UndefOr[String] = js.undefined
+  var startDate: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDateRange {
   
@@ -32,9 +27,13 @@ object SchemaDateRange {
     
     inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
+    inline def setEndDateNull: Self = StObject.set(x, "endDate", null)
+    
     inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
     inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    
+    inline def setStartDateNull: Self = StObject.set(x, "startDate", null)
     
     inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
   }

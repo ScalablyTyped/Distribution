@@ -14,6 +14,11 @@ trait MipsInstruction
   var operands: js.Array[MipsOperand]
   
   /**
+    * Registers accessed by this instruction, either implicitly or explicitly.
+    */
+  var regsAccessed: RegsAccessed[MipsRegister]
+  
+  /**
     * Registers implicitly read by this instruction.
     */
   var regsRead: js.Array[MipsRegister]
@@ -32,11 +37,12 @@ object MipsInstruction {
     next: NativePointer,
     opStr: String,
     operands: js.Array[MipsOperand],
+    regsAccessed: RegsAccessed[MipsRegister],
     regsRead: js.Array[MipsRegister],
     regsWritten: js.Array[MipsRegister],
     size: Double
   ): MipsInstruction = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], mnemonic = mnemonic.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], opStr = opStr.asInstanceOf[js.Any], operands = operands.asInstanceOf[js.Any], regsRead = regsRead.asInstanceOf[js.Any], regsWritten = regsWritten.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], mnemonic = mnemonic.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], opStr = opStr.asInstanceOf[js.Any], operands = operands.asInstanceOf[js.Any], regsAccessed = regsAccessed.asInstanceOf[js.Any], regsRead = regsRead.asInstanceOf[js.Any], regsWritten = regsWritten.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[MipsInstruction]
   }
   
@@ -44,14 +50,16 @@ object MipsInstruction {
     
     inline def setOperands(value: js.Array[MipsOperand]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
     
-    inline def setOperandsVarargs(value: MipsOperand*): Self = StObject.set(x, "operands", js.Array(value :_*))
+    inline def setOperandsVarargs(value: MipsOperand*): Self = StObject.set(x, "operands", js.Array(value*))
+    
+    inline def setRegsAccessed(value: RegsAccessed[MipsRegister]): Self = StObject.set(x, "regsAccessed", value.asInstanceOf[js.Any])
     
     inline def setRegsRead(value: js.Array[MipsRegister]): Self = StObject.set(x, "regsRead", value.asInstanceOf[js.Any])
     
-    inline def setRegsReadVarargs(value: MipsRegister*): Self = StObject.set(x, "regsRead", js.Array(value :_*))
+    inline def setRegsReadVarargs(value: MipsRegister*): Self = StObject.set(x, "regsRead", js.Array(value*))
     
     inline def setRegsWritten(value: js.Array[MipsRegister]): Self = StObject.set(x, "regsWritten", value.asInstanceOf[js.Any])
     
-    inline def setRegsWrittenVarargs(value: MipsRegister*): Self = StObject.set(x, "regsWritten", js.Array(value :_*))
+    inline def setRegsWrittenVarargs(value: MipsRegister*): Self = StObject.set(x, "regsWritten", js.Array(value*))
   }
 }

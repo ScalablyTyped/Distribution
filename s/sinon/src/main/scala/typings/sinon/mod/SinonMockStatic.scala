@@ -12,5 +12,5 @@ trait SinonMockStatic extends StObject {
     * Creates a mock for the provided object.
     * Does not change the object, but returns a mock object to set expectations on the object’s methods.
     */
-  def apply(obj: js.Any): SinonMock = js.native
+  def apply(obj: Any): SinonMock = js.native
 }

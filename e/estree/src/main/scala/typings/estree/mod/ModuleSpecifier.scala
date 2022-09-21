@@ -10,9 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.estree.mod.ImportNamespaceSpecifier
   - typings.estree.mod.ExportSpecifier
 */
-trait ModuleSpecifier
-  extends StObject
-     with Node
+trait ModuleSpecifier extends StObject
 object ModuleSpecifier {
   
   inline def ExportSpecifier(exported: Identifier, local: Identifier): typings.estree.mod.ExportSpecifier = {

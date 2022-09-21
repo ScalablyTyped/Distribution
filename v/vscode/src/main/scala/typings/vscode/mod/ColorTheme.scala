@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorTheme extends StObject {
   
   /**
-    * The kind of this color theme: light, dark or high contrast.
+    * The kind of this color theme: light, dark, high contrast dark and high contrast light.
     */
   val kind: ColorThemeKind
 }

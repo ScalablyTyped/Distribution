@@ -4,71 +4,47 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to create a subnetwork in a previously peered service network.
-  */
 trait SchemaAddSubnetworkRequest extends StObject {
   
   /**
-    * Required. A resource that represents the service consumer, such as
-    * `projects/123456`. The project number can be different from the value in
-    * the consumer network parameter. For example, the network might be part of
-    * a Shared VPC network. In those cases, Service Networking validates that
-    * this resource belongs to that Shared VPC.
+    * Required. A resource that represents the service consumer, such as `projects/123456`. The project number can be different from the value in the consumer network parameter. For example, the network might be part of a Shared VPC network. In those cases, Service Networking validates that this resource belongs to that Shared VPC.
     */
-  var consumer: js.UndefOr[String] = js.undefined
+  var consumer: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Required. The name of the service consumer&#39;s VPC network. The network
-    * must have an existing private connection that was provisioned through the
-    * connections.create method. The name must be in the following format:
-    * `projects/{project}/global/networks/{network}`, where {project} is a
-    * project number, such as `12345`. {network} is the name of a VPC network
-    * in the project.
+    * Required. The name of the service consumer's VPC network. The network must have an existing private connection that was provisioned through the connections.create method. The name must be in the following format: `projects/{project\}/global/networks/{network\}`, where {project\} is a project number, such as `12345`. {network\} is the name of a VPC network in the project.
     */
-  var consumerNetwork: js.UndefOr[String] = js.undefined
+  var consumerNetwork: js.UndefOr[String | Null] = js.undefined
   
   /**
     * An optional description of the subnet.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Required. The prefix length of the subnet&#39;s IP address range.  Use
-    * CIDR range notation, such as `30` to provision a subnet with an
-    * `x.x.x.x/30` CIDR range. The IP address range is drawn from a pool of
-    * available ranges in the service consumer&#39;s allocated range.
+    * Required. The prefix length of the subnet's IP address range. Use CIDR range notation, such as `30` to provision a subnet with an `x.x.x.x/30` CIDR range. The IP address range is drawn from a pool of available ranges in the service consumer's allocated range.
     */
-  var ipPrefixLength: js.UndefOr[Double] = js.undefined
+  var ipPrefixLength: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Required. The name of a [region](/compute/docs/regions-zones) for the
-    * subnet, such `europe-west1`.
+    * Required. The name of a [region](/compute/docs/regions-zones) for the subnet, such `europe-west1`.
     */
-  var region: js.UndefOr[String] = js.undefined
+  var region: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional. The starting address of a range. The address must be a valid
-    * IPv4 address in the x.x.x.x format. This value combined with the IP
-    * prefix range is the CIDR range for the subnet. The range must be within
-    * the allocated range that is assigned to the private connection. If the
-    * CIDR range isn&#39;t available, the call fails.
+    * Optional. The starting address of a range. The address must be a valid IPv4 address in the x.x.x.x format. This value combined with the IP prefix range is the CIDR range for the subnet. The range must be within the allocated range that is assigned to the private connection. If the CIDR range isn't available, the call fails.
     */
-  var requestedAddress: js.UndefOr[String] = js.undefined
+  var requestedAddress: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Required. A name for the new subnet. For information about the naming
-    * requirements, see
-    * [subnetwork](/compute/docs/reference/rest/v1/subnetworks) in the Compute
-    * API documentation.
+    * Required. A name for the new subnet. For information about the naming requirements, see [subnetwork](/compute/docs/reference/rest/v1/subnetworks) in the Compute API documentation.
     */
-  var subnetwork: js.UndefOr[String] = js.undefined
+  var subnetwork: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A list of members that are granted the `compute.networkUser` role on the
-    * subnet.
+    * A list of members that are granted the `compute.networkUser` role on the subnet.
     */
-  var subnetworkUsers: js.UndefOr[js.Array[String]] = js.undefined
+  var subnetworkUsers: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaAddSubnetworkRequest {
   
@@ -83,34 +59,50 @@ object SchemaAddSubnetworkRequest {
     
     inline def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
     
+    inline def setConsumerNetworkNull: Self = StObject.set(x, "consumerNetwork", null)
+    
     inline def setConsumerNetworkUndefined: Self = StObject.set(x, "consumerNetwork", js.undefined)
+    
+    inline def setConsumerNull: Self = StObject.set(x, "consumer", null)
     
     inline def setConsumerUndefined: Self = StObject.set(x, "consumer", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setIpPrefixLength(value: Double): Self = StObject.set(x, "ipPrefixLength", value.asInstanceOf[js.Any])
+    
+    inline def setIpPrefixLengthNull: Self = StObject.set(x, "ipPrefixLength", null)
     
     inline def setIpPrefixLengthUndefined: Self = StObject.set(x, "ipPrefixLength", js.undefined)
     
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
+    inline def setRegionNull: Self = StObject.set(x, "region", null)
+    
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     inline def setRequestedAddress(value: String): Self = StObject.set(x, "requestedAddress", value.asInstanceOf[js.Any])
+    
+    inline def setRequestedAddressNull: Self = StObject.set(x, "requestedAddress", null)
     
     inline def setRequestedAddressUndefined: Self = StObject.set(x, "requestedAddress", js.undefined)
     
     inline def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
+    inline def setSubnetworkNull: Self = StObject.set(x, "subnetwork", null)
+    
     inline def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
     
     inline def setSubnetworkUsers(value: js.Array[String]): Self = StObject.set(x, "subnetworkUsers", value.asInstanceOf[js.Any])
     
+    inline def setSubnetworkUsersNull: Self = StObject.set(x, "subnetworkUsers", null)
+    
     inline def setSubnetworkUsersUndefined: Self = StObject.set(x, "subnetworkUsers", js.undefined)
     
-    inline def setSubnetworkUsersVarargs(value: String*): Self = StObject.set(x, "subnetworkUsers", js.Array(value :_*))
+    inline def setSubnetworkUsersVarargs(value: String*): Self = StObject.set(x, "subnetworkUsers", js.Array(value*))
   }
 }

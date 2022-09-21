@@ -10,10 +10,10 @@ Lightweight deployer for node development, inspired by mina and minco
 | ------------------ | :-------------: |
 | Full name          | mina |
 | Keywords           | deploy, deployment, coffeescript, mina, minco, git, ssh, forever, pm2 |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1560 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 143.33333333333334 |
+| # stars            | 32.0 |
 
 ## Links
 - [Homepage](https://github.com/fanweixiao/mina#readme)

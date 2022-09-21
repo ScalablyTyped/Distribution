@@ -51,7 +51,7 @@ object WFSWriteTransactionOptions {
     
     inline def setNativeElements(value: js.Array[GlobalObject]): Self = StObject.set(x, "nativeElements", value.asInstanceOf[js.Any])
     
-    inline def setNativeElementsVarargs(value: GlobalObject*): Self = StObject.set(x, "nativeElements", js.Array(value :_*))
+    inline def setNativeElementsVarargs(value: GlobalObject*): Self = StObject.set(x, "nativeElements", js.Array(value*))
     
     inline def setSrsName(value: String): Self = StObject.set(x, "srsName", value.asInstanceOf[js.Any])
     

@@ -81,7 +81,7 @@ object WorkItemStatus {
     
     inline def setCounterUpdatesUndefined: Self = StObject.set(x, "counterUpdates", js.undefined)
     
-    inline def setCounterUpdatesVarargs(value: CounterUpdate*): Self = StObject.set(x, "counterUpdates", js.Array(value :_*))
+    inline def setCounterUpdatesVarargs(value: CounterUpdate*): Self = StObject.set(x, "counterUpdates", js.Array(value*))
     
     inline def setDynamicSourceSplit(value: DynamicSourceSplit): Self = StObject.set(x, "dynamicSourceSplit", value.asInstanceOf[js.Any])
     
@@ -91,13 +91,13 @@ object WorkItemStatus {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: Status*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Status*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setMetricUpdates(value: js.Array[MetricUpdate]): Self = StObject.set(x, "metricUpdates", value.asInstanceOf[js.Any])
     
     inline def setMetricUpdatesUndefined: Self = StObject.set(x, "metricUpdates", js.undefined)
     
-    inline def setMetricUpdatesVarargs(value: MetricUpdate*): Self = StObject.set(x, "metricUpdates", js.Array(value :_*))
+    inline def setMetricUpdatesVarargs(value: MetricUpdate*): Self = StObject.set(x, "metricUpdates", js.Array(value*))
     
     inline def setProgress(value: ApproximateProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     

@@ -70,6 +70,6 @@ object OperationMetadataV1Alpha {
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     
-    inline def setWarningVarargs(value: String*): Self = StObject.set(x, "warning", js.Array(value :_*))
+    inline def setWarningVarargs(value: String*): Self = StObject.set(x, "warning", js.Array(value*))
   }
 }

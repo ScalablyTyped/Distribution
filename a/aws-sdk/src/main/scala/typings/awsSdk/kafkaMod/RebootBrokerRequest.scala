@@ -31,7 +31,7 @@ object RebootBrokerRequest {
     
     inline def setBrokerIds(value: listOfString): Self = StObject.set(x, "BrokerIds", value.asInstanceOf[js.Any])
     
-    inline def setBrokerIdsVarargs(value: string*): Self = StObject.set(x, "BrokerIds", js.Array(value :_*))
+    inline def setBrokerIdsVarargs(value: string*): Self = StObject.set(x, "BrokerIds", js.Array(value*))
     
     inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
   }

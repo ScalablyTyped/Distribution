@@ -10,10 +10,10 @@ Filters file paths using globs, regular expressions, or custom criteria
 | ------------------ | :-------------: |
 | Full name          | @jsdevtools/file-path-filter |
 | Keywords           | filter, find, file, path, regex, regexp, glob, include, exclude |
-| # releases         | 6 |
-| # dependents       | 5 |
-| # downloads        | 64783 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 78612.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://jstools.dev/file-path-filter)

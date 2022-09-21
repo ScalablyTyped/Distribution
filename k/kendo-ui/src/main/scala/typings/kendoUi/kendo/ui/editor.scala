@@ -11,6 +11,6 @@ object editor {
     extends StObject
        with Widget {
     
-    var window: Window = js.native
+    var tools: js.Array[Any] = js.native
   }
 }

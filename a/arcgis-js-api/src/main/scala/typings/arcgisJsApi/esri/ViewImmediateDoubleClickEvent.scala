@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ViewImmediateDoubleClickEvent extends StObject {
   
-  var button: js.Any
+  var button: Any
   
   var buttons: Double
   
   var mapPoint: Point
   
-  var native: js.Any
+  var native: Any
   
   var stopPropagation: js.Function
   
@@ -28,10 +28,10 @@ trait ViewImmediateDoubleClickEvent extends StObject {
 object ViewImmediateDoubleClickEvent {
   
   inline def apply(
-    button: js.Any,
+    button: Any,
     buttons: Double,
     mapPoint: Point,
-    native: js.Any,
+    native: Any,
     stopPropagation: js.Function,
     timestamp: Double,
     x: Double,
@@ -44,13 +44,13 @@ object ViewImmediateDoubleClickEvent {
   
   extension [Self <: ViewImmediateDoubleClickEvent](x: Self) {
     
-    inline def setButton(value: js.Any): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: Any): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     inline def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     inline def setMapPoint(value: Point): Self = StObject.set(x, "mapPoint", value.asInstanceOf[js.Any])
     
-    inline def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     inline def setStopPropagation(value: js.Function): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     

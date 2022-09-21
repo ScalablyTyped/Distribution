@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.MapTypeRegistry")
 @js.native
-class MapTypeRegistry ()
+open class MapTypeRegistry ()
   extends StObject
      with typings.navermaps.naver.maps.MapTypeRegistry {
-  def this(mapTypeInfo: js.Any) = this()
-  def this(mapTypeInfo: js.Any, defaultMapTypeId: String) = this()
+  def this(mapTypeInfo: Any) = this()
+  def this(mapTypeInfo: Any, defaultMapTypeId: String) = this()
   def this(mapTypeInfo: Unit, defaultMapTypeId: String) = this()
 }

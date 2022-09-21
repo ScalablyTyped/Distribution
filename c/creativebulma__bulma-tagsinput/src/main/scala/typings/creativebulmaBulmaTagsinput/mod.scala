@@ -22,7 +22,7 @@ object mod {
   
   @JSImport("@creativebulma/bulma-tagsinput", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with BulmaTagsInput {
     /**
@@ -140,18 +140,18 @@ object mod {
     def off(eventName: String): Unit = js.native
     
     @JSName("on")
-    def on_afteradd(eventName: afterDotadd, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
+    def on_afteradd(eventName: afterDotadd, listener: js.Function1[/* item */ Item, Any]): Unit = js.native
     @JSName("on")
     def on_afterflush(
       eventName: afterDotflush,
-      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], js.Any]
+      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], Any]
     ): Unit = js.native
     @JSName("on")
-    def on_afterremove(eventName: afterDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, js.Any]): Unit = js.native
+    def on_afterremove(eventName: afterDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, Any]): Unit = js.native
     @JSName("on")
-    def on_afterselect(eventName: afterDotselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
+    def on_afterselect(eventName: afterDotselect, listener: js.Function1[/* item */ Item, Any]): Unit = js.native
     @JSName("on")
-    def on_afterunselect(eventName: afterDotunselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
+    def on_afterunselect(eventName: afterDotunselect, listener: js.Function1[/* item */ Item, Any]): Unit = js.native
     /**
       * Subscribes on event eventName specified function
       *
@@ -159,48 +159,48 @@ object mod {
       * @param listener
       */
     @JSName("on")
-    def on_beforeadd(eventName: beforeDotadd, listener: js.Function1[/* item */ String | BulmaTagsInputItem, js.Any]): Unit = js.native
+    def on_beforeadd(eventName: beforeDotadd, listener: js.Function1[/* item */ String | BulmaTagsInputItem, Any]): Unit = js.native
     @JSName("on")
     def on_beforeflush(
       eventName: beforeDotflush,
-      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], js.Any]
+      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], Any]
     ): Unit = js.native
     @JSName("on")
-    def on_beforeremove(eventName: beforeDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, js.Any]): Unit = js.native
+    def on_beforeremove(eventName: beforeDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, Any]): Unit = js.native
     @JSName("on")
-    def on_beforeselect(eventName: beforeDotselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
+    def on_beforeselect(eventName: beforeDotselect, listener: js.Function1[/* item */ Item, Any]): Unit = js.native
     @JSName("on")
-    def on_beforeunselect(eventName: beforeDotunselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
+    def on_beforeunselect(eventName: beforeDotunselect, listener: js.Function1[/* item */ Item, Any]): Unit = js.native
     
     @JSName("once")
-    def once_afteradd(eventName: afterDotadd, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
+    def once_afteradd(eventName: afterDotadd, listener: js.Function1[/* item */ Item, Any]): Unit = js.native
     @JSName("once")
     def once_afterflush(
       eventName: afterDotflush,
-      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], js.Any]
+      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], Any]
     ): Unit = js.native
     @JSName("once")
-    def once_afterremove(eventName: afterDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, js.Any]): Unit = js.native
+    def once_afterremove(eventName: afterDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, Any]): Unit = js.native
     @JSName("once")
-    def once_afterselect(eventName: afterDotselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
+    def once_afterselect(eventName: afterDotselect, listener: js.Function1[/* item */ Item, Any]): Unit = js.native
     @JSName("once")
-    def once_afterunselect(eventName: afterDotunselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
+    def once_afterunselect(eventName: afterDotunselect, listener: js.Function1[/* item */ Item, Any]): Unit = js.native
     /**
       * Subscribes on event name specified function to fire only once
       */
     @JSName("once")
-    def once_beforeadd(eventName: beforeDotadd, listener: js.Function1[/* item */ String | BulmaTagsInputItem, js.Any]): Unit = js.native
+    def once_beforeadd(eventName: beforeDotadd, listener: js.Function1[/* item */ String | BulmaTagsInputItem, Any]): Unit = js.native
     @JSName("once")
     def once_beforeflush(
       eventName: beforeDotflush,
-      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], js.Any]
+      listener: js.Function1[/* item */ js.Array[String | BulmaTagsInputItem], Any]
     ): Unit = js.native
     @JSName("once")
-    def once_beforeremove(eventName: beforeDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, js.Any]): Unit = js.native
+    def once_beforeremove(eventName: beforeDotremove, listener: js.Function1[/* item */ String | BulmaTagsInputItem, Any]): Unit = js.native
     @JSName("once")
-    def once_beforeselect(eventName: beforeDotselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
+    def once_beforeselect(eventName: beforeDotselect, listener: js.Function1[/* item */ Item, Any]): Unit = js.native
     @JSName("once")
-    def once_beforeunselect(eventName: beforeDotunselect, listener: js.Function1[/* item */ Item, js.Any]): Unit = js.native
+    def once_beforeunselect(eventName: beforeDotunselect, listener: js.Function1[/* item */ Item, Any]): Unit = js.native
     
     /**
       * Remove given items
@@ -366,7 +366,7 @@ object mod {
       
       inline def setAfterDotflush(value: js.Array[String | BulmaTagsInputItem]): Self = StObject.set(x, "after.flush", value.asInstanceOf[js.Any])
       
-      inline def setAfterDotflushVarargs(value: (String | BulmaTagsInputItem)*): Self = StObject.set(x, "after.flush", js.Array(value :_*))
+      inline def setAfterDotflushVarargs(value: (String | BulmaTagsInputItem)*): Self = StObject.set(x, "after.flush", js.Array(value*))
       
       inline def setAfterDotremove(value: String | BulmaTagsInputItem): Self = StObject.set(x, "after.remove", value.asInstanceOf[js.Any])
       
@@ -378,7 +378,7 @@ object mod {
       
       inline def setBeforeDotflush(value: js.Array[String | BulmaTagsInputItem]): Self = StObject.set(x, "before.flush", value.asInstanceOf[js.Any])
       
-      inline def setBeforeDotflushVarargs(value: (String | BulmaTagsInputItem)*): Self = StObject.set(x, "before.flush", js.Array(value :_*))
+      inline def setBeforeDotflushVarargs(value: (String | BulmaTagsInputItem)*): Self = StObject.set(x, "before.flush", js.Array(value*))
       
       inline def setBeforeDotremove(value: String | BulmaTagsInputItem): Self = StObject.set(x, "before.remove", value.asInstanceOf[js.Any])
       
@@ -657,7 +657,7 @@ object mod {
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      inline def setSourceVarargs(value: (String | BulmaTagsInputItem)*): Self = StObject.set(x, "source", js.Array(value :_*))
+      inline def setSourceVarargs(value: (String | BulmaTagsInputItem)*): Self = StObject.set(x, "source", js.Array(value*))
       
       inline def setTagClass(value: String): Self = StObject.set(x, "tagClass", value.asInstanceOf[js.Any])
       

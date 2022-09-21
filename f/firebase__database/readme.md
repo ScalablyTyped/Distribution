@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__database
 
-Typings are for version 0.8.1
+Typings are for version 0.13.6
 
 ## Library description:
 This is the Firebase Realtime Database component of the Firebase JS SDK.
@@ -10,10 +10,10 @@ This is the Firebase Realtime Database component of the Firebase JS SDK.
 | ------------------ | :-------------: |
 | Full name          | @firebase/database |
 | Keywords           | - |
-| # releases         | 1396 |
-| # dependents       | 18 |
-| # downloads        | 68380496 |
-| # stars            | 0 |
+| # releases         | 1278 |
+| # dependents       | 0.0 |
+| # downloads        | 9504759.0 |
+| # stars            | 4194.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

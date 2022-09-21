@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.toggleOffMod.ToggleOffProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object systemToggleOffMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/system/ToggleOff", JSImport.Default)
   @js.native
-  val default: SFC[ToggleOffProps] = js.native
+  val default: FC[ToggleOffProps] = js.native
   
-  type _To = SFC[ToggleOffProps]
+  type _To = FC[ToggleOffProps]
   
   /* This means you don't have to write `default`, but can instead just say `systemToggleOffMod.foo` */
-  override def _to: SFC[ToggleOffProps] = default
+  override def _to: FC[ToggleOffProps] = default
 }

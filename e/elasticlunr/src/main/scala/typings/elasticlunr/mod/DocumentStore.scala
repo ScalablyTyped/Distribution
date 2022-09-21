@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticlunr", "DocumentStore")
 @js.native
-class DocumentStore[T] () extends StObject {
+open class DocumentStore[T] () extends StObject {
   def this(save: Boolean) = this()
   
   def addDoc(docRef: DocumentReference, doc: T): Unit = js.native

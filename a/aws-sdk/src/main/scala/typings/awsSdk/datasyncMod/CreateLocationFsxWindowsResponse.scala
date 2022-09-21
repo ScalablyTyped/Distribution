@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateLocationFsxWindowsResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the FSx for Windows file system location that is created.
+    * The ARN of the FSx for Windows File Server file system location you created.
     */
   var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.undefined
 }

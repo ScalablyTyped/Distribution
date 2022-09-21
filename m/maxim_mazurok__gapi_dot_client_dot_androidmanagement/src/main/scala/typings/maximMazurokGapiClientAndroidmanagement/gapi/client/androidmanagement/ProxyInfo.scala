@@ -31,7 +31,7 @@ object ProxyInfo {
     
     inline def setExcludedHostsUndefined: Self = StObject.set(x, "excludedHosts", js.undefined)
     
-    inline def setExcludedHostsVarargs(value: String*): Self = StObject.set(x, "excludedHosts", js.Array(value :_*))
+    inline def setExcludedHostsVarargs(value: String*): Self = StObject.set(x, "excludedHosts", js.Array(value*))
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

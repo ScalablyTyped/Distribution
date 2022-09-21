@@ -27,7 +27,7 @@ object AddCustomAttributesRequest {
     
     inline def setCustomAttributes(value: CustomAttributesListType): Self = StObject.set(x, "CustomAttributes", value.asInstanceOf[js.Any])
     
-    inline def setCustomAttributesVarargs(value: SchemaAttributeType*): Self = StObject.set(x, "CustomAttributes", js.Array(value :_*))
+    inline def setCustomAttributesVarargs(value: SchemaAttributeType*): Self = StObject.set(x, "CustomAttributes", js.Array(value*))
     
     inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,7 @@ abstract class ChatMessageTransportConfiguration ()
   
   /** Gets the extended properties of the transport. */
   /* CompleteClass */
-  var extendedProperties: IMapView[String, js.Any] = js.native
+  var extendedProperties: IMapView[String, Any] = js.native
   
   /** Gets the maximum attachment limit for a message on the transport. */
   /* CompleteClass */

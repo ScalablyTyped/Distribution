@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Provides HTTP content that uses a string. */
 @JSGlobal("Windows.Web.Http.HttpStringContent")
 @js.native
-class HttpStringContent protected ()
+open class HttpStringContent protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.HttpStringContent {
   /**

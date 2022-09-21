@@ -1,7 +1,7 @@
 
 # Scala.js typings for iconv
 
-Typings are for version 2.1.11
+Typings are for version 3.0
 
 ## Library description:
 Text recoding in JavaScript for fun and profit!
@@ -10,10 +10,10 @@ Text recoding in JavaScript for fun and profit!
 | ------------------ | :-------------: |
 | Full name          | iconv |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 249 |
-| # downloads        | 2710824 |
-| # stars            | 28 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 272594.3333333333 |
+| # stars            | 773.0 |
 
 ## Links
 - [Homepage](https://github.com/bnoordhuis/node-iconv)

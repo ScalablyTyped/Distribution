@@ -7,27 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteStackInstancesInput extends StObject {
   
   /**
-    * [Self-managed permissions] The names of the AWS accounts that you want to delete stack instances for. You can specify Accounts or DeploymentTargets, but not both.
+    * [Self-managed permissions] The names of the Amazon Web Services accounts that you want to delete stack instances for. You can specify Accounts or DeploymentTargets, but not both.
     */
   var Accounts: js.UndefOr[AccountList] = js.undefined
   
   /**
-    * [Service-managed permissions] The AWS Organizations accounts from which to delete stack instances. You can specify Accounts or DeploymentTargets, but not both.
+    * [Service-managed permissions] Specifies whether you are acting as an account administrator in the organization's management account or as a delegated administrator in a member account. By default, SELF is specified. Use SELF for stack sets with self-managed permissions.   If you are signed in to the management account, specify SELF.   If you are signed in to a delegated administrator account, specify DELEGATED_ADMIN. Your Amazon Web Services account must be registered as a delegated administrator in the management account. For more information, see Register a delegated administrator in the CloudFormation User Guide.  
+    */
+  var CallAs: js.UndefOr[typings.awsSdk.cloudformationMod.CallAs] = js.undefined
+  
+  /**
+    * [Service-managed permissions] The Organizations accounts from which to delete stack instances. You can specify Accounts or DeploymentTargets, but not both.
     */
   var DeploymentTargets: js.UndefOr[typings.awsSdk.cloudformationMod.DeploymentTargets] = js.undefined
   
   /**
-    * The unique identifier for this stack set operation.  If you don't specify an operation ID, the SDK generates one automatically.  The operation ID also functions as an idempotency token, to ensure that AWS CloudFormation performs the stack set operation only once, even if you retry the request multiple times. You can retry stack set operation requests to ensure that AWS CloudFormation successfully received them. Repeating this stack set operation with a new operation ID retries all stack instances whose status is OUTDATED. 
+    * The unique identifier for this stack set operation. If you don't specify an operation ID, the SDK generates one automatically. The operation ID also functions as an idempotency token, to ensure that CloudFormation performs the stack set operation only once, even if you retry the request multiple times. You can retry stack set operation requests to ensure that CloudFormation successfully received them. Repeating this stack set operation with a new operation ID retries all stack instances whose status is OUTDATED.
     */
   var OperationId: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
-    * Preferences for how AWS CloudFormation performs this stack set operation.
+    * Preferences for how CloudFormation performs this stack set operation.
     */
   var OperationPreferences: js.UndefOr[StackSetOperationPreferences] = js.undefined
   
   /**
-    * The Regions where you want to delete stack set instances. 
+    * The Amazon Web Services Regions where you want to delete stack set instances.
     */
   var Regions: RegionList
   
@@ -54,7 +59,11 @@ object DeleteStackInstancesInput {
     
     inline def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
     
-    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value*))
+    
+    inline def setCallAs(value: CallAs): Self = StObject.set(x, "CallAs", value.asInstanceOf[js.Any])
+    
+    inline def setCallAsUndefined: Self = StObject.set(x, "CallAs", js.undefined)
     
     inline def setDeploymentTargets(value: DeploymentTargets): Self = StObject.set(x, "DeploymentTargets", value.asInstanceOf[js.Any])
     
@@ -70,7 +79,7 @@ object DeleteStackInstancesInput {
     
     inline def setRegions(value: RegionList): Self = StObject.set(x, "Regions", value.asInstanceOf[js.Any])
     
-    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "Regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "Regions", js.Array(value*))
     
     inline def setRetainStacks(value: RetainStacks): Self = StObject.set(x, "RetainStacks", value.asInstanceOf[js.Any])
     

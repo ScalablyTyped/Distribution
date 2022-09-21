@@ -11,7 +11,7 @@ object Display {
   @JSGlobal("Windows.System.Display.DisplayRequest")
   @js.native
   /** Creates an instance of the DisplayRequest class. */
-  class DisplayRequest ()
+  open class DisplayRequest ()
     extends StObject
        with typings.winrtUwp.Windows.System.Display.DisplayRequest {
     

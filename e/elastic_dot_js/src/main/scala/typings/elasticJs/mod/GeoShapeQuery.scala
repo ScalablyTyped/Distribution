@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /*
   A Query to find documents with a geo_shapes matching a specific shape.
   */
-class GeoShapeQuery ()
+open class GeoShapeQuery ()
   extends StObject
      with Query {
   
@@ -65,5 +65,5 @@ class GeoShapeQuery ()
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientBigquery.anon
 
+import typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.Table
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ trait DatasetIdFields extends StObject {
   /** Data format for the response. */
   var alt: js.UndefOr[String] = js.undefined
   
-  /** Dataset ID of the requested table */
+  /** Dataset ID of the new table */
   var datasetId: String
   
   /** Selector specifying which fields to include in a partial response. */
@@ -24,25 +25,22 @@ trait DatasetIdFields extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** Project ID of the requested table */
+  /** Project ID of the new table */
   var projectId: String
   
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** List of fields to return (comma-separated). If unspecified, all fields are returned */
-  var selectedFields: js.UndefOr[String] = js.undefined
-  
-  /** Table ID of the requested table */
-  var tableId: String
+  /** Request body */
+  var resource: Table
   
   /** Deprecated. Please use quotaUser instead. */
   var userIp: js.UndefOr[String] = js.undefined
 }
 object DatasetIdFields {
   
-  inline def apply(datasetId: String, projectId: String, tableId: String): DatasetIdFields = {
-    val __obj = js.Dynamic.literal(datasetId = datasetId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], tableId = tableId.asInstanceOf[js.Any])
+  inline def apply(datasetId: String, projectId: String, resource: Table): DatasetIdFields = {
+    val __obj = js.Dynamic.literal(datasetId = datasetId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetIdFields]
   }
   
@@ -76,11 +74,7 @@ object DatasetIdFields {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setSelectedFields(value: String): Self = StObject.set(x, "selectedFields", value.asInstanceOf[js.Any])
-    
-    inline def setSelectedFieldsUndefined: Self = StObject.set(x, "selectedFields", js.undefined)
-    
-    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setResource(value: Table): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     

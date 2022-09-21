@@ -11,7 +11,7 @@ object ojcollectiondataproviderMod {
   
   @JSImport("@oracle/oraclejet/ojcollectiondataprovider", JSImport.Namespace)
   @js.native
-  class ^[K, D] protected ()
+  open class ^[K, D] protected ()
     extends StObject
        with CollectionDataProvider[K, D] {
     def this(collection: Collection) = this()
@@ -24,7 +24,7 @@ object ojcollectiondataproviderMod {
     
     def addEventListener(eventType: String, listener: EventListener): Unit = js.native
     
-    def getCapability(): js.Any = js.native
+    def getCapability(): Any = js.native
     
     def removeEventListener(eventType: String, listener: EventListener): Unit = js.native
   }

@@ -8,5 +8,5 @@ object storageClassAnalysisDataExportMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_StorageClassAnalysisDataExport", "_StorageClassAnalysisDataExport")
   @js.native
-  val StorageClassAnalysisDataExport: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val StorageClassAnalysisDataExport: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

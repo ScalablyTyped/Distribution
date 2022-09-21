@@ -8,7 +8,7 @@ import typings.vegaLite.binMod.BinParams
 import typings.vegaLite.channelMod.Channel
 import typings.vegaLite.channelMod.ExtendedChannel
 import typings.vegaLite.channelMod.FacetChannel
-import typings.vegaLite.channelMod.GeoPositionChannel
+import typings.vegaLite.channelMod.OffsetScaleChannel
 import typings.vegaLite.channelMod.PositionScaleChannel
 import typings.vegaLite.channelMod.ScaleChannel
 import typings.vegaLite.channeldefMod.HiddenCompositeAggregate
@@ -111,10 +111,6 @@ object messageMod {
   @js.native
   val NO_FIELDS_NEEDS_AS: /* "If \"from.fields\" is not specified, \"as\" has to be a string that specifies the key to be used for the data from the secondary source." */ String = js.native
   
-  @JSImport("vega-lite/build/src/log/message", "RANGE_STEP_DEPRECATED")
-  @js.native
-  val RANGE_STEP_DEPRECATED: /* "Scale's \"rangeStep\" is deprecated and will be removed in Vega-Lite 5.0. Please use \"width\"/\"height\": {\"step\": ...} instead. See https://vega.github.io/vega-lite/docs/size.html." */ String = js.native
-  
   @JSImport("vega-lite/build/src/log/message", "REPLACE_ANGLE_WITH_THETA")
   @js.native
   val REPLACE_ANGLE_WITH_THETA: /* "Arc marks uses theta channel rather than angle, replacing angle with theta." */ String = js.native
@@ -125,6 +121,8 @@ object messageMod {
   
   inline def cannotApplySizeToNonOrientedMark(mark: Mark): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotApplySizeToNonOrientedMark")(mark.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def cannotLookupVariableParameter(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotLookupVariableParameter")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   inline def cannotProjectAggregate(channel: Channel, aggregate: Aggregate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cannotProjectAggregate")(channel.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cannotProjectAggregate(channel: Channel, aggregate: HiddenCompositeAggregate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cannotProjectAggregate")(channel.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -134,23 +132,23 @@ object messageMod {
   
   inline def cannotStackRangedMark(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotStackRangedMark")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def cannotUseRelativeBandSizeWithNonBandScale(scaleType: ScaleType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotUseRelativeBandSizeWithNonBandScale")(scaleType.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   inline def cannotUseScalePropertyWithNonColor(prop: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotUseScalePropertyWithNonColor")(prop.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def channelRequiredForBinned(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("channelRequiredForBinned")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def channelShouldBeDiscrete(channel: ExtendedChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("channelShouldBeDiscrete")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def channelShouldBeDiscreteOrDiscretizing(channel: ExtendedChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("channelShouldBeDiscreteOrDiscretizing")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   inline def channelShouldNotBeUsedForBinned(channel: ExtendedChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("channelShouldNotBeUsedForBinned")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def columnsNotSupportByRowCol_facet(`type`: facet): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnsNotSupportByRowCol")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def columnsNotSupportByRowCol(`type`: facet | repeat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnsNotSupportByRowCol")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def columnsNotSupportByRowCol_repeat(`type`: repeat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnsNotSupportByRowCol")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def containerSizeNonSingle(name: width | height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNonSingle")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def containerSizeNonSingle_height(name: height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNonSingle")(name.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def containerSizeNonSingle_width(name: width): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNonSingle")(name.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def containerSizeNotCompatibleWithAutosize_height(name: height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNotCompatibleWithAutosize")(name.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def containerSizeNotCompatibleWithAutosize_width(name: width): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNotCompatibleWithAutosize")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def containerSizeNotCompatibleWithAutosize(name: width | height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("containerSizeNotCompatibleWithAutosize")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def customFormatTypeNotAllowed(channel: ExtendedChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("customFormatTypeNotAllowed")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -165,31 +163,23 @@ object messageMod {
   inline def droppedDay(d: DateTime): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppedDay")(d.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def droppedDay(d: DateTimeExpr): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppedDay")(d.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def droppingColor_encoding(`type`: encoding, opt: Fill): String = (^.asInstanceOf[js.Dynamic].applyDynamic("droppingColor")(`type`.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def droppingColor_property(`type`: property, opt: Fill): String = (^.asInstanceOf[js.Dynamic].applyDynamic("droppingColor")(`type`.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def droppingColor(`type`: encoding | property, opt: Fill): String = (^.asInstanceOf[js.Dynamic].applyDynamic("droppingColor")(`type`.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def droppingFit(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppingFit")().asInstanceOf[String]
   inline def droppingFit(channel: PositionScaleChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("droppingFit")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def emptyFieldDef(fieldDef: js.Any, channel: ExtendedChannel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyFieldDef")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def emptyFieldDef(fieldDef: Any, channel: ExtendedChannel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyFieldDef")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def errorBand1DNotSupport_interpolate(property: interpolate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("errorBand1DNotSupport")(property.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def errorBand1DNotSupport_tension(property: tension): String = ^.asInstanceOf[js.Dynamic].applyDynamic("errorBand1DNotSupport")(property.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def errorBand1DNotSupport(property: interpolate | tension): String = ^.asInstanceOf[js.Dynamic].applyDynamic("errorBand1DNotSupport")(property.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def errorBarCenterAndExtentAreNotNeeded(center: ErrorBarCenter, extent: ErrorBarExtent): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarCenterAndExtentAreNotNeeded")(center.asInstanceOf[js.Any], extent.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def errorBarCenterIsUsedWithWrongExtent_errorband(center: ErrorBarCenter, extent: ErrorBarExtent, mark: errorband): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarCenterIsUsedWithWrongExtent")(center.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def errorBarCenterIsUsedWithWrongExtent_errorbar(center: ErrorBarCenter, extent: ErrorBarExtent, mark: errorbar): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarCenterIsUsedWithWrongExtent")(center.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def errorBarCenterIsUsedWithWrongExtent(center: ErrorBarCenter, extent: ErrorBarExtent, mark: errorbar | errorband): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarCenterIsUsedWithWrongExtent")(center.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def errorBarContinuousAxisHasCustomizedAggregate(aggregate: String, compositeMark: CompositeMark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarContinuousAxisHasCustomizedAggregate")(aggregate.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def errorBarContinuousAxisHasCustomizedAggregate(aggregate: Aggregate, compositeMark: CompositeMark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarContinuousAxisHasCustomizedAggregate")(aggregate.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def facetChannelDropped(channels: js.Array[FacetChannel]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("facetChannelDropped")(channels.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def facetChannelShouldBeDiscrete(channel: FacetChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("facetChannelShouldBeDiscrete")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def incompatibleChannel(channel: ExtendedChannel, markOrFacet: CompositeMark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def incompatibleChannel(channel: ExtendedChannel, markOrFacet: CompositeMark, when: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("incompatibleChannel")(channel.asInstanceOf[js.Any], markOrFacet.asInstanceOf[js.Any], when.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -211,14 +201,12 @@ object messageMod {
   inline def invalidFieldTypeForCountAggregate(`type`: Type, aggregate: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidFieldTypeForCountAggregate")(`type`.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def invalidFieldTypeForCountAggregate(`type`: Type, aggregate: Aggregate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidFieldTypeForCountAggregate")(`type`.asInstanceOf[js.Any], aggregate.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def invalidSpec(spec: GenericSpec[js.Any, js.Any, js.Any, js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def invalidSpec(spec: GenericSpec[Any, Any, Any, Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def invalidTimeUnit(unitName: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidTimeUnit")(unitName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def invalidTimeUnit(unitName: String, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("invalidTimeUnit")(unitName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def invalidTransformIgnored(transform: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidTransformIgnored")(transform.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def latLongDeprecated(channel: Channel, `type`: Type, newChannel: GeoPositionChannel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("latLongDeprecated")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], newChannel.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def invalidTransformIgnored(transform: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidTransformIgnored")(transform.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def lineWithRange(hasX2: Boolean, hasY2: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lineWithRange")(hasX2.asInstanceOf[js.Any], hasY2.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -236,19 +224,25 @@ object messageMod {
   
   inline def noSuchRepeatedValue(field: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("noSuchRepeatedValue")(field.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def offsetEncodingScaleIgnored(channel: OffsetScaleChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("offsetEncodingScaleIgnored")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def offsetNestedInsideContinuousPositionScaleDropped(mainChannel: PositionScaleChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("offsetNestedInsideContinuousPositionScaleDropped")(mainChannel.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   inline def orientOverridden(original: String, actual: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("orientOverridden")(original.asInstanceOf[js.Any], actual.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def primitiveChannelDef_boolean(channel: ExtendedChannel, `type`: boolean, value: Exclude[Value[ExprRef | SignalRef], Null]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("primitiveChannelDef")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def primitiveChannelDef(
+    channel: ExtendedChannel,
+    `type`: string | number | boolean,
+    value: Exclude[Value[ExprRef | SignalRef], Null]
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("primitiveChannelDef")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def primitiveChannelDef_number(channel: ExtendedChannel, `type`: number, value: Exclude[Value[ExprRef | SignalRef], Null]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("primitiveChannelDef")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def projectionOverridden[ES /* <: ExprRef | SignalRef */](opt: ParentProjection[ES]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("projectionOverridden")(opt.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def primitiveChannelDef_string(channel: ExtendedChannel, `type`: string, value: Exclude[Value[ExprRef | SignalRef], Null]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("primitiveChannelDef")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def rangeMarkAlignmentCannotBeExpression(align: align | baseline): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeMarkAlignmentCannotBeExpression")(align.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def projectionOverridden(opt: ParentProjection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("projectionOverridden")(opt.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def relativeBandSizeNotSupported(sizeChannel: width | height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeBandSizeNotSupported")(sizeChannel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def rangeMarkAlignmentCannotBeExpression_align(align: align): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeMarkAlignmentCannotBeExpression")(align.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def rangeMarkAlignmentCannotBeExpression_baseline(align: baseline): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeMarkAlignmentCannotBeExpression")(align.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def replaceOffsetWithMainChannel(mainChannel: PositionScaleChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceOffsetWithMainChannel")(mainChannel.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def scalePropertyNotWorkWithScaleType(scaleType: ScaleType, propName: String, channel: Channel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scalePropertyNotWorkWithScaleType")(scaleType.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -265,16 +259,14 @@ object messageMod {
   inline def stackNonSummativeAggregate(aggregate: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stackNonSummativeAggregate")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def stackNonSummativeAggregate(aggregate: Aggregate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stackNonSummativeAggregate")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def stepDropped_height(channel: height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stepDropped")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stepDropped(channel: width | height): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stepDropped")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def stepDropped_width(channel: width): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stepDropped")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def unaggregateDomainHasNoEffectForRawField_binned(fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregateDomainHasNoEffectForRawField")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unaggregateDomainHasNoEffectForRawField_binned(fieldDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregateDomainHasNoEffectForRawField")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def unaggregateDomainWithNonSharedDomainOp(aggregate: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregateDomainWithNonSharedDomainOp")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def unaggregateDomainWithNonSharedDomainOp(aggregate: Aggregate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregateDomainWithNonSharedDomainOp")(aggregate.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def unaggregatedDomainWithLogScale_binned(fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregatedDomainWithLogScale")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unaggregatedDomainWithLogScale_binned(fieldDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unaggregatedDomainWithLogScale")(fieldDef.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def unknownField(channel: Channel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unknownField")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
   

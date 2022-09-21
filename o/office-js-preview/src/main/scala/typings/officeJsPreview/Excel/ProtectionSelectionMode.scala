@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ProtectionSelectionMode extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ProtectionSelectionMode")
@@ -14,8 +15,9 @@ sealed trait ProtectionSelectionMode extends StObject
 object ProtectionSelectionMode extends StObject {
   
   /**
-    * Selection is not allowed for all cells.
-    *
+    * Selection is not allowed for any cells.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait none
@@ -24,7 +26,8 @@ object ProtectionSelectionMode extends StObject {
   
   /**
     * Selection is allowed for all cells.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait normal
@@ -33,7 +36,8 @@ object ProtectionSelectionMode extends StObject {
   
   /**
     * Selection is allowed only for cells that are not locked.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait unlocked

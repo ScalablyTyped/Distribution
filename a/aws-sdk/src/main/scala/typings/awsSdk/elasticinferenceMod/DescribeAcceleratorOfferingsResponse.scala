@@ -24,6 +24,6 @@ object DescribeAcceleratorOfferingsResponse {
     
     inline def setAcceleratorTypeOfferingsUndefined: Self = StObject.set(x, "acceleratorTypeOfferings", js.undefined)
     
-    inline def setAcceleratorTypeOfferingsVarargs(value: AcceleratorTypeOffering*): Self = StObject.set(x, "acceleratorTypeOfferings", js.Array(value :_*))
+    inline def setAcceleratorTypeOfferingsVarargs(value: AcceleratorTypeOffering*): Self = StObject.set(x, "acceleratorTypeOfferings", js.Array(value*))
   }
 }

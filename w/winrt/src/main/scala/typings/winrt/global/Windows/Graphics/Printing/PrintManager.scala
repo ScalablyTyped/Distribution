@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Graphics.Printing.PrintManager")
 @js.native
-class PrintManager ()
+open class PrintManager ()
   extends StObject
      with typings.winrt.Windows.Graphics.Printing.PrintManager {
   
   /* CompleteClass */
-  var onprinttaskrequested: js.Any = js.native
+  var onprinttaskrequested: Any = js.native
 }
 /* static members */
 object PrintManager {

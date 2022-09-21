@@ -1,11 +1,23 @@
 package typings.googleVisualization.global.google
 
+import typings.googleVisualization.global.google.^
+import typings.googleVisualization.google.LoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def load(visualization: java.lang.String, version: java.lang.String, packages: js.Any): scala.Unit = (typings.googleVisualization.global.google.^.asInstanceOf[js.Dynamic].applyDynamic("load")(visualization.asInstanceOf[js.Any], version.asInstanceOf[js.Any], packages.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+/** Legacy https://developers.google.com/chart/interactive/docs/basic_load_libs#updateloader */
+inline def load_visualization(
+  visualization: typings.googleVisualization.googleVisualizationStrings.visualization,
+  version: String,
+  options: LoadOptions
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(visualization.asInstanceOf[js.Any], version.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def load_visualization(
+  visualization: typings.googleVisualization.googleVisualizationStrings.visualization,
+  version: Double,
+  options: LoadOptions
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(visualization.asInstanceOf[js.Any], version.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def setOnLoadCallback(handler: js.Function): scala.Unit = typings.googleVisualization.global.google.^.asInstanceOf[js.Dynamic].applyDynamic("setOnLoadCallback")(handler.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def setOnLoadCallback(handler: js.Function0[scala.Unit]): scala.Unit = typings.googleVisualization.global.google.^.asInstanceOf[js.Dynamic].applyDynamic("setOnLoadCallback")(handler.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setOnLoadCallback(handler: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOnLoadCallback")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def setOnLoadCallback(handler: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOnLoadCallback")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]

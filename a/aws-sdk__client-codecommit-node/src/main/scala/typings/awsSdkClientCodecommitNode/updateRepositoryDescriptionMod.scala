@@ -8,5 +8,5 @@ object updateRepositoryDescriptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/UpdateRepositoryDescription", "UpdateRepositoryDescription")
   @js.native
-  val UpdateRepositoryDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val UpdateRepositoryDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

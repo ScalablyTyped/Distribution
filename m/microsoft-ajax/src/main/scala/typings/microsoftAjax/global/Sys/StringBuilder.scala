@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param initialText
   *           (Optional) The string that is used to initialize the value of the instance. If the value is null, the new StringBuilder instance will contain an empty string ("").
   */
-class StringBuilder ()
+open class StringBuilder ()
   extends StObject
      with typings.microsoftAjax.Sys.StringBuilder {
   def this(initialText: String) = this()

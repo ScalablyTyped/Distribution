@@ -6,7 +6,6 @@ import typings.kiiCloudSdk.anon.`26`
 import typings.kiiCloudSdk.anon.`27`
 import typings.kiiCloudSdk.anon.`28`
 import typings.kiiCloudSdk.anon.`4`
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -216,7 +215,7 @@ trait KiiThing
     *
     * @return created time of this thing.
     */
-  def getCreated(): Date = js.native
+  def getCreated(): js.Date = js.native
   
   /**
     * Get disabled status of this thing.
@@ -230,7 +229,7 @@ trait KiiThing
     *
     * @return online status modified time of this thing. The date will be null initially until the thing is connected for the first time.
     */
-  def getOnlineStatusModifiedAt(): Date = js.native
+  def getOnlineStatusModifiedAt(): js.Date = js.native
   
   /**
     * Get thing ID.

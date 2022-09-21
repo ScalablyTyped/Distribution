@@ -40,7 +40,7 @@ object EntityAdWordsLink {
     
     inline def setAdWordsAccountsUndefined: Self = StObject.set(x, "adWordsAccounts", js.undefined)
     
-    inline def setAdWordsAccountsVarargs(value: AdWordsAccount*): Self = StObject.set(x, "adWordsAccounts", js.Array(value :_*))
+    inline def setAdWordsAccountsVarargs(value: AdWordsAccount*): Self = StObject.set(x, "adWordsAccounts", js.Array(value*))
     
     inline def setEntity(value: typings.maximMazurokGapiClientAnalytics.anon.WebPropertyRef): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
@@ -62,7 +62,7 @@ object EntityAdWordsLink {
     
     inline def setProfileIdsUndefined: Self = StObject.set(x, "profileIds", js.undefined)
     
-    inline def setProfileIdsVarargs(value: String*): Self = StObject.set(x, "profileIds", js.Array(value :_*))
+    inline def setProfileIdsVarargs(value: String*): Self = StObject.set(x, "profileIds", js.Array(value*))
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     

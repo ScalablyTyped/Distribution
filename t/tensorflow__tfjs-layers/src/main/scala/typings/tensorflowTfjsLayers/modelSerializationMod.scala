@@ -63,7 +63,7 @@ object modelSerializationMod {
       
       inline def setConfig(value: js.Array[LayerSerialization]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      inline def setConfigVarargs(value: LayerSerialization*): Self = StObject.set(x, "config", js.Array(value :_*))
+      inline def setConfigVarargs(value: LayerSerialization*): Self = StObject.set(x, "config", js.Array(value*))
       
       inline def setKeras_version(value: String): Self = StObject.set(x, "keras_version", value.asInstanceOf[js.Any])
       
@@ -97,17 +97,17 @@ object modelSerializationMod {
       
       inline def setInput_layers(value: js.Array[TensorKeyArray]): Self = StObject.set(x, "input_layers", value.asInstanceOf[js.Any])
       
-      inline def setInput_layersVarargs(value: TensorKeyArray*): Self = StObject.set(x, "input_layers", js.Array(value :_*))
+      inline def setInput_layersVarargs(value: TensorKeyArray*): Self = StObject.set(x, "input_layers", js.Array(value*))
       
       inline def setLayers(value: js.Array[LayerSerialization]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      inline def setLayersVarargs(value: LayerSerialization*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: LayerSerialization*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setOutput_layers(value: js.Array[TensorKeyArray]): Self = StObject.set(x, "output_layers", value.asInstanceOf[js.Any])
       
-      inline def setOutput_layersVarargs(value: TensorKeyArray*): Self = StObject.set(x, "output_layers", js.Array(value :_*))
+      inline def setOutput_layersVarargs(value: TensorKeyArray*): Self = StObject.set(x, "output_layers", js.Array(value*))
     }
   }
   
@@ -153,7 +153,7 @@ object modelSerializationMod {
       
       inline def setLayers(value: js.Array[LayerSerialization]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      inline def setLayersVarargs(value: LayerSerialization*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: LayerSerialization*): Self = StObject.set(x, "layers", js.Array(value*))
     }
   }
   

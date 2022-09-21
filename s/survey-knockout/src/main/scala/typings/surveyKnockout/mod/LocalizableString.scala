@@ -6,57 +6,104 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "LocalizableString")
 @js.native
-class LocalizableString protected () extends StObject {
+open class LocalizableString protected ()
+  extends StObject
+     with ILocalizableString {
   def this(owner: ILocalizableOwner) = this()
   def this(owner: ILocalizableOwner, useMarkdown: Boolean) = this()
+  def this(owner: ILocalizableOwner, useMarkdown: Boolean, name: String) = this()
+  def this(owner: ILocalizableOwner, useMarkdown: Unit, name: String) = this()
   
-  val calculatedText: String = js.native
+  def calculatedText: String = js.native
   
-  def equals(obj: js.Any): Boolean = js.native
+  var calculatedTextValue: String = js.native
   
-  def getJson(): js.Any = js.native
+  def getHtmlValue(): String = js.native
   
-  def getLocaleText(loc: String): String = js.native
+  /* CompleteClass */
+  override def getIsMultiple(): Boolean = js.native
   
-  def getLocales(): js.Array[String] = js.native
+  /* CompleteClass */
+  override def getJson(): Any = js.native
   
-  val hasHtml: Boolean = js.native
+  /* CompleteClass */
+  override def getLocaleText(loc: String): String = js.native
+  
+  /* CompleteClass */
+  override def getLocales(): js.Array[Any] = js.native
+  
+  def hasHtml: Boolean = js.native
   
   def hasNonDefaultText(): Boolean = js.native
   
-  val html: String = js.native
+  def html: String = js.native
   
-  val isEmpty: Boolean = js.native
+  var htmlValues: Any = js.native
   
-  val locale: String = js.native
+  def isEmpty: Boolean = js.native
+  
+  def locale: String = js.native
+  
+  var localizationName: String = js.native
+  
+  var name: String = js.native
   
   def onChanged(): Unit = js.native
   
   /* protected */ def onCreating(): Unit = js.native
   
+  var onGetDefaultTextCallback: Any = js.native
+  
+  def onGetLocalizationTextCallback(str: String): String = js.native
+  
   def onGetTextCallback(str: String): String = js.native
   
-  def onStrChanged(): Unit = js.native
+  var onSearchChanged: Any = js.native
+  
+  def onStrChanged(oldValue: String, newValue: String): Unit = js.native
+  
+  var onStringChanged: EventBase[LocalizableString] = js.native
   
   var owner: ILocalizableOwner = js.native
   
-  val pureText: String = js.native
+  def pureText: String = js.native
   
-  val renderedHtml: String = js.native
+  def renderAs: String = js.native
   
-  def setJson(value: js.Any): Unit = js.native
+  def renderAsData: Any = js.native
   
-  def setLocaleText(loc: String, value: String): Unit = js.native
+  def renderedHtml: String = js.native
+  
+  var renderedText: String = js.native
+  
+  var searchIndex: Double = js.native
+  
+  var searchText: String = js.native
+  
+  var searchableText: String = js.native
+  
+  def setFindText(text: String): Boolean = js.native
+  
+  def setJson(value: Any): Unit = js.native
+  
+  /* CompleteClass */
+  override def setLocaleText(loc: String, newValue: String): Any = js.native
   
   var sharedData: LocalizableString = js.native
   
+  var storeDefaultText: Boolean = js.native
+  
   def strChanged(): Unit = js.native
   
-  var text: String = js.native
+  def text: String = js.native
   
-  val textOrHtml: String = js.native
+  def textOrHtml: String = js.native
+  
+  def text_=(`val`: String): Unit = js.native
   
   var useMarkdown: Boolean = js.native
+  
+  var values: Any = js.native
 }
 /* static members */
 object LocalizableString {
@@ -70,8 +117,13 @@ object LocalizableString {
   def SerializeAsObject: Boolean = js.native
   inline def SerializeAsObject_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SerializeAsObject")(x.asInstanceOf[js.Any])
   
-  @JSImport("survey-knockout", "LocalizableString.defaultLocale")
+  @JSImport("survey-knockout", "LocalizableString.defaultRenderer")
   @js.native
-  def defaultLocale: String = js.native
-  inline def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
+  def defaultRenderer: String = js.native
+  inline def defaultRenderer_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultRenderer")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "LocalizableString.editableRenderer")
+  @js.native
+  def editableRenderer: String = js.native
+  inline def editableRenderer_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("editableRenderer")(x.asInstanceOf[js.Any])
 }

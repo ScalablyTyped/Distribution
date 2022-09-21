@@ -25,7 +25,7 @@ object ReleaseDefinitionGatesStep {
     
     inline def setGatesOptions(value: ReleaseDefinitionGatesOptions): Self = StObject.set(x, "gatesOptions", value.asInstanceOf[js.Any])
     
-    inline def setGatesVarargs(value: ReleaseDefinitionGate*): Self = StObject.set(x, "gates", js.Array(value :_*))
+    inline def setGatesVarargs(value: ReleaseDefinitionGate*): Self = StObject.set(x, "gates", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

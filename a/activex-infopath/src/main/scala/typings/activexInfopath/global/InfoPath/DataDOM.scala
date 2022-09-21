@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.DataDOM")
 @js.native
-/* private */ class DataDOM ()
+/* private */ open class DataDOM ()
   extends StObject
      with typings.activexInfopath.InfoPath.DataDOM {
   

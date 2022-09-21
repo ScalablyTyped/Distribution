@@ -10,13 +10,13 @@ object commandBarButtonMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Button/CommandBarButton/CommandBarButton", "CommandBarButton")
   @js.native
-  class CommandBarButton protected ()
-    extends Component[IButtonProps, js.Object, js.Any] {
+  open class CommandBarButton protected ()
+    extends Component[IButtonProps, js.Object, Any] {
     def this(props: IButtonProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IButtonProps, context: js.Any) = this()
+    def this(props: IButtonProps, context: Any) = this()
   }
 }

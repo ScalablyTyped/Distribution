@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplePay extends StObject {
   
   var applePay: js.UndefOr[Boolean] = js.undefined
+  
+  var googlePay: js.UndefOr[Boolean] = js.undefined
 }
 object ApplePay {
   
@@ -20,5 +22,9 @@ object ApplePay {
     inline def setApplePay(value: Boolean): Self = StObject.set(x, "applePay", value.asInstanceOf[js.Any])
     
     inline def setApplePayUndefined: Self = StObject.set(x, "applePay", js.undefined)
+    
+    inline def setGooglePay(value: Boolean): Self = StObject.set(x, "googlePay", value.asInstanceOf[js.Any])
+    
+    inline def setGooglePayUndefined: Self = StObject.set(x, "googlePay", js.undefined)
   }
 }

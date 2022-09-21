@@ -245,9 +245,12 @@ trait ICanvasOptions
   
   /**
     * When true, objects can be transformed by one side (unproportionally)
+    * when dragged on the corners that normally would not do that.
     * @type Boolean
+    * @default
+    * @since fabric 4.0 // changed name and default value
     */
-  var uniScaleTransform: js.UndefOr[Boolean] = js.undefined
+  var uniformScaling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Canvas width
@@ -361,7 +364,7 @@ object ICanvasOptions {
     
     inline def setSelectionDashArrayUndefined: Self = StObject.set(x, "selectionDashArray", js.undefined)
     
-    inline def setSelectionDashArrayVarargs(value: Double*): Self = StObject.set(x, "selectionDashArray", js.Array(value :_*))
+    inline def setSelectionDashArrayVarargs(value: Double*): Self = StObject.set(x, "selectionDashArray", js.Array(value*))
     
     inline def setSelectionFullyContained(value: Boolean): Self = StObject.set(x, "selectionFullyContained", value.asInstanceOf[js.Any])
     
@@ -371,7 +374,7 @@ object ICanvasOptions {
     
     inline def setSelectionKeyUndefined: Self = StObject.set(x, "selectionKey", js.undefined)
     
-    inline def setSelectionKeyVarargs(value: String*): Self = StObject.set(x, "selectionKey", js.Array(value :_*))
+    inline def setSelectionKeyVarargs(value: String*): Self = StObject.set(x, "selectionKey", js.Array(value*))
     
     inline def setSelectionLineWidth(value: Double): Self = StObject.set(x, "selectionLineWidth", value.asInstanceOf[js.Any])
     
@@ -405,15 +408,15 @@ object ICanvasOptions {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
-    inline def setTargetsVarargs(value: Object*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Object*): Self = StObject.set(x, "targets", js.Array(value*))
     
     inline def setUniScaleKey(value: String): Self = StObject.set(x, "uniScaleKey", value.asInstanceOf[js.Any])
     
     inline def setUniScaleKeyUndefined: Self = StObject.set(x, "uniScaleKey", js.undefined)
     
-    inline def setUniScaleTransform(value: Boolean): Self = StObject.set(x, "uniScaleTransform", value.asInstanceOf[js.Any])
+    inline def setUniformScaling(value: Boolean): Self = StObject.set(x, "uniformScaling", value.asInstanceOf[js.Any])
     
-    inline def setUniScaleTransformUndefined: Self = StObject.set(x, "uniScaleTransform", js.undefined)
+    inline def setUniformScalingUndefined: Self = StObject.set(x, "uniformScaling", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

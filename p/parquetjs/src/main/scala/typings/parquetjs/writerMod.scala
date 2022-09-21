@@ -1,7 +1,7 @@
 package typings.parquetjs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.WriteStream
 import typings.node.streamMod.Transform
@@ -17,7 +17,7 @@ object writerMod {
   
   @JSImport("parquetjs/lib/writer", "ParquetEnvelopeWriter")
   @js.native
-  class ParquetEnvelopeWriter protected () extends StObject {
+  open class ParquetEnvelopeWriter protected () extends StObject {
     def this(
       schema: ParquetSchema,
       writeFn: js.Function1[/* buf */ Buffer, js.Promise[Unit]],
@@ -79,7 +79,7 @@ object writerMod {
   
   @JSImport("parquetjs/lib/writer", "ParquetTransformer")
   @js.native
-  class ParquetTransformer protected () extends Transform {
+  open class ParquetTransformer protected () extends Transform {
     def this(schema: ParquetSchema) = this()
     def this(schema: ParquetSchema, opts: String) = this()
     def this(schema: ParquetSchema, opts: ParquetWriterOpts) = this()
@@ -95,7 +95,7 @@ object writerMod {
   
   @JSImport("parquetjs/lib/writer", "ParquetWriter")
   @js.native
-  class ParquetWriter protected () extends StObject {
+  open class ParquetWriter protected () extends StObject {
     def this(schema: ParquetSchema, envelopeWriter: ParquetEnvelopeWriter) = this()
     def this(schema: ParquetSchema, envelopeWriter: ParquetEnvelopeWriter, opts: String) = this()
     def this(schema: ParquetSchema, envelopeWriter: ParquetEnvelopeWriter, opts: ParquetWriterOpts) = this()

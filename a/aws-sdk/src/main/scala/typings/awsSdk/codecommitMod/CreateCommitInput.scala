@@ -79,7 +79,7 @@ object CreateCommitInput {
     
     inline def setDeleteFilesUndefined: Self = StObject.set(x, "deleteFiles", js.undefined)
     
-    inline def setDeleteFilesVarargs(value: DeleteFileEntry*): Self = StObject.set(x, "deleteFiles", js.Array(value :_*))
+    inline def setDeleteFilesVarargs(value: DeleteFileEntry*): Self = StObject.set(x, "deleteFiles", js.Array(value*))
     
     inline def setEmail(value: Email): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
@@ -97,7 +97,7 @@ object CreateCommitInput {
     
     inline def setPutFilesUndefined: Self = StObject.set(x, "putFiles", js.undefined)
     
-    inline def setPutFilesVarargs(value: PutFileEntry*): Self = StObject.set(x, "putFiles", js.Array(value :_*))
+    inline def setPutFilesVarargs(value: PutFileEntry*): Self = StObject.set(x, "putFiles", js.Array(value*))
     
     inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
@@ -105,6 +105,6 @@ object CreateCommitInput {
     
     inline def setSetFileModesUndefined: Self = StObject.set(x, "setFileModes", js.undefined)
     
-    inline def setSetFileModesVarargs(value: SetFileModeEntry*): Self = StObject.set(x, "setFileModes", js.Array(value :_*))
+    inline def setSetFileModesVarargs(value: SetFileModeEntry*): Self = StObject.set(x, "setFileModes", js.Array(value*))
   }
 }

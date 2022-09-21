@@ -2,6 +2,8 @@ package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientSecretmanager.anon.Accesstoken
+import typings.maximMazurokGapiClientSecretmanager.anon.Etag
+import typings.maximMazurokGapiClientSecretmanager.anon.Filter
 import typings.maximMazurokGapiClientSecretmanager.anon.Name
 import typings.maximMazurokGapiClientSecretmanager.anon.Oauthtoken
 import typings.maximMazurokGapiClientSecretmanager.anon.OptionsrequestedPolicyVersion
@@ -9,7 +11,6 @@ import typings.maximMazurokGapiClientSecretmanager.anon.Parent
 import typings.maximMazurokGapiClientSecretmanager.anon.PrettyPrint
 import typings.maximMazurokGapiClientSecretmanager.anon.QuotaUser
 import typings.maximMazurokGapiClientSecretmanager.anon.Resource
-import typings.maximMazurokGapiClientSecretmanager.anon.SecretId
 import typings.maximMazurokGapiClientSecretmanager.anon.UpdateMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,16 +20,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SecretsResource extends StObject {
   
   /** Creates a new SecretVersion containing secret data and attaches it to an existing Secret. */
-  def addVersion(request: Parent): Request[SecretVersion] = js.native
-  def addVersion(request: PrettyPrint, body: AddSecretVersionRequest): Request[SecretVersion] = js.native
+  def addVersion(request: Oauthtoken): Request[SecretVersion] = js.native
+  def addVersion(request: Parent, body: AddSecretVersionRequest): Request[SecretVersion] = js.native
   
   /** Creates a new Secret containing no SecretVersions. */
-  def create(request: QuotaUser): Request[Secret] = js.native
-  def create(request: SecretId, body: Secret): Request[Secret] = js.native
+  def create(request: PrettyPrint): Request[Secret] = js.native
+  def create(request: QuotaUser, body: Secret): Request[Secret] = js.native
   
   /** Deletes a Secret. */
   def delete(): Request[js.Object] = js.native
-  def delete(request: Accesstoken): Request[js.Object] = js.native
+  def delete(request: Etag): Request[js.Object] = js.native
   
   /** Gets metadata for a given Secret. */
   def get(): Request[Secret] = js.native
@@ -40,7 +41,7 @@ trait SecretsResource extends StObject {
   
   /** Lists Secrets. */
   def list(): Request[ListSecretsResponse] = js.native
-  def list(request: Oauthtoken): Request[ListSecretsResponse] = js.native
+  def list(request: Filter): Request[ListSecretsResponse] = js.native
   
   /** Updates metadata of an existing Secret. */
   def patch(request: Name): Request[Secret] = js.native

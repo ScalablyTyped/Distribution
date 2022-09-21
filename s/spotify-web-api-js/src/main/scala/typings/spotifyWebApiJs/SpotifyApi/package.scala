@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * POST /v1/users/{user_id}/playlists/{playlist_id}/tracks
   * https://developer.spotify.com/web-api/add-tracks-to-playlist/
   */
-type AddTracksToPlaylistResponse = typings.spotifyWebApiJs.SpotifyApi.PlaylistSnapshotResponse
+type AddTracksToPlaylistResponse = PlaylistSnapshotResponse
 
 /**
   * Get an Album’s Tracks
@@ -19,7 +19,7 @@ type AddTracksToPlaylistResponse = typings.spotifyWebApiJs.SpotifyApi.PlaylistSn
   * GET /v1/albums/{id}/tracks
   * https://developer.spotify.com/web-api/get-albums-tracks/
   */
-type AlbumTracksResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[typings.spotifyWebApiJs.SpotifyApi.TrackObjectSimplified]
+type AlbumTracksResponse = PagingObject[TrackObjectSimplified]
 
 /**
   * Get an Artist’s Albums
@@ -27,7 +27,7 @@ type AlbumTracksResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[typin
   * GET /v1/artists/{id}/albums
   * https://developer.spotify.com/web-api/get-artists-albums/
   */
-type ArtistsAlbumsResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[typings.spotifyWebApiJs.SpotifyApi.AlbumObjectSimplified]
+type ArtistsAlbumsResponse = PagingObject[AlbumObjectSimplified]
 
 /**
   * Get Audio Analysis for a Track
@@ -46,7 +46,7 @@ type AudioAnalysisResponse = js.Object
   * GET /v1/audio-features/{id}
   * https://developer.spotify.com/web-api/get-audio-features/
   */
-type AudioFeaturesResponse = typings.spotifyWebApiJs.SpotifyApi.AudioFeaturesObject
+type AudioFeaturesResponse = AudioFeaturesObject
 
 /**
   * Change a Playlist’s Details
@@ -54,7 +54,7 @@ type AudioFeaturesResponse = typings.spotifyWebApiJs.SpotifyApi.AudioFeaturesObj
   * PUT /v1/users/{user_id}/playlists/{playlist_id}
   * https://developer.spotify.com/web-api/change-playlist-details/
   */
-type ChangePlaylistDetailsResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
+type ChangePlaylistDetailsResponse = VoidResponse
 
 /**
   * Check user's saved albums
@@ -62,7 +62,7 @@ type ChangePlaylistDetailsResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResp
   * GET /v1/me/albums/contains?ids={ids}
   * https://developer.spotify.com/web-api/check-users-saved-albums/
   */
-type CheckUserSavedAlbumsResponse = js.Array[scala.Boolean]
+type CheckUserSavedAlbumsResponse = js.Array[Boolean]
 
 /**
   * Check user's saved shows
@@ -70,7 +70,7 @@ type CheckUserSavedAlbumsResponse = js.Array[scala.Boolean]
   * GET /v1/me/shows/contains?ids={ids}
   * https://developer.spotify.com/documentation/web-api/reference/library/check-users-saved-shows/
   */
-type CheckUsersSavedShowsResponse = js.Array[scala.Boolean]
+type CheckUsersSavedShowsResponse = js.Array[Boolean]
 
 /**
   * Check User’s Saved Tracks
@@ -78,7 +78,7 @@ type CheckUsersSavedShowsResponse = js.Array[scala.Boolean]
   * GET /v1/me/tracks/contains?ids={ids}
   * https://developer.spotify.com/web-api/check-users-saved-tracks/
   */
-type CheckUsersSavedTracksResponse = js.Array[scala.Boolean]
+type CheckUsersSavedTracksResponse = js.Array[Boolean]
 
 /**
   * Create a Playlist
@@ -86,7 +86,7 @@ type CheckUsersSavedTracksResponse = js.Array[scala.Boolean]
   * POST /v1/users/{user_id}/playlists
   * https://developer.spotify.com/web-api/create-playlist/
   */
-type CreatePlaylistResponse = typings.spotifyWebApiJs.SpotifyApi.PlaylistObjectFull
+type CreatePlaylistResponse = PlaylistObjectFull
 
 /**
   * Get Current User’s Profile
@@ -94,9 +94,9 @@ type CreatePlaylistResponse = typings.spotifyWebApiJs.SpotifyApi.PlaylistObjectF
   * GET /v1/me
   * https://developer.spotify.com/web-api/get-current-users-profile/
   */
-type CurrentUsersProfileResponse = typings.spotifyWebApiJs.SpotifyApi.UserObjectPrivate
+type CurrentUsersProfileResponse = UserObjectPrivate
 
-type CurrentlyPlayingResponse = typings.spotifyWebApiJs.SpotifyApi.CurrentlyPlayingObject
+type CurrentlyPlayingResponse = CurrentlyPlayingObject
 
 /**
   * Follow artists or users
@@ -104,7 +104,7 @@ type CurrentlyPlayingResponse = typings.spotifyWebApiJs.SpotifyApi.CurrentlyPlay
   * PUT /v1/me/following
   * https://developer.spotify.com/web-api/follow-artists-users/
   */
-type FollowArtistsOrUsersResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
+type FollowArtistsOrUsersResponse = VoidResponse
 
 /**
   * Follow a Playlist
@@ -112,7 +112,7 @@ type FollowArtistsOrUsersResponse = typings.spotifyWebApiJs.SpotifyApi.VoidRespo
   * PUT /v1/users/{owner_id}/playlists/{playlist_id}/followers
   * https://developer.spotify.com/web-api/follow-playlist/
   */
-type FollowPlaylistResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
+type FollowPlaylistResponse = VoidResponse
 
 /**
   * Get a list of the current user's playlists
@@ -120,7 +120,7 @@ type FollowPlaylistResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
   * GET /v1/me/playlists
   * https://developer.spotify.com/web-api/get-list-users-playlists/
   */
-type ListOfCurrentUsersPlaylistsResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[typings.spotifyWebApiJs.SpotifyApi.PlaylistObjectSimplified]
+type ListOfCurrentUsersPlaylistsResponse = PagingObject[PlaylistObjectSimplified]
 
 /**
   * Get a list of a user's playlists
@@ -128,7 +128,7 @@ type ListOfCurrentUsersPlaylistsResponse = typings.spotifyWebApiJs.SpotifyApi.Pa
   * GET /v1/users/{user_id}/playlists
   * https://developer.spotify.com/web-api/get-list-users-playlists/
   */
-type ListOfUsersPlaylistsResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[typings.spotifyWebApiJs.SpotifyApi.PlaylistObjectSimplified]
+type ListOfUsersPlaylistsResponse = PagingObject[PlaylistObjectSimplified]
 
 /**
   * Get a list of a user's saved shows
@@ -136,14 +136,14 @@ type ListOfUsersPlaylistsResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObj
   * GET /v1/me/shows
   * https://developer.spotify.com/documentation/web-api/reference/library/get-users-saved-shows/
   */
-type ListOfUsersShowsResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[typings.spotifyWebApiJs.SpotifyApi.ShowObjectSimplified]
+type ListOfUsersShowsResponse = PagingObject[SavedShowObject]
 
 /**
   * Get a Playlist Cover Image
   * GET /v1/playlists/{playlist_id}/images
   * https://developer.spotify.com/documentation/web-api/reference/playlists/get-playlist-cover/
   */
-type PlaylistCoverImageResponse = js.Array[typings.spotifyWebApiJs.SpotifyApi.ImageObject]
+type PlaylistCoverImageResponse = js.Array[ImageObject]
 
 /**
   * Get a playlist's tracks
@@ -151,7 +151,7 @@ type PlaylistCoverImageResponse = js.Array[typings.spotifyWebApiJs.SpotifyApi.Im
   * GET /v1/users/{user_id}/playlists/{playlist_id}/tracks
   * https://developer.spotify.com/web-api/get-playlists-tracks/
   */
-type PlaylistTrackResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[typings.spotifyWebApiJs.SpotifyApi.PlaylistTrackObject]
+type PlaylistTrackResponse = PagingObject[PlaylistTrackObject]
 
 /**
   * Get recommendations based on seeds
@@ -159,7 +159,7 @@ type PlaylistTrackResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[typ
   * GET /v1/recommendations
   * https://developer.spotify.com/get-recommendations/
   */
-type RecommendationsFromSeedsResponse = typings.spotifyWebApiJs.SpotifyApi.RecommendationsObject
+type RecommendationsFromSeedsResponse = RecommendationsObject
 
 /**
   * Remove Albums for Current User
@@ -167,7 +167,7 @@ type RecommendationsFromSeedsResponse = typings.spotifyWebApiJs.SpotifyApi.Recom
   * DELETE /v1/me/albums?ids={ids}
   * https://developer.spotify.com/web-api/remove-albums-user/
   */
-type RemoveAlbumsForUserResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
+type RemoveAlbumsForUserResponse = VoidResponse
 
 /**
   * Remove Tracks from a Playlist
@@ -175,7 +175,7 @@ type RemoveAlbumsForUserResponse = typings.spotifyWebApiJs.SpotifyApi.VoidRespon
   * DELETE /v1/users/{user_id}/playlists/{playlist_id}/tracks
   * https://developer.spotify.com/web-api/remove-tracks-playlist/
   */
-type RemoveTracksFromPlaylistResponse = typings.spotifyWebApiJs.SpotifyApi.PlaylistSnapshotResponse
+type RemoveTracksFromPlaylistResponse = PlaylistSnapshotResponse
 
 /**
   * Remove shows for user
@@ -183,7 +183,7 @@ type RemoveTracksFromPlaylistResponse = typings.spotifyWebApiJs.SpotifyApi.Playl
   * DELETE /v1/me/shows?ids={ids}
   * https://developer.spotify.com/documentation/web-api/reference/library/remove-shows-user/
   */
-type RemoveUsersSavedShowsResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
+type RemoveUsersSavedShowsResponse = VoidResponse
 
 /**
   * Remove User’s Saved Tracks
@@ -191,7 +191,7 @@ type RemoveUsersSavedShowsResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResp
   * DELETE /v1/me/tracks?ids={ids}
   * https://developer.spotify.com/web-api/remove-tracks-user/
   */
-type RemoveUsersSavedTracksResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
+type RemoveUsersSavedTracksResponse = VoidResponse
 
 /**
   * Reorder a Playlist’s Tracks
@@ -199,7 +199,7 @@ type RemoveUsersSavedTracksResponse = typings.spotifyWebApiJs.SpotifyApi.VoidRes
   * PUT /v1/users/{user_id}/playlists/{playlist_id}/tracks
   * https://developer.spotify.com/web-api/reorder-playlists-tracks/
   */
-type ReorderPlaylistTracksResponse = typings.spotifyWebApiJs.SpotifyApi.PlaylistSnapshotResponse
+type ReorderPlaylistTracksResponse = PlaylistSnapshotResponse
 
 /**
   * Replace a Playlist’s Tracks
@@ -207,7 +207,7 @@ type ReorderPlaylistTracksResponse = typings.spotifyWebApiJs.SpotifyApi.Playlist
   * PUT /v1/users/{user_id}/playlists/{playlist_id}/tracks
   * https://developer.spotify.com/web-api/replace-playlists-tracks/
   */
-type ReplacePlaylistTracksResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
+type ReplacePlaylistTracksResponse = VoidResponse
 
 /**
   * Save albums for user
@@ -215,7 +215,7 @@ type ReplacePlaylistTracksResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResp
   * PUT /v1/me/albums?ids={ids}
   * https://developer.spotify.com/web-api/save-albums-user/
   */
-type SaveAlbumsForUserResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
+type SaveAlbumsForUserResponse = VoidResponse
 
 /**
   * Save shows for user
@@ -223,7 +223,7 @@ type SaveAlbumsForUserResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
   * PUT /v1/me/shows?ids={ids}
   * https://developer.spotify.com/documentation/web-api/reference/library/save-shows-user/
   */
-type SaveShowsForUserResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
+type SaveShowsForUserResponse = VoidResponse
 
 /**
   * Save tracks for user
@@ -231,7 +231,7 @@ type SaveShowsForUserResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
   * PUT /v1/me/tracks?ids={ids}
   * https://developer.spotify.com/web-api/save-tracks-user/
   */
-type SaveTracksForUserResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
+type SaveTracksForUserResponse = VoidResponse
 
 /**
   * Get a Show’s Episodes
@@ -239,7 +239,7 @@ type SaveTracksForUserResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
   * /v1/shows/{id}/episodes
   * https://developer.spotify.com/documentation/web-api/reference/shows/get-shows-episodes/
   */
-type ShowEpisodesResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[typings.spotifyWebApiJs.SpotifyApi.EpisodeObjectSimplified]
+type ShowEpisodesResponse = PagingObject[EpisodeObjectSimplified]
 
 // Spotify API Endpoints:
 /**
@@ -248,7 +248,7 @@ type ShowEpisodesResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[typi
   * GET /v1/albums/{id}
   * https://developer.spotify.com/web-api/get-album/
   */
-type SingleAlbumResponse = typings.spotifyWebApiJs.SpotifyApi.AlbumObjectFull
+type SingleAlbumResponse = AlbumObjectFull
 
 /**
   * Get an Artist
@@ -256,7 +256,7 @@ type SingleAlbumResponse = typings.spotifyWebApiJs.SpotifyApi.AlbumObjectFull
   * GET /v1/artists/{id}
   * https://developer.spotify.com/web-api/get-artist/
   */
-type SingleArtistResponse = typings.spotifyWebApiJs.SpotifyApi.ArtistObjectFull
+type SingleArtistResponse = ArtistObjectFull
 
 /**
   * Get a category
@@ -264,7 +264,7 @@ type SingleArtistResponse = typings.spotifyWebApiJs.SpotifyApi.ArtistObjectFull
   * GET /v1/browse/categories/{id}
   * https://developer.spotify.com/web-api/get-category/
   */
-type SingleCategoryResponse = typings.spotifyWebApiJs.SpotifyApi.CategoryObject
+type SingleCategoryResponse = CategoryObject
 
 /**
   * Get an Episode
@@ -272,7 +272,7 @@ type SingleCategoryResponse = typings.spotifyWebApiJs.SpotifyApi.CategoryObject
   * GET /v1/episode/{id}
   * https://developer.spotify.com/documentation/web-api/reference/episodes/get-an-episode/
   */
-type SingleEpisodeResponse = typings.spotifyWebApiJs.SpotifyApi.EpisodeObjectFull
+type SingleEpisodeResponse = EpisodeObjectFull
 
 /**
   * Get a playlist
@@ -280,7 +280,7 @@ type SingleEpisodeResponse = typings.spotifyWebApiJs.SpotifyApi.EpisodeObjectFul
   * GET /v1/users/{user_id}/playlists/{playlist_id}
   * https://developer.spotify.com/web-api/get-playlist/
   */
-type SinglePlaylistResponse = typings.spotifyWebApiJs.SpotifyApi.PlaylistObjectFull
+type SinglePlaylistResponse = PlaylistObjectFull
 
 /**
   * Get a Show
@@ -288,7 +288,7 @@ type SinglePlaylistResponse = typings.spotifyWebApiJs.SpotifyApi.PlaylistObjectF
   * GET /v1/shows/{id}
   * https://developer.spotify.com/documentation/web-api/reference/shows/get-a-show/
   */
-type SingleShowResponse = typings.spotifyWebApiJs.SpotifyApi.ShowObjectFull
+type SingleShowResponse = ShowObjectFull
 
 /**
   * Get a track
@@ -296,7 +296,7 @@ type SingleShowResponse = typings.spotifyWebApiJs.SpotifyApi.ShowObjectFull
   * GET /v1/tracks/{id}
   * https://developer.spotify.com/web-api/get-track/
   */
-type SingleTrackResponse = typings.spotifyWebApiJs.SpotifyApi.TrackObjectFull
+type SingleTrackResponse = TrackObjectFull
 
 /**
   * Unfollow artists or users
@@ -304,7 +304,7 @@ type SingleTrackResponse = typings.spotifyWebApiJs.SpotifyApi.TrackObjectFull
   * DELETE /v1/me/following
   * https://developer.spotify.com/web-api/unfollow-artists-users/
   */
-type UnfollowArtistsOrUsersResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
+type UnfollowArtistsOrUsersResponse = VoidResponse
 
 /**
   * Unfollow a Playlist
@@ -312,7 +312,7 @@ type UnfollowArtistsOrUsersResponse = typings.spotifyWebApiJs.SpotifyApi.VoidRes
   * DELETE /v1/users/{owner_id}/playlists/{playlist_id}/followers
   * https://developer.spotify.com/web-api/unfollow-playlist/
   */
-type UnfollowPlaylistResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
+type UnfollowPlaylistResponse = VoidResponse
 
 /**
   * Upload a Custom Playlist Cover Image
@@ -320,7 +320,7 @@ type UnfollowPlaylistResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
   * PUT /v1/users/{user_id}/playlists/{playlist_id}/images
   * https://developer.spotify.com/web-api/upload-a-custom-playlist-cover-image/
   */
-type UploadCustomPlaylistCoverImageResponse = typings.spotifyWebApiJs.SpotifyApi.VoidResponse
+type UploadCustomPlaylistCoverImageResponse = VoidResponse
 
 /**
   * Check if User Follows Users or Artists
@@ -328,7 +328,7 @@ type UploadCustomPlaylistCoverImageResponse = typings.spotifyWebApiJs.SpotifyApi
   * GET /v1/me/following/contains
   * https://developer.spotify.com/web-api/check-current-user-follows/
   */
-type UserFollowsUsersOrArtistsResponse = js.Array[scala.Boolean]
+type UserFollowsUsersOrArtistsResponse = js.Array[Boolean]
 
 /**
   * Get user profile
@@ -336,7 +336,7 @@ type UserFollowsUsersOrArtistsResponse = js.Array[scala.Boolean]
   * GET /v1/users/{user_id}
   * https://developer.spotify.com/web-api/get-users-profile/
   */
-type UserProfileResponse = typings.spotifyWebApiJs.SpotifyApi.UserObjectPublic
+type UserProfileResponse = UserObjectPublic
 
 /**
   * Check if Users Follow a Playlist
@@ -344,7 +344,7 @@ type UserProfileResponse = typings.spotifyWebApiJs.SpotifyApi.UserObjectPublic
   * GET /v1/users/{user_id}/playlists/{playlist_id}/followers/contains
   * https://developer.spotify.com/web-api/check-user-following-playlist/
   */
-type UsersFollowPlaylistResponse = js.Array[scala.Boolean]
+type UsersFollowPlaylistResponse = js.Array[Boolean]
 
 /**
   * Get a User’s Recently Played Tracks
@@ -352,7 +352,7 @@ type UsersFollowPlaylistResponse = js.Array[scala.Boolean]
   * GET /v1/me/player/recently-played
   * https://developer.spotify.com/web-api/get-users-top-artists-and-tracks/
   */
-type UsersRecentlyPlayedTracksResponse = typings.spotifyWebApiJs.SpotifyApi.CursorBasedPagingObject[typings.spotifyWebApiJs.SpotifyApi.PlayHistoryObject]
+type UsersRecentlyPlayedTracksResponse = CursorBasedPagingObject[PlayHistoryObject]
 
 /**
   * Get user's saved albums
@@ -360,7 +360,7 @@ type UsersRecentlyPlayedTracksResponse = typings.spotifyWebApiJs.SpotifyApi.Curs
   * GET /v1/me/albums
   * https://developer.spotify.com/web-api/get-users-saved-albums/
   */
-type UsersSavedAlbumsResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[typings.spotifyWebApiJs.SpotifyApi.SavedAlbumObject]
+type UsersSavedAlbumsResponse = PagingObject[SavedAlbumObject]
 
 /**
   * Get user's saved tracks
@@ -368,7 +368,7 @@ type UsersSavedAlbumsResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[
   * GET /v1/me/tracks
   * https://developer.spotify.com/web-api/get-users-saved-tracks/
   */
-type UsersSavedTracksResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[typings.spotifyWebApiJs.SpotifyApi.SavedTrackObject]
+type UsersSavedTracksResponse = PagingObject[SavedTrackObject]
 
 /**
   * Get a User’s Top Artists and Tracks (Note: This is only Artists)
@@ -376,7 +376,7 @@ type UsersSavedTracksResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[
   * GET /v1/me/top/{type}
   * https://developer.spotify.com/web-api/get-users-top-artists-and-tracks/
   */
-type UsersTopArtistsResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[typings.spotifyWebApiJs.SpotifyApi.ArtistObjectFull]
+type UsersTopArtistsResponse = PagingObject[ArtistObjectFull]
 
 /**
   * Get a User’s Top Artists and Tracks (Note: This is only Tracks)
@@ -384,4 +384,4 @@ type UsersTopArtistsResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[t
   * GET /v1/me/top/{type}
   * https://developer.spotify.com/web-api/get-users-top-artists-and-tracks/
   */
-type UsersTopTracksResponse = typings.spotifyWebApiJs.SpotifyApi.PagingObject[typings.spotifyWebApiJs.SpotifyApi.TrackObjectFull]
+type UsersTopTracksResponse = PagingObject[TrackObjectFull]

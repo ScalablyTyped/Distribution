@@ -18,7 +18,7 @@ trait MenuItemOption extends StObject {
   
   var label: js.UndefOr[String] = js.undefined
   
-  var onselect: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, Unit])] = js.undefined
+  var onselect: js.UndefOr[String | (js.Function1[/* repeated */ Any, Unit])] = js.undefined
   
   var options: js.UndefOr[js.Array[MenuItemOption | Null]] = js.undefined
   
@@ -63,9 +63,9 @@ object MenuItemOption {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setOnselect(value: String | (js.Function1[/* repeated */ js.Any, Unit])): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
+    inline def setOnselect(value: String | (js.Function1[/* repeated */ Any, Unit])): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
     
-    inline def setOnselectFunction1(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onselect", js.Any.fromFunction1(value))
+    inline def setOnselectFunction1(value: /* repeated */ Any => Unit): Self = StObject.set(x, "onselect", js.Any.fromFunction1(value))
     
     inline def setOnselectUndefined: Self = StObject.set(x, "onselect", js.undefined)
     
@@ -73,7 +73,7 @@ object MenuItemOption {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: (MenuItemOption | Null)*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: (MenuItemOption | Null)*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     

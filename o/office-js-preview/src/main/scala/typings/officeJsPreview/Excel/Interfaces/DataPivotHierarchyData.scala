@@ -23,57 +23,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataPivotHierarchyData extends StObject {
   
   /**
-    *
     * Returns the PivotFields associated with the DataPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var field: js.UndefOr[PivotFieldData] = js.undefined
   
   /**
+    * ID of the DataPivotHierarchy.
     *
-    * Id of the DataPivotHierarchy.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Name of the DataPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Number format of the DataPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var numberFormat: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Position of the DataPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var position: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies if the data should be shown as a specific summary calculation.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showAs: js.UndefOr[ShowAsRule] = js.undefined
   
   /**
-    *
     * Specifies if all items of the DataPivotHierarchy are shown.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var summarizeBy: js.UndefOr[

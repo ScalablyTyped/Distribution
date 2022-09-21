@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.PedalMarking")
 @js.native
-class PedalMarking protected ()
+open class PedalMarking protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.PedalMarking {
   def this(notes: js.Array[typings.vexflow.Vex.Flow.Note]) = this()

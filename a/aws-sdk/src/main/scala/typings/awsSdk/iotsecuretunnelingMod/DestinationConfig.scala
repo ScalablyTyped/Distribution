@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DestinationConfig extends StObject {
   
   /**
-    * A list of service names that identity the target application. The AWS IoT client running on the destination device reads this value and uses it to look up a port or an IP address and a port. The AWS IoT client instantiates the local proxy which uses this information to connect to the destination application.
+    * A list of service names that identify the target application. The IoT client running on the destination device reads this value and uses it to look up a port or an IP address and a port. The IoT client instantiates the local proxy, which uses this information to connect to the destination application.
     */
   var services: ServiceList
   
@@ -27,7 +27,7 @@ object DestinationConfig {
     
     inline def setServices(value: ServiceList): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value*))
     
     inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     

@@ -5,53 +5,119 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Actions = js.Array[typings.awsSdk.ioteventsMod.Action]
+type AcknowledgeFlowEnabled = Boolean
 
-type AmazonResourceName = java.lang.String
+type Actions = js.Array[Action]
 
-type AssetId = java.lang.String
+type AlarmActions = js.Array[AlarmAction]
 
-type AssetPropertyAlias = java.lang.String
+type AlarmModelArn = String
 
-type AssetPropertyBooleanValue = java.lang.String
+type AlarmModelDescription = String
 
-type AssetPropertyDoubleValue = java.lang.String
+type AlarmModelName = String
 
-type AssetPropertyEntryId = java.lang.String
+type AlarmModelSummaries = js.Array[AlarmModelSummary]
 
-type AssetPropertyId = java.lang.String
+type AlarmModelVersion = String
 
-type AssetPropertyIntegerValue = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.ACTIVATING
+  - typings.awsSdk.awsSdkStrings.INACTIVE
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type AlarmModelVersionStatus = _AlarmModelVersionStatus | String
 
-type AssetPropertyOffsetInNanos = java.lang.String
+type AlarmModelVersionSummaries = js.Array[AlarmModelVersionSummary]
 
-type AssetPropertyQuality = java.lang.String
+type AmazonResourceName = String
 
-type AssetPropertyStringValue = java.lang.String
+type AnalysisId = String
 
-type AssetPropertyTimeInSeconds = java.lang.String
+type AnalysisMessage = String
 
-type AttributeJsonPath = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INFO
+  - typings.awsSdk.awsSdkStrings.WARNING
+  - typings.awsSdk.awsSdkStrings.ERROR
+  - java.lang.String
+*/
+type AnalysisResultLevel = _AnalysisResultLevel | String
 
-type Attributes = js.Array[typings.awsSdk.ioteventsMod.Attribute]
+type AnalysisResultLocationPath = String
 
-type Condition = java.lang.String
+type AnalysisResultLocations = js.Array[AnalysisResultLocation]
 
-type ContentExpression = java.lang.String
+type AnalysisResults = js.Array[AnalysisResult]
 
-type DeliveryStreamName = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RUNNING
+  - typings.awsSdk.awsSdkStrings.COMPLETE
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type AnalysisStatus = _AnalysisStatus | String
 
-type DetectorDebugOptions = js.Array[typings.awsSdk.ioteventsMod.DetectorDebugOption]
+type AnalysisType = String
 
-type DetectorModelArn = java.lang.String
+type AssetId = String
 
-type DetectorModelDescription = java.lang.String
+type AssetModelId = String
 
-type DetectorModelName = java.lang.String
+type AssetPropertyAlias = String
 
-type DetectorModelSummaries = js.Array[typings.awsSdk.ioteventsMod.DetectorModelSummary]
+type AssetPropertyBooleanValue = String
 
-type DetectorModelVersion = java.lang.String
+type AssetPropertyDoubleValue = String
+
+type AssetPropertyEntryId = String
+
+type AssetPropertyId = String
+
+type AssetPropertyIntegerValue = String
+
+type AssetPropertyOffsetInNanos = String
+
+type AssetPropertyQuality = String
+
+type AssetPropertyStringValue = String
+
+type AssetPropertyTimeInSeconds = String
+
+type AttributeJsonPath = String
+
+type Attributes = js.Array[Attribute]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.GREATER
+  - typings.awsSdk.awsSdkStrings.GREATER_OR_EQUAL
+  - typings.awsSdk.awsSdkStrings.LESS
+  - typings.awsSdk.awsSdkStrings.LESS_OR_EQUAL
+  - typings.awsSdk.awsSdkStrings.EQUAL
+  - typings.awsSdk.awsSdkStrings.NOT_EQUAL
+  - java.lang.String
+*/
+type ComparisonOperator = _ComparisonOperator | String
+
+type Condition = String
+
+type ContentExpression = String
+
+type DeliveryStreamName = String
+
+type DetectorDebugOptions = js.Array[DetectorDebugOption]
+
+type DetectorModelArn = String
+
+type DetectorModelDescription = String
+
+type DetectorModelName = String
+
+type DetectorModelSummaries = js.Array[DetectorModelSummary]
+
+type DetectorModelVersion = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -63,38 +129,50 @@ type DetectorModelVersion = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type DetectorModelVersionStatus = typings.awsSdk.ioteventsMod._DetectorModelVersionStatus | java.lang.String
+type DetectorModelVersionStatus = _DetectorModelVersionStatus | String
 
-type DetectorModelVersionSummaries = js.Array[typings.awsSdk.ioteventsMod.DetectorModelVersionSummary]
+type DetectorModelVersionSummaries = js.Array[DetectorModelVersionSummary]
 
-type DynamoKeyField = java.lang.String
+type DisabledOnInitialization = Boolean
 
-type DynamoKeyType = java.lang.String
+type DynamoKeyField = String
 
-type DynamoKeyValue = java.lang.String
+type DynamoKeyType = String
 
-type DynamoOperation = java.lang.String
+type DynamoKeyValue = String
 
-type DynamoTableName = java.lang.String
+type DynamoOperation = String
+
+type DynamoTableName = String
+
+type EmailConfigurations = js.Array[EmailConfiguration]
+
+type EmailSubject = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BATCH
   - typings.awsSdk.awsSdkStrings.SERIAL
   - java.lang.String
 */
-type EvaluationMethod = typings.awsSdk.ioteventsMod._EvaluationMethod | java.lang.String
+type EvaluationMethod = _EvaluationMethod | String
 
-type EventName = java.lang.String
+type EventName = String
 
-type Events = js.Array[typings.awsSdk.ioteventsMod.Event]
+type Events = js.Array[Event]
 
-type FirehoseSeparator = java.lang.String
+type FirehoseSeparator = String
 
-type InputArn = java.lang.String
+type FromEmail = String
 
-type InputDescription = java.lang.String
+type IdentityStoreId = String
 
-type InputName = java.lang.String
+type InputArn = String
+
+type InputDescription = String
+
+type InputName = String
+
+type InputProperty = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -103,13 +181,13 @@ type InputName = java.lang.String
   - typings.awsSdk.awsSdkStrings.DELETING
   - java.lang.String
 */
-type InputStatus = typings.awsSdk.ioteventsMod._InputStatus | java.lang.String
+type InputStatus = _InputStatus | String
 
-type InputSummaries = js.Array[typings.awsSdk.ioteventsMod.InputSummary]
+type InputSummaries = js.Array[InputSummary]
 
-type KeyValue = java.lang.String
+type KeyValue = String
 
-type LoggingEnabled = scala.Boolean
+type LoggingEnabled = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ERROR
@@ -117,52 +195,76 @@ type LoggingEnabled = scala.Boolean
   - typings.awsSdk.awsSdkStrings.DEBUG
   - java.lang.String
 */
-type LoggingLevel = typings.awsSdk.ioteventsMod._LoggingLevel | java.lang.String
+type LoggingLevel = _LoggingLevel | String
 
-type MQTTTopic = java.lang.String
+type MQTTTopic = String
 
-type MaxResults = scala.Double
+type MaxAnalysisResults = Double
 
-type NextToken = java.lang.String
+type MaxResults = Double
+
+type NextToken = String
+
+type NotificationActions = js.Array[NotificationAction]
+
+type NotificationAdditionalMessage = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STRING
   - typings.awsSdk.awsSdkStrings.JSON
   - java.lang.String
 */
-type PayloadType = typings.awsSdk.ioteventsMod._PayloadType | java.lang.String
+type PayloadType = _PayloadType | String
 
-type QueueUrl = java.lang.String
+type QueueUrl = String
 
-type Seconds = scala.Double
+type RecipientDetails = js.Array[RecipientDetail]
 
-type StateName = java.lang.String
+type ResourceName = String
 
-type States = js.Array[typings.awsSdk.ioteventsMod.State]
+type RoutedResources = js.Array[RoutedResource]
 
-type TagKey = java.lang.String
+type SMSConfigurations = js.Array[SMSConfiguration]
 
-type TagKeys = js.Array[typings.awsSdk.ioteventsMod.TagKey]
+type SMSSenderId = String
 
-type TagValue = java.lang.String
+type SSOReferenceId = String
 
-type Tags = js.Array[typings.awsSdk.ioteventsMod.Tag]
+type Seconds = Double
 
-type TimerName = java.lang.String
+type Severity = Double
 
-type Timestamp = typings.std.Date
+type StateName = String
 
-type TransitionEvents = js.Array[typings.awsSdk.ioteventsMod.TransitionEvent]
+type States = js.Array[State]
 
-type UseBase64 = scala.Boolean
+type StatusMessage = String
 
-type VariableName = java.lang.String
+type TagKey = String
 
-type VariableValue = java.lang.String
+type TagKeys = js.Array[TagKey]
+
+type TagValue = String
+
+type Tags = js.Array[Tag]
+
+type Threshold = String
+
+type TimerName = String
+
+type Timestamp = js.Date
+
+type TransitionEvents = js.Array[TransitionEvent]
+
+type UseBase64 = Boolean
+
+type VariableName = String
+
+type VariableValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-07-27`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.ioteventsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

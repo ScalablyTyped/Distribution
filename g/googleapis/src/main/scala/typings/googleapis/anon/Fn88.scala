@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
+import typings.googleapis.digitalassetlinksV1Mod.digitalassetlinksV1.Digitalassetlinks
+import typings.googleapis.digitalassetlinksV1Mod.digitalassetlinksV1.Options
 import typings.googleapis.googleapisStrings.v1
-import typings.googleapis.kgsearchV1Mod.kgsearchV1.Kgsearch
-import typings.googleapis.kgsearchV1Mod.kgsearchV1.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn88 extends StObject {
   
-  def apply(options: Options): Kgsearch = js.native
-  def apply(version: v1): Kgsearch = js.native
+  def apply(options: Options): Digitalassetlinks = js.native
+  def apply(version: v1): Digitalassetlinks = js.native
 }

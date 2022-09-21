@@ -1,9 +1,7 @@
 package typings.materialMenuSurface
 
+import typings.materialBase.Element
 import typings.materialMenuSurface.anon.PartialMDCMenuSurfaceAdap
-import typings.materialMenuSurface.utilMod.CssTransformPropertyName
-import typings.std.Element
-import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,13 +60,13 @@ object mod {
   
   @JSImport("@material/menu-surface", "MDCMenuSurface")
   @js.native
-  class MDCMenuSurface protected ()
+  open class MDCMenuSurface protected ()
     extends typings.materialMenuSurface.componentMod.MDCMenuSurface {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialMenuSurface.foundationMod.MDCMenuSurfaceFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -78,38 +76,16 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialMenuSurface.componentMod.MDCMenuSurface = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialMenuSurface.componentMod.MDCMenuSurface]
+    inline def attachTo(root: typings.std.Element): typings.materialMenuSurface.componentMod.MDCMenuSurface = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialMenuSurface.componentMod.MDCMenuSurface]
   }
   
   @JSImport("@material/menu-surface", "MDCMenuSurfaceFoundation")
   @js.native
-  class MDCMenuSurfaceFoundation ()
+  open class MDCMenuSurfaceFoundation ()
     extends typings.materialMenuSurface.foundationMod.MDCMenuSurfaceFoundation {
     def this(adapter: PartialMDCMenuSurfaceAdap) = this()
   }
   
-  /**
-    * @license
-    * Copyright 2018 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
   object cssClasses {
     
     @JSImport("@material/menu-surface", "cssClasses")
@@ -158,17 +134,34 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** Ratio of anchor width to menu-surface width for switching from corner positioning to center positioning. */
+    /**
+      * Ratio of anchor width to menu-surface width for switching from corner
+      * positioning to center positioning.
+      */
     @JSImport("@material/menu-surface", "numbers.ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO")
     @js.native
     def ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO: Double = js.native
     inline def ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO")(x.asInstanceOf[js.Any])
     
-    /** Margin left to the edge of the viewport when menu-surface is at maximum possible height. Also used as a viewport margin. */
+    /**
+      * Margin left to the edge of the viewport when menu-surface is at maximum
+      * possible height. Also used as a viewport margin.
+      */
     @JSImport("@material/menu-surface", "numbers.MARGIN_TO_EDGE")
     @js.native
     def MARGIN_TO_EDGE: Double = js.native
     inline def MARGIN_TO_EDGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MARGIN_TO_EDGE")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Amount of time to wait before restoring focus when closing the menu
+      * surface. This is important because if a touch event triggered the menu
+      * close, and the subsequent mouse event occurs after focus is restored, then
+      * the restored focus would be lost.
+      */
+    @JSImport("@material/menu-surface", "numbers.TOUCH_EVENT_WAIT_MS")
+    @js.native
+    def TOUCH_EVENT_WAIT_MS: Double = js.native
+    inline def TOUCH_EVENT_WAIT_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_EVENT_WAIT_MS")(x.asInstanceOf[js.Any])
     
     /** Total duration of menu-surface close animation. */
     @JSImport("@material/menu-surface", "numbers.TRANSITION_CLOSE_DURATION")
@@ -194,6 +187,11 @@ object mod {
     def CLOSED_EVENT: String = js.native
     inline def CLOSED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED_EVENT")(x.asInstanceOf[js.Any])
     
+    @JSImport("@material/menu-surface", "strings.CLOSING_EVENT")
+    @js.native
+    def CLOSING_EVENT: String = js.native
+    inline def CLOSING_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING_EVENT")(x.asInstanceOf[js.Any])
+    
     @JSImport("@material/menu-surface", "strings.FOCUSABLE_ELEMENTS")
     @js.native
     def FOCUSABLE_ELEMENTS: String = js.native
@@ -203,18 +201,10 @@ object mod {
     @js.native
     def OPENED_EVENT: String = js.native
     inline def OPENED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENED_EVENT")(x.asInstanceOf[js.Any])
-  }
-  
-  object util {
     
-    @JSImport("@material/menu-surface", "util")
+    @JSImport("@material/menu-surface", "strings.OPENING_EVENT")
     @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * Returns the name of the correct transform property to use on the current browser.
-      */
-    inline def getTransformPropertyName(globalObj: Window): CssTransformPropertyName = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransformPropertyName")(globalObj.asInstanceOf[js.Any]).asInstanceOf[CssTransformPropertyName]
-    inline def getTransformPropertyName(globalObj: Window, forceRefresh: Boolean): CssTransformPropertyName = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransformPropertyName")(globalObj.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[CssTransformPropertyName]
+    def OPENING_EVENT: String = js.native
+    inline def OPENING_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENING_EVENT")(x.asInstanceOf[js.Any])
   }
 }

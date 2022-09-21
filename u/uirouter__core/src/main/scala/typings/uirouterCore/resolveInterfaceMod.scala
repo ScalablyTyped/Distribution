@@ -26,7 +26,7 @@ object resolveInterfaceMod {
     inline def when_=(x: EAGER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("when")(x.asInstanceOf[js.Any])
   }
   
-  type CustomAsyncPolicy = js.Function1[/* data */ js.Any, js.Promise[js.Any]]
+  type CustomAsyncPolicy = js.Function1[/* data */ Any, js.Promise[Any]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.uirouterCore.uirouterCoreStrings.WAIT
@@ -51,40 +51,40 @@ object resolveInterfaceMod {
     extends StObject
        with ResolveTypes {
     
-    var deps: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var deps: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var provide: js.Any
+    var provide: Any
     
-    var useClass: js.UndefOr[js.Any] = js.undefined
+    var useClass: js.UndefOr[Any] = js.undefined
     
-    var useExisting: js.UndefOr[js.Any] = js.undefined
+    var useExisting: js.UndefOr[Any] = js.undefined
     
     var useFactory: js.UndefOr[js.Function] = js.undefined
     
-    var useValue: js.UndefOr[js.Any] = js.undefined
+    var useValue: js.UndefOr[Any] = js.undefined
   }
   object ProviderLike {
     
-    inline def apply(provide: js.Any): ProviderLike = {
+    inline def apply(provide: Any): ProviderLike = {
       val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProviderLike]
     }
     
     extension [Self <: ProviderLike](x: Self) {
       
-      inline def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      inline def setDeps(value: js.Array[Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
       inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
       
-      inline def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
+      inline def setDepsVarargs(value: Any*): Self = StObject.set(x, "deps", js.Array(value*))
       
-      inline def setProvide(value: js.Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+      inline def setProvide(value: Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
       
-      inline def setUseClass(value: js.Any): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
+      inline def setUseClass(value: Any): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
       
       inline def setUseClassUndefined: Self = StObject.set(x, "useClass", js.undefined)
       
-      inline def setUseExisting(value: js.Any): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
+      inline def setUseExisting(value: Any): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
       
       inline def setUseExistingUndefined: Self = StObject.set(x, "useExisting", js.undefined)
       
@@ -92,7 +92,7 @@ object resolveInterfaceMod {
       
       inline def setUseFactoryUndefined: Self = StObject.set(x, "useFactory", js.undefined)
       
-      inline def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
+      inline def setUseValue(value: Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
       
       inline def setUseValueUndefined: Self = StObject.set(x, "useValue", js.undefined)
     }
@@ -103,7 +103,7 @@ object resolveInterfaceMod {
        with ResolveTypes {
     
     /** Pre-resolved data. */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * The Dependency Injection tokens
@@ -113,7 +113,7 @@ object resolveInterfaceMod {
       * The DI tokens are references to other `Resolvables`, or to other
       * services from the native DI system.
       */
-    var deps: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var deps: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Defines the Resolve Policy
@@ -143,26 +143,26 @@ object resolveInterfaceMod {
       * This Resolvable's DI token.
       * The Resolvable will be injectable elsewhere using the token.
       */
-    var token: js.Any
+    var token: Any
   }
   object ResolvableLiteral {
     
-    inline def apply(resolveFn: js.Function, token: js.Any): ResolvableLiteral = {
+    inline def apply(resolveFn: js.Function, token: Any): ResolvableLiteral = {
       val __obj = js.Dynamic.literal(resolveFn = resolveFn.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolvableLiteral]
     }
     
     extension [Self <: ResolvableLiteral](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      inline def setDeps(value: js.Array[Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
       inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
       
-      inline def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
+      inline def setDepsVarargs(value: Any*): Self = StObject.set(x, "deps", js.Array(value*))
       
       inline def setPolicy(value: ResolvePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
@@ -170,7 +170,7 @@ object resolveInterfaceMod {
       
       inline def setResolveFn(value: js.Function): Self = StObject.set(x, "resolveFn", value.asInstanceOf[js.Any])
       
-      inline def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -271,7 +271,7 @@ object resolveInterfaceMod {
       
       inline def setAsync(value: PolicyAsync): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      inline def setAsyncFunction1(value: /* data */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "async", js.Any.fromFunction1(value))
+      inline def setAsyncFunction1(value: /* data */ Any => js.Promise[Any]): Self = StObject.set(x, "async", js.Any.fromFunction1(value))
       
       inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       

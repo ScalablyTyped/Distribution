@@ -29,7 +29,7 @@ object APNSNotificationPayload {
     
     inline def setConfigurations(value: js.Array[APNS2Configuration]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
     
-    inline def setConfigurationsVarargs(value: APNS2Configuration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: APNS2Configuration*): Self = StObject.set(x, "configurations", js.Array(value*))
     
     inline def setIsSilent(value: Boolean): Self = StObject.set(x, "isSilent", value.asInstanceOf[js.Any])
   }

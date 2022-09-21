@@ -10,10 +10,10 @@ object unarchiveMod {
   
   @JSImport("material-ui/svg-icons/content/unarchive", JSImport.Default)
   @js.native
-  class default () extends ContentUnarchive
+  open class default () extends ContentUnarchive
   
   @JSImport("material-ui/svg-icons/content/unarchive", "ContentUnarchive")
   @js.native
-  class ContentUnarchive ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentUnarchive ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

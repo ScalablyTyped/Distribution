@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "webpack-dev-server" : "4.11.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "webpack-dev-server" : "4.11.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -10,10 +10,10 @@ object isoMod {
   
   @JSImport("material-ui/svg-icons/image/iso", JSImport.Default)
   @js.native
-  class default () extends ImageIso
+  open class default () extends ImageIso
   
   @JSImport("material-ui/svg-icons/image/iso", "ImageIso")
   @js.native
-  class ImageIso ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageIso ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

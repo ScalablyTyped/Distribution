@@ -5,16 +5,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Metadata entries that can be attached to a `Device`. To learn more, read
-  * [Device metadata](/zero-touch/guides/metadata).
-  */
 trait SchemaDeviceMetadata extends StObject {
   
   /**
     * Metadata entries recorded as key-value pairs.
     */
-  var entries: js.UndefOr[StringDictionary[String]] = js.undefined
+  var entries: js.UndefOr[StringDictionary[String] | Null] = js.undefined
 }
 object SchemaDeviceMetadata {
   
@@ -26,6 +22,8 @@ object SchemaDeviceMetadata {
   extension [Self <: SchemaDeviceMetadata](x: Self) {
     
     inline def setEntries(value: StringDictionary[String]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    
+    inline def setEntriesNull: Self = StObject.set(x, "entries", null)
     
     inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
   }

@@ -8,14 +8,19 @@ trait StorageEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var key: js.UndefOr[java.lang.String | Null] = js.undefined
   
+  /* standard dom */
   var newValue: js.UndefOr[java.lang.String | Null] = js.undefined
   
+  /* standard dom */
   var oldValue: js.UndefOr[java.lang.String | Null] = js.undefined
   
+  /* standard dom */
   var storageArea: js.UndefOr[Storage | Null] = js.undefined
   
+  /* standard dom */
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 object StorageEventInit {

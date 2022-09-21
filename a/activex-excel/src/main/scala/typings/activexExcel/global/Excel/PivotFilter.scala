@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PivotFilter")
 @js.native
-/* private */ class PivotFilter ()
+/* private */ open class PivotFilter ()
   extends StObject
      with typings.activexExcel.Excel.PivotFilter {
   
@@ -53,14 +53,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Order: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val PivotField: typings.activexExcel.Excel.PivotField = js.native
   
   /* CompleteClass */
-  override val Value1: js.Any = js.native
+  override val Value1: Any = js.native
   
   /* CompleteClass */
-  override val Value2: js.Any = js.native
+  override val Value2: Any = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-ble-central
 
-Typings are for version 1.2.2
+Typings are for version 1.5.2
 
 ## Library description:
 Bluetooth Low Energy (BLE) Central Plugin
@@ -10,10 +10,10 @@ Bluetooth Low Energy (BLE) Central Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-ble-central |
 | Keywords           | cordova, bluetooth, ble, bluetoothle, bluetooth le, low energy, smart, ecosystem:cordova, cordova-ios, cordova-android |
-| # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 72021 |
-| # stars            | 4 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 6951.666666666667 |
+| # stars            | 891.0 |
 
 ## Links
 - [Homepage](https://github.com/don/cordova-plugin-ble-central#readme)
@@ -24,7 +24,7 @@ Bluetooth Low Energy (BLE) Central Plugin
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

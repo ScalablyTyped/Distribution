@@ -12,23 +12,32 @@ trait WebDriverProtocolMobileRelated extends StObject {
   /**
     * Get a list of the available contexts.
     *
+    * @example
+    * browser.contexts();
+    *
     * Used by Appium when testing hybrid mobile web apps. More info here: https://github.com/appium/appium/blob/master/docs/en/advanced-concepts/hybrid.md.
     */
   def contexts(): this.type = js.native
   def contexts(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[js.Any], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
   ): this.type = js.native
   
   /**
     * Get current context.
+    *
+    * @example
+    * browser.currentContext();
     */
   def currentContext(): this.type = js.native
   def currentContext(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[js.Any], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
   ): this.type = js.native
   
   /**
     * Get the current browser orientation.
+    *
+    * @example
+    * browser.getOrientation()
     */
   def getOrientation(): this.type = js.native
   def getOrientation(
@@ -41,25 +50,22 @@ trait WebDriverProtocolMobileRelated extends StObject {
   
   /**
     * Sets the context.
+    *
+    * @example
+    * browser.setContext(context);
     */
   def setContext(context: String): this.type = js.native
   def setContext(context: String, callback: js.Function0[Unit]): this.type = js.native
   
   /**
     * Sets the browser orientation.
+    *
+    * @example
+    * browser.setOrientation(orientation)
     */
-  @JSName("setOrientation")
-  def setOrientation_LANDSCAPE(orientation: LANDSCAPE): this.type = js.native
-  @JSName("setOrientation")
-  def setOrientation_LANDSCAPE(
-    orientation: LANDSCAPE,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
-  @JSName("setOrientation")
-  def setOrientation_PORTRAIT(orientation: PORTRAIT): this.type = js.native
-  @JSName("setOrientation")
-  def setOrientation_PORTRAIT(
-    orientation: PORTRAIT,
+  def setOrientation(orientation: LANDSCAPE | PORTRAIT): this.type = js.native
+  def setOrientation(
+    orientation: LANDSCAPE | PORTRAIT,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
 }

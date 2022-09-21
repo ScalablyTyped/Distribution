@@ -9,17 +9,28 @@ trait WebGLShaderProcessor
      with IShaderProcessor {
   
   @JSName("postProcessor")
-  def postProcessor_MWebGLShaderProcessor(code: String, defines: js.Array[String], isFragment: Boolean, engine: ThinEngine): String
+  def postProcessor_MWebGLShaderProcessor(
+    code: String,
+    defines: js.Array[String],
+    isFragment: Boolean,
+    processingContext: Nullable[ShaderProcessingContext],
+    engine: ThinEngine
+  ): String
 }
 object WebGLShaderProcessor {
   
-  inline def apply(postProcessor: (String, js.Array[String], Boolean, ThinEngine) => String): WebGLShaderProcessor = {
-    val __obj = js.Dynamic.literal(postProcessor = js.Any.fromFunction4(postProcessor))
+  inline def apply(
+    postProcessor: (String, js.Array[String], Boolean, Nullable[ShaderProcessingContext], ThinEngine) => String,
+    shaderLanguage: ShaderLanguage
+  ): WebGLShaderProcessor = {
+    val __obj = js.Dynamic.literal(postProcessor = js.Any.fromFunction5(postProcessor), shaderLanguage = shaderLanguage.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLShaderProcessor]
   }
   
   extension [Self <: WebGLShaderProcessor](x: Self) {
     
-    inline def setPostProcessor(value: (String, js.Array[String], Boolean, ThinEngine) => String): Self = StObject.set(x, "postProcessor", js.Any.fromFunction4(value))
+    inline def setPostProcessor(
+      value: (String, js.Array[String], Boolean, Nullable[ShaderProcessingContext], ThinEngine) => String
+    ): Self = StObject.set(x, "postProcessor", js.Any.fromFunction5(value))
   }
 }

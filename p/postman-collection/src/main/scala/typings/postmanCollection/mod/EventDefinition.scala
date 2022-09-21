@@ -27,6 +27,6 @@ object EventDefinition {
     
     inline def setScript(value: String | js.Array[String] | ScriptDefinition | Script): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
-    inline def setScriptVarargs(value: String*): Self = StObject.set(x, "script", js.Array(value :_*))
+    inline def setScriptVarargs(value: String*): Self = StObject.set(x, "script", js.Array(value*))
   }
 }

@@ -9,25 +9,30 @@ trait HDRCubeTexture
   extends StObject
      with BaseTexture {
   
-  /* private */ var _boundingBoxSize: js.Any = js.native
+  /* private */ var _boundingBoxSize: Any = js.native
   
-  /* private */ var _generateHarmonics: js.Any = js.native
+  /* private */ var _generateHarmonics: Any = js.native
   
   /* protected */ var _isBlocking: Boolean = js.native
   
-  /* private */ var _noMipmap: js.Any = js.native
+  /**
+    * Occurs when the file is raw .hdr file.
+    */
+  /* private */ var _loadTexture: Any = js.native
   
-  /* private */ var _onError: js.Any = js.native
+  /* private */ var _noMipmap: Any = js.native
   
-  /* private */ var _onLoad: js.Any = js.native
+  /* private */ var _onError: Any = js.native
   
-  /* private */ var _prefilterOnLoad: js.Any = js.native
+  /* private */ var _onLoad: Any = js.native
+  
+  /* private */ var _prefilterOnLoad: Any = js.native
   
   /* protected */ var _rotationY: Double = js.native
   
-  /* private */ var _size: js.Any = js.native
+  /* private */ var _size: Any = js.native
   
-  /* private */ var _textureMatrix: js.Any = js.native
+  /* private */ var _textureMatrix: Any = js.native
   
   /**
     * Gets or sets the center of the bounding box associated with the cube texture
@@ -45,14 +50,14 @@ trait HDRCubeTexture
   def boundingBoxSize_=(value: Vector3): Unit = js.native
   
   /**
-    * Sets wether or not the texture is blocking during loading.
+    * Sets whether or not the texture is blocking during loading.
     */
   def isBlocking_=(value: Boolean): Unit = js.native
   
   /**
-    * Occurs when the file is raw .hdr file.
+    * Observable triggered once the texture has been loaded.
     */
-  /* private */ var loadTexture: js.Any = js.native
+  var onLoadObservable: Observable[HDRCubeTexture] = js.native
   
   /**
     * Gets texture matrix rotation angle around Y axis radians.

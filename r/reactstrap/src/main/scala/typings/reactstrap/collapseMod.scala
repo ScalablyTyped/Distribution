@@ -6,7 +6,7 @@ import typings.react.mod.ElementType
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.Ref
 import typings.reactstrap.anon.Hide
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,21 +14,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object collapseMod {
   
-  @JSImport("reactstrap/lib/Collapse", JSImport.Default)
+  @JSImport("reactstrap/types/lib/Collapse", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CollapseProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CollapseProps, js.Object, Any]
   
-  type Collapse = Component[CollapseProps, js.Object, js.Any]
+  type Collapse = Component[CollapseProps, js.Object, Any]
   
   trait CollapseProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var cssModule: js.UndefOr[CSSModule] = js.undefined
     
     var delay: js.UndefOr[Hide] = js.undefined
+    
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     var innerRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
     
@@ -50,7 +52,7 @@ object collapseMod {
     
     var onOpened: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
   }
   object CollapseProps {
     
@@ -68,6 +70,10 @@ object collapseMod {
       inline def setDelay(value: Hide): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      
+      inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      
+      inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
       
       inline def setInnerRef(value: Ref[HTMLElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
@@ -113,7 +119,7 @@ object collapseMod {
       
       inline def setOnOpenedUndefined: Self = StObject.set(x, "onOpened", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
@@ -146,7 +152,7 @@ object collapseMod {
       
       inline def setToggleEventsUndefined: Self = StObject.set(x, "toggleEvents", js.undefined)
       
-      inline def setToggleEventsVarargs(value: String*): Self = StObject.set(x, "toggleEvents", js.Array(value :_*))
+      inline def setToggleEventsVarargs(value: String*): Self = StObject.set(x, "toggleEvents", js.Array(value*))
       
       inline def setToggler(value: String): Self = StObject.set(x, "toggler", value.asInstanceOf[js.Any])
     }

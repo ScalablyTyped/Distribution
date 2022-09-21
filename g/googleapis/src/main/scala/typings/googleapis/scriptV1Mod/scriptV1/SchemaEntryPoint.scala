@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A configuration that defines how a deployment is accessed externally.
-  */
 trait SchemaEntryPoint extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaEntryPoint extends StObject {
   /**
     * The type of the entry point.
     */
-  var entryPointType: js.UndefOr[String] = js.undefined
+  var entryPointType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * An entry point specification for Apps Script API execution calls.
@@ -43,6 +40,8 @@ object SchemaEntryPoint {
     inline def setAddOnUndefined: Self = StObject.set(x, "addOn", js.undefined)
     
     inline def setEntryPointType(value: String): Self = StObject.set(x, "entryPointType", value.asInstanceOf[js.Any])
+    
+    inline def setEntryPointTypeNull: Self = StObject.set(x, "entryPointType", null)
     
     inline def setEntryPointTypeUndefined: Self = StObject.set(x, "entryPointType", js.undefined)
     

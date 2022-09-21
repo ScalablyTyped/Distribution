@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-modals", "ModalContent")
 @js.native
-class ModalContent protected ()
-  extends Component[ModalContentProps, js.Object, js.Any] {
+open class ModalContent protected ()
+  extends Component[ModalContentProps, js.Object, Any] {
   def this(props: ModalContentProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ModalContentProps, context: js.Any) = this()
+  def this(props: ModalContentProps, context: Any) = this()
 }

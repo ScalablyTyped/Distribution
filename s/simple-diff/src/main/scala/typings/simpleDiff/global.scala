@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  inline def simpleDiff(oldObj: js.Any, newObj: js.Any): js.Array[Event] = (js.Dynamic.global.applyDynamic("simpleDiff")(oldObj.asInstanceOf[js.Any], newObj.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
-  inline def simpleDiff(oldObj: js.Any, newObj: js.Any, options: Options): js.Array[Event] = (js.Dynamic.global.applyDynamic("simpleDiff")(oldObj.asInstanceOf[js.Any], newObj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def simpleDiff(oldObj: Any, newObj: Any): js.Array[Event] = (js.Dynamic.global.applyDynamic("simpleDiff")(oldObj.asInstanceOf[js.Any], newObj.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def simpleDiff(oldObj: Any, newObj: Any, options: Options): js.Array[Event] = (js.Dynamic.global.applyDynamic("simpleDiff")(oldObj.asInstanceOf[js.Any], newObj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "SemanticTokensBuilder")
 @js.native
-class SemanticTokensBuilder () extends StObject {
+open class SemanticTokensBuilder () extends StObject {
   def this(legend: SemanticTokensLegend) = this()
   
   /**

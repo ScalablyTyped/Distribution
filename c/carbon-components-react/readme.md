@@ -1,7 +1,7 @@
 
 # Scala.js typings for carbon-components-react
 
-Typings are for version 7.24
+Typings are for version 7.55
 
 ## Library description:
 The Carbon Design System is IBM’s open-source design system for products and experiences.
@@ -10,10 +10,10 @@ The Carbon Design System is IBM’s open-source design system for products and e
 | ------------------ | :-------------: |
 | Full name          | carbon-components-react |
 | Keywords           | react, carbon, carbon-components, ibm, carbon-design-system, components |
-| # releases         | 393 |
-| # dependents       | 50 |
-| # downloads        | 2271687 |
-| # stars            | 0 |
+| # releases         | 139 |
+| # dependents       | 0.0 |
+| # downloads        | 201454.33333333334 |
+| # stars            | 5840.0 |
 
 ## Links
 - [Homepage](https://github.com/carbon-design-system/carbon#readme)

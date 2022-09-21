@@ -49,7 +49,7 @@ trait ChocolateChipElementArray extends StObject {
     *
     * @return void
     */
-  def UIPanelToggle(panelsContainer: String, callback: js.Function0[js.Any]): Unit = js.native
+  def UIPanelToggle(panelsContainer: String, callback: js.Function0[Any]): Unit = js.native
   
   /**
     * Close the currently displayed Popup. This is executed on the popup: $('#myPopup').UIPopupClose().
@@ -104,12 +104,12 @@ trait ChocolateChipElementArray extends StObject {
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     * @return ChocolateChipStatic
     */
-  def bind(eventType: String, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
-  def bind(eventType: String, handler: js.Function1[/* eventObject */ Event, js.Any], useCapture: Boolean): ChocolateChipStatic = js.native
-  def bind(eventType: ChUIEventInterface, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def bind(eventType: String, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
+  def bind(eventType: String, handler: js.Function1[/* eventObject */ Event, Any], useCapture: Boolean): ChocolateChipStatic = js.native
+  def bind(eventType: ChUIEventInterface, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def bind(
     eventType: ChUIEventInterface,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
   
@@ -123,22 +123,18 @@ trait ChocolateChipElementArray extends StObject {
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     * @return ChocolateChipStatic
     */
-  def delegate(selector: js.Any, eventType: String, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def delegate(selector: Any, eventType: String, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def delegate(
-    selector: js.Any,
+    selector: Any,
     eventType: String,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
+  def delegate(selector: Any, eventType: ChUIEventInterface, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def delegate(
-    selector: js.Any,
+    selector: Any,
     eventType: ChUIEventInterface,
-    handler: js.Function1[/* eventObject */ Event, js.Any]
-  ): ChocolateChipStatic = js.native
-  def delegate(
-    selector: js.Any,
-    eventType: ChUIEventInterface,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
   
@@ -147,7 +143,7 @@ trait ChocolateChipElementArray extends StObject {
     *
     * @return void
     */
-  def forEach(func: js.Function2[/* ctx */ js.Any, /* idx */ Double, Unit]): Unit = js.native
+  def forEach(func: js.Function2[/* ctx */ Any, /* idx */ Double, Unit]): Unit = js.native
   
   /**
     * Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element.
@@ -218,7 +214,7 @@ trait ChocolateChipElementArray extends StObject {
     * @param elements One or more elements to match the current set of elements against.
     * @return HTMLElement[]
     */
-  def iz(element: js.Any): ChocolateChipElementArray = js.native
+  def iz(element: Any): ChocolateChipElementArray = js.native
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it matches the given arguments.
@@ -235,7 +231,7 @@ trait ChocolateChipElementArray extends StObject {
     * @param elements One or more elements to match the current set of elements against.
     * @return HTMLElement[]
     */
-  def iznt(element: js.Any): ChocolateChipElementArray = js.native
+  def iznt(element: Any): ChocolateChipElementArray = js.native
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it does not match the given arguments.
@@ -257,63 +253,55 @@ trait ChocolateChipElementArray extends StObject {
     */
   def off(): ChocolateChipStatic = js.native
   def off(eventType: String): ChocolateChipStatic = js.native
-  def off(eventType: String, selector: js.Any): ChocolateChipStatic = js.native
-  def off(eventType: String, selector: js.Any, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def off(eventType: String, selector: Any): ChocolateChipStatic = js.native
+  def off(eventType: String, selector: Any, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def off(
     eventType: String,
-    selector: js.Any,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    selector: Any,
+    handler: js.Function1[/* eventObject */ Event, Any],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
-  def off(eventType: String, selector: js.Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
-  def off(eventType: String, selector: Unit, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def off(eventType: String, selector: Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
+  def off(eventType: String, selector: Unit, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def off(
     eventType: String,
     selector: Unit,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
   def off(eventType: String, selector: Unit, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
-  def off(eventType: Unit, selector: js.Any): ChocolateChipStatic = js.native
-  def off(eventType: Unit, selector: js.Any, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def off(eventType: Unit, selector: Any): ChocolateChipStatic = js.native
+  def off(eventType: Unit, selector: Any, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def off(
     eventType: Unit,
-    selector: js.Any,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    selector: Any,
+    handler: js.Function1[/* eventObject */ Event, Any],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
-  def off(eventType: Unit, selector: js.Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
-  def off(eventType: Unit, selector: Unit, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def off(eventType: Unit, selector: Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
+  def off(eventType: Unit, selector: Unit, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def off(
     eventType: Unit,
     selector: Unit,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
   def off(eventType: Unit, selector: Unit, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
   def off(eventType: ChUIEventInterface): ChocolateChipStatic = js.native
-  def off(eventType: ChUIEventInterface, selector: js.Any): ChocolateChipStatic = js.native
+  def off(eventType: ChUIEventInterface, selector: Any): ChocolateChipStatic = js.native
+  def off(eventType: ChUIEventInterface, selector: Any, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def off(
     eventType: ChUIEventInterface,
-    selector: js.Any,
-    handler: js.Function1[/* eventObject */ Event, js.Any]
-  ): ChocolateChipStatic = js.native
-  def off(
-    eventType: ChUIEventInterface,
-    selector: js.Any,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    selector: Any,
+    handler: js.Function1[/* eventObject */ Event, Any],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
-  def off(eventType: ChUIEventInterface, selector: js.Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
+  def off(eventType: ChUIEventInterface, selector: Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
+  def off(eventType: ChUIEventInterface, selector: Unit, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def off(
     eventType: ChUIEventInterface,
     selector: Unit,
-    handler: js.Function1[/* eventObject */ Event, js.Any]
-  ): ChocolateChipStatic = js.native
-  def off(
-    eventType: ChUIEventInterface,
-    selector: Unit,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
   def off(eventType: ChUIEventInterface, selector: Unit, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
@@ -327,28 +315,24 @@ trait ChocolateChipElementArray extends StObject {
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     * @return ChocolateChipStatic
     */
-  def on(eventType: String, selector: js.Any): ChocolateChipStatic = js.native
-  def on(eventType: String, selector: js.Any, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def on(eventType: String, selector: Any): ChocolateChipStatic = js.native
+  def on(eventType: String, selector: Any, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def on(
     eventType: String,
-    selector: js.Any,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    selector: Any,
+    handler: js.Function1[/* eventObject */ Event, Any],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
-  def on(eventType: String, selector: js.Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
-  def on(eventType: ChUIEventInterface, selector: js.Any): ChocolateChipStatic = js.native
+  def on(eventType: String, selector: Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
+  def on(eventType: ChUIEventInterface, selector: Any): ChocolateChipStatic = js.native
+  def on(eventType: ChUIEventInterface, selector: Any, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def on(
     eventType: ChUIEventInterface,
-    selector: js.Any,
-    handler: js.Function1[/* eventObject */ Event, js.Any]
-  ): ChocolateChipStatic = js.native
-  def on(
-    eventType: ChUIEventInterface,
-    selector: js.Any,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    selector: Any,
+    handler: js.Function1[/* eventObject */ Event, Any],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
-  def on(eventType: ChUIEventInterface, selector: js.Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
+  def on(eventType: ChUIEventInterface, selector: Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
   
   /**
     *
@@ -364,12 +348,12 @@ trait ChocolateChipElementArray extends StObject {
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     * @return ChocolateChipStatic
     */
-  def unbind(eventType: String, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
-  def unbind(eventType: String, handler: js.Function1[/* eventObject */ Event, js.Any], useCapture: Boolean): ChocolateChipStatic = js.native
-  def unbind(eventType: ChUIEventInterface, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def unbind(eventType: String, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
+  def unbind(eventType: String, handler: js.Function1[/* eventObject */ Event, Any], useCapture: Boolean): ChocolateChipStatic = js.native
+  def unbind(eventType: ChUIEventInterface, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def unbind(
     eventType: ChUIEventInterface,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
   
@@ -382,22 +366,18 @@ trait ChocolateChipElementArray extends StObject {
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     * @return ChocolateChipStatic
     */
-  def undelegate(selector: js.Any, eventType: String, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def undelegate(selector: Any, eventType: String, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def undelegate(
-    selector: js.Any,
+    selector: Any,
     eventType: String,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
+  def undelegate(selector: Any, eventType: ChUIEventInterface, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def undelegate(
-    selector: js.Any,
+    selector: Any,
     eventType: ChUIEventInterface,
-    handler: js.Function1[/* eventObject */ Event, js.Any]
-  ): ChocolateChipStatic = js.native
-  def undelegate(
-    selector: js.Any,
-    eventType: ChUIEventInterface,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
 }

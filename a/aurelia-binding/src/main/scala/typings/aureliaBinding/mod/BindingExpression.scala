@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BindingExpression extends StObject {
   
-  def createBinding(target: js.Any): Binding
+  def createBinding(target: Any): Binding
 }
 object BindingExpression {
   
-  inline def apply(createBinding: js.Any => Binding): BindingExpression = {
+  inline def apply(createBinding: Any => Binding): BindingExpression = {
     val __obj = js.Dynamic.literal(createBinding = js.Any.fromFunction1(createBinding))
     __obj.asInstanceOf[BindingExpression]
   }
   
   extension [Self <: BindingExpression](x: Self) {
     
-    inline def setCreateBinding(value: js.Any => Binding): Self = StObject.set(x, "createBinding", js.Any.fromFunction1(value))
+    inline def setCreateBinding(value: Any => Binding): Self = StObject.set(x, "createBinding", js.Any.fromFunction1(value))
   }
 }

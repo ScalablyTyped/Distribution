@@ -45,7 +45,7 @@ object BitmapCanvas {
     getSize: () => IntegerSize2D,
     hasAlpha: () => Boolean,
     queryAvailableFonts: (FontInfo, SeqEquiv[PropertyValue]) => SafeArray[FontInfo],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryStrokeShapes: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XPolyPolygon2D,
     release: () => Unit,
     strokePolyPolygon: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XCachedPrimitive,

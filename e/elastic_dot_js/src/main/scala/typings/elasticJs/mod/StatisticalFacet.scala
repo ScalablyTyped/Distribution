@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "StatisticalFacet")
 @js.native
-class StatisticalFacet protected ()
+open class StatisticalFacet protected ()
   extends StObject
      with Facet {
   /*
@@ -37,7 +37,7 @@ class StatisticalFacet protected ()
   /*
     Aggregate statistical info across a set of fields.
     */
-  def fields(aFieldName: js.Array[js.Any]): StatisticalFacet = js.native
+  def fields(aFieldName: js.Array[Any]): StatisticalFacet = js.native
   
   /*
     Computes values across the entire index
@@ -83,5 +83,5 @@ class StatisticalFacet protected ()
     Retrieves the internal facet object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

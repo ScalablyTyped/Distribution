@@ -10,7 +10,7 @@ object sslMod {
   
   @JSImport("ionic/commands/ssl", "SSLNamespace")
   @js.native
-  class SSLNamespace () extends Namespace {
+  open class SSLNamespace () extends Namespace {
     def this(parent: INamespace) = this()
   }
 }

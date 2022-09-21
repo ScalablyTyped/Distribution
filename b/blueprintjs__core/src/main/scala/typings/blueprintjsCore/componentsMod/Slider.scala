@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.componentsMod
 
-import typings.blueprintjsCore.sliderMod.ISliderProps
+import typings.blueprintjsCore.sliderMod.SliderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "Slider")
 @js.native
-class Slider protected ()
+open class Slider protected ()
   extends typings.blueprintjsCore.sliderMod.Slider {
-  def this(props: ISliderProps) = this()
-  def this(props: ISliderProps, context: js.Any) = this()
+  def this(props: SliderProps) = this()
+  def this(props: SliderProps, context: Any) = this()
 }
 /* static members */
 object Slider {
@@ -21,8 +21,8 @@ object Slider {
   
   @JSImport("@blueprintjs/core/lib/esm/components", "Slider.defaultProps")
   @js.native
-  def defaultProps: ISliderProps = js.native
-  inline def defaultProps_=(x: ISliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: SliderProps = js.native
+  inline def defaultProps_=(x: SliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core/lib/esm/components", "Slider.displayName")
   @js.native

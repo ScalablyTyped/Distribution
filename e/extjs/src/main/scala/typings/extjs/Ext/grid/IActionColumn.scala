@@ -19,9 +19,7 @@ trait IActionColumn
     * @returns Ext.Container this
     */
   @JSName("cascade")
-  var cascade_IActionColumn: js.UndefOr[
-    js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IContainer]
-  ] = js.undefined
+  var cascade_IActionColumn: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], IContainer]] = js.undefined
   
   /** [Method] Renderer closure iterates through items creating an element for each and tagging with an identifying class name x ac
     * @param v Object
@@ -35,13 +33,13 @@ trait IActionColumn
   @JSName("defaultRenderer")
   var defaultRenderer_IActionColumn: js.UndefOr[
     js.Function7[
-      /* v */ js.UndefOr[js.Any], 
-      /* meta */ js.UndefOr[js.Any], 
-      /* record */ js.UndefOr[js.Any], 
-      /* rowIdx */ js.UndefOr[js.Any], 
-      /* colIdx */ js.UndefOr[js.Any], 
-      /* store */ js.UndefOr[js.Any], 
-      /* view */ js.UndefOr[js.Any], 
+      /* v */ js.UndefOr[Any], 
+      /* meta */ js.UndefOr[Any], 
+      /* record */ js.UndefOr[Any], 
+      /* rowIdx */ js.UndefOr[Any], 
+      /* colIdx */ js.UndefOr[Any], 
+      /* store */ js.UndefOr[Any], 
+      /* view */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -51,7 +49,7 @@ trait IActionColumn
     * @param silent Boolean
     */
   var disableAction: js.UndefOr[
-    js.Function2[/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[Boolean], Unit]
+    js.Function2[/* index */ js.UndefOr[Any], /* silent */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   
   /** [Method] Enables this ActionColumn s action at the specified index
@@ -59,22 +57,22 @@ trait IActionColumn
     * @param silent Boolean
     */
   var enableAction: js.UndefOr[
-    js.Function2[/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[Boolean], Unit]
+    js.Function2[/* index */ js.UndefOr[Any], /* silent */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   
   /** [Config Option] (Function) */
   @JSName("getClass")
-  var getClass_FIActionColumn: js.UndefOr[js.Any] = js.undefined
+  var getClass_FIActionColumn: js.UndefOr[Any] = js.undefined
   
   /** [Method] Private override because this cannot function as a Container and it has an items property which is an Array NOT a M  */
   @JSName("getRefItems")
   var getRefItems_IActionColumn: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var getTip: js.UndefOr[js.Any] = js.undefined
+  var getTip: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Function) */
-  var handler: js.UndefOr[js.Any] = js.undefined
+  var handler: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var icon: js.UndefOr[String] = js.undefined
@@ -102,25 +100,25 @@ object IActionColumn {
     
     inline def setAltTextUndefined: Self = StObject.set(x, "altText", js.undefined)
     
-    inline def setCascade(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IContainer): Self = StObject.set(x, "cascade", js.Any.fromFunction2(value))
+    inline def setCascade(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IContainer): Self = StObject.set(x, "cascade", js.Any.fromFunction2(value))
     
     inline def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
     
     inline def setDefaultRenderer(
-      value: (/* v */ js.UndefOr[js.Any], /* meta */ js.UndefOr[js.Any], /* record */ js.UndefOr[js.Any], /* rowIdx */ js.UndefOr[js.Any], /* colIdx */ js.UndefOr[js.Any], /* store */ js.UndefOr[js.Any], /* view */ js.UndefOr[js.Any]) => Unit
+      value: (/* v */ js.UndefOr[Any], /* meta */ js.UndefOr[Any], /* record */ js.UndefOr[Any], /* rowIdx */ js.UndefOr[Any], /* colIdx */ js.UndefOr[Any], /* store */ js.UndefOr[Any], /* view */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "defaultRenderer", js.Any.fromFunction7(value))
     
     inline def setDefaultRendererUndefined: Self = StObject.set(x, "defaultRenderer", js.undefined)
     
-    inline def setDisableAction(value: (/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "disableAction", js.Any.fromFunction2(value))
+    inline def setDisableAction(value: (/* index */ js.UndefOr[Any], /* silent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "disableAction", js.Any.fromFunction2(value))
     
     inline def setDisableActionUndefined: Self = StObject.set(x, "disableAction", js.undefined)
     
-    inline def setEnableAction(value: (/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "enableAction", js.Any.fromFunction2(value))
+    inline def setEnableAction(value: (/* index */ js.UndefOr[Any], /* silent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "enableAction", js.Any.fromFunction2(value))
     
     inline def setEnableActionUndefined: Self = StObject.set(x, "enableAction", js.undefined)
     
-    inline def setGetClass_(value: js.Any): Self = StObject.set(x, "getClass", value.asInstanceOf[js.Any])
+    inline def setGetClass_(value: Any): Self = StObject.set(x, "getClass", value.asInstanceOf[js.Any])
     
     inline def setGetClass_Undefined: Self = StObject.set(x, "getClass", js.undefined)
     
@@ -128,11 +126,11 @@ object IActionColumn {
     
     inline def setGetRefItemsUndefined: Self = StObject.set(x, "getRefItems", js.undefined)
     
-    inline def setGetTip(value: js.Any): Self = StObject.set(x, "getTip", value.asInstanceOf[js.Any])
+    inline def setGetTip(value: Any): Self = StObject.set(x, "getTip", value.asInstanceOf[js.Any])
     
     inline def setGetTipUndefined: Self = StObject.set(x, "getTip", js.undefined)
     
-    inline def setHandler(value: js.Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     

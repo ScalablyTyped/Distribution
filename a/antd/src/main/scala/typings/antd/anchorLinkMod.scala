@@ -17,7 +17,7 @@ object anchorLinkMod {
   
   @JSImport("antd/lib/anchor/AnchorLink", JSImport.Default)
   @js.native
-  class default () extends AnchorLink
+  open class default () extends AnchorLink
   object default {
     
     @JSImport("antd/lib/anchor/AnchorLink", JSImport.Default)
@@ -45,8 +45,7 @@ object anchorLinkMod {
   }
   
   @js.native
-  trait AnchorLink
-    extends Component[AnchorLinkProps, js.Any, AntAnchor] {
+  trait AnchorLink extends Component[AnchorLinkProps, Any, AntAnchor] {
     
     @JSName("componentDidMount")
     def componentDidMount_MAnchorLink(): Unit = js.native

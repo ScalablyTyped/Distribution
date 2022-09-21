@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__visually-hidden
 
-Typings are for version 0.2
+Typings are for version 0.17.0
 
 ## Library description:
 Render text that is announced to screen readers but visually hidden.
@@ -10,10 +10,10 @@ Render text that is announced to screen readers but visually hidden.
 | ------------------ | :-------------: |
 | Full name          | @reach/visually-hidden |
 | Keywords           | - |
-| # releases         | 27 |
-| # dependents       | 71 |
-| # downloads        | 9075242 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1858834.6666666667 |
+| # stars            | 5390.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)
@@ -24,7 +24,7 @@ Render text that is announced to screen readers but visually hidden.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

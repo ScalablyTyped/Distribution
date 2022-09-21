@@ -10,7 +10,7 @@ object circleMod {
   
   object default {
     
-    @JSImport("@antv/g-math/lib/circle", JSImport.Default)
+    @JSImport("@antv/g-math/dist/circle", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
@@ -61,6 +61,6 @@ object circleMod {
       * @param {number} t 指定比例 0 - 1 之间，x轴方向为 0。在 0-1 范围之外是循环还是返回 null，还需要调整
       * @return {number} 角度，在 0 - 2PI 之间
       */
-    inline def tangentAngle(x: Double, y: Double, r: Double, t: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tangentAngle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], r.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def tangentAngle(x: Double, y: Double, r: Double, t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tangentAngle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], r.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

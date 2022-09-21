@@ -4,7 +4,6 @@ import typings.guacamoleClient.guacCommonMod.TypedArray
 import typings.guacamoleClient.guacamoleClientNumbers.`6048`
 import typings.guacamoleClient.outputStreamMod.OutputStream
 import typings.guacamoleClient.statusMod.Status
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object arrayBufferWriterMod {
   
   @JSImport("guacamole-client/lib/ArrayBufferWriter", "ArrayBufferWriter")
   @js.native
-  class ArrayBufferWriter protected () extends StObject {
+  open class ArrayBufferWriter protected () extends StObject {
     /**
       * @param stream The stream that data will be written
       */
@@ -37,12 +36,12 @@ object arrayBufferWriterMod {
       */
     var onack: Null | (js.Function1[/* status */ Status, Unit]) = js.native
     
-    def sendData(data: TypedArray): Unit = js.native
     /**
       * Sends the given data.
       * @param data The data to send.
       */
-    def sendData(data: ArrayBuffer): Unit = js.native
+    def sendData(data: js.typedarray.ArrayBuffer): Unit = js.native
+    def sendData(data: TypedArray): Unit = js.native
     
     /**
       * Signals that no further text will be sent, effectively closing the

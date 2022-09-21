@@ -12,7 +12,7 @@ trait S3SetObjectRetentionOperation extends StObject {
   var BypassGovernanceRetention: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Contains the Object Lock retention mode to be applied to all objects in the Batch Operations job. For more information, see Using S3 Object Lock retention with S3 Batch Operations in the Amazon Simple Storage Service Developer Guide.
+    * Contains the Object Lock retention mode to be applied to all objects in the Batch Operations job. For more information, see Using S3 Object Lock retention with S3 Batch Operations in the Amazon S3 User Guide.
     */
   var Retention: S3Retention
 }

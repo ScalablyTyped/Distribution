@@ -2,10 +2,10 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientCompute.anon.FieldsHttpsHealthCheck
-import typings.maximMazurokGapiClientCompute.anon.FieldsKey
-import typings.maximMazurokGapiClientCompute.anon.FieldsKeyOauthtokenPrettyPrint
 import typings.maximMazurokGapiClientCompute.anon.HttpsHealthCheckKey
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
+import typings.maximMazurokGapiClientCompute.anon.ProjectQuotaUserRequestId
+import typings.maximMazurokGapiClientCompute.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,8 +22,8 @@ trait HttpsHealthChecksResource extends StObject {
   def get(request: FieldsHttpsHealthCheck): Request[HttpsHealthCheck] = js.native
   
   /** Creates a HttpsHealthCheck resource in the specified project using the data included in the request. */
-  def insert(request: FieldsKeyOauthtokenPrettyPrint): Request[Operation] = js.native
-  def insert(request: FieldsKey, body: HttpsHealthCheck): Request[Operation] = js.native
+  def insert(request: ProjectQuotaUserRequestId): Request[Operation] = js.native
+  def insert(request: Xgafv, body: HttpsHealthCheck): Request[Operation] = js.native
   
   /** Retrieves the list of HttpsHealthCheck resources available to the specified project. */
   def list(): Request[HttpsHealthCheckList] = js.native

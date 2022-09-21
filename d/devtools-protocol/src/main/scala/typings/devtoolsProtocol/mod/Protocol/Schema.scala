@@ -51,7 +51,7 @@ object Schema {
       
       inline def setDomains(value: js.Array[Domain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
       
-      inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "domains", js.Array(value :_*))
+      inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "domains", js.Array(value*))
     }
   }
 }

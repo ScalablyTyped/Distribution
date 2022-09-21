@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IPair extends StObject {
   
-  var activeContacts: js.Any
+  var activeContacts: Any
   
   var bodyA: Body
   
   var bodyB: Body
   
-  var contacts: js.Any
+  var contacts: Any
   
   var friction: Double
   
@@ -37,10 +37,10 @@ trait IPair extends StObject {
 object IPair {
   
   inline def apply(
-    activeContacts: js.Any,
+    activeContacts: Any,
     bodyA: Body,
     bodyB: Body,
-    contacts: js.Any,
+    contacts: Any,
     friction: Double,
     frictionStatic: Double,
     id: Double,
@@ -58,13 +58,13 @@ object IPair {
   
   extension [Self <: IPair](x: Self) {
     
-    inline def setActiveContacts(value: js.Any): Self = StObject.set(x, "activeContacts", value.asInstanceOf[js.Any])
+    inline def setActiveContacts(value: Any): Self = StObject.set(x, "activeContacts", value.asInstanceOf[js.Any])
     
     inline def setBodyA(value: Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
     
     inline def setBodyB(value: Body): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
     
-    inline def setContacts(value: js.Any): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
+    inline def setContacts(value: Any): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
     inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     

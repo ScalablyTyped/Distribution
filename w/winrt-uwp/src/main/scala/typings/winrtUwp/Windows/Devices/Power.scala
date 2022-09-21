@@ -16,9 +16,9 @@ object Power {
   @js.native
   trait Battery extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_reportupdated(`type`: reportupdated, listener: TypedEventHandler[Battery, js.Any]): Unit = js.native
+    def addEventListener_reportupdated(`type`: reportupdated, listener: TypedEventHandler[Battery, Any]): Unit = js.native
     
     /** Gets the identifier (ID) for an individual battery controller. */
     var deviceId: String = js.native
@@ -30,14 +30,14 @@ object Power {
     def getReport(): BatteryReport = js.native
     
     /** Occurs when the charge, capacity, or status of a battery changes. */
-    def onreportupdated(ev: js.Any & WinRTEvent[Battery]): Unit = js.native
+    def onreportupdated(ev: Any & WinRTEvent[Battery]): Unit = js.native
     /** Occurs when the charge, capacity, or status of a battery changes. */
     @JSName("onreportupdated")
-    var onreportupdated_Original: TypedEventHandler[Battery, js.Any] = js.native
+    var onreportupdated_Original: TypedEventHandler[Battery, Any] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_reportupdated(`type`: reportupdated, listener: TypedEventHandler[Battery, js.Any]): Unit = js.native
+    def removeEventListener_reportupdated(`type`: reportupdated, listener: TypedEventHandler[Battery, Any]): Unit = js.native
   }
   
   /** Provides properties that indicate the charge, capacity, and status of the battery. For more info, see Get battery information. */

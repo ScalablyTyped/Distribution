@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IAggregateStatic
   extends StObject
      with Instantiable4[
-      /* aggEntity */ js.Any, 
+      /* aggEntity */ Any, 
       /* rowFactory */ IRowFactory, 
       /* rowHeight */ Double, 
       /* groupInitState */ Boolean, 

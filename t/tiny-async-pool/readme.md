@@ -1,24 +1,21 @@
 
 # Scala.js typings for tiny-async-pool
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
-Run multiple promise-returning & async functions with limited concurrency using native ES6/ES7
+Run multiple promise-returning & async functions with limited concurrency using native ES9
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | tiny-async-pool |
-| Keywords           | race, concurrency, promise, async, es6, es7 |
-| # releases         | 3 |
-| # dependents       | 33 |
-| # downloads        | 892084 |
-| # stars            | 1 |
+| Keywords           | race, concurrency, promise, async, async iterator, async iteration, async generator, es9 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2475766.3333333335 |
+| # stars            | 558.0 |
 
 ## Links
-- [Homepage](https://github.com/rxaviers/async-pool#readme)
-- [Bugs](https://github.com/rxaviers/async-pool/issues)
-- [Repository](https://github.com/rxaviers/async-pool)
 - [Npm](https://www.npmjs.com/package/tiny-async-pool)
     
 

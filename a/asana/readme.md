@@ -1,7 +1,7 @@
 
 # Scala.js typings for asana
 
-Typings are for version 0.18.4
+Typings are for version 0.18.14
 
 ## Library description:
 Official NodeJS and BrowserJS client for the Asana API
@@ -10,10 +10,10 @@ Official NodeJS and BrowserJS client for the Asana API
 | ------------------ | :-------------: |
 | Full name          | asana |
 | Keywords           | asana, api, oauth |
-| # releases         | 10 |
-| # dependents       | 13 |
-| # downloads        | 330231 |
-| # stars            | 4 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 181907.0 |
+| # stars            | 234.0 |
 
 ## Links
 - [Homepage](https://github.com/Asana/node-asana)

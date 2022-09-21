@@ -7,6 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecognitionConfig extends StObject {
   
   /**
+    * Speech adaptation configuration improves the accuracy of speech recognition. For more information, see the [speech
+    * adaptation](https://cloud.google.com/speech-to-text/docs/adaptation) documentation. When speech adaptation is set it supersedes the `speech_contexts` field.
+    */
+  var adaptation: js.UndefOr[SpeechAdaptation] = js.undefined
+  
+  /**
+    * A list of up to 3 additional [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt) language tags, listing possible alternative languages of the supplied audio. See [Language
+    * Support](https://cloud.google.com/speech-to-text/docs/languages) for a list of the currently supported language codes. If alternative languages are listed, recognition result will
+    * contain recognition in the most likely language detected including the main language_code. The recognition result will include the language tag of the language detected in the
+    * audio. Note: This feature is only supported for Voice Command and Voice Search use cases and performance may vary for other use cases (e.g., phone call transcription).
+    */
+  var alternativeLanguageCodes: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
     * The number of channels in the input audio data. ONLY set this for MULTI-CHANNEL recognition. Valid values for LINEAR16 and FLAC are `1`-`8`. Valid values for OGG_OPUS are '1'-'254'.
     * Valid value for MULAW, AMR, AMR_WB and SPEEX_WITH_HEADER_BYTE is only `1`. If `0` or omitted, defaults to one channel (mono). Note: We only recognize the first channel by default.
     * To perform independent recognition on each channel set `enable_separate_recognition_per_channel` to 'true'.
@@ -32,6 +46,22 @@ trait RecognitionConfig extends StObject {
     * `audio_channel_count` multiplied by the length of the audio.
     */
   var enableSeparateRecognitionPerChannel: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The spoken emoji behavior for the call If not set, uses default behavior based on model of choice If 'true', adds spoken emoji formatting for the request. This will replace spoken
+    * emojis with the corresponding Unicode symbols in the final transcript. If 'false', spoken emojis are not replaced.
+    */
+  var enableSpokenEmojis: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The spoken punctuation behavior for the call If not set, uses default behavior based on model of choice e.g. command_and_search will enable spoken punctuation by default If 'true',
+    * replaces spoken punctuation with the corresponding symbols in the request. For example, "how are you question mark" becomes "how are you?". See
+    * https://cloud.google.com/speech-to-text/docs/spoken-punctuation for support. If 'false', spoken punctuation is not replaced.
+    */
+  var enableSpokenPunctuation: js.UndefOr[Boolean] = js.undefined
+  
+  /** If `true`, the top result includes a list of words and the confidence for those words. If `false`, no word-level confidence information is returned. The default is `false`. */
+  var enableWordConfidence: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the top result includes a list of words and the start and end time offsets (timestamps) for those words. If `false`, no word-level time offset information is returned.
@@ -62,10 +92,12 @@ trait RecognitionConfig extends StObject {
   
   /**
     * Which model to select for the given request. Select the model best suited to your domain to get best results. If a model is not explicitly specified, then we auto-select a model
-    * based on the parameters in the RecognitionConfig. *Model* *Description* command_and_search Best for short queries such as voice commands or voice search. phone_call Best for audio
-    * that originated from a phone call (typically recorded at an 8khz sampling rate). video Best for audio that originated from from video or includes multiple speakers. Ideally the
-    * audio is recorded at a 16khz or greater sampling rate. This is a premium model that costs more than the standard rate. default Best for audio that is not one of the specific audio
-    * models. For example, long-form audio. Ideally the audio is high-fidelity, recorded at a 16khz or greater sampling rate.
+    * based on the parameters in the RecognitionConfig. *Model* *Description* latest_long Best for long form content like media or conversation. latest_short Best for short form content
+    * like commands or single shot directed speech. command_and_search Best for short queries such as voice commands or voice search. phone_call Best for audio that originated from a
+    * phone call (typically recorded at an 8khz sampling rate). video Best for audio that originated from video or includes multiple speakers. Ideally the audio is recorded at a 16khz or
+    * greater sampling rate. This is a premium model that costs more than the standard rate. default Best for audio that is not one of the specific audio models. For example, long-form
+    * audio. Ideally the audio is high-fidelity, recorded at a 16khz or greater sampling rate. medical_conversation Best for audio that originated from a conversation between a medical
+    * provider and patient. medical_dictation Best for audio that originated from dictation notes by a medical provider.
     */
   var model: js.UndefOr[String] = js.undefined
   
@@ -84,7 +116,7 @@ trait RecognitionConfig extends StObject {
   
   /**
     * Array of SpeechContext. A means to provide context to assist the speech recognition. For more information, see [speech
-    * adaptation](https://cloud.google.com/speech-to-text/docs/context-strength).
+    * adaptation](https://cloud.google.com/speech-to-text/docs/adaptation).
     */
   var speechContexts: js.UndefOr[js.Array[SpeechContext]] = js.undefined
   
@@ -104,6 +136,16 @@ object RecognitionConfig {
   
   extension [Self <: RecognitionConfig](x: Self) {
     
+    inline def setAdaptation(value: SpeechAdaptation): Self = StObject.set(x, "adaptation", value.asInstanceOf[js.Any])
+    
+    inline def setAdaptationUndefined: Self = StObject.set(x, "adaptation", js.undefined)
+    
+    inline def setAlternativeLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "alternativeLanguageCodes", value.asInstanceOf[js.Any])
+    
+    inline def setAlternativeLanguageCodesUndefined: Self = StObject.set(x, "alternativeLanguageCodes", js.undefined)
+    
+    inline def setAlternativeLanguageCodesVarargs(value: String*): Self = StObject.set(x, "alternativeLanguageCodes", js.Array(value*))
+    
     inline def setAudioChannelCount(value: Double): Self = StObject.set(x, "audioChannelCount", value.asInstanceOf[js.Any])
     
     inline def setAudioChannelCountUndefined: Self = StObject.set(x, "audioChannelCount", js.undefined)
@@ -119,6 +161,18 @@ object RecognitionConfig {
     inline def setEnableSeparateRecognitionPerChannel(value: Boolean): Self = StObject.set(x, "enableSeparateRecognitionPerChannel", value.asInstanceOf[js.Any])
     
     inline def setEnableSeparateRecognitionPerChannelUndefined: Self = StObject.set(x, "enableSeparateRecognitionPerChannel", js.undefined)
+    
+    inline def setEnableSpokenEmojis(value: Boolean): Self = StObject.set(x, "enableSpokenEmojis", value.asInstanceOf[js.Any])
+    
+    inline def setEnableSpokenEmojisUndefined: Self = StObject.set(x, "enableSpokenEmojis", js.undefined)
+    
+    inline def setEnableSpokenPunctuation(value: Boolean): Self = StObject.set(x, "enableSpokenPunctuation", value.asInstanceOf[js.Any])
+    
+    inline def setEnableSpokenPunctuationUndefined: Self = StObject.set(x, "enableSpokenPunctuation", js.undefined)
+    
+    inline def setEnableWordConfidence(value: Boolean): Self = StObject.set(x, "enableWordConfidence", value.asInstanceOf[js.Any])
+    
+    inline def setEnableWordConfidenceUndefined: Self = StObject.set(x, "enableWordConfidence", js.undefined)
     
     inline def setEnableWordTimeOffsets(value: Boolean): Self = StObject.set(x, "enableWordTimeOffsets", value.asInstanceOf[js.Any])
     
@@ -156,7 +210,7 @@ object RecognitionConfig {
     
     inline def setSpeechContextsUndefined: Self = StObject.set(x, "speechContexts", js.undefined)
     
-    inline def setSpeechContextsVarargs(value: SpeechContext*): Self = StObject.set(x, "speechContexts", js.Array(value :_*))
+    inline def setSpeechContextsVarargs(value: SpeechContext*): Self = StObject.set(x, "speechContexts", js.Array(value*))
     
     inline def setUseEnhanced(value: Boolean): Self = StObject.set(x, "useEnhanced", value.asInstanceOf[js.Any])
     

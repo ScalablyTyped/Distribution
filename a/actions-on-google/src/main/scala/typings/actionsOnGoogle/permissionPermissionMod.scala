@@ -12,7 +12,7 @@ object permissionPermissionMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/permission/permission", "Permission")
   @js.native
-  class Permission protected () extends SoloHelper[actionsDotintentDotPERMISSION, GoogleActionsV2PermissionValueSpec] {
+  open class Permission protected () extends SoloHelper[actionsDotintentDotPERMISSION, GoogleActionsV2PermissionValueSpec] {
     /**
       * @param options Permission options
       * @public
@@ -68,7 +68,7 @@ object permissionPermissionMod {
         value: GoogleActionsV2PermissionValueSpecPermissions | js.Array[GoogleActionsV2PermissionValueSpecPermissions]
       ): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      inline def setPermissionsVarargs(value: GoogleActionsV2PermissionValueSpecPermissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+      inline def setPermissionsVarargs(value: GoogleActionsV2PermissionValueSpecPermissions*): Self = StObject.set(x, "permissions", js.Array(value*))
     }
   }
 }

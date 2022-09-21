@@ -65,7 +65,7 @@ object Message {
     
     inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
     
-    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value*))
     
     inline def setPayload(value: MessagePart): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

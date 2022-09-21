@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object coldObservableMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.rxjs.subscriptionLoggableMod.SubscriptionLoggable because Inheritance from two classes. Inlined subscriptions, scheduler, logSubscribedFrame, logUnsubscribedFrame */ @JSImport("rxjs/internal/testing/ColdObservable", "ColdObservable")
+  - typings.rxjs.subscriptionLoggableMod.SubscriptionLoggable because Inheritance from two classes. Inlined subscriptions, scheduler, logSubscribedFrame, logUnsubscribedFrame */ @JSImport("rxjs/dist/types/internal/testing/ColdObservable", "ColdObservable")
   @js.native
-  class ColdObservable[T] protected () extends Observable[T] {
+  open class ColdObservable[T] protected () extends Observable[T] {
     def this(messages: js.Array[TestMessage], scheduler: Scheduler) = this()
     
     def logSubscribedFrame(): Double = js.native
@@ -23,7 +23,7 @@ object coldObservableMod {
     
     var messages: js.Array[TestMessage] = js.native
     
-    def scheduleMessages(subscriber: Subscriber[js.Any]): Unit = js.native
+    def scheduleMessages(subscriber: Subscriber[Any]): Unit = js.native
     
     var scheduler: Scheduler = js.native
     

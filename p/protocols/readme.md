@@ -10,10 +10,10 @@ Get the protocols of an input url.
 | ------------------ | :-------------: |
 | Full name          | protocols |
 | Keywords           | protocols, protocol, url, parse |
-| # releases         | 2 |
-| # dependents       | 25 |
-| # downloads        | 91208585 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3265025666666666E7 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/IonicaBizau/protocols)

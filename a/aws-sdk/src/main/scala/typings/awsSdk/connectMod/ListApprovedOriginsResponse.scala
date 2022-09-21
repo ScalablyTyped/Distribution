@@ -33,6 +33,6 @@ object ListApprovedOriginsResponse {
     
     inline def setOriginsUndefined: Self = StObject.set(x, "Origins", js.undefined)
     
-    inline def setOriginsVarargs(value: Origin*): Self = StObject.set(x, "Origins", js.Array(value :_*))
+    inline def setOriginsVarargs(value: Origin*): Self = StObject.set(x, "Origins", js.Array(value*))
   }
 }

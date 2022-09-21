@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric/fabric-impl", "SprayBrush")
 @js.native
-class SprayBrush () extends BaseBrush {
+open class SprayBrush () extends BaseBrush {
   
-  def addSprayChunk(pointer: js.Any): Unit = js.native
+  def addSprayChunk(pointer: Any): Unit = js.native
   
   /**
     * Density of a spray (number of dots per chunk)

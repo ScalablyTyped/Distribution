@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetInventoryResult extends StObject {
   
   /**
-    * Collection of inventory entities such as a collection of instance inventory. 
+    * Collection of inventory entities such as a collection of managed node inventory. 
     */
   var Entities: js.UndefOr[InventoryResultEntityList] = js.undefined
   
@@ -29,7 +29,7 @@ object GetInventoryResult {
     
     inline def setEntitiesUndefined: Self = StObject.set(x, "Entities", js.undefined)
     
-    inline def setEntitiesVarargs(value: InventoryResultEntity*): Self = StObject.set(x, "Entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: InventoryResultEntity*): Self = StObject.set(x, "Entities", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

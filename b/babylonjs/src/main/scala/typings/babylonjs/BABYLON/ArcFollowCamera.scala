@@ -9,12 +9,12 @@ trait ArcFollowCamera
   extends StObject
      with TargetCamera {
   
-  /* private */ var _cartesianCoordinates: js.Any = js.native
+  /* private */ var _cartesianCoordinates: Any = js.native
   
-  /* private */ var _follow: js.Any = js.native
+  /* private */ var _follow: Any = js.native
   
   /** Define the camera target (the mesh it should follow) */
-  /* private */ var _meshTarget: js.Any = js.native
+  /* private */ var _meshTarget: Any = js.native
   
   /** The longitudinal angle of the camera */
   var alpha: Double = js.native
@@ -24,4 +24,10 @@ trait ArcFollowCamera
   
   /** The radius of the camera from its target */
   var radius: Double = js.native
+  
+  /**
+    * Sets the mesh to follow with this camera.
+    * @param target the target to follow
+    */
+  def setMeshTarget(target: Nullable[AbstractMesh]): Unit = js.native
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ToggleTableCellRightBorderCommand")
 @js.native
-class ToggleTableCellRightBorderCommand ()
+open class ToggleTableCellRightBorderCommand ()
   extends StObject
      with typings.devexpressWeb.ToggleTableCellRightBorderCommand {
   

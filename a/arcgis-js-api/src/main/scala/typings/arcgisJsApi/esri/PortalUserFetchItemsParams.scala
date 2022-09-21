@@ -20,12 +20,16 @@ trait PortalUserFetchItemsParams
   /**
     * The maximum number of results to be included in the result set response.
     *
+    * @default 10
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchItems)
     */
   var num: js.UndefOr[Double] = js.undefined
   
   /**
     * A comma-delimited list of fields to sort by.
+    *
+    * @default created
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchItems)
     */
@@ -34,12 +38,16 @@ trait PortalUserFetchItemsParams
   /**
     * The order in which to sort the results.
     *
+    * @default asc
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchItems)
     */
   var sortOrder: js.UndefOr[String] = js.undefined
   
   /**
     * The index of the first entry in the result set response.
+    *
+    * @default 1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchItems)
     */

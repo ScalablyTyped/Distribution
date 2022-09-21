@@ -1,6 +1,6 @@
 package typings.reactRelay
 
-import typings.relayRuntime.relayStoreTypesMod.FragmentReference
+import typings.relayRuntime.relayStoreTypesMod.FragmentType
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,27 +14,27 @@ object helpersMod {
     NonNullable[
       /* import warning: importer.ImportType#apply Failed type conversion: TKey[number] */ js.Any
     ], 
-    js.Any
+    Any
   ]
   
-  type GetEntryPointComponentFromEntryPoint[TEntryPoint] = js.Any
+  type GetEntryPointComponentFromEntryPoint[TEntryPoint] = Any
   
-  type GetEntryPointParamsFromEntryPoint[TEntryPoint] = js.Any
+  type GetEntryPointParamsFromEntryPoint[TEntryPoint] = Any
   
-  /* Inlined std.Readonly<{   $data :TData | undefined,    $fragmentRefs :relay-runtime.relay-runtime.FragmentReference}> */
+  /* Inlined std.Readonly<{   $data :TData | undefined,    $fragmentSpreads :relay-runtime.relay-runtime.FragmentType}> */
   trait KeyType[TData] extends StObject {
     
     @JSName(" $data")
     val Space$data: js.UndefOr[TData] = js.undefined
     
-    @JSName(" $fragmentRefs")
-    val Space$fragmentRefs: FragmentReference
+    @JSName(" $fragmentSpreads")
+    val Space$fragmentSpreads: FragmentType
   }
   object KeyType {
     
-    inline def apply[TData](Space$fragmentRefs: FragmentReference): KeyType[TData] = {
+    inline def apply[TData](Space$fragmentSpreads: FragmentType): KeyType[TData] = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic(" $fragmentRefs")(Space$fragmentRefs.asInstanceOf[js.Any])
+      __obj.updateDynamic(" $fragmentSpreads")(Space$fragmentSpreads.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyType[TData]]
     }
     
@@ -44,7 +44,7 @@ object helpersMod {
       
       inline def setSpace$dataUndefined: Self = StObject.set(x, " $data", js.undefined)
       
-      inline def setSpace$fragmentRefs(value: FragmentReference): Self = StObject.set(x, " $fragmentRefs", value.asInstanceOf[js.Any])
+      inline def setSpace$fragmentSpreads(value: FragmentType): Self = StObject.set(x, " $fragmentSpreads", value.asInstanceOf[js.Any])
     }
   }
   

@@ -13,7 +13,7 @@ object checkboxesMod {
   
   @JSImport("@storybook/addon-knobs/dist/components/types/Checkboxes", JSImport.Default)
   @js.native
-  class default protected () extends CheckboxesType {
+  open class default protected () extends CheckboxesType {
     def this(props: CheckboxesTypeProps) = this()
   }
   /* static members */
@@ -39,14 +39,13 @@ object checkboxesMod {
   }
   
   @js.native
-  trait CheckboxesType
-    extends Component[CheckboxesTypeProps, CheckboxesTypeState, js.Any] {
+  trait CheckboxesType extends Component[CheckboxesTypeProps, CheckboxesTypeState, Any] {
     
-    /* private */ var handleChange: js.Any = js.native
+    /* private */ var handleChange: Any = js.native
     
-    /* private */ var renderCheckbox: js.Any = js.native
+    /* private */ var renderCheckbox: Any = js.native
     
-    /* private */ var renderCheckboxList: js.Any = js.native
+    /* private */ var renderCheckboxList: Any = js.native
   }
   
   trait CheckboxesTypeKnob
@@ -110,7 +109,7 @@ object checkboxesMod {
       
       inline def setValues(value: CheckboxesTypeKnobValue): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IBindingProvider extends StObject {
   
-  def getBindingAccessors(node: Node, bindingContext: BindingContext[js.Any]): BindingAccessors
+  def getBindingAccessors(node: Node, bindingContext: BindingContext[Any]): BindingAccessors
   
   var getBindings: js.UndefOr[
-    js.Function2[/* node */ Node, /* bindingContext */ BindingContext[js.Any], js.Object]
+    js.Function2[/* node */ Node, /* bindingContext */ BindingContext[Any], js.Object]
   ] = js.undefined
   
   def nodeHasBindings(node: Node): Boolean
@@ -20,7 +20,7 @@ trait IBindingProvider extends StObject {
 object IBindingProvider {
   
   inline def apply(
-    getBindingAccessors: (Node, BindingContext[js.Any]) => BindingAccessors,
+    getBindingAccessors: (Node, BindingContext[Any]) => BindingAccessors,
     nodeHasBindings: Node => Boolean
   ): IBindingProvider = {
     val __obj = js.Dynamic.literal(getBindingAccessors = js.Any.fromFunction2(getBindingAccessors), nodeHasBindings = js.Any.fromFunction1(nodeHasBindings))
@@ -29,9 +29,9 @@ object IBindingProvider {
   
   extension [Self <: IBindingProvider](x: Self) {
     
-    inline def setGetBindingAccessors(value: (Node, BindingContext[js.Any]) => BindingAccessors): Self = StObject.set(x, "getBindingAccessors", js.Any.fromFunction2(value))
+    inline def setGetBindingAccessors(value: (Node, BindingContext[Any]) => BindingAccessors): Self = StObject.set(x, "getBindingAccessors", js.Any.fromFunction2(value))
     
-    inline def setGetBindings(value: (/* node */ Node, /* bindingContext */ BindingContext[js.Any]) => js.Object): Self = StObject.set(x, "getBindings", js.Any.fromFunction2(value))
+    inline def setGetBindings(value: (/* node */ Node, /* bindingContext */ BindingContext[Any]) => js.Object): Self = StObject.set(x, "getBindings", js.Any.fromFunction2(value))
     
     inline def setGetBindingsUndefined: Self = StObject.set(x, "getBindings", js.undefined)
     

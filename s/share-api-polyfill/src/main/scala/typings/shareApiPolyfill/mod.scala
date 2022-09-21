@@ -48,6 +48,8 @@ object mod {
     
     var messenger: js.UndefOr[Boolean] = js.undefined
     
+    var pinterest: js.UndefOr[Boolean] = js.undefined
+    
     var print: js.UndefOr[Boolean] = js.undefined
     
     var skype: js.UndefOr[Boolean] = js.undefined
@@ -92,6 +94,10 @@ object mod {
       inline def setMessenger(value: Boolean): Self = StObject.set(x, "messenger", value.asInstanceOf[js.Any])
       
       inline def setMessengerUndefined: Self = StObject.set(x, "messenger", js.undefined)
+      
+      inline def setPinterest(value: Boolean): Self = StObject.set(x, "pinterest", value.asInstanceOf[js.Any])
+      
+      inline def setPinterestUndefined: Self = StObject.set(x, "pinterest", js.undefined)
       
       inline def setPrint(value: Boolean): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
       

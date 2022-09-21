@@ -10,7 +10,7 @@ object presignedPostMod {
   
   @JSImport("aws-sdk/lib/s3/presigned_post", "PresignedPost")
   @js.native
-  class PresignedPost () extends StObject {
+  open class PresignedPost () extends StObject {
     
     /**
       * The fields that must be included as hidden inputs on the form.
@@ -73,7 +73,7 @@ object presignedPostMod {
         * An array of conditions that must be met for the form upload to be
         * accepted by S3.
         */
-      var Conditions: js.UndefOr[js.Array[StringDictionary[js.Any] | (js.Tuple3[String, js.Any, js.Any])]] = js.undefined
+      var Conditions: js.UndefOr[js.Array[StringDictionary[Any] | (js.Tuple3[String, Any, Any])]] = js.undefined
       
       /**
         * The number of seconds for which the POST form's signed policy should be
@@ -86,7 +86,7 @@ object presignedPostMod {
         * (except 'key') will be included as exact match conditions in the
         * presigned policy.
         */
-      var Fields: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+      var Fields: js.UndefOr[StringDictionary[Any]] = js.undefined
     }
     object Params {
       
@@ -101,17 +101,17 @@ object presignedPostMod {
         
         inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
         
-        inline def setConditions(value: js.Array[StringDictionary[js.Any] | (js.Tuple3[String, js.Any, js.Any])]): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
+        inline def setConditions(value: js.Array[StringDictionary[Any] | (js.Tuple3[String, Any, Any])]): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
         
         inline def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)
         
-        inline def setConditionsVarargs(value: (StringDictionary[js.Any] | (js.Tuple3[String, js.Any, js.Any]))*): Self = StObject.set(x, "Conditions", js.Array(value :_*))
+        inline def setConditionsVarargs(value: (StringDictionary[Any] | (js.Tuple3[String, Any, Any]))*): Self = StObject.set(x, "Conditions", js.Array(value*))
         
         inline def setExpires(value: Double): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
         
         inline def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
         
-        inline def setFields(value: StringDictionary[js.Any]): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: StringDictionary[Any]): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
         
         inline def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
       }

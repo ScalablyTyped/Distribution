@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("athenajs", "Display")
 @js.native
-class Display protected () extends StObject {
+open class Display protected () extends StObject {
   /**
     * Creates a new Display instance
     *

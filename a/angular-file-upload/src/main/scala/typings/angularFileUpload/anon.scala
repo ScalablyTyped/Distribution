@@ -62,13 +62,13 @@ object anon {
       
       inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value*))
       
       inline def setFormData(value: js.Array[FormData]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
       inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
       
-      inline def setFormDataVarargs(value: FormData*): Self = StObject.set(x, "formData", js.Array(value :_*))
+      inline def setFormDataVarargs(value: FormData*): Self = StObject.set(x, "formData", js.Array(value*))
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -86,7 +86,7 @@ object anon {
       
       inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
       
-      inline def setQueueVarargs(value: FileItem*): Self = StObject.set(x, "queue", js.Array(value :_*))
+      inline def setQueueVarargs(value: FileItem*): Self = StObject.set(x, "queue", js.Array(value*))
       
       inline def setRemoveAfterUpload(value: Boolean): Self = StObject.set(x, "removeAfterUpload", value.asInstanceOf[js.Any])
       

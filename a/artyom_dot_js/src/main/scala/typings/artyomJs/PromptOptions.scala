@@ -14,7 +14,7 @@ trait PromptOptions extends StObject {
   
   var onStartPrompt: js.UndefOr[js.Function] = js.undefined
   
-  var options: js.Any
+  var options: Any
   
   var question: String
   
@@ -22,7 +22,7 @@ trait PromptOptions extends StObject {
 }
 object PromptOptions {
   
-  inline def apply(options: js.Any, question: String): PromptOptions = {
+  inline def apply(options: Any, question: String): PromptOptions = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromptOptions]
   }
@@ -45,7 +45,7 @@ object PromptOptions {
     
     inline def setOnStartPromptUndefined: Self = StObject.set(x, "onStartPrompt", js.undefined)
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     

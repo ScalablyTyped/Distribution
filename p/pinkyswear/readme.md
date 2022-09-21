@@ -10,10 +10,10 @@ Minimalistic Promises/A+ implementation, <500 bytes
 | ------------------ | :-------------: |
 | Full name          | pinkyswear |
 | Keywords           | promises, promises-aplus |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 348541 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 29878.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/timjansen/PinkySwear.js#readme)

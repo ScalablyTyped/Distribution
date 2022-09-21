@@ -25,7 +25,7 @@ object GoogleCloudMlV1ListModelsResponse {
     
     inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
-    inline def setModelsVarargs(value: GoogleCloudMlV1Model*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: GoogleCloudMlV1Model*): Self = StObject.set(x, "models", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

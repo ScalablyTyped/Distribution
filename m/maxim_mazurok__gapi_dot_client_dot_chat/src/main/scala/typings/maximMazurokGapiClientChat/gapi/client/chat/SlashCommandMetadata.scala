@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SlashCommandMetadata extends StObject {
   
-  /** The bot whose command was invoked. */
+  /** The Chat app whose command was invoked. */
   var bot: js.UndefOr[User] = js.undefined
   
   /** The command id of the invoked slash command. */

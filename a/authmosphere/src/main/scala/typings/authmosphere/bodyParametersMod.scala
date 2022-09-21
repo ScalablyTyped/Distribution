@@ -1,15 +1,13 @@
 package typings.authmosphere
 
-import typings.node.NodeJS.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bodyParametersMod {
   
-  trait BodyParameters
-    extends StObject
-       with Dict[String | Double | Boolean | (js.Array[Boolean | Double | String]) | Null] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string | number | boolean | Array<string> | Array<number> | Array<boolean> | null> * / any */ trait BodyParameters extends StObject {
     
     var code: js.UndefOr[String] = js.undefined
     

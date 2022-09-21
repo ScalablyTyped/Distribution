@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3ResourceClassificationUpdate extends StObject {
   
   /**
-    * The name of the S3 bucket whose classification types you want to update.
+    * (Discontinued) The name of the S3 bucket whose classification types you want to update.
     */
   var bucketName: BucketName
   
   /**
-    * The classification type that you want to update for the resource associated with Amazon Macie Classic. 
+    * (Discontinued) The classification type that you want to update for the resource associated with Amazon Macie Classic. 
     */
   var classificationTypeUpdate: ClassificationTypeUpdate
   
   /**
-    * The prefix of the S3 bucket whose classification types you want to update.
+    * (Discontinued) The prefix of the S3 bucket whose classification types you want to update.
     */
   var prefix: js.UndefOr[Prefix] = js.undefined
 }

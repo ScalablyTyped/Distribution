@@ -12,14 +12,20 @@ trait RequestDatabaseRequest extends StObject {
   var databaseName: String
   
   /**
+    * At least and at most one of securityOrigin, storageKey must be specified.
     * Security origin.
     */
-  var securityOrigin: String
+  var securityOrigin: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Storage key.
+    */
+  var storageKey: js.UndefOr[String] = js.undefined
 }
 object RequestDatabaseRequest {
   
-  inline def apply(databaseName: String, securityOrigin: String): RequestDatabaseRequest = {
-    val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], securityOrigin = securityOrigin.asInstanceOf[js.Any])
+  inline def apply(databaseName: String): RequestDatabaseRequest = {
+    val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestDatabaseRequest]
   }
   
@@ -28,5 +34,11 @@ object RequestDatabaseRequest {
     inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
     inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityOriginUndefined: Self = StObject.set(x, "securityOrigin", js.undefined)
+    
+    inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
+    
+    inline def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
   }
 }

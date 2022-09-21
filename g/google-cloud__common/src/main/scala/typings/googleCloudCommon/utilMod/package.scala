@@ -1,19 +1,17 @@
 package typings.googleCloudCommon.utilMod
 
+import typings.teenyRequest.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 type BodyResponseCallback = js.Function3[
-/* err */ typings.std.Error | typings.googleCloudCommon.utilMod.ApiError | scala.Null, 
-/* body */ js.UndefOr[typings.googleCloudCommon.utilMod.ResponseBody], 
-/* res */ js.UndefOr[typings.teenyRequest.mod.Response[js.Any]], 
-scala.Unit]
+/* err */ js.Error | ApiError | Null, 
+/* body */ js.UndefOr[ResponseBody], 
+/* res */ js.UndefOr[Response[Any]], 
+Unit]
 
-type OnAuthenticatedCallback = js.Function2[
-/* err */ typings.std.Error | scala.Null, 
-/* reqOpts */ js.UndefOr[typings.googleCloudCommon.utilMod.DecorateRequestOptions], 
-scala.Unit]
+type OnAuthenticatedCallback = js.Function2[/* err */ js.Error | Null, /* reqOpts */ js.UndefOr[DecorateRequestOptions], Unit]
 
-type ResponseBody = js.Any
+type ResponseBody = Any

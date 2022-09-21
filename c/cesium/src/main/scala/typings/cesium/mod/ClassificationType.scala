@@ -13,21 +13,30 @@ object ClassificationType extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ClassificationType & Double] = js.native
   
+  /**
+    * Both terrain and 3D Tiles will be classified.
+    */
   @js.native
   sealed trait BOTH
     extends StObject
        with ClassificationType
-  /* 0 */ val BOTH: typings.cesium.mod.ClassificationType.BOTH & Double = js.native
+  /* 2 */ val BOTH: typings.cesium.mod.ClassificationType.BOTH & Double = js.native
   
+  /**
+    * Only 3D Tiles will be classified.
+    */
   @js.native
   sealed trait CESIUM_3D_TILE
     extends StObject
        with ClassificationType
   /* 1 */ val CESIUM_3D_TILE: typings.cesium.mod.ClassificationType.CESIUM_3D_TILE & Double = js.native
   
+  /**
+    * Only terrain will be classified.
+    */
   @js.native
   sealed trait TERRAIN
     extends StObject
        with ClassificationType
-  /* 2 */ val TERRAIN: typings.cesium.mod.ClassificationType.TERRAIN & Double = js.native
+  /* 0 */ val TERRAIN: typings.cesium.mod.ClassificationType.TERRAIN & Double = js.native
 }

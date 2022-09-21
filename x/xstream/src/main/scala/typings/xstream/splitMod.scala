@@ -13,21 +13,21 @@ object splitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](separator: Stream[js.Any]): js.Function1[/* ins */ Stream[T], Stream[Stream[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(separator.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ins */ Stream[T], Stream[Stream[T]]]]
+  inline def default[T](separator: Stream[Any]): js.Function1[/* ins */ Stream[T], Stream[Stream[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(separator.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ins */ Stream[T], Stream[Stream[T]]]]
   
   @JSImport("xstream/extra/split", "SplitOperator")
   @js.native
-  class SplitOperator[T] protected ()
+  open class SplitOperator[T] protected ()
     extends StObject
        with Operator[T, Stream[T]] {
-    def this(s: Stream[js.Any], // s = separator
+    def this(s: Stream[Any], // s = separator
     ins: Stream[T]) = this()
     
     /* CompleteClass */
     override def _c(): Unit = js.native
     
     /* CompleteClass */
-    override def _e(err: js.Any): Unit = js.native
+    override def _e(err: Any): Unit = js.native
     
     /* CompleteClass */
     override def _n(v: T): Unit = js.native
@@ -48,9 +48,9 @@ object splitMod {
     /* CompleteClass */
     var out: Stream[Stream[T]] = js.native
     
-    var s: Stream[js.Any] = js.native
+    var s: Stream[Any] = js.native
     
-    /* private */ var sil: js.Any = js.native
+    /* private */ var sil: Any = js.native
     
     /* CompleteClass */
     var `type`: String = js.native

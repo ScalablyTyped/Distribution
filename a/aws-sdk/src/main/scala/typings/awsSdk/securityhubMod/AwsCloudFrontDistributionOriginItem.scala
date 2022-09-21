@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsCloudFrontDistributionOriginItem extends StObject {
   
   /**
-    * Amazon S3 origins: The DNS name of the Amazon S3 bucket from which you want CloudFront to get objects for this origin.
+    * An origin that is not an Amazon S3 bucket, with one exception. If the Amazon S3 bucket is configured with static website hosting, use this attribute. If the Amazon S3 bucket is not configured with static website hosting, use the S3OriginConfig type instead. 
+    */
+  var CustomOriginConfig: js.UndefOr[AwsCloudFrontDistributionOriginCustomOriginConfig] = js.undefined
+  
+  /**
+    * Amazon S3 origins: The DNS name of the S3 bucket from which you want CloudFront to get objects for this origin.
     */
   var DomainName: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -34,6 +39,10 @@ object AwsCloudFrontDistributionOriginItem {
   }
   
   extension [Self <: AwsCloudFrontDistributionOriginItem](x: Self) {
+    
+    inline def setCustomOriginConfig(value: AwsCloudFrontDistributionOriginCustomOriginConfig): Self = StObject.set(x, "CustomOriginConfig", value.asInstanceOf[js.Any])
+    
+    inline def setCustomOriginConfigUndefined: Self = StObject.set(x, "CustomOriginConfig", js.undefined)
     
     inline def setDomainName(value: NonEmptyString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

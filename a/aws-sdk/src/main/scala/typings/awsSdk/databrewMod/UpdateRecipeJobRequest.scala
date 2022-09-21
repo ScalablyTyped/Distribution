@@ -7,17 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateRecipeJobRequest extends StObject {
   
   /**
+    * One or more artifacts that represent the Glue Data Catalog output from running the job.
+    */
+  var DataCatalogOutputs: js.UndefOr[DataCatalogOutputList] = js.undefined
+  
+  /**
+    * Represents a list of JDBC database output objects which defines the output destination for a DataBrew recipe job to write into.
+    */
+  var DatabaseOutputs: js.UndefOr[DatabaseOutputList] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of an encryption key that is used to protect the job.
     */
   var EncryptionKeyArn: js.UndefOr[typings.awsSdk.databrewMod.EncryptionKeyArn] = js.undefined
   
   /**
-    * The encryption mode for the job, which can be one of the following:    SSE-KMS - Server-side encryption with AWS KMS-managed keys.    SSE-S3 - Server-side encryption with keys managed by Amazon S3.  
+    * The encryption mode for the job, which can be one of the following:    SSE-KMS - Server-side encryption with keys managed by KMS.    SSE-S3 - Server-side encryption with keys managed by Amazon S3.  
     */
   var EncryptionMode: js.UndefOr[typings.awsSdk.databrewMod.EncryptionMode] = js.undefined
   
   /**
-    * A value that enables or disables Amazon CloudWatch logging for the current AWS account. If logging is enabled, CloudWatch writes one log stream for each job run.
+    * Enables or disables Amazon CloudWatch logging for the job. If logging is enabled, CloudWatch writes one log stream for each job run.
     */
   var LogSubscription: js.UndefOr[typings.awsSdk.databrewMod.LogSubscription] = js.undefined
   
@@ -39,10 +49,10 @@ trait UpdateRecipeJobRequest extends StObject {
   /**
     * One or more artifacts that represent the output from running the job. 
     */
-  var Outputs: OutputList
+  var Outputs: js.UndefOr[OutputList] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role to be assumed for this request.
+    * The Amazon Resource Name (ARN) of the Identity and Access Management (IAM) role to be assumed when DataBrew runs the job.
     */
   var RoleArn: Arn
   
@@ -53,12 +63,24 @@ trait UpdateRecipeJobRequest extends StObject {
 }
 object UpdateRecipeJobRequest {
   
-  inline def apply(Name: JobName, Outputs: OutputList, RoleArn: Arn): UpdateRecipeJobRequest = {
-    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Outputs = Outputs.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
+  inline def apply(Name: JobName, RoleArn: Arn): UpdateRecipeJobRequest = {
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRecipeJobRequest]
   }
   
   extension [Self <: UpdateRecipeJobRequest](x: Self) {
+    
+    inline def setDataCatalogOutputs(value: DataCatalogOutputList): Self = StObject.set(x, "DataCatalogOutputs", value.asInstanceOf[js.Any])
+    
+    inline def setDataCatalogOutputsUndefined: Self = StObject.set(x, "DataCatalogOutputs", js.undefined)
+    
+    inline def setDataCatalogOutputsVarargs(value: DataCatalogOutput*): Self = StObject.set(x, "DataCatalogOutputs", js.Array(value*))
+    
+    inline def setDatabaseOutputs(value: DatabaseOutputList): Self = StObject.set(x, "DatabaseOutputs", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseOutputsUndefined: Self = StObject.set(x, "DatabaseOutputs", js.undefined)
+    
+    inline def setDatabaseOutputsVarargs(value: DatabaseOutput*): Self = StObject.set(x, "DatabaseOutputs", js.Array(value*))
     
     inline def setEncryptionKeyArn(value: EncryptionKeyArn): Self = StObject.set(x, "EncryptionKeyArn", value.asInstanceOf[js.Any])
     
@@ -84,7 +106,9 @@ object UpdateRecipeJobRequest {
     
     inline def setOutputs(value: OutputList): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
-    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
+    
+    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value*))
     
     inline def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     

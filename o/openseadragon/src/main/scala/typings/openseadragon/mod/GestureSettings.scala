@@ -10,6 +10,8 @@ trait GestureSettings extends StObject {
   
   var dblClickToZoom: js.UndefOr[Boolean] = js.undefined
   
+  var dragToPan: js.UndefOr[Boolean] = js.undefined
+  
   var flickEnabled: js.UndefOr[Boolean] = js.undefined
   
   var flickMinSpeed: js.UndefOr[Double] = js.undefined
@@ -36,6 +38,10 @@ object GestureSettings {
     inline def setDblClickToZoom(value: Boolean): Self = StObject.set(x, "dblClickToZoom", value.asInstanceOf[js.Any])
     
     inline def setDblClickToZoomUndefined: Self = StObject.set(x, "dblClickToZoom", js.undefined)
+    
+    inline def setDragToPan(value: Boolean): Self = StObject.set(x, "dragToPan", value.asInstanceOf[js.Any])
+    
+    inline def setDragToPanUndefined: Self = StObject.set(x, "dragToPan", js.undefined)
     
     inline def setFlickEnabled(value: Boolean): Self = StObject.set(x, "flickEnabled", value.asInstanceOf[js.Any])
     

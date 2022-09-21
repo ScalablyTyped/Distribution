@@ -51,7 +51,7 @@ object CertificateInfo {
     
     inline def setRawDERUndefined: Self = StObject.set(x, "rawDER", js.undefined)
     
-    inline def setRawDERVarargs(value: Double*): Self = StObject.set(x, "rawDER", js.Array(value :_*))
+    inline def setRawDERVarargs(value: Double*): Self = StObject.set(x, "rawDER", js.Array(value*))
     
     inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     

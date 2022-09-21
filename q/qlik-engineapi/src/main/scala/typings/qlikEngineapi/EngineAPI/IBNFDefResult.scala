@@ -30,7 +30,7 @@ object IBNFDefResult {
     
     inline def setQBnfDefs(value: js.Array[IBNFDef]): Self = StObject.set(x, "qBnfDefs", value.asInstanceOf[js.Any])
     
-    inline def setQBnfDefsVarargs(value: IBNFDef*): Self = StObject.set(x, "qBnfDefs", js.Array(value :_*))
+    inline def setQBnfDefsVarargs(value: IBNFDef*): Self = StObject.set(x, "qBnfDefs", js.Array(value*))
     
     inline def setQBnfHash(value: String): Self = StObject.set(x, "qBnfHash", value.asInstanceOf[js.Any])
   }

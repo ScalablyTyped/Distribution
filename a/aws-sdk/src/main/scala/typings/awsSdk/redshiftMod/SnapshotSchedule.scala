@@ -58,19 +58,19 @@ object SnapshotSchedule {
     
     inline def setAssociatedClustersUndefined: Self = StObject.set(x, "AssociatedClusters", js.undefined)
     
-    inline def setAssociatedClustersVarargs(value: ClusterAssociatedToSchedule*): Self = StObject.set(x, "AssociatedClusters", js.Array(value :_*))
+    inline def setAssociatedClustersVarargs(value: ClusterAssociatedToSchedule*): Self = StObject.set(x, "AssociatedClusters", js.Array(value*))
     
     inline def setNextInvocations(value: ScheduledSnapshotTimeList): Self = StObject.set(x, "NextInvocations", value.asInstanceOf[js.Any])
     
     inline def setNextInvocationsUndefined: Self = StObject.set(x, "NextInvocations", js.undefined)
     
-    inline def setNextInvocationsVarargs(value: TStamp*): Self = StObject.set(x, "NextInvocations", js.Array(value :_*))
+    inline def setNextInvocationsVarargs(value: js.Date*): Self = StObject.set(x, "NextInvocations", js.Array(value*))
     
     inline def setScheduleDefinitions(value: ScheduleDefinitionList): Self = StObject.set(x, "ScheduleDefinitions", value.asInstanceOf[js.Any])
     
     inline def setScheduleDefinitionsUndefined: Self = StObject.set(x, "ScheduleDefinitions", js.undefined)
     
-    inline def setScheduleDefinitionsVarargs(value: String*): Self = StObject.set(x, "ScheduleDefinitions", js.Array(value :_*))
+    inline def setScheduleDefinitionsVarargs(value: String*): Self = StObject.set(x, "ScheduleDefinitions", js.Array(value*))
     
     inline def setScheduleDescription(value: String): Self = StObject.set(x, "ScheduleDescription", value.asInstanceOf[js.Any])
     
@@ -84,6 +84,6 @@ object SnapshotSchedule {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.firebaseMessaging
 
-import typings.std.ArrayBuffer
+import typings.firebaseMessaging.swTypesMod.ExtendableEvent
+import typings.std.EpochTimeStamp
 import typings.std.EventInit
 import typings.std.PushEncryptionKeyName
 import typings.std.PushManager
@@ -14,13 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object serviceWorkerMod {
   
-  @JSImport("@firebase/messaging/dist/testing/fakes/service-worker", JSImport.Namespace)
+  @JSImport("@firebase/messaging/dist/esm/src/testing/fakes/service-worker", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@firebase/messaging/dist/testing/fakes/service-worker", "FakeEvent")
+  @JSImport("@firebase/messaging/dist/esm/src/testing/fakes/service-worker", "FakeEvent")
   @js.native
-  class FakeEvent protected ()
+  open class FakeEvent protected ()
     extends StObject
        with ExtendableEvent {
     def this(`type`: String) = this()
@@ -37,43 +38,52 @@ object serviceWorkerMod {
     @JSName("target")
     var target_FakeEvent: Null = js.native
     
+    @JSName("timeStamp")
+    var timeStamp_FakeEvent: Double = js.native
+    
     def waitUntil(): Unit = js.native
   }
   
-  @JSImport("@firebase/messaging/dist/testing/fakes/service-worker", "FakePushSubscription")
+  @JSImport("@firebase/messaging/dist/esm/src/testing/fakes/service-worker", "FakePushSubscription")
   @js.native
-  class FakePushSubscription ()
+  open class FakePushSubscription ()
     extends StObject
        with PushSubscription {
     
     var auth: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override val endpoint: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
-    override val expirationTime: Double | Null = js.native
+    override val expirationTime: EpochTimeStamp | Null = js.native
     @JSName("expirationTime")
     var expirationTime_FakePushSubscription: Double = js.native
     
+    /* standard dom */
     /* CompleteClass */
-    override def getKey(name: PushEncryptionKeyName): ArrayBuffer | Null = js.native
+    override def getKey(name: PushEncryptionKeyName): js.typedarray.ArrayBuffer | Null = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override val options: PushSubscriptionOptions = js.native
     
     var p256: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override def toJSON(): PushSubscriptionJSON = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override def unsubscribe(): js.Promise[Boolean] = js.native
   }
   
-  @JSImport("@firebase/messaging/dist/testing/fakes/service-worker", "FakeServiceWorkerRegistration")
+  @JSImport("@firebase/messaging/dist/esm/src/testing/fakes/service-worker", "FakeServiceWorkerRegistration")
   @js.native
-  class FakeServiceWorkerRegistration ()
+  open class FakeServiceWorkerRegistration ()
     extends StObject
        with ServiceWorkerRegistration {
     
@@ -97,6 +107,8 @@ object serviceWorkerMod {
     
     def showNotification(): js.Promise[Unit] = js.native
     
+    var sync: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SyncManager */ Any = js.native
+    
     @JSName("waiting")
     var waiting_FakeServiceWorkerRegistration: Null = js.native
   }
@@ -110,6 +122,6 @@ object serviceWorkerMod {
     extends StObject
        with PushManager {
     
-    /* private */ var subscription: js.Any = js.native
+    /* private */ var subscription: Any = js.native
   }
 }

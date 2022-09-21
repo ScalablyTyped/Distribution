@@ -39,7 +39,7 @@ object UpgradeStepItem {
     
     inline def setIssuesUndefined: Self = StObject.set(x, "Issues", js.undefined)
     
-    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "Issues", js.Array(value :_*))
+    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "Issues", js.Array(value*))
     
     inline def setProgressPercent(value: Double): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
     

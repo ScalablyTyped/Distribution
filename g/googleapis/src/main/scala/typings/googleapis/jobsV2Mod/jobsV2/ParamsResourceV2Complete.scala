@@ -1,9 +1,5 @@
 package typings.googleapis.jobsV2Mod.jobsV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,45 +9,32 @@ trait ParamsResourceV2Complete
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Optional.  If provided, restricts completion to the specified company.
+    * Optional. If provided, restricts completion to the specified company.
     */
   var companyName: js.UndefOr[String] = js.undefined
   
   /**
-    * Required.  The language of the query. This is the BCP-47 language code,
-    * such as "en-US" or "sr-Latn". For more information, see [Tags for
-    * Identifying Languages](https://tools.ietf.org/html/bcp47).  For
-    * CompletionType.JOB_TITLE type, only open jobs with same language_code are
-    * returned.  For CompletionType.COMPANY_NAME type, only companies having
-    * open jobs with same language_code are returned.  For
-    * CompletionType.COMBINED type, only open jobs with same language_code or
-    * companies having open jobs with same language_code are returned.
+    * Required. The language of the query. This is the BCP-47 language code, such as "en-US" or "sr-Latn". For more information, see [Tags for Identifying Languages](https://tools.ietf.org/html/bcp47). For CompletionType.JOB_TITLE type, only open jobs with same language_code are returned. For CompletionType.COMPANY_NAME type, only companies having open jobs with same language_code are returned. For CompletionType.COMBINED type, only open jobs with same language_code or companies having open jobs with same language_code are returned.
     */
   var languageCode: js.UndefOr[String] = js.undefined
   
   /**
-    * Required.  Completion result count. The maximum allowed page size is 10.
+    * Required. Completion result count. The maximum allowed page size is 10.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Required.  The query used to generate suggestions.
+    * Required. The query used to generate suggestions.
     */
   var query: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional.  The scope of the completion. The defaults is
-    * CompletionScope.PUBLIC.
+    * Optional. The scope of the completion. The defaults is CompletionScope.PUBLIC.
     */
   var scope: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional.  The completion topic. The default is CompletionType.COMBINED.
+    * Optional. The completion topic. The default is CompletionType.COMBINED.
     */
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -63,10 +46,6 @@ object ParamsResourceV2Complete {
   }
   
   extension [Self <: ParamsResourceV2Complete](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     

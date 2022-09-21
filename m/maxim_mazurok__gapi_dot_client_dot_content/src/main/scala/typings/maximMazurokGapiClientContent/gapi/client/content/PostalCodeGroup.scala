@@ -36,6 +36,6 @@ object PostalCodeGroup {
     
     inline def setPostalCodeRangesUndefined: Self = StObject.set(x, "postalCodeRanges", js.undefined)
     
-    inline def setPostalCodeRangesVarargs(value: PostalCodeRange*): Self = StObject.set(x, "postalCodeRanges", js.Array(value :_*))
+    inline def setPostalCodeRangesVarargs(value: PostalCodeRange*): Self = StObject.set(x, "postalCodeRanges", js.Array(value*))
   }
 }

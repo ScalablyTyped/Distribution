@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Painter")
 @js.native
-class Painter () extends StObject {
+open class Painter () extends StObject {
   
   def paint(renderModel: RenderModel, context: RenderLayerContext): Unit = js.native
 }

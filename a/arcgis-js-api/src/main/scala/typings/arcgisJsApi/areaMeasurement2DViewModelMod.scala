@@ -1,27 +1,16 @@
 package typings.arcgisJsApi
 
 import org.scalablytyped.runtime.Shortcut
-import typings.arcgisJsApi.arcgisJsApiStrings.`square-feet`
-import typings.arcgisJsApi.arcgisJsApiStrings.`square-inches`
-import typings.arcgisJsApi.arcgisJsApiStrings.`square-kilometers`
-import typings.arcgisJsApi.arcgisJsApiStrings.`square-meters`
-import typings.arcgisJsApi.arcgisJsApiStrings.`square-miles`
-import typings.arcgisJsApi.arcgisJsApiStrings.`square-us-feet`
-import typings.arcgisJsApi.arcgisJsApiStrings.`square-yards`
-import typings.arcgisJsApi.arcgisJsApiStrings.acres
-import typings.arcgisJsApi.arcgisJsApiStrings.ares
 import typings.arcgisJsApi.arcgisJsApiStrings.disabled
-import typings.arcgisJsApi.arcgisJsApiStrings.hectares
-import typings.arcgisJsApi.arcgisJsApiStrings.imperial
 import typings.arcgisJsApi.arcgisJsApiStrings.measured
 import typings.arcgisJsApi.arcgisJsApiStrings.measuring
-import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.arcgisJsApi.esri.AreaMeasurement2DViewModel
 import typings.arcgisJsApi.esri.AreaMeasurement2DViewModelConstructor
 import typings.arcgisJsApi.esri.AreaMeasurement2DViewModelMeasurement
 import typings.arcgisJsApi.esri.AreaMeasurement2DViewModelMeasurementLabel
 import typings.arcgisJsApi.esri.MapView
+import typings.arcgisJsApi.esri.SystemOrAreaUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,10 +24,15 @@ object areaMeasurement2DViewModelMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/AreaMeasurement2D/AreaMeasurement2DViewModel", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Provides the logic for the [AreaMeasurement2D](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D.html) widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html)
+    */
+  open class Class ()
     extends StObject
        with AreaMeasurement2DViewModel {
-    def this(properties: js.Any) = this()
+    def this(properties: Any) = this()
     
     /**
       * Clears the current measurement.
@@ -49,15 +43,9 @@ object areaMeasurement2DViewModelMod extends Shortcut {
     override def clear(): Unit = js.native
     
     /**
-      * Clears the current measurement.
+      * When the coordinate system is projected (other than web mercator) then perimeters less than this threshold will be computed planimetrically.
       *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#clearMeasurement)
-      */
-    /* CompleteClass */
-    override def clearMeasurement(): Unit = js.native
-    
-    /**
-      * When the coordinate sustem is projected (other than web mercator) then perimeters less than this threshold will be computed planimetrically.
+      * @default 100000
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#geodesicDistanceThreshold)
       */
@@ -83,14 +71,6 @@ object areaMeasurement2DViewModelMod extends Shortcut {
     /**
       * Starts a new measurement.
       *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#newMeasurement)
-      */
-    /* CompleteClass */
-    override def newMeasurement(): Unit = js.native
-    
-    /**
-      * Starts a new measurement.
-      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#start)
       */
     /* CompleteClass */
@@ -98,6 +78,8 @@ object areaMeasurement2DViewModelMod extends Shortcut {
     
     /**
       * The ViewModel's state.
+      *
+      * @default disabled
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#state)
       */
@@ -110,7 +92,7 @@ object areaMeasurement2DViewModelMod extends Shortcut {
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#unit)
       */
     /* CompleteClass */
-    var unit: metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares = js.native
+    var unit: SystemOrAreaUnit = js.native
     
     /**
       * List of available units and unit systems (imperial, metric) for displaying the area values.
@@ -118,9 +100,7 @@ object areaMeasurement2DViewModelMod extends Shortcut {
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#unitOptions)
       */
     /* CompleteClass */
-    var unitOptions: js.Array[
-        metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
-      ] = js.native
+    var unitOptions: js.Array[SystemOrAreaUnit] = js.native
     
     /**
       * The view from which the widget will operate.

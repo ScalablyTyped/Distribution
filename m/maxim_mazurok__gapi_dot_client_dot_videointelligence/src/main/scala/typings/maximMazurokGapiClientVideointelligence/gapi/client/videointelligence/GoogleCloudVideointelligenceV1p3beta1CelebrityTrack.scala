@@ -25,7 +25,7 @@ object GoogleCloudVideointelligenceV1p3beta1CelebrityTrack {
     
     inline def setCelebritiesUndefined: Self = StObject.set(x, "celebrities", js.undefined)
     
-    inline def setCelebritiesVarargs(value: GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity*): Self = StObject.set(x, "celebrities", js.Array(value :_*))
+    inline def setCelebritiesVarargs(value: GoogleCloudVideointelligenceV1p3beta1RecognizedCelebrity*): Self = StObject.set(x, "celebrities", js.Array(value*))
     
     inline def setFaceTrack(value: GoogleCloudVideointelligenceV1p3beta1Track): Self = StObject.set(x, "faceTrack", value.asInstanceOf[js.Any])
     

@@ -16,10 +16,10 @@ object singletonlayoutMod {
     *
     * @param options - The options for initializing the layout.
     */
-  class SingletonLayout () extends Layout {
+  open class SingletonLayout () extends Layout {
     def this(options: IOptions) = this()
     
-    /* private */ var _widget: js.Any = js.native
+    /* private */ var _widget: Any = js.native
     
     /**
       * Attach a widget to the parent's DOM node.

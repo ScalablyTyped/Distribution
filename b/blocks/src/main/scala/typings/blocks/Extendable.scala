@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Extendable[T] extends StObject {
   
-  def extend(arg: js.Any): T = js.native
+  def extend(arg: Any): T = js.native
   /**
     * Extends the current observable with particular functionality depending on the parameters specified.
     * If the method is called without arguments and jsvalue framework is included the observable will be
@@ -16,6 +16,6 @@ trait Extendable[T] extends StObject {
     * @param name Name of the extender
     * @param options Optional options
     */
-  def extend(name: String, options: js.Any*): T = js.native
-  def extend(name: Unit, options: js.Any*): T = js.native
+  def extend(name: String, options: Any*): T = js.native
+  def extend(name: Unit, options: Any*): T = js.native
 }

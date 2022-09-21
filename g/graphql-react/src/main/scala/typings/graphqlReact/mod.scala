@@ -29,7 +29,7 @@ object mod {
   
   @JSImport("graphql-react", "GraphQL")
   @js.native
-  class GraphQL () extends StObject {
+  open class GraphQL () extends StObject {
     def this(options: Cache) = this()
     
     var cache: GraphQLCache = js.native
@@ -58,14 +58,14 @@ object mod {
   @js.native
   val GraphQLContext: Context[GraphQL] = js.native
   
-  inline def reportCacheErrors(event: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reportCacheErrors")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def reportCacheErrors(event: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reportCacheErrors")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def ssr(grapphql: GraphQL, node: ReactNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ssr")(grapphql.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def ssr(grapphql: GraphQL, node: ReactNode, render: js.Function1[/* element */ ReactNode, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ssr")(grapphql.asInstanceOf[js.Any], node.asInstanceOf[js.Any], render.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useGraphQL[T, V](options: LoadOnMount[V]): GraphQLOperationStatus[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGraphQL")(options.asInstanceOf[js.Any]).asInstanceOf[GraphQLOperationStatus[T]]
   
-  type GraphQLCache = StringDictionary[GraphQLCacheValue[js.Any]]
+  type GraphQLCache = StringDictionary[GraphQLCacheValue[Any]]
   
   type GraphQLCacheKey = String
   
@@ -100,7 +100,7 @@ object mod {
       
       inline def setGraphQLErrorsNull: Self = StObject.set(x, "graphQLErrors", null)
       
-      inline def setGraphQLErrorsVarargs(value: Locations*): Self = StObject.set(x, "graphQLErrors", js.Array(value :_*))
+      inline def setGraphQLErrorsVarargs(value: Locations*): Self = StObject.set(x, "graphQLErrors", js.Array(value*))
       
       inline def setHttpError(value: HttpError): Self = StObject.set(x, "httpError", value.asInstanceOf[js.Any])
       

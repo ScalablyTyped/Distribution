@@ -9,7 +9,7 @@ trait TransformJobSummary extends StObject {
   /**
     * A timestamp that shows when the transform Job was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * If the transform job failed, the reason it failed.
@@ -19,12 +19,12 @@ trait TransformJobSummary extends StObject {
   /**
     * Indicates when the transform job was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Indicates when the transform job ends on compute instances. For successful jobs and stopped jobs, this is the exact time recorded after the results are uploaded. For failed jobs, this is when Amazon SageMaker detected that the job failed.
     */
-  var TransformEndTime: js.UndefOr[Timestamp] = js.undefined
+  var TransformEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the transform job.
@@ -44,7 +44,7 @@ trait TransformJobSummary extends StObject {
 object TransformJobSummary {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     TransformJobArn: TransformJobArn,
     TransformJobName: TransformJobName,
     TransformJobStatus: TransformJobStatus
@@ -55,17 +55,17 @@ object TransformJobSummary {
   
   extension [Self <: TransformJobSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
-    inline def setTransformEndTime(value: Timestamp): Self = StObject.set(x, "TransformEndTime", value.asInstanceOf[js.Any])
+    inline def setTransformEndTime(value: js.Date): Self = StObject.set(x, "TransformEndTime", value.asInstanceOf[js.Any])
     
     inline def setTransformEndTimeUndefined: Self = StObject.set(x, "TransformEndTime", js.undefined)
     

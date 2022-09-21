@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "ImageLoader")
 @js.native
-class ImageLoader protected () extends StObject {
+open class ImageLoader protected () extends StObject {
   def this(options: JobLimit) = this()
   
   def addJob(options: Abort): Unit = js.native

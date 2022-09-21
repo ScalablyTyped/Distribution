@@ -9,14 +9,19 @@ trait CSSKeyframesRule
   extends StObject
      with CSSRule {
   
+  /* standard dom */
   def appendRule(rule: java.lang.String): Unit
   
+  /* standard dom */
   val cssRules: CSSRuleList
   
+  /* standard dom */
   def deleteRule(select: java.lang.String): Unit
   
+  /* standard dom */
   def findRule(select: java.lang.String): CSSKeyframeRule | Null
   
+  /* standard dom */
   var name: java.lang.String
 }
 object CSSKeyframesRule {

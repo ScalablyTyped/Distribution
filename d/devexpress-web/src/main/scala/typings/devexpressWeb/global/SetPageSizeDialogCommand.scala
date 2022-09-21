@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SetPageSizeDialogCommand")
 @js.native
-class SetPageSizeDialogCommand ()
+open class SetPageSizeDialogCommand ()
   extends StObject
      with typings.devexpressWeb.SetPageSizeDialogCommand {
   

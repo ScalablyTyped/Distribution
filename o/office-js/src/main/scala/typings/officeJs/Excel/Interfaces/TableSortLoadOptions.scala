@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Manages sorting operations on `Table` objects.
   *
-  * Manages sorting operations on Table objects.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 trait TableSortLoadOptions extends StObject {
@@ -19,25 +19,25 @@ trait TableSortLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the current conditions used to last sort the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var fields: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the casing impacts the last sort of the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var matchCase: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the Chinese character ordering method last used to sort the table.
     *
-    * Represents Chinese character ordering method last used to sort the table.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var method: js.UndefOr[Boolean] = js.undefined

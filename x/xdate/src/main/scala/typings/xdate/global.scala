@@ -1,6 +1,5 @@
 package typings.xdate
 
-import typings.std.Date
 import typings.xdate.mod.formattersInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +14,7 @@ object global {
     //------------
     //Constructors
     //------------
-    class ^ ()
+    open class ^ ()
       extends typings.xdate.mod.^ {
       /**
         * constructor
@@ -31,7 +30,7 @@ object global {
         * constructor
         * @param {Date} [nativeDate] - JavaScript native date
         */
-      def this(nativeDate: Date) = this()
+      def this(nativeDate: js.Date) = this()
       def this(utcmode: Boolean) = this()
       /**
         * constructor
@@ -39,7 +38,7 @@ object global {
       def this(xdate: typings.xdate.mod.XDate) = this()
       def this(dateString: String, utcmode: Boolean) = this()
       def this(milliseconds: Double, utcmode: Boolean) = this()
-      def this(nativeDate: Date, utcmode: Boolean) = this()
+      def this(nativeDate: js.Date, utcmode: Boolean) = this()
       def this(xdate: typings.xdate.mod.XDate, utcmode: Boolean) = this()
       /**
         * constructor

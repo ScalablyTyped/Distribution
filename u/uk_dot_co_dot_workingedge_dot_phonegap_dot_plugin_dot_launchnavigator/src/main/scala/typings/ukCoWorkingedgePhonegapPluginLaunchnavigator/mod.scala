@@ -103,7 +103,7 @@ object mod {
       
       inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      inline def setListVarargs(value: String*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: String*): Self = StObject.set(x, "list", js.Array(value*))
       
       inline def setRememberChoice(value: RememberChoiceOptions): Self = StObject.set(x, "rememberChoice", value.asInstanceOf[js.Any])
       
@@ -150,7 +150,7 @@ object mod {
     /**
       * a key/value map of extra app-specific parameters. For example, to tell Google Maps on Android to display Satellite view in "maps" launch mode: `{"t": "k"}`
       */
-    var extras: js.UndefOr[js.Any] = js.undefined
+    var extras: js.UndefOr[Any] = js.undefined
     
     /**
       * (iOS only) method to use to open Apple Maps app.
@@ -224,7 +224,7 @@ object mod {
       
       inline def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
       
-      inline def setExtras(value: js.Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+      inline def setExtras(value: Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
       
       inline def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
       
@@ -244,7 +244,7 @@ object mod {
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      inline def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value :_*))
+      inline def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value*))
       
       inline def setSuccessCallback(value: js.Function): Self = StObject.set(x, "successCallback", value.asInstanceOf[js.Any])
       
@@ -262,22 +262,22 @@ object mod {
     /**
       * string constants, used to identify apps in native code
       */
-    var APP: js.Any = js.native
+    var APP: Any = js.native
     
     /**
       * Launch modes supported by Google Maps on Android
       */
-    var LAUNCH_MODE: js.Any = js.native
+    var LAUNCH_MODE: Any = js.native
     
     /**
       * Supported platforms
       */
-    var PLATFORM: js.Any = js.native
+    var PLATFORM: Any = js.native
     
     /**
       * All possible transport modes
       */
-    var TRANSPORT_MODE: js.Any = js.native
+    var TRANSPORT_MODE: Any = js.native
     
     var appSelection: AppSelection = js.native
     
@@ -285,9 +285,9 @@ object mod {
       * Returns a list indicating which apps are installed and available on the current device.
       * @return string[]
       */
-    def availableApps(successCallback: js.Function1[/* apps */ js.Any, Unit]): Unit = js.native
+    def availableApps(successCallback: js.Function1[/* apps */ Any, Unit]): Unit = js.native
     def availableApps(
-      successCallback: js.Function1[/* apps */ js.Any, Unit],
+      successCallback: js.Function1[/* apps */ Any, Unit],
       errorCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
@@ -295,10 +295,10 @@ object mod {
       * Enables debug log output from the plugin to the JS and native consoles. By default debug is disabled.
       * @param enabled {boolean}
       */
-    def enableDebug(enabled: Boolean, successCallback: js.Function1[/* success */ js.Any, Unit]): Unit = js.native
+    def enableDebug(enabled: Boolean, successCallback: js.Function1[/* success */ Any, Unit]): Unit = js.native
     def enableDebug(
       enabled: Boolean,
-      successCallback: js.Function1[/* success */ js.Any, Unit],
+      successCallback: js.Function1[/* success */ Any, Unit],
       errorCallback: js.Function1[/* error */ String, Unit]
     ): Unit = js.native
     
@@ -337,8 +337,8 @@ object mod {
     ): Unit = js.native
     
     def logEvent(name: String): Unit = js.native
-    def logEvent(name: String, params: js.Any): Unit = js.native
-    def logEvent(name: String, params: js.Any, valueToSum: Double): Unit = js.native
+    def logEvent(name: String, params: Any): Unit = js.native
+    def logEvent(name: String, params: Any, valueToSum: Double): Unit = js.native
     def logEvent(name: String, params: Unit, valueToSum: Double): Unit = js.native
     
     /**

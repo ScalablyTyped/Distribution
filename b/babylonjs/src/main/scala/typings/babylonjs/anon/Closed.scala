@@ -75,7 +75,7 @@ object Closed {
     
     inline def setShape(value: js.Array[Vector3]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    inline def setShapeVarargs(value: Vector3*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setShapeVarargs(value: Vector3*): Self = StObject.set(x, "shape", js.Array(value*))
     
     inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     

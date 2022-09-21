@@ -24,6 +24,6 @@ object DescribeConversionTasksResult {
     
     inline def setConversionTasksUndefined: Self = StObject.set(x, "ConversionTasks", js.undefined)
     
-    inline def setConversionTasksVarargs(value: ConversionTask*): Self = StObject.set(x, "ConversionTasks", js.Array(value :_*))
+    inline def setConversionTasksVarargs(value: ConversionTask*): Self = StObject.set(x, "ConversionTasks", js.Array(value*))
   }
 }

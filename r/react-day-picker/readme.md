@@ -1,22 +1,22 @@
 
 # Scala.js typings for react-day-picker
 
-Typings are for version 7.4.8
+Typings are for version 8.2.1
 
 ## Library description:
-Flexible date picker component for React
+Customizable Date Picker for React
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-day-picker |
-| Keywords           | react, react-component, component, calendar, date-picker, datepicker, date, picker, moment, momentjs |
-| # releases         | 34 |
-| # dependents       | 368 |
-| # downloads        | 19111921 |
-| # stars            | 12 |
+| Keywords           | - |
+| # releases         | 53 |
+| # dependents       | 0.0 |
+| # downloads        | 2219093.3333333335 |
+| # stars            | 4629.0 |
 
 ## Links
-- [Homepage](https://react-day-picker.js.org)
+- [Homepage](http://react-day-picker.js.org)
 - [Bugs](https://github.com/gpbl/react-day-picker/issues)
 - [Repository](https://github.com/gpbl/react-day-picker)
 - [Npm](https://www.npmjs.com/package/react-day-picker)

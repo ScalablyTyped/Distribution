@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request template for the delete upload data request.
-  */
 trait SchemaAnalyticsDataimportDeleteUploadDataRequest extends StObject {
   
   /**
     * A list of upload UIDs.
     */
-  var customDataImportUids: js.UndefOr[js.Array[String]] = js.undefined
+  var customDataImportUids: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaAnalyticsDataimportDeleteUploadDataRequest {
   
@@ -25,8 +22,10 @@ object SchemaAnalyticsDataimportDeleteUploadDataRequest {
     
     inline def setCustomDataImportUids(value: js.Array[String]): Self = StObject.set(x, "customDataImportUids", value.asInstanceOf[js.Any])
     
+    inline def setCustomDataImportUidsNull: Self = StObject.set(x, "customDataImportUids", null)
+    
     inline def setCustomDataImportUidsUndefined: Self = StObject.set(x, "customDataImportUids", js.undefined)
     
-    inline def setCustomDataImportUidsVarargs(value: String*): Self = StObject.set(x, "customDataImportUids", js.Array(value :_*))
+    inline def setCustomDataImportUidsVarargs(value: String*): Self = StObject.set(x, "customDataImportUids", js.Array(value*))
   }
 }

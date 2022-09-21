@@ -38,25 +38,25 @@ trait SingularStyle extends StObject {
     * @param name The name of the style property to get.
     * http://js.cytoscape.org/#ele.numericStyle
     */
-  def numericStyle(name: String): js.Any = js.native
+  def numericStyle(name: String): Any = js.native
   
   /**
     * Get the units that ele.numericStyle() is expressed in, for a particular property.
     * @param name The name of the style property to get.
     * http://js.cytoscape.org/#ele.numericStyleUnits
     */
-  def numericStyleUnits(name: String): js.Any = js.native
+  def numericStyleUnits(name: String): Any = js.native
   
-  def renderedCss(): StringDictionary[js.Any] = js.native
-  def renderedCss(name: String): js.Any = js.native
+  def renderedCss(): StringDictionary[Any] = js.native
+  def renderedCss(name: String): Any = js.native
   
   /**
     * Get a name-value pair object containing rendered visual
     * style properties and their values for the element.
     * @param name The name of the visual style property to get.
     */
-  def renderedStyle(): StringDictionary[js.Any] = js.native
-  def renderedStyle(name: String): js.Any = js.native
+  def renderedStyle(): StringDictionary[Any] = js.native
+  def renderedStyle(name: String): Any = js.native
   
   /**
     * Get whether the element's effective opacity is completely transparent,

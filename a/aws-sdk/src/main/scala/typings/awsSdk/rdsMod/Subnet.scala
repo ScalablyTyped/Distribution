@@ -14,7 +14,7 @@ trait Subnet extends StObject {
   var SubnetIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    * If the subnet is associated with an Outpost, this value specifies the Outpost. For more information about RDS on Outposts, see Amazon RDS on AWS Outposts in the Amazon RDS User Guide. 
+    * If the subnet is associated with an Outpost, this value specifies the Outpost. For more information about RDS on Outposts, see Amazon RDS on Amazon Web Services Outposts in the Amazon RDS User Guide. 
     */
   var SubnetOutpost: js.UndefOr[Outpost] = js.undefined
   

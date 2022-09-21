@@ -16,7 +16,7 @@ object sendMessagesCommandMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/commands/SendMessagesCommand", "SendMessagesCommand")
   @js.native
-  class SendMessagesCommand protected ()
+  open class SendMessagesCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object sendMessagesCommandMod {
     override val middlewareStack: MiddlewareStack[SendMessagesInput, SendMessagesOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: PinpointResolvedConfiguration
     ): Handler[SendMessagesInput, SendMessagesOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: PinpointResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[SendMessagesInput, SendMessagesOutput] = js.native
   }
 }

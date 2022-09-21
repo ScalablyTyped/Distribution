@@ -6,16 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CollatorOptions extends StObject {
   
+  /* standard es5 */
   var caseFirst: js.UndefOr[String] = js.undefined
   
+  /* standard es5 */
   var ignorePunctuation: js.UndefOr[Boolean] = js.undefined
   
+  /* standard es5 */
   var localeMatcher: js.UndefOr[String] = js.undefined
   
+  /* standard es5 */
   var numeric: js.UndefOr[Boolean] = js.undefined
   
+  /* standard es5 */
   var sensitivity: js.UndefOr[String] = js.undefined
   
+  /* standard es5 */
   var usage: js.UndefOr[String] = js.undefined
 }
 object CollatorOptions {

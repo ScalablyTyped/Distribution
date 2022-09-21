@@ -28,6 +28,6 @@ object I18nDebug {
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    inline def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value :_*))
+    inline def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value*))
   }
 }

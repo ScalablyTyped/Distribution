@@ -4,26 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Entity deduced from similar images on the Internet.
-  */
 trait SchemaWebEntity extends StObject {
   
   /**
     * Canonical description of the entity, in English.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Opaque entity ID.
     */
-  var entityId: js.UndefOr[String] = js.undefined
+  var entityId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Overall relevancy score for the entity. Not normalized and not comparable
-    * across different image queries.
+    * Overall relevancy score for the entity. Not normalized and not comparable across different image queries.
     */
-  var score: js.UndefOr[Double] = js.undefined
+  var score: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaWebEntity {
   
@@ -36,13 +32,19 @@ object SchemaWebEntity {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
+    inline def setEntityIdNull: Self = StObject.set(x, "entityId", null)
+    
     inline def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
     inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    
+    inline def setScoreNull: Self = StObject.set(x, "score", null)
     
     inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }

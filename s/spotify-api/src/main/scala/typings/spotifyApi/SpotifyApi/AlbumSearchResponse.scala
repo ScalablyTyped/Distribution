@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Search for an album
-  * 
+  *
   * GET /v1/search?type=album
   * https://developer.spotify.com/web-api/search-item/
   */

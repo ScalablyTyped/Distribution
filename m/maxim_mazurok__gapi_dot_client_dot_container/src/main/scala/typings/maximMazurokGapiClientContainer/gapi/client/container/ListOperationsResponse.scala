@@ -25,12 +25,12 @@ object ListOperationsResponse {
     
     inline def setMissingZonesUndefined: Self = StObject.set(x, "missingZones", js.undefined)
     
-    inline def setMissingZonesVarargs(value: String*): Self = StObject.set(x, "missingZones", js.Array(value :_*))
+    inline def setMissingZonesVarargs(value: String*): Self = StObject.set(x, "missingZones", js.Array(value*))
     
     inline def setOperations(value: js.Array[Operation]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
     inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value*))
   }
 }

@@ -1,9 +1,9 @@
 package typings.babylonjs
 
 import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.internalTextureMod.InternalTexture
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
+import typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.uniformBufferMod.UniformBuffer
 import org.scalablytyped.runtime.StObject
@@ -25,6 +25,12 @@ object engineMultiviewMod {
       
       /**
         * @hidden
+        * For WebXR cameras that are rendering to multiview texture arrays.
+        */
+      var _renderingMultiview: Boolean
+      
+      /**
+        * @hidden
         * ensures the multiview texture of the camera exists and has the specified width/height
         * @param width height to set on the multiview texture
         * @param height width to set on the multiview texture
@@ -39,8 +45,12 @@ object engineMultiviewMod {
     }
     object Camera {
       
-      inline def apply(_resizeOrCreateMultiviewTexture: (Double, Double) => Unit, _useMultiviewToSingleView: Boolean): Camera = {
-        val __obj = js.Dynamic.literal(_resizeOrCreateMultiviewTexture = js.Any.fromFunction2(_resizeOrCreateMultiviewTexture), _useMultiviewToSingleView = _useMultiviewToSingleView.asInstanceOf[js.Any], _multiviewTexture = null)
+      inline def apply(
+        _renderingMultiview: Boolean,
+        _resizeOrCreateMultiviewTexture: (Double, Double) => Unit,
+        _useMultiviewToSingleView: Boolean
+      ): Camera = {
+        val __obj = js.Dynamic.literal(_renderingMultiview = _renderingMultiview.asInstanceOf[js.Any], _resizeOrCreateMultiviewTexture = js.Any.fromFunction2(_resizeOrCreateMultiviewTexture), _useMultiviewToSingleView = _useMultiviewToSingleView.asInstanceOf[js.Any], _multiviewTexture = null)
         __obj.asInstanceOf[Camera]
       }
       
@@ -49,6 +59,8 @@ object engineMultiviewMod {
         inline def set_multiviewTexture(value: Nullable[RenderTargetTexture]): Self = StObject.set(x, "_multiviewTexture", value.asInstanceOf[js.Any])
         
         inline def set_multiviewTextureNull: Self = StObject.set(x, "_multiviewTexture", null)
+        
+        inline def set_renderingMultiview(value: Boolean): Self = StObject.set(x, "_renderingMultiview", value.asInstanceOf[js.Any])
         
         inline def set_resizeOrCreateMultiviewTexture(value: (Double, Double) => Unit): Self = StObject.set(x, "_resizeOrCreateMultiviewTexture", js.Any.fromFunction2(value))
         
@@ -63,24 +75,24 @@ object engineMultiviewMod {
     trait Engine extends StObject {
       
       /**
-        * Binds a multiview framebuffer to be drawn to
-        * @param multiviewTexture texture to bind
+        * Binds a multiview render target wrapper to be drawn to
+        * @param multiviewTexture render target wrapper to bind
         */
-      def bindMultiviewFramebuffer(multiviewTexture: InternalTexture): Unit
+      def bindMultiviewFramebuffer(multiviewTexture: RenderTargetWrapper): Unit
       
       /**
         * Creates a new multiview render target
         * @param width defines the width of the texture
         * @param height defines the height of the texture
-        * @returns the created multiview texture
+        * @returns the created multiview render target wrapper
         */
-      def createMultiviewRenderTargetTexture(width: Double, height: Double): InternalTexture
+      def createMultiviewRenderTargetTexture(width: Double, height: Double): RenderTargetWrapper
     }
     object Engine {
       
       inline def apply(
-        bindMultiviewFramebuffer: InternalTexture => Unit,
-        createMultiviewRenderTargetTexture: (Double, Double) => InternalTexture
+        bindMultiviewFramebuffer: RenderTargetWrapper => Unit,
+        createMultiviewRenderTargetTexture: (Double, Double) => RenderTargetWrapper
       ): Engine = {
         val __obj = js.Dynamic.literal(bindMultiviewFramebuffer = js.Any.fromFunction1(bindMultiviewFramebuffer), createMultiviewRenderTargetTexture = js.Any.fromFunction2(createMultiviewRenderTargetTexture))
         __obj.asInstanceOf[Engine]
@@ -88,9 +100,9 @@ object engineMultiviewMod {
       
       extension [Self <: Engine](x: Self) {
         
-        inline def setBindMultiviewFramebuffer(value: InternalTexture => Unit): Self = StObject.set(x, "bindMultiviewFramebuffer", js.Any.fromFunction1(value))
+        inline def setBindMultiviewFramebuffer(value: RenderTargetWrapper => Unit): Self = StObject.set(x, "bindMultiviewFramebuffer", js.Any.fromFunction1(value))
         
-        inline def setCreateMultiviewRenderTargetTexture(value: (Double, Double) => InternalTexture): Self = StObject.set(x, "createMultiviewRenderTargetTexture", js.Any.fromFunction2(value))
+        inline def setCreateMultiviewRenderTargetTexture(value: (Double, Double) => RenderTargetWrapper): Self = StObject.set(x, "createMultiviewRenderTargetTexture", js.Any.fromFunction2(value))
       }
     }
   }

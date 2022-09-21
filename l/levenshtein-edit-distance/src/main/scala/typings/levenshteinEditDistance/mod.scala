@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(value: String, other: String): Double = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def apply(value: String, other: String, insensitive: Boolean): Double = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any], insensitive.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
   @JSImport("levenshtein-edit-distance", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def levenshteinEditDistance(value: String, other: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshteinEditDistance")(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def levenshteinEditDistance(value: String, other: String, insensitive: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshteinEditDistance")(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any], insensitive.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

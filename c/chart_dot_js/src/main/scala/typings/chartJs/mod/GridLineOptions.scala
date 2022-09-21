@@ -1,124 +1,181 @@
 package typings.chartJs.mod
 
+import typings.chartJs.basicMod.AnyObject
+import typings.chartJs.colorMod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GridLineOptions extends StObject {
   
-  var borderDash: js.UndefOr[js.Array[Double]] = js.undefined
+  var borderColor: Color
   
-  var borderDashOffset: js.UndefOr[Double] = js.undefined
+  /**
+    * @default []
+    */
+  var borderDash: Scriptable[js.Array[Double], ScriptableScaleContext]
   
-  var circular: js.UndefOr[Boolean] = js.undefined
+  /**
+    * @default 0
+    */
+  var borderDashOffset: Scriptable[Double, ScriptableScaleContext]
   
-  var color: js.UndefOr[ChartColor] = js.undefined
+  var borderWidth: Double
   
-  var display: js.UndefOr[Boolean] = js.undefined
+  /**
+    * @default false
+    */
+  var circular: Boolean
   
-  var drawBorder: js.UndefOr[Boolean] = js.undefined
+  /**
+    * @default 'rgba(0, 0, 0, 0.1)'
+    */
+  var color: ScriptableAndArray[Color, ScriptableScaleContext]
   
-  var drawOnChartArea: js.UndefOr[Boolean] = js.undefined
+  /**
+    * @default true
+    */
+  var display: Boolean
   
-  var drawTicks: js.UndefOr[Boolean] = js.undefined
+  /**
+    * @default true
+    */
+  var drawBorder: Boolean
   
-  var lineWidth: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  /**
+    * @default true
+    */
+  var drawOnChartArea: Boolean
   
-  var offsetGridLines: js.UndefOr[Boolean] = js.undefined
+  /**
+    * @default true
+    */
+  var drawTicks: Boolean
   
-  var tickMarkLength: js.UndefOr[Double] = js.undefined
+  /**
+    * @default 1
+    */
+  var lineWidth: ScriptableAndArray[Double, ScriptableScaleContext]
   
-  var z: js.UndefOr[Double] = js.undefined
+  /**
+    * @default false
+    */
+  var offset: Boolean
   
-  var zeroLineBorderDash: js.UndefOr[js.Array[Double]] = js.undefined
+  /**
+    * @default []
+    */
+  var tickBorderDash: js.Array[Double]
   
-  var zeroLineBorderDashOffset: js.UndefOr[Double] = js.undefined
+  /**
+    * @default 0
+    */
+  var tickBorderDashOffset: Scriptable[Double, ScriptableScaleContext]
   
-  var zeroLineColor: js.UndefOr[ChartColor] = js.undefined
+  /**
+    * @default 'rgba(0, 0, 0, 0.1)'
+    */
+  var tickColor: ScriptableAndArray[Color, ScriptableScaleContext]
   
-  var zeroLineWidth: js.UndefOr[Double] = js.undefined
+  /**
+    * @default 10
+    */
+  var tickLength: Double
+  
+  /**
+    * @default 1
+    */
+  var tickWidth: Double
+  
+  /**
+    * @default 0
+    */
+  var z: Double
 }
 object GridLineOptions {
   
-  inline def apply(): GridLineOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    borderColor: Color,
+    borderDash: Scriptable[js.Array[Double], ScriptableScaleContext],
+    borderDashOffset: Scriptable[Double, ScriptableScaleContext],
+    borderWidth: Double,
+    circular: Boolean,
+    color: ScriptableAndArray[Color, ScriptableScaleContext],
+    display: Boolean,
+    drawBorder: Boolean,
+    drawOnChartArea: Boolean,
+    drawTicks: Boolean,
+    lineWidth: ScriptableAndArray[Double, ScriptableScaleContext],
+    offset: Boolean,
+    tickBorderDash: js.Array[Double],
+    tickBorderDashOffset: Scriptable[Double, ScriptableScaleContext],
+    tickColor: ScriptableAndArray[Color, ScriptableScaleContext],
+    tickLength: Double,
+    tickWidth: Double,
+    z: Double
+  ): GridLineOptions = {
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderDash = borderDash.asInstanceOf[js.Any], borderDashOffset = borderDashOffset.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], circular = circular.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], drawBorder = drawBorder.asInstanceOf[js.Any], drawOnChartArea = drawOnChartArea.asInstanceOf[js.Any], drawTicks = drawTicks.asInstanceOf[js.Any], lineWidth = lineWidth.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], tickBorderDash = tickBorderDash.asInstanceOf[js.Any], tickBorderDashOffset = tickBorderDashOffset.asInstanceOf[js.Any], tickColor = tickColor.asInstanceOf[js.Any], tickLength = tickLength.asInstanceOf[js.Any], tickWidth = tickWidth.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridLineOptions]
   }
   
   extension [Self <: GridLineOptions](x: Self) {
     
-    inline def setBorderDash(value: js.Array[Double]): Self = StObject.set(x, "borderDash", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: Color): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    inline def setBorderDashOffset(value: Double): Self = StObject.set(x, "borderDashOffset", value.asInstanceOf[js.Any])
+    inline def setBorderDash(value: Scriptable[js.Array[Double], ScriptableScaleContext]): Self = StObject.set(x, "borderDash", value.asInstanceOf[js.Any])
     
-    inline def setBorderDashOffsetUndefined: Self = StObject.set(x, "borderDashOffset", js.undefined)
+    inline def setBorderDashFunction2(value: (ScriptableScaleContext, /* options */ AnyObject) => js.UndefOr[js.Array[Double]]): Self = StObject.set(x, "borderDash", js.Any.fromFunction2(value))
     
-    inline def setBorderDashUndefined: Self = StObject.set(x, "borderDash", js.undefined)
+    inline def setBorderDashOffset(value: Scriptable[Double, ScriptableScaleContext]): Self = StObject.set(x, "borderDashOffset", value.asInstanceOf[js.Any])
     
-    inline def setBorderDashVarargs(value: Double*): Self = StObject.set(x, "borderDash", js.Array(value :_*))
+    inline def setBorderDashOffsetFunction2(value: (ScriptableScaleContext, /* options */ AnyObject) => js.UndefOr[Double]): Self = StObject.set(x, "borderDashOffset", js.Any.fromFunction2(value))
+    
+    inline def setBorderDashVarargs(value: Double*): Self = StObject.set(x, "borderDash", js.Array(value*))
+    
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     inline def setCircular(value: Boolean): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
     
-    inline def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
+    inline def setColor(value: ScriptableAndArray[Color, ScriptableScaleContext]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: ChartColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColorFunction2(value: (ScriptableScaleContext, /* options */ AnyObject) => js.UndefOr[Color]): Self = StObject.set(x, "color", js.Any.fromFunction2(value))
     
-    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-    
-    inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Color*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
-    
     inline def setDrawBorder(value: Boolean): Self = StObject.set(x, "drawBorder", value.asInstanceOf[js.Any])
-    
-    inline def setDrawBorderUndefined: Self = StObject.set(x, "drawBorder", js.undefined)
     
     inline def setDrawOnChartArea(value: Boolean): Self = StObject.set(x, "drawOnChartArea", value.asInstanceOf[js.Any])
     
-    inline def setDrawOnChartAreaUndefined: Self = StObject.set(x, "drawOnChartArea", js.undefined)
-    
     inline def setDrawTicks(value: Boolean): Self = StObject.set(x, "drawTicks", value.asInstanceOf[js.Any])
     
-    inline def setDrawTicksUndefined: Self = StObject.set(x, "drawTicks", js.undefined)
+    inline def setLineWidth(value: ScriptableAndArray[Double, ScriptableScaleContext]): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    inline def setLineWidth(value: Double | js.Array[Double]): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidthFunction2(value: (ScriptableScaleContext, /* options */ AnyObject) => js.UndefOr[Double]): Self = StObject.set(x, "lineWidth", js.Any.fromFunction2(value))
     
-    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    inline def setLineWidthVarargs(value: Double*): Self = StObject.set(x, "lineWidth", js.Array(value*))
     
-    inline def setLineWidthVarargs(value: Double*): Self = StObject.set(x, "lineWidth", js.Array(value :_*))
+    inline def setOffset(value: Boolean): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    inline def setOffsetGridLines(value: Boolean): Self = StObject.set(x, "offsetGridLines", value.asInstanceOf[js.Any])
+    inline def setTickBorderDash(value: js.Array[Double]): Self = StObject.set(x, "tickBorderDash", value.asInstanceOf[js.Any])
     
-    inline def setOffsetGridLinesUndefined: Self = StObject.set(x, "offsetGridLines", js.undefined)
+    inline def setTickBorderDashOffset(value: Scriptable[Double, ScriptableScaleContext]): Self = StObject.set(x, "tickBorderDashOffset", value.asInstanceOf[js.Any])
     
-    inline def setTickMarkLength(value: Double): Self = StObject.set(x, "tickMarkLength", value.asInstanceOf[js.Any])
+    inline def setTickBorderDashOffsetFunction2(value: (ScriptableScaleContext, /* options */ AnyObject) => js.UndefOr[Double]): Self = StObject.set(x, "tickBorderDashOffset", js.Any.fromFunction2(value))
     
-    inline def setTickMarkLengthUndefined: Self = StObject.set(x, "tickMarkLength", js.undefined)
+    inline def setTickBorderDashVarargs(value: Double*): Self = StObject.set(x, "tickBorderDash", js.Array(value*))
+    
+    inline def setTickColor(value: ScriptableAndArray[Color, ScriptableScaleContext]): Self = StObject.set(x, "tickColor", value.asInstanceOf[js.Any])
+    
+    inline def setTickColorFunction2(value: (ScriptableScaleContext, /* options */ AnyObject) => js.UndefOr[Color]): Self = StObject.set(x, "tickColor", js.Any.fromFunction2(value))
+    
+    inline def setTickColorVarargs(value: Color*): Self = StObject.set(x, "tickColor", js.Array(value*))
+    
+    inline def setTickLength(value: Double): Self = StObject.set(x, "tickLength", value.asInstanceOf[js.Any])
+    
+    inline def setTickWidth(value: Double): Self = StObject.set(x, "tickWidth", value.asInstanceOf[js.Any])
     
     inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
-    
-    inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
-    
-    inline def setZeroLineBorderDash(value: js.Array[Double]): Self = StObject.set(x, "zeroLineBorderDash", value.asInstanceOf[js.Any])
-    
-    inline def setZeroLineBorderDashOffset(value: Double): Self = StObject.set(x, "zeroLineBorderDashOffset", value.asInstanceOf[js.Any])
-    
-    inline def setZeroLineBorderDashOffsetUndefined: Self = StObject.set(x, "zeroLineBorderDashOffset", js.undefined)
-    
-    inline def setZeroLineBorderDashUndefined: Self = StObject.set(x, "zeroLineBorderDash", js.undefined)
-    
-    inline def setZeroLineBorderDashVarargs(value: Double*): Self = StObject.set(x, "zeroLineBorderDash", js.Array(value :_*))
-    
-    inline def setZeroLineColor(value: ChartColor): Self = StObject.set(x, "zeroLineColor", value.asInstanceOf[js.Any])
-    
-    inline def setZeroLineColorUndefined: Self = StObject.set(x, "zeroLineColor", js.undefined)
-    
-    inline def setZeroLineColorVarargs(value: String*): Self = StObject.set(x, "zeroLineColor", js.Array(value :_*))
-    
-    inline def setZeroLineWidth(value: Double): Self = StObject.set(x, "zeroLineWidth", value.asInstanceOf[js.Any])
-    
-    inline def setZeroLineWidthUndefined: Self = StObject.set(x, "zeroLineWidth", js.undefined)
   }
 }

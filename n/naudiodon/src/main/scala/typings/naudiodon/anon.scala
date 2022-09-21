@@ -1,7 +1,7 @@
 package typings.naudiodon
 
 import typings.naudiodon.mod.AudioOptions
-import typings.naudiodon.mod.HostAPI
+import typings.naudiodon.mod.HostInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +10,20 @@ object anon {
   
   trait DefaultHostAPI extends StObject {
     
-    var HostAPIs: js.Array[HostAPI]
+    /** Array of HostInfo objects containing information about a specific host API. */
+    var HostAPIs: js.Array[HostInfo]
     
+    /**
+      * The index of the default host API. The default host API will be the lowest common
+      * denominator host API on the current platform and is unlikely to provide the best performance.
+      * Will be a non-negative value ranging from 0 to (HostAPIs.length-1) indicating the default
+      * host API index or a negative value if PortAudio is not initialized or an error is encountered.
+      */
     var defaultHostAPI: Double
   }
   object DefaultHostAPI {
     
-    inline def apply(HostAPIs: js.Array[HostAPI], defaultHostAPI: Double): DefaultHostAPI = {
+    inline def apply(HostAPIs: js.Array[HostInfo], defaultHostAPI: Double): DefaultHostAPI = {
       val __obj = js.Dynamic.literal(HostAPIs = HostAPIs.asInstanceOf[js.Any], defaultHostAPI = defaultHostAPI.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultHostAPI]
     }
@@ -25,9 +32,9 @@ object anon {
       
       inline def setDefaultHostAPI(value: Double): Self = StObject.set(x, "defaultHostAPI", value.asInstanceOf[js.Any])
       
-      inline def setHostAPIs(value: js.Array[HostAPI]): Self = StObject.set(x, "HostAPIs", value.asInstanceOf[js.Any])
+      inline def setHostAPIs(value: js.Array[HostInfo]): Self = StObject.set(x, "HostAPIs", value.asInstanceOf[js.Any])
       
-      inline def setHostAPIsVarargs(value: HostAPI*): Self = StObject.set(x, "HostAPIs", js.Array(value :_*))
+      inline def setHostAPIsVarargs(value: HostInfo*): Self = StObject.set(x, "HostAPIs", js.Array(value*))
     }
   }
   

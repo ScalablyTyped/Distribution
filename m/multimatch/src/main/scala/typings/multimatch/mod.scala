@@ -6,30 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Extends [`minimatch.match()`](https://github.com/isaacs/minimatch#minimatchmatchlist-pattern-options) with support for multiple patterns.
-  @param paths - Paths to match against.
-  @param patterns - Globbing patterns to use. For example: `['*', '!cake']`. See supported [`minimatch` patterns](https://github.com/isaacs/minimatch#usage).
-  @returns The matching paths in the order of input paths.
-  @example
-  ```
-  import multimatch = require('multimatch');
-  multimatch(['unicorn', 'cake', 'rainbows'], ['*', '!cake']);
-  //=> ['unicorn', 'rainbows']
-  ```
-  */
-  inline def apply(paths: String, patterns: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def apply(paths: String, patterns: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def apply(paths: String, patterns: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def apply(paths: String, patterns: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def apply(paths: js.Array[String], patterns: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def apply(paths: js.Array[String], patterns: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def apply(paths: js.Array[String], patterns: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def apply(paths: js.Array[String], patterns: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  
   @JSImport("multimatch", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(paths: String, patterns: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def default(paths: String, patterns: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def default(paths: String, patterns: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def default(paths: String, patterns: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def default(paths: js.Array[String], patterns: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def default(paths: js.Array[String], patterns: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def default(paths: js.Array[String], patterns: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def default(paths: js.Array[String], patterns: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   /* Inlined std.Readonly<minimatch.minimatch.IOptions> */
   trait Options extends StObject {
@@ -55,6 +43,10 @@ object mod {
     val nonegate: js.UndefOr[Boolean] = js.undefined
     
     val nonull: js.UndefOr[Boolean] = js.undefined
+    
+    val partial: js.UndefOr[Boolean] = js.undefined
+    
+    val windowsPathsNoEscape: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -108,6 +100,14 @@ object mod {
       inline def setNonull(value: Boolean): Self = StObject.set(x, "nonull", value.asInstanceOf[js.Any])
       
       inline def setNonullUndefined: Self = StObject.set(x, "nonull", js.undefined)
+      
+      inline def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+      
+      inline def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
+      
+      inline def setWindowsPathsNoEscape(value: Boolean): Self = StObject.set(x, "windowsPathsNoEscape", value.asInstanceOf[js.Any])
+      
+      inline def setWindowsPathsNoEscapeUndefined: Self = StObject.set(x, "windowsPathsNoEscape", js.undefined)
     }
   }
 }

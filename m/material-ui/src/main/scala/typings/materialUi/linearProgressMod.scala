@@ -10,10 +10,10 @@ object linearProgressMod {
   
   @JSImport("material-ui/LinearProgress", JSImport.Default)
   @js.native
-  class default () extends LinearProgress
+  open class default () extends LinearProgress
   
   @JSImport("material-ui/LinearProgress", "LinearProgress")
   @js.native
-  class LinearProgress ()
-    extends Component[LinearProgressProps, js.Object, js.Any]
+  open class LinearProgress ()
+    extends Component[LinearProgressProps, js.Object, Any]
 }

@@ -13,14 +13,14 @@ object config {
   @js.native
   trait ConfigModule extends StObject {
     
-    def apply(prop: String): js.Any = js.native
+    def apply(prop: String): Any = js.native
     /**
       * Get or set a value from the project's Grunt configuration.
       * This method serves as an alias to other methods;
       * if two arguments are passed, grunt.config.set is called,
       * otherwise grunt.config.get is called.
       */
-    def apply(prop: String, value: js.Any): js.Any = js.native
+    def apply(prop: String, value: Any): Any = js.native
     
     /**
       * Escape '.' dots in the given propString. This should be used for property names that contain dots.
@@ -87,5 +87,5 @@ object config {
   /**
     * {@link http://gruntjs.com/sample-gruntfile}
     */
-  type IProjectConfig = StringDictionary[js.Any]
+  type IProjectConfig = StringDictionary[Any]
 }

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* ***************** CREDENTIAL MANAGEMENT API DEFINITONS ******************* */
+/* ***************** CREDENTIAL MANAGEMENT API DEFINITIONS ******************* */
 /**
   * Declaration merge for 'navigator' which adds the credential management
   * interface.

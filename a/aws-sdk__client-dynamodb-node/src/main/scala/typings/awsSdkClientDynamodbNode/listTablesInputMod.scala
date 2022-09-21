@@ -8,5 +8,5 @@ object listTablesInputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/ListTablesInput", "ListTablesInput")
   @js.native
-  val ListTablesInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListTablesInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

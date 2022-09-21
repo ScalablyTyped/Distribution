@@ -3,7 +3,6 @@ package typings.react.mod
 import typings.react.reactStrings.backwards
 import typings.react.reactStrings.forwards
 import typings.std.Exclude
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ trait NonDirectionalSuspenseListProps
 }
 object NonDirectionalSuspenseListProps {
   
-  inline def apply(children: ReactElement | Iterable[ReactElement]): NonDirectionalSuspenseListProps = {
+  inline def apply(children: ReactElement | js.Iterable[ReactElement]): NonDirectionalSuspenseListProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[NonDirectionalSuspenseListProps]
   }

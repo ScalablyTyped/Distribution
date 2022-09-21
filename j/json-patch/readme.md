@@ -9,10 +9,10 @@ A JavaScript implementation of the JSON Object Notation (JSON) Patch http://tool
 | ------------------ | :-------------: |
 | Full name          | json-patch |
 | Keywords           | diff, patch, json, jsonpatch, jsonpointer |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 76019 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14245.333333333334 |
+| # stars            | 177.0 |
 
 ## Links
 - [Homepage](https://github.com/bruth/jsonpatch-js#readme)

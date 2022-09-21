@@ -5,7 +5,7 @@ import typings.easyXHeaders.NodeJS.ReadableStream
 import typings.easyXHeaders.NodeJS.WritableStream
 import typings.easyXHeaders.anon.End
 import typings.easyXHeaders.eventsMod.EventEmitter
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ object streamMod {
   - typings.easyXHeaders.NodeJS.ReadableStream because Already inherited
   - typings.easyXHeaders.NodeJS.ReadWriteStream because var conflicts: readable. Inlined  */ @JSImport("stream", "Duplex")
   @js.native
-  class Duplex ()
+  open class Duplex ()
     extends Readable
        with WritableStream {
     def this(opts: DuplexOptions) = this()
@@ -28,26 +28,26 @@ object streamMod {
   
   @JSImport("stream", "PassThrough")
   @js.native
-  class PassThrough () extends Transform {
+  open class PassThrough () extends Transform {
     def this(opts: TransformOptions) = this()
   }
   
   @JSImport("stream", "Readable")
   @js.native
-  class Readable ()
+  open class Readable ()
     extends EventEmitter
        with ReadableStream {
     def this(opts: ReadableOptions) = this()
     
     def _read(size: Double): Unit = js.native
     
-    def push(chunk: js.Any): Boolean = js.native
-    def push(chunk: js.Any, encoding: String): Boolean = js.native
+    def push(chunk: Any): Boolean = js.native
+    def push(chunk: Any, encoding: String): Boolean = js.native
   }
   
   @JSImport("stream", "Transform")
   @js.native
-  class Transform ()
+  open class Transform ()
     extends EventEmitter
        with ReadWriteStream {
     def this(opts: TransformOptions) = this()
@@ -57,13 +57,13 @@ object streamMod {
     def _transform(chunk: String, encoding: String, callback: js.Function): Unit = js.native
     def _transform(chunk: Buffer, encoding: String, callback: js.Function): Unit = js.native
     
-    def push(chunk: js.Any): Boolean = js.native
-    def push(chunk: js.Any, encoding: String): Boolean = js.native
+    def push(chunk: Any): Boolean = js.native
+    def push(chunk: Any, encoding: String): Boolean = js.native
   }
   
   @JSImport("stream", "Writable")
   @js.native
-  class Writable ()
+  open class Writable ()
     extends EventEmitter
        with WritableStream {
     def this(opts: WritableOptions) = this()

@@ -10,10 +10,10 @@ object permContactCalendarMod {
   
   @JSImport("material-ui/svg-icons/action/perm-contact-calendar", JSImport.Default)
   @js.native
-  class default () extends ActionPermContactCalendar
+  open class default () extends ActionPermContactCalendar
   
   @JSImport("material-ui/svg-icons/action/perm-contact-calendar", "ActionPermContactCalendar")
   @js.native
-  class ActionPermContactCalendar ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionPermContactCalendar ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

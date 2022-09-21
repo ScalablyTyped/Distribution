@@ -62,7 +62,7 @@ object engineWebVRMod {
       def _onVRFullScreenTriggered(): Unit
       
       /** @hidden */
-      var _onVrDisplayConnect: Nullable[js.Function1[/* display */ js.Any, Unit]]
+      var _onVrDisplayConnect: Nullable[js.Function1[/* display */ Any, Unit]]
       
       /** @hidden */
       var _onVrDisplayDisconnect: Nullable[js.Function0[Unit]]
@@ -71,7 +71,7 @@ object engineWebVRMod {
       var _onVrDisplayPresentChange: Nullable[js.Function0[Unit]]
       
       /** @hidden */
-      var _vrDisplay: js.Any
+      var _vrDisplay: Any
       
       /** @hidden */
       var _vrExclusivePointerMode: Boolean
@@ -94,7 +94,7 @@ object engineWebVRMod {
         * Gets the current webVR device
         * @returns the current webVR device (or null)
         */
-      def getVRDevice(): js.Any
+      def getVRDevice(): Any
       
       /**
         * Initializes a webVR display and starts listening to display change events
@@ -144,12 +144,12 @@ object engineWebVRMod {
         _onVRDisplayPointerRestricted: () => Unit,
         _onVRDisplayPointerUnrestricted: () => Unit,
         _onVRFullScreenTriggered: () => Unit,
-        _vrDisplay: js.Any,
+        _vrDisplay: Any,
         _vrExclusivePointerMode: Boolean,
         _vrSupported: Boolean,
         _webVRInitPromise: js.Promise[IDisplayChangedEventArgs],
         enableVR: WebVROptions => Unit,
-        getVRDevice: () => js.Any,
+        getVRDevice: () => Any,
         initWebVRAsync: () => js.Promise[IDisplayChangedEventArgs],
         isInVRExclusivePointerMode: Boolean,
         isVRDevicePresent: () => Boolean,
@@ -165,7 +165,7 @@ object engineWebVRMod {
         
         inline def setEnableVR(value: WebVROptions => Unit): Self = StObject.set(x, "enableVR", js.Any.fromFunction1(value))
         
-        inline def setGetVRDevice(value: () => js.Any): Self = StObject.set(x, "getVRDevice", js.Any.fromFunction0(value))
+        inline def setGetVRDevice(value: () => Any): Self = StObject.set(x, "getVRDevice", js.Any.fromFunction0(value))
         
         inline def setInitWebVRAsync(value: () => js.Promise[IDisplayChangedEventArgs]): Self = StObject.set(x, "initWebVRAsync", js.Any.fromFunction0(value))
         
@@ -195,7 +195,7 @@ object engineWebVRMod {
         
         inline def set_onVRFullScreenTriggered(value: () => Unit): Self = StObject.set(x, "_onVRFullScreenTriggered", js.Any.fromFunction0(value))
         
-        inline def set_onVrDisplayConnect(value: /* display */ js.Any => Unit): Self = StObject.set(x, "_onVrDisplayConnect", js.Any.fromFunction1(value))
+        inline def set_onVrDisplayConnect(value: /* display */ Any => Unit): Self = StObject.set(x, "_onVrDisplayConnect", js.Any.fromFunction1(value))
         
         inline def set_onVrDisplayConnectNull: Self = StObject.set(x, "_onVrDisplayConnect", null)
         
@@ -207,7 +207,7 @@ object engineWebVRMod {
         
         inline def set_onVrDisplayPresentChangeNull: Self = StObject.set(x, "_onVrDisplayPresentChange", null)
         
-        inline def set_vrDisplay(value: js.Any): Self = StObject.set(x, "_vrDisplay", value.asInstanceOf[js.Any])
+        inline def set_vrDisplay(value: Any): Self = StObject.set(x, "_vrDisplay", value.asInstanceOf[js.Any])
         
         inline def set_vrExclusivePointerMode(value: Boolean): Self = StObject.set(x, "_vrExclusivePointerMode", value.asInstanceOf[js.Any])
         

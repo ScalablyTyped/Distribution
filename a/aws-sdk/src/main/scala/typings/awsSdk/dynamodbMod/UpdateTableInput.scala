@@ -42,6 +42,11 @@ trait UpdateTableInput extends StObject {
   var StreamSpecification: js.UndefOr[typings.awsSdk.dynamodbMod.StreamSpecification] = js.undefined
   
   /**
+    * The table class of the table to be updated. Valid values are STANDARD and STANDARD_INFREQUENT_ACCESS.
+    */
+  var TableClass: js.UndefOr[typings.awsSdk.dynamodbMod.TableClass] = js.undefined
+  
+  /**
     * The name of the table to be updated.
     */
   var TableName: typings.awsSdk.dynamodbMod.TableName
@@ -59,7 +64,7 @@ object UpdateTableInput {
     
     inline def setAttributeDefinitionsUndefined: Self = StObject.set(x, "AttributeDefinitions", js.undefined)
     
-    inline def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value :_*))
+    inline def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value*))
     
     inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
     
@@ -69,7 +74,7 @@ object UpdateTableInput {
     
     inline def setGlobalSecondaryIndexUpdatesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.undefined)
     
-    inline def setGlobalSecondaryIndexUpdatesVarargs(value: GlobalSecondaryIndexUpdate*): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.Array(value :_*))
+    inline def setGlobalSecondaryIndexUpdatesVarargs(value: GlobalSecondaryIndexUpdate*): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.Array(value*))
     
     inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     
@@ -79,7 +84,7 @@ object UpdateTableInput {
     
     inline def setReplicaUpdatesUndefined: Self = StObject.set(x, "ReplicaUpdates", js.undefined)
     
-    inline def setReplicaUpdatesVarargs(value: ReplicationGroupUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value :_*))
+    inline def setReplicaUpdatesVarargs(value: ReplicationGroupUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value*))
     
     inline def setSSESpecification(value: SSESpecification): Self = StObject.set(x, "SSESpecification", value.asInstanceOf[js.Any])
     
@@ -88,6 +93,10 @@ object UpdateTableInput {
     inline def setStreamSpecification(value: StreamSpecification): Self = StObject.set(x, "StreamSpecification", value.asInstanceOf[js.Any])
     
     inline def setStreamSpecificationUndefined: Self = StObject.set(x, "StreamSpecification", js.undefined)
+    
+    inline def setTableClass(value: TableClass): Self = StObject.set(x, "TableClass", value.asInstanceOf[js.Any])
+    
+    inline def setTableClassUndefined: Self = StObject.set(x, "TableClass", js.undefined)
     
     inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }

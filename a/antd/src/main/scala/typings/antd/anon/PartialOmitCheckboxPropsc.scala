@@ -44,13 +44,15 @@ trait PartialOmitCheckboxPropsc extends StObject {
   
   var prefixCls: js.UndefOr[String] = js.undefined
   
+  var skipGroup: js.UndefOr[Boolean] = js.undefined
+  
   var style: js.UndefOr[CSSProperties] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object PartialOmitCheckboxPropsc {
   
@@ -117,6 +119,10 @@ object PartialOmitCheckboxPropsc {
     
     inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     
+    inline def setSkipGroup(value: Boolean): Self = StObject.set(x, "skipGroup", value.asInstanceOf[js.Any])
+    
+    inline def setSkipGroupUndefined: Self = StObject.set(x, "skipGroup", js.undefined)
+    
     inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
@@ -129,7 +135,7 @@ object PartialOmitCheckboxPropsc {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

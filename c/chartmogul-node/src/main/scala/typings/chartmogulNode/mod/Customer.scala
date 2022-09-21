@@ -69,7 +69,7 @@ object Customer {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   
@@ -192,7 +192,7 @@ object Customer {
       
       inline def setData_source_uuidsUndefined: Self = StObject.set(x, "data_source_uuids", js.undefined)
       
-      inline def setData_source_uuidsVarargs(value: String*): Self = StObject.set(x, "data_source_uuids", js.Array(value :_*))
+      inline def setData_source_uuidsVarargs(value: String*): Self = StObject.set(x, "data_source_uuids", js.Array(value*))
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -206,7 +206,7 @@ object Customer {
       
       inline def setExternal_idsUndefined: Self = StObject.set(x, "external_ids", js.undefined)
       
-      inline def setExternal_idsVarargs(value: String*): Self = StObject.set(x, "external_ids", js.Array(value :_*))
+      inline def setExternal_idsVarargs(value: String*): Self = StObject.set(x, "external_ids", js.Array(value*))
       
       inline def setFree_trial_started_at(value: String): Self = StObject.set(x, "free_trial_started_at", value.asInstanceOf[js.Any])
       
@@ -350,13 +350,13 @@ object Customer {
       
       inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      inline def setCustomVarargs(value: NewCustomAttributes*): Self = StObject.set(x, "custom", js.Array(value :_*))
+      inline def setCustomVarargs(value: NewCustomAttributes*): Self = StObject.set(x, "custom", js.Array(value*))
       
       inline def setTags(value: Strings): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   
@@ -368,11 +368,11 @@ object Customer {
     
     var `type`: js.UndefOr[String] = js.undefined
     
-    var value: js.Any
+    var value: Any
   }
   object NewCustomAttributes {
     
-    inline def apply(key: String, value: js.Any): NewCustomAttributes = {
+    inline def apply(key: String, value: Any): NewCustomAttributes = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewCustomAttributes]
     }
@@ -389,7 +389,7 @@ object Customer {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

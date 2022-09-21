@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ReplaceColorBlock")
 @js.native
-class ReplaceColorBlock protected ()
+open class ReplaceColorBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ReplaceColorBlock {
   /**

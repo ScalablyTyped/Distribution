@@ -3,10 +3,9 @@ package typings.jupyterlabCoreutils
 import org.scalablytyped.runtime.StringDictionary
 import typings.jupyterlabCoreutils.activitymonitorMod.ActivityMonitor.IOptions
 import typings.jupyterlabCoreutils.anon.Download
-import typings.jupyterlabCoreutils.anon.Raw
+import typings.jupyterlabCoreutils.pageconfigMod.PageConfig.IGetUrlOptions
 import typings.jupyterlabCoreutils.urlMod.URLExt.IUrl
 import typings.luminoCoreutils.jsonMod.PartialJSONObject
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object mod {
   
   @JSImport("@jupyterlab/coreutils", "ActivityMonitor")
   @js.native
-  class ActivityMonitor[Sender, Args] protected ()
+  open class ActivityMonitor[Sender, Args] protected ()
     extends typings.jupyterlabCoreutils.activitymonitorMod.ActivityMonitor[Sender, Args] {
     /**
       * Construct a new activity monitor.
@@ -35,7 +34,7 @@ object mod {
     
     @JSImport("@jupyterlab/coreutils", "MarkdownCodeBlocks.MarkdownCodeBlock")
     @js.native
-    class MarkdownCodeBlock protected ()
+    open class MarkdownCodeBlock protected ()
       extends typings.jupyterlabCoreutils.markdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock {
       def this(startLine: Double) = this()
     }
@@ -82,14 +81,14 @@ object mod {
         */
       @JSImport("@jupyterlab/coreutils", "PageConfig.Extension.deferred")
       @js.native
-      val deferred: js.Array[Raw] = js.native
+      val deferred: js.Array[String] = js.native
       
       /**
         * The collection of disabled extensions in page config.
         */
       @JSImport("@jupyterlab/coreutils", "PageConfig.Extension.disabled")
       @js.native
-      val disabled: js.Array[Raw] = js.native
+      val disabled: js.Array[String] = js.native
       
       /**
         * Returns whether a plugin is deferred.
@@ -105,6 +104,10 @@ object mod {
         */
       inline def isDisabled(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     }
+    
+    @JSImport("@jupyterlab/coreutils", "PageConfig.defaultWorkspace")
+    @js.native
+    val defaultWorkspace: String = js.native
     
     /**
       * Get the base url for a Jupyter application, or the base url of the page.
@@ -163,6 +166,17 @@ object mod {
       * Get the tree url for a JupyterLab application.
       */
     inline def getTreeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTreeUrl")().asInstanceOf[String]
+    
+    /**
+      * Create a new URL given an optional mode and tree path.
+      *
+      * This is used to create URLS when the mode or tree path change as the user
+      * changes mode or the current document in the main area. If fields in
+      * options are omitted, the value in PageConfig will be used.
+      *
+      * @param options - IGetUrlOptions for the new path.
+      */
+    inline def getUrl(options: IGetUrlOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(options.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Get the base websocket url for a Jupyter application, or an empty string.
@@ -228,7 +242,7 @@ object mod {
       *
       * @param paths - The string paths to join.
       */
-    inline def join(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def join(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     
     /**
       * Normalize a string path, reducing '..' and '.' parts.
@@ -284,7 +298,7 @@ object mod {
       *
       * If {to} isn't already absolute, {from} arguments are prepended in right to left order, until an absolute path is found. If after using all {from} paths still no absolute path is found, the current working directory is used as well. The resulting path is normalized, and trailing slashes are removed unless the path gets resolved to the root directory.
       */
-    inline def resolve(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def resolve(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(parts.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   }
   
   object Text {
@@ -356,8 +370,8 @@ object mod {
       */
     inline def format(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def format(value: String, timeFormat: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], timeFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def format(value: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def format(value: Date, timeFormat: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], timeFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def format(value: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def format(value: js.Date, timeFormat: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], timeFormat.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Convert a timestring to a human readable string (e.g. 'two minutes ago').
@@ -367,7 +381,7 @@ object mod {
       * @returns A formatted date.
       */
     inline def formatHuman(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatHuman")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def formatHuman(value: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatHuman")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def formatHuman(value: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatHuman")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object URLExt {
@@ -390,6 +404,15 @@ object mod {
     inline def encodeParts(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeParts")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
+      * Parse URL and retrieve hostname
+      *
+      * @param url - The URL string to parse
+      *
+      * @return a hostname string value
+      */
+    inline def getHostName(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostName")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    /**
       * Test whether the url is a local url.
       *
       * #### Notes
@@ -405,7 +428,7 @@ object mod {
       *
       * @returns the joined url.
       */
-    inline def join(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def join(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(parts.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     
     inline def normalize(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[js.UndefOr[String]]
     /**

@@ -10,10 +10,10 @@ Fork of the react-helmet with ability to inject custom seo string
 | ------------------ | :-------------: |
 | Full name          | react-helmet-with-visor |
 | Keywords           | react-helmet, react-helmet-with-visor, injection, seo, nfl, react, document, head, title, meta, link, script, base, noscript, style |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 835 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 77.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/kokushkin/react-helmet-with-visor#readme)

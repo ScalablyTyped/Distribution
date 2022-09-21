@@ -18,7 +18,7 @@ trait Point
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#copy)
     */
-  def copy(other: Point): Unit = js.native
+  def copy(other: Point): scala.Unit = js.native
   
   /**
     * Computes the Euclidean distance between this Point and a given Point.
@@ -51,6 +51,8 @@ trait Point
   /**
     * The m-coordinate of the point in map units.
     *
+    * @default undefined
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#m)
     */
   var m: Double = js.native
@@ -73,6 +75,8 @@ trait Point
   /**
     * The x-coordinate (easting) of the point in map units.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#x)
     */
   var x: Double = js.native
@@ -80,12 +84,16 @@ trait Point
   /**
     * The y-coordinate (northing) of the point in map units.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#y)
     */
   var y: Double = js.native
   
   /**
     * The z-coordinate (or elevation) of the point in map units.
+    *
+    * @default undefined
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#z)
     */

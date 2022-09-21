@@ -10,11 +10,11 @@ trait MessageRecipientMode extends StObject {
   var mode: Double
   
   /** @type {any} Returns the moderator/administrator message target, according to the selected recipient mode. */
-  var target: js.Any
+  var target: Any
 }
 object MessageRecipientMode {
   
-  inline def apply(mode: Double, target: js.Any): MessageRecipientMode = {
+  inline def apply(mode: Double, target: Any): MessageRecipientMode = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageRecipientMode]
   }
@@ -23,6 +23,6 @@ object MessageRecipientMode {
     
     inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

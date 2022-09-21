@@ -9,12 +9,12 @@ trait SchemaOrdersCustomBatchRequestEntryCreateTestReturnReturnItem extends StOb
   /**
     * The ID of the line item to return.
     */
-  var lineItemId: js.UndefOr[String] = js.undefined
+  var lineItemId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Quantity that is returned.
     */
-  var quantity: js.UndefOr[Double] = js.undefined
+  var quantity: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaOrdersCustomBatchRequestEntryCreateTestReturnReturnItem {
   
@@ -27,9 +27,13 @@ object SchemaOrdersCustomBatchRequestEntryCreateTestReturnReturnItem {
     
     inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
     
+    inline def setLineItemIdNull: Self = StObject.set(x, "lineItemId", null)
+    
     inline def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
     
     inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    
+    inline def setQuantityNull: Self = StObject.set(x, "quantity", null)
     
     inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }

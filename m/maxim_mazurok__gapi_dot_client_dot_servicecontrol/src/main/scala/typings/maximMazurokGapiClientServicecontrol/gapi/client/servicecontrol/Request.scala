@@ -17,7 +17,7 @@ trait Request extends StObject {
   var headers: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Request & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Request & TopLevel[Any]
   ] = js.undefined
   
   /** The HTTP request `Host` header value. */
@@ -29,7 +29,7 @@ trait Request extends StObject {
   /** The HTTP request method, such as `GET`, `POST`. */
   var method: js.UndefOr[String] = js.undefined
   
-  /** The HTTP URL path. */
+  /** The HTTP URL path, excluding the query parameters. */
   var path: js.UndefOr[String] = js.undefined
   
   /**
@@ -50,7 +50,7 @@ trait Request extends StObject {
   /** The HTTP request size in bytes. If unknown, it must be -1. */
   var size: js.UndefOr[String] = js.undefined
   
-  /** The timestamp when the `destination` service receives the first byte of the request. */
+  /** The timestamp when the `destination` service receives the last byte of the request. */
   var time: js.UndefOr[String] = js.undefined
 }
 object Request {
@@ -69,7 +69,7 @@ object Request {
     inline def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Request & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Request & TopLevel[Any]
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQueryEventInterface extends StObject {
   
   def Event(name: String): JQueryEventObject
-  def Event(name: String, eventProperties: js.Any): JQueryEventObject
+  def Event(name: String, eventProperties: Any): JQueryEventObject
   @JSName("Event")
   var Event_Original: JQueryEventConstructor
 }

@@ -10,10 +10,10 @@ Rijndael in Pure Javascript
 | ------------------ | :-------------: |
 | Full name          | rijndael-js |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 98072 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 32170.0 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/Snack-X/rijndael-js#readme)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "character-reference-invalid" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "character-reference-invalid" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

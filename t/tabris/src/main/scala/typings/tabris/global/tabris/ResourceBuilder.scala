@@ -7,7 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.ResourceBuilder")
 @js.native
-class ResourceBuilder[ResourceType, RawType] protected ()
+open class ResourceBuilder[ResourceType, RawType] protected ()
   extends typings.tabris.mod.ResourceBuilder[ResourceType, RawType] {
+  /**
+    * A factory for generic resource dictionaries. Instances can be obtained from `Resource.build()` or by
+    * invoking the constructor.
+    * Do not use for resource dictionaries of the types `Color`, `Font` and `string`. Instead use the
+    * respective factories `ColorResources.from()`, `FontResources.from()` and `TextResources.from()`.
+    */
   def this(options: ResourceBuilderConstructorOptions[ResourceType, RawType]) = this()
 }

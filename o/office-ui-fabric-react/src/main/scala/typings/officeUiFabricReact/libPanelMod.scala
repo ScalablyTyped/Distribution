@@ -17,7 +17,7 @@ object libPanelMod {
   
   @JSImport("office-ui-fabric-react/lib/Panel", "PanelBase")
   @js.native
-  class PanelBase protected ()
+  open class PanelBase protected ()
     extends typings.officeUiFabricReact.panelMod.PanelBase {
     def this(props: IPanelProps) = this()
   }

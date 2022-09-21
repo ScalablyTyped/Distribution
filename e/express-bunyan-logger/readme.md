@@ -10,15 +10,12 @@ a bunyan logger middleware for express
 | ------------------ | :-------------: |
 | Full name          | express-bunyan-logger |
 | Keywords           | express, logger, bunyan |
-| # releases         | 0 |
-| # dependents       | 43 |
-| # downloads        | 1001243 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 87684.66666666667 |
+| # stars            | 141.0 |
 
 ## Links
-- [Homepage](https://github.com/villadora/express-bunyan-logger#readme)
-- [Bugs](https://github.com/villadora/express-bunyan-logger/issues)
-- [Repository](https://github.com/villadora/express-bunyan-logger)
 - [Npm](https://www.npmjs.com/package/express-bunyan-logger)
     
 

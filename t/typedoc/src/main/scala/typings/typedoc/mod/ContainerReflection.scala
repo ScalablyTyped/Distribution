@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typedoc", "ContainerReflection")
 @js.native
-class ContainerReflection protected ()
-  extends typings.typedoc.reflectionsMod.ContainerReflection {
-  def this(name: String, kind: typings.typedoc.abstractMod.ReflectionKind) = this()
+open class ContainerReflection protected ()
+  extends typings.typedoc.modelsMod.ContainerReflection {
+  def this(name: String, kind: typings.typedoc.kindMod.ReflectionKind) = this()
   def this(
     name: String,
-    kind: typings.typedoc.abstractMod.ReflectionKind,
+    kind: typings.typedoc.kindMod.ReflectionKind,
     parent: typings.typedoc.abstractMod.Reflection
   ) = this()
 }

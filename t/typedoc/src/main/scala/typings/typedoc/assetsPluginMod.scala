@@ -10,12 +10,20 @@ object assetsPluginMod {
   
   @JSImport("typedoc/dist/lib/output/plugins/AssetsPlugin", "AssetsPlugin")
   @js.native
-  class AssetsPlugin protected () extends RendererComponent {
-    def this(owner: js.Symbol) = this()
+  open class AssetsPlugin protected () extends RendererComponent {
+    /**
+      * Create new Component instance.
+      */
     def this(owner: Renderer) = this()
     
-    var copyDefaultAssets: Boolean = js.native
+    /** @internal */
+    var customCss: String = js.native
     
-    /* private */ var onRendererBegin: js.Any = js.native
+    /**
+      * Triggered before the renderer starts rendering a project.
+      *
+      * @param event  An event object describing the current render operation.
+      */
+    /* private */ var onRenderEnd: Any = js.native
   }
 }

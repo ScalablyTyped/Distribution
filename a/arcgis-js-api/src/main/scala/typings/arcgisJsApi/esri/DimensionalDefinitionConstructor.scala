@@ -17,5 +17,5 @@ trait DimensionalDefinitionConstructor
 Instantiable0[DimensionalDefinition]
      with Instantiable1[/* properties */ DimensionalDefinitionProperties, DimensionalDefinition] {
   
-  def fromJSON(json: js.Any): DimensionalDefinition = js.native
+  def fromJSON(json: Any): DimensionalDefinition = js.native
 }

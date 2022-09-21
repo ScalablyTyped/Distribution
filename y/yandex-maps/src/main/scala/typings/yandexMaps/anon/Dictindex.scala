@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dictindex
   extends StObject
-     with /* index */ StringDictionary[js.Any] {
+     with /* index */ StringDictionary[Any] {
   
   var activeRouteAutoSelection: js.UndefOr[Boolean] = js.undefined
   
@@ -54,6 +54,6 @@ object Dictindex {
     
     inline def setZoomMarginUndefined: Self = StObject.set(x, "zoomMargin", js.undefined)
     
-    inline def setZoomMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "zoomMargin", js.Array(value :_*))
+    inline def setZoomMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "zoomMargin", js.Array(value*))
   }
 }

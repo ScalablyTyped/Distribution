@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mergeMod {
   
-  @JSImport("@firebase/database/dist/src/core/operation/Merge", "Merge")
+  @JSImport("@firebase/database/dist/node-esm/src/core/operation/Merge", "Merge")
   @js.native
-  class Merge protected ()
+  open class Merge protected ()
     extends StObject
        with Operation {
     def this(
@@ -25,28 +25,15 @@ object mergeMod {
     
     /** @inheritDoc */ var children: ImmutableTree[Node] = js.native
     
-    /**
-      * @param {string} childName
-      * @return {?Operation}
-      */
     /* CompleteClass */
     override def operationForChild(childName: String): Operation | Null = js.native
     
-    /**
-      * @type {!Path}
-      */
     /* CompleteClass */
     var path: Path = js.native
     
-    /**
-      * @type {!OperationSource}
-      */
     /* CompleteClass */
     var source: OperationSource = js.native
     
-    /**
-      * @type {!OperationType}
-      */
     /* CompleteClass */
     var `type`: OperationType = js.native
   }

@@ -27,6 +27,6 @@ object Description {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: js.Array[String]*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: js.Array[String]*): Self = StObject.set(x, "options", js.Array(value*))
   }
 }

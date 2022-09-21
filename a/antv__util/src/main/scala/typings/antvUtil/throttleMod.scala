@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object throttleMod {
   
-  @JSImport("@antv/util/lib/throttle", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/throttle", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

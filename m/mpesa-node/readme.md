@@ -10,10 +10,10 @@ Node M-Pesa Library
 | ------------------ | :-------------: |
 | Full name          | mpesa-node |
 | Keywords           | mpesa, mpesa-node, mpesa-api |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 7699 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1239.0 |
+| # stars            | 128.0 |
 
 ## Links
 - [Homepage](https://github.com/safaricom/mpesa-node-library#readme)

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-instantsearch-dom", "QueryRuleContext")
 @js.native
-class QueryRuleContext protected ()
+open class QueryRuleContext protected ()
   extends typings.reactInstantsearchCore.mod.QueryRuleContext {
-  def this(props: js.Any) = this()
+  def this(props: Any) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: js.Any, context: js.Any) = this()
+  def this(props: Any, context: Any) = this()
 }

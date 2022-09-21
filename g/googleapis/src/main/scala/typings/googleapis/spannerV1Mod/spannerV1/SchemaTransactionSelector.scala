@@ -4,29 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This message is used to select the transaction in which a Read or
-  * ExecuteSql call runs.  See TransactionOptions for more information about
-  * transactions.
-  */
 trait SchemaTransactionSelector extends StObject {
   
   /**
-    * Begin a new transaction and execute this read or SQL query in it. The
-    * transaction ID of the new transaction is returned in
-    * ResultSetMetadata.transaction, which is a Transaction.
+    * Begin a new transaction and execute this read or SQL query in it. The transaction ID of the new transaction is returned in ResultSetMetadata.transaction, which is a Transaction.
     */
   var begin: js.UndefOr[SchemaTransactionOptions] = js.undefined
   
   /**
     * Execute the read or SQL query in a previously-started transaction.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Execute the read or SQL query in a temporary transaction. This is the
-    * most efficient way to execute a transaction that consists of a single SQL
-    * query.
+    * Execute the read or SQL query in a temporary transaction. This is the most efficient way to execute a transaction that consists of a single SQL query.
     */
   var singleUse: js.UndefOr[SchemaTransactionOptions] = js.undefined
 }
@@ -44,6 +35,8 @@ object SchemaTransactionSelector {
     inline def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     

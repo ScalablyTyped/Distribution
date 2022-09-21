@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetHealthCheckCountResponse extends StObject {
   
   /**
-    * The number of health checks associated with the current AWS account.
+    * The number of health checks associated with the current Amazon Web Services account.
     */
   var HealthCheckCount: typings.awsSdk.route53Mod.HealthCheckCount
 }

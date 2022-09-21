@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "styled-tools" : "1.7.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "styled-tools" : "1.7.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

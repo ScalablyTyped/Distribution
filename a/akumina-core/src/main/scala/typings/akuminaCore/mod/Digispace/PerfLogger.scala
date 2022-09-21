@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("akumina-core", "Digispace.PerfLogger")
 @js.native
-class PerfLogger () extends StObject
+open class PerfLogger () extends StObject
 object PerfLogger {
   
   @JSImport("akumina-core", "Digispace.PerfLogger")
@@ -38,7 +38,7 @@ object PerfLogger {
     * @returns PerformanceMeasure Object
     */
   /* static member */
-  inline def CompareMarks(mark1: String, mark2: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("CompareMarks")(mark1.asInstanceOf[js.Any], mark2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def CompareMarks(mark1: String, mark2: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("CompareMarks")(mark1.asInstanceOf[js.Any], mark2.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /** Gets color from time
     * @param time time in ms
@@ -52,18 +52,18 @@ object PerfLogger {
     * @returns Array of Loader marks object
     */
   /* static member */
-  inline def GetLoaderMarks(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetLoaderMarks")().asInstanceOf[js.Array[js.Any]]
+  inline def GetLoaderMarks(): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetLoaderMarks")().asInstanceOf[js.Array[Any]]
   
   /** Get a mark object by mark name
     * @param mark string name of mark
     * @returns object of mark {name: "string", startTime: decimal}
     */
   /* static member */
-  inline def GetMark(mark: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetMark")(mark.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def GetMark(mark: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetMark")(mark.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** Get List of marks added
     * @returns Array of mark objects [{name: "string", startTime: decimal}]
     */
   /* static member */
-  inline def GetMarks(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetMarks")().asInstanceOf[js.Array[js.Any]]
+  inline def GetMarks(): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetMarks")().asInstanceOf[js.Array[Any]]
 }

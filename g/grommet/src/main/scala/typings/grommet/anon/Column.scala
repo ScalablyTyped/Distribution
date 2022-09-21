@@ -1,11 +1,14 @@
 package typings.grommet.anon
 
+import typings.grommet.gridMod._GridGapType
 import typings.grommet.utilsMod.GapType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Column extends StObject {
+trait Column
+  extends StObject
+     with _GridGapType {
   
   var column: js.UndefOr[GapType] = js.undefined
   

@@ -8,8 +8,8 @@ import typings.antd.transferListMod.RenderedItem
 import typings.antd.transferListMod.TransferListProps
 import typings.antd.transferMod.KeyWiseTransferItem
 import typings.antd.typeMod.ElementOf
-import typings.antd.typeMod.Omit
 import typings.react.mod.Component
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ object listBodyMod {
   
   @JSImport("antd/lib/transfer/ListBody", JSImport.Default)
   @js.native
-  class default[RecordType /* <: KeyWiseTransferItem */] () extends ListBody[RecordType]
+  open class default[RecordType /* <: KeyWiseTransferItem */] () extends ListBody[RecordType]
   object default {
     
     @JSImport("antd/lib/transfer/ListBody", JSImport.Default)
@@ -34,8 +34,7 @@ object listBodyMod {
   val OmitProps: js.Tuple3[handleFilter, handleClear, checkedKeys] = js.native
   
   @js.native
-  trait ListBody[RecordType /* <: KeyWiseTransferItem */]
-    extends Component[TransferListBodyProps[RecordType], TransferListBodyState, js.Any] {
+  trait ListBody[RecordType /* <: KeyWiseTransferItem */] extends Component[TransferListBodyProps[RecordType], TransferListBodyState, Any] {
     
     def getItems(): js.Array[RenderedItem[RecordType]] = js.native
     
@@ -77,15 +76,15 @@ object listBodyMod {
       
       inline def setFilteredItems(value: js.Array[RecordType]): Self = StObject.set(x, "filteredItems", value.asInstanceOf[js.Any])
       
-      inline def setFilteredItemsVarargs(value: RecordType*): Self = StObject.set(x, "filteredItems", js.Array(value :_*))
+      inline def setFilteredItemsVarargs(value: RecordType*): Self = StObject.set(x, "filteredItems", js.Array(value*))
       
       inline def setFilteredRenderItems(value: js.Array[RenderedItem[RecordType]]): Self = StObject.set(x, "filteredRenderItems", value.asInstanceOf[js.Any])
       
-      inline def setFilteredRenderItemsVarargs(value: RenderedItem[RecordType]*): Self = StObject.set(x, "filteredRenderItems", js.Array(value :_*))
+      inline def setFilteredRenderItemsVarargs(value: RenderedItem[RecordType]*): Self = StObject.set(x, "filteredRenderItems", js.Array(value*))
       
       inline def setSelectedKeys(value: js.Array[String]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
       
-      inline def setSelectedKeysVarargs(value: String*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
+      inline def setSelectedKeysVarargs(value: String*): Self = StObject.set(x, "selectedKeys", js.Array(value*))
     }
   }
   

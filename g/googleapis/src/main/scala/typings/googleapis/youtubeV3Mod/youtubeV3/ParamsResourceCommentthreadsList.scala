@@ -1,9 +1,5 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,84 +9,57 @@ trait ParamsResourceCommentthreadsList
      with StandardParameters {
   
   /**
-    * The allThreadsRelatedToChannelId parameter instructs the API to return
-    * all comment threads associated with the specified channel. The response
-    * can include comments about the channel or about the channel's videos.
+    * Returns the comment threads of all videos of the channel and the channel comments as well.
     */
   var allThreadsRelatedToChannelId: js.UndefOr[String] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The channelId parameter instructs the API to return comment threads
-    * containing comments about the specified channel. (The response will not
-    * include comments left on videos that the channel uploaded.)
+    * Returns the comment threads for all the channel comments (ie does not include comments left on videos).
     */
   var channelId: js.UndefOr[String] = js.undefined
   
   /**
-    * The id parameter specifies a comma-separated list of comment thread IDs
-    * for the resources that should be retrieved.
+    * Returns the comment threads with the given IDs for Stubby or Apiary.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The maxResults parameter specifies the maximum number of items that
-    * should be returned in the result set.  Note: This parameter is not
-    * supported for use in conjunction with the id parameter.
+    * The *maxResults* parameter specifies the maximum number of items that should be returned in the result set.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * Set this parameter to limit the returned comment threads to a particular
-    * moderation state.  Note: This parameter is not supported for use in
-    * conjunction with the id parameter.
+    * Limits the returned comment threads to those with the specified moderation status. Not compatible with the 'id' filter. Valid values: published, heldForReview, likelySpam.
     */
   var moderationStatus: js.UndefOr[String] = js.undefined
   
   /**
-    * The order parameter specifies the order in which the API response should
-    * list comment threads. Valid values are:  - time - Comment threads are
-    * ordered by time. This is the default behavior. - relevance - Comment
-    * threads are ordered by relevance.Note: This parameter is not supported
-    * for use in conjunction with the id parameter.
+    *
     */
   var order: js.UndefOr[String] = js.undefined
   
   /**
-    * The pageToken parameter identifies a specific page in the result set that
-    * should be returned. In an API response, the nextPageToken property
-    * identifies the next page of the result that can be retrieved.  Note: This
-    * parameter is not supported for use in conjunction with the id parameter.
+    * The *pageToken* parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The part parameter specifies a comma-separated list of one or more
-    * commentThread resource properties that the API response will include.
+    * The *part* parameter specifies a comma-separated list of one or more commentThread resource properties that the API response will include.
     */
-  var part: js.UndefOr[String] = js.undefined
+  var part: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The searchTerms parameter instructs the API to limit the API response to
-    * only contain comments that contain the specified search terms.  Note:
-    * This parameter is not supported for use in conjunction with the id
-    * parameter.
+    * Limits the returned comment threads to those matching the specified key words. Not compatible with the 'id' filter.
     */
   var searchTerms: js.UndefOr[String] = js.undefined
   
   /**
-    * Set this parameter's value to html or plainText to instruct the API to
-    * return the comments left by users in html formatted or in plain text.
+    * The requested text format for the returned comments.
     */
   var textFormat: js.UndefOr[String] = js.undefined
   
   /**
-    * The videoId parameter instructs the API to return comment threads
-    * associated with the specified video ID.
+    * Returns the comment threads of the specified video.
     */
   var videoId: js.UndefOr[String] = js.undefined
 }
@@ -107,17 +76,15 @@ object ParamsResourceCommentthreadsList {
     
     inline def setAllThreadsRelatedToChannelIdUndefined: Self = StObject.set(x, "allThreadsRelatedToChannelId", js.undefined)
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Array[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -135,9 +102,11 @@ object ParamsResourceCommentthreadsList {
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: js.Array[String]): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
     inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
+    
+    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value*))
     
     inline def setSearchTerms(value: String): Self = StObject.set(x, "searchTerms", value.asInstanceOf[js.Any])
     

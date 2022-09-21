@@ -9,7 +9,7 @@ object featuresMod {
   
   @JSImport("rot-js/lib/map/features", "Corridor")
   @js.native
-  class Corridor protected ()
+  open class Corridor protected ()
     extends StObject
        with Feature {
     def this(startX: Double, startY: Double, endX: Double, endY: Double) = this()
@@ -47,7 +47,7 @@ object featuresMod {
   
   @JSImport("rot-js/lib/map/features", "Room")
   @js.native
-  class Room protected ()
+  open class Room protected ()
     extends StObject
        with Feature {
     def this(x1: Double, y1: Double, x2: Double, y2: Double) = this()

@@ -33,6 +33,6 @@ object Page {
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: ValueHolder*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ValueHolder*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

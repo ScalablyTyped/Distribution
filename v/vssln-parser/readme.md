@@ -11,9 +11,9 @@ Parses Visual Studio Solution (sln) files and returns information about projects
 | Full name          | vssln-parser |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 1628 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 621.6666666666666 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/mhusseini/vssln-parser)

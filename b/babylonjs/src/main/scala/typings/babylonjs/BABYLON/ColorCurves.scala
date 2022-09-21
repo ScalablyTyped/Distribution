@@ -7,69 +7,69 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ColorCurves extends StObject {
   
-  /* private */ var _dirty: js.Any = js.native
+  /* private */ var _dirty: Any = js.native
   
-  /* private */ var _globalCurve: js.Any = js.native
+  /**
+    * Returns color grading data based on a hue, density, saturation and exposure value.
+    * @param hue
+    * @param density
+    * @param saturation The saturation.
+    * @param exposure The exposure.
+    * @param result The result data container.
+    */
+  /* private */ var _getColorGradingDataToRef: Any = js.native
   
-  /* private */ var _globalDensity: js.Any = js.native
+  /* private */ var _globalCurve: Any = js.native
   
-  /* private */ var _globalExposure: js.Any = js.native
+  /* private */ var _globalDensity: Any = js.native
   
-  /* private */ var _globalHue: js.Any = js.native
+  /* private */ var _globalExposure: Any = js.native
   
-  /* private */ var _globalSaturation: js.Any = js.native
+  /* private */ var _globalHue: Any = js.native
   
-  /* private */ var _highlightsCurve: js.Any = js.native
+  /* private */ var _globalSaturation: Any = js.native
   
-  /* private */ var _highlightsDensity: js.Any = js.native
+  /* private */ var _highlightsCurve: Any = js.native
   
-  /* private */ var _highlightsExposure: js.Any = js.native
+  /* private */ var _highlightsDensity: Any = js.native
   
-  /* private */ var _highlightsHue: js.Any = js.native
+  /* private */ var _highlightsExposure: Any = js.native
   
-  /* private */ var _highlightsSaturation: js.Any = js.native
+  /* private */ var _highlightsHue: Any = js.native
   
-  /* private */ var _midtonesCurve: js.Any = js.native
+  /* private */ var _highlightsSaturation: Any = js.native
   
-  /* private */ var _midtonesDensity: js.Any = js.native
+  /* private */ var _midtonesCurve: Any = js.native
   
-  /* private */ var _midtonesExposure: js.Any = js.native
+  /* private */ var _midtonesDensity: Any = js.native
   
-  /* private */ var _midtonesHue: js.Any = js.native
+  /* private */ var _midtonesExposure: Any = js.native
   
-  /* private */ var _midtonesSaturation: js.Any = js.native
+  /* private */ var _midtonesHue: Any = js.native
   
-  /* private */ var _negativeCurve: js.Any = js.native
+  /* private */ var _midtonesSaturation: Any = js.native
   
-  /* private */ var _positiveCurve: js.Any = js.native
+  /* private */ var _negativeCurve: Any = js.native
   
-  /* private */ var _shadowsCurve: js.Any = js.native
+  /* private */ var _positiveCurve: Any = js.native
   
-  /* private */ var _shadowsDensity: js.Any = js.native
+  /* private */ var _shadowsCurve: Any = js.native
   
-  /* private */ var _shadowsExposure: js.Any = js.native
+  /* private */ var _shadowsDensity: Any = js.native
   
-  /* private */ var _shadowsHue: js.Any = js.native
+  /* private */ var _shadowsExposure: Any = js.native
   
-  /* private */ var _shadowsSaturation: js.Any = js.native
+  /* private */ var _shadowsHue: Any = js.native
   
-  /* private */ var _tempColor: js.Any = js.native
+  /* private */ var _shadowsSaturation: Any = js.native
+  
+  /* private */ var _tempColor: Any = js.native
   
   /**
     * Returns the class name
     * @returns The class name
     */
   def getClassName(): String = js.native
-  
-  /**
-    * Returns color grading data based on a hue, density, saturation and exposure value.
-    * @param filterHue The hue of the color filter.
-    * @param filterDensity The density of the color filter.
-    * @param saturation The saturation.
-    * @param exposure The exposure.
-    * @param result The result data container.
-    */
-  /* private */ var getColorGradingDataToRef: js.Any = js.native
   
   /**
     * Gets the global Density value.
@@ -211,9 +211,9 @@ trait ColorCurves extends StObject {
   
   /**
     * Serializes the current color curve instance to a json representation.
-    * @return a JSON representation
+    * @returns a JSON representation
     */
-  def serialize(): js.Any = js.native
+  def serialize(): Any = js.native
   
   /**
     * Gets the shadows Density value.

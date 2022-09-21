@@ -42,6 +42,6 @@ object SuggestModel {
     
     inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
     
-    inline def setSuggestionsVarargs(value: SuggestionMatch*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: SuggestionMatch*): Self = StObject.set(x, "suggestions", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ object videogameAssetMod {
   
   @JSImport("material-ui/svg-icons/hardware/videogame-asset", JSImport.Default)
   @js.native
-  class default () extends HardwareVideogameAsset
+  open class default () extends HardwareVideogameAsset
   
   @JSImport("material-ui/svg-icons/hardware/videogame-asset", "HardwareVideogameAsset")
   @js.native
-  class HardwareVideogameAsset ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareVideogameAsset ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

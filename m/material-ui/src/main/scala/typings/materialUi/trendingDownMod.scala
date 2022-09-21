@@ -10,10 +10,10 @@ object trendingDownMod {
   
   @JSImport("material-ui/svg-icons/action/trending-down", JSImport.Default)
   @js.native
-  class default () extends ActionTrendingDown
+  open class default () extends ActionTrendingDown
   
   @JSImport("material-ui/svg-icons/action/trending-down", "ActionTrendingDown")
   @js.native
-  class ActionTrendingDown ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionTrendingDown ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

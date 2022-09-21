@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__MaterialUI.FontIcon")
 @js.native
-class FontIcon ()
-  extends Component[FontIconProps, js.Object, js.Any]
+open class FontIcon ()
+  extends Component[FontIconProps, js.Object, Any]

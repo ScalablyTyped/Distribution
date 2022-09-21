@@ -21,8 +21,11 @@ trait Snapshot extends StObject {
   /** The project this snapshot belongs to. */
   var projectId: js.UndefOr[String] = js.undefined
   
-  /** PubSub snapshot metadata. */
+  /** Pub/Sub snapshot metadata. */
   var pubsubMetadata: js.UndefOr[js.Array[PubsubSnapshotMetadata]] = js.undefined
+  
+  /** Cloud region where this snapshot lives in, e.g., "us-central1". */
+  var region: js.UndefOr[String] = js.undefined
   
   /** The job this snapshot was created from. */
   var sourceJobId: js.UndefOr[String] = js.undefined
@@ -66,7 +69,11 @@ object Snapshot {
     
     inline def setPubsubMetadataUndefined: Self = StObject.set(x, "pubsubMetadata", js.undefined)
     
-    inline def setPubsubMetadataVarargs(value: PubsubSnapshotMetadata*): Self = StObject.set(x, "pubsubMetadata", js.Array(value :_*))
+    inline def setPubsubMetadataVarargs(value: PubsubSnapshotMetadata*): Self = StObject.set(x, "pubsubMetadata", js.Array(value*))
+    
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     inline def setSourceJobId(value: String): Self = StObject.set(x, "sourceJobId", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for statsd-client
 
-Typings are for version v0.4.0
+Typings are for version v0.4.7
 
 ## Library description:
 Yet another client for Etsy's statsd
@@ -10,15 +10,12 @@ Yet another client for Etsy's statsd
 | ------------------ | :-------------: |
 | Full name          | statsd-client |
 | Keywords           | statsd, client, metrics, udp, tcp |
-| # releases         | 4 |
-| # dependents       | 71 |
-| # downloads        | 2038895 |
-| # stars            | 9 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 527650.0 |
+| # stars            | 174.0 |
 
 ## Links
-- [Homepage](https://github.com/msiebuhr/node-statsd-client)
-- [Bugs](https://github.com/msiebuhr/node-statsd-client/issues)
-- [Repository](https://github.com/msiebuhr/node-statsd-client)
 - [Npm](https://www.npmjs.com/package/statsd-client)
     
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__teamwork
 
-Typings are for version 5.1.0
+Typings are for version 6.0.0
 
 ## Library description:
 Wait for multiple callback
@@ -10,10 +10,10 @@ Wait for multiple callback
 | ------------------ | :-------------: |
 | Full name          | @hapi/teamwork |
 | Keywords           | async, flow control, callback |
-| # releases         | 6 |
-| # dependents       | 8 |
-| # downloads        | 14952211 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2827175.3333333335 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/teamwork#readme)

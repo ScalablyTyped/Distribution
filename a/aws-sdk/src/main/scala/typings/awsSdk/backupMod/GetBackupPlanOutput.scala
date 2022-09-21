@@ -29,7 +29,7 @@ trait GetBackupPlanOutput extends StObject {
   /**
     * The date and time that a backup plan is created, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CreationDate: js.UndefOr[timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A unique string that identifies the request and allows failed requests to be retried without the risk of running the operation twice.
@@ -39,12 +39,12 @@ trait GetBackupPlanOutput extends StObject {
   /**
     * The date and time that a backup plan is deleted, in Unix format and Coordinated Universal Time (UTC). The value of DeletionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var DeletionDate: js.UndefOr[timestamp] = js.undefined
+  var DeletionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The last time a job to back up resources was run with this backup plan. A date and time, in Unix format and Coordinated Universal Time (UTC). The value of LastExecutionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var LastExecutionDate: js.UndefOr[timestamp] = js.undefined
+  var LastExecutionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Unique, randomly generated, Unicode, UTF-8 encoded strings that are at most 1,024 bytes long. Version IDs cannot be edited.
@@ -64,7 +64,7 @@ object GetBackupPlanOutput {
     
     inline def setAdvancedBackupSettingsUndefined: Self = StObject.set(x, "AdvancedBackupSettings", js.undefined)
     
-    inline def setAdvancedBackupSettingsVarargs(value: AdvancedBackupSetting*): Self = StObject.set(x, "AdvancedBackupSettings", js.Array(value :_*))
+    inline def setAdvancedBackupSettingsVarargs(value: AdvancedBackupSetting*): Self = StObject.set(x, "AdvancedBackupSettings", js.Array(value*))
     
     inline def setBackupPlan(value: BackupPlan): Self = StObject.set(x, "BackupPlan", value.asInstanceOf[js.Any])
     
@@ -78,7 +78,7 @@ object GetBackupPlanOutput {
     
     inline def setBackupPlanUndefined: Self = StObject.set(x, "BackupPlan", js.undefined)
     
-    inline def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -86,11 +86,11 @@ object GetBackupPlanOutput {
     
     inline def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
     
-    inline def setDeletionDate(value: timestamp): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
+    inline def setDeletionDate(value: js.Date): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
     
     inline def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
     
-    inline def setLastExecutionDate(value: timestamp): Self = StObject.set(x, "LastExecutionDate", value.asInstanceOf[js.Any])
+    inline def setLastExecutionDate(value: js.Date): Self = StObject.set(x, "LastExecutionDate", value.asInstanceOf[js.Any])
     
     inline def setLastExecutionDateUndefined: Self = StObject.set(x, "LastExecutionDate", js.undefined)
     

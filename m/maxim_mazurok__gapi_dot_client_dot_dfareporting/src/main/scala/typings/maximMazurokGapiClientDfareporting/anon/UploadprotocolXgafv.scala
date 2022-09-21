@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDfareporting.anon
 
-import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.Creative
+import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.CreativeGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +23,9 @@ trait UploadprotocolXgafv extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
+  /** CreativeGroup ID. */
+  var id: String
+  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
@@ -39,7 +42,7 @@ trait UploadprotocolXgafv extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Creative
+  var resource: CreativeGroup
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +52,8 @@ trait UploadprotocolXgafv extends StObject {
 }
 object UploadprotocolXgafv {
   
-  inline def apply(profileId: String, resource: Creative): UploadprotocolXgafv = {
-    val __obj = js.Dynamic.literal(profileId = profileId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(id: String, profileId: String, resource: CreativeGroup): UploadprotocolXgafv = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], profileId = profileId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadprotocolXgafv]
   }
   
@@ -76,6 +79,8 @@ object UploadprotocolXgafv {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -94,7 +99,7 @@ object UploadprotocolXgafv {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Creative): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: CreativeGroup): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

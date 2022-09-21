@@ -9,7 +9,7 @@ object flipLeftRightGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/flip_left_right_gpu", "FlipLeftRightProgram")
   @js.native
-  class FlipLeftRightProgram protected ()
+  open class FlipLeftRightProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(imageShape: js.Tuple4[Double, Double, Double, Double]) = this()

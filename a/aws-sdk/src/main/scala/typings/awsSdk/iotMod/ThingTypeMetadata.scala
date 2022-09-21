@@ -9,7 +9,7 @@ trait ThingTypeMetadata extends StObject {
   /**
     * The date and time when the thing type was created.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Whether the thing type is deprecated. If true, no new things could be associated with this type.
@@ -19,7 +19,7 @@ trait ThingTypeMetadata extends StObject {
   /**
     * The date and time when the thing type was deprecated.
     */
-  var deprecationDate: js.UndefOr[DeprecationDate] = js.undefined
+  var deprecationDate: js.UndefOr[js.Date] = js.undefined
 }
 object ThingTypeMetadata {
   
@@ -30,7 +30,7 @@ object ThingTypeMetadata {
   
   extension [Self <: ThingTypeMetadata](x: Self) {
     
-    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
@@ -38,7 +38,7 @@ object ThingTypeMetadata {
     
     inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
-    inline def setDeprecationDate(value: DeprecationDate): Self = StObject.set(x, "deprecationDate", value.asInstanceOf[js.Any])
+    inline def setDeprecationDate(value: js.Date): Self = StObject.set(x, "deprecationDate", value.asInstanceOf[js.Any])
     
     inline def setDeprecationDateUndefined: Self = StObject.set(x, "deprecationDate", js.undefined)
   }

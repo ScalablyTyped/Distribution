@@ -8,7 +8,7 @@ object ellermazeMod {
   
   @JSImport("rot-js/lib/map/ellermaze", JSImport.Default)
   @js.native
-  class default () extends EllerMaze
+  open class default () extends EllerMaze
   
   @js.native
   trait EllerMaze

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "CommonTimeController")
 @js.native
-class CommonTimeController ()
+open class CommonTimeController ()
   extends typings.wonderJs.commonTimeControllerMod.CommonTimeController
 /* static members */
 object CommonTimeController {

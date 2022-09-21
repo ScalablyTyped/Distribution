@@ -23,22 +23,25 @@ trait PlotLinearregressionslopeParamsOptions extends StObject {
   /**
     * (Highstock) Unit (in milliseconds) for the x axis distances used to
     * compute the regression line paramters (slope & intercept) for every
-    * range. In Highstock the x axis values are always represented in
+    * range. In Highcharts Stock the x axis values are always represented in
     * milliseconds which may cause that distances between points are "big"
     * integer numbers.
     *
-    * Highstock's linear regression algorithm (least squares method) will
-    * utilize these "big" integers for finding the slope and the intercept of
-    * the regression line for each period. In consequence, this value may be a
-    * very "small" decimal number that's hard to interpret by a human.
+    * Highcharts Stock's linear regression algorithm (least squares method)
+    * will utilize these "big" integers for finding the slope and the intercept
+    * of the regression line for each period. In consequence, this value may be
+    * a very "small" decimal number that's hard to interpret by a human.
     *
     * For instance: `xAxisUnit` equealed to `86400000` ms (1 day) forces the
     * algorithm to treat `86400000` as `1` while computing the slope and the
     * intercept. This may enchance the legiblitity of the indicator's values.
     *
     * Default value is the closest distance between two data points.
+    *
+    * In `v9.0.2`, the default value has been changed from `undefined` to
+    * `null`.
     */
-  var xAxisUnit: js.UndefOr[Double] = js.undefined
+  var xAxisUnit: js.UndefOr[Double | Null] = js.undefined
 }
 object PlotLinearregressionslopeParamsOptions {
   
@@ -58,6 +61,8 @@ object PlotLinearregressionslopeParamsOptions {
     inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     inline def setXAxisUnit(value: Double): Self = StObject.set(x, "xAxisUnit", value.asInstanceOf[js.Any])
+    
+    inline def setXAxisUnitNull: Self = StObject.set(x, "xAxisUnit", null)
     
     inline def setXAxisUnitUndefined: Self = StObject.set(x, "xAxisUnit", js.undefined)
   }

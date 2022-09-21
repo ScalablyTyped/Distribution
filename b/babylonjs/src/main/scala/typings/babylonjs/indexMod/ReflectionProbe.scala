@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "ReflectionProbe")
 @js.native
-class ReflectionProbe protected ()
+open class ReflectionProbe protected ()
   extends typings.babylonjs.probesIndexMod.ReflectionProbe {
   /**
     * Creates a new reflection probe
@@ -15,7 +15,8 @@ class ReflectionProbe protected ()
     * @param size defines the texture resolution (for each face)
     * @param scene defines the hosting scene
     * @param generateMipMaps defines if mip maps should be generated automatically (true by default)
-    * @param useFloat defines if HDR data (flaot data) should be used to store colors (false by default)
+    * @param useFloat defines if HDR data (float data) should be used to store colors (false by default)
+    * @param linearSpace defines if the probe should be generated in linear space or not (false by default)
     */
   def this(
     /** defines the name of the probe */
@@ -46,6 +47,42 @@ class ReflectionProbe protected ()
     generateMipMaps: Unit,
     useFloat: Boolean
   ) = this()
+  def this(
+    /** defines the name of the probe */
+  name: String,
+    size: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    generateMipMaps: Boolean,
+    useFloat: Boolean,
+    linearSpace: Boolean
+  ) = this()
+  def this(
+    /** defines the name of the probe */
+  name: String,
+    size: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    generateMipMaps: Boolean,
+    useFloat: Unit,
+    linearSpace: Boolean
+  ) = this()
+  def this(
+    /** defines the name of the probe */
+  name: String,
+    size: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    generateMipMaps: Unit,
+    useFloat: Boolean,
+    linearSpace: Boolean
+  ) = this()
+  def this(
+    /** defines the name of the probe */
+  name: String,
+    size: Double,
+    scene: typings.babylonjs.sceneMod.Scene,
+    generateMipMaps: Unit,
+    useFloat: Unit,
+    linearSpace: Boolean
+  ) = this()
 }
 /* static members */
 object ReflectionProbe {
@@ -61,5 +98,5 @@ object ReflectionProbe {
     * @param rootUrl Define the root url of the parsing sequence in the case of relative dependencies
     * @returns The parsed reflection probe if successful
     */
-  inline def Parse(parsedReflectionProbe: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.reflectionProbeMod.ReflectionProbe] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedReflectionProbe.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.reflectionProbeMod.ReflectionProbe]]
+  inline def Parse(parsedReflectionProbe: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.reflectionProbeMod.ReflectionProbe] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedReflectionProbe.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.reflectionProbeMod.ReflectionProbe]]
 }

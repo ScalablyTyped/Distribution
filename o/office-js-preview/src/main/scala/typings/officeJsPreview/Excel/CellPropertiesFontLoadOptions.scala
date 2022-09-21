@@ -5,89 +5,89 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Specifies which properties to load on the `format.font` object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait CellPropertiesFontLoadOptions extends StObject {
   
   /**
+    * Specifies whether to load the `bold` property.
     *
-    * Specifies whether to load on the `bold` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies whether to load the `color` property.
     *
-    * Specifies whether to load on the `color` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies whether to load the `italic` property.
     *
-    * Specifies whether to load on the `italic` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies whether to load the `name` property.
     *
-    * Specifies whether to load on the `name` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies whether to load the `size` property.
     *
-    * Specifies whether to load on the `size` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var size: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies whether to load the `strikethrough` property.
     *
-    * Specifies whether to load on the `strikethrough` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var strikethrough: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies whether to load the `subscript` property.
     *
-    * Specifies whether to load on the `subscript` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var subscript: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies whether to load the `superscript` property.
     *
-    * Specifies whether to load on the `superscript` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var superscript: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies whether to load the `tintAndShade` property.
     *
-    * Specifies whether to load on the `tintAndShade` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies whether to load the `underline` property.
     *
-    * Specifies whether to load on the `underline` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var underline: js.UndefOr[Boolean] = js.undefined

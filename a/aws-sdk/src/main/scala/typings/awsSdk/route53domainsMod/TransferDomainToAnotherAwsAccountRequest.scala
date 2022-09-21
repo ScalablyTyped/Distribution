@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TransferDomainToAnotherAwsAccountRequest extends StObject {
   
   /**
-    * The account ID of the AWS account that you want to transfer the domain to, for example, 111122223333.
+    * The account ID of the Amazon Web Services account that you want to transfer the domain to, for example, 111122223333.
     */
   var AccountId: typings.awsSdk.route53domainsMod.AccountId
   
   /**
-    * The name of the domain that you want to transfer from the current AWS account to another account.
+    * The name of the domain that you want to transfer from the current Amazon Web Services account to another account.
     */
   var DomainName: typings.awsSdk.route53domainsMod.DomainName
 }

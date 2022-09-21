@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("scrivito", "ImageTag")
 @js.native
-class ImageTag protected ()
-  extends Component[ImageTagProps, js.Any, js.Any] {
+open class ImageTag protected () extends Component[ImageTagProps, Any, Any] {
   def this(props: ImageTagProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ImageTagProps, context: js.Any) = this()
+  def this(props: ImageTagProps, context: Any) = this()
 }

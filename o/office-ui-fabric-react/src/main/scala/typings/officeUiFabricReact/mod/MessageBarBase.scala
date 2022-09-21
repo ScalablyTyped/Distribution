@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "MessageBarBase")
 @js.native
-class MessageBarBase protected ()
+open class MessageBarBase protected ()
   extends typings.officeUiFabricReact.libMessageBarMod.MessageBarBase {
   def this(props: IMessageBarProps) = this()
 }

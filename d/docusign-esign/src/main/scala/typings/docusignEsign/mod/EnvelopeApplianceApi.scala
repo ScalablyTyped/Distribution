@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("docusign-esign", "EnvelopeApplianceApi")
 @js.native
-class EnvelopeApplianceApi protected () extends StObject {
+open class EnvelopeApplianceApi () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   def getApplianceInfo(accountId: String, envelopeId: String): js.Promise[DisplayApplianceInfo] = js.native

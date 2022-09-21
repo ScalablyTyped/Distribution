@@ -10,15 +10,12 @@ Has country codes for all countries in the world. Please send a PR if you see so
 | ------------------ | :-------------: |
 | Full name          | country-telephone-data |
 | Keywords           | country, telephone, data, format, code |
-| # releases         | 4 |
-| # dependents       | 23 |
-| # downloads        | 3490149 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 144398.0 |
+| # stars            | 39.0 |
 
 ## Links
-- [Homepage](https://github.com/mukeshsoni/country-telephone-data#readme)
-- [Bugs](https://github.com/mukeshsoni/country-telephone-data/issues)
-- [Repository](https://github.com/mukeshsoni/country-telephone-data)
 - [Npm](https://www.npmjs.com/package/country-telephone-data)
     
 

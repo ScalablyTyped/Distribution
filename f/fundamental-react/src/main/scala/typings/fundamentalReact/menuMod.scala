@@ -13,7 +13,6 @@ import typings.fundamentalReact.fundamentalReactNumbers.`5`
 import typings.fundamentalReact.fundamentalReactNumbers.`6`
 import typings.fundamentalReact.fundamentalReactStrings.Menu
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import typings.std.HTMLButtonElement
@@ -31,8 +30,8 @@ object menuMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Menu/Menu.MenuProps> & {  displayName :'Menu',   Group :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Menu/Menu.MenuGroupProps> & {  displayName :'Menu.Group'},   Item :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Menu/Menu.MenuItemProps> & {  displayName :'Menu.Item'},   List :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Menu/Menu.MenuListProps> & {  displayName :'Menu.List'}} */
   object default {
     
-    inline def apply(props: PropsWithChildren[MenuProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildren[MenuProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: MenuProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: MenuProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("fundamental-react/lib/Menu/Menu", JSImport.Default)
     @js.native
@@ -55,8 +54,8 @@ object menuMod {
     
     @JSImport("fundamental-react/lib/Menu/Menu", "default.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/Menu/Menu", "default.defaultProps")
     @js.native
@@ -80,7 +79,7 @@ object menuMod {
     
     var headingLevel: js.UndefOr[`2` | `3` | `4` | `5` | `6`] = js.undefined
     
-    var titleProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var titleProps: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     @JSName("title")
     var title_MenuGroupProps: String
@@ -100,7 +99,7 @@ object menuMod {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      inline def setTitleProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
+      inline def setTitleProps(value: StringDictionary[Any]): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
       
       inline def setTitlePropsUndefined: Self = StObject.set(x, "titleProps", js.undefined)
     }
@@ -116,7 +115,7 @@ object menuMod {
     
     var addonBefore: js.UndefOr[String] = js.undefined
     
-    var addonProps: js.UndefOr[js.Any] = js.undefined
+    var addonProps: js.UndefOr[Any] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -133,7 +132,7 @@ object menuMod {
     
     var url: js.UndefOr[String] = js.undefined
     
-    var urlProps: js.UndefOr[js.Any] = js.undefined
+    var urlProps: js.UndefOr[Any] = js.undefined
   }
   object MenuItemProps {
     
@@ -156,7 +155,7 @@ object menuMod {
       
       inline def setAddonBeforeUndefined: Self = StObject.set(x, "addonBefore", js.undefined)
       
-      inline def setAddonProps(value: js.Any): Self = StObject.set(x, "addonProps", value.asInstanceOf[js.Any])
+      inline def setAddonProps(value: Any): Self = StObject.set(x, "addonProps", value.asInstanceOf[js.Any])
       
       inline def setAddonPropsUndefined: Self = StObject.set(x, "addonProps", js.undefined)
       
@@ -182,7 +181,7 @@ object menuMod {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      inline def setUrlProps(value: js.Any): Self = StObject.set(x, "urlProps", value.asInstanceOf[js.Any])
+      inline def setUrlProps(value: Any): Self = StObject.set(x, "urlProps", value.asInstanceOf[js.Any])
       
       inline def setUrlPropsUndefined: Self = StObject.set(x, "urlProps", js.undefined)
       

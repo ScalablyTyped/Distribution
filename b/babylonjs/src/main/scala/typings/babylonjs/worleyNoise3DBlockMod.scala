@@ -10,7 +10,7 @@ object worleyNoise3DBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/worleyNoise3DBlock", "WorleyNoise3DBlock")
   @js.native
-  class WorleyNoise3DBlock protected () extends NodeMaterialBlock {
+  open class WorleyNoise3DBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new WorleyNoise3DBlock
       * @param name defines the block name
@@ -34,5 +34,15 @@ object worleyNoise3DBlockMod {
       * Gets the seed input component
       */
     def seed: NodeMaterialConnectionPoint = js.native
+    
+    /**
+      * Gets the x component
+      */
+    def x: NodeMaterialConnectionPoint = js.native
+    
+    /**
+      * Gets the y component
+      */
+    def y: NodeMaterialConnectionPoint = js.native
   }
 }

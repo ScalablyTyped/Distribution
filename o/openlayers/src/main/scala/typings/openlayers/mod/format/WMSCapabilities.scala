@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @api
   */
-class WMSCapabilities () extends XML {
+open class WMSCapabilities () extends XML {
   
   def read(source: String): GlobalObject = js.native
   /**

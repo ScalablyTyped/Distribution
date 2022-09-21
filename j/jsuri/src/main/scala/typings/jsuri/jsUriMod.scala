@@ -13,7 +13,7 @@ object jsUriMod {
     * @constructor
     * @param {string} str
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with typings.jsuri.jsuri.Uri {
     def this(str: String) = this()

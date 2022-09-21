@@ -38,12 +38,12 @@ object InstanceResizePolicy {
     
     inline def setInstancesToProtectUndefined: Self = StObject.set(x, "InstancesToProtect", js.undefined)
     
-    inline def setInstancesToProtectVarargs(value: InstanceId*): Self = StObject.set(x, "InstancesToProtect", js.Array(value :_*))
+    inline def setInstancesToProtectVarargs(value: InstanceId*): Self = StObject.set(x, "InstancesToProtect", js.Array(value*))
     
     inline def setInstancesToTerminate(value: EC2InstanceIdsList): Self = StObject.set(x, "InstancesToTerminate", value.asInstanceOf[js.Any])
     
     inline def setInstancesToTerminateUndefined: Self = StObject.set(x, "InstancesToTerminate", js.undefined)
     
-    inline def setInstancesToTerminateVarargs(value: InstanceId*): Self = StObject.set(x, "InstancesToTerminate", js.Array(value :_*))
+    inline def setInstancesToTerminateVarargs(value: InstanceId*): Self = StObject.set(x, "InstancesToTerminate", js.Array(value*))
   }
 }

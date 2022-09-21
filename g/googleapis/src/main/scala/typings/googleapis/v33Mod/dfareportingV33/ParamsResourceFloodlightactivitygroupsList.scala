@@ -1,9 +1,5 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,28 +9,17 @@ trait ParamsResourceFloodlightactivitygroupsList
      with StandardParameters {
   
   /**
-    * Select only floodlight activity groups with the specified advertiser ID.
-    * Must specify either advertiserId or floodlightConfigurationId for a
-    * non-empty result.
+    * Select only floodlight activity groups with the specified advertiser ID. Must specify either advertiserId or floodlightConfigurationId for a non-empty result.
     */
   var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Select only floodlight activity groups with the specified floodlight
-    * configuration ID. Must specify either advertiserId, or
-    * floodlightConfigurationId for a non-empty result.
+    * Select only floodlight activity groups with the specified floodlight configuration ID. Must specify either advertiserId, or floodlightConfigurationId for a non-empty result.
     */
   var floodlightConfigurationId: js.UndefOr[String] = js.undefined
   
   /**
-    * Select only floodlight activity groups with the specified IDs. Must
-    * specify either advertiserId or floodlightConfigurationId for a non-empty
-    * result.
+    * Select only floodlight activity groups with the specified IDs. Must specify either advertiserId or floodlightConfigurationId for a non-empty result.
     */
   var ids: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -54,14 +39,7 @@ trait ParamsResourceFloodlightactivitygroupsList
   var profileId: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows searching for objects by name or ID. Wildcards (*) are allowed.
-    * For example, "floodlightactivitygroup*2015" will return objects with
-    * names like "floodlightactivitygroup June 2015", "floodlightactivitygroup
-    * April 2015", or simply "floodlightactivitygroup 2015". Most of the
-    * searches also add wildcards implicitly at the start and the end of the
-    * search string. For example, a search string of "floodlightactivitygroup"
-    * will match objects with name "my floodlightactivitygroup activity",
-    * "floodlightactivitygroup 2015", or simply "floodlightactivitygroup".
+    * Allows searching for objects by name or ID. Wildcards (*) are allowed. For example, "floodlightactivitygroup*2015" will return objects with names like "floodlightactivitygroup June 2015", "floodlightactivitygroup April 2015", or simply "floodlightactivitygroup 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "floodlightactivitygroup" will match objects with name "my floodlightactivitygroup activity", "floodlightactivitygroup 2015", or simply "floodlightactivitygroup".
     */
   var searchString: js.UndefOr[String] = js.undefined
   
@@ -76,8 +54,7 @@ trait ParamsResourceFloodlightactivitygroupsList
   var sortOrder: js.UndefOr[String] = js.undefined
   
   /**
-    * Select only floodlight activity groups with the specified floodlight
-    * activity group type.
+    * Select only floodlight activity groups with the specified floodlight activity group type.
     */
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -94,10 +71,6 @@ object ParamsResourceFloodlightactivitygroupsList {
     
     inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setFloodlightConfigurationId(value: String): Self = StObject.set(x, "floodlightConfigurationId", value.asInstanceOf[js.Any])
     
     inline def setFloodlightConfigurationIdUndefined: Self = StObject.set(x, "floodlightConfigurationId", js.undefined)
@@ -106,7 +79,7 @@ object ParamsResourceFloodlightactivitygroupsList {
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ object mod {
   
   trait Connection
     extends StObject
-       with /* address */ StringDictionary[js.Any] {
+       with /* address */ StringDictionary[Any] {
     
     var startedAt: String
   }
@@ -45,21 +45,21 @@ object mod {
   }
   object Consumer {
     
-    inline def apply(consume: (String, ConsumerCallback[js.Any]) => Unit): Consumer = {
+    inline def apply(consume: (String, ConsumerCallback[Any]) => Unit): Consumer = {
       val __obj = js.Dynamic.literal(consume = js.Any.fromFunction2(consume))
       __obj.asInstanceOf[Consumer]
     }
     
     extension [Self <: Consumer](x: Self) {
       
-      inline def setConsume(value: (String, ConsumerCallback[js.Any]) => Unit): Self = StObject.set(x, "consume", js.Any.fromFunction2(value))
+      inline def setConsume(value: (String, ConsumerCallback[Any]) => Unit): Self = StObject.set(x, "consume", js.Any.fromFunction2(value))
     }
   }
   
   @js.native
   trait ConsumerCallback[T] extends StObject {
     
-    def apply(args: js.Any*): T = js.native
+    def apply(args: Any*): T = js.native
   }
   
   @js.native
@@ -76,8 +76,8 @@ object mod {
       *
       * @return The consumer response.
       */
-    def publish[T](queueName: String, message: js.Any): js.Promise[T] = js.native
-    def publish[T](queueName: String, message: js.Any, options: ProducerOptions): js.Promise[T] = js.native
+    def publish[T](queueName: String, message: Any): js.Promise[T] = js.native
+    def publish[T](queueName: String, message: Any, options: ProducerOptions): js.Promise[T] = js.native
     
     /**
       * Subscriber to handle messages from a named queue.
@@ -90,23 +90,23 @@ object mod {
   
   trait Logger extends StObject {
     
-    def debug(format: js.Any, args: js.Any*): Unit
+    def debug(format: Any, args: Any*): Unit
     @JSName("debug")
     var debug_Original: LoggerOutput
     
-    def error(format: js.Any, args: js.Any*): Unit
+    def error(format: Any, args: Any*): Unit
     @JSName("error")
     var error_Original: LoggerOutput
     
-    def info(format: js.Any, args: js.Any*): Unit
+    def info(format: Any, args: Any*): Unit
     @JSName("info")
     var info_Original: LoggerOutput
     
-    def log(format: js.Any, args: js.Any*): Unit
+    def log(format: Any, args: Any*): Unit
     @JSName("log")
     var log_Original: LoggerOutput
     
-    def warn(format: js.Any, args: js.Any*): Unit
+    def warn(format: Any, args: Any*): Unit
     @JSName("warn")
     var warn_Original: LoggerOutput
   }
@@ -140,7 +140,7 @@ object mod {
   @js.native
   trait LoggerOutput extends StObject {
     
-    def apply(format: js.Any, args: js.Any*): Unit = js.native
+    def apply(format: Any, args: Any*): Unit = js.native
   }
   
   trait Options extends StObject {
@@ -167,7 +167,7 @@ object mod {
     
     var timeout: js.UndefOr[Double] = js.undefined
     
-    var transport: js.UndefOr[js.Any] = js.undefined
+    var transport: js.UndefOr[Any] = js.undefined
   }
   object Options {
     
@@ -206,7 +206,7 @@ object mod {
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      inline def setTransport(value: js.Any): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: Any): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
       inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     }
@@ -222,8 +222,8 @@ object mod {
       * @param message A message.
       * @return The consumer response.
       */
-    def produce[T](queue: String, message: js.Any): js.Promise[T] = js.native
-    def produce[T](queue: String, message: js.Any, options: ProducerOptions): js.Promise[T] = js.native
+    def produce[T](queue: String, message: Any): js.Promise[T] = js.native
+    def produce[T](queue: String, message: Any, options: ProducerOptions): js.Promise[T] = js.native
   }
   
   trait ProducerOptions extends StObject {

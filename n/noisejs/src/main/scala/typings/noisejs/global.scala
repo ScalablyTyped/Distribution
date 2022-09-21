@@ -15,7 +15,7 @@ object global {
       * @param  {number} seed
       * @return {Noise}       Noise instance
       */
-    class ^ ()
+    open class ^ ()
       extends typings.noisejs.mod.^ {
       def this(seed: Double) = this()
     }

@@ -51,7 +51,7 @@ object DeclareExportDeclaration_ {
     
     inline def setSpecifiersNull: Self = StObject.set(x, "specifiers", null)
     
-    inline def setSpecifiersVarargs(value: (ExportSpecifier_ | ExportNamespaceSpecifier_)*): Self = StObject.set(x, "specifiers", js.Array(value :_*))
+    inline def setSpecifiersVarargs(value: (ExportSpecifier_ | ExportNamespaceSpecifier_)*): Self = StObject.set(x, "specifiers", js.Array(value*))
     
     inline def setType(value: DeclareExportDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

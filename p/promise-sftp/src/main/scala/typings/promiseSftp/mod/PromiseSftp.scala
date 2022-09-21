@@ -1,15 +1,14 @@
 package typings.promiseSftp.mod
 
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
+import typings.node.bufferMod.global.Buffer
 import typings.promiseSftp.anon.Attrs
 import typings.promiseSftp.anon.AutoClose
 import typings.ssh2.mod.SFTPWrapper
 import typings.ssh2Streams.mod.Attributes
 import typings.ssh2Streams.mod.InputAttributes
 import typings.ssh2Streams.mod.Stats
-import typings.std.Date
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ trait PromiseSftp extends StObject {
   /**
     * Same as `#append()`, but appends to `destPath` if it already exists.
     */
-  def append(input: ReadableStream, destPath: String): typings.bluebird.mod.^[Unit] = js.native
+  def append(input: ReadableStream[Any], destPath: String): typings.bluebird.mod.^[Unit] = js.native
   
   def chmod(path: String, mode: String): typings.bluebird.mod.^[Unit] = js.native
   /**
@@ -62,18 +61,18 @@ trait PromiseSftp extends StObject {
     * @param path - The path of the file to create a read stream from.
     * @returns a new `ReadableStream` for `path`.
     */
-  def createReadStream(path: String): typings.bluebird.mod.^[ReadableStream] = js.native
-  def createReadStream(path: String, options: String): typings.bluebird.mod.^[ReadableStream] = js.native
-  def createReadStream(path: String, options: AutoClose): typings.bluebird.mod.^[ReadableStream] = js.native
+  def createReadStream(path: String): typings.bluebird.mod.^[ReadableStream[Any]] = js.native
+  def createReadStream(path: String, options: String): typings.bluebird.mod.^[ReadableStream[Any]] = js.native
+  def createReadStream(path: String, options: AutoClose): typings.bluebird.mod.^[ReadableStream[Any]] = js.native
   
   /**
     * Creates a write stream to a file on the server.
     * @param path - The path of the file to create a write stream to.
     * @returns a new `WriteableStream` for `path`.
     */
-  def createWriteStream(path: String): typings.bluebird.mod.^[WritableStream] = js.native
-  def createWriteStream(path: String, options: String): typings.bluebird.mod.^[WritableStream] = js.native
-  def createWriteStream(path: String, options: AutoClose): typings.bluebird.mod.^[WritableStream] = js.native
+  def createWriteStream(path: String): typings.bluebird.mod.^[WritableStream[Any]] = js.native
+  def createWriteStream(path: String, options: String): typings.bluebird.mod.^[WritableStream[Any]] = js.native
+  def createWriteStream(path: String, options: AutoClose): typings.bluebird.mod.^[WritableStream[Any]] = js.native
   
   /**
     * Closes the connection to the server immediately.
@@ -170,22 +169,22 @@ trait PromiseSftp extends StObject {
     */
   def fstat(handle: Buffer): typings.bluebird.mod.^[Stats] = js.native
   
-  def futimes(handle: Buffer, atime: Double, mtime: Double): typings.bluebird.mod.^[Unit] = js.native
-  def futimes(handle: Buffer, atime: Double, mtime: Date): typings.bluebird.mod.^[Unit] = js.native
-  def futimes(handle: Buffer, atime: Date, mtime: Double): typings.bluebird.mod.^[Unit] = js.native
   /**
     * Set the access and modified times for a resource on the server.
     * @param handle - A resource handle returned from `#open()` or `#fopen()`.
     * @param atime - A Date or unix timestamp representing the new access time for the resource
     * @param mtime - A Date or unix timestamp representing the new modify time for the resource
     */
-  def futimes(handle: Buffer, atime: Date, mtime: Date): typings.bluebird.mod.^[Unit] = js.native
+  def futimes(handle: Buffer, atime: js.Date, mtime: js.Date): typings.bluebird.mod.^[Unit] = js.native
+  def futimes(handle: Buffer, atime: js.Date, mtime: Double): typings.bluebird.mod.^[Unit] = js.native
+  def futimes(handle: Buffer, atime: Double, mtime: js.Date): typings.bluebird.mod.^[Unit] = js.native
+  def futimes(handle: Buffer, atime: Double, mtime: Double): typings.bluebird.mod.^[Unit] = js.native
   
   /**
     * Retrieve a file from the server.
     * @param path - The file to retrieve from the server.
     */
-  def get(path: String): typings.bluebird.mod.^[ReadableStream] = js.native
+  def get(path: String): typings.bluebird.mod.^[ReadableStream[Any]] = js.native
   
   /**
     * @returns a string describing the current connection state.
@@ -196,7 +195,7 @@ trait PromiseSftp extends StObject {
     * Retrieve the last modified date of a file on the server.
     * @param path - The path to the file to get the last modified date of.
     */
-  def lastMod(path: String): Date = js.native
+  def lastMod(path: String): js.Date = js.native
   
   /**
     * Retrieves a directory listing.
@@ -256,7 +255,7 @@ trait PromiseSftp extends StObject {
     * @param destPath - The file to store the data in. If string the path to a
     * local file.
     */
-  def put(input: ReadableStream, destPath: String): typings.bluebird.mod.^[Unit] = js.native
+  def put(input: ReadableStream[Any], destPath: String): typings.bluebird.mod.^[Unit] = js.native
   
   /**
     * Read binary data from a file on the server to a buffer.
@@ -356,14 +355,14 @@ trait PromiseSftp extends StObject {
     */
   def unlink(path: String): typings.bluebird.mod.^[Unit] = js.native
   
-  def utimes(path: String, atime: Double, mtime: Double): typings.bluebird.mod.^[Unit] = js.native
-  def utimes(path: String, atime: Double, mtime: Date): typings.bluebird.mod.^[Unit] = js.native
-  def utimes(path: String, atime: Date, mtime: Double): typings.bluebird.mod.^[Unit] = js.native
   /**
     * Set the access and modified times for a resource on the server.
     * @param path - The path of the resource to set times of.
     * @param atime - A Date or unix timestamp representing the new access time for the resource
     * @param mtime - A Date or unix timestamp representing the new modify time for the resource
     */
-  def utimes(path: String, atime: Date, mtime: Date): typings.bluebird.mod.^[Unit] = js.native
+  def utimes(path: String, atime: js.Date, mtime: js.Date): typings.bluebird.mod.^[Unit] = js.native
+  def utimes(path: String, atime: js.Date, mtime: Double): typings.bluebird.mod.^[Unit] = js.native
+  def utimes(path: String, atime: Double, mtime: js.Date): typings.bluebird.mod.^[Unit] = js.native
+  def utimes(path: String, atime: Double, mtime: Double): typings.bluebird.mod.^[Unit] = js.native
 }

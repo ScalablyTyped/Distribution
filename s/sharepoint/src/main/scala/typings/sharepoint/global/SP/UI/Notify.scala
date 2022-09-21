@@ -15,7 +15,7 @@ object Notify {
   
   @JSGlobal("SP.UI.Notify.Notification")
   @js.native
-  class Notification protected ()
+  open class Notification protected ()
     extends StObject
        with typings.sharepoint.SP.UI.Notify.Notification {
     def this(containerId: ContainerID, strHtml: String) = this()
@@ -127,11 +127,11 @@ object Notify {
   
   @JSGlobal("SP.UI.Notify.NotificationContainer")
   @js.native
-  class NotificationContainer protected ()
+  open class NotificationContainer protected ()
     extends StObject
        with typings.sharepoint.SP.UI.Notify.NotificationContainer {
-    def this(id: Double, element: js.Any, layer: Double) = this()
-    def this(id: Double, element: js.Any, layer: Double, notificationLimit: Double) = this()
+    def this(id: Double, element: Any, layer: Double) = this()
+    def this(id: Double, element: Any, layer: Double, notificationLimit: Double) = this()
     
     /* CompleteClass */
     override def Clear(): Unit = js.native
@@ -140,7 +140,7 @@ object Notify {
     override def GetCount(): Double = js.native
     
     /* CompleteClass */
-    override def SetEventHandler(eventId: EventID, eventHandler: js.Any): Unit = js.native
+    override def SetEventHandler(eventId: EventID, eventHandler: Any): Unit = js.native
   }
   
   inline def addNotification(strHtml: String, bSticky: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addNotification")(strHtml.asInstanceOf[js.Any], bSticky.asInstanceOf[js.Any])).asInstanceOf[String]

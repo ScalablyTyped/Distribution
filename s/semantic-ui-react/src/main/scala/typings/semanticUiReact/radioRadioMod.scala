@@ -2,7 +2,7 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FC
 import typings.semanticUiReact.checkboxCheckboxMod.StrictCheckboxProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,12 +12,12 @@ object radioRadioMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/addons/Radio/Radio", JSImport.Default)
   @js.native
-  val default: StatelessComponent[RadioProps] = js.native
+  val default: FC[RadioProps] = js.native
   
   trait RadioProps
     extends StObject
        with StrictRadioProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object RadioProps {
     
     inline def apply(): RadioProps = {
@@ -37,8 +37,8 @@ object radioRadioMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[RadioProps]
+  type _To = FC[RadioProps]
   
   /* This means you don't have to write `default`, but can instead just say `radioRadioMod.foo` */
-  override def _to: StatelessComponent[RadioProps] = default
+  override def _to: FC[RadioProps] = default
 }

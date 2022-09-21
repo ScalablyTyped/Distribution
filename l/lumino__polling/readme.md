@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__polling
 
-Typings are for version 1.3.3
+Typings are for version 1.11.1
 
 ## Library description:
 Lumino Polling
@@ -10,10 +10,10 @@ Lumino Polling
 | ------------------ | :-------------: |
 | Full name          | @lumino/polling |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 30 |
-| # downloads        | 1317512 |
-| # stars            | 0 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 275541.0 |
+| # stars            | 370.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/lumino)

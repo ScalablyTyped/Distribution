@@ -11,7 +11,7 @@ trait PartialIOptions extends StObject {
   
   var disabledIntervals: js.UndefOr[js.Array[IDisabledInterval]] = js.undefined
   
-  var ruleArguments: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var ruleArguments: js.UndefOr[js.Array[Any]] = js.undefined
   
   var ruleName: js.UndefOr[String] = js.undefined
   
@@ -30,13 +30,13 @@ object PartialIOptions {
     
     inline def setDisabledIntervalsUndefined: Self = StObject.set(x, "disabledIntervals", js.undefined)
     
-    inline def setDisabledIntervalsVarargs(value: IDisabledInterval*): Self = StObject.set(x, "disabledIntervals", js.Array(value :_*))
+    inline def setDisabledIntervalsVarargs(value: IDisabledInterval*): Self = StObject.set(x, "disabledIntervals", js.Array(value*))
     
-    inline def setRuleArguments(value: js.Array[js.Any]): Self = StObject.set(x, "ruleArguments", value.asInstanceOf[js.Any])
+    inline def setRuleArguments(value: js.Array[Any]): Self = StObject.set(x, "ruleArguments", value.asInstanceOf[js.Any])
     
     inline def setRuleArgumentsUndefined: Self = StObject.set(x, "ruleArguments", js.undefined)
     
-    inline def setRuleArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "ruleArguments", js.Array(value :_*))
+    inline def setRuleArgumentsVarargs(value: Any*): Self = StObject.set(x, "ruleArguments", js.Array(value*))
     
     inline def setRuleName(value: String): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
     

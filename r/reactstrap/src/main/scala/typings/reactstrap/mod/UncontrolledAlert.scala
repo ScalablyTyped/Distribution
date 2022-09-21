@@ -5,14 +5,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "UncontrolledAlert")
+@JSImport("reactstrap", "UncontrolledAlert")
 @js.native
-class UncontrolledAlert protected ()
+open class UncontrolledAlert protected ()
   extends typings.reactstrap.uncontrolledMod.UncontrolledAlert {
   def this(props: UncontrolledAlertProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: UncontrolledAlertProps, context: js.Any) = this()
+  def this(props: UncontrolledAlertProps, context: Any) = this()
 }

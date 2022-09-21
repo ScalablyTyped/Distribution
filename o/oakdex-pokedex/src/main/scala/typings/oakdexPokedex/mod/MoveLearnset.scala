@@ -21,10 +21,10 @@ object MoveLearnset {
     
     inline def setGames(value: js.Array[String]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
     
-    inline def setGamesVarargs(value: String*): Self = StObject.set(x, "games", js.Array(value :_*))
+    inline def setGamesVarargs(value: String*): Self = StObject.set(x, "games", js.Array(value*))
     
     inline def setLearnset(value: js.Array[Learnset]): Self = StObject.set(x, "learnset", value.asInstanceOf[js.Any])
     
-    inline def setLearnsetVarargs(value: Learnset*): Self = StObject.set(x, "learnset", js.Array(value :_*))
+    inline def setLearnsetVarargs(value: Learnset*): Self = StObject.set(x, "learnset", js.Array(value*))
   }
 }

@@ -8,7 +8,7 @@ object encodeMod {
   
   @JSImport("@devexpress/utils/lib/utils/encode", "EncodeUtils")
   @js.native
-  class EncodeUtils () extends StObject
+  open class EncodeUtils () extends StObject
   /* static members */
   object EncodeUtils {
     

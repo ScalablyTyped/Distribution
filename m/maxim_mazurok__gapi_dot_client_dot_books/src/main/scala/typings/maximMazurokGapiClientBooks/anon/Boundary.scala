@@ -46,7 +46,7 @@ object Boundary {
     
     inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
-    inline def setBoundaryVarargs(value: String*): Self = StObject.set(x, "boundary", js.Array(value :_*))
+    inline def setBoundaryVarargs(value: String*): Self = StObject.set(x, "boundary", js.Array(value*))
     
     inline def setCachePolicy(value: String): Self = StObject.set(x, "cachePolicy", value.asInstanceOf[js.Any])
     

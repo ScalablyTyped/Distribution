@@ -35,13 +35,15 @@ object mod {
   
   @JSImport("jest-dev-server", "JestDevServerError")
   @js.native
-  class JestDevServerError ()
+  open class JestDevServerError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -103,6 +105,21 @@ object mod {
       * ```
       */
     var launchTimeout: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Path to resource to wait for activity on before considering the server running. Must be used in conjunction with host and port.
+      * @default null
+      *
+      * ```js
+      * module.exports = {
+      *   command: 'npm run start --port 3000',
+      *   host: 'customhost.com',
+      *   port: 3000,
+      *   path: 'thing',
+      * }
+      * ```
+      */
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * Port to wait for activity on before considering the server running. If not provided, the server is assumed to immediately be running.
@@ -186,6 +203,10 @@ object mod {
       inline def setLaunchTimeout(value: Double): Self = StObject.set(x, "launchTimeout", value.asInstanceOf[js.Any])
       
       inline def setLaunchTimeoutUndefined: Self = StObject.set(x, "launchTimeout", js.undefined)
+      
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       

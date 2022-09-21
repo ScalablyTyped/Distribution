@@ -14,7 +14,7 @@ trait ASPxClientCardViewBatchEditCardDeletingEventArgs
   /**
     * Gets a hashtable that maintains information about deleted cells.
     */
-  var cardValues: js.Any
+  var cardValues: Any
   
   /**
     * Gets the processed card visible index.
@@ -23,14 +23,14 @@ trait ASPxClientCardViewBatchEditCardDeletingEventArgs
 }
 object ASPxClientCardViewBatchEditCardDeletingEventArgs {
   
-  inline def apply(cancel: Boolean, cardValues: js.Any, visibleIndex: Double): ASPxClientCardViewBatchEditCardDeletingEventArgs = {
+  inline def apply(cancel: Boolean, cardValues: Any, visibleIndex: Double): ASPxClientCardViewBatchEditCardDeletingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], cardValues = cardValues.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCardViewBatchEditCardDeletingEventArgs]
   }
   
   extension [Self <: ASPxClientCardViewBatchEditCardDeletingEventArgs](x: Self) {
     
-    inline def setCardValues(value: js.Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
+    inline def setCardValues(value: Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
     
     inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }

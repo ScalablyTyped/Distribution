@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html)
   */
-class AreaMeasurement3DCls ()
+open class AreaMeasurement3DCls ()
   extends StObject
      with typings.arcgisJsApi.esri.AreaMeasurement3D {
   def this(properties: AreaMeasurement3DProperties) = this()

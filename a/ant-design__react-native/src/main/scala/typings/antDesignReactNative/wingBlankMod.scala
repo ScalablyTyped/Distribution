@@ -14,7 +14,7 @@ object wingBlankMod {
   
   @JSImport("@ant-design/react-native/lib/wing-blank", JSImport.Default)
   @js.native
-  class default () extends WingBlank
+  open class default () extends WingBlank
   object default {
     
     /* static member */
@@ -32,8 +32,7 @@ object wingBlankMod {
   }
   
   @js.native
-  trait WingBlank
-    extends Component[WingBlankProps, js.Any, js.Any]
+  trait WingBlank extends Component[WingBlankProps, Any, Any]
   
   trait WingBlankProps extends StObject {
     

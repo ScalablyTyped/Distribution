@@ -24,10 +24,10 @@ object mod {
   
   @JSImport("react-icofont", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[IcofontProps, js.Object, js.Any]
+  open class default ()
+    extends Component[IcofontProps, js.Object, Any]
   
-  type Icofont = Component[IcofontProps, js.Object, js.Any]
+  type Icofont = Component[IcofontProps, js.Object, Any]
   
   trait IcofontProps extends StObject {
     

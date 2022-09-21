@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_digitalassetlinks
 
-Typings are for version 1.0.20201121
+Typings are for version 1.0.20220806
 
 ## Library description:
 TypeScript typings for Digital Asset Links API v1
@@ -10,10 +10,10 @@ TypeScript typings for Digital Asset Links API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.digitalassetlinks |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 1 |
-| # downloads        | 1280 |
-| # stars            | 0 |
+| # releases         | 123 |
+| # dependents       | 0.0 |
+| # downloads        | 1211.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

@@ -4,7 +4,6 @@ import typings.firmata.anon.Address
 import typings.firmata.anon.Baud
 import typings.firmata.anon.Delay
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,18 +36,18 @@ trait Board extends EventEmitter {
   // TODO untested/incomplete --- TWW
   /* protected */ def _sendOneWireRequest(
     pin: Double,
-    subcommand: js.Any,
-    device: js.Any,
-    numBytesToRead: js.Any,
-    correlationId: js.Any,
+    subcommand: Any,
+    device: Any,
+    numBytesToRead: Any,
+    correlationId: Any,
     delay: Double,
-    dataToWrite: js.Any,
-    event: js.Any,
+    dataToWrite: Any,
+    event: Any,
     callback: js.Function0[Unit]
   ): Unit = js.native
   
   // TODO untested/incomplete --- TWW
-  /* protected */ def _sendOneWireSearch(`type`: js.Any, event: js.Any, pin: Double, callback: js.Function0[Unit]): Unit = js.native
+  /* protected */ def _sendOneWireSearch(`type`: Any, event: Any, pin: Double, callback: js.Function0[Unit]): Unit = js.native
   
   var analogPins: js.Array[Double] = js.native
   
@@ -100,7 +99,7 @@ trait Board extends EventEmitter {
   def pinMode(pin: Double, mode: PIN_MODE): Unit = js.native
   
   // TODO untested/incomplete --- TWW
-  def pingRead(opts: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  def pingRead(opts: Any, callback: js.Function0[Unit]): Unit = js.native
   
   var pins: js.Array[Pins] = js.native
   
@@ -160,7 +159,7 @@ trait Board extends EventEmitter {
     device: Double,
     data: js.Array[Double],
     numBytesToRead: Double,
-    callback: js.Function2[/* error */ js.UndefOr[Error], /* data */ js.UndefOr[Double], Unit]
+    callback: js.Function2[/* error */ js.UndefOr[js.Error], /* data */ js.UndefOr[Double], Unit]
   ): Unit = js.native
   // TODO untested --- TWW
   def sendOneWireWriteAndRead(
@@ -168,7 +167,7 @@ trait Board extends EventEmitter {
     device: Double,
     data: Double,
     numBytesToRead: Double,
-    callback: js.Function2[/* error */ js.UndefOr[Error], /* data */ js.UndefOr[Double], Unit]
+    callback: js.Function2[/* error */ js.UndefOr[js.Error], /* data */ js.UndefOr[Double], Unit]
   ): Unit = js.native
   
   // TODO untested --- TWW

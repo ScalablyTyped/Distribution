@@ -15,8 +15,35 @@ object selectMod {
   
   @JSImport("ol/interaction/Select", JSImport.Default)
   @js.native
-  class default () extends Select {
+  open class default () extends Select {
     def this(opt_options: Options) = this()
+  }
+  
+  @JSImport("ol/interaction/Select", "SelectEvent")
+  @js.native
+  open class SelectEvent protected ()
+    extends typings.ol.eventMod.default {
+    def this(
+      `type`: SelectEventType,
+      selected: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]],
+      deselected: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]],
+      mapBrowserEvent: typings.ol.mapBrowserEventMod.default[UIEvent]
+    ) = this()
+    
+    /**
+      * Deselected features array.
+      */
+    var deselected: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] = js.native
+    
+    /**
+      * Associated {@link module:ol/MapBrowserEvent}.
+      */
+    var mapBrowserEvent: typings.ol.mapBrowserEventMod.default[UIEvent] = js.native
+    
+    /**
+      * Selected features array.
+      */
+    var selected: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] = js.native
   }
   
   @js.native
@@ -62,7 +89,7 @@ object selectMod {
     
     var removeCondition: js.UndefOr[Condition] = js.undefined
     
-    var style: js.UndefOr[StyleLike] = js.undefined
+    var style: js.UndefOr[StyleLike | Null] = js.undefined
     
     var toggleCondition: js.UndefOr[Condition] = js.undefined
   }
@@ -110,7 +137,7 @@ object selectMod {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
@@ -124,9 +151,11 @@ object selectMod {
       
       inline def setStyleFunction2(value: (/* p0 */ FeatureLike, /* p1 */ Double) => Style | js.Array[Style]): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
       
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
+      
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value*))
       
       inline def setToggleCondition(value: Condition): Self = StObject.set(x, "toggleCondition", value.asInstanceOf[js.Any])
       
@@ -172,25 +201,5 @@ object selectMod {
     
     @JSName("un")
     def un_select(`type`: select, listener: js.Function1[/* evt */ SelectEvent, Unit]): Unit = js.native
-  }
-  
-  @js.native
-  trait SelectEvent
-    extends typings.ol.eventMod.default {
-    
-    /**
-      * Deselected features array.
-      */
-    var deselected: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] = js.native
-    
-    /**
-      * Associated {@link module:ol/MapBrowserEvent}.
-      */
-    var mapBrowserEvent: typings.ol.mapBrowserEventMod.default[UIEvent] = js.native
-    
-    /**
-      * Selected features array.
-      */
-    var selected: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] = js.native
   }
 }

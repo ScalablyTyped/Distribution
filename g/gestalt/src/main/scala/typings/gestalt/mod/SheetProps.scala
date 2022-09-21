@@ -1,5 +1,6 @@
 package typings.gestalt.mod
 
+import typings.gestalt.anon.AnimationState
 import typings.gestalt.anon.OnDismissStart
 import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
@@ -22,6 +23,8 @@ trait SheetProps extends StObject {
   var footer: js.UndefOr[SheetNodeOrRenderProp] = js.undefined
   
   var heading: js.UndefOr[String] = js.undefined
+  
+  var onAnimationEnd: js.UndefOr[js.Function1[/* args */ AnimationState, Unit]] = js.undefined
   
   def onDismiss(): Unit
   
@@ -61,6 +64,10 @@ object SheetProps {
     inline def setHeading(value: String): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+    
+    inline def setOnAnimationEnd(value: /* args */ AnimationState => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
+    
+    inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
     
     inline def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
     

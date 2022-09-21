@@ -45,7 +45,7 @@ trait XAccessibleHyperlink
     * @param nIndex This index identifies the anchor when, as in the case of an image map, there is more than one link represented by this object. The valid m
     * @returns If the index is not valid then an exception is thrown. Otherwise it returns an implementation dependent value.
     */
-  def getAccessibleActionAnchor(nIndex: Double): js.Any
+  def getAccessibleActionAnchor(nIndex: Double): Any
   
   /**
     * Returns an object that represents the link anchor, as appropriate for that link.
@@ -54,7 +54,7 @@ trait XAccessibleHyperlink
     * @param nIndex This index identifies the action object when, as in the case of an image map, there is more than one link represented by this object. The
     * @returns If the index is not valid then an exception is thrown. Otherwise it returns an implementation dependent value.
     */
-  def getAccessibleActionObject(nIndex: Double): js.Any
+  def getAccessibleActionObject(nIndex: Double): Any
   
   /**
     * Returns the index at which the textual representation of the hyperlink (group) ends.
@@ -88,15 +88,15 @@ object XAccessibleHyperlink {
     StartIndex: Double,
     acquire: () => Unit,
     doAccessibleAction: Double => Boolean,
-    getAccessibleActionAnchor: Double => js.Any,
+    getAccessibleActionAnchor: Double => Any,
     getAccessibleActionCount: () => Double,
     getAccessibleActionDescription: Double => String,
     getAccessibleActionKeyBinding: Double => XAccessibleKeyBinding,
-    getAccessibleActionObject: Double => js.Any,
+    getAccessibleActionObject: Double => Any,
     getEndIndex: () => Double,
     getStartIndex: () => Double,
     isValid: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAccessibleHyperlink = {
     val __obj = js.Dynamic.literal(AccessibleActionCount = AccessibleActionCount.asInstanceOf[js.Any], EndIndex = EndIndex.asInstanceOf[js.Any], StartIndex = StartIndex.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), doAccessibleAction = js.Any.fromFunction1(doAccessibleAction), getAccessibleActionAnchor = js.Any.fromFunction1(getAccessibleActionAnchor), getAccessibleActionCount = js.Any.fromFunction0(getAccessibleActionCount), getAccessibleActionDescription = js.Any.fromFunction1(getAccessibleActionDescription), getAccessibleActionKeyBinding = js.Any.fromFunction1(getAccessibleActionKeyBinding), getAccessibleActionObject = js.Any.fromFunction1(getAccessibleActionObject), getEndIndex = js.Any.fromFunction0(getEndIndex), getStartIndex = js.Any.fromFunction0(getStartIndex), isValid = js.Any.fromFunction0(isValid), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -107,9 +107,9 @@ object XAccessibleHyperlink {
     
     inline def setEndIndex(value: Double): Self = StObject.set(x, "EndIndex", value.asInstanceOf[js.Any])
     
-    inline def setGetAccessibleActionAnchor(value: Double => js.Any): Self = StObject.set(x, "getAccessibleActionAnchor", js.Any.fromFunction1(value))
+    inline def setGetAccessibleActionAnchor(value: Double => Any): Self = StObject.set(x, "getAccessibleActionAnchor", js.Any.fromFunction1(value))
     
-    inline def setGetAccessibleActionObject(value: Double => js.Any): Self = StObject.set(x, "getAccessibleActionObject", js.Any.fromFunction1(value))
+    inline def setGetAccessibleActionObject(value: Double => Any): Self = StObject.set(x, "getAccessibleActionObject", js.Any.fromFunction1(value))
     
     inline def setGetEndIndex(value: () => Double): Self = StObject.set(x, "getEndIndex", js.Any.fromFunction0(value))
     

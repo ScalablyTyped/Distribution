@@ -1,5 +1,10 @@
 package typings.cathoQuantum
 
+import typings.cathoQuantum.cathoQuantumStrings.large
+import typings.cathoQuantum.cathoQuantumStrings.medium
+import typings.cathoQuantum.cathoQuantumStrings.small
+import typings.cathoQuantum.cathoQuantumStrings.xlarge
+import typings.cathoQuantum.cathoQuantumStrings.xsmall
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
@@ -10,10 +15,10 @@ object iconMod {
   
   @JSImport("@catho/quantum/Icon", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[IconProps, js.Object, js.Any]
+  open class default ()
+    extends Component[IconProps, js.Object, Any]
   
-  type Icon = Component[IconProps, js.Object, js.Any]
+  type Icon = Component[IconProps, js.Object, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.cathoQuantum.cathoQuantumStrings.access_alarm
@@ -620,6 +625,7 @@ object iconMod {
     - typings.cathoQuantum.cathoQuantumStrings.perm_phone_msg
     - typings.cathoQuantum.cathoQuantumStrings.perm_scan_wifi
     - typings.cathoQuantum.cathoQuantumStrings.person_add
+    - typings.cathoQuantum.cathoQuantumStrings.person_circle
     - typings.cathoQuantum.cathoQuantumStrings.personal_video
     - typings.cathoQuantum.cathoQuantumStrings.person
     - typings.cathoQuantum.cathoQuantumStrings.person_outline
@@ -920,6 +926,7 @@ object iconMod {
     - typings.cathoQuantum.cathoQuantumStrings.volume_up
     - typings.cathoQuantum.cathoQuantumStrings.vpn_key
     - typings.cathoQuantum.cathoQuantumStrings.vpn_lock
+    - typings.cathoQuantum.cathoQuantumStrings.wallet
     - typings.cathoQuantum.cathoQuantumStrings.wallpaper
     - typings.cathoQuantum.cathoQuantumStrings.warning
     - typings.cathoQuantum.cathoQuantumStrings.watch
@@ -2160,6 +2167,8 @@ object iconMod {
     
     inline def person_add: typings.cathoQuantum.cathoQuantumStrings.person_add = "person_add".asInstanceOf[typings.cathoQuantum.cathoQuantumStrings.person_add]
     
+    inline def person_circle: typings.cathoQuantum.cathoQuantumStrings.person_circle = "person_circle".asInstanceOf[typings.cathoQuantum.cathoQuantumStrings.person_circle]
+    
     inline def person_outline: typings.cathoQuantum.cathoQuantumStrings.person_outline = "person_outline".asInstanceOf[typings.cathoQuantum.cathoQuantumStrings.person_outline]
     
     inline def person_pin: typings.cathoQuantum.cathoQuantumStrings.person_pin = "person_pin".asInstanceOf[typings.cathoQuantum.cathoQuantumStrings.person_pin]
@@ -2756,6 +2765,8 @@ object iconMod {
     
     inline def vpn_lock: typings.cathoQuantum.cathoQuantumStrings.vpn_lock = "vpn_lock".asInstanceOf[typings.cathoQuantum.cathoQuantumStrings.vpn_lock]
     
+    inline def wallet: typings.cathoQuantum.cathoQuantumStrings.wallet = "wallet".asInstanceOf[typings.cathoQuantum.cathoQuantumStrings.wallet]
+    
     inline def wallpaper: typings.cathoQuantum.cathoQuantumStrings.wallpaper = "wallpaper".asInstanceOf[typings.cathoQuantum.cathoQuantumStrings.wallpaper]
     
     inline def warning: typings.cathoQuantum.cathoQuantumStrings.warning = "warning".asInstanceOf[typings.cathoQuantum.cathoQuantumStrings.warning]
@@ -2809,6 +2820,8 @@ object iconMod {
     
     var name: IconNames
     
+    var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
+    
     var skin: js.UndefOr[String] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
@@ -2818,6 +2831,10 @@ object iconMod {
     extension [Self <: IconProps](x: Self) {
       
       inline def setName(value: IconNames): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setSize(value: xsmall | small | medium | large | xlarge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       inline def setSkin(value: String): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       

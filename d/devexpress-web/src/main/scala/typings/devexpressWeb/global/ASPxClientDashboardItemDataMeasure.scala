@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardItemDataMeasure")
 @js.native
-class ASPxClientDashboardItemDataMeasure ()
+open class ASPxClientDashboardItemDataMeasure ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardItemDataMeasure {
   
@@ -24,7 +24,7 @@ class ASPxClientDashboardItemDataMeasure ()
     * @param value A value to be formatted.
     */
   /* CompleteClass */
-  override def Format(value: js.Any): String = js.native
+  override def Format(value: Any): String = js.native
   
   /**
     * Gets the measure identifier.

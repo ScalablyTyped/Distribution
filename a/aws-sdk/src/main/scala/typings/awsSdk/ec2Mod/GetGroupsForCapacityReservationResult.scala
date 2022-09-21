@@ -29,7 +29,7 @@ object GetGroupsForCapacityReservationResult {
     
     inline def setCapacityReservationGroupsUndefined: Self = StObject.set(x, "CapacityReservationGroups", js.undefined)
     
-    inline def setCapacityReservationGroupsVarargs(value: CapacityReservationGroup*): Self = StObject.set(x, "CapacityReservationGroups", js.Array(value :_*))
+    inline def setCapacityReservationGroupsVarargs(value: CapacityReservationGroup*): Self = StObject.set(x, "CapacityReservationGroups", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

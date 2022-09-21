@@ -10,7 +10,7 @@ object stringWriterMod {
   
   @JSImport("guacamole-client/lib/StringWriter", "StringWriter")
   @js.native
-  class StringWriter protected () extends StObject {
+  open class StringWriter protected () extends StObject {
     /**
       * @param stream The stream that data will be written to.
       */

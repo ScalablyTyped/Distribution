@@ -6,10 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixinType */ @JSImport("react-native", "ViewPagerAndroid")
+- Dropped new (args : ...any): react-native.react-native.NativeMethods */ @JSImport("react-native", "ViewPagerAndroid")
 @js.native
-class ViewPagerAndroid ()
-  extends Component[ViewPagerAndroidProps, js.Object, js.Any] {
+open class ViewPagerAndroid ()
+  extends Component[ViewPagerAndroidProps, js.Object, Any] {
   
   /**
     * A helper function to scroll to a specific page in the ViewPager.

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChangeSummary extends StObject {
   
   /**
+    * Optional name for the change.
+    */
+  var ChangeName: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ChangeName] = js.undefined
+  
+  /**
     * The type of the change.
     */
   var ChangeType: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ChangeType] = js.undefined
@@ -35,6 +40,10 @@ object ChangeSummary {
   
   extension [Self <: ChangeSummary](x: Self) {
     
+    inline def setChangeName(value: ChangeName): Self = StObject.set(x, "ChangeName", value.asInstanceOf[js.Any])
+    
+    inline def setChangeNameUndefined: Self = StObject.set(x, "ChangeName", js.undefined)
+    
     inline def setChangeType(value: ChangeType): Self = StObject.set(x, "ChangeType", value.asInstanceOf[js.Any])
     
     inline def setChangeTypeUndefined: Self = StObject.set(x, "ChangeType", js.undefined)
@@ -51,6 +60,6 @@ object ChangeSummary {
     
     inline def setErrorDetailListUndefined: Self = StObject.set(x, "ErrorDetailList", js.undefined)
     
-    inline def setErrorDetailListVarargs(value: ErrorDetail*): Self = StObject.set(x, "ErrorDetailList", js.Array(value :_*))
+    inline def setErrorDetailListVarargs(value: ErrorDetail*): Self = StObject.set(x, "ErrorDetailList", js.Array(value*))
   }
 }

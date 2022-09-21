@@ -21,7 +21,7 @@ object mod {
   
   @JSImport("3box", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Box
   @JSImport("3box", JSImport.Namespace)
@@ -29,15 +29,15 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def create(ethereumProvider: js.Any): js.Promise[Box] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(ethereumProvider.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Box]]
+  inline def create(ethereumProvider: Any): js.Promise[Box] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(ethereumProvider.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Box]]
   
   /* static member */
   inline def getConfig(address: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   inline def getConfig(address: String, opts: ProfileServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
   /* static member */
-  inline def getProfile(address: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  inline def getProfile(address: String, opts: Blocklist): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def getProfile(address: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def getProfile(address: String, opts: Blocklist): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   /* static member */
   inline def getProfiles(address: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfiles")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
@@ -82,8 +82,8 @@ object mod {
   inline def listSpaces(address: String, opts: ProfileServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("listSpaces")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
   /* static member */
-  inline def openBox(address: String, ethereumProvider: js.Any): js.Promise[Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Box]]
-  inline def openBox(address: String, ethereumProvider: js.Any, opts: AddressServer): js.Promise[Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Box]]
+  inline def openBox(address: String, ethereumProvider: Any): js.Promise[Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Box]]
+  inline def openBox(address: String, ethereumProvider: Any, opts: AddressServer): js.Promise[Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Box]]
   
   /* static member */
   inline def profileGraphQL(query: js.Object): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("profileGraphQL")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
@@ -191,20 +191,20 @@ object mod {
   @js.native
   trait Storage extends StObject {
     
-    def all(): js.Promise[js.UndefOr[js.Array[js.Any]]] = js.native
-    def all(opts: `0`): js.Promise[js.UndefOr[js.Array[js.Any]]] = js.native
+    def all(): js.Promise[js.UndefOr[js.Array[Any]]] = js.native
+    def all(opts: `0`): js.Promise[js.UndefOr[js.Array[Any]]] = js.native
     
-    def get(key: String): js.Promise[js.Any] = js.native
+    def get(key: String): js.Promise[Any] = js.native
     
-    def getMetadata(key: String): js.Promise[js.Any] = js.native
+    def getMetadata(key: String): js.Promise[Any] = js.native
     
     def log(): js.Array[StorageLog] = js.native
     
     def remove(key: String): js.Promise[Boolean] = js.native
     
-    def set(key: String, value: js.Any): js.Promise[Boolean] = js.native
+    def set(key: String, value: Any): js.Promise[Boolean] = js.native
     
-    def setMultiple(keys: js.Array[String], values: js.Array[js.Any]): js.Promise[Boolean] = js.native
+    def setMultiple(keys: js.Array[String], values: js.Array[Any]): js.Promise[Boolean] = js.native
   }
   
   trait StorageLog extends StObject {
@@ -215,11 +215,11 @@ object mod {
     
     var timeStamp: Double
     
-    var value: js.Any
+    var value: Any
   }
   object StorageLog {
     
-    inline def apply(key: String, op: String, timeStamp: Double, value: js.Any): StorageLog = {
+    inline def apply(key: String, op: String, timeStamp: Double, value: Any): StorageLog = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[StorageLog]
     }
@@ -232,7 +232,7 @@ object mod {
       
       inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -255,15 +255,15 @@ object mod {
     
     def onUpdate(updateFn: js.Function0[Unit]): Unit = js.native
     
-    def post(message: js.Any): js.Promise[Unit] = js.native
-    def post(message: js.Any, to: String): js.Promise[Unit] = js.native
+    def post(message: Any): js.Promise[Unit] = js.native
+    def post(message: Any, to: String): js.Promise[Unit] = js.native
   }
   
   trait ThreadPost extends StObject {
     
     var author: String
     
-    var message: js.Any
+    var message: Any
     
     var postId: String
     
@@ -271,7 +271,7 @@ object mod {
   }
   object ThreadPost {
     
-    inline def apply(author: String, message: js.Any, postId: String, timestamp: Double): ThreadPost = {
+    inline def apply(author: String, message: Any, postId: String, timestamp: Double): ThreadPost = {
       val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], postId = postId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThreadPost]
     }
@@ -280,7 +280,7 @@ object mod {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setPostId(value: String): Self = StObject.set(x, "postId", value.asInstanceOf[js.Any])
       

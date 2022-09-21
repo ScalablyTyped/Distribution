@@ -19,9 +19,11 @@ object NodeFlags extends StObject {
   
   /* 128 */ val ContainsThis: typings.typescript.mod.NodeFlags.ContainsThis & Double = js.native
   
-  /* 25358336 */ val ContextFlags: typings.typescript.mod.NodeFlags.ContextFlags & Double = js.native
+  /* 50720768 */ val ContextFlags: typings.typescript.mod.NodeFlags.ContextFlags & Double = js.native
   
   /* 16384 */ val DecoratorContext: typings.typescript.mod.NodeFlags.DecoratorContext & Double = js.native
+  
+  /* 65536 */ val DisallowConditionalTypesContext: typings.typescript.mod.NodeFlags.DisallowConditionalTypesContext & Double = js.native
   
   /* 4096 */ val DisallowInContext: typings.typescript.mod.NodeFlags.DisallowInContext & Double = js.native
   
@@ -29,7 +31,7 @@ object NodeFlags extends StObject {
   
   /* 1024 */ val GlobalAugmentation: typings.typescript.mod.NodeFlags.GlobalAugmentation & Double = js.native
   
-  /* 524288 */ val HasAggregatedChildData: typings.typescript.mod.NodeFlags.HasAggregatedChildData & Double = js.native
+  /* 1048576 */ val HasAggregatedChildData: typings.typescript.mod.NodeFlags.HasAggregatedChildData & Double = js.native
   
   /* 2048 */ val HasAsyncFunctions: typings.typescript.mod.NodeFlags.HasAsyncFunctions & Double = js.native
   
@@ -37,11 +39,11 @@ object NodeFlags extends StObject {
   
   /* 256 */ val HasImplicitReturn: typings.typescript.mod.NodeFlags.HasImplicitReturn & Double = js.native
   
-  /* 4194304 */ val JSDoc: typings.typescript.mod.NodeFlags.JSDoc & Double = js.native
+  /* 8388608 */ val JSDoc: typings.typescript.mod.NodeFlags.JSDoc & Double = js.native
   
-  /* 131072 */ val JavaScriptFile: typings.typescript.mod.NodeFlags.JavaScriptFile & Double = js.native
+  /* 262144 */ val JavaScriptFile: typings.typescript.mod.NodeFlags.JavaScriptFile & Double = js.native
   
-  /* 33554432 */ val JsonFile: typings.typescript.mod.NodeFlags.JsonFile & Double = js.native
+  /* 67108864 */ val JsonFile: typings.typescript.mod.NodeFlags.JsonFile & Double = js.native
   
   /* 1 */ val Let: typings.typescript.mod.NodeFlags.Let & Double = js.native
   
@@ -59,9 +61,9 @@ object NodeFlags extends StObject {
   
   /* 8 */ val Synthesized: typings.typescript.mod.NodeFlags.Synthesized & Double = js.native
   
-  /* 65536 */ val ThisNodeHasError: typings.typescript.mod.NodeFlags.ThisNodeHasError & Double = js.native
+  /* 131072 */ val ThisNodeHasError: typings.typescript.mod.NodeFlags.ThisNodeHasError & Double = js.native
   
-  /* 262144 */ val ThisNodeOrAnySubNodesHasError: typings.typescript.mod.NodeFlags.ThisNodeOrAnySubNodesHasError & Double = js.native
+  /* 524288 */ val ThisNodeOrAnySubNodesHasError: typings.typescript.mod.NodeFlags.ThisNodeOrAnySubNodesHasError & Double = js.native
   
   /* 40960 */ val TypeExcludesFlags: typings.typescript.mod.NodeFlags.TypeExcludesFlags & Double = js.native
   

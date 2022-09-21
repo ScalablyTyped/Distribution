@@ -22,7 +22,7 @@ trait Compass
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html#reset)
     */
-  def reset(): Unit = js.native
+  def reset(): scala.Unit = js.native
   
   /**
     * The view in which the Compass obtains and indicates camera [heading](https://developers.arcgis.com/javascript/latest/api-reference/esri-Camera.html#heading), using a (SceneView) or rotation (MapView).

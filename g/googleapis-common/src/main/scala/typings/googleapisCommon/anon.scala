@@ -2,7 +2,14 @@ package typings.googleapisCommon
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
+import typings.googleAuthLibrary.anon.TypeofDefaultTransporter
+import typings.googleAuthLibrary.authclientMod.AuthClient
+import typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient
+import typings.googleAuthLibrary.externalclientMod.ExternalAccountClientOptions
+import typings.googleAuthLibrary.mod.ExternalAccountClient
+import typings.googleAuthLibrary.mod.GoogleAuth
 import typings.googleAuthLibrary.mod.OAuth2Client
+import typings.googleAuthLibrary.oauth2clientMod.RefreshOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -147,6 +154,38 @@ object anon {
   }
   
   @js.native
+  trait TypeofExternalAccountClie
+    extends StObject
+       with Instantiable0[ExternalAccountClient] {
+    
+    /**
+      * This static method will instantiate the
+      * corresponding type of external account credential depending on the
+      * underlying credential source.
+      * @param options The external account options object typically loaded
+      *   from the external account JSON credential file.
+      * @param additionalOptions Optional additional behavior customization
+      *   options. These currently customize expiration threshold time and
+      *   whether to retry on 401/403 API request errors.
+      * @return A BaseExternalAccountClient instance or null if the options
+      *   provided do not correspond to an external account credential.
+      */
+    def fromJSON(options: ExternalAccountClientOptions): BaseExternalAccountClient | Null = js.native
+    def fromJSON(options: ExternalAccountClientOptions, additionalOptions: RefreshOptions): BaseExternalAccountClient | Null = js.native
+  }
+  
+  @js.native
+  trait TypeofGoogleAuth
+    extends StObject
+       with Instantiable0[GoogleAuth[AuthClient]] {
+    
+    /**
+      * Export DefaultTransporter as a static property of the class.
+      */
+    var DefaultTransporter: TypeofDefaultTransporter = js.native
+  }
+  
+  @js.native
   trait TypeofOAuth2Client
     extends StObject
        with Instantiable0[OAuth2Client] {
@@ -154,49 +193,49 @@ object anon {
     /**
       * Clock skew - five minutes in seconds
       */
-    /* private */ val CLOCK_SKEW_SECS_ : js.Any = js.native
+    /* private */ val CLOCK_SKEW_SECS_ : Any = js.native
     
     /**
       * The base URL for auth endpoints.
       */
-    /* private */ val GOOGLE_OAUTH2_AUTH_BASE_URL_ : js.Any = js.native
+    /* private */ val GOOGLE_OAUTH2_AUTH_BASE_URL_ : Any = js.native
     
     /**
       * Google Sign on certificates in JWK format.
       */
-    /* private */ val GOOGLE_OAUTH2_FEDERATED_SIGNON_JWK_CERTS_URL_ : js.Any = js.native
+    /* private */ val GOOGLE_OAUTH2_FEDERATED_SIGNON_JWK_CERTS_URL_ : Any = js.native
     
     /**
       * Google Sign on certificates in PEM format.
       */
-    /* private */ val GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_ : js.Any = js.native
+    /* private */ val GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_ : Any = js.native
     
     /**
       * Google Sign on certificates in JWK format.
       */
-    /* private */ val GOOGLE_OAUTH2_IAP_PUBLIC_KEY_URL_ : js.Any = js.native
+    /* private */ val GOOGLE_OAUTH2_IAP_PUBLIC_KEY_URL_ : Any = js.native
     
     /**
       * The base endpoint to revoke tokens.
       */
-    /* private */ val GOOGLE_OAUTH2_REVOKE_URL_ : js.Any = js.native
+    /* private */ val GOOGLE_OAUTH2_REVOKE_URL_ : Any = js.native
     
     /**
       * The base endpoint for token retrieval.
       */
-    /* private */ val GOOGLE_OAUTH2_TOKEN_URL_ : js.Any = js.native
+    /* private */ val GOOGLE_OAUTH2_TOKEN_URL_ : Any = js.native
     
     /* protected */ val GOOGLE_TOKEN_INFO_URL: /* "https://oauth2.googleapis.com/tokeninfo" */ String = js.native
     
     /**
       * The allowed oauth token issuers.
       */
-    /* private */ val ISSUERS_ : js.Any = js.native
+    /* private */ val ISSUERS_ : Any = js.native
     
     /**
       * Max Token Lifetime is one day in seconds
       */
-    /* private */ val MAX_TOKEN_LIFETIME_SECS_ : js.Any = js.native
+    /* private */ val MAX_TOKEN_LIFETIME_SECS_ : Any = js.native
     
     /**
       * Generates an URL to revoke the given token.
@@ -207,18 +246,20 @@ object anon {
   
   trait Url extends StObject {
     
-    var url: String
+    var url: js.UndefOr[String] = js.undefined
   }
   object Url {
     
-    inline def apply(url: String): Url = {
-      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    inline def apply(): Url = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Url]
     }
     
     extension [Self <: Url](x: Self) {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   

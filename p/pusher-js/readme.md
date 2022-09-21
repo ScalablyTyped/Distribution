@@ -1,7 +1,7 @@
 
 # Scala.js typings for pusher-js
 
-Typings are for version 4.2
+Typings are for version 7.4.0
 
 ## Library description:
 Pusher Channels JavaScript library for browsers, React Native, NodeJS and web workers
@@ -10,10 +10,10 @@ Pusher Channels JavaScript library for browsers, React Native, NodeJS and web wo
 | ------------------ | :-------------: |
 | Full name          | pusher-js |
 | Keywords           | pusher, client, websocket, http, fallback, isomorphic, events, pubsub |
-| # releases         | 14 |
-| # dependents       | 134 |
-| # downloads        | 9043549 |
-| # stars            | 4 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 1509528.0 |
+| # stars            | 1778.0 |
 
 ## Links
 - [Homepage](https://github.com/pusher/pusher-js)
@@ -24,7 +24,7 @@ Pusher Channels JavaScript library for browsers, React Native, NodeJS and web wo
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,7 +1,9 @@
 package typings.rcSelect
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcSelect.interfaceMod.RenderDOMFunc
+import typings.rcSelect.baseSelectMod.Placement
+import typings.rcSelect.baseSelectMod.RenderDOMFunc
+import typings.rcTrigger.interfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement
@@ -47,7 +49,7 @@ object selectTriggerMod extends Shortcut {
     
     var disabled: Boolean
     
-    var dropdownAlign: js.Object
+    var dropdownAlign: AlignType
     
     var dropdownClassName: String
     
@@ -62,6 +64,12 @@ object selectTriggerMod extends Shortcut {
     var getPopupContainer: js.UndefOr[RenderDOMFunc] = js.undefined
     
     def getTriggerDOMNode(): HTMLElement
+    
+    def onPopupMouseEnter(): Unit
+    
+    var onPopupVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
+    
+    var placement: js.UndefOr[Placement] = js.undefined
     
     var popupElement: ReactElement
     
@@ -78,16 +86,17 @@ object selectTriggerMod extends Shortcut {
       containerWidth: Double,
       direction: String,
       disabled: Boolean,
-      dropdownAlign: js.Object,
+      dropdownAlign: AlignType,
       dropdownClassName: String,
       dropdownStyle: CSSProperties,
       empty: Boolean,
       getTriggerDOMNode: () => HTMLElement,
+      onPopupMouseEnter: () => Unit,
       popupElement: ReactElement,
       prefixCls: String,
       visible: Boolean
     ): SelectTriggerProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], containerWidth = containerWidth.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], dropdownAlign = dropdownAlign.asInstanceOf[js.Any], dropdownClassName = dropdownClassName.asInstanceOf[js.Any], dropdownStyle = dropdownStyle.asInstanceOf[js.Any], empty = empty.asInstanceOf[js.Any], getTriggerDOMNode = js.Any.fromFunction0(getTriggerDOMNode), popupElement = popupElement.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], containerWidth = containerWidth.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], dropdownAlign = dropdownAlign.asInstanceOf[js.Any], dropdownClassName = dropdownClassName.asInstanceOf[js.Any], dropdownStyle = dropdownStyle.asInstanceOf[js.Any], empty = empty.asInstanceOf[js.Any], getTriggerDOMNode = js.Any.fromFunction0(getTriggerDOMNode), onPopupMouseEnter = js.Any.fromFunction0(onPopupMouseEnter), popupElement = popupElement.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectTriggerProps]
     }
     
@@ -105,7 +114,7 @@ object selectTriggerMod extends Shortcut {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      inline def setDropdownAlign(value: js.Object): Self = StObject.set(x, "dropdownAlign", value.asInstanceOf[js.Any])
+      inline def setDropdownAlign(value: AlignType): Self = StObject.set(x, "dropdownAlign", value.asInstanceOf[js.Any])
       
       inline def setDropdownClassName(value: String): Self = StObject.set(x, "dropdownClassName", value.asInstanceOf[js.Any])
       
@@ -121,11 +130,21 @@ object selectTriggerMod extends Shortcut {
       
       inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      inline def setGetPopupContainer(value: /* props */ js.Any => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
+      inline def setGetPopupContainer(value: /* props */ Any => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
       
       inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
       
       inline def setGetTriggerDOMNode(value: () => HTMLElement): Self = StObject.set(x, "getTriggerDOMNode", js.Any.fromFunction0(value))
+      
+      inline def setOnPopupMouseEnter(value: () => Unit): Self = StObject.set(x, "onPopupMouseEnter", js.Any.fromFunction0(value))
+      
+      inline def setOnPopupVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onPopupVisibleChange", js.Any.fromFunction1(value))
+      
+      inline def setOnPopupVisibleChangeUndefined: Self = StObject.set(x, "onPopupVisibleChange", js.undefined)
+      
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
       inline def setPopupElement(value: ReactElement): Self = StObject.set(x, "popupElement", value.asInstanceOf[js.Any])
       

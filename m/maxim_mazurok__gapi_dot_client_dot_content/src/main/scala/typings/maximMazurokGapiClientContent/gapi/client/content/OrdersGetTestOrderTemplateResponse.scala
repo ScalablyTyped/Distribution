@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OrdersGetTestOrderTemplateResponse extends StObject {
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#ordersGetTestOrderTemplateResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#ordersGetTestOrderTemplateResponse`". */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The requested test order template. */

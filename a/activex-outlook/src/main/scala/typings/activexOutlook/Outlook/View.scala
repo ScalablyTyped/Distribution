@@ -30,7 +30,7 @@ trait View extends StObject {
   /* private */ @JSName("Outlook.View_typekey")
   var OutlookDotView_typekey: View
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Reset(): Unit
   
@@ -60,7 +60,7 @@ object View {
     LockUserChanges: Boolean,
     Name: String,
     OutlookDotView_typekey: View,
-    Parent: js.Any,
+    Parent: Any,
     Reset: () => Unit,
     Save: () => Unit,
     SaveOption: OlViewSaveOption,
@@ -98,7 +98,7 @@ object View {
     
     inline def setOutlookDotView_typekey(value: View): Self = StObject.set(x, "Outlook.View_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     

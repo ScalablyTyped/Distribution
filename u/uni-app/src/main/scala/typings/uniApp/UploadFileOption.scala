@@ -40,12 +40,12 @@ trait UploadFileOption extends StObject {
   /**
     * HTTP 请求中其他额外的 form data
     */
-  var formData: js.UndefOr[js.Any] = js.undefined
+  var formData: js.UndefOr[Any] = js.undefined
   
   /**
     * HTTP 请求 Header, header 中不能设置 Referer
     */
-  var header: js.UndefOr[js.Any] = js.undefined
+  var header: js.UndefOr[Any] = js.undefined
   
   /**
     * 文件对应的 key , 开发者在服务器端通过这个 key 可以获取到文件二进制内容
@@ -91,13 +91,13 @@ object UploadFileOption {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: UploadFileOptionFiles*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: UploadFileOptionFiles*): Self = StObject.set(x, "files", js.Array(value*))
     
-    inline def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
-    inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     

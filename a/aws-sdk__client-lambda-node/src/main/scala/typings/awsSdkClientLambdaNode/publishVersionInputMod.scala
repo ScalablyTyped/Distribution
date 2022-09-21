@@ -8,5 +8,5 @@ object publishVersionInputMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/PublishVersionInput", "PublishVersionInput")
   @js.native
-  val PublishVersionInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PublishVersionInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

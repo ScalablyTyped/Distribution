@@ -32,11 +32,11 @@ trait DoCmd extends StObject {
   def ApplyFilter(): Unit = js.native
   def ApplyFilter(FilterName: String): Unit = js.native
   def ApplyFilter(FilterName: String, WhereCondition: String): Unit = js.native
-  def ApplyFilter(FilterName: String, WhereCondition: String, ControlName: js.Any): Unit = js.native
-  def ApplyFilter(FilterName: String, WhereCondition: Unit, ControlName: js.Any): Unit = js.native
+  def ApplyFilter(FilterName: String, WhereCondition: String, ControlName: Any): Unit = js.native
+  def ApplyFilter(FilterName: String, WhereCondition: Unit, ControlName: Any): Unit = js.native
   def ApplyFilter(FilterName: Unit, WhereCondition: String): Unit = js.native
-  def ApplyFilter(FilterName: Unit, WhereCondition: String, ControlName: js.Any): Unit = js.native
-  def ApplyFilter(FilterName: Unit, WhereCondition: Unit, ControlName: js.Any): Unit = js.native
+  def ApplyFilter(FilterName: Unit, WhereCondition: String, ControlName: Any): Unit = js.native
+  def ApplyFilter(FilterName: Unit, WhereCondition: Unit, ControlName: Any): Unit = js.native
   
   def ApplyFilterOld0(): Unit = js.native
   def ApplyFilterOld0(FilterName: String): Unit = js.native
@@ -189,14 +189,231 @@ trait DoCmd extends StObject {
   def DeleteObject(ObjectType: AcObjectType): Unit = js.native
   def DeleteObject(ObjectType: AcObjectType, ObjectName: String): Unit = js.native
   
-  /** @deprecated Use the **RunCommand** method */
   def DoMenuItem(
-    MenuBar: `0` | Double,
-    MenuName: `0` | `1` | `5` | Double,
-    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9` | Double,
-    Subcommand: js.UndefOr[`0` | `3` | Double],
-    Version: js.UndefOr[`70` | `20` | `11`]
+    MenuBar: Double,
+    MenuName: `0` | `1` | `5`,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`
   ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: Double,
+    MenuName: `0` | `1` | `5`,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: `0` | `3`
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: Double,
+    MenuName: `0` | `1` | `5`,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: `0` | `3`,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: Double,
+    MenuName: `0` | `1` | `5`,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: Double
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: Double,
+    MenuName: `0` | `1` | `5`,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: Double,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: Double,
+    MenuName: `0` | `1` | `5`,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: Unit,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(MenuBar: Double, MenuName: `0` | `1` | `5`, Command: Double): Unit = js.native
+  def DoMenuItem(MenuBar: Double, MenuName: `0` | `1` | `5`, Command: Double, Subcommand: `0` | `3`): Unit = js.native
+  def DoMenuItem(
+    MenuBar: Double,
+    MenuName: `0` | `1` | `5`,
+    Command: Double,
+    Subcommand: `0` | `3`,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(MenuBar: Double, MenuName: `0` | `1` | `5`, Command: Double, Subcommand: Double): Unit = js.native
+  def DoMenuItem(
+    MenuBar: Double,
+    MenuName: `0` | `1` | `5`,
+    Command: Double,
+    Subcommand: Double,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: Double,
+    MenuName: `0` | `1` | `5`,
+    Command: Double,
+    Subcommand: Unit,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(MenuBar: Double, MenuName: Double, Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`): Unit = js.native
+  def DoMenuItem(
+    MenuBar: Double,
+    MenuName: Double,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: `0` | `3`
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: Double,
+    MenuName: Double,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: `0` | `3`,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: Double,
+    MenuName: Double,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: Double
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: Double,
+    MenuName: Double,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: Double,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: Double,
+    MenuName: Double,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: Unit,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  /** @deprecated Use the **RunCommand** method */
+  def DoMenuItem(MenuBar: Double, MenuName: Double, Command: Double): Unit = js.native
+  def DoMenuItem(MenuBar: Double, MenuName: Double, Command: Double, Subcommand: `0` | `3`): Unit = js.native
+  def DoMenuItem(
+    MenuBar: Double,
+    MenuName: Double,
+    Command: Double,
+    Subcommand: `0` | `3`,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(MenuBar: Double, MenuName: Double, Command: Double, Subcommand: Double): Unit = js.native
+  def DoMenuItem(
+    MenuBar: Double,
+    MenuName: Double,
+    Command: Double,
+    Subcommand: Double,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(MenuBar: Double, MenuName: Double, Command: Double, Subcommand: Unit, Version: `70` | `20` | `11`): Unit = js.native
+  def DoMenuItem(
+    MenuBar: `0`,
+    MenuName: `0` | `1` | `5`,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: `0`,
+    MenuName: `0` | `1` | `5`,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: `0` | `3`
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: `0`,
+    MenuName: `0` | `1` | `5`,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: `0` | `3`,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: `0`,
+    MenuName: `0` | `1` | `5`,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: Double
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: `0`,
+    MenuName: `0` | `1` | `5`,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: Double,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: `0`,
+    MenuName: `0` | `1` | `5`,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: Unit,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(MenuBar: `0`, MenuName: `0` | `1` | `5`, Command: Double): Unit = js.native
+  def DoMenuItem(MenuBar: `0`, MenuName: `0` | `1` | `5`, Command: Double, Subcommand: `0` | `3`): Unit = js.native
+  def DoMenuItem(
+    MenuBar: `0`,
+    MenuName: `0` | `1` | `5`,
+    Command: Double,
+    Subcommand: `0` | `3`,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(MenuBar: `0`, MenuName: `0` | `1` | `5`, Command: Double, Subcommand: Double): Unit = js.native
+  def DoMenuItem(
+    MenuBar: `0`,
+    MenuName: `0` | `1` | `5`,
+    Command: Double,
+    Subcommand: Double,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: `0`,
+    MenuName: `0` | `1` | `5`,
+    Command: Double,
+    Subcommand: Unit,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(MenuBar: `0`, MenuName: Double, Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`): Unit = js.native
+  def DoMenuItem(
+    MenuBar: `0`,
+    MenuName: Double,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: `0` | `3`
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: `0`,
+    MenuName: Double,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: `0` | `3`,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: `0`,
+    MenuName: Double,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: Double
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: `0`,
+    MenuName: Double,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: Double,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(
+    MenuBar: `0`,
+    MenuName: Double,
+    Command: `0` | `4` | `5` | `1` | `2` | `3` | `6` | `8` | `9`,
+    Subcommand: Unit,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(MenuBar: `0`, MenuName: Double, Command: Double, Subcommand: `0` | `3`): Unit = js.native
+  def DoMenuItem(
+    MenuBar: `0`,
+    MenuName: Double,
+    Command: Double,
+    Subcommand: `0` | `3`,
+    Version: `70` | `20` | `11`
+  ): Unit = js.native
+  def DoMenuItem(MenuBar: `0`, MenuName: Double, Command: Double, Subcommand: Double, Version: `70` | `20` | `11`): Unit = js.native
+  def DoMenuItem(MenuBar: `0`, MenuName: Double, Command: Double, Subcommand: Unit, Version: `70` | `20` | `11`): Unit = js.native
+  @JSName("DoMenuItem")
+  def DoMenuItem_0(MenuBar: `0`, MenuName: Double, Command: Double): Unit = js.native
+  @JSName("DoMenuItem")
+  def DoMenuItem_0(MenuBar: `0`, MenuName: Double, Command: Double, Subcommand: Double): Unit = js.native
   
   def Echo(EchoOn: Boolean): Unit = js.native
   def Echo(EchoOn: Boolean, StatusBarText: String): Unit = js.native
@@ -233,84 +450,24 @@ trait DoCmd extends StObject {
     */
   def GoToRecord(): Unit = js.native
   def GoToRecord(ObjectType: Unit, ObjectName: String): Unit = js.native
+  def GoToRecord(ObjectType: Unit, ObjectName: String, Record: `2` | `3` | `5`): Unit = js.native
+  def GoToRecord(ObjectType: Unit, ObjectName: String, Record: Unit, Offset: `1` | `0` | `4`): Unit = js.native
   def GoToRecord(ObjectType: Unit, ObjectName: String, Record: AcRecord): Unit = js.native
+  def GoToRecord(ObjectType: Unit, ObjectName: String, Record: AcRecord, Offset: `1` | `0` | `4`): Unit = js.native
+  def GoToRecord(ObjectType: Unit, ObjectName: Unit, Record: `2` | `3` | `5`): Unit = js.native
+  def GoToRecord(ObjectType: Unit, ObjectName: Unit, Record: Unit, Offset: `1` | `0` | `4`): Unit = js.native
   def GoToRecord(ObjectType: Unit, ObjectName: Unit, Record: AcRecord): Unit = js.native
+  def GoToRecord(ObjectType: Unit, ObjectName: Unit, Record: AcRecord, Offset: `1` | `0` | `4`): Unit = js.native
   def GoToRecord(ObjectType: AcDataObjectType): Unit = js.native
   def GoToRecord(ObjectType: AcDataObjectType, ObjectName: String): Unit = js.native
+  def GoToRecord(ObjectType: AcDataObjectType, ObjectName: String, Record: `2` | `3` | `5`): Unit = js.native
+  def GoToRecord(ObjectType: AcDataObjectType, ObjectName: String, Record: Unit, Offset: `1` | `0` | `4`): Unit = js.native
   def GoToRecord(ObjectType: AcDataObjectType, ObjectName: String, Record: AcRecord): Unit = js.native
+  def GoToRecord(ObjectType: AcDataObjectType, ObjectName: String, Record: AcRecord, Offset: `1` | `0` | `4`): Unit = js.native
+  def GoToRecord(ObjectType: AcDataObjectType, ObjectName: Unit, Record: `2` | `3` | `5`): Unit = js.native
+  def GoToRecord(ObjectType: AcDataObjectType, ObjectName: Unit, Record: Unit, Offset: `1` | `0` | `4`): Unit = js.native
   def GoToRecord(ObjectType: AcDataObjectType, ObjectName: Unit, Record: AcRecord): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_0(ObjectType: Unit, ObjectName: String, Record: Unit, Offset: `0`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_0(ObjectType: Unit, ObjectName: String, Record: AcRecord, Offset: `0`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_0(ObjectType: Unit, ObjectName: Unit, Record: Unit, Offset: `0`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_0(ObjectType: Unit, ObjectName: Unit, Record: AcRecord, Offset: `0`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_0(ObjectType: AcDataObjectType, ObjectName: String, Record: Unit, Offset: `0`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_0(ObjectType: AcDataObjectType, ObjectName: String, Record: AcRecord, Offset: `0`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_0(ObjectType: AcDataObjectType, ObjectName: Unit, Record: Unit, Offset: `0`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_0(ObjectType: AcDataObjectType, ObjectName: Unit, Record: AcRecord, Offset: `0`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_1(ObjectType: Unit, ObjectName: String, Record: Unit, Offset: `1`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_1(ObjectType: Unit, ObjectName: String, Record: AcRecord, Offset: `1`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_1(ObjectType: Unit, ObjectName: Unit, Record: Unit, Offset: `1`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_1(ObjectType: Unit, ObjectName: Unit, Record: AcRecord, Offset: `1`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_1(ObjectType: AcDataObjectType, ObjectName: String, Record: Unit, Offset: `1`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_1(ObjectType: AcDataObjectType, ObjectName: String, Record: AcRecord, Offset: `1`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_1(ObjectType: AcDataObjectType, ObjectName: Unit, Record: Unit, Offset: `1`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_1(ObjectType: AcDataObjectType, ObjectName: Unit, Record: AcRecord, Offset: `1`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_2(ObjectType: Unit, ObjectName: String, Record: `2`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_2(ObjectType: Unit, ObjectName: Unit, Record: `2`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_2(ObjectType: AcDataObjectType, ObjectName: String, Record: `2`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_2(ObjectType: AcDataObjectType, ObjectName: Unit, Record: `2`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_3(ObjectType: Unit, ObjectName: String, Record: `3`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_3(ObjectType: Unit, ObjectName: Unit, Record: `3`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_3(ObjectType: AcDataObjectType, ObjectName: String, Record: `3`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_3(ObjectType: AcDataObjectType, ObjectName: Unit, Record: `3`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_4(ObjectType: Unit, ObjectName: String, Record: Unit, Offset: `4`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_4(ObjectType: Unit, ObjectName: String, Record: AcRecord, Offset: `4`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_4(ObjectType: Unit, ObjectName: Unit, Record: Unit, Offset: `4`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_4(ObjectType: Unit, ObjectName: Unit, Record: AcRecord, Offset: `4`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_4(ObjectType: AcDataObjectType, ObjectName: String, Record: Unit, Offset: `4`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_4(ObjectType: AcDataObjectType, ObjectName: String, Record: AcRecord, Offset: `4`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_4(ObjectType: AcDataObjectType, ObjectName: Unit, Record: Unit, Offset: `4`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_4(ObjectType: AcDataObjectType, ObjectName: Unit, Record: AcRecord, Offset: `4`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_5(ObjectType: Unit, ObjectName: String, Record: `5`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_5(ObjectType: Unit, ObjectName: Unit, Record: `5`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_5(ObjectType: AcDataObjectType, ObjectName: String, Record: `5`): Unit = js.native
-  @JSName("GoToRecord")
-  def GoToRecord_5(ObjectType: AcDataObjectType, ObjectName: Unit, Record: `5`): Unit = js.native
+  def GoToRecord(ObjectType: AcDataObjectType, ObjectName: Unit, Record: AcRecord, Offset: `1` | `0` | `4`): Unit = js.native
   
   def Hourglass(HourglassOn: Boolean): Unit = js.native
   
@@ -338,9 +495,9 @@ trait DoCmd extends StObject {
   def MoveSize(Right: Unit, Down: Unit, Width: Unit, Height: Double): Unit = js.native
   
   def NavigateTo(): Unit = js.native
-  def NavigateTo(Category: js.Any): Unit = js.native
-  def NavigateTo(Category: js.Any, Group: js.Any): Unit = js.native
-  def NavigateTo(Category: Unit, Group: js.Any): Unit = js.native
+  def NavigateTo(Category: Any): Unit = js.native
+  def NavigateTo(Category: Any, Group: Any): Unit = js.native
+  def NavigateTo(Category: Unit, Group: Any): Unit = js.native
   
   /** @param View [View=0] */
   def OpenDataAccessPage(DataAccessPageName: String): Unit = js.native
@@ -560,14 +717,14 @@ trait DoCmd extends StObject {
   ): Unit = js.native
   
   /** @param View [View=0] */
-  def OpenReportOld0(ReportName: js.Any): Unit = js.native
-  def OpenReportOld0(ReportName: js.Any, View: Unit, FilterName: js.Any): Unit = js.native
-  def OpenReportOld0(ReportName: js.Any, View: Unit, FilterName: js.Any, WhereCondition: js.Any): Unit = js.native
-  def OpenReportOld0(ReportName: js.Any, View: Unit, FilterName: Unit, WhereCondition: js.Any): Unit = js.native
-  def OpenReportOld0(ReportName: js.Any, View: AcView): Unit = js.native
-  def OpenReportOld0(ReportName: js.Any, View: AcView, FilterName: js.Any): Unit = js.native
-  def OpenReportOld0(ReportName: js.Any, View: AcView, FilterName: js.Any, WhereCondition: js.Any): Unit = js.native
-  def OpenReportOld0(ReportName: js.Any, View: AcView, FilterName: Unit, WhereCondition: js.Any): Unit = js.native
+  def OpenReportOld0(ReportName: Any): Unit = js.native
+  def OpenReportOld0(ReportName: Any, View: Unit, FilterName: Any): Unit = js.native
+  def OpenReportOld0(ReportName: Any, View: Unit, FilterName: Any, WhereCondition: Any): Unit = js.native
+  def OpenReportOld0(ReportName: Any, View: Unit, FilterName: Unit, WhereCondition: Any): Unit = js.native
+  def OpenReportOld0(ReportName: Any, View: AcView): Unit = js.native
+  def OpenReportOld0(ReportName: Any, View: AcView, FilterName: Any): Unit = js.native
+  def OpenReportOld0(ReportName: Any, View: AcView, FilterName: Any, WhereCondition: Any): Unit = js.native
+  def OpenReportOld0(ReportName: Any, View: AcView, FilterName: Unit, WhereCondition: Any): Unit = js.native
   
   /**
     * @param View [View=0]
@@ -604,7 +761,7 @@ trait DoCmd extends StObject {
     OutputFile: js.UndefOr[String],
     AutoStart: js.UndefOr[Boolean],
     TemplateFile: js.UndefOr[String],
-    Encoding: js.UndefOr[js.Any],
+    Encoding: js.UndefOr[Any],
     OutputQuality: js.UndefOr[AcExportQuality]
   ): Unit = js.native
   /** @param OutputQuality [OutputQuality=0] */
@@ -615,7 +772,7 @@ trait DoCmd extends StObject {
     OutputFile: String,
     AutoStart: Boolean,
     TemplateFile: String,
-    Encoding: js.Any
+    Encoding: Any
   ): Unit = js.native
   def OutputTo(
     ObjectType: `5`,
@@ -624,211 +781,211 @@ trait DoCmd extends StObject {
     OutputFile: String,
     AutoStart: Boolean,
     TemplateFile: String,
-    Encoding: js.Any,
+    Encoding: Any,
     OutputQuality: AcExportQuality
   ): Unit = js.native
   
   def OutputToOld0(ObjectType: AcOutputObjectType): Unit = js.native
-  def OutputToOld0(ObjectType: AcOutputObjectType, ObjectName: js.Any): Unit = js.native
-  def OutputToOld0(ObjectType: AcOutputObjectType, ObjectName: js.Any, OutputFormat: js.Any): Unit = js.native
-  def OutputToOld0(ObjectType: AcOutputObjectType, ObjectName: js.Any, OutputFormat: js.Any, OutputFile: js.Any): Unit = js.native
+  def OutputToOld0(ObjectType: AcOutputObjectType, ObjectName: Any): Unit = js.native
+  def OutputToOld0(ObjectType: AcOutputObjectType, ObjectName: Any, OutputFormat: Any): Unit = js.native
+  def OutputToOld0(ObjectType: AcOutputObjectType, ObjectName: Any, OutputFormat: Any, OutputFile: Any): Unit = js.native
   def OutputToOld0(
     ObjectType: AcOutputObjectType,
-    ObjectName: js.Any,
-    OutputFormat: js.Any,
-    OutputFile: js.Any,
-    AutoStart: js.Any
+    ObjectName: Any,
+    OutputFormat: Any,
+    OutputFile: Any,
+    AutoStart: Any
   ): Unit = js.native
   def OutputToOld0(
     ObjectType: AcOutputObjectType,
-    ObjectName: js.Any,
-    OutputFormat: js.Any,
-    OutputFile: js.Any,
-    AutoStart: js.Any,
-    TemplateFile: js.Any
+    ObjectName: Any,
+    OutputFormat: Any,
+    OutputFile: Any,
+    AutoStart: Any,
+    TemplateFile: Any
   ): Unit = js.native
   def OutputToOld0(
     ObjectType: AcOutputObjectType,
-    ObjectName: js.Any,
-    OutputFormat: js.Any,
-    OutputFile: js.Any,
+    ObjectName: Any,
+    OutputFormat: Any,
+    OutputFile: Any,
     AutoStart: Unit,
-    TemplateFile: js.Any
+    TemplateFile: Any
   ): Unit = js.native
   def OutputToOld0(
     ObjectType: AcOutputObjectType,
-    ObjectName: js.Any,
-    OutputFormat: js.Any,
+    ObjectName: Any,
+    OutputFormat: Any,
     OutputFile: Unit,
-    AutoStart: js.Any
+    AutoStart: Any
   ): Unit = js.native
   def OutputToOld0(
     ObjectType: AcOutputObjectType,
-    ObjectName: js.Any,
-    OutputFormat: js.Any,
+    ObjectName: Any,
+    OutputFormat: Any,
     OutputFile: Unit,
-    AutoStart: js.Any,
-    TemplateFile: js.Any
+    AutoStart: Any,
+    TemplateFile: Any
   ): Unit = js.native
   def OutputToOld0(
     ObjectType: AcOutputObjectType,
-    ObjectName: js.Any,
-    OutputFormat: js.Any,
-    OutputFile: Unit,
-    AutoStart: Unit,
-    TemplateFile: js.Any
-  ): Unit = js.native
-  def OutputToOld0(ObjectType: AcOutputObjectType, ObjectName: js.Any, OutputFormat: Unit, OutputFile: js.Any): Unit = js.native
-  def OutputToOld0(
-    ObjectType: AcOutputObjectType,
-    ObjectName: js.Any,
-    OutputFormat: Unit,
-    OutputFile: js.Any,
-    AutoStart: js.Any
-  ): Unit = js.native
-  def OutputToOld0(
-    ObjectType: AcOutputObjectType,
-    ObjectName: js.Any,
-    OutputFormat: Unit,
-    OutputFile: js.Any,
-    AutoStart: js.Any,
-    TemplateFile: js.Any
-  ): Unit = js.native
-  def OutputToOld0(
-    ObjectType: AcOutputObjectType,
-    ObjectName: js.Any,
-    OutputFormat: Unit,
-    OutputFile: js.Any,
-    AutoStart: Unit,
-    TemplateFile: js.Any
-  ): Unit = js.native
-  def OutputToOld0(
-    ObjectType: AcOutputObjectType,
-    ObjectName: js.Any,
-    OutputFormat: Unit,
-    OutputFile: Unit,
-    AutoStart: js.Any
-  ): Unit = js.native
-  def OutputToOld0(
-    ObjectType: AcOutputObjectType,
-    ObjectName: js.Any,
-    OutputFormat: Unit,
-    OutputFile: Unit,
-    AutoStart: js.Any,
-    TemplateFile: js.Any
-  ): Unit = js.native
-  def OutputToOld0(
-    ObjectType: AcOutputObjectType,
-    ObjectName: js.Any,
-    OutputFormat: Unit,
+    ObjectName: Any,
+    OutputFormat: Any,
     OutputFile: Unit,
     AutoStart: Unit,
-    TemplateFile: js.Any
+    TemplateFile: Any
   ): Unit = js.native
-  def OutputToOld0(ObjectType: AcOutputObjectType, ObjectName: Unit, OutputFormat: js.Any): Unit = js.native
-  def OutputToOld0(ObjectType: AcOutputObjectType, ObjectName: Unit, OutputFormat: js.Any, OutputFile: js.Any): Unit = js.native
+  def OutputToOld0(ObjectType: AcOutputObjectType, ObjectName: Any, OutputFormat: Unit, OutputFile: Any): Unit = js.native
   def OutputToOld0(
     ObjectType: AcOutputObjectType,
-    ObjectName: Unit,
-    OutputFormat: js.Any,
-    OutputFile: js.Any,
-    AutoStart: js.Any
-  ): Unit = js.native
-  def OutputToOld0(
-    ObjectType: AcOutputObjectType,
-    ObjectName: Unit,
-    OutputFormat: js.Any,
-    OutputFile: js.Any,
-    AutoStart: js.Any,
-    TemplateFile: js.Any
+    ObjectName: Any,
+    OutputFormat: Unit,
+    OutputFile: Any,
+    AutoStart: Any
   ): Unit = js.native
   def OutputToOld0(
     ObjectType: AcOutputObjectType,
-    ObjectName: Unit,
-    OutputFormat: js.Any,
-    OutputFile: js.Any,
+    ObjectName: Any,
+    OutputFormat: Unit,
+    OutputFile: Any,
+    AutoStart: Any,
+    TemplateFile: Any
+  ): Unit = js.native
+  def OutputToOld0(
+    ObjectType: AcOutputObjectType,
+    ObjectName: Any,
+    OutputFormat: Unit,
+    OutputFile: Any,
     AutoStart: Unit,
-    TemplateFile: js.Any
+    TemplateFile: Any
   ): Unit = js.native
   def OutputToOld0(
     ObjectType: AcOutputObjectType,
-    ObjectName: Unit,
-    OutputFormat: js.Any,
-    OutputFile: Unit,
-    AutoStart: js.Any
-  ): Unit = js.native
-  def OutputToOld0(
-    ObjectType: AcOutputObjectType,
-    ObjectName: Unit,
-    OutputFormat: js.Any,
-    OutputFile: Unit,
-    AutoStart: js.Any,
-    TemplateFile: js.Any
-  ): Unit = js.native
-  def OutputToOld0(
-    ObjectType: AcOutputObjectType,
-    ObjectName: Unit,
-    OutputFormat: js.Any,
-    OutputFile: Unit,
-    AutoStart: Unit,
-    TemplateFile: js.Any
-  ): Unit = js.native
-  def OutputToOld0(ObjectType: AcOutputObjectType, ObjectName: Unit, OutputFormat: Unit, OutputFile: js.Any): Unit = js.native
-  def OutputToOld0(
-    ObjectType: AcOutputObjectType,
-    ObjectName: Unit,
-    OutputFormat: Unit,
-    OutputFile: js.Any,
-    AutoStart: js.Any
-  ): Unit = js.native
-  def OutputToOld0(
-    ObjectType: AcOutputObjectType,
-    ObjectName: Unit,
-    OutputFormat: Unit,
-    OutputFile: js.Any,
-    AutoStart: js.Any,
-    TemplateFile: js.Any
-  ): Unit = js.native
-  def OutputToOld0(
-    ObjectType: AcOutputObjectType,
-    ObjectName: Unit,
-    OutputFormat: Unit,
-    OutputFile: js.Any,
-    AutoStart: Unit,
-    TemplateFile: js.Any
-  ): Unit = js.native
-  def OutputToOld0(
-    ObjectType: AcOutputObjectType,
-    ObjectName: Unit,
+    ObjectName: Any,
     OutputFormat: Unit,
     OutputFile: Unit,
-    AutoStart: js.Any
+    AutoStart: Any
   ): Unit = js.native
   def OutputToOld0(
     ObjectType: AcOutputObjectType,
-    ObjectName: Unit,
+    ObjectName: Any,
     OutputFormat: Unit,
     OutputFile: Unit,
-    AutoStart: js.Any,
-    TemplateFile: js.Any
+    AutoStart: Any,
+    TemplateFile: Any
   ): Unit = js.native
   def OutputToOld0(
     ObjectType: AcOutputObjectType,
-    ObjectName: Unit,
+    ObjectName: Any,
     OutputFormat: Unit,
     OutputFile: Unit,
     AutoStart: Unit,
-    TemplateFile: js.Any
+    TemplateFile: Any
+  ): Unit = js.native
+  def OutputToOld0(ObjectType: AcOutputObjectType, ObjectName: Unit, OutputFormat: Any): Unit = js.native
+  def OutputToOld0(ObjectType: AcOutputObjectType, ObjectName: Unit, OutputFormat: Any, OutputFile: Any): Unit = js.native
+  def OutputToOld0(
+    ObjectType: AcOutputObjectType,
+    ObjectName: Unit,
+    OutputFormat: Any,
+    OutputFile: Any,
+    AutoStart: Any
+  ): Unit = js.native
+  def OutputToOld0(
+    ObjectType: AcOutputObjectType,
+    ObjectName: Unit,
+    OutputFormat: Any,
+    OutputFile: Any,
+    AutoStart: Any,
+    TemplateFile: Any
+  ): Unit = js.native
+  def OutputToOld0(
+    ObjectType: AcOutputObjectType,
+    ObjectName: Unit,
+    OutputFormat: Any,
+    OutputFile: Any,
+    AutoStart: Unit,
+    TemplateFile: Any
+  ): Unit = js.native
+  def OutputToOld0(
+    ObjectType: AcOutputObjectType,
+    ObjectName: Unit,
+    OutputFormat: Any,
+    OutputFile: Unit,
+    AutoStart: Any
+  ): Unit = js.native
+  def OutputToOld0(
+    ObjectType: AcOutputObjectType,
+    ObjectName: Unit,
+    OutputFormat: Any,
+    OutputFile: Unit,
+    AutoStart: Any,
+    TemplateFile: Any
+  ): Unit = js.native
+  def OutputToOld0(
+    ObjectType: AcOutputObjectType,
+    ObjectName: Unit,
+    OutputFormat: Any,
+    OutputFile: Unit,
+    AutoStart: Unit,
+    TemplateFile: Any
+  ): Unit = js.native
+  def OutputToOld0(ObjectType: AcOutputObjectType, ObjectName: Unit, OutputFormat: Unit, OutputFile: Any): Unit = js.native
+  def OutputToOld0(
+    ObjectType: AcOutputObjectType,
+    ObjectName: Unit,
+    OutputFormat: Unit,
+    OutputFile: Any,
+    AutoStart: Any
+  ): Unit = js.native
+  def OutputToOld0(
+    ObjectType: AcOutputObjectType,
+    ObjectName: Unit,
+    OutputFormat: Unit,
+    OutputFile: Any,
+    AutoStart: Any,
+    TemplateFile: Any
+  ): Unit = js.native
+  def OutputToOld0(
+    ObjectType: AcOutputObjectType,
+    ObjectName: Unit,
+    OutputFormat: Unit,
+    OutputFile: Any,
+    AutoStart: Unit,
+    TemplateFile: Any
+  ): Unit = js.native
+  def OutputToOld0(
+    ObjectType: AcOutputObjectType,
+    ObjectName: Unit,
+    OutputFormat: Unit,
+    OutputFile: Unit,
+    AutoStart: Any
+  ): Unit = js.native
+  def OutputToOld0(
+    ObjectType: AcOutputObjectType,
+    ObjectName: Unit,
+    OutputFormat: Unit,
+    OutputFile: Unit,
+    AutoStart: Any,
+    TemplateFile: Any
+  ): Unit = js.native
+  def OutputToOld0(
+    ObjectType: AcOutputObjectType,
+    ObjectName: Unit,
+    OutputFormat: Unit,
+    OutputFile: Unit,
+    AutoStart: Unit,
+    TemplateFile: Any
   ): Unit = js.native
   
   def OutputToOld1(
     ObjectType: AcOutputObjectType,
-    ObjectName: js.UndefOr[js.Any],
-    OutputFormat: js.UndefOr[js.Any],
-    OutputFile: js.UndefOr[js.Any],
-    AutoStart: js.UndefOr[js.Any],
-    TemplateFile: js.UndefOr[js.Any],
-    Encoding: js.UndefOr[js.Any]
+    ObjectName: js.UndefOr[Any],
+    OutputFormat: js.UndefOr[Any],
+    OutputFile: js.UndefOr[Any],
+    AutoStart: js.UndefOr[Any],
+    TemplateFile: js.UndefOr[Any],
+    Encoding: js.UndefOr[Any]
   ): Unit = js.native
   
   /**
@@ -1201,13 +1358,13 @@ trait DoCmd extends StObject {
   def SetOrderBy(OrderBy: String): Unit = js.native
   def SetOrderBy(OrderBy: String, ControlName: String): Unit = js.native
   
-  def SetParameter(Name: String, Expression: js.Any): Unit = js.native
+  def SetParameter(Name: String, Expression: Any): Unit = js.native
   
   /** @param Property [Property=0] */
   def SetProperty(ControlName: String): Unit = js.native
-  def SetProperty(ControlName: String, Property: Unit, Value: js.Any): Unit = js.native
+  def SetProperty(ControlName: String, Property: Unit, Value: Any): Unit = js.native
   def SetProperty(ControlName: String, Property: AcProperty): Unit = js.native
-  def SetProperty(ControlName: String, Property: AcProperty, Value: js.Any): Unit = js.native
+  def SetProperty(ControlName: String, Property: AcProperty, Value: Any): Unit = js.native
   
   def SetWarnings(WarningsOn: Boolean): Unit = js.native
   
@@ -1521,7 +1678,7 @@ trait DoCmd extends StObject {
     TableName: String,
     FileName: String,
     HasFieldNames: Boolean,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   @JSName("TransferSpreadsheet")
   def TransferSpreadsheet_0(
@@ -1530,7 +1687,7 @@ trait DoCmd extends StObject {
     TableName: String,
     FileName: String,
     HasFieldNames: Unit,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   @JSName("TransferSpreadsheet")
   def TransferSpreadsheet_0(
@@ -1547,7 +1704,7 @@ trait DoCmd extends StObject {
     TableName: String,
     FileName: Unit,
     HasFieldNames: Boolean,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   @JSName("TransferSpreadsheet")
   def TransferSpreadsheet_0(
@@ -1556,7 +1713,7 @@ trait DoCmd extends StObject {
     TableName: String,
     FileName: Unit,
     HasFieldNames: Unit,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   @JSName("TransferSpreadsheet")
   def TransferSpreadsheet_0(TransferType: `0`, SpreadsheetType: Unit, TableName: Unit, FileName: String): Unit = js.native
@@ -1575,7 +1732,7 @@ trait DoCmd extends StObject {
     TableName: Unit,
     FileName: String,
     HasFieldNames: Boolean,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   @JSName("TransferSpreadsheet")
   def TransferSpreadsheet_0(
@@ -1584,7 +1741,7 @@ trait DoCmd extends StObject {
     TableName: Unit,
     FileName: String,
     HasFieldNames: Unit,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   @JSName("TransferSpreadsheet")
   def TransferSpreadsheet_0(TransferType: `0`, SpreadsheetType: Unit, TableName: Unit, FileName: Unit, HasFieldNames: Boolean): Unit = js.native
@@ -1595,7 +1752,7 @@ trait DoCmd extends StObject {
     TableName: Unit,
     FileName: Unit,
     HasFieldNames: Boolean,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   @JSName("TransferSpreadsheet")
   def TransferSpreadsheet_0(
@@ -1604,7 +1761,7 @@ trait DoCmd extends StObject {
     TableName: Unit,
     FileName: Unit,
     HasFieldNames: Unit,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   @JSName("TransferSpreadsheet")
   def TransferSpreadsheet_0(TransferType: `0`, SpreadsheetType: AcSpreadSheetType): Unit = js.native
@@ -1627,7 +1784,7 @@ trait DoCmd extends StObject {
     TableName: String,
     FileName: String,
     HasFieldNames: Boolean,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   @JSName("TransferSpreadsheet")
   def TransferSpreadsheet_0(
@@ -1636,7 +1793,7 @@ trait DoCmd extends StObject {
     TableName: String,
     FileName: String,
     HasFieldNames: Unit,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   @JSName("TransferSpreadsheet")
   def TransferSpreadsheet_0(
@@ -1653,7 +1810,7 @@ trait DoCmd extends StObject {
     TableName: String,
     FileName: Unit,
     HasFieldNames: Boolean,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   @JSName("TransferSpreadsheet")
   def TransferSpreadsheet_0(
@@ -1662,7 +1819,7 @@ trait DoCmd extends StObject {
     TableName: String,
     FileName: Unit,
     HasFieldNames: Unit,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   @JSName("TransferSpreadsheet")
   def TransferSpreadsheet_0(TransferType: `0`, SpreadsheetType: AcSpreadSheetType, TableName: Unit, FileName: String): Unit = js.native
@@ -1681,7 +1838,7 @@ trait DoCmd extends StObject {
     TableName: Unit,
     FileName: String,
     HasFieldNames: Boolean,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   @JSName("TransferSpreadsheet")
   def TransferSpreadsheet_0(
@@ -1690,7 +1847,7 @@ trait DoCmd extends StObject {
     TableName: Unit,
     FileName: String,
     HasFieldNames: Unit,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   @JSName("TransferSpreadsheet")
   def TransferSpreadsheet_0(
@@ -1707,7 +1864,7 @@ trait DoCmd extends StObject {
     TableName: Unit,
     FileName: Unit,
     HasFieldNames: Boolean,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   @JSName("TransferSpreadsheet")
   def TransferSpreadsheet_0(
@@ -1716,7 +1873,7 @@ trait DoCmd extends StObject {
     TableName: Unit,
     FileName: Unit,
     HasFieldNames: Unit,
-    Range: js.Any
+    Range: Any
   ): Unit = js.native
   
   /**

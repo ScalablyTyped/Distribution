@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postcss-selector-parser", "Parser")
 @js.native
-class Parser protected () extends StObject {
+open class Parser protected () extends StObject {
   def this(input: ParserOptions) = this()
   
   var current: Selector_ = js.native

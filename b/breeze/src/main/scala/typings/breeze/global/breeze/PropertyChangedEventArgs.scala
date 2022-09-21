@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("breeze.PropertyChangedEventArgs")
 @js.native
-class PropertyChangedEventArgs ()
+open class PropertyChangedEventArgs ()
   extends StObject
      with typings.breeze.breeze.PropertyChangedEventArgs {
   
@@ -16,13 +16,13 @@ class PropertyChangedEventArgs ()
   var entity: Entity = js.native
   
   /* CompleteClass */
-  var newValue: js.Any = js.native
+  var newValue: Any = js.native
   
   /* CompleteClass */
-  var oldValue: js.Any = js.native
+  var oldValue: Any = js.native
   
   /* CompleteClass */
-  var parent: js.Any = js.native
+  var parent: Any = js.native
   
   /* CompleteClass */
   var property: IProperty = js.native

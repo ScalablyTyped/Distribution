@@ -21,7 +21,7 @@ trait NegativeBarFormat extends StObject {
   /* private */ @JSName("Excel.NegativeBarFormat_typekey")
   var ExcelDotNegativeBarFormat_typekey: NegativeBarFormat
   
-  val Parent: js.Any
+  val Parent: Any
 }
 object NegativeBarFormat {
   
@@ -33,7 +33,7 @@ object NegativeBarFormat {
     ColorType: XlDataBarNegativeColorType,
     Creator: XlCreator,
     ExcelDotNegativeBarFormat_typekey: NegativeBarFormat,
-    Parent: js.Any
+    Parent: Any
   ): NegativeBarFormat = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], BorderColor = BorderColor.asInstanceOf[js.Any], BorderColorType = BorderColorType.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], ColorType = ColorType.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Excel.NegativeBarFormat_typekey")(ExcelDotNegativeBarFormat_typekey.asInstanceOf[js.Any])
@@ -56,6 +56,6 @@ object NegativeBarFormat {
     
     inline def setExcelDotNegativeBarFormat_typekey(value: NegativeBarFormat): Self = StObject.set(x, "Excel.NegativeBarFormat_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

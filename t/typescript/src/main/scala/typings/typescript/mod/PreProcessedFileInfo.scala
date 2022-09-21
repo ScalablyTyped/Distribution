@@ -37,24 +37,24 @@ object PreProcessedFileInfo {
     
     inline def setAmbientExternalModulesUndefined: Self = StObject.set(x, "ambientExternalModules", js.undefined)
     
-    inline def setAmbientExternalModulesVarargs(value: java.lang.String*): Self = StObject.set(x, "ambientExternalModules", js.Array(value :_*))
+    inline def setAmbientExternalModulesVarargs(value: java.lang.String*): Self = StObject.set(x, "ambientExternalModules", js.Array(value*))
     
     inline def setImportedFiles(value: js.Array[FileReference]): Self = StObject.set(x, "importedFiles", value.asInstanceOf[js.Any])
     
-    inline def setImportedFilesVarargs(value: FileReference*): Self = StObject.set(x, "importedFiles", js.Array(value :_*))
+    inline def setImportedFilesVarargs(value: FileReference*): Self = StObject.set(x, "importedFiles", js.Array(value*))
     
     inline def setIsLibFile(value: Boolean): Self = StObject.set(x, "isLibFile", value.asInstanceOf[js.Any])
     
     inline def setLibReferenceDirectives(value: js.Array[FileReference]): Self = StObject.set(x, "libReferenceDirectives", value.asInstanceOf[js.Any])
     
-    inline def setLibReferenceDirectivesVarargs(value: FileReference*): Self = StObject.set(x, "libReferenceDirectives", js.Array(value :_*))
+    inline def setLibReferenceDirectivesVarargs(value: FileReference*): Self = StObject.set(x, "libReferenceDirectives", js.Array(value*))
     
     inline def setReferencedFiles(value: js.Array[FileReference]): Self = StObject.set(x, "referencedFiles", value.asInstanceOf[js.Any])
     
-    inline def setReferencedFilesVarargs(value: FileReference*): Self = StObject.set(x, "referencedFiles", js.Array(value :_*))
+    inline def setReferencedFilesVarargs(value: FileReference*): Self = StObject.set(x, "referencedFiles", js.Array(value*))
     
     inline def setTypeReferenceDirectives(value: js.Array[FileReference]): Self = StObject.set(x, "typeReferenceDirectives", value.asInstanceOf[js.Any])
     
-    inline def setTypeReferenceDirectivesVarargs(value: FileReference*): Self = StObject.set(x, "typeReferenceDirectives", js.Array(value :_*))
+    inline def setTypeReferenceDirectivesVarargs(value: FileReference*): Self = StObject.set(x, "typeReferenceDirectives", js.Array(value*))
   }
 }

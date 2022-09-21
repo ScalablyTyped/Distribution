@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-file
 
-Typings are for version 6.0.2
+Typings are for version 7.0.0
 
 ## Library description:
 Cordova File Plugin
@@ -10,15 +10,12 @@ Cordova File Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-file |
 | Keywords           | cordova, file, ecosystem:cordova, cordova-android, cordova-browser, cordova-ios, cordova-osx, cordova-windows |
-| # releases         | 1 |
-| # dependents       | 49 |
-| # downloads        | 2388634 |
-| # stars            | 26 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 258190.66666666666 |
+| # stars            | 704.0 |
 
 ## Links
-- [Homepage](https://github.com/apache/cordova-plugin-file#readme)
-- [Bugs](https://github.com/apache/cordova-plugin-file/issues)
-- [Repository](https://github.com/apache/cordova-plugin-file)
 - [Npm](https://www.npmjs.com/package/cordova-plugin-file)
     
 

@@ -41,17 +41,17 @@ object stackingUtilsMod {
   
   @JSImport("plottable/build/src/utils/stackingUtils", "normalizeKey")
   @js.native
-  val normalizeKey: (js.Function1[/* key */ js.Any, String]) & MemoizedFunction = js.native
+  val normalizeKey: (js.Function1[/* key */ Any, String]) & MemoizedFunction = js.native
   
-  inline def stack(datasets: js.Array[Dataset], keyAccessor: IAccessor[js.Any], valueAccessor: IAccessor[Double]): StackingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], valueAccessor.asInstanceOf[js.Any])).asInstanceOf[StackingResult]
+  inline def stack(datasets: js.Array[Dataset], keyAccessor: IAccessor[Any], valueAccessor: IAccessor[Double]): StackingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], valueAccessor.asInstanceOf[js.Any])).asInstanceOf[StackingResult]
   inline def stack(
     datasets: js.Array[Dataset],
-    keyAccessor: IAccessor[js.Any],
+    keyAccessor: IAccessor[Any],
     valueAccessor: IAccessor[Double],
     stackingOrder: IStackingOrder
   ): StackingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], valueAccessor.asInstanceOf[js.Any], stackingOrder.asInstanceOf[js.Any])).asInstanceOf[StackingResult]
   
-  inline def stackedExtent(stackingResult: StackingResult, keyAccessor: IAccessor[js.Any], filter: IAccessor[Boolean]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("stackedExtent")(stackingResult.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def stackedExtent(stackingResult: StackingResult, keyAccessor: IAccessor[Any], filter: IAccessor[Boolean]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("stackedExtent")(stackingResult.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   inline def stackedExtents[D](stackingResult: GenericStackingResult[D]): MaximumExtents[D] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackedExtents")(stackingResult.asInstanceOf[js.Any]).asInstanceOf[MaximumExtents[D]]
   
@@ -63,7 +63,7 @@ object stackingUtilsMod {
     
     var originalDataset: Dataset
     
-    var originalDatum: js.Any
+    var originalDatum: Any
     
     var originalIndex: Double
     
@@ -75,7 +75,7 @@ object stackingUtilsMod {
       axisValue: D,
       offset: Double,
       originalDataset: Dataset,
-      originalDatum: js.Any,
+      originalDatum: Any,
       originalIndex: Double,
       value: Double
     ): GenericStackedDatum[D] = {
@@ -91,7 +91,7 @@ object stackingUtilsMod {
       
       inline def setOriginalDataset(value: Dataset): Self = StObject.set(x, "originalDataset", value.asInstanceOf[js.Any])
       
-      inline def setOriginalDatum(value: js.Any): Self = StObject.set(x, "originalDatum", value.asInstanceOf[js.Any])
+      inline def setOriginalDatum(value: Any): Self = StObject.set(x, "originalDatum", value.asInstanceOf[js.Any])
       
       inline def setOriginalIndex(value: Double): Self = StObject.set(x, "originalIndex", value.asInstanceOf[js.Any])
       

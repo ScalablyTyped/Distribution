@@ -1,6 +1,6 @@
 package typings.formatjsIntlListformat
 
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractUtilsMod.LiteralPart
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractMod.LiteralPart
 import typings.formatjsEcma402Abstract.typesListMod.ListPatternFieldsData
 import typings.formatjsEcma402Abstract.typesListMod.ListPatternLocaleData
 import typings.formatjsIntlListformat.anon.PickIntlListFormatOptions
@@ -22,7 +22,7 @@ object libMod {
   
   @JSImport("@formatjs/intl-listformat/lib", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with ListFormat {
     def this(locales: String) = this()
@@ -35,7 +35,7 @@ object libMod {
     override def format(elements: js.Array[String]): String = js.native
     
     /* CompleteClass */
-    override def formatToParts(elements: js.Array[String]): js.Array[Part] = js.native
+    override def formatToParts(elements: js.Array[String]): js.Array[Part[String]] = js.native
     
     /* CompleteClass */
     override def resolvedOptions(): ResolvedIntlListFormatOptions = js.native
@@ -49,24 +49,24 @@ object libMod {
     
     @JSImport("@formatjs/intl-listformat/lib", "default.__INTERNAL_SLOT_MAP__")
     @js.native
-    val __INTERNAL_SLOT_MAP__ : js.Any = js.native
+    val __INTERNAL_SLOT_MAP__ : Any = js.native
     
-    inline def __addLocaleData(data: ListPatternLocaleData*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__addLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def __addLocaleData(data: ListPatternLocaleData*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__addLocaleData")(data.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
     
     @JSImport("@formatjs/intl-listformat/lib", "default.__defaultLocale")
     @js.native
-    def __defaultLocale: js.Any = js.native
-    inline def __defaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__defaultLocale")(x.asInstanceOf[js.Any])
+    def __defaultLocale: Any = js.native
+    inline def __defaultLocale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__defaultLocale")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-listformat/lib", "default.availableLocales")
     @js.native
-    def availableLocales: js.Any = js.native
-    inline def availableLocales_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableLocales")(x.asInstanceOf[js.Any])
+    def availableLocales: Any = js.native
+    inline def availableLocales_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableLocales")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-listformat/lib", "default.getDefaultLocale")
     @js.native
-    def getDefaultLocale: js.Any = js.native
-    inline def getDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultLocale")(x.asInstanceOf[js.Any])
+    def getDefaultLocale: Any = js.native
+    inline def getDefaultLocale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultLocale")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-listformat/lib", "default.localeData")
     @js.native
@@ -80,8 +80,8 @@ object libMod {
     
     @JSImport("@formatjs/intl-listformat/lib", "default.relevantExtensionKeys")
     @js.native
-    def relevantExtensionKeys: js.Any = js.native
-    inline def relevantExtensionKeys_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relevantExtensionKeys")(x.asInstanceOf[js.Any])
+    def relevantExtensionKeys: Any = js.native
+    inline def relevantExtensionKeys_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relevantExtensionKeys")(x.asInstanceOf[js.Any])
     
     inline def supportedLocalesOf(locales: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     inline def supportedLocalesOf(locales: String, options: PickIntlListFormatOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
@@ -89,25 +89,25 @@ object libMod {
     inline def supportedLocalesOf(locales: js.Array[String], options: PickIntlListFormatOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   }
   
-  trait ElementPart extends StObject {
+  trait ElementPart[T] extends StObject {
     
     var `type`: element
     
-    var value: String
+    var value: T
   }
   object ElementPart {
     
-    inline def apply(value: String): ElementPart = {
+    inline def apply[T](value: T): ElementPart[T] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("element")
-      __obj.asInstanceOf[ElementPart]
+      __obj.asInstanceOf[ElementPart[T]]
     }
     
-    extension [Self <: ElementPart](x: Self) {
+    extension [Self <: ElementPart[?], T](x: Self & ElementPart[T]) {
       
       inline def setType(value: element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,20 +122,21 @@ object libMod {
     var localeMatcher: js.UndefOr[(`best fit`) | lookup] = js.undefined
     
     /**
-      * The length of the internationalized message. Possible values are:
-      * - "long" (default, e.g., in 1 month)
-      * - "short" (e.g., in 1 mo.),
-      * - or "narrow" (e.g., in 1 mo.).
-      * The narrow style could be similar to the short style for some locales.
+      * The length of the formatted message.
+      * Possible values are:
+      * - "long" (default, e.g., "A, B, and C");
+      * - "short" (e.g., "A, B, C"), or
+      * - "narrow" (e.g., "A B C").
+      * When style is "short" or "narrow", "unit" is the only allowed value for the type option.
       */
     var style: js.UndefOr[long | short | narrow] = js.undefined
     
     /**
-      * The format of output message. Possible values are:
-      * - "always" (default, e.g., 1 day ago),
-      * - or "auto" (e.g., yesterday).
-      * The "auto" value allows to not always have to
-      * use numeric values in the output.
+      * The format of output message.
+      * Possible values are :
+      * - "conjunction" that stands for "and"-based lists (default, e.g., "A, B, and C")
+      * - "disjunction" that stands for "or"-based lists (e.g., "A, B, or C").
+      * - "unit" stands for lists of values with units (e.g., "5 pounds, 12 ounces").
       */
     var `type`: js.UndefOr[conjunction | disjunction | unit] = js.undefined
   }
@@ -166,7 +167,7 @@ object libMod {
     
     def format(elements: js.Array[String]): String
     
-    def formatToParts(elements: js.Array[String]): js.Array[Part]
+    def formatToParts(elements: js.Array[String]): js.Array[Part[String]]
     
     def resolvedOptions(): ResolvedIntlListFormatOptions
   }
@@ -174,7 +175,7 @@ object libMod {
     
     inline def apply(
       format: js.Array[String] => String,
-      formatToParts: js.Array[String] => js.Array[Part],
+      formatToParts: js.Array[String] => js.Array[Part[String]],
       resolvedOptions: () => ResolvedIntlListFormatOptions
     ): ListFormat = {
       val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), formatToParts = js.Any.fromFunction1(formatToParts), resolvedOptions = js.Any.fromFunction0(resolvedOptions))
@@ -185,40 +186,39 @@ object libMod {
       
       inline def setFormat(value: js.Array[String] => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
-      inline def setFormatToParts(value: js.Array[String] => js.Array[Part]): Self = StObject.set(x, "formatToParts", js.Any.fromFunction1(value))
+      inline def setFormatToParts(value: js.Array[String] => js.Array[Part[String]]): Self = StObject.set(x, "formatToParts", js.Any.fromFunction1(value))
       
       inline def setResolvedOptions(value: () => ResolvedIntlListFormatOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
     }
   }
   
-  type Part = LiteralPart | ElementPart
+  type Part[T] = LiteralPart | (ElementPart[String | T])
   
   trait ResolvedIntlListFormatOptions extends StObject {
     
     /**
-      * The BCP 47 language tag for the locale actually used.
-      * If any Unicode extension values were requested in the
-      * input BCP 47 language tag that led to this locale,
-      * the key-value pairs that were requested and are
-      * supported for this locale are included in locale.
+      * A string with a BCP 47 language tag, or an array of such strings.
+      * For the general form and interpretation of the locales argument,
+      * see the [Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locale_identification_and_negotiation) page.
       */
     var locale: String
     
     /**
-      * The length of the internationalized message. Possible values are:
-      * - "long" (default, e.g., in 1 month)
-      * - "short" (e.g., in 1 mo.),
-      * - or "narrow" (e.g., in 1 mo.).
-      * The narrow style could be similar to the short style for some locales.
+      * The length of the formatted message.
+      * Possible values are:
+      * - "long" (default, e.g., "A, B, and C");
+      * - "short" (e.g., "A, B, C"), or
+      * - "narrow" (e.g., "A B C").
+      * When style is "short" or "narrow", "unit" is the only allowed value for the type option.
       */
     var style: long | short | narrow
     
     /**
-      * The format of output message. Possible values are:
-      * - "always" (default, e.g., 1 day ago),
-      * - or "auto" (e.g., yesterday).
-      * The "auto" value allows to not always have to
-      * use numeric values in the output.
+      * The format of output message.
+      * Possible values are :
+      * - "conjunction" that stands for "and"-based lists (default, e.g., "A, B, and C")
+      * - "disjunction" that stands for "or"-based lists (e.g., "A, B, or C").
+      * - "unit" stands for lists of values with units (e.g., "5 pounds, 12 ounces").
       */
     var `type`: conjunction | disjunction | unit
   }

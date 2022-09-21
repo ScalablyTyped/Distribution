@@ -20,8 +20,8 @@ trait ShortcutOption extends StObject {
     *
     * @param msg {string} Failure message
     */
-  def failed(): js.Any = js.native
-  def failed(msg: String): js.Any = js.native
+  def failed(): Any = js.native
+  def failed(msg: String): Any = js.native
   
   /**
     * {string} Key combinations of the shortcut, such as "ctrl+shift+a".

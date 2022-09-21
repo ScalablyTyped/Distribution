@@ -27,7 +27,7 @@ trait OriginationRoute extends StObject {
   var Protocol: js.UndefOr[OriginationRouteProtocol] = js.undefined
   
   /**
-    * The weight associated with the host. If hosts are equal in priority, calls are distributed among them based on their relative weight.
+    * The weight associated with the host. If hosts are equal in priority, calls are redistributed among them based on their relative weight.
     */
   var Weight: js.UndefOr[OriginationRouteWeight] = js.undefined
 }

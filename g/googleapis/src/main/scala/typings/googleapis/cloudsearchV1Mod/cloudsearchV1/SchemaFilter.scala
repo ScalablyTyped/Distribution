@@ -4,15 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A generic way of expressing filters in a query, which supports two
-  * approaches: &lt;br/&gt;&lt;br/&gt; **1. Setting a ValueFilter.** The name
-  * must match an operator_name defined in the schema for your data source.
-  * &lt;br/&gt; **2. Setting a CompositeFilter.** The filters are evaluated
-  * using the logical operator. The top-level operators can only be either an
-  * AND or a NOT. AND can appear only at the top-most level. OR can appear only
-  * under a top-level AND.
-  */
 trait SchemaFilter extends StObject {
   
   var compositeFilter: js.UndefOr[SchemaCompositeFilter] = js.undefined

@@ -54,11 +54,11 @@ object anon {
       
       inline def setConstants(value: js.Array[SymbolicTensor | Tensor[Rank]]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       
-      inline def setConstantsVarargs(value: (SymbolicTensor | Tensor[Rank])*): Self = StObject.set(x, "constants", js.Array(value :_*))
+      inline def setConstantsVarargs(value: (SymbolicTensor | Tensor[Rank])*): Self = StObject.set(x, "constants", js.Array(value*))
       
       inline def setInitialState(value: js.Array[SymbolicTensor | Tensor[Rank]]): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      inline def setInitialStateVarargs(value: (SymbolicTensor | Tensor[Rank])*): Self = StObject.set(x, "initialState", js.Array(value :_*))
+      inline def setInitialStateVarargs(value: (SymbolicTensor | Tensor[Rank])*): Self = StObject.set(x, "initialState", js.Array(value*))
       
       inline def setInputs(value: Tensor[Rank] | SymbolicTensor): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     }
@@ -67,6 +67,8 @@ object anon {
   trait Count extends StObject {
     
     var count: js.UndefOr[Double] = js.undefined
+    
+    var dropoutFunc: js.UndefOr[js.Function] = js.undefined
     
     def ones(): Tensor[Rank]
     
@@ -86,6 +88,10 @@ object anon {
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
       inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      
+      inline def setDropoutFunc(value: js.Function): Self = StObject.set(x, "dropoutFunc", value.asInstanceOf[js.Any])
+      
+      inline def setDropoutFuncUndefined: Self = StObject.set(x, "dropoutFunc", js.undefined)
       
       inline def setOnes(value: () => Tensor[Rank]): Self = StObject.set(x, "ones", js.Any.fromFunction0(value))
       
@@ -153,7 +159,7 @@ object anon {
       
       inline def setSorted(value: js.Array[SymbolicTensor]): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
       
-      inline def setSortedVarargs(value: SymbolicTensor*): Self = StObject.set(x, "sorted", js.Array(value :_*))
+      inline def setSortedVarargs(value: SymbolicTensor*): Self = StObject.set(x, "sorted", js.Array(value*))
     }
   }
   

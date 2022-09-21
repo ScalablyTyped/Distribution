@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-one-tap
 
-Typings are for version 1.0
+Typings are for version 1.2
 
 ## Library description:
 Google One Tap Login
@@ -9,11 +9,11 @@ Google One Tap Login
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | google-one-tap |
-| Keywords           | google one tap, google sign in, google sign up |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 114 |
-| # stars            | 0 |
+| Keywords           | google one tap, google sign in, google sign up, react, vue |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 2823.0 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](https://github.com/BurakGur/google-one-tap#readme)

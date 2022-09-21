@@ -14,7 +14,7 @@ object mod extends Shortcut {
   @js.native
   trait DomReady extends StObject {
     
-    def apply(callback: js.Function0[js.Any]): DomReady = js.native
+    def apply(callback: js.Function0[Any]): DomReady = js.native
     
     var version: String = js.native
   }

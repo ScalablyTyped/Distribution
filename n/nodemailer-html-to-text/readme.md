@@ -11,14 +11,11 @@ Generate text content from html for Nodemailer e-mails
 | Full name          | nodemailer-html-to-text |
 | Keywords           | Nodemailer |
 | # releases         | 2 |
-| # dependents       | 74 |
-| # downloads        | 693418 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 52262.666666666664 |
+| # stars            | 46.0 |
 
 ## Links
-- [Homepage](https://github.com/andris9/nodemailer-html-to-text)
-- [Bugs](https://github.com/andris9/nodemailer-html-to-text/issues)
-- [Repository](https://github.com/andris9/nodemailer-html-to-text)
 - [Npm](https://www.npmjs.com/package/nodemailer-html-to-text)
     
 

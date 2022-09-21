@@ -28,7 +28,7 @@ object Resources {
     
     inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value*))
     
     inline def setVirtualMachine(value: VirtualMachine): Self = StObject.set(x, "virtualMachine", value.asInstanceOf[js.Any])
     
@@ -38,6 +38,6 @@ object Resources {
     
     inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value*))
   }
 }

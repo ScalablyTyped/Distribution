@@ -1,13 +1,11 @@
 package typings.mssql.mod
 
-import typings.tedious.mod.ConnectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IOptions
-  extends StObject
-     with ConnectionOptions {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify tds.ConnectionOptions * / any, 'useColumnNames'> ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify tds.ConnectionOptions * / any[P]} */ trait IOptions extends StObject {
   
   var beforeConnect: js.UndefOr[Unit] = js.undefined
   

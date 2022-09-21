@@ -22,7 +22,7 @@ trait EdgeLength extends StObject {
     * 30
     * @see https://echarts.apache.org/en/option.html#series-graph.force.edgeLength
     */
-  var edgeLength: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+  var edgeLength: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
   /**
     * It will slow down the nodes' movement. The value range is from 0 to 1.
@@ -97,7 +97,7 @@ trait EdgeLength extends StObject {
     * 50
     * @see https://echarts.apache.org/en/option.html#series-graph.force.repulsion
     */
-  var repulsion: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+  var repulsion: js.UndefOr[js.Array[Any] | Double] = js.undefined
 }
 object EdgeLength {
   
@@ -108,11 +108,11 @@ object EdgeLength {
   
   extension [Self <: EdgeLength](x: Self) {
     
-    inline def setEdgeLength(value: js.Array[js.Any] | Double): Self = StObject.set(x, "edgeLength", value.asInstanceOf[js.Any])
+    inline def setEdgeLength(value: js.Array[Any] | Double): Self = StObject.set(x, "edgeLength", value.asInstanceOf[js.Any])
     
     inline def setEdgeLengthUndefined: Self = StObject.set(x, "edgeLength", js.undefined)
     
-    inline def setEdgeLengthVarargs(value: js.Any*): Self = StObject.set(x, "edgeLength", js.Array(value :_*))
+    inline def setEdgeLengthVarargs(value: Any*): Self = StObject.set(x, "edgeLength", js.Array(value*))
     
     inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
@@ -130,10 +130,10 @@ object EdgeLength {
     
     inline def setLayoutAnimationUndefined: Self = StObject.set(x, "layoutAnimation", js.undefined)
     
-    inline def setRepulsion(value: js.Array[js.Any] | Double): Self = StObject.set(x, "repulsion", value.asInstanceOf[js.Any])
+    inline def setRepulsion(value: js.Array[Any] | Double): Self = StObject.set(x, "repulsion", value.asInstanceOf[js.Any])
     
     inline def setRepulsionUndefined: Self = StObject.set(x, "repulsion", js.undefined)
     
-    inline def setRepulsionVarargs(value: js.Any*): Self = StObject.set(x, "repulsion", js.Array(value :_*))
+    inline def setRepulsionVarargs(value: Any*): Self = StObject.set(x, "repulsion", js.Array(value*))
   }
 }

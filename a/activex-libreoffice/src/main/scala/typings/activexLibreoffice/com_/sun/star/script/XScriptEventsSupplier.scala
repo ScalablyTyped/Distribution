@@ -24,7 +24,7 @@ object XScriptEventsSupplier {
     Events: XNameContainer,
     acquire: () => Unit,
     getEvents: () => XNameContainer,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XScriptEventsSupplier = {
     val __obj = js.Dynamic.literal(Events = Events.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getEvents = js.Any.fromFunction0(getEvents), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

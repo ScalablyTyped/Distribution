@@ -24,7 +24,7 @@ object mod {
   
   @JSImport("@babel/generator", "CodeGenerator")
   @js.native
-  class CodeGenerator protected () extends StObject {
+  open class CodeGenerator protected () extends StObject {
     def this(ast: Node) = this()
     def this(ast: Node, opts: GeneratorOptions) = this()
     def this(ast: Node, opts: Unit, code: String) = this()

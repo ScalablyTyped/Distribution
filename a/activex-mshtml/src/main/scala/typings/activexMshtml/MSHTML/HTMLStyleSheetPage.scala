@@ -9,7 +9,7 @@ trait HTMLStyleSheetPage extends StObject {
   /* private */ @JSName("MSHTML.HTMLStyleSheetPage_typekey")
   var MSHTMLDotHTMLStyleSheetPage_typekey: HTMLStyleSheetPage
   
-  val constructor: js.Any
+  val constructor: Any
   
   var cssText: String
   
@@ -31,7 +31,7 @@ object HTMLStyleSheetPage {
   
   inline def apply(
     MSHTMLDotHTMLStyleSheetPage_typekey: HTMLStyleSheetPage,
-    constructor: js.Any,
+    constructor: Any,
     cssText: String,
     parentRule: IHTMLCSSRule,
     parentStyleSheet: IHTMLStyleSheet,
@@ -49,7 +49,7 @@ object HTMLStyleSheetPage {
   
   extension [Self <: HTMLStyleSheetPage](x: Self) {
     
-    inline def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
     inline def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ object areaDrawerMod {
   
   @JSImport("plottable/build/src/drawers/areaDrawer", "AreaSVGDrawer")
   @js.native
-  class AreaSVGDrawer () extends SVGDrawer
+  open class AreaSVGDrawer () extends SVGDrawer
   
-  inline def makeAreaCanvasDrawStep(d3AreaFactory: js.Function0[Area_[js.Any]], d3LineFactory: js.Function0[Line_[js.Any]]): CanvasDrawStep = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAreaCanvasDrawStep")(d3AreaFactory.asInstanceOf[js.Any], d3LineFactory.asInstanceOf[js.Any])).asInstanceOf[CanvasDrawStep]
+  inline def makeAreaCanvasDrawStep(d3AreaFactory: js.Function0[Area_[Any]], d3LineFactory: js.Function0[Line_[Any]]): CanvasDrawStep = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAreaCanvasDrawStep")(d3AreaFactory.asInstanceOf[js.Any], d3LineFactory.asInstanceOf[js.Any])).asInstanceOf[CanvasDrawStep]
 }

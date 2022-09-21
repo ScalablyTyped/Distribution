@@ -23,8 +23,8 @@ trait IWatcher extends StObject {
   
   def listener(
     field: IFieldRuntimeObject,
-    newValue: js.Any,
-    oldValue: js.Any,
+    newValue: Any,
+    oldValue: Any,
     scope: ITemplateScope,
     stopWatching: js.Function
   ): Unit
@@ -33,7 +33,7 @@ trait IWatcher extends StObject {
 }
 object IWatcher {
   
-  inline def apply(listener: (IFieldRuntimeObject, js.Any, js.Any, ITemplateScope, js.Function) => Unit): IWatcher = {
+  inline def apply(listener: (IFieldRuntimeObject, Any, Any, ITemplateScope, js.Function) => Unit): IWatcher = {
     val __obj = js.Dynamic.literal(listener = js.Any.fromFunction5(listener))
     __obj.asInstanceOf[IWatcher]
   }
@@ -52,7 +52,7 @@ object IWatcher {
     
     inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    inline def setListener(value: (IFieldRuntimeObject, js.Any, js.Any, ITemplateScope, js.Function) => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction5(value))
+    inline def setListener(value: (IFieldRuntimeObject, Any, Any, ITemplateScope, js.Function) => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction5(value))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

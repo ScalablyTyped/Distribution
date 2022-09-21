@@ -90,7 +90,7 @@ object Seatsio {
     
     var displayObjectType: js.UndefOr[String] = js.native
     
-    var extraData: js.Any = js.native
+    var extraData: Any = js.native
     
     var forSale: Boolean = js.native
     
@@ -145,7 +145,7 @@ object Seatsio {
       
       inline def setCategory(value: String | js.Array[String]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      inline def setCategoryVarargs(value: String*): Self = StObject.set(x, "category", js.Array(value :_*))
+      inline def setCategoryVarargs(value: String*): Self = StObject.set(x, "category", js.Array(value*))
       
       inline def setClearSelection(value: Boolean): Self = StObject.set(x, "clearSelection", value.asInstanceOf[js.Any])
       
@@ -294,7 +294,7 @@ object Seatsio {
       
       inline def setAvailableCategoriesUndefined: Self = StObject.set(x, "availableCategories", js.undefined)
       
-      inline def setAvailableCategoriesVarargs(value: String*): Self = StObject.set(x, "availableCategories", js.Array(value :_*))
+      inline def setAvailableCategoriesVarargs(value: String*): Self = StObject.set(x, "availableCategories", js.Array(value*))
       
       inline def setExtraConfig(value: ExtraConfig): Self = StObject.set(x, "extraConfig", value.asInstanceOf[js.Any])
       
@@ -304,13 +304,13 @@ object Seatsio {
       
       inline def setFilteredCategoriesUndefined: Self = StObject.set(x, "filteredCategories", js.undefined)
       
-      inline def setFilteredCategoriesVarargs(value: String*): Self = StObject.set(x, "filteredCategories", js.Array(value :_*))
+      inline def setFilteredCategoriesVarargs(value: String*): Self = StObject.set(x, "filteredCategories", js.Array(value*))
       
       inline def setMaxSelectedObjects(value: Double | js.Array[typings.seatsio.anon.Category]): Self = StObject.set(x, "maxSelectedObjects", value.asInstanceOf[js.Any])
       
       inline def setMaxSelectedObjectsUndefined: Self = StObject.set(x, "maxSelectedObjects", js.undefined)
       
-      inline def setMaxSelectedObjectsVarargs(value: typings.seatsio.anon.Category*): Self = StObject.set(x, "maxSelectedObjects", js.Array(value :_*))
+      inline def setMaxSelectedObjectsVarargs(value: typings.seatsio.anon.Category*): Self = StObject.set(x, "maxSelectedObjects", js.Array(value*))
       
       inline def setNumberOfPlacesToSelect(value: Double): Self = StObject.set(x, "numberOfPlacesToSelect", value.asInstanceOf[js.Any])
       
@@ -332,19 +332,19 @@ object Seatsio {
       
       inline def setPricingUndefined: Self = StObject.set(x, "pricing", js.undefined)
       
-      inline def setPricingVarargs(value: PricingConfig*): Self = StObject.set(x, "pricing", js.Array(value :_*))
+      inline def setPricingVarargs(value: PricingConfig*): Self = StObject.set(x, "pricing", js.Array(value*))
       
       inline def setTicketListings(value: js.Array[TicketListing]): Self = StObject.set(x, "ticketListings", value.asInstanceOf[js.Any])
       
       inline def setTicketListingsUndefined: Self = StObject.set(x, "ticketListings", js.undefined)
       
-      inline def setTicketListingsVarargs(value: TicketListing*): Self = StObject.set(x, "ticketListings", js.Array(value :_*))
+      inline def setTicketListingsVarargs(value: TicketListing*): Self = StObject.set(x, "ticketListings", js.Array(value*))
       
       inline def setUnavailableCategories(value: js.Array[String]): Self = StObject.set(x, "unavailableCategories", value.asInstanceOf[js.Any])
       
       inline def setUnavailableCategoriesUndefined: Self = StObject.set(x, "unavailableCategories", js.undefined)
       
-      inline def setUnavailableCategoriesVarargs(value: String*): Self = StObject.set(x, "unavailableCategories", js.Array(value :_*))
+      inline def setUnavailableCategoriesVarargs(value: String*): Self = StObject.set(x, "unavailableCategories", js.Array(value*))
     }
   }
   
@@ -527,7 +527,7 @@ object Seatsio {
   
   trait DataPerEvent extends StObject {
     
-    var extraData: js.UndefOr[js.Any] = js.undefined
+    var extraData: js.UndefOr[Any] = js.undefined
     
     var status: String
   }
@@ -540,7 +540,7 @@ object Seatsio {
     
     extension [Self <: DataPerEvent](x: Self) {
       
-      inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+      inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
       
       inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
       
@@ -687,7 +687,7 @@ object Seatsio {
     }
   }
   
-  type ExtraConfig = StringDictionary[js.Any]
+  type ExtraConfig = StringDictionary[Any]
   
   @js.native
   trait GeneralAdmissionArea
@@ -798,7 +798,7 @@ object Seatsio {
       
       inline def setTicketTypes(value: js.Array[LabelPrice]): Self = StObject.set(x, "ticketTypes", value.asInstanceOf[js.Any])
       
-      inline def setTicketTypesVarargs(value: LabelPrice*): Self = StObject.set(x, "ticketTypes", js.Array(value :_*))
+      inline def setTicketTypesVarargs(value: LabelPrice*): Self = StObject.set(x, "ticketTypes", js.Array(value*))
     }
   }
   
@@ -1151,7 +1151,7 @@ object Seatsio {
       
       inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
       
-      inline def setCategoriesVarargs(value: CategoryConfig*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: CategoryConfig*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setCategoryFilter(value: Enabled): Self = StObject.set(x, "categoryFilter", value.asInstanceOf[js.Any])
       
@@ -1161,7 +1161,7 @@ object Seatsio {
       
       inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
       
-      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
       
       inline def setChart(value: String): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
@@ -1185,7 +1185,7 @@ object Seatsio {
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setFitTo(value: widthAndHeight | width): Self = StObject.set(x, "fitTo", value.asInstanceOf[js.Any])
       
@@ -1367,13 +1367,13 @@ object Seatsio {
       
       inline def setSelectedObjectsUndefined: Self = StObject.set(x, "selectedObjects", js.undefined)
       
-      inline def setSelectedObjectsVarargs(value: (String | Label)*): Self = StObject.set(x, "selectedObjects", js.Array(value :_*))
+      inline def setSelectedObjectsVarargs(value: (String | Label)*): Self = StObject.set(x, "selectedObjects", js.Array(value*))
       
       inline def setSelectionValidators(value: js.Array[SelectionValidator]): Self = StObject.set(x, "selectionValidators", value.asInstanceOf[js.Any])
       
       inline def setSelectionValidatorsUndefined: Self = StObject.set(x, "selectionValidators", js.undefined)
       
-      inline def setSelectionValidatorsVarargs(value: SelectionValidator*): Self = StObject.set(x, "selectionValidators", js.Array(value :_*))
+      inline def setSelectionValidatorsVarargs(value: SelectionValidator*): Self = StObject.set(x, "selectionValidators", js.Array(value*))
       
       inline def setSession(value: continue | start | manual | none): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       

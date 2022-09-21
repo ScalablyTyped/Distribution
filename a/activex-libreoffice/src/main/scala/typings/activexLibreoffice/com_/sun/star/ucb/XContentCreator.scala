@@ -42,7 +42,7 @@ object XContentCreator {
     acquire: () => Unit,
     createNewContent: ContentInfo => XContent,
     queryCreatableContentsInfo: () => SafeArray[ContentInfo],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XContentCreator = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createNewContent = js.Any.fromFunction1(createNewContent), queryCreatableContentsInfo = js.Any.fromFunction0(queryCreatableContentsInfo), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

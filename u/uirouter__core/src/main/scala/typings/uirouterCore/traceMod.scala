@@ -73,13 +73,13 @@ object traceMod {
   @JSImport("@uirouter/core/lib/common/trace", "Trace")
   @js.native
   /** @internal */
-  class Trace_ () extends StObject {
+  open class Trace_ () extends StObject {
     
     /** @internal */
-    /* private */ var _enabled: js.Any = js.native
+    /* private */ var _enabled: Any = js.native
     
     /** @internal */
-    /* private */ var _set: js.Any = js.native
+    /* private */ var _set: Any = js.native
     
     /** @internal */
     var approximateDigests: Double = js.native
@@ -94,7 +94,7 @@ object traceMod {
       * @param categories categories to disable. If `categories` is omitted, all categories are disabled.
       *        Also takes strings (category name) or ordinal (category position)
       */
-    def disable(categories: (Category | String | Double)*): js.Any = js.native
+    def disable(categories: (Category | String | Double)*): Any = js.native
     
     /**
       * Enables a trace [[Category]]
@@ -106,7 +106,7 @@ object traceMod {
       * @param categories categories to enable. If `categories` is omitted, all categories are enabled.
       *        Also takes strings (category name) or ordinal (category position)
       */
-    def enable(categories: (Category | String | Double)*): js.Any = js.native
+    def enable(categories: (Category | String | Double)*): Any = js.native
     
     def enabled(category: String): Boolean = js.native
     def enabled(category: Double): Boolean = js.native
@@ -122,13 +122,13 @@ object traceMod {
     def enabled(category: Category): Boolean = js.native
     
     /** @internal called by ui-router code */
-    def traceError(reason: js.Any, trans: Transition): Unit = js.native
+    def traceError(reason: Any, trans: Transition): Unit = js.native
     
     /** @internal called by ui-router code */
-    def traceHookInvocation(step: TransitionHook, trans: Transition, options: js.Any): Unit = js.native
+    def traceHookInvocation(step: TransitionHook, trans: Transition, options: Any): Unit = js.native
     
     /** @internal called by ui-router code */
-    def traceHookResult(hookResult: HookResult, trans: Transition, transitionOptions: js.Any): Unit = js.native
+    def traceHookResult(hookResult: HookResult, trans: Transition, transitionOptions: Any): Unit = js.native
     
     /** @internal called by ui-router code */
     def traceResolvableResolved(resolvable: Resolvable): Unit = js.native

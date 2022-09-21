@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QuantileTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var as: js.UndefOr[(js.Array[String | SignalRef]) | SignalRef] = js.undefined
   
@@ -36,7 +36,7 @@ object QuantileTransform {
     
     inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    inline def setAsVarargs(value: (String | SignalRef)*): Self = StObject.set(x, "as", js.Array(value :_*))
+    inline def setAsVarargs(value: (String | SignalRef)*): Self = StObject.set(x, "as", js.Array(value*))
     
     inline def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
@@ -44,13 +44,13 @@ object QuantileTransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setProbs(value: js.Array[Double] | SignalRef): Self = StObject.set(x, "probs", value.asInstanceOf[js.Any])
     
     inline def setProbsUndefined: Self = StObject.set(x, "probs", js.undefined)
     
-    inline def setProbsVarargs(value: Double*): Self = StObject.set(x, "probs", js.Array(value :_*))
+    inline def setProbsVarargs(value: Double*): Self = StObject.set(x, "probs", js.Array(value*))
     
     inline def setStep(value: Double | SignalRef): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     

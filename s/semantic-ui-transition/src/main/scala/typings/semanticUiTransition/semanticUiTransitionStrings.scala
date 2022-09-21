@@ -7,28 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object semanticUiTransitionStrings {
   
   @js.native
-  sealed trait allowRepeats extends StObject
-  inline def allowRepeats: allowRepeats = "allowRepeats".asInstanceOf[allowRepeats]
-  
-  @js.native
-  sealed trait animation extends StObject
-  inline def animation: animation = "animation".asInstanceOf[animation]
-  
-  @js.native
   sealed trait auto extends StObject
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait className extends StObject
-  inline def className: className = "className".asInstanceOf[className]
-  
-  @js.native
   sealed trait `clear queue` extends StObject
   inline def `clear queue`: `clear queue` = ("clear queue").asInstanceOf[`clear queue`]
-  
-  @js.native
-  sealed trait debug extends StObject
-  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
   sealed trait destroy extends StObject
@@ -39,20 +23,8 @@ object semanticUiTransitionStrings {
   inline def disable: disable = "disable".asInstanceOf[disable]
   
   @js.native
-  sealed trait displayType extends StObject
-  inline def displayType: displayType = "displayType".asInstanceOf[displayType]
-  
-  @js.native
-  sealed trait duration extends StObject
-  inline def duration: duration = "duration".asInstanceOf[duration]
-  
-  @js.native
   sealed trait enable extends StObject
   inline def enable: enable = "enable".asInstanceOf[enable]
-  
-  @js.native
-  sealed trait error extends StObject
-  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait `force repaint` extends StObject
@@ -69,10 +41,6 @@ object semanticUiTransitionStrings {
   @js.native
   sealed trait hide extends StObject
   inline def hide: hide = "hide".asInstanceOf[hide]
-  
-  @js.native
-  sealed trait interval extends StObject
-  inline def interval: interval = "interval".asInstanceOf[interval]
   
   @js.native
   sealed trait `is animating` extends StObject
@@ -95,38 +63,6 @@ object semanticUiTransitionStrings {
   inline def looping: looping = "looping".asInstanceOf[looping]
   
   @js.native
-  sealed trait name extends StObject
-  inline def name: name = "name".asInstanceOf[name]
-  
-  @js.native
-  sealed trait namespace extends StObject
-  inline def namespace: namespace = "namespace".asInstanceOf[namespace]
-  
-  @js.native
-  sealed trait onComplete extends StObject
-  inline def onComplete: onComplete = "onComplete".asInstanceOf[onComplete]
-  
-  @js.native
-  sealed trait onHide extends StObject
-  inline def onHide: onHide = "onHide".asInstanceOf[onHide]
-  
-  @js.native
-  sealed trait onShow extends StObject
-  inline def onShow: onShow = "onShow".asInstanceOf[onShow]
-  
-  @js.native
-  sealed trait onStart extends StObject
-  inline def onStart: onStart = "onStart".asInstanceOf[onStart]
-  
-  @js.native
-  sealed trait performance extends StObject
-  inline def performance: performance = "performance".asInstanceOf[performance]
-  
-  @js.native
-  sealed trait queue extends StObject
-  inline def queue: queue = "queue".asInstanceOf[queue]
-  
-  @js.native
   sealed trait `remove looping` extends StObject
   inline def `remove looping`: `remove looping` = ("remove looping").asInstanceOf[`remove looping`]
   
@@ -141,10 +77,6 @@ object semanticUiTransitionStrings {
   @js.native
   sealed trait `restore conditions` extends StObject
   inline def `restore conditions`: `restore conditions` = ("restore conditions").asInstanceOf[`restore conditions`]
-  
-  @js.native
-  sealed trait reverse extends StObject
-  inline def reverse: reverse = "reverse".asInstanceOf[reverse]
   
   @js.native
   sealed trait `save conditions` extends StObject
@@ -163,10 +95,6 @@ object semanticUiTransitionStrings {
   inline def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait silent extends StObject
-  inline def silent: silent = "silent".asInstanceOf[silent]
-  
-  @js.native
   sealed trait stop extends StObject
   inline def stop: stop = "stop".asInstanceOf[stop]
   
@@ -177,12 +105,4 @@ object semanticUiTransitionStrings {
   @js.native
   sealed trait toggle extends StObject
   inline def toggle: toggle = "toggle".asInstanceOf[toggle]
-  
-  @js.native
-  sealed trait useFailSafe extends StObject
-  inline def useFailSafe: useFailSafe = "useFailSafe".asInstanceOf[useFailSafe]
-  
-  @js.native
-  sealed trait verbose extends StObject
-  inline def verbose: verbose = "verbose".asInstanceOf[verbose]
 }

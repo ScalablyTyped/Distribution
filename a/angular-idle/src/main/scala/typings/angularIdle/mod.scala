@@ -90,7 +90,7 @@ object mod {
       /**
         * Manually trigger the idle interrupt that normally occurs during user activity.
         */
-      def interrupt(): js.Any
+      def interrupt(): Any
       
       /**
         * Whether user has timed out (meaning idleDuration + timeout has passed without any activity)
@@ -130,7 +130,7 @@ object mod {
         getIdle: () => Double,
         getTimeout: () => Double,
         idling: () => Boolean,
-        interrupt: () => js.Any,
+        interrupt: () => Any,
         isExpired: () => Boolean,
         running: () => Boolean,
         setIdle: Double => Unit,
@@ -150,7 +150,7 @@ object mod {
         
         inline def setIdling(value: () => Boolean): Self = StObject.set(x, "idling", js.Any.fromFunction0(value))
         
-        inline def setInterrupt(value: () => js.Any): Self = StObject.set(x, "interrupt", js.Any.fromFunction0(value))
+        inline def setInterrupt(value: () => Any): Self = StObject.set(x, "interrupt", js.Any.fromFunction0(value))
         
         inline def setIsExpired(value: () => Boolean): Self = StObject.set(x, "isExpired", js.Any.fromFunction0(value))
         
@@ -258,7 +258,7 @@ object mod {
     }
     object ITitleProvider {
       
-      inline def apply($get: js.Any, enabled: Boolean => Unit): ITitleProvider = {
+      inline def apply($get: Any, enabled: Boolean => Unit): ITitleProvider = {
         val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], enabled = js.Any.fromFunction1(enabled))
         __obj.asInstanceOf[ITitleProvider]
       }

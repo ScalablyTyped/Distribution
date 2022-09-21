@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTypesResponse extends StObject {
   
   /**
-    * An identifier to be passed in the next request to this operation to return the next set of items in the list.
+    * An identifier to pass in the next request to this operation to return the next set of items in the list.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
@@ -33,6 +33,6 @@ object ListTypesResponse {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

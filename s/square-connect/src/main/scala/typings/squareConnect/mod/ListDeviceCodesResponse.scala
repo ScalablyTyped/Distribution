@@ -1,13 +1,12 @@
 package typings.squareConnect.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListDeviceCodesResponse")
 @js.native
-class ListDeviceCodesResponse () extends StObject {
+open class ListDeviceCodesResponse () extends StObject {
   
   /**
     * A pagination cursor to retrieve the next set of results for your original query to the endpoint.
@@ -24,5 +23,5 @@ class ListDeviceCodesResponse () extends StObject {
   /**
     * Any errors that occurred during the request.
     */
-  var errors: js.UndefOr[js.Array[Error]] = js.native
+  var errors: js.UndefOr[js.Array[js.Error]] = js.native
 }

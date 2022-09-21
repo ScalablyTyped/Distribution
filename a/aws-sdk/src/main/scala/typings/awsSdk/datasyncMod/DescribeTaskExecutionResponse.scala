@@ -12,7 +12,7 @@ trait DescribeTaskExecutionResponse extends StObject {
   var BytesTransferred: js.UndefOr[long] = js.undefined
   
   /**
-    * The number of logical bytes written to the destination AWS storage resource.
+    * The number of logical bytes written to the destination Amazon Web Services storage resource.
     */
   var BytesWritten: js.UndefOr[long] = js.undefined
   
@@ -51,10 +51,10 @@ trait DescribeTaskExecutionResponse extends StObject {
   /**
     * The time that the task execution was started.
     */
-  var StartTime: js.UndefOr[Time] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The status of the task execution.  For detailed information about task execution statuses, see Understanding Task Statuses in the AWS DataSync User Guide. 
+    * The status of the task execution.  For detailed information about task execution statuses, see Understanding Task Statuses in the DataSync User Guide. 
     */
   var Status: js.UndefOr[TaskExecutionStatus] = js.undefined
   
@@ -92,7 +92,7 @@ object DescribeTaskExecutionResponse {
     
     inline def setExcludesUndefined: Self = StObject.set(x, "Excludes", js.undefined)
     
-    inline def setExcludesVarargs(value: FilterRule*): Self = StObject.set(x, "Excludes", js.Array(value :_*))
+    inline def setExcludesVarargs(value: FilterRule*): Self = StObject.set(x, "Excludes", js.Array(value*))
     
     inline def setFilesTransferred(value: long): Self = StObject.set(x, "FilesTransferred", value.asInstanceOf[js.Any])
     
@@ -102,7 +102,7 @@ object DescribeTaskExecutionResponse {
     
     inline def setIncludesUndefined: Self = StObject.set(x, "Includes", js.undefined)
     
-    inline def setIncludesVarargs(value: FilterRule*): Self = StObject.set(x, "Includes", js.Array(value :_*))
+    inline def setIncludesVarargs(value: FilterRule*): Self = StObject.set(x, "Includes", js.Array(value*))
     
     inline def setOptions(value: Options): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
@@ -112,7 +112,7 @@ object DescribeTaskExecutionResponse {
     
     inline def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
     
-    inline def setStartTime(value: Time): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

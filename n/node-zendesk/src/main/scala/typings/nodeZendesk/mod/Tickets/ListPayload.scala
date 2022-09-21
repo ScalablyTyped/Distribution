@@ -22,6 +22,6 @@ object ListPayload {
     
     inline def setTickets(value: js.Array[ResponseModel]): Self = StObject.set(x, "tickets", value.asInstanceOf[js.Any])
     
-    inline def setTicketsVarargs(value: ResponseModel*): Self = StObject.set(x, "tickets", js.Array(value :_*))
+    inline def setTicketsVarargs(value: ResponseModel*): Self = StObject.set(x, "tickets", js.Array(value*))
   }
 }

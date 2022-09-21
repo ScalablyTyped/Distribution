@@ -31,7 +31,7 @@ object Issue {
     
     inline def setIssueUndefined: Self = StObject.set(x, "issue", js.undefined)
     
-    inline def setIssueVarargs(value: IssueDisplayNumber*): Self = StObject.set(x, "issue", js.Array(value :_*))
+    inline def setIssueVarargs(value: IssueDisplayNumber*): Self = StObject.set(x, "issue", js.Array(value*))
     
     inline def setOrderNumber(value: Double): Self = StObject.set(x, "orderNumber", value.asInstanceOf[js.Any])
     

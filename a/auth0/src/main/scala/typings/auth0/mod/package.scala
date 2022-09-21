@@ -1,16 +1,18 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.auth0.auth0Strings.txt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AppMetadata = org.scalablytyped.runtime.StringDictionary[js.Any]
+type AppMetadata = StringDictionary[Any]
 
-type CustomDomainVerificationMethod = typings.auth0.auth0Strings.txt
+type CustomDomainVerificationMethod = txt
 
-type DatabaseClientOptions = typings.auth0.mod.BaseClientOptions
+type DatabaseClientOptions = BaseClientOptions
 
-type PasswordLessClientOptions = typings.auth0.mod.BaseClientOptions
+type PasswordLessClientOptions = BaseClientOptions
 
-type UserMetadata = org.scalablytyped.runtime.StringDictionary[js.Any]
+type UserMetadata = StringDictionary[Any]

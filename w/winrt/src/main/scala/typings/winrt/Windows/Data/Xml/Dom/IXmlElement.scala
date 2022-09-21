@@ -10,23 +10,23 @@ trait IXmlElement
   
   def getAttribute(attributeName: String): String
   
-  def getAttributeNS(namespaceUri: js.Any, localName: String): String
+  def getAttributeNS(namespaceUri: Any, localName: String): String
   
   def getAttributeNode(attributeName: String): XmlAttribute
   
-  def getAttributeNodeNS(namespaceUri: js.Any, localName: String): XmlAttribute
+  def getAttributeNodeNS(namespaceUri: Any, localName: String): XmlAttribute
   
   def getElementsByTagName(tagName: String): XmlNodeList
   
   def removeAttribute(attributeName: String): Unit
   
-  def removeAttributeNS(namespaceUri: js.Any, localName: String): Unit
+  def removeAttributeNS(namespaceUri: Any, localName: String): Unit
   
   def removeAttributeNode(attributeNode: XmlAttribute): XmlAttribute
   
   def setAttribute(attributeName: String, attributeValue: String): Unit
   
-  def setAttributeNS(namespaceUri: js.Any, qualifiedName: String, value: String): Unit
+  def setAttributeNS(namespaceUri: Any, qualifiedName: String, value: String): Unit
   
   def setAttributeNode(newAttribute: XmlAttribute): XmlAttribute
   
@@ -43,37 +43,37 @@ object IXmlElement {
     cloneNode: Boolean => IXmlNode,
     firstChild: IXmlNode,
     getAttribute: String => String,
-    getAttributeNS: (js.Any, String) => String,
+    getAttributeNS: (Any, String) => String,
     getAttributeNode: String => XmlAttribute,
-    getAttributeNodeNS: (js.Any, String) => XmlAttribute,
+    getAttributeNodeNS: (Any, String) => XmlAttribute,
     getElementsByTagName: String => XmlNodeList,
     getXml: () => String,
     hasChildNodes: () => Boolean,
     innerText: String,
     insertBefore: (IXmlNode, IXmlNode) => IXmlNode,
     lastChild: IXmlNode,
-    localName: js.Any,
-    namespaceUri: js.Any,
+    localName: Any,
+    namespaceUri: Any,
     nextSibling: IXmlNode,
     nodeName: String,
     nodeType: NodeType,
-    nodeValue: js.Any,
+    nodeValue: Any,
     normalize: () => Unit,
     ownerDocument: XmlDocument,
     parentNode: IXmlNode,
-    prefix: js.Any,
+    prefix: Any,
     previousSibling: IXmlNode,
     removeAttribute: String => Unit,
-    removeAttributeNS: (js.Any, String) => Unit,
+    removeAttributeNS: (Any, String) => Unit,
     removeAttributeNode: XmlAttribute => XmlAttribute,
     removeChild: IXmlNode => IXmlNode,
     replaceChild: (IXmlNode, IXmlNode) => IXmlNode,
     selectNodes: String => XmlNodeList,
-    selectNodesNS: (String, js.Any) => XmlNodeList,
+    selectNodesNS: (String, Any) => XmlNodeList,
     selectSingleNode: String => IXmlNode,
-    selectSingleNodeNS: (String, js.Any) => IXmlNode,
+    selectSingleNodeNS: (String, Any) => IXmlNode,
     setAttribute: (String, String) => Unit,
-    setAttributeNS: (js.Any, String, String) => Unit,
+    setAttributeNS: (Any, String, String) => Unit,
     setAttributeNode: XmlAttribute => XmlAttribute,
     setAttributeNodeNS: XmlAttribute => XmlAttribute,
     tagName: String
@@ -86,23 +86,23 @@ object IXmlElement {
     
     inline def setGetAttribute(value: String => String): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
     
-    inline def setGetAttributeNS(value: (js.Any, String) => String): Self = StObject.set(x, "getAttributeNS", js.Any.fromFunction2(value))
+    inline def setGetAttributeNS(value: (Any, String) => String): Self = StObject.set(x, "getAttributeNS", js.Any.fromFunction2(value))
     
     inline def setGetAttributeNode(value: String => XmlAttribute): Self = StObject.set(x, "getAttributeNode", js.Any.fromFunction1(value))
     
-    inline def setGetAttributeNodeNS(value: (js.Any, String) => XmlAttribute): Self = StObject.set(x, "getAttributeNodeNS", js.Any.fromFunction2(value))
+    inline def setGetAttributeNodeNS(value: (Any, String) => XmlAttribute): Self = StObject.set(x, "getAttributeNodeNS", js.Any.fromFunction2(value))
     
     inline def setGetElementsByTagName(value: String => XmlNodeList): Self = StObject.set(x, "getElementsByTagName", js.Any.fromFunction1(value))
     
     inline def setRemoveAttribute(value: String => Unit): Self = StObject.set(x, "removeAttribute", js.Any.fromFunction1(value))
     
-    inline def setRemoveAttributeNS(value: (js.Any, String) => Unit): Self = StObject.set(x, "removeAttributeNS", js.Any.fromFunction2(value))
+    inline def setRemoveAttributeNS(value: (Any, String) => Unit): Self = StObject.set(x, "removeAttributeNS", js.Any.fromFunction2(value))
     
     inline def setRemoveAttributeNode(value: XmlAttribute => XmlAttribute): Self = StObject.set(x, "removeAttributeNode", js.Any.fromFunction1(value))
     
     inline def setSetAttribute(value: (String, String) => Unit): Self = StObject.set(x, "setAttribute", js.Any.fromFunction2(value))
     
-    inline def setSetAttributeNS(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "setAttributeNS", js.Any.fromFunction3(value))
+    inline def setSetAttributeNS(value: (Any, String, String) => Unit): Self = StObject.set(x, "setAttributeNS", js.Any.fromFunction3(value))
     
     inline def setSetAttributeNode(value: XmlAttribute => XmlAttribute): Self = StObject.set(x, "setAttributeNode", js.Any.fromFunction1(value))
     

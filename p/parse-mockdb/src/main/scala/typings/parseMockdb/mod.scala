@@ -1,6 +1,8 @@
 package typings.parseMockdb
 
+import typings.parse.mod.global.Parse.Attributes
 import typings.parse.mod.global.Parse.Cloud.BeforeSaveRequest
+import typings.parse.mod.global.Parse.Object
 import typings.parseMockdb.ParseMockDB.HookType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,15 +19,15 @@ object mod {
   inline def mockDB(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mockDB")().asInstanceOf[Unit]
   
   inline def promiseResultSync[T](
-    promise: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Parse.IPromise<T> */ js.Any
+    promise: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Parse.IPromise<T> */ Any
   ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("promiseResultSync")(promise.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def registerHook(
     className: String,
     hookType: HookType,
     hookFn: js.Function1[
-      /* request */ BeforeSaveRequest, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Parse.IPromise<any> */ js.Any
+      /* request */ BeforeSaveRequest[Object[Attributes]], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Parse.IPromise<any> */ Any
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(className.asInstanceOf[js.Any], hookType.asInstanceOf[js.Any], hookFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

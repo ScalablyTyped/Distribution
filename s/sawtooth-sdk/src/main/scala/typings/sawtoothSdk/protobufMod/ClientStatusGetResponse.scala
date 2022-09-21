@@ -6,7 +6,6 @@ import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.IPeer
 import typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Status
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ClientStatusGetResponse.
   * @param [properties] Properties to set
   */
-class ClientStatusGetResponse ()
+open class ClientStatusGetResponse ()
   extends StObject
      with IClientStatusGetResponse {
   def this(properties: IClientStatusGetResponse) = this()
@@ -38,7 +37,7 @@ class ClientStatusGetResponse ()
     * Converts this ClientStatusGetResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object ClientStatusGetResponse {
@@ -54,7 +53,7 @@ object ClientStatusGetResponse {
     * Constructs a new Peer.
     * @param [properties] Properties to set
     */
-  class Peer ()
+  open class Peer ()
     extends StObject
        with IPeer {
     def this(properties: IPeer) = this()
@@ -67,7 +66,7 @@ object ClientStatusGetResponse {
       * Converts this Peer to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object Peer {
     
@@ -84,6 +83,8 @@ object ClientStatusGetResponse {
     inline def create(): Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Peer]
     inline def create(properties: IPeer): Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Peer]
     
+    inline def decode(reader: js.typedarray.Uint8Array): Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Peer]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): Peer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Peer]
     /**
       * Decodes a Peer message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -95,9 +96,8 @@ object ClientStatusGetResponse {
     /* static member */
     inline def decode(reader: Reader): Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Peer]
     inline def decode(reader: Reader, length: Double): Peer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Peer]
-    inline def decode(reader: Uint8Array): Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Peer]
-    inline def decode(reader: Uint8Array, length: Double): Peer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Peer]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Peer]
     /**
       * Decodes a Peer message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -107,7 +107,6 @@ object ClientStatusGetResponse {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Peer]
-    inline def decodeDelimited(reader: Uint8Array): Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Peer]
     
     /**
       * Encodes the specified Peer message. Does not implicitly {@link ClientStatusGetResponse.Peer.verify|verify} messages.
@@ -135,7 +134,7 @@ object ClientStatusGetResponse {
       * @returns Peer
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Peer]
+    inline def fromObject(`object`: StringDictionary[Any]): Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Peer]
     
     /**
       * Creates a plain object from a Peer message. Also converts values to other types if specified.
@@ -144,8 +143,8 @@ object ClientStatusGetResponse {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: Peer): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: Peer, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Peer): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: Peer, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a Peer message.
@@ -153,7 +152,7 @@ object ClientStatusGetResponse {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   @js.native
@@ -193,6 +192,8 @@ object ClientStatusGetResponse {
   inline def create(): ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ClientStatusGetResponse]
   inline def create(properties: IClientStatusGetResponse): ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ClientStatusGetResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientStatusGetResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ClientStatusGetResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientStatusGetResponse]
   /**
     * Decodes a ClientStatusGetResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -203,9 +204,8 @@ object ClientStatusGetResponse {
     */
   inline def decode(reader: Reader): ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientStatusGetResponse]
   inline def decode(reader: Reader, length: Double): ClientStatusGetResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientStatusGetResponse]
-  inline def decode(reader: Uint8Array): ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientStatusGetResponse]
-  inline def decode(reader: Uint8Array, length: Double): ClientStatusGetResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientStatusGetResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientStatusGetResponse]
   /**
     * Decodes a ClientStatusGetResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -214,7 +214,6 @@ object ClientStatusGetResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientStatusGetResponse]
-  inline def decodeDelimited(reader: Uint8Array): ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientStatusGetResponse]
   
   /**
     * Encodes the specified ClientStatusGetResponse message. Does not implicitly {@link ClientStatusGetResponse.verify|verify} messages.
@@ -239,7 +238,7 @@ object ClientStatusGetResponse {
     * @param object Plain object
     * @returns ClientStatusGetResponse
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientStatusGetResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientStatusGetResponse]
   
   /**
     * Creates a plain object from a ClientStatusGetResponse message. Also converts values to other types if specified.
@@ -247,15 +246,15 @@ object ClientStatusGetResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: ClientStatusGetResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ClientStatusGetResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ClientStatusGetResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ClientStatusGetResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ClientStatusGetResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of a Peer. */
   trait IPeer extends StObject {

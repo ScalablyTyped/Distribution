@@ -1,6 +1,5 @@
 package typings.fflate.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +16,9 @@ trait GzipOptions
   
   /**
     * When the file was last modified. Defaults to the current time.
-    * If you're using GZIP, set this to 0 to avoid revealing a modification date entirely.
+    * Set this to 0 to avoid revealing a modification date entirely.
     */
-  var mtime: js.UndefOr[Date | String | Double] = js.undefined
+  var mtime: js.UndefOr[js.Date | String | Double] = js.undefined
 }
 object GzipOptions {
   
@@ -34,7 +33,7 @@ object GzipOptions {
     
     inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    inline def setMtime(value: Date | String | Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: js.Date | String | Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
     inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
   }

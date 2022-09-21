@@ -21,6 +21,9 @@ trait AndroidNotification extends StObject {
     */
   var bodyLocKey: js.UndefOr[String] = js.undefined
   
+  /** If set, display notifications delivered to the device will be handled by the app instead of the proxy. */
+  var bypassProxyNotification: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The [notification's channel id](https://developer.android.com/guide/topics/ui/notifiers/notifications#ManageChannels) (new in Android O). The app must create a channel with this
     * channel ID before any notification with this channel ID is received. If you don't send this channel ID in the request, or if the channel ID provided has not yet been created by the
@@ -158,13 +161,17 @@ object AndroidNotification {
     
     inline def setBodyLocArgsUndefined: Self = StObject.set(x, "bodyLocArgs", js.undefined)
     
-    inline def setBodyLocArgsVarargs(value: String*): Self = StObject.set(x, "bodyLocArgs", js.Array(value :_*))
+    inline def setBodyLocArgsVarargs(value: String*): Self = StObject.set(x, "bodyLocArgs", js.Array(value*))
     
     inline def setBodyLocKey(value: String): Self = StObject.set(x, "bodyLocKey", value.asInstanceOf[js.Any])
     
     inline def setBodyLocKeyUndefined: Self = StObject.set(x, "bodyLocKey", js.undefined)
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setBypassProxyNotification(value: Boolean): Self = StObject.set(x, "bypassProxyNotification", value.asInstanceOf[js.Any])
+    
+    inline def setBypassProxyNotificationUndefined: Self = StObject.set(x, "bypassProxyNotification", js.undefined)
     
     inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
@@ -240,7 +247,7 @@ object AndroidNotification {
     
     inline def setTitleLocArgsUndefined: Self = StObject.set(x, "titleLocArgs", js.undefined)
     
-    inline def setTitleLocArgsVarargs(value: String*): Self = StObject.set(x, "titleLocArgs", js.Array(value :_*))
+    inline def setTitleLocArgsVarargs(value: String*): Self = StObject.set(x, "titleLocArgs", js.Array(value*))
     
     inline def setTitleLocKey(value: String): Self = StObject.set(x, "titleLocKey", value.asInstanceOf[js.Any])
     
@@ -252,7 +259,7 @@ object AndroidNotification {
     
     inline def setVibrateTimingsUndefined: Self = StObject.set(x, "vibrateTimings", js.undefined)
     
-    inline def setVibrateTimingsVarargs(value: String*): Self = StObject.set(x, "vibrateTimings", js.Array(value :_*))
+    inline def setVibrateTimingsVarargs(value: String*): Self = StObject.set(x, "vibrateTimings", js.Array(value*))
     
     inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     

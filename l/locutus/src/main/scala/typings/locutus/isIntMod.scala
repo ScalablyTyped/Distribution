@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isIntMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(mixedVar: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(mixedVar: Any): Any = ^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("locutus/php/var/is_int", JSImport.Namespace)
   @js.native

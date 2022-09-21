@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComplianceByConfigRule extends StObject {
   
   /**
-    * Indicates whether the AWS Config rule is compliant.
+    * Indicates whether the Config rule is compliant.
     */
   var Compliance: js.UndefOr[typings.awsSdk.configserviceMod.Compliance] = js.undefined
   
   /**
-    * The name of the AWS Config rule.
+    * The name of the Config rule.
     */
   var ConfigRuleName: js.UndefOr[StringWithCharLimit64] = js.undefined
 }

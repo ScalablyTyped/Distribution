@@ -7,17 +7,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "SceneModePicker")
 @js.native
-class SceneModePicker protected () extends StObject {
+open class SceneModePicker protected () extends StObject {
   def this(container: String, scene: Scene) = this()
   def this(container: Element, scene: Scene) = this()
   def this(container: String, scene: Scene, duration: Double) = this()
   def this(container: Element, scene: Scene, duration: Double) = this()
   
+  /**
+    * Gets the parent container.
+    */
   var container: Element = js.native
   
+  /**
+    * Destroys the widget.  Should be called if permanently
+    * removing the widget from layout.
+    */
   def destroy(): Unit = js.native
   
+  /**
+    * @returns true if the object has been destroyed, false otherwise.
+    */
   def isDestroyed(): Boolean = js.native
   
+  /**
+    * Gets the view model.
+    */
   var viewModel: SceneModePickerViewModel = js.native
 }

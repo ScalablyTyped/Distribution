@@ -26,7 +26,7 @@ object XModifiable {
     acquire: () => Unit,
     addModifyListener: XModifyListener => Unit,
     isModified: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeModifyListener: XModifyListener => Unit,
     setModified: Boolean => Unit

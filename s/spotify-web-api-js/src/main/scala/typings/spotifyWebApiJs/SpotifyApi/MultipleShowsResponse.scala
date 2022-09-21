@@ -25,6 +25,6 @@ object MultipleShowsResponse {
     
     inline def setShows(value: js.Array[ShowObjectFull]): Self = StObject.set(x, "shows", value.asInstanceOf[js.Any])
     
-    inline def setShowsVarargs(value: ShowObjectFull*): Self = StObject.set(x, "shows", js.Array(value :_*))
+    inline def setShowsVarargs(value: ShowObjectFull*): Self = StObject.set(x, "shows", js.Array(value*))
   }
 }

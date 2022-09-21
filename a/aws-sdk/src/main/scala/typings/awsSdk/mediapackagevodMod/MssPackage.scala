@@ -33,7 +33,7 @@ object MssPackage {
     
     inline def setMssManifests(value: listOfMssManifest): Self = StObject.set(x, "MssManifests", value.asInstanceOf[js.Any])
     
-    inline def setMssManifestsVarargs(value: MssManifest*): Self = StObject.set(x, "MssManifests", js.Array(value :_*))
+    inline def setMssManifestsVarargs(value: MssManifest*): Self = StObject.set(x, "MssManifests", js.Array(value*))
     
     inline def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
     

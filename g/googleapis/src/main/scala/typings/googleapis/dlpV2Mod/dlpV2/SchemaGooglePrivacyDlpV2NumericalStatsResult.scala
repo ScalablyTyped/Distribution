@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Result of the numerical stats computation.
-  */
 trait SchemaGooglePrivacyDlpV2NumericalStatsResult extends StObject {
   
   /**
@@ -20,8 +17,7 @@ trait SchemaGooglePrivacyDlpV2NumericalStatsResult extends StObject {
   var minValue: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.undefined
   
   /**
-    * List of 99 values that partition the set of field values into 100 equal
-    * sized buckets.
+    * List of 99 values that partition the set of field values into 100 equal sized buckets.
     */
   var quantileValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Value]] = js.undefined
 }
@@ -46,6 +42,6 @@ object SchemaGooglePrivacyDlpV2NumericalStatsResult {
     
     inline def setQuantileValuesUndefined: Self = StObject.set(x, "quantileValues", js.undefined)
     
-    inline def setQuantileValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = StObject.set(x, "quantileValues", js.Array(value :_*))
+    inline def setQuantileValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = StObject.set(x, "quantileValues", js.Array(value*))
   }
 }

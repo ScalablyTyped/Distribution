@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ActionEvent")
 @js.native
-class ActionEvent protected ()
+open class ActionEvent protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ActionEvent {
   /**
@@ -22,7 +22,7 @@ class ActionEvent protected ()
     */
   def this(
     /** The mesh or sprite that triggered the action */
-  source: js.Any,
+  source: Any,
     /** The X mouse cursor position at the time of the event */
   pointerX: Double,
     /** The Y mouse cursor position at the time of the event */
@@ -32,7 +32,7 @@ class ActionEvent protected ()
   ) = this()
   def this(
     /** The mesh or sprite that triggered the action */
-  source: js.Any,
+  source: Any,
     /** The X mouse cursor position at the time of the event */
   pointerX: Double,
     /** The Y mouse cursor position at the time of the event */
@@ -40,11 +40,11 @@ class ActionEvent protected ()
     /** The mesh that is currently pointed at (can be null) */
   meshUnderPointer: Nullable[typings.babylonjs.BABYLON.AbstractMesh],
     /** the original (browser) event that triggered the ActionEvent */
-  sourceEvent: js.Any
+  sourceEvent: Any
   ) = this()
   def this(
     /** The mesh or sprite that triggered the action */
-  source: js.Any,
+  source: Any,
     /** The X mouse cursor position at the time of the event */
   pointerX: Double,
     /** The Y mouse cursor position at the time of the event */
@@ -52,13 +52,13 @@ class ActionEvent protected ()
     /** The mesh that is currently pointed at (can be null) */
   meshUnderPointer: Nullable[typings.babylonjs.BABYLON.AbstractMesh],
     /** the original (browser) event that triggered the ActionEvent */
-  sourceEvent: js.Any,
+  sourceEvent: Any,
     /** additional data for the event */
-  additionalData: js.Any
+  additionalData: Any
   ) = this()
   def this(
     /** The mesh or sprite that triggered the action */
-  source: js.Any,
+  source: Any,
     /** The X mouse cursor position at the time of the event */
   pointerX: Double,
     /** The Y mouse cursor position at the time of the event */
@@ -68,7 +68,7 @@ class ActionEvent protected ()
     /** the original (browser) event that triggered the ActionEvent */
   sourceEvent: Unit,
     /** additional data for the event */
-  additionalData: js.Any
+  additionalData: Any
   ) = this()
   
   /** The mesh that is currently pointed at (can be null) */
@@ -85,7 +85,7 @@ class ActionEvent protected ()
   
   /** The mesh or sprite that triggered the action */
   /* CompleteClass */
-  var source: js.Any = js.native
+  var source: Any = js.native
 }
 /* static members */
 object ActionEvent {
@@ -102,9 +102,9 @@ object ActionEvent {
     * @returns the new ActionEvent
     */
   inline def CreateNew(source: typings.babylonjs.BABYLON.AbstractMesh): typings.babylonjs.BABYLON.ActionEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
-  inline def CreateNew(source: typings.babylonjs.BABYLON.AbstractMesh, evt: Unit, additionalData: js.Any): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
-  inline def CreateNew(source: typings.babylonjs.BABYLON.AbstractMesh, evt: Event): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
-  inline def CreateNew(source: typings.babylonjs.BABYLON.AbstractMesh, evt: Event, additionalData: js.Any): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
+  inline def CreateNew(source: typings.babylonjs.BABYLON.AbstractMesh, evt: Any): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
+  inline def CreateNew(source: typings.babylonjs.BABYLON.AbstractMesh, evt: Any, additionalData: Any): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
+  inline def CreateNew(source: typings.babylonjs.BABYLON.AbstractMesh, evt: Unit, additionalData: Any): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNew")(source.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
   
   /**
     * Helper function to auto-create an ActionEvent from a primitive
@@ -114,10 +114,10 @@ object ActionEvent {
     * @param additionalData additional data for the event
     * @returns the new ActionEvent
     */
-  inline def CreateNewFromPrimitive(prim: js.Any, pointerPos: typings.babylonjs.BABYLON.Vector2): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
-  inline def CreateNewFromPrimitive(prim: js.Any, pointerPos: typings.babylonjs.BABYLON.Vector2, evt: Unit, additionalData: js.Any): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
-  inline def CreateNewFromPrimitive(prim: js.Any, pointerPos: typings.babylonjs.BABYLON.Vector2, evt: Event): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
-  inline def CreateNewFromPrimitive(prim: js.Any, pointerPos: typings.babylonjs.BABYLON.Vector2, evt: Event, additionalData: js.Any): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
+  inline def CreateNewFromPrimitive(prim: Any, pointerPos: typings.babylonjs.BABYLON.Vector2): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
+  inline def CreateNewFromPrimitive(prim: Any, pointerPos: typings.babylonjs.BABYLON.Vector2, evt: Unit, additionalData: Any): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
+  inline def CreateNewFromPrimitive(prim: Any, pointerPos: typings.babylonjs.BABYLON.Vector2, evt: Event): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
+  inline def CreateNewFromPrimitive(prim: Any, pointerPos: typings.babylonjs.BABYLON.Vector2, evt: Event, additionalData: Any): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromPrimitive")(prim.asInstanceOf[js.Any], pointerPos.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
   
   /**
     * Helper function to auto-create an ActionEvent from a scene. If triggered by a mesh use ActionEvent.CreateNew
@@ -125,7 +125,7 @@ object ActionEvent {
     * @param evt The original (browser) event
     * @returns the new ActionEvent
     */
-  inline def CreateNewFromScene(scene: typings.babylonjs.BABYLON.Scene, evt: Event): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromScene")(scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
+  inline def CreateNewFromScene(scene: typings.babylonjs.BABYLON.Scene, evt: Any): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromScene")(scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
   
   /**
     * Helper function to auto-create an ActionEvent from a source sprite
@@ -136,17 +136,17 @@ object ActionEvent {
     * @returns the new ActionEvent
     */
   inline def CreateNewFromSprite(source: typings.babylonjs.BABYLON.Sprite, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
+  inline def CreateNewFromSprite(source: typings.babylonjs.BABYLON.Sprite, scene: typings.babylonjs.BABYLON.Scene, evt: Any): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
+  inline def CreateNewFromSprite(
+    source: typings.babylonjs.BABYLON.Sprite,
+    scene: typings.babylonjs.BABYLON.Scene,
+    evt: Any,
+    additionalData: Any
+  ): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
   inline def CreateNewFromSprite(
     source: typings.babylonjs.BABYLON.Sprite,
     scene: typings.babylonjs.BABYLON.Scene,
     evt: Unit,
-    additionalData: js.Any
-  ): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
-  inline def CreateNewFromSprite(source: typings.babylonjs.BABYLON.Sprite, scene: typings.babylonjs.BABYLON.Scene, evt: Event): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
-  inline def CreateNewFromSprite(
-    source: typings.babylonjs.BABYLON.Sprite,
-    scene: typings.babylonjs.BABYLON.Scene,
-    evt: Event,
-    additionalData: js.Any
+    additionalData: Any
   ): typings.babylonjs.BABYLON.ActionEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateNewFromSprite")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], evt.asInstanceOf[js.Any], additionalData.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ActionEvent]
 }

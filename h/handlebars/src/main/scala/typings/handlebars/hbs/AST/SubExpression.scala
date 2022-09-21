@@ -31,7 +31,7 @@ object SubExpression {
     
     inline def setParams(value: js.Array[Expression]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setParamsVarargs(value: Expression*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: Expression*): Self = StObject.set(x, "params", js.Array(value*))
     
     inline def setPath(value: PathExpression): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,7 @@ object mod {
     
     def createListener(options: Force): Unit
     
-    def get(): js.Any
+    def get(): Any
     
     def getDescription(): js.Object
     
@@ -32,7 +32,7 @@ object mod {
     
     inline def apply(
       createListener: Force => Unit,
-      get: () => js.Any,
+      get: () => Any,
       getDescription: () => js.Object,
       insert: js.Object => Unit,
       set: js.Object => js.Array[Id]
@@ -45,7 +45,7 @@ object mod {
       
       inline def setCreateListener(value: Force => Unit): Self = StObject.set(x, "createListener", js.Any.fromFunction1(value))
       
-      inline def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
       inline def setGetDescription(value: () => js.Object): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
       

@@ -10,15 +10,13 @@ The lodash method `_.zip` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.zip |
 | Keywords           | lodash-modularized, zip |
-| # releases         | 0 |
-| # dependents       | 64 |
-| # downloads        | 38427358 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4580491.333333333 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
-- [Bugs](https://github.com/lodash/lodash/issues)
-- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.zip)
     
 

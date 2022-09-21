@@ -30,6 +30,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * of the game canvas. This div is sized to match the canvas, and if the canvas size changes, as a result of
   * settings within the Scale Manager, the dom container is resized accordingly.
   * 
+  * If you have not already done so, you have to provide a `parent` in the Game Configuration, or the DOM
+  * Container will fail to be created.
+  * 
   * You can create a DOM Element by either passing in DOMStrings, or by passing in a reference to an existing
   * Element that you wish to be placed under the control of Phaser. For example:
   * 
@@ -143,8 +146,8 @@ trait DOMElement
   def createElement(tagName: String): this.type = js.native
   def createElement(tagName: String, style: String): this.type = js.native
   def createElement(tagName: String, style: String, innerText: String): this.type = js.native
-  def createElement(tagName: String, style: js.Any): this.type = js.native
-  def createElement(tagName: String, style: js.Any, innerText: String): this.type = js.native
+  def createElement(tagName: String, style: Any): this.type = js.native
+  def createElement(tagName: String, style: Any, innerText: String): this.type = js.native
   def createElement(tagName: String, style: Unit, innerText: String): this.type = js.native
   
   /**
@@ -204,11 +207,11 @@ trait DOMElement
     * 
     * If this Game Object already has an Element, it is removed from the DOM entirely first.
     * Any event listeners you may have previously created will need to be re-created after this call.
-    * @param A string of html to be set as the `innerHTML` property of the created element.
+    * @param html A string of html to be set as the `innerHTML` property of the created element.
     * @param tagName The tag name of the element into which all of the html will be inserted. Defaults to a plain div tag. Default 'div'.
     */
-  def createFromHTML(A: String): this.type = js.native
-  def createFromHTML(A: String, tagName: String): this.type = js.native
+  def createFromHTML(html: String): this.type = js.native
+  def createFromHTML(html: String, tagName: String): this.type = js.native
   
   /**
     * The computed display height of this Game Object, based on the `getBoundingClientRect` DOM call.
@@ -282,6 +285,15 @@ trait DOMElement
     * **Changing this value changes it globally for all DOM Elements, as they all share the same parent container.**
     */
   var perspective: Double = js.native
+  
+  /**
+    * Sets the CSS `pointerEvents` attribute on the DOM Element during rendering.
+    * 
+    * This is 'auto' by default. Changing it may have unintended side-effects with
+    * internal Phaser input handling, such as dragging, so only change this if you
+    * understand the implications.
+    */
+  var pointerEvents: String = js.native
   
   /**
     * Removes the current DOM Element bound to this Game Object from the DOM entirely and resets the
@@ -362,14 +374,14 @@ trait DOMElement
   def setElement(element: String): this.type = js.native
   def setElement(element: String, style: String): this.type = js.native
   def setElement(element: String, style: String, innerText: String): this.type = js.native
-  def setElement(element: String, style: js.Any): this.type = js.native
-  def setElement(element: String, style: js.Any, innerText: String): this.type = js.native
+  def setElement(element: String, style: Any): this.type = js.native
+  def setElement(element: String, style: Any, innerText: String): this.type = js.native
   def setElement(element: String, style: Unit, innerText: String): this.type = js.native
   def setElement(element: Element): this.type = js.native
   def setElement(element: Element, style: String): this.type = js.native
   def setElement(element: Element, style: String, innerText: String): this.type = js.native
-  def setElement(element: Element, style: js.Any): this.type = js.native
-  def setElement(element: Element, style: js.Any, innerText: String): this.type = js.native
+  def setElement(element: Element, style: Any): this.type = js.native
+  def setElement(element: Element, style: Any, innerText: String): this.type = js.native
   def setElement(element: Element, style: Unit, innerText: String): this.type = js.native
   
   /**

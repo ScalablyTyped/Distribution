@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeOrganizationConfigurationResponse extends StObject {
   
   /**
-    * Specifies whether Amazon Macie is enabled automatically for accounts that are added to the AWS organization.
+    * Specifies whether Amazon Macie is enabled automatically for accounts that are added to the organization.
     */
   var autoEnable: js.UndefOr[boolean] = js.undefined
   
   /**
-    * Specifies whether the maximum number of Amazon Macie member accounts are part of the AWS organization.
+    * Specifies whether the maximum number of Amazon Macie member accounts are part of the organization.
     */
   var maxAccountLimitReached: js.UndefOr[boolean] = js.undefined
 }

@@ -11,9 +11,9 @@ An HTTP client library for node.js
 | Full name          | restler |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 396 |
-| # downloads        | 1707893 |
-| # stars            | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 165562.66666666666 |
+| # stars            | 2000.0 |
 
 ## Links
 - [Homepage](https://github.com/danwrong/restler)

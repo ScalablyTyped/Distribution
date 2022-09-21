@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__ammo
 
-Typings are for version 5.0.1
+Typings are for version 6.0.0
 
 ## Library description:
 HTTP Range processing utilities
@@ -10,10 +10,10 @@ HTTP Range processing utilities
 | ------------------ | :-------------: |
 | Full name          | @hapi/ammo |
 | Keywords           | http, range, utilities |
-| # releases         | 8 |
-| # dependents       | 6 |
-| # downloads        | 14048762 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2311830.3333333335 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/ammo#readme)

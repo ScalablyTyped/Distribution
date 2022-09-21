@@ -24,8 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object customizeMod {
   
   @js.native
-  trait Customize
-    extends Values[Setting[js.Any]] {
+  trait Customize extends Values[Setting[Any]] {
     
     def _handleSettingValidities(args: HandleSettingValiditiesArgs): Unit = js.native
     
@@ -42,15 +41,15 @@ object customizeMod {
     @JSName("defaultConstructor")
     var defaultConstructor_Customize: Setting[Class] = js.native
     
-    def dirtyValues(): Record[String, js.Any] = js.native
-    def dirtyValues(options: DirtyValuesOptions): Record[String, js.Any] = js.native
+    def dirtyValues(): Record[String, Any] = js.native
+    def dirtyValues(options: DirtyValuesOptions): Record[String, Any] = js.native
     
     def ensure(element: String): JQuery[HTMLElement] = js.native
     def ensure(element: JQuery[HTMLElement]): JQuery[HTMLElement] = js.native
     
     def findControlsForSettings(settingIds: js.Array[String]): Record[String, Control] = js.native
     
-    def get(): Record[String, js.Any] = js.native
+    def get(): Record[String, Any] = js.native
     
     // TODO
     var l10n: Record[String, String] = js.native
@@ -65,10 +64,10 @@ object customizeMod {
     
     def reflowPaneContents(): Unit = js.native
     
-    def requestChangesetUpdate(): Promise[js.Any, js.Any, js.Any] = js.native
-    def requestChangesetUpdate(changes: Unit, args: RequestChangesetUpdateOptions): Promise[js.Any, js.Any, js.Any] = js.native
-    def requestChangesetUpdate(changes: Record[String, js.Any]): Promise[js.Any, js.Any, js.Any] = js.native
-    def requestChangesetUpdate(changes: Record[String, js.Any], args: RequestChangesetUpdateOptions): Promise[js.Any, js.Any, js.Any] = js.native
+    def requestChangesetUpdate(): Promise[Any, Any, Any] = js.native
+    def requestChangesetUpdate(changes: Unit, args: RequestChangesetUpdateOptions): Promise[Any, Any, Any] = js.native
+    def requestChangesetUpdate(changes: Record[String, Any]): Promise[Any, Any, Any] = js.native
+    def requestChangesetUpdate(changes: Record[String, Any], args: RequestChangesetUpdateOptions): Promise[Any, Any, Any] = js.native
     
     var section: Values[Section] = js.native
     
@@ -78,7 +77,7 @@ object customizeMod {
     
     var settingConstructor: SettingConstructor = js.native
     
-    var settings: js.Any = js.native
+    var settings: Any = js.native
     
     var state: Values[Class] = js.native
     
@@ -110,11 +109,11 @@ object customizeMod {
     // TODO
     var focusInvalidControl: js.UndefOr[Boolean] = js.undefined
     
-    var settingValidities: Record[String, js.Any]
+    var settingValidities: Record[String, Any]
   }
   object HandleSettingValiditiesArgs {
     
-    inline def apply(settingValidities: Record[String, js.Any]): HandleSettingValiditiesArgs = {
+    inline def apply(settingValidities: Record[String, Any]): HandleSettingValiditiesArgs = {
       val __obj = js.Dynamic.literal(settingValidities = settingValidities.asInstanceOf[js.Any])
       __obj.asInstanceOf[HandleSettingValiditiesArgs]
     }
@@ -125,7 +124,7 @@ object customizeMod {
       
       inline def setFocusInvalidControlUndefined: Self = StObject.set(x, "focusInvalidControl", js.undefined)
       
-      inline def setSettingValidities(value: Record[String, js.Any]): Self = StObject.set(x, "settingValidities", value.asInstanceOf[js.Any])
+      inline def setSettingValidities(value: Record[String, Any]): Self = StObject.set(x, "settingValidities", value.asInstanceOf[js.Any])
     }
   }
   

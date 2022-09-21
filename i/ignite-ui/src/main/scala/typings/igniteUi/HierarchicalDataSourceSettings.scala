@@ -10,21 +10,21 @@ trait HierarchicalDataSourceSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   var autogenerate: js.UndefOr[Boolean] = js.undefined
   
-  var callback: js.UndefOr[js.Any] = js.undefined
+  var callback: js.UndefOr[Any] = js.undefined
   
-  var callee: js.UndefOr[js.Any] = js.undefined
+  var callee: js.UndefOr[Any] = js.undefined
   
-  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var dataBinding: js.UndefOr[js.Any] = js.undefined
+  var dataBinding: js.UndefOr[Any] = js.undefined
   
-  var dataBound: js.UndefOr[js.Any] = js.undefined
+  var dataBound: js.UndefOr[Any] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   var defaultChildrenDataProperty: js.UndefOr[String] = js.undefined
   
@@ -42,9 +42,9 @@ trait HierarchicalDataSourceSettings
   
   var requestType: js.UndefOr[String] = js.undefined
   
-  var responseContentType: js.UndefOr[js.Any] = js.undefined
+  var responseContentType: js.UndefOr[Any] = js.undefined
   
-  var responseDataType: js.UndefOr[js.Any] = js.undefined
+  var responseDataType: js.UndefOr[Any] = js.undefined
   
   /**
     * All of the rest - paging, sorting, filtering, can be defined in the layouts definition, which will "override" the parent defs
@@ -59,9 +59,9 @@ trait HierarchicalDataSourceSettings
     */
   var `type`: js.UndefOr[String] = js.undefined
   
-  var urlParamsEncoded: js.UndefOr[js.Any] = js.undefined
+  var urlParamsEncoded: js.UndefOr[Any] = js.undefined
   
-  var urlParamsEncoding: js.UndefOr[js.Any] = js.undefined
+  var urlParamsEncoding: js.UndefOr[Any] = js.undefined
 }
 object HierarchicalDataSourceSettings {
   
@@ -76,31 +76,31 @@ object HierarchicalDataSourceSettings {
     
     inline def setAutogenerateUndefined: Self = StObject.set(x, "autogenerate", js.undefined)
     
-    inline def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    inline def setCallee(value: js.Any): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
+    inline def setCallee(value: Any): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
     inline def setCalleeUndefined: Self = StObject.set(x, "callee", js.undefined)
     
-    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataBinding(value: js.Any): Self = StObject.set(x, "dataBinding", value.asInstanceOf[js.Any])
+    inline def setDataBinding(value: Any): Self = StObject.set(x, "dataBinding", value.asInstanceOf[js.Any])
     
     inline def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
-    inline def setDataBound(value: js.Any): Self = StObject.set(x, "dataBound", value.asInstanceOf[js.Any])
+    inline def setDataBound(value: Any): Self = StObject.set(x, "dataBound", value.asInstanceOf[js.Any])
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDefaultChildrenDataProperty(value: String): Self = StObject.set(x, "defaultChildrenDataProperty", value.asInstanceOf[js.Any])
     
@@ -134,11 +134,11 @@ object HierarchicalDataSourceSettings {
     
     inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
     
-    inline def setResponseContentType(value: js.Any): Self = StObject.set(x, "responseContentType", value.asInstanceOf[js.Any])
+    inline def setResponseContentType(value: Any): Self = StObject.set(x, "responseContentType", value.asInstanceOf[js.Any])
     
     inline def setResponseContentTypeUndefined: Self = StObject.set(x, "responseContentType", js.undefined)
     
-    inline def setResponseDataType(value: js.Any): Self = StObject.set(x, "responseDataType", value.asInstanceOf[js.Any])
+    inline def setResponseDataType(value: Any): Self = StObject.set(x, "responseDataType", value.asInstanceOf[js.Any])
     
     inline def setResponseDataTypeUndefined: Self = StObject.set(x, "responseDataType", js.undefined)
     
@@ -154,11 +154,11 @@ object HierarchicalDataSourceSettings {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrlParamsEncoded(value: js.Any): Self = StObject.set(x, "urlParamsEncoded", value.asInstanceOf[js.Any])
+    inline def setUrlParamsEncoded(value: Any): Self = StObject.set(x, "urlParamsEncoded", value.asInstanceOf[js.Any])
     
     inline def setUrlParamsEncodedUndefined: Self = StObject.set(x, "urlParamsEncoded", js.undefined)
     
-    inline def setUrlParamsEncoding(value: js.Any): Self = StObject.set(x, "urlParamsEncoding", value.asInstanceOf[js.Any])
+    inline def setUrlParamsEncoding(value: Any): Self = StObject.set(x, "urlParamsEncoding", value.asInstanceOf[js.Any])
     
     inline def setUrlParamsEncodingUndefined: Self = StObject.set(x, "urlParamsEncoding", js.undefined)
   }

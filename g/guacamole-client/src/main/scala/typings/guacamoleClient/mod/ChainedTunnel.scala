@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "ChainedTunnel")
 @js.native
-class ChainedTunnel protected ()
+open class ChainedTunnel protected ()
   extends typings.guacamoleClient.chainedTunnelMod.ChainedTunnel {
   /**
     * @param tunnelChain The tunnels to use, in order of priority.

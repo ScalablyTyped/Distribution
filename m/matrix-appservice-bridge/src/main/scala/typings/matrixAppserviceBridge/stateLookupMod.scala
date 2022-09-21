@@ -1,6 +1,7 @@
 package typings.matrixAppserviceBridge
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.matrixAppserviceBridge.intentMod.Intent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ object stateLookupMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/state-lookup", "StateLookup")
   @js.native
-  class StateLookup protected () extends StObject {
+  open class StateLookup protected () extends StObject {
     /**
       * Construct a new state lookup entity.
       *
@@ -28,13 +29,11 @@ object stateLookupMod {
       */
     def this(opts: StateLookupOpts) = this()
     
-    /* private */ var _client: js.Any = js.native
+    /* private */ val dict: Any = js.native
     
-    /* private */ var dict: js.Any = js.native
+    /* private */ val eventTypes: Any = js.native
     
-    /* private */ var eventTypes: js.Any = js.native
-    
-    /* private */ var getInitialState: js.Any = js.native
+    /* private */ var getInitialState: Any = js.native
     
     /**
       * Get a stored state event.
@@ -48,9 +47,11 @@ object stateLookupMod {
     def getState(roomId: String, eventType: String): Null | StateLookupEvent | js.Array[StateLookupEvent] = js.native
     def getState(roomId: String, eventType: String, stateKey: String): Null | StateLookupEvent | js.Array[StateLookupEvent] = js.native
     
-    /* private */ var insertEvent: js.Any = js.native
+    /* private */ var insertEvent: Any = js.native
     
-    /* private */ var lookupQueue: js.Any = js.native
+    /* private */ val intent: Any = js.native
+    
+    /* private */ val lookupQueue: Any = js.native
     
     /**
       * Update any state dictionaries with this event. If there is nothing tracking
@@ -59,7 +60,7 @@ object stateLookupMod {
       */
     def onEvent(event: StateLookupEvent): js.Promise[Unit] = js.native
     
-    /* private */ var retryStateIn: js.Any = js.native
+    /* private */ var retryStateIn: Any = js.native
     
     /**
       * Track a given room. The client must have access to this room.
@@ -87,7 +88,7 @@ object stateLookupMod {
   
   trait StateLookupEvent extends StObject {
     
-    var content: js.Any
+    var content: Any
     
     var event_id: String
     
@@ -99,7 +100,7 @@ object stateLookupMod {
   }
   object StateLookupEvent {
     
-    inline def apply(content: js.Any, event_id: String, room_id: String, state_key: String, `type`: String): StateLookupEvent = {
+    inline def apply(content: Any, event_id: String, room_id: String, state_key: String, `type`: String): StateLookupEvent = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], event_id = event_id.asInstanceOf[js.Any], room_id = room_id.asInstanceOf[js.Any], state_key = state_key.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateLookupEvent]
@@ -107,7 +108,7 @@ object stateLookupMod {
     
     extension [Self <: StateLookupEvent](x: Self) {
       
-      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setEvent_id(value: String): Self = StObject.set(x, "event_id", value.asInstanceOf[js.Any])
       
@@ -121,9 +122,9 @@ object stateLookupMod {
   
   trait StateLookupOpts extends StObject {
     
-    var client: js.Any
-    
     var eventTypes: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var intent: Intent
     
     var retryStateInMs: js.UndefOr[Double] = js.undefined
     
@@ -131,20 +132,20 @@ object stateLookupMod {
   }
   object StateLookupOpts {
     
-    inline def apply(client: js.Any): StateLookupOpts = {
-      val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
+    inline def apply(intent: Intent): StateLookupOpts = {
+      val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateLookupOpts]
     }
     
     extension [Self <: StateLookupOpts](x: Self) {
       
-      inline def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
-      
       inline def setEventTypes(value: js.Array[String]): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
       
       inline def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
       
-      inline def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
+      inline def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value*))
+      
+      inline def setIntent(value: Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
       
       inline def setRetryStateInMs(value: Double): Self = StObject.set(x, "retryStateInMs", value.asInstanceOf[js.Any])
       

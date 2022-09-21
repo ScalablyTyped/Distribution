@@ -8,17 +8,17 @@ trait SimplifiedMap
   extends StObject
      with SimplifiedSet {
   
-  def get(key: js.Any): js.Any
+  def get(key: Any): Any
 }
 object SimplifiedMap {
   
-  inline def apply(get: js.Any => js.Any, has: js.Any => Boolean): SimplifiedMap = {
+  inline def apply(get: Any => Any, has: Any => Boolean): SimplifiedMap = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has))
     __obj.asInstanceOf[SimplifiedMap]
   }
   
   extension [Self <: SimplifiedMap](x: Self) {
     
-    inline def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: Any => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }
 }

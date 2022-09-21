@@ -1,238 +1,211 @@
 package typings.baseui
 
-import typings.baseui.blockMod.BlockProps
-import typings.react.mod.FC
+import typings.baseui.anon.FontFamily
+import typings.baseui.themesTypesMod.FontTokens
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typographyMod {
   
-  @JSImport("baseui/typography", "Caption1")
+  @JSImport("baseui/themes/move-theme/typography", "fontTokens")
   @js.native
-  val Caption1: FC[BlockProps] = js.native
+  val fontTokens: FontTokens = js.native
   
-  @JSImport("baseui/typography", "Caption2")
-  @js.native
-  val Caption2: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "Display")
-  @js.native
-  val Display: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "Display1")
-  @js.native
-  val Display1: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "Display2")
-  @js.native
-  val Display2: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "Display3")
-  @js.native
-  val Display3: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "Display4")
-  @js.native
-  val Display4: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "DisplayLarge")
-  @js.native
-  val DisplayLarge: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "DisplayMedium")
-  @js.native
-  val DisplayMedium: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "DisplaySmall")
-  @js.native
-  val DisplaySmall: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "DisplayXSmall")
-  @js.native
-  val DisplayXSmall: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "H1")
-  @js.native
-  val H1: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "H2")
-  @js.native
-  val H2: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "H3")
-  @js.native
-  val H3: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "H4")
-  @js.native
-  val H4: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "H5")
-  @js.native
-  val H5: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "H6")
-  @js.native
-  val H6: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "HeadingLarge")
-  @js.native
-  val HeadingLarge: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "HeadingMedium")
-  @js.native
-  val HeadingMedium: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "HeadingSmall")
-  @js.native
-  val HeadingSmall: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "HeadingXLarge")
-  @js.native
-  val HeadingXLarge: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "HeadingXSmall")
-  @js.native
-  val HeadingXSmall: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "HeadingXXLarge")
-  @js.native
-  val HeadingXXLarge: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "Label1")
-  @js.native
-  val Label1: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "Label2")
-  @js.native
-  val Label2: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "Label3")
-  @js.native
-  val Label3: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "Label4")
-  @js.native
-  val Label4: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "LabelLarge")
-  @js.native
-  val LabelLarge: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "LabelMedium")
-  @js.native
-  val LabelMedium: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "LabelSmall")
-  @js.native
-  val LabelSmall: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "LabelXSmall")
-  @js.native
-  val LabelXSmall: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoDisplayLarge")
-  @js.native
-  val MonoDisplayLarge: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoDisplayMedium")
-  @js.native
-  val MonoDisplayMedium: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoDisplaySmall")
-  @js.native
-  val MonoDisplaySmall: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoDisplayXSmall")
-  @js.native
-  val MonoDisplayXSmall: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoHeadingLarge")
-  @js.native
-  val MonoHeadingLarge: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoHeadingMedium")
-  @js.native
-  val MonoHeadingMedium: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoHeadingSmall")
-  @js.native
-  val MonoHeadingSmall: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoHeadingXLarge")
-  @js.native
-  val MonoHeadingXLarge: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoHeadingXSmall")
-  @js.native
-  val MonoHeadingXSmall: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoHeadingXXLarge")
-  @js.native
-  val MonoHeadingXXLarge: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoLabelLarge")
-  @js.native
-  val MonoLabelLarge: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoLabelMedium")
-  @js.native
-  val MonoLabelMedium: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoLabelSmall")
-  @js.native
-  val MonoLabelSmall: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoLabelXSmall")
-  @js.native
-  val MonoLabelXSmall: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoParagraphLarge")
-  @js.native
-  val MonoParagraphLarge: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoParagraphMedium")
-  @js.native
-  val MonoParagraphMedium: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoParagraphSmall")
-  @js.native
-  val MonoParagraphSmall: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "MonoParagraphXSmall")
-  @js.native
-  val MonoParagraphXSmall: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "Paragraph1")
-  @js.native
-  val Paragraph1: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "Paragraph2")
-  @js.native
-  val Paragraph2: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "Paragraph3")
-  @js.native
-  val Paragraph3: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "Paragraph4")
-  @js.native
-  val Paragraph4: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "ParagraphLarge")
-  @js.native
-  val ParagraphLarge: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "ParagraphMedium")
-  @js.native
-  val ParagraphMedium: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "ParagraphSmall")
-  @js.native
-  val ParagraphSmall: FC[BlockProps] = js.native
-  
-  @JSImport("baseui/typography", "ParagraphXSmall")
-  @js.native
-  val ParagraphXSmall: FC[BlockProps] = js.native
+  object typography {
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.DisplayLarge")
+    @js.native
+    def DisplayLarge: FontFamily = js.native
+    inline def DisplayLarge_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisplayLarge")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.DisplayMedium")
+    @js.native
+    def DisplayMedium: FontFamily = js.native
+    inline def DisplayMedium_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisplayMedium")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.DisplaySmall")
+    @js.native
+    def DisplaySmall: FontFamily = js.native
+    inline def DisplaySmall_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisplaySmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.DisplayXSmall")
+    @js.native
+    def DisplayXSmall: FontFamily = js.native
+    inline def DisplayXSmall_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisplayXSmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.HeadingLarge")
+    @js.native
+    def HeadingLarge: FontFamily = js.native
+    inline def HeadingLarge_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HeadingLarge")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.HeadingMedium")
+    @js.native
+    def HeadingMedium: FontFamily = js.native
+    inline def HeadingMedium_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HeadingMedium")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.HeadingSmall")
+    @js.native
+    def HeadingSmall: FontFamily = js.native
+    inline def HeadingSmall_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HeadingSmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.HeadingXLarge")
+    @js.native
+    def HeadingXLarge: FontFamily = js.native
+    inline def HeadingXLarge_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HeadingXLarge")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.HeadingXSmall")
+    @js.native
+    def HeadingXSmall: FontFamily = js.native
+    inline def HeadingXSmall_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HeadingXSmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.HeadingXXLarge")
+    @js.native
+    def HeadingXXLarge: FontFamily = js.native
+    inline def HeadingXXLarge_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HeadingXXLarge")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoDisplayLarge")
+    @js.native
+    def MonoDisplayLarge: FontFamily = js.native
+    inline def MonoDisplayLarge_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoDisplayLarge")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoDisplayMedium")
+    @js.native
+    def MonoDisplayMedium: FontFamily = js.native
+    inline def MonoDisplayMedium_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoDisplayMedium")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoDisplaySmall")
+    @js.native
+    def MonoDisplaySmall: FontFamily = js.native
+    inline def MonoDisplaySmall_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoDisplaySmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoDisplayXSmall")
+    @js.native
+    def MonoDisplayXSmall: FontFamily = js.native
+    inline def MonoDisplayXSmall_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoDisplayXSmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoHeadingLarge")
+    @js.native
+    def MonoHeadingLarge: FontFamily = js.native
+    inline def MonoHeadingLarge_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoHeadingLarge")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoHeadingMedium")
+    @js.native
+    def MonoHeadingMedium: FontFamily = js.native
+    inline def MonoHeadingMedium_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoHeadingMedium")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoHeadingSmall")
+    @js.native
+    def MonoHeadingSmall: FontFamily = js.native
+    inline def MonoHeadingSmall_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoHeadingSmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoHeadingXLarge")
+    @js.native
+    def MonoHeadingXLarge: FontFamily = js.native
+    inline def MonoHeadingXLarge_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoHeadingXLarge")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoHeadingXSmall")
+    @js.native
+    def MonoHeadingXSmall: FontFamily = js.native
+    inline def MonoHeadingXSmall_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoHeadingXSmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoHeadingXXLarge")
+    @js.native
+    def MonoHeadingXXLarge: FontFamily = js.native
+    inline def MonoHeadingXXLarge_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoHeadingXXLarge")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoLabelLarge")
+    @js.native
+    def MonoLabelLarge: FontFamily = js.native
+    inline def MonoLabelLarge_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoLabelLarge")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoLabelMedium")
+    @js.native
+    def MonoLabelMedium: FontFamily = js.native
+    inline def MonoLabelMedium_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoLabelMedium")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoLabelSmall")
+    @js.native
+    def MonoLabelSmall: FontFamily = js.native
+    inline def MonoLabelSmall_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoLabelSmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoLabelXSmall")
+    @js.native
+    def MonoLabelXSmall: FontFamily = js.native
+    inline def MonoLabelXSmall_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoLabelXSmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoParagraphLarge")
+    @js.native
+    def MonoParagraphLarge: FontFamily = js.native
+    inline def MonoParagraphLarge_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoParagraphLarge")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoParagraphMedium")
+    @js.native
+    def MonoParagraphMedium: FontFamily = js.native
+    inline def MonoParagraphMedium_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoParagraphMedium")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoParagraphSmall")
+    @js.native
+    def MonoParagraphSmall: FontFamily = js.native
+    inline def MonoParagraphSmall_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoParagraphSmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.MonoParagraphXSmall")
+    @js.native
+    def MonoParagraphXSmall: FontFamily = js.native
+    inline def MonoParagraphXSmall_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonoParagraphXSmall")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.font1050")
+    @js.native
+    def font1050: FontFamily = js.native
+    inline def font1050_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("font1050")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.font1150")
+    @js.native
+    def font1150: FontFamily = js.native
+    inline def font1150_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("font1150")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.font1250")
+    @js.native
+    def font1250: FontFamily = js.native
+    inline def font1250_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("font1250")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.font1350")
+    @js.native
+    def font1350: FontFamily = js.native
+    inline def font1350_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("font1350")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.font1450")
+    @js.native
+    def font1450: FontFamily = js.native
+    inline def font1450_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("font1450")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.font550")
+    @js.native
+    def font550: FontFamily = js.native
+    inline def font550_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("font550")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.font650")
+    @js.native
+    def font650: FontFamily = js.native
+    inline def font650_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("font650")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.font750")
+    @js.native
+    def font750: FontFamily = js.native
+    inline def font750_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("font750")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.font850")
+    @js.native
+    def font850: FontFamily = js.native
+    inline def font850_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("font850")(x.asInstanceOf[js.Any])
+    
+    @JSImport("baseui/themes/move-theme/typography", "typography.font950")
+    @js.native
+    def font950: FontFamily = js.native
+    inline def font950_=(x: FontFamily): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("font950")(x.asInstanceOf[js.Any])
+  }
 }

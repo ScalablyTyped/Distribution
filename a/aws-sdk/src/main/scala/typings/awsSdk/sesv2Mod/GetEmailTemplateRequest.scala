@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetEmailTemplateRequest extends StObject {
   
   /**
-    * The name of the template you want to retrieve.
+    * The name of the template.
     */
   var TemplateName: EmailTemplateName
 }

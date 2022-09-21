@@ -10,10 +10,10 @@ object sentimentNeutralMod {
   
   @JSImport("material-ui/svg-icons/social/sentiment-neutral", JSImport.Default)
   @js.native
-  class default () extends SocialSentimentNeutral
+  open class default () extends SocialSentimentNeutral
   
   @JSImport("material-ui/svg-icons/social/sentiment-neutral", "SocialSentimentNeutral")
   @js.native
-  class SocialSentimentNeutral ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class SocialSentimentNeutral ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

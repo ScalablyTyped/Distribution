@@ -1,7 +1,7 @@
 
 # Scala.js typings for fullname
 
-Typings are for version v2.1.0
+Typings are for version 4.0.1
 
 ## Library description:
 Get the fullname of the current user
@@ -10,10 +10,10 @@ Get the fullname of the current user
 | ------------------ | :-------------: |
 | Full name          | fullname |
 | Keywords           | name, fullname, realname, full name, surname, full, real, given, user, gecos, pwuid, uid |
-| # releases         | 3 |
-| # dependents       | 62 |
-| # downloads        | 4306750 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 888718.3333333334 |
+| # stars            | 43.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/fullname#readme)
@@ -24,7 +24,7 @@ Get the fullname of the current user
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -29,7 +29,7 @@ object ListFunctionEventInvokeConfigsResponse {
     
     inline def setFunctionEventInvokeConfigsUndefined: Self = StObject.set(x, "FunctionEventInvokeConfigs", js.undefined)
     
-    inline def setFunctionEventInvokeConfigsVarargs(value: FunctionEventInvokeConfig*): Self = StObject.set(x, "FunctionEventInvokeConfigs", js.Array(value :_*))
+    inline def setFunctionEventInvokeConfigsVarargs(value: FunctionEventInvokeConfig*): Self = StObject.set(x, "FunctionEventInvokeConfigs", js.Array(value*))
     
     inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

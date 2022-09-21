@@ -10,7 +10,7 @@ object labelsMod {
   
   @JSImport("gitlab/dist/types/core/services/Labels", "Labels")
   @js.native
-  class Labels protected () extends ResourceLabels {
+  open class Labels protected () extends ResourceLabels {
     def this(options: BaseServiceOptions) = this()
   }
 }

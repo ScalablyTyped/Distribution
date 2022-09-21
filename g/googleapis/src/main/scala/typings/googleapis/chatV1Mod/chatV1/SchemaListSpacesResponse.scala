@@ -7,11 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaListSpacesResponse extends StObject {
   
   /**
-    * Continuation token to retrieve the next page of results. It will be empty
-    * for the last page of results. Tokens expire in an hour. An error is
-    * thrown if an expired token is passed.
+    * Continuation token to retrieve the next page of results. It will be empty for the last page of results. Tokens expire in an hour. An error is thrown if an expired token is passed.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * List of spaces in the requested (or first) page.
@@ -29,12 +27,14 @@ object SchemaListSpacesResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setSpaces(value: js.Array[SchemaSpace]): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
     inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
     
-    inline def setSpacesVarargs(value: SchemaSpace*): Self = StObject.set(x, "spaces", js.Array(value :_*))
+    inline def setSpacesVarargs(value: SchemaSpace*): Self = StObject.set(x, "spaces", js.Array(value*))
   }
 }

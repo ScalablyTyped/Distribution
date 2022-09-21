@@ -10,15 +10,13 @@ AngularJS module for animations
 | ------------------ | :-------------: |
 | Full name          | angular-animate |
 | Keywords           | angular, framework, browser, animation, client-side |
-| # releases         | 8 |
-| # dependents       | 376 |
-| # downloads        | 9383703 |
-| # stars            | 21 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 940871.0 |
+| # stars            | 59430.0 |
 
 ## Links
 - [Homepage](http://angularjs.org)
-- [Bugs](https://github.com/angular/angular.js/issues)
-- [Repository](https://github.com/angular/angular.js)
 - [Npm](https://www.npmjs.com/package/angular-animate)
     
 

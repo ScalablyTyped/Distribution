@@ -1,45 +1,41 @@
 package typings.strongholdPayJs.mod.global.Stronghold
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.jquery.JQuery
+import typings.std.HTMLElement
+import typings.strongholdPayJs.mod.global.Stronghold.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def HOST: /* "https://api.strongholdpay.com" */ java.lang.String = typings.strongholdPayJs.mod.global.Stronghold.^.asInstanceOf[js.Dynamic].selectDynamic("HOST").asInstanceOf[/* "https://api.strongholdpay.com" */ java.lang.String]
+inline def HOST: /* "https://api.strongholdpay.com" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("HOST").asInstanceOf[/* "https://api.strongholdpay.com" */ String]
 
-inline def Pay(options: typings.strongholdPayJs.mod.global.Stronghold.ClientOptions): typings.strongholdPayJs.mod.global.Stronghold.Client = typings.strongholdPayJs.mod.global.Stronghold.^.asInstanceOf[js.Dynamic].applyDynamic("Pay")(options.asInstanceOf[js.Any]).asInstanceOf[typings.strongholdPayJs.mod.global.Stronghold.Client]
+inline def Pay(options: ClientOptions): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("Pay")(options.asInstanceOf[js.Any]).asInstanceOf[Client]
 
-inline def frameForSrc(src: java.lang.String): typings.jquery.JQuery[typings.std.HTMLElement] = typings.strongholdPayJs.mod.global.Stronghold.^.asInstanceOf[js.Dynamic].applyDynamic("frameForSrc")(src.asInstanceOf[js.Any]).asInstanceOf[typings.jquery.JQuery[typings.std.HTMLElement]]
+inline def frameForSrc(src: String): JQuery[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("frameForSrc")(src.asInstanceOf[js.Any]).asInstanceOf[JQuery[HTMLElement]]
 
-inline def getChargeQuery(): org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Boolean]] = typings.strongholdPayJs.mod.global.Stronghold.^.asInstanceOf[js.Dynamic].applyDynamic("getChargeQuery")().asInstanceOf[org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Boolean]]]
-inline def getChargeQuery(charge: typings.strongholdPayJs.mod.global.Stronghold.ChargeDropin): org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Boolean]] = typings.strongholdPayJs.mod.global.Stronghold.^.asInstanceOf[js.Dynamic].applyDynamic("getChargeQuery")(charge.asInstanceOf[js.Any]).asInstanceOf[org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Boolean]]]
+inline def getChargeQuery(): StringDictionary[js.UndefOr[String | Double | Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChargeQuery")().asInstanceOf[StringDictionary[js.UndefOr[String | Double | Boolean]]]
+inline def getChargeQuery(charge: ChargeDropin): StringDictionary[js.UndefOr[String | Double | Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChargeQuery")(charge.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[String | Double | Boolean]]]
 
-inline def getOptionQuery(options: typings.strongholdPayJs.mod.global.Stronghold.Options): org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Boolean]] = typings.strongholdPayJs.mod.global.Stronghold.^.asInstanceOf[js.Dynamic].applyDynamic("getOptionQuery")(options.asInstanceOf[js.Any]).asInstanceOf[org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Boolean]]]
+inline def getOptionQuery(options: Options): StringDictionary[js.UndefOr[String | Double | Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionQuery")(options.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[String | Double | Boolean]]]
 
-inline def getTipQuery(): org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Boolean]] = typings.strongholdPayJs.mod.global.Stronghold.^.asInstanceOf[js.Dynamic].applyDynamic("getTipQuery")().asInstanceOf[org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Boolean]]]
-inline def getTipQuery(tip: typings.strongholdPayJs.mod.global.Stronghold.TipDataDropin): org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Boolean]] = typings.strongholdPayJs.mod.global.Stronghold.^.asInstanceOf[js.Dynamic].applyDynamic("getTipQuery")(tip.asInstanceOf[js.Any]).asInstanceOf[org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Boolean]]]
-inline def getTipQuery(tip: typings.strongholdPayJs.mod.global.Stronghold.TipDropin): org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Boolean]] = typings.strongholdPayJs.mod.global.Stronghold.^.asInstanceOf[js.Dynamic].applyDynamic("getTipQuery")(tip.asInstanceOf[js.Any]).asInstanceOf[org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Boolean]]]
+inline def getTipQuery(): StringDictionary[js.UndefOr[String | Double | Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTipQuery")().asInstanceOf[StringDictionary[js.UndefOr[String | Double | Boolean]]]
+inline def getTipQuery(tip: TipDataDropin): StringDictionary[js.UndefOr[String | Double | Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTipQuery")(tip.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[String | Double | Boolean]]]
+inline def getTipQuery(tip: TipDropin): StringDictionary[js.UndefOr[String | Double | Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTipQuery")(tip.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[String | Double | Boolean]]]
 
-type AddPaymentSourceOnSuccess = js.Function1[
-/* paymentSource */ typings.strongholdPayJs.mod.global.Stronghold.PaymentSource, 
-scala.Unit]
+type AddPaymentSourceOnSuccess = js.Function1[/* paymentSource */ PaymentSource, Unit]
 
-type ChargeOnSuccess = js.Function1[/* charge */ typings.strongholdPayJs.mod.global.Stronghold.Charge, scala.Unit]
+type ChargeOnSuccess = js.Function1[/* charge */ Charge, Unit]
 
-type OnError = js.Function1[
-/* error */ typings.strongholdPayJs.mod.global.Stronghold.StrongholdPayError, 
-scala.Unit]
+type OnError = js.Function1[/* error */ StrongholdPayError, Unit]
 
-type OnEvent = js.Function1[
-/* event */ typings.strongholdPayJs.mod.global.Stronghold.StrongholdMessageEvent, 
-scala.Unit]
+type OnEvent = js.Function1[/* event */ StrongholdMessageEvent, Unit]
 
-type OnExit = js.Function0[scala.Unit]
+type OnExit = js.Function0[Unit]
 
-type OnReady = js.Function0[scala.Unit]
+type OnReady = js.Function0[Unit]
 
-type TipOnSuccess = js.Function1[/* tip */ typings.strongholdPayJs.mod.global.Stronghold.Tip, scala.Unit]
+type TipOnSuccess = js.Function1[/* tip */ Tip, Unit]
 
-type UpdatePaymentSourceOnSuccess = js.Function1[
-/* paymentSource */ typings.strongholdPayJs.mod.global.Stronghold.PaymentSource, 
-scala.Unit]
+type UpdatePaymentSourceOnSuccess = js.Function1[/* paymentSource */ PaymentSource, Unit]

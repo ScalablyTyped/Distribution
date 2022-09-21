@@ -14,7 +14,17 @@ trait JobRun extends StObject {
   /**
     * The date and time when the job completed processing.
     */
-  var CompletedOn: js.UndefOr[Date] = js.undefined
+  var CompletedOn: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * One or more artifacts that represent the Glue Data Catalog output from running the job.
+    */
+  var DataCatalogOutputs: js.UndefOr[DataCatalogOutputList] = js.undefined
+  
+  /**
+    * Represents a list of JDBC database output objects which defines the output destination for a DataBrew recipe job to write into.
+    */
+  var DatabaseOutputs: js.UndefOr[DatabaseOutputList] = js.undefined
   
   /**
     * The name of the dataset for the job to process.
@@ -35,6 +45,11 @@ trait JobRun extends StObject {
     * The name of the job being processed during this run.
     */
   var JobName: js.UndefOr[typings.awsSdk.databrewMod.JobName] = js.undefined
+  
+  /**
+    * A sample configuration for profile jobs only, which determines the number of rows on which the profile job is run. If a JobSample value isn't provided, the default is used. The default value is CUSTOM_ROWS for the mode parameter and 20,000 for the size parameter.
+    */
+  var JobSample: js.UndefOr[typings.awsSdk.databrewMod.JobSample] = js.undefined
   
   /**
     * The name of an Amazon CloudWatch log group, where the job writes diagnostic messages when it runs.
@@ -62,19 +77,24 @@ trait JobRun extends StObject {
   var RunId: js.UndefOr[JobRunId] = js.undefined
   
   /**
-    * The identifier (the user name) of the user who initiated the job run. 
+    * The Amazon Resource Name (ARN) of the user who initiated the job run. 
     */
   var StartedBy: js.UndefOr[typings.awsSdk.databrewMod.StartedBy] = js.undefined
   
   /**
     * The date and time when the job run began. 
     */
-  var StartedOn: js.UndefOr[Date] = js.undefined
+  var StartedOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The current state of the job run entity itself.
     */
   var State: js.UndefOr[JobRunState] = js.undefined
+  
+  /**
+    * List of validation configurations that are applied to the profile job run.
+    */
+  var ValidationConfigurations: js.UndefOr[ValidationConfigurationList] = js.undefined
 }
 object JobRun {
   
@@ -89,9 +109,21 @@ object JobRun {
     
     inline def setAttemptUndefined: Self = StObject.set(x, "Attempt", js.undefined)
     
-    inline def setCompletedOn(value: Date): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
+    inline def setCompletedOn(value: js.Date): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
     
     inline def setCompletedOnUndefined: Self = StObject.set(x, "CompletedOn", js.undefined)
+    
+    inline def setDataCatalogOutputs(value: DataCatalogOutputList): Self = StObject.set(x, "DataCatalogOutputs", value.asInstanceOf[js.Any])
+    
+    inline def setDataCatalogOutputsUndefined: Self = StObject.set(x, "DataCatalogOutputs", js.undefined)
+    
+    inline def setDataCatalogOutputsVarargs(value: DataCatalogOutput*): Self = StObject.set(x, "DataCatalogOutputs", js.Array(value*))
+    
+    inline def setDatabaseOutputs(value: DatabaseOutputList): Self = StObject.set(x, "DatabaseOutputs", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseOutputsUndefined: Self = StObject.set(x, "DatabaseOutputs", js.undefined)
+    
+    inline def setDatabaseOutputsVarargs(value: DatabaseOutput*): Self = StObject.set(x, "DatabaseOutputs", js.Array(value*))
     
     inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
@@ -109,6 +141,10 @@ object JobRun {
     
     inline def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
+    inline def setJobSample(value: JobSample): Self = StObject.set(x, "JobSample", value.asInstanceOf[js.Any])
+    
+    inline def setJobSampleUndefined: Self = StObject.set(x, "JobSample", js.undefined)
+    
     inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     
     inline def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
@@ -121,7 +157,7 @@ object JobRun {
     
     inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
-    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value*))
     
     inline def setRecipeReference(value: RecipeReference): Self = StObject.set(x, "RecipeReference", value.asInstanceOf[js.Any])
     
@@ -135,12 +171,18 @@ object JobRun {
     
     inline def setStartedByUndefined: Self = StObject.set(x, "StartedBy", js.undefined)
     
-    inline def setStartedOn(value: Date): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
+    inline def setStartedOn(value: js.Date): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
     
     inline def setStartedOnUndefined: Self = StObject.set(x, "StartedOn", js.undefined)
     
     inline def setState(value: JobRunState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    
+    inline def setValidationConfigurations(value: ValidationConfigurationList): Self = StObject.set(x, "ValidationConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setValidationConfigurationsUndefined: Self = StObject.set(x, "ValidationConfigurations", js.undefined)
+    
+    inline def setValidationConfigurationsVarargs(value: ValidationConfiguration*): Self = StObject.set(x, "ValidationConfigurations", js.Array(value*))
   }
 }

@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents an icon set criteria for conditional formatting.
   *
-  * Represents an IconSet criteria for conditional formatting.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.IconSetConditionalFormat")
 @js.native
-class IconSetConditionalFormat ()
+open class IconSetConditionalFormat ()
   extends StObject
      with typings.officeJsPreview.Excel.IconSetConditionalFormat {
   

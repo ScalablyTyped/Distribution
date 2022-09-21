@@ -10,7 +10,7 @@ trait WebVRFreeCamera
   extends StObject
      with FreeCamera {
   
-  /* private */ var _attached: js.Any = js.native
+  /* private */ var _attached: Any = js.native
   
   /**
     * @hidden
@@ -18,58 +18,64 @@ trait WebVRFreeCamera
     */
   def _computeDevicePosition(): Unit = js.native
   
-  /* private */ var _correctPositionIfNotTrackPosition: js.Any = js.native
+  /* private */ var _correctPositionIfNotTrackPosition: Any = js.native
   
-  /* private */ var _defaultHeight: js.Any = js.native
+  /* private */ var _defaultHeight: Any = js.native
   
   /* protected */ var _descendants: js.Array[Node] = js.native
   
-  /* private */ var _detachIfAttached: js.Any = js.native
+  /* private */ var _detachIfAttached: Any = js.native
   
-  /* private */ var _deviceRoomPosition: js.Any = js.native
+  /* private */ var _deviceRoomPosition: Any = js.native
   
   /** @hidden */
   var _deviceRoomRotationQuaternion: Quaternion = js.native
   
-  /* private */ var _deviceToWorld: js.Any = js.native
+  /* private */ var _deviceToWorld: Any = js.native
   
-  /* private */ var _frameData: js.Any = js.native
+  /* private */ var _frameData: Any = js.native
   
-  /* private */ var _leftController: js.Any = js.native
+  /* private */ var _leftController: Any = js.native
   
-  /* private */ var _lightOnControllers: js.Any = js.native
+  /* private */ var _lightOnControllers: Any = js.native
   
-  /* private */ var _onGamepadConnectedObserver: js.Any = js.native
+  /* private */ var _onGamepadConnectedObserver: Any = js.native
   
-  /* private */ var _onGamepadDisconnectedObserver: js.Any = js.native
+  /* private */ var _onGamepadDisconnectedObserver: Any = js.native
   
-  /* private */ var _onVREnabled: js.Any = js.native
+  /* private */ var _onVREnabled: Any = js.native
   
-  /* private */ var _oneVector: js.Any = js.native
+  /* private */ var _oneVector: Any = js.native
   
-  /* private */ var _poseSet: js.Any = js.native
+  /* private */ var _poseSet: Any = js.native
   
-  /* private */ var _rightController: js.Any = js.native
+  /* private */ var _rightController: Any = js.native
   
-  /* private */ var _specsVersion: js.Any = js.native
+  /* protected */ var _setRigMode: Any = js.native
   
-  /* private */ var _standingMatrix: js.Any = js.native
+  /* private */ var _specsVersion: Any = js.native
   
-  /* private */ var _tmpMatrix: js.Any = js.native
+  /* private */ var _standingMatrix: Any = js.native
   
-  /* private */ var _updateCacheWhenTrackingDisabledObserver: js.Any = js.native
+  /* private */ var _tmpMatrix: Any = js.native
+  
+  /* private */ var _updateCacheCalled: Any = js.native
+  
+  /* private */ var _updateCacheWhenTrackingDisabledObserver: Any = js.native
   
   /**
     * @hidden
     * The vrDisplay tied to the camera. See https://developer.mozilla.org/en-US/docs/Web/API/VRDisplay
     */
-  var _vrDevice: js.Any = js.native
+  var _vrDevice: Any = js.native
   
-  /* private */ var _workingMatrix: js.Any = js.native
+  /* private */ var _webVROptions: Any = js.native
   
-  /* private */ var _workingVector: js.Any = js.native
+  /* private */ var _workingMatrix: Any = js.native
   
-  /* private */ var _worldToDevice: js.Any = js.native
+  /* private */ var _workingVector: Any = js.native
+  
+  /* private */ var _worldToDevice: Any = js.native
   
   /**
     * References to the webVR controllers for the vrDevice.
@@ -99,7 +105,7 @@ trait WebVRFreeCamera
   
   /**
     * Gets a vrController by name.
-    * @param name The name of the controller to retreive
+    * @param name The name of the controller to retrieve
     * @returns the controller matching the name specified or null if not found
     */
   def getControllerByName(name: String): Nullable[WebVRController] = js.native
@@ -127,7 +133,7 @@ trait WebVRFreeCamera
   /**
     * Emits an event when the HMD's pose has been updated.
     */
-  var onPoseUpdatedFromDeviceObservable: Observable[js.Any] = js.native
+  var onPoseUpdatedFromDeviceObservable: Observable[Any] = js.native
   
   /**
     * The rawPose of the vrDevice.
@@ -149,8 +155,6 @@ trait WebVRFreeCamera
     * The controller corresponding to the users right hand.
     */
   def rightController: Nullable[WebVRController] = js.native
-  
-  /* private */ var updateCacheCalled: js.Any = js.native
   
   /**
     * Updates the poseControlled values based on the input device pose.
@@ -174,6 +178,4 @@ trait WebVRFreeCamera
     * @returns A promise with a boolean set to if the standing matrix is supported.
     */
   def useStandingMatrixAsync(): js.Promise[Boolean] = js.native
-  
-  /* private */ var webVROptions: js.Any = js.native
 }

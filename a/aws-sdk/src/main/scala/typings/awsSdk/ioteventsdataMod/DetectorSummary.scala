@@ -9,7 +9,7 @@ trait DetectorSummary extends StObject {
   /**
     * The time the detector (instance) was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.undefined
+  var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the detector model that created this detector (instance).
@@ -29,7 +29,7 @@ trait DetectorSummary extends StObject {
   /**
     * The time the detector (instance) was last updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The current state of the detector (instance).
@@ -45,7 +45,7 @@ object DetectorSummary {
   
   extension [Self <: DetectorSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
@@ -61,7 +61,7 @@ object DetectorSummary {
     
     inline def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
     
-    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     

@@ -9,24 +9,24 @@ object Api {
   
   trait API extends StObject {
     
-    def call(method: String, params: ApiParams, cb: js.Function1[/* response */ js.Any, Unit]): Unit
+    def call(method: String, params: ApiParams, cb: js.Function1[/* response */ Any, Unit]): Unit
   }
   object API {
     
-    inline def apply(call: (String, ApiParams, js.Function1[/* response */ js.Any, Unit]) => Unit): API = {
+    inline def apply(call: (String, ApiParams, js.Function1[/* response */ Any, Unit]) => Unit): API = {
       val __obj = js.Dynamic.literal(call = js.Any.fromFunction3(call))
       __obj.asInstanceOf[API]
     }
     
     extension [Self <: API](x: Self) {
       
-      inline def setCall(value: (String, ApiParams, js.Function1[/* response */ js.Any, Unit]) => Unit): Self = StObject.set(x, "call", js.Any.fromFunction3(value))
+      inline def setCall(value: (String, ApiParams, js.Function1[/* response */ Any, Unit]) => Unit): Self = StObject.set(x, "call", js.Any.fromFunction3(value))
     }
   }
   
   trait ApiParams
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var v: String
   }

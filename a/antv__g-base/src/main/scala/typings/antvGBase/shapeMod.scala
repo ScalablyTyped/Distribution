@@ -24,7 +24,7 @@ object shapeMod {
   trait AbstractShape
     extends typings.antvGBase.elementMod.default {
     
-    def _isInBBox(refX: js.Any, refY: js.Any): Boolean = js.native
+    def _isInBBox(refX: Any, refY: Any): Boolean = js.native
     
     /**
       * 属性更改后需要做的事情
@@ -51,7 +51,7 @@ object shapeMod {
       */
     def clearCacheBBox(): Unit = js.native
     
-    def isClipShape(): js.Any = js.native
+    def isClipShape(): Any = js.native
     /**
       * 是否用于 clip, 默认为 false
       * @return {boolean} 图形是否用于 clip

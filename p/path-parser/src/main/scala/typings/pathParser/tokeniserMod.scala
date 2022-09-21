@@ -1,6 +1,5 @@
 package typings.pathParser
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,17 +17,17 @@ object tokeniserMod {
     
     var `match`: String
     
-    var otherVal: js.Any
+    var otherVal: Any
     
-    var regex: js.UndefOr[RegExp] = js.undefined
+    var regex: js.UndefOr[js.RegExp] = js.undefined
     
     var `type`: String
     
-    var `val`: js.Any
+    var `val`: Any
   }
   object Token {
     
-    inline def apply(`match`: String, otherVal: js.Any, `type`: String, `val`: js.Any): Token = {
+    inline def apply(`match`: String, otherVal: Any, `type`: String, `val`: Any): Token = {
       val __obj = js.Dynamic.literal(otherVal = otherVal.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -40,15 +39,15 @@ object tokeniserMod {
       
       inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      inline def setOtherVal(value: js.Any): Self = StObject.set(x, "otherVal", value.asInstanceOf[js.Any])
+      inline def setOtherVal(value: Any): Self = StObject.set(x, "otherVal", value.asInstanceOf[js.Any])
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
       inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+      inline def setVal(value: Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     }
   }
 }

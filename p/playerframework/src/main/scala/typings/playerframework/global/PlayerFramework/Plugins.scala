@@ -11,7 +11,7 @@ object Plugins {
   
   @JSGlobal("PlayerFramework.Plugins.AudioSelectorPlugin")
   @js.native
-  class AudioSelectorPlugin ()
+  open class AudioSelectorPlugin ()
     extends StObject
        with typings.playerframework.PlayerFramework.Plugins.AudioSelectorPlugin {
     
@@ -66,7 +66,7 @@ object Plugins {
   
   @JSGlobal("PlayerFramework.Plugins.BufferingPlugin")
   @js.native
-  class BufferingPlugin ()
+  open class BufferingPlugin ()
     extends StObject
        with typings.playerframework.PlayerFramework.Plugins.BufferingPlugin {
     
@@ -103,7 +103,7 @@ object Plugins {
   
   @JSGlobal("PlayerFramework.Plugins.CaptionSelectorPlugin")
   @js.native
-  class CaptionSelectorPlugin ()
+  open class CaptionSelectorPlugin ()
     extends StObject
        with typings.playerframework.PlayerFramework.Plugins.CaptionSelectorPlugin {
     
@@ -158,7 +158,7 @@ object Plugins {
   
   @JSGlobal("PlayerFramework.Plugins.ChaptersPlugin")
   @js.native
-  class ChaptersPlugin ()
+  open class ChaptersPlugin ()
     extends StObject
        with typings.playerframework.PlayerFramework.Plugins.ChaptersPlugin {
     
@@ -201,7 +201,7 @@ object Plugins {
   
   @JSGlobal("PlayerFramework.Plugins.ControlPlugin")
   @js.native
-  class ControlPlugin ()
+  open class ControlPlugin ()
     extends StObject
        with typings.playerframework.PlayerFramework.Plugins.ControlPlugin {
     
@@ -247,7 +247,7 @@ object Plugins {
   
   @JSGlobal("PlayerFramework.Plugins.DisplayRequestPlugin")
   @js.native
-  class DisplayRequestPlugin ()
+  open class DisplayRequestPlugin ()
     extends StObject
        with typings.playerframework.PlayerFramework.Plugins.DisplayRequestPlugin {
     
@@ -281,7 +281,7 @@ object Plugins {
   
   @JSGlobal("PlayerFramework.Plugins.ErrorPlugin")
   @js.native
-  class ErrorPlugin ()
+  open class ErrorPlugin ()
     extends StObject
        with typings.playerframework.PlayerFramework.Plugins.ErrorPlugin {
     
@@ -318,7 +318,7 @@ object Plugins {
   
   @JSGlobal("PlayerFramework.Plugins.LoaderPlugin")
   @js.native
-  class LoaderPlugin ()
+  open class LoaderPlugin ()
     extends StObject
        with typings.playerframework.PlayerFramework.Plugins.LoaderPlugin {
     
@@ -355,7 +355,7 @@ object Plugins {
   
   @JSGlobal("PlayerFramework.Plugins.PlayTimeTrackingPlugin")
   @js.native
-  class PlayTimeTrackingPlugin ()
+  open class PlayTimeTrackingPlugin ()
     extends StObject
        with typings.playerframework.PlayerFramework.Plugins.PlayTimeTrackingPlugin {
     
@@ -395,7 +395,7 @@ object Plugins {
     **/
   @JSGlobal("PlayerFramework.Plugins.PlaylistPlugin")
   @js.native
-  class PlaylistPlugin ()
+  open class PlaylistPlugin ()
     extends StObject
        with typings.playerframework.PlayerFramework.Plugins.PlaylistPlugin {
     
@@ -475,7 +475,7 @@ object Plugins {
   
   @JSGlobal("PlayerFramework.Plugins.PositionTrackingPlugin")
   @js.native
-  class PositionTrackingPlugin ()
+  open class PositionTrackingPlugin ()
     extends StObject
        with typings.playerframework.PlayerFramework.Plugins.PositionTrackingPlugin {
     
@@ -515,7 +515,7 @@ object Plugins {
   
   @JSGlobal("PlayerFramework.Plugins.SystemTransportControlsPlugin")
   @js.native
-  class SystemTransportControlsPlugin ()
+  open class SystemTransportControlsPlugin ()
     extends StObject
        with typings.playerframework.PlayerFramework.Plugins.SystemTransportControlsPlugin {
     
@@ -558,7 +558,7 @@ object Plugins {
   
   @JSGlobal("PlayerFramework.Plugins.TrackingPluginBase")
   @js.native
-  class TrackingPluginBase ()
+  open class TrackingPluginBase ()
     extends StObject
        with typings.playerframework.PlayerFramework.Plugins.TrackingPluginBase {
     
@@ -581,7 +581,7 @@ object Plugins {
     var mediaPlayer: typings.playerframework.PlayerFramework.MediaPlayer = js.native
     
     /* CompleteClass */
-    var trackingEvents: js.Array[js.Any] = js.native
+    var trackingEvents: js.Array[Any] = js.native
     
     /* CompleteClass */
     override def unload(): Unit = js.native

@@ -4,28 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides all valid choice-types for any kind of question.
-  *
-  * @template T
-  * The type of the answers.
-  */
 trait BaseChoiceMap[T /* <: Answers */] extends StObject {
   
-  var Choice: typings.inquirer.choiceMod.^[T]
+  var Choice: typings.inquirer.choiceMod.default[T]
   
-  var ChoiceOptions: typings.inquirer.mod.ChoiceOptions[T]
+  var ChoiceOptions: typings.inquirer.mod.ChoiceOptions
   
-  var Separator: typings.inquirer.separatorMod.^
+  var Separator: typings.inquirer.separatorMod.default
   
   var SeparatorOptions: typings.inquirer.mod.SeparatorOptions
 }
 object BaseChoiceMap {
   
   inline def apply[T /* <: Answers */](
-    Choice: typings.inquirer.choiceMod.^[T],
-    ChoiceOptions: ChoiceOptions[T],
-    Separator: typings.inquirer.separatorMod.^,
+    Choice: typings.inquirer.choiceMod.default[T],
+    ChoiceOptions: ChoiceOptions,
+    Separator: typings.inquirer.separatorMod.default,
     SeparatorOptions: SeparatorOptions
   ): BaseChoiceMap[T] = {
     val __obj = js.Dynamic.literal(Choice = Choice.asInstanceOf[js.Any], ChoiceOptions = ChoiceOptions.asInstanceOf[js.Any], Separator = Separator.asInstanceOf[js.Any], SeparatorOptions = SeparatorOptions.asInstanceOf[js.Any])
@@ -34,11 +28,11 @@ object BaseChoiceMap {
   
   extension [Self <: BaseChoiceMap[?], T /* <: Answers */](x: Self & BaseChoiceMap[T]) {
     
-    inline def setChoice(value: typings.inquirer.choiceMod.^[T]): Self = StObject.set(x, "Choice", value.asInstanceOf[js.Any])
+    inline def setChoice(value: typings.inquirer.choiceMod.default[T]): Self = StObject.set(x, "Choice", value.asInstanceOf[js.Any])
     
-    inline def setChoiceOptions(value: ChoiceOptions[T]): Self = StObject.set(x, "ChoiceOptions", value.asInstanceOf[js.Any])
+    inline def setChoiceOptions(value: ChoiceOptions): Self = StObject.set(x, "ChoiceOptions", value.asInstanceOf[js.Any])
     
-    inline def setSeparator(value: typings.inquirer.separatorMod.^): Self = StObject.set(x, "Separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: typings.inquirer.separatorMod.default): Self = StObject.set(x, "Separator", value.asInstanceOf[js.Any])
     
     inline def setSeparatorOptions(value: SeparatorOptions): Self = StObject.set(x, "SeparatorOptions", value.asInstanceOf[js.Any])
   }

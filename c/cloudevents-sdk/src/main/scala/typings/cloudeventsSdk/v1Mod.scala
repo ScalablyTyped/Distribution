@@ -2,7 +2,6 @@ package typings.cloudeventsSdk
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.cloudeventsSdk.cloudeventMod.CE
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +54,7 @@ object v1Mod {
        with /**
     * [OPTIONAL] CloudEvents extension attributes.
     */
-  /* key */ StringDictionary[js.Any]
+  /* key */ StringDictionary[Any]
        with CE {
     
     /**
@@ -64,7 +63,7 @@ object v1Mod {
       * specified by the datacontenttype attribute (e.g. application/json), and adheres
       * to the dataschema format when those respective attributes are present.
       */
-    var data: js.UndefOr[js.Any | String | Double | Boolean | Null] = js.undefined
+    var data: js.UndefOr[Any | String | Double | Boolean | Null] = js.undefined
     
     /**
       * The following fields are optional.
@@ -138,7 +137,7 @@ object v1Mod {
       * the same algorithm to determine the value used.
       * @example "2020-08-08T14:48:09.769Z"
       */
-    var time: js.UndefOr[Date | String] = js.undefined
+    var time: js.UndefOr[js.Date | String] = js.undefined
     
     /**
       * [REQUIRED] This attribute contains a value describing the type of event
@@ -166,7 +165,7 @@ object v1Mod {
     
     extension [Self <: CloudEventV1Attributes](x: Self) {
       
-      inline def setData(value: js.Any | String | Double | Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any | String | Double | Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataContentType(value: String): Self = StObject.set(x, "dataContentType", value.asInstanceOf[js.Any])
       
@@ -186,7 +185,7 @@ object v1Mod {
       
       inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
       
-      inline def setTime(value: Date | String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: js.Date | String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
       inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
       

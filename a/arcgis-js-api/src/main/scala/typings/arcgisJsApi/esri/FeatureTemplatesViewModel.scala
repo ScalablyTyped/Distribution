@@ -20,7 +20,7 @@ trait FeatureTemplatesViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#filterFunction)
     */
-  def filterFunction(filterName: js.Any): Boolean = js.native
+  def filterFunction(filterName: Any): Boolean = js.native
   /**
     * [Function](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#FilterFunction) can be defined to help filter [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) within the widget.
     *
@@ -31,6 +31,8 @@ trait FeatureTemplatesViewModel
   
   /**
     * It is possible to group [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html).
+    *
+    * @default layer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#groupBy)
     */
@@ -58,18 +60,20 @@ trait FeatureTemplatesViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#refresh)
     */
-  def refresh(): Unit = js.native
+  def refresh(): scala.Unit = js.native
   
   /**
     * Selects the [template item](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) to use.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#select)
     */
-  def select(): Unit = js.native
-  def select(item: TemplateItem): Unit = js.native
+  def select(): scala.Unit = js.native
+  def select(item: TemplateItem): scala.Unit = js.native
   
   /**
     * The widget's state.
+    *
+    * @default disabled
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#state)
     */

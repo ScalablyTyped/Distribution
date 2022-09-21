@@ -10,10 +10,10 @@ Get a chunk of an array based on the total number of chunks and current index
 | ------------------ | :-------------: |
 | Full name          | chunkd |
 | Keywords           | util, chunk, index, total |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 9621431 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 889305.6666666666 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/jamiebuilds/chunkd#readme)

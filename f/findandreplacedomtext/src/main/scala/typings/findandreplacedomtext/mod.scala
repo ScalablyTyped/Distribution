@@ -4,7 +4,6 @@ import typings.findandreplacedomtext.findandreplacedomtextStrings.first
 import typings.findandreplacedomtext.findandreplacedomtextStrings.prose
 import typings.findandreplacedomtext.findandreplacedomtextStrings.retain
 import typings.std.HTMLElement
-import typings.std.RegExp
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,7 +31,7 @@ object mod {
     /**
       * Something to search for. A string will perform a global search by default (looking for all matches), but a RegExp will only do so if you include the global (/.../g) flag.
       */
-    var find: RegExp | String
+    var find: js.RegExp | String
     
     /**
       * A boolean or a boolean-returning function that'll be called on every element to determine if it should be considered as its own matching context.
@@ -67,7 +66,7 @@ object mod {
     var replace: js.UndefOr[
         String | (js.Function2[
           /* portion */ Portion, 
-          /* match */ js.UndefOr[js.Any], 
+          /* match */ js.UndefOr[Any], 
           String | Double | HTMLElement | Text
         ])
       ] = js.undefined
@@ -88,7 +87,7 @@ object mod {
   }
   object Options {
     
-    inline def apply(find: RegExp | String): Options = {
+    inline def apply(find: js.RegExp | String): Options = {
       val __obj = js.Dynamic.literal(find = find.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
@@ -99,7 +98,7 @@ object mod {
       
       inline def setFilterElementsUndefined: Self = StObject.set(x, "filterElements", js.undefined)
       
-      inline def setFind(value: RegExp | String): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
+      inline def setFind(value: js.RegExp | String): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
       
       inline def setForceContext(value: Boolean | (js.Function1[/* el */ HTMLElement, Boolean])): Self = StObject.set(x, "forceContext", value.asInstanceOf[js.Any])
       
@@ -118,13 +117,13 @@ object mod {
       inline def setReplace(
         value: String | (js.Function2[
               /* portion */ Portion, 
-              /* match */ js.UndefOr[js.Any], 
+              /* match */ js.UndefOr[Any], 
               String | Double | HTMLElement | Text
             ])
       ): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
       inline def setReplaceFunction2(
-        value: (/* portion */ Portion, /* match */ js.UndefOr[js.Any]) => String | Double | HTMLElement | Text
+        value: (/* portion */ Portion, /* match */ js.UndefOr[Any]) => String | Double | HTMLElement | Text
       ): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
       
       inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)

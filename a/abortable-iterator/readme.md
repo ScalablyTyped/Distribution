@@ -1,7 +1,7 @@
 
 # Scala.js typings for abortable-iterator
 
-Typings are for version 3.0.0
+Typings are for version 4.0.2
 
 ## Library description:
 Make any iterator or iterable abortable via an AbortSignal
@@ -10,15 +10,12 @@ Make any iterator or iterable abortable via an AbortSignal
 | ------------------ | :-------------: |
 | Full name          | abortable-iterator |
 | Keywords           | async, iterator, abort, abortable, cancel, stop, AbortController, AbortSignal, signal |
-| # releases         | 10 |
-| # dependents       | 11 |
-| # downloads        | 109191 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 67173.33333333333 |
+| # stars            | 9.0 |
 
 ## Links
-- [Homepage](https://github.com/alanshaw/abortable-iterator#readme)
-- [Bugs](https://github.com/alanshaw/abortable-iterator/issues)
-- [Repository](https://github.com/alanshaw/abortable-iterator)
 - [Npm](https://www.npmjs.com/package/abortable-iterator)
     
 

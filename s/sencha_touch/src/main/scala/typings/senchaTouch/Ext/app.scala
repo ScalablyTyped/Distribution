@@ -57,17 +57,17 @@ object app {
     /** [Method] Returns the value of data
       * @returns Object
       */
-    var getData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getData: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of scope
       * @returns Object
       */
-    var getScope: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getScope: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of title
       * @returns Object
       */
-    var getTitle: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getTitle: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of url
       * @returns String
@@ -78,7 +78,7 @@ object app {
     var resume: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var scope: js.UndefOr[js.Any] = js.undefined
+    var scope: js.UndefOr[Any] = js.undefined
     
     /** [Method] Sets the value of action
       * @param action String The new value.
@@ -108,17 +108,17 @@ object app {
     /** [Method] Sets the value of data
       * @param data Object The new value.
       */
-    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of scope
       * @param scope Object The new value.
       */
-    var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of title
       * @param title Object The new value.
       */
-    var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of url
       * @param url String The new value.
@@ -181,15 +181,15 @@ object app {
       
       inline def setGetControllerUndefined: Self = StObject.set(x, "getController", js.undefined)
       
-      inline def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      inline def setGetData(value: () => Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
       inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
       
-      inline def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+      inline def setGetScope(value: () => Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
       
       inline def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
       
-      inline def setGetTitle(value: () => js.Any): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => Any): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
       
       inline def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
       
@@ -201,7 +201,7 @@ object app {
       
       inline def setResumeUndefined: Self = StObject.set(x, "resume", js.undefined)
       
-      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
@@ -225,15 +225,15 @@ object app {
       
       inline def setSetControllerUndefined: Self = StObject.set(x, "setController", js.undefined)
       
-      inline def setSetData(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+      inline def setSetData(value: /* data */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
       
       inline def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
       
-      inline def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
+      inline def setSetScope(value: /* scope */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
       
       inline def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
       
-      inline def setSetTitle(value: /* title */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+      inline def setSetTitle(value: /* title */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
       
       inline def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
       
@@ -305,7 +305,7 @@ object app {
     /** [Method] Returns the value of launch
       * @returns Function
       */
-    var getLaunch: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getLaunch: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of name
       * @returns String
@@ -330,7 +330,7 @@ object app {
     /** [Method] Returns the value of themeVariation
       * @returns String/Function
       */
-    var getThemeVariation: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getThemeVariation: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of themeVariationPrefix
       * @returns String
@@ -349,7 +349,7 @@ object app {
     var history: js.UndefOr[IHistory] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var icon: js.UndefOr[js.Any] = js.undefined
+    var icon: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var isIconPrecomposed: js.UndefOr[Boolean] = js.undefined
@@ -370,7 +370,7 @@ object app {
       * @param url String/Ext.data.Model The String url to redirect to.
       */
     @JSName("redirectTo")
-    var redirectTo_IApplication: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var redirectTo_IApplication: js.UndefOr[js.Function1[/* url */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (String[]) */
     var requires: js.UndefOr[Array] = js.undefined
@@ -401,7 +401,7 @@ object app {
     /** [Method] Sets the value of launch
       * @param launch Function The new value.
       */
-    var setLaunch: js.UndefOr[js.Function1[/* launch */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setLaunch: js.UndefOr[js.Function1[/* launch */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of name
       * @param name String The new value.
@@ -426,7 +426,7 @@ object app {
     /** [Method] Sets the value of themeVariation
       * @param themeVariation String/Function The new value.
       */
-    var setThemeVariation: js.UndefOr[js.Function1[/* themeVariation */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setThemeVariation: js.UndefOr[js.Function1[/* themeVariation */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of themeVariationPrefix
       * @param themeVariationPrefix String The new value.
@@ -441,7 +441,7 @@ object app {
       ] = js.undefined
     
     /** [Config Option] (Object) */
-    var startupImage: js.UndefOr[js.Any] = js.undefined
+    var startupImage: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var statusBarStyle: js.UndefOr[java.lang.String] = js.undefined
@@ -453,7 +453,7 @@ object app {
     var tabletStartupScreen: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String/Function) */
-    var themeVariation: js.UndefOr[js.Any] = js.undefined
+    var themeVariation: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var themeVariationPrefix: js.UndefOr[java.lang.String] = js.undefined
@@ -508,7 +508,7 @@ object app {
       
       inline def setGetHistoryUndefined: Self = StObject.set(x, "getHistory", js.undefined)
       
-      inline def setGetLaunch(value: () => js.Any): Self = StObject.set(x, "getLaunch", js.Any.fromFunction0(value))
+      inline def setGetLaunch(value: () => Any): Self = StObject.set(x, "getLaunch", js.Any.fromFunction0(value))
       
       inline def setGetLaunchUndefined: Self = StObject.set(x, "getLaunch", js.undefined)
       
@@ -528,7 +528,7 @@ object app {
       
       inline def setGetRouterUndefined: Self = StObject.set(x, "getRouter", js.undefined)
       
-      inline def setGetThemeVariation(value: () => js.Any): Self = StObject.set(x, "getThemeVariation", js.Any.fromFunction0(value))
+      inline def setGetThemeVariation(value: () => Any): Self = StObject.set(x, "getThemeVariation", js.Any.fromFunction0(value))
       
       inline def setGetThemeVariationPrefix(value: () => java.lang.String): Self = StObject.set(x, "getThemeVariationPrefix", js.Any.fromFunction0(value))
       
@@ -548,7 +548,7 @@ object app {
       
       inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
@@ -572,7 +572,7 @@ object app {
       
       inline def setProfilesUndefined: Self = StObject.set(x, "profiles", js.undefined)
       
-      inline def setRedirectTo(value: /* url */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "redirectTo", js.Any.fromFunction1(value))
+      inline def setRedirectTo(value: /* url */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "redirectTo", js.Any.fromFunction1(value))
       
       inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
       
@@ -600,7 +600,7 @@ object app {
       
       inline def setSetHistoryUndefined: Self = StObject.set(x, "setHistory", js.undefined)
       
-      inline def setSetLaunch(value: /* launch */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLaunch", js.Any.fromFunction1(value))
+      inline def setSetLaunch(value: /* launch */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLaunch", js.Any.fromFunction1(value))
       
       inline def setSetLaunchUndefined: Self = StObject.set(x, "setLaunch", js.undefined)
       
@@ -620,7 +620,7 @@ object app {
       
       inline def setSetRouterUndefined: Self = StObject.set(x, "setRouter", js.undefined)
       
-      inline def setSetThemeVariation(value: /* themeVariation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setThemeVariation", js.Any.fromFunction1(value))
+      inline def setSetThemeVariation(value: /* themeVariation */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setThemeVariation", js.Any.fromFunction1(value))
       
       inline def setSetThemeVariationPrefix(value: /* themeVariationPrefix */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setThemeVariationPrefix", js.Any.fromFunction1(value))
       
@@ -632,7 +632,7 @@ object app {
       
       inline def setSetThemeVariationUndefined: Self = StObject.set(x, "setThemeVariation", js.undefined)
       
-      inline def setStartupImage(value: js.Any): Self = StObject.set(x, "startupImage", value.asInstanceOf[js.Any])
+      inline def setStartupImage(value: Any): Self = StObject.set(x, "startupImage", value.asInstanceOf[js.Any])
       
       inline def setStartupImageUndefined: Self = StObject.set(x, "startupImage", js.undefined)
       
@@ -648,7 +648,7 @@ object app {
       
       inline def setTabletStartupScreenUndefined: Self = StObject.set(x, "tabletStartupScreen", js.undefined)
       
-      inline def setThemeVariation(value: js.Any): Self = StObject.set(x, "themeVariation", value.asInstanceOf[js.Any])
+      inline def setThemeVariation(value: Any): Self = StObject.set(x, "themeVariation", value.asInstanceOf[js.Any])
       
       inline def setThemeVariationPrefix(value: java.lang.String): Self = StObject.set(x, "themeVariationPrefix", value.asInstanceOf[js.Any])
       
@@ -670,10 +670,10 @@ object app {
     var application: js.UndefOr[IApplication] = js.undefined
     
     /** [Config Option] (Object) */
-    var before: js.UndefOr[js.Any] = js.undefined
+    var before: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var control: js.UndefOr[js.Any] = js.undefined
+    var control: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns the value of application
       * @returns Ext.app.Application
@@ -683,12 +683,12 @@ object app {
     /** [Method] Returns the value of before
       * @returns Object
       */
-    var getBefore: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getBefore: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of control
       * @returns Object
       */
-    var getControl: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getControl: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns a reference to another Controller
       * @param controllerName String
@@ -699,7 +699,7 @@ object app {
         js.Function2[
           /* controllerName */ js.UndefOr[java.lang.String], 
           /* profile */ js.UndefOr[java.lang.String], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -707,7 +707,7 @@ object app {
       * @param modelName String
       * @returns Object
       */
-    var getModel: js.UndefOr[js.Function1[/* modelName */ js.UndefOr[java.lang.String], js.Any]] = js.undefined
+    var getModel: js.UndefOr[js.Function1[/* modelName */ js.UndefOr[java.lang.String], Any]] = js.undefined
     
     /** [Method] Returns the value of models
       * @returns String[]
@@ -717,12 +717,12 @@ object app {
     /** [Method] Returns the value of refs
       * @returns Object
       */
-    var getRefs: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getRefs: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of routes
       * @returns Object
       */
-    var getRoutes: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getRoutes: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of stores
       * @returns String[]
@@ -735,10 +735,10 @@ object app {
     var getViews: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Config Option] (Function) */
-    var init: js.UndefOr[js.Any] = js.undefined
+    var init: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Function) */
-    var launch: js.UndefOr[js.Any] = js.undefined
+    var launch: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String[]) */
     var models: js.UndefOr[Array] = js.undefined
@@ -747,10 +747,10 @@ object app {
       * @param place Object
       * @returns Object
       */
-    var redirectTo: js.UndefOr[js.Function1[/* place */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    var redirectTo: js.UndefOr[js.Function1[/* place */ js.UndefOr[Any], Any]] = js.undefined
     
     /** [Config Option] (Object) */
-    var refs: js.UndefOr[js.Any] = js.undefined
+    var refs: js.UndefOr[Any] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -759,11 +759,11 @@ object app {
       */
     @JSName("relayEvents")
     var relayEvents_IController: js.UndefOr[
-        js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+        js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
       ] = js.undefined
     
     /** [Config Option] (Object) */
-    var routes: js.UndefOr[js.Any] = js.undefined
+    var routes: js.UndefOr[Any] = js.undefined
     
     /** [Method] Sets the value of application
       * @param application Ext.app.Application The new value.
@@ -773,12 +773,12 @@ object app {
     /** [Method] Sets the value of before
       * @param before Object The new value.
       */
-    var setBefore: js.UndefOr[js.Function1[/* before */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setBefore: js.UndefOr[js.Function1[/* before */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of control
       * @param control Object The new value.
       */
-    var setControl: js.UndefOr[js.Function1[/* control */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setControl: js.UndefOr[js.Function1[/* control */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of models
       * @param models String[] The new value.
@@ -788,12 +788,12 @@ object app {
     /** [Method] Sets the value of refs
       * @param refs Object The new value.
       */
-    var setRefs: js.UndefOr[js.Function1[/* refs */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setRefs: js.UndefOr[js.Function1[/* refs */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of routes
       * @param routes Object The new value.
       */
-    var setRoutes: js.UndefOr[js.Function1[/* routes */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setRoutes: js.UndefOr[js.Function1[/* routes */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of stores
       * @param stores String[] The new value.
@@ -824,11 +824,11 @@ object app {
       
       inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
       
-      inline def setBefore(value: js.Any): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: Any): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
       inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      inline def setControl(value: js.Any): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+      inline def setControl(value: Any): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
       
       inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
       
@@ -836,21 +836,21 @@ object app {
       
       inline def setGetApplicationUndefined: Self = StObject.set(x, "getApplication", js.undefined)
       
-      inline def setGetBefore(value: () => js.Any): Self = StObject.set(x, "getBefore", js.Any.fromFunction0(value))
+      inline def setGetBefore(value: () => Any): Self = StObject.set(x, "getBefore", js.Any.fromFunction0(value))
       
       inline def setGetBeforeUndefined: Self = StObject.set(x, "getBefore", js.undefined)
       
-      inline def setGetControl(value: () => js.Any): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
+      inline def setGetControl(value: () => Any): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
       
       inline def setGetControlUndefined: Self = StObject.set(x, "getControl", js.undefined)
       
       inline def setGetController(
-        value: (/* controllerName */ js.UndefOr[java.lang.String], /* profile */ js.UndefOr[java.lang.String]) => js.Any
+        value: (/* controllerName */ js.UndefOr[java.lang.String], /* profile */ js.UndefOr[java.lang.String]) => Any
       ): Self = StObject.set(x, "getController", js.Any.fromFunction2(value))
       
       inline def setGetControllerUndefined: Self = StObject.set(x, "getController", js.undefined)
       
-      inline def setGetModel(value: /* modelName */ js.UndefOr[java.lang.String] => js.Any): Self = StObject.set(x, "getModel", js.Any.fromFunction1(value))
+      inline def setGetModel(value: /* modelName */ js.UndefOr[java.lang.String] => Any): Self = StObject.set(x, "getModel", js.Any.fromFunction1(value))
       
       inline def setGetModelUndefined: Self = StObject.set(x, "getModel", js.undefined)
       
@@ -858,11 +858,11 @@ object app {
       
       inline def setGetModelsUndefined: Self = StObject.set(x, "getModels", js.undefined)
       
-      inline def setGetRefs(value: () => js.Any): Self = StObject.set(x, "getRefs", js.Any.fromFunction0(value))
+      inline def setGetRefs(value: () => Any): Self = StObject.set(x, "getRefs", js.Any.fromFunction0(value))
       
       inline def setGetRefsUndefined: Self = StObject.set(x, "getRefs", js.undefined)
       
-      inline def setGetRoutes(value: () => js.Any): Self = StObject.set(x, "getRoutes", js.Any.fromFunction0(value))
+      inline def setGetRoutes(value: () => Any): Self = StObject.set(x, "getRoutes", js.Any.fromFunction0(value))
       
       inline def setGetRoutesUndefined: Self = StObject.set(x, "getRoutes", js.undefined)
       
@@ -874,11 +874,11 @@ object app {
       
       inline def setGetViewsUndefined: Self = StObject.set(x, "getViews", js.undefined)
       
-      inline def setInit(value: js.Any): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+      inline def setInit(value: Any): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       
       inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      inline def setLaunch(value: js.Any): Self = StObject.set(x, "launch", value.asInstanceOf[js.Any])
+      inline def setLaunch(value: Any): Self = StObject.set(x, "launch", value.asInstanceOf[js.Any])
       
       inline def setLaunchUndefined: Self = StObject.set(x, "launch", js.undefined)
       
@@ -886,19 +886,19 @@ object app {
       
       inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
       
-      inline def setRedirectTo(value: /* place */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "redirectTo", js.Any.fromFunction1(value))
+      inline def setRedirectTo(value: /* place */ js.UndefOr[Any] => Any): Self = StObject.set(x, "redirectTo", js.Any.fromFunction1(value))
       
       inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
       
-      inline def setRefs(value: js.Any): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+      inline def setRefs(value: Any): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
       
       inline def setRefsUndefined: Self = StObject.set(x, "refs", js.undefined)
       
-      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
       inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
-      inline def setRoutes(value: js.Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
       inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
       
@@ -906,11 +906,11 @@ object app {
       
       inline def setSetApplicationUndefined: Self = StObject.set(x, "setApplication", js.undefined)
       
-      inline def setSetBefore(value: /* before */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBefore", js.Any.fromFunction1(value))
+      inline def setSetBefore(value: /* before */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBefore", js.Any.fromFunction1(value))
       
       inline def setSetBeforeUndefined: Self = StObject.set(x, "setBefore", js.undefined)
       
-      inline def setSetControl(value: /* control */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setControl", js.Any.fromFunction1(value))
+      inline def setSetControl(value: /* control */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setControl", js.Any.fromFunction1(value))
       
       inline def setSetControlUndefined: Self = StObject.set(x, "setControl", js.undefined)
       
@@ -918,11 +918,11 @@ object app {
       
       inline def setSetModelsUndefined: Self = StObject.set(x, "setModels", js.undefined)
       
-      inline def setSetRefs(value: /* refs */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setRefs", js.Any.fromFunction1(value))
+      inline def setSetRefs(value: /* refs */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setRefs", js.Any.fromFunction1(value))
       
       inline def setSetRefsUndefined: Self = StObject.set(x, "setRefs", js.undefined)
       
-      inline def setSetRoutes(value: /* routes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setRoutes", js.Any.fromFunction1(value))
+      inline def setSetRoutes(value: /* routes */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setRoutes", js.Any.fromFunction1(value))
       
       inline def setSetRoutesUndefined: Self = StObject.set(x, "setRoutes", js.undefined)
       
@@ -984,7 +984,7 @@ object app {
       */
     @JSName("relayEvents")
     var relayEvents_IHistory: js.UndefOr[
-        js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+        js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
       ] = js.undefined
     
     /** [Method] Sets the value of actions
@@ -1041,7 +1041,7 @@ object app {
       
       inline def setGetUpdateUrlUndefined: Self = StObject.set(x, "getUpdateUrl", js.undefined)
       
-      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
       inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
@@ -1136,7 +1136,7 @@ object app {
       */
     @JSName("relayEvents")
     var relayEvents_IProfile: js.UndefOr[
-        js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+        js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
       ] = js.undefined
     
     /** [Method] Sets the value of application
@@ -1245,7 +1245,7 @@ object app {
       
       inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
       inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
@@ -1295,7 +1295,7 @@ object app {
     var action: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Object) */
-    var conditions: js.UndefOr[js.Any] = js.undefined
+    var conditions: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var controller: js.UndefOr[java.lang.String] = js.undefined
@@ -1308,7 +1308,7 @@ object app {
     /** [Method] Returns the value of conditions
       * @returns Object
       */
-    var getConditions: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getConditions: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of controller
       * @returns String
@@ -1321,13 +1321,13 @@ object app {
     var getUrl: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Property] (Object) */
-    var paramsInMatchString: js.UndefOr[js.Any] = js.undefined
+    var paramsInMatchString: js.UndefOr[Any] = js.undefined
     
     /** [Method] Attempts to recognize a given url string and return controller action pair for it
       * @param url String The url to recognize.
       * @returns Object/Boolean The matched data, or false if no match.
       */
-    var recognize: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], js.Any]] = js.undefined
+    var recognize: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], Any]] = js.undefined
     
     /** [Method] Sets the value of action
       * @param action String The new value.
@@ -1337,7 +1337,7 @@ object app {
     /** [Method] Sets the value of conditions
       * @param conditions Object The new value.
       */
-    var setConditions: js.UndefOr[js.Function1[/* conditions */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setConditions: js.UndefOr[js.Function1[/* conditions */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of controller
       * @param controller String The new value.
@@ -1365,7 +1365,7 @@ object app {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setConditions(value: js.Any): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+      inline def setConditions(value: Any): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
       inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
       
@@ -1377,7 +1377,7 @@ object app {
       
       inline def setGetActionUndefined: Self = StObject.set(x, "getAction", js.undefined)
       
-      inline def setGetConditions(value: () => js.Any): Self = StObject.set(x, "getConditions", js.Any.fromFunction0(value))
+      inline def setGetConditions(value: () => Any): Self = StObject.set(x, "getConditions", js.Any.fromFunction0(value))
       
       inline def setGetConditionsUndefined: Self = StObject.set(x, "getConditions", js.undefined)
       
@@ -1389,11 +1389,11 @@ object app {
       
       inline def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
       
-      inline def setParamsInMatchString(value: js.Any): Self = StObject.set(x, "paramsInMatchString", value.asInstanceOf[js.Any])
+      inline def setParamsInMatchString(value: Any): Self = StObject.set(x, "paramsInMatchString", value.asInstanceOf[js.Any])
       
       inline def setParamsInMatchStringUndefined: Self = StObject.set(x, "paramsInMatchString", js.undefined)
       
-      inline def setRecognize(value: /* url */ js.UndefOr[java.lang.String] => js.Any): Self = StObject.set(x, "recognize", js.Any.fromFunction1(value))
+      inline def setRecognize(value: /* url */ js.UndefOr[java.lang.String] => Any): Self = StObject.set(x, "recognize", js.Any.fromFunction1(value))
       
       inline def setRecognizeUndefined: Self = StObject.set(x, "recognize", js.undefined)
       
@@ -1401,7 +1401,7 @@ object app {
       
       inline def setSetActionUndefined: Self = StObject.set(x, "setAction", js.undefined)
       
-      inline def setSetConditions(value: /* conditions */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setConditions", js.Any.fromFunction1(value))
+      inline def setSetConditions(value: /* conditions */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setConditions", js.Any.fromFunction1(value))
       
       inline def setSetConditionsUndefined: Self = StObject.set(x, "setConditions", js.undefined)
       
@@ -1428,21 +1428,21 @@ object app {
       * @param params Object Additional parameters.
       */
     var connect: js.UndefOr[
-        js.Function2[/* url */ js.UndefOr[java.lang.String], /* params */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* url */ js.UndefOr[java.lang.String], /* params */ js.UndefOr[Any], Unit]
       ] = js.undefined
     
     /** [Config Option] (Object) */
-    var defaults: js.UndefOr[js.Any] = js.undefined
+    var defaults: js.UndefOr[Any] = js.undefined
     
     /** [Method] Convenience method which just calls the supplied function with the Router instance
       * @param fn Function The fn to call
       */
-    var draw: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var draw: js.UndefOr[js.Function1[/* fn */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Returns the value of defaults
       * @returns Object
       */
-    var getDefaults: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getDefaults: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of routes
       * @returns Array
@@ -1453,7 +1453,7 @@ object app {
       * @param url String The url to recognize.
       * @returns Object/undefined If the url was recognized, the controller and action to call, else undefined.
       */
-    var recognize: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], js.Any]] = js.undefined
+    var recognize: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], Any]] = js.undefined
     
     /** [Config Option] (Array) */
     var routes: js.UndefOr[Array] = js.undefined
@@ -1461,7 +1461,7 @@ object app {
     /** [Method] Sets the value of defaults
       * @param defaults Object The new value.
       */
-    var setDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of routes
       * @param routes Array The new value.
@@ -1477,19 +1477,19 @@ object app {
     
     extension [Self <: typings.senchaTouch.Ext.app.IRouter](x: Self) {
       
-      inline def setConnect(value: (/* url */ js.UndefOr[java.lang.String], /* params */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
+      inline def setConnect(value: (/* url */ js.UndefOr[java.lang.String], /* params */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
       
       inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
       
-      inline def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
       inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
-      inline def setDraw(value: /* fn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction1(value))
+      inline def setDraw(value: /* fn */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction1(value))
       
       inline def setDrawUndefined: Self = StObject.set(x, "draw", js.undefined)
       
-      inline def setGetDefaults(value: () => js.Any): Self = StObject.set(x, "getDefaults", js.Any.fromFunction0(value))
+      inline def setGetDefaults(value: () => Any): Self = StObject.set(x, "getDefaults", js.Any.fromFunction0(value))
       
       inline def setGetDefaultsUndefined: Self = StObject.set(x, "getDefaults", js.undefined)
       
@@ -1497,7 +1497,7 @@ object app {
       
       inline def setGetRoutesUndefined: Self = StObject.set(x, "getRoutes", js.undefined)
       
-      inline def setRecognize(value: /* url */ js.UndefOr[java.lang.String] => js.Any): Self = StObject.set(x, "recognize", js.Any.fromFunction1(value))
+      inline def setRecognize(value: /* url */ js.UndefOr[java.lang.String] => Any): Self = StObject.set(x, "recognize", js.Any.fromFunction1(value))
       
       inline def setRecognizeUndefined: Self = StObject.set(x, "recognize", js.undefined)
       
@@ -1505,7 +1505,7 @@ object app {
       
       inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
       
-      inline def setSetDefaults(value: /* defaults */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
+      inline def setSetDefaults(value: /* defaults */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
       
       inline def setSetDefaultsUndefined: Self = StObject.set(x, "setDefaults", js.undefined)
       

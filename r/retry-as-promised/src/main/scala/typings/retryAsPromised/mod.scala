@@ -3,8 +3,6 @@ package typings.retryAsPromised
 import org.scalablytyped.runtime.Shortcut
 import typings.bluebird.mod.Thenable
 import typings.retryAsPromised.anon.Current
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +13,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : RetryAsPromisedStatic = js.native
   
-  type MatchOption = String | RegExp | Error
+  type MatchOption = String | js.RegExp | js.Error
   
   trait Options extends StObject {
     
@@ -33,7 +31,7 @@ object mod extends Shortcut {
     var name: js.UndefOr[String] = js.undefined
     
     var report: js.UndefOr[
-        js.Function3[/* message */ String, /* obj */ this.type, /* err */ js.UndefOr[js.Any], Unit]
+        js.Function3[/* message */ String, /* obj */ this.type, /* err */ js.UndefOr[Any], Unit]
       ] = js.undefined
     
     var timeout: js.UndefOr[Double] = js.undefined
@@ -63,7 +61,7 @@ object mod extends Shortcut {
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      inline def setMatchVarargs(value: MatchOption*): Self = StObject.set(x, "match", js.Array(value :_*))
+      inline def setMatchVarargs(value: MatchOption*): Self = StObject.set(x, "match", js.Array(value*))
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -73,7 +71,7 @@ object mod extends Shortcut {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setReport(value: (/* message */ String, Options, /* err */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "report", js.Any.fromFunction3(value))
+      inline def setReport(value: (/* message */ String, Options, /* err */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "report", js.Any.fromFunction3(value))
       
       inline def setReportUndefined: Self = StObject.set(x, "report", js.undefined)
       
@@ -84,9 +82,9 @@ object mod extends Shortcut {
   }
   
   type RetryAsPromisedStatic = js.Function2[
-    /* callback */ RetryCallback[js.Any], 
+    /* callback */ RetryCallback[Any], 
     /* options */ Options | Double, 
-    typings.bluebird.mod.^[js.Any]
+    typings.bluebird.mod.^[Any]
   ]
   
   type RetryCallback[T] = js.Function1[/* hasCurrent */ Current, Thenable[T]]

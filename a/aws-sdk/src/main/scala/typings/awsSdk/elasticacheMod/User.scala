@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait User extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the user account.
+    * The Amazon Resource Name (ARN) of the user.
     */
   var ARN: js.UndefOr[String] = js.undefined
   
   /**
-    * Access permissions string used for this user account.
+    * Access permissions string used for this user.
     */
   var AccessString: js.UndefOr[String] = js.undefined
   
@@ -22,9 +22,14 @@ trait User extends StObject {
   var Authentication: js.UndefOr[typings.awsSdk.elasticacheMod.Authentication] = js.undefined
   
   /**
-    * Must be Redis. 
+    * The current supported value is Redis.
     */
   var Engine: js.UndefOr[EngineType] = js.undefined
+  
+  /**
+    * The minimum engine version required, which is Redis 6.0
+    */
+  var MinimumEngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the user status. Can be "active", "modifying" or "deleting".
@@ -71,6 +76,10 @@ object User {
     
     inline def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
+    inline def setMinimumEngineVersion(value: String): Self = StObject.set(x, "MinimumEngineVersion", value.asInstanceOf[js.Any])
+    
+    inline def setMinimumEngineVersionUndefined: Self = StObject.set(x, "MinimumEngineVersion", js.undefined)
+    
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
@@ -79,7 +88,7 @@ object User {
     
     inline def setUserGroupIdsUndefined: Self = StObject.set(x, "UserGroupIds", js.undefined)
     
-    inline def setUserGroupIdsVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIds", js.Array(value :_*))
+    inline def setUserGroupIdsVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIds", js.Array(value*))
     
     inline def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     

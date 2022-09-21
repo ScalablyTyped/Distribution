@@ -10,10 +10,10 @@ object libraryBooksMod {
   
   @JSImport("material-ui/svg-icons/av/library-books", JSImport.Default)
   @js.native
-  class default () extends AvLibraryBooks
+  open class default () extends AvLibraryBooks
   
   @JSImport("material-ui/svg-icons/av/library-books", "AvLibraryBooks")
   @js.native
-  class AvLibraryBooks ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvLibraryBooks ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

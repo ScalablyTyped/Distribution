@@ -11,13 +11,6 @@ trait SupportingWidgetDefaultsFeatureForm
      with Object {
   
   /**
-    * An array of [FieldConfig](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html) objects to use within the [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
-    */
-  var fieldConfig: js.UndefOr[js.Array[FieldConfig]] = js.undefined
-  
-  /**
     * String indicating the [groupDisplay](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#groupDisplay) and how they will be displayed to the end user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
@@ -36,12 +29,6 @@ object SupportingWidgetDefaultsFeatureForm {
   }
   
   extension [Self <: SupportingWidgetDefaultsFeatureForm](x: Self) {
-    
-    inline def setFieldConfig(value: js.Array[FieldConfig]): Self = StObject.set(x, "fieldConfig", value.asInstanceOf[js.Any])
-    
-    inline def setFieldConfigUndefined: Self = StObject.set(x, "fieldConfig", js.undefined)
-    
-    inline def setFieldConfigVarargs(value: FieldConfig*): Self = StObject.set(x, "fieldConfig", js.Array(value :_*))
     
     inline def setGroupDisplay(value: String): Self = StObject.set(x, "groupDisplay", value.asInstanceOf[js.Any])
     

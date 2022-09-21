@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The read-only metadata about a profile.
-  */
 trait SchemaProfileMetadata extends StObject {
   
   /**
-    * The profile object type.
+    * Output only. The profile object type.
     */
-  var objectType: js.UndefOr[String] = js.undefined
+  var objectType: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The user types.
+    * Output only. The user types.
     */
-  var userTypes: js.UndefOr[js.Array[String]] = js.undefined
+  var userTypes: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaProfileMetadata {
   
@@ -30,12 +27,16 @@ object SchemaProfileMetadata {
     
     inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
+    inline def setObjectTypeNull: Self = StObject.set(x, "objectType", null)
+    
     inline def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
     
     inline def setUserTypes(value: js.Array[String]): Self = StObject.set(x, "userTypes", value.asInstanceOf[js.Any])
     
+    inline def setUserTypesNull: Self = StObject.set(x, "userTypes", null)
+    
     inline def setUserTypesUndefined: Self = StObject.set(x, "userTypes", js.undefined)
     
-    inline def setUserTypesVarargs(value: String*): Self = StObject.set(x, "userTypes", js.Array(value :_*))
+    inline def setUserTypesVarargs(value: String*): Self = StObject.set(x, "userTypes", js.Array(value*))
   }
 }

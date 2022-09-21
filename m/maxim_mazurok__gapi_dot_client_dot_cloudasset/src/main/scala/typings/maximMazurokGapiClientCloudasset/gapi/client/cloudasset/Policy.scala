@@ -10,8 +10,10 @@ trait Policy extends StObject {
   var auditConfigs: js.UndefOr[js.Array[AuditConfig]] = js.undefined
   
   /**
-    * Associates a list of `members` to a `role`. Optionally, may specify a `condition` that determines how and when the `bindings` are applied. Each of the `bindings` must contain at
-    * least one member.
+    * Associates a list of `members`, or principals, with a `role`. Optionally, may specify a `condition` that determines how and when the `bindings` are applied. Each of the `bindings`
+    * must contain at least one principal. The `bindings` in a `Policy` can refer to up to 1,500 principals; up to 250 of these principals can be Google groups. Each occurrence of a
+    * principal counts towards these limits. For example, if the `bindings` grant 50 different roles to `user:alice@example.com`, and not to any other principal, then you can add another
+    * 1,450 principals to the `bindings` in the `Policy`.
     */
   var bindings: js.UndefOr[js.Array[Binding]] = js.undefined
   
@@ -47,13 +49,13 @@ object Policy {
     
     inline def setAuditConfigsUndefined: Self = StObject.set(x, "auditConfigs", js.undefined)
     
-    inline def setAuditConfigsVarargs(value: AuditConfig*): Self = StObject.set(x, "auditConfigs", js.Array(value :_*))
+    inline def setAuditConfigsVarargs(value: AuditConfig*): Self = StObject.set(x, "auditConfigs", js.Array(value*))
     
     inline def setBindings(value: js.Array[Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
-    inline def setBindingsVarargs(value: Binding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+    inline def setBindingsVarargs(value: Binding*): Self = StObject.set(x, "bindings", js.Array(value*))
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

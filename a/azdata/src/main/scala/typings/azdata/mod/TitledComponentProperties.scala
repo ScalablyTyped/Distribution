@@ -4,7 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TitledComponentProperties extends StObject {
+trait TitledComponentProperties
+  extends StObject
+     with ComponentProperties {
   
   /**
     * The title for the component. This title will show when hovered over

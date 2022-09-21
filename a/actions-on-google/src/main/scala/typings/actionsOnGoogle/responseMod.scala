@@ -29,7 +29,7 @@ object responseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response", "BasicCard")
   @js.native
-  class BasicCard protected ()
+  open class BasicCard protected ()
     extends typings.actionsOnGoogle.cardMod.BasicCard {
     /** @public */
     def this(options: BasicCardOptions) = this()
@@ -37,7 +37,7 @@ object responseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response", "BrowseCarousel")
   @js.native
-  class BrowseCarousel protected ()
+  open class BrowseCarousel protected ()
     extends typings.actionsOnGoogle.browseMod.BrowseCarousel {
     /**
       * @param items BrowseCarousel items
@@ -58,7 +58,7 @@ object responseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response", "BrowseCarouselItem")
   @js.native
-  class BrowseCarouselItem protected ()
+  open class BrowseCarouselItem protected ()
     extends typings.actionsOnGoogle.browseMod.BrowseCarouselItem {
     /**
       * @param options BrowseCarouselItem options
@@ -69,7 +69,7 @@ object responseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response", "Button")
   @js.native
-  class Button protected ()
+  open class Button protected ()
     extends typings.actionsOnGoogle.cardMod.Button {
     /**
       * @param options Button options
@@ -84,7 +84,7 @@ object responseMod {
     * @param options Canvas options
     * @public
     */
-  class HtmlResponse[TData /* <: JsonObject */] ()
+  open class HtmlResponse[TData /* <: JsonObject */] ()
     extends typings.actionsOnGoogle.htmlMod.HtmlResponse[TData] {
     def this(options: HtmlResponseOptions[TData]) = this()
     def this(options: GoogleActionsV2UiElementsHtmlResponse) = this()
@@ -92,7 +92,7 @@ object responseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response", "Image")
   @js.native
-  class Image protected ()
+  open class Image protected ()
     extends typings.actionsOnGoogle.imageMod.Image
        with _Response {
     /**
@@ -104,7 +104,7 @@ object responseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response", "LinkOutSuggestion")
   @js.native
-  class LinkOutSuggestion protected ()
+  open class LinkOutSuggestion protected ()
     extends typings.actionsOnGoogle.linkoutMod.LinkOutSuggestion {
     /**
       * @param options LinkOutSuggestion options
@@ -115,7 +115,7 @@ object responseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response", "MediaObject")
   @js.native
-  class MediaObject protected ()
+  open class MediaObject protected ()
     extends typings.actionsOnGoogle.responseMediaMod.MediaObject
        with _Response {
     def this(options: String) = this()
@@ -128,7 +128,7 @@ object responseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response", "MediaResponse")
   @js.native
-  class MediaResponse protected ()
+  open class MediaResponse protected ()
     extends typings.actionsOnGoogle.responseMediaMod.MediaResponse {
     /**
       * @param objects MediaObjects
@@ -149,7 +149,7 @@ object responseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response", "OpenUrlAction")
   @js.native
-  class OpenUrlAction protected ()
+  open class OpenUrlAction protected ()
     extends typings.actionsOnGoogle.urlMod.OpenUrlAction {
     /** @public */
     def this(options: OpenUrlActionOptions) = this()
@@ -157,7 +157,7 @@ object responseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response", "OrderUpdate")
   @js.native
-  class OrderUpdate protected ()
+  open class OrderUpdate protected ()
     extends typings.actionsOnGoogle.orderMod.OrderUpdate {
     def this(options: GoogleActionsOrdersV3OrderUpdate) = this()
     /**
@@ -171,7 +171,7 @@ object responseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response", "RichResponse")
   @js.native
-  class RichResponse protected ()
+  open class RichResponse protected ()
     extends typings.actionsOnGoogle.richMod.RichResponse
        with _Response {
     /**
@@ -193,7 +193,7 @@ object responseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response", "SimpleResponse")
   @js.native
-  class SimpleResponse protected ()
+  open class SimpleResponse protected ()
     extends typings.actionsOnGoogle.simpleMod.SimpleResponse {
     def this(options: String) = this()
     /**
@@ -205,7 +205,7 @@ object responseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response", "Suggestions")
   @js.native
-  class Suggestions protected ()
+  open class Suggestions protected ()
     extends typings.actionsOnGoogle.suggestionMod.Suggestions
        with _Response {
     /**
@@ -217,7 +217,7 @@ object responseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response", "Table")
   @js.native
-  class Table protected ()
+  open class Table protected ()
     extends typings.actionsOnGoogle.cardMod.Table {
     /** @public */
     def this(options: TableOptions) = this()

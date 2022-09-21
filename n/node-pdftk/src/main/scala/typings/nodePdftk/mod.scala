@@ -1,6 +1,6 @@
 package typings.nodePdftk
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodePdftk.anon.PartialRecordLetterstring
 import typings.nodePdftk.nodePdftkBooleans.`true`
 import typings.std.PromiseConstructor
@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("node-pdftk", "PDFTK")
   @js.native
-  class PDFTK protected () extends StObject {
+  open class PDFTK protected () extends StObject {
     /**
       * PdfTk constructor.
       */
@@ -292,12 +292,12 @@ object mod {
     /**
       * Simple object check. Arrays not included.
       */
-    inline def isObject(item: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isObject(item: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Simple string check.
       */
-    inline def isString(item: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isString(item: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Sanitizes fdf input
@@ -322,18 +322,18 @@ object mod {
   
   trait ConfigureOptions extends StObject {
     
-    var Promise: PromiseConstructor
+    var Promise: js.UndefOr[PromiseConstructor] = js.undefined
     
-    var bin: String
+    var bin: js.UndefOr[String] = js.undefined
     
-    var ignoreWarnings: `true`
+    var ignoreWarnings: js.UndefOr[`true`] = js.undefined
     
-    var tempDir: String
+    var tempDir: js.UndefOr[String] = js.undefined
   }
   object ConfigureOptions {
     
-    inline def apply(Promise: PromiseConstructor, bin: String, tempDir: String): ConfigureOptions = {
-      val __obj = js.Dynamic.literal(Promise = Promise.asInstanceOf[js.Any], bin = bin.asInstanceOf[js.Any], ignoreWarnings = true, tempDir = tempDir.asInstanceOf[js.Any])
+    inline def apply(): ConfigureOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigureOptions]
     }
     
@@ -341,11 +341,19 @@ object mod {
       
       inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       
+      inline def setBinUndefined: Self = StObject.set(x, "bin", js.undefined)
+      
       inline def setIgnoreWarnings(value: `true`): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
       
       inline def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
+      inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
+      
       inline def setTempDir(value: String): Self = StObject.set(x, "tempDir", value.asInstanceOf[js.Any])
+      
+      inline def setTempDirUndefined: Self = StObject.set(x, "tempDir", js.undefined)
     }
   }
   

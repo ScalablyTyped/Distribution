@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "SmoothStepBlock")
 @js.native
-class SmoothStepBlock protected ()
+open class SmoothStepBlock protected ()
   extends typings.babylonjs.legacyMod.SmoothStepBlock {
   /**
     * Creates a new SmoothStepBlock

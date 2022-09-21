@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.controlsMod.ICheckboxProps
+import typings.blueprintjsCore.controlsMod.CheckboxProps
 import typings.blueprintjsCore.controlsMod.ICheckboxState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@blueprintjs/core", "Checkbox")
 @js.native
-class Checkbox protected ()
+open class Checkbox protected ()
   extends typings.blueprintjsCore.componentsMod.Checkbox {
-  def this(props: ICheckboxProps) = this()
-  def this(props: ICheckboxProps, context: js.Any) = this()
+  def this(props: CheckboxProps) = this()
+  def this(props: CheckboxProps, context: Any) = this()
 }
 /* static members */
 object Checkbox {
@@ -25,5 +25,5 @@ object Checkbox {
   def displayName: String = js.native
   inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
-  inline def getDerivedStateFromProps(hasIndeterminate: ICheckboxProps): ICheckboxState | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasIndeterminate.asInstanceOf[js.Any]).asInstanceOf[ICheckboxState | Null]
+  inline def getDerivedStateFromProps(hasIndeterminate: CheckboxProps): ICheckboxState | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasIndeterminate.asInstanceOf[js.Any]).asInstanceOf[ICheckboxState | Null]
 }

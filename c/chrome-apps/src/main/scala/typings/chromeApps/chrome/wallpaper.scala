@@ -1,6 +1,5 @@
 package typings.chromeApps.chrome
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +42,7 @@ object wallpaper {
   trait WallpaperDetails extends StObject {
     
     /** The jpeg or png encoded wallpaper image. */
-    var data: js.UndefOr[ArrayBuffer] = js.undefined
+    var data: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
     
     /** The file name of the saved wallpaper. */
     var filename: String
@@ -69,7 +68,7 @@ object wallpaper {
     
     extension [Self <: WallpaperDetails](x: Self) {
       
-      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       

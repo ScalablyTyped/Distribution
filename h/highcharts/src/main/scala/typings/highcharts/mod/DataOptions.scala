@@ -116,18 +116,32 @@ trait DataOptions extends StObject {
   var firstRowAsNames: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The key for a Google Spreadsheet
-    * to load. See general information on GS.
+    * (Highcharts, Highstock, Highmaps, Gantt) The Google Spreadsheet API key
+    * required for access generated at API Services / Credentials. See a
+    * comprehensive tutorial for setting up the key at the Hands-On Data
+    * Visualization book website.
+    */
+  var googleAPIKey: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The key or `spreadsheetId` value
+    * for a Google Spreadsheet to load. See developers.google.com for how to
+    * find the `spreadsheetId`.
+    *
+    * In order for Google Sheets to load, a valid googleAPIKey must also be
+    * given.
     */
   var googleSpreadsheetKey: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The Google Spreadsheet worksheet
-    * to use in combination with googleSpreadsheetKey. The available id's from
-    * your sheet can be read from
-    * `https://spreadsheets.google.com/feeds/worksheets/{key}/public/basic`.
+    * (Highcharts, Highstock, Highmaps, Gantt) The Google Spreadsheet `range`
+    * to use in combination with googleSpreadsheetKey. See
+    * developers.google.com for details.
+    *
+    * If given, it takes precedence over `startColumn`, `endColumn`, `startRow`
+    * and `endRow`.
     */
-  var googleSpreadsheetWorksheet: js.UndefOr[String] = js.undefined
+  var googleSpreadsheetRange: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Item or cell delimiter for
@@ -226,7 +240,7 @@ object DataOptions {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: js.Array[DataValueType]*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: js.Array[DataValueType]*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setComplete(value: /* chartOptions */ Options => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
@@ -268,13 +282,17 @@ object DataOptions {
     
     inline def setFirstRowAsNamesUndefined: Self = StObject.set(x, "firstRowAsNames", js.undefined)
     
+    inline def setGoogleAPIKey(value: String): Self = StObject.set(x, "googleAPIKey", value.asInstanceOf[js.Any])
+    
+    inline def setGoogleAPIKeyUndefined: Self = StObject.set(x, "googleAPIKey", js.undefined)
+    
     inline def setGoogleSpreadsheetKey(value: String): Self = StObject.set(x, "googleSpreadsheetKey", value.asInstanceOf[js.Any])
     
     inline def setGoogleSpreadsheetKeyUndefined: Self = StObject.set(x, "googleSpreadsheetKey", js.undefined)
     
-    inline def setGoogleSpreadsheetWorksheet(value: String): Self = StObject.set(x, "googleSpreadsheetWorksheet", value.asInstanceOf[js.Any])
+    inline def setGoogleSpreadsheetRange(value: String): Self = StObject.set(x, "googleSpreadsheetRange", value.asInstanceOf[js.Any])
     
-    inline def setGoogleSpreadsheetWorksheetUndefined: Self = StObject.set(x, "googleSpreadsheetWorksheet", js.undefined)
+    inline def setGoogleSpreadsheetRangeUndefined: Self = StObject.set(x, "googleSpreadsheetRange", js.undefined)
     
     inline def setItemDelimiter(value: String): Self = StObject.set(x, "itemDelimiter", value.asInstanceOf[js.Any])
     
@@ -288,7 +306,7 @@ object DataOptions {
     
     inline def setParseDateUndefined: Self = StObject.set(x, "parseDate", js.undefined)
     
-    inline def setParsed(value: /* columns */ js.Array[js.Array[js.Any]] => js.UndefOr[Boolean]): Self = StObject.set(x, "parsed", js.Any.fromFunction1(value))
+    inline def setParsed(value: /* columns */ js.Array[js.Array[Any]] => js.UndefOr[Boolean]): Self = StObject.set(x, "parsed", js.Any.fromFunction1(value))
     
     inline def setParsedUndefined: Self = StObject.set(x, "parsed", js.undefined)
     
@@ -300,13 +318,13 @@ object DataOptions {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: js.Array[DataValueType]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: js.Array[DataValueType]*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setSeriesMapping(value: js.Array[Dictionary[Double]]): Self = StObject.set(x, "seriesMapping", value.asInstanceOf[js.Any])
     
     inline def setSeriesMappingUndefined: Self = StObject.set(x, "seriesMapping", js.undefined)
     
-    inline def setSeriesMappingVarargs(value: Dictionary[Double]*): Self = StObject.set(x, "seriesMapping", js.Array(value :_*))
+    inline def setSeriesMappingVarargs(value: Dictionary[Double]*): Self = StObject.set(x, "seriesMapping", js.Array(value*))
     
     inline def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     

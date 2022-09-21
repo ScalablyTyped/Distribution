@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "JsonUnknownPropertyError")
 @js.native
-class JsonUnknownPropertyError protected () extends JsonError {
+open class JsonUnknownPropertyError protected () extends JsonError {
   def this(propertyName: String, className: String) = this()
   
   var className: String = js.native

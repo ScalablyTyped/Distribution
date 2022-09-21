@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__MaterialUI.FloatingActionButton")
 @js.native
-class FloatingActionButton ()
-  extends Component[FloatingActionButtonProps, js.Object, js.Any]
+open class FloatingActionButton ()
+  extends Component[FloatingActionButtonProps, js.Object, Any]

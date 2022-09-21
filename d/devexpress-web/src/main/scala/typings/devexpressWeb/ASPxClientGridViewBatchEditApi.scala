@@ -25,7 +25,7 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * Deletes a row with a specified key value when ASPxGridView is in Batch Edit mode.
     * @param key An object that uniquely identifies the row.
     */
-  def DeleteRowByKey(key: js.Any): Unit = js.native
+  def DeleteRowByKey(key: Any): Unit = js.native
   
   /**
     * Ends cell or row editing.
@@ -37,14 +37,14 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * @param visibleIndex An integer value that is the visible index.
     * @param columnFieldNameOrId A string value that is the column's Field Name or ID.
     */
-  def GetCellTextContainer(visibleIndex: Double, columnFieldNameOrId: String): js.Any = js.native
+  def GetCellTextContainer(visibleIndex: Double, columnFieldNameOrId: String): Any = js.native
   
   /**
     * Gets a container holding a data cell content. An object that is the HTML container element that contains the data cell's content.
     * @param key A String value that identifies the row by its key value.
     * @param columnFieldNameOrId A string value that is the column's Field Name or ID.
     */
-  def GetCellTextContainerByKey(key: js.Any, columnFieldNameOrId: String): js.Any = js.native
+  def GetCellTextContainerByKey(key: Any, columnFieldNameOrId: String): Any = js.native
   
   /**
     * Gets the value of the specified cell. An object containing the specified cell's value.
@@ -52,8 +52,8 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * @param columnFieldNameOrId A string value that specifies the field name or unique identifier (the column's WebColumnBase.Name property value) of a column containing the processed cell.
     * @param initial true, to return the initial (server) value; false, to return a value currently contained on the client side (modified value).
     */
-  def GetCellValue(visibleIndex: Double, columnFieldNameOrId: String): js.Any = js.native
-  def GetCellValue(visibleIndex: Double, columnFieldNameOrId: String, initial: Boolean): js.Any = js.native
+  def GetCellValue(visibleIndex: Double, columnFieldNameOrId: String): Any = js.native
+  def GetCellValue(visibleIndex: Double, columnFieldNameOrId: String, initial: Boolean): Any = js.native
   
   /**
     * Gets the value of the specified cell. An object containing the specified cell's value.
@@ -61,15 +61,15 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * @param columnFieldNameOrId A string value that specifies the field name or unique identifier (the column's WebColumnBase.Name property value) of a column containing the processed cell.
     * @param initial true, to return the initial (server) value; false, to return a value currently contained on the client side (modified value).
     */
-  def GetCellValueByKey(key: js.Any, columnFieldNameOrId: String): js.Any = js.native
-  def GetCellValueByKey(key: js.Any, columnFieldNameOrId: String, initial: Boolean): js.Any = js.native
+  def GetCellValueByKey(key: Any, columnFieldNameOrId: String): Any = js.native
+  def GetCellValueByKey(key: Any, columnFieldNameOrId: String, initial: Boolean): Any = js.native
   
   /**
     * Provides the text displayed within the cell according to the specified display format rule. A string value representing the cell's displayed text.
     * @param columnFieldNameOrId A string value representing the column's unique identifier or field name.
     * @param value An object representing a value.
     */
-  def GetColumnDisplayText(columnFieldNameOrId: String, value: js.Any): String = js.native
+  def GetColumnDisplayText(columnFieldNameOrId: String, value: Any): String = js.native
   
   /**
     * Returns an array of the deleted row visible indices.
@@ -110,7 +110,7 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
   /**
     * Returns an object that stores unsaved changes.
     */
-  def GetUnsavedChanges(): js.Any = js.native
+  def GetUnsavedChanges(): Any = js.native
   
   /**
     * Returns an array of the updated rows visible indices.
@@ -132,8 +132,8 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * @param key A String value that identifies the row by its key value.
     * @param columnFieldNameOrId A string value that identifies the column by the name of the data source field to which the column is bound, or by the column's name.
     */
-  def HasChangesByKey(key: js.Any): Boolean = js.native
-  def HasChangesByKey(key: js.Any, columnFieldNameOrId: String): Boolean = js.native
+  def HasChangesByKey(key: Any): Boolean = js.native
+  def HasChangesByKey(key: Any, columnFieldNameOrId: String): Boolean = js.native
   
   /**
     * Switches the grid from the 'Preview Changes' mode to edit mode.
@@ -144,7 +144,7 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * Returns a value that specifies whether the row is located on the current page. true, if the row is located on the current page; otherwise, false.
     * @param key A String value that identifies the row by its key value.
     */
-  def IsCurrentPageRow(key: js.Any): Boolean = js.native
+  def IsCurrentPageRow(key: Any): Boolean = js.native
   
   /**
     * Indicates if the row with specified visible index is deleted. true, if the row is deleted; otherwise, false.
@@ -156,7 +156,7 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * Indicates if the row with specified key is deleted. true, if the row is deleted; otherwise, false.
     * @param key A String value that identifies the row by its key value.
     */
-  def IsDeletedRowByKey(key: js.Any): Boolean = js.native
+  def IsDeletedRowByKey(key: Any): Boolean = js.native
   
   /**
     * Indicates if the row with specified visible index is newly created. true, if the row is new; otherwise, false.
@@ -184,7 +184,7 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * Recovers a row with a specified key value when ASPxGridView is in Batch Edit mode.
     * @param key An object that uniquely identifies the row.
     */
-  def RecoverRowByKey(key: js.Any): Unit = js.native
+  def RecoverRowByKey(key: Any): Unit = js.native
   
   /**
     * Resets changes in the specified cell.
@@ -199,8 +199,8 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * @param key A String value that identifies the row by its key value.
     * @param columnIndex A zero-based index that identifies the column in the column collection (the column's CollectionItem.Index property value).
     */
-  def ResetChangesByKey(key: js.Any): Unit = js.native
-  def ResetChangesByKey(key: js.Any, columnIndex: Double): Unit = js.native
+  def ResetChangesByKey(key: Any): Unit = js.native
+  def ResetChangesByKey(key: Any, columnIndex: Double): Unit = js.native
   
   /**
     * Sets the value of the specified cell.
@@ -210,19 +210,19 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * @param displayText A string value that specifies the cell display text.
     * @param cancelCellHighlighting true to cancel highlighting of the modified cell, false to highlight the modified cell.
     */
-  def SetCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: js.Any): Unit = js.native
-  def SetCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: js.Any, displayText: String): Unit = js.native
+  def SetCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: Any): Unit = js.native
+  def SetCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: Any, displayText: String): Unit = js.native
   def SetCellValue(
     visibleIndex: Double,
     columnFieldNameOrId: String,
-    value: js.Any,
+    value: Any,
     displayText: String,
     cancelCellHighlighting: Boolean
   ): Unit = js.native
   def SetCellValue(
     visibleIndex: Double,
     columnFieldNameOrId: String,
-    value: js.Any,
+    value: Any,
     displayText: Unit,
     cancelCellHighlighting: Boolean
   ): Unit = js.native
@@ -235,19 +235,19 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * @param displayText A string value that specifies the cell display text.
     * @param cancelCellHighlighting true to cancel highlighting of the modified cell, false to highlight the modified cell.
     */
-  def SetCellValueByKey(key: js.Any, columnFieldNameOrId: String, value: js.Any): Unit = js.native
-  def SetCellValueByKey(key: js.Any, columnFieldNameOrId: String, value: js.Any, displayText: String): Unit = js.native
+  def SetCellValueByKey(key: Any, columnFieldNameOrId: String, value: Any): Unit = js.native
+  def SetCellValueByKey(key: Any, columnFieldNameOrId: String, value: Any, displayText: String): Unit = js.native
   def SetCellValueByKey(
-    key: js.Any,
+    key: Any,
     columnFieldNameOrId: String,
-    value: js.Any,
+    value: Any,
     displayText: String,
     cancelCellHighlighting: Boolean
   ): Unit = js.native
   def SetCellValueByKey(
-    key: js.Any,
+    key: Any,
     columnFieldNameOrId: String,
-    value: js.Any,
+    value: Any,
     displayText: Unit,
     cancelCellHighlighting: Boolean
   ): Unit = js.native
@@ -269,7 +269,7 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * @param key Identifies the cell by its key value.
     * @param columnIndex Identifies the column that contains the processed cell in the column collection.
     */
-  def StartEditByKey(key: js.Any, columnIndex: Double): Unit = js.native
+  def StartEditByKey(key: Any, columnIndex: Double): Unit = js.native
   
   /**
     * Performs validation of grid data contained in the specified row when the grid operates in Batch Edit mode. true, if data in the specified row data passes validation; otherwise, false.
@@ -281,7 +281,7 @@ trait ASPxClientGridViewBatchEditApi extends StObject {
     * Performs validation of grid data contained in the specified row when the grid operates in Batch Edit mode. true, if data in the specified row data passes validation; otherwise, false.
     * @param key A String value that identifies the row by its key value.
     */
-  def ValidateRowByKey(key: js.Any): Boolean = js.native
+  def ValidateRowByKey(key: Any): Boolean = js.native
   
   /**
     * Validate grid data contained in all rows when the grid operates in Batch Edit mode. true, if data in all rows passes validation; otherwise, false.

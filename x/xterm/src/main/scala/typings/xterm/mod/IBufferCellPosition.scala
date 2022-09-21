@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IBufferCellPosition extends StObject {
   
   /**
-    * The x position within the buffer.
+    * The x position within the buffer (1-based).
     */
   var x: Double
   
   /**
-    * The y position within the buffer.
+    * The y position within the buffer (1-based).
     */
   var y: Double
 }

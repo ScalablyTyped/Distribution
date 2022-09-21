@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "ReciprocalBlock")
 @js.native
-class ReciprocalBlock protected ()
+open class ReciprocalBlock protected ()
   extends typings.babylonjs.legacyMod.ReciprocalBlock {
   /**
     * Creates a new ReciprocalBlock

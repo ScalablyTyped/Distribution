@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Contains information about a user's location and address. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactLocationField")
 @js.native
-class ContactLocationField protected ()
+open class ContactLocationField protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactLocationField {
   /**

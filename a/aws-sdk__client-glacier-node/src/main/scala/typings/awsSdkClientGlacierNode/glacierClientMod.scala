@@ -13,14 +13,14 @@ object glacierClientMod {
   
   @JSImport("@aws-sdk/client-glacier-node/GlacierClient", "GlacierClient")
   @js.native
-  class GlacierClient protected () extends StObject {
+  open class GlacierClient protected () extends StObject {
     def this(configuration: GlacierConfiguration) = this()
     
     /* protected */ val config: GlacierResolvedConfiguration = js.native
     
     def destroy(): Unit = js.native
     
-    val middlewareStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any = js.native
+    val middlewareStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any = js.native
     
     /**
       * This will need to be revised when the command interface lands.
@@ -30,7 +30,7 @@ object glacierClientMod {
     ): js.Promise[OutputType] = js.native
     def send[InputType /* <: InputTypesUnion */, OutputType /* <: OutputTypesUnion */](
       command: Command[InputTypesUnion, InputType, OutputTypesUnion, OutputType, GlacierResolvedConfiguration],
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[OutputType], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[OutputType], Unit]
     ): Unit = js.native
   }
 }

@@ -10,10 +10,10 @@ The lodash method `_.isBuffer` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isbuffer |
 | Keywords           | lodash-modularized, isbuffer |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 3232 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 214.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

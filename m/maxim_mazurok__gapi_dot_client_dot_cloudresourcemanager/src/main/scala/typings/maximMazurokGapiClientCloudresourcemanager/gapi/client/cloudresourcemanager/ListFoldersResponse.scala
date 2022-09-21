@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ListFoldersResponse extends StObject {
   
-  /** A possibly paginated list of Folders that are direct descendants of the specified parent resource. */
+  /** A possibly paginated list of folders that are direct descendants of the specified parent resource. */
   var folders: js.UndefOr[js.Array[Folder]] = js.undefined
   
   /** A pagination token returned from a previous call to `ListFolders` that indicates from where listing should continue. */
@@ -25,7 +25,7 @@ object ListFoldersResponse {
     
     inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
-    inline def setFoldersVarargs(value: Folder*): Self = StObject.set(x, "folders", js.Array(value :_*))
+    inline def setFoldersVarargs(value: Folder*): Self = StObject.set(x, "folders", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

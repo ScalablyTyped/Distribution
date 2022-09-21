@@ -14,22 +14,120 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TopBarContentProps extends StObject {
   
+  /**
+    * @language zh-CN
+    * @description 子元素
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Sub element
+    * @defaultValue null
+    */
   var children: js.UndefOr[ReactNode] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description TopBar.Content 标题及副标题颜色，副标题颜色为该颜色加 0.6 透明度
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description TopBar.Content Title and subtitle color, subtitle color is the color plus 0.6 transparency.
+    * @defaultValue null
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 点击事件
+    * @types (event: <a target='_blank' href='https://reactnative.dev/docs/pressevent'>GestureResponderEvent</a>) => void
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Click event
+    * @types (event: <a target='_blank' href='https://reactnative.dev/docs/pressevent'>GestureResponderEvent</a>) => void
+    * @defaultValue () => {}
+    */
   var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description TopBar.Content 的位置，可为左对齐、居中对齐和右对齐
+    * @defaultValue 'center'
+    */
+  /**
+    * @language en-US
+    * @description TopBar.Content  Can be left, center, and right
+    * @defaultValue 'center'
+    */
   var position: js.UndefOr[left | center | right] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description TopBar.Content 的样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description The container style of the top toolbar internally handles the three StatusBar situations of iOS versions below and above iPhoneX, and Android. You can also define your own style.
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 副标题
+    * @defaultValue ''
+    */
+  /**
+    * @language en-US
+    * @description SubTitle
+    * @defaultValue ''
+    */
   var subTitle: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 副标题样式
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description SubTitle style
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
   var subTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description TopBar.Content 的标题
+    * @defaultValue ''
+    */
+  /**
+    * @language en-US
+    * @description Title of TopBar.Content
+    * @defaultValue ''
+    */
   var title: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 标题样式
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Title style
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
   var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 object TopBarContentProps {

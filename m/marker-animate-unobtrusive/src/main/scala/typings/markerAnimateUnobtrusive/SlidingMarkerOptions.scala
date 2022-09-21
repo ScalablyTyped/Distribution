@@ -1,8 +1,8 @@
 package typings.markerAnimateUnobtrusive
 
-import typings.googlemaps.google.maps.LatLng
-import typings.googlemaps.google.maps.Marker
-import typings.googlemaps.google.maps.MarkerOptions
+import typings.googleMaps.google.maps.LatLng
+import typings.googleMaps.google.maps.Marker
+import typings.googleMaps.google.maps.MarkerOptions
 import typings.markerAnimateUnobtrusive.jQuery.easing.IEasingType
 import typings.markerAnimateUnobtrusive.markerAnimateUnobtrusiveStrings.linear
 import org.scalablytyped.runtime.StObject

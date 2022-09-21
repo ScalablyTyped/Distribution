@@ -10,10 +10,10 @@ Check if an object is empty.
 | ------------------ | :-------------: |
 | Full name          | is-empty-object |
 | Keywords           | object, empty |
-| # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 44784 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7602.666666666667 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/gummesson/is-empty-object)

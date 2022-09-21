@@ -11,6 +11,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AppSync extends Service {
   
+  /**
+    * Maps an endpoint to your custom domain.
+    */
+  def associateApi(): Request[AssociateApiResponse, AWSError] = js.native
+  def associateApi(callback: js.Function2[/* err */ AWSError, /* data */ AssociateApiResponse, Unit]): Request[AssociateApiResponse, AWSError] = js.native
+  /**
+    * Maps an endpoint to your custom domain.
+    */
+  def associateApi(params: AssociateApiRequest): Request[AssociateApiResponse, AWSError] = js.native
+  def associateApi(
+    params: AssociateApiRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateApiResponse, Unit]
+  ): Request[AssociateApiResponse, AWSError] = js.native
+  
   @JSName("config")
   var config_AppSync: ConfigBase & ClientConfiguration = js.native
   
@@ -29,12 +43,12 @@ trait AppSync extends Service {
   ): Request[CreateApiCacheResponse, AWSError] = js.native
   
   /**
-    * Creates a unique key that you can distribute to clients who are executing your API.
+    * Creates a unique key that you can distribute to clients who invoke your API.
     */
   def createApiKey(): Request[CreateApiKeyResponse, AWSError] = js.native
   def createApiKey(callback: js.Function2[/* err */ AWSError, /* data */ CreateApiKeyResponse, Unit]): Request[CreateApiKeyResponse, AWSError] = js.native
   /**
-    * Creates a unique key that you can distribute to clients who are executing your API.
+    * Creates a unique key that you can distribute to clients who invoke your API.
     */
   def createApiKey(params: CreateApiKeyRequest): Request[CreateApiKeyResponse, AWSError] = js.native
   def createApiKey(
@@ -57,12 +71,26 @@ trait AppSync extends Service {
   ): Request[CreateDataSourceResponse, AWSError] = js.native
   
   /**
-    * Creates a Function object. A function is a reusable entity. Multiple functions can be used to compose the resolver logic.
+    * Creates a custom DomainName object.
+    */
+  def createDomainName(): Request[CreateDomainNameResponse, AWSError] = js.native
+  def createDomainName(callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainNameResponse, Unit]): Request[CreateDomainNameResponse, AWSError] = js.native
+  /**
+    * Creates a custom DomainName object.
+    */
+  def createDomainName(params: CreateDomainNameRequest): Request[CreateDomainNameResponse, AWSError] = js.native
+  def createDomainName(
+    params: CreateDomainNameRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainNameResponse, Unit]
+  ): Request[CreateDomainNameResponse, AWSError] = js.native
+  
+  /**
+    * Creates a Function object. A function is a reusable entity. You can use multiple functions to compose the resolver logic.
     */
   def createFunction(): Request[CreateFunctionResponse, AWSError] = js.native
   def createFunction(callback: js.Function2[/* err */ AWSError, /* data */ CreateFunctionResponse, Unit]): Request[CreateFunctionResponse, AWSError] = js.native
   /**
-    * Creates a Function object. A function is a reusable entity. Multiple functions can be used to compose the resolver logic.
+    * Creates a Function object. A function is a reusable entity. You can use multiple functions to compose the resolver logic.
     */
   def createFunction(params: CreateFunctionRequest): Request[CreateFunctionResponse, AWSError] = js.native
   def createFunction(
@@ -85,12 +113,12 @@ trait AppSync extends Service {
   ): Request[CreateGraphqlApiResponse, AWSError] = js.native
   
   /**
-    * Creates a Resolver object. A resolver converts incoming requests into a format that a data source can understand and converts the data source's responses into GraphQL.
+    * Creates a Resolver object. A resolver converts incoming requests into a format that a data source can understand, and converts the data source's responses into GraphQL.
     */
   def createResolver(): Request[CreateResolverResponse, AWSError] = js.native
   def createResolver(callback: js.Function2[/* err */ AWSError, /* data */ CreateResolverResponse, Unit]): Request[CreateResolverResponse, AWSError] = js.native
   /**
-    * Creates a Resolver object. A resolver converts incoming requests into a format that a data source can understand and converts the data source's responses into GraphQL.
+    * Creates a Resolver object. A resolver converts incoming requests into a format that a data source can understand, and converts the data source's responses into GraphQL.
     */
   def createResolver(params: CreateResolverRequest): Request[CreateResolverResponse, AWSError] = js.native
   def createResolver(
@@ -155,6 +183,20 @@ trait AppSync extends Service {
   ): Request[DeleteDataSourceResponse, AWSError] = js.native
   
   /**
+    * Deletes a custom DomainName object.
+    */
+  def deleteDomainName(): Request[DeleteDomainNameResponse, AWSError] = js.native
+  def deleteDomainName(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainNameResponse, Unit]): Request[DeleteDomainNameResponse, AWSError] = js.native
+  /**
+    * Deletes a custom DomainName object.
+    */
+  def deleteDomainName(params: DeleteDomainNameRequest): Request[DeleteDomainNameResponse, AWSError] = js.native
+  def deleteDomainName(
+    params: DeleteDomainNameRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainNameResponse, Unit]
+  ): Request[DeleteDomainNameResponse, AWSError] = js.native
+  
+  /**
     * Deletes a Function.
     */
   def deleteFunction(): Request[DeleteFunctionResponse, AWSError] = js.native
@@ -211,6 +253,34 @@ trait AppSync extends Service {
   ): Request[DeleteTypeResponse, AWSError] = js.native
   
   /**
+    * Removes an ApiAssociation object from a custom domain.
+    */
+  def disassociateApi(): Request[DisassociateApiResponse, AWSError] = js.native
+  def disassociateApi(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateApiResponse, Unit]): Request[DisassociateApiResponse, AWSError] = js.native
+  /**
+    * Removes an ApiAssociation object from a custom domain.
+    */
+  def disassociateApi(params: DisassociateApiRequest): Request[DisassociateApiResponse, AWSError] = js.native
+  def disassociateApi(
+    params: DisassociateApiRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateApiResponse, Unit]
+  ): Request[DisassociateApiResponse, AWSError] = js.native
+  
+  /**
+    * Evaluates a given template and returns the response. The mapping template can be a request or response template. Request templates take the incoming request after a GraphQL operation is parsed and convert it into a request configuration for the selected data source operation. Response templates interpret responses from the data source and map it to the shape of the GraphQL field output type. Mapping templates are written in the Apache Velocity Template Language (VTL).
+    */
+  def evaluateMappingTemplate(): Request[EvaluateMappingTemplateResponse, AWSError] = js.native
+  def evaluateMappingTemplate(callback: js.Function2[/* err */ AWSError, /* data */ EvaluateMappingTemplateResponse, Unit]): Request[EvaluateMappingTemplateResponse, AWSError] = js.native
+  /**
+    * Evaluates a given template and returns the response. The mapping template can be a request or response template. Request templates take the incoming request after a GraphQL operation is parsed and convert it into a request configuration for the selected data source operation. Response templates interpret responses from the data source and map it to the shape of the GraphQL field output type. Mapping templates are written in the Apache Velocity Template Language (VTL).
+    */
+  def evaluateMappingTemplate(params: EvaluateMappingTemplateRequest): Request[EvaluateMappingTemplateResponse, AWSError] = js.native
+  def evaluateMappingTemplate(
+    params: EvaluateMappingTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EvaluateMappingTemplateResponse, Unit]
+  ): Request[EvaluateMappingTemplateResponse, AWSError] = js.native
+  
+  /**
     * Flushes an ApiCache object.
     */
   def flushApiCache(): Request[FlushApiCacheResponse, AWSError] = js.native
@@ -223,6 +293,20 @@ trait AppSync extends Service {
     params: FlushApiCacheRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ FlushApiCacheResponse, Unit]
   ): Request[FlushApiCacheResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves an ApiAssociation object.
+    */
+  def getApiAssociation(): Request[GetApiAssociationResponse, AWSError] = js.native
+  def getApiAssociation(callback: js.Function2[/* err */ AWSError, /* data */ GetApiAssociationResponse, Unit]): Request[GetApiAssociationResponse, AWSError] = js.native
+  /**
+    * Retrieves an ApiAssociation object.
+    */
+  def getApiAssociation(params: GetApiAssociationRequest): Request[GetApiAssociationResponse, AWSError] = js.native
+  def getApiAssociation(
+    params: GetApiAssociationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetApiAssociationResponse, Unit]
+  ): Request[GetApiAssociationResponse, AWSError] = js.native
   
   /**
     * Retrieves an ApiCache object.
@@ -251,6 +335,20 @@ trait AppSync extends Service {
     params: GetDataSourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDataSourceResponse, Unit]
   ): Request[GetDataSourceResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves a custom DomainName object.
+    */
+  def getDomainName(): Request[GetDomainNameResponse, AWSError] = js.native
+  def getDomainName(callback: js.Function2[/* err */ AWSError, /* data */ GetDomainNameResponse, Unit]): Request[GetDomainNameResponse, AWSError] = js.native
+  /**
+    * Retrieves a custom DomainName object.
+    */
+  def getDomainName(params: GetDomainNameRequest): Request[GetDomainNameResponse, AWSError] = js.native
+  def getDomainName(
+    params: GetDomainNameRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDomainNameResponse, Unit]
+  ): Request[GetDomainNameResponse, AWSError] = js.native
   
   /**
     * Get a Function.
@@ -363,6 +461,20 @@ trait AppSync extends Service {
     params: ListDataSourcesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDataSourcesResponse, Unit]
   ): Request[ListDataSourcesResponse, AWSError] = js.native
+  
+  /**
+    * Lists multiple custom domain names.
+    */
+  def listDomainNames(): Request[ListDomainNamesResponse, AWSError] = js.native
+  def listDomainNames(callback: js.Function2[/* err */ AWSError, /* data */ ListDomainNamesResponse, Unit]): Request[ListDomainNamesResponse, AWSError] = js.native
+  /**
+    * Lists multiple custom domain names.
+    */
+  def listDomainNames(params: ListDomainNamesRequest): Request[ListDomainNamesResponse, AWSError] = js.native
+  def listDomainNames(
+    params: ListDomainNamesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDomainNamesResponse, Unit]
+  ): Request[ListDomainNamesResponse, AWSError] = js.native
   
   /**
     * List multiple functions.
@@ -505,12 +617,12 @@ trait AppSync extends Service {
   ): Request[UpdateApiCacheResponse, AWSError] = js.native
   
   /**
-    * Updates an API key. The key can be updated while it is not deleted.
+    * Updates an API key. You can update the key as long as it's not deleted.
     */
   def updateApiKey(): Request[UpdateApiKeyResponse, AWSError] = js.native
   def updateApiKey(callback: js.Function2[/* err */ AWSError, /* data */ UpdateApiKeyResponse, Unit]): Request[UpdateApiKeyResponse, AWSError] = js.native
   /**
-    * Updates an API key. The key can be updated while it is not deleted.
+    * Updates an API key. You can update the key as long as it's not deleted.
     */
   def updateApiKey(params: UpdateApiKeyRequest): Request[UpdateApiKeyResponse, AWSError] = js.native
   def updateApiKey(
@@ -531,6 +643,20 @@ trait AppSync extends Service {
     params: UpdateDataSourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDataSourceResponse, Unit]
   ): Request[UpdateDataSourceResponse, AWSError] = js.native
+  
+  /**
+    * Updates a custom DomainName object.
+    */
+  def updateDomainName(): Request[UpdateDomainNameResponse, AWSError] = js.native
+  def updateDomainName(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainNameResponse, Unit]): Request[UpdateDomainNameResponse, AWSError] = js.native
+  /**
+    * Updates a custom DomainName object.
+    */
+  def updateDomainName(params: UpdateDomainNameRequest): Request[UpdateDomainNameResponse, AWSError] = js.native
+  def updateDomainName(
+    params: UpdateDomainNameRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainNameResponse, Unit]
+  ): Request[UpdateDomainNameResponse, AWSError] = js.native
   
   /**
     * Updates a Function object.

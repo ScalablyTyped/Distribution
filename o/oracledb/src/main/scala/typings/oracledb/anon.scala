@@ -1,6 +1,6 @@
 package typings.oracledb
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.oracledb.mod.DBCredentials
 import typings.oracledb.mod.DBObjectClass
 import typings.oracledb.mod.DBObjectIN
@@ -288,6 +288,23 @@ object anon {
       inline def setPayload(value: String | Buffer | DBObjectIN[T]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Hint extends StObject {
+    
+    var hint: String
+  }
+  object Hint {
+    
+    inline def apply(hint: String): Hint = {
+      val __obj = js.Dynamic.literal(hint = hint.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Hint]
+    }
+    
+    extension [Self <: Hint](x: Self) {
+      
+      inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     }
   }
   

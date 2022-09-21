@@ -23,7 +23,7 @@ object NotaryResult {
     
     inline def setJurisdictionsUndefined: Self = StObject.set(x, "jurisdictions", js.undefined)
     
-    inline def setJurisdictionsVarargs(value: Jurisdiction*): Self = StObject.set(x, "jurisdictions", js.Array(value :_*))
+    inline def setJurisdictionsVarargs(value: Jurisdiction*): Self = StObject.set(x, "jurisdictions", js.Array(value*))
     
     inline def setNotary(value: Notary): Self = StObject.set(x, "notary", value.asInstanceOf[js.Any])
     

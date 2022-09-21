@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttSettableProperties<K1, K2, D1, D2>> */
 trait ojGanttSettablePropertiesLenient[K1, K2, D1, D2]
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var animationOnDataChange: js.UndefOr[auto | none] = js.undefined
   
@@ -133,7 +133,7 @@ object ojGanttSettablePropertiesLenient {
     
     inline def setReferenceObjectsUndefined: Self = StObject.set(x, "referenceObjects", js.undefined)
     
-    inline def setReferenceObjectsVarargs(value: ReferenceObject*): Self = StObject.set(x, "referenceObjects", js.Array(value :_*))
+    inline def setReferenceObjectsVarargs(value: ReferenceObject*): Self = StObject.set(x, "referenceObjects", js.Array(value*))
     
     inline def setRowAxis(value: MaxWidth[K2, D2]): Self = StObject.set(x, "rowAxis", value.asInstanceOf[js.Any])
     
@@ -155,7 +155,7 @@ object ojGanttSettablePropertiesLenient {
     
     inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     
-    inline def setSelectionVarargs(value: K2*): Self = StObject.set(x, "selection", js.Array(value :_*))
+    inline def setSelectionVarargs(value: K2*): Self = StObject.set(x, "selection", js.Array(value*))
     
     inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     

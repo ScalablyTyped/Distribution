@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.FileSearch")
 @js.native
-/* private */ class FileSearch ()
+/* private */ open class FileSearch ()
   extends StObject
      with typings.activexOffice.Office.FileSearch

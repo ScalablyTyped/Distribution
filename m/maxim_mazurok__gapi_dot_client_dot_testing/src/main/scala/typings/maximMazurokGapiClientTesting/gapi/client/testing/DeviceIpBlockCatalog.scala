@@ -22,6 +22,6 @@ object DeviceIpBlockCatalog {
     
     inline def setIpBlocksUndefined: Self = StObject.set(x, "ipBlocks", js.undefined)
     
-    inline def setIpBlocksVarargs(value: DeviceIpBlock*): Self = StObject.set(x, "ipBlocks", js.Array(value :_*))
+    inline def setIpBlocksVarargs(value: DeviceIpBlock*): Self = StObject.set(x, "ipBlocks", js.Array(value*))
   }
 }

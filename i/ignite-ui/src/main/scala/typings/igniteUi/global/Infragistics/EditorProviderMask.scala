@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.EditorProviderMask")
 @js.native
-class EditorProviderMask ()
+open class EditorProviderMask ()
   extends StObject
      with typings.igniteUi.Infragistics.EditorProviderMask {
   

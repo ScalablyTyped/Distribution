@@ -8,29 +8,29 @@ object mod {
   
   @JSImport("antlr4", "CommonToken")
   @js.native
-  class CommonToken protected ()
+  open class CommonToken protected ()
     extends typings.antlr4.tokenMod.CommonToken {
-    def this(source: js.Any, `type`: js.Any, channel: js.Any, start: Double, stop: Double) = this()
+    def this(source: Any, `type`: Any, channel: Any, start: Double, stop: Double) = this()
   }
   /* static members */
   object CommonToken {
     
     @JSImport("antlr4", "CommonToken.EMPTY_SOURCE")
     @js.native
-    val EMPTY_SOURCE: js.Any = js.native
+    val EMPTY_SOURCE: Any = js.native
   }
   
   @JSImport("antlr4", "CommonTokenStream")
   @js.native
-  class CommonTokenStream protected ()
+  open class CommonTokenStream protected ()
     extends typings.antlr4.commonTokenStreamMod.CommonTokenStream {
     def this(lexer: typings.antlr4.lexerMod.Lexer) = this()
-    def this(lexer: typings.antlr4.lexerMod.Lexer, channel: js.Any) = this()
+    def this(lexer: typings.antlr4.lexerMod.Lexer, channel: Any) = this()
   }
   
   @JSImport("antlr4", "InputStream")
   @js.native
-  class InputStream protected ()
+  open class InputStream protected ()
     extends typings.antlr4.inputStreamMod.InputStream {
     def this(data: String) = this()
     def this(data: String, decodeToUnicodeCodePoints: Boolean) = this()
@@ -38,19 +38,19 @@ object mod {
   
   @JSImport("antlr4", "Interval")
   @js.native
-  class Interval protected ()
+  open class Interval protected ()
     extends typings.antlr4.intervalSetMod.Interval {
     def this(start: Double, stop: Double) = this()
   }
   
   @JSImport("antlr4", "IntervalSet")
   @js.native
-  class IntervalSet ()
+  open class IntervalSet ()
     extends typings.antlr4.intervalSetMod.IntervalSet
   
   @JSImport("antlr4", "Lexer")
   @js.native
-  class Lexer ()
+  open class Lexer ()
     extends typings.antlr4.lexerMod.Lexer
   /* static members */
   object Lexer {
@@ -61,11 +61,11 @@ object mod {
     
     @JSImport("antlr4", "Lexer.DEFAULT_TOKEN_CHANNEL")
     @js.native
-    val DEFAULT_TOKEN_CHANNEL: js.Any = js.native
+    val DEFAULT_TOKEN_CHANNEL: Any = js.native
     
     @JSImport("antlr4", "Lexer.HIDDEN")
     @js.native
-    val HIDDEN: js.Any = js.native
+    val HIDDEN: Any = js.native
     
     @JSImport("antlr4", "Lexer.MAX_CHAR_VALUE")
     @js.native
@@ -86,16 +86,16 @@ object mod {
   
   @JSImport("antlr4", "Parser")
   @js.native
-  class Parser protected ()
+  open class Parser protected ()
     extends typings.antlr4.parserMod.Parser {
     def this(input: typings.antlr4.commonTokenStreamMod.CommonTokenStream) = this()
   }
   
   @JSImport("antlr4", "ParserRuleContext")
   @js.native
-  class ParserRuleContext protected ()
+  open class ParserRuleContext protected ()
     extends typings.antlr4.parserRuleContextMod.ParserRuleContext {
-    def this(parent: js.Any, invokingState: Double) = this()
+    def this(parent: Any, invokingState: Double) = this()
   }
   /* static members */
   object ParserRuleContext {
@@ -107,12 +107,12 @@ object mod {
   
   @JSImport("antlr4", "Recognizer")
   @js.native
-  class Recognizer ()
+  open class Recognizer ()
     extends typings.antlr4.recognizerMod.Recognizer
   
   @JSImport("antlr4", "Token")
   @js.native
-  class Token ()
+  open class Token ()
     extends typings.antlr4.tokenMod.Token
   /* static members */
   object Token {

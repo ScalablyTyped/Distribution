@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object parseComponentMod {
   
-  @JSImport("vue-inbrowser-compiler-utils/lib/parseComponent", JSImport.Namespace)
+  @JSImport("vue-inbrowser-compiler-utils/lib/types/parseComponent", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -31,7 +31,7 @@ object parseComponentMod {
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value*))
     }
   }
   

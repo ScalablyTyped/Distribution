@@ -82,7 +82,7 @@ object WorkspaceFolderContents {
     
     inline def setItemsVarargs(
       value: (/* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem)*
-    ): Self = StObject.set(x, "items", js.Array(value :_*))
+    ): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setParentFolders(
       value: js.Array[
@@ -94,7 +94,7 @@ object WorkspaceFolderContents {
     
     inline def setParentFoldersVarargs(
       value: (/* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem)*
-    ): Self = StObject.set(x, "parentFolders", js.Array(value :_*))
+    ): Self = StObject.set(x, "parentFolders", js.Array(value*))
     
     inline def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
     

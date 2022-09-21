@@ -37,7 +37,7 @@ object ExtentOptions {
     
     inline def setBoxStyleUndefined: Self = StObject.set(x, "boxStyle", js.undefined)
     
-    inline def setBoxStyleVarargs(value: Style*): Self = StObject.set(x, "boxStyle", js.Array(value :_*))
+    inline def setBoxStyleVarargs(value: Style*): Self = StObject.set(x, "boxStyle", js.Array(value*))
     
     inline def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
@@ -55,7 +55,7 @@ object ExtentOptions {
     
     inline def setPointerStyleUndefined: Self = StObject.set(x, "pointerStyle", js.undefined)
     
-    inline def setPointerStyleVarargs(value: Style*): Self = StObject.set(x, "pointerStyle", js.Array(value :_*))
+    inline def setPointerStyleVarargs(value: Style*): Self = StObject.set(x, "pointerStyle", js.Array(value*))
     
     inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
     

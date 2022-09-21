@@ -8,7 +8,7 @@ object servicebusservicebaseMod {
   
   @JSImport("azure-sb/lib/servicebusservicebase", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends typings.azureSb.servicebusserviceclientMod.^ {
     def this(configOrNamespaceOrConnectionString: String) = this()
     def this(configOrNamespaceOrConnectionString: String, accessKey: String) = this()

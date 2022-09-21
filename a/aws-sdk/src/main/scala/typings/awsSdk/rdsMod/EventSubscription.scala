@@ -12,7 +12,7 @@ trait EventSubscription extends StObject {
   var CustSubscriptionId: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS customer account associated with the RDS event notification subscription.
+    * The Amazon Web Services customer account associated with the RDS event notification subscription.
     */
   var CustomerAwsId: js.UndefOr[String] = js.undefined
   
@@ -81,7 +81,7 @@ object EventSubscription {
     
     inline def setEventCategoriesListUndefined: Self = StObject.set(x, "EventCategoriesList", js.undefined)
     
-    inline def setEventCategoriesListVarargs(value: String*): Self = StObject.set(x, "EventCategoriesList", js.Array(value :_*))
+    inline def setEventCategoriesListVarargs(value: String*): Self = StObject.set(x, "EventCategoriesList", js.Array(value*))
     
     inline def setEventSubscriptionArn(value: String): Self = StObject.set(x, "EventSubscriptionArn", value.asInstanceOf[js.Any])
     
@@ -95,7 +95,7 @@ object EventSubscription {
     
     inline def setSourceIdsListUndefined: Self = StObject.set(x, "SourceIdsList", js.undefined)
     
-    inline def setSourceIdsListVarargs(value: String*): Self = StObject.set(x, "SourceIdsList", js.Array(value :_*))
+    inline def setSourceIdsListVarargs(value: String*): Self = StObject.set(x, "SourceIdsList", js.Array(value*))
     
     inline def setSourceType(value: String): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     

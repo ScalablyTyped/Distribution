@@ -46,6 +46,6 @@ object GooglePrivacyDlpV2Location {
     
     inline def setContentLocationsUndefined: Self = StObject.set(x, "contentLocations", js.undefined)
     
-    inline def setContentLocationsVarargs(value: GooglePrivacyDlpV2ContentLocation*): Self = StObject.set(x, "contentLocations", js.Array(value :_*))
+    inline def setContentLocationsVarargs(value: GooglePrivacyDlpV2ContentLocation*): Self = StObject.set(x, "contentLocations", js.Array(value*))
   }
 }

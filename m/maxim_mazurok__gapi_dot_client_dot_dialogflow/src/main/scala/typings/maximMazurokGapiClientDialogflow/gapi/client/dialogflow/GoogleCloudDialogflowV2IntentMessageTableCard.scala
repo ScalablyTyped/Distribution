@@ -37,13 +37,13 @@ object GoogleCloudDialogflowV2IntentMessageTableCard {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: GoogleCloudDialogflowV2IntentMessageBasicCardButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: GoogleCloudDialogflowV2IntentMessageBasicCardButton*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setColumnProperties(value: js.Array[GoogleCloudDialogflowV2IntentMessageColumnProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
     
     inline def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
     
-    inline def setColumnPropertiesVarargs(value: GoogleCloudDialogflowV2IntentMessageColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value :_*))
+    inline def setColumnPropertiesVarargs(value: GoogleCloudDialogflowV2IntentMessageColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value*))
     
     inline def setImage(value: GoogleCloudDialogflowV2IntentMessageImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
@@ -53,7 +53,7 @@ object GoogleCloudDialogflowV2IntentMessageTableCard {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: GoogleCloudDialogflowV2IntentMessageTableCardRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: GoogleCloudDialogflowV2IntentMessageTableCardRow*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/Node/index", "ParticleRampGradientBlock")
 @js.native
-class ParticleRampGradientBlock protected ()
+open class ParticleRampGradientBlock protected ()
   extends typings.babylonjs.blocksIndexMod.ParticleRampGradientBlock {
   /**
     * Create a new ParticleRampGradientBlock

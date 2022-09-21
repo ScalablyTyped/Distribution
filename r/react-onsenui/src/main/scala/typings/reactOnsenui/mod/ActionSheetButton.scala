@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "ActionSheetButton")
 @js.native
-class ActionSheetButton protected ()
-  extends Component[typings.reactOnsenui.anon.Icon, js.Any] {
+open class ActionSheetButton protected ()
+  extends Component[typings.reactOnsenui.anon.Icon, Any] {
   def this(props: HTMLAttributesidclassName & typings.reactOnsenui.anon.Icon) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & typings.reactOnsenui.anon.Icon, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & typings.reactOnsenui.anon.Icon, context: Any) = this()
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".webpack-cdYQfbEx" : "4.46.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".webpack-cdYQfbEx" : "4.46.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

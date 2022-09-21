@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isFunctionMod {
   
-  @JSImport("rxjs/internal/util/isFunction", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/util/isFunction", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isFunction(x: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(x.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
+  inline def isFunction(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

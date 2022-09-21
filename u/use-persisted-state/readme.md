@@ -10,10 +10,10 @@ A custom React Hook that provides a multi-instance, multi-tab/browser shared and
 | ------------------ | :-------------: |
 | Full name          | use-persisted-state |
 | Keywords           | react-hooks, hooks, react, utils, lib, persistent, localstorage |
-| # releases         | 7 |
-| # dependents       | 23 |
-| # downloads        | 1843923 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 278660.3333333333 |
+| # stars            | 1235.0 |
 
 ## Links
 - [Homepage](https://github.com/donavon/use-persisted-state#readme)

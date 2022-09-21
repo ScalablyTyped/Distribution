@@ -7,17 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MatchersUtil extends StObject {
   
-  def buildFailureMessage(matcherName: String, isNot: Boolean, actual: js.Any, expected: js.Any*): String = js.native
+  /**
+    * @deprecated Private method that may be changed or removed in the future
+    */
+  def buildFailureMessage(matcherName: String, isNot: Boolean, actual: scala.Any, expected: scala.Any*): String = js.native
   
-  def contains[T](haystack: String, needle: js.Any): Boolean = js.native
-  def contains[T](haystack: String, needle: js.Any, customTesters: js.Array[CustomEqualityTester]): Boolean = js.native
-  def contains[T](haystack: ArrayLike[T], needle: js.Any): Boolean = js.native
-  def contains[T](haystack: ArrayLike[T], needle: js.Any, customTesters: js.Array[CustomEqualityTester]): Boolean = js.native
+  def contains[T](haystack: String, needle: scala.Any): Boolean = js.native
+  def contains[T](haystack: ArrayLike[T], needle: scala.Any): Boolean = js.native
   
-  def equals(a: js.Any, b: js.Any): Boolean = js.native
-  def equals(a: js.Any, b: js.Any, customTesters: js.Array[CustomEqualityTester]): Boolean = js.native
-  def equals(a: js.Any, b: js.Any, customTesters: js.Array[CustomEqualityTester], diffBuilder: DiffBuilder): Boolean = js.native
-  def equals(a: js.Any, b: js.Any, customTesters: Unit, diffBuilder: DiffBuilder): Boolean = js.native
+  def equals(a: scala.Any, b: scala.Any): Boolean = js.native
   
   /**
     * Formats a value for use in matcher failure messages and similar
@@ -27,5 +25,5 @@ trait MatchersUtil extends StObject {
     * @param value The value to pretty-print
     * @return The pretty-printed value
     */
-  def pp(value: js.Any): String = js.native
+  def pp(value: scala.Any): String = js.native
 }

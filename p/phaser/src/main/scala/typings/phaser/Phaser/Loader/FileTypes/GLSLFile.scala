@@ -6,7 +6,6 @@ import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Loader.MultiFile
 import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
-import typings.phaser.integer
 import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
@@ -41,7 +40,7 @@ trait GLSLFile
     * Returns the shader uniforms from the header block.
     * @param headerSource The header data.
     */
-  def getShaderUniforms(headerSource: js.Array[String]): js.Any
+  def getShaderUniforms(headerSource: js.Array[String]): Any
 }
 object GLSLFile {
   
@@ -50,12 +49,12 @@ object GLSLFile {
     bytesLoaded: Double,
     bytesTotal: Double,
     cache: BaseCache | TextureManager,
-    config: js.Any,
-    data: js.Any,
+    config: Any,
+    data: Any,
     destroy: () => Unit,
     getShaderName: js.Array[String] => String,
     getShaderType: js.Array[String] => String,
-    getShaderUniforms: js.Array[String] => js.Any,
+    getShaderUniforms: js.Array[String] => Any,
     hasCacheConflict: () => Boolean,
     key: String,
     linkFile: File,
@@ -73,7 +72,7 @@ object GLSLFile {
     resetXHR: () => Unit,
     setLink: File => Unit,
     src: String,
-    state: integer,
+    state: Double,
     `type`: String,
     url: js.Object | String,
     xhrLoader: XMLHttpRequest,
@@ -90,6 +89,6 @@ object GLSLFile {
     
     inline def setGetShaderType(value: js.Array[String] => String): Self = StObject.set(x, "getShaderType", js.Any.fromFunction1(value))
     
-    inline def setGetShaderUniforms(value: js.Array[String] => js.Any): Self = StObject.set(x, "getShaderUniforms", js.Any.fromFunction1(value))
+    inline def setGetShaderUniforms(value: js.Array[String] => Any): Self = StObject.set(x, "getShaderUniforms", js.Any.fromFunction1(value))
   }
 }

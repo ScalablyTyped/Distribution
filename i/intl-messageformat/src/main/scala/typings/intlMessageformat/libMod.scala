@@ -1,8 +1,8 @@
 package typings.intlMessageformat
 
-import typings.intlMessageformat.anon.Date
+import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
 import typings.intlMessageformat.anon.FnCall
-import typings.intlMessageformat.anon.PartialFormats
+import typings.intlMessageformat.anon.PartialFormatsDate
 import typings.intlMessageformat.coreMod.Options
 import typings.intlMessageformat.errorMod.ErrorCode
 import typings.intlMessageformat.formattersMod.FormatXMLElementFn
@@ -10,7 +10,7 @@ import typings.intlMessageformat.formattersMod.Formats
 import typings.intlMessageformat.formattersMod.Formatters
 import typings.intlMessageformat.formattersMod.MessageFormatPart
 import typings.intlMessageformat.formattersMod.PrimitiveType
-import typings.intlMessageformatParser.srcTypesMod.MessageFormatElement
+import typings.std.Intl.Locale
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +24,7 @@ object libMod {
   
   @JSImport("intl-messageformat/lib", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.intlMessageformat.coreMod.IntlMessageFormat {
     def this(message: String) = this()
     def this(message: js.Array[MessageFormatElement]) = this()
@@ -32,27 +32,27 @@ object libMod {
     def this(message: String, locales: js.Array[String]) = this()
     def this(message: js.Array[MessageFormatElement], locales: String) = this()
     def this(message: js.Array[MessageFormatElement], locales: js.Array[String]) = this()
-    def this(message: String, locales: String, overrideFormats: PartialFormats) = this()
-    def this(message: String, locales: js.Array[String], overrideFormats: PartialFormats) = this()
-    def this(message: String, locales: Unit, overrideFormats: PartialFormats) = this()
-    def this(message: js.Array[MessageFormatElement], locales: String, overrideFormats: PartialFormats) = this()
+    def this(message: String, locales: String, overrideFormats: PartialFormatsDate) = this()
+    def this(message: String, locales: js.Array[String], overrideFormats: PartialFormatsDate) = this()
+    def this(message: String, locales: Unit, overrideFormats: PartialFormatsDate) = this()
+    def this(message: js.Array[MessageFormatElement], locales: String, overrideFormats: PartialFormatsDate) = this()
     def this(
       message: js.Array[MessageFormatElement],
       locales: js.Array[String],
-      overrideFormats: PartialFormats
+      overrideFormats: PartialFormatsDate
     ) = this()
-    def this(message: js.Array[MessageFormatElement], locales: Unit, overrideFormats: PartialFormats) = this()
+    def this(message: js.Array[MessageFormatElement], locales: Unit, overrideFormats: PartialFormatsDate) = this()
     def this(message: String, locales: String, overrideFormats: Unit, opts: Options) = this()
-    def this(message: String, locales: String, overrideFormats: PartialFormats, opts: Options) = this()
+    def this(message: String, locales: String, overrideFormats: PartialFormatsDate, opts: Options) = this()
     def this(message: String, locales: js.Array[String], overrideFormats: Unit, opts: Options) = this()
-    def this(message: String, locales: js.Array[String], overrideFormats: PartialFormats, opts: Options) = this()
+    def this(message: String, locales: js.Array[String], overrideFormats: PartialFormatsDate, opts: Options) = this()
     def this(message: String, locales: Unit, overrideFormats: Unit, opts: Options) = this()
-    def this(message: String, locales: Unit, overrideFormats: PartialFormats, opts: Options) = this()
+    def this(message: String, locales: Unit, overrideFormats: PartialFormatsDate, opts: Options) = this()
     def this(message: js.Array[MessageFormatElement], locales: String, overrideFormats: Unit, opts: Options) = this()
     def this(
       message: js.Array[MessageFormatElement],
       locales: String,
-      overrideFormats: PartialFormats,
+      overrideFormats: PartialFormatsDate,
       opts: Options
     ) = this()
     def this(
@@ -64,14 +64,14 @@ object libMod {
     def this(
       message: js.Array[MessageFormatElement],
       locales: js.Array[String],
-      overrideFormats: PartialFormats,
+      overrideFormats: PartialFormatsDate,
       opts: Options
     ) = this()
     def this(message: js.Array[MessageFormatElement], locales: Unit, overrideFormats: Unit, opts: Options) = this()
     def this(
       message: js.Array[MessageFormatElement],
       locales: Unit,
-      overrideFormats: PartialFormats,
+      overrideFormats: PartialFormatsDate,
       opts: Options
     ) = this()
   }
@@ -89,18 +89,35 @@ object libMod {
     
     @JSImport("intl-messageformat/lib", "default.formats")
     @js.native
-    def formats: Date = js.native
-    inline def formats_=(x: Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
+    def formats: Formats = js.native
+    inline def formats_=(x: Formats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
     
     @JSImport("intl-messageformat/lib", "default.memoizedDefaultLocale")
     @js.native
-    def memoizedDefaultLocale: js.Any = js.native
-    inline def memoizedDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
+    def memoizedDefaultLocale: Any = js.native
+    inline def memoizedDefaultLocale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
+    
+    inline def resolveLocale(locales: String): js.UndefOr[Locale] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLocale")(locales.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Locale]]
+    inline def resolveLocale(locales: js.Array[String]): js.UndefOr[Locale] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLocale")(locales.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Locale]]
+  }
+  
+  @JSImport("intl-messageformat/lib", "ErrorCode")
+  @js.native
+  object ErrorCode extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.intlMessageformat.errorMod.ErrorCode & String] = js.native
+    
+    /* "INVALID_VALUE" */ val INVALID_VALUE: typings.intlMessageformat.errorMod.ErrorCode.INVALID_VALUE & String = js.native
+    
+    /* "MISSING_INTL_API" */ val MISSING_INTL_API: typings.intlMessageformat.errorMod.ErrorCode.MISSING_INTL_API & String = js.native
+    
+    /* "MISSING_VALUE" */ val MISSING_VALUE: typings.intlMessageformat.errorMod.ErrorCode.MISSING_VALUE & String = js.native
   }
   
   @JSImport("intl-messageformat/lib", "FormatError")
   @js.native
-  class FormatError protected ()
+  open class FormatError protected ()
     extends typings.intlMessageformat.errorMod.FormatError {
     def this(msg: String, code: ErrorCode) = this()
     def this(msg: String, code: ErrorCode, originalMessage: String) = this()
@@ -108,7 +125,7 @@ object libMod {
   
   @JSImport("intl-messageformat/lib", "IntlMessageFormat")
   @js.native
-  class IntlMessageFormat protected ()
+  open class IntlMessageFormat protected ()
     extends typings.intlMessageformat.coreMod.IntlMessageFormat {
     def this(message: String) = this()
     def this(message: js.Array[MessageFormatElement]) = this()
@@ -116,27 +133,27 @@ object libMod {
     def this(message: String, locales: js.Array[String]) = this()
     def this(message: js.Array[MessageFormatElement], locales: String) = this()
     def this(message: js.Array[MessageFormatElement], locales: js.Array[String]) = this()
-    def this(message: String, locales: String, overrideFormats: PartialFormats) = this()
-    def this(message: String, locales: js.Array[String], overrideFormats: PartialFormats) = this()
-    def this(message: String, locales: Unit, overrideFormats: PartialFormats) = this()
-    def this(message: js.Array[MessageFormatElement], locales: String, overrideFormats: PartialFormats) = this()
+    def this(message: String, locales: String, overrideFormats: PartialFormatsDate) = this()
+    def this(message: String, locales: js.Array[String], overrideFormats: PartialFormatsDate) = this()
+    def this(message: String, locales: Unit, overrideFormats: PartialFormatsDate) = this()
+    def this(message: js.Array[MessageFormatElement], locales: String, overrideFormats: PartialFormatsDate) = this()
     def this(
       message: js.Array[MessageFormatElement],
       locales: js.Array[String],
-      overrideFormats: PartialFormats
+      overrideFormats: PartialFormatsDate
     ) = this()
-    def this(message: js.Array[MessageFormatElement], locales: Unit, overrideFormats: PartialFormats) = this()
+    def this(message: js.Array[MessageFormatElement], locales: Unit, overrideFormats: PartialFormatsDate) = this()
     def this(message: String, locales: String, overrideFormats: Unit, opts: Options) = this()
-    def this(message: String, locales: String, overrideFormats: PartialFormats, opts: Options) = this()
+    def this(message: String, locales: String, overrideFormats: PartialFormatsDate, opts: Options) = this()
     def this(message: String, locales: js.Array[String], overrideFormats: Unit, opts: Options) = this()
-    def this(message: String, locales: js.Array[String], overrideFormats: PartialFormats, opts: Options) = this()
+    def this(message: String, locales: js.Array[String], overrideFormats: PartialFormatsDate, opts: Options) = this()
     def this(message: String, locales: Unit, overrideFormats: Unit, opts: Options) = this()
-    def this(message: String, locales: Unit, overrideFormats: PartialFormats, opts: Options) = this()
+    def this(message: String, locales: Unit, overrideFormats: PartialFormatsDate, opts: Options) = this()
     def this(message: js.Array[MessageFormatElement], locales: String, overrideFormats: Unit, opts: Options) = this()
     def this(
       message: js.Array[MessageFormatElement],
       locales: String,
-      overrideFormats: PartialFormats,
+      overrideFormats: PartialFormatsDate,
       opts: Options
     ) = this()
     def this(
@@ -148,14 +165,14 @@ object libMod {
     def this(
       message: js.Array[MessageFormatElement],
       locales: js.Array[String],
-      overrideFormats: PartialFormats,
+      overrideFormats: PartialFormatsDate,
       opts: Options
     ) = this()
     def this(message: js.Array[MessageFormatElement], locales: Unit, overrideFormats: Unit, opts: Options) = this()
     def this(
       message: js.Array[MessageFormatElement],
       locales: Unit,
-      overrideFormats: PartialFormats,
+      overrideFormats: PartialFormatsDate,
       opts: Options
     ) = this()
   }
@@ -173,37 +190,52 @@ object libMod {
     
     @JSImport("intl-messageformat/lib", "IntlMessageFormat.formats")
     @js.native
-    def formats: Date = js.native
-    inline def formats_=(x: Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
+    def formats: Formats = js.native
+    inline def formats_=(x: Formats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
     
     @JSImport("intl-messageformat/lib", "IntlMessageFormat.memoizedDefaultLocale")
     @js.native
-    def memoizedDefaultLocale: js.Any = js.native
-    inline def memoizedDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
+    def memoizedDefaultLocale: Any = js.native
+    inline def memoizedDefaultLocale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
+    
+    inline def resolveLocale(locales: String): js.UndefOr[Locale] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLocale")(locales.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Locale]]
+    inline def resolveLocale(locales: js.Array[String]): js.UndefOr[Locale] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLocale")(locales.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Locale]]
   }
   
   @JSImport("intl-messageformat/lib", "InvalidValueError")
   @js.native
-  class InvalidValueError protected ()
+  open class InvalidValueError protected ()
     extends typings.intlMessageformat.errorMod.InvalidValueError {
-    def this(variableId: String, value: js.Any, options: js.Array[String]) = this()
-    def this(variableId: String, value: js.Any, options: js.Array[String], originalMessage: String) = this()
+    def this(variableId: String, value: Any, options: js.Array[String]) = this()
+    def this(variableId: String, value: Any, options: js.Array[String], originalMessage: String) = this()
   }
   
   @JSImport("intl-messageformat/lib", "InvalidValueTypeError")
   @js.native
-  class InvalidValueTypeError protected ()
+  open class InvalidValueTypeError protected ()
     extends typings.intlMessageformat.errorMod.InvalidValueTypeError {
-    def this(value: js.Any, `type`: String) = this()
-    def this(value: js.Any, `type`: String, originalMessage: String) = this()
+    def this(value: Any, `type`: String) = this()
+    def this(value: Any, `type`: String, originalMessage: String) = this()
   }
   
   @JSImport("intl-messageformat/lib", "MissingValueError")
   @js.native
-  class MissingValueError protected ()
+  open class MissingValueError protected ()
     extends typings.intlMessageformat.errorMod.MissingValueError {
     def this(variableId: String) = this()
     def this(variableId: String, originalMessage: String) = this()
+  }
+  
+  @JSImport("intl-messageformat/lib", "PART_TYPE")
+  @js.native
+  object PART_TYPE extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.intlMessageformat.formattersMod.PART_TYPE & Double] = js.native
+    
+    /* 0 */ val literal: typings.intlMessageformat.formattersMod.PART_TYPE.literal & Double = js.native
+    
+    /* 1 */ val `object`: typings.intlMessageformat.formattersMod.PART_TYPE.`object` & Double = js.native
   }
   
   inline def formatToParts[T](els: js.Array[MessageFormatElement], locales: String, formatters: Formatters, formats: Formats): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]

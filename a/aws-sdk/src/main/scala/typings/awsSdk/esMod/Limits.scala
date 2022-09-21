@@ -31,7 +31,7 @@ object Limits {
     
     inline def setAdditionalLimitsUndefined: Self = StObject.set(x, "AdditionalLimits", js.undefined)
     
-    inline def setAdditionalLimitsVarargs(value: AdditionalLimit*): Self = StObject.set(x, "AdditionalLimits", js.Array(value :_*))
+    inline def setAdditionalLimitsVarargs(value: AdditionalLimit*): Self = StObject.set(x, "AdditionalLimits", js.Array(value*))
     
     inline def setInstanceLimits(value: InstanceLimits): Self = StObject.set(x, "InstanceLimits", value.asInstanceOf[js.Any])
     
@@ -41,6 +41,6 @@ object Limits {
     
     inline def setStorageTypesUndefined: Self = StObject.set(x, "StorageTypes", js.undefined)
     
-    inline def setStorageTypesVarargs(value: StorageType*): Self = StObject.set(x, "StorageTypes", js.Array(value :_*))
+    inline def setStorageTypesVarargs(value: StorageType*): Self = StObject.set(x, "StorageTypes", js.Array(value*))
   }
 }

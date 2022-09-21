@@ -53,7 +53,7 @@ trait RunCreateModel extends StObject {
   
   var releaseUri: String
   
-  var runTimeout: js.Any
+  var runTimeout: Any
   
   var sourceWorkflow: String
   
@@ -95,7 +95,7 @@ object RunCreateModel {
     pointIds: js.Array[Double],
     releaseEnvironmentUri: String,
     releaseUri: String,
-    runTimeout: js.Any,
+    runTimeout: Any,
     sourceWorkflow: String,
     startDate: String,
     state: String,
@@ -127,13 +127,13 @@ object RunCreateModel {
     
     inline def setConfigurationIds(value: js.Array[Double]): Self = StObject.set(x, "configurationIds", value.asInstanceOf[js.Any])
     
-    inline def setConfigurationIdsVarargs(value: Double*): Self = StObject.set(x, "configurationIds", js.Array(value :_*))
+    inline def setConfigurationIdsVarargs(value: Double*): Self = StObject.set(x, "configurationIds", js.Array(value*))
     
     inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     inline def setCustomTestFields(value: js.Array[CustomTestField]): Self = StObject.set(x, "customTestFields", value.asInstanceOf[js.Any])
     
-    inline def setCustomTestFieldsVarargs(value: CustomTestField*): Self = StObject.set(x, "customTestFields", js.Array(value :_*))
+    inline def setCustomTestFieldsVarargs(value: CustomTestField*): Self = StObject.set(x, "customTestFields", js.Array(value*))
     
     inline def setDtlAutEnvironment(value: ShallowReference): Self = StObject.set(x, "dtlAutEnvironment", value.asInstanceOf[js.Any])
     
@@ -157,13 +157,13 @@ object RunCreateModel {
     
     inline def setPointIds(value: js.Array[Double]): Self = StObject.set(x, "pointIds", value.asInstanceOf[js.Any])
     
-    inline def setPointIdsVarargs(value: Double*): Self = StObject.set(x, "pointIds", js.Array(value :_*))
+    inline def setPointIdsVarargs(value: Double*): Self = StObject.set(x, "pointIds", js.Array(value*))
     
     inline def setReleaseEnvironmentUri(value: String): Self = StObject.set(x, "releaseEnvironmentUri", value.asInstanceOf[js.Any])
     
     inline def setReleaseUri(value: String): Self = StObject.set(x, "releaseUri", value.asInstanceOf[js.Any])
     
-    inline def setRunTimeout(value: js.Any): Self = StObject.set(x, "runTimeout", value.asInstanceOf[js.Any])
+    inline def setRunTimeout(value: Any): Self = StObject.set(x, "runTimeout", value.asInstanceOf[js.Any])
     
     inline def setSourceWorkflow(value: String): Self = StObject.set(x, "sourceWorkflow", value.asInstanceOf[js.Any])
     

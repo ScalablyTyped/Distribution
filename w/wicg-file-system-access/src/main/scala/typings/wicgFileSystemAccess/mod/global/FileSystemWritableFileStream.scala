@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("FileSystemWritableFileStream")
 @js.native
-class FileSystemWritableFileStream ()
+open class FileSystemWritableFileStream ()
   extends StObject
      with WritableStream {
   

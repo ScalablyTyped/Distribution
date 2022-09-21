@@ -16,14 +16,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object useLoadMoreFunctionMod {
   
-  @JSImport("react-relay/lib/relay-experimental/useLoadMoreFunction", JSImport.Namespace)
+  @JSImport("react-relay/relay-hooks/useLoadMoreFunction", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def getConnectionState(
     direction: Direction,
     fragmentNode: ReaderFragment,
-    fragmentData: js.Any,
+    fragmentData: Any,
     connectionPathInFragmentData: js.Array[String | Double]
   ): Cursor = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionState")(direction.asInstanceOf[js.Any], fragmentNode.asInstanceOf[js.Any], fragmentData.asInstanceOf[js.Any], connectionPathInFragmentData.asInstanceOf[js.Any])).asInstanceOf[Cursor]
   
@@ -51,13 +51,13 @@ object useLoadMoreFunctionMod {
     
     var direction: Direction
     
-    var fragmentData: js.Any
+    var fragmentData: Any
     
     var fragmentIdentifier: String
     
     var fragmentNode: ReaderFragment
     
-    var fragmentRef: js.Any
+    var fragmentRef: Any
     
     var identifierField: js.UndefOr[String | Null] = js.undefined
     
@@ -75,10 +75,10 @@ object useLoadMoreFunctionMod {
       componentDisplayName: String,
       connectionPathInFragmentData: js.Array[String | Double],
       direction: Direction,
-      fragmentData: js.Any,
+      fragmentData: Any,
       fragmentIdentifier: String,
       fragmentNode: ReaderFragment,
-      fragmentRef: js.Any,
+      fragmentRef: Any,
       observer: Observer[GraphQLResponse],
       onReset: () => Unit,
       paginationMetadata: ReaderPaginationMetadata,
@@ -94,17 +94,17 @@ object useLoadMoreFunctionMod {
       
       inline def setConnectionPathInFragmentData(value: js.Array[String | Double]): Self = StObject.set(x, "connectionPathInFragmentData", value.asInstanceOf[js.Any])
       
-      inline def setConnectionPathInFragmentDataVarargs(value: (String | Double)*): Self = StObject.set(x, "connectionPathInFragmentData", js.Array(value :_*))
+      inline def setConnectionPathInFragmentDataVarargs(value: (String | Double)*): Self = StObject.set(x, "connectionPathInFragmentData", js.Array(value*))
       
       inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      inline def setFragmentData(value: js.Any): Self = StObject.set(x, "fragmentData", value.asInstanceOf[js.Any])
+      inline def setFragmentData(value: Any): Self = StObject.set(x, "fragmentData", value.asInstanceOf[js.Any])
       
       inline def setFragmentIdentifier(value: String): Self = StObject.set(x, "fragmentIdentifier", value.asInstanceOf[js.Any])
       
       inline def setFragmentNode(value: ReaderFragment): Self = StObject.set(x, "fragmentNode", value.asInstanceOf[js.Any])
       
-      inline def setFragmentRef(value: js.Any): Self = StObject.set(x, "fragmentRef", value.asInstanceOf[js.Any])
+      inline def setFragmentRef(value: Any): Self = StObject.set(x, "fragmentRef", value.asInstanceOf[js.Any])
       
       inline def setIdentifierField(value: String): Self = StObject.set(x, "identifierField", value.asInstanceOf[js.Any])
       

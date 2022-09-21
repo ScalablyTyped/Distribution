@@ -15,7 +15,7 @@ trait LookAtTypes extends StObject {
   
   var energy: js.UndefOr[Resource[RESOURCE_ENERGY]] = js.undefined
   
-  var exit: js.UndefOr[js.Any] = js.undefined
+  var exit: js.UndefOr[Any] = js.undefined
   
   var flag: js.UndefOr[Flag] = js.undefined
   
@@ -62,7 +62,7 @@ object LookAtTypes {
     
     inline def setEnergyUndefined: Self = StObject.set(x, "energy", js.undefined)
     
-    inline def setExit(value: js.Any): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+    inline def setExit(value: Any): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     
     inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     

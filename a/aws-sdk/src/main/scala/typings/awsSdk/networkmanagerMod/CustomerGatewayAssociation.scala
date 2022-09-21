@@ -9,22 +9,22 @@ trait CustomerGatewayAssociation extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the customer gateway.
     */
-  var CustomerGatewayArn: js.UndefOr[String] = js.undefined
+  var CustomerGatewayArn: js.UndefOr[typings.awsSdk.networkmanagerMod.CustomerGatewayArn] = js.undefined
   
   /**
     * The ID of the device.
     */
-  var DeviceId: js.UndefOr[String] = js.undefined
+  var DeviceId: js.UndefOr[typings.awsSdk.networkmanagerMod.DeviceId] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: js.UndefOr[String] = js.undefined
+  var GlobalNetworkId: js.UndefOr[typings.awsSdk.networkmanagerMod.GlobalNetworkId] = js.undefined
   
   /**
     * The ID of the link.
     */
-  var LinkId: js.UndefOr[String] = js.undefined
+  var LinkId: js.UndefOr[typings.awsSdk.networkmanagerMod.LinkId] = js.undefined
   
   /**
     * The association state.
@@ -40,19 +40,19 @@ object CustomerGatewayAssociation {
   
   extension [Self <: CustomerGatewayAssociation](x: Self) {
     
-    inline def setCustomerGatewayArn(value: String): Self = StObject.set(x, "CustomerGatewayArn", value.asInstanceOf[js.Any])
+    inline def setCustomerGatewayArn(value: CustomerGatewayArn): Self = StObject.set(x, "CustomerGatewayArn", value.asInstanceOf[js.Any])
     
     inline def setCustomerGatewayArnUndefined: Self = StObject.set(x, "CustomerGatewayArn", js.undefined)
     
-    inline def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
     inline def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
     
-    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
     inline def setGlobalNetworkIdUndefined: Self = StObject.set(x, "GlobalNetworkId", js.undefined)
     
-    inline def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
+    inline def setLinkId(value: LinkId): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
     
     inline def setLinkIdUndefined: Self = StObject.set(x, "LinkId", js.undefined)
     

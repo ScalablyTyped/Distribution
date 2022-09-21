@@ -17,17 +17,17 @@ trait XMLStringifier extends StObject {
   /**
     * Converts attribute value to string
     */
-  var attValue: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var attValue: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Converts the contents of a CDATA node to string
     */
-  var cdata: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var cdata: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Converts the contents of a comment node to string
     */
-  var comment: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var comment: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /** 
     * When prepended to a JS object key, converts the key-value pair 
@@ -71,62 +71,62 @@ trait XMLStringifier extends StObject {
   /**
     * Converts `!ATTLIST` node default value inside DocType to string
     */
-  var dtdAttDefault: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var dtdAttDefault: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Converts `!ATTLIST` node type inside DocType to string
     */
-  var dtdAttType: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var dtdAttType: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Converts `!ELEMENT` node content inside Doctype to string
     */
-  var dtdElementValue: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var dtdElementValue: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Converts `!ENTITY` node content inside Doctype to string
     */
-  var dtdEntityValue: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var dtdEntityValue: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Converts `!NOTATION` node content inside Doctype to string
     */
-  var dtdNData: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var dtdNData: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Converts DocType public identifier to string
     */
-  var dtdPubID: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var dtdPubID: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Converts DocType system identifier to string
     */
-  var dtdSysID: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var dtdSysID: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Converts processing instruction target to string
     */
-  var insTarget: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var insTarget: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Converts processing instruction value to string
     */
-  var insValue: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var insValue: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Converts an element or attribute name to string
     */
-  var name: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var name: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Converts the contents of a raw text node to string
     */
-  var raw: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var raw: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Converts the contents of a text node to string
     */
-  var text: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var text: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Escapes special characters in text.
@@ -136,17 +136,17 @@ trait XMLStringifier extends StObject {
   /**
     * Converts XML encoding to string
     */
-  var xmlEncoding: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var xmlEncoding: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Converts standalone document declaration to string
     */
-  var xmlStandalone: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var xmlStandalone: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
   
   /**
     * Converts XML version to string
     */
-  var xmlVersion: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
+  var xmlVersion: js.UndefOr[js.Function1[/* v */ Any, String]] = js.undefined
 }
 object XMLStringifier {
   
@@ -161,15 +161,15 @@ object XMLStringifier {
     
     inline def setAttEscapeUndefined: Self = StObject.set(x, "attEscape", js.undefined)
     
-    inline def setAttValue(value: /* v */ js.Any => String): Self = StObject.set(x, "attValue", js.Any.fromFunction1(value))
+    inline def setAttValue(value: /* v */ Any => String): Self = StObject.set(x, "attValue", js.Any.fromFunction1(value))
     
     inline def setAttValueUndefined: Self = StObject.set(x, "attValue", js.undefined)
     
-    inline def setCdata(value: /* v */ js.Any => String): Self = StObject.set(x, "cdata", js.Any.fromFunction1(value))
+    inline def setCdata(value: /* v */ Any => String): Self = StObject.set(x, "cdata", js.Any.fromFunction1(value))
     
     inline def setCdataUndefined: Self = StObject.set(x, "cdata", js.undefined)
     
-    inline def setComment(value: /* v */ js.Any => String): Self = StObject.set(x, "comment", js.Any.fromFunction1(value))
+    inline def setComment(value: /* v */ Any => String): Self = StObject.set(x, "comment", js.Any.fromFunction1(value))
     
     inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
@@ -197,51 +197,51 @@ object XMLStringifier {
     
     inline def setConvertTextKeyUndefined: Self = StObject.set(x, "convertTextKey", js.undefined)
     
-    inline def setDtdAttDefault(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdAttDefault", js.Any.fromFunction1(value))
+    inline def setDtdAttDefault(value: /* v */ Any => String): Self = StObject.set(x, "dtdAttDefault", js.Any.fromFunction1(value))
     
     inline def setDtdAttDefaultUndefined: Self = StObject.set(x, "dtdAttDefault", js.undefined)
     
-    inline def setDtdAttType(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdAttType", js.Any.fromFunction1(value))
+    inline def setDtdAttType(value: /* v */ Any => String): Self = StObject.set(x, "dtdAttType", js.Any.fromFunction1(value))
     
     inline def setDtdAttTypeUndefined: Self = StObject.set(x, "dtdAttType", js.undefined)
     
-    inline def setDtdElementValue(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdElementValue", js.Any.fromFunction1(value))
+    inline def setDtdElementValue(value: /* v */ Any => String): Self = StObject.set(x, "dtdElementValue", js.Any.fromFunction1(value))
     
     inline def setDtdElementValueUndefined: Self = StObject.set(x, "dtdElementValue", js.undefined)
     
-    inline def setDtdEntityValue(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdEntityValue", js.Any.fromFunction1(value))
+    inline def setDtdEntityValue(value: /* v */ Any => String): Self = StObject.set(x, "dtdEntityValue", js.Any.fromFunction1(value))
     
     inline def setDtdEntityValueUndefined: Self = StObject.set(x, "dtdEntityValue", js.undefined)
     
-    inline def setDtdNData(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdNData", js.Any.fromFunction1(value))
+    inline def setDtdNData(value: /* v */ Any => String): Self = StObject.set(x, "dtdNData", js.Any.fromFunction1(value))
     
     inline def setDtdNDataUndefined: Self = StObject.set(x, "dtdNData", js.undefined)
     
-    inline def setDtdPubID(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdPubID", js.Any.fromFunction1(value))
+    inline def setDtdPubID(value: /* v */ Any => String): Self = StObject.set(x, "dtdPubID", js.Any.fromFunction1(value))
     
     inline def setDtdPubIDUndefined: Self = StObject.set(x, "dtdPubID", js.undefined)
     
-    inline def setDtdSysID(value: /* v */ js.Any => String): Self = StObject.set(x, "dtdSysID", js.Any.fromFunction1(value))
+    inline def setDtdSysID(value: /* v */ Any => String): Self = StObject.set(x, "dtdSysID", js.Any.fromFunction1(value))
     
     inline def setDtdSysIDUndefined: Self = StObject.set(x, "dtdSysID", js.undefined)
     
-    inline def setInsTarget(value: /* v */ js.Any => String): Self = StObject.set(x, "insTarget", js.Any.fromFunction1(value))
+    inline def setInsTarget(value: /* v */ Any => String): Self = StObject.set(x, "insTarget", js.Any.fromFunction1(value))
     
     inline def setInsTargetUndefined: Self = StObject.set(x, "insTarget", js.undefined)
     
-    inline def setInsValue(value: /* v */ js.Any => String): Self = StObject.set(x, "insValue", js.Any.fromFunction1(value))
+    inline def setInsValue(value: /* v */ Any => String): Self = StObject.set(x, "insValue", js.Any.fromFunction1(value))
     
     inline def setInsValueUndefined: Self = StObject.set(x, "insValue", js.undefined)
     
-    inline def setName(value: /* v */ js.Any => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+    inline def setName(value: /* v */ Any => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setRaw(value: /* v */ js.Any => String): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
+    inline def setRaw(value: /* v */ Any => String): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
     
     inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    inline def setText(value: /* v */ js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    inline def setText(value: /* v */ Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
     
     inline def setTextEscape(value: /* v */ String => String): Self = StObject.set(x, "textEscape", js.Any.fromFunction1(value))
     
@@ -249,15 +249,15 @@ object XMLStringifier {
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setXmlEncoding(value: /* v */ js.Any => String): Self = StObject.set(x, "xmlEncoding", js.Any.fromFunction1(value))
+    inline def setXmlEncoding(value: /* v */ Any => String): Self = StObject.set(x, "xmlEncoding", js.Any.fromFunction1(value))
     
     inline def setXmlEncodingUndefined: Self = StObject.set(x, "xmlEncoding", js.undefined)
     
-    inline def setXmlStandalone(value: /* v */ js.Any => String): Self = StObject.set(x, "xmlStandalone", js.Any.fromFunction1(value))
+    inline def setXmlStandalone(value: /* v */ Any => String): Self = StObject.set(x, "xmlStandalone", js.Any.fromFunction1(value))
     
     inline def setXmlStandaloneUndefined: Self = StObject.set(x, "xmlStandalone", js.undefined)
     
-    inline def setXmlVersion(value: /* v */ js.Any => String): Self = StObject.set(x, "xmlVersion", js.Any.fromFunction1(value))
+    inline def setXmlVersion(value: /* v */ Any => String): Self = StObject.set(x, "xmlVersion", js.Any.fromFunction1(value))
     
     inline def setXmlVersionUndefined: Self = StObject.set(x, "xmlVersion", js.undefined)
   }

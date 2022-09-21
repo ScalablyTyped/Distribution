@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("AMap.CircleMarker")
 @js.native
-class CircleMarker[ExtraData] ()
+open class CircleMarker[ExtraData] ()
   extends StObject
      with typings.amapJsApi.AMap.Circle[ExtraData]

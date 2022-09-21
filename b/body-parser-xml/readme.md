@@ -1,7 +1,7 @@
 
 # Scala.js typings for body-parser-xml
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 ## Library description:
 XML parser middleware for express.js.
@@ -10,10 +10,10 @@ XML parser middleware for express.js.
 | ------------------ | :-------------: |
 | Full name          | body-parser-xml |
 | Keywords           | express, xml, middleware, body-parser |
-| # releases         | 3 |
-| # dependents       | 22 |
-| # downloads        | 725377 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 93374.66666666667 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/fiznool/body-parser-xml#readme)

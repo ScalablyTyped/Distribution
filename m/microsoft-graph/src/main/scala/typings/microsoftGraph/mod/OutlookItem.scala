@@ -19,13 +19,13 @@ trait OutlookItem
   
   /**
     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
-    * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
-    * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
 }
@@ -44,7 +44,7 @@ object OutlookItem {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setChangeKey(value: NullableOption[String]): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
     

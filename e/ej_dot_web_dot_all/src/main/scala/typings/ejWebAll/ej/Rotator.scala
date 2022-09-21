@@ -332,7 +332,7 @@ object Rotator {
     /** Specify the list of data which contains a set of data fields. Each data value is used to render an item for the Rotator.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Sets the delay between the Rotator Items move after the slide transition.
       * @Default {500}
@@ -463,7 +463,7 @@ object Rotator {
     /** The templateId enables to bind multiple customized template items in Rotator.
       * @Default {null}
       */
-    var templateId: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var templateId: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** This event is fired when a thumbnail pager is clicked.
       */
@@ -472,7 +472,7 @@ object Rotator {
     /** Specifies the source for thumbnail elements.
       * @Default {null}
       */
-    var thumbnailSourceID: js.UndefOr[js.Any] = js.undefined
+    var thumbnailSourceID: js.UndefOr[Any] = js.undefined
   }
   object Model {
     
@@ -511,7 +511,7 @@ object Rotator {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -617,11 +617,11 @@ object Rotator {
       
       inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      inline def setTemplateId(value: js.Array[js.Any]): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+      inline def setTemplateId(value: js.Array[Any]): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
       
       inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
       
-      inline def setTemplateIdVarargs(value: js.Any*): Self = StObject.set(x, "templateId", js.Array(value :_*))
+      inline def setTemplateIdVarargs(value: Any*): Self = StObject.set(x, "templateId", js.Array(value*))
       
       inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
@@ -629,7 +629,7 @@ object Rotator {
       
       inline def setThumbItemClickUndefined: Self = StObject.set(x, "thumbItemClick", js.undefined)
       
-      inline def setThumbnailSourceID(value: js.Any): Self = StObject.set(x, "thumbnailSourceID", value.asInstanceOf[js.Any])
+      inline def setThumbnailSourceID(value: Any): Self = StObject.set(x, "thumbnailSourceID", value.asInstanceOf[js.Any])
       
       inline def setThumbnailSourceIDUndefined: Self = StObject.set(x, "thumbnailSourceID", js.undefined)
     }

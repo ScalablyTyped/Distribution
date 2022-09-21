@@ -4,18 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Icon for a web app.
-  */
 trait SchemaWebAppIcon extends StObject {
   
   /**
-    * The actual bytes of the image in a base64url encoded string (c.f.
-    * RFC4648, section 5 &quot;Base 64 Encoding with URL and Filename Safe
-    * Alphabet&quot;).   - The image type can be png or jpg. - The image should
-    * ideally be square. - The image should ideally have a size of 512x512.
+    * The actual bytes of the image in a base64url encoded string (c.f. RFC4648, section 5 "Base 64 Encoding with URL and Filename Safe Alphabet"). - The image type can be png or jpg. - The image should ideally be square. - The image should ideally have a size of 512x512.
     */
-  var imageData: js.UndefOr[String] = js.undefined
+  var imageData: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaWebAppIcon {
   
@@ -27,6 +21,8 @@ object SchemaWebAppIcon {
   extension [Self <: SchemaWebAppIcon](x: Self) {
     
     inline def setImageData(value: String): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
+    
+    inline def setImageDataNull: Self = StObject.set(x, "imageData", null)
     
     inline def setImageDataUndefined: Self = StObject.set(x, "imageData", js.undefined)
   }

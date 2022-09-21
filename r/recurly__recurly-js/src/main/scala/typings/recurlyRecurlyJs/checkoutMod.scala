@@ -59,7 +59,7 @@ object checkoutMod {
       
       inline def setTaxes(value: js.Array[CheckoutPricingStateTax]): Self = StObject.set(x, "taxes", value.asInstanceOf[js.Any])
       
-      inline def setTaxesVarargs(value: CheckoutPricingStateTax*): Self = StObject.set(x, "taxes", js.Array(value :_*))
+      inline def setTaxesVarargs(value: CheckoutPricingStateTax*): Self = StObject.set(x, "taxes", js.Array(value*))
     }
   }
   

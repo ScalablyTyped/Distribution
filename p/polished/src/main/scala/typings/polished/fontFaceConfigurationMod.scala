@@ -30,7 +30,7 @@ object fontFaceConfigurationMod {
     
     var formatHint: js.UndefOr[Boolean] = js.undefined
     
-    var localFonts: js.UndefOr[js.Array[String]] = js.undefined
+    var localFonts: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     var unicodeRange: js.UndefOr[String] = js.undefined
   }
@@ -47,7 +47,7 @@ object fontFaceConfigurationMod {
       
       inline def setFileFormatsUndefined: Self = StObject.set(x, "fileFormats", js.undefined)
       
-      inline def setFileFormatsVarargs(value: String*): Self = StObject.set(x, "fileFormats", js.Array(value :_*))
+      inline def setFileFormatsVarargs(value: String*): Self = StObject.set(x, "fileFormats", js.Array(value*))
       
       inline def setFontDisplay(value: String): Self = StObject.set(x, "fontDisplay", value.asInstanceOf[js.Any])
       
@@ -89,9 +89,11 @@ object fontFaceConfigurationMod {
       
       inline def setLocalFonts(value: js.Array[String]): Self = StObject.set(x, "localFonts", value.asInstanceOf[js.Any])
       
+      inline def setLocalFontsNull: Self = StObject.set(x, "localFonts", null)
+      
       inline def setLocalFontsUndefined: Self = StObject.set(x, "localFonts", js.undefined)
       
-      inline def setLocalFontsVarargs(value: String*): Self = StObject.set(x, "localFonts", js.Array(value :_*))
+      inline def setLocalFontsVarargs(value: String*): Self = StObject.set(x, "localFonts", js.Array(value*))
       
       inline def setUnicodeRange(value: String): Self = StObject.set(x, "unicodeRange", value.asInstanceOf[js.Any])
       

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("yandex-maps", "Layer")
 @js.native
-class Layer protected ()
+open class Layer protected ()
   extends StObject
      with ILayer
      with IParentOnMap

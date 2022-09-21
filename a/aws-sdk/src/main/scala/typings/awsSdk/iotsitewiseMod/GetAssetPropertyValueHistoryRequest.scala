@@ -14,10 +14,10 @@ trait GetAssetPropertyValueHistoryRequest extends StObject {
   /**
     * The inclusive end of the range from which to query historical data, expressed in seconds in Unix epoch time.
     */
-  var endDate: js.UndefOr[Timestamp] = js.undefined
+  var endDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The maximum number of results to be returned per paginated request. Default: 100
+    * The maximum number of results to return for each paginated request. Default: 100
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
   
@@ -27,7 +27,7 @@ trait GetAssetPropertyValueHistoryRequest extends StObject {
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * The property alias that identifies the property, such as an OPC-UA server data stream path (for example, /company/windfarm/3/turbine/7/temperature). For more information, see Mapping industrial data streams to asset properties in the AWS IoT SiteWise User Guide.
+    * The alias that identifies the property, such as an OPC-UA server data stream path (for example, /company/windfarm/3/turbine/7/temperature). For more information, see Mapping industrial data streams to asset properties in the IoT SiteWise User Guide.
     */
   var propertyAlias: js.UndefOr[AssetPropertyAlias] = js.undefined
   
@@ -44,7 +44,7 @@ trait GetAssetPropertyValueHistoryRequest extends StObject {
   /**
     * The exclusive start of the range from which to query historical data, expressed in seconds in Unix epoch time.
     */
-  var startDate: js.UndefOr[Timestamp] = js.undefined
+  var startDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The chronological sorting order of the requested information. Default: ASCENDING 
@@ -64,7 +64,7 @@ object GetAssetPropertyValueHistoryRequest {
     
     inline def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
     
-    inline def setEndDate(value: Timestamp): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
@@ -88,9 +88,9 @@ object GetAssetPropertyValueHistoryRequest {
     
     inline def setQualitiesUndefined: Self = StObject.set(x, "qualities", js.undefined)
     
-    inline def setQualitiesVarargs(value: Quality*): Self = StObject.set(x, "qualities", js.Array(value :_*))
+    inline def setQualitiesVarargs(value: Quality*): Self = StObject.set(x, "qualities", js.Array(value*))
     
-    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     

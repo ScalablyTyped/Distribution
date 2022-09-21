@@ -29,7 +29,7 @@ object GetKeyPairsResult {
     
     inline def setKeyPairsUndefined: Self = StObject.set(x, "keyPairs", js.undefined)
     
-    inline def setKeyPairsVarargs(value: KeyPair*): Self = StObject.set(x, "keyPairs", js.Array(value :_*))
+    inline def setKeyPairsVarargs(value: KeyPair*): Self = StObject.set(x, "keyPairs", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

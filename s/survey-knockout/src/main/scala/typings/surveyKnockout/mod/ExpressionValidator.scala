@@ -6,15 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "ExpressionValidator")
 @js.native
-class ExpressionValidator () extends SurveyValidator {
+open class ExpressionValidator () extends SurveyValidator {
   def this(expression: String) = this()
+  
+  var conditionRunner: ConditionRunner = js.native
   
   /* protected */ def ensureConditionRunner(): Boolean = js.native
   
-  /**
+  /*
     * The expression property.
     */
-  var expression: String = js.native
+  def expression: String = js.native
+  def expression_=(`val`: String): Unit = js.native
   
-  /* protected */ def generateError(res: Boolean, value: js.Any): ValidatorResult = js.native
+  /* protected */ def generateError(res: Boolean, value: Any, name: String): ValidatorResult = js.native
+  
+  var isRunningValue: Boolean = js.native
 }

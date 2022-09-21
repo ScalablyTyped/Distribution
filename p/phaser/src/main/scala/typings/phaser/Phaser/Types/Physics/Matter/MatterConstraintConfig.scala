@@ -51,7 +51,7 @@ trait MatterConstraintConfig extends StObject {
   /**
     * An object reserved for storing plugin-specific properties.
     */
-  var plugin: js.UndefOr[js.Any] = js.undefined
+  var plugin: js.UndefOr[Any] = js.undefined
   
   /**
     * A `Vector` that specifies the offset of the constraint from center of the `constraint.bodyA` if defined, otherwise a world-space position.
@@ -114,7 +114,7 @@ object MatterConstraintConfig {
     
     inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    inline def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
     inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
     

@@ -69,7 +69,7 @@ trait EmbeddedLineChartBuilder extends StObject {
   
   def setNumHeaders(headers: Integer): EmbeddedChartBuilder
   
-  def setOption(option: String, value: js.Any): EmbeddedChartBuilder
+  def setOption(option: String, value: Any): EmbeddedChartBuilder
   
   def setPointStyle(style: PointStyle): EmbeddedLineChartBuilder
   
@@ -126,7 +126,7 @@ object EmbeddedLineChartBuilder {
     setLegendTextStyle: typings.googleAppsScript.GoogleAppsScript.Charts.TextStyle => EmbeddedLineChartBuilder,
     setMergeStrategy: ChartMergeStrategy => EmbeddedChartBuilder,
     setNumHeaders: Integer => EmbeddedChartBuilder,
-    setOption: (String, js.Any) => EmbeddedChartBuilder,
+    setOption: (String, Any) => EmbeddedChartBuilder,
     setPointStyle: PointStyle => EmbeddedLineChartBuilder,
     setPosition: (Integer, Integer, Integer, Integer) => EmbeddedChartBuilder,
     setRange: (Double, Double) => EmbeddedLineChartBuilder,
@@ -199,7 +199,7 @@ object EmbeddedLineChartBuilder {
     
     inline def setSetNumHeaders(value: Integer => EmbeddedChartBuilder): Self = StObject.set(x, "setNumHeaders", js.Any.fromFunction1(value))
     
-    inline def setSetOption(value: (String, js.Any) => EmbeddedChartBuilder): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
+    inline def setSetOption(value: (String, Any) => EmbeddedChartBuilder): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
     
     inline def setSetPointStyle(value: PointStyle => EmbeddedLineChartBuilder): Self = StObject.set(x, "setPointStyle", js.Any.fromFunction1(value))
     

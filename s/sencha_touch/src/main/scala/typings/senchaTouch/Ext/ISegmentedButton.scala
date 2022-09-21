@@ -38,7 +38,7 @@ trait ISegmentedButton
   /** [Method] Returns the value of layout
     * @returns Object
     */
-  var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getLayout: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Gets the currently pressed button s */
   var getPressed: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -87,7 +87,7 @@ trait ISegmentedButton
     */
   var setPressed: js.UndefOr[
     js.Function3[
-      /* button */ js.UndefOr[js.Any], 
+      /* button */ js.UndefOr[Any], 
       /* pressed */ js.UndefOr[Boolean], 
       /* suppressEvents */ js.UndefOr[Boolean], 
       Unit
@@ -141,7 +141,7 @@ object ISegmentedButton {
     
     inline def setGetAllowToggleUndefined: Self = StObject.set(x, "getAllowToggle", js.undefined)
     
-    inline def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+    inline def setGetLayout(value: () => Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
     inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
     
@@ -182,7 +182,7 @@ object ISegmentedButton {
     inline def setSetAllowToggleUndefined: Self = StObject.set(x, "setAllowToggle", js.undefined)
     
     inline def setSetPressed(
-      value: (/* button */ js.UndefOr[js.Any], /* pressed */ js.UndefOr[Boolean], /* suppressEvents */ js.UndefOr[Boolean]) => Unit
+      value: (/* button */ js.UndefOr[Any], /* pressed */ js.UndefOr[Boolean], /* suppressEvents */ js.UndefOr[Boolean]) => Unit
     ): Self = StObject.set(x, "setPressed", js.Any.fromFunction3(value))
     
     inline def setSetPressedButtons(value: /* pressedButtons */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setPressedButtons", js.Any.fromFunction1(value))

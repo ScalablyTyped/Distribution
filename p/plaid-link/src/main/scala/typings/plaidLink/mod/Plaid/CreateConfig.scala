@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CreateConfig extends StObject {
   
-  var clientName: String
+  var clientName: js.UndefOr[String] = js.undefined
   
   var countryCodes: js.UndefOr[js.Array[Country]] = js.undefined
   
-  var env: Environment
+  var env: js.UndefOr[Environment] = js.undefined
   
   var isWebView: js.UndefOr[Boolean] = js.undefined
   
-  var key: String
+  var key: js.UndefOr[String] = js.undefined
   
   var language: js.UndefOr[Language] = js.undefined
   
@@ -36,7 +36,9 @@ trait CreateConfig extends StObject {
   @JSName("onSuccess")
   var onSuccess_Original: OnSuccess
   
-  var product: js.Array[Product]
+  var product: js.UndefOr[js.Array[Product]] = js.undefined
+  
+  var receivedRedirectUri: js.UndefOr[String | Null] = js.undefined
   
   var token: js.UndefOr[String] = js.undefined
   
@@ -48,14 +50,8 @@ trait CreateConfig extends StObject {
 }
 object CreateConfig {
   
-  inline def apply(
-    clientName: String,
-    env: Environment,
-    key: String,
-    onSuccess: (/* public_token */ String, /* metadata */ OnSuccessMetaData) => Unit,
-    product: js.Array[Product]
-  ): CreateConfig = {
-    val __obj = js.Dynamic.literal(clientName = clientName.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onSuccess = js.Any.fromFunction2(onSuccess), product = product.asInstanceOf[js.Any])
+  inline def apply(onSuccess: (/* public_token */ String, /* metadata */ OnSuccessMetaData) => Unit): CreateConfig = {
+    val __obj = js.Dynamic.literal(onSuccess = js.Any.fromFunction2(onSuccess))
     __obj.asInstanceOf[CreateConfig]
   }
   
@@ -63,19 +59,25 @@ object CreateConfig {
     
     inline def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
     
+    inline def setClientNameUndefined: Self = StObject.set(x, "clientName", js.undefined)
+    
     inline def setCountryCodes(value: js.Array[Country]): Self = StObject.set(x, "countryCodes", value.asInstanceOf[js.Any])
     
     inline def setCountryCodesUndefined: Self = StObject.set(x, "countryCodes", js.undefined)
     
-    inline def setCountryCodesVarargs(value: Country*): Self = StObject.set(x, "countryCodes", js.Array(value :_*))
+    inline def setCountryCodesVarargs(value: Country*): Self = StObject.set(x, "countryCodes", js.Array(value*))
     
     inline def setEnv(value: Environment): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     inline def setIsWebView(value: Boolean): Self = StObject.set(x, "isWebView", value.asInstanceOf[js.Any])
     
     inline def setIsWebViewUndefined: Self = StObject.set(x, "isWebView", js.undefined)
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
@@ -113,7 +115,15 @@ object CreateConfig {
     
     inline def setProduct(value: js.Array[Product]): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    inline def setProductVarargs(value: Product*): Self = StObject.set(x, "product", js.Array(value :_*))
+    inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+    
+    inline def setProductVarargs(value: Product*): Self = StObject.set(x, "product", js.Array(value*))
+    
+    inline def setReceivedRedirectUri(value: String): Self = StObject.set(x, "receivedRedirectUri", value.asInstanceOf[js.Any])
+    
+    inline def setReceivedRedirectUriNull: Self = StObject.set(x, "receivedRedirectUri", null)
+    
+    inline def setReceivedRedirectUriUndefined: Self = StObject.set(x, "receivedRedirectUri", js.undefined)
     
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     

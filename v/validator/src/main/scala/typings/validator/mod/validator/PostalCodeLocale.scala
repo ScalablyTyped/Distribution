@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.validator.validatorStrings.BR
   - typings.validator.validatorStrings.CA
   - typings.validator.validatorStrings.CH
+  - typings.validator.validatorStrings.CN
   - typings.validator.validatorStrings.CZ
   - typings.validator.validatorStrings.DE
   - typings.validator.validatorStrings.DK
@@ -76,6 +77,8 @@ object PostalCodeLocale {
   inline def CA: typings.validator.validatorStrings.CA = "CA".asInstanceOf[typings.validator.validatorStrings.CA]
   
   inline def CH: typings.validator.validatorStrings.CH = "CH".asInstanceOf[typings.validator.validatorStrings.CH]
+  
+  inline def CN: typings.validator.validatorStrings.CN = "CN".asInstanceOf[typings.validator.validatorStrings.CN]
   
   inline def CZ: typings.validator.validatorStrings.CZ = "CZ".asInstanceOf[typings.validator.validatorStrings.CZ]
   

@@ -13,5 +13,5 @@ object retryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getRetryConfig(err: GaxiosError[js.Any]): js.Promise[Config | ShouldRetry] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRetryConfig")(err.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config | ShouldRetry]]
+  inline def getRetryConfig(err: GaxiosError[Any]): js.Promise[Config | ShouldRetry] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRetryConfig")(err.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config | ShouldRetry]]
 }

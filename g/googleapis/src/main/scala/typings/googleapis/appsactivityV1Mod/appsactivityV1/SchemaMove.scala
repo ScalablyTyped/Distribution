@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains information about changes in an object&#39;s parents as a result
-  * of a move type event.
-  */
 trait SchemaMove extends StObject {
   
   /**
@@ -33,12 +29,12 @@ object SchemaMove {
     
     inline def setAddedParentsUndefined: Self = StObject.set(x, "addedParents", js.undefined)
     
-    inline def setAddedParentsVarargs(value: SchemaParent*): Self = StObject.set(x, "addedParents", js.Array(value :_*))
+    inline def setAddedParentsVarargs(value: SchemaParent*): Self = StObject.set(x, "addedParents", js.Array(value*))
     
     inline def setRemovedParents(value: js.Array[SchemaParent]): Self = StObject.set(x, "removedParents", value.asInstanceOf[js.Any])
     
     inline def setRemovedParentsUndefined: Self = StObject.set(x, "removedParents", js.undefined)
     
-    inline def setRemovedParentsVarargs(value: SchemaParent*): Self = StObject.set(x, "removedParents", js.Array(value :_*))
+    inline def setRemovedParentsVarargs(value: SchemaParent*): Self = StObject.set(x, "removedParents", js.Array(value*))
   }
 }

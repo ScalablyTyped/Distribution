@@ -1,7 +1,6 @@
 package typings.oracleOraclejet.ojvalidationBaseMod
 
 import typings.oracleOraclejet.ojvalidationBaseMod.Validation.RegisteredConverter
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object IntlConverterUtils {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def dateToLocalIso(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateToLocalIso")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def dateToLocalIso(date: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateToLocalIso")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def getConverterInstance[T](converterOption: String): Converter[T] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getConverterInstance")(converterOption.asInstanceOf[js.Any]).asInstanceOf[Converter[T] | Null]
   inline def getConverterInstance[T](converterOption: Converter[T]): Converter[T] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getConverterInstance")(converterOption.asInstanceOf[js.Any]).asInstanceOf[Converter[T] | Null]
@@ -25,7 +24,7 @@ object IntlConverterUtils {
   
   inline def getLocalTimeZoneOffset(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalTimeZoneOffset")().asInstanceOf[String]
   
-  inline def isoToDate(isoString: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("isoToDate")(isoString.asInstanceOf[js.Any]).asInstanceOf[Date]
+  inline def isoToDate(isoString: String): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("isoToDate")(isoString.asInstanceOf[js.Any]).asInstanceOf[js.Date]
   
-  inline def isoToLocalDate(isoString: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("isoToLocalDate")(isoString.asInstanceOf[js.Any]).asInstanceOf[Date]
+  inline def isoToLocalDate(isoString: String): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("isoToLocalDate")(isoString.asInstanceOf[js.Any]).asInstanceOf[js.Date]
 }

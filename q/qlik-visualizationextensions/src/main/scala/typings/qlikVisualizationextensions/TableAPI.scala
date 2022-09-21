@@ -74,7 +74,7 @@ object TableAPI {
       * Optional. Field object with methods to manipulate the underlying field.
       * Only used for dimensions.
       */
-    var field: js.UndefOr[js.Any] = js.native
+    var field: js.UndefOr[Any] = js.native
     
     /**
       * True indicates if this is the first column for sorting.
@@ -122,7 +122,7 @@ object TableAPI {
       * Optional. Object with number of values in different states.
       * Only used for dimensions.
       */
-    var qStateCounts: js.UndefOr[js.Any] = js.native
+    var qStateCounts: js.UndefOr[Any] = js.native
     
     /**
       * Reverses the sort order for this column.
@@ -137,10 +137,10 @@ object TableAPI {
       * @param [inclMax] - Optional. Set to true to include maximum value.
       * @return - A promise.
       */
-    def selectRange(min: Double, max: Double): IPromise[js.Any] = js.native
-    def selectRange(min: Double, max: Double, inclMin: Boolean): IPromise[js.Any] = js.native
-    def selectRange(min: Double, max: Double, inclMin: Boolean, inclMax: Boolean): IPromise[js.Any] = js.native
-    def selectRange(min: Double, max: Double, inclMin: Unit, inclMax: Boolean): IPromise[js.Any] = js.native
+    def selectRange(min: Double, max: Double): IPromise[Any] = js.native
+    def selectRange(min: Double, max: Double, inclMin: Boolean): IPromise[Any] = js.native
+    def selectRange(min: Double, max: Double, inclMin: Boolean, inclMax: Boolean): IPromise[Any] = js.native
+    def selectRange(min: Double, max: Double, inclMin: Unit, inclMax: Boolean): IPromise[Any] = js.native
   }
   
   trait IQMeasureCell extends StObject {
@@ -192,7 +192,7 @@ object TableAPI {
     /**
       * All cells, in the order they are defined in the properties.
       */
-    var cells: js.Array[js.Any]
+    var cells: js.Array[Any]
     
     /**
       * Dimension cells.
@@ -206,24 +206,24 @@ object TableAPI {
   }
   object IQRow {
     
-    inline def apply(cells: js.Array[js.Any], dimensions: js.Array[IQDimensionCell], measures: js.Array[IQMeasureCell]): IQRow = {
+    inline def apply(cells: js.Array[Any], dimensions: js.Array[IQDimensionCell], measures: js.Array[IQMeasureCell]): IQRow = {
       val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], measures = measures.asInstanceOf[js.Any])
       __obj.asInstanceOf[IQRow]
     }
     
     extension [Self <: IQRow](x: Self) {
       
-      inline def setCells(value: js.Array[js.Any]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+      inline def setCells(value: js.Array[Any]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
-      inline def setCellsVarargs(value: js.Any*): Self = StObject.set(x, "cells", js.Array(value :_*))
+      inline def setCellsVarargs(value: Any*): Self = StObject.set(x, "cells", js.Array(value*))
       
       inline def setDimensions(value: js.Array[IQDimensionCell]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
-      inline def setDimensionsVarargs(value: IQDimensionCell*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+      inline def setDimensionsVarargs(value: IQDimensionCell*): Self = StObject.set(x, "dimensions", js.Array(value*))
       
       inline def setMeasures(value: js.Array[IQMeasureCell]): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
       
-      inline def setMeasuresVarargs(value: IQMeasureCell*): Self = StObject.set(x, "measures", js.Array(value :_*))
+      inline def setMeasuresVarargs(value: IQMeasureCell*): Self = StObject.set(x, "measures", js.Array(value*))
     }
   }
   
@@ -252,9 +252,9 @@ object TableAPI {
       * @param [callback] - Optional. Callback function returning the link to the exported file.
       */
     def exportData(): Unit = js.native
-    def exportData(options: js.Any): Unit = js.native
-    def exportData(options: js.Any, callback: js.Any): Unit = js.native
-    def exportData(options: Unit, callback: js.Any): Unit = js.native
+    def exportData(options: Any): Unit = js.native
+    def exportData(options: Any, callback: Any): Unit = js.native
+    def exportData(options: Unit, callback: Any): Unit = js.native
     
     /**
       * Gets the column number for a given field name.
@@ -266,7 +266,7 @@ object TableAPI {
     /**
       * Gets more data for your qHyperCube.
       */
-    def getMoreData(): js.Any = js.native
+    def getMoreData(): Any = js.native
     
     /**
       * Header information.

@@ -1,21 +1,127 @@
 package typings.domhandler
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
+import typings.domelementtype.mod.ElementType.Script
+import typings.domelementtype.mod.ElementType.Style
+import typings.domelementtype.mod.ElementType.Tag
+import typings.domhandler.libNodeMod.ChildNode
+import typings.domhandler.libNodeMod.ParentNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("domhandler", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("domhandler", JSImport.Default)
+  @js.native
+  /**
+    * @param callback Called once parsing has completed.
+    * @param options Settings for the handler.
+    * @param elementCB Callback whenever a tag is closed.
+    */
+  open class default () extends DomHandler {
+    def this(callback: Callback) = this()
+    def this(callback: Null, options: DomHandlerOptions) = this()
+    def this(callback: Unit, options: DomHandlerOptions) = this()
+    def this(callback: Callback, options: DomHandlerOptions) = this()
+    def this(callback: Null, options: Null, elementCB: ElementCallback) = this()
+    def this(callback: Null, options: Unit, elementCB: ElementCallback) = this()
+    def this(callback: Null, options: DomHandlerOptions, elementCB: ElementCallback) = this()
+    def this(callback: Unit, options: Null, elementCB: ElementCallback) = this()
+    def this(callback: Unit, options: Unit, elementCB: ElementCallback) = this()
+    def this(callback: Unit, options: DomHandlerOptions, elementCB: ElementCallback) = this()
+    def this(callback: Callback, options: Null, elementCB: ElementCallback) = this()
+    def this(callback: Callback, options: Unit, elementCB: ElementCallback) = this()
+    def this(callback: Callback, options: DomHandlerOptions, elementCB: ElementCallback) = this()
+  }
+  
+  @JSImport("domhandler", "CDATA")
+  @js.native
+  open class CDATA protected ()
+    extends typings.domhandler.libNodeMod.CDATA {
+    /**
+      * @param children Children of the node. Only certain node types can have children.
+      */
+    def this(children: js.Array[ChildNode]) = this()
+  }
+  
+  @JSImport("domhandler", "Comment")
+  @js.native
+  open class Comment protected ()
+    extends typings.domhandler.libNodeMod.Comment {
+    /**
+      * @param data The content of the data node
+      */
+    def this(data: String) = this()
+  }
+  
+  @JSImport("domhandler", "DataNode")
+  @js.native
+  abstract class DataNode protected ()
+    extends typings.domhandler.libNodeMod.DataNode {
+    /**
+      * @param data The content of the data node
+      */
+    def this(data: String) = this()
+  }
+  
+  @JSImport("domhandler", "Document")
+  @js.native
+  open class Document protected ()
+    extends typings.domhandler.libNodeMod.Document {
+    /**
+      * @param children Children of the node. Only certain node types can have children.
+      */
+    def this(children: js.Array[ChildNode]) = this()
+  }
+  
   @JSImport("domhandler", "DomHandler")
   @js.native
-  class DomHandler protected () extends StObject {
-    def this(callback: js.Function2[/* error */ js.Any, /* dom */ js.Array[DomElement], js.Any]) = this()
-    def this(
-      callback: js.Function2[/* error */ js.Any, /* dom */ js.Array[DomElement], js.Any],
-      options: DomHandlerOptions
-    ) = this()
+  /**
+    * @param callback Called once parsing has completed.
+    * @param options Settings for the handler.
+    * @param elementCB Callback whenever a tag is closed.
+    */
+  open class DomHandler () extends StObject {
+    def this(callback: Callback) = this()
+    def this(callback: Null, options: DomHandlerOptions) = this()
+    def this(callback: Unit, options: DomHandlerOptions) = this()
+    def this(callback: Callback, options: DomHandlerOptions) = this()
+    def this(callback: Null, options: Null, elementCB: ElementCallback) = this()
+    def this(callback: Null, options: Unit, elementCB: ElementCallback) = this()
+    def this(callback: Null, options: DomHandlerOptions, elementCB: ElementCallback) = this()
+    def this(callback: Unit, options: Null, elementCB: ElementCallback) = this()
+    def this(callback: Unit, options: Unit, elementCB: ElementCallback) = this()
+    def this(callback: Unit, options: DomHandlerOptions, elementCB: ElementCallback) = this()
+    def this(callback: Callback, options: Null, elementCB: ElementCallback) = this()
+    def this(callback: Callback, options: Unit, elementCB: ElementCallback) = this()
+    def this(callback: Callback, options: DomHandlerOptions, elementCB: ElementCallback) = this()
+    
+    /* protected */ def addNode(node: ChildNode): Unit = js.native
+    
+    /** Called once parsing has completed. */
+    /* private */ val callback: Any = js.native
+    
+    /** The elements of the DOM */
+    var dom: js.Array[ChildNode] = js.native
+    
+    /** Indicated whether parsing has been completed. */
+    /* private */ var done: Any = js.native
+    
+    /** Callback whenever a tag is closed. */
+    /* private */ val elementCB: Any = js.native
+    
+    /* protected */ def handleCallback(): Unit = js.native
+    /* protected */ def handleCallback(error: js.Error): Unit = js.native
+    
+    /** A data node that is still being written to. */
+    /* protected */ var lastNode: typings.domhandler.libNodeMod.DataNode | Null = js.native
+    
+    def oncdataend(): Unit = js.native
     
     def oncdatastart(): Unit = js.native
     
@@ -25,118 +131,129 @@ object mod {
     
     def oncommentend(): Unit = js.native
     
-    /***
-      * Signals the handler that parsing is done
-      */
     def onend(): Unit = js.native
     
-    def onerror(error: Error): Unit = js.native
+    def onerror(error: js.Error): Unit = js.native
     
     def onopentag(name: String, attribs: StringDictionary[String]): Unit = js.native
     
-    def onparserinit(parser: js.Any): Unit = js.native
+    def onparserinit(parser: ParserInterface): Unit = js.native
     
     def onprocessinginstruction(name: String, data: String): Unit = js.native
     
-    /***
-      * Resets the handler back to starting state
-      */
     def onreset(): Unit = js.native
     
     def ontext(data: String): Unit = js.native
+    
+    /** Settings for the handler. */
+    /* private */ val options: Any = js.native
+    
+    /** Reference to the parser instance. Used for location information. */
+    /* private */ var parser: Any = js.native
+    
+    /** The root element for the DOM */
+    var root: typings.domhandler.libNodeMod.Document = js.native
+    
+    /** Stack of open tags. */
+    /* protected */ var tagStack: js.Array[ParentNode] = js.native
   }
   
-  trait DomElement extends StObject {
-    
-    var attribs: js.UndefOr[StringDictionary[String]] = js.undefined
-    
-    var children: js.UndefOr[js.Array[DomElement]] = js.undefined
-    
-    var data: js.UndefOr[js.Any] = js.undefined
-    
-    var name: js.UndefOr[String] = js.undefined
-    
-    var next: js.UndefOr[DomElement] = js.undefined
-    
-    var parent: js.UndefOr[DomElement] = js.undefined
-    
-    var prev: js.UndefOr[DomElement] = js.undefined
-    
-    var `type`: js.UndefOr[String] = js.undefined
+  @JSImport("domhandler", "Element")
+  @js.native
+  open class Element protected ()
+    extends typings.domhandler.libNodeMod.Element {
+    /**
+      * @param name Name of the tag, eg. `div`, `span`.
+      * @param attribs Object mapping attribute names to attribute values.
+      * @param children Children of the node.
+      */
+    def this(name: String, attribs: StringDictionary[String]) = this()
+    def this(name: String, attribs: StringDictionary[String], children: js.Array[ChildNode]) = this()
+    def this(name: String, attribs: StringDictionary[String], children: js.Array[ChildNode], `type`: Script) = this()
+    def this(name: String, attribs: StringDictionary[String], children: js.Array[ChildNode], `type`: Style) = this()
+    def this(name: String, attribs: StringDictionary[String], children: js.Array[ChildNode], `type`: Tag) = this()
+    def this(name: String, attribs: StringDictionary[String], children: Unit, `type`: Script) = this()
+    def this(name: String, attribs: StringDictionary[String], children: Unit, `type`: Style) = this()
+    def this(name: String, attribs: StringDictionary[String], children: Unit, `type`: Tag) = this()
   }
-  object DomElement {
-    
-    inline def apply(): DomElement = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[DomElement]
-    }
-    
-    extension [Self <: DomElement](x: Self) {
-      
-      inline def setAttribs(value: StringDictionary[String]): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
-      
-      inline def setAttribsUndefined: Self = StObject.set(x, "attribs", js.undefined)
-      
-      inline def setChildren(value: js.Array[DomElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setChildrenVarargs(value: DomElement*): Self = StObject.set(x, "children", js.Array(value :_*))
-      
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setNext(value: DomElement): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
-      
-      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
-      
-      inline def setParent(value: DomElement): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
-      
-      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
-      
-      inline def setPrev(value: DomElement): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
-      
-      inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-    }
+  
+  @JSImport("domhandler", "Node")
+  @js.native
+  abstract class Node ()
+    extends typings.domhandler.libNodeMod.Node
+  
+  @JSImport("domhandler", "NodeWithChildren")
+  @js.native
+  abstract class NodeWithChildren protected ()
+    extends typings.domhandler.libNodeMod.NodeWithChildren {
+    /**
+      * @param children Children of the node. Only certain node types can have children.
+      */
+    def this(children: js.Array[ChildNode]) = this()
   }
+  
+  @JSImport("domhandler", "ProcessingInstruction")
+  @js.native
+  open class ProcessingInstruction protected ()
+    extends typings.domhandler.libNodeMod.ProcessingInstruction {
+    def this(name: String, data: String) = this()
+  }
+  
+  @JSImport("domhandler", "Text")
+  @js.native
+  open class Text protected ()
+    extends typings.domhandler.libNodeMod.Text {
+    /**
+      * @param data The content of the data node
+      */
+    def this(data: String) = this()
+  }
+  
+  inline def cloneNode[T /* <: typings.domhandler.libNodeMod.Node */](node: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneNode")(node.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def cloneNode[T /* <: typings.domhandler.libNodeMod.Node */](node: T, recursive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneNode")(node.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def hasChildren(node: typings.domhandler.libNodeMod.Node): /* is domhandler.domhandler/lib/node.ParentNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasChildren")(node.asInstanceOf[js.Any]).asInstanceOf[/* is domhandler.domhandler/lib/node.ParentNode */ Boolean]
+  
+  inline def isCDATA(node: typings.domhandler.libNodeMod.Node): /* is domhandler.domhandler/lib/node.CDATA */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCDATA")(node.asInstanceOf[js.Any]).asInstanceOf[/* is domhandler.domhandler/lib/node.CDATA */ Boolean]
+  
+  inline def isComment(node: typings.domhandler.libNodeMod.Node): /* is domhandler.domhandler/lib/node.Comment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComment")(node.asInstanceOf[js.Any]).asInstanceOf[/* is domhandler.domhandler/lib/node.Comment */ Boolean]
+  
+  inline def isDirective(node: typings.domhandler.libNodeMod.Node): /* is domhandler.domhandler/lib/node.ProcessingInstruction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDirective")(node.asInstanceOf[js.Any]).asInstanceOf[/* is domhandler.domhandler/lib/node.ProcessingInstruction */ Boolean]
+  
+  inline def isDocument(node: typings.domhandler.libNodeMod.Node): /* is domhandler.domhandler/lib/node.Document */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDocument")(node.asInstanceOf[js.Any]).asInstanceOf[/* is domhandler.domhandler/lib/node.Document */ Boolean]
+  
+  inline def isTag(node: typings.domhandler.libNodeMod.Node): /* is domhandler.domhandler/lib/node.Element */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTag")(node.asInstanceOf[js.Any]).asInstanceOf[/* is domhandler.domhandler/lib/node.Element */ Boolean]
+  
+  inline def isText(node: typings.domhandler.libNodeMod.Node): /* is domhandler.domhandler/lib/node.Text */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isText")(node.asInstanceOf[js.Any]).asInstanceOf[/* is domhandler.domhandler/lib/node.Text */ Boolean]
+  
+  type Callback = js.Function2[/* error */ js.Error | Null, /* dom */ js.Array[ChildNode], Unit]
   
   trait DomHandlerOptions extends StObject {
     
-    /***
-      * Indicates whether the whitespace in text nodes should be normalized
-      * (= all whitespace should be replaced with single spaces). The default value is "false".
-      */
-    var normalizeWhitespace: js.UndefOr[Boolean] = js.undefined
-    
-    /***
-      * Adds DOM level 1 properties to all elements.
-      */
-    var withDomLvl1: js.UndefOr[Boolean] = js.undefined
-    
-    /***
-      * Indicates whether a endIndex property will be added to nodes.
-      * When the parser is used in a non-streaming fashion, endIndex is an integer
+    /**
+      * Add an `endIndex` property to nodes.
+      * When the parser is used in a non-streaming fashion, `endIndex` is an integer
       * indicating the position of the end of the node in the document.
-      * The default value is "false".
+      *
+      * @default false
       */
     var withEndIndices: js.UndefOr[Boolean] = js.undefined
     
-    /***
-      * Indicates whether a startIndex property will be added to nodes.
-      * When the parser is used in a non-streaming fashion, startIndex is an integer
+    /**
+      * Add a `startIndex` property to nodes.
+      * When the parser is used in a non-streaming fashion, `startIndex` is an integer
       * indicating the position of the start of the node in the document.
-      * The default value is "false".
+      *
+      * @default false
       */
     var withStartIndices: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Treat the markup as XML.
+      *
+      * @default false
+      */
+    var xmlMode: js.UndefOr[Boolean] = js.undefined
   }
   object DomHandlerOptions {
     
@@ -147,14 +264,6 @@ object mod {
     
     extension [Self <: DomHandlerOptions](x: Self) {
       
-      inline def setNormalizeWhitespace(value: Boolean): Self = StObject.set(x, "normalizeWhitespace", value.asInstanceOf[js.Any])
-      
-      inline def setNormalizeWhitespaceUndefined: Self = StObject.set(x, "normalizeWhitespace", js.undefined)
-      
-      inline def setWithDomLvl1(value: Boolean): Self = StObject.set(x, "withDomLvl1", value.asInstanceOf[js.Any])
-      
-      inline def setWithDomLvl1Undefined: Self = StObject.set(x, "withDomLvl1", js.undefined)
-      
       inline def setWithEndIndices(value: Boolean): Self = StObject.set(x, "withEndIndices", value.asInstanceOf[js.Any])
       
       inline def setWithEndIndicesUndefined: Self = StObject.set(x, "withEndIndices", js.undefined)
@@ -162,53 +271,37 @@ object mod {
       inline def setWithStartIndices(value: Boolean): Self = StObject.set(x, "withStartIndices", value.asInstanceOf[js.Any])
       
       inline def setWithStartIndicesUndefined: Self = StObject.set(x, "withStartIndices", js.undefined)
+      
+      inline def setXmlMode(value: Boolean): Self = StObject.set(x, "xmlMode", value.asInstanceOf[js.Any])
+      
+      inline def setXmlModeUndefined: Self = StObject.set(x, "xmlMode", js.undefined)
     }
   }
   
-  trait Element
-    extends StObject
-       with DomElement {
-    
-    @JSName("name")
-    var name_Element: String
-  }
-  object Element {
-    
-    inline def apply(name: String): Element = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Element]
-    }
-    
-    extension [Self <: Element](x: Self) {
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    }
-  }
+  type ElementCallback = js.Function1[/* element */ typings.domhandler.libNodeMod.Element, Unit]
   
-  trait Node
-    extends StObject
-       with DomElement {
+  trait ParserInterface extends StObject {
     
-    val firstChild: DomElement
+    var endIndex: Double | Null
     
-    val lastChild: DomElement
-    
-    val nodeType: Double
+    var startIndex: Double | Null
   }
-  object Node {
+  object ParserInterface {
     
-    inline def apply(firstChild: DomElement, lastChild: DomElement, nodeType: Double): Node = {
-      val __obj = js.Dynamic.literal(firstChild = firstChild.asInstanceOf[js.Any], lastChild = lastChild.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Node]
+    inline def apply(): ParserInterface = {
+      val __obj = js.Dynamic.literal(endIndex = null, startIndex = null)
+      __obj.asInstanceOf[ParserInterface]
     }
     
-    extension [Self <: Node](x: Self) {
+    extension [Self <: ParserInterface](x: Self) {
       
-      inline def setFirstChild(value: DomElement): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
+      inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
       
-      inline def setLastChild(value: DomElement): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
+      inline def setEndIndexNull: Self = StObject.set(x, "endIndex", null)
       
-      inline def setNodeType(value: Double): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+      
+      inline def setStartIndexNull: Self = StObject.set(x, "startIndex", null)
     }
   }
 }

@@ -21,7 +21,7 @@ object weightedMod {
   
   @JSImport("weighted/lib/weighted", "select")
   @js.native
-  val select: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof weighted */ js.Any = js.native
+  val select: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof weighted */ Any = js.native
   
   type RandomFunc = js.Function0[Double]
 }

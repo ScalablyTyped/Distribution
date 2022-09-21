@@ -9,10 +9,10 @@ trait AccordionOptions
   extends StObject
      with AccordionEvents {
   
-  var active: js.UndefOr[js.Any] = js.undefined
+  var active: js.UndefOr[Any] = js.undefined
   
   // boolean or number
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   // boolean, number, string or object
   var collapsible: js.UndefOr[Boolean] = js.undefined
@@ -25,7 +25,7 @@ trait AccordionOptions
   
   var heightStyle: js.UndefOr[String] = js.undefined
   
-  var icons: js.UndefOr[js.Any] = js.undefined
+  var icons: js.UndefOr[Any] = js.undefined
 }
 object AccordionOptions {
   
@@ -36,11 +36,11 @@ object AccordionOptions {
   
   extension [Self <: AccordionOptions](x: Self) {
     
-    inline def setActive(value: js.Any): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Any): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -64,7 +64,7 @@ object AccordionOptions {
     
     inline def setHeightStyleUndefined: Self = StObject.set(x, "heightStyle", js.undefined)
     
-    inline def setIcons(value: js.Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
   }

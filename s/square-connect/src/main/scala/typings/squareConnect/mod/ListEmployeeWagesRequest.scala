@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ListEmployeeWagesRequest")
 @js.native
-class ListEmployeeWagesRequest () extends StObject {
+open class ListEmployeeWagesRequest () extends StObject {
   
   /**
     * Pointer to the next page of Employee Wage results to fetch.

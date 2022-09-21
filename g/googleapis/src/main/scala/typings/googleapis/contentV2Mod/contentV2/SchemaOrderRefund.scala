@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaOrderRefund extends StObject {
   
   /**
-    * The actor that created the refund.
+    * The actor that created the refund. Acceptable values are: - "`customer`" - "`googleBot`" - "`googleCustomerService`" - "`googlePayments`" - "`googleSabre`" - "`merchant`"
     */
-  var actor: js.UndefOr[String] = js.undefined
+  var actor: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The amount that is refunded.
@@ -19,17 +19,17 @@ trait SchemaOrderRefund extends StObject {
   /**
     * Date on which the item has been created, in ISO 8601 format.
     */
-  var creationDate: js.UndefOr[String] = js.undefined
+  var creationDate: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The reason for the refund.
+    * The reason for the refund. Acceptable values are: - "`adjustment`" - "`autoPostInternal`" - "`autoPostInvalidBillingAddress`" - "`autoPostNoInventory`" - "`autoPostPriceError`" - "`autoPostUndeliverableShippingAddress`" - "`couponAbuse`" - "`courtesyAdjustment`" - "`customerCanceled`" - "`customerDiscretionaryReturn`" - "`customerInitiatedMerchantCancel`" - "`customerSupportRequested`" - "`deliveredLateByCarrier`" - "`deliveredTooLate`" - "`expiredItem`" - "`failToPushOrderGoogleError`" - "`failToPushOrderMerchantError`" - "`failToPushOrderMerchantFulfillmentError`" - "`failToPushOrderToMerchant`" - "`failToPushOrderToMerchantOutOfStock`" - "`feeAdjustment`" - "`invalidCoupon`" - "`lateShipmentCredit`" - "`malformedShippingAddress`" - "`merchantDidNotShipOnTime`" - "`noInventory`" - "`orderTimeout`" - "`other`" - "`paymentAbuse`" - "`paymentDeclined`" - "`priceAdjustment`" - "`priceError`" - "`productArrivedDamaged`" - "`productNotAsDescribed`" - "`promoReallocation`" - "`qualityNotAsExpected`" - "`returnRefundAbuse`" - "`shippingCostAdjustment`" - "`shippingPriceError`" - "`taxAdjustment`" - "`taxError`" - "`undeliverableShippingAddress`" - "`unsupportedPoBoxAddress`" - "`wrongProductShipped`"
     */
-  var reason: js.UndefOr[String] = js.undefined
+  var reason: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The explanation of the reason.
     */
-  var reasonText: js.UndefOr[String] = js.undefined
+  var reasonText: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrderRefund {
   
@@ -42,6 +42,8 @@ object SchemaOrderRefund {
     
     inline def setActor(value: String): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
+    inline def setActorNull: Self = StObject.set(x, "actor", null)
+    
     inline def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
     
     inline def setAmount(value: SchemaPrice): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
@@ -50,11 +52,17 @@ object SchemaOrderRefund {
     
     inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
+    inline def setCreationDateNull: Self = StObject.set(x, "creationDate", null)
+    
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
+    inline def setReasonNull: Self = StObject.set(x, "reason", null)
+    
     inline def setReasonText(value: String): Self = StObject.set(x, "reasonText", value.asInstanceOf[js.Any])
+    
+    inline def setReasonTextNull: Self = StObject.set(x, "reasonText", null)
     
     inline def setReasonTextUndefined: Self = StObject.set(x, "reasonText", js.undefined)
     

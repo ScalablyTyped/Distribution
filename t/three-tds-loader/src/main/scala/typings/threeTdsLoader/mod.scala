@@ -1,12 +1,10 @@
 package typings.threeTdsLoader
 
-import typings.std.ArrayBuffer
-import typings.std.DataView
 import typings.std.ErrorEvent
 import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.three.bufferGeometryMod.BufferGeometry
-import typings.three.geometryMod.Geometry
+import typings.three.eventDispatcherMod.Event
 import typings.three.materialMod.Material
 import typings.three.mod.Color
 import typings.three.mod.Mesh
@@ -21,7 +19,7 @@ object mod {
   
   @JSImport("three-tds-loader", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with TDSLoader {
     def this(three: TypeofTHREE) = this()
@@ -54,21 +52,21 @@ object mod {
       * @param onProgress onProgress callback.
       * @param onError onError callback.
       */
-    def load(url: String, onLoad: js.Function1[/* object3D */ Object3D, Unit]): Unit = js.native
+    def load(url: String, onLoad: js.Function1[/* object3D */ Object3D[Event], Unit]): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* object3D */ Object3D, Unit],
+      onLoad: js.Function1[/* object3D */ Object3D[Event], Unit],
       onProgress: js.Function1[/* progress */ ProgressEvent[EventTarget], Unit]
     ): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* object3D */ Object3D, Unit],
+      onLoad: js.Function1[/* object3D */ Object3D[Event], Unit],
       onProgress: js.Function1[/* progress */ ProgressEvent[EventTarget], Unit],
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* object3D */ Object3D, Unit],
+      onLoad: js.Function1[/* object3D */ Object3D[Event], Unit],
       onProgress: Unit,
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
@@ -79,7 +77,7 @@ object mod {
       * @param data Dataview.
       * @param chunk Data chunk.
       */
-    def nextChunk(data: DataView, chunk: js.Object): Double = js.native
+    def nextChunk(data: js.typedarray.DataView, chunk: js.Object): Double = js.native
     
     /**
       * Parse arraybuffer data and load 3ds file.
@@ -88,7 +86,7 @@ object mod {
       * @param path Path for external resources.
       * @return Group loaded from 3ds file.
       */
-    def parse(arraybuffer: ArrayBuffer, path: String): Object3D = js.native
+    def parse(arraybuffer: js.typedarray.ArrayBuffer, path: String): Object3D[Event] = js.native
     
     /**
       * Read byte value.
@@ -96,7 +94,7 @@ object mod {
       * @param data Dataview to read data from.
       * @return Data read from the dataview.
       */
-    def readByte(data: DataView): Double = js.native
+    def readByte(data: js.typedarray.DataView): Double = js.native
     
     /**
       * Read next chunk of data.
@@ -104,7 +102,7 @@ object mod {
       * @param data Dataview.
       * @return Chunk of data read.
       */
-    def readChunk(data: DataView): js.Object = js.native
+    def readChunk(data: js.typedarray.DataView): js.Object = js.native
     
     /**
       * Read a color value.
@@ -112,7 +110,7 @@ object mod {
       * @param data Dataview.
       * @return Color value read..
       */
-    def readColor(data: DataView): Color = js.native
+    def readColor(data: js.typedarray.DataView): Color = js.native
     
     /**
       * Read 64 bit unsigned integer value.
@@ -120,7 +118,7 @@ object mod {
       * @param data Dataview to read data from.
       * @return Data read from the dataview.
       */
-    def readDWord(data: DataView): Double = js.native
+    def readDWord(data: js.typedarray.DataView): Double = js.native
     
     /**
       * Read face array data chunk.
@@ -128,14 +126,14 @@ object mod {
       * @param data Dataview in use.
       * @param mesh Mesh to be filled with the data read.
       */
-    def readFaceArray(data: DataView, mesh: Mesh[Geometry | BufferGeometry, Material | js.Array[Material]]): Unit = js.native
+    def readFaceArray(data: js.typedarray.DataView, mesh: Mesh[BufferGeometry, Material | js.Array[Material]]): Unit = js.native
     
     /**
       * Decode file content to read 3ds data.
       *
       * @param arraybuffer Arraybuffer data to be loaded.
       */
-    def readFile(arraybuffer: ArrayBuffer, path: String): Unit = js.native
+    def readFile(arraybuffer: js.typedarray.ArrayBuffer, path: String): Unit = js.native
     
     /**
       * Read 32 bit float value.
@@ -143,7 +141,7 @@ object mod {
       * @param data Dataview to read data from.
       * @return Data read from the dataview.
       */
-    def readFloat(data: DataView): Double = js.native
+    def readFloat(data: js.typedarray.DataView): Double = js.native
     
     /**
       * Read 32 bit signed integer value.
@@ -151,7 +149,7 @@ object mod {
       * @param data Dataview to read data from.
       * @return Data read from the dataview.
       */
-    def readInt(data: DataView): Double = js.native
+    def readInt(data: js.typedarray.DataView): Double = js.native
     
     /**
       * Read texture map data chunk.
@@ -159,14 +157,14 @@ object mod {
       * @param data Dataview in use.
       * @return Texture read from this data chunk.
       */
-    def readMap(data: DataView, path: String): Texture = js.native
+    def readMap(data: js.typedarray.DataView, path: String): Texture = js.native
     
     /**
       * Read material data chunk and add it to the material list.
       *
       * @param data Dataview in use.
       */
-    def readMaterialEntry(data: DataView, path: String): Unit = js.native
+    def readMaterialEntry(data: js.typedarray.DataView, path: String): Unit = js.native
     
     /**
       * Read material group data chunk.
@@ -174,28 +172,28 @@ object mod {
       * @param data Dataview in use.
       * @return object with name and index of the object.
       */
-    def readMaterialGroup(data: DataView): js.Object = js.native
+    def readMaterialGroup(data: js.typedarray.DataView): js.Object = js.native
     
     /**
       * Read mesh data chunk.
       *
       * @param data Dataview in use.
       */
-    def readMesh(data: DataView): Unit = js.native
+    def readMesh(data: js.typedarray.DataView): Unit = js.native
     
     /**
       * Read mesh data chunk.
       *
       * @param data Dataview in use.
       */
-    def readMeshData(data: DataView, path: String): Unit = js.native
+    def readMeshData(data: js.typedarray.DataView, path: String): Unit = js.native
     
     /**
       * Read named object chunk.
       *
       * @param data Dataview in use.
       */
-    def readNamedobject(data: DataView): Unit = js.native
+    def readNamedobject(data: js.typedarray.DataView): Unit = js.native
     
     /**
       * Read 16 bit signed integer value.
@@ -203,7 +201,7 @@ object mod {
       * @param data Dataview to read data from.
       * @return Data read from the dataview.
       */
-    def readShort(data: DataView): Double = js.native
+    def readShort(data: js.typedarray.DataView): Double = js.native
     
     /**
       * Read string value.
@@ -212,7 +210,7 @@ object mod {
       * @param maxLength Max size of the string to be read.
       * @return Data read from the dataview.
       */
-    def readString(data: DataView, maxLength: Double): String = js.native
+    def readString(data: js.typedarray.DataView, maxLength: Double): String = js.native
     
     /**
       * Read 32 bit unsigned integer value.
@@ -220,7 +218,7 @@ object mod {
       * @param data Dataview to read data from.
       * @return Data read from the dataview.
       */
-    def readWord(data: DataView): Double = js.native
+    def readWord(data: js.typedarray.DataView): Double = js.native
     
     /**
       * Reset dataview position.

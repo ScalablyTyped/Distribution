@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardItemData")
 @js.native
-class ASPxClientDashboardItemData ()
+open class ASPxClientDashboardItemData ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardItemData

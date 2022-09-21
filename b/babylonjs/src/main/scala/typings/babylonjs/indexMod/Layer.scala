@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "Layer")
 @js.native
-class Layer protected ()
+open class Layer protected ()
   extends typings.babylonjs.layersIndexMod.Layer {
   /**
     * Instantiates a new layer.

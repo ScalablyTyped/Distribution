@@ -2,6 +2,7 @@ package typings.restler
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,19 +30,19 @@ object mod extends Shortcut {
       *  HTTP Agent instance to use. If not defined globalAgent will be used. If false opts out of connection pooling with an Agent, defaults request to Connection: close.
       * @type {any}
       */
-    var agent: js.UndefOr[js.Any] = js.undefined
+    var agent: js.UndefOr[Any] = js.undefined
     
     /**
       * A http.Client instance if you want to reuse or implement some kind of connection pooling.
       * @type {any}
       */
-    var client: js.UndefOr[js.Any] = js.undefined
+    var client: js.UndefOr[Any] = js.undefined
     
     /**
       * Data to be added to the body of the request.
       * @type {any}
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * Encoding of the response body
@@ -83,7 +84,7 @@ object mod extends Shortcut {
       * A function that will be called on the returned data. Use any of predefined <code>restler.parsers</code>.
       * @type {any}
       */
-    var parser: js.UndefOr[js.Any] = js.undefined
+    var parser: js.UndefOr[Any] = js.undefined
     
     /**
       * Basic auth password.
@@ -95,7 +96,7 @@ object mod extends Shortcut {
       * Query string variables as a javascript object, will override the querystring in the URL.
       * @type {any}
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /**
       * If true, the server certificate is verified against the list of supplied CAs.
@@ -120,7 +121,7 @@ object mod extends Shortcut {
       * Options for xml2js.
       * @type {any}
       */
-    var xml2js: js.UndefOr[js.Any] = js.undefined
+    var xml2js: js.UndefOr[Any] = js.undefined
   }
   object RestlerOptions {
     
@@ -135,15 +136,15 @@ object mod extends Shortcut {
       
       inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
       
-      inline def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      inline def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
       inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -171,7 +172,7 @@ object mod extends Shortcut {
       
       inline def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
       
-      inline def setParser(value: js.Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      inline def setParser(value: Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
       inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       
@@ -179,7 +180,7 @@ object mod extends Shortcut {
       
       inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -195,7 +196,7 @@ object mod extends Shortcut {
       
       inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       
-      inline def setXml2js(value: js.Any): Self = StObject.set(x, "xml2js", value.asInstanceOf[js.Any])
+      inline def setXml2js(value: Any): Self = StObject.set(x, "xml2js", value.asInstanceOf[js.Any])
       
       inline def setXml2jsUndefined: Self = StObject.set(x, "xml2js", js.undefined)
     }
@@ -220,13 +221,21 @@ object mod extends Shortcut {
       */
     def on(
       eventName: String,
-      listener: js.Function2[/* data */ js.UndefOr[js.Any], /* response */ js.UndefOr[ServerResponse], Unit]
+      listener: js.Function2[
+          /* data */ js.UndefOr[Any], 
+          /* response */ js.UndefOr[ServerResponse[IncomingMessage]], 
+          Unit
+        ]
     ): RestlerResult
   }
   object RestlerResult {
     
     inline def apply(
-      on: (String, js.Function2[/* data */ js.UndefOr[js.Any], /* response */ js.UndefOr[ServerResponse], Unit]) => RestlerResult
+      on: (String, js.Function2[
+          /* data */ js.UndefOr[Any], 
+          /* response */ js.UndefOr[ServerResponse[IncomingMessage]], 
+          Unit
+        ]) => RestlerResult
     ): RestlerResult = {
       val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on))
       __obj.asInstanceOf[RestlerResult]
@@ -235,7 +244,11 @@ object mod extends Shortcut {
     extension [Self <: RestlerResult](x: Self) {
       
       inline def setOn(
-        value: (String, js.Function2[/* data */ js.UndefOr[js.Any], /* response */ js.UndefOr[ServerResponse], Unit]) => RestlerResult
+        value: (String, js.Function2[
+              /* data */ js.UndefOr[Any], 
+              /* response */ js.UndefOr[ServerResponse[IncomingMessage]], 
+              Unit
+            ]) => RestlerResult
       ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
   }
@@ -282,10 +295,10 @@ object mod extends Shortcut {
       * @return {RestlerResult}  Result.
       */
     def json(url: String): RestlerResult = js.native
-    def json(url: String, data: js.Any): RestlerResult = js.native
-    def json(url: String, data: js.Any, options: Unit, method: String): RestlerResult = js.native
-    def json(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
-    def json(url: String, data: js.Any, options: RestlerOptions, method: String): RestlerResult = js.native
+    def json(url: String, data: Any): RestlerResult = js.native
+    def json(url: String, data: Any, options: Unit, method: String): RestlerResult = js.native
+    def json(url: String, data: Any, options: RestlerOptions): RestlerResult = js.native
+    def json(url: String, data: Any, options: RestlerOptions, method: String): RestlerResult = js.native
     def json(url: String, data: Unit, options: Unit, method: String): RestlerResult = js.native
     def json(url: String, data: Unit, options: RestlerOptions): RestlerResult = js.native
     def json(url: String, data: Unit, options: RestlerOptions, method: String): RestlerResult = js.native
@@ -307,8 +320,8 @@ object mod extends Shortcut {
       * @return {RestlerResult}  Result.
       */
     def patchJson(url: String): RestlerResult = js.native
-    def patchJson(url: String, data: js.Any): RestlerResult = js.native
-    def patchJson(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
+    def patchJson(url: String, data: Any): RestlerResult = js.native
+    def patchJson(url: String, data: Any, options: RestlerOptions): RestlerResult = js.native
     def patchJson(url: String, data: Unit, options: RestlerOptions): RestlerResult = js.native
     
     /**
@@ -328,8 +341,8 @@ object mod extends Shortcut {
       * @return {RestlerResult}  Result.
       */
     def postJson(url: String): RestlerResult = js.native
-    def postJson(url: String, data: js.Any): RestlerResult = js.native
-    def postJson(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
+    def postJson(url: String, data: Any): RestlerResult = js.native
+    def postJson(url: String, data: Any, options: RestlerOptions): RestlerResult = js.native
     def postJson(url: String, data: Unit, options: RestlerOptions): RestlerResult = js.native
     
     /**
@@ -349,8 +362,8 @@ object mod extends Shortcut {
       * @return {RestlerResult}  Result.
       */
     def putJson(url: String): RestlerResult = js.native
-    def putJson(url: String, data: js.Any): RestlerResult = js.native
-    def putJson(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
+    def putJson(url: String, data: Any): RestlerResult = js.native
+    def putJson(url: String, data: Any, options: RestlerOptions): RestlerResult = js.native
     def putJson(url: String, data: Unit, options: RestlerOptions): RestlerResult = js.native
     
     /**

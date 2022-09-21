@@ -24,6 +24,6 @@ object CreditCardTypes {
     
     inline def setCardTypesUndefined: Self = StObject.set(x, "cardTypes", js.undefined)
     
-    inline def setCardTypesVarargs(value: String*): Self = StObject.set(x, "cardTypes", js.Array(value :_*))
+    inline def setCardTypesVarargs(value: String*): Self = StObject.set(x, "cardTypes", js.Array(value*))
   }
 }

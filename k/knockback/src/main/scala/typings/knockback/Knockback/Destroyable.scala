@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Destroyable extends StObject {
   
-  def destroy(): js.Any
+  def destroy(): Any
 }
 object Destroyable {
   
-  inline def apply(destroy: () => js.Any): Destroyable = {
+  inline def apply(destroy: () => Any): Destroyable = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[Destroyable]
   }
   
   extension [Self <: Destroyable](x: Self) {
     
-    inline def setDestroy(value: () => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }
 }

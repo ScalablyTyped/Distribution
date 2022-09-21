@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("ft-poller", JSImport.Namespace)
   @js.native
-  class ^[PollerData, ExternalData] protected ()
+  open class ^[PollerData, ExternalData] protected ()
     extends StObject
        with Poller[PollerData, ExternalData] {
     def this(config: Config[PollerData, ExternalData]) = this()
@@ -62,7 +62,7 @@ object mod {
     }
   }
   
-  type Options = StringDictionary[js.Any]
+  type Options = StringDictionary[Any]
   
   @js.native
   trait Poller[PollerData, ExternalData] extends StObject {

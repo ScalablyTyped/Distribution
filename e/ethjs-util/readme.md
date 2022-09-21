@@ -10,10 +10,10 @@ A simple set of Ethereum JS utilties.
 | ------------------ | :-------------: |
 | Full name          | ethjs-util |
 | Keywords           | ethereum, rpc, formatter, format, ethereum, encoding, decoding |
-| # releases         | 0 |
-| # dependents       | 77 |
-| # downloads        | 5252170 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1588844.0 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://github.com/ethjs/ethjs-util#readme)

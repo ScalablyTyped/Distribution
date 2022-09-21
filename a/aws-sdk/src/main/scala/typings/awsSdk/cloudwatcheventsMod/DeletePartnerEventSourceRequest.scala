@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeletePartnerEventSourceRequest extends StObject {
   
   /**
-    * The AWS account ID of the AWS customer that the event source was created for.
+    * The Amazon Web Services account ID of the Amazon Web Services customer that the event source was created for.
     */
   var Account: AccountId
   

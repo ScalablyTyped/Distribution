@@ -27,7 +27,7 @@ object ListExclusionsResponse {
     
     inline def setExclusionArns(value: ListReturnedArnList): Self = StObject.set(x, "exclusionArns", value.asInstanceOf[js.Any])
     
-    inline def setExclusionArnsVarargs(value: Arn*): Self = StObject.set(x, "exclusionArns", js.Array(value :_*))
+    inline def setExclusionArnsVarargs(value: Arn*): Self = StObject.set(x, "exclusionArns", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

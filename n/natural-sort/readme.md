@@ -9,10 +9,10 @@ Sorting with support for numbers, dates, unicode and more.
 | ------------------ | :-------------: |
 | Full name          | natural-sort |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 222858 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 21336.666666666668 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/studio-b12/natural-sort#readme)

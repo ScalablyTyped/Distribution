@@ -25,14 +25,14 @@ trait WiFiDirectServiceSession extends StObject {
     */
   def addDatagramSocketAsync(value: DatagramSocket): IPromiseWithIAsyncAction = js.native
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_remoteportadded(
     `type`: remoteportadded,
     listener: TypedEventHandler[WiFiDirectServiceSession, WiFiDirectServiceRemotePortAddedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_sessionstatuschanged(`type`: sessionstatuschanged, listener: TypedEventHandler[WiFiDirectServiceSession, js.Any]): Unit = js.native
+  def addEventListener_sessionstatuschanged(`type`: sessionstatuschanged, listener: TypedEventHandler[WiFiDirectServiceSession, Any]): Unit = js.native
   
   /**
     * Adds a StreamSocketListener to the session. Your code creates the StreamSocketListener before calling this method. Associating a socket to the session causes port information to be sent to the remote device(s) in the session. (In terms of this API, a RemotePortAdded event is raised on each remote device in the session, specifying the TCP protocol.) A remote device can use that information to open a socket and connect back to the local machine.
@@ -63,19 +63,19 @@ trait WiFiDirectServiceSession extends StObject {
   var onremoteportadded_Original: TypedEventHandler[WiFiDirectServiceSession, WiFiDirectServiceRemotePortAddedEventArgs] = js.native
   
   /** Event raised when the session status changes. */
-  def onsessionstatuschanged(ev: js.Any & WinRTEvent[WiFiDirectServiceSession]): Unit = js.native
+  def onsessionstatuschanged(ev: Any & WinRTEvent[WiFiDirectServiceSession]): Unit = js.native
   /** Event raised when the session status changes. */
   @JSName("onsessionstatuschanged")
-  var onsessionstatuschanged_Original: TypedEventHandler[WiFiDirectServiceSession, js.Any] = js.native
+  var onsessionstatuschanged_Original: TypedEventHandler[WiFiDirectServiceSession, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_remoteportadded(
     `type`: remoteportadded,
     listener: TypedEventHandler[WiFiDirectServiceSession, WiFiDirectServiceRemotePortAddedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_sessionstatuschanged(`type`: sessionstatuschanged, listener: TypedEventHandler[WiFiDirectServiceSession, js.Any]): Unit = js.native
+  def removeEventListener_sessionstatuschanged(`type`: sessionstatuschanged, listener: TypedEventHandler[WiFiDirectServiceSession, Any]): Unit = js.native
   
   /** Gets the service address for this session. */
   var serviceAddress: String = js.native

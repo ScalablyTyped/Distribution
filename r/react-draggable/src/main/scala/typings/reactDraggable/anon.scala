@@ -1,5 +1,6 @@
 package typings.reactDraggable
 
+import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
 import typings.reactDraggable.mod.ControlPosition
 import typings.reactDraggable.mod.DraggableBounds
@@ -26,6 +27,8 @@ object anon {
     var allowAnyClick: js.UndefOr[Boolean] = js.undefined
     
     var cancel: js.UndefOr[String] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -65,6 +68,10 @@ object anon {
       inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -122,6 +129,8 @@ object anon {
     var bounds: js.UndefOr[DraggableBounds | String | `false`] = js.undefined
     
     var cancel: js.UndefOr[String] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var defaultClassName: js.UndefOr[String] = js.undefined
     
@@ -181,6 +190,10 @@ object anon {
       inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDefaultClassName(value: String): Self = StObject.set(x, "defaultClassName", value.asInstanceOf[js.Any])
       

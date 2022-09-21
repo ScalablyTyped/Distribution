@@ -11,9 +11,9 @@ A node.js through stream that does basic streaming text search and replace and i
 | Full name          | replacestream |
 | Keywords           | replace, text, regex, stream, streams, streaming, search |
 | # releases         | 0 |
-| # dependents       | 202 |
-| # downloads        | 14062038 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1524396.0 |
+| # stars            | 165.0 |
 
 ## Links
 - [Homepage](https://github.com/eugeneware/replacestream#readme)

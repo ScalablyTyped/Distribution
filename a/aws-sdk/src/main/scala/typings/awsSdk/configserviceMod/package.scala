@@ -1,5 +1,10 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.RESOURCE_ID
+import typings.awsSdk.awsSdkStrings.SCORE
+import typings.awsSdk.awsSdkStrings.SSM_DOCUMENT
+import typings.awsSdk.awsSdkStrings.awsDotconfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,19 +12,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type ARN = java.lang.String
 
-type AccountAggregationSourceAccountList = js.Array[typings.awsSdk.configserviceMod.AccountId]
+type AccountAggregationSourceAccountList = js.Array[AccountId]
 
-type AccountAggregationSourceList = js.Array[typings.awsSdk.configserviceMod.AccountAggregationSource]
+type AccountAggregationSourceList = js.Array[AccountAggregationSource]
 
 type AccountId = java.lang.String
 
-type AggregateComplianceByConfigRuleList = js.Array[typings.awsSdk.configserviceMod.AggregateComplianceByConfigRule]
+type AggregateComplianceByConfigRuleList = js.Array[AggregateComplianceByConfigRule]
 
-type AggregateComplianceCountList = js.Array[typings.awsSdk.configserviceMod.AggregateComplianceCount]
+type AggregateComplianceByConformancePackList = js.Array[AggregateComplianceByConformancePack]
 
-type AggregateEvaluationResultList = js.Array[typings.awsSdk.configserviceMod.AggregateEvaluationResult]
+type AggregateComplianceCountList = js.Array[AggregateComplianceCount]
 
-type AggregatedSourceStatusList = js.Array[typings.awsSdk.configserviceMod.AggregatedSourceStatus]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACCOUNT_ID
+  - typings.awsSdk.awsSdkStrings.AWS_REGION
+  - java.lang.String
+*/
+type AggregateConformancePackComplianceSummaryGroupKey = _AggregateConformancePackComplianceSummaryGroupKey | java.lang.String
+
+type AggregateConformancePackComplianceSummaryList = js.Array[AggregateConformancePackComplianceSummary]
+
+type AggregateEvaluationResultList = js.Array[AggregateEvaluationResult]
+
+type AggregatedSourceStatusList = js.Array[AggregatedSourceStatus]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FAILED
@@ -27,20 +43,20 @@ type AggregatedSourceStatusList = js.Array[typings.awsSdk.configserviceMod.Aggre
   - typings.awsSdk.awsSdkStrings.OUTDATED
   - java.lang.String
 */
-type AggregatedSourceStatusType = typings.awsSdk.configserviceMod._AggregatedSourceStatusType | java.lang.String
+type AggregatedSourceStatusType = _AggregatedSourceStatusType | java.lang.String
 
-type AggregatedSourceStatusTypeList = js.Array[typings.awsSdk.configserviceMod.AggregatedSourceStatusType]
+type AggregatedSourceStatusTypeList = js.Array[AggregatedSourceStatusType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACCOUNT
   - typings.awsSdk.awsSdkStrings.ORGANIZATION
   - java.lang.String
 */
-type AggregatedSourceType = typings.awsSdk.configserviceMod._AggregatedSourceType | java.lang.String
+type AggregatedSourceType = _AggregatedSourceType | java.lang.String
 
-type AggregationAuthorizationList = js.Array[typings.awsSdk.configserviceMod.AggregationAuthorization]
+type AggregationAuthorizationList = js.Array[AggregationAuthorization]
 
-type AggregatorRegionList = js.Array[typings.awsSdk.configserviceMod.String]
+type AggregatorRegionList = js.Array[String]
 
 type AllSupported = scala.Boolean
 
@@ -48,15 +64,15 @@ type AmazonResourceName = java.lang.String
 
 type Annotation = java.lang.String
 
-type AutoRemediationAttemptSeconds = scala.Double
+type AutoRemediationAttemptSeconds = Double
 
-type AutoRemediationAttempts = scala.Double
+type AutoRemediationAttempts = Double
 
 type AvailabilityZone = java.lang.String
 
 type AwsRegion = java.lang.String
 
-type BaseConfigurationItems = js.Array[typings.awsSdk.configserviceMod.BaseConfigurationItem]
+type BaseConfigurationItems = js.Array[BaseConfigurationItem]
 
 type BaseResourceId = java.lang.String
 
@@ -69,15 +85,17 @@ type ChannelName = java.lang.String
   - typings.awsSdk.awsSdkStrings.Forward_
   - java.lang.String
 */
-type ChronologicalOrder = typings.awsSdk.configserviceMod._ChronologicalOrder | java.lang.String
+type ChronologicalOrder = _ChronologicalOrder | java.lang.String
 
-type ComplianceByConfigRules = js.Array[typings.awsSdk.configserviceMod.ComplianceByConfigRule]
+type ComplianceByConfigRules = js.Array[ComplianceByConfigRule]
 
-type ComplianceByResources = js.Array[typings.awsSdk.configserviceMod.ComplianceByResource]
+type ComplianceByResources = js.Array[ComplianceByResource]
 
-type ComplianceResourceTypes = js.Array[typings.awsSdk.configserviceMod.StringWithCharLimit256]
+type ComplianceResourceTypes = js.Array[StringWithCharLimit256]
 
-type ComplianceSummariesByResourceType = js.Array[typings.awsSdk.configserviceMod.ComplianceSummaryByResourceType]
+type ComplianceScore = java.lang.String
+
+type ComplianceSummariesByResourceType = js.Array[ComplianceSummaryByResourceType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COMPLIANT
@@ -86,22 +104,22 @@ type ComplianceSummariesByResourceType = js.Array[typings.awsSdk.configserviceMo
   - typings.awsSdk.awsSdkStrings.INSUFFICIENT_DATA
   - java.lang.String
 */
-type ComplianceType = typings.awsSdk.configserviceMod._ComplianceType | java.lang.String
+type ComplianceType = _ComplianceType | java.lang.String
 
-type ComplianceTypes = js.Array[typings.awsSdk.configserviceMod.ComplianceType]
+type ComplianceTypes = js.Array[ComplianceType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACCOUNT_ID
   - typings.awsSdk.awsSdkStrings.AWS_REGION
   - java.lang.String
 */
-type ConfigRuleComplianceSummaryGroupKey = typings.awsSdk.configserviceMod._ConfigRuleComplianceSummaryGroupKey | java.lang.String
+type ConfigRuleComplianceSummaryGroupKey = _ConfigRuleComplianceSummaryGroupKey | java.lang.String
 
-type ConfigRuleEvaluationStatusList = js.Array[typings.awsSdk.configserviceMod.ConfigRuleEvaluationStatus]
+type ConfigRuleEvaluationStatusList = js.Array[ConfigRuleEvaluationStatus]
 
 type ConfigRuleName = java.lang.String
 
-type ConfigRuleNames = js.Array[typings.awsSdk.configserviceMod.ConfigRuleName]
+type ConfigRuleNames = js.Array[ConfigRuleName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -110,23 +128,23 @@ type ConfigRuleNames = js.Array[typings.awsSdk.configserviceMod.ConfigRuleName]
   - typings.awsSdk.awsSdkStrings.EVALUATING
   - java.lang.String
 */
-type ConfigRuleState = typings.awsSdk.configserviceMod._ConfigRuleState | java.lang.String
+type ConfigRuleState = _ConfigRuleState | java.lang.String
 
-type ConfigRules = js.Array[typings.awsSdk.configserviceMod.ConfigRule]
+type ConfigRules = js.Array[ConfigRule]
 
 type Configuration = java.lang.String
 
 type ConfigurationAggregatorArn = java.lang.String
 
-type ConfigurationAggregatorList = js.Array[typings.awsSdk.configserviceMod.ConfigurationAggregator]
+type ConfigurationAggregatorList = js.Array[ConfigurationAggregator]
 
 type ConfigurationAggregatorName = java.lang.String
 
-type ConfigurationAggregatorNameList = js.Array[typings.awsSdk.configserviceMod.ConfigurationAggregatorName]
+type ConfigurationAggregatorNameList = js.Array[ConfigurationAggregatorName]
 
-type ConfigurationItemCaptureTime = typings.std.Date
+type ConfigurationItemCaptureTime = js.Date
 
-type ConfigurationItemList = js.Array[typings.awsSdk.configserviceMod.ConfigurationItem]
+type ConfigurationItemList = js.Array[ConfigurationItem]
 
 type ConfigurationItemMD5Hash = java.lang.String
 
@@ -138,46 +156,51 @@ type ConfigurationItemMD5Hash = java.lang.String
   - typings.awsSdk.awsSdkStrings.ResourceDeletedNotRecorded
   - java.lang.String
 */
-type ConfigurationItemStatus = typings.awsSdk.configserviceMod._ConfigurationItemStatus | java.lang.String
+type ConfigurationItemStatus = _ConfigurationItemStatus | java.lang.String
 
-type ConfigurationRecorderList = js.Array[typings.awsSdk.configserviceMod.ConfigurationRecorder]
+type ConfigurationRecorderList = js.Array[ConfigurationRecorder]
 
-type ConfigurationRecorderNameList = js.Array[typings.awsSdk.configserviceMod.RecorderName]
+type ConfigurationRecorderNameList = js.Array[RecorderName]
 
-type ConfigurationRecorderStatusList = js.Array[typings.awsSdk.configserviceMod.ConfigurationRecorderStatus]
+type ConfigurationRecorderStatusList = js.Array[ConfigurationRecorderStatus]
 
 type ConfigurationStateId = java.lang.String
 
 type ConformancePackArn = java.lang.String
 
-type ConformancePackComplianceResourceIds = js.Array[typings.awsSdk.configserviceMod.StringWithCharLimit256]
+type ConformancePackComplianceResourceIds = js.Array[StringWithCharLimit256]
 
-type ConformancePackComplianceSummaryList = js.Array[typings.awsSdk.configserviceMod.ConformancePackComplianceSummary]
+type ConformancePackComplianceScores = js.Array[ConformancePackComplianceScore]
+
+type ConformancePackComplianceSummaryList = js.Array[ConformancePackComplianceSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COMPLIANT
   - typings.awsSdk.awsSdkStrings.NON_COMPLIANT
+  - typings.awsSdk.awsSdkStrings.INSUFFICIENT_DATA
   - java.lang.String
 */
-type ConformancePackComplianceType = typings.awsSdk.configserviceMod._ConformancePackComplianceType | java.lang.String
+type ConformancePackComplianceType = _ConformancePackComplianceType | java.lang.String
 
-type ConformancePackConfigRuleNames = js.Array[typings.awsSdk.configserviceMod.StringWithCharLimit64]
+type ConformancePackConfigRuleNames = js.Array[StringWithCharLimit64]
 
-type ConformancePackDetailList = js.Array[typings.awsSdk.configserviceMod.ConformancePackDetail]
+type ConformancePackDetailList = js.Array[ConformancePackDetail]
 
 type ConformancePackId = java.lang.String
 
-type ConformancePackInputParameters = js.Array[typings.awsSdk.configserviceMod.ConformancePackInputParameter]
+type ConformancePackInputParameters = js.Array[ConformancePackInputParameter]
 
 type ConformancePackName = java.lang.String
 
-type ConformancePackNamesList = js.Array[typings.awsSdk.configserviceMod.ConformancePackName]
+type ConformancePackNameFilter = js.Array[ConformancePackName]
 
-type ConformancePackNamesToSummarizeList = js.Array[typings.awsSdk.configserviceMod.ConformancePackName]
+type ConformancePackNamesList = js.Array[ConformancePackName]
 
-type ConformancePackRuleComplianceList = js.Array[typings.awsSdk.configserviceMod.ConformancePackRuleCompliance]
+type ConformancePackNamesToSummarizeList = js.Array[ConformancePackName]
 
-type ConformancePackRuleEvaluationResultsList = js.Array[typings.awsSdk.configserviceMod.ConformancePackEvaluationResult]
+type ConformancePackRuleComplianceList = js.Array[ConformancePackRuleCompliance]
+
+type ConformancePackRuleEvaluationResultsList = js.Array[ConformancePackEvaluationResult]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE_IN_PROGRESS
@@ -187,21 +210,25 @@ type ConformancePackRuleEvaluationResultsList = js.Array[typings.awsSdk.configse
   - typings.awsSdk.awsSdkStrings.DELETE_FAILED
   - java.lang.String
 */
-type ConformancePackState = typings.awsSdk.configserviceMod._ConformancePackState | java.lang.String
+type ConformancePackState = _ConformancePackState | java.lang.String
 
-type ConformancePackStatusDetailsList = js.Array[typings.awsSdk.configserviceMod.ConformancePackStatusDetail]
+type ConformancePackStatusDetailsList = js.Array[ConformancePackStatusDetail]
 
 type ConformancePackStatusReason = java.lang.String
 
-type CosmosPageLimit = scala.Double
+type ControlsList = js.Array[StringWithCharLimit128]
 
-type Date = typings.std.Date
+type CosmosPageLimit = Double
 
-type DeliveryChannelList = js.Array[typings.awsSdk.configserviceMod.DeliveryChannel]
+type Date = js.Date
 
-type DeliveryChannelNameList = js.Array[typings.awsSdk.configserviceMod.ChannelName]
+type DebugLogDeliveryAccounts = js.Array[AccountId]
 
-type DeliveryChannelStatusList = js.Array[typings.awsSdk.configserviceMod.DeliveryChannelStatus]
+type DeliveryChannelList = js.Array[DeliveryChannel]
+
+type DeliveryChannelNameList = js.Array[ChannelName]
+
+type DeliveryChannelStatusList = js.Array[DeliveryChannelStatus]
 
 type DeliveryS3Bucket = java.lang.String
 
@@ -213,53 +240,55 @@ type DeliveryS3KeyPrefix = java.lang.String
   - typings.awsSdk.awsSdkStrings.Not_Applicable_
   - java.lang.String
 */
-type DeliveryStatus = typings.awsSdk.configserviceMod._DeliveryStatus | java.lang.String
+type DeliveryStatus = _DeliveryStatus | java.lang.String
 
-type DescribeConformancePackComplianceLimit = scala.Double
+type DescribeConformancePackComplianceLimit = Double
 
-type DescribePendingAggregationRequestsLimit = scala.Double
+type DescribePendingAggregationRequestsLimit = Double
 
-type DiscoveredResourceIdentifierList = js.Array[typings.awsSdk.configserviceMod.AggregateResourceIdentifier]
+type DiscoveredResourceIdentifierList = js.Array[AggregateResourceIdentifier]
 
-type EarlierTime = typings.std.Date
+type EarlierTime = js.Date
 
 type EmptiableStringWithCharLimit256 = java.lang.String
 
-type EvaluationResults = js.Array[typings.awsSdk.configserviceMod.EvaluationResult]
+type EvaluationResults = js.Array[EvaluationResult]
 
-type Evaluations = js.Array[typings.awsSdk.configserviceMod.Evaluation]
+type Evaluations = js.Array[Evaluation]
 
-type EventSource = typings.awsSdk.awsSdkStrings.awsDotconfig | java.lang.String
+type EventSource = awsDotconfig | java.lang.String
 
-type ExcludedAccounts = js.Array[typings.awsSdk.configserviceMod.AccountId]
+type ExcludedAccounts = js.Array[AccountId]
 
 type Expression = java.lang.String
 
-type FailedDeleteRemediationExceptionsBatches = js.Array[typings.awsSdk.configserviceMod.FailedDeleteRemediationExceptionsBatch]
+type FailedDeleteRemediationExceptionsBatches = js.Array[FailedDeleteRemediationExceptionsBatch]
 
-type FailedRemediationBatches = js.Array[typings.awsSdk.configserviceMod.FailedRemediationBatch]
+type FailedRemediationBatches = js.Array[FailedRemediationBatch]
 
-type FailedRemediationExceptionBatches = js.Array[typings.awsSdk.configserviceMod.FailedRemediationExceptionBatch]
+type FailedRemediationExceptionBatches = js.Array[FailedRemediationExceptionBatch]
 
-type FieldInfoList = js.Array[typings.awsSdk.configserviceMod.FieldInfo]
+type FieldInfoList = js.Array[FieldInfo]
 
 type FieldName = java.lang.String
 
-type GetConformancePackComplianceDetailsLimit = scala.Double
+type GetConformancePackComplianceDetailsLimit = Double
 
-type GroupByAPILimit = scala.Double
+type GroupByAPILimit = Double
 
-type GroupedResourceCountList = js.Array[typings.awsSdk.configserviceMod.GroupedResourceCount]
+type GroupedResourceCountList = js.Array[GroupedResourceCount]
 
 type IncludeGlobalResourceTypes = scala.Boolean
 
-type Integer = scala.Double
+type Integer = Double
 
-type LaterTime = typings.std.Date
+type LastUpdatedTime = js.Date
 
-type Limit = scala.Double
+type LaterTime = js.Date
 
-type Long = scala.Double
+type Limit = Double
+
+type Long = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.One_Hour_
@@ -269,7 +298,7 @@ type Long = scala.Double
   - typings.awsSdk.awsSdkStrings.TwentyFour_Hours
   - java.lang.String
 */
-type MaximumExecutionFrequency = typings.awsSdk.configserviceMod._MaximumExecutionFrequency | java.lang.String
+type MaximumExecutionFrequency = _MaximumExecutionFrequency | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE_SUCCESSFUL
@@ -283,7 +312,7 @@ type MaximumExecutionFrequency = typings.awsSdk.configserviceMod._MaximumExecuti
   - typings.awsSdk.awsSdkStrings.UPDATE_FAILED
   - java.lang.String
 */
-type MemberAccountRuleStatus = typings.awsSdk.configserviceMod._MemberAccountRuleStatus | java.lang.String
+type MemberAccountRuleStatus = _MemberAccountRuleStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ConfigurationItemChangeNotification
@@ -292,21 +321,21 @@ type MemberAccountRuleStatus = typings.awsSdk.configserviceMod._MemberAccountRul
   - typings.awsSdk.awsSdkStrings.OversizedConfigurationItemChangeNotification
   - java.lang.String
 */
-type MessageType = typings.awsSdk.configserviceMod._MessageType | java.lang.String
+type MessageType = _MessageType | java.lang.String
 
 type Name = java.lang.String
 
 type NextToken = java.lang.String
 
-type OrderingTimestamp = typings.std.Date
+type OrderingTimestamp = js.Date
 
-type OrganizationConfigRuleDetailedStatus = js.Array[typings.awsSdk.configserviceMod.MemberAccountStatus]
+type OrganizationConfigRuleDetailedStatus = js.Array[MemberAccountStatus]
 
 type OrganizationConfigRuleName = java.lang.String
 
-type OrganizationConfigRuleNames = js.Array[typings.awsSdk.configserviceMod.StringWithCharLimit64]
+type OrganizationConfigRuleNames = js.Array[StringWithCharLimit64]
 
-type OrganizationConfigRuleStatuses = js.Array[typings.awsSdk.configserviceMod.OrganizationConfigRuleStatus]
+type OrganizationConfigRuleStatuses = js.Array[OrganizationConfigRuleStatus]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ConfigurationItemChangeNotification
@@ -314,35 +343,30 @@ type OrganizationConfigRuleStatuses = js.Array[typings.awsSdk.configserviceMod.O
   - typings.awsSdk.awsSdkStrings.ScheduledNotification
   - java.lang.String
 */
-type OrganizationConfigRuleTriggerType = typings.awsSdk.configserviceMod._OrganizationConfigRuleTriggerType | java.lang.String
+type OrganizationConfigRuleTriggerType = _OrganizationConfigRuleTriggerType | java.lang.String
 
-type OrganizationConfigRuleTriggerTypes = js.Array[typings.awsSdk.configserviceMod.OrganizationConfigRuleTriggerType]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ConfigurationItemChangeNotification
+  - typings.awsSdk.awsSdkStrings.OversizedConfigurationItemChangeNotification
+  - java.lang.String
+*/
+type OrganizationConfigRuleTriggerTypeNoSN = _OrganizationConfigRuleTriggerTypeNoSN | java.lang.String
 
-type OrganizationConfigRules = js.Array[typings.awsSdk.configserviceMod.OrganizationConfigRule]
+type OrganizationConfigRuleTriggerTypeNoSNs = js.Array[OrganizationConfigRuleTriggerTypeNoSN]
 
-type OrganizationConformancePackDetailedStatuses = js.Array[typings.awsSdk.configserviceMod.OrganizationConformancePackDetailedStatus]
+type OrganizationConfigRuleTriggerTypes = js.Array[OrganizationConfigRuleTriggerType]
+
+type OrganizationConfigRules = js.Array[OrganizationConfigRule]
+
+type OrganizationConformancePackDetailedStatuses = js.Array[OrganizationConformancePackDetailedStatus]
 
 type OrganizationConformancePackName = java.lang.String
 
-type OrganizationConformancePackNames = js.Array[typings.awsSdk.configserviceMod.OrganizationConformancePackName]
+type OrganizationConformancePackNames = js.Array[OrganizationConformancePackName]
 
-type OrganizationConformancePackStatuses = js.Array[typings.awsSdk.configserviceMod.OrganizationConformancePackStatus]
+type OrganizationConformancePackStatuses = js.Array[OrganizationConformancePackStatus]
 
-type OrganizationConformancePacks = js.Array[typings.awsSdk.configserviceMod.OrganizationConformancePack]
-
-/* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.CREATE_SUCCESSFUL
-  - typings.awsSdk.awsSdkStrings.CREATE_IN_PROGRESS
-  - typings.awsSdk.awsSdkStrings.CREATE_FAILED
-  - typings.awsSdk.awsSdkStrings.DELETE_SUCCESSFUL
-  - typings.awsSdk.awsSdkStrings.DELETE_FAILED
-  - typings.awsSdk.awsSdkStrings.DELETE_IN_PROGRESS
-  - typings.awsSdk.awsSdkStrings.UPDATE_SUCCESSFUL
-  - typings.awsSdk.awsSdkStrings.UPDATE_IN_PROGRESS
-  - typings.awsSdk.awsSdkStrings.UPDATE_FAILED
-  - java.lang.String
-*/
-type OrganizationResourceDetailedStatus = typings.awsSdk.configserviceMod._OrganizationResourceDetailedStatus | java.lang.String
+type OrganizationConformancePacks = js.Array[OrganizationConformancePack]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE_SUCCESSFUL
@@ -356,7 +380,7 @@ type OrganizationResourceDetailedStatus = typings.awsSdk.configserviceMod._Organ
   - typings.awsSdk.awsSdkStrings.UPDATE_FAILED
   - java.lang.String
 */
-type OrganizationResourceStatus = typings.awsSdk.configserviceMod._OrganizationResourceStatus | java.lang.String
+type OrganizationResourceDetailedStatus = _OrganizationResourceDetailedStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE_SUCCESSFUL
@@ -370,24 +394,53 @@ type OrganizationResourceStatus = typings.awsSdk.configserviceMod._OrganizationR
   - typings.awsSdk.awsSdkStrings.UPDATE_FAILED
   - java.lang.String
 */
-type OrganizationRuleStatus = typings.awsSdk.configserviceMod._OrganizationRuleStatus | java.lang.String
+type OrganizationResourceStatus = _OrganizationResourceStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATE_SUCCESSFUL
+  - typings.awsSdk.awsSdkStrings.CREATE_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.CREATE_FAILED
+  - typings.awsSdk.awsSdkStrings.DELETE_SUCCESSFUL
+  - typings.awsSdk.awsSdkStrings.DELETE_FAILED
+  - typings.awsSdk.awsSdkStrings.DELETE_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.UPDATE_SUCCESSFUL
+  - typings.awsSdk.awsSdkStrings.UPDATE_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.UPDATE_FAILED
+  - java.lang.String
+*/
+type OrganizationRuleStatus = _OrganizationRuleStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CUSTOM_LAMBDA
   - typings.awsSdk.awsSdkStrings.AWS
+  - typings.awsSdk.awsSdkStrings.CUSTOM_POLICY
   - java.lang.String
 */
-type Owner = typings.awsSdk.configserviceMod._Owner | java.lang.String
+type Owner = _Owner | java.lang.String
 
-type PageSizeLimit = scala.Double
+type PageSizeLimit = Double
 
 type ParameterName = java.lang.String
 
 type ParameterValue = java.lang.String
 
-type PendingAggregationRequestList = js.Array[typings.awsSdk.configserviceMod.PendingAggregationRequest]
+type PendingAggregationRequestList = js.Array[PendingAggregationRequest]
 
-type Percentage = scala.Double
+type Percentage = Double
+
+type PolicyRuntime = java.lang.String
+
+type PolicyText = java.lang.String
+
+type QueryArn = java.lang.String
+
+type QueryDescription = java.lang.String
+
+type QueryExpression = java.lang.String
+
+type QueryId = java.lang.String
+
+type QueryName = java.lang.String
 
 type RecorderName = java.lang.String
 
@@ -397,23 +450,23 @@ type RecorderName = java.lang.String
   - typings.awsSdk.awsSdkStrings.Failure_
   - java.lang.String
 */
-type RecorderStatus = typings.awsSdk.configserviceMod._RecorderStatus | java.lang.String
+type RecorderStatus = _RecorderStatus | java.lang.String
 
-type ReevaluateConfigRuleNames = js.Array[typings.awsSdk.configserviceMod.ConfigRuleName]
+type ReevaluateConfigRuleNames = js.Array[ConfigRuleName]
 
 type RelatedEvent = java.lang.String
 
-type RelatedEventList = js.Array[typings.awsSdk.configserviceMod.RelatedEvent]
+type RelatedEventList = js.Array[RelatedEvent]
 
-type RelationshipList = js.Array[typings.awsSdk.configserviceMod.Relationship]
+type RelationshipList = js.Array[Relationship]
 
 type RelationshipName = java.lang.String
 
-type RemediationConfigurations = js.Array[typings.awsSdk.configserviceMod.RemediationConfiguration]
+type RemediationConfigurations = js.Array[RemediationConfiguration]
 
-type RemediationExceptionResourceKeys = js.Array[typings.awsSdk.configserviceMod.RemediationExceptionResourceKey]
+type RemediationExceptionResourceKeys = js.Array[RemediationExceptionResourceKey]
 
-type RemediationExceptions = js.Array[typings.awsSdk.configserviceMod.RemediationException]
+type RemediationExceptions = js.Array[RemediationException]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.QUEUED
@@ -422,9 +475,9 @@ type RemediationExceptions = js.Array[typings.awsSdk.configserviceMod.Remediatio
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type RemediationExecutionState = typings.awsSdk.configserviceMod._RemediationExecutionState | java.lang.String
+type RemediationExecutionState = _RemediationExecutionState | java.lang.String
 
-type RemediationExecutionStatuses = js.Array[typings.awsSdk.configserviceMod.RemediationExecutionStatus]
+type RemediationExecutionStatuses = js.Array[RemediationExecutionStatus]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUCCEEDED
@@ -432,13 +485,13 @@ type RemediationExecutionStatuses = js.Array[typings.awsSdk.configserviceMod.Rem
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type RemediationExecutionStepState = typings.awsSdk.configserviceMod._RemediationExecutionStepState | java.lang.String
+type RemediationExecutionStepState = _RemediationExecutionStepState | java.lang.String
 
-type RemediationExecutionSteps = js.Array[typings.awsSdk.configserviceMod.RemediationExecutionStep]
+type RemediationExecutionSteps = js.Array[RemediationExecutionStep]
 
-type RemediationParameters = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.configserviceMod.RemediationParameterValue]
+type RemediationParameters = StringDictionary[RemediationParameterValue]
 
-type RemediationTargetType = typings.awsSdk.awsSdkStrings.SSM_DOCUMENT | java.lang.String
+type RemediationTargetType = SSM_DOCUMENT | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RESOURCE_TYPE
@@ -446,23 +499,23 @@ type RemediationTargetType = typings.awsSdk.awsSdkStrings.SSM_DOCUMENT | java.la
   - typings.awsSdk.awsSdkStrings.AWS_REGION
   - java.lang.String
 */
-type ResourceCountGroupKey = typings.awsSdk.configserviceMod._ResourceCountGroupKey | java.lang.String
+type ResourceCountGroupKey = _ResourceCountGroupKey | java.lang.String
 
-type ResourceCounts = js.Array[typings.awsSdk.configserviceMod.ResourceCount]
+type ResourceCounts = js.Array[ResourceCount]
 
-type ResourceCreationTime = typings.std.Date
+type ResourceCreationTime = js.Date
 
-type ResourceDeletionTime = typings.std.Date
+type ResourceDeletionTime = js.Date
 
 type ResourceId = java.lang.String
 
-type ResourceIdList = js.Array[typings.awsSdk.configserviceMod.ResourceId]
+type ResourceIdList = js.Array[ResourceId]
 
-type ResourceIdentifierList = js.Array[typings.awsSdk.configserviceMod.ResourceIdentifier]
+type ResourceIdentifierList = js.Array[ResourceIdentifier]
 
-type ResourceIdentifiersList = js.Array[typings.awsSdk.configserviceMod.AggregateResourceIdentifier]
+type ResourceIdentifiersList = js.Array[AggregateResourceIdentifier]
 
-type ResourceKeys = js.Array[typings.awsSdk.configserviceMod.ResourceKey]
+type ResourceKeys = js.Array[ResourceKey]
 
 type ResourceName = java.lang.String
 
@@ -532,6 +585,9 @@ type ResourceName = java.lang.String
   - typings.awsSdk.awsSdkStrings.AWSColonColonCloudFrontColonColonDistribution
   - typings.awsSdk.awsSdkStrings.AWSColonColonCloudFrontColonColonStreamingDistribution
   - typings.awsSdk.awsSdkStrings.AWSColonColonLambdaColonColonFunction
+  - typings.awsSdk.awsSdkStrings.AWSColonColonNetworkFirewallColonColonFirewall
+  - typings.awsSdk.awsSdkStrings.AWSColonColonNetworkFirewallColonColonFirewallPolicy
+  - typings.awsSdk.awsSdkStrings.AWSColonColonNetworkFirewallColonColonRuleGroup
   - typings.awsSdk.awsSdkStrings.AWSColonColonElasticBeanstalkColonColonApplication
   - typings.awsSdk.awsSdkStrings.AWSColonColonElasticBeanstalkColonColonApplicationVersion
   - typings.awsSdk.awsSdkStrings.AWSColonColonElasticBeanstalkColonColonEnvironment
@@ -545,6 +601,7 @@ type ResourceName = java.lang.String
   - typings.awsSdk.awsSdkStrings.AWSColonColonSSMColonColonPatchCompliance
   - typings.awsSdk.awsSdkStrings.AWSColonColonShieldColonColonProtection
   - typings.awsSdk.awsSdkStrings.AWSColonColonShieldRegionalColonColonProtection
+  - typings.awsSdk.awsSdkStrings.AWSColonColonConfigColonColonConformancePackCompliance
   - typings.awsSdk.awsSdkStrings.AWSColonColonConfigColonColonResourceCompliance
   - typings.awsSdk.awsSdkStrings.AWSColonColonApiGatewayColonColonStage
   - typings.awsSdk.awsSdkStrings.AWSColonColonApiGatewayColonColonRestApi
@@ -560,39 +617,101 @@ type ResourceName = java.lang.String
   - typings.awsSdk.awsSdkStrings.AWSColonColonSecretsManagerColonColonSecret
   - typings.awsSdk.awsSdkStrings.AWSColonColonSNSColonColonTopic
   - typings.awsSdk.awsSdkStrings.AWSColonColonSSMColonColonFileData
+  - typings.awsSdk.awsSdkStrings.AWSColonColonBackupColonColonBackupPlan
+  - typings.awsSdk.awsSdkStrings.AWSColonColonBackupColonColonBackupSelection
+  - typings.awsSdk.awsSdkStrings.AWSColonColonBackupColonColonBackupVault
+  - typings.awsSdk.awsSdkStrings.AWSColonColonBackupColonColonRecoveryPoint
+  - typings.awsSdk.awsSdkStrings.AWSColonColonECRColonColonRepository
+  - typings.awsSdk.awsSdkStrings.AWSColonColonECSColonColonCluster
+  - typings.awsSdk.awsSdkStrings.AWSColonColonECSColonColonService
+  - typings.awsSdk.awsSdkStrings.AWSColonColonECSColonColonTaskDefinition
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEFSColonColonAccessPoint
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEFSColonColonFileSystem
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEKSColonColonCluster
+  - typings.awsSdk.awsSdkStrings.AWSColonColonOpenSearchColonColonDomain
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonTransitGateway
+  - typings.awsSdk.awsSdkStrings.AWSColonColonKinesisColonColonStream
+  - typings.awsSdk.awsSdkStrings.AWSColonColonKinesisColonColonStreamConsumer
+  - typings.awsSdk.awsSdkStrings.AWSColonColonCodeDeployColonColonApplication
+  - typings.awsSdk.awsSdkStrings.AWSColonColonCodeDeployColonColonDeploymentConfig
+  - typings.awsSdk.awsSdkStrings.AWSColonColonCodeDeployColonColonDeploymentGroup
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonLaunchTemplate
+  - typings.awsSdk.awsSdkStrings.AWSColonColonECRColonColonPublicRepository
+  - typings.awsSdk.awsSdkStrings.AWSColonColonGuardDutyColonColonDetector
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEMRColonColonSecurityConfiguration
+  - typings.awsSdk.awsSdkStrings.AWSColonColonSageMakerColonColonCodeRepository
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoute53ResolverColonColonResolverEndpoint
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoute53ResolverColonColonResolverRule
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoute53ResolverColonColonResolverRuleAssociation
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDMSColonColonReplicationSubnetGroup
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDMSColonColonEventSubscription
+  - typings.awsSdk.awsSdkStrings.AWSColonColonMSKColonColonCluster
+  - typings.awsSdk.awsSdkStrings.AWSColonColonStepFunctionsColonColonActivity
+  - typings.awsSdk.awsSdkStrings.AWSColonColonWorkSpacesColonColonWorkspace
+  - typings.awsSdk.awsSdkStrings.AWSColonColonWorkSpacesColonColonConnectionAlias
+  - typings.awsSdk.awsSdkStrings.AWSColonColonSageMakerColonColonModel
+  - typings.awsSdk.awsSdkStrings.AWSColonColonElasticLoadBalancingV2ColonColonListener
+  - typings.awsSdk.awsSdkStrings.AWSColonColonStepFunctionsColonColonStateMachine
+  - typings.awsSdk.awsSdkStrings.AWSColonColonBatchColonColonJobQueue
+  - typings.awsSdk.awsSdkStrings.AWSColonColonBatchColonColonComputeEnvironment
+  - typings.awsSdk.awsSdkStrings.AWSColonColonAccessAnalyzerColonColonAnalyzer
+  - typings.awsSdk.awsSdkStrings.AWSColonColonAthenaColonColonWorkGroup
+  - typings.awsSdk.awsSdkStrings.AWSColonColonAthenaColonColonDataCatalog
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDetectiveColonColonGraph
+  - typings.awsSdk.awsSdkStrings.AWSColonColonGlobalAcceleratorColonColonAccelerator
+  - typings.awsSdk.awsSdkStrings.AWSColonColonGlobalAcceleratorColonColonEndpointGroup
+  - typings.awsSdk.awsSdkStrings.AWSColonColonGlobalAcceleratorColonColonListener
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonTransitGatewayAttachment
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonTransitGatewayRouteTable
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDMSColonColonCertificate
   - java.lang.String
 */
-type ResourceType = typings.awsSdk.configserviceMod._ResourceType | java.lang.String
+type ResourceType = _ResourceType | java.lang.String
 
-type ResourceTypeList = js.Array[typings.awsSdk.configserviceMod.ResourceType]
+type ResourceTypeList = js.Array[ResourceType]
 
 type ResourceTypeString = java.lang.String
 
-type ResourceTypes = js.Array[typings.awsSdk.configserviceMod.StringWithCharLimit256]
+type ResourceTypes = js.Array[StringWithCharLimit256]
 
-type ResourceTypesScope = js.Array[typings.awsSdk.configserviceMod.StringWithCharLimit256]
+type ResourceTypesScope = js.Array[StringWithCharLimit256]
 
-type ResourceValueType = typings.awsSdk.awsSdkStrings.RESOURCE_ID | java.lang.String
+type ResourceValueType = RESOURCE_ID | java.lang.String
 
-type Results = js.Array[typings.awsSdk.configserviceMod.String]
+type Results = js.Array[String]
 
-type RetentionConfigurationList = js.Array[typings.awsSdk.configserviceMod.RetentionConfiguration]
+type RetentionConfigurationList = js.Array[RetentionConfiguration]
 
 type RetentionConfigurationName = java.lang.String
 
-type RetentionConfigurationNameList = js.Array[typings.awsSdk.configserviceMod.RetentionConfigurationName]
+type RetentionConfigurationNameList = js.Array[RetentionConfigurationName]
 
-type RetentionPeriodInDays = scala.Double
+type RetentionPeriodInDays = Double
 
-type RuleLimit = scala.Double
+type RuleLimit = Double
+
+type SSMDocumentName = java.lang.String
+
+type SSMDocumentVersion = java.lang.String
 
 type SchemaVersionId = java.lang.String
 
-type SourceDetails = js.Array[typings.awsSdk.configserviceMod.SourceDetail]
+type SortBy = SCORE | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ASCENDING
+  - typings.awsSdk.awsSdkStrings.DESCENDING
+  - java.lang.String
+*/
+type SortOrder = _SortOrder | java.lang.String
+
+type SourceDetails = js.Array[SourceDetail]
 
 type StackArn = java.lang.String
 
-type StaticParameterValues = js.Array[typings.awsSdk.configserviceMod.StringWithCharLimit256]
+type StaticParameterValues = js.Array[StringWithCharLimit256]
+
+type StoredQueryMetadataList = js.Array[StoredQueryMetadata]
 
 type String = java.lang.String
 
@@ -610,7 +729,7 @@ type StringWithCharLimit64 = java.lang.String
 
 type StringWithCharLimit768 = java.lang.String
 
-type SupplementaryConfiguration = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.configserviceMod.SupplementaryConfigurationValue]
+type SupplementaryConfiguration = StringDictionary[SupplementaryConfigurationValue]
 
 type SupplementaryConfigurationName = java.lang.String
 
@@ -618,21 +737,21 @@ type SupplementaryConfigurationValue = java.lang.String
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.configserviceMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.configserviceMod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
 
-type Tags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.configserviceMod.Value]
+type Tags = StringDictionary[Value]
 
-type TagsList = js.Array[typings.awsSdk.configserviceMod.Tag]
+type TagsList = js.Array[Tag]
 
 type TemplateBody = java.lang.String
 
 type TemplateS3Uri = java.lang.String
 
-type UnprocessedResourceIdentifierList = js.Array[typings.awsSdk.configserviceMod.AggregateResourceIdentifier]
+type UnprocessedResourceIdentifierList = js.Array[AggregateResourceIdentifier]
 
 type Value = java.lang.String
 
@@ -643,4 +762,4 @@ type Version = java.lang.String
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.configserviceMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

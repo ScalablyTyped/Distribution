@@ -15,10 +15,10 @@ object mod {
       * @param successCallback Callback for resolved promise, similar to then's one, but takes multiple parameters instead of single array parameter
       * @param errorCallback Callback for error, the same as for then
       */
-    def spread[TResult](successCallback: js.Function1[/* repeated */ js.Any, IPromise[TResult] | TResult]): IPromise[TResult] = js.native
+    def spread[TResult](successCallback: js.Function1[/* repeated */ Any, IPromise[TResult] | TResult]): IPromise[TResult] = js.native
     def spread[TResult](
-      successCallback: js.Function1[/* repeated */ js.Any, IPromise[TResult] | TResult],
-      errorCallback: js.Function1[/* reason */ js.Any, js.Any]
+      successCallback: js.Function1[/* repeated */ Any, IPromise[TResult] | TResult],
+      errorCallback: js.Function1[/* reason */ Any, Any]
     ): IPromise[TResult] = js.native
   }
 }

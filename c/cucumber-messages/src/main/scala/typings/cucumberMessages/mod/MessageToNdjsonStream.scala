@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cucumber-messages", "MessageToNdjsonStream")
 @js.native
-class MessageToNdjsonStream[T] () extends default[T]
+open class MessageToNdjsonStream[T] () extends default[T]

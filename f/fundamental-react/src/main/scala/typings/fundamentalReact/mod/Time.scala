@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fundamental-react", "Time")
 @js.native
-class Time () extends default
+open class Time () extends default
 object Time {
   
   @JSImport("fundamental-react", "Time")

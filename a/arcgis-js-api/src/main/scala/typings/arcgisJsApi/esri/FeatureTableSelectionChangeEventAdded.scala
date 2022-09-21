@@ -34,12 +34,12 @@ object FeatureTableSelectionChangeEventAdded {
     
     inline def setAttachments(value: js.Array[AttachmentInfo]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    inline def setAttachmentsVarargs(value: AttachmentInfo*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: AttachmentInfo*): Self = StObject.set(x, "attachments", js.Array(value*))
     
     inline def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
     inline def setRelatedRecords(value: js.Array[Graphic]): Self = StObject.set(x, "relatedRecords", value.asInstanceOf[js.Any])
     
-    inline def setRelatedRecordsVarargs(value: Graphic*): Self = StObject.set(x, "relatedRecords", js.Array(value :_*))
+    inline def setRelatedRecordsVarargs(value: Graphic*): Self = StObject.set(x, "relatedRecords", js.Array(value*))
   }
 }

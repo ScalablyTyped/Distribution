@@ -42,7 +42,7 @@ object ApplicableRefactorInfo {
     
     inline def setActions(value: js.Array[RefactorActionInfo]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: RefactorActionInfo*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: RefactorActionInfo*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

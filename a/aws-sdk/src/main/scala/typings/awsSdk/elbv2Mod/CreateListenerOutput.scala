@@ -24,6 +24,6 @@ object CreateListenerOutput {
     
     inline def setListenersUndefined: Self = StObject.set(x, "Listeners", js.undefined)
     
-    inline def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value :_*))
+    inline def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value*))
   }
 }

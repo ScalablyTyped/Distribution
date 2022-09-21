@@ -29,6 +29,6 @@ object AppRestrictionsSchema {
     
     inline def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
     
-    inline def setRestrictionsVarargs(value: AppRestrictionsSchemaRestriction*): Self = StObject.set(x, "restrictions", js.Array(value :_*))
+    inline def setRestrictionsVarargs(value: AppRestrictionsSchemaRestriction*): Self = StObject.set(x, "restrictions", js.Array(value*))
   }
 }

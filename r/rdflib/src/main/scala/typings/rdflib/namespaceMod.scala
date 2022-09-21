@@ -2,14 +2,16 @@ package typings.rdflib
 
 import typings.rdflib.tfTypesMod.NamedNode
 import typings.rdflib.tfTypesMod.RdfJsDataFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rdflib/lib/namespace", JSImport.Namespace)
-@js.native
-object namespaceMod extends js.Object {
-  def default(nsuri: String): js.Function1[/* ln */ String, NamedNode] = js.native
-  def default(nsuri: String, factory: RdfJsDataFactory): js.Function1[/* ln */ String, NamedNode] = js.native
+object namespaceMod {
+  
+  @JSImport("rdflib/lib/namespace", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(nsuri: String): js.Function1[/* ln */ String, NamedNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nsuri.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ln */ String, NamedNode]]
+  inline def default(nsuri: String, factory: RdfJsDataFactory): js.Function1[/* ln */ String, NamedNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nsuri.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ln */ String, NamedNode]]
 }
-

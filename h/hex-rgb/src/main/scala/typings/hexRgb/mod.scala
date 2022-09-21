@@ -12,48 +12,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Convert HEX color to RGBA.
-  @param hex - The color in HEX format. Leading `#` is optional.
-  @example
-  ```
-  import hexRgb = require('hex-rgb');
-  hexRgb('4183c4');
-  //=> {red: 65, green: 131, blue: 196, alpha: 1}
-  hexRgb('#4183c4');
-  //=> {red: 65, green: 131, blue: 196, alpha: 1}
-  hexRgb('#fff');
-  //=> {red: 255, green: 255, blue: 255, alpha: 1}
-  hexRgb('#22222299');
-  //=> {red: 34, green: 34, blue: 34, alpha: 0.6}
-  hexRgb('#0006');
-  //=> {red: 0, green: 0, blue: 0, alpha: 0.4}
-  hexRgb('#cd2222cc');
-  //=> {red: 205, green: 34, blue: 34, alpha: 0.8}
-  hexRgb('#cd2222cc', {format: 'array'});
-  //=> [205, 34, 34, 0.8]
-  hexRgb('#cd2222cc', {format: 'css'});
-  //=> 'rgb(205 34 34 / 80%)'
-  hexRgb('#000', {format: 'css'});
-  //=> 'rgb(0 0 0)'
-  ```
-  */
-  inline def apply(hex: String): RgbaObject = ^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any]).asInstanceOf[RgbaObject]
-  inline def apply(hex: String, options: Optionsformatarray): RgbaTuple = (^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RgbaTuple]
-  inline def apply(hex: String, options: Optionsformatcss): String = (^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(hex: String, options: Optionsformatobject): RgbaObject = (^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RgbaObject]
-  
   @JSImport("hex-rgb", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(hex: String): RgbaObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hex.asInstanceOf[js.Any]).asInstanceOf[RgbaObject]
+  inline def default(hex: String, options: Optionsformatarray): RgbaTuple = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RgbaTuple]
+  inline def default(hex: String, options: Optionsformatcss): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(hex: String, options: Optionsformatobject): RgbaObject = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RgbaObject]
+  
   trait Options extends StObject {
     
     /**
-    		The RGB output format.
-    		Note that when using the `css` format, the value of the alpha channel is rounded to two decimal places.
-    		@default 'object'
-    		*/
+    	Set the alpha of the color.
+    	This overrides any existing alpha component in the Hex color string. For example, the `99` in `#22222299`.
+    	The number must be in the range 0 to 1.
+    	*/
+    val alpha: js.UndefOr[Double] = js.undefined
+    
+    /**
+    	The RGB output format.
+    	Note that when using the `css` format, the value of the alpha channel is rounded to two decimal places.
+    	@default 'object'
+    	*/
     val format: js.UndefOr[`object` | array | css] = js.undefined
   }
   object Options {
@@ -64,6 +45,10 @@ object mod {
     }
     
     extension [Self <: Options](x: Self) {
+      
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
       inline def setFormat(value: `object` | array | css): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -100,6 +85,5 @@ object mod {
     }
   }
   
-  // TODO: Use named tuples here when TS 4 is more commonly used.
-  type RgbaTuple = js.Tuple4[Double, Double, Double, Double]
+  type RgbaTuple = js.Tuple4[/* red */ Double, /* green */ Double, /* blue */ Double, /* alpha */ Double]
 }

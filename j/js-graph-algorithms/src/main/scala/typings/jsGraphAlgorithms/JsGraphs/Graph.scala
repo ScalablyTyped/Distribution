@@ -12,15 +12,15 @@ trait Graph extends StObject {
   
   def adj(v: Double): js.Array[Double]
   
-  /* private */ var adjList: js.Any
+  /* private */ var adjList: Any
   
   def edge(v: Double, w: Double): Edge | Null
   
-  /* private */ var edges: js.Any
+  /* private */ var edges: Any
   
   def node(v: Double): Node
   
-  /* private */ var nodeInfo: js.Any
+  /* private */ var nodeInfo: Any
 }
 object Graph {
   
@@ -28,11 +28,11 @@ object Graph {
     V: Double,
     addEdge: (Double, Double) => Unit,
     adj: Double => js.Array[Double],
-    adjList: js.Any,
+    adjList: Any,
     edge: (Double, Double) => Edge | Null,
-    edges: js.Any,
+    edges: Any,
     node: Double => Node,
-    nodeInfo: js.Any
+    nodeInfo: Any
   ): Graph = {
     val __obj = js.Dynamic.literal(V = V.asInstanceOf[js.Any], addEdge = js.Any.fromFunction2(addEdge), adj = js.Any.fromFunction1(adj), adjList = adjList.asInstanceOf[js.Any], edge = js.Any.fromFunction2(edge), edges = edges.asInstanceOf[js.Any], node = js.Any.fromFunction1(node), nodeInfo = nodeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Graph]
@@ -44,15 +44,15 @@ object Graph {
     
     inline def setAdj(value: Double => js.Array[Double]): Self = StObject.set(x, "adj", js.Any.fromFunction1(value))
     
-    inline def setAdjList(value: js.Any): Self = StObject.set(x, "adjList", value.asInstanceOf[js.Any])
+    inline def setAdjList(value: Any): Self = StObject.set(x, "adjList", value.asInstanceOf[js.Any])
     
     inline def setEdge(value: (Double, Double) => Edge | Null): Self = StObject.set(x, "edge", js.Any.fromFunction2(value))
     
-    inline def setEdges(value: js.Any): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: Any): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
     inline def setNode(value: Double => Node): Self = StObject.set(x, "node", js.Any.fromFunction1(value))
     
-    inline def setNodeInfo(value: js.Any): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
+    inline def setNodeInfo(value: Any): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
     
     inline def setV(value: Double): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
   }

@@ -13,12 +13,12 @@ object openfinEnvMod {
   
   @JSImport("openfin/_v2/environment/openfin-env", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with OpenFinEnvironment {
     
     /* CompleteClass */
-    override def createChildWindow(options: js.Any): js.Promise[js.Any] = js.native
+    override def createChildWindow(options: Any): js.Promise[Any] = js.native
     
     /* CompleteClass */
     override def getCurrentEntityIdentity(): Identity = js.native
@@ -27,7 +27,7 @@ object openfinEnvMod {
     override def getCurrentEntityType(): EntityType = js.native
     
     /* CompleteClass */
-    override def getNextMessageId(): js.Any = js.native
+    override def getNextMessageId(): Any = js.native
     
     /* CompleteClass */
     override def getRandomId(): String = js.native
@@ -39,13 +39,13 @@ object openfinEnvMod {
     override def isWindowExists(uuid: String, name: String): Boolean = js.native
     
     /* CompleteClass */
-    override def raiseEvent(eventName: String, eventArgs: js.Any): Unit = js.native
+    override def raiseEvent(eventName: String, eventArgs: Any): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var raiseEventAsync: js.Any = js.native
+    var raiseEventAsync: Any = js.native
     
     /* private */ /* CompleteClass */
-    var resolveUrl: js.Any = js.native
+    var resolveUrl: Any = js.native
     
     /* CompleteClass */
     override def retrievePort(config: NewConnectConfig): js.Promise[Double] = js.native
@@ -58,23 +58,23 @@ object openfinEnvMod {
     extends StObject
        with Environment {
     
-    /* private */ var raiseEventAsync: js.Any
+    /* private */ var raiseEventAsync: Any
     
-    /* private */ var resolveUrl: js.Any
+    /* private */ var resolveUrl: Any
   }
   object OpenFinEnvironment {
     
     inline def apply(
-      createChildWindow: js.Any => js.Promise[js.Any],
+      createChildWindow: Any => js.Promise[Any],
       getCurrentEntityIdentity: () => Identity,
       getCurrentEntityType: () => EntityType,
-      getNextMessageId: () => js.Any,
+      getNextMessageId: () => Any,
       getRandomId: () => String,
       getWebWindow: Identity => Window,
       isWindowExists: (String, String) => Boolean,
-      raiseEvent: (String, js.Any) => Unit,
-      raiseEventAsync: js.Any,
-      resolveUrl: js.Any,
+      raiseEvent: (String, Any) => Unit,
+      raiseEventAsync: Any,
+      resolveUrl: Any,
       retrievePort: NewConnectConfig => js.Promise[Double],
       writeToken: (String, String) => js.Promise[String]
     ): OpenFinEnvironment = {
@@ -84,9 +84,9 @@ object openfinEnvMod {
     
     extension [Self <: OpenFinEnvironment](x: Self) {
       
-      inline def setRaiseEventAsync(value: js.Any): Self = StObject.set(x, "raiseEventAsync", value.asInstanceOf[js.Any])
+      inline def setRaiseEventAsync(value: Any): Self = StObject.set(x, "raiseEventAsync", value.asInstanceOf[js.Any])
       
-      inline def setResolveUrl(value: js.Any): Self = StObject.set(x, "resolveUrl", value.asInstanceOf[js.Any])
+      inline def setResolveUrl(value: Any): Self = StObject.set(x, "resolveUrl", value.asInstanceOf[js.Any])
     }
   }
 }

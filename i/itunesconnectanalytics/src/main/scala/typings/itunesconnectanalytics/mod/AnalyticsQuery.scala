@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("itunesconnectanalytics", "AnalyticsQuery")
 @js.native
-class AnalyticsQuery protected () extends StObject {
+open class AnalyticsQuery protected () extends StObject {
   def this(`type`: String, appId: String, config: QueryConfig) = this()
   
   def date(start: QueryDateTypes, end: QueryDateTypes): AnalyticsQuery = js.native

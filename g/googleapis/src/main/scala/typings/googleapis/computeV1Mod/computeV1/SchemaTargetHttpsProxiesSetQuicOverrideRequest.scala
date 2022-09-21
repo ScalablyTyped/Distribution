@@ -9,7 +9,7 @@ trait SchemaTargetHttpsProxiesSetQuicOverrideRequest extends StObject {
   /**
     * QUIC policy for the TargetHttpsProxy resource.
     */
-  var quicOverride: js.UndefOr[String] = js.undefined
+  var quicOverride: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTargetHttpsProxiesSetQuicOverrideRequest {
   
@@ -21,6 +21,8 @@ object SchemaTargetHttpsProxiesSetQuicOverrideRequest {
   extension [Self <: SchemaTargetHttpsProxiesSetQuicOverrideRequest](x: Self) {
     
     inline def setQuicOverride(value: String): Self = StObject.set(x, "quicOverride", value.asInstanceOf[js.Any])
+    
+    inline def setQuicOverrideNull: Self = StObject.set(x, "quicOverride", null)
     
     inline def setQuicOverrideUndefined: Self = StObject.set(x, "quicOverride", js.undefined)
   }

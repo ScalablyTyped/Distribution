@@ -26,7 +26,6 @@ import typings.chromeApps.chrome.fileSystemProvider.UnmountOptions
 import typings.chromeApps.chrome.fileSystemProvider.UnmountRequestedEventOptions
 import typings.chromeApps.chrome.fileSystemProvider.WatcherRequestedEventOptions
 import typings.chromeApps.chrome.fileSystemProvider.WriteFileRequestedEventOptions
-import typings.std.ArrayBuffer
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -59,10 +58,8 @@ trait TypeoffileSystemProvider extends StObject {
   
   /**
     * Internal interfaces, not for use
-    * @private
-    * @internal
     */
-  val _internal_ : js.Any = js.native
+  val _internal_ : Any = js.native
   
   /**
     * Returns information about a file system with the passed fileSystemId.
@@ -515,7 +512,7 @@ trait TypeoffileSystemProvider extends StObject {
   val onReadFileRequested: Event[
     js.Function3[
       /* options */ ReadFileRequestedEventOptions, 
-      /* successCallback */ js.Function2[/* data */ ArrayBuffer, /* hasMore */ Boolean, Unit], 
+      /* successCallback */ js.Function2[/* data */ js.typedarray.ArrayBuffer, /* hasMore */ Boolean, Unit], 
       /* errorCallback */ js.Function1[
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 

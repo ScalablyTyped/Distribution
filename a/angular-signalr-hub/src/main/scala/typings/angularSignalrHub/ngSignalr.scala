@@ -15,7 +15,7 @@ object ngSignalr {
   
   trait Hub extends StObject {
     
-    def connect(): JQueryPromise[js.Any]
+    def connect(): JQueryPromise[Any]
     
     var connection: Connection
     
@@ -23,21 +23,21 @@ object ngSignalr {
     
     var hubName: String
     
-    def invoke(method: String, args: js.Any*): JQueryDeferred[js.Any]
+    def invoke(method: String, args: Any*): JQueryDeferred[Any]
     
-    def on(event: String, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit
+    def on(event: String, fn: js.Function1[/* repeated */ Any, Unit]): Unit
     
     var proxy: Proxy
   }
   object Hub {
     
     inline def apply(
-      connect: () => JQueryPromise[js.Any],
+      connect: () => JQueryPromise[Any],
       connection: Connection,
       disconnect: () => Unit,
       hubName: String,
-      invoke: (String, /* repeated */ js.Any) => JQueryDeferred[js.Any],
-      on: (String, js.Function1[/* repeated */ js.Any, Unit]) => Unit,
+      invoke: (String, /* repeated */ Any) => JQueryDeferred[Any],
+      on: (String, js.Function1[/* repeated */ Any, Unit]) => Unit,
       proxy: Proxy
     ): Hub = {
       val __obj = js.Dynamic.literal(connect = js.Any.fromFunction0(connect), connection = connection.asInstanceOf[js.Any], disconnect = js.Any.fromFunction0(disconnect), hubName = hubName.asInstanceOf[js.Any], invoke = js.Any.fromFunction2(invoke), on = js.Any.fromFunction2(on), proxy = proxy.asInstanceOf[js.Any])
@@ -46,7 +46,7 @@ object ngSignalr {
     
     extension [Self <: Hub](x: Self) {
       
-      inline def setConnect(value: () => JQueryPromise[js.Any]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
+      inline def setConnect(value: () => JQueryPromise[Any]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
       inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -54,9 +54,9 @@ object ngSignalr {
       
       inline def setHubName(value: String): Self = StObject.set(x, "hubName", value.asInstanceOf[js.Any])
       
-      inline def setInvoke(value: (String, /* repeated */ js.Any) => JQueryDeferred[js.Any]): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
+      inline def setInvoke(value: (String, /* repeated */ Any) => JQueryDeferred[Any]): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
       
-      inline def setOn(value: (String, js.Function1[/* repeated */ js.Any, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function1[/* repeated */ Any, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
       inline def setProxy(value: Proxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     }
@@ -80,7 +80,7 @@ object ngSignalr {
     /**
       * Collection of client side callbacks
       */
-    var listeners: js.UndefOr[StringDictionary[js.Function1[/* repeated */ js.Any, Unit]]] = js.undefined
+    var listeners: js.UndefOr[StringDictionary[js.Function1[/* repeated */ Any, Unit]]] = js.undefined
     
     /**
       * Enable/disable logging
@@ -110,7 +110,7 @@ object ngSignalr {
     /**
       * Sets transport method (e.g    'longPolling'    or    ['webSockets', 'longPolling'] )
       */
-    var transport: js.UndefOr[js.Any] = js.undefined
+    var transport: js.UndefOr[Any] = js.undefined
     
     /**
       * Use a shared global connection or create a new one just for this hub, defaults to true
@@ -130,7 +130,7 @@ object ngSignalr {
       
       inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
-      inline def setListeners(value: StringDictionary[js.Function1[/* repeated */ js.Any, Unit]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: StringDictionary[js.Function1[/* repeated */ Any, Unit]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
       inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
       
@@ -142,7 +142,7 @@ object ngSignalr {
       
       inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value*))
       
       inline def setQueryParams(value: StringDictionary[String]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
@@ -156,7 +156,7 @@ object ngSignalr {
       
       inline def setStateChangedUndefined: Self = StObject.set(x, "stateChanged", js.undefined)
       
-      inline def setTransport(value: js.Any): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: Any): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
       inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
       

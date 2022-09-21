@@ -10,10 +10,10 @@ Solver / formatter for Nonograms (Griddlers, Picross, Hanjie, Japanese Crossword
 | ------------------ | :-------------: |
 | Full name          | nonogram-solver |
 | Keywords           | nonogram, griddler, picross, hanjie, japanese crossword, solve, solver, puzzle, game, serialization |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 633 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 61.666666666666664 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/thomasr/nonogram-solver)

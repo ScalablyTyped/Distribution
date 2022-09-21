@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matrix-appservice-bridge", "MembershipQueue")
 @js.native
-class MembershipQueue protected ()
+open class MembershipQueue protected ()
   extends typings.matrixAppserviceBridge.membershipQueueMod.MembershipQueue {
   def this(bridge: typings.matrixAppserviceBridge.bridgeMod.Bridge, opts: MembershipQueueOpts) = this()
 }

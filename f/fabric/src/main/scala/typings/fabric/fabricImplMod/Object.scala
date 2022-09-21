@@ -1,5 +1,6 @@
 package typings.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.fabric.anon.Br
 import typings.fabric.anon.E
 import typings.fabric.anon.Mb
@@ -10,13 +11,11 @@ import typings.fabric.anon.X
 import typings.fabric.anon.`0`
 import typings.fabric.fabricStrings.bl
 import typings.fabric.fabricStrings.br
-import typings.fabric.fabricStrings.fill
 import typings.fabric.fabricStrings.mb
 import typings.fabric.fabricStrings.ml
 import typings.fabric.fabricStrings.mr
 import typings.fabric.fabricStrings.mt
 import typings.fabric.fabricStrings.mtr
-import typings.fabric.fabricStrings.stroke
 import typings.fabric.fabricStrings.tl
 import typings.fabric.fabricStrings.tr
 import typings.std.CanvasRenderingContext2D
@@ -29,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric/fabric-impl", "Object")
 @js.native
-class Object ()
+open class Object ()
   extends StObject
      with IObservable[Object]
      with IObjectOptions
@@ -125,7 +124,7 @@ class Object ()
     * @param {String} key
     * @param {*} value
     */
-  def _set(key: String, value: js.Any): Object = js.native
+  def _set(key: String, value: Any): Object = js.native
   
   /**
     * @private
@@ -165,15 +164,15 @@ class Object ()
     * @return {Object} Object with tl, tr, br, bl ....
     * @chainable
     */
-  def calcCoords(): js.Any = js.native
-  def calcCoords(absolute: Boolean): js.Any = js.native
+  def calcCoords(): Any = js.native
+  def calcCoords(absolute: Boolean): Any = js.native
   
   /**
     * calculate transform matrix that represents the current transformations from the
     * object's properties, this matrix does not include the group transformation
     * @return {Array} transform matrix for the object
     */
-  def calcOwnMatrix(): js.Array[js.Any] = js.native
+  def calcOwnMatrix(): js.Array[Any] = js.native
   
   /**
     * calculate trasform Matrix that represent current transformation from
@@ -181,8 +180,8 @@ class Object ()
     * @param {Boolean} [skipGroup] return transformMatrix for object and not go upward with parents
     * @return {Array} matrix Transform Matrix for the object
     */
-  def calcTransformMatrix(): js.Array[js.Any] = js.native
-  def calcTransformMatrix(skipGroup: Boolean): js.Array[js.Any] = js.native
+  def calcTransformMatrix(): js.Array[Any] = js.native
+  def calcTransformMatrix(skipGroup: Boolean): js.Array[Any] = js.native
   
   /**
     * Centers object vertically and horizontally on canvas to which is was added last
@@ -231,13 +230,15 @@ class Object ()
     * @return {Boolean} true if point is inside the object
     */
   def containsPoint(point: Point): Boolean = js.native
-  def containsPoint(point: Point, lines: js.Any): Boolean = js.native
-  def containsPoint(point: Point, lines: js.Any, absolute: Boolean): Boolean = js.native
-  def containsPoint(point: Point, lines: js.Any, absolute: Boolean, calculate: Boolean): Boolean = js.native
-  def containsPoint(point: Point, lines: js.Any, absolute: Unit, calculate: Boolean): Boolean = js.native
+  def containsPoint(point: Point, lines: Any): Boolean = js.native
+  def containsPoint(point: Point, lines: Any, absolute: Boolean): Boolean = js.native
+  def containsPoint(point: Point, lines: Any, absolute: Boolean, calculate: Boolean): Boolean = js.native
+  def containsPoint(point: Point, lines: Any, absolute: Unit, calculate: Boolean): Boolean = js.native
   def containsPoint(point: Point, lines: Unit, absolute: Boolean): Boolean = js.native
   def containsPoint(point: Point, lines: Unit, absolute: Boolean, calculate: Boolean): Boolean = js.native
   def containsPoint(point: Point, lines: Unit, absolute: Unit, calculate: Boolean): Boolean = js.native
+  
+  var controls: StringDictionary[Control] = js.native
   
   // functions from interactivity mixin
   // -----------------------------------------------------------------------------------------------------------------------------------
@@ -251,7 +252,7 @@ class Object ()
     * @chainable
     */
   def drawBorders(ctx: CanvasRenderingContext2D): Object = js.native
-  def drawBorders(ctx: CanvasRenderingContext2D, styleOverride: js.Any): Object = js.native
+  def drawBorders(ctx: CanvasRenderingContext2D, styleOverride: Any): Object = js.native
   
   /**
     * Draws borders of an object's bounding box when it is inside a group.
@@ -264,9 +265,9 @@ class Object ()
     * @chainable
     */
   def drawBordersInGroup(ctx: CanvasRenderingContext2D): Object = js.native
-  def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: js.Any): Object = js.native
-  def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: js.Any, styleOverride: js.Any): Object = js.native
-  def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: Unit, styleOverride: js.Any): Object = js.native
+  def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: Any): Object = js.native
+  def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: Any, styleOverride: Any): Object = js.native
+  def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: Unit, styleOverride: Any): Object = js.native
   
   /**
     * Paint the cached copy of the object on the target context.
@@ -290,7 +291,7 @@ class Object ()
     * @chainable
     */
   def drawControls(ctx: CanvasRenderingContext2D): Object = js.native
-  def drawControls(ctx: CanvasRenderingContext2D, styleOverride: js.Any): Object = js.native
+  def drawControls(ctx: CanvasRenderingContext2D, styleOverride: Any): Object = js.native
   
   /**
     * Draws corners of an object's bounding box.
@@ -316,9 +317,6 @@ class Object ()
     * @chainable
     */
   def drawSelectionBackground(ctx: CanvasRenderingContext2D): Object = js.native
-  
-  def fire(eventName: String): Unit = js.native
-  def fire(eventName: String, options: js.Any): Unit = js.native
   
   /**
     * Same as straighten but with animation
@@ -351,16 +349,18 @@ class Object ()
   /**
     * return correct set of coordinates for intersection
     */
-  def getCoords(): js.Any = js.native
-  def getCoords(absolute: Boolean): js.Any = js.native
-  def getCoords(absolute: Boolean, calculate: Boolean): js.Any = js.native
-  def getCoords(absolute: Unit, calculate: Boolean): js.Any = js.native
+  def getCoords(): js.Tuple4[Point, Point, Point, Point] = js.native
+  def getCoords(absolute: Boolean): js.Tuple4[Point, Point, Point, Point] = js.native
+  def getCoords(absolute: Boolean, calculate: Boolean): js.Tuple4[Point, Point, Point, Point] = js.native
+  def getCoords(absolute: Unit, calculate: Boolean): js.Tuple4[Point, Point, Point, Point] = js.native
   
   /**
     * Returns coordinates of a pointer relative to an object
     * @param e Event to operate upon
     * @param [pointer] Pointer to operate upon (instead of event)
     */
+  def getLocalPointer(): X = js.native
+  def getLocalPointer(e: Unit, pointer: X): X = js.native
   def getLocalPointer(e: Event): X = js.native
   def getLocalPointer(e: Event, pointer: X): X = js.native
   
@@ -416,8 +416,8 @@ class Object ()
     * @param {Boolean} useWhiteSpace a boolean to include an additional attribute in the style.
     * @return {String}
     */
-  def getSvgSpanStyles(style: js.Any): String = js.native
-  def getSvgSpanStyles(style: js.Any, useWhiteSpace: Boolean): String = js.native
+  def getSvgSpanStyles(style: Any): String = js.native
+  def getSvgSpanStyles(style: Any, useWhiteSpace: Boolean): String = js.native
   
   // functions from object svg export mixin
   // -----------------------------------------------------------------------------------------------------------------------------------
@@ -434,7 +434,7 @@ class Object ()
     * @param {Object} style the object from which to retrieve style properties
     * @return {String}
     */
-  def getSvgTextDecoration(style: js.Any): String = js.native
+  def getSvgTextDecoration(style: Any): String = js.native
   
   /**
     * Returns transform-string for svg-export
@@ -460,7 +460,7 @@ class Object ()
   /**
     * Retrieves viewportTransform from Object's canvas if possible
     */
-  def getViewportTransform(): js.Array[js.Any] = js.native
+  def getViewportTransform(): js.Array[Any] = js.native
   
   // functions from stateful mixin
   // -----------------------------------------------------------------------------------------------------------------------------------
@@ -494,10 +494,10 @@ class Object ()
     * @param {Boolean} [calculate] use coordinates of current position instead of .oCoords
     * @return {Boolean} true if object intersects with an area formed by 2 points
     */
-  def intersectsWithRect(pointTL: js.Any, pointBR: js.Any): Boolean = js.native
-  def intersectsWithRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean): Boolean = js.native
-  def intersectsWithRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean, calculate: Boolean): Boolean = js.native
-  def intersectsWithRect(pointTL: js.Any, pointBR: js.Any, absolute: Unit, calculate: Boolean): Boolean = js.native
+  def intersectsWithRect(pointTL: Any, pointBR: Any): Boolean = js.native
+  def intersectsWithRect(pointTL: Any, pointBR: Any, absolute: Boolean): Boolean = js.native
+  def intersectsWithRect(pointTL: Any, pointBR: Any, absolute: Boolean, calculate: Boolean): Boolean = js.native
+  def intersectsWithRect(pointTL: Any, pointBR: Any, absolute: Unit, calculate: Boolean): Boolean = js.native
   
   /**
     * Check if cache is dirty
@@ -524,10 +524,10 @@ class Object ()
     * @param pointTL top-left point of area
     * @param pointBR bottom-right point of area
     */
-  def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any): Boolean = js.native
-  def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean): Boolean = js.native
-  def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean, calculate: Boolean): Boolean = js.native
-  def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any, absolute: Unit, calculate: Boolean): Boolean = js.native
+  def isContainedWithinRect(pointTL: Any, pointBR: Any): Boolean = js.native
+  def isContainedWithinRect(pointTL: Any, pointBR: Any, absolute: Boolean): Boolean = js.native
+  def isContainedWithinRect(pointTL: Any, pointBR: Any, absolute: Boolean, calculate: Boolean): Boolean = js.native
+  def isContainedWithinRect(pointTL: Any, pointBR: Any, absolute: Unit, calculate: Boolean): Boolean = js.native
   
   /**
     * Returns true if the specified control is visible, false otherwise.
@@ -618,15 +618,15 @@ class Object ()
     * Scales an object to a given height, with respect to bounding box (scaling by x/y equally)
     * @param value New height value
     */
-  def scaleToHeight(value: Double): Object = js.native
-  def scaleToHeight(value: Double, absolute: Boolean): Object = js.native
+  def scaleToHeight(value: Double): this.type = js.native
+  def scaleToHeight(value: Double, absolute: Boolean): this.type = js.native
   
   /**
     * Scales an object to a given width, with respect to bounding box (scaling by x/y equally)
     * @param value New width value
     */
-  def scaleToWidth(value: Double): Object = js.native
-  def scaleToWidth(value: Double, absolute: Boolean): Object = js.native
+  def scaleToWidth(value: Double): this.type = js.native
+  def scaleToWidth(value: Double, absolute: Boolean): this.type = js.native
   
   /**
     * Moves an object down in stack of drawn objects
@@ -673,12 +673,6 @@ class Object ()
   def setAngle(angle: Double): Object = js.native
   
   /**
-    * Sets "color" of an instance (alias of `set('fill', …)`)
-    * @param color Color value
-    */
-  def setColor(color: String): Object = js.native
-  
-  /**
     * Sets the visibility of the specified control.
     * @param controlName The name of the control. Possible values are 'tl', 'tr', 'br', 'bl', 'ml', 'mt', 'mr', 'mb', 'mtr'.
     * @param visible true to set the specified control visible, false otherwise
@@ -696,31 +690,16 @@ class Object ()
   // -------------------------------------------------------------------------------------------------------------------------------
   /**
     * Sets corner position coordinates based on current angle, width and height.
+    * oCoords are used to find the corners
+    * aCoords are used to quickly find an object on the canvas
+    * lineCoords are used to quickly find object during pointer events.
     * See {@link https://github.com/kangax/fabric.js/wiki/When-to-call-setCoords|When-to-call-setCoords}
-    * @param {Boolean} [ignoreZoom] set oCoords with or without the viewport transform.
-    * @param {Boolean} [skipAbsolute] skip calculation of aCoords, usefull in setViewportTransform
+    * @param {Boolean} [skipCorners] skip calculation of oCoords.
     * @return {fabric.Object} thisArg
     * @chainable
     */
-  def setCoords(): Object = js.native
-  def setCoords(ignoreZoom: Boolean): Object = js.native
-  def setCoords(ignoreZoom: Boolean, skipAbsolute: Boolean): Object = js.native
-  def setCoords(ignoreZoom: Unit, skipAbsolute: Boolean): Object = js.native
-  
-  @JSName("setGradient")
-  def setGradient_fill(property: fill): Object = js.native
-  @JSName("setGradient")
-  def setGradient_fill(property: fill, options: OGradientOptions): Object = js.native
-  /**
-    * Sets gradient (fill or stroke) of an object
-    * **Backwards incompatibility note:** This method was named "setGradientFill" until v1.1.0
-    * @param property Property name 'stroke' or 'fill'
-    * @param [options] Options object
-    */
-  @JSName("setGradient")
-  def setGradient_stroke(property: stroke): Object = js.native
-  @JSName("setGradient")
-  def setGradient_stroke(property: stroke, options: OGradientOptions): Object = js.native
+  def setCoords(): this.type = js.native
+  def setCoords(skipCorners: Boolean): this.type = js.native
   
   /**
     * This callback function is called by the parent group of an object every
@@ -735,17 +714,11 @@ class Object ()
     * @param [options] Options object
     */
   def setOptions(): Unit = js.native
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   /* Sets object's properties from options
     * @param {Object} [options] Options object
     */
   def setOptions(options: IObjectOptions): Unit = js.native
-  
-  /**
-    * Sets pattern fill of an object
-    * @param options Options object
-    */
-  def setPatternFill(options: IFillOptions, callback: js.Function): Object = js.native
   
   /**
     * Sets the position of the object taking into consideration the object's origin
@@ -754,14 +727,6 @@ class Object ()
     * @param originY Vertical origin: 'top', 'center' or 'bottom'
     */
   def setPositionByOrigin(pos: Point, originX: String, originY: String): Unit = js.native
-  
-  /**
-    * Sets shadow of an object
-    * @param [options] Options object or string (e.g. "2px 2px 10px rgba(0,0,0,0.2)")
-    */
-  def setShadow(): Object = js.native
-  def setShadow(options: String): Object = js.native
-  def setShadow(options: Shadow): Object = js.native
   
   /**
     * Sets sourcePath of an object
@@ -775,7 +740,7 @@ class Object ()
     * @return {fabric.Object} thisArg
     */
   def setupState(): Object = js.native
-  def setupState(options: js.Any): Object = js.native
+  def setupState(options: Any): Object = js.native
   
   /**
     * Decide if the object should cache or not. Create its own cache level
@@ -828,15 +793,15 @@ class Object ()
     * Returns (dataless) object representation of an instance
     * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     */
-  def toDatalessObject(): js.Any = js.native
-  def toDatalessObject(propertiesToInclude: js.Array[String]): js.Any = js.native
+  def toDatalessObject(): Any = js.native
+  def toDatalessObject(propertiesToInclude: js.Array[String]): Any = js.native
   
   /**
     * Returns a JSON representation of an instance
     * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     */
-  def toJSON(): js.Any = js.native
-  def toJSON(propertiesToInclude: js.Array[String]): js.Any = js.native
+  def toJSON(): Any = js.native
+  def toJSON(propertiesToInclude: js.Array[String]): Any = js.native
   
   /**
     * Returns the point in local coordinates
@@ -850,8 +815,8 @@ class Object ()
     * Returns an object representation of an instance
     * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     */
-  def toObject(): js.Any = js.native
-  def toObject(propertiesToInclude: js.Array[String]): js.Any = js.native
+  def toObject(): Any = js.native
+  def toObject(propertiesToInclude: js.Array[String]): Any = js.native
   
   /**
     * Returns svg representation of an instance
@@ -959,6 +924,6 @@ object Object {
     */
   inline def _fromObject(className: String, `object`: Object): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Object]
   inline def _fromObject(className: String, `object`: Object, callback: js.Function): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Object]
-  inline def _fromObject(className: String, `object`: Object, callback: js.Function, extraParam: js.Any): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], extraParam.asInstanceOf[js.Any])).asInstanceOf[Object]
-  inline def _fromObject(className: String, `object`: Object, callback: Unit, extraParam: js.Any): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], extraParam.asInstanceOf[js.Any])).asInstanceOf[Object]
+  inline def _fromObject(className: String, `object`: Object, callback: js.Function, extraParam: Any): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], extraParam.asInstanceOf[js.Any])).asInstanceOf[Object]
+  inline def _fromObject(className: String, `object`: Object, callback: Unit, extraParam: Any): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], extraParam.asInstanceOf[js.Any])).asInstanceOf[Object]
 }

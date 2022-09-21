@@ -1,154 +1,152 @@
 package typings.reactLoaderSpinner
 
-import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.CSSProperties
-import typings.react.mod.FC
+import typings.react.mod.FunctionComponent
+import typings.react.mod.ReactElement
+import typings.react.mod.global.JSX.Element
+import typings.reactLoaderSpinner.loaderAudioMod.AudioProps
+import typings.reactLoaderSpinner.loaderBallTriangleMod.BallTriangleProps
+import typings.reactLoaderSpinner.loaderBarsMod.BarsProps
+import typings.reactLoaderSpinner.loaderBlocksMod.BlocksProps
+import typings.reactLoaderSpinner.loaderCirclesMod.CirclesProps
+import typings.reactLoaderSpinner.loaderCirclesWithBarMod.Props
+import typings.reactLoaderSpinner.loaderColorRingMod.ColorRingProps
+import typings.reactLoaderSpinner.loaderCommentMod.CommentProps
+import typings.reactLoaderSpinner.loaderDiscussMod.DiscussProps
+import typings.reactLoaderSpinner.loaderDnaMod.DNAProps
+import typings.reactLoaderSpinner.loaderFallingLinesMod.FallingLinesProps
+import typings.reactLoaderSpinner.loaderFidgetSpinnerMod.FidgetSpinnerProps
+import typings.reactLoaderSpinner.loaderGridMod.GridProps
+import typings.reactLoaderSpinner.loaderHeartsMod.HeartsProps
+import typings.reactLoaderSpinner.loaderMagnifyingGlassMod.MagnifyingGlassProps
+import typings.reactLoaderSpinner.loaderMutatingDotsMod.MutatingDotsProps
+import typings.reactLoaderSpinner.loaderOvalMod.OvalProps
+import typings.reactLoaderSpinner.loaderProgressBarMod.ProgressBarProps
+import typings.reactLoaderSpinner.loaderPuffMod.PuffProps
+import typings.reactLoaderSpinner.loaderRadioMod.RadioProps
+import typings.reactLoaderSpinner.loaderRevolvingDotMod.RevolvingDotProps
+import typings.reactLoaderSpinner.loaderRingsMod.RingsProps
+import typings.reactLoaderSpinner.loaderRotatingSquareMod.RotatingSquareProps
+import typings.reactLoaderSpinner.loaderRotatingTrianglesMod.RotatingTrianglesProps
+import typings.reactLoaderSpinner.loaderTailSpinMod.TailSpinProps
+import typings.reactLoaderSpinner.loaderThreeDotsMod.ThreeDotsProps
+import typings.reactLoaderSpinner.loaderTriangleMod.TriangleProps
+import typings.reactLoaderSpinner.loaderVortexMod.VortexProps
+import typings.reactLoaderSpinner.loaderWatchMod.WatchProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
-  @JSImport("react-loader-spinner", JSImport.Default)
+  @JSImport("react-loader-spinner", JSImport.Namespace)
   @js.native
-  val default: FC[LoaderProps] = js.native
+  val ^ : js.Any = js.native
   
-  trait LoaderProps extends StObject {
-    
-    var className: js.UndefOr[String] = js.undefined
-    
-    var color: js.UndefOr[String] = js.undefined
-    
-    var height: js.UndefOr[Double] = js.undefined
-    
-    var radius: js.UndefOr[Double] = js.undefined
-    
-    var secondaryColor: js.UndefOr[String] = js.undefined
-    
-    var style: js.UndefOr[CSSProperties] = js.undefined
-    
-    var timeout: js.UndefOr[Double] = js.undefined
-    
-    // in milliseconds
-    var `type`: js.UndefOr[Types] = js.undefined
-    
-    var visible: js.UndefOr[Boolean | String] = js.undefined
-    
-    var width: js.UndefOr[Double] = js.undefined
-  }
-  object LoaderProps {
-    
-    inline def apply(): LoaderProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[LoaderProps]
-    }
-    
-    extension [Self <: LoaderProps](x: Self) {
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-      
-      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-      
-      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-      
-      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
-      
-      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
-      
-      inline def setSecondaryColor(value: String): Self = StObject.set(x, "secondaryColor", value.asInstanceOf[js.Any])
-      
-      inline def setSecondaryColorUndefined: Self = StObject.set(x, "secondaryColor", js.undefined)
-      
-      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-      
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
-      
-      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-      
-      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
-      
-      inline def setType(value: Types): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-      
-      inline def setVisible(value: Boolean | String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
-      
-      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-    }
-  }
+  @JSImport("react-loader-spinner", "Audio")
+  @js.native
+  val Audio: FunctionComponent[AudioProps] = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Audio
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.BallTriangle
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Bars
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Circles
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Grid
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Hearts
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.MutatingDots
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.None
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.NotSpecified
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Oval
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Plane
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Puff
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.RevolvingDot
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Rings
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.TailSpin
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.ThreeDots
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Triangle
-    - typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Watch
-  */
-  trait Types extends StObject
-  object Types {
-    
-    inline def Audio: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Audio = "Audio".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Audio]
-    
-    inline def BallTriangle: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.BallTriangle = "BallTriangle".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.BallTriangle]
-    
-    inline def Bars: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Bars = "Bars".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Bars]
-    
-    inline def Circles: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Circles = "Circles".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Circles]
-    
-    inline def Grid: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Grid = "Grid".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Grid]
-    
-    inline def Hearts: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Hearts = "Hearts".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Hearts]
-    
-    inline def MutatingDots: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.MutatingDots = "MutatingDots".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.MutatingDots]
-    
-    inline def None: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.None = "None".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.None]
-    
-    inline def NotSpecified: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.NotSpecified = "NotSpecified".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.NotSpecified]
-    
-    inline def Oval: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Oval = "Oval".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Oval]
-    
-    inline def Plane: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Plane = "Plane".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Plane]
-    
-    inline def Puff: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Puff = "Puff".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Puff]
-    
-    inline def RevolvingDot: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.RevolvingDot = "RevolvingDot".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.RevolvingDot]
-    
-    inline def Rings: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Rings = "Rings".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Rings]
-    
-    inline def TailSpin: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.TailSpin = "TailSpin".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.TailSpin]
-    
-    inline def ThreeDots: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.ThreeDots = "ThreeDots".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.ThreeDots]
-    
-    inline def Triangle: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Triangle = "Triangle".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Triangle]
-    
-    inline def Watch: typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Watch = "Watch".asInstanceOf[typings.reactLoaderSpinner.reactLoaderSpinnerStrings.Watch]
-  }
+  @JSImport("react-loader-spinner", "BallTriangle")
+  @js.native
+  val BallTriangle: FunctionComponent[BallTriangleProps] = js.native
   
-  type _To = FC[LoaderProps]
+  @JSImport("react-loader-spinner", "Bars")
+  @js.native
+  val Bars: FunctionComponent[BarsProps] = js.native
   
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: FC[LoaderProps] = default
+  inline def Blocks(hasVisibleWidthHeightWrapperClassWrapperStyleAriaLabel: BlocksProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Blocks")(hasVisibleWidthHeightWrapperClassWrapperStyleAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
+  @JSImport("react-loader-spinner", "Circles")
+  @js.native
+  val Circles: FunctionComponent[CirclesProps] = js.native
+  
+  @JSImport("react-loader-spinner", "CirclesWithBar")
+  @js.native
+  val CirclesWithBar: FunctionComponent[Props] = js.native
+  
+  inline def ColorRing(hasVisibleWidthHeightColorsWrapperClassWrapperStyleAriaLabel: ColorRingProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ColorRing")(hasVisibleWidthHeightColorsWrapperClassWrapperStyleAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
+  inline def Comment(hasVisibleWidthHeightBackgroundColorColorWrapperClassWrapperStyleAriaLabel: CommentProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Comment")(hasVisibleWidthHeightBackgroundColorColorWrapperClassWrapperStyleAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
+  inline def Discuss(hasVisibleWidthHeightWrapperClassWrapperStyleAriaLabelColors: DiscussProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Discuss")(hasVisibleWidthHeightWrapperClassWrapperStyleAriaLabelColors.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
+  inline def Dna(hasVisibleWidthHeightWrapperClassWrapperStyleAriaLabel: DNAProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Dna")(hasVisibleWidthHeightWrapperClassWrapperStyleAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
+  inline def FallingLines(hasColorWidthVisible: FallingLinesProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("FallingLines")(hasColorWidthVisible.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  
+  inline def FidgetSpinner(
+    hasWidthHeightBackgroundColorBallColorsWrapperClassWrapperStyleAriaLabelVisible: FidgetSpinnerProps
+  ): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("FidgetSpinner")(hasWidthHeightBackgroundColorBallColorsWrapperClassWrapperStyleAriaLabelVisible.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
+  @JSImport("react-loader-spinner", "Grid")
+  @js.native
+  val Grid: FunctionComponent[GridProps] = js.native
+  
+  @JSImport("react-loader-spinner", "Hearts")
+  @js.native
+  val Hearts: FunctionComponent[HeartsProps] = js.native
+  
+  inline def InfinitySpin(hasColorWidth: typings.reactLoaderSpinner.loaderInfinitySpinMod.Props): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("InfinitySpin")(hasColorWidth.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
+  @JSImport("react-loader-spinner", "LineWave")
+  @js.native
+  val LineWave: FunctionComponent[typings.reactLoaderSpinner.loaderLineWaveMod.Props] = js.native
+  
+  inline def MagnifyingGlass(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelGlassColorColor: MagnifyingGlassProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MagnifyingGlass")(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelGlassColorColor.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
+  @JSImport("react-loader-spinner", "MutatingDots")
+  @js.native
+  val MutatingDots: FunctionComponent[MutatingDotsProps] = js.native
+  
+  @JSImport("react-loader-spinner", "Oval")
+  @js.native
+  val Oval: FunctionComponent[OvalProps] = js.native
+  
+  inline def ProgressBar(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelBorderColorBarColor: ProgressBarProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ProgressBar")(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelBorderColorBarColor.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
+  @JSImport("react-loader-spinner", "Puff")
+  @js.native
+  val Puff: FunctionComponent[PuffProps] = js.native
+  
+  inline def Radio(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelColors: RadioProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Radio")(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelColors.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
+  @JSImport("react-loader-spinner", "RevolvingDot")
+  @js.native
+  val RevolvingDot: FunctionComponent[RevolvingDotProps] = js.native
+  
+  @JSImport("react-loader-spinner", "Rings")
+  @js.native
+  val Rings: FunctionComponent[RingsProps] = js.native
+  
+  inline def RotatingLines(
+    hasStrokeColorStrokeWidthAnimationDurationWidthVisibleAriaLabel: typings.reactLoaderSpinner.loaderRotatingLinesMod.Props
+  ): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("RotatingLines")(hasStrokeColorStrokeWidthAnimationDurationWidthVisibleAriaLabel.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  
+  @JSImport("react-loader-spinner", "RotatingSquare")
+  @js.native
+  val RotatingSquare: FunctionComponent[RotatingSquareProps] = js.native
+  
+  inline def RotatingTriangles(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelColors: RotatingTrianglesProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("RotatingTriangles")(hasVisibleHeightWidthWrapperClassWrapperStyleAriaLabelColors.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
+  @JSImport("react-loader-spinner", "TailSpin")
+  @js.native
+  val TailSpin: FunctionComponent[TailSpinProps] = js.native
+  
+  @JSImport("react-loader-spinner", "ThreeCircles")
+  @js.native
+  val ThreeCircles: FunctionComponent[typings.reactLoaderSpinner.loaderThreeCirclesMod.Props] = js.native
+  
+  @JSImport("react-loader-spinner", "ThreeDots")
+  @js.native
+  val ThreeDots: FunctionComponent[ThreeDotsProps] = js.native
+  
+  @JSImport("react-loader-spinner", "Triangle")
+  @js.native
+  val Triangle: FunctionComponent[TriangleProps] = js.native
+  
+  inline def Vortex(hasVisibleHeightWidthAriaLabelWrapperStyleWrapperClassColors: VortexProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Vortex")(hasVisibleHeightWidthAriaLabelWrapperStyleWrapperClassColors.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
+  @JSImport("react-loader-spinner", "Watch")
+  @js.native
+  val Watch: FunctionComponent[WatchProps] = js.native
 }

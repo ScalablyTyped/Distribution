@@ -10,12 +10,12 @@ trait MashupDataSourceMashupSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * An array of $.ig.DataSource instances holding the disperse data.
     */
-  var dataSource: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var dataSource: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Indicates whether to ignore records that have no corresponding data in all of the provided data sources.
@@ -31,11 +31,11 @@ object MashupDataSourceMashupSettings {
   
   extension [Self <: MashupDataSourceMashupSettings](x: Self) {
     
-    inline def setDataSource(value: js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
     
     inline def setIgnorePartialRecords(value: Boolean): Self = StObject.set(x, "ignorePartialRecords", value.asInstanceOf[js.Any])
     

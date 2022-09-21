@@ -12,14 +12,14 @@ object performanceMonitorMod {
     * constructor
     * @param frameSampleSize The number of samples required to saturate the sliding window
     */
-  class PerformanceMonitor () extends StObject {
+  open class PerformanceMonitor () extends StObject {
     def this(frameSampleSize: Double) = this()
     
-    /* private */ var _enabled: js.Any = js.native
+    /* private */ var _enabled: Any = js.native
     
-    /* private */ var _lastFrameTimeMs: js.Any = js.native
+    /* private */ var _lastFrameTimeMs: Any = js.native
     
-    /* private */ var _rollingFrameTime: js.Any = js.native
+    /* private */ var _rollingFrameTime: Any = js.native
     
     /**
       * Returns the average framerate in frames per second over the sliding window (or the subset of frames sampled so far)
@@ -82,7 +82,7 @@ object performanceMonitorMod {
   
   @JSImport("babylonjs/Misc/performanceMonitor", "RollingAverage")
   @js.native
-  class RollingAverage protected () extends StObject {
+  open class RollingAverage protected () extends StObject {
     /**
       * constructor
       * @param length The number of samples required to saturate the sliding window
@@ -100,7 +100,7 @@ object performanceMonitorMod {
     /**
       * Wraps a value around the sample range boundaries
       * @param i Position in sample range, for example if the sample length is 5, and i is -3, then 2 will be returned.
-      * @return Wrapped position in sample range
+      * @returns Wrapped position in sample range
       */
     /* protected */ def _wrapPosition(i: Double): Double = js.native
     
@@ -118,13 +118,13 @@ object performanceMonitorMod {
     /**
       * Returns previously added values or null if outside of history or outside the sliding window domain
       * @param i Index in history. For example, pass 0 for the most recent value and 1 for the value before that
-      * @return Value previously recorded with add() or null if outside of range
+      * @returns Value previously recorded with add() or null if outside of range
       */
     def history(i: Double): Double = js.native
     
     /**
       * Returns true if enough samples have been taken to completely fill the sliding window
-      * @return true if sample-set saturated
+      * @returns true if sample-set saturated
       */
     def isSaturated(): Boolean = js.native
     

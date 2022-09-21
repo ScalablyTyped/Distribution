@@ -10,7 +10,7 @@ object timerSystemMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/TimerSystem", "TimerSystem")
   @js.native
-  class TimerSystem protected () extends StObject {
+  open class TimerSystem protected () extends StObject {
     def this(impl: TimerSystemImpl) = this()
     
     /**
@@ -19,11 +19,11 @@ object timerSystemMod {
       */
     def at(tAlarm: Cell[Double]): Stream[Double] = js.native
     
-    /* private */ var eventQueue: js.Any = js.native
+    /* private */ var eventQueue: Any = js.native
     
-    /* private */ var impl: js.Any = js.native
+    /* private */ var impl: Any = js.native
     
-    /* private */ var tMinimum: js.Any = js.native
+    /* private */ var tMinimum: Any = js.native
     
     /**
       * A cell giving the current clock time.

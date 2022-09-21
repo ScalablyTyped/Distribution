@@ -1,6 +1,6 @@
 package typings.ts3NodejsLibrary
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.ts3NodejsLibrary.abstractMod.Abstract
 import typings.ts3NodejsLibrary.anon.Cid
 import typings.ts3NodejsLibrary.anon.PartialClientEntry
@@ -20,7 +20,7 @@ object channelMod {
   
   @JSImport("ts3-nodejs-library/lib/node/Channel", "TeamSpeakChannel")
   @js.native
-  class TeamSpeakChannel protected () extends Abstract[ChannelEntry] {
+  open class TeamSpeakChannel protected () extends Abstract[ChannelEntry] {
     def this(parent: TeamSpeak, list: ChannelEntry) = this()
     
     def bannerGfxUrl: String = js.native
@@ -39,7 +39,7 @@ object channelMod {
       * A permission can be specified by permid or permsid.
       * @param perm permission object to set
       */
-    def createPerm(): Permission[js.Any] = js.native
+    def createPerm(): Permission[Any] = js.native
     
     /**
       * Deletes an existing channel by ID.
@@ -47,8 +47,8 @@ object channelMod {
       * The clients will be kicked to the default channel with an appropriate reason message.
       * @param {number} force if set to 1 the channel will be deleted even when clients are in it
       */
-    def del(): js.Promise[js.Array[js.Any]] = js.native
-    def del(force: Boolean): js.Promise[js.Array[js.Any]] = js.native
+    def del(): js.Promise[js.Array[Any]] = js.native
+    def del(force: Boolean): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Removes a set of specified permissions from a channel.
@@ -56,14 +56,14 @@ object channelMod {
       * A permission can be specified by permid or permsid.
       * @param perm the permid or permsid
       */
-    def delPerm(perm: String): js.Promise[js.Array[js.Any]] = js.native
-    def delPerm(perm: Double): js.Promise[js.Array[js.Any]] = js.native
+    def delPerm(perm: String): js.Promise[js.Array[Any]] = js.native
+    def delPerm(perm: Double): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Changes a channels configuration using given properties. Note that this command accepts multiple properties which means that you're able to change all settings of the channel specified with cid at once.
       * @param properties the properties of the channel which should get changed
       */
-    def edit(properties: ChannelEdit): js.Promise[js.Array[js.Any]] = js.native
+    def edit(properties: ChannelEdit): js.Promise[js.Array[Any]] = js.native
     
     def flagDefault: Boolean = js.native
     
@@ -96,16 +96,22 @@ object channelMod {
     def maxfamilyclients: Double = js.native
     
     /**
+      * sends a message to the specified channel
+      * @param msg message which should be sent to the channel
+      */
+    def message(msg: String): js.Promise[Unit] = js.native
+    
+    /**
       * Moves a channel to a new parent channel with the ID cpid.
       * If order is specified, the channel will be sorted right under the channel with the specified ID.
       * If order is set to 0, the channel will be sorted right below the new parent.
       * @param parent channel parent id
       * @param order channel sort order
       */
-    def move(parent: String): js.Promise[js.Array[js.Any]] = js.native
-    def move(parent: String, order: Double): js.Promise[js.Array[js.Any]] = js.native
-    def move(parent: TeamSpeakChannel): js.Promise[js.Array[js.Any]] = js.native
-    def move(parent: TeamSpeakChannel, order: Double): js.Promise[js.Array[js.Any]] = js.native
+    def move(parent: String): js.Promise[js.Array[Any]] = js.native
+    def move(parent: String, order: Double): js.Promise[js.Array[Any]] = js.native
+    def move(parent: TeamSpeakChannel): js.Promise[js.Array[Any]] = js.native
+    def move(parent: TeamSpeakChannel, order: Double): js.Promise[js.Array[Any]] = js.native
     
     def name: String = js.native
     
@@ -132,7 +138,7 @@ object channelMod {
       * A permission can be specified by permid or permsid.
       * @param perm permission object to set
       */
-    def setPerm(perm: PermType): js.Promise[js.Array[js.Any]] = js.native
+    def setPerm(perm: PermType): js.Promise[js.Array[Any]] = js.native
     
     def topic: String = js.native
     

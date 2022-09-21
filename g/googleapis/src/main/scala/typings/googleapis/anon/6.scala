@@ -1,15 +1,12 @@
 package typings.googleapis.anon
 
-import typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.SchemaPagespeedApiFormatStringV4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `6` extends StObject {
   
-  var details: js.UndefOr[js.Array[SchemaPagespeedApiFormatStringV4]] = js.undefined
-  
-  var result: js.UndefOr[SchemaPagespeedApiFormatStringV4] = js.undefined
+  var errors: js.UndefOr[js.Array[CodeLocation]] = js.undefined
 }
 object `6` {
   
@@ -20,14 +17,10 @@ object `6` {
   
   extension [Self <: `6`](x: Self) {
     
-    inline def setDetails(value: js.Array[SchemaPagespeedApiFormatStringV4]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[CodeLocation]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setDetailsVarargs(value: SchemaPagespeedApiFormatStringV4*): Self = StObject.set(x, "details", js.Array(value :_*))
-    
-    inline def setResult(value: SchemaPagespeedApiFormatStringV4): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
-    
-    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setErrorsVarargs(value: CodeLocation*): Self = StObject.set(x, "errors", js.Array(value*))
   }
 }

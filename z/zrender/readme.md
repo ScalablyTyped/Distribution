@@ -4,16 +4,16 @@
 Typings are for version 4.0
 
 ## Library description:
-A lightweight canvas library.
+A lightweight graphic library providing 2d draw for Apache ECharts
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | zrender |
-| Keywords           | canvas, 2d |
+| Keywords           | canvas, svg, 2d, html5, vector-graphics |
 | # releases         | 18 |
-| # dependents       | 132 |
-| # downloads        | 10951951 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1931633.0 |
+| # stars            | 5404.0 |
 
 ## Links
 - [Homepage](https://github.com/ecomfe/zrender#readme)

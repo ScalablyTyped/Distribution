@@ -1,8 +1,6 @@
 package typings.vegaLite
 
 import typings.std.Exclude
-import typings.vegaLite.anon.FieldString
-import typings.vegaLite.anon.Signal
 import typings.vegaLite.anon.Step
 import typings.vegaLite.binMod.BinParams
 import typings.vegaLite.channelMod.ScaleChannel
@@ -14,6 +12,7 @@ import typings.vegaLite.exprMod.ExprRef
 import typings.vegaLite.modelMod.Model
 import typings.vegaLite.scaleMod.Domain
 import typings.vegaLite.scaleMod.DomainUnionWith
+import typings.vegaLite.scaleMod.FieldRange
 import typings.vegaLite.scaleMod.ScaleConfig
 import typings.vegaLite.scaleMod.ScaleType
 import typings.vegaLite.scaleMod.SchemeParams
@@ -23,7 +22,7 @@ import typings.vegaLite.srcConfigMod.Config
 import typings.vegaLite.srcMarkMod.Mark
 import typings.vegaLite.srcMarkMod.MarkDef
 import typings.vegaLite.srcMarkMod.RectConfig
-import typings.vegaLite.srcSelectionMod.SelectionExtent
+import typings.vegaLite.srcSelectionMod.ParameterExtent
 import typings.vegaLite.srcTypeMod.Type
 import typings.vegaLite.vegaLiteStrings.binned
 import typings.vegaLite.vegaLiteStrings.range
@@ -45,69 +44,519 @@ object scalePropertiesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def bins_binned(model: Model, fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): SignalRefWrapper | Step = (^.asInstanceOf[js.Dynamic].applyDynamic("bins")(model.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[SignalRefWrapper | Step]
+  inline def bins_binned(model: Model, fieldDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]): SignalRefWrapper | Step = (^.asInstanceOf[js.Dynamic].applyDynamic("bins")(model.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[SignalRefWrapper | Step]
   
   inline def interpolate(channel: ScaleChannel, `type`: Type): js.UndefOr[ScaleInterpolateEnum | ExprRef | SignalRef | ScaleInterpolateParams] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ScaleInterpolateEnum | ExprRef | SignalRef | ScaleInterpolateParams]]
   
-  inline def nice(scaleType: ScaleType, channel: ScaleChannel, fieldOrDatumDef: ScaleDatumDef[String]): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Double,
+    domainMax: Double,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Double,
+    domainMax: Unit,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Double,
+    domainMax: DateTime,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Double,
+    domainMax: ExprRef,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Double,
+    domainMax: SignalRef,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Unit,
+    domainMax: Double,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Unit,
+    domainMax: Unit,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Unit,
+    domainMax: DateTime,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Unit,
+    domainMax: ExprRef,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Unit,
+    domainMax: SignalRef,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: DateTime,
+    domainMax: Double,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: DateTime,
+    domainMax: Unit,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: DateTime,
+    domainMax: DateTime,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: DateTime,
+    domainMax: ExprRef,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: DateTime,
+    domainMax: SignalRef,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: ExprRef,
+    domainMax: Double,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: ExprRef,
+    domainMax: Unit,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: ExprRef,
+    domainMax: DateTime,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: ExprRef,
+    domainMax: ExprRef,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: ExprRef,
+    domainMax: SignalRef,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: SignalRef,
+    domainMax: Double,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: SignalRef,
+    domainMax: Unit,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: SignalRef,
+    domainMax: DateTime,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: SignalRef,
+    domainMax: ExprRef,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: SignalRef,
+    domainMax: SignalRef,
+    fieldOrDatumDef: ScaleDatumDef[String]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
   
   inline def nice_binned(
     scaleType: ScaleType,
     channel: ScaleChannel,
-    fieldOrDatumDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]
-  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+    specifiedDomain: Domain,
+    domainMin: Double,
+    domainMax: Double,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Double,
+    domainMax: Unit,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Double,
+    domainMax: DateTime,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Double,
+    domainMax: ExprRef,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Double,
+    domainMax: SignalRef,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Unit,
+    domainMax: Double,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Unit,
+    domainMax: Unit,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Unit,
+    domainMax: DateTime,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Unit,
+    domainMax: ExprRef,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: Unit,
+    domainMax: SignalRef,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: DateTime,
+    domainMax: Double,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: DateTime,
+    domainMax: Unit,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: DateTime,
+    domainMax: DateTime,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: DateTime,
+    domainMax: ExprRef,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: DateTime,
+    domainMax: SignalRef,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: ExprRef,
+    domainMax: Double,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: ExprRef,
+    domainMax: Unit,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: ExprRef,
+    domainMax: DateTime,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: ExprRef,
+    domainMax: ExprRef,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: ExprRef,
+    domainMax: SignalRef,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: SignalRef,
+    domainMax: Double,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: SignalRef,
+    domainMax: Unit,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: SignalRef,
+    domainMax: DateTime,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: SignalRef,
+    domainMax: ExprRef,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  inline def nice_binned(
+    scaleType: ScaleType,
+    channel: ScaleChannel,
+    specifiedDomain: Domain,
+    domainMin: SignalRef,
+    domainMax: SignalRef,
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], domainMin.asInstanceOf[js.Any], domainMax.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
   
   inline def padding(
     channel: ScaleChannel,
     scaleType: ScaleType,
     scaleConfig: ScaleConfig[SignalRef],
     fieldOrDatumDef: ScaleDatumDef[String],
-    markDef: MarkDef[Mark, ExprRef | SignalRef],
+    markDef: MarkDef[Mark, SignalRef],
     barConfig: RectConfig[SignalRef]
   ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("padding")(channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any], barConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
   
-  inline def paddingInner(paddingValue: Double, channel: ScaleChannel, mark: Mark, scaleConfig: ScaleConfig[SignalRef]): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingInner")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
-  inline def paddingInner(paddingValue: SignalRef, channel: ScaleChannel, mark: Mark, scaleConfig: ScaleConfig[SignalRef]): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingInner")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
+  inline def paddingInner(
+    paddingValue: Double,
+    channel: ScaleChannel,
+    mark: Mark,
+    scaleType: ScaleType,
+    scaleConfig: ScaleConfig[SignalRef]
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingInner")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
+  inline def paddingInner(
+    paddingValue: Double,
+    channel: ScaleChannel,
+    mark: Mark,
+    scaleType: ScaleType,
+    scaleConfig: ScaleConfig[SignalRef],
+    hasNestedOffsetScale: Boolean
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingInner")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any], hasNestedOffsetScale.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
+  inline def paddingInner(
+    paddingValue: SignalRef,
+    channel: ScaleChannel,
+    mark: Mark,
+    scaleType: ScaleType,
+    scaleConfig: ScaleConfig[SignalRef]
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingInner")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
+  inline def paddingInner(
+    paddingValue: SignalRef,
+    channel: ScaleChannel,
+    mark: Mark,
+    scaleType: ScaleType,
+    scaleConfig: ScaleConfig[SignalRef],
+    hasNestedOffsetScale: Boolean
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingInner")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any], hasNestedOffsetScale.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
   
   inline def paddingOuter(
     paddingValue: Double,
     channel: ScaleChannel,
     scaleType: ScaleType,
-    mark: Mark,
     paddingInnerValue: Double,
     scaleConfig: ScaleConfig[SignalRef]
-  ): Double | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | Signal]
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
   inline def paddingOuter(
     paddingValue: Double,
     channel: ScaleChannel,
     scaleType: ScaleType,
-    mark: Mark,
+    paddingInnerValue: Double,
+    scaleConfig: ScaleConfig[SignalRef],
+    hasNestedOffsetScale: Boolean
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any], hasNestedOffsetScale.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
+  inline def paddingOuter(
+    paddingValue: Double,
+    channel: ScaleChannel,
+    scaleType: ScaleType,
     paddingInnerValue: SignalRef,
     scaleConfig: ScaleConfig[SignalRef]
-  ): Double | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | Signal]
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
+  inline def paddingOuter(
+    paddingValue: Double,
+    channel: ScaleChannel,
+    scaleType: ScaleType,
+    paddingInnerValue: SignalRef,
+    scaleConfig: ScaleConfig[SignalRef],
+    hasNestedOffsetScale: Boolean
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any], hasNestedOffsetScale.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
   inline def paddingOuter(
     paddingValue: SignalRef,
     channel: ScaleChannel,
     scaleType: ScaleType,
-    mark: Mark,
     paddingInnerValue: Double,
     scaleConfig: ScaleConfig[SignalRef]
-  ): Double | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | Signal]
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
   inline def paddingOuter(
     paddingValue: SignalRef,
     channel: ScaleChannel,
     scaleType: ScaleType,
-    mark: Mark,
+    paddingInnerValue: Double,
+    scaleConfig: ScaleConfig[SignalRef],
+    hasNestedOffsetScale: Boolean
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any], hasNestedOffsetScale.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
+  inline def paddingOuter(
+    paddingValue: SignalRef,
+    channel: ScaleChannel,
+    scaleType: ScaleType,
     paddingInnerValue: SignalRef,
     scaleConfig: ScaleConfig[SignalRef]
-  ): Double | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | Signal]
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
+  inline def paddingOuter(
+    paddingValue: SignalRef,
+    channel: ScaleChannel,
+    scaleType: ScaleType,
+    paddingInnerValue: SignalRef,
+    scaleConfig: ScaleConfig[SignalRef],
+    hasNestedOffsetScale: Boolean
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any], hasNestedOffsetScale.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
   
   inline def padding_binned(
     channel: ScaleChannel,
     scaleType: ScaleType,
     scaleConfig: ScaleConfig[SignalRef],
-    fieldOrDatumDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],
-    markDef: MarkDef[Mark, ExprRef | SignalRef],
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null],
+    markDef: MarkDef[Mark, SignalRef],
     barConfig: RectConfig[SignalRef]
   ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("padding")(channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any], barConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
   
@@ -195,7 +644,7 @@ object scalePropertiesMod {
         js.Function1[
           /* params */ ScaleRuleParams, 
           js.UndefOr[
-            (js.Array[Null | String | Double | Boolean | DateTime | ExprRef | SignalRef]) | unaggregated | SelectionExtent | DomainUnionWith | ExprRef | SignalRef
+            (js.Array[Null | String | Double | Boolean | DateTime | ExprRef | SignalRef]) | unaggregated | ParameterExtent | DomainUnionWith | ExprRef | SignalRef
           ]
         ]
       ] = js.native
@@ -238,7 +687,7 @@ object scalePropertiesMod {
           js.Function1[
             /* params */ ScaleRuleParams, 
             js.UndefOr[
-              (js.Array[Null | String | Double | Boolean | DateTime | ExprRef | SignalRef]) | unaggregated | SelectionExtent | DomainUnionWith | ExprRef | SignalRef
+              (js.Array[Null | String | Double | Boolean | DateTime | ExprRef | SignalRef]) | unaggregated | ParameterExtent | DomainUnionWith | ExprRef | SignalRef
             ]
           ]
         ]
@@ -329,7 +778,7 @@ object scalePropertiesMod {
         js.Function1[
           /* params */ ScaleRuleParams, 
           js.UndefOr[
-            RangeEnum | (js.Array[Double | String | js.Array[Double] | ExprRef | SignalRef]) | FieldString
+            RangeEnum | (js.Array[Double | String | js.Array[Double] | ExprRef | SignalRef]) | FieldRange
           ]
         ]
       ] = js.native
@@ -361,7 +810,7 @@ object scalePropertiesMod {
           js.Function1[
             /* params */ ScaleRuleParams, 
             js.UndefOr[
-              RangeEnum | (js.Array[Double | String | js.Array[Double] | ExprRef | SignalRef]) | FieldString
+              RangeEnum | (js.Array[Double | String | js.Array[Double] | ExprRef | SignalRef]) | FieldRange
             ]
           ]
         ]
@@ -432,7 +881,7 @@ object scalePropertiesMod {
   
   inline def zero_binned(
     channel: ScaleChannel,
-    fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],
+    fieldDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null],
     specifiedDomain: Domain,
     markDef: MarkDef[Mark, ExprRef | SignalRef],
     scaleType: ScaleType
@@ -446,9 +895,15 @@ object scalePropertiesMod {
     
     var domain: Domain
     
+    var domainMax: js.UndefOr[Double | DateTime | ExprRef | SignalRef] = js.undefined
+    
+    var domainMin: js.UndefOr[Double | DateTime | ExprRef | SignalRef] = js.undefined
+    
     var fieldOrDatumDef: (ScaleFieldDef[String, Type, Boolean | BinParams | Null]) | ScaleDatumDef[String]
     
-    var markDef: MarkDef[Mark, ExprRef | SignalRef]
+    var hasNestedOffsetScale: Boolean
+    
+    var markDef: MarkDef[Mark, SignalRef]
     
     var model: Model
     
@@ -465,13 +920,14 @@ object scalePropertiesMod {
       config: Config[SignalRef],
       domain: Domain,
       fieldOrDatumDef: (ScaleFieldDef[String, Type, Boolean | BinParams | Null]) | ScaleDatumDef[String],
-      markDef: MarkDef[Mark, ExprRef | SignalRef],
+      hasNestedOffsetScale: Boolean,
+      markDef: MarkDef[Mark, SignalRef],
       model: Model,
       scalePadding: Double | SignalRef,
       scalePaddingInner: Double | SignalRef,
       scaleType: ScaleType
     ): ScaleRuleParams = {
-      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], fieldOrDatumDef = fieldOrDatumDef.asInstanceOf[js.Any], markDef = markDef.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], scalePadding = scalePadding.asInstanceOf[js.Any], scalePaddingInner = scalePaddingInner.asInstanceOf[js.Any], scaleType = scaleType.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], fieldOrDatumDef = fieldOrDatumDef.asInstanceOf[js.Any], hasNestedOffsetScale = hasNestedOffsetScale.asInstanceOf[js.Any], markDef = markDef.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], scalePadding = scalePadding.asInstanceOf[js.Any], scalePaddingInner = scalePaddingInner.asInstanceOf[js.Any], scaleType = scaleType.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScaleRuleParams]
     }
     
@@ -483,11 +939,21 @@ object scalePropertiesMod {
       
       inline def setDomain(value: Domain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      inline def setDomainVarargs(value: (Null | String | Double | Boolean | DateTime | SignalRef)*): Self = StObject.set(x, "domain", js.Array(value :_*))
+      inline def setDomainMax(value: Double | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "domainMax", value.asInstanceOf[js.Any])
+      
+      inline def setDomainMaxUndefined: Self = StObject.set(x, "domainMax", js.undefined)
+      
+      inline def setDomainMin(value: Double | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "domainMin", value.asInstanceOf[js.Any])
+      
+      inline def setDomainMinUndefined: Self = StObject.set(x, "domainMin", js.undefined)
+      
+      inline def setDomainVarargs(value: (Null | String | Double | Boolean | DateTime | SignalRef)*): Self = StObject.set(x, "domain", js.Array(value*))
       
       inline def setFieldOrDatumDef(value: (ScaleFieldDef[String, Type, Boolean | BinParams | Null]) | ScaleDatumDef[String]): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
       
-      inline def setMarkDef(value: MarkDef[Mark, ExprRef | SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
+      inline def setHasNestedOffsetScale(value: Boolean): Self = StObject.set(x, "hasNestedOffsetScale", value.asInstanceOf[js.Any])
+      
+      inline def setMarkDef(value: MarkDef[Mark, SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
       
       inline def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       

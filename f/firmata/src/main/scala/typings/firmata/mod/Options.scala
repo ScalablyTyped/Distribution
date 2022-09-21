@@ -32,13 +32,13 @@ object Options {
     
     inline def setAnalogPinsUndefined: Self = StObject.set(x, "analogPins", js.undefined)
     
-    inline def setAnalogPinsVarargs(value: Double*): Self = StObject.set(x, "analogPins", js.Array(value :_*))
+    inline def setAnalogPinsVarargs(value: Double*): Self = StObject.set(x, "analogPins", js.Array(value*))
     
     inline def setPins(value: js.Array[Pins]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     
     inline def setPinsUndefined: Self = StObject.set(x, "pins", js.undefined)
     
-    inline def setPinsVarargs(value: Pins*): Self = StObject.set(x, "pins", js.Array(value :_*))
+    inline def setPinsVarargs(value: Pins*): Self = StObject.set(x, "pins", js.Array(value*))
     
     inline def setReportVersionTimeout(value: Double): Self = StObject.set(x, "reportVersionTimeout", value.asInstanceOf[js.Any])
     

@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.antd.anon.PartialRecordBreakpointnu
 import typings.antd.antdStrings.`space-around`
 import typings.antd.antdStrings.`space-between`
+import typings.antd.antdStrings.`space-evenly`
 import typings.antd.antdStrings.bottom
 import typings.antd.antdStrings.center
 import typings.antd.antdStrings.end
@@ -25,7 +26,7 @@ object gridRowMod extends Shortcut {
   @js.native
   val default: ForwardRefExoticComponent[RowProps & RefAttributes[HTMLDivElement]] = js.native
   
-  type Gutter = Double | PartialRecordBreakpointnu
+  type Gutter = js.UndefOr[Double | PartialRecordBreakpointnu]
   
   trait RowProps
     extends StObject
@@ -35,7 +36,7 @@ object gridRowMod extends Shortcut {
     
     var gutter: js.UndefOr[Gutter | (js.Tuple2[Gutter, Gutter])] = js.undefined
     
-    var justify: js.UndefOr[start | end | center | `space-around` | `space-between`] = js.undefined
+    var justify: js.UndefOr[start | end | center | `space-around` | `space-between` | `space-evenly`] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -58,7 +59,7 @@ object gridRowMod extends Shortcut {
       
       inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
       
-      inline def setJustify(value: start | end | center | `space-around` | `space-between`): Self = StObject.set(x, "justify", value.asInstanceOf[js.Any])
+      inline def setJustify(value: start | end | center | `space-around` | `space-between` | `space-evenly`): Self = StObject.set(x, "justify", value.asInstanceOf[js.Any])
       
       inline def setJustifyUndefined: Self = StObject.set(x, "justify", js.undefined)
       

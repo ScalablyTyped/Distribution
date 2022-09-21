@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("DevExpress.AspNetCore.BootstrapUploadControlValidationSettings")
 @js.native
-class BootstrapUploadControlValidationSettings ()
+open class BootstrapUploadControlValidationSettings ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapUploadControlValidationSettings

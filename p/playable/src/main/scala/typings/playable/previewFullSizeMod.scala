@@ -12,19 +12,19 @@ object previewFullSizeMod {
   
   @JSImport("playable/dist/src/modules/ui/preview-full-size/preview-full-size", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with PreviewFullsize {
     def this(hasPreviewServiceRootContainer: PreviewService) = this()
     
     /* private */ /* CompleteClass */
-    var _currentFrame: js.Any = js.native
+    var _currentFrame: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initUI: js.Any = js.native
+    var _initUI: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _previewService: js.Any = js.native
+    var _previewService: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -68,20 +68,20 @@ object previewFullSizeMod {
     extends StObject
        with IPreviewFullSize {
     
-    /* private */ var _currentFrame: js.Any
+    /* private */ var _currentFrame: Any
     
-    /* private */ var _initUI: js.Any
+    /* private */ var _initUI: Any
     
-    /* private */ var _previewService: js.Any
+    /* private */ var _previewService: Any
     
     var view: typings.playable.previewFullSizeViewMod.default
   }
   object PreviewFullsize {
     
     inline def apply(
-      _currentFrame: js.Any,
-      _initUI: js.Any,
-      _previewService: js.Any,
+      _currentFrame: Any,
+      _initUI: Any,
+      _previewService: Any,
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -96,11 +96,11 @@ object previewFullSizeMod {
       
       inline def setView(value: typings.playable.previewFullSizeViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      inline def set_currentFrame(value: js.Any): Self = StObject.set(x, "_currentFrame", value.asInstanceOf[js.Any])
+      inline def set_currentFrame(value: Any): Self = StObject.set(x, "_currentFrame", value.asInstanceOf[js.Any])
       
-      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      inline def set_previewService(value: js.Any): Self = StObject.set(x, "_previewService", value.asInstanceOf[js.Any])
+      inline def set_previewService(value: Any): Self = StObject.set(x, "_previewService", value.asInstanceOf[js.Any])
     }
   }
 }

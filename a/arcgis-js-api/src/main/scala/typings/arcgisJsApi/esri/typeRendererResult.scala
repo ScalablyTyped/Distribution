@@ -29,10 +29,10 @@ trait typeRendererResult
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
     */
-  var excludedUniqueValueInfos: js.Array[js.Any]
+  var excludedUniqueValueInfos: js.Array[Any]
   
   /**
-    * The renderer object configured to best match the given basemap.
+    * The renderer object configured to best match the background of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
     */
@@ -58,7 +58,7 @@ object typeRendererResult {
     basemapId: String,
     basemapTheme: String,
     constructor: js.Function,
-    excludedUniqueValueInfos: js.Array[js.Any],
+    excludedUniqueValueInfos: js.Array[Any],
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     renderer: UniqueValueRenderer,
@@ -75,9 +75,9 @@ object typeRendererResult {
     
     inline def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
-    inline def setExcludedUniqueValueInfos(value: js.Array[js.Any]): Self = StObject.set(x, "excludedUniqueValueInfos", value.asInstanceOf[js.Any])
+    inline def setExcludedUniqueValueInfos(value: js.Array[Any]): Self = StObject.set(x, "excludedUniqueValueInfos", value.asInstanceOf[js.Any])
     
-    inline def setExcludedUniqueValueInfosVarargs(value: js.Any*): Self = StObject.set(x, "excludedUniqueValueInfos", js.Array(value :_*))
+    inline def setExcludedUniqueValueInfosVarargs(value: Any*): Self = StObject.set(x, "excludedUniqueValueInfos", js.Array(value*))
     
     inline def setRenderer(value: UniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
@@ -85,6 +85,6 @@ object typeRendererResult {
     
     inline def setUniqueValueInfos(value: js.Array[typeUniqueValueInfo]): Self = StObject.set(x, "uniqueValueInfos", value.asInstanceOf[js.Any])
     
-    inline def setUniqueValueInfosVarargs(value: typeUniqueValueInfo*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value :_*))
+    inline def setUniqueValueInfosVarargs(value: typeUniqueValueInfo*): Self = StObject.set(x, "uniqueValueInfos", js.Array(value*))
   }
 }

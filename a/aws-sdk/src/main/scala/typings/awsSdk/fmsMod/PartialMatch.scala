@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PartialMatch extends StObject {
   
   /**
-    * The reference rule from the master security group of the AWS Firewall Manager policy.
+    * The reference rule from the primary security group of the Firewall Manager policy.
     */
   var Reference: js.UndefOr[ReferenceRule] = js.undefined
   
@@ -33,6 +33,6 @@ object PartialMatch {
     
     inline def setTargetViolationReasonsUndefined: Self = StObject.set(x, "TargetViolationReasons", js.undefined)
     
-    inline def setTargetViolationReasonsVarargs(value: TargetViolationReason*): Self = StObject.set(x, "TargetViolationReasons", js.Array(value :_*))
+    inline def setTargetViolationReasonsVarargs(value: TargetViolationReason*): Self = StObject.set(x, "TargetViolationReasons", js.Array(value*))
   }
 }

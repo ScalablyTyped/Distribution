@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EditorViewModelConstructor
   extends StObject
-     with Instantiable0[EditorViewModel]
+     with /**
+  * Provides the logic for the [Editor](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html)
+  */
+Instantiable0[EditorViewModel]
      with Instantiable1[/* properties */ EditorViewModelProperties, EditorViewModel]

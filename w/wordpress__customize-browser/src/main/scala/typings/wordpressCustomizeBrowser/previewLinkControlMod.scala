@@ -9,7 +9,7 @@ object previewLinkControlMod {
   
   @JSImport("@wordpress/customize-browser/PreviewLinkControl", "PreviewLinkControl")
   @js.native
-  class PreviewLinkControl protected () extends Control {
+  open class PreviewLinkControl protected () extends Control {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     

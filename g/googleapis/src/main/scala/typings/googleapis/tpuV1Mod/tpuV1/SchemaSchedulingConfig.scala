@@ -6,7 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaSchedulingConfig extends StObject {
   
-  var preemptible: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Defines whether the node is preemptible.
+    */
+  var preemptible: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * Whether the node is created under a reservation.
+    */
+  var reserved: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaSchedulingConfig {
   
@@ -19,6 +27,14 @@ object SchemaSchedulingConfig {
     
     inline def setPreemptible(value: Boolean): Self = StObject.set(x, "preemptible", value.asInstanceOf[js.Any])
     
+    inline def setPreemptibleNull: Self = StObject.set(x, "preemptible", null)
+    
     inline def setPreemptibleUndefined: Self = StObject.set(x, "preemptible", js.undefined)
+    
+    inline def setReserved(value: Boolean): Self = StObject.set(x, "reserved", value.asInstanceOf[js.Any])
+    
+    inline def setReservedNull: Self = StObject.set(x, "reserved", null)
+    
+    inline def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
   }
 }

@@ -27,6 +27,11 @@ trait CreateWorkforceRequest extends StObject {
     * The name of the private workforce.
     */
   var WorkforceName: typings.awsSdk.sagemakerMod.WorkforceName
+  
+  /**
+    * Use this parameter to configure a workforce using VPC.
+    */
+  var WorkforceVpcConfig: js.UndefOr[WorkforceVpcConfigRequest] = js.undefined
 }
 object CreateWorkforceRequest {
   
@@ -53,8 +58,12 @@ object CreateWorkforceRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setWorkforceName(value: WorkforceName): Self = StObject.set(x, "WorkforceName", value.asInstanceOf[js.Any])
+    
+    inline def setWorkforceVpcConfig(value: WorkforceVpcConfigRequest): Self = StObject.set(x, "WorkforceVpcConfig", value.asInstanceOf[js.Any])
+    
+    inline def setWorkforceVpcConfigUndefined: Self = StObject.set(x, "WorkforceVpcConfig", js.undefined)
   }
 }

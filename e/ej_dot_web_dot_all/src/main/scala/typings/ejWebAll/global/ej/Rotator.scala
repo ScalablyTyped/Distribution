@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Rotator")
 @js.native
-class Rotator protected ()
+open class Rotator protected ()
   extends StObject
      with typings.ejWebAll.ej.Rotator {
   def this(element: JQuery) = this()
@@ -25,8 +25,8 @@ object Rotator {
   /* static member */
   @JSGlobal("ej.Rotator.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.Rotator.PagerPosition")
   @js.native

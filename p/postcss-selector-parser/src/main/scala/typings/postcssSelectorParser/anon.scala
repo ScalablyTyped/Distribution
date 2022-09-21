@@ -10,6 +10,31 @@ object anon {
     
     var after: js.UndefOr[String] = js.undefined
     
+    var before: js.UndefOr[String] = js.undefined
+  }
+  object After {
+    
+    inline def apply(): After = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[After]
+    }
+    
+    extension [Self <: After](x: Self) {
+      
+      inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      
+      inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    }
+  }
+  
+  trait Attribute extends StObject {
+    
+    var after: js.UndefOr[String] = js.undefined
+    
     var attribute: js.UndefOr[PartialSpaceAround] = js.undefined
     
     var before: js.UndefOr[String] = js.undefined
@@ -20,14 +45,14 @@ object anon {
     
     var value: js.UndefOr[PartialSpaceAround] = js.undefined
   }
-  object After {
+  object Attribute {
     
-    inline def apply(): After = {
+    inline def apply(): Attribute = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[After]
+      __obj.asInstanceOf[Attribute]
     }
     
-    extension [Self <: After](x: Self) {
+    extension [Self <: Attribute](x: Self) {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -50,43 +75,6 @@ object anon {
       inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       
       inline def setValue(value: PartialSpaceAround): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    }
-  }
-  
-  trait Attribute extends StObject {
-    
-    var attribute: js.UndefOr[PartialSpaces] = js.undefined
-    
-    var insensitive: js.UndefOr[PartialSpaces] = js.undefined
-    
-    var operator: js.UndefOr[PartialSpaces] = js.undefined
-    
-    var value: js.UndefOr[PartialSpaces] = js.undefined
-  }
-  object Attribute {
-    
-    inline def apply(): Attribute = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Attribute]
-    }
-    
-    extension [Self <: Attribute](x: Self) {
-      
-      inline def setAttribute(value: PartialSpaces): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
-      
-      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
-      
-      inline def setInsensitive(value: PartialSpaces): Self = StObject.set(x, "insensitive", value.asInstanceOf[js.Any])
-      
-      inline def setInsensitiveUndefined: Self = StObject.set(x, "insensitive", js.undefined)
-      
-      inline def setOperator(value: PartialSpaces): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
-      
-      inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
-      
-      inline def setValue(value: PartialSpaces): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -160,19 +148,13 @@ object anon {
   
   trait Insensitive extends StObject {
     
-    var attribute: js.UndefOr[String] = js.undefined
+    var attribute: js.UndefOr[PartialSpaces] = js.undefined
     
-    var insensitive: js.UndefOr[String] = js.undefined
+    var insensitive: js.UndefOr[PartialSpaces] = js.undefined
     
-    var operator: js.UndefOr[String] = js.undefined
+    var operator: js.UndefOr[PartialSpaces] = js.undefined
     
-    var spaces: js.UndefOr[Attribute] = js.undefined
-    
-    /** @deprecated The attribute value is unquoted, use that instead.. */
-    var unquoted: js.UndefOr[String] = js.undefined
-    
-    /** The value of the attribute with quotes and escapes. */
-    var value: js.UndefOr[String] = js.undefined
+    var value: js.UndefOr[PartialSpaces] = js.undefined
   }
   object Insensitive {
     
@@ -182,6 +164,49 @@ object anon {
     }
     
     extension [Self <: Insensitive](x: Self) {
+      
+      inline def setAttribute(value: PartialSpaces): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      
+      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+      
+      inline def setInsensitive(value: PartialSpaces): Self = StObject.set(x, "insensitive", value.asInstanceOf[js.Any])
+      
+      inline def setInsensitiveUndefined: Self = StObject.set(x, "insensitive", js.undefined)
+      
+      inline def setOperator(value: PartialSpaces): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      
+      inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+      
+      inline def setValue(value: PartialSpaces): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait Operator extends StObject {
+    
+    var attribute: js.UndefOr[String] = js.undefined
+    
+    var insensitive: js.UndefOr[String] = js.undefined
+    
+    var operator: js.UndefOr[String] = js.undefined
+    
+    var spaces: js.UndefOr[Insensitive] = js.undefined
+    
+    /** @deprecated The attribute value is unquoted, use that instead.. */
+    var unquoted: js.UndefOr[String] = js.undefined
+    
+    /** The value of the attribute with quotes and escapes. */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object Operator {
+    
+    inline def apply(): Operator = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Operator]
+    }
+    
+    extension [Self <: Operator](x: Self) {
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -195,7 +220,7 @@ object anon {
       
       inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       
-      inline def setSpaces(value: Attribute): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+      inline def setSpaces(value: Insensitive): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
       
       inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
       

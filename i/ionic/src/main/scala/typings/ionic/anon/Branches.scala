@@ -25,7 +25,7 @@ object Branches {
     
     inline def setBranches(value: js.Array[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     
-    inline def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value :_*))
+    inline def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value*))
     
     inline def setRepoId(value: Double): Self = StObject.set(x, "repoId", value.asInstanceOf[js.Any])
     

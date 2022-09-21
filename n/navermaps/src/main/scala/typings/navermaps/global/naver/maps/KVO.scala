@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // KVO
 @JSGlobal("naver.maps.KVO")
 @js.native
-class KVO ()
+open class KVO ()
   extends StObject
      with typings.navermaps.naver.maps.KVO

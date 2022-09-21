@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Filter Clause to be used in a segment definition, can be wither a metric or
-  * a dimension filter.
-  */
 trait SchemaSegmentFilterClause extends StObject {
   
   /**
@@ -23,7 +19,7 @@ trait SchemaSegmentFilterClause extends StObject {
   /**
     * Matches the complement (`!`) of the filter.
     */
-  var not: js.UndefOr[Boolean] = js.undefined
+  var not: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaSegmentFilterClause {
   
@@ -43,6 +39,8 @@ object SchemaSegmentFilterClause {
     inline def setMetricFilterUndefined: Self = StObject.set(x, "metricFilter", js.undefined)
     
     inline def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+    
+    inline def setNotNull: Self = StObject.set(x, "not", null)
     
     inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
   }

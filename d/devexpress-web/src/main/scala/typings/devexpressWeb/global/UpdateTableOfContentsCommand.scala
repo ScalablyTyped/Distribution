@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("UpdateTableOfContentsCommand")
 @js.native
-class UpdateTableOfContentsCommand ()
+open class UpdateTableOfContentsCommand ()
   extends StObject
      with typings.devexpressWeb.UpdateTableOfContentsCommand {
   

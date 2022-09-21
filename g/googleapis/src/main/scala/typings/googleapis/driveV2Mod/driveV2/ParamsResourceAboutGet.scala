@@ -1,9 +1,5 @@
 package typings.googleapis.driveV2Mod.driveV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,15 +9,7 @@ trait ParamsResourceAboutGet
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Whether to count changes outside the My Drive hierarchy. When set to
-    * false, changes to files such as those in the Application Data folder or
-    * shared files which have not been added to My Drive will be omitted from
-    * the maxChangeIdCount.
+    * Whether to count changes outside the My Drive hierarchy. When set to false, changes to files such as those in the Application Data folder or shared files which have not been added to My Drive will be omitted from the maxChangeIdCount.
     */
   var includeSubscribed: js.UndefOr[Boolean] = js.undefined
   
@@ -31,8 +19,7 @@ trait ParamsResourceAboutGet
   var maxChangeIdCount: js.UndefOr[String] = js.undefined
   
   /**
-    * Change ID to start counting from when calculating number of remaining
-    * change IDs
+    * Change ID to start counting from when calculating number of remaining change IDs
     */
   var startChangeId: js.UndefOr[String] = js.undefined
 }
@@ -44,10 +31,6 @@ object ParamsResourceAboutGet {
   }
   
   extension [Self <: ParamsResourceAboutGet](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setIncludeSubscribed(value: Boolean): Self = StObject.set(x, "includeSubscribed", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,7 @@ trait ASPxClientRichEdit
   var CustomCommandExecuted: ASPxClientEvent[ASPxClientRichEditCustomCommandExecutedEventHandler] = js.native
   
   /**
-    * Fires if an end user makes any change in the RichEdit's document on the client.
+    * Fires if any change is made to the RichEdit's document on the client.
     */
   var DocumentChanged: ASPxClientEvent[ASPxClientEventHandler[ASPxClientRichEdit]] = js.native
   
@@ -80,9 +80,9 @@ trait ASPxClientRichEdit
     */
   def DownloadPdf(): Unit = js.native
   def DownloadPdf(fileName: String): Unit = js.native
-  def DownloadPdf(fileName: String, options: js.Function1[/* pdfDocument */ js.Any, Unit]): Unit = js.native
+  def DownloadPdf(fileName: String, options: js.Function1[/* pdfDocument */ Any, Unit]): Unit = js.native
   def DownloadPdf(fileName: String, options: ModifyPdfDocument): Unit = js.native
-  def DownloadPdf(fileName: Unit, options: js.Function1[/* pdfDocument */ js.Any, Unit]): Unit = js.native
+  def DownloadPdf(fileName: Unit, options: js.Function1[/* pdfDocument */ Any, Unit]): Unit = js.native
   def DownloadPdf(fileName: Unit, options: ModifyPdfDocument): Unit = js.native
   
   /**
@@ -100,7 +100,7 @@ trait ASPxClientRichEdit
     * @param options A function that allows you to modify the PDF document before it is downloaded; or an object that contains modifyPdfDocument and modifyPdfPage functions.
     */
   def ExportToPdf(): Unit = js.native
-  def ExportToPdf(options: js.Function1[/* pdfDocument */ js.Any, Unit]): Unit = js.native
+  def ExportToPdf(options: js.Function1[/* pdfDocument */ Any, Unit]): Unit = js.native
   def ExportToPdf(options: ModifyPdfDocument): Unit = js.native
   
   /**

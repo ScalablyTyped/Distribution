@@ -13,6 +13,11 @@ trait UpdateGatewayInformationInput extends StObject {
   
   var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN
   
+  /**
+    * Specifies the size of the gateway's metadata cache.
+    */
+  var GatewayCapacity: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayCapacity] = js.undefined
+  
   var GatewayName: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayName] = js.undefined
   
   /**
@@ -34,6 +39,10 @@ object UpdateGatewayInformationInput {
     inline def setCloudWatchLogGroupARNUndefined: Self = StObject.set(x, "CloudWatchLogGroupARN", js.undefined)
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    
+    inline def setGatewayCapacity(value: GatewayCapacity): Self = StObject.set(x, "GatewayCapacity", value.asInstanceOf[js.Any])
+    
+    inline def setGatewayCapacityUndefined: Self = StObject.set(x, "GatewayCapacity", js.undefined)
     
     inline def setGatewayName(value: GatewayName): Self = StObject.set(x, "GatewayName", value.asInstanceOf[js.Any])
     

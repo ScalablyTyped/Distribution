@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsS3BucketServerSideEncryptionByDefault extends StObject {
   
   /**
-    * AWS KMS customer master key (CMK) ID to use for the default encryption.
+    * KMS key ID to use for the default encryption.
     */
   var KMSMasterKeyID: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Server-side encryption algorithm to use for the default encryption.
+    * Server-side encryption algorithm to use for the default encryption. Valid values are aws: kms or AES256.
     */
   var SSEAlgorithm: js.UndefOr[NonEmptyString] = js.undefined
 }

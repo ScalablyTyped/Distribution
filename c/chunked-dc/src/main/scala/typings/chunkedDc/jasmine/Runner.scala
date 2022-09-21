@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Runner
   extends StObject
-     with Instantiable1[/* env */ Env, js.Any] {
+     with Instantiable1[/* env */ Env, scala.Any] {
   
   def add(block: Block): Unit = js.native
   

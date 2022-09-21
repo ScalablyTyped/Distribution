@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.WrapFormat")
 @js.native
-/* private */ class WrapFormat ()
+/* private */ open class WrapFormat ()
   extends StObject
      with typings.activexWord.Word.WrapFormat {
   
@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var DistanceTop: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Side: WdWrapSideType = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-alert
 
-Typings are for version 5.2
+Typings are for version 7.0
 
 ## Library description:
 A simple react alert component
@@ -10,10 +10,10 @@ A simple react alert component
 | ------------------ | :-------------: |
 | Full name          | react-alert |
 | Keywords           | react, alert, react-alert, toaster, react-toaster, react-component |
-| # releases         | 14 |
-| # dependents       | 17 |
-| # downloads        | 704825 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 111745.66666666667 |
+| # stars            | 599.0 |
 
 ## Links
 - [Homepage](https://github.com/schiehll/react-alert#readme)

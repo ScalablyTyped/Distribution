@@ -23,7 +23,7 @@ object ReturnTypeSetNodeNameResponse {
     
     inline def setParamsType(value: js.Array[SetNodeNameRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: SetNodeNameRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SetNodeNameRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: SetNodeNameResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

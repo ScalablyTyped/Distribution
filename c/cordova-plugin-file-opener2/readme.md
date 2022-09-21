@@ -10,15 +10,12 @@ A File Opener Plugin for Cordova. (The Original Version)
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-file-opener2 |
 | Keywords           | ecosystem:cordova, cordova-android, cordova-ios, cordova-windows, cordova-electron |
-| # releases         | 8 |
-| # dependents       | 5 |
-| # downloads        | 734875 |
-| # stars            | 6 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 104571.66666666667 |
+| # stars            | 310.0 |
 
 ## Links
-- [Homepage](https://github.com/pwlin/cordova-plugin-file-opener2#readme)
-- [Bugs](https://github.com/pwlin/cordova-plugin-file-opener2/issues)
-- [Repository](https://github.com/pwlin/cordova-plugin-file-opener2)
 - [Npm](https://www.npmjs.com/package/cordova-plugin-file-opener2)
     
 

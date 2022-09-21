@@ -29,7 +29,7 @@ object GoogleFirestoreAdminV1ExportDocumentsRequest {
     
     inline def setCollectionIdsUndefined: Self = StObject.set(x, "collectionIds", js.undefined)
     
-    inline def setCollectionIdsVarargs(value: String*): Self = StObject.set(x, "collectionIds", js.Array(value :_*))
+    inline def setCollectionIdsVarargs(value: String*): Self = StObject.set(x, "collectionIds", js.Array(value*))
     
     inline def setOutputUriPrefix(value: String): Self = StObject.set(x, "outputUriPrefix", value.asInstanceOf[js.Any])
     

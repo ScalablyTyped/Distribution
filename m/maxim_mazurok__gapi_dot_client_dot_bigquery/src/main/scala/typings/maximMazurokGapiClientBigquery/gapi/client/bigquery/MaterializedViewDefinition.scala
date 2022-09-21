@@ -12,6 +12,9 @@ trait MaterializedViewDefinition extends StObject {
   /** [Output-only] [TrustedTester] The time when this materialized view was last modified, in milliseconds since the epoch. */
   var lastRefreshTime: js.UndefOr[String] = js.undefined
   
+  /** [Optional] Max staleness of data that could be returned when materizlized view is queried (formatted as Google SQL Interval type). */
+  var maxStaleness: js.UndefOr[String] = js.undefined
+  
   /** [Required] A query whose result is persisted. */
   var query: js.UndefOr[String] = js.undefined
   
@@ -34,6 +37,10 @@ object MaterializedViewDefinition {
     inline def setLastRefreshTime(value: String): Self = StObject.set(x, "lastRefreshTime", value.asInstanceOf[js.Any])
     
     inline def setLastRefreshTimeUndefined: Self = StObject.set(x, "lastRefreshTime", js.undefined)
+    
+    inline def setMaxStaleness(value: String): Self = StObject.set(x, "maxStaleness", value.asInstanceOf[js.Any])
+    
+    inline def setMaxStalenessUndefined: Self = StObject.set(x, "maxStaleness", js.undefined)
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

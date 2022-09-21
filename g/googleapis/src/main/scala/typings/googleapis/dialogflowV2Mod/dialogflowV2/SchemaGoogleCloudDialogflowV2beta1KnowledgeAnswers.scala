@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents the result of querying a Knowledge base.
-  */
 trait SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers {
     
     inline def setAnswersUndefined: Self = StObject.set(x, "answers", js.undefined)
     
-    inline def setAnswersVarargs(value: SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer*): Self = StObject.set(x, "answers", js.Array(value :_*))
+    inline def setAnswersVarargs(value: SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer*): Self = StObject.set(x, "answers", js.Array(value*))
   }
 }

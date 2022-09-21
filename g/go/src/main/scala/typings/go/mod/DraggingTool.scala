@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.draggingTool, which you can modify.
   */
-class DraggingTool () extends Tool {
+open class DraggingTool () extends Tool {
   
   /**
     * Find the actual collection of nodes and links to be moved or copied, given an initial collection.

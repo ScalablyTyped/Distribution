@@ -3,11 +3,11 @@ package typings.blueprintjsTable
 import typings.blueprintjsCore.mod.AbstractComponent2
 import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsTable.anon.RenderMode
-import typings.blueprintjsTable.cellMod.ICellRenderer
-import typings.blueprintjsTable.commonCellMod.IFocusedCellCoordinates
+import typings.blueprintjsTable.cellMod.CellRenderer
+import typings.blueprintjsTable.cellTypesMod.FocusedCellCoordinates
+import typings.blueprintjsTable.gridMod.ColumnIndices
 import typings.blueprintjsTable.gridMod.Grid
-import typings.blueprintjsTable.gridMod.IColumnIndices
-import typings.blueprintjsTable.gridMod.IRowIndices
+import typings.blueprintjsTable.gridMod.RowIndices
 import typings.blueprintjsTable.rectMod.Rect
 import typings.blueprintjsTable.renderModeMod.RenderMode.BATCH
 import typings.blueprintjsTable.renderModeMod.RenderMode.NONE
@@ -24,12 +24,12 @@ object tableBodyCellsMod {
   
   @JSImport("@blueprintjs/table/lib/esm/tableBodyCells", "TableBodyCells")
   @js.native
-  class TableBodyCells protected ()
+  open class TableBodyCells protected ()
     extends AbstractComponent2[ITableBodyCellsProps, js.Object, js.Object] {
     def this(props: ITableBodyCellsProps) = this()
-    def this(props: ITableBodyCellsProps, context: js.Any) = this()
+    def this(props: ITableBodyCellsProps, context: Any) = this()
     
-    /* private */ var batcher: js.Any = js.native
+    /* private */ var batcher: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MTableBodyCells(): Unit = js.native
@@ -40,20 +40,24 @@ object tableBodyCellsMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MTableBodyCells(): Unit = js.native
     
-    /* private */ var didViewportRectChange: js.Any = js.native
+    /**
+      * Set this flag to true in componentDidUpdate() when we call forceUpdate() to avoid an extra
+      * unnecessary update cycle.
+      */
+    /* private */ var didForceUpdate: Any = js.native
     
-    /* private */ var maybeInvokeOnCompleteRender: js.Any = js.native
+    /* private */ var didViewportRectChange: Any = js.native
     
-    /* private */ var renderAllCells: js.Any = js.native
+    /* private */ var maybeInvokeOnCompleteRender: Any = js.native
     
-    /* private */ var renderBatchedCells: js.Any = js.native
+    /* private */ var renderAllCells: Any = js.native
     
-    /* private */ var renderCell: js.Any = js.native
+    /* private */ var renderBatchedCells: Any = js.native
     
-    /* private */ var renderNewCell: js.Any = js.native
+    /* private */ var renderCell: Any = js.native
     
-    @JSName("shouldComponentUpdate")
-    def shouldComponentUpdate_MTableBodyCells(): Boolean = js.native
+    /* private */ var renderNewCell: Any = js.native
+    
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MTableBodyCells(nextProps: ITableBodyCellsProps): Boolean = js.native
   }
@@ -66,8 +70,8 @@ object tableBodyCellsMod {
     
     @JSImport("@blueprintjs/table/lib/esm/tableBodyCells", "TableBodyCells.cellReactKey")
     @js.native
-    def cellReactKey: js.Any = js.native
-    inline def cellReactKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cellReactKey")(x.asInstanceOf[js.Any])
+    def cellReactKey: Any = js.native
+    inline def cellReactKey_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cellReactKey")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/tableBodyCells", "TableBodyCells.defaultProps")
     @js.native
@@ -79,19 +83,19 @@ object tableBodyCellsMod {
   
   trait ITableBodyCellsProps
     extends StObject
-       with IRowIndices
-       with IColumnIndices
+       with RowIndices
+       with ColumnIndices
        with IProps {
     
     /**
       * A cell renderer for the cells in the body.
       */
-    var cellRenderer: ICellRenderer
+    var cellRenderer: CellRenderer
     
     /**
       * The coordinates of the currently focused cell, for setting the "isFocused" prop on cells.
       */
-    var focusedCell: js.UndefOr[IFocusedCellCoordinates] = js.undefined
+    var focusedCell: js.UndefOr[FocusedCellCoordinates] = js.undefined
     
     /**
       * The grid computes sizes of cells, rows, or columns from the
@@ -115,6 +119,7 @@ object tableBodyCellsMod {
       * `RenderMode.BATCH_ON_UPDATE`, because there are actually multiple updates
       * that need to happen at higher levels before the table is considered fully
       * "mounted"; thus, we let higher components tell us when to switch modes.
+      *
       * @default RenderMode.BATCH
       */
     var renderMode: js.UndefOr[BATCH | NONE] = js.undefined
@@ -129,7 +134,7 @@ object tableBodyCellsMod {
   object ITableBodyCellsProps {
     
     inline def apply(
-      cellRenderer: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement,
+      cellRenderer: (/* rowIndex */ Double, /* columnIndex */ Double) => js.UndefOr[ReactElement],
       columnIndexEnd: Double,
       columnIndexStart: Double,
       grid: Grid,
@@ -144,9 +149,9 @@ object tableBodyCellsMod {
     
     extension [Self <: ITableBodyCellsProps](x: Self) {
       
-      inline def setCellRenderer(value: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction2(value))
+      inline def setCellRenderer(value: (/* rowIndex */ Double, /* columnIndex */ Double) => js.UndefOr[ReactElement]): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction2(value))
       
-      inline def setFocusedCell(value: IFocusedCellCoordinates): Self = StObject.set(x, "focusedCell", value.asInstanceOf[js.Any])
+      inline def setFocusedCell(value: FocusedCellCoordinates): Self = StObject.set(x, "focusedCell", value.asInstanceOf[js.Any])
       
       inline def setFocusedCellUndefined: Self = StObject.set(x, "focusedCell", js.undefined)
       

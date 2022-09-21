@@ -19,7 +19,7 @@ trait ApplicationState extends StObject {
   /**
     * The timestamp when the application status was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[UpdateDateTime] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
 }
 object ApplicationState {
   
@@ -38,7 +38,7 @@ object ApplicationState {
     
     inline def setApplicationStatusUndefined: Self = StObject.set(x, "ApplicationStatus", js.undefined)
     
-    inline def setLastUpdatedTime(value: UpdateDateTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
   }

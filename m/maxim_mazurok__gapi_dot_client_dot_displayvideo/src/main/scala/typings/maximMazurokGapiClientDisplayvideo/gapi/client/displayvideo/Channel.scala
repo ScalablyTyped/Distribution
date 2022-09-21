@@ -18,8 +18,14 @@ trait Channel extends StObject {
   /** Output only. The resource name of the channel. */
   var name: js.UndefOr[String] = js.undefined
   
+  /** Output only. Number of line items that are directly targeting this channel negatively. */
+  var negativelyTargetedLineItemCount: js.UndefOr[String] = js.undefined
+  
   /** The ID of the partner that owns the channel. */
   var partnerId: js.UndefOr[String] = js.undefined
+  
+  /** Output only. Number of line items that are directly targeting this channel positively. */
+  var positivelyTargetedLineItemCount: js.UndefOr[String] = js.undefined
 }
 object Channel {
   
@@ -46,8 +52,16 @@ object Channel {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
+    inline def setNegativelyTargetedLineItemCount(value: String): Self = StObject.set(x, "negativelyTargetedLineItemCount", value.asInstanceOf[js.Any])
+    
+    inline def setNegativelyTargetedLineItemCountUndefined: Self = StObject.set(x, "negativelyTargetedLineItemCount", js.undefined)
+    
     inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
     inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
+    
+    inline def setPositivelyTargetedLineItemCount(value: String): Self = StObject.set(x, "positivelyTargetedLineItemCount", value.asInstanceOf[js.Any])
+    
+    inline def setPositivelyTargetedLineItemCountUndefined: Self = StObject.set(x, "positivelyTargetedLineItemCount", js.undefined)
   }
 }

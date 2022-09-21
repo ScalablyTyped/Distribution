@@ -4,29 +4,29 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the Page object, for use in "page.set({ ... })". */
+/** An interface for updating data on the Page object, for use in `page.set({ ... })`. */
 trait PageUpdateData extends StObject {
   
   /**
+    * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
     *
-    * Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
-    *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var inkAnalysisOrNull: js.UndefOr[InkAnalysisUpdateData] = js.undefined
   
   /**
-    *
     * Gets or sets the indentation level of the page.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var pageLevel: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Gets or sets the title of the page.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var title: js.UndefOr[String] = js.undefined

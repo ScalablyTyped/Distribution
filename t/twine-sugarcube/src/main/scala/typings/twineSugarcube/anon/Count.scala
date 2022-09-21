@@ -68,6 +68,6 @@ trait Count extends StObject {
     */
   def save(slot: Double): Unit = js.native
   def save(slot: Double, title: String): Unit = js.native
-  def save(slot: Double, title: String, metadata: js.Any): Unit = js.native
-  def save(slot: Double, title: Unit, metadata: js.Any): Unit = js.native
+  def save(slot: Double, title: String, metadata: Any): Unit = js.native
+  def save(slot: Double, title: Unit, metadata: Any): Unit = js.native
 }

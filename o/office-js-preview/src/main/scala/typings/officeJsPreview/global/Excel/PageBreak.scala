@@ -6,11 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PageBreak")
 @js.native
-class PageBreak ()
+open class PageBreak ()
   extends StObject
      with typings.officeJsPreview.Excel.PageBreak {
   

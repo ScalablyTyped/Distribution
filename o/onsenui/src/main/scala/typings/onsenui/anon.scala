@@ -9,7 +9,7 @@ object anon {
   
   trait Page extends StObject {
     
-    var page: js.Any
+    var page: Any
     
     var params: js.UndefOr[js.Object] = js.undefined
     
@@ -17,14 +17,14 @@ object anon {
   }
   object Page {
     
-    inline def apply(page: js.Any, parent: Element): Page = {
+    inline def apply(page: Any, parent: Element): Page = {
       val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[Page]
     }
     
     extension [Self <: Page](x: Self) {
       
-      inline def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
       inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

@@ -10,10 +10,10 @@ object tabletAndroidMod {
   
   @JSImport("material-ui/svg-icons/hardware/tablet-android", JSImport.Default)
   @js.native
-  class default () extends HardwareTabletAndroid
+  open class default () extends HardwareTabletAndroid
   
   @JSImport("material-ui/svg-icons/hardware/tablet-android", "HardwareTabletAndroid")
   @js.native
-  class HardwareTabletAndroid ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareTabletAndroid ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

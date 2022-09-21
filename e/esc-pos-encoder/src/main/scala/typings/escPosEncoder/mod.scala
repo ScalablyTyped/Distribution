@@ -2,7 +2,6 @@ package typings.escPosEncoder
 
 import typings.escPosEncoder.escPosEncoderNumbers.`1`
 import typings.escPosEncoder.escPosEncoderNumbers.`2`
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object mod {
   
   @JSImport("esc-pos-encoder", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with EscPosEncoder
   
@@ -30,12 +29,12 @@ object mod {
     def cut(): EscPosEncoder = js.native
     def cut(value: cutType): EscPosEncoder = js.native
     
-    def encode(): Uint8Array = js.native
+    def encode(): js.typedarray.Uint8Array = js.native
     
-    def image(element: js.Any, width: Double, height: Double): EscPosEncoder = js.native
-    def image(element: js.Any, width: Double, height: Double, algorithm: Unit, threshold: Double): EscPosEncoder = js.native
-    def image(element: js.Any, width: Double, height: Double, algorithm: imgAlgType): EscPosEncoder = js.native
-    def image(element: js.Any, width: Double, height: Double, algorithm: imgAlgType, threshold: Double): EscPosEncoder = js.native
+    def image(element: Any, width: Double, height: Double): EscPosEncoder = js.native
+    def image(element: Any, width: Double, height: Double, algorithm: Unit, threshold: Double): EscPosEncoder = js.native
+    def image(element: Any, width: Double, height: Double, algorithm: imgAlgType): EscPosEncoder = js.native
+    def image(element: Any, width: Double, height: Double, algorithm: imgAlgType, threshold: Double): EscPosEncoder = js.native
     
     def initialize(): EscPosEncoder = js.native
     
@@ -48,28 +47,16 @@ object mod {
     def newline(): EscPosEncoder = js.native
     
     def qrcode(value: String): EscPosEncoder = js.native
+    def qrcode(value: String, model: `1` | `2`): EscPosEncoder = js.native
+    def qrcode(value: String, model: `1` | `2`, size: Unit, errorLevel: qrErrorLevelType): EscPosEncoder = js.native
+    def qrcode(value: String, model: `1` | `2`, size: qrSizeType): EscPosEncoder = js.native
+    def qrcode(value: String, model: `1` | `2`, size: qrSizeType, errorLevel: qrErrorLevelType): EscPosEncoder = js.native
     def qrcode(value: String, model: Unit, size: Unit, errorLevel: qrErrorLevelType): EscPosEncoder = js.native
     def qrcode(value: String, model: Unit, size: qrSizeType): EscPosEncoder = js.native
     def qrcode(value: String, model: Unit, size: qrSizeType, errorLevel: qrErrorLevelType): EscPosEncoder = js.native
-    @JSName("qrcode")
-    def qrcode_1(value: String, model: `1`): EscPosEncoder = js.native
-    @JSName("qrcode")
-    def qrcode_1(value: String, model: `1`, size: Unit, errorLevel: qrErrorLevelType): EscPosEncoder = js.native
-    @JSName("qrcode")
-    def qrcode_1(value: String, model: `1`, size: qrSizeType): EscPosEncoder = js.native
-    @JSName("qrcode")
-    def qrcode_1(value: String, model: `1`, size: qrSizeType, errorLevel: qrErrorLevelType): EscPosEncoder = js.native
-    @JSName("qrcode")
-    def qrcode_2(value: String, model: `2`): EscPosEncoder = js.native
-    @JSName("qrcode")
-    def qrcode_2(value: String, model: `2`, size: Unit, errorLevel: qrErrorLevelType): EscPosEncoder = js.native
-    @JSName("qrcode")
-    def qrcode_2(value: String, model: `2`, size: qrSizeType): EscPosEncoder = js.native
-    @JSName("qrcode")
-    def qrcode_2(value: String, model: `2`, size: qrSizeType, errorLevel: qrErrorLevelType): EscPosEncoder = js.native
     
     def raw(data: js.Array[Double]): EscPosEncoder = js.native
-    def raw(data: Uint8Array): EscPosEncoder = js.native
+    def raw(data: js.typedarray.Uint8Array): EscPosEncoder = js.native
     
     def size(value: sizeType): EscPosEncoder = js.native
     

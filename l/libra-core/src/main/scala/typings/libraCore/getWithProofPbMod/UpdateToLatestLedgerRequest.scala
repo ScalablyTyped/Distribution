@@ -6,14 +6,13 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "UpdateToLatestLedgerRequest")
 @js.native
-class UpdateToLatestLedgerRequest () extends Message {
+open class UpdateToLatestLedgerRequest () extends Message {
   
   def addRequestedItems(): RequestItem = js.native
   def addRequestedItems(value: Unit, index: Double): RequestItem = js.native
@@ -37,7 +36,7 @@ object UpdateToLatestLedgerRequest {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): UpdateToLatestLedgerRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[UpdateToLatestLedgerRequest]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): UpdateToLatestLedgerRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[UpdateToLatestLedgerRequest]
   
   inline def deserializeBinaryFromReader(message: UpdateToLatestLedgerRequest, reader: BinaryReader): UpdateToLatestLedgerRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[UpdateToLatestLedgerRequest]
   
@@ -78,7 +77,7 @@ object UpdateToLatestLedgerRequest {
       
       inline def setRequestedItemsList(value: js.Array[typings.libraCore.getWithProofPbMod.RequestItem.AsObject]): Self = StObject.set(x, "requestedItemsList", value.asInstanceOf[js.Any])
       
-      inline def setRequestedItemsListVarargs(value: typings.libraCore.getWithProofPbMod.RequestItem.AsObject*): Self = StObject.set(x, "requestedItemsList", js.Array(value :_*))
+      inline def setRequestedItemsListVarargs(value: typings.libraCore.getWithProofPbMod.RequestItem.AsObject*): Self = StObject.set(x, "requestedItemsList", js.Array(value*))
     }
   }
 }

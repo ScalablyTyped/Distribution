@@ -1,6 +1,6 @@
 package typings.createHmac
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.cryptoMod.Hmac
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

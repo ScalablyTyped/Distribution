@@ -59,7 +59,7 @@ object XExtendedCalendar {
     isValid: () => Boolean,
     loadCalendar: (String, Locale) => Unit,
     loadDefaultCalendar: Locale => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDateTime: Double => Unit,
     setFirstDayOfWeek: Double => Unit,

@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Targeting represents different criteria that can be used by advertisers to
-  * target ad inventory. For example, they can choose to target ad requests
-  * only if the user is in the US. Multiple types of targeting are always
-  * applied as a logical AND, unless noted otherwise.
-  */
 trait SchemaMarketplaceTargeting extends StObject {
   
   /**
@@ -28,8 +22,7 @@ trait SchemaMarketplaceTargeting extends StObject {
   var placementTargeting: js.UndefOr[SchemaPlacementTargeting] = js.undefined
   
   /**
-    * Technology targeting information, e.g., operating system, device
-    * category.
+    * Technology targeting information, e.g., operating system, device category.
     */
   var technologyTargeting: js.UndefOr[SchemaTechnologyTargeting] = js.undefined
   

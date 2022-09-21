@@ -60,11 +60,11 @@ object BusinessData {
       
       def getCollectionSize(fieldDotNotation: String): IntResult = js.native
       
-      def get_fieldValues(): js.Any = js.native
+      def get_fieldValues(): Any = js.native
       
-      def get_item(fieldName: String): js.Any = js.native
+      def get_item(fieldName: String): Any = js.native
       
-      def set_item(fieldName: String, value: js.Any): Unit = js.native
+      def set_item(fieldName: String, value: Any): Unit = js.native
       
       def toXml(): StringResult = js.native
     }
@@ -74,11 +74,11 @@ object BusinessData {
       extends StObject
          with ClientObject {
       
-      def get_fieldValues(): js.Any = js.native
+      def get_fieldValues(): Any = js.native
       
       def get_identifierCount(): Double = js.native
       
-      def get_item(fieldName: String): js.Any = js.native
+      def get_item(fieldName: String): Any = js.native
     }
     
     @js.native
@@ -96,11 +96,11 @@ object BusinessData {
       
       def getIdentity(): EntityIdentity = js.native
       
-      def get_fieldValues(): js.Any = js.native
+      def get_fieldValues(): Any = js.native
       
-      def get_item(fieldName: String): js.Any = js.native
+      def get_item(fieldName: String): Any = js.native
       
-      def set_item(fieldName: String, value: js.Any): Unit = js.native
+      def set_item(fieldName: String, value: Any): Unit = js.native
       
       def toXml(): StringResult = js.native
       
@@ -130,7 +130,7 @@ object BusinessData {
       
       def get_hash(): String = js.native
       
-      def get_iD(): js.Any = js.native
+      def get_iD(): Any = js.native
     }
   }
   
@@ -197,7 +197,7 @@ object BusinessData {
       
       def itemAt(index: Double): Filter = js.native
       
-      def setFilterValue(inputFilterName: String, valueIndex: Double, value: js.Any): Unit = js.native
+      def setFilterValue(inputFilterName: String, valueIndex: Double, value: Any): Unit = js.native
     }
     
     @js.native
@@ -228,7 +228,7 @@ object BusinessData {
     
     def create(fieldValues: EntityFieldValueDictionary, lobSystemInstance: LobSystemInstance): EntityIdentity = js.native
     
-    def execute(methodInstanceName: String, lobSystemInstance: LobSystemInstance, inputParams: js.Array[js.Any]): MethodExecutionResult = js.native
+    def execute(methodInstanceName: String, lobSystemInstance: LobSystemInstance, inputParams: js.Array[Any]): MethodExecutionResult = js.native
     
     def findAssociated(
       entityInstance: EntityInstance,

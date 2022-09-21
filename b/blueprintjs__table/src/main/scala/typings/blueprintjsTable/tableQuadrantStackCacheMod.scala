@@ -8,27 +8,27 @@ object tableQuadrantStackCacheMod {
   
   @JSImport("@blueprintjs/table/lib/esm/quadrants/tableQuadrantStackCache", "TableQuadrantStackCache")
   @js.native
-  class TableQuadrantStackCache () extends StObject {
+  open class TableQuadrantStackCache () extends StObject {
     
-    /* private */ var cachedColumnHeaderHeight: js.Any = js.native
+    /* private */ var cachedColumnHeaderHeight: Any = js.native
     
-    /* private */ var cachedRowHeaderWidth: js.Any = js.native
+    /* private */ var cachedRowHeaderWidth: Any = js.native
     
-    /* private */ var cachedScrollContainerClientHeight: js.Any = js.native
+    /* private */ var cachedScrollContainerClientHeight: Any = js.native
     
-    /* private */ var cachedScrollContainerClientWidth: js.Any = js.native
+    /* private */ var cachedScrollContainerClientWidth: Any = js.native
     
-    /* private */ var cachedScrollLeft: js.Any = js.native
+    /* private */ var cachedScrollLeft: Any = js.native
     
-    /* private */ var cachedScrollTop: js.Any = js.native
+    /* private */ var cachedScrollTop: Any = js.native
     
     def getColumnHeaderHeight(): Double = js.native
     
     def getRowHeaderWidth(): Double = js.native
     
-    def getScrollContainerClientHeight(): Double = js.native
+    def getScrollContainerClientHeight(): js.UndefOr[Double] = js.native
     
-    def getScrollContainerClientWidth(): Double = js.native
+    def getScrollContainerClientWidth(): js.UndefOr[Double] = js.native
     
     def getScrollOffset(scrollKey: ScrollKey): Double = js.native
     

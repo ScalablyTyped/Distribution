@@ -9,7 +9,7 @@ trait ServiceSoftwareOptions extends StObject {
   /**
     * Timestamp, in Epoch time, until which you can manually request a service software update. After this date, we automatically update your service software.
     */
-  var AutomatedUpdateDate: js.UndefOr[DeploymentCloseDateTimeStamp] = js.undefined
+  var AutomatedUpdateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * True if you are able to cancel your service software version update. False if you are not able to cancel your service software version. 
@@ -55,7 +55,7 @@ object ServiceSoftwareOptions {
   
   extension [Self <: ServiceSoftwareOptions](x: Self) {
     
-    inline def setAutomatedUpdateDate(value: DeploymentCloseDateTimeStamp): Self = StObject.set(x, "AutomatedUpdateDate", value.asInstanceOf[js.Any])
+    inline def setAutomatedUpdateDate(value: js.Date): Self = StObject.set(x, "AutomatedUpdateDate", value.asInstanceOf[js.Any])
     
     inline def setAutomatedUpdateDateUndefined: Self = StObject.set(x, "AutomatedUpdateDate", js.undefined)
     

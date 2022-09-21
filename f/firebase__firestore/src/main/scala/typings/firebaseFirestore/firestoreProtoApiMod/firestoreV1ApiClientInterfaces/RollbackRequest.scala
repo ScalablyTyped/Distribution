@@ -1,19 +1,24 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RollbackRequest extends js.Object {
+trait RollbackRequest extends StObject {
+  
   var transaction: js.UndefOr[String] = js.undefined
 }
-
 object RollbackRequest {
-  @scala.inline
-  def apply(transaction: String = null): RollbackRequest = {
+  
+  inline def apply(): RollbackRequest = {
     val __obj = js.Dynamic.literal()
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollbackRequest]
   }
+  
+  extension [Self <: RollbackRequest](x: Self) {
+    
+    inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+  }
 }
-

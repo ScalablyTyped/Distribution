@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.SchedulerEvent")
 @js.native
-class SchedulerEvent ()
+open class SchedulerEvent ()
   extends StObject
      with typings.kendoUi.kendo.data.SchedulerEvent {
   def this(data: SchedulerEventData) = this()

@@ -11,14 +11,14 @@ object webdriverProxyMod {
   
   @JSImport("blocking-proxy/built/lib/webdriver_proxy", "WebDriverProxy")
   @js.native
-  class WebDriverProxy protected () extends StObject {
+  open class WebDriverProxy protected () extends StObject {
     def this(seleniumAddress: String) = this()
     
     def addBarrier(barrier: WebDriverBarrier): Unit = js.native
     
     var barriers: js.Array[WebDriverBarrier] = js.native
     
-    def handleRequest(originalRequest: IncomingMessage, response: ServerResponse): js.Promise[Unit] = js.native
+    def handleRequest(originalRequest: IncomingMessage, response: ServerResponse[IncomingMessage]): js.Promise[Unit] = js.native
     
     var seleniumAddress: String = js.native
   }

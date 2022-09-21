@@ -36,11 +36,11 @@ object ExpressionFilterModel {
     
     inline def setClauses(value: js.Array[ExpressionFilterClause]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
     
-    inline def setClausesVarargs(value: ExpressionFilterClause*): Self = StObject.set(x, "clauses", js.Array(value :_*))
+    inline def setClausesVarargs(value: ExpressionFilterClause*): Self = StObject.set(x, "clauses", js.Array(value*))
     
     inline def setGroups(value: js.Array[ExpressionFilterGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    inline def setGroupsVarargs(value: ExpressionFilterGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: ExpressionFilterGroup*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setMaxGroupLevel(value: Double): Self = StObject.set(x, "maxGroupLevel", value.asInstanceOf[js.Any])
   }

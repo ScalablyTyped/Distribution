@@ -1,26 +1,27 @@
 package typings.xstate.anon
 
+import typings.xstate.typesMod.Typestate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ContextValue[TContext] extends StObject {
+trait ContextValue[TSV /* <: /* import warning: importer.ImportType#apply Failed type conversion: TTypestate['value'] */ js.Any */, TResolvedTypesMeta, TTypestate /* <: Typestate[TContext] */] extends StObject {
   
-  var context: TContext
+  var context: Any
   
-  var value: js.Any
+  var value: TSV
 }
 object ContextValue {
   
-  inline def apply[TContext](context: TContext, value: js.Any): ContextValue[TContext] = {
+  inline def apply[TSV /* <: /* import warning: importer.ImportType#apply Failed type conversion: TTypestate['value'] */ js.Any */, TResolvedTypesMeta, TTypestate /* <: Typestate[TContext] */](context: Any, value: TSV): ContextValue[TSV, TResolvedTypesMeta, TTypestate] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ContextValue[TContext]]
+    __obj.asInstanceOf[ContextValue[TSV, TResolvedTypesMeta, TTypestate]]
   }
   
-  extension [Self <: ContextValue[?], TContext](x: Self & ContextValue[TContext]) {
+  extension [Self <: ContextValue[?, ?, ?], TSV /* <: /* import warning: importer.ImportType#apply Failed type conversion: TTypestate['value'] */ js.Any */, TResolvedTypesMeta, TTypestate /* <: Typestate[TContext] */](x: Self & (ContextValue[TSV, TResolvedTypesMeta, TTypestate])) {
     
-    inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TSV): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

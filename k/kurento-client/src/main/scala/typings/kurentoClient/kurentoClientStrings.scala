@@ -1,8 +1,10 @@
 package typings.kurentoClient
 
 import typings.kurentoClient.mod.ConnectionState
+import typings.kurentoClient.mod.CryptoSuite
 import typings.kurentoClient.mod.IceComponentState
 import typings.kurentoClient.mod.MediaFlowState
+import typings.kurentoClient.mod.MediaProfileSpecType
 import typings.kurentoClient.mod.MediaState
 import typings.kurentoClient.mod.MediaTranscodingState
 import typings.kurentoClient.mod.MediaType
@@ -12,6 +14,30 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kurentoClientStrings {
+  
+  @js.native
+  sealed trait AES_128_CM_HMAC_SHA1_32
+    extends StObject
+       with CryptoSuite
+  inline def AES_128_CM_HMAC_SHA1_32: AES_128_CM_HMAC_SHA1_32 = "AES_128_CM_HMAC_SHA1_32".asInstanceOf[AES_128_CM_HMAC_SHA1_32]
+  
+  @js.native
+  sealed trait AES_128_CM_HMAC_SHA1_80
+    extends StObject
+       with CryptoSuite
+  inline def AES_128_CM_HMAC_SHA1_80: AES_128_CM_HMAC_SHA1_80 = "AES_128_CM_HMAC_SHA1_80".asInstanceOf[AES_128_CM_HMAC_SHA1_80]
+  
+  @js.native
+  sealed trait AES_256_CM_HMAC_SHA1_32
+    extends StObject
+       with CryptoSuite
+  inline def AES_256_CM_HMAC_SHA1_32: AES_256_CM_HMAC_SHA1_32 = "AES_256_CM_HMAC_SHA1_32".asInstanceOf[AES_256_CM_HMAC_SHA1_32]
+  
+  @js.native
+  sealed trait AES_256_CM_HMAC_SHA1_80
+    extends StObject
+       with CryptoSuite
+  inline def AES_256_CM_HMAC_SHA1_80: AES_256_CM_HMAC_SHA1_80 = "AES_256_CM_HMAC_SHA1_80".asInstanceOf[AES_256_CM_HMAC_SHA1_80]
   
   @js.native
   sealed trait AUDIO
@@ -34,8 +60,18 @@ object kurentoClientStrings {
   inline def CONNECTING: CONNECTING = "CONNECTING".asInstanceOf[CONNECTING]
   
   @js.native
+  sealed trait Composite extends StObject
+  inline def Composite: Composite = "Composite".asInstanceOf[Composite]
+  
+  @js.native
   sealed trait ConnectionStateChanged extends StObject
   inline def ConnectionStateChanged: ConnectionStateChanged = "ConnectionStateChanged".asInstanceOf[ConnectionStateChanged]
+  
+  @js.native
+  sealed trait DATA
+    extends StObject
+       with MediaType
+  inline def DATA: DATA = "DATA".asInstanceOf[DATA]
   
   @js.native
   sealed trait DISCONNECTED
@@ -100,6 +136,54 @@ object kurentoClientStrings {
   inline def IceGatheringDone: IceGatheringDone = "IceGatheringDone".asInstanceOf[IceGatheringDone]
   
   @js.native
+  sealed trait JPEG_VIDEO_ONLY
+    extends StObject
+       with MediaProfileSpecType
+  inline def JPEG_VIDEO_ONLY: JPEG_VIDEO_ONLY = "JPEG_VIDEO_ONLY".asInstanceOf[JPEG_VIDEO_ONLY]
+  
+  @js.native
+  sealed trait KURENTO_SPLIT_RECORDER
+    extends StObject
+       with MediaProfileSpecType
+  inline def KURENTO_SPLIT_RECORDER: KURENTO_SPLIT_RECORDER = "KURENTO_SPLIT_RECORDER".asInstanceOf[KURENTO_SPLIT_RECORDER]
+  
+  @js.native
+  sealed trait MKV
+    extends StObject
+       with MediaProfileSpecType
+  inline def MKV: MKV = "MKV".asInstanceOf[MKV]
+  
+  @js.native
+  sealed trait MKV_AUDIO_ONLY
+    extends StObject
+       with MediaProfileSpecType
+  inline def MKV_AUDIO_ONLY: MKV_AUDIO_ONLY = "MKV_AUDIO_ONLY".asInstanceOf[MKV_AUDIO_ONLY]
+  
+  @js.native
+  sealed trait MKV_VIDEO_ONLY
+    extends StObject
+       with MediaProfileSpecType
+  inline def MKV_VIDEO_ONLY: MKV_VIDEO_ONLY = "MKV_VIDEO_ONLY".asInstanceOf[MKV_VIDEO_ONLY]
+  
+  @js.native
+  sealed trait MP4
+    extends StObject
+       with MediaProfileSpecType
+  inline def MP4: MP4 = "MP4".asInstanceOf[MP4]
+  
+  @js.native
+  sealed trait MP4_AUDIO_ONLY
+    extends StObject
+       with MediaProfileSpecType
+  inline def MP4_AUDIO_ONLY: MP4_AUDIO_ONLY = "MP4_AUDIO_ONLY".asInstanceOf[MP4_AUDIO_ONLY]
+  
+  @js.native
+  sealed trait MP4_VIDEO_ONLY
+    extends StObject
+       with MediaProfileSpecType
+  inline def MP4_VIDEO_ONLY: MP4_VIDEO_ONLY = "MP4_VIDEO_ONLY".asInstanceOf[MP4_VIDEO_ONLY]
+  
+  @js.native
   sealed trait MediaFlowInStateChange extends StObject
   inline def MediaFlowInStateChange: MediaFlowInStateChange = "MediaFlowInStateChange".asInstanceOf[MediaFlowInStateChange]
   
@@ -148,6 +232,10 @@ object kurentoClientStrings {
   inline def OnIceCandidate: OnIceCandidate = "OnIceCandidate".asInstanceOf[OnIceCandidate]
   
   @js.native
+  sealed trait OnKeySoftLimit extends StObject
+  inline def OnKeySoftLimit: OnKeySoftLimit = "OnKeySoftLimit".asInstanceOf[OnKeySoftLimit]
+  
+  @js.native
   sealed trait PAUSE
     extends StObject
        with UriEndpointState
@@ -176,6 +264,10 @@ object kurentoClientStrings {
   inline def Recording: Recording = "Recording".asInstanceOf[Recording]
   
   @js.native
+  sealed trait RtpEndpoint extends StObject
+  inline def RtpEndpoint: RtpEndpoint = "RtpEndpoint".asInstanceOf[RtpEndpoint]
+  
+  @js.native
   sealed trait START
     extends StObject
        with UriEndpointState
@@ -186,12 +278,6 @@ object kurentoClientStrings {
     extends StObject
        with UriEndpointState
   inline def STOP: STOP = "STOP".asInstanceOf[STOP]
-  
-  @js.native
-  sealed trait SpaceDATA
-    extends StObject
-       with MediaType
-  inline def SpaceDATA: SpaceDATA = (" DATA").asInstanceOf[SpaceDATA]
   
   @js.native
   sealed trait Stopped extends StObject
@@ -212,6 +298,24 @@ object kurentoClientStrings {
     extends StObject
        with MediaType
   inline def VIDEO: VIDEO = "VIDEO".asInstanceOf[VIDEO]
+  
+  @js.native
+  sealed trait WEBM
+    extends StObject
+       with MediaProfileSpecType
+  inline def WEBM: WEBM = "WEBM".asInstanceOf[WEBM]
+  
+  @js.native
+  sealed trait WEBM_AUDIO_ONLY
+    extends StObject
+       with MediaProfileSpecType
+  inline def WEBM_AUDIO_ONLY: WEBM_AUDIO_ONLY = "WEBM_AUDIO_ONLY".asInstanceOf[WEBM_AUDIO_ONLY]
+  
+  @js.native
+  sealed trait WEBM_VIDEO_ONLY
+    extends StObject
+       with MediaProfileSpecType
+  inline def WEBM_VIDEO_ONLY: WEBM_VIDEO_ONLY = "WEBM_VIDEO_ONLY".asInstanceOf[WEBM_VIDEO_ONLY]
   
   @js.native
   sealed trait WebRtcEndpoint extends StObject

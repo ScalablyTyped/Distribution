@@ -13,7 +13,7 @@ object tileGlMod {
   
   @JSImport("rot-js/lib/display/tile-gl", JSImport.Default)
   @js.native
-  class default () extends TileGL
+  open class default () extends TileGL
   /* static members */
   object default {
     

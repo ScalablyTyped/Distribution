@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "CardText")
 @js.native
-class CardText ()
-  extends Component[CardTextProps, js.Object, js.Any]
+open class CardText ()
+  extends Component[CardTextProps, js.Object, Any]

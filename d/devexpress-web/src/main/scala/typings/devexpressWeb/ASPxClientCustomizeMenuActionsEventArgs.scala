@@ -33,7 +33,7 @@ object ASPxClientCustomizeMenuActionsEventArgs {
     
     inline def setActions(value: js.Array[ASPxClientMenuAction]): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: ASPxClientMenuAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: ASPxClientMenuAction*): Self = StObject.set(x, "Actions", js.Array(value*))
     
     inline def setGetById(value: String => ASPxClientMenuAction): Self = StObject.set(x, "GetById", js.Any.fromFunction1(value))
   }

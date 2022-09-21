@@ -127,7 +127,7 @@ object XAccessibleMultiLineText {
     getTextBeforeIndex: (Double, Double) => TextSegment,
     getTextBehindIndex: (Double, Double) => TextSegment,
     getTextRange: (Double, Double) => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setCaretPosition: Double => Boolean,
     setSelection: (Double, Double) => Boolean

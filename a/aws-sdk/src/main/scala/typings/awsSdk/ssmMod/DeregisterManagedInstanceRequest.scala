@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeregisterManagedInstanceRequest extends StObject {
   
   /**
-    * The ID assigned to the managed instance when you registered it using the activation process. 
+    * The ID assigned to the managed node when you registered it using the activation process. 
     */
   var InstanceId: ManagedInstanceId
 }

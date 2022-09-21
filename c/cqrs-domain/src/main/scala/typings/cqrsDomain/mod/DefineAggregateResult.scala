@@ -24,7 +24,7 @@ trait DefineAggregateResult extends StObject {
     * if true, the whole event stream will be loaded
     */
   def defineIgnoreSnapshot(version: AggregateVersion): DefineAggregateResult = js.native
-  def defineIgnoreSnapshot(version: AggregateVersion, cb: js.Function1[/* data */ js.Any, Boolean]): DefineAggregateResult = js.native
+  def defineIgnoreSnapshot(version: AggregateVersion, cb: js.Function1[/* data */ Any, Boolean]): DefineAggregateResult = js.native
   def defineIgnoreSnapshot(version: AggregateVersion, cb: Boolean): DefineAggregateResult = js.native
   
   /**
@@ -32,10 +32,7 @@ trait DefineAggregateResult extends StObject {
     * always convert directly to newest version...
     * when loaded a snapshot and it's an older snapshot, a new snapshot with same revision but with newer aggregate version will be created
     */
-  def defineSnapshotConversion(
-    version: AggregateVersion,
-    cb: js.Function2[/* data */ js.Any, /* aggregate */ AggregateModel, Unit]
-  ): DefineAggregateResult = js.native
+  def defineSnapshotConversion(version: AggregateVersion, cb: js.Function2[/* data */ Any, /* aggregate */ AggregateModel, Unit]): DefineAggregateResult = js.native
   
   /**
     * optionally, define snapshot need algorithm...

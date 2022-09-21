@@ -1,7 +1,7 @@
 
 # Scala.js typings for sshpk
 
-Typings are for version 1.10
+Typings are for version 1.17
 
 ## Library description:
 A library for finding and using SSH public keys
@@ -11,9 +11,9 @@ A library for finding and using SSH public keys
 | Full name          | sshpk |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 174 |
-| # downloads        | 847071266 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 8.797010033333333E7 |
+| # stars            | 164.0 |
 
 ## Links
 - [Homepage](https://github.com/arekinath/node-sshpk#readme)

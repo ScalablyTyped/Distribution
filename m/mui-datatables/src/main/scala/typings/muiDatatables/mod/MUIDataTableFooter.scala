@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MUIDataTableFooter extends StObject {
   
-  var changePage: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var changePage: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var changeRowsPerPage: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var changeRowsPerPage: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
   var options: js.UndefOr[MUIDataTableOptions] = js.undefined
   
@@ -27,11 +27,11 @@ object MUIDataTableFooter {
   
   extension [Self <: MUIDataTableFooter](x: Self) {
     
-    inline def setChangePage(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "changePage", js.Any.fromFunction1(value))
+    inline def setChangePage(value: /* e */ Any => Any): Self = StObject.set(x, "changePage", js.Any.fromFunction1(value))
     
     inline def setChangePageUndefined: Self = StObject.set(x, "changePage", js.undefined)
     
-    inline def setChangeRowsPerPage(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "changeRowsPerPage", js.Any.fromFunction1(value))
+    inline def setChangeRowsPerPage(value: /* e */ Any => Any): Self = StObject.set(x, "changeRowsPerPage", js.Any.fromFunction1(value))
     
     inline def setChangeRowsPerPageUndefined: Self = StObject.set(x, "changeRowsPerPage", js.undefined)
     

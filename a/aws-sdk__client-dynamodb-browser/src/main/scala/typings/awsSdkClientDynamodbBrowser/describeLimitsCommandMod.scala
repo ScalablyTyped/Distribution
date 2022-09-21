@@ -16,7 +16,7 @@ object describeLimitsCommandMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/commands/DescribeLimitsCommand", "DescribeLimitsCommand")
   @js.native
-  class DescribeLimitsCommand protected ()
+  open class DescribeLimitsCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object describeLimitsCommandMod {
     override val middlewareStack: MiddlewareStack[DescribeLimitsInput, DescribeLimitsOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[DescribeLimitsInput, DescribeLimitsOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: DynamoDBResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DescribeLimitsInput, DescribeLimitsOutput] = js.native
   }
 }

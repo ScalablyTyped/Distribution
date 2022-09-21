@@ -55,6 +55,7 @@ trait CloudPoint extends StObject {
   
   /**
     * get the rotation matrix of the particle
+    * @param m
     * @hidden
     */
   def getRotationMatrix(m: Matrix): Unit = js.native
@@ -78,7 +79,7 @@ trait CloudPoint extends StObject {
     * Returns a boolean. True if the particle intersects a mesh, else false
     * The intersection is computed on the particle position and Axis Aligned Bounding Box (AABB) or Sphere
     * @param target is the object (point or mesh) what the intersection is computed against
-    * @param isSphere is boolean flag when false (default) bounding box of mesh is used, when true the bouding sphere is used
+    * @param isSphere is boolean flag when false (default) bounding box of mesh is used, when true the bounding sphere is used
     * @returns true if it intersects
     */
   def intersectsMesh(target: Mesh, isSphere: Boolean): Boolean = js.native

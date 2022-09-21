@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SharedWorkspaceFolder extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Creator: Double = js.native
   
@@ -19,5 +19,5 @@ trait SharedWorkspaceFolder extends StObject {
   /* private */ @JSName("Office.SharedWorkspaceFolder_typekey")
   var OfficeDotSharedWorkspaceFolder_typekey: SharedWorkspaceFolder = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

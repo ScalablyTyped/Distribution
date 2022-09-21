@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaLocationIdSet extends StObject {
   
   /**
-    * A non-empty list of location IDs. They must all be of the same location
-    * type (e.g., state).
+    * A non-empty list of location IDs. They must all be of the same location type (e.g., state).
     */
-  var locationIds: js.UndefOr[js.Array[String]] = js.undefined
+  var locationIds: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaLocationIdSet {
   
@@ -23,8 +22,10 @@ object SchemaLocationIdSet {
     
     inline def setLocationIds(value: js.Array[String]): Self = StObject.set(x, "locationIds", value.asInstanceOf[js.Any])
     
+    inline def setLocationIdsNull: Self = StObject.set(x, "locationIds", null)
+    
     inline def setLocationIdsUndefined: Self = StObject.set(x, "locationIds", js.undefined)
     
-    inline def setLocationIdsVarargs(value: String*): Self = StObject.set(x, "locationIds", js.Array(value :_*))
+    inline def setLocationIdsVarargs(value: String*): Self = StObject.set(x, "locationIds", js.Array(value*))
   }
 }

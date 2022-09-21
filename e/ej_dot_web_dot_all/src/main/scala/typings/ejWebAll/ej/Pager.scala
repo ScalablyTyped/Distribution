@@ -55,11 +55,11 @@ object Pager {
     
     /** Returns current action event type and its target.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** Returns the pager model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of event
       */
@@ -78,11 +78,11 @@ object Pager {
       
       inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -104,11 +104,11 @@ object Pager {
     
     /** Returns current action event type and its target.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** Returns the pager model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of event
       */
@@ -131,11 +131,11 @@ object Pager {
       
       inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -153,7 +153,7 @@ object Pager {
     
     /** Returns the pager model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of event
       */
@@ -172,7 +172,7 @@ object Pager {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -190,7 +190,7 @@ object Pager {
     
     /** Returns the pager model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of event
       */
@@ -209,7 +209,7 @@ object Pager {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -299,7 +299,7 @@ object Pager {
       * from the dropdown.
       * @Default {null}
       */
-    var pageSizeList: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var pageSizeList: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Indicates the pageSizeMessage to be displayed in Pager when pageSizeList API is defined.
       */
@@ -400,11 +400,11 @@ object Pager {
       
       inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      inline def setPageSizeList(value: js.Array[js.Any]): Self = StObject.set(x, "pageSizeList", value.asInstanceOf[js.Any])
+      inline def setPageSizeList(value: js.Array[Any]): Self = StObject.set(x, "pageSizeList", value.asInstanceOf[js.Any])
       
       inline def setPageSizeListUndefined: Self = StObject.set(x, "pageSizeList", js.undefined)
       
-      inline def setPageSizeListVarargs(value: js.Any*): Self = StObject.set(x, "pageSizeList", js.Array(value :_*))
+      inline def setPageSizeListVarargs(value: Any*): Self = StObject.set(x, "pageSizeList", js.Array(value*))
       
       inline def setPageSizeMessage(value: String): Self = StObject.set(x, "pageSizeMessage", value.asInstanceOf[js.Any])
       
@@ -442,7 +442,7 @@ object Pager {
     
     /** Returns the pager model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of event
       */
@@ -461,7 +461,7 @@ object Pager {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       

@@ -1,9 +1,10 @@
 package typings.riderizePassportStravaOauth2
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.riderizePassportStravaOauth2.anon.FamilyName
+import typings.riderizePassportStravaOauth2.anon.Value
 import typings.riderizePassportStravaOauth2.riderizePassportStravaOauth2Booleans.`true`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,31 +13,55 @@ object mod {
   
   @JSImport("@riderize/passport-strava-oauth2", "Strategy")
   @js.native
-  class Strategy protected ()
-    extends StObject
-       with typings.passport.mod.Strategy {
+  open class Strategy protected () extends StObject {
     def this(options: StrategyOptionWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: StrategyOption, verify: VerifyFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: js.Object
+    ): Unit = js.native
+    
+    var name: String = js.native
   }
   
-  trait Profile
-    extends StObject
-       with typings.passport.mod.Profile {
+  trait Profile extends StObject {
     
-    var _json: js.Any
+    var _json: Any
     
     var _raw: String
     
     var fullName: String
     
+    var id: String
+    
+    var name: FamilyName
+    
+    var photos: js.UndefOr[js.Array[Value]] = js.undefined
+    
+    var provider: String
+    
     var token: js.UndefOr[String] = js.undefined
   }
   object Profile {
     
-    inline def apply(_json: js.Any, _raw: String, displayName: String, fullName: String, id: String, provider: String): Profile = {
-      val __obj = js.Dynamic.literal(_json = _json.asInstanceOf[js.Any], _raw = _raw.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
+    inline def apply(_json: Any, _raw: String, fullName: String, id: String, name: FamilyName, provider: String): Profile = {
+      val __obj = js.Dynamic.literal(_json = _json.asInstanceOf[js.Any], _raw = _raw.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[Profile]
     }
     
@@ -44,11 +69,23 @@ object mod {
       
       inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
       
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: FamilyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setPhotos(value: js.Array[Value]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+      
+      inline def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
+      
+      inline def setPhotosVarargs(value: Value*): Self = StObject.set(x, "photos", js.Array(value*))
+      
+      inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
       inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      inline def set_json(value: js.Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
+      inline def set_json(value: Any): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
       
       inline def set_raw(value: String): Self = StObject.set(x, "_raw", value.asInstanceOf[js.Any])
     }
@@ -120,16 +157,22 @@ object mod {
     /* accessToken */ String, 
     /* refreshToken */ String, 
     /* profile */ Profile, 
-    /* done */ js.Function3[/* error */ js.Any, /* user */ js.UndefOr[js.Any], /* info */ js.UndefOr[js.Any], Unit], 
+    /* done */ js.Function3[/* error */ Any, /* user */ js.UndefOr[Any], /* info */ js.UndefOr[Any], Unit], 
     Unit
   ]
   
   type VerifyFunctionWithRequest = js.Function5[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* accessToken */ String, 
     /* refreshToken */ String, 
     /* profile */ Profile, 
-    /* done */ js.Function3[/* error */ js.Any, /* user */ js.UndefOr[js.Any], /* info */ js.UndefOr[js.Any], Unit], 
+    /* done */ js.Function3[/* error */ Any, /* user */ js.UndefOr[Any], /* info */ js.UndefOr[Any], Unit], 
     Unit
   ]
 }

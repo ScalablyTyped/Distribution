@@ -21,7 +21,7 @@ trait ChannelSnippet extends StObject {
   /** Localized title and description, read-only. */
   var localized: js.UndefOr[ChannelLocalization] = js.undefined
   
-  /** The date and time that the channel was created. The value is specified in < a href="//www.w3.org/TR/NOTE-datetime">ISO 8601 format. */
+  /** The date and time that the channel was created. */
   var publishedAt: js.UndefOr[String] = js.undefined
   
   /**

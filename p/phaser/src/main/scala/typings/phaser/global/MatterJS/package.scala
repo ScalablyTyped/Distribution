@@ -1,5 +1,6 @@
 package typings.phaser.global.MatterJS
 
+import typings.phaser.global.MatterJS.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,4 +17,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @method use
   * @param ...plugin {Function} The plugin(s) to install on `base` (multi-argument).
   */
-inline def use(plugins: (typings.phaser.MatterJS.Plugin | java.lang.String)*): scala.Unit = typings.phaser.global.MatterJS.^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugins.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def use(plugins: (typings.phaser.MatterJS.Plugin | String)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugins.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]

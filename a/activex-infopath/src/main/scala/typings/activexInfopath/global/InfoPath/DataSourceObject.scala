@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.DataSourceObject")
 @js.native
-/* private */ class DataSourceObject ()
+/* private */ open class DataSourceObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.DataSourceObject {
   
@@ -25,5 +25,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Query(): Unit = js.native
   
   /* CompleteClass */
-  override val QueryAdapter: js.Any = js.native
+  override val QueryAdapter: Any = js.native
 }

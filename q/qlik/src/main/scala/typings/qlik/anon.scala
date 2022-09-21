@@ -82,14 +82,14 @@ object anon {
   
   trait GetContent extends StObject {
     
-    def getContent(variable: String, callback: js.Function2[/* value */ Variable, /* app */ this.type, Unit]): js.Promise[js.Any]
+    def getContent(variable: String, callback: js.Function2[/* value */ Variable, /* app */ this.type, Unit]): js.Promise[Any]
     
     def setContent(variable: String, value: String): Unit
   }
   object GetContent {
     
     inline def apply(
-      getContent: (String, js.Function2[/* value */ Variable, GetContent, Unit]) => js.Promise[js.Any],
+      getContent: (String, js.Function2[/* value */ Variable, GetContent, Unit]) => js.Promise[Any],
       setContent: (String, String) => Unit
     ): GetContent = {
       val __obj = js.Dynamic.literal(getContent = js.Any.fromFunction2(getContent), setContent = js.Any.fromFunction2(setContent))
@@ -98,7 +98,7 @@ object anon {
     
     extension [Self <: GetContent](x: Self) {
       
-      inline def setGetContent(value: (String, js.Function2[/* value */ Variable, GetContent, Unit]) => js.Promise[js.Any]): Self = StObject.set(x, "getContent", js.Any.fromFunction2(value))
+      inline def setGetContent(value: (String, js.Function2[/* value */ Variable, GetContent, Unit]) => js.Promise[Any]): Self = StObject.set(x, "getContent", js.Any.fromFunction2(value))
       
       inline def setSetContent(value: (String, String) => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction2(value))
     }

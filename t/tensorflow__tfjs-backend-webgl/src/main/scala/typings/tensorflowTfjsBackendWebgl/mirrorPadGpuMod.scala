@@ -11,11 +11,10 @@ object mirrorPadGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/mirror_pad_gpu", "MirrorPadProgram")
   @js.native
-  class MirrorPadProgram protected ()
+  open class MirrorPadProgram protected ()
     extends StObject
        with GPGPUProgram {
-    def this(xShape: js.Array[Double], paddings: js.Array[js.Tuple2[Double, Double]], mode: reflect) = this()
-    def this(xShape: js.Array[Double], paddings: js.Array[js.Tuple2[Double, Double]], mode: symmetric) = this()
+    def this(xShape: js.Array[Double], paddings: js.Array[js.Tuple2[Double, Double]], mode: reflect | symmetric) = this()
     
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native

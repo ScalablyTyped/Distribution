@@ -2,7 +2,6 @@ package typings.rollupPluginCommonjs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.rollup.mod.Plugin
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,14 +22,14 @@ object mod {
     	 * specifically include/exclude files
     	 * @default undefined
     	 */
-    var exclude: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+    var exclude: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
     
     /**
     	 * search for files other than .js files (must already
     	 * be transpiled by a previous plugin!)
     	 * @default [ '.js' ]
     	 */
-    var extensions: js.UndefOr[js.Array[String | RegExp]] = js.undefined
+    var extensions: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
     
     /**
     	 * sometimes you have to leave require statements
@@ -51,7 +50,7 @@ object mod {
     	 * specifically include/exclude files
     	 * @default undefined
     	 */
-    var include: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+    var include: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
     
     /**
     	 * explicitly specify unresolvable named exports
@@ -75,17 +74,17 @@ object mod {
     
     extension [Self <: RollupCommonJSOptions](x: Self) {
       
-      inline def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "exclude", js.Array(value*))
       
-      inline def setExtensions(value: js.Array[String | RegExp]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setIgnore(value: js.Array[String | (js.Function1[/* id */ String, Boolean])]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
@@ -95,13 +94,13 @@ object mod {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: (String | (js.Function1[/* id */ String, Boolean]))*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: (String | (js.Function1[/* id */ String, Boolean]))*): Self = StObject.set(x, "ignore", js.Array(value*))
       
-      inline def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setNamedExports(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "namedExports", value.asInstanceOf[js.Any])
       

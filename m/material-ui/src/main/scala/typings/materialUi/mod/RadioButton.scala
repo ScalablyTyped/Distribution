@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "RadioButton")
 @js.native
-class RadioButton ()
+open class RadioButton ()
   extends typings.materialUi.MaterialUI.Switches.RadioButton

@@ -13,7 +13,7 @@ trait ResourceRecordSet extends StObject {
   
   /**
     * Configures dynamic query responses based on geo location of querying user or a weighted round robin based routing policy. A ResourceRecordSet should only have either rrdata (static)
-    * or routing_policy(dynamic). An error is returned otherwise.
+    * or routing_policy (dynamic). An error is returned otherwise.
     */
   var routingPolicy: js.UndefOr[RRSetRoutingPolicy] = js.undefined
   
@@ -54,13 +54,13 @@ object ResourceRecordSet {
     
     inline def setRrdatasUndefined: Self = StObject.set(x, "rrdatas", js.undefined)
     
-    inline def setRrdatasVarargs(value: String*): Self = StObject.set(x, "rrdatas", js.Array(value :_*))
+    inline def setRrdatasVarargs(value: String*): Self = StObject.set(x, "rrdatas", js.Array(value*))
     
     inline def setSignatureRrdatas(value: js.Array[String]): Self = StObject.set(x, "signatureRrdatas", value.asInstanceOf[js.Any])
     
     inline def setSignatureRrdatasUndefined: Self = StObject.set(x, "signatureRrdatas", js.undefined)
     
-    inline def setSignatureRrdatasVarargs(value: String*): Self = StObject.set(x, "signatureRrdatas", js.Array(value :_*))
+    inline def setSignatureRrdatasVarargs(value: String*): Self = StObject.set(x, "signatureRrdatas", js.Array(value*))
     
     inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     

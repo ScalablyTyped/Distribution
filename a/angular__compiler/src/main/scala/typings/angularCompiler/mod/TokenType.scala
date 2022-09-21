@@ -4,24 +4,60 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
+sealed trait TokenType extends StObject
 @JSImport("@angular/compiler", "TokenType")
 @js.native
 object TokenType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.angularCompiler.lexerMod.TokenType & Double] = js.native
+  def apply(value: Double): js.UndefOr[TokenType & Double] = js.native
   
-  /* 0 */ val Character: typings.angularCompiler.lexerMod.TokenType.Character & Double = js.native
+  @js.native
+  sealed trait Character
+    extends StObject
+       with TokenType
+  /* 0 */ val Character: typings.angularCompiler.mod.TokenType.Character & Double = js.native
   
-  /* 6 */ val Error: typings.angularCompiler.lexerMod.TokenType.Error & Double = js.native
+  @js.native
+  sealed trait Error
+    extends StObject
+       with TokenType
+  /* 7 */ val Error: typings.angularCompiler.mod.TokenType.Error & Double = js.native
   
-  /* 1 */ val Identifier: typings.angularCompiler.lexerMod.TokenType.Identifier & Double = js.native
+  @js.native
+  sealed trait Identifier
+    extends StObject
+       with TokenType
+  /* 1 */ val Identifier: typings.angularCompiler.mod.TokenType.Identifier & Double = js.native
   
-  /* 2 */ val Keyword: typings.angularCompiler.lexerMod.TokenType.Keyword & Double = js.native
+  @js.native
+  sealed trait Keyword
+    extends StObject
+       with TokenType
+  /* 3 */ val Keyword: typings.angularCompiler.mod.TokenType.Keyword & Double = js.native
   
-  /* 5 */ val Number: typings.angularCompiler.lexerMod.TokenType.Number & Double = js.native
+  @js.native
+  sealed trait Number
+    extends StObject
+       with TokenType
+  /* 6 */ val Number: typings.angularCompiler.mod.TokenType.Number & Double = js.native
   
-  /* 4 */ val Operator: typings.angularCompiler.lexerMod.TokenType.Operator & Double = js.native
+  @js.native
+  sealed trait Operator
+    extends StObject
+       with TokenType
+  /* 5 */ val Operator: typings.angularCompiler.mod.TokenType.Operator & Double = js.native
   
-  /* 3 */ val String: typings.angularCompiler.lexerMod.TokenType.String & Double = js.native
+  @js.native
+  sealed trait PrivateIdentifier
+    extends StObject
+       with TokenType
+  /* 2 */ val PrivateIdentifier: typings.angularCompiler.mod.TokenType.PrivateIdentifier & Double = js.native
+  
+  @js.native
+  sealed trait String
+    extends StObject
+       with TokenType
+  /* 4 */ val String: typings.angularCompiler.mod.TokenType.String & Double = js.native
 }

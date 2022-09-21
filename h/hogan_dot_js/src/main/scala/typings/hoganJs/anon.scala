@@ -43,7 +43,7 @@ object anon {
       
       inline def setSectionTagsUndefined: Self = StObject.set(x, "sectionTags", js.undefined)
       
-      inline def setSectionTagsVarargs(value: SectionTags*): Self = StObject.set(x, "sectionTags", js.Array(value :_*))
+      inline def setSectionTagsVarargs(value: SectionTags*): Self = StObject.set(x, "sectionTags", js.Array(value*))
     }
   }
   
@@ -81,7 +81,7 @@ object anon {
       
       inline def setSectionTagsUndefined: Self = StObject.set(x, "sectionTags", js.undefined)
       
-      inline def setSectionTagsVarargs(value: SectionTags*): Self = StObject.set(x, "sectionTags", js.Array(value :_*))
+      inline def setSectionTagsVarargs(value: SectionTags*): Self = StObject.set(x, "sectionTags", js.Array(value*))
     }
   }
 }

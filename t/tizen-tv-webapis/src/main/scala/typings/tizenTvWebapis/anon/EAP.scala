@@ -14,31 +14,55 @@ trait EAP extends StObject {
   
   /**
     * EAP security mode
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var EAP: `4`
   
   /**
     * Open security mode
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var NONE: `5`
   
   /**
     * Security mode unknown
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var UNKNOWN: `6`
   
   /**
     * WEP security mode
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var WEP: `1`
   
   /**
     * WPA2_PSK security mode
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var WPA2_PSK: `3`
   
   /**
     * PSK security mode
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var WPA_PSK: `2`
 }

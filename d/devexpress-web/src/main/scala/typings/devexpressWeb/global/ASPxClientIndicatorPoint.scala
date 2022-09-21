@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientIndicatorPoint")
 @js.native
-class ASPxClientIndicatorPoint ()
+open class ASPxClientIndicatorPoint ()
   extends StObject
      with typings.devexpressWeb.ASPxClientIndicatorPoint {
   
@@ -17,7 +17,7 @@ class ASPxClientIndicatorPoint ()
     * Returns the indicator point's argument.
     */
   /* CompleteClass */
-  var argument: js.Any = js.native
+  var argument: Any = js.native
   
   /**
     * Gets the chart that owns the current chart element.
@@ -35,5 +35,5 @@ class ASPxClientIndicatorPoint ()
     * Returns the values for the indicator point that the Crosshair Cursor highlights.
     */
   /* CompleteClass */
-  var values: js.Array[js.Any] = js.native
+  var values: js.Array[Any] = js.native
 }

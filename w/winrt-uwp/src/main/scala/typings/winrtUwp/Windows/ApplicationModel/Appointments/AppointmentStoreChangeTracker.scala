@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Provides APIs for managing change tracking for appointments. */
 trait AppointmentStoreChangeTracker extends StObject {
   
-  var enable: js.Any
+  var enable: Any
   
   /* unmapped type */
-  var getChangeReader: js.Any
+  var getChangeReader: Any
   
   /* unmapped type */
-  var reset: js.Any
+  var reset: Any
 }
 object AppointmentStoreChangeTracker {
   
-  inline def apply(enable: js.Any, getChangeReader: js.Any, reset: js.Any): AppointmentStoreChangeTracker = {
+  inline def apply(enable: Any, getChangeReader: Any, reset: Any): AppointmentStoreChangeTracker = {
     val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], getChangeReader = getChangeReader.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppointmentStoreChangeTracker]
   }
   
   extension [Self <: AppointmentStoreChangeTracker](x: Self) {
     
-    inline def setEnable(value: js.Any): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Any): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    inline def setGetChangeReader(value: js.Any): Self = StObject.set(x, "getChangeReader", value.asInstanceOf[js.Any])
+    inline def setGetChangeReader(value: Any): Self = StObject.set(x, "getChangeReader", value.asInstanceOf[js.Any])
     
-    inline def setReset(value: js.Any): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    inline def setReset(value: Any): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
   }
 }

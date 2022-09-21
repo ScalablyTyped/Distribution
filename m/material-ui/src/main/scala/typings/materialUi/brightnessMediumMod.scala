@@ -10,10 +10,10 @@ object brightnessMediumMod {
   
   @JSImport("material-ui/svg-icons/device/brightness-medium", JSImport.Default)
   @js.native
-  class default () extends DeviceBrightnessMedium
+  open class default () extends DeviceBrightnessMedium
   
   @JSImport("material-ui/svg-icons/device/brightness-medium", "DeviceBrightnessMedium")
   @js.native
-  class DeviceBrightnessMedium ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceBrightnessMedium ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

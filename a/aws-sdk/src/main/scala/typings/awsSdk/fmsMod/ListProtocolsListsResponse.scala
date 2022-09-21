@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListProtocolsListsResponse extends StObject {
   
   /**
-    * If you specify a value for MaxResults in your list request, and you have more objects than the maximum, AWS Firewall Manager returns this token in the response. You can use this token in subsequent requests to retrieve the next batch of objects.
+    * If you specify a value for MaxResults in your list request, and you have more objects than the maximum, Firewall Manager returns this token in the response. You can use this token in subsequent requests to retrieve the next batch of objects.
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
@@ -33,6 +33,6 @@ object ListProtocolsListsResponse {
     
     inline def setProtocolsListsUndefined: Self = StObject.set(x, "ProtocolsLists", js.undefined)
     
-    inline def setProtocolsListsVarargs(value: ProtocolsListDataSummary*): Self = StObject.set(x, "ProtocolsLists", js.Array(value :_*))
+    inline def setProtocolsListsVarargs(value: ProtocolsListDataSummary*): Self = StObject.set(x, "ProtocolsLists", js.Array(value*))
   }
 }

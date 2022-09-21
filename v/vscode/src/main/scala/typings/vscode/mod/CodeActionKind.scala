@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "CodeActionKind")
 @js.native
-class CodeActionKind protected () extends StObject {
+open class CodeActionKind protected () extends StObject {
   /* private */ def this(value: String) = this()
   
   /**

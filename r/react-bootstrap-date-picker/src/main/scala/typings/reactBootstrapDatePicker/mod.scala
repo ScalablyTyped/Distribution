@@ -6,8 +6,9 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
+import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,10 +22,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-bootstrap-date-picker", JSImport.Namespace)
   @js.native
-  class Class protected ()
-    extends Component[DatePickerProps, ComponentState, js.Any] {
+  open class Class protected () extends Component[DatePickerProps, ComponentState, Any] {
     def this(props: DatePickerProps) = this()
-    def this(props: DatePickerProps, context: js.Any) = this()
+    def this(props: DatePickerProps, context: Any) = this()
   }
   
   type ChangeCallback = js.Function2[/* value */ String, /* formattedValue */ String, Unit]
@@ -35,7 +35,7 @@ object mod extends Shortcut {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var calendarContainer: js.UndefOr[js.Any] = js.undefined
+    var calendarContainer: js.UndefOr[Any] = js.undefined
     
     var calendarPlacement: js.UndefOr[String] = js.undefined
     
@@ -45,7 +45,7 @@ object mod extends Shortcut {
     
     var clearButtonElement: js.UndefOr[ReactNode] = js.undefined
     
-    var customControl: js.UndefOr[StatelessComponent[js.Any] | (ComponentClass[js.Any, ComponentState])] = js.undefined
+    var customControl: js.UndefOr[FunctionComponent[Any] | (ComponentClass[Any, ComponentState])] = js.undefined
     
     var dateFormat: js.UndefOr[String] = js.undefined
     
@@ -63,13 +63,13 @@ object mod extends Shortcut {
     
     var nextButtonElement: js.UndefOr[ReactNode] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[js.Any]] = js.undefined
+    var onBlur: js.UndefOr[FocusEventHandler[Any]] = js.undefined
     
     var onChange: js.UndefOr[ChangeCallback] = js.undefined
     
     var onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[js.Any]] = js.undefined
+    var onFocus: js.UndefOr[FocusEventHandler[Any]] = js.undefined
     
     var previousButtonElement: js.UndefOr[ReactNode] = js.undefined
     
@@ -77,7 +77,7 @@ object mod extends Shortcut {
     
     var showTodayButton: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
     var todayButtonLabel: js.UndefOr[String] = js.undefined
     
@@ -98,7 +98,7 @@ object mod extends Shortcut {
       
       inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      inline def setCalendarContainer(value: js.Any): Self = StObject.set(x, "calendarContainer", value.asInstanceOf[js.Any])
+      inline def setCalendarContainer(value: Any): Self = StObject.set(x, "calendarContainer", value.asInstanceOf[js.Any])
       
       inline def setCalendarContainerUndefined: Self = StObject.set(x, "calendarContainer", js.undefined)
       
@@ -118,7 +118,7 @@ object mod extends Shortcut {
       
       inline def setClearButtonElementUndefined: Self = StObject.set(x, "clearButtonElement", js.undefined)
       
-      inline def setCustomControl(value: StatelessComponent[js.Any] | (ComponentClass[js.Any, ComponentState])): Self = StObject.set(x, "customControl", value.asInstanceOf[js.Any])
+      inline def setCustomControl(value: FunctionComponent[Any] | (ComponentClass[Any, ComponentState])): Self = StObject.set(x, "customControl", value.asInstanceOf[js.Any])
       
       inline def setCustomControlUndefined: Self = StObject.set(x, "customControl", js.undefined)
       
@@ -130,7 +130,7 @@ object mod extends Shortcut {
       
       inline def setDayLabelsUndefined: Self = StObject.set(x, "dayLabels", js.undefined)
       
-      inline def setDayLabelsVarargs(value: String*): Self = StObject.set(x, "dayLabels", js.Array(value :_*))
+      inline def setDayLabelsVarargs(value: String*): Self = StObject.set(x, "dayLabels", js.Array(value*))
       
       inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -152,13 +152,13 @@ object mod extends Shortcut {
       
       inline def setMonthLabelsUndefined: Self = StObject.set(x, "monthLabels", js.undefined)
       
-      inline def setMonthLabelsVarargs(value: String*): Self = StObject.set(x, "monthLabels", js.Array(value :_*))
+      inline def setMonthLabelsVarargs(value: String*): Self = StObject.set(x, "monthLabels", js.Array(value*))
       
       inline def setNextButtonElement(value: ReactNode): Self = StObject.set(x, "nextButtonElement", value.asInstanceOf[js.Any])
       
       inline def setNextButtonElementUndefined: Self = StObject.set(x, "nextButtonElement", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[js.Any] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[Any, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -170,7 +170,7 @@ object mod extends Shortcut {
       
       inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[js.Any] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[Any, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -186,7 +186,7 @@ object mod extends Shortcut {
       
       inline def setShowTodayButtonUndefined: Self = StObject.set(x, "showTodayButton", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

@@ -1,67 +1,69 @@
 package typings.phaser.global.Phaser
 
+import typings.phaser.global.Phaser.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 /**
-  * AUTO Detect Renderer.
+  * This setting will auto-detect if the browser is capable of suppporting WebGL.
+  * If it is, it will use the WebGL Renderer. If not, it will fall back to the Canvas Renderer.
   */
-inline def AUTO: typings.phaser.integer = typings.phaser.global.Phaser.^.asInstanceOf[js.Dynamic].selectDynamic("AUTO").asInstanceOf[typings.phaser.integer]
+inline def AUTO: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("AUTO").asInstanceOf[Double]
 
 /**
-  * Canvas Renderer.
+  * Forces Phaser to only use the Canvas Renderer, regardless if the browser supports
+  * WebGL or not.
   */
-inline def CANVAS: typings.phaser.integer = typings.phaser.global.Phaser.^.asInstanceOf[js.Dynamic].selectDynamic("CANVAS").asInstanceOf[typings.phaser.integer]
-
-/**
-  * Phaser Blend Modes to CSS Blend Modes Map.
-  */
-inline def CSSBlendModes(value: scala.Nothing): js.UndefOr[typings.phaser.Phaser.CSSBlendModes & scala.Nothing] = typings.phaser.global.Phaser.^.asInstanceOf[js.Dynamic].applyDynamic("CSSBlendModes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.phaser.Phaser.CSSBlendModes & scala.Nothing]]
+inline def CANVAS: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("CANVAS").asInstanceOf[Double]
 
 /**
   * Direction constant.
   */
-inline def DOWN: typings.phaser.integer = typings.phaser.global.Phaser.^.asInstanceOf[js.Dynamic].selectDynamic("DOWN").asInstanceOf[typings.phaser.integer]
+inline def DOWN: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("DOWN").asInstanceOf[Double]
 
 /**
   * In Phaser the value -1 means 'forever' in lots of cases, this const allows you to use it instead
   * to help you remember what the value is doing in your code.
   */
-inline def FOREVER: typings.phaser.integer = typings.phaser.global.Phaser.^.asInstanceOf[js.Dynamic].selectDynamic("FOREVER").asInstanceOf[typings.phaser.integer]
+inline def FOREVER: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("FOREVER").asInstanceOf[Double]
 
 /**
-  * Headless Renderer.
+  * A Headless Renderer doesn't create either a Canvas or WebGL Renderer. However, it still
+  * absolutely relies on the DOM being present and available. This mode is meant for unit testing,
+  * not for running Phaser on the server, which is something you really shouldn't do.
   */
-inline def HEADLESS: typings.phaser.integer = typings.phaser.global.Phaser.^.asInstanceOf[js.Dynamic].selectDynamic("HEADLESS").asInstanceOf[typings.phaser.integer]
-
-/**
-  * Direction constant.
-  */
-inline def LEFT: typings.phaser.integer = typings.phaser.global.Phaser.^.asInstanceOf[js.Dynamic].selectDynamic("LEFT").asInstanceOf[typings.phaser.integer]
+inline def HEADLESS: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("HEADLESS").asInstanceOf[Double]
 
 /**
   * Direction constant.
   */
-inline def NONE: typings.phaser.integer = typings.phaser.global.Phaser.^.asInstanceOf[js.Dynamic].selectDynamic("NONE").asInstanceOf[typings.phaser.integer]
+inline def LEFT: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("LEFT").asInstanceOf[Double]
 
 /**
   * Direction constant.
   */
-inline def RIGHT: typings.phaser.integer = typings.phaser.global.Phaser.^.asInstanceOf[js.Dynamic].selectDynamic("RIGHT").asInstanceOf[typings.phaser.integer]
+inline def NONE: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("NONE").asInstanceOf[Double]
 
 /**
   * Direction constant.
   */
-inline def UP: typings.phaser.integer = typings.phaser.global.Phaser.^.asInstanceOf[js.Dynamic].selectDynamic("UP").asInstanceOf[typings.phaser.integer]
+inline def RIGHT: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("RIGHT").asInstanceOf[Double]
+
+/**
+  * Direction constant.
+  */
+inline def UP: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("UP").asInstanceOf[Double]
 
 /**
   * Phaser Release Version
   */
-inline def VERSION: java.lang.String = typings.phaser.global.Phaser.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
+inline def VERSION: String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[String]
 
 /**
-  * WebGL Renderer.
+  * Forces Phaser to use the WebGL Renderer. If the browser does not support it, there is
+  * no fallback to Canvas with this setting, so you should trap it and display a suitable
+  * message to the user.
   */
-inline def WEBGL: typings.phaser.integer = typings.phaser.global.Phaser.^.asInstanceOf[js.Dynamic].selectDynamic("WEBGL").asInstanceOf[typings.phaser.integer]
+inline def WEBGL: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("WEBGL").asInstanceOf[Double]

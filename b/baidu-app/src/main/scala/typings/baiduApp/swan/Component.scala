@@ -30,20 +30,20 @@ trait Component[D, P] extends StObject {
     */
   var data: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D & P ]: baidu-app.swan.DataValueType<D & P[key]>}
-    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[js.Any] = js.native
+    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[Any] = js.native
   
   /**
     * 节点dataset
     */
   var dataset: String = js.native
   
-  def getData(key: String): js.Any = js.native
+  def getData(key: String): Any = js.native
   
   /**
     * 检查组件是否具有 behavior
     * 检查时会递归检查被直接或间接引入的所有behavior
     */
-  def hasBehavior(behavior: js.Any): Boolean = js.native
+  def hasBehavior(behavior: Any): Boolean = js.native
   
   /**
     * 节点id
@@ -60,41 +60,41 @@ trait Component[D, P] extends StObject {
     */
   var properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D & P ]: baidu-app.swan.DataValueType<D & P[key]>}
-    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[js.Any] = js.native
+    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[Any] = js.native
   
   /**
     * selector  使用选择器选择组件实例节点，返回匹配到的全部组件实例对象组成的数组
     */
-  def selectAllComponents(selector: String): js.Array[Component[js.Any, js.Any]] = js.native
+  def selectAllComponents(selector: String): js.Array[Component[Any, Any]] = js.native
   
   /**
     * 使用选择器选择组件实例节点
     * 返回匹配到的第一个组件实例对象
     */
-  def selectComponent(selector: String): Component[js.Any, js.Any] = js.native
+  def selectComponent(selector: String): Component[Any, Any] = js.native
   
   def setData(
     key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
-    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[js.Any]
+    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[Any]
   ): Unit = js.native
   def setData(
     key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
-    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[js.Any],
-    value: js.Any
+    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[Any],
+    value: Any
   ): Unit = js.native
   def setData(
     key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
-    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[js.Any],
-    value: js.Any,
+    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[Any],
+    value: Any,
     callback: js.Function0[Unit]
   ): Unit = js.native
   def setData(
     key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
-    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[js.Any],
+    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[Any],
     value: Unit,
     callback: js.Function0[Unit]
   ): Unit = js.native
@@ -107,15 +107,15 @@ trait Component[D, P] extends StObject {
     * @param [callback] callback 是一个回调函数，在这次setData对界面渲染完毕后调用
     */
   def setData(key: String): Unit = js.native
-  def setData(key: String, value: js.Any): Unit = js.native
-  def setData(key: String, value: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  def setData(key: String, value: Any): Unit = js.native
+  def setData(key: String, value: Any, callback: js.Function0[Unit]): Unit = js.native
   def setData(key: String, value: Unit, callback: js.Function0[Unit]): Unit = js.native
   
   /**
     * 触发事件，参见 [组件事件](https://smartprogram.baidu.com/docs/develop/framework/custom-component_cont/)
     */
   def triggerEvent(name: String): Unit = js.native
-  def triggerEvent(name: String, details: js.Any): Unit = js.native
-  def triggerEvent(name: String, details: js.Any, options: Partialbubblesbooleancomp): Unit = js.native
+  def triggerEvent(name: String, details: Any): Unit = js.native
+  def triggerEvent(name: String, details: Any, options: Partialbubblesbooleancomp): Unit = js.native
   def triggerEvent(name: String, details: Unit, options: Partialbubblesbooleancomp): Unit = js.native
 }

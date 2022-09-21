@@ -47,6 +47,10 @@ object raxStrings {
   inline def ad: ad = "ad".asInstanceOf[ad]
   
   @js.native
+  sealed trait `ad-custom` extends StObject
+  inline def `ad-custom`: `ad-custom` = "ad-custom".asInstanceOf[`ad-custom`]
+  
+  @js.native
   sealed trait additions extends StObject
   inline def additions: additions = "additions".asInstanceOf[additions]
   
@@ -177,6 +181,10 @@ object raxStrings {
   @js.native
   sealed trait button extends StObject
   inline def button: button = "button".asInstanceOf[button]
+  
+  @js.native
+  sealed trait camera extends StObject
+  inline def camera: camera = "camera".asInstanceOf[camera]
   
   @js.native
   sealed trait canvas extends StObject
@@ -571,10 +579,6 @@ object raxStrings {
   inline def isolated: isolated = "isolated".asInstanceOf[isolated]
   
   @js.native
-  sealed trait `ive-pusher` extends StObject
-  inline def `ive-pusher`: `ive-pusher` = "ive-pusher".asInstanceOf[`ive-pusher`]
-  
-  @js.native
   sealed trait justify extends StObject
   inline def justify: justify = "justify".asInstanceOf[justify]
   
@@ -635,6 +639,10 @@ object raxStrings {
   inline def `live-player`: `live-player` = "live-player".asInstanceOf[`live-player`]
   
   @js.native
+  sealed trait `live-pusher` extends StObject
+  inline def `live-pusher`: `live-pusher` = "live-pusher".asInstanceOf[`live-pusher`]
+  
+  @js.native
   sealed trait loading extends StObject
   inline def loading: loading = "loading".asInstanceOf[loading]
   
@@ -661,6 +669,10 @@ object raxStrings {
   @js.native
   sealed trait mask extends StObject
   inline def mask: mask = "mask".asInstanceOf[mask]
+  
+  @js.native
+  sealed trait `match-media` extends StObject
+  inline def `match-media`: `match-media` = "match-media".asInstanceOf[`match-media`]
   
   @js.native
   sealed trait mathematical extends StObject
@@ -763,6 +775,10 @@ object raxStrings {
   inline def off: off = "off".asInstanceOf[off]
   
   @js.native
+  sealed trait `official-account` extends StObject
+  inline def `official-account`: `official-account` = "official-account".asInstanceOf[`official-account`]
+  
+  @js.native
   sealed trait ol extends StObject
   inline def ol: ol = "ol".asInstanceOf[ol]
   
@@ -827,6 +843,10 @@ object raxStrings {
   inline def `picker-view`: `picker-view` = "picker-view".asInstanceOf[`picker-view`]
   
   @js.native
+  sealed trait `picker-view-column` extends StObject
+  inline def `picker-view-column`: `picker-view-column` = "picker-view-column".asInstanceOf[`picker-view-column`]
+  
+  @js.native
   sealed trait picture extends StObject
   inline def picture: picture = "picture".asInstanceOf[picture]
   
@@ -861,6 +881,14 @@ object raxStrings {
   @js.native
   sealed trait radialGradient extends StObject
   inline def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
+  
+  @js.native
+  sealed trait radio extends StObject
+  inline def radio: radio = "radio".asInstanceOf[radio]
+  
+  @js.native
+  sealed trait `radio-group` extends StObject
+  inline def `radio-group`: `radio-group` = "radio-group".asInstanceOf[`radio-group`]
   
   @js.native
   sealed trait rect extends StObject
@@ -1149,6 +1177,10 @@ object raxStrings {
   @js.native
   sealed trait view extends StObject
   inline def view: view = "view".asInstanceOf[view]
+  
+  @js.native
+  sealed trait `voip-room` extends StObject
+  inline def `voip-room`: `voip-room` = "voip-room".asInstanceOf[`voip-room`]
   
   @js.native
   sealed trait waterfall extends StObject

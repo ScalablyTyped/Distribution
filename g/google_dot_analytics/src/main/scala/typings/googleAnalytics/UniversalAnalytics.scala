@@ -82,9 +82,13 @@ object UniversalAnalytics {
     
     var cookieExpires: js.UndefOr[Double] = js.undefined
     
+    var cookieFlags: js.UndefOr[String] = js.undefined
+    
     var cookieName: js.UndefOr[String] = js.undefined
     
     var cookiePath: js.UndefOr[String] = js.undefined
+    
+    var cookieUpdate: js.UndefOr[Boolean] = js.undefined
     
     var coupon: js.UndefOr[String] = js.undefined
     
@@ -1137,6 +1141,10 @@ object UniversalAnalytics {
       
       inline def setCookieExpiresUndefined: Self = StObject.set(x, "cookieExpires", js.undefined)
       
+      inline def setCookieFlags(value: String): Self = StObject.set(x, "cookieFlags", value.asInstanceOf[js.Any])
+      
+      inline def setCookieFlagsUndefined: Self = StObject.set(x, "cookieFlags", js.undefined)
+      
       inline def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
       
       inline def setCookieNameUndefined: Self = StObject.set(x, "cookieName", js.undefined)
@@ -1144,6 +1152,10 @@ object UniversalAnalytics {
       inline def setCookiePath(value: String): Self = StObject.set(x, "cookiePath", value.asInstanceOf[js.Any])
       
       inline def setCookiePathUndefined: Self = StObject.set(x, "cookiePath", js.undefined)
+      
+      inline def setCookieUpdate(value: Boolean): Self = StObject.set(x, "cookieUpdate", value.asInstanceOf[js.Any])
+      
+      inline def setCookieUpdateUndefined: Self = StObject.set(x, "cookieUpdate", js.undefined)
       
       inline def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
       
@@ -3026,10 +3038,10 @@ object UniversalAnalytics {
   @js.native
   trait Model extends StObject {
     
-    def get(fieldName: String): js.Any = js.native
+    def get(fieldName: String): Any = js.native
     
-    def set(fieldName: String, fieldValue: js.Any): Unit = js.native
-    def set(fieldName: String, fieldValue: js.Any, temporary: Boolean): Unit = js.native
+    def set(fieldName: String, fieldValue: Any): Unit = js.native
+    def set(fieldName: String, fieldValue: Any, temporary: Boolean): Unit = js.native
     def set(fields: js.Object): Unit = js.native
     def set(fields: js.Object, fieldValue: Null, temporary: Boolean): Unit = js.native
     def set(fields: js.Object, fieldValue: Unit, temporary: Boolean): Unit = js.native
@@ -3038,20 +3050,20 @@ object UniversalAnalytics {
   @js.native
   trait Tracker extends StObject {
     
-    def get(fieldName: String): js.Any = js.native
+    def get(fieldName: String): Any = js.native
     
     def send(hitType: String, fieldsObject: js.Object): Unit = js.native
-    def send(hitType: String, fields: js.Any*): Unit = js.native
+    def send(hitType: String, fields: Any*): Unit = js.native
     
-    def set(fieldName: String, fieldValue: js.Any): Unit = js.native
+    def set(fieldName: String, fieldValue: Any): Unit = js.native
     def set(fieldsObject: js.Object): Unit = js.native
   }
   
   @js.native
   trait ga extends StObject {
     
-    def apply(command: String, fields: js.Any*): Unit = js.native
-    def apply(command: String, hitType: HitType, fields: js.Any*): Unit = js.native
+    def apply(command: String, fields: Any*): Unit = js.native
+    def apply(command: String, hitType: HitType, fields: Any*): Unit = js.native
     def apply(command: create, trackingId: String): Unit = js.native
     def apply(command: create, trackingId: String, cookieDomain: String): Unit = js.native
     def apply(command: create, trackingId: String, cookieDomain: String, name: String): Unit = js.native
@@ -3077,7 +3089,7 @@ object UniversalAnalytics {
     ): Unit = js.native
     def apply(command: remove): Unit = js.native
     def apply(command: require, pluginName: String): Unit = js.native
-    def apply(command: require, pluginName: String, pluginOptions: js.Any): Unit = js.native
+    def apply(command: require, pluginName: String, pluginOptions: Any): Unit = js.native
     def apply(command: send, fieldsObject: FieldsObject): Unit = js.native
     def apply(command: send, fieldsObject: EventCategory): Unit = js.native
     def apply(command: send, hitType: event, eventCategory: String, eventAction: String): Unit = js.native
@@ -3160,7 +3172,7 @@ object UniversalAnalytics {
     
     var l: Double = js.native
     
-    var q: js.Array[js.Any] = js.native
+    var q: js.Array[Any] = js.native
     
     def remove(name: String): Unit = js.native
   }

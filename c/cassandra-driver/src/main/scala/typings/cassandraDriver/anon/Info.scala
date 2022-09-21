@@ -8,11 +8,11 @@ trait Info extends StObject {
   
   var code: Double
   
-  var info: js.Any
+  var info: Any
 }
 object Info {
   
-  inline def apply(code: Double, info: js.Any): Info = {
+  inline def apply(code: Double, info: Any): Info = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any])
     __obj.asInstanceOf[Info]
   }
@@ -21,6 +21,6 @@ object Info {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
   }
 }

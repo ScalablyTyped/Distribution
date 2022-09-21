@@ -25,13 +25,6 @@ trait SceneViewConstraintsProperties
   var clipDistance: js.UndefOr[SceneViewConstraintsClipDistanceProperties] = js.undefined
   
   /**
-    * When enabled, prevents the user from navigating below the surface in a local SceneView.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
-    */
-  var collision: js.UndefOr[SceneViewConstraintsCollision] = js.undefined
-  
-  /**
     * Specifies a constraint on the amount of allowed tilting of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
@@ -58,10 +51,6 @@ object SceneViewConstraintsProperties {
     inline def setClipDistance(value: SceneViewConstraintsClipDistanceProperties): Self = StObject.set(x, "clipDistance", value.asInstanceOf[js.Any])
     
     inline def setClipDistanceUndefined: Self = StObject.set(x, "clipDistance", js.undefined)
-    
-    inline def setCollision(value: SceneViewConstraintsCollision): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
-    
-    inline def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
     
     inline def setTilt(value: SceneViewConstraintsTiltProperties): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
     

@@ -7,41 +7,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChannelMessageSummary extends StObject {
   
   /**
-    * The content of the message summary.
+    * The content of the message.
     */
   var Content: js.UndefOr[typings.awsSdk.chimeMod.Content] = js.undefined
   
   /**
     * The time at which the message summary was created.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
-  
-  var LastEditedTimestamp: js.UndefOr[Timestamp] = js.undefined
-  
-  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The ID of the message summary.
+    * The time at which a message was last edited.
+    */
+  var LastEditedTimestamp: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The time at which a message was last updated.
+    */
+  var LastUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The ID of the message.
     */
   var MessageId: js.UndefOr[typings.awsSdk.chimeMod.MessageId] = js.undefined
   
   /**
-    * The metadata of the message summary.
+    * The metadata of the message.
     */
   var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.undefined
   
   /**
-    * Redacts the content of a message summary.
+    * Indicates whether a message was redacted.
     */
   var Redacted: js.UndefOr[NonNullableBoolean] = js.undefined
   
   /**
-    * The sender of the message summary.
+    * The message sender.
     */
   var Sender: js.UndefOr[Identity] = js.undefined
   
   /**
-    * The type of message summary.
+    * The type of message.
     */
   var Type: js.UndefOr[ChannelMessageType] = js.undefined
 }
@@ -58,15 +64,15 @@ object ChannelMessageSummary {
     
     inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
-    inline def setLastEditedTimestamp(value: Timestamp): Self = StObject.set(x, "LastEditedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastEditedTimestamp(value: js.Date): Self = StObject.set(x, "LastEditedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastEditedTimestampUndefined: Self = StObject.set(x, "LastEditedTimestamp", js.undefined)
     
-    inline def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
     

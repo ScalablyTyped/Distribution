@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMCustomEvent")
 @js.native
-/* private */ class DOMCustomEvent ()
+/* private */ open class DOMCustomEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMCustomEvent {
   
@@ -30,13 +30,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val defaultPrevented: Boolean = js.native
   
   /* CompleteClass */
-  override val detail: js.Any = js.native
+  override val detail: Any = js.native
   
   /* CompleteClass */
   override val eventPhase: Double = js.native
   
   /* CompleteClass */
-  override def initCustomEvent(eventType: String, canBubble: Boolean, cancelable: Boolean, detail: js.Any): Unit = js.native
+  override def initCustomEvent(eventType: String, canBubble: Boolean, cancelable: Boolean, detail: Any): Unit = js.native
   
   /* CompleteClass */
   override def initEvent(eventType: String, canBubble: Boolean, cancelable: Boolean): Unit = js.native

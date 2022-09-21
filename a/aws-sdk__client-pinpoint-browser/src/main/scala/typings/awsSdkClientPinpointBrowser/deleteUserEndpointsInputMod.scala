@@ -8,5 +8,5 @@ object deleteUserEndpointsInputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/DeleteUserEndpointsInput", "DeleteUserEndpointsInput")
   @js.native
-  val DeleteUserEndpointsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteUserEndpointsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

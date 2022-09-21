@@ -13,6 +13,12 @@ trait MarkerOptions extends StObject {
     */
   var anchor: js.UndefOr[Anchor] = js.undefined
   
+  /**
+    * The max number of pixels a user can shift the mouse pointer during a click on the marker for it to be considered a valid click
+    * (as opposed to a marker drag). The default (0) is to inherit map's clickTolerance.
+    */
+  var clickTolerance: js.UndefOr[Double | Null] = js.undefined
+  
   /** The color to use for the default marker if options.element is not provided. The default is light blue (#3FB1CE). */
   var color: js.UndefOr[String] = js.undefined
   
@@ -61,6 +67,12 @@ object MarkerOptions {
     inline def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    
+    inline def setClickTolerance(value: Double): Self = StObject.set(x, "clickTolerance", value.asInstanceOf[js.Any])
+    
+    inline def setClickToleranceNull: Self = StObject.set(x, "clickTolerance", null)
+    
+    inline def setClickToleranceUndefined: Self = StObject.set(x, "clickTolerance", js.undefined)
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

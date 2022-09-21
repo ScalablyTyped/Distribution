@@ -1,17 +1,16 @@
 package typings.imageQ
 
-import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
-import typings.imageQ.pointContainerMod.PointContainer
-import typings.imageQ.utilsPaletteMod.Palette
+import typings.imageQ.distanceCalculatorMod.AbstractDistanceCalculator
+import typings.imageQ.paletteQuantizerMod.AbstractPaletteQuantizer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wuQuantMod {
   
-  @JSImport("image-q/dist/palette/wu/wuQuant", "WuColorCube")
+  @JSImport("image-q/dist/types/src/palette/wu/wuQuant", "WuColorCube")
   @js.native
-  class WuColorCube () extends StObject {
+  open class WuColorCube () extends StObject {
     
     var alphaMaximum: Double = js.native
     
@@ -32,9 +31,9 @@ object wuQuantMod {
     var volume: Double = js.native
   }
   
-  @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant")
+  @JSImport("image-q/dist/types/src/palette/wu/wuQuant", "WuQuant")
   @js.native
-  class WuQuant protected () extends StObject {
+  open class WuQuant protected () extends AbstractPaletteQuantizer {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()
     def this(colorDistanceCalculator: AbstractDistanceCalculator, colors: Double) = this()
     def this(
@@ -48,128 +47,127 @@ object wuQuantMod {
       significantBitsPerChannel: Double
     ) = this()
     
-    /* private */ def _addColor(color: js.Any): js.Any = js.native
+    /* private */ var _addColor: Any = js.native
     
-    /* private */ var _alphaMaxSideIndex: js.Any = js.native
+    /* private */ var _alphaMaxSideIndex: Any = js.native
     
-    /* private */ var _alphaSideSize: js.Any = js.native
+    /* private */ var _alphaSideSize: Any = js.native
     
-    /* private */ var _alphas: js.Any = js.native
+    /* private */ var _alphas: Any = js.native
     
-    /* private */ var _blues: js.Any = js.native
+    /* private */ var _blues: Any = js.native
     
     /**
       * Converts the histogram to a series of _moments.
       */
-    /* private */ def _calculateMoments(): js.Any = js.native
+    /* private */ var _calculateMoments: Any = js.native
     
     /**
       * Calculates statistical variance for a given cube.
       */
-    /* private */ def _calculateVariance(cube: js.Any): js.Any = js.native
+    /* private */ var _calculateVariance: Any = js.native
     
-    /* private */ var _colors: js.Any = js.native
+    /* private */ var _colors: Any = js.native
     
-    /* private */ var _cubes: js.Any = js.native
+    /* private */ var _cubes: Any = js.native
     
-    /* private */ def _cut(first: js.Any, second: js.Any): js.Any = js.native
+    /* private */ var _cut: Any = js.native
     
-    /* private */ val _distance: js.Any = js.native
+    /* private */ val _distance: Any = js.native
     
-    /* private */ var _greens: js.Any = js.native
+    /* private */ var _greens: Any = js.native
     
-    /* private */ def _initialize(colors: js.Any): js.Any = js.native
+    /* private */ var _initialize: Any = js.native
     
-    /* private */ var _maxSideIndex: js.Any = js.native
+    /* private */ var _maxSideIndex: Any = js.native
     
     /**
       * Finds the optimal (maximal) position for the cut.
       */
-    /* private */ def _maximize(
-      cube: js.Any,
-      direction: js.Any,
-      first: js.Any,
-      last: js.Any,
-      wholeRed: js.Any,
-      wholeGreen: js.Any,
-      wholeBlue: js.Any,
-      wholeAlpha: js.Any,
-      wholeWeight: js.Any
-    ): js.Any = js.native
+    /* private */ var _maximize: Any = js.native
     
-    /* private */ var _moments: js.Any = js.native
+    /* private */ var _moments: Any = js.native
     
-    /* private */ var _momentsAlpha: js.Any = js.native
+    /* private */ var _momentsAlpha: Any = js.native
     
-    /* private */ var _momentsBlue: js.Any = js.native
+    /* private */ var _momentsBlue: Any = js.native
     
-    /* private */ var _momentsGreen: js.Any = js.native
+    /* private */ var _momentsGreen: Any = js.native
     
-    /* private */ var _momentsRed: js.Any = js.native
+    /* private */ var _momentsRed: Any = js.native
     
-    /* private */ var _pixels: js.Any = js.native
+    /* private */ var _pixels: Any = js.native
     
-    /* private */ def _preparePalette(): js.Any = js.native
+    /* private */ var _preparePalette: Any = js.native
     
-    /* private */ var _reds: js.Any = js.native
+    /* private */ var _reds: Any = js.native
     
-    /* private */ def _setQuality(significantBitsPerChannel: js.Any): js.Any = js.native
+    /* private */ var _setQuality: Any = js.native
     
-    /* private */ var _sideSize: js.Any = js.native
+    /* private */ var _sideSize: Any = js.native
     
-    /* private */ var _significantBitsPerChannel: js.Any = js.native
+    /* private */ var _significantBitsPerChannel: Any = js.native
     
-    /* private */ var _sums: js.Any = js.native
+    /* private */ var _sums: Any = js.native
     
-    /* private */ var _table: js.Any = js.native
+    /* private */ var _table: Any = js.native
     
-    /* private */ var _weights: js.Any = js.native
-    
-    def quantize(): Palette = js.native
-    
-    def sample(image: PointContainer): Unit = js.native
+    /* private */ var _weights: Any = js.native
   }
   /* static members */
   object WuQuant {
     
-    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant")
+    @JSImport("image-q/dist/types/src/palette/wu/wuQuant", "WuQuant")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("image-q/dist/types/src/palette/wu/wuQuant", "WuQuant._alpha")
+    @js.native
+    val _alpha: Any = js.native
+    
+    @JSImport("image-q/dist/types/src/palette/wu/wuQuant", "WuQuant._blue")
+    @js.native
+    val _blue: Any = js.native
     
     /**
       * Splits the cube in a given color direction at its minimum.
       */
-    inline def _bottom(cube: js.Any, direction: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_bottom")(cube.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("image-q/dist/types/src/palette/wu/wuQuant", "WuQuant._bottom")
+    @js.native
+    def _bottom: Any = js.native
+    inline def _bottom_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_bottom")(x.asInstanceOf[js.Any])
+    
+    @JSImport("image-q/dist/types/src/palette/wu/wuQuant", "WuQuant._green")
+    @js.native
+    val _green: Any = js.native
+    
+    @JSImport("image-q/dist/types/src/palette/wu/wuQuant", "WuQuant._red")
+    @js.native
+    val _red: Any = js.native
     
     /**
       * Splits the cube in given position][and color direction.
       */
-    inline def _top(cube: js.Any, direction: js.Any, position: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_top")(cube.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], position.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("image-q/dist/types/src/palette/wu/wuQuant", "WuQuant._top")
+    @js.native
+    def _top: Any = js.native
+    inline def _top_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_top")(x.asInstanceOf[js.Any])
     
     /**
       * Computes the volume of the cube in a specific moment.
       */
-    inline def _volume(cube: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_volume")(cube.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("image-q/dist/types/src/palette/wu/wuQuant", "WuQuant._volume")
+    @js.native
+    def _volume: Any = js.native
     
     /**
       * Computes the volume of the cube in a specific moment.
       */
-    inline def _volumeFloat(cube: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_volumeFloat")(cube.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    
-    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant.alpha")
+    @JSImport("image-q/dist/types/src/palette/wu/wuQuant", "WuQuant._volumeFloat")
     @js.native
-    val alpha: js.Any = js.native
+    def _volumeFloat: Any = js.native
+    inline def _volumeFloat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_volumeFloat")(x.asInstanceOf[js.Any])
     
-    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant.blue")
-    @js.native
-    val blue: js.Any = js.native
-    
-    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant.green")
-    @js.native
-    val green: js.Any = js.native
-    
-    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant.red")
-    @js.native
-    val red: js.Any = js.native
+    inline def _volume_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_volume")(x.asInstanceOf[js.Any])
   }
 }

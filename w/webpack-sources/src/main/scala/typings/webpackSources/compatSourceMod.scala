@@ -9,7 +9,7 @@ object compatSourceMod {
   
   @JSImport("webpack-sources/lib/CompatSource", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends typings.webpackSources.sourceMod.^ {
     def this(sourceLike: SourceLike) = this()
   }

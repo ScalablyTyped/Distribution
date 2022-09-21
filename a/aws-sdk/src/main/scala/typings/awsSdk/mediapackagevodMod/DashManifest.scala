@@ -26,6 +26,11 @@ trait DashManifest extends StObject {
     */
   var Profile: js.UndefOr[typings.awsSdk.mediapackagevodMod.Profile] = js.undefined
   
+  /**
+    * The source of scte markers used. When set to SEGMENTS, the scte markers are sourced from the segments of the ingested content. When set to MANIFEST, the scte markers are sourced from the manifest of the ingested content.
+    */
+  var ScteMarkersSource: js.UndefOr[typings.awsSdk.mediapackagevodMod.ScteMarkersSource] = js.undefined
+  
   var StreamSelection: js.UndefOr[typings.awsSdk.mediapackagevodMod.StreamSelection] = js.undefined
 }
 object DashManifest {
@@ -52,6 +57,10 @@ object DashManifest {
     inline def setProfile(value: Profile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
     
     inline def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
+    
+    inline def setScteMarkersSource(value: ScteMarkersSource): Self = StObject.set(x, "ScteMarkersSource", value.asInstanceOf[js.Any])
+    
+    inline def setScteMarkersSourceUndefined: Self = StObject.set(x, "ScteMarkersSource", js.undefined)
     
     inline def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
     

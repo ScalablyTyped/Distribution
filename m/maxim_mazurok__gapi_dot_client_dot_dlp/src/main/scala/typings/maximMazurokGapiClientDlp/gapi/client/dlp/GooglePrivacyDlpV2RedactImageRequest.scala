@@ -38,7 +38,7 @@ object GooglePrivacyDlpV2RedactImageRequest {
     
     inline def setImageRedactionConfigsUndefined: Self = StObject.set(x, "imageRedactionConfigs", js.undefined)
     
-    inline def setImageRedactionConfigsVarargs(value: GooglePrivacyDlpV2ImageRedactionConfig*): Self = StObject.set(x, "imageRedactionConfigs", js.Array(value :_*))
+    inline def setImageRedactionConfigsVarargs(value: GooglePrivacyDlpV2ImageRedactionConfig*): Self = StObject.set(x, "imageRedactionConfigs", js.Array(value*))
     
     inline def setIncludeFindings(value: Boolean): Self = StObject.set(x, "includeFindings", value.asInstanceOf[js.Any])
     

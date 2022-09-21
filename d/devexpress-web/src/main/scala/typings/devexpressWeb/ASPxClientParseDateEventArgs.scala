@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait ASPxClientParseDateEventArgs
   /**
     * Gets or sets the edit value of the date editor.
     */
-  var date: Date
+  var date: js.Date
   
   /**
     * Gets or sets a value specifying whether the event was handled.
@@ -29,14 +28,14 @@ trait ASPxClientParseDateEventArgs
 }
 object ASPxClientParseDateEventArgs {
   
-  inline def apply(date: Date, handled: Boolean, value: String): ASPxClientParseDateEventArgs = {
+  inline def apply(date: js.Date, handled: Boolean, value: String): ASPxClientParseDateEventArgs = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientParseDateEventArgs]
   }
   
   extension [Self <: ASPxClientParseDateEventArgs](x: Self) {
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     

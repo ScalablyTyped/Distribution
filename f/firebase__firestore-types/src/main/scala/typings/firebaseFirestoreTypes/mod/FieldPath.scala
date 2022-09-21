@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/firestore-types", "FieldPath")
 @js.native
-class FieldPath protected () extends StObject {
+open class FieldPath protected () extends StObject {
   def this(fieldNames: String*) = this()
   
   def isEqual(other: FieldPath): Boolean = js.native

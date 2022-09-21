@@ -25,9 +25,9 @@ trait SparklineGroups extends StObject {
   
   def Item(Index: Double): SparklineGroup = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Ungroup(): Unit = js.native
   
-  def _Default(Index: js.Any): SparklineGroup = js.native
+  def _Default(Index: Any): SparklineGroup = js.native
 }

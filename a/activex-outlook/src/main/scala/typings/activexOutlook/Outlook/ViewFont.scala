@@ -23,7 +23,7 @@ trait ViewFont extends StObject {
   /* private */ @JSName("Outlook.ViewFont_typekey")
   var OutlookDotViewFont_typekey: ViewFont
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -44,7 +44,7 @@ object ViewFont {
     Italic: Boolean,
     Name: String,
     OutlookDotViewFont_typekey: ViewFont,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     Size: Double,
     Strikethrough: Boolean,
@@ -73,7 +73,7 @@ object ViewFont {
     
     inline def setOutlookDotViewFont_typekey(value: ViewFont): Self = StObject.set(x, "Outlook.ViewFont_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

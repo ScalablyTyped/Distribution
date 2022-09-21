@@ -26,17 +26,21 @@ trait MediaTrackConstraintSet extends StObject {
   
   var iso: js.UndefOr[ConstrainDouble] = js.undefined
   
+  var pan: js.UndefOr[Boolean | ConstrainDouble] = js.undefined
+  
   var pointsOfInterest: js.UndefOr[ConstrainPoint2D] = js.undefined
   
   var saturation: js.UndefOr[ConstrainDouble] = js.undefined
   
   var sharpness: js.UndefOr[ConstrainDouble] = js.undefined
   
+  var tilt: js.UndefOr[Boolean | ConstrainDouble] = js.undefined
+  
   var torch: js.UndefOr[ConstrainBoolean] = js.undefined
   
   var whiteBalanceMode: js.UndefOr[ConstrainString] = js.undefined
   
-  var zoom: js.UndefOr[ConstrainDouble] = js.undefined
+  var zoom: js.UndefOr[Boolean | ConstrainDouble] = js.undefined
 }
 object MediaTrackConstraintSet {
   
@@ -67,7 +71,7 @@ object MediaTrackConstraintSet {
     
     inline def setExposureModeUndefined: Self = StObject.set(x, "exposureMode", js.undefined)
     
-    inline def setExposureModeVarargs(value: String*): Self = StObject.set(x, "exposureMode", js.Array(value :_*))
+    inline def setExposureModeVarargs(value: String*): Self = StObject.set(x, "exposureMode", js.Array(value*))
     
     inline def setFocusDistance(value: ConstrainDouble): Self = StObject.set(x, "focusDistance", value.asInstanceOf[js.Any])
     
@@ -77,17 +81,21 @@ object MediaTrackConstraintSet {
     
     inline def setFocusModeUndefined: Self = StObject.set(x, "focusMode", js.undefined)
     
-    inline def setFocusModeVarargs(value: String*): Self = StObject.set(x, "focusMode", js.Array(value :_*))
+    inline def setFocusModeVarargs(value: String*): Self = StObject.set(x, "focusMode", js.Array(value*))
     
     inline def setIso(value: ConstrainDouble): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
     
     inline def setIsoUndefined: Self = StObject.set(x, "iso", js.undefined)
     
+    inline def setPan(value: Boolean | ConstrainDouble): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+    
+    inline def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
+    
     inline def setPointsOfInterest(value: ConstrainPoint2D): Self = StObject.set(x, "pointsOfInterest", value.asInstanceOf[js.Any])
     
     inline def setPointsOfInterestUndefined: Self = StObject.set(x, "pointsOfInterest", js.undefined)
     
-    inline def setPointsOfInterestVarargs(value: Point2D*): Self = StObject.set(x, "pointsOfInterest", js.Array(value :_*))
+    inline def setPointsOfInterestVarargs(value: Point2D*): Self = StObject.set(x, "pointsOfInterest", js.Array(value*))
     
     inline def setSaturation(value: ConstrainDouble): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
@@ -97,6 +105,10 @@ object MediaTrackConstraintSet {
     
     inline def setSharpnessUndefined: Self = StObject.set(x, "sharpness", js.undefined)
     
+    inline def setTilt(value: Boolean | ConstrainDouble): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
+    
+    inline def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
+    
     inline def setTorch(value: ConstrainBoolean): Self = StObject.set(x, "torch", value.asInstanceOf[js.Any])
     
     inline def setTorchUndefined: Self = StObject.set(x, "torch", js.undefined)
@@ -105,9 +117,9 @@ object MediaTrackConstraintSet {
     
     inline def setWhiteBalanceModeUndefined: Self = StObject.set(x, "whiteBalanceMode", js.undefined)
     
-    inline def setWhiteBalanceModeVarargs(value: String*): Self = StObject.set(x, "whiteBalanceMode", js.Array(value :_*))
+    inline def setWhiteBalanceModeVarargs(value: String*): Self = StObject.set(x, "whiteBalanceMode", js.Array(value*))
     
-    inline def setZoom(value: ConstrainDouble): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Boolean | ConstrainDouble): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }

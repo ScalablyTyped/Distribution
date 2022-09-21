@@ -14,6 +14,8 @@ trait SlideApplyToOptions
   /**
     * Indicates whether to animate the slide transition.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#applyTo)
     */
   var animate: js.UndefOr[Boolean] = js.undefined
@@ -35,6 +37,8 @@ trait SlideApplyToOptions
   /**
     * The maximum allowed duration (in milliseconds) of the animation.
     *
+    * @default 8000
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#applyTo)
     */
   var maxDuration: js.UndefOr[Double] = js.undefined
@@ -48,6 +52,8 @@ trait SlideApplyToOptions
   
   /**
     * Increases or decreases the animation speed by the specified factor.
+    *
+    * @default 1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#applyTo)
     */

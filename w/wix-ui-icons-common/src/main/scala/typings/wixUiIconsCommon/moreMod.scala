@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object moreMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/More", JSImport.Default)
   @js.native
-  val default: SFC[MoreProps] = js.native
+  val default: FC[MoreProps] = js.native
   
   trait MoreProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object MoreProps {
     
@@ -29,14 +29,14 @@ object moreMod extends Shortcut {
     
     extension [Self <: MoreProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[MoreProps]
+  type _To = FC[MoreProps]
   
   /* This means you don't have to write `default`, but can instead just say `moreMod.foo` */
-  override def _to: SFC[MoreProps] = default
+  override def _to: FC[MoreProps] = default
 }

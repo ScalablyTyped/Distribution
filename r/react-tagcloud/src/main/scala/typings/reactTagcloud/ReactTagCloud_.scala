@@ -4,7 +4,8 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,9 +24,9 @@ object ReactTagCloud_ {
   
   trait DefaultRendererFactoryOptions extends StObject {
     
-    var colorOptions: js.UndefOr[js.Any] = js.undefined
+    var colorOptions: js.UndefOr[Any] = js.undefined
     
-    var props: js.UndefOr[js.Any] = js.undefined
+    var props: js.UndefOr[Any] = js.undefined
     
     var tagRenderer: js.UndefOr[js.Function] = js.undefined
   }
@@ -38,11 +39,11 @@ object ReactTagCloud_ {
     
     extension [Self <: DefaultRendererFactoryOptions](x: Self) {
       
-      inline def setColorOptions(value: js.Any): Self = StObject.set(x, "colorOptions", value.asInstanceOf[js.Any])
+      inline def setColorOptions(value: Any): Self = StObject.set(x, "colorOptions", value.asInstanceOf[js.Any])
       
       inline def setColorOptionsUndefined: Self = StObject.set(x, "colorOptions", js.undefined)
       
-      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
@@ -52,19 +53,13 @@ object ReactTagCloud_ {
     }
   }
   
-  type RendererFunction = js.Function4[
-    /* tag */ js.Any, 
-    /* size */ Double, 
-    /* key */ String | Double, 
-    /* handlers */ js.Any, 
-    js.Any
-  ]
+  type RendererFunction = js.Function4[/* tag */ Any, /* size */ Double, /* key */ String | Double, /* handlers */ Any, Any]
   
   type TagCloudClass = ComponentClass[TagCloudProps, ComponentState]
   
-  trait TagCloudProps
-    extends StObject
-       with Props[Unit] {
+  trait TagCloudProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -78,20 +73,26 @@ object ReactTagCloud_ {
     
     var onClick: js.UndefOr[js.Function] = js.undefined
     
+    var ref: js.UndefOr[LegacyRef[Unit]] = js.undefined
+    
     var renderer: js.UndefOr[js.Function] = js.undefined
     
     var shuffle: js.UndefOr[Boolean] = js.undefined
     
-    var tags: js.Array[js.Any]
+    var tags: js.Array[Any]
   }
   object TagCloudProps {
     
-    inline def apply(maxSize: Double, minSize: Double, tags: js.Array[js.Any]): TagCloudProps = {
+    inline def apply(maxSize: Double, minSize: Double, tags: js.Array[Any]): TagCloudProps = {
       val __obj = js.Dynamic.literal(maxSize = maxSize.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagCloudProps]
     }
     
     extension [Self <: TagCloudProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -113,6 +114,14 @@ object ReactTagCloud_ {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
+      inline def setRef(value: LegacyRef[Unit]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Unit | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      
       inline def setRenderer(value: js.Function): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
       
       inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
@@ -121,9 +130,9 @@ object ReactTagCloud_ {
       
       inline def setShuffleUndefined: Self = StObject.set(x, "shuffle", js.undefined)
       
-      inline def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Any*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
 }

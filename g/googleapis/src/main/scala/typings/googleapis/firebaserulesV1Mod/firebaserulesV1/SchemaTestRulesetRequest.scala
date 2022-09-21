@@ -4,19 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request for FirebaseRulesService.TestRuleset.
-  */
 trait SchemaTestRulesetRequest extends StObject {
   
   /**
-    * Optional `Source` to be checked for correctness.  This field must not be
-    * set when the resource name refers to a `Ruleset`.
+    * Optional `Source` to be checked for correctness. This field must not be set when the resource name refers to a `Ruleset`.
     */
   var source: js.UndefOr[SchemaSource] = js.undefined
   
   /**
-    * Inline `TestSuite` to run.
+    * The tests to execute against the `Source`. When `Source` is provided inline, the test cases will only be run if the `Source` is syntactically and semantically valid. Inline `TestSuite` to run.
     */
   var testSuite: js.UndefOr[SchemaTestSuite] = js.undefined
 }

@@ -26,7 +26,7 @@ trait OlkTimeZoneControl extends StObject {
   
   var SelectedTimeZoneIndex: Double
   
-  var Value: js.Any
+  var Value: Any
 }
 object OlkTimeZoneControl {
   
@@ -40,7 +40,7 @@ object OlkTimeZoneControl {
     MousePointer: OlMousePointer,
     OutlookDotOlkTimeZoneControl_typekey: OlkTimeZoneControl,
     SelectedTimeZoneIndex: Double,
-    Value: js.Any
+    Value: Any
   ): OlkTimeZoneControl = {
     val __obj = js.Dynamic.literal(AppointmentTimeField = AppointmentTimeField.asInstanceOf[js.Any], BorderStyle = BorderStyle.asInstanceOf[js.Any], DropDown = js.Any.fromFunction0(DropDown), Enabled = Enabled.asInstanceOf[js.Any], Locked = Locked.asInstanceOf[js.Any], MouseIcon = MouseIcon.asInstanceOf[js.Any], MousePointer = MousePointer.asInstanceOf[js.Any], SelectedTimeZoneIndex = SelectedTimeZoneIndex.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("Outlook.OlkTimeZoneControl_typekey")(OutlookDotOlkTimeZoneControl_typekey.asInstanceOf[js.Any])
@@ -67,6 +67,6 @@ object OlkTimeZoneControl {
     
     inline def setSelectedTimeZoneIndex(value: Double): Self = StObject.set(x, "SelectedTimeZoneIndex", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -4,6 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Utility for retrieving the current version of the API.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-kernel.html)
+  */
 trait kernel extends StObject {
   
   /**

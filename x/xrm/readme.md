@@ -10,9 +10,9 @@ Typings are for version 9.0
 | Full name          | xrm |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 392 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 56.333333333333336 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/xrm)

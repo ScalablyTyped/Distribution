@@ -7,13 +7,13 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-	 * @see https://developer.knuddels.de/docs/classes/App.html
-	 */
+  * @see https://developer.knuddels.de/docs/classes/App.html
+  */
 trait App extends StObject {
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#property_chatCommands
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#property_chatCommands
+    */
   var chatCommands: js.UndefOr[
     StringDictionary[
       js.Function3[/* user */ User, /* params */ java.lang.String, /* command */ java.lang.String, Unit]
@@ -21,28 +21,28 @@ trait App extends StObject {
   ] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_mayJoinChannel
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_mayJoinChannel
+    */
   var mayJoinChannel: js.UndefOr[js.Function1[/* user */ User, ChannelJoinPermission]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_mayShowPublicActionMessage
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_mayShowPublicActionMessage
+    */
   var mayShowPublicActionMessage: js.UndefOr[js.Function1[/* publicActionMessage */ PublicActionMessage, Boolean]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_mayShowPublicMessage
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_mayShowPublicMessage
+    */
   var mayShowPublicMessage: js.UndefOr[js.Function1[/* publicMessage */ PublicMessage, Boolean]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_mayUserDice
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_mayUserDice
+    */
   var mayUserDice: js.UndefOr[js.Function2[/* user */ User, /* diceConfig */ DiceConfiguration, Boolean]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onAccountChangedKnuddelAmount
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onAccountChangedKnuddelAmount
+    */
   var onAccountChangedKnuddelAmount: js.UndefOr[
     js.Function4[
       /* user */ User, 
@@ -54,8 +54,8 @@ trait App extends StObject {
   ] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onAccountReceivedKnuddel
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onAccountReceivedKnuddel
+    */
   var onAccountReceivedKnuddel: js.UndefOr[
     js.Function5[
       /* sender */ User, 
@@ -68,8 +68,8 @@ trait App extends StObject {
   ] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onAppEventReceived
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onAppEventReceived
+    */
   var onAppEventReceived: js.UndefOr[
     js.Function3[
       /* appInstance */ AppInstance, 
@@ -80,24 +80,30 @@ trait App extends StObject {
   ] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onAppStart
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onAppStart
+    */
   var onAppStart: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onBeforeKnuddelReceived
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onBeforeKnuddelReceived
+    */
   var onBeforeKnuddelReceived: js.UndefOr[js.Function1[/* knuddelTransfer */ KnuddelTransfer, Unit]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onDeveloperCommand
-  		 * @since AppServer 108662, ChatServer 108662
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onDebtsUpdate
+    * @since AppServer 20201113-145716, ChatServer 20201113-145716
+    */
+  var onDebtsUpdate: js.UndefOr[js.Function1[/* debts */ KnuddelAmount, Unit]] = js.undefined
+  
+  /**
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onDeveloperCommand
+    * @since AppServer 108662, ChatServer 108662
+    */
   var onDeveloperCommand: js.UndefOr[js.Function2[/* user */ User, /* params */ java.lang.String, Unit]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onEventReceived
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onEventReceived
+    */
   var onEventReceived: js.UndefOr[
     js.Function4[
       /* user */ User, 
@@ -109,8 +115,8 @@ trait App extends StObject {
   ] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onKnuddelReceived
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onKnuddelReceived
+    */
   var onKnuddelReceived: js.UndefOr[
     js.Function4[
       /* sender */ User, 
@@ -122,53 +128,53 @@ trait App extends StObject {
   ] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onPrepareShutdown
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onPrepareShutdown
+    */
   var onPrepareShutdown: js.UndefOr[js.Function1[/* secondsTillShutdown */ Double, Unit]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onPrivateMessage
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onPrivateMessage
+    */
   var onPrivateMessage: js.UndefOr[js.Function1[/* privateMessage */ PrivateMessage, Unit]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onPublicActionMessage
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onPublicActionMessage
+    */
   var onPublicActionMessage: js.UndefOr[js.Function1[/* publicActionMessage */ PublicActionMessage, Unit]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onPublicEventMessage
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onPublicEventMessage
+    */
   var onPublicEventMessage: js.UndefOr[js.Function1[/* publicEventMessage */ PublicEventMessage, Unit]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onPublicMessage
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onPublicMessage
+    */
   var onPublicMessage: js.UndefOr[js.Function1[/* publicMessage */ PublicMessage, Unit]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onShutdown
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onShutdown
+    */
   var onShutdown: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onUserDeleted
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onUserDeleted
+    */
   var onUserDeleted: js.UndefOr[js.Function2[/* userId */ Double, /* userPersistence */ UserPersistence, Unit]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onUserDiced
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onUserDiced
+    */
   var onUserDiced: js.UndefOr[js.Function1[/* diceEvent */ DiceEvent, Unit]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onUserJoined
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onUserJoined
+    */
   var onUserJoined: js.UndefOr[js.Function1[/* user */ User, Unit]] = js.undefined
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onUserLeft
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/App.html#method_onUserLeft
+    */
   var onUserLeft: js.UndefOr[js.Function1[/* user */ User, Unit]] = js.undefined
 }
 object App {
@@ -229,6 +235,10 @@ object App {
     inline def setOnBeforeKnuddelReceived(value: /* knuddelTransfer */ KnuddelTransfer => Unit): Self = StObject.set(x, "onBeforeKnuddelReceived", js.Any.fromFunction1(value))
     
     inline def setOnBeforeKnuddelReceivedUndefined: Self = StObject.set(x, "onBeforeKnuddelReceived", js.undefined)
+    
+    inline def setOnDebtsUpdate(value: /* debts */ KnuddelAmount => Unit): Self = StObject.set(x, "onDebtsUpdate", js.Any.fromFunction1(value))
+    
+    inline def setOnDebtsUpdateUndefined: Self = StObject.set(x, "onDebtsUpdate", js.undefined)
     
     inline def setOnDeveloperCommand(value: (/* user */ User, /* params */ java.lang.String) => Unit): Self = StObject.set(x, "onDeveloperCommand", js.Any.fromFunction2(value))
     

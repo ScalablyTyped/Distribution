@@ -1,6 +1,6 @@
 package typings.joi.mod
 
-import typings.std.RegExp
+import typings.joi.joiBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ObjectSchema[TSchema]
   extends StObject
-     with AnySchema {
+     with AnySchema[TSchema]
+     with _Schema[TSchema] {
   
   /**
     * Defines an all-or-nothing relationship between keys where if one of the peers is present, all of them are required as well.
@@ -21,7 +22,12 @@ trait ObjectSchema[TSchema]
     * Appends the allowed object keys. If schema is null, undefined, or {}, no changes will be applied.
     */
   def append(): this.type = js.native
-  def append(schema: SchemaMap[TSchema]): this.type = js.native
+  @JSName("append")
+  def append_TSchemaExtendedT_ObjectSchema[TSchemaExtended, T](): ObjectSchema[T] = js.native
+  @JSName("append")
+  def append_false(schema: SchemaMap[TSchema, `false`]): this.type = js.native
+  @JSName("append")
+  def append_false_TSchemaExtendedT_ObjectSchema[TSchemaExtended, T](schema: SchemaMap[T, `false`]): ObjectSchema[T] = js.native
   
   /**
     * Verifies an assertion where.
@@ -45,7 +51,8 @@ trait ObjectSchema[TSchema]
     * Sets or extends the allowed object keys.
     */
   def keys(): this.type = js.native
-  def keys(schema: SchemaMap[TSchema]): this.type = js.native
+  @JSName("keys")
+  def keys_false(schema: SchemaMap[TSchema, `false`]): this.type = js.native
   
   /**
     * Specifies the exact number of keys in the object.
@@ -85,16 +92,16 @@ trait ObjectSchema[TSchema]
     */
   def oxor(peers: (String | HierarchySeparatorOptions)*): this.type = js.native
   
-  def pattern(pattern: SchemaLike, schema: SchemaLike): this.type = js.native
-  def pattern(pattern: SchemaLike, schema: SchemaLike, options: ObjectPatternOptions): this.type = js.native
   /**
     * Specify validation rules for unknown keys matching a pattern.
     *
     * @param pattern - a pattern that can be either a regular expression or a joi schema that will be tested against the unknown key names
     * @param schema - the schema object matching keys must validate against
     */
-  def pattern(pattern: RegExp, schema: SchemaLike): this.type = js.native
-  def pattern(pattern: RegExp, schema: SchemaLike, options: ObjectPatternOptions): this.type = js.native
+  def pattern(pattern: js.RegExp, schema: SchemaLike): this.type = js.native
+  def pattern(pattern: js.RegExp, schema: SchemaLike, options: ObjectPatternOptions): this.type = js.native
+  def pattern(pattern: SchemaLike, schema: SchemaLike): this.type = js.native
+  def pattern(pattern: SchemaLike, schema: SchemaLike, options: ObjectPatternOptions): this.type = js.native
   
   /**
     * Requires the object to be a Joi reference.
@@ -111,8 +118,8 @@ trait ObjectSchema[TSchema]
     */
   def rename(from: String, to: String): this.type = js.native
   def rename(from: String, to: String, options: RenameOptions): this.type = js.native
-  def rename(from: RegExp, to: String): this.type = js.native
-  def rename(from: RegExp, to: String, options: RenameOptions): this.type = js.native
+  def rename(from: js.RegExp, to: String): this.type = js.native
+  def rename(from: js.RegExp, to: String, options: RenameOptions): this.type = js.native
   
   /**
     * Requires the object to be a Joi schema instance.

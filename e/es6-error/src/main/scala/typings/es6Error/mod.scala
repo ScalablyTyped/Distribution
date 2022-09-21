@@ -9,16 +9,18 @@ object mod {
   
   @JSImport("es6-error", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
-  type ExtendableError = Error
+  type ExtendableError = js.Error
 }

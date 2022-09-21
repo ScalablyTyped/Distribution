@@ -113,7 +113,7 @@ object anon {
       * Make a promise that rejects to obj. For consistency and debugging (eg stack traces), obj should be an instanceof Error
       */
     /* static member */
-    def reject[R](error: js.Any): Promise[R] = js.native
+    def reject[R](error: Any): Promise[R] = js.native
     
     /**
       * Make a new promise from the thenable.

@@ -34,7 +34,7 @@ object LoggingConfiguration {
     
     inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
-    inline def setDestinationsVarargs(value: LogDestination*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: LogDestination*): Self = StObject.set(x, "destinations", js.Array(value*))
     
     inline def setIncludeExecutionData(value: IncludeExecutionData): Self = StObject.set(x, "includeExecutionData", value.asInstanceOf[js.Any])
     

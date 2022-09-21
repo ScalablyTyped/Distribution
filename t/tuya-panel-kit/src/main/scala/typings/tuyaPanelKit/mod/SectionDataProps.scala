@@ -1,5 +1,6 @@
 package typings.tuyaPanelKit.mod
 
+import typings.react.mod.ReactNode
 import typings.tuyaPanelKit.anon.Arrow
 import typings.tuyaPanelKit.anon.CellBg
 import org.scalablytyped.runtime.StObject
@@ -8,18 +9,88 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SectionDataProps extends StObject {
   
+  /**
+    * @language zh-CN
+    * @description 数据源
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Data source
+    * @defaultValue null
+    */
   var data: js.UndefOr[js.Array[Arrow]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 如果列表是开关类型，是否可以点击
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description If the list is of switch type, can I click
+    * @defaultValue null
+    */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var footer: js.UndefOr[js.Any] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 分组列表的底部文本或者自定义渲染
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Text at the bottom of the group list or custom rendering
+    * @defaultValue null
+    */
+  var footer: js.UndefOr[ReactNode] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description Key 值
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Key Value
+    * @defaultValue null
+    */
   var key: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 主题配置
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Theme configuration
+    * @defaultValue null
+    */
   var theme: js.UndefOr[CellBg] = js.undefined
   
-  var title: js.UndefOr[String] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 分组列表的标题或者自定义头部渲染
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Group list title or custom header rendering
+    * @defaultValue null
+    */
+  var title: js.UndefOr[String | ReactNode] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 列表项的具体值
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description The specific value of the list item
+    * @defaultValue null
+    */
   var value: js.UndefOr[String | Double | Boolean] = js.undefined
 }
 object SectionDataProps {
@@ -35,13 +106,13 @@ object SectionDataProps {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: Arrow*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Arrow*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setFooter(value: js.Any): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
@@ -53,7 +124,7 @@ object SectionDataProps {
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String | ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     

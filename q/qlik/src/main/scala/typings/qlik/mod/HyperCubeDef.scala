@@ -65,7 +65,7 @@ object HyperCubeDef {
     
     inline def setQDimensionsUndefined: Self = StObject.set(x, "qDimensions", js.undefined)
     
-    inline def setQDimensionsVarargs(value: NxDimension*): Self = StObject.set(x, "qDimensions", js.Array(value :_*))
+    inline def setQDimensionsVarargs(value: NxDimension*): Self = StObject.set(x, "qDimensions", js.Array(value*))
     
     inline def setQIndentMode(value: Boolean): Self = StObject.set(x, "qIndentMode", value.asInstanceOf[js.Any])
     
@@ -75,13 +75,13 @@ object HyperCubeDef {
     
     inline def setQInitialDataFetchUndefined: Self = StObject.set(x, "qInitialDataFetch", js.undefined)
     
-    inline def setQInitialDataFetchVarargs(value: NxPage*): Self = StObject.set(x, "qInitialDataFetch", js.Array(value :_*))
+    inline def setQInitialDataFetchVarargs(value: NxPage*): Self = StObject.set(x, "qInitialDataFetch", js.Array(value*))
     
     inline def setQInterColumnSortOrder(value: js.Array[Double]): Self = StObject.set(x, "qInterColumnSortOrder", value.asInstanceOf[js.Any])
     
     inline def setQInterColumnSortOrderUndefined: Self = StObject.set(x, "qInterColumnSortOrder", js.undefined)
     
-    inline def setQInterColumnSortOrderVarargs(value: Double*): Self = StObject.set(x, "qInterColumnSortOrder", js.Array(value :_*))
+    inline def setQInterColumnSortOrderVarargs(value: Double*): Self = StObject.set(x, "qInterColumnSortOrder", js.Array(value*))
     
     inline def setQMaxStackedCells(value: Double): Self = StObject.set(x, "qMaxStackedCells", value.asInstanceOf[js.Any])
     
@@ -91,7 +91,7 @@ object HyperCubeDef {
     
     inline def setQMeasuresUndefined: Self = StObject.set(x, "qMeasures", js.undefined)
     
-    inline def setQMeasuresVarargs(value: NxMeasure*): Self = StObject.set(x, "qMeasures", js.Array(value :_*))
+    inline def setQMeasuresVarargs(value: NxMeasure*): Self = StObject.set(x, "qMeasures", js.Array(value*))
     
     inline def setQMode(value: S | P | K): Self = StObject.set(x, "qMode", value.asInstanceOf[js.Any])
     

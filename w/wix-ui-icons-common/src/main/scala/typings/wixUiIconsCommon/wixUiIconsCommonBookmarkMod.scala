@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.bookmarkMod.BookmarkProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonBookmarkMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/Bookmark", JSImport.Default)
   @js.native
-  val default: SFC[BookmarkProps] = js.native
+  val default: FC[BookmarkProps] = js.native
   
-  type _To = SFC[BookmarkProps]
+  type _To = FC[BookmarkProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonBookmarkMod.foo` */
-  override def _to: SFC[BookmarkProps] = default
+  override def _to: FC[BookmarkProps] = default
 }

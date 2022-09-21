@@ -11,12 +11,12 @@ trait InsertModalFooterProps extends StObject {
   /**
     * Callback function to call prior to closing the Insert Modal window.
     */
-  var beforeClose: js.UndefOr[js.Function1[/* e */ SyntheticEvent[js.Any, Event], Unit]] = js.undefined
+  var beforeClose: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Any, Event], Unit]] = js.undefined
   
   /**
     * Callback function to be called prior to saving the new row.
     */
-  var beforeSave: js.UndefOr[js.Function1[/* e */ SyntheticEvent[js.Any, Event], Unit]] = js.undefined
+  var beforeSave: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Any, Event], Unit]] = js.undefined
   
   /**
     * Header class name.
@@ -72,11 +72,11 @@ object InsertModalFooterProps {
   
   extension [Self <: InsertModalFooterProps](x: Self) {
     
-    inline def setBeforeClose(value: /* e */ SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
+    inline def setBeforeClose(value: /* e */ SyntheticEvent[Any, Event] => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
     
     inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
     
-    inline def setBeforeSave(value: /* e */ SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "beforeSave", js.Any.fromFunction1(value))
+    inline def setBeforeSave(value: /* e */ SyntheticEvent[Any, Event] => Unit): Self = StObject.set(x, "beforeSave", js.Any.fromFunction1(value))
     
     inline def setBeforeSaveUndefined: Self = StObject.set(x, "beforeSave", js.undefined)
     

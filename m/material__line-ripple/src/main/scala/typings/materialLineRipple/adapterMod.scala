@@ -41,9 +41,9 @@ object adapterMod {
     
     inline def apply(
       addClass: String => Unit,
-      deregisterEventHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
+      deregisterEventHandler: (Any, SpecificEventListener[Any]) => Unit,
       hasClass: String => Boolean,
-      registerEventHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
+      registerEventHandler: (Any, SpecificEventListener[Any]) => Unit,
       removeClass: String => Unit,
       setStyle: (String, String) => Unit
     ): MDCLineRippleAdapter = {
@@ -55,11 +55,11 @@ object adapterMod {
       
       inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      inline def setDeregisterEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterEventHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterEventHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "deregisterEventHandler", js.Any.fromFunction2(value))
       
       inline def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      inline def setRegisterEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerEventHandler", js.Any.fromFunction2(value))
+      inline def setRegisterEventHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "registerEventHandler", js.Any.fromFunction2(value))
       
       inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       

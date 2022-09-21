@@ -21,10 +21,10 @@ object TripResults {
     
     inline def setTrips(value: js.Array[Route]): Self = StObject.set(x, "trips", value.asInstanceOf[js.Any])
     
-    inline def setTripsVarargs(value: Route*): Self = StObject.set(x, "trips", js.Array(value :_*))
+    inline def setTripsVarargs(value: Route*): Self = StObject.set(x, "trips", js.Array(value*))
     
     inline def setWaypoints(value: js.Array[TripWaypoint]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     
-    inline def setWaypointsVarargs(value: TripWaypoint*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+    inline def setWaypointsVarargs(value: TripWaypoint*): Self = StObject.set(x, "waypoints", js.Array(value*))
   }
 }

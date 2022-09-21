@@ -32,7 +32,7 @@ object AdvertiserLandingPagesListResponse {
     
     inline def setLandingPagesUndefined: Self = StObject.set(x, "landingPages", js.undefined)
     
-    inline def setLandingPagesVarargs(value: LandingPage*): Self = StObject.set(x, "landingPages", js.Array(value :_*))
+    inline def setLandingPagesVarargs(value: LandingPage*): Self = StObject.set(x, "landingPages", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait ILabel
      with IBase {
   
   /** [Config Option] (Object) */
-  var label: js.UndefOr[js.Any] = js.undefined
+  var label: js.UndefOr[Any] = js.undefined
   
   /** [Method] Called each time a new label is created
     * @param storeItem Ext.data.Model The element of the store that is related to the sprite.
@@ -24,7 +24,7 @@ trait ILabel
   var onCreateLabel: js.UndefOr[
     js.Function4[
       /* storeItem */ js.UndefOr[IModel], 
-      /* item */ js.UndefOr[js.Any], 
+      /* item */ js.UndefOr[Any], 
       /* i */ js.UndefOr[Double], 
       /* display */ js.UndefOr[String], 
       ISprite
@@ -44,7 +44,7 @@ trait ILabel
     js.Function7[
       /* label */ js.UndefOr[ISprite], 
       /* storeItem */ js.UndefOr[IModel], 
-      /* item */ js.UndefOr[js.Any], 
+      /* item */ js.UndefOr[Any], 
       /* i */ js.UndefOr[Double], 
       /* display */ js.UndefOr[String], 
       /* animate */ js.UndefOr[Boolean], 
@@ -62,18 +62,18 @@ object ILabel {
   
   extension [Self <: ILabel](x: Self) {
     
-    inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setOnCreateLabel(
-      value: (/* storeItem */ js.UndefOr[IModel], /* item */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], /* display */ js.UndefOr[String]) => ISprite
+      value: (/* storeItem */ js.UndefOr[IModel], /* item */ js.UndefOr[Any], /* i */ js.UndefOr[Double], /* display */ js.UndefOr[String]) => ISprite
     ): Self = StObject.set(x, "onCreateLabel", js.Any.fromFunction4(value))
     
     inline def setOnCreateLabelUndefined: Self = StObject.set(x, "onCreateLabel", js.undefined)
     
     inline def setOnPlaceLabel(
-      value: (/* label */ js.UndefOr[ISprite], /* storeItem */ js.UndefOr[IModel], /* item */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], /* display */ js.UndefOr[String], /* animate */ js.UndefOr[Boolean], /* index */ js.UndefOr[Double]) => Unit
+      value: (/* label */ js.UndefOr[ISprite], /* storeItem */ js.UndefOr[IModel], /* item */ js.UndefOr[Any], /* i */ js.UndefOr[Double], /* display */ js.UndefOr[String], /* animate */ js.UndefOr[Boolean], /* index */ js.UndefOr[Double]) => Unit
     ): Self = StObject.set(x, "onPlaceLabel", js.Any.fromFunction7(value))
     
     inline def setOnPlaceLabelUndefined: Self = StObject.set(x, "onPlaceLabel", js.undefined)

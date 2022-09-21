@@ -1,7 +1,6 @@
 package typings.scrollmagic.mod
 
 import typings.scrollmagic.scrollmagicStrings.add
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,8 +18,8 @@ object AddEvent {
     currentTarget: Scene,
     namespace: String,
     target: Scene,
-    timeStamp: Date,
-    timestamp: Date
+    timeStamp: js.Date,
+    timestamp: js.Date
   ): AddEvent = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("add")

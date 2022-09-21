@@ -17,7 +17,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("keygrip", JSImport.Namespace)
   @js.native
-  class Class protected ()
+  open class Class protected ()
     extends StObject
        with Keygrip {
     def this(keys: js.Array[String]) = this()
@@ -26,37 +26,37 @@ object mod extends Shortcut {
     def this(keys: js.Array[String], algorithm: Unit, encoding: String) = this()
     
     /* CompleteClass */
-    override def index(data: js.Any, digest: String): Double = js.native
+    override def index(data: Any, digest: String): Double = js.native
     
     /* CompleteClass */
-    override def sign(data: js.Any): String = js.native
+    override def sign(data: Any): String = js.native
     
     /* CompleteClass */
-    override def verify(data: js.Any, digest: String): Boolean = js.native
+    override def verify(data: Any, digest: String): Boolean = js.native
   }
   
   trait Keygrip extends StObject {
     
-    def index(data: js.Any, digest: String): Double
+    def index(data: Any, digest: String): Double
     
-    def sign(data: js.Any): String
+    def sign(data: Any): String
     
-    def verify(data: js.Any, digest: String): Boolean
+    def verify(data: Any, digest: String): Boolean
   }
   object Keygrip {
     
-    inline def apply(index: (js.Any, String) => Double, sign: js.Any => String, verify: (js.Any, String) => Boolean): Keygrip = {
+    inline def apply(index: (Any, String) => Double, sign: Any => String, verify: (Any, String) => Boolean): Keygrip = {
       val __obj = js.Dynamic.literal(index = js.Any.fromFunction2(index), sign = js.Any.fromFunction1(sign), verify = js.Any.fromFunction2(verify))
       __obj.asInstanceOf[Keygrip]
     }
     
     extension [Self <: Keygrip](x: Self) {
       
-      inline def setIndex(value: (js.Any, String) => Double): Self = StObject.set(x, "index", js.Any.fromFunction2(value))
+      inline def setIndex(value: (Any, String) => Double): Self = StObject.set(x, "index", js.Any.fromFunction2(value))
       
-      inline def setSign(value: js.Any => String): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
+      inline def setSign(value: Any => String): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
       
-      inline def setVerify(value: (js.Any, String) => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
+      inline def setVerify(value: (Any, String) => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
     }
   }
   

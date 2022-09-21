@@ -9,7 +9,7 @@ object imageControlMod {
   
   @JSImport("@wordpress/customize-browser/ImageControl", "ImageControl")
   @js.native
-  class ImageControl protected () extends UploadControl {
+  open class ImageControl protected () extends UploadControl {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     

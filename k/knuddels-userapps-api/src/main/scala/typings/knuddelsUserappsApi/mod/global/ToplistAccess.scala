@@ -6,30 +6,30 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-	 * @see https://developer.knuddels.de/docs/classes/ToplistAccess.html
-	 */
+  * @see https://developer.knuddels.de/docs/classes/ToplistAccess.html
+  */
 @JSGlobal("ToplistAccess")
 @js.native
-class ToplistAccess () extends StObject {
+open class ToplistAccess () extends StObject {
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/ToplistAccess.html#method_createOrUpdateToplist
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/ToplistAccess.html#method_createOrUpdateToplist
+    */
   def createOrUpdateToplist(userPersistenceNumberKey: java.lang.String, displayName: java.lang.String): Toplist = js.native
   def createOrUpdateToplist(userPersistenceNumberKey: java.lang.String, displayName: java.lang.String, parameters: Ascending): Toplist = js.native
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/ToplistAccess.html#method_getAllToplists
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/ToplistAccess.html#method_getAllToplists
+    */
   def getAllToplists(): js.Array[Toplist] = js.native
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/ToplistAccess.html#method_getToplist
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/ToplistAccess.html#method_getToplist
+    */
   def getToplist(userPersistenceNumberKey: java.lang.String): Toplist = js.native
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/ToplistAccess.html#method_removeToplist
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/ToplistAccess.html#method_removeToplist
+    */
   def removeToplist(toplist: Toplist): Unit = js.native
 }

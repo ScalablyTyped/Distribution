@@ -32,12 +32,11 @@ object media {
   @JSGlobal("chrome.cast.media.EditTracksInfoRequest")
   @js.native
   /**
-    * @param {Array<number>=} opt_activeTrackIds
-    * @param {chrome.cast.media.TextTrackStyle=} opt_textTrackStyle
-    * @constructor
+    * @param opt_activeTrackIds
+    * @param opt_textTrackStyle
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.EditTracksInfoRequest
     */
-  class EditTracksInfoRequest ()
+  open class EditTracksInfoRequest ()
     extends StObject
        with typings.chrome.chrome.cast.media.EditTracksInfoRequest {
     def this(activeTrackIds: js.Array[Double]) = this()
@@ -53,7 +52,7 @@ object media {
   
   @JSGlobal("chrome.cast.media.GenericMediaMetadata")
   @js.native
-  class GenericMediaMetadata ()
+  open class GenericMediaMetadata ()
     extends StObject
        with typings.chrome.chrome.cast.media.GenericMediaMetadata {
     
@@ -84,10 +83,9 @@ object media {
   @JSGlobal("chrome.cast.media.GetStatusRequest")
   @js.native
   /**
-    * @constructor
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.GetStatusRequest
     */
-  class GetStatusRequest ()
+  open class GetStatusRequest ()
     extends StObject
        with typings.chrome.chrome.cast.media.GetStatusRequest {
     
@@ -114,10 +112,13 @@ object media {
   @JSGlobal("chrome.cast.media.LiveSeekableRange")
   @js.native
   /**
-    * @constructor
+    * @param start
+    * @param end
+    * @param isMovingWindow
+    * @param isLiveDone
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.LiveSeekableRange
     */
-  class LiveSeekableRange ()
+  open class LiveSeekableRange ()
     extends StObject
        with typings.chrome.chrome.cast.media.LiveSeekableRange {
     def this(start: Double) = this()
@@ -139,12 +140,11 @@ object media {
   
   @JSGlobal("chrome.cast.media.LoadRequest")
   @js.native
-  class LoadRequest protected ()
+  open class LoadRequest protected ()
     extends StObject
        with typings.chrome.chrome.cast.media.LoadRequest {
     /**
-      * @param {!chrome.cast.media.MediaInfo} mediaInfo
-      * @constructor
+      * @param mediaInfo
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.LoadRequest
       */
     def this(mediaInfo: typings.chrome.chrome.cast.media.MediaInfo) = this()
@@ -167,13 +167,12 @@ object media {
   
   @JSGlobal("chrome.cast.media.Media")
   @js.native
-  class Media protected ()
+  open class Media protected ()
     extends StObject
        with typings.chrome.chrome.cast.media.Media {
     /**
-      * @param {string} sessionId
-      * @param {number} mediaSessionId
-      * @constructor
+      * @param sessionId
+      * @param mediaSessionId
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.Media
       */
     def this(sessionId: String, mediaSessionId: Double) = this()
@@ -182,7 +181,7 @@ object media {
     var activeTrackIds: js.Array[Double] = js.native
     
     /**
-      * @param {function(boolean)} listener
+      * @param listener
       */
     /* CompleteClass */
     override def addUpdateListener(listener: js.Function1[/* isAlive */ Boolean, Unit]): Unit = js.native
@@ -198,9 +197,9 @@ object media {
     var customData: js.Object = js.native
     
     /**
-      * @param {!chrome.cast.media.EditTracksInfoRequest} editTracksInfoRequest
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param editTracksInfoRequest
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def editTracksInfo(
@@ -210,16 +209,16 @@ object media {
     ): Unit = js.native
     
     /**
-      * @return {number}
+      * @return
       * @suppress {deprecated} Uses currentTime member to compute estimated time.
       */
     /* CompleteClass */
     override def getEstimatedTime(): Double = js.native
     
     /**
-      * @param {chrome.cast.media.GetStatusRequest} getStatusRequest
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param getStatusRequest
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def getStatus(
@@ -244,9 +243,9 @@ object media {
     var mediaSessionId: Double = js.native
     
     /**
-      * @param {chrome.cast.media.PauseRequest} pauseRequest
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param pauseRequest
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def pause(
@@ -256,9 +255,9 @@ object media {
     ): Unit = js.native
     
     /**
-      * @param {chrome.cast.media.PlayRequest} playRequest
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param playRequest
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def play(
@@ -277,9 +276,9 @@ object media {
     var preloadedItemId: Double = js.native
     
     /**
-      * @param {!chrome.cast.media.QueueItem} item
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param item
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def queueAppendItem(
@@ -289,9 +288,9 @@ object media {
     ): Unit = js.native
     
     /**
-      * @param {!chrome.cast.media.QueueInsertItemsRequest} queueInsertItemsRequest
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param queueInsertItemsRequest
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def queueInsertItems(
@@ -301,9 +300,9 @@ object media {
     ): Unit = js.native
     
     /**
-      * @param {!number} itemId
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param itemId
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def queueJumpToItem(
@@ -313,10 +312,10 @@ object media {
     ): Unit = js.native
     
     /**
-      * @param {!number} itemId
-      * @param {!number} newIndex
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param itemId
+      * @param newIndex
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def queueMoveItemToNewIndex(
@@ -327,8 +326,8 @@ object media {
     ): Unit = js.native
     
     /**
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def queueNext(
@@ -337,8 +336,8 @@ object media {
     ): Unit = js.native
     
     /**
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def queuePrev(
@@ -347,9 +346,9 @@ object media {
     ): Unit = js.native
     
     /**
-      * @param {!number} itemId
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param itemId
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def queueRemoveItem(
@@ -359,9 +358,9 @@ object media {
     ): Unit = js.native
     
     /**
-      * @param {!chrome.cast.media.QueueReorderItemsRequest} queueReorderItemsRequest
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param queueReorderItemsRequest
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def queueReorderItems(
@@ -371,9 +370,9 @@ object media {
     ): Unit = js.native
     
     /**
-      * @param {!chrome.cast.media.RepeatMode} repeatMode
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param repeatMode
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def queueSetRepeatMode(
@@ -383,9 +382,9 @@ object media {
     ): Unit = js.native
     
     /**
-      * @param {!chrome.cast.media.QueueUpdateItemsRequest} queueUpdateItemsRequest
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param queueUpdateItemsRequest
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def queueUpdateItems(
@@ -395,7 +394,7 @@ object media {
     ): Unit = js.native
     
     /**
-      * @param {function(boolean)} listener
+      * @param listener
       */
     /* CompleteClass */
     override def removeUpdateListener(listener: js.Function1[/* isAlive */ Boolean, Unit]): Unit = js.native
@@ -404,9 +403,9 @@ object media {
     var repeatMode: RepeatMode = js.native
     
     /**
-      * @param {!chrome.cast.media.SeekRequest} seekRequest
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param seekRequest
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def seek(
@@ -419,9 +418,9 @@ object media {
     var sessionId: String = js.native
     
     /**
-      * @param {!chrome.cast.media.VolumeRequest} volumeRequest
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param volumeRequest
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def setVolume(
@@ -431,9 +430,9 @@ object media {
     ): Unit = js.native
     
     /**
-      * @param {chrome.cast.media.StopRequest} stopRequest
-      * @param {function()} successCallback
-      * @param {function(!chrome.cast.Error)} errorCallback
+      * @param stopRequest
+      * @param successCallback
+      * @param errorCallback
       */
     /* CompleteClass */
     override def stop(
@@ -446,8 +445,8 @@ object media {
     var supportedMediaCommands: js.Array[MediaCommand] = js.native
     
     /**
-      * @param {!chrome.cast.media.MediaCommand} command
-      * @return {boolean}
+      * @param command
+      * @return whether or not the receiver supports the given chrome.cast.media.MediaCommand
       */
     /* CompleteClass */
     override def supportsCommand(command: MediaCommand): Boolean = js.native
@@ -474,13 +473,12 @@ object media {
   
   @JSGlobal("chrome.cast.media.MediaInfo")
   @js.native
-  class MediaInfo protected ()
+  open class MediaInfo protected ()
     extends StObject
        with typings.chrome.chrome.cast.media.MediaInfo {
     /**
-      * @param {string} contentId
-      * @param {string} contentType
-      * @constructor
+      * @param contentId
+      * @param contentType
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.MediaInfo
       */
     def this(contentId: String, contentType: String) = this()
@@ -498,7 +496,7 @@ object media {
     var duration: Double = js.native
     
     /* CompleteClass */
-    var metadata: js.Any = js.native
+    var metadata: Any = js.native
     
     /* CompleteClass */
     var streamType: StreamType = js.native
@@ -531,10 +529,9 @@ object media {
   @JSGlobal("chrome.cast.media.MovieMediaMetadata")
   @js.native
   /**
-    * @constructor
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.MovieMediaMetadata
     */
-  class MovieMediaMetadata ()
+  open class MovieMediaMetadata ()
     extends StObject
        with typings.chrome.chrome.cast.media.MovieMediaMetadata {
     
@@ -568,10 +565,9 @@ object media {
   @JSGlobal("chrome.cast.media.MusicTrackMediaMetadata")
   @js.native
   /**
-    * @constructor
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.MusicTrackMediaMetadata
     */
-  class MusicTrackMediaMetadata ()
+  open class MusicTrackMediaMetadata ()
     extends StObject
        with typings.chrome.chrome.cast.media.MusicTrackMediaMetadata {
     
@@ -624,10 +620,9 @@ object media {
   @JSGlobal("chrome.cast.media.PauseRequest")
   @js.native
   /**
-    * @constructor
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.PauseRequest
     */
-  class PauseRequest ()
+  open class PauseRequest ()
     extends StObject
        with typings.chrome.chrome.cast.media.PauseRequest {
     
@@ -638,10 +633,9 @@ object media {
   @JSGlobal("chrome.cast.media.PhotoMediaMetadata")
   @js.native
   /**
-    * @constructor
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.PhotoMediaMetadata
     */
-  class PhotoMediaMetadata ()
+  open class PhotoMediaMetadata ()
     extends StObject
        with typings.chrome.chrome.cast.media.PhotoMediaMetadata {
     
@@ -683,10 +677,9 @@ object media {
   @JSGlobal("chrome.cast.media.PlayRequest")
   @js.native
   /**
-    * @constructor
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.PlayRequest
     */
-  class PlayRequest ()
+  open class PlayRequest ()
     extends StObject
        with typings.chrome.chrome.cast.media.PlayRequest {
     
@@ -712,12 +705,11 @@ object media {
   
   @JSGlobal("chrome.cast.media.QueueInsertItemsRequest")
   @js.native
-  class QueueInsertItemsRequest protected ()
+  open class QueueInsertItemsRequest protected ()
     extends StObject
        with typings.chrome.chrome.cast.media.QueueInsertItemsRequest {
     /**
-      * @param {!Array<chrome.cast.media.QueueItem>}
-      * @constructor
+      * @param itemsToInsert
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueInsertItemsRequest
       */
     def this(itemsToInsert: js.Array[typings.chrome.chrome.cast.media.QueueItem]) = this()
@@ -734,12 +726,11 @@ object media {
   
   @JSGlobal("chrome.cast.media.QueueItem")
   @js.native
-  class QueueItem protected ()
+  open class QueueItem protected ()
     extends StObject
        with typings.chrome.chrome.cast.media.QueueItem {
     /**
-      * @param {!chrome.cast.media.MediaInfo} mediaInfo
-      * @constructor
+      * @param mediaInfo
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueItem
       */
     def this(mediaInfo: typings.chrome.chrome.cast.media.MediaInfo) = this()
@@ -768,12 +759,11 @@ object media {
   
   @JSGlobal("chrome.cast.media.QueueLoadRequest")
   @js.native
-  class QueueLoadRequest protected ()
+  open class QueueLoadRequest protected ()
     extends StObject
        with typings.chrome.chrome.cast.media.QueueLoadRequest {
     /**
-      * @param {!Array<chrome.cast.media.QueueItem>} items
-      * @constructor
+      * @param items
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueLoadRequest
       */
     def this(items: js.Array[typings.chrome.chrome.cast.media.QueueItem]) = this()
@@ -793,12 +783,11 @@ object media {
   
   @JSGlobal("chrome.cast.media.QueueRemoveItemsRequest")
   @js.native
-  class QueueRemoveItemsRequest protected ()
+  open class QueueRemoveItemsRequest protected ()
     extends StObject
        with typings.chrome.chrome.cast.media.QueueRemoveItemsRequest {
     /**
-      * @param {!Array<number>}
-      * @constructor
+      * @param itemIdsToRemove
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueRemoveItemsRequest
       */
     def this(itemIdsToRemove: js.Array[Double]) = this()
@@ -812,12 +801,11 @@ object media {
   
   @JSGlobal("chrome.cast.media.QueueReorderItemsRequest")
   @js.native
-  class QueueReorderItemsRequest protected ()
+  open class QueueReorderItemsRequest protected ()
     extends StObject
        with typings.chrome.chrome.cast.media.QueueReorderItemsRequest {
     /**
-      * @param {!Array<number>}
-      * @constructor
+      * @param itemIdsToReorder
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueReorderItemsRequest
       */
     def this(itemIdsToReorder: js.Array[Double]) = this()
@@ -834,12 +822,11 @@ object media {
   
   @JSGlobal("chrome.cast.media.QueueUpdateItemsRequest")
   @js.native
-  class QueueUpdateItemsRequest protected ()
+  open class QueueUpdateItemsRequest protected ()
     extends StObject
        with typings.chrome.chrome.cast.media.QueueUpdateItemsRequest {
     /**
-      * @param {!Array<chrome.cast.media.QueueItem>}
-      * @constructor
+      * @param itemsToUpdate
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueUpdateItemsRequest
       */
     def this(itemsToUpdate: js.Array[typings.chrome.chrome.cast.media.QueueItem]) = this()
@@ -882,10 +869,9 @@ object media {
   @JSGlobal("chrome.cast.media.SeekRequest")
   @js.native
   /**
-    * @constructor
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.SeekRequest
     */
-  class SeekRequest ()
+  open class SeekRequest ()
     extends StObject
        with typings.chrome.chrome.cast.media.SeekRequest {
     
@@ -902,10 +888,9 @@ object media {
   @JSGlobal("chrome.cast.media.StopRequest")
   @js.native
   /**
-    * @constructor
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.StopRequest
     */
-  class StopRequest ()
+  open class StopRequest ()
     extends StObject
        with typings.chrome.chrome.cast.media.StopRequest {
     
@@ -986,10 +971,9 @@ object media {
   @JSGlobal("chrome.cast.media.TextTrackStyle")
   @js.native
   /**
-    * @constructor
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.TextTrackStyle
     */
-  class TextTrackStyle ()
+  open class TextTrackStyle ()
     extends StObject
        with typings.chrome.chrome.cast.media.TextTrackStyle {
     
@@ -1064,13 +1048,12 @@ object media {
   
   @JSGlobal("chrome.cast.media.Track")
   @js.native
-  class Track protected ()
+  open class Track protected ()
     extends StObject
        with typings.chrome.chrome.cast.media.Track {
     /**
-      * @param {number} trackId
-      * @param {!chrome.cast.media.TrackType} trackType
-      * @constructor
+      * @param trackId
+      * @param trackType
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.Track
       */
     def this(trackId: Double, trackType: TrackType) = this()
@@ -1117,10 +1100,9 @@ object media {
   @JSGlobal("chrome.cast.media.TvShowMediaMetadata")
   @js.native
   /**
-    * @constructor
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.TvShowMediaMetadata
     */
-  class TvShowMediaMetadata ()
+  open class TvShowMediaMetadata ()
     extends StObject
        with typings.chrome.chrome.cast.media.TvShowMediaMetadata {
     
@@ -1168,12 +1150,11 @@ object media {
   
   @JSGlobal("chrome.cast.media.VolumeRequest")
   @js.native
-  class VolumeRequest protected ()
+  open class VolumeRequest protected ()
     extends StObject
        with typings.chrome.chrome.cast.media.VolumeRequest {
     /**
-      * @param {!chrome.cast.Volume} volume
-      * @constructor
+      * @param volume
       * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.VolumeRequest
       */
     def this(volume: typings.chrome.chrome.cast.Volume) = this()
@@ -1186,7 +1167,6 @@ object media {
   }
   
   /**
-    * @namespace
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.timeout
     */
   object timeout {

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetReservationUtilizationResponse extends StObject {
   
   /**
-    * The token for the next set of retrievable results. AWS provides the token when the response from a previous call has more results than the maximum page size.
+    * The token for the next set of retrievable results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size.
     */
   var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
   
   /**
-    * The total amount of time that you used your RIs.
+    * The total amount of time that you used your Reserved Instances (RIs).
     */
   var Total: js.UndefOr[ReservationAggregates] = js.undefined
   
   /**
-    * The amount of time that you used your RIs.
+    * The amount of time that you used your Reserved Instances (RIs).
     */
   var UtilizationsByTime: typings.awsSdk.costexplorerMod.UtilizationsByTime
 }
@@ -40,6 +40,6 @@ object GetReservationUtilizationResponse {
     
     inline def setUtilizationsByTime(value: UtilizationsByTime): Self = StObject.set(x, "UtilizationsByTime", value.asInstanceOf[js.Any])
     
-    inline def setUtilizationsByTimeVarargs(value: UtilizationByTime*): Self = StObject.set(x, "UtilizationsByTime", js.Array(value :_*))
+    inline def setUtilizationsByTimeVarargs(value: UtilizationByTime*): Self = StObject.set(x, "UtilizationsByTime", js.Array(value*))
   }
 }

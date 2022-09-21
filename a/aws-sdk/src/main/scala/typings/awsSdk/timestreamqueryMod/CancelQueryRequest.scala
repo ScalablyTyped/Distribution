@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CancelQueryRequest extends StObject {
   
   /**
-    *  The id of the query that needs to be cancelled. QueryID is returned as part of QueryResult. 
+    *  The ID of the query that needs to be cancelled. QueryID is returned as part of the query result. 
     */
   var QueryId: typings.awsSdk.timestreamqueryMod.QueryId
 }

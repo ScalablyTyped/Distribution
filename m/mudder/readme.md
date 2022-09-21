@@ -1,7 +1,7 @@
 
 # Scala.js typings for mudder
 
-Typings are for version 1.0
+Typings are for version 2.1
 
 ## Library description:
 Find lexicographical points between strings
@@ -11,9 +11,9 @@ Find lexicographical points between strings
 | Full name          | mudder |
 | Keywords           | string, mean, lexicographical, distance, number, radix, base |
 | # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 46345 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 9307.666666666666 |
+| # stars            | 80.0 |
 
 ## Links
 - [Homepage](https://github.com/fasiha/mudderjs#readme)

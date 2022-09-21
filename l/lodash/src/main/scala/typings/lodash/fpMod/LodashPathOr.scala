@@ -11,32 +11,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashPathOr extends StObject {
   
-  def apply(defaultValue: js.Any): LodashPathOr7x1 = js.native
-  def apply(defaultValue: js.Any, path: PropertyPath): LodashPathOr7x3 = js.native
-  def apply(defaultValue: js.Any, path: PropertyPath, `object`: js.Any): js.Any = js.native
-  def apply(defaultValue: js.Any, path: __, `object`: js.Any): LodashPathOr7x5 = js.native
+  def apply(defaultValue: Any): LodashPathOr7x1 = js.native
+  def apply(defaultValue: Any, path: PropertyPath): LodashPathOr7x3 = js.native
+  def apply(defaultValue: Any, path: PropertyPath, `object`: Any): Any = js.native
+  def apply(defaultValue: Any, path: __, `object`: Any): LodashPathOr7x5 = js.native
   def apply(defaultValue: __, path: Double): LodashPathOr5x2 = js.native
   def apply(defaultValue: __, path: PropertyPath): LodashPathOr6x6 = js.native
-  def apply(defaultValue: __, path: PropertyPath, `object`: js.Any): LodashPathOr7x6 = js.native
+  def apply(defaultValue: __, path: PropertyPath, `object`: Any): LodashPathOr7x6 = js.native
   def apply(defaultValue: __, path: __): LodashPathOr6x4 = js.native
-  def apply(defaultValue: __, path: __, `object`: js.Any): LodashPathOr7x4 = js.native
-  def apply[TDefault](defaultValue: TDefault): LodashPathOr1x1[TDefault] = js.native
+  def apply(defaultValue: __, path: __, `object`: Any): LodashPathOr7x4 = js.native
   def apply[TDefault](defaultValue: TDefault, path: Double): LodashPathOr5x3[TDefault] = js.native
-  def apply[TDefault](defaultValue: TDefault, path: PropertyPath): TDefault = js.native
   def apply[TDefault](defaultValue: TDefault, path: __): LodashPathOr6x5[TDefault] = js.native
   def apply[T](defaultValue: __, path: Double, `object`: NumericDictionary[T]): LodashPathOr5x6[T] = js.native
-  def apply[TObject /* <: js.Object */](defaultValue: __, path: __, `object`: TObject): LodashPathOr1x4[TObject] = js.native
   def apply[T](defaultValue: __, path: __, `object`: NumericDictionary[T]): LodashPathOr5x4[T] = js.native
   def apply[T, TDefault](defaultValue: TDefault, path: Double, `object`: NumericDictionary[T]): T | TDefault = js.native
-  def apply[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: __, `object`: TObject): LodashPathOr1x5[TObject, TDefault] = js.native
   def apply[T, TDefault](defaultValue: TDefault, path: __, `object`: NumericDictionary[T]): LodashPathOr5x5[T, TDefault] = js.native
-  def apply[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ String */](defaultValue: __, path: TKey, `object`: TObject): LodashPathOr1x6[TObject, TKey] = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ String */](defaultValue: __, path: js.Array[TKey]): LodashPathOr1x2[TObject, TKey] = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ String */](defaultValue: __, path: js.Array[TKey], `object`: TObject): LodashPathOr1x6[TObject, TKey] = js.native
-  def apply[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ String */, TDefault](defaultValue: TDefault, path: TKey, `object`: TObject): (Exclude[
-    /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any, 
-    Unit
-  ]) | TDefault = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ String */, TDefault](defaultValue: TDefault, path: js.Array[TKey]): LodashPathOr1x3[TObject, TKey, TDefault] = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ String */, TDefault](defaultValue: TDefault, path: js.Array[TKey], `object`: TObject): (Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any, 

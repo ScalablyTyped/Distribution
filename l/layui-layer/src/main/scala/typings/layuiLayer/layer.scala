@@ -58,7 +58,7 @@ object layer {
       
       inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
       
-      inline def setExtendVarargs(value: String*): Self = StObject.set(x, "extend", js.Array(value :_*))
+      inline def setExtendVarargs(value: String*): Self = StObject.set(x, "extend", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -184,19 +184,9 @@ object layer {
       * @param options
       */
     def load(): Index = js.native
+    def load(icon: `0` | `1` | `2`): Index = js.native
+    def load(icon: `0` | `1` | `2`, options: Options): Index = js.native
     def load(icon: Unit, options: Options): Index = js.native
-    @JSName("load")
-    def load_0(icon: `0`): Index = js.native
-    @JSName("load")
-    def load_0(icon: `0`, options: Options): Index = js.native
-    @JSName("load")
-    def load_1(icon: `1`): Index = js.native
-    @JSName("load")
-    def load_1(icon: `1`, options: Options): Index = js.native
-    @JSName("load")
-    def load_2(icon: `2`): Index = js.native
-    @JSName("load")
-    def load_2(icon: `2`, options: Options): Index = js.native
     
     /**
       * 在自定义元素上触发最小化。
@@ -690,7 +680,7 @@ object layer {
       
       inline def setBtnUndefined: Self = StObject.set(x, "btn", js.undefined)
       
-      inline def setBtnVarargs(value: String*): Self = StObject.set(x, "btn", js.Array(value :_*))
+      inline def setBtnVarargs(value: String*): Self = StObject.set(x, "btn", js.Array(value*))
       
       inline def setCancel(value: (/* index */ Index, /* layero */ JQuery[HTMLElement]) => `false` | Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction2(value))
       
@@ -862,7 +852,7 @@ object layer {
       
       inline def setData(value: js.Array[PhotosDataItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: PhotosDataItem*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: PhotosDataItem*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -1034,7 +1024,7 @@ object layer {
       
       inline def setTab(value: js.Array[TabItem]): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
       
-      inline def setTabVarargs(value: TabItem*): Self = StObject.set(x, "tab", js.Array(value :_*))
+      inline def setTabVarargs(value: TabItem*): Self = StObject.set(x, "tab", js.Array(value*))
     }
   }
   

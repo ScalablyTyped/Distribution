@@ -19,6 +19,10 @@ object dateFnsLocaleMod {
   @js.native
   val arDZ: Locale = js.native
   
+  @JSImport("date-fns/locale", "arEG")
+  @js.native
+  val arEG: Locale = js.native
+  
   @JSImport("date-fns/locale", "arMA")
   @js.native
   val arMA: Locale = js.native
@@ -26,6 +30,10 @@ object dateFnsLocaleMod {
   @JSImport("date-fns/locale", "arSA")
   @js.native
   val arSA: Locale = js.native
+  
+  @JSImport("date-fns/locale", "arTN")
+  @js.native
+  val arTN: Locale = js.native
   
   @JSImport("date-fns/locale", "az")
   @js.native
@@ -35,6 +43,10 @@ object dateFnsLocaleMod {
   @js.native
   val be: Locale = js.native
   
+  @JSImport("date-fns/locale", "beTarask")
+  @js.native
+  val beTarask: Locale = js.native
+  
   @JSImport("date-fns/locale", "bg")
   @js.native
   val bg: Locale = js.native
@@ -42,6 +54,10 @@ object dateFnsLocaleMod {
   @JSImport("date-fns/locale", "bn")
   @js.native
   val bn: Locale = js.native
+  
+  @JSImport("date-fns/locale", "bs")
+  @js.native
+  val bs: Locale = js.native
   
   @JSImport("date-fns/locale", "ca")
   @js.native
@@ -63,6 +79,10 @@ object dateFnsLocaleMod {
   @js.native
   val de: Locale = js.native
   
+  @JSImport("date-fns/locale", "deAT")
+  @js.native
+  val deAT: Locale = js.native
+  
   @JSImport("date-fns/locale", "el")
   @js.native
   val el: Locale = js.native
@@ -79,6 +99,10 @@ object dateFnsLocaleMod {
   @js.native
   val enGB: Locale = js.native
   
+  @JSImport("date-fns/locale", "enIE")
+  @js.native
+  val enIE: Locale = js.native
+  
   @JSImport("date-fns/locale", "enIN")
   @js.native
   val enIN: Locale = js.native
@@ -90,6 +114,10 @@ object dateFnsLocaleMod {
   @JSImport("date-fns/locale", "enUS")
   @js.native
   val enUS: Locale = js.native
+  
+  @JSImport("date-fns/locale", "enZA")
+  @js.native
+  val enZA: Locale = js.native
   
   @JSImport("date-fns/locale", "eo")
   @js.native
@@ -115,10 +143,6 @@ object dateFnsLocaleMod {
   @js.native
   val fi: Locale = js.native
   
-  @JSImport("date-fns/locale", "fil")
-  @js.native
-  val fil: Locale = js.native
-  
   @JSImport("date-fns/locale", "fr")
   @js.native
   val fr: Locale = js.native
@@ -130,6 +154,10 @@ object dateFnsLocaleMod {
   @JSImport("date-fns/locale", "frCH")
   @js.native
   val frCH: Locale = js.native
+  
+  @JSImport("date-fns/locale", "fy")
+  @js.native
+  val fy: Locale = js.native
   
   @JSImport("date-fns/locale", "gd")
   @js.native
@@ -155,6 +183,10 @@ object dateFnsLocaleMod {
   @js.native
   val hr: Locale = js.native
   
+  @JSImport("date-fns/locale", "ht")
+  @js.native
+  val ht: Locale = js.native
+  
   @JSImport("date-fns/locale", "hu")
   @js.native
   val hu: Locale = js.native
@@ -175,9 +207,17 @@ object dateFnsLocaleMod {
   @js.native
   val it: Locale = js.native
   
+  @JSImport("date-fns/locale", "itCH")
+  @js.native
+  val itCH: Locale = js.native
+  
   @JSImport("date-fns/locale", "ja")
   @js.native
   val ja: Locale = js.native
+  
+  @JSImport("date-fns/locale", "jaHira")
+  @js.native
+  val jaHira: Locale = js.native
   
   @JSImport("date-fns/locale", "ka")
   @js.native
@@ -186,6 +226,10 @@ object dateFnsLocaleMod {
   @JSImport("date-fns/locale", "kk")
   @js.native
   val kk: Locale = js.native
+  
+  @JSImport("date-fns/locale", "km")
+  @js.native
+  val km: Locale = js.native
   
   @JSImport("date-fns/locale", "kn")
   @js.native
@@ -211,6 +255,10 @@ object dateFnsLocaleMod {
   @js.native
   val mk: Locale = js.native
   
+  @JSImport("date-fns/locale", "mn")
+  @js.native
+  val mn: Locale = js.native
+  
   @JSImport("date-fns/locale", "ms")
   @js.native
   val ms: Locale = js.native
@@ -234,6 +282,10 @@ object dateFnsLocaleMod {
   @JSImport("date-fns/locale", "nn")
   @js.native
   val nn: Locale = js.native
+  
+  @JSImport("date-fns/locale", "oc")
+  @js.native
+  val oc: Locale = js.native
   
   @JSImport("date-fns/locale", "pl")
   @js.native
@@ -262,6 +314,10 @@ object dateFnsLocaleMod {
   @JSImport("date-fns/locale", "sl")
   @js.native
   val sl: Locale = js.native
+  
+  @JSImport("date-fns/locale", "sq")
+  @js.native
+  val sq: Locale = js.native
   
   @JSImport("date-fns/locale", "sr")
   @js.native
@@ -303,6 +359,10 @@ object dateFnsLocaleMod {
   @js.native
   val uz: Locale = js.native
   
+  @JSImport("date-fns/locale", "uzCyrl")
+  @js.native
+  val uzCyrl: Locale = js.native
+  
   @JSImport("date-fns/locale", "vi")
   @js.native
   val vi: Locale = js.native
@@ -310,6 +370,10 @@ object dateFnsLocaleMod {
   @JSImport("date-fns/locale", "zhCN")
   @js.native
   val zhCN: Locale = js.native
+  
+  @JSImport("date-fns/locale", "zhHK")
+  @js.native
+  val zhHK: Locale = js.native
   
   @JSImport("date-fns/locale", "zhTW")
   @js.native

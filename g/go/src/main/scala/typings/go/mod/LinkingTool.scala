@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.linkingTool, which you can modify.
   */
-class LinkingTool () extends LinkingBaseTool {
+open class LinkingTool () extends LinkingBaseTool {
   
   /**Gets or sets an optional node data object representing a link label, that is copied by .insertLink and added to the GraphLinksModel when creating a new Link. The value must be an Object or null.*/
-  var archetypeLabelNodeData: js.Any = js.native
+  var archetypeLabelNodeData: Any = js.native
   
   /**Gets or sets a data object that is copied by .insertLink and added to the GraphLinksModel when creating a new Link. The value must be an Object or null.*/
-  var archetypeLinkData: js.Any = js.native
+  var archetypeLinkData: Any = js.native
   
   /**Gets or sets the direction in which new links may be drawn.*/
   var direction: EnumValue = js.native

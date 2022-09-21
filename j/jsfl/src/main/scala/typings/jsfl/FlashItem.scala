@@ -13,13 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with FlashFontItem
      with FlashSoundItem {
   
-  def addData(name: String, `type`: String, data: js.Any): Unit
+  def addData(name: String, `type`: String, data: Any): Unit
   
   var allowSmoothing: Boolean
   
   def exportToFLV(fileURI: String): Boolean
   
-  def getData(name: String): js.Any
+  def getData(name: String): Any
   
   def hasData(name: String): Boolean
   
@@ -58,7 +58,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FlashItem {
   
   inline def apply(
-    addData: (String, String, js.Any) => Unit,
+    addData: (String, String, Any) => Unit,
     allowSmoothing: Boolean,
     bitRate: String,
     bitmap: Boolean,
@@ -76,7 +76,7 @@ object FlashItem {
     exportToFile: String => Boolean,
     fileLastModifiedDate: String,
     font: String,
-    getData: String => js.Any,
+    getData: String => Any,
     hasData: String => Boolean,
     isDefineFont4Symbol: Boolean,
     italic: Boolean,
@@ -114,13 +114,13 @@ object FlashItem {
   
   extension [Self <: FlashItem](x: Self) {
     
-    inline def setAddData(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "addData", js.Any.fromFunction3(value))
+    inline def setAddData(value: (String, String, Any) => Unit): Self = StObject.set(x, "addData", js.Any.fromFunction3(value))
     
     inline def setAllowSmoothing(value: Boolean): Self = StObject.set(x, "allowSmoothing", value.asInstanceOf[js.Any])
     
     inline def setExportToFLV(value: String => Boolean): Self = StObject.set(x, "exportToFLV", js.Any.fromFunction1(value))
     
-    inline def setGetData(value: String => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+    inline def setGetData(value: String => Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     
     inline def setHasData(value: String => Boolean): Self = StObject.set(x, "hasData", js.Any.fromFunction1(value))
     

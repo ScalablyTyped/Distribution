@@ -28,16 +28,16 @@ trait PageSize extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The maximum number of resources to return. If unspecified, at most 50 resources will be returned. The maximum value is 200; (higher values will be coerced to the maximum) */
+  /** The maximum number of resources to return. If unspecified, at most 50 resources will be returned. The maximum value is 200 (higher values will be coerced to the maximum). */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * A page token, received from a previous `ListWebDataStreams` call. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to
-    * `ListWebDataStreams` must match the call that provided the page token.
+    * A page token, received from a previous `ListGoogleAdsLinks` call. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to
+    * `ListGoogleAdsLinks` must match the call that provided the page token.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the parent property. For example, to list results of web streams under the property with Id 123: "properties/123" */
+  /** Required. Example format: properties/1234 */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

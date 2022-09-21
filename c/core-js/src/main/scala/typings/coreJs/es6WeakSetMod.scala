@@ -1,7 +1,6 @@
 package typings.coreJs
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Iterable
 import typings.std.WeakSet
 import typings.std.WeakSetConstructor
 import org.scalablytyped.runtime.StObject
@@ -13,10 +12,12 @@ object es6WeakSetMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("core-js/library/es6/weak-set", JSImport.Namespace)
   @js.native
-  class ^[T /* <: js.Object */] ()
+  /* standard es2015.collection */
+  open class ^[T /* <: js.Object */] ()
     extends StObject
        with WeakSet[T] {
-    def this(iterable: Iterable[T]) = this()
+    /* standard es2015.iterable */
+    def this(iterable: js.Iterable[T]) = this()
     def this(values: js.Array[T]) = this()
   }
   @JSImport("core-js/library/es6/weak-set", JSImport.Namespace)

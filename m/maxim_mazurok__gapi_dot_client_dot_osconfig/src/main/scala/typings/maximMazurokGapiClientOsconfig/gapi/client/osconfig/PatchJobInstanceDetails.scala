@@ -15,7 +15,7 @@ trait PatchJobInstanceDetails extends StObject {
   /** The unique identifier for the instance. This identifier is defined by the server. */
   var instanceSystemId: js.UndefOr[String] = js.undefined
   
-  /** The instance name in the form `projects/∗/zones/∗/instances/ *` */
+  /** The instance name in the form `projects/ *‍/zones/ *‍/instances/ *` */
   var name: js.UndefOr[String] = js.undefined
   
   /** Current state of instance patch. */

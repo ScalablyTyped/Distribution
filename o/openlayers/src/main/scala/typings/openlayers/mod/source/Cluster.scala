@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.Cluster")
 @js.native
-class Cluster protected () extends Vector {
+open class Cluster protected () extends Vector {
   /**
     * @classdesc
     * Layer source to cluster vector data. Works out of the box with point

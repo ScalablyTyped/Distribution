@@ -4,15 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A description of a test environment.
-  */
 trait SchemaTestEnvironmentCatalog extends StObject {
   
   /**
     * Supported Android devices.
     */
   var androidDeviceCatalog: js.UndefOr[SchemaAndroidDeviceCatalog] = js.undefined
+  
+  /**
+    * The IP blocks used by devices in the test environment.
+    */
+  var deviceIpBlockCatalog: js.UndefOr[SchemaDeviceIpBlockCatalog] = js.undefined
   
   /**
     * Supported iOS devices.
@@ -41,6 +43,10 @@ object SchemaTestEnvironmentCatalog {
     inline def setAndroidDeviceCatalog(value: SchemaAndroidDeviceCatalog): Self = StObject.set(x, "androidDeviceCatalog", value.asInstanceOf[js.Any])
     
     inline def setAndroidDeviceCatalogUndefined: Self = StObject.set(x, "androidDeviceCatalog", js.undefined)
+    
+    inline def setDeviceIpBlockCatalog(value: SchemaDeviceIpBlockCatalog): Self = StObject.set(x, "deviceIpBlockCatalog", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceIpBlockCatalogUndefined: Self = StObject.set(x, "deviceIpBlockCatalog", js.undefined)
     
     inline def setIosDeviceCatalog(value: SchemaIosDeviceCatalog): Self = StObject.set(x, "iosDeviceCatalog", value.asInstanceOf[js.Any])
     

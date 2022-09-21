@@ -128,18 +128,18 @@ object shimmeredDetailsListTypesMod {
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/ShimmeredDetailsList.types.IShimmeredDetailsListProps, 'theme'>> */
   trait IShimmeredDetailsListStyleProps extends StObject {
     
-    var theme: js.Any
+    var theme: Any
   }
   object IShimmeredDetailsListStyleProps {
     
-    inline def apply(theme: js.Any): IShimmeredDetailsListStyleProps = {
+    inline def apply(theme: Any): IShimmeredDetailsListStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IShimmeredDetailsListStyleProps]
     }
     
     extension [Self <: IShimmeredDetailsListStyleProps](x: Self) {
       
-      inline def setTheme(value: js.Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   

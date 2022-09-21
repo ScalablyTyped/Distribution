@@ -12,15 +12,11 @@ trait XMLNodesCollection extends StObject {
   /* private */ @JSName("InfoPath.XMLNodesCollection_typekey")
   var InfoPathDotXMLNodesCollection_typekey: XMLNodesCollection
   
-  def Item(varIndex: js.Any): IXMLDOMNode
+  def Item(varIndex: Any): IXMLDOMNode
 }
 object XMLNodesCollection {
   
-  inline def apply(
-    Count: Double,
-    InfoPathDotXMLNodesCollection_typekey: XMLNodesCollection,
-    Item: js.Any => IXMLDOMNode
-  ): XMLNodesCollection = {
+  inline def apply(Count: Double, InfoPathDotXMLNodesCollection_typekey: XMLNodesCollection, Item: Any => IXMLDOMNode): XMLNodesCollection = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.updateDynamic("InfoPath.XMLNodesCollection_typekey")(InfoPathDotXMLNodesCollection_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[XMLNodesCollection]
@@ -32,6 +28,6 @@ object XMLNodesCollection {
     
     inline def setInfoPathDotXMLNodesCollection_typekey(value: XMLNodesCollection): Self = StObject.set(x, "InfoPath.XMLNodesCollection_typekey", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => IXMLDOMNode): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => IXMLDOMNode): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

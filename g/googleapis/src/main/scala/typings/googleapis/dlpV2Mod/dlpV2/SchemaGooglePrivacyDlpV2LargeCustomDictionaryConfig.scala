@@ -4,14 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Configuration for a custom dictionary created from a data source of any
-  * size up to the maximum size defined in the
-  * [limits](https://cloud.google.com/dlp/limits) page. The artifacts of
-  * dictionary creation are stored in the specified Google Cloud Storage
-  * location. Consider using `CustomInfoType.Dictionary` for smaller
-  * dictionaries that satisfy the size requirements.
-  */
 trait SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfig extends StObject {
   
   /**
@@ -25,10 +17,7 @@ trait SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfig extends StObject {
   var cloudStorageFileSet: js.UndefOr[SchemaGooglePrivacyDlpV2CloudStorageFileSet] = js.undefined
   
   /**
-    * Location to store dictionary artifacts in Google Cloud Storage. These
-    * files will only be accessible by project owners and the DLP API. If any
-    * of these artifacts are modified, the dictionary is considered invalid and
-    * can no longer be used.
+    * Location to store dictionary artifacts in Cloud Storage. These files will only be accessible by project owners and the DLP API. If any of these artifacts are modified, the dictionary is considered invalid and can no longer be used.
     */
   var outputPath: js.UndefOr[SchemaGooglePrivacyDlpV2CloudStoragePath] = js.undefined
 }

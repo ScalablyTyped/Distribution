@@ -1,5 +1,6 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import typings.wechatMiniprogram.wechatMiniprogramStrings.error
 import typings.wechatMiniprogram.wechatMiniprogramStrings.loading
 import typings.wechatMiniprogram.wechatMiniprogramStrings.none
 import typings.wechatMiniprogram.wechatMiniprogramStrings.success
@@ -22,9 +23,10 @@ trait ShowToastOption extends StObject {
     *
     * 可选值：
     * - 'success': 显示成功图标，此时 title 文本最多显示 7 个汉字长度;
+    * - 'error': 显示失败图标，此时 title 文本最多显示 7 个汉字长度;
     * - 'loading': 显示加载图标，此时 title 文本最多显示 7 个汉字长度;
     * - 'none': 不显示图标，此时 title 文本最多可显示两行，[1.9.0](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html)及以上版本支持; */
-  var icon: js.UndefOr[success | loading | none] = js.undefined
+  var icon: js.UndefOr[success | error | loading | none] = js.undefined
   
   /** 自定义图标的本地路径，image 的优先级高于 icon
     *
@@ -61,7 +63,7 @@ object ShowToastOption {
     
     inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    inline def setIcon(value: success | loading | none): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: success | error | loading | none): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     

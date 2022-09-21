@@ -1,10 +1,12 @@
 package typings.phin
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.ClientRequestArgs
 import typings.phin.phinBooleans.`true`
 import typings.phin.phinStrings.json
 import typings.phin.phinStrings.none
+import typings.phin.phinStrings.string
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,18 +16,18 @@ object anon {
   
   trait Data extends StObject {
     
-    var data: ToString
+    var data: String | Buffer | js.Object
   }
   object Data {
     
-    inline def apply(data: ToString): Data = {
+    inline def apply(data: String | Buffer | js.Object): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: ToString): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String | Buffer | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,7 +55,7 @@ object anon {
     
     var core: js.UndefOr[ClientRequestArgs] = js.undefined
     
-    var data: ToString
+    var data: String | Buffer | js.Object
     
     var followRedirects: js.UndefOr[Boolean] = js.undefined
     
@@ -77,7 +79,7 @@ object anon {
   }
   object IWithDataIJSONResponseOpt {
     
-    inline def apply(data: ToString, url: String | URL): IWithDataIJSONResponseOpt = {
+    inline def apply(data: String | Buffer | js.Object, url: String | URL): IWithDataIJSONResponseOpt = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], parse = "json", url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWithDataIJSONResponseOpt]
     }
@@ -92,7 +94,7 @@ object anon {
       
       inline def setCoreUndefined: Self = StObject.set(x, "core", js.undefined)
       
-      inline def setData(value: ToString): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String | Buffer | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,7 @@ object anon {
     
     var core: js.UndefOr[ClientRequestArgs] = js.undefined
     
-    var data: ToString
+    var data: String | Buffer | js.Object
     
     var followRedirects: js.UndefOr[Boolean] = js.undefined
     
@@ -163,7 +165,7 @@ object anon {
   }
   object IWithDataIOptions {
     
-    inline def apply(data: ToString, url: String | URL): IWithDataIOptions = {
+    inline def apply(data: String | Buffer | js.Object, url: String | URL): IWithDataIOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWithDataIOptions]
     }
@@ -178,7 +180,7 @@ object anon {
       
       inline def setCoreUndefined: Self = StObject.set(x, "core", js.undefined)
       
-      inline def setData(value: ToString): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String | Buffer | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
       
@@ -227,7 +229,7 @@ object anon {
     
     var core: js.UndefOr[ClientRequestArgs] = js.undefined
     
-    var data: ToString
+    var data: String | Buffer | js.Object
     
     var followRedirects: js.UndefOr[Boolean] = js.undefined
     
@@ -249,7 +251,7 @@ object anon {
   }
   object IWithDataIStreamResponseO {
     
-    inline def apply(data: ToString, url: String | URL): IWithDataIStreamResponseO = {
+    inline def apply(data: String | Buffer | js.Object, url: String | URL): IWithDataIStreamResponseO = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], stream = true, url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWithDataIStreamResponseO]
     }
@@ -264,7 +266,7 @@ object anon {
       
       inline def setCoreUndefined: Self = StObject.set(x, "core", js.undefined)
       
-      inline def setData(value: ToString): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String | Buffer | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
       
@@ -291,6 +293,92 @@ object anon {
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
       inline def setStream(value: `true`): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      
+      inline def setUrl(value: String | URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined phin.phin.IWithData<phin.phin.IStringResponseOptions> */
+  trait IWithDataIStringResponseO extends StObject {
+    
+    var compression: js.UndefOr[Boolean] = js.undefined
+    
+    var core: js.UndefOr[ClientRequestArgs] = js.undefined
+    
+    var data: String | Buffer | js.Object
+    
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
+    
+    var headers: js.UndefOr[js.Object] = js.undefined
+    
+    var hostname: js.UndefOr[String] = js.undefined
+    
+    var method: js.UndefOr[String] = js.undefined
+    
+    var parse: string
+    
+    var path: js.UndefOr[String] = js.undefined
+    
+    var port: js.UndefOr[Double] = js.undefined
+    
+    var stream: js.UndefOr[Boolean] = js.undefined
+    
+    var timeout: js.UndefOr[Double] = js.undefined
+    
+    var url: String | URL
+  }
+  object IWithDataIStringResponseO {
+    
+    inline def apply(data: String | Buffer | js.Object, url: String | URL): IWithDataIStringResponseO = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], parse = "string", url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IWithDataIStringResponseO]
+    }
+    
+    extension [Self <: IWithDataIStringResponseO](x: Self) {
+      
+      inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      
+      inline def setCore(value: ClientRequestArgs): Self = StObject.set(x, "core", value.asInstanceOf[js.Any])
+      
+      inline def setCoreUndefined: Self = StObject.set(x, "core", js.undefined)
+      
+      inline def setData(value: String | Buffer | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
+      
+      inline def setFollowRedirectsUndefined: Self = StObject.set(x, "followRedirects", js.undefined)
+      
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      
+      inline def setParse(value: string): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      
+      inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -554,5 +642,89 @@ object anon {
     }
   }
   
-  trait ToString extends StObject
+  /* Inlined phin.phin.IWithForm<phin.phin.IStringResponseOptions> */
+  trait IWithFormIStringResponseO extends StObject {
+    
+    var compression: js.UndefOr[Boolean] = js.undefined
+    
+    var core: js.UndefOr[ClientRequestArgs] = js.undefined
+    
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
+    
+    var form: StringDictionary[String]
+    
+    var headers: js.UndefOr[js.Object] = js.undefined
+    
+    var hostname: js.UndefOr[String] = js.undefined
+    
+    var method: js.UndefOr[String] = js.undefined
+    
+    var parse: string
+    
+    var path: js.UndefOr[String] = js.undefined
+    
+    var port: js.UndefOr[Double] = js.undefined
+    
+    var stream: js.UndefOr[Boolean] = js.undefined
+    
+    var timeout: js.UndefOr[Double] = js.undefined
+    
+    var url: String | URL
+  }
+  object IWithFormIStringResponseO {
+    
+    inline def apply(form: StringDictionary[String], url: String | URL): IWithFormIStringResponseO = {
+      val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any], parse = "string", url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IWithFormIStringResponseO]
+    }
+    
+    extension [Self <: IWithFormIStringResponseO](x: Self) {
+      
+      inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      
+      inline def setCore(value: ClientRequestArgs): Self = StObject.set(x, "core", value.asInstanceOf[js.Any])
+      
+      inline def setCoreUndefined: Self = StObject.set(x, "core", js.undefined)
+      
+      inline def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
+      
+      inline def setFollowRedirectsUndefined: Self = StObject.set(x, "followRedirects", js.undefined)
+      
+      inline def setForm(value: StringDictionary[String]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      
+      inline def setParse(value: string): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      
+      inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      
+      inline def setUrl(value: String | URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
 }

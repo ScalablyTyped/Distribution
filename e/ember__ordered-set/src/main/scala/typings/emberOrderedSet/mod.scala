@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("@ember/ordered-set", JSImport.Default)
   @js.native
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with OrderedSet[T]
   /* static members */

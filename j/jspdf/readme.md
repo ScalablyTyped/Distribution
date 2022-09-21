@@ -1,7 +1,7 @@
 
 # Scala.js typings for jspdf
 
-Typings are for version 1.3
+Typings are for version 2.5.1
 
 ## Library description:
 PDF Document creation from JavaScript
@@ -10,10 +10,10 @@ PDF Document creation from JavaScript
 | ------------------ | :-------------: |
 | Full name          | jspdf |
 | Keywords           | pdf |
-| # releases         | 6 |
-| # dependents       | 338 |
-| # downloads        | 10542237 |
-| # stars            | 21 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 2804724.0 |
+| # stars            | 24617.0 |
 
 ## Links
 - [Homepage](https://github.com/mrrio/jspdf)
@@ -24,7 +24,7 @@ PDF Document creation from JavaScript
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

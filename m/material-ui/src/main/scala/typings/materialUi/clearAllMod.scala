@@ -10,10 +10,10 @@ object clearAllMod {
   
   @JSImport("material-ui/svg-icons/communication/clear-all", JSImport.Default)
   @js.native
-  class default () extends CommunicationClearAll
+  open class default () extends CommunicationClearAll
   
   @JSImport("material-ui/svg-icons/communication/clear-all", "CommunicationClearAll")
   @js.native
-  class CommunicationClearAll ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationClearAll ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

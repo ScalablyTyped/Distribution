@@ -1,9 +1,5 @@
 package typings.googleapis.chatV1Mod.chatV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,7 @@ trait ParamsResourceSpacesMessagesUpdate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Resource name, in the form "spaces/x/messages/x".  Example:
-    * spaces/AAAAMpdlehY/messages/UMxbHmzDlr4.UMxbHmzDlr4
+    * Resource name in the form `spaces/x/messages/x`. Example: `spaces/AAAAAAAAAAA/messages/BBBBBBBBBBB.BBBBBBBBBBB`
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -29,8 +19,7 @@ trait ParamsResourceSpacesMessagesUpdate
   var requestBody: js.UndefOr[SchemaMessage] = js.undefined
   
   /**
-    * Required. The field paths to be updated.  Currently supported field
-    * paths: "text", "cards".
+    * Required. The field paths to update. Separate multiple values with commas. Currently supported field paths: - text - cards (Requires [service account authentication](/chat/api/guides/auth/service-accounts).)
     */
   var updateMask: js.UndefOr[String] = js.undefined
 }
@@ -42,10 +31,6 @@ object ParamsResourceSpacesMessagesUpdate {
   }
   
   extension [Self <: ParamsResourceSpacesMessagesUpdate](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

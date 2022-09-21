@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.ZoomControl")
 @js.native
-class ZoomControl ()
+open class ZoomControl ()
   extends StObject
      with typings.bmapgl.BMapGL.Control {
   def this(opts: ZoomControlOptions) = this()

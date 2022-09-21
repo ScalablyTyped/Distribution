@@ -2,7 +2,7 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FC
 import typings.semanticUiReact.semanticUiReactStrings.ascending
 import typings.semanticUiReact.semanticUiReactStrings.descending
 import typings.semanticUiReact.tableCellMod.StrictTableCellProps
@@ -14,7 +14,7 @@ object tableHeaderCellMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Table/TableHeaderCell", JSImport.Default)
   @js.native
-  val default: StatelessComponent[TableHeaderCellProps] = js.native
+  val default: FC[TableHeaderCellProps] = js.native
   
   trait StrictTableHeaderCellProps
     extends StObject
@@ -41,7 +41,7 @@ object tableHeaderCellMod extends Shortcut {
   trait TableHeaderCellProps
     extends StObject
        with StrictTableHeaderCellProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object TableHeaderCellProps {
     
     inline def apply(): TableHeaderCellProps = {
@@ -50,8 +50,8 @@ object tableHeaderCellMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[TableHeaderCellProps]
+  type _To = FC[TableHeaderCellProps]
   
   /* This means you don't have to write `default`, but can instead just say `tableHeaderCellMod.foo` */
-  override def _to: StatelessComponent[TableHeaderCellProps] = default
+  override def _to: FC[TableHeaderCellProps] = default
 }

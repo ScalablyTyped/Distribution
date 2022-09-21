@@ -3,7 +3,6 @@ package typings.fsJetpack.typesMod
 import typings.fsJetpack.fsJetpackStrings.dir
 import typings.fsJetpack.fsJetpackStrings.file
 import typings.fsJetpack.fsJetpackStrings.symlink
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,15 +11,17 @@ trait InspectResult extends StObject {
   
   var absolutePath: js.UndefOr[String] = js.undefined
   
-  var accessTime: js.UndefOr[Date] = js.undefined
+  var accessTime: js.UndefOr[js.Date] = js.undefined
   
-  var changeTime: js.UndefOr[Date] = js.undefined
+  var birthTime: js.UndefOr[js.Date] = js.undefined
+  
+  var changeTime: js.UndefOr[js.Date] = js.undefined
   
   var md5: js.UndefOr[String] = js.undefined
   
   var mode: js.UndefOr[Double] = js.undefined
   
-  var modifyTime: js.UndefOr[Date] = js.undefined
+  var modifyTime: js.UndefOr[js.Date] = js.undefined
   
   var name: String
   
@@ -48,11 +49,15 @@ object InspectResult {
     
     inline def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
     
-    inline def setAccessTime(value: Date): Self = StObject.set(x, "accessTime", value.asInstanceOf[js.Any])
+    inline def setAccessTime(value: js.Date): Self = StObject.set(x, "accessTime", value.asInstanceOf[js.Any])
     
     inline def setAccessTimeUndefined: Self = StObject.set(x, "accessTime", js.undefined)
     
-    inline def setChangeTime(value: Date): Self = StObject.set(x, "changeTime", value.asInstanceOf[js.Any])
+    inline def setBirthTime(value: js.Date): Self = StObject.set(x, "birthTime", value.asInstanceOf[js.Any])
+    
+    inline def setBirthTimeUndefined: Self = StObject.set(x, "birthTime", js.undefined)
+    
+    inline def setChangeTime(value: js.Date): Self = StObject.set(x, "changeTime", value.asInstanceOf[js.Any])
     
     inline def setChangeTimeUndefined: Self = StObject.set(x, "changeTime", js.undefined)
     
@@ -64,7 +69,7 @@ object InspectResult {
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setModifyTime(value: Date): Self = StObject.set(x, "modifyTime", value.asInstanceOf[js.Any])
+    inline def setModifyTime(value: js.Date): Self = StObject.set(x, "modifyTime", value.asInstanceOf[js.Any])
     
     inline def setModifyTimeUndefined: Self = StObject.set(x, "modifyTime", js.undefined)
     

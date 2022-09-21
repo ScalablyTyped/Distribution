@@ -22,10 +22,10 @@ object Received {
     
     inline def setReceived(value: js.Array[TransactionObject]): Self = StObject.set(x, "received", value.asInstanceOf[js.Any])
     
-    inline def setReceivedVarargs(value: TransactionObject*): Self = StObject.set(x, "received", js.Array(value :_*))
+    inline def setReceivedVarargs(value: TransactionObject*): Self = StObject.set(x, "received", js.Array(value*))
     
     inline def setSent(value: js.Array[TransactionObject]): Self = StObject.set(x, "sent", value.asInstanceOf[js.Any])
     
-    inline def setSentVarargs(value: TransactionObject*): Self = StObject.set(x, "sent", js.Array(value :_*))
+    inline def setSentVarargs(value: TransactionObject*): Self = StObject.set(x, "sent", js.Array(value*))
   }
 }

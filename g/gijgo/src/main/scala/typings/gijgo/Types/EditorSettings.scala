@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Editor
 trait EditorSettings extends StObject {
   
-  var changed: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var changed: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
   //Events
-  var changing: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var changing: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
   var height: js.UndefOr[Double | String] = js.undefined
   
@@ -31,11 +31,11 @@ object EditorSettings {
   
   extension [Self <: EditorSettings](x: Self) {
     
-    inline def setChanged(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "changed", js.Any.fromFunction1(value))
+    inline def setChanged(value: /* e */ Any => Any): Self = StObject.set(x, "changed", js.Any.fromFunction1(value))
     
     inline def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
     
-    inline def setChanging(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "changing", js.Any.fromFunction1(value))
+    inline def setChanging(value: /* e */ Any => Any): Self = StObject.set(x, "changing", js.Any.fromFunction1(value))
     
     inline def setChangingUndefined: Self = StObject.set(x, "changing", js.undefined)
     

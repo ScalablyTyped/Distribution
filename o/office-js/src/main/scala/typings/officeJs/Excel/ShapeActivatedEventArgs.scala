@@ -6,33 +6,33 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the shape that raised the activated event.
   *
-  * Provides information about the shape that raised the Activated event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait ShapeActivatedEventArgs extends StObject {
   
   /**
+    * Gets the ID of the activated shape.
     *
-    * Gets the id of the activated shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var shapeId: String
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var `type`: ShapeActivated
   
   /**
+    * Gets the ID of the worksheet in which the shape is activated.
     *
-    * Gets the id of the worksheet in which the shape is activated.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var worksheetId: String

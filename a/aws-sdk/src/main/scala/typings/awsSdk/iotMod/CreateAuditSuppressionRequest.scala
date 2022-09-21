@@ -9,7 +9,7 @@ trait CreateAuditSuppressionRequest extends StObject {
   var checkName: AuditCheckName
   
   /**
-    *  The epoch timestamp in seconds at which this suppression expires. 
+    *  Each audit supression must have a unique client request token. If you try to create a new audit suppression with the same token as one that already exists, an exception occurs. If you omit this value, Amazon Web Services SDKs will automatically generate a unique client request.
     */
   var clientRequestToken: ClientRequestToken
   
@@ -21,7 +21,7 @@ trait CreateAuditSuppressionRequest extends StObject {
   /**
     *  The epoch timestamp in seconds at which this suppression expires. 
     */
-  var expirationDate: js.UndefOr[Timestamp] = js.undefined
+  var expirationDate: js.UndefOr[js.Date] = js.undefined
   
   var resourceIdentifier: ResourceIdentifier
   
@@ -51,7 +51,7 @@ object CreateAuditSuppressionRequest {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     

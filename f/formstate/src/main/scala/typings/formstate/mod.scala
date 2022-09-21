@@ -15,14 +15,14 @@ object mod {
   
   @JSImport("formstate", "FieldState")
   @js.native
-  class FieldState[TValue] protected ()
+  open class FieldState[TValue] protected ()
     extends typings.formstate.fieldStateMod.FieldState[TValue] {
     def this(_initValue: TValue) = this()
   }
   
   @JSImport("formstate", "FormState")
   @js.native
-  class FormState[TValue /* <: ValidatableMapOrArray */] protected ()
+  open class FormState[TValue /* <: ValidatableMapOrArray */] protected ()
     extends typings.formstate.formStateMod.FormState[TValue] {
     def this(/**
       * SubItems can be any Validatable
@@ -32,7 +32,7 @@ object mod {
   
   @JSImport("formstate", "FormStateLazy")
   @js.native
-  class FormStateLazy[TValue /* <: ValidatableArray */] protected ()
+  open class FormStateLazy[TValue /* <: ValidatableArray */] protected ()
     extends typings.formstate.formStateLazyMod.FormStateLazy[TValue] {
     def this(/** It is a function as fields can change over time */
     getFields: js.Function0[TValue]) = this()

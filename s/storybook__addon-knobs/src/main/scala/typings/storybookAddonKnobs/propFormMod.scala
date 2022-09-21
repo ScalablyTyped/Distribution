@@ -12,7 +12,7 @@ object propFormMod {
   
   @JSImport("@storybook/addon-knobs/dist/components/PropForm", JSImport.Default)
   @js.native
-  class default () extends PropForm
+  open class default () extends PropForm
   /* static members */
   object default {
     
@@ -38,7 +38,7 @@ object propFormMod {
   
   @js.native
   trait PropForm
-    extends Component[PropFormProps, js.Object, js.Any] {
+    extends Component[PropFormProps, js.Object, Any] {
     
     def makeChangeHandler(name: String, `type`: String): js.Function1[/* value */ js.UndefOr[String], Unit] = js.native
   }
@@ -66,7 +66,7 @@ object propFormMod {
       
       inline def setKnobs(value: js.Array[KnobStoreKnob]): Self = StObject.set(x, "knobs", value.asInstanceOf[js.Any])
       
-      inline def setKnobsVarargs(value: KnobStoreKnob*): Self = StObject.set(x, "knobs", js.Array(value :_*))
+      inline def setKnobsVarargs(value: KnobStoreKnob*): Self = StObject.set(x, "knobs", js.Array(value*))
       
       inline def setOnFieldChange(value: KnobStoreKnob => Unit): Self = StObject.set(x, "onFieldChange", js.Any.fromFunction1(value))
       

@@ -12,32 +12,32 @@ trait IFormPanel
      with typings.senchaTouch.Ext.IPanel {
   
   /** [Config Option] (Object) */
-  var api: js.UndefOr[js.Any] = js.undefined
+  var api: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var baseParams: js.UndefOr[js.Any] = js.undefined
+  var baseParams: js.UndefOr[Any] = js.undefined
   
   /** [Method] A convenient method to disable all fields in this form
     * @param newDisabled Object
     * @returns Ext.form.Panel This form.
     */
-  var doSetDisabled: js.UndefOr[js.Function1[/* newDisabled */ js.UndefOr[js.Any], IPanel]] = js.undefined
+  var doSetDisabled: js.UndefOr[js.Function1[/* newDisabled */ js.UndefOr[Any], IPanel]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var enableSubmissionForm: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var enctype: js.UndefOr[js.Any] = js.undefined
+  var enctype: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns the value of api
     * @returns Object
     */
-  var getApi: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getApi: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of baseParams
     * @returns Object
     */
-  var getBaseParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getBaseParams: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of enableSubmissionForm
     * @returns Boolean
@@ -47,7 +47,7 @@ trait IFormPanel
   /** [Method] Returns the value of enctype
     * @returns Object
     */
-  var getEnctype: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getEnctype: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of method
     * @returns String
@@ -62,7 +62,7 @@ trait IFormPanel
   /** [Method] Returns the value of paramOrder
     * @returns String/String[]
     */
-  var getParamOrder: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getParamOrder: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of paramsAsHash
     * @returns Boolean
@@ -77,7 +77,7 @@ trait IFormPanel
   /** [Method] Returns the value of submitOnAction
     * @returns Object
     */
-  var getSubmitOnAction: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getSubmitOnAction: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of timeout
     * @returns Number
@@ -100,7 +100,7 @@ trait IFormPanel
     * @returns Object Object mapping field name to its value.
     */
   var getValues: js.UndefOr[
-    js.Function2[/* enabled */ js.UndefOr[Boolean], /* all */ js.UndefOr[Boolean], js.Any]
+    js.Function2[/* enabled */ js.UndefOr[Boolean], /* all */ js.UndefOr[Boolean], Any]
   ] = js.undefined
   
   /** [Method] Hides a previously shown wait mask See showMask
@@ -112,7 +112,7 @@ trait IFormPanel
     * @param options Object The configuration when loading this form. The following are the configurations when loading via Ajax only:
     * @returns Ext.data.Connection The request object.
     */
-  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IConnection]] = js.undefined
+  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], IConnection]] = js.undefined
   
   /** [Method] Loads matching fields from a model instance into this form
     * @param record Ext.data.Model The model instance.
@@ -133,7 +133,7 @@ trait IFormPanel
   var multipartDetection: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String/String[]) */
-  var paramOrder: js.UndefOr[js.Any] = js.undefined
+  var paramOrder: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var paramsAsHash: js.UndefOr[Boolean] = js.undefined
@@ -146,12 +146,12 @@ trait IFormPanel
   /** [Method] Sets the value of api
     * @param api Object The new value.
     */
-  var setApi: js.UndefOr[js.Function1[/* api */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setApi: js.UndefOr[js.Function1[/* api */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of baseParams
     * @param baseParams Object The new value.
     */
-  var setBaseParams: js.UndefOr[js.Function1[/* baseParams */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBaseParams: js.UndefOr[js.Function1[/* baseParams */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of enableSubmissionForm
     * @param enableSubmissionForm Boolean The new value.
@@ -161,7 +161,7 @@ trait IFormPanel
   /** [Method] Sets the value of enctype
     * @param enctype Object The new value.
     */
-  var setEnctype: js.UndefOr[js.Function1[/* enctype */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setEnctype: js.UndefOr[js.Function1[/* enctype */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of method
     * @param method String The new value.
@@ -176,7 +176,7 @@ trait IFormPanel
   /** [Method] Sets the value of paramOrder
     * @param paramOrder String/String[] The new value.
     */
-  var setParamOrder: js.UndefOr[js.Function1[/* paramOrder */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setParamOrder: js.UndefOr[js.Function1[/* paramOrder */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of paramsAsHash
     * @param paramsAsHash Boolean The new value.
@@ -198,7 +198,7 @@ trait IFormPanel
   /** [Method] Sets the value of submitOnAction
     * @param submitOnAction Object The new value.
     */
-  var setSubmitOnAction: js.UndefOr[js.Function1[/* submitOnAction */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setSubmitOnAction: js.UndefOr[js.Function1[/* submitOnAction */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of timeout
     * @param timeout Number The new value.
@@ -219,16 +219,14 @@ trait IFormPanel
     * @param values Object field name => value mapping object.
     * @returns Ext.form.Panel This form.
     */
-  var setValues: js.UndefOr[js.Function1[/* values */ js.UndefOr[js.Any], IPanel]] = js.undefined
+  var setValues: js.UndefOr[js.Function1[/* values */ js.UndefOr[Any], IPanel]] = js.undefined
   
   /** [Method] Shows a generic custom mask over a designated Element
     * @param cfg String/Object Either a string message or a configuration object supporting the following options: {  message : 'Please Wait',  cls : 'form-mask' }
     * @param target Object
     * @returns Ext.form.Panel This form
     */
-  var showMask: js.UndefOr[
-    js.Function2[/* cfg */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], IPanel]
-  ] = js.undefined
+  var showMask: js.UndefOr[js.Function2[/* cfg */ js.UndefOr[Any], /* target */ js.UndefOr[Any], IPanel]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var standardSubmit: js.UndefOr[Boolean] = js.undefined
@@ -237,10 +235,10 @@ trait IFormPanel
     * @param options Object The configuration when submitting this form. The following are the configurations when submitting via Ajax only:
     * @returns Ext.data.Connection The request object if the standardSubmit config is false. If the standardSubmit config is true, then the return value is undefined.
     */
-  var submit: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IConnection]] = js.undefined
+  var submit: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], IConnection]] = js.undefined
   
   /** [Config Option] (Object) */
-  var submitOnAction: js.UndefOr[js.Any] = js.undefined
+  var submitOnAction: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number) */
   var timeout: js.UndefOr[Double] = js.undefined
@@ -255,7 +253,7 @@ trait IFormPanel
   var waitMsgTarget: js.UndefOr[IElement] = js.undefined
   
   /** [Config Option] (Ext.XTemplate/String/String[]) */
-  var waitTpl: js.UndefOr[js.Any] = js.undefined
+  var waitTpl: js.UndefOr[Any] = js.undefined
 }
 object IFormPanel {
   
@@ -266,15 +264,15 @@ object IFormPanel {
   
   extension [Self <: IFormPanel](x: Self) {
     
-    inline def setApi(value: js.Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
     inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
-    inline def setBaseParams(value: js.Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
+    inline def setBaseParams(value: Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
     
     inline def setBaseParamsUndefined: Self = StObject.set(x, "baseParams", js.undefined)
     
-    inline def setDoSetDisabled(value: /* newDisabled */ js.UndefOr[js.Any] => IPanel): Self = StObject.set(x, "doSetDisabled", js.Any.fromFunction1(value))
+    inline def setDoSetDisabled(value: /* newDisabled */ js.UndefOr[Any] => IPanel): Self = StObject.set(x, "doSetDisabled", js.Any.fromFunction1(value))
     
     inline def setDoSetDisabledUndefined: Self = StObject.set(x, "doSetDisabled", js.undefined)
     
@@ -282,15 +280,15 @@ object IFormPanel {
     
     inline def setEnableSubmissionFormUndefined: Self = StObject.set(x, "enableSubmissionForm", js.undefined)
     
-    inline def setEnctype(value: js.Any): Self = StObject.set(x, "enctype", value.asInstanceOf[js.Any])
+    inline def setEnctype(value: Any): Self = StObject.set(x, "enctype", value.asInstanceOf[js.Any])
     
     inline def setEnctypeUndefined: Self = StObject.set(x, "enctype", js.undefined)
     
-    inline def setGetApi(value: () => js.Any): Self = StObject.set(x, "getApi", js.Any.fromFunction0(value))
+    inline def setGetApi(value: () => Any): Self = StObject.set(x, "getApi", js.Any.fromFunction0(value))
     
     inline def setGetApiUndefined: Self = StObject.set(x, "getApi", js.undefined)
     
-    inline def setGetBaseParams(value: () => js.Any): Self = StObject.set(x, "getBaseParams", js.Any.fromFunction0(value))
+    inline def setGetBaseParams(value: () => Any): Self = StObject.set(x, "getBaseParams", js.Any.fromFunction0(value))
     
     inline def setGetBaseParamsUndefined: Self = StObject.set(x, "getBaseParams", js.undefined)
     
@@ -298,7 +296,7 @@ object IFormPanel {
     
     inline def setGetEnableSubmissionFormUndefined: Self = StObject.set(x, "getEnableSubmissionForm", js.undefined)
     
-    inline def setGetEnctype(value: () => js.Any): Self = StObject.set(x, "getEnctype", js.Any.fromFunction0(value))
+    inline def setGetEnctype(value: () => Any): Self = StObject.set(x, "getEnctype", js.Any.fromFunction0(value))
     
     inline def setGetEnctypeUndefined: Self = StObject.set(x, "getEnctype", js.undefined)
     
@@ -310,7 +308,7 @@ object IFormPanel {
     
     inline def setGetMultipartDetectionUndefined: Self = StObject.set(x, "getMultipartDetection", js.undefined)
     
-    inline def setGetParamOrder(value: () => js.Any): Self = StObject.set(x, "getParamOrder", js.Any.fromFunction0(value))
+    inline def setGetParamOrder(value: () => Any): Self = StObject.set(x, "getParamOrder", js.Any.fromFunction0(value))
     
     inline def setGetParamOrderUndefined: Self = StObject.set(x, "getParamOrder", js.undefined)
     
@@ -322,7 +320,7 @@ object IFormPanel {
     
     inline def setGetStandardSubmitUndefined: Self = StObject.set(x, "getStandardSubmit", js.undefined)
     
-    inline def setGetSubmitOnAction(value: () => js.Any): Self = StObject.set(x, "getSubmitOnAction", js.Any.fromFunction0(value))
+    inline def setGetSubmitOnAction(value: () => Any): Self = StObject.set(x, "getSubmitOnAction", js.Any.fromFunction0(value))
     
     inline def setGetSubmitOnActionUndefined: Self = StObject.set(x, "getSubmitOnAction", js.undefined)
     
@@ -338,7 +336,7 @@ object IFormPanel {
     
     inline def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
     
-    inline def setGetValues(value: (/* enabled */ js.UndefOr[Boolean], /* all */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "getValues", js.Any.fromFunction2(value))
+    inline def setGetValues(value: (/* enabled */ js.UndefOr[Boolean], /* all */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "getValues", js.Any.fromFunction2(value))
     
     inline def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
     
@@ -346,7 +344,7 @@ object IFormPanel {
     
     inline def setHideMaskUndefined: Self = StObject.set(x, "hideMask", js.undefined)
     
-    inline def setLoad(value: /* options */ js.UndefOr[js.Any] => IConnection): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: /* options */ js.UndefOr[Any] => IConnection): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
     inline def setLoadModel(value: /* record */ js.UndefOr[IModel] => IPanel): Self = StObject.set(x, "loadModel", js.Any.fromFunction1(value))
     
@@ -366,7 +364,7 @@ object IFormPanel {
     
     inline def setMultipartDetectionUndefined: Self = StObject.set(x, "multipartDetection", js.undefined)
     
-    inline def setParamOrder(value: js.Any): Self = StObject.set(x, "paramOrder", value.asInstanceOf[js.Any])
+    inline def setParamOrder(value: Any): Self = StObject.set(x, "paramOrder", value.asInstanceOf[js.Any])
     
     inline def setParamOrderUndefined: Self = StObject.set(x, "paramOrder", js.undefined)
     
@@ -378,11 +376,11 @@ object IFormPanel {
     
     inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
-    inline def setSetApi(value: /* api */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setApi", js.Any.fromFunction1(value))
+    inline def setSetApi(value: /* api */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setApi", js.Any.fromFunction1(value))
     
     inline def setSetApiUndefined: Self = StObject.set(x, "setApi", js.undefined)
     
-    inline def setSetBaseParams(value: /* baseParams */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBaseParams", js.Any.fromFunction1(value))
+    inline def setSetBaseParams(value: /* baseParams */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBaseParams", js.Any.fromFunction1(value))
     
     inline def setSetBaseParamsUndefined: Self = StObject.set(x, "setBaseParams", js.undefined)
     
@@ -390,7 +388,7 @@ object IFormPanel {
     
     inline def setSetEnableSubmissionFormUndefined: Self = StObject.set(x, "setEnableSubmissionForm", js.undefined)
     
-    inline def setSetEnctype(value: /* enctype */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEnctype", js.Any.fromFunction1(value))
+    inline def setSetEnctype(value: /* enctype */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setEnctype", js.Any.fromFunction1(value))
     
     inline def setSetEnctypeUndefined: Self = StObject.set(x, "setEnctype", js.undefined)
     
@@ -402,7 +400,7 @@ object IFormPanel {
     
     inline def setSetMultipartDetectionUndefined: Self = StObject.set(x, "setMultipartDetection", js.undefined)
     
-    inline def setSetParamOrder(value: /* paramOrder */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setParamOrder", js.Any.fromFunction1(value))
+    inline def setSetParamOrder(value: /* paramOrder */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setParamOrder", js.Any.fromFunction1(value))
     
     inline def setSetParamOrderUndefined: Self = StObject.set(x, "setParamOrder", js.undefined)
     
@@ -418,7 +416,7 @@ object IFormPanel {
     
     inline def setSetStandardSubmitUndefined: Self = StObject.set(x, "setStandardSubmit", js.undefined)
     
-    inline def setSetSubmitOnAction(value: /* submitOnAction */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSubmitOnAction", js.Any.fromFunction1(value))
+    inline def setSetSubmitOnAction(value: /* submitOnAction */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setSubmitOnAction", js.Any.fromFunction1(value))
     
     inline def setSetSubmitOnActionUndefined: Self = StObject.set(x, "setSubmitOnAction", js.undefined)
     
@@ -434,11 +432,11 @@ object IFormPanel {
     
     inline def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
     
-    inline def setSetValues(value: /* values */ js.UndefOr[js.Any] => IPanel): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
+    inline def setSetValues(value: /* values */ js.UndefOr[Any] => IPanel): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
     
     inline def setSetValuesUndefined: Self = StObject.set(x, "setValues", js.undefined)
     
-    inline def setShowMask(value: (/* cfg */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => IPanel): Self = StObject.set(x, "showMask", js.Any.fromFunction2(value))
+    inline def setShowMask(value: (/* cfg */ js.UndefOr[Any], /* target */ js.UndefOr[Any]) => IPanel): Self = StObject.set(x, "showMask", js.Any.fromFunction2(value))
     
     inline def setShowMaskUndefined: Self = StObject.set(x, "showMask", js.undefined)
     
@@ -446,9 +444,9 @@ object IFormPanel {
     
     inline def setStandardSubmitUndefined: Self = StObject.set(x, "standardSubmit", js.undefined)
     
-    inline def setSubmit(value: /* options */ js.UndefOr[js.Any] => IConnection): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
+    inline def setSubmit(value: /* options */ js.UndefOr[Any] => IConnection): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
     
-    inline def setSubmitOnAction(value: js.Any): Self = StObject.set(x, "submitOnAction", value.asInstanceOf[js.Any])
+    inline def setSubmitOnAction(value: Any): Self = StObject.set(x, "submitOnAction", value.asInstanceOf[js.Any])
     
     inline def setSubmitOnActionUndefined: Self = StObject.set(x, "submitOnAction", js.undefined)
     
@@ -470,7 +468,7 @@ object IFormPanel {
     
     inline def setWaitMsgTargetUndefined: Self = StObject.set(x, "waitMsgTarget", js.undefined)
     
-    inline def setWaitTpl(value: js.Any): Self = StObject.set(x, "waitTpl", value.asInstanceOf[js.Any])
+    inline def setWaitTpl(value: Any): Self = StObject.set(x, "waitTpl", value.asInstanceOf[js.Any])
     
     inline def setWaitTplUndefined: Self = StObject.set(x, "waitTpl", js.undefined)
   }

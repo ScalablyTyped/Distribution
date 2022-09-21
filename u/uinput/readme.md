@@ -10,10 +10,10 @@ Linux uinput module
 | ------------------ | :-------------: |
 | Full name          | uinput |
 | Keywords           | uinput, linux, user, input |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 2163 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 59.333333333333336 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/santigimeno/node-uinput#readme)

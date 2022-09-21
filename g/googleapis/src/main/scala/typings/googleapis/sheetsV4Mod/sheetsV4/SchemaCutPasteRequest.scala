@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Moves data from the source to the destination.
-  */
 trait SchemaCutPasteRequest extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaCutPasteRequest extends StObject {
   var destination: js.UndefOr[SchemaGridCoordinate] = js.undefined
   
   /**
-    * What kind of data to paste.  All the source data will be cut, regardless
-    * of what is pasted.
+    * What kind of data to paste. All the source data will be cut, regardless of what is pasted.
     */
-  var pasteType: js.UndefOr[String] = js.undefined
+  var pasteType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The source data to cut.
@@ -39,6 +35,8 @@ object SchemaCutPasteRequest {
     inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     inline def setPasteType(value: String): Self = StObject.set(x, "pasteType", value.asInstanceOf[js.Any])
+    
+    inline def setPasteTypeNull: Self = StObject.set(x, "pasteType", null)
     
     inline def setPasteTypeUndefined: Self = StObject.set(x, "pasteType", js.undefined)
     

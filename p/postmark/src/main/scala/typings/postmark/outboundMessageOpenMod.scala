@@ -183,7 +183,7 @@ object outboundMessageOpenMod {
       
       inline def setOpens(value: js.Array[OpenEvent]): Self = StObject.set(x, "Opens", value.asInstanceOf[js.Any])
       
-      inline def setOpensVarargs(value: OpenEvent*): Self = StObject.set(x, "Opens", js.Array(value :_*))
+      inline def setOpensVarargs(value: OpenEvent*): Self = StObject.set(x, "Opens", js.Array(value*))
       
       inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }

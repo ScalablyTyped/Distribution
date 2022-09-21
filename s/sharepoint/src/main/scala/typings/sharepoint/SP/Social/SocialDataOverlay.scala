@@ -35,9 +35,9 @@ trait SocialDataOverlay
 object SocialDataOverlay {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_actorIndexes: () => js.Array[Double],
     get_index: () => Double,
     get_length: () => Double,

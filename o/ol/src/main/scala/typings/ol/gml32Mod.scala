@@ -9,7 +9,7 @@ object gml32Mod {
   
   @JSImport("ol/format/GML32", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.ol.gml3Mod.default {
     def this(opt_options: Options) = this()
   }

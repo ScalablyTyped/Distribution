@@ -70,7 +70,7 @@ object embeddingsSerializationMod {
       
       inline def setInput_lengthUndefined: Self = StObject.set(x, "input_length", js.undefined)
       
-      inline def setInput_lengthVarargs(value: Double*): Self = StObject.set(x, "input_length", js.Array(value :_*))
+      inline def setInput_lengthVarargs(value: Double*): Self = StObject.set(x, "input_length", js.Array(value*))
       
       inline def setMask_zero(value: Boolean): Self = StObject.set(x, "mask_zero", value.asInstanceOf[js.Any])
       

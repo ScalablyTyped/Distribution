@@ -28,39 +28,31 @@ trait ojButton[SP /* <: ojButtonSettableProperties */]
   
   def addEventListener(
     `type`: chromingChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[full | half | outlined], 
-      js.Any
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[full | half | outlined], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: chromingChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[full | half | outlined], 
-      js.Any
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[full | half | outlined], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: displayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: displayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_disabledChanged(
     `type`: disabledChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_disabledChanged(
     `type`: disabledChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -69,7 +61,7 @@ trait ojButton[SP /* <: ojButtonSettableProperties */]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojbuttonMod.ojButton.ojAction, 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -78,7 +70,7 @@ trait ojButton[SP /* <: ojButtonSettableProperties */]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojbuttonMod.ojButton.ojAction, 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -96,25 +88,22 @@ trait ojButton[SP /* <: ojButtonSettableProperties */]
   @JSName("getProperty")
   def getProperty_display(property: display): all | icons = js.native
   
-  var onChromingChanged: (js.Function1[/* event */ JetElementCustomEvent[full | half | outlined], js.Any]) | Null = js.native
+  var onChromingChanged: (js.Function1[/* event */ JetElementCustomEvent[full | half | outlined], Any]) | Null = js.native
   
-  var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
+  var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], Any]) | Null = js.native
   
-  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], js.Any]) | Null = js.native
+  var onDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[all | icons], Any]) | Null = js.native
   
-  var onOjAction: (js.Function1[/* event */ typings.oracleOraclejet.ojbuttonMod.ojButton.ojAction, js.Any]) | Null = js.native
+  var onOjAction: (js.Function1[/* event */ typings.oracleOraclejet.ojbuttonMod.ojButton.ojAction, Any]) | Null = js.native
   
   def setProperties(properties: ojButtonSettablePropertiesLenient): Unit = js.native
   
-  def setProperty(property: chroming, value: full): Unit = js.native
-  def setProperty(property: chroming, value: half): Unit = js.native
-  def setProperty(property: chroming, value: outlined): Unit = js.native
-  def setProperty(property: display, value: all): Unit = js.native
-  def setProperty(property: display, value: icons): Unit = js.native
+  def setProperty(property: chroming, value: full | half | outlined): Unit = js.native
+  def setProperty(property: display, value: all | icons): Unit = js.native
   @JSName("setProperty")
   def setProperty_disabled(property: disabled, value: Boolean): Unit = js.native
 }
 object ojButton {
   
-  type ojAction = CustomEvent[StringDictionary[js.Any]]
+  type ojAction = CustomEvent[StringDictionary[Any]]
 }

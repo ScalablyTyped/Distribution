@@ -8,13 +8,13 @@ trait UploadSuccessEvent
   extends StObject
      with UploadEvent {
   
-  var XMLHttpRequest: js.UndefOr[js.Any] = js.undefined
+  var XMLHttpRequest: js.UndefOr[Any] = js.undefined
   
-  var files: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var files: js.UndefOr[js.Array[Any]] = js.undefined
   
   var operation: js.UndefOr[String] = js.undefined
   
-  var response: js.UndefOr[js.Any] = js.undefined
+  var response: js.UndefOr[Any] = js.undefined
 }
 object UploadSuccessEvent {
   
@@ -25,21 +25,21 @@ object UploadSuccessEvent {
   
   extension [Self <: UploadSuccessEvent](x: Self) {
     
-    inline def setFiles(value: js.Array[js.Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: js.Any*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: Any*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
-    inline def setXMLHttpRequest(value: js.Any): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
+    inline def setXMLHttpRequest(value: Any): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
     
     inline def setXMLHttpRequestUndefined: Self = StObject.set(x, "XMLHttpRequest", js.undefined)
   }

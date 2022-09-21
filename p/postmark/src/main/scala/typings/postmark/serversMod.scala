@@ -24,7 +24,7 @@ object serversMod {
       
       inline def setServers(value: js.Array[Server]): Self = StObject.set(x, "Servers", value.asInstanceOf[js.Any])
       
-      inline def setServersVarargs(value: Server*): Self = StObject.set(x, "Servers", js.Array(value :_*))
+      inline def setServersVarargs(value: Server*): Self = StObject.set(x, "Servers", js.Array(value*))
       
       inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }

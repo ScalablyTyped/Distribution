@@ -1,6 +1,5 @@
 package typings.wonderJs
 
-import typings.std.Float32Array
 import typings.wonderJs.matrix3Mod.Matrix3
 import typings.wonderJs.quaternionMod.Quaternion
 import typings.wonderJs.vector3Mod.Vector3
@@ -13,16 +12,16 @@ object matrix4Mod {
   
   @JSImport("wonder.js/dist/es2015/math/Matrix4", "Matrix4")
   @js.native
-  class Matrix4 () extends StObject {
-    def this(mat: Float32Array) = this()
+  open class Matrix4 () extends StObject {
+    def this(mat: js.typedarray.Float32Array) = this()
     
     def applyMatrix(other: Matrix4): Matrix4 = js.native
     def applyMatrix(other: Matrix4, notChangeSelf: Boolean): Matrix4 = js.native
     
-    def cloneToArray(array: Float32Array): Matrix4 = js.native
-    def cloneToArray(array: Float32Array, offset: Double): Matrix4 = js.native
+    def cloneToArray(array: js.typedarray.Float32Array): Matrix4 = js.native
+    def cloneToArray(array: js.typedarray.Float32Array, offset: Double): Matrix4 = js.native
     
-    def getEulerAngles(): js.Any = js.native
+    def getEulerAngles(): Any = js.native
     
     def getRotation(): Quaternion = js.native
     
@@ -70,10 +69,10 @@ object matrix4Mod {
     
     def push(): Unit = js.native
     
-    def rotate(angle: js.Any, vector3: Vector3): Matrix4 = js.native
-    def rotate(angle: js.Any, x: js.Any, y: js.Any, z: js.Any): Matrix4 = js.native
+    def rotate(angle: Any, vector3: Vector3): Matrix4 = js.native
+    def rotate(angle: Any, x: Any, y: Any, z: Any): Matrix4 = js.native
     
-    def scale(x: js.Any, y: js.Any, z: js.Any): Matrix4 = js.native
+    def scale(x: Any, y: Any, z: Any): Matrix4 = js.native
     
     def set(
       initialM11: Double,
@@ -92,8 +91,8 @@ object matrix4Mod {
       initialM42: Double,
       initialM43: Double,
       initialM44: Double
-    ): js.Any = js.native
-    def set(matrix: Matrix4): js.Any = js.native
+    ): Any = js.native
+    def set(matrix: Matrix4): Any = js.native
     
     def setIdentity(): Matrix4 = js.native
     
@@ -116,17 +115,17 @@ object matrix4Mod {
     
     def setRotate(angle: Double, x: Double, y: Double, z: Double): Matrix4 = js.native
     
-    def setScale(x: js.Any, y: js.Any, z: js.Any): Matrix4 = js.native
+    def setScale(x: Any, y: Any, z: Any): Matrix4 = js.native
     
     def setTRS(t: Vector3, r: Quaternion, s: Vector3): this.type = js.native
     
-    def setTranslate(x: js.Any, y: js.Any, z: js.Any): Matrix4 = js.native
+    def setTranslate(x: Any, y: Any, z: Any): Matrix4 = js.native
     
-    def translate(x: js.Any, y: js.Any, z: js.Any): Matrix4 = js.native
+    def translate(x: Any, y: Any, z: Any): Matrix4 = js.native
     
     def transpose(): Matrix4 = js.native
     
-    var values: Float32Array = js.native
+    var values: js.typedarray.Float32Array = js.native
   }
   /* static members */
   object Matrix4 {
@@ -136,6 +135,6 @@ object matrix4Mod {
     val ^ : js.Any = js.native
     
     inline def create(): Matrix4 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Matrix4]
-    inline def create(mat: Float32Array): Matrix4 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mat.asInstanceOf[js.Any]).asInstanceOf[Matrix4]
+    inline def create(mat: js.typedarray.Float32Array): Matrix4 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mat.asInstanceOf[js.Any]).asInstanceOf[Matrix4]
   }
 }

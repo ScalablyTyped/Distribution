@@ -13,10 +13,9 @@ trait SchemaDisksScopedList extends StObject {
   var disks: js.UndefOr[js.Array[SchemaDisk]] = js.undefined
   
   /**
-    * [Output Only] Informational warning which replaces the list of disks when
-    * the list is empty.
+    * [Output Only] Informational warning which replaces the list of disks when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaDisksScopedList {
   
@@ -31,9 +30,11 @@ object SchemaDisksScopedList {
     
     inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    inline def setDisksVarargs(value: SchemaDisk*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: SchemaDisk*): Self = StObject.set(x, "disks", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

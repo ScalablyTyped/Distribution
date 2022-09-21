@@ -13,12 +13,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html)
   */
-class ListItemPanelCls ()
+open class ListItemPanelCls ()
   extends StObject
      with typings.arcgisJsApi.esri.ListItemPanel {
   
   /**
     * Adds a CSS class used to style a node that represents the panel.
+    *
+    * @default esri-icon-layer-list
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#className)
     */
@@ -31,7 +33,7 @@ class ListItemPanelCls ()
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#content)
     */
   /* CompleteClass */
-  var content: typings.arcgisJsApi.esri.Widget_ | HTMLElement | String | js.Array[js.Any] = js.native
+  var content: typings.arcgisJsApi.esri.Widget_ | HTMLElement | String | js.Array[Any] = js.native
   
   /**
     * The URL or data URI of an image used to represent the panel.
@@ -52,6 +54,8 @@ class ListItemPanelCls ()
   /**
     * Indicates if the panel's content is open and visible to the user.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#open)
     */
   /* CompleteClass */
@@ -67,6 +71,8 @@ class ListItemPanelCls ()
   
   /**
     * Indicates if the node containing the [image](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#image) or [icon font](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#className) is visible to the user.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#visible)
     */

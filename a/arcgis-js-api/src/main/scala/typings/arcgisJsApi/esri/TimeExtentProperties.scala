@@ -9,12 +9,16 @@ trait TimeExtentProperties extends StObject {
   /**
     * The end time of the time extent.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#end)
     */
   var end: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * The start time of the time extent.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#start)
     */

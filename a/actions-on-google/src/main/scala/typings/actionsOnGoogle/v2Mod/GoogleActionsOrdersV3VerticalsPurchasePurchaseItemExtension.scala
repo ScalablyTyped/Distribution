@@ -10,7 +10,7 @@ trait GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension extends StObje
   /**
     * Any extra fields exchanged between merchant and google.
     */
-  var `extension`: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var `extension`: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   /**
     * Fulfillment info for this line item. If unset, this line item
@@ -76,7 +76,7 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension {
   
   extension [Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension](x: Self) {
     
-    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
@@ -88,7 +88,7 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension {
     
     inline def setItemOptionsUndefined: Self = StObject.set(x, "itemOptions", js.undefined)
     
-    inline def setItemOptionsVarargs(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption*): Self = StObject.set(x, "itemOptions", js.Array(value :_*))
+    inline def setItemOptionsVarargs(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption*): Self = StObject.set(x, "itemOptions", js.Array(value*))
     
     inline def setProductDetails(value: GoogleActionsOrdersV3VerticalsPurchaseProductDetails): Self = StObject.set(x, "productDetails", value.asInstanceOf[js.Any])
     

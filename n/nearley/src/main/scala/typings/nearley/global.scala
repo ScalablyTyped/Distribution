@@ -13,7 +13,7 @@ object global {
     
     @JSGlobal("nearley.Grammar")
     @js.native
-    class Grammar protected ()
+    open class Grammar protected ()
       extends typings.nearley.mod.Grammar {
       def this(rules: js.Array[typings.nearley.mod.Rule]) = this()
     }
@@ -29,7 +29,7 @@ object global {
     
     @JSGlobal("nearley.Parser")
     @js.native
-    class Parser protected ()
+    open class Parser protected ()
       extends typings.nearley.mod.Parser {
       def this(grammar: typings.nearley.mod.Grammar) = this()
       def this(grammar: typings.nearley.mod.Grammar, options: ParserOptions) = this()
@@ -52,10 +52,10 @@ object global {
     
     @JSGlobal("nearley.Rule")
     @js.native
-    class Rule protected ()
+    open class Rule protected ()
       extends typings.nearley.mod.Rule {
-      def this(name: String, symbols: js.Array[js.Any]) = this()
-      def this(name: String, symbols: js.Array[js.Any], postprocess: Postprocessor) = this()
+      def this(name: String, symbols: js.Array[Any]) = this()
+      def this(name: String, symbols: js.Array[Any], postprocess: Postprocessor) = this()
     }
     /* static members */
     object Rule {

@@ -40,12 +40,12 @@ object HydratedParseArgsOptions {
     
     inline def setBoolean(value: js.Array[String]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
-    inline def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value :_*))
+    inline def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value*))
     
     inline def setDefault(value: StringDictionary[String | Boolean]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setString(value: js.Array[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value :_*))
+    inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value*))
   }
 }

@@ -44,7 +44,7 @@ object CompareFacesResponse {
     
     inline def setFaceMatchesUndefined: Self = StObject.set(x, "FaceMatches", js.undefined)
     
-    inline def setFaceMatchesVarargs(value: CompareFacesMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value :_*))
+    inline def setFaceMatchesVarargs(value: CompareFacesMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value*))
     
     inline def setSourceImageFace(value: ComparedSourceImageFace): Self = StObject.set(x, "SourceImageFace", value.asInstanceOf[js.Any])
     
@@ -62,6 +62,6 @@ object CompareFacesResponse {
     
     inline def setUnmatchedFacesUndefined: Self = StObject.set(x, "UnmatchedFaces", js.undefined)
     
-    inline def setUnmatchedFacesVarargs(value: ComparedFace*): Self = StObject.set(x, "UnmatchedFaces", js.Array(value :_*))
+    inline def setUnmatchedFacesVarargs(value: ComparedFace*): Self = StObject.set(x, "UnmatchedFaces", js.Array(value*))
   }
 }

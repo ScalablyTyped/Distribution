@@ -10,10 +10,10 @@ The lodash method `_.isNative` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isnative |
 | Keywords           | lodash-modularized, isnative |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 100190 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2035.3333333333333 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

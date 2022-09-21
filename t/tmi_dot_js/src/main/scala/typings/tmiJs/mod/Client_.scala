@@ -1,5 +1,6 @@
 package typings.tmiJs.mod
 
+import typings.tmiJs.mod.^
 import typings.tmiJs.strictEventEmitterTypesMod.EEMethodReturnType
 import typings.tmiJs.strictEventEmitterTypesMod.ListenerType
 import typings.tmiJs.tmiJsStrings.CLOSED
@@ -9,6 +10,9 @@ import typings.tmiJs.tmiJsStrings.OPEN
 import typings.tmiJs.tmiJsStrings.action
 import typings.tmiJs.tmiJsStrings.addListener
 import typings.tmiJs.tmiJsStrings.anongiftpaidupgrade
+import typings.tmiJs.tmiJsStrings.anonsubgift
+import typings.tmiJs.tmiJsStrings.anonsubmysterygift
+import typings.tmiJs.tmiJsStrings.automod
 import typings.tmiJs.tmiJsStrings.ban
 import typings.tmiJs.tmiJsStrings.chat
 import typings.tmiJs.tmiJsStrings.cheer
@@ -34,10 +38,12 @@ import typings.tmiJs.tmiJsStrings.once
 import typings.tmiJs.tmiJsStrings.part
 import typings.tmiJs.tmiJsStrings.ping
 import typings.tmiJs.tmiJsStrings.pong
+import typings.tmiJs.tmiJsStrings.primepaidupgrade
 import typings.tmiJs.tmiJsStrings.r9kbeta
 import typings.tmiJs.tmiJsStrings.raided
 import typings.tmiJs.tmiJsStrings.raw_message
 import typings.tmiJs.tmiJsStrings.reconnect
+import typings.tmiJs.tmiJsStrings.redeem
 import typings.tmiJs.tmiJsStrings.removeListener
 import typings.tmiJs.tmiJsStrings.resub
 import typings.tmiJs.tmiJsStrings.roomstate
@@ -73,13 +79,13 @@ trait Client_ extends StObject {
   
   @JSName("addListener")
   var addListener_Original: js.ThisFunction2[
-    /* this */ js.Any, 
+    /* this */ Any, 
     addListener, 
-    /* listener */ js.Function1[/* args */ ListenerType[js.UndefOr[js.Any]], Unit], 
-    EEMethodReturnType[ClientBase, addListener, js.Any, Unit]
+    /* listener */ js.Function1[/* args */ ListenerType[js.UndefOr[Any]], Unit], 
+    EEMethodReturnType[ClientBase, addListener, Any, Unit]
   ] = js.native
   @JSName("addListener")
-  def addListener_addListener[P /* <: /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | r9kbeta | raided | raw_message | reconnect | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper */, T](event: addListener, listener: js.Function1[/* args */ ListenerType[js.UndefOr[js.Any]], Unit]): EEMethodReturnType[ClientBase, addListener, T, Unit] = js.native
+  def addListener_addListener[P /* <: /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | anonsubmysterygift | anonsubgift | automod | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | primepaidupgrade | r9kbeta | raided | raw_message | reconnect | redeem | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper */, T](event: addListener, listener: js.Function1[/* args */ ListenerType[js.UndefOr[Any]], Unit]): EEMethodReturnType[ClientBase, addListener, T, Unit] = js.native
   
   def ban(channel: String, username: String): js.Promise[js.Tuple3[String, String, String]] = js.native
   def ban(channel: String, username: String, reason: String): js.Promise[js.Tuple3[String, String, String]] = js.native
@@ -98,29 +104,29 @@ trait Client_ extends StObject {
   
   @JSName("emit")
   var emit_Original: js.ThisFunction2[
-    /* this */ js.Any, 
+    /* this */ Any, 
     emit, 
-    /* args */ ListenerType[js.UndefOr[js.Any]], 
-    EEMethodReturnType[ClientBase, emit, js.Any, Unit]
+    /* args */ ListenerType[js.UndefOr[Any]], 
+    EEMethodReturnType[ClientBase, emit, Any, Unit]
   ] = js.native
   @JSName("emit")
-  def emit_emit[P /* <: /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | r9kbeta | raided | raw_message | reconnect | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper */, T](
+  def emit_emit[P /* <: /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | anonsubmysterygift | anonsubgift | automod | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | primepaidupgrade | r9kbeta | raided | raw_message | reconnect | redeem | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper */, T](
     event: emit,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ListenerType<TEmitRecord[P]> is not an array type */ args: ListenerType[js.UndefOr[js.Any]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ListenerType<TEmitRecord[P]> is not an array type */ args: ListenerType[js.UndefOr[Any]]
   ): EEMethodReturnType[ClientBase, emit, T, Unit] = js.native
   
   def emits(
     events: js.Array[
-      /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | r9kbeta | raided | raw_message | reconnect | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper
+      /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | anonsubmysterygift | anonsubgift | automod | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | primepaidupgrade | r9kbeta | raided | raw_message | reconnect | redeem | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper
     ],
-    values: js.Array[js.Array[js.Any]]
+    values: js.Array[js.Array[Any]]
   ): Unit = js.native
   @JSName("emits")
   var emits_Original: js.Function2[
     /* events */ js.Array[
-      /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | r9kbeta | raided | raw_message | reconnect | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper
+      /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | anonsubmysterygift | anonsubgift | automod | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | primepaidupgrade | r9kbeta | raided | raw_message | reconnect | redeem | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper
     ], 
-    /* values */ js.Array[js.Array[js.Any]], 
+    /* values */ js.Array[js.Array[Any]], 
     Unit
   ] = js.native
   
@@ -154,11 +160,11 @@ trait Client_ extends StObject {
   def join(channel: String): js.Promise[js.Array[String]] = js.native
   
   def listenerCount(
-    event: /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | r9kbeta | raided | raw_message | reconnect | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper
+    event: /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | anonsubmysterygift | anonsubgift | automod | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | primepaidupgrade | r9kbeta | raided | raw_message | reconnect | redeem | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper
   ): Double = js.native
   @JSName("listenerCount")
   var listenerCount_Original: js.Function1[
-    /* keyof tmi.js.tmi.js.Events */ /* event */ action | anongiftpaidupgrade | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | r9kbeta | raided | raw_message | reconnect | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper, 
+    /* keyof tmi.js.tmi.js.Events */ /* event */ action | anongiftpaidupgrade | anonsubmysterygift | anonsubgift | automod | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | primepaidupgrade | r9kbeta | raided | raw_message | reconnect | redeem | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper, 
     Double
   ] = js.native
   
@@ -168,23 +174,23 @@ trait Client_ extends StObject {
   
   @JSName("on")
   var on_Original: js.ThisFunction2[
-    /* this */ js.Any, 
+    /* this */ Any, 
     on, 
-    /* listener */ js.Function1[/* args */ ListenerType[js.UndefOr[js.Any]], Unit], 
-    EEMethodReturnType[ClientBase, on, js.Any, Unit]
+    /* listener */ js.Function1[/* args */ ListenerType[js.UndefOr[Any]], Unit], 
+    EEMethodReturnType[ClientBase, on, Any, Unit]
   ] = js.native
   @JSName("on")
-  def on_on[P /* <: /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | r9kbeta | raided | raw_message | reconnect | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper */, T](event: on, listener: js.Function1[/* args */ ListenerType[js.UndefOr[js.Any]], Unit]): EEMethodReturnType[ClientBase, on, T, Unit] = js.native
+  def on_on[P /* <: /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | anonsubmysterygift | anonsubgift | automod | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | primepaidupgrade | r9kbeta | raided | raw_message | reconnect | redeem | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper */, T](event: on, listener: js.Function1[/* args */ ListenerType[js.UndefOr[Any]], Unit]): EEMethodReturnType[ClientBase, on, T, Unit] = js.native
   
   @JSName("once")
   var once_Original: js.ThisFunction2[
-    /* this */ js.Any, 
+    /* this */ Any, 
     once, 
-    /* listener */ js.Function1[/* args */ ListenerType[js.UndefOr[js.Any]], Unit], 
-    EEMethodReturnType[ClientBase, once, js.Any, Unit]
+    /* listener */ js.Function1[/* args */ ListenerType[js.UndefOr[Any]], Unit], 
+    EEMethodReturnType[ClientBase, once, Any, Unit]
   ] = js.native
   @JSName("once")
-  def once_once[P /* <: /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | r9kbeta | raided | raw_message | reconnect | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper */, T](event: once, listener: js.Function1[/* args */ ListenerType[js.UndefOr[js.Any]], Unit]): EEMethodReturnType[ClientBase, once, T, Unit] = js.native
+  def once_once[P /* <: /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | anonsubmysterygift | anonsubgift | automod | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | primepaidupgrade | r9kbeta | raided | raw_message | reconnect | redeem | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper */, T](event: once, listener: js.Function1[/* args */ ListenerType[js.UndefOr[Any]], Unit]): EEMethodReturnType[ClientBase, once, T, Unit] = js.native
   
   def part(channel: String): js.Promise[js.Array[String]] = js.native
   
@@ -202,26 +208,26 @@ trait Client_ extends StObject {
   
   def removeAllListeners(): this.type = js.native
   def removeAllListeners(
-    event: /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | r9kbeta | raided | raw_message | reconnect | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper
+    event: /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | anonsubmysterygift | anonsubgift | automod | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | primepaidupgrade | r9kbeta | raided | raw_message | reconnect | redeem | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper
   ): this.type = js.native
   @JSName("removeAllListeners")
   var removeAllListeners_Original: js.Function1[
     /* event */ js.UndefOr[
-      action | anongiftpaidupgrade | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | r9kbeta | raided | raw_message | reconnect | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper
+      action | anongiftpaidupgrade | anonsubmysterygift | anonsubgift | automod | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | primepaidupgrade | r9kbeta | raided | raw_message | reconnect | redeem | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper
     ], 
     this.type
   ] = js.native
   
   def removeListener[T](
-    event: /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | r9kbeta | raided | raw_message | reconnect | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper,
-    listener: js.Function1[/* repeated */ js.Any, js.Any]
+    event: /* keyof tmi.js.tmi.js.Events */ action | anongiftpaidupgrade | anonsubmysterygift | anonsubgift | automod | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | primepaidupgrade | r9kbeta | raided | raw_message | reconnect | redeem | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper,
+    listener: js.Function1[/* repeated */ Any, Any]
   ): EEMethodReturnType[ClientBase, typings.tmiJs.tmiJsStrings.removeListener, T, Unit] = js.native
   @JSName("removeListener")
   var removeListener_Original: js.ThisFunction2[
-    /* this */ js.Any, 
-    /* keyof tmi.js.tmi.js.Events */ /* event */ action | anongiftpaidupgrade | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | r9kbeta | raided | raw_message | reconnect | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper, 
-    /* listener */ js.Function1[/* repeated */ js.Any, js.Any], 
-    EEMethodReturnType[ClientBase, removeListener, js.Any, Unit]
+    /* this */ Any, 
+    /* keyof tmi.js.tmi.js.Events */ /* event */ action | anongiftpaidupgrade | anonsubmysterygift | anonsubgift | automod | ban | chat | cheer | clearchat | connected | connecting_ | disconnected | emoteonly | emotesets | followersonly | giftpaidupgrade | hosted | hosting | join | logon | message | messagedeleted | typings.tmiJs.tmiJsStrings.mod | mods | notice | part | ping | pong | primepaidupgrade | r9kbeta | raided | raw_message | reconnect | redeem | resub | roomstate | serverchange | slowmode | subgift | submysterygift | subscribers | subscription | timeout | unhost | unmod | vips | whisper, 
+    /* listener */ js.Function1[/* repeated */ Any, Any], 
+    EEMethodReturnType[ClientBase, removeListener, Any, Unit]
   ] = js.native
   
   def say(channel: String, message: String): js.Promise[js.Array[String]] = js.native
@@ -260,7 +266,5 @@ trait Client_ extends StObject {
 }
 object Client_ {
   
-  @JSImport("tmi.js", "Client")
-  @js.native
-  def apply(opts: Options): Client_ = js.native
+  inline def apply: ClientConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Client").asInstanceOf[ClientConstructor]
 }

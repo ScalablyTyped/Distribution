@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.Grid")
 @js.native
-class Grid ()
+open class Grid ()
   extends typings.reactBootstrap.mod.Grid

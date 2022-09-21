@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.ComboBox")
 @js.native
-class ComboBox protected ()
+open class ComboBox protected ()
   extends StObject
      with typings.ejWebAll.ej.ComboBox {
   def this(element: JQuery) = this()
@@ -25,8 +25,8 @@ object ComboBox {
   /* static member */
   @JSGlobal("ej.ComboBox.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.ComboBox.SortOrder")
   @js.native

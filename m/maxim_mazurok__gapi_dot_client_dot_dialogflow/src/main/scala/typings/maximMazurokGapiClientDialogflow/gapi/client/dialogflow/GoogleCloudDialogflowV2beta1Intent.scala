@@ -36,6 +36,12 @@ trait GoogleCloudDialogflowV2beta1Intent extends StObject {
   /** Optional. Indicates whether this is a fallback intent. */
   var isFallback: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Optional. Indicates that a live agent should be brought in to handle the interaction with the user. In most cases, when you set this flag to true, you would also want to set
+    * end_interaction to true as well. Default is false.
+    */
+  var liveAgentHandoff: js.UndefOr[Boolean] = js.undefined
+  
   /** Optional. The collection of rich messages corresponding to the `Response` field in the Dialogflow console. */
   var messages: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1IntentMessage]] = js.undefined
   
@@ -112,7 +118,7 @@ object GoogleCloudDialogflowV2beta1Intent {
     
     inline def setDefaultResponsePlatformsUndefined: Self = StObject.set(x, "defaultResponsePlatforms", js.undefined)
     
-    inline def setDefaultResponsePlatformsVarargs(value: String*): Self = StObject.set(x, "defaultResponsePlatforms", js.Array(value :_*))
+    inline def setDefaultResponsePlatformsVarargs(value: String*): Self = StObject.set(x, "defaultResponsePlatforms", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -126,29 +132,33 @@ object GoogleCloudDialogflowV2beta1Intent {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setFollowupIntentInfo(value: js.Array[GoogleCloudDialogflowV2beta1IntentFollowupIntentInfo]): Self = StObject.set(x, "followupIntentInfo", value.asInstanceOf[js.Any])
     
     inline def setFollowupIntentInfoUndefined: Self = StObject.set(x, "followupIntentInfo", js.undefined)
     
-    inline def setFollowupIntentInfoVarargs(value: GoogleCloudDialogflowV2beta1IntentFollowupIntentInfo*): Self = StObject.set(x, "followupIntentInfo", js.Array(value :_*))
+    inline def setFollowupIntentInfoVarargs(value: GoogleCloudDialogflowV2beta1IntentFollowupIntentInfo*): Self = StObject.set(x, "followupIntentInfo", js.Array(value*))
     
     inline def setInputContextNames(value: js.Array[String]): Self = StObject.set(x, "inputContextNames", value.asInstanceOf[js.Any])
     
     inline def setInputContextNamesUndefined: Self = StObject.set(x, "inputContextNames", js.undefined)
     
-    inline def setInputContextNamesVarargs(value: String*): Self = StObject.set(x, "inputContextNames", js.Array(value :_*))
+    inline def setInputContextNamesVarargs(value: String*): Self = StObject.set(x, "inputContextNames", js.Array(value*))
     
     inline def setIsFallback(value: Boolean): Self = StObject.set(x, "isFallback", value.asInstanceOf[js.Any])
     
     inline def setIsFallbackUndefined: Self = StObject.set(x, "isFallback", js.undefined)
     
+    inline def setLiveAgentHandoff(value: Boolean): Self = StObject.set(x, "liveAgentHandoff", value.asInstanceOf[js.Any])
+    
+    inline def setLiveAgentHandoffUndefined: Self = StObject.set(x, "liveAgentHandoff", js.undefined)
+    
     inline def setMessages(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setMessagesVarargs(value: GoogleCloudDialogflowV2beta1IntentMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: GoogleCloudDialogflowV2beta1IntentMessage*): Self = StObject.set(x, "messages", js.Array(value*))
     
     inline def setMlDisabled(value: Boolean): Self = StObject.set(x, "mlDisabled", value.asInstanceOf[js.Any])
     
@@ -166,13 +176,13 @@ object GoogleCloudDialogflowV2beta1Intent {
     
     inline def setOutputContextsUndefined: Self = StObject.set(x, "outputContexts", js.undefined)
     
-    inline def setOutputContextsVarargs(value: GoogleCloudDialogflowV2beta1Context*): Self = StObject.set(x, "outputContexts", js.Array(value :_*))
+    inline def setOutputContextsVarargs(value: GoogleCloudDialogflowV2beta1Context*): Self = StObject.set(x, "outputContexts", js.Array(value*))
     
     inline def setParameters(value: js.Array[GoogleCloudDialogflowV2beta1IntentParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: GoogleCloudDialogflowV2beta1IntentParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: GoogleCloudDialogflowV2beta1IntentParameter*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setParentFollowupIntentName(value: String): Self = StObject.set(x, "parentFollowupIntentName", value.asInstanceOf[js.Any])
     
@@ -194,7 +204,7 @@ object GoogleCloudDialogflowV2beta1Intent {
     
     inline def setTrainingPhrasesUndefined: Self = StObject.set(x, "trainingPhrases", js.undefined)
     
-    inline def setTrainingPhrasesVarargs(value: GoogleCloudDialogflowV2beta1IntentTrainingPhrase*): Self = StObject.set(x, "trainingPhrases", js.Array(value :_*))
+    inline def setTrainingPhrasesVarargs(value: GoogleCloudDialogflowV2beta1IntentTrainingPhrase*): Self = StObject.set(x, "trainingPhrases", js.Array(value*))
     
     inline def setWebhookState(value: String): Self = StObject.set(x, "webhookState", value.asInstanceOf[js.Any])
     

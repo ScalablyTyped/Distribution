@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class RDS ()
+open class RDS ()
   extends typings.awsSdk.mod.RDS {
   def this(options: ClientConfiguration) = this()
 }
@@ -22,7 +22,7 @@ object RDS {
   /**
     * A signer object can be used to generate an auth token to a database.
     */
-  class Signer ()
+  open class Signer ()
     extends typings.awsSdk.mod.RDS.Signer {
     def this(options: SignerOptions) = this()
   }

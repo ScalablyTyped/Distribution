@@ -6,38 +6,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ClientObjectPropertyConditionalScope")
 @js.native
-class ClientObjectPropertyConditionalScope protected ()
+open class ClientObjectPropertyConditionalScope protected ()
   extends StObject
      with typings.sharepoint.SP.ConditionalScopeBase {
   def this(
     clientObject: typings.sharepoint.SP.ClientObject,
     propertyName: String,
     comparisonOperator: String,
-    valueToCompare: js.Any
+    valueToCompare: Any
   ) = this()
   def this(
     clientObject: typings.sharepoint.SP.ClientObject,
     propertyName: String,
     comparisonOperator: String,
-    valueToCompare: js.Any,
+    valueToCompare: Any,
     allowAllActions: Boolean
   ) = this()
   
   /* CompleteClass */
-  override def customFromJson(initValue: js.Any): Boolean = js.native
+  override def customFromJson(initValue: Any): Boolean = js.native
   
   /* CompleteClass */
-  override def fromJson(initValue: js.Any): Unit = js.native
+  override def fromJson(initValue: Any): Unit = js.native
   
   /* CompleteClass */
   override def get_testResult(): Boolean = js.native
   
   /* CompleteClass */
-  override def startIfFalse(): js.Any = js.native
+  override def startIfFalse(): Any = js.native
   
   /* CompleteClass */
-  override def startIfTrue(): js.Any = js.native
+  override def startIfTrue(): Any = js.native
   
   /* CompleteClass */
-  override def startScope(): js.Any = js.native
+  override def startScope(): Any = js.native
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.AppInstanceErrorDetails")
 @js.native
-class AppInstanceErrorDetails ()
+open class AppInstanceErrorDetails ()
   extends StObject
      with typings.sharepoint.SP.AppInstanceErrorDetails

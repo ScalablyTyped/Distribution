@@ -73,28 +73,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OmitActionsetAbsoluteBounds extends StObject {
   
   @JSName("$getProperty")
-  def $getProperty(name: String): js.Any
+  def $getProperty(name: String): Any
   
   @JSName("$getPropertyGetter")
-  def $getPropertyGetter(propertyName: String): js.Any
+  def $getPropertyGetter(propertyName: String): Any
   @JSName("$getPropertyGetter")
-  var $getPropertyGetter_Original: js.Function1[/* propertyName */ String, js.Any]
+  var $getPropertyGetter_Original: js.Function1[/* propertyName */ String, Any]
   
   @JSName("$getPropertySetter")
-  def $getPropertySetter(propertyName: String): js.Any
+  def $getPropertySetter(propertyName: String): Any
   @JSName("$getPropertySetter")
-  var $getPropertySetter_Original: js.Function1[/* propertyName */ String, js.Any]
+  var $getPropertySetter_Original: js.Function1[/* propertyName */ String, Any]
   
   @JSName("$getProperty")
-  var $getProperty_Original: js.Function1[/* name */ String, js.Any]
+  var $getProperty_Original: js.Function1[/* name */ String, Any]
   
   @JSName("$props")
-  var $props: js.Any
+  var $props: Any
   
   @JSName("$setProperty")
-  def $setProperty(name: String, value: js.Any): Unit
+  def $setProperty(name: String, value: Any): Unit
   @JSName("$setProperty")
-  var $setProperty_Original: js.Function2[/* name */ String, /* value */ js.Any, Unit]
+  var $setProperty_Original: js.Function2[/* name */ String, /* value */ Any, Unit]
   
   @JSName("$trigger")
   def $trigger(eventType: String): Unit
@@ -107,34 +107,34 @@ trait OmitActionsetAbsoluteBounds extends StObject {
   @JSName("_checkDisposed")
   var _checkDisposed_Original: js.Function0[Unit]
   
-  def _decodeProperty(propertyName: String, value: js.Any): js.Any
+  def _decodeProperty(propertyName: String, value: Any): Any
   @JSName("_decodeProperty")
-  var _decodeProperty_Original: js.Function2[/* propertyName */ String, /* value */ js.Any, js.Any]
+  var _decodeProperty_Original: js.Function2[/* propertyName */ String, /* value */ Any, Any]
   
   def _dispose(): Unit
   def _dispose(skipNative: Boolean): Unit
   @JSName("_dispose")
   var _dispose_Original: js.Function1[/* skipNative */ js.UndefOr[Boolean], Unit]
   
-  def _encodeProperty(propertyName: String, value: js.Any): js.Any
+  def _encodeProperty(propertyName: String, value: Any): Any
   @JSName("_encodeProperty")
-  var _encodeProperty_Original: js.Function2[/* propertyName */ String, /* value */ js.Any, js.Any]
+  var _encodeProperty_Original: js.Function2[/* propertyName */ String, /* value */ Any, Any]
   
   def _getDefaultPropertyValue(propertyName: String): Unit
   @JSName("_getDefaultPropertyValue")
   var _getDefaultPropertyValue_Original: js.Function1[/* propertyName */ String, Unit]
   
-  def _getStoredProperty(propertyName: String): js.Any
+  def _getStoredProperty(propertyName: String): Any
   @JSName("_getStoredProperty")
-  var _getStoredProperty_Original: js.Function1[/* propertyName */ String, js.Any]
+  var _getStoredProperty_Original: js.Function1[/* propertyName */ String, Any]
   
-  def _getTypeDef(propertyName: String): js.Any
+  def _getTypeDef(propertyName: String): Any
   @JSName("_getTypeDef")
-  var _getTypeDef_Original: js.Function1[/* propertyName */ String, js.Any]
+  var _getTypeDef_Original: js.Function1[/* propertyName */ String, Any]
   
-  def _getXMLAttributes(): js.Array[js.Tuple2[String, js.Any]]
+  def _getXMLAttributes(): js.Array[js.Tuple2[String, Any]]
   @JSName("_getXMLAttributes")
-  var _getXMLAttributes_Original: js.Function0[js.Array[js.Tuple2[String, js.Any]]]
+  var _getXMLAttributes_Original: js.Function0[js.Array[js.Tuple2[String, Any]]]
   
   def _getXMLContent(): js.Array[String]
   @JSName("_getXMLContent")
@@ -162,26 +162,26 @@ trait OmitActionsetAbsoluteBounds extends StObject {
   @JSName("_listen")
   var _listen_Original: js.Function2[/* eventName */ String, /* listening */ Boolean, Unit]
   
-  def _nativeCall(methodName: String, parameters: js.Object): js.Any
+  def _nativeCall(methodName: String, parameters: js.Object): Any
   @JSName("_nativeCall")
-  var _nativeCall_Original: js.Function2[/* methodName */ String, /* parameters */ js.Object, js.Any]
+  var _nativeCall_Original: js.Function2[/* methodName */ String, /* parameters */ js.Object, Any]
   
   def _nativeCreate(): Unit
-  def _nativeCreate(param: StringDictionary[js.Any]): Unit
+  def _nativeCreate(param: StringDictionary[Any]): Unit
   @JSName("_nativeCreate")
-  var _nativeCreate_Original: js.Function1[/* param */ js.UndefOr[StringDictionary[js.Any]], Unit]
+  var _nativeCreate_Original: js.Function1[/* param */ js.UndefOr[StringDictionary[Any]], Unit]
   
-  def _nativeGet(propertyName: String): js.Any
+  def _nativeGet(propertyName: String): Any
   @JSName("_nativeGet")
-  var _nativeGet_Original: js.Function1[/* propertyName */ String, js.Any]
+  var _nativeGet_Original: js.Function1[/* propertyName */ String, Any]
   
   def _nativeListen(eventType: String, listen: Boolean): Unit
   @JSName("_nativeListen")
   var _nativeListen_Original: js.Function2[/* eventType */ String, /* listen */ Boolean, Unit]
   
-  def _nativeSet(propertyName: String, value: js.Any): Unit
+  def _nativeSet(propertyName: String, value: Any): Unit
   @JSName("_nativeSet")
-  var _nativeSet_Original: js.Function2[/* propertyName */ String, /* value */ js.Any, Unit]
+  var _nativeSet_Original: js.Function2[/* propertyName */ String, /* value */ Any, Unit]
   
   def _nativeType(): String
   @JSName("_nativeType")
@@ -203,21 +203,21 @@ trait OmitActionsetAbsoluteBounds extends StObject {
   @JSName("_reorderProperties")
   var _reorderProperties_Original: js.Function1[/* propertyNames */ js.Array[String], js.Array[String]]
   
-  def _setParent(parent: Composite[Widget]): Unit
-  def _setParent(parent: Composite[Widget], index: Double): Unit
+  def _setParent(parent: Composite[Widget[Any]]): Unit
+  def _setParent(parent: Composite[Widget[Any]], index: Double): Unit
   @JSName("_setParent")
-  var _setParent_Original: js.Function2[/* parent */ Composite[Widget], /* index */ js.UndefOr[Double], Unit]
+  var _setParent_Original: js.Function2[/* parent */ Composite[Widget[Any]], /* index */ js.UndefOr[Double], Unit]
   
-  def _storeProperty(propertyName: String, encodedValue: js.Any): Unit
+  def _storeProperty(propertyName: String, encodedValue: Any): Unit
   @JSName("_storeProperty")
-  var _storeProperty_Original: js.Function2[/* propertyName */ String, /* encodedValue */ js.Any, Unit]
+  var _storeProperty_Original: js.Function2[/* propertyName */ String, /* encodedValue */ Any, Unit]
   
   def _trigger(eventType: String): Boolean
   def _trigger(eventType: String, eventData: js.Object): Boolean
   
-  def _triggerChangeEvent(propertyName: String, newEncodedValue: js.Any): Unit
+  def _triggerChangeEvent(propertyName: String, newEncodedValue: Any): Unit
   @JSName("_triggerChangeEvent")
-  var _triggerChangeEvent_Original: js.Function2[/* propertyName */ String, /* newEncodedValue */ js.Any, Unit]
+  var _triggerChangeEvent_Original: js.Function2[/* propertyName */ String, /* newEncodedValue */ Any, Unit]
   
   @JSName("_trigger")
   var _trigger_Original: js.Function2[/* eventType */ String, /* eventData */ js.UndefOr[js.Object], Boolean]
@@ -258,21 +258,21 @@ trait OmitActionsetAbsoluteBounds extends StObject {
   var classList: js.Array[String]
   
   @JSName("constructor")
-  var constructor_Original: js.Function1[/* properties */ js.UndefOr[Properties[Action, Omit[Action, set]]], js.Any]
+  var constructor_Original: js.Function1[/* properties */ js.UndefOr[Properties[Action, Omit[Action, set]]], Any]
   
   var cornerRadius: Double
   
-  var data: StringDictionary[js.Any]
+  var data: Any
   
-  var defineChangeEvent: js.UndefOr[js.Any] = js.undefined
+  var defineChangeEvent: js.UndefOr[Any] = js.undefined
   
-  var defineEvent: js.UndefOr[js.Any] = js.undefined
+  var defineEvent: js.UndefOr[Any] = js.undefined
   
-  var defineEvents: js.UndefOr[js.Any] = js.undefined
+  var defineEvents: js.UndefOr[Any] = js.undefined
   
-  var defineProperties: js.UndefOr[js.Any] = js.undefined
+  var defineProperties: js.UndefOr[Any] = js.undefined
   
-  var defineProperty: js.UndefOr[js.Any] = js.undefined
+  var defineProperty: js.UndefOr[Any] = js.undefined
   
   def detach(): typings.tabris.global.tabris.widgets.Action
   @JSName("detach")
@@ -288,7 +288,7 @@ trait OmitActionsetAbsoluteBounds extends StObject {
   
   var excludeFromLayout: Boolean
   
-  var extend: js.UndefOr[js.Any] = js.undefined
+  var extend: js.UndefOr[Any] = js.undefined
   
   var height: Dimension | auto
   
@@ -316,7 +316,7 @@ trait OmitActionsetAbsoluteBounds extends StObject {
       typings.tabris.global.tabris.widgets.Action, 
       set | typings.tabris.tabrisStrings.jsxAttributes
     ]
-  ]) & `1`
+  ]) & Children
   
   var layoutData: LayoutDataValue
   
@@ -336,10 +336,10 @@ trait OmitActionsetAbsoluteBounds extends StObject {
     typings.tabris.global.tabris.widgets.Action
   ]
   
-  def on(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], js.Any]): typings.tabris.global.tabris.widgets.Action
+  def on(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], Any]): typings.tabris.global.tabris.widgets.Action
   def on(
     `type`: String,
-    listener: js.Function1[/* event */ EventObject[NativeObject], js.Any],
+    listener: js.Function1[/* event */ EventObject[NativeObject], Any],
     context: js.Object
   ): typings.tabris.global.tabris.widgets.Action
   
@@ -440,21 +440,21 @@ trait OmitActionsetAbsoluteBounds extends StObject {
   @JSName("on")
   var on_Original: js.Function3[
     /* type */ String, 
-    /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], 
+    /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], 
     /* context */ js.UndefOr[js.Object], 
     typings.tabris.global.tabris.widgets.Action
   ]
   
-  def once(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], js.Any]): typings.tabris.global.tabris.widgets.Action
+  def once(`type`: String, listener: js.Function1[/* event */ EventObject[NativeObject], Any]): typings.tabris.global.tabris.widgets.Action
   def once(
     `type`: String,
-    listener: js.Function1[/* event */ EventObject[NativeObject], js.Any],
+    listener: js.Function1[/* event */ EventObject[NativeObject], Any],
     context: js.Object
   ): typings.tabris.global.tabris.widgets.Action
   @JSName("once")
   var once_Original: js.Function3[
     /* type */ String, 
-    /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], 
+    /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], 
     /* context */ js.UndefOr[js.Object], 
     typings.tabris.global.tabris.widgets.Action
   ]
@@ -471,11 +471,11 @@ trait OmitActionsetAbsoluteBounds extends StObject {
   
   var right: ConstraintValue
   
-  def siblings[Result /* <: Widget */](): WidgetCollection[Result]
-  def siblings[Result /* <: Widget */](selector: Selector[Widget, Result]): WidgetCollection[Result]
+  def siblings[Result /* <: Widget[Any] */](): WidgetCollection[Result]
+  def siblings[Result /* <: Widget[Any] */](selector: Selector[Widget[Any], Result]): WidgetCollection[Result]
   @JSName("siblings")
   var siblings_Original: js.Function1[
-    /* selector */ js.UndefOr[Selector[Widget, Action | Page]], 
+    /* selector */ js.UndefOr[Selector[Widget[Any], Action | Page]], 
     WidgetCollection[Action | Page]
   ]
   
@@ -501,40 +501,40 @@ trait OmitActionsetAbsoluteBounds extends StObject {
 object OmitActionsetAbsoluteBounds {
   
   inline def apply(
-    $getProperty: /* name */ String => js.Any,
-    $getPropertyGetter: /* propertyName */ String => js.Any,
-    $getPropertySetter: /* propertyName */ String => js.Any,
-    $props: js.Any,
-    $setProperty: (/* name */ String, /* value */ js.Any) => Unit,
+    $getProperty: /* name */ String => Any,
+    $getPropertyGetter: /* propertyName */ String => Any,
+    $getPropertySetter: /* propertyName */ String => Any,
+    $props: Any,
+    $setProperty: (/* name */ String, /* value */ Any) => Unit,
     $trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit,
     _checkDisposed: () => Unit,
-    _decodeProperty: (/* propertyName */ String, /* value */ js.Any) => js.Any,
+    _decodeProperty: (/* propertyName */ String, /* value */ Any) => Any,
     _dispose: /* skipNative */ js.UndefOr[Boolean] => Unit,
-    _encodeProperty: (/* propertyName */ String, /* value */ js.Any) => js.Any,
+    _encodeProperty: (/* propertyName */ String, /* value */ Any) => Any,
     _getDefaultPropertyValue: /* propertyName */ String => Unit,
-    _getStoredProperty: /* propertyName */ String => js.Any,
-    _getTypeDef: /* propertyName */ String => js.Any,
-    _getXMLAttributes: () => js.Array[js.Tuple2[String, js.Any]],
+    _getStoredProperty: /* propertyName */ String => Any,
+    _getTypeDef: /* propertyName */ String => Any,
+    _getXMLAttributes: () => js.Array[js.Tuple2[String, Any]],
     _getXMLContent: () => js.Array[String],
     _getXMLElementName: () => String,
     _getXMLFooter: /* hasChild */ Boolean => String,
     _getXMLHeader: /* hasChild */ Boolean => String,
     _isListening: /* eventType */ String => Boolean,
     _listen: (/* eventName */ String, /* listening */ Boolean) => Unit,
-    _nativeCall: (/* methodName */ String, /* parameters */ js.Object) => js.Any,
-    _nativeCreate: /* param */ js.UndefOr[StringDictionary[js.Any]] => Unit,
-    _nativeGet: /* propertyName */ String => js.Any,
+    _nativeCall: (/* methodName */ String, /* parameters */ js.Object) => Any,
+    _nativeCreate: /* param */ js.UndefOr[StringDictionary[Any]] => Unit,
+    _nativeGet: /* propertyName */ String => Any,
     _nativeListen: (/* eventType */ String, /* listen */ Boolean) => Unit,
-    _nativeSet: (/* propertyName */ String, /* value */ js.Any) => Unit,
+    _nativeSet: (/* propertyName */ String, /* value */ Any) => Unit,
     _nativeType: () => String,
     _onoff: (/* eventType */ String, /* listening */ Boolean, /* listener */ js.Function) => Unit,
     _register: () => Unit,
     _release: () => Unit,
     _reorderProperties: /* propertyNames */ js.Array[String] => js.Array[String],
-    _setParent: (/* parent */ Composite[Widget], /* index */ js.UndefOr[Double]) => Unit,
-    _storeProperty: (/* propertyName */ String, /* encodedValue */ js.Any) => Unit,
+    _setParent: (/* parent */ Composite[Widget[Any]], /* index */ js.UndefOr[Double]) => Unit,
+    _storeProperty: (/* propertyName */ String, /* encodedValue */ Any) => Unit,
     _trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Boolean,
-    _triggerChangeEvent: (/* propertyName */ String, /* newEncodedValue */ js.Any) => Unit,
+    _triggerChangeEvent: (/* propertyName */ String, /* newEncodedValue */ Any) => Unit,
     _wasSet: /* propertyName */ String => Boolean,
     absoluteBounds: typings.tabris.mod.Bounds,
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
@@ -547,9 +547,9 @@ object OmitActionsetAbsoluteBounds {
     cid: String,
     `class`: String,
     classList: js.Array[String],
-    constructor: /* properties */ js.UndefOr[Properties[Action, Omit[Action, set]]] => js.Any,
+    constructor: /* properties */ js.UndefOr[Properties[Action, Omit[Action, set]]] => Any,
     cornerRadius: Double,
-    data: StringDictionary[js.Any],
+    data: Any,
     detach: () => typings.tabris.global.tabris.widgets.Action,
     dispose: () => Unit,
     elevation: Double,
@@ -564,11 +564,11 @@ object OmitActionsetAbsoluteBounds {
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.widgets.Action, 
       Omit[typings.tabris.global.tabris.widgets.Action, set | jsxAttributes]
-    ]) & `1`,
+    ]) & Children,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.widgets.Action,
-    on: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.widgets.Action,
+    on: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.widgets.Action,
     onBackgroundChanged: ChangeListeners[typings.tabris.global.tabris.widgets.Action, background],
     onBaselineChanged: ChangeListeners[typings.tabris.global.tabris.widgets.Action, baseline],
     onBottomChanged: ChangeListeners[typings.tabris.global.tabris.widgets.Action, bottom],
@@ -616,12 +616,12 @@ object OmitActionsetAbsoluteBounds {
     onTransformChanged: ChangeListeners[typings.tabris.global.tabris.widgets.Action, transform],
     onVisibleChanged: ChangeListeners[typings.tabris.global.tabris.widgets.Action, visible],
     onWidthChanged: ChangeListeners[typings.tabris.global.tabris.widgets.Action, width],
-    once: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.widgets.Action,
+    once: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.widgets.Action,
     opacity: Double,
     parent: () => NavigationView[Page, typings.tabris.mod.Action],
     placement: default | navigation | overflow,
     right: ConstraintValue,
-    siblings: /* selector */ js.UndefOr[Selector[Widget, Action | Page]] => WidgetCollection[Action | Page],
+    siblings: /* selector */ js.UndefOr[Selector[Widget[Any], Action | Page]] => WidgetCollection[Action | Page],
     title: String,
     top: ConstraintValue,
     transform: Transformation,
@@ -637,15 +637,15 @@ object OmitActionsetAbsoluteBounds {
   
   extension [Self <: OmitActionsetAbsoluteBounds](x: Self) {
     
-    inline def set$getProperty(value: /* name */ String => js.Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
+    inline def set$getProperty(value: /* name */ String => Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
     
-    inline def set$getPropertyGetter(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "$getPropertyGetter", js.Any.fromFunction1(value))
+    inline def set$getPropertyGetter(value: /* propertyName */ String => Any): Self = StObject.set(x, "$getPropertyGetter", js.Any.fromFunction1(value))
     
-    inline def set$getPropertySetter(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "$getPropertySetter", js.Any.fromFunction1(value))
+    inline def set$getPropertySetter(value: /* propertyName */ String => Any): Self = StObject.set(x, "$getPropertySetter", js.Any.fromFunction1(value))
     
-    inline def set$props(value: js.Any): Self = StObject.set(x, "$props", value.asInstanceOf[js.Any])
+    inline def set$props(value: Any): Self = StObject.set(x, "$props", value.asInstanceOf[js.Any])
     
-    inline def set$setProperty(value: (/* name */ String, /* value */ js.Any) => Unit): Self = StObject.set(x, "$setProperty", js.Any.fromFunction2(value))
+    inline def set$setProperty(value: (/* name */ String, /* value */ Any) => Unit): Self = StObject.set(x, "$setProperty", js.Any.fromFunction2(value))
     
     inline def set$trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "$trigger", js.Any.fromFunction2(value))
     
@@ -677,31 +677,31 @@ object OmitActionsetAbsoluteBounds {
     
     inline def setClassList(value: js.Array[String]): Self = StObject.set(x, "classList", value.asInstanceOf[js.Any])
     
-    inline def setClassListVarargs(value: String*): Self = StObject.set(x, "classList", js.Array(value :_*))
+    inline def setClassListVarargs(value: String*): Self = StObject.set(x, "classList", js.Array(value*))
     
-    inline def setConstructor(value: /* properties */ js.UndefOr[Properties[Action, Omit[Action, set]]] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    inline def setConstructor(value: /* properties */ js.UndefOr[Properties[Action, Omit[Action, set]]] => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
     inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
-    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDefineChangeEvent(value: js.Any): Self = StObject.set(x, "defineChangeEvent", value.asInstanceOf[js.Any])
+    inline def setDefineChangeEvent(value: Any): Self = StObject.set(x, "defineChangeEvent", value.asInstanceOf[js.Any])
     
     inline def setDefineChangeEventUndefined: Self = StObject.set(x, "defineChangeEvent", js.undefined)
     
-    inline def setDefineEvent(value: js.Any): Self = StObject.set(x, "defineEvent", value.asInstanceOf[js.Any])
+    inline def setDefineEvent(value: Any): Self = StObject.set(x, "defineEvent", value.asInstanceOf[js.Any])
     
     inline def setDefineEventUndefined: Self = StObject.set(x, "defineEvent", js.undefined)
     
-    inline def setDefineEvents(value: js.Any): Self = StObject.set(x, "defineEvents", value.asInstanceOf[js.Any])
+    inline def setDefineEvents(value: Any): Self = StObject.set(x, "defineEvents", value.asInstanceOf[js.Any])
     
     inline def setDefineEventsUndefined: Self = StObject.set(x, "defineEvents", js.undefined)
     
-    inline def setDefineProperties(value: js.Any): Self = StObject.set(x, "defineProperties", value.asInstanceOf[js.Any])
+    inline def setDefineProperties(value: Any): Self = StObject.set(x, "defineProperties", value.asInstanceOf[js.Any])
     
     inline def setDefinePropertiesUndefined: Self = StObject.set(x, "defineProperties", js.undefined)
     
-    inline def setDefineProperty(value: js.Any): Self = StObject.set(x, "defineProperty", value.asInstanceOf[js.Any])
+    inline def setDefineProperty(value: Any): Self = StObject.set(x, "defineProperty", value.asInstanceOf[js.Any])
     
     inline def setDefinePropertyUndefined: Self = StObject.set(x, "defineProperty", js.undefined)
     
@@ -715,7 +715,7 @@ object OmitActionsetAbsoluteBounds {
     
     inline def setExcludeFromLayout(value: Boolean): Self = StObject.set(x, "excludeFromLayout", value.asInstanceOf[js.Any])
     
-    inline def setExtend(value: js.Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
@@ -739,7 +739,7 @@ object OmitActionsetAbsoluteBounds {
       value: (JSXAttributes[
           typings.tabris.global.tabris.widgets.Action, 
           Omit[typings.tabris.global.tabris.widgets.Action, set | jsxAttributes]
-        ]) & `1`
+        ]) & Children
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
@@ -751,7 +751,7 @@ object OmitActionsetAbsoluteBounds {
     ): Self = StObject.set(x, "off", js.Any.fromFunction3(value))
     
     inline def setOn(
-      value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.widgets.Action
+      value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.widgets.Action
     ): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
     
     inline def setOnBackgroundChanged(value: ChangeListeners[typings.tabris.global.tabris.widgets.Action, background]): Self = StObject.set(x, "onBackgroundChanged", value.asInstanceOf[js.Any])
@@ -849,7 +849,7 @@ object OmitActionsetAbsoluteBounds {
     inline def setOnWidthChanged(value: ChangeListeners[typings.tabris.global.tabris.widgets.Action, width]): Self = StObject.set(x, "onWidthChanged", value.asInstanceOf[js.Any])
     
     inline def setOnce(
-      value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.widgets.Action
+      value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Any], /* context */ js.UndefOr[js.Object]) => typings.tabris.global.tabris.widgets.Action
     ): Self = StObject.set(x, "once", js.Any.fromFunction3(value))
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
@@ -867,7 +867,7 @@ object OmitActionsetAbsoluteBounds {
     inline def setRight(value: ConstraintValue): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     inline def setSiblings(
-      value: /* selector */ js.UndefOr[Selector[Widget, Action | Page]] => WidgetCollection[Action | Page]
+      value: /* selector */ js.UndefOr[Selector[Widget[Any], Action | Page]] => WidgetCollection[Action | Page]
     ): Self = StObject.set(x, "siblings", js.Any.fromFunction1(value))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
@@ -886,19 +886,19 @@ object OmitActionsetAbsoluteBounds {
     
     inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))
     
-    inline def set_decodeProperty(value: (/* propertyName */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "_decodeProperty", js.Any.fromFunction2(value))
+    inline def set_decodeProperty(value: (/* propertyName */ String, /* value */ Any) => Any): Self = StObject.set(x, "_decodeProperty", js.Any.fromFunction2(value))
     
     inline def set_dispose(value: /* skipNative */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "_dispose", js.Any.fromFunction1(value))
     
-    inline def set_encodeProperty(value: (/* propertyName */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "_encodeProperty", js.Any.fromFunction2(value))
+    inline def set_encodeProperty(value: (/* propertyName */ String, /* value */ Any) => Any): Self = StObject.set(x, "_encodeProperty", js.Any.fromFunction2(value))
     
     inline def set_getDefaultPropertyValue(value: /* propertyName */ String => Unit): Self = StObject.set(x, "_getDefaultPropertyValue", js.Any.fromFunction1(value))
     
-    inline def set_getStoredProperty(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "_getStoredProperty", js.Any.fromFunction1(value))
+    inline def set_getStoredProperty(value: /* propertyName */ String => Any): Self = StObject.set(x, "_getStoredProperty", js.Any.fromFunction1(value))
     
-    inline def set_getTypeDef(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "_getTypeDef", js.Any.fromFunction1(value))
+    inline def set_getTypeDef(value: /* propertyName */ String => Any): Self = StObject.set(x, "_getTypeDef", js.Any.fromFunction1(value))
     
-    inline def set_getXMLAttributes(value: () => js.Array[js.Tuple2[String, js.Any]]): Self = StObject.set(x, "_getXMLAttributes", js.Any.fromFunction0(value))
+    inline def set_getXMLAttributes(value: () => js.Array[js.Tuple2[String, Any]]): Self = StObject.set(x, "_getXMLAttributes", js.Any.fromFunction0(value))
     
     inline def set_getXMLContent(value: () => js.Array[String]): Self = StObject.set(x, "_getXMLContent", js.Any.fromFunction0(value))
     
@@ -916,15 +916,15 @@ object OmitActionsetAbsoluteBounds {
     
     inline def set_listen(value: (/* eventName */ String, /* listening */ Boolean) => Unit): Self = StObject.set(x, "_listen", js.Any.fromFunction2(value))
     
-    inline def set_nativeCall(value: (/* methodName */ String, /* parameters */ js.Object) => js.Any): Self = StObject.set(x, "_nativeCall", js.Any.fromFunction2(value))
+    inline def set_nativeCall(value: (/* methodName */ String, /* parameters */ js.Object) => Any): Self = StObject.set(x, "_nativeCall", js.Any.fromFunction2(value))
     
-    inline def set_nativeCreate(value: /* param */ js.UndefOr[StringDictionary[js.Any]] => Unit): Self = StObject.set(x, "_nativeCreate", js.Any.fromFunction1(value))
+    inline def set_nativeCreate(value: /* param */ js.UndefOr[StringDictionary[Any]] => Unit): Self = StObject.set(x, "_nativeCreate", js.Any.fromFunction1(value))
     
-    inline def set_nativeGet(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "_nativeGet", js.Any.fromFunction1(value))
+    inline def set_nativeGet(value: /* propertyName */ String => Any): Self = StObject.set(x, "_nativeGet", js.Any.fromFunction1(value))
     
     inline def set_nativeListen(value: (/* eventType */ String, /* listen */ Boolean) => Unit): Self = StObject.set(x, "_nativeListen", js.Any.fromFunction2(value))
     
-    inline def set_nativeSet(value: (/* propertyName */ String, /* value */ js.Any) => Unit): Self = StObject.set(x, "_nativeSet", js.Any.fromFunction2(value))
+    inline def set_nativeSet(value: (/* propertyName */ String, /* value */ Any) => Unit): Self = StObject.set(x, "_nativeSet", js.Any.fromFunction2(value))
     
     inline def set_nativeType(value: () => String): Self = StObject.set(x, "_nativeType", js.Any.fromFunction0(value))
     
@@ -936,13 +936,13 @@ object OmitActionsetAbsoluteBounds {
     
     inline def set_reorderProperties(value: /* propertyNames */ js.Array[String] => js.Array[String]): Self = StObject.set(x, "_reorderProperties", js.Any.fromFunction1(value))
     
-    inline def set_setParent(value: (/* parent */ Composite[Widget], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_setParent", js.Any.fromFunction2(value))
+    inline def set_setParent(value: (/* parent */ Composite[Widget[Any]], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_setParent", js.Any.fromFunction2(value))
     
-    inline def set_storeProperty(value: (/* propertyName */ String, /* encodedValue */ js.Any) => Unit): Self = StObject.set(x, "_storeProperty", js.Any.fromFunction2(value))
+    inline def set_storeProperty(value: (/* propertyName */ String, /* encodedValue */ Any) => Unit): Self = StObject.set(x, "_storeProperty", js.Any.fromFunction2(value))
     
     inline def set_trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Boolean): Self = StObject.set(x, "_trigger", js.Any.fromFunction2(value))
     
-    inline def set_triggerChangeEvent(value: (/* propertyName */ String, /* newEncodedValue */ js.Any) => Unit): Self = StObject.set(x, "_triggerChangeEvent", js.Any.fromFunction2(value))
+    inline def set_triggerChangeEvent(value: (/* propertyName */ String, /* newEncodedValue */ Any) => Unit): Self = StObject.set(x, "_triggerChangeEvent", js.Any.fromFunction2(value))
     
     inline def set_wasSet(value: /* propertyName */ String => Boolean): Self = StObject.set(x, "_wasSet", js.Any.fromFunction1(value))
   }

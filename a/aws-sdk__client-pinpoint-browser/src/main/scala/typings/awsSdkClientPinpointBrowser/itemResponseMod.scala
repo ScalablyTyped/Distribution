@@ -8,5 +8,5 @@ object itemResponseMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_ItemResponse", "_ItemResponse")
   @js.native
-  val ItemResponse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ItemResponse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -9,10 +9,10 @@ Typings are for version 1.0.2
 | ------------------ | :-------------: |
 | Full name          | confirmdialog |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2193 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 32.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/confirmdialog)

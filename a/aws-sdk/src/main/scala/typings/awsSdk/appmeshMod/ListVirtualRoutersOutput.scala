@@ -31,6 +31,6 @@ object ListVirtualRoutersOutput {
     
     inline def setVirtualRouters(value: VirtualRouterList): Self = StObject.set(x, "virtualRouters", value.asInstanceOf[js.Any])
     
-    inline def setVirtualRoutersVarargs(value: VirtualRouterRef*): Self = StObject.set(x, "virtualRouters", js.Array(value :_*))
+    inline def setVirtualRoutersVarargs(value: VirtualRouterRef*): Self = StObject.set(x, "virtualRouters", js.Array(value*))
   }
 }

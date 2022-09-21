@@ -13,15 +13,14 @@ trait SchemaQueryParameterValue extends StObject {
   var arrayValues: js.UndefOr[js.Array[SchemaQueryParameterValue]] = js.undefined
   
   /**
-    * [Optional] The struct field values, in order of the struct type&#39;s
-    * declaration.
+    * [Optional] The struct field values, in order of the struct type's declaration.
     */
-  var structValues: js.UndefOr[StringDictionary[SchemaQueryParameterValue]] = js.undefined
+  var structValues: js.UndefOr[StringDictionary[SchemaQueryParameterValue] | Null] = js.undefined
   
   /**
     * [Optional] The value of this value, if a simple scalar type.
     */
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaQueryParameterValue {
   
@@ -36,13 +35,17 @@ object SchemaQueryParameterValue {
     
     inline def setArrayValuesUndefined: Self = StObject.set(x, "arrayValues", js.undefined)
     
-    inline def setArrayValuesVarargs(value: SchemaQueryParameterValue*): Self = StObject.set(x, "arrayValues", js.Array(value :_*))
+    inline def setArrayValuesVarargs(value: SchemaQueryParameterValue*): Self = StObject.set(x, "arrayValues", js.Array(value*))
     
     inline def setStructValues(value: StringDictionary[SchemaQueryParameterValue]): Self = StObject.set(x, "structValues", value.asInstanceOf[js.Any])
+    
+    inline def setStructValuesNull: Self = StObject.set(x, "structValues", null)
     
     inline def setStructValuesUndefined: Self = StObject.set(x, "structValues", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

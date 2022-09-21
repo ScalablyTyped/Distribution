@@ -10,10 +10,10 @@ object filterDramaMod {
   
   @JSImport("material-ui/svg-icons/image/filter-drama", JSImport.Default)
   @js.native
-  class default () extends ImageFilterDrama
+  open class default () extends ImageFilterDrama
   
   @JSImport("material-ui/svg-icons/image/filter-drama", "ImageFilterDrama")
   @js.native
-  class ImageFilterDrama ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageFilterDrama ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,31 +1,62 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Arn = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Security_
+  - typings.awsSdk.awsSdkStrings.CodeQuality
+  - java.lang.String
+*/
+type AnalysisType = _AnalysisType | String
 
-type AssociationArn = java.lang.String
+type AnalysisTypes = js.Array[AnalysisType]
 
-type AssociationId = java.lang.String
+type Arn = String
 
-type BranchName = java.lang.String
+type AssociationArn = String
 
-type ClientRequestToken = java.lang.String
+type AssociationId = String
 
-type CodeReviewName = java.lang.String
+type BranchName = String
 
-type CodeReviewSummaries = js.Array[typings.awsSdk.codegurureviewerMod.CodeReviewSummary]
+type BuildArtifactsObjectKey = String
 
-type CommitId = java.lang.String
+type ClientRequestToken = String
 
-type ConnectionArn = java.lang.String
+type CodeReviewName = String
 
-type FilePath = java.lang.String
+type CodeReviewSummaries = js.Array[CodeReviewSummary]
 
-type FindingsCount = scala.Double
+type CommitId = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Present_
+  - typings.awsSdk.awsSdkStrings.Absent_
+  - typings.awsSdk.awsSdkStrings.PresentWithErrors
+  - java.lang.String
+*/
+type ConfigFileState = _ConfigFileState | String
+
+type ConnectionArn = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AWS_OWNED_CMK
+  - typings.awsSdk.awsSdkStrings.CUSTOMER_MANAGED_CMK
+  - java.lang.String
+*/
+type EncryptionOption = _EncryptionOption | String
+
+type EventName = String
+
+type EventState = String
+
+type FilePath = String
+
+type FindingsCount = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Completed_
@@ -34,57 +65,80 @@ type FindingsCount = scala.Double
   - typings.awsSdk.awsSdkStrings.Deleting_
   - java.lang.String
 */
-type JobState = typings.awsSdk.codegurureviewerMod._JobState | java.lang.String
+type JobState = _JobState | String
 
-type JobStates = js.Array[typings.awsSdk.codegurureviewerMod.JobState]
+type JobStates = js.Array[JobState]
 
-type LineNumber = scala.Double
+type KMSKeyId = String
 
-type ListCodeReviewsMaxResults = scala.Double
+type LineNumber = Double
 
-type MaxResults = scala.Double
+type LinesOfCodeCount = Double
 
-type MeteredLinesOfCodeCount = scala.Double
+type ListCodeReviewsMaxResults = Double
 
-type Name = java.lang.String
+type ListRecommendationsMaxResults = Double
 
-type Names = js.Array[typings.awsSdk.codegurureviewerMod.Name]
+type LongDescription = String
 
-type NextToken = java.lang.String
+type MaxResults = Double
 
-type Owner = java.lang.String
+type Name = String
 
-type Owners = js.Array[typings.awsSdk.codegurureviewerMod.Owner]
+type Names = js.Array[Name]
+
+type NextToken = String
+
+type Owner = String
+
+type Owners = js.Array[Owner]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CodeCommit_
   - typings.awsSdk.awsSdkStrings.GitHub_
   - typings.awsSdk.awsSdkStrings.Bitbucket_
   - typings.awsSdk.awsSdkStrings.GitHubEnterpriseServer
+  - typings.awsSdk.awsSdkStrings.S3Bucket
   - java.lang.String
 */
-type ProviderType = typings.awsSdk.codegurureviewerMod._ProviderType | java.lang.String
+type ProviderType = _ProviderType | String
 
-type ProviderTypes = js.Array[typings.awsSdk.codegurureviewerMod.ProviderType]
+type ProviderTypes = js.Array[ProviderType]
 
-type PullRequestId = java.lang.String
+type PullRequestId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ThumbsUp
   - typings.awsSdk.awsSdkStrings.ThumbsDown
   - java.lang.String
 */
-type Reaction = typings.awsSdk.codegurureviewerMod._Reaction | java.lang.String
+type Reaction = _Reaction | String
 
-type Reactions = js.Array[typings.awsSdk.codegurureviewerMod.Reaction]
+type Reactions = js.Array[Reaction]
 
-type RecommendationFeedbackSummaries = js.Array[typings.awsSdk.codegurureviewerMod.RecommendationFeedbackSummary]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AWSBestPractices
+  - typings.awsSdk.awsSdkStrings.AWSCloudFormationIssues
+  - typings.awsSdk.awsSdkStrings.DuplicateCode
+  - typings.awsSdk.awsSdkStrings.CodeMaintenanceIssues
+  - typings.awsSdk.awsSdkStrings.ConcurrencyIssues
+  - typings.awsSdk.awsSdkStrings.InputValidations
+  - typings.awsSdk.awsSdkStrings.PythonBestPractices
+  - typings.awsSdk.awsSdkStrings.JavaBestPractices
+  - typings.awsSdk.awsSdkStrings.ResourceLeaks
+  - typings.awsSdk.awsSdkStrings.SecurityIssues
+  - typings.awsSdk.awsSdkStrings.CodeInconsistencies
+  - java.lang.String
+*/
+type RecommendationCategory = _RecommendationCategory | String
 
-type RecommendationId = java.lang.String
+type RecommendationFeedbackSummaries = js.Array[RecommendationFeedbackSummary]
 
-type RecommendationIds = js.Array[typings.awsSdk.codegurureviewerMod.RecommendationId]
+type RecommendationId = String
 
-type RecommendationSummaries = js.Array[typings.awsSdk.codegurureviewerMod.RecommendationSummary]
+type RecommendationIds = js.Array[RecommendationId]
+
+type RecommendationSummaries = js.Array[RecommendationSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Associated_
@@ -94,42 +148,78 @@ type RecommendationSummaries = js.Array[typings.awsSdk.codegurureviewerMod.Recom
   - typings.awsSdk.awsSdkStrings.Disassociated_
   - java.lang.String
 */
-type RepositoryAssociationState = typings.awsSdk.codegurureviewerMod._RepositoryAssociationState | java.lang.String
+type RepositoryAssociationState = _RepositoryAssociationState | String
 
-type RepositoryAssociationStates = js.Array[typings.awsSdk.codegurureviewerMod.RepositoryAssociationState]
+type RepositoryAssociationStates = js.Array[RepositoryAssociationState]
 
-type RepositoryAssociationSummaries = js.Array[typings.awsSdk.codegurureviewerMod.RepositoryAssociationSummary]
+type RepositoryAssociationSummaries = js.Array[RepositoryAssociationSummary]
 
-type RepositoryNames = js.Array[typings.awsSdk.codegurureviewerMod.Name]
+type RepositoryNames = js.Array[Name]
 
-type StateReason = java.lang.String
+type RequestId = String
 
-type TagKey = java.lang.String
+type Requester = String
 
-type TagKeyList = js.Array[typings.awsSdk.codegurureviewerMod.TagKey]
+type RuleId = String
 
-type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codegurureviewerMod.TagValue]
+type RuleName = String
 
-type TagValue = java.lang.String
+type RuleTag = String
 
-type Text = java.lang.String
+type RuleTags = js.Array[RuleTag]
 
-type TimeStamp = typings.std.Date
+type S3BucketName = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Info_
+  - typings.awsSdk.awsSdkStrings.Low_
+  - typings.awsSdk.awsSdkStrings.Medium_
+  - typings.awsSdk.awsSdkStrings.High_
+  - typings.awsSdk.awsSdkStrings.Critical_
+  - java.lang.String
+*/
+type Severity = _Severity | String
+
+type ShortDescription = String
+
+type SourceCodeArtifactsObjectKey = String
+
+type StateReason = String
+
+type TagKey = String
+
+type TagKeyList = js.Array[TagKey]
+
+type TagMap = StringDictionary[TagValue]
+
+type TagValue = String
+
+type Text = String
+
+type TimeStamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PullRequest
   - typings.awsSdk.awsSdkStrings.RepositoryAnalysis
   - java.lang.String
 */
-type Type = typings.awsSdk.codegurureviewerMod._Type | java.lang.String
+type Type = _Type | String
 
-type UserId = java.lang.String
+type UserId = String
 
-type UserIds = js.Array[typings.awsSdk.codegurureviewerMod.UserId]
+type UserIds = js.Array[UserId]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.GitHub_
+  - typings.awsSdk.awsSdkStrings.GitLab
+  - typings.awsSdk.awsSdkStrings.NativeS3
+  - java.lang.String
+*/
+type VendorName = _VendorName | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-09-19`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.codegurureviewerMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

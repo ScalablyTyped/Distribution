@@ -40,7 +40,7 @@ object ChangeFontNameCommand {
     
     inline def setFontNames(value: js.Array[String]): Self = StObject.set(x, "fontNames", value.asInstanceOf[js.Any])
     
-    inline def setFontNamesVarargs(value: String*): Self = StObject.set(x, "fontNames", js.Array(value :_*))
+    inline def setFontNamesVarargs(value: String*): Self = StObject.set(x, "fontNames", js.Array(value*))
     
     inline def setGetState(value: () => CommandState[String]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }

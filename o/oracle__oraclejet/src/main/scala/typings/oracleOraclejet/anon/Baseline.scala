@@ -51,7 +51,7 @@ object Baseline {
     
     inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
     
-    inline def setLabelPositionVarargs(value: String*): Self = StObject.set(x, "labelPosition", js.Array(value :_*))
+    inline def setLabelPositionVarargs(value: String*): Self = StObject.set(x, "labelPosition", js.Array(value*))
     
     inline def setProgress(value: SvgStyle): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     

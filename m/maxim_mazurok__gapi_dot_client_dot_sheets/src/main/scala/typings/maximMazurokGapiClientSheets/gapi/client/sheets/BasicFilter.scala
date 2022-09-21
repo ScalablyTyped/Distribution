@@ -14,7 +14,7 @@ trait BasicFilter extends StObject {
   var criteria: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.FilterCriteria}
-    */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.BasicFilter & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.BasicFilter & TopLevel[Any]
   ] = js.undefined
   
   /** The filter criteria per column. Both criteria and filter_specs are populated in responses. If both fields are specified in an update request, this field takes precedence. */
@@ -38,7 +38,7 @@ object BasicFilter {
     inline def setCriteria(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.FilterCriteria}
-      */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.BasicFilter & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.BasicFilter & TopLevel[Any]
     ): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
@@ -47,7 +47,7 @@ object BasicFilter {
     
     inline def setFilterSpecsUndefined: Self = StObject.set(x, "filterSpecs", js.undefined)
     
-    inline def setFilterSpecsVarargs(value: FilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value :_*))
+    inline def setFilterSpecsVarargs(value: FilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value*))
     
     inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
@@ -57,6 +57,6 @@ object BasicFilter {
     
     inline def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
     
-    inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
+    inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value*))
   }
 }

@@ -15,7 +15,7 @@ trait IText
   var fontFamily: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String/Number) */
-  var fontSize: js.UndefOr[js.Any] = js.undefined
+  var fontSize: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var fontStyle: js.UndefOr[String] = js.undefined
@@ -32,9 +32,7 @@ trait IText
     * @returns * returns false to stop rendering in this frame. All the sprite haven't been rendered will have their dirty flag untouched.
     */
   @JSName("render")
-  var render_IText: js.UndefOr[
-    js.Function2[/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], js.Any]
-  ] = js.undefined
+  var render_IText: js.UndefOr[js.Function2[/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Config Option] (String) */
   var text: js.UndefOr[String] = js.undefined
@@ -66,7 +64,7 @@ object IText {
     
     inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
-    inline def setFontSize(value: js.Any): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Any): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
@@ -84,7 +82,7 @@ object IText {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setRender(value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+    inline def setRender(value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     
     inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     

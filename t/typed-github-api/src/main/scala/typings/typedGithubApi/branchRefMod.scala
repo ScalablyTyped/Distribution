@@ -13,7 +13,7 @@ object branchRefMod {
   
   @JSImport("typed-github-api/dist/branch-ref", "BranchRefClass")
   @js.native
-  class BranchRefClass protected ()
+  open class BranchRefClass protected ()
     extends GitHubRef
        with BranchRef {
     def this(repository: RepositoryRefClass, name: String) = this()

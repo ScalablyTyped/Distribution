@@ -1,6 +1,10 @@
 package typings.websocket.mod
 
+import org.scalablytyped.runtime.Instantiable1
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,14 +22,6 @@ trait IServerConfig
   var autoAcceptConnections: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The Nagle Algorithm makes more efficient use of network resources by introducing a
-    * small delay before sending small packets so that multiple messages can be batched
-    * together before going onto the wire. This however comes at the cost of latency.
-    * @default true
-    */
-  var disableNagleAlgorithm: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * If true, the server will consider any connection that has not received any
     * data within the amount of time specified by `keepaliveGracePeriod` after a
     * `keepalive` ping has been sent. Ignored if `keepalive` is false.
@@ -34,7 +30,33 @@ trait IServerConfig
   var dropConnectionOnKeepaliveTimeout: js.UndefOr[Boolean] = js.undefined
   
   /** The http or https server instance(s) to attach to */
-  var httpServer: Server | typings.node.httpsMod.Server | (js.Array[Server | typings.node.httpsMod.Server])
+  var httpServer: (Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ]) | (typings.node.httpsMod.Server[
+    Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+    ]
+  ]) | (js.Array[
+    (Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ]) | (typings.node.httpsMod.Server[
+      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+      ]
+    ])
+  ])
   
   /**
     * Whether or not the X-Forwarded-For header should be respected.
@@ -86,7 +108,33 @@ trait IServerConfig
 object IServerConfig {
   
   inline def apply(
-    httpServer: Server | typings.node.httpsMod.Server | (js.Array[Server | typings.node.httpsMod.Server])
+    httpServer: (Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ]) | (typings.node.httpsMod.Server[
+      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+      ]
+    ]) | (js.Array[
+      (Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ]) | (typings.node.httpsMod.Server[
+        Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        ]
+      ])
+    ])
   ): IServerConfig = {
     val __obj = js.Dynamic.literal(httpServer = httpServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IServerConfig]
@@ -98,17 +146,55 @@ object IServerConfig {
     
     inline def setAutoAcceptConnectionsUndefined: Self = StObject.set(x, "autoAcceptConnections", js.undefined)
     
-    inline def setDisableNagleAlgorithm(value: Boolean): Self = StObject.set(x, "disableNagleAlgorithm", value.asInstanceOf[js.Any])
-    
-    inline def setDisableNagleAlgorithmUndefined: Self = StObject.set(x, "disableNagleAlgorithm", js.undefined)
-    
     inline def setDropConnectionOnKeepaliveTimeout(value: Boolean): Self = StObject.set(x, "dropConnectionOnKeepaliveTimeout", value.asInstanceOf[js.Any])
     
     inline def setDropConnectionOnKeepaliveTimeoutUndefined: Self = StObject.set(x, "dropConnectionOnKeepaliveTimeout", js.undefined)
     
-    inline def setHttpServer(value: Server | typings.node.httpsMod.Server | (js.Array[Server | typings.node.httpsMod.Server])): Self = StObject.set(x, "httpServer", value.asInstanceOf[js.Any])
+    inline def setHttpServer(
+      value: (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ]) | (js.Array[
+          (Server[
+            Instantiable1[/* socket */ Socket, IncomingMessage], 
+            Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+              ServerResponse[IncomingMessage]
+            ]
+          ]) | (typings.node.httpsMod.Server[
+            Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+            Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+              typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+            ]
+          ])
+        ])
+    ): Self = StObject.set(x, "httpServer", value.asInstanceOf[js.Any])
     
-    inline def setHttpServerVarargs(value: (Server | typings.node.httpsMod.Server)*): Self = StObject.set(x, "httpServer", js.Array(value :_*))
+    inline def setHttpServerVarargs(
+      value: ((Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ]))*
+    ): Self = StObject.set(x, "httpServer", js.Array(value*))
     
     inline def setIgnoreXForwardedFor(value: Boolean): Self = StObject.set(x, "ignoreXForwardedFor", value.asInstanceOf[js.Any])
     

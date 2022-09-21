@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/Node/index", "WorleyNoise3DBlock")
 @js.native
-class WorleyNoise3DBlock protected ()
+open class WorleyNoise3DBlock protected ()
   extends typings.babylonjs.blocksIndexMod.WorleyNoise3DBlock {
   /**
     * Creates a new WorleyNoise3DBlock

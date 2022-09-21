@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IEditActorCellContext extends StObject {
   
-  def SetCurrentValue(value: js.Any): Unit
+  def SetCurrentValue(value: Any): Unit
   
   var cellExpandSpace: Bottom
   
@@ -26,7 +26,7 @@ trait IEditActorCellContext extends StObject {
 object IEditActorCellContext {
   
   inline def apply(
-    SetCurrentValue: js.Any => Unit,
+    SetCurrentValue: Any => Unit,
     cellExpandSpace: Bottom,
     column: ColumnInfo,
     field: GridField,
@@ -55,6 +55,6 @@ object IEditActorCellContext {
     
     inline def setRecord(value: IRecord): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
     
-    inline def setSetCurrentValue(value: js.Any => Unit): Self = StObject.set(x, "SetCurrentValue", js.Any.fromFunction1(value))
+    inline def setSetCurrentValue(value: Any => Unit): Self = StObject.set(x, "SetCurrentValue", js.Any.fromFunction1(value))
   }
 }

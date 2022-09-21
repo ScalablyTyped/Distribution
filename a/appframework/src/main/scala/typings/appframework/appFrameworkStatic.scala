@@ -13,7 +13,7 @@ trait appFrameworkStatic extends StObject {
   
   def apply(collection: appFrameworkCollection): appFrameworkCollection = js.native
   def apply(element: HTMLElement): appFrameworkCollection = js.native
-  def apply(`object`: js.Any): appFrameworkCollection = js.native
+  def apply(`object`: Any): appFrameworkCollection = js.native
   /**
     * This is the internal appframework object that gets extended and added on to it
     * This is also the start of our query selector engine
@@ -21,7 +21,7 @@ trait appFrameworkStatic extends StObject {
     * @param {String|Element|Object} [context]
     */
   def apply(selector: String): appFrameworkCollection = js.native
-  def apply(selector: String, context: js.Any): appFrameworkCollection = js.native
+  def apply(selector: String, context: Any): appFrameworkCollection = js.native
   
   /**
     * Creates a custom event to be used internally.
@@ -30,7 +30,7 @@ trait appFrameworkStatic extends StObject {
     * @return {event} a custom event that can then be dispatched
     * @title $.Event(type,props);
     */
-  def Event(`type`: String, props: js.Any): js.Any = js.native
+  def Event(`type`: String, props: Any): Any = js.native
   
   /**
     * Execute an Ajax call with the given options
@@ -72,9 +72,9 @@ trait appFrameworkStatic extends StObject {
     * @param {Array} arguments
     */
   def asap(callback: js.Function): Unit = js.native
-  def asap(callback: js.Function, context: js.Any): Unit = js.native
-  def asap(callback: js.Function, context: js.Any, args: js.Array[js.Any]): Unit = js.native
-  def asap(callback: js.Function, context: Unit, args: js.Array[js.Any]): Unit = js.native
+  def asap(callback: js.Function, context: Any): Unit = js.native
+  def asap(callback: js.Function, context: Any, args: js.Array[Any]): Unit = js.native
+  def asap(callback: js.Function, context: Unit, args: js.Array[Any]): Unit = js.native
   
   /* The following are for events on objects */
   /**
@@ -87,7 +87,7 @@ trait appFrameworkStatic extends StObject {
     * @param {Function} function to execute
     * @title $.bind(object,event,function);
     */
-  def bind(`object`: js.Any, event: String, fn: js.Function): Unit = js.native
+  def bind(`object`: Any, event: String, fn: js.Function): Unit = js.native
   
   /**
     * Function to clean up node content to prevent memory leaks
@@ -116,9 +116,8 @@ trait appFrameworkStatic extends StObject {
     * @title $.create(type,[params])
     */
   def create(`type`: String): appFrameworkCollection = js.native
-  def create(`type`: String, params: js.Any): appFrameworkCollection = js.native
+  def create(`type`: String, params: Any): appFrameworkCollection = js.native
   
-  def each(collection: js.Any, fn: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): Unit = js.native
   /**
     * Iterates through elements and executes a callback.  Returns if false
     ```
@@ -129,7 +128,8 @@ trait appFrameworkStatic extends StObject {
     * @return {Array} elements
     * @title $.each(elements,callback)
     */
-  def each(collection: js.Array[js.Any], fn: js.Function2[/* index */ Double, /* item */ js.Any, js.Any]): Unit = js.native
+  def each(collection: js.Array[Any], fn: js.Function2[/* index */ Double, /* item */ Any, Any]): Unit = js.native
+  def each(collection: Any, fn: js.Function2[/* key */ String, /* value */ Any, Any]): Unit = js.native
   
   /**
     * Extends an object with additional arguments
@@ -142,7 +142,7 @@ trait appFrameworkStatic extends StObject {
     * @return {Object} [target]
     * @title $.extend(target,{params})
     */
-  def extend(target: js.Any, sources: js.Any*): js.Any = js.native
+  def extend(target: Any, sources: Any*): Any = js.native
   
   var feat: CssPrefix = js.native
   
@@ -163,7 +163,7 @@ trait appFrameworkStatic extends StObject {
   def get(
     url: String,
     fn: js.Function3[
-      /* data */ js.Any, 
+      /* data */ Any, 
       /* status */ js.UndefOr[String], 
       /* xhr */ js.UndefOr[XMLHttpRequest], 
       Unit
@@ -182,8 +182,8 @@ trait appFrameworkStatic extends StObject {
   
   def getJSON(
     url: String,
-    data: js.Any,
-    fn: js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
+    data: Any,
+    fn: js.Function3[/* data */ Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
   ): XMLHttpRequest = js.native
   /**
     * Shorthand call to an Ajax request that expects a JSON response
@@ -198,7 +198,7 @@ trait appFrameworkStatic extends StObject {
   def getJSON(
     url: String,
     fn: js.Function3[
-      /* data */ js.Any, 
+      /* data */ Any, 
       /* status */ js.UndefOr[String], 
       /* xhr */ js.UndefOr[XMLHttpRequest], 
       Unit
@@ -216,7 +216,7 @@ trait appFrameworkStatic extends StObject {
     * @title $.is$(param)
     */
   @JSName("is$")
-  def is$(obj: js.Any): Boolean = js.native
+  def is$(obj: Any): Boolean = js.native
   
   /**
     * Checks to see if the parameter is an array
@@ -229,7 +229,7 @@ trait appFrameworkStatic extends StObject {
     * @example $.isArray([1]);
     * @title $.isArray(param)
     */
-  def isArray(`object`: js.Any): Boolean = js.native
+  def isArray(`object`: Any): Boolean = js.native
   
   /**
     * Checks to see if the parameter is a function
@@ -241,7 +241,7 @@ trait appFrameworkStatic extends StObject {
     * @return {Boolean}
     * @title $.isFunction(param)
     */
-  def isFunction(`object`: js.Any): Boolean = js.native
+  def isFunction(`object`: Any): Boolean = js.native
   
   /**
     * Checks to see if the parameter is a object
@@ -253,7 +253,7 @@ trait appFrameworkStatic extends StObject {
     * @return {Boolean}
     * @title $.isObject(param)
     */
-  def isObject(`object`: js.Any): Boolean = js.native
+  def isObject(`object`: Any): Boolean = js.native
   
   /**
     * Execute a jsonP call, allowing cross domain scripting
@@ -278,7 +278,7 @@ trait appFrameworkStatic extends StObject {
     * @return {Object} appframework object with elements in it
     * @title $.map(elements,callback)
     */
-  def map(collection: js.Array[js.Any], fn: js.Function2[/* item */ js.Any, /* index */ Double, js.Any]): js.Array[js.Any] = js.native
+  def map(collection: js.Array[Any], fn: js.Function2[/* item */ Any, /* index */ Double, Any]): js.Array[Any] = js.native
   
   /**
     * Helper function to parse the user agent.  Sets the following
@@ -314,8 +314,8 @@ trait appFrameworkStatic extends StObject {
     * @return {String} Key/value pair representation
     * @title $.param(object,[prefix];
     */
-  def param(`object`: js.Any): String = js.native
-  def param(`object`: js.Any, prefix: String): String = js.native
+  def param(`object`: Any): String = js.native
+  def param(`object`: Any, prefix: String): String = js.native
   
   /**
     * this function executes javascript in HTML.
@@ -337,7 +337,7 @@ trait appFrameworkStatic extends StObject {
     * @return {Object}
     * @title $.parseJSON(string)
     */
-  def parseJSON(str: String): js.Any = js.native
+  def parseJSON(str: String): Any = js.native
   
   /**
     * Helper function to convert XML into  the DOM node representation
@@ -348,13 +348,13 @@ trait appFrameworkStatic extends StObject {
     * @return {Object} DOM nodes
     * @title $.parseXML(string)
     */
-  def parseXML(str: String): js.Any = js.native
+  def parseXML(str: String): Any = js.native
   
   def post(
     url: String,
-    data: js.Any,
+    data: Any,
     fn: js.Function3[
-      /* data */ js.Any, 
+      /* data */ Any, 
       /* status */ js.UndefOr[String], 
       /* xhr */ js.UndefOr[XMLHttpRequest], 
       Unit
@@ -362,9 +362,9 @@ trait appFrameworkStatic extends StObject {
   ): XMLHttpRequest = js.native
   def post(
     url: String,
-    data: js.Any,
+    data: Any,
     fn: js.Function3[
-      /* data */ js.Any, 
+      /* data */ Any, 
       /* status */ js.UndefOr[String], 
       /* xhr */ js.UndefOr[XMLHttpRequest], 
       Unit
@@ -385,7 +385,7 @@ trait appFrameworkStatic extends StObject {
   def post(
     url: String,
     fn: js.Function3[
-      /* data */ js.Any, 
+      /* data */ Any, 
       /* status */ js.UndefOr[String], 
       /* xhr */ js.UndefOr[XMLHttpRequest], 
       Unit
@@ -394,7 +394,7 @@ trait appFrameworkStatic extends StObject {
   def post(
     url: String,
     fn: js.Function3[
-      /* data */ js.Any, 
+      /* data */ Any, 
       /* status */ js.UndefOr[String], 
       /* xhr */ js.UndefOr[XMLHttpRequest], 
       Unit
@@ -417,7 +417,7 @@ trait appFrameworkStatic extends StObject {
     * @param {Object} Context
     * @title $.proxy(callback,context);
     */
-  def proxy(callback: js.Function, context: js.Any): Unit = js.native
+  def proxy(callback: js.Function, context: Any): Unit = js.native
   
   /**
     * $.query  - a faster alertnative to $("div");
@@ -430,7 +430,7 @@ trait appFrameworkStatic extends StObject {
     * @title $.query(selector,[context])
     */
   def query(selector: String): appFrameworkCollection = js.native
-  def query(selector: String, context: js.Any): appFrameworkCollection = js.native
+  def query(selector: String, context: Any): appFrameworkCollection = js.native
   
   /**
     * Trigger an event to an object instead of a DOM Node
@@ -442,8 +442,8 @@ trait appFrameworkStatic extends StObject {
     * @param {Array} arguments
     * @title $.trigger(object,event,argments);
     */
-  def trigger(`object`: js.Any, event: String): Unit = js.native
-  def trigger(`object`: js.Any, event: String, args: js.Array[js.Any]): Unit = js.native
+  def trigger(`object`: Any, event: String): Unit = js.native
+  def trigger(`object`: Any, event: String, args: js.Array[Any]): Unit = js.native
   
   /**
     * Unbind an event to an object instead of a DOM Node
@@ -455,7 +455,7 @@ trait appFrameworkStatic extends StObject {
     * @param {Function} function to execute
     * @title $.unbind(object,event,function);
     */
-  def unbind(`object`: js.Any, event: String, fn: js.Function): Unit = js.native
+  def unbind(`object`: Any, event: String, fn: js.Function): Unit = js.native
   
   /**
     * Utility function to create a psuedo GUID

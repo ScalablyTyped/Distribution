@@ -10,10 +10,10 @@ Clone a Readable stream, safely
 | ------------------ | :-------------: |
 | Full name          | cloneable-readable |
 | Keywords           | readable, stream, clone |
-| # releases         | 4 |
-| # dependents       | 12 |
-| # downloads        | 88298305 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0221202333333334E7 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/mcollina/cloneable-readable#readme)

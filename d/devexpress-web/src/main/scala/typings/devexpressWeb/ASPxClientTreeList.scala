@@ -208,13 +208,13 @@ trait ASPxClientTreeList
     */
   var FocusedNodeChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTreeList]] = js.native
   
-  def GetAutoFilterEditor(column: String): js.Any = js.native
-  def GetAutoFilterEditor(column: Double): js.Any = js.native
+  def GetAutoFilterEditor(column: String): Any = js.native
+  def GetAutoFilterEditor(column: Double): Any = js.native
   /**
     * Returns the editor used to edit the value in the auto filter row for the specified data column. An object that represents the editor used to edit the value in the specified auto filter row cell. null (Nothing in Visual Basic) if the editor was not found.
     * @param column An ASPxClientTreeListColumn object that represents the data column within the ASPxTreeList.
     */
-  def GetAutoFilterEditor(column: ASPxClientTreeListColumn): js.Any = js.native
+  def GetAutoFilterEditor(column: ASPxClientTreeListColumn): Any = js.native
   
   /**
     * Returns the client column which is bound to the specified data source field. An ASPxClientTreeListColumn object that represents the client column bound to the specified data source field.
@@ -239,26 +239,26 @@ trait ASPxClientTreeList
     */
   def GetColumnCount(): Double = js.native
   
-  def GetEditValue(column: String): js.Any = js.native
-  def GetEditValue(column: Double): js.Any = js.native
+  def GetEditValue(column: String): Any = js.native
+  def GetEditValue(column: Double): Any = js.native
   /**
     * Returns the value of the specified edit cell. A String value that represents the value of the edit cell, which corresponds to the specified data column.
     * @param column An ASPxClientTreeListColumn object that represents the data column within the client ASPxTreeList.
     */
-  def GetEditValue(column: ASPxClientTreeListColumn): js.Any = js.native
+  def GetEditValue(column: ASPxClientTreeListColumn): Any = js.native
   
   /**
     * Gets the key value of the node currently being edited.
     */
   def GetEditingNodeKey(): String = js.native
   
-  def GetEditor(column: String): js.Any = js.native
-  def GetEditor(column: Double): js.Any = js.native
+  def GetEditor(column: String): Any = js.native
+  def GetEditor(column: Double): Any = js.native
   /**
     * Returns the editor used to edit the specified column's values. An object that represents the specified column's editor.
     * @param column An ASPxClientTreeListColumn object that represents the data column within the client ASPxTreeList.
     */
-  def GetEditor(column: ASPxClientTreeListColumn): js.Any = js.native
+  def GetEditor(column: ASPxClientTreeListColumn): Any = js.native
   
   /**
     * Gets information about a focused cell.
@@ -279,7 +279,7 @@ trait ASPxClientTreeList
     * Returns an HTML table row that represents the specified node. An object that represents the HTML table row, which corresponds to the specified node.
     * @param nodeKey A string value that identifies the node.
     */
-  def GetNodeHtmlElement(nodeKey: String): js.Any = js.native
+  def GetNodeHtmlElement(nodeKey: String): Any = js.native
   
   /**
     * Returns the specified node's state. A String value that represents the specified node's state.
@@ -476,13 +476,13 @@ trait ASPxClientTreeList
     */
   var SelectionChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTreeList]] = js.native
   
-  def SetEditValue(column: String, value: js.Any): Unit = js.native
-  def SetEditValue(column: Double, value: js.Any): Unit = js.native
+  def SetEditValue(column: String, value: Any): Unit = js.native
+  def SetEditValue(column: Double, value: Any): Unit = js.native
   /**
     * Sets the value of the specified edit cell.
     * @param value An object that specifies the edit cell's new value.
     */
-  def SetEditValue(column: ASPxClientTreeListColumn, value: js.Any): Unit = js.native
+  def SetEditValue(column: ASPxClientTreeListColumn, value: Any): Unit = js.native
   
   /**
     * Enables or disables the current filter.
@@ -526,7 +526,7 @@ trait ASPxClientTreeList
     * @param htmlElement An object that specifies the HTML element relative to whose position the customization window is invoked.
     */
   def ShowCustomizationWindow(): Unit = js.native
-  def ShowCustomizationWindow(htmlElement: js.Any): Unit = js.native
+  def ShowCustomizationWindow(htmlElement: Any): Unit = js.native
   
   /**
     * Displays the Filter Control.

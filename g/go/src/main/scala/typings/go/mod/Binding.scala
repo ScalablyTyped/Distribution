@@ -23,14 +23,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {function(*,*=) | null=} conv A function converting the data property value to the value to set the target property.
   *   If the function is null or not supplied, no conversion takes place.
   */
-class Binding () extends StObject {
+open class Binding () extends StObject {
   def this(targetprop: String) = this()
   def this(targetprop: String, sourceprop: String) = this()
   def this(targetprop: Unit, sourceprop: String) = this()
-  def this(targetprop: String, sourceprop: String, conv: js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]) = this()
-  def this(targetprop: String, sourceprop: Unit, conv: js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]) = this()
-  def this(targetprop: Unit, sourceprop: String, conv: js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]) = this()
-  def this(targetprop: Unit, sourceprop: Unit, conv: js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]) = this()
+  def this(targetprop: String, sourceprop: String, conv: js.Function2[/* a */ Any, /* b */ Any, Any]) = this()
+  def this(targetprop: String, sourceprop: Unit, conv: js.Function2[/* a */ Any, /* b */ Any, Any]) = this()
+  def this(targetprop: Unit, sourceprop: String, conv: js.Function2[/* a */ Any, /* b */ Any, Any]) = this()
+  def this(targetprop: Unit, sourceprop: Unit, conv: js.Function2[/* a */ Any, /* b */ Any, Any]) = this()
   
   /**
     * Gets or sets a converter function to apply to the GraphObject property value
@@ -49,7 +49,7 @@ class Binding () extends StObject {
     * If the .sourceProperty is the empty string, the function should
     * modify the second argument, which will be the source data object.
     */
-  def backConverter(a: js.Any, b: js.Any): js.Any = js.native
+  def backConverter(a: Any, b: Any): Any = js.native
   
   /**
     * Gets or sets a converter function to apply to the data property value
@@ -68,7 +68,7 @@ class Binding () extends StObject {
     * If the .targetProperty is the empty string, the function should
     * modify the second argument, which will be the target object.
     */
-  def converter(a: js.Any, b: js.Any): js.Any = js.native
+  def converter(a: Any, b: Any): Any = js.native
   
   /**
     * Modify this Binding to set its .mode to be Binding.TwoWay, and
@@ -80,7 +80,7 @@ class Binding () extends StObject {
     * @param {function(*,*=) | null=} backconv
     */
   def makeTwoWay(): Binding = js.native
-  def makeTwoWay(backconv: js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]): Binding = js.native
+  def makeTwoWay(backconv: js.Function2[/* a */ Any, /* b */ Any, Any]): Binding = js.native
   
   /**
     * Gets or sets the directions and frequency in which the binding may be evaluated.
@@ -172,5 +172,5 @@ object Binding {
     * @param {*} val
     */
   /* static member */
-  inline def toString_(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toString_(`val`: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

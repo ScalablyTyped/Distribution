@@ -44,7 +44,7 @@ trait ExtraButtonsOptions extends StObject {
     *
     * @default `validation`
     */
-  var validation: js.UndefOr[js.Any] = js.undefined
+  var validation: js.UndefOr[Any] = js.undefined
 }
 object ExtraButtonsOptions {
   
@@ -69,7 +69,7 @@ object ExtraButtonsOptions {
     
     inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
-    inline def setValidation(value: js.Any): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    inline def setValidation(value: Any): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
     inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
   }

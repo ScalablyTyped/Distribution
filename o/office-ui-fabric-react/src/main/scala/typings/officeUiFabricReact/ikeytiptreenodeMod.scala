@@ -81,7 +81,7 @@ object ikeytiptreenodeMod {
       
       inline def setChildren(value: js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -99,7 +99,7 @@ object ikeytiptreenodeMod {
       
       inline def setKeySequences(value: js.Array[String]): Self = StObject.set(x, "keySequences", value.asInstanceOf[js.Any])
       
-      inline def setKeySequencesVarargs(value: String*): Self = StObject.set(x, "keySequences", js.Array(value :_*))
+      inline def setKeySequencesVarargs(value: String*): Self = StObject.set(x, "keySequences", js.Array(value*))
       
       inline def setOnExecute(value: (/* executeTarget */ HTMLElement | Null, /* target */ HTMLElement | Null) => Unit): Self = StObject.set(x, "onExecute", js.Any.fromFunction2(value))
       
@@ -113,7 +113,7 @@ object ikeytiptreenodeMod {
       
       inline def setOverflowSetSequenceUndefined: Self = StObject.set(x, "overflowSetSequence", js.undefined)
       
-      inline def setOverflowSetSequenceVarargs(value: String*): Self = StObject.set(x, "overflowSetSequence", js.Array(value :_*))
+      inline def setOverflowSetSequenceVarargs(value: String*): Self = StObject.set(x, "overflowSetSequence", js.Array(value*))
       
       inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       

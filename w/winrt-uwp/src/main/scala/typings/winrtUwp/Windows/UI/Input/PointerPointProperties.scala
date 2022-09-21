@@ -90,7 +90,7 @@ trait PointerPointProperties extends StObject {
   /** Gets the plane angle between the X-Z plane and the plane that contains the X axis and the axis of the input device (typically a pen/stylus). */
   var ytilt: Double
   
-  var zdistance: js.Any
+  var zdistance: Any
 }
 object PointerPointProperties {
   
@@ -119,7 +119,7 @@ object PointerPointProperties {
     twist: Double,
     xtilt: Double,
     ytilt: Double,
-    zdistance: js.Any
+    zdistance: Any
   ): PointerPointProperties = {
     val __obj = js.Dynamic.literal(contactRect = contactRect.asInstanceOf[js.Any], contactRectRaw = contactRectRaw.asInstanceOf[js.Any], getUsageValue = js.Any.fromFunction2(getUsageValue), hasUsage = js.Any.fromFunction2(hasUsage), isBarrelButtonPressed = isBarrelButtonPressed.asInstanceOf[js.Any], isCanceled = isCanceled.asInstanceOf[js.Any], isEraser = isEraser.asInstanceOf[js.Any], isHorizontalMouseWheel = isHorizontalMouseWheel.asInstanceOf[js.Any], isInRange = isInRange.asInstanceOf[js.Any], isInverted = isInverted.asInstanceOf[js.Any], isLeftButtonPressed = isLeftButtonPressed.asInstanceOf[js.Any], isMiddleButtonPressed = isMiddleButtonPressed.asInstanceOf[js.Any], isPrimary = isPrimary.asInstanceOf[js.Any], isRightButtonPressed = isRightButtonPressed.asInstanceOf[js.Any], isXButton1Pressed = isXButton1Pressed.asInstanceOf[js.Any], isXButton2Pressed = isXButton2Pressed.asInstanceOf[js.Any], mouseWheelDelta = mouseWheelDelta.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], pointerUpdateKind = pointerUpdateKind.asInstanceOf[js.Any], pressure = pressure.asInstanceOf[js.Any], touchConfidence = touchConfidence.asInstanceOf[js.Any], twist = twist.asInstanceOf[js.Any], xtilt = xtilt.asInstanceOf[js.Any], ytilt = ytilt.asInstanceOf[js.Any], zdistance = zdistance.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointerPointProperties]
@@ -175,6 +175,6 @@ object PointerPointProperties {
     
     inline def setYtilt(value: Double): Self = StObject.set(x, "ytilt", value.asInstanceOf[js.Any])
     
-    inline def setZdistance(value: js.Any): Self = StObject.set(x, "zdistance", value.asInstanceOf[js.Any])
+    inline def setZdistance(value: Any): Self = StObject.set(x, "zdistance", value.asInstanceOf[js.Any])
   }
 }

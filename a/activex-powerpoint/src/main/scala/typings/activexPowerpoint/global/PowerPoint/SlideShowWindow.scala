@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.SlideShowWindow")
 @js.native
-/* private */ class SlideShowWindow ()
+/* private */ open class SlideShowWindow ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.SlideShowWindow {
   
@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Left: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.SlideShowWindow_typekey")

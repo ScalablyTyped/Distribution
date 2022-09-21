@@ -88,7 +88,7 @@ object GoogleAppsScriptOAuth2 {
       * Gets the last error that occurred this execution when trying to
       * automatically refresh or generate an access token.
       */
-    def getLastError(): js.Any = js.native
+    def getLastError(): Any = js.native
     
     /**
       * Returns the redirect URI that will be used for this service.
@@ -281,8 +281,8 @@ object GoogleAppsScriptOAuth2 {
       * Gets a stored value.
       * If optSkipMemoryCheck, bypass the local memory cache when fetching the token.
       */
-    def getValue(key: String): js.Any = js.native
-    def getValue(key: String, optSkipMemoryCheck: Boolean): js.Any = js.native
+    def getValue(key: String): Any = js.native
+    def getValue(key: String, optSkipMemoryCheck: Boolean): Any = js.native
     
     /**
       * Removes a stored value.
@@ -297,7 +297,7 @@ object GoogleAppsScriptOAuth2 {
     /**
       * Stores value.
       */
-    def setValue(key: String, value: js.Any): Unit = js.native
+    def setValue(key: String, value: Any): Unit = js.native
   }
   
   trait TokenPayload extends StObject {

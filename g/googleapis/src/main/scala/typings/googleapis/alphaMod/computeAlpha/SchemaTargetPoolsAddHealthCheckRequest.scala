@@ -24,6 +24,6 @@ object SchemaTargetPoolsAddHealthCheckRequest {
     
     inline def setHealthChecksUndefined: Self = StObject.set(x, "healthChecks", js.undefined)
     
-    inline def setHealthChecksVarargs(value: SchemaHealthCheckReference*): Self = StObject.set(x, "healthChecks", js.Array(value :_*))
+    inline def setHealthChecksVarargs(value: SchemaHealthCheckReference*): Self = StObject.set(x, "healthChecks", js.Array(value*))
   }
 }

@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
-import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.User
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.BulkEditAdvertiserAssignedTargetingOptionsRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +13,9 @@ trait QuotaUserResourceUploadType extends StObject {
   
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
+  
+  /** Required. The ID of the advertiser. */
+  var advertiserId: String
   
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
@@ -36,7 +39,7 @@ trait QuotaUserResourceUploadType extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: User
+  var resource: BulkEditAdvertiserAssignedTargetingOptionsRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -46,8 +49,8 @@ trait QuotaUserResourceUploadType extends StObject {
 }
 object QuotaUserResourceUploadType {
   
-  inline def apply(resource: User): QuotaUserResourceUploadType = {
-    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String, resource: BulkEditAdvertiserAssignedTargetingOptionsRequest): QuotaUserResourceUploadType = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUserResourceUploadType]
   }
   
@@ -60,6 +63,8 @@ object QuotaUserResourceUploadType {
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -89,7 +94,7 @@ object QuotaUserResourceUploadType {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: User): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: BulkEditAdvertiserAssignedTargetingOptionsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

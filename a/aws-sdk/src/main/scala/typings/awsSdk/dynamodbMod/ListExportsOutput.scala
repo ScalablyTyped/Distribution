@@ -29,7 +29,7 @@ object ListExportsOutput {
     
     inline def setExportSummariesUndefined: Self = StObject.set(x, "ExportSummaries", js.undefined)
     
-    inline def setExportSummariesVarargs(value: ExportSummary*): Self = StObject.set(x, "ExportSummaries", js.Array(value :_*))
+    inline def setExportSummariesVarargs(value: ExportSummary*): Self = StObject.set(x, "ExportSummaries", js.Array(value*))
     
     inline def setNextToken(value: ExportNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

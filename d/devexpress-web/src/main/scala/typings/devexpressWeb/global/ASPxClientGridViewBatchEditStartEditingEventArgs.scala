@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridViewBatchEditStartEditingEventArgs")
 @js.native
-class ASPxClientGridViewBatchEditStartEditingEventArgs protected ()
+open class ASPxClientGridViewBatchEditStartEditingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridViewBatchEditStartEditingEventArgs {
   /**
@@ -22,12 +22,12 @@ class ASPxClientGridViewBatchEditStartEditingEventArgs protected ()
   def this(
     visibleIndex: Double,
     focusedColumn: typings.devexpressWeb.ASPxClientGridViewColumn,
-    rowValues: js.Any,
-    key: js.Any
+    rowValues: Any,
+    key: Any
   ) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
@@ -42,13 +42,13 @@ class ASPxClientGridViewBatchEditStartEditingEventArgs protected ()
     * Gets the row's key.
     */
   /* CompleteClass */
-  var key: js.Any = js.native
+  var key: Any = js.native
   
   /**
     * Gets a hashtable that maintains information about editable cells.
     */
   /* CompleteClass */
-  var rowValues: js.Any = js.native
+  var rowValues: Any = js.native
   
   /**
     * Gets the visible index of the row whose cells are about to be edited.

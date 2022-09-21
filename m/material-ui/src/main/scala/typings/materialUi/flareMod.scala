@@ -10,10 +10,10 @@ object flareMod {
   
   @JSImport("material-ui/svg-icons/image/flare", JSImport.Default)
   @js.native
-  class default () extends ImageFlare
+  open class default () extends ImageFlare
   
   @JSImport("material-ui/svg-icons/image/flare", "ImageFlare")
   @js.native
-  class ImageFlare ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageFlare ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

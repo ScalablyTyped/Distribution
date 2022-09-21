@@ -23,6 +23,17 @@ trait BackupId extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /** Required. The encryption type of the backup. */
+  @JSName("encryptionConfig.encryptionType")
+  var encryptionConfigDotencryptionType: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Optional. The Cloud KMS key that will be used to protect the backup. This field should be set only when encryption_type is `CUSTOMER_MANAGED_ENCRYPTION`. Values are of the form
+    * `projects//locations//keyRings//cryptoKeys/`.
+    */
+  @JSName("encryptionConfig.kmsKeyName")
+  var encryptionConfigDotkmsKeyName: js.UndefOr[String] = js.undefined
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
@@ -81,6 +92,14 @@ object BackupId {
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setEncryptionConfigDotencryptionType(value: String): Self = StObject.set(x, "encryptionConfig.encryptionType", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionConfigDotencryptionTypeUndefined: Self = StObject.set(x, "encryptionConfig.encryptionType", js.undefined)
+    
+    inline def setEncryptionConfigDotkmsKeyName(value: String): Self = StObject.set(x, "encryptionConfig.kmsKeyName", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionConfigDotkmsKeyNameUndefined: Self = StObject.set(x, "encryptionConfig.kmsKeyName", js.undefined)
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

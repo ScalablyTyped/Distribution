@@ -1,11 +1,10 @@
 package typings.mnemonist.mod
 
-import typings.mnemonist.vectorMod.TypedVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mnemonist", "Uint32Vector")
 @js.native
-class Uint32Vector () extends TypedVector
-
+open class Uint32Vector ()
+  extends typings.mnemonist.vectorMod.Uint32Vector

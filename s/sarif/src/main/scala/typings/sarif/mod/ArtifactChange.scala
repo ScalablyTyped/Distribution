@@ -39,6 +39,6 @@ object ArtifactChange {
     
     inline def setReplacements(value: js.Array[Replacement]): Self = StObject.set(x, "replacements", value.asInstanceOf[js.Any])
     
-    inline def setReplacementsVarargs(value: Replacement*): Self = StObject.set(x, "replacements", js.Array(value :_*))
+    inline def setReplacementsVarargs(value: Replacement*): Self = StObject.set(x, "replacements", js.Array(value*))
   }
 }

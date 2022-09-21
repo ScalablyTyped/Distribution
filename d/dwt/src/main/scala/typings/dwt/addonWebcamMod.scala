@@ -145,11 +145,11 @@ object addonWebcamMod {
     /**
       * internal use
       */
-    var _resultlist: js.Any
+    var _resultlist: Any
   }
   object MediaType {
     
-    inline def apply(Get: Double => String, GetCount: () => Double, GetCurrent: () => String, _resultlist: js.Any): MediaType = {
+    inline def apply(Get: Double => String, GetCount: () => Double, GetCurrent: () => String, _resultlist: Any): MediaType = {
       val __obj = js.Dynamic.literal(Get = js.Any.fromFunction1(Get), GetCount = js.Any.fromFunction0(GetCount), GetCurrent = js.Any.fromFunction0(GetCurrent), _resultlist = _resultlist.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaType]
     }
@@ -162,7 +162,7 @@ object addonWebcamMod {
       
       inline def setGetCurrent(value: () => String): Self = StObject.set(x, "GetCurrent", js.Any.fromFunction0(value))
       
-      inline def set_resultlist(value: js.Any): Self = StObject.set(x, "_resultlist", value.asInstanceOf[js.Any])
+      inline def set_resultlist(value: Any): Self = StObject.set(x, "_resultlist", value.asInstanceOf[js.Any])
     }
   }
   

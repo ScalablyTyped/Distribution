@@ -101,14 +101,14 @@ trait PlusContacts extends StObject {
   def getAddressBook(
     `type`: Double,
     successCB: js.Function1[/* result */ PlusContactsAddressBook, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def getAddressBook(`type`: Double, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getAddressBook(`type`: Double, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def getAddressBook(`type`: Unit, successCB: js.Function1[/* result */ PlusContactsAddressBook, Unit]): Unit = js.native
   def getAddressBook(
     `type`: Unit,
     successCB: js.Function1[/* result */ PlusContactsAddressBook, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def getAddressBook(`type`: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getAddressBook(`type`: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
 }

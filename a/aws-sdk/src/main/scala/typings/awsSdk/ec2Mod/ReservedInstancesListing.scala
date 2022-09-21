@@ -14,7 +14,7 @@ trait ReservedInstancesListing extends StObject {
   /**
     * The time the listing was created.
     */
-  var CreateDate: js.UndefOr[DateTime] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The number of instances in this state.
@@ -54,7 +54,7 @@ trait ReservedInstancesListing extends StObject {
   /**
     * The last modified timestamp of the listing.
     */
-  var UpdateDate: js.UndefOr[DateTime] = js.undefined
+  var UpdateDate: js.UndefOr[js.Date] = js.undefined
 }
 object ReservedInstancesListing {
   
@@ -69,7 +69,7 @@ object ReservedInstancesListing {
     
     inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    inline def setCreateDate(value: DateTime): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
@@ -77,13 +77,13 @@ object ReservedInstancesListing {
     
     inline def setInstanceCountsUndefined: Self = StObject.set(x, "InstanceCounts", js.undefined)
     
-    inline def setInstanceCountsVarargs(value: InstanceCount*): Self = StObject.set(x, "InstanceCounts", js.Array(value :_*))
+    inline def setInstanceCountsVarargs(value: InstanceCount*): Self = StObject.set(x, "InstanceCounts", js.Array(value*))
     
     inline def setPriceSchedules(value: PriceScheduleList): Self = StObject.set(x, "PriceSchedules", value.asInstanceOf[js.Any])
     
     inline def setPriceSchedulesUndefined: Self = StObject.set(x, "PriceSchedules", js.undefined)
     
-    inline def setPriceSchedulesVarargs(value: PriceSchedule*): Self = StObject.set(x, "PriceSchedules", js.Array(value :_*))
+    inline def setPriceSchedulesVarargs(value: PriceSchedule*): Self = StObject.set(x, "PriceSchedules", js.Array(value*))
     
     inline def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
     
@@ -105,9 +105,9 @@ object ReservedInstancesListing {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
-    inline def setUpdateDate(value: DateTime): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
+    inline def setUpdateDate(value: js.Date): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
     
     inline def setUpdateDateUndefined: Self = StObject.set(x, "UpdateDate", js.undefined)
   }

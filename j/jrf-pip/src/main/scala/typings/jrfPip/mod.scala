@@ -33,7 +33,7 @@ object mod {
       
       inline def setArrayValues(value: js.Array[T]): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
       
-      inline def setArrayValuesVarargs(value: T*): Self = StObject.set(x, "arrayValues", js.Array(value :_*))
+      inline def setArrayValuesVarargs(value: T*): Self = StObject.set(x, "arrayValues", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -70,7 +70,7 @@ object mod {
       
       inline def setArrayValues(value: js.Array[T]): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
       
-      inline def setArrayValuesVarargs(value: T*): Self = StObject.set(x, "arrayValues", js.Array(value :_*))
+      inline def setArrayValuesVarargs(value: T*): Self = StObject.set(x, "arrayValues", js.Array(value*))
       
       inline def setAwaitRes(value: Boolean): Self = StObject.set(x, "awaitRes", value.asInstanceOf[js.Any])
       
@@ -117,7 +117,7 @@ object mod {
       
       inline def setArrayValues(value: js.Array[T]): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
       
-      inline def setArrayValuesVarargs(value: T*): Self = StObject.set(x, "arrayValues", js.Array(value :_*))
+      inline def setArrayValuesVarargs(value: T*): Self = StObject.set(x, "arrayValues", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -129,7 +129,7 @@ object mod {
   
   trait StackError[T] extends StObject {
     
-    var error: js.Any
+    var error: Any
     
     var index: Double
     
@@ -139,14 +139,14 @@ object mod {
   }
   object StackError {
     
-    inline def apply[T](error: js.Any, index: Double, iteration: Double, value: T): StackError[T] = {
+    inline def apply[T](error: Any, index: Double, iteration: Double, value: T): StackError[T] = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], iteration = iteration.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[StackError[T]]
     }
     
     extension [Self <: StackError[?], T](x: Self & StackError[T]) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

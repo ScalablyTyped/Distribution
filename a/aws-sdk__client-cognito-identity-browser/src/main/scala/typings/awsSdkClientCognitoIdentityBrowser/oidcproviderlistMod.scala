@@ -8,5 +8,5 @@ object oidcproviderlistMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/_OIDCProviderList", "_OIDCProviderList")
   @js.native
-  val OIDCProviderList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val OIDCProviderList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

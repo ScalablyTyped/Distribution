@@ -11,9 +11,9 @@ Check and get file hashes
 | Full name          | sha |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 62 |
-| # downloads        | 23488546 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1382537.6666666667 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/ForbesLindesay/sha#readme)

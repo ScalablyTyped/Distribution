@@ -21,6 +21,6 @@ object RolePage {
     
     inline def setRoles(value: js.Array[Role]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
-    inline def setRolesVarargs(value: Role*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: Role*): Self = StObject.set(x, "roles", js.Array(value*))
   }
 }

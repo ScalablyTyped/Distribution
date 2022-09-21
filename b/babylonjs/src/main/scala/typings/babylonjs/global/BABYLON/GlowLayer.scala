@@ -1,13 +1,13 @@
 package typings.babylonjs.global.BABYLON
 
-import typings.babylonjs.anon.PartialIGlowLayerOptionsBlurKernelSize
+import typings.babylonjs.anon.PartialIGlowLayerOptionsAlphaBlendingMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.GlowLayer")
 @js.native
-class GlowLayer protected ()
+open class GlowLayer protected ()
   extends StObject
      with typings.babylonjs.BABYLON.GlowLayer {
   /**
@@ -16,11 +16,13 @@ class GlowLayer protected ()
     * @param scene The scene to use the layer in
     * @param options Sets of none mandatory options to use with the layer (see IGlowLayerOptions for more information)
     */
+  def this(name: String) = this()
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene) = this()
+  def this(name: String, scene: Unit, options: PartialIGlowLayerOptionsAlphaBlendingMode) = this()
   def this(
     name: String,
     scene: typings.babylonjs.BABYLON.Scene,
-    options: PartialIGlowLayerOptionsBlurKernelSize
+    options: PartialIGlowLayerOptionsAlphaBlendingMode
   ) = this()
 }
 /* static members */
@@ -51,7 +53,7 @@ object GlowLayer {
     */
   @JSGlobal("BABYLON.GlowLayer.EffectName")
   @js.native
-  val EffectName: String = js.native
+  val EffectName: /* "GlowLayer" */ String = js.native
   
   /**
     * Creates a Glow Layer from parsed glow layer data
@@ -60,5 +62,5 @@ object GlowLayer {
     * @param rootUrl defines the root URL containing the glow layer information
     * @returns a parsed Glow Layer
     */
-  inline def Parse(parsedGlowLayer: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.GlowLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedGlowLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.GlowLayer]
+  inline def Parse(parsedGlowLayer: Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.GlowLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedGlowLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.GlowLayer]
 }

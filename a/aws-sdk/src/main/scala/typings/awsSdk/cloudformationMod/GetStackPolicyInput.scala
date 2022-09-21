@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetStackPolicyInput extends StObject {
   
   /**
-    * The name or unique stack ID that is associated with the stack whose policy you want to get.
+    * The name or unique stack ID that's associated with the stack whose policy you want to get.
     */
   var StackName: typings.awsSdk.cloudformationMod.StackName
 }

@@ -8,33 +8,33 @@ object mod {
   
   @JSImport("@gramps/rest-helpers", "GraphQLConnector")
   @js.native
-  class GraphQLConnector () extends StObject {
+  open class GraphQLConnector () extends StObject {
     
     var apiBaseUri: String = js.native
     
     var cacheExpiry: Double = js.native
     
-    def delete(endpoint: String, options: js.Object): js.Promise[js.Any] = js.native
+    def delete(endpoint: String, options: js.Object): js.Promise[Any] = js.native
     
     var enableCache: Boolean = js.native
     
-    def get(endpoint: String): js.Promise[js.Any] = js.native
+    def get(endpoint: String): js.Promise[Any] = js.native
     
     var headers: js.Object = js.native
     
-    def post(endpoint: String, body: js.Object, options: js.Object): js.Promise[js.Any] = js.native
+    def post(endpoint: String, body: js.Object, options: js.Object): js.Promise[Any] = js.native
     
-    def put(endpoint: String, body: js.Object, options: js.Object): js.Promise[js.Any] = js.native
+    def put(endpoint: String, body: js.Object, options: js.Object): js.Promise[Any] = js.native
     
     var redis: Boolean = js.native
     
-    var request: js.Any = js.native
+    var request: Any = js.native
   }
   
   @JSImport("@gramps/rest-helpers", "GraphQLModel")
   @js.native
-  class GraphQLModel protected () extends StObject {
-    def this(has: js.Any) = this()
+  open class GraphQLModel protected () extends StObject {
+    def this(has: Any) = this()
     
     var connector: GraphQLConnector = js.native
   }

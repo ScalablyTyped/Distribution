@@ -1,6 +1,5 @@
 package typings.sawtoothSdk.protobufMod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ITransaction extends StObject {
   
   /** Transaction header */
-  var header: js.UndefOr[Uint8Array | Null] = js.undefined
+  var header: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
   
   /** Transaction headerSignature */
   var headerSignature: js.UndefOr[String | Null] = js.undefined
   
   /** Transaction payload */
-  var payload: js.UndefOr[Uint8Array | Null] = js.undefined
+  var payload: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
 }
 object ITransaction {
   
@@ -25,7 +24,7 @@ object ITransaction {
   
   extension [Self <: ITransaction](x: Self) {
     
-    inline def setHeader(value: Uint8Array): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: js.typedarray.Uint8Array): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     inline def setHeaderNull: Self = StObject.set(x, "header", null)
     
@@ -37,7 +36,7 @@ object ITransaction {
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    inline def setPayload(value: Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: js.typedarray.Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadNull: Self = StObject.set(x, "payload", null)
     

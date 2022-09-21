@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("opentype.js", "Glyph")
 @js.native
-class Glyph protected () extends StObject {
+open class Glyph protected () extends StObject {
   def this(options: GlyphOptions) = this()
   
   def addUnicode(unicode: Double): Unit = js.native
   
-  var advanceWidth: Double = js.native
+  var advanceWidth: js.UndefOr[Double] = js.native
   
-  def bindConstructorValues(options: GlyphOptions): Unit = js.native
+  /* private */ def bindConstructorValues(options: GlyphOptions): Unit = js.native
   
   def draw(ctx: CanvasRenderingContext2D): Unit = js.native
   def draw(ctx: CanvasRenderingContext2D, x: Double): Unit = js.native
@@ -108,21 +108,21 @@ class Glyph protected () extends StObject {
   
   var index: Double = js.native
   
-  var name: String = js.native
+  var leftSideBearing: js.UndefOr[Double] = js.native
   
-  var path: Path | js.Function0[Path] = js.native
+  var name: String | Null = js.native
   
-  /* private */ var points: js.Any = js.native
+  var path: Path = js.native
   
-  var unicode: Double = js.native
+  var unicode: js.UndefOr[Double] = js.native
   
   var unicodes: js.Array[Double] = js.native
   
-  /* private */ var xMax: js.Any = js.native
+  var xMax: js.UndefOr[Double] = js.native
   
-  /* private */ var xMin: js.Any = js.native
+  var xMin: js.UndefOr[Double] = js.native
   
-  /* private */ var yMax: js.Any = js.native
+  var yMax: js.UndefOr[Double] = js.native
   
-  /* private */ var yMin: js.Any = js.native
+  var yMin: js.UndefOr[Double] = js.native
 }

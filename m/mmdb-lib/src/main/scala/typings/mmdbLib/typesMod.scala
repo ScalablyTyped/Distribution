@@ -9,11 +9,11 @@ object typesMod {
   @js.native
   trait Cache extends StObject {
     
-    def get(key: String): js.Any = js.native
-    def get(key: Double): js.Any = js.native
+    def get(key: String): Any = js.native
+    def get(key: Double): Any = js.native
     
-    def set(key: String, value: js.Any): js.Any = js.native
-    def set(key: Double, value: js.Any): js.Any = js.native
+    def set(key: String, value: Any): Any = js.native
+    def set(key: Double, value: Any): Any = js.native
   }
   
   trait ReaderOptions extends StObject {

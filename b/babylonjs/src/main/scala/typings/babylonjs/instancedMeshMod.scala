@@ -3,8 +3,13 @@ package typings.babylonjs
 import org.scalablytyped.runtime.StringDictionary
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.anon.Data
+import typings.babylonjs.anon.NewSourcedMesh
+import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.meshMod.Mesh
+import typings.babylonjs.nodeMod.Node
+import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.IndicesArray
+import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,29 +18,47 @@ object instancedMeshMod {
   
   @JSImport("babylonjs/Meshes/instancedMesh", "InstancedMesh")
   @js.native
-  class InstancedMesh protected () extends AbstractMesh {
+  open class InstancedMesh protected () extends AbstractMesh {
     def this(name: String, source: Mesh) = this()
     
-    /* private */ var _currentLOD: js.Any = js.native
+    /* private */ var _billboardWorldMatrix: Any = js.native
+    
+    /* private */ var _currentLOD: Any = js.native
+    
+    /** @hidden */
+    var _distanceToCamera: Double = js.native
     
     /** @hidden */
     var _indexInSourceMeshInstanceArray: Double = js.native
     
-    /* private */ var _sourceMesh: js.Any = js.native
+    /** @hidden */
+    var _previousWorldMatrix: Nullable[Matrix] = js.native
+    
+    def _removeLightSource(): Unit = js.native
+    
+    def _resyncLightSource(): Unit = js.native
+    
+    /* private */ var _sourceMesh: Any = js.native
     
     /** @hidden */
     def _syncSubMeshes(): InstancedMesh = js.native
     
     /**
       * Creates a new InstancedMesh from the current mesh.
-      * - name (string) : the cloned mesh name
-      * - newParent (optional Node) : the optional Node to parent the clone to.
-      * - doNotCloneChildren (optional boolean, default `false`) : if `true` the model children aren't cloned.
       *
       * Returns the clone.
+      * @param name the cloned mesh name
+      * @param newParent the optional Node to parent the clone to.
+      * @param doNotCloneChildren if `true` the model children aren't cloned.
+      * @param newSourceMesh if set this mesh will be used as the source mesh instead of ths instance's one
+      * @returns the clone
       */
     def clone(name: String): InstancedMesh = js.native
     def clone(name: String, newParent: Unit, doNotCloneChildren: Boolean): InstancedMesh = js.native
+    def clone(name: String, newParent: Unit, doNotCloneChildren: Boolean, newSourceMesh: Mesh): InstancedMesh = js.native
+    def clone(name: String, newParent: Unit, doNotCloneChildren: Unit, newSourceMesh: Mesh): InstancedMesh = js.native
+    def clone(name: String, newParent: Nullable[Node], doNotCloneChildren: Boolean, newSourceMesh: Mesh): InstancedMesh = js.native
+    def clone(name: String, newParent: Nullable[Node], doNotCloneChildren: Unit, newSourceMesh: Mesh): InstancedMesh = js.native
     
     /**
       * Creates a new InstancedMesh object from the mesh model.
@@ -45,12 +68,27 @@ object instancedMeshMod {
       */
     def createInstance(name: String): InstancedMesh = js.native
     
+    def instantiateHierarchy(newParent: Unit, options: NewSourcedMesh): Nullable[TransformNode] = js.native
+    def instantiateHierarchy(
+      newParent: Unit,
+      options: NewSourcedMesh,
+      onNewNodeCreated: js.Function2[/* source */ TransformNode, /* clone */ TransformNode, Unit]
+    ): Nullable[TransformNode] = js.native
+    def instantiateHierarchy(newParent: Nullable[TransformNode], options: NewSourcedMesh): Nullable[TransformNode] = js.native
+    def instantiateHierarchy(
+      newParent: Nullable[TransformNode],
+      options: NewSourcedMesh,
+      onNewNodeCreated: js.Function2[/* source */ TransformNode, /* clone */ TransformNode, Unit]
+    ): Nullable[TransformNode] = js.native
+    
     /**
       * Sets the mesh indices.
       * Expects an array populated with integers or a typed array (Int32Array, Uint32Array, Uint16Array).
       * If the mesh has no geometry, a new Geometry object is created and set to the mesh.
       * This method creates a new index buffer each call.
       * Returns the Mesh.
+      * @param indices
+      * @param totalVertices
       */
     def setIndices(indices: IndicesArray): Mesh = js.native
     
@@ -69,18 +107,18 @@ object instancedMeshMod {
         * Object used to store instanced buffers defined by user
         * @see https://doc.babylonjs.com/how_to/how_to_use_instances#custom-buffers
         */
-      var instancedBuffers: StringDictionary[js.Any]
+      var instancedBuffers: StringDictionary[Any]
     }
     object AbstractMesh {
       
-      inline def apply(instancedBuffers: StringDictionary[js.Any]): typings.babylonjs.instancedMeshMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = {
+      inline def apply(instancedBuffers: StringDictionary[Any]): typings.babylonjs.instancedMeshMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = {
         val __obj = js.Dynamic.literal(instancedBuffers = instancedBuffers.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.babylonjs.instancedMeshMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh]
       }
       
       extension [Self <: typings.babylonjs.instancedMeshMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh](x: Self) {
         
-        inline def setInstancedBuffers(value: StringDictionary[js.Any]): Self = StObject.set(x, "instancedBuffers", value.asInstanceOf[js.Any])
+        inline def setInstancedBuffers(value: StringDictionary[Any]): Self = StObject.set(x, "instancedBuffers", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -89,6 +127,11 @@ object instancedMeshMod {
   object babylonjsMeshesMeshAugmentingMod {
     
     trait Mesh extends StObject {
+      
+      /**
+        * Invalidate VertexArrayObjects belonging to the mesh (but not to the Geometry of the mesh).
+        */
+      def _invalidateInstanceVertexArrayObject(): Unit
       
       /** @hidden */
       var _userInstancedBuffersStorage: Data
@@ -109,11 +152,12 @@ object instancedMeshMod {
     object Mesh {
       
       inline def apply(
+        _invalidateInstanceVertexArrayObject: () => Unit,
         _userInstancedBuffersStorage: Data,
         edgesShareWithInstances: Boolean,
         registerInstancedBuffer: (String, Double) => Unit
       ): typings.babylonjs.instancedMeshMod.babylonjsMeshesMeshAugmentingMod.Mesh = {
-        val __obj = js.Dynamic.literal(_userInstancedBuffersStorage = _userInstancedBuffersStorage.asInstanceOf[js.Any], edgesShareWithInstances = edgesShareWithInstances.asInstanceOf[js.Any], registerInstancedBuffer = js.Any.fromFunction2(registerInstancedBuffer))
+        val __obj = js.Dynamic.literal(_invalidateInstanceVertexArrayObject = js.Any.fromFunction0(_invalidateInstanceVertexArrayObject), _userInstancedBuffersStorage = _userInstancedBuffersStorage.asInstanceOf[js.Any], edgesShareWithInstances = edgesShareWithInstances.asInstanceOf[js.Any], registerInstancedBuffer = js.Any.fromFunction2(registerInstancedBuffer))
         __obj.asInstanceOf[typings.babylonjs.instancedMeshMod.babylonjsMeshesMeshAugmentingMod.Mesh]
       }
       
@@ -122,6 +166,8 @@ object instancedMeshMod {
         inline def setEdgesShareWithInstances(value: Boolean): Self = StObject.set(x, "edgesShareWithInstances", value.asInstanceOf[js.Any])
         
         inline def setRegisterInstancedBuffer(value: (String, Double) => Unit): Self = StObject.set(x, "registerInstancedBuffer", js.Any.fromFunction2(value))
+        
+        inline def set_invalidateInstanceVertexArrayObject(value: () => Unit): Self = StObject.set(x, "_invalidateInstanceVertexArrayObject", js.Any.fromFunction0(value))
         
         inline def set_userInstancedBuffersStorage(value: Data): Self = StObject.set(x, "_userInstancedBuffersStorage", value.asInstanceOf[js.Any])
       }

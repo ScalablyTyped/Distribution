@@ -16,17 +16,14 @@ trait IEvent[OriginalEvent, TargetGeometry] extends StObject {
   
   def callMethod(name: String): Unit = js.native
   
-  def get(name: String): js.Object = js.native
-  def get[T /* <: js.Object */, K /* <: /* keyof T */ String */](name: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
+  def get(name: newZoom | oldZoom): js.UndefOr[Double] = js.native
+  def get(name: String): Any = js.native
+  def get[T /* <: OriginalEvent */, K /* <: /* keyof T */ String */](name: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
   
-  def getSourceEvent(): (IEvent[OriginalEvent, js.Object]) | Null = js.native
+  def getSourceEvent(): (IEvent[OriginalEvent, TargetGeometry]) | Null = js.native
   
-  @JSName("get")
-  def get_newZoom(name: newZoom): js.UndefOr[Double] = js.native
   @JSName("get")
   def get_objectId(name: objectId): js.UndefOr[String] = js.native
-  @JSName("get")
-  def get_oldZoom(name: oldZoom): js.UndefOr[Double] = js.native
   @JSName("get")
   def get_type(name: `type`): String = js.native
   

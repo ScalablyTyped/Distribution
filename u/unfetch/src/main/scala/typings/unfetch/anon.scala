@@ -1,8 +1,8 @@
 package typings.unfetch
 
-import typings.std.BodyInit
 import typings.std.Document
 import typings.std.Record
+import typings.std.XMLHttpRequestBodyInit
 import typings.unfetch.unfetchStrings.include
 import typings.unfetch.unfetchStrings.omit
 import org.scalablytyped.runtime.StObject
@@ -90,7 +90,7 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(): Unit = js.native
-    def apply(body: BodyInit): Unit = js.native
     def apply(body: Document): Unit = js.native
+    def apply(body: XMLHttpRequestBodyInit): Unit = js.native
   }
 }

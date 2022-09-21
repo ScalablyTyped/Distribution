@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__md5-js
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.171.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/md5-js/latest.svg)](https://www.npmjs.com/package/@aws-sdk/md5-js) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/md5-js.svg)](https://www.npmjs.com/package/@aws-sdk/md5-js)
@@ -10,10 +10,10 @@ Typings are for version 1.0.0-rc.7
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/md5-js |
 | Keywords           | - |
-| # releases         | 39 |
-| # dependents       | 2 |
-| # downloads        | 4612554 |
-| # stars            | 0 |
+| # releases         | 54 |
+| # dependents       | 0.0 |
+| # downloads        | 6490128.0 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/md5-js)

@@ -2,59 +2,56 @@ package typings.firebaseDatabase
 
 import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.pathMod.Path
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sparseSnapshotTreeMod {
   
-  @JSImport("@firebase/database/dist/src/core/SparseSnapshotTree", "SparseSnapshotTree")
+  @JSImport("@firebase/database/dist/node-esm/src/core/SparseSnapshotTree", JSImport.Namespace)
   @js.native
-  class SparseSnapshotTree () extends StObject {
+  val ^ : js.Any = js.native
+  
+  inline def newSparseSnapshotTree(): SparseSnapshotTree = ^.asInstanceOf[js.Dynamic].applyDynamic("newSparseSnapshotTree")().asInstanceOf[SparseSnapshotTree]
+  
+  inline def sparseSnapshotTreeFind(sparseSnapshotTree: SparseSnapshotTree, path: Path): Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseSnapshotTreeFind")(sparseSnapshotTree.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Node | Null]
+  
+  inline def sparseSnapshotTreeForEachChild(
+    sparseSnapshotTree: SparseSnapshotTree,
+    func: js.Function2[/* a */ String, /* b */ SparseSnapshotTree, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseSnapshotTreeForEachChild")(sparseSnapshotTree.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def sparseSnapshotTreeForEachTree(
+    sparseSnapshotTree: SparseSnapshotTree,
+    prefixPath: Path,
+    func: js.Function2[/* a */ Path, /* b */ Node, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseSnapshotTreeForEachTree")(sparseSnapshotTree.asInstanceOf[js.Any], prefixPath.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def sparseSnapshotTreeForget(sparseSnapshotTree: SparseSnapshotTree, path: Path): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseSnapshotTreeForget")(sparseSnapshotTree.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def sparseSnapshotTreeRemember(sparseSnapshotTree: SparseSnapshotTree, path: Path, data: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseSnapshotTreeRemember")(sparseSnapshotTree.asInstanceOf[js.Any], path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  trait SparseSnapshotTree extends StObject {
     
-    /* private */ val children: js.Any = js.native
+    val children: Map[String, SparseSnapshotTree]
     
-    /**
-      * Gets the node stored at the given path if one exists.
-      *
-      * @param path Path to look up snapshot for.
-      * @return The retrieved node, or null.
-      */
-    def find(path: Path): Node | Null = js.native
+    var value: Node | Null
+  }
+  object SparseSnapshotTree {
     
-    /**
-      * Iterates through each immediate child and triggers the callback.
-      *
-      * @param func The function to invoke for each child.
-      */
-    def forEachChild(func: js.Function2[/* a */ String, /* b */ this.type, Unit]): Unit = js.native
+    inline def apply(children: Map[String, SparseSnapshotTree]): SparseSnapshotTree = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], value = null)
+      __obj.asInstanceOf[SparseSnapshotTree]
+    }
     
-    /**
-      * Recursively iterates through all of the stored tree and calls the
-      * callback on each one.
-      *
-      * @param prefixPath Path to look up node for.
-      * @param func The function to invoke for each tree.
-      */
-    def forEachTree(prefixPath: Path, func: js.Function2[/* a */ Path, /* b */ Node, js.Any]): Unit = js.native
-    
-    /**
-      * Purge the data at path from the cache.
-      *
-      * @param path Path to look up snapshot for.
-      * @return True if this node should now be removed.
-      */
-    def forget(path: Path): Boolean = js.native
-    
-    /**
-      * Stores the given node at the specified path. If there is already a node
-      * at a shallower path, it merges the new data into that snapshot node.
-      *
-      * @param path Path to look up snapshot for.
-      * @param data The new data, or null.
-      */
-    def remember(path: Path, data: Node): Unit = js.native
-    
-    /* private */ var value: js.Any = js.native
+    extension [Self <: SparseSnapshotTree](x: Self) {
+      
+      inline def setChildren(value: Map[String, SparseSnapshotTree]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: Node): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueNull: Self = StObject.set(x, "value", null)
+    }
   }
 }

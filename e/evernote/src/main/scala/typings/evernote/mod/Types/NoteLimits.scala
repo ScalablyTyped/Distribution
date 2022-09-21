@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.NoteLimits")
 @js.native
-class NoteLimits () extends StObject {
+open class NoteLimits () extends StObject {
   def this(args: NoteSizeMax) = this()
   
   var noteResourceCountMax: js.UndefOr[Double] = js.native

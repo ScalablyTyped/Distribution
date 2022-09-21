@@ -24,9 +24,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * A format object encapsulating the range's font, fill, borders, alignment, and other properties.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -37,6 +37,7 @@ trait RangeFormat
   /**
     * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     *
     * @param amount The number of character spaces by which the current indent is adjusted. This value should be between -250 and 250.
@@ -46,9 +47,9 @@ trait RangeFormat
   def adjustIndent(amount: Double): Unit = js.native
   
   /**
-    *
     * Specifies if text is automatically indented when text alignment is set to equal distribution.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var autoIndent: Boolean = js.native
@@ -56,6 +57,7 @@ trait RangeFormat
   /**
     * Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   def autofitColumns(): Unit = js.native
@@ -63,22 +65,23 @@ trait RangeFormat
   /**
     * Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   def autofitRows(): Unit = js.native
   
   /**
-    *
     * Collection of border objects that apply to the overall range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val borders: RangeBorderCollection = js.native
   
   /**
+    * Specifies the width of all colums within the range. If the column widths are not uniform, `null` will be returned.
     *
-    * Specifies the width of all colums within the range. If the column widths are not uniform, null will be returned.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var columnWidth: Double = js.native
@@ -88,33 +91,33 @@ trait RangeFormat
   var context_RangeFormat: RequestContext = js.native
   
   /**
-    *
     * Returns the fill object defined on the overall range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val fill: RangeFill = js.native
   
   /**
-    *
     * Returns the font object defined on the overall range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val font: RangeFont = js.native
   
   /**
+    * Represents the horizontal alignment for the specified object. See `Excel.HorizontalAlignment` for details.
     *
-    * Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var horizontalAlignment: HorizontalAlignment | General | Left | Center | Right | Fill | Justify | CenterAcrossSelection | Distributed = js.native
   
   /**
-    *
     * An integer from 0 to 250 that indicates the indent level.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var indentLevel: Double = js.native
@@ -131,37 +134,31 @@ trait RangeFormat
   def load(propertyNames: js.Array[String]): RangeFormat = js.native
   
   /**
-    *
     * Returns the format protection object for a range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   val protection: FormatProtection = js.native
   
   /**
-    *
     * The reading order for the range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var readingOrder: ReadingOrder | Context | LeftToRight | RightToLeft = js.native
   
   /**
+    * The height of all rows in the range. If the row heights are not uniform, `null` will be returned.
     *
-    * The height of all rows in the range. If the row heights are not uniform, null will be returned.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var rowHeight: Double = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.RangeFormat): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -171,19 +168,19 @@ trait RangeFormat
   def set(properties: RangeFormat): Unit = js.native
   
   /**
-    *
     * Specifies if text automatically shrinks to fit in the available column width.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var shrinkToFit: Boolean = js.native
   
   /**
-    *
     * The text orientation of all the cells within the range.
     The text orientation should be an integer either from -90 to 90, or 180 for vertically-oriented text.
-    If the orientation within a range are not uniform, then null will be returned.
+    If the orientation within a range are not uniform, then `null` will be returned.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var textOrientation: Double = js.native
@@ -195,39 +192,41 @@ trait RangeFormat
   def toJSON(): RangeFormatData = js.native
   
   /**
+    * Determines if the row height of the `Range` object equals the standard height of the sheet.
+    Returns `true` if the row height of the `Range` object equals the standard height of the sheet.
+    Returns `null` if the range contains more than one row and the rows aren't all the same height.
+    Returns `false` otherwise.
+    Note: This property is only intended to be set to `true`. Setting it to `false` has no effect.
     *
-    * Determines if the row height of the Range object equals the standard height of the sheet.
-    Returns True if the row height of the Range object equals the standard height of the sheet.
-    Returns Null if the range contains more than one row and the rows aren't all the same height.
-    Returns False otherwise.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var useStandardHeight: Boolean = js.native
   
   /**
+    * Specifies if the column width of the `Range` object equals the standard width of the sheet.
+    Returns `true` if the column width of the `Range` object equals the standard width of the sheet.
+    Returns `null` if the range contains more than one column and the columns aren't all the same height.
+    Returns `false` otherwise.
+    Note: This property is only intended to be set to `true`. Setting it to `false` has no effect.
     *
-    * Specifies if the column width of the Range object equals the standard width of the sheet.
-    Returns True if the column width of the Range object equals the standard width of the sheet.
-    Returns Null if the range contains more than one column and the columns aren't all the same height.
-    Returns False otherwise.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var useStandardWidth: Boolean = js.native
   
   /**
+    * Represents the vertical alignment for the specified object. See `Excel.VerticalAlignment` for details.
     *
-    * Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var verticalAlignment: VerticalAlignment | Top | Center | Bottom | Justify | Distributed = js.native
   
   /**
+    * Specifies if Excel wraps the text in the object. A `null` value indicates that the entire range doesn't have a uniform wrap setting
     *
-    * Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var wrapText: Boolean = js.native

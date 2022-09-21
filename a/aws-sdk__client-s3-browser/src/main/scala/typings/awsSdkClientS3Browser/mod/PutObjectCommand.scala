@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-browser", "PutObjectCommand")
 @js.native
-class PutObjectCommand protected ()
+open class PutObjectCommand protected ()
   extends typings.awsSdkClientS3Browser.putObjectCommandMod.PutObjectCommand {
   def this(input: PutObjectInput[Blob]) = this()
 }

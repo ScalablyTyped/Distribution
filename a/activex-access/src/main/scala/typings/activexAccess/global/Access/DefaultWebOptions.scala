@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.DefaultWebOptions")
 @js.native
-/* private */ class DefaultWebOptions ()
+/* private */ open class DefaultWebOptions ()
   extends StObject
      with typings.activexAccess.Access.DefaultWebOptions {
   
@@ -51,7 +51,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OrganizeInFolder: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var TargetBrowser: MsoTargetBrowser = js.native

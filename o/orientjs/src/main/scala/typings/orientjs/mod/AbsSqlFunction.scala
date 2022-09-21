@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("orientjs", "AbsSqlFunction")
 @js.native
-class AbsSqlFunction protected () extends StObject {
+open class AbsSqlFunction protected () extends StObject {
   def this(field: String) = this()
   def this(field: Double) = this()
 }

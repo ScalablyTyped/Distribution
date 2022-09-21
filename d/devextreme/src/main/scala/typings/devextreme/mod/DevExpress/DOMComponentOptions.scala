@@ -1,66 +1,60 @@
 package typings.devextreme.mod.DevExpress
 
-import typings.devextreme.anon.Model
-import typings.devextreme.anon.Name
+import org.scalablytyped.runtime.StringDictionary
+import typings.devextreme.mod.DevExpress.DOMComponent.OptionChangedEventInfo
+import typings.devextreme.mod.DevExpress.events.EventInfo
+import typings.devextreme.mod.DevExpress.events.InitializedEventInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DOMComponentOptions[T]
+trait DOMComponentOptions[TComponent]
   extends StObject
-     with ComponentOptions[T] {
+     with ComponentOptions[
+      EventInfo[TComponent], 
+      InitializedEventInfo[TComponent], 
+      OptionChangedEventInfo[TComponent]
+    ] {
   
   /**
-    * [descr:DOMComponent.Options.bindingOptions]
+    * 
     */
-  var bindingOptions: js.UndefOr[js.Any] = js.undefined
+  var bindingOptions: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
-    * [descr:DOMComponent.Options.elementAttr]
+    * Specifies the global attributes to be attached to the UI component&apos;s container element.
     */
-  var elementAttr: js.UndefOr[js.Any] = js.undefined
+  var elementAttr: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
-    * [descr:DOMComponent.Options.height]
+    * Specifies the UI component&apos;s height.
     */
   var height: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
   
   /**
-    * [descr:DOMComponent.Options.onDisposing]
-    */
-  @JSName("onDisposing")
-  var onDisposing_DOMComponentOptions: js.UndefOr[js.Function1[/* e */ Model[T], js.Any]] = js.undefined
-  
-  /**
-    * [descr:DOMComponent.Options.onOptionChanged]
-    */
-  @JSName("onOptionChanged")
-  var onOptionChanged_DOMComponentOptions: js.UndefOr[js.Function1[/* e */ Name[T], js.Any]] = js.undefined
-  
-  /**
-    * [descr:DOMComponent.Options.rtlEnabled]
+    * Switches the UI component to a right-to-left representation.
     */
   var rtlEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:DOMComponent.Options.width]
+    * Specifies the UI component&apos;s width.
     */
   var width: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
 }
 object DOMComponentOptions {
   
-  inline def apply[T](): DOMComponentOptions[T] = {
+  inline def apply[TComponent](): DOMComponentOptions[TComponent] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[DOMComponentOptions[T]]
+    __obj.asInstanceOf[DOMComponentOptions[TComponent]]
   }
   
-  extension [Self <: DOMComponentOptions[?], T](x: Self & DOMComponentOptions[T]) {
+  extension [Self <: DOMComponentOptions[?], TComponent](x: Self & DOMComponentOptions[TComponent]) {
     
-    inline def setBindingOptions(value: js.Any): Self = StObject.set(x, "bindingOptions", value.asInstanceOf[js.Any])
+    inline def setBindingOptions(value: StringDictionary[Any]): Self = StObject.set(x, "bindingOptions", value.asInstanceOf[js.Any])
     
     inline def setBindingOptionsUndefined: Self = StObject.set(x, "bindingOptions", js.undefined)
     
-    inline def setElementAttr(value: js.Any): Self = StObject.set(x, "elementAttr", value.asInstanceOf[js.Any])
+    inline def setElementAttr(value: StringDictionary[Any]): Self = StObject.set(x, "elementAttr", value.asInstanceOf[js.Any])
     
     inline def setElementAttrUndefined: Self = StObject.set(x, "elementAttr", js.undefined)
     
@@ -69,14 +63,6 @@ object DOMComponentOptions {
     inline def setHeightFunction0(value: () => Double | String): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-    
-    inline def setOnDisposing(value: /* e */ Model[T] => js.Any): Self = StObject.set(x, "onDisposing", js.Any.fromFunction1(value))
-    
-    inline def setOnDisposingUndefined: Self = StObject.set(x, "onDisposing", js.undefined)
-    
-    inline def setOnOptionChanged(value: /* e */ Name[T] => js.Any): Self = StObject.set(x, "onOptionChanged", js.Any.fromFunction1(value))
-    
-    inline def setOnOptionChangedUndefined: Self = StObject.set(x, "onOptionChanged", js.undefined)
     
     inline def setRtlEnabled(value: Boolean): Self = StObject.set(x, "rtlEnabled", value.asInstanceOf[js.Any])
     

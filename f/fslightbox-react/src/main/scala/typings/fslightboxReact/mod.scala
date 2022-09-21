@@ -10,10 +10,10 @@ object mod {
   
   @JSImport("fslightbox-react", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[FsLightboxProps, js.Object, js.Any]
+  open class default ()
+    extends Component[FsLightboxProps, js.Object, Any]
   
-  type FsLightbox = Component[FsLightboxProps, js.Object, js.Any]
+  type FsLightbox = Component[FsLightboxProps, js.Object, Any]
   
   trait FsLightboxProps extends StObject {
     
@@ -38,6 +38,8 @@ object mod {
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var openOnMount: js.UndefOr[Boolean] = js.undefined
+    
+    var showThumbsOnMount: js.UndefOr[Boolean] = js.undefined
     
     // slide number controlling
     var slide: js.UndefOr[Double] = js.undefined
@@ -72,7 +74,7 @@ object mod {
       
       inline def setCustomSourcesUndefined: Self = StObject.set(x, "customSources", js.undefined)
       
-      inline def setCustomSourcesVarargs(value: Element*): Self = StObject.set(x, "customSources", js.Array(value :_*))
+      inline def setCustomSourcesVarargs(value: Element*): Self = StObject.set(x, "customSources", js.Array(value*))
       
       inline def setDisableLocalStorage(value: Boolean): Self = StObject.set(x, "disableLocalStorage", value.asInstanceOf[js.Any])
       
@@ -106,6 +108,10 @@ object mod {
       
       inline def setOpenOnMountUndefined: Self = StObject.set(x, "openOnMount", js.undefined)
       
+      inline def setShowThumbsOnMount(value: Boolean): Self = StObject.set(x, "showThumbsOnMount", value.asInstanceOf[js.Any])
+      
+      inline def setShowThumbsOnMountUndefined: Self = StObject.set(x, "showThumbsOnMount", js.undefined)
+      
       inline def setSlide(value: Double): Self = StObject.set(x, "slide", value.asInstanceOf[js.Any])
       
       inline def setSlideDistance(value: Double): Self = StObject.set(x, "slideDistance", value.asInstanceOf[js.Any])
@@ -126,7 +132,7 @@ object mod {
       
       inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
       
-      inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value*))
       
       inline def setToggler(value: Boolean): Self = StObject.set(x, "toggler", value.asInstanceOf[js.Any])
       
@@ -140,13 +146,13 @@ object mod {
       
       inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      inline def setTypesVarargs(value: SourceType*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: SourceType*): Self = StObject.set(x, "types", js.Array(value*))
       
       inline def setVideosPosters(value: js.Array[VideoPoster]): Self = StObject.set(x, "videosPosters", value.asInstanceOf[js.Any])
       
       inline def setVideosPostersUndefined: Self = StObject.set(x, "videosPosters", js.undefined)
       
-      inline def setVideosPostersVarargs(value: VideoPoster*): Self = StObject.set(x, "videosPosters", js.Array(value :_*))
+      inline def setVideosPostersVarargs(value: VideoPoster*): Self = StObject.set(x, "videosPosters", js.Array(value*))
     }
   }
   

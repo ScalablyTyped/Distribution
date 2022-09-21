@@ -10,10 +10,10 @@ Tooltips for d3 svg visualizations
 | ------------------ | :-------------: |
 | Full name          | d3-tip |
 | Keywords           | d3, tooltip |
-| # releases         | 0 |
-| # dependents       | 77 |
-| # downloads        | 3483584 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 225800.0 |
+| # stars            | 1208.0 |
 
 ## Links
 - [Homepage](https://github.com/Caged/d3-tip)

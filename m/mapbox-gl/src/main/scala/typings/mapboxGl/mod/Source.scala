@@ -2,6 +2,7 @@ package typings.mapboxGl.mod
 
 import typings.mapboxGl.mapboxGlStrings.`raster-dem`
 import typings.mapboxGl.mapboxGlStrings.canvas
+import typings.mapboxGl.mapboxGlStrings.custom
 import typings.mapboxGl.mapboxGlStrings.geojson
 import typings.mapboxGl.mapboxGlStrings.image_
 import typings.mapboxGl.mapboxGlStrings.raster
@@ -13,11 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Source extends StObject {
   
-  var `type`: vector | raster | `raster-dem` | geojson | image_ | video | canvas
+  var `type`: vector | raster | `raster-dem` | geojson | image_ | video | canvas | custom
 }
 object Source {
   
-  inline def apply(`type`: vector | raster | `raster-dem` | geojson | image_ | video | canvas): Source = {
+  inline def apply(`type`: vector | raster | `raster-dem` | geojson | image_ | video | canvas | custom): Source = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
@@ -25,6 +26,6 @@ object Source {
   
   extension [Self <: Source](x: Self) {
     
-    inline def setType(value: vector | raster | `raster-dem` | geojson | image_ | video | canvas): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: vector | raster | `raster-dem` | geojson | image_ | video | canvas | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -200,6 +200,8 @@ trait SVGAttributes[T]
   
   var format: js.UndefOr[Double | String] = js.undefined
   
+  var fr: js.UndefOr[Double | String] = js.undefined
+  
   var from: js.UndefOr[Double | String] = js.undefined
   
   var fx: js.UndefOr[Double | String] = js.undefined
@@ -385,7 +387,7 @@ trait SVGAttributes[T]
   var result: js.UndefOr[String] = js.undefined
   
   // Other HTML properties supported by SVG elements in browsers
-  var role: js.UndefOr[String] = js.undefined
+  var role: js.UndefOr[AriaRole] = js.undefined
   
   var rotate: js.UndefOr[Double | String] = js.undefined
   
@@ -872,6 +874,10 @@ object SVGAttributes {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
+    inline def setFr(value: Double | String): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
+    
+    inline def setFrUndefined: Self = StObject.set(x, "fr", js.undefined)
+    
     inline def setFrom(value: Double | String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
@@ -1240,7 +1246,7 @@ object SVGAttributes {
     
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     

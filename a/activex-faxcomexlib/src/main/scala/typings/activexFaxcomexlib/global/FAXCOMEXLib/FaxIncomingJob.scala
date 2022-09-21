@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxIncomingJob Class */
 @JSGlobal("FAXCOMEXLib.FaxIncomingJob")
 @js.native
-/* private */ class FaxIncomingJob ()
+/* private */ open class FaxIncomingJob ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxIncomingJob {
   

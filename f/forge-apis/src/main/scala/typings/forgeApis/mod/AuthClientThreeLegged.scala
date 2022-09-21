@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forge-apis", "AuthClientThreeLegged")
 @js.native
-class AuthClientThreeLegged protected ()
+open class AuthClientThreeLegged protected ()
   extends StObject
      with AuthClient {
   def this(

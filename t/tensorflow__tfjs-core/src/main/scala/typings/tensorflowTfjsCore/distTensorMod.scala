@@ -1,8 +1,7 @@
 package typings.tensorflowTfjsCore
 
-import typings.std.Float32Array
-import typings.std.Int32Array
-import typings.std.Uint8Array
+import org.scalablytyped.runtime.Instantiable4
+import typings.std.WebGLTexture
 import typings.tensorflowTfjsCore.anon.Indices
 import typings.tensorflowTfjsCore.convUtilMod.ExplicitPadding
 import typings.tensorflowTfjsCore.distTypesMod.BackendValues
@@ -41,6 +40,7 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.string
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.symmetric
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
+import typings.webgpuTypes.GPUBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +53,7 @@ object distTensorMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/tensor", "Tensor")
   @js.native
-  class Tensor[R /* <: Rank */] protected () extends StObject {
+  open class Tensor[R /* <: Rank */] protected () extends StObject {
     def this(
       shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
       dtype: DataType,
@@ -69,8 +69,6 @@ object distTensorMod {
     
     def add[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def add[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
-    
-    def addStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def all[T /* <: Tensor[Rank] */](): T = js.native
     def all[T /* <: Tensor[Rank] */](axis: js.Array[Double]): T = js.native
@@ -135,119 +133,75 @@ object distTensorMod {
     
     def atanh[T /* <: Tensor[Rank] */](): T = js.native
     
+    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: valid_ | same_): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](
+      filterSize: js.Tuple2[Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
     def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: Double): T = js.native
     def avgPool[T /* <: Tensor3D | Tensor4D */](
       filterSize: js.Tuple2[Double, Double],
       strides: js.Tuple2[Double, Double],
-      pad: same_,
-      dimRoundingMode: ceil
+      pad: Double,
+      dimRoundingMode: floor | round | ceil
     ): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: ExplicitPadding): T = js.native
     def avgPool[T /* <: Tensor3D | Tensor4D */](
       filterSize: js.Tuple2[Double, Double],
       strides: js.Tuple2[Double, Double],
-      pad: same_,
-      dimRoundingMode: floor
+      pad: ExplicitPadding,
+      dimRoundingMode: floor | round | ceil
     ): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid_ | same_): T = js.native
     def avgPool[T /* <: Tensor3D | Tensor4D */](
       filterSize: js.Tuple2[Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: same_,
-      dimRoundingMode: round
-    ): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](
-      filterSize: js.Tuple2[Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dimRoundingMode: ceil
-    ): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](
-      filterSize: js.Tuple2[Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dimRoundingMode: floor
-    ): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](
-      filterSize: js.Tuple2[Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dimRoundingMode: round
+      strides: Double,
+      pad: valid_ | same_,
+      dimRoundingMode: floor | round | ceil
     ): T = js.native
     def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: same_, dimRoundingMode: ceil): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: same_, dimRoundingMode: floor): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: same_, dimRoundingMode: round): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid_, dimRoundingMode: ceil): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid_, dimRoundingMode: floor): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid_, dimRoundingMode: round): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](
+      filterSize: js.Tuple2[Double, Double],
+      strides: Double,
+      pad: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: ExplicitPadding): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](
+      filterSize: js.Tuple2[Double, Double],
+      strides: Double,
+      pad: ExplicitPadding,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid_ | same_): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](
+      filterSize: Double,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
     def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: same_, dimRoundingMode: ceil): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: same_, dimRoundingMode: floor): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: same_, dimRoundingMode: round): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid_, dimRoundingMode: ceil): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid_, dimRoundingMode: floor): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid_, dimRoundingMode: round): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](
+      filterSize: Double,
+      strides: js.Tuple2[Double, Double],
+      pad: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: ExplicitPadding): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](
+      filterSize: Double,
+      strides: js.Tuple2[Double, Double],
+      pad: ExplicitPadding,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: valid_ | same_): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: valid_ | same_, dimRoundingMode: floor | round | ceil): T = js.native
     def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: Double): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: same_, dimRoundingMode: ceil): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: same_, dimRoundingMode: floor): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: same_, dimRoundingMode: round): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: valid_, dimRoundingMode: ceil): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: valid_, dimRoundingMode: floor): T = js.native
-    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: valid_, dimRoundingMode: round): T = js.native
-    @JSName("avgPool")
-    def avgPool_ceil[T /* <: Tensor3D | Tensor4D */](
-      filterSize: js.Tuple2[Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: Double,
-      dimRoundingMode: ceil
-    ): T = js.native
-    @JSName("avgPool")
-    def avgPool_ceil[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double, dimRoundingMode: ceil): T = js.native
-    @JSName("avgPool")
-    def avgPool_ceil[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double, dimRoundingMode: ceil): T = js.native
-    @JSName("avgPool")
-    def avgPool_ceil[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: Double, dimRoundingMode: ceil): T = js.native
-    @JSName("avgPool")
-    def avgPool_floor[T /* <: Tensor3D | Tensor4D */](
-      filterSize: js.Tuple2[Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: Double,
-      dimRoundingMode: floor
-    ): T = js.native
-    @JSName("avgPool")
-    def avgPool_floor[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double, dimRoundingMode: floor): T = js.native
-    @JSName("avgPool")
-    def avgPool_floor[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double, dimRoundingMode: floor): T = js.native
-    @JSName("avgPool")
-    def avgPool_floor[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: Double, dimRoundingMode: floor): T = js.native
-    @JSName("avgPool")
-    def avgPool_round[T /* <: Tensor3D | Tensor4D */](
-      filterSize: js.Tuple2[Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: Double,
-      dimRoundingMode: round
-    ): T = js.native
-    @JSName("avgPool")
-    def avgPool_round[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double, dimRoundingMode: round): T = js.native
-    @JSName("avgPool")
-    def avgPool_round[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double, dimRoundingMode: round): T = js.native
-    @JSName("avgPool")
-    def avgPool_round[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: Double, dimRoundingMode: round): T = js.native
-    @JSName("avgPool")
-    def avgPool_same[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: same_): T = js.native
-    @JSName("avgPool")
-    def avgPool_same[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: same_): T = js.native
-    @JSName("avgPool")
-    def avgPool_same[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: same_): T = js.native
-    @JSName("avgPool")
-    def avgPool_same[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: same_): T = js.native
-    @JSName("avgPool")
-    def avgPool_valid[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: valid_): T = js.native
-    @JSName("avgPool")
-    def avgPool_valid[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid_): T = js.native
-    @JSName("avgPool")
-    def avgPool_valid[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid_): T = js.native
-    @JSName("avgPool")
-    def avgPool_valid[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: valid_): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: Double, dimRoundingMode: floor | round | ceil): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: ExplicitPadding): T = js.native
+    def avgPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: ExplicitPadding, dimRoundingMode: floor | round | ceil): T = js.native
     
     def batchNorm[T /* <: Tensor[Rank] */](
       mean: Tensor[R] | Tensor1D | TensorLike,
@@ -277,7 +231,7 @@ object distTensorMod {
     def bufferSync(): TensorBuffer[R, float32] = js.native
     
     /** Returns the underlying bytes of the tensor's data. */
-    def bytes(): js.Promise[js.Array[Uint8Array] | Uint8Array] = js.native
+    def bytes(): js.Promise[js.Array[js.typedarray.Uint8Array] | js.typedarray.Uint8Array] = js.native
     
     def cast[T /* <: Tensor[Rank] */](dtype: DataType): T = js.native
     
@@ -290,13 +244,227 @@ object distTensorMod {
     def concat[T /* <: Tensor[Rank] */](tensors: js.Array[T | TensorLike]): T = js.native
     def concat[T /* <: Tensor[Rank] */](tensors: js.Array[T | TensorLike], axis: Double): T = js.native
     
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: Tensor3D, stride: Double, pad: valid_ | same_): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: Tensor3D, stride: Double, pad: valid_ | same_, dataFormat: NWC | NCW): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: Tensor3D, stride: Double, pad: valid_ | same_, dataFormat: NWC | NCW, dilation: Double): T = js.native
     def conv1d[T /* <: Tensor2D | Tensor3D */](
-      filter: Tensor3D | TensorLike3D,
+      filter: Tensor3D,
       stride: Double,
-      pad: valid_ | same_ | Double | ExplicitPadding,
-      dataFormat: js.UndefOr[NWC | NCW],
-      dilation: js.UndefOr[Double],
-      dimRoundingMode: js.UndefOr[floor | round | ceil]
+      pad: valid_ | same_,
+      dataFormat: NWC | NCW,
+      dilation: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: Tensor3D,
+      stride: Double,
+      pad: valid_ | same_,
+      dataFormat: NWC | NCW,
+      dilation: Unit,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: Tensor3D, stride: Double, pad: valid_ | same_, dataFormat: Unit, dilation: Double): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: Tensor3D,
+      stride: Double,
+      pad: valid_ | same_,
+      dataFormat: Unit,
+      dilation: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: Tensor3D,
+      stride: Double,
+      pad: valid_ | same_,
+      dataFormat: Unit,
+      dilation: Unit,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: Tensor3D, stride: Double, pad: Double): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: Tensor3D, stride: Double, pad: Double, dataFormat: NWC | NCW): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: Tensor3D, stride: Double, pad: Double, dataFormat: NWC | NCW, dilation: Double): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: Tensor3D,
+      stride: Double,
+      pad: Double,
+      dataFormat: NWC | NCW,
+      dilation: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: Tensor3D,
+      stride: Double,
+      pad: Double,
+      dataFormat: NWC | NCW,
+      dilation: Unit,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: Tensor3D, stride: Double, pad: Double, dataFormat: Unit, dilation: Double): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: Tensor3D,
+      stride: Double,
+      pad: Double,
+      dataFormat: Unit,
+      dilation: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: Tensor3D,
+      stride: Double,
+      pad: Double,
+      dataFormat: Unit,
+      dilation: Unit,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: Tensor3D, stride: Double, pad: ExplicitPadding): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: Tensor3D, stride: Double, pad: ExplicitPadding, dataFormat: NWC | NCW): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: Tensor3D, stride: Double, pad: ExplicitPadding, dataFormat: NWC | NCW, dilation: Double): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: Tensor3D,
+      stride: Double,
+      pad: ExplicitPadding,
+      dataFormat: NWC | NCW,
+      dilation: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: Tensor3D,
+      stride: Double,
+      pad: ExplicitPadding,
+      dataFormat: NWC | NCW,
+      dilation: Unit,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: Tensor3D, stride: Double, pad: ExplicitPadding, dataFormat: Unit, dilation: Double): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: Tensor3D,
+      stride: Double,
+      pad: ExplicitPadding,
+      dataFormat: Unit,
+      dilation: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: Tensor3D,
+      stride: Double,
+      pad: ExplicitPadding,
+      dataFormat: Unit,
+      dilation: Unit,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: TensorLike3D, stride: Double, pad: valid_ | same_): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: TensorLike3D, stride: Double, pad: valid_ | same_, dataFormat: NWC | NCW): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: TensorLike3D, stride: Double, pad: valid_ | same_, dataFormat: NWC | NCW, dilation: Double): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: TensorLike3D,
+      stride: Double,
+      pad: valid_ | same_,
+      dataFormat: NWC | NCW,
+      dilation: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: TensorLike3D,
+      stride: Double,
+      pad: valid_ | same_,
+      dataFormat: NWC | NCW,
+      dilation: Unit,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: TensorLike3D, stride: Double, pad: valid_ | same_, dataFormat: Unit, dilation: Double): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: TensorLike3D,
+      stride: Double,
+      pad: valid_ | same_,
+      dataFormat: Unit,
+      dilation: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: TensorLike3D,
+      stride: Double,
+      pad: valid_ | same_,
+      dataFormat: Unit,
+      dilation: Unit,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: TensorLike3D, stride: Double, pad: Double): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: TensorLike3D, stride: Double, pad: Double, dataFormat: NWC | NCW): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: TensorLike3D, stride: Double, pad: Double, dataFormat: NWC | NCW, dilation: Double): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: TensorLike3D,
+      stride: Double,
+      pad: Double,
+      dataFormat: NWC | NCW,
+      dilation: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: TensorLike3D,
+      stride: Double,
+      pad: Double,
+      dataFormat: NWC | NCW,
+      dilation: Unit,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: TensorLike3D, stride: Double, pad: Double, dataFormat: Unit, dilation: Double): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: TensorLike3D,
+      stride: Double,
+      pad: Double,
+      dataFormat: Unit,
+      dilation: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: TensorLike3D,
+      stride: Double,
+      pad: Double,
+      dataFormat: Unit,
+      dilation: Unit,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: TensorLike3D, stride: Double, pad: ExplicitPadding): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: TensorLike3D, stride: Double, pad: ExplicitPadding, dataFormat: NWC | NCW): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: TensorLike3D,
+      stride: Double,
+      pad: ExplicitPadding,
+      dataFormat: NWC | NCW,
+      dilation: Double
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: TensorLike3D,
+      stride: Double,
+      pad: ExplicitPadding,
+      dataFormat: NWC | NCW,
+      dilation: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: TensorLike3D,
+      stride: Double,
+      pad: ExplicitPadding,
+      dataFormat: NWC | NCW,
+      dilation: Unit,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](filter: TensorLike3D, stride: Double, pad: ExplicitPadding, dataFormat: Unit, dilation: Double): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: TensorLike3D,
+      stride: Double,
+      pad: ExplicitPadding,
+      dataFormat: Unit,
+      dilation: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv1d[T /* <: Tensor2D | Tensor3D */](
+      filter: TensorLike3D,
+      stride: Double,
+      pad: ExplicitPadding,
+      dataFormat: Unit,
+      dilation: Unit,
+      dimRoundingMode: floor | round | ceil
     ): T = js.native
     
     def conv2d[T /* <: Tensor3D | Tensor4D */](
@@ -309,16 +477,216 @@ object distTensorMod {
     ): T = js.native
     
     def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
-      filter: Tensor4D | TensorLike4D,
-      outputShape: (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple3[Double, Double, Double]),
-      strides: (js.Tuple2[Double, Double]) | Double,
-      pad: valid_ | same_ | Double,
-      dimRoundingMode: js.UndefOr[floor | round | ceil]
+      filter: Tensor4D,
+      outputShape: js.Tuple3[Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: Tensor4D,
+      outputShape: js.Tuple3[Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: Tensor4D,
+      outputShape: js.Tuple3[Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: Double
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: Tensor4D,
+      outputShape: js.Tuple3[Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: Tensor4D,
+      outputShape: js.Tuple3[Double, Double, Double],
+      strides: Double,
+      pad: valid_ | same_
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: Tensor4D,
+      outputShape: js.Tuple3[Double, Double, Double],
+      strides: Double,
+      pad: valid_ | same_,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](filter: Tensor4D, outputShape: js.Tuple3[Double, Double, Double], strides: Double, pad: Double): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: Tensor4D,
+      outputShape: js.Tuple3[Double, Double, Double],
+      strides: Double,
+      pad: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: Tensor4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: Tensor4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: Tensor4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: Double
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: Tensor4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: Tensor4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: Double,
+      pad: valid_ | same_
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: Tensor4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: Double,
+      pad: valid_ | same_,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: Tensor4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: Double,
+      pad: Double
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: Tensor4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: Double,
+      pad: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike4D,
+      outputShape: js.Tuple3[Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike4D,
+      outputShape: js.Tuple3[Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike4D,
+      outputShape: js.Tuple3[Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: Double
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike4D,
+      outputShape: js.Tuple3[Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike4D,
+      outputShape: js.Tuple3[Double, Double, Double],
+      strides: Double,
+      pad: valid_ | same_
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike4D,
+      outputShape: js.Tuple3[Double, Double, Double],
+      strides: Double,
+      pad: valid_ | same_,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](filter: TensorLike4D, outputShape: js.Tuple3[Double, Double, Double], strides: Double, pad: Double): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike4D,
+      outputShape: js.Tuple3[Double, Double, Double],
+      strides: Double,
+      pad: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: Double
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: Double,
+      pad: valid_ | same_
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: Double,
+      pad: valid_ | same_,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: Double,
+      pad: Double
+    ): T = js.native
+    def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike4D,
+      outputShape: js.Tuple4[Double, Double, Double, Double],
+      strides: Double,
+      pad: Double,
+      dimRoundingMode: floor | round | ceil
     ): T = js.native
     
     def cos[T /* <: Tensor[Rank] */](): T = js.native
     
     def cosh[T /* <: Tensor[Rank] */](): T = js.native
+    
+    def cumprod[R /* <: Rank */](): Tensor[R] = js.native
+    def cumprod[R /* <: Rank */](axis: Double): Tensor[R] = js.native
+    def cumprod[R /* <: Rank */](axis: Double, exclusive: Boolean): Tensor[R] = js.native
+    def cumprod[R /* <: Rank */](axis: Double, exclusive: Boolean, reverse: Boolean): Tensor[R] = js.native
+    def cumprod[R /* <: Rank */](axis: Double, exclusive: Unit, reverse: Boolean): Tensor[R] = js.native
+    def cumprod[R /* <: Rank */](axis: Unit, exclusive: Boolean): Tensor[R] = js.native
+    def cumprod[R /* <: Rank */](axis: Unit, exclusive: Boolean, reverse: Boolean): Tensor[R] = js.native
+    def cumprod[R /* <: Rank */](axis: Unit, exclusive: Unit, reverse: Boolean): Tensor[R] = js.native
     
     def cumsum[R /* <: Rank */](): Tensor[R] = js.native
     def cumsum[R /* <: Rank */](axis: Double): Tensor[R] = js.native
@@ -335,7 +703,7 @@ object distTensorMod {
       *
       * @doc {heading: 'Tensors', subheading: 'Classes'}
       */
-    def data(): js.Promise[Float32Array] = js.native
+    def data(): js.Promise[js.typedarray.Float32Array] = js.native
     
     /**
       * Id of the bucket holding the data for this tensor. Multiple arrays can
@@ -343,33 +711,60 @@ object distTensorMod {
       */
     var dataId: DataId = js.native
     
-    def dataSync(): js.Array[String] = js.native
     /**
       * Synchronously downloads the values from the `tf.Tensor`. This blocks the
       * UI thread until the values are ready, which can cause performance issues.
       *
       * @doc {heading: 'Tensors', subheading: 'Classes'}
       */
+    def dataSync(): js.typedarray.Float32Array = js.native
     @JSName("dataSync")
-    def dataSync_Float32Array(): Float32Array = js.native
+    def dataSync_Array(): js.Array[String] = js.native
     @JSName("dataSync")
-    def dataSync_Int32Array(): Int32Array = js.native
+    def dataSync_Int32Array(): js.typedarray.Int32Array = js.native
     @JSName("dataSync")
-    def dataSync_Uint8Array(): Uint8Array = js.native
+    def dataSync_Uint8Array(): js.typedarray.Uint8Array = js.native
     
-    @JSName("depthToSpace")
-    def depthToSpace_NCHW[T /* <: Tensor4D */](blockSize: Double, dataFormat: NCHW): T = js.native
-    @JSName("depthToSpace")
-    def depthToSpace_NHWC[T /* <: Tensor4D */](blockSize: Double, dataFormat: NHWC): T = js.native
+    /**
+      * Copy the tensor's data to a new GPU resource. Comparing to the `dataSync()`
+      * and `data()`, this method prevents data from being downloaded to CPU.
+      *
+      * For WebGL backend, the data will be stored on a densely packed texture.
+      * This means that the texture will use the RGBA channels to store value.
+      *
+      * For WebGPU backend, the data will be stored on a buffer. There is no
+      * parameter, so can not use an user defined size to create the buffer.
+      *
+      * @param options:
+      *     For WebGL,
+      *         - customTexShape: Optional. If set, will use the user defined
+      *     texture shape to create the texture.
+      *
+      * @returns For WebGL backend, a GPUData contains the new texture and
+      *     its information.
+      *     {
+      *        tensorRef: The tensor that is associated with this texture,
+      *        texture: WebGLTexture,
+      *        texShape: [number, number] // [height, width]
+      *     }
+      *
+      *     For WebGPU backend, a GPUData contains the new buffer and
+      *     its information.
+      *     {
+      *        tensorRef: The tensor that is associated with this buffer,
+      *        buffer: GPUBuffer,
+      *        bufSize: number
+      *     }
+      *
+      *     Remember to dispose the GPUData after it is used by
+      *     `res.tensorRef.dispose()`.
+      *
+      * @doc {heading: 'Tensors', subheading: 'Classes'}
+      */
+    def dataToGPU(): GPUData = js.native
+    def dataToGPU(options: DataToGPUOptions): GPUData = js.native
     
-    def depthwiseConv2D[T /* <: Tensor3D | Tensor4D */](
-      filter: Tensor4D | TensorLike4D,
-      strides: (js.Tuple2[Double, Double]) | Double,
-      pad: valid_ | same_ | Double,
-      dataFormat: js.UndefOr[NHWC | NCHW],
-      dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
-      dimRoundingMode: js.UndefOr[floor | round | ceil]
-    ): T = js.native
+    def depthToSpace[T /* <: Tensor4D */](blockSize: Double, dataFormat: NHWC | NCHW): T = js.native
     
     def depthwiseConv2d[T /* <: Tensor3D | Tensor4D */](
       filter: Tensor4D | TensorLike4D,
@@ -380,194 +775,88 @@ object distTensorMod {
       dimRoundingMode: js.UndefOr[floor | round | ceil]
     ): T = js.native
     
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: js.Tuple2[Double, Double], pad: valid_ | same_): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
       filter: Tensor3D,
       strides: js.Tuple2[Double, Double],
-      pad: same_,
-      dilations: js.Tuple2[Double, Double],
-      dataFormat: NHWC
+      pad: valid_ | same_,
+      dilations: js.Tuple2[Double, Double]
     ): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
       filter: Tensor3D,
       strides: js.Tuple2[Double, Double],
-      pad: same_,
+      pad: valid_ | same_,
+      dilations: js.Tuple2[Double, Double],
+      dataFormat: NHWC
+    ): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: js.Tuple2[Double, Double], pad: valid_ | same_, dilations: Double): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](
+      filter: Tensor3D,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
       dilations: Double,
       dataFormat: NHWC
     ): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
       filter: Tensor3D,
       strides: js.Tuple2[Double, Double],
-      pad: same_,
+      pad: valid_ | same_,
       dilations: Unit,
       dataFormat: NHWC
     ): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](
-      filter: Tensor3D,
-      strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dilations: js.Tuple2[Double, Double],
-      dataFormat: NHWC
-    ): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](
-      filter: Tensor3D,
-      strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dilations: Double,
-      dataFormat: NHWC
-    ): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](
-      filter: Tensor3D,
-      strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dilations: Unit,
-      dataFormat: NHWC
-    ): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: valid_ | same_): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: valid_ | same_, dilations: js.Tuple2[Double, Double]): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
       filter: Tensor3D,
       strides: Double,
-      pad: same_,
+      pad: valid_ | same_,
       dilations: js.Tuple2[Double, Double],
       dataFormat: NHWC
     ): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: same_, dilations: Double, dataFormat: NHWC): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: same_, dilations: Unit, dataFormat: NHWC): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](
-      filter: Tensor3D,
-      strides: Double,
-      pad: valid_,
-      dilations: js.Tuple2[Double, Double],
-      dataFormat: NHWC
-    ): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: valid_, dilations: Double, dataFormat: NHWC): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: valid_, dilations: Unit, dataFormat: NHWC): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: valid_ | same_, dilations: Double): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: valid_ | same_, dilations: Double, dataFormat: NHWC): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: valid_ | same_, dilations: Unit, dataFormat: NHWC): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: js.Tuple2[Double, Double], pad: valid_ | same_): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
       filter: TensorLike3D,
       strides: js.Tuple2[Double, Double],
-      pad: same_,
-      dilations: js.Tuple2[Double, Double],
-      dataFormat: NHWC
+      pad: valid_ | same_,
+      dilations: js.Tuple2[Double, Double]
     ): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
       filter: TensorLike3D,
       strides: js.Tuple2[Double, Double],
-      pad: same_,
+      pad: valid_ | same_,
+      dilations: js.Tuple2[Double, Double],
+      dataFormat: NHWC
+    ): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: js.Tuple2[Double, Double], pad: valid_ | same_, dilations: Double): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](
+      filter: TensorLike3D,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
       dilations: Double,
       dataFormat: NHWC
     ): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
       filter: TensorLike3D,
       strides: js.Tuple2[Double, Double],
-      pad: same_,
+      pad: valid_ | same_,
       dilations: Unit,
       dataFormat: NHWC
     ): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](
-      filter: TensorLike3D,
-      strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dilations: js.Tuple2[Double, Double],
-      dataFormat: NHWC
-    ): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](
-      filter: TensorLike3D,
-      strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dilations: Double,
-      dataFormat: NHWC
-    ): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](
-      filter: TensorLike3D,
-      strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dilations: Unit,
-      dataFormat: NHWC
-    ): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: valid_ | same_): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: valid_ | same_, dilations: js.Tuple2[Double, Double]): T = js.native
     def dilation2d[T /* <: Tensor3D | Tensor4D */](
       filter: TensorLike3D,
       strides: Double,
-      pad: same_,
+      pad: valid_ | same_,
       dilations: js.Tuple2[Double, Double],
       dataFormat: NHWC
     ): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: same_, dilations: Double, dataFormat: NHWC): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: same_, dilations: Unit, dataFormat: NHWC): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](
-      filter: TensorLike3D,
-      strides: Double,
-      pad: valid_,
-      dilations: js.Tuple2[Double, Double],
-      dataFormat: NHWC
-    ): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: valid_, dilations: Double, dataFormat: NHWC): T = js.native
-    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: valid_, dilations: Unit, dataFormat: NHWC): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_same[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: js.Tuple2[Double, Double], pad: same_): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_same[T /* <: Tensor3D | Tensor4D */](
-      filter: Tensor3D,
-      strides: js.Tuple2[Double, Double],
-      pad: same_,
-      dilations: js.Tuple2[Double, Double]
-    ): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_same[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: js.Tuple2[Double, Double], pad: same_, dilations: Double): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_same[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: same_): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_same[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: same_, dilations: js.Tuple2[Double, Double]): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_same[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: same_, dilations: Double): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_same[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: js.Tuple2[Double, Double], pad: same_): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_same[T /* <: Tensor3D | Tensor4D */](
-      filter: TensorLike3D,
-      strides: js.Tuple2[Double, Double],
-      pad: same_,
-      dilations: js.Tuple2[Double, Double]
-    ): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_same[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: js.Tuple2[Double, Double], pad: same_, dilations: Double): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_same[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: same_): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_same[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: same_, dilations: js.Tuple2[Double, Double]): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_same[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: same_, dilations: Double): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_valid[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: js.Tuple2[Double, Double], pad: valid_): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_valid[T /* <: Tensor3D | Tensor4D */](
-      filter: Tensor3D,
-      strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dilations: js.Tuple2[Double, Double]
-    ): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_valid[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: js.Tuple2[Double, Double], pad: valid_, dilations: Double): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_valid[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: valid_): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_valid[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: valid_, dilations: js.Tuple2[Double, Double]): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_valid[T /* <: Tensor3D | Tensor4D */](filter: Tensor3D, strides: Double, pad: valid_, dilations: Double): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_valid[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: js.Tuple2[Double, Double], pad: valid_): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_valid[T /* <: Tensor3D | Tensor4D */](
-      filter: TensorLike3D,
-      strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dilations: js.Tuple2[Double, Double]
-    ): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_valid[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: js.Tuple2[Double, Double], pad: valid_, dilations: Double): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_valid[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: valid_): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_valid[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: valid_, dilations: js.Tuple2[Double, Double]): T = js.native
-    @JSName("dilation2d")
-    def dilation2d_valid[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: valid_, dilations: Double): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: valid_ | same_, dilations: Double): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: valid_ | same_, dilations: Double, dataFormat: NHWC): T = js.native
+    def dilation2d[T /* <: Tensor3D | Tensor4D */](filter: TensorLike3D, strides: Double, pad: valid_ | same_, dilations: Unit, dataFormat: NHWC): T = js.native
     
     /**
       * Disposes `tf.Tensor` from memory.
@@ -582,8 +871,6 @@ object distTensorMod {
     def divNoNan[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def divNoNan[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def divStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
-    
     def dot[T /* <: Tensor[Rank] */](b: Tensor[Rank]): Tensor[Rank] = js.native
     def dot[T /* <: Tensor[Rank] */](b: TensorLike): Tensor[Rank] = js.native
     
@@ -595,9 +882,14 @@ object distTensorMod {
     def equal[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def equal[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def equalStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
-    
     def erf[T /* <: Tensor[Rank] */](): T = js.native
+    
+    def euclideanNorm[T /* <: Tensor[Rank] */](): T = js.native
+    def euclideanNorm[T /* <: Tensor[Rank] */](axis: js.Array[Double]): T = js.native
+    def euclideanNorm[T /* <: Tensor[Rank] */](axis: js.Array[Double], keepDims: Boolean): T = js.native
+    def euclideanNorm[T /* <: Tensor[Rank] */](axis: Double): T = js.native
+    def euclideanNorm[T /* <: Tensor[Rank] */](axis: Double, keepDims: Boolean): T = js.native
+    def euclideanNorm[T /* <: Tensor[Rank] */](axis: Unit, keepDims: Boolean): T = js.native
     
     def exp[T /* <: Tensor[Rank] */](): T = js.native
     
@@ -626,10 +918,6 @@ object distTensorMod {
     def greaterEqual[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def greaterEqual[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def greaterEqualStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
-    
-    def greaterStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
-    
     /** Unique id of this tensor. */
     val id: Double = js.native
     
@@ -657,10 +945,6 @@ object distTensorMod {
     
     def lessEqual[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def lessEqual[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
-    
-    def lessEqualStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
-    
-    def lessStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def localResponseNormalization[T /* <: Tensor[Rank] */](): T = js.native
     def localResponseNormalization[T /* <: Tensor[Rank] */](depthRadius: Double): T = js.native
@@ -722,124 +1006,78 @@ object distTensorMod {
     def max[T /* <: Tensor[Rank] */](axis: Double, keepDims: Boolean): T = js.native
     def max[T /* <: Tensor[Rank] */](axis: Unit, keepDims: Boolean): T = js.native
     
+    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: valid_ | same_): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](
+      filterSize: js.Tuple2[Double, Double],
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
     def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: Double): T = js.native
     def maxPool[T /* <: Tensor3D | Tensor4D */](
       filterSize: js.Tuple2[Double, Double],
       strides: js.Tuple2[Double, Double],
-      pad: same_,
-      dimRoundingMode: ceil
+      pad: Double,
+      dimRoundingMode: floor | round | ceil
     ): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: ExplicitPadding): T = js.native
     def maxPool[T /* <: Tensor3D | Tensor4D */](
       filterSize: js.Tuple2[Double, Double],
       strides: js.Tuple2[Double, Double],
-      pad: same_,
-      dimRoundingMode: floor
+      pad: ExplicitPadding,
+      dimRoundingMode: floor | round | ceil
     ): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid_ | same_): T = js.native
     def maxPool[T /* <: Tensor3D | Tensor4D */](
       filterSize: js.Tuple2[Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: same_,
-      dimRoundingMode: round
-    ): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](
-      filterSize: js.Tuple2[Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dimRoundingMode: ceil
-    ): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](
-      filterSize: js.Tuple2[Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dimRoundingMode: floor
-    ): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](
-      filterSize: js.Tuple2[Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: valid_,
-      dimRoundingMode: round
+      strides: Double,
+      pad: valid_ | same_,
+      dimRoundingMode: floor | round | ceil
     ): T = js.native
     def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: same_, dimRoundingMode: ceil): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: same_, dimRoundingMode: floor): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: same_, dimRoundingMode: round): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid_, dimRoundingMode: ceil): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid_, dimRoundingMode: floor): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid_, dimRoundingMode: round): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](
+      filterSize: js.Tuple2[Double, Double],
+      strides: Double,
+      pad: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: ExplicitPadding): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](
+      filterSize: js.Tuple2[Double, Double],
+      strides: Double,
+      pad: ExplicitPadding,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid_ | same_): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](
+      filterSize: Double,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
     def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: same_, dimRoundingMode: ceil): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: same_, dimRoundingMode: floor): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: same_, dimRoundingMode: round): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid_, dimRoundingMode: ceil): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid_, dimRoundingMode: floor): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid_, dimRoundingMode: round): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](
+      filterSize: Double,
+      strides: js.Tuple2[Double, Double],
+      pad: Double,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: ExplicitPadding): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](
+      filterSize: Double,
+      strides: js.Tuple2[Double, Double],
+      pad: ExplicitPadding,
+      dimRoundingMode: floor | round | ceil
+    ): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: valid_ | same_): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: valid_ | same_, dimRoundingMode: floor | round | ceil): T = js.native
     def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: Double): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: same_, dimRoundingMode: ceil): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: same_, dimRoundingMode: floor): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: same_, dimRoundingMode: round): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: valid_, dimRoundingMode: ceil): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: valid_, dimRoundingMode: floor): T = js.native
-    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: valid_, dimRoundingMode: round): T = js.native
-    @JSName("maxPool")
-    def maxPool_ceil[T /* <: Tensor3D | Tensor4D */](
-      filterSize: js.Tuple2[Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: Double,
-      dimRoundingMode: ceil
-    ): T = js.native
-    @JSName("maxPool")
-    def maxPool_ceil[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double, dimRoundingMode: ceil): T = js.native
-    @JSName("maxPool")
-    def maxPool_ceil[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double, dimRoundingMode: ceil): T = js.native
-    @JSName("maxPool")
-    def maxPool_ceil[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: Double, dimRoundingMode: ceil): T = js.native
-    @JSName("maxPool")
-    def maxPool_floor[T /* <: Tensor3D | Tensor4D */](
-      filterSize: js.Tuple2[Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: Double,
-      dimRoundingMode: floor
-    ): T = js.native
-    @JSName("maxPool")
-    def maxPool_floor[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double, dimRoundingMode: floor): T = js.native
-    @JSName("maxPool")
-    def maxPool_floor[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double, dimRoundingMode: floor): T = js.native
-    @JSName("maxPool")
-    def maxPool_floor[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: Double, dimRoundingMode: floor): T = js.native
-    @JSName("maxPool")
-    def maxPool_round[T /* <: Tensor3D | Tensor4D */](
-      filterSize: js.Tuple2[Double, Double],
-      strides: js.Tuple2[Double, Double],
-      pad: Double,
-      dimRoundingMode: round
-    ): T = js.native
-    @JSName("maxPool")
-    def maxPool_round[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double, dimRoundingMode: round): T = js.native
-    @JSName("maxPool")
-    def maxPool_round[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double, dimRoundingMode: round): T = js.native
-    @JSName("maxPool")
-    def maxPool_round[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: Double, dimRoundingMode: round): T = js.native
-    @JSName("maxPool")
-    def maxPool_same[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: same_): T = js.native
-    @JSName("maxPool")
-    def maxPool_same[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: same_): T = js.native
-    @JSName("maxPool")
-    def maxPool_same[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: same_): T = js.native
-    @JSName("maxPool")
-    def maxPool_same[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: same_): T = js.native
-    @JSName("maxPool")
-    def maxPool_valid[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: valid_): T = js.native
-    @JSName("maxPool")
-    def maxPool_valid[T /* <: Tensor3D | Tensor4D */](filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid_): T = js.native
-    @JSName("maxPool")
-    def maxPool_valid[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid_): T = js.native
-    @JSName("maxPool")
-    def maxPool_valid[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: valid_): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: Double, dimRoundingMode: floor | round | ceil): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: ExplicitPadding): T = js.native
+    def maxPool[T /* <: Tensor3D | Tensor4D */](filterSize: Double, strides: Double, pad: ExplicitPadding, dimRoundingMode: floor | round | ceil): T = js.native
     
     def maximum[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def maximum[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
-    
-    def maximumStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def mean[T /* <: Tensor[Rank] */](): T = js.native
     def mean[T /* <: Tensor[Rank] */](axis: js.Array[Double]): T = js.native
@@ -858,26 +1096,23 @@ object distTensorMod {
     def minimum[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def minimum[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def minimumStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
-    
-    @JSName("mirrorPad")
-    def mirrorPad_reflect[T /* <: Tensor[Rank] */](paddings: js.Array[js.Tuple2[Double, Double]], mode: reflect): T = js.native
-    @JSName("mirrorPad")
-    def mirrorPad_symmetric[T /* <: Tensor[Rank] */](paddings: js.Array[js.Tuple2[Double, Double]], mode: symmetric): T = js.native
+    def mirrorPad[T /* <: Tensor[Rank] */](paddings: js.Array[js.Tuple2[Double, Double]], mode: reflect | symmetric): T = js.native
     
     def mod[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def mod[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def modStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
-    
     def mul[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def mul[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
-    
-    def mulStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def neg[T /* <: Tensor[Rank] */](): T = js.native
     
     def norm[T /* <: Tensor[Rank] */](): Tensor[Rank] = js.native
+    def norm[T /* <: Tensor[Rank] */](ord: euclidean | fro): Tensor[Rank] = js.native
+    def norm[T /* <: Tensor[Rank] */](ord: euclidean | fro, axis: js.Array[Double]): Tensor[Rank] = js.native
+    def norm[T /* <: Tensor[Rank] */](ord: euclidean | fro, axis: js.Array[Double], keepDims: Boolean): Tensor[Rank] = js.native
+    def norm[T /* <: Tensor[Rank] */](ord: euclidean | fro, axis: Double): Tensor[Rank] = js.native
+    def norm[T /* <: Tensor[Rank] */](ord: euclidean | fro, axis: Double, keepDims: Boolean): Tensor[Rank] = js.native
+    def norm[T /* <: Tensor[Rank] */](ord: euclidean | fro, axis: Unit, keepDims: Boolean): Tensor[Rank] = js.native
     def norm[T /* <: Tensor[Rank] */](ord: Double): Tensor[Rank] = js.native
     def norm[T /* <: Tensor[Rank] */](ord: Double, axis: js.Array[Double]): Tensor[Rank] = js.native
     def norm[T /* <: Tensor[Rank] */](ord: Double, axis: js.Array[Double], keepDims: Boolean): Tensor[Rank] = js.native
@@ -889,35 +1124,9 @@ object distTensorMod {
     def norm[T /* <: Tensor[Rank] */](ord: Unit, axis: Double): Tensor[Rank] = js.native
     def norm[T /* <: Tensor[Rank] */](ord: Unit, axis: Double, keepDims: Boolean): Tensor[Rank] = js.native
     def norm[T /* <: Tensor[Rank] */](ord: Unit, axis: Unit, keepDims: Boolean): Tensor[Rank] = js.native
-    @JSName("norm")
-    def norm_euclidean[T /* <: Tensor[Rank] */](ord: euclidean): Tensor[Rank] = js.native
-    @JSName("norm")
-    def norm_euclidean[T /* <: Tensor[Rank] */](ord: euclidean, axis: js.Array[Double]): Tensor[Rank] = js.native
-    @JSName("norm")
-    def norm_euclidean[T /* <: Tensor[Rank] */](ord: euclidean, axis: js.Array[Double], keepDims: Boolean): Tensor[Rank] = js.native
-    @JSName("norm")
-    def norm_euclidean[T /* <: Tensor[Rank] */](ord: euclidean, axis: Double): Tensor[Rank] = js.native
-    @JSName("norm")
-    def norm_euclidean[T /* <: Tensor[Rank] */](ord: euclidean, axis: Double, keepDims: Boolean): Tensor[Rank] = js.native
-    @JSName("norm")
-    def norm_euclidean[T /* <: Tensor[Rank] */](ord: euclidean, axis: Unit, keepDims: Boolean): Tensor[Rank] = js.native
-    @JSName("norm")
-    def norm_fro[T /* <: Tensor[Rank] */](ord: fro): Tensor[Rank] = js.native
-    @JSName("norm")
-    def norm_fro[T /* <: Tensor[Rank] */](ord: fro, axis: js.Array[Double]): Tensor[Rank] = js.native
-    @JSName("norm")
-    def norm_fro[T /* <: Tensor[Rank] */](ord: fro, axis: js.Array[Double], keepDims: Boolean): Tensor[Rank] = js.native
-    @JSName("norm")
-    def norm_fro[T /* <: Tensor[Rank] */](ord: fro, axis: Double): Tensor[Rank] = js.native
-    @JSName("norm")
-    def norm_fro[T /* <: Tensor[Rank] */](ord: fro, axis: Double, keepDims: Boolean): Tensor[Rank] = js.native
-    @JSName("norm")
-    def norm_fro[T /* <: Tensor[Rank] */](ord: fro, axis: Unit, keepDims: Boolean): Tensor[Rank] = js.native
     
     def notEqual[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def notEqual[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
-    
-    def notEqualStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def oneHot(depth: Double, onValue: Double, offValue: Double): Tensor[Rank] = js.native
     
@@ -929,15 +1138,14 @@ object distTensorMod {
     def pool[T /* <: Tensor3D | Tensor4D */](
       windowShape: (js.Tuple2[Double, Double]) | Double,
       poolingType: avg | max,
-      padding: valid_ | same_ | Double,
+      padding: valid_ | same_ | Double | ExplicitPadding,
       diationRate: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
-      strides: js.UndefOr[(js.Tuple2[Double, Double]) | Double]
+      strides: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
+      dimRoundingMode: js.UndefOr[floor | round | ceil]
     ): T = js.native
     
     def pow[T /* <: Tensor[Rank] */](exp: Tensor[Rank]): T = js.native
     def pow[T /* <: Tensor[Rank] */](exp: TensorLike): T = js.native
-    
-    def powStrict[T /* <: Tensor[Rank] */](exp: Tensor[Rank]): Tensor[Rank] = js.native
     
     def prelu[T /* <: Tensor[Rank] */](alpha: T | TensorLike): T = js.native
     
@@ -976,9 +1184,13 @@ object distTensorMod {
     
     def resizeBilinear[T /* <: Tensor3D | Tensor4D */](newShape2D: js.Tuple2[Double, Double]): T = js.native
     def resizeBilinear[T /* <: Tensor3D | Tensor4D */](newShape2D: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+    def resizeBilinear[T /* <: Tensor3D | Tensor4D */](newShape2D: js.Tuple2[Double, Double], alignCorners: Boolean, halfPixelCenters: Boolean): T = js.native
+    def resizeBilinear[T /* <: Tensor3D | Tensor4D */](newShape2D: js.Tuple2[Double, Double], alignCorners: Unit, halfPixelCenters: Boolean): T = js.native
     
     def resizeNearestNeighbor[T /* <: Tensor3D | Tensor4D */](newShape2D: js.Tuple2[Double, Double]): T = js.native
     def resizeNearestNeighbor[T /* <: Tensor3D | Tensor4D */](newShape2D: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+    def resizeNearestNeighbor[T /* <: Tensor3D | Tensor4D */](newShape2D: js.Tuple2[Double, Double], alignCorners: Boolean, halfFloatCenters: Boolean): T = js.native
+    def resizeNearestNeighbor[T /* <: Tensor3D | Tensor4D */](newShape2D: js.Tuple2[Double, Double], alignCorners: Unit, halfFloatCenters: Boolean): T = js.native
     
     def reverse[T /* <: Tensor[Rank] */](): T = js.native
     def reverse[T /* <: Tensor[Rank] */](axis: js.Array[Double]): T = js.native
@@ -996,12 +1208,336 @@ object distTensorMod {
     def selu[T /* <: Tensor[Rank] */](): T = js.native
     
     def separableConv2d[T /* <: Tensor3D | Tensor4D */](
-      depthwiseFilter: Tensor4D | TensorLike4D,
-      pointwiseFilter: Tensor4D | TensorLike,
-      strides: (js.Tuple2[Double, Double]) | Double,
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: Tensor4D,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: Tensor4D,
+      strides: js.Tuple2[Double, Double],
       pad: valid_ | same_,
-      dilation: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
-      dataFormat: js.UndefOr[NHWC | NCHW]
+      dilation: js.Tuple2[Double, Double]
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: Tensor4D,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: js.Tuple2[Double, Double],
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: Tensor4D,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: Double
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: Tensor4D,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: Double,
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: Tensor4D,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: Unit,
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](depthwiseFilter: Tensor4D, pointwiseFilter: Tensor4D, strides: Double, pad: valid_ | same_): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: Tensor4D,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: js.Tuple2[Double, Double]
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: Tensor4D,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: js.Tuple2[Double, Double],
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: Tensor4D,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: Double
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: Tensor4D,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: Double,
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: Tensor4D,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: Unit,
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: TensorLike,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: TensorLike,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: js.Tuple2[Double, Double]
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: TensorLike,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: js.Tuple2[Double, Double],
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: TensorLike,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: Double
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: TensorLike,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: Double,
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: TensorLike,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: Unit,
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](depthwiseFilter: Tensor4D, pointwiseFilter: TensorLike, strides: Double, pad: valid_ | same_): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: TensorLike,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: js.Tuple2[Double, Double]
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: TensorLike,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: js.Tuple2[Double, Double],
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: TensorLike,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: Double
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: TensorLike,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: Double,
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: Tensor4D,
+      pointwiseFilter: TensorLike,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: Unit,
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: Tensor4D,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: Tensor4D,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: js.Tuple2[Double, Double]
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: Tensor4D,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: js.Tuple2[Double, Double],
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: Tensor4D,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: Double
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: Tensor4D,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: Double,
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: Tensor4D,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: Unit,
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](depthwiseFilter: TensorLike4D, pointwiseFilter: Tensor4D, strides: Double, pad: valid_ | same_): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: Tensor4D,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: js.Tuple2[Double, Double]
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: Tensor4D,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: js.Tuple2[Double, Double],
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: Tensor4D,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: Double
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: Tensor4D,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: Double,
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: Tensor4D,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: Unit,
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: TensorLike,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: TensorLike,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: js.Tuple2[Double, Double]
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: TensorLike,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: js.Tuple2[Double, Double],
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: TensorLike,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: Double
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: TensorLike,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: Double,
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: TensorLike,
+      strides: js.Tuple2[Double, Double],
+      pad: valid_ | same_,
+      dilation: Unit,
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](depthwiseFilter: TensorLike4D, pointwiseFilter: TensorLike, strides: Double, pad: valid_ | same_): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: TensorLike,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: js.Tuple2[Double, Double]
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: TensorLike,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: js.Tuple2[Double, Double],
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: TensorLike,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: Double
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: TensorLike,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: Double,
+      dataFormat: NHWC | NCHW
+    ): T = js.native
+    def separableConv2d[T /* <: Tensor3D | Tensor4D */](
+      depthwiseFilter: TensorLike4D,
+      pointwiseFilter: TensorLike,
+      strides: Double,
+      pad: valid_ | same_,
+      dilation: Unit,
+      dataFormat: NHWC | NCHW
     ): T = js.native
     
     /** The shape of the tensor. */
@@ -1043,8 +1579,6 @@ object distTensorMod {
     
     def squaredDifference[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def squaredDifference[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
-    
-    def squaredDifferenceStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
     
     def squeeze[T /* <: Tensor[Rank] */](): T = js.native
     def squeeze[T /* <: Tensor[Rank] */](axis: js.Array[Double]): T = js.native
@@ -1348,8 +1882,6 @@ object distTensorMod {
     def sub[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def sub[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
     
-    def subStrict[T /* <: Tensor[Rank] */](x: T | TensorLike): T = js.native
-    
     def sum[T /* <: Tensor[Rank] */](): T = js.native
     def sum[T /* <: Tensor[Rank] */](axis: js.Array[Double]): T = js.native
     def sum[T /* <: Tensor[Rank] */](axis: js.Array[Double], keepDims: Boolean): T = js.native
@@ -1409,7 +1941,7 @@ object distTensorMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/tensor", "TensorBuffer")
   @js.native
-  class TensorBuffer[R /* <: Rank */, D /* <: DataType */] protected () extends StObject {
+  open class TensorBuffer[R /* <: Rank */, D /* <: DataType */] protected () extends StObject {
     def this(
       shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
       dtype: D
@@ -1468,7 +2000,7 @@ object distTensorMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/tensor", "Variable")
   @js.native
-  class Variable[R /* <: Rank */] protected () extends Tensor[R] {
+  open class Variable[R /* <: Rank */] protected () extends Tensor[R] {
     def this(initialValue: Tensor[R], trainable: Boolean, name: String, tensorId: Double) = this()
     
     /**
@@ -1486,6 +2018,20 @@ object distTensorMod {
     var trainable: Boolean = js.native
   }
   
+  inline def getGlobalTensorClass(): Instantiable4[
+    /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[/ * import warning: RewrittenClass.unapply cls was tparam R * / any] */ /* shape */ js.Any, 
+    /* dtype */ DataType, 
+    /* dataId */ DataId, 
+    /* id */ Double, 
+    Tensor[Rank]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalTensorClass")().asInstanceOf[Instantiable4[
+    /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[/ * import warning: RewrittenClass.unapply cls was tparam R * / any] */ /* shape */ js.Any, 
+    /* dtype */ DataType, 
+    /* dataId */ DataId, 
+    /* id */ Double, 
+    Tensor[Rank]
+  ]]
+  
   inline def setDeprecationWarningFn(fn: js.Function1[/* msg */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDeprecationWarningFn")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setOpHandler(handler: OpHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOpHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -1495,6 +2041,68 @@ object distTensorMod {
   trait Backend extends StObject
   
   type DataId = js.Object
+  
+  type DataToGPUOptions = DataToGPUWebGLOption
+  
+  trait DataToGPUWebGLOption extends StObject {
+    
+    var customTexShape: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+  }
+  object DataToGPUWebGLOption {
+    
+    inline def apply(): DataToGPUWebGLOption = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DataToGPUWebGLOption]
+    }
+    
+    extension [Self <: DataToGPUWebGLOption](x: Self) {
+      
+      inline def setCustomTexShape(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "customTexShape", value.asInstanceOf[js.Any])
+      
+      inline def setCustomTexShapeUndefined: Self = StObject.set(x, "customTexShape", js.undefined)
+    }
+  }
+  
+  trait GPUData extends StObject {
+    
+    var bufSize: js.UndefOr[Double] = js.undefined
+    
+    var buffer: js.UndefOr[GPUBuffer] = js.undefined
+    
+    var tensorRef: Tensor[Rank]
+    
+    var texShape: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+    
+    var texture: js.UndefOr[WebGLTexture] = js.undefined
+  }
+  object GPUData {
+    
+    inline def apply(tensorRef: Tensor[Rank]): GPUData = {
+      val __obj = js.Dynamic.literal(tensorRef = tensorRef.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GPUData]
+    }
+    
+    extension [Self <: GPUData](x: Self) {
+      
+      inline def setBufSize(value: Double): Self = StObject.set(x, "bufSize", value.asInstanceOf[js.Any])
+      
+      inline def setBufSizeUndefined: Self = StObject.set(x, "bufSize", js.undefined)
+      
+      inline def setBuffer(value: GPUBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      
+      inline def setTensorRef(value: Tensor[Rank]): Self = StObject.set(x, "tensorRef", value.asInstanceOf[js.Any])
+      
+      inline def setTexShape(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "texShape", value.asInstanceOf[js.Any])
+      
+      inline def setTexShapeUndefined: Self = StObject.set(x, "texShape", js.undefined)
+      
+      inline def setTexture(value: WebGLTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+      
+      inline def setTextureUndefined: Self = StObject.set(x, "texture", js.undefined)
+    }
+  }
   
   @js.native
   trait NumericTensor[R /* <: Rank */] extends Tensor[R] {
@@ -1515,7 +2123,7 @@ object distTensorMod {
     def buffer_bool[R /* <: Rank */](
       shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
       dtype: bool,
-      values: Uint8Array
+      values: js.typedarray.Uint8Array
     ): TensorBuffer[R, bool] = js.native
     @JSName("buffer")
     def buffer_complex64[R /* <: Rank */](
@@ -1526,7 +2134,7 @@ object distTensorMod {
     def buffer_complex64[R /* <: Rank */](
       shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
       dtype: complex64,
-      values: Float32Array
+      values: js.typedarray.Float32Array
     ): TensorBuffer[R, complex64] = js.native
     @JSName("buffer")
     def buffer_float32[R /* <: Rank */](
@@ -1537,7 +2145,7 @@ object distTensorMod {
     def buffer_float32[R /* <: Rank */](
       shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
       dtype: float32,
-      values: Float32Array
+      values: js.typedarray.Float32Array
     ): TensorBuffer[R, float32] = js.native
     @JSName("buffer")
     def buffer_int32[R /* <: Rank */](
@@ -1548,7 +2156,7 @@ object distTensorMod {
     def buffer_int32[R /* <: Rank */](
       shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
       dtype: int32,
-      values: Int32Array
+      values: js.typedarray.Int32Array
     ): TensorBuffer[R, int32] = js.native
     @JSName("buffer")
     def buffer_string[R /* <: Rank */](
@@ -1643,5 +2251,8 @@ object distTensorMod {
     def read(dataId: DataId): js.Promise[BackendValues] = js.native
     
     def readSync(dataId: DataId): BackendValues = js.native
+    
+    def readToGPU(dataId: DataId): GPUData = js.native
+    def readToGPU(dataId: DataId, options: DataToGPUOptions): GPUData = js.native
   }
 }

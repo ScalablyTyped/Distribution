@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SpatialManipulationStartedEventArgs extends StObject {
   
-  var interactionSourceKind: js.Any
+  var interactionSourceKind: Any
   
   /* unmapped type */
-  var tryGetPointerPose: js.Any
+  var tryGetPointerPose: Any
 }
 object SpatialManipulationStartedEventArgs {
   
-  inline def apply(interactionSourceKind: js.Any, tryGetPointerPose: js.Any): SpatialManipulationStartedEventArgs = {
+  inline def apply(interactionSourceKind: Any, tryGetPointerPose: Any): SpatialManipulationStartedEventArgs = {
     val __obj = js.Dynamic.literal(interactionSourceKind = interactionSourceKind.asInstanceOf[js.Any], tryGetPointerPose = tryGetPointerPose.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialManipulationStartedEventArgs]
   }
   
   extension [Self <: SpatialManipulationStartedEventArgs](x: Self) {
     
-    inline def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
+    inline def setInteractionSourceKind(value: Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
     
-    inline def setTryGetPointerPose(value: js.Any): Self = StObject.set(x, "tryGetPointerPose", value.asInstanceOf[js.Any])
+    inline def setTryGetPointerPose(value: Any): Self = StObject.set(x, "tryGetPointerPose", value.asInstanceOf[js.Any])
   }
 }

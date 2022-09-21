@@ -16,7 +16,7 @@ object Page {
   
   type Constructor = js.Function1[/* options */ Options[DataOption, CustomOption], Unit]
   
-  type CustomOption = Record[String, js.Any]
+  type CustomOption = Record[String, Any]
   
   trait Data[D /* <: DataOption */] extends StObject {
     
@@ -43,7 +43,7 @@ object Page {
     }
   }
   
-  type DataOption = Record[String, js.Any]
+  type DataOption = Record[String, Any]
   
   type GetCurrentPages = js.Function0[js.Array[Instance[IAnyObject, IAnyObject]]]
   
@@ -363,7 +363,7 @@ object Page {
     /** 如果 `from` 值是 `button`，则 `target` 是触发这次转发事件的 `button`，否则为 `undefined`
       *
       * 最低基础库： `1.2.4` */
-    var target: js.Any
+    var target: Any
     
     /** 页面中包含`<web-view>`组件时，返回当前`<web-view>`的url
       *
@@ -373,7 +373,7 @@ object Page {
   }
   object IShareAppMessageOption {
     
-    inline def apply(from: button | menu | String, target: js.Any): IShareAppMessageOption = {
+    inline def apply(from: button | menu | String, target: Any): IShareAppMessageOption = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[IShareAppMessageOption]
     }
@@ -382,7 +382,7 @@ object Page {
       
       inline def setFrom(value: button | menu | String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setWebViewUrl(value: String): Self = StObject.set(x, "webViewUrl", value.asInstanceOf[js.Any])
       
@@ -450,7 +450,7 @@ object Page {
     }
   }
   
-  type Options[TData /* <: DataOption */, TCustom /* <: CustomOption */] = TCustom & Partial[Data[TData]] & PartialILifetime & (ThisType[Instance[TData, TCustom]])
+  type Options[TData /* <: DataOption */, TCustom /* <: CustomOption */] = TCustom & Partial[Data[TData]] & PartialILifetime & typings.wechatMiniprogram.anon.Options & (ThisType[Instance[TData, TCustom]])
   
   type TrivialInstance = Instance[IAnyObject, IAnyObject]
 }

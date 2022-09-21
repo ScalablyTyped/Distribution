@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaLiveChatTextMessageDetails extends StObject {
   
   /**
-    * The user&#39;s message.
+    * The user's message.
     */
-  var messageText: js.UndefOr[String] = js.undefined
+  var messageText: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLiveChatTextMessageDetails {
   
@@ -21,6 +21,8 @@ object SchemaLiveChatTextMessageDetails {
   extension [Self <: SchemaLiveChatTextMessageDetails](x: Self) {
     
     inline def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
+    
+    inline def setMessageTextNull: Self = StObject.set(x, "messageText", null)
     
     inline def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-browser", "PutBucketWebsiteCommand")
 @js.native
-class PutBucketWebsiteCommand protected ()
+open class PutBucketWebsiteCommand protected ()
   extends typings.awsSdkClientS3Browser.putBucketWebsiteCommandMod.PutBucketWebsiteCommand {
   def this(input: PutBucketWebsiteInput) = this()
 }

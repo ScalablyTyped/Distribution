@@ -12,7 +12,7 @@ trait AwsIamAccessKeyDetails extends StObject {
   var AccessKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The AWS account ID of the account for the key.
+    * The Amazon Web Services account ID of the account for the key.
     */
   var AccountId: js.UndefOr[NonEmptyString] = js.undefined
   

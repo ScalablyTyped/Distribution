@@ -1,7 +1,6 @@
 package typings.polycrc
 
-import typings.node.Buffer
-import typings.std.Int32Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,14 +13,14 @@ object mod {
   
   @JSImport("polycrc", "CRC")
   @js.native
-  class CRC_ protected () extends StObject {
+  open class CRC_ protected () extends StObject {
     def this(width: Double, poly: Double, xor_in: Double, xor_out: Double, reflect: Boolean) = this()
     
     def calculate(buffer: Buffer): Double = js.native
     
     def calculate_no_table(buffer: Buffer): Double = js.native
     
-    def gen_table(): Int32Array = js.native
+    def gen_table(): js.typedarray.Int32Array = js.native
     
     def print_table(): String = js.native
   }

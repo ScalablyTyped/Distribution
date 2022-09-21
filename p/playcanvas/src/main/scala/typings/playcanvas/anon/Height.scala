@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Height extends StObject {
   
+  var calculateTangents: js.UndefOr[Boolean] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
   
   var heightSegments: js.UndefOr[Double] = js.undefined
@@ -22,6 +24,10 @@ object Height {
   }
   
   extension [Self <: Height](x: Self) {
+    
+    inline def setCalculateTangents(value: Boolean): Self = StObject.set(x, "calculateTangents", value.asInstanceOf[js.Any])
+    
+    inline def setCalculateTangentsUndefined: Self = StObject.set(x, "calculateTangents", js.undefined)
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

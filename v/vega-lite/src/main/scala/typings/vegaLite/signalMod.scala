@@ -9,7 +9,7 @@ object signalMod {
   
   @JSImport("vega-lite/build/src/compile/signal", "SignalRefWrapper")
   @js.native
-  class SignalRefWrapper protected ()
+  open class SignalRefWrapper protected ()
     extends StObject
        with SignalRef {
     def this(exprGenerator: js.Function0[String]) = this()

@@ -10,10 +10,10 @@ A micro code-editor for awesome web pages
 | ------------------ | :-------------: |
 | Full name          | codeflask |
 | Keywords           | code-editor, code, syntax-highlight, highlight |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 248386 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 25448.333333333332 |
+| # stars            | 928.0 |
 
 ## Links
 - [Homepage](https://kazzkiq.github.io/CodeFlask/)

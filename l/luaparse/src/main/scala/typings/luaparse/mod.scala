@@ -10,6 +10,9 @@ import typings.luaparse.luaparseStrings.LuaJIT
 import typings.luaparse.luaparseStrings.`5Dot1`
 import typings.luaparse.luaparseStrings.`5Dot2`
 import typings.luaparse.luaparseStrings.`5Dot3`
+import typings.luaparse.luaparseStrings.`pseudo-latin1`
+import typings.luaparse.luaparseStrings.`x-user-defined`
+import typings.luaparse.luaparseStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,6 +33,13 @@ object mod {
     
     /** Store comments as an array in the chunk object. */
     var comments: Boolean
+    
+    /**
+      * Defines the relation between code points ≥ U+0080 appearing in parser input and raw bytes in source code,
+      * and how Lua escape sequences in JavaScript strings should be interpreted.
+      * See the Encoding modes section https://github.com/fstirlitz/luaparse#encoding-modes for more information.
+      */
+    var encodingMode: `pseudo-latin1` | `x-user-defined` | none
     
     /**
       * Whether to allow code points ≥ U+0080 in identifiers, like LuaJIT does.
@@ -76,6 +86,7 @@ object mod {
     
     inline def apply(
       comments: Boolean,
+      encodingMode: `pseudo-latin1` | `x-user-defined` | none,
       locations: Boolean,
       luaVersion: `5Dot1` | `5Dot2` | `5Dot3` | LuaJIT,
       onCreateNode: Node => Unit,
@@ -86,7 +97,7 @@ object mod {
       scope: Boolean,
       wait_ : Boolean
     ): Options = {
-      val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], extendedIdentifiers = false, locations = locations.asInstanceOf[js.Any], luaVersion = luaVersion.asInstanceOf[js.Any], onCreateNode = js.Any.fromFunction1(onCreateNode), onCreateScope = js.Any.fromFunction0(onCreateScope), onDestroyScope = js.Any.fromFunction0(onDestroyScope), onLocalDeclaration = js.Any.fromFunction1(onLocalDeclaration), ranges = ranges.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], encodingMode = encodingMode.asInstanceOf[js.Any], extendedIdentifiers = false, locations = locations.asInstanceOf[js.Any], luaVersion = luaVersion.asInstanceOf[js.Any], onCreateNode = js.Any.fromFunction1(onCreateNode), onCreateScope = js.Any.fromFunction0(onCreateScope), onDestroyScope = js.Any.fromFunction0(onDestroyScope), onLocalDeclaration = js.Any.fromFunction1(onLocalDeclaration), ranges = ranges.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.updateDynamic("wait")(wait_.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
@@ -94,6 +105,8 @@ object mod {
     extension [Self <: Options](x: Self) {
       
       inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      
+      inline def setEncodingMode(value: `pseudo-latin1` | `x-user-defined` | none): Self = StObject.set(x, "encodingMode", value.asInstanceOf[js.Any])
       
       inline def setExtendedIdentifiers(value: `false`): Self = StObject.set(x, "extendedIdentifiers", value.asInstanceOf[js.Any])
       

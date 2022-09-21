@@ -9,12 +9,12 @@ trait RenderingEventUIParam extends StObject {
   /**
     * Gets a reference to the editor element.
     */
-  var element: js.UndefOr[js.Any] = js.undefined
+  var element: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the editor performing rendering.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object RenderingEventUIParam {
   
@@ -25,11 +25,11 @@ object RenderingEventUIParam {
   
   extension [Self <: RenderingEventUIParam](x: Self) {
     
-    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

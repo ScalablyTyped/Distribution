@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLSpanElement")
 @js.native
-/* private */ class HTMLSpanElement ()
+/* private */ open class HTMLSpanElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLSpanElement

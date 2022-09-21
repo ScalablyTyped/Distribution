@@ -10,10 +10,10 @@ N-Triples serializer that implements the RDFJS Sink interface
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/serializer-ntriples |
 | Keywords           | rdf, rdfjs, serializer, ntriples |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 33995 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6366.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/serializer-ntriples)

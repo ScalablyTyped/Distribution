@@ -549,13 +549,13 @@ object Docs {
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
         inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value*))
         
         inline def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
         
@@ -628,7 +628,7 @@ object Docs {
         
         inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
         
-        inline def setRequestsVarargs(value: Request*): Self = StObject.set(x, "requests", js.Array(value :_*))
+        inline def setRequestsVarargs(value: Request*): Self = StObject.set(x, "requests", js.Array(value*))
         
         inline def setWriteControl(value: WriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
         
@@ -661,7 +661,7 @@ object Docs {
         
         inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
         
-        inline def setRepliesVarargs(value: Response*): Self = StObject.set(x, "replies", js.Array(value :_*))
+        inline def setRepliesVarargs(value: Response*): Self = StObject.set(x, "replies", js.Array(value*))
         
         inline def setWriteControl(value: WriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
         
@@ -686,7 +686,7 @@ object Docs {
         
         inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value*))
       }
     }
     
@@ -794,13 +794,13 @@ object Docs {
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
         inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value*))
         
         inline def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
         
@@ -1431,7 +1431,7 @@ object Docs {
       
       var description: js.UndefOr[String] = js.undefined
       
-      var embeddedDrawingProperties: js.UndefOr[js.Any] = js.undefined
+      var embeddedDrawingProperties: js.UndefOr[Any] = js.undefined
       
       var embeddedObjectBorder: js.UndefOr[EmbeddedObjectBorder] = js.undefined
       
@@ -1464,7 +1464,7 @@ object Docs {
         
         inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
-        inline def setEmbeddedDrawingProperties(value: js.Any): Self = StObject.set(x, "embeddedDrawingProperties", value.asInstanceOf[js.Any])
+        inline def setEmbeddedDrawingProperties(value: Any): Self = StObject.set(x, "embeddedDrawingProperties", value.asInstanceOf[js.Any])
         
         inline def setEmbeddedDrawingPropertiesUndefined: Self = StObject.set(x, "embeddedDrawingProperties", js.undefined)
         
@@ -1584,7 +1584,7 @@ object Docs {
       
       var descriptionSuggested: js.UndefOr[Boolean] = js.undefined
       
-      var embeddedDrawingPropertiesSuggestionState: js.UndefOr[js.Any] = js.undefined
+      var embeddedDrawingPropertiesSuggestionState: js.UndefOr[Any] = js.undefined
       
       var embeddedObjectBorderSuggestionState: js.UndefOr[EmbeddedObjectBorderSuggestionState] = js.undefined
       
@@ -1617,7 +1617,7 @@ object Docs {
         
         inline def setDescriptionSuggestedUndefined: Self = StObject.set(x, "descriptionSuggested", js.undefined)
         
-        inline def setEmbeddedDrawingPropertiesSuggestionState(value: js.Any): Self = StObject.set(x, "embeddedDrawingPropertiesSuggestionState", value.asInstanceOf[js.Any])
+        inline def setEmbeddedDrawingPropertiesSuggestionState(value: Any): Self = StObject.set(x, "embeddedDrawingPropertiesSuggestionState", value.asInstanceOf[js.Any])
         
         inline def setEmbeddedDrawingPropertiesSuggestionStateUndefined: Self = StObject.set(x, "embeddedDrawingPropertiesSuggestionState", js.undefined)
         
@@ -1697,13 +1697,13 @@ object Docs {
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
         inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value*))
       }
     }
     
@@ -1726,7 +1726,7 @@ object Docs {
         
         inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value*))
         
         inline def setFooterId(value: String): Self = StObject.set(x, "footerId", value.asInstanceOf[js.Any])
         
@@ -1753,7 +1753,7 @@ object Docs {
         
         inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value*))
         
         inline def setFootnoteId(value: String): Self = StObject.set(x, "footnoteId", value.asInstanceOf[js.Any])
         
@@ -1796,13 +1796,13 @@ object Docs {
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
         inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value*))
         
         inline def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
         
@@ -1833,7 +1833,7 @@ object Docs {
         
         inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value*))
         
         inline def setHeaderId(value: String): Self = StObject.set(x, "headerId", value.asInstanceOf[js.Any])
         
@@ -1864,13 +1864,13 @@ object Docs {
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
         inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value*))
         
         inline def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
         
@@ -2025,7 +2025,7 @@ object Docs {
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInlineObjectPropertiesChanges(value: js.Object): Self = StObject.set(x, "suggestedInlineObjectPropertiesChanges", value.asInstanceOf[js.Any])
         
@@ -2066,13 +2066,13 @@ object Docs {
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
         inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value*))
         
         inline def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
         
@@ -2411,7 +2411,7 @@ object Docs {
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInsertionId(value: String): Self = StObject.set(x, "suggestedInsertionId", value.asInstanceOf[js.Any])
         
@@ -2440,7 +2440,7 @@ object Docs {
         
         inline def setNestingLevelsUndefined: Self = StObject.set(x, "nestingLevels", js.undefined)
         
-        inline def setNestingLevelsVarargs(value: NestingLevel*): Self = StObject.set(x, "nestingLevels", js.Array(value :_*))
+        inline def setNestingLevelsVarargs(value: NestingLevel*): Self = StObject.set(x, "nestingLevels", js.Array(value*))
       }
     }
     
@@ -2461,7 +2461,7 @@ object Docs {
         
         inline def setNestingLevelsSuggestionStatesUndefined: Self = StObject.set(x, "nestingLevelsSuggestionStates", js.undefined)
         
-        inline def setNestingLevelsSuggestionStatesVarargs(value: NestingLevelSuggestionState*): Self = StObject.set(x, "nestingLevelsSuggestionStates", js.Array(value :_*))
+        inline def setNestingLevelsSuggestionStatesVarargs(value: NestingLevelSuggestionState*): Self = StObject.set(x, "nestingLevelsSuggestionStates", js.Array(value*))
       }
     }
     
@@ -2519,7 +2519,7 @@ object Docs {
         
         inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
         
-        inline def setRangesVarargs(value: Range*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+        inline def setRangesVarargs(value: Range*): Self = StObject.set(x, "ranges", js.Array(value*))
       }
     }
     
@@ -2546,7 +2546,7 @@ object Docs {
         
         inline def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
         
-        inline def setNamedRangesVarargs(value: NamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value :_*))
+        inline def setNamedRangesVarargs(value: NamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value*))
       }
     }
     
@@ -2629,7 +2629,7 @@ object Docs {
         
         inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
         
-        inline def setStylesVarargs(value: NamedStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+        inline def setStylesVarargs(value: NamedStyle*): Self = StObject.set(x, "styles", js.Array(value*))
       }
     }
     
@@ -2650,7 +2650,7 @@ object Docs {
         
         inline def setStylesSuggestionStatesUndefined: Self = StObject.set(x, "stylesSuggestionStates", js.undefined)
         
-        inline def setStylesSuggestionStatesVarargs(value: NamedStyleSuggestionState*): Self = StObject.set(x, "stylesSuggestionStates", js.Array(value :_*))
+        inline def setStylesSuggestionStatesVarargs(value: NamedStyleSuggestionState*): Self = StObject.set(x, "stylesSuggestionStates", js.Array(value*))
       }
     }
     
@@ -2793,7 +2793,7 @@ object Docs {
         
         inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
         
-        inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+        inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value*))
       }
     }
     
@@ -2839,13 +2839,13 @@ object Docs {
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
         inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value*))
         
         inline def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
         
@@ -2890,7 +2890,7 @@ object Docs {
         
         inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
         
-        inline def setElementsVarargs(value: ParagraphElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
+        inline def setElementsVarargs(value: ParagraphElement*): Self = StObject.set(x, "elements", js.Array(value*))
         
         inline def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
         
@@ -2900,7 +2900,7 @@ object Docs {
         
         inline def setPositionedObjectIdsUndefined: Self = StObject.set(x, "positionedObjectIds", js.undefined)
         
-        inline def setPositionedObjectIdsVarargs(value: String*): Self = StObject.set(x, "positionedObjectIds", js.Array(value :_*))
+        inline def setPositionedObjectIdsVarargs(value: String*): Self = StObject.set(x, "positionedObjectIds", js.Array(value*))
         
         inline def setSuggestedBulletChanges(value: js.Object): Self = StObject.set(x, "suggestedBulletChanges", value.asInstanceOf[js.Any])
         
@@ -3163,7 +3163,7 @@ object Docs {
         
         inline def setTabStopsUndefined: Self = StObject.set(x, "tabStops", js.undefined)
         
-        inline def setTabStopsVarargs(value: TabStop*): Self = StObject.set(x, "tabStops", js.Array(value :_*))
+        inline def setTabStopsVarargs(value: TabStop*): Self = StObject.set(x, "tabStops", js.Array(value*))
       }
     }
     
@@ -3333,7 +3333,7 @@ object Docs {
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInsertionId(value: String): Self = StObject.set(x, "suggestedInsertionId", value.asInstanceOf[js.Any])
         
@@ -3734,13 +3734,13 @@ object Docs {
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
         inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value*))
       }
     }
     
@@ -3790,7 +3790,7 @@ object Docs {
         
         inline def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
         
-        inline def setColumnPropertiesVarargs(value: SectionColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value :_*))
+        inline def setColumnPropertiesVarargs(value: SectionColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value*))
         
         inline def setColumnSeparatorStyle(value: String): Self = StObject.set(x, "columnSeparatorStyle", value.asInstanceOf[js.Any])
         
@@ -4324,19 +4324,19 @@ object Docs {
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
         inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value*))
         
         inline def setTableRows(value: js.Array[TableRow]): Self = StObject.set(x, "tableRows", value.asInstanceOf[js.Any])
         
         inline def setTableRowsUndefined: Self = StObject.set(x, "tableRows", js.undefined)
         
-        inline def setTableRowsVarargs(value: TableRow*): Self = StObject.set(x, "tableRows", js.Array(value :_*))
+        inline def setTableRowsVarargs(value: TableRow*): Self = StObject.set(x, "tableRows", js.Array(value*))
         
         inline def setTableStyle(value: TableStyle): Self = StObject.set(x, "tableStyle", value.asInstanceOf[js.Any])
         
@@ -4373,7 +4373,7 @@ object Docs {
         
         inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value*))
         
         inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
         
@@ -4387,13 +4387,13 @@ object Docs {
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
         inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value*))
         
         inline def setSuggestedTableCellStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTableCellStyleChanges", value.asInstanceOf[js.Any])
         
@@ -4683,19 +4683,19 @@ object Docs {
         
         inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value*))
         
         inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
         inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value*))
       }
     }
     
@@ -4736,13 +4736,13 @@ object Docs {
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
         inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value*))
         
         inline def setSuggestedTableRowStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTableRowStyleChanges", value.asInstanceOf[js.Any])
         
@@ -4752,7 +4752,7 @@ object Docs {
         
         inline def setTableCellsUndefined: Self = StObject.set(x, "tableCells", js.undefined)
         
-        inline def setTableCellsVarargs(value: TableCell*): Self = StObject.set(x, "tableCells", js.Array(value :_*))
+        inline def setTableCellsVarargs(value: TableCell*): Self = StObject.set(x, "tableCells", js.Array(value*))
         
         inline def setTableRowStyle(value: TableRowStyle): Self = StObject.set(x, "tableRowStyle", value.asInstanceOf[js.Any])
         
@@ -4815,7 +4815,7 @@ object Docs {
         
         inline def setTableColumnPropertiesUndefined: Self = StObject.set(x, "tableColumnProperties", js.undefined)
         
-        inline def setTableColumnPropertiesVarargs(value: TableColumnProperties*): Self = StObject.set(x, "tableColumnProperties", js.Array(value :_*))
+        inline def setTableColumnPropertiesVarargs(value: TableColumnProperties*): Self = StObject.set(x, "tableColumnProperties", js.Array(value*))
       }
     }
     
@@ -4848,13 +4848,13 @@ object Docs {
         
         inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
         
-        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+        inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
         
         inline def setSuggestedInsertionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedInsertionIds", value.asInstanceOf[js.Any])
         
         inline def setSuggestedInsertionIdsUndefined: Self = StObject.set(x, "suggestedInsertionIds", js.undefined)
         
-        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value :_*))
+        inline def setSuggestedInsertionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedInsertionIds", js.Array(value*))
         
         inline def setSuggestedTextStyleChanges(value: js.Object): Self = StObject.set(x, "suggestedTextStyleChanges", value.asInstanceOf[js.Any])
         

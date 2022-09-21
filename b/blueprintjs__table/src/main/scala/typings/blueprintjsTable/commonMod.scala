@@ -21,6 +21,8 @@ object commonMod {
     /**
       * Overrides the inherited CSS of the element to make sure it is
       * selectable. This method also makes the element pseudo-invisible.
+      *
+      * @deprecated will be removed in v4.0
       */
     inline def applySelectableStyles(elem: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("applySelectableStyles")(elem.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
     
@@ -28,52 +30,25 @@ object commonMod {
       * Copies table cells to the clipboard. The parameter is a row-major
       * 2-dimensional `Array` of strings and can contain nulls. We assume all
       * rows are the same length. If not, the cells will still be copied, but
-      * the columns may not align. Returns a boolean indicating whether the
-      * copy succeeded.
+      * the columns may not align.
+      *
+      * @returns a Promise which resolves or rejects if the copy succeeds.
       *
       * See `Clipboard.copy`
       */
-    inline def copyCells(cells: js.Array[js.Array[String]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("copyCells")(cells.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def copyCells(cells: js.Array[js.Array[String]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("copyCells")(cells.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /**
-      * Copies the element and its children to the clipboard. Returns a boolean
-      * indicating whether the copy succeeded.
+      * Copies the text to the clipboard.
       *
-      * If a plaintext argument is supplied, we add both the text/html and
-      * text/plain mime types to the clipboard. This preserves the built in
-      * semantics of copying elements to the clipboard while allowing custom
-      * plaintext output for programs that can't cope with HTML data in the
-      * clipboard.
-      *
-      * Verified on Firefox 47, Chrome 51.
-      *
-      * Note: Sometimes the copy does not succeed. Presumably, in order to
-      * prevent memory issues, browsers will limit the total amount of data you
-      * can copy to the clipboard. Based on ad hoc testing, we found an
-      * inconsistent limit at about 300KB or 40,000 cells. Depending on the on
-      * the content of cells, your limits may vary.
+      * @returns a Promise which resolves or rejects if the copy succeeds.
       */
-    inline def copyElement(elem: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("copyElement")(elem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    inline def copyElement(elem: HTMLElement, plaintext: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("copyElement")(elem.asInstanceOf[js.Any], plaintext.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    
-    /**
-      * Copies the text to the clipboard. Returns a boolean
-      * indicating whether the copy succeeded.
-      *
-      * See `Clipboard.copy`
-      */
-    inline def copyString(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("copyString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    
-    /**
-      * Returns a boolean indicating whether the current browser nominally
-      * supports the `copy` operation using the `execCommand` API.
-      */
-    inline def isCopySupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCopySupported")().asInstanceOf[Boolean]
+    inline def copyString(value: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("copyString")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   }
   
   @JSImport("@blueprintjs/table/lib/esm/common", "Grid")
   @js.native
-  class Grid protected ()
+  open class Grid protected ()
     extends typings.blueprintjsTable.gridMod.Grid {
     /**
       * This constructor accumulates the heights and widths in `O(n)`, saving
@@ -147,11 +122,21 @@ object commonMod {
     @js.native
     def DEFAULT_MAX_ROWS: Double = js.native
     inline def DEFAULT_MAX_ROWS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MAX_ROWS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/table/lib/esm/common", "Grid.MIN_COLUMN_HEADER_HEIGHT")
+    @js.native
+    def MIN_COLUMN_HEADER_HEIGHT: Double = js.native
+    inline def MIN_COLUMN_HEADER_HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_COLUMN_HEADER_HEIGHT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/table/lib/esm/common", "Grid.MIN_ROW_HEADER_WIDTH")
+    @js.native
+    def MIN_ROW_HEADER_WIDTH: Double = js.native
+    inline def MIN_ROW_HEADER_WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_ROW_HEADER_WIDTH")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@blueprintjs/table/lib/esm/common", "Rect")
   @js.native
-  class Rect protected ()
+  open class Rect protected ()
     extends typings.blueprintjsTable.rectMod.Rect {
     def this(left: Double, top: Double, width: Double, height: Double) = this()
   }
@@ -227,6 +212,8 @@ object commonMod {
       * @param array - the `Array` to copy and adjust
       * @param length - the target length of the array
       * @param fillValue - the value to add to the array if it is too short
+      *
+      * @deprecated this function is no longer used in the table component, so it will be removed in a future major version
       */
     inline def arrayOfLength[T_1](array: js.Array[T_1], length: Double, fillValue: T_1): js.Array[T_1] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfLength")(array.asInstanceOf[js.Any], length.asInstanceOf[js.Any], fillValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_1]]
     
@@ -239,7 +226,7 @@ object commonMod {
       * @param defaults - the full array of default values
       * @param sparseOverrides - the sparse array of override values
       */
-    inline def assignSparseValues[T_2](defaults: js.Array[T_2], sparseOverrides: js.Array[T_2]): js.Array[T_2] = (^.asInstanceOf[js.Dynamic].applyDynamic("assignSparseValues")(defaults.asInstanceOf[js.Any], sparseOverrides.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_2]]
+    inline def assignSparseValues[T_2](defaults: js.Array[T_2], sparseOverrides: js.Array[js.UndefOr[T_2 | Null]]): js.Array[T_2] = (^.asInstanceOf[js.Dynamic].applyDynamic("assignSparseValues")(defaults.asInstanceOf[js.Any], sparseOverrides.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_2]]
     
     /**
       * Performs the binary search algorithm to find the index of the `value`
@@ -272,6 +259,16 @@ object commonMod {
     inline def clamp(value: Double, min: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def clamp(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def clamp(value: Double, min: Unit, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    /**
+      * Shallow comparison of potentially sparse arrays.
+      *
+      * @returns true if the array values are equal
+      */
+    inline def compareSparseArrays(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("compareSparseArrays")().asInstanceOf[Boolean]
+    inline def compareSparseArrays(a: js.Array[js.UndefOr[Double | Null]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("compareSparseArrays")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def compareSparseArrays(a: js.Array[js.UndefOr[Double | Null]], b: js.Array[js.UndefOr[Double | Null]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareSparseArrays")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def compareSparseArrays(a: Unit, b: js.Array[js.UndefOr[Double | Null]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareSparseArrays")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def getApproxCellHeight(
       cellText: String,
@@ -334,8 +331,8 @@ object commonMod {
       * For example, given the array [A,B,C,D,E,F], reordering the 3 contiguous elements starting at
       * index 1 (B, C, and D) to start at index 2 would yield [A,E,B,C,D,F].
       */
-    inline def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double): js.Array[T_3] = (^.asInstanceOf[js.Dynamic].applyDynamic("reorderArray")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_3]]
-    inline def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double, length: Double): js.Array[T_3] = (^.asInstanceOf[js.Dynamic].applyDynamic("reorderArray")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_3]]
+    inline def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double): js.UndefOr[js.Array[T_3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reorderArray")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T_3]]]
+    inline def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double, length: Double): js.UndefOr[js.Array[T_3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reorderArray")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T_3]]]
     
     /**
       * When reordering a contiguous block of rows or columns to a new index, we show a preview guide

@@ -26,6 +26,6 @@ object OperatorConstraint {
     
     inline def setSupportedScopes(value: js.Array[String]): Self = StObject.set(x, "supportedScopes", value.asInstanceOf[js.Any])
     
-    inline def setSupportedScopesVarargs(value: String*): Self = StObject.set(x, "supportedScopes", js.Array(value :_*))
+    inline def setSupportedScopesVarargs(value: String*): Self = StObject.set(x, "supportedScopes", js.Array(value*))
   }
 }

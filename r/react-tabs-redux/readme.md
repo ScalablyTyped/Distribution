@@ -11,9 +11,9 @@ Simple, fully customizable React tabs component that can be used in plain React 
 | Full name          | react-tabs-redux |
 | Keywords           | react, tabs, redux, flux |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 143141 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 12588.666666666666 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://github.com/patrik-piskay/react-tabs-redux#readme)

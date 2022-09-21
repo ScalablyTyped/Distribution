@@ -12,7 +12,12 @@ trait CreateTransitGatewayPeeringAttachmentRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The AWS account ID of the owner of the peer transit gateway.
+    * Requests a transit gateway peering attachment.
+    */
+  var Options: js.UndefOr[CreateTransitGatewayPeeringAttachmentRequestOptions] = js.undefined
+  
+  /**
+    * The ID of the Amazon Web Services account that owns the peer transit gateway.
     */
   var PeerAccountId: String
   
@@ -54,6 +59,10 @@ object CreateTransitGatewayPeeringAttachmentRequest {
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
+    inline def setOptions(value: CreateTransitGatewayPeeringAttachmentRequestOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
+    
     inline def setPeerAccountId(value: String): Self = StObject.set(x, "PeerAccountId", value.asInstanceOf[js.Any])
     
     inline def setPeerRegion(value: String): Self = StObject.set(x, "PeerRegion", value.asInstanceOf[js.Any])
@@ -64,7 +73,7 @@ object CreateTransitGatewayPeeringAttachmentRequest {
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
     
     inline def setTransitGatewayId(value: TransitGatewayId): Self = StObject.set(x, "TransitGatewayId", value.asInstanceOf[js.Any])
   }

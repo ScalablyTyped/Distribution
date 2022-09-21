@@ -17,7 +17,7 @@ trait IRadioGroup
     * @returns Ext.form.CheckboxGroup this
     */
   @JSName("setValue")
-  var setValue_IRadioGroup: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], ICheckboxGroup]] = js.undefined
+  var setValue_IRadioGroup: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], ICheckboxGroup]] = js.undefined
 }
 object IRadioGroup {
   
@@ -32,7 +32,7 @@ object IRadioGroup {
     
     inline def setCheckChangeUndefined: Self = StObject.set(x, "checkChange", js.undefined)
     
-    inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => ICheckboxGroup): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[Any] => ICheckboxGroup): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
   }

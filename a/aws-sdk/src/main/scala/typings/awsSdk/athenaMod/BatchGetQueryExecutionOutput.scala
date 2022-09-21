@@ -29,12 +29,12 @@ object BatchGetQueryExecutionOutput {
     
     inline def setQueryExecutionsUndefined: Self = StObject.set(x, "QueryExecutions", js.undefined)
     
-    inline def setQueryExecutionsVarargs(value: QueryExecution*): Self = StObject.set(x, "QueryExecutions", js.Array(value :_*))
+    inline def setQueryExecutionsVarargs(value: QueryExecution*): Self = StObject.set(x, "QueryExecutions", js.Array(value*))
     
     inline def setUnprocessedQueryExecutionIds(value: UnprocessedQueryExecutionIdList): Self = StObject.set(x, "UnprocessedQueryExecutionIds", value.asInstanceOf[js.Any])
     
     inline def setUnprocessedQueryExecutionIdsUndefined: Self = StObject.set(x, "UnprocessedQueryExecutionIds", js.undefined)
     
-    inline def setUnprocessedQueryExecutionIdsVarargs(value: UnprocessedQueryExecutionId*): Self = StObject.set(x, "UnprocessedQueryExecutionIds", js.Array(value :_*))
+    inline def setUnprocessedQueryExecutionIdsVarargs(value: UnprocessedQueryExecutionId*): Self = StObject.set(x, "UnprocessedQueryExecutionIds", js.Array(value*))
   }
 }

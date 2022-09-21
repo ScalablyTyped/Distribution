@@ -22,7 +22,7 @@ trait CreateUserRequest extends StObject {
   var IdentityInfo: js.UndefOr[UserIdentityInfo] = js.undefined
   
   /**
-    * The identifier of the Amazon Connect instance.
+    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
     */
   var InstanceId: typings.awsSdk.connectMod.InstanceId
   
@@ -47,7 +47,7 @@ trait CreateUserRequest extends StObject {
   var SecurityProfileIds: typings.awsSdk.connectMod.SecurityProfileIds
   
   /**
-    * One or more tags.
+    * The tags used to organize, track, or control access for this resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
   
@@ -95,7 +95,7 @@ object CreateUserRequest {
     
     inline def setSecurityProfileIds(value: SecurityProfileIds): Self = StObject.set(x, "SecurityProfileIds", value.asInstanceOf[js.Any])
     
-    inline def setSecurityProfileIdsVarargs(value: SecurityProfileId*): Self = StObject.set(x, "SecurityProfileIds", js.Array(value :_*))
+    inline def setSecurityProfileIdsVarargs(value: SecurityProfileId*): Self = StObject.set(x, "SecurityProfileIds", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

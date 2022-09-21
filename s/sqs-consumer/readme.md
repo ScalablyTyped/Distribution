@@ -1,7 +1,7 @@
 
 # Scala.js typings for sqs-consumer
 
-Typings are for version 5.5.0
+Typings are for version 5.7.0
 
 ## Library description:
 Build SQS-based Node applications without the boilerplate
@@ -10,10 +10,10 @@ Build SQS-based Node applications without the boilerplate
 | ------------------ | :-------------: |
 | Full name          | sqs-consumer |
 | Keywords           | sqs, queue, consumer |
-| # releases         | 10 |
-| # dependents       | 95 |
-| # downloads        | 3989360 |
-| # stars            | 15 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1166555.3333333333 |
+| # stars            | 1293.0 |
 
 ## Links
 - [Homepage](https://github.com/BBC/sqs-consumer)

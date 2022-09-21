@@ -35,7 +35,7 @@ object ClassedColorSliderProperties {
     
     inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
     
-    inline def setBreaksVarargs(value: ClassedColorSliderBreaks*): Self = StObject.set(x, "breaks", js.Array(value :_*))
+    inline def setBreaksVarargs(value: ClassedColorSliderBreaks*): Self = StObject.set(x, "breaks", js.Array(value*))
     
     inline def setViewModel(value: ClassedColorSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

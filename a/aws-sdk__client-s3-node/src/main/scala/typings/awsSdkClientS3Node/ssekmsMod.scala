@@ -8,5 +8,5 @@ object ssekmsMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_SSEKMS", "_SSEKMS")
   @js.native
-  val _SSEKMS: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val _SSEKMS: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

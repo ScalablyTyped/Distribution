@@ -11,7 +11,7 @@ trait IVersion extends StObject {
     * @returns Boolean True if this version equals to the target, false otherwise
     */
   @JSName("equals")
-  var equals_FIVersion: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var equals_FIVersion: js.UndefOr[js.Function1[/* target */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Returns the build component value
     * @returns Number build
@@ -47,55 +47,55 @@ trait IVersion extends StObject {
     * @param target String/Number
     * @returns Boolean
     */
-  var gt: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var gt: js.UndefOr[js.Function1[/* target */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Convenient alias to isGreaterThanOrEqual
     * @param target String/Number
     * @returns Boolean
     */
-  var gtEq: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var gtEq: js.UndefOr[js.Function1[/* target */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Returns whether this version if greater than the supplied argument
     * @param target String/Number The version to compare with
     * @returns Boolean True if this version if greater than the target, false otherwise
     */
-  var isGreaterThan: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var isGreaterThan: js.UndefOr[js.Function1[/* target */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Returns whether this version if greater than or equal to the supplied argument
     * @param target String/Number The version to compare with
     * @returns Boolean True if this version if greater than or equal to the target, false otherwise
     */
-  var isGreaterThanOrEqual: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var isGreaterThanOrEqual: js.UndefOr[js.Function1[/* target */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Returns whether this version if smaller than the supplied argument
     * @param target String/Number The version to compare with
     * @returns Boolean True if this version if smaller than the target, false otherwise
     */
-  var isLessThan: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var isLessThan: js.UndefOr[js.Function1[/* target */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Returns whether this version if less than or equal to the supplied argument
     * @param target String/Number The version to compare with
     * @returns Boolean True if this version if less than or equal to the target, false otherwise
     */
-  var isLessThanOrEqual: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var isLessThanOrEqual: js.UndefOr[js.Function1[/* target */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Convenient alias to isLessThan
     * @param target String/Number
     * @returns Boolean
     */
-  var lt: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var lt: js.UndefOr[js.Function1[/* target */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Convenient alias to isLessThanOrEqual
     * @param target String/Number
     * @returns Boolean
     */
-  var ltEq: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var ltEq: js.UndefOr[js.Function1[/* target */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Returns whether this version matches the supplied argument
     * @param target String/Number The version to compare with
     * @returns Boolean True if this version matches the target, false otherwise
     */
-  var `match`: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var `match`: js.UndefOr[js.Function1[/* target */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Returns this format  major minor patch build release
     * @returns Number[]
@@ -111,7 +111,7 @@ object IVersion {
   
   extension [Self <: IVersion](x: Self) {
     
-    inline def setEquals_(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: /* target */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
@@ -139,39 +139,39 @@ object IVersion {
     
     inline def setGetShortVersionUndefined: Self = StObject.set(x, "getShortVersion", js.undefined)
     
-    inline def setGt(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "gt", js.Any.fromFunction1(value))
+    inline def setGt(value: /* target */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "gt", js.Any.fromFunction1(value))
     
-    inline def setGtEq(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "gtEq", js.Any.fromFunction1(value))
+    inline def setGtEq(value: /* target */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "gtEq", js.Any.fromFunction1(value))
     
     inline def setGtEqUndefined: Self = StObject.set(x, "gtEq", js.undefined)
     
     inline def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
     
-    inline def setIsGreaterThan(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isGreaterThan", js.Any.fromFunction1(value))
+    inline def setIsGreaterThan(value: /* target */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "isGreaterThan", js.Any.fromFunction1(value))
     
-    inline def setIsGreaterThanOrEqual(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isGreaterThanOrEqual", js.Any.fromFunction1(value))
+    inline def setIsGreaterThanOrEqual(value: /* target */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "isGreaterThanOrEqual", js.Any.fromFunction1(value))
     
     inline def setIsGreaterThanOrEqualUndefined: Self = StObject.set(x, "isGreaterThanOrEqual", js.undefined)
     
     inline def setIsGreaterThanUndefined: Self = StObject.set(x, "isGreaterThan", js.undefined)
     
-    inline def setIsLessThan(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isLessThan", js.Any.fromFunction1(value))
+    inline def setIsLessThan(value: /* target */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "isLessThan", js.Any.fromFunction1(value))
     
-    inline def setIsLessThanOrEqual(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isLessThanOrEqual", js.Any.fromFunction1(value))
+    inline def setIsLessThanOrEqual(value: /* target */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "isLessThanOrEqual", js.Any.fromFunction1(value))
     
     inline def setIsLessThanOrEqualUndefined: Self = StObject.set(x, "isLessThanOrEqual", js.undefined)
     
     inline def setIsLessThanUndefined: Self = StObject.set(x, "isLessThan", js.undefined)
     
-    inline def setLt(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "lt", js.Any.fromFunction1(value))
+    inline def setLt(value: /* target */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "lt", js.Any.fromFunction1(value))
     
-    inline def setLtEq(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "ltEq", js.Any.fromFunction1(value))
+    inline def setLtEq(value: /* target */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "ltEq", js.Any.fromFunction1(value))
     
     inline def setLtEqUndefined: Self = StObject.set(x, "ltEq", js.undefined)
     
     inline def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
     
-    inline def setMatch(value: /* target */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
+    inline def setMatch(value: /* target */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
     
     inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     

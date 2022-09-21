@@ -23,7 +23,7 @@ object ParentChildWIMap {
     
     inline def setChildWorkItemIds(value: js.Array[Double]): Self = StObject.set(x, "childWorkItemIds", value.asInstanceOf[js.Any])
     
-    inline def setChildWorkItemIdsVarargs(value: Double*): Self = StObject.set(x, "childWorkItemIds", js.Array(value :_*))
+    inline def setChildWorkItemIdsVarargs(value: Double*): Self = StObject.set(x, "childWorkItemIds", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

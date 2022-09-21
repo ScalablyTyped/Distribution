@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.Section")
 @js.native
-class Section protected ()
+open class Section protected ()
   extends StObject
      with typings.sharepoint.CUI.Section {
   /**
@@ -34,7 +34,7 @@ class Section protected ()
   override def addChild(child: typings.sharepoint.CUI.Component): scala.Unit = js.native
   
   /* CompleteClass */
-  override def addChildAtIndex(child: typings.sharepoint.CUI.Component, index: Double): js.Any = js.native
+  override def addChildAtIndex(child: typings.sharepoint.CUI.Component, index: Double): Any = js.native
   
   /* CompleteClass */
   override def appendChildrenToElement(elm: Element): scala.Unit = js.native
@@ -114,16 +114,16 @@ class Section protected ()
   override def get_visibleInDOM(): Boolean = js.native
   
   /* CompleteClass */
-  override def initRootMember(root: typings.sharepoint.CUI.Component): js.Any = js.native
+  override def initRootMember(root: typings.sharepoint.CUI.Component): Any = js.native
   
   /* CompleteClass */
-  override def onEnabledChanged(enabled: Boolean): js.Any = js.native
+  override def onEnabledChanged(enabled: Boolean): Any = js.native
   
   /* CompleteClass */
   override def onMenuClosed(): scala.Unit = js.native
   
   /* CompleteClass */
-  override def raiseCommandEvent(commandId: String, `type`: typings.sharepoint.CUI.CommandType, properties: js.Any): js.Any = js.native
+  override def raiseCommandEvent(commandId: String, `type`: typings.sharepoint.CUI.CommandType, properties: Any): Any = js.native
   
   /* CompleteClass */
   override def receiveFocus(): scala.Unit = js.native

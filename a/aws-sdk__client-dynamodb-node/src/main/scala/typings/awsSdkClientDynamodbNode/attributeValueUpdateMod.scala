@@ -8,5 +8,5 @@ object attributeValueUpdateMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/_AttributeValueUpdate", "_AttributeValueUpdate")
   @js.native
-  val AttributeValueUpdate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val AttributeValueUpdate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

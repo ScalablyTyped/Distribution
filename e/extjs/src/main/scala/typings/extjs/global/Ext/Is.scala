@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.Is")
 @js.native
-class Is ()
+open class Is ()
   extends StObject
      with typings.extjs.Ext.Is
 /* static members */
@@ -61,8 +61,8 @@ object Is {
   /** [Property] (Object) */
   @JSGlobal("Ext.Is.Tablet")
   @js.native
-  def Tablet: js.Any = js.native
-  inline def Tablet_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tablet")(x.asInstanceOf[js.Any])
+  def Tablet: Any = js.native
+  inline def Tablet_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tablet")(x.asInstanceOf[js.Any])
   
   /** [Property] (Boolean) */
   @JSGlobal("Ext.Is.Windows")

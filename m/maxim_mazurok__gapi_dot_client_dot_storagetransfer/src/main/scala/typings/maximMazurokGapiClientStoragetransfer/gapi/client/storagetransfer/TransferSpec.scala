@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TransferSpec extends StObject {
   
+  /** An AWS S3 compatible data source. */
+  var awsS3CompatibleDataSource: js.UndefOr[AwsS3CompatibleData] = js.undefined
+  
   /** An AWS S3 data source. */
   var awsS3DataSource: js.UndefOr[AwsS3Data] = js.undefined
   
@@ -18,6 +21,9 @@ trait TransferSpec extends StObject {
   /** A Cloud Storage data source. */
   var gcsDataSource: js.UndefOr[GcsData] = js.undefined
   
+  /** Cloud Storage intermediate data location. */
+  var gcsIntermediateDataLocation: js.UndefOr[GcsData] = js.undefined
+  
   /** An HTTP URL data source. */
   var httpDataSource: js.UndefOr[HttpData] = js.undefined
   
@@ -26,6 +32,24 @@ trait TransferSpec extends StObject {
     * exclude objects in a data sink.
     */
   var objectConditions: js.UndefOr[ObjectConditions] = js.undefined
+  
+  /** A POSIX Filesystem data sink. */
+  var posixDataSink: js.UndefOr[PosixFilesystem] = js.undefined
+  
+  /** A POSIX Filesystem data source. */
+  var posixDataSource: js.UndefOr[PosixFilesystem] = js.undefined
+  
+  /** Specifies the agent pool name associated with the posix data sink. When unspecified, the default name is used. */
+  var sinkAgentPoolName: js.UndefOr[String] = js.undefined
+  
+  /** Specifies the agent pool name associated with the posix data source. When unspecified, the default name is used. */
+  var sourceAgentPoolName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A manifest file provides a list of objects to be transferred from the data source. This field points to the location of the manifest file. Otherwise, the entire source bucket is
+    * used. ObjectConditions still apply.
+    */
+  var transferManifest: js.UndefOr[TransferManifest] = js.undefined
   
   /**
     * If the option delete_objects_unique_in_sink is `true` and time-based object conditions such as 'last modification time' are specified, the request fails with an INVALID_ARGUMENT
@@ -41,6 +65,10 @@ object TransferSpec {
   }
   
   extension [Self <: TransferSpec](x: Self) {
+    
+    inline def setAwsS3CompatibleDataSource(value: AwsS3CompatibleData): Self = StObject.set(x, "awsS3CompatibleDataSource", value.asInstanceOf[js.Any])
+    
+    inline def setAwsS3CompatibleDataSourceUndefined: Self = StObject.set(x, "awsS3CompatibleDataSource", js.undefined)
     
     inline def setAwsS3DataSource(value: AwsS3Data): Self = StObject.set(x, "awsS3DataSource", value.asInstanceOf[js.Any])
     
@@ -58,6 +86,10 @@ object TransferSpec {
     
     inline def setGcsDataSourceUndefined: Self = StObject.set(x, "gcsDataSource", js.undefined)
     
+    inline def setGcsIntermediateDataLocation(value: GcsData): Self = StObject.set(x, "gcsIntermediateDataLocation", value.asInstanceOf[js.Any])
+    
+    inline def setGcsIntermediateDataLocationUndefined: Self = StObject.set(x, "gcsIntermediateDataLocation", js.undefined)
+    
     inline def setHttpDataSource(value: HttpData): Self = StObject.set(x, "httpDataSource", value.asInstanceOf[js.Any])
     
     inline def setHttpDataSourceUndefined: Self = StObject.set(x, "httpDataSource", js.undefined)
@@ -65,6 +97,26 @@ object TransferSpec {
     inline def setObjectConditions(value: ObjectConditions): Self = StObject.set(x, "objectConditions", value.asInstanceOf[js.Any])
     
     inline def setObjectConditionsUndefined: Self = StObject.set(x, "objectConditions", js.undefined)
+    
+    inline def setPosixDataSink(value: PosixFilesystem): Self = StObject.set(x, "posixDataSink", value.asInstanceOf[js.Any])
+    
+    inline def setPosixDataSinkUndefined: Self = StObject.set(x, "posixDataSink", js.undefined)
+    
+    inline def setPosixDataSource(value: PosixFilesystem): Self = StObject.set(x, "posixDataSource", value.asInstanceOf[js.Any])
+    
+    inline def setPosixDataSourceUndefined: Self = StObject.set(x, "posixDataSource", js.undefined)
+    
+    inline def setSinkAgentPoolName(value: String): Self = StObject.set(x, "sinkAgentPoolName", value.asInstanceOf[js.Any])
+    
+    inline def setSinkAgentPoolNameUndefined: Self = StObject.set(x, "sinkAgentPoolName", js.undefined)
+    
+    inline def setSourceAgentPoolName(value: String): Self = StObject.set(x, "sourceAgentPoolName", value.asInstanceOf[js.Any])
+    
+    inline def setSourceAgentPoolNameUndefined: Self = StObject.set(x, "sourceAgentPoolName", js.undefined)
+    
+    inline def setTransferManifest(value: TransferManifest): Self = StObject.set(x, "transferManifest", value.asInstanceOf[js.Any])
+    
+    inline def setTransferManifestUndefined: Self = StObject.set(x, "transferManifest", js.undefined)
     
     inline def setTransferOptions(value: TransferOptions): Self = StObject.set(x, "transferOptions", value.asInstanceOf[js.Any])
     

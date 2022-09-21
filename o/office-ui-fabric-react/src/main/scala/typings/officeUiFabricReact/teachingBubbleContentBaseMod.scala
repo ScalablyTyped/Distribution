@@ -13,11 +13,10 @@ object teachingBubbleContentBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/TeachingBubble/TeachingBubbleContent.base", "TeachingBubbleContentBase")
   @js.native
-  class TeachingBubbleContentBase protected ()
-    extends Component[ITeachingBubbleProps, ITeachingBubbleState, js.Any] {
+  open class TeachingBubbleContentBase protected () extends Component[ITeachingBubbleProps, ITeachingBubbleState, Any] {
     def this(props: ITeachingBubbleProps) = this()
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MTeachingBubbleContentBase(): Unit = js.native

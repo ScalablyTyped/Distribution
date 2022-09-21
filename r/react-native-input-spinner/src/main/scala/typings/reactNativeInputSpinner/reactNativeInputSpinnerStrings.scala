@@ -7,10 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactNativeInputSpinnerStrings {
   
   @js.native
-  sealed trait float extends StObject
-  inline def float: float = "float".asInstanceOf[float]
+  sealed trait clean extends StObject
+  inline def clean: clean = "clean".asInstanceOf[clean]
   
   @js.native
-  sealed trait int extends StObject
-  inline def int: int = "int".asInstanceOf[int]
+  sealed trait modern extends StObject
+  inline def modern: modern = "modern".asInstanceOf[modern]
+  
+  @js.native
+  sealed trait paper extends StObject
+  inline def paper: paper = "paper".asInstanceOf[paper]
+  
+  @js.native
+  sealed trait round extends StObject
+  inline def round: round = "round".asInstanceOf[round]
+  
+  @js.native
+  sealed trait square extends StObject
+  inline def square: square = "square".asInstanceOf[square]
 }

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/core", "NgProbeToken")
 @js.native
-class NgProbeToken protected () extends StObject {
-  def this(name: String, token: js.Any) = this()
+open class NgProbeToken protected () extends StObject {
+  def this(name: String, token: Any) = this()
   
   var name: String = js.native
   
-  var token: js.Any = js.native
+  var token: Any = js.native
 }

@@ -46,7 +46,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("jsrsasign.KJUR.asn1.DERBitString")
 @js.native
-class DERBitString ()
+open class DERBitString ()
   extends typings.jsrsasign.mod.KJUR.asn1.DERBitString {
   def this(params: ASN1ObjectParam) = this()
   def this(params: ArrayParam[Boolean]) = this()

@@ -4,51 +4,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The crop properties of an image.  The crop rectangle is represented using
-  * fractional offsets from the original content&#39;s four edges.  - If the
-  * offset is in the interval (0, 1), the corresponding edge of crop rectangle
-  * is positioned inside of the image&#39;s original bounding rectangle. - If
-  * the offset is negative or greater than 1, the corresponding edge of crop
-  * rectangle is positioned outside of the image&#39;s original bounding
-  * rectangle. - If all offsets and rotation angle are 0, the image is not
-  * cropped.
-  */
 trait SchemaCropProperties extends StObject {
   
   /**
-    * The clockwise rotation angle of the crop rectangle around its center, in
-    * radians. Rotation is applied after the offsets.
+    * The clockwise rotation angle of the crop rectangle around its center, in radians. Rotation is applied after the offsets.
     */
-  var angle: js.UndefOr[Double] = js.undefined
+  var angle: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The offset specifies how far inwards the bottom edge of the crop
-    * rectangle is from the bottom edge of the original content as a fraction
-    * of the original content&#39;s height.
+    * The offset specifies how far inwards the bottom edge of the crop rectangle is from the bottom edge of the original content as a fraction of the original content's height.
     */
-  var offsetBottom: js.UndefOr[Double] = js.undefined
+  var offsetBottom: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The offset specifies how far inwards the left edge of the crop rectangle
-    * is from the left edge of the original content as a fraction of the
-    * original content&#39;s width.
+    * The offset specifies how far inwards the left edge of the crop rectangle is from the left edge of the original content as a fraction of the original content's width.
     */
-  var offsetLeft: js.UndefOr[Double] = js.undefined
+  var offsetLeft: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The offset specifies how far inwards the right edge of the crop rectangle
-    * is from the right edge of the original content as a fraction of the
-    * original content&#39;s width.
+    * The offset specifies how far inwards the right edge of the crop rectangle is from the right edge of the original content as a fraction of the original content's width.
     */
-  var offsetRight: js.UndefOr[Double] = js.undefined
+  var offsetRight: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The offset specifies how far inwards the top edge of the crop rectangle
-    * is from the top edge of the original content as a fraction of the
-    * original content&#39;s height.
+    * The offset specifies how far inwards the top edge of the crop rectangle is from the top edge of the original content as a fraction of the original content's height.
     */
-  var offsetTop: js.UndefOr[Double] = js.undefined
+  var offsetTop: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaCropProperties {
   
@@ -61,21 +42,31 @@ object SchemaCropProperties {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
+    inline def setAngleNull: Self = StObject.set(x, "angle", null)
+    
     inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
     inline def setOffsetBottom(value: Double): Self = StObject.set(x, "offsetBottom", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetBottomNull: Self = StObject.set(x, "offsetBottom", null)
     
     inline def setOffsetBottomUndefined: Self = StObject.set(x, "offsetBottom", js.undefined)
     
     inline def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
     
+    inline def setOffsetLeftNull: Self = StObject.set(x, "offsetLeft", null)
+    
     inline def setOffsetLeftUndefined: Self = StObject.set(x, "offsetLeft", js.undefined)
     
     inline def setOffsetRight(value: Double): Self = StObject.set(x, "offsetRight", value.asInstanceOf[js.Any])
     
+    inline def setOffsetRightNull: Self = StObject.set(x, "offsetRight", null)
+    
     inline def setOffsetRightUndefined: Self = StObject.set(x, "offsetRight", js.undefined)
     
     inline def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetTopNull: Self = StObject.set(x, "offsetTop", null)
     
     inline def setOffsetTopUndefined: Self = StObject.set(x, "offsetTop", js.undefined)
   }

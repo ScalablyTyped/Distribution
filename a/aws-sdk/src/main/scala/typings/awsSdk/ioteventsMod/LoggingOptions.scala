@@ -39,7 +39,7 @@ object LoggingOptions {
     
     inline def setDetectorDebugOptionsUndefined: Self = StObject.set(x, "detectorDebugOptions", js.undefined)
     
-    inline def setDetectorDebugOptionsVarargs(value: DetectorDebugOption*): Self = StObject.set(x, "detectorDebugOptions", js.Array(value :_*))
+    inline def setDetectorDebugOptionsVarargs(value: DetectorDebugOption*): Self = StObject.set(x, "detectorDebugOptions", js.Array(value*))
     
     inline def setEnabled(value: LoggingEnabled): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -33,20 +33,20 @@ object IdentitySnapshot {
     
     inline def setGroups(value: js.Array[Identity]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    inline def setGroupsVarargs(value: Identity*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Identity*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setIdentityIds(value: js.Array[String]): Self = StObject.set(x, "identityIds", value.asInstanceOf[js.Any])
     
-    inline def setIdentityIdsVarargs(value: String*): Self = StObject.set(x, "identityIds", js.Array(value :_*))
+    inline def setIdentityIdsVarargs(value: String*): Self = StObject.set(x, "identityIds", js.Array(value*))
     
     inline def setMemberships(value: js.Array[GroupMembership]): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
     
-    inline def setMembershipsVarargs(value: GroupMembership*): Self = StObject.set(x, "memberships", js.Array(value :_*))
+    inline def setMembershipsVarargs(value: GroupMembership*): Self = StObject.set(x, "memberships", js.Array(value*))
     
     inline def setScopeId(value: String): Self = StObject.set(x, "scopeId", value.asInstanceOf[js.Any])
     
     inline def setScopes(value: js.Array[IdentityScope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    inline def setScopesVarargs(value: IdentityScope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: IdentityScope*): Self = StObject.set(x, "scopes", js.Array(value*))
   }
 }

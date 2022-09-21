@@ -8,5 +8,5 @@ object differenceListMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/_DifferenceList", "_DifferenceList")
   @js.native
-  val DifferenceList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val DifferenceList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

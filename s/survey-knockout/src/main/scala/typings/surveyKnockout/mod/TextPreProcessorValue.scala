@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "TextPreProcessorValue")
 @js.native
-class TextPreProcessorValue protected () extends StObject {
+open class TextPreProcessorValue protected () extends StObject {
   def this(name: String, returnDisplayValue: Boolean) = this()
   
   var canProcess: Boolean = js.native
@@ -17,5 +17,5 @@ class TextPreProcessorValue protected () extends StObject {
   
   var returnDisplayValue: Boolean = js.native
   
-  var value: js.Any = js.native
+  var value: Any = js.native
 }

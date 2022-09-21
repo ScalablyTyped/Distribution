@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogCustomAttributeDefinitionNumberConfig")
 @js.native
-class CatalogCustomAttributeDefinitionNumberConfig () extends StObject {
+open class CatalogCustomAttributeDefinitionNumberConfig () extends StObject {
   
   /**
     * An integer between 0 and 5 that represents the maximum number of positions allowed after the decimal in number custom attribute values For example:

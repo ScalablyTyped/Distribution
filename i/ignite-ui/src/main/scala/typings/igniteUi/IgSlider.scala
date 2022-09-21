@@ -11,7 +11,7 @@ trait IgSlider
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Get or set whether the slide handle will animate when it is moved.
@@ -51,7 +51,7 @@ trait IgSlider
   /**
     * Get or set the slider orientation.
     */
-  var orientation: js.UndefOr[js.Any] = js.undefined
+  var orientation: js.UndefOr[Any] = js.undefined
   
   /**
     * Get or set the whether to show bookmarks title on bookmark hover or not.
@@ -125,7 +125,7 @@ object IgSlider {
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setOrientation(value: js.Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     

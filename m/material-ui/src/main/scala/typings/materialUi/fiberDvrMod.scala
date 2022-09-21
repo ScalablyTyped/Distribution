@@ -10,10 +10,10 @@ object fiberDvrMod {
   
   @JSImport("material-ui/svg-icons/av/fiber-dvr", JSImport.Default)
   @js.native
-  class default () extends AvFiberDvr
+  open class default () extends AvFiberDvr
   
   @JSImport("material-ui/svg-icons/av/fiber-dvr", "AvFiberDvr")
   @js.native
-  class AvFiberDvr ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvFiberDvr ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

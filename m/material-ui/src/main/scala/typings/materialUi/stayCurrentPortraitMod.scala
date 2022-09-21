@@ -10,10 +10,10 @@ object stayCurrentPortraitMod {
   
   @JSImport("material-ui/svg-icons/communication/stay-current-portrait", JSImport.Default)
   @js.native
-  class default () extends CommunicationStayCurrentPortrait
+  open class default () extends CommunicationStayCurrentPortrait
   
   @JSImport("material-ui/svg-icons/communication/stay-current-portrait", "CommunicationStayCurrentPortrait")
   @js.native
-  class CommunicationStayCurrentPortrait ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationStayCurrentPortrait ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

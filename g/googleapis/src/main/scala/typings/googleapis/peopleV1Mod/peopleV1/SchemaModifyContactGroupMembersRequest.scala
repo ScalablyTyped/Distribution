@@ -4,24 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A request to modify an existing contact group&#39;s members. Contacts can
-  * be removed from any group but they can only be added to a user group or
-  * myContacts or starred system groups.
-  */
 trait SchemaModifyContactGroupMembersRequest extends StObject {
   
   /**
-    * The resource names of the contact people to add in the form of in the
-    * form `people/`&lt;var&gt;person_id&lt;/var&gt;.
+    * Optional. The resource names of the contact people to add in the form of `people/{person_id\}`. The total number of resource names in `resource_names_to_add` and `resource_names_to_remove` must be less than or equal to 1000.
     */
-  var resourceNamesToAdd: js.UndefOr[js.Array[String]] = js.undefined
+  var resourceNamesToAdd: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The resource names of the contact people to remove in the form of in the
-    * form of `people/`&lt;var&gt;person_id&lt;/var&gt;.
+    * Optional. The resource names of the contact people to remove in the form of `people/{person_id\}`. The total number of resource names in `resource_names_to_add` and `resource_names_to_remove` must be less than or equal to 1000.
     */
-  var resourceNamesToRemove: js.UndefOr[js.Array[String]] = js.undefined
+  var resourceNamesToRemove: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaModifyContactGroupMembersRequest {
   
@@ -34,14 +27,18 @@ object SchemaModifyContactGroupMembersRequest {
     
     inline def setResourceNamesToAdd(value: js.Array[String]): Self = StObject.set(x, "resourceNamesToAdd", value.asInstanceOf[js.Any])
     
+    inline def setResourceNamesToAddNull: Self = StObject.set(x, "resourceNamesToAdd", null)
+    
     inline def setResourceNamesToAddUndefined: Self = StObject.set(x, "resourceNamesToAdd", js.undefined)
     
-    inline def setResourceNamesToAddVarargs(value: String*): Self = StObject.set(x, "resourceNamesToAdd", js.Array(value :_*))
+    inline def setResourceNamesToAddVarargs(value: String*): Self = StObject.set(x, "resourceNamesToAdd", js.Array(value*))
     
     inline def setResourceNamesToRemove(value: js.Array[String]): Self = StObject.set(x, "resourceNamesToRemove", value.asInstanceOf[js.Any])
     
+    inline def setResourceNamesToRemoveNull: Self = StObject.set(x, "resourceNamesToRemove", null)
+    
     inline def setResourceNamesToRemoveUndefined: Self = StObject.set(x, "resourceNamesToRemove", js.undefined)
     
-    inline def setResourceNamesToRemoveVarargs(value: String*): Self = StObject.set(x, "resourceNamesToRemove", js.Array(value :_*))
+    inline def setResourceNamesToRemoveVarargs(value: String*): Self = StObject.set(x, "resourceNamesToRemove", js.Array(value*))
   }
 }

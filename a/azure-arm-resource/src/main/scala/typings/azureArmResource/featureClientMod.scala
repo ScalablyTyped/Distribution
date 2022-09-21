@@ -17,7 +17,7 @@ object featureClientMod {
   
   @JSImport("azure-arm-resource/lib/feature/featureClient", JSImport.Default)
   @js.native
-  class default protected () extends FeatureClient {
+  open class default protected () extends FeatureClient {
     /**
       * Initializes a new instance of the FeatureClient class.
       * @constructor
@@ -63,7 +63,7 @@ object featureClientMod {
   
   @JSImport("azure-arm-resource/lib/feature/featureClient", "FeatureClient")
   @js.native
-  class FeatureClient protected () extends AzureServiceClient {
+  open class FeatureClient protected () extends AzureServiceClient {
     /**
       * Initializes a new instance of the FeatureClient class.
       * @constructor
@@ -236,12 +236,12 @@ object featureClientMod {
     
     @JSImport("azure-arm-resource/lib/feature/featureClient", "FeatureModels.BaseResource")
     @js.native
-    class BaseResource ()
+    open class BaseResource ()
       extends typings.azureArmResource.modelsMod.BaseResource
     
     @JSImport("azure-arm-resource/lib/feature/featureClient", "FeatureModels.CloudError")
     @js.native
-    class CloudError protected ()
+    open class CloudError protected ()
       extends typings.azureArmResource.modelsMod.CloudError {
       def this(parameters: CloudErrorParameters) = this()
     }

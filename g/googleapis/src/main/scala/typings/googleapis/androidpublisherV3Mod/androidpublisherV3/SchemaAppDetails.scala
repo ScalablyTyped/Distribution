@@ -9,22 +9,22 @@ trait SchemaAppDetails extends StObject {
   /**
     * The user-visible support email for this app.
     */
-  var contactEmail: js.UndefOr[String] = js.undefined
+  var contactEmail: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The user-visible support telephone number for this app.
     */
-  var contactPhone: js.UndefOr[String] = js.undefined
+  var contactPhone: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The user-visible website for this app.
     */
-  var contactWebsite: js.UndefOr[String] = js.undefined
+  var contactWebsite: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Default language code, in BCP 47 format (eg &quot;en-US&quot;).
+    * Default language code, in BCP 47 format (eg "en-US").
     */
-  var defaultLanguage: js.UndefOr[String] = js.undefined
+  var defaultLanguage: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAppDetails {
   
@@ -37,17 +37,25 @@ object SchemaAppDetails {
     
     inline def setContactEmail(value: String): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
     
+    inline def setContactEmailNull: Self = StObject.set(x, "contactEmail", null)
+    
     inline def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
     
     inline def setContactPhone(value: String): Self = StObject.set(x, "contactPhone", value.asInstanceOf[js.Any])
+    
+    inline def setContactPhoneNull: Self = StObject.set(x, "contactPhone", null)
     
     inline def setContactPhoneUndefined: Self = StObject.set(x, "contactPhone", js.undefined)
     
     inline def setContactWebsite(value: String): Self = StObject.set(x, "contactWebsite", value.asInstanceOf[js.Any])
     
+    inline def setContactWebsiteNull: Self = StObject.set(x, "contactWebsite", null)
+    
     inline def setContactWebsiteUndefined: Self = StObject.set(x, "contactWebsite", js.undefined)
     
     inline def setDefaultLanguage(value: String): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultLanguageNull: Self = StObject.set(x, "defaultLanguage", null)
     
     inline def setDefaultLanguageUndefined: Self = StObject.set(x, "defaultLanguage", js.undefined)
   }

@@ -9,10 +9,10 @@ __Contributors:__
 | ------------------ | :-------------: |
 | Full name          | ng-grid |
 | Keywords           | angular, ng-grid, nggrid, grid, angularjs, slickgrid, kogrid |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 31075 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3551.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/angular-ui/ng-grid#readme)

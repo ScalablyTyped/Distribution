@@ -9,7 +9,7 @@ trait GoogleCloudDatalabelingV1p2alpha1ImportDataOperationMetadata extends StObj
   /** Output only. Timestamp when import dataset request was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** Output only. The name of imported dataset. "projects/∗/datasets/ *" */
+  /** Output only. The name of imported dataset. "projects/ *‍/datasets/ *" */
   var dataset: js.UndefOr[String] = js.undefined
   
   /** Output only. Partial failures encountered. E.g. single files that couldn't be read. Status details field will contain standard GCP error details. */
@@ -36,6 +36,6 @@ object GoogleCloudDatalabelingV1p2alpha1ImportDataOperationMetadata {
     
     inline def setPartialFailuresUndefined: Self = StObject.set(x, "partialFailures", js.undefined)
     
-    inline def setPartialFailuresVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "partialFailures", js.Array(value :_*))
+    inline def setPartialFailuresVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "partialFailures", js.Array(value*))
   }
 }

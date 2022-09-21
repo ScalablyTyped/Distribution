@@ -10,11 +10,11 @@ object anon {
     
     var typeOf: String
     
-    def validate(x: js.Any): js.Any
+    def validate(x: Any): Any
   }
   object TypeOf {
     
-    inline def apply(typeOf: String, validate: js.Any => js.Any): TypeOf = {
+    inline def apply(typeOf: String, validate: Any => Any): TypeOf = {
       val __obj = js.Dynamic.literal(typeOf = typeOf.asInstanceOf[js.Any], validate = js.Any.fromFunction1(validate))
       __obj.asInstanceOf[TypeOf]
     }
@@ -23,7 +23,7 @@ object anon {
       
       inline def setTypeOf(value: String): Self = StObject.set(x, "typeOf", value.asInstanceOf[js.Any])
       
-      inline def setValidate(value: js.Any => js.Any): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: Any => Any): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     }
   }
 }

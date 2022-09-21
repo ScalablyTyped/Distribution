@@ -1,7 +1,7 @@
 package typings.materialComponentsWeb.mod
 
+import typings.materialBase.Element
 import typings.materialLinearProgress.anon.PartialMDCLinearProgressA
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +10,13 @@ object linearProgress {
   
   @JSImport("material-components-web", "linearProgress.MDCLinearProgress")
   @js.native
-  class MDCLinearProgress protected ()
+  open class MDCLinearProgress protected ()
     extends typings.materialLinearProgress.mod.MDCLinearProgress {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialLinearProgress.foundationMod.MDCLinearProgressFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -26,12 +26,12 @@ object linearProgress {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialLinearProgress.componentMod.MDCLinearProgress = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialLinearProgress.componentMod.MDCLinearProgress]
+    inline def attachTo(root: typings.std.Element): typings.materialLinearProgress.componentMod.MDCLinearProgress = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialLinearProgress.componentMod.MDCLinearProgress]
   }
   
   @JSImport("material-components-web", "linearProgress.MDCLinearProgressFoundation")
   @js.native
-  class MDCLinearProgressFoundation ()
+  open class MDCLinearProgressFoundation ()
     extends typings.materialLinearProgress.mod.MDCLinearProgressFoundation {
     def this(adapter: PartialMDCLinearProgressA) = this()
   }
@@ -105,6 +105,21 @@ object linearProgress {
     @JSImport("material-components-web", "linearProgress.strings")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("material-components-web", "linearProgress.strings.ARIA_HIDDEN")
+    @js.native
+    def ARIA_HIDDEN: String = js.native
+    inline def ARIA_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_HIDDEN")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "linearProgress.strings.ARIA_VALUEMAX")
+    @js.native
+    def ARIA_VALUEMAX: String = js.native
+    inline def ARIA_VALUEMAX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_VALUEMAX")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "linearProgress.strings.ARIA_VALUEMIN")
+    @js.native
+    def ARIA_VALUEMIN: String = js.native
+    inline def ARIA_VALUEMIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_VALUEMIN")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "linearProgress.strings.ARIA_VALUENOW")
     @js.native

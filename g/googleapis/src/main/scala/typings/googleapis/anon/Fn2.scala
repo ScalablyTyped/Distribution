@@ -1,8 +1,10 @@
 package typings.googleapis.anon
 
-import typings.googleapis.googleapisStrings.v2beta1
-import typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1.Adexchangebuyer2
-import typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1.Options
+import typings.googleapis.googleapisStrings.v1Dot2
+import typings.googleapis.googleapisStrings.v1Dot3
+import typings.googleapis.googleapisStrings.v1Dot4
+import typings.googleapis.v12Mod.adexchangebuyerV12.Adexchangebuyer
+import typings.googleapis.v12Mod.adexchangebuyerV12.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn2 extends StObject {
   
-  def apply(options: Options): Adexchangebuyer2 = js.native
-  def apply(version: v2beta1): Adexchangebuyer2 = js.native
+  def apply(options: Options): Adexchangebuyer = js.native
+  def apply(options: typings.googleapis.v13Mod.adexchangebuyerV13.Options): typings.googleapis.v13Mod.adexchangebuyerV13.Adexchangebuyer = js.native
+  def apply(options: typings.googleapis.v14Mod.adexchangebuyerV14.Options): typings.googleapis.v14Mod.adexchangebuyerV14.Adexchangebuyer = js.native
+  def apply(version: v1Dot2): Adexchangebuyer = js.native
+  def apply(version: v1Dot3): typings.googleapis.v13Mod.adexchangebuyerV13.Adexchangebuyer = js.native
+  def apply(version: v1Dot4): typings.googleapis.v14Mod.adexchangebuyerV14.Adexchangebuyer = js.native
 }

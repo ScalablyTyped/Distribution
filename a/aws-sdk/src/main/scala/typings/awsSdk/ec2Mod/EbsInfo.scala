@@ -12,7 +12,7 @@ trait EbsInfo extends StObject {
   var EbsOptimizedInfo: js.UndefOr[typings.awsSdk.ec2Mod.EbsOptimizedInfo] = js.undefined
   
   /**
-    * Indicates whether the instance type is Amazon EBS-optimized. For more information, see Amazon EBS-Optimized Instances in Amazon EC2 User Guide for Linux Instances.
+    * Indicates whether the instance type is Amazon EBS-optimized. For more information, see Amazon EBS-optimized instances in Amazon EC2 User Guide.
     */
   var EbsOptimizedSupport: js.UndefOr[typings.awsSdk.ec2Mod.EbsOptimizedSupport] = js.undefined
   

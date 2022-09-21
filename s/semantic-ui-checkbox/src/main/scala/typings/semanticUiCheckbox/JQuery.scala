@@ -1,11 +1,7 @@
 package typings.semanticUiCheckbox
 
 import typings.semanticUiCheckbox.SemanticUI.Checkbox
-import typings.semanticUiCheckbox.SemanticUI.Checkbox.ClassNameSettings
-import typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings
-import typings.semanticUiCheckbox.SemanticUI.Checkbox.SelectorSettings
 import typings.semanticUiCheckbox.SemanticUI.CheckboxSettings
-import typings.semanticUiCheckbox.semanticUiCheckboxBooleans.`false`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`attach events`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`can change`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`can uncheck`
@@ -22,40 +18,14 @@ import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`should allow check`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`should allow determinate`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`should allow indeterminate`
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.`should allow uncheck`
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.auto
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.beforeChecked
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.beforeDeterminate
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.beforeIndeterminate
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.beforeUnchecked
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.check
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.className
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.debug
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.destroy
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.determinate
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.enable
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.error
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.fireOnInit
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.indeterminate
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.name
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.namespace
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onChange
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onChecked
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onDeterminate
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onDisable
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onDisabled
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onEnable
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onEnabled
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onIndeterminate
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.onUnchecked
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.performance
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.selector
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.setting
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.silent
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.toggle
 import typings.semanticUiCheckbox.semanticUiCheckboxStrings.uncheck
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.uncheckable
-import typings.semanticUiCheckbox.semanticUiCheckboxStrings.verbose
-import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,75 +33,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def checkbox(): JQuery
-  def checkbox(
-    behavior: setting,
-    name: beforeChecked,
-    value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
-  ): JQuery
-  def checkbox(behavior: setting, name: beforeChecked, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
-  def checkbox(
-    behavior: setting,
-    name: beforeDeterminate,
-    value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
-  ): JQuery
-  def checkbox(behavior: setting, name: beforeDeterminate, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
-  def checkbox(
-    behavior: setting,
-    name: beforeIndeterminate,
-    value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
-  ): JQuery
-  def checkbox(behavior: setting, name: beforeIndeterminate, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
-  def checkbox(
-    behavior: setting,
-    name: beforeUnchecked,
-    value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
-  ): JQuery
-  def checkbox(behavior: setting, name: beforeUnchecked, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
-  def checkbox(behavior: setting, name: className, value: Unit): ClassNameSettings
-  def checkbox(behavior: setting, name: className, value: ClassNameSettings): JQuery
-  def checkbox(behavior: setting, name: debug, value: Boolean): JQuery
-  def checkbox(behavior: setting, name: debug, value: Unit): Boolean
-  def checkbox(behavior: setting, name: error, value: Unit): ErrorSettings
-  def checkbox(behavior: setting, name: error, value: ErrorSettings): JQuery
-  def checkbox(behavior: setting, name: fireOnInit, value: Boolean): JQuery
-  def checkbox(behavior: setting, name: fireOnInit, value: Unit): Boolean
-  def checkbox(behavior: setting, name: namespace, value: String): JQuery
-  def checkbox(behavior: setting, name: namespace, value: Unit): String
-  def checkbox(behavior: setting, name: name, value: String): JQuery
-  def checkbox(behavior: setting, name: name, value: Unit): String
-  def checkbox(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery
-  def checkbox(behavior: setting, name: onChange, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit]
-  def checkbox(behavior: setting, name: onChecked, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery
-  def checkbox(behavior: setting, name: onChecked, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit]
-  def checkbox(behavior: setting, name: onDeterminate, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery
-  def checkbox(behavior: setting, name: onDeterminate, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit]
-  def checkbox(behavior: setting, name: onDisabled, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery
-  def checkbox(behavior: setting, name: onDisabled, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit]
-  def checkbox(behavior: setting, name: onDisable, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery
-  def checkbox(behavior: setting, name: onDisable, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit]
-  def checkbox(behavior: setting, name: onEnabled, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery
-  def checkbox(behavior: setting, name: onEnabled, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit]
-  def checkbox(behavior: setting, name: onEnable, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery
-  def checkbox(behavior: setting, name: onEnable, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit]
-  def checkbox(
-    behavior: setting,
-    name: onIndeterminate,
-    value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]
-  ): JQuery
-  def checkbox(behavior: setting, name: onIndeterminate, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit]
-  def checkbox(behavior: setting, name: onUnchecked, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery
-  def checkbox(behavior: setting, name: onUnchecked, value: Unit): js.ThisFunction0[/* this */ HTMLInputElement, Unit]
-  def checkbox(behavior: setting, name: performance, value: Boolean): JQuery
-  def checkbox(behavior: setting, name: performance, value: Unit): Boolean
-  def checkbox(behavior: setting, name: selector, value: Unit): SelectorSettings
-  def checkbox(behavior: setting, name: selector, value: SelectorSettings): JQuery
-  def checkbox(behavior: setting, name: silent, value: Boolean): JQuery
-  def checkbox(behavior: setting, name: silent, value: Unit): Boolean
-  def checkbox(behavior: setting, name: uncheckable, value: Boolean): JQuery
-  def checkbox(behavior: setting, name: uncheckable, value: Unit): auto | Boolean
-  def checkbox(behavior: setting, name: uncheckable, value: auto): JQuery
-  def checkbox(behavior: setting, name: verbose, value: Boolean): JQuery
-  def checkbox(behavior: setting, name: verbose, value: Unit): Boolean
   def checkbox(settings: CheckboxSettings): JQuery
   @JSName("checkbox")
   var checkbox_Original: Checkbox
@@ -220,6 +121,14 @@ trait JQuery extends StObject {
   def checkbox_setindeterminate(behavior: `set indeterminate`): JQuery
   @JSName("checkbox")
   def checkbox_setting(behavior: setting, value: CheckboxSettings): JQuery
+  @JSName("checkbox")
+  def checkbox_setting[K /* <: /* keyof semantic-ui-checkbox.SemanticUI.CheckboxSettings */ String */](
+    behavior: setting,
+    name: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl[K] */ js.Any
+  ): JQuery
+  @JSName("checkbox")
+  def checkbox_setting[K /* <: /* keyof semantic-ui-checkbox.SemanticUI.CheckboxSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl[K] */ js.Any
   /**
     * Set a checkbox state to unchecked without callbacks
     */

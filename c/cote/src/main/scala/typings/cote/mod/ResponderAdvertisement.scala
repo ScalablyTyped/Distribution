@@ -31,7 +31,7 @@ object ResponderAdvertisement {
     
     inline def setRespondsToUndefined: Self = StObject.set(x, "respondsTo", js.undefined)
     
-    inline def setRespondsToVarargs(value: String*): Self = StObject.set(x, "respondsTo", js.Array(value :_*))
+    inline def setRespondsToVarargs(value: String*): Self = StObject.set(x, "respondsTo", js.Array(value*))
     
     inline def setSubset(value: String): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
     

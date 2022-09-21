@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("protobufjs", "BufferReader")
 @js.native
-class BufferReader protected () extends Reader {
+open class BufferReader protected () extends Reader {
   /**
     * Constructs a new buffer reader instance.
     * @param buffer Buffer to read from
     */
-  def this(buffer: Buffer) = this()
+  def this(buffer: js.typedarray.Uint8Array) = this()
 }

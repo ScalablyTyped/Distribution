@@ -1,7 +1,7 @@
 
 # Scala.js typings for pino-std-serializers
 
-Typings are for version 2.4
+Typings are for version 6.0.0
 
 ## Library description:
 A collection of standard object serializers for Pino
@@ -10,10 +10,10 @@ A collection of standard object serializers for Pino
 | ------------------ | :-------------: |
 | Full name          | pino-std-serializers |
 | Keywords           | pino, logging |
-| # releases         | 9 |
-| # dependents       | 18 |
-| # downloads        | 38577568 |
-| # stars            | 0 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4641223E7 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/pinojs/pino-std-serializers#readme)
@@ -24,7 +24,7 @@ A collection of standard object serializers for Pino
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

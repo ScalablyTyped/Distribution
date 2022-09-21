@@ -44,7 +44,7 @@ object GetParams {
     
     inline def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
     
-    inline def setStatusCodeVarargs(value: Double*): Self = StObject.set(x, "StatusCode", js.Array(value :_*))
+    inline def setStatusCodeVarargs(value: Double*): Self = StObject.set(x, "StatusCode", js.Array(value*))
     
     inline def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     

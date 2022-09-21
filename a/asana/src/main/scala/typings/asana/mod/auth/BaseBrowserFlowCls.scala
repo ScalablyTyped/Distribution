@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("asana", "auth.BaseBrowserFlow")
 @js.native
-class BaseBrowserFlowCls protected ()
+open class BaseBrowserFlowCls protected ()
   extends StObject
      with BaseBrowserFlow {
   /**
@@ -20,7 +20,7 @@ class BaseBrowserFlowCls protected ()
     *     the app, and if none then the current page URL.
     * @constructor
     */
-  def this(options: js.Any) = this()
+  def this(options: Any) = this()
   
   /**
     * @return {String} The URL to redirect to that will receive the
@@ -76,5 +76,5 @@ class BaseBrowserFlowCls protected ()
     * @return
     */
   /* CompleteClass */
-  override def startAuthorization(authUrl: String, state: String): js.Any = js.native
+  override def startAuthorization(authUrl: String, state: String): Any = js.native
 }

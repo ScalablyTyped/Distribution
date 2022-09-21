@@ -10,10 +10,10 @@ object subjectMod {
   
   @JSImport("material-ui/svg-icons/action/subject", JSImport.Default)
   @js.native
-  class default () extends ActionSubject
+  open class default () extends ActionSubject
   
   @JSImport("material-ui/svg-icons/action/subject", "ActionSubject")
   @js.native
-  class ActionSubject ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSubject ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

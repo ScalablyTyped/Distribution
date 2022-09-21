@@ -1,9 +1,0 @@
-package typings.webpack.webpackOptionsMod
-
-import org.scalablytyped.runtime.StObject
-import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
-
-trait _RuleSetConditionAbsolute
-  extends StObject
-     with _RuleSetConditionOrConditionsAbsolute

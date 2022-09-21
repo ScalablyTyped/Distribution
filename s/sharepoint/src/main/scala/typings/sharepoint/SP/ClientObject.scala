@@ -9,9 +9,9 @@ trait ClientObject extends StObject {
   
   def checkUninitializedProperty(propName: String): Unit = js.native
   
-  def customFromJson(initValue: js.Any): Boolean = js.native
+  def customFromJson(initValue: Any): Boolean = js.native
   
-  def fromJson(initValue: js.Any): Unit = js.native
+  def fromJson(initValue: Any): Unit = js.native
   
   def get_context(): ClientRuntimeContext = js.native
   
@@ -23,7 +23,7 @@ trait ClientObject extends StObject {
   
   def get_typedObject(): ClientObject = js.native
   
-  def initPropertiesFromJson(initValue: js.Any): Unit = js.native
+  def initPropertiesFromJson(initValue: Any): Unit = js.native
   
   def isObjectPropertyInstantiated(propertyName: String): Boolean = js.native
   

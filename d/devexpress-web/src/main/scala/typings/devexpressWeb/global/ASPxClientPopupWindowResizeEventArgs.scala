@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientPopupWindowResizeEventArgs")
 @js.native
-class ASPxClientPopupWindowResizeEventArgs protected ()
+open class ASPxClientPopupWindowResizeEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientPopupWindowResizeEventArgs {
   /**

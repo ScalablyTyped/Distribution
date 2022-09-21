@@ -5,7 +5,6 @@ import typings.chromeApps.chrome.hid.DeviceOptions
 import typings.chromeApps.chrome.hid.HidDeviceInfo
 import typings.chromeApps.chrome.hid.UserSelectedDevicePickerOptions
 import typings.chromeApps.chrome.integer
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,7 +118,7 @@ object hid {
     */
   inline def receive(
     connectionId: integer,
-    callback: js.Function2[/* reportId */ integer, /* data */ ArrayBuffer, Unit]
+    callback: js.Function2[/* reportId */ integer, /* data */ js.typedarray.ArrayBuffer, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receive")(connectionId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -128,7 +127,11 @@ object hid {
     * @param reportId The report ID, or 0 if none.
     * @param callback Will provide `data` which contain the report data, including a report ID prefix if one is sent by the device.
     */
-  inline def receiveFeatureReport(connectionId: integer, reportId: integer, callback: js.Function1[/* data */ ArrayBuffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveFeatureReport")(connectionId.asInstanceOf[js.Any], reportId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def receiveFeatureReport(
+    connectionId: integer,
+    reportId: integer,
+    callback: js.Function1[/* data */ js.typedarray.ArrayBuffer, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveFeatureReport")(connectionId.asInstanceOf[js.Any], reportId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Send an output report to the device.
@@ -138,7 +141,12 @@ object hid {
     * @param data The report data.
     * @param callback
     */
-  inline def send(connectionId: integer, reportId: integer, data: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(connectionId.asInstanceOf[js.Any], reportId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def send(
+    connectionId: integer,
+    reportId: integer,
+    data: js.typedarray.ArrayBuffer,
+    callback: js.Function0[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(connectionId.asInstanceOf[js.Any], reportId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Send a feature report to the device.
@@ -148,5 +156,10 @@ object hid {
     * @param data The report data.
     * @param callback
     */
-  inline def sendFeatureReport(connectionId: integer, reportId: integer, data: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendFeatureReport")(connectionId.asInstanceOf[js.Any], reportId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendFeatureReport(
+    connectionId: integer,
+    reportId: integer,
+    data: js.typedarray.ArrayBuffer,
+    callback: js.Function0[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendFeatureReport")(connectionId.asInstanceOf[js.Any], reportId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

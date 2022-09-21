@@ -74,7 +74,7 @@ object XTextComponent {
     getText: () => String,
     insertText: (Selection, String) => Unit,
     isEditable: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeTextListener: XTextListener => Unit,
     setEditable: Boolean => Unit,

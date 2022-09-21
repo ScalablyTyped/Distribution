@@ -76,7 +76,7 @@ object mod {
       
       inline def setUnformattedUndefined: Self = StObject.set(x, "unformatted", js.undefined)
       
-      inline def setUnformattedVarargs(value: String*): Self = StObject.set(x, "unformatted", js.Array(value :_*))
+      inline def setUnformattedVarargs(value: String*): Self = StObject.set(x, "unformatted", js.Array(value*))
     }
   }
 }

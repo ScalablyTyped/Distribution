@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.DataLabel")
 @js.native
-/* private */ class DataLabel ()
+/* private */ open class DataLabel ()
   extends StObject
      with typings.activexExcel.Excel.DataLabel

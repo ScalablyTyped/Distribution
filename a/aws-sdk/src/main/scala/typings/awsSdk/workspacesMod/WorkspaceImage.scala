@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkspaceImage extends StObject {
   
   /**
-    * The date when the image was created. If the image has been shared, the AWS account that the image has been shared with sees the original creation date of the image.
+    * The date when the image was created. If the image has been shared, the Amazon Web Services account that the image has been shared with sees the original creation date of the image.
     */
-  var Created: js.UndefOr[Timestamp] = js.undefined
+  var Created: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the image.
@@ -42,7 +42,7 @@ trait WorkspaceImage extends StObject {
   var OperatingSystem: js.UndefOr[typings.awsSdk.workspacesMod.OperatingSystem] = js.undefined
   
   /**
-    * The identifier of the AWS account that owns the image.
+    * The identifier of the Amazon Web Services account that owns the image.
     */
   var OwnerAccountId: js.UndefOr[AwsAccount] = js.undefined
   
@@ -55,6 +55,11 @@ trait WorkspaceImage extends StObject {
     * The status of the image.
     */
   var State: js.UndefOr[WorkspaceImageState] = js.undefined
+  
+  /**
+    * The updates (if any) that are available for the specified image.
+    */
+  var Updates: js.UndefOr[UpdateResult] = js.undefined
 }
 object WorkspaceImage {
   
@@ -65,7 +70,7 @@ object WorkspaceImage {
   
   extension [Self <: WorkspaceImage](x: Self) {
     
-    inline def setCreated(value: Timestamp): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
     
@@ -104,5 +109,9 @@ object WorkspaceImage {
     inline def setState(value: WorkspaceImageState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    
+    inline def setUpdates(value: UpdateResult): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatesUndefined: Self = StObject.set(x, "Updates", js.undefined)
   }
 }

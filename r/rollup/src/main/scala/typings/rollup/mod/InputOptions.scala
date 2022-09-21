@@ -2,16 +2,17 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.rollup.rollupBooleans.`false`
-import typings.std.RegExp
+import typings.rollup.rollupStrings.ifRelativeSource
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InputOptions extends StObject {
   
-  var acorn: js.UndefOr[js.Object] = js.undefined
+  var acorn: js.UndefOr[Record[String, Any]] = js.undefined
   
-  var acornInjectPlugins: js.UndefOr[js.Function | js.Array[js.Function]] = js.undefined
+  var acornInjectPlugins: js.UndefOr[js.Array[js.Function0[Any]] | js.Function0[Any]] = js.undefined
   
   var cache: js.UndefOr[`false` | RollupCache] = js.undefined
   
@@ -26,18 +27,23 @@ trait InputOptions extends StObject {
   
   var input: js.UndefOr[InputOption] = js.undefined
   
+  var makeAbsoluteExternalsRelative: js.UndefOr[Boolean | ifRelativeSource] = js.undefined
+  
   /** @deprecated Use the "manualChunks" output option instead. */
   var manualChunks: js.UndefOr[ManualChunksOption] = js.undefined
   
-  var moduleContext: js.UndefOr[
-    (js.Function1[/* id */ String, js.UndefOr[String | Null]]) | StringDictionary[String]
-  ] = js.undefined
+  var maxParallelFileOps: js.UndefOr[Double] = js.undefined
+  
+  /** @deprecated Use the "maxParallelFileOps" option instead. */
+  var maxParallelFileReads: js.UndefOr[Double] = js.undefined
+  
+  var moduleContext: js.UndefOr[(js.Function1[/* id */ String, String | Null | Unit]) | StringDictionary[String]] = js.undefined
   
   var onwarn: js.UndefOr[WarningHandlerWithDefault] = js.undefined
   
   var perf: js.UndefOr[Boolean] = js.undefined
   
-  var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
+  var plugins: js.UndefOr[js.Array[js.UndefOr[Plugin | Null | `false`]]] = js.undefined
   
   var preserveEntrySignatures: js.UndefOr[PreserveEntrySignaturesOption] = js.undefined
   
@@ -50,7 +56,7 @@ trait InputOptions extends StObject {
   
   var strictDeprecations: js.UndefOr[Boolean] = js.undefined
   
-  var treeshake: js.UndefOr[Boolean | TreeshakingOptions] = js.undefined
+  var treeshake: js.UndefOr[Boolean | TreeshakingPreset | TreeshakingOptions] = js.undefined
   
   var watch: js.UndefOr[WatcherOptions | `false`] = js.undefined
 }
@@ -63,13 +69,15 @@ object InputOptions {
   
   extension [Self <: InputOptions](x: Self) {
     
-    inline def setAcorn(value: js.Object): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
+    inline def setAcorn(value: Record[String, Any]): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
     
-    inline def setAcornInjectPlugins(value: js.Function | js.Array[js.Function]): Self = StObject.set(x, "acornInjectPlugins", value.asInstanceOf[js.Any])
+    inline def setAcornInjectPlugins(value: js.Array[js.Function0[Any]] | js.Function0[Any]): Self = StObject.set(x, "acornInjectPlugins", value.asInstanceOf[js.Any])
+    
+    inline def setAcornInjectPluginsFunction0(value: () => Any): Self = StObject.set(x, "acornInjectPlugins", js.Any.fromFunction0(value))
     
     inline def setAcornInjectPluginsUndefined: Self = StObject.set(x, "acornInjectPlugins", js.undefined)
     
-    inline def setAcornInjectPluginsVarargs(value: js.Function*): Self = StObject.set(x, "acornInjectPlugins", js.Array(value :_*))
+    inline def setAcornInjectPluginsVarargs(value: js.Function0[Any]*): Self = StObject.set(x, "acornInjectPlugins", js.Array(value*))
     
     inline def setAcornUndefined: Self = StObject.set(x, "acorn", js.undefined)
     
@@ -88,12 +96,12 @@ object InputOptions {
     inline def setExternal(value: ExternalOption): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
     inline def setExternalFunction3(
-      value: (/* source */ String, /* importer */ js.UndefOr[String], /* isResolved */ Boolean) => js.UndefOr[Boolean | Null]
+      value: (/* source */ String, /* importer */ js.UndefOr[String], /* isResolved */ Boolean) => Boolean | Null | Unit
     ): Self = StObject.set(x, "external", js.Any.fromFunction3(value))
     
     inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
     
-    inline def setExternalVarargs(value: (String | RegExp)*): Self = StObject.set(x, "external", js.Array(value :_*))
+    inline def setExternalVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "external", js.Array(value*))
     
     inline def setInlineDynamicImports(value: Boolean): Self = StObject.set(x, "inlineDynamicImports", value.asInstanceOf[js.Any])
     
@@ -103,17 +111,29 @@ object InputOptions {
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
+    inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value*))
+    
+    inline def setMakeAbsoluteExternalsRelative(value: Boolean | ifRelativeSource): Self = StObject.set(x, "makeAbsoluteExternalsRelative", value.asInstanceOf[js.Any])
+    
+    inline def setMakeAbsoluteExternalsRelativeUndefined: Self = StObject.set(x, "makeAbsoluteExternalsRelative", js.undefined)
     
     inline def setManualChunks(value: ManualChunksOption): Self = StObject.set(x, "manualChunks", value.asInstanceOf[js.Any])
     
-    inline def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => js.UndefOr[String | Null]): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
+    inline def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => String | Null | Unit): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
     
     inline def setManualChunksUndefined: Self = StObject.set(x, "manualChunks", js.undefined)
     
-    inline def setModuleContext(value: (js.Function1[/* id */ String, js.UndefOr[String | Null]]) | StringDictionary[String]): Self = StObject.set(x, "moduleContext", value.asInstanceOf[js.Any])
+    inline def setMaxParallelFileOps(value: Double): Self = StObject.set(x, "maxParallelFileOps", value.asInstanceOf[js.Any])
     
-    inline def setModuleContextFunction1(value: /* id */ String => js.UndefOr[String | Null]): Self = StObject.set(x, "moduleContext", js.Any.fromFunction1(value))
+    inline def setMaxParallelFileOpsUndefined: Self = StObject.set(x, "maxParallelFileOps", js.undefined)
+    
+    inline def setMaxParallelFileReads(value: Double): Self = StObject.set(x, "maxParallelFileReads", value.asInstanceOf[js.Any])
+    
+    inline def setMaxParallelFileReadsUndefined: Self = StObject.set(x, "maxParallelFileReads", js.undefined)
+    
+    inline def setModuleContext(value: (js.Function1[/* id */ String, String | Null | Unit]) | StringDictionary[String]): Self = StObject.set(x, "moduleContext", value.asInstanceOf[js.Any])
+    
+    inline def setModuleContextFunction1(value: /* id */ String => String | Null | Unit): Self = StObject.set(x, "moduleContext", js.Any.fromFunction1(value))
     
     inline def setModuleContextUndefined: Self = StObject.set(x, "moduleContext", js.undefined)
     
@@ -125,11 +145,11 @@ object InputOptions {
     
     inline def setPerfUndefined: Self = StObject.set(x, "perf", js.undefined)
     
-    inline def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: js.Array[js.UndefOr[Plugin | Null | `false`]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: (js.UndefOr[Plugin | Null | `false`])*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setPreserveEntrySignatures(value: PreserveEntrySignaturesOption): Self = StObject.set(x, "preserveEntrySignatures", value.asInstanceOf[js.Any])
     
@@ -151,7 +171,7 @@ object InputOptions {
     
     inline def setStrictDeprecationsUndefined: Self = StObject.set(x, "strictDeprecations", js.undefined)
     
-    inline def setTreeshake(value: Boolean | TreeshakingOptions): Self = StObject.set(x, "treeshake", value.asInstanceOf[js.Any])
+    inline def setTreeshake(value: Boolean | TreeshakingPreset | TreeshakingOptions): Self = StObject.set(x, "treeshake", value.asInstanceOf[js.Any])
     
     inline def setTreeshakeUndefined: Self = StObject.set(x, "treeshake", js.undefined)
     

@@ -10,7 +10,7 @@ trait MapLayerDefaultsTile extends StObject {
   
   var opacity: js.UndefOr[Double] = js.undefined
   
-  var subdomains: js.UndefOr[js.Any] = js.undefined
+  var subdomains: js.UndefOr[Any] = js.undefined
   
   var urlTemplate: js.UndefOr[String] = js.undefined
 }
@@ -31,7 +31,7 @@ object MapLayerDefaultsTile {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setSubdomains(value: js.Any): Self = StObject.set(x, "subdomains", value.asInstanceOf[js.Any])
+    inline def setSubdomains(value: Any): Self = StObject.set(x, "subdomains", value.asInstanceOf[js.Any])
     
     inline def setSubdomainsUndefined: Self = StObject.set(x, "subdomains", js.undefined)
     

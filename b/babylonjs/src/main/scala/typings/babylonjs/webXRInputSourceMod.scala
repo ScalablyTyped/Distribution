@@ -5,6 +5,7 @@ import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.rayMod.Ray
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.webXRAbstractMotionControllerMod.WebXRAbstractMotionController
+import typings.babylonjs.webXRCameraMod.WebXRCamera
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ object webXRInputSourceMod {
   
   @JSImport("babylonjs/XR/webXRInputSource", "WebXRInputSource")
   @js.native
-  class WebXRInputSource protected () extends StObject {
+  open class WebXRInputSource protected () extends StObject {
     /**
       * Creates the input source object
       * @see https://doc.babylonjs.com/how_to/webxr_controllers_support
@@ -30,15 +31,21 @@ object webXRInputSourceMod {
       _options: IWebXRControllerOptions
     ) = this()
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /**
+      * The last XRPose the was calculated on the current XRFrame
+      * @hidden
+      */
+    var _lastXRPose: js.UndefOr[XRPose] = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _tmpVector: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _uniqueId: js.Any = js.native
+    /* private */ var _tmpVector: Any = js.native
+    
+    /* private */ var _uniqueId: Any = js.native
     
     /**
       * Disposes of the object
@@ -54,7 +61,7 @@ object webXRInputSourceMod {
     def getWorldPointerRayToRef(result: Ray, gripIfAvailable: Boolean): Unit = js.native
     
     /**
-      * Represents the part of the controller that is held. This may not exist if the controller is the head mounted display itself, if thats the case only the pointer from the head will be availible
+      * Represents the part of the controller that is held. This may not exist if the controller is the head mounted display itself, if that's the case only the pointer from the head will be available
       */
     var grip: js.UndefOr[AbstractMesh] = js.native
     
@@ -101,8 +108,9 @@ object webXRInputSourceMod {
       * Updates the controller pose based on the given XRFrame
       * @param xrFrame xr frame to update the pose with
       * @param referenceSpace reference space to use
+      * @param xrCamera the xr camera, used for parenting
       */
-    def updateFromXRFrame(xrFrame: XRFrame, referenceSpace: XRReferenceSpace): Unit = js.native
+    def updateFromXRFrame(xrFrame: XRFrame, referenceSpace: XRReferenceSpace, xrCamera: WebXRCamera): Unit = js.native
   }
   
   trait IWebXRControllerOptions extends StObject {

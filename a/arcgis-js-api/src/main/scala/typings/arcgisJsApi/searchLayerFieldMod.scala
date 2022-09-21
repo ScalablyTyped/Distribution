@@ -17,7 +17,12 @@ object searchLayerFieldMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/webdoc/applicationProperties/SearchLayerField", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Represents the field of a layer to use for search.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayerField.html)
+    */
+  open class Class ()
     extends StObject
        with SearchLayerField {
     def this(properties: SearchLayerFieldProperties) = this()

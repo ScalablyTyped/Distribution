@@ -7,7 +7,6 @@ import typings.logrocket.anon.IsEnabled
 import typings.logrocket.anon.RequestSanitizer
 import typings.logrocket.anon.UrlSanitizer
 import typings.logrocket.mod.LR.LogRocket
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object mod extends Shortcut {
   
   object LR {
     
-    type Action = StringDictionary[js.Any]
+    type Action = StringDictionary[Any]
     
     trait ICaptureOptions extends StObject {
       
@@ -51,33 +50,55 @@ object mod extends Shortcut {
       
       var browser: js.UndefOr[UrlSanitizer] = js.undefined
       
+      /**
+        * Controls domains to which a parent window can post messages
+        * in order to merge recording with cross-domain iframes
+        * */
+      var childDomains: js.UndefOr[js.Array[String] | Null] = js.undefined
+      
       var console: js.UndefOr[IsEnabled] = js.undefined
       
       var dom: js.UndefOr[BaseHref] = js.undefined
       
-      /** Convenience option for configuring the SDK for an on-prem install. Include the protocol (eg. https://ingest.example.com) **/
+      /**
+        * Convenience option for configuring the SDK for an on-prem install.
+        * Include the protocol (eg. https://ingest.example.com)
+        * */
       var ingestServer: js.UndefOr[String] = js.undefined
       
       var mergeIframes: js.UndefOr[Boolean] = js.undefined
       
       var network: js.UndefOr[RequestSanitizer] = js.undefined
       
+      /**
+        * Controls domain to which an iframe window can post messages
+        * in order to merge recording with a cross-domain parent window
+        * */
+      var parentDomain: js.UndefOr[String | Null] = js.undefined
+      
       var release: js.UndefOr[String] = js.undefined
       
       /**
         * Enable sharing sessions across subdomains by setting this to the top-level hostname.
-        **/
+        * */
       var rootHostname: js.UndefOr[String] = js.undefined
       
-      /** Convenience option for configuring where the full SDK should be loaded from for on-prem installs. **/
+      /**
+        * Convenience option for configuring
+        * where the full SDK should be loaded from for on-prem installs
+        * */
       var sdkServer: js.UndefOr[String] = js.undefined
       
-      /** Controls collection of IP addresses and related features, such as GeoIP **/
+      var shouldAugmentNPS: js.UndefOr[Boolean] = js.undefined
+      
+      /** Controls collection of IP addresses and related features, such as GeoIP */
       var shouldCaptureIP: js.UndefOr[Boolean] = js.undefined
       
       var shouldDebugLog: js.UndefOr[Boolean] = js.undefined
       
-      /** a callback which determines whether to send data at a particular moment of time. **/
+      var shouldParseXHRBlob: js.UndefOr[Boolean] = js.undefined
+      
+      /** a callback which determines whether to send data at a particular moment of time. * */
       var shouldSendData: js.UndefOr[js.Function0[Boolean]] = js.undefined
       
       var uploadTimeInterval: js.UndefOr[Double] = js.undefined
@@ -94,6 +115,14 @@ object mod extends Shortcut {
         inline def setBrowser(value: UrlSanitizer): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
         
         inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
+        
+        inline def setChildDomains(value: js.Array[String]): Self = StObject.set(x, "childDomains", value.asInstanceOf[js.Any])
+        
+        inline def setChildDomainsNull: Self = StObject.set(x, "childDomains", null)
+        
+        inline def setChildDomainsUndefined: Self = StObject.set(x, "childDomains", js.undefined)
+        
+        inline def setChildDomainsVarargs(value: String*): Self = StObject.set(x, "childDomains", js.Array(value*))
         
         inline def setConsole(value: IsEnabled): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
         
@@ -115,6 +144,12 @@ object mod extends Shortcut {
         
         inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
         
+        inline def setParentDomain(value: String): Self = StObject.set(x, "parentDomain", value.asInstanceOf[js.Any])
+        
+        inline def setParentDomainNull: Self = StObject.set(x, "parentDomain", null)
+        
+        inline def setParentDomainUndefined: Self = StObject.set(x, "parentDomain", js.undefined)
+        
         inline def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
         
         inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
@@ -127,6 +162,10 @@ object mod extends Shortcut {
         
         inline def setSdkServerUndefined: Self = StObject.set(x, "sdkServer", js.undefined)
         
+        inline def setShouldAugmentNPS(value: Boolean): Self = StObject.set(x, "shouldAugmentNPS", value.asInstanceOf[js.Any])
+        
+        inline def setShouldAugmentNPSUndefined: Self = StObject.set(x, "shouldAugmentNPS", js.undefined)
+        
         inline def setShouldCaptureIP(value: Boolean): Self = StObject.set(x, "shouldCaptureIP", value.asInstanceOf[js.Any])
         
         inline def setShouldCaptureIPUndefined: Self = StObject.set(x, "shouldCaptureIP", js.undefined)
@@ -134,6 +173,10 @@ object mod extends Shortcut {
         inline def setShouldDebugLog(value: Boolean): Self = StObject.set(x, "shouldDebugLog", value.asInstanceOf[js.Any])
         
         inline def setShouldDebugLogUndefined: Self = StObject.set(x, "shouldDebugLog", js.undefined)
+        
+        inline def setShouldParseXHRBlob(value: Boolean): Self = StObject.set(x, "shouldParseXHRBlob", value.asInstanceOf[js.Any])
+        
+        inline def setShouldParseXHRBlobUndefined: Self = StObject.set(x, "shouldParseXHRBlob", js.undefined)
         
         inline def setShouldSendData(value: () => Boolean): Self = StObject.set(x, "shouldSendData", js.Any.fromFunction0(value))
         
@@ -269,9 +312,9 @@ object mod extends Shortcut {
       
       /** Manually report exceptions to LogRocket */
       def captureException(/** Error instance */
-      exception: Error): Unit = js.native
+      exception: js.Error): Unit = js.native
       def captureException(/** Error instance */
-      exception: Error, /** Error metadata */
+      exception: js.Error, /** Error metadata */
       options: ICaptureOptions): Unit = js.native
       
       /** Manually report string errors to LogRocket */
@@ -281,9 +324,9 @@ object mod extends Shortcut {
       message: String, /** error metadata */
       options: ICaptureOptions): Unit = js.native
       
-      def debug(props: js.Any*): Unit = js.native
+      def debug(props: Any*): Unit = js.native
       
-      def error(props: js.Any*): Unit = js.native
+      def error(props: Any*): Unit = js.native
       
       /** Get the current session URL in a callback function */
       def getSessionURL(/** Callback to get session URL */
@@ -294,7 +337,7 @@ object mod extends Shortcut {
       def identify(uid: String): Unit = js.native
       def identify(uid: String, traits: IUserTraits): Unit = js.native
       
-      def info(props: js.Any*): Unit = js.native
+      def info(props: Any*): Unit = js.native
       
       /** Configures LogRocket */
       def init(/** Your LogRocket appID (find it in LogRocket settings) */
@@ -307,12 +350,12 @@ object mod extends Shortcut {
       ): Unit = js.native
       
       // logging functions
-      def log(props: js.Any*): Unit = js.native
+      def log(props: Any*): Unit = js.native
       
       /** Returns a redux middleware which adds redux logs to LogRocket sessions */
-      def reduxMiddleware(): js.Any = js.native
+      def reduxMiddleware(): Any = js.native
       def reduxMiddleware(/** Optional sanitizer configuration */
-      options: IReduxMiddlewareOptions): js.Any = js.native
+      options: IReduxMiddlewareOptions): Any = js.native
       
       /** Current session URL if LogRocket has been loaded, null otherwise */
       var sessionURL: String | Null = js.native
@@ -322,11 +365,36 @@ object mod extends Shortcut {
       
       /** Send an event to LogRocket */
       def track(eventName: String): Unit = js.native
+      def track(eventName: String, eventProperties: TrackEventProperties): Unit = js.native
       
-      def warn(props: js.Any*): Unit = js.native
+      /** Current SDK version if LogRocket has been loaded, undefined otherwise */
+      var version: js.UndefOr[String] = js.native
+      
+      def warn(props: Any*): Unit = js.native
     }
     
-    type State = StringDictionary[js.Any]
+    type State = StringDictionary[Any]
+    
+    trait TrackEventProperties
+      extends StObject
+         with /* key */ StringDictionary[js.UndefOr[String | Double | Boolean | (js.Array[Boolean | Double | String])]] {
+      
+      var revenue: js.UndefOr[Double] = js.undefined
+    }
+    object TrackEventProperties {
+      
+      inline def apply(): TrackEventProperties = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[TrackEventProperties]
+      }
+      
+      extension [Self <: TrackEventProperties](x: Self) {
+        
+        inline def setRevenue(value: Double): Self = StObject.set(x, "revenue", value.asInstanceOf[js.Any])
+        
+        inline def setRevenueUndefined: Self = StObject.set(x, "revenue", js.undefined)
+      }
+    }
   }
   
   type _To = LogRocket

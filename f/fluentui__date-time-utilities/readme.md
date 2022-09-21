@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluentui__date-time-utilities
 
-Typings are for version 7.9.0
+Typings are for version 8.5.2
 
 ## Library description:
 Date-time utilities
@@ -10,10 +10,10 @@ Date-time utilities
 | ------------------ | :-------------: |
 | Full name          | @fluentui/date-time-utilities |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 9 |
-| # downloads        | 1096856 |
-| # stars            | 0 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 560635.6666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

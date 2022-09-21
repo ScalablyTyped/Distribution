@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WEBGLColorBufferFloat extends StObject {
   
+  /* standard dom */
   val FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT: GLenum
   
+  /* standard dom */
   val RGBA32F_EXT: GLenum
   
+  /* standard dom */
   val UNSIGNED_NORMALIZED_EXT: GLenum
 }
 object WEBGLColorBufferFloat {

@@ -29,8 +29,8 @@ object mod {
   inline def formatNumber(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(number.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def formatNumber(number: Double, decimals: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def frequency(list: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("frequency")(list.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def frequency(list: js.Array[js.Any], verb: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("frequency")(list.asInstanceOf[js.Any], verb.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def frequency(list: js.Array[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("frequency")(list.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def frequency(list: js.Array[Any], verb: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("frequency")(list.asInstanceOf[js.Any], verb.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def intComma(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("intComma")(number.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def intComma(number: Double, decimals: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("intComma")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -40,10 +40,10 @@ object mod {
   
   inline def ordinal(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ordinal")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def oxford(items: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def oxford(items: js.Array[js.Any], limit: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def oxford(items: js.Array[js.Any], limit: Double, limitStr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], limitStr.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def oxford(items: js.Array[js.Any], limit: Unit, limitStr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], limitStr.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def oxford(items: js.Array[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def oxford(items: js.Array[Any], limit: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def oxford(items: js.Array[Any], limit: Double, limitStr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], limitStr.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def oxford(items: js.Array[Any], limit: Unit, limitStr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], limitStr.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def pace(value: Double, intervalMs: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pace")(value.asInstanceOf[js.Any], intervalMs.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def pace(value: Double, intervalMs: Double, unit: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pace")(value.asInstanceOf[js.Any], intervalMs.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -54,7 +54,7 @@ object mod {
   inline def pluralize(number: Double, singular: Unit, plural: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pluralize")(number.asInstanceOf[js.Any], singular.asInstanceOf[js.Any], plural.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def times(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("times")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def times(value: Double, overrides: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("times")(value.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def times(value: Double, overrides: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("times")(value.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def titleCase(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("titleCase")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   

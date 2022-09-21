@@ -15,7 +15,7 @@ trait AutoscalerAggregatedList extends StObject {
   var items: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.AutoscalersScopedList}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AutoscalerAggregatedList & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AutoscalerAggregatedList & TopLevel[Any]
   ] = js.undefined
   
   /** [Output Only] Type of resource. Always compute#autoscalerAggregatedList for aggregated lists of autoscalers. */
@@ -30,7 +30,7 @@ trait AutoscalerAggregatedList extends StObject {
   /** [Output Only] Server-defined URL for this resource. */
   var selfLink: js.UndefOr[String] = js.undefined
   
-  /** [Output Only] Unreachable resources. */
+  /** [Output Only] Unreachable resources. end_interface: MixerListResponseWithEtagBuilder */
   var unreachables: js.UndefOr[js.Array[String]] = js.undefined
   
   /** [Output Only] Informational warning message. */
@@ -52,7 +52,7 @@ object AutoscalerAggregatedList {
     inline def setItems(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.AutoscalersScopedList}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AutoscalerAggregatedList & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AutoscalerAggregatedList & TopLevel[Any]
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -73,7 +73,7 @@ object AutoscalerAggregatedList {
     
     inline def setUnreachablesUndefined: Self = StObject.set(x, "unreachables", js.undefined)
     
-    inline def setUnreachablesVarargs(value: String*): Self = StObject.set(x, "unreachables", js.Array(value :_*))
+    inline def setUnreachablesVarargs(value: String*): Self = StObject.set(x, "unreachables", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

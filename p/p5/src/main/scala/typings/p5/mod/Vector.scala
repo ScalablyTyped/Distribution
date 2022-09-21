@@ -14,7 +14,9 @@ trait Vector extends StObject {
     *   together. The version of the method that adds two
     *   vectors together is a static method and returns a
     *   p5.Vector, the others acts directly on the vector.
-    *   See the examples for more context.
+    *   Additionally, you may provide arguments to this
+    *   function as an array. See the examples for more
+    *   context.
     *   @param value the vector to add
     *   @chainable
     */
@@ -25,7 +27,9 @@ trait Vector extends StObject {
     *   together. The version of the method that adds two
     *   vectors together is a static method and returns a
     *   p5.Vector, the others acts directly on the vector.
-    *   See the examples for more context.
+    *   Additionally, you may provide arguments to this
+    *   function as an array. See the examples for more
+    *   context.
     *   @param x the x component of the vector to be added
     *   @param [y] the y component of the vector to be
     *   added
@@ -39,8 +43,10 @@ trait Vector extends StObject {
   def add(x: Double, y: Unit, z: Double): Vector = js.native
   
   /**
-    *   Calculates and returns the angle (in radians)
-    *   between two vectors.
+    *   Calculates and returns the angle between two
+    *   vectors. This function will take the current
+    *   angleMode into consideration, and give the angle
+    *   in radians or degree accordingly.
     *   @param value the x, y, and z components of a
     *   p5.Vector
     *   @return the angle between (in radians)
@@ -77,6 +83,8 @@ trait Vector extends StObject {
   /**
     *   Calculates the Euclidean distance between two
     *   points (considering a point as a vector object).
+    *   If you are looking to calculate distance with 2
+    *   points see dist()
     *   @param v the x, y, and z coordinates of a
     *   p5.Vector
     *   @return the distance
@@ -84,14 +92,97 @@ trait Vector extends StObject {
   def dist(v: Vector): Double = js.native
   
   /**
-    *   Divide the vector by a scalar. The static version
+    *   Divides the vector by a scalar, divides a vector
+    *   by the x, y, and z arguments, or divides the x, y,
+    *   and z components of two vectors against each
+    *   other. When dividing a vector by a scalar, the x,
+    *   y, and z components of the vector are all divided
+    *   by the scalar. When dividing a vector by a vector,
+    *   the x, y, z components of the source vector are
+    *   treated as the dividend, and the x, y, z
+    *   components of the argument is treated as the
+    *   divisor (for example with two vectors a and b: a.x
+    *   / b.x, a.y / b.y, a.z / b.z). The static version
     *   of this method creates a new p5.Vector while the
     *   non static version acts on the vector directly.
-    *   See the examples for more context.
-    *   @param n the number to divide the vector by
+    *   Additionally, you may provide arguments to this
+    *   function as an array. See the examples for more
+    *   context.
+    *   @param arr The array to divide the components of
+    *   the vector by
+    *   @chainable
+    */
+  def div(arr: js.Array[Double]): Vector = js.native
+  /**
+    *   Divides the vector by a scalar, divides a vector
+    *   by the x, y, and z arguments, or divides the x, y,
+    *   and z components of two vectors against each
+    *   other. When dividing a vector by a scalar, the x,
+    *   y, and z components of the vector are all divided
+    *   by the scalar. When dividing a vector by a vector,
+    *   the x, y, z components of the source vector are
+    *   treated as the dividend, and the x, y, z
+    *   components of the argument is treated as the
+    *   divisor (for example with two vectors a and b: a.x
+    *   / b.x, a.y / b.y, a.z / b.z). The static version
+    *   of this method creates a new p5.Vector while the
+    *   non static version acts on the vector directly.
+    *   Additionally, you may provide arguments to this
+    *   function as an array. See the examples for more
+    *   context.
+    *   @param n The number to divide the vector by
     *   @chainable
     */
   def div(n: Double): Vector = js.native
+  /**
+    *   Divides the vector by a scalar, divides a vector
+    *   by the x, y, and z arguments, or divides the x, y,
+    *   and z components of two vectors against each
+    *   other. When dividing a vector by a scalar, the x,
+    *   y, and z components of the vector are all divided
+    *   by the scalar. When dividing a vector by a vector,
+    *   the x, y, z components of the source vector are
+    *   treated as the dividend, and the x, y, z
+    *   components of the argument is treated as the
+    *   divisor (for example with two vectors a and b: a.x
+    *   / b.x, a.y / b.y, a.z / b.z). The static version
+    *   of this method creates a new p5.Vector while the
+    *   non static version acts on the vector directly.
+    *   Additionally, you may provide arguments to this
+    *   function as an array. See the examples for more
+    *   context.
+    *   @param v The vector to divide the components of
+    *   the original vector by
+    *   @chainable
+    */
+  def div(v: Vector): Vector = js.native
+  /**
+    *   Divides the vector by a scalar, divides a vector
+    *   by the x, y, and z arguments, or divides the x, y,
+    *   and z components of two vectors against each
+    *   other. When dividing a vector by a scalar, the x,
+    *   y, and z components of the vector are all divided
+    *   by the scalar. When dividing a vector by a vector,
+    *   the x, y, z components of the source vector are
+    *   treated as the dividend, and the x, y, z
+    *   components of the argument is treated as the
+    *   divisor (for example with two vectors a and b: a.x
+    *   / b.x, a.y / b.y, a.z / b.z). The static version
+    *   of this method creates a new p5.Vector while the
+    *   non static version acts on the vector directly.
+    *   Additionally, you may provide arguments to this
+    *   function as an array. See the examples for more
+    *   context.
+    *   @param x The number to divide with the x component
+    *   of the vector
+    *   @param y The number to divide with the y component
+    *   of the vector
+    *   @param [z] The number to divide with the z
+    *   component of the vector
+    *   @chainable
+    */
+  def div(x: Double, y: Double): Vector = js.native
+  def div(x: Double, y: Double, z: Double): Vector = js.native
   
   /**
     *   Calculates the dot product of two vectors. The
@@ -125,7 +216,7 @@ trait Vector extends StObject {
     *   @return whether the vectors are equals
     */
   def equals(): Boolean = js.native
-  def equals(value: js.Array[js.Any]): Boolean = js.native
+  def equals(value: js.Array[Double]): Boolean = js.native
   /**
     *   Equality check against a p5.Vector
     *   @param value the vector to compare
@@ -140,8 +231,11 @@ trait Vector extends StObject {
   def equals(x: Unit, y: Unit, z: Double): Boolean = js.native
   
   /**
-    *   Calculate the angle of rotation for this vector
-    *   (only 2D vectors)
+    *   Calculate the angle of rotation for this
+    *   vector(only 2D vectors). p5.Vectors created using
+    *   createVector() will take the current angleMode
+    *   into consideration, and give the angle in radians
+    *   or degree accordingly.
     *   @return the angle of rotation
     */
   def heading(): Double = js.native
@@ -180,7 +274,7 @@ trait Vector extends StObject {
   /**
     *   Calculates the magnitude (length) of the vector
     *   and returns the result as a float (this is simply
-    *   the equation sqrt(xx + yy + z*z).)
+    *   the equation sqrt(x*x + y*y + z*z).)
     *   @return magnitude of the vector
     */
   def mag(): Double = js.native
@@ -188,7 +282,7 @@ trait Vector extends StObject {
   /**
     *   Calculates the squared magnitude of the vector and
     *   returns the result as a float (this is simply the
-    *   equation (xx + yy + z*z).) Faster if the real
+    *   equation (x*x + y*y + z*z).) Faster if the real
     *   length is not required in the case of comparing
     *   vectors, etc.
     *   @return squared magnitude of the vector
@@ -196,14 +290,93 @@ trait Vector extends StObject {
   def magSq(): Double = js.native
   
   /**
-    *   Multiply the vector by a scalar. The static
-    *   version of this method creates a new p5.Vector
-    *   while the non static version acts on the vector
-    *   directly. See the examples for more context.
-    *   @param n the number to multiply with the vector
+    *   Multiplies the vector by a scalar, multiplies the
+    *   x, y, and z components from a vector, or
+    *   multiplies the x, y, and z components of two
+    *   independent vectors. When multiplying a vector by
+    *   a scalar, the x, y, and z components of the vector
+    *   are all multiplied by the scalar. When multiplying
+    *   a vector by a vector, the x, y, z components of
+    *   both vectors are multiplied by each other (for
+    *   example, with two vectors a and b: a.x * b.x, a.y
+    *   * b.y, a.z * b.z). The static version of this
+    *   method creates a new p5.Vector while the non
+    *   static version acts on the vector directly.
+    *   Additionally, you may provide arguments to this
+    *   function as an array. See the examples for more
+    *   context.
+    *   @param arr The array to multiply with the
+    *   components of the vector
+    *   @chainable
+    */
+  def mult(arr: js.Array[Double]): Vector = js.native
+  /**
+    *   Multiplies the vector by a scalar, multiplies the
+    *   x, y, and z components from a vector, or
+    *   multiplies the x, y, and z components of two
+    *   independent vectors. When multiplying a vector by
+    *   a scalar, the x, y, and z components of the vector
+    *   are all multiplied by the scalar. When multiplying
+    *   a vector by a vector, the x, y, z components of
+    *   both vectors are multiplied by each other (for
+    *   example, with two vectors a and b: a.x * b.x, a.y
+    *   * b.y, a.z * b.z). The static version of this
+    *   method creates a new p5.Vector while the non
+    *   static version acts on the vector directly.
+    *   Additionally, you may provide arguments to this
+    *   function as an array. See the examples for more
+    *   context.
+    *   @param n The number to multiply with the vector
     *   @chainable
     */
   def mult(n: Double): Vector = js.native
+  /**
+    *   Multiplies the vector by a scalar, multiplies the
+    *   x, y, and z components from a vector, or
+    *   multiplies the x, y, and z components of two
+    *   independent vectors. When multiplying a vector by
+    *   a scalar, the x, y, and z components of the vector
+    *   are all multiplied by the scalar. When multiplying
+    *   a vector by a vector, the x, y, z components of
+    *   both vectors are multiplied by each other (for
+    *   example, with two vectors a and b: a.x * b.x, a.y
+    *   * b.y, a.z * b.z). The static version of this
+    *   method creates a new p5.Vector while the non
+    *   static version acts on the vector directly.
+    *   Additionally, you may provide arguments to this
+    *   function as an array. See the examples for more
+    *   context.
+    *   @param v The vector to multiply with the
+    *   components of the original vector
+    *   @chainable
+    */
+  def mult(v: Vector): Vector = js.native
+  /**
+    *   Multiplies the vector by a scalar, multiplies the
+    *   x, y, and z components from a vector, or
+    *   multiplies the x, y, and z components of two
+    *   independent vectors. When multiplying a vector by
+    *   a scalar, the x, y, and z components of the vector
+    *   are all multiplied by the scalar. When multiplying
+    *   a vector by a vector, the x, y, z components of
+    *   both vectors are multiplied by each other (for
+    *   example, with two vectors a and b: a.x * b.x, a.y
+    *   * b.y, a.z * b.z). The static version of this
+    *   method creates a new p5.Vector while the non
+    *   static version acts on the vector directly.
+    *   Additionally, you may provide arguments to this
+    *   function as an array. See the examples for more
+    *   context.
+    *   @param x The number to multiply with the x
+    *   component of the vector
+    *   @param y The number to multiply with the y
+    *   component of the vector
+    *   @param [z] The number to multiply with the z
+    *   component of the vector
+    *   @chainable
+    */
+  def mult(x: Double, y: Double): Vector = js.native
+  def mult(x: Double, y: Double, z: Double): Vector = js.native
   
   /**
     *   Normalize the vector to length 1 (make it a unit
@@ -211,6 +384,34 @@ trait Vector extends StObject {
     *   @return normalized p5.Vector
     */
   def normalize(): Vector = js.native
+  
+  /**
+    *   Reflect the incoming vector about a normal to a
+    *   line in 2D, or about a normal to a plane in 3D
+    *   This method acts on the vector directly
+    *   @param surfaceNormal the p5.Vector to reflect
+    *   about, will be normalized by this method
+    *   @chainable
+    */
+  def reflect(surfaceNormal: Vector): Vector = js.native
+  
+  def rem(value: js.Array[Double]): Vector = js.native
+  /**
+    *   Gives remainder of a vector when it is divided by
+    *   another vector. See examples for more context.
+    *   @param value divisor vector
+    *   @chainable
+    */
+  def rem(value: Vector): Vector = js.native
+  /**
+    *   Gives remainder of a vector when it is divided by
+    *   another vector. See examples for more context.
+    *   @param x the x component of divisor vector
+    *   @param y the y component of divisor vector
+    *   @param z the z component of divisor vector
+    *   @chainable
+    */
+  def rem(x: Double, y: Double, z: Double): Vector = js.native
   
   /**
     *   Rotate the vector by an angle (only 2D vectors),
@@ -248,6 +449,14 @@ trait Vector extends StObject {
   def set(x: Unit, y: Unit, z: Double): Vector = js.native
   
   /**
+    *   Rotate the vector to a specific angle (only 2D
+    *   vectors), magnitude remains the same
+    *   @param angle the angle of rotation
+    *   @chainable
+    */
+  def setHeading(angle: Double): Vector = js.native
+  
+  /**
     *   Set the magnitude of this vector to the value used
     *   for the len parameter.
     *   @param len the new length for this vector
@@ -262,7 +471,9 @@ trait Vector extends StObject {
     *   two independent vectors. The version of the method
     *   that subtracts two vectors is a static method and
     *   returns a p5.Vector, the other acts directly on
-    *   the vector. See the examples for more context.
+    *   the vector. Additionally, you may provide
+    *   arguments to this function as an array. See the
+    *   examples for more context.
     *   @param value the vector to subtract
     *   @chainable
     */
@@ -273,7 +484,9 @@ trait Vector extends StObject {
     *   two independent vectors. The version of the method
     *   that subtracts two vectors is a static method and
     *   returns a p5.Vector, the other acts directly on
-    *   the vector. See the examples for more context.
+    *   the vector. Additionally, you may provide
+    *   arguments to this function as an array. See the
+    *   examples for more context.
     *   @param x the x component of the vector to subtract
     *   @param [y] the y component of the vector to
     *   subtract

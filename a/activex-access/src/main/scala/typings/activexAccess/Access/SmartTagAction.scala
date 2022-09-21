@@ -17,7 +17,7 @@ trait SmartTagAction extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
 }
 object SmartTagAction {
   
@@ -27,7 +27,7 @@ object SmartTagAction {
     Execute: () => Unit,
     IsMemberSafe: Double => Boolean,
     Name: String,
-    Parent: js.Any
+    Parent: Any
   ): SmartTagAction = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Execute = js.Any.fromFunction0(Execute), IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Access.SmartTagAction_typekey")(AccessDotSmartTagAction_typekey.asInstanceOf[js.Any])
@@ -46,6 +46,6 @@ object SmartTagAction {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

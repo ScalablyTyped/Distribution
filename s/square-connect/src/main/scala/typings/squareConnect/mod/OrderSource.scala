@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "OrderSource")
 @js.native
-class OrderSource () extends StObject {
+open class OrderSource () extends StObject {
   
   /**
     * The name used to identify the place (physical or digital) that an order originates.

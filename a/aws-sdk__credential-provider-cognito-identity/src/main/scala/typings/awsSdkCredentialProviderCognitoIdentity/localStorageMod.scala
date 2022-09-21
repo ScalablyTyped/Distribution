@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object localStorageMod {
   
-  @JSImport("@aws-sdk/credential-provider-cognito-identity/dist/cjs/localStorage", JSImport.Namespace)
+  @JSImport("@aws-sdk/credential-provider-cognito-identity/dist-types/localStorage", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

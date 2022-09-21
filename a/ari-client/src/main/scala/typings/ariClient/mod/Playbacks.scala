@@ -2,7 +2,6 @@ package typings.ariClient.mod
 
 import typings.ariClient.anon.Operation
 import typings.ariClient.anon.PlaybackIdString
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ trait Playbacks extends StObject {
     * @param params.playbackId - Playbacks id.
     * @param params.operation - Operation to perform on the playback.
     */
-  def control(params: Operation, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def control(params: Operation, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Get a playbacks details.
@@ -36,7 +35,10 @@ trait Playbacks extends StObject {
     *
     * @param params.playbackId - Playbacks id.
     */
-  def get(params: PlaybackIdString, callback: js.Function2[/* err */ Error, /* playback */ Playback, Unit]): Unit = js.native
+  def get(
+    params: PlaybackIdString,
+    callback: js.Function2[/* err */ js.Error, /* playback */ Playback, Unit]
+  ): Unit = js.native
   
   /**
     * Stop a playback.
@@ -49,5 +51,5 @@ trait Playbacks extends StObject {
     *
     * @param params.playbackId - Playbacks id.
     */
-  def stop(params: PlaybackIdString, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def stop(params: PlaybackIdString, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
 }

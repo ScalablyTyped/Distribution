@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a table cell in a Word document.
   *
+  * @remarks
   * [Api set: WordApi 1.3]
   */
 trait TableCellLoadOptions extends StObject {
@@ -19,89 +19,89 @@ trait TableCellLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the body object of the cell.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var body: js.UndefOr[BodyLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the index of the cell in its row. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var cellIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var columnWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the parent row of the cell.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var parentRow: js.UndefOr[TableRowLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the parent table of the cell.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the index of the cell's row in the table. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var rowIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var shadingColor: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets the text of the cell.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var value: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var verticalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the width of the cell in points. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var width: js.UndefOr[Boolean] = js.undefined

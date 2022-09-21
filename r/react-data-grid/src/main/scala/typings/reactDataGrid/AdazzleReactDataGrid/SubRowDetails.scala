@@ -54,7 +54,7 @@ object SubRowDetails {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: T*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: T*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     

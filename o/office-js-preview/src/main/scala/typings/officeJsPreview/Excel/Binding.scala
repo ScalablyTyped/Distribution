@@ -12,9 +12,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents an Office.js binding that is defined in the workbook.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -29,35 +29,39 @@ trait Binding
   /**
     * Deletes the binding.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   def delete(): Unit = js.native
   
   /**
-    * Returns the range represented by the binding. Will throw an error if binding is not of the correct type.
+    * Returns the range represented by the binding. Will throw an error if the binding is not of the correct type.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def getRange(): Range = js.native
   
   /**
-    * Returns the table represented by the binding. Will throw an error if binding is not of the correct type.
+    * Returns the table represented by the binding. Will throw an error if the binding is not of the correct type.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def getTable(): Table = js.native
   
   /**
-    * Returns the text represented by the binding. Will throw an error if binding is not of the correct type.
+    * Returns the text represented by the binding. Will throw an error if the binding is not of the correct type.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def getText(): ClientResult[String] = js.native
   
   /**
+    * Represents the binding identifier.
     *
-    * Represents binding identifier.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val id: String = js.native
@@ -74,9 +78,9 @@ trait Binding
   def load(propertyNames: js.Array[String]): Binding = js.native
   
   /**
-    *
     * Occurs when data or formatting within the binding is changed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     *
     * @eventproperty
@@ -84,11 +88,11 @@ trait Binding
   val onDataChanged: EventHandlers[BindingDataChangedEventArgs] = js.native
   
   /**
-    *
     * Occurs when the selected content in the binding is changed.
     
     **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     *
     * @eventproperty
@@ -102,9 +106,9 @@ trait Binding
   def toJSON(): BindingData = js.native
   
   /**
+    * Returns the type of the binding. See `Excel.BindingType` for details.
     *
-    * Returns the type of the binding. See Excel.BindingType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val `type`: BindingType | typings.officeJsPreview.officeJsPreviewStrings.Range | typings.officeJsPreview.officeJsPreviewStrings.Table | Text = js.native

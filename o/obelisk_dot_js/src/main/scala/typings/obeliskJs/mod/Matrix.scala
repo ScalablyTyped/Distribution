@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "Matrix")
 @js.native
-class Matrix protected () extends StObject {
+open class Matrix protected () extends StObject {
   def this(
     a: js.UndefOr[Double],
     b: js.UndefOr[Double],

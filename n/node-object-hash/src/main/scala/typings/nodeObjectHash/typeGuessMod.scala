@@ -10,7 +10,7 @@ object typeGuessMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def guessObjectType(obj: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("guessObjectType")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def guessObjectType(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("guessObjectType")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def guessType(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("guessType")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def guessType(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("guessType")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Feature")
 @js.native
-class Feature ()
+open class Feature ()
   extends StObject
      with typings.sharepoint.SP.Feature

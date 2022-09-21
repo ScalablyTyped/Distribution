@@ -47,7 +47,7 @@ trait JQuery extends StObject {
     * will be returned.
     */
   @JSName("tooltipster")
-  def tooltipster_content(method: content): js.Any
+  def tooltipster_content(method: content): Any
   /**
     * Updates the tooltip's content.
     * @param value the new content of the tooltip
@@ -113,12 +113,12 @@ trait JQuery extends StObject {
     * Returns the value of an option.
     */
   @JSName("tooltipster")
-  def tooltipster_option(method: option, optionName: String): js.Any
+  def tooltipster_option(method: option, optionName: String): Any
   /**
     * Sets the value of an option (for advanced users only; we do not provide support on unexpected results).
     */
   @JSName("tooltipster")
-  def tooltipster_option(method: option, optionName: String, optionValue: js.Any): JQuery
+  def tooltipster_option(method: option, optionName: String, optionValue: Any): JQuery
   /**
     * Resizes and repositions the tooltip.
     */

@@ -17,7 +17,7 @@ trait Secret extends StObject {
   var secretEnv: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Secret & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Secret & TopLevel[Any]
   ] = js.undefined
 }
 object Secret {
@@ -36,7 +36,7 @@ object Secret {
     inline def setSecretEnv(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Secret & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Secret & TopLevel[Any]
     ): Self = StObject.set(x, "secretEnv", value.asInstanceOf[js.Any])
     
     inline def setSecretEnvUndefined: Self = StObject.set(x, "secretEnv", js.undefined)

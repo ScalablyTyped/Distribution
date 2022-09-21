@@ -27,22 +27,9 @@ trait SubNVue extends StObject {
     * 隐藏原生子窗体
     */
   def hide(): Unit = js.native
-  @JSName("hide")
-  def hide_fadeout(options: `fade-out`): Unit = js.native
-  @JSName("hide")
-  def hide_popout(options: `pop-out`): Unit = js.native
-  @JSName("hide")
-  def hide_slideoutbottom(options: `slide-out-bottom`): Unit = js.native
-  @JSName("hide")
-  def hide_slideoutleft(options: `slide-out-left`): Unit = js.native
-  @JSName("hide")
-  def hide_slideoutright(options: `slide-out-right`): Unit = js.native
-  @JSName("hide")
-  def hide_slideouttop(options: `slide-out-top`): Unit = js.native
-  @JSName("hide")
-  def hide_zoomfadein(options: `zoom-fade-in`): Unit = js.native
-  @JSName("hide")
-  def hide_zoomin(options: `zoom-in`): Unit = js.native
+  def hide(
+    options: `slide-out-right` | `slide-out-left` | `slide-out-top` | `slide-out-bottom` | `fade-out` | `zoom-in` | `zoom-fade-in` | `pop-out`
+  ): Unit = js.native
   
   /**
     * 监听消息
@@ -65,20 +52,7 @@ trait SubNVue extends StObject {
     * 显示原生子窗体
     */
   def show(): Unit = js.native
-  @JSName("show")
-  def show_fadein(options: `fade-in`): Unit = js.native
-  @JSName("show")
-  def show_popin(options: `pop-in`): Unit = js.native
-  @JSName("show")
-  def show_slideinbottom(options: `slide-in-bottom`): Unit = js.native
-  @JSName("show")
-  def show_slideinleft(options: `slide-in-left`): Unit = js.native
-  @JSName("show")
-  def show_slideinright(options: `slide-in-right`): Unit = js.native
-  @JSName("show")
-  def show_slideintop(options: `slide-in-top`): Unit = js.native
-  @JSName("show")
-  def show_zoomfadeout(options: `zoom-fade-out`): Unit = js.native
-  @JSName("show")
-  def show_zoomout(options: `zoom-out`): Unit = js.native
+  def show(
+    options: `slide-in-right` | `slide-in-left` | `slide-in-top` | `slide-in-bottom` | `fade-in` | `zoom-out` | `zoom-fade-out` | `pop-in`
+  ): Unit = js.native
 }

@@ -180,7 +180,7 @@ object jo {
     // Concat
     def Concat(concat: typings.jodata.jo.Concat): FilterClause = js.native
     
-    var FuncReturnType: js.Any = js.native
+    var FuncReturnType: Any = js.native
     
     var IsClauseEmpty: Boolean = js.native
     
@@ -190,7 +190,7 @@ object jo {
     
     var UsingNot: Boolean = js.native
     
-    var Value: js.Any = js.native
+    var Value: Any = js.native
     
     // Arithmetic methods
     def add(amount: Double): FilterClause = js.native
@@ -289,7 +289,7 @@ object jo {
     
     def fullReset(): Unit
     
-    def loadFromJson(filterSettings: js.Any): Unit
+    def loadFromJson(filterSettings: Any): Unit
   }
   object FilterSettings {
     
@@ -299,7 +299,7 @@ object jo {
       Filters: js.Array[FilterClause],
       fullReset: () => Unit,
       isSet: () => Boolean,
-      loadFromJson: js.Any => Unit,
+      loadFromJson: Any => Unit,
       reset: () => Unit
     ): FilterSettings = {
       val __obj = js.Dynamic.literal(CapturedFilter = CapturedFilter.asInstanceOf[js.Any], DefaultFilters = DefaultFilters.asInstanceOf[js.Any], Filters = Filters.asInstanceOf[js.Any], fullReset = js.Any.fromFunction0(fullReset), isSet = js.Any.fromFunction0(isSet), loadFromJson = js.Any.fromFunction1(loadFromJson), reset = js.Any.fromFunction0(reset))
@@ -310,19 +310,19 @@ object jo {
       
       inline def setCapturedFilter(value: js.Array[FilterClause]): Self = StObject.set(x, "CapturedFilter", value.asInstanceOf[js.Any])
       
-      inline def setCapturedFilterVarargs(value: FilterClause*): Self = StObject.set(x, "CapturedFilter", js.Array(value :_*))
+      inline def setCapturedFilterVarargs(value: FilterClause*): Self = StObject.set(x, "CapturedFilter", js.Array(value*))
       
       inline def setDefaultFilters(value: js.Array[FilterClause]): Self = StObject.set(x, "DefaultFilters", value.asInstanceOf[js.Any])
       
-      inline def setDefaultFiltersVarargs(value: FilterClause*): Self = StObject.set(x, "DefaultFilters", js.Array(value :_*))
+      inline def setDefaultFiltersVarargs(value: FilterClause*): Self = StObject.set(x, "DefaultFilters", js.Array(value*))
       
       inline def setFilters(value: js.Array[FilterClause]): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
       
-      inline def setFiltersVarargs(value: FilterClause*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: FilterClause*): Self = StObject.set(x, "Filters", js.Array(value*))
       
       inline def setFullReset(value: () => Unit): Self = StObject.set(x, "fullReset", js.Any.fromFunction0(value))
       
-      inline def setLoadFromJson(value: js.Any => Unit): Self = StObject.set(x, "loadFromJson", js.Any.fromFunction1(value))
+      inline def setLoadFromJson(value: Any => Unit): Self = StObject.set(x, "loadFromJson", js.Any.fromFunction1(value))
     }
   }
   
@@ -523,11 +523,11 @@ object jo {
       
       inline def setDefaultSelect(value: js.Array[String]): Self = StObject.set(x, "DefaultSelect", value.asInstanceOf[js.Any])
       
-      inline def setDefaultSelectVarargs(value: String*): Self = StObject.set(x, "DefaultSelect", js.Array(value :_*))
+      inline def setDefaultSelectVarargs(value: String*): Self = StObject.set(x, "DefaultSelect", js.Array(value*))
       
       inline def setSelect(value: js.Array[String]): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
       
-      inline def setSelectVarargs(value: String*): Self = StObject.set(x, "Select", js.Array(value :_*))
+      inline def setSelectVarargs(value: String*): Self = StObject.set(x, "Select", js.Array(value*))
     }
   }
   

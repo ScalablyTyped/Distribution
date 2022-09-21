@@ -13,31 +13,31 @@ object headerTransformerMod {
   
   @JSImport("@fast-csv/parse/build/src/transforms/HeaderTransformer", "HeaderTransformer")
   @js.native
-  class HeaderTransformer[O /* <: Row[js.Any] */] protected () extends StObject {
+  open class HeaderTransformer[O /* <: Row[Any] */] protected () extends StObject {
     def this(parserOptions: ParserOptions) = this()
     
     var headers: HeaderArray | Null = js.native
     
-    /* private */ var headersLength: js.Any = js.native
+    /* private */ var headersLength: Any = js.native
     
-    /* private */ val headersTransform: js.Any = js.native
+    /* private */ val headersTransform: Any = js.native
     
-    /* private */ var mapHeaders: js.Any = js.native
+    /* private */ var mapHeaders: Any = js.native
     
-    /* private */ val parserOptions: js.Any = js.native
+    /* private */ val parserOptions: Any = js.native
     
-    /* private */ var processRow: js.Any = js.native
+    /* private */ var processRow: Any = js.native
     
-    /* private */ var processedFirstRow: js.Any = js.native
+    /* private */ var processedFirstRow: Any = js.native
     
-    /* private */ var receivedHeaders: js.Any = js.native
+    /* private */ var receivedHeaders: Any = js.native
     
-    /* private */ var setHeaders: js.Any = js.native
+    /* private */ var setHeaders: Any = js.native
     
-    /* private */ var shouldMapRow: js.Any = js.native
+    /* private */ var shouldMapRow: Any = js.native
     
-    /* private */ val shouldUseFirstRow: js.Any = js.native
+    /* private */ val shouldUseFirstRow: Any = js.native
     
-    def transform(row: RowArray[js.Any], cb: RowValidatorCallback[O]): Unit = js.native
+    def transform(row: RowArray[Any], cb: RowValidatorCallback[O]): Unit = js.native
   }
 }

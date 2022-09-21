@@ -10,10 +10,10 @@ Development and Hot Reload Middleware for Koa2
 | ------------------ | :-------------: |
 | Full name          | koa-webpack |
 | Keywords           | koa, middleware, webpack |
-| # releases         | 10 |
-| # dependents       | 86 |
-| # downloads        | 1825814 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 80928.33333333333 |
+| # stars            | 443.0 |
 
 ## Links
 - [Homepage](https://github.com/shellscape/koa-webpack)

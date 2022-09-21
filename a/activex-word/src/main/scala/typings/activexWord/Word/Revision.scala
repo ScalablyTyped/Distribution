@@ -25,7 +25,7 @@ trait Revision extends StObject {
   
   val MovedRange: typings.activexWord.Word.Range
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Range: typings.activexWord.Word.Range
   
@@ -50,7 +50,7 @@ object Revision {
     FormatDescription: String,
     Index: Double,
     MovedRange: Range,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     Reject: () => Unit,
     Style: Style,
@@ -82,7 +82,7 @@ object Revision {
     
     inline def setMovedRange(value: Range): Self = StObject.set(x, "MovedRange", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

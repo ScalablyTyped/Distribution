@@ -27,7 +27,7 @@ object OutgoingWebhooks {
     
     inline def setCalls(value: js.Array[OutgoingWebhookCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
-    inline def setCallsVarargs(value: OutgoingWebhookCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
+    inline def setCallsVarargs(value: OutgoingWebhookCall[T]*): Self = StObject.set(x, "calls", js.Array(value*))
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     

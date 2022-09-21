@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.IgValidatorEmailRule")
 @js.native
-class IgValidatorEmailRule protected ()
+open class IgValidatorEmailRule protected ()
   extends StObject
      with typings.igniteUi.Infragistics.IgValidatorEmailRule {
-  def this(formatItems: js.Array[js.Any]) = this()
+  def this(formatItems: js.Array[Any]) = this()
   def this(name: String) = this()
   
   /**

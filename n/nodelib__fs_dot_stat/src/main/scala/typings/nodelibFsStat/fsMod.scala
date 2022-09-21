@@ -1,14 +1,8 @@
 package typings.nodelibFsStat
 
-import typings.node.fsMod.BigIntOptions
-import typings.node.fsMod.BigIntStats
-import typings.node.fsMod.PathLike
-import typings.node.fsMod.StatOptions
 import typings.node.fsMod.Stats
-import typings.nodelibFsStat.anon.FnCall
 import typings.nodelibFsStat.anon.PartialFileSystemAdapter
-import typings.nodelibFsStat.anon.Typeoflstat
-import typings.nodelibFsStat.anon.Typeofstat
+import typings.nodelibFsStat.typesMod.ErrnoException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,36 +22,57 @@ object fsMod {
   
   trait FileSystemAdapter extends StObject {
     
-    var lstat: Typeoflstat
+    def lstat(path: String, callback: js.Function2[/* error */ ErrnoException | Null, /* stats */ Stats, Unit]): Unit
     
-    def lstatSync(path: PathLike): Stats
+    def lstatSync(path: String): Stats
     @JSName("lstatSync")
-    var lstatSync_Original: js.Function1[/* path */ PathLike, Stats]
+    var lstatSync_Original: StatSynchronousMethod
     
-    var stat: Typeofstat
+    @JSName("lstat")
+    var lstat_Original: StatAsynchronousMethod
     
-    def statSync(path: PathLike): Stats
-    def statSync(path: PathLike, options: BigIntOptions): BigIntStats
-    def statSync(path: PathLike, options: StatOptions): Stats | BigIntStats
+    def stat(path: String, callback: js.Function2[/* error */ ErrnoException | Null, /* stats */ Stats, Unit]): Unit
+    
+    def statSync(path: String): Stats
     @JSName("statSync")
-    var statSync_Original: FnCall
+    var statSync_Original: StatSynchronousMethod
+    
+    @JSName("stat")
+    var stat_Original: StatAsynchronousMethod
   }
   object FileSystemAdapter {
     
-    inline def apply(lstat: Typeoflstat, lstatSync: /* path */ PathLike => Stats, stat: Typeofstat, statSync: FnCall): FileSystemAdapter = {
-      val __obj = js.Dynamic.literal(lstat = lstat.asInstanceOf[js.Any], lstatSync = js.Any.fromFunction1(lstatSync), stat = stat.asInstanceOf[js.Any], statSync = statSync.asInstanceOf[js.Any])
+    inline def apply(
+      lstat: (/* path */ String, /* callback */ js.Function2[/* error */ ErrnoException | Null, /* stats */ Stats, Unit]) => Unit,
+      lstatSync: /* path */ String => Stats,
+      stat: (/* path */ String, /* callback */ js.Function2[/* error */ ErrnoException | Null, /* stats */ Stats, Unit]) => Unit,
+      statSync: /* path */ String => Stats
+    ): FileSystemAdapter = {
+      val __obj = js.Dynamic.literal(lstat = js.Any.fromFunction2(lstat), lstatSync = js.Any.fromFunction1(lstatSync), stat = js.Any.fromFunction2(stat), statSync = js.Any.fromFunction1(statSync))
       __obj.asInstanceOf[FileSystemAdapter]
     }
     
     extension [Self <: FileSystemAdapter](x: Self) {
       
-      inline def setLstat(value: Typeoflstat): Self = StObject.set(x, "lstat", value.asInstanceOf[js.Any])
+      inline def setLstat(
+        value: (/* path */ String, /* callback */ js.Function2[/* error */ ErrnoException | Null, /* stats */ Stats, Unit]) => Unit
+      ): Self = StObject.set(x, "lstat", js.Any.fromFunction2(value))
       
-      inline def setLstatSync(value: /* path */ PathLike => Stats): Self = StObject.set(x, "lstatSync", js.Any.fromFunction1(value))
+      inline def setLstatSync(value: /* path */ String => Stats): Self = StObject.set(x, "lstatSync", js.Any.fromFunction1(value))
       
-      inline def setStat(value: Typeofstat): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+      inline def setStat(
+        value: (/* path */ String, /* callback */ js.Function2[/* error */ ErrnoException | Null, /* stats */ Stats, Unit]) => Unit
+      ): Self = StObject.set(x, "stat", js.Any.fromFunction2(value))
       
-      inline def setStatSync(value: FnCall): Self = StObject.set(x, "statSync", value.asInstanceOf[js.Any])
+      inline def setStatSync(value: /* path */ String => Stats): Self = StObject.set(x, "statSync", js.Any.fromFunction1(value))
     }
   }
+  
+  type StatAsynchronousMethod = js.Function2[
+    /* path */ String, 
+    /* callback */ js.Function2[/* error */ ErrnoException | Null, /* stats */ Stats, Unit], 
+    Unit
+  ]
+  
+  type StatSynchronousMethod = js.Function1[/* path */ String, Stats]
 }

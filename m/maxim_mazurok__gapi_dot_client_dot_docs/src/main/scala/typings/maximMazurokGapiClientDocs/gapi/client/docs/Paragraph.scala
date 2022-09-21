@@ -23,21 +23,21 @@ trait Paragraph extends StObject {
   var suggestedBulletChanges: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedBullet}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Paragraph & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Paragraph & TopLevel[Any]
   ] = js.undefined
   
   /** The suggested paragraph style changes to this paragraph, keyed by suggestion ID. */
   var suggestedParagraphStyleChanges: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedParagraphStyle}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Paragraph & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Paragraph & TopLevel[Any]
   ] = js.undefined
   
   /** The IDs of the positioned objects that are suggested to be attached to this paragraph, keyed by suggestion ID. */
   var suggestedPositionedObjectIds: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.ObjectReferences}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Paragraph & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Paragraph & TopLevel[Any]
   ] = js.undefined
 }
 object Paragraph {
@@ -57,7 +57,7 @@ object Paragraph {
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    inline def setElementsVarargs(value: ParagraphElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: ParagraphElement*): Self = StObject.set(x, "elements", js.Array(value*))
     
     inline def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
     
@@ -67,12 +67,12 @@ object Paragraph {
     
     inline def setPositionedObjectIdsUndefined: Self = StObject.set(x, "positionedObjectIds", js.undefined)
     
-    inline def setPositionedObjectIdsVarargs(value: String*): Self = StObject.set(x, "positionedObjectIds", js.Array(value :_*))
+    inline def setPositionedObjectIdsVarargs(value: String*): Self = StObject.set(x, "positionedObjectIds", js.Array(value*))
     
     inline def setSuggestedBulletChanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedBullet}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Paragraph & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Paragraph & TopLevel[Any]
     ): Self = StObject.set(x, "suggestedBulletChanges", value.asInstanceOf[js.Any])
     
     inline def setSuggestedBulletChangesUndefined: Self = StObject.set(x, "suggestedBulletChanges", js.undefined)
@@ -80,7 +80,7 @@ object Paragraph {
     inline def setSuggestedParagraphStyleChanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedParagraphStyle}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Paragraph & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Paragraph & TopLevel[Any]
     ): Self = StObject.set(x, "suggestedParagraphStyleChanges", value.asInstanceOf[js.Any])
     
     inline def setSuggestedParagraphStyleChangesUndefined: Self = StObject.set(x, "suggestedParagraphStyleChanges", js.undefined)
@@ -88,7 +88,7 @@ object Paragraph {
     inline def setSuggestedPositionedObjectIds(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.ObjectReferences}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Paragraph & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Paragraph & TopLevel[Any]
     ): Self = StObject.set(x, "suggestedPositionedObjectIds", value.asInstanceOf[js.Any])
     
     inline def setSuggestedPositionedObjectIdsUndefined: Self = StObject.set(x, "suggestedPositionedObjectIds", js.undefined)

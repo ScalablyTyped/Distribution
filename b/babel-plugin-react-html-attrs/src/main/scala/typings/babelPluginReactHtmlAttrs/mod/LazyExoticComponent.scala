@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LazyExoticComponent[T /* <: ComponentType[js.Any] */]
+trait LazyExoticComponent[T /* <: ComponentType[Any] */]
   extends StObject
      with ExoticComponent[ComponentPropsWithRef[T]] {
   

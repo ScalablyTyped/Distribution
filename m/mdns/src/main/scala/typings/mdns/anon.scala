@@ -8,18 +8,18 @@ object anon {
   
   trait Flags extends StObject {
     
-    var flags: js.Any
+    var flags: Any
   }
   object Flags {
     
-    inline def apply(flags: js.Any): Flags = {
+    inline def apply(flags: Any): Flags = {
       val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
       __obj.asInstanceOf[Flags]
     }
     
     extension [Self <: Flags](x: Self) {
       
-      inline def setFlags(value: js.Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,7 +48,7 @@ object anon {
       
       inline def setSubtypesUndefined: Self = StObject.set(x, "subtypes", js.undefined)
       
-      inline def setSubtypesVarargs(value: String*): Self = StObject.set(x, "subtypes", js.Array(value :_*))
+      inline def setSubtypesVarargs(value: String*): Self = StObject.set(x, "subtypes", js.Array(value*))
     }
   }
 }

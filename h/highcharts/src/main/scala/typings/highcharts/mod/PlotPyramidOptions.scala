@@ -38,9 +38,9 @@ trait PlotPyramidOptions extends StObject {
   var animation: js.UndefOr[Boolean | PlotPyramidAnimationOptions] = js.undefined
   
   /**
-    * (Highcharts) The color of the border surrounding each slice. When `null`,
-    * the border takes the same color as the slice fill. This can be used
-    * together with a `borderWidth` to fill drawing gaps created by
+    * (Highcharts, Highmaps) The color of the border surrounding each slice.
+    * When `null`, the border takes the same color as the slice fill. This can
+    * be used together with a `borderWidth` to fill drawing gaps created by
     * antialiazing artefacts in borderless pies.
     *
     * In styled mode, the border stroke is given in the `.highcharts-point`
@@ -49,7 +49,7 @@ trait PlotPyramidOptions extends StObject {
   var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
-    * (Highcharts) The width of the border surrounding each slice.
+    * (Highcharts, Highmaps) The width of the border surrounding each slice.
     *
     * When setting the border width to 0, there may be small gaps between the
     * slices due to SVG antialiasing artefacts. To work around this, keep the
@@ -61,8 +61,9 @@ trait PlotPyramidOptions extends StObject {
   var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts) The center of the series. By default, it is centered in the
-    * middle of the plot area, so it fills the plot area height.
+    * (Highcharts, Highmaps) The center of the series. By default, it is
+    * centered in the middle of the plot area, so it fills the plot area
+    * height.
     */
   var center: js.UndefOr[js.Array[Double | String]] = js.undefined
   
@@ -122,8 +123,8 @@ trait PlotPyramidOptions extends StObject {
   var colorKey: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts) A series specific or series type specific color set to use
-    * instead of the global colors.
+    * (Highcharts, Highmaps) A series specific or series type specific color
+    * set to use instead of the global colors.
     */
   var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.undefined
   
@@ -135,7 +136,7 @@ trait PlotPyramidOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.undefined
+  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
@@ -171,6 +172,15 @@ trait PlotPyramidOptions extends StObject {
   var crisp: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highstock) Cumulative Sum feature replaces points' values with the
+    * following formula: `sum of all previous points' values + current point's
+    * value`. Works only for points in a visible range. Adds the
+    * `cumulativeSum` field to each point object that can be accessed e.g. in
+    * the tooltip.pointFormat.
+    */
+  var cumulative: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts) You can set the cursor to "pointer" if you have click events
     * attached to the series, to signal to the user that the points and lines
     * can be clicked.
@@ -185,14 +195,19 @@ trait PlotPyramidOptions extends StObject {
     * customized functionality. Here you can add additional data for your own
     * event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
+  
+  /**
+    * (Highcharts) Indicates data is structured as columns instead of rows.
+    */
+  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Data grouping is the concept of sampling the data values into
     * larger blocks in order to ease readability and increase performance of
-    * the JavaScript charts. Highstock by default applies data grouping when
-    * the points become closer than a certain pixel value, determined by the
-    * `groupPixelWidth` option.
+    * the JavaScript charts. Highcharts Stock by default applies data grouping
+    * when the points become closer than a certain pixel value, determined by
+    * the `groupPixelWidth` option.
     *
     * If data grouping is applied, the grouping information of grouped points
     * can be read from the Point.dataGroup. If point options other than the
@@ -235,8 +250,8 @@ trait PlotPyramidOptions extends StObject {
   var enableMouseTracking: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) The end angle of the pie in degrees where 0 is top and 90 is
-    * right. Defaults to `startAngle` plus 360.
+    * (Highcharts, Highmaps) The end angle of the pie in degrees where 0 is top
+    * and 90 is right. Defaults to `startAngle` plus 360.
     */
   var endAngle: js.UndefOr[Double] = js.undefined
   
@@ -293,8 +308,9 @@ trait PlotPyramidOptions extends StObject {
   var height: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * (Highcharts) Equivalent to chart.ignoreHiddenSeries, this option tells
-    * whether the series shall be redrawn as if the hidden point were `null`.
+    * (Highcharts, Highmaps) Equivalent to chart.ignoreHiddenSeries, this
+    * option tells whether the series shall be redrawn as if the hidden point
+    * were `null`.
     *
     * The default value changed from `false` to `true` with Highcharts 3.0.
     */
@@ -364,9 +380,9 @@ trait PlotPyramidOptions extends StObject {
   var linkedTo: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts) The minimum size for a pie in response to auto margins. The
-    * pie will try to shrink to make room for data labels in side the plot
-    * area, but only to this size.
+    * (Highcharts, Highmaps) The minimum size for a pie in response to auto
+    * margins. The pie will try to shrink to make room for data labels in side
+    * the plot area, but only to this size.
     */
   var minSize: js.UndefOr[Double | String] = js.undefined
   
@@ -384,13 +400,19 @@ trait PlotPyramidOptions extends StObject {
     * (Highcharts) The pyramid neck width is zero by default, as opposed to the
     * funnel, which shares the same layout logic.
     */
-  var neckHeight: js.UndefOr[String] = js.undefined
+  var neckHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The pyramid neck width is zero by default, as opposed to the
     * funnel, which shares the same layout logic.
     */
-  var neckWidth: js.UndefOr[String] = js.undefined
+  var neckWidth: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts) Options for the _Series on point_ feature. Only `pie` and
+    * `sunburst` series are supported at this moment.
+    */
+  var onPoint: js.UndefOr[js.Object | PlotPyramidOnPointOptions] = js.undefined
   
   /**
     * (Highcharts) Opacity of a series parts: line, fill (e.g. area) and
@@ -404,8 +426,8 @@ trait PlotPyramidOptions extends StObject {
   var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   
   /**
-    * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
-    * individual series. Overrides the chart wide configuration.
+    * (Highcharts) Same as accessibility.series.descriptionFormatter, but for
+    * an individual series. Overrides the chart wide configuration.
     */
   var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
   
@@ -418,6 +440,18 @@ trait PlotPyramidOptions extends StObject {
     * option can be used to override the automatic value.
     */
   var pointRange: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) When true, X values in the data set are relative
+    * to the current `pointStart`, `pointInterval` and `pointIntervalUnit`
+    * settings. This allows compression of the data for datasets with irregular
+    * X values.
+    *
+    * The real X values are computed on the formula `f(x) = ax + b`, where `a`
+    * is the `pointInterval` (optionally with a time unit given by
+    * `pointIntervalUnit`), and `b` is the `pointStart`.
+    */
+  var relativeXValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) The pyramid is reversed by default, as opposed to the
@@ -447,8 +481,9 @@ trait PlotPyramidOptions extends StObject {
   var showCheckbox: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) Whether to display this particular series or series type in
-    * the legend. Since 2.1, pies are not shown in the legend by default.
+    * (Highcharts, Highmaps) Whether to display this particular series or
+    * series type in the legend. Since 2.1, pies are not shown in the legend by
+    * default.
     */
   var showInLegend: js.UndefOr[Boolean] = js.undefined
   
@@ -465,14 +500,14 @@ trait PlotPyramidOptions extends StObject {
   var skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) If a point is sliced, moved out from the center, how many
-    * pixels should it be moved?.
+    * (Highcharts, Highmaps) If a point is sliced, moved out from the center,
+    * how many pixels should it be moved?.
     */
   var slicedOffset: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts) The start angle of the pie slices in degrees where 0 is top
-    * and 90 right.
+    * (Highcharts, Highmaps) The start angle of the pie slices in degrees where
+    * 0 is top and 90 right.
     */
   var startAngle: js.UndefOr[Double] = js.undefined
   
@@ -482,15 +517,21 @@ trait PlotPyramidOptions extends StObject {
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   
   /**
-    * (Highcharts) Sticky tracking of mouse events. When true, the `mouseOut`
-    * event on a series isn't triggered until the mouse moves over another
-    * series, or out of the plot area. When false, the `mouseOut` event on a
-    * series is triggered when the mouse leaves the area around the series'
-    * graph or markers. This also implies the tooltip. When `stickyTracking` is
-    * false and `tooltip.shared` is false, the tooltip will be hidden when
-    * moving the mouse between series.
+    * (Highcharts, Highmaps) Sticky tracking of mouse events. When true, the
+    * `mouseOut` event on a series isn't triggered until the mouse moves over
+    * another series, or out of the plot area. When false, the `mouseOut` event
+    * on a series is triggered when the mouse leaves the area around the
+    * series' graph or markers. This also implies the tooltip. When
+    * `stickyTracking` is false and `tooltip.shared` is false, the tooltip will
+    * be hidden when moving the mouse between series.
     */
   var stickyTracking: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts) Thickness describing the ring size for a donut type chart,
+    * overriding innerSize.
+    */
+  var thickness: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) A configuration object for the tooltip rendering of each
@@ -558,7 +599,7 @@ object PlotPyramidOptions {
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    inline def setCenterVarargs(value: (Double | String)*): Self = StObject.set(x, "center", js.Array(value :_*))
+    inline def setCenterVarargs(value: (Double | String)*): Self = StObject.set(x, "center", js.Array(value*))
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -588,9 +629,9 @@ object PlotPyramidOptions {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value*))
     
-    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
     inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
@@ -610,13 +651,21 @@ object PlotPyramidOptions {
     
     inline def setCrispUndefined: Self = StObject.set(x, "crisp", js.undefined)
     
+    inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    
+    inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+    
     inline def setCursor(value: String | CursorValue): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    inline def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
+    
+    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
     
     inline def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
     
@@ -626,7 +675,7 @@ object PlotPyramidOptions {
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDataLabelsVarargs(value: SeriesPieDataLabelsOptionsObject*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(value: SeriesPieDataLabelsOptionsObject*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
@@ -676,13 +725,13 @@ object PlotPyramidOptions {
     
     inline def setJoinByUndefined: Self = StObject.set(x, "joinBy", js.undefined)
     
-    inline def setJoinByVarargs(value: String*): Self = StObject.set(x, "joinBy", js.Array(value :_*))
+    inline def setJoinByVarargs(value: String*): Self = StObject.set(x, "joinBy", js.Array(value*))
     
     inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setLastPrice(value: SeriesLastPriceOptionsObject): Self = StObject.set(x, "lastPrice", value.asInstanceOf[js.Any])
     
@@ -708,13 +757,17 @@ object PlotPyramidOptions {
     
     inline def setNavigatorOptionsUndefined: Self = StObject.set(x, "navigatorOptions", js.undefined)
     
-    inline def setNeckHeight(value: String): Self = StObject.set(x, "neckHeight", value.asInstanceOf[js.Any])
+    inline def setNeckHeight(value: Double): Self = StObject.set(x, "neckHeight", value.asInstanceOf[js.Any])
     
     inline def setNeckHeightUndefined: Self = StObject.set(x, "neckHeight", js.undefined)
     
-    inline def setNeckWidth(value: String): Self = StObject.set(x, "neckWidth", value.asInstanceOf[js.Any])
+    inline def setNeckWidth(value: Double): Self = StObject.set(x, "neckWidth", value.asInstanceOf[js.Any])
     
     inline def setNeckWidthUndefined: Self = StObject.set(x, "neckWidth", js.undefined)
+    
+    inline def setOnPoint(value: js.Object | PlotPyramidOnPointOptions): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
@@ -731,6 +784,10 @@ object PlotPyramidOptions {
     inline def setPointRangeUndefined: Self = StObject.set(x, "pointRange", js.undefined)
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    
+    inline def setRelativeXValue(value: Boolean): Self = StObject.set(x, "relativeXValue", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeXValueUndefined: Self = StObject.set(x, "relativeXValue", js.undefined)
     
     inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
@@ -775,6 +832,10 @@ object PlotPyramidOptions {
     inline def setStickyTracking(value: Boolean): Self = StObject.set(x, "stickyTracking", value.asInstanceOf[js.Any])
     
     inline def setStickyTrackingUndefined: Self = StObject.set(x, "stickyTracking", js.undefined)
+    
+    inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+    
+    inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
     inline def setTooltip(value: SeriesTooltipOptionsObject): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     

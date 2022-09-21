@@ -92,7 +92,7 @@ object mod {
       
       inline def setChildren(value: js.Array[NodeBase]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: NodeBase*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: NodeBase*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setType(value: document): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -128,7 +128,7 @@ object mod {
       
       inline def setChildren(value: js.Array[NodeBase]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: NodeBase*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: NodeBase*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

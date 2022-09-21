@@ -62,7 +62,7 @@ trait WorkItemType
 object WorkItemType {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     color: String,
     description: String,
     fieldInstances: js.Array[WorkItemTypeFieldInstance],
@@ -87,11 +87,11 @@ object WorkItemType {
     
     inline def setFieldInstances(value: js.Array[WorkItemTypeFieldInstance]): Self = StObject.set(x, "fieldInstances", value.asInstanceOf[js.Any])
     
-    inline def setFieldInstancesVarargs(value: WorkItemTypeFieldInstance*): Self = StObject.set(x, "fieldInstances", js.Array(value :_*))
+    inline def setFieldInstancesVarargs(value: WorkItemTypeFieldInstance*): Self = StObject.set(x, "fieldInstances", js.Array(value*))
     
     inline def setFields(value: js.Array[WorkItemTypeFieldInstance]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: WorkItemTypeFieldInstance*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: WorkItemTypeFieldInstance*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setIcon(value: WorkItemIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

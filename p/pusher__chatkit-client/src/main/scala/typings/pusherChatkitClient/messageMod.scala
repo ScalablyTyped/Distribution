@@ -6,7 +6,6 @@ import typings.pusherChatkitClient.pusherChatkitClientStrings.url
 import typings.pusherChatkitClient.roomMod.PusherRoom
 import typings.pusherChatkitClient.userMod.PusherUser
 import typings.std.Blob
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object messageMod {
     extends StObject
        with MessagePayload {
     
-    var customData: js.UndefOr[js.Any] = js.undefined
+    var customData: js.UndefOr[Any] = js.undefined
     
     var name: String
     
@@ -28,7 +27,7 @@ object messageMod {
     
     def url(): js.Promise[String]
     
-    def urlExpiry(): js.Promise[Date]
+    def urlExpiry(): js.Promise[js.Date]
   }
   object AttachmentPayload {
     
@@ -37,7 +36,7 @@ object messageMod {
       size: Double,
       `type`: String,
       url: () => js.Promise[String],
-      urlExpiry: () => js.Promise[Date]
+      urlExpiry: () => js.Promise[js.Date]
     ): AttachmentPayload = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = js.Any.fromFunction0(url), urlExpiry = js.Any.fromFunction0(urlExpiry))
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -46,7 +45,7 @@ object messageMod {
     
     extension [Self <: AttachmentPayload](x: Self) {
       
-      inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
       inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
       
@@ -58,7 +57,7 @@ object messageMod {
       
       inline def setUrl(value: () => js.Promise[String]): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
       
-      inline def setUrlExpiry(value: () => js.Promise[Date]): Self = StObject.set(x, "urlExpiry", js.Any.fromFunction0(value))
+      inline def setUrlExpiry(value: () => js.Promise[js.Date]): Self = StObject.set(x, "urlExpiry", js.Any.fromFunction0(value))
     }
   }
   
@@ -67,7 +66,7 @@ object messageMod {
     extends StObject
        with SendMessagePayload {
     
-    var customData: js.UndefOr[js.Any] = js.undefined
+    var customData: js.UndefOr[Any] = js.undefined
     
     // Optional if it can be inferred from the file
     var file: Blob
@@ -86,7 +85,7 @@ object messageMod {
     
     extension [Self <: FilePayload](x: Self) {
       
-      inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
       inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
       
@@ -129,7 +128,7 @@ object messageMod {
   
   trait MessageFromPusher extends StObject {
     
-    var createdAt: Date
+    var createdAt: js.Date
     
     var id: String
     
@@ -139,20 +138,20 @@ object messageMod {
   }
   object MessageFromPusher {
     
-    inline def apply(createdAt: Date, id: String, parts: js.Array[MessagePart], sender: PusherUser): MessageFromPusher = {
+    inline def apply(createdAt: js.Date, id: String, parts: js.Array[MessagePart], sender: PusherUser): MessageFromPusher = {
       val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageFromPusher]
     }
     
     extension [Self <: MessageFromPusher](x: Self) {
       
-      inline def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setParts(value: js.Array[MessagePart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      inline def setPartsVarargs(value: MessagePart*): Self = StObject.set(x, "parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: MessagePart*): Self = StObject.set(x, "parts", js.Array(value*))
       
       inline def setSender(value: PusherUser): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     }
@@ -192,7 +191,7 @@ object messageMod {
       size: Double,
       `type`: String,
       url: () => js.Promise[String],
-      urlExpiry: () => js.Promise[Date]
+      urlExpiry: () => js.Promise[js.Date]
     ): typings.pusherChatkitClient.messageMod.AttachmentPayload = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = js.Any.fromFunction0(url), urlExpiry = js.Any.fromFunction0(urlExpiry))
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -214,7 +213,7 @@ object messageMod {
   
   trait PusherMessage extends StObject {
     
-    var createdAt: Date
+    var createdAt: js.Date
     
     var id: Double
     
@@ -224,17 +223,17 @@ object messageMod {
     
     var sender: PusherUser
     
-    var updatedAt: Date
+    var updatedAt: js.Date
   }
   object PusherMessage {
     
     inline def apply(
-      createdAt: Date,
+      createdAt: js.Date,
       id: Double,
       parts: js.Array[MessagePart],
       room: PusherRoom,
       sender: PusherUser,
-      updatedAt: Date
+      updatedAt: js.Date
     ): PusherMessage = {
       val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
       __obj.asInstanceOf[PusherMessage]
@@ -242,19 +241,19 @@ object messageMod {
     
     extension [Self <: PusherMessage](x: Self) {
       
-      inline def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setParts(value: js.Array[MessagePart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      inline def setPartsVarargs(value: MessagePart*): Self = StObject.set(x, "parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: MessagePart*): Self = StObject.set(x, "parts", js.Array(value*))
       
       inline def setRoom(value: PusherRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
       
       inline def setSender(value: PusherUser): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
       
-      inline def setUpdatedAt(value: Date): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+      inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     }
   }
   

@@ -23,14 +23,14 @@ object ButtonsApiExportDataReturn {
     
     inline def setBody(value: js.Array[String]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setBodyVarargs(value: String*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: String*): Self = StObject.set(x, "body", js.Array(value*))
     
     inline def setFooter(value: js.Array[String]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    inline def setFooterVarargs(value: String*): Self = StObject.set(x, "footer", js.Array(value :_*))
+    inline def setFooterVarargs(value: String*): Self = StObject.set(x, "footer", js.Array(value*))
     
     inline def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
+    inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value*))
   }
 }

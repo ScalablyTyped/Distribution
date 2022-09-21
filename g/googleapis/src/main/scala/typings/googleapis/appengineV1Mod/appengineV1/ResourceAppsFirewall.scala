@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis/build/src/apis/appengine/v1", "appengine_v1.Resource$Apps$Firewall")
 @js.native
-class ResourceAppsFirewall protected () extends StObject {
+open class ResourceAppsFirewall protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native

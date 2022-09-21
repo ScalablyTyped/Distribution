@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DetectPiiEntitiesRequest extends StObject {
   
   /**
-    * The language of the input documents.
+    * The language of the input documents. Currently, English is the only valid language.
     */
   var LanguageCode: typings.awsSdk.comprehendMod.LanguageCode
   

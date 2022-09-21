@@ -36,6 +36,6 @@ object PlacementStrategiesListResponse {
     
     inline def setPlacementStrategiesUndefined: Self = StObject.set(x, "placementStrategies", js.undefined)
     
-    inline def setPlacementStrategiesVarargs(value: PlacementStrategy*): Self = StObject.set(x, "placementStrategies", js.Array(value :_*))
+    inline def setPlacementStrategiesVarargs(value: PlacementStrategy*): Self = StObject.set(x, "placementStrategies", js.Array(value*))
   }
 }

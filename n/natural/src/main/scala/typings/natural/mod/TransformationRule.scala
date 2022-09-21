@@ -36,7 +36,7 @@ object TransformationRule {
     
     inline def setLiteral(value: js.Array[String]): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
     
-    inline def setLiteralVarargs(value: String*): Self = StObject.set(x, "literal", js.Array(value :_*))
+    inline def setLiteralVarargs(value: String*): Self = StObject.set(x, "literal", js.Array(value*))
     
     inline def setNew_category(value: String): Self = StObject.set(x, "new_category", value.asInstanceOf[js.Any])
     

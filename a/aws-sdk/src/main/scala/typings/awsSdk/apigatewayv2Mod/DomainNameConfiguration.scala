@@ -24,10 +24,10 @@ trait DomainNameConfiguration extends StObject {
   /**
     * The timestamp when the certificate that was used by edge-optimized endpoint for this domain name was uploaded.
     */
-  var CertificateUploadDate: js.UndefOr[timestampIso8601] = js.undefined
+  var CertificateUploadDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The status of the domain name migration. The valid values are AVAILABLE and UPDATING. If the status is UPDATING, the domain cannot be modified further until the existing operation is complete. If it is AVAILABLE, the domain can be updated.
+    * The status of the domain name migration. The valid values are AVAILABLE, UPDATING, PENDING_CERTIFICATE_REIMPORT, and PENDING_OWNERSHIP_VERIFICATION. If the status is UPDATING, the domain cannot be modified further until the existing operation is complete. If it is AVAILABLE, the domain can be updated.
     */
   var DomainNameStatus: js.UndefOr[typings.awsSdk.apigatewayv2Mod.DomainNameStatus] = js.undefined
   
@@ -45,6 +45,11 @@ trait DomainNameConfiguration extends StObject {
     * The Amazon Route 53 Hosted Zone ID of the endpoint.
     */
   var HostedZoneId: js.UndefOr[string] = js.undefined
+  
+  /**
+    * The ARN of the public certificate issued by ACM to validate ownership of your custom domain. Only required when configuring mutual TLS and using an ACM imported or private CA certificate ARN as the regionalCertificateArn
+    */
+  var OwnershipVerificationCertificateArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The Transport Layer Security (TLS) version of the security policy for this domain name. The valid values are TLS_1_0 and TLS_1_2.
@@ -72,7 +77,7 @@ object DomainNameConfiguration {
     
     inline def setCertificateNameUndefined: Self = StObject.set(x, "CertificateName", js.undefined)
     
-    inline def setCertificateUploadDate(value: timestampIso8601): Self = StObject.set(x, "CertificateUploadDate", value.asInstanceOf[js.Any])
+    inline def setCertificateUploadDate(value: js.Date): Self = StObject.set(x, "CertificateUploadDate", value.asInstanceOf[js.Any])
     
     inline def setCertificateUploadDateUndefined: Self = StObject.set(x, "CertificateUploadDate", js.undefined)
     
@@ -91,6 +96,10 @@ object DomainNameConfiguration {
     inline def setHostedZoneId(value: string): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
     inline def setHostedZoneIdUndefined: Self = StObject.set(x, "HostedZoneId", js.undefined)
+    
+    inline def setOwnershipVerificationCertificateArn(value: Arn): Self = StObject.set(x, "OwnershipVerificationCertificateArn", value.asInstanceOf[js.Any])
+    
+    inline def setOwnershipVerificationCertificateArnUndefined: Self = StObject.set(x, "OwnershipVerificationCertificateArn", js.undefined)
     
     inline def setSecurityPolicy(value: SecurityPolicy): Self = StObject.set(x, "SecurityPolicy", value.asInstanceOf[js.Any])
     

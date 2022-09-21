@@ -12,7 +12,7 @@ trait DescribeCapacityProvidersRequest extends StObject {
   var capacityProviders: js.UndefOr[StringList] = js.undefined
   
   /**
-    * Specifies whether or not you want to see the resource tags for the capacity provider. If TAGS is specified, the tags are included in the response. If this field is omitted, tags are not included in the response.
+    * Specifies whether or not you want to see the resource tags for the capacity provider. If TAGS is specified, the tags are included in the response. If this field is omitted, tags aren't included in the response.
     */
   var include: js.UndefOr[CapacityProviderFieldList] = js.undefined
   
@@ -39,13 +39,13 @@ object DescribeCapacityProvidersRequest {
     
     inline def setCapacityProvidersUndefined: Self = StObject.set(x, "capacityProviders", js.undefined)
     
-    inline def setCapacityProvidersVarargs(value: String*): Self = StObject.set(x, "capacityProviders", js.Array(value :_*))
+    inline def setCapacityProvidersVarargs(value: String*): Self = StObject.set(x, "capacityProviders", js.Array(value*))
     
     inline def setInclude(value: CapacityProviderFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    inline def setIncludeVarargs(value: CapacityProviderField*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: CapacityProviderField*): Self = StObject.set(x, "include", js.Array(value*))
     
     inline def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

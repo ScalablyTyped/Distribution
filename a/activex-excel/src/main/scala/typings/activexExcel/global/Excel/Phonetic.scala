@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Phonetic")
 @js.native
-/* private */ class Phonetic ()
+/* private */ open class Phonetic ()
   extends StObject
      with typings.activexExcel.Excel.Phonetic {
   
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Font: typings.activexExcel.Excel.Font = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Text: String = js.native

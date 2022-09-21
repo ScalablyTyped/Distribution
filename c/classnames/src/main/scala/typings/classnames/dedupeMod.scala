@@ -1,19 +1,20 @@
 package typings.classnames
 
-import org.scalablytyped.runtime.Shortcut
-import typings.classnames.typesMod.ClassNamesExport
+import typings.classnames.mod.ArgumentArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object dedupeMod extends Shortcut {
+object dedupeMod {
+  
+  /**
+    * A simple JavaScript utility for conditionally joining classNames together.
+    */
+  inline def apply(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type classNames.ArgumentArray is not an array type */ args: ArgumentArray
+  ): String = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("classnames/dedupe", JSImport.Namespace)
   @js.native
-  val ^ : ClassNamesExport = js.native
-  
-  type _To = ClassNamesExport
-  
-  /* This means you don't have to write `^`, but can instead just say `dedupeMod.foo` */
-  override def _to: ClassNamesExport = ^
+  val ^ : js.Any = js.native
 }

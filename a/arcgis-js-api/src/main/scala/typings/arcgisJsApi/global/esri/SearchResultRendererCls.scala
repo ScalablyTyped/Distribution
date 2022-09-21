@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchResultRenderer.html)
   */
-class SearchResultRendererCls ()
+open class SearchResultRendererCls ()
   extends StObject
      with typings.arcgisJsApi.esri.SearchResultRenderer {
   def this(properties: SearchResultRendererProperties) = this()

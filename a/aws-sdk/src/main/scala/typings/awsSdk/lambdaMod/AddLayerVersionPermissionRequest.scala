@@ -22,7 +22,7 @@ trait AddLayerVersionPermissionRequest extends StObject {
   var OrganizationId: js.UndefOr[typings.awsSdk.lambdaMod.OrganizationId] = js.undefined
   
   /**
-    * An account ID, or * to grant permission to all AWS accounts.
+    * An account ID, or * to grant layer usage permission to all accounts in an organization, or all Amazon Web Services accounts (if organizationId is not specified). For the last case, make sure that you really do want all Amazon Web Services accounts to have usage permission to this layer. 
     */
   var Principal: LayerPermissionAllowedPrincipal
   

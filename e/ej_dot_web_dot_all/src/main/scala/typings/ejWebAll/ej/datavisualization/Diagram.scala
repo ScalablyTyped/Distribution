@@ -22,56 +22,56 @@ trait Diagram
     * @param {any} a JSON to define a node/connector or an array of nodes and connector
     * @returns {boolean}
     */
-  def add(node: js.Any): Boolean = js.native
+  def add(node: Any): Boolean = js.native
   
   /** Add a label to a node at runtime
     * @param {string} name of the node to which label will be added
     * @param {any} JSON for the new label to be added
     * @returns {void}
     */
-  def addLabel(nodeName: String, newLabel: js.Any): Unit = js.native
+  def addLabel(nodeName: String, newLabel: Any): Unit = js.native
   
   /** Add dynamic Lanes to swimlane at runtime
     * @param {any} JSON for the new lane to be added
     * @param {number} Index value to add the lane in swimlane
     * @returns {void}
     */
-  def addLane(lane: js.Any, index: Double): Unit = js.native
+  def addLane(lane: Any, index: Double): Unit = js.native
   
   /** Add a collection of layers can be added to the existing diagram layer at runtime.
     * @param {any[]} a collection of layers to be added to the existing diagram layers.
     * @returns {void}
     */
-  def addLayers(layers: js.Array[js.Any]): Unit = js.native
+  def addLayers(layers: js.Array[Any]): Unit = js.native
   
   /** Add a collection of diagram elements can be added to the specific diagram layer.
     * @param {string} specifies the name of the layer to the nodes will be added.
     * @param {any[]} collection of diagram elements to be added to the specific layer.
     * @returns {void}
     */
-  def addNodeToLayer(layerName: String, nodes: js.Array[js.Any]): Unit = js.native
+  def addNodeToLayer(layerName: String, nodes: js.Array[Any]): Unit = js.native
   
   /** Add a phase to a swimlane at runtime
     * @param {string} name of the swimlane to which the phase will be added
     * @param {any} JSON object to define the phase to be added
     * @returns {void}
     */
-  def addPhase(name: String, options: js.Any): Unit = js.native
+  def addPhase(name: String, options: Any): Unit = js.native
   
   /** Add a collection of ports to the node specified by name
     * @param {string} name of the node to which the ports have to be added
     * @param {any[]} a collection of ports to be added to the specified node
     * @returns {void}
     */
-  def addPorts(name: String, ports: js.Array[js.Any]): Unit = js.native
+  def addPorts(name: String, ports: js.Array[Any]): Unit = js.native
   
   /** Add the specified node to selection list
     * @param {any} the node to be selected
     * @param {boolean} to define whether to clear the existing selection or not
     * @returns {void}
     */
-  def addSelection(node: js.Any): Unit = js.native
-  def addSelection(node: js.Any, clearSelection: Boolean): Unit = js.native
+  def addSelection(node: Any): Unit = js.native
+  def addSelection(node: Any, clearSelection: Boolean): Unit = js.native
   
   /** Align the selected objects based on the reference object and direction
     * @param {string} to specify the direction towards which the selected objects are to be aligned("left","right",top","bottom")
@@ -83,13 +83,13 @@ trait Diagram
     * @param {any} the rectangular region that is to be brought into diagram viewport
     * @returns {void}
     */
-  def bringIntoView(rect: js.Any): Unit = js.native
+  def bringIntoView(rect: Any): Unit = js.native
   
   /** Bring the specified portion of the diagram content to the center of the diagram viewport
     * @param {any} the rectangular region that is to be brought to the center of diagram viewport
     * @returns {void}
     */
-  def bringToCenter(rect: js.Any): Unit = js.native
+  def bringToCenter(rect: Any): Unit = js.native
   
   /** Visually move the selected object over all other intersected objects
     * @returns {void}
@@ -114,7 +114,7 @@ trait Diagram
   /** Copy the selected object to internal clipboard and get the copied object
     * @returns {any}
     */
-  def copy(): js.Any = js.native
+  def copy(): Any = js.native
   
   /** Cut the selected object from diagram to diagram internal clipboard
     * @returns {void}
@@ -142,7 +142,7 @@ trait Diagram
     * @param {string} name of the node/connector that is to be identified
     * @returns {any}
     */
-  def findNode(name: String): js.Any = js.native
+  def findNode(name: String): Any = js.native
   
   /** Fit the diagram content into diagram viewport
     * @param {ej.datavisualization.Diagram.FitMode} to set the mode of fit to command.
@@ -151,13 +151,13 @@ trait Diagram
     * @returns {void}
     */
   def fitToPage(): Unit = js.native
-  def fitToPage(mode: Unit, region: Unit, margin: js.Any): Unit = js.native
+  def fitToPage(mode: Unit, region: Unit, margin: Any): Unit = js.native
   def fitToPage(mode: Unit, region: Region): Unit = js.native
-  def fitToPage(mode: Unit, region: Region, margin: js.Any): Unit = js.native
+  def fitToPage(mode: Unit, region: Region, margin: Any): Unit = js.native
   def fitToPage(mode: FitMode): Unit = js.native
-  def fitToPage(mode: FitMode, region: Unit, margin: js.Any): Unit = js.native
+  def fitToPage(mode: FitMode, region: Unit, margin: Any): Unit = js.native
   def fitToPage(mode: FitMode, region: Region): Unit = js.native
-  def fitToPage(mode: FitMode, region: Region, margin: js.Any): Unit = js.native
+  def fitToPage(mode: FitMode, region: Region, margin: Any): Unit = js.native
   
   /** Get the bounds of the diagram.
     * @returns {void}
@@ -170,7 +170,7 @@ trait Diagram
     * @returns {void}
     */
   def getDiagramContent(): Unit = js.native
-  def getDiagramContent(styleSheets: js.Array[js.Any]): Unit = js.native
+  def getDiagramContent(styleSheets: js.Array[Any]): Unit = js.native
   
   /** Group the selected nodes and connectors
     * @returns {void}
@@ -183,8 +183,8 @@ trait Diagram
     * @param {number} index to insert the label into the node
     * @returns {void}
     */
-  def insertLabel(name: String, label: js.Any): Unit = js.native
-  def insertLabel(name: String, label: js.Any, index: Double): Unit = js.native
+  def insertLabel(name: String, label: Any): Unit = js.native
+  def insertLabel(name: String, label: Any, index: Double): Unit = js.native
   
   /** Refresh the diagram with the specified layout
     * @returns {void}
@@ -195,7 +195,7 @@ trait Diagram
     * @param {any} JSON data to load the diagram
     * @returns {void}
     */
-  def load(data: js.Any): Unit = js.native
+  def load(data: Any): Unit = js.native
   
   @JSName("model")
   var model_Diagram: Model = js.native
@@ -219,8 +219,8 @@ trait Diagram
     * @returns {void}
     */
   def paste(): Unit = js.native
-  def paste(`object`: js.Any): Unit = js.native
-  def paste(`object`: js.Any, rename: Boolean): Unit = js.native
+  def paste(`object`: Any): Unit = js.native
+  def paste(`object`: Any, rename: Boolean): Unit = js.native
   def paste(`object`: Unit, rename: Boolean): Unit = js.native
   
   /** Print the diagram as image
@@ -253,40 +253,40 @@ trait Diagram
     * @returns {void}
     */
   def remove(): Unit = js.native
-  def remove(node: js.Any): Unit = js.native
+  def remove(node: Any): Unit = js.native
   
   /** Add a collection of ports to the node specified by name
     * @param {string} name of the node to which the ports have to be added
     * @param {any[]} a collection of labels to be deleted from the specified node
     * @returns {void}
     */
-  def removeLabels(name: String, labels: js.Array[js.Any]): Unit = js.native
+  def removeLabels(name: String, labels: js.Array[Any]): Unit = js.native
   
   /** Remove the collection of layers from the diagram layers.
     * @param {any[]} collection of layers to be removed from diagram layer.
     * @returns {void}
     */
-  def removeLayers(layers: js.Array[js.Any]): Unit = js.native
+  def removeLayers(layers: js.Array[Any]): Unit = js.native
   
   /** Remove the collection of nodes from the specific layer.
     * @param {string} Specifies the layer name to the node will be removed.
     * @param {any[]} collection of diagram elements name to be removed from specific layer.
     * @returns {void}
     */
-  def removeNodeToLayer(layerName: String, nodes: js.Array[js.Any]): Unit = js.native
+  def removeNodeToLayer(layerName: String, nodes: js.Array[Any]): Unit = js.native
   
   /** Remove the collection of ports from the specified node.
     * @param {string} name of the node to which the ports have to be added
     * @param {any[]} a collection of ports to be deleted from the specified node
     * @returns {void}
     */
-  def removePorts(name: String, ports: js.Array[js.Any]): Unit = js.native
+  def removePorts(name: String, ports: js.Array[Any]): Unit = js.native
   
   /** Remove a particular object from selection list
     * @param {any} the node/connector to be removed from selection list
     * @returns {void}
     */
-  def removeSelection(node: js.Any): Unit = js.native
+  def removeSelection(node: Any): Unit = js.native
   
   /** Scale the selected objects to the height of the first selected object
     * @returns {void}
@@ -306,13 +306,13 @@ trait Diagram
   /** Returns the diagram as serialized JSON
     * @returns {any}
     */
-  def save(): js.Any = js.native
+  def save(): Any = js.native
   
   /** Bring the node into view
     * @param {any} the node/connector to be brought into view
     * @returns {void}
     */
-  def scrollToNode(node: js.Any): Unit = js.native
+  def scrollToNode(node: Any): Unit = js.native
   
   /** Select all nodes and connector in diagram
     * @returns {void}
@@ -344,7 +344,7 @@ trait Diagram
     * @param {any} to be edited
     * @returns {void}
     */
-  def startLabelEdit(node: js.Any, label: js.Any): Unit = js.native
+  def startLabelEdit(node: Any, label: Any): Unit = js.native
   
   /** Reverse the last action that was performed
     * @returns {void}
@@ -360,14 +360,14 @@ trait Diagram
     * @param {any} JSON to specify the diagram properties that have to be modified
     * @returns {void}
     */
-  def update(options: js.Any): Unit = js.native
+  def update(options: Any): Unit = js.native
   
   /** Update Connectors at runtime
     * @param {string} name of the connector to be updated
     * @param {any} JSON to specify the connector properties that have to be updated
     * @returns {void}
     */
-  def updateConnector(name: String, options: js.Any): Unit = js.native
+  def updateConnector(name: String, options: Any): Unit = js.native
   
   /** Update the given label at runtime
     * @param {string} the name of node/connector which contains the label to be updated
@@ -375,21 +375,21 @@ trait Diagram
     * @param {any} JSON to specify the label properties that have to be updated
     * @returns {any}
     */
-  def updateLabel(nodeName: String, label: js.Any, options: js.Any): js.Any = js.native
+  def updateLabel(nodeName: String, label: Any, options: Any): Any = js.native
   
   /** Update the given layer at run time.
     * @param {string} the name of layer to be updated
     * @param {any} the layer object to be modified
     * @returns {void}
     */
-  def updateLayer(layerName: String, options: js.Any): Unit = js.native
+  def updateLayer(layerName: String, options: Any): Unit = js.native
   
   /** Update nodes at runtime
     * @param {string} name of the node that is to be updated
     * @param {any} JSON to specify the properties of node that have to be updated
     * @returns {void}
     */
-  def updateNode(name: String, options: js.Any): Unit = js.native
+  def updateNode(name: String, options: Any): Unit = js.native
   
   /** Update a port with its modified properties at runtime
     * @param {string} the name of node which contains the port to be updated
@@ -397,7 +397,7 @@ trait Diagram
     * @param {any} JSON to specify the properties of the port that have to be updated
     * @returns {void}
     */
-  def updatePort(nodeName: String, port: js.Any, options: js.Any): Unit = js.native
+  def updatePort(nodeName: String, port: Any, options: Any): Unit = js.native
   
   /** Update the specified node as selected object
     * @param {string} name of the node to be updated as selected object
@@ -416,7 +416,7 @@ trait Diagram
     * @param {any} node/connector with respect to which, the user handles have to be updated
     * @returns {void}
     */
-  def updateUserHandles(node: js.Any): Unit = js.native
+  def updateUserHandles(node: Any): Unit = js.native
   
   /** Update the diagram viewport at runtime
     * @returns {void}
@@ -427,7 +427,7 @@ trait Diagram
     * @param {any} to be upgraded
     * @returns {void}
     */
-  def upgrade(data: js.Any): Unit = js.native
+  def upgrade(data: Any): Unit = js.native
   
   /** Used to zoomIn/zoomOut diagram
     * @param {Diagram.Zoom} options to zoom the diagram(zoom factor, zoomIn/zoomOut)
@@ -3426,11 +3426,11 @@ object Diagram {
     
     /** parameter returns the clicked node, connector or diagram
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the event triggered
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the horizontal coordinate of the mouse pointer, relative to the diagram
       */
@@ -3465,11 +3465,11 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -3509,11 +3509,11 @@ object Diagram {
     
     /** A method that defines whether the command is executable at the moment or not.
       */
-    var canExecute: js.UndefOr[js.Any] = js.undefined
+    var canExecute: js.UndefOr[Any] = js.undefined
     
     /** A method that defines what to be executed when the key combination is recognized.
       */
-    var execute: js.UndefOr[js.Any] = js.undefined
+    var execute: js.UndefOr[Any] = js.undefined
     
     /** Defines a combination of keys and key modifiers, on recognition of which the command will be executed
       */
@@ -3522,7 +3522,7 @@ object Diagram {
     /** Defines any additional parameters that are required at runtime
       * @Default {null}
       */
-    var parameter: js.UndefOr[js.Any] = js.undefined
+    var parameter: js.UndefOr[Any] = js.undefined
   }
   object CommandManagerCommands {
     
@@ -3533,11 +3533,11 @@ object Diagram {
     
     extension [Self <: CommandManagerCommands](x: Self) {
       
-      inline def setCanExecute(value: js.Any): Self = StObject.set(x, "canExecute", value.asInstanceOf[js.Any])
+      inline def setCanExecute(value: Any): Self = StObject.set(x, "canExecute", value.asInstanceOf[js.Any])
       
       inline def setCanExecuteUndefined: Self = StObject.set(x, "canExecute", js.undefined)
       
-      inline def setExecute(value: js.Any): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
+      inline def setExecute(value: Any): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
       
       inline def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
       
@@ -3545,7 +3545,7 @@ object Diagram {
       
       inline def setGestureUndefined: Self = StObject.set(x, "gesture", js.undefined)
       
-      inline def setParameter(value: js.Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+      inline def setParameter(value: Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
       
       inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     }
@@ -3598,11 +3598,11 @@ object Diagram {
     
     /** parameter returns the connection that is changed between nodes, ports or points
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the new source port or target port of the connector
       */
-    var port: js.UndefOr[js.Any] = js.undefined
+    var port: js.UndefOr[Any] = js.undefined
   }
   object ConnectionChangeEventArgs {
     
@@ -3625,11 +3625,11 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setPort(value: js.Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
@@ -3640,7 +3640,7 @@ object Diagram {
     /** To maintain additional information about connectors
       * @Default {null}
       */
-    var addInfo: js.UndefOr[js.Any] = js.undefined
+    var addInfo: js.UndefOr[Any] = js.undefined
     
     /** Defines the width of the line bridges
       * @Default {10}
@@ -3722,7 +3722,7 @@ object Diagram {
     /** Defines the size and preview size of the node to add that to symbol palette. To explore palette item, refer Palette Item
       * @Default {null}
       */
-    var paletteItem: js.UndefOr[js.Any] = js.undefined
+    var paletteItem: js.UndefOr[Any] = js.undefined
     
     /** Sets the parent name of the connector.
       */
@@ -3787,7 +3787,7 @@ object Diagram {
     /** Defines the tooltip that should be shown when the mouse hovers over connector. For tooltip properties, refer Tooltip
       * @Default {null}
       */
-    var tooltip: js.UndefOr[js.Any] = js.undefined
+    var tooltip: js.UndefOr[Any] = js.undefined
     
     /** To set the vertical alignment of connector (Applicable,if the parent is group).
       * @Default {ej.datavisualization.Diagram.VerticalAlignment.Top}
@@ -3813,7 +3813,7 @@ object Diagram {
     
     extension [Self <: Connector](x: Self) {
       
-      inline def setAddInfo(value: js.Any): Self = StObject.set(x, "addInfo", value.asInstanceOf[js.Any])
+      inline def setAddInfo(value: Any): Self = StObject.set(x, "addInfo", value.asInstanceOf[js.Any])
       
       inline def setAddInfoUndefined: Self = StObject.set(x, "addInfo", js.undefined)
       
@@ -3841,7 +3841,7 @@ object Diagram {
       
       inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      inline def setLabelsVarargs(value: ConnectorsLabel*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: ConnectorsLabel*): Self = StObject.set(x, "labels", js.Array(value*))
       
       inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
       
@@ -3883,7 +3883,7 @@ object Diagram {
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setPaletteItem(value: js.Any): Self = StObject.set(x, "paletteItem", value.asInstanceOf[js.Any])
+      inline def setPaletteItem(value: Any): Self = StObject.set(x, "paletteItem", value.asInstanceOf[js.Any])
       
       inline def setPaletteItemUndefined: Self = StObject.set(x, "paletteItem", js.undefined)
       
@@ -3895,7 +3895,7 @@ object Diagram {
       
       inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
       
-      inline def setSegmentsVarargs(value: ConnectorsSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+      inline def setSegmentsVarargs(value: ConnectorsSegment*): Self = StObject.set(x, "segments", js.Array(value*))
       
       inline def setShape(value: ConnectorsShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
@@ -3941,7 +3941,7 @@ object Diagram {
       
       inline def setTargetPortUndefined: Self = StObject.set(x, "targetPort", js.undefined)
       
-      inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
       inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
@@ -3975,7 +3975,7 @@ object Diagram {
     
     /** parameter returns the connector that is to be added or deleted
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** triggers before and after adding the connector in the diagram which can be differentiated through `state` argument. We can cancel the event only before adding the connector.
       */
@@ -4002,7 +4002,7 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -4028,19 +4028,19 @@ object Diagram {
     
     /** returns the connector, the source point of which is being dragged
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the source node of the element
       */
-    var node: js.UndefOr[js.Any] = js.undefined
+    var node: js.UndefOr[Any] = js.undefined
     
     /** returns the source point of the element
       */
-    var point: js.UndefOr[js.Any] = js.undefined
+    var point: js.UndefOr[Any] = js.undefined
     
     /** returns the source port of the element
       */
-    var port: js.UndefOr[js.Any] = js.undefined
+    var port: js.UndefOr[Any] = js.undefined
   }
   object ConnectorSourceChangeEventArgs {
     
@@ -4063,19 +4063,19 @@ object Diagram {
       
       inline def setDragStateUndefined: Self = StObject.set(x, "dragState", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       
-      inline def setPoint(value: js.Any): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+      inline def setPoint(value: Any): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       
       inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
       
-      inline def setPort(value: js.Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
@@ -4097,19 +4097,19 @@ object Diagram {
     
     /** parameter returns the connector, the target point of which is being dragged
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the target node of the element
       */
-    var node: js.UndefOr[js.Any] = js.undefined
+    var node: js.UndefOr[Any] = js.undefined
     
     /** returns the target point of the element
       */
-    var point: js.UndefOr[js.Any] = js.undefined
+    var point: js.UndefOr[Any] = js.undefined
     
     /** returns the target port of the element
       */
-    var port: js.UndefOr[js.Any] = js.undefined
+    var port: js.UndefOr[Any] = js.undefined
   }
   object ConnectorTargetChangeEventArgs {
     
@@ -4132,19 +4132,19 @@ object Diagram {
       
       inline def setDragStateUndefined: Self = StObject.set(x, "dragState", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       
-      inline def setPoint(value: js.Any): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+      inline def setPoint(value: Any): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       
       inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
       
-      inline def setPort(value: js.Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
@@ -4244,7 +4244,7 @@ object Diagram {
     /** Sets the fraction/ratio(relative to connector) that defines the position of the label
       * @Default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
       */
-    var offset: js.UndefOr[js.Any] = js.undefined
+    var offset: js.UndefOr[Any] = js.undefined
     
     /** Defines the transparency of labels
       * @Default {1}
@@ -4254,7 +4254,7 @@ object Diagram {
     /** Sets the padding for connector label.
       * @Default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
       */
-    var padding: js.UndefOr[js.Any] = js.undefined
+    var padding: js.UndefOr[Any] = js.undefined
     
     /** Defines whether the label is editable or not
       * @Default {false}
@@ -4391,7 +4391,7 @@ object Diagram {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
@@ -4399,7 +4399,7 @@ object Diagram {
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
@@ -4581,12 +4581,12 @@ object Diagram {
     /** Describes the length and angle between the first control point and the start point of bezier segment
       * @Default {null}
       */
-    var vector1: js.UndefOr[js.Any] = js.undefined
+    var vector1: js.UndefOr[Any] = js.undefined
     
     /** Describes the length and angle between the second control point and end point of bezier segment
       * @Default {null}
       */
-    var vector2: js.UndefOr[js.Any] = js.undefined
+    var vector2: js.UndefOr[Any] = js.undefined
   }
   object ConnectorsSegment {
     
@@ -4621,11 +4621,11 @@ object Diagram {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setVector1(value: js.Any): Self = StObject.set(x, "vector1", value.asInstanceOf[js.Any])
+      inline def setVector1(value: Any): Self = StObject.set(x, "vector1", value.asInstanceOf[js.Any])
       
       inline def setVector1Undefined: Self = StObject.set(x, "vector1", js.undefined)
       
-      inline def setVector2(value: js.Any): Self = StObject.set(x, "vector2", value.asInstanceOf[js.Any])
+      inline def setVector2(value: Any): Self = StObject.set(x, "vector2", value.asInstanceOf[js.Any])
       
       inline def setVector2Undefined: Self = StObject.set(x, "vector2", js.undefined)
     }
@@ -5008,7 +5008,7 @@ object Diagram {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: ContextMenuItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: ContextMenuItem*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setShowCustomMenuItemsOnly(value: Boolean): Self = StObject.set(x, "showCustomMenuItemsOnly", value.asInstanceOf[js.Any])
       
@@ -5024,11 +5024,11 @@ object Diagram {
     
     /** parameter returns the actual arguments from context menu
       */
-    var contextmenu: js.UndefOr[js.Any] = js.undefined
+    var contextmenu: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the diagram object
       */
-    var diagram: js.UndefOr[js.Any] = js.undefined
+    var diagram: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the id of the diagram
       */
@@ -5036,11 +5036,11 @@ object Diagram {
     
     /** parameter returns the actual click event arguments that explains which button is clicked
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the object that was clicked
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the type of the event triggered
       */
@@ -5059,11 +5059,11 @@ object Diagram {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContextmenu(value: js.Any): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
+      inline def setContextmenu(value: Any): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
       
       inline def setContextmenuUndefined: Self = StObject.set(x, "contextmenu", js.undefined)
       
-      inline def setDiagram(value: js.Any): Self = StObject.set(x, "diagram", value.asInstanceOf[js.Any])
+      inline def setDiagram(value: Any): Self = StObject.set(x, "diagram", value.asInstanceOf[js.Any])
       
       inline def setDiagramId(value: String): Self = StObject.set(x, "diagramId", value.asInstanceOf[js.Any])
       
@@ -5071,11 +5071,11 @@ object Diagram {
       
       inline def setDiagramUndefined: Self = StObject.set(x, "diagram", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -5101,11 +5101,11 @@ object Diagram {
     
     /** parameter returns the element of the object that was clicked
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the model of the diagram
       */
-    var events: js.UndefOr[js.Any] = js.undefined
+    var events: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the id of the selected context menu item
       */
@@ -5121,11 +5121,11 @@ object Diagram {
     
     /** parameter returns the object that is selected
       */
-    var selectedItem: js.UndefOr[js.Any] = js.undefined
+    var selectedItem: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the object that was clicked
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the text of the selected context menu item
       */
@@ -5152,11 +5152,11 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
@@ -5172,11 +5172,11 @@ object Diagram {
       
       inline def setParentTextUndefined: Self = StObject.set(x, "parentText", js.undefined)
       
-      inline def setSelectedItem(value: js.Any): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      inline def setSelectedItem(value: Any): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -5206,7 +5206,7 @@ object Diagram {
     /** Defines the collection of sub items for the context menu items
       * @Default {[]}
       */
-    var subItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var subItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the text for the collection of context menu item
       * @Default {null}
@@ -5234,11 +5234,11 @@ object Diagram {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setSubItems(value: js.Array[js.Any]): Self = StObject.set(x, "subItems", value.asInstanceOf[js.Any])
+      inline def setSubItems(value: js.Array[Any]): Self = StObject.set(x, "subItems", value.asInstanceOf[js.Any])
       
       inline def setSubItemsUndefined: Self = StObject.set(x, "subItems", js.undefined)
       
-      inline def setSubItemsVarargs(value: js.Any*): Self = StObject.set(x, "subItems", js.Array(value :_*))
+      inline def setSubItemsVarargs(value: Any*): Self = StObject.set(x, "subItems", js.Array(value*))
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -5254,7 +5254,7 @@ object Diagram {
     
     /** Returns the diagram model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -5273,7 +5273,7 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -5298,12 +5298,12 @@ object Diagram {
     /** Specifies the custom fields to get the updated data from client side to the server side
       * @Default {[]}
       */
-    var customFields: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var customFields: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the data source either as a collection of objects or as an instance of ej.DataManager
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Sets the unique id of the data source items
       */
@@ -5345,13 +5345,13 @@ object Diagram {
       
       inline def setCrudActionUndefined: Self = StObject.set(x, "crudAction", js.undefined)
       
-      inline def setCustomFields(value: js.Array[js.Any]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+      inline def setCustomFields(value: js.Array[Any]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
       
       inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
       
-      inline def setCustomFieldsVarargs(value: js.Any*): Self = StObject.set(x, "customFields", js.Array(value :_*))
+      inline def setCustomFieldsVarargs(value: Any*): Self = StObject.set(x, "customFields", js.Array(value*))
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -5387,7 +5387,7 @@ object Diagram {
     /** Specifies the custom fields to get the updated data from client side to the server side
       * @Default {[]}
       */
-    var customFields: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var customFields: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Sets the datasource for the connection datasource settings items.
       * @Default {null}
@@ -5442,11 +5442,11 @@ object Diagram {
       
       inline def setCrudActionUndefined: Self = StObject.set(x, "crudAction", js.undefined)
       
-      inline def setCustomFields(value: js.Array[js.Any]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+      inline def setCustomFields(value: js.Array[Any]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
       
       inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
       
-      inline def setCustomFieldsVarargs(value: js.Any*): Self = StObject.set(x, "customFields", js.Array(value :_*))
+      inline def setCustomFieldsVarargs(value: Any*): Self = StObject.set(x, "customFields", js.Array(value*))
       
       inline def setDataSource(value: String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
@@ -5585,17 +5585,17 @@ object Diagram {
     /** Initializes the default connector properties
       * @Default {null}
       */
-    var connector: js.UndefOr[js.Any] = js.undefined
+    var connector: js.UndefOr[Any] = js.undefined
     
     /** Initializes the default properties of groups
       * @Default {null}
       */
-    var group: js.UndefOr[js.Any] = js.undefined
+    var group: js.UndefOr[Any] = js.undefined
     
     /** Initializes the default properties for nodes
       * @Default {null}
       */
-    var node: js.UndefOr[js.Any] = js.undefined
+    var node: js.UndefOr[Any] = js.undefined
   }
   object DefaultSettings {
     
@@ -5606,15 +5606,15 @@ object Diagram {
     
     extension [Self <: DefaultSettings](x: Self) {
       
-      inline def setConnector(value: js.Any): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+      inline def setConnector(value: Any): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
       
       inline def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
       
-      inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
       inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      inline def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     }
@@ -5624,7 +5624,7 @@ object Diagram {
     
     /** parameter returns the object that is actually clicked
       */
-    var actualObject: js.UndefOr[js.Any] = js.undefined
+    var actualObject: js.UndefOr[Any] = js.undefined
     
     /** parameter to specify whether or not to cancel the event
       */
@@ -5636,7 +5636,7 @@ object Diagram {
     
     /** parameter returns the selected object
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object DoubleClickEventArgs {
     
@@ -5647,7 +5647,7 @@ object Diagram {
     
     extension [Self <: DoubleClickEventArgs](x: Self) {
       
-      inline def setActualObject(value: js.Any): Self = StObject.set(x, "actualObject", value.asInstanceOf[js.Any])
+      inline def setActualObject(value: Any): Self = StObject.set(x, "actualObject", value.asInstanceOf[js.Any])
       
       inline def setActualObjectUndefined: Self = StObject.set(x, "actualObject", js.undefined)
       
@@ -5659,7 +5659,7 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -5677,7 +5677,7 @@ object Diagram {
     
     /** parameter returns the node or connector that is dragged into diagram
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object DragEnterEventArgs {
     
@@ -5696,7 +5696,7 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -5718,19 +5718,19 @@ object Diagram {
     
     /** parameter returns the node or connector that is being dragged
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the new position of the node/connector
       */
-    var newValue: js.UndefOr[js.Any] = js.undefined
+    var newValue: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the offset of the selected items
       */
-    var offset: js.UndefOr[js.Any] = js.undefined
+    var offset: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the previous position of the node/connector
       */
-    var oldValue: js.UndefOr[js.Any] = js.undefined
+    var oldValue: js.UndefOr[Any] = js.undefined
   }
   object DragEventArgs {
     
@@ -5753,19 +5753,19 @@ object Diagram {
       
       inline def setDragStateUndefined: Self = StObject.set(x, "dragState", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
       inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
       
-      inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
       inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
     }
@@ -5783,7 +5783,7 @@ object Diagram {
     
     /** parameter returns the node or connector that is dragged outside of the diagram
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object DragLeaveEventArgs {
     
@@ -5802,7 +5802,7 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -5824,19 +5824,19 @@ object Diagram {
     
     /** parameter returns the node or connector that is dragged over diagram
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the new position of the node/connector
       */
-    var newValue: js.UndefOr[js.Any] = js.undefined
+    var newValue: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the previous position of the node/connector
       */
-    var oldValue: js.UndefOr[js.Any] = js.undefined
+    var oldValue: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the node/connector over which the symbol is dragged
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
   }
   object DragOverEventArgs {
     
@@ -5859,19 +5859,19 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
       inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
       
-      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
       inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
@@ -5889,7 +5889,7 @@ object Diagram {
     
     /** parameter returns node or connector that is being dropped
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the enum which defines the type of the source
       */
@@ -5897,11 +5897,11 @@ object Diagram {
     
     /** parameter returns the object from where the element is dragged
       */
-    var source: js.UndefOr[js.Any] = js.undefined
+    var source: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the object over which the object will be dropped
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
   }
   object DropEventArgs {
     
@@ -5920,7 +5920,7 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -5928,11 +5928,11 @@ object Diagram {
       
       inline def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
@@ -5946,11 +5946,11 @@ object Diagram {
     
     /** parameter returns the editor element
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** Returns the diagram model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -5969,11 +5969,11 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -5987,7 +5987,7 @@ object Diagram {
     
     /** to export any custom region of diagram.
       */
-    var bounds: js.UndefOr[js.Any] = js.undefined
+    var bounds: js.UndefOr[Any] = js.undefined
     
     /** name of the file to be downloaded.
       */
@@ -5999,7 +5999,7 @@ object Diagram {
     
     /** to set margin to the exported data.
       */
-    var margin: js.UndefOr[js.Any] = js.undefined
+    var margin: js.UndefOr[Any] = js.undefined
     
     /** to export the diagram into multiple pages
       */
@@ -6030,7 +6030,7 @@ object Diagram {
     
     extension [Self <: ExportImageSettings](x: Self) {
       
-      inline def setBounds(value: js.Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
       inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
@@ -6042,7 +6042,7 @@ object Diagram {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
@@ -6080,15 +6080,15 @@ object Diagram {
     
     /** parameter returns the object that is added to/removed from a group
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the new parent group(if any) of the object
       */
-    var newParent: js.UndefOr[js.Any] = js.undefined
+    var newParent: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the old parent group(if any) of the object
       */
-    var oldParent: js.UndefOr[js.Any] = js.undefined
+    var oldParent: js.UndefOr[Any] = js.undefined
   }
   object GroupChangeEventArgs {
     
@@ -6107,15 +6107,15 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setNewParent(value: js.Any): Self = StObject.set(x, "newParent", value.asInstanceOf[js.Any])
+      inline def setNewParent(value: Any): Self = StObject.set(x, "newParent", value.asInstanceOf[js.Any])
       
       inline def setNewParentUndefined: Self = StObject.set(x, "newParent", js.undefined)
       
-      inline def setOldParent(value: js.Any): Self = StObject.set(x, "oldParent", value.asInstanceOf[js.Any])
+      inline def setOldParent(value: Any): Self = StObject.set(x, "oldParent", value.asInstanceOf[js.Any])
       
       inline def setOldParentUndefined: Self = StObject.set(x, "oldParent", js.undefined)
     }
@@ -6125,7 +6125,7 @@ object Diagram {
     
     /** A collection of objects that are changed in the last undo/redo
       */
-    var Source: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var Source: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** parameter to specify whether or not to cancel the event
       */
@@ -6137,7 +6137,7 @@ object Diagram {
     
     /** An array of objects, where each object represents the changes made in last undo/redo. To explore how the changes are defined, refer [Undo Redo Changes](#undo-redo-changes)
       */
-    var changes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var changes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** parameter returns the id of the diagram
       */
@@ -6160,21 +6160,21 @@ object Diagram {
       
       inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
       
-      inline def setChanges(value: js.Array[js.Any]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+      inline def setChanges(value: js.Array[Any]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
       inline def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
       
-      inline def setChangesVarargs(value: js.Any*): Self = StObject.set(x, "changes", js.Array(value :_*))
+      inline def setChangesVarargs(value: Any*): Self = StObject.set(x, "changes", js.Array(value*))
       
       inline def setDiagramId(value: String): Self = StObject.set(x, "diagramId", value.asInstanceOf[js.Any])
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setSource(value: js.Array[js.Any]): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+      inline def setSource(value: js.Array[Any]): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
       
       inline def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
       
-      inline def setSourceVarargs(value: js.Any*): Self = StObject.set(x, "Source", js.Array(value :_*))
+      inline def setSourceVarargs(value: Any*): Self = StObject.set(x, "Source", js.Array(value*))
     }
   }
   
@@ -6182,29 +6182,29 @@ object Diagram {
     
     /** A method that takes a history entry as argument and returns whether the specific entry can be popped or not
       */
-    var canPop: js.UndefOr[js.Any] = js.undefined
+    var canPop: js.UndefOr[Any] = js.undefined
     
     /** A method that ends grouping the changes
       */
-    var closeGroupAction: js.UndefOr[js.Any] = js.undefined
+    var closeGroupAction: js.UndefOr[Any] = js.undefined
     
     /** A method that removes the history of a recent change made in diagram
       */
-    var pop: js.UndefOr[js.Any] = js.undefined
+    var pop: js.UndefOr[Any] = js.undefined
     
     /** A method that allows to track the custom changes made in diagram
       */
-    var push: js.UndefOr[js.Any] = js.undefined
+    var push: js.UndefOr[Any] = js.undefined
     
     /** Defines what should be happened while trying to restore a custom change
       * @Default {null}
       */
-    var redo: js.UndefOr[js.Any] = js.undefined
+    var redo: js.UndefOr[Any] = js.undefined
     
     /** The redoStack property is used to get the number of redo actions to be stored on the history manager. Its an read-only property and the collection should not be modified.
       * @Default {[]}
       */
-    var redoStack: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var redoStack: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** The stackLimit property used to restrict the undo and redo actions to a certain limit.
       * @Default {null}
@@ -6213,16 +6213,16 @@ object Diagram {
     
     /** A method that starts to group the changes to revert/restore them in a single undo or redo
       */
-    var startGroupAction: js.UndefOr[js.Any] = js.undefined
+    var startGroupAction: js.UndefOr[Any] = js.undefined
     
     /** Defines what should be happened while trying to revert a custom change
       */
-    var undo: js.UndefOr[js.Any] = js.undefined
+    var undo: js.UndefOr[Any] = js.undefined
     
     /** The undoStack property is used to get the number of undo actions to be stored on the history manager. Its an read-only property and the collection should not be modified.
       * @Default {[]}
       */
-    var undoStack: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var undoStack: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object HistoryManager {
     
@@ -6233,29 +6233,29 @@ object Diagram {
     
     extension [Self <: HistoryManager](x: Self) {
       
-      inline def setCanPop(value: js.Any): Self = StObject.set(x, "canPop", value.asInstanceOf[js.Any])
+      inline def setCanPop(value: Any): Self = StObject.set(x, "canPop", value.asInstanceOf[js.Any])
       
       inline def setCanPopUndefined: Self = StObject.set(x, "canPop", js.undefined)
       
-      inline def setCloseGroupAction(value: js.Any): Self = StObject.set(x, "closeGroupAction", value.asInstanceOf[js.Any])
+      inline def setCloseGroupAction(value: Any): Self = StObject.set(x, "closeGroupAction", value.asInstanceOf[js.Any])
       
       inline def setCloseGroupActionUndefined: Self = StObject.set(x, "closeGroupAction", js.undefined)
       
-      inline def setPop(value: js.Any): Self = StObject.set(x, "pop", value.asInstanceOf[js.Any])
+      inline def setPop(value: Any): Self = StObject.set(x, "pop", value.asInstanceOf[js.Any])
       
       inline def setPopUndefined: Self = StObject.set(x, "pop", js.undefined)
       
-      inline def setPush(value: js.Any): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+      inline def setPush(value: Any): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
       
       inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
       
-      inline def setRedo(value: js.Any): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
+      inline def setRedo(value: Any): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
       
-      inline def setRedoStack(value: js.Array[js.Any]): Self = StObject.set(x, "redoStack", value.asInstanceOf[js.Any])
+      inline def setRedoStack(value: js.Array[Any]): Self = StObject.set(x, "redoStack", value.asInstanceOf[js.Any])
       
       inline def setRedoStackUndefined: Self = StObject.set(x, "redoStack", js.undefined)
       
-      inline def setRedoStackVarargs(value: js.Any*): Self = StObject.set(x, "redoStack", js.Array(value :_*))
+      inline def setRedoStackVarargs(value: Any*): Self = StObject.set(x, "redoStack", js.Array(value*))
       
       inline def setRedoUndefined: Self = StObject.set(x, "redo", js.undefined)
       
@@ -6263,17 +6263,17 @@ object Diagram {
       
       inline def setStackLimitUndefined: Self = StObject.set(x, "stackLimit", js.undefined)
       
-      inline def setStartGroupAction(value: js.Any): Self = StObject.set(x, "startGroupAction", value.asInstanceOf[js.Any])
+      inline def setStartGroupAction(value: Any): Self = StObject.set(x, "startGroupAction", value.asInstanceOf[js.Any])
       
       inline def setStartGroupActionUndefined: Self = StObject.set(x, "startGroupAction", js.undefined)
       
-      inline def setUndo(value: js.Any): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
+      inline def setUndo(value: Any): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
       
-      inline def setUndoStack(value: js.Array[js.Any]): Self = StObject.set(x, "undoStack", value.asInstanceOf[js.Any])
+      inline def setUndoStack(value: js.Array[Any]): Self = StObject.set(x, "undoStack", value.asInstanceOf[js.Any])
       
       inline def setUndoStackUndefined: Self = StObject.set(x, "undoStack", js.undefined)
       
-      inline def setUndoStackVarargs(value: js.Any*): Self = StObject.set(x, "undoStack", js.Array(value :_*))
+      inline def setUndoStackVarargs(value: Any*): Self = StObject.set(x, "undoStack", js.Array(value*))
       
       inline def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
     }
@@ -6283,7 +6283,7 @@ object Diagram {
     
     /** parameter returns the object that was actually clicked
       */
-    var actualObject: js.UndefOr[js.Any] = js.undefined
+    var actualObject: js.UndefOr[Any] = js.undefined
     
     /** parameter returns whether or not to cancel the drop event
       */
@@ -6295,11 +6295,11 @@ object Diagram {
     
     /** parameter returns the model of the diagram
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the object that is selected
       */
-    var selectedObject: js.UndefOr[js.Any] = js.undefined
+    var selectedObject: js.UndefOr[Any] = js.undefined
   }
   object ItemClickEventArgs {
     
@@ -6310,7 +6310,7 @@ object Diagram {
     
     extension [Self <: ItemClickEventArgs](x: Self) {
       
-      inline def setActualObject(value: js.Any): Self = StObject.set(x, "actualObject", value.asInstanceOf[js.Any])
+      inline def setActualObject(value: Any): Self = StObject.set(x, "actualObject", value.asInstanceOf[js.Any])
       
       inline def setActualObjectUndefined: Self = StObject.set(x, "actualObject", js.undefined)
       
@@ -6322,11 +6322,11 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      inline def setSelectedObject(value: js.Any): Self = StObject.set(x, "selectedObject", value.asInstanceOf[js.Any])
+      inline def setSelectedObject(value: Any): Self = StObject.set(x, "selectedObject", value.asInstanceOf[js.Any])
       
       inline def setSelectedObjectUndefined: Self = StObject.set(x, "selectedObject", js.undefined)
     }
@@ -6351,7 +6351,7 @@ object Diagram {
     /** To Specify the collection of the object names belongs to the layer.
       * @Default {[]}
       */
-    var objects: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var objects: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Enable or disable the specific layer objects to be visible on printing or exporting.
       * @Default {true}
@@ -6384,11 +6384,11 @@ object Diagram {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: js.Array[Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
       inline def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
       
-      inline def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
+      inline def setObjectsVarargs(value: Any*): Self = StObject.set(x, "objects", js.Array(value*))
       
       inline def setPrint(value: Boolean): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
       
@@ -6410,7 +6410,7 @@ object Diagram {
     /** Specifies the custom bounds to arrange/align the layout
       * @Default {ej.datavisualization.Diagram.Rectangle()}
       */
-    var bounds: js.UndefOr[js.Any] = js.undefined
+    var bounds: js.UndefOr[Any] = js.undefined
     
     /** Defines the fixed node with reference to which, the layout will be arranged and fixed node will not be repositioned
       */
@@ -6419,12 +6419,12 @@ object Diagram {
     /** Defines a method to customize the segments based on source and target nodes.
       * @Default {null}
       */
-    var getConnectorSegments: js.UndefOr[js.Any] = js.undefined
+    var getConnectorSegments: js.UndefOr[Any] = js.undefined
     
     /** Customizes the orientation of trees/sub trees. For orientations, see Chart Orientations. For chart types, see Chart Types
       * @Default {null}
       */
-    var getLayoutInfo: js.UndefOr[js.Any] = js.undefined
+    var getLayoutInfo: js.UndefOr[Any] = js.undefined
     
     /** Defines how to horizontally align the layout within the layout bounds
       * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
@@ -6439,7 +6439,7 @@ object Diagram {
     /** Defines the space to be left between layout bounds and layout.
       * @Default {ej.datavisualization.Diagram.Margin()}
       */
-    var margin: js.UndefOr[js.Any] = js.undefined
+    var margin: js.UndefOr[Any] = js.undefined
     
     /** Defines how long edges should be, ideally. This will be the resting length for the springs.
       * @Default {1000}
@@ -6494,7 +6494,7 @@ object Diagram {
       
       inline def setAvoidSegmentOverlappingUndefined: Self = StObject.set(x, "avoidSegmentOverlapping", js.undefined)
       
-      inline def setBounds(value: js.Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
       inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
@@ -6502,11 +6502,11 @@ object Diagram {
       
       inline def setFixedNodeUndefined: Self = StObject.set(x, "fixedNode", js.undefined)
       
-      inline def setGetConnectorSegments(value: js.Any): Self = StObject.set(x, "getConnectorSegments", value.asInstanceOf[js.Any])
+      inline def setGetConnectorSegments(value: Any): Self = StObject.set(x, "getConnectorSegments", value.asInstanceOf[js.Any])
       
       inline def setGetConnectorSegmentsUndefined: Self = StObject.set(x, "getConnectorSegments", js.undefined)
       
-      inline def setGetLayoutInfo(value: js.Any): Self = StObject.set(x, "getLayoutInfo", value.asInstanceOf[js.Any])
+      inline def setGetLayoutInfo(value: Any): Self = StObject.set(x, "getLayoutInfo", value.asInstanceOf[js.Any])
       
       inline def setGetLayoutInfoUndefined: Self = StObject.set(x, "getLayoutInfo", js.undefined)
       
@@ -6518,7 +6518,7 @@ object Diagram {
       
       inline def setHorizontalSpacingUndefined: Self = StObject.set(x, "horizontalSpacing", js.undefined)
       
-      inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
@@ -6603,7 +6603,7 @@ object Diagram {
     /** Binds the custom JSON data with connector properties
       * @Default {null}
       */
-    var connectorTemplate: js.UndefOr[js.Any] = js.undefined
+    var connectorTemplate: js.UndefOr[Any] = js.undefined
     
     /** A collection of JSON objects where each object represents a connector
       * @Default {[]}
@@ -6663,7 +6663,7 @@ object Diagram {
     /** Sets the type of JSON object to be drawn through drawing tool
       * @Default {{}}
       */
-    var drawType: js.UndefOr[js.Any] = js.undefined
+    var drawType: js.UndefOr[Any] = js.undefined
     
     /** Triggers when a symbol is dragged and dropped from symbol palette to drawing area
       */
@@ -6742,7 +6742,7 @@ object Diagram {
     /** Binds the custom JSON data with node properties
       * @Default {null}
       */
-    var nodeTemplate: js.UndefOr[js.Any] = js.undefined
+    var nodeTemplate: js.UndefOr[Any] = js.undefined
     
     /** Array of JSON objects where each object represents a node
       * @Default {[]}
@@ -6879,7 +6879,7 @@ object Diagram {
       
       inline def setConnectorTargetChangeUndefined: Self = StObject.set(x, "connectorTargetChange", js.undefined)
       
-      inline def setConnectorTemplate(value: js.Any): Self = StObject.set(x, "connectorTemplate", value.asInstanceOf[js.Any])
+      inline def setConnectorTemplate(value: Any): Self = StObject.set(x, "connectorTemplate", value.asInstanceOf[js.Any])
       
       inline def setConnectorTemplateUndefined: Self = StObject.set(x, "connectorTemplate", js.undefined)
       
@@ -6887,7 +6887,7 @@ object Diagram {
       
       inline def setConnectorsUndefined: Self = StObject.set(x, "connectors", js.undefined)
       
-      inline def setConnectorsVarargs(value: Connector*): Self = StObject.set(x, "connectors", js.Array(value :_*))
+      inline def setConnectorsVarargs(value: Connector*): Self = StObject.set(x, "connectors", js.Array(value*))
       
       inline def setConstraints(value: DiagramConstraints | String): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
@@ -6937,7 +6937,7 @@ object Diagram {
       
       inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
       
-      inline def setDrawType(value: js.Any): Self = StObject.set(x, "drawType", value.asInstanceOf[js.Any])
+      inline def setDrawType(value: Any): Self = StObject.set(x, "drawType", value.asInstanceOf[js.Any])
       
       inline def setDrawTypeUndefined: Self = StObject.set(x, "drawType", js.undefined)
       
@@ -6985,7 +6985,7 @@ object Diagram {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
@@ -7011,7 +7011,7 @@ object Diagram {
       
       inline def setNodeCollectionChangeUndefined: Self = StObject.set(x, "nodeCollectionChange", js.undefined)
       
-      inline def setNodeTemplate(value: js.Any): Self = StObject.set(x, "nodeTemplate", value.asInstanceOf[js.Any])
+      inline def setNodeTemplate(value: Any): Self = StObject.set(x, "nodeTemplate", value.asInstanceOf[js.Any])
       
       inline def setNodeTemplateUndefined: Self = StObject.set(x, "nodeTemplate", js.undefined)
       
@@ -7019,7 +7019,7 @@ object Diagram {
       
       inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
       
-      inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value*))
       
       inline def setPageSettings(value: PageSettings): Self = StObject.set(x, "pageSettings", value.asInstanceOf[js.Any])
       
@@ -7111,15 +7111,15 @@ object Diagram {
     
     /** parameter returns the target node or connector
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the object from where the selected object is dragged
       */
-    var source: js.UndefOr[js.Any] = js.undefined
+    var source: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the target object over which the selected object is dragged
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
   }
   object MouseEnterEventArgs {
     
@@ -7138,15 +7138,15 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
@@ -7164,15 +7164,15 @@ object Diagram {
     
     /** parameter returns the target node or connector
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the object from where the selected object is dragged
       */
-    var source: js.UndefOr[js.Any] = js.undefined
+    var source: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the target object over which the selected object is dragged
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
   }
   object MouseLeaveEventArgs {
     
@@ -7191,15 +7191,15 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
@@ -7217,15 +7217,15 @@ object Diagram {
     
     /** parameter returns the target node or connector
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the object from where the element is dragged
       */
-    var source: js.UndefOr[js.Any] = js.undefined
+    var source: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the object over which the element is being dragged.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
   }
   object MouseOverEventArgs {
     
@@ -7244,15 +7244,15 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
@@ -7268,7 +7268,7 @@ object Diagram {
     /** To maintain additional information about nodes
       * @Default {{}}
       */
-    var addInfo: js.UndefOr[js.Any] = js.undefined
+    var addInfo: js.UndefOr[Any] = js.undefined
     
     /** Defines the additional information of a process. It is not directly related to the message flows or sequence flows of the process.
       * @Default {ej.datavisualization.Diagram.BPMNTextAnnotation()}
@@ -7287,7 +7287,7 @@ object Diagram {
     /** defines the node border with a smooth transition from one color to another color.
       * @Default {null}
       */
-    var borderGradient: js.UndefOr[js.Any] = js.undefined
+    var borderGradient: js.UndefOr[Any] = js.undefined
     
     /** Sets the border width of the node
       * @Default {1}
@@ -7302,7 +7302,7 @@ object Diagram {
     /** Array of JSON objects where each object represents a child node/connector
       * @Default {[]}
       */
-    var children: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var children: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the name, attributes and methods of a Class. Applicable, if the node is a Class.
       * @Default {null}
@@ -7382,7 +7382,7 @@ object Diagram {
     /** Defines the header of a swimlane/lane
       * @Default {{ text: Title, fontSize: 11 }}
       */
-    var header: js.UndefOr[js.Any] = js.undefined
+    var header: js.UndefOr[Any] = js.undefined
     
     /** Defines the height of the node
       * @Default {0}
@@ -7397,7 +7397,7 @@ object Diagram {
     /** A read only collection of the incoming connectors/edges of the node
       * @Default {[]}
       */
-    var inEdges: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var inEdges: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines an interface in a UML Class Diagram
       * @Default {null}
@@ -7491,7 +7491,7 @@ object Diagram {
     /** A read only collection of outgoing connectors/edges of the node
       * @Default {[]}
       */
-    var outEdges: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var outEdges: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the minimum padding value to be left between the bottom most position of a group and its children. Applicable, if the group is a container.
       * @Default {0}
@@ -7539,12 +7539,12 @@ object Diagram {
     /** Sets the ratio/ fractional value relative to node, based on which the node will be transformed(positioning, scaling and rotation)
       * @Default {ej.datavisualization.Diagram.Points(0.5,0.5)}
       */
-    var pivot: js.UndefOr[js.Any] = js.undefined
+    var pivot: js.UndefOr[Any] = js.undefined
     
     /** Defines a collection of points to draw a polygon. Applicable, if the shape is a polygon.
       * @Default {[]}
       */
-    var points: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var points: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** An array of objects where each object represents a port
       * @Default {[]}
@@ -7587,12 +7587,12 @@ object Diagram {
     /** Defines the textBlock of a text node
       * @Default {null}
       */
-    var textBlock: js.UndefOr[js.Any] = js.undefined
+    var textBlock: js.UndefOr[Any] = js.undefined
     
     /** Defines the tooltip that should be shown when the mouse hovers over node. For tooltip properties, refer Tooltip
       * @Default {null}
       */
-    var tooltip: js.UndefOr[js.Any] = js.undefined
+    var tooltip: js.UndefOr[Any] = js.undefined
     
     /** Sets the type of BPMN Event Triggers.
       * @Default {ej.datavisualization.Diagram.BPMNTriggers.None}
@@ -7637,7 +7637,7 @@ object Diagram {
       
       inline def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
       
-      inline def setAddInfo(value: js.Any): Self = StObject.set(x, "addInfo", value.asInstanceOf[js.Any])
+      inline def setAddInfo(value: Any): Self = StObject.set(x, "addInfo", value.asInstanceOf[js.Any])
       
       inline def setAddInfoUndefined: Self = StObject.set(x, "addInfo", js.undefined)
       
@@ -7653,7 +7653,7 @@ object Diagram {
       
       inline def setBorderDashArrayUndefined: Self = StObject.set(x, "borderDashArray", js.undefined)
       
-      inline def setBorderGradient(value: js.Any): Self = StObject.set(x, "borderGradient", value.asInstanceOf[js.Any])
+      inline def setBorderGradient(value: Any): Self = StObject.set(x, "borderGradient", value.asInstanceOf[js.Any])
       
       inline def setBorderGradientUndefined: Self = StObject.set(x, "borderGradient", js.undefined)
       
@@ -7665,11 +7665,11 @@ object Diagram {
       
       inline def setCanUngroupUndefined: Self = StObject.set(x, "canUngroup", js.undefined)
       
-      inline def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Any*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setClass(value: NodesClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -7735,7 +7735,7 @@ object Diagram {
       
       inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
       
-      inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
@@ -7747,11 +7747,11 @@ object Diagram {
       
       inline def setHorizontalAlignUndefined: Self = StObject.set(x, "horizontalAlign", js.undefined)
       
-      inline def setInEdges(value: js.Array[js.Any]): Self = StObject.set(x, "inEdges", value.asInstanceOf[js.Any])
+      inline def setInEdges(value: js.Array[Any]): Self = StObject.set(x, "inEdges", value.asInstanceOf[js.Any])
       
       inline def setInEdgesUndefined: Self = StObject.set(x, "inEdges", js.undefined)
       
-      inline def setInEdgesVarargs(value: js.Any*): Self = StObject.set(x, "inEdges", js.Array(value :_*))
+      inline def setInEdgesVarargs(value: Any*): Self = StObject.set(x, "inEdges", js.Array(value*))
       
       inline def setInterface(value: NodesInterface): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
       
@@ -7769,13 +7769,13 @@ object Diagram {
       
       inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      inline def setLabelsVarargs(value: NodesLabel*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: NodesLabel*): Self = StObject.set(x, "labels", js.Array(value*))
       
       inline def setLanes(value: js.Array[NodesLane]): Self = StObject.set(x, "lanes", value.asInstanceOf[js.Any])
       
       inline def setLanesUndefined: Self = StObject.set(x, "lanes", js.undefined)
       
-      inline def setLanesVarargs(value: NodesLane*): Self = StObject.set(x, "lanes", js.Array(value :_*))
+      inline def setLanesVarargs(value: NodesLane*): Self = StObject.set(x, "lanes", js.Array(value*))
       
       inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
@@ -7829,11 +7829,11 @@ object Diagram {
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      inline def setOutEdges(value: js.Array[js.Any]): Self = StObject.set(x, "outEdges", value.asInstanceOf[js.Any])
+      inline def setOutEdges(value: js.Array[Any]): Self = StObject.set(x, "outEdges", value.asInstanceOf[js.Any])
       
       inline def setOutEdgesUndefined: Self = StObject.set(x, "outEdges", js.undefined)
       
-      inline def setOutEdgesVarargs(value: js.Any*): Self = StObject.set(x, "outEdges", js.Array(value :_*))
+      inline def setOutEdgesVarargs(value: Any*): Self = StObject.set(x, "outEdges", js.Array(value*))
       
       inline def setPaddingBottom(value: Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
@@ -7871,23 +7871,23 @@ object Diagram {
       
       inline def setPhasesUndefined: Self = StObject.set(x, "phases", js.undefined)
       
-      inline def setPhasesVarargs(value: NodesPhase*): Self = StObject.set(x, "phases", js.Array(value :_*))
+      inline def setPhasesVarargs(value: NodesPhase*): Self = StObject.set(x, "phases", js.Array(value*))
       
-      inline def setPivot(value: js.Any): Self = StObject.set(x, "pivot", value.asInstanceOf[js.Any])
+      inline def setPivot(value: Any): Self = StObject.set(x, "pivot", value.asInstanceOf[js.Any])
       
       inline def setPivotUndefined: Self = StObject.set(x, "pivot", js.undefined)
       
-      inline def setPoints(value: js.Array[js.Any]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      inline def setPoints(value: js.Array[Any]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
       inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
       
-      inline def setPointsVarargs(value: js.Any*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: Any*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setPorts(value: js.Array[NodesPort]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
       
       inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
       
-      inline def setPortsVarargs(value: NodesPort*): Self = StObject.set(x, "ports", js.Array(value :_*))
+      inline def setPortsVarargs(value: NodesPort*): Self = StObject.set(x, "ports", js.Array(value*))
       
       inline def setRotateAngle(value: Double): Self = StObject.set(x, "rotateAngle", value.asInstanceOf[js.Any])
       
@@ -7917,11 +7917,11 @@ object Diagram {
       
       inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
       
-      inline def setTextBlock(value: js.Any): Self = StObject.set(x, "textBlock", value.asInstanceOf[js.Any])
+      inline def setTextBlock(value: Any): Self = StObject.set(x, "textBlock", value.asInstanceOf[js.Any])
       
       inline def setTextBlockUndefined: Self = StObject.set(x, "textBlock", js.undefined)
       
-      inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
       inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
@@ -7967,7 +7967,7 @@ object Diagram {
     
     /** parameter returns the node which needs to be added or deleted
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** triggers before and after adding the node in the diagram which can be differentiated through `state` argument. We can cancel the event only before adding the node
       */
@@ -7994,7 +7994,7 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -8099,13 +8099,13 @@ object Diagram {
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      inline def setAttributesVarargs(value: NodesClassAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: NodesClassAttribute*): Self = StObject.set(x, "attributes", js.Array(value*))
       
       inline def setMethods(value: js.Array[NodesClassMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      inline def setMethodsVarargs(value: NodesClassMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: NodesClassMethod*): Self = StObject.set(x, "methods", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -8203,12 +8203,12 @@ object Diagram {
     /** To set the margin for the collapse icon of node
       * @Default {ej.datavisualization.Diagram.Margin()}
       */
-    var margin: js.UndefOr[js.Any] = js.undefined
+    var margin: js.UndefOr[Any] = js.undefined
     
     /** Sets the fraction/ratio(relative to node) that defines the position of the icon
       * @Default {ej.datavisualization.Diagram.Point(0.5, 1)}
       */
-    var offset: js.UndefOr[js.Any] = js.undefined
+    var offset: js.UndefOr[Any] = js.undefined
     
     /** Defines the shape of the collapsed state of the node.
       * @Default {ej.datavisualization.Diagram.IconShapes.None}
@@ -8249,11 +8249,11 @@ object Diagram {
       
       inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
       
-      inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
@@ -8353,7 +8353,7 @@ object Diagram {
       
       inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
       
-      inline def setMembersVarargs(value: NodesEnumerationMember*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: NodesEnumerationMember*): Self = StObject.set(x, "members", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -8412,12 +8412,12 @@ object Diagram {
     /** To set the margin for the expand icon of node
       * @Default {ej.datavisualization.Diagram.Margin()}
       */
-    var margin: js.UndefOr[js.Any] = js.undefined
+    var margin: js.UndefOr[Any] = js.undefined
     
     /** Sets the fraction/ratio(relative to node) that defines the position of the icon
       * @Default {ej.datavisualization.Diagram.Point(0.5, 1)}
       */
-    var offset: js.UndefOr[js.Any] = js.undefined
+    var offset: js.UndefOr[Any] = js.undefined
     
     /** Defines the shape of the expanded state of the node.
       * @Default {ej.datavisualization.Diagram.IconShapes.None}
@@ -8458,11 +8458,11 @@ object Diagram {
       
       inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
       
-      inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
@@ -8518,7 +8518,7 @@ object Diagram {
     /** Defines the different colors and the region of color transitions
       * @Default {[]}
       */
-    var stops: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var stops: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the type of gradient
       * @Default {linear}
@@ -8554,11 +8554,11 @@ object Diagram {
     
     extension [Self <: NodesGradientLinearGradient](x: Self) {
       
-      inline def setStops(value: js.Array[js.Any]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+      inline def setStops(value: js.Array[Any]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
       
       inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
       
-      inline def setStopsVarargs(value: js.Any*): Self = StObject.set(x, "stops", js.Array(value :_*))
+      inline def setStopsVarargs(value: Any*): Self = StObject.set(x, "stops", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -8607,7 +8607,7 @@ object Diagram {
     /** Defines the different colors and the region of color transitions.
       * @Default {[]}
       */
-    var stops: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var stops: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the type of gradient
       * @Default {radial}
@@ -8639,11 +8639,11 @@ object Diagram {
       
       inline def setFyUndefined: Self = StObject.set(x, "fy", js.undefined)
       
-      inline def setStops(value: js.Array[js.Any]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+      inline def setStops(value: js.Array[Any]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
       
       inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
       
-      inline def setStopsVarargs(value: js.Any*): Self = StObject.set(x, "stops", js.Array(value :_*))
+      inline def setStopsVarargs(value: Any*): Self = StObject.set(x, "stops", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -8719,13 +8719,13 @@ object Diagram {
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      inline def setAttributesVarargs(value: NodesInterfaceAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: NodesInterfaceAttribute*): Self = StObject.set(x, "attributes", js.Array(value*))
       
       inline def setMethods(value: js.Array[NodesInterfaceMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      inline def setMethodsVarargs(value: NodesInterfaceMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: NodesInterfaceMethod*): Self = StObject.set(x, "methods", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -8855,7 +8855,7 @@ object Diagram {
     /** To set the margin of the label
       * @Default {ej.datavisualization.Diagram.Margin()}
       */
-    var margin: js.UndefOr[js.Any] = js.undefined
+    var margin: js.UndefOr[Any] = js.undefined
     
     /** Gets whether the label is currently being edited or not.
       * @Default {ej.datavisualization.Diagram.LabelEditMode.Edit}
@@ -8869,7 +8869,7 @@ object Diagram {
     /** Sets the fraction/ratio(relative to node) that defines the position of the label
       * @Default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
       */
-    var offset: js.UndefOr[js.Any] = js.undefined
+    var offset: js.UndefOr[Any] = js.undefined
     
     /** Defines the transparency of the labels
       * @Default {1}
@@ -8884,7 +8884,7 @@ object Diagram {
     /** To set the padding of the node label
       * @Default {ej.datavisualization.Diagram.Padding()}
       */
-    var padding: js.UndefOr[js.Any] = js.undefined
+    var padding: js.UndefOr[Any] = js.undefined
     
     /** Defines whether the label is editable or not
       * @Default {false}
@@ -8996,7 +8996,7 @@ object Diagram {
       
       inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
       
-      inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
@@ -9008,7 +9008,7 @@ object Diagram {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
@@ -9020,7 +9020,7 @@ object Diagram {
       
       inline def setOverflowTypeUndefined: Self = StObject.set(x, "overflowType", js.undefined)
       
-      inline def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
@@ -9075,12 +9075,12 @@ object Diagram {
     /** Allows to maintain additional information about lane
       * @Default {{}}
       */
-    var addInfo: js.UndefOr[js.Any] = js.undefined
+    var addInfo: js.UndefOr[Any] = js.undefined
     
     /** An array of objects where each object represents a child node of the lane
       * @Default {[]}
       */
-    var children: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var children: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** This property allows you to customize lanes appearance using user-defined CSS.
       */
@@ -9094,7 +9094,7 @@ object Diagram {
     /** Defines the header of the lane
       * @Default {{ text: Function, fontSize: 11 }}
       */
-    var header: js.UndefOr[js.Any] = js.undefined
+    var header: js.UndefOr[Any] = js.undefined
     
     /** Defines the height of lane
       * @Default {0}
@@ -9134,15 +9134,15 @@ object Diagram {
     
     extension [Self <: NodesLane](x: Self) {
       
-      inline def setAddInfo(value: js.Any): Self = StObject.set(x, "addInfo", value.asInstanceOf[js.Any])
+      inline def setAddInfo(value: Any): Self = StObject.set(x, "addInfo", value.asInstanceOf[js.Any])
       
       inline def setAddInfoUndefined: Self = StObject.set(x, "addInfo", js.undefined)
       
-      inline def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Any*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
@@ -9152,7 +9152,7 @@ object Diagram {
       
       inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
-      inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
@@ -9202,7 +9202,7 @@ object Diagram {
     /** Defines the margin of the symbol item
       * @Default {{ left: 4, right: 4, top: 4, bottom: 4 }}
       */
-    var margin: js.UndefOr[js.Any] = js.undefined
+    var margin: js.UndefOr[Any] = js.undefined
     
     /** Defines the preview height of the symbol
       * @Default {undefined}
@@ -9240,7 +9240,7 @@ object Diagram {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
@@ -9263,7 +9263,7 @@ object Diagram {
     /** Defines the header of the smaller regions
       * @Default {null}
       */
-    var label: js.UndefOr[js.Any] = js.undefined
+    var label: js.UndefOr[Any] = js.undefined
     
     /** Defines the line color of the splitter that splits adjacent phases.
       * @Default {#606060}
@@ -9308,7 +9308,7 @@ object Diagram {
     
     extension [Self <: NodesPhase](x: Self) {
       
-      inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
@@ -9380,7 +9380,7 @@ object Diagram {
     /** Defines the position of the port as fraction/ ratio relative to node
       * @Default {ej.datavisualization.Diagram.Point(0, 0)}
       */
-    var offset: js.UndefOr[js.Any] = js.undefined
+    var offset: js.UndefOr[Any] = js.undefined
     
     /** Sets the name of the node which contains this port.
       */
@@ -9442,7 +9442,7 @@ object Diagram {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
@@ -9513,7 +9513,7 @@ object Diagram {
     /** Defines the children for BPMN's SubProcess
       * @Default {[]}
       */
-    var Processes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var Processes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines whether the BPMN sub process is without any prescribed order or not
       * @Default {false}
@@ -9592,17 +9592,17 @@ object Diagram {
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      inline def setEventsVarargs(value: NodesSubProcessEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: NodesSubProcessEvent*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setLoop(value: BPMNLoops | String): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
       inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      inline def setProcesses(value: js.Array[js.Any]): Self = StObject.set(x, "Processes", value.asInstanceOf[js.Any])
+      inline def setProcesses(value: js.Array[Any]): Self = StObject.set(x, "Processes", value.asInstanceOf[js.Any])
       
       inline def setProcessesUndefined: Self = StObject.set(x, "Processes", js.undefined)
       
-      inline def setProcessesVarargs(value: js.Any*): Self = StObject.set(x, "Processes", js.Array(value :_*))
+      inline def setProcessesVarargs(value: Any*): Self = StObject.set(x, "Processes", js.Array(value*))
       
       inline def setTrigger(value: BPMNTriggers | String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
@@ -9624,7 +9624,7 @@ object Diagram {
     /** A collection of objects where each object represents a label
       * @Default {[]}
       */
-    var labels: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var labels: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Sets the name of the BPMN event shape.
       */
@@ -9633,12 +9633,12 @@ object Diagram {
     /** Sets the fraction/ratio(relative to parent) that defines the position of the event shape
       * @Default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
       */
-    var offset: js.UndefOr[js.Any] = js.undefined
+    var offset: js.UndefOr[Any] = js.undefined
     
     /** An array of objects where each object represents a port
       * @Default {[]}
       */
-    var ports: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var ports: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the type of the event trigger
       * @Default {ej.datavisualization.Diagram.BPMNTriggers.Message}
@@ -9658,25 +9658,25 @@ object Diagram {
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      inline def setLabels(value: js.Array[js.Any]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: js.Array[Any]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
       inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      inline def setLabelsVarargs(value: js.Any*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: Any*): Self = StObject.set(x, "labels", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setPorts(value: js.Array[js.Any]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+      inline def setPorts(value: js.Array[Any]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
       
       inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
       
-      inline def setPortsVarargs(value: js.Any*): Self = StObject.set(x, "ports", js.Array(value :_*))
+      inline def setPortsVarargs(value: Any*): Self = StObject.set(x, "ports", js.Array(value*))
       
       inline def setTrigger(value: BPMNTriggers | String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
@@ -9698,7 +9698,7 @@ object Diagram {
     
     /** Defines the collection of events that need to be appended with BPMN tasks
       */
-    var events: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var events: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Sets the loop type of a BPMN task.
       * @Default {ej.datavisualization.Diagram.BPMNLoops.None}
@@ -9727,11 +9727,11 @@ object Diagram {
       
       inline def setCompensationUndefined: Self = StObject.set(x, "compensation", js.undefined)
       
-      inline def setEvents(value: js.Array[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      inline def setEventsVarargs(value: js.Any*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: Any*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setLoop(value: BPMNLoops | String): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
@@ -9747,7 +9747,7 @@ object Diagram {
     
     /** to export any custom region of diagram.
       */
-    var bounds: js.UndefOr[js.Any] = js.undefined
+    var bounds: js.UndefOr[Any] = js.undefined
     
     /** name of the file to be downloaded.
       */
@@ -9759,7 +9759,7 @@ object Diagram {
     
     /** to set margin to the exported data.
       */
-    var margin: js.UndefOr[js.Any] = js.undefined
+    var margin: js.UndefOr[Any] = js.undefined
     
     /** to set whether to export diagram as a file or as raw data.
       */
@@ -9798,7 +9798,7 @@ object Diagram {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setBounds(value: js.Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
       inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
@@ -9810,7 +9810,7 @@ object Diagram {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
@@ -9849,7 +9849,7 @@ object Diagram {
     /** Defines the maximum distance to be left between the object and the scroll bar to trigger auto scrolling
       * @Default {{ left: 15, top: 15, right: 15, bottom: 15 }}
       */
-    var autoScrollBorder: js.UndefOr[js.Any] = js.undefined
+    var autoScrollBorder: js.UndefOr[Any] = js.undefined
     
     /** Defines the draggable region of diagram elements.
       * @Default {ej.datavisualization.Diagram.BoundaryConstraints.Infinite}
@@ -9904,7 +9904,7 @@ object Diagram {
     /** Defines the scrollable area of diagram. Applicable, if the scroll limit is &quot;limited&quot;.
       * @Default {null}
       */
-    var scrollableArea: js.UndefOr[js.Any] = js.undefined
+    var scrollableArea: js.UndefOr[Any] = js.undefined
     
     /** Enables or disables the page breaks
       * @Default {false}
@@ -9920,7 +9920,7 @@ object Diagram {
     
     extension [Self <: PageSettings](x: Self) {
       
-      inline def setAutoScrollBorder(value: js.Any): Self = StObject.set(x, "autoScrollBorder", value.asInstanceOf[js.Any])
+      inline def setAutoScrollBorder(value: Any): Self = StObject.set(x, "autoScrollBorder", value.asInstanceOf[js.Any])
       
       inline def setAutoScrollBorderUndefined: Self = StObject.set(x, "autoScrollBorder", js.undefined)
       
@@ -9964,7 +9964,7 @@ object Diagram {
       
       inline def setScrollLimitUndefined: Self = StObject.set(x, "scrollLimit", js.undefined)
       
-      inline def setScrollableArea(value: js.Any): Self = StObject.set(x, "scrollableArea", value.asInstanceOf[js.Any])
+      inline def setScrollableArea(value: Any): Self = StObject.set(x, "scrollableArea", value.asInstanceOf[js.Any])
       
       inline def setScrollableAreaUndefined: Self = StObject.set(x, "scrollableArea", js.undefined)
       
@@ -9978,7 +9978,7 @@ object Diagram {
     
     /** to print any custom region of diagram.
       */
-    var bounds: js.UndefOr[js.Any] = js.undefined
+    var bounds: js.UndefOr[Any] = js.undefined
     
     /** to export the diagram into multiple pages
       */
@@ -10009,7 +10009,7 @@ object Diagram {
     
     extension [Self <: PrintImageSettings](x: Self) {
       
-      inline def setBounds(value: js.Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
       inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
@@ -10039,7 +10039,7 @@ object Diagram {
     
     /** to print any custom region of diagram.
       */
-    var bounds: js.UndefOr[js.Any] = js.undefined
+    var bounds: js.UndefOr[Any] = js.undefined
     
     /** to print the diagram into multiple pages
       */
@@ -10074,7 +10074,7 @@ object Diagram {
     
     extension [Self <: PrintSettings](x: Self) {
       
-      inline def setBounds(value: js.Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
       inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
@@ -10120,15 +10120,15 @@ object Diagram {
     
     /** parameter returns the selected element
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the new value of the node property that is being changed
       */
-    var newValue: js.UndefOr[js.Any] = js.undefined
+    var newValue: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the old value of the property that is being changed
       */
-    var oldValue: js.UndefOr[js.Any] = js.undefined
+    var oldValue: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the name of the property that is changed
       */
@@ -10155,15 +10155,15 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
       inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
       
-      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
       inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
       
@@ -10189,15 +10189,15 @@ object Diagram {
     
     /** parameter returns the node that is rotated
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the new rotation angle
       */
-    var newValue: js.UndefOr[js.Any] = js.undefined
+    var newValue: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the previous rotation angle
       */
-    var oldValue: js.UndefOr[js.Any] = js.undefined
+    var oldValue: js.UndefOr[Any] = js.undefined
   }
   object RotationChangeEventArgs {
     
@@ -10220,15 +10220,15 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
       inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
       
-      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
       inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
     }
@@ -10277,7 +10277,7 @@ object Diagram {
     /** Defines the method which used to position and arrange the tick elements of the horizontal ruler.
       * @Default {null}
       */
-    var arrangeTick: js.UndefOr[js.Any] = js.undefined
+    var arrangeTick: js.UndefOr[Any] = js.undefined
     
     /** Defines the number of intervals to be present on the each segment of the horizontal ruler.
       * @Default {5}
@@ -10318,7 +10318,7 @@ object Diagram {
     
     extension [Self <: RulerSettingsHorizontalRuler](x: Self) {
       
-      inline def setArrangeTick(value: js.Any): Self = StObject.set(x, "arrangeTick", value.asInstanceOf[js.Any])
+      inline def setArrangeTick(value: Any): Self = StObject.set(x, "arrangeTick", value.asInstanceOf[js.Any])
       
       inline def setArrangeTickUndefined: Self = StObject.set(x, "arrangeTick", js.undefined)
       
@@ -10353,7 +10353,7 @@ object Diagram {
     /** Defines the method which used to position and arrange the tick elements of the vertical ruler.
       * @Default {null}
       */
-    var arrangeTick: js.UndefOr[js.Any] = js.undefined
+    var arrangeTick: js.UndefOr[Any] = js.undefined
     
     /** Defines the number of intervals to be present on the each segment of the vertical ruler.
       * @Default {5}
@@ -10394,7 +10394,7 @@ object Diagram {
     
     extension [Self <: RulerSettingsVerticalRuler](x: Self) {
       
-      inline def setArrangeTick(value: js.Any): Self = StObject.set(x, "arrangeTick", value.asInstanceOf[js.Any])
+      inline def setArrangeTick(value: Any): Self = StObject.set(x, "arrangeTick", value.asInstanceOf[js.Any])
       
       inline def setArrangeTickUndefined: Self = StObject.set(x, "arrangeTick", js.undefined)
       
@@ -10440,11 +10440,11 @@ object Diagram {
     
     /** Parameter returns the new zoom value, horizontal and vertical scroll offsets.
       */
-    var newValues: js.UndefOr[js.Any] = js.undefined
+    var newValues: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the previous zoom value, horizontal and vertical scroll offsets.
       */
-    var oldValues: js.UndefOr[js.Any] = js.undefined
+    var oldValues: js.UndefOr[Any] = js.undefined
   }
   object ScrollChangeEventArgs {
     
@@ -10467,11 +10467,11 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setNewValues(value: js.Any): Self = StObject.set(x, "newValues", value.asInstanceOf[js.Any])
+      inline def setNewValues(value: Any): Self = StObject.set(x, "newValues", value.asInstanceOf[js.Any])
       
       inline def setNewValuesUndefined: Self = StObject.set(x, "newValues", js.undefined)
       
-      inline def setOldValues(value: js.Any): Self = StObject.set(x, "oldValues", value.asInstanceOf[js.Any])
+      inline def setOldValues(value: Any): Self = StObject.set(x, "oldValues", value.asInstanceOf[js.Any])
       
       inline def setOldValuesUndefined: Self = StObject.set(x, "oldValues", js.undefined)
     }
@@ -10492,7 +10492,7 @@ object Diagram {
     /** Allows to extend the scrollable region that is based on the scroll limit
       * @Default {{left: 0, right: 0, top:0, bottom: 0}}
       */
-    var padding: js.UndefOr[js.Any] = js.undefined
+    var padding: js.UndefOr[Any] = js.undefined
     
     /** Sets the vertical scroll offset
       * @Default {0}
@@ -10526,7 +10526,7 @@ object Diagram {
       
       inline def setHorizontalOffsetUndefined: Self = StObject.set(x, "horizontalOffset", js.undefined)
       
-      inline def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
@@ -10560,11 +10560,11 @@ object Diagram {
     
     /** Parameter returns the connector that is being edited
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the current mouse position
       */
-    var point: js.UndefOr[js.Any] = js.undefined
+    var point: js.UndefOr[Any] = js.undefined
   }
   object SegmentChangeEventArgs {
     
@@ -10587,11 +10587,11 @@ object Diagram {
       
       inline def setDragStateUndefined: Self = StObject.set(x, "dragState", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setPoint(value: js.Any): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+      inline def setPoint(value: Any): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       
       inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     }
@@ -10602,7 +10602,7 @@ object Diagram {
     /** A read only collection of the selected items
       * @Default {[]}
       */
-    var children: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var children: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Controls the visibility of selector.
       * @Default {ej.datavisualization.Diagram.SelectorConstraints.All}
@@ -10612,7 +10612,7 @@ object Diagram {
     /** Defines a method that dynamically enables/ disables the interaction with multiple selection.
       * @Default {null}
       */
-    var getConstraints: js.UndefOr[js.Any] = js.undefined
+    var getConstraints: js.UndefOr[Any] = js.undefined
     
     /** Sets the height of the selected items
       * @Default {0}
@@ -10637,7 +10637,7 @@ object Diagram {
     /** Sets the angle to rotate the selected items. For tooltip properties, refer Tooltip
       * @Default {ej.datavisualization.Diagram.Tooltip()}
       */
-    var tooltip: js.UndefOr[js.Any] = js.undefined
+    var tooltip: js.UndefOr[Any] = js.undefined
     
     /** A collection of frequently used commands that will be added around the selector
       * @Default {[]}
@@ -10658,17 +10658,17 @@ object Diagram {
     
     extension [Self <: SelectedItems](x: Self) {
       
-      inline def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Any*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setConstraints(value: SelectorConstraints | String): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
       inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
       
-      inline def setGetConstraints(value: js.Any): Self = StObject.set(x, "getConstraints", value.asInstanceOf[js.Any])
+      inline def setGetConstraints(value: Any): Self = StObject.set(x, "getConstraints", value.asInstanceOf[js.Any])
       
       inline def setGetConstraintsUndefined: Self = StObject.set(x, "getConstraints", js.undefined)
       
@@ -10688,7 +10688,7 @@ object Diagram {
       
       inline def setRotateAngleUndefined: Self = StObject.set(x, "rotateAngle", js.undefined)
       
-      inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
       inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
@@ -10696,7 +10696,7 @@ object Diagram {
       
       inline def setUserHandlesUndefined: Self = StObject.set(x, "userHandles", js.undefined)
       
-      inline def setUserHandlesVarargs(value: SelectedItemsUserHandle*): Self = StObject.set(x, "userHandles", js.Array(value :_*))
+      inline def setUserHandlesVarargs(value: SelectedItemsUserHandle*): Self = StObject.set(x, "userHandles", js.Array(value*))
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -10729,7 +10729,7 @@ object Diagram {
     /** To set the margin of the user handle
       * @Default {ej.datavisualization.Diagram.Margin()}
       */
-    var margin: js.UndefOr[js.Any] = js.undefined
+    var margin: js.UndefOr[Any] = js.undefined
     
     /** Defines the name of the user handle
       */
@@ -10738,7 +10738,7 @@ object Diagram {
     /** Sets the fraction/ratio(relative to node) that defines the position of the user handle
       * @Default {ej.datavisualization.Diagram.point(0.5, 1)}
       */
-    var offset: js.UndefOr[js.Any] = js.undefined
+    var offset: js.UndefOr[Any] = js.undefined
     
     /** Sets the stroke color of the user handle
       * @Default {transparent}
@@ -10761,7 +10761,7 @@ object Diagram {
     
     /** Defines the interactive behaviors of the user handle
       */
-    var tool: js.UndefOr[js.Any] = js.undefined
+    var tool: js.UndefOr[Any] = js.undefined
     
     /** Sets the vertical alignment of the user handle
       * @Default {ej.datavisualization.Diagram.VerticalAlignment.Center}
@@ -10798,7 +10798,7 @@ object Diagram {
       
       inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
       
-      inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
@@ -10806,7 +10806,7 @@ object Diagram {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
@@ -10826,7 +10826,7 @@ object Diagram {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setTool(value: js.Any): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+      inline def setTool(value: Any): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
       
       inline def setToolUndefined: Self = StObject.set(x, "tool", js.undefined)
       
@@ -10860,19 +10860,19 @@ object Diagram {
     
     /** parameter returns the item which is selected or to be selected
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the collection of nodes and connectors that have to be added to selection list
       */
-    var newItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var newItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** parameter returns the collection of nodes and connectors that have to be removed from selection list
       */
-    var oldItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var oldItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** parameter returns the collection of nodes and connectors that will be selected after selection change
       */
-    var selectedItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectedItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** triggers before and after adding the selection to the object in the diagram which can be differentiated through `state` argument. We can cancel the event only before the selection
       * of the object.
@@ -10904,27 +10904,27 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setNewItems(value: js.Array[js.Any]): Self = StObject.set(x, "newItems", value.asInstanceOf[js.Any])
+      inline def setNewItems(value: js.Array[Any]): Self = StObject.set(x, "newItems", value.asInstanceOf[js.Any])
       
       inline def setNewItemsUndefined: Self = StObject.set(x, "newItems", js.undefined)
       
-      inline def setNewItemsVarargs(value: js.Any*): Self = StObject.set(x, "newItems", js.Array(value :_*))
+      inline def setNewItemsVarargs(value: Any*): Self = StObject.set(x, "newItems", js.Array(value*))
       
-      inline def setOldItems(value: js.Array[js.Any]): Self = StObject.set(x, "oldItems", value.asInstanceOf[js.Any])
+      inline def setOldItems(value: js.Array[Any]): Self = StObject.set(x, "oldItems", value.asInstanceOf[js.Any])
       
       inline def setOldItemsUndefined: Self = StObject.set(x, "oldItems", js.undefined)
       
-      inline def setOldItemsVarargs(value: js.Any*): Self = StObject.set(x, "oldItems", js.Array(value :_*))
+      inline def setOldItemsVarargs(value: Any*): Self = StObject.set(x, "oldItems", js.Array(value*))
       
-      inline def setSelectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: js.Array[Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
-      inline def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+      inline def setSelectedItemsVarargs(value: Any*): Self = StObject.set(x, "selectedItems", js.Array(value*))
       
       inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
@@ -10962,7 +10962,7 @@ object Diagram {
     
     /** Returns the port when mouse move over on it
       */
-    var source: js.UndefOr[js.Any] = js.undefined
+    var source: js.UndefOr[Any] = js.undefined
   }
   object SetToolEventArgs {
     
@@ -10977,7 +10977,7 @@ object Diagram {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
@@ -10999,19 +10999,19 @@ object Diagram {
     
     /** parameter returns node that was resized
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the new width, height, offsetX and offsetY values of the element that is being resized
       */
-    var newValue: js.UndefOr[js.Any] = js.undefined
+    var newValue: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the difference between new and old value
       */
-    var offset: js.UndefOr[js.Any] = js.undefined
+    var offset: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the previous width,height,offsetX and offsetY values of the element that is being resized
       */
-    var oldValue: js.UndefOr[js.Any] = js.undefined
+    var oldValue: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the state of resizing(starting,resizing,completed)
       */
@@ -11038,19 +11038,19 @@ object Diagram {
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
       inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
       
-      inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
       inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
       
@@ -11138,12 +11138,12 @@ object Diagram {
     /** A pattern of lines and gaps that defines a set of horizontal gridlines
       * @Default {[1.25, 18.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75]}
       */
-    var linesInterval: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var linesInterval: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies a set of intervals to snap the objects
       * @Default {[20]}
       */
-    var snapInterval: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var snapInterval: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object SnapSettingsHorizontalGridLines {
     
@@ -11162,17 +11162,17 @@ object Diagram {
       
       inline def setLineDashArrayUndefined: Self = StObject.set(x, "lineDashArray", js.undefined)
       
-      inline def setLinesInterval(value: js.Array[js.Any]): Self = StObject.set(x, "linesInterval", value.asInstanceOf[js.Any])
+      inline def setLinesInterval(value: js.Array[Any]): Self = StObject.set(x, "linesInterval", value.asInstanceOf[js.Any])
       
       inline def setLinesIntervalUndefined: Self = StObject.set(x, "linesInterval", js.undefined)
       
-      inline def setLinesIntervalVarargs(value: js.Any*): Self = StObject.set(x, "linesInterval", js.Array(value :_*))
+      inline def setLinesIntervalVarargs(value: Any*): Self = StObject.set(x, "linesInterval", js.Array(value*))
       
-      inline def setSnapInterval(value: js.Array[js.Any]): Self = StObject.set(x, "snapInterval", value.asInstanceOf[js.Any])
+      inline def setSnapInterval(value: js.Array[Any]): Self = StObject.set(x, "snapInterval", value.asInstanceOf[js.Any])
       
       inline def setSnapIntervalUndefined: Self = StObject.set(x, "snapInterval", js.undefined)
       
-      inline def setSnapIntervalVarargs(value: js.Any*): Self = StObject.set(x, "snapInterval", js.Array(value :_*))
+      inline def setSnapIntervalVarargs(value: Any*): Self = StObject.set(x, "snapInterval", js.Array(value*))
     }
   }
   
@@ -11190,12 +11190,12 @@ object Diagram {
     /** A pattern of lines and gaps that defines a set of horizontal gridlines
       * @Default {[1.25, 18.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75]}
       */
-    var linesInterval: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var linesInterval: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies a set of intervals to snap the objects
       * @Default {[20]}
       */
-    var snapInterval: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var snapInterval: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object SnapSettingsVerticalGridLines {
     
@@ -11214,17 +11214,17 @@ object Diagram {
       
       inline def setLineDashArrayUndefined: Self = StObject.set(x, "lineDashArray", js.undefined)
       
-      inline def setLinesInterval(value: js.Array[js.Any]): Self = StObject.set(x, "linesInterval", value.asInstanceOf[js.Any])
+      inline def setLinesInterval(value: js.Array[Any]): Self = StObject.set(x, "linesInterval", value.asInstanceOf[js.Any])
       
       inline def setLinesIntervalUndefined: Self = StObject.set(x, "linesInterval", js.undefined)
       
-      inline def setLinesIntervalVarargs(value: js.Any*): Self = StObject.set(x, "linesInterval", js.Array(value :_*))
+      inline def setLinesIntervalVarargs(value: Any*): Self = StObject.set(x, "linesInterval", js.Array(value*))
       
-      inline def setSnapInterval(value: js.Array[js.Any]): Self = StObject.set(x, "snapInterval", value.asInstanceOf[js.Any])
+      inline def setSnapInterval(value: js.Array[Any]): Self = StObject.set(x, "snapInterval", value.asInstanceOf[js.Any])
       
       inline def setSnapIntervalUndefined: Self = StObject.set(x, "snapInterval", js.undefined)
       
-      inline def setSnapIntervalVarargs(value: js.Any*): Self = StObject.set(x, "snapInterval", js.Array(value :_*))
+      inline def setSnapIntervalVarargs(value: Any*): Self = StObject.set(x, "snapInterval", js.Array(value*))
     }
   }
   
@@ -11240,7 +11240,7 @@ object Diagram {
     
     /** parameter returns the node that contains the text being edited
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** parameter returns the keyCode of the key entered
       */
@@ -11267,7 +11267,7 @@ object Diagram {
       
       inline def setDiagramIdUndefined: Self = StObject.set(x, "diagramId", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -11290,7 +11290,7 @@ object Diagram {
     /** Sets the margin of the tooltip
       * @Default {{ left: 5, right: 5, top: 5, bottom: 5 }}
       */
-    var margin: js.UndefOr[js.Any] = js.undefined
+    var margin: js.UndefOr[Any] = js.undefined
     
     /** Defines whether the tooltip should be shown at the mouse position or around node.
       * @Default {ej.datavisualization.Diagram.RelativeMode.Object}
@@ -11314,7 +11314,7 @@ object Diagram {
       
       inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
-      inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       

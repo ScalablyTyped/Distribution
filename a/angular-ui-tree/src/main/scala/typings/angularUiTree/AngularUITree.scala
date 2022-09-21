@@ -58,7 +58,7 @@ object AngularUITree {
     
     var dest: Index
     
-    var elements: js.Any
+    var elements: Any
     
     var pos: IPosition
     
@@ -66,7 +66,7 @@ object AngularUITree {
   }
   object IEventInfo {
     
-    inline def apply(dest: Index, elements: js.Any, pos: IPosition, source: IEventSourceInfo): IEventInfo = {
+    inline def apply(dest: Index, elements: Any, pos: IPosition, source: IEventSourceInfo): IEventInfo = {
       val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[IEventInfo]
     }
@@ -75,7 +75,7 @@ object AngularUITree {
       
       inline def setDest(value: Index): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
-      inline def setElements(value: js.Any): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: Any): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
       inline def setPos(value: IPosition): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
@@ -85,7 +85,7 @@ object AngularUITree {
   
   trait IEventSourceInfo extends StObject {
     
-    var cloneModel: js.Any
+    var cloneModel: Any
     
     var index: Double
     
@@ -95,14 +95,14 @@ object AngularUITree {
   }
   object IEventSourceInfo {
     
-    inline def apply(cloneModel: js.Any, index: Double, nodeScope: ITreeNodeScope, nodesScope: ITreeNodeScope): IEventSourceInfo = {
+    inline def apply(cloneModel: Any, index: Double, nodeScope: ITreeNodeScope, nodesScope: ITreeNodeScope): IEventSourceInfo = {
       val __obj = js.Dynamic.literal(cloneModel = cloneModel.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], nodeScope = nodeScope.asInstanceOf[js.Any], nodesScope = nodesScope.asInstanceOf[js.Any])
       __obj.asInstanceOf[IEventSourceInfo]
     }
     
     extension [Self <: IEventSourceInfo](x: Self) {
       
-      inline def setCloneModel(value: js.Any): Self = StObject.set(x, "cloneModel", value.asInstanceOf[js.Any])
+      inline def setCloneModel(value: Any): Self = StObject.set(x, "cloneModel", value.asInstanceOf[js.Any])
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -248,7 +248,7 @@ object AngularUITree {
       
       inline def setNodes(value: js.Array[ITreeNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: ITreeNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: ITreeNode*): Self = StObject.set(x, "nodes", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }

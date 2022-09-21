@@ -9,7 +9,7 @@ trait UpdateExpirationForHITRequest extends StObject {
   /**
     *  The date and time at which you want the HIT to expire 
     */
-  var ExpireAt: Timestamp
+  var ExpireAt: js.Date
   
   /**
     *  The HIT to update. 
@@ -18,14 +18,14 @@ trait UpdateExpirationForHITRequest extends StObject {
 }
 object UpdateExpirationForHITRequest {
   
-  inline def apply(ExpireAt: Timestamp, HITId: EntityId): UpdateExpirationForHITRequest = {
+  inline def apply(ExpireAt: js.Date, HITId: EntityId): UpdateExpirationForHITRequest = {
     val __obj = js.Dynamic.literal(ExpireAt = ExpireAt.asInstanceOf[js.Any], HITId = HITId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateExpirationForHITRequest]
   }
   
   extension [Self <: UpdateExpirationForHITRequest](x: Self) {
     
-    inline def setExpireAt(value: Timestamp): Self = StObject.set(x, "ExpireAt", value.asInstanceOf[js.Any])
+    inline def setExpireAt(value: js.Date): Self = StObject.set(x, "ExpireAt", value.asInstanceOf[js.Any])
     
     inline def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
   }

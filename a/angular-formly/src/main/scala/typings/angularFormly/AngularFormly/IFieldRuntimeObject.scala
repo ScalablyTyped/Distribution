@@ -9,13 +9,13 @@ trait IFieldRuntimeObject
   extends StObject
      with IFieldObject {
   
-  var model: StringDictionary[js.Any]
+  var model: StringDictionary[Any]
 }
 object IFieldRuntimeObject {
   
   inline def apply(
-    model: StringDictionary[js.Any],
-    value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])
+    model: StringDictionary[Any],
+    value: js.UndefOr[js.Function0[Any]] & (js.UndefOr[js.Function1[/* val */ Any, Unit]])
   ): IFieldRuntimeObject = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldRuntimeObject]
@@ -23,6 +23,6 @@ object IFieldRuntimeObject {
   
   extension [Self <: IFieldRuntimeObject](x: Self) {
     
-    inline def setModel(value: StringDictionary[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: StringDictionary[Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
 }

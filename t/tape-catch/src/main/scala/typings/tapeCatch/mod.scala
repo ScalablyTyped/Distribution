@@ -1,6 +1,6 @@
 package typings.tapeCatch
 
-import typings.node.NodeJS.ReadableStream
+import typings.std.ReadableStream
 import typings.tape.mod.StreamOptions
 import typings.tape.mod.TestCase
 import typings.tape.mod.TestOptions
@@ -24,10 +24,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createHarness(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createHarness")().asInstanceOf[js.Any]
+  inline def createHarness(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createHarness")().asInstanceOf[Any]
   
-  inline def createStream(): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")().asInstanceOf[ReadableStream]
-  inline def createStream(opts: StreamOptions): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(opts.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def createStream(): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")().asInstanceOf[ReadableStream[Any]]
+  inline def createStream(opts: StreamOptions): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(opts.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
   
   inline def onFailure(cb: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFailure")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

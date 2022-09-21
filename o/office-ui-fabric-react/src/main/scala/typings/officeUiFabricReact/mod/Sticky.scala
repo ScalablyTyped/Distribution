@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "Sticky")
 @js.native
-class Sticky protected ()
+open class Sticky protected ()
   extends typings.officeUiFabricReact.libStickyMod.Sticky {
   def this(props: IStickyProps) = this()
 }

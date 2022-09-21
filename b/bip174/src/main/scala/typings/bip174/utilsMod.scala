@@ -7,7 +7,7 @@ import typings.bip174.interfacesMod.PsbtInput
 import typings.bip174.interfacesMod.PsbtInputUpdate
 import typings.bip174.interfacesMod.PsbtOutput
 import typings.bip174.interfacesMod.PsbtOutputUpdate
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +18,9 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addInputAttributes(inputs: js.Array[PsbtInput], data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addInputAttributes")(inputs.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addInputAttributes(inputs: js.Array[PsbtInput], data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addInputAttributes")(inputs.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def addOutputAttributes(outputs: js.Array[PsbtOutput], data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addOutputAttributes")(outputs.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addOutputAttributes(outputs: js.Array[PsbtOutput], data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addOutputAttributes")(outputs.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def checkForInput(inputs: js.Array[PsbtInput], inputIndex: Double): PsbtInput = (^.asInstanceOf[js.Dynamic].applyDynamic("checkForInput")(inputs.asInstanceOf[js.Any], inputIndex.asInstanceOf[js.Any])).asInstanceOf[PsbtInput]
   
@@ -33,7 +33,7 @@ object utilsMod {
   
   inline def defaultVersionSetter(version: Double, txBuf: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultVersionSetter")(version.asInstanceOf[js.Any], txBuf.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  inline def getEnumLength(myenum: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnumLength")(myenum.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getEnumLength(myenum: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnumLength")(myenum.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def inputCheckUncleanFinalized(inputIndex: Double, input: PsbtInput): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inputCheckUncleanFinalized")(inputIndex.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

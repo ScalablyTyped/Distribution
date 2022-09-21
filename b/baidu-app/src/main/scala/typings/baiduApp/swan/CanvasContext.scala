@@ -370,27 +370,15 @@ trait CanvasContext extends StObject {
   def setStrokeStyle(color: String): Unit = js.native
   def setStrokeStyle(color: CanvasGradient): Unit = js.native
   
-  @JSName("setTextAlign")
-  def setTextAlign_center(align: center): Unit = js.native
   /**
     * 用于设置文字的对齐
     */
-  @JSName("setTextAlign")
-  def setTextAlign_left(align: left): Unit = js.native
-  @JSName("setTextAlign")
-  def setTextAlign_right(align: right): Unit = js.native
+  def setTextAlign(align: left | center | right): Unit = js.native
   
-  @JSName("setTextBaseline")
-  def setTextBaseline_bottom(textBaseline: bottom): Unit = js.native
-  @JSName("setTextBaseline")
-  def setTextBaseline_middle(textBaseline: middle): Unit = js.native
-  @JSName("setTextBaseline")
-  def setTextBaseline_normal(textBaseline: normal): Unit = js.native
   /**
     * 用于设置文字的水平对齐
     */
-  @JSName("setTextBaseline")
-  def setTextBaseline_top(textBaseline: top): Unit = js.native
+  def setTextBaseline(textBaseline: top | bottom | middle | normal): Unit = js.native
   
   /**
     * 使用矩阵重新设置（覆盖）当前变换的方法。

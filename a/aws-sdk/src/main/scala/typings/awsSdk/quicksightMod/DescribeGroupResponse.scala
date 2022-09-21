@@ -12,7 +12,7 @@ trait DescribeGroupResponse extends StObject {
   var Group: js.UndefOr[typings.awsSdk.quicksightMod.Group] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   

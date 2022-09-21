@@ -16,7 +16,7 @@ trait Promise[T] extends StObject {
     * @returns A Promise for the completion of the callback.
     */
   def `catch`(): Promise[T] = js.native
-  def `catch`(onrejected: js.Function1[/* reason */ js.Any, PromiseLike[T] | T | Unit]): Promise[T] = js.native
+  def `catch`(onrejected: js.Function1[/* reason */ Any, PromiseLike[T] | T | Unit]): Promise[T] = js.native
   
   /**
     * Attaches callbacks for the resolution and/or rejection of the Promise.
@@ -28,10 +28,10 @@ trait Promise[T] extends StObject {
   def `then`[TResult](onfulfilled: js.Function1[/* value */ T, TResult | PromiseLike[TResult]]): Promise[TResult] = js.native
   def `then`[TResult](
     onfulfilled: js.Function1[/* value */ T, PromiseLike[TResult] | TResult],
-    onrejected: js.Function1[/* reason */ js.Any, PromiseLike[TResult] | TResult | Unit]
+    onrejected: js.Function1[/* reason */ Any, PromiseLike[TResult] | TResult | Unit]
   ): Promise[TResult] = js.native
   def `then`[TResult](
     onfulfilled: Unit,
-    onrejected: js.Function1[/* reason */ js.Any, PromiseLike[TResult] | TResult | Unit]
+    onrejected: js.Function1[/* reason */ Any, PromiseLike[TResult] | TResult | Unit]
   ): Promise[TResult] = js.native
 }

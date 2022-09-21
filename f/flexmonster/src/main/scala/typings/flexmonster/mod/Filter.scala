@@ -29,13 +29,13 @@ object Filter {
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
     
     inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
     
     inline def setMeasure(value: String | MeasureObject): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
     
@@ -45,7 +45,7 @@ object Filter {
     
     inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setQuery(value: NumberQuery | LabelQuery | DateQuery | TimeQuery | ValueQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

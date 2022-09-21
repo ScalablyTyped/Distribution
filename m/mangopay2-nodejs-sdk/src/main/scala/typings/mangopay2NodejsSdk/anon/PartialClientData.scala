@@ -1,12 +1,12 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.mod.address.AddressType
-import typings.mangopay2NodejsSdk.mod.client.PlatformCategorization
+import typings.mangopay2NodejsSdk.addressMod.address.AddressType
+import typings.mangopay2NodejsSdk.clientMod.client.PlatformCategorization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.client.ClientData> */
+/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/client.client.ClientData> */
 trait PartialClientData extends StObject {
   
   var AdminEmails: js.UndefOr[js.Array[String]] = js.undefined
@@ -23,13 +23,15 @@ trait PartialClientData extends StObject {
   
   var HeadquartersAddress: js.UndefOr[AddressType] = js.undefined
   
+  var HeadquartersPhoneNumber: js.UndefOr[String] = js.undefined
+  
   var Id: js.UndefOr[String] = js.undefined
   
   var Logo: js.UndefOr[String] = js.undefined
   
   var Name: js.UndefOr[String] = js.undefined
   
-  var PlatformCategorization: js.UndefOr[typings.mangopay2NodejsSdk.mod.client.PlatformCategorization] = js.undefined
+  var PlatformCategorization: js.UndefOr[typings.mangopay2NodejsSdk.clientMod.client.PlatformCategorization] = js.undefined
   
   var PlatformDescription: js.UndefOr[String] = js.undefined
   
@@ -60,13 +62,13 @@ object PartialClientData {
     
     inline def setAdminEmailsUndefined: Self = StObject.set(x, "AdminEmails", js.undefined)
     
-    inline def setAdminEmailsVarargs(value: String*): Self = StObject.set(x, "AdminEmails", js.Array(value :_*))
+    inline def setAdminEmailsVarargs(value: String*): Self = StObject.set(x, "AdminEmails", js.Array(value*))
     
     inline def setBillingEmails(value: js.Array[String]): Self = StObject.set(x, "BillingEmails", value.asInstanceOf[js.Any])
     
     inline def setBillingEmailsUndefined: Self = StObject.set(x, "BillingEmails", js.undefined)
     
-    inline def setBillingEmailsVarargs(value: String*): Self = StObject.set(x, "BillingEmails", js.Array(value :_*))
+    inline def setBillingEmailsVarargs(value: String*): Self = StObject.set(x, "BillingEmails", js.Array(value*))
     
     inline def setClientId(value: String): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
@@ -84,11 +86,15 @@ object PartialClientData {
     
     inline def setFraudEmailsUndefined: Self = StObject.set(x, "FraudEmails", js.undefined)
     
-    inline def setFraudEmailsVarargs(value: String*): Self = StObject.set(x, "FraudEmails", js.Array(value :_*))
+    inline def setFraudEmailsVarargs(value: String*): Self = StObject.set(x, "FraudEmails", js.Array(value*))
     
     inline def setHeadquartersAddress(value: AddressType): Self = StObject.set(x, "HeadquartersAddress", value.asInstanceOf[js.Any])
     
     inline def setHeadquartersAddressUndefined: Self = StObject.set(x, "HeadquartersAddress", js.undefined)
+    
+    inline def setHeadquartersPhoneNumber(value: String): Self = StObject.set(x, "HeadquartersPhoneNumber", value.asInstanceOf[js.Any])
+    
+    inline def setHeadquartersPhoneNumberUndefined: Self = StObject.set(x, "HeadquartersPhoneNumber", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
@@ -138,6 +144,6 @@ object PartialClientData {
     
     inline def setTechEmailsUndefined: Self = StObject.set(x, "TechEmails", js.undefined)
     
-    inline def setTechEmailsVarargs(value: String*): Self = StObject.set(x, "TechEmails", js.Array(value :_*))
+    inline def setTechEmailsVarargs(value: String*): Self = StObject.set(x, "TechEmails", js.Array(value*))
   }
 }

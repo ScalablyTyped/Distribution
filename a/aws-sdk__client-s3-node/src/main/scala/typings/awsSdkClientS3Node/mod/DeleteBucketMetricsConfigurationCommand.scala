@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-node", "DeleteBucketMetricsConfigurationCommand")
 @js.native
-class DeleteBucketMetricsConfigurationCommand protected ()
+open class DeleteBucketMetricsConfigurationCommand protected ()
   extends typings.awsSdkClientS3Node.deleteBucketMetricsConfigurationCommandMod.DeleteBucketMetricsConfigurationCommand {
   def this(input: DeleteBucketMetricsConfigurationInput) = this()
 }

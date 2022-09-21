@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pointerEventsMod {
   
-  @JSImport("konva/types/PointerEvents", JSImport.Namespace)
+  @JSImport("konva/lib/PointerEvents", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -44,9 +44,11 @@ object pointerEventsMod {
       currentTarget: Node[NodeConfig],
       evt: PointerEvent,
       pointerId: Double,
-      target: Shape[ShapeConfig] | Stage
+      target: Shape[ShapeConfig] | Stage,
+      `type`: String
     ): KonvaPointerEvent = {
       val __obj = js.Dynamic.literal(cancelBubble = cancelBubble.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], evt = evt.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[KonvaPointerEvent]
     }
     

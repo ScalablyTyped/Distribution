@@ -21,7 +21,7 @@ trait ISystemBase extends StObject {
     * different: it makes the component reload on the entity with the new data as if it had just been added to the entity.
     * @param component The component object retrieved from the entity that was returned by either createComponent() or getComponent()
     */
-  def applyComponentChanges(entity: IEntity, component: IComponent[js.Any]): `true` | Null = js.native
+  def applyComponentChanges(entity: IEntity, component: IComponent[Any]): `true` | Null = js.native
   
   /**
     * Creates an empty entity with no components and does not place it in the world.
@@ -34,10 +34,7 @@ trait ISystemBase extends StObject {
     * @param type Specifies the type of the entity that is being created by the template. Valid inputs are `entity` and `item_entity`
     * @param templateIdentifier This can be any of the entity identifiers from the applied Behavior Packs. For example specifying minecraft:cow here will make the provided entity a cow as defined in JSON
     */
-  @JSName("createEntity")
-  def createEntity_entity(`type`: entity, templateIdentifier: String): IEntity | Null = js.native
-  @JSName("createEntity")
-  def createEntity_itementity(`type`: item_entity, templateIdentifier: String): IEntity | Null = js.native
+  def createEntity(`type`: entity | item_entity, templateIdentifier: String): IEntity | Null = js.native
   
   /**
     * Removes the specified component from the given entity. If the entity has the component, it will be removed. Currently this only works with custom components and can't be used to remove components defined for an entity in JSON.

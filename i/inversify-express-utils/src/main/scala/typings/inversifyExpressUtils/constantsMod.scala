@@ -6,51 +6,127 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object constantsMod {
   
-  @JSImport("inversify-express-utils/dts/constants", JSImport.Namespace)
+  @JSImport("inversify-express-utils/lib/constants", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("inversify-express-utils/dts/constants", "DEFAULT_ROUTING_ROOT_PATH")
+  @JSImport("inversify-express-utils/lib/constants", "DEFAULT_ROUTING_ROOT_PATH")
   @js.native
   val DEFAULT_ROUTING_ROOT_PATH: /* "/" */ String = js.native
   
   inline def DUPLICATED_CONTROLLER_NAME(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DUPLICATED_CONTROLLER_NAME")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  @js.native
+  sealed trait HTTP_VERBS_ENUM extends StObject
+  @JSImport("inversify-express-utils/lib/constants", "HTTP_VERBS_ENUM")
+  @js.native
+  object HTTP_VERBS_ENUM extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[HTTP_VERBS_ENUM & String] = js.native
+    
+    @js.native
+    sealed trait all
+      extends StObject
+         with HTTP_VERBS_ENUM
+    /* "ALL" */ val all: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.all & String = js.native
+    
+    @js.native
+    sealed trait connect
+      extends StObject
+         with HTTP_VERBS_ENUM
+    /* "CONNECT" */ val connect: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.connect & String = js.native
+    
+    @js.native
+    sealed trait delete
+      extends StObject
+         with HTTP_VERBS_ENUM
+    /* "DELETE" */ val delete: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.delete & String = js.native
+    
+    @js.native
+    sealed trait get
+      extends StObject
+         with HTTP_VERBS_ENUM
+    /* "GET" */ val get: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.get & String = js.native
+    
+    @js.native
+    sealed trait head
+      extends StObject
+         with HTTP_VERBS_ENUM
+    /* "HEAD" */ val head: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.head & String = js.native
+    
+    @js.native
+    sealed trait options
+      extends StObject
+         with HTTP_VERBS_ENUM
+    /* "OPTIONS" */ val options: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.options & String = js.native
+    
+    @js.native
+    sealed trait patch
+      extends StObject
+         with HTTP_VERBS_ENUM
+    /* "PATCH" */ val patch: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.patch & String = js.native
+    
+    @js.native
+    sealed trait post
+      extends StObject
+         with HTTP_VERBS_ENUM
+    /* "POST" */ val post: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.post & String = js.native
+    
+    @js.native
+    sealed trait propfind
+      extends StObject
+         with HTTP_VERBS_ENUM
+    /* "PROPFIND" */ val propfind: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.propfind & String = js.native
+    
+    @js.native
+    sealed trait put
+      extends StObject
+         with HTTP_VERBS_ENUM
+    /* "PUT" */ val put: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.put & String = js.native
+    
+    @js.native
+    sealed trait trace
+      extends StObject
+         with HTTP_VERBS_ENUM
+    /* "TRACE" */ val trace: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.trace & String = js.native
+  }
+  
   object METADATA_KEY {
     
-    @JSImport("inversify-express-utils/dts/constants", "METADATA_KEY")
+    @JSImport("inversify-express-utils/lib/constants", "METADATA_KEY")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("inversify-express-utils/dts/constants", "METADATA_KEY.controller")
+    @JSImport("inversify-express-utils/lib/constants", "METADATA_KEY.controller")
     @js.native
     def controller: String = js.native
     
-    @JSImport("inversify-express-utils/dts/constants", "METADATA_KEY.controllerMethod")
+    @JSImport("inversify-express-utils/lib/constants", "METADATA_KEY.controllerMethod")
     @js.native
     def controllerMethod: String = js.native
     inline def controllerMethod_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controllerMethod")(x.asInstanceOf[js.Any])
     
-    @JSImport("inversify-express-utils/dts/constants", "METADATA_KEY.controllerParameter")
+    @JSImport("inversify-express-utils/lib/constants", "METADATA_KEY.controllerParameter")
     @js.native
     def controllerParameter: String = js.native
     inline def controllerParameter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controllerParameter")(x.asInstanceOf[js.Any])
     
     inline def controller_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controller")(x.asInstanceOf[js.Any])
     
-    @JSImport("inversify-express-utils/dts/constants", "METADATA_KEY.httpContext")
+    @JSImport("inversify-express-utils/lib/constants", "METADATA_KEY.httpContext")
     @js.native
     def httpContext: String = js.native
     inline def httpContext_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("httpContext")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("inversify-express-utils/dts/constants", "NO_CONTROLLERS_FOUND")
+  @JSImport("inversify-express-utils/lib/constants", "NO_CONTROLLERS_FOUND")
   @js.native
-  val NO_CONTROLLERS_FOUND: String = js.native
+  val NO_CONTROLLERS_FOUND: /* "No controllers have been found! Please ensure that you have register at least one Controller." */ String = js.native
   
   @js.native
   sealed trait PARAMETER_TYPE extends StObject
-  @JSImport("inversify-express-utils/dts/constants", "PARAMETER_TYPE")
+  @JSImport("inversify-express-utils/lib/constants", "PARAMETER_TYPE")
   @js.native
   object PARAMETER_TYPE extends StObject {
     
@@ -114,21 +190,21 @@ object constantsMod {
   
   object TYPE {
     
-    @JSImport("inversify-express-utils/dts/constants", "TYPE")
+    @JSImport("inversify-express-utils/lib/constants", "TYPE")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("inversify-express-utils/dts/constants", "TYPE.AuthProvider")
+    @JSImport("inversify-express-utils/lib/constants", "TYPE.AuthProvider")
     @js.native
     def AuthProvider: js.Symbol = js.native
     inline def AuthProvider_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AuthProvider")(x.asInstanceOf[js.Any])
     
-    @JSImport("inversify-express-utils/dts/constants", "TYPE.Controller")
+    @JSImport("inversify-express-utils/lib/constants", "TYPE.Controller")
     @js.native
     def Controller: js.Symbol = js.native
     inline def Controller_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Controller")(x.asInstanceOf[js.Any])
     
-    @JSImport("inversify-express-utils/dts/constants", "TYPE.HttpContext")
+    @JSImport("inversify-express-utils/lib/constants", "TYPE.HttpContext")
     @js.native
     def HttpContext: js.Symbol = js.native
     inline def HttpContext_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HttpContext")(x.asInstanceOf[js.Any])

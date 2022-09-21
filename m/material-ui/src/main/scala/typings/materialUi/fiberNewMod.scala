@@ -10,10 +10,10 @@ object fiberNewMod {
   
   @JSImport("material-ui/svg-icons/av/fiber-new", JSImport.Default)
   @js.native
-  class default () extends AvFiberNew
+  open class default () extends AvFiberNew
   
   @JSImport("material-ui/svg-icons/av/fiber-new", "AvFiberNew")
   @js.native
-  class AvFiberNew ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvFiberNew ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

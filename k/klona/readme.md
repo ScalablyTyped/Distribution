@@ -1,7 +1,7 @@
 
 # Scala.js typings for klona
 
-Typings are for version 2.0.4
+Typings are for version 2.0.5
 
 ## Library description:
 A tiny (240B to 501B) and fast utility to "deep clone" Objects, Arrays, Dates, RegExps, and more!
@@ -10,10 +10,10 @@ A tiny (240B to 501B) and fast utility to "deep clone" Objects, Arrays, Dates, R
 | ------------------ | :-------------: |
 | Full name          | klona |
 | Keywords           | clone, copy, deep, extend, recursive, object |
-| # releases         | 12 |
-| # dependents       | 38 |
-| # downloads        | 49347786 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 4.1232156333333336E7 |
+| # stars            | 1181.0 |
 
 ## Links
 - [Homepage](https://github.com/lukeed/klona#readme)

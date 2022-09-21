@@ -8,6 +8,6 @@ object textAreaMod {
   
   @JSImport("semantic-ui-react/dist/commonjs/addons/TextArea", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.semanticUiReact.textAreaTextAreaMod.default
 }

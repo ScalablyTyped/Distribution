@@ -13,7 +13,7 @@ object anon {
     var maxLength: js.UndefOr[Double] = js.undefined
     
     var replacer: js.UndefOr[
-        (js.Function2[/* key */ String, /* value */ js.Any, js.Any]) | (js.Array[Double | String]) | Null
+        (js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]) | (js.Array[Double | String])
       ] = js.undefined
   }
   object Indent {
@@ -33,15 +33,13 @@ object anon {
       
       inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      inline def setReplacer(value: (js.Function2[/* key */ String, /* value */ js.Any, js.Any]) | (js.Array[Double | String])): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
-      
-      inline def setReplacerFunction2(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
-      
-      inline def setReplacerNull: Self = StObject.set(x, "replacer", null)
+      inline def setReplacer(
+        value: (js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]) | (js.Array[Double | String])
+      ): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
       
       inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
       
-      inline def setReplacerVarargs(value: (Double | String)*): Self = StObject.set(x, "replacer", js.Array(value :_*))
+      inline def setReplacerVarargs(value: (Double | String)*): Self = StObject.set(x, "replacer", js.Array(value*))
     }
   }
 }

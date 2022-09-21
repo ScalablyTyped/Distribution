@@ -1,13 +1,14 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.IAgentParameters
+import typings.babylonjs.anon.Destination
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.RecastJSCrowd")
 @js.native
-class RecastJSCrowd protected ()
+open class RecastJSCrowd protected ()
   extends StObject
      with typings.babylonjs.BABYLON.RecastJSCrowd {
   /**
@@ -26,16 +27,28 @@ class RecastJSCrowd protected ()
   ) = this()
   
   /**
+    * agent current target
+    */
+  /* private */ /* CompleteClass */
+  var _agentDestination: Any = js.native
+  
+  /**
+    * true when a destination is active for an agent and notifier hasn't been notified of reach
+    */
+  /* private */ /* CompleteClass */
+  var _agentDestinationArmed: Any = js.native
+  
+  /**
     * Observer for crowd updates
     */
   /* private */ /* CompleteClass */
-  var _onBeforeAnimationsObserver: js.Any = js.native
+  var _onBeforeAnimationsObserver: Any = js.native
   
   /**
     * Link to the scene is kept to unregister the crowd from the scene
     */
   /* private */ /* CompleteClass */
-  var _scene: js.Any = js.native
+  var _scene: Any = js.native
   
   /**
     * Add a new agent to the crowd with the specified parameter a corresponding transformNode.
@@ -150,6 +163,14 @@ class RecastJSCrowd protected ()
   override def getAgents(): js.Array[Double] = js.native
   
   /**
+    * Get the next corner points composing the path (max 4 points)
+    * @param index agent index returned by addAgent
+    * @returns array containing world position composing the path
+    */
+  /* CompleteClass */
+  override def getCorners(index: Double): js.Array[typings.babylonjs.BABYLON.Vector3] = js.native
+  
+  /**
     * Get the Bounding box extent specified by setDefaultQueryExtent
     * @returns the box extent values
     */
@@ -164,6 +185,12 @@ class RecastJSCrowd protected ()
   override def getDefaultQueryExtentToRef(result: typings.babylonjs.BABYLON.Vector3): Unit = js.native
   
   /**
+    * Fires each time an agent is in reach radius of its destination
+    */
+  /* CompleteClass */
+  var onReachTargetObservable: typings.babylonjs.BABYLON.Observable[Destination] = js.native
+  
+  /**
     * returns true if the agent in over an off mesh link connection
     * @param index agent index returned by addAgent
     * @returns true if over an off mesh link connection
@@ -172,10 +199,16 @@ class RecastJSCrowd protected ()
   override def overOffmeshConnection(index: Double): Boolean = js.native
   
   /**
+    * agents reach radius
+    */
+  /* CompleteClass */
+  var reachRadii: js.Array[Double] = js.native
+  
+  /**
     * Link to the detour crowd
     */
   /* CompleteClass */
-  var recastCrowd: js.Any = js.native
+  var recastCrowd: Any = js.native
   
   /**
     * remove a particular agent previously created

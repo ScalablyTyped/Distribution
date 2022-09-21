@@ -10,7 +10,7 @@ object Topology {
   
   @JSImport("orientjs", "Topology.OCluster")
   @js.native
-  class OCluster () extends EventEmitter {
+  open class OCluster () extends EventEmitter {
     def this(config: OClusterConfig) = this()
     
     def acquireFrom(selection: js.Function1[/* cluster */ this.type, OServerNode]): js.Promise[OServerNode] = js.native
@@ -24,7 +24,7 @@ object Topology {
   
   @JSImport("orientjs", "Topology.OServerNode")
   @js.native
-  class OServerNode () extends EventEmitter {
+  open class OServerNode () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
     def acquireConnection(): js.Promise[OConnection] = js.native
@@ -36,7 +36,7 @@ object Topology {
     def connect(): js.Promise[OServerNode] = js.native
     
     def subscribeCluster(): js.Promise[OConnection] = js.native
-    def subscribeCluster(data: js.Any): js.Promise[OConnection] = js.native
+    def subscribeCluster(data: Any): js.Promise[OConnection] = js.native
   }
   
   trait OClusterConfig extends StObject {

@@ -12,7 +12,7 @@ trait AdminDisableUserRequest extends StObject {
   var UserPoolId: UserPoolIdType
   
   /**
-    * The user name of the user you wish to disable.
+    * The user name of the user you want to disable.
     */
   var Username: UsernameType
 }

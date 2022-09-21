@@ -28,7 +28,7 @@ object ListLosingBidsResponse {
     
     inline def setCreativeStatusRowsUndefined: Self = StObject.set(x, "creativeStatusRows", js.undefined)
     
-    inline def setCreativeStatusRowsVarargs(value: CreativeStatusRow*): Self = StObject.set(x, "creativeStatusRows", js.Array(value :_*))
+    inline def setCreativeStatusRowsVarargs(value: CreativeStatusRow*): Self = StObject.set(x, "creativeStatusRows", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

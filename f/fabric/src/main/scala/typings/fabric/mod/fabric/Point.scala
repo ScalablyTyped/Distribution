@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.Point")
 @js.native
-class Point protected ()
+open class Point protected ()
   extends typings.fabric.fabricImplMod.Point {
   def this(x: Double, y: Double) = this()
 }

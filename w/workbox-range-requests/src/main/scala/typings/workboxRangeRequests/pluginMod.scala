@@ -12,7 +12,7 @@ object pluginMod {
   
   @JSImport("workbox-range-requests/Plugin", "Plugin")
   @js.native
-  class Plugin ()
+  open class Plugin ()
     extends StObject
        with WorkboxPlugin {
     

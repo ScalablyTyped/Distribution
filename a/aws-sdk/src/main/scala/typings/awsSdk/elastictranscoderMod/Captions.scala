@@ -34,13 +34,13 @@ object Captions {
     
     inline def setCaptionFormatsUndefined: Self = StObject.set(x, "CaptionFormats", js.undefined)
     
-    inline def setCaptionFormatsVarargs(value: CaptionFormat*): Self = StObject.set(x, "CaptionFormats", js.Array(value :_*))
+    inline def setCaptionFormatsVarargs(value: CaptionFormat*): Self = StObject.set(x, "CaptionFormats", js.Array(value*))
     
     inline def setCaptionSources(value: CaptionSources): Self = StObject.set(x, "CaptionSources", value.asInstanceOf[js.Any])
     
     inline def setCaptionSourcesUndefined: Self = StObject.set(x, "CaptionSources", js.undefined)
     
-    inline def setCaptionSourcesVarargs(value: CaptionSource*): Self = StObject.set(x, "CaptionSources", js.Array(value :_*))
+    inline def setCaptionSourcesVarargs(value: CaptionSource*): Self = StObject.set(x, "CaptionSources", js.Array(value*))
     
     inline def setMergePolicy(value: CaptionMergePolicy): Self = StObject.set(x, "MergePolicy", value.asInstanceOf[js.Any])
     

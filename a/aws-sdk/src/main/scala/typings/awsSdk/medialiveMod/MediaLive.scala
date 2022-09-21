@@ -109,6 +109,20 @@ trait MediaLive extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CancelInputDeviceTransferResponse, Unit]
   ): Request[CancelInputDeviceTransferResponse, AWSError] = js.native
   
+  /**
+    * Send a request to claim an AWS Elemental device that you have purchased from a third-party vendor. After the request succeeds, you will own the device.
+    */
+  def claimDevice(): Request[ClaimDeviceResponse, AWSError] = js.native
+  def claimDevice(callback: js.Function2[/* err */ AWSError, /* data */ ClaimDeviceResponse, Unit]): Request[ClaimDeviceResponse, AWSError] = js.native
+  /**
+    * Send a request to claim an AWS Elemental device that you have purchased from a third-party vendor. After the request succeeds, you will own the device.
+    */
+  def claimDevice(params: ClaimDeviceRequest): Request[ClaimDeviceResponse, AWSError] = js.native
+  def claimDevice(
+    params: ClaimDeviceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ClaimDeviceResponse, Unit]
+  ): Request[ClaimDeviceResponse, AWSError] = js.native
+  
   @JSName("config")
   var config_MediaLive: ConfigBase & ClientConfiguration = js.native
   
@@ -181,6 +195,20 @@ trait MediaLive extends Service {
     params: CreateMultiplexProgramRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateMultiplexProgramResponse, Unit]
   ): Request[CreateMultiplexProgramResponse, AWSError] = js.native
+  
+  /**
+    * Create a partner input
+    */
+  def createPartnerInput(): Request[CreatePartnerInputResponse, AWSError] = js.native
+  def createPartnerInput(callback: js.Function2[/* err */ AWSError, /* data */ CreatePartnerInputResponse, Unit]): Request[CreatePartnerInputResponse, AWSError] = js.native
+  /**
+    * Create a partner input
+    */
+  def createPartnerInput(params: CreatePartnerInputRequest): Request[CreatePartnerInputResponse, AWSError] = js.native
+  def createPartnerInput(
+    params: CreatePartnerInputRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreatePartnerInputResponse, Unit]
+  ): Request[CreatePartnerInputResponse, AWSError] = js.native
   
   /**
     * Create tags for a resource
@@ -597,6 +625,20 @@ trait MediaLive extends Service {
   ): Request[PurchaseOfferingResponse, AWSError] = js.native
   
   /**
+    * Send a reboot command to the specified input device. The device will begin rebooting within a few seconds of sending the command. When the reboot is complete, the device’s connection status will change to connected.
+    */
+  def rebootInputDevice(): Request[RebootInputDeviceResponse, AWSError] = js.native
+  def rebootInputDevice(callback: js.Function2[/* err */ AWSError, /* data */ RebootInputDeviceResponse, Unit]): Request[RebootInputDeviceResponse, AWSError] = js.native
+  /**
+    * Send a reboot command to the specified input device. The device will begin rebooting within a few seconds of sending the command. When the reboot is complete, the device’s connection status will change to connected.
+    */
+  def rebootInputDevice(params: RebootInputDeviceRequest): Request[RebootInputDeviceResponse, AWSError] = js.native
+  def rebootInputDevice(
+    params: RebootInputDeviceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RebootInputDeviceResponse, Unit]
+  ): Request[RebootInputDeviceResponse, AWSError] = js.native
+  
+  /**
     * Reject the transfer of the specified input device to your AWS account.
     */
   def rejectInputDeviceTransfer(): Request[RejectInputDeviceTransferResponse, AWSError] = js.native
@@ -623,6 +665,22 @@ trait MediaLive extends Service {
     params: StartChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartChannelResponse, Unit]
   ): Request[StartChannelResponse, AWSError] = js.native
+  
+  /**
+    * Start a maintenance window for the specified input device. Starting a maintenance window will give the device up to two hours to install software. If the device was streaming prior to the maintenance, it will resume streaming when the software is fully installed. Devices automatically install updates while they are powered on and their MediaLive channels are stopped. A maintenance window allows you to update a device without having to stop MediaLive channels that use the device. The device must remain powered on and connected to the internet for the duration of the maintenance.
+    */
+  def startInputDeviceMaintenanceWindow(): Request[StartInputDeviceMaintenanceWindowResponse, AWSError] = js.native
+  def startInputDeviceMaintenanceWindow(
+    callback: js.Function2[/* err */ AWSError, /* data */ StartInputDeviceMaintenanceWindowResponse, Unit]
+  ): Request[StartInputDeviceMaintenanceWindowResponse, AWSError] = js.native
+  /**
+    * Start a maintenance window for the specified input device. Starting a maintenance window will give the device up to two hours to install software. If the device was streaming prior to the maintenance, it will resume streaming when the software is fully installed. Devices automatically install updates while they are powered on and their MediaLive channels are stopped. A maintenance window allows you to update a device without having to stop MediaLive channels that use the device. The device must remain powered on and connected to the internet for the duration of the maintenance.
+    */
+  def startInputDeviceMaintenanceWindow(params: StartInputDeviceMaintenanceWindowRequest): Request[StartInputDeviceMaintenanceWindowResponse, AWSError] = js.native
+  def startInputDeviceMaintenanceWindow(
+    params: StartInputDeviceMaintenanceWindowRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartInputDeviceMaintenanceWindowResponse, Unit]
+  ): Request[StartInputDeviceMaintenanceWindowResponse, AWSError] = js.native
   
   /**
     * Start (run) the multiplex. Starting the multiplex does not start the channels. You must explicitly start each channel.

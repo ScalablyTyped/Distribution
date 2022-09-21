@@ -34,7 +34,7 @@ object i18n {
     * @returns Message localized for current locale.
     */
   inline def getMessage(messageName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageName.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def getMessage(messageName: String, substitutions: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageName.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getMessage(messageName: String, substitutions: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageName.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Gets the browser UI language of the browser. This is different from `i18n.getAcceptLanguages` which returns the preferred user languages.

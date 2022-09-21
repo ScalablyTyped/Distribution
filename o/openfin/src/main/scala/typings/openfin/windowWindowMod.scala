@@ -28,11 +28,11 @@ object windowWindowMod {
   
   @JSImport("openfin/_v2/api/window/window", JSImport.Default)
   @js.native
-  class default () extends WindowModule
+  open class default () extends WindowModule
   
   @JSImport("openfin/_v2/api/window/window", "_Window")
   @js.native
-  class Window protected () extends WebContents[WindowEvents] {
+  open class Window protected () extends WebContents[WindowEvents] {
     def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
     
     /**
@@ -368,7 +368,7 @@ object windowWindowMod {
       * @return {Promise.<any>}
       * @tutorial Window.getOptions
       */
-    def getOptions(): js.Promise[js.Any] = js.native
+    def getOptions(): js.Promise[Any] = js.native
     
     /**
       * Gets the parent application.
@@ -590,9 +590,9 @@ object windowWindowMod {
       * @return {Promise.<void>}
       * @tutorial Window.updateOptions
       */
-    def updateOptions(options: js.Any): js.Promise[Unit] = js.native
+    def updateOptions(options: Any): js.Promise[Unit] = js.native
     
-    /* private */ var windowListFromNameList: js.Any = js.native
+    /* private */ var windowListFromNameList: Any = js.native
   }
   
   trait Area extends StObject {
@@ -922,7 +922,7 @@ object windowWindowMod {
     
     var canNavigateForward: Boolean
     
-    var preloadScripts: js.Array[js.Any]
+    var preloadScripts: js.Array[Any]
     
     var title: String
     
@@ -933,7 +933,7 @@ object windowWindowMod {
     inline def apply(
       canNavigateBack: Boolean,
       canNavigateForward: Boolean,
-      preloadScripts: js.Array[js.Any],
+      preloadScripts: js.Array[Any],
       title: String,
       url: String
     ): WindowInfo = {
@@ -947,9 +947,9 @@ object windowWindowMod {
       
       inline def setCanNavigateForward(value: Boolean): Self = StObject.set(x, "canNavigateForward", value.asInstanceOf[js.Any])
       
-      inline def setPreloadScripts(value: js.Array[js.Any]): Self = StObject.set(x, "preloadScripts", value.asInstanceOf[js.Any])
+      inline def setPreloadScripts(value: js.Array[Any]): Self = StObject.set(x, "preloadScripts", value.asInstanceOf[js.Any])
       
-      inline def setPreloadScriptsVarargs(value: js.Any*): Self = StObject.set(x, "preloadScripts", js.Array(value :_*))
+      inline def setPreloadScriptsVarargs(value: Any*): Self = StObject.set(x, "preloadScripts", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

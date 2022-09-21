@@ -12,7 +12,7 @@ import typings.materialUi.MaterialUI.Styles.zIndex
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,8 +30,8 @@ object Styles {
   
   @JSGlobal("__MaterialUI.Styles.MuiThemeProvider")
   @js.native
-  class MuiThemeProvider ()
-    extends Component[MuiThemeProviderProps, js.Object, js.Any]
+  open class MuiThemeProvider ()
+    extends Component[MuiThemeProviderProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.Styles.Spacing")
   @js.native
@@ -58,7 +58,7 @@ object Styles {
   def darkBaseTheme: RawTheme = js.native
   inline def darkBaseTheme_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkBaseTheme")(x.asInstanceOf[js.Any])
   
-  inline def getMuiTheme(muiTheme: MuiTheme*): MuiTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getMuiTheme")(muiTheme.asInstanceOf[js.Any]).asInstanceOf[MuiTheme]
+  inline def getMuiTheme(muiTheme: MuiTheme*): MuiTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getMuiTheme")(muiTheme.asInstanceOf[Seq[js.Any]]*).asInstanceOf[MuiTheme]
   
   @JSGlobal("__MaterialUI.Styles.lightBaseTheme")
   @js.native
@@ -66,11 +66,11 @@ object Styles {
   inline def lightBaseTheme_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightBaseTheme")(x.asInstanceOf[js.Any])
   
   inline def muiThemeable(): js.Function1[
-    /* component */ (ComponentClass[typings.materialUi.anon.MuiTheme, ComponentState]) | StatelessComponent[typings.materialUi.anon.MuiTheme], 
-    (ComponentClass[typings.materialUi.anon.MuiTheme, ComponentState]) | StatelessComponent[typings.materialUi.anon.MuiTheme]
+    /* component */ (ComponentClass[typings.materialUi.anon.MuiTheme, ComponentState]) | FunctionComponent[typings.materialUi.anon.MuiTheme], 
+    (ComponentClass[typings.materialUi.anon.MuiTheme, ComponentState]) | FunctionComponent[typings.materialUi.anon.MuiTheme]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("muiThemeable")().asInstanceOf[js.Function1[
-    /* component */ (ComponentClass[typings.materialUi.anon.MuiTheme, ComponentState]) | StatelessComponent[typings.materialUi.anon.MuiTheme], 
-    (ComponentClass[typings.materialUi.anon.MuiTheme, ComponentState]) | StatelessComponent[typings.materialUi.anon.MuiTheme]
+    /* component */ (ComponentClass[typings.materialUi.anon.MuiTheme, ComponentState]) | FunctionComponent[typings.materialUi.anon.MuiTheme], 
+    (ComponentClass[typings.materialUi.anon.MuiTheme, ComponentState]) | FunctionComponent[typings.materialUi.anon.MuiTheme]
   ]]
   
   @JSGlobal("__MaterialUI.Styles.zIndex")

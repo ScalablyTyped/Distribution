@@ -9,7 +9,7 @@ trait ActionEvent
      with IActionEvent
 object ActionEvent {
   
-  inline def apply(pointerX: Double, pointerY: Double, source: js.Any): ActionEvent = {
+  inline def apply(pointerX: Double, pointerY: Double, source: Any): ActionEvent = {
     val __obj = js.Dynamic.literal(pointerX = pointerX.asInstanceOf[js.Any], pointerY = pointerY.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], meshUnderPointer = null)
     __obj.asInstanceOf[ActionEvent]
   }

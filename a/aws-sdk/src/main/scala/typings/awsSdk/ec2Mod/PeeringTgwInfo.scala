@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PeeringTgwInfo extends StObject {
   
   /**
-    * The AWS account ID of the owner of the transit gateway.
+    * The ID of the core network where the transit gateway peer is located.
+    */
+  var CoreNetworkId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The ID of the Amazon Web Services account that owns the transit gateway.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -29,6 +34,10 @@ object PeeringTgwInfo {
   }
   
   extension [Self <: PeeringTgwInfo](x: Self) {
+    
+    inline def setCoreNetworkId(value: String): Self = StObject.set(x, "CoreNetworkId", value.asInstanceOf[js.Any])
+    
+    inline def setCoreNetworkIdUndefined: Self = StObject.set(x, "CoreNetworkId", js.undefined)
     
     inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     

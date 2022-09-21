@@ -19,7 +19,7 @@ object DotNet {
       * @param args Arguments to pass to the method, each of which must be JSON-serializable.
       * @returns The result of the operation.
       */
-    def invokeMethod[T](methodIdentifier: String, args: js.Any*): T
+    def invokeMethod[T](methodIdentifier: String, args: Any*): T
     
     /**
       * Invokes the specified .NET instance public method asynchronously.
@@ -28,13 +28,13 @@ object DotNet {
       * @param args Arguments to pass to the method, each of which must be JSON-serializable.
       * @returns A promise representing the result of the operation.
       */
-    def invokeMethodAsync[T](methodIdentifier: String, args: js.Any*): js.Promise[T]
+    def invokeMethodAsync[T](methodIdentifier: String, args: Any*): js.Promise[T]
   }
   object DotNetObject {
     
     inline def apply(
-      invokeMethod: (String, /* repeated */ js.Any) => js.Any,
-      invokeMethodAsync: (String, /* repeated */ js.Any) => js.Promise[js.Any]
+      invokeMethod: (String, /* repeated */ Any) => Any,
+      invokeMethodAsync: (String, /* repeated */ Any) => js.Promise[Any]
     ): DotNetObject = {
       val __obj = js.Dynamic.literal(invokeMethod = js.Any.fromFunction2(invokeMethod), invokeMethodAsync = js.Any.fromFunction2(invokeMethodAsync))
       __obj.asInstanceOf[DotNetObject]
@@ -42,9 +42,9 @@ object DotNet {
     
     extension [Self <: DotNetObject](x: Self) {
       
-      inline def setInvokeMethod(value: (String, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "invokeMethod", js.Any.fromFunction2(value))
+      inline def setInvokeMethod(value: (String, /* repeated */ Any) => Any): Self = StObject.set(x, "invokeMethod", js.Any.fromFunction2(value))
       
-      inline def setInvokeMethodAsync(value: (String, /* repeated */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "invokeMethodAsync", js.Any.fromFunction2(value))
+      inline def setInvokeMethodAsync(value: (String, /* repeated */ Any) => js.Promise[Any]): Self = StObject.set(x, "invokeMethodAsync", js.Any.fromFunction2(value))
     }
   }
 }

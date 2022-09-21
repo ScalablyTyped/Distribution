@@ -11,7 +11,7 @@ object titleViewMod {
   
   @JSImport("playable/dist/src/modules/ui/title/title.view", JSImport.Default)
   @js.native
-  class default protected () extends TitleView {
+  open class default protected () extends TitleView {
     def this(config: ITitleViewConfig) = this()
   }
   
@@ -20,15 +20,15 @@ object titleViewMod {
     extends typings.playable.viewMod.default[ITitleViewStyles] {
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: Any = js.native
     
-    /* private */ var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     def destroy(): Unit = js.native
     

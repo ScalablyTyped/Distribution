@@ -6,21 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "ExpressionRunnerBase")
 @js.native
-class ExpressionRunnerBase protected () extends StObject {
+open class ExpressionRunnerBase protected () extends StObject {
   def this(expression: String) = this()
   
   def canRun(): Boolean = js.native
   
-  /* protected */ def doOnComplete(res: js.Any): Unit = js.native
+  /* protected */ def doOnComplete(res: Any): Unit = js.native
   
-  var expression: String = js.native
+  def expression: String = js.native
   
-  def getVariables(): js.Array[String] = js.native
+  var expressionExecutor: IExpresionExecutor = js.native
+  
+  def expression_=(`val`: String): Unit = js.native
+  
+  def getVariables(): js.Array[Any] = js.native
   
   def hasFunction(): Boolean = js.native
   
-  val isAsync: Boolean = js.native
+  def isAsync: Boolean = js.native
   
-  /* protected */ def runCore(values: HashTable[js.Any]): js.Any = js.native
-  /* protected */ def runCore(values: HashTable[js.Any], properties: HashTable[js.Any]): js.Any = js.native
+  /* protected */ def runCore(values: Any): Any = js.native
+  /* protected */ def runCore(values: Any, properties: Any): Any = js.native
 }

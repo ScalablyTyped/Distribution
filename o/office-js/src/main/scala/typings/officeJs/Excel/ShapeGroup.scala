@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a shape group inside a worksheet. To get the corresponding `Shape` object, use `ShapeGroup.shape`.
   *
-  * Represents a shape group inside a worksheet. To get the corresponding Shape object, use `ShapeGroup.shape`.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -24,9 +24,9 @@ trait ShapeGroup
   var context_ShapeGroup: RequestContext = js.native
   
   /**
-    *
     * Specifies the shape identifier.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val id: String = js.native
@@ -43,17 +43,17 @@ trait ShapeGroup
   def load(propertyNames: js.Array[String]): ShapeGroup = js.native
   
   /**
+    * Returns the `Shape` object associated with the group.
     *
-    * Returns the Shape object associated with the group.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val shape: Shape = js.native
   
   /**
+    * Returns the collection of `Shape` objects.
     *
-    * Returns the collection of Shape objects.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val shapes: GroupShapeCollection = js.native
@@ -67,6 +67,7 @@ trait ShapeGroup
   /**
     * Ungroups any grouped shapes in the specified shape group.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def ungroup(): Unit = js.native

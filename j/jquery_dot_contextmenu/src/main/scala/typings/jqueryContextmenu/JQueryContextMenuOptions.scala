@@ -15,9 +15,9 @@ trait JQueryContextMenuOptions extends StObject {
   
   var autoHide: js.UndefOr[Boolean] = js.undefined
   
-  var build: js.UndefOr[js.Function2[/* triggerElement */ JQuery, /* e */ Event, js.Any]] = js.undefined
+  var build: js.UndefOr[js.Function2[/* triggerElement */ JQuery, /* e */ Event, Any]] = js.undefined
   
-  var callback: js.UndefOr[js.Function2[/* key */ js.Any, /* options */ js.Any, js.Any]] = js.undefined
+  var callback: js.UndefOr[js.Function2[/* key */ Any, /* options */ Any, Any]] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -29,7 +29,7 @@ trait JQueryContextMenuOptions extends StObject {
   
   var itemClickEvent: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[js.Any] = js.undefined
+  var items: js.UndefOr[Any] = js.undefined
   
   var position: js.UndefOr[js.Function3[/* opt */ JQuery, /* x */ Double, /* y */ Double, Unit]] = js.undefined
   
@@ -64,11 +64,11 @@ object JQueryContextMenuOptions {
     
     inline def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
     
-    inline def setBuild(value: (/* triggerElement */ JQuery, /* e */ Event) => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction2(value))
+    inline def setBuild(value: (/* triggerElement */ JQuery, /* e */ Event) => Any): Self = StObject.set(x, "build", js.Any.fromFunction2(value))
     
     inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
-    inline def setCallback(value: (/* key */ js.Any, /* options */ js.Any) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+    inline def setCallback(value: (/* key */ Any, /* options */ Any) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
@@ -92,7 +92,7 @@ object JQueryContextMenuOptions {
     
     inline def setItemClickEventUndefined: Self = StObject.set(x, "itemClickEvent", js.undefined)
     
-    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     

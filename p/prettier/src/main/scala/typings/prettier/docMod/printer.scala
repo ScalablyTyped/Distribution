@@ -16,6 +16,10 @@ object printer {
   
   trait Options extends StObject {
     
+    var __embeddedInHtml: js.UndefOr[Boolean] = js.undefined
+    
+    var parentParser: js.UndefOr[String] = js.undefined
+    
     /**
       * Specify the line length that the printer will wrap on.
       * @default 80
@@ -43,11 +47,19 @@ object printer {
     
     extension [Self <: Options](x: Self) {
       
+      inline def setParentParser(value: String): Self = StObject.set(x, "parentParser", value.asInstanceOf[js.Any])
+      
+      inline def setParentParserUndefined: Self = StObject.set(x, "parentParser", js.undefined)
+      
       inline def setPrintWidth(value: Double): Self = StObject.set(x, "printWidth", value.asInstanceOf[js.Any])
       
       inline def setTabWidth(value: Double): Self = StObject.set(x, "tabWidth", value.asInstanceOf[js.Any])
       
       inline def setUseTabs(value: Boolean): Self = StObject.set(x, "useTabs", value.asInstanceOf[js.Any])
+      
+      inline def set__embeddedInHtml(value: Boolean): Self = StObject.set(x, "__embeddedInHtml", value.asInstanceOf[js.Any])
+      
+      inline def set__embeddedInHtmlUndefined: Self = StObject.set(x, "__embeddedInHtml", js.undefined)
     }
   }
 }

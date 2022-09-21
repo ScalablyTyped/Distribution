@@ -10,10 +10,10 @@ Newline character converter
 | ------------------ | :-------------: |
 | Full name          | eol |
 | Keywords           | eol, lf, cr, crlf, newline, newlines, convert, converter, conversion, character, formatting, format, string, javascript, typescript, ender, file |
-| # releases         | 0 |
-| # dependents       | 102 |
-| # downloads        | 25575829 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3826951.3333333335 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/ryanve/eol)

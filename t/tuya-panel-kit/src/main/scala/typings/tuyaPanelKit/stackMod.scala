@@ -4,7 +4,7 @@ import typings.react.mod.Context
 import typings.react.mod.NamedExoticComponent
 import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element
-import typings.reactNativeGestureHandler.mod.PanGestureHandler
+import typings.reactNativeGestureHandler.panGestureHandlerMod.PanGestureHandler
 import typings.std.Record
 import typings.tuyaPanelKit.anon.ClosingRouteKeys
 import typings.tuyaPanelKit.anon.OpeningRouteKeys
@@ -35,7 +35,7 @@ object stackMod {
   
   @JSImport("tuya-panel-kit/@react-navigation/stack", "Assets")
   @js.native
-  val Assets: js.Array[js.Any] = js.native
+  val Assets: js.Array[Any] = js.native
   
   @JSImport("tuya-panel-kit/@react-navigation/stack", "CardAnimationContext")
   @js.native
@@ -103,7 +103,7 @@ object stackMod {
   
   @JSImport("tuya-panel-kit/@react-navigation/stack", "StackView")
   @js.native
-  class StackView () extends default
+  open class StackView () extends default
   /* static members */
   object StackView {
     

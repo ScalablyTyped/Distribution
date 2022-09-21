@@ -27,9 +27,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Ui extends StObject {
   
-  var Button: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Button */ js.Any = js.native
+  var Button: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Button */ Any = js.native
   
-  var ButtonSet: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ButtonSet */ js.Any = js.native
+  var ButtonSet: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ButtonSet */ Any = js.native
   
   def alert(prompt: String): Button = js.native
   def alert(prompt: String, buttons: ButtonSet): Button = js.native

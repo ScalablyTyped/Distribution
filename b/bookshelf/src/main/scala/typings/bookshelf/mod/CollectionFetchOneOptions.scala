@@ -1,21 +1,32 @@
 package typings.bookshelf.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CollectionFetchOneOptions extends js.Object {
+trait CollectionFetchOneOptions extends StObject {
+  
   var columns: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var require: js.UndefOr[Boolean] = js.undefined
 }
-
 object CollectionFetchOneOptions {
-  @scala.inline
-  def apply(columns: String | js.Array[String] = null, require: js.UndefOr[Boolean] = js.undefined): CollectionFetchOneOptions = {
+  
+  inline def apply(): CollectionFetchOneOptions = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(require)) __obj.updateDynamic("require")(require.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionFetchOneOptions]
   }
+  
+  extension [Self <: CollectionFetchOneOptions](x: Self) {
+    
+    inline def setColumns(value: String | js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value*))
+    
+    inline def setRequire(value: Boolean): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+    
+    inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
+  }
 }
-

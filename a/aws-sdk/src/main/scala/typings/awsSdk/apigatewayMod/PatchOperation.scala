@@ -12,7 +12,7 @@ trait PatchOperation extends StObject {
   var from: js.UndefOr[String] = js.undefined
   
   /**
-    *  An update operation to be performed with this PATCH request. The valid value can be add, remove, replace or copy. Not all valid operations are supported for a given resource. Support of the operations depends on specific operational contexts. Attempts to apply an unsupported operation on a resource will return an error message.
+    * An update operation to be performed with this PATCH request. The valid value can be add, remove, replace or copy. Not all valid operations are supported for a given resource. Support of the operations depends on specific operational contexts. Attempts to apply an unsupported operation on a resource will return an error message..
     */
   var op: js.UndefOr[Op] = js.undefined
   
@@ -22,7 +22,7 @@ trait PatchOperation extends StObject {
   var path: js.UndefOr[String] = js.undefined
   
   /**
-    * The new target value of the update operation. It is applicable for the add or replace operation. When using AWS CLI to update a property of a JSON value, enclose the JSON object with a pair of single quotes in a Linux shell, e.g., '{"a": ...}'. In a Windows shell, see Using JSON for Parameters.
+    * The new target value of the update operation. It is applicable for the add or replace operation. When using AWS CLI to update a property of a JSON value, enclose the JSON object with a pair of single quotes in a Linux shell, e.g., '{"a": ...}'.
     */
   var value: js.UndefOr[String] = js.undefined
 }

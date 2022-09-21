@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("orientjs", "OSessionManager")
 @js.native
-class OSessionManager () extends StObject {
+open class OSessionManager () extends StObject {
   
-  def acquireSession(op: js.Any, data: js.Any): js.Promise[ODatabaseSession] = js.native
+  def acquireSession(op: Any, data: Any): js.Promise[ODatabaseSession] = js.native
   
-  def acquireSubscribeSession(op: js.Any, data: js.Any): js.Promise[ODatabaseSession] = js.native
+  def acquireSubscribeSession(op: Any, data: Any): js.Promise[ODatabaseSession] = js.native
   
-  var client: js.Any = js.native
+  var client: Any = js.native
   
   def close(): js.Promise[Unit] = js.native
   
-  var config: js.Any = js.native
+  var config: Any = js.native
   
   def current(): ODatabaseSession | Null = js.native
   
@@ -34,7 +34,7 @@ class OSessionManager () extends StObject {
   
   var pushNotification: js.UndefOr[Boolean] = js.native
   
-  def sendOnSubscribe(db: js.Any, op: js.Any, data: js.Any, onAcquire: js.Any): js.Promise[ODatabaseSession] = js.native
+  def sendOnSubscribe(db: Any, op: Any, data: Any, onAcquire: Any): js.Promise[ODatabaseSession] = js.native
   
   var sessions: ODatabaseSessionPool = js.native
   

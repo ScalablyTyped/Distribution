@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object storybookChannelMockMod {
   
-  @JSImport("@storybook/addons/dist/storybook-channel-mock", JSImport.Namespace)
+  @JSImport("@storybook/addons/dist/ts3.9/storybook-channel-mock", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

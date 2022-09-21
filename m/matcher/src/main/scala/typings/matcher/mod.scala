@@ -6,76 +6,67 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  	Simple [wildcard](https://en.wikipedia.org/wiki/Wildcard_character) matching.
-  	It matches even across newlines. For example, `foo*r` will match `foo\nbar`.
-  	@param inputs - Strings to match.
-  	@param patterns - Use `*` to match zero or more characters. A pattern starting with `!` will be negated.
-  	@returns The `inputs` filtered based on the `patterns`.
-  	@example
-  	```
-  	import matcher = require('matcher');
-  	matcher(['foo', 'bar', 'moo'], ['*oo', '!foo']);
-  	//=> ['moo']
-  	matcher(['foo', 'bar', 'moo'], ['!*oo']);
-  	//=> ['bar']
-  	```
-  	*/
-  inline def apply(inputs: js.Array[String], patterns: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def apply(inputs: js.Array[String], patterns: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  
   @JSImport("matcher", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-  	It matches even across newlines. For example, `foo*r` will match `foo\nbar`.
-  	@param input - String or array of strings to match.
-  	@param pattern - String or array of string patterns. Use `*` to match zero or more characters. A pattern starting with `!` will be negated.
-  	@returns Whether any given `input` matches every given `pattern`.
-  	@example
-  	```
-  	import matcher = require('matcher');
-  	matcher.isMatch('unicorn', 'uni*');
-  	//=> true
-  	matcher.isMatch('unicorn', '*corn');
-  	//=> true
-  	matcher.isMatch('unicorn', 'un*rn');
-  	//=> true
-  	matcher.isMatch('rainbow', '!unicorn');
-  	//=> true
-  	matcher.isMatch('foo bar baz', 'foo b* b*');
-  	//=> true
-  	matcher.isMatch('unicorn', 'uni\\*');
-  	//=> false
-  	matcher.isMatch('UNICORN', 'UNI*', {caseSensitive: true});
-  	//=> true
-  	matcher.isMatch('UNICORN', 'unicorn', {caseSensitive: true});
-  	//=> false
-  	matcher.isMatch(['foo', 'bar'], 'f*');
-  	//=> true
-  	matcher.isMatch(['foo', 'bar'], ['a*', 'b*']);
-  	//=> true
-  	matcher.isMatch('unicorn', ['tri*', 'UNI*'], {caseSensitive: true});
-  	//=> false
-  	```
-  	*/
-  inline def isMatch(input: String, pattern: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def isMatch(input: String, pattern: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def isMatch(input: String, pattern: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def isMatch(input: String, pattern: js.Array[String], options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def isMatch(input: js.Array[String], pattern: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def isMatch(input: js.Array[String], pattern: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def isMatch(input: js.Array[String], pattern: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def isMatch(input: js.Array[String], pattern: js.Array[String], options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(inputs: String, patterns: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(inputs: String, patterns: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(inputs: String, patterns: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(inputs: String, patterns: js.Array[String], options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(inputs: js.Array[String], patterns: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(inputs: js.Array[String], patterns: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(inputs: js.Array[String], patterns: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(inputs: js.Array[String], patterns: js.Array[String], options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def matcher(inputs: String, patterns: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def matcher(inputs: String, patterns: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def matcher(inputs: String, patterns: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def matcher(inputs: String, patterns: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def matcher(inputs: js.Array[String], patterns: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def matcher(inputs: js.Array[String], patterns: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def matcher(inputs: js.Array[String], patterns: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def matcher(inputs: js.Array[String], patterns: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   trait Options extends StObject {
     
     /**
-    		Treat uppercase and lowercase characters as being the same.
-    		Ensure you use this correctly. For example, files and directories should be matched case-insensitively, while most often, object keys should be matched case-sensitively.
-    		@default false
-    		*/
+    	Require all negated patterns to not match and any normal patterns to match at least once. Otherwise, it will be a no-match condition.
+    	@default false
+    	@example
+    	```
+    	import {matcher} from 'matcher';
+    	// Find text strings containing both "edge" and "tiger" in arbitrary order, but not "stunt".
+    	const demo = (strings) => matcher(strings, ['*edge*', '*tiger*', '!*stunt*'], {allPatterns: true});
+    	demo(['Hey, tiger!', 'tiger has edge over hyenas', 'pushing a tiger over the edge is a stunt']);
+    	//=> ['tiger has edge over hyenas']
+    	```
+    	@example
+    	```
+    	import {matcher} from 'matcher';
+    	matcher(['foo', 'for', 'bar'], ['f*', 'b*', '!x*'], {allPatterns: true});
+    	//=> ['foo', 'for', 'bar']
+    	matcher(['foo', 'for', 'bar'], ['f*'], {allPatterns: true});
+    	//=> []
+    	```
+    	*/
+    val allPatterns: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+    	Treat uppercase and lowercase characters as being the same.
+    	Ensure you use this correctly. For example, files and directories should be matched case-insensitively, while most often, object keys should be matched case-sensitively.
+    	@default false
+    	@example
+    	```
+    	import {isMatch} from 'matcher';
+    	isMatch('UNICORN', 'UNI*', {caseSensitive: true});
+    	//=> true
+    	isMatch('UNICORN', 'unicorn', {caseSensitive: true});
+    	//=> false
+    	isMatch('unicorn', ['tri*', 'UNI*'], {caseSensitive: true});
+    	//=> false
+    	```
+    	*/
     val caseSensitive: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
@@ -86,6 +77,10 @@ object mod {
     }
     
     extension [Self <: Options](x: Self) {
+      
+      inline def setAllPatterns(value: Boolean): Self = StObject.set(x, "allPatterns", value.asInstanceOf[js.Any])
+      
+      inline def setAllPatternsUndefined: Self = StObject.set(x, "allPatterns", js.undefined)
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       

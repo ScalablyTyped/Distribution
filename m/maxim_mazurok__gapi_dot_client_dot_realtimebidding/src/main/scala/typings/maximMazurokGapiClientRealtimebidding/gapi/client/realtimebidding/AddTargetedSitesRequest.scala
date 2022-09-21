@@ -28,7 +28,7 @@ object AddTargetedSitesRequest {
     
     inline def setSitesUndefined: Self = StObject.set(x, "sites", js.undefined)
     
-    inline def setSitesVarargs(value: String*): Self = StObject.set(x, "sites", js.Array(value :_*))
+    inline def setSitesVarargs(value: String*): Self = StObject.set(x, "sites", js.Array(value*))
     
     inline def setTargetingMode(value: String): Self = StObject.set(x, "targetingMode", value.asInstanceOf[js.Any])
     

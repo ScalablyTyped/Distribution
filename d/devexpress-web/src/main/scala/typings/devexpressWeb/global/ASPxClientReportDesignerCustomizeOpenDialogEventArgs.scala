@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientReportDesignerCustomizeOpenDialogEventArgs")
 @js.native
-class ASPxClientReportDesignerCustomizeOpenDialogEventArgs protected ()
+open class ASPxClientReportDesignerCustomizeOpenDialogEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientReportDesignerCustomizeOpenDialogEventArgs {
   /**

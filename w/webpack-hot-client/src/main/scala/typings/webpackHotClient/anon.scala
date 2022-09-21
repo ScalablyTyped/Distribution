@@ -38,7 +38,7 @@ object anon {
     val server: js.UndefOr[Server] = js.undefined
     
     val stats: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ Any
       ] = js.undefined
     
     val validTargets: js.UndefOr[js.Array[String]] = js.undefined
@@ -93,7 +93,7 @@ object anon {
       inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
       
       inline def setStats(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ Any
       ): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
       inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
@@ -102,7 +102,7 @@ object anon {
       
       inline def setValidTargetsUndefined: Self = StObject.set(x, "validTargets", js.undefined)
       
-      inline def setValidTargetsVarargs(value: String*): Self = StObject.set(x, "validTargets", js.Array(value :_*))
+      inline def setValidTargetsVarargs(value: String*): Self = StObject.set(x, "validTargets", js.Array(value*))
     }
   }
 }

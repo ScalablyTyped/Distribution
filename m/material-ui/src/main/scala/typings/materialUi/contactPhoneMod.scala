@@ -10,10 +10,10 @@ object contactPhoneMod {
   
   @JSImport("material-ui/svg-icons/communication/contact-phone", JSImport.Default)
   @js.native
-  class default () extends CommunicationContactPhone
+  open class default () extends CommunicationContactPhone
   
   @JSImport("material-ui/svg-icons/communication/contact-phone", "CommunicationContactPhone")
   @js.native
-  class CommunicationContactPhone ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationContactPhone ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

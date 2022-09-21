@@ -4,8 +4,9 @@ import org.scalablytyped.runtime.Shortcut
 import typings.antd.checkboxCheckboxMod.CheckboxProps
 import typings.antd.checkboxGroupMod.CheckboxGroupProps
 import typings.react.mod.ForwardRefExoticComponent
-import typings.react.mod.NamedExoticComponent
+import typings.react.mod.MemoExoticComponent
 import typings.react.mod.RefAttributes
+import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +23,7 @@ object checkboxMod extends Shortcut {
     extends StObject
        with ForwardRefExoticComponent[CheckboxProps & RefAttributes[HTMLInputElement]] {
     
-    var Group: NamedExoticComponent[CheckboxGroupProps] = js.native
+    var Group: MemoExoticComponent[ForwardRefExoticComponent[CheckboxGroupProps & RefAttributes[HTMLDivElement]]] = js.native
     
     var __ANT_CHECKBOX: Boolean = js.native
   }

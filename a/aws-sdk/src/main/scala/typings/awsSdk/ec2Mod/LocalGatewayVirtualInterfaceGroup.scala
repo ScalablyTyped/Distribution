@@ -22,7 +22,7 @@ trait LocalGatewayVirtualInterfaceGroup extends StObject {
   var LocalGatewayVirtualInterfaceIds: js.UndefOr[LocalGatewayVirtualInterfaceIdSet] = js.undefined
   
   /**
-    * The AWS account ID that owns the local gateway virtual interface group.
+    * The ID of the Amazon Web Services account that owns the local gateway virtual interface group.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -52,7 +52,7 @@ object LocalGatewayVirtualInterfaceGroup {
     
     inline def setLocalGatewayVirtualInterfaceIdsUndefined: Self = StObject.set(x, "LocalGatewayVirtualInterfaceIds", js.undefined)
     
-    inline def setLocalGatewayVirtualInterfaceIdsVarargs(value: LocalGatewayVirtualInterfaceId*): Self = StObject.set(x, "LocalGatewayVirtualInterfaceIds", js.Array(value :_*))
+    inline def setLocalGatewayVirtualInterfaceIdsVarargs(value: LocalGatewayVirtualInterfaceId*): Self = StObject.set(x, "LocalGatewayVirtualInterfaceIds", js.Array(value*))
     
     inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
@@ -62,6 +62,6 @@ object LocalGatewayVirtualInterfaceGroup {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

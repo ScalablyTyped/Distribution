@@ -10,13 +10,15 @@ trait RecipientsChangedEventArgs extends StObject {
   /** 
     * Gets an object that indicates change state of recipients fields. 
     * 
+    * @remarks
     * [Api set: Mailbox 1.7] 
     */ 
   var changedRecipientFields: RecipientsChangedFields
   
   /** 
-    * Gets the type of the event. See `Office.EventType` for details. 
+    * Gets the type of the event. For details, refer to {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
     * 
+    * @remarks
     * [Api set: Mailbox 1.7] 
     */ 
   var `type`: olkRecipientsChanged

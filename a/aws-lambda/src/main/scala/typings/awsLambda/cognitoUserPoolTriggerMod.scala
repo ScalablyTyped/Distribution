@@ -93,5 +93,5 @@ object cognitoUserPoolTriggerMod {
     }
   }
   
-  type CognitoUserPoolTriggerHandler = Handler[CognitoUserPoolTriggerEvent, js.Any]
+  type CognitoUserPoolTriggerHandler = Handler[CognitoUserPoolTriggerEvent, Any]
 }

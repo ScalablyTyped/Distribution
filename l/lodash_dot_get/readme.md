@@ -10,10 +10,10 @@ The lodash method `_.get` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.get |
 | Keywords           | lodash-modularized, get |
-| # releases         | 0 |
-| # dependents       | 2616 |
-| # downloads        | 315504720 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.7449580333333336E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

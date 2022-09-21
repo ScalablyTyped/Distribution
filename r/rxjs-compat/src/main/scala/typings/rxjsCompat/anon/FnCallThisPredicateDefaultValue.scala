@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisPredicateDefaultValue extends StObject {
   
-  def apply[T, D](): js.Any = js.native
+  def apply[T, D](): Any = js.native
   def apply[T, S /* <: T */](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
       /* is S */ Boolean
     ]
-  ): js.Any = js.native
+  ): Any = js.native
   def apply[T, S /* <: T */](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
       /* is S */ Boolean
     ],
     defaultValue: S
-  ): js.Any = js.native
-  def apply[T, D](predicate: Null, defaultValue: D): js.Any = js.native
-  def apply[T, D](predicate: Unit, defaultValue: D): js.Any = js.native
+  ): Any = js.native
+  def apply[T, D](predicate: Null, defaultValue: D): Any = js.native
+  def apply[T, D](predicate: Unit, defaultValue: D): Any = js.native
 }

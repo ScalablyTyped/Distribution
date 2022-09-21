@@ -1,6 +1,6 @@
 package typings.pngAsync
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.pngAsync.mod.IImageOptions
 import org.scalablytyped.runtime.StObject
@@ -11,22 +11,22 @@ object packerMod {
   
   @JSImport("png-async/lib/packer", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Packer {
+  open class ^ protected () extends Packer {
     def this(option: IImageOptions) = this()
   }
   
   @js.native
   trait Packer extends Readable {
     
-    /* private */ var _option: js.Any = js.native
+    /* private */ var _option: Any = js.native
     
-    /* private */ var _packChunk: js.Any = js.native
+    /* private */ var _packChunk: Any = js.native
     
-    /* private */ var _packIDAT: js.Any = js.native
+    /* private */ var _packIDAT: Any = js.native
     
-    /* private */ var _packIEND: js.Any = js.native
+    /* private */ var _packIEND: Any = js.native
     
-    /* private */ var _packIHDR: js.Any = js.native
+    /* private */ var _packIHDR: Any = js.native
     
     def _read(): Unit = js.native
     

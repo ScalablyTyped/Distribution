@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "PayOrderRequest")
 @js.native
-class PayOrderRequest () extends StObject {
+open class PayOrderRequest () extends StObject {
   
   /**
     * A value you specify that uniquely identifies this request among requests you've sent.

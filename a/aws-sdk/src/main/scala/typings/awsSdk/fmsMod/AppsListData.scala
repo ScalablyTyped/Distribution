@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppsListData extends StObject {
   
   /**
-    * An array of applications in the AWS Firewall Manager applications list.
+    * An array of applications in the Firewall Manager applications list.
     */
   var AppsList: typings.awsSdk.fmsMod.AppsList
   
   /**
-    * The time that the AWS Firewall Manager applications list was created.
+    * The time that the Firewall Manager applications list was created.
     */
-  var CreateTime: js.UndefOr[TimeStamp] = js.undefined
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The time that the AWS Firewall Manager applications list was last updated.
+    * The time that the Firewall Manager applications list was last updated.
     */
-  var LastUpdateTime: js.UndefOr[TimeStamp] = js.undefined
+  var LastUpdateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The ID of the AWS Firewall Manager applications list.
+    * The ID of the Firewall Manager applications list.
     */
   var ListId: js.UndefOr[typings.awsSdk.fmsMod.ListId] = js.undefined
   
   /**
-    * The name of the AWS Firewall Manager applications list.
+    * The name of the Firewall Manager applications list.
     */
   var ListName: ResourceName
   
@@ -52,13 +52,13 @@ object AppsListData {
     
     inline def setAppsList(value: AppsList): Self = StObject.set(x, "AppsList", value.asInstanceOf[js.Any])
     
-    inline def setAppsListVarargs(value: App*): Self = StObject.set(x, "AppsList", js.Array(value :_*))
+    inline def setAppsListVarargs(value: App*): Self = StObject.set(x, "AppsList", js.Array(value*))
     
-    inline def setCreateTime(value: TimeStamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
-    inline def setLastUpdateTime(value: TimeStamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     

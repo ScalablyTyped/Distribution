@@ -19,6 +19,6 @@ object VisSelectProperties {
     
     inline def setItems(value: js.Array[Double]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: Double*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Double*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

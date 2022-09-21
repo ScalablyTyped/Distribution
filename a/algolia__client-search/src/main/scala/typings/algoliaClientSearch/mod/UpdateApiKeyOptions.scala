@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateApiKeyOptions extends StObject {
   
   /**
+    * List of permissions the key contains.
+    */
+  val acl: js.UndefOr[js.Array[ApiKeyACLType]] = js.undefined
+  
+  /**
     * Specify a description of the API key. Used for informative purposes only. It has impact on the functionality of the API key.
     */
   val description: js.UndefOr[String] = js.undefined
@@ -51,6 +56,12 @@ object UpdateApiKeyOptions {
   
   extension [Self <: UpdateApiKeyOptions](x: Self) {
     
+    inline def setAcl(value: js.Array[ApiKeyACLType]): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+    
+    inline def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
+    
+    inline def setAclVarargs(value: ApiKeyACLType*): Self = StObject.set(x, "acl", js.Array(value*))
+    
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
@@ -59,7 +70,7 @@ object UpdateApiKeyOptions {
     
     inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
-    inline def setIndexesVarargs(value: String*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: String*): Self = StObject.set(x, "indexes", js.Array(value*))
     
     inline def setMaxHitsPerQuery(value: Double): Self = StObject.set(x, "maxHitsPerQuery", value.asInstanceOf[js.Any])
     
@@ -77,7 +88,7 @@ object UpdateApiKeyOptions {
     
     inline def setReferersUndefined: Self = StObject.set(x, "referers", js.undefined)
     
-    inline def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value :_*))
+    inline def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value*))
     
     inline def setValidity(value: Double): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
     

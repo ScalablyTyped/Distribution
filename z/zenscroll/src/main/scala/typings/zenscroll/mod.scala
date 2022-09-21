@@ -86,4 +86,24 @@ object mod extends Shortcut {
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: typings.zenscroll.mod.ZenScroll.zenscroll = ^
+  
+  object global {
+    
+    trait Window extends StObject {
+      
+      var noZensmooth: Boolean
+    }
+    object Window {
+      
+      inline def apply(noZensmooth: Boolean): Window = {
+        val __obj = js.Dynamic.literal(noZensmooth = noZensmooth.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Window]
+      }
+      
+      extension [Self <: Window](x: Self) {
+        
+        inline def setNoZensmooth(value: Boolean): Self = StObject.set(x, "noZensmooth", value.asInstanceOf[js.Any])
+      }
+    }
+  }
 }

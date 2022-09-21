@@ -1,10 +1,11 @@
 package typings.lovefield.mod
 
+import typings.lovefield.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def bind(index: scala.Double): typings.lovefield.mod.Binder = typings.lovefield.mod.^.asInstanceOf[js.Dynamic].applyDynamic("bind")(index.asInstanceOf[js.Any]).asInstanceOf[typings.lovefield.mod.Binder]
+inline def bind(index: Double): Binder = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(index.asInstanceOf[js.Any]).asInstanceOf[Binder]
 
-type ValueLiteral = java.lang.String | scala.Double | scala.Boolean | typings.std.Date
+type ValueLiteral = String | Double | Boolean | js.Date

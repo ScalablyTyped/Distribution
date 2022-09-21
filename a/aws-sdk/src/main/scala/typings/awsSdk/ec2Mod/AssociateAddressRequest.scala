@@ -22,7 +22,7 @@ trait AssociateAddressRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The ID of the instance. This is required for EC2-Classic. For EC2-VPC, you can specify either the instance ID or the network interface ID, but not both. The operation fails if you specify an instance ID unless exactly one network interface is attached.
+    * The ID of the instance. The instance must have exactly one attached network interface. For EC2-VPC, you can specify either the instance ID or the network interface ID, but not both. For EC2-Classic, you must specify an instance ID and the instance must be in the running state.
     */
   var InstanceId: js.UndefOr[typings.awsSdk.ec2Mod.InstanceId] = js.undefined
   
@@ -37,7 +37,7 @@ trait AssociateAddressRequest extends StObject {
   var PrivateIpAddress: js.UndefOr[String] = js.undefined
   
   /**
-    * The Elastic IP address to associate with the instance. This is required for EC2-Classic.
+    * [EC2-Classic] The Elastic IP address to associate with the instance. This is required for EC2-Classic.
     */
   var PublicIp: js.UndefOr[String] = js.undefined
 }

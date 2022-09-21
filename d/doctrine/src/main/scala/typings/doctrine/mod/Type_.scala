@@ -44,7 +44,7 @@ object Type_ {
     __obj.asInstanceOf[typings.doctrine.mod.`type`.FieldType]
   }
   
-  inline def FunctionType(`new`: Type_, params: js.Array[Type_], result: js.Array[Type_], `this`: Type_): typings.doctrine.mod.`type`.FunctionType = {
+  inline def FunctionType(`new`: Type_, params: js.Array[Type_], result: Type_, `this`: Type_): typings.doctrine.mod.`type`.FunctionType = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
     __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])

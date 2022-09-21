@@ -33,6 +33,6 @@ object UniqueProblem {
     
     inline def setProblemsUndefined: Self = StObject.set(x, "problems", js.undefined)
     
-    inline def setProblemsVarargs(value: Problem*): Self = StObject.set(x, "problems", js.Array(value :_*))
+    inline def setProblemsVarargs(value: Problem*): Self = StObject.set(x, "problems", js.Array(value*))
   }
 }

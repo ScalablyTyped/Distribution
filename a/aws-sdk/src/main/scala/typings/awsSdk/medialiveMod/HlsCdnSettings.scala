@@ -12,6 +12,8 @@ trait HlsCdnSettings extends StObject {
   
   var HlsMediaStoreSettings: js.UndefOr[typings.awsSdk.medialiveMod.HlsMediaStoreSettings] = js.undefined
   
+  var HlsS3Settings: js.UndefOr[typings.awsSdk.medialiveMod.HlsS3Settings] = js.undefined
+  
   var HlsWebdavSettings: js.UndefOr[typings.awsSdk.medialiveMod.HlsWebdavSettings] = js.undefined
 }
 object HlsCdnSettings {
@@ -34,6 +36,10 @@ object HlsCdnSettings {
     inline def setHlsMediaStoreSettings(value: HlsMediaStoreSettings): Self = StObject.set(x, "HlsMediaStoreSettings", value.asInstanceOf[js.Any])
     
     inline def setHlsMediaStoreSettingsUndefined: Self = StObject.set(x, "HlsMediaStoreSettings", js.undefined)
+    
+    inline def setHlsS3Settings(value: HlsS3Settings): Self = StObject.set(x, "HlsS3Settings", value.asInstanceOf[js.Any])
+    
+    inline def setHlsS3SettingsUndefined: Self = StObject.set(x, "HlsS3Settings", js.undefined)
     
     inline def setHlsWebdavSettings(value: HlsWebdavSettings): Self = StObject.set(x, "HlsWebdavSettings", value.asInstanceOf[js.Any])
     

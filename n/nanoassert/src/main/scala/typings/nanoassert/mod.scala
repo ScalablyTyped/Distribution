@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(declaration: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(declaration.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def apply(declaration: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].apply(declaration.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(declaration: Any): /* asserts declaration */ Boolean = ^.asInstanceOf[js.Dynamic].apply(declaration.asInstanceOf[js.Any]).asInstanceOf[/* asserts declaration */ Boolean]
+  inline def apply(declaration: Any, message: String): /* asserts declaration */ Boolean = (^.asInstanceOf[js.Dynamic].apply(declaration.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts declaration */ Boolean]
   
   @JSImport("nanoassert", JSImport.Namespace)
   @js.native

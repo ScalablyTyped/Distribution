@@ -20,7 +20,7 @@ object connectionMod {
   
   @JSImport("mysql2/typings/mysql/lib/Connection", JSImport.Namespace)
   @js.native
-  class ^ () extends Connection
+  open class ^ () extends Connection
   @JSImport("mysql2/typings/mysql/lib/Connection", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -29,50 +29,32 @@ object connectionMod {
   inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): typings.mysql2.queryMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any]).asInstanceOf[typings.mysql2.queryMod.^]
   inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
     sql: String,
-    callback: js.Function3[
-      /* err */ QueryError | Null, 
-      /* result */ T, 
-      /* fields */ js.Array[FieldPacket], 
-      js.Any
-    ]
+    callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
   ): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
+  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[Any]): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
+  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+    sql: String,
+    values: js.Array[Any],
+    callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+  ): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
+  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[Any]): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
+  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+    sql: String,
+    values: StringDictionary[Any],
+    callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+  ): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
   /* static member */
-  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Any): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
+  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: Any): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
   inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
     sql: String,
-    values: js.Any,
-    callback: js.Function3[
-      /* err */ QueryError | Null, 
-      /* result */ T, 
-      /* fields */ js.Array[FieldPacket], 
-      js.Any
-    ]
-  ): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
-  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[js.Any]): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
-  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
-    sql: String,
-    values: js.Array[js.Any],
-    callback: js.Function3[
-      /* err */ QueryError | Null, 
-      /* result */ T, 
-      /* fields */ js.Array[FieldPacket], 
-      js.Any
-    ]
-  ): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
-  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[js.Any]): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
-  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
-    sql: String,
-    values: StringDictionary[js.Any],
-    callback: js.Function3[
-      /* err */ QueryError | Null, 
-      /* result */ T, 
-      /* fields */ js.Array[FieldPacket], 
-      js.Any
-    ]
+    values: Any,
+    callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
   ): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
   
   @js.native
   trait Connection extends EventEmitter {
+    
+    var authorized: Boolean = js.native
     
     def beginTransaction(callback: js.Function1[/* err */ QueryError | Null, Unit]): Unit = js.native
     
@@ -91,18 +73,18 @@ object connectionMod {
     
     def end(): Unit = js.native
     def end(callback: js.Function1[/* err */ QueryError | Null, Unit]): Unit = js.native
-    def end(options: js.Any): Unit = js.native
-    def end(options: js.Any, callback: js.Function1[/* err */ QueryError | Null, Unit]): Unit = js.native
+    def end(options: Any): Unit = js.native
+    def end(options: Any, callback: js.Function1[/* err */ QueryError | Null, Unit]): Unit = js.native
     
-    def escape(value: js.Any): String = js.native
+    def escape(value: Any): String = js.native
     
     def escapeId(value: String): String = js.native
     def escapeId(values: js.Array[String]): String = js.native
     
     def format(sql: String): String = js.native
-    def format(sql: String, values: js.Any): String = js.native
-    def format(sql: String, values: js.Array[js.Any]): String = js.native
-    def format(sql: String, values: StringDictionary[js.Any]): String = js.native
+    def format(sql: String, values: js.Array[Any]): String = js.native
+    def format(sql: String, values: StringDictionary[Any]): String = js.native
+    def format(sql: String, values: Any): String = js.native
     
     def on(event: String, listener: js.Function): this.type = js.native
     
@@ -115,84 +97,49 @@ object connectionMod {
           /* err */ QueryError | Null, 
           /* result */ T, 
           /* fields */ js.UndefOr[js.Array[FieldPacket]], 
-          js.Any
+          Any
         ]
     ): typings.mysql2.queryMod.^ = js.native
-    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Any): typings.mysql2.queryMod.^ = js.native
+    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[Any]): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
-      values: js.Any,
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: js.Array[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): typings.mysql2.queryMod.^ = js.native
-    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[js.Any]): typings.mysql2.queryMod.^ = js.native
+    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[Any]): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
-      values: js.Array[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: StringDictionary[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): typings.mysql2.queryMod.^ = js.native
-    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[js.Any]): typings.mysql2.queryMod.^ = js.native
+    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: Any): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
-      values: StringDictionary[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: Any,
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): typings.mysql2.queryMod.^ = js.native
-    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Any): typings.mysql2.queryMod.^ = js.native
+    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[Any]): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      values: js.Any,
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: js.Array[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): typings.mysql2.queryMod.^ = js.native
-    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[js.Any]): typings.mysql2.queryMod.^ = js.native
+    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[Any]): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      values: js.Array[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: StringDictionary[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): typings.mysql2.queryMod.^ = js.native
-    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[js.Any]): typings.mysql2.queryMod.^ = js.native
+    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: Any): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      values: StringDictionary[js.Any],
-      callback: js.Function3[
-          /* err */ QueryError | Null, 
-          /* result */ T, 
-          /* fields */ js.Array[FieldPacket], 
-          js.Any
-        ]
+      values: Any,
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
     ): typings.mysql2.queryMod.^ = js.native
     
     def resume(): Unit = js.native
@@ -245,7 +192,7 @@ object connectionMod {
       *
       * (Default: false)
       */
-    var debug: js.UndefOr[js.Any] = js.undefined
+    var debug: js.UndefOr[Any] = js.undefined
     
     /**
       * List of connection flags to use other than the default ones. It is also possible to blacklist default ones
@@ -285,7 +232,14 @@ object connectionMod {
     /**
       * A custom query format function
       */
-    var queryFormat: js.UndefOr[js.Function2[/* query */ String, /* values */ js.Any, Unit]] = js.undefined
+    var queryFormat: js.UndefOr[js.Function2[/* query */ String, /* values */ Any, Unit]] = js.undefined
+    
+    /**
+      * Return each row as an array, not as an object.
+      * This is useful when you have duplicate column names.
+      * This can also be set in the `QueryOption` object to be applied per-query.
+      */
+    var rowsAsArray: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path to a unix domain socket to connect to. When used host and port are ignored
@@ -339,9 +293,7 @@ object connectionMod {
       *
       * You can find which field function you need to use by looking at: RowDataPacket.prototype._typeCast
       */
-    var typeCast: js.UndefOr[
-        Boolean | (js.Function2[/* field */ js.Any, /* next */ js.Function0[Unit], js.Any])
-      ] = js.undefined
+    var typeCast: js.UndefOr[Boolean | (js.Function2[/* field */ Any, /* next */ js.Function0[Unit], Any])] = js.undefined
     
     /**
       * The MySQL user to authenticate as
@@ -377,9 +329,9 @@ object connectionMod {
       
       inline def setDateStringsUndefined: Self = StObject.set(x, "dateStrings", js.undefined)
       
-      inline def setDateStringsVarargs(value: (TIMESTAMP | DATETIME | DATE)*): Self = StObject.set(x, "dateStrings", js.Array(value :_*))
+      inline def setDateStringsVarargs(value: (TIMESTAMP | DATETIME | DATE)*): Self = StObject.set(x, "dateStrings", js.Array(value*))
       
-      inline def setDebug(value: js.Any): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Any): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
@@ -387,7 +339,7 @@ object connectionMod {
       
       inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value*))
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -413,9 +365,13 @@ object connectionMod {
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      inline def setQueryFormat(value: (/* query */ String, /* values */ js.Any) => Unit): Self = StObject.set(x, "queryFormat", js.Any.fromFunction2(value))
+      inline def setQueryFormat(value: (/* query */ String, /* values */ Any) => Unit): Self = StObject.set(x, "queryFormat", js.Any.fromFunction2(value))
       
       inline def setQueryFormatUndefined: Self = StObject.set(x, "queryFormat", js.undefined)
+      
+      inline def setRowsAsArray(value: Boolean): Self = StObject.set(x, "rowsAsArray", value.asInstanceOf[js.Any])
+      
+      inline def setRowsAsArrayUndefined: Self = StObject.set(x, "rowsAsArray", js.undefined)
       
       inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
       
@@ -441,9 +397,9 @@ object connectionMod {
       
       inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
       
-      inline def setTypeCast(value: Boolean | (js.Function2[/* field */ js.Any, /* next */ js.Function0[Unit], js.Any])): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
+      inline def setTypeCast(value: Boolean | (js.Function2[/* field */ Any, /* next */ js.Function0[Unit], Any])): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
       
-      inline def setTypeCastFunction2(value: (/* field */ js.Any, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
+      inline def setTypeCastFunction2(value: (/* field */ Any, /* next */ js.Function0[Unit]) => Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
       
       inline def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
       
@@ -508,7 +464,7 @@ object connectionMod {
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value*))
       
       inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -522,7 +478,7 @@ object connectionMod {
       
       inline def setCrlUndefined: Self = StObject.set(x, "crl", js.undefined)
       
-      inline def setCrlVarargs(value: String*): Self = StObject.set(x, "crl", js.Array(value :_*))
+      inline def setCrlVarargs(value: String*): Self = StObject.set(x, "crl", js.Array(value*))
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

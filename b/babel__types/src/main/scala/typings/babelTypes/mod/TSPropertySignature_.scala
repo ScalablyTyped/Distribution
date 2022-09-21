@@ -1,6 +1,8 @@
 package typings.babelTypes.mod
 
 import typings.babelTypes.babelTypesStrings.TSPropertySignature
+import typings.babelTypes.babelTypesStrings.get
+import typings.babelTypes.babelTypesStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait TSPropertySignature_
   extends StObject
      with BaseNode
-     with TSTypeElement {
+     with TSTypeElement
+     with TypeScript {
   
-  var computed: Boolean | Null
+  var computed: Boolean
   
   var initializer: Expression | Null
   
   var key: Expression
+  
+  var kind: get | set
   
   var optional: Boolean | Null
   
@@ -28,8 +33,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TSPropertySignature_ {
   
-  inline def apply(key: Expression): TSPropertySignature_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], computed = null, end = null, initializer = null, innerComments = null, leadingComments = null, loc = null, optional = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null)
+  inline def apply(computed: Boolean, key: Expression, kind: get | set): TSPropertySignature_ = {
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], end = null, initializer = null, innerComments = null, leadingComments = null, loc = null, optional = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null)
     __obj.updateDynamic("type")("TSPropertySignature")
     __obj.asInstanceOf[TSPropertySignature_]
   }
@@ -38,13 +43,13 @@ object TSPropertySignature_ {
     
     inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
-    inline def setComputedNull: Self = StObject.set(x, "computed", null)
-    
     inline def setInitializer(value: Expression): Self = StObject.set(x, "initializer", value.asInstanceOf[js.Any])
     
     inline def setInitializerNull: Self = StObject.set(x, "initializer", null)
     
     inline def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKind(value: get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     

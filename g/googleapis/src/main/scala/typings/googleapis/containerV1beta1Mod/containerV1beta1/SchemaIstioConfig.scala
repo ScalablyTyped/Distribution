@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Configuration options for Istio addon.
-  */
 trait SchemaIstioConfig extends StObject {
   
   /**
     * The specified Istio auth mode, either none, or mutual TLS.
     */
-  var auth: js.UndefOr[String] = js.undefined
+  var auth: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Whether Istio is enabled for this cluster.
     */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaIstioConfig {
   
@@ -30,9 +27,13 @@ object SchemaIstioConfig {
     
     inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
+    inline def setAuthNull: Self = StObject.set(x, "auth", null)
+    
     inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
   }

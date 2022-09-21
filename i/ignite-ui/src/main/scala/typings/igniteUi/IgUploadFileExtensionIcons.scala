@@ -10,7 +10,7 @@ trait IgUploadFileExtensionIcons
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Css classes which sets icon.
@@ -25,7 +25,7 @@ trait IgUploadFileExtensionIcons
   /**
     * Array of string for file extensions
     */
-  var ext: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var ext: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object IgUploadFileExtensionIcons {
   
@@ -44,10 +44,10 @@ object IgUploadFileExtensionIcons {
     
     inline def setDefUndefined: Self = StObject.set(x, "def", js.undefined)
     
-    inline def setExt(value: js.Array[js.Any]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+    inline def setExt(value: js.Array[Any]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
     
-    inline def setExtVarargs(value: js.Any*): Self = StObject.set(x, "ext", js.Array(value :_*))
+    inline def setExtVarargs(value: Any*): Self = StObject.set(x, "ext", js.Array(value*))
   }
 }

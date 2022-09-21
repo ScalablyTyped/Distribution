@@ -11,7 +11,6 @@ import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
 import typings.gitlab.runnersMod.RunnerSchema
 import typings.gitlab.usersMod.UserSchema
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object jobsMod {
   
   @JSImport("gitlab/dist/types/core/services/Jobs", "Jobs")
   @js.native
-  class Jobs () extends BaseService {
+  open class Jobs () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[GetResponse] = js.native
@@ -33,21 +32,21 @@ object jobsMod {
     def cancel(projectId: Double, jobId: Double): js.Promise[js.Object] = js.native
     def cancel(projectId: Double, jobId: Double, options: Sudo): js.Promise[js.Object] = js.native
     
-    def downloadLatestArtifactFile(projectId: String, ref: String, name: String, hasStreamOptions: streambooleanundefinedBas): js.Any = js.native
-    def downloadLatestArtifactFile(projectId: Double, ref: String, name: String, hasStreamOptions: streambooleanundefinedBas): js.Any = js.native
+    def downloadLatestArtifactFile(projectId: String, ref: String, name: String, hasStreamOptions: streambooleanundefinedBas): Any = js.native
+    def downloadLatestArtifactFile(projectId: Double, ref: String, name: String, hasStreamOptions: streambooleanundefinedBas): Any = js.native
     
     def downloadSingleArtifactFile(
       projectId: String,
       jobId: Double,
       artifactPath: String,
       hasStreamOptions: streambooleanundefinedBas
-    ): js.Any = js.native
+    ): Any = js.native
     def downloadSingleArtifactFile(
       projectId: Double,
       jobId: Double,
       artifactPath: String,
       hasStreamOptions: streambooleanundefinedBas
-    ): js.Any = js.native
+    ): Any = js.native
     
     def downloadSingleArtifactFileFromRef(
       projectId: String,
@@ -55,14 +54,14 @@ object jobsMod {
       artifactPath: String,
       name: String,
       hasStreamOptions: streambooleanundefinedBas
-    ): js.Any = js.native
+    ): Any = js.native
     def downloadSingleArtifactFileFromRef(
       projectId: Double,
       ref: String,
       artifactPath: String,
       name: String,
       hasStreamOptions: streambooleanundefinedBas
-    ): js.Any = js.native
+    ): Any = js.native
     
     def downloadTraceFile(projectId: String, jobId: Double): js.Promise[GetResponse] = js.native
     def downloadTraceFile(projectId: String, jobId: Double, options: Sudo): js.Promise[GetResponse] = js.native
@@ -142,17 +141,17 @@ object jobsMod {
     
     var artifacts: js.Array[ArtifactSchema]
     
-    var artifacts_expire_at: js.UndefOr[Date] = js.undefined
+    var artifacts_expire_at: js.UndefOr[js.Date] = js.undefined
     
     var commit: CommitSchema
     
     var coverage: js.UndefOr[String] = js.undefined
     
-    var created_at: Date
+    var created_at: js.Date
     
     var duration: js.UndefOr[Double] = js.undefined
     
-    var finished_at: js.UndefOr[Date] = js.undefined
+    var finished_at: js.UndefOr[js.Date] = js.undefined
     
     var id: Double
     
@@ -166,7 +165,7 @@ object jobsMod {
     
     var stage: String
     
-    var started_at: js.UndefOr[Date] = js.undefined
+    var started_at: js.UndefOr[js.Date] = js.undefined
     
     var status: String
     
@@ -182,7 +181,7 @@ object jobsMod {
       allow_failure: Boolean,
       artifacts: js.Array[ArtifactSchema],
       commit: CommitSchema,
-      created_at: Date,
+      created_at: js.Date,
       id: Double,
       name: String,
       pipeline: PipelineSchema,
@@ -204,9 +203,9 @@ object jobsMod {
       
       inline def setArtifacts(value: js.Array[ArtifactSchema]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
       
-      inline def setArtifactsVarargs(value: ArtifactSchema*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
+      inline def setArtifactsVarargs(value: ArtifactSchema*): Self = StObject.set(x, "artifacts", js.Array(value*))
       
-      inline def setArtifacts_expire_at(value: Date): Self = StObject.set(x, "artifacts_expire_at", value.asInstanceOf[js.Any])
+      inline def setArtifacts_expire_at(value: js.Date): Self = StObject.set(x, "artifacts_expire_at", value.asInstanceOf[js.Any])
       
       inline def setArtifacts_expire_atUndefined: Self = StObject.set(x, "artifacts_expire_at", js.undefined)
       
@@ -216,13 +215,13 @@ object jobsMod {
       
       inline def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
       
-      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: js.Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
       inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      inline def setFinished_at(value: Date): Self = StObject.set(x, "finished_at", value.asInstanceOf[js.Any])
+      inline def setFinished_at(value: js.Date): Self = StObject.set(x, "finished_at", value.asInstanceOf[js.Any])
       
       inline def setFinished_atUndefined: Self = StObject.set(x, "finished_at", js.undefined)
       
@@ -238,7 +237,7 @@ object jobsMod {
       
       inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
       
-      inline def setStarted_at(value: Date): Self = StObject.set(x, "started_at", value.asInstanceOf[js.Any])
+      inline def setStarted_at(value: js.Date): Self = StObject.set(x, "started_at", value.asInstanceOf[js.Any])
       
       inline def setStarted_atUndefined: Self = StObject.set(x, "started_at", js.undefined)
       

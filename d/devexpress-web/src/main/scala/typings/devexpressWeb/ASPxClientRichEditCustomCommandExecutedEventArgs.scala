@@ -19,11 +19,11 @@ trait ASPxClientRichEditCustomCommandExecutedEventArgs
   /**
     * Gets an optional parameter that complements the processed command.
     */
-  var parameter: js.Any
+  var parameter: Any
 }
 object ASPxClientRichEditCustomCommandExecutedEventArgs {
   
-  inline def apply(commandName: String, parameter: js.Any): ASPxClientRichEditCustomCommandExecutedEventArgs = {
+  inline def apply(commandName: String, parameter: Any): ASPxClientRichEditCustomCommandExecutedEventArgs = {
     val __obj = js.Dynamic.literal(commandName = commandName.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRichEditCustomCommandExecutedEventArgs]
   }
@@ -32,6 +32,6 @@ object ASPxClientRichEditCustomCommandExecutedEventArgs {
     
     inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     
-    inline def setParameter(value: js.Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
   }
 }

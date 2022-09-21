@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.CircleBrush")
 @js.native
-class CircleBrush ()
+open class CircleBrush ()
   extends typings.fabric.fabricImplMod.CircleBrush

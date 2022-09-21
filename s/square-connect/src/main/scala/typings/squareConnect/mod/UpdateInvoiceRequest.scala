@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "UpdateInvoiceRequest")
 @js.native
-class UpdateInvoiceRequest () extends StObject {
+open class UpdateInvoiceRequest () extends StObject {
   
   /**
     * List of fields to clear.

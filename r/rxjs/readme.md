@@ -1,7 +1,7 @@
 
 # Scala.js typings for rxjs
 
-Typings are for version 6.6.3
+Typings are for version 7.5.6
 
 ## Library description:
 Reactive Extensions for modern JavaScript
@@ -10,13 +10,13 @@ Reactive Extensions for modern JavaScript
 | ------------------ | :-------------: |
 | Full name          | rxjs |
 | Keywords           | Rx, RxJS, ReactiveX, ReactiveExtensions, Streams, Observables, Observable, Stream, ES6, ES2015 |
-| # releases         | 25 |
-| # dependents       | 16263 |
-| # downloads        | 1044490037 |
-| # stars            | 103 |
+| # releases         | 43 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5593069366666666E8 |
+| # stars            | 27297.0 |
 
 ## Links
-- [Homepage](https://github.com/ReactiveX/RxJS)
+- [Homepage](https://rxjs.dev)
 - [Bugs](https://github.com/ReactiveX/RxJS/issues)
 - [Repository](https://github.com/reactivex/rxjs)
 - [Npm](https://www.npmjs.com/package/rxjs)

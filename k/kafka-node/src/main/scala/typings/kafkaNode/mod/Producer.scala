@@ -9,29 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("kafka-node", "Producer")
 @js.native
-class Producer protected () extends EventEmitter {
+open class Producer protected () extends EventEmitter {
   def this(client: KafkaClient) = this()
   def this(client: KafkaClient, options: ProducerOptions) = this()
   def this(client: KafkaClient, options: Unit, customPartitioner: CustomPartitioner) = this()
   def this(client: KafkaClient, options: ProducerOptions, customPartitioner: CustomPartitioner) = this()
   
   def close(): Unit = js.native
-  def close(cb: js.Function0[js.Any]): Unit = js.native
+  def close(cb: js.Function0[Any]): Unit = js.native
   
-  def createTopics(
-    topics: js.Array[String],
-    async: Boolean,
-    cb: js.Function2[/* error */ js.Any, /* data */ js.Any, js.Any]
-  ): Unit = js.native
-  def createTopics(topics: js.Array[String], cb: js.Function2[/* error */ js.Any, /* data */ js.Any, js.Any]): Unit = js.native
+  def createTopics(topics: js.Array[String], async: Boolean, cb: js.Function2[/* error */ Any, /* data */ Any, Any]): Unit = js.native
+  def createTopics(topics: js.Array[String], cb: js.Function2[/* error */ Any, /* data */ Any, Any]): Unit = js.native
   
   @JSName("on")
-  def on_error(eventName: error, cb: js.Function1[/* error */ js.Any, js.Any]): this.type = js.native
+  def on_error(eventName: error, cb: js.Function1[/* error */ Any, Any]): this.type = js.native
   @JSName("on")
-  def on_ready(eventName: ready, cb: js.Function0[js.Any]): this.type = js.native
+  def on_ready(eventName: ready, cb: js.Function0[Any]): this.type = js.native
   
-  def send(
-    payloads: js.Array[ProduceRequest],
-    cb: js.Function2[/* error */ js.Any, /* data */ js.Any, js.Any]
-  ): Unit = js.native
+  def send(payloads: js.Array[ProduceRequest], cb: js.Function2[/* error */ Any, /* data */ Any, Any]): Unit = js.native
 }

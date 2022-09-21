@@ -62,7 +62,7 @@ object Write {
     
     inline def setUpdateTransformsUndefined: Self = StObject.set(x, "updateTransforms", js.undefined)
     
-    inline def setUpdateTransformsVarargs(value: FieldTransform*): Self = StObject.set(x, "updateTransforms", js.Array(value :_*))
+    inline def setUpdateTransformsVarargs(value: FieldTransform*): Self = StObject.set(x, "updateTransforms", js.Array(value*))
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }

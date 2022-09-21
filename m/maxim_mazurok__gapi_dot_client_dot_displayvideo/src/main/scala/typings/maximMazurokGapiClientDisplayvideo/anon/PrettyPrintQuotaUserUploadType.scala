@@ -28,9 +28,6 @@ trait PrettyPrintQuotaUserUploadType extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The ID of the partner to fetch. */
-  var partnerId: String
-  
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
@@ -45,8 +42,8 @@ trait PrettyPrintQuotaUserUploadType extends StObject {
 }
 object PrettyPrintQuotaUserUploadType {
   
-  inline def apply(partnerId: String): PrettyPrintQuotaUserUploadType = {
-    val __obj = js.Dynamic.literal(partnerId = partnerId.asInstanceOf[js.Any])
+  inline def apply(): PrettyPrintQuotaUserUploadType = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrettyPrintQuotaUserUploadType]
   }
   
@@ -79,8 +76,6 @@ object PrettyPrintQuotaUserUploadType {
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

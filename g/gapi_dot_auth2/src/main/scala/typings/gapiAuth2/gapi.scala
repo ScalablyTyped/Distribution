@@ -351,11 +351,11 @@ object gapi {
       /**
         * Listen for changes in currentUser.
         */
-      def listen(listener: js.Function1[/* user */ GoogleUser, js.Any]): Unit
+      def listen(listener: js.Function1[/* user */ GoogleUser, Any]): Unit
     }
     object CurrentUser {
       
-      inline def apply(get: () => GoogleUser, listen: js.Function1[/* user */ GoogleUser, js.Any] => Unit): CurrentUser = {
+      inline def apply(get: () => GoogleUser, listen: js.Function1[/* user */ GoogleUser, Any] => Unit): CurrentUser = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), listen = js.Any.fromFunction1(listen))
         __obj.asInstanceOf[CurrentUser]
       }
@@ -364,7 +364,7 @@ object gapi {
         
         inline def setGet(value: () => GoogleUser): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
         
-        inline def setListen(value: js.Function1[/* user */ GoogleUser, js.Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+        inline def setListen(value: js.Function1[/* user */ GoogleUser, Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       }
     }
     
@@ -374,24 +374,40 @@ object gapi {
       * request additional scopes, and sign out from the current account.
       */
     @js.native
-    trait GoogleAuth extends StObject {
+    trait GoogleAuth
+      extends StObject
+         with GoogleAuthBase {
+      
+      /**
+        * Calls the onInit function when the GoogleAuth object is fully initialized, or calls the onFailure function if
+        * initialization fails.
+        */
+      def `then`(onInit: js.Function1[/* googleAuth */ GoogleAuthBase, Any]): Any = js.native
+      def `then`(
+        onInit: js.Function1[/* googleAuth */ GoogleAuthBase, Any],
+        onFailure: js.Function1[/* reason */ Details, Any]
+      ): Any = js.native
+    }
+    
+    @js.native
+    trait GoogleAuthBase extends StObject {
       
       /**
         * Attaches the sign-in flow to the specified container's click handler.
         */
       def attachClickHandler(
-        container: js.Any,
+        container: Any,
         options: SigninOptions,
-        onsuccess: js.Function1[/* googleUser */ GoogleUser, js.Any],
-        onfailure: js.Function1[/* reason */ String, js.Any]
-      ): js.Any = js.native
+        onsuccess: js.Function1[/* googleUser */ GoogleUser, Any],
+        onfailure: js.Function1[/* reason */ String, Any]
+      ): Any = js.native
       
       var currentUser: CurrentUser = js.native
       
       /**
         * Revokes all of the scopes that the user granted.
         */
-      def disconnect(): js.Any = js.native
+      def disconnect(): Any = js.native
       
       /**
         * Get permission from the user to access the specified scopes offline.
@@ -412,17 +428,7 @@ object gapi {
       /**
         * Signs out all accounts from the application.
         */
-      def signOut(): js.Any = js.native
-      
-      /**
-        * Calls the onInit function when the GoogleAuth object is fully initialized, or calls the onFailure function if
-        * initialization fails.
-        */
-      def `then`(onInit: js.Function1[/* googleAuth */ this.type, js.Any]): js.Any = js.native
-      def `then`(
-        onInit: js.Function1[/* googleAuth */ this.type, js.Any],
-        onFailure: js.Function1[/* reason */ Details, js.Any]
-      ): js.Any = js.native
+      def signOut(): Any = js.native
     }
     
     /**
@@ -465,16 +471,17 @@ object gapi {
       /**
         * See GoogleUser.signIn()
         */
-      def grant(): js.Any = js.native
-      def grant(options: SigninOptions): js.Any = js.native
-      def grant(options: SigninOptionsBuilder): js.Any = js.native
+      def grant(): js.Promise[Any] = js.native
+      def grant(options: SigninOptions): js.Promise[Any] = js.native
+      def grant(options: SigninOptionsBuilder): js.Promise[Any] = js.native
       
       /**
         * Get permission from the user to access the specified scopes offline.
         * When you use GoogleUser.grantOfflineAccess(), the sign-in flow skips the account chooser step.
         * See GoogleUser.grantOfflineAccess().
         */
-      def grantOfflineAccess(scopes: String): Unit = js.native
+      def grantOfflineAccess(): js.Promise[Code] = js.native
+      def grantOfflineAccess(options: OfflineAccessOptions): js.Promise[Code] = js.native
       
       /**
         * Returns true if the user granted the specified scopes.
@@ -490,16 +497,6 @@ object gapi {
         * Forces a refresh of the access token, and then returns a Promise for the new AuthResponse.
         */
       def reloadAuthResponse(): js.Promise[AuthResponse] = js.native
-      
-      /**
-        * Signs in the user. Use this method to request additional scopes for incremental
-        * authorization or to sign in a user after the user has signed out.
-        * When you use GoogleUser.signIn(), the sign-in flow skips the account chooser step.
-        * See GoogleAuth.signIn().
-        */
-      def signIn(): js.Any = js.native
-      def signIn(options: SigninOptions): js.Any = js.native
-      def signIn(options: SigninOptionsBuilder): js.Any = js.native
     }
     
     trait IsSignedIn extends StObject {
@@ -512,11 +509,11 @@ object gapi {
       /**
         * Listen for changes in the current user's sign-in state.
         */
-      def listen(listener: js.Function1[/* signedIn */ Boolean, js.Any]): Unit
+      def listen(listener: js.Function1[/* signedIn */ Boolean, Any]): Unit
     }
     object IsSignedIn {
       
-      inline def apply(get: () => Boolean, listen: js.Function1[/* signedIn */ Boolean, js.Any] => Unit): IsSignedIn = {
+      inline def apply(get: () => Boolean, listen: js.Function1[/* signedIn */ Boolean, Any] => Unit): IsSignedIn = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), listen = js.Any.fromFunction1(listen))
         __obj.asInstanceOf[IsSignedIn]
       }
@@ -525,7 +522,7 @@ object gapi {
         
         inline def setGet(value: () => Boolean): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
         
-        inline def setListen(value: js.Function1[/* signedIn */ Boolean, js.Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+        inline def setListen(value: js.Function1[/* signedIn */ Boolean, Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       }
     }
     
@@ -656,24 +653,24 @@ object gapi {
     
     trait SigninOptionsBuilder extends StObject {
       
-      def setAppPackageName(name: String): js.Any
+      def setAppPackageName(name: String): Any
       
-      def setFetchBasicProfile(fetch: Boolean): js.Any
+      def setFetchBasicProfile(fetch: Boolean): Any
       
-      def setLoginHint(hint: String): js.Any
+      def setLoginHint(hint: String): Any
       
-      def setPrompt(prompt: String): js.Any
+      def setPrompt(prompt: String): Any
       
-      def setScope(scope: String): js.Any
+      def setScope(scope: String): Any
     }
     object SigninOptionsBuilder {
       
       inline def apply(
-        setAppPackageName: String => js.Any,
-        setFetchBasicProfile: Boolean => js.Any,
-        setLoginHint: String => js.Any,
-        setPrompt: String => js.Any,
-        setScope: String => js.Any
+        setAppPackageName: String => Any,
+        setFetchBasicProfile: Boolean => Any,
+        setLoginHint: String => Any,
+        setPrompt: String => Any,
+        setScope: String => Any
       ): SigninOptionsBuilder = {
         val __obj = js.Dynamic.literal(setAppPackageName = js.Any.fromFunction1(setAppPackageName), setFetchBasicProfile = js.Any.fromFunction1(setFetchBasicProfile), setLoginHint = js.Any.fromFunction1(setLoginHint), setPrompt = js.Any.fromFunction1(setPrompt), setScope = js.Any.fromFunction1(setScope))
         __obj.asInstanceOf[SigninOptionsBuilder]
@@ -681,15 +678,15 @@ object gapi {
       
       extension [Self <: SigninOptionsBuilder](x: Self) {
         
-        inline def setSetAppPackageName(value: String => js.Any): Self = StObject.set(x, "setAppPackageName", js.Any.fromFunction1(value))
+        inline def setSetAppPackageName(value: String => Any): Self = StObject.set(x, "setAppPackageName", js.Any.fromFunction1(value))
         
-        inline def setSetFetchBasicProfile(value: Boolean => js.Any): Self = StObject.set(x, "setFetchBasicProfile", js.Any.fromFunction1(value))
+        inline def setSetFetchBasicProfile(value: Boolean => Any): Self = StObject.set(x, "setFetchBasicProfile", js.Any.fromFunction1(value))
         
-        inline def setSetLoginHint(value: String => js.Any): Self = StObject.set(x, "setLoginHint", js.Any.fromFunction1(value))
+        inline def setSetLoginHint(value: String => Any): Self = StObject.set(x, "setLoginHint", js.Any.fromFunction1(value))
         
-        inline def setSetPrompt(value: String => js.Any): Self = StObject.set(x, "setPrompt", js.Any.fromFunction1(value))
+        inline def setSetPrompt(value: String => Any): Self = StObject.set(x, "setPrompt", js.Any.fromFunction1(value))
         
-        inline def setSetScope(value: String => js.Any): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
+        inline def setSetScope(value: String => Any): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
       }
     }
   }

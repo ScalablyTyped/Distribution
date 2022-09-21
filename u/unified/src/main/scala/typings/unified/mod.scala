@@ -1,462 +1,485 @@
 package typings.unified
 
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
+import typings.std.Record
+import typings.unified.anon.ResultResult
+import typings.unist.mod.Data
 import typings.unist.mod.Node
+import typings.vfile.libMod.Compatible
 import typings.vfile.mod.VFile
-import typings.vfile.mod.VFileCompatible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-    * Unified processor allows plugins, parsers, and compilers to be chained together to transform content.
-    *
-    * @typeParam P Processor settings. Useful when packaging unified with a preset parser and compiler.
-    */
-  inline def apply[P](): Processor[P] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Processor[P]]
-  
   @JSImport("unified", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * An attacher is the thing passed to `use`.
-    * It configures the processor and in turn can receive options.
-    *
-    * Attachers can configure processors, such as by interacting with parsers and compilers, linking them to other processors, or by specifying how the syntax tree is handled.
-    *
-    * @param settings Configuration
-    * @typeParam S Plugin settings
-    * @typeParam P Processor settings
-    * @returns Optional Transformer.
-    */
-  type Attacher[S /* <: js.Array[js.Any] */, P] = js.ThisFunction1[/* this */ Processor[P], /* settings */ S, Transformer | Unit]
+  @JSImport("unified", "CompilerClass")
+  @js.native
+  open class CompilerClass[Tree /* <: Node[Data] */, Result] protected () extends StObject {
+    /**
+      * Constructor.
+      *
+      * @param tree
+      *   Tree to compile.
+      * @param file
+      *   File associated with `tree`.
+      * @returns
+      *   Instance.
+      */
+    def this(tree: Tree, file: VFile) = this()
+  }
   
-  /**
-    * Transform an AST node/tree into text
-    */
-  trait Compiler extends StObject {
+  @JSImport("unified", "ParserClass")
+  @js.native
+  open class ParserClass[Tree /* <: Node[Data] */] protected () extends StObject {
+    /**
+      * Constructor.
+      *
+      * @param document
+      *   Document to parse.
+      * @param file
+      *   File associated with `document`.
+      * @returns
+      *   Instance.
+      */
+    def this(document: String, file: VFile) = this()
+  }
+  
+  inline def unified(): Processor[Unit, Unit, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unified")().asInstanceOf[Processor[Unit, Unit, Unit, Unit]]
+  
+  type Attacher[PluginParameters /* <: js.Array[Any] */, Input, Output] = Plugin[PluginParameters, Input, Output]
+  
+  type Compiler[Tree /* <: Node[Data] */, Result] = (CompilerClass[Tree, Result]) | (CompilerFunction[Tree, Result])
+  
+  type CompilerFunction[Tree /* <: Node[Data] */, Result] = js.Function2[/* tree */ Tree, /* file */ VFile, Result]
+  
+  @js.native
+  trait FrozenProcessor[ParseTree /* <: Node[Data] | Unit */, CurrentTree /* <: Node[Data] | Unit */, CompileTree /* <: Node[Data] | Unit */, CompileResult] extends StObject {
     
     /**
-      * Transform an AST node/tree into text
+      * Clone current processor
       *
-      * @returns Compiled text
+      * @returns
+      *   New unfrozen processor that is configured to function the same as its
+      *   ancestor.
+      *   But when the descendant processor is configured it does not affect the
+      *   ancestral processor.
       */
-    def compile(): String
-  }
-  object Compiler {
+    def apply(): Processor[ParseTree, CurrentTree, CompileTree, CompileResult] = js.native
     
-    inline def apply(compile: () => String): Compiler = {
-      val __obj = js.Dynamic.literal(compile = js.Any.fromFunction0(compile))
-      __obj.asInstanceOf[Compiler]
-    }
+    var Compiler: js.UndefOr[
+        typings.unified.mod.Compiler[Specific[Node[Data], CompileTree], Specific[Any, CompileResult]]
+      ] = js.native
     
-    extension [Self <: Compiler](x: Self) {
-      
-      inline def setCompile(value: () => String): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
-    }
-  }
-  
-  /**
-    * A constructor function (a function with keys in its `prototype`) or class that implements a
-    * `compile` method.
-    */
-  @js.native
-  trait CompilerConstructor
-    extends StObject
-       with /**
-    * Creates a Compiler
-    *
-    * @param node Node/tree to be stringified
-    * @param file File associated with node
-    */
-  Instantiable2[/* node */ Node, /* file */ VFile, Compiler]
-  
-  /**
-    * Transform an AST node/tree into text
-    *
-    * @param node Node/tree to be stringified
-    * @param file File associated with node
-    * @returns Compiled text
-    */
-  type CompilerFunction = js.Function2[/* node */ Node, /* file */ VFile, String]
-  
-  /**
-    * Transform file contents into an AST
-    */
-  trait Parser extends StObject {
+    var Parser: js.UndefOr[typings.unified.mod.Parser[Specific[Node[Data], ParseTree]]] = js.native
     
     /**
-      * Transform file contents into an AST
+      * Internal list of configured plugins.
       *
-      * @returns Parsed AST node/tree
+      * @private
       */
-    def parse(): Node
+    var attachers: js.Array[Array[(Plugin[js.Array[Any], Node[Data], Node[Data]]) | Any]] = js.native
+    
+    /**
+      * Get an in-memory key-value store accessible to all phases of the process.
+      *
+      * @returns
+      *   Key-value store.
+      */
+    def data(): Record[String, Any] = js.native
+    /**
+      * Set an in-memory key-value store accessible to all phases of the process.
+      *
+      * @param data
+      *   Key-value store.
+      * @returns
+      *   Current processor.
+      */
+    def data(data: Record[String, Any]): Processor[ParseTree, CurrentTree, CompileTree, CompileResult] = js.native
+    /**
+      * Get an in-memory value by key.
+      *
+      * @param key
+      *   Key to get.
+      * @returns
+      *   The value at `key`.
+      */
+    def data(key: String): Any = js.native
+    /**
+      * Set an in-memory value by key.
+      *
+      * @param key
+      *   Key to set.
+      * @param value
+      *   Value to set.
+      * @returns
+      *   Current processor.
+      */
+    def data(key: String, value: Any): Processor[ParseTree, CurrentTree, CompileTree, CompileResult] = js.native
+    
+    /**
+      * Freeze a processor.
+      * Frozen processors are meant to be extended and not to be configured or
+      * processed directly.
+      *
+      * Once a processor is frozen it cannot be unfrozen.
+      * New processors working just like it can be created by calling the
+      * processor.
+      *
+      * It’s possible to freeze processors explicitly, by calling `.freeze()`, but
+      * `.parse()`, `.run()`, `.stringify()`, and `.process()` call `.freeze()` to
+      * freeze a processor too.
+      *
+      * @returns
+      *   Frozen processor.
+      */
+    def freeze(): FrozenProcessor[ParseTree, CurrentTree, CompileTree, CompileResult] = js.native
+    
+    /**
+      * Parse a file.
+      *
+      * @param file
+      *   File to parse.
+      *   `VFile` or anything that can be given to `new VFile()`, optional.
+      * @returns
+      *   Resulting tree.
+      */
+    def parse(): Specific[Node[Data], ParseTree] = js.native
+    def parse(file: Compatible): Specific[Node[Data], ParseTree] = js.native
+    
+    def process(file: Unit, callback: ProcessCallback[VFileWithOutput[CompileResult]]): Unit = js.native
+    /**
+      * Process a file.
+      *
+      * This performs all phases of the processor:
+      *
+      * 1.  Parse a file into a unist node using the configured `Parser`
+      * 2.  Run transforms on that node
+      * 3.  Compile the resulting node using the `Compiler`
+      *
+      * The result from the compiler is stored on the file.
+      * What the result is depends on which plugins you use.
+      * The result is typically text (`string` or `Buffer`), which can be retrieved
+      * with `file.toString()` (or `String(file)`).
+      * In some cases, such as when using `rehypeReact` to create a React node,
+      * the result is stored on `file.result`.
+      *
+      * @param file
+      *   `VFile` or anything that can be given to `new VFile()`.
+      * @returns
+      *   Promise that resolves to the resulting `VFile`.
+      */
+    def process(file: Compatible): js.Promise[VFileWithOutput[CompileResult]] = js.native
+    /**
+      * Process a file.
+      *
+      * This performs all phases of the processor:
+      *
+      * 1.  Parse a file into a unist node using the configured `Parser`
+      * 2.  Run transforms on that node
+      * 3.  Compile the resulting node using the `Compiler`
+      *
+      * The result from the compiler is stored on the file.
+      * What the result is depends on which plugins you use.
+      * The result is typically text (`string` or `Buffer`), which can be retrieved
+      * with `file.toString()` (or `String(file)`).
+      * In some cases, such as when using `rehypeReact` to create a React node,
+      * the result is stored on `file.result`.
+      *
+      * @param file
+      *   `VFile` or anything that can be given to `new VFile()`.
+      * @param callback
+      *   Callback called with an error or the resulting file.
+      * @returns
+      *   Nothing.
+      */
+    def process(file: Compatible, callback: ProcessCallback[VFileWithOutput[CompileResult]]): Unit = js.native
+    
+    /**
+      * Process a file, synchronously.
+      * Throws when asynchronous transforms are configured.
+      *
+      * This performs all phases of the processor:
+      *
+      * 1.  Parse a file into a unist node using the configured `Parser`
+      * 2.  Run transforms on that node
+      * 3.  Compile the resulting node using the `Compiler`
+      *
+      * The result from the compiler is stored on the file.
+      * What the result is depends on which plugins you use.
+      * The result is typically text (`string` or `Buffer`), which can be retrieved
+      * with `file.toString()` (or `String(file)`).
+      * In some cases, such as when using `rehypeReact` to create a React node,
+      * the result is stored on `file.result`.
+      *
+      * @param file
+      *   `VFile` or anything that can be given to `new VFile()`, optional.
+      * @returns
+      *   Resulting file.
+      */
+    def processSync(): VFileWithOutput[CompileResult] = js.native
+    def processSync(file: Compatible): VFileWithOutput[CompileResult] = js.native
+    
+    /**
+      * Run transforms on the given node.
+      *
+      * @param node
+      *   Tree to transform.
+      * @param file
+      *   File associated with `node`.
+      *   `VFile` or anything that can be given to `new VFile()`.
+      * @returns
+      *   Promise that resolves to the resulting tree.
+      */
+    def run(node: Specific[Node[Data], ParseTree]): js.Promise[Specific[Node[Data], CompileTree]] = js.native
+    /**
+      * Run transforms on the given tree.
+      *
+      * @param node
+      *   Tree to transform.
+      * @param callback
+      *   Callback called with an error or the resulting node.
+      * @returns
+      *   Nothing.
+      */
+    def run(node: Specific[Node[Data], ParseTree], callback: RunCallback[Specific[Node[Data], CompileTree]]): Unit = js.native
+    def run(
+      node: Specific[Node[Data], ParseTree],
+      file: Unit,
+      callback: RunCallback[Specific[Node[Data], CompileTree]]
+    ): Unit = js.native
+    def run(node: Specific[Node[Data], ParseTree], file: Compatible): js.Promise[Specific[Node[Data], CompileTree]] = js.native
+    /**
+      * Run transforms on the given node.
+      *
+      * @param node
+      *   Tree to transform.
+      * @param file
+      *   File associated with `node`.
+      *   `VFile` or anything that can be given to `new VFile()`.
+      * @param callback
+      *   Callback called with an error or the resulting node.
+      * @returns
+      *   Nothing.
+      */
+    def run(
+      node: Specific[Node[Data], ParseTree],
+      file: Compatible,
+      callback: RunCallback[Specific[Node[Data], CompileTree]]
+    ): Unit = js.native
+    
+    /**
+      * Run transforms on the given node, synchronously.
+      * Throws when asynchronous transforms are configured.
+      *
+      * @param node
+      *   Tree to transform.
+      * @param file
+      *   File associated with `node`.
+      *   `VFile` or anything that can be given to `new VFile()`, optional.
+      * @returns
+      *   Resulting tree.
+      */
+    def runSync(node: Specific[Node[Data], ParseTree]): Specific[Node[Data], CompileTree] = js.native
+    def runSync(node: Specific[Node[Data], ParseTree], file: Compatible): Specific[Node[Data], CompileTree] = js.native
+    
+    /**
+      * Compile a file.
+      *
+      * @param node
+      *   Node to compile.
+      * @param file
+      *   `VFile` or anything that can be given to `new VFile()`, optional.
+      * @returns
+      *   New content: compiled text (`string` or `Buffer`) or something else.
+      *   This depends on which plugins you use: typically text, but could for
+      *   example be a React node.
+      */
+    def stringify(node: Specific[Node[Data], CompileTree]): Any | CompileResult = js.native
+    def stringify(node: Specific[Node[Data], CompileTree], file: Compatible): Any | CompileResult = js.native
   }
-  object Parser {
+  
+  type Parser[Tree /* <: Node[Data] */] = ParserClass[Tree] | ParserFunction[Tree]
+  
+  type ParserFunction[Tree /* <: Node[Data] */] = js.Function2[/* document */ String, /* file */ VFile, Tree]
+  
+  type Pluggable[PluginParameters /* <: js.Array[Any] */] = (PluginTuple[PluginParameters, Any, Any]) | (Plugin[PluginParameters, Any, Any]) | Preset
+  
+  type PluggableList = js.Array[Pluggable[js.Array[Any]]]
+  
+  type Plugin[PluginParameters /* <: js.Array[Any] */, Input, Output] = js.ThisFunction1[
+    // No clue.
+  /* this */ Processor[Output | Unit, Input | Output | Unit, Input | Unit, Output | Unit], 
+    /* settings */ PluginParameters, 
+    Unit | (Transformer[Input, Output])
+  ]
+  
+  type PluginTuple[PluginParameters /* <: js.Array[Any] */, Input, Output] = /* import warning: importer.ImportType#apply c repeated non-array type: PluginParameters */ js.Array[PluginParameters]
+  
+  trait Preset extends StObject {
     
-    inline def apply(parse: () => Node): Parser = {
-      val __obj = js.Dynamic.literal(parse = js.Any.fromFunction0(parse))
-      __obj.asInstanceOf[Parser]
-    }
+    var plugins: js.UndefOr[PluggableList] = js.undefined
     
-    extension [Self <: Parser](x: Self) {
-      
-      inline def setParse(value: () => Node): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
-    }
-  }
-  
-  /**
-    * A constructor function (a function with keys in its `prototype`) or class that implements a
-    * `parse` method.
-    */
-  @js.native
-  trait ParserConstructor
-    extends StObject
-       with /**
-    * Creates a Parser
-    *
-    * @param text Text to transform into AST node(s)
-    * @param file File associated with text
-    */
-  Instantiable2[/* text */ String, /* file */ VFile, Parser]
-  
-  /**
-    * Transform file contents into an AST
-    *
-    * @param text Text to transform into AST node(s)
-    * @param file File associated with text
-    * @returns Parsed AST node/tree
-    */
-  type ParserFunction = js.Function2[/* text */ String, /* file */ VFile, Node]
-  
-  /**
-    * A union of the different ways to add plugins to unified
-    *
-    * @typeParam S Plugin settings
-    * @typeParam P Processor settings
-    */
-  type Pluggable[S /* <: js.Array[js.Any] */, P] = (Plugin[S, P]) | (Preset[S, P]) | (PluginTuple[S, P])
-  
-  /**
-    * A list of plugins and presets
-    *
-    * @typeParam P Processor settings
-    */
-  type PluggableList[P] = js.Array[Pluggable[js.Array[js.UndefOr[js.Any]], P]]
-  
-  /**
-    * A Plugin (Attacher) is the thing passed to `use`.
-    * It configures the processor and in turn can receive options.
-    *
-    * Attachers can configure processors, such as by interacting with parsers and compilers, linking them to other processors, or by specifying how the syntax tree is handled.
-    *
-    * @param settings Configuration
-    * @typeParam S Plugin settings
-    * @typeParam P Processor settings
-    * @returns Optional Transformer.
-    */
-  type Plugin[S /* <: js.Array[js.Any] */, P] = Attacher[S, P]
-  
-  /**
-    * A pairing of a plugin with its settings
-    *
-    * @typeParam S Plugin settings
-    * @typeParam P Processor settings
-    */
-  type PluginTuple[S /* <: js.Array[js.Any] */, P] = Array[(Plugin[S, P]) | js.Any]
-  
-  /**
-    * Presets provide a potentially sharable way to configure processors.
-    * They can contain multiple plugins and optionally settings as well.
-    *
-    * @typeParam P Processor settings
-    */
-  trait Preset[S, P] extends StObject {
-    
-    var plugins: PluggableList[P]
-    
-    var settings: js.UndefOr[Settings] = js.undefined
+    var settings: js.UndefOr[Record[String, Any]] = js.undefined
   }
   object Preset {
     
-    inline def apply[S, P](plugins: PluggableList[P]): Preset[S, P] = {
-      val __obj = js.Dynamic.literal(plugins = plugins.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Preset[S, P]]
+    inline def apply(): Preset = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Preset]
     }
     
-    extension [Self <: Preset[?, ?], S, P](x: Self & (Preset[S, P])) {
+    extension [Self <: Preset](x: Self) {
       
-      inline def setPlugins(value: PluggableList[P]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: PluggableList): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      inline def setPluginsVarargs(value: (Pluggable[js.Array[js.UndefOr[js.Any]], P])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setPluginsVarargs(value: Pluggable[js.Array[Any]]*): Self = StObject.set(x, "plugins", js.Array(value*))
+      
+      inline def setSettings(value: Record[String, Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
       inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     }
   }
   
-  /**
-    * Access results from transforms
-    *
-    * @param error Error if any occurred
-    * @param vfile File with updated content
-    */
-  type ProcessCallback = js.Function2[/* error */ Error | Null, /* file */ VFile, Unit]
+  type ProcessCallback[File /* <: VFile */] = js.Function2[/* error */ js.UndefOr[js.Error | Null], /* file */ js.UndefOr[File], Unit]
   
-  /**
-    * Processor allows plugins, parsers, and compilers to be chained together to transform content.
-    *
-    * @typeParam P Processor settings. Useful when packaging unified with a preset parser and compiler.
-    */
   @js.native
-  trait Processor[P] extends StObject {
+  trait Processor[ParseTree /* <: Node[Data] | Unit */, CurrentTree /* <: Node[Data] | Unit */, CompileTree /* <: Node[Data] | Unit */, CompileResult]
+    extends StObject
+       with FrozenProcessor[ParseTree, CurrentTree, CompileTree, CompileResult] {
     
+    def use(presetOrList: PluggableList): Processor[ParseTree, CurrentTree, CompileTree, CompileResult] = js.native
     /**
-      * Clone current processor
+      * Configure the processor with a preset or list of plugins and presets.
       *
-      * @returns New unfrozen processor which is configured to function the same as its ancestor.
-      * But when the descendant processor is configured in the future it does not affect the ancestral processor.
+      * @param presetOrList
+      *   Either a list of plugins, presets, and tuples, or a single preset: an
+      *   object with a `plugins` (list) and/or `settings`
+      *   (`Record<string, unknown>`).
+      * @returns
+      *   Current processor.
       */
-    def apply(): Processor[P] = js.native
-    
+    def use(presetOrList: Preset): Processor[ParseTree, CurrentTree, CompileTree, CompileResult] = js.native
     /**
-      * Function handling the compilation of syntax tree to a text.
-      * Used in the stringify phase in the process and invoked with a `Node` and `VFile` representation of the document to stringify.
+      * Configure the processor to use a plugin.
       *
-      * `Compiler` can be a normal function in which case it must return a `string`: the text representation of the given syntax tree.
+      * @typeParam PluginParameters
+      *   Plugin settings.
+      * @typeParam Input
+      *   Value that is accepted by the plugin.
       *
-      * `Compiler` can also be a constructor function (a function with keys in its `prototype`) in which case it’s invoked with `new`.
-      * Instances must have a `compile` method which is invoked without arguments and must return a `string`.
+      *   *   If the plugin returns a transformer, then this should be the node
+      *       type that the transformer expects.
+      *   *   If the plugin sets a parser, then this should be `string`.
+      *   *   If the plugin sets a compiler, then this should be the node type that
+      *       the compiler expects.
+      * @typeParam Output
+      *   Value that the plugin yields.
+      *
+      *   *   If the plugin returns a transformer, then this should be the node
+      *       type that the transformer yields, and defaults to `Input`.
+      *   *   If the plugin sets a parser, then this should be the node type that
+      *       the parser yields.
+      *   *   If the plugin sets a compiler, then this should be the result that
+      *       the compiler yields (`string`, `Buffer`, or something else).
+      * @param plugin
+      *   Plugin (function) to use.
+      *   Plugins are deduped based on identity: passing a function in twice will
+      *   cause it to run only once.
+      * @param settings
+      *   Configuration for plugin, optional.
+      *   Plugins typically receive one options object, but could receive other and
+      *   more values.
+      *   It’s also possible to pass a boolean instead of settings: `true` (to turn
+      *   a plugin on) or `false` (to turn a plugin off).
+      * @returns
+      *   Current processor.
       */
-    var Compiler: CompilerConstructor | CompilerFunction = js.native
-    
+    def use[PluginParameters /* <: js.Array[Any] */, Input, Output](
+      plugin: Plugin[PluginParameters, Input, Output],
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param settings because its type PluginParameters | [boolean] is not an array type */ settings: PluginParameters
+    ): UsePlugin[ParseTree, CurrentTree, CompileTree, CompileResult, Input, Output] = js.native
+    def use[PluginParameters /* <: js.Array[Any] */, Input, Output](
+      plugin: Plugin[PluginParameters, Input, Output],
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param settings because its type PluginParameters | [boolean] is not an array type */ settings: js.Array[Boolean]
+    ): UsePlugin[ParseTree, CurrentTree, CompileTree, CompileResult, Input, Output] = js.native
+    def use[PluginParameters /* <: js.Array[Any] */, Input, Output](tuple: js.Tuple2[Plugin[PluginParameters, Input, Output], Boolean]): UsePlugin[ParseTree, CurrentTree, CompileTree, CompileResult, Input, Output] = js.native
     /**
-      * Function handling the parsing of text to a syntax tree.
-      * Used in the parse phase in the process and invoked with a `string` and `VFile` representation of the document to parse.
+      * Configure the processor with a tuple of a plugin and setting(s).
       *
-      * `Parser` can be a normal function in which case it must return a `Node`: the syntax tree representation of the given file.
+      * @typeParam PluginParameters
+      *   Plugin settings.
+      * @typeParam Input
+      *   Value that is accepted by the plugin.
       *
-      * `Parser` can also be a constructor function (a function with keys in its `prototype`) in which case it’s invoked with `new`.
-      * Instances must have a parse method which is invoked without arguments and must return a `Node`.
+      *   *   If the plugin returns a transformer, then this should be the node
+      *       type that the transformer expects.
+      *   *   If the plugin sets a parser, then this should be `string`.
+      *   *   If the plugin sets a compiler, then this should be the node type that
+      *       the compiler expects.
+      * @typeParam Output
+      *   Value that the plugin yields.
+      *
+      *   *   If the plugin returns a transformer, then this should be the node
+      *       type that the transformer yields, and defaults to `Input`.
+      *   *   If the plugin sets a parser, then this should be the node type that
+      *       the parser yields.
+      *   *   If the plugin sets a compiler, then this should be the result that
+      *       the compiler yields (`string`, `Buffer`, or something else).
+      * @param tuple
+      *   A tuple where the first item is a plugin (function) to use and other
+      *   items are options.
+      *   Plugins are deduped based on identity: passing a function in twice will
+      *   cause it to run only once.
+      *   It’s also possible to pass a boolean instead of settings: `true` (to turn
+      *   a plugin on) or `false` (to turn a plugin off).
+      * @returns
+      *   Current processor.
       */
-    var Parser: ParserConstructor | ParserFunction = js.native
-    
-    /**
-      * Get or set information in an in-memory key-value store accessible to all phases of the process.
-      * An example is a list of HTML elements which are self-closing, which is needed when parsing, transforming, and compiling HTML.
-      *
-      * @returns key-value store object
-      */
-    def data(): StringDictionary[js.Any] = js.native
-    /**
-      * @param key Identifier
-      * @returns If getting, the value at key
-      */
-    def data(key: String): js.Any = js.native
-    /**
-      * @param value Value to set. Omit if getting key
-      * @returns If setting, the processor on which data is invoked
-      */
-    def data(key: String, value: js.Any): Processor[P] = js.native
-    
-    /**
-      * Freeze a processor. Frozen processors are meant to be extended and not to be configured or processed directly.
-      *
-      * Once a processor is frozen it cannot be unfrozen. New processors functioning just like it can be created by invoking the processor.
-      *
-      * It’s possible to freeze processors explicitly, by calling `.freeze()`, but `.parse()`, `.run()`, `.stringify()`, and `.process()` call `.freeze()` to freeze a processor too.
-      *
-      * @returns The processor on which freeze is invoked.
-      */
-    def freeze(): Processor[P] = js.native
-    
-    /**
-      * Parse text to a syntax tree.
-      *
-      * @param file VFile or anything which can be given to vfile()
-      * @returns Syntax tree representation of input.
-      */
-    def parse(file: VFileCompatible): Node = js.native
-    
-    /**
-      * Process the given representation of a file as configured on the processor. The process invokes `parse`, `run`, and `stringify` internally.
-      * @param file `VFile` or anything which can be given to `vfile()`
-      * @returns `Promise` if `done` is not given.
-      * Rejected with an error or resolved with the resulting file.
-      */
-    def process(file: VFileCompatible): js.Promise[VFile] = js.native
-    /**
-      * Process the given representation of a file as configured on the processor. The process invokes `parse`, `run`, and `stringify` internally.
-      * @param file `VFile` or anything which can be given to `vfile()`
-      * @param done Invoked when the process is complete. Invoked with a fatal error, if any, and the VFile.
-      */
-    def process(file: VFileCompatible, done: ProcessCallback): Unit = js.native
-    
-    /**
-      * Process the given representation of a file as configured on the processor. The process invokes `parse`, `run`, and `stringify` internally.
-      *
-      * If asynchronous plugins are configured an error is thrown.
-      *
-      * @param file `VFile` or anything which can be given to `vfile()`
-      * @returns Virtual file with modified contents.
-      */
-    def processSync(file: VFileCompatible): VFile = js.native
-    
-    /**
-      * Transform a syntax tree by applying plugins to it.
-      *
-      * @param node Node to transform
-      * @returns `Promise` if `done` is not given. Rejected with an error, or resolved with the resulting syntax tree.
-      */
-    def run(node: Node): js.Promise[Node] = js.native
-    /**
-      * Transform a syntax tree by applying plugins to it.
-      *
-      * @param node Node to transform
-      * @param done Invoked when transformation is complete.
-      */
-    def run(node: Node, done: RunCallback): Unit = js.native
-    /**
-      * Transform a syntax tree by applying plugins to it.
-      *
-      * @param node Node to transform
-      * @param file `VFile` or anything which can be given to `vfile()`
-      * @returns `Promise` if `done` is not given. Rejected with an error, or resolved with the resulting syntax tree.
-      */
-    def run(node: Node, file: VFileCompatible): js.Promise[Node] = js.native
-    /**
-      * Transform a syntax tree by applying plugins to it.
-      *
-      * @param node Node to transform
-      * @param file `VFile` or anything which can be given to `vfile()`
-      * @param done Invoked when transformation is complete.
-      */
-    def run(node: Node, file: VFileCompatible, done: RunCallback): Unit = js.native
-    
-    /**
-      * Transform a syntax tree by applying plugins to it.
-      *
-      * If asynchronous plugins are configured an error is thrown.
-      *
-      * @param node Node to transform
-      * @param file `VFile` or anything which can be given to `vfile()`
-      * @returns The given syntax tree.
-      */
-    def runSync(node: Node): Node = js.native
-    def runSync(node: Node, file: VFileCompatible): Node = js.native
-    
-    /**
-      * Compile a syntax tree to text.
-      *
-      * @param node unist node
-      * @param file `VFile` or anything which can be given to `vfile()`
-      * @returns String representation of the syntax tree file
-      */
-    def stringify(node: Node): String = js.native
-    def stringify(node: Node, file: VFileCompatible): String = js.native
-    
-    /**
-      * A list of plugins and presets to be applied to processor
-      *
-      * @param list List of plugins, presets, and pairs
-      */
-    def use(list: PluggableList[P]): Processor[P] = js.native
-    /**
-      * Configuration passed to a frozen processor
-      *
-      * @param processorSettings Settings passed to processor
-      */
-    def use(processorSettings: ProcessorSettings[P]): Processor[P] = js.native
-    /**
-      * Configure using a tuple of plugin and setting(s)
-      *
-      * @param pluginTuple pairs, plugin and settings in an array
-      * @typeParam S Plugin settings
-      */
-    def use[S /* <: js.Array[js.Any] */](pluginTuple: PluginTuple[S, P]): Processor[P] = js.native
-    /**
-      * Configure the processor to use a plugin and optionally configure that plugin with options.
-      *
-      * @param plugin unified plugin
-      * @param settings Configuration for plugin
-      * @typeParam S Plugin settings
-      * @returns The processor on which use is invoked
-      */
-    def use[S /* <: js.Array[js.Any] */](
-      plugin: Plugin[S, P],
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param settings because its type S is not an array type */ settings: S
-    ): Processor[P] = js.native
-    /**
-      * Configure the processor with a preset to use
-      *
-      * @param preset `Object` with an plugins (set to list), and/or an optional settings object
-      */
-    def use[S /* <: js.Array[js.Any] */](preset: Preset[S, P]): Processor[P] = js.native
+    @JSName("use")
+    def use_PluginParameters_ArrayAnyInputOutput_UsePlugin[PluginParameters /* <: js.Array[Any] */, Input, Output](tuple: PluginTuple[PluginParameters, Input, Output]): UsePlugin[ParseTree, CurrentTree, CompileTree, CompileResult, Input, Output] = js.native
   }
   
-  /**
-    * Settings can be passed directly to the processor
-    *
-    * @typeParam P Settings applied to a processor. Useful when packaging unified with a preset parser and compiler.
-    */
-  trait ProcessorSettings[P] extends StObject {
-    
-    var settings: P
-  }
-  object ProcessorSettings {
-    
-    inline def apply[P](settings: P): ProcessorSettings[P] = {
-      val __obj = js.Dynamic.literal(settings = settings.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ProcessorSettings[P]]
-    }
-    
-    extension [Self <: ProcessorSettings[?], P](x: Self & ProcessorSettings[P]) {
-      
-      inline def setSettings(value: P): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /**
-    * Access results from transforms
-    *
-    * @param error Error if any occurred
-    * @param node Transformed AST tree/node
-    * @param vfile File associated with node
-    */
-  type RunCallback = js.Function3[/* error */ Error | Null, /* node */ Node, /* file */ VFile, Unit]
-  
-  /**
-    * Configuration passed to a Plugin or Processor
-    */
-  type Settings = StringDictionary[js.Any]
-  
-  /**
-    * Transformers modify the syntax tree or metadata of a file. A transformer is a function which is invoked each time a file is passed through the transform phase.
-    * If an error occurs (either because it’s thrown, returned, rejected, or passed to `next`), the process stops.
-    *
-    * The transformation process in unified is handled by `trough`, see it’s documentation for the exact semantics of transformers.
-    *
-    * @param node Node or tree to be transformed
-    * @param file File associated with node or tree
-    * @param next If the signature of a transformer includes `next` (third argument), the function may finish asynchronous, and must invoke `next()`.
-    * @returns
-    * - `void` — If nothing is returned, the next transformer keeps using same tree.
-    * - `Error` — Can be returned to stop the process
-    * - `Node` — Can be returned and results in further transformations and `stringify`s to be performed on the new tree
-    * - `Promise` — If a promise is returned, the function is asynchronous, and must be resolved (optionally with a `Node`) or rejected (optionally with an `Error`)
-    */
-  type Transformer = js.Function3[
-    /* node */ Node, 
-    /* file */ VFile, 
-    /* next */ js.UndefOr[
-      js.Function3[/* error */ Error | Null, /* tree */ Node, /* file */ VFile, js.Object]
-    ], 
-    Error | Node | (js.Promise[Node | Unit]) | Unit
+  type RunCallback[Tree /* <: Node[Data] */] = js.Function3[
+    /* error */ js.UndefOr[js.Error | Null], 
+    /* node */ js.UndefOr[Tree], 
+    /* file */ js.UndefOr[VFile], 
+    Unit
   ]
+  
+  // Get the right most non-void thing.
+  type Specific[Left, Right] = Right | Left
+  
+  type TransformCallback[Tree /* <: Node[Data] */] = js.Function3[
+    /* error */ js.UndefOr[js.Error | Null], 
+    /* node */ js.UndefOr[Tree], 
+    /* file */ js.UndefOr[VFile], 
+    Unit
+  ]
+  
+  type Transformer[Input /* <: Node[Data] */, Output /* <: Node[Data] */] = js.Function3[
+    /* node */ Input, 
+    /* file */ VFile, 
+    /* next */ TransformCallback[Output], 
+    js.UndefOr[(js.Promise[js.UndefOr[Output | Unit]]) | Output | js.Error | Unit]
+  ]
+  
+  // Create a processor based on the input/output of a plugin.
+  type UsePlugin[ParseTree /* <: Node[Data] | Unit */, CurrentTree /* <: Node[Data] | Unit */, CompileTree /* <: Node[Data] | Unit */, CompileResult, Input, Output] = // Else, `Input` is not a `Node` and `Output` is not a `Node`.
+  // Maybe it’s untyped, or the plugin throws an error (`never`), so lets
+  // just keep it as it was.
+  Processor[
+    Output | ParseTree | (Specific[Input, ParseTree]), 
+    CurrentTree | Output | (Specific[Input | Output, CurrentTree]), 
+    CompileTree | Input | (Specific[CompileTree | Output, CompileTree | Output]), 
+    CompileResult | Output
+  ]
+  
+  /* eslint-disable @typescript-eslint/naming-convention */
+  type VFileWithOutput[Result] = VFile | (VFile & ResultResult[Result])
 }

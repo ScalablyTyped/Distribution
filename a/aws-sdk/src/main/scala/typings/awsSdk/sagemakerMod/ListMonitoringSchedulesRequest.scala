@@ -9,12 +9,12 @@ trait ListMonitoringSchedulesRequest extends StObject {
   /**
     * A filter that returns only monitoring schedules created after a specified time.
     */
-  var CreationTimeAfter: js.UndefOr[Timestamp] = js.undefined
+  var CreationTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only monitoring schedules created before a specified time.
     */
-  var CreationTimeBefore: js.UndefOr[Timestamp] = js.undefined
+  var CreationTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Name of a specific endpoint to fetch schedules for.
@@ -24,17 +24,27 @@ trait ListMonitoringSchedulesRequest extends StObject {
   /**
     * A filter that returns only monitoring schedules modified after a specified time.
     */
-  var LastModifiedTimeAfter: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only monitoring schedules modified before a specified time.
     */
-  var LastModifiedTimeBefore: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum number of jobs to return in the response. The default value is 10.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
+  
+  /**
+    * Gets a list of the monitoring schedules for the specified monitoring job definition.
+    */
+  var MonitoringJobDefinitionName: js.UndefOr[typings.awsSdk.sagemakerMod.MonitoringJobDefinitionName] = js.undefined
+  
+  /**
+    * A filter that returns only the monitoring schedules for the specified monitoring type.
+    */
+  var MonitoringTypeEquals: js.UndefOr[MonitoringType] = js.undefined
   
   /**
     * Filter for monitoring schedules whose name contains a specified string.
@@ -70,11 +80,11 @@ object ListMonitoringSchedulesRequest {
   
   extension [Self <: ListMonitoringSchedulesRequest](x: Self) {
     
-    inline def setCreationTimeAfter(value: Timestamp): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
+    inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
     
-    inline def setCreationTimeBefore(value: Timestamp): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
+    inline def setCreationTimeBefore(value: js.Date): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
     
@@ -82,17 +92,25 @@ object ListMonitoringSchedulesRequest {
     
     inline def setEndpointNameUndefined: Self = StObject.set(x, "EndpointName", js.undefined)
     
-    inline def setLastModifiedTimeAfter(value: Timestamp): Self = StObject.set(x, "LastModifiedTimeAfter", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTimeAfter(value: js.Date): Self = StObject.set(x, "LastModifiedTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeAfterUndefined: Self = StObject.set(x, "LastModifiedTimeAfter", js.undefined)
     
-    inline def setLastModifiedTimeBefore(value: Timestamp): Self = StObject.set(x, "LastModifiedTimeBefore", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTimeBefore(value: js.Date): Self = StObject.set(x, "LastModifiedTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeBeforeUndefined: Self = StObject.set(x, "LastModifiedTimeBefore", js.undefined)
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    
+    inline def setMonitoringJobDefinitionName(value: MonitoringJobDefinitionName): Self = StObject.set(x, "MonitoringJobDefinitionName", value.asInstanceOf[js.Any])
+    
+    inline def setMonitoringJobDefinitionNameUndefined: Self = StObject.set(x, "MonitoringJobDefinitionName", js.undefined)
+    
+    inline def setMonitoringTypeEquals(value: MonitoringType): Self = StObject.set(x, "MonitoringTypeEquals", value.asInstanceOf[js.Any])
+    
+    inline def setMonitoringTypeEqualsUndefined: Self = StObject.set(x, "MonitoringTypeEquals", js.undefined)
     
     inline def setNameContains(value: NameContains): Self = StObject.set(x, "NameContains", value.asInstanceOf[js.Any])
     

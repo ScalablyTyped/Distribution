@@ -117,22 +117,19 @@ object mod {
     
     def contains(eObject: EObject): Boolean = js.native
     
-    def each(iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ this.type, Unit]): Unit = js.native
-    def each(
-      iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ this.type, Unit],
-      context: js.Any
-    ): Unit = js.native
+    def each(iterator: js.Function3[/* value */ Any, /* key */ Any, /* list */ this.type, Unit]): Unit = js.native
+    def each(iterator: js.Function3[/* value */ Any, /* key */ Any, /* list */ this.type, Unit], context: Any): Unit = js.native
     
-    def filter(iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ this.type, Boolean]): js.Array[EObject] = js.native
+    def filter(iterator: js.Function3[/* value */ Any, /* key */ Any, /* list */ this.type, Boolean]): js.Array[EObject] = js.native
     def filter(
-      iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ this.type, Boolean],
-      context: js.Any
+      iterator: js.Function3[/* value */ Any, /* key */ Any, /* list */ this.type, Boolean],
+      context: Any
     ): js.Array[EObject] = js.native
     
-    def find(iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ this.type, Boolean]): js.Array[EObject] = js.native
+    def find(iterator: js.Function3[/* value */ Any, /* key */ Any, /* list */ this.type, Boolean]): js.Array[EObject] = js.native
     def find(
-      iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ this.type, Boolean],
-      context: js.Any
+      iterator: js.Function3[/* value */ Any, /* key */ Any, /* list */ this.type, Boolean],
+      context: Any
     ): js.Array[EObject] = js.native
     
     def first(): EObject = js.native
@@ -141,16 +138,13 @@ object mod {
     
     def last(): EObject = js.native
     
-    def map(iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ this.type, js.Any]): js.Array[js.Any] = js.native
-    def map(
-      iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ this.type, js.Any],
-      context: js.Any
-    ): js.Array[js.Any] = js.native
+    def map(iterator: js.Function3[/* value */ Any, /* key */ Any, /* list */ this.type, Any]): js.Array[Any] = js.native
+    def map(iterator: js.Function3[/* value */ Any, /* key */ Any, /* list */ this.type, Any], context: Any): js.Array[Any] = js.native
     
-    def reject(iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ this.type, Boolean]): js.Array[EObject] = js.native
+    def reject(iterator: js.Function3[/* value */ Any, /* key */ Any, /* list */ this.type, Boolean]): js.Array[EObject] = js.native
     def reject(
-      iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ this.type, Boolean],
-      context: js.Any
+      iterator: js.Function3[/* value */ Any, /* key */ Any, /* list */ this.type, Boolean],
+      context: Any
     ): js.Array[EObject] = js.native
     
     def remove(eObject: EObject): EList = js.native
@@ -193,7 +187,7 @@ object mod {
     
     var _id: String = js.native
     
-    def create(attributes: js.Any): EObject = js.native
+    def create(attributes: Any): EObject = js.native
     
     var eClass: EClass = js.native
     
@@ -209,28 +203,28 @@ object mod {
     
     def fragment(): String = js.native
     
-    def get(feature: String): js.Any = js.native
+    def get(feature: String): Any = js.native
     
     def getEObject(uri: String): EObject = js.native
     
-    def getEStructuralFeature(feature: String): js.Any = js.native
-    def getEStructuralFeature(feature: EObject): js.Any = js.native
+    def getEStructuralFeature(feature: String): Any = js.native
+    def getEStructuralFeature(feature: EObject): Any = js.native
     
     def has(name: String): Boolean = js.native
     
-    def isKindOf(`type`: String): js.Any = js.native
-    def isKindOf(`type`: EObject): js.Any = js.native
+    def isKindOf(`type`: String): Any = js.native
+    def isKindOf(`type`: EObject): Any = js.native
     
     def isSet(name: String): Boolean = js.native
     
-    def isTypeOf(`type`: String): js.Any = js.native
-    def isTypeOf(`type`: EObject): js.Any = js.native
+    def isTypeOf(`type`: String): Any = js.native
+    def isTypeOf(`type`: EObject): Any = js.native
     
-    def set(attrs: js.Any, options: js.Any): EObject = js.native
+    def set(attrs: Any, options: Any): EObject = js.native
     
     def setEClass(eClass: EClass): Unit = js.native
     
-    def unset(attrs: js.Any, options: js.Any): EObject = js.native
+    def unset(attrs: Any, options: Any): EObject = js.native
   }
   @JSImport("ecore", "EObject")
   @js.native
@@ -316,13 +310,13 @@ object mod {
     
     def childDescriptors(`object`: EObject): js.Array[EObject]
     
-    def childTypes(`object`: EObject, createDescriptor: js.Any): js.Array[EObject]
+    def childTypes(`object`: EObject, createDescriptor: Any): js.Array[EObject]
     
     def choiceOfValues(owner: EObject, feature: EObject): js.Array[EObject]
     
     def siblingDescriptors(`object`: EObject): js.Array[EObject]
     
-    def siblingTypes(`object`: EObject, createDescriptor: js.Any): js.Array[EObject]
+    def siblingTypes(`object`: EObject, createDescriptor: Any): js.Array[EObject]
   }
   object Edit {
     
@@ -334,13 +328,13 @@ object mod {
       
       inline def setChildDescriptors(value: EObject => js.Array[EObject]): Self = StObject.set(x, "childDescriptors", js.Any.fromFunction1(value))
       
-      inline def setChildTypes(value: (EObject, js.Any) => js.Array[EObject]): Self = StObject.set(x, "childTypes", js.Any.fromFunction2(value))
+      inline def setChildTypes(value: (EObject, Any) => js.Array[EObject]): Self = StObject.set(x, "childTypes", js.Any.fromFunction2(value))
       
       inline def setChoiceOfValues(value: (EObject, EObject) => js.Array[EObject]): Self = StObject.set(x, "choiceOfValues", js.Any.fromFunction2(value))
       
       inline def setSiblingDescriptors(value: EObject => js.Array[EObject]): Self = StObject.set(x, "siblingDescriptors", js.Any.fromFunction1(value))
       
-      inline def setSiblingTypes(value: (EObject, js.Any) => js.Array[EObject]): Self = StObject.set(x, "siblingTypes", js.Any.fromFunction2(value))
+      inline def setSiblingTypes(value: (EObject, Any) => js.Array[EObject]): Self = StObject.set(x, "siblingTypes", js.Any.fromFunction2(value))
     }
   }
   
@@ -361,24 +355,21 @@ object mod {
     
     def clear(): EList = js.native
     
-    def each(iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ EList, Unit]): Unit = js.native
-    def each(
-      iterator: js.Function3[/* value */ js.Any, /* key */ js.Any, /* list */ EList, Unit],
-      context: js.Any
-    ): Unit = js.native
+    def each(iterator: js.Function3[/* value */ Any, /* key */ Any, /* list */ EList, Unit]): Unit = js.native
+    def each(iterator: js.Function3[/* value */ Any, /* key */ Any, /* list */ EList, Unit], context: Any): Unit = js.native
     
-    def load(res: js.Any): Unit = js.native
+    def load(res: Any): Unit = js.native
     
-    def parse(data: EObject): js.Any = js.native
-    def parse(data: EObject, loader: js.Function0[Unit]): js.Any = js.native
+    def parse(data: EObject): Any = js.native
+    def parse(data: EObject, loader: js.Function0[Unit]): Any = js.native
     
     def remove(): Unit = js.native
     
     var rev: String = js.native
     
-    def save(callback: js.Function0[Unit], options: js.Any): Unit = js.native
+    def save(callback: js.Function0[Unit], options: Any): Unit = js.native
     
-    def to(): js.Any = js.native
+    def to(): Any = js.native
   }
   @JSImport("ecore", "Resource")
   @js.native
@@ -395,7 +386,7 @@ object mod {
     
     def parse(data: EObject): Unit = js.native
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
   }
   object ResourceSet {
     

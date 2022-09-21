@@ -1,18 +1,29 @@
 package typings.mondaySdkJs
 
+import typings.mondaySdkJs.anon.AssetId
+import typings.mondaySdkJs.anon.BoardId
 import typings.mondaySdkJs.anon.CancelButton
+import typings.mondaySdkJs.anon.Data
+import typings.mondaySdkJs.anon.DataAny
+import typings.mondaySdkJs.anon.DataConfirm
+import typings.mondaySdkJs.anon.Height
 import typings.mondaySdkJs.anon.Instance
 import typings.mondaySdkJs.anon.ItemId
 import typings.mondaySdkJs.anon.Message
 import typings.mondaySdkJs.anon.PartialclientIdstringapiT
 import typings.mondaySdkJs.anon.Partialtokenstring
+import typings.mondaySdkJs.anon.Partialtokenstringvariabl
+import typings.mondaySdkJs.mondaySdkJsStrings.closeAppFeatureModal
 import typings.mondaySdkJs.mondaySdkJsStrings.confirm
 import typings.mondaySdkJs.mondaySdkJsStrings.context
 import typings.mondaySdkJs.mondaySdkJsStrings.itemIds
 import typings.mondaySdkJs.mondaySdkJsStrings.notice
+import typings.mondaySdkJs.mondaySdkJsStrings.openAppFeatureModal
+import typings.mondaySdkJs.mondaySdkJsStrings.openFilesDialog
 import typings.mondaySdkJs.mondaySdkJsStrings.openItemCard
 import typings.mondaySdkJs.mondaySdkJsStrings.sessionToken
 import typings.mondaySdkJs.mondaySdkJsStrings.settings
+import typings.mondaySdkJs.mondaySdkJsStrings.triggerFilesUpload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,22 +72,22 @@ object mod {
   
   trait GetResponse extends StObject {
     
-    var value: js.Any
+    var value: Any
     
-    var version: js.Any
+    var version: Any
   }
   object GetResponse {
     
-    inline def apply(value: js.Any, version: js.Any): GetResponse = {
+    inline def apply(value: Any, version: Any): GetResponse = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetResponse]
     }
     
     extension [Self <: GetResponse](x: Self) {
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,30 +101,64 @@ object mod {
       * Placeholders may be used, which will be substituted by the variables object passed within the options.
       * @param options
       */
-    def api(query: String): js.Promise[js.Any] = js.native
-    def api(query: String, options: APIOptions): js.Promise[js.Any] = js.native
+    def api(query: String): js.Promise[Data] = js.native
+    def api(query: String, options: APIOptions): js.Promise[Data] = js.native
     
+    /**
+      * Closes the modal window.
+      * @param type Which action to perform
+      * @param params Optional parameters for the action
+      */
+    @JSName("execute")
+    def execute_closeAppFeatureModal(`type`: closeAppFeatureModal): js.Promise[DataAny] = js.native
     /**
       * Opens a confirmation dialog to the user **type** `'confirm'`
       * @param type Which action to perform
       * @param params Optional parameters for the action
       */
     @JSName("execute")
-    def execute_confirm(`type`: confirm, params: CancelButton): js.Promise[js.Any] = js.native
+    def execute_confirm(`type`: confirm, params: CancelButton): js.Promise[DataConfirm] = js.native
     /**
       * Display a message at the top of the user's page. Useful for success, error & general messages.
       * @param type Which action to perform
       * @param params Optional parameters for the action
       */
     @JSName("execute")
-    def execute_notice(`type`: notice, params: Message): js.Promise[js.Any] = js.native
+    def execute_notice(`type`: notice, params: Message): js.Promise[Any] = js.native
+    /**
+      * Opens a new modal window as an iFrame.
+      * @param type Which action to perform
+      * @param params Optional parameters for the action
+      */
+    @JSName("execute")
+    def execute_openAppFeatureModal(`type`: openAppFeatureModal, params: Height): js.Promise[DataAny] = js.native
+    /**
+      * Opens a modal with the preview of an asset
+      * @param type Which action to perform
+      * @param params Optional parameters for the action
+      */
+    @JSName("execute")
+    def execute_openFilesDialog(`type`: openFilesDialog, params: AssetId): js.Promise[Any] = js.native
     /**
       * Opens a popup card with information from the selected item
       * @param type Which action to perform
       * @param params Optional parameters for the action
       */
     @JSName("execute")
-    def execute_openItemCard(`type`: openItemCard, params: ItemId): js.Promise[js.Any] = js.native
+    def execute_openItemCard(`type`: openItemCard, params: ItemId): js.Promise[Any] = js.native
+    /**
+      * Opens a modal to let the current user upload a file to a specific file column.
+      *
+      * Returns a promise. In case of error, the promise is rejected
+      *
+      * After the file is successfully uploaded, the "change_column_value" event will be triggered. See the {@link listen} method to subscribe to these events.
+      *
+      * _Requires boards:write scope_
+      * @param type Which action to perform
+      * @param params Optional parameters for the action
+      */
+    @JSName("execute")
+    def execute_triggerFilesUpload(`type`: triggerFilesUpload, params: BoardId): js.Promise[Any] = js.native
     
     /**
       * Used for retrieving data from the parent monday.com application where your app is currently running.
@@ -125,27 +170,13 @@ object mod {
       * - `'sessionToken'` A JWT token which is decoded with your app's secret and can be used as a session token between your app's frontend & backend
       * @param params Reserved for future use
       */
-    @JSName("get")
-    def get_context(`type`: context): js.Promise[js.Any] = js.native
-    @JSName("get")
-    def get_context(`type`: context, params: js.Object): js.Promise[js.Any] = js.native
-    @JSName("get")
-    def get_itemIds(`type`: itemIds): js.Promise[js.Any] = js.native
-    @JSName("get")
-    def get_itemIds(`type`: itemIds, params: js.Object): js.Promise[js.Any] = js.native
-    @JSName("get")
-    def get_sessionToken(`type`: sessionToken): js.Promise[js.Any] = js.native
-    @JSName("get")
-    def get_sessionToken(`type`: sessionToken, params: js.Object): js.Promise[js.Any] = js.native
-    @JSName("get")
-    def get_settings(`type`: settings): js.Promise[js.Any] = js.native
-    @JSName("get")
-    def get_settings(`type`: settings, params: js.Object): js.Promise[js.Any] = js.native
+    def get(`type`: context | settings | itemIds | sessionToken): js.Promise[Any] = js.native
+    def get(`type`: context | settings | itemIds | sessionToken, params: js.Object): js.Promise[Any] = js.native
     
-    def listen(typeOrTypes: js.Array[SubscribableEvents], callback: js.Function1[/* res */ js.Any, Unit]): Unit = js.native
+    def listen(typeOrTypes: js.Array[SubscribableEvents], callback: js.Function1[/* res */ Data, Unit]): Unit = js.native
     def listen(
       typeOrTypes: js.Array[SubscribableEvents],
-      callback: js.Function1[/* res */ js.Any, Unit],
+      callback: js.Function1[/* res */ Data, Unit],
       params: js.Object
     ): Unit = js.native
     /**
@@ -154,8 +185,8 @@ object mod {
       * @param callback A callback function that is fired when the listener is triggered by a client-side event
       * @param params Reserved for future use
       */
-    def listen(typeOrTypes: SubscribableEvents, callback: js.Function1[/* res */ js.Any, Unit]): Unit = js.native
-    def listen(typeOrTypes: SubscribableEvents, callback: js.Function1[/* res */ js.Any, Unit], params: js.Object): Unit = js.native
+    def listen(typeOrTypes: SubscribableEvents, callback: js.Function1[/* res */ Data, Unit]): Unit = js.native
+    def listen(typeOrTypes: SubscribableEvents, callback: js.Function1[/* res */ Data, Unit], params: js.Object): Unit = js.native
     
     /**
       * Performs a client-side redirection of the user to the monday OAuth screen with your client ID embedded in the URL,
@@ -186,10 +217,10 @@ object mod {
   @js.native
   trait MondayServerSdk extends StObject {
     
-    def api(query: String): js.Promise[js.Any] = js.native
-    def api(query: String, options: Partialtokenstring): js.Promise[js.Any] = js.native
+    def api(query: String): js.Promise[Any] = js.native
+    def api(query: String, options: Partialtokenstringvariabl): js.Promise[Any] = js.native
     
-    def oauthToken(code: String, clientId: String, clientSecret: String): js.Promise[js.Any] = js.native
+    def oauthToken(code: String, clientId: String, clientSecret: String): js.Promise[Any] = js.native
     
     def setToken(token: String): Unit = js.native
   }

@@ -2,7 +2,6 @@ package typings.canvasjs
 
 import typings.canvasjs.mod.ChartOptions
 import typings.canvasjs.mod.CultureInfo
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object global {
     
     @JSGlobal("CanvasJS.Chart")
     @js.native
-    class Chart protected ()
+    open class Chart protected ()
       extends typings.canvasjs.mod.Chart {
       /**
         * Initializes a new instance of CanvasJS Chart.
@@ -44,20 +43,20 @@ object global {
       */
     inline def addCultureInfo(culture: String, info: CultureInfo): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCultureInfo")(culture.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def formatDate(date: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def formatDate(date: Double, formatString: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def formatDate(date: Double, formatString: String, culture: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], culture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def formatDate(date: Double, formatString: Unit, culture: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], culture.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * Formats date/timestamp according to the given formatString(optional) & culture(optional).
       * @param date Date type or timestamp number.
       * @param formatString Default formatString is “DD MMM YYYY”.
       * @param culture Default culture is “en”.
       */
-    inline def formatDate(date: Date): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def formatDate(date: Date, formatString: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def formatDate(date: Date, formatString: String, culture: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], culture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def formatDate(date: Date, formatString: Unit, culture: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], culture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def formatDate(date: js.Date): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def formatDate(date: js.Date, formatString: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def formatDate(date: js.Date, formatString: String, culture: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], culture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def formatDate(date: js.Date, formatString: Unit, culture: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], culture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def formatDate(date: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def formatDate(date: Double, formatString: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def formatDate(date: Double, formatString: String, culture: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], culture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def formatDate(date: Double, formatString: Unit, culture: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], culture.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Formats number according to the given formatString(optional) & culture(optional).

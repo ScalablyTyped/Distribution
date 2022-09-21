@@ -22,6 +22,6 @@ object Polyline {
     
     inline def setPaths(value: js.Array[js.Array[Position]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    inline def setPathsVarargs(value: js.Array[Position]*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: js.Array[Position]*): Self = StObject.set(x, "paths", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ Destroy a writable stream if it hits the high water mark
 | ------------------ | :-------------: |
 | Full name          | destroy-on-hwm |
 | Keywords           | stream, high, water, mark, destroy |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 568 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14.666666666666666 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/stream-utils/destroy-on-hwm)

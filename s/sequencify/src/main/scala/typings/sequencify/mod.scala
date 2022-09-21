@@ -36,7 +36,7 @@ object mod {
       
       inline def setDep(value: js.Array[String]): Self = StObject.set(x, "dep", value.asInstanceOf[js.Any])
       
-      inline def setDepVarargs(value: String*): Self = StObject.set(x, "dep", js.Array(value :_*))
+      inline def setDepVarargs(value: String*): Self = StObject.set(x, "dep", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

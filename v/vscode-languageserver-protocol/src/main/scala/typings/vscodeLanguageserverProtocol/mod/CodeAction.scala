@@ -14,6 +14,13 @@ object CodeAction {
     * Creates a new code action.
     *
     * @param title The title of the code action.
+    * @param kind The kind of the code action.
+    */
+  inline def create(title: String): typings.vscodeLanguageserverTypes.mod.CodeAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CodeAction]
+  /**
+    * Creates a new code action.
+    *
+    * @param title The title of the code action.
     * @param command The command to execute.
     * @param kind The kind of the code action.
     */
@@ -27,7 +34,7 @@ object CodeAction {
     * Creates a new code action.
     *
     * @param title The title of the code action.
-    * @param command The command to execute.
+    * @param edit The edit to perform.
     * @param kind The kind of the code action.
     */
   inline def create(title: String, edit: typings.vscodeLanguageserverTypes.mod.WorkspaceEdit): typings.vscodeLanguageserverTypes.mod.CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], edit.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CodeAction]
@@ -36,6 +43,7 @@ object CodeAction {
     edit: typings.vscodeLanguageserverTypes.mod.WorkspaceEdit,
     kind: typings.vscodeLanguageserverTypes.mod.CodeActionKind
   ): typings.vscodeLanguageserverTypes.mod.CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], edit.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CodeAction]
+  inline def create(title: String, kind: typings.vscodeLanguageserverTypes.mod.CodeActionKind): typings.vscodeLanguageserverTypes.mod.CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CodeAction]
   
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean]
 }

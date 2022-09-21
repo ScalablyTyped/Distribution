@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object escapeUriPathMod {
   
-  @JSImport("@aws-sdk/util-uri-escape/dist/cjs/escape-uri-path", JSImport.Namespace)
+  @JSImport("@aws-sdk/util-uri-escape/dist-types/escape-uri-path", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

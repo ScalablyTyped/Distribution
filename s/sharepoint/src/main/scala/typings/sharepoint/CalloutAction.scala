@@ -16,7 +16,7 @@ trait CalloutAction extends StObject {
   
   def getMenuEntries(): js.Array[CalloutActionMenuEntry]
   
-  def getOnClickCallback(event: js.Any, action: CalloutAction): js.Any
+  def getOnClickCallback(event: Any, action: CalloutAction): Any
   
   def getText(): String
   
@@ -38,7 +38,7 @@ object CalloutAction {
     getIsMenu: () => Boolean,
     getIsVisibleCallback: CalloutAction => Boolean,
     getMenuEntries: () => js.Array[CalloutActionMenuEntry],
-    getOnClickCallback: (js.Any, CalloutAction) => js.Any,
+    getOnClickCallback: (Any, CalloutAction) => Any,
     getText: () => String,
     getToolTop: () => String,
     isEnabled: () => Boolean,
@@ -62,7 +62,7 @@ object CalloutAction {
     
     inline def setGetMenuEntries(value: () => js.Array[CalloutActionMenuEntry]): Self = StObject.set(x, "getMenuEntries", js.Any.fromFunction0(value))
     
-    inline def setGetOnClickCallback(value: (js.Any, CalloutAction) => js.Any): Self = StObject.set(x, "getOnClickCallback", js.Any.fromFunction2(value))
+    inline def setGetOnClickCallback(value: (Any, CalloutAction) => Any): Self = StObject.set(x, "getOnClickCallback", js.Any.fromFunction2(value))
     
     inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     

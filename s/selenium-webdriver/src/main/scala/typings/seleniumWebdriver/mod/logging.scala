@@ -13,7 +13,7 @@ object logging {
   
   @JSImport("selenium-webdriver", "logging.Entry")
   @js.native
-  class Entry protected ()
+  open class Entry protected ()
     extends typings.seleniumWebdriver.loggingMod.Entry {
     def this(level: String, message: String) = this()
     def this(level: Double, message: String) = this()
@@ -66,7 +66,7 @@ object logging {
   
   @JSImport("selenium-webdriver", "logging.Level")
   @js.native
-  class Level protected ()
+  open class Level protected ()
     extends typings.seleniumWebdriver.loggingMod.Level {
     /**
       * @param {string} name the level's name.
@@ -166,12 +166,12 @@ object logging {
   
   @JSImport("selenium-webdriver", "logging.LogManager")
   @js.native
-  class LogManager ()
+  open class LogManager ()
     extends typings.seleniumWebdriver.loggingMod.LogManager
   
   @JSImport("selenium-webdriver", "logging.Logger")
   @js.native
-  class Logger protected ()
+  open class Logger protected ()
     extends typings.seleniumWebdriver.loggingMod.Logger {
     /**
       * @param {string} name the name of this logger.
@@ -183,7 +183,7 @@ object logging {
   
   @JSImport("selenium-webdriver", "logging.Preferences")
   @js.native
-  class Preferences ()
+  open class Preferences ()
     extends typings.seleniumWebdriver.loggingMod.Preferences
   
   @JSImport("selenium-webdriver", "logging.Type")

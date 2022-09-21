@@ -10,7 +10,7 @@ trait OrientDBClientConfig extends StObject {
   
   var host: js.UndefOr[String] = js.undefined
   
-  var logger: js.UndefOr[js.Any] = js.undefined
+  var logger: js.UndefOr[Any] = js.undefined
   
   var pool: js.UndefOr[Max] = js.undefined
   
@@ -33,7 +33,7 @@ object OrientDBClientConfig {
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    inline def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
@@ -49,7 +49,7 @@ object OrientDBClientConfig {
     
     inline def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
     
-    inline def setServersVarargs(value: OServerConfig*): Self = StObject.set(x, "servers", js.Array(value :_*))
+    inline def setServersVarargs(value: OServerConfig*): Self = StObject.set(x, "servers", js.Array(value*))
     
     inline def setSubscribePool(value: `0`): Self = StObject.set(x, "subscribePool", value.asInstanceOf[js.Any])
     

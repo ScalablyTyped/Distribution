@@ -42,7 +42,7 @@ object ExportNamedDeclaration {
     
     inline def setSpecifiers(value: js.Array[ExportSpecifier]): Self = StObject.set(x, "specifiers", value.asInstanceOf[js.Any])
     
-    inline def setSpecifiersVarargs(value: ExportSpecifier*): Self = StObject.set(x, "specifiers", js.Array(value :_*))
+    inline def setSpecifiersVarargs(value: ExportSpecifier*): Self = StObject.set(x, "specifiers", js.Array(value*))
     
     inline def setType(value: typings.estree.estreeStrings.ExportNamedDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("text-buffer", JSImport.Namespace)
 @js.native
 /** Create a new buffer with the given params. */
-class ^ ()
+open class ^ ()
   extends StObject
      with TextBuffer {
   def this(params: ShouldDestroyOnFileDelete) = this()

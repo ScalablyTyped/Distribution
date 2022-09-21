@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RegistrationOptions extends StObject {
   
+  /* standard dom */
   var scope: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var `type`: js.UndefOr[WorkerType] = js.undefined
   
+  /* standard dom */
   var updateViaCache: js.UndefOr[ServiceWorkerUpdateViaCache] = js.undefined
 }
 object RegistrationOptions {

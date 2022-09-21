@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The result of reverting a built-in variable in a workspace.
-  */
 trait SchemaRevertBuiltInVariableResponse extends StObject {
   
   /**
     * Whether the built-in variable is enabled after reversion.
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaRevertBuiltInVariableResponse {
   
@@ -24,6 +21,8 @@ object SchemaRevertBuiltInVariableResponse {
   extension [Self <: SchemaRevertBuiltInVariableResponse](x: Self) {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledNull: Self = StObject.set(x, "enabled", null)
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }

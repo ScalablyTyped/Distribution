@@ -1,7 +1,7 @@
 
 # Scala.js typings for ziggy-js
 
-Typings are for version 0.9
+Typings are for version 1.3
 
 ## Library description:
 Use your Laravel named routes in JavaScript.
@@ -10,10 +10,10 @@ Use your Laravel named routes in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | ziggy-js |
 | Keywords           | laravel, routes, ziggy |
-| # releases         | 14 |
-| # dependents       | 1 |
-| # downloads        | 33485 |
-| # stars            | 0 |
+| # releases         | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 25495.666666666668 |
+| # stars            | 2853.0 |
 
 ## Links
 - [Homepage](https://github.com/tighten/ziggy)

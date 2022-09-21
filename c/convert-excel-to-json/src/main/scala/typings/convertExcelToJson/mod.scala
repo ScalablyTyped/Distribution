@@ -2,24 +2,23 @@ package typings.convertExcelToJson
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.convertExcelToJson.anon.Rows
-import typings.convertExcelToJson.anon.Sheets
-import typings.convertExcelToJson.anon.Source
-import typings.convertExcelToJson.anon.SourceFile
+import typings.convertExcelToJson.anon.sourceFilestringsheetsRea
+import typings.convertExcelToJson.anon.sourcestringBuffersheetsR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(config: (SourceFile | Source) & Sheets & SheetConfig): StringDictionary[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[js.Any]]]
+  inline def apply(config: sourceFilestringsheetsRea | sourcestringBuffersheetsR): StringDictionary[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[Any]]]
   inline def apply(
-    config: (SourceFile | Source) & Sheets & SheetConfig,
+    config: sourceFilestringsheetsRea | sourcestringBuffersheetsR,
     // Input can also be a json-string (for cli)
   sourceFile: String
-  ): StringDictionary[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[js.Any]]]
-  inline def apply(config: String): StringDictionary[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[js.Any]]]
+  ): StringDictionary[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[Any]]]
+  inline def apply(config: String): StringDictionary[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[Any]]]
   inline def apply(config: String, // Input can also be a json-string (for cli)
-  sourceFile: String): StringDictionary[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[js.Any]]]
+  sourceFile: String): StringDictionary[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[Any]]]
   
   @JSImport("convert-excel-to-json", JSImport.Namespace)
   @js.native

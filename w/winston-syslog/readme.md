@@ -1,7 +1,7 @@
 
 # Scala.js typings for winston-syslog
 
-Typings are for version 2.0
+Typings are for version 2.4
 
 ## Library description:
 A syslog transport for winston
@@ -10,10 +10,10 @@ A syslog transport for winston
 | ------------------ | :-------------: |
 | Full name          | winston-syslog |
 | Keywords           | logging, sysadmin, tools, winston, syslog |
-| # releases         | 9 |
-| # dependents       | 39 |
-| # downloads        | 1600165 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1452993.3333333333 |
+| # stars            | 121.0 |
 
 ## Links
 - [Homepage](https://github.com/indexzero/winston-syslog#readme)

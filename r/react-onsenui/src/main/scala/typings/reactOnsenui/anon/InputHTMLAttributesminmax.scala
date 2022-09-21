@@ -2,11 +2,12 @@ package typings.reactOnsenui.anon
 
 import typings.react.mod.ChangeEvent
 import typings.react.mod.FocusEvent
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-onsenui.react-onsenui.InputHTMLAttributes<'min' | 'max' | 'step'> & {  modifier :string | undefined,   disabled :boolean | undefined,   readOnly :boolean | undefined,   onChange :(e : react.react.ChangeEvent<any>): void | undefined,   onBlur :(e : react.react.FocusEvent<any>): void | undefined,   onFocus :(e : react.react.FocusEvent<any>): void | undefined,   value :string | undefined,   defaultValue :string | undefined,   checked :boolean | undefined,   placeholder :string | undefined,   type :string | undefined,   inputId :string | undefined,   float :boolean | undefined,   name :string | undefined,   autoFocus :boolean | undefined} */
+/* Inlined react-onsenui.react-onsenui.InputHTMLAttributes<'min' | 'max' | 'step'> & {  modifier :string | undefined,   disabled :boolean | undefined,   readOnly :boolean | undefined,   onChange :(e : react.react.ChangeEvent<any>): void | undefined,   onInput :(e : react.react.ChangeEvent<any>): void | undefined,   onBlur :(e : react.react.FocusEvent<any, std.Element>): void | undefined,   onFocus :(e : react.react.FocusEvent<any, std.Element>): void | undefined,   value :string | undefined,   defaultValue :string | undefined,   checked :boolean | undefined,   placeholder :string | undefined,   type :string | undefined,   inputId :string | undefined,   float :boolean | undefined,   name :string | undefined,   autoFocus :boolean | undefined} */
 trait InputHTMLAttributesminmax extends StObject {
   
   var autoFocus: js.UndefOr[Boolean] = js.undefined
@@ -29,11 +30,13 @@ trait InputHTMLAttributesminmax extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function1[/* e */ FocusEvent[js.Any], Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* e */ FocusEvent[Any, Element], Unit]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* e */ ChangeEvent[js.Any], Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ ChangeEvent[Any], Unit]] = js.undefined
   
-  var onFocus: js.UndefOr[js.Function1[/* e */ FocusEvent[js.Any], Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* e */ FocusEvent[Any, Element], Unit]] = js.undefined
+  
+  var onInput: js.UndefOr[js.Function1[/* e */ ChangeEvent[Any], Unit]] = js.undefined
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -94,17 +97,21 @@ object InputHTMLAttributesminmax {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOnBlur(value: /* e */ FocusEvent[js.Any] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: /* e */ FocusEvent[Any, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    inline def setOnChange(value: /* e */ ChangeEvent[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* e */ ChangeEvent[Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnFocus(value: /* e */ FocusEvent[js.Any] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: /* e */ FocusEvent[Any, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+    
+    inline def setOnInput(value: /* e */ ChangeEvent[Any] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+    
+    inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

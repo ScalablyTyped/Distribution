@@ -1,20 +1,23 @@
 package typings.activexLibreoffice.com_.sun.star.chart2
 
+import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
+import typings.activexLibreoffice.com_.sun.star.lang.MultiServiceFactory
+import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 /** @since LibreOffice 4.1 */
-type CartesianCoordinateSystem2d = typings.activexLibreoffice.com_.sun.star.chart2.XCoordinateSystem
+type CartesianCoordinateSystem2d = XCoordinateSystem
 
 /** @since LibreOffice 4.1 */
-type CartesianCoordinateSystem3d = typings.activexLibreoffice.com_.sun.star.chart2.XCoordinateSystem
+type CartesianCoordinateSystem3d = XCoordinateSystem
 
 /** A factory for creating ChartTypeTemplates. */
-type ChartTypeManager = typings.activexLibreoffice.com_.sun.star.lang.MultiServiceFactory
+type ChartTypeManager = MultiServiceFactory
 
-type ChartTypeTemplate = typings.activexLibreoffice.com_.sun.star.chart2.XChartTypeTemplate
+type ChartTypeTemplate = XChartTypeTemplate
 
 /**
   * The service {@link CoordinateSystemType} represents a special type of coordinate system. For example a 2 dimensional Cartesian coordinate system is a
@@ -23,71 +26,71 @@ type ChartTypeTemplate = typings.activexLibreoffice.com_.sun.star.chart2.XChartT
   * A {@link CoordinateSystemType} is a stateless service which has no owner and does not enable cyclic references, thus its lifetime can be handled by
   * reference or it may be implemented as a singleton.
   */
-type CoordinateSystemType = js.Any
+type CoordinateSystemType = Any
 
-type CoordinateSystemTypeID = java.lang.String
+type CoordinateSystemTypeID = String
 
 /** @since LibreOffice 4.1 */
-type ExponentialRegressionCurve = typings.activexLibreoffice.com_.sun.star.chart2.XRegressionCurve
+type ExponentialRegressionCurve = XRegressionCurve
 
 /**
   * {@link Scaling} that scales a value **x** by taking the power of the base to **x** .
   *
   * If not mentioned explicitly, the base for the power function is 10.0
   */
-type ExponentialScaling = typings.activexLibreoffice.com_.sun.star.chart2.XScaling
+type ExponentialScaling = XScaling
 
-type FormattedString = typings.activexLibreoffice.com_.sun.star.chart2.XFormattedString2
+type FormattedString = XFormattedString2
 
 /** @since LibreOffice 4.1 */
-type LinearRegressionCurve = typings.activexLibreoffice.com_.sun.star.chart2.XRegressionCurve
+type LinearRegressionCurve = XRegressionCurve
 
 /**
   * {@link Scaling} that scales a value **x** by calculating **m  x + t** .
   *
   * If not mentioned explicitly, the parameter **m** is 1.0 and **t** is 0.0, which means the transformation is an identical mapping.
   */
-type LinearScaling = typings.activexLibreoffice.com_.sun.star.chart2.XScaling
+type LinearScaling = XScaling
 
 /** @since LibreOffice 4.1 */
-type LogarithmicRegressionCurve = typings.activexLibreoffice.com_.sun.star.chart2.XRegressionCurve
+type LogarithmicRegressionCurve = XRegressionCurve
 
 /**
   * {@link Scaling} that scales values by taking their logarithm.
   *
   * If not mentioned explicitly, the base for the logarithm is 10.0
   */
-type LogarithmicScaling = typings.activexLibreoffice.com_.sun.star.chart2.XScaling
+type LogarithmicScaling = XScaling
 
 /** @since LibreOffice 4.1 */
-type MovingAverageRegressionCurve = typings.activexLibreoffice.com_.sun.star.chart2.XRegressionCurve
+type MovingAverageRegressionCurve = XRegressionCurve
 
 /** @since LibreOffice 4.1 */
-type PolarCoordinateSystem2d = typings.activexLibreoffice.com_.sun.star.chart2.XCoordinateSystem
+type PolarCoordinateSystem2d = XCoordinateSystem
 
 /** @since LibreOffice 4.1 */
-type PolarCoordinateSystem3d = typings.activexLibreoffice.com_.sun.star.chart2.XCoordinateSystem
+type PolarCoordinateSystem3d = XCoordinateSystem
 
 /** @since LibreOffice 4.1 */
-type PolynomialRegressionCurve = typings.activexLibreoffice.com_.sun.star.chart2.XRegressionCurve
+type PolynomialRegressionCurve = XRegressionCurve
 
 /** @since LibreOffice 4.1 */
-type PotentialRegressionCurve = typings.activexLibreoffice.com_.sun.star.chart2.XRegressionCurve
+type PotentialRegressionCurve = XRegressionCurve
 
 /**
   * {@link Scaling} that scales a value **x** by taking the power of **x** to the exponent.
   *
   * If not mentioned explicitly, the exponent for the power function is 10.0
   */
-type PowerScaling = typings.activexLibreoffice.com_.sun.star.chart2.XScaling
+type PowerScaling = XScaling
 
 /** @since LibreOffice 4.1 */
-type RegressionEquation = typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
+type RegressionEquation = XPropertySet
 
 /** stateless service */
-type Scaling = typings.activexLibreoffice.com_.sun.star.chart2.XScaling
+type Scaling = XScaling
 
-type XChartTypeManager = typings.activexLibreoffice.com_.sun.star.uno.XInterface
+type XChartTypeManager = XInterface
 
 /** interface for the legend of a diagram */
-type XLegend = typings.activexLibreoffice.com_.sun.star.uno.XInterface
+type XLegend = XInterface

@@ -1,7 +1,7 @@
 
 # Scala.js typings for escape-string-regexp
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Escape RegExp special characters
@@ -10,10 +10,10 @@ Escape RegExp special characters
 | ------------------ | :-------------: |
 | Full name          | escape-string-regexp |
 | Keywords           | escape, regex, regexp, regular, expression, string, special, characters |
-| # releases         | 4 |
-| # dependents       | 1443 |
-| # downloads        | 845914857 |
-| # stars            | 36 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3.179943916666667E8 |
+| # stars            | 514.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/escape-string-regexp#readme)

@@ -10,10 +10,10 @@ object eventNoteMod {
   
   @JSImport("material-ui/svg-icons/notification/event-note", JSImport.Default)
   @js.native
-  class default () extends NotificationEventNote
+  open class default () extends NotificationEventNote
   
   @JSImport("material-ui/svg-icons/notification/event-note", "NotificationEventNote")
   @js.native
-  class NotificationEventNote ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationEventNote ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

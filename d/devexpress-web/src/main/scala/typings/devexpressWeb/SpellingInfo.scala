@@ -30,7 +30,7 @@ object SpellingInfo {
     
     inline def setMisspelledIntervals(value: js.Array[MisspelledInterval]): Self = StObject.set(x, "misspelledIntervals", value.asInstanceOf[js.Any])
     
-    inline def setMisspelledIntervalsVarargs(value: MisspelledInterval*): Self = StObject.set(x, "misspelledIntervals", js.Array(value :_*))
+    inline def setMisspelledIntervalsVarargs(value: MisspelledInterval*): Self = StObject.set(x, "misspelledIntervals", js.Array(value*))
     
     inline def setSpellCheckerState(value: SpellCheckerState): Self = StObject.set(x, "spellCheckerState", value.asInstanceOf[js.Any])
   }

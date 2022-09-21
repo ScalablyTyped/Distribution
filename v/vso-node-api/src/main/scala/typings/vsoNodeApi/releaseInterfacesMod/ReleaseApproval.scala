@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,7 +35,7 @@ trait ReleaseApproval extends StObject {
   /**
     * Gets date on which it got created.
     */
-  var createdOn: Date
+  var createdOn: js.Date
   
   /**
     * Gets history which specifies all approvals associated with this approval.
@@ -58,7 +57,7 @@ trait ReleaseApproval extends StObject {
   /**
     * Gets date on which it got modified.
     */
-  var modifiedOn: Date
+  var modifiedOn: js.Date
   
   /**
     * Gets or sets rank which specifies the order of the approval. e.g. Same rank denotes parallel approval.
@@ -105,12 +104,12 @@ object ReleaseApproval {
     approver: IdentityRef,
     attempt: Double,
     comments: String,
-    createdOn: Date,
+    createdOn: js.Date,
     history: js.Array[ReleaseApprovalHistory],
     id: Double,
     isAutomated: Boolean,
     isNotificationOn: Boolean,
-    modifiedOn: Date,
+    modifiedOn: js.Date,
     rank: Double,
     release: ReleaseShallowReference,
     releaseDefinition: ReleaseDefinitionShallowReference,
@@ -136,11 +135,11 @@ object ReleaseApproval {
     
     inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setHistory(value: js.Array[ReleaseApprovalHistory]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    inline def setHistoryVarargs(value: ReleaseApprovalHistory*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: ReleaseApprovalHistory*): Self = StObject.set(x, "history", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -148,7 +147,7 @@ object ReleaseApproval {
     
     inline def setIsNotificationOn(value: Boolean): Self = StObject.set(x, "isNotificationOn", value.asInstanceOf[js.Any])
     
-    inline def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
+    inline def setModifiedOn(value: js.Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
     
     inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     

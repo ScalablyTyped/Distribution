@@ -1,7 +1,7 @@
 
 # Scala.js typings for leap-year
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Check if a year is a leap year
@@ -11,9 +11,9 @@ Check if a year is a leap year
 | Full name          | leap-year |
 | Keywords           | leap, year, date |
 | # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 5253 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 166.0 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/leap-year#readme)

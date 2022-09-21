@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap-typeahead", "AutosizeInput")
 @js.native
-class AutosizeInput protected ()
-  extends Component[AutosizeInputProps, js.Object, js.Any] {
+open class AutosizeInput protected ()
+  extends Component[AutosizeInputProps, js.Object, Any] {
   def this(props: AutosizeInputProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: AutosizeInputProps, context: js.Any) = this()
+  def this(props: AutosizeInputProps, context: Any) = this()
 }

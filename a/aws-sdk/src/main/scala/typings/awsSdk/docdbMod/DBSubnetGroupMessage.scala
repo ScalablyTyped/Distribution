@@ -29,7 +29,7 @@ object DBSubnetGroupMessage {
     
     inline def setDBSubnetGroupsUndefined: Self = StObject.set(x, "DBSubnetGroups", js.undefined)
     
-    inline def setDBSubnetGroupsVarargs(value: DBSubnetGroup*): Self = StObject.set(x, "DBSubnetGroups", js.Array(value :_*))
+    inline def setDBSubnetGroupsVarargs(value: DBSubnetGroup*): Self = StObject.set(x, "DBSubnetGroups", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

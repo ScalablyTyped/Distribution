@@ -33,6 +33,6 @@ object PutEmailIdentityDkimSigningAttributesResponse {
     
     inline def setDkimTokensUndefined: Self = StObject.set(x, "DkimTokens", js.undefined)
     
-    inline def setDkimTokensVarargs(value: DnsToken*): Self = StObject.set(x, "DkimTokens", js.Array(value :_*))
+    inline def setDkimTokensVarargs(value: DnsToken*): Self = StObject.set(x, "DkimTokens", js.Array(value*))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Guid")
 @js.native
-class Guid protected ()
+open class Guid protected ()
   extends StObject
      with typings.sharepoint.SP.Guid {
   def this(guidText: String) = this()

@@ -39,7 +39,7 @@ object ModifyVpcEndpointConnectionNotificationRequest {
     
     inline def setConnectionEventsUndefined: Self = StObject.set(x, "ConnectionEvents", js.undefined)
     
-    inline def setConnectionEventsVarargs(value: String*): Self = StObject.set(x, "ConnectionEvents", js.Array(value :_*))
+    inline def setConnectionEventsVarargs(value: String*): Self = StObject.set(x, "ConnectionEvents", js.Array(value*))
     
     inline def setConnectionNotificationArn(value: String): Self = StObject.set(x, "ConnectionNotificationArn", value.asInstanceOf[js.Any])
     

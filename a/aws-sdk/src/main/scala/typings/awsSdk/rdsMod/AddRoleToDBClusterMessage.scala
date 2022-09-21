@@ -12,7 +12,7 @@ trait AddRoleToDBClusterMessage extends StObject {
   var DBClusterIdentifier: String
   
   /**
-    * The name of the feature for the DB cluster that the IAM role is to be associated with. For the list of supported feature names, see DBEngineVersion.
+    * The name of the feature for the DB cluster that the IAM role is to be associated with. For information about supported feature names, see DBEngineVersion.
     */
   var FeatureName: js.UndefOr[String] = js.undefined
   

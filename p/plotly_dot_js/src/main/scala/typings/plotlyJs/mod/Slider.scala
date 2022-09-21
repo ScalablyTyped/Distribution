@@ -1,5 +1,6 @@
 package typings.plotlyJs.mod
 
+import typings.plotlyJs.anon.PartialCurrentValue
 import typings.plotlyJs.anon.PartialPadding
 import typings.plotlyJs.anon.PartialSliderStep
 import typings.plotlyJs.plotlyJsStrings.auto
@@ -44,7 +45,7 @@ trait Slider extends StObject {
     */
   var borderwidth: Double
   
-  var currentvalue: typings.plotlyJs.anon.Font
+  var currentvalue: PartialCurrentValue
   
   /**
     * Sets the font of the slider step labels.
@@ -132,7 +133,7 @@ object Slider {
     bgcolor: Color,
     bordercolor: Color,
     borderwidth: Double,
-    currentvalue: typings.plotlyJs.anon.Font,
+    currentvalue: PartialCurrentValue,
     font: Font,
     len: Double,
     lenmode: fraction | pixels,
@@ -159,19 +160,19 @@ object Slider {
     
     inline def setActivebgcolor(value: Color): Self = StObject.set(x, "activebgcolor", value.asInstanceOf[js.Any])
     
-    inline def setActivebgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "activebgcolor", js.Array(value :_*))
+    inline def setActivebgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "activebgcolor", js.Array(value*))
     
     inline def setBgcolor(value: Color): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
-    inline def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value :_*))
+    inline def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value*))
     
     inline def setBordercolor(value: Color): Self = StObject.set(x, "bordercolor", value.asInstanceOf[js.Any])
     
-    inline def setBordercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bordercolor", js.Array(value :_*))
+    inline def setBordercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bordercolor", js.Array(value*))
     
     inline def setBorderwidth(value: Double): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
     
-    inline def setCurrentvalue(value: typings.plotlyJs.anon.Font): Self = StObject.set(x, "currentvalue", value.asInstanceOf[js.Any])
+    inline def setCurrentvalue(value: PartialCurrentValue): Self = StObject.set(x, "currentvalue", value.asInstanceOf[js.Any])
     
     inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
@@ -185,11 +186,11 @@ object Slider {
     
     inline def setSteps(value: js.Array[PartialSliderStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    inline def setStepsVarargs(value: PartialSliderStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: PartialSliderStep*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setTickcolor(value: Color): Self = StObject.set(x, "tickcolor", value.asInstanceOf[js.Any])
     
-    inline def setTickcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "tickcolor", js.Array(value :_*))
+    inline def setTickcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "tickcolor", js.Array(value*))
     
     inline def setTicklen(value: Double): Self = StObject.set(x, "ticklen", value.asInstanceOf[js.Any])
     

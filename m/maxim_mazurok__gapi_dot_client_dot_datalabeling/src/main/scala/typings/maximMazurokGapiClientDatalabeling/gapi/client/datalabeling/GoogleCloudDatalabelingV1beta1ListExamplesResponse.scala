@@ -25,7 +25,7 @@ object GoogleCloudDatalabelingV1beta1ListExamplesResponse {
     
     inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     
-    inline def setExamplesVarargs(value: GoogleCloudDatalabelingV1beta1Example*): Self = StObject.set(x, "examples", js.Array(value :_*))
+    inline def setExamplesVarargs(value: GoogleCloudDatalabelingV1beta1Example*): Self = StObject.set(x, "examples", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

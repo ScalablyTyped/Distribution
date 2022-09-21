@@ -1,5 +1,6 @@
 package typings.hafasClient
 
+import typings.hafasClient.mod.PrognosisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,6 +30,12 @@ object hafasClientStrings {
   @js.native
   sealed trait bus extends StObject
   inline def bus: bus = "bus".asInstanceOf[bus]
+  
+  @js.native
+  sealed trait calculated
+    extends StObject
+       with PrognosisType
+  inline def calculated: calculated = "calculated".asInstanceOf[calculated]
   
   @js.native
   sealed trait car extends StObject
@@ -65,6 +72,12 @@ object hafasClientStrings {
   @js.native
   sealed trait operator extends StObject
   inline def operator: operator = "operator".asInstanceOf[operator]
+  
+  @js.native
+  sealed trait prognosed
+    extends StObject
+       with PrognosisType
+  inline def prognosed: prognosed = "prognosed".asInstanceOf[prognosed]
   
   @js.native
   sealed trait region extends StObject

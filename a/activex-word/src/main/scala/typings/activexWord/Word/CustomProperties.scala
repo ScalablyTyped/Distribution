@@ -14,9 +14,9 @@ trait CustomProperties extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): CustomProperty
+  def Item(Index: Any): CustomProperty
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.CustomProperties_typekey")
   var WordDotCustomProperties_typekey: CustomProperties
@@ -28,8 +28,8 @@ object CustomProperties {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => CustomProperty,
-    Parent: js.Any,
+    Item: Any => CustomProperty,
+    Parent: Any,
     WordDotCustomProperties_typekey: CustomProperties
   ): CustomProperties = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -47,9 +47,9 @@ object CustomProperties {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => CustomProperty): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => CustomProperty): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotCustomProperties_typekey(value: CustomProperties): Self = StObject.set(x, "Word.CustomProperties_typekey", value.asInstanceOf[js.Any])
   }

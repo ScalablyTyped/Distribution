@@ -19,7 +19,7 @@ object Scales {
     *
     * @constructor
     */
-  class Category ()
+  open class Category ()
     extends typings.plottable.scalesMod.Category
   /* static members */
   object Category {
@@ -28,9 +28,15 @@ object Scales {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_convertToPlottableInnerPadding")(d3InnerPadding.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @JSImport("plottable", "Scales.Category._convertToPlottableInnerPadding")
+    @js.native
+    def _convertToPlottableInnerPadding: Any = js.native
+    inline def _convertToPlottableInnerPadding_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_convertToPlottableInnerPadding")(x.asInstanceOf[js.Any])
     
-    inline def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_convertToPlottableOuterPadding")(d3OuterPadding.asInstanceOf[js.Any], d3InnerPadding.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("plottable", "Scales.Category._convertToPlottableOuterPadding")
+    @js.native
+    def _convertToPlottableOuterPadding: Any = js.native
+    inline def _convertToPlottableOuterPadding_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_convertToPlottableOuterPadding")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable", "Scales.Color")
@@ -43,7 +49,7 @@ object Scales {
     *   (see https://github.com/mbostock/d3/wiki/Ordinal-Scales#categorical-colors)
     *   If not supplied, reads the colors defined using CSS -- see plottable.css.
     */
-  class Color ()
+  open class Color ()
     extends typings.plottable.scalesMod.Color {
     def this(scaleType: String) = this()
   }
@@ -56,20 +62,23 @@ object Scales {
     
     @JSImport("plottable", "Scales.Color._LOOP_LIGHTEN_FACTOR")
     @js.native
-    def _LOOP_LIGHTEN_FACTOR: js.Any = js.native
-    inline def _LOOP_LIGHTEN_FACTOR_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LOOP_LIGHTEN_FACTOR")(x.asInstanceOf[js.Any])
+    def _LOOP_LIGHTEN_FACTOR: Any = js.native
+    inline def _LOOP_LIGHTEN_FACTOR_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LOOP_LIGHTEN_FACTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable", "Scales.Color._MAXIMUM_COLORS_FROM_CSS")
     @js.native
-    def _MAXIMUM_COLORS_FROM_CSS: js.Any = js.native
-    inline def _MAXIMUM_COLORS_FROM_CSS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAXIMUM_COLORS_FROM_CSS")(x.asInstanceOf[js.Any])
+    def _MAXIMUM_COLORS_FROM_CSS: Any = js.native
+    inline def _MAXIMUM_COLORS_FROM_CSS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAXIMUM_COLORS_FROM_CSS")(x.asInstanceOf[js.Any])
     
-    inline def _getPlottableColors(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_getPlottableColors")().asInstanceOf[js.Any]
+    @JSImport("plottable", "Scales.Color._getPlottableColors")
+    @js.native
+    def _getPlottableColors: Any = js.native
+    inline def _getPlottableColors_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getPlottableColors")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable", "Scales.Color._plottableColorCache")
     @js.native
-    def _plottableColorCache: js.Any = js.native
-    inline def _plottableColorCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_plottableColorCache")(x.asInstanceOf[js.Any])
+    def _plottableColorCache: Any = js.native
+    inline def _plottableColorCache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_plottableColorCache")(x.asInstanceOf[js.Any])
     
     inline def invalidateColorCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidateColorCache")().asInstanceOf[Unit]
   }
@@ -81,7 +90,7 @@ object Scales {
     *
     * @param {string} [scaleType="linear"] One of "linear"/"log"/"sqrt"/"pow".
     */
-  class InterpolatedColor ()
+  open class InterpolatedColor ()
     extends typings.plottable.scalesMod.InterpolatedColor {
     def this(scaleType: String) = this()
   }
@@ -113,7 +122,7 @@ object Scales {
   /**
     * @constructor
     */
-  class Linear ()
+  open class Linear ()
     extends typings.plottable.scalesMod.Linear
   
   @JSImport("plottable", "Scales.Log")
@@ -121,7 +130,7 @@ object Scales {
   /**
     * @constructor
     */
-  class Log ()
+  open class Log ()
     extends typings.plottable.scalesMod.Log {
     def this(base: Double) = this()
   }
@@ -156,7 +165,7 @@ object Scales {
     *        The base of the log. Must be > 1.
     *
     */
-  class ModifiedLog ()
+  open class ModifiedLog ()
     extends typings.plottable.scalesMod.ModifiedLog {
     def this(base: Double) = this()
   }
@@ -179,7 +188,7 @@ object Scales {
     *
     * @constructor
     */
-  class Time ()
+  open class Time ()
     extends typings.plottable.scalesMod.Time
   /* static members */
   object Time {
@@ -195,5 +204,5 @@ object Scales {
     inline def timeIntervalToD3Time(timeInterval: String, useUTC: Boolean): CountableTimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("timeIntervalToD3Time")(timeInterval.asInstanceOf[js.Any], useUTC.asInstanceOf[js.Any])).asInstanceOf[CountableTimeInterval]
   }
   
-  inline def isTransformable(scale: js.Any): /* is plottable.plottable/build/src/scales.ITransformableScale */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTransformable")(scale.asInstanceOf[js.Any]).asInstanceOf[/* is plottable.plottable/build/src/scales.ITransformableScale */ Boolean]
+  inline def isTransformable(scale: Any): /* is plottable.plottable/build/src/scales.ITransformableScale */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTransformable")(scale.asInstanceOf[js.Any]).asInstanceOf[/* is plottable.plottable/build/src/scales.ITransformableScale */ Boolean]
 }

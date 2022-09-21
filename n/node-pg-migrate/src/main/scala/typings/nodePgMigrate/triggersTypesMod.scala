@@ -27,13 +27,16 @@ object triggersTypesMod {
     String | js.Array[String]
   ]
   
-  type CreateTriggerFn2 = js.Function4[
-    /* tableName */ Name, 
-    /* triggerName */ String, 
-    /* triggerOptions */ TriggerOptions & FunctionOptions & DropOptions, 
-    /* definition */ Value, 
-    String | js.Array[String]
-  ]
+  @js.native
+  trait CreateTriggerFn2 extends StObject {
+    
+    def apply(
+      tableName: Name,
+      triggerName: String,
+      triggerOptions: TriggerOptions & FunctionOptions & DropOptions,
+      definition: Value
+    ): String | js.Array[String] = js.native
+  }
   
   type DropTrigger = js.Function3[
     /* tableName */ Name, 
@@ -108,7 +111,7 @@ object triggersTypesMod {
       
       inline def setFunctionParamsUndefined: Self = StObject.set(x, "functionParams", js.undefined)
       
-      inline def setFunctionParamsVarargs(value: Value*): Self = StObject.set(x, "functionParams", js.Array(value :_*))
+      inline def setFunctionParamsVarargs(value: Value*): Self = StObject.set(x, "functionParams", js.Array(value*))
       
       inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
       
@@ -118,7 +121,7 @@ object triggersTypesMod {
       
       inline def setOperation(value: String | js.Array[String]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
-      inline def setOperationVarargs(value: String*): Self = StObject.set(x, "operation", js.Array(value :_*))
+      inline def setOperationVarargs(value: String*): Self = StObject.set(x, "operation", js.Array(value*))
       
       inline def setWhen(value: BEFORE | AFTER | (`INSTEAD OF`)): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
       

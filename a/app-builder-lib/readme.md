@@ -1,7 +1,7 @@
 
 # Scala.js typings for app-builder-lib
 
-Typings are for version 22.9.1
+Typings are for version 23.5.1
 
 ## Library description:
 electron-builder lib
@@ -9,11 +9,11 @@ electron-builder lib
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | app-builder-lib |
-| Keywords           | electron, builder, build, installer, install, packager, pack, nsis, app, dmg, pkg, msi, exe, setup, Windows, OS X, MacOS, Mac, appx, snap, portable |
-| # releases         | 63 |
-| # dependents       | 16 |
-| # downloads        | 7206629 |
-| # stars            | 0 |
+| Keywords           | electron, builder, build, installer, install, packager, pack, nsis, app, dmg, pkg, msi, exe, setup, Windows, OS X, MacOS, Mac, appx, snap, flatpak, portable |
+| # releases         | 62 |
+| # dependents       | 0.0 |
+| # downloads        | 1135371.6666666667 |
+| # stars            | 12291.0 |
 
 ## Links
 - [Homepage](https://github.com/electron-userland/electron-builder)

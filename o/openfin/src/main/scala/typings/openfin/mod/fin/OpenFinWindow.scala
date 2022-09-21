@@ -57,15 +57,11 @@ trait OpenFinWindow extends StObject {
     * Performs the specified window transitions
     */
   def animate(transitions: Transition, options: TransitionOptions): Unit = js.native
+  def animate(transitions: Transition, options: TransitionOptions, callback: js.Function1[/* event */ Any, Unit]): Unit = js.native
   def animate(
     transitions: Transition,
     options: TransitionOptions,
-    callback: js.Function1[/* event */ js.Any, Unit]
-  ): Unit = js.native
-  def animate(
-    transitions: Transition,
-    options: TransitionOptions,
-    callback: js.Function1[/* event */ js.Any, Unit],
+    callback: js.Function1[/* event */ Any, Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   def animate(
@@ -163,14 +159,10 @@ trait OpenFinWindow extends StObject {
     * Flashes the window's frame and taskbar icon until the window is activated.
     */
   def flash(): Unit = js.native
-  def flash(options: js.Any): Unit = js.native
-  def flash(options: js.Any, callback: js.Function0[Unit]): Unit = js.native
-  def flash(
-    options: js.Any,
-    callback: js.Function0[Unit],
-    errorCallback: js.Function1[/* reason */ String, Unit]
-  ): Unit = js.native
-  def flash(options: js.Any, callback: Unit, errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  def flash(options: Any): Unit = js.native
+  def flash(options: Any, callback: js.Function0[Unit]): Unit = js.native
+  def flash(options: Any, callback: js.Function0[Unit], errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
+  def flash(options: Any, callback: Unit, errorCallback: js.Function1[/* reason */ String, Unit]): Unit = js.native
   def flash(options: Unit, callback: js.Function0[Unit]): Unit = js.native
   def flash(
     options: Unit,

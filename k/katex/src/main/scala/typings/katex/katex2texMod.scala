@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object katex2texMod {
   
-  @JSImport("katex/contrib/copy-tex/katex2tex", JSImport.Namespace)
+  @JSImport("katex/contrib/katex2tex", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

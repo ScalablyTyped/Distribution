@@ -1,5 +1,10 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.NONE
+import typings.awsSdk.awsSdkStrings.`capacity-optimized`
+import typings.awsSdk.awsSdkStrings.`lowest-price`
+import typings.awsSdk.awsSdkStrings.`use-capacity-reservations-first`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.CONTINUE
   - java.lang.String
 */
-type ActionOnFailure = typings.awsSdk.emrMod._ActionOnFailure | java.lang.String
+type ActionOnFailure = _ActionOnFailure | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CHANGE_IN_CAPACITY
@@ -20,11 +25,18 @@ type ActionOnFailure = typings.awsSdk.emrMod._ActionOnFailure | java.lang.String
   - typings.awsSdk.awsSdkStrings.EXACT_CAPACITY
   - java.lang.String
 */
-type AdjustmentType = typings.awsSdk.emrMod._AdjustmentType | java.lang.String
+type AdjustmentType = _AdjustmentType | java.lang.String
 
-type ApplicationList = js.Array[typings.awsSdk.emrMod.Application]
+type ApplicationList = js.Array[Application]
 
 type ArnType = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SSO
+  - typings.awsSdk.awsSdkStrings.IAM
+  - java.lang.String
+*/
+type AuthMode = _AuthMode | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -35,7 +47,7 @@ type ArnType = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type AutoScalingPolicyState = typings.awsSdk.emrMod._AutoScalingPolicyState | java.lang.String
+type AutoScalingPolicyState = _AutoScalingPolicyState | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USER_REQUEST
@@ -43,24 +55,24 @@ type AutoScalingPolicyState = typings.awsSdk.emrMod._AutoScalingPolicyState | ja
   - typings.awsSdk.awsSdkStrings.CLEANUP_FAILURE
   - java.lang.String
 */
-type AutoScalingPolicyStateChangeReasonCode = typings.awsSdk.emrMod._AutoScalingPolicyStateChangeReasonCode | java.lang.String
+type AutoScalingPolicyStateChangeReasonCode = _AutoScalingPolicyStateChangeReasonCode | java.lang.String
 
 type Boolean = scala.Boolean
 
 type BooleanObject = scala.Boolean
 
-type BootstrapActionConfigList = js.Array[typings.awsSdk.emrMod.BootstrapActionConfig]
+type BootstrapActionConfigList = js.Array[BootstrapActionConfig]
 
-type BootstrapActionDetailList = js.Array[typings.awsSdk.emrMod.BootstrapActionDetail]
+type BootstrapActionDetailList = js.Array[BootstrapActionDetail]
 
-type CancelStepsInfoList = js.Array[typings.awsSdk.emrMod.CancelStepsInfo]
+type CancelStepsInfoList = js.Array[CancelStepsInfo]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUBMITTED
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type CancelStepsRequestStatus = typings.awsSdk.emrMod._CancelStepsRequestStatus | java.lang.String
+type CancelStepsRequestStatus = _CancelStepsRequestStatus | java.lang.String
 
 type ClusterId = java.lang.String
 
@@ -74,7 +86,7 @@ type ClusterId = java.lang.String
   - typings.awsSdk.awsSdkStrings.TERMINATED_WITH_ERRORS
   - java.lang.String
 */
-type ClusterState = typings.awsSdk.emrMod._ClusterState | java.lang.String
+type ClusterState = _ClusterState | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INTERNAL_ERROR
@@ -87,13 +99,13 @@ type ClusterState = typings.awsSdk.emrMod._ClusterState | java.lang.String
   - typings.awsSdk.awsSdkStrings.ALL_STEPS_COMPLETED
   - java.lang.String
 */
-type ClusterStateChangeReasonCode = typings.awsSdk.emrMod._ClusterStateChangeReasonCode | java.lang.String
+type ClusterStateChangeReasonCode = _ClusterStateChangeReasonCode | java.lang.String
 
-type ClusterStateList = js.Array[typings.awsSdk.emrMod.ClusterState]
+type ClusterStateList = js.Array[ClusterState]
 
-type ClusterSummaryList = js.Array[typings.awsSdk.emrMod.ClusterSummary]
+type ClusterSummaryList = js.Array[ClusterSummary]
 
-type CommandList = js.Array[typings.awsSdk.emrMod.Command]
+type CommandList = js.Array[Command]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GREATER_THAN_OR_EQUAL
@@ -102,7 +114,7 @@ type CommandList = js.Array[typings.awsSdk.emrMod.Command]
   - typings.awsSdk.awsSdkStrings.LESS_THAN_OR_EQUAL
   - java.lang.String
 */
-type ComparisonOperator = typings.awsSdk.emrMod._ComparisonOperator | java.lang.String
+type ComparisonOperator = _ComparisonOperator | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.InstanceFleetUnits
@@ -110,36 +122,43 @@ type ComparisonOperator = typings.awsSdk.emrMod._ComparisonOperator | java.lang.
   - typings.awsSdk.awsSdkStrings.VCPU
   - java.lang.String
 */
-type ComputeLimitsUnitType = typings.awsSdk.emrMod._ComputeLimitsUnitType | java.lang.String
+type ComputeLimitsUnitType = _ComputeLimitsUnitType | java.lang.String
 
-type ConfigurationList = js.Array[typings.awsSdk.emrMod.Configuration]
+type ConfigurationList = js.Array[Configuration]
 
-type Date = typings.std.Date
+type Date = js.Date
 
-type EC2InstanceIdsList = js.Array[typings.awsSdk.emrMod.InstanceId]
+type EC2InstanceIdsList = js.Array[InstanceId]
 
-type EC2InstanceIdsToTerminateList = js.Array[typings.awsSdk.emrMod.InstanceId]
+type EC2InstanceIdsToTerminateList = js.Array[InstanceId]
 
-type EbsBlockDeviceConfigList = js.Array[typings.awsSdk.emrMod.EbsBlockDeviceConfig]
+type EbsBlockDeviceConfigList = js.Array[EbsBlockDeviceConfig]
 
-type EbsBlockDeviceList = js.Array[typings.awsSdk.emrMod.EbsBlockDevice]
+type EbsBlockDeviceList = js.Array[EbsBlockDevice]
 
-type EbsVolumeList = js.Array[typings.awsSdk.emrMod.EbsVolume]
+type EbsVolumeList = js.Array[EbsVolume]
 
 type ExecutionEngineType = typings.awsSdk.awsSdkStrings.EMR | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.USER
+  - typings.awsSdk.awsSdkStrings.GROUP
+  - java.lang.String
+*/
+type IdentityType = _IdentityType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INSTANCE_FLEET
   - typings.awsSdk.awsSdkStrings.INSTANCE_GROUP
   - java.lang.String
 */
-type InstanceCollectionType = typings.awsSdk.emrMod._InstanceCollectionType | java.lang.String
+type InstanceCollectionType = _InstanceCollectionType | java.lang.String
 
-type InstanceFleetConfigList = js.Array[typings.awsSdk.emrMod.InstanceFleetConfig]
+type InstanceFleetConfigList = js.Array[InstanceFleetConfig]
 
 type InstanceFleetId = java.lang.String
 
-type InstanceFleetList = js.Array[typings.awsSdk.emrMod.InstanceFleet]
+type InstanceFleetList = js.Array[InstanceFleet]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROVISIONING
@@ -151,7 +170,7 @@ type InstanceFleetList = js.Array[typings.awsSdk.emrMod.InstanceFleet]
   - typings.awsSdk.awsSdkStrings.TERMINATED
   - java.lang.String
 */
-type InstanceFleetState = typings.awsSdk.emrMod._InstanceFleetState | java.lang.String
+type InstanceFleetState = _InstanceFleetState | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INTERNAL_ERROR
@@ -160,7 +179,7 @@ type InstanceFleetState = typings.awsSdk.emrMod._InstanceFleetState | java.lang.
   - typings.awsSdk.awsSdkStrings.CLUSTER_TERMINATED
   - java.lang.String
 */
-type InstanceFleetStateChangeReasonCode = typings.awsSdk.emrMod._InstanceFleetStateChangeReasonCode | java.lang.String
+type InstanceFleetStateChangeReasonCode = _InstanceFleetStateChangeReasonCode | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MASTER
@@ -168,19 +187,19 @@ type InstanceFleetStateChangeReasonCode = typings.awsSdk.emrMod._InstanceFleetSt
   - typings.awsSdk.awsSdkStrings.TASK
   - java.lang.String
 */
-type InstanceFleetType = typings.awsSdk.emrMod._InstanceFleetType | java.lang.String
+type InstanceFleetType = _InstanceFleetType | java.lang.String
 
-type InstanceGroupConfigList = js.Array[typings.awsSdk.emrMod.InstanceGroupConfig]
+type InstanceGroupConfigList = js.Array[InstanceGroupConfig]
 
-type InstanceGroupDetailList = js.Array[typings.awsSdk.emrMod.InstanceGroupDetail]
+type InstanceGroupDetailList = js.Array[InstanceGroupDetail]
 
 type InstanceGroupId = java.lang.String
 
-type InstanceGroupIdsList = js.Array[typings.awsSdk.emrMod.XmlStringMaxLen256]
+type InstanceGroupIdsList = js.Array[XmlStringMaxLen256]
 
-type InstanceGroupList = js.Array[typings.awsSdk.emrMod.InstanceGroup]
+type InstanceGroupList = js.Array[InstanceGroup]
 
-type InstanceGroupModifyConfigList = js.Array[typings.awsSdk.emrMod.InstanceGroupModifyConfig]
+type InstanceGroupModifyConfigList = js.Array[InstanceGroupModifyConfig]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROVISIONING
@@ -196,7 +215,7 @@ type InstanceGroupModifyConfigList = js.Array[typings.awsSdk.emrMod.InstanceGrou
   - typings.awsSdk.awsSdkStrings.ENDED
   - java.lang.String
 */
-type InstanceGroupState = typings.awsSdk.emrMod._InstanceGroupState | java.lang.String
+type InstanceGroupState = _InstanceGroupState | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INTERNAL_ERROR
@@ -205,7 +224,7 @@ type InstanceGroupState = typings.awsSdk.emrMod._InstanceGroupState | java.lang.
   - typings.awsSdk.awsSdkStrings.CLUSTER_TERMINATED
   - java.lang.String
 */
-type InstanceGroupStateChangeReasonCode = typings.awsSdk.emrMod._InstanceGroupStateChangeReasonCode | java.lang.String
+type InstanceGroupStateChangeReasonCode = _InstanceGroupStateChangeReasonCode | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MASTER
@@ -213,13 +232,13 @@ type InstanceGroupStateChangeReasonCode = typings.awsSdk.emrMod._InstanceGroupSt
   - typings.awsSdk.awsSdkStrings.TASK
   - java.lang.String
 */
-type InstanceGroupType = typings.awsSdk.emrMod._InstanceGroupType | java.lang.String
+type InstanceGroupType = _InstanceGroupType | java.lang.String
 
-type InstanceGroupTypeList = js.Array[typings.awsSdk.emrMod.InstanceGroupType]
+type InstanceGroupTypeList = js.Array[InstanceGroupType]
 
 type InstanceId = java.lang.String
 
-type InstanceList = js.Array[typings.awsSdk.emrMod.Instance]
+type InstanceList = js.Array[Instance]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MASTER
@@ -227,7 +246,7 @@ type InstanceList = js.Array[typings.awsSdk.emrMod.Instance]
   - typings.awsSdk.awsSdkStrings.TASK
   - java.lang.String
 */
-type InstanceRoleType = typings.awsSdk.emrMod._InstanceRoleType | java.lang.String
+type InstanceRoleType = _InstanceRoleType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AWAITING_FULFILLMENT
@@ -237,7 +256,7 @@ type InstanceRoleType = typings.awsSdk.emrMod._InstanceRoleType | java.lang.Stri
   - typings.awsSdk.awsSdkStrings.TERMINATED
   - java.lang.String
 */
-type InstanceState = typings.awsSdk.emrMod._InstanceState | java.lang.String
+type InstanceState = _InstanceState | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INTERNAL_ERROR
@@ -247,19 +266,19 @@ type InstanceState = typings.awsSdk.emrMod._InstanceState | java.lang.String
   - typings.awsSdk.awsSdkStrings.CLUSTER_TERMINATED
   - java.lang.String
 */
-type InstanceStateChangeReasonCode = typings.awsSdk.emrMod._InstanceStateChangeReasonCode | java.lang.String
+type InstanceStateChangeReasonCode = _InstanceStateChangeReasonCode | java.lang.String
 
-type InstanceStateList = js.Array[typings.awsSdk.emrMod.InstanceState]
+type InstanceStateList = js.Array[InstanceState]
 
 type InstanceType = java.lang.String
 
-type InstanceTypeConfigList = js.Array[typings.awsSdk.emrMod.InstanceTypeConfig]
+type InstanceTypeConfigList = js.Array[InstanceTypeConfig]
 
-type InstanceTypeSpecificationList = js.Array[typings.awsSdk.emrMod.InstanceTypeSpecification]
+type InstanceTypeSpecificationList = js.Array[InstanceTypeSpecification]
 
-type Integer = scala.Double
+type Integer = Double
 
-type JobFlowDetailList = js.Array[typings.awsSdk.emrMod.JobFlowDetail]
+type JobFlowDetailList = js.Array[JobFlowDetail]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STARTING
@@ -272,13 +291,13 @@ type JobFlowDetailList = js.Array[typings.awsSdk.emrMod.JobFlowDetail]
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type JobFlowExecutionState = typings.awsSdk.emrMod._JobFlowExecutionState | java.lang.String
+type JobFlowExecutionState = _JobFlowExecutionState | java.lang.String
 
-type JobFlowExecutionStateList = js.Array[typings.awsSdk.emrMod.JobFlowExecutionState]
+type JobFlowExecutionStateList = js.Array[JobFlowExecutionState]
 
-type KeyValueList = js.Array[typings.awsSdk.emrMod.KeyValue]
+type KeyValueList = js.Array[KeyValue]
 
-type Long = scala.Double
+type Long = Double
 
 type Marker = java.lang.String
 
@@ -287,13 +306,15 @@ type Marker = java.lang.String
   - typings.awsSdk.awsSdkStrings.SPOT
   - java.lang.String
 */
-type MarketType = typings.awsSdk.emrMod._MarketType | java.lang.String
+type MarketType = _MarketType | java.lang.String
 
-type MetricDimensionList = js.Array[typings.awsSdk.emrMod.MetricDimension]
+type MaxResultsNumber = Double
 
-type NewSupportedProductsList = js.Array[typings.awsSdk.emrMod.SupportedProductConfig]
+type MetricDimensionList = js.Array[MetricDimension]
 
-type NonNegativeDouble = scala.Double
+type NewSupportedProductsList = js.Array[SupportedProductConfig]
+
+type NonNegativeDouble = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.START_PENDING
@@ -308,15 +329,26 @@ type NonNegativeDouble = scala.Double
   - typings.awsSdk.awsSdkStrings.STOPPED
   - java.lang.String
 */
-type NotebookExecutionStatus = typings.awsSdk.emrMod._NotebookExecutionStatus | java.lang.String
+type NotebookExecutionStatus = _NotebookExecutionStatus | java.lang.String
 
-type NotebookExecutionSummaryList = js.Array[typings.awsSdk.emrMod.NotebookExecutionSummary]
+type NotebookExecutionSummaryList = js.Array[NotebookExecutionSummary]
 
-type OnDemandProvisioningAllocationStrategy = typings.awsSdk.awsSdkStrings.`lowest-price` | java.lang.String
+type OSReleaseList = js.Array[OSRelease]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.open__
+  - typings.awsSdk.awsSdkStrings.none__
+  - java.lang.String
+*/
+type OnDemandCapacityReservationPreference = _OnDemandCapacityReservationPreference | java.lang.String
+
+type OnDemandCapacityReservationUsageStrategy = `use-capacity-reservations-first` | java.lang.String
+
+type OnDemandProvisioningAllocationStrategy = `lowest-price` | java.lang.String
 
 type OptionalArnType = java.lang.String
 
-type PlacementGroupConfigList = js.Array[typings.awsSdk.emrMod.PlacementGroupConfig]
+type PlacementGroupConfigList = js.Array[PlacementGroupConfig]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SPREAD
@@ -325,18 +357,25 @@ type PlacementGroupConfigList = js.Array[typings.awsSdk.emrMod.PlacementGroupCon
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type PlacementGroupStrategy = typings.awsSdk.emrMod._PlacementGroupStrategy | java.lang.String
+type PlacementGroupStrategy = _PlacementGroupStrategy | java.lang.String
 
-type Port = scala.Double
+type Port = Double
 
-type PortRanges = js.Array[typings.awsSdk.emrMod.PortRange]
+type PortRanges = js.Array[PortRange]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.OVERWRITE
+  - typings.awsSdk.awsSdkStrings.MERGE
+  - java.lang.String
+*/
+type ReconfigurationType = _ReconfigurationType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SECURITY
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type RepoUpgradeOnBoot = typings.awsSdk.emrMod._RepoUpgradeOnBoot | java.lang.String
+type RepoUpgradeOnBoot = _RepoUpgradeOnBoot | java.lang.String
 
 type ResourceId = java.lang.String
 
@@ -345,22 +384,26 @@ type ResourceId = java.lang.String
   - typings.awsSdk.awsSdkStrings.TERMINATE_AT_TASK_COMPLETION
   - java.lang.String
 */
-type ScaleDownBehavior = typings.awsSdk.emrMod._ScaleDownBehavior | java.lang.String
+type ScaleDownBehavior = _ScaleDownBehavior | java.lang.String
 
-type ScalingRuleList = js.Array[typings.awsSdk.emrMod.ScalingRule]
+type ScalingRuleList = js.Array[ScalingRule]
 
-type SecurityConfigurationList = js.Array[typings.awsSdk.emrMod.SecurityConfigurationSummary]
+type SecurityConfigurationList = js.Array[SecurityConfigurationSummary]
 
-type SecurityGroupsList = js.Array[typings.awsSdk.emrMod.XmlStringMaxLen256]
+type SecurityGroupsList = js.Array[XmlStringMaxLen256]
 
-type SpotProvisioningAllocationStrategy = typings.awsSdk.awsSdkStrings.`capacity-optimized` | java.lang.String
+type SessionMappingSummaryList = js.Array[SessionMappingSummary]
+
+type SimplifiedApplicationList = js.Array[SimplifiedApplication]
+
+type SpotProvisioningAllocationStrategy = `capacity-optimized` | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SWITCH_TO_ON_DEMAND
   - typings.awsSdk.awsSdkStrings.TERMINATE_CLUSTER
   - java.lang.String
 */
-type SpotProvisioningTimeoutAction = typings.awsSdk.emrMod._SpotProvisioningTimeoutAction | java.lang.String
+type SpotProvisioningTimeoutAction = _SpotProvisioningTimeoutAction | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SAMPLE_COUNT
@@ -370,18 +413,18 @@ type SpotProvisioningTimeoutAction = typings.awsSdk.emrMod._SpotProvisioningTime
   - typings.awsSdk.awsSdkStrings.MAXIMUM
   - java.lang.String
 */
-type Statistic = typings.awsSdk.emrMod._Statistic | java.lang.String
+type Statistic = _Statistic | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SEND_INTERRUPT
   - typings.awsSdk.awsSdkStrings.TERMINATE_PROCESS
   - java.lang.String
 */
-type StepCancellationOption = typings.awsSdk.emrMod._StepCancellationOption | java.lang.String
+type StepCancellationOption = _StepCancellationOption | java.lang.String
 
-type StepConfigList = js.Array[typings.awsSdk.emrMod.StepConfig]
+type StepConfigList = js.Array[StepConfig]
 
-type StepDetailList = js.Array[typings.awsSdk.emrMod.StepDetail]
+type StepDetailList = js.Array[StepDetail]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -393,11 +436,11 @@ type StepDetailList = js.Array[typings.awsSdk.emrMod.StepDetail]
   - typings.awsSdk.awsSdkStrings.INTERRUPTED
   - java.lang.String
 */
-type StepExecutionState = typings.awsSdk.emrMod._StepExecutionState | java.lang.String
+type StepExecutionState = _StepExecutionState | java.lang.String
 
 type StepId = java.lang.String
 
-type StepIdsList = js.Array[typings.awsSdk.emrMod.XmlStringMaxLen256]
+type StepIdsList = js.Array[XmlStringMaxLen256]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -409,23 +452,29 @@ type StepIdsList = js.Array[typings.awsSdk.emrMod.XmlStringMaxLen256]
   - typings.awsSdk.awsSdkStrings.INTERRUPTED
   - java.lang.String
 */
-type StepState = typings.awsSdk.emrMod._StepState | java.lang.String
+type StepState = _StepState | java.lang.String
 
-type StepStateChangeReasonCode = typings.awsSdk.awsSdkStrings.NONE | java.lang.String
+type StepStateChangeReasonCode = NONE | java.lang.String
 
-type StepStateList = js.Array[typings.awsSdk.emrMod.StepState]
+type StepStateList = js.Array[StepState]
 
-type StepSummaryList = js.Array[typings.awsSdk.emrMod.StepSummary]
+type StepSummaryList = js.Array[StepSummary]
 
 type String = java.lang.String
 
-type StringList = js.Array[typings.awsSdk.emrMod.String]
+type StringList = js.Array[String]
 
-type StringMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.emrMod.String]
+type StringMap = StringDictionary[String]
 
-type SupportedProductsList = js.Array[typings.awsSdk.emrMod.XmlStringMaxLen256]
+type StudioSummaryList = js.Array[StudioSummary]
 
-type TagList = js.Array[typings.awsSdk.emrMod.Tag]
+type SubnetIdList = js.Array[String]
+
+type SupportedProductsList = js.Array[XmlStringMaxLen256]
+
+type TagList = js.Array[Tag]
+
+type ThroughputVal = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -457,21 +506,21 @@ type TagList = js.Array[typings.awsSdk.emrMod.Tag]
   - typings.awsSdk.awsSdkStrings.COUNT_PER_SECOND
   - java.lang.String
 */
-type Unit = typings.awsSdk.emrMod._Unit | java.lang.String
+type Unit = _Unit | java.lang.String
 
-type WholeNumber = scala.Double
+type WholeNumber = Double
 
 type XmlString = java.lang.String
 
-type XmlStringList = js.Array[typings.awsSdk.emrMod.XmlString]
+type XmlStringList = js.Array[XmlString]
 
 type XmlStringMaxLen256 = java.lang.String
 
-type XmlStringMaxLen256List = js.Array[typings.awsSdk.emrMod.XmlStringMaxLen256]
+type XmlStringMaxLen256List = js.Array[XmlStringMaxLen256]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2009-03-31`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.emrMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

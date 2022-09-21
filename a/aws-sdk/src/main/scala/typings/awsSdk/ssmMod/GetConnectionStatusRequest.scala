@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetConnectionStatusRequest extends StObject {
   
   /**
-    * The ID of the instance.
+    * The managed node ID.
     */
   var Target: SessionTarget
 }

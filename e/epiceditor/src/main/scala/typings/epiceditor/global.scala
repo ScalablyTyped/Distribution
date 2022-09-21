@@ -8,7 +8,7 @@ object global {
   
   @JSGlobal("EpicEditor")
   @js.native
-  class EpicEditor ()
+  open class EpicEditor ()
     extends StObject
        with typings.epiceditor.EpicEditor {
     def this(options: EpicEditorOptions) = this()

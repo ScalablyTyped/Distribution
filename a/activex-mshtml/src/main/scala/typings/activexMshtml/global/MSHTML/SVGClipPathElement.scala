@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGClipPathElement")
 @js.native
-/* private */ class SVGClipPathElement ()
+/* private */ open class SVGClipPathElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGClipPathElement {
   

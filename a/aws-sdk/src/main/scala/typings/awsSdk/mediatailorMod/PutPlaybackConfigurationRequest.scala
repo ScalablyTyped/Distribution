@@ -12,22 +12,27 @@ trait PutPlaybackConfigurationRequest extends StObject {
   var AdDecisionServerUrl: js.UndefOr[string] = js.undefined
   
   /**
-    * The configuration for Avail Suppression. Ad suppression can be used to turn off ad personalization in a long manifest, or if a viewer joins mid-break.
+    * The configuration for avail suppression, also known as ad suppression. For more information about ad suppression, see Ad Suppression.
     */
   var AvailSuppression: js.UndefOr[typings.awsSdk.mediatailorMod.AvailSuppression] = js.undefined
   
   /**
-    * The configuration for bumpers. Bumpers are short audio or video clips that play at the start or before the end of an ad break. 
+    * The configuration for bumpers. Bumpers are short audio or video clips that play at the start or before the end of an ad break. To learn more about bumpers, see Bumpers.
     */
   var Bumper: js.UndefOr[typings.awsSdk.mediatailorMod.Bumper] = js.undefined
   
   /**
-    * The configuration for using a content delivery network (CDN), like Amazon CloudFront, for content and ad segment management. 
+    * The configuration for using a content delivery network (CDN), like Amazon CloudFront, for content and ad segment management.
     */
   var CdnConfiguration: js.UndefOr[typings.awsSdk.mediatailorMod.CdnConfiguration] = js.undefined
   
   /**
-    * The configuration for DASH content. 
+    * The player parameters and aliases used as dynamic variables during session initialization. For more information, see Domain Variables. 
+    */
+  var ConfigurationAliases: js.UndefOr[ConfigurationAliasesRequest] = js.undefined
+  
+  /**
+    * The configuration for DASH content.
     */
   var DashConfiguration: js.UndefOr[DashConfigurationForPut] = js.undefined
   
@@ -47,17 +52,17 @@ trait PutPlaybackConfigurationRequest extends StObject {
   var Name: js.UndefOr[string] = js.undefined
   
   /**
-    * The maximum duration of underfilled ad time (in seconds) allowed in an ad break.
+    * Defines the maximum duration of underfilled ad time (in seconds) allowed in an ad break. If the duration of underfilled ad time exceeds the personalization threshold, then the personalization of the ad break is abandoned and the underlying content is shown. This feature applies to ad replacement in live and VOD streams, rather than ad insertion, because it relies on an underlying content stream. For more information about ad break behavior, including ad replacement and insertion, see Ad Behavior in AWS Elemental MediaTailor.
     */
   var PersonalizationThresholdSeconds: js.UndefOr[integerMin1] = js.undefined
   
   /**
-    * The URL for a high-quality video asset to transcode and use to fill in time that's not used by ads. AWS Elemental MediaTailor shows the slate to fill in gaps in media content. Configuring the slate is optional for non-VPAID configurations. For VPAID, the slate is required because MediaTailor provides it in the slots that are designated for dynamic ad content. The slate must be a high-quality asset that contains both audio and video. 
+    * The URL for a high-quality video asset to transcode and use to fill in time that's not used by ads. AWS Elemental MediaTailor shows the slate to fill in gaps in media content. Configuring the slate is optional for non-VPAID configurations. For VPAID, the slate is required because MediaTailor provides it in the slots that are designated for dynamic ad content. The slate must be a high-quality asset that contains both audio and video.
     */
   var SlateAdUrl: js.UndefOr[string] = js.undefined
   
   /**
-    * The tags to assign to the playback configuration. 
+    * The tags to assign to the playback configuration.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
   
@@ -67,7 +72,7 @@ trait PutPlaybackConfigurationRequest extends StObject {
   var TranscodeProfileName: js.UndefOr[string] = js.undefined
   
   /**
-    * The URL prefix for the master playlist for the stream, minus the asset ID. The maximum length is 512 characters.
+    * The URL prefix for the parent manifest for the stream, minus the asset ID. The maximum length is 512 characters.
     */
   var VideoContentSourceUrl: js.UndefOr[string] = js.undefined
 }
@@ -95,6 +100,10 @@ object PutPlaybackConfigurationRequest {
     inline def setCdnConfiguration(value: CdnConfiguration): Self = StObject.set(x, "CdnConfiguration", value.asInstanceOf[js.Any])
     
     inline def setCdnConfigurationUndefined: Self = StObject.set(x, "CdnConfiguration", js.undefined)
+    
+    inline def setConfigurationAliases(value: ConfigurationAliasesRequest): Self = StObject.set(x, "ConfigurationAliases", value.asInstanceOf[js.Any])
+    
+    inline def setConfigurationAliasesUndefined: Self = StObject.set(x, "ConfigurationAliases", js.undefined)
     
     inline def setDashConfiguration(value: DashConfigurationForPut): Self = StObject.set(x, "DashConfiguration", value.asInstanceOf[js.Any])
     

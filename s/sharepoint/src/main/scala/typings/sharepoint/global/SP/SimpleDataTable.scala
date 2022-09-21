@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.SimpleDataTable")
 @js.native
-class SimpleDataTable ()
+open class SimpleDataTable ()
   extends StObject
      with typings.sharepoint.SP.SimpleDataTable {
   
   /* CompleteClass */
-  override def get_rows(): js.Array[js.Any] = js.native
+  override def get_rows(): js.Array[Any] = js.native
 }

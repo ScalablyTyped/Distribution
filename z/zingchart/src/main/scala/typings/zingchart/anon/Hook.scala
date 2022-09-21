@@ -26,6 +26,10 @@ trait Hook extends StObject {
     */
   var `offset-y`: js.UndefOr[Double] = js.undefined
   
+  var offsetX: js.UndefOr[Double] = js.undefined
+  
+  var offsetY: js.UndefOr[Double] = js.undefined
+  
   /**
     * Sets the x ordinate for an arrow's end point. Ordinates are counted in pixels, starting from the top-left corner of the chart. 100
     *  | 450 | ...
@@ -58,6 +62,14 @@ object Hook {
     inline def `setOffset-y`(value: Double): Self = StObject.set(x, "offset-y", value.asInstanceOf[js.Any])
     
     inline def `setOffset-yUndefined`: Self = StObject.set(x, "offset-y", js.undefined)
+    
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

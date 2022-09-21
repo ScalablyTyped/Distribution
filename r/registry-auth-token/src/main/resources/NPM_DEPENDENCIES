@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "registry-auth-token" : "5.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "registry-auth-token" : "5.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

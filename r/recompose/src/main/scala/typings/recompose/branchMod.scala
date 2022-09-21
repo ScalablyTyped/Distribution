@@ -16,11 +16,11 @@ object branchMod {
   
   inline def default[TOutter](
     test: predicate[TOutter],
-    trueEnhancer: (ComponentEnhancer[js.Any, js.Any]) | InferableComponentEnhancer[js.Object]
-  ): ComponentEnhancer[js.Any, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(test.asInstanceOf[js.Any], trueEnhancer.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[js.Any, TOutter]]
+    trueEnhancer: (ComponentEnhancer[Any, Any]) | InferableComponentEnhancer[js.Object]
+  ): ComponentEnhancer[Any, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(test.asInstanceOf[js.Any], trueEnhancer.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[Any, TOutter]]
   inline def default[TOutter](
     test: predicate[TOutter],
-    trueEnhancer: (ComponentEnhancer[js.Any, js.Any]) | InferableComponentEnhancer[js.Object],
-    falseEnhancer: (ComponentEnhancer[js.Any, js.Any]) | InferableComponentEnhancer[js.Object]
-  ): ComponentEnhancer[js.Any, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(test.asInstanceOf[js.Any], trueEnhancer.asInstanceOf[js.Any], falseEnhancer.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[js.Any, TOutter]]
+    trueEnhancer: (ComponentEnhancer[Any, Any]) | InferableComponentEnhancer[js.Object],
+    falseEnhancer: (ComponentEnhancer[Any, Any]) | InferableComponentEnhancer[js.Object]
+  ): ComponentEnhancer[Any, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(test.asInstanceOf[js.Any], trueEnhancer.asInstanceOf[js.Any], falseEnhancer.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[Any, TOutter]]
 }

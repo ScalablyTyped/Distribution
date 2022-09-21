@@ -10,9 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def refresh(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")().asInstanceOf[js.Any]
+  inline def refresh(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")().asInstanceOf[Any]
   
-  inline def trap(el: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("trap")(el.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def trap(el: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("trap")(el.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def untrap(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("untrap")().asInstanceOf[js.Any]
+  inline def untrap(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("untrap")().asInstanceOf[Any]
 }

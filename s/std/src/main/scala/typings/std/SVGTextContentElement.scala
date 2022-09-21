@@ -10,40 +10,52 @@ trait SVGTextContentElement
   extends StObject
      with SVGGraphicsElement {
   
+  /* standard dom */
   val LENGTHADJUST_SPACING: Double = js.native
   
+  /* standard dom */
   val LENGTHADJUST_SPACINGANDGLYPHS: Double = js.native
   
+  /* standard dom */
   val LENGTHADJUST_UNKNOWN: Double = js.native
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   def getCharNumAtPosition(): Double = js.native
   def getCharNumAtPosition(point: DOMPointInit): Double = js.native
   
+  /* standard dom */
   def getComputedTextLength(): Double = js.native
   
+  /* standard dom */
   def getEndPositionOfChar(charnum: Double): DOMPoint = js.native
   
+  /* standard dom */
   def getExtentOfChar(charnum: Double): DOMRect = js.native
   
+  /* standard dom */
   def getNumberOfChars(): Double = js.native
   
+  /* standard dom */
   def getRotationOfChar(charnum: Double): Double = js.native
   
+  /* standard dom */
   def getStartPositionOfChar(charnum: Double): DOMPoint = js.native
   
+  /* standard dom */
   def getSubStringLength(charnum: Double, nchars: Double): Double = js.native
   
+  /* standard dom */
   val lengthAdjust: SVGAnimatedEnumeration = js.native
   
   /* InferMemberOverrides */
@@ -57,7 +69,10 @@ trait SVGTextContentElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** @deprecated */
+  /* standard dom */
   def selectSubString(charnum: Double, nchars: Double): Unit = js.native
   
+  /* standard dom */
   val textLength: SVGAnimatedLength = js.native
 }

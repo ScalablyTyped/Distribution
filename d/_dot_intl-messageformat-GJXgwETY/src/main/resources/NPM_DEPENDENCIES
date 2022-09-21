@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".intl-messageformat-GJXgwETY" : "9.13.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".intl-messageformat-GJXgwETY" : "9.13.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

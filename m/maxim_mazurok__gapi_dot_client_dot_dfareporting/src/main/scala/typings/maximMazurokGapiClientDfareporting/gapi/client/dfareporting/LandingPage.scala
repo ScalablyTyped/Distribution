@@ -48,7 +48,7 @@ object LandingPage {
     
     inline def setDeepLinksUndefined: Self = StObject.set(x, "deepLinks", js.undefined)
     
-    inline def setDeepLinksVarargs(value: DeepLink*): Self = StObject.set(x, "deepLinks", js.Array(value :_*))
+    inline def setDeepLinksVarargs(value: DeepLink*): Self = StObject.set(x, "deepLinks", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

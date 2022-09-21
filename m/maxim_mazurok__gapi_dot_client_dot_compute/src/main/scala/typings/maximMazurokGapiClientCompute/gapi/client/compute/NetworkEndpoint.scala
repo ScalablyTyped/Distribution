@@ -11,7 +11,7 @@ trait NetworkEndpoint extends StObject {
   var annotations: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NetworkEndpoint & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NetworkEndpoint & TopLevel[Any]
   ] = js.undefined
   
   /** Optional fully qualified domain name of network endpoint. This can only be specified when NetworkEndpointGroup.network_endpoint_type is NON_GCP_FQDN_PORT. */
@@ -19,9 +19,7 @@ trait NetworkEndpoint extends StObject {
   
   /**
     * The name for a specific VM instance that the IP address belongs to. This is required for network endpoints of type GCE_VM_IP_PORT. The instance must be in the same zone of network
-    * endpoint group.
-    *
-    * The name must be 1-63 characters long, and comply with RFC1035.
+    * endpoint group. The name must be 1-63 characters long, and comply with RFC1035.
     */
   var instance: js.UndefOr[String] = js.undefined
   
@@ -31,10 +29,7 @@ trait NetworkEndpoint extends StObject {
     */
   var ipAddress: js.UndefOr[String] = js.undefined
   
-  /**
-    * Optional port number of network endpoint. If not specified and the NetworkEndpointGroup.network_endpoint_type is GCE_IP_PORT, the defaultPort for the network endpoint group will be
-    * used.
-    */
+  /** Optional port number of network endpoint. If not specified, the defaultPort for the network endpoint group will be used. */
   var port: js.UndefOr[Double] = js.undefined
 }
 object NetworkEndpoint {
@@ -49,7 +44,7 @@ object NetworkEndpoint {
     inline def setAnnotations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NetworkEndpoint & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NetworkEndpoint & TopLevel[Any]
     ): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)

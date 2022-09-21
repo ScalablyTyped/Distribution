@@ -1,6 +1,8 @@
 package typings.jsreportHtmlToXlsx
 
+import typings.jsreportCore.mod.Engine
 import typings.jsreportCore.mod.ExtensionDefinition
+import typings.jsreportCore.mod.Template
 import typings.jsreportHtmlToXlsx.anon.HtmlEngine
 import typings.jsreportHtmlToXlsx.anon.PartialOptions
 import typings.jsreportHtmlToXlsx.jsreportHtmlToXlsxStrings.`html-to-xlsx`
@@ -16,6 +18,30 @@ object mod {
   @JSImport("jsreport-html-to-xlsx", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  trait Html2XlsxTemplate
+    extends StObject
+       with Template {
+    
+    var htmlToXlsx: HtmlEngine
+    
+    @JSName("recipe")
+    var recipe_Html2XlsxTemplate: `html-to-xlsx` | String
+  }
+  object Html2XlsxTemplate {
+    
+    inline def apply(content: String, engine: Engine | String, htmlToXlsx: HtmlEngine, recipe: `html-to-xlsx` | String): Html2XlsxTemplate = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], htmlToXlsx = htmlToXlsx.asInstanceOf[js.Any], recipe = recipe.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Html2XlsxTemplate]
+    }
+    
+    extension [Self <: Html2XlsxTemplate](x: Self) {
+      
+      inline def setHtmlToXlsx(value: HtmlEngine): Self = StObject.set(x, "htmlToXlsx", value.asInstanceOf[js.Any])
+      
+      inline def setRecipe(value: `html-to-xlsx` | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait Options
     extends StObject
@@ -36,40 +62,36 @@ object mod {
     }
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.jsreportHtmlToXlsx.jsreportHtmlToXlsxStrings.phantom
+    - typings.jsreportHtmlToXlsx.jsreportHtmlToXlsxStrings.chrome
+  */
+  trait htmlEngine extends StObject
+  object htmlEngine {
+    
+    inline def chrome: typings.jsreportHtmlToXlsx.jsreportHtmlToXlsxStrings.chrome = "chrome".asInstanceOf[typings.jsreportHtmlToXlsx.jsreportHtmlToXlsxStrings.chrome]
+    
+    inline def phantom: typings.jsreportHtmlToXlsx.jsreportHtmlToXlsxStrings.phantom = "phantom".asInstanceOf[typings.jsreportHtmlToXlsx.jsreportHtmlToXlsxStrings.phantom]
+  }
+  
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    trait Template extends StObject {
+    trait TemplateRegistry extends StObject {
       
-      var htmlToXlsx: HtmlEngine
-      
-      var recipe: `html-to-xlsx` | String
+      var Html2XlsxTemplate: typings.jsreportHtmlToXlsx.mod.Html2XlsxTemplate
     }
-    object Template {
+    object TemplateRegistry {
       
-      inline def apply(htmlToXlsx: HtmlEngine, recipe: `html-to-xlsx` | String): Template = {
-        val __obj = js.Dynamic.literal(htmlToXlsx = htmlToXlsx.asInstanceOf[js.Any], recipe = recipe.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Template]
+      inline def apply(Html2XlsxTemplate: Html2XlsxTemplate): TemplateRegistry = {
+        val __obj = js.Dynamic.literal(Html2XlsxTemplate = Html2XlsxTemplate.asInstanceOf[js.Any])
+        __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: Template](x: Self) {
+      extension [Self <: TemplateRegistry](x: Self) {
         
-        inline def setHtmlToXlsx(value: HtmlEngine): Self = StObject.set(x, "htmlToXlsx", value.asInstanceOf[js.Any])
-        
-        inline def setRecipe(value: `html-to-xlsx` | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
+        inline def setHtml2XlsxTemplate(value: Html2XlsxTemplate): Self = StObject.set(x, "Html2XlsxTemplate", value.asInstanceOf[js.Any])
       }
-    }
-    
-    /* Rewritten from type alias, can be one of: 
-      - typings.jsreportHtmlToXlsx.jsreportHtmlToXlsxStrings.phantom
-      - typings.jsreportHtmlToXlsx.jsreportHtmlToXlsxStrings.chrome
-    */
-    trait htmlEngine extends StObject
-    object htmlEngine {
-      
-      inline def chrome: typings.jsreportHtmlToXlsx.jsreportHtmlToXlsxStrings.chrome = "chrome".asInstanceOf[typings.jsreportHtmlToXlsx.jsreportHtmlToXlsxStrings.chrome]
-      
-      inline def phantom: typings.jsreportHtmlToXlsx.jsreportHtmlToXlsxStrings.phantom = "phantom".asInstanceOf[typings.jsreportHtmlToXlsx.jsreportHtmlToXlsxStrings.phantom]
     }
   }
 }

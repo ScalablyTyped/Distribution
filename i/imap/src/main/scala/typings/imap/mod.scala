@@ -8,10 +8,9 @@ import typings.imap.imapStrings.body
 import typings.imap.imapStrings.end
 import typings.imap.imapStrings.error
 import typings.imap.imapStrings.message
-import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.EventEmitter
-import typings.std.Date
-import typings.std.Error
+import typings.node.tlsMod.ConnectionOptions
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,37 +19,37 @@ object mod {
   
   @JSImport("imap", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Connection {
+  open class ^ protected () extends Connection {
     /** @constructor */
     def this(config: Config) = this()
     
     /** Adds flag(s) to message(s). */
     /* CompleteClass */
-    override def addFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    override def addFlags(source: Any, flags: Any, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /** Adds keyword(s) to message(s). keywords is either a single keyword or an array of keywords. */
     /* CompleteClass */
-    override def addKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    override def addKeywords(source: Any, keywords: Any, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /** Copies message(s) in the currently open mailbox to another mailbox. */
     /* CompleteClass */
-    override def copy(source: js.Any, mailboxName: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    override def copy(source: Any, mailboxName: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /** Removes flag(s) from message(s). */
     /* CompleteClass */
-    override def delFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    override def delFlags(source: Any, flags: Any, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /** Removes keyword(s) from message(s). keywords is either a single keyword or an array of keywords. */
     /* CompleteClass */
-    override def delKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    override def delKeywords(source: Any, keywords: Any, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /** Fetches message(s) in the currently open mailbox; source can be a single message identifier, a message identifier range (e.g. '2504:2507' or '*' or '2504:*'), an array of message identifiers, or an array of message identifier ranges. */
     /* CompleteClass */
-    override def fetch(source: js.Any, options: FetchOptions): ImapFetch = js.native
+    override def fetch(source: Any, options: FetchOptions): ImapFetch = js.native
     
     /** Moves message(s) in the currently open mailbox to another mailbox. Note: The message(s) in the destination mailbox will have a new message UID. */
     /* CompleteClass */
-    override def move(source: js.Any, mailboxName: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    override def move(source: Any, mailboxName: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /** Searches the currently open mailbox for messages using given criteria. criteria is a list describing what you want to find. For criteria types that require arguments, use an array instead of just the string criteria type name (e.g. ['FROM', 'foo@bar.com']). Prefix criteria types with an "!" to negate.
       The following message flags are valid types that do not have arguments:
@@ -93,8 +92,8 @@ object mod {
       */
     /* CompleteClass */
     override def search(
-      criteria: js.Array[js.Any],
-      callback: js.Function2[/* error */ Error, /* uids */ js.Array[Double], Unit]
+      criteria: js.Array[Any],
+      callback: js.Function2[/* error */ js.Error, /* uids */ js.Array[Double], Unit]
     ): Unit = js.native
     
     /** Checks if the server supports the specified capability. */
@@ -103,11 +102,19 @@ object mod {
     
     /** Sets the flag(s) for message(s). */
     /* CompleteClass */
-    override def setFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    override def setFlags(source: Any, flags: Any, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /** Sets keyword(s) for message(s). keywords is either a single keyword or an array of keywords. */
     /* CompleteClass */
-    override def setKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    override def setKeywords(source: Any, keywords: Any, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
+    
+    /** Sorts the currently open mailbox for messages using given sortCriteria. This method first searches the mailbox for messages that match the given searching criteria and then sorts by given sort criteria. (This is a specification of RFC 5256. )  */
+    /* CompleteClass */
+    override def sort(
+      sortCriteria: js.Array[SortCriteria],
+      searchCriteria: js.Array[Any],
+      callback: js.Function2[/* error */ js.Error, /* uids */ js.Array[Double], Unit]
+    ): Unit = js.native
   }
   @JSImport("imap", JSImport.Namespace)
   @js.native
@@ -122,10 +129,10 @@ object mod {
     
     /* string|string[] */
     /** What to use for message arrival date/time. Default: (current date/time) */
-    var date: js.UndefOr[Date] = js.undefined
+    var date: js.UndefOr[js.Date] = js.undefined
     
     /** A single flag (e.g. 'Seen') or an array of flags (e.g. ['Seen', 'Flagged']) to append to the message. Default: (no flags) */
-    var flags: js.UndefOr[js.Any] = js.undefined
+    var flags: js.UndefOr[Any] = js.undefined
     
     /** The name of the mailbox to append the message to. Default: the currently open mailbox */
     var mailbox: js.UndefOr[String] = js.undefined
@@ -139,11 +146,11 @@ object mod {
     
     extension [Self <: AppendOptions](x: Self) {
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      inline def setFlags(value: js.Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
       inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
@@ -202,7 +209,7 @@ object mod {
       
       inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value*))
       
       inline def setMessages(value: New): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
@@ -212,7 +219,7 @@ object mod {
       
       inline def setPermFlags(value: js.Array[String]): Self = StObject.set(x, "permFlags", value.asInstanceOf[js.Any])
       
-      inline def setPermFlagsVarargs(value: String*): Self = StObject.set(x, "permFlags", js.Array(value :_*))
+      inline def setPermFlagsVarargs(value: String*): Self = StObject.set(x, "permFlags", js.Array(value*))
       
       inline def setPersistentUIDs(value: Boolean): Self = StObject.set(x, "persistentUIDs", value.asInstanceOf[js.Any])
       
@@ -245,7 +252,7 @@ object mod {
     var host: js.UndefOr[String] = js.undefined
     
     /** Configures the keepalive mechanism. Set to true to enable keepalive with defaults or set to object to enable and configure keepalive behavior: Default: true */
-    var keepalive: js.UndefOr[js.Any] = js.undefined
+    var keepalive: js.UndefOr[Any] = js.undefined
     
     /** Password for plain-text authentication. */
     var password: String
@@ -257,7 +264,7 @@ object mod {
     var tls: js.UndefOr[Boolean] = js.undefined
     
     /** Options object to pass to tls.connect() Default: (none) */
-    var tlsOptions: js.UndefOr[js.Object] = js.undefined
+    var tlsOptions: js.UndefOr[ConnectionOptions] = js.undefined
     
     /** Username for plain-text authentication. */
     var user: String
@@ -297,7 +304,7 @@ object mod {
       
       inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      inline def setKeepalive(value: js.Any): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
+      inline def setKeepalive(value: Any): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
       
       inline def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
       
@@ -309,7 +316,7 @@ object mod {
       
       inline def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
       
-      inline def setTlsOptions(value: js.Object): Self = StObject.set(x, "tlsOptions", value.asInstanceOf[js.Any])
+      inline def setTlsOptions(value: ConnectionOptions): Self = StObject.set(x, "tlsOptions", value.asInstanceOf[js.Any])
       
       inline def setTlsOptionsUndefined: Self = StObject.set(x, "tlsOptions", js.undefined)
       
@@ -333,24 +340,24 @@ object mod {
        with MessageFunctions {
     
     /** Creates a new mailbox on the server. mailboxName should include any necessary prefix/path. */
-    def addBox(mailboxName: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def addBox(mailboxName: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     // from NodeJS.EventEmitter
     def addListener(event: String, listener: js.Function): this.type = js.native
     
     /** Appends a message to selected mailbox. msgData is a string or Buffer containing an RFC-822 compatible MIME message. Valid options properties are: */
-    def append(msgData: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
-    def append(msgData: js.Any, options: AppendOptions, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def append(msgData: Any, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
+    def append(msgData: Any, options: AppendOptions, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
-    def closeBox(autoExpunge: Boolean, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def closeBox(autoExpunge: Boolean, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     /** Closes the currently open mailbox. If autoExpunge is true, any messages marked as Deleted in the currently open mailbox will be removed if the mailbox was NOT opened in read-only mode. If autoExpunge is false, you disconnect, or you open another mailbox, messages marked as Deleted will NOT be removed from the currently open mailbox. */
-    def closeBox(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def closeBox(callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /** Attempts to connect and authenticate with the IMAP server. */
     def connect(): Unit = js.native
     
     /** Removes a specific mailbox that exists on the server. mailboxName should including any necessary prefix/path. */
-    def delBox(mailboxName: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def delBox(mailboxName: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /** The (top-level) mailbox hierarchy delimiter. If the server does not support mailbox hierarchies and only a flat list, this value will be falsey. */
     var delimiter: String = js.native
@@ -362,16 +369,16 @@ object mod {
     def end(): Unit = js.native
     
     /** Permanently removes all messages flagged as Deleted in the currently open mailbox. If the server supports the 'UIDPLUS' capability, uids can be supplied to only remove messages that both have their uid in uids and have the \Deleted flag set. Note: At least on Gmail, performing this operation with any currently open mailbox that is not the Spam or Trash mailbox will merely archive any messages marked as Deleted (by moving them to the 'All Mail' mailbox). */
-    def expunge(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
-    def expunge(uids: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def expunge(callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
+    def expunge(uids: Any, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /** Obtains the full list of mailboxes. If nsPrefix is not specified, the main personal namespace is used. */
-    def getBoxes(callback: js.Function2[/* error */ Error, /* mailboxes */ MailBoxes, Unit]): Unit = js.native
-    def getBoxes(nsPrefix: String, callback: js.Function2[/* error */ Error, /* mailboxes */ MailBoxes, Unit]): Unit = js.native
+    def getBoxes(callback: js.Function2[/* error */ js.Error, /* mailboxes */ MailBoxes, Unit]): Unit = js.native
+    def getBoxes(nsPrefix: String, callback: js.Function2[/* error */ js.Error, /* mailboxes */ MailBoxes, Unit]): Unit = js.native
     
     /** Obtains the full list of subscribed mailboxes. If nsPrefix is not specified, the main personal namespace is used. */
-    def getSubscribedBoxes(callback: js.Function2[/* error */ Error, /* mailboxes */ MailBoxes, Unit]): Unit = js.native
-    def getSubscribedBoxes(nsPrefix: String, callback: js.Function2[/* error */ Error, /* mailboxes */ MailBoxes, Unit]): Unit = js.native
+    def getSubscribedBoxes(callback: js.Function2[/* error */ js.Error, /* mailboxes */ MailBoxes, Unit]): Unit = js.native
+    def getSubscribedBoxes(nsPrefix: String, callback: js.Function2[/* error */ js.Error, /* mailboxes */ MailBoxes, Unit]): Unit = js.native
     
     /** Contains information about each namespace type (if supported by the server) with the following properties: */
     var namespaces: Other = js.native
@@ -381,17 +388,17 @@ object mod {
     def once(event: String, listener: js.Function): this.type = js.native
     
     /** Opens a specific mailbox that exists on the server. mailboxName should include any necessary prefix/path. modifiers is used by IMAP extensions. */
-    def openBox(mailboxName: String, callback: js.Function2[/* error */ Error, /* mailbox */ Box, Unit]): Unit = js.native
+    def openBox(mailboxName: String, callback: js.Function2[/* error */ js.Error, /* mailbox */ Box, Unit]): Unit = js.native
     def openBox(
       mailboxName: String,
       openReadOnly: Boolean,
-      callback: js.Function2[/* error */ Error, /* mailbox */ Box, Unit]
+      callback: js.Function2[/* error */ js.Error, /* mailbox */ Box, Unit]
     ): Unit = js.native
     def openBox(
       mailboxName: String,
       openReadOnly: Boolean,
       modifiers: js.Object,
-      callback: js.Function2[/* error */ Error, /* mailbox */ Box, Unit]
+      callback: js.Function2[/* error */ js.Error, /* mailbox */ Box, Unit]
     ): Unit = js.native
     
     def removeListener(event: String, listener: js.Function): this.type = js.native
@@ -400,7 +407,7 @@ object mod {
     def renameBox(
       oldMailboxName: String,
       newMailboxName: String,
-      callback: js.Function2[/* error */ Error, /* mailbox */ Box, Unit]
+      callback: js.Function2[/* error */ js.Error, /* mailbox */ Box, Unit]
     ): Unit = js.native
     
     /**
@@ -412,13 +419,13 @@ object mod {
     var state: String = js.native
     
     /** Fetches information about a mailbox other than the one currently open. Note: There is no guarantee that this will be a fast operation on the server. Also, do not call this on the currently open mailbox. */
-    def status(mailboxName: String, callback: js.Function2[/* error */ Error, /* mailbox */ Box, Unit]): Unit = js.native
+    def status(mailboxName: String, callback: js.Function2[/* error */ js.Error, /* mailbox */ Box, Unit]): Unit = js.native
     
     /** Subscribes to a specific mailbox that exists on the server. mailboxName should include any necessary prefix/path. */
-    def subscribeBox(mailboxName: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def subscribeBox(mailboxName: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /** Unsubscribes from a specific mailbox that exists on the server. mailboxName should include any necessary prefix/path. */
-    def unsubscribeBox(mailboxName: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def unsubscribeBox(mailboxName: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
   }
   
   trait FetchOptions extends StObject {
@@ -454,7 +461,7 @@ object mod {
       
       inline def setBodiesUndefined: Self = StObject.set(x, "bodies", js.undefined)
       
-      inline def setBodiesVarargs(value: String*): Self = StObject.set(x, "bodies", js.Array(value :_*))
+      inline def setBodiesVarargs(value: String*): Self = StObject.set(x, "bodies", js.Array(value*))
       
       inline def setEnvelope(value: Boolean): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
       
@@ -503,7 +510,7 @@ object mod {
       
       inline def setAttribs(value: js.Array[String]): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
       
-      inline def setAttribsVarargs(value: String*): Self = StObject.set(x, "attribs", js.Array(value :_*))
+      inline def setAttribsVarargs(value: String*): Self = StObject.set(x, "attribs", js.Array(value*))
       
       inline def setChildren(value: MailBoxes): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -520,13 +527,13 @@ object mod {
     
     def on(event: String, listener: js.Function): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_message(event: message, listener: js.Function2[/* message */ ImapMessage, /* seqno */ Double, Unit]): this.type = js.native
     
     def once(event: String, listener: js.Function): this.type = js.native
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
   }
   
   @js.native
@@ -540,7 +547,7 @@ object mod {
     @JSName("on")
     def on_body(
       event: body,
-      listener: js.Function2[/* stream */ ReadableStream, /* info */ ImapMessageBodyInfo, Unit]
+      listener: js.Function2[/* stream */ ReadableStream[Any], /* info */ ImapMessageBodyInfo, Unit]
     ): this.type = js.native
     @JSName("on")
     def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
@@ -549,7 +556,7 @@ object mod {
   trait ImapMessageAttributes extends StObject {
     
     /** The internal server date for the message. */
-    var date: Date
+    var date: js.Date
     
     /** A list of flags currently set on this message. */
     var flags: js.Array[String]
@@ -558,35 +565,35 @@ object mod {
     var size: js.UndefOr[Double] = js.undefined
     
     /** The message's body structure (only set if requested with fetch()). */
-    var struct: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var struct: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** A 32-bit ID that uniquely identifies this message within its mailbox. */
     var uid: Double
   }
   object ImapMessageAttributes {
     
-    inline def apply(date: Date, flags: js.Array[String], uid: Double): ImapMessageAttributes = {
+    inline def apply(date: js.Date, flags: js.Array[String], uid: Double): ImapMessageAttributes = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImapMessageAttributes]
     }
     
     extension [Self <: ImapMessageAttributes](x: Self) {
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value*))
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setStruct(value: js.Array[js.Any]): Self = StObject.set(x, "struct", value.asInstanceOf[js.Any])
+      inline def setStruct(value: js.Array[Any]): Self = StObject.set(x, "struct", value.asInstanceOf[js.Any])
       
       inline def setStructUndefined: Self = StObject.set(x, "struct", js.undefined)
       
-      inline def setStructVarargs(value: js.Any*): Self = StObject.set(x, "struct", js.Array(value :_*))
+      inline def setStructVarargs(value: Any*): Self = StObject.set(x, "struct", js.Array(value*))
       
       inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }
@@ -654,25 +661,25 @@ object mod {
   trait MessageFunctions extends StObject {
     
     /** Adds flag(s) to message(s). */
-    def addFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit
+    def addFlags(source: Any, flags: Any, callback: js.Function1[/* error */ js.Error, Unit]): Unit
     
     /** Adds keyword(s) to message(s). keywords is either a single keyword or an array of keywords. */
-    def addKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit
+    def addKeywords(source: Any, keywords: Any, callback: js.Function1[/* error */ js.Error, Unit]): Unit
     
     /** Copies message(s) in the currently open mailbox to another mailbox. */
-    def copy(source: js.Any, mailboxName: String, callback: js.Function1[/* error */ Error, Unit]): Unit
+    def copy(source: Any, mailboxName: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit
     
     /** Removes flag(s) from message(s). */
-    def delFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit
+    def delFlags(source: Any, flags: Any, callback: js.Function1[/* error */ js.Error, Unit]): Unit
     
     /** Removes keyword(s) from message(s). keywords is either a single keyword or an array of keywords. */
-    def delKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit
+    def delKeywords(source: Any, keywords: Any, callback: js.Function1[/* error */ js.Error, Unit]): Unit
     
     /** Fetches message(s) in the currently open mailbox; source can be a single message identifier, a message identifier range (e.g. '2504:2507' or '*' or '2504:*'), an array of message identifiers, or an array of message identifier ranges. */
-    def fetch(source: js.Any, options: FetchOptions): ImapFetch
+    def fetch(source: Any, options: FetchOptions): ImapFetch
     
     /** Moves message(s) in the currently open mailbox to another mailbox. Note: The message(s) in the destination mailbox will have a new message UID. */
-    def move(source: js.Any, mailboxName: String, callback: js.Function1[/* error */ Error, Unit]): Unit
+    def move(source: Any, mailboxName: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit
     
     /** Searches the currently open mailbox for messages using given criteria. criteria is a list describing what you want to find. For criteria types that require arguments, use an array instead of just the string criteria type name (e.g. ['FROM', 'foo@bar.com']). Prefix criteria types with an "!" to negate.
       The following message flags are valid types that do not have arguments:
@@ -714,63 +721,123 @@ object mod {
       UID:            any;    // Messages with UIDs corresponding to the specified UID set. Ranges are permitted (e.g. '2504:2507' or '*' or '2504:*').
       */
     def search(
-      criteria: js.Array[js.Any],
-      callback: js.Function2[/* error */ Error, /* uids */ js.Array[Double], Unit]
+      criteria: js.Array[Any],
+      callback: js.Function2[/* error */ js.Error, /* uids */ js.Array[Double], Unit]
     ): Unit
     
     /** Checks if the server supports the specified capability. */
     def serverSupports(capability: String): Boolean
     
     /** Sets the flag(s) for message(s). */
-    def setFlags(source: js.Any, flags: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit
+    def setFlags(source: Any, flags: Any, callback: js.Function1[/* error */ js.Error, Unit]): Unit
     
     /** Sets keyword(s) for message(s). keywords is either a single keyword or an array of keywords. */
-    def setKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ Error, Unit]): Unit
+    def setKeywords(source: Any, keywords: Any, callback: js.Function1[/* error */ js.Error, Unit]): Unit
+    
+    /** Sorts the currently open mailbox for messages using given sortCriteria. This method first searches the mailbox for messages that match the given searching criteria and then sorts by given sort criteria. (This is a specification of RFC 5256. )  */
+    def sort(
+      sortCriteria: js.Array[SortCriteria],
+      searchCriteria: js.Array[Any],
+      callback: js.Function2[/* error */ js.Error, /* uids */ js.Array[Double], Unit]
+    ): Unit
   }
   object MessageFunctions {
     
     inline def apply(
-      addFlags: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit,
-      addKeywords: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit,
-      copy: (js.Any, String, js.Function1[/* error */ Error, Unit]) => Unit,
-      delFlags: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit,
-      delKeywords: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit,
-      fetch: (js.Any, FetchOptions) => ImapFetch,
-      move: (js.Any, String, js.Function1[/* error */ Error, Unit]) => Unit,
-      search: (js.Array[js.Any], js.Function2[/* error */ Error, /* uids */ js.Array[Double], Unit]) => Unit,
+      addFlags: (Any, Any, js.Function1[/* error */ js.Error, Unit]) => Unit,
+      addKeywords: (Any, Any, js.Function1[/* error */ js.Error, Unit]) => Unit,
+      copy: (Any, String, js.Function1[/* error */ js.Error, Unit]) => Unit,
+      delFlags: (Any, Any, js.Function1[/* error */ js.Error, Unit]) => Unit,
+      delKeywords: (Any, Any, js.Function1[/* error */ js.Error, Unit]) => Unit,
+      fetch: (Any, FetchOptions) => ImapFetch,
+      move: (Any, String, js.Function1[/* error */ js.Error, Unit]) => Unit,
+      search: (js.Array[Any], js.Function2[/* error */ js.Error, /* uids */ js.Array[Double], Unit]) => Unit,
       serverSupports: String => Boolean,
-      setFlags: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit,
-      setKeywords: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit
+      setFlags: (Any, Any, js.Function1[/* error */ js.Error, Unit]) => Unit,
+      setKeywords: (Any, Any, js.Function1[/* error */ js.Error, Unit]) => Unit,
+      sort: (js.Array[SortCriteria], js.Array[Any], js.Function2[/* error */ js.Error, /* uids */ js.Array[Double], Unit]) => Unit
     ): MessageFunctions = {
-      val __obj = js.Dynamic.literal(addFlags = js.Any.fromFunction3(addFlags), addKeywords = js.Any.fromFunction3(addKeywords), copy = js.Any.fromFunction3(copy), delFlags = js.Any.fromFunction3(delFlags), delKeywords = js.Any.fromFunction3(delKeywords), fetch = js.Any.fromFunction2(fetch), move = js.Any.fromFunction3(move), search = js.Any.fromFunction2(search), serverSupports = js.Any.fromFunction1(serverSupports), setFlags = js.Any.fromFunction3(setFlags), setKeywords = js.Any.fromFunction3(setKeywords))
+      val __obj = js.Dynamic.literal(addFlags = js.Any.fromFunction3(addFlags), addKeywords = js.Any.fromFunction3(addKeywords), copy = js.Any.fromFunction3(copy), delFlags = js.Any.fromFunction3(delFlags), delKeywords = js.Any.fromFunction3(delKeywords), fetch = js.Any.fromFunction2(fetch), move = js.Any.fromFunction3(move), search = js.Any.fromFunction2(search), serverSupports = js.Any.fromFunction1(serverSupports), setFlags = js.Any.fromFunction3(setFlags), setKeywords = js.Any.fromFunction3(setKeywords), sort = js.Any.fromFunction3(sort))
       __obj.asInstanceOf[MessageFunctions]
     }
     
     extension [Self <: MessageFunctions](x: Self) {
       
-      inline def setAddFlags(value: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "addFlags", js.Any.fromFunction3(value))
+      inline def setAddFlags(value: (Any, Any, js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "addFlags", js.Any.fromFunction3(value))
       
-      inline def setAddKeywords(value: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "addKeywords", js.Any.fromFunction3(value))
+      inline def setAddKeywords(value: (Any, Any, js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "addKeywords", js.Any.fromFunction3(value))
       
-      inline def setCopy(value: (js.Any, String, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction3(value))
+      inline def setCopy(value: (Any, String, js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction3(value))
       
-      inline def setDelFlags(value: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "delFlags", js.Any.fromFunction3(value))
+      inline def setDelFlags(value: (Any, Any, js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "delFlags", js.Any.fromFunction3(value))
       
-      inline def setDelKeywords(value: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "delKeywords", js.Any.fromFunction3(value))
+      inline def setDelKeywords(value: (Any, Any, js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "delKeywords", js.Any.fromFunction3(value))
       
-      inline def setFetch(value: (js.Any, FetchOptions) => ImapFetch): Self = StObject.set(x, "fetch", js.Any.fromFunction2(value))
+      inline def setFetch(value: (Any, FetchOptions) => ImapFetch): Self = StObject.set(x, "fetch", js.Any.fromFunction2(value))
       
-      inline def setMove(value: (js.Any, String, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
+      inline def setMove(value: (Any, String, js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
       
       inline def setSearch(
-        value: (js.Array[js.Any], js.Function2[/* error */ Error, /* uids */ js.Array[Double], Unit]) => Unit
+        value: (js.Array[Any], js.Function2[/* error */ js.Error, /* uids */ js.Array[Double], Unit]) => Unit
       ): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
       
       inline def setServerSupports(value: String => Boolean): Self = StObject.set(x, "serverSupports", js.Any.fromFunction1(value))
       
-      inline def setSetFlags(value: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "setFlags", js.Any.fromFunction3(value))
+      inline def setSetFlags(value: (Any, Any, js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "setFlags", js.Any.fromFunction3(value))
       
-      inline def setSetKeywords(value: (js.Any, js.Any, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "setKeywords", js.Any.fromFunction3(value))
+      inline def setSetKeywords(value: (Any, Any, js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "setKeywords", js.Any.fromFunction3(value))
+      
+      inline def setSort(
+        value: (js.Array[SortCriteria], js.Array[Any], js.Function2[/* error */ js.Error, /* uids */ js.Array[Double], Unit]) => Unit
+      ): Self = StObject.set(x, "sort", js.Any.fromFunction3(value))
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.imap.imapStrings.ARRIVAL
+    - typings.imap.imapStrings.`-ARRIVAL`
+    - typings.imap.imapStrings.CC
+    - typings.imap.imapStrings.`-CC`
+    - typings.imap.imapStrings.DATE
+    - typings.imap.imapStrings.`-DATE`
+    - typings.imap.imapStrings.FROM
+    - typings.imap.imapStrings.`-FROM`
+    - typings.imap.imapStrings.SIZE
+    - typings.imap.imapStrings.`-SIZE`
+    - typings.imap.imapStrings.SUBJECT
+    - typings.imap.imapStrings.`-SUBJECT`
+    - typings.imap.imapStrings.TO
+    - typings.imap.imapStrings.`-TO`
+  */
+  trait SortCriteria extends StObject
+  object SortCriteria {
+    
+    inline def `-ARRIVAL`: typings.imap.imapStrings.`-ARRIVAL` = "-ARRIVAL".asInstanceOf[typings.imap.imapStrings.`-ARRIVAL`]
+    
+    inline def `-CC`: typings.imap.imapStrings.`-CC` = "-CC".asInstanceOf[typings.imap.imapStrings.`-CC`]
+    
+    inline def `-DATE`: typings.imap.imapStrings.`-DATE` = "-DATE".asInstanceOf[typings.imap.imapStrings.`-DATE`]
+    
+    inline def `-FROM`: typings.imap.imapStrings.`-FROM` = "-FROM".asInstanceOf[typings.imap.imapStrings.`-FROM`]
+    
+    inline def `-SIZE`: typings.imap.imapStrings.`-SIZE` = "-SIZE".asInstanceOf[typings.imap.imapStrings.`-SIZE`]
+    
+    inline def `-SUBJECT`: typings.imap.imapStrings.`-SUBJECT` = "-SUBJECT".asInstanceOf[typings.imap.imapStrings.`-SUBJECT`]
+    
+    inline def `-TO`: typings.imap.imapStrings.`-TO` = "-TO".asInstanceOf[typings.imap.imapStrings.`-TO`]
+    
+    inline def ARRIVAL: typings.imap.imapStrings.ARRIVAL = "ARRIVAL".asInstanceOf[typings.imap.imapStrings.ARRIVAL]
+    
+    inline def CC: typings.imap.imapStrings.CC = "CC".asInstanceOf[typings.imap.imapStrings.CC]
+    
+    inline def DATE: typings.imap.imapStrings.DATE = "DATE".asInstanceOf[typings.imap.imapStrings.DATE]
+    
+    inline def FROM: typings.imap.imapStrings.FROM = "FROM".asInstanceOf[typings.imap.imapStrings.FROM]
+    
+    inline def SIZE: typings.imap.imapStrings.SIZE = "SIZE".asInstanceOf[typings.imap.imapStrings.SIZE]
+    
+    inline def SUBJECT: typings.imap.imapStrings.SUBJECT = "SUBJECT".asInstanceOf[typings.imap.imapStrings.SUBJECT]
+    
+    inline def TO: typings.imap.imapStrings.TO = "TO".asInstanceOf[typings.imap.imapStrings.TO]
   }
 }

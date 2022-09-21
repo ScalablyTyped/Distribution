@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OutlookBarShortcuts extends StObject {
   
-  def Add(Target: js.Any, Name: String): OutlookBarShortcut = js.native
-  def Add(Target: js.Any, Name: String, Index: js.Any): OutlookBarShortcut = js.native
+  def Add(Target: Any, Name: String): OutlookBarShortcut = js.native
+  def Add(Target: Any, Name: String, Index: Any): OutlookBarShortcut = js.native
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -16,14 +16,14 @@ trait OutlookBarShortcuts extends StObject {
   
   val Count: Double = js.native
   
-  def Item(Index: js.Any): OutlookBarShortcut = js.native
+  def Item(Index: Any): OutlookBarShortcut = js.native
   
   /* private */ @JSName("Outlook.OutlookBarShortcuts_typekey")
   var OutlookDotOutlookBarShortcuts_typekey: OutlookBarShortcuts = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def Remove(Index: js.Any): Unit = js.native
+  def Remove(Index: Any): Unit = js.native
   
   val Session: NameSpace = js.native
 }

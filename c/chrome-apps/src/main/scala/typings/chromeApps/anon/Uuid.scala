@@ -22,7 +22,7 @@ object Uuid {
     
     inline def setData(value: js.Array[integer]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: integer*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: integer*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "title-case" : "3.0.2"
+      "title-case" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "title-case" : "3.0.2"
+      "title-case" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

@@ -10,14 +10,13 @@ object truncatedFormatMod {
   
   @JSImport("@blueprintjs/table/lib/esm/cell/formats/truncatedFormat", "TruncatedFormat")
   @js.native
-  class TruncatedFormat protected ()
-    extends PureComponent[ITruncatedFormatProps, ITruncatedFormatState, js.Any] {
-    def this(props: ITruncatedFormatProps) = this()
+  open class TruncatedFormat protected () extends PureComponent[TruncatedFormatProps, ITruncatedFormatState, Any] {
+    def this(props: TruncatedFormatProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ITruncatedFormatProps, context: js.Any) = this()
+    def this(props: TruncatedFormatProps, context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MTruncatedFormat(): Unit = js.native
@@ -25,19 +24,19 @@ object truncatedFormatMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MTruncatedFormat(): Unit = js.native
     
-    /* private */ var contentDiv: js.Any = js.native
+    /* private */ var contentDiv: Any = js.native
     
-    /* private */ var handleContentDivRef: js.Any = js.native
+    /* private */ var handleContentDivRef: Any = js.native
     
-    /* private */ var handlePopoverClose: js.Any = js.native
+    /* private */ var handlePopoverClose: Any = js.native
     
-    /* private */ var handlePopoverOpen: js.Any = js.native
+    /* private */ var handlePopoverOpen: Any = js.native
     
-    /* private */ var renderPopover: js.Any = js.native
+    /* private */ var renderPopover: Any = js.native
     
-    /* private */ var setTruncationState: js.Any = js.native
+    /* private */ var setTruncationState: Any = js.native
     
-    /* private */ var shouldShowPopover: js.Any = js.native
+    /* private */ var shouldShowPopover: Any = js.native
   }
   /* static members */
   object TruncatedFormat {
@@ -48,8 +47,8 @@ object truncatedFormatMod {
     
     @JSImport("@blueprintjs/table/lib/esm/cell/formats/truncatedFormat", "TruncatedFormat.defaultProps")
     @js.native
-    def defaultProps: ITruncatedFormatProps = js.native
-    inline def defaultProps_=(x: ITruncatedFormatProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: TruncatedFormatProps = js.native
+    inline def defaultProps_=(x: TruncatedFormatProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/cell/formats/truncatedFormat", "TruncatedFormat.displayName")
     @js.native
@@ -97,6 +96,7 @@ object truncatedFormatMod {
       * Approximate character width (in pixels), used to determine whether to display the popover in approx truncation mode.
       * The default value should work for normal table styles,
       * but should be changed as necessary if the fonts or styles are changed significantly.
+      *
       * @default 8
       */
     var approximateCharWidth: Double
@@ -104,6 +104,7 @@ object truncatedFormatMod {
     /**
       * Approximate line height (in pixels), used to determine whether to display the popover in approx truncation mode.
       * The default value should work for normal table styles, but should be changed if the fonts or styles are changed significantly.
+      *
       * @default 18
       */
     var approximateLineHeight: Double
@@ -112,6 +113,7 @@ object truncatedFormatMod {
       * Total horizonal cell padding (both sides), used to determine whether to display the popover in approx truncation mode.
       * The default value should work for normal table styles,
       * but should be changed as necessary if the fonts or styles are changed significantly.
+      *
       * @default 20
       */
     var cellHorizontalPadding: Double
@@ -122,6 +124,7 @@ object truncatedFormatMod {
       * after the math calculates how many lines the text is expected to take.
       * The default value should work for normal table styles,
       * but should be changed as necessary if the fonts or styles are changed significantly.
+      *
       * @default 0
       */
     var numBufferLines: Double
@@ -160,6 +163,7 @@ object truncatedFormatMod {
       * Should the component keep track of the truncation state of the string content. If true, the
       * value of `truncateLength` is ignored. When combined with a `showPopover` value of
       * `WHEN_TRUNCATED`, popovers will only render when necessary.
+      *
       * @default false;
       */
     var detectTruncation: js.UndefOr[Boolean] = js.undefined
@@ -185,6 +189,7 @@ object truncatedFormatMod {
     /**
       * Sets the popover content style to `white-space: pre` if `true` or
       * `white-space: normal` if `false`.
+      *
       * @default false
       */
     var preformatted: js.UndefOr[Boolean] = js.undefined
@@ -198,6 +203,7 @@ object truncatedFormatMod {
       * - `WHEN_TRUNCATED`: show the popover only when the text is truncated (default).
       * - `WHEN_TRUNCATED_APPROX`: show the popover only when the text is trunctated, but use
       *   a formula to calculate this based on text length, which is faster but less accurate.
+      *
       * @default WHEN_TRUNCATED
       */
     var showPopover: js.UndefOr[TruncatedPopoverMode] = js.undefined
@@ -206,12 +212,14 @@ object truncatedFormatMod {
       * Number of characters that are displayed before being truncated and appended with the
       * `truncationSuffix` prop. A value of 0 will disable truncation. This prop is ignored if
       * `detectTruncation` is `true`.
+      *
       * @default 2000
       */
     var truncateLength: js.UndefOr[Double] = js.undefined
     
     /**
       * The string that is appended to the display string if it is truncated.
+      *
       * @default "..."
       */
     var truncationSuffix: js.UndefOr[String] = js.undefined
@@ -287,4 +295,6 @@ object truncatedFormatMod {
       inline def setIsTruncatedUndefined: Self = StObject.set(x, "isTruncated", js.undefined)
     }
   }
+  
+  type TruncatedFormatProps = ITruncatedFormatProps
 }

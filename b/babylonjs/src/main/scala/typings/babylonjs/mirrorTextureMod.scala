@@ -1,7 +1,7 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.Height
 import typings.babylonjs.anon.Ratio
-import typings.babylonjs.anon.Width
 import typings.babylonjs.mathPlaneMod.Plane
 import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.sceneMod.Scene
@@ -13,7 +13,7 @@ object mirrorTextureMod {
   
   @JSImport("babylonjs/Materials/Textures/mirrorTexture", "MirrorTexture")
   @js.native
-  class MirrorTexture protected () extends RenderTargetTexture {
+  open class MirrorTexture protected () extends RenderTargetTexture {
     /**
       * Instantiates a Mirror Texture.
       * Mirror texture can be used to simulate the view from a mirror in a scene.
@@ -29,342 +29,43 @@ object mirrorTextureMod {
       * @param samplingMode
       * @param generateDepthBuffer
       */
-    def this(name: String, size: Double, scene: Scene) = this()
-    def this(name: String, size: Ratio, scene: Scene) = this()
-    def this(name: String, size: Width, scene: Scene) = this()
-    def this(name: String, size: Double, scene: Scene, generateMipMaps: Boolean) = this()
-    def this(name: String, size: Ratio, scene: Scene, generateMipMaps: Boolean) = this()
-    def this(name: String, size: Width, scene: Scene, generateMipMaps: Boolean) = this()
-    def this(name: String, size: Double, scene: Scene, generateMipMaps: Boolean, `type`: Double) = this()
-    def this(name: String, size: Double, scene: Scene, generateMipMaps: Unit, `type`: Double) = this()
-    def this(name: String, size: Ratio, scene: Scene, generateMipMaps: Boolean, `type`: Double) = this()
-    def this(name: String, size: Ratio, scene: Scene, generateMipMaps: Unit, `type`: Double) = this()
-    def this(name: String, size: Width, scene: Scene, generateMipMaps: Boolean, `type`: Double) = this()
-    def this(name: String, size: Width, scene: Scene, generateMipMaps: Unit, `type`: Double) = this()
     def this(
       name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Double,
-      samplingMode: Double
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Unit,
-      samplingMode: Double
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Double,
-      samplingMode: Double
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Unit,
-      samplingMode: Double
-    ) = this()
-    def this(
-      name: String,
-      size: Ratio,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Double,
-      samplingMode: Double
-    ) = this()
-    def this(
-      name: String,
-      size: Ratio,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Unit,
-      samplingMode: Double
-    ) = this()
-    def this(
-      name: String,
-      size: Ratio,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Double,
-      samplingMode: Double
-    ) = this()
-    def this(name: String, size: Ratio, scene: Scene, generateMipMaps: Unit, `type`: Unit, samplingMode: Double) = this()
-    def this(
-      name: String,
-      size: Width,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Double,
-      samplingMode: Double
-    ) = this()
-    def this(
-      name: String,
-      size: Width,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Unit,
-      samplingMode: Double
-    ) = this()
-    def this(
-      name: String,
-      size: Width,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Double,
-      samplingMode: Double
-    ) = this()
-    def this(name: String, size: Width, scene: Scene, generateMipMaps: Unit, `type`: Unit, samplingMode: Double) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Double,
-      samplingMode: Double,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Double,
-      samplingMode: Unit,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Unit,
-      samplingMode: Double,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Unit,
-      samplingMode: Unit,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Double,
-      samplingMode: Double,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Double,
-      samplingMode: Unit,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Unit,
-      samplingMode: Double,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Double,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Unit,
-      samplingMode: Unit,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Ratio,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Double,
-      samplingMode: Double,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Ratio,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Double,
-      samplingMode: Unit,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Ratio,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Unit,
-      samplingMode: Double,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Ratio,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Unit,
-      samplingMode: Unit,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Ratio,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Double,
-      samplingMode: Double,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Ratio,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Double,
-      samplingMode: Unit,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Ratio,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Unit,
-      samplingMode: Double,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Ratio,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Unit,
-      samplingMode: Unit,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Width,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Double,
-      samplingMode: Double,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Width,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Double,
-      samplingMode: Unit,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Width,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Unit,
-      samplingMode: Double,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Width,
-      scene: Scene,
-      generateMipMaps: Boolean,
-      `type`: Unit,
-      samplingMode: Unit,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Width,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Double,
-      samplingMode: Double,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Width,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Double,
-      samplingMode: Unit,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Width,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Unit,
-      samplingMode: Double,
-      generateDepthBuffer: Boolean
-    ) = this()
-    def this(
-      name: String,
-      size: Width,
-      scene: Scene,
-      generateMipMaps: Unit,
-      `type`: Unit,
-      samplingMode: Unit,
-      generateDepthBuffer: Boolean
+      size: Double | Height | Ratio,
+      scene: js.UndefOr[Scene],
+      generateMipMaps: js.UndefOr[Boolean],
+      `type`: js.UndefOr[Double],
+      samplingMode: js.UndefOr[Double],
+      generateDepthBuffer: js.UndefOr[Boolean]
     ) = this()
     
-    /* private */ var _adaptiveBlurKernel: js.Any = js.native
+    /* private */ var _adaptiveBlurKernel: Any = js.native
     
-    /* private */ var _autoComputeBlurKernel: js.Any = js.native
+    /* private */ var _autoComputeBlurKernel: Any = js.native
     
-    /* private */ var _blurKernelX: js.Any = js.native
+    /* private */ var _blurKernelX: Any = js.native
     
-    /* private */ var _blurKernelY: js.Any = js.native
+    /* private */ var _blurKernelY: Any = js.native
     
-    /* private */ var _blurRatio: js.Any = js.native
+    /* private */ var _blurRatio: Any = js.native
     
-    /* private */ var _blurX: js.Any = js.native
+    /* private */ var _blurX: Any = js.native
     
-    /* private */ var _blurY: js.Any = js.native
+    /* private */ var _blurY: Any = js.native
     
-    /* private */ var _imageProcessingConfigChangeObserver: js.Any = js.native
+    /* private */ var _currentSceneUBO: Any = js.native
     
-    /* private */ var _mirrorMatrix: js.Any = js.native
+    /* private */ var _imageProcessingConfigChangeObserver: Any = js.native
     
-    /* private */ var _preparePostProcesses: js.Any = js.native
+    /* private */ var _mirrorMatrix: Any = js.native
     
-    /* private */ var _savedViewMatrix: js.Any = js.native
+    /* private */ var _preparePostProcesses: Any = js.native
     
-    /* private */ var _transformMatrix: js.Any = js.native
+    /* private */ var _sceneUBO: Any = js.native
     
-    /* private */ var _updateGammaSpace: js.Any = js.native
+    /* private */ var _transformMatrix: Any = js.native
+    
+    /* private */ var _updateGammaSpace: Any = js.native
     
     /**
       * Define the adaptive blur kernel used to blur the reflection if needed.
@@ -404,7 +105,5 @@ object mirrorTextureMod {
       * @see https://doc.babylonjs.com/how_to/reflect#mirrors
       */
     var mirrorPlane: Plane = js.native
-    
-    /* private */ var scene: js.Any = js.native
   }
 }

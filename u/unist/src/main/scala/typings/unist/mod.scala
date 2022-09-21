@@ -7,36 +7,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  type Data = StringDictionary[js.Any]
+  type Data = StringDictionary[Any]
   
-  trait Literal
+  trait Literal[Value, TData /* <: js.Object */]
     extends StObject
-       with Node {
+       with Node[TData] {
     
-    var value: js.Any
+    var value: Value
   }
   object Literal {
     
-    inline def apply(`type`: String, value: js.Any): Literal = {
+    inline def apply[Value, TData /* <: js.Object */](`type`: String, value: Value): Literal[Value, TData] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Literal]
+      __obj.asInstanceOf[Literal[Value, TData]]
     }
     
-    extension [Self <: Literal](x: Self) {
+    extension [Self <: Literal[?, ?], Value, TData /* <: js.Object */](x: Self & (Literal[Value, TData])) {
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  trait Node
-    extends StObject
-       with /* key */ StringDictionary[js.Any] {
+  trait Node[TData /* <: js.Object */] extends StObject {
     
     /**
       * Information from the ecosystem.
       */
-    var data: js.UndefOr[Data] = js.undefined
+    var data: js.UndefOr[TData] = js.undefined
     
     /**
       * Location of a node in a source document.
@@ -51,15 +49,15 @@ object mod {
   }
   object Node {
     
-    inline def apply(`type`: String): Node = {
+    inline def apply[TData /* <: js.Object */](`type`: String): Node[TData] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Node]
+      __obj.asInstanceOf[Node[TData]]
     }
     
-    extension [Self <: Node](x: Self) {
+    extension [Self <: Node[?], TData /* <: js.Object */](x: Self & Node[TData]) {
       
-      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -71,28 +69,30 @@ object mod {
     }
   }
   
-  trait Parent
+  type NodeData[TNode /* <: Node[js.Object] */] = Any
+  
+  trait Parent[ChildNode /* <: Node[js.Object] */, TData /* <: js.Object */]
     extends StObject
-       with Node {
+       with Node[TData] {
     
     /**
       * List representing the children of a node.
       */
-    var children: js.Array[Node]
+    var children: js.Array[ChildNode]
   }
   object Parent {
     
-    inline def apply(children: js.Array[Node], `type`: String): Parent = {
+    inline def apply[ChildNode /* <: Node[js.Object] */, TData /* <: js.Object */](children: js.Array[ChildNode], `type`: String): Parent[ChildNode, TData] = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Parent]
+      __obj.asInstanceOf[Parent[ChildNode, TData]]
     }
     
-    extension [Self <: Parent](x: Self) {
+    extension [Self <: Parent[?, ?], ChildNode /* <: Node[js.Object] */, TData /* <: js.Object */](x: Self & (Parent[ChildNode, TData])) {
       
-      inline def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ChildNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ChildNode*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
   
@@ -165,7 +165,7 @@ object mod {
       
       inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      inline def setIndentVarargs(value: Double*): Self = StObject.set(x, "indent", js.Array(value :_*))
+      inline def setIndentVarargs(value: Double*): Self = StObject.set(x, "indent", js.Array(value*))
       
       inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }

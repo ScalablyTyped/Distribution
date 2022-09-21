@@ -9,7 +9,7 @@ object randomIdGeneratorMod {
   
   @JSImport("@opentelemetry/core/build/src/platform/browser/RandomIdGenerator", "RandomIdGenerator")
   @js.native
-  class RandomIdGenerator ()
+  open class RandomIdGenerator ()
     extends StObject
        with IdGenerator {
     

@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.JsGrid.Style")
 @js.native
-class Style ()
+open class Style ()
   extends StObject
      with typings.sharepoint.SP.JsGrid.Style
 object Style {
@@ -30,42 +30,40 @@ object Style {
   /* static member */
   @JSGlobal("SP.JsGrid.Style.ApplyCellStyle")
   @js.native
-  def ApplyCellStyle: js.Function2[/* td */ HTMLTableCellElement, /* style */ js.Any, Unit] = js.native
-  inline def ApplyCellStyle_=(x: js.Function2[/* td */ HTMLTableCellElement, /* style */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplyCellStyle")(x.asInstanceOf[js.Any])
+  def ApplyCellStyle: js.Function2[/* td */ HTMLTableCellElement, /* style */ Any, Unit] = js.native
+  inline def ApplyCellStyle_=(x: js.Function2[/* td */ HTMLTableCellElement, /* style */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplyCellStyle")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.JsGrid.Style.ApplyColumnContextMenuStyle")
   @js.native
-  def ApplyColumnContextMenuStyle: js.Function2[/* domObj */ HTMLElement, /* style */ js.Any, Unit] = js.native
-  inline def ApplyColumnContextMenuStyle_=(x: js.Function2[/* domObj */ HTMLElement, /* style */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplyColumnContextMenuStyle")(x.asInstanceOf[js.Any])
+  def ApplyColumnContextMenuStyle: js.Function2[/* domObj */ HTMLElement, /* style */ Any, Unit] = js.native
+  inline def ApplyColumnContextMenuStyle_=(x: js.Function2[/* domObj */ HTMLElement, /* style */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplyColumnContextMenuStyle")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.JsGrid.Style.ApplyCornerHeaderBorderStyle")
   @js.native
-  def ApplyCornerHeaderBorderStyle: js.Function3[/* domObj */ HTMLElement, /* colStyle */ js.Any, /* rowStyle */ js.Any, Unit] = js.native
-  inline def ApplyCornerHeaderBorderStyle_=(x: js.Function3[/* domObj */ HTMLElement, /* colStyle */ js.Any, /* rowStyle */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplyCornerHeaderBorderStyle")(x.asInstanceOf[js.Any])
+  def ApplyCornerHeaderBorderStyle: js.Function3[/* domObj */ HTMLElement, /* colStyle */ Any, /* rowStyle */ Any, Unit] = js.native
+  inline def ApplyCornerHeaderBorderStyle_=(x: js.Function3[/* domObj */ HTMLElement, /* colStyle */ Any, /* rowStyle */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplyCornerHeaderBorderStyle")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.JsGrid.Style.ApplyHeaderInnerBorderStyle")
   @js.native
-  def ApplyHeaderInnerBorderStyle: js.Function3[/* domObj */ HTMLElement, /* bIsRowHeader */ js.Any, /* headerObject */ js.Any, Unit] = js.native
-  inline def ApplyHeaderInnerBorderStyle_=(
-    x: js.Function3[/* domObj */ HTMLElement, /* bIsRowHeader */ js.Any, /* headerObject */ js.Any, Unit]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplyHeaderInnerBorderStyle")(x.asInstanceOf[js.Any])
+  def ApplyHeaderInnerBorderStyle: js.Function3[/* domObj */ HTMLElement, /* bIsRowHeader */ Any, /* headerObject */ Any, Unit] = js.native
+  inline def ApplyHeaderInnerBorderStyle_=(x: js.Function3[/* domObj */ HTMLElement, /* bIsRowHeader */ Any, /* headerObject */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplyHeaderInnerBorderStyle")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.JsGrid.Style.ApplyRowHeaderStyle")
   @js.native
   def ApplyRowHeaderStyle: js.Function3[
     /* domObj */ HTMLElement, 
-    /* style */ js.Any, 
+    /* style */ Any, 
     /* fnGetHeaderSibling */ js.Function2[/* elem */ HTMLElement, /* previousElem */ Boolean, Unit], 
     Unit
   ] = js.native
   inline def ApplyRowHeaderStyle_=(
     x: js.Function3[
       /* domObj */ HTMLElement, 
-      /* style */ js.Any, 
+      /* style */ Any, 
       /* fnGetHeaderSibling */ js.Function2[/* elem */ HTMLElement, /* previousElem */ Boolean, Unit], 
       Unit
     ]
@@ -74,13 +72,13 @@ object Style {
   /* static member */
   @JSGlobal("SP.JsGrid.Style.ApplySplitterStyle")
   @js.native
-  def ApplySplitterStyle: js.Function2[/* domObj */ HTMLElement, /* style */ js.Any, Unit] = js.native
-  inline def ApplySplitterStyle_=(x: js.Function2[/* domObj */ HTMLElement, /* style */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplySplitterStyle")(x.asInstanceOf[js.Any])
+  def ApplySplitterStyle: js.Function2[/* domObj */ HTMLElement, /* style */ Any, Unit] = js.native
+  inline def ApplySplitterStyle_=(x: js.Function2[/* domObj */ HTMLElement, /* style */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplySplitterStyle")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.JsGrid.Style.CreateStyle")
   @js.native
-  def CreateStyle: js.Function2[/* styleType */ IStyleType, /* styleProps */ js.Any, js.Any] = js.native
+  def CreateStyle: js.Function2[/* styleType */ IStyleType, /* styleProps */ Any, Any] = js.native
   
   /* static member */
   @JSGlobal("SP.JsGrid.Style.CreateStyleFromCss")
@@ -88,21 +86,21 @@ object Style {
   def CreateStyleFromCss: js.Function4[
     /* styleType */ IStyleType, 
     /* cssStyleName */ String, 
-    /* optExistingStyle */ js.UndefOr[js.Any], 
-    /* optClassId */ js.UndefOr[js.Any], 
-    js.Any
+    /* optExistingStyle */ js.UndefOr[Any], 
+    /* optClassId */ js.UndefOr[Any], 
+    Any
   ] = js.native
   inline def CreateStyleFromCss_=(
     x: js.Function4[
       /* styleType */ IStyleType, 
       /* cssStyleName */ String, 
-      /* optExistingStyle */ js.UndefOr[js.Any], 
-      /* optClassId */ js.UndefOr[js.Any], 
-      js.Any
+      /* optExistingStyle */ js.UndefOr[Any], 
+      /* optClassId */ js.UndefOr[Any], 
+      Any
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateStyleFromCss")(x.asInstanceOf[js.Any])
   
-  inline def CreateStyle_=(x: js.Function2[/* styleType */ IStyleType, /* styleProps */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateStyle")(x.asInstanceOf[js.Any])
+  inline def CreateStyle_=(x: js.Function2[/* styleType */ IStyleType, /* styleProps */ Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateStyle")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.JsGrid.Style.GetCellStyleDefaultBackgroundColor")
@@ -125,14 +123,14 @@ object Style {
   /* static member */
   @JSGlobal("SP.JsGrid.Style.MergeCellStyles")
   @js.native
-  def MergeCellStyles: js.Function2[/* majorStyle */ js.Any, /* minorStyle */ js.Any, js.Any] = js.native
-  inline def MergeCellStyles_=(x: js.Function2[/* majorStyle */ js.Any, /* minorStyle */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MergeCellStyles")(x.asInstanceOf[js.Any])
+  def MergeCellStyles: js.Function2[/* majorStyle */ Any, /* minorStyle */ Any, Any] = js.native
+  inline def MergeCellStyles_=(x: js.Function2[/* majorStyle */ Any, /* minorStyle */ Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MergeCellStyles")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.JsGrid.Style.SetRTL")
   @js.native
-  def SetRTL: js.Function1[/* rtlObject */ js.Any, Unit] = js.native
-  inline def SetRTL_=(x: js.Function1[/* rtlObject */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SetRTL")(x.asInstanceOf[js.Any])
+  def SetRTL: js.Function1[/* rtlObject */ Any, Unit] = js.native
+  inline def SetRTL_=(x: js.Function1[/* rtlObject */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SetRTL")(x.asInstanceOf[js.Any])
   
   /* static member */
   object Type {

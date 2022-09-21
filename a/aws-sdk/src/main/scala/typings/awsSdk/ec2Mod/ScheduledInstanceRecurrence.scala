@@ -52,7 +52,7 @@ object ScheduledInstanceRecurrence {
     
     inline def setOccurrenceDaySetUndefined: Self = StObject.set(x, "OccurrenceDaySet", js.undefined)
     
-    inline def setOccurrenceDaySetVarargs(value: Integer*): Self = StObject.set(x, "OccurrenceDaySet", js.Array(value :_*))
+    inline def setOccurrenceDaySetVarargs(value: Integer*): Self = StObject.set(x, "OccurrenceDaySet", js.Array(value*))
     
     inline def setOccurrenceRelativeToEnd(value: Boolean): Self = StObject.set(x, "OccurrenceRelativeToEnd", value.asInstanceOf[js.Any])
     

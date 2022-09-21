@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.UserIdentity")
 @js.native
-class UserIdentity () extends StObject {
+open class UserIdentity () extends StObject {
   def this(args: LongIdentifier) = this()
   
   var longIdentifier: js.UndefOr[Double] = js.native

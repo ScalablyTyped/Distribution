@@ -24,5 +24,5 @@ Instantiable0[RasterColormapRenderer]
     */
   def createFromColormap(colormap: js.Array[js.Array[Double]]): RasterColormapRenderer = js.native
   
-  def fromJSON(json: js.Any): RasterColormapRenderer = js.native
+  def fromJSON(json: Any): RasterColormapRenderer = js.native
 }

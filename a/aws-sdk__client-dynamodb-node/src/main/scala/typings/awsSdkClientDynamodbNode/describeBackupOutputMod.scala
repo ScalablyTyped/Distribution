@@ -8,5 +8,5 @@ object describeBackupOutputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/DescribeBackupOutput", "DescribeBackupOutput")
   @js.native
-  val DescribeBackupOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DescribeBackupOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

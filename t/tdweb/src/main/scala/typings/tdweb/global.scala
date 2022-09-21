@@ -30,7 +30,7 @@ object global {
     */
   @JSGlobal("tdweb")
   @js.native
-  class tdweb protected () extends default {
+  open class tdweb protected () extends default {
     /**
       * Create TdClient.
       */

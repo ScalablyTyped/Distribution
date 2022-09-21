@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(results: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(results.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(results: Any): String = ^.asInstanceOf[js.Dynamic].apply(results.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("checkstyle-formatter", JSImport.Namespace)
   @js.native

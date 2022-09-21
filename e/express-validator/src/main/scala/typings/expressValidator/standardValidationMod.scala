@@ -12,21 +12,21 @@ object standardValidationMod {
   
   @JSImport("express-validator/src/context-items/standard-validation", "StandardValidation")
   @js.native
-  class StandardValidation protected ()
+  open class StandardValidation protected ()
     extends StObject
        with ContextItem {
     def this(validator: StandardValidator, negated: Boolean) = this()
-    def this(validator: StandardValidator, negated: Boolean, options: js.Array[js.Any]) = this()
+    def this(validator: StandardValidator, negated: Boolean, options: js.Array[Any]) = this()
     
-    var message: js.Any = js.native
+    var message: Any = js.native
     
-    /* private */ val negated: js.Any = js.native
+    /* private */ val negated: Any = js.native
     
-    /* private */ val options: js.Any = js.native
+    /* private */ val options: Any = js.native
     
     /* CompleteClass */
-    override def run(context: Context, value: js.Any, meta: Meta): js.Promise[Unit] = js.native
+    override def run(context: Context, value: Any, meta: Meta): js.Promise[Unit] = js.native
     
-    /* private */ val validator: js.Any = js.native
+    /* private */ val validator: Any = js.native
   }
 }

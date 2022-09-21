@@ -20,7 +20,7 @@ object selection {
       */
     @JSName("deselect")
     var deselect_ICellModel: js.UndefOr[
-        js.Function2[/* record */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* record */ js.UndefOr[Any], /* suppressEvent */ js.UndefOr[Any], Unit]
       ] = js.undefined
     
     /** [Config Option] (Boolean) */
@@ -44,9 +44,9 @@ object selection {
     @JSName("select")
     var select_ICellModel: js.UndefOr[
         js.Function3[
-          /* pos */ js.UndefOr[js.Any], 
-          /* keepExisting */ js.UndefOr[js.Any], 
-          /* suppressEvent */ js.UndefOr[js.Any], 
+          /* pos */ js.UndefOr[Any], 
+          /* keepExisting */ js.UndefOr[Any], 
+          /* suppressEvent */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -56,7 +56,7 @@ object selection {
       * @param suppressEvent Boolean True to suppress selection events
       */
     var setCurrentPosition: js.UndefOr[
-        js.Function2[/* position */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean], Unit]
+        js.Function2[/* position */ js.UndefOr[Any], /* suppressEvent */ js.UndefOr[Boolean], Unit]
       ] = js.undefined
   }
   object ICellModel {
@@ -68,7 +68,7 @@ object selection {
     
     extension [Self <: ICellModel](x: Self) {
       
-      inline def setDeselect(value: (/* record */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction2(value))
+      inline def setDeselect(value: (/* record */ js.UndefOr[Any], /* suppressEvent */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction2(value))
       
       inline def setDeselectUndefined: Self = StObject.set(x, "deselect", js.undefined)
       
@@ -89,12 +89,12 @@ object selection {
       inline def setPreventWrapUndefined: Self = StObject.set(x, "preventWrap", js.undefined)
       
       inline def setSelect(
-        value: (/* pos */ js.UndefOr[js.Any], /* keepExisting */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[js.Any]) => Unit
+        value: (/* pos */ js.UndefOr[Any], /* keepExisting */ js.UndefOr[Any], /* suppressEvent */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "select", js.Any.fromFunction3(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      inline def setSetCurrentPosition(value: (/* position */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setCurrentPosition", js.Any.fromFunction2(value))
+      inline def setSetCurrentPosition(value: (/* position */ js.UndefOr[Any], /* suppressEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setCurrentPosition", js.Any.fromFunction2(value))
       
       inline def setSetCurrentPositionUndefined: Self = StObject.set(x, "setCurrentPosition", js.undefined)
     }
@@ -114,7 +114,7 @@ object selection {
     var getHeaderConfig: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var injectCheckbox: js.UndefOr[js.Any] = js.undefined
+    var injectCheckbox: js.UndefOr[Any] = js.undefined
     
     /** [Method] Toggle between selecting all and deselecting all when clicking on a checkbox header
       * @param headerCt Object
@@ -123,9 +123,9 @@ object selection {
       */
     var onHeaderClick: js.UndefOr[
         js.Function3[
-          /* headerCt */ js.UndefOr[js.Any], 
-          /* header */ js.UndefOr[js.Any], 
-          /* e */ js.UndefOr[js.Any], 
+          /* headerCt */ js.UndefOr[Any], 
+          /* header */ js.UndefOr[Any], 
+          /* e */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -141,13 +141,13 @@ object selection {
       */
     var renderer: js.UndefOr[
         js.Function7[
-          /* value */ js.UndefOr[js.Any], 
-          /* metaData */ js.UndefOr[js.Any], 
-          /* record */ js.UndefOr[js.Any], 
-          /* rowIndex */ js.UndefOr[js.Any], 
-          /* colIndex */ js.UndefOr[js.Any], 
-          /* store */ js.UndefOr[js.Any], 
-          /* view */ js.UndefOr[js.Any], 
+          /* value */ js.UndefOr[Any], 
+          /* metaData */ js.UndefOr[Any], 
+          /* record */ js.UndefOr[Any], 
+          /* rowIndex */ js.UndefOr[Any], 
+          /* colIndex */ js.UndefOr[Any], 
+          /* store */ js.UndefOr[Any], 
+          /* view */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -176,18 +176,18 @@ object selection {
       
       inline def setGetHeaderConfigUndefined: Self = StObject.set(x, "getHeaderConfig", js.undefined)
       
-      inline def setInjectCheckbox(value: js.Any): Self = StObject.set(x, "injectCheckbox", value.asInstanceOf[js.Any])
+      inline def setInjectCheckbox(value: Any): Self = StObject.set(x, "injectCheckbox", value.asInstanceOf[js.Any])
       
       inline def setInjectCheckboxUndefined: Self = StObject.set(x, "injectCheckbox", js.undefined)
       
       inline def setOnHeaderClick(
-        value: (/* headerCt */ js.UndefOr[js.Any], /* header */ js.UndefOr[js.Any], /* e */ js.UndefOr[js.Any]) => Unit
+        value: (/* headerCt */ js.UndefOr[Any], /* header */ js.UndefOr[Any], /* e */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onHeaderClick", js.Any.fromFunction3(value))
       
       inline def setOnHeaderClickUndefined: Self = StObject.set(x, "onHeaderClick", js.undefined)
       
       inline def setRenderer(
-        value: (/* value */ js.UndefOr[js.Any], /* metaData */ js.UndefOr[js.Any], /* record */ js.UndefOr[js.Any], /* rowIndex */ js.UndefOr[js.Any], /* colIndex */ js.UndefOr[js.Any], /* store */ js.UndefOr[js.Any], /* view */ js.UndefOr[js.Any]) => Unit
+        value: (/* value */ js.UndefOr[Any], /* metaData */ js.UndefOr[Any], /* record */ js.UndefOr[Any], /* rowIndex */ js.UndefOr[Any], /* colIndex */ js.UndefOr[Any], /* store */ js.UndefOr[Any], /* view */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "renderer", js.Any.fromFunction7(value))
       
       inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
@@ -235,7 +235,7 @@ object selection {
       * @param initial Object
       */
     var bindStore: js.UndefOr[
-        (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], Unit])
+        (js.Function1[/* store */ js.UndefOr[Any], Unit]) | (js.Function2[/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any], Unit])
       ] = js.undefined
     
     /** [Method] Binds listeners for this component to the store
@@ -248,7 +248,7 @@ object selection {
       * @param suppressEvent Boolean True to not fire a deselect event
       */
     var deselect: js.UndefOr[
-        js.Function2[/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean], Unit]
+        js.Function2[/* records */ js.UndefOr[Any], /* suppressEvent */ js.UndefOr[Boolean], Unit]
       ] = js.undefined
     
     /** [Method] Deselects all records in the view
@@ -260,9 +260,7 @@ object selection {
       * @param startRow Ext.data.Model/Number The record or index of the first row in the range
       * @param endRow Ext.data.Model/Number The record or index of the last row in the range
       */
-    var deselectRange: js.UndefOr[
-        js.Function2[/* startRow */ js.UndefOr[js.Any], /* endRow */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var deselectRange: js.UndefOr[js.Function2[/* startRow */ js.UndefOr[Any], /* endRow */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Returns the count of selected records
       * @returns Number The number of selected records
@@ -292,7 +290,7 @@ object selection {
     /** [Method] Gets the listeners to bind to a new store
       * @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
       */
-    var getStoreListeners: js.UndefOr[js.Function0[js.Any] | (js.Function1[/* store */ js.UndefOr[IStore], js.Any])] = js.undefined
+    var getStoreListeners: js.UndefOr[js.Function0[Any] | (js.Function1[/* store */ js.UndefOr[IStore], Any])] = js.undefined
     
     /** [Method] Returns true if there are any a selected records
       * @returns Boolean
@@ -314,18 +312,16 @@ object selection {
       * @param to Ext.data.Model/Number The end of the range to check.
       * @returns Boolean
       */
-    var isRangeSelected: js.UndefOr[
-        js.Function2[/* from */ js.UndefOr[js.Any], /* to */ js.UndefOr[js.Any], Boolean]
-      ] = js.undefined
+    var isRangeSelected: js.UndefOr[js.Function2[/* from */ js.UndefOr[Any], /* to */ js.UndefOr[Any], Boolean]] = js.undefined
     
     /** [Method] Returns true if the specified row is selected
       * @param record Ext.data.Model/Number The record or index of the record to check
       * @returns Boolean
       */
-    var isSelected: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], Boolean]] = js.undefined
+    var isSelected: js.UndefOr[js.Function1[/* record */ js.UndefOr[Any], Boolean]] = js.undefined
     
     /** [Config Option] ("SINGLE"/"SIMPLE"/"MULTI") */
-    var mode: js.UndefOr[js.Any] = js.undefined
+    var mode: js.UndefOr[Any] = js.undefined
     
     /** [Method] Template method it is called when a new store is bound to the current instance
       * @param store Ext.data.AbstractStore The store being bound
@@ -349,7 +345,7 @@ object selection {
       */
     var select: js.UndefOr[
         js.Function3[
-          /* records */ js.UndefOr[js.Any], 
+          /* records */ js.UndefOr[Any], 
           /* keepExisting */ js.UndefOr[Boolean], 
           /* suppressEvent */ js.UndefOr[Boolean], 
           Unit
@@ -368,8 +364,8 @@ object selection {
       */
     var selectRange: js.UndefOr[
         js.Function3[
-          /* startRow */ js.UndefOr[js.Any], 
-          /* endRow */ js.UndefOr[js.Any], 
+          /* startRow */ js.UndefOr[Any], 
+          /* endRow */ js.UndefOr[Any], 
           /* keepExisting */ js.UndefOr[Boolean], 
           Unit
         ]
@@ -415,12 +411,12 @@ object selection {
       inline def setAllowDeselectUndefined: Self = StObject.set(x, "allowDeselect", js.undefined)
       
       inline def setBindStore(
-        value: (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], Unit])
+        value: (js.Function1[/* store */ js.UndefOr[Any], Unit]) | (js.Function2[/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any], Unit])
       ): Self = StObject.set(x, "bindStore", value.asInstanceOf[js.Any])
       
-      inline def setBindStoreFunction1(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
+      inline def setBindStoreFunction1(value: /* store */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
       
-      inline def setBindStoreFunction2(value: (/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction2(value))
+      inline def setBindStoreFunction2(value: (/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction2(value))
       
       inline def setBindStoreListeners(value: js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "bindStoreListeners", js.Any.fromFunction1(value))
       
@@ -428,13 +424,13 @@ object selection {
       
       inline def setBindStoreUndefined: Self = StObject.set(x, "bindStore", js.undefined)
       
-      inline def setDeselect(value: (/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction2(value))
+      inline def setDeselect(value: (/* records */ js.UndefOr[Any], /* suppressEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction2(value))
       
       inline def setDeselectAll(value: /* suppressEvent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "deselectAll", js.Any.fromFunction1(value))
       
       inline def setDeselectAllUndefined: Self = StObject.set(x, "deselectAll", js.undefined)
       
-      inline def setDeselectRange(value: (/* startRow */ js.UndefOr[js.Any], /* endRow */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "deselectRange", js.Any.fromFunction2(value))
+      inline def setDeselectRange(value: (/* startRow */ js.UndefOr[Any], /* endRow */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "deselectRange", js.Any.fromFunction2(value))
       
       inline def setDeselectRangeUndefined: Self = StObject.set(x, "deselectRange", js.undefined)
       
@@ -458,11 +454,11 @@ object selection {
       
       inline def setGetStore(value: () => IAbstractStore): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
       
-      inline def setGetStoreListeners(value: js.Function0[js.Any] | (js.Function1[/* store */ js.UndefOr[IStore], js.Any])): Self = StObject.set(x, "getStoreListeners", value.asInstanceOf[js.Any])
+      inline def setGetStoreListeners(value: js.Function0[Any] | (js.Function1[/* store */ js.UndefOr[IStore], Any])): Self = StObject.set(x, "getStoreListeners", value.asInstanceOf[js.Any])
       
-      inline def setGetStoreListenersFunction0(value: () => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
+      inline def setGetStoreListenersFunction0(value: () => Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
       
-      inline def setGetStoreListenersFunction1(value: /* store */ js.UndefOr[IStore] => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
+      inline def setGetStoreListenersFunction1(value: /* store */ js.UndefOr[IStore] => Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
       
       inline def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
       
@@ -480,15 +476,15 @@ object selection {
       
       inline def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
       
-      inline def setIsRangeSelected(value: (/* from */ js.UndefOr[js.Any], /* to */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "isRangeSelected", js.Any.fromFunction2(value))
+      inline def setIsRangeSelected(value: (/* from */ js.UndefOr[Any], /* to */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "isRangeSelected", js.Any.fromFunction2(value))
       
       inline def setIsRangeSelectedUndefined: Self = StObject.set(x, "isRangeSelected", js.undefined)
       
-      inline def setIsSelected(value: /* record */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction1(value))
+      inline def setIsSelected(value: /* record */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction1(value))
       
       inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
       
-      inline def setMode(value: js.Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
@@ -505,7 +501,7 @@ object selection {
       inline def setPruneRemovedUndefined: Self = StObject.set(x, "pruneRemoved", js.undefined)
       
       inline def setSelect(
-        value: (/* records */ js.UndefOr[js.Any], /* keepExisting */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit
+        value: (/* records */ js.UndefOr[Any], /* keepExisting */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit
       ): Self = StObject.set(x, "select", js.Any.fromFunction3(value))
       
       inline def setSelectAll(value: /* suppressEvent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "selectAll", js.Any.fromFunction1(value))
@@ -513,7 +509,7 @@ object selection {
       inline def setSelectAllUndefined: Self = StObject.set(x, "selectAll", js.undefined)
       
       inline def setSelectRange(
-        value: (/* startRow */ js.UndefOr[js.Any], /* endRow */ js.UndefOr[js.Any], /* keepExisting */ js.UndefOr[Boolean]) => Unit
+        value: (/* startRow */ js.UndefOr[Any], /* endRow */ js.UndefOr[Any], /* keepExisting */ js.UndefOr[Boolean]) => Unit
       ): Self = StObject.set(x, "selectRange", js.Any.fromFunction3(value))
       
       inline def setSelectRangeUndefined: Self = StObject.set(x, "selectRange", js.undefined)
@@ -629,9 +625,7 @@ object selection {
       * @param initial Object
       */
     @JSName("bindStore")
-    var bindStore_ITreeModel: js.UndefOr[
-        js.Function2[/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var bindStore_ITreeModel: js.UndefOr[js.Function2[/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ITreeModel {
     
@@ -642,7 +636,7 @@ object selection {
     
     extension [Self <: ITreeModel](x: Self) {
       
-      inline def setBindStore(value: (/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction2(value))
+      inline def setBindStore(value: (/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction2(value))
       
       inline def setBindStoreUndefined: Self = StObject.set(x, "bindStore", js.undefined)
     }

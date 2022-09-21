@@ -1,31 +1,31 @@
 package typings.swaggerizeExpress.mod.Swagger
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DefinitionsObject = org.scalablytyped.runtime.StringDictionary[typings.swaggerizeExpress.mod.Swagger.SchemaObject]
+type DefinitionsObject = StringDictionary[SchemaObject]
 
-type ExampleObject = org.scalablytyped.runtime.StringDictionary[js.Any]
+type ExampleObject = StringDictionary[Any]
 
-type HeaderObject = typings.swaggerizeExpress.mod.Swagger.ItemsObject
+type HeaderObject = ItemsObject
 
-type HeadersObject = org.scalablytyped.runtime.StringDictionary[typings.swaggerizeExpress.mod.Swagger.HeaderObject]
+type HeadersObject = StringDictionary[HeaderObject]
 
-type MimeTypes = js.Array[java.lang.String]
+type MimeTypes = js.Array[String]
 
-type Parameters = js.Array[
-typings.swaggerizeExpress.mod.Swagger.ParameterObject | typings.swaggerizeExpress.mod.Swagger.ReferenceObject]
+type Parameters = js.Array[ParameterObject | ReferenceObject]
 
-type ParametersDefinitionsObject = org.scalablytyped.runtime.StringDictionary[typings.swaggerizeExpress.mod.Swagger.ParameterObject]
+type ParametersDefinitionsObject = StringDictionary[ParameterObject]
 
-type PathsObject = org.scalablytyped.runtime.StringDictionary[typings.swaggerizeExpress.mod.Swagger.PathItemObject | js.Any]
+type PathsObject = StringDictionary[PathItemObject | Any]
 
-type ResponsesDefinitionsObject = org.scalablytyped.runtime.StringDictionary[typings.swaggerizeExpress.mod.Swagger.ResponseObject]
+type ResponsesDefinitionsObject = StringDictionary[ResponseObject]
 
-type ScopesObject = org.scalablytyped.runtime.StringDictionary[js.Any]
+type ScopesObject = StringDictionary[Any]
 
-type SecurityDefinitionsObject = org.scalablytyped.runtime.StringDictionary[typings.swaggerizeExpress.mod.Swagger.SecuritySchemeObject]
+type SecurityDefinitionsObject = StringDictionary[SecuritySchemeObject]
 
-type SecurityRequirementObject = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
+type SecurityRequirementObject = StringDictionary[js.Array[String]]

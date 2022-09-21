@@ -10,16 +10,53 @@ object handlerMod {
   
   @JSImport("@antv/component/lib/slider/handler", JSImport.Default)
   @js.native
-  class default () extends Handler
+  open class default () extends Handler
+  
+  object DEFAULT_HANDLER_STYLE {
+    
+    @JSImport("@antv/component/lib/slider/handler", "DEFAULT_HANDLER_STYLE")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@antv/component/lib/slider/handler", "DEFAULT_HANDLER_STYLE.cursor")
+    @js.native
+    def cursor: String = js.native
+    inline def cursor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cursor")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@antv/component/lib/slider/handler", "DEFAULT_HANDLER_STYLE.fill")
+    @js.native
+    def fill: String = js.native
+    inline def fill_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fill")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@antv/component/lib/slider/handler", "DEFAULT_HANDLER_STYLE.highLightFill")
+    @js.native
+    def highLightFill: String = js.native
+    inline def highLightFill_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highLightFill")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@antv/component/lib/slider/handler", "DEFAULT_HANDLER_STYLE.opacity")
+    @js.native
+    def opacity: Double = js.native
+    inline def opacity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("opacity")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@antv/component/lib/slider/handler", "DEFAULT_HANDLER_STYLE.radius")
+    @js.native
+    def radius: Double = js.native
+    inline def radius_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radius")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@antv/component/lib/slider/handler", "DEFAULT_HANDLER_STYLE.stroke")
+    @js.native
+    def stroke: String = js.native
+    inline def stroke_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stroke")(x.asInstanceOf[js.Any])
+  }
   
   @JSImport("@antv/component/lib/slider/handler", "Handler")
   @js.native
-  class Handler ()
+  open class Handler ()
     extends typings.antvComponent.groupComponentMod.default[HandlerCfg] {
     
-    /* private */ var bindEvents: js.Any = js.native
+    /* private */ var bindEvents: Any = js.native
     
-    /* private */ var draw: js.Any = js.native
+    /* private */ var draw: Any = js.native
   }
   
   trait HandlerCfg

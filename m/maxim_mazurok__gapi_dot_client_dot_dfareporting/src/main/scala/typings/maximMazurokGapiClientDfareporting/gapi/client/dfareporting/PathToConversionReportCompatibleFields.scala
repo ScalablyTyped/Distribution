@@ -34,13 +34,13 @@ object PathToConversionReportCompatibleFields {
     
     inline def setConversionDimensionsUndefined: Self = StObject.set(x, "conversionDimensions", js.undefined)
     
-    inline def setConversionDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "conversionDimensions", js.Array(value :_*))
+    inline def setConversionDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "conversionDimensions", js.Array(value*))
     
     inline def setCustomFloodlightVariables(value: js.Array[Dimension]): Self = StObject.set(x, "customFloodlightVariables", value.asInstanceOf[js.Any])
     
     inline def setCustomFloodlightVariablesUndefined: Self = StObject.set(x, "customFloodlightVariables", js.undefined)
     
-    inline def setCustomFloodlightVariablesVarargs(value: Dimension*): Self = StObject.set(x, "customFloodlightVariables", js.Array(value :_*))
+    inline def setCustomFloodlightVariablesVarargs(value: Dimension*): Self = StObject.set(x, "customFloodlightVariables", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -50,12 +50,12 @@ object PathToConversionReportCompatibleFields {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setPerInteractionDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "perInteractionDimensions", value.asInstanceOf[js.Any])
     
     inline def setPerInteractionDimensionsUndefined: Self = StObject.set(x, "perInteractionDimensions", js.undefined)
     
-    inline def setPerInteractionDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "perInteractionDimensions", js.Array(value :_*))
+    inline def setPerInteractionDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "perInteractionDimensions", js.Array(value*))
   }
 }

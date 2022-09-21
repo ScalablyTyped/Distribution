@@ -18,12 +18,12 @@ trait WeakValidationMapTablePro extends StObject {
   
   var tableBodyClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var tableBodyProps: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
+  var tableBodyProps: js.UndefOr[Validator[js.UndefOr[Any | Null]]] = js.undefined
   
   var tableBodyRowProps: js.UndefOr[
     Validator[
       js.UndefOr[
-        (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit]) | Null | StringDictionary[js.Any]
+        (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit]) | Null | StringDictionary[Any]
       ]
     ]
   ] = js.undefined
@@ -34,11 +34,11 @@ trait WeakValidationMapTablePro extends StObject {
   
   var tableHeaderClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var tableHeaderProps: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
+  var tableHeaderProps: js.UndefOr[Validator[js.UndefOr[Any | Null]]] = js.undefined
   
   var tableHeaderRowClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var tableHeaderRowProps: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
+  var tableHeaderRowProps: js.UndefOr[Validator[js.UndefOr[Any | Null]]] = js.undefined
   
   var tableRowClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
 }
@@ -67,14 +67,14 @@ object WeakValidationMapTablePro {
     
     inline def setTableBodyClassNameUndefined: Self = StObject.set(x, "tableBodyClassName", js.undefined)
     
-    inline def setTableBodyProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "tableBodyProps", value.asInstanceOf[js.Any])
+    inline def setTableBodyProps(value: Validator[js.UndefOr[Any | Null]]): Self = StObject.set(x, "tableBodyProps", value.asInstanceOf[js.Any])
     
     inline def setTableBodyPropsUndefined: Self = StObject.set(x, "tableBodyProps", js.undefined)
     
     inline def setTableBodyRowProps(
       value: Validator[
           js.UndefOr[
-            (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit]) | Null | StringDictionary[js.Any]
+            (js.Function2[/* rowData */ js.Array[String], /* index */ Double, Unit]) | Null | StringDictionary[Any]
           ]
         ]
     ): Self = StObject.set(x, "tableBodyRowProps", value.asInstanceOf[js.Any])
@@ -93,7 +93,7 @@ object WeakValidationMapTablePro {
     
     inline def setTableHeaderClassNameUndefined: Self = StObject.set(x, "tableHeaderClassName", js.undefined)
     
-    inline def setTableHeaderProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "tableHeaderProps", value.asInstanceOf[js.Any])
+    inline def setTableHeaderProps(value: Validator[js.UndefOr[Any | Null]]): Self = StObject.set(x, "tableHeaderProps", value.asInstanceOf[js.Any])
     
     inline def setTableHeaderPropsUndefined: Self = StObject.set(x, "tableHeaderProps", js.undefined)
     
@@ -101,7 +101,7 @@ object WeakValidationMapTablePro {
     
     inline def setTableHeaderRowClassNameUndefined: Self = StObject.set(x, "tableHeaderRowClassName", js.undefined)
     
-    inline def setTableHeaderRowProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "tableHeaderRowProps", value.asInstanceOf[js.Any])
+    inline def setTableHeaderRowProps(value: Validator[js.UndefOr[Any | Null]]): Self = StObject.set(x, "tableHeaderRowProps", value.asInstanceOf[js.Any])
     
     inline def setTableHeaderRowPropsUndefined: Self = StObject.set(x, "tableHeaderRowProps", js.undefined)
     

@@ -22,6 +22,6 @@ object `0` {
     
     inline def setAction(value: String | js.Array[String]): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    inline def setActionVarargs(value: String*): Self = StObject.set(x, "Action", js.Array(value :_*))
+    inline def setActionVarargs(value: String*): Self = StObject.set(x, "Action", js.Array(value*))
   }
 }

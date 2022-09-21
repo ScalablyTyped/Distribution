@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Completer extends StObject {
   
   def getCompletions(editor: Editor, session: EditSession, position: Point, prefix: String, callback: CompleterCallback): Unit
+  
+  var identifierRegexps: js.UndefOr[js.Array[js.RegExp]] = js.undefined
 }
 object Completer {
   
@@ -18,5 +20,11 @@ object Completer {
   extension [Self <: Completer](x: Self) {
     
     inline def setGetCompletions(value: (Editor, EditSession, Point, String, CompleterCallback) => Unit): Self = StObject.set(x, "getCompletions", js.Any.fromFunction5(value))
+    
+    inline def setIdentifierRegexps(value: js.Array[js.RegExp]): Self = StObject.set(x, "identifierRegexps", value.asInstanceOf[js.Any])
+    
+    inline def setIdentifierRegexpsUndefined: Self = StObject.set(x, "identifierRegexps", js.undefined)
+    
+    inline def setIdentifierRegexpsVarargs(value: js.RegExp*): Self = StObject.set(x, "identifierRegexps", js.Array(value*))
   }
 }

@@ -34,6 +34,8 @@ trait BuildingSublayer
   /**
     * Opacity of the sublayer.
     *
+    * @default 1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingSublayer.html#opacity)
     */
   var opacity: Double = js.native
@@ -47,6 +49,8 @@ trait BuildingSublayer
   
   /**
     * Indicates if the sublayer is visible in the view.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingSublayer.html#visible)
     */

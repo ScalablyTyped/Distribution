@@ -1,185 +1,157 @@
 package typings.openpgp.mod
 
+import typings.openpgp.anon.Algorithm
+import typings.openpgp.anon.Data
+import typings.openpgp.anon.DecryptOptionsformatbinar
+import typings.openpgp.anon.DecryptOptionsformatutf8
+import typings.openpgp.anon.DecryptResultdataUint8Arr
+import typings.openpgp.anon.DecryptResultdatastringRe
+import typings.openpgp.anon.EncryptOptionsarmorfalsed
+import typings.openpgp.anon.EncryptOptionsarmorfalsedArmor
+import typings.openpgp.anon.EncryptOptionsarmortrueun
+import typings.openpgp.anon.EncryptOptionsarmortrueunArmor
+import typings.openpgp.anon.EncryptResultdatastring
+import typings.openpgp.anon.EncryptResultdatastringRe
+import typings.openpgp.anon.EncryptResultdatastringsi
+import typings.openpgp.anon.EncryptResultmessageMessa
+import typings.openpgp.anon.EncryptResultmessageMessaMessage
+import typings.openpgp.anon.KeyKey
+import typings.openpgp.anon.PrivateKey
+import typings.openpgp.anon.PublicKey
+import typings.openpgp.anon.SignOptionsarmorfalsedeta
+import typings.openpgp.anon.SignOptionsarmorfalsedetaArmor
+import typings.openpgp.anon.SignOptionsarmortrueundef
+import typings.openpgp.anon.SignOptionsarmortrueundefArmor
+import typings.openpgp.anon.Signature
+import typings.openpgp.anon.SignatureSignature
+import typings.openpgp.mod.^
+import typings.openpgp.mod.key.Key
+import typings.openpgp.mod.message.Message
+import typings.openpgp.mod.worker.asyncProxy.AsyncProxy
+import typings.openpgp.openpgpBooleans.`false`
+import typings.openpgp.openpgpStrings.node
+import typings.openpgp.openpgpStrings.web
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def checkString(): scala.Unit = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("checkString")().asInstanceOf[scala.Unit]
+inline def checkString(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkString")().asInstanceOf[Unit]
 
-inline def convertStream(data: js.Object): js.Object = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("convertStream")(data.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+inline def convertStream(data: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("convertStream")(data.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+inline def convertStream(data: js.Object, streaming: web | node | `false`): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("convertStream")(data.asInstanceOf[js.Any], streaming.asInstanceOf[js.Any])).asInstanceOf[js.Object]
 
-inline def convertStream_false(data: js.Object, streaming: typings.openpgp.openpgpBooleans.`false`): js.Object = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("convertStream")(data.asInstanceOf[js.Any], streaming.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+inline def convertStreams(obj: js.Object, streaming: web | node | `false`, keys: js.Array[Any]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("convertStreams")(obj.asInstanceOf[js.Any], streaming.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Object]
 
-inline def convertStream_node(data: js.Object, streaming: typings.openpgp.openpgpStrings.node): js.Object = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("convertStream")(data.asInstanceOf[js.Any], streaming.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+inline def decrypt(options: DecryptOptionsformatbinar): js.Promise[DecryptResultdataUint8Arr] = ^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DecryptResultdataUint8Arr]]
+inline def decrypt(options: DecryptOptionsformatutf8): js.Promise[DecryptResultdatastringRe] = ^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DecryptResultdatastringRe]]
+inline def decrypt(options: DecryptOptions): js.Promise[DecryptResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DecryptResult]]
 
-inline def convertStream_web(data: js.Object, streaming: typings.openpgp.openpgpStrings.web): js.Object = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("convertStream")(data.asInstanceOf[js.Any], streaming.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+inline def decryptKey(privateKey: Key, passphrase: String): js.Promise[KeyKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeyKey]]
+inline def decryptKey(privateKey: Key, passphrase: js.Array[Any]): js.Promise[KeyKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeyKey]]
 
-inline def convertStreams_false(obj: js.Object, streaming: typings.openpgp.openpgpBooleans.`false`, keys: js.Array[js.Any]): js.Object = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("convertStreams")(obj.asInstanceOf[js.Any], streaming.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+inline def decryptSessionKeys(message: Message): js.Promise[js.UndefOr[js.Array[Algorithm]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[js.Array[Algorithm]]]]
+inline def decryptSessionKeys(message: Message, privateKeys: js.Array[Key]): js.Promise[js.UndefOr[js.Array[Algorithm]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[Algorithm]]]]
+inline def decryptSessionKeys(message: Message, privateKeys: js.Array[Key], passwords: String): js.Promise[js.UndefOr[js.Array[Algorithm]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[Algorithm]]]]
+inline def decryptSessionKeys(message: Message, privateKeys: js.Array[Key], passwords: js.Array[String]): js.Promise[js.UndefOr[js.Array[Algorithm]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[Algorithm]]]]
+inline def decryptSessionKeys(message: Message, privateKeys: Unit, passwords: String): js.Promise[js.UndefOr[js.Array[Algorithm]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[Algorithm]]]]
+inline def decryptSessionKeys(message: Message, privateKeys: Unit, passwords: js.Array[String]): js.Promise[js.UndefOr[js.Array[Algorithm]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[Algorithm]]]]
+inline def decryptSessionKeys(message: Message, privateKeys: Key): js.Promise[js.UndefOr[js.Array[Algorithm]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[Algorithm]]]]
+inline def decryptSessionKeys(message: Message, privateKeys: Key, passwords: String): js.Promise[js.UndefOr[js.Array[Algorithm]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[Algorithm]]]]
+inline def decryptSessionKeys(message: Message, privateKeys: Key, passwords: js.Array[String]): js.Promise[js.UndefOr[js.Array[Algorithm]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[Algorithm]]]]
 
-inline def convertStreams_node(obj: js.Object, streaming: typings.openpgp.openpgpStrings.node, keys: js.Array[js.Any]): js.Object = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("convertStreams")(obj.asInstanceOf[js.Any], streaming.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+inline def destroyWorker(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyWorker")().asInstanceOf[Unit]
 
-inline def convertStreams_web(obj: js.Object, streaming: typings.openpgp.openpgpStrings.web, keys: js.Array[js.Any]): js.Object = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("convertStreams")(obj.asInstanceOf[js.Any], streaming.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+inline def encrypt(options: EncryptOptionsarmorfalsed): js.Promise[EncryptResultmessageMessa] = ^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[EncryptResultmessageMessa]]
+inline def encrypt(options: EncryptOptionsarmorfalsedArmor): js.Promise[EncryptResultmessageMessaMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[EncryptResultmessageMessaMessage]]
+inline def encrypt(options: EncryptOptionsarmortrueun): js.Promise[EncryptResultdatastring] = ^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[EncryptResultdatastring]]
+inline def encrypt(options: EncryptOptionsarmortrueunArmor): js.Promise[EncryptResultdatastringsi] = ^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[EncryptResultdatastringsi]]
+inline def encrypt(options: EncryptOptions): js.Promise[EncryptResultdatastringRe] = ^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[EncryptResultdatastringRe]]
 
-inline def decrypt(options: typings.openpgp.anon.DecryptOptionsformatbinar): js.Promise[typings.openpgp.anon.DecryptResultdataUint8Arr] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.DecryptResultdataUint8Arr]]
-inline def decrypt(options: typings.openpgp.anon.DecryptOptionsformatutf8): js.Promise[typings.openpgp.anon.DecryptResultdatastringRe] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.DecryptResultdatastringRe]]
-inline def decrypt(options: typings.openpgp.mod.DecryptOptions): js.Promise[typings.openpgp.mod.DecryptResult] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.mod.DecryptResult]]
-
-inline def decryptKey(privateKey: typings.openpgp.mod.key.Key, passphrase: java.lang.String): js.Promise[typings.openpgp.anon.KeyKey] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.anon.KeyKey]]
-inline def decryptKey(privateKey: typings.openpgp.mod.key.Key, passphrase: js.Array[js.Any]): js.Promise[typings.openpgp.anon.KeyKey] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.anon.KeyKey]]
-
-inline def decryptSessionKeys(message: typings.openpgp.mod.message.Message): js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]]]
-inline def decryptSessionKeys(message: typings.openpgp.mod.message.Message, privateKeys: js.Array[typings.openpgp.mod.key.Key]): js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]]]
-inline def decryptSessionKeys(
-  message: typings.openpgp.mod.message.Message,
-  privateKeys: js.Array[typings.openpgp.mod.key.Key],
-  passwords: java.lang.String
-): js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]]]
-inline def decryptSessionKeys(
-  message: typings.openpgp.mod.message.Message,
-  privateKeys: js.Array[typings.openpgp.mod.key.Key],
-  passwords: js.Array[java.lang.String]
-): js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]]]
-inline def decryptSessionKeys(message: typings.openpgp.mod.message.Message, privateKeys: scala.Unit, passwords: java.lang.String): js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]]]
-inline def decryptSessionKeys(
-  message: typings.openpgp.mod.message.Message,
-  privateKeys: scala.Unit,
-  passwords: js.Array[java.lang.String]
-): js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]]]
-inline def decryptSessionKeys(message: typings.openpgp.mod.message.Message, privateKeys: typings.openpgp.mod.key.Key): js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]]]
-inline def decryptSessionKeys(
-  message: typings.openpgp.mod.message.Message,
-  privateKeys: typings.openpgp.mod.key.Key,
-  passwords: java.lang.String
-): js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]]]
-inline def decryptSessionKeys(
-  message: typings.openpgp.mod.message.Message,
-  privateKeys: typings.openpgp.mod.key.Key,
-  passwords: js.Array[java.lang.String]
-): js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[typings.openpgp.anon.Algorithm]]]]
-
-inline def destroyWorker(): scala.Unit = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("destroyWorker")().asInstanceOf[scala.Unit]
-
-inline def encrypt(options: typings.openpgp.anon.EncryptOptionsarmorfalsed): js.Promise[typings.openpgp.anon.EncryptResultmessageMessa] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.EncryptResultmessageMessa]]
-inline def encrypt(options: typings.openpgp.anon.EncryptOptionsarmorfalsedArmor): js.Promise[typings.openpgp.anon.EncryptResultmessageMessaMessage] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.EncryptResultmessageMessaMessage]]
-inline def encrypt(options: typings.openpgp.anon.EncryptOptionsarmortrueun): js.Promise[typings.openpgp.anon.EncryptResultdatastring] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.EncryptResultdatastring]]
-inline def encrypt(options: typings.openpgp.anon.EncryptOptionsarmortrueunArmor): js.Promise[typings.openpgp.anon.EncryptResultdatastringsi] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.EncryptResultdatastringsi]]
-inline def encrypt(options: typings.openpgp.mod.EncryptOptions): js.Promise[typings.openpgp.anon.EncryptResultdatastringRe] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.EncryptResultdatastringRe]]
-
-inline def encryptKey(privateKey: typings.openpgp.mod.key.Key, passphrase: java.lang.String): js.Promise[typings.openpgp.anon.KeyKey] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("encryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.anon.KeyKey]]
-inline def encryptKey(privateKey: typings.openpgp.mod.key.Key, passphrase: js.Array[js.Any]): js.Promise[typings.openpgp.anon.KeyKey] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("encryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.anon.KeyKey]]
+inline def encryptKey(privateKey: Key, passphrase: String): js.Promise[KeyKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeyKey]]
+inline def encryptKey(privateKey: Key, passphrase: js.Array[Any]): js.Promise[KeyKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeyKey]]
 
 inline def encryptSessionKey(
-  data: typings.std.Uint8Array,
-  algorithm: java.lang.String,
-  aeadAlgorithm: js.UndefOr[java.lang.String],
-  publicKeys: js.UndefOr[typings.openpgp.mod.key.Key | js.Array[typings.openpgp.mod.key.Key]],
-  passwords: js.UndefOr[java.lang.String | js.Array[java.lang.String]],
-  wildcard: js.UndefOr[scala.Boolean],
-  date: js.UndefOr[typings.std.Date],
-  toUserIds: js.UndefOr[js.Array[js.Any]]
-): js.Promise[typings.openpgp.mod.message.Message] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("encryptSessionKey")(data.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], aeadAlgorithm.asInstanceOf[js.Any], publicKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any], wildcard.asInstanceOf[js.Any], date.asInstanceOf[js.Any], toUserIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.mod.message.Message]]
+  data: js.typedarray.Uint8Array,
+  algorithm: String,
+  aeadAlgorithm: js.UndefOr[String],
+  publicKeys: js.UndefOr[Key | js.Array[Key]],
+  passwords: js.UndefOr[String | js.Array[String]],
+  wildcard: js.UndefOr[Boolean],
+  date: js.UndefOr[js.Date],
+  toUserIds: js.UndefOr[js.Array[Any]]
+): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptSessionKey")(data.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], aeadAlgorithm.asInstanceOf[js.Any], publicKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any], wildcard.asInstanceOf[js.Any], date.asInstanceOf[js.Any], toUserIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
 
-inline def generateKey(option: typings.openpgp.mod.KeyOptions): js.Promise[typings.openpgp.anon.Key] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(option.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.Key]]
+inline def generateKey(option: KeyOptions): js.Promise[typings.openpgp.anon.Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(option.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.Key]]
 
-inline def getWorker(): typings.openpgp.mod.worker.asyncProxy.AsyncProxy | scala.Null = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getWorker")().asInstanceOf[typings.openpgp.mod.worker.asyncProxy.AsyncProxy | scala.Null]
+inline def getWorker(): AsyncProxy | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorker")().asInstanceOf[AsyncProxy | Null]
 
-inline def initWorker(options: typings.openpgp.mod.WorkerOptions): scala.Unit = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("initWorker")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def initWorker(options: WorkerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initWorker")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def linkStreams(
-  result: js.Object,
-  message: typings.openpgp.mod.message.Message,
-  erroringStream: typings.openpgp.mod.ReadableStream[java.lang.String]
-): js.Object = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("linkStreams")(result.asInstanceOf[js.Any], message.asInstanceOf[js.Any], erroringStream.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+inline def linkStreams(result: js.Object, message: Message, erroringStream: ReadableStream[String]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("linkStreams")(result.asInstanceOf[js.Any], message.asInstanceOf[js.Any], erroringStream.asInstanceOf[js.Any])).asInstanceOf[js.Object]
 
-inline def nativeAEAD(): scala.Boolean = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("nativeAEAD")().asInstanceOf[scala.Boolean]
+inline def nativeAEAD(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nativeAEAD")().asInstanceOf[Boolean]
 
-inline def onError(message: java.lang.String, error: typings.std.Error): scala.Unit = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("onError")(message.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def onError(message: String, error: js.Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(message.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def prepareSignatures(signatures: js.Object): scala.Unit = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("prepareSignatures")(signatures.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def prepareSignatures(signatures: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareSignatures")(signatures.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def reformatKey(privateKey: typings.openpgp.mod.key.Key, userIds: js.Array[js.Any]): js.Promise[js.Object] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
-inline def reformatKey(privateKey: typings.openpgp.mod.key.Key, userIds: js.Array[js.Any], passphrase: java.lang.String): js.Promise[js.Object] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+inline def reformatKey(privateKey: Key, userIds: js.Array[Any]): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+inline def reformatKey(privateKey: Key, userIds: js.Array[Any], passphrase: String): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+inline def reformatKey(privateKey: Key, userIds: js.Array[Any], passphrase: String, keyExpirationTime: Double): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], keyExpirationTime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
 inline def reformatKey(
-  privateKey: typings.openpgp.mod.key.Key,
-  userIds: js.Array[js.Any],
-  passphrase: java.lang.String,
-  keyExpirationTime: scala.Double
-): js.Promise[js.Object] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], keyExpirationTime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+  privateKey: Key,
+  userIds: js.Array[Any],
+  passphrase: String,
+  keyExpirationTime: Double,
+  revocationCertificate: Boolean
+): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], keyExpirationTime.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
 inline def reformatKey(
-  privateKey: typings.openpgp.mod.key.Key,
-  userIds: js.Array[js.Any],
-  passphrase: java.lang.String,
-  keyExpirationTime: scala.Double,
-  revocationCertificate: scala.Boolean
-): js.Promise[js.Object] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], keyExpirationTime.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+  privateKey: Key,
+  userIds: js.Array[Any],
+  passphrase: String,
+  keyExpirationTime: Unit,
+  revocationCertificate: Boolean
+): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], keyExpirationTime.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+inline def reformatKey(privateKey: Key, userIds: js.Array[Any], passphrase: Unit, keyExpirationTime: Double): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], keyExpirationTime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
 inline def reformatKey(
-  privateKey: typings.openpgp.mod.key.Key,
-  userIds: js.Array[js.Any],
-  passphrase: java.lang.String,
-  keyExpirationTime: scala.Unit,
-  revocationCertificate: scala.Boolean
-): js.Promise[js.Object] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], keyExpirationTime.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+  privateKey: Key,
+  userIds: js.Array[Any],
+  passphrase: Unit,
+  keyExpirationTime: Double,
+  revocationCertificate: Boolean
+): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], keyExpirationTime.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
 inline def reformatKey(
-  privateKey: typings.openpgp.mod.key.Key,
-  userIds: js.Array[js.Any],
-  passphrase: scala.Unit,
-  keyExpirationTime: scala.Double
-): js.Promise[js.Object] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], keyExpirationTime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
-inline def reformatKey(
-  privateKey: typings.openpgp.mod.key.Key,
-  userIds: js.Array[js.Any],
-  passphrase: scala.Unit,
-  keyExpirationTime: scala.Double,
-  revocationCertificate: scala.Boolean
-): js.Promise[js.Object] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], keyExpirationTime.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
-inline def reformatKey(
-  privateKey: typings.openpgp.mod.key.Key,
-  userIds: js.Array[js.Any],
-  passphrase: scala.Unit,
-  keyExpirationTime: scala.Unit,
-  revocationCertificate: scala.Boolean
-): js.Promise[js.Object] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], keyExpirationTime.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+  privateKey: Key,
+  userIds: js.Array[Any],
+  passphrase: Unit,
+  keyExpirationTime: Unit,
+  revocationCertificate: Boolean
+): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("reformatKey")(privateKey.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], keyExpirationTime.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
 
-inline def revokeKey(): js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")().asInstanceOf[js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey]]
-inline def revokeKey(key: scala.Unit, revocationCertificate: java.lang.String): js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")(key.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey]]
-inline def revokeKey(
-  key: scala.Unit,
-  revocationCertificate: java.lang.String,
-  reasonForRevocation: typings.openpgp.mod.revokeKeyReasonForRevocation
-): js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")(key.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any], reasonForRevocation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey]]
-inline def revokeKey(
-  key: scala.Unit,
-  revocationCertificate: scala.Unit,
-  reasonForRevocation: typings.openpgp.mod.revokeKeyReasonForRevocation
-): js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")(key.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any], reasonForRevocation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey]]
-inline def revokeKey(key: typings.openpgp.mod.key.Key): js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey]]
-inline def revokeKey(key: typings.openpgp.mod.key.Key, revocationCertificate: java.lang.String): js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")(key.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey]]
-inline def revokeKey(
-  key: typings.openpgp.mod.key.Key,
-  revocationCertificate: java.lang.String,
-  reasonForRevocation: typings.openpgp.mod.revokeKeyReasonForRevocation
-): js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")(key.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any], reasonForRevocation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey]]
-inline def revokeKey(
-  key: typings.openpgp.mod.key.Key,
-  revocationCertificate: scala.Unit,
-  reasonForRevocation: typings.openpgp.mod.revokeKeyReasonForRevocation
-): js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey] = (typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")(key.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any], reasonForRevocation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.anon.PrivateKey | typings.openpgp.anon.PublicKey]]
+inline def revokeKey(): js.Promise[PrivateKey | PublicKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")().asInstanceOf[js.Promise[PrivateKey | PublicKey]]
+inline def revokeKey(key: Unit, revocationCertificate: String): js.Promise[PrivateKey | PublicKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")(key.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey | PublicKey]]
+inline def revokeKey(key: Unit, revocationCertificate: String, reasonForRevocation: revokeKeyReasonForRevocation): js.Promise[PrivateKey | PublicKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")(key.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any], reasonForRevocation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey | PublicKey]]
+inline def revokeKey(key: Unit, revocationCertificate: Unit, reasonForRevocation: revokeKeyReasonForRevocation): js.Promise[PrivateKey | PublicKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")(key.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any], reasonForRevocation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey | PublicKey]]
+inline def revokeKey(key: Key): js.Promise[PrivateKey | PublicKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PrivateKey | PublicKey]]
+inline def revokeKey(key: Key, revocationCertificate: String): js.Promise[PrivateKey | PublicKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")(key.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey | PublicKey]]
+inline def revokeKey(key: Key, revocationCertificate: String, reasonForRevocation: revokeKeyReasonForRevocation): js.Promise[PrivateKey | PublicKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")(key.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any], reasonForRevocation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey | PublicKey]]
+inline def revokeKey(key: Key, revocationCertificate: Unit, reasonForRevocation: revokeKeyReasonForRevocation): js.Promise[PrivateKey | PublicKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("revokeKey")(key.asInstanceOf[js.Any], revocationCertificate.asInstanceOf[js.Any], reasonForRevocation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey | PublicKey]]
 
-inline def sign(options: typings.openpgp.anon.SignOptionsarmorfalsedeta): js.Promise[typings.openpgp.anon.Message] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.Message]]
-inline def sign(options: typings.openpgp.anon.SignOptionsarmorfalsedetaArmor): js.Promise[typings.openpgp.anon.SignatureSignature] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.SignatureSignature]]
-inline def sign(options: typings.openpgp.anon.SignOptionsarmortrueundef): js.Promise[typings.openpgp.anon.Data] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.Data]]
-inline def sign(options: typings.openpgp.anon.SignOptionsarmortrueundefArmor): js.Promise[typings.openpgp.anon.Signature] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.Signature]]
-inline def sign(options: typings.openpgp.mod.SignOptions): js.Promise[typings.openpgp.mod.SignResult] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.mod.SignResult]]
+inline def sign(options: SignOptionsarmorfalsedeta): js.Promise[typings.openpgp.anon.Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.Message]]
+inline def sign(options: SignOptionsarmorfalsedetaArmor): js.Promise[SignatureSignature] = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SignatureSignature]]
+inline def sign(options: SignOptionsarmortrueundef): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Data]]
+inline def sign(options: SignOptionsarmortrueundefArmor): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
+inline def sign(options: SignOptions): js.Promise[SignResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SignResult]]
 
-inline def toArray(param: js.Object): js.UndefOr[js.Array[js.Any]] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(param.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[js.Any]]]
+inline def toArray(param: js.Object): js.UndefOr[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(param.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[Any]]]
 
-inline def verify(options: typings.openpgp.mod.VerifyOptions): js.Promise[typings.openpgp.mod.VerifyResult] = typings.openpgp.mod.^.asInstanceOf[js.Dynamic].applyDynamic("verify")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.mod.VerifyResult]]
+inline def verify(options: VerifyOptions): js.Promise[VerifyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[VerifyResult]]
 
-type Infinity = js.Any
+type Infinity = Any
 
-type Integer = scala.Double
+type Integer = Double
 
 type NodeStream = typings.node.streamMod.^
 
-type ReadableStream[T] = js.Any
+type ReadableStream[T] = Any

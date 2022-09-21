@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Mread extends StObject {
   
   @JSName("m.read")
-  var mDotread: StringDictionary[Ts]
+  var mDotread: StringDictionary[TsNumber]
 }
 object Mread {
   
-  inline def apply(mDotread: StringDictionary[Ts]): Mread = {
+  inline def apply(mDotread: StringDictionary[TsNumber]): Mread = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("m.read")(mDotread.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mread]
@@ -20,6 +20,6 @@ object Mread {
   
   extension [Self <: Mread](x: Self) {
     
-    inline def setMDotread(value: StringDictionary[Ts]): Self = StObject.set(x, "m.read", value.asInstanceOf[js.Any])
+    inline def setMDotread(value: StringDictionary[TsNumber]): Self = StObject.set(x, "m.read", value.asInstanceOf[js.Any])
   }
 }

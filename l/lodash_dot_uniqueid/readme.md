@@ -10,10 +10,10 @@ The lodash method `_.uniqueId` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.uniqueid |
 | Keywords           | lodash-modularized, uniqueid |
-| # releases         | 0 |
-| # dependents       | 133 |
-| # downloads        | 7199929 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 847157.6666666666 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

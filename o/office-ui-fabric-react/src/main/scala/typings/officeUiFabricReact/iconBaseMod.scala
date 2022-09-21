@@ -10,11 +10,10 @@ object iconBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Icon/Icon.base", "IconBase")
   @js.native
-  class IconBase protected ()
-    extends Component[IIconProps, IIconState, js.Any] {
+  open class IconBase protected () extends Component[IIconProps, IIconState, Any] {
     def this(props: IIconProps) = this()
     
-    /* private */ var _onImageLoadingStateChange: js.Any = js.native
+    /* private */ var _onImageLoadingStateChange: Any = js.native
   }
   
   trait IIconState extends StObject {

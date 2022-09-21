@@ -10,10 +10,10 @@ Optimization plugin to shorten the names of CSS variables
 | ------------------ | :-------------: |
 | Full name          | short-css-vars |
 | Keywords           | css, variables, custom, properties, short, hash, name, shorten |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 412 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 214.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/godaddy/short-css-vars#readme)

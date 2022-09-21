@@ -22,12 +22,17 @@ trait HyperParameterTuningJobConfig extends StObject {
   var ResourceLimits: typings.awsSdk.sagemakerMod.ResourceLimits
   
   /**
-    * Specifies how hyperparameter tuning chooses the combinations of hyperparameter values to use for the training job it launches. To use the Bayesian search strategy, set this to Bayesian. To randomly search, set it to Random. For information about search strategies, see How Hyperparameter Tuning Works.
+    * Specifies how hyperparameter tuning chooses the combinations of hyperparameter values to use for the training job it launches. For information about search strategies, see How Hyperparameter Tuning Works.
     */
   var Strategy: HyperParameterTuningJobStrategyType
   
   /**
-    * Specifies whether to use early stopping for training jobs launched by the hyperparameter tuning job. This can be one of the following values (the default value is OFF):  OFF  Training jobs launched by the hyperparameter tuning job do not use early stopping.  AUTO  Amazon SageMaker stops training jobs launched by the hyperparameter tuning job when they are unlikely to perform better than previously completed training jobs. For more information, see Stop Training Jobs Early.  
+    * The configuration for the Hyperband optimization strategy. This parameter should be provided only if Hyperband is selected as the strategy for HyperParameterTuningJobConfig.
+    */
+  var StrategyConfig: js.UndefOr[HyperParameterTuningJobStrategyConfig] = js.undefined
+  
+  /**
+    * Specifies whether to use early stopping for training jobs launched by the hyperparameter tuning job. Because the Hyperband strategy has its own advanced internal early stopping mechanism, TrainingJobEarlyStoppingType must be OFF to use Hyperband. This parameter can take on one of the following values (the default value is OFF):  OFF  Training jobs launched by the hyperparameter tuning job do not use early stopping.  AUTO  SageMaker stops training jobs launched by the hyperparameter tuning job when they are unlikely to perform better than previously completed training jobs. For more information, see Stop Training Jobs Early.  
     */
   var TrainingJobEarlyStoppingType: js.UndefOr[typings.awsSdk.sagemakerMod.TrainingJobEarlyStoppingType] = js.undefined
   
@@ -56,6 +61,10 @@ object HyperParameterTuningJobConfig {
     inline def setResourceLimits(value: ResourceLimits): Self = StObject.set(x, "ResourceLimits", value.asInstanceOf[js.Any])
     
     inline def setStrategy(value: HyperParameterTuningJobStrategyType): Self = StObject.set(x, "Strategy", value.asInstanceOf[js.Any])
+    
+    inline def setStrategyConfig(value: HyperParameterTuningJobStrategyConfig): Self = StObject.set(x, "StrategyConfig", value.asInstanceOf[js.Any])
+    
+    inline def setStrategyConfigUndefined: Self = StObject.set(x, "StrategyConfig", js.undefined)
     
     inline def setTrainingJobEarlyStoppingType(value: TrainingJobEarlyStoppingType): Self = StObject.set(x, "TrainingJobEarlyStoppingType", value.asInstanceOf[js.Any])
     

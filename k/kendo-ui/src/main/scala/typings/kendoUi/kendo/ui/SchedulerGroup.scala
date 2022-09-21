@@ -10,7 +10,7 @@ trait SchedulerGroup extends StObject {
   
   var orientation: js.UndefOr[String] = js.undefined
   
-  var resources: js.UndefOr[js.Any] = js.undefined
+  var resources: js.UndefOr[Any] = js.undefined
 }
 object SchedulerGroup {
   
@@ -29,7 +29,7 @@ object SchedulerGroup {
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    inline def setResources(value: js.Any): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: Any): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
   }

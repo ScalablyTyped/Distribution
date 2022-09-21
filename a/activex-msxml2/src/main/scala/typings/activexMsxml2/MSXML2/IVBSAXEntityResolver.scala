@@ -11,13 +11,13 @@ trait IVBSAXEntityResolver extends StObject {
   var MSXML2DotIVBSAXEntityResolver_typekey: IVBSAXEntityResolver
   
   /** Allow the application to resolve external entities. */
-  def resolveEntity(strPublicId: String, strSystemId: String): js.Any
+  def resolveEntity(strPublicId: String, strSystemId: String): Any
 }
 object IVBSAXEntityResolver {
   
   inline def apply(
     MSXML2DotIVBSAXEntityResolver_typekey: IVBSAXEntityResolver,
-    resolveEntity: (String, String) => js.Any
+    resolveEntity: (String, String) => Any
   ): IVBSAXEntityResolver = {
     val __obj = js.Dynamic.literal(resolveEntity = js.Any.fromFunction2(resolveEntity))
     __obj.updateDynamic("MSXML2.IVBSAXEntityResolver_typekey")(MSXML2DotIVBSAXEntityResolver_typekey.asInstanceOf[js.Any])
@@ -28,6 +28,6 @@ object IVBSAXEntityResolver {
     
     inline def setMSXML2DotIVBSAXEntityResolver_typekey(value: IVBSAXEntityResolver): Self = StObject.set(x, "MSXML2.IVBSAXEntityResolver_typekey", value.asInstanceOf[js.Any])
     
-    inline def setResolveEntity(value: (String, String) => js.Any): Self = StObject.set(x, "resolveEntity", js.Any.fromFunction2(value))
+    inline def setResolveEntity(value: (String, String) => Any): Self = StObject.set(x, "resolveEntity", js.Any.fromFunction2(value))
   }
 }

@@ -30,16 +30,16 @@ trait Table extends StObject {
   def AutoFitBehavior(Behavior: WdAutoFitBehavior): Unit = js.native
   
   def AutoFormat(
-    Format: js.UndefOr[js.Any],
-    ApplyBorders: js.UndefOr[js.Any],
-    ApplyShading: js.UndefOr[js.Any],
-    ApplyFont: js.UndefOr[js.Any],
-    ApplyColor: js.UndefOr[js.Any],
-    ApplyHeadingRows: js.UndefOr[js.Any],
-    ApplyLastRow: js.UndefOr[js.Any],
-    ApplyFirstColumn: js.UndefOr[js.Any],
-    ApplyLastColumn: js.UndefOr[js.Any],
-    AutoFit: js.UndefOr[js.Any]
+    Format: js.UndefOr[Any],
+    ApplyBorders: js.UndefOr[Any],
+    ApplyShading: js.UndefOr[Any],
+    ApplyFont: js.UndefOr[Any],
+    ApplyColor: js.UndefOr[Any],
+    ApplyHeadingRows: js.UndefOr[Any],
+    ApplyLastRow: js.UndefOr[Any],
+    ApplyFirstColumn: js.UndefOr[Any],
+    ApplyLastColumn: js.UndefOr[Any],
+    AutoFit: js.UndefOr[Any]
   ): Unit = js.native
   
   val AutoFormatType: Double = js.native
@@ -53,12 +53,12 @@ trait Table extends StObject {
   val Columns: typings.activexWord.Word.Columns = js.native
   
   def ConvertToText(): typings.activexWord.Word.Range = js.native
-  def ConvertToText(Separator: js.Any): typings.activexWord.Word.Range = js.native
-  def ConvertToText(Separator: js.Any, NestedTables: js.Any): typings.activexWord.Word.Range = js.native
-  def ConvertToText(Separator: Unit, NestedTables: js.Any): typings.activexWord.Word.Range = js.native
+  def ConvertToText(Separator: Any): typings.activexWord.Word.Range = js.native
+  def ConvertToText(Separator: Any, NestedTables: Any): typings.activexWord.Word.Range = js.native
+  def ConvertToText(Separator: Unit, NestedTables: Any): typings.activexWord.Word.Range = js.native
   
   def ConvertToTextOld(): typings.activexWord.Word.Range = js.native
-  def ConvertToTextOld(Separator: js.Any): typings.activexWord.Word.Range = js.native
+  def ConvertToTextOld(Separator: Any): typings.activexWord.Word.Range = js.native
   
   val Creator: Double = js.native
   
@@ -72,7 +72,7 @@ trait Table extends StObject {
   
   val NestingLevel: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var PreferredWidth: Double = js.native
   
@@ -89,23 +89,23 @@ trait Table extends StObject {
   val Shading: typings.activexWord.Word.Shading = js.native
   
   def Sort(
-    ExcludeHeader: js.UndefOr[js.Any],
-    FieldNumber: js.UndefOr[js.Any],
-    SortFieldType: js.UndefOr[js.Any],
-    SortOrder: js.UndefOr[js.Any],
-    FieldNumber2: js.UndefOr[js.Any],
-    SortFieldType2: js.UndefOr[js.Any],
-    SortOrder2: js.UndefOr[js.Any],
-    FieldNumber3: js.UndefOr[js.Any],
-    SortFieldType3: js.UndefOr[js.Any],
-    SortOrder3: js.UndefOr[js.Any],
-    CaseSensitive: js.UndefOr[js.Any],
-    BidiSort: js.UndefOr[js.Any],
-    IgnoreThe: js.UndefOr[js.Any],
-    IgnoreKashida: js.UndefOr[js.Any],
-    IgnoreDiacritics: js.UndefOr[js.Any],
-    IgnoreHe: js.UndefOr[js.Any],
-    LanguageID: js.UndefOr[js.Any]
+    ExcludeHeader: js.UndefOr[Any],
+    FieldNumber: js.UndefOr[Any],
+    SortFieldType: js.UndefOr[Any],
+    SortOrder: js.UndefOr[Any],
+    FieldNumber2: js.UndefOr[Any],
+    SortFieldType2: js.UndefOr[Any],
+    SortOrder2: js.UndefOr[Any],
+    FieldNumber3: js.UndefOr[Any],
+    SortFieldType3: js.UndefOr[Any],
+    SortOrder3: js.UndefOr[Any],
+    CaseSensitive: js.UndefOr[Any],
+    BidiSort: js.UndefOr[Any],
+    IgnoreThe: js.UndefOr[Any],
+    IgnoreKashida: js.UndefOr[Any],
+    IgnoreDiacritics: js.UndefOr[Any],
+    IgnoreHe: js.UndefOr[Any],
+    LanguageID: js.UndefOr[Any]
   ): Unit = js.native
   
   def SortAscending(): Unit = js.native
@@ -113,25 +113,25 @@ trait Table extends StObject {
   def SortDescending(): Unit = js.native
   
   def SortOld(
-    ExcludeHeader: js.UndefOr[js.Any],
-    FieldNumber: js.UndefOr[js.Any],
-    SortFieldType: js.UndefOr[js.Any],
-    SortOrder: js.UndefOr[js.Any],
-    FieldNumber2: js.UndefOr[js.Any],
-    SortFieldType2: js.UndefOr[js.Any],
-    SortOrder2: js.UndefOr[js.Any],
-    FieldNumber3: js.UndefOr[js.Any],
-    SortFieldType3: js.UndefOr[js.Any],
-    SortOrder3: js.UndefOr[js.Any],
-    CaseSensitive: js.UndefOr[js.Any],
-    LanguageID: js.UndefOr[js.Any]
+    ExcludeHeader: js.UndefOr[Any],
+    FieldNumber: js.UndefOr[Any],
+    SortFieldType: js.UndefOr[Any],
+    SortOrder: js.UndefOr[Any],
+    FieldNumber2: js.UndefOr[Any],
+    SortFieldType2: js.UndefOr[Any],
+    SortOrder2: js.UndefOr[Any],
+    FieldNumber3: js.UndefOr[Any],
+    SortFieldType3: js.UndefOr[Any],
+    SortOrder3: js.UndefOr[Any],
+    CaseSensitive: js.UndefOr[Any],
+    LanguageID: js.UndefOr[Any]
   ): Unit = js.native
   
   var Spacing: Double = js.native
   
-  def Split(BeforeRow: js.Any): Table = js.native
+  def Split(BeforeRow: Any): Table = js.native
   
-  var Style: js.Any = js.native
+  var Style: Any = js.native
   
   var TableDirection: WdTableDirection = js.native
   

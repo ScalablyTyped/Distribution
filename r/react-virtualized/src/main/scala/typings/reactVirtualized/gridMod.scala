@@ -10,20 +10,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object gridMod {
   
-  @JSImport("react-virtualized/dist/commonjs/Grid", "DEFAULT_SCROLLING_RESET_TIME_INTERVAL")
+  @JSImport("react-virtualized/dist/commonjs/Grid", JSImport.Default)
   @js.native
-  val DEFAULT_SCROLLING_RESET_TIME_INTERVAL: /* 150 */ Double = js.native
-  
-  @JSImport("react-virtualized/dist/commonjs/Grid", "Grid")
-  @js.native
-  class Grid protected ()
+  open class default protected ()
     extends typings.reactVirtualized.esGridMod.Grid {
     def this(props: GridProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: GridProps, context: js.Any) = this()
+    def this(props: GridProps, context: Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-virtualized/dist/commonjs/Grid", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-virtualized/dist/commonjs/Grid", "default.defaultProps")
+    @js.native
+    def defaultProps: Ariareadonly = js.native
+    inline def defaultProps_=(x: Ariareadonly): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("react-virtualized/dist/commonjs/Grid", "DEFAULT_SCROLLING_RESET_TIME_INTERVAL")
+  @js.native
+  val DEFAULT_SCROLLING_RESET_TIME_INTERVAL: /* 150 */ Double = js.native
+  
+  @JSImport("react-virtualized/dist/commonjs/Grid", "Grid")
+  @js.native
+  open class Grid protected ()
+    extends typings.reactVirtualized.esGridMod.Grid {
+    def this(props: GridProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: GridProps, context: Any) = this()
   }
   /* static members */
   object Grid {

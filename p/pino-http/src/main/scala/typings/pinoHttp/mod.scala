@@ -6,7 +6,6 @@ import typings.pino.mod.DestinationStream
 import typings.pino.mod.Level
 import typings.pino.mod.Logger
 import typings.pino.mod.LoggerOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +30,9 @@ object mod {
     
     var getPath: js.UndefOr[js.Function1[/* req */ IncomingMessage, js.UndefOr[String]]] = js.undefined
     
-    var ignorePaths: js.UndefOr[js.Array[String]] = js.undefined
+    var ignore: js.UndefOr[js.Function1[/* req */ IncomingMessage, Boolean]] = js.undefined
+    
+    var ignorePaths: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
   }
   object AutoLoggingOptions {
     
@@ -46,11 +47,15 @@ object mod {
       
       inline def setGetPathUndefined: Self = StObject.set(x, "getPath", js.undefined)
       
-      inline def setIgnorePaths(value: js.Array[String]): Self = StObject.set(x, "ignorePaths", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: /* req */ IncomingMessage => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
+      
+      inline def setIgnorePaths(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "ignorePaths", value.asInstanceOf[js.Any])
       
       inline def setIgnorePathsUndefined: Self = StObject.set(x, "ignorePaths", js.undefined)
       
-      inline def setIgnorePathsVarargs(value: String*): Self = StObject.set(x, "ignorePaths", js.Array(value :_*))
+      inline def setIgnorePathsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "ignorePaths", js.Array(value*))
+      
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     }
   }
   
@@ -59,6 +64,8 @@ object mod {
     var err: js.UndefOr[String] = js.undefined
     
     var req: js.UndefOr[String] = js.undefined
+    
+    var reqId: js.UndefOr[String] = js.undefined
     
     var res: js.UndefOr[String] = js.undefined
     
@@ -79,6 +86,10 @@ object mod {
       
       inline def setReq(value: String): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
+      inline def setReqId(value: String): Self = StObject.set(x, "reqId", value.asInstanceOf[js.Any])
+      
+      inline def setReqIdUndefined: Self = StObject.set(x, "reqId", js.undefined)
+      
       inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
       
       inline def setRes(value: String): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
@@ -93,7 +104,14 @@ object mod {
   
   type GenReqId = js.Function1[/* req */ IncomingMessage, ReqId]
   
-  type HttpLogger = js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse, Unit]
+  @js.native
+  trait HttpLogger extends StObject {
+    
+    def apply(req: IncomingMessage, res: ServerResponse[IncomingMessage]): Unit = js.native
+    def apply(req: IncomingMessage, res: ServerResponse[IncomingMessage], next: js.Function0[Unit]): Unit = js.native
+    
+    var logger: Logger[LoggerOptions] = js.native
+  }
   
   /**
     * Options for pino-http
@@ -102,23 +120,31 @@ object mod {
     */
   trait Options
     extends StObject
-       with LoggerOptions {
+       with typings.pino.mod.pino.LoggerOptions {
     
     var autoLogging: js.UndefOr[Boolean | AutoLoggingOptions] = js.undefined
     
     var customAttributeKeys: js.UndefOr[CustomAttributeKeys] = js.undefined
     
-    var customErrorMessage: js.UndefOr[js.Function2[/* error */ Error, /* res */ ServerResponse, String]] = js.undefined
+    var customErrorMessage: js.UndefOr[
+        js.Function2[/* error */ js.Error, /* res */ ServerResponse[IncomingMessage], String]
+      ] = js.undefined
     
-    var customLogLevel: js.UndefOr[js.Function2[/* res */ ServerResponse, /* error */ Error, Level]] = js.undefined
+    var customLogLevel: js.UndefOr[
+        js.Function2[/* res */ ServerResponse[IncomingMessage], /* error */ js.Error, Level]
+      ] = js.undefined
     
-    var customSuccessMessage: js.UndefOr[js.Function1[/* res */ ServerResponse, String]] = js.undefined
+    var customSuccessMessage: js.UndefOr[js.Function1[/* res */ ServerResponse[IncomingMessage], String]] = js.undefined
     
     var genReqId: js.UndefOr[GenReqId] = js.undefined
     
-    var logger: js.UndefOr[Logger] = js.undefined
+    var logger: js.UndefOr[Logger[LoggerOptions]] = js.undefined
     
-    var reqCustomProps: js.UndefOr[js.Function1[/* req */ IncomingMessage, js.Object]] = js.undefined
+    var quietReqLogger: js.UndefOr[Boolean] = js.undefined
+    
+    var reqCustomProps: js.UndefOr[
+        js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage], js.Object]
+      ] = js.undefined
     
     var stream: js.UndefOr[DestinationStream] = js.undefined
     
@@ -143,15 +169,15 @@ object mod {
       
       inline def setCustomAttributeKeysUndefined: Self = StObject.set(x, "customAttributeKeys", js.undefined)
       
-      inline def setCustomErrorMessage(value: (/* error */ Error, /* res */ ServerResponse) => String): Self = StObject.set(x, "customErrorMessage", js.Any.fromFunction2(value))
+      inline def setCustomErrorMessage(value: (/* error */ js.Error, /* res */ ServerResponse[IncomingMessage]) => String): Self = StObject.set(x, "customErrorMessage", js.Any.fromFunction2(value))
       
       inline def setCustomErrorMessageUndefined: Self = StObject.set(x, "customErrorMessage", js.undefined)
       
-      inline def setCustomLogLevel(value: (/* res */ ServerResponse, /* error */ Error) => Level): Self = StObject.set(x, "customLogLevel", js.Any.fromFunction2(value))
+      inline def setCustomLogLevel(value: (/* res */ ServerResponse[IncomingMessage], /* error */ js.Error) => Level): Self = StObject.set(x, "customLogLevel", js.Any.fromFunction2(value))
       
       inline def setCustomLogLevelUndefined: Self = StObject.set(x, "customLogLevel", js.undefined)
       
-      inline def setCustomSuccessMessage(value: /* res */ ServerResponse => String): Self = StObject.set(x, "customSuccessMessage", js.Any.fromFunction1(value))
+      inline def setCustomSuccessMessage(value: /* res */ ServerResponse[IncomingMessage] => String): Self = StObject.set(x, "customSuccessMessage", js.Any.fromFunction1(value))
       
       inline def setCustomSuccessMessageUndefined: Self = StObject.set(x, "customSuccessMessage", js.undefined)
       
@@ -159,11 +185,15 @@ object mod {
       
       inline def setGenReqIdUndefined: Self = StObject.set(x, "genReqId", js.undefined)
       
-      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger[LoggerOptions]): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
       inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      inline def setReqCustomProps(value: /* req */ IncomingMessage => js.Object): Self = StObject.set(x, "reqCustomProps", js.Any.fromFunction1(value))
+      inline def setQuietReqLogger(value: Boolean): Self = StObject.set(x, "quietReqLogger", value.asInstanceOf[js.Any])
+      
+      inline def setQuietReqLoggerUndefined: Self = StObject.set(x, "quietReqLogger", js.undefined)
+      
+      inline def setReqCustomProps(value: (/* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage]) => js.Object): Self = StObject.set(x, "reqCustomProps", js.Any.fromFunction2(value))
       
       inline def setReqCustomPropsUndefined: Self = StObject.set(x, "reqCustomProps", js.undefined)
       
@@ -190,11 +220,11 @@ object mod {
       
       var id: ReqId
       
-      var log: Logger
+      var log: Logger[LoggerOptions]
     }
     object IncomingMessage {
       
-      inline def apply(id: ReqId, log: Logger): typings.pinoHttp.mod.httpAugmentingMod.IncomingMessage = {
+      inline def apply(id: ReqId, log: Logger[LoggerOptions]): typings.pinoHttp.mod.httpAugmentingMod.IncomingMessage = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.pinoHttp.mod.httpAugmentingMod.IncomingMessage]
       }
@@ -203,7 +233,7 @@ object mod {
         
         inline def setId(value: ReqId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        inline def setLog(value: Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+        inline def setLog(value: Logger[LoggerOptions]): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       }
     }
     
@@ -212,7 +242,7 @@ object mod {
     
     trait ServerResponse extends StObject {
       
-      var err: js.UndefOr[Error] = js.undefined
+      var err: js.UndefOr[js.Error] = js.undefined
     }
     object ServerResponse {
       
@@ -223,7 +253,7 @@ object mod {
       
       extension [Self <: typings.pinoHttp.mod.httpAugmentingMod.ServerResponse](x: Self) {
         
-        inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+        inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
         
         inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
       }

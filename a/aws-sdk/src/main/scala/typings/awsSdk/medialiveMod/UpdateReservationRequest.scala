@@ -12,6 +12,11 @@ trait UpdateReservationRequest extends StObject {
   var Name: js.UndefOr[string] = js.undefined
   
   /**
+    * Renewal settings for the reservation
+    */
+  var RenewalSettings: js.UndefOr[typings.awsSdk.medialiveMod.RenewalSettings] = js.undefined
+  
+  /**
     * Unique reservation ID, e.g. '1234567'
     */
   var ReservationId: string
@@ -28,6 +33,10 @@ object UpdateReservationRequest {
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setRenewalSettings(value: RenewalSettings): Self = StObject.set(x, "RenewalSettings", value.asInstanceOf[js.Any])
+    
+    inline def setRenewalSettingsUndefined: Self = StObject.set(x, "RenewalSettings", js.undefined)
     
     inline def setReservationId(value: string): Self = StObject.set(x, "ReservationId", value.asInstanceOf[js.Any])
   }

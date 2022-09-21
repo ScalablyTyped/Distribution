@@ -2,7 +2,6 @@ package typings.awsSdkClientCognitoIdentityBrowser
 
 import typings.awsSdkClientCognitoIdentityBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object typesDeleteIdentitiesInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -38,11 +37,11 @@ object typesDeleteIdentitiesInputMod {
     /**
       * <p>A list of 1-60 identities that you want to delete.</p>
       */
-    var IdentityIdsToDelete: js.Array[String] | Iterable[String]
+    var IdentityIdsToDelete: js.Array[String] | js.Iterable[String]
   }
   object DeleteIdentitiesInput {
     
-    inline def apply(IdentityIdsToDelete: js.Array[String] | Iterable[String]): DeleteIdentitiesInput = {
+    inline def apply(IdentityIdsToDelete: js.Array[String] | js.Iterable[String]): DeleteIdentitiesInput = {
       val __obj = js.Dynamic.literal(IdentityIdsToDelete = IdentityIdsToDelete.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteIdentitiesInput]
     }
@@ -54,7 +53,7 @@ object typesDeleteIdentitiesInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -63,9 +62,9 @@ object typesDeleteIdentitiesInputMod {
       
       inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      inline def setIdentityIdsToDelete(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "IdentityIdsToDelete", value.asInstanceOf[js.Any])
+      inline def setIdentityIdsToDelete(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "IdentityIdsToDelete", value.asInstanceOf[js.Any])
       
-      inline def setIdentityIdsToDeleteVarargs(value: String*): Self = StObject.set(x, "IdentityIdsToDelete", js.Array(value :_*))
+      inline def setIdentityIdsToDeleteVarargs(value: String*): Self = StObject.set(x, "IdentityIdsToDelete", js.Array(value*))
     }
   }
 }

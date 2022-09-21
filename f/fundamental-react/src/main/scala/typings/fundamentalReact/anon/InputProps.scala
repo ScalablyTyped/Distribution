@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InputProps extends StObject {
   
-  var inputProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var inputProps: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var language: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ object InputProps {
   
   extension [Self <: InputProps](x: Self) {
     
-    inline def setInputProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+    inline def setInputProps(value: StringDictionary[Any]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
     
     inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
     

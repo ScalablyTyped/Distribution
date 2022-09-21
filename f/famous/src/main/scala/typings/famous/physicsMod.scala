@@ -11,34 +11,34 @@ object physicsMod {
   
   @JSImport("famous/physics", "Angle")
   @js.native
-  class Angle protected () extends Constraint {
+  open class Angle protected () extends Constraint {
     def this(a: Particle, b: Particle) = this()
-    def this(a: Particle, b: Particle, options: js.Any) = this()
+    def this(a: Particle, b: Particle, options: Any) = this()
   }
   
   @JSImport("famous/physics", "Box")
   @js.native
-  class Box () extends ConvexBody {
-    def this(options: js.Any) = this()
+  open class Box () extends ConvexBody {
+    def this(options: Any) = this()
   }
   
   @JSImport("famous/physics", "Constraint")
   @js.native
-  class Constraint () extends StObject
+  open class Constraint () extends StObject
   
   @JSImport("famous/physics", "ConvexBody")
   @js.native
-  class ConvexBody () extends Particle {
+  open class ConvexBody () extends Particle {
     def this(options: IParticleOptions) = this()
   }
   
   @JSImport("famous/physics", "Drag")
   @js.native
-  class Drag () extends Force {
-    def this(targets: js.Any) = this()
-    def this(targets: js.Array[js.Any]) = this()
-    def this(targets: js.Any, options: IDragOptions) = this()
-    def this(targets: js.Array[js.Any], options: IDragOptions) = this()
+  open class Drag () extends Force {
+    def this(targets: js.Array[Any]) = this()
+    def this(targets: Any) = this()
+    def this(targets: js.Array[Any], options: IDragOptions) = this()
+    def this(targets: Any, options: IDragOptions) = this()
     def this(targets: Unit, options: IDragOptions) = this()
     
     def init(): Unit = js.native
@@ -63,22 +63,22 @@ object physicsMod {
   
   @JSImport("famous/physics", "Force")
   @js.native
-  class Force () extends StObject {
-    def this(targets: js.Any) = this()
-    def this(targets: js.Array[js.Any]) = this()
-    def this(targets: js.Any, options: IForceOptions) = this()
-    def this(targets: js.Array[js.Any], options: IForceOptions) = this()
+  open class Force () extends StObject {
+    def this(targets: js.Array[Any]) = this()
+    def this(targets: Any) = this()
+    def this(targets: js.Array[Any], options: IForceOptions) = this()
+    def this(targets: Any, options: IForceOptions) = this()
     def this(targets: Unit, options: IForceOptions) = this()
     
-    def addTarget(target: js.Any): Unit = js.native
+    def addTarget(target: Any): Unit = js.native
     
-    def init(options: js.Any): Unit = js.native
+    def init(options: Any): Unit = js.native
     
-    def removeTarget(target: js.Any): Unit = js.native
+    def removeTarget(target: Any): Unit = js.native
     
-    def setOptions(options: js.Any): Unit = js.native
+    def setOptions(options: Any): Unit = js.native
     
-    var targets: js.Array[js.Any] = js.native
+    var targets: js.Array[Any] = js.native
     
     def update(): Unit = js.native
     def update(time: Double): Unit = js.native
@@ -88,7 +88,7 @@ object physicsMod {
   
   @JSImport("famous/physics", "Particle")
   @js.native
-  class Particle () extends StObject {
+  open class Particle () extends StObject {
     def this(options: IParticleOptions) = this()
     
     var angularMomentum: Vec3 = js.native
@@ -145,9 +145,9 @@ object physicsMod {
     
     var momentum: Vec3 = js.native
     
-    def off(key: String, callback: js.Function1[/* payload */ js.Any, Unit]): Unit = js.native
+    def off(key: String, callback: js.Function1[/* payload */ Any, Unit]): Unit = js.native
     
-    def on(key: String, callback: js.Function1[/* payload */ js.Any, Unit]): Unit = js.native
+    def on(key: String, callback: js.Function1[/* payload */ Any, Unit]): Unit = js.native
     
     var orientation: Quaternion = js.native
     
@@ -183,7 +183,7 @@ object physicsMod {
     
     var torque: Vec3 = js.native
     
-    def trigger(key: String, payload: js.Any): Unit = js.native
+    def trigger(key: String, payload: Any): Unit = js.native
     
     var `type`: Double = js.native
     
@@ -198,42 +198,42 @@ object physicsMod {
   
   @JSImport("famous/physics", "PhysicsEngine")
   @js.native
-  class PhysicsEngine () extends StObject {
+  open class PhysicsEngine () extends StObject {
     
-    def add(args: js.Any*): PhysicsEngine = js.native
+    def add(args: Any*): PhysicsEngine = js.native
     
-    def addBody(body: js.Any): Unit = js.native
+    def addBody(body: Any): Unit = js.native
     
-    def addConstraint(body: js.Any): Unit = js.native
+    def addConstraint(body: Any): Unit = js.native
     
-    def addForce(body: js.Any): Unit = js.native
+    def addForce(body: Any): Unit = js.native
     
-    def getTransform(body: js.Any): IPhysicsTransform = js.native
+    def getTransform(body: Any): IPhysicsTransform = js.native
     
-    def off(key: String, callback: js.Function1[/* payload */ js.Any, Unit]): Unit = js.native
+    def off(key: String, callback: js.Function1[/* payload */ Any, Unit]): Unit = js.native
     
-    def on(key: String, callback: js.Function1[/* payload */ js.Any, Unit]): Unit = js.native
+    def on(key: String, callback: js.Function1[/* payload */ Any, Unit]): Unit = js.native
     
-    def remove(args: js.Any*): PhysicsEngine = js.native
+    def remove(args: Any*): PhysicsEngine = js.native
     
-    def removeBody(body: js.Any): Unit = js.native
+    def removeBody(body: Any): Unit = js.native
     
-    def removeConstraint(body: js.Any): Unit = js.native
+    def removeConstraint(body: Any): Unit = js.native
     
-    def removeForce(body: js.Any): Unit = js.native
+    def removeForce(body: Any): Unit = js.native
     
     def setOrientation(w: Double, x: Double, y: Double, z: Double): Unit = js.native
     
     def setOrigin(x: Double, y: Double, z: Double): Unit = js.native
     
-    def trigger(key: String, payload: js.Any): Unit = js.native
+    def trigger(key: String, payload: Any): Unit = js.native
     
     def update(time: Double): Unit = js.native
   }
   
   @JSImport("famous/physics", "RotationalSpring")
   @js.native
-  class RotationalSpring () extends Force {
+  open class RotationalSpring () extends Force {
     def this(source: Particle) = this()
     def this(source: Unit, targets: js.Array[Particle]) = this()
     def this(source: Unit, targets: Particle) = this()
@@ -261,7 +261,7 @@ object physicsMod {
   
   @JSImport("famous/physics", "Spring")
   @js.native
-  class Spring () extends Force {
+  open class Spring () extends Force {
     def this(source: Particle) = this()
     def this(source: Unit, targets: js.Array[Particle]) = this()
     def this(source: Unit, targets: Particle) = this()
@@ -291,7 +291,7 @@ object physicsMod {
     
     var stiffness: Double = js.native
     
-    def `type`(dist: js.Any, rMax: js.Any): Double = js.native
+    def `type`(dist: Any, rMax: Any): Double = js.native
   }
   /* static members */
   object Spring {
@@ -300,14 +300,14 @@ object physicsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def FENE(dist: js.Any, rMax: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FENE")(dist.asInstanceOf[js.Any], rMax.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def FENE(dist: Any, rMax: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FENE")(dist.asInstanceOf[js.Any], rMax.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def HOOKE(dist: js.Any, rMax: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("HOOKE")(dist.asInstanceOf[js.Any], rMax.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def HOOKE(dist: Any, rMax: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("HOOKE")(dist.asInstanceOf[js.Any], rMax.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSImport("famous/physics", "Wall")
   @js.native
-  class Wall protected () extends Particle {
+  open class Wall protected () extends Particle {
     def this(options: IWallOptions) = this()
     
     var invNormal: Vec3 = js.native
@@ -350,7 +350,7 @@ object physicsMod {
   
   trait IForceOptions extends StObject {
     
-    var targets: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var targets: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object IForceOptions {
     
@@ -361,11 +361,11 @@ object physicsMod {
     
     extension [Self <: IForceOptions](x: Self) {
       
-      inline def setTargets(value: js.Array[js.Any]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: js.Array[Any]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
       inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      inline def setTargetsVarargs(value: js.Any*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: Any*): Self = StObject.set(x, "targets", js.Array(value*))
     }
   }
   
@@ -436,7 +436,7 @@ object physicsMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value*))
       
       inline def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
       
@@ -461,11 +461,11 @@ object physicsMod {
       
       inline def setPosition(value: js.Array[Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      inline def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value :_*))
+      inline def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value*))
       
       inline def setRotation(value: js.Array[Double]): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      inline def setRotationVarargs(value: Double*): Self = StObject.set(x, "rotation", js.Array(value :_*))
+      inline def setRotationVarargs(value: Double*): Self = StObject.set(x, "rotation", js.Array(value*))
     }
   }
   
@@ -485,7 +485,7 @@ object physicsMod {
     
     var stiffness: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[js.Function2[/* dist */ js.Any, /* rMax */ js.Any, Double]] = js.undefined
+    var `type`: js.UndefOr[js.Function2[/* dist */ Any, /* rMax */ Any, Double]] = js.undefined
   }
   object IRotationalSpringOptions {
     
@@ -520,7 +520,7 @@ object physicsMod {
       
       inline def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
       
-      inline def setType(value: (/* dist */ js.Any, /* rMax */ js.Any) => Double): Self = StObject.set(x, "type", js.Any.fromFunction2(value))
+      inline def setType(value: (/* dist */ Any, /* rMax */ Any) => Double): Self = StObject.set(x, "type", js.Any.fromFunction2(value))
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
@@ -544,7 +544,7 @@ object physicsMod {
     
     var stiffness: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[js.Function2[/* dist */ js.Any, /* rMax */ js.Any, Double]] = js.undefined
+    var `type`: js.UndefOr[js.Function2[/* dist */ Any, /* rMax */ Any, Double]] = js.undefined
   }
   object ISpringOptions {
     
@@ -583,7 +583,7 @@ object physicsMod {
       
       inline def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
       
-      inline def setType(value: (/* dist */ js.Any, /* rMax */ js.Any) => Double): Self = StObject.set(x, "type", js.Any.fromFunction2(value))
+      inline def setType(value: (/* dist */ Any, /* rMax */ Any) => Double): Self = StObject.set(x, "type", js.Any.fromFunction2(value))
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }

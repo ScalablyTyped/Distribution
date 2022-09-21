@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for KeyManagementService.ListKeyRings.
-  */
 trait SchemaListKeyRingsResponse extends StObject {
   
   /**
@@ -15,15 +12,14 @@ trait SchemaListKeyRingsResponse extends StObject {
   var keyRings: js.UndefOr[js.Array[SchemaKeyRing]] = js.undefined
   
   /**
-    * A token to retrieve next page of results. Pass this value in
-    * ListKeyRingsRequest.page_token to retrieve the next page of results.
+    * A token to retrieve next page of results. Pass this value in ListKeyRingsRequest.page_token to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The total number of KeyRings that matched the query.
     */
-  var totalSize: js.UndefOr[Double] = js.undefined
+  var totalSize: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaListKeyRingsResponse {
   
@@ -38,13 +34,17 @@ object SchemaListKeyRingsResponse {
     
     inline def setKeyRingsUndefined: Self = StObject.set(x, "keyRings", js.undefined)
     
-    inline def setKeyRingsVarargs(value: SchemaKeyRing*): Self = StObject.set(x, "keyRings", js.Array(value :_*))
+    inline def setKeyRingsVarargs(value: SchemaKeyRing*): Self = StObject.set(x, "keyRings", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    
+    inline def setTotalSizeNull: Self = StObject.set(x, "totalSize", null)
     
     inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }

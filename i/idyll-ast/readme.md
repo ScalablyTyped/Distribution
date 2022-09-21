@@ -10,10 +10,10 @@ Utilities for manipulating Idyll's AST
 | ------------------ | :-------------: |
 | Full name          | idyll-ast |
 | Keywords           | idyll, ast |
-| # releases         | 18 |
-| # dependents       | 6 |
-| # downloads        | 4329 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 704.6666666666666 |
+| # stars            | 1894.0 |
 
 ## Links
 - [Homepage](https://github.com/idyll-lang/idyll/tree/master/packages/idyll-ast)

@@ -2,7 +2,6 @@ package typings.sliceSource
 
 import typings.std.ReadableStream
 import typings.std.ReadableStreamReader
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(source: SliceSource): SliceSource = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[SliceSource]
-  inline def apply(source: ReadableStream[js.Any]): SliceSource = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[SliceSource]
-  inline def apply(source: ReadableStreamReader[js.Any]): SliceSource = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[SliceSource]
+  inline def apply(source: ReadableStream[Any]): SliceSource = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[SliceSource]
+  inline def apply(source: ReadableStreamReader[Any]): SliceSource = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[SliceSource]
   
   @JSImport("slice-source", JSImport.Namespace)
   @js.native
@@ -21,11 +20,11 @@ object mod {
     
     var done: Boolean
     
-    var value: Uint8Array
+    var value: js.typedarray.Uint8Array
   }
   object SliceChunk {
     
-    inline def apply(done: Boolean, value: Uint8Array): SliceChunk = {
+    inline def apply(done: Boolean, value: js.typedarray.Uint8Array): SliceChunk = {
       val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SliceChunk]
     }
@@ -34,7 +33,7 @@ object mod {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.typedarray.Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,14 +43,14 @@ object mod {
     
     def read(): js.Promise[SliceChunk]
     
-    def slice(length: Double): js.Promise[Uint8Array]
+    def slice(length: Double): js.Promise[js.typedarray.Uint8Array]
   }
   object SliceSource {
     
     inline def apply(
       cancel: () => js.Promise[Unit],
       read: () => js.Promise[SliceChunk],
-      slice: Double => js.Promise[Uint8Array]
+      slice: Double => js.Promise[js.typedarray.Uint8Array]
     ): SliceSource = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), read = js.Any.fromFunction0(read), slice = js.Any.fromFunction1(slice))
       __obj.asInstanceOf[SliceSource]
@@ -63,7 +62,7 @@ object mod {
       
       inline def setRead(value: () => js.Promise[SliceChunk]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       
-      inline def setSlice(value: Double => js.Promise[Uint8Array]): Self = StObject.set(x, "slice", js.Any.fromFunction1(value))
+      inline def setSlice(value: Double => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "slice", js.Any.fromFunction1(value))
     }
   }
 }

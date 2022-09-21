@@ -27,7 +27,7 @@ trait XItemList extends StObject {
     * @see setItemData
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Position` is invalid.
     */
-  def getItemData(Position: Double): js.Any
+  def getItemData(Position: Double): Any
   
   /**
     * retrieves the URL of the image of an existing item
@@ -98,7 +98,7 @@ trait XItemList extends StObject {
     * @see getItemData
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Position` is invalid.
     */
-  def setItemData(Position: Double, ItemData: js.Any): Unit
+  def setItemData(Position: Double, ItemData: Any): Unit
   
   /**
     * sets a new image for an existing item
@@ -132,7 +132,7 @@ object XItemList {
     ItemCount: Double,
     addItemListListener: XItemListListener => Unit,
     getAllItems: () => SafeArray[Pair[String, String]],
-    getItemData: Double => js.Any,
+    getItemData: Double => Any,
     getItemImage: Double => String,
     getItemText: Double => String,
     getItemTextAndImage: Double => Pair[String, String],
@@ -142,7 +142,7 @@ object XItemList {
     removeAllItems: () => Unit,
     removeItem: Double => Unit,
     removeItemListListener: XItemListListener => Unit,
-    setItemData: (Double, js.Any) => Unit,
+    setItemData: (Double, Any) => Unit,
     setItemImage: (Double, String) => Unit,
     setItemText: (Double, String) => Unit,
     setItemTextAndImage: (Double, String, String) => Unit
@@ -159,7 +159,7 @@ object XItemList {
     
     inline def setGetAllItems(value: () => SafeArray[Pair[String, String]]): Self = StObject.set(x, "getAllItems", js.Any.fromFunction0(value))
     
-    inline def setGetItemData(value: Double => js.Any): Self = StObject.set(x, "getItemData", js.Any.fromFunction1(value))
+    inline def setGetItemData(value: Double => Any): Self = StObject.set(x, "getItemData", js.Any.fromFunction1(value))
     
     inline def setGetItemImage(value: Double => String): Self = StObject.set(x, "getItemImage", js.Any.fromFunction1(value))
     
@@ -181,7 +181,7 @@ object XItemList {
     
     inline def setRemoveItemListListener(value: XItemListListener => Unit): Self = StObject.set(x, "removeItemListListener", js.Any.fromFunction1(value))
     
-    inline def setSetItemData(value: (Double, js.Any) => Unit): Self = StObject.set(x, "setItemData", js.Any.fromFunction2(value))
+    inline def setSetItemData(value: (Double, Any) => Unit): Self = StObject.set(x, "setItemData", js.Any.fromFunction2(value))
     
     inline def setSetItemImage(value: (Double, String) => Unit): Self = StObject.set(x, "setItemImage", js.Any.fromFunction2(value))
     

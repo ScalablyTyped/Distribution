@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Service extends StObject {
   
+  /** @deprecated in favor of `kmsKeyArn` at the provider level  */
   var awsKmsKeyArn: js.UndefOr[String] = js.undefined
   
   var name: String

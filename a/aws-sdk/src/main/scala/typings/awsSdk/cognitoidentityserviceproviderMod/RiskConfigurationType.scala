@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RiskConfigurationType extends StObject {
   
   /**
-    * The account takeover risk configuration object including the NotifyConfiguration object and Actions to take in the case of an account takeover.
+    * The account takeover risk configuration object, including the NotifyConfiguration object and Actions to take if there is an account takeover.
     */
   var AccountTakeoverRiskConfiguration: js.UndefOr[AccountTakeoverRiskConfigurationType] = js.undefined
   
@@ -17,14 +17,14 @@ trait RiskConfigurationType extends StObject {
   var ClientId: js.UndefOr[ClientIdType] = js.undefined
   
   /**
-    * The compromised credentials risk configuration object including the EventFilter and the EventAction 
+    * The compromised credentials risk configuration object, including the EventFilter and the EventAction.
     */
   var CompromisedCredentialsRiskConfiguration: js.UndefOr[CompromisedCredentialsRiskConfigurationType] = js.undefined
   
   /**
     * The last modified date.
     */
-  var LastModifiedDate: js.UndefOr[DateType] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The configuration to override the risk decision.
@@ -57,7 +57,7 @@ object RiskConfigurationType {
     
     inline def setCompromisedCredentialsRiskConfigurationUndefined: Self = StObject.set(x, "CompromisedCredentialsRiskConfiguration", js.undefined)
     
-    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     

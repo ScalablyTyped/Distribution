@@ -9,7 +9,7 @@ object Directions {
   
   @JSGlobal("Microsoft.Maps.Directions.DirectionsManager")
   @js.native
-  class DirectionsManager protected ()
+  open class DirectionsManager protected ()
     extends StObject
        with typings.bingmaps.Microsoft.Maps.Directions.DirectionsManager {
     /**
@@ -160,7 +160,7 @@ object Directions {
   
   @JSGlobal("Microsoft.Maps.Directions.Waypoint")
   @js.native
-  class Waypoint protected ()
+  open class Waypoint protected ()
     extends StObject
        with typings.bingmaps.Microsoft.Maps.Directions.Waypoint {
     /**

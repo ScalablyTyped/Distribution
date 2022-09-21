@@ -4,6 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Provides a utility method for deeply cloning objects with properties that are computed or have their own `clone()` method, such as [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-lang.html)
+  */
 trait lang extends StObject {
   
   /**
@@ -11,11 +16,11 @@ trait lang extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-lang.html#clone)
     */
-  def clone(elem: js.Any): js.Any
+  def clone(elem: Any): Any
 }
 object lang {
   
-  inline def apply(clone_ : js.Any => js.Any): lang = {
+  inline def apply(clone_ : Any => Any): lang = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("clone")(js.Any.fromFunction1(clone_))
     __obj.asInstanceOf[lang]
@@ -23,6 +28,6 @@ object lang {
   
   extension [Self <: lang](x: Self) {
     
-    inline def setClone_(value: js.Any => js.Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
+    inline def setClone_(value: Any => Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
   }
 }

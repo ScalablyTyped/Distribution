@@ -13,9 +13,9 @@ object isConformantMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isConformant_componentPath(
+  inline def isConformant_componentPath[TProps](
     testInfo: (Omit[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IsConformantOptions */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IsConformantOptions<TProps> */ Any, 
       componentPath
     ]) & ComponentPath
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isConformant")(testInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]

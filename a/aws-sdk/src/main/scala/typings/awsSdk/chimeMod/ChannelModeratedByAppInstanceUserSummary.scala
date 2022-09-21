@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChannelModeratedByAppInstanceUserSummary extends StObject {
   
+  /**
+    * Summary of the details of a Channel.
+    */
   var ChannelSummary: js.UndefOr[typings.awsSdk.chimeMod.ChannelSummary] = js.undefined
 }
 object ChannelModeratedByAppInstanceUserSummary {

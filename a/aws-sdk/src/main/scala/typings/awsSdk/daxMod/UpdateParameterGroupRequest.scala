@@ -12,7 +12,7 @@ trait UpdateParameterGroupRequest extends StObject {
   var ParameterGroupName: String
   
   /**
-    * An array of name-value pairs for the parameters in the group. Each element in the array represents a single parameter.
+    * An array of name-value pairs for the parameters in the group. Each element in the array represents a single parameter.   record-ttl-millis and query-ttl-millis are the only supported parameter names. For more details, see Configuring TTL Settings. 
     */
   var ParameterNameValues: ParameterNameValueList
 }
@@ -29,6 +29,6 @@ object UpdateParameterGroupRequest {
     
     inline def setParameterNameValues(value: ParameterNameValueList): Self = StObject.set(x, "ParameterNameValues", value.asInstanceOf[js.Any])
     
-    inline def setParameterNameValuesVarargs(value: ParameterNameValue*): Self = StObject.set(x, "ParameterNameValues", js.Array(value :_*))
+    inline def setParameterNameValuesVarargs(value: ParameterNameValue*): Self = StObject.set(x, "ParameterNameValues", js.Array(value*))
   }
 }

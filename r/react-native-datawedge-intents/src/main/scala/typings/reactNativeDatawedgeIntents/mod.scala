@@ -54,11 +54,11 @@ object mod {
       
       inline def setFilterActions(value: js.Array[String]): Self = StObject.set(x, "filterActions", value.asInstanceOf[js.Any])
       
-      inline def setFilterActionsVarargs(value: String*): Self = StObject.set(x, "filterActions", js.Array(value :_*))
+      inline def setFilterActionsVarargs(value: String*): Self = StObject.set(x, "filterActions", js.Array(value*))
       
       inline def setFilterCategories(value: js.Array[String]): Self = StObject.set(x, "filterCategories", value.asInstanceOf[js.Any])
       
-      inline def setFilterCategoriesVarargs(value: String*): Self = StObject.set(x, "filterCategories", js.Array(value :_*))
+      inline def setFilterCategoriesVarargs(value: String*): Self = StObject.set(x, "filterCategories", js.Array(value*))
     }
   }
 }

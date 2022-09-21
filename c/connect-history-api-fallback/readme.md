@@ -10,10 +10,10 @@ Provides a fallback for non-existing directories so that the HTML 5 history API 
 | ------------------ | :-------------: |
 | Full name          | connect-history-api-fallback |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 868 |
-| # downloads        | 301426141 |
-| # stars            | 20 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4.4745165666666664E7 |
+| # stars            | 1684.0 |
 
 ## Links
 - [Homepage](https://github.com/bripkens/connect-history-api-fallback#readme)

@@ -6,8 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ButtonProperties
   extends StObject
-     with ComponentProperties
-     with ComponentWithIcon {
+     with ComponentWithIconProperties {
+  
+  /**
+    * Specifies the type of button this is. Default is Normal.
+    */
+  var buttonType: js.UndefOr[ButtonType] = js.undefined
+  
+  /**
+    * Description text to display inside button element.
+    */
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The content of the currently selected file
@@ -15,7 +24,13 @@ trait ButtonProperties
   var fileContent: js.UndefOr[String] = js.undefined
   
   /**
+    * The file type filter used for the file input dialog box - only used when the button type is File
+    */
+  var fileType: js.UndefOr[String] = js.undefined
+  
+  /**
     * Whether the button opens the file browser dialog
+    * @deprecated Use fileType instead
     */
   var isFile: js.UndefOr[Boolean] = js.undefined
   
@@ -25,11 +40,9 @@ trait ButtonProperties
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * @deprecated This will be moved to `ComponentWithIconProperties`
-    *
-    * The title for the button. This title will show when hovered over
+    * Specifies whether this is a secondary button. Default value is false.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var secondary: js.UndefOr[Boolean] = js.undefined
 }
 object ButtonProperties {
   
@@ -40,9 +53,21 @@ object ButtonProperties {
   
   extension [Self <: ButtonProperties](x: Self) {
     
+    inline def setButtonType(value: ButtonType): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
+    
+    inline def setButtonTypeUndefined: Self = StObject.set(x, "buttonType", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
     inline def setFileContent(value: String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
     
     inline def setFileContentUndefined: Self = StObject.set(x, "fileContent", js.undefined)
+    
+    inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+    
+    inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
     inline def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
     
@@ -52,8 +77,8 @@ object ButtonProperties {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setSecondary(value: Boolean): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
-    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
   }
 }

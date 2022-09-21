@@ -145,14 +145,14 @@ object Casting {
   @js.native
   trait CastingConnection extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_erroroccurred(
       `type`: erroroccurred,
       listener: TypedEventHandler[CastingConnection, CastingConnectionErrorOccurredEventArgs]
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_statechanged(`type`: statechanged, listener: TypedEventHandler[CastingConnection, js.Any]): Unit = js.native
+    def addEventListener_statechanged(`type`: statechanged, listener: TypedEventHandler[CastingConnection, Any]): Unit = js.native
     
     /** Closes the casting connection. */
     def close(): Unit = js.native
@@ -173,19 +173,19 @@ object Casting {
     var onerroroccurred_Original: TypedEventHandler[CastingConnection, CastingConnectionErrorOccurredEventArgs] = js.native
     
     /** Indicates a change in the State property. */
-    def onstatechanged(ev: js.Any & WinRTEvent[CastingConnection]): Unit = js.native
+    def onstatechanged(ev: Any & WinRTEvent[CastingConnection]): Unit = js.native
     /** Indicates a change in the State property. */
     @JSName("onstatechanged")
-    var onstatechanged_Original: TypedEventHandler[CastingConnection, js.Any] = js.native
+    var onstatechanged_Original: TypedEventHandler[CastingConnection, Any] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_erroroccurred(
       `type`: erroroccurred,
       listener: TypedEventHandler[CastingConnection, CastingConnectionErrorOccurredEventArgs]
     ): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_statechanged(`type`: statechanged, listener: TypedEventHandler[CastingConnection, js.Any]): Unit = js.native
+    def removeEventListener_statechanged(`type`: statechanged, listener: TypedEventHandler[CastingConnection, Any]): Unit = js.native
     
     /**
       * Starts the process of casting to a casting device. When called, this method pairs the c sting device, if necessary, and verifies access to the casting device with the user. If the user denies the app access to the device, casting fails. Otherwise, a connection is established, and content is sent to the device. During this time, the connection state changes to connecting, then to connected. If a casting source is set, the state changes to rendering once playback begins.
@@ -280,9 +280,9 @@ object Casting {
   @js.native
   trait CastingDevicePicker extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_castingdevicepickerdismissed(`type`: castingdevicepickerdismissed, listener: TypedEventHandler[CastingDevicePicker, js.Any]): Unit = js.native
+    def addEventListener_castingdevicepickerdismissed(`type`: castingdevicepickerdismissed, listener: TypedEventHandler[CastingDevicePicker, Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_castingdeviceselected(
       `type`: castingdeviceselected,
@@ -299,10 +299,10 @@ object Casting {
     def hide(): Unit = js.native
     
     /** Indicates that the user has dismissed the picker UI. */
-    def oncastingdevicepickerdismissed(ev: js.Any & WinRTEvent[CastingDevicePicker]): Unit = js.native
+    def oncastingdevicepickerdismissed(ev: Any & WinRTEvent[CastingDevicePicker]): Unit = js.native
     /** Indicates that the user has dismissed the picker UI. */
     @JSName("oncastingdevicepickerdismissed")
-    var oncastingdevicepickerdismissed_Original: TypedEventHandler[CastingDevicePicker, js.Any] = js.native
+    var oncastingdevicepickerdismissed_Original: TypedEventHandler[CastingDevicePicker, Any] = js.native
     
     /** Indicates that the user has selected a device from the picker. */
     def oncastingdeviceselected(ev: CastingDeviceSelectedEventArgs & WinRTEvent[CastingDevicePicker]): Unit = js.native
@@ -310,9 +310,9 @@ object Casting {
     @JSName("oncastingdeviceselected")
     var oncastingdeviceselected_Original: TypedEventHandler[CastingDevicePicker, CastingDeviceSelectedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_castingdevicepickerdismissed(`type`: castingdevicepickerdismissed, listener: TypedEventHandler[CastingDevicePicker, js.Any]): Unit = js.native
+    def removeEventListener_castingdevicepickerdismissed(`type`: castingdevicepickerdismissed, listener: TypedEventHandler[CastingDevicePicker, Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_castingdeviceselected(
       `type`: castingdeviceselected,

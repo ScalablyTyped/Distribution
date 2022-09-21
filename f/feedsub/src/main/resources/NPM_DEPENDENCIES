@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "feedsub" : "0.7.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "feedsub" : "0.7.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

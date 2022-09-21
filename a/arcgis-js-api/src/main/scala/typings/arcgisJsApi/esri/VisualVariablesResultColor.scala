@@ -18,7 +18,7 @@ trait VisualVariablesResultColor
   var colorScheme: ColorScheme
   
   /**
-    * A color visual variable configured based on the statistics of the data and the given basemap and scheme.
+    * A color visual variable configured based on the statistics of the data and the color scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
     */

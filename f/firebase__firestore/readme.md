@@ -1,19 +1,19 @@
 
 # Scala.js typings for firebase__firestore
 
-Typings are for version 1.15.5
+Typings are for version 3.5.0
 
 ## Library description:
-This is the [Cloud Firestore](https://firebase.google.com/docs/firestore/) component of the [Firebase JS SDK](https://www.npmjs.com/package/firebase).
+The Cloud Firestore component of the Firebase JS SDK.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @firebase/firestore |
 | Keywords           | - |
-| # releases         | 1024 |
-| # dependents       | 17 |
-| # downloads        | 17667526 |
-| # stars            | 2 |
+| # releases         | 1346 |
+| # dependents       | 0.0 |
+| # downloads        | 5342580.666666667 |
+| # stars            | 4194.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

@@ -4,29 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The transformation to apply to the field.
-  */
 trait SchemaGooglePrivacyDlpV2FieldTransformation extends StObject {
   
   /**
-    * Only apply the transformation if the condition evaluates to true for the
-    * given `RecordCondition`. The conditions are allowed to reference fields
-    * that are not used in the actual transformation. [optional]  Example Use
-    * Cases:  - Apply a different bucket transformation to an age column if the
-    * zip code column for the same record is within a specific range. - Redact
-    * a field if the date of birth field is greater than 85.
+    * Only apply the transformation if the condition evaluates to true for the given `RecordCondition`. The conditions are allowed to reference fields that are not used in the actual transformation. Example Use Cases: - Apply a different bucket transformation to an age column if the zip code column for the same record is within a specific range. - Redact a field if the date of birth field is greater than 85.
     */
   var condition: js.UndefOr[SchemaGooglePrivacyDlpV2RecordCondition] = js.undefined
   
   /**
-    * Input field(s) to apply the transformation to. [required]
+    * Required. Input field(s) to apply the transformation to. When you have columns that reference their position within a list, omit the index from the FieldId. FieldId name matching ignores the index. For example, instead of "contact.nums[0].type", use "contact.nums.type".
     */
   var fields: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldId]] = js.undefined
   
   /**
-    * Treat the contents of the field as free text, and selectively transform
-    * content that matches an `InfoType`.
+    * Treat the contents of the field as free text, and selectively transform content that matches an `InfoType`.
     */
   var infoTypeTransformations: js.UndefOr[SchemaGooglePrivacyDlpV2InfoTypeTransformations] = js.undefined
   
@@ -52,7 +43,7 @@ object SchemaGooglePrivacyDlpV2FieldTransformation {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setInfoTypeTransformations(value: SchemaGooglePrivacyDlpV2InfoTypeTransformations): Self = StObject.set(x, "infoTypeTransformations", value.asInstanceOf[js.Any])
     

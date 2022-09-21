@@ -14,7 +14,7 @@ trait EventEmitter extends StObject {
     * @param data 事件数据
     */
   def emit(eventName: String): this.type = js.native
-  def emit(eventName: String, data: js.Any): this.type = js.native
+  def emit(eventName: String, data: Any): this.type = js.native
   
   /**
     * 移除事件绑定
@@ -22,8 +22,8 @@ trait EventEmitter extends StObject {
     * @param handler 事件功能函数
     * @param context 事件上下文
     */
-  def off[C](eventName: String, handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit]): this.type = js.native
-  def off[C](eventName: String, handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit], context: C): this.type = js.native
+  def off[C](eventName: String, handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit]): this.type = js.native
+  def off[C](eventName: String, handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit], context: C): this.type = js.native
   @JSName("off")
   def off_mv[C](eventName: String, handler: mv): this.type = js.native
   @JSName("off")
@@ -37,44 +37,44 @@ trait EventEmitter extends StObject {
     * @param once 触发一次
     * @param unshift 更改事件顺序
     */
-  def on[C](eventName: String, handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit]): this.type = js.native
-  def on[C](eventName: String, handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit], context: C): this.type = js.native
+  def on[C](eventName: String, handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit]): this.type = js.native
+  def on[C](eventName: String, handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit], context: C): this.type = js.native
   def on[C](
     eventName: String,
-    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
+    handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit],
     context: C,
     once: Boolean
   ): this.type = js.native
   def on[C](
     eventName: String,
-    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
+    handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit],
     context: C,
     once: Boolean,
     unshift: Boolean
   ): this.type = js.native
   def on[C](
     eventName: String,
-    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
+    handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit],
     context: C,
     once: Unit,
     unshift: Boolean
   ): this.type = js.native
   def on[C](
     eventName: String,
-    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
+    handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit],
     context: Unit,
     once: Boolean
   ): this.type = js.native
   def on[C](
     eventName: String,
-    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
+    handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit],
     context: Unit,
     once: Boolean,
     unshift: Boolean
   ): this.type = js.native
   def on[C](
     eventName: String,
-    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
+    handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit],
     context: Unit,
     once: Unit,
     unshift: Boolean

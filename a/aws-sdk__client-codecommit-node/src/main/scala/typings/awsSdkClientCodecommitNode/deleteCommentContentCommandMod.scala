@@ -16,7 +16,7 @@ object deleteCommentContentCommandMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/commands/DeleteCommentContentCommand", "DeleteCommentContentCommand")
   @js.native
-  class DeleteCommentContentCommand protected ()
+  open class DeleteCommentContentCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object deleteCommentContentCommandMod {
     override val middlewareStack: MiddlewareStack[DeleteCommentContentInput, DeleteCommentContentOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: CodeCommitResolvedConfiguration
     ): Handler[DeleteCommentContentInput, DeleteCommentContentOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: CodeCommitResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DeleteCommentContentInput, DeleteCommentContentOutput] = js.native
   }
 }

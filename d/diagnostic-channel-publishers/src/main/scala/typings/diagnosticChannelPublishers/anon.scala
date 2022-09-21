@@ -1,6 +1,5 @@
 package typings.diagnosticChannelPublishers
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,22 +8,22 @@ object anon {
   
   trait Args extends StObject {
     
-    var args: js.Array[js.Any]
+    var args: js.Array[Any]
     
     var text: String
   }
   object Args {
     
-    inline def apply(args: js.Array[js.Any], text: String): Args = {
+    inline def apply(args: js.Array[Any], text: String): Args = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Args]
     }
     
     extension [Self <: Args](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
@@ -32,22 +31,22 @@ object anon {
   
   trait Command extends StObject {
     
-    var command: js.UndefOr[js.Any] = js.undefined
+    var command: js.UndefOr[Any] = js.undefined
     
     var databaseName: js.UndefOr[String] = js.undefined
     
-    var time: Date
+    var time: js.Date
   }
   object Command {
     
-    inline def apply(time: Date): Command = {
+    inline def apply(time: js.Date): Command = {
       val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[Command]
     }
     
     extension [Self <: Command](x: Self) {
       
-      inline def setCommand(value: js.Any): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: Any): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
       inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
       
@@ -55,7 +54,7 @@ object anon {
       
       inline def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
       
-      inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,7 +66,7 @@ object anon {
     
     var failure: js.UndefOr[String] = js.undefined
     
-    var reply: js.UndefOr[js.Any] = js.undefined
+    var reply: js.UndefOr[Any] = js.undefined
   }
   object CommandName {
     
@@ -90,7 +89,7 @@ object anon {
       
       inline def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
       
-      inline def setReply(value: js.Any): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
+      inline def setReply(value: Any): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
       
       inline def setReplyUndefined: Self = StObject.set(x, "reply", js.undefined)
     }

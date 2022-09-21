@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.PageRequestFailedEventArgs")
 @js.native
-class PageRequestFailedEventArgs ()
+open class PageRequestFailedEventArgs ()
   extends StObject
      with typings.sharepoint.SP.PageRequestFailedEventArgs {
   

@@ -29,12 +29,12 @@ object BatchCheckLayerAvailabilityResponse {
     
     inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    inline def setFailuresVarargs(value: LayerFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: LayerFailure*): Self = StObject.set(x, "failures", js.Array(value*))
     
     inline def setLayers(value: LayerList): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value*))
   }
 }

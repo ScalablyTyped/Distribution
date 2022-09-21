@@ -48,13 +48,13 @@ object Id {
     
     inline def setNote(value: js.Array[String]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    inline def setNoteVarargs(value: String*): Self = StObject.set(x, "note", js.Array(value :_*))
+    inline def setNoteVarargs(value: String*): Self = StObject.set(x, "note", js.Array(value*))
     
     inline def setPosition(value: Latitude): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setShape(value: js.Array[String]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    inline def setShapeVarargs(value: String*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setShapeVarargs(value: String*): Self = StObject.set(x, "shape", js.Array(value*))
     
     inline def setTravelTime(value: Double): Self = StObject.set(x, "travelTime", value.asInstanceOf[js.Any])
     

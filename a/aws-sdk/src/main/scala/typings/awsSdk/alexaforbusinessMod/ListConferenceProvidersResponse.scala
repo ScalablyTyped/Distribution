@@ -29,7 +29,7 @@ object ListConferenceProvidersResponse {
     
     inline def setConferenceProvidersUndefined: Self = StObject.set(x, "ConferenceProviders", js.undefined)
     
-    inline def setConferenceProvidersVarargs(value: ConferenceProvider*): Self = StObject.set(x, "ConferenceProviders", js.Array(value :_*))
+    inline def setConferenceProvidersVarargs(value: ConferenceProvider*): Self = StObject.set(x, "ConferenceProviders", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

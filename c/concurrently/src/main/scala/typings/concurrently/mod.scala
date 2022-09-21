@@ -1,151 +1,239 @@
 package typings.concurrently
 
-import typings.concurrently.concurrentlyStrings.command
-import typings.concurrently.concurrentlyStrings.failure
-import typings.concurrently.concurrentlyStrings.first
-import typings.concurrently.concurrentlyStrings.index
-import typings.concurrently.concurrentlyStrings.last
-import typings.concurrently.concurrentlyStrings.name
-import typings.concurrently.concurrentlyStrings.none
-import typings.concurrently.concurrentlyStrings.pid
-import typings.concurrently.concurrentlyStrings.success
-import typings.concurrently.concurrentlyStrings.time
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
-import typings.node.processMod.global.NodeJS.ProcessEnv
+import typings.concurrently.anon.CommandInfoindexnumber
+import typings.concurrently.anon.Conditions
+import typings.concurrently.anon.DefaultInputTarget
+import typings.concurrently.anon.Delay
+import typings.concurrently.anon.Hide
+import typings.concurrently.anon.PartialConcurrentlyOption
+import typings.concurrently.anon.PartialConcurrentlyOptionAdditionalArguments
+import typings.concurrently.anon.Process
+import typings.concurrently.anon.TimestampFormat
+import typings.concurrently.commandMod.ChildProcess
+import typings.concurrently.commandMod.CloseEvent
+import typings.concurrently.commandMod.CommandIdentifier
+import typings.concurrently.commandMod.KillProcess
+import typings.concurrently.commandMod.SpawnCommand
+import typings.concurrently.concurrentlyMod.ConcurrentlyCommandInput
+import typings.concurrently.concurrentlyMod.ConcurrentlyResult
+import typings.concurrently.flowControllerMod.FlowController
+import typings.concurrently.killOthersMod.ProcessCloseCondition
+import typings.concurrently.logTimingsMod.TimingInfo
+import typings.node.childProcessMod.SpawnOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(commands: js.Array[CommandObj | String]): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
-  inline def apply(commands: js.Array[CommandObj | String], options: Options): js.Promise[Null] = (^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Null]]
-  
   @JSImport("concurrently", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  trait CommandObj extends StObject {
-    
-    var command: String
-    
-    var env: js.UndefOr[ProcessEnv] = js.undefined
-    
-    var name: js.UndefOr[String] = js.undefined
-    
-    var prefixColor: js.UndefOr[String] = js.undefined
-  }
-  object CommandObj {
-    
-    inline def apply(command: String): CommandObj = {
-      val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CommandObj]
-    }
-    
-    extension [Self <: CommandObj](x: Self) {
-      
-      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
-      
-      inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
-      
-      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setPrefixColor(value: String): Self = StObject.set(x, "prefixColor", value.asInstanceOf[js.Any])
-      
-      inline def setPrefixColorUndefined: Self = StObject.set(x, "prefixColor", js.undefined)
-    }
+  inline def default(commands: js.Array[ConcurrentlyCommandInput]): ConcurrentlyResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(commands.asInstanceOf[js.Any]).asInstanceOf[ConcurrentlyResult]
+  inline def default(
+    commands: js.Array[ConcurrentlyCommandInput],
+    options: PartialConcurrentlyOptionAdditionalArguments
+  ): ConcurrentlyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(commands.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ConcurrentlyResult]
+  
+  @JSImport("concurrently", "Command")
+  @js.native
+  open class Command protected ()
+    extends typings.concurrently.commandMod.Command {
+    def this(
+      hasIndexNameCommandPrefixColorEnvCwd: CommandInfoindexnumber,
+      spawnOpts: SpawnOptions,
+      spawn: SpawnCommand,
+      killProcess: KillProcess
+    ) = this()
   }
   
-  trait Options extends StObject {
+  @JSImport("concurrently", "InputHandler")
+  @js.native
+  open class InputHandler protected ()
+    extends typings.concurrently.inputHandlerMod.InputHandler {
+    def this(hasDefaultInputTargetInputStreamPauseInputStreamOnFinishLogger: DefaultInputTarget) = this()
+  }
+  
+  @JSImport("concurrently", "KillOnSignal")
+  @js.native
+  open class KillOnSignal protected ()
+    extends typings.concurrently.killOnSignalMod.KillOnSignal {
+    def this(hasProcess: Process) = this()
+  }
+  
+  @JSImport("concurrently", "KillOthers")
+  @js.native
+  open class KillOthers protected ()
+    extends typings.concurrently.killOthersMod.KillOthers {
+    def this(hasLoggerConditions: Conditions) = this()
+  }
+  
+  @JSImport("concurrently", "LogError")
+  @js.native
+  open class LogError protected ()
+    extends typings.concurrently.logErrorMod.LogError {
+    def this(hasLogger: typings.concurrently.anon.Logger) = this()
+  }
+  
+  @JSImport("concurrently", "LogExit")
+  @js.native
+  open class LogExit protected ()
+    extends typings.concurrently.logExitMod.LogExit {
+    def this(hasLogger: typings.concurrently.anon.Logger) = this()
+  }
+  
+  @JSImport("concurrently", "LogOutput")
+  @js.native
+  open class LogOutput protected ()
+    extends typings.concurrently.logOutputMod.LogOutput {
+    def this(hasLogger: typings.concurrently.anon.Logger) = this()
+  }
+  
+  @JSImport("concurrently", "LogTimings")
+  @js.native
+  open class LogTimings protected ()
+    extends typings.concurrently.logTimingsMod.LogTimings {
+    def this(hasLoggerTimestampFormat: TimestampFormat) = this()
+  }
+  /* static members */
+  object LogTimings {
     
-    /** the default input target when reading from `inputStream`. Default: `0`. */
-    var defaultInputTarget: js.UndefOr[Double] = js.undefined
+    @JSImport("concurrently", "LogTimings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    /** a Readable stream to read the input from, eg `process.stdin` */
-    var inputStream: js.UndefOr[ReadableStream] = js.undefined
+    inline def mapCloseEventToTimingInfo(hasCommandTimingsKilledExitCode: CloseEvent): TimingInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("mapCloseEventToTimingInfo")(hasCommandTimingsKilledExitCode.asInstanceOf[js.Any]).asInstanceOf[TimingInfo]
+  }
+  
+  @JSImport("concurrently", "Logger")
+  @js.native
+  open class Logger protected ()
+    extends typings.concurrently.loggerMod.Logger {
+    def this(hasHidePrefixFormatPrefixLengthRawTimestampFormat: Hide) = this()
+  }
+  
+  @JSImport("concurrently", "RestartProcess")
+  @js.native
+  open class RestartProcess protected ()
+    extends typings.concurrently.restartProcessMod.RestartProcess {
+    def this(hasDelayTriesLoggerScheduler: Delay) = this()
+  }
+  
+  inline def concurrently(baseCommands: js.Array[ConcurrentlyCommandInput]): ConcurrentlyResult = ^.asInstanceOf[js.Dynamic].applyDynamic("concurrently")(baseCommands.asInstanceOf[js.Any]).asInstanceOf[ConcurrentlyResult]
+  inline def concurrently(baseCommands: js.Array[ConcurrentlyCommandInput], baseOptions: PartialConcurrentlyOption): ConcurrentlyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("concurrently")(baseCommands.asInstanceOf[js.Any], baseOptions.asInstanceOf[js.Any])).asInstanceOf[ConcurrentlyResult]
+  
+  trait ConcurrentlyOptions
+    extends StObject
+       with typings.concurrently.concurrentlyMod.ConcurrentlyOptions {
     
-    /** an array of exiting conditions that will cause a process to kill others. Can contain any of success or failure. */
-    var killOthers: js.UndefOr[js.Array[success | failure]] = js.undefined
+    var defaultInputTarget: js.UndefOr[CommandIdentifier] = js.undefined
+    
+    var handleInput: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * how many processes should run at once
-      * @default 0
+      * Which command(s) should have their output hidden.
       */
-    var maxProcesses: js.UndefOr[Double] = js.undefined
+    var hide: js.UndefOr[CommandIdentifier | js.Array[CommandIdentifier]] = js.undefined
     
-    /**  a Writable stream to write logs to. Default: `process.stdout` */
-    var outputStream: js.UndefOr[WritableStream] = js.undefined
+    var inputStream: js.UndefOr[Readable] = js.undefined
     
     /**
-      * the prefix type to use when logging processes output.
+      * Under which condition(s) should other commands be killed when the first one exits.
+      *
+      * @see KillOthers
       */
-    var prefix: js.UndefOr[index | pid | time | command | name | none | String] = js.undefined
+    var killOthers: js.UndefOr[ProcessCloseCondition | js.Array[ProcessCloseCondition]] = js.undefined
     
-    /** how many characters to show when prefixing with `command`. Default: `10` */
+    var pauseInputStreamOnFinish: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The prefix format to use when logging a command's output.
+      * Defaults to the command's index.
+      */
+    var prefix: js.UndefOr[String] = js.undefined
+    
+    /**
+      * How many characters should a prefix have at most, used when the prefix format is `command`.
+      */
     var prefixLength: js.UndefOr[Double] = js.undefined
     
-    /** whether raw mode should be used, meaning strictly process output will be logged, without any prefixes, colouring or extra stuff. */
-    var raw: js.UndefOr[Boolean] = js.undefined
-    
-    /** how many milliseconds to wait between process restarts. Default: 0 */
+    /**
+      * How much time in milliseconds to wait before restarting a command.
+      *
+      * @see RestartProcess
+      */
     var restartDelay: js.UndefOr[Double] = js.undefined
     
-    /** how many attempts to restart a process that dies will be made. Default: `0` */
+    /**
+      * How many times commands should be restarted when they exit with a failure.
+      *
+      * @see RestartProcess
+      */
     var restartTries: js.UndefOr[Double] = js.undefined
     
-    /** the condition to consider the run was successful. */
-    var successCondition: js.UndefOr[first | last] = js.undefined
-    
-    /** a date-fns format to use when prefixing with time. Default: `yyyy-MM-dd HH:mm:ss.ZZZ` */
+    /**
+      * Date format used when logging date/time.
+      * @see https://date-fns.org/v2.0.1/docs/format
+      */
     var timestampFormat: js.UndefOr[String] = js.undefined
-  }
-  object Options {
     
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
+    /**
+      * Whether to output timing information for processes.
+      *
+      * @see LogTimings
+      */
+    var timings: js.UndefOr[Boolean] = js.undefined
+  }
+  object ConcurrentlyOptions {
+    
+    inline def apply(
+      controllers: js.Array[FlowController],
+      kill: (/* pid */ Double, /* signal */ js.UndefOr[String]) => Unit,
+      spawn: (/* command */ String, /* options */ SpawnOptions) => ChildProcess
+    ): ConcurrentlyOptions = {
+      val __obj = js.Dynamic.literal(controllers = controllers.asInstanceOf[js.Any], kill = js.Any.fromFunction2(kill), spawn = js.Any.fromFunction2(spawn))
+      __obj.asInstanceOf[ConcurrentlyOptions]
     }
     
-    extension [Self <: Options](x: Self) {
+    extension [Self <: ConcurrentlyOptions](x: Self) {
       
-      inline def setDefaultInputTarget(value: Double): Self = StObject.set(x, "defaultInputTarget", value.asInstanceOf[js.Any])
+      inline def setDefaultInputTarget(value: CommandIdentifier): Self = StObject.set(x, "defaultInputTarget", value.asInstanceOf[js.Any])
       
       inline def setDefaultInputTargetUndefined: Self = StObject.set(x, "defaultInputTarget", js.undefined)
       
-      inline def setInputStream(value: ReadableStream): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
+      inline def setHandleInput(value: Boolean): Self = StObject.set(x, "handleInput", value.asInstanceOf[js.Any])
+      
+      inline def setHandleInputUndefined: Self = StObject.set(x, "handleInput", js.undefined)
+      
+      inline def setHide(value: CommandIdentifier | js.Array[CommandIdentifier]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+      
+      inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+      
+      inline def setHideVarargs(value: CommandIdentifier*): Self = StObject.set(x, "hide", js.Array(value*))
+      
+      inline def setInputStream(value: Readable): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
       
       inline def setInputStreamUndefined: Self = StObject.set(x, "inputStream", js.undefined)
       
-      inline def setKillOthers(value: js.Array[success | failure]): Self = StObject.set(x, "killOthers", value.asInstanceOf[js.Any])
+      inline def setKillOthers(value: ProcessCloseCondition | js.Array[ProcessCloseCondition]): Self = StObject.set(x, "killOthers", value.asInstanceOf[js.Any])
       
       inline def setKillOthersUndefined: Self = StObject.set(x, "killOthers", js.undefined)
       
-      inline def setKillOthersVarargs(value: (success | failure)*): Self = StObject.set(x, "killOthers", js.Array(value :_*))
+      inline def setKillOthersVarargs(value: ProcessCloseCondition*): Self = StObject.set(x, "killOthers", js.Array(value*))
       
-      inline def setMaxProcesses(value: Double): Self = StObject.set(x, "maxProcesses", value.asInstanceOf[js.Any])
+      inline def setPauseInputStreamOnFinish(value: Boolean): Self = StObject.set(x, "pauseInputStreamOnFinish", value.asInstanceOf[js.Any])
       
-      inline def setMaxProcessesUndefined: Self = StObject.set(x, "maxProcesses", js.undefined)
+      inline def setPauseInputStreamOnFinishUndefined: Self = StObject.set(x, "pauseInputStreamOnFinish", js.undefined)
       
-      inline def setOutputStream(value: WritableStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
-      
-      inline def setOutputStreamUndefined: Self = StObject.set(x, "outputStream", js.undefined)
-      
-      inline def setPrefix(value: index | pid | time | command | name | none | String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
       inline def setPrefixLength(value: Double): Self = StObject.set(x, "prefixLength", value.asInstanceOf[js.Any])
       
       inline def setPrefixLengthUndefined: Self = StObject.set(x, "prefixLength", js.undefined)
       
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
-      
-      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
-      
-      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
       inline def setRestartDelay(value: Double): Self = StObject.set(x, "restartDelay", value.asInstanceOf[js.Any])
       
@@ -155,13 +243,13 @@ object mod {
       
       inline def setRestartTriesUndefined: Self = StObject.set(x, "restartTries", js.undefined)
       
-      inline def setSuccessCondition(value: first | last): Self = StObject.set(x, "successCondition", value.asInstanceOf[js.Any])
-      
-      inline def setSuccessConditionUndefined: Self = StObject.set(x, "successCondition", js.undefined)
-      
       inline def setTimestampFormat(value: String): Self = StObject.set(x, "timestampFormat", value.asInstanceOf[js.Any])
       
       inline def setTimestampFormatUndefined: Self = StObject.set(x, "timestampFormat", js.undefined)
+      
+      inline def setTimings(value: Boolean): Self = StObject.set(x, "timings", value.asInstanceOf[js.Any])
+      
+      inline def setTimingsUndefined: Self = StObject.set(x, "timings", js.undefined)
     }
   }
 }

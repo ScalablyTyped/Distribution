@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClassNameProps extends StObject {
   
   var cssClass: js.UndefOr[String] = js.undefined
+  
+  var mjClass: js.UndefOr[String] = js.undefined
 }
 object ClassNameProps {
   
@@ -20,5 +22,9 @@ object ClassNameProps {
     inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
     inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    
+    inline def setMjClass(value: String): Self = StObject.set(x, "mjClass", value.asInstanceOf[js.Any])
+    
+    inline def setMjClassUndefined: Self = StObject.set(x, "mjClass", js.undefined)
   }
 }

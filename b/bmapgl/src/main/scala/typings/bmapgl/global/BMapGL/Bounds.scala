@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Bounds")
 @js.native
-class Bounds protected ()
+open class Bounds protected ()
   extends StObject
      with typings.bmapgl.BMapGL.Bounds {
   def this(sw: typings.bmapgl.BMapGL.Point, ne: typings.bmapgl.BMapGL.Point) = this()

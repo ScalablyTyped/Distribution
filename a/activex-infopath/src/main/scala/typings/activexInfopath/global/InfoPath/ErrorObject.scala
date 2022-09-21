@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.ErrorObject")
 @js.native
-/* private */ class ErrorObject ()
+/* private */ open class ErrorObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.ErrorObject {
   
   /* CompleteClass */
-  override val ConditionName: js.Any = js.native
+  override val ConditionName: Any = js.native
   
   /* CompleteClass */
   var DetailedErrorMessage: String = js.native

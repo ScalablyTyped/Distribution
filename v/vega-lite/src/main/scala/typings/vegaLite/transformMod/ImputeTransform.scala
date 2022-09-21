@@ -41,7 +41,7 @@ object ImputeTransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setImpute(value: FieldName): Self = StObject.set(x, "impute", value.asInstanceOf[js.Any])
     

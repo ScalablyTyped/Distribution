@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Connector extends StObject {
   
-  var connector: js.Any
+  var connector: Any
   
-  var properties: js.UndefOr[js.Any] = js.undefined
+  var properties: js.UndefOr[Any] = js.undefined
 }
 object Connector {
   
-  inline def apply(connector: js.Any): Connector = {
+  inline def apply(connector: Any): Connector = {
     val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connector]
   }
   
   extension [Self <: Connector](x: Self) {
     
-    inline def setConnector(value: js.Any): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+    inline def setConnector(value: Any): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }

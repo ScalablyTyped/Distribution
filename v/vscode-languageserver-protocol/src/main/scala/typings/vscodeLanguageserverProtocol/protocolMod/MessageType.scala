@@ -16,28 +16,28 @@ object MessageType {
   /**
     * An error message.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "MessageType.Error")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "MessageType.Error")
   @js.native
   val Error: /* 1 */ Double = js.native
   
   /**
     * An information message.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "MessageType.Info")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "MessageType.Info")
   @js.native
   val Info: /* 3 */ Double = js.native
   
   /**
     * A log message.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "MessageType.Log")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "MessageType.Log")
   @js.native
   val Log: /* 4 */ Double = js.native
   
   /**
     * A warning message.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "MessageType.Warning")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "MessageType.Warning")
   @js.native
   val Warning: /* 2 */ Double = js.native
 }

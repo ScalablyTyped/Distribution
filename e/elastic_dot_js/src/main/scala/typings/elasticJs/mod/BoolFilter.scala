@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   A Filter that matches documents matching boolean combinations of other
   filters.
   */
-class BoolFilter ()
+open class BoolFilter ()
   extends StObject
      with Filter {
   

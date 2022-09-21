@@ -1,25 +1,17 @@
 package typings.surveyKnockout.mod
 
-import typings.std.File
-import typings.std.JSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "dxSurveyService")
 @js.native
-class dxSurveyService () extends StObject {
+open class dxSurveyService () extends StObject {
   
   def getResult(
     resultId: String,
     name: String,
-    onGetResult: js.Function4[
-      /* success */ Boolean, 
-      /* data */ js.Any, 
-      /* dataList */ js.Array[js.Any], 
-      /* response */ js.Any, 
-      Unit
-    ]
+    onGetResult: js.Function4[/* success */ Boolean, /* data */ Any, /* dataList */ Any, /* response */ Any, Unit]
   ): Unit = js.native
   
   def getSurveyJsonAndIsCompleted(
@@ -27,9 +19,9 @@ class dxSurveyService () extends StObject {
     clientId: String,
     onLoad: js.Function4[
       /* success */ Boolean, 
-      /* surveyJson */ js.Any, 
+      /* surveyJson */ Any, 
       /* result */ String, 
-      /* response */ js.Any, 
+      /* response */ Any, 
       Unit
     ]
   ): Unit = js.native
@@ -37,55 +29,43 @@ class dxSurveyService () extends StObject {
   def isCompleted(
     resultId: String,
     clientId: String,
-    onIsCompleted: js.Function3[/* success */ Boolean, /* result */ String, /* response */ js.Any, Unit]
+    onIsCompleted: js.Function3[/* success */ Boolean, /* result */ String, /* response */ Any, Unit]
   ): Unit = js.native
   
   def loadSurvey(
     surveyId: String,
-    onLoad: js.Function3[/* success */ Boolean, /* result */ String, /* response */ js.Any, Unit]
+    onLoad: js.Function3[/* success */ Boolean, /* result */ String, /* response */ Any, Unit]
   ): Unit = js.native
   
   def sendFile(
     postId: String,
-    file: File,
-    onSendFile: js.Function2[/* success */ Boolean, /* response */ js.Any, Unit]
+    file: Any,
+    onSendFile: js.Function2[/* success */ Boolean, /* response */ Any, Unit]
   ): Unit = js.native
   
   def sendResult(
     postId: String,
-    result: JSON,
-    onSendResult: js.Function3[/* success */ Boolean, /* response */ js.Any, /* request */ js.UndefOr[js.Any], Unit]
+    result: Any,
+    onSendResult: js.Function3[/* success */ Boolean, /* response */ Any, /* request */ js.UndefOr[Any], Unit]
   ): Unit = js.native
   def sendResult(
     postId: String,
-    result: JSON,
-    onSendResult: js.Function3[/* success */ Boolean, /* response */ js.Any, /* request */ js.UndefOr[js.Any], Unit],
+    result: Any,
+    onSendResult: js.Function3[/* success */ Boolean, /* response */ Any, /* request */ js.UndefOr[Any], Unit],
     clientId: String
   ): Unit = js.native
   def sendResult(
     postId: String,
-    result: JSON,
-    onSendResult: js.Function3[/* success */ Boolean, /* response */ js.Any, /* request */ js.UndefOr[js.Any], Unit],
+    result: Any,
+    onSendResult: js.Function3[/* success */ Boolean, /* response */ Any, /* request */ js.UndefOr[Any], Unit],
     clientId: String,
     isPartialCompleted: Boolean
   ): Unit = js.native
   def sendResult(
     postId: String,
-    result: JSON,
-    onSendResult: js.Function3[/* success */ Boolean, /* response */ js.Any, /* request */ js.UndefOr[js.Any], Unit],
+    result: Any,
+    onSendResult: js.Function3[/* success */ Boolean, /* response */ Any, /* request */ js.UndefOr[Any], Unit],
     clientId: Unit,
     isPartialCompleted: Boolean
   ): Unit = js.native
-}
-/* static members */
-object dxSurveyService {
-  
-  @JSImport("survey-knockout", "dxSurveyService")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("survey-knockout", "dxSurveyService.serviceUrl")
-  @js.native
-  def serviceUrl: String = js.native
-  inline def serviceUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceUrl")(x.asInstanceOf[js.Any])
 }

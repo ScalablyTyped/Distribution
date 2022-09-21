@@ -18,7 +18,7 @@ import typings.couchbase.mod.Bucket.N1qlQueryResponse
 import typings.couchbase.mod.Bucket.OpCallback
 import typings.couchbase.mod.Bucket.QueryCallback
 import typings.couchbase.mod.Bucket.ViewQueryResponse
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,7 +41,7 @@ trait Bucket extends EventEmitter {
     * @param fragment The document's contents to append.
     * @param callback The callback function.
     */
-  def append(key: String, fragment: js.Any, callback: OpCallback): Unit = js.native
+  def append(key: String, fragment: Any, callback: OpCallback): Unit = js.native
   /**
     *
     * @param key The target document key.
@@ -49,9 +49,9 @@ trait Bucket extends EventEmitter {
     * @param options The options object.
     * @param callback The callback function.
     */
-  def append(key: String, fragment: js.Any, options: AppendOptions, callback: OpCallback): Unit = js.native
-  def append(key: Buffer, fragment: js.Any, callback: OpCallback): Unit = js.native
-  def append(key: Buffer, fragment: js.Any, options: AppendOptions, callback: OpCallback): Unit = js.native
+  def append(key: String, fragment: Any, options: AppendOptions, callback: OpCallback): Unit = js.native
+  def append(key: Buffer, fragment: Any, callback: OpCallback): Unit = js.native
+  def append(key: Buffer, fragment: Any, options: AppendOptions, callback: OpCallback): Unit = js.native
   
   /**
     * Returns the version of the Node.js library as a string.
@@ -120,9 +120,9 @@ trait Bucket extends EventEmitter {
     * @param options The options object.
     * @param callback The callback function.
     */
-  def get(key: String, options: js.Any, callback: OpCallback): Unit = js.native
+  def get(key: String, options: Any, callback: OpCallback): Unit = js.native
   def get(key: Buffer, callback: OpCallback): Unit = js.native
-  def get(key: Buffer, options: js.Any, callback: OpCallback): Unit = js.native
+  def get(key: Buffer, options: Any, callback: OpCallback): Unit = js.native
   
   /**
     * Lock the document on the server and retrieve it. When an document is locked, its CAS changes and subsequent operations on the document (without providing the current CAS) will fail until the lock is no longer held.
@@ -157,9 +157,9 @@ trait Bucket extends EventEmitter {
     * @param options The options object.
     * @param callback The callback function.
     */
-  def getAndTouch(key: String, expiry: Double, options: js.Any, callback: OpCallback): Unit = js.native
+  def getAndTouch(key: String, expiry: Double, options: Any, callback: OpCallback): Unit = js.native
   def getAndTouch(key: Buffer, expiry: Double, callback: OpCallback): Unit = js.native
-  def getAndTouch(key: Buffer, expiry: Double, options: js.Any, callback: OpCallback): Unit = js.native
+  def getAndTouch(key: Buffer, expiry: Double, options: Any, callback: OpCallback): Unit = js.native
   
   /**
     * Retrieves a list of keys
@@ -190,7 +190,7 @@ trait Bucket extends EventEmitter {
     * @param value The document's contents.
     * @param callback The callback function.
     */
-  def insert(key: String, value: js.Any, callback: OpCallback): Unit = js.native
+  def insert(key: String, value: Any, callback: OpCallback): Unit = js.native
   /**
     * Identical to Bucket#upsert but will fail if the document already exists.
     * @param key The target document key.
@@ -198,9 +198,9 @@ trait Bucket extends EventEmitter {
     * @param options The options object.
     * @param callback The callback function.
     */
-  def insert(key: String, value: js.Any, options: InsertOptions, callback: OpCallback): Unit = js.native
-  def insert(key: Buffer, value: js.Any, callback: OpCallback): Unit = js.native
-  def insert(key: Buffer, value: js.Any, options: InsertOptions, callback: OpCallback): Unit = js.native
+  def insert(key: String, value: Any, options: InsertOptions, callback: OpCallback): Unit = js.native
+  def insert(key: Buffer, value: Any, callback: OpCallback): Unit = js.native
+  def insert(key: Buffer, value: Any, options: InsertOptions, callback: OpCallback): Unit = js.native
   
   /**
     * Returns the libcouchbase version as a string. This information will usually be in the format of 2.4.0-fffffff representing the major, minor, patch and git-commit that the built libcouchbase is based upon.
@@ -243,7 +243,7 @@ trait Bucket extends EventEmitter {
     * @param fragment The document's contents to prepend.
     * @param callback The callback function.
     */
-  def prepend(key: String, fragment: js.Any, callback: OpCallback): Unit = js.native
+  def prepend(key: String, fragment: Any, callback: OpCallback): Unit = js.native
   /**
     * Like Bucket#append, but prepends data to the existing value.
     * @param key The target document key.
@@ -251,7 +251,7 @@ trait Bucket extends EventEmitter {
     * @param options The options object.
     * @param callback The callback function.
     */
-  def prepend(key: String, fragment: js.Any, options: PrependOptions, callback: OpCallback): Unit = js.native
+  def prepend(key: String, fragment: Any, options: PrependOptions, callback: OpCallback): Unit = js.native
   
   @JSName("prependListener")
   def prependListener_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
@@ -270,16 +270,16 @@ trait Bucket extends EventEmitter {
     */
   def query(query: N1qlQuery): N1qlQueryResponse = js.native
   def query(query: N1qlQuery, callback: N1qlQueryCallback): N1qlQueryResponse = js.native
-  def query(query: N1qlQuery, params: js.Array[js.Any]): N1qlQueryResponse = js.native
-  def query(query: N1qlQuery, params: js.Array[js.Any], callback: N1qlQueryCallback): N1qlQueryResponse = js.native
+  def query(query: N1qlQuery, params: js.Array[Any]): N1qlQueryResponse = js.native
+  def query(query: N1qlQuery, params: js.Array[Any], callback: N1qlQueryCallback): N1qlQueryResponse = js.native
   /**
     * Executes a previously prepared query object.
     * @param query The query to execute.
     * @param params A list or map to do replacements on a N1QL query.
     * @param callback The callback function.
     */
-  def query(query: N1qlQuery, params: StringDictionary[js.Any]): N1qlQueryResponse = js.native
-  def query(query: N1qlQuery, params: StringDictionary[js.Any], callback: N1qlQueryCallback): N1qlQueryResponse = js.native
+  def query(query: N1qlQuery, params: StringDictionary[Any]): N1qlQueryResponse = js.native
+  def query(query: N1qlQuery, params: StringDictionary[Any], callback: N1qlQueryCallback): N1qlQueryResponse = js.native
   /**
     * Executes a previously prepared query object.
     * @param query The query to execute.
@@ -319,7 +319,7 @@ trait Bucket extends EventEmitter {
     * @param value The document's contents.
     * @param callback The callback function.
     */
-  def replace(key: String, value: js.Any, callback: OpCallback): Unit = js.native
+  def replace(key: String, value: Any, callback: OpCallback): Unit = js.native
   /**
     * Identical to Bucket#upsert, but will only succeed if the document exists already (i.e. the inverse of Bucket#insert).
     * @param key The target document key.
@@ -327,9 +327,9 @@ trait Bucket extends EventEmitter {
     * @param options The options object.
     * @param callback The callback function.
     */
-  def replace(key: String, value: js.Any, options: ReplaceOptions, callback: OpCallback): Unit = js.native
-  def replace(key: Buffer, value: js.Any, callback: OpCallback): Unit = js.native
-  def replace(key: Buffer, value: js.Any, options: ReplaceOptions, callback: OpCallback): Unit = js.native
+  def replace(key: String, value: Any, options: ReplaceOptions, callback: OpCallback): Unit = js.native
+  def replace(key: Buffer, value: Any, callback: OpCallback): Unit = js.native
+  def replace(key: Buffer, value: Any, options: ReplaceOptions, callback: OpCallback): Unit = js.native
   
   /**
     * Configures a custom set of transcoder functions for encoding and decoding values that are being stored or retreived from the server.
@@ -362,9 +362,9 @@ trait Bucket extends EventEmitter {
     * @param options The options object.
     * @param callback The callback function.
     */
-  def unlock(key: String, cas: CAS, options: js.Any, callback: OpCallback): Unit = js.native
+  def unlock(key: String, cas: CAS, options: Any, callback: OpCallback): Unit = js.native
   def unlock(key: Buffer, cas: CAS, callback: OpCallback): Unit = js.native
-  def unlock(key: Buffer, cas: CAS, options: js.Any, callback: OpCallback): Unit = js.native
+  def unlock(key: Buffer, cas: CAS, options: Any, callback: OpCallback): Unit = js.native
   
   /**
     * Stores a document to the bucket.
@@ -372,7 +372,7 @@ trait Bucket extends EventEmitter {
     * @param value The document's contents.
     * @param callback The callback function.
     */
-  def upsert(key: String, value: js.Any, callback: OpCallback): Unit = js.native
+  def upsert(key: String, value: Any, callback: OpCallback): Unit = js.native
   /**
     * Stores a document to the bucket.
     * @param key The target document key.
@@ -380,9 +380,9 @@ trait Bucket extends EventEmitter {
     * @param options The options object.
     * @param callback The callback function.
     */
-  def upsert(key: String, value: js.Any, options: UpsertOptions, callback: OpCallback): Unit = js.native
-  def upsert(key: Buffer, value: js.Any, callback: OpCallback): Unit = js.native
-  def upsert(key: Buffer, value: js.Any, options: UpsertOptions, callback: OpCallback): Unit = js.native
+  def upsert(key: String, value: Any, options: UpsertOptions, callback: OpCallback): Unit = js.native
+  def upsert(key: Buffer, value: Any, callback: OpCallback): Unit = js.native
+  def upsert(key: Buffer, value: Any, options: UpsertOptions, callback: OpCallback): Unit = js.native
   
   /**
     * Gets or sets the view timeout in milliseconds. The view timeout is the time that Bucket will wait for a response from the server for a view request. If the response is not received within this time frame, the request fails with an error.
@@ -396,7 +396,7 @@ object Bucket {
     */
   @JSImport("couchbase", "Bucket.TranscoderDoc")
   @js.native
-  class TranscoderDoc () extends StObject {
+  open class TranscoderDoc () extends StObject {
     
     var flags: Double = js.native
     
@@ -413,20 +413,20 @@ object Bucket {
     * Transcoder Decoding Function.
     * This function will receive an object containing a Buffer value and an integer value representing any flags metadata whenever a retrieval operation is executed. It is expected that this function will return a value representing the original value stored and encoded with its matching EncoderFunction.
     */
-  type DecoderFunction = js.Function1[/* doc */ TranscoderDoc, js.Any]
+  type DecoderFunction = js.Function1[/* doc */ TranscoderDoc, Any]
   
   /**
     * Transcoder Encoding Function.
     * This function will receive a value when a storage operation is invoked that needs to encode user-provided data for storage into Couchbase. It expects to be returned a Buffer object to store along with an integer representing any flag metadata relating to how to decode the key later using the matching DecoderFunction.
     */
-  type EncoderFunction = js.Function1[/* value */ js.Any, TranscoderDoc]
+  type EncoderFunction = js.Function1[/* value */ Any, TranscoderDoc]
   
   /**
     * This is used as a callback from executed queries. It is a shortcut method that automatically subscribes to the rows and error events of the Bucket.ViewQueryResponse.
     */
   type FtsQueryCallback = js.Function3[
     /* error */ CouchbaseError | Null, 
-    /* rows */ js.Array[js.Any] | Null, 
+    /* rows */ js.Array[Any] | Null, 
     /* meta */ Meta, 
     Unit
   ]
@@ -442,45 +442,45 @@ object Bucket {
     @JSName("addListener")
     def addListener_error(event: error, listener: js.Function1[/* error */ CouchbaseError, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_row(event: row, listener: js.Function2[/* row */ js.Any, /* meta */ Meta, Unit]): this.type = js.native
+    def addListener_row(event: row, listener: js.Function2[/* row */ Any, /* meta */ Meta, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_rows(event: rows, listener: js.Function2[/* rows */ js.Array[js.Any], /* meta */ Meta, Unit]): this.type = js.native
+    def addListener_rows(event: rows, listener: js.Function2[/* rows */ js.Array[Any], /* meta */ Meta, Unit]): this.type = js.native
     
     @JSName("on")
     def on_end(event: end, listener: js.Function1[/* meta */ Meta, Unit]): this.type = js.native
     @JSName("on")
     def on_error(event: error, listener: js.Function1[/* error */ CouchbaseError, Unit]): this.type = js.native
     @JSName("on")
-    def on_row(event: row, listener: js.Function2[/* row */ js.Any, /* meta */ Meta, Unit]): this.type = js.native
+    def on_row(event: row, listener: js.Function2[/* row */ Any, /* meta */ Meta, Unit]): this.type = js.native
     @JSName("on")
-    def on_rows(event: rows, listener: js.Function2[/* rows */ js.Array[js.Any], /* meta */ Meta, Unit]): this.type = js.native
+    def on_rows(event: rows, listener: js.Function2[/* rows */ js.Array[Any], /* meta */ Meta, Unit]): this.type = js.native
     
     @JSName("once")
     def once_end(event: end, listener: js.Function1[/* meta */ Meta, Unit]): this.type = js.native
     @JSName("once")
     def once_error(event: error, listener: js.Function1[/* error */ CouchbaseError, Unit]): this.type = js.native
     @JSName("once")
-    def once_row(event: row, listener: js.Function2[/* row */ js.Any, /* meta */ Meta, Unit]): this.type = js.native
+    def once_row(event: row, listener: js.Function2[/* row */ Any, /* meta */ Meta, Unit]): this.type = js.native
     @JSName("once")
-    def once_rows(event: rows, listener: js.Function2[/* rows */ js.Array[js.Any], /* meta */ Meta, Unit]): this.type = js.native
+    def once_rows(event: rows, listener: js.Function2[/* rows */ js.Array[Any], /* meta */ Meta, Unit]): this.type = js.native
     
     @JSName("prependListener")
     def prependListener_end(event: end, listener: js.Function1[/* meta */ Meta, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_error(event: error, listener: js.Function1[/* error */ CouchbaseError, Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_row(event: row, listener: js.Function2[/* row */ js.Any, /* meta */ Meta, Unit]): this.type = js.native
+    def prependListener_row(event: row, listener: js.Function2[/* row */ Any, /* meta */ Meta, Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_rows(event: rows, listener: js.Function2[/* rows */ js.Array[js.Any], /* meta */ Meta, Unit]): this.type = js.native
+    def prependListener_rows(event: rows, listener: js.Function2[/* rows */ js.Array[Any], /* meta */ Meta, Unit]): this.type = js.native
     
     @JSName("prependOnceListener")
     def prependOnceListener_end(event: end, listener: js.Function1[/* meta */ Meta, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_error(event: error, listener: js.Function1[/* error */ CouchbaseError, Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_row(event: row, listener: js.Function2[/* row */ js.Any, /* meta */ Meta, Unit]): this.type = js.native
+    def prependOnceListener_row(event: row, listener: js.Function2[/* row */ Any, /* meta */ Meta, Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_rows(event: rows, listener: js.Function2[/* rows */ js.Array[js.Any], /* meta */ Meta, Unit]): this.type = js.native
+    def prependOnceListener_rows(event: rows, listener: js.Function2[/* rows */ js.Array[Any], /* meta */ Meta, Unit]): this.type = js.native
   }
   object FtsQueryResponse {
     
@@ -492,13 +492,13 @@ object Bucket {
       /**
         * Any non-fatal errors that occurred during query processing.
         */
-      var errors: js.Any
+      var errors: Any
       
       /**
         * The resulting facet information for any facets that were specified
         * in the search query.
         */
-      var facets: js.Any
+      var facets: Any
       
       /**
         * The maximum score out of all the results in this query.
@@ -509,7 +509,7 @@ object Bucket {
         * The status information for this query, includes properties
         * such as total, failed, and successful.
         */
-      var status: js.Any
+      var status: Any
       
       /**
         * The time spent processing this query.
@@ -523,20 +523,20 @@ object Bucket {
     }
     object Meta {
       
-      inline def apply(errors: js.Any, facets: js.Any, maxScore: Double, status: js.Any, took: Double, totalHits: Double): Meta = {
+      inline def apply(errors: Any, facets: Any, maxScore: Double, status: Any, took: Double, totalHits: Double): Meta = {
         val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], facets = facets.asInstanceOf[js.Any], maxScore = maxScore.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], took = took.asInstanceOf[js.Any], totalHits = totalHits.asInstanceOf[js.Any])
         __obj.asInstanceOf[Meta]
       }
       
       extension [Self <: Meta](x: Self) {
         
-        inline def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+        inline def setErrors(value: Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
-        inline def setFacets(value: js.Any): Self = StObject.set(x, "facets", value.asInstanceOf[js.Any])
+        inline def setFacets(value: Any): Self = StObject.set(x, "facets", value.asInstanceOf[js.Any])
         
         inline def setMaxScore(value: Double): Self = StObject.set(x, "maxScore", value.asInstanceOf[js.Any])
         
-        inline def setStatus(value: js.Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
         inline def setTook(value: Double): Self = StObject.set(x, "took", value.asInstanceOf[js.Any])
         
@@ -549,14 +549,14 @@ object Bucket {
     * Multi-Get Callback.
     * This callback is used to return results from a getMulti operation.
     */
-  type MultiGetCallback = js.Function2[/* error */ Double, /* results */ js.Array[js.Any], Unit]
+  type MultiGetCallback = js.Function2[/* error */ Double, /* results */ js.Array[Any], Unit]
   
   /**
     * This is used as a callback from executed queries. It is a shortcut method that automatically subscribes to the rows and error events of the Bucket.ViewQueryResponse.
     */
   type N1qlQueryCallback = js.Function3[
     /* error */ CouchbaseError | Null, 
-    /* rows */ js.Array[js.Any] | Null, 
+    /* rows */ js.Array[Any] | Null, 
     /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
     Unit
   ]
@@ -577,17 +577,13 @@ object Bucket {
     @JSName("addListener")
     def addListener_row(
       event: row,
-      listener: js.Function2[
-          /* row */ js.Any, 
-          /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
-          Unit
-        ]
+      listener: js.Function2[/* row */ Any, /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, Unit]
     ): this.type = js.native
     @JSName("addListener")
     def addListener_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[js.Any], 
+          /* rows */ js.Array[Any], 
           /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
           Unit
         ]
@@ -603,17 +599,13 @@ object Bucket {
     @JSName("on")
     def on_row(
       event: row,
-      listener: js.Function2[
-          /* row */ js.Any, 
-          /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
-          Unit
-        ]
+      listener: js.Function2[/* row */ Any, /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, Unit]
     ): this.type = js.native
     @JSName("on")
     def on_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[js.Any], 
+          /* rows */ js.Array[Any], 
           /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
           Unit
         ]
@@ -629,17 +621,13 @@ object Bucket {
     @JSName("once")
     def once_row(
       event: row,
-      listener: js.Function2[
-          /* row */ js.Any, 
-          /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
-          Unit
-        ]
+      listener: js.Function2[/* row */ Any, /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, Unit]
     ): this.type = js.native
     @JSName("once")
     def once_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[js.Any], 
+          /* rows */ js.Array[Any], 
           /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
           Unit
         ]
@@ -655,17 +643,13 @@ object Bucket {
     @JSName("prependListener")
     def prependListener_row(
       event: row,
-      listener: js.Function2[
-          /* row */ js.Any, 
-          /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
-          Unit
-        ]
+      listener: js.Function2[/* row */ Any, /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, Unit]
     ): this.type = js.native
     @JSName("prependListener")
     def prependListener_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[js.Any], 
+          /* rows */ js.Array[Any], 
           /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
           Unit
         ]
@@ -681,17 +665,13 @@ object Bucket {
     @JSName("prependOnceListener")
     def prependOnceListener_row(
       event: row,
-      listener: js.Function2[
-          /* row */ js.Any, 
-          /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
-          Unit
-        ]
+      listener: js.Function2[/* row */ Any, /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, Unit]
     ): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[js.Any], 
+          /* rows */ js.Array[Any], 
           /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
           Unit
         ]
@@ -728,14 +708,14 @@ object Bucket {
     * This callback is passed to all of the single key functions.
     * It returns a result objcet containing a combination of a CAS and a value, depending on which operation was invoked.
     */
-  type OpCallback = js.Function2[/* error */ CouchbaseError | Null, /* result */ js.Any, Unit]
+  type OpCallback = js.Function2[/* error */ CouchbaseError | Null, /* result */ Any, Unit]
   
   /**
     * This is used as a callback from executed queries. It is a shortcut method that automatically subscribes to the rows and error events of the Bucket.ViewQueryResponse.
     */
   type QueryCallback = js.Function3[
     /* error */ CouchbaseError | Null, 
-    /* rows */ js.Array[js.Any] | Null, 
+    /* rows */ js.Array[Any] | Null, 
     /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
     Unit
   ]
@@ -756,17 +736,13 @@ object Bucket {
     @JSName("addListener")
     def addListener_row(
       event: row,
-      listener: js.Function2[
-          /* row */ js.Any, 
-          /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
-          Unit
-        ]
+      listener: js.Function2[/* row */ Any, /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, Unit]
     ): this.type = js.native
     @JSName("addListener")
     def addListener_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[js.Any], 
+          /* rows */ js.Array[Any], 
           /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
           Unit
         ]
@@ -782,17 +758,13 @@ object Bucket {
     @JSName("on")
     def on_row(
       event: row,
-      listener: js.Function2[
-          /* row */ js.Any, 
-          /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
-          Unit
-        ]
+      listener: js.Function2[/* row */ Any, /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, Unit]
     ): this.type = js.native
     @JSName("on")
     def on_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[js.Any], 
+          /* rows */ js.Array[Any], 
           /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
           Unit
         ]
@@ -808,17 +780,13 @@ object Bucket {
     @JSName("once")
     def once_row(
       event: row,
-      listener: js.Function2[
-          /* row */ js.Any, 
-          /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
-          Unit
-        ]
+      listener: js.Function2[/* row */ Any, /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, Unit]
     ): this.type = js.native
     @JSName("once")
     def once_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[js.Any], 
+          /* rows */ js.Array[Any], 
           /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
           Unit
         ]
@@ -834,17 +802,13 @@ object Bucket {
     @JSName("prependListener")
     def prependListener_row(
       event: row,
-      listener: js.Function2[
-          /* row */ js.Any, 
-          /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
-          Unit
-        ]
+      listener: js.Function2[/* row */ Any, /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, Unit]
     ): this.type = js.native
     @JSName("prependListener")
     def prependListener_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[js.Any], 
+          /* rows */ js.Array[Any], 
           /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
           Unit
         ]
@@ -860,17 +824,13 @@ object Bucket {
     @JSName("prependOnceListener")
     def prependOnceListener_row(
       event: row,
-      listener: js.Function2[
-          /* row */ js.Any, 
-          /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
-          Unit
-        ]
+      listener: js.Function2[/* row */ Any, /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, Unit]
     ): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[js.Any], 
+          /* rows */ js.Array[Any], 
           /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
           Unit
         ]

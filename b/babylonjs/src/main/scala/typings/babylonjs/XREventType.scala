@@ -19,6 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babylonjs.babylonjsStrings.squeezestart
   - typings.babylonjs.babylonjsStrings.squeezeend
   - typings.babylonjs.babylonjsStrings.reset
+  - typings.babylonjs.babylonjsStrings.eyetrackingstart
+  - typings.babylonjs.babylonjsStrings.eyetrackingend
 */
 trait XREventType extends StObject
 object XREventType {
@@ -26,6 +28,10 @@ object XREventType {
   inline def devicechange: typings.babylonjs.babylonjsStrings.devicechange = "devicechange".asInstanceOf[typings.babylonjs.babylonjsStrings.devicechange]
   
   inline def end: typings.babylonjs.babylonjsStrings.end = "end".asInstanceOf[typings.babylonjs.babylonjsStrings.end]
+  
+  inline def eyetrackingend: typings.babylonjs.babylonjsStrings.eyetrackingend = "eyetrackingend".asInstanceOf[typings.babylonjs.babylonjsStrings.eyetrackingend]
+  
+  inline def eyetrackingstart: typings.babylonjs.babylonjsStrings.eyetrackingstart = "eyetrackingstart".asInstanceOf[typings.babylonjs.babylonjsStrings.eyetrackingstart]
   
   inline def inputsourceschange: typings.babylonjs.babylonjsStrings.inputsourceschange = "inputsourceschange".asInstanceOf[typings.babylonjs.babylonjsStrings.inputsourceschange]
   

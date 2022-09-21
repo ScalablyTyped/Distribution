@@ -6,8 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RunQueryResponse extends StObject {
   
-  /** A query result. Not set when reporting partial progress. */
+  /** A query result, not set when reporting partial progress. */
   var document: js.UndefOr[Document] = js.undefined
+  
+  /** If present, Firestore has completely finished the request and no more documents will be returned. */
+  var done: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The time at which the document was read. This may be monotonically increasing; in this case, the previous documents in the result stream are guaranteed not to have changed between
@@ -36,6 +39,10 @@ object RunQueryResponse {
     inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    
+    inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    
+    inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
     inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     

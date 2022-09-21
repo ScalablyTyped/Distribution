@@ -7,17 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Colors extends StObject {
   
+  var arcType: js.UndefOr[typings.cesium.mod.ArcType] = js.undefined
+  
   var colors: js.UndefOr[js.Array[typings.cesium.mod.Color]] = js.undefined
   
   var colorsPerVertex: js.UndefOr[Boolean] = js.undefined
   
   var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var followSurface: js.UndefOr[Boolean] = js.undefined
-  
   var granularity: js.UndefOr[Double] = js.undefined
   
   var positions: js.Array[Cartesian3]
+  
+  var vertexFormat: js.UndefOr[typings.cesium.mod.VertexFormat] = js.undefined
+  
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Colors {
   
@@ -28,6 +32,10 @@ object Colors {
   
   extension [Self <: Colors](x: Self) {
     
+    inline def setArcType(value: typings.cesium.mod.ArcType): Self = StObject.set(x, "arcType", value.asInstanceOf[js.Any])
+    
+    inline def setArcTypeUndefined: Self = StObject.set(x, "arcType", js.undefined)
+    
     inline def setColors(value: js.Array[typings.cesium.mod.Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     inline def setColorsPerVertex(value: Boolean): Self = StObject.set(x, "colorsPerVertex", value.asInstanceOf[js.Any])
@@ -36,15 +44,11 @@ object Colors {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: typings.cesium.mod.Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: typings.cesium.mod.Color*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
     inline def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
-    
-    inline def setFollowSurface(value: Boolean): Self = StObject.set(x, "followSurface", value.asInstanceOf[js.Any])
-    
-    inline def setFollowSurfaceUndefined: Self = StObject.set(x, "followSurface", js.undefined)
     
     inline def setGranularity(value: Double): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     
@@ -52,6 +56,14 @@ object Colors {
     
     inline def setPositions(value: js.Array[Cartesian3]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    inline def setPositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "positions", js.Array(value*))
+    
+    inline def setVertexFormat(value: typings.cesium.mod.VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
+    
+    inline def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

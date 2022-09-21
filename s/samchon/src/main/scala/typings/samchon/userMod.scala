@@ -30,28 +30,28 @@ object userMod {
     /**
       * @hidden
       */
-    /* private */ var _Handle_erase_client: js.Any = js.native
+    /* private */ var _Handle_erase_client: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var account_id_ : js.Any = js.native
+    /* private */ var account_id_ : Any = js.native
     
     /* InferMemberOverrides */
     override def addEventListener(
       `type`: Type,
       listener: Listener[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entry<Key, T> */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<Key, T> */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<Key, T> */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.ReverseIterator<Key, T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entry<Key, T> */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<Key, T> */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<Key, T> */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.ReverseIterator<Key, T> */ Any
         ]
     ): Unit = js.native
     
     /**
       * @hidden
       */
-    /* private */ var authority_ : js.Any = js.native
+    /* private */ var authority_ : Any = js.native
     
     /**
       * Factory method creating a {@link Client} object.
@@ -93,10 +93,10 @@ object userMod {
     /* InferMemberOverrides */
     override def dispatchEvent(
       event: CollectionEvent[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entry<Key, T> */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<Key, T> */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<Key, T> */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.ReverseIterator<Key, T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entry<Key, T> */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<Key, T> */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<Key, T> */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.ReverseIterator<Key, T> */ Any
         ]
     ): Unit = js.native
     
@@ -140,10 +140,10 @@ object userMod {
     override def removeEventListener(
       `type`: Type,
       listener: Listener[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entry<Key, T> */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<Key, T> */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<Key, T> */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.ReverseIterator<Key, T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entry<Key, T> */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<Key, T> */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<Key, T> */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.ReverseIterator<Key, T> */ Any
         ]
     ): Unit = js.native
     
@@ -170,17 +170,17 @@ object userMod {
     /**
       * @hidden
       */
-    /* private */ var sequence_ : js.Any = js.native
+    /* private */ var sequence_ : Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var server_ : js.Any = js.native
+    /* private */ var server_ : Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var session_id_ : js.Any = js.native
+    /* private */ var session_id_ : Any = js.native
     
     /**
       * Set *account id* and *authority*.

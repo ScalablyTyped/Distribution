@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetImageRecipePolicyResponse extends StObject {
   
   /**
-    * The image recipe policy object. 
+    * The image recipe policy object.
     */
   var policy: js.UndefOr[ResourcePolicyDocument] = js.undefined
   
   /**
-    * The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request.
     */
   var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }

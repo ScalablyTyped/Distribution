@@ -9,7 +9,7 @@ trait JSDocTag
   extends StObject
      with Node {
   
-  val comment: js.UndefOr[java.lang.String] = js.native
+  val comment: js.UndefOr[java.lang.String | NodeArray[JSDocComment]] = js.native
   
   @JSName("parent")
   val parent_JSDocTag: JSDoc | JSDocTypeLiteral = js.native

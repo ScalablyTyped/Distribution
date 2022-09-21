@@ -14,7 +14,7 @@ trait Rectangles extends StObject {
   
   def Item(Index: Double): Rectangle
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.Rectangles_typekey")
   var WordDotRectangles_typekey: Rectangles
@@ -26,7 +26,7 @@ object Rectangles {
     Count: Double,
     Creator: Double,
     Item: Double => Rectangle,
-    Parent: js.Any,
+    Parent: Any,
     WordDotRectangles_typekey: Rectangles
   ): Rectangles = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object Rectangles {
     
     inline def setItem(value: Double => Rectangle): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotRectangles_typekey(value: Rectangles): Self = StObject.set(x, "Word.Rectangles_typekey", value.asInstanceOf[js.Any])
   }

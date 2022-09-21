@@ -49,10 +49,10 @@ trait ASPxClientDashboardItemDataAxisPoint extends StObject {
   /**
     * Gets the unique value corresponding to the current axis point.
     */
-  def GetUniqueValue(): js.Any = js.native
+  def GetUniqueValue(): Any = js.native
   
   /**
     * Gets the value corresponding to the current axis point.
     */
-  def GetValue(): js.Any = js.native
+  def GetValue(): Any = js.native
 }

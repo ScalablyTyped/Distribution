@@ -25,7 +25,7 @@ object GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse {
     
     inline def setDeviceUsersUndefined: Self = StObject.set(x, "deviceUsers", js.undefined)
     
-    inline def setDeviceUsersVarargs(value: GoogleAppsCloudidentityDevicesV1DeviceUser*): Self = StObject.set(x, "deviceUsers", js.Array(value :_*))
+    inline def setDeviceUsersVarargs(value: GoogleAppsCloudidentityDevicesV1DeviceUser*): Self = StObject.set(x, "deviceUsers", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

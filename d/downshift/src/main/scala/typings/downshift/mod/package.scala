@@ -1,34 +1,37 @@
 package typings.downshift.mod
 
+import typings.downshift.mod.^
+import typings.react.mod.Component
+import typings.react.mod.HTMLProps
+import typings.react.mod.ReactNode
+import typings.std.HTMLDivElement
+import typings.std.HTMLLabelElement
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def resetIdCounter(): scala.Unit = typings.downshift.mod.^.asInstanceOf[js.Dynamic].applyDynamic("resetIdCounter")().asInstanceOf[scala.Unit]
+inline def resetIdCounter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetIdCounter")().asInstanceOf[Unit]
 
-inline def useCombobox: typings.downshift.mod.UseComboboxInterface = typings.downshift.mod.^.asInstanceOf[js.Dynamic].selectDynamic("useCombobox").asInstanceOf[typings.downshift.mod.UseComboboxInterface]
+inline def useCombobox: UseComboboxInterface = ^.asInstanceOf[js.Dynamic].selectDynamic("useCombobox").asInstanceOf[UseComboboxInterface]
 
-inline def useMultipleSelection: typings.downshift.mod.UseMultipleSelectionInterface = typings.downshift.mod.^.asInstanceOf[js.Dynamic].selectDynamic("useMultipleSelection").asInstanceOf[typings.downshift.mod.UseMultipleSelectionInterface]
+inline def useMultipleSelection: UseMultipleSelectionInterface = ^.asInstanceOf[js.Dynamic].selectDynamic("useMultipleSelection").asInstanceOf[UseMultipleSelectionInterface]
 
-inline def useSelect: typings.downshift.mod.UseSelectInterface = typings.downshift.mod.^.asInstanceOf[js.Dynamic].selectDynamic("useSelect").asInstanceOf[typings.downshift.mod.UseSelectInterface]
+inline def useSelect: UseSelectInterface = ^.asInstanceOf[js.Dynamic].selectDynamic("useSelect").asInstanceOf[UseSelectInterface]
 
-type Callback = js.Function0[scala.Unit]
+type Callback = js.Function0[Unit]
 
-type ChildrenFunction[Item] = js.Function1[
-/* options */ typings.downshift.mod.ControllerStateAndHelpers[Item], 
-typings.react.mod.ReactNode]
+type ChildrenFunction[Item] = js.Function1[/* options */ ControllerStateAndHelpers[Item], ReactNode]
 
-type Downshift[Item] = typings.react.mod.Component[typings.downshift.mod.DownshiftProps[Item], js.Object, js.Any]
+type Downshift[Item] = Component[DownshiftProps[Item], js.Object, Any]
 
-type GetLabelPropsOptions = typings.react.mod.HTMLProps[typings.std.HTMLLabelElement]
+type GetLabelPropsOptions = HTMLProps[HTMLLabelElement]
 
-type StateChangeFunction[Item] = js.Function1[
-/* state */ typings.downshift.mod.DownshiftState[Item], 
-typings.std.Partial[typings.downshift.mod.StateChangeOptions[Item]]]
+type StateChangeFunction[Item] = js.Function1[/* state */ DownshiftState[Item], Partial[StateChangeOptions[Item]]]
 
-type UseComboboxGetComboboxPropsOptions = typings.react.mod.HTMLProps[typings.std.HTMLLabelElement]
+type UseComboboxGetComboboxPropsOptions = HTMLProps[HTMLDivElement]
 
-type UseComboboxGetLabelPropsOptions = typings.downshift.mod.GetLabelPropsOptions
+type UseComboboxGetLabelPropsOptions = GetLabelPropsOptions
 
-type UseSelectGetLabelPropsOptions = typings.downshift.mod.GetLabelPropsOptions
+type UseSelectGetLabelPropsOptions = GetLabelPropsOptions

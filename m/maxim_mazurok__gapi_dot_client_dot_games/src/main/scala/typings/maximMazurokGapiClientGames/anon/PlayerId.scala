@@ -34,6 +34,12 @@ trait PlayerId extends StObject {
   /** A player ID. A value of `me` may be used in place of the authenticated player's ID. */
   var playerId: String
   
+  /**
+    * Consistency token of the player id. The call returns a 'not found' result when the token is present and invalid. Empty value is ignored. See also
+    * GlobalPlayerIdConsistencyTokenProto
+    */
+  var playerIdConsistencyToken: js.UndefOr[String] = js.undefined
+  
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
@@ -88,6 +94,10 @@ object PlayerId {
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
     inline def setPlayerId(value: String): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
+    
+    inline def setPlayerIdConsistencyToken(value: String): Self = StObject.set(x, "playerIdConsistencyToken", value.asInstanceOf[js.Any])
+    
+    inline def setPlayerIdConsistencyTokenUndefined: Self = StObject.set(x, "playerIdConsistencyToken", js.undefined)
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

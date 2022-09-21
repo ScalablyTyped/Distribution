@@ -10,10 +10,10 @@ object networkWifiMod {
   
   @JSImport("material-ui/svg-icons/device/network-wifi", JSImport.Default)
   @js.native
-  class default () extends DeviceNetworkWifi
+  open class default () extends DeviceNetworkWifi
   
   @JSImport("material-ui/svg-icons/device/network-wifi", "DeviceNetworkWifi")
   @js.native
-  class DeviceNetworkWifi ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceNetworkWifi ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

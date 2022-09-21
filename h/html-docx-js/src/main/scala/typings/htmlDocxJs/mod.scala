@@ -1,7 +1,7 @@
 package typings.htmlDocxJs
 
 import typings.htmlDocxJs.anon.Margins
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

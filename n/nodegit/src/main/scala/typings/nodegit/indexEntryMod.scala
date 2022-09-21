@@ -9,7 +9,7 @@ object indexEntryMod {
   
   @JSImport("nodegit/index-entry", "IndexEntry")
   @js.native
-  class IndexEntry () extends StObject {
+  open class IndexEntry () extends StObject {
     
     var ctime: IndexTime = js.native
     

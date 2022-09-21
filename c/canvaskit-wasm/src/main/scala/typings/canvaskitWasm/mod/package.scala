@@ -1,163 +1,185 @@
 package typings.canvaskitWasm.mod
 
+import typings.canvaskitWasm.mod.^
+import typings.std.CanvasRenderingContext2D
+import typings.std.DOMMatrix
+import typings.std.Float32ArrayConstructor
+import typings.std.HTMLImageElement
+import typings.std.HTMLVideoElement
+import typings.std.ImageBitmap
+import typings.std.ImageData
+import typings.std.Int16ArrayConstructor
+import typings.std.Int32ArrayConstructor
+import typings.std.Int8ArrayConstructor
+import typings.std.Path2D
+import typings.std.Uint16ArrayConstructor
+import typings.std.Uint32ArrayConstructor
+import typings.std.Uint8ArrayConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Affinity = typings.canvaskitWasm.mod.EmbindEnumEntity
+inline def default(opts: CanvasKitInitOptions): js.Promise[CanvasKit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CanvasKit]]
 
-type AlphaType = typings.canvaskitWasm.mod.EmbindEnumEntity
+type Affinity = EmbindEnumEntity
 
-type AngleInDegrees = scala.Double
+type AlphaType = EmbindEnumEntity
 
-type AngleInRadians = scala.Double
+type AngleInDegrees = Double
 
-type BlendMode = typings.canvaskitWasm.mod.EmbindEnumEntity
+type AngleInRadians = Double
 
-type BlurStyle = typings.canvaskitWasm.mod.EmbindEnumEntity
+type BlendMode = EmbindEnumEntity
 
-type ClipOp = typings.canvaskitWasm.mod.EmbindEnumEntity
+type BlurStyle = EmbindEnumEntity
 
-type ColorIntArray = typings.canvaskitWasm.mod.MallocObj | typings.std.Uint32Array | js.Array[scala.Double]
+type ClipOp = EmbindEnumEntity
 
-type ColorSpace = typings.canvaskitWasm.mod.EmbindSingleton
+type Color = js.typedarray.Float32Array
 
-type ColorType = typings.canvaskitWasm.mod.EmbindEnumEntity
+type ColorChannel = EmbindEnumEntity
 
-type DecorationStyle = typings.canvaskitWasm.mod.EmbindEnumEntity
+type ColorInt = Double
 
-type EmulatedCanvas2DContext = typings.std.CanvasRenderingContext2D
+type ColorIntArray = MallocObj | js.typedarray.Uint32Array | js.Array[Double]
 
-type EmulatedImageData = typings.std.ImageData
+type ColorMatrix = js.typedarray.Float32Array
 
-type EmulatedPath2D = typings.std.Path2D
+type ColorType = EmbindEnumEntity
 
-type EncodedImageFormat = typings.canvaskitWasm.mod.EmbindEnumEntity
+type DecorationStyle = EmbindEnumEntity
 
-type FillType = typings.canvaskitWasm.mod.EmbindEnumEntity
+type EmulatedCanvas2DContext = CanvasRenderingContext2D
 
-type FilterQuality = typings.canvaskitWasm.mod.EmbindEnumEntity
+type EmulatedImageData = ImageData
 
-type FlattenedPointArray = typings.std.Float32Array
+type EmulatedPath2D = Path2D
 
-type FlattenedRectangleArray = typings.std.Float32Array
+type EncodedImageFormat = EmbindEnumEntity
 
-type FontEdging = typings.canvaskitWasm.mod.EmbindEnumEntity
+type FillType = EmbindEnumEntity
 
-type FontHinting = typings.canvaskitWasm.mod.EmbindEnumEntity
+type FilterMode = EmbindEnumEntity
 
-type FontSlant = typings.canvaskitWasm.mod.EmbindEnumEntity
+type FlattenedPointArray = js.typedarray.Float32Array
 
-type FontWeight = typings.canvaskitWasm.mod.EmbindEnumEntity
+type FlattenedRectangleArray = js.typedarray.Float32Array
 
-type FontWidth = typings.canvaskitWasm.mod.EmbindEnumEntity
+type FontEdging = EmbindEnumEntity
 
-type GlyphIDArray = typings.std.Uint32Array
+type FontHinting = EmbindEnumEntity
 
-type InputColor = typings.canvaskitWasm.mod.MallocObj | typings.canvaskitWasm.mod.SkColor | js.Array[scala.Double]
+type FontSlant = EmbindEnumEntity
 
-type InputColorMatrix = typings.canvaskitWasm.mod.MallocObj | typings.canvaskitWasm.mod.SkColorMatrix | js.Array[scala.Double]
+type FontWeight = EmbindEnumEntity
 
-type InputFlattenedPointArray = typings.canvaskitWasm.mod.MallocObj | typings.canvaskitWasm.mod.FlattenedPointArray | js.Array[scala.Double]
+type FontWidth = EmbindEnumEntity
 
-type InputFlattenedRSXFormArray = typings.canvaskitWasm.mod.MallocObj | typings.std.Float32Array | js.Array[scala.Double]
+type GlyphIDArray = js.typedarray.Uint16Array
 
-type InputFlattenedRectangleArray = typings.canvaskitWasm.mod.MallocObj | typings.canvaskitWasm.mod.FlattenedRectangleArray | js.Array[scala.Double]
+type IRect = js.typedarray.Int32Array
 
-type InputGlyphIDArray = typings.canvaskitWasm.mod.MallocObj | typings.canvaskitWasm.mod.GlyphIDArray | js.Array[scala.Double]
+type InputBidiRegions = MallocObj | js.typedarray.Uint32Array | js.Array[Double]
 
-type InputIRect = typings.canvaskitWasm.mod.MallocObj | typings.canvaskitWasm.mod.SkIRect | js.Array[scala.Double]
+type InputColor = MallocObj | js.typedarray.Float32Array | js.Array[Double]
 
-type InputMatrix = typings.canvaskitWasm.mod.MallocObj | typings.canvaskitWasm.mod.Matrix4x4 | typings.canvaskitWasm.mod.Matrix3x3 | typings.canvaskitWasm.mod.Matrix3x2 | typings.std.DOMMatrix | js.Array[scala.Double]
+type InputColorMatrix = MallocObj | js.typedarray.Float32Array | js.Array[Double]
 
-type InputRRect = typings.canvaskitWasm.mod.MallocObj | typings.canvaskitWasm.mod.SkRRect | js.Array[scala.Double]
+type InputCommands = MallocObj | js.typedarray.Float32Array | js.Array[Double]
 
-type InputRect = typings.canvaskitWasm.mod.MallocObj | typings.canvaskitWasm.mod.SkRect | js.Array[scala.Double]
+type InputFlattenedPointArray = MallocObj | js.typedarray.Float32Array | js.Array[Double]
 
-type Matrix3x2 = typings.std.Float32Array
+type InputFlattenedRSXFormArray = MallocObj | js.typedarray.Float32Array | js.Array[Double]
 
-type Matrix3x3 = typings.std.Float32Array
+type InputFlattenedRectangleArray = MallocObj | js.typedarray.Float32Array | js.Array[Double]
 
-type Matrix4x4 = typings.std.Float32Array
+type InputFlexibleColorArray = js.typedarray.Float32Array | js.typedarray.Uint32Array | js.Array[js.typedarray.Float32Array]
 
-type PaintStyle = typings.canvaskitWasm.mod.EmbindEnumEntity
+type InputGlyphIDArray = MallocObj | js.typedarray.Uint16Array | js.Array[Double]
 
-type PathCommand = js.Array[scala.Double]
+type InputGraphemes = MallocObj | js.typedarray.Uint32Array | js.Array[Double]
 
-type PathOp = typings.canvaskitWasm.mod.EmbindEnumEntity
+type InputIRect = MallocObj | js.typedarray.Int32Array | js.Array[Double]
 
-type PlaceholderAlignment = typings.canvaskitWasm.mod.EmbindEnumEntity
+type InputLineBreaks = MallocObj | js.typedarray.Uint32Array | js.Array[Double]
 
-type PointMode = typings.canvaskitWasm.mod.EmbindEnumEntity
+type InputMatrix = MallocObj | js.typedarray.Float32Array | DOMMatrix | js.Array[Double]
 
-type PosTan = js.Array[scala.Double]
+type InputPoint = js.typedarray.Float32Array | js.Array[Double]
 
-type RectHeightStyle = typings.canvaskitWasm.mod.EmbindEnumEntity
+type InputRRect = MallocObj | js.typedarray.Float32Array | js.Array[Double]
 
-type RectWidthStyle = typings.canvaskitWasm.mod.EmbindEnumEntity
+type InputRect = MallocObj | js.typedarray.Float32Array | js.Array[Double]
 
-type SaveLayerFlag = scala.Double
+type InputVector3 = MallocObj | Vector3 | js.typedarray.Float32Array
 
-type SkColor = typings.std.Float32Array
+type InputWords = MallocObj | js.typedarray.Uint32Array | js.Array[Double]
 
-type SkColorFilter = typings.canvaskitWasm.mod.EmbindObject[
-/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias canvaskit-wasm.canvaskit-wasm.SkColorFilter */ js.Object]
+type LineBreakType = EmbindEnumEntity
 
-type SkColorInt = scala.Double
+type Matrix3x2 = js.typedarray.Float32Array
 
-type SkColorMatrix = typings.std.Float32Array
+type Matrix3x3 = js.typedarray.Float32Array
 
-type SkIRect = typings.std.Int32Array
+type Matrix4x4 = js.typedarray.Float32Array
 
-type SkImageFilter = typings.canvaskitWasm.mod.EmbindObject[
-/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias canvaskit-wasm.canvaskit-wasm.SkImageFilter */ js.Object]
+type MipmapMode = EmbindEnumEntity
 
-type SkMaskFilter = typings.canvaskitWasm.mod.EmbindObject[
-/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias canvaskit-wasm.canvaskit-wasm.SkMaskFilter */ js.Object]
+type PaintStyle = EmbindEnumEntity
 
-type SkPathEffect = typings.canvaskitWasm.mod.EmbindObject[
-/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias canvaskit-wasm.canvaskit-wasm.SkPathEffect */ js.Object]
+type Path1DEffectStyle = EmbindEnumEntity
 
-type SkPoint = js.Array[scala.Double]
+type PathOp = EmbindEnumEntity
 
-type SkRRect = typings.std.Float32Array
+type PlaceholderAlignment = EmbindEnumEntity
 
-type SkRect = typings.std.Float32Array
+type Point = js.typedarray.Float32Array
 
-type SkShader = typings.canvaskitWasm.mod.EmbindObject[
-/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias canvaskit-wasm.canvaskit-wasm.SkShader */ js.Object]
+type PointMode = EmbindEnumEntity
 
-type SkTextBlob = typings.canvaskitWasm.mod.EmbindObject[
-/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias canvaskit-wasm.canvaskit-wasm.SkTextBlob */ js.Object]
+type PosTan = js.typedarray.Float32Array
 
-type SkTypeface = typings.canvaskitWasm.mod.EmbindObject[
-/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias canvaskit-wasm.canvaskit-wasm.SkTypeface */ js.Object]
+type RRect = js.typedarray.Float32Array
 
-type StrokeCap = typings.canvaskitWasm.mod.EmbindEnumEntity
+type Rect = js.typedarray.Float32Array
 
-type StrokeJoin = typings.canvaskitWasm.mod.EmbindEnumEntity
+type RectHeightStyle = EmbindEnumEntity
 
-type TextAlign = typings.canvaskitWasm.mod.EmbindEnumEntity
+type RectWidthStyle = EmbindEnumEntity
 
-type TextBaseline = typings.canvaskitWasm.mod.EmbindEnumEntity
+type SaveLayerFlag = Double
 
-type TextDirection = typings.canvaskitWasm.mod.EmbindEnumEntity
+type StrokeCap = EmbindEnumEntity
 
-type TileMode = typings.canvaskitWasm.mod.EmbindEnumEntity
+type StrokeJoin = EmbindEnumEntity
 
-type TypedArray = typings.std.Float32Array | typings.std.Int32Array | typings.std.Int16Array | typings.std.Int8Array | typings.std.Uint32Array | typings.std.Uint16Array | typings.std.Uint8Array
+type TextAlign = EmbindEnumEntity
 
-type TypedArrayConstructor = typings.std.Float32ArrayConstructor | typings.std.Int32ArrayConstructor | typings.std.Int16ArrayConstructor | typings.std.Int8ArrayConstructor | typings.std.Uint32ArrayConstructor | typings.std.Uint16ArrayConstructor | typings.std.Uint8ArrayConstructor
+type TextBaseline = EmbindEnumEntity
 
-type Vector3 = js.Array[scala.Double]
+type TextDirection = EmbindEnumEntity
 
-type VectorN = js.Array[scala.Double]
+type TextHeightBehavior = EmbindEnumEntity
 
-type VerbList = typings.canvaskitWasm.mod.MallocObj | typings.std.Uint8Array | js.Array[scala.Double]
+type TextureSource = TypedArray | HTMLImageElement | HTMLVideoElement | ImageData | ImageBitmap
 
-type VertexMode = typings.canvaskitWasm.mod.EmbindEnumEntity
+type TileMode = EmbindEnumEntity
 
-type WebGLContextHandle = scala.Double
+type TypedArray = js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Int16Array | js.typedarray.Int8Array | js.typedarray.Uint32Array | js.typedarray.Uint16Array | js.typedarray.Uint8Array
 
-type WeightList = typings.canvaskitWasm.mod.MallocObj | typings.std.Float32Array | js.Array[scala.Double]
+type TypedArrayConstructor = Float32ArrayConstructor | Int32ArrayConstructor | Int16ArrayConstructor | Int8ArrayConstructor | Uint32ArrayConstructor | Uint16ArrayConstructor | Uint8ArrayConstructor
+
+type Vector3 = js.Array[Double]
+
+type VectorN = js.Array[Double]
+
+type VerbList = MallocObj | js.typedarray.Uint8Array | js.Array[Double]
+
+type VertexMode = EmbindEnumEntity
+
+type WebGLContextHandle = Double
+
+type WebGPUDeviceContext = GrDirectContext
+
+type WeightList = MallocObj | js.typedarray.Float32Array | js.Array[Double]

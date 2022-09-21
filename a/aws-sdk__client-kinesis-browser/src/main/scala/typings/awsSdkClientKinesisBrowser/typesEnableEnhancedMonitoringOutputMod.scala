@@ -70,7 +70,7 @@ object typesEnableEnhancedMonitoringOutputMod {
       
       inline def setCurrentShardLevelMetricsVarargs(
         value: (IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String)*
-      ): Self = StObject.set(x, "CurrentShardLevelMetrics", js.Array(value :_*))
+      ): Self = StObject.set(x, "CurrentShardLevelMetrics", js.Array(value*))
       
       inline def setDesiredShardLevelMetrics(
         value: js.Array[
@@ -82,7 +82,7 @@ object typesEnableEnhancedMonitoringOutputMod {
       
       inline def setDesiredShardLevelMetricsVarargs(
         value: (IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String)*
-      ): Self = StObject.set(x, "DesiredShardLevelMetrics", js.Array(value :_*))
+      ): Self = StObject.set(x, "DesiredShardLevelMetrics", js.Array(value*))
       
       inline def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
       

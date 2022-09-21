@@ -1,23 +1,14 @@
 package typings.mssql.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mssql", "TransactionError")
 @js.native
-class TransactionError protected ()
-  extends StObject
-     with Error {
+open class TransactionError protected () extends MSSQLError {
   def this(message: String) = this()
-  def this(message: String, code: js.Any) = this()
-  
-  var code: String = js.native
-  
-  /* CompleteClass */
-  var message: String = js.native
-  
-  /* CompleteClass */
-  var name: String = js.native
+  def this(message: js.Error) = this()
+  def this(message: String, code: String) = this()
+  def this(message: js.Error, code: String) = this()
 }

@@ -46,7 +46,7 @@ object WmxSitemap {
     
     inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     
-    inline def setContentsVarargs(value: WmxSitemapContent*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: WmxSitemapContent*): Self = StObject.set(x, "contents", js.Array(value*))
     
     inline def setErrors(value: String): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

@@ -11,18 +11,18 @@ trait LegendLayerInfos
      with Object {
   
   /**
-    * List of sublayer ids that will not be displayed in the legend even if they are visible in the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#layerInfos)
-    */
-  var hideLayers: js.Array[Double]
-  
-  /**
     * A layer to display in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#layerInfos)
     */
   var layer: Layer
+  
+  /**
+    * Only applicable if the `layer` is a [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#layerInfos)
+    */
+  var sublayerIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Specifies a title for the layer to display above its symbols and descriptions.
@@ -36,21 +36,22 @@ object LegendLayerInfos {
   inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    hideLayers: js.Array[Double],
     layer: Layer,
     propertyIsEnumerable: PropertyKey => Boolean
   ): LegendLayerInfos = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), hideLayers = hideLayers.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[LegendLayerInfos]
   }
   
   extension [Self <: LegendLayerInfos](x: Self) {
     
-    inline def setHideLayers(value: js.Array[Double]): Self = StObject.set(x, "hideLayers", value.asInstanceOf[js.Any])
-    
-    inline def setHideLayersVarargs(value: Double*): Self = StObject.set(x, "hideLayers", js.Array(value :_*))
-    
     inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setSublayerIds(value: js.Array[Double]): Self = StObject.set(x, "sublayerIds", value.asInstanceOf[js.Any])
+    
+    inline def setSublayerIdsUndefined: Self = StObject.set(x, "sublayerIds", js.undefined)
+    
+    inline def setSublayerIdsVarargs(value: Double*): Self = StObject.set(x, "sublayerIds", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

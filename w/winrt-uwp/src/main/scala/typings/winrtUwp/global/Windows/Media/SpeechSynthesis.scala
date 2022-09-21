@@ -112,7 +112,7 @@ object SpeechSynthesis {
   @JSGlobal("Windows.Media.SpeechSynthesis.SpeechSynthesizer")
   @js.native
   /** Initializes a new instance of a SpeechSynthesizer object. */
-  class SpeechSynthesizer ()
+  open class SpeechSynthesizer ()
     extends StObject
        with typings.winrtUwp.Windows.Media.SpeechSynthesis.SpeechSynthesizer {
     

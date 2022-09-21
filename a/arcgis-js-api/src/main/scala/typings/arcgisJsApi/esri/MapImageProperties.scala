@@ -34,6 +34,8 @@ trait MapImageProperties extends StObject {
   /**
     * The opacity of the image.
     *
+    * @default 1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#opacity)
     */
   var opacity: js.UndefOr[Double] = js.undefined
@@ -47,6 +49,8 @@ trait MapImageProperties extends StObject {
   
   /**
     * Indicates if the requested image is visible in the view.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#visible)
     */

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Repository")
 @js.native
-class Repository ()
+open class Repository ()
   extends typings.nodegit.repositoryMod.Repository
 /* static members */
 object Repository {
@@ -19,7 +19,7 @@ object Repository {
   /**
     * Creates a branch with the passed in name pointing to the commit
     */
-  inline def discover(startPath: String, acrossFs: Double, ceilingDirs: String): js.Promise[typings.nodegit.bufMod.Buf] = (^.asInstanceOf[js.Dynamic].applyDynamic("discover")(startPath.asInstanceOf[js.Any], acrossFs.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.bufMod.Buf]]
+  inline def discover(startPath: String, acrossFs: Double, ceilingDirs: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("discover")(startPath.asInstanceOf[js.Any], acrossFs.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def init(path: String, isBare: Double): js.Promise[typings.nodegit.repositoryMod.Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(path.asInstanceOf[js.Any], isBare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.repositoryMod.Repository]]
   
@@ -34,6 +34,8 @@ object Repository {
   inline def openExt(path: String, flags: Double): js.Promise[typings.nodegit.repositoryMod.Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.repositoryMod.Repository]]
   inline def openExt(path: String, flags: Double, ceilingDirs: String): js.Promise[typings.nodegit.repositoryMod.Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.repositoryMod.Repository]]
   inline def openExt(path: String, flags: Unit, ceilingDirs: String): js.Promise[typings.nodegit.repositoryMod.Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.repositoryMod.Repository]]
+  
+  inline def openFromWorktree(wt: typings.nodegit.worktreeMod.Worktree): js.Promise[typings.nodegit.repositoryMod.Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("openFromWorktree")(wt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodegit.repositoryMod.Repository]]
   
   inline def wrapOdb(odb: typings.nodegit.odbMod.Odb): js.Promise[typings.nodegit.repositoryMod.Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapOdb")(odb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodegit.repositoryMod.Repository]]
 }

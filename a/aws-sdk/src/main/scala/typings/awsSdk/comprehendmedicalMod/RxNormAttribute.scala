@@ -83,7 +83,7 @@ object RxNormAttribute {
     
     inline def setTraitsUndefined: Self = StObject.set(x, "Traits", js.undefined)
     
-    inline def setTraitsVarargs(value: RxNormTrait*): Self = StObject.set(x, "Traits", js.Array(value :_*))
+    inline def setTraitsVarargs(value: RxNormTrait*): Self = StObject.set(x, "Traits", js.Array(value*))
     
     inline def setType(value: RxNormAttributeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

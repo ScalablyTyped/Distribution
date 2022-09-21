@@ -11,16 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.typescript.mod.Declaration because Already inherited
 - typings.typescript.mod.NamedDeclaration because Already inherited
 - typings.typescript.mod.ObjectLiteralElement because var conflicts: _declarationBrand. Inlined _objectLiteralBrand
+- typings.typescript.mod.TypeElement because var conflicts: _declarationBrand. Inlined _typeElementBrand
 - typings.typescript.mod.ClassElement because var conflicts: _declarationBrand. Inlined _classElementBrand */ @js.native
 trait GetAccessorDeclaration
   extends StObject
      with FunctionLikeDeclarationBase
      with AccessorDeclaration
-     with FunctionLikeDeclaration {
+     with FunctionLikeDeclaration
+     with HasDecorators
+     with HasModifiers {
   
-  var _classElementBrand: js.Any = js.native
+  var _classElementBrand: Any = js.native
   
-  var _objectLiteralBrand: js.Any = js.native
+  var _objectLiteralBrand: Any = js.native
+  
+  var _typeElementBrand: Any = js.native
   
   @JSName("body")
   val body_GetAccessorDeclaration: js.UndefOr[FunctionBody] = js.native
@@ -32,5 +37,5 @@ trait GetAccessorDeclaration
   val name_GetAccessorDeclaration: PropertyName = js.native
   
   @JSName("parent")
-  val parent_GetAccessorDeclaration: ClassLikeDeclaration | ObjectLiteralExpression = js.native
+  val parent_GetAccessorDeclaration: ClassLikeDeclaration | ObjectLiteralExpression | TypeLiteralNode | InterfaceDeclaration = js.native
 }

@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.galleryInterfacesMod.ExtensionFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,7 +37,7 @@ trait InstalledExtension
   /**
     * This represents the date/time the extensions was last updated in the gallery. This doesnt mean this version was updated the value represents changes to any and all versions of the extension.
     */
-  var lastPublished: Date
+  var lastPublished: js.Date
   
   /**
     * Unique id of the publisher of this extension
@@ -76,7 +75,7 @@ object InstalledExtension {
     flags: ExtensionFlags,
     installState: InstalledExtensionState,
     language: String,
-    lastPublished: Date,
+    lastPublished: js.Date,
     licensing: ExtensionLicensing,
     manifestVersion: Double,
     publisherId: String,
@@ -99,13 +98,13 @@ object InstalledExtension {
     
     inline def setFiles(value: js.Array[ExtensionFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    inline def setFilesVarargs(value: ExtensionFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: ExtensionFile*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setFlags(value: ExtensionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     inline def setInstallState(value: InstalledExtensionState): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
     
-    inline def setLastPublished(value: Date): Self = StObject.set(x, "lastPublished", value.asInstanceOf[js.Any])
+    inline def setLastPublished(value: js.Date): Self = StObject.set(x, "lastPublished", value.asInstanceOf[js.Any])
     
     inline def setPublisherId(value: String): Self = StObject.set(x, "publisherId", value.asInstanceOf[js.Any])
     

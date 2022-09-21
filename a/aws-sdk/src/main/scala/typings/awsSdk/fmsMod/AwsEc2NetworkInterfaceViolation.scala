@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsEc2NetworkInterfaceViolation extends StObject {
   
   /**
-    * List of security groups that violate the rules specified in the master security group of the AWS Firewall Manager policy.
+    * List of security groups that violate the rules specified in the primary security group of the Firewall Manager policy.
     */
   var ViolatingSecurityGroups: js.UndefOr[ResourceIdList] = js.undefined
   
@@ -29,7 +29,7 @@ object AwsEc2NetworkInterfaceViolation {
     
     inline def setViolatingSecurityGroupsUndefined: Self = StObject.set(x, "ViolatingSecurityGroups", js.undefined)
     
-    inline def setViolatingSecurityGroupsVarargs(value: ResourceId*): Self = StObject.set(x, "ViolatingSecurityGroups", js.Array(value :_*))
+    inline def setViolatingSecurityGroupsVarargs(value: ResourceId*): Self = StObject.set(x, "ViolatingSecurityGroups", js.Array(value*))
     
     inline def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for parse-path
 
-Typings are for version 4.0
+Typings are for version 7.0
 
 ## Library description:
 Parse paths (local paths, urls: ssh/git/etc)
@@ -10,10 +10,10 @@ Parse paths (local paths, urls: ssh/git/etc)
 | ------------------ | :-------------: |
 | Full name          | parse-path |
 | Keywords           | parse, path, url, node, git, advanced |
-| # releases         | 3 |
-| # dependents       | 31 |
-| # downloads        | 82674897 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2709044333333334E7 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/IonicaBizau/parse-path)

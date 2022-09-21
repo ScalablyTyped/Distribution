@@ -15,7 +15,7 @@ trait Scriptlet extends StObject {
   
   var embed: Boolean
   
-  val event: js.Any
+  val event: Any
   
   val readyState: Double
   
@@ -28,7 +28,7 @@ object Scriptlet {
     MSHTMLDotScriptlet_typekey: Scriptlet,
     Scrollbar: Boolean,
     embed: Boolean,
-    event: js.Any,
+    event: Any,
     readyState: Double,
     url: String
   ): Scriptlet = {
@@ -43,7 +43,7 @@ object Scriptlet {
     
     inline def setEmbed(value: Boolean): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     
-    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setMSHTMLDotScriptlet_typekey(value: Scriptlet): Self = StObject.set(x, "MSHTML.Scriptlet_typekey", value.asInstanceOf[js.Any])
     

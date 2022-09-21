@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Maths/index", "Size")
 @js.native
-class Size protected ()
+open class Size protected ()
   extends typings.babylonjs.mathMod.Size {
   /**
     * Creates a Size object from the given width and height (floats).

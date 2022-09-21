@@ -4,7 +4,9 @@ import typings.carlo.anon.Body
 import typings.carlo.anon.Height
 import typings.carlo.anon.Path
 import typings.carlo.carloStrings.close
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.puppeteerCore.mod.Browser
+import typings.puppeteerCore.mod.Page
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,12 +19,12 @@ object mod {
   
   inline def enterTestMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enterTestMode")().asInstanceOf[Unit]
   
-  inline def fileInfo(file: js.Any): js.Promise[Path] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileInfo")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Path]]
+  inline def fileInfo(file: Any): js.Promise[Path] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileInfo")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Path]]
   
   inline def launch(): js.Promise[App] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")().asInstanceOf[js.Promise[App]]
   inline def launch(options: LaunchOptions): js.Promise[App] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[App]]
   
-  inline def loadParams(): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadParams")().asInstanceOf[js.Promise[js.Array[js.Any]]]
+  inline def loadParams(): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadParams")().asInstanceOf[js.Promise[js.Array[Any]]]
   
   @js.native
   trait App extends StObject {
@@ -30,22 +32,22 @@ object mod {
     /**
       * Puppeteer browser object for testing.
       */
-    def browserForTest(): js.Any = js.native
+    def browserForTest(): Browser = js.native
     
     def createWindow(): js.Promise[Window] = js.native
     def createWindow(options: WindowOptions): js.Promise[Window] = js.native
     
     def evaluate(
       pageFunction: String,
-      args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
+      args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ Any)*
     ): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ Any
       ] = js.native
     def evaluate(
-      pageFunction: js.Function1[/* repeated */ js.Any, js.Any],
-      args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
+      pageFunction: js.Function1[/* repeated */ Any, Any],
+      args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ Any)*
     ): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ Any
       ] = js.native
     @JSName("evaluate")
     var evaluate_Original: EvaluateFunction = js.native
@@ -61,14 +63,14 @@ object mod {
       * @param name
       * @param carloFunction
       */
-    def exposeFunction(name: String, carloFunction: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[Unit] = js.native
+    def exposeFunction(name: String, carloFunction: js.Function1[/* repeated */ Any, Any]): js.Promise[Unit] = js.native
     
     /**
       * Shortcut to the main window's Window.load
       * @param uri
       * @param params
       */
-    def load(uri: String, params: js.Any*): js.Promise[Unit] = js.native
+    def load(uri: String, params: Any*): js.Promise[Unit] = js.native
     
     /**
       * Running app guarantees to have main window.
@@ -82,7 +84,7 @@ object mod {
       * @param name 'exit' or 'window'
       * @param callback
       */
-    def on(name: AppEvent, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def on(name: AppEvent, callback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
     /**
       * Makes the content of the given folder available to the Chrome web app
@@ -184,15 +186,15 @@ object mod {
     
     def apply(
       pageFunction: String,
-      args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
+      args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ Any)*
     ): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ Any
       ] = js.native
     def apply(
-      pageFunction: js.Function1[/* repeated */ js.Any, js.Any],
-      args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
+      pageFunction: js.Function1[/* repeated */ Any, Any],
+      args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ Any)*
     ): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ Any
       ] = js.native
   }
   
@@ -301,7 +303,7 @@ object mod {
     /**
       * Optional parameters to share between Carlo instances.
       */
-    var paramsForReuse: js.UndefOr[js.Any] = js.undefined
+    var paramsForReuse: js.UndefOr[Any] = js.undefined
     
     /**
       * Application title
@@ -326,13 +328,13 @@ object mod {
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setChannel(value: js.Array[Channel]): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
       inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      inline def setChannelVarargs(value: Channel*): Self = StObject.set(x, "channel", js.Array(value :_*))
+      inline def setChannelVarargs(value: Channel*): Self = StObject.set(x, "channel", js.Array(value*))
       
       inline def setExecutablePath(value: String): Self = StObject.set(x, "executablePath", value.asInstanceOf[js.Any])
       
@@ -342,7 +344,7 @@ object mod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setParamsForReuse(value: js.Any): Self = StObject.set(x, "paramsForReuse", value.asInstanceOf[js.Any])
+      inline def setParamsForReuse(value: Any): Self = StObject.set(x, "paramsForReuse", value.asInstanceOf[js.Any])
       
       inline def setParamsForReuseUndefined: Self = StObject.set(x, "paramsForReuse", js.undefined)
       
@@ -376,15 +378,15 @@ object mod {
     
     def evaluate(
       pageFunction: String,
-      args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
+      args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ Any)*
     ): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ Any
       ] = js.native
     def evaluate(
-      pageFunction: js.Function1[/* repeated */ js.Any, js.Any],
-      args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
+      pageFunction: js.Function1[/* repeated */ Any, Any],
+      args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ Any)*
     ): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ Any
       ] = js.native
     @JSName("evaluate")
     var evaluate_Original: EvaluateFunction = js.native
@@ -393,7 +395,7 @@ object mod {
       * @param name Name of the function on the window object.
       * @param carloFunction Callback function which will be called in Carlo's context.
       */
-    def exposeFunction(name: String, carloFunction: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[Unit] = js.native
+    def exposeFunction(name: String, carloFunction: js.Function1[/* repeated */ Any, Any]): js.Promise[Unit] = js.native
     
     /**
       * Turns the window into the full screen mode. Behavior is platform specific.
@@ -408,7 +410,7 @@ object mod {
       * @param params Optional parameters to pass to the web application.
       */
     def load(uri: String): js.Promise[Unit] = js.native
-    def load(uri: String, params: js.Any): js.Promise[Unit] = js.native
+    def load(uri: String, params: Any): js.Promise[Unit] = js.native
     
     /**
       * Maximizes the window. Behavior is platform-specific.
@@ -424,17 +426,17 @@ object mod {
       * 'close' - Emitted when the window closes.
       * @param name 'close'
       */
-    def on(name: AppEvent, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def on(name: AppEvent, callback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
     /**
       * Returns Puppeteer page object for testing.
       */
-    def pageForTest(): js.Any = js.native
+    def pageForTest(): Page = js.native
     
     /**
       * Returns the options.paramsForReuse value passed into the carlo.launch.
       */
-    def paramsForReuse(): js.Any = js.native
+    def paramsForReuse(): Any = js.native
     
     /**
       * Same as App.serveFolder(folder[, prefix]), but only applies to current window.

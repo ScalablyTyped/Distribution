@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LabelingJobOutput extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) for the most recent Amazon SageMaker model trained as part of automated data labeling. 
+    * The Amazon Resource Name (ARN) for the most recent SageMaker model trained as part of automated data labeling. 
     */
   var FinalActiveLearningModelArn: js.UndefOr[ModelArn] = js.undefined
   

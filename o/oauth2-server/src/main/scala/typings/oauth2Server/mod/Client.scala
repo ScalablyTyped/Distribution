@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait Client
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var accessTokenLifetime: js.UndefOr[Double] = js.undefined
   
@@ -37,7 +37,7 @@ object Client {
     
     inline def setGrants(value: String | js.Array[String]): Self = StObject.set(x, "grants", value.asInstanceOf[js.Any])
     
-    inline def setGrantsVarargs(value: String*): Self = StObject.set(x, "grants", js.Array(value :_*))
+    inline def setGrantsVarargs(value: String*): Self = StObject.set(x, "grants", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -45,7 +45,7 @@ object Client {
     
     inline def setRedirectUrisUndefined: Self = StObject.set(x, "redirectUris", js.undefined)
     
-    inline def setRedirectUrisVarargs(value: String*): Self = StObject.set(x, "redirectUris", js.Array(value :_*))
+    inline def setRedirectUrisVarargs(value: String*): Self = StObject.set(x, "redirectUris", js.Array(value*))
     
     inline def setRefreshTokenLifetime(value: Double): Self = StObject.set(x, "refreshTokenLifetime", value.asInstanceOf[js.Any])
     

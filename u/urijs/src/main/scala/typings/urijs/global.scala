@@ -16,8 +16,16 @@ object global {
     
     inline def apply(): typings.urijs.mod.URI = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.urijs.mod.URI]
     inline def apply(value: String): typings.urijs.mod.URI = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[typings.urijs.mod.URI]
+    inline def apply(value: String, base: String): typings.urijs.mod.URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.urijs.mod.URI]
+    inline def apply(value: String, base: typings.urijs.mod.URI): typings.urijs.mod.URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.urijs.mod.URI]
+    inline def apply(value: Unit, base: String): typings.urijs.mod.URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.urijs.mod.URI]
+    inline def apply(value: Unit, base: typings.urijs.mod.URI): typings.urijs.mod.URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.urijs.mod.URI]
     inline def apply(value: typings.urijs.mod.HTMLElement): typings.urijs.mod.URI = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[typings.urijs.mod.URI]
+    inline def apply(value: typings.urijs.mod.HTMLElement, base: String): typings.urijs.mod.URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.urijs.mod.URI]
+    inline def apply(value: typings.urijs.mod.HTMLElement, base: typings.urijs.mod.URI): typings.urijs.mod.URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.urijs.mod.URI]
     inline def apply(value: URIOptions): typings.urijs.mod.URI = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[typings.urijs.mod.URI]
+    inline def apply(value: URIOptions, base: String): typings.urijs.mod.URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.urijs.mod.URI]
+    inline def apply(value: URIOptions, base: typings.urijs.mod.URI): typings.urijs.mod.URI = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.urijs.mod.URI]
     
     @JSGlobal("URI")
     @js.native
@@ -26,16 +34,24 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("URI")
     @js.native
-    class Class ()
+    open class Class ()
       extends StObject
          with typings.urijs.mod.URI {
       def this(value: String) = this()
       def this(value: typings.urijs.mod.HTMLElement) = this()
       def this(value: URIOptions) = this()
+      def this(value: String, base: String) = this()
+      def this(value: String, base: typings.urijs.mod.URI) = this()
+      def this(value: Unit, base: String) = this()
+      def this(value: Unit, base: typings.urijs.mod.URI) = this()
+      def this(value: typings.urijs.mod.HTMLElement, base: String) = this()
+      def this(value: typings.urijs.mod.HTMLElement, base: typings.urijs.mod.URI) = this()
+      def this(value: URIOptions, base: String) = this()
+      def this(value: URIOptions, base: typings.urijs.mod.URI) = this()
     }
     
-    inline def addQuery(data: js.Object, prop: String, value: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addQuery")(data.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def addQuery(data: js.Object, qryObj: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addQuery")(data.asInstanceOf[js.Any], qryObj.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def addQuery(data: QueryDataMap, prop: String, value: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addQuery")(data.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def addQuery(data: QueryDataMap, qryObj: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addQuery")(data.asInstanceOf[js.Any], qryObj.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
     inline def build(parts: URIOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -43,8 +59,10 @@ object global {
     
     inline def buildHost(parts: Port): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildHost")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def buildQuery(qry: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildQuery")(qry.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def buildQuery(qry: js.Object, duplicates: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQuery")(qry.asInstanceOf[js.Any], duplicates.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def buildQuery(data: QueryDataMap): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildQuery")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def buildQuery(data: QueryDataMap, duplicateQueryParameters: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQuery")(data.asInstanceOf[js.Any], duplicateQueryParameters.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def buildQuery(data: QueryDataMap, duplicateQueryParameters: Boolean, escapeQuerySpace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQuery")(data.asInstanceOf[js.Any], duplicateQueryParameters.asInstanceOf[js.Any], escapeQuerySpace.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def buildQuery(data: QueryDataMap, duplicateQueryParameters: Unit, escapeQuerySpace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQuery")(data.asInstanceOf[js.Any], duplicateQueryParameters.asInstanceOf[js.Any], escapeQuerySpace.asInstanceOf[js.Any])).asInstanceOf[String]
     
     inline def buildUserinfo(parts: Password): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildUserinfo")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -81,7 +99,7 @@ object global {
     
     inline def iso8859(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("iso8859")().asInstanceOf[Unit]
     
-    inline def joinPaths(paths: (String | typings.urijs.mod.URI)*): typings.urijs.mod.URI = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPaths")(paths.asInstanceOf[js.Any]).asInstanceOf[typings.urijs.mod.URI]
+    inline def joinPaths(paths: (String | typings.urijs.mod.URI)*): typings.urijs.mod.URI = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPaths")(paths.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.urijs.mod.URI]
     
     inline def parse(url: String): Parts = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[Parts]
     
@@ -104,6 +122,9 @@ object global {
     
     inline def unicode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unicode")().asInstanceOf[Unit]
     
-    inline def withinString(source: String, func: js.Function1[/* url */ String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("withinString")(source.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def withinString(
+      source: String,
+      func: js.Function4[/* url */ String, /* start */ Double, /* end */ Double, /* source */ String, String]
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("withinString")(source.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

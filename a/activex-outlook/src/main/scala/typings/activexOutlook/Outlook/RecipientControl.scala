@@ -10,7 +10,7 @@ trait RecipientControl extends StObject {
   
   var Enabled: Double
   
-  var Font: js.Any
+  var Font: Any
   
   var ForeColor: Double
   
@@ -26,7 +26,7 @@ object RecipientControl {
   inline def apply(
     BackColor: Double,
     Enabled: Double,
-    Font: js.Any,
+    Font: Any,
     ForeColor: Double,
     OutlookDot_RecipientControl_typekey: RecipientControl,
     ReadOnly: Double,
@@ -43,7 +43,7 @@ object RecipientControl {
     
     inline def setEnabled(value: Double): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    inline def setFont(value: js.Any): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Any): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
     inline def setForeColor(value: Double): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     

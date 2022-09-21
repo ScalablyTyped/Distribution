@@ -11,13 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * GoogleApis constructor.
   *
   * @example
+  * ```js
   * const GoogleApis = require('googleapis').GoogleApis;
   * const google = new GoogleApis();
+  * ```
   *
-  * @class GoogleApis
-  * @param {Object} [options] Configuration options.
+  * @param options - Configuration options.
   */
-class GoogleApis ()
+open class GoogleApis ()
   extends typings.googleapis.googleapisMod.GoogleApis {
   def this(options: GlobalOptions) = this()
 }

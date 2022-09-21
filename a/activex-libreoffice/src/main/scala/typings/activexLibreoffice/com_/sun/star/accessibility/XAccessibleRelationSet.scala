@@ -61,7 +61,7 @@ object XAccessibleRelationSet {
     getRelation: Double => AccessibleRelation,
     getRelationByType: Double => AccessibleRelation,
     getRelationCount: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAccessibleRelationSet = {
     val __obj = js.Dynamic.literal(RelationCount = RelationCount.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), containsRelation = js.Any.fromFunction1(containsRelation), getRelation = js.Any.fromFunction1(getRelation), getRelationByType = js.Any.fromFunction1(getRelationByType), getRelationCount = js.Any.fromFunction0(getRelationCount), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

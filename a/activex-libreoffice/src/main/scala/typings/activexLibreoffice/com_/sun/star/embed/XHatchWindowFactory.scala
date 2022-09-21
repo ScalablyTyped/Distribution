@@ -29,7 +29,7 @@ object XHatchWindowFactory {
   inline def apply(
     acquire: () => Unit,
     createHatchWindowInstance: (XWindowPeer, Rectangle, Size) => XHatchWindow,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XHatchWindowFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createHatchWindowInstance = js.Any.fromFunction3(createHatchWindowInstance), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

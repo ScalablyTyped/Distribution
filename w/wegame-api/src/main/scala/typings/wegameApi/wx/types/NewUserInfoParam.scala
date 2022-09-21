@@ -54,7 +54,7 @@ object NewUserInfoParam {
     
     inline def setOpenIdListUndefined: Self = StObject.set(x, "openIdList", js.undefined)
     
-    inline def setOpenIdListVarargs(value: String*): Self = StObject.set(x, "openIdList", js.Array(value :_*))
+    inline def setOpenIdListVarargs(value: String*): Self = StObject.set(x, "openIdList", js.Array(value*))
     
     inline def setSuccess(value: /* res */ DataReadonlyArray => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

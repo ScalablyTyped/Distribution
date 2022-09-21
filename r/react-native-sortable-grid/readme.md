@@ -11,14 +11,11 @@ Drag-and-drop sortable grid view for React Native.
 | Full name          | react-native-sortable-grid |
 | Keywords           | drag-drop, sortable, grid |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 13883 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1043.0 |
+| # stars            | 424.0 |
 
 ## Links
-- [Homepage](https://github.com/ollija/react-native-sortable-grid#readme)
-- [Bugs](https://github.com/ollija/react-native-sortable-grid/issues)
-- [Repository](https://github.com/ollija/react-native-sortable-grid)
 - [Npm](https://www.npmjs.com/package/react-native-sortable-grid)
     
 

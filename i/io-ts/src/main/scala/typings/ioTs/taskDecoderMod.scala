@@ -7,7 +7,6 @@ import typings.fpTs.functionMod.Refinement
 import typings.fpTs.functorMod.Functor2
 import typings.fpTs.taskEitherMod.TaskEither_
 import typings.ioTs.decoderMod.Decoder
-import typings.ioTs.freeSemigroupMod.FreeSemigroup
 import typings.ioTs.guardMod.Guard
 import typings.ioTs.ioTsStrings.TaskEither
 import typings.ioTs.kleisliMod.Kleisli
@@ -42,7 +41,7 @@ object taskDecoderMod {
   
   @JSImport("io-ts/lib/TaskDecoder", "Schemable")
   @js.native
-  val Schemable: Schemable2C[typings.ioTs.taskDecoderMod.URI, js.Any] = js.native
+  val Schemable: Schemable2C[typings.ioTs.taskDecoderMod.URI, Any] = js.native
   
   @JSImport("io-ts/lib/TaskDecoder", "URI")
   @js.native
@@ -51,39 +50,39 @@ object taskDecoderMod {
   
   @JSImport("io-ts/lib/TaskDecoder", "UnknownArray")
   @js.native
-  val UnknownArray: TaskDecoder[js.Any, js.Array[js.Any]] = js.native
+  val UnknownArray: TaskDecoder[Any, js.Array[Any]] = js.native
   
   @JSImport("io-ts/lib/TaskDecoder", "UnknownRecord")
   @js.native
-  val UnknownRecord: TaskDecoder[js.Any, Record[String, js.Any]] = js.native
+  val UnknownRecord: TaskDecoder[Any, Record[String, Any]] = js.native
   
   @JSImport("io-ts/lib/TaskDecoder", "WithRefine")
   @js.native
-  val WithRefine: WithRefine2C[typings.ioTs.taskDecoderMod.URI, js.Any] = js.native
+  val WithRefine: WithRefine2C[typings.ioTs.taskDecoderMod.URI, Any] = js.native
   
   @JSImport("io-ts/lib/TaskDecoder", "WithUnion")
   @js.native
-  val WithUnion: WithUnion2C[typings.ioTs.taskDecoderMod.URI, js.Any] = js.native
+  val WithUnion: WithUnion2C[typings.ioTs.taskDecoderMod.URI, Any] = js.native
   
   @JSImport("io-ts/lib/TaskDecoder", "WithUnknownContainers")
   @js.native
-  val WithUnknownContainers: WithUnknownContainers2C[typings.ioTs.taskDecoderMod.URI, js.Any] = js.native
+  val WithUnknownContainers: WithUnknownContainers2C[typings.ioTs.taskDecoderMod.URI, Any] = js.native
   
   inline def alt[I, A](that: js.Function0[TaskDecoder[I, A]]): js.Function1[/* me */ TaskDecoder[I, A], TaskDecoder[I, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* me */ TaskDecoder[I, A], TaskDecoder[I, A]]]
   
-  inline def array[A](item: TaskDecoder[js.Any, A]): TaskDecoder[js.Any, js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(item.asInstanceOf[js.Any]).asInstanceOf[TaskDecoder[js.Any, js.Array[A]]]
+  inline def array[A](item: TaskDecoder[Any, A]): TaskDecoder[Any, js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(item.asInstanceOf[js.Any]).asInstanceOf[TaskDecoder[Any, js.Array[A]]]
   
   @JSImport("io-ts/lib/TaskDecoder", "boolean")
   @js.native
-  val boolean: TaskDecoder[js.Any, Boolean] = js.native
+  val boolean: TaskDecoder[Any, Boolean] = js.native
   
-  inline def compose[A, B](to: TaskDecoder[A, B]): js.Function1[/* from */ TaskDecoder[js.Any, A], TaskDecoder[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(to.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* from */ TaskDecoder[js.Any, A], TaskDecoder[js.Any, B]]]
+  inline def compose[A, B](to: TaskDecoder[A, B]): js.Function1[/* from */ TaskDecoder[Any, A], TaskDecoder[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(to.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* from */ TaskDecoder[Any, A], TaskDecoder[Any, B]]]
   
   inline def draw(e: DecodeError): String = ^.asInstanceOf[js.Dynamic].applyDynamic("draw")(e.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def error(actual: js.Any, message: String): DecodeError = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[DecodeError]
+  inline def error(actual: Any, message: String): DecodeError = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[DecodeError]
   
-  inline def failure[A](actual: js.Any, message: String): TaskEither_[FreeSemigroup[typings.ioTs.decodeErrorMod.DecodeError[String]], A] = (^.asInstanceOf[js.Dynamic].applyDynamic("failure")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[TaskEither_[FreeSemigroup[typings.ioTs.decodeErrorMod.DecodeError[String]], A]]
+  inline def failure[A](actual: Any, message: String): TaskEither_[typings.ioTs.decoderMod.DecodeError, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("failure")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[TaskEither_[typings.ioTs.decoderMod.DecodeError, A]]
   
   inline def fromArray[I, A](item: TaskDecoder[I, A]): TaskDecoder[js.Array[I], js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(item.asInstanceOf[js.Any]).asInstanceOf[TaskDecoder[js.Array[I], js.Array[A]]]
   
@@ -91,7 +90,7 @@ object taskDecoderMod {
   
   inline def fromGuard[I, A /* <: I */](guard: Guard[I, A], expected: String): TaskDecoder[I, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromGuard")(guard.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[TaskDecoder[I, A]]
   
-  inline def fromPartial[P /* <: Record[String, TaskDecoder[js.Any, js.Any]] */](properties: P): TaskDecoder[
+  inline def fromPartial[P /* <: Record[String, TaskDecoder[Any, Any]] */](properties: P): TaskDecoder[
     Partial[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof P ]: io-ts.io-ts/lib/Kleisli.InputOf<'TaskEither', P[K]>}
@@ -119,8 +118,24 @@ object taskDecoderMod {
   
   inline def fromRefinement[I, A /* <: I */](refinement: Refinement[I, A], expected: String): TaskDecoder[I, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRefinement")(refinement.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[TaskDecoder[I, A]]
   
+  inline def fromStruct[P /* <: Record[String, TaskDecoder[Any, Any]] */](properties: P): TaskDecoder[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof P ]: io-ts.io-ts/lib/Kleisli.InputOf<'TaskEither', P[K]>}
+    */ typings.ioTs.ioTsStrings.fromStruct & TopLevel[P], 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K_1 in keyof P ]: io-ts.io-ts/lib/Kleisli.TypeOf<'TaskEither', P[K_1]>}
+    */ typings.ioTs.ioTsStrings.fromStruct & TopLevel[P]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStruct")(properties.asInstanceOf[js.Any]).asInstanceOf[TaskDecoder[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof P ]: io-ts.io-ts/lib/Kleisli.InputOf<'TaskEither', P[K]>}
+    */ typings.ioTs.ioTsStrings.fromStruct & TopLevel[P], 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K_1 in keyof P ]: io-ts.io-ts/lib/Kleisli.TypeOf<'TaskEither', P[K_1]>}
+    */ typings.ioTs.ioTsStrings.fromStruct & TopLevel[P]
+  ]]
+  
   inline def fromSum[T /* <: String */](tag: T): js.Function1[
-    /* members */ Record[String, TaskDecoder[js.Any, js.Any]], 
+    /* members */ Record[String, TaskDecoder[Any, Any]], 
     TaskDecoder[
       typings.ioTs.kleisliMod.InputOf[
         TaskEither, 
@@ -132,7 +147,7 @@ object taskDecoderMod {
       ]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSum")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* members */ Record[String, TaskDecoder[js.Any, js.Any]], 
+    /* members */ Record[String, TaskDecoder[Any, Any]], 
     TaskDecoder[
       typings.ioTs.kleisliMod.InputOf[
         TaskEither, 
@@ -145,7 +160,7 @@ object taskDecoderMod {
     ]
   ]]
   
-  inline def fromTuple[C /* <: js.Array[TaskDecoder[js.Any, js.Any]] */](
+  inline def fromTuple[C /* <: js.Array[TaskDecoder[Any, Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param components because its type C is not an array type */ components: C
   ): TaskDecoder[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -163,7 +178,7 @@ object taskDecoderMod {
     */ typings.ioTs.ioTsStrings.fromTuple & TopLevel[C]
   ]]
   
-  inline def fromType[P /* <: Record[String, TaskDecoder[js.Any, js.Any]] */](properties: P): TaskDecoder[
+  inline def fromType[P /* <: Record[String, TaskDecoder[Any, Any]] */](properties: P): TaskDecoder[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof P ]: io-ts.io-ts/lib/Kleisli.InputOf<'TaskEither', P[K]>}
     */ typings.ioTs.ioTsStrings.fromType & TopLevel[P], 
@@ -181,45 +196,45 @@ object taskDecoderMod {
   
   inline def id[A](): TaskDecoder[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[TaskDecoder[A, A]]
   
-  inline def intersect[IB, B](right: TaskDecoder[IB, B]): js.Function1[/* left */ TaskDecoder[js.Any, js.Any], TaskDecoder[js.Any & IB, js.Any & B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(right.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* left */ TaskDecoder[js.Any, js.Any], TaskDecoder[js.Any & IB, js.Any & B]]]
+  inline def intersect[IB, B](right: TaskDecoder[IB, B]): js.Function1[/* left */ TaskDecoder[Any, Any], TaskDecoder[Any & IB, Any & B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(right.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* left */ TaskDecoder[Any, Any], TaskDecoder[Any & IB, Any & B]]]
   
   inline def `lazy`[I, A](id: String, f: js.Function0[TaskDecoder[I, A]]): TaskDecoder[I, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(id.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[TaskDecoder[I, A]]
   
-  inline def literal[A /* <: Array[Literal] */](
+  inline def literal[A /* <: Array[L] */, L /* <: Literal */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param values because its type A is not an array type */ values: A
   ): TaskDecoder[
-    js.Any, 
+    Any, 
     /* import warning: importer.ImportType#apply Failed type conversion: A[number] */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(values.asInstanceOf[js.Any]).asInstanceOf[TaskDecoder[
-    js.Any, 
+    Any, 
     /* import warning: importer.ImportType#apply Failed type conversion: A[number] */ js.Any
   ]]
   
-  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ TaskDecoder[js.Any, A], TaskDecoder[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskDecoder[js.Any, A], TaskDecoder[js.Any, B]]]
+  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ TaskDecoder[Any, A], TaskDecoder[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskDecoder[Any, A], TaskDecoder[Any, B]]]
   
-  inline def mapLeftWithInput[I](f: js.Function2[/* input */ I, /* e */ DecodeError, DecodeError]): js.Function1[/* decoder */ TaskDecoder[I, js.Any], TaskDecoder[I, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLeftWithInput")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* decoder */ TaskDecoder[I, js.Any], TaskDecoder[I, js.Any]]]
+  inline def mapLeftWithInput[I](f: js.Function2[/* input */ I, /* e */ DecodeError, DecodeError]): js.Function1[/* decoder */ TaskDecoder[I, Any], TaskDecoder[I, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLeftWithInput")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* decoder */ TaskDecoder[I, Any], TaskDecoder[I, Any]]]
   
   inline def nullable[I, A](or: TaskDecoder[I, A]): TaskDecoder[Null | I, Null | A] = ^.asInstanceOf[js.Dynamic].applyDynamic("nullable")(or.asInstanceOf[js.Any]).asInstanceOf[TaskDecoder[Null | I, Null | A]]
   
   @JSImport("io-ts/lib/TaskDecoder", "number")
   @js.native
-  val number: TaskDecoder[js.Any, Double] = js.native
+  val number: TaskDecoder[Any, Double] = js.native
   
-  inline def parse[A, B](parser: js.Function1[/* a */ A, TaskEither_[DecodeError, B]]): js.Function1[/* from */ TaskDecoder[js.Any, A], TaskDecoder[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(parser.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* from */ TaskDecoder[js.Any, A], TaskDecoder[js.Any, B]]]
+  inline def parse[A, B](parser: js.Function1[/* a */ A, TaskEither_[DecodeError, B]]): js.Function1[/* from */ TaskDecoder[Any, A], TaskDecoder[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(parser.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* from */ TaskDecoder[Any, A], TaskDecoder[Any, B]]]
   
   inline def partial[A](
     properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof A ]: io-ts.io-ts/lib/TaskDecoder.TaskDecoder<unknown, A[K]>}
     */ typings.ioTs.ioTsStrings.partial & TopLevel[A]
   ): TaskDecoder[
-    js.Any, 
+    Any, 
     Partial[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K_1 in keyof A ]: A[K_1]}
     */ typings.ioTs.ioTsStrings.partial & TopLevel[A]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(properties.asInstanceOf[js.Any]).asInstanceOf[TaskDecoder[
-    js.Any, 
+    Any, 
     Partial[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K_1 in keyof A ]: A[K_1]}
@@ -227,57 +242,75 @@ object taskDecoderMod {
     ]
   ]]
   
-  inline def record[A](codomain: TaskDecoder[js.Any, A]): TaskDecoder[js.Any, Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("record")(codomain.asInstanceOf[js.Any]).asInstanceOf[TaskDecoder[js.Any, Record[String, A]]]
+  inline def readonly[I, A](decoder: TaskDecoder[I, A]): TaskDecoder[I, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("readonly")(decoder.asInstanceOf[js.Any]).asInstanceOf[TaskDecoder[I, A]]
   
-  inline def refine[A, B /* <: A */](refinement: js.Function1[/* a */ A, /* is B */ Boolean], id: String): js.Function1[/* from */ TaskDecoder[js.Any, A], TaskDecoder[js.Any, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("refine")(refinement.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* from */ TaskDecoder[js.Any, A], TaskDecoder[js.Any, B]]]
+  inline def record[A](codomain: TaskDecoder[Any, A]): TaskDecoder[Any, Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("record")(codomain.asInstanceOf[js.Any]).asInstanceOf[TaskDecoder[Any, Record[String, A]]]
+  
+  inline def refine[A, B /* <: A */](refinement: Refinement[A, B], id: String): js.Function1[/* from */ TaskDecoder[Any, A], TaskDecoder[Any, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("refine")(refinement.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* from */ TaskDecoder[Any, A], TaskDecoder[Any, B]]]
   
   @JSImport("io-ts/lib/TaskDecoder", "string")
   @js.native
-  val string: TaskDecoder[js.Any, String] = js.native
+  val string: TaskDecoder[Any, String] = js.native
+  
+  inline def struct[A](
+    properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof A ]: io-ts.io-ts/lib/TaskDecoder.TaskDecoder<unknown, A[K]>}
+    */ typings.ioTs.ioTsStrings.struct & TopLevel[A]
+  ): TaskDecoder[
+    Any, 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K_1 in keyof A ]: A[K_1]}
+    */ typings.ioTs.ioTsStrings.struct & TopLevel[A]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("struct")(properties.asInstanceOf[js.Any]).asInstanceOf[TaskDecoder[
+    Any, 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K_1 in keyof A ]: A[K_1]}
+    */ typings.ioTs.ioTsStrings.struct & TopLevel[A]
+  ]]
   
   inline def success[A](a: A): TaskEither_[DecodeError, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("success")(a.asInstanceOf[js.Any]).asInstanceOf[TaskEither_[DecodeError, A]]
   
   inline def sum[T /* <: String */](tag: T): js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof any ]: io-ts.io-ts/lib/TaskDecoder.TaskDecoder<unknown, any[K] & std.Record<T, K>>}
-    */ /* members */ typings.ioTs.ioTsStrings.sum & TopLevel[js.Any], 
+    */ /* members */ typings.ioTs.ioTsStrings.sum & TopLevel[Any], 
     TaskDecoder[
-      js.Any, 
+      Any, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof any ]: io-ts.io-ts/lib/TaskDecoder.TaskDecoder<unknown, any[K] & std.Record<T, K>>}
-    */ /* members */ typings.ioTs.ioTsStrings.sum & TopLevel[js.Any], 
+    */ /* members */ typings.ioTs.ioTsStrings.sum & TopLevel[Any], 
     TaskDecoder[
-      js.Any, 
+      Any, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
     ]
   ]]
   
-  inline def tuple[A /* <: js.Array[js.Any] */](
+  inline def tuple[A /* <: js.Array[Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param components because its type {[ K in keyof A ]: TaskDecoder<unknown, A[K]>} is not an array type */ components: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof A ]: io-ts.io-ts/lib/TaskDecoder.TaskDecoder<unknown, A[K]>}
     */ typings.ioTs.ioTsStrings.tuple & TopLevel[A]
-  ): TaskDecoder[js.Any, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(components.asInstanceOf[js.Any]).asInstanceOf[TaskDecoder[js.Any, A]]
+  ): TaskDecoder[Any, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(components.asInstanceOf[js.Any]).asInstanceOf[TaskDecoder[Any, A]]
   
   inline def `type`[A](
     properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof A ]: io-ts.io-ts/lib/TaskDecoder.TaskDecoder<unknown, A[K]>}
     */ typings.ioTs.ioTsStrings.`type` & TopLevel[A]
   ): TaskDecoder[
-    js.Any, 
+    Any, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K_1 in keyof A ]: A[K_1]}
     */ typings.ioTs.ioTsStrings.`type` & TopLevel[A]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(properties.asInstanceOf[js.Any]).asInstanceOf[TaskDecoder[
-    js.Any, 
+    Any, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K_1 in keyof A ]: A[K_1]}
     */ typings.ioTs.ioTsStrings.`type` & TopLevel[A]
   ]]
   
-  inline def union[MS /* <: Array[TaskDecoder[js.Any, js.Any]] */](
+  inline def union[MS /* <: Array[TaskDecoder[Any, Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param members because its type MS is not an array type */ members: MS
   ): TaskDecoder[
     InputOf[
@@ -295,7 +328,7 @@ object taskDecoderMod {
     ]
   ]]
   
-  inline def withMessage[I](message: js.Function2[/* input */ I, /* e */ DecodeError, String]): js.Function1[/* decoder */ TaskDecoder[I, js.Any], TaskDecoder[I, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withMessage")(message.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* decoder */ TaskDecoder[I, js.Any], TaskDecoder[I, js.Any]]]
+  inline def withMessage[I](message: js.Function2[/* input */ I, /* e */ DecodeError, String]): js.Function1[/* decoder */ TaskDecoder[I, Any], TaskDecoder[I, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withMessage")(message.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* decoder */ TaskDecoder[I, Any], TaskDecoder[I, Any]]]
   
   type DecodeError = typings.ioTs.decoderMod.DecodeError
   

@@ -53,7 +53,7 @@ object CaptionData {
     
     inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setIsd(value: js.Object): Self = StObject.set(x, "isd", value.asInstanceOf[js.Any])
     

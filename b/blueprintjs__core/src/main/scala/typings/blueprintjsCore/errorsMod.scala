@@ -46,13 +46,17 @@ object errorsMod {
   @js.native
   val DRAWER_ANGLE_POSITIONS_ARE_CASTED: String = js.native
   
-  @JSImport("@blueprintjs/core/lib/esm/common/errors", "DRAWER_VERTICAL_IS_IGNORED")
-  @js.native
-  val DRAWER_VERTICAL_IS_IGNORED: String = js.native
-  
   @JSImport("@blueprintjs/core/lib/esm/common/errors", "HOTKEYS_HOTKEY_CHILDREN")
   @js.native
   val HOTKEYS_HOTKEY_CHILDREN: String = js.native
+  
+  @JSImport("@blueprintjs/core/lib/esm/common/errors", "HOTKEYS_PROVIDER_NOT_FOUND")
+  @js.native
+  val HOTKEYS_PROVIDER_NOT_FOUND: String = js.native
+  
+  @JSImport("@blueprintjs/core/lib/esm/common/errors", "HOTKEYS_TARGET2_CHILDREN_LOCAL_HOTKEYS")
+  @js.native
+  val HOTKEYS_TARGET2_CHILDREN_LOCAL_HOTKEYS: String = js.native
   
   @JSImport("@blueprintjs/core/lib/esm/common/errors", "HOTKEYS_WARN_DECORATOR_NEEDS_REACT_ELEMENT")
   @js.native
@@ -138,6 +142,10 @@ object errorsMod {
   @js.native
   val POPOVER_WARN_HAS_BACKDROP_INLINE: String = js.native
   
+  @JSImport("@blueprintjs/core/lib/esm/common/errors", "POPOVER_WARN_PLACEMENT_AND_POSITION_MUTEX")
+  @js.native
+  val POPOVER_WARN_PLACEMENT_AND_POSITION_MUTEX: String = js.native
+  
   @JSImport("@blueprintjs/core/lib/esm/common/errors", "POPOVER_WARN_TOO_MANY_CHILDREN")
   @js.native
   val POPOVER_WARN_TOO_MANY_CHILDREN: String = js.native
@@ -149,6 +157,10 @@ object errorsMod {
   @JSImport("@blueprintjs/core/lib/esm/common/errors", "PORTAL_CONTEXT_CLASS_NAME_STRING")
   @js.native
   val PORTAL_CONTEXT_CLASS_NAME_STRING: String = js.native
+  
+  @JSImport("@blueprintjs/core/lib/esm/common/errors", "PORTAL_LEGACY_CONTEXT_API")
+  @js.native
+  val PORTAL_LEGACY_CONTEXT_API: String = js.native
   
   @JSImport("@blueprintjs/core/lib/esm/common/errors", "RADIOGROUP_WARN_CHILDREN_OPTIONS_MUTEX")
   @js.native

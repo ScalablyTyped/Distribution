@@ -25,7 +25,7 @@ trait Vector[TItem] extends StObject {
   def Add(Value: TItem, Index: Double): Unit = js.native
   
   /** Returns/Sets the Vector of Bytes as an array of bytes */
-  var BinaryData: SafeArray[js.Any] = js.native
+  var BinaryData: SafeArray[Any] = js.native
   
   /** Removes all elements. */
   def Clear(): Unit = js.native
@@ -56,10 +56,10 @@ trait Vector[TItem] extends StObject {
     * @param number [Width=0]
     * @param number [Height=0]
     */
-  def Picture(): js.Any = js.native
-  def Picture(Width: Double): js.Any = js.native
-  def Picture(Width: Double, Height: Double): js.Any = js.native
-  def Picture(Width: Unit, Height: Double): js.Any = js.native
+  def Picture(): Any = js.native
+  def Picture(Width: Double): Any = js.native
+  def Picture(Width: Double, Height: Double): Any = js.native
+  def Picture(Width: Unit, Height: Double): Any = js.native
   
   /** Removes the designated element and returns it if successful */
   def Remove(Index: Double): TItem | Null = js.native

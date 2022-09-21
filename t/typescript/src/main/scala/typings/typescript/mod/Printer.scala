@@ -41,7 +41,7 @@ object Printer {
   inline def apply(
     printBundle: Bundle => java.lang.String,
     printFile: SourceFile => java.lang.String,
-    printList: (ListFormat, NodeArray[js.Any], SourceFile) => java.lang.String,
+    printList: (ListFormat, NodeArray[Any], SourceFile) => java.lang.String,
     printNode: (EmitHint, Node, SourceFile) => java.lang.String
   ): Printer = {
     val __obj = js.Dynamic.literal(printBundle = js.Any.fromFunction1(printBundle), printFile = js.Any.fromFunction1(printFile), printList = js.Any.fromFunction3(printList), printNode = js.Any.fromFunction3(printNode))
@@ -54,7 +54,7 @@ object Printer {
     
     inline def setPrintFile(value: SourceFile => java.lang.String): Self = StObject.set(x, "printFile", js.Any.fromFunction1(value))
     
-    inline def setPrintList(value: (ListFormat, NodeArray[js.Any], SourceFile) => java.lang.String): Self = StObject.set(x, "printList", js.Any.fromFunction3(value))
+    inline def setPrintList(value: (ListFormat, NodeArray[Any], SourceFile) => java.lang.String): Self = StObject.set(x, "printList", js.Any.fromFunction3(value))
     
     inline def setPrintNode(value: (EmitHint, Node, SourceFile) => java.lang.String): Self = StObject.set(x, "printNode", js.Any.fromFunction3(value))
   }

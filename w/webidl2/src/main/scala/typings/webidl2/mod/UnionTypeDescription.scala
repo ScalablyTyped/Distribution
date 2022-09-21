@@ -44,7 +44,7 @@ object UnionTypeDescription {
     
     inline def setIdlType(value: js.Array[IDLTypeDescription]): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
-    inline def setIdlTypeVarargs(value: IDLTypeDescription*): Self = StObject.set(x, "idlType", js.Array(value :_*))
+    inline def setIdlTypeVarargs(value: IDLTypeDescription*): Self = StObject.set(x, "idlType", js.Array(value*))
     
     inline def setUnion(value: `true`): Self = StObject.set(x, "union", value.asInstanceOf[js.Any])
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Base
 @JSGlobal("naver.maps.Point")
 @js.native
-class Point protected ()
+open class Point protected ()
   extends StObject
      with typings.navermaps.naver.maps.Point {
   def this(x: Double, y: Double) = this()

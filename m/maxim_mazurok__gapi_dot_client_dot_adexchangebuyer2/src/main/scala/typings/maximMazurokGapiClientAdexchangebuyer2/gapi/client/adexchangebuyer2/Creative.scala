@@ -138,19 +138,19 @@ object Creative {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setClickThroughUrls(value: js.Array[String]): Self = StObject.set(x, "clickThroughUrls", value.asInstanceOf[js.Any])
     
     inline def setClickThroughUrlsUndefined: Self = StObject.set(x, "clickThroughUrls", js.undefined)
     
-    inline def setClickThroughUrlsVarargs(value: String*): Self = StObject.set(x, "clickThroughUrls", js.Array(value :_*))
+    inline def setClickThroughUrlsVarargs(value: String*): Self = StObject.set(x, "clickThroughUrls", js.Array(value*))
     
     inline def setCorrections(value: js.Array[Correction]): Self = StObject.set(x, "corrections", value.asInstanceOf[js.Any])
     
     inline def setCorrectionsUndefined: Self = StObject.set(x, "corrections", js.undefined)
     
-    inline def setCorrectionsVarargs(value: Correction*): Self = StObject.set(x, "corrections", js.Array(value :_*))
+    inline def setCorrectionsVarargs(value: Correction*): Self = StObject.set(x, "corrections", js.Array(value*))
     
     inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
@@ -164,37 +164,37 @@ object Creative {
     
     inline def setDeclaredClickThroughUrlsUndefined: Self = StObject.set(x, "declaredClickThroughUrls", js.undefined)
     
-    inline def setDeclaredClickThroughUrlsVarargs(value: String*): Self = StObject.set(x, "declaredClickThroughUrls", js.Array(value :_*))
+    inline def setDeclaredClickThroughUrlsVarargs(value: String*): Self = StObject.set(x, "declaredClickThroughUrls", js.Array(value*))
     
     inline def setDetectedAdvertiserIds(value: js.Array[String]): Self = StObject.set(x, "detectedAdvertiserIds", value.asInstanceOf[js.Any])
     
     inline def setDetectedAdvertiserIdsUndefined: Self = StObject.set(x, "detectedAdvertiserIds", js.undefined)
     
-    inline def setDetectedAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "detectedAdvertiserIds", js.Array(value :_*))
+    inline def setDetectedAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "detectedAdvertiserIds", js.Array(value*))
     
     inline def setDetectedDomains(value: js.Array[String]): Self = StObject.set(x, "detectedDomains", value.asInstanceOf[js.Any])
     
     inline def setDetectedDomainsUndefined: Self = StObject.set(x, "detectedDomains", js.undefined)
     
-    inline def setDetectedDomainsVarargs(value: String*): Self = StObject.set(x, "detectedDomains", js.Array(value :_*))
+    inline def setDetectedDomainsVarargs(value: String*): Self = StObject.set(x, "detectedDomains", js.Array(value*))
     
     inline def setDetectedLanguages(value: js.Array[String]): Self = StObject.set(x, "detectedLanguages", value.asInstanceOf[js.Any])
     
     inline def setDetectedLanguagesUndefined: Self = StObject.set(x, "detectedLanguages", js.undefined)
     
-    inline def setDetectedLanguagesVarargs(value: String*): Self = StObject.set(x, "detectedLanguages", js.Array(value :_*))
+    inline def setDetectedLanguagesVarargs(value: String*): Self = StObject.set(x, "detectedLanguages", js.Array(value*))
     
     inline def setDetectedProductCategories(value: js.Array[Double]): Self = StObject.set(x, "detectedProductCategories", value.asInstanceOf[js.Any])
     
     inline def setDetectedProductCategoriesUndefined: Self = StObject.set(x, "detectedProductCategories", js.undefined)
     
-    inline def setDetectedProductCategoriesVarargs(value: Double*): Self = StObject.set(x, "detectedProductCategories", js.Array(value :_*))
+    inline def setDetectedProductCategoriesVarargs(value: Double*): Self = StObject.set(x, "detectedProductCategories", js.Array(value*))
     
     inline def setDetectedSensitiveCategories(value: js.Array[Double]): Self = StObject.set(x, "detectedSensitiveCategories", value.asInstanceOf[js.Any])
     
     inline def setDetectedSensitiveCategoriesUndefined: Self = StObject.set(x, "detectedSensitiveCategories", js.undefined)
     
-    inline def setDetectedSensitiveCategoriesVarargs(value: Double*): Self = StObject.set(x, "detectedSensitiveCategories", js.Array(value :_*))
+    inline def setDetectedSensitiveCategoriesVarargs(value: Double*): Self = StObject.set(x, "detectedSensitiveCategories", js.Array(value*))
     
     inline def setHtml(value: HtmlContent): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
@@ -204,7 +204,7 @@ object Creative {
     
     inline def setImpressionTrackingUrlsUndefined: Self = StObject.set(x, "impressionTrackingUrls", js.undefined)
     
-    inline def setImpressionTrackingUrlsVarargs(value: String*): Self = StObject.set(x, "impressionTrackingUrls", js.Array(value :_*))
+    inline def setImpressionTrackingUrlsVarargs(value: String*): Self = StObject.set(x, "impressionTrackingUrls", js.Array(value*))
     
     inline def setNative(value: NativeContent): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
@@ -218,19 +218,19 @@ object Creative {
     
     inline def setRestrictedCategoriesUndefined: Self = StObject.set(x, "restrictedCategories", js.undefined)
     
-    inline def setRestrictedCategoriesVarargs(value: String*): Self = StObject.set(x, "restrictedCategories", js.Array(value :_*))
+    inline def setRestrictedCategoriesVarargs(value: String*): Self = StObject.set(x, "restrictedCategories", js.Array(value*))
     
     inline def setServingRestrictions(value: js.Array[ServingRestriction]): Self = StObject.set(x, "servingRestrictions", value.asInstanceOf[js.Any])
     
     inline def setServingRestrictionsUndefined: Self = StObject.set(x, "servingRestrictions", js.undefined)
     
-    inline def setServingRestrictionsVarargs(value: ServingRestriction*): Self = StObject.set(x, "servingRestrictions", js.Array(value :_*))
+    inline def setServingRestrictionsVarargs(value: ServingRestriction*): Self = StObject.set(x, "servingRestrictions", js.Array(value*))
     
     inline def setVendorIds(value: js.Array[Double]): Self = StObject.set(x, "vendorIds", value.asInstanceOf[js.Any])
     
     inline def setVendorIdsUndefined: Self = StObject.set(x, "vendorIds", js.undefined)
     
-    inline def setVendorIdsVarargs(value: Double*): Self = StObject.set(x, "vendorIds", js.Array(value :_*))
+    inline def setVendorIdsVarargs(value: Double*): Self = StObject.set(x, "vendorIds", js.Array(value*))
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,7 @@ trait RateGroup extends StObject {
   /** Name of the rate group. Optional. If set has to be unique within shipping service. */
   var name: js.UndefOr[String] = js.undefined
   
-  /** The value of the rate group (e.g. flat rate $10). Can only be set if `mainTable` and `subtables` are not set. */
+  /** The value of the rate group (for example, flat rate $10). Can only be set if `mainTable` and `subtables` are not set. */
   var singleValue: js.UndefOr[Value] = js.undefined
   
   /** A list of subtables referred to by `mainTable`. Can only be set if `mainTable` is set. */
@@ -40,13 +40,13 @@ object RateGroup {
     
     inline def setApplicableShippingLabelsUndefined: Self = StObject.set(x, "applicableShippingLabels", js.undefined)
     
-    inline def setApplicableShippingLabelsVarargs(value: String*): Self = StObject.set(x, "applicableShippingLabels", js.Array(value :_*))
+    inline def setApplicableShippingLabelsVarargs(value: String*): Self = StObject.set(x, "applicableShippingLabels", js.Array(value*))
     
     inline def setCarrierRates(value: js.Array[CarrierRate]): Self = StObject.set(x, "carrierRates", value.asInstanceOf[js.Any])
     
     inline def setCarrierRatesUndefined: Self = StObject.set(x, "carrierRates", js.undefined)
     
-    inline def setCarrierRatesVarargs(value: CarrierRate*): Self = StObject.set(x, "carrierRates", js.Array(value :_*))
+    inline def setCarrierRatesVarargs(value: CarrierRate*): Self = StObject.set(x, "carrierRates", js.Array(value*))
     
     inline def setMainTable(value: Table): Self = StObject.set(x, "mainTable", value.asInstanceOf[js.Any])
     
@@ -64,6 +64,6 @@ object RateGroup {
     
     inline def setSubtablesUndefined: Self = StObject.set(x, "subtables", js.undefined)
     
-    inline def setSubtablesVarargs(value: Table*): Self = StObject.set(x, "subtables", js.Array(value :_*))
+    inline def setSubtablesVarargs(value: Table*): Self = StObject.set(x, "subtables", js.Array(value*))
   }
 }

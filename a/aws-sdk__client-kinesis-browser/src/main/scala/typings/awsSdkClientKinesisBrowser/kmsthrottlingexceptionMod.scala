@@ -8,5 +8,5 @@ object kmsthrottlingexceptionMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/KMSThrottlingException", "KMSThrottlingException")
   @js.native
-  val KMSThrottlingException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val KMSThrottlingException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

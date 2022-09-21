@@ -18,20 +18,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object getCredentialsForIdentityCommandMod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/commands/GetCredentialsForIdentityCommand", "GetCredentialsForIdentityCommand")
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/GetCredentialsForIdentityCommand", "GetCredentialsForIdentityCommand")
   @js.native
-  class GetCredentialsForIdentityCommand protected ()
-    extends Command[
+  open class GetCredentialsForIdentityCommand protected () extends Command[
           GetCredentialsForIdentityCommandInput, 
           GetCredentialsForIdentityCommandOutput, 
           CognitoIdentityClientResolvedConfig, 
-          js.Any, 
-          js.Any
+          Any, 
+          Any
         ] {
     def this(input: GetCredentialsForIdentityCommandInput) = this()
     
-    /* private */ var deserialize: js.Any = js.native
+    /* private */ var deserialize: Any = js.native
     
+    /**
+      * @internal
+      */
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
       configuration: CognitoIdentityClientResolvedConfig
@@ -42,7 +44,7 @@ object getCredentialsForIdentityCommandMod {
       options: HttpHandlerOptions
     ): Handler[GetCredentialsForIdentityCommandInput, GetCredentialsForIdentityCommandOutput] = js.native
     
-    /* private */ var serialize: js.Any = js.native
+    /* private */ var serialize: Any = js.native
   }
   
   type GetCredentialsForIdentityCommandInput = GetCredentialsForIdentityInput

@@ -26,6 +26,8 @@ trait MeshMaterialMetallicRoughness
   /**
     * Specifies how much the material behaves like a metal.
     *
+    * @default 1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterialMetallicRoughness.html#metallic)
     */
   var metallic: Double = js.native
@@ -46,6 +48,8 @@ trait MeshMaterialMetallicRoughness
   
   /**
     * Indicates how rough the surface of the material is.
+    *
+    * @default 1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterialMetallicRoughness.html#roughness)
     */

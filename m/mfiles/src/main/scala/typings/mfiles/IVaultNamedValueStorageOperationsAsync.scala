@@ -18,13 +18,13 @@ trait IVaultNamedValueStorageOperationsAsync extends StObject {
     NamedValueType: MFNamedValueType,
     Namespace: String,
     successCallback: js.Function1[/* result */ INamedValues, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedValues(
     NamedValueType: MFNamedValueType,
     Namespace: String,
     successCallback: js.Function1[/* result */ INamedValues, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedValues(
@@ -38,13 +38,13 @@ trait IVaultNamedValueStorageOperationsAsync extends StObject {
     NamedValueType: MFNamedValueType,
     Namespace: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedValues(
     NamedValueType: MFNamedValueType,
     Namespace: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedValues(
@@ -67,14 +67,14 @@ trait IVaultNamedValueStorageOperationsAsync extends StObject {
     Namespace: String,
     NamedValueNames: IStrings,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveNamedValues(
     NamedValueType: MFNamedValueType,
     Namespace: String,
     NamedValueNames: IStrings,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveNamedValues(
@@ -90,14 +90,14 @@ trait IVaultNamedValueStorageOperationsAsync extends StObject {
     Namespace: String,
     NamedValueNames: IStrings,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveNamedValues(
     NamedValueType: MFNamedValueType,
     Namespace: String,
     NamedValueNames: IStrings,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveNamedValues(
@@ -121,14 +121,14 @@ trait IVaultNamedValueStorageOperationsAsync extends StObject {
     Namespace: String,
     NamedValues: INamedValues,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetNamedValues(
     NamedValueType: MFNamedValueType,
     Namespace: String,
     NamedValues: INamedValues,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SetNamedValues(
@@ -144,14 +144,14 @@ trait IVaultNamedValueStorageOperationsAsync extends StObject {
     Namespace: String,
     NamedValues: INamedValues,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetNamedValues(
     NamedValueType: MFNamedValueType,
     Namespace: String,
     NamedValues: INamedValues,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SetNamedValues(

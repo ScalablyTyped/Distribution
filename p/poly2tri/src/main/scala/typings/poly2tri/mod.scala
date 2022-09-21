@@ -20,7 +20,7 @@ object mod {
     * @param x    coordinate (0 if undefined)
     * @param y    coordinate (0 if undefined)
     */
-  class Point ()
+  open class Point ()
     extends StObject
        with IPointLike {
     def this(x: Double) = this()
@@ -93,7 +93,7 @@ object mod {
       *      JSON.stringify(new poly2tri.Point(1,2))
       *      // → '{"x":1,"y":2}'
       */
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
     
     /** x coordinate */
     /* CompleteClass */
@@ -196,7 +196,7 @@ object mod {
   
   @JSImport("poly2tri", "PointError")
   @js.native
-  class PointError protected ()
+  open class PointError protected ()
     extends StObject
        with Error {
     /**
@@ -206,9 +206,11 @@ object mod {
       */
     def this(message: String, points: js.Array[XY]) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -220,7 +222,7 @@ object mod {
   
   @JSImport("poly2tri", "SweepContext")
   @js.native
-  class SweepContext protected () extends StObject {
+  open class SweepContext protected () extends StObject {
     /**
       * Constructor for the triangulation context.
       * It accepts a simple polyline (with non repeating points),
@@ -360,7 +362,7 @@ object mod {
   
   @JSImport("poly2tri", "Triangle")
   @js.native
-  class Triangle protected () extends StObject {
+  open class Triangle protected () extends StObject {
     def this(a: XY, b: XY, c: XY) = this()
     
     def containsPoint(point: XY): Boolean = js.native
@@ -382,12 +384,7 @@ object mod {
       * @param index - vertice index: 0, 1 or 2
       * @returns point
       */
-    @JSName("getPoint")
-    def getPoint_0(index: `0`): XY = js.native
-    @JSName("getPoint")
-    def getPoint_1(index: `1`): XY = js.native
-    @JSName("getPoint")
-    def getPoint_2(index: `2`): XY = js.native
+    def getPoint(index: `0` | `1` | `2`): XY = js.native
     
     /**
       * Get all 3 vertices of the triangle as an array

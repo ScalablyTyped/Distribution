@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.RaycastResult")
 @js.native
-class RaycastResult ()
+open class RaycastResult ()
   extends StObject
      with typings.cannon.CANNON.RaycastResult {
   

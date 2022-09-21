@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.TimerMixin */ @JSImport("react-native", "KeyboardAvoidingView")
 @js.native
-class KeyboardAvoidingView ()
-  extends Component[KeyboardAvoidingViewProps, js.Object, js.Any]
+open class KeyboardAvoidingView ()
+  extends Component[KeyboardAvoidingViewProps, js.Object, Any]

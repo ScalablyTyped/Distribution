@@ -8,5 +8,5 @@ object unprocessedTraceIdListMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/_UnprocessedTraceIdList", "_UnprocessedTraceIdList")
   @js.native
-  val UnprocessedTraceIdList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val UnprocessedTraceIdList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

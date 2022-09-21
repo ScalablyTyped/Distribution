@@ -16,11 +16,19 @@ object anon {
     
     /** Indicates whether the Framework is installed or not. */
     var isFrameworkInstalled: Boolean
+    
+    /** Indicates whether the web service is running or not. */
+    var isWebServicePresent: Boolean
   }
   object ErrorDetails {
     
-    inline def apply(errorDetails: String, isBrowserSupported: Boolean, isFrameworkInstalled: Boolean): ErrorDetails = {
-      val __obj = js.Dynamic.literal(errorDetails = errorDetails.asInstanceOf[js.Any], isBrowserSupported = isBrowserSupported.asInstanceOf[js.Any], isFrameworkInstalled = isFrameworkInstalled.asInstanceOf[js.Any])
+    inline def apply(
+      errorDetails: String,
+      isBrowserSupported: Boolean,
+      isFrameworkInstalled: Boolean,
+      isWebServicePresent: Boolean
+    ): ErrorDetails = {
+      val __obj = js.Dynamic.literal(errorDetails = errorDetails.asInstanceOf[js.Any], isBrowserSupported = isBrowserSupported.asInstanceOf[js.Any], isFrameworkInstalled = isFrameworkInstalled.asInstanceOf[js.Any], isWebServicePresent = isWebServicePresent.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorDetails]
     }
     
@@ -31,6 +39,8 @@ object anon {
       inline def setIsBrowserSupported(value: Boolean): Self = StObject.set(x, "isBrowserSupported", value.asInstanceOf[js.Any])
       
       inline def setIsFrameworkInstalled(value: Boolean): Self = StObject.set(x, "isFrameworkInstalled", value.asInstanceOf[js.Any])
+      
+      inline def setIsWebServicePresent(value: Boolean): Self = StObject.set(x, "isWebServicePresent", value.asInstanceOf[js.Any])
     }
   }
 }

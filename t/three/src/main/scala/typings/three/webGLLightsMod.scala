@@ -11,12 +11,14 @@ object webGLLightsMod {
   
   @JSImport("three/src/renderers/webgl/WebGLLights", "WebGLLights")
   @js.native
-  class WebGLLights protected () extends StObject {
+  open class WebGLLights protected () extends StObject {
     def this(extensions: WebGLExtensions, capabilities: WebGLCapabilities) = this()
     
-    def get(light: js.Any): js.Any = js.native
+    def get(light: Any): Any = js.native
     
-    def setup(lights: js.Any, shadows: js.Any, camera: js.Any): Unit = js.native
+    def setup(lights: Any): Unit = js.native
+    
+    def setupView(lights: Any, camera: Any): Unit = js.native
     
     var state: Ambient = js.native
   }

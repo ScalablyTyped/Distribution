@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.componentsMod
 
-import typings.blueprintjsCore.fileInputMod.IFileInputProps
+import typings.blueprintjsCore.fileInputMod.FileInputProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "FileInput")
 @js.native
-class FileInput protected ()
+open class FileInput protected ()
   extends typings.blueprintjsCore.fileInputMod.FileInput {
-  def this(props: IFileInputProps) = this()
-  def this(props: IFileInputProps, context: js.Any) = this()
+  def this(props: FileInputProps) = this()
+  def this(props: FileInputProps, context: Any) = this()
 }
 /* static members */
 object FileInput {
@@ -21,8 +21,8 @@ object FileInput {
   
   @JSImport("@blueprintjs/core/lib/esm/components", "FileInput.defaultProps")
   @js.native
-  def defaultProps: IFileInputProps = js.native
-  inline def defaultProps_=(x: IFileInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: FileInputProps = js.native
+  inline def defaultProps_=(x: FileInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core/lib/esm/components", "FileInput.displayName")
   @js.native

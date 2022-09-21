@@ -8,13 +8,13 @@ trait DataTableCellFilter extends StObject {
   
   var column: Double
   
-  var maxValue: js.UndefOr[js.Any] = js.undefined
+  var maxValue: js.UndefOr[Any] = js.undefined
   
-  var minValue: js.UndefOr[js.Any] = js.undefined
+  var minValue: js.UndefOr[Any] = js.undefined
   
   var test: js.UndefOr[
     js.Function4[
-      /* value */ js.Any, 
+      /* value */ Any, 
       /* row */ js.UndefOr[Double], 
       /* column */ js.UndefOr[Double], 
       /* data */ js.UndefOr[DataTable | DataView], 
@@ -22,7 +22,7 @@ trait DataTableCellFilter extends StObject {
     ]
   ] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object DataTableCellFilter {
   
@@ -35,21 +35,21 @@ object DataTableCellFilter {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    inline def setMaxValue(value: js.Any): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Any): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    inline def setMinValue(value: js.Any): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Any): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     inline def setTest(
-      value: (/* value */ js.Any, /* row */ js.UndefOr[Double], /* column */ js.UndefOr[Double], /* data */ js.UndefOr[DataTable | DataView]) => Boolean
+      value: (/* value */ Any, /* row */ js.UndefOr[Double], /* column */ js.UndefOr[Double], /* data */ js.UndefOr[DataTable | DataView]) => Boolean
     ): Self = StObject.set(x, "test", js.Any.fromFunction4(value))
     
     inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

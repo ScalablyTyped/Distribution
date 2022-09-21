@@ -1,14 +1,13 @@
 package typings.babylonjs.global.BABYLON
 
-import typings.babylonjs.anon.JsDecoderModule
-import typings.std.ArrayBufferView
+import typings.babylonjs.anon.JsMSCTranscoder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.KhronosTextureContainer2")
 @js.native
-class KhronosTextureContainer2 protected ()
+open class KhronosTextureContainer2 protected ()
   extends StObject
      with typings.babylonjs.BABYLON.KhronosTextureContainer2 {
   /**
@@ -36,15 +35,15 @@ object KhronosTextureContainer2 {
   
   @JSGlobal("BABYLON.KhronosTextureContainer2.GetDefaultNumWorkers")
   @js.native
-  def GetDefaultNumWorkers: js.Any = js.native
-  inline def GetDefaultNumWorkers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDefaultNumWorkers")(x.asInstanceOf[js.Any])
+  def GetDefaultNumWorkers: Any = js.native
+  inline def GetDefaultNumWorkers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDefaultNumWorkers")(x.asInstanceOf[js.Any])
   
   /**
     * Checks if the given data starts with a KTX2 file identifier.
     * @param data the data to check
     * @returns true if the data is a KTX2 file or false otherwise
     */
-  inline def IsValid(data: ArrayBufferView): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsValid")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def IsValid(data: js.typedarray.ArrayBufferView): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsValid")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * URLs to use when loading the KTX2 decoder module as well as its dependencies
@@ -58,30 +57,26 @@ object KhronosTextureContainer2 {
     *     URLConfig.wasmUASTCToRGBA_SRGB
     *     URLConfig.jsMSCTranscoder
     *     URLConfig.wasmMSCTranscoder
-    * You can see their default values in this PG: https://playground.babylonjs.com/#EIJH8L#9
+    *     URLConfig.wasmZSTDDecoder
+    * You can see their default values in this PG: https://playground.babylonjs.com/#EIJH8L#29
     */
   @JSGlobal("BABYLON.KhronosTextureContainer2.URLConfig")
   @js.native
-  def URLConfig: JsDecoderModule = js.native
-  inline def URLConfig_=(x: JsDecoderModule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URLConfig")(x.asInstanceOf[js.Any])
+  def URLConfig: JsMSCTranscoder = js.native
+  inline def URLConfig_=(x: JsMSCTranscoder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URLConfig")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("BABYLON.KhronosTextureContainer2._CreateWorkerPool")
+  @JSGlobal("BABYLON.KhronosTextureContainer2._DecoderModulePromise")
   @js.native
-  def _CreateWorkerPool: js.Any = js.native
-  inline def _CreateWorkerPool_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateWorkerPool")(x.asInstanceOf[js.Any])
+  def _DecoderModulePromise: Any = js.native
+  inline def _DecoderModulePromise_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DecoderModulePromise")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("BABYLON.KhronosTextureContainer2._Initialized")
+  @JSGlobal("BABYLON.KhronosTextureContainer2._Initialize")
   @js.native
-  def _Initialized: js.Any = js.native
-  inline def _Initialized_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Initialized")(x.asInstanceOf[js.Any])
-  
-  @JSGlobal("BABYLON.KhronosTextureContainer2._Ktx2Decoder")
-  @js.native
-  def _Ktx2Decoder: js.Any = js.native
-  inline def _Ktx2Decoder_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Ktx2Decoder")(x.asInstanceOf[js.Any])
+  def _Initialize: Any = js.native
+  inline def _Initialize_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Initialize")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.KhronosTextureContainer2._WorkerPoolPromise")
   @js.native
-  def _WorkerPoolPromise: js.Any = js.native
-  inline def _WorkerPoolPromise_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_WorkerPoolPromise")(x.asInstanceOf[js.Any])
+  def _WorkerPoolPromise: Any = js.native
+  inline def _WorkerPoolPromise_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_WorkerPoolPromise")(x.asInstanceOf[js.Any])
 }

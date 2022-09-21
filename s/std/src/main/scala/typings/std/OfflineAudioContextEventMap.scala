@@ -8,6 +8,7 @@ trait OfflineAudioContextEventMap
   extends StObject
      with BaseAudioContextEventMap {
   
+  /* standard dom */
   var complete: OfflineAudioCompletionEvent
 }
 object OfflineAudioContextEventMap {

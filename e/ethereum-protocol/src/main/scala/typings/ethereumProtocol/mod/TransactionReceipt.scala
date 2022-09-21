@@ -65,7 +65,7 @@ object TransactionReceipt {
     
     inline def setLogs(value: js.Array[LogEntry]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
-    inline def setLogsVarargs(value: LogEntry*): Self = StObject.set(x, "logs", js.Array(value :_*))
+    inline def setLogsVarargs(value: LogEntry*): Self = StObject.set(x, "logs", js.Array(value*))
     
     inline def setStatus(value: String | `0` | `1`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

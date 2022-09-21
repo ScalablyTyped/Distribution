@@ -19,7 +19,9 @@ import typings.blueprintjsCore.overlayMod.IOverlayableProps
 import typings.blueprintjsCore.propsMod.IProps
 import typings.popperJs.mod.Boundary
 import typings.popperJs.mod.Modifiers
+import typings.popperJs.mod.Placement
 import typings.react.mod.HTMLAttributes
+import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import typings.std.HTMLElement
@@ -139,6 +141,7 @@ object popoverSharedPropsMod {
       * Determines the boundary element used by Popper for its `flip` and
       * `preventOverflow` modifiers. Three shorthand keywords are supported;
       * Popper will find the correct DOM element itself.
+      *
       * @default "scrollParent"
       */
     var boundary: js.UndefOr[Boundary] = js.undefined
@@ -147,19 +150,24 @@ object popoverSharedPropsMod {
       * When enabled, clicks inside a `Classes.POPOVER_DISMISS` element
       * will only close the current popover and not outer popovers.
       * When disabled, the current popover and any ancestor popovers will be closed.
+      *
       * @see http://blueprintjs.com/docs/#core/components/popover.closing-on-click
       * @default false
       */
     var captureDismiss: js.UndefOr[Boolean] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /**
       * Initial opened state when uncontrolled.
+      *
       * @default false
       */
     var defaultIsOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevents the popover from appearing when `true`.
+      *
       * @default false
       */
     var disabled: js.UndefOr[Boolean] = js.undefined
@@ -168,6 +176,7 @@ object popoverSharedPropsMod {
       * The amount of time in milliseconds the popover should remain open after
       * the user hovers off the trigger. The timer is canceled if the user mouses
       * over the target before it expires.
+      *
       * @default 300
       */
     var hoverCloseDelay: js.UndefOr[Double] = js.undefined
@@ -176,6 +185,7 @@ object popoverSharedPropsMod {
       * The amount of time in milliseconds the popover should wait before opening
       * after the user hovers over the trigger. The timer is canceled if the user
       * mouses away from the target before it expires.
+      *
       * @default 150
       */
     var hoverOpenDelay: js.UndefOr[Double] = js.undefined
@@ -183,6 +193,7 @@ object popoverSharedPropsMod {
     /**
       * Whether a popover that uses a `Portal` should automatically inherit the
       * dark theme from its parent.
+      *
       * @default true
       */
     var inheritDarkTheme: js.UndefOr[Boolean] = js.undefined
@@ -192,6 +203,7 @@ object popoverSharedPropsMod {
       * controlled mode, where the only way to change visibility is by updating
       * this property. If `disabled={true}`, this prop will be ignored, and the
       * popover will remain closed.
+      *
       * @default undefined
       */
     var isOpen: js.UndefOr[Boolean] = js.undefined
@@ -199,6 +211,7 @@ object popoverSharedPropsMod {
     /**
       * Whether to apply minimal styling to this popover or tooltip. Minimal popovers
       * do not have an arrow pointing to their target and use a subtler animation.
+      *
       * @default false
       */
     var minimal: js.UndefOr[Boolean] = js.undefined
@@ -226,9 +239,26 @@ object popoverSharedPropsMod {
       * Whether the popover should open when its target is focused. If `true`,
       * target will render with `tabindex="0"` to make it focusable via keyboard
       * navigation.
+      *
+      * Note that this functionality is only enabled for hover interaction
+      * popovers/tooltips.
+      *
       * @default true
       */
     var openOnTargetFocus: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The placement (relative to the target) at which the popover should appear.
+      * Mutually exclusive with `position` prop.
+      *
+      * The default value of `"auto"` will choose the best placement when opened
+      * and will allow the popover to reposition itself to remain onscreen as the
+      * user scrolls around.
+      *
+      * @see https://popper.js.org/docs/v1/#Popper.placements
+      * @default "auto"
+      */
+    var placement: js.UndefOr[Placement] = js.undefined
     
     /**
       * A space-delimited string of class names applied to the popover element.
@@ -237,10 +267,12 @@ object popoverSharedPropsMod {
     
     /**
       * The position (relative to the target) at which the popover should appear.
+      * Mutually exclusive with `placement` prop.
       *
       * The default value of `"auto"` will choose the best position when opened
       * and will allow the popover to reposition itself to remain onscreen as the
       * user scrolls around.
+      *
       * @default "auto"
       */
     var position: js.UndefOr[PopoverPosition] = js.undefined
@@ -262,19 +294,21 @@ object popoverSharedPropsMod {
       *
       * By default, a `<span>` tag is used so popovers appear as inline-block
       * elements and can be nested in text. Use `<div>` tag for a block element.
+      *
       * @default "span"
       */
     var targetTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
       ] = js.undefined
     
     /**
       * HTML tag name for the wrapper element, which also receives the
       * `className` prop.
+      *
       * @default "span"
       */
     var wrapperTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
       ] = js.undefined
   }
   object IPopoverSharedProps {
@@ -293,6 +327,10 @@ object popoverSharedPropsMod {
       inline def setCaptureDismiss(value: Boolean): Self = StObject.set(x, "captureDismiss", value.asInstanceOf[js.Any])
       
       inline def setCaptureDismissUndefined: Self = StObject.set(x, "captureDismiss", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDefaultIsOpen(value: Boolean): Self = StObject.set(x, "defaultIsOpen", value.asInstanceOf[js.Any])
       
@@ -336,6 +374,10 @@ object popoverSharedPropsMod {
       
       inline def setOpenOnTargetFocusUndefined: Self = StObject.set(x, "openOnTargetFocus", js.undefined)
       
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      
       inline def setPopoverClassName(value: String): Self = StObject.set(x, "popoverClassName", value.asInstanceOf[js.Any])
       
       inline def setPopoverClassNameUndefined: Self = StObject.set(x, "popoverClassName", js.undefined)
@@ -352,11 +394,11 @@ object popoverSharedPropsMod {
       
       inline def setTargetPropsUndefined: Self = StObject.set(x, "targetProps", js.undefined)
       
-      inline def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
+      inline def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
       
       inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
       
-      inline def setWrapperTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
+      inline def setWrapperTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
       
       inline def setWrapperTagNameUndefined: Self = StObject.set(x, "wrapperTagName", js.undefined)
     }

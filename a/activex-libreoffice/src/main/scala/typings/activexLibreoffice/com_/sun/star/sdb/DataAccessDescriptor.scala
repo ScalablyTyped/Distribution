@@ -200,7 +200,7 @@ trait DataAccessDescriptor extends StObject {
     * If the elements specify bookmarks, and a {@link ResultSet} has been specified, then this result set is required to support the {@link
     * com.sun.star.sdbcx.XRowLocate} interface.
     */
-  var Selection: SafeArray[js.Any]
+  var Selection: SafeArray[Any]
 }
 object DataAccessDescriptor {
   
@@ -221,7 +221,7 @@ object DataAccessDescriptor {
     HavingClause: String,
     Order: String,
     ResultSet: XResultSet,
-    Selection: SafeArray[js.Any]
+    Selection: SafeArray[Any]
   ): DataAccessDescriptor = {
     val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection.asInstanceOf[js.Any], BookmarkSelection = BookmarkSelection.asInstanceOf[js.Any], Column = Column.asInstanceOf[js.Any], ColumnName = ColumnName.asInstanceOf[js.Any], Command = Command.asInstanceOf[js.Any], CommandType = CommandType.asInstanceOf[js.Any], ConnectionInfo = ConnectionInfo.asInstanceOf[js.Any], ConnectionResource = ConnectionResource.asInstanceOf[js.Any], DataSourceName = DataSourceName.asInstanceOf[js.Any], DatabaseLocation = DatabaseLocation.asInstanceOf[js.Any], EscapeProcessing = EscapeProcessing.asInstanceOf[js.Any], Filter = Filter.asInstanceOf[js.Any], GroupBy = GroupBy.asInstanceOf[js.Any], HavingClause = HavingClause.asInstanceOf[js.Any], Order = Order.asInstanceOf[js.Any], ResultSet = ResultSet.asInstanceOf[js.Any], Selection = Selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataAccessDescriptor]
@@ -261,6 +261,6 @@ object DataAccessDescriptor {
     
     inline def setResultSet(value: XResultSet): Self = StObject.set(x, "ResultSet", value.asInstanceOf[js.Any])
     
-    inline def setSelection(value: SafeArray[js.Any]): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: SafeArray[Any]): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
   }
 }

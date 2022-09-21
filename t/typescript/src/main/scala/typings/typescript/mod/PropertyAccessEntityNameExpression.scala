@@ -10,7 +10,7 @@ trait PropertyAccessEntityNameExpression
      with PropertyAccessExpression
      with EntityNameExpression {
   
-  var _propertyAccessExpressionLikeQualifiedNameBrand: js.UndefOr[js.Any] = js.native
+  var _propertyAccessExpressionLikeQualifiedNameBrand: js.UndefOr[Any] = js.native
   
   @JSName("expression")
   val expression_PropertyAccessEntityNameExpression: EntityNameExpression = js.native

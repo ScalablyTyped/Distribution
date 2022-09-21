@@ -10,10 +10,10 @@ The lodash method `_.inRange` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.inrange |
 | Keywords           | lodash-modularized, inrange |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 177489 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9880.666666666666 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * @OutputOnly The auction type the restriction applies to.
-  */
 trait SchemaAuctionContext extends StObject {
   
   /**
     * The auction types this restriction applies to.
     */
-  var auctionTypes: js.UndefOr[js.Array[String]] = js.undefined
+  var auctionTypes: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaAuctionContext {
   
@@ -25,8 +22,10 @@ object SchemaAuctionContext {
     
     inline def setAuctionTypes(value: js.Array[String]): Self = StObject.set(x, "auctionTypes", value.asInstanceOf[js.Any])
     
+    inline def setAuctionTypesNull: Self = StObject.set(x, "auctionTypes", null)
+    
     inline def setAuctionTypesUndefined: Self = StObject.set(x, "auctionTypes", js.undefined)
     
-    inline def setAuctionTypesVarargs(value: String*): Self = StObject.set(x, "auctionTypes", js.Array(value :_*))
+    inline def setAuctionTypesVarargs(value: String*): Self = StObject.set(x, "auctionTypes", js.Array(value*))
   }
 }

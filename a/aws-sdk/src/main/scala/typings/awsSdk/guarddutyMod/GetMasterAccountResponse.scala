@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetMasterAccountResponse extends StObject {
   
   /**
-    * The master account details.
+    * The administrator account details.
     */
   var Master: typings.awsSdk.guarddutyMod.Master
 }

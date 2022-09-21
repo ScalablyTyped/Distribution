@@ -59,7 +59,7 @@ trait Body
   
   /** @deprecated DO NOT USE */ def getFootnotes(): js.Array[Footnote] = js.native
   
-  def getHeadingAttributes(paragraphHeading: ParagraphHeading): js.Any = js.native
+  def getHeadingAttributes(paragraphHeading: ParagraphHeading): Any = js.native
   
   def getImages(): js.Array[InlineImage] = js.native
   
@@ -111,7 +111,7 @@ trait Body
   
   def replaceText(searchPattern: String, replacement: String): Element = js.native
   
-  def setHeadingAttributes(paragraphHeading: ParagraphHeading, attributes: js.Any): Body = js.native
+  def setHeadingAttributes(paragraphHeading: ParagraphHeading, attributes: Any): Body = js.native
   
   /** @deprecated DO NOT USE */ def setLinkUrl(url: String): Body = js.native
   

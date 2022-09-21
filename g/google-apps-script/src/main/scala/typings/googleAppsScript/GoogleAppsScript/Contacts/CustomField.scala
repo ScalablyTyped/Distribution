@@ -14,10 +14,10 @@ trait CustomField extends StObject {
   
   def getLabel(): Field | ExtendedField | String = js.native
   
-  def getValue(): js.Any = js.native
+  def getValue(): Any = js.native
   
   def setLabel(field: ExtendedField): CustomField = js.native
   def setLabel(label: String): CustomField = js.native
   
-  def setValue(value: js.Any): CustomField = js.native
+  def setValue(value: Any): CustomField = js.native
 }

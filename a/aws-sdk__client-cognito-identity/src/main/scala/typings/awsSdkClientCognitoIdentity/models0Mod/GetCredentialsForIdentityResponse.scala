@@ -23,12 +23,6 @@ object GetCredentialsForIdentityResponse {
     __obj.asInstanceOf[GetCredentialsForIdentityResponse]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetCredentialsForIdentityResponse")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: GetCredentialsForIdentityResponse): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: GetCredentialsForIdentityResponse](x: Self) {
     
     inline def setCredentials(value: Credentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])

@@ -12,6 +12,13 @@ trait CaptureSnapshotRequest extends StObject {
   var computedStyles: js.Array[String]
   
   /**
+    * Whether to include blended background colors in the snapshot (default: false).
+    * Blended background color is achieved by blending background colors of all elements
+    * that overlap with the current element.
+    */
+  var includeBlendedBackgroundColors: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Whether to include DOM rectangles (offsetRects, clientRects, scrollRects) into the snapshot
     */
   var includeDOMRects: js.UndefOr[Boolean] = js.undefined
@@ -20,6 +27,13 @@ trait CaptureSnapshotRequest extends StObject {
     * Whether to include layout object paint orders into the snapshot.
     */
   var includePaintOrder: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Whether to include text color opacity in the snapshot (default: false).
+    * An element might have the opacity property set that affects the text color of the element.
+    * The final text color opacity is computed based on the opacity of all overlapping elements.
+    */
+  var includeTextColorOpacities: js.UndefOr[Boolean] = js.undefined
 }
 object CaptureSnapshotRequest {
   
@@ -32,7 +46,11 @@ object CaptureSnapshotRequest {
     
     inline def setComputedStyles(value: js.Array[String]): Self = StObject.set(x, "computedStyles", value.asInstanceOf[js.Any])
     
-    inline def setComputedStylesVarargs(value: String*): Self = StObject.set(x, "computedStyles", js.Array(value :_*))
+    inline def setComputedStylesVarargs(value: String*): Self = StObject.set(x, "computedStyles", js.Array(value*))
+    
+    inline def setIncludeBlendedBackgroundColors(value: Boolean): Self = StObject.set(x, "includeBlendedBackgroundColors", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeBlendedBackgroundColorsUndefined: Self = StObject.set(x, "includeBlendedBackgroundColors", js.undefined)
     
     inline def setIncludeDOMRects(value: Boolean): Self = StObject.set(x, "includeDOMRects", value.asInstanceOf[js.Any])
     
@@ -41,5 +59,9 @@ object CaptureSnapshotRequest {
     inline def setIncludePaintOrder(value: Boolean): Self = StObject.set(x, "includePaintOrder", value.asInstanceOf[js.Any])
     
     inline def setIncludePaintOrderUndefined: Self = StObject.set(x, "includePaintOrder", js.undefined)
+    
+    inline def setIncludeTextColorOpacities(value: Boolean): Self = StObject.set(x, "includeTextColorOpacities", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeTextColorOpacitiesUndefined: Self = StObject.set(x, "includeTextColorOpacities", js.undefined)
   }
 }

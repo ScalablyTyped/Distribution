@@ -1,0 +1,13 @@
+package typings.forgeViewer.THREE
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait MultiMaterial
+  extends StObject
+     with Material {
+  
+  var materials: js.Array[Material] = js.native
+}

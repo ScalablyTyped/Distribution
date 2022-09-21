@@ -34,18 +34,18 @@ object ConflictResolution {
     
     inline def setDeleteFilesUndefined: Self = StObject.set(x, "deleteFiles", js.undefined)
     
-    inline def setDeleteFilesVarargs(value: DeleteFileEntry*): Self = StObject.set(x, "deleteFiles", js.Array(value :_*))
+    inline def setDeleteFilesVarargs(value: DeleteFileEntry*): Self = StObject.set(x, "deleteFiles", js.Array(value*))
     
     inline def setReplaceContents(value: ReplaceContentEntries): Self = StObject.set(x, "replaceContents", value.asInstanceOf[js.Any])
     
     inline def setReplaceContentsUndefined: Self = StObject.set(x, "replaceContents", js.undefined)
     
-    inline def setReplaceContentsVarargs(value: ReplaceContentEntry*): Self = StObject.set(x, "replaceContents", js.Array(value :_*))
+    inline def setReplaceContentsVarargs(value: ReplaceContentEntry*): Self = StObject.set(x, "replaceContents", js.Array(value*))
     
     inline def setSetFileModes(value: SetFileModeEntries): Self = StObject.set(x, "setFileModes", value.asInstanceOf[js.Any])
     
     inline def setSetFileModesUndefined: Self = StObject.set(x, "setFileModes", js.undefined)
     
-    inline def setSetFileModesVarargs(value: SetFileModeEntry*): Self = StObject.set(x, "setFileModes", js.Array(value :_*))
+    inline def setSetFileModesVarargs(value: SetFileModeEntry*): Self = StObject.set(x, "setFileModes", js.Array(value*))
   }
 }

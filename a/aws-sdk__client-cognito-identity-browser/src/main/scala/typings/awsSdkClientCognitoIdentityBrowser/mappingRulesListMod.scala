@@ -8,5 +8,5 @@ object mappingRulesListMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/_MappingRulesList", "_MappingRulesList")
   @js.native
-  val MappingRulesList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val MappingRulesList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

@@ -344,7 +344,7 @@ object Audio {
   /** Represents initialization settings for an audio graph. Set the properties of this object to your desired values and then call AudioGraph::CreateAsync to create a new audio graph instance with the specified settings. */
   @JSGlobal("Windows.Media.Audio.AudioGraphSettings")
   @js.native
-  class AudioGraphSettings protected ()
+  open class AudioGraphSettings protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.AudioGraphSettings {
     /**
@@ -497,7 +497,7 @@ object Audio {
   /** Represents an echo effect definition supported by the audio graph. */
   @JSGlobal("Windows.Media.Audio.EchoEffectDefinition")
   @js.native
-  class EchoEffectDefinition protected ()
+  open class EchoEffectDefinition protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.EchoEffectDefinition {
     /**
@@ -550,7 +550,7 @@ object Audio {
   /** Represents an equalizer effect definition supported by the audio graph. */
   @JSGlobal("Windows.Media.Audio.EqualizerEffectDefinition")
   @js.native
-  class EqualizerEffectDefinition protected ()
+  open class EqualizerEffectDefinition protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.EqualizerEffectDefinition {
     /**
@@ -587,7 +587,7 @@ object Audio {
   /** Represents a limiter effect definition supported by the audio graph. */
   @JSGlobal("Windows.Media.Audio.LimiterEffectDefinition")
   @js.native
-  class LimiterEffectDefinition protected ()
+  open class LimiterEffectDefinition protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.LimiterEffectDefinition {
     /**
@@ -631,7 +631,7 @@ object Audio {
   /** Represents a reverberation effect definition supported by the audio graph. */
   @JSGlobal("Windows.Media.Audio.ReverbEffectDefinition")
   @js.native
-  class ReverbEffectDefinition protected ()
+  open class ReverbEffectDefinition protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Audio.ReverbEffectDefinition {
     /**
@@ -743,25 +743,25 @@ object Audio {
   
   @JSGlobal("Windows.Media.Audio.rame")
   @js.native
-  def rame: js.Any = js.native
-  inline def rame_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rame")(x.asInstanceOf[js.Any])
+  def rame: Any = js.native
+  inline def rame_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rame")(x.asInstanceOf[js.Any])
   
   /* unmapped type */
   @JSGlobal("Windows.Media.Audio.rocessing")
   @js.native
-  def rocessing: js.Any = js.native
-  inline def rocessing_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rocessing")(x.asInstanceOf[js.Any])
+  def rocessing: Any = js.native
+  inline def rocessing_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rocessing")(x.asInstanceOf[js.Any])
   
   /* unmapped type */
   @JSGlobal("Windows.Media.Audio.uffer")
   @js.native
-  def uffer: js.Any = js.native
+  def uffer: Any = js.native
   
   /* unmapped type */
   @JSGlobal("Windows.Media.Audio.ufferAccessMode")
   @js.native
-  def ufferAccessMode: js.Any = js.native
-  inline def ufferAccessMode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ufferAccessMode")(x.asInstanceOf[js.Any])
+  def ufferAccessMode: Any = js.native
+  inline def ufferAccessMode_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ufferAccessMode")(x.asInstanceOf[js.Any])
   
-  inline def uffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uffer")(x.asInstanceOf[js.Any])
+  inline def uffer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uffer")(x.asInstanceOf[js.Any])
 }

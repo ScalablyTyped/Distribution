@@ -7,17 +7,19 @@ import typings.ddTrace.ddTraceNumbers.`2`
 import typings.ddTrace.ddTraceStrings._dd1DotsrDoteausr
 import typings.ddTrace.ddTraceStrings._ddDotmeasured
 import typings.ddTrace.ddTraceStrings.agent
-import typings.ddTrace.ddTraceStrings.browser
 import typings.ddTrace.ddTraceStrings.client
 import typings.ddTrace.ddTraceStrings.consumer
+import typings.ddTrace.ddTraceStrings.datadog
 import typings.ddTrace.ddTraceStrings.error
 import typings.ddTrace.ddTraceStrings.http
+import typings.ddTrace.ddTraceStrings.httpDotclient_ip
 import typings.ddTrace.ddTraceStrings.httpDotmethod
 import typings.ddTrace.ddTraceStrings.httpDotrequestDotheaders
 import typings.ddTrace.ddTraceStrings.httpDotresponseDotheaders
 import typings.ddTrace.ddTraceStrings.httpDotroute
 import typings.ddTrace.ddTraceStrings.httpDotstatus_code
 import typings.ddTrace.ddTraceStrings.httpDoturl
+import typings.ddTrace.ddTraceStrings.httpDotuseragent
 import typings.ddTrace.ddTraceStrings.log
 import typings.ddTrace.ddTraceStrings.manualDotdrop
 import typings.ddTrace.ddTraceStrings.manualDotkeep
@@ -46,10 +48,10 @@ object extMod {
     def AGENT: agent = js.native
     inline def AGENT_=(x: agent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AGENT")(x.asInstanceOf[js.Any])
     
-    @JSImport("dd-trace/ext", "exporters.BROWSER")
+    @JSImport("dd-trace/ext", "exporters.DATADOG")
     @js.native
-    def BROWSER: browser = js.native
-    inline def BROWSER_=(x: browser): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BROWSER")(x.asInstanceOf[js.Any])
+    def DATADOG: datadog = js.native
+    inline def DATADOG_=(x: datadog): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATADOG")(x.asInstanceOf[js.Any])
     
     @JSImport("dd-trace/ext", "exporters.LOG")
     @js.native
@@ -154,6 +156,11 @@ object extMod {
     def ERROR: error = js.native
     inline def ERROR_=(x: error): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
     
+    @JSImport("dd-trace/ext", "tags.HTTP_CLIENT_IP")
+    @js.native
+    def HTTP_CLIENT_IP: httpDotclient_ip = js.native
+    inline def HTTP_CLIENT_IP_=(x: httpDotclient_ip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_CLIENT_IP")(x.asInstanceOf[js.Any])
+    
     @JSImport("dd-trace/ext", "tags.HTTP_METHOD")
     @js.native
     def HTTP_METHOD: httpDotmethod = js.native
@@ -183,6 +190,11 @@ object extMod {
     @js.native
     def HTTP_URL: httpDoturl = js.native
     inline def HTTP_URL_=(x: httpDoturl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_URL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("dd-trace/ext", "tags.HTTP_USERAGENT")
+    @js.native
+    def HTTP_USERAGENT: httpDotuseragent = js.native
+    inline def HTTP_USERAGENT_=(x: httpDotuseragent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_USERAGENT")(x.asInstanceOf[js.Any])
     
     @JSImport("dd-trace/ext", "tags.MANUAL_DROP")
     @js.native

@@ -444,28 +444,28 @@ trait OLEObjects extends StObject {
   
   val Border: typings.activexExcel.Excel.Border = js.native
   
-  def BringToFront(): js.Any = js.native
+  def BringToFront(): Any = js.native
   
-  def Copy(): js.Any = js.native
+  def Copy(): Any = js.native
   
   /**
     * @param Appearance [Appearance=2]
     * @param Format [Format=-4147]
     */
-  def CopyPicture(): js.Any = js.native
-  def CopyPicture(Appearance: Unit, Format: XlCopyPictureFormat): js.Any = js.native
-  def CopyPicture(Appearance: XlPictureAppearance): js.Any = js.native
-  def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): js.Any = js.native
+  def CopyPicture(): Any = js.native
+  def CopyPicture(Appearance: Unit, Format: XlCopyPictureFormat): Any = js.native
+  def CopyPicture(Appearance: XlPictureAppearance): Any = js.native
+  def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): Any = js.native
   
   val Count: Double = js.native
   
   val Creator: XlCreator = js.native
   
-  def Cut(): js.Any = js.native
+  def Cut(): Any = js.native
   
-  def Delete(): js.Any = js.native
+  def Delete(): Any = js.native
   
-  def Duplicate(): js.Any = js.native
+  def Duplicate(): Any = js.native
   
   var Enabled: Boolean = js.native
   
@@ -478,8 +478,8 @@ trait OLEObjects extends StObject {
   
   val Interior: typings.activexExcel.Excel.Interior = js.native
   
-  def Item(Index: String): js.Any = js.native
-  def Item(Index: Double): js.Any = js.native
+  def Item(Index: String): Any = js.native
+  def Item(Index: Double): Any = js.native
   
   var Left: Double = js.native
   
@@ -487,16 +487,16 @@ trait OLEObjects extends StObject {
   
   var OnAction: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  var Placement: js.Any = js.native
+  var Placement: Any = js.native
   
   var PrintObject: Boolean = js.native
   
-  def Select(): js.Any = js.native
-  def Select(Replace: Boolean): js.Any = js.native
+  def Select(): Any = js.native
+  def Select(Replace: Boolean): Any = js.native
   
-  def SendToBack(): js.Any = js.native
+  def SendToBack(): Any = js.native
   
   var Shadow: Boolean = js.native
   

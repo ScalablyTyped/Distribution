@@ -33,6 +33,6 @@ object DescribeRuntimeVersionsResponse {
     
     inline def setRuntimeVersionsUndefined: Self = StObject.set(x, "RuntimeVersions", js.undefined)
     
-    inline def setRuntimeVersionsVarargs(value: RuntimeVersion*): Self = StObject.set(x, "RuntimeVersions", js.Array(value :_*))
+    inline def setRuntimeVersionsVarargs(value: RuntimeVersion*): Self = StObject.set(x, "RuntimeVersions", js.Array(value*))
   }
 }

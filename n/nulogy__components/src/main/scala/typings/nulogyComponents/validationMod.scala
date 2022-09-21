@@ -8,5 +8,5 @@ object validationMod {
   
   @JSImport("@nulogy/components/src/Validation", "InlineValidation")
   @js.native
-  val InlineValidation: js.Any = js.native
+  val InlineValidation: Any = js.native
 }

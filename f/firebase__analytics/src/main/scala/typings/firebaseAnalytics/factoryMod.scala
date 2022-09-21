@@ -1,21 +1,47 @@
 package typings.firebaseAnalytics
 
 import typings.firebaseAnalytics.anon.DynamicConfigPromisesList
-import typings.firebaseAnalyticsTypes.mod.FirebaseAnalytics
-import typings.firebaseAnalyticsTypes.mod.SettingsOptions
-import typings.firebaseAppTypes.mod.FirebaseApp
-import typings.firebaseInstallationsTypes.mod.FirebaseInstallations
+import typings.firebaseAnalytics.publicTypesMod.Analytics
+import typings.firebaseAnalytics.publicTypesMod.AnalyticsSettings
+import typings.firebaseAnalytics.publicTypesMod.SettingsOptions
+import typings.firebaseAnalytics.typesMod.Gtag
+import typings.firebaseApp.mod.FirebaseApp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object factoryMod {
   
-  @JSImport("@firebase/analytics/dist/src/factory", JSImport.Namespace)
+  @JSImport("@firebase/analytics/dist/esm/src/factory", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def factory(app: FirebaseApp, installations: FirebaseInstallations): FirebaseAnalytics = (^.asInstanceOf[js.Dynamic].applyDynamic("factory")(app.asInstanceOf[js.Any], installations.asInstanceOf[js.Any])).asInstanceOf[FirebaseAnalytics]
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _FirebaseService * / any */ @JSImport("@firebase/analytics/dist/esm/src/factory", "AnalyticsService")
+  @js.native
+  open class AnalyticsService protected ()
+    extends StObject
+       with Analytics {
+    def this(app: FirebaseApp) = this()
+    
+    def _delete(): js.Promise[Unit] = js.native
+    
+    /**
+      * The {@link @firebase/app#FirebaseApp} this {@link Analytics} instance is associated with.
+      */
+    /* CompleteClass */
+    var app: FirebaseApp = js.native
+  }
+  
+  inline def factory(
+    app: FirebaseApp,
+    installations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _FirebaseInstallationsInternal */ Any
+  ): AnalyticsService = (^.asInstanceOf[js.Dynamic].applyDynamic("factory")(app.asInstanceOf[js.Any], installations.asInstanceOf[js.Any])).asInstanceOf[AnalyticsService]
+  inline def factory(
+    app: FirebaseApp,
+    installations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _FirebaseInstallationsInternal */ Any,
+    options: AnalyticsSettings
+  ): AnalyticsService = (^.asInstanceOf[js.Dynamic].applyDynamic("factory")(app.asInstanceOf[js.Any], installations.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AnalyticsService]
   
   inline def getGlobalVars(): DynamicConfigPromisesList = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalVars")().asInstanceOf[DynamicConfigPromisesList]
   
@@ -45,4 +71,9 @@ object factoryMod {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any], newInitializationPromisesMap.asInstanceOf[js.Any], newDynamicPromises.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def settings(options: SettingsOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("settings")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @JSImport("@firebase/analytics/dist/esm/src/factory", "wrappedGtagFunction")
+  @js.native
+  def wrappedGtagFunction: Gtag = js.native
+  inline def wrappedGtagFunction_=(x: Gtag): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrappedGtagFunction")(x.asInstanceOf[js.Any])
 }

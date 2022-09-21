@@ -11,9 +11,9 @@ Constructors and objects behave exactly like built-in Date; the TZ offset is con
 | Full name          | timezoned-date |
 | Keywords           | date, isomorphic, jsdom, mock, monkeypatch, server-side-rendering, timezone, tz, utc |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 301627 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 13910.666666666666 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/thorn0/timezoned-date#readme)

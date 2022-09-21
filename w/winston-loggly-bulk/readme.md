@@ -10,10 +10,10 @@ A Loggly transport for winston
 | ------------------ | :-------------: |
 | Full name          | winston-loggly-bulk |
 | Keywords           | loggly, logging, sysadmin, tools, winston |
-| # releases         | 8 |
-| # dependents       | 56 |
-| # downloads        | 1272481 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 150543.66666666666 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/loggly/winston-loggly-bulk#readme)

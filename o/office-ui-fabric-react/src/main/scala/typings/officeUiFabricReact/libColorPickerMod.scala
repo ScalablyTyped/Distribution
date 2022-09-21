@@ -15,7 +15,7 @@ object libColorPickerMod {
   
   @JSImport("office-ui-fabric-react/lib/ColorPicker", "ColorPickerBase")
   @js.native
-  class ColorPickerBase protected ()
+  open class ColorPickerBase protected ()
     extends typings.officeUiFabricReact.colorPickerMod.ColorPickerBase {
     def this(props: IColorPickerProps) = this()
   }

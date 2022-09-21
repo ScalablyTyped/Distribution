@@ -41,7 +41,7 @@ object ASPxClientAppointmentDropEventArgs {
     
     inline def setDragInformation(value: js.Array[ASPxClientAppointmentDragInfo]): Self = StObject.set(x, "dragInformation", value.asInstanceOf[js.Any])
     
-    inline def setDragInformationVarargs(value: ASPxClientAppointmentDragInfo*): Self = StObject.set(x, "dragInformation", js.Array(value :_*))
+    inline def setDragInformationVarargs(value: ASPxClientAppointmentDragInfo*): Self = StObject.set(x, "dragInformation", js.Array(value*))
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     

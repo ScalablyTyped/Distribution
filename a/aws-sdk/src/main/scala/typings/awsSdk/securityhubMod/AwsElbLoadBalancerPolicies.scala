@@ -34,18 +34,18 @@ object AwsElbLoadBalancerPolicies {
     
     inline def setAppCookieStickinessPoliciesUndefined: Self = StObject.set(x, "AppCookieStickinessPolicies", js.undefined)
     
-    inline def setAppCookieStickinessPoliciesVarargs(value: AwsElbAppCookieStickinessPolicy*): Self = StObject.set(x, "AppCookieStickinessPolicies", js.Array(value :_*))
+    inline def setAppCookieStickinessPoliciesVarargs(value: AwsElbAppCookieStickinessPolicy*): Self = StObject.set(x, "AppCookieStickinessPolicies", js.Array(value*))
     
     inline def setLbCookieStickinessPolicies(value: AwsElbLbCookieStickinessPolicies): Self = StObject.set(x, "LbCookieStickinessPolicies", value.asInstanceOf[js.Any])
     
     inline def setLbCookieStickinessPoliciesUndefined: Self = StObject.set(x, "LbCookieStickinessPolicies", js.undefined)
     
-    inline def setLbCookieStickinessPoliciesVarargs(value: AwsElbLbCookieStickinessPolicy*): Self = StObject.set(x, "LbCookieStickinessPolicies", js.Array(value :_*))
+    inline def setLbCookieStickinessPoliciesVarargs(value: AwsElbLbCookieStickinessPolicy*): Self = StObject.set(x, "LbCookieStickinessPolicies", js.Array(value*))
     
     inline def setOtherPolicies(value: StringList): Self = StObject.set(x, "OtherPolicies", value.asInstanceOf[js.Any])
     
     inline def setOtherPoliciesUndefined: Self = StObject.set(x, "OtherPolicies", js.undefined)
     
-    inline def setOtherPoliciesVarargs(value: NonEmptyString*): Self = StObject.set(x, "OtherPolicies", js.Array(value :_*))
+    inline def setOtherPoliciesVarargs(value: NonEmptyString*): Self = StObject.set(x, "OtherPolicies", js.Array(value*))
   }
 }

@@ -9,7 +9,7 @@ trait RestoreSummary extends StObject {
   /**
     * Point in time or source backup time.
     */
-  var RestoreDateTime: Date
+  var RestoreDateTime: js.Date
   
   /**
     * Indicates if a restore is in progress or not.
@@ -28,14 +28,14 @@ trait RestoreSummary extends StObject {
 }
 object RestoreSummary {
   
-  inline def apply(RestoreDateTime: Date, RestoreInProgress: RestoreInProgress): RestoreSummary = {
+  inline def apply(RestoreDateTime: js.Date, RestoreInProgress: RestoreInProgress): RestoreSummary = {
     val __obj = js.Dynamic.literal(RestoreDateTime = RestoreDateTime.asInstanceOf[js.Any], RestoreInProgress = RestoreInProgress.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreSummary]
   }
   
   extension [Self <: RestoreSummary](x: Self) {
     
-    inline def setRestoreDateTime(value: Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
+    inline def setRestoreDateTime(value: js.Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
     
     inline def setRestoreInProgress(value: RestoreInProgress): Self = StObject.set(x, "RestoreInProgress", value.asInstanceOf[js.Any])
     

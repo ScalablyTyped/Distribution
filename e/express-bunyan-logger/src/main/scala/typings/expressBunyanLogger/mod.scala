@@ -7,35 +7,87 @@ import typings.express.mod.ErrorRequestHandler
 import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
-import typings.node.NodeJS.WritableStream
-import typings.std.Error
+import typings.std.Record
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def apply(options: Options): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("express-bunyan-logger", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def errorLogger(): ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorLogger")().asInstanceOf[ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def errorLogger(options: Options): ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorLogger")(options.asInstanceOf[js.Any]).asInstanceOf[ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def errorLogger(): ErrorRequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorLogger")().asInstanceOf[ErrorRequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def errorLogger(options: Options): ErrorRequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorLogger")(options.asInstanceOf[js.Any]).asInstanceOf[ErrorRequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
-  type FormatFunction = js.Function1[/* meta */ js.Any, String]
+  type FormatFunction = js.Function1[/* meta */ Any, String]
   
   type IncludesFunction = js.Function2[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* res */ Response_[js.Any], 
-    js.Any
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* res */ Response_[Any, Record[String, Any]], 
+    Any
   ]
   
-  type LevelFunction = js.Function3[/* status */ Double, /* err */ Error | Null, /* meta */ js.Any, String]
+  type LevelFunction = js.Function3[/* status */ Double, /* err */ js.Error | Null, /* meta */ Any, String]
   
   /* Inlined parent std.Partial<bunyan.bunyan.LoggerOptions> */
   trait Options extends StObject {
@@ -68,7 +120,7 @@ object mod {
     
     var src: js.UndefOr[Boolean] = js.undefined
     
-    var stream: js.UndefOr[WritableStream] = js.undefined
+    var stream: js.UndefOr[WritableStream[Any]] = js.undefined
     
     var streams: js.UndefOr[js.Array[Stream]] = js.undefined
   }
@@ -85,15 +137,23 @@ object mod {
       
       inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
       
-      inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+      inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value*))
       
       inline def setFormat(value: String | FormatFunction): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      inline def setFormatFunction1(value: /* meta */ js.Any => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      inline def setFormatFunction1(value: /* meta */ Any => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setGenReqId(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "genReqId", js.Any.fromFunction1(value))
+      inline def setGenReqId(
+        value: /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ] => String
+      ): Self = StObject.set(x, "genReqId", js.Any.fromFunction1(value))
       
       inline def setGenReqIdUndefined: Self = StObject.set(x, "genReqId", js.undefined)
       
@@ -102,14 +162,20 @@ object mod {
       inline def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
       
       inline def setIncludesFn(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => js.Any
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]]) => Any
       ): Self = StObject.set(x, "includesFn", js.Any.fromFunction2(value))
       
       inline def setIncludesFnUndefined: Self = StObject.set(x, "includesFn", js.undefined)
       
       inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      inline def setLevelFn(value: (/* status */ Double, /* err */ Error | Null, /* meta */ js.Any) => String): Self = StObject.set(x, "levelFn", js.Any.fromFunction3(value))
+      inline def setLevelFn(value: (/* status */ Double, /* err */ js.Error | Null, /* meta */ Any) => String): Self = StObject.set(x, "levelFn", js.Any.fromFunction3(value))
       
       inline def setLevelFnUndefined: Self = StObject.set(x, "levelFn", js.undefined)
       
@@ -131,7 +197,7 @@ object mod {
       
       inline def setObfuscateUndefined: Self = StObject.set(x, "obfuscate", js.undefined)
       
-      inline def setObfuscateVarargs(value: String*): Self = StObject.set(x, "obfuscate", js.Array(value :_*))
+      inline def setObfuscateVarargs(value: String*): Self = StObject.set(x, "obfuscate", js.Array(value*))
       
       inline def setParseUA(value: Boolean): Self = StObject.set(x, "parseUA", value.asInstanceOf[js.Any])
       
@@ -145,7 +211,7 @@ object mod {
       
       inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
@@ -153,9 +219,18 @@ object mod {
       
       inline def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
       
-      inline def setStreamsVarargs(value: Stream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+      inline def setStreamsVarargs(value: Stream*): Self = StObject.set(x, "streams", js.Array(value*))
     }
   }
   
-  type RequestIdGenFunction = js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]
+  type RequestIdGenFunction = js.Function1[
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    String
+  ]
 }

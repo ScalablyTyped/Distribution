@@ -15,4 +15,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.clickSelectingTool.
   */
-class ClickSelectingTool () extends Tool
+open class ClickSelectingTool () extends Tool

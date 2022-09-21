@@ -18,7 +18,7 @@ object sliderMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Slider", "SliderBase")
   @js.native
-  class SliderBase protected ()
+  open class SliderBase protected ()
     extends typings.officeUiFabricReact.sliderBaseMod.SliderBase {
     def this(props: ISliderProps) = this()
   }

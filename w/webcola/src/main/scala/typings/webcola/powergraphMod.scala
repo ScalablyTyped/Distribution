@@ -14,35 +14,30 @@ object powergraphMod {
   
   @JSImport("webcola/dist/src/powergraph", "Configuration")
   @js.native
-  class Configuration[Link] protected () extends StObject {
+  open class Configuration[Link] protected () extends StObject {
     def this(n: Double, edges: js.Array[Link], linkAccessor: LinkTypeAccessor[Link]) = this()
-    def this(
-      n: Double,
-      edges: js.Array[Link],
-      linkAccessor: LinkTypeAccessor[Link],
-      rootGroup: js.Array[js.Any]
-    ) = this()
+    def this(n: Double, edges: js.Array[Link], linkAccessor: LinkTypeAccessor[Link], rootGroup: js.Array[Any]) = this()
     
     var R: Double = js.native
     
     def allEdges(): js.Array[PowerEdge] = js.native
     
-    def getGroupHierarchy(retargetedEdges: js.Array[PowerEdge]): js.Array[js.Any] = js.native
+    def getGroupHierarchy(retargetedEdges: js.Array[PowerEdge]): js.Array[Any] = js.native
     
     def greedyMerge(): Boolean = js.native
     
-    /* private */ var initModulesFromGroup: js.Any = js.native
+    /* private */ var initModulesFromGroup: Any = js.native
     
-    /* private */ var linkAccessor: js.Any = js.native
+    /* private */ var linkAccessor: Any = js.native
     
     def merge(a: Module, b: Module): Module = js.native
     def merge(a: Module, b: Module, k: Double): Module = js.native
     
     var modules: js.Array[Module] = js.native
     
-    /* private */ var nEdges: js.Any = js.native
+    /* private */ var nEdges: Any = js.native
     
-    /* private */ var rootMerges: js.Any = js.native
+    /* private */ var rootMerges: Any = js.native
     
     var roots: js.Array[ModuleSet] = js.native
   }
@@ -58,7 +53,7 @@ object powergraphMod {
   
   @JSImport("webcola/dist/src/powergraph", "LinkSets")
   @js.native
-  class LinkSets () extends StObject {
+  open class LinkSets () extends StObject {
     
     def add(linktype: Double, m: Module): Unit = js.native
     
@@ -76,12 +71,12 @@ object powergraphMod {
     
     def remove(linktype: Double, m: Module): Unit = js.native
     
-    var sets: js.Any = js.native
+    var sets: Any = js.native
   }
   
   @JSImport("webcola/dist/src/powergraph", "Module")
   @js.native
-  class Module protected () extends StObject {
+  open class Module protected () extends StObject {
     def this(id: Double) = this()
     def this(id: Double, outgoing: LinkSets) = this()
     def this(id: Double, outgoing: Unit, incoming: LinkSets) = this()
@@ -90,18 +85,18 @@ object powergraphMod {
     def this(id: Double, outgoing: Unit, incoming: LinkSets, children: ModuleSet) = this()
     def this(id: Double, outgoing: LinkSets, incoming: Unit, children: ModuleSet) = this()
     def this(id: Double, outgoing: LinkSets, incoming: LinkSets, children: ModuleSet) = this()
-    def this(id: Double, outgoing: Unit, incoming: Unit, children: Unit, definition: js.Any) = this()
-    def this(id: Double, outgoing: Unit, incoming: Unit, children: ModuleSet, definition: js.Any) = this()
-    def this(id: Double, outgoing: Unit, incoming: LinkSets, children: Unit, definition: js.Any) = this()
-    def this(id: Double, outgoing: Unit, incoming: LinkSets, children: ModuleSet, definition: js.Any) = this()
-    def this(id: Double, outgoing: LinkSets, incoming: Unit, children: Unit, definition: js.Any) = this()
-    def this(id: Double, outgoing: LinkSets, incoming: Unit, children: ModuleSet, definition: js.Any) = this()
-    def this(id: Double, outgoing: LinkSets, incoming: LinkSets, children: Unit, definition: js.Any) = this()
-    def this(id: Double, outgoing: LinkSets, incoming: LinkSets, children: ModuleSet, definition: js.Any) = this()
+    def this(id: Double, outgoing: Unit, incoming: Unit, children: Unit, definition: Any) = this()
+    def this(id: Double, outgoing: Unit, incoming: Unit, children: ModuleSet, definition: Any) = this()
+    def this(id: Double, outgoing: Unit, incoming: LinkSets, children: Unit, definition: Any) = this()
+    def this(id: Double, outgoing: Unit, incoming: LinkSets, children: ModuleSet, definition: Any) = this()
+    def this(id: Double, outgoing: LinkSets, incoming: Unit, children: Unit, definition: Any) = this()
+    def this(id: Double, outgoing: LinkSets, incoming: Unit, children: ModuleSet, definition: Any) = this()
+    def this(id: Double, outgoing: LinkSets, incoming: LinkSets, children: Unit, definition: Any) = this()
+    def this(id: Double, outgoing: LinkSets, incoming: LinkSets, children: ModuleSet, definition: Any) = this()
     
     var children: ModuleSet = js.native
     
-    var definition: js.UndefOr[js.Any] = js.native
+    var definition: js.UndefOr[Any] = js.native
     
     def getEdges(es: js.Array[PowerEdge]): Unit = js.native
     
@@ -122,7 +117,7 @@ object powergraphMod {
   
   @JSImport("webcola/dist/src/powergraph", "ModuleSet")
   @js.native
-  class ModuleSet () extends StObject {
+  open class ModuleSet () extends StObject {
     
     def add(m: Module): Unit = js.native
     
@@ -140,28 +135,23 @@ object powergraphMod {
     
     def remove(m: Module): Unit = js.native
     
-    var table: js.Any = js.native
+    var table: Any = js.native
   }
   
   @JSImport("webcola/dist/src/powergraph", "PowerEdge")
   @js.native
-  class PowerEdge protected () extends StObject {
-    def this(source: js.Any, target: js.Any, `type`: Double) = this()
+  open class PowerEdge protected () extends StObject {
+    def this(source: Any, target: Any, `type`: Double) = this()
     
-    var source: js.Any = js.native
+    var source: Any = js.native
     
-    var target: js.Any = js.native
+    var target: Any = js.native
     
     var `type`: Double = js.native
   }
   
-  inline def getGroups[Link](nodes: js.Array[js.Any], links: js.Array[Link], la: LinkTypeAccessor[Link]): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroups")(nodes.asInstanceOf[js.Any], links.asInstanceOf[js.Any], la.asInstanceOf[js.Any])).asInstanceOf[Groups]
-  inline def getGroups[Link](
-    nodes: js.Array[js.Any],
-    links: js.Array[Link],
-    la: LinkTypeAccessor[Link],
-    rootGroup: js.Array[js.Any]
-  ): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroups")(nodes.asInstanceOf[js.Any], links.asInstanceOf[js.Any], la.asInstanceOf[js.Any], rootGroup.asInstanceOf[js.Any])).asInstanceOf[Groups]
+  inline def getGroups[Link](nodes: js.Array[Any], links: js.Array[Link], la: LinkTypeAccessor[Link]): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroups")(nodes.asInstanceOf[js.Any], links.asInstanceOf[js.Any], la.asInstanceOf[js.Any])).asInstanceOf[Groups]
+  inline def getGroups[Link](nodes: js.Array[Any], links: js.Array[Link], la: LinkTypeAccessor[Link], rootGroup: js.Array[Any]): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroups")(nodes.asInstanceOf[js.Any], links.asInstanceOf[js.Any], la.asInstanceOf[js.Any], rootGroup.asInstanceOf[js.Any])).asInstanceOf[Groups]
   
   trait LinkTypeAccessor[Link]
     extends StObject

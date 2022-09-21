@@ -10,10 +10,10 @@ Angular OAuth2
 | ------------------ | :-------------: |
 | Full name          | angular-oauth2 |
 | Keywords           | AngularJS, Authentication, OAuth2 |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 19446 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1254.6666666666667 |
+| # stars            | 594.0 |
 
 ## Links
 - [Homepage](https://github.com/seegno/angular-oauth2)

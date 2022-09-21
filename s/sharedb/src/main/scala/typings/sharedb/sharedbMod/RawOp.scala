@@ -6,37 +6,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RawOp extends StObject {
   
-  var c: String
+  var c: CollectionName
   
-  var d: String
+  var d: DocumentID
   
-  var m: js.Any
+  var m: Any
   
   var seq: Double
   
   var src: String
   
-  var v: Double
+  var v: VersionNumber
 }
 object RawOp {
   
-  inline def apply(c: String, d: String, m: js.Any, seq: Double, src: String, v: Double): RawOp = {
+  inline def apply(c: CollectionName, d: DocumentID, m: Any, seq: Double, src: String, v: VersionNumber): RawOp = {
     val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawOp]
   }
   
   extension [Self <: RawOp](x: Self) {
     
-    inline def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: CollectionName): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: DocumentID): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    inline def setM(value: js.Any): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+    inline def setM(value: Any): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
     inline def setSeq(value: Double): Self = StObject.set(x, "seq", value.asInstanceOf[js.Any])
     
     inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: VersionNumber): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }
 }

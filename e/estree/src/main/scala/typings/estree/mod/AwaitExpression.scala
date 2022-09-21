@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AwaitExpression
   extends StObject
-     with BaseNode
-     with Expression {
+     with BaseNode {
   
   var argument: Expression
   

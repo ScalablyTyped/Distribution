@@ -21,7 +21,7 @@ object rendererMod {
     */
   @JSImport("remarkable/lib/renderer", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Renderer {
     

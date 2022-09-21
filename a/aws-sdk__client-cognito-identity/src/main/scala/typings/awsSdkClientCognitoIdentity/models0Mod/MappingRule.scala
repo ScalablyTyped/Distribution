@@ -35,12 +35,6 @@ object MappingRule {
     __obj.asInstanceOf[MappingRule]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "MappingRule")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: MappingRule): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: MappingRule](x: Self) {
     
     inline def setClaim(value: String): Self = StObject.set(x, "Claim", value.asInstanceOf[js.Any])

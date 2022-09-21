@@ -1,515 +1,487 @@
 package typings.yaml
 
-import typings.yaml.anon.JsonEncoding
-import typings.yaml.anon.LineWidth
-import typings.yaml.mod.Document.Anchors
-import typings.yaml.mod.Document.Parsed
-import typings.yaml.mod.Document.TagPrefix
-import typings.yaml.parseCstMod.ParsedCST
-import typings.yaml.typesMod.Alias
-import typings.yaml.typesMod.Collection
-import typings.yaml.typesMod.Merge
-import typings.yaml.typesMod.Node
-import typings.yaml.typesMod.Scalar
-import typings.yaml.typesMod.Scalar.Type
-import typings.yaml.typesMod.Schema
-import typings.yaml.typesMod.Schema.Name
-import typings.yaml.typesMod.Schema.Tag
-import typings.yaml.typesMod.Schema.TagId
-import typings.yaml.typesMod.YAMLMap
-import typings.yaml.typesMod.YAMLSeq
-import typings.yaml.utilMod.Type.DOCUMENT
-import typings.yaml.utilMod.YAMLError
-import typings.yaml.utilMod.YAMLWarning
-import typings.yaml.yamlBooleans.`false`
-import typings.yaml.yamlBooleans.`true`
-import typings.yaml.yamlStrings.`1Dot0`
-import typings.yaml.yamlStrings.`1Dot1`
-import typings.yaml.yamlStrings.`1Dot2`
+import typings.yaml.anon.AfterKey
+import typings.yaml.anon.End
+import typings.yaml.anon.Value
+import typings.yaml.applyReviverMod.Reviver
+import typings.yaml.cstMod.BlockMap
+import typings.yaml.cstMod.BlockScalar
+import typings.yaml.cstMod.BlockSequence
+import typings.yaml.cstMod.CollectionItem
+import typings.yaml.cstMod.FlowCollection
+import typings.yaml.cstMod.FlowScalar
+import typings.yaml.cstMod.Token
+import typings.yaml.cstMod.TokenType_
+import typings.yaml.cstVisitMod.VisitPath
+import typings.yaml.cstVisitMod.Visitor
+import typings.yaml.documentMod.Document.Parsed
+import typings.yaml.documentMod.Replacer
+import typings.yaml.errorsMod.ErrorCode
+import typings.yaml.nodeMod.Node
+import typings.yaml.nodeMod.ParsedNode
+import typings.yaml.optionsMod.CreateNodeOptions
+import typings.yaml.optionsMod.DocumentOptions
+import typings.yaml.optionsMod.ParseOptions
+import typings.yaml.optionsMod.SchemaOptions
+import typings.yaml.optionsMod.ToJSOptions
+import typings.yaml.optionsMod.ToStringOptions
+import typings.yaml.publicApiMod.EmptyStream
+import typings.yaml.visitMod.asyncVisitor
+import typings.yaml.visitMod.visitor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("yaml", JSImport.Namespace)
+  @JSImport("yaml/dist", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("yaml", "Document")
+  @JSImport("yaml/dist", "Alias")
   @js.native
-  class Document () extends Collection {
-    def this(options: Options) = this()
-    
-    /**
-      * Anchors associated with the document's nodes;
-      * also provides alias & merge node creators.
-      */
-    var anchors: Anchors = js.native
-    
-    /** The document contents. */
-    var contents: js.Any = js.native
-    
-    @JSName("cstNode")
-    var cstNode_Document: js.UndefOr[typings.yaml.parseCstMod.CST.Document] = js.native
-    
-    var directivesEndMarker: js.UndefOr[Boolean] = js.native
-    
-    /** Errors encountered during parsing. */
-    var errors: js.Array[YAMLError] = js.native
-    
-    /**
-      * List the tags used in the document that are not in the default
-      * `tag:yaml.org,2002:` namespace.
-      */
-    def listNonDefaultTags(): js.Array[String] = js.native
-    
-    /** Parse a CST into this document */
-    def parse(cst: typings.yaml.parseCstMod.CST.Document): this.type = js.native
-    
-    /**
-      * When a document is created with `new YAML.Document()`, the schema object is
-      * not set as it may be influenced by parsed directives; call this with no
-      * arguments to set it manually, or with arguments to change the schema used
-      * by the document.
-      **/
-    def setSchema(): Unit = js.native
-    def setSchema(id: js.UndefOr[`1Dot0` | `1Dot1` | `1Dot2`]): Unit = js.native
-    def setSchema(id: js.UndefOr[`1Dot0` | `1Dot1` | `1Dot2`], customTags: js.Array[TagId | Tag]): Unit = js.native
-    def setSchema(id: Unit, customTags: js.Array[TagId | Tag]): Unit = js.native
-    def setSchema(id: Name): Unit = js.native
-    def setSchema(id: Name, customTags: js.Array[TagId | Tag]): Unit = js.native
-    
-    /** Set `handle` as a shorthand string for the `prefix` tag namespace. */
-    def setTagPrefix(handle: String, prefix: String): Unit = js.native
-    
-    /**
-      * Array of prefixes; each will have a string `handle` that
-      * starts and ends with `!` and a string `prefix` that the handle will be replaced by.
-      */
-    var tagPrefixes: js.Array[TagPrefix] = js.native
-    
-    def toJSON(arg: String): js.Any = js.native
-    def toJSON(arg: String, onAnchor: js.Function2[/* value */ js.Any, /* count */ Double, Unit]): js.Any = js.native
-    def toJSON(arg: Unit, onAnchor: js.Function2[/* value */ js.Any, /* count */ Double, Unit]): js.Any = js.native
-    
-    @JSName("type")
-    var type_Document: DOCUMENT = js.native
-    
-    /**
-      * The parsed version of the source document;
-      * if true-ish, stringified output will include a `%YAML` directive.
-      */
-    var version: js.UndefOr[String] = js.native
-    
-    /** Warnings encountered during parsing. */
-    var warnings: js.Array[YAMLWarning] = js.native
-  }
-  object Document {
-    
-    @js.native
-    trait Anchors extends StObject {
-      
-      /**
-        * Create a new `Alias` node, adding the required anchor for `node`.
-        * If `name` is empty, a new anchor name will be generated.
-        */
-      def createAlias(node: Node): Alias = js.native
-      def createAlias(node: Node, name: String): Alias = js.native
-      
-      /**
-        * Create a new `Merge` node with the given source nodes.
-        * Non-`Alias` sources will be automatically wrapped.
-        */
-      def createMergePair(nodes: Node*): Merge = js.native
-      
-      /** The anchor name associated with `node`, if set. */
-      def getName(node: Node): js.UndefOr[String] = js.native
-      
-      /** List of all defined anchor names. */
-      def getNames(): js.Array[String] = js.native
-      
-      /** The node associated with the anchor `name`, if set. */
-      def getNode(name: String): js.UndefOr[Node] = js.native
-      
-      /**
-        * Find an available anchor name with the given `prefix` and a
-        * numerical suffix.
-        */
-      def newName(prefix: String): String = js.native
-      
-      /**
-        * Associate an anchor with `node`. If `name` is empty, a new name will be generated.
-        * To remove an anchor, use `setAnchor(null, name)`.
-        */
-      def setAnchor(): Unit | String = js.native
-      def setAnchor(node: Null, name: String): Unit | String = js.native
-      def setAnchor(node: Node): Unit | String = js.native
-      def setAnchor(node: Node, name: String): Unit | String = js.native
-    }
-    
-    @js.native
-    trait Parsed extends Document {
-      
-      @JSName("contents")
-      var contents_Parsed: Node | Null = js.native
-      
-      /** The schema used with the document. */
-      @JSName("schema")
-      var schema_Parsed: Schema = js.native
-    }
-    
-    trait TagPrefix extends StObject {
-      
-      var handle: String
-      
-      var prefix: String
-    }
-    object TagPrefix {
-      
-      inline def apply(handle: String, prefix: String): TagPrefix = {
-        val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
-        __obj.asInstanceOf[TagPrefix]
-      }
-      
-      extension [Self <: TagPrefix](x: Self) {
-        
-        inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
-        
-        inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
-      }
-    }
+  open class Alias protected ()
+    extends typings.yaml.aliasMod.Alias {
+    def this(source: String) = this()
   }
   
-  inline def createNode(value: js.Any): YAMLMap | YAMLSeq | Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any]).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
-  inline def createNode(value: js.Any, wrapScalars: Unit, tag: String): YAMLMap | YAMLSeq | Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
-  
-  inline def createNode_false(value: js.Any, wrapScalars: `false`): YAMLMap | YAMLSeq | String | Double | Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | String | Double | Boolean | Null]
-  inline def createNode_false(value: js.Any, wrapScalars: `false`, tag: String): YAMLMap | YAMLSeq | String | Double | Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | String | Double | Boolean | Null]
-  
-  inline def createNode_true(value: js.Any, wrapScalars: `true`): YAMLMap | YAMLSeq | Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
-  inline def createNode_true(value: js.Any, wrapScalars: `true`, tag: String): YAMLMap | YAMLSeq | Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
-  
-  @JSImport("yaml", "defaultOptions")
-  @js.native
-  val defaultOptions: Options = js.native
-  
-  inline def parse(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def parse(str: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  inline def parseAllDocuments(str: String): js.Array[Parsed] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Parsed]]
-  inline def parseAllDocuments(str: String, options: Options): js.Array[Parsed] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Parsed]]
-  
-  inline def parseCST(str: String): ParsedCST = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCST")(str.asInstanceOf[js.Any]).asInstanceOf[ParsedCST]
-  
-  inline def parseDocument(str: String): Parsed = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(str.asInstanceOf[js.Any]).asInstanceOf[Parsed]
-  inline def parseDocument(str: String, options: Options): Parsed = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Parsed]
-  
-  object scalarOptions {
+  object CST {
     
-    @JSImport("yaml", "scalarOptions")
+    @JSImport("yaml/dist", "CST")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("yaml", "scalarOptions.binary")
+    @JSImport("yaml/dist", "CST.BOM")
     @js.native
-    def binary: Binary = js.native
-    inline def binary_=(x: Binary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("binary")(x.asInstanceOf[js.Any])
+    val BOM: /* "\\uFEFF" */ String = js.native
     
-    @JSImport("yaml", "scalarOptions.bool")
+    @JSImport("yaml/dist", "CST.DOCUMENT")
     @js.native
-    def bool: Bool = js.native
-    inline def bool_=(x: Bool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bool")(x.asInstanceOf[js.Any])
+    val DOCUMENT: /* "\\u0002" */ String = js.native
     
-    @JSImport("yaml", "scalarOptions.int")
+    @JSImport("yaml/dist", "CST.FLOW_END")
     @js.native
-    def int: Int = js.native
-    inline def int_=(x: Int): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int")(x.asInstanceOf[js.Any])
+    val FLOW_END: /* "\\u0018" */ String = js.native
     
-    @JSImport("yaml", "scalarOptions.null")
+    @JSImport("yaml/dist", "CST.SCALAR")
     @js.native
-    val `null`: typings.yaml.mod.scalarOptions.Null = js.native
+    val SCALAR: /* "\\u001F" */ String = js.native
     
-    @JSImport("yaml", "scalarOptions.str")
-    @js.native
-    def str: Str = js.native
-    inline def str_=(x: Str): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("str")(x.asInstanceOf[js.Any])
+    inline def createScalarToken(value: String, context: End): BlockScalar | FlowScalar = (^.asInstanceOf[js.Dynamic].applyDynamic("createScalarToken")(value.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[BlockScalar | FlowScalar]
     
-    trait Binary extends StObject {
-      
-      /**
-        * The type of string literal used to stringify `!!binary` values.
-        *
-        * Default: `'BLOCK_LITERAL'`
-        */
-      var defaultType: Type
-      
-      /**
-        * Maximum line width for `!!binary`.
-        *
-        * Default: `76`
-        */
-      var lineWidth: Double
-    }
-    object Binary {
-      
-      inline def apply(defaultType: Type, lineWidth: Double): Binary = {
-        val __obj = js.Dynamic.literal(defaultType = defaultType.asInstanceOf[js.Any], lineWidth = lineWidth.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Binary]
-      }
-      
-      extension [Self <: Binary](x: Self) {
-        
-        inline def setDefaultType(value: Type): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
-        
-        inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
-      }
-    }
+    inline def isCollection(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")().asInstanceOf[Boolean]
+    inline def isCollection(token: Token): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    trait Bool extends StObject {
-      
-      /**
-        * String representation for `false`. With the core schema, use `'false' | 'False' | 'FALSE'`.
-        *
-        * Default: `'false'`
-        */
-      var falseStr: String
-      
-      /**
-        * String representation for `true`. With the core schema, use `'true' | 'True' | 'TRUE'`.
-        *
-        * Default: `'true'`
-        */
-      var trueStr: String
-    }
-    object Bool {
-      
-      inline def apply(falseStr: String, trueStr: String): Bool = {
-        val __obj = js.Dynamic.literal(falseStr = falseStr.asInstanceOf[js.Any], trueStr = trueStr.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Bool]
-      }
-      
-      extension [Self <: Bool](x: Self) {
-        
-        inline def setFalseStr(value: String): Self = StObject.set(x, "falseStr", value.asInstanceOf[js.Any])
-        
-        inline def setTrueStr(value: String): Self = StObject.set(x, "trueStr", value.asInstanceOf[js.Any])
-      }
-    }
+    inline def isScalar(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScalar")().asInstanceOf[Boolean]
+    inline def isScalar(token: Token): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScalar")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    trait Int extends StObject {
-      
-      /**
-        * Whether integers should be parsed into BigInt values.
-        *
-        * Default: `false`
-        */
-      var asBigInt: `false`
-    }
-    object Int {
-      
-      inline def apply(): Int = {
-        val __obj = js.Dynamic.literal(asBigInt = false)
-        __obj.asInstanceOf[Int]
-      }
-      
-      extension [Self <: Int](x: Self) {
-        
-        inline def setAsBigInt(value: `false`): Self = StObject.set(x, "asBigInt", value.asInstanceOf[js.Any])
-      }
-    }
+    inline def prettyToken(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyToken")(token.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    trait Null extends StObject {
-      
-      /**
-        * String representation for `null`. With the core schema, use `'null' | 'Null' | 'NULL' | '~' | ''`.
-        *
-        * Default: `'null'`
-        */
-      var nullStr: String
-    }
-    object Null {
-      
-      inline def apply(nullStr: String): typings.yaml.mod.scalarOptions.Null = {
-        val __obj = js.Dynamic.literal(nullStr = nullStr.asInstanceOf[js.Any])
-        __obj.asInstanceOf[typings.yaml.mod.scalarOptions.Null]
-      }
-      
-      extension [Self <: typings.yaml.mod.scalarOptions.Null](x: Self) {
-        
-        inline def setNullStr(value: String): Self = StObject.set(x, "nullStr", value.asInstanceOf[js.Any])
-      }
-    }
+    inline def resolveAsScalar(): Value | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")().asInstanceOf[Value | Null]
+    inline def resolveAsScalar(token: Null, strict: Boolean): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+    inline def resolveAsScalar(
+      token: Null,
+      strict: Boolean,
+      onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
+    ): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+    inline def resolveAsScalar(
+      token: Null,
+      strict: Unit,
+      onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
+    ): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+    inline def resolveAsScalar(token: Unit, strict: Boolean): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+    inline def resolveAsScalar(
+      token: Unit,
+      strict: Boolean,
+      onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
+    ): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+    inline def resolveAsScalar(
+      token: Unit,
+      strict: Unit,
+      onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
+    ): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+    inline def resolveAsScalar(token: BlockScalar): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any]).asInstanceOf[Value]
+    inline def resolveAsScalar(token: BlockScalar, strict: Boolean): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Value]
+    inline def resolveAsScalar(
+      token: BlockScalar,
+      strict: Boolean,
+      onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
+    ): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value]
+    inline def resolveAsScalar(
+      token: BlockScalar,
+      strict: Unit,
+      onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
+    ): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value]
+    inline def resolveAsScalar(token: FlowScalar): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any]).asInstanceOf[Value]
+    inline def resolveAsScalar(token: FlowScalar, strict: Boolean): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Value]
+    inline def resolveAsScalar(
+      token: FlowScalar,
+      strict: Boolean,
+      onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
+    ): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value]
+    inline def resolveAsScalar(
+      token: FlowScalar,
+      strict: Unit,
+      onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
+    ): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value]
+    inline def resolveAsScalar(token: Token): Value | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any]).asInstanceOf[Value | Null]
+    inline def resolveAsScalar(token: Token, strict: Boolean): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+    inline def resolveAsScalar(
+      token: Token,
+      strict: Boolean,
+      onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
+    ): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+    inline def resolveAsScalar(
+      token: Token,
+      strict: Unit,
+      onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
+    ): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
     
-    trait Str extends StObject {
+    inline def setScalarValue(token: Token, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setScalarValue")(token.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setScalarValue(token: Token, value: String, context: AfterKey): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setScalarValue")(token.asInstanceOf[js.Any], value.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def stringify(cst: CollectionItem): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(cst.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def stringify(cst: Token): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(cst.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def tokenType(source: String): TokenType_ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenType")(source.asInstanceOf[js.Any]).asInstanceOf[TokenType_ | Null]
+    
+    object visit {
       
-      /**
-        * The default type of string literal used to stringify values
-        *
-        * Default: `'PLAIN'`
-        */
-      var defaultType: Type
+      inline def apply(cst: CollectionItem, visitor: Visitor): Unit = (^.asInstanceOf[js.Dynamic].apply(cst.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(cst: typings.yaml.cstMod.Document, visitor: Visitor): Unit = (^.asInstanceOf[js.Dynamic].apply(cst.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      var doubleQuoted: JsonEncoding
+      @JSImport("yaml/dist", "CST.visit")
+      @js.native
+      val ^ : js.Any = js.native
       
-      var fold: LineWidth
-    }
-    object Str {
+      @JSImport("yaml/dist", "CST.visit.BREAK")
+      @js.native
+      def BREAK: js.Symbol = js.native
+      inline def BREAK_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BREAK")(x.asInstanceOf[js.Any])
       
-      inline def apply(defaultType: Type, doubleQuoted: JsonEncoding, fold: LineWidth): Str = {
-        val __obj = js.Dynamic.literal(defaultType = defaultType.asInstanceOf[js.Any], doubleQuoted = doubleQuoted.asInstanceOf[js.Any], fold = fold.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Str]
-      }
+      @JSImport("yaml/dist", "CST.visit.REMOVE")
+      @js.native
+      def REMOVE: js.Symbol = js.native
+      inline def REMOVE_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REMOVE")(x.asInstanceOf[js.Any])
       
-      extension [Self <: Str](x: Self) {
-        
-        inline def setDefaultType(value: Type): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
-        
-        inline def setDoubleQuoted(value: JsonEncoding): Self = StObject.set(x, "doubleQuoted", value.asInstanceOf[js.Any])
-        
-        inline def setFold(value: LineWidth): Self = StObject.set(x, "fold", value.asInstanceOf[js.Any])
-      }
+      @JSImport("yaml/dist", "CST.visit.SKIP")
+      @js.native
+      def SKIP: js.Symbol = js.native
+      inline def SKIP_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SKIP")(x.asInstanceOf[js.Any])
+      
+      @JSImport("yaml/dist", "CST.visit.itemAtPath")
+      @js.native
+      def itemAtPath: js.Function2[
+            /* cst */ typings.yaml.cstMod.Document | CollectionItem, 
+            /* path */ VisitPath, 
+            js.UndefOr[CollectionItem]
+          ] = js.native
+      inline def itemAtPath_=(
+        x: js.Function2[
+              /* cst */ typings.yaml.cstMod.Document | CollectionItem, 
+              /* path */ VisitPath, 
+              js.UndefOr[CollectionItem]
+            ]
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("itemAtPath")(x.asInstanceOf[js.Any])
+      
+      @JSImport("yaml/dist", "CST.visit.parentCollection")
+      @js.native
+      def parentCollection: js.Function2[
+            /* cst */ typings.yaml.cstMod.Document | CollectionItem, 
+            /* path */ VisitPath, 
+            BlockMap | BlockSequence | FlowCollection
+          ] = js.native
+      inline def parentCollection_=(
+        x: js.Function2[
+              /* cst */ typings.yaml.cstMod.Document | CollectionItem, 
+              /* path */ VisitPath, 
+              BlockMap | BlockSequence | FlowCollection
+            ]
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parentCollection")(x.asInstanceOf[js.Any])
     }
   }
   
-  inline def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def stringify(value: js.Any, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  trait Options
-    extends StObject
-       with typings.yaml.typesMod.Schema.Options {
-    
-    /**
-      * Default prefix for anchors.
-      *
-      * Default: `'a'`, resulting in anchors `a1`, `a2`, etc.
-      */
-    var anchorPrefix: js.UndefOr[String] = js.undefined
-    
-    /**
-      * The number of spaces to use when indenting code.
-      *
-      * Default: `2`
-      */
-    var indent: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Whether block sequences should be indented.
-      *
-      * Default: `true`
-      */
-    var indentSeq: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Allow non-JSON JavaScript objects to remain in the `toJSON` output.
-      * Relevant with the YAML 1.1 `!!timestamp` and `!!binary` tags as well as BigInts.
-      *
-      * Default: `true`
-      */
-    var keepBlobsInJSON: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Include references in the AST to each node's corresponding CST node.
-      *
-      * Default: `false`
-      */
-    var keepCstNodes: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Store the original node type when parsing documents.
-      *
-      * Default: `true`
-      */
-    var keepNodeTypes: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * When outputting JS, use Map rather than Object to represent mappings.
-      *
-      * Default: `false`
-      */
-    var mapAsMap: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Prevent exponential entity expansion attacks by limiting data aliasing count;
-      * set to `-1` to disable checks; `0` disallows all alias nodes.
-      *
-      * Default: `100`
-      */
-    var maxAliasCount: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Include line position & node type directly in errors; drop their verbose source and context.
-      *
-      * Default: `false`
-      */
-    var prettyErrors: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * When stringifying, require keys to be scalars and to use implicit rather than explicit notation.
-      *
-      * Default: `false`
-      */
-    var simpleKeys: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * The YAML version used by documents without a `%YAML` directive.
-      *
-      * Default: `"1.2"`
-      */
-    var version: js.UndefOr[`1Dot0` | `1Dot1` | `1Dot2`] = js.undefined
+  @JSImport("yaml/dist", "Composer")
+  @js.native
+  open class Composer ()
+    extends typings.yaml.composerMod.Composer {
+    def this(options: ParseOptions & DocumentOptions & SchemaOptions) = this()
   }
-  object Options {
+  
+  @JSImport("yaml/dist", "Document")
+  @js.native
+  /**
+    * @param value - The initial value for the document, which will be wrapped
+    *   in a Node container.
+    */
+  open class Document[T /* <: Node[Any] */] ()
+    extends typings.yaml.documentMod.Document[T] {
+    def this(value: Any) = this()
+    def this(value: Any, options: DocumentOptions & SchemaOptions & ParseOptions & CreateNodeOptions) = this()
+    def this(value: Any, replacer: Replacer) = this()
+    def this(value: Unit, options: DocumentOptions & SchemaOptions & ParseOptions & CreateNodeOptions) = this()
+    def this(
+      value: Any,
+      replacer: Null,
+      options: DocumentOptions & SchemaOptions & ParseOptions & CreateNodeOptions
+    ) = this()
+    def this(
+      value: Any,
+      replacer: Replacer,
+      options: DocumentOptions & SchemaOptions & ParseOptions & CreateNodeOptions
+    ) = this()
+  }
+  
+  @JSImport("yaml/dist", "Lexer")
+  @js.native
+  open class Lexer ()
+    extends typings.yaml.lexerMod.Lexer
+  
+  @JSImport("yaml/dist", "LineCounter")
+  @js.native
+  open class LineCounter ()
+    extends typings.yaml.lineCounterMod.LineCounter
+  
+  @JSImport("yaml/dist", "Pair")
+  @js.native
+  open class Pair[K, V] protected ()
+    extends typings.yaml.pairMod.Pair[K, V] {
+    def this(key: K) = this()
+    def this(key: K, value: V) = this()
+  }
+  
+  @JSImport("yaml/dist", "Parser")
+  @js.native
+  /**
+    * @param onNewLine - If defined, called separately with the start position of
+    *   each new line (in `parse()`, including the start of input).
+    */
+  open class Parser ()
+    extends typings.yaml.parserMod.Parser {
+    def this(onNewLine: js.Function1[/* offset */ Double, Unit]) = this()
+  }
+  
+  @JSImport("yaml/dist", "Scalar")
+  @js.native
+  open class Scalar[T] protected ()
+    extends typings.yaml.scalarMod.Scalar[T] {
+    def this(value: T) = this()
+  }
+  /* static members */
+  object Scalar {
     
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
-    }
+    @JSImport("yaml/dist", "Scalar.BLOCK_FOLDED")
+    @js.native
+    val BLOCK_FOLDED: /* "BLOCK_FOLDED" */ String = js.native
     
-    extension [Self <: Options](x: Self) {
-      
-      inline def setAnchorPrefix(value: String): Self = StObject.set(x, "anchorPrefix", value.asInstanceOf[js.Any])
-      
-      inline def setAnchorPrefixUndefined: Self = StObject.set(x, "anchorPrefix", js.undefined)
-      
-      inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
-      
-      inline def setIndentSeq(value: Boolean): Self = StObject.set(x, "indentSeq", value.asInstanceOf[js.Any])
-      
-      inline def setIndentSeqUndefined: Self = StObject.set(x, "indentSeq", js.undefined)
-      
-      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
-      
-      inline def setKeepBlobsInJSON(value: Boolean): Self = StObject.set(x, "keepBlobsInJSON", value.asInstanceOf[js.Any])
-      
-      inline def setKeepBlobsInJSONUndefined: Self = StObject.set(x, "keepBlobsInJSON", js.undefined)
-      
-      inline def setKeepCstNodes(value: Boolean): Self = StObject.set(x, "keepCstNodes", value.asInstanceOf[js.Any])
-      
-      inline def setKeepCstNodesUndefined: Self = StObject.set(x, "keepCstNodes", js.undefined)
-      
-      inline def setKeepNodeTypes(value: Boolean): Self = StObject.set(x, "keepNodeTypes", value.asInstanceOf[js.Any])
-      
-      inline def setKeepNodeTypesUndefined: Self = StObject.set(x, "keepNodeTypes", js.undefined)
-      
-      inline def setMapAsMap(value: Boolean): Self = StObject.set(x, "mapAsMap", value.asInstanceOf[js.Any])
-      
-      inline def setMapAsMapUndefined: Self = StObject.set(x, "mapAsMap", js.undefined)
-      
-      inline def setMaxAliasCount(value: Double): Self = StObject.set(x, "maxAliasCount", value.asInstanceOf[js.Any])
-      
-      inline def setMaxAliasCountUndefined: Self = StObject.set(x, "maxAliasCount", js.undefined)
-      
-      inline def setPrettyErrors(value: Boolean): Self = StObject.set(x, "prettyErrors", value.asInstanceOf[js.Any])
-      
-      inline def setPrettyErrorsUndefined: Self = StObject.set(x, "prettyErrors", js.undefined)
-      
-      inline def setSimpleKeys(value: Boolean): Self = StObject.set(x, "simpleKeys", value.asInstanceOf[js.Any])
-      
-      inline def setSimpleKeysUndefined: Self = StObject.set(x, "simpleKeys", js.undefined)
-      
-      inline def setVersion(value: `1Dot0` | `1Dot1` | `1Dot2`): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
-      
-      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
-    }
+    @JSImport("yaml/dist", "Scalar.BLOCK_LITERAL")
+    @js.native
+    val BLOCK_LITERAL: /* "BLOCK_LITERAL" */ String = js.native
+    
+    @JSImport("yaml/dist", "Scalar.PLAIN")
+    @js.native
+    val PLAIN: /* "PLAIN" */ String = js.native
+    
+    @JSImport("yaml/dist", "Scalar.QUOTE_DOUBLE")
+    @js.native
+    val QUOTE_DOUBLE: /* "QUOTE_DOUBLE" */ String = js.native
+    
+    @JSImport("yaml/dist", "Scalar.QUOTE_SINGLE")
+    @js.native
+    val QUOTE_SINGLE: /* "QUOTE_SINGLE" */ String = js.native
+  }
+  
+  @JSImport("yaml/dist", "Schema")
+  @js.native
+  open class Schema protected ()
+    extends typings.yaml.schemaSchemaMod.Schema {
+    def this(hasCompatCustomTagsMergeResolveKnownTagsSchemaSortMapEntriesToStringDefaults: SchemaOptions) = this()
+  }
+  
+  @JSImport("yaml/dist", "YAMLError")
+  @js.native
+  open class YAMLError protected ()
+    extends typings.yaml.errorsMod.YAMLError {
+    def this(
+      name: typings.yaml.yamlStrings.YAMLParseError | typings.yaml.yamlStrings.YAMLWarning,
+      pos: js.Tuple2[Double, Double],
+      code: ErrorCode,
+      message: String
+    ) = this()
+  }
+  
+  @JSImport("yaml/dist", "YAMLMap")
+  @js.native
+  open class YAMLMap[K, V] ()
+    extends typings.yaml.yamlmapMod.YAMLMap[K, V] {
+    def this(schema: typings.yaml.schemaSchemaMod.Schema) = this()
+  }
+  
+  @JSImport("yaml/dist", "YAMLOMap")
+  @js.native
+  open class YAMLOMap ()
+    extends typings.yaml.omapMod.YAMLOMap
+  /* static members */
+  object YAMLOMap {
+    
+    @JSImport("yaml/dist", "YAMLOMap")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("yaml/dist", "YAMLOMap.tag")
+    @js.native
+    def tag: String = js.native
+    inline def tag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tag")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("yaml/dist", "YAMLParseError")
+  @js.native
+  open class YAMLParseError protected ()
+    extends typings.yaml.errorsMod.YAMLParseError {
+    def this(pos: js.Tuple2[Double, Double], code: ErrorCode, message: String) = this()
+  }
+  
+  @JSImport("yaml/dist", "YAMLSeq")
+  @js.native
+  open class YAMLSeq[T] ()
+    extends typings.yaml.yamlseqMod.YAMLSeq[T] {
+    def this(schema: typings.yaml.schemaSchemaMod.Schema) = this()
+  }
+  
+  @JSImport("yaml/dist", "YAMLSet")
+  @js.native
+  open class YAMLSet[T] ()
+    extends typings.yaml.setMod.YAMLSet[T] {
+    def this(schema: typings.yaml.schemaSchemaMod.Schema) = this()
+  }
+  /* static members */
+  object YAMLSet {
+    
+    @JSImport("yaml/dist", "YAMLSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("yaml/dist", "YAMLSet.tag")
+    @js.native
+    def tag: String = js.native
+    inline def tag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tag")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("yaml/dist", "YAMLWarning")
+  @js.native
+  open class YAMLWarning protected ()
+    extends typings.yaml.errorsMod.YAMLWarning {
+    def this(pos: js.Tuple2[Double, Double], code: ErrorCode, message: String) = this()
+  }
+  
+  inline def isAlias(node: Any): /* is yaml.yaml/dist/nodes/Alias.Alias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlias")(node.asInstanceOf[js.Any]).asInstanceOf[/* is yaml.yaml/dist/nodes/Alias.Alias */ Boolean]
+  
+  inline def isCollection[K, V](node: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isDocument[T /* <: Node[Any] */](node: Any): /* is yaml.yaml/dist/doc/Document.Document<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDocument")(node.asInstanceOf[js.Any]).asInstanceOf[/* is yaml.yaml/dist/doc/Document.Document<T> */ Boolean]
+  
+  inline def isMap[K, V](node: Any): /* is yaml.yaml/dist/nodes/YAMLMap.YAMLMap<K, V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMap")(node.asInstanceOf[js.Any]).asInstanceOf[/* is yaml.yaml/dist/nodes/YAMLMap.YAMLMap<K, V> */ Boolean]
+  
+  inline def isNode[T](node: Any): /* is yaml.yaml/dist/nodes/Node.Node<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is yaml.yaml/dist/nodes/Node.Node<T> */ Boolean]
+  
+  inline def isPair[K, V](node: Any): /* is yaml.yaml/dist/nodes/Pair.Pair<K, V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPair")(node.asInstanceOf[js.Any]).asInstanceOf[/* is yaml.yaml/dist/nodes/Pair.Pair<K, V> */ Boolean]
+  
+  inline def isScalar[T](node: Any): /* is yaml.yaml/dist/nodes/Scalar.Scalar<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScalar")(node.asInstanceOf[js.Any]).asInstanceOf[/* is yaml.yaml/dist/nodes/Scalar.Scalar<T> */ Boolean]
+  
+  inline def isSeq[T](node: Any): /* is yaml.yaml/dist/nodes/YAMLSeq.YAMLSeq<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSeq")(node.asInstanceOf[js.Any]).asInstanceOf[/* is yaml.yaml/dist/nodes/YAMLSeq.YAMLSeq<T> */ Boolean]
+  
+  inline def parse(src: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def parse(src: String, options: ParseOptions & DocumentOptions & SchemaOptions & ToJSOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def parse(src: String, reviver: Reviver): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def parse(
+    src: String,
+    reviver: Reviver,
+    options: ParseOptions & DocumentOptions & SchemaOptions & ToJSOptions
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def parseAllDocuments[T /* <: ParsedNode */](source: String): js.Array[Parsed[T]] | EmptyStream = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(source.asInstanceOf[js.Any]).asInstanceOf[js.Array[Parsed[T]] | EmptyStream]
+  inline def parseAllDocuments[T /* <: ParsedNode */](source: String, options: ParseOptions & DocumentOptions & SchemaOptions): js.Array[Parsed[T]] | EmptyStream = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Parsed[T]] | EmptyStream]
+  
+  inline def parseDocument[T /* <: ParsedNode */](source: String): Parsed[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(source.asInstanceOf[js.Any]).asInstanceOf[Parsed[T]]
+  inline def parseDocument[T /* <: ParsedNode */](source: String, options: ParseOptions & DocumentOptions & SchemaOptions): Parsed[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Parsed[T]]
+  
+  inline def stringify(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(
+    value: Any,
+    options: DocumentOptions & SchemaOptions & ParseOptions & CreateNodeOptions & ToStringOptions
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(
+    value: Any,
+    replacer: Null,
+    options: DocumentOptions & SchemaOptions & ParseOptions & CreateNodeOptions & ToStringOptions
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Null, options: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Null, options: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(
+    value: Any,
+    replacer: Unit,
+    options: DocumentOptions & SchemaOptions & ParseOptions & CreateNodeOptions & ToStringOptions
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, options: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, options: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Replacer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(
+    value: Any,
+    replacer: Replacer,
+    options: DocumentOptions & SchemaOptions & ParseOptions & CreateNodeOptions & ToStringOptions
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Replacer, options: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Replacer, options: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  object visit {
+    
+    inline def apply(node: Null, visitor: visitor): Unit = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(node: typings.yaml.documentMod.Document[Node[Any]], visitor: visitor): Unit = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(node: Node[Any], visitor: visitor): Unit = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @JSImport("yaml/dist", "visit")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("yaml/dist", "visit.BREAK")
+    @js.native
+    def BREAK: js.Symbol = js.native
+    inline def BREAK_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BREAK")(x.asInstanceOf[js.Any])
+    
+    @JSImport("yaml/dist", "visit.REMOVE")
+    @js.native
+    def REMOVE: js.Symbol = js.native
+    inline def REMOVE_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REMOVE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("yaml/dist", "visit.SKIP")
+    @js.native
+    def SKIP: js.Symbol = js.native
+    inline def SKIP_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SKIP")(x.asInstanceOf[js.Any])
+  }
+  
+  object visitAsync {
+    
+    inline def apply(node: Null, visitor: asyncVisitor): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def apply(node: typings.yaml.documentMod.Document[Node[Any]], visitor: asyncVisitor): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def apply(node: Node[Any], visitor: asyncVisitor): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    
+    @JSImport("yaml/dist", "visitAsync")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("yaml/dist", "visitAsync.BREAK")
+    @js.native
+    def BREAK: js.Symbol = js.native
+    inline def BREAK_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BREAK")(x.asInstanceOf[js.Any])
+    
+    @JSImport("yaml/dist", "visitAsync.REMOVE")
+    @js.native
+    def REMOVE: js.Symbol = js.native
+    inline def REMOVE_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REMOVE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("yaml/dist", "visitAsync.SKIP")
+    @js.native
+    def SKIP: js.Symbol = js.native
+    inline def SKIP_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SKIP")(x.asInstanceOf[js.Any])
   }
 }

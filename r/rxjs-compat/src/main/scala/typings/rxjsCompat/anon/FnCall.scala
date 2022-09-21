@@ -10,7 +10,7 @@ trait FnCall extends StObject {
   def apply[T](
     durationSelector: js.Function1[
       /* value */ T, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ Any
     ]
-  ): js.Any = js.native
+  ): Any = js.native
 }

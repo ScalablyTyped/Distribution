@@ -28,7 +28,7 @@ object IGeneratedExpression {
     
     inline def setParameterTypeNamesUndefined: Self = StObject.set(x, "parameterTypeNames", js.undefined)
     
-    inline def setParameterTypeNamesVarargs(value: String*): Self = StObject.set(x, "parameterTypeNames", js.Array(value :_*))
+    inline def setParameterTypeNamesVarargs(value: String*): Self = StObject.set(x, "parameterTypeNames", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

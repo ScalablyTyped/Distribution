@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ldapjs", "EntryAlreadyExistsError")
 @js.native
-class EntryAlreadyExistsError () extends StObject {
+open class EntryAlreadyExistsError () extends StObject {
   def this(error: String) = this()
 }

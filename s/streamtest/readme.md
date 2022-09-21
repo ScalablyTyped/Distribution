@@ -10,15 +10,12 @@ Streams test library
 | ------------------ | :-------------: |
 | Full name          | streamtest |
 | Keywords           | test, streams, stream1, stream2 |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 209162 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15025.333333333334 |
+| # stars            | 28.0 |
 
 ## Links
-- [Homepage](https://github.com/nfroidure/streamtest)
-- [Bugs](https://github.com/nfroidure/streamtest/issues)
-- [Repository](https://github.com/nfroidure/streamtest)
 - [Npm](https://www.npmjs.com/package/streamtest)
     
 

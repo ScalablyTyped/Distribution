@@ -40,7 +40,7 @@ object typesMod {
       
       inline def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value*))
       
       inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       

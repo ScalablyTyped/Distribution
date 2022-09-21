@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gapiPeople.gapiPeopleStrings.PROFILE
   - typings.gapiPeople.gapiPeopleStrings.DOMAIN_PROFILE
   - typings.gapiPeople.gapiPeopleStrings.CONTACT
+  - typings.gapiPeople.gapiPeopleStrings.OTHER_CONTACT
+  - typings.gapiPeople.gapiPeopleStrings.DOMAIN_CONTACT
 */
 trait SourceType extends StObject
 object SourceType {
@@ -18,7 +20,11 @@ object SourceType {
   
   inline def CONTACT: typings.gapiPeople.gapiPeopleStrings.CONTACT = "CONTACT".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.CONTACT]
   
+  inline def DOMAIN_CONTACT: typings.gapiPeople.gapiPeopleStrings.DOMAIN_CONTACT = "DOMAIN_CONTACT".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.DOMAIN_CONTACT]
+  
   inline def DOMAIN_PROFILE: typings.gapiPeople.gapiPeopleStrings.DOMAIN_PROFILE = "DOMAIN_PROFILE".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.DOMAIN_PROFILE]
+  
+  inline def OTHER_CONTACT: typings.gapiPeople.gapiPeopleStrings.OTHER_CONTACT = "OTHER_CONTACT".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.OTHER_CONTACT]
   
   inline def PROFILE: typings.gapiPeople.gapiPeopleStrings.PROFILE = "PROFILE".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.PROFILE]
   

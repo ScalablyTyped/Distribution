@@ -8,7 +8,7 @@ object transport {
   
   @JSImport("dav", "transport.Basic")
   @js.native
-  class Basic protected () extends Transport {
+  open class Basic protected () extends Transport {
     /**
       * Create a new Basic object. This sends dav requests using http basic authentication.
       * @param credentials user authorization.
@@ -22,20 +22,20 @@ object transport {
     */
   @JSImport("dav", "transport.OAuth2")
   @js.native
-  class OAuth2 protected () extends Transport {
+  open class OAuth2 protected () extends Transport {
     def this(credentials: Credentials) = this()
   }
   
   @JSImport("dav", "transport.Transport")
   @js.native
-  class Transport protected () extends StObject {
+  open class Transport protected () extends StObject {
     /**
       * @param credentials user authorization.
       */
     def this(credentials: Credentials) = this()
     
-    def send(request: Request_, url: String): js.Promise[js.Any] = js.native
-    def send(request: Request_, url: String, options: TransportOptions): js.Promise[js.Any] = js.native
+    def send(request: Request_, url: String): js.Promise[Any] = js.native
+    def send(request: Request_, url: String, options: TransportOptions): js.Promise[Any] = js.native
   }
   
   trait TransportOptions extends StObject {

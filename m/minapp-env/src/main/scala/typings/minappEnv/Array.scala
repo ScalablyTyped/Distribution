@@ -42,7 +42,7 @@ trait Array[T]
   def every(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], scala.Boolean]): scala.Boolean = js.native
   def every(
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): scala.Boolean = js.native
   
   /**
@@ -63,10 +63,10 @@ trait Array[T]
     * @param callbackfn A function that accepts up to three arguments. The filter method calls the callbackfn function one time for each element in the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
-  def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], js.Any]): Array[T] = js.native
+  def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Any]): Array[T] = js.native
   def filter(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], js.Any],
-    thisArg: js.Any
+    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Any],
+    thisArg: Any
   ): Array[T] = js.native
   /**
     * Returns the elements of an array that meet the condition specified in a callback function.
@@ -80,7 +80,7 @@ trait Array[T]
   @JSName("filter")
   def filter_S_T[S /* <: T */](
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], /* is S */ scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): Array[S] = js.native
   
   /**
@@ -95,7 +95,7 @@ trait Array[T]
   def find(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ Array[T], scala.Boolean]): js.UndefOr[T] = js.native
   def find(
     predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ Array[T], scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): js.UndefOr[T] = js.native
   
   /**
@@ -110,7 +110,7 @@ trait Array[T]
   def findIndex(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ Array[T], scala.Boolean]): Double = js.native
   def findIndex(
     predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ Array[T], scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): Double = js.native
   
   /**
@@ -121,7 +121,7 @@ trait Array[T]
   def forEach(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Unit]): Unit = js.native
   def forEach(
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Unit],
-    thisArg: js.Any
+    thisArg: Any
   ): Unit = js.native
   
   /**
@@ -167,10 +167,7 @@ trait Array[T]
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
   def map[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], U]): Array[U] = js.native
-  def map[U](
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], U],
-    thisArg: js.Any
-  ): Array[U] = js.native
+  def map[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], U], thisArg: Any): Array[U] = js.native
   
   /**
     * Removes the last element from an array and returns it.
@@ -294,7 +291,7 @@ trait Array[T]
   def some(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], scala.Boolean]): scala.Boolean = js.native
   def some(
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): scala.Boolean = js.native
   
   /**

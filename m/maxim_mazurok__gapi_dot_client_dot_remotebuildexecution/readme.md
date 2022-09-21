@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_remotebuildexecution
 
-Typings are for version 2.0.20201117
+Typings are for version 2.0.20210720
 
 ## Library description:
 TypeScript typings for Remote Build Execution API v2
@@ -10,10 +10,10 @@ TypeScript typings for Remote Build Execution API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.remotebuildexecution |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 1 |
-| # downloads        | 1081 |
-| # stars            | 0 |
+| # releases         | 37 |
+| # dependents       | 0.0 |
+| # downloads        | 90.33333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

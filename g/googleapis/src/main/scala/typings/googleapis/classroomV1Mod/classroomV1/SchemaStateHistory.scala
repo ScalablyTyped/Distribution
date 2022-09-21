@@ -4,25 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The history of each state this submission has been in.
-  */
 trait SchemaStateHistory extends StObject {
   
   /**
-    * The teacher or student who made the change
+    * The teacher or student who made the change.
     */
-  var actorUserId: js.UndefOr[String] = js.undefined
+  var actorUserId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The workflow pipeline stage.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String | Null] = js.undefined
   
   /**
     * When the submission entered this state.
     */
-  var stateTimestamp: js.UndefOr[String] = js.undefined
+  var stateTimestamp: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaStateHistory {
   
@@ -35,11 +32,17 @@ object SchemaStateHistory {
     
     inline def setActorUserId(value: String): Self = StObject.set(x, "actorUserId", value.asInstanceOf[js.Any])
     
+    inline def setActorUserIdNull: Self = StObject.set(x, "actorUserId", null)
+    
     inline def setActorUserIdUndefined: Self = StObject.set(x, "actorUserId", js.undefined)
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
+    inline def setStateNull: Self = StObject.set(x, "state", null)
+    
     inline def setStateTimestamp(value: String): Self = StObject.set(x, "stateTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setStateTimestampNull: Self = StObject.set(x, "stateTimestamp", null)
     
     inline def setStateTimestampUndefined: Self = StObject.set(x, "stateTimestamp", js.undefined)
     

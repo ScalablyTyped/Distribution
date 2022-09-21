@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomLabels extends StObject {
   
   def Add(Name: String): CustomLabel = js.native
-  def Add(Name: String, DotMatrix: js.Any): CustomLabel = js.native
+  def Add(Name: String, DotMatrix: Any): CustomLabel = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -16,9 +16,9 @@ trait CustomLabels extends StObject {
   
   val Creator: Double = js.native
   
-  def Item(Index: js.Any): CustomLabel = js.native
+  def Item(Index: Any): CustomLabel = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.CustomLabels_typekey")
   var WordDotCustomLabels_typekey: CustomLabels = js.native

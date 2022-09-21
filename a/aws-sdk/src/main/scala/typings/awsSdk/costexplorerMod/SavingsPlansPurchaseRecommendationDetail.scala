@@ -12,7 +12,7 @@ trait SavingsPlansPurchaseRecommendationDetail extends StObject {
   var AccountId: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The currency code AWS used to generate the recommendations and present potential savings.
+    * The currency code that Amazon Web Services used to generate the recommendations and present potential savings.
     */
   var CurrencyCode: js.UndefOr[GenericString] = js.undefined
   
@@ -37,7 +37,7 @@ trait SavingsPlansPurchaseRecommendationDetail extends StObject {
   var EstimatedAverageUtilization: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The estimated monthly savings amount, based on the recommended Savings Plans.
+    * The estimated monthly savings amount based on the recommended Savings Plans.
     */
   var EstimatedMonthlySavingsAmount: js.UndefOr[GenericString] = js.undefined
   
@@ -47,12 +47,12 @@ trait SavingsPlansPurchaseRecommendationDetail extends StObject {
   var EstimatedOnDemandCost: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  The estimated On-Demand costs you would expect with no additional commitment, based on your usage of the selected time period and the Savings Plans you own. 
+    *  The estimated On-Demand costs you expect with no additional commitment, based on your usage of the selected time period and the Savings Plans you own. 
     */
   var EstimatedOnDemandCostWithCurrentCommitment: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The estimated return on investment based on the recommended Savings Plans purchased. This is calculated as estimatedSavingsAmount/ estimatedSPCost*100.
+    * The estimated return on investment that's based on the recommended Savings Plans that you purchased. This is calculated as estimatedSavingsAmount/ estimatedSPCost*100.
     */
   var EstimatedROI: js.UndefOr[GenericString] = js.undefined
   
@@ -62,7 +62,7 @@ trait SavingsPlansPurchaseRecommendationDetail extends StObject {
   var EstimatedSPCost: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The estimated savings amount based on the recommended Savings Plans over the length of the lookback period.
+    * The estimated savings amount that's based on the recommended Savings Plans over the length of the lookback period.
     */
   var EstimatedSavingsAmount: js.UndefOr[GenericString] = js.undefined
   
@@ -72,7 +72,7 @@ trait SavingsPlansPurchaseRecommendationDetail extends StObject {
   var EstimatedSavingsPercentage: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The recommended hourly commitment level for the Savings Plans type, and configuration based on the usage during the lookback period.
+    * The recommended hourly commitment level for the Savings Plans type and the configuration that's based on the usage during the lookback period.
     */
   var HourlyCommitmentToPurchase: js.UndefOr[GenericString] = js.undefined
   

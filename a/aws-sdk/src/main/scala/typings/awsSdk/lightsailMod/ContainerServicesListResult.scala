@@ -24,6 +24,6 @@ object ContainerServicesListResult {
     
     inline def setContainerServicesUndefined: Self = StObject.set(x, "containerServices", js.undefined)
     
-    inline def setContainerServicesVarargs(value: ContainerService*): Self = StObject.set(x, "containerServices", js.Array(value :_*))
+    inline def setContainerServicesVarargs(value: ContainerService*): Self = StObject.set(x, "containerServices", js.Array(value*))
   }
 }

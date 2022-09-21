@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs an empty Group with no visual elements and no member parts; normally a Group will have some visual elements surrounding a Placeholder.
   * @param {EnumValue=} type if not supplied, the default Panel type is Panel.Position.
   */
-class Group ()
+open class Group ()
   extends typings.go.mod.Group {
   def this(`type`: typings.go.mod.EnumValue) = this()
 }

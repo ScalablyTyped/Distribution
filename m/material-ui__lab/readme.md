@@ -1,26 +1,8 @@
 
 # Scala.js typings for material-ui__lab
 
-Typings are for version 4.0.0-alpha.56
+Typings are for version 4.0.0-alpha.61
 
-## Library description:
-Material-UI Lab - Incubator for Material-UI React components.
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @material-ui/lab |
-| Keywords           | react, react-component, material design, material-ui, lab |
-| # releases         | 80 |
-| # dependents       | 715 |
-| # downloads        | 27740342 |
-| # stars            | 0 |
-
-## Links
-- [Homepage](https://github.com/mui-org/material-ui/tree/master/packages/material-ui-lab)
-- [Bugs](https://github.com/mui-org/material-ui/issues)
-- [Repository](https://github.com/mui-org/material-ui)
-- [Npm](https://www.npmjs.com/package/%40material-ui%2Flab)
-    
 
 
 ## Note

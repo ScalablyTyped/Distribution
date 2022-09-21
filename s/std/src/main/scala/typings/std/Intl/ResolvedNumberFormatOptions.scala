@@ -1,41 +1,71 @@
 package typings.std.Intl
 
+import typings.std.stdStrings.always
+import typings.std.stdStrings.auto
+import typings.std.stdStrings.compact
+import typings.std.stdStrings.engineering
+import typings.std.stdStrings.exceptZero
+import typings.std.stdStrings.long
+import typings.std.stdStrings.narrow
+import typings.std.stdStrings.never
+import typings.std.stdStrings.scientific
+import typings.std.stdStrings.short
+import typings.std.stdStrings.standard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ResolvedNumberFormatOptions extends StObject {
   
-  var compactDisplay: js.UndefOr[String] = js.undefined
+  /* standard es2020.intl */
+  var compactDisplay: js.UndefOr[short | long] = js.undefined
   
+  /* standard es5 */
   var currency: js.UndefOr[String] = js.undefined
   
+  /* standard es2020.intl */
   var currencyDisplay: js.UndefOr[String] = js.undefined
   
+  /* standard es2020.intl */
+  var currencySign: js.UndefOr[String] = js.undefined
+  
+  /* standard es5 */
   var locale: String
   
+  /* standard es5 */
   var maximumFractionDigits: Double
   
+  /* standard es5 */
   var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
   
+  /* standard es5 */
   var minimumFractionDigits: Double
   
+  /* standard es5 */
   var minimumIntegerDigits: Double
   
+  /* standard es5 */
   var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
   
-  var notation: js.UndefOr[String] = js.undefined
+  /* standard es2020.intl */
+  var notation: js.UndefOr[standard | scientific | engineering | compact] = js.undefined
   
+  /* standard es5 */
   var numberingSystem: String
   
-  var signDisplay: js.UndefOr[String] = js.undefined
+  /* standard es2020.intl */
+  var signDisplay: js.UndefOr[auto | never | always | exceptZero] = js.undefined
   
+  /* standard es5 */
   var style: String
   
+  /* standard es2020.intl */
   var unit: js.UndefOr[String] = js.undefined
   
-  var unitDisplay: js.UndefOr[String] = js.undefined
+  /* standard es2020.intl */
+  var unitDisplay: js.UndefOr[short | long | narrow] = js.undefined
   
+  /* standard es5 */
   var useGrouping: Boolean
 }
 object ResolvedNumberFormatOptions {
@@ -55,7 +85,7 @@ object ResolvedNumberFormatOptions {
   
   extension [Self <: ResolvedNumberFormatOptions](x: Self) {
     
-    inline def setCompactDisplay(value: String): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
+    inline def setCompactDisplay(value: short | long): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
     
     inline def setCompactDisplayUndefined: Self = StObject.set(x, "compactDisplay", js.undefined)
     
@@ -64,6 +94,10 @@ object ResolvedNumberFormatOptions {
     inline def setCurrencyDisplay(value: String): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
     
     inline def setCurrencyDisplayUndefined: Self = StObject.set(x, "currencyDisplay", js.undefined)
+    
+    inline def setCurrencySign(value: String): Self = StObject.set(x, "currencySign", value.asInstanceOf[js.Any])
+    
+    inline def setCurrencySignUndefined: Self = StObject.set(x, "currencySign", js.undefined)
     
     inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
@@ -83,13 +117,13 @@ object ResolvedNumberFormatOptions {
     
     inline def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
     
-    inline def setNotation(value: String): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
+    inline def setNotation(value: standard | scientific | engineering | compact): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
     inline def setNotationUndefined: Self = StObject.set(x, "notation", js.undefined)
     
     inline def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
     
-    inline def setSignDisplay(value: String): Self = StObject.set(x, "signDisplay", value.asInstanceOf[js.Any])
+    inline def setSignDisplay(value: auto | never | always | exceptZero): Self = StObject.set(x, "signDisplay", value.asInstanceOf[js.Any])
     
     inline def setSignDisplayUndefined: Self = StObject.set(x, "signDisplay", js.undefined)
     
@@ -97,7 +131,7 @@ object ResolvedNumberFormatOptions {
     
     inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    inline def setUnitDisplay(value: String): Self = StObject.set(x, "unitDisplay", value.asInstanceOf[js.Any])
+    inline def setUnitDisplay(value: short | long | narrow): Self = StObject.set(x, "unitDisplay", value.asInstanceOf[js.Any])
     
     inline def setUnitDisplayUndefined: Self = StObject.set(x, "unitDisplay", js.undefined)
     

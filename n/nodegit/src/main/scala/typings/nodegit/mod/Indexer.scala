@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Indexer")
 @js.native
-class Indexer ()
+open class Indexer ()
   extends typings.nodegit.indexerMod.Indexer

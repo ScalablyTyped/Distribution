@@ -63,6 +63,6 @@ object Error {
     
     inline def setTraceMessages(value: js.Array[String]): Self = StObject.set(x, "traceMessages", value.asInstanceOf[js.Any])
     
-    inline def setTraceMessagesVarargs(value: String*): Self = StObject.set(x, "traceMessages", js.Array(value :_*))
+    inline def setTraceMessagesVarargs(value: String*): Self = StObject.set(x, "traceMessages", js.Array(value*))
   }
 }

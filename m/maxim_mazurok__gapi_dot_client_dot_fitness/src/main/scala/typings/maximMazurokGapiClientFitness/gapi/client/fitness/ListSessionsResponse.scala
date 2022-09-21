@@ -31,7 +31,7 @@ object ListSessionsResponse {
     
     inline def setDeletedSessionUndefined: Self = StObject.set(x, "deletedSession", js.undefined)
     
-    inline def setDeletedSessionVarargs(value: Session*): Self = StObject.set(x, "deletedSession", js.Array(value :_*))
+    inline def setDeletedSessionVarargs(value: Session*): Self = StObject.set(x, "deletedSession", js.Array(value*))
     
     inline def setHasMoreData(value: Boolean): Self = StObject.set(x, "hasMoreData", value.asInstanceOf[js.Any])
     
@@ -45,6 +45,6 @@ object ListSessionsResponse {
     
     inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
-    inline def setSessionVarargs(value: Session*): Self = StObject.set(x, "session", js.Array(value :_*))
+    inline def setSessionVarargs(value: Session*): Self = StObject.set(x, "session", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ object albumMod {
   
   @JSImport("material-ui/svg-icons/av/album", JSImport.Default)
   @js.native
-  class default () extends AvAlbum
+  open class default () extends AvAlbum
   
   @JSImport("material-ui/svg-icons/av/album", "AvAlbum")
   @js.native
-  class AvAlbum ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvAlbum ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

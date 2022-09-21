@@ -8,18 +8,18 @@ object anon {
   
   trait Item[T] extends StObject {
     
-    def Item(index: js.Any): T
+    def Item(index: Any): T
   }
   object Item {
     
-    inline def apply[T](Item: js.Any => T): Item[T] = {
+    inline def apply[T](Item: Any => T): Item[T] = {
       val __obj = js.Dynamic.literal(Item = js.Any.fromFunction1(Item))
       __obj.asInstanceOf[Item[T]]
     }
     
     extension [Self <: Item[?], T](x: Self & Item[T]) {
       
-      inline def setItem(value: js.Any => T): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+      inline def setItem(value: Any => T): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     }
   }
 }

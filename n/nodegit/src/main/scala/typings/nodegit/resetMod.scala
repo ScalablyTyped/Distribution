@@ -17,7 +17,7 @@ object resetMod {
   
   @JSImport("nodegit/reset", "Reset")
   @js.native
-  class Reset () extends StObject
+  open class Reset () extends StObject
   /* static members */
   object Reset {
     

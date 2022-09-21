@@ -14,7 +14,7 @@ trait BackendEnvironment extends StObject {
   /**
     *  The creation date and time for a backend environment that is part of an Amplify app. 
     */
-  var createTime: CreateTime
+  var createTime: js.Date
   
   /**
     *  The name of deployment artifacts. 
@@ -34,15 +34,15 @@ trait BackendEnvironment extends StObject {
   /**
     *  The last updated date and time for a backend environment that is part of an Amplify app. 
     */
-  var updateTime: UpdateTime
+  var updateTime: js.Date
 }
 object BackendEnvironment {
   
   inline def apply(
     backendEnvironmentArn: BackendEnvironmentArn,
-    createTime: CreateTime,
+    createTime: js.Date,
     environmentName: EnvironmentName,
-    updateTime: UpdateTime
+    updateTime: js.Date
   ): BackendEnvironment = {
     val __obj = js.Dynamic.literal(backendEnvironmentArn = backendEnvironmentArn.asInstanceOf[js.Any], createTime = createTime.asInstanceOf[js.Any], environmentName = environmentName.asInstanceOf[js.Any], updateTime = updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackendEnvironment]
@@ -52,7 +52,7 @@ object BackendEnvironment {
     
     inline def setBackendEnvironmentArn(value: BackendEnvironmentArn): Self = StObject.set(x, "backendEnvironmentArn", value.asInstanceOf[js.Any])
     
-    inline def setCreateTime(value: CreateTime): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     inline def setDeploymentArtifacts(value: DeploymentArtifacts): Self = StObject.set(x, "deploymentArtifacts", value.asInstanceOf[js.Any])
     
@@ -64,6 +64,6 @@ object BackendEnvironment {
     
     inline def setStackNameUndefined: Self = StObject.set(x, "stackName", js.undefined)
     
-    inline def setUpdateTime(value: UpdateTime): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: js.Date): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
   }
 }

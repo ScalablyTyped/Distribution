@@ -36,6 +36,6 @@ object QueryHierarchyItemsResult {
     
     inline def setValue(value: js.Array[QueryHierarchyItem]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: QueryHierarchyItem*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: QueryHierarchyItem*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

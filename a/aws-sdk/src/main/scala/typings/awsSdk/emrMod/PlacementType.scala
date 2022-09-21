@@ -33,6 +33,6 @@ object PlacementType {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
   }
 }

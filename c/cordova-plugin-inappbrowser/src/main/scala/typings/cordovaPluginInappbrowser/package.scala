@@ -5,6 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type InAppBrowserEventListener = js.Function1[/* evt */ typings.cordovaPluginInappbrowser.InAppBrowserEvent, scala.Unit]
+type InAppBrowserEventListener = js.Function1[/* evt */ InAppBrowserEvent, Unit]
 
-type InAppBrowserEventListenerOrEventListenerObject = typings.cordovaPluginInappbrowser.InAppBrowserEventListener | typings.cordovaPluginInappbrowser.InAppBrowserEventListenerObject
+type InAppBrowserEventListenerOrEventListenerObject = InAppBrowserEventListener | InAppBrowserEventListenerObject

@@ -1,9 +1,7 @@
 package typings.devextreme.mod.DevExpress
 
 import typings.devextreme.anon.CloseIcon
-import typings.devextreme.devextremeStrings.filled
-import typings.devextreme.devextremeStrings.outlined
-import typings.devextreme.devextremeStrings.underlined
+import typings.devextreme.mod.DevExpress.common.EditorStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,59 +9,64 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait globalConfig extends StObject {
   
   /**
-    * [descr:globalConfig.decimalSeparator]
-    * @deprecated [depNote:globalConfig.decimalSeparator]
+    * A decimal separator. No longer applies.
+    * @deprecated 
     */
   var decimalSeparator: js.UndefOr[String] = js.undefined
   
   /**
-    * [descr:globalConfig.defaultCurrency]
+    * The default currency. Accepts a 3-letter ISO 4217 code.
     */
   var defaultCurrency: js.UndefOr[String] = js.undefined
   
   /**
-    * [descr:globalConfig.editorStylingMode]
+    * 
     */
-  var editorStylingMode: js.UndefOr[outlined | underlined | filled] = js.undefined
+  var defaultUseCurrencyAccountingStyle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:globalConfig.floatingActionButtonConfig]
+    * Specifies how editors&apos; text fields are styled in your application.
+    */
+  var editorStylingMode: js.UndefOr[EditorStyle] = js.undefined
+  
+  /**
+    * Configures a Floating Action Button (FAB) that emits a stack of related actions (speed dial).
     */
   var floatingActionButtonConfig: js.UndefOr[CloseIcon] = js.undefined
   
   /**
-    * [descr:globalConfig.forceIsoDateParsing]
+    * Specifies whether dates are parsed and serialized according to the ISO 8601 standard in all browsers.
     */
   var forceIsoDateParsing: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:globalConfig.oDataFilterToLower]
+    * Specifies whether to convert string values to lowercase in filter and search requests to OData services. Applies to the following operations: &apos;startswith&apos;, &apos;endswith&apos;, &apos;contains&apos;, and &apos;notcontains&apos;.
     */
   var oDataFilterToLower: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:globalConfig.rtlEnabled]
+    * Specifies whether the UI components support a right-to-left representation. Available for individual UI components as well.
     */
   var rtlEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:globalConfig.serverDecimalSeparator]
+    * The decimal separator that is used when submitting a value to the server.
     */
   var serverDecimalSeparator: js.UndefOr[String] = js.undefined
   
   /**
-    * [descr:globalConfig.thousandsSeparator]
-    * @deprecated [depNote:globalConfig.thousandsSeparator]
+    * A group separator. No longer applies.
+    * @deprecated 
     */
   var thousandsSeparator: js.UndefOr[String] = js.undefined
   
   /**
-    * [descr:globalConfig.useLegacyStoreResult]
+    * 
     */
   var useLegacyStoreResult: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:globalConfig.useLegacyVisibleIndex]
+    * 
     */
   var useLegacyVisibleIndex: js.UndefOr[Boolean] = js.undefined
 }
@@ -84,7 +87,11 @@ object globalConfig {
     
     inline def setDefaultCurrencyUndefined: Self = StObject.set(x, "defaultCurrency", js.undefined)
     
-    inline def setEditorStylingMode(value: outlined | underlined | filled): Self = StObject.set(x, "editorStylingMode", value.asInstanceOf[js.Any])
+    inline def setDefaultUseCurrencyAccountingStyle(value: Boolean): Self = StObject.set(x, "defaultUseCurrencyAccountingStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUseCurrencyAccountingStyleUndefined: Self = StObject.set(x, "defaultUseCurrencyAccountingStyle", js.undefined)
+    
+    inline def setEditorStylingMode(value: EditorStyle): Self = StObject.set(x, "editorStylingMode", value.asInstanceOf[js.Any])
     
     inline def setEditorStylingModeUndefined: Self = StObject.set(x, "editorStylingMode", js.undefined)
     

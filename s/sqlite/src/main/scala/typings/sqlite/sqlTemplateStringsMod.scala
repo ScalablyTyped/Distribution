@@ -10,13 +10,13 @@ object sqlTemplateStringsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(strings: js.Any, values: js.Any*): SQLStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[SQLStatement]
+  inline def default(strings: Any, values: Any*): SQLStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(strings.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SQLStatement]
   
-  inline def SQL(strings: js.Any, values: js.Any*): SQLStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("SQL")(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[SQLStatement]
+  inline def SQL(strings: Any, values: Any*): SQLStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("SQL")(List(strings.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SQLStatement]
   
   @JSImport("sql-template-strings", "SQLStatement")
   @js.native
-  class SQLStatement () extends StObject {
+  open class SQLStatement () extends StObject {
     
     def append(statement: String): this.type = js.native
     def append(statement: Double): this.type = js.native
@@ -80,6 +80,6 @@ object sqlTemplateStringsMod {
     /**
       * The values to be inserted for the placeholders
       */
-    var values: js.Array[js.Any] = js.native
+    var values: js.Array[Any] = js.native
   }
 }

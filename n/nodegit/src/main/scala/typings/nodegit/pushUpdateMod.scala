@@ -9,7 +9,7 @@ object pushUpdateMod {
   
   @JSImport("nodegit/push-update", "PushUpdate")
   @js.native
-  class PushUpdate () extends StObject {
+  open class PushUpdate () extends StObject {
     
     var dst: Oid = js.native
     

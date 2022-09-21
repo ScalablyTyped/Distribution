@@ -12,12 +12,12 @@ trait JobSummary extends StObject {
   var arrayProperties: js.UndefOr[ArrayPropertiesSummary] = js.undefined
   
   /**
-    * An object representing the details of the container that is associated with the job.
+    * An object representing the details of the container that's associated with the job.
     */
   var container: js.UndefOr[ContainerSummary] = js.undefined
   
   /**
-    * The Unix timestamp for when the job was created. For non-array jobs and parent array jobs, this is when the job entered the SUBMITTED state (at the time SubmitJob was called). For array child jobs, this is when the child job was spawned by its parent and entered the PENDING state.
+    * The Unix timestamp (in milliseconds) for when the job was created. For non-array jobs and parent array jobs, this is when the job entered the SUBMITTED state (at the time SubmitJob was called). For array child jobs, this is when the child job was spawned by its parent and entered the PENDING state.
     */
   var createdAt: js.UndefOr[Long] = js.undefined
   
@@ -25,6 +25,11 @@ trait JobSummary extends StObject {
     * The Amazon Resource Name (ARN) of the job.
     */
   var jobArn: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the job definition.
+    */
+  var jobDefinition: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the job.
@@ -37,7 +42,7 @@ trait JobSummary extends StObject {
   var jobName: String
   
   /**
-    * The node properties for a single node in a job summary list.
+    * The node properties for a single node in a job summary list.  This isn't applicable to jobs that are running on Fargate resources. 
     */
   var nodeProperties: js.UndefOr[NodePropertiesSummary] = js.undefined
   
@@ -85,6 +90,10 @@ object JobSummary {
     inline def setJobArn(value: String): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
     
     inline def setJobArnUndefined: Self = StObject.set(x, "jobArn", js.undefined)
+    
+    inline def setJobDefinition(value: String): Self = StObject.set(x, "jobDefinition", value.asInstanceOf[js.Any])
+    
+    inline def setJobDefinitionUndefined: Self = StObject.set(x, "jobDefinition", js.undefined)
     
     inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     

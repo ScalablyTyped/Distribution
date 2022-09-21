@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("blessed", "Widgets.Log")
 @js.native
-class Log () extends ScrollableTextElement {
+open class Log () extends ScrollableTextElement {
   def this(options: LogOptions) = this()
   
   /**

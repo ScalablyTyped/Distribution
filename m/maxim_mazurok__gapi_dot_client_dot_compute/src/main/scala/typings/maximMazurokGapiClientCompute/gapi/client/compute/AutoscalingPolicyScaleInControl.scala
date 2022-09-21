@@ -12,7 +12,7 @@ trait AutoscalingPolicyScaleInControl extends StObject {
     */
   var maxScaledInReplicas: js.UndefOr[FixedOrPercent] = js.undefined
   
-  /** How long back autoscaling should look when computing recommendations to include directives regarding slower scale in, as described above. */
+  /** How far back autoscaling looks when computing recommendations to include directives regarding slower scale in, as described above. */
   var timeWindowSec: js.UndefOr[Double] = js.undefined
 }
 object AutoscalingPolicyScaleInControl {

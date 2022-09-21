@@ -12,26 +12,26 @@ object mod {
   
   @JSImport("react-collapse", "Collapse")
   @js.native
-  class Collapse protected ()
-    extends PureComponent[CollapseProps, js.Object, js.Any] {
+  open class Collapse protected ()
+    extends PureComponent[CollapseProps, js.Object, Any] {
     def this(props: CollapseProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: CollapseProps, context: js.Any) = this()
+    def this(props: CollapseProps, context: Any) = this()
   }
   
   @JSImport("react-collapse", "UnmountClosed")
   @js.native
-  class UnmountClosed protected ()
-    extends PureComponent[CollapseProps, js.Object, js.Any] {
+  open class UnmountClosed protected ()
+    extends PureComponent[CollapseProps, js.Object, Any] {
     def this(props: CollapseProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: CollapseProps, context: js.Any) = this()
+    def this(props: CollapseProps, context: Any) = this()
   }
   
   trait CollapseCallbackArgs extends StObject {

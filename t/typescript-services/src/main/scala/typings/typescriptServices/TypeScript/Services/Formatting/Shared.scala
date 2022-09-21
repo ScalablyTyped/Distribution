@@ -68,18 +68,18 @@ object Shared {
     extends StObject
        with ITokenAccess {
     
-    /* private */ var tokens: js.Any
+    /* private */ var tokens: Any
   }
   object TokenRangeAccess {
     
-    inline def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind], tokens: js.Any): TokenRangeAccess = {
+    inline def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind], tokens: Any): TokenRangeAccess = {
       val __obj = js.Dynamic.literal(Contains = js.Any.fromFunction1(Contains), GetTokens = js.Any.fromFunction0(GetTokens), tokens = tokens.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenRangeAccess]
     }
     
     extension [Self <: TokenRangeAccess](x: Self) {
       
-      inline def setTokens(value: js.Any): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: Any): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,18 +106,18 @@ object Shared {
     extends StObject
        with ITokenAccess {
     
-    /* private */ var tokens: js.Any
+    /* private */ var tokens: Any
   }
   object TokenValuesAccess {
     
-    inline def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind], tokens: js.Any): TokenValuesAccess = {
+    inline def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind], tokens: Any): TokenValuesAccess = {
       val __obj = js.Dynamic.literal(Contains = js.Any.fromFunction1(Contains), GetTokens = js.Any.fromFunction0(GetTokens), tokens = tokens.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenValuesAccess]
     }
     
     extension [Self <: TokenValuesAccess](x: Self) {
       
-      inline def setTokens(value: js.Any): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: Any): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     }
   }
 }

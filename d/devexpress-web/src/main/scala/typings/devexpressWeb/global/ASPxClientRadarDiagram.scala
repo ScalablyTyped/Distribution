@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRadarDiagram")
 @js.native
-class ASPxClientRadarDiagram ()
+open class ASPxClientRadarDiagram ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRadarDiagram {
   
@@ -19,7 +19,7 @@ class ASPxClientRadarDiagram ()
     * @param value An object, representing the point's value.
     */
   /* CompleteClass */
-  override def DiagramToPoint(argument: js.Any, value: js.Any): typings.devexpressWeb.ASPxClientControlCoordinates = js.native
+  override def DiagramToPoint(argument: Any, value: Any): typings.devexpressWeb.ASPxClientControlCoordinates = js.native
   
   /**
     * Converts the display coordinates into a diagram coordinates object. An ASPxClientDiagramCoordinates object, containing information about the point's argument and value, their scale types, associated axes and pane.

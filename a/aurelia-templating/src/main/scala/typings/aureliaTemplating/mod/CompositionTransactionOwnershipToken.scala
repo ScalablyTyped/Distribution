@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-templating", "CompositionTransactionOwnershipToken")
 @js.native
-class CompositionTransactionOwnershipToken () extends StObject {
-  def this(owner: js.Any) = this()
+open class CompositionTransactionOwnershipToken protected () extends StObject {
+  def this(owner: Any) = this()
   
   /**
-    * Used internall to resolve the composition complete promise.
-    */
+  	* Used internall to resolve the composition complete promise.
+  	*/
   def resolve(): Unit = js.native
   
   /**
-    * Allows the transaction owner to wait for the completion of all child compositions.
-    * @return A promise that resolves when all child compositions are done.
-    */
+  	* Allows the transaction owner to wait for the completion of all child compositions.
+  	* @return A promise that resolves when all child compositions are done.
+  	*/
   def waitForCompositionComplete(): js.Promise[Unit] = js.native
 }

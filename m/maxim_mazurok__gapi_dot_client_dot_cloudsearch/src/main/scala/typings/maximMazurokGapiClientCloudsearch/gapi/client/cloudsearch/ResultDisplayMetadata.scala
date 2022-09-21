@@ -25,7 +25,7 @@ object ResultDisplayMetadata {
     
     inline def setMetalinesUndefined: Self = StObject.set(x, "metalines", js.undefined)
     
-    inline def setMetalinesVarargs(value: ResultDisplayLine*): Self = StObject.set(x, "metalines", js.Array(value :_*))
+    inline def setMetalinesVarargs(value: ResultDisplayLine*): Self = StObject.set(x, "metalines", js.Array(value*))
     
     inline def setObjectTypeLabel(value: String): Self = StObject.set(x, "objectTypeLabel", value.asInstanceOf[js.Any])
     

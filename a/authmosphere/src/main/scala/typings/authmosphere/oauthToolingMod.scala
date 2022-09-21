@@ -43,8 +43,8 @@ object oauthToolingMod {
     * @param logger - optional logger
     * @returns {Promise<T>}
     */
-  inline def getAccessToken(options: OAuthConfig): js.Promise[Token[Record[String, js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Token[Record[String, js.Any]]]]
-  inline def getAccessToken(options: OAuthConfig, logger: Logger): js.Promise[Token[Record[String, js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Token[Record[String, js.Any]]]]
+  inline def getAccessToken(options: OAuthConfig): js.Promise[Token[Record[String | Double | js.Symbol, Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Token[Record[String | Double | js.Symbol, Any]]]]
+  inline def getAccessToken(options: OAuthConfig, logger: Logger): js.Promise[Token[Record[String | Double | js.Symbol, Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessToken")(options.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Token[Record[String | Double | js.Symbol, Any]]]]
   
   /**
     * Makes a request to the `tokenInfoUrl` to validate the given `accessToken`.
@@ -61,5 +61,5 @@ object oauthToolingMod {
     */
   @JSImport("authmosphere/lib/src/oauth-tooling", "getTokenInfo")
   @js.native
-  val getTokenInfo: GetTokenInfo[Record[String, js.Any]] = js.native
+  val getTokenInfo: GetTokenInfo[Record[String | Double | js.Symbol, Any]] = js.native
 }

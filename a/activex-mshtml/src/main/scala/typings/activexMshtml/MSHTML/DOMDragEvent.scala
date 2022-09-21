@@ -122,7 +122,7 @@ trait DOMDragEvent extends StObject {
   
   val `type`: String
   
-  def view(pvarIndex: js.Any): js.Any
+  def view(pvarIndex: Any): Any
   @JSName("view")
   val view_Original: IHTMLWindow2
   

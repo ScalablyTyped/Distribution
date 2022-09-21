@@ -12,8 +12,8 @@ trait Call extends StObject {
     *
     * @return void
     */
-  def apply(): js.Any = js.native
-  def apply(options: Dynamic): js.Any = js.native
+  def apply(): Any = js.native
+  def apply(options: Dynamic): Any = js.native
   
   /**
     * Populates a slideout menu.

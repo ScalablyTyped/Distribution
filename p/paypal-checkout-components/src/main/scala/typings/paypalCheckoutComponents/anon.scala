@@ -204,13 +204,60 @@ object anon {
       
       inline def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
       
-      inline def setAllowedVarargs(value: FundingOption*): Self = StObject.set(x, "allowed", js.Array(value :_*))
+      inline def setAllowedVarargs(value: FundingOption*): Self = StObject.set(x, "allowed", js.Array(value*))
       
       inline def setDisallowed(value: js.Array[FundingOption]): Self = StObject.set(x, "disallowed", value.asInstanceOf[js.Any])
       
       inline def setDisallowedUndefined: Self = StObject.set(x, "disallowed", js.undefined)
       
-      inline def setDisallowedVarargs(value: FundingOption*): Self = StObject.set(x, "disallowed", js.Array(value :_*))
+      inline def setDisallowedVarargs(value: FundingOption*): Self = StObject.set(x, "disallowed", js.Array(value*))
+    }
+  }
+  
+  trait CreateBillingAgreement extends StObject {
+    
+    var createBillingAgreement: js.UndefOr[js.Function0[js.Promise[String]]] = js.undefined
+    
+    var createOrder: js.UndefOr[js.Function0[js.Promise[String]]] = js.undefined
+    
+    var fundingSource: js.UndefOr[String] = js.undefined
+    
+    def onApprove(data: AuthorizationData, actions: js.Object): js.Promise[AuthorizationResponse]
+    
+    var onCancel: js.UndefOr[js.Function2[/* data */ CancellationData, /* actions */ js.Object, Unit]] = js.undefined
+    
+    var onError: js.UndefOr[js.Function1[/* error */ String, Unit]] = js.undefined
+  }
+  object CreateBillingAgreement {
+    
+    inline def apply(onApprove: (AuthorizationData, js.Object) => js.Promise[AuthorizationResponse]): CreateBillingAgreement = {
+      val __obj = js.Dynamic.literal(onApprove = js.Any.fromFunction2(onApprove))
+      __obj.asInstanceOf[CreateBillingAgreement]
+    }
+    
+    extension [Self <: CreateBillingAgreement](x: Self) {
+      
+      inline def setCreateBillingAgreement(value: () => js.Promise[String]): Self = StObject.set(x, "createBillingAgreement", js.Any.fromFunction0(value))
+      
+      inline def setCreateBillingAgreementUndefined: Self = StObject.set(x, "createBillingAgreement", js.undefined)
+      
+      inline def setCreateOrder(value: () => js.Promise[String]): Self = StObject.set(x, "createOrder", js.Any.fromFunction0(value))
+      
+      inline def setCreateOrderUndefined: Self = StObject.set(x, "createOrder", js.undefined)
+      
+      inline def setFundingSource(value: String): Self = StObject.set(x, "fundingSource", value.asInstanceOf[js.Any])
+      
+      inline def setFundingSourceUndefined: Self = StObject.set(x, "fundingSource", js.undefined)
+      
+      inline def setOnApprove(value: (AuthorizationData, js.Object) => js.Promise[AuthorizationResponse]): Self = StObject.set(x, "onApprove", js.Any.fromFunction2(value))
+      
+      inline def setOnCancel(value: (/* data */ CancellationData, /* actions */ js.Object) => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction2(value))
+      
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      
+      inline def setOnError(value: /* error */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     }
   }
 }

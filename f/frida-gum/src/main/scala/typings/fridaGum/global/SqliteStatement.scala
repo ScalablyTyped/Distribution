@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SqliteStatement")
 @js.native
-class SqliteStatement ()
+open class SqliteStatement ()
   extends StObject
      with typings.fridaGum.SqliteStatement

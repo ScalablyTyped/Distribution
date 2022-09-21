@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.DataSource")
 @js.native
-class DataSource ()
+open class DataSource ()
   extends StObject
      with typings.kendoUi.kendo.data.DataSource {
   def this(options: DataSourceOptions) = this()

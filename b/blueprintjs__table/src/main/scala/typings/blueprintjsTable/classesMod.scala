@@ -54,6 +54,10 @@ object classesMod {
   @js.native
   val TABLE_CELL_LEDGER_ODD: String = js.native
   
+  @JSImport("@blueprintjs/table/lib/esm/common/classes", "TABLE_CELL_TEXT_PLACEHOLDER")
+  @js.native
+  val TABLE_CELL_TEXT_PLACEHOLDER: String = js.native
+  
   @JSImport("@blueprintjs/table/lib/esm/common/classes", "TABLE_COLUMN_HEADERS")
   @js.native
   val TABLE_COLUMN_HEADERS: String = js.native

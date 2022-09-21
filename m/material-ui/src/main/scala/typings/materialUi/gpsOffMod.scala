@@ -10,10 +10,10 @@ object gpsOffMod {
   
   @JSImport("material-ui/svg-icons/device/gps-off", JSImport.Default)
   @js.native
-  class default () extends DeviceGpsOff
+  open class default () extends DeviceGpsOff
   
   @JSImport("material-ui/svg-icons/device/gps-off", "DeviceGpsOff")
   @js.native
-  class DeviceGpsOff ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceGpsOff ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

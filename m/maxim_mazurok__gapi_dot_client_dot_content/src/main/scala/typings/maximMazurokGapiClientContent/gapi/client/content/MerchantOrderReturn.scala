@@ -56,7 +56,7 @@ object MerchantOrderReturn {
     
     inline def setReturnItemsUndefined: Self = StObject.set(x, "returnItems", js.undefined)
     
-    inline def setReturnItemsVarargs(value: MerchantOrderReturnItem*): Self = StObject.set(x, "returnItems", js.Array(value :_*))
+    inline def setReturnItemsVarargs(value: MerchantOrderReturnItem*): Self = StObject.set(x, "returnItems", js.Array(value*))
     
     inline def setReturnPricingInfo(value: ReturnPricingInfo): Self = StObject.set(x, "returnPricingInfo", value.asInstanceOf[js.Any])
     
@@ -66,6 +66,6 @@ object MerchantOrderReturn {
     
     inline def setReturnShipmentsUndefined: Self = StObject.set(x, "returnShipments", js.undefined)
     
-    inline def setReturnShipmentsVarargs(value: ReturnShipment*): Self = StObject.set(x, "returnShipments", js.Array(value :_*))
+    inline def setReturnShipmentsVarargs(value: ReturnShipment*): Self = StObject.set(x, "returnShipments", js.Array(value*))
   }
 }

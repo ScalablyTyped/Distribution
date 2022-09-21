@@ -37,7 +37,7 @@ trait IpPermission extends StObject {
   var ToPort: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The security group and AWS account ID pairs.
+    * The security group and Amazon Web Services account ID pairs.
     */
   var UserIdGroupPairs: js.UndefOr[UserIdGroupPairList] = js.undefined
 }
@@ -62,19 +62,19 @@ object IpPermission {
     
     inline def setIpRangesUndefined: Self = StObject.set(x, "IpRanges", js.undefined)
     
-    inline def setIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "IpRanges", js.Array(value :_*))
+    inline def setIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "IpRanges", js.Array(value*))
     
     inline def setIpv6Ranges(value: Ipv6RangeList): Self = StObject.set(x, "Ipv6Ranges", value.asInstanceOf[js.Any])
     
     inline def setIpv6RangesUndefined: Self = StObject.set(x, "Ipv6Ranges", js.undefined)
     
-    inline def setIpv6RangesVarargs(value: Ipv6Range*): Self = StObject.set(x, "Ipv6Ranges", js.Array(value :_*))
+    inline def setIpv6RangesVarargs(value: Ipv6Range*): Self = StObject.set(x, "Ipv6Ranges", js.Array(value*))
     
     inline def setPrefixListIds(value: PrefixListIdList): Self = StObject.set(x, "PrefixListIds", value.asInstanceOf[js.Any])
     
     inline def setPrefixListIdsUndefined: Self = StObject.set(x, "PrefixListIds", js.undefined)
     
-    inline def setPrefixListIdsVarargs(value: PrefixListId*): Self = StObject.set(x, "PrefixListIds", js.Array(value :_*))
+    inline def setPrefixListIdsVarargs(value: PrefixListId*): Self = StObject.set(x, "PrefixListIds", js.Array(value*))
     
     inline def setToPort(value: Integer): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
     
@@ -84,6 +84,6 @@ object IpPermission {
     
     inline def setUserIdGroupPairsUndefined: Self = StObject.set(x, "UserIdGroupPairs", js.undefined)
     
-    inline def setUserIdGroupPairsVarargs(value: UserIdGroupPair*): Self = StObject.set(x, "UserIdGroupPairs", js.Array(value :_*))
+    inline def setUserIdGroupPairsVarargs(value: UserIdGroupPair*): Self = StObject.set(x, "UserIdGroupPairs", js.Array(value*))
   }
 }

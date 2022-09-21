@@ -1,37 +1,22 @@
 package typings.antdMobile
 
-import typings.antdMobile.anon.AntLocale
-import typings.antdMobile.anon.TimePickerPickerPrefixCls
-import typings.antdMobile.calendarPropsTypeMod.CalendarProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.Shortcut
+import typings.antdMobile.calendarCalendarMod.CalendarProps
+import typings.antdMobile.calendarCalendarMod.CalendarRef
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object calendarMod {
+object calendarMod extends Shortcut {
   
-  @JSImport("antd-mobile/lib/calendar", JSImport.Default)
+  @JSImport("antd-mobile/es/components/calendar", JSImport.Default)
   @js.native
-  class default () extends Calendar
-  /* static members */
-  object default {
-    
-    @JSImport("antd-mobile/lib/calendar", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("antd-mobile/lib/calendar", "default.contextTypes")
-    @js.native
-    def contextTypes: AntLocale = js.native
-    inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
-    
-    @JSImport("antd-mobile/lib/calendar", "default.defaultProps")
-    @js.native
-    def defaultProps: TimePickerPickerPrefixCls = js.native
-    inline def defaultProps_=(x: TimePickerPickerPrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  val default: ForwardRefExoticComponent[CalendarProps & RefAttributes[CalendarRef]] = js.native
   
-  @js.native
-  trait Calendar
-    extends Component[CalendarProps, js.Any, js.Any]
+  type _To = ForwardRefExoticComponent[CalendarProps & RefAttributes[CalendarRef]]
+  
+  /* This means you don't have to write `default`, but can instead just say `calendarMod.foo` */
+  override def _to: ForwardRefExoticComponent[CalendarProps & RefAttributes[CalendarRef]] = default
 }

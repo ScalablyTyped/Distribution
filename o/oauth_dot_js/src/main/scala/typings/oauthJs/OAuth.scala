@@ -75,7 +75,7 @@ object OAuth {
       
       inline def setParameters(value: ParameterListOrMap): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      inline def setParametersVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "parameters", js.Array(value*))
     }
   }
   

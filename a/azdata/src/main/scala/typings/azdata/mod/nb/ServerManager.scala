@@ -18,10 +18,10 @@ trait ServerManager extends StObject {
     * Event sent when the server has started. This can be used to query
     * the manager for server settings
     */
-  def onServerStarted(listener: js.Function1[/* e */ Unit, js.Any]): Disposable = js.native
-  def onServerStarted(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onServerStarted(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-  def onServerStarted(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onServerStarted(listener: js.Function1[/* e */ Unit, Any]): Disposable = js.native
+  def onServerStarted(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any): Disposable = js.native
+  def onServerStarted(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onServerStarted(listener: js.Function1[/* e */ Unit, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * Starts the server. Some server types may not support or require this.

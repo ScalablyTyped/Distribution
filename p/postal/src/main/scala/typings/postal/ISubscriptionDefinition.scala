@@ -17,7 +17,7 @@ trait ISubscriptionDefinition[T] extends StObject {
   
   def constraints(predicateFns: js.Array[js.Function2[/* data */ T, /* envelope */ IEnvelope[T], Boolean]]): ISubscriptionDefinition[T]
   
-  def context(theContext: js.Any): ISubscriptionDefinition[T]
+  def context(theContext: Any): ISubscriptionDefinition[T]
   
   def debounce(interval: Double): ISubscriptionDefinition[T]
   
@@ -50,7 +50,7 @@ object ISubscriptionDefinition {
     channel: String,
     constraint: js.Function2[/* data */ T, /* envelope */ IEnvelope[T], Boolean] => ISubscriptionDefinition[T],
     constraints: js.Array[js.Function2[/* data */ T, /* envelope */ IEnvelope[T], Boolean]] => ISubscriptionDefinition[T],
-    context: js.Any => ISubscriptionDefinition[T],
+    context: Any => ISubscriptionDefinition[T],
     debounce: Double => ISubscriptionDefinition[T],
     defer: () => ISubscriptionDefinition[T],
     delay: Double => ISubscriptionDefinition[T],
@@ -82,7 +82,7 @@ object ISubscriptionDefinition {
       value: js.Array[js.Function2[/* data */ T, /* envelope */ IEnvelope[T], Boolean]] => ISubscriptionDefinition[T]
     ): Self = StObject.set(x, "constraints", js.Any.fromFunction1(value))
     
-    inline def setContext(value: js.Any => ISubscriptionDefinition[T]): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
+    inline def setContext(value: Any => ISubscriptionDefinition[T]): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
     
     inline def setDebounce(value: Double => ISubscriptionDefinition[T]): Self = StObject.set(x, "debounce", js.Any.fromFunction1(value))
     

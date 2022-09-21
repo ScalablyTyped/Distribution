@@ -29,6 +29,6 @@ object StepExecutionFilter {
     
     inline def setValues(value: StepExecutionFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: StepExecutionFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: StepExecutionFilterValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

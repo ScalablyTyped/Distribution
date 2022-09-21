@@ -10,10 +10,10 @@ secure sessions stored in cookies
 | ------------------ | :-------------: |
 | Full name          | client-sessions |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 68 |
-| # downloads        | 1003716 |
-| # stars            | 21 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 75410.66666666667 |
+| # stars            | 744.0 |
 
 ## Links
 - [Homepage](https://github.com/mozilla/node-client-sessions#readme)

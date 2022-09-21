@@ -87,12 +87,7 @@ trait AnimationManipulation extends StObject {
     * http://js.cytoscape.org/#ani.promise
     */
   def promise(): js.Promise[EventObject] = js.native
-  @JSName("promise")
-  def promise_complete(animationEvent: complete): js.Promise[EventObject] = js.native
-  @JSName("promise")
-  def promise_completed(animationEvent: completed): js.Promise[EventObject] = js.native
-  @JSName("promise")
-  def promise_frame(animationEvent: frame): js.Promise[EventObject] = js.native
+  def promise(animationEvent: completed | complete | frame): js.Promise[EventObject] = js.native
   
   /**
     * Reverse the animation such that its starting

@@ -18,19 +18,19 @@ object mod {
   
   @JSImport("apollo-server-env", "Body")
   @js.native
-  class Body ()
+  open class Body ()
     extends typings.apolloServerEnv.fetchMod.Body
   
   @JSImport("apollo-server-env", "Headers")
   @js.native
-  class Headers ()
+  open class Headers ()
     extends typings.apolloServerEnv.fetchMod.Headers {
     def this(init: HeadersInit) = this()
   }
   
   @JSImport("apollo-server-env", "Request")
   @js.native
-  class Request protected ()
+  open class Request protected ()
     extends typings.apolloServerEnv.fetchMod.Request {
     def this(input: String) = this()
     def this(input: typings.apolloServerEnv.fetchMod.Request) = this()
@@ -40,7 +40,7 @@ object mod {
   
   @JSImport("apollo-server-env", "Response")
   @js.native
-  class Response ()
+  open class Response ()
     extends typings.apolloServerEnv.fetchMod.Response {
     def this(body: BodyInit) = this()
     def this(body: Unit, init: ResponseInit) = this()
@@ -61,7 +61,7 @@ object mod {
   
   @JSImport("apollo-server-env", "URL")
   @js.native
-  class URL protected ()
+  open class URL protected ()
     extends typings.apolloServerEnv.urlMod.URL {
     def this(input: String) = this()
     def this(input: String, base: String) = this()
@@ -70,13 +70,11 @@ object mod {
   
   @JSImport("apollo-server-env", "URLSearchParams")
   @js.native
-  class URLSearchParams ()
+  open class URLSearchParams ()
     extends typings.apolloServerEnv.urlMod.URLSearchParams {
     def this(init: URLSearchParamsInit) = this()
   }
   
-  inline def fetch(): js.Promise[typings.apolloServerEnv.fetchMod.Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")().asInstanceOf[js.Promise[typings.apolloServerEnv.fetchMod.Response]]
-  inline def fetch(input: Unit, init: RequestInit): js.Promise[typings.apolloServerEnv.fetchMod.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.apolloServerEnv.fetchMod.Response]]
   inline def fetch(input: RequestInfo): js.Promise[typings.apolloServerEnv.fetchMod.Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.apolloServerEnv.fetchMod.Response]]
   inline def fetch(input: RequestInfo, init: RequestInit): js.Promise[typings.apolloServerEnv.fetchMod.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.apolloServerEnv.fetchMod.Response]]
 }

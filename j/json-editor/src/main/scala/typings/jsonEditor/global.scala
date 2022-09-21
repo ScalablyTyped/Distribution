@@ -14,7 +14,7 @@ object global {
   
   @JSGlobal("JSONEditor")
   @js.native
-  class JSONEditor[TValue] protected ()
+  open class JSONEditor[TValue] protected ()
     extends StObject
        with typings.jsonEditor.JSONEditor[TValue] {
     def this(element: HTMLElement, options: JSONEditorOptions[TValue]) = this()
@@ -31,12 +31,12 @@ object global {
       @JSGlobal("JSONEditor.defaults.custom_validators")
       @js.native
       def customValidators: js.Array[
-            js.Function3[/* schema */ js.Any, /* value */ String, /* path */ String, js.Array[JSONEditorError]]
+            js.Function3[/* schema */ Any, /* value */ String, /* path */ String, js.Array[JSONEditorError]]
           ] = js.native
       
       inline def customValidators_=(
         x: js.Array[
-              js.Function3[/* schema */ js.Any, /* value */ String, /* path */ String, js.Array[JSONEditorError]]
+              js.Function3[/* schema */ Any, /* value */ String, /* path */ String, js.Array[JSONEditorError]]
             ]
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("custom_validators")(x.asInstanceOf[js.Any])
       
@@ -52,18 +52,18 @@ object global {
       
       @JSGlobal("JSONEditor.defaults.languages")
       @js.native
-      def languages: js.Any = js.native
-      inline def languages_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("languages")(x.asInstanceOf[js.Any])
+      def languages: Any = js.native
+      inline def languages_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("languages")(x.asInstanceOf[js.Any])
       
       @JSGlobal("JSONEditor.defaults.options")
       @js.native
-      def options: JSONEditorOptions[js.Any] = js.native
-      inline def options_=(x: JSONEditorOptions[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
+      def options: JSONEditorOptions[Any] = js.native
+      inline def options_=(x: JSONEditorOptions[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
       
       @JSGlobal("JSONEditor.defaults.resolvers")
       @js.native
-      def resolvers: js.Array[js.Function1[/* schema */ js.Any, String]] = js.native
-      inline def resolvers_=(x: js.Array[js.Function1[/* schema */ js.Any, String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resolvers")(x.asInstanceOf[js.Any])
+      def resolvers: js.Array[js.Function1[/* schema */ Any, String]] = js.native
+      inline def resolvers_=(x: js.Array[js.Function1[/* schema */ Any, String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resolvers")(x.asInstanceOf[js.Any])
     }
     
     /* static member */

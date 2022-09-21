@@ -27,7 +27,7 @@ object ListExecutionsOutput {
     
     inline def setExecutions(value: ExecutionList): Self = StObject.set(x, "executions", value.asInstanceOf[js.Any])
     
-    inline def setExecutionsVarargs(value: ExecutionListItem*): Self = StObject.set(x, "executions", js.Array(value :_*))
+    inline def setExecutionsVarargs(value: ExecutionListItem*): Self = StObject.set(x, "executions", js.Array(value*))
     
     inline def setNextToken(value: ListExecutionsPageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

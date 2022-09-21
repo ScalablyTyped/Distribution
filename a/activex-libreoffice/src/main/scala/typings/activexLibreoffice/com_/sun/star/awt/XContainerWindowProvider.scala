@@ -28,7 +28,7 @@ object XContainerWindowProvider {
   inline def apply(
     acquire: () => Unit,
     createContainerWindow: (String, String, XWindowPeer, XInterface) => XWindow,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XContainerWindowProvider = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createContainerWindow = js.Any.fromFunction4(createContainerWindow), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

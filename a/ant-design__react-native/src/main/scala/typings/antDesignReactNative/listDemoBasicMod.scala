@@ -9,7 +9,7 @@ object listDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/list/demo/basic", JSImport.Default)
   @js.native
-  class default () extends BasicListExample
+  open class default () extends BasicListExample
   
   @JSImport("@ant-design/react-native/lib/list/demo/basic", "description")
   @js.native
@@ -20,6 +20,5 @@ object listDemoBasicMod {
   val title: /* "List" */ String = js.native
   
   @js.native
-  trait BasicListExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait BasicListExample extends Component[Any, Any, Any]
 }

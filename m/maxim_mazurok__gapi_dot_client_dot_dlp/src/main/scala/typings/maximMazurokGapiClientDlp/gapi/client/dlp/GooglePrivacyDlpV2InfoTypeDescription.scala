@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GooglePrivacyDlpV2InfoTypeDescription extends StObject {
   
+  /** The category of the infoType. */
+  var categories: js.UndefOr[js.Array[GooglePrivacyDlpV2InfoTypeCategory]] = js.undefined
+  
   /** Description of the infotype. Translated when language is provided in the request. */
   var description: js.UndefOr[String] = js.undefined
   
@@ -17,6 +20,9 @@ trait GooglePrivacyDlpV2InfoTypeDescription extends StObject {
   
   /** Which parts of the API supports this InfoType. */
   var supportedBy: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /** A list of available versions for the infotype. */
+  var versions: js.UndefOr[js.Array[GooglePrivacyDlpV2VersionDescription]] = js.undefined
 }
 object GooglePrivacyDlpV2InfoTypeDescription {
   
@@ -26,6 +32,12 @@ object GooglePrivacyDlpV2InfoTypeDescription {
   }
   
   extension [Self <: GooglePrivacyDlpV2InfoTypeDescription](x: Self) {
+    
+    inline def setCategories(value: js.Array[GooglePrivacyDlpV2InfoTypeCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    
+    inline def setCategoriesVarargs(value: GooglePrivacyDlpV2InfoTypeCategory*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -43,6 +55,12 @@ object GooglePrivacyDlpV2InfoTypeDescription {
     
     inline def setSupportedByUndefined: Self = StObject.set(x, "supportedBy", js.undefined)
     
-    inline def setSupportedByVarargs(value: String*): Self = StObject.set(x, "supportedBy", js.Array(value :_*))
+    inline def setSupportedByVarargs(value: String*): Self = StObject.set(x, "supportedBy", js.Array(value*))
+    
+    inline def setVersions(value: js.Array[GooglePrivacyDlpV2VersionDescription]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    
+    inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
+    
+    inline def setVersionsVarargs(value: GooglePrivacyDlpV2VersionDescription*): Self = StObject.set(x, "versions", js.Array(value*))
   }
 }

@@ -33,6 +33,6 @@ object ListRobotsResponse {
     
     inline def setRobotsUndefined: Self = StObject.set(x, "robots", js.undefined)
     
-    inline def setRobotsVarargs(value: Robot*): Self = StObject.set(x, "robots", js.Array(value :_*))
+    inline def setRobotsVarargs(value: Robot*): Self = StObject.set(x, "robots", js.Array(value*))
   }
 }

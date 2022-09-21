@@ -11,7 +11,7 @@ object ojexpressionutilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createGenericExpressionEvaluator(expressionText: String): js.Function1[/* context */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createGenericExpressionEvaluator")(expressionText.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* context */ js.Any, js.Any]]
+  inline def createGenericExpressionEvaluator(expressionText: String): js.Function1[/* context */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createGenericExpressionEvaluator")(expressionText.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* context */ Any, Any]]
   
   inline def getExpressionInfo(expression: String): DownstreamOnly = ^.asInstanceOf[js.Dynamic].applyDynamic("getExpressionInfo")(expression.asInstanceOf[js.Any]).asInstanceOf[DownstreamOnly]
 }

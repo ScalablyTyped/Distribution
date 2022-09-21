@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JQueryStatic extends StObject {
   
-  def pgwModal(action: String): js.Any
+  def pgwModal(action: String): Any
   def pgwModal(option: PgwModalOption): Boolean
   @JSName("pgwModal")
   var pgwModal_Original: PgwModalMethod
   @JSName("pgwModal")
   def pgwModal_close(action: close): Boolean
   @JSName("pgwModal")
-  def pgwModal_getData(action: getData): js.Any
+  def pgwModal_getData(action: getData): Any
   @JSName("pgwModal")
   def pgwModal_isOpen(action: isOpen): Boolean
   @JSName("pgwModal")

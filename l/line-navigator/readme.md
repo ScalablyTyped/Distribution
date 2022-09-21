@@ -10,10 +10,10 @@ Reads, searches and navigates HTML5/Node.JS text files of any size in the browse
 | ------------------ | :-------------: |
 | Full name          | line-navigator |
 | Keywords           | frontend, file, search, browser, html5, line, random access, node |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 9066 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1561.3333333333333 |
+| # stars            | 84.0 |
 
 ## Links
 - [Homepage](https://github.com/anpur/client-line-navigator)

@@ -255,7 +255,7 @@ object ym {
     
     var defer: js.UndefOr[Boolean] = js.undefined
     
-    var ecommerce: js.UndefOr[Boolean | String | js.Array[js.Any]] = js.undefined
+    var ecommerce: js.UndefOr[Boolean | String | js.Array[Any]] = js.undefined
     
     var params: js.UndefOr[VisitParameters | js.Array[VisitParameters]] = js.undefined
     
@@ -300,17 +300,17 @@ object ym {
       
       inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
       
-      inline def setEcommerce(value: Boolean | String | js.Array[js.Any]): Self = StObject.set(x, "ecommerce", value.asInstanceOf[js.Any])
+      inline def setEcommerce(value: Boolean | String | js.Array[Any]): Self = StObject.set(x, "ecommerce", value.asInstanceOf[js.Any])
       
       inline def setEcommerceUndefined: Self = StObject.set(x, "ecommerce", js.undefined)
       
-      inline def setEcommerceVarargs(value: js.Any*): Self = StObject.set(x, "ecommerce", js.Array(value :_*))
+      inline def setEcommerceVarargs(value: Any*): Self = StObject.set(x, "ecommerce", js.Array(value*))
       
       inline def setParams(value: VisitParameters | js.Array[VisitParameters]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setParamsVarargs(value: VisitParameters*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: VisitParameters*): Self = StObject.set(x, "params", js.Array(value*))
       
       inline def setTrackHash(value: Boolean): Self = StObject.set(x, "trackHash", value.asInstanceOf[js.Any])
       
@@ -328,7 +328,7 @@ object ym {
       
       inline def setTrustedDomainsUndefined: Self = StObject.set(x, "trustedDomains", js.undefined)
       
-      inline def setTrustedDomainsVarargs(value: String*): Self = StObject.set(x, "trustedDomains", js.Array(value :_*))
+      inline def setTrustedDomainsVarargs(value: String*): Self = StObject.set(x, "trustedDomains", js.Array(value*))
       
       inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -375,7 +375,7 @@ object ym {
   
   trait UserParameters
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var UserID: js.UndefOr[Double] = js.undefined
   }
@@ -396,7 +396,7 @@ object ym {
   
   trait VisitParameters
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var currency: js.UndefOr[String] = js.undefined
     

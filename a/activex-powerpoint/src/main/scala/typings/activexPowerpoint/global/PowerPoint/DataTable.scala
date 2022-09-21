@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.DataTable")
 @js.native
-/* private */ class DataTable ()
+/* private */ open class DataTable ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.DataTable {
   
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
   /* CompleteClass */
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: Any = js.native
   
   /* CompleteClass */
   override val Border: typings.activexPowerpoint.PowerPoint.ChartBorder = js.native
@@ -41,7 +41,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var HasBorderVertical: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.DataTable_typekey")

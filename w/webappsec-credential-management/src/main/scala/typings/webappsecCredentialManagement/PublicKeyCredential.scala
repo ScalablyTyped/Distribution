@@ -1,6 +1,5 @@
 package typings.webappsecCredentialManagement
 
-import typings.std.ArrayBuffer
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.`public-key`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +13,7 @@ trait PublicKeyCredential
      with Credential
      with CredentialType {
   
-  val rawId: ArrayBuffer
+  val rawId: js.typedarray.ArrayBuffer
   
   val response: AuthenticatorResponse
   
@@ -23,7 +22,7 @@ trait PublicKeyCredential
 }
 object PublicKeyCredential {
   
-  inline def apply(id: String, rawId: ArrayBuffer, response: AuthenticatorResponse): PublicKeyCredential = {
+  inline def apply(id: String, rawId: js.typedarray.ArrayBuffer, response: AuthenticatorResponse): PublicKeyCredential = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], rawId = rawId.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("public-key")
     __obj.asInstanceOf[PublicKeyCredential]
@@ -31,7 +30,7 @@ object PublicKeyCredential {
   
   extension [Self <: PublicKeyCredential](x: Self) {
     
-    inline def setRawId(value: ArrayBuffer): Self = StObject.set(x, "rawId", value.asInstanceOf[js.Any])
+    inline def setRawId(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "rawId", value.asInstanceOf[js.Any])
     
     inline def setResponse(value: AuthenticatorResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,7 @@ object ListLunaClientsResponse {
     
     inline def setClientList(value: ClientList): Self = StObject.set(x, "ClientList", value.asInstanceOf[js.Any])
     
-    inline def setClientListVarargs(value: ClientArn*): Self = StObject.set(x, "ClientList", js.Array(value :_*))
+    inline def setClientListVarargs(value: ClientArn*): Self = StObject.set(x, "ClientList", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

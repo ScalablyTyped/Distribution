@@ -1,23 +1,62 @@
 package typings.typedoc
 
-import typings.typedoc.contextMod.Context
-import typings.typedoc.modelsMod.ReferenceReflection
-import typings.typedoc.modelsMod.ReferenceType
-import typings.typescript.mod.Symbol
+import typings.typedoc.abstractMod.Reflection
+import typings.typedoc.declarationMod.DeclarationReflection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object referenceMod {
   
-  @JSImport("typedoc/dist/lib/converter/factories/reference", JSImport.Namespace)
+  @JSImport("typedoc/dist/lib/models/reflections/reference", "ReferenceReflection")
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def createReferenceReflection(context: Context, source: Symbol, target: Symbol): js.UndefOr[ReferenceReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceReflection")(context.asInstanceOf[js.Any], source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReferenceReflection]]
-  
-  inline def createReferenceType(context: Context): js.UndefOr[ReferenceType] = ^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReferenceType]]
-  inline def createReferenceType(context: Context, symbol: Unit, includeParent: Boolean): js.UndefOr[ReferenceType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], includeParent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReferenceType]]
-  inline def createReferenceType(context: Context, symbol: Symbol): js.UndefOr[ReferenceType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReferenceType]]
-  inline def createReferenceType(context: Context, symbol: Symbol, includeParent: Boolean): js.UndefOr[ReferenceType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReferenceType")(context.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any], includeParent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReferenceType]]
+  open class ReferenceReflection protected () extends DeclarationReflection {
+    /**
+      * Creates a reference reflection. Should only be used within the factory function.
+      * @param name
+      * @param state
+      * @param parent
+      *
+      * @internal
+      */
+    def this(
+      name: String,
+      state: /* import warning: importer.ImportType#apply Failed type conversion: typedoc.typedoc/dist/lib/models/reflections/reference.ReferenceReflection['_target'] */ js.Any
+    ) = this()
+    def this(
+      name: String,
+      state: /* import warning: importer.ImportType#apply Failed type conversion: typedoc.typedoc/dist/lib/models/reflections/reference.ReferenceReflection['_target'] */ js.Any,
+      parent: Reflection
+    ) = this()
+    
+    /* private */ var _ensureProject: Any = js.native
+    
+    /* private */ var _project: Any = js.native
+    
+    /* private */ var _target: Any = js.native
+    
+    /**
+      * Gets the reflection that is referenced. This may be another reference reflection.
+      * To fully resolve any references, use {@link getTargetReflectionDeep}.
+      */
+    def getTargetReflection(): Reflection = js.native
+    
+    /**
+      * Gets the reflection that is referenced, this will fully resolve references.
+      * To only resolve one reference, use {@link getTargetReflection}.
+      */
+    def getTargetReflectionDeep(): Reflection = js.native
+    
+    /**
+      * Tries to get the reflection that is referenced. This may be another reference reflection.
+      * To fully resolve any references, use {@link tryGetTargetReflectionDeep}.
+      */
+    def tryGetTargetReflection(): js.UndefOr[Reflection] = js.native
+    
+    /**
+      * Tries to get the reflection that is referenced, this will fully resolve references.
+      * To only resolve one reference, use {@link tryGetTargetReflection}.
+      */
+    def tryGetTargetReflectionDeep(): js.UndefOr[Reflection] = js.native
+  }
 }

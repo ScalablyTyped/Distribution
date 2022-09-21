@@ -1,16 +1,14 @@
 package typings.rdfjsFetchLite
 
-import typings.rdfJs.mod.BaseQuad
-import typings.rdfJs.mod.DatasetCore
-import typings.rdfJs.mod.DatasetCoreFactory
-import typings.rdfJs.mod.Quad
-import typings.rdfJs.mod.Stream
 import typings.rdfjsFetchLite.anon.FnCall
-import typings.rdfjsFetchLite.anon.PickparsersSinkMapEventEm
-import typings.std.ArrayBuffer
+import typings.rdfjsFetchLite.anon.Typeofformats
+import typings.rdfjsTypes.dataModelMod.BaseQuad
+import typings.rdfjsTypes.dataModelMod.Quad
+import typings.rdfjsTypes.datasetMod.DatasetCore
+import typings.rdfjsTypes.datasetMod.DatasetCoreFactory
+import typings.rdfjsTypes.streamMod.Stream
 import typings.std.Blob
 import typings.std.FormData
-import typings.std.Headers
 import typings.std.RequestInit
 import typings.std.Response
 import typings.std.ResponseType
@@ -20,12 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(url: String, options: FormatsInit): js.Promise[RdfFetchResponse[Quad]] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RdfFetchResponse[Quad]]]
-  inline def apply[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */](url: String, options: FactoryInit[D, OutQuad, InQuad]): js.Promise[DatasetResponse[D, OutQuad, InQuad]] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DatasetResponse[D, OutQuad, InQuad]]]
-  
   @JSImport("@rdfjs/fetch-lite", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(url: String, options: FormatsInit): js.Promise[RdfFetchResponse[Quad]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RdfFetchResponse[Quad]]]
+  inline def default[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */](url: String, options: FactoryInit[D, OutQuad, InQuad]): js.Promise[DatasetResponse[D, OutQuad, InQuad]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DatasetResponse[D, OutQuad, InQuad]]]
+  
+  @JSImport("@rdfjs/fetch-lite", "Headers")
+  @js.native
+  val Headers: typings.std.Headers = js.native
   
   trait DatasetResponse[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */]
     extends StObject
@@ -36,24 +38,23 @@ object mod {
   object DatasetResponse {
     
     inline def apply[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */](
-      arrayBuffer: () => js.Promise[ArrayBuffer],
+      arrayBuffer: () => js.Promise[js.typedarray.ArrayBuffer],
       blob: () => js.Promise[Blob],
       bodyUsed: Boolean,
       dataset: () => js.Promise[D],
       formData: () => js.Promise[FormData],
-      headers: Headers,
-      json: () => js.Promise[js.Any],
+      headers: typings.std.Headers,
+      json: () => js.Promise[Any],
       ok: Boolean,
       quadStream: () => js.Promise[Stream[OutQuad]],
       redirected: Boolean,
       status: Double,
       statusText: String,
       text: () => js.Promise[String],
-      trailer: js.Promise[Headers],
       `type`: ResponseType,
       url: String
     ): DatasetResponse[D, OutQuad, InQuad] = {
-      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], dataset = js.Any.fromFunction0(dataset), formData = js.Any.fromFunction0(formData), headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], quadStream = js.Any.fromFunction0(quadStream), redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), trailer = trailer.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], body = null)
+      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], dataset = js.Any.fromFunction0(dataset), formData = js.Any.fromFunction0(formData), headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], quadStream = js.Any.fromFunction0(quadStream), redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), url = url.asInstanceOf[js.Any], body = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DatasetResponse[D, OutQuad, InQuad]]
     }
@@ -72,7 +73,7 @@ object mod {
   }
   object FactoryInit {
     
-    inline def apply[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */](factory: DatasetCoreFactory[OutQuad, InQuad, D], formats: PickparsersSinkMapEventEm): FactoryInit[D, OutQuad, InQuad] = {
+    inline def apply[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */](factory: DatasetCoreFactory[OutQuad, InQuad, D], formats: Typeofformats): FactoryInit[D, OutQuad, InQuad] = {
       val __obj = js.Dynamic.literal(factory = factory.asInstanceOf[js.Any], formats = formats.asInstanceOf[js.Any])
       __obj.asInstanceOf[FactoryInit[D, OutQuad, InQuad]]
     }
@@ -89,11 +90,11 @@ object mod {
     
     var fetch: js.UndefOr[FnCall] = js.undefined
     
-    var formats: PickparsersSinkMapEventEm
+    var formats: Typeofformats
   }
   object FormatsInit {
     
-    inline def apply(formats: PickparsersSinkMapEventEm): FormatsInit = {
+    inline def apply(formats: Typeofformats): FormatsInit = {
       val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormatsInit]
     }
@@ -104,7 +105,7 @@ object mod {
       
       inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      inline def setFormats(value: PickparsersSinkMapEventEm): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: Typeofformats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,23 +118,22 @@ object mod {
   object RdfFetchResponse {
     
     inline def apply[Q /* <: BaseQuad */](
-      arrayBuffer: () => js.Promise[ArrayBuffer],
+      arrayBuffer: () => js.Promise[js.typedarray.ArrayBuffer],
       blob: () => js.Promise[Blob],
       bodyUsed: Boolean,
       formData: () => js.Promise[FormData],
-      headers: Headers,
-      json: () => js.Promise[js.Any],
+      headers: typings.std.Headers,
+      json: () => js.Promise[Any],
       ok: Boolean,
       quadStream: () => js.Promise[Stream[Q]],
       redirected: Boolean,
       status: Double,
       statusText: String,
       text: () => js.Promise[String],
-      trailer: js.Promise[Headers],
       `type`: ResponseType,
       url: String
     ): RdfFetchResponse[Q] = {
-      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], formData = js.Any.fromFunction0(formData), headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], quadStream = js.Any.fromFunction0(quadStream), redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), trailer = trailer.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], body = null)
+      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], formData = js.Any.fromFunction0(formData), headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], quadStream = js.Any.fromFunction0(quadStream), redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), url = url.asInstanceOf[js.Any], body = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RdfFetchResponse[Q]]
     }

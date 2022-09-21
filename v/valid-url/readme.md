@@ -11,9 +11,9 @@ URI validation functions
 | Full name          | valid-url |
 | Keywords           | url, validation, check, checker, pattern |
 | # releases         | 0 |
-| # dependents       | 660 |
-| # downloads        | 80705064 |
-| # stars            | 22 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3618307E7 |
+| # stars            | 200.0 |
 
 ## Links
 - [Homepage](https://github.com/ogt/valid-url#readme)

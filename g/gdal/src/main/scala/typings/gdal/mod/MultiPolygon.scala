@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gdal", "MultiPolygon")
 @js.native
-class MultiPolygon () extends GeometryCollection {
+open class MultiPolygon () extends GeometryCollection {
   
   def unionCascaded(): Geometry = js.native
 }

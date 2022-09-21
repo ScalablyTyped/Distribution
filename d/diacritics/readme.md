@@ -10,10 +10,10 @@ remove diacritics from strings
 | ------------------ | :-------------: |
 | Full name          | diacritics |
 | Keywords           | diacritics, remove, removal, search, string |
-| # releases         | 0 |
-| # dependents       | 164 |
-| # downloads        | 9236432 |
-| # stars            | 12 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1732044.0 |
+| # stars            | 241.0 |
 
 ## Links
 - [Homepage](https://github.com/andrewrk/node-diacritics#readme)

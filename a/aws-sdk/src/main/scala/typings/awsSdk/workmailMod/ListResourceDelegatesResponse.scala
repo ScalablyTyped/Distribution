@@ -29,7 +29,7 @@ object ListResourceDelegatesResponse {
     
     inline def setDelegatesUndefined: Self = StObject.set(x, "Delegates", js.undefined)
     
-    inline def setDelegatesVarargs(value: Delegate*): Self = StObject.set(x, "Delegates", js.Array(value :_*))
+    inline def setDelegatesVarargs(value: Delegate*): Self = StObject.set(x, "Delegates", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

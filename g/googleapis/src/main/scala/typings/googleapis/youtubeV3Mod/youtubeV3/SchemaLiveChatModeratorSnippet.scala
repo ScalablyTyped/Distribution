@@ -9,7 +9,7 @@ trait SchemaLiveChatModeratorSnippet extends StObject {
   /**
     * The ID of the live chat this moderator can act on.
     */
-  var liveChatId: js.UndefOr[String] = js.undefined
+  var liveChatId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Details about the moderator.
@@ -26,6 +26,8 @@ object SchemaLiveChatModeratorSnippet {
   extension [Self <: SchemaLiveChatModeratorSnippet](x: Self) {
     
     inline def setLiveChatId(value: String): Self = StObject.set(x, "liveChatId", value.asInstanceOf[js.Any])
+    
+    inline def setLiveChatIdNull: Self = StObject.set(x, "liveChatId", null)
     
     inline def setLiveChatIdUndefined: Self = StObject.set(x, "liveChatId", js.undefined)
     

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Scale[T] extends StObject {
   
-  def apply(x: js.Any): T = js.native
+  def apply(x: Any): T = js.native
   
-  def domain(): js.Array[js.Any] = js.native
-  def domain(values: js.Array[js.Any]): Scale[T] = js.native
+  def domain(): js.Array[Any] = js.native
+  def domain(values: js.Array[Any]): Scale[T] = js.native
   
   def range(): js.Array[T] = js.native
   def range(values: js.Array[T]): Scale[T] = js.native

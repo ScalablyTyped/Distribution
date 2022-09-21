@@ -23,7 +23,7 @@ object ReturnTypeProfileSnapshotResponse {
     
     inline def setParamsType(value: js.Array[ProfileSnapshotRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: ProfileSnapshotRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: ProfileSnapshotRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: ProfileSnapshotResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

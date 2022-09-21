@@ -85,7 +85,7 @@ object mod {
     inline def apply(
       changecase: (String, js.Function1[/* str */ String, String]) => String,
       chop: String => String,
-      contains: (js.Array[js.Any], js.Any, Double) => Boolean
+      contains: (js.Array[Any], Any, Double) => Boolean
     ): Utils_ = {
       val __obj = js.Dynamic.literal(changecase = js.Any.fromFunction2(changecase), chop = js.Any.fromFunction1(chop), contains = js.Any.fromFunction3(contains))
       __obj.asInstanceOf[Utils_]
@@ -97,7 +97,7 @@ object mod {
       
       inline def setChop(value: String => String): Self = StObject.set(x, "chop", js.Any.fromFunction1(value))
       
-      inline def setContains(value: (js.Array[js.Any], js.Any, Double) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction3(value))
+      inline def setContains(value: (js.Array[Any], Any, Double) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction3(value))
     }
   }
 }

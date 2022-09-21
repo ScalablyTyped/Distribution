@@ -1,174 +1,145 @@
 package typings.grpc.mod
 
+import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.grpc.anon.File
+import typings.grpc.anon.Serviceurl
+import typings.grpc.grpcStrings.json
+import typings.grpc.grpcStrings.proto
+import typings.grpc.mod.^
+import typings.node.bufferMod.global.Buffer
+import typings.std.Console
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def closeClient(clientObj: typings.grpc.mod.Client): scala.Unit = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("closeClient")(clientObj.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def closeClient(clientObj: Client): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeClient")(clientObj.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def getClientChannel(client: typings.grpc.mod.Client): typings.grpc.mod.Channel = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getClientChannel")(client.asInstanceOf[js.Any]).asInstanceOf[typings.grpc.mod.Channel]
+inline def getClientChannel(client: Client): Channel = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientChannel")(client.asInstanceOf[js.Any]).asInstanceOf[Channel]
 
-inline def load[T](filename: typings.grpc.mod.Filename): T = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def load[T](filename: typings.grpc.mod.Filename, format: scala.Unit, options: typings.grpc.mod.LoadOptions): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def load[T](filename: Filename): T = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def load[T](filename: Filename, format: proto | json): T = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def load[T](filename: Filename, format: proto | json, options: LoadOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def load[T](filename: Filename, format: Unit, options: LoadOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def loadObject[T](value: js.Object): T = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadObject")(value.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def loadObject[T](value: js.Object, options: typings.grpc.mod.LoadObjectOptions): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadObject")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def loadObject[T](value: js.Object): T = ^.asInstanceOf[js.Dynamic].applyDynamic("loadObject")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def loadObject[T](value: js.Object, options: LoadObjectOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("loadObject")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def loadPackageDefinition(packageDefinition: typings.grpc.mod.PackageDefinition): typings.grpc.mod.GrpcObject = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadPackageDefinition")(packageDefinition.asInstanceOf[js.Any]).asInstanceOf[typings.grpc.mod.GrpcObject]
+inline def loadPackageDefinition(packageDefinition: PackageDefinition): GrpcObject = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPackageDefinition")(packageDefinition.asInstanceOf[js.Any]).asInstanceOf[GrpcObject]
 
-inline def load_json[T](filename: typings.grpc.mod.Filename, format: typings.grpc.grpcStrings.json): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def load_json[T](
-  filename: typings.grpc.mod.Filename,
-  format: typings.grpc.grpcStrings.json,
-  options: typings.grpc.mod.LoadOptions
-): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def load_proto[T](filename: typings.grpc.mod.Filename, format: typings.grpc.grpcStrings.proto): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def load_proto[T](
-  filename: typings.grpc.mod.Filename,
-  format: typings.grpc.grpcStrings.proto,
-  options: typings.grpc.mod.LoadOptions
-): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def makeGenericClientConstructor(
-  methods: typings.grpc.mod.ServiceDefinition[js.Any],
-  serviceName: java.lang.String,
-  classOptions: typings.grpc.mod.GenericClientOptions
-): org.scalablytyped.runtime.Instantiable3[
-/* address */ java.lang.String, 
-/* credentials */ typings.grpc.mod.ChannelCredentials, 
+inline def makeGenericClientConstructor(methods: ServiceDefinition[Any], serviceName: String, classOptions: GenericClientOptions): Instantiable3[
+/* address */ String, 
+/* credentials */ ChannelCredentials, 
 /* options */ js.UndefOr[js.Object], 
-typings.grpc.mod.Client] = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeGenericClientConstructor")(methods.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any], classOptions.asInstanceOf[js.Any])).asInstanceOf[org.scalablytyped.runtime.Instantiable3[
-/* address */ java.lang.String, 
-/* credentials */ typings.grpc.mod.ChannelCredentials, 
+Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeGenericClientConstructor")(methods.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any], classOptions.asInstanceOf[js.Any])).asInstanceOf[Instantiable3[
+/* address */ String, 
+/* credentials */ ChannelCredentials, 
 /* options */ js.UndefOr[js.Object], 
-typings.grpc.mod.Client]]
+Client]]
 
-inline def setLogVerbosity(verbosity: typings.grpc.mod.logVerbosity): scala.Unit = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setLogVerbosity")(verbosity.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setLogVerbosity(verbosity: logVerbosity): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogVerbosity")(verbosity.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def setLogger(logger: typings.std.Console): scala.Unit = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setLogger(logger: Console): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def waitForClientReady(
-  client: typings.grpc.mod.Client,
-  deadline: typings.grpc.mod.Deadline,
-  callback: js.Function1[/* error */ typings.std.Error | scala.Null, scala.Unit]
-): scala.Unit = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("waitForClientReady")(client.asInstanceOf[js.Any], deadline.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def waitForClientReady(client: Client, deadline: Deadline, callback: js.Function1[/* error */ js.Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForClientReady")(client.asInstanceOf[js.Any], deadline.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 /**
   * Any client call type
   */
-type Call = typings.grpc.mod.ClientUnaryCall | typings.grpc.mod.ClientReadableStream[js.Any] | typings.grpc.mod.ClientWritableStream[js.Any] | (typings.grpc.mod.ClientDuplexStream[js.Any, js.Any])
+type Call = ClientUnaryCall | ClientReadableStream[Any] | ClientWritableStream[Any] | (ClientDuplexStream[Any, Any])
 
-type CancelRequester = js.Function1[/* next */ js.Function, scala.Unit]
+type CancelRequester = js.Function1[/* next */ js.Function, Unit]
 
-type CheckServerIdentityCallback = js.Function2[
-/* hostname */ java.lang.String, 
-/* cert */ typings.grpc.mod.Certificate, 
-js.UndefOr[typings.std.Error]]
+type CheckServerIdentityCallback = js.Function2[/* hostname */ String, /* cert */ Certificate, js.UndefOr[js.Error]]
 
-type CloseRequester = js.Function1[/* next */ js.Function, scala.Unit]
+type CloseRequester = js.Function1[/* next */ js.Function, Unit]
 
-type Deadline = scala.Double | typings.std.Date
+type Deadline = Double | js.Date
 
-type Filename = java.lang.String | typings.grpc.anon.File
+type Filename = String | File
 
-type GetPeerRequester = js.Function1[/* next */ js.Function, java.lang.String]
+type GetPeerRequester = js.Function1[/* next */ js.Function, String]
 
-type MessageListener = js.Function2[/* message */ js.Any, /* next */ js.Function, scala.Unit]
+type MessageListener = js.Function2[/* message */ Any, /* next */ js.Function, Unit]
 
-type MessageRequester = js.Function2[/* message */ js.Any, /* next */ js.Function, scala.Unit]
+type MessageRequester = js.Function2[/* message */ Any, /* next */ js.Function, Unit]
 
-type MetadataListener = js.Function2[/* metadata */ typings.grpc.mod.Metadata, /* next */ js.Function, scala.Unit]
+type MetadataListener = js.Function2[/* metadata */ Metadata, /* next */ js.Function, Unit]
 
-type MetadataRequester = js.Function3[
-/* metadata */ typings.grpc.mod.Metadata, 
-/* listener */ typings.grpc.mod.Listener, 
-/* next */ js.Function, 
-scala.Unit]
+type MetadataRequester = js.Function3[/* metadata */ Metadata, /* listener */ Listener, /* next */ js.Function, Unit]
 
-type MetadataValue = java.lang.String | typings.node.Buffer
+type MetadataValue = String | Buffer
 
-type PackageDefinition = org.scalablytyped.runtime.StringDictionary[
-typings.grpc.mod.ServiceDefinition[js.Any] | typings.grpc.mod.ProtobufTypeDefinition]
+type PackageDefinition = StringDictionary[ServiceDefinition[Any] | ProtobufTypeDefinition]
 
-type ServerWriteableStream[RequestType, ResponseType] = typings.grpc.mod.ServerWritableStream[RequestType, ResponseType]
+type ServerWriteableStream[RequestType, ResponseType] = ServerWritableStream[RequestType, ResponseType]
 
 type ServiceDefinition[ImplementationType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {readonly [ I in keyof ImplementationType ]: grpc.grpc.MethodDefinition<any, any>}
-  */ typings.grpc.grpcStrings.ServiceDefinition & org.scalablytyped.runtime.TopLevel[js.Any]
+  */ typings.grpc.grpcStrings.ServiceDefinition & TopLevel[Any]
 
-type StatusListener = js.Function2[/* status */ typings.grpc.mod.StatusObject, /* next */ js.Function, scala.Unit]
+type StatusListener = js.Function2[/* status */ StatusObject, /* next */ js.Function, Unit]
 
-type UntypedServiceImplementation = org.scalablytyped.runtime.StringDictionary[typings.grpc.mod.handleCall[js.Any, js.Any]]
+type UntypedServiceImplementation = StringDictionary[handleCall[Any, Any]]
 
 /**
   * A deserialization function
   * @param data The byte sequence to deserialize
   * @return The data deserialized as a value
   */
-type deserialize[T] = js.Function1[/* data */ typings.node.Buffer, T]
+type deserialize[T] = js.Function1[/* data */ Buffer, T]
 
 /**
   * User provided method to handle bidirectional streaming calls on the server.
   */
-type handleBidiStreamingCall[RequestType, ResponseType] = js.Function1[
-/* call */ typings.grpc.mod.ServerDuplexStream[RequestType, ResponseType], 
-scala.Unit]
+type handleBidiStreamingCall[RequestType, ResponseType] = js.Function1[/* call */ ServerDuplexStream[RequestType, ResponseType], Unit]
 
-type handleCall[RequestType, ResponseType] = (typings.grpc.mod.handleUnaryCall[RequestType, ResponseType]) | (typings.grpc.mod.handleClientStreamingCall[RequestType, ResponseType]) | (typings.grpc.mod.handleServerStreamingCall[RequestType, ResponseType]) | (typings.grpc.mod.handleBidiStreamingCall[RequestType, ResponseType])
+type handleCall[RequestType, ResponseType] = (handleUnaryCall[RequestType, ResponseType]) | (handleClientStreamingCall[RequestType, ResponseType]) | (handleServerStreamingCall[RequestType, ResponseType]) | (handleBidiStreamingCall[RequestType, ResponseType])
 
 /**
   * User provided method to handle client streaming methods on the server.
   */
 type handleClientStreamingCall[RequestType, ResponseType] = js.Function2[
-/* call */ typings.grpc.mod.ServerReadableStream[RequestType], 
-/* callback */ typings.grpc.mod.sendUnaryData[ResponseType], 
-scala.Unit]
+/* call */ ServerReadableStream[RequestType], 
+/* callback */ sendUnaryData[ResponseType], 
+Unit]
 
 /**
   * User provided method to handle server streaming methods on the server.
   */
-type handleServerStreamingCall[RequestType, ResponseType] = js.Function1[
-/* call */ typings.grpc.mod.ServerWritableStream[RequestType, ResponseType], 
-scala.Unit]
+type handleServerStreamingCall[RequestType, ResponseType] = js.Function1[/* call */ ServerWritableStream[RequestType, ResponseType], Unit]
 
 /**
   * User-provided method to handle unary requests on a server
   */
 type handleUnaryCall[RequestType, ResponseType] = js.Function2[
-/* call */ typings.grpc.mod.ServerUnaryCall[RequestType], 
-/* callback */ typings.grpc.mod.sendUnaryData[ResponseType], 
-scala.Unit]
+/* call */ ServerUnaryCall[RequestType], 
+/* callback */ sendUnaryData[ResponseType], 
+Unit]
 
 type metadataGenerator = js.Function2[
-/* params */ typings.grpc.anon.Serviceurl, 
-/* callback */ js.Function2[
-  /* error */ typings.std.Error | scala.Null, 
-  /* metadata */ js.UndefOr[typings.grpc.mod.Metadata], 
-  scala.Unit
-], 
-scala.Unit]
+/* params */ Serviceurl, 
+/* callback */ js.Function2[/* error */ js.Error | Null, /* metadata */ js.UndefOr[Metadata], Unit], 
+Unit]
 
-type requestCallback[ResponseType] = js.Function2[
-/* error */ typings.grpc.mod.ServiceError | scala.Null, 
-/* value */ js.UndefOr[ResponseType], 
-scala.Unit]
+type requestCallback[ResponseType] = js.Function2[/* error */ ServiceError | Null, /* value */ js.UndefOr[ResponseType], Unit]
 
 /**
   * Callback function passed to server handlers that handle methods with
   * unary responses.
   */
 type sendUnaryData[ResponseType] = js.Function4[
-/* error */ typings.grpc.mod.ServiceError | scala.Null, 
-/* value */ ResponseType | scala.Null, 
-/* trailer */ js.UndefOr[typings.grpc.mod.Metadata], 
-/* flags */ js.UndefOr[scala.Double], 
-scala.Unit]
+/* error */ ServiceError | Null, 
+/* value */ ResponseType | Null, 
+/* trailer */ js.UndefOr[Metadata], 
+/* flags */ js.UndefOr[Double], 
+Unit]
 
 /**
   * A serialization function
   * @param value The value to serialize
   * @return The value serialized as a byte sequence
   */
-type serialize[T] = js.Function1[/* value */ T, typings.node.Buffer]
+type serialize[T] = js.Function1[/* value */ T, Buffer]

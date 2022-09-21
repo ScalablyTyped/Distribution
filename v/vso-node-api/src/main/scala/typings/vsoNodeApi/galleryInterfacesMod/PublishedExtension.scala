@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,21 +20,21 @@ trait PublishedExtension extends StObject {
   
   var installationTargets: js.Array[InstallationTarget]
   
-  var lastUpdated: Date
+  var lastUpdated: js.Date
   
   var longDescription: String
   
   /**
     * Date on which the extension was first uploaded.
     */
-  var publishedDate: Date
+  var publishedDate: js.Date
   
   var publisher: PublisherFacts
   
   /**
     * Date on which the extension first went public.
     */
-  var releaseDate: Date
+  var releaseDate: js.Date
   
   var sharedWith: js.Array[ExtensionShare]
   
@@ -57,11 +56,11 @@ object PublishedExtension {
     extensionName: String,
     flags: PublishedExtensionFlags,
     installationTargets: js.Array[InstallationTarget],
-    lastUpdated: Date,
+    lastUpdated: js.Date,
     longDescription: String,
-    publishedDate: Date,
+    publishedDate: js.Date,
     publisher: PublisherFacts,
-    releaseDate: Date,
+    releaseDate: js.Date,
     sharedWith: js.Array[ExtensionShare],
     shortDescription: String,
     statistics: js.Array[ExtensionStatistic],
@@ -76,7 +75,7 @@ object PublishedExtension {
     
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setDeploymentType(value: ExtensionDeploymentTechnology): Self = StObject.set(x, "deploymentType", value.asInstanceOf[js.Any])
     
@@ -90,34 +89,34 @@ object PublishedExtension {
     
     inline def setInstallationTargets(value: js.Array[InstallationTarget]): Self = StObject.set(x, "installationTargets", value.asInstanceOf[js.Any])
     
-    inline def setInstallationTargetsVarargs(value: InstallationTarget*): Self = StObject.set(x, "installationTargets", js.Array(value :_*))
+    inline def setInstallationTargetsVarargs(value: InstallationTarget*): Self = StObject.set(x, "installationTargets", js.Array(value*))
     
-    inline def setLastUpdated(value: Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: js.Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
     inline def setLongDescription(value: String): Self = StObject.set(x, "longDescription", value.asInstanceOf[js.Any])
     
-    inline def setPublishedDate(value: Date): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
+    inline def setPublishedDate(value: js.Date): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
     
     inline def setPublisher(value: PublisherFacts): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
-    inline def setReleaseDate(value: Date): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
+    inline def setReleaseDate(value: js.Date): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
     
     inline def setSharedWith(value: js.Array[ExtensionShare]): Self = StObject.set(x, "sharedWith", value.asInstanceOf[js.Any])
     
-    inline def setSharedWithVarargs(value: ExtensionShare*): Self = StObject.set(x, "sharedWith", js.Array(value :_*))
+    inline def setSharedWithVarargs(value: ExtensionShare*): Self = StObject.set(x, "sharedWith", js.Array(value*))
     
     inline def setShortDescription(value: String): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
     
     inline def setStatistics(value: js.Array[ExtensionStatistic]): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    inline def setStatisticsVarargs(value: ExtensionStatistic*): Self = StObject.set(x, "statistics", js.Array(value :_*))
+    inline def setStatisticsVarargs(value: ExtensionStatistic*): Self = StObject.set(x, "statistics", js.Array(value*))
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setVersions(value: js.Array[ExtensionVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    inline def setVersionsVarargs(value: ExtensionVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: ExtensionVersion*): Self = StObject.set(x, "versions", js.Array(value*))
   }
 }

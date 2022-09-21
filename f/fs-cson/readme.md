@@ -10,10 +10,10 @@ Read and write CSON to the filesystem
 | ------------------ | :-------------: |
 | Full name          | fs-cson |
 | Keywords           | fs, cson |
-| # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 8732 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 363.6666666666667 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/charlierudolph/fs-cson#readme)

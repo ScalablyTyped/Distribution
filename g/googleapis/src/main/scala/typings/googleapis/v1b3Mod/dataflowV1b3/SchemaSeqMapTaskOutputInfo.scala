@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about an output of a SeqMapTask.
-  */
 trait SchemaSeqMapTaskOutputInfo extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaSeqMapTaskOutputInfo extends StObject {
   /**
     * The id of the TupleTag the user code will tag the output value by.
     */
-  var tag: js.UndefOr[String] = js.undefined
+  var tag: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSeqMapTaskOutputInfo {
   
@@ -33,6 +30,8 @@ object SchemaSeqMapTaskOutputInfo {
     inline def setSinkUndefined: Self = StObject.set(x, "sink", js.undefined)
     
     inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    inline def setTagNull: Self = StObject.set(x, "tag", null)
     
     inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }

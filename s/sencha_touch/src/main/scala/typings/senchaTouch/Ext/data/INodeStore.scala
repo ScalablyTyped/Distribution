@@ -14,7 +14,7 @@ trait INodeStore
   /** [Method] Returns the value of filters
     * @returns Object
     */
-  var getFilters: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getFilters: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of folderSort
     * @returns Boolean
@@ -39,13 +39,13 @@ trait INodeStore
   /** [Method] Returns the value of sorters
     * @returns Object
     */
-  var getSorters: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getSorters: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method]
     * @param node Object
     * @returns Boolean
     */
-  var isVisible: js.UndefOr[js.Function1[/* node */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var isVisible: js.UndefOr[js.Function1[/* node */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Config Option] (Ext.data.Model) */
   var node: js.UndefOr[IModel] = js.undefined
@@ -60,7 +60,7 @@ trait INodeStore
     * @param filters Object The new value.
     */
   @JSName("setFilters")
-  var setFilters_INodeStore: js.UndefOr[js.Function1[/* filters */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setFilters_INodeStore: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of folderSort
     * @param folderSort Boolean The new value.
@@ -86,7 +86,7 @@ trait INodeStore
     * @param sorters Object The new value.
     */
   @JSName("setSorters")
-  var setSorters_INodeStore: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setSorters_INodeStore: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object INodeStore {
   
@@ -101,7 +101,7 @@ object INodeStore {
     
     inline def setFolderSortUndefined: Self = StObject.set(x, "folderSort", js.undefined)
     
-    inline def setGetFilters(value: () => js.Any): Self = StObject.set(x, "getFilters", js.Any.fromFunction0(value))
+    inline def setGetFilters(value: () => Any): Self = StObject.set(x, "getFilters", js.Any.fromFunction0(value))
     
     inline def setGetFiltersUndefined: Self = StObject.set(x, "getFilters", js.undefined)
     
@@ -121,11 +121,11 @@ object INodeStore {
     
     inline def setGetRootVisibleUndefined: Self = StObject.set(x, "getRootVisible", js.undefined)
     
-    inline def setGetSorters(value: () => js.Any): Self = StObject.set(x, "getSorters", js.Any.fromFunction0(value))
+    inline def setGetSorters(value: () => Any): Self = StObject.set(x, "getSorters", js.Any.fromFunction0(value))
     
     inline def setGetSortersUndefined: Self = StObject.set(x, "getSorters", js.undefined)
     
-    inline def setIsVisible(value: /* node */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction1(value))
+    inline def setIsVisible(value: /* node */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction1(value))
     
     inline def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
     
@@ -141,7 +141,7 @@ object INodeStore {
     
     inline def setRootVisibleUndefined: Self = StObject.set(x, "rootVisible", js.undefined)
     
-    inline def setSetFilters(value: /* filters */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFilters", js.Any.fromFunction1(value))
+    inline def setSetFilters(value: /* filters */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setFilters", js.Any.fromFunction1(value))
     
     inline def setSetFiltersUndefined: Self = StObject.set(x, "setFilters", js.undefined)
     
@@ -161,7 +161,7 @@ object INodeStore {
     
     inline def setSetRootVisibleUndefined: Self = StObject.set(x, "setRootVisible", js.undefined)
     
-    inline def setSetSorters(value: /* sorters */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSorters", js.Any.fromFunction1(value))
+    inline def setSetSorters(value: /* sorters */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setSorters", js.Any.fromFunction1(value))
     
     inline def setSetSortersUndefined: Self = StObject.set(x, "setSorters", js.undefined)
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("ace-builds", "Range")
 @js.native
-class Range protected ()
+open class Range protected ()
   extends StObject
      with typings.aceBuilds.mod.Ace.Range {
   def this(startRow: Double, startColumn: Double, endRow: Double, endColumn: Double) = this()

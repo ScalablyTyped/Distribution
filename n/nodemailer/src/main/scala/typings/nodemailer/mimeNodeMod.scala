@@ -1,7 +1,7 @@
 package typings.nodemailer
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
 import typings.node.streamMod.Transform
@@ -9,7 +9,6 @@ import typings.nodemailer.anon.Value
 import typings.nodemailer.nodemailerBooleans.`false`
 import typings.nodemailer.nodemailerStrings.B
 import typings.nodemailer.nodemailerStrings.Q
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object mimeNodeMod {
     */
   @JSImport("nodemailer/lib/mime-node", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with MimeNode {
     def this(contentType: String) = this()
@@ -58,37 +57,37 @@ object mimeNodeMod {
       
       inline def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
       
-      inline def setBccVarargs(value: String*): Self = StObject.set(x, "bcc", js.Array(value :_*))
+      inline def setBccVarargs(value: String*): Self = StObject.set(x, "bcc", js.Array(value*))
       
       inline def setCc(value: js.Array[String]): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
       
       inline def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
       
-      inline def setCcVarargs(value: String*): Self = StObject.set(x, "cc", js.Array(value :_*))
+      inline def setCcVarargs(value: String*): Self = StObject.set(x, "cc", js.Array(value*))
       
       inline def setFrom(value: js.Array[String]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
       inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      inline def setFromVarargs(value: String*): Self = StObject.set(x, "from", js.Array(value :_*))
+      inline def setFromVarargs(value: String*): Self = StObject.set(x, "from", js.Array(value*))
       
       inline def `setReply-to`(value: js.Array[String]): Self = StObject.set(x, "reply-to", value.asInstanceOf[js.Any])
       
       inline def `setReply-toUndefined`: Self = StObject.set(x, "reply-to", js.undefined)
       
-      inline def `setReply-toVarargs`(value: String*): Self = StObject.set(x, "reply-to", js.Array(value :_*))
+      inline def `setReply-toVarargs`(value: String*): Self = StObject.set(x, "reply-to", js.Array(value*))
       
       inline def setSender(value: js.Array[String]): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
       
       inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
       
-      inline def setSenderVarargs(value: String*): Self = StObject.set(x, "sender", js.Array(value :_*))
+      inline def setSenderVarargs(value: String*): Self = StObject.set(x, "sender", js.Array(value*))
       
       inline def setTo(value: js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
       inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       
-      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value*))
     }
   }
   
@@ -113,7 +112,7 @@ object mimeNodeMod {
       
       inline def setTo(value: js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value*))
     }
   }
   
@@ -140,7 +139,7 @@ object mimeNodeMod {
     
     def build(): js.Promise[Buffer] = js.native
     /** Generate the message and return it with a callback or promise */
-    def build(callback: js.Function2[/* err */ Error | Null, /* buf */ Buffer, Unit]): Unit = js.native
+    def build(callback: js.Function2[/* err */ js.Error | Null, /* buf */ Buffer, Unit]): Unit = js.native
     
     /** Builds the header block for the mime node. Append \r\n\r\n before writing the content */
     def buildHeaders(): String = js.native
@@ -214,7 +213,7 @@ object mimeNodeMod {
     def stream(
       outputStream: Readable,
       options: ReadableOptions,
-      done: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+      done: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
     
     /**

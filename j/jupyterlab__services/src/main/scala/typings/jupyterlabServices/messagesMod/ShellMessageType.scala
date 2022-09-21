@@ -24,7 +24,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jupyterlabServices.jupyterlabServicesStrings.is_complete_request
   - typings.jupyterlabServices.jupyterlabServicesStrings.kernel_info_reply
   - typings.jupyterlabServices.jupyterlabServicesStrings.kernel_info_request
-  - typings.jupyterlabServices.jupyterlabServicesStrings.shutdown_reply
   - typings.jupyterlabServices.jupyterlabServicesStrings.shutdown_request
 */
 trait ShellMessageType extends StObject
@@ -67,8 +66,6 @@ object ShellMessageType {
   inline def kernel_info_reply: typings.jupyterlabServices.jupyterlabServicesStrings.kernel_info_reply = "kernel_info_reply".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.kernel_info_reply]
   
   inline def kernel_info_request: typings.jupyterlabServices.jupyterlabServicesStrings.kernel_info_request = "kernel_info_request".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.kernel_info_request]
-  
-  inline def shutdown_reply: typings.jupyterlabServices.jupyterlabServicesStrings.shutdown_reply = "shutdown_reply".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.shutdown_reply]
   
   inline def shutdown_request: typings.jupyterlabServices.jupyterlabServicesStrings.shutdown_request = "shutdown_request".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.shutdown_request]
 }

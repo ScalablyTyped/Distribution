@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("photonui.Canvas")
 @js.native
-class Canvas ()
+open class Canvas ()
   extends StObject
      with typings.photonui.photonui.Canvas {
   
@@ -33,7 +33,7 @@ class Canvas ()
   override def destroy(): Unit = js.native
   
   /* CompleteClass */
-  override def getContext(contextId: String): js.Any = js.native
+  override def getContext(contextId: String): Any = js.native
   
   /* CompleteClass */
   var height: Double = js.native
@@ -49,7 +49,7 @@ class Canvas ()
   
   // readonly
   /* CompleteClass */
-  var layoutOptions: StringDictionary[js.Any] = js.native
+  var layoutOptions: StringDictionary[Any] = js.native
   
   /* CompleteClass */
   var name: String = js.native
@@ -69,7 +69,7 @@ class Canvas ()
   var parentName: String = js.native
   
   /* CompleteClass */
-  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: js.Any): Unit = js.native
+  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: Any): Unit = js.native
   
   /* CompleteClass */
   override def removeCallback(id: String): Unit = js.native
@@ -87,11 +87,11 @@ class Canvas ()
   override def supportsContext(contextId: String): Boolean = js.native
   
   /* CompleteClass */
-  override def toBlod(imageFormat: String): js.Any = js.native
+  override def toBlod(imageFormat: String): Any = js.native
   
   // returns Blob
   /* CompleteClass */
-  override def toBlodHD(imageFormat: String): js.Any = js.native
+  override def toBlodHD(imageFormat: String): Any = js.native
   
   // returns Blob
   /* CompleteClass */

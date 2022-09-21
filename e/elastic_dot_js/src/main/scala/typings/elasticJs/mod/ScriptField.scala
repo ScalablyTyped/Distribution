@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "ScriptField")
 @js.native
-class ScriptField protected () extends StObject {
+open class ScriptField protected () extends StObject {
   /*
     Computes dynamic document properties based on information from other fields.
     */
@@ -43,5 +43,5 @@ class ScriptField protected () extends StObject {
     Retrieves the internal script object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

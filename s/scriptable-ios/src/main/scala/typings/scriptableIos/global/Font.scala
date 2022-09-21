@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // tslint:disable-next-line no-unnecessary-class
 @JSGlobal("Font")
 @js.native
-class Font protected ()
+open class Font protected ()
   extends StObject
      with typings.scriptableIos.Font {
   /**

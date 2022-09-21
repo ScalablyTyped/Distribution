@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateStreamingURLRequest extends StObject {
   
   /**
-    * The name of the application to launch after the session starts. This is the name that you specified as Name in the Image Assistant.
+    * The name of the application to launch after the session starts. This is the name that you specified as Name in the Image Assistant. If your fleet is enabled for the Desktop stream view, you can also choose to launch directly to the operating system desktop. To do so, specify Desktop.
     */
   var ApplicationId: js.UndefOr[String] = js.undefined
   

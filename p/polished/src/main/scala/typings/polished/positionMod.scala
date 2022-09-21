@@ -11,7 +11,7 @@ object positionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(firstValue: String, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(firstValue.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
-  inline def default(firstValue: Double, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(firstValue.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
-  inline def default(firstValue: Null, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(firstValue.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def default(firstValue: String, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(firstValue.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
+  inline def default(firstValue: Double, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(firstValue.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
+  inline def default(firstValue: Null, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(firstValue.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
 }

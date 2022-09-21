@@ -11,12 +11,12 @@ A navigation scripting & testing utility for PhantomJS and SlimerJS
 | Full name          | casperjs |
 | Keywords           | phantomjs, slimerjs, test, testing, scraping |
 | # releases         | 1 |
-| # dependents       | 91 |
-| # downloads        | 516402 |
-| # stars            | 39 |
+| # dependents       | 0.0 |
+| # downloads        | 42155.666666666664 |
+| # stars            | 7271.0 |
 
 ## Links
-- [Homepage](http://casperjs.org)
+- [Homepage](https://github.com/casperjs/casperjs#readme)
 - [Bugs](https://github.com/casperjs/casperjs/issues)
 - [Repository](https://github.com/casperjs/casperjs)
 - [Npm](https://www.npmjs.com/package/casperjs)

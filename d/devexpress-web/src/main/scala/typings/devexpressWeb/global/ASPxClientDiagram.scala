@@ -4,6 +4,7 @@ import typings.devexpressWeb.ASPxClientBeginCallbackEventHandler
 import typings.devexpressWeb.ASPxClientCallbackErrorEventHandler
 import typings.devexpressWeb.ASPxClientDiagramCustomShapeCreateTemplateEventHandler
 import typings.devexpressWeb.ASPxClientDiagramItemClickEventHandler
+import typings.devexpressWeb.ASPxClientDiagramRequestEditOperationEventHandler
 import typings.devexpressWeb.ASPxClientDiagramSelectionChangedEventHandler
 import typings.devexpressWeb.ASPxClientEndCallbackEventHandler
 import typings.devexpressWeb.ASPxClientEventHandler
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDiagram")
 @js.native
-class ASPxClientDiagram ()
+open class ASPxClientDiagram ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDiagram {
   
@@ -53,6 +54,14 @@ class ASPxClientDiagram ()
   ] = js.native
   
   /**
+    * Allows you to create a template for custom shapes in the toolbox.
+    */
+  /* CompleteClass */
+  var CustomShapeCreateToolboxTemplate: typings.devexpressWeb.ASPxClientEvent[
+    ASPxClientDiagramCustomShapeCreateTemplateEventHandler[typings.devexpressWeb.ASPxClientDiagram]
+  ] = js.native
+  
+  /**
     * Fires when the diagram's data is changed.
     */
   /* CompleteClass */
@@ -65,7 +74,7 @@ class ASPxClientDiagram ()
   var EndCallback: typings.devexpressWeb.ASPxClientEvent[ASPxClientEndCallbackEventHandler[typings.devexpressWeb.ASPxClientDiagram]] = js.native
   
   /**
-    * Fires after a diagram model's data change is applied to the server and server and client document models have been synchronized.
+    * Fires after a diagram model's data change is applied to the server (the server and client document models have been synchronized).
     */
   /* CompleteClass */
   var EndSynchronization: typings.devexpressWeb.ASPxClientEvent[ASPxClientEventHandler[typings.devexpressWeb.ASPxClientDiagram]] = js.native
@@ -84,6 +93,12 @@ class ASPxClientDiagram ()
   /* CompleteClass */
   override def ExportTo(format: String, callback: js.Function1[/* arg */ String, Unit]): Unit = js.native
   
+  /**
+    * Focuses the Diagram control.
+    */
+  /* CompleteClass */
+  override def Focus(): Unit = js.native
+  
   /** @deprecated Use the GetVisible method instead. */
   /**
     * Returns a value specifying whether a control is displayed.
@@ -98,16 +113,36 @@ class ASPxClientDiagram ()
   override def GetHeight(): Double = js.native
   
   /**
+    * Returns a shape or connector object specified by its internal identifier. The DiagramShape or DiagramConnector object with the specified identifier.
+    * @param id The item identifier.
+    */
+  /* CompleteClass */
+  override def GetItemById(id: String): typings.devexpressWeb.DiagramItem = js.native
+  
+  /**
+    * Returns a shape or connector object specified by its key. The DiagramShape or DiagramConnector object with the specified key.
+    * @param key The item key.
+    */
+  /* CompleteClass */
+  override def GetItemByKey(key: Any): typings.devexpressWeb.DiagramItem = js.native
+  
+  /**
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
+  
+  /**
+    * Returns a value that indicates whether the control's status is read-only.
+    */
+  /* CompleteClass */
+  override def GetReadOnly(): Boolean = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -151,6 +186,14 @@ class ASPxClientDiagram ()
     */
   /* CompleteClass */
   var ItemDblClick: typings.devexpressWeb.ASPxClientEvent[ASPxClientDiagramItemClickEventHandler[typings.devexpressWeb.ASPxClientDiagram]] = js.native
+  
+  /**
+    * Allows you to prohibit an edit operation at run time.
+    */
+  /* CompleteClass */
+  var RequestEditOperation: typings.devexpressWeb.ASPxClientEvent[
+    ASPxClientDiagramRequestEditOperationEventHandler[typings.devexpressWeb.ASPxClientDiagram]
+  ] = js.native
   
   /**
     * Fires after the selection changes in the Diagram.

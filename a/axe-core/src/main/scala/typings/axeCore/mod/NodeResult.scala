@@ -44,17 +44,17 @@ object NodeResult {
     
     inline def setAll(value: js.Array[CheckResult]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    inline def setAllVarargs(value: CheckResult*): Self = StObject.set(x, "all", js.Array(value :_*))
+    inline def setAllVarargs(value: CheckResult*): Self = StObject.set(x, "all", js.Array(value*))
     
     inline def setAncestry(value: js.Array[String]): Self = StObject.set(x, "ancestry", value.asInstanceOf[js.Any])
     
     inline def setAncestryUndefined: Self = StObject.set(x, "ancestry", js.undefined)
     
-    inline def setAncestryVarargs(value: String*): Self = StObject.set(x, "ancestry", js.Array(value :_*))
+    inline def setAncestryVarargs(value: String*): Self = StObject.set(x, "ancestry", js.Array(value*))
     
     inline def setAny(value: js.Array[CheckResult]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     
-    inline def setAnyVarargs(value: CheckResult*): Self = StObject.set(x, "any", js.Array(value :_*))
+    inline def setAnyVarargs(value: CheckResult*): Self = StObject.set(x, "any", js.Array(value*))
     
     inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
@@ -74,16 +74,16 @@ object NodeResult {
     
     inline def setNone(value: js.Array[CheckResult]): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    inline def setNoneVarargs(value: CheckResult*): Self = StObject.set(x, "none", js.Array(value :_*))
+    inline def setNoneVarargs(value: CheckResult*): Self = StObject.set(x, "none", js.Array(value*))
     
     inline def setTarget(value: js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value*))
     
     inline def setXpath(value: js.Array[String]): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
     
     inline def setXpathUndefined: Self = StObject.set(x, "xpath", js.undefined)
     
-    inline def setXpathVarargs(value: String*): Self = StObject.set(x, "xpath", js.Array(value :_*))
+    inline def setXpathVarargs(value: String*): Self = StObject.set(x, "xpath", js.Array(value*))
   }
 }

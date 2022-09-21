@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "has-emoji" : "1.1.0"
+      "has-emoji" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "has-emoji" : "1.1.0"
+      "has-emoji" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

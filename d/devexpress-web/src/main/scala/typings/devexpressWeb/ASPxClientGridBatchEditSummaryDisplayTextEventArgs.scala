@@ -39,7 +39,7 @@ trait ASPxClientGridBatchEditSummaryDisplayTextEventArgs
   /**
     * Gets the element that contains the summary item.
     */
-  var summaryElement: js.Any
+  var summaryElement: Any
   
   /**
     * Gets the summary item's field name.
@@ -69,7 +69,7 @@ object ASPxClientGridBatchEditSummaryDisplayTextEventArgs {
     isGroupSummary: Boolean,
     isTotalSummary: Boolean,
     serverValue: Double,
-    summaryElement: js.Any,
+    summaryElement: Any,
     summaryFieldName: String,
     summaryItemIndex: Double,
     summaryType: ASPxClientSummaryItemType,
@@ -91,7 +91,7 @@ object ASPxClientGridBatchEditSummaryDisplayTextEventArgs {
     
     inline def setServerValue(value: Double): Self = StObject.set(x, "serverValue", value.asInstanceOf[js.Any])
     
-    inline def setSummaryElement(value: js.Any): Self = StObject.set(x, "summaryElement", value.asInstanceOf[js.Any])
+    inline def setSummaryElement(value: Any): Self = StObject.set(x, "summaryElement", value.asInstanceOf[js.Any])
     
     inline def setSummaryFieldName(value: String): Self = StObject.set(x, "summaryFieldName", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,7 @@ object WindowOpenEvent {
     
     inline def setWindowFeatures(value: js.Array[String]): Self = StObject.set(x, "windowFeatures", value.asInstanceOf[js.Any])
     
-    inline def setWindowFeaturesVarargs(value: String*): Self = StObject.set(x, "windowFeatures", js.Array(value :_*))
+    inline def setWindowFeaturesVarargs(value: String*): Self = StObject.set(x, "windowFeatures", js.Array(value*))
     
     inline def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
   }

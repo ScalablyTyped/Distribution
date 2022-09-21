@@ -32,7 +32,7 @@ object GetReportsRequest {
     
     inline def setReportRequestsUndefined: Self = StObject.set(x, "reportRequests", js.undefined)
     
-    inline def setReportRequestsVarargs(value: ReportRequest*): Self = StObject.set(x, "reportRequests", js.Array(value :_*))
+    inline def setReportRequestsVarargs(value: ReportRequest*): Self = StObject.set(x, "reportRequests", js.Array(value*))
     
     inline def setUseResourceQuotas(value: Boolean): Self = StObject.set(x, "useResourceQuotas", value.asInstanceOf[js.Any])
     

@@ -20,9 +20,18 @@ trait DaylightViewModelProperties extends StObject {
   /**
     * Starts or pauses the daytime animation cycling through the minutes of the day.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#dayPlaying)
     */
   var dayPlaying: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates whether to show shadows cast by the sun.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#directShadowsEnabled)
+    */
+  var directShadowsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The calendar date in the timezone given by [utcOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset).
@@ -34,9 +43,18 @@ trait DaylightViewModelProperties extends StObject {
   /**
     * Controls the daytime and date animation speed.
     *
+    * @default 1.0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#playSpeedMultiplier)
     */
   var playSpeedMultiplier: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Indicates whether date and time are used to determine position of the light source.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#sunLightingEnabled)
+    */
+  var sunLightingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Slider position for the time of day in the timezone given by [utcOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset).
@@ -62,6 +80,8 @@ trait DaylightViewModelProperties extends StObject {
   /**
     * Starts or pauses the date animation cycling through the months of the year.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#yearPlaying)
     */
   var yearPlaying: js.UndefOr[Boolean] = js.undefined
@@ -83,6 +103,10 @@ object DaylightViewModelProperties {
     
     inline def setDayPlayingUndefined: Self = StObject.set(x, "dayPlaying", js.undefined)
     
+    inline def setDirectShadowsEnabled(value: Boolean): Self = StObject.set(x, "directShadowsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setDirectShadowsEnabledUndefined: Self = StObject.set(x, "directShadowsEnabled", js.undefined)
+    
     inline def setLocalDate(value: DateProperties): Self = StObject.set(x, "localDate", value.asInstanceOf[js.Any])
     
     inline def setLocalDateUndefined: Self = StObject.set(x, "localDate", js.undefined)
@@ -90,6 +114,10 @@ object DaylightViewModelProperties {
     inline def setPlaySpeedMultiplier(value: Double): Self = StObject.set(x, "playSpeedMultiplier", value.asInstanceOf[js.Any])
     
     inline def setPlaySpeedMultiplierUndefined: Self = StObject.set(x, "playSpeedMultiplier", js.undefined)
+    
+    inline def setSunLightingEnabled(value: Boolean): Self = StObject.set(x, "sunLightingEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setSunLightingEnabledUndefined: Self = StObject.set(x, "sunLightingEnabled", js.undefined)
     
     inline def setTimeSliderPosition(value: Double): Self = StObject.set(x, "timeSliderPosition", value.asInstanceOf[js.Any])
     

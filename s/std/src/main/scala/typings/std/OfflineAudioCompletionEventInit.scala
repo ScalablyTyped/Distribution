@@ -8,6 +8,7 @@ trait OfflineAudioCompletionEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var renderedBuffer: AudioBuffer
 }
 object OfflineAudioCompletionEventInit {

@@ -47,7 +47,7 @@ object Account {
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setThrottleSettings(value: ThrottleSettings): Self = StObject.set(x, "throttleSettings", value.asInstanceOf[js.Any])
     

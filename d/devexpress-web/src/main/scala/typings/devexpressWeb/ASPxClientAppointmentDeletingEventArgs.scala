@@ -27,6 +27,6 @@ object ASPxClientAppointmentDeletingEventArgs {
     
     inline def setAppointmentIds(value: js.Array[String]): Self = StObject.set(x, "appointmentIds", value.asInstanceOf[js.Any])
     
-    inline def setAppointmentIdsVarargs(value: String*): Self = StObject.set(x, "appointmentIds", js.Array(value :_*))
+    inline def setAppointmentIdsVarargs(value: String*): Self = StObject.set(x, "appointmentIds", js.Array(value*))
   }
 }

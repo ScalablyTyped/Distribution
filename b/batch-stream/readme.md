@@ -10,10 +10,10 @@ Transform a stream into batches
 | ------------------ | :-------------: |
 | Full name          | batch-stream |
 | Keywords           | batch, stream, chunks, chunked |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 154009 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 60388.333333333336 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/segmentio/batch-stream#readme)

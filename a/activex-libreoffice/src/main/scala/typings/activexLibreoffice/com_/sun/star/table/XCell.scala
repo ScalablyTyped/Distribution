@@ -94,7 +94,7 @@ object XCell {
     getFormula: () => String,
     getType: () => CellContentType,
     getValue: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setFormula: String => Unit,
     setValue: Double => Unit

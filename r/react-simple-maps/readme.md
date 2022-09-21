@@ -11,9 +11,9 @@ An svg map chart component built with and for React
 | Full name          | react-simple-maps |
 | Keywords           | react, maps, charts, worldmap, usa, d3-geo |
 | # releases         | 8 |
-| # dependents       | 15 |
-| # downloads        | 980415 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 415018.6666666667 |
+| # stars            | 2482.0 |
 
 ## Links
 - [Homepage](https://github.com/zcreativelabs/react-simple-maps#readme)

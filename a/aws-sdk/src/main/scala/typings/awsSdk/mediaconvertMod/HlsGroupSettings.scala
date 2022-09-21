@@ -37,7 +37,12 @@ trait HlsGroupSettings extends StObject {
   var CaptionLanguageSetting: js.UndefOr[HlsCaptionLanguageSetting] = js.undefined
   
   /**
-    * When set to ENABLED, sets #EXT-X-ALLOW-CACHE:no tag, which prevents client from saving media segments for later replay.
+    * Set Caption segment length control (CaptionSegmentLengthControl) to Match video (MATCH_VIDEO) to create caption segments that align with the video segments from the first video output in this output group. For example, if the video segments are 2 seconds long, your WebVTT segments will also be 2 seconds long. Keep the default setting, Large segments (LARGE_SEGMENTS) to create caption segments that are 300 seconds long.
+    */
+  var CaptionSegmentLengthControl: js.UndefOr[HlsCaptionSegmentLengthControl] = js.undefined
+  
+  /**
+    * Disable this setting only when your workflow requires the #EXT-X-ALLOW-CACHE:no tag. Otherwise, keep the default value Enabled (ENABLED) and control caching in your video distribution set up. For example, use the Cache-Control http header.
     */
   var ClientCache: js.UndefOr[HlsClientCache] = js.undefined
   
@@ -65,6 +70,16 @@ trait HlsGroupSettings extends StObject {
     * DRM settings.
     */
   var Encryption: js.UndefOr[HlsEncryptionSettings] = js.undefined
+  
+  /**
+    * Specify whether MediaConvert generates images for trick play. Keep the default value, None (NONE), to not generate any images. Choose Thumbnail (THUMBNAIL) to generate tiled thumbnails. Choose Thumbnail and full frame (THUMBNAIL_AND_FULLFRAME) to generate tiled thumbnails and full-resolution images of single frames. MediaConvert creates a child manifest for each set of images that you generate and adds corresponding entries to the parent manifest. A common application for these images is Roku trick mode. The thumbnails and full-frame images that MediaConvert creates with this feature are compatible with this Roku specification: https://developer.roku.com/docs/developer-program/media-playback/trick-mode/hls-and-dash.md
+    */
+  var ImageBasedTrickPlay: js.UndefOr[HlsImageBasedTrickPlay] = js.undefined
+  
+  /**
+    * Tile and thumbnail settings applicable when imageBasedTrickPlay is ADVANCED
+    */
+  var ImageBasedTrickPlaySettings: js.UndefOr[HlsImageBasedTrickPlaySettings] = js.undefined
   
   /**
     * When set to GZIP, compresses HLS playlist.
@@ -107,9 +122,14 @@ trait HlsGroupSettings extends StObject {
   var SegmentControl: js.UndefOr[HlsSegmentControl] = js.undefined
   
   /**
-    * Length of MPEG-2 Transport Stream segments to create (in seconds). Note that segments will end on the next keyframe after this number of seconds, so actual segment length may be longer.
+    * Specify the length, in whole seconds, of each segment. When you don't specify a value, MediaConvert defaults to 10. Related settings: Use Segment length control (SegmentLengthControl) to specify whether the encoder enforces this value strictly. Use Segment control (HlsSegmentControl) to specify whether MediaConvert creates separate segment files or one content file that has metadata to mark the segment boundaries.
     */
   var SegmentLength: js.UndefOr[integerMin1Max2147483647] = js.undefined
+  
+  /**
+    * Specify how you want MediaConvert to determine the segment length. Choose Exact (EXACT) to have the encoder use the exact length that you specify with the setting Segment length (SegmentLength). This might result in extra I-frames. Choose Multiple of GOP (GOP_MULTIPLE) to have the encoder round up the segment lengths to match the next GOP boundary.
+    */
+  var SegmentLengthControl: js.UndefOr[HlsSegmentLengthControl] = js.undefined
   
   /**
     * Number of segments to write to a subdirectory before starting a new one. directoryStructure must be SINGLE_DIRECTORY for this setting to have an effect.
@@ -122,12 +142,17 @@ trait HlsGroupSettings extends StObject {
   var StreamInfResolution: js.UndefOr[HlsStreamInfResolution] = js.undefined
   
   /**
-    * Indicates ID3 frame that has the timecode.
+    * When set to LEGACY, the segment target duration is always rounded up to the nearest integer value above its current value in seconds. When set to SPEC\\_COMPLIANT, the segment target duration is rounded up to the nearest integer value if fraction seconds are greater than or equal to 0.5 (>= 0.5) and rounded down if less than 0.5 (< 0.5). You may need to use LEGACY if your client needs to ensure that the target duration is always longer than the actual duration of the segment. Some older players may experience interrupted playback when the actual duration of a track in a segment is longer than the target duration.
+    */
+  var TargetDurationCompatibilityMode: js.UndefOr[HlsTargetDurationCompatibilityMode] = js.undefined
+  
+  /**
+    * Specify the type of the ID3 frame (timedMetadataId3Frame) to use for ID3 timestamps (timedMetadataId3Period) in your output. To include ID3 timestamps: Specify PRIV (PRIV) or TDRL (TDRL) and set ID3 metadata (timedMetadata) to Passthrough (PASSTHROUGH). To exclude ID3 timestamps: Set ID3 timestamp frame type to None (NONE).
     */
   var TimedMetadataId3Frame: js.UndefOr[HlsTimedMetadataId3Frame] = js.undefined
   
   /**
-    * Timed Metadata interval in seconds.
+    * Specify the interval in seconds to write ID3 timestamps in your output. The first timestamp starts at the output timecode and date, and increases incrementally with each ID3 timestamp. To use the default interval of 10 seconds: Leave blank. To include this metadata in your output: Set ID3 timestamp frame type (timedMetadataId3Frame) to PRIV (PRIV) or TDRL (TDRL), and set ID3 metadata (timedMetadata) to Passthrough (PASSTHROUGH).
     */
   var TimedMetadataId3Period: js.UndefOr[integerMinNegative2147483648Max2147483647] = js.undefined
   
@@ -149,13 +174,13 @@ object HlsGroupSettings {
     
     inline def setAdMarkersUndefined: Self = StObject.set(x, "AdMarkers", js.undefined)
     
-    inline def setAdMarkersVarargs(value: HlsAdMarkers*): Self = StObject.set(x, "AdMarkers", js.Array(value :_*))
+    inline def setAdMarkersVarargs(value: HlsAdMarkers*): Self = StObject.set(x, "AdMarkers", js.Array(value*))
     
     inline def setAdditionalManifests(value: listOfHlsAdditionalManifest): Self = StObject.set(x, "AdditionalManifests", value.asInstanceOf[js.Any])
     
     inline def setAdditionalManifestsUndefined: Self = StObject.set(x, "AdditionalManifests", js.undefined)
     
-    inline def setAdditionalManifestsVarargs(value: HlsAdditionalManifest*): Self = StObject.set(x, "AdditionalManifests", js.Array(value :_*))
+    inline def setAdditionalManifestsVarargs(value: HlsAdditionalManifest*): Self = StObject.set(x, "AdditionalManifests", js.Array(value*))
     
     inline def setAudioOnlyHeader(value: HlsAudioOnlyHeader): Self = StObject.set(x, "AudioOnlyHeader", value.asInstanceOf[js.Any])
     
@@ -169,11 +194,15 @@ object HlsGroupSettings {
     
     inline def setCaptionLanguageMappingsUndefined: Self = StObject.set(x, "CaptionLanguageMappings", js.undefined)
     
-    inline def setCaptionLanguageMappingsVarargs(value: HlsCaptionLanguageMapping*): Self = StObject.set(x, "CaptionLanguageMappings", js.Array(value :_*))
+    inline def setCaptionLanguageMappingsVarargs(value: HlsCaptionLanguageMapping*): Self = StObject.set(x, "CaptionLanguageMappings", js.Array(value*))
     
     inline def setCaptionLanguageSetting(value: HlsCaptionLanguageSetting): Self = StObject.set(x, "CaptionLanguageSetting", value.asInstanceOf[js.Any])
     
     inline def setCaptionLanguageSettingUndefined: Self = StObject.set(x, "CaptionLanguageSetting", js.undefined)
+    
+    inline def setCaptionSegmentLengthControl(value: HlsCaptionSegmentLengthControl): Self = StObject.set(x, "CaptionSegmentLengthControl", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionSegmentLengthControlUndefined: Self = StObject.set(x, "CaptionSegmentLengthControl", js.undefined)
     
     inline def setClientCache(value: HlsClientCache): Self = StObject.set(x, "ClientCache", value.asInstanceOf[js.Any])
     
@@ -198,6 +227,14 @@ object HlsGroupSettings {
     inline def setEncryption(value: HlsEncryptionSettings): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    
+    inline def setImageBasedTrickPlay(value: HlsImageBasedTrickPlay): Self = StObject.set(x, "ImageBasedTrickPlay", value.asInstanceOf[js.Any])
+    
+    inline def setImageBasedTrickPlaySettings(value: HlsImageBasedTrickPlaySettings): Self = StObject.set(x, "ImageBasedTrickPlaySettings", value.asInstanceOf[js.Any])
+    
+    inline def setImageBasedTrickPlaySettingsUndefined: Self = StObject.set(x, "ImageBasedTrickPlaySettings", js.undefined)
+    
+    inline def setImageBasedTrickPlayUndefined: Self = StObject.set(x, "ImageBasedTrickPlay", js.undefined)
     
     inline def setManifestCompression(value: HlsManifestCompression): Self = StObject.set(x, "ManifestCompression", value.asInstanceOf[js.Any])
     
@@ -233,6 +270,10 @@ object HlsGroupSettings {
     
     inline def setSegmentLength(value: integerMin1Max2147483647): Self = StObject.set(x, "SegmentLength", value.asInstanceOf[js.Any])
     
+    inline def setSegmentLengthControl(value: HlsSegmentLengthControl): Self = StObject.set(x, "SegmentLengthControl", value.asInstanceOf[js.Any])
+    
+    inline def setSegmentLengthControlUndefined: Self = StObject.set(x, "SegmentLengthControl", js.undefined)
+    
     inline def setSegmentLengthUndefined: Self = StObject.set(x, "SegmentLength", js.undefined)
     
     inline def setSegmentsPerSubdirectory(value: integerMin1Max2147483647): Self = StObject.set(x, "SegmentsPerSubdirectory", value.asInstanceOf[js.Any])
@@ -242,6 +283,10 @@ object HlsGroupSettings {
     inline def setStreamInfResolution(value: HlsStreamInfResolution): Self = StObject.set(x, "StreamInfResolution", value.asInstanceOf[js.Any])
     
     inline def setStreamInfResolutionUndefined: Self = StObject.set(x, "StreamInfResolution", js.undefined)
+    
+    inline def setTargetDurationCompatibilityMode(value: HlsTargetDurationCompatibilityMode): Self = StObject.set(x, "TargetDurationCompatibilityMode", value.asInstanceOf[js.Any])
+    
+    inline def setTargetDurationCompatibilityModeUndefined: Self = StObject.set(x, "TargetDurationCompatibilityMode", js.undefined)
     
     inline def setTimedMetadataId3Frame(value: HlsTimedMetadataId3Frame): Self = StObject.set(x, "TimedMetadataId3Frame", value.asInstanceOf[js.Any])
     

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-calc" : "8.2.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-calc" : "8.2.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

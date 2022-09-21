@@ -39,13 +39,13 @@ object DescribeProductOutput {
     
     inline def setBudgetsUndefined: Self = StObject.set(x, "Budgets", js.undefined)
     
-    inline def setBudgetsVarargs(value: BudgetDetail*): Self = StObject.set(x, "Budgets", js.Array(value :_*))
+    inline def setBudgetsVarargs(value: BudgetDetail*): Self = StObject.set(x, "Budgets", js.Array(value*))
     
     inline def setLaunchPaths(value: LaunchPaths): Self = StObject.set(x, "LaunchPaths", value.asInstanceOf[js.Any])
     
     inline def setLaunchPathsUndefined: Self = StObject.set(x, "LaunchPaths", js.undefined)
     
-    inline def setLaunchPathsVarargs(value: LaunchPath*): Self = StObject.set(x, "LaunchPaths", js.Array(value :_*))
+    inline def setLaunchPathsVarargs(value: LaunchPath*): Self = StObject.set(x, "LaunchPaths", js.Array(value*))
     
     inline def setProductViewSummary(value: ProductViewSummary): Self = StObject.set(x, "ProductViewSummary", value.asInstanceOf[js.Any])
     
@@ -55,6 +55,6 @@ object DescribeProductOutput {
     
     inline def setProvisioningArtifactsUndefined: Self = StObject.set(x, "ProvisioningArtifacts", js.undefined)
     
-    inline def setProvisioningArtifactsVarargs(value: ProvisioningArtifact*): Self = StObject.set(x, "ProvisioningArtifacts", js.Array(value :_*))
+    inline def setProvisioningArtifactsVarargs(value: ProvisioningArtifact*): Self = StObject.set(x, "ProvisioningArtifacts", js.Array(value*))
   }
 }

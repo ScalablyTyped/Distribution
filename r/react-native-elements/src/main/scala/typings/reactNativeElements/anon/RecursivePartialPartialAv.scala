@@ -1,5 +1,6 @@
 package typings.reactNativeElements.anon
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ReactElement
@@ -8,20 +9,36 @@ import typings.reactNative.mod.ImageStyle
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.mod.AvatarIcon
-import typings.reactNativeElements.mod.RecursivePartial
+import typings.reactNativeElements.avatarMod.AvatarIcon
+import typings.reactNativeElements.imageMod.ImageProps
+import typings.reactNativeElements.reactNativeElementsStrings.Component
 import typings.reactNativeElements.reactNativeElementsStrings.large
 import typings.reactNativeElements.reactNativeElementsStrings.medium
 import typings.reactNativeElements.reactNativeElementsStrings.small
 import typings.reactNativeElements.reactNativeElementsStrings.xlarge
+import typings.reactNativeElements.themeProviderMod.RecursivePartial
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.AvatarProps>> */
+/* Inlined react-native-elements.react-native-elements/dist/config/ThemeProvider.RecursivePartial<std.Partial<react-native-elements.react-native-elements/dist/avatar/Avatar.AvatarProps>> */
 trait RecursivePartialPartialAv extends StObject {
   
-  var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.undefined
+  var Component: js.UndefOr[
+    RecursivePartial[
+      js.UndefOr[
+        TypeofComponent & (Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+          typings.react.mod.Component[
+            typings.reactNativeElements.reactNativeElementsStrings.Component, 
+            js.Object, 
+            js.Object
+          ]
+        ])
+      ]
+    ]
+  ] = js.undefined
   
   var ImageComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.undefined
   
@@ -35,13 +52,13 @@ trait RecursivePartialPartialAv extends StObject {
   
   var iconStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var imageProps: js.UndefOr[RecursivePartial[js.UndefOr[PartialImageProps]]] = js.undefined
+  var imageProps: js.UndefOr[RecursivePartial[js.UndefOr[Partial[ImageProps]]]] = js.undefined
   
   var onLongPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
   var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var overlayContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
+  var overlayContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
   var placeholderStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
@@ -74,7 +91,16 @@ object RecursivePartialPartialAv {
     
     inline def setAvatarStyleUndefined: Self = StObject.set(x, "avatarStyle", js.undefined)
     
-    inline def setComponent(value: RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(
+      value: RecursivePartial[
+          js.UndefOr[
+            TypeofComponent & (Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+              typings.react.mod.Component[Component, js.Object, js.Object]
+            ])
+          ]
+        ]
+    ): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
@@ -94,7 +120,7 @@ object RecursivePartialPartialAv {
     
     inline def setImageComponentUndefined: Self = StObject.set(x, "ImageComponent", js.undefined)
     
-    inline def setImageProps(value: RecursivePartial[js.UndefOr[PartialImageProps]]): Self = StObject.set(x, "imageProps", value.asInstanceOf[js.Any])
+    inline def setImageProps(value: RecursivePartial[js.UndefOr[Partial[ImageProps]]]): Self = StObject.set(x, "imageProps", value.asInstanceOf[js.Any])
     
     inline def setImagePropsUndefined: Self = StObject.set(x, "imageProps", js.undefined)
     
@@ -106,7 +132,7 @@ object RecursivePartialPartialAv {
     
     inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    inline def setOverlayContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "overlayContainerStyle", value.asInstanceOf[js.Any])
+    inline def setOverlayContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = StObject.set(x, "overlayContainerStyle", value.asInstanceOf[js.Any])
     
     inline def setOverlayContainerStyleUndefined: Self = StObject.set(x, "overlayContainerStyle", js.undefined)
     

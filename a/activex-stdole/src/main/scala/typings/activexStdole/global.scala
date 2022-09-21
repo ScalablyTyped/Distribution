@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("stdole.StdFont")
     @js.native
-    /* private */ class StdFont ()
+    /* private */ open class StdFont ()
       extends StObject
          with typings.activexStdole.stdole.StdFont {
       
@@ -45,7 +45,7 @@ object global {
     
     @JSGlobal("stdole.StdPicture")
     @js.native
-    /* private */ class StdPicture ()
+    /* private */ open class StdPicture ()
       extends StObject
          with typings.activexStdole.stdole.StdPicture {
       

@@ -11,7 +11,7 @@ trait IgMap
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Sets or gets the automatic height to add when automatically adding margins to the map.
@@ -39,7 +39,7 @@ trait IgMap
     * series with a marker type of circle.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var circleMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var circleMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the cross hair point (in world coordinates)
@@ -60,7 +60,7 @@ trait IgMap
   /**
     * Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
@@ -88,7 +88,7 @@ trait IgMap
     * series with a marker type of diamond.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var diamondMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var diamondMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the current Map's DragModifier property.
@@ -128,7 +128,7 @@ trait IgMap
     * series with a marker type of hexagon.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var hexagonMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var hexagonMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the template to use for hexagram markers on the map.
@@ -136,7 +136,7 @@ trait IgMap
     * series with a marker type of hexagram.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var hexagramMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var hexagramMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
@@ -148,7 +148,7 @@ trait IgMap
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * The background image uri use in the overview detail pane.
@@ -172,7 +172,7 @@ trait IgMap
     * series with a marker type of pentagon.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var pentagonMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var pentagonMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the template to use for pentragram markers on the map.
@@ -180,7 +180,7 @@ trait IgMap
     * series with a marker type of pentagram.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var pentagramMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var pentagramMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the brush used as the background for the current Map object's plot area.
@@ -198,7 +198,7 @@ trait IgMap
     * strokePath is hidden.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  var previewRect: js.UndefOr[js.Any] = js.undefined
+  var previewRect: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the template to use for pyramid markers on the map.
@@ -206,7 +206,7 @@ trait IgMap
     * series with a marker type of pyramid.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var pyramidMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var pyramidMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Raised when the map's processing for an update has completed.
@@ -315,7 +315,7 @@ trait IgMap
     * series with a marker type of square.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var squareMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var squareMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the template to use for tetragram markers on the map.
@@ -323,7 +323,7 @@ trait IgMap
     * series with a marker type of tetragram.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var tetragramMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var tetragramMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * The swatch used to style this widget
@@ -384,7 +384,7 @@ trait IgMap
     * series with a marker type of triangle.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var triangleMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var triangleMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Event fired when the status of an ongoing Triangulation has changed.
@@ -422,7 +422,7 @@ trait IgMap
     * A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  var windowRect: js.UndefOr[js.Any] = js.undefined
+  var windowRect: js.UndefOr[Any] = js.undefined
   
   /**
     * Occurs just after the current Map's window rectangle is changed.
@@ -496,7 +496,7 @@ object IgMap {
     
     inline def setBrowserNotSupportedUndefined: Self = StObject.set(x, "browserNotSupported", js.undefined)
     
-    inline def setCircleMarkerTemplate(value: js.Any): Self = StObject.set(x, "circleMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setCircleMarkerTemplate(value: Any): Self = StObject.set(x, "circleMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setCircleMarkerTemplateUndefined: Self = StObject.set(x, "circleMarkerTemplate", js.undefined)
     
@@ -508,7 +508,7 @@ object IgMap {
     
     inline def setCrosshairVisibilityUndefined: Self = StObject.set(x, "crosshairVisibility", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
@@ -524,7 +524,7 @@ object IgMap {
     
     inline def setDefaultInteractionUndefined: Self = StObject.set(x, "defaultInteraction", js.undefined)
     
-    inline def setDiamondMarkerTemplate(value: js.Any): Self = StObject.set(x, "diamondMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setDiamondMarkerTemplate(value: Any): Self = StObject.set(x, "diamondMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setDiamondMarkerTemplateUndefined: Self = StObject.set(x, "diamondMarkerTemplate", js.undefined)
     
@@ -540,11 +540,11 @@ object IgMap {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHexagonMarkerTemplate(value: js.Any): Self = StObject.set(x, "hexagonMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setHexagonMarkerTemplate(value: Any): Self = StObject.set(x, "hexagonMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setHexagonMarkerTemplateUndefined: Self = StObject.set(x, "hexagonMarkerTemplate", js.undefined)
     
-    inline def setHexagramMarkerTemplate(value: js.Any): Self = StObject.set(x, "hexagramMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setHexagramMarkerTemplate(value: Any): Self = StObject.set(x, "hexagramMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setHexagramMarkerTemplateUndefined: Self = StObject.set(x, "hexagramMarkerTemplate", js.undefined)
     
@@ -552,7 +552,7 @@ object IgMap {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -564,11 +564,11 @@ object IgMap {
     
     inline def setPanModifierUndefined: Self = StObject.set(x, "panModifier", js.undefined)
     
-    inline def setPentagonMarkerTemplate(value: js.Any): Self = StObject.set(x, "pentagonMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setPentagonMarkerTemplate(value: Any): Self = StObject.set(x, "pentagonMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setPentagonMarkerTemplateUndefined: Self = StObject.set(x, "pentagonMarkerTemplate", js.undefined)
     
-    inline def setPentagramMarkerTemplate(value: js.Any): Self = StObject.set(x, "pentagramMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setPentagramMarkerTemplate(value: Any): Self = StObject.set(x, "pentagramMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setPentagramMarkerTemplateUndefined: Self = StObject.set(x, "pentagramMarkerTemplate", js.undefined)
     
@@ -580,11 +580,11 @@ object IgMap {
     
     inline def setPreferHigherResolutionTilesUndefined: Self = StObject.set(x, "preferHigherResolutionTiles", js.undefined)
     
-    inline def setPreviewRect(value: js.Any): Self = StObject.set(x, "previewRect", value.asInstanceOf[js.Any])
+    inline def setPreviewRect(value: Any): Self = StObject.set(x, "previewRect", value.asInstanceOf[js.Any])
     
     inline def setPreviewRectUndefined: Self = StObject.set(x, "previewRect", js.undefined)
     
-    inline def setPyramidMarkerTemplate(value: js.Any): Self = StObject.set(x, "pyramidMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setPyramidMarkerTemplate(value: Any): Self = StObject.set(x, "pyramidMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setPyramidMarkerTemplateUndefined: Self = StObject.set(x, "pyramidMarkerTemplate", js.undefined)
     
@@ -628,13 +628,13 @@ object IgMap {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: IgMapSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: IgMapSeries*): Self = StObject.set(x, "series", js.Array(value*))
     
-    inline def setSquareMarkerTemplate(value: js.Any): Self = StObject.set(x, "squareMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setSquareMarkerTemplate(value: Any): Self = StObject.set(x, "squareMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setSquareMarkerTemplateUndefined: Self = StObject.set(x, "squareMarkerTemplate", js.undefined)
     
-    inline def setTetragramMarkerTemplate(value: js.Any): Self = StObject.set(x, "tetragramMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setTetragramMarkerTemplate(value: Any): Self = StObject.set(x, "tetragramMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setTetragramMarkerTemplateUndefined: Self = StObject.set(x, "tetragramMarkerTemplate", js.undefined)
     
@@ -658,7 +658,7 @@ object IgMap {
     
     inline def setTooltipShownUndefined: Self = StObject.set(x, "tooltipShown", js.undefined)
     
-    inline def setTriangleMarkerTemplate(value: js.Any): Self = StObject.set(x, "triangleMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setTriangleMarkerTemplate(value: Any): Self = StObject.set(x, "triangleMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setTriangleMarkerTemplateUndefined: Self = StObject.set(x, "triangleMarkerTemplate", js.undefined)
     
@@ -682,7 +682,7 @@ object IgMap {
     
     inline def setWindowPositionVerticalUndefined: Self = StObject.set(x, "windowPositionVertical", js.undefined)
     
-    inline def setWindowRect(value: js.Any): Self = StObject.set(x, "windowRect", value.asInstanceOf[js.Any])
+    inline def setWindowRect(value: Any): Self = StObject.set(x, "windowRect", value.asInstanceOf[js.Any])
     
     inline def setWindowRectChanged(value: (/* event */ Event, /* ui */ WindowRectChangedEventUIParam) => Unit): Self = StObject.set(x, "windowRectChanged", js.Any.fromFunction2(value))
     

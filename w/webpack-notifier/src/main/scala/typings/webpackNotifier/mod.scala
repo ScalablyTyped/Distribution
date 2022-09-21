@@ -1,6 +1,8 @@
 package typings.webpackNotifier
 
-import typings.std.Plugin
+import typings.webpack.mod.Compiler
+import typings.webpackNotifier.anon.Message
+import typings.webpackNotifier.anon.keyinsuccesswarningerrors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +11,14 @@ object mod {
   
   @JSImport("webpack-notifier", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
-       with Plugin {
+       with WebpackNotifierPlugin {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(compiler: Compiler): Unit = js.native
   }
   
   /** @deprecated use Options */
@@ -22,19 +28,20 @@ object mod {
     
     var alwaysNotify: js.UndefOr[Boolean] = js.undefined
     
-    var contentImage: js.UndefOr[String] = js.undefined
+    var contentImage: js.UndefOr[keyinsuccesswarningerrors | String] = js.undefined
     
     /**
       * Use emoji in notifications
-      * @default false
       */
     var emoji: js.UndefOr[Boolean] = js.undefined
     
     var excludeWarnings: js.UndefOr[Boolean] = js.undefined
     
+    var onlyOnError: js.UndefOr[Boolean] = js.undefined
+    
     var skipFirstNotification: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String] = js.undefined
+    var title: js.UndefOr[String | TitleGetter] = js.undefined
   }
   object Options {
     
@@ -49,7 +56,7 @@ object mod {
       
       inline def setAlwaysNotifyUndefined: Self = StObject.set(x, "alwaysNotify", js.undefined)
       
-      inline def setContentImage(value: String): Self = StObject.set(x, "contentImage", value.asInstanceOf[js.Any])
+      inline def setContentImage(value: keyinsuccesswarningerrors | String): Self = StObject.set(x, "contentImage", value.asInstanceOf[js.Any])
       
       inline def setContentImageUndefined: Self = StObject.set(x, "contentImage", js.undefined)
       
@@ -61,15 +68,39 @@ object mod {
       
       inline def setExcludeWarningsUndefined: Self = StObject.set(x, "excludeWarnings", js.undefined)
       
+      inline def setOnlyOnError(value: Boolean): Self = StObject.set(x, "onlyOnError", value.asInstanceOf[js.Any])
+      
+      inline def setOnlyOnErrorUndefined: Self = StObject.set(x, "onlyOnError", js.undefined)
+      
       inline def setSkipFirstNotification(value: Boolean): Self = StObject.set(x, "skipFirstNotification", value.asInstanceOf[js.Any])
       
       inline def setSkipFirstNotificationUndefined: Self = StObject.set(x, "skipFirstNotification", js.undefined)
       
-      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | TitleGetter): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleFunction1(value: /* data */ Message => String): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
-  type WebpackNotifierPlugin = Plugin
+  type TitleGetter = js.Function1[/* data */ Message, String]
+  
+  trait WebpackNotifierPlugin extends StObject {
+    
+    @JSName("apply")
+    def apply(compiler: Compiler): Unit
+  }
+  object WebpackNotifierPlugin {
+    
+    inline def apply(apply: Compiler => Unit): WebpackNotifierPlugin = {
+      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
+      __obj.asInstanceOf[WebpackNotifierPlugin]
+    }
+    
+    extension [Self <: WebpackNotifierPlugin](x: Self) {
+      
+      inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+    }
+  }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "Drawer")
 @js.native
-class Drawer () extends default
+open class Drawer () extends default
 /* static members */
 object Drawer {
   

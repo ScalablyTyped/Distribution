@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("istanbul-lib-coverage", "CoverageMap")
   @js.native
-  class CoverageMap protected () extends StObject {
+  open class CoverageMap protected () extends StObject {
     def this(data: CoverageMap) = this()
     def this(data: CoverageMapData) = this()
     
@@ -40,7 +40,7 @@ object mod {
   
   @JSImport("istanbul-lib-coverage", "CoverageSummary")
   @js.native
-  class CoverageSummary protected () extends StObject {
+  open class CoverageSummary protected () extends StObject {
     def this(data: CoverageSummary) = this()
     def this(data: CoverageSummaryData) = this()
     
@@ -63,7 +63,7 @@ object mod {
   
   @JSImport("istanbul-lib-coverage", "FileCoverage")
   @js.native
-  class FileCoverage protected ()
+  open class FileCoverage protected ()
     extends StObject
        with FileCoverageData {
     def this(data: String) = this()
@@ -162,7 +162,7 @@ object mod {
       
       inline def setLocations(value: js.Array[Range]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      inline def setLocationsVarargs(value: Range*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Range*): Self = StObject.set(x, "locations", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

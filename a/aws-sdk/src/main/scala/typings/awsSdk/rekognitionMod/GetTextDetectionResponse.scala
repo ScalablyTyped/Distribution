@@ -58,7 +58,7 @@ object GetTextDetectionResponse {
     
     inline def setTextDetectionsUndefined: Self = StObject.set(x, "TextDetections", js.undefined)
     
-    inline def setTextDetectionsVarargs(value: TextDetectionResult*): Self = StObject.set(x, "TextDetections", js.Array(value :_*))
+    inline def setTextDetectionsVarargs(value: TextDetectionResult*): Self = StObject.set(x, "TextDetections", js.Array(value*))
     
     inline def setTextModelVersion(value: String): Self = StObject.set(x, "TextModelVersion", value.asInstanceOf[js.Any])
     

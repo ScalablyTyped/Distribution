@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fs-extra", "WriteStream")
 @js.native
-class WriteStream ()
+open class WriteStream ()
   extends typings.node.fsMod.WriteStream {
   def this(opts: WritableOptions) = this()
 }

@@ -24,6 +24,6 @@ object ListReceiptFiltersResponse {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: ReceiptFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: ReceiptFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
   }
 }

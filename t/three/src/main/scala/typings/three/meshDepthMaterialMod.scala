@@ -1,8 +1,8 @@
 package typings.three
 
-import typings.three.constantsMod.DepthPackingStrategies
 import typings.three.materialMod.Material
 import typings.three.materialMod.MaterialParameters
+import typings.three.srcConstantsMod.DepthPackingStrategies
 import typings.three.textureMod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,49 +12,54 @@ object meshDepthMaterialMod {
   
   @JSImport("three/src/materials/MeshDepthMaterial", "MeshDepthMaterial")
   @js.native
-  class MeshDepthMaterial () extends Material {
+  open class MeshDepthMaterial () extends Material {
     def this(parameters: MeshDepthMaterialParameters) = this()
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var alphaMap: Texture | Null = js.native
     
     /**
-    	 * @default THREE.BasicDepthPacking
-    	 */
+      * @default THREE.BasicDepthPacking
+      */
     var depthPacking: DepthPackingStrategies = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var displacementBias: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var displacementMap: Texture | Null = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var displacementScale: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default false
+      */
+    var fog: Boolean = js.native
+    
+    /**
+      * @default null
+      */
     var map: Texture | Null = js.native
     
     def setValues(parameters: MeshDepthMaterialParameters): Unit = js.native
     
     /**
-    	 * @default false
-    	 */
+      * @default false
+      */
     var wireframe: Boolean = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var wireframeLinewidth: Double = js.native
   }
   

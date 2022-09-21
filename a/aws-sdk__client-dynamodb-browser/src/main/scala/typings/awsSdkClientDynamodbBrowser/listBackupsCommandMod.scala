@@ -16,7 +16,7 @@ object listBackupsCommandMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/commands/ListBackupsCommand", "ListBackupsCommand")
   @js.native
-  class ListBackupsCommand protected ()
+  open class ListBackupsCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object listBackupsCommandMod {
     override val middlewareStack: MiddlewareStack[ListBackupsInput, ListBackupsOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[ListBackupsInput, ListBackupsOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: DynamoDBResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[ListBackupsInput, ListBackupsOutput] = js.native
   }
 }

@@ -1,14 +1,11 @@
 package typings.lokijs
 
-import typings.std.Error
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A loki persistence adapter which persists using node fs module
-  * @constructor LokiFsAdapter
   */
 @js.native
 trait LokiFsAdapter
@@ -22,7 +19,7 @@ trait LokiFsAdapter
     * @param callback - the callback to handle the result
     */
   @JSName("deleteDatabase")
-  def deleteDatabase_MLokiFsAdapter(dbname: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  def deleteDatabase_MLokiFsAdapter(dbname: String, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
   
   /**
     * saveDatabase() - save data to file, will throw an error if the file can't be saved
@@ -31,11 +28,15 @@ trait LokiFsAdapter
     * @param callback - the callback to handle the result
     */
   @JSName("saveDatabase")
-  def saveDatabase_MLokiFsAdapter(dbname: String, dbstring: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  def saveDatabase_MLokiFsAdapter(
+    dbname: String,
+    dbstring: String,
+    callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
+  ): Unit = js.native
   @JSName("saveDatabase")
   def saveDatabase_MLokiFsAdapter(
     dbname: String,
-    dbstring: Uint8Array,
-    callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+    dbstring: js.typedarray.Uint8Array,
+    callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
   ): Unit = js.native
 }

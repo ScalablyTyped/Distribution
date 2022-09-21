@@ -33,6 +33,6 @@ object ListPlatformApplicationsResponse {
     
     inline def setPlatformApplicationsUndefined: Self = StObject.set(x, "PlatformApplications", js.undefined)
     
-    inline def setPlatformApplicationsVarargs(value: PlatformApplication*): Self = StObject.set(x, "PlatformApplications", js.Array(value :_*))
+    inline def setPlatformApplicationsVarargs(value: PlatformApplication*): Self = StObject.set(x, "PlatformApplications", js.Array(value*))
   }
 }

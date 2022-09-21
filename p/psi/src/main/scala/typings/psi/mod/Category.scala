@@ -36,7 +36,7 @@ object Category {
     
     inline def setAuditRefs(value: js.Array[AuditRef]): Self = StObject.set(x, "auditRefs", value.asInstanceOf[js.Any])
     
-    inline def setAuditRefsVarargs(value: AuditRef*): Self = StObject.set(x, "auditRefs", js.Array(value :_*))
+    inline def setAuditRefsVarargs(value: AuditRef*): Self = StObject.set(x, "auditRefs", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

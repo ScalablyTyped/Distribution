@@ -1,5 +1,6 @@
 package typings.vscodeLanguageserverProtocol.anon
 
+import typings.vscodeLanguageserverTypes.mod.SymbolTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,24 +8,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `3` extends StObject {
   
   /**
-    * Whether client supports handling progress notifications. If set servers are allowed to
-    * report in `workDoneProgress` property in the request specific server capabilities.
-    *
-    * Since 3.15.0
+    * The tags supported by the client.
     */
-  var workDoneProgress: js.UndefOr[Boolean] = js.undefined
+  var valueSet: js.Array[SymbolTag]
 }
 object `3` {
   
-  inline def apply(): `3` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(valueSet: js.Array[SymbolTag]): `3` = {
+    val __obj = js.Dynamic.literal(valueSet = valueSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[`3`]
   }
   
   extension [Self <: `3`](x: Self) {
     
-    inline def setWorkDoneProgress(value: Boolean): Self = StObject.set(x, "workDoneProgress", value.asInstanceOf[js.Any])
+    inline def setValueSet(value: js.Array[SymbolTag]): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
     
-    inline def setWorkDoneProgressUndefined: Self = StObject.set(x, "workDoneProgress", js.undefined)
+    inline def setValueSetVarargs(value: SymbolTag*): Self = StObject.set(x, "valueSet", js.Array(value*))
   }
 }

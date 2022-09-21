@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.OlapResultAxis")
 @js.native
-class OlapResultAxis protected ()
+open class OlapResultAxis protected ()
   extends StObject
      with typings.igniteUi.Infragistics.OlapResultAxis {
   def this(options: OlapResultAxisOptions) = this()
@@ -22,5 +22,5 @@ class OlapResultAxis protected ()
     * Returns an array of $.ig.OlapResultTuple objects which form the axis.
     */
   /* CompleteClass */
-  override def tuples(): js.Array[js.Any] = js.native
+  override def tuples(): js.Array[Any] = js.native
 }

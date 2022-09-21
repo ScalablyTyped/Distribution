@@ -18,9 +18,9 @@ trait DbConnectionConfig extends StObject {
   
   var storage: js.UndefOr[String] = js.undefined
   
-  var token: js.UndefOr[js.Any] = js.undefined
+  var token: js.UndefOr[Any] = js.undefined
   
-  var transformers: js.UndefOr[js.Array[js.Function1[/* item */ ORecord, js.Any]]] = js.undefined
+  var transformers: js.UndefOr[js.Array[js.Function1[/* item */ ORecord, Any]]] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
@@ -61,15 +61,15 @@ object DbConnectionConfig {
     
     inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
     
-    inline def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
-    inline def setTransformers(value: js.Array[js.Function1[/* item */ ORecord, js.Any]]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
+    inline def setTransformers(value: js.Array[js.Function1[/* item */ ORecord, Any]]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
     
     inline def setTransformersUndefined: Self = StObject.set(x, "transformers", js.undefined)
     
-    inline def setTransformersVarargs(value: (js.Function1[/* item */ ORecord, js.Any])*): Self = StObject.set(x, "transformers", js.Array(value :_*))
+    inline def setTransformersVarargs(value: (js.Function1[/* item */ ORecord, Any])*): Self = StObject.set(x, "transformers", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

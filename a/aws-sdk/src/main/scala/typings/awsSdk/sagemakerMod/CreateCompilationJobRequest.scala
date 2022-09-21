@@ -7,14 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateCompilationJobRequest extends StObject {
   
   /**
-    * A name for the model compilation job. The name must be unique within the AWS Region and within your AWS account. 
+    * A name for the model compilation job. The name must be unique within the Amazon Web Services Region and within your Amazon Web Services account. 
     */
   var CompilationJobName: EntityName
   
   /**
     * Provides information about the location of input model artifacts, the name and shape of the expected data inputs, and the framework in which the model was trained.
     */
-  var InputConfig: typings.awsSdk.sagemakerMod.InputConfig
+  var InputConfig: js.UndefOr[typings.awsSdk.sagemakerMod.InputConfig] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of a versioned model package. Provide either a ModelPackageVersionArn or an InputConfig object in the request syntax. The presence of both objects in the CreateCompilationJob request will return an exception.
+    */
+  var ModelPackageVersionArn: js.UndefOr[ModelPackageArn] = js.undefined
   
   /**
     * Provides information about the output location for the compiled model and the target device the model runs on.
@@ -32,20 +37,24 @@ trait CreateCompilationJobRequest extends StObject {
   var StoppingCondition: typings.awsSdk.sagemakerMod.StoppingCondition
   
   /**
-    * An array of key-value pairs that you want to use to organize and track your AWS resource costs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide. 
+    * An array of key-value pairs. You can use tags to categorize your Amazon Web Services resources in different ways, for example, by purpose, owner, or environment. For more information, see Tagging Amazon Web Services Resources.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
+  
+  /**
+    * A VpcConfig object that specifies the VPC that you want your compilation job to connect to. Control access to your models by configuring the VPC. For more information, see Protect Compilation Jobs by Using an Amazon Virtual Private Cloud.
+    */
+  var VpcConfig: js.UndefOr[NeoVpcConfig] = js.undefined
 }
 object CreateCompilationJobRequest {
   
   inline def apply(
     CompilationJobName: EntityName,
-    InputConfig: InputConfig,
     OutputConfig: OutputConfig,
     RoleArn: RoleArn,
     StoppingCondition: StoppingCondition
   ): CreateCompilationJobRequest = {
-    val __obj = js.Dynamic.literal(CompilationJobName = CompilationJobName.asInstanceOf[js.Any], InputConfig = InputConfig.asInstanceOf[js.Any], OutputConfig = OutputConfig.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], StoppingCondition = StoppingCondition.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(CompilationJobName = CompilationJobName.asInstanceOf[js.Any], OutputConfig = OutputConfig.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], StoppingCondition = StoppingCondition.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCompilationJobRequest]
   }
   
@@ -54,6 +63,12 @@ object CreateCompilationJobRequest {
     inline def setCompilationJobName(value: EntityName): Self = StObject.set(x, "CompilationJobName", value.asInstanceOf[js.Any])
     
     inline def setInputConfig(value: InputConfig): Self = StObject.set(x, "InputConfig", value.asInstanceOf[js.Any])
+    
+    inline def setInputConfigUndefined: Self = StObject.set(x, "InputConfig", js.undefined)
+    
+    inline def setModelPackageVersionArn(value: ModelPackageArn): Self = StObject.set(x, "ModelPackageVersionArn", value.asInstanceOf[js.Any])
+    
+    inline def setModelPackageVersionArnUndefined: Self = StObject.set(x, "ModelPackageVersionArn", js.undefined)
     
     inline def setOutputConfig(value: OutputConfig): Self = StObject.set(x, "OutputConfig", value.asInstanceOf[js.Any])
     
@@ -65,6 +80,10 @@ object CreateCompilationJobRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
+    
+    inline def setVpcConfig(value: NeoVpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
+    
+    inline def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

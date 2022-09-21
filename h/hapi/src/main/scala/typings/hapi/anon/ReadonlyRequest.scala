@@ -14,7 +14,7 @@ import typings.hapi.mod.ResponseObject
 import typings.hapi.mod.Util.Dictionary
 import typings.hapi.mod.Util.HTTP_METHODS_PARTIAL
 import typings.hapi.mod.Util.HTTP_METHODS_PARTIAL_LOWERCASE
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.node.urlMod.URL_
 import typings.podium.mod.Events
@@ -36,7 +36,7 @@ trait ReadonlyRequest extends StObject {
   
   val auth: RequestAuth = js.native
   
-  def emit(criteria: String, data: js.Any): Unit = js.native
+  def emit(criteria: String, data: Any): Unit = js.native
   
   val events: RequestEvents = js.native
   
@@ -84,9 +84,9 @@ trait ReadonlyRequest extends StObject {
   
   val plugins: PluginsStates = js.native
   
-  val pre: Dictionary[js.Any] = js.native
+  val pre: Dictionary[Any] = js.native
   
-  val preResponses: Dictionary[js.Any] = js.native
+  val preResponses: Dictionary[Any] = js.native
   
   val query: RequestQuery = js.native
   
@@ -100,7 +100,7 @@ trait ReadonlyRequest extends StObject {
   
   def removeListener(name: String, listener: Listener): Podium = js.native
   
-  val response: ResponseObject | ^[js.Any] = js.native
+  val response: ResponseObject | ^[Any] = js.native
   
   val route: RequestRoute = js.native
   
@@ -113,7 +113,7 @@ trait ReadonlyRequest extends StObject {
   def setUrl(url: URL_): Unit = js.native
   def setUrl(url: URL_, stripTrailingSlash: Boolean): Unit = js.native
   
-  val state: Dictionary[js.Any] = js.native
+  val state: Dictionary[Any] = js.native
   
   val url: URL_ = js.native
 }

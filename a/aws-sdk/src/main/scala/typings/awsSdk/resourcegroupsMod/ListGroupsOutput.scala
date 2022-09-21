@@ -12,7 +12,7 @@ trait ListGroupsOutput extends StObject {
   var GroupIdentifiers: js.UndefOr[GroupIdentifierList] = js.undefined
   
   /**
-    * This output element is deprecated and shouldn't be used. Refer to GroupIdentifiers instead.
+    *    Deprecated - don't use this field. Use the GroupIdentifiers response field instead.   
     */
   var Groups: js.UndefOr[GroupList] = js.undefined
   
@@ -34,13 +34,13 @@ object ListGroupsOutput {
     
     inline def setGroupIdentifiersUndefined: Self = StObject.set(x, "GroupIdentifiers", js.undefined)
     
-    inline def setGroupIdentifiersVarargs(value: GroupIdentifier*): Self = StObject.set(x, "GroupIdentifiers", js.Array(value :_*))
+    inline def setGroupIdentifiersVarargs(value: GroupIdentifier*): Self = StObject.set(x, "GroupIdentifiers", js.Array(value*))
     
     inline def setGroups(value: GroupList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

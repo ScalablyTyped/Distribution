@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@peculiar/webcrypto" : "1.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@peculiar/webcrypto" : "1.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

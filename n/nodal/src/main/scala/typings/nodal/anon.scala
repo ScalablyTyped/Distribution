@@ -72,7 +72,7 @@ object anon {
       
       inline def setColumns(value: js.Array[IColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
@@ -99,11 +99,11 @@ object anon {
     
     var count: Double
     
-    var error: js.Any
+    var error: Any
     
     var offset: Double
     
-    var resource: js.Any
+    var resource: Any
     
     var summary: js.UndefOr[String | Null] = js.undefined
     
@@ -111,7 +111,7 @@ object anon {
   }
   object Count {
     
-    inline def apply(count: Double, error: js.Any, offset: Double, resource: js.Any, total: Double): Count = {
+    inline def apply(count: Double, error: Any, offset: Double, resource: Any, total: Double): Count = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Count]
     }
@@ -120,11 +120,11 @@ object anon {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      inline def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
       
@@ -163,20 +163,20 @@ object anon {
   
   trait Data extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var meta: Count
   }
   object Data {
     
-    inline def apply(data: js.Any, meta: Count): Data = {
+    inline def apply(data: Any, meta: Count): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setMeta(value: Count): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
@@ -184,22 +184,22 @@ object anon {
   
   trait Fields extends StObject {
     
-    var fields: js.Array[js.Any]
+    var fields: js.Array[Any]
     
     var name: String
   }
   object Fields {
     
-    inline def apply(fields: js.Array[js.Any], name: String): Fields = {
+    inline def apply(fields: js.Array[Any], name: String): Fields = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fields]
     }
     
     extension [Self <: Fields](x: Self) {
       
-      inline def setFields(value: js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      inline def setFieldsVarargs(value: js.Any*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: Any*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -207,18 +207,18 @@ object anon {
   
   trait Joins extends StObject {
     
-    var structure: js.Any
+    var structure: Any
   }
   object Joins {
     
-    inline def apply(structure: js.Any): Joins = {
+    inline def apply(structure: Any): Joins = {
       val __obj = js.Dynamic.literal(structure = structure.asInstanceOf[js.Any])
       __obj.asInstanceOf[Joins]
     }
     
     extension [Self <: Joins](x: Self) {
       
-      inline def setStructure(value: js.Any): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
+      inline def setStructure(value: Any): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,7 +239,7 @@ object anon {
       
       inline def setData(value: js.Array[scala.Nothing]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: scala.Nothing*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: scala.Nothing*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setMeta(value: Count): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
@@ -247,22 +247,22 @@ object anon {
   
   trait Params extends StObject {
     
-    var params: js.Any
+    var params: Any
     
-    var sql: js.Any
+    var sql: Any
   }
   object Params {
     
-    inline def apply(params: js.Any, sql: js.Any): Params = {
+    inline def apply(params: Any, sql: Any): Params = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any])
       __obj.asInstanceOf[Params]
     }
     
     extension [Self <: Params](x: Self) {
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      inline def setSql(value: js.Any): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+      inline def setSql(value: Any): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     }
   }
   
@@ -278,7 +278,7 @@ object anon {
           Model
         ] {
     
-    /* private */ var _relationshipCache: js.Any = js.native
+    /* private */ var _relationshipCache: Any = js.native
     
     /**
       * Create a calculated field (in JavaScript). Must be synchronous.
@@ -292,7 +292,7 @@ object anon {
       * Return the column schema data for a given name
       * @param {string} columnName
       */
-    def column(columnName: String): js.Any = js.native
+    def column(columnName: String): Any = js.native
     
     /**
       * Get the model's column lookup data
@@ -333,7 +333,7 @@ object anon {
     
     def findBy(
       field: String,
-      value: js.Any,
+      value: Any,
       callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[Model], Unit]
     ): Unit = js.native
     
@@ -365,7 +365,7 @@ object anon {
       * Tells us if a field is hidden (i.e. from API queries)
       * @param {String} field
       */
-    def isHidden(field: String): js.Any = js.native
+    def isHidden(field: String): Any = js.native
     
     /**
       * Sets a joins relationship for the Model. Sets joinedBy relationship for parent.
@@ -435,7 +435,7 @@ object anon {
       * @param {string} message The error message shown if a validation fails.
       * @param {function({any} value)} fnAction the validation to run - first parameter is the value you're testing.
       */
-    def validates(field: String, message: String, fnAction: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+    def validates(field: String, message: String, fnAction: js.Function1[/* value */ Any, Unit]): Unit = js.native
     
     /**
       * Creates a verifier. These run asynchronously, support multiple fields, and check every time you try to save a Model.
@@ -458,7 +458,7 @@ object anon {
           Model
         ] {
     
-    /* private */ var _relationshipCache: js.Any = js.native
+    /* private */ var _relationshipCache: Any = js.native
     
     /**
       * Create a calculated field (in JavaScript). Must be synchronous.
@@ -472,7 +472,7 @@ object anon {
       * Return the column schema data for a given name
       * @param {string} columnName
       */
-    def column(columnName: String): js.Any = js.native
+    def column(columnName: String): Any = js.native
     
     /**
       * Get the model's column lookup data
@@ -519,7 +519,7 @@ object anon {
     
     def findBy(
       field: String,
-      value: js.Any,
+      value: Any,
       callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[this.type], Unit]
     ): Unit = js.native
     
@@ -551,7 +551,7 @@ object anon {
       * Tells us if a field is hidden (i.e. from API queries)
       * @param {String} field
       */
-    def isHidden(field: String): js.Any = js.native
+    def isHidden(field: String): Any = js.native
     
     /**
       * Sets a joins relationship for the Model. Sets joinedBy relationship for parent.
@@ -621,7 +621,7 @@ object anon {
       * @param {string} message The error message shown if a validation fails.
       * @param {function({any} value)} fnAction the validation to run - first parameter is the value you're testing.
       */
-    def validates(field: String, message: String, fnAction: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+    def validates(field: String, message: String, fnAction: js.Function1[/* value */ Any, Unit]): Unit = js.native
     
     /**
       * Creates a verifier. These run asynchronously, support multiple fields, and check every time you try to save a Model.

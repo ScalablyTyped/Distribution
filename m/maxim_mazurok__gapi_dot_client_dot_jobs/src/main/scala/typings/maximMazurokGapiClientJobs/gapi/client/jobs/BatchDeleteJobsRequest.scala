@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchDeleteJobsRequest extends StObject {
   
   /**
-    * Required. The filter string specifies the jobs to be deleted. Supported operator: =, AND The fields eligible for filtering are: * `companyName` (Required) * `requisitionId`
-    * (Required) Sample Query: companyName = "projects/api-test-project/companies/123" AND requisitionId = "req-1"
+    * The names of the jobs to delete. The format is "projects/{project_id}/tenants/{tenant_id}/jobs/{job_id}". For example, "projects/foo/tenants/bar/jobs/baz". A maximum of 200 jobs can
+    * be deleted in a batch.
     */
-  var filter: js.UndefOr[String] = js.undefined
+  var names: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BatchDeleteJobsRequest {
   
@@ -21,8 +21,10 @@ object BatchDeleteJobsRequest {
   
   extension [Self <: BatchDeleteJobsRequest](x: Self) {
     
-    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+    
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
   }
 }

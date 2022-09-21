@@ -25,7 +25,7 @@ object GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature {
     
     inline def setAllowedValuesUndefined: Self = StObject.set(x, "allowedValues", js.undefined)
     
-    inline def setAllowedValuesVarargs(value: String*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
+    inline def setAllowedValuesVarargs(value: String*): Self = StObject.set(x, "allowedValues", js.Array(value*))
     
     inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     

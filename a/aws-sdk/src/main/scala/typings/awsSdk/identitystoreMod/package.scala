@@ -5,31 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AttributePath = java.lang.String
+type Addresses = js.Array[Address]
 
-type Filters = js.Array[typings.awsSdk.identitystoreMod.Filter]
+type AttributeOperations = js.Array[AttributeOperation]
 
-type GroupDisplayName = java.lang.String
+type AttributePath = String
 
-type Groups = js.Array[typings.awsSdk.identitystoreMod.Group]
+type Emails = js.Array[Email]
 
-type IdentityStoreId = java.lang.String
+type ExternalIdIdentifier = String
 
-type MaxResults = scala.Double
+type ExternalIdIssuer = String
 
-type NextToken = java.lang.String
+type ExternalIds = js.Array[ExternalId]
 
-type ResourceId = java.lang.String
+type Filters = js.Array[Filter]
 
-type SensitiveStringType = java.lang.String
+type GroupDisplayName = String
 
-type UserName = java.lang.String
+type GroupIds = js.Array[ResourceId]
 
-type Users = js.Array[typings.awsSdk.identitystoreMod.User]
+type GroupMembershipExistenceResults = js.Array[GroupMembershipExistenceResult]
+
+type GroupMemberships = js.Array[GroupMembership]
+
+type Groups = js.Array[Group]
+
+type IdentityStoreId = String
+
+type MaxResults = Double
+
+type NextToken = String
+
+type PhoneNumbers = js.Array[PhoneNumber]
+
+type ResourceId = String
+
+type SensitiveBooleanType = Boolean
+
+type SensitiveStringType = String
+
+type UserName = String
+
+type Users = js.Array[User]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2020-06-15`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.identitystoreMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

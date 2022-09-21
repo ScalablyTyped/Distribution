@@ -91,7 +91,7 @@ trait SimplePaginationOptions extends StObject {
     * @type {any[]}
     * @memberof SimplePaginationOptions
     */
-  var labelMap: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var labelMap: js.UndefOr[js.Array[Any]] = js.undefined
   
   var listStyle: js.UndefOr[Boolean] = js.undefined
   
@@ -118,7 +118,7 @@ trait SimplePaginationOptions extends StObject {
     * 
     * @memberof SimplePaginationOptions
     */
-  var onPageClick: js.UndefOr[js.Function2[/* page */ Double, /* event */ js.Any, Unit]] = js.undefined
+  var onPageClick: js.UndefOr[js.Function2[/* page */ Double, /* event */ Any, Unit]] = js.undefined
   
   /**
     *     If specified, items and itemsOnPage will not be used to calculate the number of pages.
@@ -203,11 +203,11 @@ object SimplePaginationOptions {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setLabelMap(value: js.Array[js.Any]): Self = StObject.set(x, "labelMap", value.asInstanceOf[js.Any])
+    inline def setLabelMap(value: js.Array[Any]): Self = StObject.set(x, "labelMap", value.asInstanceOf[js.Any])
     
     inline def setLabelMapUndefined: Self = StObject.set(x, "labelMap", js.undefined)
     
-    inline def setLabelMapVarargs(value: js.Any*): Self = StObject.set(x, "labelMap", js.Array(value :_*))
+    inline def setLabelMapVarargs(value: Any*): Self = StObject.set(x, "labelMap", js.Array(value*))
     
     inline def setListStyle(value: Boolean): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
     
@@ -225,7 +225,7 @@ object SimplePaginationOptions {
     
     inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
     
-    inline def setOnPageClick(value: (/* page */ Double, /* event */ js.Any) => Unit): Self = StObject.set(x, "onPageClick", js.Any.fromFunction2(value))
+    inline def setOnPageClick(value: (/* page */ Double, /* event */ Any) => Unit): Self = StObject.set(x, "onPageClick", js.Any.fromFunction2(value))
     
     inline def setOnPageClickUndefined: Self = StObject.set(x, "onPageClick", js.undefined)
     

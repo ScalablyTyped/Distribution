@@ -25,7 +25,7 @@ object WriteResult {
     
     inline def setTransformResultsUndefined: Self = StObject.set(x, "transformResults", js.undefined)
     
-    inline def setTransformResultsVarargs(value: Value*): Self = StObject.set(x, "transformResults", js.Array(value :_*))
+    inline def setTransformResultsVarargs(value: Value*): Self = StObject.set(x, "transformResults", js.Array(value*))
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     

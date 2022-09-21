@@ -34,7 +34,7 @@ object XContentProviderSupplier {
     ContentProvider: XContentProvider,
     acquire: () => Unit,
     getContentProvider: () => XContentProvider,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XContentProviderSupplier = {
     val __obj = js.Dynamic.literal(ContentProvider = ContentProvider.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getContentProvider = js.Any.fromFunction0(getContentProvider), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

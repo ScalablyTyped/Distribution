@@ -34,7 +34,7 @@ object IdCheckConfiguration {
     
     inline def setAuthStepsUndefined: Self = StObject.set(x, "authSteps", js.undefined)
     
-    inline def setAuthStepsVarargs(value: IdCheckSecurityStep*): Self = StObject.set(x, "authSteps", js.Array(value :_*))
+    inline def setAuthStepsVarargs(value: IdCheckSecurityStep*): Self = StObject.set(x, "authSteps", js.Array(value*))
     
     inline def setIsDefault(value: String): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     

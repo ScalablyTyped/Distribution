@@ -1,7 +1,7 @@
 
 # Scala.js typings for sha3
 
-Typings are for version 2.1.3
+Typings are for version 2.1.4
 
 ## Library description:
 The Keccak family of hashing algorithms.
@@ -10,10 +10,10 @@ The Keccak family of hashing algorithms.
 | ------------------ | :-------------: |
 | Full name          | sha3 |
 | Keywords           | sha, sha3, sha-3, keccak, hash, hashing |
-| # releases         | 15 |
-| # dependents       | 135 |
-| # downloads        | 2860696 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 488183.0 |
+| # stars            | 126.0 |
 
 ## Links
 - [Homepage](https://github.com/phusion/node-sha3#readme)

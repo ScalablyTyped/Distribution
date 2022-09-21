@@ -32,10 +32,9 @@ object progressProgressMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Progress/Progress", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[ProgressProps, ComponentState, js.Any] {
+  open class default protected () extends Component[ProgressProps, ComponentState, Any] {
     def this(props: ProgressProps) = this()
-    def this(props: ProgressProps, context: js.Any) = this()
+    def this(props: ProgressProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Progress/Progress", JSImport.Default)
   @js.native
@@ -44,7 +43,7 @@ object progressProgressMod extends Shortcut {
   trait ProgressProps
     extends StObject
        with StrictProgressProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ProgressProps {
     
     inline def apply(): ProgressProps = {
@@ -59,7 +58,7 @@ object progressProgressMod extends Shortcut {
     var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A progress bar can attach to and show the progress of an element (i.e. Card or Segment). */
     var attached: js.UndefOr[top | bottom] = js.undefined
@@ -131,7 +130,7 @@ object progressProgressMod extends Shortcut {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

@@ -42,7 +42,7 @@ object BTreeIndex {
     
     inline def setFields(value: js.Array[BTreeIndexField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: BTreeIndexField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: BTreeIndexField*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setIndexNulls(value: Boolean): Self = StObject.set(x, "indexNulls", value.asInstanceOf[js.Any])
     

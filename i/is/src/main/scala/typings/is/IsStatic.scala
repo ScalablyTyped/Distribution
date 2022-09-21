@@ -1,6 +1,5 @@
 package typings.is
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,12 +15,12 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value matches affirmative regexp.
     */
-  def affirmative(value: js.Any): Boolean = js.native
+  def affirmative(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value matches alpha numeric regexp.
     */
-  def alphaNumeric(value: js.Any): Boolean = js.native
+  def alphaNumeric(value: Any): Boolean = js.native
   
   /**
     * Checks if current device has Android.
@@ -42,12 +41,12 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value type is arguments.
     */
-  def arguments(value: js.Any): Boolean = js.native
+  def arguments(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value type is array.
     */
-  def array(value: js.Any): Boolean = js.native
+  def array(value: Any): Boolean = js.native
   
   /**
     * Checks if current device is Blackberry.
@@ -57,12 +56,12 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value type is boolean.
     */
-  def boolean(value: js.Any): Boolean = js.native
+  def boolean(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value matches Canada postal code regexp.
     */
-  def caPostalCode(value: js.Any): Boolean = js.native
+  def caPostalCode(value: Any): Boolean = js.native
   
   /**
     * Checks if the given string is capitalized.
@@ -72,7 +71,7 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value type is char.
     */
-  def char(value: js.Any): Boolean = js.native
+  def char(value: Any): Boolean = js.native
   
   /**
     * Checks if current browser is chrome.
@@ -84,27 +83,27 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value matches credit card regexp.
     */
-  def creditCard(value: js.Any): Boolean = js.native
+  def creditCard(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value type is date.
     */
-  def date(value: js.Any): Boolean = js.native
+  def date(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value matches date string regexp.
     */
-  def dateString(value: js.Any): Boolean = js.native
+  def dateString(value: Any): Boolean = js.native
   
   /**
     * Checks if the given date objects' day equal given dayString parameter.
     */
-  def day(value: Date, dayString: String): Boolean = js.native
+  def day(value: js.Date, dayString: String): Boolean = js.native
   
   /**
     * Checks if the given date is in daylight saving time.
     */
-  def dayLightSavingTime(value: Date): Boolean = js.native
+  def dayLightSavingTime(value: js.Date): Boolean = js.native
   
   /**
     * Checks if the given value is decimal.
@@ -114,7 +113,7 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value type is defined.
     */
-  def defined(value: js.Any): Boolean = js.native
+  def defined(value: Any): Boolean = js.native
   
   /**
     * Checks if current device is desktop.
@@ -124,7 +123,7 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given object is a dom node.
     */
-  def domNode(value: js.Any): Boolean = js.native
+  def domNode(value: Any): Boolean = js.native
   
   /**
     * Checks if current browser is edge.
@@ -136,14 +135,14 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value matches email regexp.
     */
-  def email(value: js.Any): Boolean = js.native
+  def email(value: Any): Boolean = js.native
   
   //#endregion
   //#region Presence checks
   /**
     * Checks if the given value is empty.
     */
-  def empty(value: js.Any): Boolean = js.native
+  def empty(value: Any): Boolean = js.native
   
   /**
     * Checks if the given string ends with substring.
@@ -153,19 +152,19 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value matches extensible provisioning protocol phone regexp.
     */
-  def eppPhone(value: js.Any): Boolean = js.native
+  def eppPhone(value: Any): Boolean = js.native
   
   //#endregion
   //#region Arithmetic checks
   /**
     * Checks if the given values are equal.
     */
-  def equal(value1: js.Any, value2: js.Any): Boolean = js.native
+  def equal(value1: Any, value2: Any): Boolean = js.native
   
   /**
     * Checks if the given value type is error.
     */
-  def error(value: js.Any): Boolean = js.native
+  def error(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value is even.
@@ -175,12 +174,12 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value is existy. (not null or undefined)
     */
-  def existy(value: js.Any): Boolean = js.native
+  def existy(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value is falsy.
     */
-  def falsy(value: js.Any): Boolean = js.native
+  def falsy(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value is finite.
@@ -197,27 +196,27 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value type is function.
     */
-  def fn(value: js.Any): Boolean = js.native
+  def fn(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value type is function.
     */
-  def function(value: js.Any): Boolean = js.native
+  def function(value: Any): Boolean = js.native
   
   /**
     * Checks if the given date object indicate future.
     */
-  def future(value: Date): Boolean = js.native
+  def future(value: js.Date): Boolean = js.native
   
   /**
     * Checks if the given value matches hexcolor regexp.
     */
-  def hexColor(value: js.Any): Boolean = js.native
+  def hexColor(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value matches hexadecimal regexp.
     */
-  def hexadecimal(value: js.Any): Boolean = js.native
+  def hexadecimal(value: Any): Boolean = js.native
   
   //#endregion
   //#region Environment checks
@@ -238,37 +237,37 @@ trait IsStatic extends StObject {
   /**
     * Checks if date is within given range.
     */
-  def inDateRange(value: Date, start: Date, end: Date): Boolean = js.native
+  def inDateRange(value: js.Date, start: js.Date, end: js.Date): Boolean = js.native
   
   /**
     * Checks if the given date is between now and a month ago.
     */
-  def inLastMonth(value: Date): Boolean = js.native
+  def inLastMonth(value: js.Date): Boolean = js.native
   
   /**
     * Checks if the given date is between now and 7 days ago.
     */
-  def inLastWeek(value: Date): Boolean = js.native
+  def inLastWeek(value: js.Date): Boolean = js.native
   
   /**
     * Checks if the given date is between now and a year ago.
     */
-  def inLastYear(value: Date): Boolean = js.native
+  def inLastYear(value: js.Date): Boolean = js.native
   
   /**
     * Checks if the given date is between now and a month later.
     */
-  def inNextMonth(value: Date): Boolean = js.native
+  def inNextMonth(value: js.Date): Boolean = js.native
   
   /**
     * Checks if the given date is between now and 7 days later.
     */
-  def inNextWeek(value: Date): Boolean = js.native
+  def inNextWeek(value: js.Date): Boolean = js.native
   
   /**
     * Checks if the given date is between now and a year later.
     */
-  def inNextYear(value: Date): Boolean = js.native
+  def inNextYear(value: js.Date): Boolean = js.native
   
   //#endregion
   //#region String checks
@@ -295,7 +294,7 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value matches ip regexp.
     */
-  def ip(value: js.Any): Boolean = js.native
+  def ip(value: Any): Boolean = js.native
   
   /**
     * Checks if current device is iPad.
@@ -321,17 +320,17 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value matches ipv4 regexp
     */
-  def ipv4(value: js.Any): Boolean = js.native
+  def ipv4(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value matches ipv6 regexp
     */
-  def ipv6(value: js.Any): Boolean = js.native
+  def ipv6(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value type is pure json object.
     */
-  def json(value: js.Any): Boolean = js.native
+  def json(value: Any): Boolean = js.native
   
   /**
     * Checks if the given year number is a leap year
@@ -361,17 +360,17 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given date objects' month equal given monthString parameter.
     */
-  def month(value: Date, monthString: String): Boolean = js.native
+  def month(value: js.Date, monthString: String): Boolean = js.native
   
   /**
     * Checks if the given value type is NaN.
     */
-  def nan(value: js.Any): Boolean = js.native
+  def nan(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value matches North American numbering plan phone regexp.
     */
-  def nanpPhone(value: js.Any): Boolean = js.native
+  def nanpPhone(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value is negative.
@@ -381,17 +380,17 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value type is null.
     */
-  def `null`(value: js.Any): Boolean = js.native
+  def `null`(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value type is number.
     */
-  def number(value: js.Any): Boolean = js.native
+  def number(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value type is object.
     */
-  def `object`(value: js.Any): Boolean = js.native
+  def `object`(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value is odd.
@@ -423,7 +422,7 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given date object indicate past.
     */
-  def past(value: Date): Boolean = js.native
+  def past(value: js.Date): Boolean = js.native
   
   /**
     * Checks if current browser is phantom.
@@ -442,22 +441,22 @@ trait IsStatic extends StObject {
   /**
     * Checks if objects' property count is equal to given count.
     */
-  def propertyCount(value: js.Any, count: Double): Boolean = js.native
+  def propertyCount(value: Any, count: Double): Boolean = js.native
   
   /**
     * Checks if the given property is defined on object.
     */
-  def propertyDefined(value: js.Any, property: String): Boolean = js.native
+  def propertyDefined(value: Any, property: String): Boolean = js.native
   
   /**
     * Checks if the given date is in the parameter quarter.
     */
-  def quarterOfYear(value: Date, quarter: Double): Boolean = js.native
+  def quarterOfYear(value: js.Date, quarter: Double): Boolean = js.native
   
   /**
     * Checks if the given value type is RegExp.
     */
-  def regexp(value: js.Any): Boolean = js.native
+  def regexp(value: Any): Boolean = js.native
   
   /**
     * Checks if current browser is safari.
@@ -469,22 +468,22 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value types are same type.
     */
-  def sameType(value1: js.Any, value2: js.Any): Boolean = js.native
+  def sameType(value1: Any, value2: Any): Boolean = js.native
   
   /**
     * Checks if the given value matches social security number regexp.
     */
-  def socialSecurityNumber(value: js.Any): Boolean = js.native
+  def socialSecurityNumber(value: Any): Boolean = js.native
   
   /**
     * Checks if the given array is sorted.
     */
-  def sorted(value: js.Array[js.Any]): Boolean = js.native
+  def sorted(value: js.Array[Any]): Boolean = js.native
   
   /**
     * Checks if the given value is space.
     */
-  def space(value: js.Any): Boolean = js.native
+  def space(value: Any): Boolean = js.native
   
   /**
     * Checks if the given string starts with substring.
@@ -494,7 +493,7 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value type is string.
     */
-  def string(value: js.Any): Boolean = js.native
+  def string(value: Any): Boolean = js.native
   
   /**
     * Checks if current device is tablet.
@@ -504,19 +503,19 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value matches time string regexp.
     */
-  def timeString(value: js.Any): Boolean = js.native
+  def timeString(value: Any): Boolean = js.native
   
   //#endregion
   //#region Time checks
   /**
     * Checks if the given date object indicate today.
     */
-  def today(value: Date): Boolean = js.native
+  def today(value: js.Date): Boolean = js.native
   
   /**
     * Checks if the given date object indicate tomorrow.
     */
-  def tomorrow(value: Date): Boolean = js.native
+  def tomorrow(value: js.Date): Boolean = js.native
   
   /**
     * Checks if current device supports touch.
@@ -526,17 +525,17 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value is truthy. (existy and not false)
     */
-  def truthy(value: js.Any): Boolean = js.native
+  def truthy(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value matches UK post code regexp.
     */
-  def ukPostCode(value: js.Any): Boolean = js.native
+  def ukPostCode(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value type is undefined.
     */
-  def undefined(value: js.Any): Boolean = js.native
+  def undefined(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value is under maximum value.
@@ -553,27 +552,27 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given value matches url regexp.
     */
-  def url(value: js.Any): Boolean = js.native
+  def url(value: Any): Boolean = js.native
   
   /**
     * Checks if the given value matches US zip code regexp.
     */
-  def usZipCode(value: js.Any): Boolean = js.native
+  def usZipCode(value: Any): Boolean = js.native
   
   /**
     * Checks if the given date objects' day is weekday.
     */
-  def weekday(value: Date): Boolean = js.native
+  def weekday(value: js.Date): Boolean = js.native
   
   /**
     * Checks if the given date objects' day is weekend.
     */
-  def weekend(value: Date): Boolean = js.native
+  def weekend(value: js.Date): Boolean = js.native
   
   /**
     * Checks if the given object is window object.
     */
-  def windowObject(value: js.Any): Boolean = js.native
+  def windowObject(value: Any): Boolean = js.native
   
   /**
     * Checks if current OS is Windows.
@@ -598,10 +597,10 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given date objects' year equal given yearNumber parameter.
     */
-  def year(value: Date, yearNumber: Double): Boolean = js.native
+  def year(value: js.Date, yearNumber: Double): Boolean = js.native
   
   /**
     * Checks if the given date object indicate yesterday.
     */
-  def yesterday(value: Date): Boolean = js.native
+  def yesterday(value: js.Date): Boolean = js.native
 }

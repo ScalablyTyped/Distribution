@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.CellFormat")
 @js.native
-/* private */ class CellFormat ()
+/* private */ open class CellFormat ()
   extends StObject
      with typings.activexExcel.Excel.CellFormat {
   
@@ -85,7 +85,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Orientation: Double | XlOrientation = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var ShrinkToFit: Boolean | Null = js.native

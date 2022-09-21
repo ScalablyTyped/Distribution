@@ -36,6 +36,6 @@ object UnlinkIdentityInput {
     
     inline def setLoginsToRemove(value: LoginsList): Self = StObject.set(x, "LoginsToRemove", value.asInstanceOf[js.Any])
     
-    inline def setLoginsToRemoveVarargs(value: IdentityProviderName*): Self = StObject.set(x, "LoginsToRemove", js.Array(value :_*))
+    inline def setLoginsToRemoveVarargs(value: IdentityProviderName*): Self = StObject.set(x, "LoginsToRemove", js.Array(value*))
   }
 }

@@ -27,7 +27,7 @@ object RecipientIdentityVerification {
     
     inline def setInputOptionsUndefined: Self = StObject.set(x, "inputOptions", js.undefined)
     
-    inline def setInputOptionsVarargs(value: RecipientIdentityInputOption*): Self = StObject.set(x, "inputOptions", js.Array(value :_*))
+    inline def setInputOptionsVarargs(value: RecipientIdentityInputOption*): Self = StObject.set(x, "inputOptions", js.Array(value*))
     
     inline def setWorkflowId(value: String): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsParameter
   extends StObject
      with Object
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var storySort: js.UndefOr[StorySortParameter] = js.undefined
   
@@ -33,7 +33,17 @@ object OptionsParameter {
     inline def setStorySort(value: StorySortParameter): Self = StObject.set(x, "storySort", value.asInstanceOf[js.Any])
     
     inline def setStorySortFunction2(
-      value: (js.Tuple4[StoryId, js.Any, Parameters, Parameters], js.Tuple4[StoryId, js.Any, Parameters, Parameters]) => Boolean | Double
+      value: (js.Tuple4[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any, 
+          Any, 
+          Parameters, 
+          Parameters
+        ], js.Tuple4[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any, 
+          Any, 
+          Parameters, 
+          Parameters
+        ]) => Boolean | Double
     ): Self = StObject.set(x, "storySort", js.Any.fromFunction2(value))
     
     inline def setStorySortUndefined: Self = StObject.set(x, "storySort", js.undefined)

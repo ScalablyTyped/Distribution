@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "ScreenSizeBlock")
 @js.native
-class ScreenSizeBlock protected ()
+open class ScreenSizeBlock protected ()
   extends typings.babylonjs.nodeIndexMod.ScreenSizeBlock {
   /**
     * Creates a new ScreenSizeBlock

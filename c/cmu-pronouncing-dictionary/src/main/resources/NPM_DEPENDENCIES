@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cmu-pronouncing-dictionary" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cmu-pronouncing-dictionary" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

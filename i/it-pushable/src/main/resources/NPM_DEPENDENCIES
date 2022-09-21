@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-pushable" : "1.4.0"
+      "it-pushable" : "3.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "it-pushable" : "1.4.0"
+      "it-pushable" : "3.1.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,7 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.attachments
+import typings.arcgisJsApi.arcgisJsApiStrings.auto
 import typings.arcgisJsApi.arcgisJsApiStrings.list
 import typings.arcgisJsApi.arcgisJsApiStrings.preview
 import typings.arcgisJsApi.esri.content.Content
@@ -16,14 +17,32 @@ trait AttachmentsContent
      with contentContent {
   
   /**
-    * A string value indicating how to display the attachment.
+    * Describes the attachment's content in detail.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#description)
+    */
+  var description: String = js.native
+  
+  /**
+    * A string value indicating how to display an attachment.
+    *
+    * @default "auto"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#displayType)
     */
-  var displayType: preview | list = js.native
+  var displayType: auto | preview | list = js.native
+  
+  /**
+    * A heading indicating what the attachment's content represents.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#title)
+    */
+  var title: String = js.native
   
   /**
     * The type of popup element displayed.
+    *
+    * @default attachments
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#type)
     */

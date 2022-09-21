@@ -10,12 +10,12 @@ object splineCurveMod {
   
   @JSImport("three/src/extras/curves/SplineCurve", "SplineCurve")
   @js.native
-  class SplineCurve () extends Curve[Vector2] {
+  open class SplineCurve () extends Curve[Vector2] {
     def this(points: js.Array[Vector2]) = this()
     
     /**
-    	 * @default []
-    	 */
+      * @default []
+      */
     var points: js.Array[Vector2] = js.native
   }
 }

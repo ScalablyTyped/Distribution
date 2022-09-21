@@ -10,10 +10,10 @@ Helper functions for V8 coverage files.
 | ------------------ | :-------------: |
 | Full name          | @bcoe/v8-coverage |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 4 |
-| # downloads        | 165887979 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.4485266333333336E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/demurgos/v8-coverage#readme)

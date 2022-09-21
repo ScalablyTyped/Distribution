@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A `LogFile` is a log stored in the CAS.
-  */
 trait SchemaBuildBazelRemoteExecutionV2LogFile extends StObject {
   
   /**
@@ -15,13 +12,9 @@ trait SchemaBuildBazelRemoteExecutionV2LogFile extends StObject {
   var digest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /**
-    * This is a hint as to the purpose of the log, and is set to true if the
-    * log is human-readable text that can be usefully displayed to a user, and
-    * false otherwise. For instance, if a command-line client wishes to print
-    * the server logs to the terminal for a failed action, this allows it to
-    * avoid displaying a binary file.
+    * This is a hint as to the purpose of the log, and is set to true if the log is human-readable text that can be usefully displayed to a user, and false otherwise. For instance, if a command-line client wishes to print the server logs to the terminal for a failed action, this allows it to avoid displaying a binary file.
     */
-  var humanReadable: js.UndefOr[Boolean] = js.undefined
+  var humanReadable: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2LogFile {
   
@@ -37,6 +30,8 @@ object SchemaBuildBazelRemoteExecutionV2LogFile {
     inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
     inline def setHumanReadable(value: Boolean): Self = StObject.set(x, "humanReadable", value.asInstanceOf[js.Any])
+    
+    inline def setHumanReadableNull: Self = StObject.set(x, "humanReadable", null)
     
     inline def setHumanReadableUndefined: Self = StObject.set(x, "humanReadable", js.undefined)
   }

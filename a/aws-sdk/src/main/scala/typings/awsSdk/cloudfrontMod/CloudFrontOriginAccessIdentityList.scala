@@ -12,7 +12,7 @@ trait CloudFrontOriginAccessIdentityList extends StObject {
   var IsTruncated: Boolean
   
   /**
-    * A complex type that contains one CloudFrontOriginAccessIdentitySummary element for each origin access identity that was created by the current AWS account.
+    * A complex type that contains one CloudFrontOriginAccessIdentitySummary element for each origin access identity that was created by the current Amazon Web Services account.
     */
   var Items: js.UndefOr[CloudFrontOriginAccessIdentitySummaryList] = js.undefined
   
@@ -32,7 +32,7 @@ trait CloudFrontOriginAccessIdentityList extends StObject {
   var NextMarker: js.UndefOr[String] = js.undefined
   
   /**
-    * The number of CloudFront origin access identities that were created by the current AWS account. 
+    * The number of CloudFront origin access identities that were created by the current Amazon Web Services account.
     */
   var Quantity: integer
 }
@@ -51,7 +51,7 @@ object CloudFrontOriginAccessIdentityList {
     
     inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    inline def setItemsVarargs(value: CloudFrontOriginAccessIdentitySummary*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: CloudFrontOriginAccessIdentitySummary*): Self = StObject.set(x, "Items", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

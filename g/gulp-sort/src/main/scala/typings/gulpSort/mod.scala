@@ -1,6 +1,5 @@
 package typings.gulpSort
 
-import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /** Sort files in stream by path or any custom sort comparator */
-  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
-  inline def apply(comparator: IComparatorFunction): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(comparator.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  inline def apply(options: IOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(comparator: IComparatorFunction): Any = ^.asInstanceOf[js.Dynamic].apply(comparator.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(options: IOptions): Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("gulp-sort", JSImport.Namespace)
   @js.native
@@ -32,6 +31,15 @@ object mod {
       * 1 if file1 should be after file2
       */
     var comparator: js.UndefOr[IComparatorFunction] = js.undefined
+    
+    /** Whether to use a custom sort function. */
+    var customSortFn: js.UndefOr[
+        js.Function2[
+          /* files */ js.Array[File], 
+          /* comparator */ js.UndefOr[IComparatorFunction], 
+          js.Array[File]
+        ]
+      ] = js.undefined
   }
   object IOptions {
     
@@ -49,6 +57,12 @@ object mod {
       inline def setComparator(value: (/* file1 */ File, /* file2 */ File) => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
       
       inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+      
+      inline def setCustomSortFn(
+        value: (/* files */ js.Array[File], /* comparator */ js.UndefOr[IComparatorFunction]) => js.Array[File]
+      ): Self = StObject.set(x, "customSortFn", js.Any.fromFunction2(value))
+      
+      inline def setCustomSortFnUndefined: Self = StObject.set(x, "customSortFn", js.undefined)
     }
   }
 }

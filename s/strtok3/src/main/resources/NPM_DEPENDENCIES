@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "strtok3" : "6.0.4"
+      "strtok3" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "strtok3" : "6.0.4"
+      "strtok3" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

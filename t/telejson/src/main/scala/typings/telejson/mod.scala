@@ -1,6 +1,5 @@
 package typings.telejson
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExpMatchArray
 import typings.telejson.anon.PartialOptions
 import org.scalablytyped.runtime.StObject
@@ -15,15 +14,15 @@ object mod {
   
   inline def isJSON(input: String): RegExpMatchArray | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSON")(input.asInstanceOf[js.Any]).asInstanceOf[RegExpMatchArray | Null]
   
-  inline def parse(data: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def parse(data: String, options: PartialOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parse(data: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def parse(data: String, options: PartialOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def replacer(options: Options): js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("replacer")(options.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]]
+  inline def replacer(options: Options): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("replacer")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def reviver(options: Options): js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ ValueContainer | String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("reviver")(options.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ ValueContainer | String, js.Any]]
+  inline def reviver(options: Options): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reviver")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def stringify(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def stringify(data: js.Any, options: PartialOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(data: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(data: Any, options: PartialOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait Options extends StObject {
     
@@ -82,27 +81,6 @@ object mod {
       inline def setSpace(value: Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
       inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
-    }
-  }
-  
-  trait ValueContainer
-    extends StObject
-       with /* keys */ StringDictionary[js.Any] {
-    
-    var `_constructor-name_`: js.UndefOr[String] = js.undefined
-  }
-  object ValueContainer {
-    
-    inline def apply(): ValueContainer = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ValueContainer]
-    }
-    
-    extension [Self <: ValueContainer](x: Self) {
-      
-      inline def `set_constructor-name_`(value: String): Self = StObject.set(x, "_constructor-name_", value.asInstanceOf[js.Any])
-      
-      inline def `set_constructor-name_Undefined`: Self = StObject.set(x, "_constructor-name_", js.undefined)
     }
   }
 }

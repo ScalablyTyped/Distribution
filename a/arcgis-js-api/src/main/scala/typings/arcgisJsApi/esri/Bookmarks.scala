@@ -3,7 +3,6 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`bookmark-edit`
 import typings.arcgisJsApi.arcgisJsApiStrings.`bookmark-select`
-import typings.arcgisJsApi.arcgisJsApiStrings.`select-bookmark`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,13 +14,6 @@ trait Bookmarks
      with GoTo {
   
   /**
-    * Specifies how new bookmarks will be created if [editingEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled) is set to `true`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#bookmarkCreationOptions)
-    */
-  var bookmarkCreationOptions: BookmarkCreationOptions = js.native
-  
-  /**
     * A collection of [Bookmark](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html)s.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#bookmarks)
@@ -29,7 +21,23 @@ trait Bookmarks
   var bookmarks: Collection[Bookmark] = js.native
   
   /**
+    * Specifies how new bookmarks will be created if [editingEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled) is set to `true`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#defaultCreateOptions)
+    */
+  var defaultCreateOptions: BookmarkOptions = js.native
+  
+  /**
+    * Specifies how bookmarks will be edited, if [editingEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled) is set to `true`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#defaultEditOptions)
+    */
+  var defaultEditOptions: BookmarkOptions = js.native
+  
+  /**
     * When true, the widget is visually withdrawn and cannot be interacted with.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#disabled)
     */
@@ -37,6 +45,8 @@ trait Bookmarks
   
   /**
     * Indicates whether the bookmarks are able to be edited.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled)
     */
@@ -47,7 +57,16 @@ trait Bookmarks
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#goTo)
     */
-  def goTo(Bookmark: Bookmark): js.Promise[js.Any] = js.native
+  def goTo(Bookmark: Bookmark): js.Promise[Any] = js.native
+  
+  /**
+    * Indicates the heading level to use for the message "No bookmarks" when no bookmarks are available in this widget.
+    *
+    * @default 2
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#headingLevel)
+    */
+  var headingLevel: Double = js.native
   
   /**
     * The widget's default CSS icon class.
@@ -60,8 +79,6 @@ trait Bookmarks
   def on_bookmarkedit(name: `bookmark-edit`, eventHandler: BookmarksBookmarkEditEventHandler): IHandle = js.native
   @JSName("on")
   def on_bookmarkselect(name: `bookmark-select`, eventHandler: BookmarksBookmarkSelectEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_selectbookmark(name: `select-bookmark`, eventHandler: BookmarksSelectBookmarkEventHandler): IHandle = js.native
   
   /**
     * The view from which the widget will operate.

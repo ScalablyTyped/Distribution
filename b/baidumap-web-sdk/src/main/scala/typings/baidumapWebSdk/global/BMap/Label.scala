@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.Label")
 @js.native
-class Label protected ()
+open class Label protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.Label {
   def this(content: String) = this()

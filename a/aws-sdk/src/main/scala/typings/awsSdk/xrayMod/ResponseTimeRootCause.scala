@@ -33,6 +33,6 @@ object ResponseTimeRootCause {
     
     inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
     
-    inline def setServicesVarargs(value: ResponseTimeRootCauseService*): Self = StObject.set(x, "Services", js.Array(value :_*))
+    inline def setServicesVarargs(value: ResponseTimeRootCauseService*): Self = StObject.set(x, "Services", js.Array(value*))
   }
 }

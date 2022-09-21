@@ -1,34 +1,44 @@
 package typings.cesium.anon
 
-import typings.std.ArrayBuffer
+import typings.cesium.mod.HeightmapEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ChildTileMask extends StObject {
   
-  var buffer: ArrayBuffer
+  var buffer: js.typedarray.Int8Array | js.typedarray.Uint8Array | js.typedarray.Int16Array | js.typedarray.Uint16Array | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Float32Array | js.typedarray.Float64Array
   
   var childTileMask: js.UndefOr[Double] = js.undefined
   
   var createdByUpsampling: js.UndefOr[Boolean] = js.undefined
   
-  var credits: js.UndefOr[js.Array[typings.cesium.mod.Credit]] = js.undefined
+  var encoding: js.UndefOr[HeightmapEncoding] = js.undefined
   
-  var negativeAltitudeExponentBias: Double
+  var height: Double
   
-  var negativeElevationThreshold: Double
+  var structure: js.UndefOr[ElementMultiplier] = js.undefined
+  
+  var waterMask: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
+  
+  var width: Double
 }
 object ChildTileMask {
   
-  inline def apply(buffer: ArrayBuffer, negativeAltitudeExponentBias: Double, negativeElevationThreshold: Double): ChildTileMask = {
-    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], negativeAltitudeExponentBias = negativeAltitudeExponentBias.asInstanceOf[js.Any], negativeElevationThreshold = negativeElevationThreshold.asInstanceOf[js.Any])
+  inline def apply(
+    buffer: js.typedarray.Int8Array | js.typedarray.Uint8Array | js.typedarray.Int16Array | js.typedarray.Uint16Array | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Float32Array | js.typedarray.Float64Array,
+    height: Double,
+    width: Double
+  ): ChildTileMask = {
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildTileMask]
   }
   
   extension [Self <: ChildTileMask](x: Self) {
     
-    inline def setBuffer(value: ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(
+      value: js.typedarray.Int8Array | js.typedarray.Uint8Array | js.typedarray.Int16Array | js.typedarray.Uint16Array | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Float32Array | js.typedarray.Float64Array
+    ): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     inline def setChildTileMask(value: Double): Self = StObject.set(x, "childTileMask", value.asInstanceOf[js.Any])
     
@@ -38,14 +48,20 @@ object ChildTileMask {
     
     inline def setCreatedByUpsamplingUndefined: Self = StObject.set(x, "createdByUpsampling", js.undefined)
     
-    inline def setCredits(value: js.Array[typings.cesium.mod.Credit]): Self = StObject.set(x, "credits", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: HeightmapEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    inline def setCreditsUndefined: Self = StObject.set(x, "credits", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    inline def setCreditsVarargs(value: typings.cesium.mod.Credit*): Self = StObject.set(x, "credits", js.Array(value :_*))
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setNegativeAltitudeExponentBias(value: Double): Self = StObject.set(x, "negativeAltitudeExponentBias", value.asInstanceOf[js.Any])
+    inline def setStructure(value: ElementMultiplier): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
     
-    inline def setNegativeElevationThreshold(value: Double): Self = StObject.set(x, "negativeElevationThreshold", value.asInstanceOf[js.Any])
+    inline def setStructureUndefined: Self = StObject.set(x, "structure", js.undefined)
+    
+    inline def setWaterMask(value: js.typedarray.Uint8Array): Self = StObject.set(x, "waterMask", value.asInstanceOf[js.Any])
+    
+    inline def setWaterMaskUndefined: Self = StObject.set(x, "waterMask", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -1,14 +1,26 @@
 package typings.std
 
 import typings.std.Intl.DateTimeFormatPartTypes
+import typings.std.Intl.DisplayNamesFallback
+import typings.std.Intl.DisplayNamesLanguageDisplay
+import typings.std.Intl.DisplayNamesType
+import typings.std.Intl.ES2018NumberFormatPartType
+import typings.std.Intl.ES2020NumberFormatPartType
 import typings.std.Intl.LDMLPluralRule
+import typings.std.Intl.ListFormatLocaleMatcher
+import typings.std.Intl.ListFormatStyle
+import typings.std.Intl.ListFormatType
+import typings.std.Intl.LocaleCollationCaseFirst
+import typings.std.Intl.LocaleHourCycleKey
 import typings.std.Intl.NumberFormatPartTypes
 import typings.std.Intl.PluralRuleType
 import typings.std.Intl.RelativeTimeFormatLocaleMatcher
 import typings.std.Intl.RelativeTimeFormatNumeric
 import typings.std.Intl.RelativeTimeFormatStyle
 import typings.std.Intl.RelativeTimeFormatUnit
+import typings.std.Intl.RelativeTimeFormatUnitSingular
 import typings.std.WebAssembly.ImportExportKind
+import typings.std.WebAssembly.TableKind
 import typings.std.WebAssembly.ValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,6 +32,7 @@ object stdStrings {
   sealed trait default
     extends StObject
        with ColorSpaceConversion
+       with IDBTransactionDurability
        with NotificationPermission
        with PremultiplyAlpha
        with RequestCache
@@ -28,9 +41,11 @@ object stdStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait `2d`
-    extends StObject
-       with OffscreenRenderingContextId
+  sealed trait `2-digit` extends StObject
+  inline def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]
+  
+  @js.native
+  sealed trait `2d` extends StObject
   inline def `2d`: `2d` = "2d".asInstanceOf[`2d`]
   
   @js.native
@@ -66,12 +81,6 @@ object stdStrings {
   inline def AudioProcessingEvent: AudioProcessingEvent = "AudioProcessingEvent".asInstanceOf[AudioProcessingEvent]
   
   @js.native
-  sealed trait BT
-    extends StObject
-       with MSTransportType
-  inline def BT: BT = "BT".asInstanceOf[BT]
-  
-  @js.native
   sealed trait BeforeUnloadEvent extends StObject
   inline def BeforeUnloadEvent: BeforeUnloadEvent = "BeforeUnloadEvent".asInstanceOf[BeforeUnloadEvent]
   
@@ -86,6 +95,10 @@ object stdStrings {
   @js.native
   sealed trait BigUint64Array extends StObject
   inline def BigUint64Array: BigUint64Array = "BigUint64Array".asInstanceOf[BigUint64Array]
+  
+  @js.native
+  sealed trait BlobEvent extends StObject
+  inline def BlobEvent: BlobEvent = "BlobEvent".asInstanceOf[BlobEvent]
   
   @js.native
   sealed trait ClipboardEvent extends StObject
@@ -104,8 +117,8 @@ object stdStrings {
   inline def CustomEvent: CustomEvent = "CustomEvent".asInstanceOf[CustomEvent]
   
   @js.native
-  sealed trait DeviceLightEvent extends StObject
-  inline def DeviceLightEvent: DeviceLightEvent = "DeviceLightEvent".asInstanceOf[DeviceLightEvent]
+  sealed trait DOMContentLoaded extends StObject
+  inline def DOMContentLoaded: DOMContentLoaded = "DOMContentLoaded".asInstanceOf[DOMContentLoaded]
   
   @js.native
   sealed trait DeviceMotionEvent extends StObject
@@ -124,6 +137,18 @@ object stdStrings {
   inline def EXT_blend_minmax: EXT_blend_minmax = "EXT_blend_minmax".asInstanceOf[EXT_blend_minmax]
   
   @js.native
+  sealed trait EXT_color_buffer_float extends StObject
+  inline def EXT_color_buffer_float: EXT_color_buffer_float = "EXT_color_buffer_float".asInstanceOf[EXT_color_buffer_float]
+  
+  @js.native
+  sealed trait EXT_color_buffer_half_float extends StObject
+  inline def EXT_color_buffer_half_float: EXT_color_buffer_half_float = "EXT_color_buffer_half_float".asInstanceOf[EXT_color_buffer_half_float]
+  
+  @js.native
+  sealed trait EXT_float_blend extends StObject
+  inline def EXT_float_blend: EXT_float_blend = "EXT_float_blend".asInstanceOf[EXT_float_blend]
+  
+  @js.native
   sealed trait EXT_frag_depth extends StObject
   inline def EXT_frag_depth: EXT_frag_depth = "EXT_frag_depth".asInstanceOf[EXT_frag_depth]
   
@@ -140,12 +165,6 @@ object stdStrings {
   inline def EXT_texture_filter_anisotropic: EXT_texture_filter_anisotropic = "EXT_texture_filter_anisotropic".asInstanceOf[EXT_texture_filter_anisotropic]
   
   @js.native
-  sealed trait Embedded
-    extends StObject
-       with MSTransportType
-  inline def Embedded: Embedded = "Embedded".asInstanceOf[Embedded]
-  
-  @js.native
   sealed trait ErrorEvent extends StObject
   inline def ErrorEvent: ErrorEvent = "ErrorEvent".asInstanceOf[ErrorEvent]
   
@@ -156,10 +175,6 @@ object stdStrings {
   @js.native
   sealed trait Events extends StObject
   inline def Events: Events = "Events".asInstanceOf[Events]
-  
-  @js.native
-  sealed trait FIDO_2_0 extends StObject
-  inline def FIDO_2_0: FIDO_2_0 = "FIDO_2_0".asInstanceOf[FIDO_2_0]
   
   @js.native
   sealed trait FinalizationRegistry extends StObject
@@ -178,8 +193,12 @@ object stdStrings {
   inline def FocusEvent: FocusEvent = "FocusEvent".asInstanceOf[FocusEvent]
   
   @js.native
-  sealed trait FocusNavigationEvent extends StObject
-  inline def FocusNavigationEvent: FocusNavigationEvent = "FocusNavigationEvent".asInstanceOf[FocusNavigationEvent]
+  sealed trait FontFaceSetLoadEvent extends StObject
+  inline def FontFaceSetLoadEvent: FontFaceSetLoadEvent = "FontFaceSetLoadEvent".asInstanceOf[FontFaceSetLoadEvent]
+  
+  @js.native
+  sealed trait FormDataEvent extends StObject
+  inline def FormDataEvent: FormDataEvent = "FormDataEvent".asInstanceOf[FormDataEvent]
   
   @js.native
   sealed trait GamepadEvent extends StObject
@@ -216,100 +235,12 @@ object stdStrings {
   inline def Int8Array: Int8Array = "Int8Array".asInstanceOf[Int8Array]
   
   @js.native
+  sealed trait KHR_parallel_shader_compile extends StObject
+  inline def KHR_parallel_shader_compile: KHR_parallel_shader_compile = "KHR_parallel_shader_compile".asInstanceOf[KHR_parallel_shader_compile]
+  
+  @js.native
   sealed trait KeyboardEvent extends StObject
   inline def KeyboardEvent: KeyboardEvent = "KeyboardEvent".asInstanceOf[KeyboardEvent]
-  
-  @js.native
-  sealed trait ListeningStateChangedEvent extends StObject
-  inline def ListeningStateChangedEvent: ListeningStateChangedEvent = "ListeningStateChangedEvent".asInstanceOf[ListeningStateChangedEvent]
-  
-  @js.native
-  sealed trait MSCandidateWindowHide extends StObject
-  inline def MSCandidateWindowHide: MSCandidateWindowHide = "MSCandidateWindowHide".asInstanceOf[MSCandidateWindowHide]
-  
-  @js.native
-  sealed trait MSCandidateWindowShow extends StObject
-  inline def MSCandidateWindowShow: MSCandidateWindowShow = "MSCandidateWindowShow".asInstanceOf[MSCandidateWindowShow]
-  
-  @js.native
-  sealed trait MSCandidateWindowUpdate extends StObject
-  inline def MSCandidateWindowUpdate: MSCandidateWindowUpdate = "MSCandidateWindowUpdate".asInstanceOf[MSCandidateWindowUpdate]
-  
-  @js.native
-  sealed trait MSGestureChange extends StObject
-  inline def MSGestureChange: MSGestureChange = "MSGestureChange".asInstanceOf[MSGestureChange]
-  
-  @js.native
-  sealed trait MSGestureDoubleTap extends StObject
-  inline def MSGestureDoubleTap: MSGestureDoubleTap = "MSGestureDoubleTap".asInstanceOf[MSGestureDoubleTap]
-  
-  @js.native
-  sealed trait MSGestureEnd extends StObject
-  inline def MSGestureEnd: MSGestureEnd = "MSGestureEnd".asInstanceOf[MSGestureEnd]
-  
-  @js.native
-  sealed trait MSGestureEvent extends StObject
-  inline def MSGestureEvent: MSGestureEvent = "MSGestureEvent".asInstanceOf[MSGestureEvent]
-  
-  @js.native
-  sealed trait MSGestureHold extends StObject
-  inline def MSGestureHold: MSGestureHold = "MSGestureHold".asInstanceOf[MSGestureHold]
-  
-  @js.native
-  sealed trait MSGestureStart extends StObject
-  inline def MSGestureStart: MSGestureStart = "MSGestureStart".asInstanceOf[MSGestureStart]
-  
-  @js.native
-  sealed trait MSGestureTap extends StObject
-  inline def MSGestureTap: MSGestureTap = "MSGestureTap".asInstanceOf[MSGestureTap]
-  
-  @js.native
-  sealed trait MSInertiaStart extends StObject
-  inline def MSInertiaStart: MSInertiaStart = "MSInertiaStart".asInstanceOf[MSInertiaStart]
-  
-  @js.native
-  sealed trait MSMediaKeyMessageEvent extends StObject
-  inline def MSMediaKeyMessageEvent: MSMediaKeyMessageEvent = "MSMediaKeyMessageEvent".asInstanceOf[MSMediaKeyMessageEvent]
-  
-  @js.native
-  sealed trait MSMediaKeyNeededEvent extends StObject
-  inline def MSMediaKeyNeededEvent: MSMediaKeyNeededEvent = "MSMediaKeyNeededEvent".asInstanceOf[MSMediaKeyNeededEvent]
-  
-  @js.native
-  sealed trait MSPointerCancel extends StObject
-  inline def MSPointerCancel: MSPointerCancel = "MSPointerCancel".asInstanceOf[MSPointerCancel]
-  
-  @js.native
-  sealed trait MSPointerDown extends StObject
-  inline def MSPointerDown: MSPointerDown = "MSPointerDown".asInstanceOf[MSPointerDown]
-  
-  @js.native
-  sealed trait MSPointerEnter extends StObject
-  inline def MSPointerEnter: MSPointerEnter = "MSPointerEnter".asInstanceOf[MSPointerEnter]
-  
-  @js.native
-  sealed trait MSPointerEvent extends StObject
-  inline def MSPointerEvent: MSPointerEvent = "MSPointerEvent".asInstanceOf[MSPointerEvent]
-  
-  @js.native
-  sealed trait MSPointerLeave extends StObject
-  inline def MSPointerLeave: MSPointerLeave = "MSPointerLeave".asInstanceOf[MSPointerLeave]
-  
-  @js.native
-  sealed trait MSPointerMove extends StObject
-  inline def MSPointerMove: MSPointerMove = "MSPointerMove".asInstanceOf[MSPointerMove]
-  
-  @js.native
-  sealed trait MSPointerOut extends StObject
-  inline def MSPointerOut: MSPointerOut = "MSPointerOut".asInstanceOf[MSPointerOut]
-  
-  @js.native
-  sealed trait MSPointerOver extends StObject
-  inline def MSPointerOver: MSPointerOver = "MSPointerOver".asInstanceOf[MSPointerOver]
-  
-  @js.native
-  sealed trait MSPointerUp extends StObject
-  inline def MSPointerUp: MSPointerUp = "MSPointerUp".asInstanceOf[MSPointerUp]
   
   @js.native
   sealed trait MediaEncryptedEvent extends StObject
@@ -324,12 +255,8 @@ object stdStrings {
   inline def MediaQueryListEvent: MediaQueryListEvent = "MediaQueryListEvent".asInstanceOf[MediaQueryListEvent]
   
   @js.native
-  sealed trait MediaStreamErrorEvent extends StObject
-  inline def MediaStreamErrorEvent: MediaStreamErrorEvent = "MediaStreamErrorEvent".asInstanceOf[MediaStreamErrorEvent]
-  
-  @js.native
-  sealed trait MediaStreamEvent extends StObject
-  inline def MediaStreamEvent: MediaStreamEvent = "MediaStreamEvent".asInstanceOf[MediaStreamEvent]
+  sealed trait MediaRecorderErrorEvent extends StObject
+  inline def MediaRecorderErrorEvent: MediaRecorderErrorEvent = "MediaRecorderErrorEvent".asInstanceOf[MediaRecorderErrorEvent]
   
   @js.native
   sealed trait MediaStreamTrackEvent extends StObject
@@ -356,9 +283,7 @@ object stdStrings {
   inline def MutationEvents: MutationEvents = "MutationEvents".asInstanceOf[MutationEvents]
   
   @js.native
-  sealed trait NFC
-    extends StObject
-       with MSTransportType
+  sealed trait NFC extends StObject
   inline def NFC: NFC = "NFC".asInstanceOf[NFC]
   
   @js.native
@@ -402,16 +327,16 @@ object stdStrings {
   inline def OES_vertex_array_object: OES_vertex_array_object = "OES_vertex_array_object".asInstanceOf[OES_vertex_array_object]
   
   @js.native
+  sealed trait OVR_multiview2 extends StObject
+  inline def OVR_multiview2: OVR_multiview2 = "OVR_multiview2".asInstanceOf[OVR_multiview2]
+  
+  @js.native
   sealed trait ObjectConstructor extends StObject
   inline def ObjectConstructor: ObjectConstructor = "ObjectConstructor".asInstanceOf[ObjectConstructor]
   
   @js.native
   sealed trait OfflineAudioCompletionEvent extends StObject
   inline def OfflineAudioCompletionEvent: OfflineAudioCompletionEvent = "OfflineAudioCompletionEvent".asInstanceOf[OfflineAudioCompletionEvent]
-  
-  @js.native
-  sealed trait OverflowEvent extends StObject
-  inline def OverflowEvent: OverflowEvent = "OverflowEvent".asInstanceOf[OverflowEvent]
   
   @js.native
   sealed trait PageTransitionEvent extends StObject
@@ -422,12 +347,12 @@ object stdStrings {
   inline def Partial: Partial = "Partial".asInstanceOf[Partial]
   
   @js.native
-  sealed trait PaymentRequestUpdateEvent extends StObject
-  inline def PaymentRequestUpdateEvent: PaymentRequestUpdateEvent = "PaymentRequestUpdateEvent".asInstanceOf[PaymentRequestUpdateEvent]
+  sealed trait PaymentMethodChangeEvent extends StObject
+  inline def PaymentMethodChangeEvent: PaymentMethodChangeEvent = "PaymentMethodChangeEvent".asInstanceOf[PaymentMethodChangeEvent]
   
   @js.native
-  sealed trait PermissionRequestedEvent extends StObject
-  inline def PermissionRequestedEvent: PermissionRequestedEvent = "PermissionRequestedEvent".asInstanceOf[PermissionRequestedEvent]
+  sealed trait PaymentRequestUpdateEvent extends StObject
+  inline def PaymentRequestUpdateEvent: PaymentRequestUpdateEvent = "PaymentRequestUpdateEvent".asInstanceOf[PaymentRequestUpdateEvent]
   
   @js.native
   sealed trait Pick extends StObject
@@ -462,24 +387,8 @@ object stdStrings {
   inline def RTCDataChannelEvent: RTCDataChannelEvent = "RTCDataChannelEvent".asInstanceOf[RTCDataChannelEvent]
   
   @js.native
-  sealed trait RTCDtlsTransportStateChangedEvent extends StObject
-  inline def RTCDtlsTransportStateChangedEvent: RTCDtlsTransportStateChangedEvent = "RTCDtlsTransportStateChangedEvent".asInstanceOf[RTCDtlsTransportStateChangedEvent]
-  
-  @js.native
   sealed trait RTCErrorEvent extends StObject
   inline def RTCErrorEvent: RTCErrorEvent = "RTCErrorEvent".asInstanceOf[RTCErrorEvent]
-  
-  @js.native
-  sealed trait RTCIceCandidatePairChangedEvent extends StObject
-  inline def RTCIceCandidatePairChangedEvent: RTCIceCandidatePairChangedEvent = "RTCIceCandidatePairChangedEvent".asInstanceOf[RTCIceCandidatePairChangedEvent]
-  
-  @js.native
-  sealed trait RTCIceGathererEvent extends StObject
-  inline def RTCIceGathererEvent: RTCIceGathererEvent = "RTCIceGathererEvent".asInstanceOf[RTCIceGathererEvent]
-  
-  @js.native
-  sealed trait RTCIceTransportStateChangedEvent extends StObject
-  inline def RTCIceTransportStateChangedEvent: RTCIceTransportStateChangedEvent = "RTCIceTransportStateChangedEvent".asInstanceOf[RTCIceTransportStateChangedEvent]
   
   @js.native
   sealed trait RTCPeerConnectionIceErrorEvent extends StObject
@@ -488,14 +397,6 @@ object stdStrings {
   @js.native
   sealed trait RTCPeerConnectionIceEvent extends StObject
   inline def RTCPeerConnectionIceEvent: RTCPeerConnectionIceEvent = "RTCPeerConnectionIceEvent".asInstanceOf[RTCPeerConnectionIceEvent]
-  
-  @js.native
-  sealed trait RTCSsrcConflictEvent extends StObject
-  inline def RTCSsrcConflictEvent: RTCSsrcConflictEvent = "RTCSsrcConflictEvent".asInstanceOf[RTCSsrcConflictEvent]
-  
-  @js.native
-  sealed trait RTCStatsEvent extends StObject
-  inline def RTCStatsEvent: RTCStatsEvent = "RTCStatsEvent".asInstanceOf[RTCStatsEvent]
   
   @js.native
   sealed trait RTCTrackEvent extends StObject
@@ -510,40 +411,12 @@ object stdStrings {
   inline def Required: Required = "Required".asInstanceOf[Required]
   
   @js.native
-  sealed trait SVGUnload extends StObject
-  inline def SVGUnload: SVGUnload = "SVGUnload".asInstanceOf[SVGUnload]
-  
-  @js.native
-  sealed trait SVGZoom extends StObject
-  inline def SVGZoom: SVGZoom = "SVGZoom".asInstanceOf[SVGZoom]
-  
-  @js.native
-  sealed trait SVGZoomEvent extends StObject
-  inline def SVGZoomEvent: SVGZoomEvent = "SVGZoomEvent".asInstanceOf[SVGZoomEvent]
-  
-  @js.native
-  sealed trait SVGZoomEvents extends StObject
-  inline def SVGZoomEvents: SVGZoomEvents = "SVGZoomEvents".asInstanceOf[SVGZoomEvents]
-  
-  @js.native
-  sealed trait ScopedCred extends StObject
-  inline def ScopedCred: ScopedCred = "ScopedCred".asInstanceOf[ScopedCred]
-  
-  @js.native
   sealed trait SecurityPolicyViolationEvent extends StObject
   inline def SecurityPolicyViolationEvent: SecurityPolicyViolationEvent = "SecurityPolicyViolationEvent".asInstanceOf[SecurityPolicyViolationEvent]
   
   @js.native
-  sealed trait ServiceWorkerMessageEvent extends StObject
-  inline def ServiceWorkerMessageEvent: ServiceWorkerMessageEvent = "ServiceWorkerMessageEvent".asInstanceOf[ServiceWorkerMessageEvent]
-  
-  @js.native
   sealed trait SharedArrayBuffer extends StObject
   inline def SharedArrayBuffer: SharedArrayBuffer = "SharedArrayBuffer".asInstanceOf[SharedArrayBuffer]
-  
-  @js.native
-  sealed trait SpeechRecognitionEvent extends StObject
-  inline def SpeechRecognitionEvent: SpeechRecognitionEvent = "SpeechRecognitionEvent".asInstanceOf[SpeechRecognitionEvent]
   
   @js.native
   sealed trait SpeechSynthesisErrorEvent extends StObject
@@ -558,8 +431,8 @@ object stdStrings {
   inline def StorageEvent: StorageEvent = "StorageEvent".asInstanceOf[StorageEvent]
   
   @js.native
-  sealed trait TextEvent extends StObject
-  inline def TextEvent: TextEvent = "TextEvent".asInstanceOf[TextEvent]
+  sealed trait SubmitEvent extends StObject
+  inline def SubmitEvent: SubmitEvent = "SubmitEvent".asInstanceOf[SubmitEvent]
   
   @js.native
   sealed trait TouchEvent extends StObject
@@ -582,12 +455,6 @@ object stdStrings {
   inline def UIEvents: UIEvents = "UIEvents".asInstanceOf[UIEvents]
   
   @js.native
-  sealed trait USB
-    extends StObject
-       with MSTransportType
-  inline def USB: USB = "USB".asInstanceOf[USB]
-  
-  @js.native
   sealed trait Uint16Array extends StObject
   inline def Uint16Array: Uint16Array = "Uint16Array".asInstanceOf[Uint16Array]
   
@@ -604,20 +471,20 @@ object stdStrings {
   inline def Uint8ClampedArray: Uint8ClampedArray = "Uint8ClampedArray".asInstanceOf[Uint8ClampedArray]
   
   @js.native
-  sealed trait VRDisplayEvent extends StObject
-  inline def VRDisplayEvent: VRDisplayEvent = "VRDisplayEvent".asInstanceOf[VRDisplayEvent]
-  
-  @js.native
-  sealed trait `VRDisplayEvent ` extends StObject
-  inline def `VRDisplayEvent `: `VRDisplayEvent ` = ("VRDisplayEvent ").asInstanceOf[`VRDisplayEvent `]
-  
-  @js.native
   sealed trait WEBGL_color_buffer_float extends StObject
   inline def WEBGL_color_buffer_float: WEBGL_color_buffer_float = "WEBGL_color_buffer_float".asInstanceOf[WEBGL_color_buffer_float]
   
   @js.native
   sealed trait WEBGL_compressed_texture_astc extends StObject
   inline def WEBGL_compressed_texture_astc: WEBGL_compressed_texture_astc = "WEBGL_compressed_texture_astc".asInstanceOf[WEBGL_compressed_texture_astc]
+  
+  @js.native
+  sealed trait WEBGL_compressed_texture_etc extends StObject
+  inline def WEBGL_compressed_texture_etc: WEBGL_compressed_texture_etc = "WEBGL_compressed_texture_etc".asInstanceOf[WEBGL_compressed_texture_etc]
+  
+  @js.native
+  sealed trait WEBGL_compressed_texture_etc1 extends StObject
+  inline def WEBGL_compressed_texture_etc1: WEBGL_compressed_texture_etc1 = "WEBGL_compressed_texture_etc1".asInstanceOf[WEBGL_compressed_texture_etc1]
   
   @js.native
   sealed trait WEBGL_compressed_texture_s3tc extends StObject
@@ -664,7 +531,6 @@ object stdStrings {
     extends StObject
        with CanPlayTypeResult
        with DirectionSetting
-       with GamepadHand
        with GamepadMappingType
        with ReferrerPolicy
        with RequestDestination
@@ -691,18 +557,16 @@ object stdStrings {
   inline def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
-  sealed trait accelerometer
-    extends StObject
-       with PermissionName
-  inline def accelerometer: accelerometer = "accelerometer".asInstanceOf[accelerometer]
-  
-  @js.native
   sealed trait accumulate
     extends StObject
        with CompositeOperation
        with CompositeOperationOrAuto
        with IterationCompositeOperation
   inline def accumulate: accumulate = "accumulate".asInstanceOf[accumulate]
+  
+  @js.native
+  sealed trait acronym extends StObject
+  inline def acronym: acronym = "acronym".asInstanceOf[acronym]
   
   @js.native
   sealed trait activated
@@ -719,7 +583,7 @@ object stdStrings {
   @js.native
   sealed trait active
     extends StObject
-       with ListeningState
+       with AnimationReplaceState
        with RTCIceTcpCandidateType
   inline def active: active = "active".asInstanceOf[active]
   
@@ -762,16 +626,21 @@ object stdStrings {
   sealed trait all
     extends StObject
        with ClientTypes
-       with RTCIceGatherPolicy
        with RTCIceTransportPolicy
        with ServiceWorkerUpdateViaCache
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait allow
+  sealed trait `all-petite-caps`
     extends StObject
-       with MSWebViewPermissionState
-  inline def allow: allow = "allow".asInstanceOf[allow]
+       with CanvasFontVariantCaps
+  inline def `all-petite-caps`: `all-petite-caps` = "all-petite-caps".asInstanceOf[`all-petite-caps`]
+  
+  @js.native
+  sealed trait `all-small-caps`
+    extends StObject
+       with CanvasFontVariantCaps
+  inline def `all-small-caps`: `all-small-caps` = "all-small-caps".asInstanceOf[`all-small-caps`]
   
   @js.native
   sealed trait allpass
@@ -804,10 +673,16 @@ object stdStrings {
   inline def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait `ambient-light-sensor`
-    extends StObject
-       with PermissionName
-  inline def `ambient-light-sensor`: `ambient-light-sensor` = "ambient-light-sensor".asInstanceOf[`ambient-light-sensor`]
+  sealed trait animate extends StObject
+  inline def animate: animate = "animate".asInstanceOf[animate]
+  
+  @js.native
+  sealed trait animateMotion extends StObject
+  inline def animateMotion: animateMotion = "animateMotion".asInstanceOf[animateMotion]
+  
+  @js.native
+  sealed trait animateTransform extends StObject
+  inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
   
   @js.native
   sealed trait animationcancel extends StObject
@@ -838,18 +713,15 @@ object stdStrings {
   inline def any: any = "any".asInstanceOf[any]
   
   @js.native
-  sealed trait anyfunc extends StObject
+  sealed trait anyfunc
+    extends StObject
+       with TableKind
+       with ValueType
   inline def anyfunc: anyfunc = "anyfunc".asInstanceOf[anyfunc]
   
   @js.native
   sealed trait applet extends StObject
   inline def applet: applet = "applet".asInstanceOf[applet]
-  
-  @js.native
-  sealed trait application
-    extends StObject
-       with DisplayCaptureSurfaceType
-  inline def application: application = "application".asInstanceOf[application]
   
   @js.native
   sealed trait applicationSlashxhtmlPlussignxml
@@ -887,6 +759,12 @@ object stdStrings {
   inline def async: async = "async".asInstanceOf[async]
   
   @js.native
+  sealed trait attachment
+    extends StObject
+       with PresentationStyle
+  inline def attachment: attachment = "attachment".asInstanceOf[attachment]
+  
+  @js.native
   sealed trait attributes
     extends StObject
        with MutationRecordType
@@ -911,10 +789,6 @@ object stdStrings {
   inline def `audio-hardware`: `audio-hardware` = "audio-hardware".asInstanceOf[`audio-hardware`]
   
   @js.native
-  sealed trait audioend extends StObject
-  inline def audioend: audioend = "audioend".asInstanceOf[audioend]
-  
-  @js.native
   sealed trait audioinput
     extends StObject
        with MediaDeviceKind
@@ -931,10 +805,6 @@ object stdStrings {
   inline def audioprocess: audioprocess = "audioprocess".asInstanceOf[audioprocess]
   
   @js.native
-  sealed trait audiostart extends StObject
-  inline def audiostart: audiostart = "audiostart".asInstanceOf[audiostart]
-  
-  @js.native
   sealed trait audioworklet
     extends StObject
        with RequestDestination
@@ -949,12 +819,13 @@ object stdStrings {
   @js.native
   sealed trait auto
     extends StObject
+       with CanvasFontKerning
+       with CanvasTextRendering
        with CompositeOperationOrAuto
        with FillMode
        with FullscreenNavigationUI
        with NotificationDirection
        with PositionAlignSetting
-       with RTCDtlsRole
        with RelativeTimeFormatNumeric
        with ScrollBehavior
        with ScrollRestoration
@@ -971,14 +842,8 @@ object stdStrings {
   @js.native
   sealed trait back_forward
     extends StObject
-       with NavigationType
+       with NavigationTimingType
   inline def back_forward: back_forward = "back_forward".asInstanceOf[back_forward]
-  
-  @js.native
-  sealed trait `background-sync`
-    extends StObject
-       with PermissionName
-  inline def `background-sync`: `background-sync` = "background-sync".asInstanceOf[`background-sync`]
   
   @js.native
   sealed trait backward extends StObject
@@ -1039,6 +904,10 @@ object stdStrings {
   inline def beforeend: beforeend = "beforeend".asInstanceOf[beforeend]
   
   @js.native
+  sealed trait beforeinput extends StObject
+  inline def beforeinput: beforeinput = "beforeinput".asInstanceOf[beforeinput]
+  
+  @js.native
   sealed trait beforeprint extends StObject
   inline def beforeprint: beforeprint = "beforeprint".asInstanceOf[beforeprint]
   
@@ -1049,6 +918,7 @@ object stdStrings {
   @js.native
   sealed trait `best fit`
     extends StObject
+       with ListFormatLocaleMatcher
        with RelativeTimeFormatLocaleMatcher
   inline def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
   
@@ -1059,17 +929,26 @@ object stdStrings {
   inline def bevel: bevel = "bevel".asInstanceOf[bevel]
   
   @js.native
-  sealed trait bitmaprenderer
-    extends StObject
-       with OffscreenRenderingContextId
+  sealed trait bgsound extends StObject
+  inline def bgsound: bgsound = "bgsound".asInstanceOf[bgsound]
+  
+  @js.native
+  sealed trait big extends StObject
+  inline def big: big = "big".asInstanceOf[big]
+  
+  @js.native
+  sealed trait bitmaprenderer extends StObject
   inline def bitmaprenderer: bitmaprenderer = "bitmaprenderer".asInstanceOf[bitmaprenderer]
   
   @js.native
   sealed trait ble
     extends StObject
        with AuthenticatorTransport
-       with Transport
   inline def ble: ble = "ble".asInstanceOf[ble]
+  
+  @js.native
+  sealed trait blink extends StObject
+  inline def blink: blink = "blink".asInstanceOf[blink]
   
   @js.native
   sealed trait blob
@@ -1087,18 +966,18 @@ object stdStrings {
   inline def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   
   @js.native
-  sealed trait bluetooth
-    extends StObject
-       with PermissionName
-  inline def bluetooth: bluetooth = "bluetooth".asInstanceOf[bluetooth]
-  
-  @js.native
   sealed trait blur extends StObject
   inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
   sealed trait body extends StObject
   inline def body: body = "body".asInstanceOf[body]
+  
+  @js.native
+  sealed trait `border-box`
+    extends StObject
+       with ResizeObserverBoxOptions
+  inline def `border-box`: `border-box` = "border-box".asInstanceOf[`border-box`]
   
   @js.native
   sealed trait both
@@ -1111,10 +990,6 @@ object stdStrings {
     extends StObject
        with CanvasTextBaseline
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
-  
-  @js.native
-  sealed trait bounce extends StObject
-  inline def bounce: bounce = "bounce".asInstanceOf[bounce]
   
   @js.native
   sealed trait boundary extends StObject
@@ -1131,6 +1006,21 @@ object stdStrings {
   inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
+  sealed trait bt470bg
+    extends StObject
+       with VideoColorPrimaries
+       with VideoMatrixCoefficients
+  inline def bt470bg: bt470bg = "bt470bg".asInstanceOf[bt470bg]
+  
+  @js.native
+  sealed trait bt709
+    extends StObject
+       with VideoColorPrimaries
+       with VideoMatrixCoefficients
+       with VideoTransferCharacteristics
+  inline def bt709: bt709 = "bt709".asInstanceOf[bt709]
+  
+  @js.native
   sealed trait bufferedamountlow extends StObject
   inline def bufferedamountlow: bufferedamountlow = "bufferedamountlow".asInstanceOf[bufferedamountlow]
   
@@ -1145,22 +1035,10 @@ object stdStrings {
   inline def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait byob extends StObject
-  inline def byob: byob = "byob".asInstanceOf[byob]
-  
-  @js.native
-  sealed trait bytes extends StObject
-  inline def bytes: bytes = "bytes".asInstanceOf[bytes]
-  
-  @js.native
-  sealed trait cached extends StObject
-  inline def cached: cached = "cached".asInstanceOf[cached]
-  
-  @js.native
-  sealed trait camera
+  sealed trait calendar
     extends StObject
-       with PermissionName
-  inline def camera: camera = "camera".asInstanceOf[camera]
+       with DisplayNamesType
+  inline def calendar: calendar = "calendar".asInstanceOf[calendar]
   
   @js.native
   sealed trait cancel extends StObject
@@ -1173,16 +1051,10 @@ object stdStrings {
   inline def canceled: canceled = "canceled".asInstanceOf[canceled]
   
   @js.native
-  sealed trait cancelled
-    extends StObject
-       with RTCStatsIceCandidatePairState
-  inline def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
-  
-  @js.native
-  sealed trait candidatepair
+  sealed trait `candidate-pair`
     extends StObject
        with RTCStatsType
-  inline def candidatepair: candidatepair = "candidatepair".asInstanceOf[candidatepair]
+  inline def `candidate-pair`: `candidate-pair` = "candidate-pair".asInstanceOf[`candidate-pair`]
   
   @js.native
   sealed trait canplay extends StObject
@@ -1221,6 +1093,12 @@ object stdStrings {
        with PositionAlignSetting
        with ScrollLogicalPosition
   inline def center: center = "center".asInstanceOf[center]
+  
+  @js.native
+  sealed trait certificate
+    extends StObject
+       with RTCStatsType
+  inline def certificate: certificate = "certificate".asInstanceOf[certificate]
   
   @js.native
   sealed trait change extends StObject
@@ -1276,20 +1154,8 @@ object stdStrings {
   inline def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait client
-    extends StObject
-       with RTCDtlsRole
-  inline def client: client = "client".asInstanceOf[client]
-  
-  @js.native
   sealed trait clipPath extends StObject
   inline def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
-  
-  @js.native
-  sealed trait clipboard
-    extends StObject
-       with PermissionName
-  inline def clipboard: clipboard = "clipboard".asInstanceOf[clipboard]
   
   @js.native
   sealed trait close extends StObject
@@ -1311,14 +1177,30 @@ object stdStrings {
   inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
+  sealed trait `closed-by-application`
+    extends StObject
+       with MediaKeySessionClosedReason
+  inline def `closed-by-application`: `closed-by-application` = "closed-by-application".asInstanceOf[`closed-by-application`]
+  
+  @js.native
   sealed trait closing
     extends StObject
        with RTCDataChannelState
   inline def closing: closing = "closing".asInstanceOf[closing]
   
   @js.native
-  sealed trait code extends StObject
+  sealed trait code
+    extends StObject
+       with DisplayNamesFallback
+       with ES2018NumberFormatPartType
+       with NumberFormatPartTypes
   inline def code: code = "code".asInstanceOf[code]
+  
+  @js.native
+  sealed trait codec
+    extends StObject
+       with RTCStatsType
+  inline def codec: codec = "codec".asInstanceOf[codec]
   
   @js.native
   sealed trait col extends StObject
@@ -1329,8 +1211,29 @@ object stdStrings {
   inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
-  sealed trait compassneedscalibration extends StObject
-  inline def compassneedscalibration: compassneedscalibration = "compassneedscalibration".asInstanceOf[compassneedscalibration]
+  sealed trait color
+    extends StObject
+       with GlobalCompositeOperation
+  inline def color: color = "color".asInstanceOf[color]
+  
+  @js.native
+  sealed trait `color-burn`
+    extends StObject
+       with GlobalCompositeOperation
+  inline def `color-burn`: `color-burn` = "color-burn".asInstanceOf[`color-burn`]
+  
+  @js.native
+  sealed trait `color-dodge`
+    extends StObject
+       with GlobalCompositeOperation
+  inline def `color-dodge`: `color-dodge` = "color-dodge".asInstanceOf[`color-dodge`]
+  
+  @js.native
+  sealed trait compact
+    extends StObject
+       with ES2020NumberFormatPartType
+       with NumberFormatPartTypes
+  inline def compact: compact = "compact".asInstanceOf[compact]
   
   @js.native
   sealed trait complete
@@ -1348,6 +1251,34 @@ object stdStrings {
   inline def completed: completed = "completed".asInstanceOf[completed]
   
   @js.native
+  sealed trait compositionend extends StObject
+  inline def compositionend: compositionend = "compositionend".asInstanceOf[compositionend]
+  
+  @js.native
+  sealed trait compositionstart extends StObject
+  inline def compositionstart: compositionstart = "compositionstart".asInstanceOf[compositionstart]
+  
+  @js.native
+  sealed trait compositionupdate extends StObject
+  inline def compositionupdate: compositionupdate = "compositionupdate".asInstanceOf[compositionupdate]
+  
+  @js.native
+  sealed trait condensed
+    extends StObject
+       with CanvasFontStretch
+  inline def condensed: condensed = "condensed".asInstanceOf[condensed]
+  
+  @js.native
+  sealed trait conjunction
+    extends StObject
+       with ListFormatType
+  inline def conjunction: conjunction = "conjunction".asInstanceOf[conjunction]
+  
+  @js.native
+  sealed trait connect extends StObject
+  inline def connect: connect = "connect".asInstanceOf[connect]
+  
+  @js.native
   sealed trait connected
     extends StObject
        with RTCDtlsTransportState
@@ -1355,6 +1286,7 @@ object stdStrings {
        with RTCIceTransportState
        with RTCPeerConnectionState
        with RTCSctpTransportState
+       with RemotePlaybackState
   inline def connected: connected = "connected".asInstanceOf[connected]
   
   @js.native
@@ -1364,6 +1296,7 @@ object stdStrings {
        with RTCDtlsTransportState
        with RTCPeerConnectionState
        with RTCSctpTransportState
+       with RemotePlaybackState
   inline def connecting: connecting = "connecting".asInstanceOf[connecting]
   
   @js.native
@@ -1371,27 +1304,23 @@ object stdStrings {
   inline def connectionstatechange: connectionstatechange = "connectionstatechange".asInstanceOf[connectionstatechange]
   
   @js.native
-  sealed trait contextmenu extends StObject
-  inline def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
+  sealed trait `content-box`
+    extends StObject
+       with ResizeObserverBoxOptions
+  inline def `content-box`: `content-box` = "content-box".asInstanceOf[`content-box`]
   
   @js.native
-  sealed trait controlled
-    extends StObject
-       with RTCIceRole
-  inline def controlled: controlled = "controlled".asInstanceOf[controlled]
+  sealed trait contextmenu extends StObject
+  inline def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   
   @js.native
   sealed trait controllerchange extends StObject
   inline def controllerchange: controllerchange = "controllerchange".asInstanceOf[controllerchange]
   
   @js.native
-  sealed trait controlling
+  sealed trait copy
     extends StObject
-       with RTCIceRole
-  inline def controlling: controlling = "controlling".asInstanceOf[controlling]
-  
-  @js.native
-  sealed trait copy extends StObject
+       with GlobalCompositeOperation
   inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
@@ -1416,12 +1345,20 @@ object stdStrings {
   inline def `cross-platform`: `cross-platform` = "cross-platform".asInstanceOf[`cross-platform`]
   
   @js.native
+  sealed trait csrc
+    extends StObject
+       with RTCStatsType
+  inline def csrc: csrc = "csrc".asInstanceOf[csrc]
+  
+  @js.native
   sealed trait cuechange extends StObject
   inline def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
   
   @js.native
   sealed trait currency
     extends StObject
+       with DisplayNamesType
+       with ES2018NumberFormatPartType
        with NumberFormatPartTypes
   inline def currency: currency = "currency".asInstanceOf[currency]
   
@@ -1436,8 +1373,20 @@ object stdStrings {
   inline def cut: cut = "cut".asInstanceOf[cut]
   
   @js.native
+  sealed trait darken
+    extends StObject
+       with GlobalCompositeOperation
+  inline def darken: darken = "darken".asInstanceOf[darken]
+  
+  @js.native
   sealed trait data extends StObject
   inline def data: data = "data".asInstanceOf[data]
+  
+  @js.native
+  sealed trait `data-channel`
+    extends StObject
+       with RTCStatsType
+  inline def `data-channel`: `data-channel` = "data-channel".asInstanceOf[`data-channel`]
   
   @js.native
   sealed trait `data-channel-failure`
@@ -1446,9 +1395,11 @@ object stdStrings {
   inline def `data-channel-failure`: `data-channel-failure` = "data-channel-failure".asInstanceOf[`data-channel-failure`]
   
   @js.native
-  sealed trait datachannel
-    extends StObject
-       with RTCStatsType
+  sealed trait dataavailable extends StObject
+  inline def dataavailable: dataavailable = "dataavailable".asInstanceOf[dataavailable]
+  
+  @js.native
+  sealed trait datachannel extends StObject
   inline def datachannel: datachannel = "datachannel".asInstanceOf[datachannel]
   
   @js.native
@@ -1456,10 +1407,17 @@ object stdStrings {
   inline def datalist: datalist = "datalist".asInstanceOf[datalist]
   
   @js.native
+  sealed trait dateTimeField
+    extends StObject
+       with DisplayNamesType
+  inline def dateTimeField: dateTimeField = "dateTimeField".asInstanceOf[dateTimeField]
+  
+  @js.native
   sealed trait day
     extends StObject
        with DateTimeFormatPartTypes
        with RelativeTimeFormatUnit
+       with RelativeTimeFormatUnitSingular
   inline def day: day = "day".asInstanceOf[day]
   
   @js.native
@@ -1485,6 +1443,7 @@ object stdStrings {
   @js.native
   sealed trait decimal
     extends StObject
+       with ES2018NumberFormatPartType
        with NumberFormatPartTypes
   inline def decimal: decimal = "decimal".asInstanceOf[decimal]
   
@@ -1501,12 +1460,6 @@ object stdStrings {
   inline def decrypt: decrypt = "decrypt".asInstanceOf[decrypt]
   
   @js.native
-  sealed trait defer
-    extends StObject
-       with MSWebViewPermissionState
-  inline def defer: defer = "defer".asInstanceOf[defer]
-  
-  @js.native
   sealed trait defs extends StObject
   inline def defs: defs = "defs".asInstanceOf[defs]
   
@@ -1515,24 +1468,17 @@ object stdStrings {
   inline def del: del = "del".asInstanceOf[del]
   
   @js.native
-  sealed trait delivery
+  sealed trait delta
     extends StObject
-       with PaymentShippingType
-  inline def delivery: delivery = "delivery".asInstanceOf[delivery]
+       with RTCEncodedVideoFrameType
+  inline def delta: delta = "delta".asInstanceOf[delta]
   
   @js.native
   sealed trait denied
     extends StObject
        with NotificationPermission
        with PermissionState
-       with PushPermissionState
   inline def denied: denied = "denied".asInstanceOf[denied]
-  
-  @js.native
-  sealed trait deny
-    extends StObject
-       with MSWebViewPermissionState
-  inline def deny: deny = "deny".asInstanceOf[deny]
   
   @js.native
   sealed trait deriveBits
@@ -1557,22 +1503,42 @@ object stdStrings {
   inline def descriptions: descriptions = "descriptions".asInstanceOf[descriptions]
   
   @js.native
+  sealed trait `destination-atop`
+    extends StObject
+       with GlobalCompositeOperation
+  inline def `destination-atop`: `destination-atop` = "destination-atop".asInstanceOf[`destination-atop`]
+  
+  @js.native
+  sealed trait `destination-in`
+    extends StObject
+       with GlobalCompositeOperation
+  inline def `destination-in`: `destination-in` = "destination-in".asInstanceOf[`destination-in`]
+  
+  @js.native
+  sealed trait `destination-out`
+    extends StObject
+       with GlobalCompositeOperation
+  inline def `destination-out`: `destination-out` = "destination-out".asInstanceOf[`destination-out`]
+  
+  @js.native
+  sealed trait `destination-over`
+    extends StObject
+       with GlobalCompositeOperation
+  inline def `destination-over`: `destination-over` = "destination-over".asInstanceOf[`destination-over`]
+  
+  @js.native
   sealed trait details extends StObject
   inline def details: details = "details".asInstanceOf[details]
   
   @js.native
-  sealed trait `device-info`
+  sealed trait `device-pixel-content-box`
     extends StObject
-       with PermissionName
-  inline def `device-info`: `device-info` = "device-info".asInstanceOf[`device-info`]
+       with ResizeObserverBoxOptions
+  inline def `device-pixel-content-box`: `device-pixel-content-box` = "device-pixel-content-box".asInstanceOf[`device-pixel-content-box`]
   
   @js.native
   sealed trait devicechange extends StObject
   inline def devicechange: devicechange = "devicechange".asInstanceOf[devicechange]
-  
-  @js.native
-  sealed trait devicelight extends StObject
-  inline def devicelight: devicelight = "devicelight".asInstanceOf[devicelight]
   
   @js.native
   sealed trait devicemotion extends StObject
@@ -1583,16 +1549,24 @@ object stdStrings {
   inline def deviceorientation: deviceorientation = "deviceorientation".asInstanceOf[deviceorientation]
   
   @js.native
-  sealed trait deviceorientationabsolute extends StObject
-  inline def deviceorientationabsolute: deviceorientationabsolute = "deviceorientationabsolute".asInstanceOf[deviceorientationabsolute]
-  
-  @js.native
   sealed trait dfn extends StObject
   inline def dfn: dfn = "dfn".asInstanceOf[dfn]
   
   @js.native
+  sealed trait dialect
+    extends StObject
+       with DisplayNamesLanguageDisplay
+  inline def dialect: dialect = "dialect".asInstanceOf[dialect]
+  
+  @js.native
   sealed trait dialog extends StObject
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
+  
+  @js.native
+  sealed trait difference
+    extends StObject
+       with GlobalCompositeOperation
+  inline def difference: difference = "difference".asInstanceOf[difference]
   
   @js.native
   sealed trait dir extends StObject
@@ -1606,17 +1580,20 @@ object stdStrings {
   inline def direct: direct = "direct".asInstanceOf[direct]
   
   @js.native
+  sealed trait directory
+    extends StObject
+       with FileSystemHandleKind
+  inline def directory: directory = "directory".asInstanceOf[directory]
+  
+  @js.native
   sealed trait disabled
     extends StObject
-       with RTCDtxStatus
        with TextTrackMode
   inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait disambiguation
-    extends StObject
-       with ListeningState
-  inline def disambiguation: disambiguation = "disambiguation".asInstanceOf[disambiguation]
+  sealed trait disconnect extends StObject
+  inline def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
   
   @js.native
   sealed trait disconnected
@@ -1624,6 +1601,7 @@ object stdStrings {
        with RTCIceConnectionState
        with RTCIceTransportState
        with RTCPeerConnectionState
+       with RemotePlaybackState
   inline def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
   
   @js.native
@@ -1638,6 +1616,18 @@ object stdStrings {
     extends StObject
        with ChannelInterpretation
   inline def discrete: discrete = "discrete".asInstanceOf[discrete]
+  
+  @js.native
+  sealed trait disjunction
+    extends StObject
+       with ListFormatType
+  inline def disjunction: disjunction = "disjunction".asInstanceOf[disjunction]
+  
+  @js.native
+  sealed trait `display-p3`
+    extends StObject
+       with PredefinedColorSpace
+  inline def `display-p3`: `display-p3` = "display-p3".asInstanceOf[`display-p3`]
   
   @js.native
   sealed trait div extends StObject
@@ -1661,16 +1651,6 @@ object stdStrings {
   inline def done: done = "done".asInstanceOf[done]
   
   @js.native
-  sealed trait down
-    extends StObject
-       with NavigationReason
-  inline def down: down = "down".asInstanceOf[down]
-  
-  @js.native
-  sealed trait downloading extends StObject
-  inline def downloading: downloading = "downloading".asInstanceOf[downloading]
-  
-  @js.native
   sealed trait drag extends StObject
   inline def drag: drag = "drag".asInstanceOf[drag]
   
@@ -1681,10 +1661,6 @@ object stdStrings {
   @js.native
   sealed trait dragenter extends StObject
   inline def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
-  
-  @js.native
-  sealed trait dragexit extends StObject
-  inline def dragexit: dragexit = "dragexit".asInstanceOf[dragexit]
   
   @js.native
   sealed trait dragleave extends StObject
@@ -1717,6 +1693,14 @@ object stdStrings {
   inline def durationchange: durationchange = "durationchange".asInstanceOf[durationchange]
   
   @js.native
+  sealed trait eager extends StObject
+  inline def eager: eager = "eager".asInstanceOf[eager]
+  
+  @js.native
+  sealed trait element extends StObject
+  inline def element: element = "element".asInstanceOf[element]
+  
+  @js.native
   sealed trait ellipse extends StObject
   inline def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
   
@@ -1735,10 +1719,10 @@ object stdStrings {
   inline def emptied: emptied = "emptied".asInstanceOf[emptied]
   
   @js.native
-  sealed trait enabled
+  sealed trait empty
     extends StObject
-       with RTCDtxStatus
-  inline def enabled: enabled = "enabled".asInstanceOf[enabled]
+       with RTCEncodedVideoFrameType
+  inline def empty: empty = "empty".asInstanceOf[empty]
   
   @js.native
   sealed trait encrypt
@@ -1761,6 +1745,10 @@ object stdStrings {
   inline def end: end = "end".asInstanceOf[end]
   
   @js.native
+  sealed trait endRange extends StObject
+  inline def endRange: endRange = "endRange".asInstanceOf[endRange]
+  
+  @js.native
   sealed trait ended
     extends StObject
        with MediaStreamTrackState
@@ -1768,8 +1756,22 @@ object stdStrings {
   inline def ended: ended = "ended".asInstanceOf[ended]
   
   @js.native
+  sealed trait enforce
+    extends StObject
+       with SecurityPolicyViolationEventDisposition
+  inline def enforce: enforce = "enforce".asInstanceOf[enforce]
+  
+  @js.native
+  sealed trait engineering extends StObject
+  inline def engineering: engineering = "engineering".asInstanceOf[engineering]
+  
+  @js.native
   sealed trait enter extends StObject
   inline def enter: enter = "enter".asInstanceOf[enter]
+  
+  @js.native
+  sealed trait enterpictureinpicture extends StObject
+  inline def enterpictureinpicture: enterpictureinpicture = "enterpictureinpicture".asInstanceOf[enterpictureinpicture]
   
   @js.native
   sealed trait enterprise
@@ -1798,6 +1800,7 @@ object stdStrings {
   @js.native
   sealed trait error
     extends StObject
+       with FontFaceLoadStatus
        with RequestRedirect
        with ResponseType
   inline def error: error = "error".asInstanceOf[error]
@@ -1809,8 +1812,30 @@ object stdStrings {
   inline def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   
   @js.native
+  sealed trait exceptZero extends StObject
+  inline def exceptZero: exceptZero = "exceptZero".asInstanceOf[exceptZero]
+  
+  @js.native
+  sealed trait exclusion
+    extends StObject
+       with GlobalCompositeOperation
+  inline def exclusion: exclusion = "exclusion".asInstanceOf[exclusion]
+  
+  @js.native
+  sealed trait exclusive
+    extends StObject
+       with LockMode
+  inline def exclusive: exclusive = "exclusive".asInstanceOf[exclusive]
+  
+  @js.native
   sealed trait exit extends StObject
   inline def exit: exit = "exit".asInstanceOf[exit]
+  
+  @js.native
+  sealed trait expanded
+    extends StObject
+       with CanvasFontStretch
+  inline def expanded: expanded = "expanded".asInstanceOf[expanded]
   
   @js.native
   sealed trait expired
@@ -1825,10 +1850,50 @@ object stdStrings {
   inline def explicit: explicit = "explicit".asInstanceOf[explicit]
   
   @js.native
+  sealed trait exponentInteger
+    extends StObject
+       with ES2020NumberFormatPartType
+       with NumberFormatPartTypes
+  inline def exponentInteger: exponentInteger = "exponentInteger".asInstanceOf[exponentInteger]
+  
+  @js.native
+  sealed trait exponentMinusSign
+    extends StObject
+       with ES2020NumberFormatPartType
+       with NumberFormatPartTypes
+  inline def exponentMinusSign: exponentMinusSign = "exponentMinusSign".asInstanceOf[exponentMinusSign]
+  
+  @js.native
+  sealed trait exponentSeparator
+    extends StObject
+       with ES2020NumberFormatPartType
+       with NumberFormatPartTypes
+  inline def exponentSeparator: exponentSeparator = "exponentSeparator".asInstanceOf[exponentSeparator]
+  
+  @js.native
   sealed trait exponential
     extends StObject
        with DistanceModelType
   inline def exponential: exponential = "exponential".asInstanceOf[exponential]
+  
+  @js.native
+  sealed trait externref
+    extends StObject
+       with TableKind
+       with ValueType
+  inline def externref: externref = "externref".asInstanceOf[externref]
+  
+  @js.native
+  sealed trait `extra-condensed`
+    extends StObject
+       with CanvasFontStretch
+  inline def `extra-condensed`: `extra-condensed` = "extra-condensed".asInstanceOf[`extra-condensed`]
+  
+  @js.native
+  sealed trait `extra-expanded`
+    extends StObject
+       with CanvasFontStretch
+  inline def `extra-expanded`: `extra-expanded` = "extra-expanded".asInstanceOf[`extra-expanded`]
   
   @js.native
   sealed trait f32
@@ -1857,6 +1922,12 @@ object stdStrings {
        with RTCPeerConnectionState
        with RTCStatsIceCandidatePairState
   inline def failed: failed = "failed".asInstanceOf[failed]
+  
+  @js.native
+  sealed trait `false`
+    extends StObject
+       with LocaleCollationCaseFirst
+  inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
   sealed trait feBlend extends StObject
@@ -1889,6 +1960,10 @@ object stdStrings {
   @js.native
   sealed trait feDistantLight extends StObject
   inline def feDistantLight: feDistantLight = "feDistantLight".asInstanceOf[feDistantLight]
+  
+  @js.native
+  sealed trait feDropShadow extends StObject
+  inline def feDropShadow: feDropShadow = "feDropShadow".asInstanceOf[feDropShadow]
   
   @js.native
   sealed trait feFlood extends StObject
@@ -1973,6 +2048,13 @@ object stdStrings {
   inline def figure: figure = "figure".asInstanceOf[figure]
   
   @js.native
+  sealed trait file
+    extends StObject
+       with FileSystemHandleKind
+       with MediaDecodingType
+  inline def file: file = "file".asInstanceOf[file]
+  
+  @js.native
   sealed trait filter extends StObject
   inline def filter: filter = "filter".asInstanceOf[filter]
   
@@ -2041,6 +2123,10 @@ object stdStrings {
   inline def form: form = "form".asInstanceOf[form]
   
   @js.native
+  sealed trait formdata extends StObject
+  inline def formdata: formdata = "formdata".asInstanceOf[formdata]
+  
+  @js.native
   sealed trait forward extends StObject
   inline def forward: forward = "forward".asInstanceOf[forward]
   
@@ -2053,11 +2139,20 @@ object stdStrings {
   @js.native
   sealed trait fraction
     extends StObject
+       with ES2018NumberFormatPartType
        with NumberFormatPartTypes
   inline def fraction: fraction = "fraction".asInstanceOf[fraction]
   
   @js.native
-  sealed trait frame extends StObject
+  sealed trait fractionalSecond
+    extends StObject
+       with DateTimeFormatPartTypes
+  inline def fractionalSecond: fractionalSecond = "fractionalSecond".asInstanceOf[fractionalSecond]
+  
+  @js.native
+  sealed trait frame
+    extends StObject
+       with RequestDestination
   inline def frame: frame = "frame".asInstanceOf[frame]
   
   @js.native
@@ -2073,6 +2168,10 @@ object stdStrings {
   @js.native
   sealed trait fulfilled extends StObject
   inline def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
+  
+  @js.native
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
   sealed trait fullscreenchange extends StObject
@@ -2093,6 +2192,14 @@ object stdStrings {
   inline def g: g = "g".asInstanceOf[g]
   
   @js.native
+  sealed trait gamepadconnected extends StObject
+  inline def gamepadconnected: gamepadconnected = "gamepadconnected".asInstanceOf[gamepadconnected]
+  
+  @js.native
+  sealed trait gamepaddisconnected extends StObject
+  inline def gamepaddisconnected: gamepaddisconnected = "gamepaddisconnected".asInstanceOf[gamepaddisconnected]
+  
+  @js.native
   sealed trait gathering
     extends StObject
        with RTCIceGathererState
@@ -2106,9 +2213,14 @@ object stdStrings {
   @js.native
   sealed trait geolocation
     extends StObject
-       with MSWebViewPermissionType
        with PermissionName
   inline def geolocation: geolocation = "geolocation".asInstanceOf[geolocation]
+  
+  @js.native
+  sealed trait geometricPrecision
+    extends StObject
+       with CanvasTextRendering
+  inline def geometricPrecision: geometricPrecision = "geometricPrecision".asInstanceOf[geometricPrecision]
   
   @js.native
   sealed trait global
@@ -2125,28 +2237,50 @@ object stdStrings {
     extends StObject
        with NotificationPermission
        with PermissionState
-       with PushPermissionState
   inline def granted: granted = "granted".asInstanceOf[granted]
+  
+  @js.native
+  sealed trait grapheme extends StObject
+  inline def grapheme: grapheme = "grapheme".asInstanceOf[grapheme]
   
   @js.native
   sealed trait group
     extends StObject
+       with ES2018NumberFormatPartType
        with NumberFormatPartTypes
   inline def group: group = "group".asInstanceOf[group]
-  
-  @js.native
-  sealed trait gyroscope
-    extends StObject
-       with PermissionName
-  inline def gyroscope: gyroscope = "gyroscope".asInstanceOf[gyroscope]
   
   @js.native
   sealed trait h1 extends StObject
   inline def h1: h1 = "h1".asInstanceOf[h1]
   
   @js.native
+  sealed trait h11
+    extends StObject
+       with LocaleHourCycleKey
+  inline def h11: h11 = "h11".asInstanceOf[h11]
+  
+  @js.native
+  sealed trait h12
+    extends StObject
+       with LocaleHourCycleKey
+  inline def h12: h12 = "h12".asInstanceOf[h12]
+  
+  @js.native
   sealed trait h2 extends StObject
   inline def h2: h2 = "h2".asInstanceOf[h2]
+  
+  @js.native
+  sealed trait h23
+    extends StObject
+       with LocaleHourCycleKey
+  inline def h23: h23 = "h23".asInstanceOf[h23]
+  
+  @js.native
+  sealed trait h24
+    extends StObject
+       with LocaleHourCycleKey
+  inline def h24: h24 = "h24".asInstanceOf[h24]
   
   @js.native
   sealed trait h3 extends StObject
@@ -2169,6 +2303,24 @@ object stdStrings {
     extends StObject
        with CanvasTextBaseline
   inline def hanging: hanging = "hanging".asInstanceOf[hanging]
+  
+  @js.native
+  sealed trait hangup
+    extends StObject
+       with MediaSessionAction
+  inline def hangup: hangup = "hangup".asInstanceOf[hangup]
+  
+  @js.native
+  sealed trait `hard-light`
+    extends StObject
+       with GlobalCompositeOperation
+  inline def `hard-light`: `hard-light` = "hard-light".asInstanceOf[`hard-light`]
+  
+  @js.native
+  sealed trait `hardware-context-reset`
+    extends StObject
+       with MediaKeySessionClosedReason
+  inline def `hardware-context-reset`: `hardware-context-reset` = "hardware-context-reset".asInstanceOf[`hardware-context-reset`]
   
   @js.native
   sealed trait `hardware-encoder-error`
@@ -2225,8 +2377,8 @@ object stdStrings {
   @js.native
   sealed trait hidden
     extends StObject
+       with DocumentVisibilityState
        with TextTrackMode
-       with VisibilityState
   inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
@@ -2262,10 +2414,15 @@ object stdStrings {
   inline def highshelf: highshelf = "highshelf".asInstanceOf[highshelf]
   
   @js.native
+  sealed trait hlg
+    extends StObject
+       with TransferFunction
+  inline def hlg: hlg = "hlg".asInstanceOf[hlg]
+  
+  @js.native
   sealed trait host
     extends StObject
        with RTCIceCandidateType
-       with RTCStatsIceCandidateType
   inline def host: host = "host".asInstanceOf[host]
   
   @js.native
@@ -2273,6 +2430,7 @@ object stdStrings {
     extends StObject
        with DateTimeFormatPartTypes
        with RelativeTimeFormatUnit
+       with RelativeTimeFormatUnitSingular
   inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
@@ -2296,6 +2454,12 @@ object stdStrings {
   @js.native
   sealed trait httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg extends StObject
   inline def httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg = "http://www.w3.org/2000/svg".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg]
+  
+  @js.native
+  sealed trait hue
+    extends StObject
+       with GlobalCompositeOperation
+  inline def hue: hue = "hue".asInstanceOf[hue]
   
   @js.native
   sealed trait i extends StObject
@@ -2342,55 +2506,15 @@ object stdStrings {
   inline def idle: idle = "idle".asInstanceOf[idle]
   
   @js.native
-  sealed trait `idp-bad-script-failure`
+  sealed trait `iec61966-2-1`
     extends StObject
-       with RTCErrorDetailType
-  inline def `idp-bad-script-failure`: `idp-bad-script-failure` = "idp-bad-script-failure".asInstanceOf[`idp-bad-script-failure`]
+       with VideoTransferCharacteristics
+  inline def `iec61966-2-1`: `iec61966-2-1` = "iec61966-2-1".asInstanceOf[`iec61966-2-1`]
   
   @js.native
-  sealed trait `idp-execution-failure`
+  sealed trait iframe
     extends StObject
-       with RTCErrorDetailType
-  inline def `idp-execution-failure`: `idp-execution-failure` = "idp-execution-failure".asInstanceOf[`idp-execution-failure`]
-  
-  @js.native
-  sealed trait `idp-load-failure`
-    extends StObject
-       with RTCErrorDetailType
-  inline def `idp-load-failure`: `idp-load-failure` = "idp-load-failure".asInstanceOf[`idp-load-failure`]
-  
-  @js.native
-  sealed trait `idp-need-login`
-    extends StObject
-       with RTCErrorDetailType
-  inline def `idp-need-login`: `idp-need-login` = "idp-need-login".asInstanceOf[`idp-need-login`]
-  
-  @js.native
-  sealed trait `idp-timeout`
-    extends StObject
-       with RTCErrorDetailType
-  inline def `idp-timeout`: `idp-timeout` = "idp-timeout".asInstanceOf[`idp-timeout`]
-  
-  @js.native
-  sealed trait `idp-tls-failure`
-    extends StObject
-       with RTCErrorDetailType
-  inline def `idp-tls-failure`: `idp-tls-failure` = "idp-tls-failure".asInstanceOf[`idp-tls-failure`]
-  
-  @js.native
-  sealed trait `idp-token-expired`
-    extends StObject
-       with RTCErrorDetailType
-  inline def `idp-token-expired`: `idp-token-expired` = "idp-token-expired".asInstanceOf[`idp-token-expired`]
-  
-  @js.native
-  sealed trait `idp-token-invalid`
-    extends StObject
-       with RTCErrorDetailType
-  inline def `idp-token-invalid`: `idp-token-invalid` = "idp-token-invalid".asInstanceOf[`idp-token-invalid`]
-  
-  @js.native
-  sealed trait iframe extends StObject
+       with RequestDestination
   inline def iframe: iframe = "iframe".asInstanceOf[iframe]
   
   @js.native
@@ -2416,17 +2540,23 @@ object stdStrings {
   inline def imports: imports = "imports".asInstanceOf[imports]
   
   @js.native
+  sealed trait `in-progress`
+    extends StObject
+       with RTCStatsIceCandidatePairState
+  inline def `in-progress`: `in-progress` = "in-progress".asInstanceOf[`in-progress`]
+  
+  @js.native
   sealed trait inactive
     extends StObject
-       with ListeningState
        with RTCRtpTransceiverDirection
+       with RecordingState
   inline def inactive: inactive = "inactive".asInstanceOf[inactive]
   
   @js.native
-  sealed trait inboundrtp
+  sealed trait `inbound-rtp`
     extends StObject
        with RTCStatsType
-  inline def inboundrtp: inboundrtp = "inboundrtp".asInstanceOf[inboundrtp]
+  inline def `inbound-rtp`: `inbound-rtp` = "inbound-rtp".asInstanceOf[`inbound-rtp`]
   
   @js.native
   sealed trait include
@@ -2449,6 +2579,7 @@ object stdStrings {
   @js.native
   sealed trait infinity
     extends StObject
+       with ES2018NumberFormatPartType
        with NumberFormatPartTypes
   inline def infinity: infinity = "infinity".asInstanceOf[infinity]
   
@@ -2457,6 +2588,12 @@ object stdStrings {
     extends StObject
        with CanvasDirection
   inline def inherit: inherit = "inherit".asInstanceOf[inherit]
+  
+  @js.native
+  sealed trait `inline`
+    extends StObject
+       with PresentationStyle
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
   sealed trait inprogress
@@ -2487,6 +2624,7 @@ object stdStrings {
   @js.native
   sealed trait integer
     extends StObject
+       with ES2018NumberFormatPartType
        with NumberFormatPartTypes
   inline def integer: integer = "integer".asInstanceOf[integer]
   
@@ -2506,6 +2644,7 @@ object stdStrings {
   @js.native
   sealed trait `internal-error`
     extends StObject
+       with MediaKeySessionClosedReason
        with MediaKeyStatus
   inline def `internal-error`: `internal-error` = "internal-error".asInstanceOf[`internal-error`]
   
@@ -2532,8 +2671,8 @@ object stdStrings {
   inline def inverse: inverse = "inverse".asInstanceOf[inverse]
   
   @js.native
-  sealed trait isolationchange extends StObject
-  inline def isolationchange: isolationchange = "isolationchange".asInstanceOf[isolationchange]
+  sealed trait isindex extends StObject
+  inline def isindex: isindex = "isindex".asInstanceOf[isindex]
   
   @js.native
   sealed trait json
@@ -2558,8 +2697,18 @@ object stdStrings {
   inline def kbd: kbd = "kbd".asInstanceOf[kbd]
   
   @js.native
+  sealed trait key
+    extends StObject
+       with RTCEncodedVideoFrameType
+  inline def key: key = "key".asInstanceOf[key]
+  
+  @js.native
   sealed trait keydown extends StObject
   inline def keydown: keydown = "keydown".asInstanceOf[keydown]
+  
+  @js.native
+  sealed trait keygen extends StObject
+  inline def keygen: keygen = "keygen".asInstanceOf[keygen]
   
   @js.native
   sealed trait keypress extends StObject
@@ -2598,6 +2747,12 @@ object stdStrings {
   inline def `landscape-secondary`: `landscape-secondary` = "landscape-secondary".asInstanceOf[`landscape-secondary`]
   
   @js.native
+  sealed trait language
+    extends StObject
+       with DisplayNamesType
+  inline def language: language = "language".asInstanceOf[language]
+  
+  @js.native
   sealed trait `language-unavailable`
     extends StObject
        with SpeechSynthesisErrorCode
@@ -2608,12 +2763,18 @@ object stdStrings {
   inline def languagechange: languagechange = "languagechange".asInstanceOf[languagechange]
   
   @js.native
+  sealed trait `lazy` extends StObject
+  inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  
+  @js.native
+  sealed trait leavepictureinpicture extends StObject
+  inline def leavepictureinpicture: leavepictureinpicture = "leavepictureinpicture".asInstanceOf[leavepictureinpicture]
+  
+  @js.native
   sealed trait left
     extends StObject
        with AlignSetting
        with CanvasTextAlign
-       with GamepadHand
-       with NavigationReason
        with VideoFacingModeEnum
   inline def left: left = "left".asInstanceOf[left]
   
@@ -2642,6 +2803,18 @@ object stdStrings {
     extends StObject
        with MediaKeyMessageType
   inline def `license-request`: `license-request` = "license-request".asInstanceOf[`license-request`]
+  
+  @js.native
+  sealed trait lighten
+    extends StObject
+       with GlobalCompositeOperation
+  inline def lighten: lighten = "lighten".asInstanceOf[lighten]
+  
+  @js.native
+  sealed trait lighter
+    extends StObject
+       with GlobalCompositeOperation
+  inline def lighter: lighter = "lighter".asInstanceOf[lighter]
   
   @js.native
   sealed trait line extends StObject
@@ -2685,6 +2858,7 @@ object stdStrings {
   sealed trait literal
     extends StObject
        with DateTimeFormatPartTypes
+       with ES2018NumberFormatPartType
        with NumberFormatPartTypes
   inline def literal: literal = "literal".asInstanceOf[literal]
   
@@ -2697,6 +2871,13 @@ object stdStrings {
   @js.native
   sealed trait load extends StObject
   inline def load: load = "load".asInstanceOf[load]
+  
+  @js.native
+  sealed trait loaded
+    extends StObject
+       with FontFaceLoadStatus
+       with FontFaceSetLoadStatus
+  inline def loaded: loaded = "loaded".asInstanceOf[loaded]
   
   @js.native
   sealed trait loadeddata extends StObject
@@ -2714,27 +2895,51 @@ object stdStrings {
   sealed trait loading
     extends StObject
        with DocumentReadyState
+       with FontFaceLoadStatus
+       with FontFaceSetLoadStatus
   inline def loading: loading = "loading".asInstanceOf[loading]
+  
+  @js.native
+  sealed trait loadingdone extends StObject
+  inline def loadingdone: loadingdone = "loadingdone".asInstanceOf[loadingdone]
+  
+  @js.native
+  sealed trait loadingerror extends StObject
+  inline def loadingerror: loadingerror = "loadingerror".asInstanceOf[loadingerror]
   
   @js.native
   sealed trait loadstart extends StObject
   inline def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
   
   @js.native
-  sealed trait localcandidate
+  sealed trait `local-candidate`
     extends StObject
        with RTCStatsType
-  inline def localcandidate: localcandidate = "localcandidate".asInstanceOf[localcandidate]
+  inline def `local-candidate`: `local-candidate` = "local-candidate".asInstanceOf[`local-candidate`]
+  
+  @js.native
+  sealed trait localeMatcher extends StObject
+  inline def localeMatcher: localeMatcher = "localeMatcher".asInstanceOf[localeMatcher]
   
   @js.native
   sealed trait long
     extends StObject
+       with ListFormatStyle
        with RelativeTimeFormatStyle
   inline def long: long = "long".asInstanceOf[long]
   
   @js.native
+  sealed trait longGeneric extends StObject
+  inline def longGeneric: longGeneric = "longGeneric".asInstanceOf[longGeneric]
+  
+  @js.native
+  sealed trait longOffset extends StObject
+  inline def longOffset: longOffset = "longOffset".asInstanceOf[longOffset]
+  
+  @js.native
   sealed trait lookup
     extends StObject
+       with ListFormatLocaleMatcher
        with RelativeTimeFormatLocaleMatcher
   inline def lookup: lookup = "lookup".asInstanceOf[lookup]
   
@@ -2755,6 +2960,12 @@ object stdStrings {
     extends StObject
        with WebGLPowerPreference
   inline def `low-power`: `low-power` = "low-power".asInstanceOf[`low-power`]
+  
+  @js.native
+  sealed trait lower
+    extends StObject
+       with LocaleCollationCaseFirst
+  inline def lower: lower = "lower".asInstanceOf[lower]
   
   @js.native
   sealed trait lowpass
@@ -2782,10 +2993,10 @@ object stdStrings {
   inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait magnetometer
+  sealed trait luminosity
     extends StObject
-       with PermissionName
-  inline def magnetometer: magnetometer = "magnetometer".asInstanceOf[magnetometer]
+       with GlobalCompositeOperation
+  inline def luminosity: luminosity = "luminosity".asInstanceOf[luminosity]
   
   @js.native
   sealed trait main extends StObject
@@ -2814,6 +3025,7 @@ object stdStrings {
     extends StObject
        with RequestRedirect
        with ScrollRestoration
+       with SlotAssignmentMode
   inline def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
@@ -2867,10 +3079,11 @@ object stdStrings {
   inline def maybe: maybe = "maybe".asInstanceOf[maybe]
   
   @js.native
-  sealed trait media
+  sealed trait `media-source`
     extends StObject
-       with MSWebViewPermissionType
-  inline def media: media = "media".asInstanceOf[media]
+       with MediaDecodingType
+       with RTCStatsType
+  inline def `media-source`: `media-source` = "media-source".asInstanceOf[`media-source`]
   
   @js.native
   sealed trait medium
@@ -2889,6 +3102,10 @@ object stdStrings {
   @js.native
   sealed trait menu extends StObject
   inline def menu: menu = "menu".asInstanceOf[menu]
+  
+  @js.native
+  sealed trait menuitem extends StObject
+  inline def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
   
   @js.native
   sealed trait message extends StObject
@@ -2913,26 +3130,15 @@ object stdStrings {
   inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
-  sealed trait microphone
-    extends StObject
-       with PermissionName
-  inline def microphone: microphone = "microphone".asInstanceOf[microphone]
-  
-  @js.native
   sealed trait middle
     extends StObject
        with CanvasTextBaseline
   inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait midi
-    extends StObject
-       with PermissionName
-  inline def midi: midi = "midi".asInstanceOf[midi]
-  
-  @js.native
   sealed trait minusSign
     extends StObject
+       with ES2018NumberFormatPartType
        with NumberFormatPartTypes
   inline def minusSign: minusSign = "minusSign".asInstanceOf[minusSign]
   
@@ -2941,6 +3147,7 @@ object stdStrings {
     extends StObject
        with DateTimeFormatPartTypes
        with RelativeTimeFormatUnit
+       with RelativeTimeFormatUnitSingular
   inline def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
@@ -2972,6 +3179,7 @@ object stdStrings {
     extends StObject
        with DateTimeFormatPartTypes
        with RelativeTimeFormatUnit
+       with RelativeTimeFormatUnitSingular
   inline def month: month = "month".asInstanceOf[month]
   
   @js.native
@@ -2979,12 +3187,6 @@ object stdStrings {
     extends StObject
        with RelativeTimeFormatUnit
   inline def months: months = "months".asInstanceOf[months]
-  
-  @js.native
-  sealed trait mounted
-    extends StObject
-       with VRDisplayEventReason
-  inline def mounted: mounted = "mounted".asInstanceOf[mounted]
   
   @js.native
   sealed trait mousedown extends StObject
@@ -3015,26 +3217,51 @@ object stdStrings {
   inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   
   @js.native
-  sealed trait mousewheel extends StObject
-  inline def mousewheel: mousewheel = "mousewheel".asInstanceOf[mousewheel]
-  
-  @js.native
   sealed trait move extends StObject
   inline def move: move = "move".asInstanceOf[move]
+  
+  @js.native
+  sealed trait mpath extends StObject
+  inline def mpath: mpath = "mpath".asInstanceOf[mpath]
+  
+  @js.native
+  sealed trait multicol extends StObject
+  inline def multicol: multicol = "multicol".asInstanceOf[multicol]
+  
+  @js.native
+  sealed trait multiply
+    extends StObject
+       with GlobalCompositeOperation
+  inline def multiply: multiply = "multiply".asInstanceOf[multiply]
   
   @js.native
   sealed trait mute extends StObject
   inline def mute: mute = "mute".asInstanceOf[mute]
   
   @js.native
+  sealed trait name
+    extends StObject
+       with ES2018NumberFormatPartType
+       with NumberFormatPartTypes
+  inline def name: name = "name".asInstanceOf[name]
+  
+  @js.native
+  sealed trait named
+    extends StObject
+       with SlotAssignmentMode
+  inline def named: named = "named".asInstanceOf[named]
+  
+  @js.native
   sealed trait nan
     extends StObject
+       with ES2018NumberFormatPartType
        with NumberFormatPartTypes
   inline def nan: nan = "nan".asInstanceOf[nan]
   
   @js.native
   sealed trait narrow
     extends StObject
+       with ListFormatStyle
        with RelativeTimeFormatStyle
   inline def narrow: narrow = "narrow".asInstanceOf[narrow]
   
@@ -3057,27 +3284,15 @@ object stdStrings {
   @js.native
   sealed trait navigate
     extends StObject
-       with NavigationType
+       with NavigationTimingType
        with RequestMode
   inline def navigate: navigate = "navigate".asInstanceOf[navigate]
-  
-  @js.native
-  sealed trait navigation
-    extends StObject
-       with VRDisplayEventReason
-  inline def navigation: navigation = "navigation".asInstanceOf[navigation]
   
   @js.native
   sealed trait nearest
     extends StObject
        with ScrollLogicalPosition
   inline def nearest: nearest = "nearest".asInstanceOf[nearest]
-  
-  @js.native
-  sealed trait negotiate
-    extends StObject
-       with RTCRtcpMuxPolicy
-  inline def negotiate: negotiate = "negotiate".asInstanceOf[negotiate]
   
   @js.native
   sealed trait negotiationneeded extends StObject
@@ -3089,6 +3304,10 @@ object stdStrings {
        with EndOfStreamError
        with SpeechSynthesisErrorCode
   inline def network: network = "network".asInstanceOf[network]
+  
+  @js.native
+  sealed trait never extends StObject
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
   sealed trait `new`
@@ -3108,6 +3327,16 @@ object stdStrings {
   inline def next: next = "next".asInstanceOf[next]
   
   @js.native
+  sealed trait nextid extends StObject
+  inline def nextid: nextid = "nextid".asInstanceOf[nextid]
+  
+  @js.native
+  sealed trait nexttrack
+    extends StObject
+       with MediaSessionAction
+  inline def nexttrack: nexttrack = "nexttrack".asInstanceOf[nexttrack]
+  
+  @js.native
   sealed trait nextunique
     extends StObject
        with IDBCursorDirection
@@ -3117,7 +3346,6 @@ object stdStrings {
   sealed trait nfc_
     extends StObject
        with AuthenticatorTransport
-       with Transport
   inline def nfc_ : nfc_ = "nfc".asInstanceOf[nfc_]
   
   @js.native
@@ -3151,22 +3379,27 @@ object stdStrings {
   inline def `no-store`: `no-store` = "no-store".asInstanceOf[`no-store`]
   
   @js.native
-  sealed trait nohost
-    extends StObject
-       with RTCIceGatherPolicy
-  inline def nohost: nohost = "nohost".asInstanceOf[nohost]
+  sealed trait nobr extends StObject
+  inline def nobr: nobr = "nobr".asInstanceOf[nobr]
   
   @js.native
-  sealed trait nomatch extends StObject
-  inline def nomatch: nomatch = "nomatch".asInstanceOf[nomatch]
+  sealed trait noembed extends StObject
+  inline def noembed: noembed = "noembed".asInstanceOf[noembed]
+  
+  @js.native
+  sealed trait noframes extends StObject
+  inline def noframes: noframes = "noframes".asInstanceOf[noframes]
   
   @js.native
   sealed trait none
     extends StObject
        with AttestationConveyancePreference
+       with CanvasFontKerning
        with ColorSpaceConversion
+       with DisplayNamesFallback
        with FillMode
        with ImageOrientation
+       with MediaSessionPlaybackState
        with OverSampleType
        with PremultiplyAlpha
        with ServiceWorkerUpdateViaCache
@@ -3181,6 +3414,9 @@ object stdStrings {
   @js.native
   sealed trait normal
     extends StObject
+       with CanvasFontKerning
+       with CanvasFontStretch
+       with CanvasFontVariantCaps
        with PlaybackDirection
   inline def normal: normal = "normal".asInstanceOf[normal]
   
@@ -3212,28 +3448,18 @@ object stdStrings {
   inline def notifications: notifications = "notifications".asInstanceOf[notifications]
   
   @js.native
-  sealed trait noupdate extends StObject
-  inline def noupdate: noupdate = "noupdate".asInstanceOf[noupdate]
-  
-  @js.native
   sealed trait number extends StObject
   inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait oauth
-    extends StObject
-       with RTCIceCredentialType
-  inline def oauth: oauth = "oauth".asInstanceOf[oauth]
+  sealed trait numeric extends StObject
+  inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
   sealed trait `object`
     extends StObject
        with RequestDestination
   inline def `object`: `object` = "object".asInstanceOf[`object`]
-  
-  @js.native
-  sealed trait obsolete extends StObject
-  inline def obsolete: obsolete = "obsolete".asInstanceOf[obsolete]
   
   @js.native
   sealed trait offer
@@ -3300,6 +3526,18 @@ object stdStrings {
   inline def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
   
   @js.native
+  sealed trait optimizeLegibility
+    extends StObject
+       with CanvasTextRendering
+  inline def optimizeLegibility: optimizeLegibility = "optimizeLegibility".asInstanceOf[optimizeLegibility]
+  
+  @js.native
+  sealed trait optimizeSpeed
+    extends StObject
+       with CanvasTextRendering
+  inline def optimizeSpeed: optimizeSpeed = "optimizeSpeed".asInstanceOf[optimizeSpeed]
+  
+  @js.native
   sealed trait option extends StObject
   inline def option: option = "option".asInstanceOf[option]
   
@@ -3339,10 +3577,10 @@ object stdStrings {
   inline def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait outboundrtp
+  sealed trait `outbound-rtp`
     extends StObject
        with RTCStatsType
-  inline def outboundrtp: outboundrtp = "outboundrtp".asInstanceOf[outboundrtp]
+  inline def `outbound-rtp`: `outbound-rtp` = "outbound-rtp".asInstanceOf[`outbound-rtp`]
   
   @js.native
   sealed trait output extends StObject
@@ -3361,6 +3599,12 @@ object stdStrings {
   inline def `output-restricted`: `output-restricted` = "output-restricted".asInstanceOf[`output-restricted`]
   
   @js.native
+  sealed trait overlay
+    extends StObject
+       with GlobalCompositeOperation
+  inline def overlay: overlay = "overlay".asInstanceOf[overlay]
+  
+  @js.native
   sealed trait p extends StObject
   inline def p: p = "p".asInstanceOf[p]
   
@@ -3369,6 +3613,12 @@ object stdStrings {
     extends StObject
        with PushEncryptionKeyName
   inline def p256dh: p256dh = "p256dh".asInstanceOf[p256dh]
+  
+  @js.native
+  sealed trait p3
+    extends StObject
+       with ColorGamut
+  inline def p3: p3 = "p3".asInstanceOf[p3]
   
   @js.native
   sealed trait pagehide extends StObject
@@ -3401,9 +3651,7 @@ object stdStrings {
   inline def passive: passive = "passive".asInstanceOf[passive]
   
   @js.native
-  sealed trait password
-    extends StObject
-       with RTCIceCredentialType
+  sealed trait password extends StObject
   inline def password: password = "password".asInstanceOf[password]
   
   @js.native
@@ -3419,14 +3667,22 @@ object stdStrings {
   inline def pattern: pattern = "pattern".asInstanceOf[pattern]
   
   @js.native
-  sealed trait pause extends StObject
+  sealed trait pause
+    extends StObject
+       with MediaSessionAction
   inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
   sealed trait paused
     extends StObject
        with AnimationPlayState
+       with MediaSessionPlaybackState
+       with RecordingState
   inline def paused: paused = "paused".asInstanceOf[paused]
+  
+  @js.native
+  sealed trait paymentmethodchange extends StObject
+  inline def paymentmethodchange: paymentmethodchange = "paymentmethodchange".asInstanceOf[paymentmethodchange]
   
   @js.native
   sealed trait peaking
@@ -3435,10 +3691,10 @@ object stdStrings {
   inline def peaking: peaking = "peaking".asInstanceOf[peaking]
   
   @js.native
-  sealed trait peerreflexive
+  sealed trait `peer-connection`
     extends StObject
-       with RTCStatsIceCandidateType
-  inline def peerreflexive: peerreflexive = "peerreflexive".asInstanceOf[peerreflexive]
+       with RTCStatsType
+  inline def `peer-connection`: `peer-connection` = "peer-connection".asInstanceOf[`peer-connection`]
   
   @js.native
   sealed trait pending
@@ -3447,10 +3703,24 @@ object stdStrings {
   inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
+  sealed trait percent
+    extends StObject
+       with ES2018NumberFormatPartType
+       with NumberFormatPartTypes
+  inline def percent: percent = "percent".asInstanceOf[percent]
+  
+  @js.native
   sealed trait percentSign
     extends StObject
+       with ES2018NumberFormatPartType
        with NumberFormatPartTypes
   inline def percentSign: percentSign = "percentSign".asInstanceOf[percentSign]
+  
+  @js.native
+  sealed trait persisted
+    extends StObject
+       with AnimationReplaceState
+  inline def persisted: persisted = "persisted".asInstanceOf[persisted]
   
   @js.native
   sealed trait `persistent-license`
@@ -3465,10 +3735,10 @@ object stdStrings {
   inline def `persistent-storage`: `persistent-storage` = "persistent-storage".asInstanceOf[`persistent-storage`]
   
   @js.native
-  sealed trait pickup
+  sealed trait `petite-caps`
     extends StObject
-       with PaymentShippingType
-  inline def pickup: pickup = "pickup".asInstanceOf[pickup]
+       with CanvasFontVariantCaps
+  inline def `petite-caps`: `petite-caps` = "petite-caps".asInstanceOf[`petite-caps`]
   
   @js.native
   sealed trait picture extends StObject
@@ -3487,13 +3757,19 @@ object stdStrings {
   inline def pkcs8: pkcs8 = "pkcs8".asInstanceOf[pkcs8]
   
   @js.native
+  sealed trait plaintext extends StObject
+  inline def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
+  
+  @js.native
   sealed trait platform
     extends StObject
        with AuthenticatorAttachment
   inline def platform: platform = "platform".asInstanceOf[platform]
   
   @js.native
-  sealed trait play extends StObject
+  sealed trait play
+    extends StObject
+       with MediaSessionAction
   inline def play: play = "play".asInstanceOf[play]
   
   @js.native
@@ -3503,12 +3779,15 @@ object stdStrings {
   inline def playback: playback = "playback".asInstanceOf[playback]
   
   @js.native
-  sealed trait playing extends StObject
+  sealed trait playing
+    extends StObject
+       with MediaSessionPlaybackState
   inline def playing: playing = "playing".asInstanceOf[playing]
   
   @js.native
   sealed trait plusSign
     extends StObject
+       with ES2018NumberFormatPartType
        with NumberFormatPartTypes
   inline def plusSign: plusSign = "plusSign".asInstanceOf[plusSign]
   
@@ -3527,12 +3806,6 @@ object stdStrings {
   @js.native
   sealed trait pointerleave extends StObject
   inline def pointerleave: pointerleave = "pointerleave".asInstanceOf[pointerleave]
-  
-  @js.native
-  sealed trait pointerlock
-    extends StObject
-       with MSWebViewPermissionType
-  inline def pointerlock: pointerlock = "pointerlock".asInstanceOf[pointerlock]
   
   @js.native
   sealed trait pointerlockchange extends StObject
@@ -3591,6 +3864,12 @@ object stdStrings {
   inline def `portrait-secondary`: `portrait-secondary` = "portrait-secondary".asInstanceOf[`portrait-secondary`]
   
   @js.native
+  sealed trait pq
+    extends StObject
+       with TransferFunction
+  inline def pq: pq = "pq".asInstanceOf[pq]
+  
+  @js.native
   sealed trait pranswer
     extends StObject
        with RTCSdpType
@@ -3616,7 +3895,7 @@ object stdStrings {
   @js.native
   sealed trait prerender
     extends StObject
-       with NavigationType
+       with NavigationTimingType
   inline def prerender: prerender = "prerender".asInstanceOf[prerender]
   
   @js.native
@@ -3630,6 +3909,12 @@ object stdStrings {
     extends StObject
        with IDBCursorDirection
   inline def prev: prev = "prev".asInstanceOf[prev]
+  
+  @js.native
+  sealed trait previoustrack
+    extends StObject
+       with MediaSessionAction
+  inline def previoustrack: previoustrack = "previoustrack".asInstanceOf[previoustrack]
   
   @js.native
   sealed trait prevunique
@@ -3667,7 +3952,6 @@ object stdStrings {
   sealed trait prompt
     extends StObject
        with PermissionState
-       with PushPermissionState
   inline def prompt: prompt = "prompt".asInstanceOf[prompt]
   
   @js.native
@@ -3694,6 +3978,7 @@ object stdStrings {
   sealed trait quarter
     extends StObject
        with RelativeTimeFormatUnit
+       with RelativeTimeFormatUnitSingular
   inline def quarter: quarter = "quarter".asInstanceOf[quarter]
   
   @js.native
@@ -3717,6 +4002,10 @@ object stdStrings {
   inline def raw: raw = "raw".asInstanceOf[raw]
   
   @js.native
+  sealed trait rb extends StObject
+  inline def rb: rb = "rb".asInstanceOf[rb]
+  
+  @js.native
   sealed trait readonly_
     extends StObject
        with IDBTransactionMode
@@ -3731,6 +4020,24 @@ object stdStrings {
   @js.native
   sealed trait readystatechange extends StObject
   inline def readystatechange: readystatechange = "readystatechange".asInstanceOf[readystatechange]
+  
+  @js.native
+  sealed trait rec2020
+    extends StObject
+       with ColorGamut
+  inline def rec2020: rec2020 = "rec2020".asInstanceOf[rec2020]
+  
+  @js.native
+  sealed trait record
+    extends StObject
+       with MediaEncodingType
+  inline def record: record = "record".asInstanceOf[record]
+  
+  @js.native
+  sealed trait recording
+    extends StObject
+       with RecordingState
+  inline def recording: recording = "recording".asInstanceOf[recording]
   
   @js.native
   sealed trait rect extends StObject
@@ -3749,6 +4056,12 @@ object stdStrings {
   inline def redundant: redundant = "redundant".asInstanceOf[redundant]
   
   @js.native
+  sealed trait region
+    extends StObject
+       with DisplayNamesType
+  inline def region: region = "region".asInstanceOf[region]
+  
+  @js.native
   sealed trait rejected extends StObject
   inline def rejected: rejected = "rejected".asInstanceOf[rejected]
   
@@ -3757,18 +4070,23 @@ object stdStrings {
   inline def rejectionhandled: rejectionhandled = "rejectionhandled".asInstanceOf[rejectionhandled]
   
   @js.native
+  sealed trait relaxed
+    extends StObject
+       with IDBTransactionDurability
+  inline def relaxed: relaxed = "relaxed".asInstanceOf[relaxed]
+  
+  @js.native
   sealed trait relay
     extends StObject
        with RTCIceCandidateType
-       with RTCIceGatherPolicy
        with RTCIceTransportPolicy
   inline def relay: relay = "relay".asInstanceOf[relay]
   
   @js.native
-  sealed trait relayed
+  sealed trait `release-acknowledged`
     extends StObject
-       with RTCStatsIceCandidateType
-  inline def relayed: relayed = "relayed".asInstanceOf[relayed]
+       with MediaKeySessionClosedReason
+  inline def `release-acknowledged`: `release-acknowledged` = "release-acknowledged".asInstanceOf[`release-acknowledged`]
   
   @js.native
   sealed trait released
@@ -3779,15 +4097,37 @@ object stdStrings {
   @js.native
   sealed trait reload
     extends StObject
-       with NavigationType
+       with NavigationTimingType
        with RequestCache
   inline def reload: reload = "reload".asInstanceOf[reload]
   
   @js.native
-  sealed trait remotecandidate
+  sealed trait `remote-candidate`
     extends StObject
        with RTCStatsType
-  inline def remotecandidate: remotecandidate = "remotecandidate".asInstanceOf[remotecandidate]
+  inline def `remote-candidate`: `remote-candidate` = "remote-candidate".asInstanceOf[`remote-candidate`]
+  
+  @js.native
+  sealed trait `remote-inbound-rtp`
+    extends StObject
+       with RTCStatsType
+  inline def `remote-inbound-rtp`: `remote-inbound-rtp` = "remote-inbound-rtp".asInstanceOf[`remote-inbound-rtp`]
+  
+  @js.native
+  sealed trait `remote-outbound-rtp`
+    extends StObject
+       with RTCStatsType
+  inline def `remote-outbound-rtp`: `remote-outbound-rtp` = "remote-outbound-rtp".asInstanceOf[`remote-outbound-rtp`]
+  
+  @js.native
+  sealed trait remove extends StObject
+  inline def remove: remove = "remove".asInstanceOf[remove]
+  
+  @js.native
+  sealed trait removed
+    extends StObject
+       with AnimationReplaceState
+  inline def removed: removed = "removed".asInstanceOf[removed]
   
   @js.native
   sealed trait removesourcebuffer extends StObject
@@ -3809,18 +4149,11 @@ object stdStrings {
   sealed trait report
     extends StObject
        with RequestDestination
+       with SecurityPolicyViolationEventDisposition
   inline def report: report = "report".asInstanceOf[report]
   
   @js.native
-  sealed trait requested
-    extends StObject
-       with VRDisplayEventReason
-  inline def requested: requested = "requested".asInstanceOf[requested]
-  
-  @js.native
-  sealed trait require
-    extends StObject
-       with RTCRtcpMuxPolicy
+  sealed trait require extends StObject
   inline def require: require = "require".asInstanceOf[require]
   
   @js.native
@@ -3841,12 +4174,14 @@ object stdStrings {
   inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait resourcetimingbufferfull extends StObject
-  inline def resourcetimingbufferfull: resourcetimingbufferfull = "resourcetimingbufferfull".asInstanceOf[resourcetimingbufferfull]
+  sealed trait `resource-evicted`
+    extends StObject
+       with MediaKeySessionClosedReason
+  inline def `resource-evicted`: `resource-evicted` = "resource-evicted".asInstanceOf[`resource-evicted`]
   
   @js.native
-  sealed trait result extends StObject
-  inline def result: result = "result".asInstanceOf[result]
+  sealed trait resourcetimingbufferfull extends StObject
+  inline def resourcetimingbufferfull: resourcetimingbufferfull = "resourcetimingbufferfull".asInstanceOf[resourcetimingbufferfull]
   
   @js.native
   sealed trait resume extends StObject
@@ -3859,12 +4194,16 @@ object stdStrings {
   inline def reverse: reverse = "reverse".asInstanceOf[reverse]
   
   @js.native
+  sealed trait rgb
+    extends StObject
+       with VideoMatrixCoefficients
+  inline def rgb: rgb = "rgb".asInstanceOf[rgb]
+  
+  @js.native
   sealed trait right
     extends StObject
        with AlignSetting
        with CanvasTextAlign
-       with GamepadHand
-       with NavigationReason
        with VideoFacingModeEnum
   inline def right: right = "right".asInstanceOf[right]
   
@@ -3894,6 +4233,10 @@ object stdStrings {
   @js.native
   sealed trait rt extends StObject
   inline def rt: rt = "rt".asInstanceOf[rt]
+  
+  @js.native
+  sealed trait rtc extends StObject
+  inline def rtc: rtc = "rtc".asInstanceOf[rtc]
   
   @js.native
   sealed trait rtcp
@@ -3942,14 +4285,37 @@ object stdStrings {
   inline def samp: samp = "samp".asInstanceOf[samp]
   
   @js.native
+  sealed trait saturation
+    extends StObject
+       with GlobalCompositeOperation
+  inline def saturation: saturation = "saturation".asInstanceOf[saturation]
+  
+  @js.native
   sealed trait sawtooth
     extends StObject
        with OscillatorType
   inline def sawtooth: sawtooth = "sawtooth".asInstanceOf[sawtooth]
   
   @js.native
+  sealed trait scientific extends StObject
+  inline def scientific: scientific = "scientific".asInstanceOf[scientific]
+  
+  @js.native
+  sealed trait screen
+    extends StObject
+       with GlobalCompositeOperation
+  inline def screen: screen = "screen".asInstanceOf[screen]
+  
+  @js.native
+  sealed trait `screen-wake-lock`
+    extends StObject
+       with PermissionName
+  inline def `screen-wake-lock`: `screen-wake-lock` = "screen-wake-lock".asInstanceOf[`screen-wake-lock`]
+  
+  @js.native
   sealed trait script
     extends StObject
+       with DisplayNamesType
        with RequestDestination
   inline def script: script = "script".asInstanceOf[script]
   
@@ -3974,6 +4340,7 @@ object stdStrings {
     extends StObject
        with DateTimeFormatPartTypes
        with RelativeTimeFormatUnit
+       with RelativeTimeFormatUnitSingular
   inline def second: second = "second".asInstanceOf[second]
   
   @js.native
@@ -3997,12 +4364,30 @@ object stdStrings {
   inline def securitypolicyviolation: securitypolicyviolation = "securitypolicyviolation".asInstanceOf[securitypolicyviolation]
   
   @js.native
+  sealed trait seekbackward
+    extends StObject
+       with MediaSessionAction
+  inline def seekbackward: seekbackward = "seekbackward".asInstanceOf[seekbackward]
+  
+  @js.native
   sealed trait seeked extends StObject
   inline def seeked: seeked = "seeked".asInstanceOf[seeked]
   
   @js.native
+  sealed trait seekforward
+    extends StObject
+       with MediaSessionAction
+  inline def seekforward: seekforward = "seekforward".asInstanceOf[seekforward]
+  
+  @js.native
   sealed trait seeking extends StObject
   inline def seeking: seeking = "seeking".asInstanceOf[seeking]
+  
+  @js.native
+  sealed trait seekto
+    extends StObject
+       with MediaSessionAction
+  inline def seekto: seekto = "seekto".asInstanceOf[seekto]
   
   @js.native
   sealed trait segments
@@ -4017,16 +4402,24 @@ object stdStrings {
   inline def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait selectedcandidatepairchange extends StObject
-  inline def selectedcandidatepairchange: selectedcandidatepairchange = "selectedcandidatepairchange".asInstanceOf[selectedcandidatepairchange]
-  
-  @js.native
   sealed trait selectionchange extends StObject
   inline def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
   
   @js.native
   sealed trait selectstart extends StObject
   inline def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
+  
+  @js.native
+  sealed trait `semi-condensed`
+    extends StObject
+       with CanvasFontStretch
+  inline def `semi-condensed`: `semi-condensed` = "semi-condensed".asInstanceOf[`semi-condensed`]
+  
+  @js.native
+  sealed trait `semi-expanded`
+    extends StObject
+       with CanvasFontStretch
+  inline def `semi-expanded`: `semi-expanded` = "semi-expanded".asInstanceOf[`semi-expanded`]
   
   @js.native
   sealed trait sendonly
@@ -4041,28 +4434,24 @@ object stdStrings {
   inline def sendrecv: sendrecv = "sendrecv".asInstanceOf[sendrecv]
   
   @js.native
+  sealed trait sentence extends StObject
+  inline def sentence: sentence = "sentence".asInstanceOf[sentence]
+  
+  @js.native
   sealed trait sequence
     extends StObject
        with AppendMode
   inline def sequence: sequence = "sequence".asInstanceOf[sequence]
   
   @js.native
-  sealed trait server
-    extends StObject
-       with RTCDtlsRole
-  inline def server: server = "server".asInstanceOf[server]
+  sealed trait set extends StObject
+  inline def set: set = "set".asInstanceOf[set]
   
   @js.native
-  sealed trait serverreflexive
+  sealed trait shared
     extends StObject
-       with RTCStatsIceCandidateType
-  inline def serverreflexive: serverreflexive = "serverreflexive".asInstanceOf[serverreflexive]
-  
-  @js.native
-  sealed trait session
-    extends StObject
-       with RTCStatsType
-  inline def session: session = "session".asInstanceOf[session]
+       with LockMode
+  inline def shared: shared = "shared".asInstanceOf[shared]
   
   @js.native
   sealed trait sharedworker
@@ -4072,24 +4461,19 @@ object stdStrings {
   inline def sharedworker: sharedworker = "sharedworker".asInstanceOf[sharedworker]
   
   @js.native
-  sealed trait shipping
-    extends StObject
-       with PaymentShippingType
-  inline def shipping: shipping = "shipping".asInstanceOf[shipping]
-  
-  @js.native
-  sealed trait shippingaddresschange extends StObject
-  inline def shippingaddresschange: shippingaddresschange = "shippingaddresschange".asInstanceOf[shippingaddresschange]
-  
-  @js.native
-  sealed trait shippingoptionchange extends StObject
-  inline def shippingoptionchange: shippingoptionchange = "shippingoptionchange".asInstanceOf[shippingoptionchange]
-  
-  @js.native
   sealed trait short
     extends StObject
+       with ListFormatStyle
        with RelativeTimeFormatStyle
   inline def short: short = "short".asInstanceOf[short]
+  
+  @js.native
+  sealed trait shortGeneric extends StObject
+  inline def shortGeneric: shortGeneric = "shortGeneric".asInstanceOf[shortGeneric]
+  
+  @js.native
+  sealed trait shortOffset extends StObject
+  inline def shortOffset: shortOffset = "shortOffset".asInstanceOf[shortOffset]
   
   @js.native
   sealed trait show
@@ -4126,12 +4510,28 @@ object stdStrings {
   inline def sine: sine = "sine".asInstanceOf[sine]
   
   @js.native
+  sealed trait skipad
+    extends StObject
+       with MediaSessionAction
+  inline def skipad: skipad = "skipad".asInstanceOf[skipad]
+  
+  @js.native
   sealed trait slot extends StObject
   inline def slot: slot = "slot".asInstanceOf[slot]
   
   @js.native
+  sealed trait slotchange extends StObject
+  inline def slotchange: slotchange = "slotchange".asInstanceOf[slotchange]
+  
+  @js.native
   sealed trait small extends StObject
   inline def small: small = "small".asInstanceOf[small]
+  
+  @js.native
+  sealed trait `small-caps`
+    extends StObject
+       with CanvasFontVariantCaps
+  inline def `small-caps`: `small-caps` = "small-caps".asInstanceOf[`small-caps`]
   
   @js.native
   sealed trait smooth
@@ -4140,22 +4540,70 @@ object stdStrings {
   inline def smooth: smooth = "smooth".asInstanceOf[smooth]
   
   @js.native
+  sealed trait smpte170m
+    extends StObject
+       with VideoColorPrimaries
+       with VideoMatrixCoefficients
+       with VideoTransferCharacteristics
+  inline def smpte170m: smpte170m = "smpte170m".asInstanceOf[smpte170m]
+  
+  @js.native
+  sealed trait smpteSt2086
+    extends StObject
+       with HdrMetadataType
+  inline def smpteSt2086: smpteSt2086 = "smpteSt2086".asInstanceOf[smpteSt2086]
+  
+  @js.native
+  sealed trait `smpteSt2094-10`
+    extends StObject
+       with HdrMetadataType
+  inline def `smpteSt2094-10`: `smpteSt2094-10` = "smpteSt2094-10".asInstanceOf[`smpteSt2094-10`]
+  
+  @js.native
+  sealed trait `smpteSt2094-40`
+    extends StObject
+       with HdrMetadataType
+  inline def `smpteSt2094-40`: `smpteSt2094-40` = "smpteSt2094-40".asInstanceOf[`smpteSt2094-40`]
+  
+  @js.native
   sealed trait so
     extends StObject
        with RTCIceTcpCandidateType
   inline def so: so = "so".asInstanceOf[so]
   
   @js.native
-  sealed trait soundend extends StObject
-  inline def soundend: soundend = "soundend".asInstanceOf[soundend]
-  
-  @js.native
-  sealed trait soundstart extends StObject
-  inline def soundstart: soundstart = "soundstart".asInstanceOf[soundstart]
+  sealed trait `soft-light`
+    extends StObject
+       with GlobalCompositeOperation
+  inline def `soft-light`: `soft-light` = "soft-light".asInstanceOf[`soft-light`]
   
   @js.native
   sealed trait source extends StObject
   inline def source: source = "source".asInstanceOf[source]
+  
+  @js.native
+  sealed trait `source-atop`
+    extends StObject
+       with GlobalCompositeOperation
+  inline def `source-atop`: `source-atop` = "source-atop".asInstanceOf[`source-atop`]
+  
+  @js.native
+  sealed trait `source-in`
+    extends StObject
+       with GlobalCompositeOperation
+  inline def `source-in`: `source-in` = "source-in".asInstanceOf[`source-in`]
+  
+  @js.native
+  sealed trait `source-out`
+    extends StObject
+       with GlobalCompositeOperation
+  inline def `source-out`: `source-out` = "source-out".asInstanceOf[`source-out`]
+  
+  @js.native
+  sealed trait `source-over`
+    extends StObject
+       with GlobalCompositeOperation
+  inline def `source-over`: `source-over` = "source-over".asInstanceOf[`source-over`]
   
   @js.native
   sealed trait sourceclose extends StObject
@@ -4170,28 +4618,18 @@ object stdStrings {
   inline def sourceopen: sourceopen = "sourceopen".asInstanceOf[sourceopen]
   
   @js.native
-  sealed trait span extends StObject
-  inline def span: span = "span".asInstanceOf[span]
+  sealed trait spacer extends StObject
+  inline def spacer: spacer = "spacer".asInstanceOf[spacer]
   
   @js.native
-  sealed trait speaker
-    extends StObject
-       with PermissionName
-  inline def speaker: speaker = "speaker".asInstanceOf[speaker]
+  sealed trait span extends StObject
+  inline def span: span = "span".asInstanceOf[span]
   
   @js.native
   sealed trait speakers
     extends StObject
        with ChannelInterpretation
   inline def speakers: speakers = "speakers".asInstanceOf[speakers]
-  
-  @js.native
-  sealed trait speechend extends StObject
-  inline def speechend: speechend = "speechend".asInstanceOf[speechend]
-  
-  @js.native
-  sealed trait speechstart extends StObject
-  inline def speechstart: speechstart = "speechstart".asInstanceOf[speechstart]
   
   @js.native
   sealed trait spki
@@ -4213,6 +4651,14 @@ object stdStrings {
   inline def srflx: srflx = "srflx".asInstanceOf[srflx]
   
   @js.native
+  sealed trait srgb
+    extends StObject
+       with ColorGamut
+       with PredefinedColorSpace
+       with TransferFunction
+  inline def srgb: srgb = "srgb".asInstanceOf[srgb]
+  
+  @js.native
   sealed trait stable
     extends StObject
        with RTCSignalingState
@@ -4225,6 +4671,7 @@ object stdStrings {
   @js.native
   sealed trait standard
     extends StObject
+       with DisplayNamesLanguageDisplay
        with GamepadMappingType
   inline def standard: standard = "standard".asInstanceOf[standard]
   
@@ -4239,12 +4686,12 @@ object stdStrings {
   inline def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait statechange extends StObject
-  inline def statechange: statechange = "statechange".asInstanceOf[statechange]
+  sealed trait startRange extends StObject
+  inline def startRange: startRange = "startRange".asInstanceOf[startRange]
   
   @js.native
-  sealed trait statsended extends StObject
-  inline def statsended: statsended = "statsended".asInstanceOf[statsended]
+  sealed trait statechange extends StObject
+  inline def statechange: statechange = "statechange".asInstanceOf[statechange]
   
   @js.native
   sealed trait `status-pending`
@@ -4253,7 +4700,9 @@ object stdStrings {
   inline def `status-pending`: `status-pending` = "status-pending".asInstanceOf[`status-pending`]
   
   @js.native
-  sealed trait stop extends StObject
+  sealed trait stop
+    extends StObject
+       with MediaSessionAction
   inline def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
@@ -4267,6 +4716,12 @@ object stdStrings {
   inline def storage: storage = "storage".asInstanceOf[storage]
   
   @js.native
+  sealed trait strict
+    extends StObject
+       with IDBTransactionDurability
+  inline def strict: strict = "strict".asInstanceOf[strict]
+  
+  @js.native
   sealed trait `strict-origin`
     extends StObject
        with ReferrerPolicy
@@ -4277,6 +4732,10 @@ object stdStrings {
     extends StObject
        with ReferrerPolicy
   inline def `strict-origin-when-cross-origin`: `strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[`strict-origin-when-cross-origin`]
+  
+  @js.native
+  sealed trait strike extends StObject
+  inline def strike: strike = "strike".asInstanceOf[strike]
   
   @js.native
   sealed trait string extends StObject
@@ -4351,7 +4810,10 @@ object stdStrings {
   inline def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
-  sealed trait symbol extends StObject
+  sealed trait symbol
+    extends StObject
+       with ES2018NumberFormatPartType
+       with NumberFormatPartTypes
   inline def symbol: symbol = "symbol".asInstanceOf[symbol]
   
   @js.native
@@ -4471,8 +4933,26 @@ object stdStrings {
   inline def title: title = "title".asInstanceOf[title]
   
   @js.native
+  sealed trait `titling-caps`
+    extends StObject
+       with CanvasFontVariantCaps
+  inline def `titling-caps`: `titling-caps` = "titling-caps".asInstanceOf[`titling-caps`]
+  
+  @js.native
   sealed trait toggle extends StObject
   inline def toggle: toggle = "toggle".asInstanceOf[toggle]
+  
+  @js.native
+  sealed trait togglecamera
+    extends StObject
+       with MediaSessionAction
+  inline def togglecamera: togglecamera = "togglecamera".asInstanceOf[togglecamera]
+  
+  @js.native
+  sealed trait togglemicrophone
+    extends StObject
+       with MediaSessionAction
+  inline def togglemicrophone: togglemicrophone = "togglemicrophone".asInstanceOf[togglemicrophone]
   
   @js.native
   sealed trait tonechange extends StObject
@@ -4550,6 +5030,10 @@ object stdStrings {
   inline def tspan: tspan = "tspan".asInstanceOf[tspan]
   
   @js.native
+  sealed trait tt extends StObject
+  inline def tt: tt = "tt".asInstanceOf[tt]
+  
+  @js.native
   sealed trait two
     extends StObject
        with LDMLPluralRule
@@ -4570,36 +5054,56 @@ object stdStrings {
   inline def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
+  sealed trait `ultra-condensed`
+    extends StObject
+       with CanvasFontStretch
+  inline def `ultra-condensed`: `ultra-condensed` = "ultra-condensed".asInstanceOf[`ultra-condensed`]
+  
+  @js.native
+  sealed trait `ultra-expanded`
+    extends StObject
+       with CanvasFontStretch
+  inline def `ultra-expanded`: `ultra-expanded` = "ultra-expanded".asInstanceOf[`ultra-expanded`]
+  
+  @js.native
   sealed trait unhandledrejection extends StObject
   inline def unhandledrejection: unhandledrejection = "unhandledrejection".asInstanceOf[unhandledrejection]
+  
+  @js.native
+  sealed trait unicase
+    extends StObject
+       with CanvasFontVariantCaps
+  inline def unicase: unicase = "unicase".asInstanceOf[unicase]
   
   @js.native
   sealed trait uninitialized extends StObject
   inline def uninitialized: uninitialized = "uninitialized".asInstanceOf[uninitialized]
   
   @js.native
-  sealed trait unknown
+  sealed trait unit
     extends StObject
-       with MSWebViewPermissionState
-       with PaymentComplete
-       with RTCIceRole
-  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
+       with ES2020NumberFormatPartType
+       with ListFormatType
+       with NumberFormatPartTypes
+  inline def unit: unit = "unit".asInstanceOf[unit]
   
   @js.native
-  sealed trait unlimitedIndexedDBQuota
+  sealed trait unknown
     extends StObject
-       with MSWebViewPermissionType
-  inline def unlimitedIndexedDBQuota: unlimitedIndexedDBQuota = "unlimitedIndexedDBQuota".asInstanceOf[unlimitedIndexedDBQuota]
+       with ES2020NumberFormatPartType
+       with NumberFormatPartTypes
+       with PaymentComplete
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
   sealed trait unload extends StObject
   inline def unload: unload = "unload".asInstanceOf[unload]
   
   @js.native
-  sealed trait unmounted
+  sealed trait unloaded
     extends StObject
-       with VRDisplayEventReason
-  inline def unmounted: unmounted = "unmounted".asInstanceOf[unmounted]
+       with FontFaceLoadStatus
+  inline def unloaded: unloaded = "unloaded".asInstanceOf[unloaded]
   
   @js.native
   sealed trait unmute extends StObject
@@ -4612,6 +5116,12 @@ object stdStrings {
   inline def `unsafe-url`: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
   
   @js.native
+  sealed trait unspecified
+    extends StObject
+       with PresentationStyle
+  inline def unspecified: unspecified = "unspecified".asInstanceOf[unspecified]
+  
+  @js.native
   sealed trait unwrapKey
     extends StObject
        with KeyUsage
@@ -4620,7 +5130,6 @@ object stdStrings {
   @js.native
   sealed trait up
     extends StObject
-       with NavigationReason
        with ScrollSetting
   inline def up: up = "up".asInstanceOf[up]
   
@@ -4637,10 +5146,6 @@ object stdStrings {
   inline def updatefound: updatefound = "updatefound".asInstanceOf[updatefound]
   
   @js.native
-  sealed trait updateready extends StObject
-  inline def updateready: updateready = "updateready".asInstanceOf[updateready]
-  
-  @js.native
   sealed trait updatestart extends StObject
   inline def updatestart: updatestart = "updatestart".asInstanceOf[updatestart]
   
@@ -4649,17 +5154,28 @@ object stdStrings {
   inline def upgradeneeded: upgradeneeded = "upgradeneeded".asInstanceOf[upgradeneeded]
   
   @js.native
+  sealed trait upper
+    extends StObject
+       with LocaleCollationCaseFirst
+  inline def upper: upper = "upper".asInstanceOf[upper]
+  
+  @js.native
   sealed trait usable
     extends StObject
        with MediaKeyStatus
   inline def usable: usable = "usable".asInstanceOf[usable]
   
   @js.native
-  sealed trait usb_
+  sealed trait `usable-in-future`
+    extends StObject
+       with MediaKeyStatus
+  inline def `usable-in-future`: `usable-in-future` = "usable-in-future".asInstanceOf[`usable-in-future`]
+  
+  @js.native
+  sealed trait usb
     extends StObject
        with AuthenticatorTransport
-       with Transport
-  inline def usb_ : usb_ = "usb".asInstanceOf[usb_]
+  inline def usb: usb = "usb".asInstanceOf[usb]
   
   @js.native
   sealed trait use extends StObject
@@ -4670,6 +5186,12 @@ object stdStrings {
     extends StObject
        with VideoFacingModeEnum
   inline def user: user = "user".asInstanceOf[user]
+  
+  @js.native
+  sealed trait v128
+    extends StObject
+       with ValueType
+  inline def v128: v128 = "v128".asInstanceOf[v128]
   
   @js.native
   sealed trait `var` extends StObject
@@ -4720,7 +5242,7 @@ object stdStrings {
   @js.native
   sealed trait visible
     extends StObject
-       with VisibilityState
+       with DocumentVisibilityState
   inline def visible: visible = "visible".asInstanceOf[visible]
   
   @js.native
@@ -4738,42 +5260,6 @@ object stdStrings {
   inline def volumechange: volumechange = "volumechange".asInstanceOf[volumechange]
   
   @js.native
-  sealed trait vrdisplayactivate extends StObject
-  inline def vrdisplayactivate: vrdisplayactivate = "vrdisplayactivate".asInstanceOf[vrdisplayactivate]
-  
-  @js.native
-  sealed trait vrdisplayblur extends StObject
-  inline def vrdisplayblur: vrdisplayblur = "vrdisplayblur".asInstanceOf[vrdisplayblur]
-  
-  @js.native
-  sealed trait vrdisplayconnect extends StObject
-  inline def vrdisplayconnect: vrdisplayconnect = "vrdisplayconnect".asInstanceOf[vrdisplayconnect]
-  
-  @js.native
-  sealed trait vrdisplaydeactivate extends StObject
-  inline def vrdisplaydeactivate: vrdisplaydeactivate = "vrdisplaydeactivate".asInstanceOf[vrdisplaydeactivate]
-  
-  @js.native
-  sealed trait vrdisplaydisconnect extends StObject
-  inline def vrdisplaydisconnect: vrdisplaydisconnect = "vrdisplaydisconnect".asInstanceOf[vrdisplaydisconnect]
-  
-  @js.native
-  sealed trait vrdisplayfocus extends StObject
-  inline def vrdisplayfocus: vrdisplayfocus = "vrdisplayfocus".asInstanceOf[vrdisplayfocus]
-  
-  @js.native
-  sealed trait vrdisplaypointerrestricted extends StObject
-  inline def vrdisplaypointerrestricted: vrdisplaypointerrestricted = "vrdisplaypointerrestricted".asInstanceOf[vrdisplaypointerrestricted]
-  
-  @js.native
-  sealed trait vrdisplaypointerunrestricted extends StObject
-  inline def vrdisplaypointerunrestricted: vrdisplaypointerunrestricted = "vrdisplaypointerunrestricted".asInstanceOf[vrdisplaypointerunrestricted]
-  
-  @js.native
-  sealed trait vrdisplaypresentchange extends StObject
-  inline def vrdisplaypresentchange: vrdisplaypresentchange = "vrdisplaypresentchange".asInstanceOf[vrdisplaypresentchange]
-  
-  @js.native
   sealed trait waiting
     extends StObject
        with RTCStatsIceCandidatePairState
@@ -4788,27 +5274,41 @@ object stdStrings {
   inline def wbr: wbr = "wbr".asInstanceOf[wbr]
   
   @js.native
-  sealed trait webgl
-    extends StObject
-       with OffscreenRenderingContextId
+  sealed trait webgl extends StObject
   inline def webgl: webgl = "webgl".asInstanceOf[webgl]
   
   @js.native
-  sealed trait webgl2
-    extends StObject
-       with OffscreenRenderingContextId
+  sealed trait webgl2 extends StObject
   inline def webgl2: webgl2 = "webgl2".asInstanceOf[webgl2]
   
   @js.native
-  sealed trait webnotifications
+  sealed trait webkitanimationend extends StObject
+  inline def webkitanimationend: webkitanimationend = "webkitanimationend".asInstanceOf[webkitanimationend]
+  
+  @js.native
+  sealed trait webkitanimationiteration extends StObject
+  inline def webkitanimationiteration: webkitanimationiteration = "webkitanimationiteration".asInstanceOf[webkitanimationiteration]
+  
+  @js.native
+  sealed trait webkitanimationstart extends StObject
+  inline def webkitanimationstart: webkitanimationstart = "webkitanimationstart".asInstanceOf[webkitanimationstart]
+  
+  @js.native
+  sealed trait webkittransitionend extends StObject
+  inline def webkittransitionend: webkittransitionend = "webkittransitionend".asInstanceOf[webkittransitionend]
+  
+  @js.native
+  sealed trait webrtc
     extends StObject
-       with MSWebViewPermissionType
-  inline def webnotifications: webnotifications = "webnotifications".asInstanceOf[webnotifications]
+       with MediaDecodingType
+       with MediaEncodingType
+  inline def webrtc: webrtc = "webrtc".asInstanceOf[webrtc]
   
   @js.native
   sealed trait week
     extends StObject
        with RelativeTimeFormatUnit
+       with RelativeTimeFormatUnitSingular
   inline def week: week = "week".asInstanceOf[week]
   
   @js.native
@@ -4835,6 +5335,10 @@ object stdStrings {
   inline def window: window = "window".asInstanceOf[window]
   
   @js.native
+  sealed trait word extends StObject
+  inline def word: word = "word".asInstanceOf[word]
+  
+  @js.native
   sealed trait worker
     extends StObject
        with ClientTypes
@@ -4852,6 +5356,24 @@ object stdStrings {
   inline def xmp: xmp = "xmp".asInstanceOf[xmp]
   
   @js.native
+  sealed trait xor
+    extends StObject
+       with GlobalCompositeOperation
+  inline def xor: xor = "xor".asInstanceOf[xor]
+  
+  @js.native
+  sealed trait `xr-spatial-tracking`
+    extends StObject
+       with PermissionName
+  inline def `xr-spatial-tracking`: `xr-spatial-tracking` = "xr-spatial-tracking".asInstanceOf[`xr-spatial-tracking`]
+  
+  @js.native
+  sealed trait `xr-standard`
+    extends StObject
+       with GamepadMappingType
+  inline def `xr-standard`: `xr-standard` = "xr-standard".asInstanceOf[`xr-standard`]
+  
+  @js.native
   sealed trait xslt
     extends StObject
        with RequestDestination
@@ -4862,6 +5384,7 @@ object stdStrings {
     extends StObject
        with DateTimeFormatPartTypes
        with RelativeTimeFormatUnit
+       with RelativeTimeFormatUnitSingular
   inline def year: year = "year".asInstanceOf[year]
   
   @js.native

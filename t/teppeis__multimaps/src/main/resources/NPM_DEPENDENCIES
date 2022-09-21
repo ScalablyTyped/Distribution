@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@teppeis/multimaps" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@teppeis/multimaps" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,28 +1,66 @@
 package typings.expressSocketIoSession
 
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressSocketIoSession.anon.SessionPartialSessionData
 import typings.socketIo.mod.Socket
+import typings.socketIo.typedEventsMod.DefaultEventsMap
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(expressSessionMiddleware: RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): SocketIoSharedSessionMiddleware = ^.asInstanceOf[js.Dynamic].apply(expressSessionMiddleware.asInstanceOf[js.Any]).asInstanceOf[SocketIoSharedSessionMiddleware]
   inline def apply(
-    expressSessionMiddleware: RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
-    cookieParserMiddleware: RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+    expressSessionMiddleware: RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ): SocketIoSharedSessionMiddleware = ^.asInstanceOf[js.Dynamic].apply(expressSessionMiddleware.asInstanceOf[js.Any]).asInstanceOf[SocketIoSharedSessionMiddleware]
+  inline def apply(
+    expressSessionMiddleware: RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ],
+    cookieParserMiddleware: RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
   ): SocketIoSharedSessionMiddleware = (^.asInstanceOf[js.Dynamic].apply(expressSessionMiddleware.asInstanceOf[js.Any], cookieParserMiddleware.asInstanceOf[js.Any])).asInstanceOf[SocketIoSharedSessionMiddleware]
   inline def apply(
-    expressSessionMiddleware: RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
-    cookieParserMiddleware: RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
+    expressSessionMiddleware: RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ],
+    cookieParserMiddleware: RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ],
     options: SharedSessionOptions
   ): SocketIoSharedSessionMiddleware = (^.asInstanceOf[js.Dynamic].apply(expressSessionMiddleware.asInstanceOf[js.Any], cookieParserMiddleware.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SocketIoSharedSessionMiddleware]
   inline def apply(
-    expressSessionMiddleware: RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
+    expressSessionMiddleware: RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ],
     options: SharedSessionOptions
   ): SocketIoSharedSessionMiddleware = (^.asInstanceOf[js.Dynamic].apply(expressSessionMiddleware.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SocketIoSharedSessionMiddleware]
   
@@ -56,8 +94,8 @@ object mod {
   }
   
   type SocketIoSharedSessionMiddleware = js.Function2[
-    /* socket */ Socket, 
-    /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
+    /* socket */ Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any], 
+    /* next */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
     Unit
   ]
   

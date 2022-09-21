@@ -1,7 +1,7 @@
 
 # Scala.js typings for cpy
 
-Typings are for version 8.1.1
+Typings are for version 9.0.1
 
 ## Library description:
 Copy files
@@ -10,10 +10,10 @@ Copy files
 | ------------------ | :-------------: |
 | Full name          | cpy |
 | Keywords           | copy, cp, cpy, file, files, clone, fs, stream, glob, file-system, ncp, fast, quick, data, content, contents, cpx, directory, directories |
-| # releases         | 8 |
-| # dependents       | 187 |
-| # downloads        | 17064212 |
-| # stars            | 11 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3908384666666666E7 |
+| # stars            | 368.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/cpy#readme)

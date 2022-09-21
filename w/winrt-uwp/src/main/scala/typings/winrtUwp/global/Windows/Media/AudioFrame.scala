@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a single frame of audio data. */
 @JSGlobal("Windows.Media.AudioFrame")
 @js.native
-class AudioFrame protected ()
+open class AudioFrame protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.AudioFrame {
   /**

@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TextTrackListEventMap extends StObject {
   
+  /* standard dom */
   var addtrack: TrackEvent
   
+  /* standard dom */
   var change: Event
   
+  /* standard dom */
   var removetrack: TrackEvent
 }
 object TextTrackListEventMap {

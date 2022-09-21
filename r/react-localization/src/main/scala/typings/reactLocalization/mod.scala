@@ -1,6 +1,7 @@
 package typings.reactLocalization
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -22,6 +23,8 @@ object mod {
   
   type Formatted = Double | String | Element
   
+  type GetInterfaceLanguageCallback = js.Function0[String]
+  
   type GlobalStrings[T] = StringDictionary[T]
   
   type LocalizedStrings[T] = LocalizedStringsMethods & T
@@ -30,6 +33,11 @@ object mod {
   trait LocalizedStringsFactory
     extends StObject
        with Instantiable1[/* props */ GlobalStrings[js.Object], LocalizedStrings[js.Object]]
+       with Instantiable2[
+          /* props */ GlobalStrings[js.Object], 
+          /* options */ Options, 
+          LocalizedStrings[js.Object]
+        ]
   
   @js.native
   trait LocalizedStringsMethods extends StObject {
@@ -65,18 +73,57 @@ object mod {
       */
     def getString(key: String): String = js.native
     def getString(key: String, language: String): String = js.native
+    def getString(key: String, language: String, omitWarning: Boolean): String = js.native
+    def getString(key: String, language: Unit, omitWarning: Boolean): String = js.native
     
     /**
       * Replace the NamedLocalization object without reinstantiating the object
       * @param props 
       */
-    def setContent(props: js.Any): Unit = js.native
+    def setContent(props: Any): Unit = js.native
     
     /**
       * Can be used from ouside the class to force a particular language
-      * indipendently from the interface one
+      * independently from the interface one
       * @param language 
       */
     def setLanguage(language: String): Unit = js.native
+  }
+  
+  trait Options extends StObject {
+    
+    var customLanguageInterface: js.UndefOr[GetInterfaceLanguageCallback] = js.undefined
+    
+    var logsEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    var pseudo: js.UndefOr[Boolean] = js.undefined
+    
+    var pseudoMultipleLanguages: js.UndefOr[Boolean] = js.undefined
+  }
+  object Options {
+    
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+    
+    extension [Self <: Options](x: Self) {
+      
+      inline def setCustomLanguageInterface(value: () => String): Self = StObject.set(x, "customLanguageInterface", js.Any.fromFunction0(value))
+      
+      inline def setCustomLanguageInterfaceUndefined: Self = StObject.set(x, "customLanguageInterface", js.undefined)
+      
+      inline def setLogsEnabled(value: Boolean): Self = StObject.set(x, "logsEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setLogsEnabledUndefined: Self = StObject.set(x, "logsEnabled", js.undefined)
+      
+      inline def setPseudo(value: Boolean): Self = StObject.set(x, "pseudo", value.asInstanceOf[js.Any])
+      
+      inline def setPseudoMultipleLanguages(value: Boolean): Self = StObject.set(x, "pseudoMultipleLanguages", value.asInstanceOf[js.Any])
+      
+      inline def setPseudoMultipleLanguagesUndefined: Self = StObject.set(x, "pseudoMultipleLanguages", js.undefined)
+      
+      inline def setPseudoUndefined: Self = StObject.set(x, "pseudo", js.undefined)
+    }
   }
 }

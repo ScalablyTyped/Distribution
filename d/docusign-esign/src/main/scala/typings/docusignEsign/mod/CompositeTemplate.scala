@@ -57,7 +57,7 @@ object CompositeTemplate {
     
     inline def setInlineTemplatesUndefined: Self = StObject.set(x, "inlineTemplates", js.undefined)
     
-    inline def setInlineTemplatesVarargs(value: InlineTemplate*): Self = StObject.set(x, "inlineTemplates", js.Array(value :_*))
+    inline def setInlineTemplatesVarargs(value: InlineTemplate*): Self = StObject.set(x, "inlineTemplates", js.Array(value*))
     
     inline def setPdfMetaDataTemplateSequence(value: String): Self = StObject.set(x, "pdfMetaDataTemplateSequence", value.asInstanceOf[js.Any])
     
@@ -67,6 +67,6 @@ object CompositeTemplate {
     
     inline def setServerTemplatesUndefined: Self = StObject.set(x, "serverTemplates", js.undefined)
     
-    inline def setServerTemplatesVarargs(value: ServerTemplate*): Self = StObject.set(x, "serverTemplates", js.Array(value :_*))
+    inline def setServerTemplatesVarargs(value: ServerTemplate*): Self = StObject.set(x, "serverTemplates", js.Array(value*))
   }
 }

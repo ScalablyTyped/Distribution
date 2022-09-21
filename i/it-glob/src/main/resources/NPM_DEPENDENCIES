@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-glob" : "0.0.10"
+      "it-glob" : "1.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "it-glob" : "0.0.10"
+      "it-glob" : "1.0.2"
     }
   ],
   "compile-devDependencies" : [

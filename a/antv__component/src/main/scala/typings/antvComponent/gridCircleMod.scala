@@ -9,7 +9,7 @@ object gridCircleMod {
   
   @JSImport("@antv/component/lib/grid/circle", JSImport.Default)
   @js.native
-  class default () extends Circle
+  open class default () extends Circle
   
   @js.native
   trait Circle

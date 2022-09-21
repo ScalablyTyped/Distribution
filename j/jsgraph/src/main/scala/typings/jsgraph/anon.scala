@@ -48,7 +48,7 @@ object anon {
   
   trait Error extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
     var result: js.UndefOr[DirectedGraph] = js.undefined
   }
@@ -61,7 +61,7 @@ object anon {
     
     extension [Self <: Error](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       

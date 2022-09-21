@@ -1,5 +1,6 @@
 package typings.wellknown
 
+import typings.wellknown.wellknownStrings.GeometryCollection
 import typings.wellknown.wellknownStrings.LineString
 import typings.wellknown.wellknownStrings.MultiLineString
 import typings.wellknown.wellknownStrings.MultiPoint
@@ -16,11 +17,37 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def parse(input: String): GeoJSONGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[GeoJSONGeometry]
+  inline def parse(input: String): GeoJSONGeometryOrNull = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[GeoJSONGeometryOrNull]
   
   inline def stringify(gj: GeoJSONGeometry): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(gj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type GeoJSONGeometry = GeoJSONPoint | GeoJSONMultiPoint | GeoJSONLineString | GeoJSONMultiLineString | GeoJSONPolygon | GeoJSONMultiPolygon | Null
+  type GeoJSONGeometry = GeoJSONPoint | GeoJSONMultiPoint | GeoJSONLineString | GeoJSONMultiLineString | GeoJSONPolygon | GeoJSONMultiPolygon | GeoJSONGeometryCollection
+  
+  trait GeoJSONGeometryCollection extends StObject {
+    
+    var geometries: js.Array[GeoJSONGeometry]
+    
+    var `type`: GeometryCollection
+  }
+  object GeoJSONGeometryCollection {
+    
+    inline def apply(geometries: js.Array[GeoJSONGeometry]): GeoJSONGeometryCollection = {
+      val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("GeometryCollection")
+      __obj.asInstanceOf[GeoJSONGeometryCollection]
+    }
+    
+    extension [Self <: GeoJSONGeometryCollection](x: Self) {
+      
+      inline def setGeometries(value: js.Array[GeoJSONGeometry]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+      
+      inline def setGeometriesVarargs(value: GeoJSONGeometry*): Self = StObject.set(x, "geometries", js.Array(value*))
+      
+      inline def setType(value: GeometryCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type GeoJSONGeometryOrNull = GeoJSONGeometry | Null
   
   type GeoJSONLineString = Geometry[LineString, js.Array[GeoJSONPosition]]
   

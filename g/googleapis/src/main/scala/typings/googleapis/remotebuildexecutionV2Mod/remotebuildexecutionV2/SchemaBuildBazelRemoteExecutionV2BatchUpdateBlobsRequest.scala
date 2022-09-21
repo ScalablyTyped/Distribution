@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A request message for ContentAddressableStorage.BatchUpdateBlobs.
-  */
 trait SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequest extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequest {
     
     inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    inline def setRequestsVarargs(value: SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest*): Self = StObject.set(x, "requests", js.Array(value*))
   }
 }

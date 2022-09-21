@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a location event that triggers a background task. This is used for Geofencing. */
 @JSGlobal("Windows.ApplicationModel.Background.LocationTrigger")
 @js.native
-class LocationTrigger protected ()
+open class LocationTrigger protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.LocationTrigger {
   /**

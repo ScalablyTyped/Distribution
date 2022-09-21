@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-dependency-injection", "Lazy")
 @js.native
-class Lazy_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] protected () extends StObject {
+open class Lazy_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] protected () extends StObject {
   def this(key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) = this()
   
   def get(container: Container): js.Function0[ImplOrAny[TImpl]] = js.native

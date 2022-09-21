@@ -17,14 +17,14 @@ trait GraphicsLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#add)
     */
-  def add(graphic: Graphic): Unit = js.native
+  def add(graphic: Graphic): scala.Unit = js.native
   
   /**
     * Adds an array of graphics to the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#addMany)
     */
-  def addMany(graphics: js.Array[Graphic]): Unit = js.native
+  def addMany(graphics: js.Array[Graphic]): scala.Unit = js.native
   
   /**
     * Specifies how graphics are placed on the vertical axis (z).
@@ -45,24 +45,26 @@ trait GraphicsLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#remove)
     */
-  def remove(graphic: Graphic): Unit = js.native
+  def remove(graphic: Graphic): scala.Unit = js.native
   
   /**
     * Clears all the graphics from the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#removeAll)
     */
-  def removeAll(): Unit = js.native
+  def removeAll(): scala.Unit = js.native
   
   /**
     * Removes an array of graphics from the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#removeMany)
     */
-  def removeMany(graphics: js.Array[Graphic]): Unit = js.native
+  def removeMany(graphics: js.Array[Graphic]): scala.Unit = js.native
   
   /**
     * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#screenSizePerspectiveEnabled)
     */

@@ -48,13 +48,13 @@ object DescribeImportSnapshotTasksRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setImportTaskIds(value: ImportSnapshotTaskIdList): Self = StObject.set(x, "ImportTaskIds", value.asInstanceOf[js.Any])
     
     inline def setImportTaskIdsUndefined: Self = StObject.set(x, "ImportTaskIds", js.undefined)
     
-    inline def setImportTaskIdsVarargs(value: ImportSnapshotTaskId*): Self = StObject.set(x, "ImportTaskIds", js.Array(value :_*))
+    inline def setImportTaskIdsVarargs(value: ImportSnapshotTaskId*): Self = StObject.set(x, "ImportTaskIds", js.Array(value*))
     
     inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait MailMessage extends StObject {
   
   var messageId: String
   
-  var replyBy: Date
+  var replyBy: js.Date
   
   var replyTo: EmailRecipients
   
@@ -34,7 +33,7 @@ object MailMessage {
     cC: EmailRecipients,
     inReplyTo: String,
     messageId: String,
-    replyBy: Date,
+    replyBy: js.Date,
     replyTo: EmailRecipients,
     sections: js.Array[MailSectionType],
     senderType: SenderType,
@@ -55,13 +54,13 @@ object MailMessage {
     
     inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    inline def setReplyBy(value: Date): Self = StObject.set(x, "replyBy", value.asInstanceOf[js.Any])
+    inline def setReplyBy(value: js.Date): Self = StObject.set(x, "replyBy", value.asInstanceOf[js.Any])
     
     inline def setReplyTo(value: EmailRecipients): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
     
     inline def setSections(value: js.Array[MailSectionType]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    inline def setSectionsVarargs(value: MailSectionType*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: MailSectionType*): Self = StObject.set(x, "sections", js.Array(value*))
     
     inline def setSenderType(value: SenderType): Self = StObject.set(x, "senderType", value.asInstanceOf[js.Any])
     

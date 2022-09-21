@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__MaterialUI.LinearProgress")
 @js.native
-class LinearProgress ()
-  extends Component[LinearProgressProps, js.Object, js.Any]
+open class LinearProgress ()
+  extends Component[LinearProgressProps, js.Object, Any]

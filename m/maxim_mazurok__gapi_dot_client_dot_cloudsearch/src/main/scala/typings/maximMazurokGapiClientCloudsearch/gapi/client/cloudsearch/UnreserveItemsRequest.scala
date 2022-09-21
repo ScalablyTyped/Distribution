@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UnreserveItemsRequest extends StObject {
   
-  /** Name of connector making this call. Format: datasources/{source_id}/connectors/{ID} */
+  /** The name of connector making this call. Format: datasources/{source_id}/connectors/{ID} */
   var connectorName: js.UndefOr[String] = js.undefined
   
   /** Common debug options. */
   var debugOptions: js.UndefOr[DebugOptions] = js.undefined
   
-  /** Name of a queue to unreserve items from. */
+  /** The name of a queue to unreserve items from. */
   var queue: js.UndefOr[String] = js.undefined
 }
 object UnreserveItemsRequest {

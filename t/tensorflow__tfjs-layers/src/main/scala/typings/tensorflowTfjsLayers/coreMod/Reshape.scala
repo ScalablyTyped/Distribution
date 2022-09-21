@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Reshape")
 @js.native
-class Reshape protected () extends Layer {
+open class Reshape protected () extends Layer {
   def this(args: ReshapeLayerArgs) = this()
   
   /**
@@ -24,11 +24,11 @@ class Reshape protected () extends Layer {
     * @returns: The output shape with `null` replaced with its computed value.
     * @throws: ValueError: If `inputShape` and `outputShape` do not match.
     */
-  /* private */ var fixUnknownDimension: js.Any = js.native
+  /* private */ var fixUnknownDimension: Any = js.native
   
-  /* private */ var isUnknown: js.Any = js.native
+  /* private */ var isUnknown: Any = js.native
   
-  /* private */ var targetShape: js.Any = js.native
+  /* private */ var targetShape: Any = js.native
 }
 /* static members */
 object Reshape {

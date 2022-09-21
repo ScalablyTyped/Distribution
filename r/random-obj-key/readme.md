@@ -1,7 +1,7 @@
 
 # Scala.js typings for random-obj-key
 
-Typings are for version 2.0.1
+Typings are for version 3.0.0
 
 ## Library description:
 Get a random key from an object
@@ -10,10 +10,10 @@ Get a random key from an object
 | ------------------ | :-------------: |
 | Full name          | random-obj-key |
 | Keywords           | random, randomize, math, object, key, pick, select, choice |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 310 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 27.666666666666668 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/random-obj-key#readme)

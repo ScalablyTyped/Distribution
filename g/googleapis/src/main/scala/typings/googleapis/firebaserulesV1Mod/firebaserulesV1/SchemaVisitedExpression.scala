@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Store the position and access outcome for an expression visited in rules.
-  */
 trait SchemaVisitedExpression extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaVisitedExpression extends StObject {
   /**
     * The evaluated value for the visited expression, e.g. true/false
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any | Null] = js.undefined
 }
 object SchemaVisitedExpression {
   
@@ -32,7 +29,9 @@ object SchemaVisitedExpression {
     
     inline def setSourcePositionUndefined: Self = StObject.set(x, "sourcePosition", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

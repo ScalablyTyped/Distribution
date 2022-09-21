@@ -80,6 +80,10 @@ object bullStrings {
   inline def stalled: stalled = "stalled".asInstanceOf[stalled]
   
   @js.native
+  sealed trait stuck extends StObject
+  inline def stuck: stuck = "stuck".asInstanceOf[stuck]
+  
+  @js.native
   sealed trait subscriber extends StObject
   inline def subscriber: subscriber = "subscriber".asInstanceOf[subscriber]
   

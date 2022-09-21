@@ -26,7 +26,7 @@ trait TimeZone extends StObject {
   /* private */ @JSName("Outlook.TimeZone_typekey")
   var OutlookDotTimeZone_typekey: TimeZone
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -48,7 +48,7 @@ object TimeZone {
     ID: String,
     Name: String,
     OutlookDotTimeZone_typekey: TimeZone,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     StandardBias: Double,
     StandardDate: VarDate,
@@ -79,7 +79,7 @@ object TimeZone {
     
     inline def setOutlookDotTimeZone_typekey(value: TimeZone): Self = StObject.set(x, "Outlook.TimeZone_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Read and write files atomically and reliably.
 | ------------------ | :-------------: |
 | Full name          | atomically |
 | Keywords           | atomic, read, write, file, reliable |
-| # releases         | 12 |
-| # dependents       | 7 |
-| # downloads        | 1234532 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 1240821.3333333333 |
+| # stars            | 129.0 |
 
 ## Links
 - [Homepage](https://github.com/fabiospampinato/atomically#readme)

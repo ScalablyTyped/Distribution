@@ -2,10 +2,13 @@ package typings.reactBurgerMenu
 
 import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactBurgerMenu.anon.PartialCSSStyleDeclaratio
 import typings.reactBurgerMenu.anon.PartialStyles
 import typings.reactBurgerMenu.reactBurgerMenuBooleans.`false`
+import typings.reactBurgerMenu.reactBurgerMenuStrings.div
+import typings.reactBurgerMenu.reactBurgerMenuStrings.nav
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,124 +17,124 @@ object mod {
   
   @JSImport("react-burger-menu", "ReactBurgerMenu")
   @js.native
-  class ReactBurgerMenu protected ()
-    extends Component[Props, js.Object, js.Any] {
+  open class ReactBurgerMenu protected ()
+    extends Component[Props, js.Object, Any] {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   
   @JSImport("react-burger-menu", "bubble")
   @js.native
-  class bubble protected () extends ReactBurgerMenu {
+  open class bubble protected () extends ReactBurgerMenu {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   
   @JSImport("react-burger-menu", "elastic")
   @js.native
-  class elastic protected () extends ReactBurgerMenu {
+  open class elastic protected () extends ReactBurgerMenu {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   
   @JSImport("react-burger-menu", "fallDown")
   @js.native
-  class fallDown protected () extends ReactBurgerMenu {
+  open class fallDown protected () extends ReactBurgerMenu {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   
   @JSImport("react-burger-menu", "push")
   @js.native
-  class push protected () extends ReactBurgerMenu {
+  open class push protected () extends ReactBurgerMenu {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   
   @JSImport("react-burger-menu", "pushRotate")
   @js.native
-  class pushRotate protected () extends ReactBurgerMenu {
+  open class pushRotate protected () extends ReactBurgerMenu {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   
   @JSImport("react-burger-menu", "reveal")
   @js.native
-  class reveal protected () extends ReactBurgerMenu {
+  open class reveal protected () extends ReactBurgerMenu {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   
   @JSImport("react-burger-menu", "scaleDown")
   @js.native
-  class scaleDown protected () extends ReactBurgerMenu {
+  open class scaleDown protected () extends ReactBurgerMenu {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   
   @JSImport("react-burger-menu", "scaleRotate")
   @js.native
-  class scaleRotate protected () extends ReactBurgerMenu {
+  open class scaleRotate protected () extends ReactBurgerMenu {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   
   @JSImport("react-burger-menu", "slide")
   @js.native
-  class slide protected () extends ReactBurgerMenu {
+  open class slide protected () extends ReactBurgerMenu {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   
   @JSImport("react-burger-menu", "stack")
   @js.native
-  class stack protected () extends ReactBurgerMenu {
+  open class stack protected () extends ReactBurgerMenu {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   
   trait HoverState extends StObject {
@@ -158,6 +161,8 @@ object mod {
     var burgerBarClassName: js.UndefOr[String] = js.undefined
     
     var burgerButtonClassName: js.UndefOr[String] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -186,6 +191,8 @@ object mod {
     var itemClassName: js.UndefOr[String] = js.undefined
     
     var itemListClassName: js.UndefOr[String] = js.undefined
+    
+    var itemListElement: js.UndefOr[div | nav] = js.undefined
     
     var menuClassName: js.UndefOr[String] = js.undefined
     
@@ -239,6 +246,10 @@ object mod {
       inline def setBurgerButtonClassName(value: String): Self = StObject.set(x, "burgerButtonClassName", value.asInstanceOf[js.Any])
       
       inline def setBurgerButtonClassNameUndefined: Self = StObject.set(x, "burgerButtonClassName", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -297,6 +308,10 @@ object mod {
       inline def setItemListClassName(value: String): Self = StObject.set(x, "itemListClassName", value.asInstanceOf[js.Any])
       
       inline def setItemListClassNameUndefined: Self = StObject.set(x, "itemListClassName", js.undefined)
+      
+      inline def setItemListElement(value: div | nav): Self = StObject.set(x, "itemListElement", value.asInstanceOf[js.Any])
+      
+      inline def setItemListElementUndefined: Self = StObject.set(x, "itemListElement", js.undefined)
       
       inline def setMenuClassName(value: String): Self = StObject.set(x, "menuClassName", value.asInstanceOf[js.Any])
       

@@ -57,7 +57,7 @@ object DescribeInputSecurityGroupResponse {
     
     inline def setInputsUndefined: Self = StObject.set(x, "Inputs", js.undefined)
     
-    inline def setInputsVarargs(value: string*): Self = StObject.set(x, "Inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: string*): Self = StObject.set(x, "Inputs", js.Array(value*))
     
     inline def setState(value: InputSecurityGroupState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
@@ -71,6 +71,6 @@ object DescribeInputSecurityGroupResponse {
     
     inline def setWhitelistRulesUndefined: Self = StObject.set(x, "WhitelistRules", js.undefined)
     
-    inline def setWhitelistRulesVarargs(value: InputWhitelistRule*): Self = StObject.set(x, "WhitelistRules", js.Array(value :_*))
+    inline def setWhitelistRulesVarargs(value: InputWhitelistRule*): Self = StObject.set(x, "WhitelistRules", js.Array(value*))
   }
 }

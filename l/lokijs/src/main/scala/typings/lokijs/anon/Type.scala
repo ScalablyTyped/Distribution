@@ -12,11 +12,11 @@ trait Type extends StObject {
   
   var uid: js.UndefOr[String | Double] = js.undefined
   
-  var `val`: js.Any
+  var `val`: Any
 }
 object Type {
   
-  inline def apply(`type`: find | where, `val`: js.Any): Type = {
+  inline def apply(`type`: find | where, `val`: Any): Type = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
@@ -31,6 +31,6 @@ object Type {
     
     inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
     
-    inline def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }
 }

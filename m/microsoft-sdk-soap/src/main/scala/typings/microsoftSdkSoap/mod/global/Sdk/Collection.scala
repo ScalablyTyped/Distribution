@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Collection")
 @js.native
-class Collection[T] protected () extends StObject {
+open class Collection[T] protected () extends StObject {
   /**
     * A Collection for a specified type.
     * @param type The function that specifies the type.
@@ -25,7 +25,7 @@ class Collection[T] protected () extends StObject {
     * Adds an array of objects to the collection.
     * @param items An array of items to add to the collection.
     */
-  def addRange(items: js.Array[js.Any]): Unit = js.native
+  def addRange(items: js.Array[Any]): Unit = js.native
   
   /**
     * Removes all items from the collection.
@@ -47,7 +47,7 @@ class Collection[T] protected () extends StObject {
     * Applies the action contained within a delegate function.
     * @param fn Delegate function with parameters for item and index.
     */
-  def forEach(fn: js.Function2[/* item */ T, /* index */ scala.Double, js.Any]): Unit = js.native
+  def forEach(fn: js.Function2[/* item */ T, /* index */ scala.Double, Any]): Unit = js.native
   
   /**
     * Gets the item in the collection at the specified index.

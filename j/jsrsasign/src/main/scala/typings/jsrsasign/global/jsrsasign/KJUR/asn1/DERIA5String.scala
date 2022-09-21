@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("jsrsasign.KJUR.asn1.DERIA5String")
 @js.native
-class DERIA5String protected ()
+open class DERIA5String protected ()
   extends typings.jsrsasign.mod.KJUR.asn1.DERIA5String {
   def this(params: StringParam) = this()
 }

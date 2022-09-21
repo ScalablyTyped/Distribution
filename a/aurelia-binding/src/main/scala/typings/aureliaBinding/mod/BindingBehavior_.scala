@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "BindingBehavior")
 @js.native
-class BindingBehavior_ protected () extends Expression {
+open class BindingBehavior_ protected () extends Expression {
   def this(expression: Expression, name: String, args: js.Array[Expression]) = this()
   
   var args: js.Array[Expression] = js.native

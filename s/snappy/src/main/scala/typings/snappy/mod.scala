@@ -1,49 +1,57 @@
 package typings.snappy
 
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("snappy/snappy", JSImport.Namespace)
+  @JSImport("snappy", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def compress(input: String, callback: js.Function2[/* err */ Error, /* buffer */ js.UndefOr[Buffer], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def compress(input: Buffer, callback: js.Function2[/* err */ Error, /* buffer */ js.UndefOr[Buffer], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def compress(input: String): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def compress(input: String, signal: AbortSignal): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def compress(input: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def compress(input: Buffer, signal: AbortSignal): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
   inline def compressSync(input: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("compressSync")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   inline def compressSync(input: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("compressSync")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("snappy/snappy", "isValidCompressed")
-  @js.native
-  def isValidCompressed: js.Function2[
-    /* buffer */ Buffer, 
-    /* callback */ js.Function2[/* err */ Error | Null, /* isValid */ js.UndefOr[Boolean], Unit], 
-    Unit
-  ] = js.native
+  inline def uncompress(input: String): js.Promise[String | Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("uncompress")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Buffer]]
+  inline def uncompress(input: String, options: Null, signal: AbortSignal): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("uncompress")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
+  inline def uncompress(input: String, options: Unit, signal: AbortSignal): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("uncompress")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
+  inline def uncompress(input: String, options: Options): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("uncompress")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
+  inline def uncompress(input: String, options: Options, signal: AbortSignal): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("uncompress")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
+  inline def uncompress(input: Buffer): js.Promise[String | Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("uncompress")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Buffer]]
+  inline def uncompress(input: Buffer, options: Null, signal: AbortSignal): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("uncompress")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
+  inline def uncompress(input: Buffer, options: Unit, signal: AbortSignal): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("uncompress")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
+  inline def uncompress(input: Buffer, options: Options): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("uncompress")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
+  inline def uncompress(input: Buffer, options: Options, signal: AbortSignal): js.Promise[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("uncompress")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Buffer]]
   
-  @JSImport("snappy/snappy", "isValidCompressedSync")
-  @js.native
-  def isValidCompressedSync: js.Function1[/* buffer */ Buffer, Boolean] = js.native
-  inline def isValidCompressedSync_=(x: js.Function1[/* buffer */ Buffer, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isValidCompressedSync")(x.asInstanceOf[js.Any])
+  inline def uncompressSync(input: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("uncompressSync")(input.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+  inline def uncompressSync(input: String, asBuffer: Options): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("uncompressSync")(input.asInstanceOf[js.Any], asBuffer.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  inline def uncompressSync(input: Buffer): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("uncompressSync")(input.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+  inline def uncompressSync(input: Buffer, asBuffer: Options): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("uncompressSync")(input.asInstanceOf[js.Any], asBuffer.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
   
-  inline def isValidCompressed_=(
-    x: js.Function2[
-      /* buffer */ Buffer, 
-      /* callback */ js.Function2[/* err */ Error | Null, /* isValid */ js.UndefOr[Boolean], Unit], 
-      Unit
-    ]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isValidCompressed")(x.asInstanceOf[js.Any])
-  
-  inline def uncompress(
-    compressed: Buffer,
-    opts: js.Any,
-    callback: js.Function2[/* err */ Error, /* uncompressed */ js.UndefOr[String | Buffer], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uncompress")(compressed.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def uncompressSync(compressed: Buffer, opts: js.Any): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("uncompressSync")(compressed.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  trait Options extends StObject {
+    
+    var asBuffer: js.UndefOr[Boolean] = js.undefined
+  }
+  object Options {
+    
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+    
+    extension [Self <: Options](x: Self) {
+      
+      inline def setAsBuffer(value: Boolean): Self = StObject.set(x, "asBuffer", value.asInstanceOf[js.Any])
+      
+      inline def setAsBufferUndefined: Self = StObject.set(x, "asBuffer", js.undefined)
+    }
+  }
 }

@@ -3,8 +3,10 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 import typings.devtoolsProtocol.devtoolsProtocolStrings.`null`
 import typings.devtoolsProtocol.devtoolsProtocolStrings.`object`
 import typings.devtoolsProtocol.devtoolsProtocolStrings.array
+import typings.devtoolsProtocol.devtoolsProtocolStrings.arraybuffer
 import typings.devtoolsProtocol.devtoolsProtocolStrings.bigint
 import typings.devtoolsProtocol.devtoolsProtocolStrings.boolean
+import typings.devtoolsProtocol.devtoolsProtocolStrings.dataview
 import typings.devtoolsProtocol.devtoolsProtocolStrings.date
 import typings.devtoolsProtocol.devtoolsProtocolStrings.error
 import typings.devtoolsProtocol.devtoolsProtocolStrings.function
@@ -13,13 +15,18 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.iterator
 import typings.devtoolsProtocol.devtoolsProtocolStrings.map
 import typings.devtoolsProtocol.devtoolsProtocolStrings.node
 import typings.devtoolsProtocol.devtoolsProtocolStrings.number
+import typings.devtoolsProtocol.devtoolsProtocolStrings.promise
+import typings.devtoolsProtocol.devtoolsProtocolStrings.proxy_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.regexp
 import typings.devtoolsProtocol.devtoolsProtocolStrings.set
 import typings.devtoolsProtocol.devtoolsProtocolStrings.string
 import typings.devtoolsProtocol.devtoolsProtocolStrings.symbol
+import typings.devtoolsProtocol.devtoolsProtocolStrings.typedarray
 import typings.devtoolsProtocol.devtoolsProtocolStrings.undefined
+import typings.devtoolsProtocol.devtoolsProtocolStrings.wasmvalue
 import typings.devtoolsProtocol.devtoolsProtocolStrings.weakmap
 import typings.devtoolsProtocol.devtoolsProtocolStrings.weakset
+import typings.devtoolsProtocol.devtoolsProtocolStrings.webassemblymemory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +57,7 @@ trait ObjectPreview extends StObject {
     * Object subtype hint. Specified for `object` type values only. (ObjectPreviewSubtype enum)
     */
   var subtype: js.UndefOr[
-    array | `null` | node | regexp | date | map | set | weakmap | weakset | iterator | generator | error
+    array | `null` | node | regexp | date | map | set | weakmap | weakset | iterator | generator | error | proxy_ | promise | typedarray | arraybuffer | dataview | webassemblymemory | wasmvalue
   ] = js.undefined
   
   /**
@@ -80,16 +87,16 @@ object ObjectPreview {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    inline def setEntriesVarargs(value: EntryPreview*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: EntryPreview*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setOverflow(value: Boolean): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     inline def setProperties(value: js.Array[PropertyPreview]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setPropertiesVarargs(value: PropertyPreview*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: PropertyPreview*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setSubtype(
-      value: array | `null` | node | regexp | date | map | set | weakmap | weakset | iterator | generator | error
+      value: array | `null` | node | regexp | date | map | set | weakmap | weakset | iterator | generator | error | proxy_ | promise | typedarray | arraybuffer | dataview | webassemblymemory | wasmvalue
     ): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
     inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)

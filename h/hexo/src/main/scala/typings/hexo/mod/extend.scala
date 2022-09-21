@@ -25,7 +25,6 @@ import typings.hexo.mod.extend.Console.Options
 import typings.hexo.mod.extend.Deployer.Config
 import typings.hexo.mod.extend.Generator.Return
 import typings.minimist.mod.ParsedArgs
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,7 +76,7 @@ object extend {
         
         inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
         
-        inline def setArgumentsVarargs(value: Desc*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+        inline def setArgumentsVarargs(value: Desc*): Self = StObject.set(x, "arguments", js.Array(value*))
         
         inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
         
@@ -87,7 +86,7 @@ object extend {
         
         inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
         
-        inline def setOptionsVarargs(value: Desc*): Self = StObject.set(x, "options", js.Array(value :_*))
+        inline def setOptionsVarargs(value: Desc*): Self = StObject.set(x, "options", js.Array(value*))
         
         inline def setUsage(value: String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
         
@@ -109,7 +108,7 @@ object extend {
     
     trait Config
       extends StObject
-         with /* key */ StringDictionary[js.Any] {
+         with /* key */ StringDictionary[Any] {
       
       val `type`: js.UndefOr[String] = js.undefined
     }
@@ -137,22 +136,18 @@ object extend {
   @js.native
   trait Filter extends StObject {
     
-    def exec(`type`: String): js.Any = js.native
-    def exec(`type`: String, data: js.Any): js.Any = js.native
-    def exec(`type`: String, data: js.Any, options: typings.hexo.mod.extend.Filter.Options): js.Any = js.native
-    def exec(`type`: String, data: Unit, options: typings.hexo.mod.extend.Filter.Options): js.Any = js.native
+    def exec(`type`: String): Any = js.native
+    def exec(`type`: String, data: Any): Any = js.native
+    def exec(`type`: String, data: Any, options: typings.hexo.mod.extend.Filter.Options): Any = js.native
+    def exec(`type`: String, data: Unit, options: typings.hexo.mod.extend.Filter.Options): Any = js.native
     
-    def execSync(`type`: String): js.Any = js.native
-    def execSync(`type`: String, data: js.Any): js.Any = js.native
-    def execSync(`type`: String, data: js.Any, options: typings.hexo.mod.extend.Filter.Options): js.Any = js.native
-    def execSync(`type`: String, data: Unit, options: typings.hexo.mod.extend.Filter.Options): js.Any = js.native
+    def execSync(`type`: String): Any = js.native
+    def execSync(`type`: String, data: Any): Any = js.native
+    def execSync(`type`: String, data: Any, options: typings.hexo.mod.extend.Filter.Options): Any = js.native
+    def execSync(`type`: String, data: Unit, options: typings.hexo.mod.extend.Filter.Options): Any = js.native
     
-    def register(`type`: String, fn: js.Function2[/* data */ js.Any, /* repeated */ js.Any, js.Any]): Unit = js.native
-    def register(
-      `type`: String,
-      fn: js.Function2[/* data */ js.Any, /* repeated */ js.Any, js.Any],
-      priority: Double
-    ): Unit = js.native
+    def register(`type`: String, fn: js.Function2[/* data */ Any, /* repeated */ Any, Any]): Unit = js.native
+    def register(`type`: String, fn: js.Function2[/* data */ Any, /* repeated */ Any, Any], priority: Double): Unit = js.native
     /**
       * Executed after generated files and cache are removed with hexo clean command.
       */
@@ -206,9 +201,9 @@ object extend {
       * Executed before generation begins.
       */
     @JSName("register")
-    def register_beforegenerate(`type`: before_generate, fn: js.Function1[/* data */ js.Any, js.Any]): Unit = js.native
+    def register_beforegenerate(`type`: before_generate, fn: js.Function1[/* data */ Any, Any]): Unit = js.native
     @JSName("register")
-    def register_beforegenerate(`type`: before_generate, fn: js.Function1[/* data */ js.Any, js.Any], priority: Double): Unit = js.native
+    def register_beforegenerate(`type`: before_generate, fn: js.Function1[/* data */ Any, Any], priority: Double): Unit = js.native
     /**
       * Executed before a post is rendered. Refer to post rendering to learn the execution steps.
       */
@@ -253,7 +248,7 @@ object extend {
       priority: Double
     ): Unit = js.native
     
-    def unregister(`type`: String, fn: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+    def unregister(`type`: String, fn: js.Function1[/* repeated */ Any, Any]): Unit = js.native
   }
   object Filter {
     
@@ -262,7 +257,7 @@ object extend {
       /**
         * Arguments. This must be an array.
         */
-      var args: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var args: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * `hexo` object.
@@ -278,11 +273,11 @@ object extend {
       
       extension [Self <: typings.hexo.mod.extend.Filter.Options](x: Self) {
         
-        inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
         inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
         
-        inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+        inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
         
         inline def setContext(value: Hexo): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
@@ -293,28 +288,44 @@ object extend {
   
   trait Generator extends StObject {
     
-    def register(name: String, fn: js.Function1[/* locals */ Site, Return | js.Array[Return]]): Unit
+    def register(
+      name: String,
+      fn: js.Function1[
+          /* locals */ Site, 
+          Return | js.Array[Return] | (typings.bluebird.mod.^[js.Array[Return] | Return])
+        ]
+    ): Unit
   }
   object Generator {
     
-    inline def apply(register: (String, js.Function1[/* locals */ Site, Return | js.Array[Return]]) => Unit): Generator = {
+    inline def apply(
+      register: (String, js.Function1[
+          /* locals */ Site, 
+          Return | js.Array[Return] | (typings.bluebird.mod.^[js.Array[Return] | Return])
+        ]) => Unit
+    ): Generator = {
       val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
       __obj.asInstanceOf[Generator]
     }
     
     extension [Self <: Generator](x: Self) {
       
-      inline def setRegister(value: (String, js.Function1[/* locals */ Site, Return | js.Array[Return]]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+      inline def setRegister(
+        value: (String, js.Function1[
+              /* locals */ Site, 
+              Return | js.Array[Return] | (typings.bluebird.mod.^[js.Array[Return] | Return])
+            ]) => Unit
+      ): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     }
     
     trait Return extends StObject {
       
-      var data: js.Any
+      var data: Any
       
       /**
         * Layout. Specify the layouts for rendering. The value can be a string or an array. If it’s ignored then the route will return data directly.
         */
-      var layout: String | js.Array[String]
+      var layout: js.UndefOr[String | js.Array[String]] = js.undefined
       
       /**
         * Path not including the prefixing `/` .
@@ -323,18 +334,20 @@ object extend {
     }
     object Return {
       
-      inline def apply(data: js.Any, layout: String | js.Array[String], path: String): Return = {
-        val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+      inline def apply(data: Any, path: String): Return = {
+        val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
         __obj.asInstanceOf[Return]
       }
       
       extension [Self <: Return](x: Self) {
         
-        inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
         inline def setLayout(value: String | js.Array[String]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
         
-        inline def setLayoutVarargs(value: String*): Self = StObject.set(x, "layout", js.Array(value :_*))
+        inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+        
+        inline def setLayoutVarargs(value: String*): Self = StObject.set(x, "layout", js.Array(value*))
         
         inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       }
@@ -343,18 +356,18 @@ object extend {
   
   trait Helper extends StObject {
     
-    def get(name: String): js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]]
+    def get(name: String): js.UndefOr[js.Function1[/* repeated */ Any, Any]]
     
-    def list(): StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]
+    def list(): StringDictionary[js.Function1[/* repeated */ Any, Any]]
     
-    def register(name: String, fn: js.Function1[/* repeated */ js.Any, js.Any]): Unit
+    def register(name: String, fn: js.Function1[/* repeated */ Any, Any]): Unit
   }
   object Helper {
     
     inline def apply(
-      get: String => js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]],
-      list: () => StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]],
-      register: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit
+      get: String => js.UndefOr[js.Function1[/* repeated */ Any, Any]],
+      list: () => StringDictionary[js.Function1[/* repeated */ Any, Any]],
+      register: (String, js.Function1[/* repeated */ Any, Any]) => Unit
     ): Helper = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction0(list), register = js.Any.fromFunction2(register))
       __obj.asInstanceOf[Helper]
@@ -362,11 +375,11 @@ object extend {
     
     extension [Self <: Helper](x: Self) {
       
-      inline def setGet(value: String => js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.UndefOr[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      inline def setList(value: () => StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
+      inline def setList(value: () => StringDictionary[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
       
-      inline def setRegister(value: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+      inline def setRegister(value: (String, js.Function1[/* repeated */ Any, Any]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     }
   }
   
@@ -374,13 +387,13 @@ object extend {
     
     def register(
       name: String,
-      fn: js.Function2[/* args */ ParsedArgs, /* fn */ js.Function1[/* err */ js.Any, Unit], Unit]
+      fn: js.Function2[/* args */ ParsedArgs, /* fn */ js.Function1[/* err */ Any, Unit], Unit]
     ): Unit
   }
   object Migrator {
     
     inline def apply(
-      register: (String, js.Function2[/* args */ ParsedArgs, /* fn */ js.Function1[/* err */ js.Any, Unit], Unit]) => Unit
+      register: (String, js.Function2[/* args */ ParsedArgs, /* fn */ js.Function1[/* err */ Any, Unit], Unit]) => Unit
     ): Migrator = {
       val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
       __obj.asInstanceOf[Migrator]
@@ -389,7 +402,7 @@ object extend {
     extension [Self <: Migrator](x: Self) {
       
       inline def setRegister(
-        value: (String, js.Function2[/* args */ ParsedArgs, /* fn */ js.Function1[/* err */ js.Any, Unit], Unit]) => Unit
+        value: (String, js.Function2[/* args */ ParsedArgs, /* fn */ js.Function1[/* err */ Any, Unit], Unit]) => Unit
       ): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     }
   }
@@ -399,8 +412,8 @@ object extend {
     
     def register(fn: js.Function1[/* file */ File, Unit]): Unit = js.native
     def register(pattern: String, fn: js.Function1[/* file */ File, Unit]): Unit = js.native
-    def register(pattern: js.Function1[/* str */ String, js.Any], fn: js.Function1[/* file */ File, Unit]): Unit = js.native
-    def register(pattern: RegExp, fn: js.Function1[/* file */ File, Unit]): Unit = js.native
+    def register(pattern: js.Function1[/* str */ String, Any], fn: js.Function1[/* file */ File, Unit]): Unit = js.native
+    def register(pattern: js.RegExp, fn: js.Function1[/* file */ File, Unit]): Unit = js.native
   }
   
   @js.native
@@ -409,20 +422,20 @@ object extend {
     def register(
       srcExt: String,
       outExt: String,
-      fn: js.Function2[/* data */ RendererData, /* options */ js.Any, js.Promise[String]]
+      fn: js.ThisFunction2[/* this */ Hexo, /* data */ RendererData, /* options */ Any, js.Promise[String]]
     ): Unit = js.native
     @JSName("register")
     def register_false(
       srcExt: String,
       outExt: String,
-      fn: js.Function2[/* data */ RendererData, /* options */ js.Any, js.Promise[String]],
+      fn: js.ThisFunction2[/* this */ Hexo, /* data */ RendererData, /* options */ Any, js.Promise[String]],
       sync: `false`
     ): Unit = js.native
     @JSName("register")
     def register_true(
       srcExt: String,
       outExt: String,
-      fn: js.Function2[/* data */ RendererData, /* options */ js.Any, String],
+      fn: js.ThisFunction2[/* this */ Hexo, /* data */ RendererData, /* options */ Any, String],
       sync: `true`
     ): Unit = js.native
   }

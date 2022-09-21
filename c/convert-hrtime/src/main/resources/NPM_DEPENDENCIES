@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "convert-hrtime" : "3.0.0"
+      "convert-hrtime" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "convert-hrtime" : "3.0.0"
+      "convert-hrtime" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

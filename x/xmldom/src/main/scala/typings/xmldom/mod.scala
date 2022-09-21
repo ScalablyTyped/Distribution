@@ -17,7 +17,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("xmldom", "DOMImplementation")
   @js.native
-  class DOMImplementation ()
+  open class DOMImplementation ()
     extends StObject
        with typings.std.DOMImplementation
   @JSImport("xmldom", "DOMImplementation")
@@ -38,7 +38,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("xmldom", "DOMParser")
   @js.native
-  class DOMParserCls ()
+  open class DOMParserCls ()
     extends StObject
        with DOMParser {
     def this(options: Options) = this()
@@ -65,7 +65,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("xmldom", "XMLSerializer")
   @js.native
-  class XMLSerializerCls ()
+  open class XMLSerializerCls ()
     extends StObject
        with XMLSerializer {
     
@@ -84,15 +84,15 @@ object mod {
        with Instantiable0[DOMParser]
        with Instantiable1[/* options */ Options, DOMParser]
   
-  type ErrorHandlerFunction = js.Function2[/* level */ String, /* msg */ js.Any, js.Any]
+  type ErrorHandlerFunction = js.Function2[/* level */ String, /* msg */ Any, Any]
   
   trait ErrorHandlerObject extends StObject {
     
-    var error: js.UndefOr[js.Function1[/* msg */ js.Any, js.Any]] = js.undefined
+    var error: js.UndefOr[js.Function1[/* msg */ Any, Any]] = js.undefined
     
-    var fatalError: js.UndefOr[js.Function1[/* msg */ js.Any, js.Any]] = js.undefined
+    var fatalError: js.UndefOr[js.Function1[/* msg */ Any, Any]] = js.undefined
     
-    var warning: js.UndefOr[js.Function1[/* msg */ js.Any, js.Any]] = js.undefined
+    var warning: js.UndefOr[js.Function1[/* msg */ Any, Any]] = js.undefined
   }
   object ErrorHandlerObject {
     
@@ -103,15 +103,15 @@ object mod {
     
     extension [Self <: ErrorHandlerObject](x: Self) {
       
-      inline def setError(value: /* msg */ js.Any => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* msg */ Any => Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setFatalError(value: /* msg */ js.Any => js.Any): Self = StObject.set(x, "fatalError", js.Any.fromFunction1(value))
+      inline def setFatalError(value: /* msg */ Any => Any): Self = StObject.set(x, "fatalError", js.Any.fromFunction1(value))
       
       inline def setFatalErrorUndefined: Self = StObject.set(x, "fatalError", js.undefined)
       
-      inline def setWarning(value: /* msg */ js.Any => js.Any): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
+      inline def setWarning(value: /* msg */ Any => Any): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
       
       inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
@@ -121,7 +121,7 @@ object mod {
     
     var errorHandler: js.UndefOr[ErrorHandlerFunction | ErrorHandlerObject] = js.undefined
     
-    var locator: js.UndefOr[js.Any] = js.undefined
+    var locator: js.UndefOr[Any] = js.undefined
   }
   object Options {
     
@@ -134,11 +134,11 @@ object mod {
       
       inline def setErrorHandler(value: ErrorHandlerFunction | ErrorHandlerObject): Self = StObject.set(x, "errorHandler", value.asInstanceOf[js.Any])
       
-      inline def setErrorHandlerFunction2(value: (/* level */ String, /* msg */ js.Any) => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
+      inline def setErrorHandlerFunction2(value: (/* level */ String, /* msg */ Any) => Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
       
       inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
-      inline def setLocator(value: js.Any): Self = StObject.set(x, "locator", value.asInstanceOf[js.Any])
+      inline def setLocator(value: Any): Self = StObject.set(x, "locator", value.asInstanceOf[js.Any])
       
       inline def setLocatorUndefined: Self = StObject.set(x, "locator", js.undefined)
     }

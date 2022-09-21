@@ -14,20 +14,19 @@ object mod {
     
     @JSImport("react-mathjax", "default.Node")
     @js.native
-    class Node ()
-      extends PureComponent[Formula, js.Object, js.Any]
+    open class Node ()
+      extends PureComponent[Formula, js.Object, Any]
     
     @JSImport("react-mathjax", "default.Provider")
     @js.native
-    class Provider ()
-      extends Component[Children, MathJaxContextValue, js.Any]
+    open class Provider () extends Component[Children, MathJaxContextValue, Any]
   }
   
   object MathJax {
     
-    type Node = PureComponent[Formula, js.Object, js.Any]
+    type Node = PureComponent[Formula, js.Object, Any]
     
-    type Provider = Component[Children, MathJaxContextValue, js.Any]
+    type Provider = Component[Children, MathJaxContextValue, Any]
   }
   
   trait MathJaxContextValue extends StObject {

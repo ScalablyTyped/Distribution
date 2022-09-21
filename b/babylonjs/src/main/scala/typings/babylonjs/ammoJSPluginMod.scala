@@ -17,76 +17,76 @@ object ammoJSPluginMod {
     * @param ammoInjection can be used to inject your own ammo reference
     * @param overlappingPairCache can be used to specify your own overlapping pair cache
     */
-  class AmmoJSPlugin ()
+  open class AmmoJSPlugin ()
     extends StObject
        with IPhysicsEnginePlugin {
     def this(_useDeltaForWorldStep: Boolean) = this()
-    def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any) = this()
-    def this(_useDeltaForWorldStep: Unit, ammoInjection: js.Any) = this()
-    def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any, overlappingPairCache: js.Any) = this()
-    def this(_useDeltaForWorldStep: Boolean, ammoInjection: Unit, overlappingPairCache: js.Any) = this()
-    def this(_useDeltaForWorldStep: Unit, ammoInjection: js.Any, overlappingPairCache: js.Any) = this()
-    def this(_useDeltaForWorldStep: Unit, ammoInjection: Unit, overlappingPairCache: js.Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, ammoInjection: Any) = this()
+    def this(_useDeltaForWorldStep: Unit, ammoInjection: Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, ammoInjection: Any, overlappingPairCache: Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, ammoInjection: Unit, overlappingPairCache: Any) = this()
+    def this(_useDeltaForWorldStep: Unit, ammoInjection: Any, overlappingPairCache: Any) = this()
+    def this(_useDeltaForWorldStep: Unit, ammoInjection: Unit, overlappingPairCache: Any) = this()
     
-    /* private */ var _addHullVerts: js.Any = js.native
+    /* private */ var _addHullVerts: Any = js.native
     
-    /* private */ var _addMeshVerts: js.Any = js.native
+    /* private */ var _addMeshVerts: Any = js.native
     
     /**
       * Update babylon mesh to match physics world object
       * @param impostor imposter to match
       */
-    /* private */ var _afterSoftStep: js.Any = js.native
+    /* private */ var _afterSoftStep: Any = js.native
     
-    /* private */ var _collisionConfiguration: js.Any = js.native
+    /* private */ var _collisionConfiguration: Any = js.native
     
     /**
       * Create cloth for an impostor
       * @param impostor to create the softbody for
       */
-    /* private */ var _createCloth: js.Any = js.native
+    /* private */ var _createCloth: Any = js.native
     
     /**
       * Create a custom physics impostor shape using the plugin's onCreateCustomShape handler
       * @param impostor to create the custom physics shape for
       */
-    /* private */ var _createCustom: js.Any = js.native
+    /* private */ var _createCustom: Any = js.native
     
     /**
       * Create rope for an impostor
       * @param impostor to create the softbody for
       */
-    /* private */ var _createRope: js.Any = js.native
+    /* private */ var _createRope: Any = js.native
     
-    /* private */ var _createShape: js.Any = js.native
+    /* private */ var _createShape: Any = js.native
     
     /**
       * Create an impostor's soft body
       * @param impostor to create the softbody for
       */
-    /* private */ var _createSoftbody: js.Any = js.native
+    /* private */ var _createSoftbody: Any = js.native
     
-    /* private */ var _dispatcher: js.Any = js.native
+    /* private */ var _dispatcher: Any = js.native
     
-    /* private */ var _fixedTimeStep: js.Any = js.native
+    /* private */ var _fixedTimeStep: Any = js.native
     
-    /* private */ var _isImpostorInContact: js.Any = js.native
+    /* private */ var _isImpostorInContact: Any = js.native
     
-    /* private */ var _isImpostorPairInContact: js.Any = js.native
+    /* private */ var _isImpostorPairInContact: Any = js.native
     
-    /* private */ var _maxSteps: js.Any = js.native
+    /* private */ var _maxSteps: Any = js.native
     
-    /* private */ var _overlappingPairCache: js.Any = js.native
+    /* private */ var _overlappingPairCache: Any = js.native
     
-    /* private */ var _raycastResult: js.Any = js.native
+    /* private */ var _raycastResult: Any = js.native
     
     /**
       * Update babylon mesh vertices vertices to match physics world softbody or cloth
       * @param impostor imposter to match
       */
-    /* private */ var _ropeStep: js.Any = js.native
+    /* private */ var _ropeStep: Any = js.native
     
-    /* private */ var _softBodySolver: js.Any = js.native
+    /* private */ var _softBodySolver: Any = js.native
     
     /**
       * Initialise the soft body vertices to match its object's (mesh) vertices
@@ -94,47 +94,49 @@ object ammoJSPluginMod {
       * The object's position and rotation is set to zero and so its vertices are also then set in world space
       * @param impostor to create the softbody for
       */
-    /* private */ var _softVertexData: js.Any = js.native
+    /* private */ var _softVertexData: Any = js.native
     
     /**
       * Update babylon mesh vertices vertices to match physics world softbody or cloth
       * @param impostor imposter to match
       */
-    /* private */ var _softbodyOrClothStep: js.Any = js.native
+    /* private */ var _softbodyOrClothStep: Any = js.native
     
-    /* private */ var _solver: js.Any = js.native
+    /* private */ var _solver: Any = js.native
     
-    /* private */ var _stepSimulation: js.Any = js.native
+    /* private */ var _stepSimulation: Any = js.native
     
-    /* private */ var _timeStep: js.Any = js.native
+    /* private */ var _timeStep: Any = js.native
     
-    /* private */ var _tmpAmmoConcreteContactResultCallback: js.Any = js.native
+    /* private */ var _tmpAmmoConcreteContactResultCallback: Any = js.native
     
-    /* private */ var _tmpAmmoQuaternion: js.Any = js.native
+    /* private */ var _tmpAmmoQuaternion: Any = js.native
     
-    /* private */ var _tmpAmmoTransform: js.Any = js.native
+    /* private */ var _tmpAmmoTransform: Any = js.native
     
-    /* private */ var _tmpAmmoVectorA: js.Any = js.native
+    /* private */ var _tmpAmmoVectorA: Any = js.native
     
-    /* private */ var _tmpAmmoVectorB: js.Any = js.native
+    /* private */ var _tmpAmmoVectorB: Any = js.native
     
-    /* private */ var _tmpAmmoVectorC: js.Any = js.native
+    /* private */ var _tmpAmmoVectorC: Any = js.native
     
-    /* private */ var _tmpAmmoVectorD: js.Any = js.native
+    /* private */ var _tmpAmmoVectorD: Any = js.native
     
-    /* private */ var _tmpAmmoVectorRCA: js.Any = js.native
+    /* private */ var _tmpAmmoVectorRCA: Any = js.native
     
-    /* private */ var _tmpAmmoVectorRCB: js.Any = js.native
+    /* private */ var _tmpAmmoVectorRCB: Any = js.native
     
-    /* private */ var _tmpContactCallbackResult: js.Any = js.native
+    /* private */ var _tmpContactCallbackResult: Any = js.native
     
-    /* private */ var _tmpContactPoint: js.Any = js.native
+    /* private */ var _tmpContactPoint: Any = js.native
     
-    /* private */ var _tmpMatrix: js.Any = js.native
+    /* private */ var _tmpMatrix: Any = js.native
     
-    /* private */ var _tmpQuaternion: js.Any = js.native
+    /* private */ var _tmpQuaternion: Any = js.native
     
-    /* private */ var _useDeltaForWorldStep: js.Any = js.native
+    /* private */ var _tmpVec3: Any = js.native
+    
+    /* private */ var _useDeltaForWorldStep: Any = js.native
     
     /**
       * Append an anchor to a cloth object
@@ -142,7 +144,7 @@ object ammoJSPluginMod {
       * @param otherImpostor is the rigid impostor to anchor to
       * @param width ratio across width from 0 to 1
       * @param height ratio up height from 0 to 1
-      * @param influence the elasticity between cloth impostor and anchor from 0, very stretchy to 1, little strech
+      * @param influence the elasticity between cloth impostor and anchor from 0, very stretchy to 1, little stretch
       * @param noCollisionBetweenLinkedBodies when true collisions between soft impostor and anchor are ignored; default false
       */
     @JSName("appendAnchor")
@@ -179,7 +181,7 @@ object ammoJSPluginMod {
       * @param impostor is the rope impostor to add hook to
       * @param otherImpostor is the rigid impostor to hook to
       * @param length ratio along the rope from 0 to 1
-      * @param influence the elasticity between soft impostor and anchor from 0, very stretchy to 1, little strech
+      * @param influence the elasticity between soft impostor and anchor from 0, very stretchy to 1, little stretch
       * @param noCollisionBetweenLinkedBodies when true collisions between soft impostor and anchor are ignored; default false
       */
     @JSName("appendHook")
@@ -206,7 +208,7 @@ object ammoJSPluginMod {
     /**
       * Reference to the Ammo library
       */
-    var bjsAMMO: js.Any = js.native
+    var bjsAMMO: Any = js.native
     
     /**
       * Gets positionIterations of the impostor
@@ -241,9 +243,19 @@ object ammoJSPluginMod {
     def getBodyVelocityIterations_MAmmoJSPlugin(impostor: PhysicsImpostor): Double = js.native
     
     /**
+      * The create custom convex hull impostor handler function to support building custom convex hull impostor vertex data
+      */
+    def onCreateCustomConvexHullImpostor(impostor: PhysicsImpostor): Any = js.native
+    
+    /**
+      * The create custom mesh impostor handler function to support building custom mesh impostor vertex data
+      */
+    def onCreateCustomMeshImpostor(impostor: PhysicsImpostor): Any = js.native
+    
+    /**
       * The create custom shape handler function to be called when using BABYLON.PhysicsImposter.CustomImpostor
       */
-    def onCreateCustomShape(impostor: PhysicsImpostor): js.Any = js.native
+    def onCreateCustomShape(impostor: PhysicsImpostor): Any = js.native
     
     /**
       * Sets positionIterations of the impostor
@@ -285,6 +297,11 @@ object ammoJSPluginMod {
     def setFixedTimeStep(fixedTimeStep: Double): Unit = js.native
     
     /**
+      * Sets the motors limit
+      */
+    def setLimit(): Unit = js.native
+    
+    /**
       * Sets the maximum number of steps by the physics engine per frame (Default: 5)
       * @param maxSteps the maximum number of steps by the physics engine per frame
       */
@@ -295,26 +312,28 @@ object ammoJSPluginMod {
       * @param joint joint to set motor on
       * @param speed speed of the motor
       * @param maxForce maximum force of the motor
-      * @param motorIndex index of the motor
       */
     def setMotor(joint: IMotorEnabledJoint): Unit = js.native
     def setMotor(joint: IMotorEnabledJoint, speed: Unit, maxForce: Double): Unit = js.native
-    def setMotor(joint: IMotorEnabledJoint, speed: Unit, maxForce: Double, motorIndex: Double): Unit = js.native
-    def setMotor(joint: IMotorEnabledJoint, speed: Unit, maxForce: Unit, motorIndex: Double): Unit = js.native
+    
+    /**
+      * Updates the distance parameters of the joint
+      */
+    def updateDistanceJoint(): Unit = js.native
   }
   /* static members */
   object AmmoJSPlugin {
     
-    @JSImport("babylonjs/Physics/Plugins/ammoJSPlugin", "AmmoJSPlugin.DISABLE_COLLISION_FLAG")
+    @JSImport("babylonjs/Physics/Plugins/ammoJSPlugin", "AmmoJSPlugin._DISABLE_COLLISION_FLAG")
     @js.native
-    val DISABLE_COLLISION_FLAG: js.Any = js.native
+    val _DISABLE_COLLISION_FLAG: Any = js.native
     
-    @JSImport("babylonjs/Physics/Plugins/ammoJSPlugin", "AmmoJSPlugin.DISABLE_DEACTIVATION_FLAG")
+    @JSImport("babylonjs/Physics/Plugins/ammoJSPlugin", "AmmoJSPlugin._DISABLE_DEACTIVATION_FLAG")
     @js.native
-    val DISABLE_DEACTIVATION_FLAG: js.Any = js.native
+    val _DISABLE_DEACTIVATION_FLAG: Any = js.native
     
-    @JSImport("babylonjs/Physics/Plugins/ammoJSPlugin", "AmmoJSPlugin.KINEMATIC_FLAG")
+    @JSImport("babylonjs/Physics/Plugins/ammoJSPlugin", "AmmoJSPlugin._KINEMATIC_FLAG")
     @js.native
-    val KINEMATIC_FLAG: js.Any = js.native
+    val _KINEMATIC_FLAG: Any = js.native
   }
 }

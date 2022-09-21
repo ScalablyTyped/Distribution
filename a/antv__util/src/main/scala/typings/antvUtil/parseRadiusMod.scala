@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object parseRadiusMod {
   
-  @JSImport("@antv/util/lib/parse-radius", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/parse-radius", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

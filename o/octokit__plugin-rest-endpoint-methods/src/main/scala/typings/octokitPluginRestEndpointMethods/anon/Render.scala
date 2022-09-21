@@ -41,22 +41,22 @@ trait Render extends StObject {
     * You must send Markdown as plain text (using a `Content-Type` header of `text/plain` or `text/x-markdown`) to this endpoint, rather than using JSON format. In raw mode, [GitHub Flavored Markdown](https://github.github.com/gfm/) is not supported and Markdown will be rendered in plain format like a README.md file. Markdown content must be 400 KB or less.
     */
   @JSName("renderRaw")
-  var renderRaw_Original: `208`
+  var renderRaw_Original: `340`
   
   @JSName("render")
-  var render_Original: `207`
+  var render_Original: `339`
 }
 object Render {
   
-  inline def apply(render: `207`, renderRaw: `208`): Render = {
+  inline def apply(render: `339`, renderRaw: `340`): Render = {
     val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any], renderRaw = renderRaw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Render]
   }
   
   extension [Self <: Render](x: Self) {
     
-    inline def setRender(value: `207`): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: `339`): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    inline def setRenderRaw(value: `208`): Self = StObject.set(x, "renderRaw", value.asInstanceOf[js.Any])
+    inline def setRenderRaw(value: `340`): Self = StObject.set(x, "renderRaw", value.asInstanceOf[js.Any])
   }
 }

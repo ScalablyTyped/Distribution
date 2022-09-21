@@ -42,7 +42,7 @@ object XDataPilotResults {
     acquire: () => Unit,
     getFilteredResults: SeqEquiv[DataPilotFieldFilter] => SafeArray[Double],
     getResults: () => SafeArray[SafeArray[DataResult]],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDataPilotResults = {
     val __obj = js.Dynamic.literal(Results = Results.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getFilteredResults = js.Any.fromFunction1(getFilteredResults), getResults = js.Any.fromFunction0(getResults), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

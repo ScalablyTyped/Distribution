@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * HttpRouteRuleMatch criteria for field values that must stay within the
-  * specified integer range.
-  */
 trait SchemaInt64RangeMatch extends StObject {
   
   /**
     * The end of the range (exclusive) in signed long integer format.
     */
-  var rangeEnd: js.UndefOr[String] = js.undefined
+  var rangeEnd: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The start of the range (inclusive) in signed long integer format.
     */
-  var rangeStart: js.UndefOr[String] = js.undefined
+  var rangeStart: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaInt64RangeMatch {
   
@@ -31,9 +27,13 @@ object SchemaInt64RangeMatch {
     
     inline def setRangeEnd(value: String): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
     
+    inline def setRangeEndNull: Self = StObject.set(x, "rangeEnd", null)
+    
     inline def setRangeEndUndefined: Self = StObject.set(x, "rangeEnd", js.undefined)
     
     inline def setRangeStart(value: String): Self = StObject.set(x, "rangeStart", value.asInstanceOf[js.Any])
+    
+    inline def setRangeStartNull: Self = StObject.set(x, "rangeStart", null)
     
     inline def setRangeStartUndefined: Self = StObject.set(x, "rangeStart", js.undefined)
   }

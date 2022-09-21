@@ -1,16 +1,21 @@
 package typings.mjmlReact.mod
 
-import typings.csstype.mod.BackgroundColorProperty
-import typings.csstype.mod.VerticalAlignProperty
+import typings.csstype.mod.Property.BackgroundColor
+import typings.csstype.mod.Property.VerticalAlign
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MjmlColumnProps extends StObject {
   
-  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
+  var backgroundColor: js.UndefOr[BackgroundColor] = js.undefined
   
-  var verticalAlign: js.UndefOr[VerticalAlignProperty[String | Double]] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
+  var innerBackgroundColor: js.UndefOr[BackgroundColor] = js.undefined
+  
+  var verticalAlign: js.UndefOr[VerticalAlign[String | Double]] = js.undefined
   
   var width: js.UndefOr[String | Double] = js.undefined
 }
@@ -23,11 +28,19 @@ object MjmlColumnProps {
   
   extension [Self <: MjmlColumnProps](x: Self) {
     
-    inline def setBackgroundColor(value: BackgroundColorProperty): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setVerticalAlign(value: VerticalAlignProperty[String | Double]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setInnerBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "innerBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setInnerBackgroundColorUndefined: Self = StObject.set(x, "innerBackgroundColor", js.undefined)
+    
+    inline def setVerticalAlign(value: VerticalAlign[String | Double]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     

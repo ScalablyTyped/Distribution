@@ -3,7 +3,7 @@ package typings.arangodb.Foxx
 import typings.arangodb.ArangoDB.Collection
 import typings.arangodb.anon.PartialDocumentationRoute
 import typings.arangodb.arangodbBooleans.`false`
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Context extends StObject {
   
-  var argv: js.Array[js.Any] = js.native
+  var argv: js.Array[Any] = js.native
   
   var basePath: String = js.native
   
   var baseUrl: String = js.native
   
-  def collection(name: String): Collection[js.Any] | Null = js.native
+  def collection(name: String): Collection[Any] | Null = js.native
   
   def collectionName(name: String): String = js.native
   

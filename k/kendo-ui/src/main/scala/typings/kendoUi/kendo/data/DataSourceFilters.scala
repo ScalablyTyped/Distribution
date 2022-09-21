@@ -25,7 +25,7 @@ object DataSourceFilters {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: DataSourceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: DataSourceFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setLogic(value: String): Self = StObject.set(x, "logic", value.asInstanceOf[js.Any])
     

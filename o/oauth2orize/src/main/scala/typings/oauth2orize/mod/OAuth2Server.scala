@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("oauth2orize", "OAuth2Server")
 @js.native
-class OAuth2Server () extends StObject {
+open class OAuth2Server () extends StObject {
   
   def authorization(options: AuthorizeOptions, validate: ValidateFunction): MiddlewareFunction = js.native
   def authorization(options: AuthorizeOptions, validate: ValidateFunction, immediate: ImmediateFunction): MiddlewareFunction = js.native
@@ -21,10 +21,10 @@ class OAuth2Server () extends StObject {
   def decision(parse: DecisionParseFunction): MiddlewareFunction = js.native
   
   def deserializeClient(fn: DeserializeClientFunction): Unit = js.native
-  def deserializeClient(obj: js.Any, done: DeserializeClientDoneFunction): Unit = js.native
+  def deserializeClient(obj: Any, done: DeserializeClientDoneFunction): Unit = js.native
   
   def errorHandler(): MiddlewareErrorFunction = js.native
-  def errorHandler(options: js.Any): MiddlewareErrorFunction = js.native
+  def errorHandler(options: Any): MiddlewareErrorFunction = js.native
   
   def exchange(fn: MiddlewareFunction): OAuth2Server = js.native
   def exchange(`type`: String, fn: MiddlewareFunction): OAuth2Server = js.native
@@ -32,9 +32,9 @@ class OAuth2Server () extends StObject {
   def grant(fn: MiddlewareFunction): OAuth2Server = js.native
   def grant(`type`: String, fn: MiddlewareFunction): OAuth2Server = js.native
   
-  def serializeClient(client: js.Any, done: SerializeClientDoneFunction): Unit = js.native
+  def serializeClient(client: Any, done: SerializeClientDoneFunction): Unit = js.native
   def serializeClient(fn: SerializeClientFunction): Unit = js.native
   
   def token(): MiddlewareFunction = js.native
-  def token(options: js.Any): MiddlewareFunction = js.native
+  def token(options: Any): MiddlewareFunction = js.native
 }

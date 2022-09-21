@@ -562,11 +562,11 @@ object mod {
         
         inline def setMissingTd(value: js.Array[Element]): Self = StObject.set(x, "missingTd", value.asInstanceOf[js.Any])
         
-        inline def setMissingTdVarargs(value: Element*): Self = StObject.set(x, "missingTd", js.Array(value :_*))
+        inline def setMissingTdVarargs(value: Element*): Self = StObject.set(x, "missingTd", js.Array(value*))
         
         inline def setMissingThId(value: js.Array[Element]): Self = StObject.set(x, "missingThId", value.asInstanceOf[js.Any])
         
-        inline def setMissingThIdVarargs(value: Element*): Self = StObject.set(x, "missingThId", js.Array(value :_*))
+        inline def setMissingThIdVarargs(value: Element*): Self = StObject.set(x, "missingThId", js.Array(value*))
         
         inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
         
@@ -574,7 +574,7 @@ object mod {
         
         inline def setWrongHeaders(value: js.Array[HeaderInfo]): Self = StObject.set(x, "wrongHeaders", value.asInstanceOf[js.Any])
         
-        inline def setWrongHeadersVarargs(value: HeaderInfo*): Self = StObject.set(x, "wrongHeaders", js.Array(value :_*))
+        inline def setWrongHeadersVarargs(value: HeaderInfo*): Self = StObject.set(x, "wrongHeaders", js.Array(value*))
       }
     }
   }
@@ -664,5 +664,5 @@ object mod {
     }
   }
   
-  type MessageData = StringDictionary[js.Any]
+  type MessageData = StringDictionary[Any]
 }

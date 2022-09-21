@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Ray")
 @js.native
-class Ray protected ()
+open class Ray protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Ray {
   /**
@@ -103,17 +103,22 @@ object Ray {
     */
   inline def Zero(): typings.babylonjs.BABYLON.Ray = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.BABYLON.Ray]
   
+  @JSGlobal("BABYLON.Ray._RayDistant")
+  @js.native
+  def _RayDistant: Any = js.native
+  inline def _RayDistant_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RayDistant")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("BABYLON.Ray._Rayl")
+  @js.native
+  def _Rayl: Any = js.native
+  inline def _Rayl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Rayl")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("BABYLON.Ray._Smallnum")
+  @js.native
+  def _Smallnum: Any = js.native
+  inline def _Smallnum_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Smallnum")(x.asInstanceOf[js.Any])
+  
   @JSGlobal("BABYLON.Ray._TmpVector3")
   @js.native
-  val _TmpVector3: js.Any = js.native
-  
-  @JSGlobal("BABYLON.Ray.rayl")
-  @js.native
-  def rayl: js.Any = js.native
-  inline def rayl_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rayl")(x.asInstanceOf[js.Any])
-  
-  @JSGlobal("BABYLON.Ray.smallnum")
-  @js.native
-  def smallnum: js.Any = js.native
-  inline def smallnum_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smallnum")(x.asInstanceOf[js.Any])
+  val _TmpVector3: Any = js.native
 }

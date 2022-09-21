@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.HTMLProjectItem")
 @js.native
-/* private */ class HTMLProjectItem ()
+/* private */ open class HTMLProjectItem ()
   extends StObject
      with typings.activexOffice.Office.HTMLProjectItem

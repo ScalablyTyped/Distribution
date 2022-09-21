@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matrix-appservice-bridge", "Intent")
 @js.native
-class Intent protected ()
+open class Intent protected ()
   extends typings.matrixAppserviceBridge.intentMod.Intent {
   /**
     * Create an entity which can fulfil the intent of a given user.
     * @constructor
-    * @param client The matrix client instance whose intent is being
+    * @param botSdkIntent The bot sdk intent which this intent wraps
     * fulfilled e.g. the entity joining the room when you call intent.join(roomId).
     * @param botClient The client instance for the AS bot itself.
     * This will be used to perform more priveleged actions such as creating new
@@ -53,7 +53,27 @@ class Intent protected ()
     *
     * @param opts.caching.ttl How long requests can stay in the cache, in milliseconds.
     * @param opts.caching.size How many entries should be kept in the cache, before the oldest is dropped.
+    * @param opts.getJsSdkClient Create a Matrix JS SDK client on demand for legacy code.
     */
-  def this(client: js.Any, botClient: js.Any) = this()
-  def this(client: js.Any, botClient: js.Any, opts: IntentOpts) = this()
+  def this(
+    botSdkIntent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdk.Intent */ Any,
+    botClient: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdk.MatrixClient */ Any
+  ) = this()
+  def this(
+    botSdkIntent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdk.Intent */ Any,
+    botClient: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdk.MatrixClient */ Any,
+    opts: IntentOpts
+  ) = this()
+}
+/* static members */
+object Intent {
+  
+  @JSImport("matrix-appservice-bridge", "Intent")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("matrix-appservice-bridge", "Intent.getClientWarningFired")
+  @js.native
+  def getClientWarningFired: Any = js.native
+  inline def getClientWarningFired_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getClientWarningFired")(x.asInstanceOf[js.Any])
 }

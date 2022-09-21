@@ -6,8 +6,6 @@ import typings.openpgp.openpgpStrings.binary
 import typings.openpgp.openpgpStrings.mime
 import typings.openpgp.openpgpStrings.text
 import typings.openpgp.openpgpStrings.utf8
-import typings.std.Date
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,12 +25,14 @@ object packet {
     * this packet is found as the contents of an encrypted packet, or following
     * a Signature or One-Pass Signature packet, and contains a literal data packet.
     */
-  class Compressed () extends StObject {
+  open class Compressed ()
+    extends StObject
+       with AnyPacket {
     
     /**
       * Compression algorithm
       */
-    var algorithm: js.Any = js.native
+    var algorithm: Any = js.native
     
     /**
       * Compress the packet data (member decompressedData)
@@ -42,7 +42,7 @@ object packet {
     /**
       * Compressed packet data
       */
-    var compressed: Uint8Array | ReadableStream[Uint8Array] = js.native
+    var compressed: js.typedarray.Uint8Array | ReadableStream[js.typedarray.Uint8Array] = js.native
     
     /**
       * Decompression method for decompressing the compressed data
@@ -55,12 +55,12 @@ object packet {
       */
     var packets: List = js.native
     
-    def read(bytes: ReadableStream[Uint8Array]): Unit = js.native
     /**
       * Parsing function for the packet.
       * @param bytes Payload of a tag 8 packet
       */
-    def read(bytes: Uint8Array): Unit = js.native
+    def read(bytes: js.typedarray.Uint8Array): Unit = js.native
+    def read(bytes: ReadableStream[js.typedarray.Uint8Array]): Unit = js.native
     
     /**
       * Packet type
@@ -71,7 +71,7 @@ object packet {
       * Return the compressed packet.
       * @returns binary compressed packet
       */
-    def write(): Uint8Array | ReadableStream[Uint8Array] = js.native
+    def write(): js.typedarray.Uint8Array | ReadableStream[js.typedarray.Uint8Array] = js.native
   }
   
   @JSImport("openpgp", "packet.List")
@@ -81,29 +81,30 @@ object packet {
     * Take care when iterating over it - the packets themselves
     * are stored as numerical indices.
     */
-  class List () extends StObject {
+  open class List () extends StObject {
     
     /**
       * Concatenates packetlist or array of packets
       */
     def concat(): Unit = js.native
+    def concat(packets: List): Unit = js.native
     
     /**
       * Creates a new PacketList with all packets from the given types
       */
-    def filterByTag(): Unit = js.native
+    def filterByTag(tags: typings.openpgp.mod.enums.packet*): List = js.native
     
     /**
       * Traverses packet tree and returns first matching packet
       * @param type The packet type
       * @returns
       */
-    def findPacket(`type`: typings.openpgp.mod.enums.packet): js.UndefOr[List] = js.native
+    def findPacket(`type`: typings.openpgp.mod.enums.packet): js.UndefOr[AnyPacket] = js.native
     
     /**
       * Returns array of found indices by tag
       */
-    def indexOfTag(): Unit = js.native
+    def indexOfTag(tags: typings.openpgp.mod.enums.packet*): js.Array[Double] = js.native
     
     /**
       * The number of packets contained within the list.
@@ -117,19 +118,19 @@ object packet {
       */
     def push(packet: js.Object): Unit = js.native
     
-    def read(A: ReadableStream[Uint8Array]): Unit = js.native
     /**
       * Reads a stream of binary data and interprents it as a list of packets.
       * @param A Uint8Array of bytes.
       */
-    def read(A: Uint8Array): Unit = js.native
+    def read(A: js.typedarray.Uint8Array): Unit = js.native
+    def read(A: ReadableStream[js.typedarray.Uint8Array]): Unit = js.native
     
     /**
       * Creates a binary representation of openpgp objects contained within the
       * class instance.
       * @returns A Uint8Array containing valid openpgp packets.
       */
-    def write(): Uint8Array | ReadableStream[Uint8Array] = js.native
+    def write(): js.typedarray.Uint8Array | ReadableStream[js.typedarray.Uint8Array] = js.native
   }
   object List {
     
@@ -149,7 +150,9 @@ object packet {
   
   @JSImport("openpgp", "packet.Literal")
   @js.native
-  class Literal protected () extends StObject {
+  open class Literal protected ()
+    extends StObject
+       with AnyPacket {
     /**
       * Implementation of the Literal Data Packet (Tag 11)
       * {@link https://tools.ietf.org/html/rfc4880#section-5.9|RFC4880 5.9}:
@@ -157,14 +160,14 @@ object packet {
       * further interpreted.
       * @param date the creation date of the literal package
       */
-    def this(date: Date) = this()
+    def this(date: js.Date) = this()
     
     /**
       * Get the byte sequence representing the literal packet data
       * @param clone (optional) Whether to return a clone so that getBytes/getText can be called again
       * @returns A sequence of bytes
       */
-    def getBytes(clone: Boolean): Uint8Array | ReadableStream[Uint8Array] = js.native
+    def getBytes(clone: Boolean): js.typedarray.Uint8Array | ReadableStream[js.typedarray.Uint8Array] = js.native
     
     /**
       * Get the filename of the literal packet data
@@ -180,35 +183,21 @@ object packet {
       */
     def getText(clone: Boolean): String | ReadableStream[String] = js.native
     
-    def read(input: ReadableStream[Uint8Array]): Literal = js.native
     /**
       * Parsing function for a literal data packet (tag 11).
       * @param input Payload of a tag 11 packet
       * @returns object representation
       */
-    def read(input: Uint8Array): Literal = js.native
+    def read(input: js.typedarray.Uint8Array): Literal = js.native
+    def read(input: ReadableStream[js.typedarray.Uint8Array]): Literal = js.native
     
-    @JSName("setBytes")
-    def setBytes_binary(bytes: ReadableStream[Uint8Array], format: binary): Unit = js.native
-    @JSName("setBytes")
-    def setBytes_binary(bytes: Uint8Array, format: binary): Unit = js.native
-    @JSName("setBytes")
-    def setBytes_mime(bytes: ReadableStream[Uint8Array], format: mime): Unit = js.native
-    @JSName("setBytes")
-    def setBytes_mime(bytes: Uint8Array, format: mime): Unit = js.native
-    @JSName("setBytes")
-    def setBytes_text(bytes: ReadableStream[Uint8Array], format: text): Unit = js.native
-    @JSName("setBytes")
-    def setBytes_text(bytes: Uint8Array, format: text): Unit = js.native
-    @JSName("setBytes")
-    def setBytes_utf8(bytes: ReadableStream[Uint8Array], format: utf8): Unit = js.native
     /**
       * Set the packet data to value represented by the provided string of bytes.
       * @param bytes The string of bytes
       * @param format The format of the string of bytes
       */
-    @JSName("setBytes")
-    def setBytes_utf8(bytes: Uint8Array, format: utf8): Unit = js.native
+    def setBytes(bytes: js.typedarray.Uint8Array, format: utf8 | binary | text | mime): Unit = js.native
+    def setBytes(bytes: ReadableStream[js.typedarray.Uint8Array], format: utf8 | binary | text | mime): Unit = js.native
     
     /**
       * Sets the filename of the literal packet data
@@ -223,29 +212,15 @@ object packet {
       * @param format (optional) The format of the string of bytes
       */
     def setText(text: String): Unit = js.native
+    def setText(text: String, format: utf8 | binary | text | mime): Unit = js.native
     def setText(text: ReadableStream[String]): Unit = js.native
-    @JSName("setText")
-    def setText_binary(text: String, format: binary): Unit = js.native
-    @JSName("setText")
-    def setText_binary(text: ReadableStream[String], format: binary): Unit = js.native
-    @JSName("setText")
-    def setText_mime(text: String, format: mime): Unit = js.native
-    @JSName("setText")
-    def setText_mime(text: ReadableStream[String], format: mime): Unit = js.native
-    @JSName("setText")
-    def setText_text(text: String, format: text): Unit = js.native
-    @JSName("setText")
-    def setText_text(text: ReadableStream[String], format: text): Unit = js.native
-    @JSName("setText")
-    def setText_utf8(text: String, format: utf8): Unit = js.native
-    @JSName("setText")
-    def setText_utf8(text: ReadableStream[String], format: utf8): Unit = js.native
+    def setText(text: ReadableStream[String], format: utf8 | binary | text | mime): Unit = js.native
     
     /**
       * Creates a string representation of the packet
       * @returns Uint8Array representation of the packet
       */
-    def write(): Uint8Array | ReadableStream[Uint8Array] = js.native
+    def write(): js.typedarray.Uint8Array | ReadableStream[js.typedarray.Uint8Array] = js.native
   }
   
   @JSImport("openpgp", "packet.Marker")
@@ -259,7 +234,9 @@ object packet {
     * the Marker packet.
     * Such a packet MUST be ignored when received.
     */
-  class Marker () extends StObject {
+  open class Marker ()
+    extends StObject
+       with AnyPacket {
     
     /**
       * Parsing function for a literal data packet (tag 10).
@@ -283,25 +260,27 @@ object packet {
     * packet to be placed at the end of the message, so that the signer
     * can compute the entire signed message in one pass.
     */
-  class OnePassSignature () extends StObject {
+  open class OnePassSignature ()
+    extends StObject
+       with AnyPacket {
     
     /**
       * A one-octet number holding a flag showing whether the signature is nested.
       * A zero value indicates that the next packet is another One-Pass Signature packet
       * that describes another signature to be applied to the same message data.
       */
-    var flags: js.Any = js.native
+    var flags: Any = js.native
     
     /**
       * A one-octet number describing the hash algorithm used.
       * @see
       */
-    var hashAlgorithm: js.Any = js.native
+    var hashAlgorithm: Any = js.native
     
     /**
       * An eight-octet number holding the Key ID of the signing key.
       */
-    var issuerKeyId: js.Any = js.native
+    var issuerKeyId: Any = js.native
     
     /**
       * Fix custom types after cloning
@@ -312,21 +291,21 @@ object packet {
       * A one-octet number describing the public-key algorithm used.
       * @see
       */
-    var publicKeyAlgorithm: js.Any = js.native
+    var publicKeyAlgorithm: Any = js.native
     
     /**
       * parsing function for a one-pass signature packet (tag 4).
       * @param bytes payload of a tag 4 packet
       * @returns object representation
       */
-    def read(bytes: Uint8Array): OnePassSignature = js.native
+    def read(bytes: js.typedarray.Uint8Array): OnePassSignature = js.native
     
     /**
       * A one-octet signature type.
       * Signature types are described in
       * {@link https://tools.ietf.org/html/rfc4880#section-5.2.1|RFC4880 Section 5.2.1}.
       */
-    var signatureType: js.Any = js.native
+    var signatureType: Any = js.native
     
     /**
       * Packet type
@@ -336,13 +315,13 @@ object packet {
     /**
       * A one-octet version number.  The current version is 3.
       */
-    var version: js.Any = js.native
+    var version: Any = js.native
     
     /**
       * creates a string representation of a one-pass signature packet
       * @returns a Uint8Array representation of a one-pass signature packet
       */
-    def write(): Uint8Array = js.native
+    def write(): js.typedarray.Uint8Array = js.native
   }
   
   @JSImport("openpgp", "packet.PublicKey")
@@ -356,7 +335,9 @@ object packet {
     * A Public-Key packet starts a series of packets that forms an OpenPGP
     * key (sometimes called an OpenPGP certificate).
     */
-  class PublicKey () extends StObject {
+  open class PublicKey ()
+    extends StObject
+       with AnyPacket {
     
     /**
       * Public key algorithm.
@@ -366,7 +347,7 @@ object packet {
     /**
       * Key creation date.
       */
-    var created: Date = js.native
+    var created: js.Date = js.native
     
     /**
       * Time until expiration in days (V3 only)
@@ -388,7 +369,7 @@ object packet {
       * Returns the creation time of the key
       * @returns
       */
-    def getCreationTime(): Date = js.native
+    def getCreationTime(): js.Date = js.native
     
     /**
       * Calculates the fingerprint of the key
@@ -400,7 +381,7 @@ object packet {
       * Calculates the fingerprint of the key
       * @returns A Uint8Array containing the fingerprint
       */
-    def getFingerprintBytes(): Uint8Array = js.native
+    def getFingerprintBytes(): js.typedarray.Uint8Array = js.native
     
     /**
       * Calculates the key id of the key
@@ -441,13 +422,13 @@ object packet {
       * @param bytes Input array to read the packet from
       * @returns This object with attributes set by the parser
       */
-    def read(bytes: Uint8Array): js.Object = js.native
+    def read(bytes: js.typedarray.Uint8Array): js.Object = js.native
     
     /**
       * Alias of read()
       * @see module:packet.PublicKey#read
       */
-    var readPublicKey: js.Any = js.native
+    var readPublicKey: Any = js.native
     
     /**
       * Packet type
@@ -464,7 +445,7 @@ object packet {
       * public key.
       * @returns OpenPGP packet body contents,
       */
-    def write(): Uint8Array = js.native
+    def write(): js.typedarray.Uint8Array = js.native
     
     /**
       * Write an old version packet - it's used by some of the internal routines.
@@ -475,7 +456,7 @@ object packet {
       * Alias of write()
       * @see module:packet.PublicKey#write
       */
-    var writePublicKey: js.Any = js.native
+    var writePublicKey: Any = js.native
   }
   
   @JSImport("openpgp", "packet.PublicKeyEncryptedSessionKey")
@@ -495,7 +476,9 @@ object packet {
     * public key, decrypts the session key, and then uses the session key to
     * decrypt the message.
     */
-  class PublicKeyEncryptedSessionKey () extends StObject {
+  open class PublicKeyEncryptedSessionKey ()
+    extends StObject
+       with AnyPacket {
     
     /**
       * Decrypts the session key (only for public key encrypted session key
@@ -512,7 +495,7 @@ object packet {
       */
     def encrypt(key: PublicKey): js.Promise[Boolean] = js.native
     
-    var encrypted: js.Array[js.Any] = js.native
+    var encrypted: js.Array[Any] = js.native
     
     /**
       * Fix custom types after cloning
@@ -527,13 +510,13 @@ object packet {
       *        input at position
       * @returns Object representation
       */
-    def read(input: Uint8Array, position: Integer, len: Integer): PublicKeyEncryptedSessionKey = js.native
+    def read(input: js.typedarray.Uint8Array, position: Integer, len: Integer): PublicKeyEncryptedSessionKey = js.native
     
     /**
       * Create a string representation of a tag 1 packet
       * @returns The Uint8Array representation
       */
-    def write(): Uint8Array = js.native
+    def write(): js.typedarray.Uint8Array = js.native
   }
   
   @JSImport("openpgp", "packet.PublicSubkey")
@@ -545,7 +528,9 @@ object packet {
     * provides signature services, and the subkeys provide encryption
     * services.
     */
-  class PublicSubkey () extends StObject {
+  open class PublicSubkey ()
+    extends StObject
+       with AnyPacket {
     
     /**
       * Public key algorithm.
@@ -555,7 +540,7 @@ object packet {
     /**
       * Key creation date.
       */
-    var created: Date = js.native
+    var created: js.Date = js.native
     
     /**
       * Time until expiration in days (V3 only)
@@ -577,7 +562,7 @@ object packet {
       * Returns the creation time of the key
       * @returns
       */
-    def getCreationTime(): Date = js.native
+    def getCreationTime(): js.Date = js.native
     
     /**
       * Calculates the fingerprint of the key
@@ -589,7 +574,7 @@ object packet {
       * Calculates the fingerprint of the key
       * @returns A Uint8Array containing the fingerprint
       */
-    def getFingerprintBytes(): Uint8Array = js.native
+    def getFingerprintBytes(): js.typedarray.Uint8Array = js.native
     
     /**
       * Calculates the key id of the key
@@ -630,13 +615,13 @@ object packet {
       * @param bytes Input array to read the packet from
       * @returns This object with attributes set by the parser
       */
-    def read(bytes: Uint8Array): js.Object = js.native
+    def read(bytes: js.typedarray.Uint8Array): js.Object = js.native
     
     /**
       * Alias of read()
       * @see module:packet.PublicKey#read
       */
-    var readPublicKey: js.Any = js.native
+    var readPublicKey: Any = js.native
     
     /**
       * Packet type
@@ -653,7 +638,7 @@ object packet {
       * public key.
       * @returns OpenPGP packet body contents,
       */
-    def write(): Uint8Array = js.native
+    def write(): js.typedarray.Uint8Array = js.native
     
     /**
       * Write an old version packet - it's used by some of the internal routines.
@@ -664,7 +649,7 @@ object packet {
       * Alias of write()
       * @see module:packet.PublicKey#write
       */
-    var writePublicKey: js.Any = js.native
+    var writePublicKey: Any = js.native
   }
   
   @JSImport("openpgp", "packet.SecretKey")
@@ -674,7 +659,9 @@ object packet {
     * Public-Key packet, including the public-key material, but also
     * includes the secret-key material after all the public-key fields.
     */
-  class SecretKey () extends StObject {
+  open class SecretKey ()
+    extends StObject
+       with AnyPacket {
     
     /**
       * Public key algorithm.
@@ -689,7 +676,7 @@ object packet {
     /**
       * Key creation date.
       */
-    var created: Date = js.native
+    var created: js.Date = js.native
     
     /**
       * Decrypts the private key params which are needed to use the key.
@@ -713,7 +700,7 @@ object packet {
     /**
       * Encrypted secret-key data
       */
-    var encrypted: js.Any = js.native
+    var encrypted: Any = js.native
     
     /**
       * Time until expiration in days (V3 only)
@@ -735,7 +722,7 @@ object packet {
       * Returns the creation time of the key
       * @returns
       */
-    def getCreationTime(): Date = js.native
+    def getCreationTime(): js.Date = js.native
     
     /**
       * Calculates the fingerprint of the key
@@ -747,7 +734,7 @@ object packet {
       * Calculates the fingerprint of the key
       * @returns A Uint8Array containing the fingerprint
       */
-    def getFingerprintBytes(): Uint8Array = js.native
+    def getFingerprintBytes(): js.typedarray.Uint8Array = js.native
     
     /**
       * Calculates the key id of the key
@@ -770,7 +757,7 @@ object packet {
     /**
       * Indicator if secret-key data is encrypted. `this.isEncrypted === false` means data is available in decrypted form.
       */
-    var isEncrypted: js.Any = js.native
+    var isEncrypted: Any = js.native
     
     /**
       * Keyid
@@ -798,7 +785,7 @@ object packet {
       * Alias of read()
       * @see module:packet.PublicKey#read
       */
-    var readPublicKey: js.Any = js.native
+    var readPublicKey: Any = js.native
     
     /**
       * Packet type
@@ -825,7 +812,7 @@ object packet {
       * Alias of write()
       * @see module:packet.PublicKey#write
       */
-    var writePublicKey: js.Any = js.native
+    var writePublicKey: Any = js.native
   }
   
   @JSImport("openpgp", "packet.SecretSubkey")
@@ -834,7 +821,9 @@ object packet {
     * A Secret-Subkey packet (tag 7) is the subkey analog of the Secret
     * Key packet and has exactly the same format.
     */
-  class SecretSubkey () extends StObject {
+  open class SecretSubkey ()
+    extends StObject
+       with AnyPacket {
     
     /**
       * Public key algorithm.
@@ -849,7 +838,7 @@ object packet {
     /**
       * Key creation date.
       */
-    var created: Date = js.native
+    var created: js.Date = js.native
     
     /**
       * Decrypts the private key params which are needed to use the key.
@@ -873,7 +862,7 @@ object packet {
     /**
       * Encrypted secret-key data
       */
-    var encrypted: js.Any = js.native
+    var encrypted: Any = js.native
     
     /**
       * Time until expiration in days (V3 only)
@@ -895,7 +884,7 @@ object packet {
       * Returns the creation time of the key
       * @returns
       */
-    def getCreationTime(): Date = js.native
+    def getCreationTime(): js.Date = js.native
     
     /**
       * Calculates the fingerprint of the key
@@ -907,7 +896,7 @@ object packet {
       * Calculates the fingerprint of the key
       * @returns A Uint8Array containing the fingerprint
       */
-    def getFingerprintBytes(): Uint8Array = js.native
+    def getFingerprintBytes(): js.typedarray.Uint8Array = js.native
     
     /**
       * Calculates the key id of the key
@@ -930,7 +919,7 @@ object packet {
     /**
       * Indicator if secret-key data is encrypted. `this.isEncrypted === false` means data is available in decrypted form.
       */
-    var isEncrypted: js.Any = js.native
+    var isEncrypted: Any = js.native
     
     /**
       * Keyid
@@ -958,7 +947,7 @@ object packet {
       * Alias of read()
       * @see module:packet.PublicKey#read
       */
-    var readPublicKey: js.Any = js.native
+    var readPublicKey: Any = js.native
     
     /**
       * Packet type
@@ -985,12 +974,14 @@ object packet {
       * Alias of write()
       * @see module:packet.PublicKey#write
       */
-    var writePublicKey: js.Any = js.native
+    var writePublicKey: Any = js.native
   }
   
   @JSImport("openpgp", "packet.Signature")
   @js.native
-  class Signature protected () extends StObject {
+  open class Signature protected ()
+    extends StObject
+       with AnyPacket {
     /**
       * Implementation of the Signature Packet (Tag 2)
       * {@link https://tools.ietf.org/html/rfc4880#section-5.2|RFC4480 5.2}:
@@ -999,20 +990,20 @@ object packet {
       * block of text, and a signature that is a certification of a User ID.
       * @param date the creation date of the signature
       */
-    def this(date: Date) = this()
+    def this(date: js.Date) = this()
     
     /**
       * Returns the expiration time of the signature or Infinity if signature does not expire
       * @returns expiration time
       */
-    def getExpirationTime(): Date = js.native
+    def getExpirationTime(): js.Date = js.native
     
     /**
       * Verifies signature expiration date
       * @param date (optional) use the given date for verification instead of the current time
       * @returns true if expired
       */
-    def isExpired(date: Date): Boolean = js.native
+    def isExpired(date: js.Date): Boolean = js.native
     
     /**
       * Fix custom types after cloning
@@ -1056,13 +1047,13 @@ object packet {
       * Creates Uint8Array of bytes of all subpacket data except Issuer and Embedded Signature subpackets
       * @returns subpacket data
       */
-    def write_hashed_sub_packets(): Uint8Array = js.native
+    def write_hashed_sub_packets(): js.typedarray.Uint8Array = js.native
     
     /**
       * Creates Uint8Array of bytes of Issuer and Embedded Signature subpackets
       * @returns subpacket data
       */
-    def write_unhashed_sub_packets(): Uint8Array = js.native
+    def write_unhashed_sub_packets(): js.typedarray.Uint8Array = js.native
   }
   
   @JSImport("openpgp", "packet.SymEncryptedAEADProtected")
@@ -1073,24 +1064,10 @@ object packet {
     * {@link https://tools.ietf.org/html/draft-ford-openpgp-format-00#section-2.1}:
     * AEAD Protected Data Packet
     */
-  class SymEncryptedAEADProtected () extends StObject {
+  open class SymEncryptedAEADProtected ()
+    extends StObject
+       with AnyPacket {
     
-    @JSName("crypt")
-    def crypt_decrypt(
-      fn: typings.openpgp.openpgpStrings.decrypt,
-      key: Uint8Array,
-      data: ReadableStream[Uint8Array],
-      streaming: Boolean
-    ): Uint8Array | ReadableStream[Uint8Array] = js.native
-    @JSName("crypt")
-    def crypt_decrypt(fn: typings.openpgp.openpgpStrings.decrypt, key: Uint8Array, data: Uint8Array, streaming: Boolean): Uint8Array | ReadableStream[Uint8Array] = js.native
-    @JSName("crypt")
-    def crypt_encrypt(
-      fn: typings.openpgp.openpgpStrings.encrypt,
-      key: Uint8Array,
-      data: ReadableStream[Uint8Array],
-      streaming: Boolean
-    ): Uint8Array | ReadableStream[Uint8Array] = js.native
     /**
       * En/decrypt the payload.
       * @param fn Whether to encrypt or decrypt
@@ -1099,8 +1076,18 @@ object packet {
       * @param streaming Whether the top-level function will return a stream
       * @returns
       */
-    @JSName("crypt")
-    def crypt_encrypt(fn: typings.openpgp.openpgpStrings.encrypt, key: Uint8Array, data: Uint8Array, streaming: Boolean): Uint8Array | ReadableStream[Uint8Array] = js.native
+    def crypt(
+      fn: typings.openpgp.openpgpStrings.encrypt | typings.openpgp.openpgpStrings.decrypt,
+      key: js.typedarray.Uint8Array,
+      data: js.typedarray.Uint8Array,
+      streaming: Boolean
+    ): js.typedarray.Uint8Array | ReadableStream[js.typedarray.Uint8Array] = js.native
+    def crypt(
+      fn: typings.openpgp.openpgpStrings.encrypt | typings.openpgp.openpgpStrings.decrypt,
+      key: js.typedarray.Uint8Array,
+      data: ReadableStream[js.typedarray.Uint8Array],
+      streaming: Boolean
+    ): js.typedarray.Uint8Array | ReadableStream[js.typedarray.Uint8Array] = js.native
     
     /**
       * Decrypt the encrypted payload.
@@ -1109,7 +1096,7 @@ object packet {
       * @param streaming Whether the top-level function will return a stream
       * @returns
       */
-    def decrypt(sessionKeyAlgorithm: String, key: Uint8Array, streaming: Boolean): Boolean = js.native
+    def decrypt(sessionKeyAlgorithm: String, key: js.typedarray.Uint8Array, streaming: Boolean): Boolean = js.native
     
     /**
       * Encrypt the packet list payload.
@@ -1117,20 +1104,20 @@ object packet {
       * @param key The session key used to encrypt the payload
       * @param streaming Whether the top-level function will return a stream
       */
-    def encrypt(sessionKeyAlgorithm: String, key: Uint8Array, streaming: Boolean): Unit = js.native
+    def encrypt(sessionKeyAlgorithm: String, key: js.typedarray.Uint8Array, streaming: Boolean): Unit = js.native
     
-    def read(bytes: ReadableStream[Uint8Array]): Unit = js.native
     /**
       * Parse an encrypted payload of bytes in the order: version, IV, ciphertext (see specification)
       * @param bytes
       */
-    def read(bytes: Uint8Array): Unit = js.native
+    def read(bytes: js.typedarray.Uint8Array): Unit = js.native
+    def read(bytes: ReadableStream[js.typedarray.Uint8Array]): Unit = js.native
     
     /**
       * Write the encrypted payload of bytes in the order: version, IV, ciphertext (see specification)
       * @returns The encrypted payload
       */
-    def write(): Uint8Array | ReadableStream[Uint8Array] = js.native
+    def write(): js.typedarray.Uint8Array | ReadableStream[js.typedarray.Uint8Array] = js.native
   }
   
   @JSImport("openpgp", "packet.SymEncryptedIntegrityProtected")
@@ -1144,7 +1131,9 @@ object packet {
     * encrypted data. It is used in combination with a Modification Detection Code
     * packet.
     */
-  class SymEncryptedIntegrityProtected () extends StObject {
+  open class SymEncryptedIntegrityProtected ()
+    extends StObject
+       with AnyPacket {
     
     /**
       * Decrypts the encrypted data contained in the packet.
@@ -1153,7 +1142,7 @@ object packet {
       * @param streaming Whether to read this.encrypted as a stream
       * @returns
       */
-    def decrypt(sessionKeyAlgorithm: String, key: Uint8Array, streaming: Boolean): js.Promise[Boolean] = js.native
+    def decrypt(sessionKeyAlgorithm: String, key: js.typedarray.Uint8Array, streaming: Boolean): js.Promise[Boolean] = js.native
     
     /**
       * Encrypt the payload in the packet.
@@ -1162,12 +1151,12 @@ object packet {
       * @param streaming Whether to set this.encrypted to a stream
       * @returns
       */
-    def encrypt(sessionKeyAlgorithm: String, key: Uint8Array, streaming: Boolean): js.Promise[Boolean] = js.native
+    def encrypt(sessionKeyAlgorithm: String, key: js.typedarray.Uint8Array, streaming: Boolean): js.Promise[Boolean] = js.native
     
     /**
       * The encrypted payload.
       */
-    var encrypted: js.Any = js.native
+    var encrypted: Any = js.native
     
     /**
       * If after decrypting the packet this is set to true,
@@ -1194,7 +1183,9 @@ object packet {
     * public key, decrypts the session key, and then uses the session key to
     * decrypt the message.
     */
-  class SymEncryptedSessionKey () extends StObject {
+  open class SymEncryptedSessionKey ()
+    extends StObject
+       with AnyPacket {
     
     /**
       * Decrypts the session key
@@ -1223,7 +1214,7 @@ object packet {
       *        input at position
       * @returns Object representation
       */
-    def read(input: Uint8Array, position: Integer, len: Integer): SymEncryptedSessionKey = js.native
+    def read(input: js.typedarray.Uint8Array, position: Integer, len: Integer): SymEncryptedSessionKey = js.native
   }
   
   @JSImport("openpgp", "packet.SymmetricallyEncrypted")
@@ -1237,7 +1228,9 @@ object packet {
     * theory other Symmetrically Encrypted Data packets or sequences of packets
     * that form whole OpenPGP messages).
     */
-  class SymmetricallyEncrypted () extends StObject {
+  open class SymmetricallyEncrypted ()
+    extends StObject
+       with AnyPacket {
     
     /**
       * Decrypt the symmetrically-encrypted packet data
@@ -1246,7 +1239,7 @@ object packet {
       * @param key The key of cipher blocksize length to be used
       * @returns
       */
-    def decrypt(sessionKeyAlgorithm: symmetric, key: Uint8Array): js.Promise[Boolean] = js.native
+    def decrypt(sessionKeyAlgorithm: symmetric, key: js.typedarray.Uint8Array): js.Promise[Boolean] = js.native
     
     /**
       * Encrypt the symmetrically-encrypted packet data
@@ -1255,18 +1248,18 @@ object packet {
       * @param key The key of cipher blocksize length to be used
       * @returns
       */
-    def encrypt(sessionKeyAlgorithm: symmetric, key: Uint8Array): js.Promise[Boolean] = js.native
+    def encrypt(sessionKeyAlgorithm: symmetric, key: js.typedarray.Uint8Array): js.Promise[Boolean] = js.native
     
     /**
       * Encrypted secret-key data
       */
-    var encrypted: js.Any = js.native
+    var encrypted: Any = js.native
     
     /**
       * When true, decrypt fails if message is not integrity protected
       * @see module:config.ignore_mdc_error
       */
-    var ignore_mdc_error: js.Any = js.native
+    var ignore_mdc_error: Any = js.native
     
     /**
       * Decrypted packets contained within.
@@ -1294,7 +1287,9 @@ object packet {
     * transferred to other users, and they SHOULD be ignored on any input
     * other than local keyring files.
     */
-  class Trust () extends StObject {
+  open class Trust ()
+    extends StObject
+       with AnyPacket {
     
     /**
       * Parsing function for a trust packet (tag 12).
@@ -1321,7 +1316,9 @@ object packet {
     * User Attribute packet as a User ID packet with opaque contents, but
     * an implementation may use any method desired.
     */
-  class UserAttribute () extends StObject {
+  open class UserAttribute ()
+    extends StObject
+       with AnyPacket {
     
     /**
       * Compare for equality
@@ -1334,13 +1331,13 @@ object packet {
       * parsing function for a user attribute packet (tag 17).
       * @param input payload of a tag 17 packet
       */
-    def read(input: Uint8Array): Unit = js.native
+    def read(input: js.typedarray.Uint8Array): Unit = js.native
     
     /**
       * Creates a binary representation of the user attribute packet
       * @returns string representation
       */
-    def write(): Uint8Array = js.native
+    def write(): js.typedarray.Uint8Array = js.native
   }
   
   @JSImport("openpgp", "packet.Userid")
@@ -1353,7 +1350,9 @@ object packet {
     * restrictions on its content.  The packet length in the header
     * specifies the length of the User ID.
     */
-  class Userid () extends StObject {
+  open class Userid ()
+    extends StObject
+       with AnyPacket {
     
     /**
       * Set userid string from object, e.g. { name:'Phil Zimmermann', email:'phil@openpgp.org' }
@@ -1369,7 +1368,7 @@ object packet {
       * Parsing function for a user id packet (tag 13).
       * @param input payload of a tag 13 packet
       */
-    def read(input: Uint8Array): Unit = js.native
+    def read(input: js.typedarray.Uint8Array): Unit = js.native
     
     /**
       * A string containing the user id. Usually in the form
@@ -1381,7 +1380,7 @@ object packet {
       * Creates a binary representation of the user id packet
       * @returns binary representation
       */
-    def write(): Uint8Array = js.native
+    def write(): js.typedarray.Uint8Array = js.native
   }
   
   object allPackets {
@@ -1395,137 +1394,137 @@ object packet {
       */
     @JSImport("openpgp", "packet.all_packets.Compressed")
     @js.native
-    def Compressed: js.Any = js.native
-    inline def Compressed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Compressed")(x.asInstanceOf[js.Any])
+    def Compressed: Any = js.native
+    inline def Compressed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Compressed")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.Literal
       */
     @JSImport("openpgp", "packet.all_packets.Literal")
     @js.native
-    def Literal: js.Any = js.native
-    inline def Literal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Literal")(x.asInstanceOf[js.Any])
+    def Literal: Any = js.native
+    inline def Literal_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Literal")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.Marker
       */
     @JSImport("openpgp", "packet.all_packets.Marker")
     @js.native
-    def Marker: js.Any = js.native
-    inline def Marker_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Marker")(x.asInstanceOf[js.Any])
+    def Marker: Any = js.native
+    inline def Marker_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Marker")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.OnePassSignature
       */
     @JSImport("openpgp", "packet.all_packets.OnePassSignature")
     @js.native
-    def OnePassSignature: js.Any = js.native
-    inline def OnePassSignature_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnePassSignature")(x.asInstanceOf[js.Any])
+    def OnePassSignature: Any = js.native
+    inline def OnePassSignature_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnePassSignature")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.PublicKey
       */
     @JSImport("openpgp", "packet.all_packets.PublicKey")
     @js.native
-    def PublicKey: js.Any = js.native
+    def PublicKey: Any = js.native
     
     /**
       * @see module:packet.PublicKeyEncryptedSessionKey
       */
     @JSImport("openpgp", "packet.all_packets.PublicKeyEncryptedSessionKey")
     @js.native
-    def PublicKeyEncryptedSessionKey: js.Any = js.native
-    inline def PublicKeyEncryptedSessionKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicKeyEncryptedSessionKey")(x.asInstanceOf[js.Any])
+    def PublicKeyEncryptedSessionKey: Any = js.native
+    inline def PublicKeyEncryptedSessionKey_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicKeyEncryptedSessionKey")(x.asInstanceOf[js.Any])
     
-    inline def PublicKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicKey")(x.asInstanceOf[js.Any])
+    inline def PublicKey_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicKey")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.PublicSubkey
       */
     @JSImport("openpgp", "packet.all_packets.PublicSubkey")
     @js.native
-    def PublicSubkey: js.Any = js.native
-    inline def PublicSubkey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicSubkey")(x.asInstanceOf[js.Any])
+    def PublicSubkey: Any = js.native
+    inline def PublicSubkey_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicSubkey")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.SecretKey
       */
     @JSImport("openpgp", "packet.all_packets.SecretKey")
     @js.native
-    def SecretKey: js.Any = js.native
-    inline def SecretKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SecretKey")(x.asInstanceOf[js.Any])
+    def SecretKey: Any = js.native
+    inline def SecretKey_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SecretKey")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.SecretSubkey
       */
     @JSImport("openpgp", "packet.all_packets.SecretSubkey")
     @js.native
-    def SecretSubkey: js.Any = js.native
-    inline def SecretSubkey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SecretSubkey")(x.asInstanceOf[js.Any])
+    def SecretSubkey: Any = js.native
+    inline def SecretSubkey_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SecretSubkey")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.Signature
       */
     @JSImport("openpgp", "packet.all_packets.Signature")
     @js.native
-    def Signature: js.Any = js.native
-    inline def Signature_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Signature")(x.asInstanceOf[js.Any])
+    def Signature: Any = js.native
+    inline def Signature_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Signature")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.SymEncryptedAEADProtected
       */
     @JSImport("openpgp", "packet.all_packets.SymEncryptedAEADProtected")
     @js.native
-    def SymEncryptedAEADProtected: js.Any = js.native
-    inline def SymEncryptedAEADProtected_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymEncryptedAEADProtected")(x.asInstanceOf[js.Any])
+    def SymEncryptedAEADProtected: Any = js.native
+    inline def SymEncryptedAEADProtected_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymEncryptedAEADProtected")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.SymEncryptedIntegrityProtected
       */
     @JSImport("openpgp", "packet.all_packets.SymEncryptedIntegrityProtected")
     @js.native
-    def SymEncryptedIntegrityProtected: js.Any = js.native
-    inline def SymEncryptedIntegrityProtected_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymEncryptedIntegrityProtected")(x.asInstanceOf[js.Any])
+    def SymEncryptedIntegrityProtected: Any = js.native
+    inline def SymEncryptedIntegrityProtected_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymEncryptedIntegrityProtected")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.SymEncryptedSessionKey
       */
     @JSImport("openpgp", "packet.all_packets.SymEncryptedSessionKey")
     @js.native
-    def SymEncryptedSessionKey: js.Any = js.native
-    inline def SymEncryptedSessionKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymEncryptedSessionKey")(x.asInstanceOf[js.Any])
+    def SymEncryptedSessionKey: Any = js.native
+    inline def SymEncryptedSessionKey_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymEncryptedSessionKey")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.SymmetricallyEncrypted
       */
     @JSImport("openpgp", "packet.all_packets.SymmetricallyEncrypted")
     @js.native
-    def SymmetricallyEncrypted: js.Any = js.native
-    inline def SymmetricallyEncrypted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymmetricallyEncrypted")(x.asInstanceOf[js.Any])
+    def SymmetricallyEncrypted: Any = js.native
+    inline def SymmetricallyEncrypted_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymmetricallyEncrypted")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.Trust
       */
     @JSImport("openpgp", "packet.all_packets.Trust")
     @js.native
-    def Trust: js.Any = js.native
-    inline def Trust_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Trust")(x.asInstanceOf[js.Any])
+    def Trust: Any = js.native
+    inline def Trust_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Trust")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.UserAttribute
       */
     @JSImport("openpgp", "packet.all_packets.UserAttribute")
     @js.native
-    def UserAttribute: js.Any = js.native
-    inline def UserAttribute_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserAttribute")(x.asInstanceOf[js.Any])
+    def UserAttribute: Any = js.native
+    inline def UserAttribute_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserAttribute")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.Userid
       */
     @JSImport("openpgp", "packet.all_packets.Userid")
     @js.native
-    def Userid: js.Any = js.native
-    inline def Userid_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Userid")(x.asInstanceOf[js.Any])
+    def Userid: Any = js.native
+    inline def Userid_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Userid")(x.asInstanceOf[js.Any])
   }
   
   object clone_ {
@@ -1571,14 +1570,14 @@ object packet {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def read(input: ReadableStream[Uint8Array], callback: js.Function): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Generic static Packet Parser function
       * @param input Input stream as string
       * @param callback Function to call with the parsed packet
       * @returns Returns false if the stream was empty and parsing is done, and true otherwise.
       */
-    inline def read(input: Uint8Array, callback: js.Function): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def read(input: js.typedarray.Uint8Array, callback: js.Function): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def read(input: ReadableStream[js.typedarray.Uint8Array], callback: js.Function): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Whether the packet type supports partial lengths per RFC4880
@@ -1611,6 +1610,27 @@ object packet {
       * @param length The length to encode
       * @returns String with openpgp length representation
       */
-    inline def writeSimpleLength(length: Integer): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("writeSimpleLength")(length.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def writeSimpleLength(length: Integer): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("writeSimpleLength")(length.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.openpgp.mod.packet.Compressed
+    - typings.openpgp.mod.packet.Literal
+    - typings.openpgp.mod.packet.Marker
+    - typings.openpgp.mod.packet.OnePassSignature
+    - typings.openpgp.mod.packet.PublicKey
+    - typings.openpgp.mod.packet.PublicKeyEncryptedSessionKey
+    - typings.openpgp.mod.packet.PublicSubkey
+    - typings.openpgp.mod.packet.SecretKey
+    - typings.openpgp.mod.packet.SecretSubkey
+    - typings.openpgp.mod.packet.Signature
+    - typings.openpgp.mod.packet.SymEncryptedAEADProtected
+    - typings.openpgp.mod.packet.SymEncryptedIntegrityProtected
+    - typings.openpgp.mod.packet.SymEncryptedSessionKey
+    - typings.openpgp.mod.packet.SymmetricallyEncrypted
+    - typings.openpgp.mod.packet.Trust
+    - typings.openpgp.mod.packet.UserAttribute
+    - typings.openpgp.mod.packet.Userid
+  */
+  trait AnyPacket extends StObject
 }

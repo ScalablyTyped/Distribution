@@ -18,6 +18,6 @@ trait JQuery extends StObject {
     * @param params the parameters expected by the method
     */
   def editable(method: String): XEditable = js.native
-  def editable(method: String, params: js.Any): XEditable = js.native
-  def editable(options: js.Any): XEditable = js.native
+  def editable(method: String, params: Any): XEditable = js.native
+  def editable(options: Any): XEditable = js.native
 }

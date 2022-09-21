@@ -45,11 +45,11 @@ object ILocale {
     
     inline def setMonthsShortUndefined: Self = StObject.set(x, "monthsShort", js.undefined)
     
-    inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
+    inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value*))
     
     inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
     
-    inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+    inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -69,16 +69,16 @@ object ILocale {
     
     inline def setWeekdaysMinUndefined: Self = StObject.set(x, "weekdaysMin", js.undefined)
     
-    inline def setWeekdaysMinVarargs(value: String*): Self = StObject.set(x, "weekdaysMin", js.Array(value :_*))
+    inline def setWeekdaysMinVarargs(value: String*): Self = StObject.set(x, "weekdaysMin", js.Array(value*))
     
     inline def setWeekdaysShort(value: js.Array[String]): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
     
     inline def setWeekdaysShortUndefined: Self = StObject.set(x, "weekdaysShort", js.undefined)
     
-    inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
+    inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value*))
     
     inline def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
     
-    inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
+    inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value*))
   }
 }

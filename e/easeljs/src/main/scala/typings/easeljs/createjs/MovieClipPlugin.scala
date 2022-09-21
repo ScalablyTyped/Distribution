@@ -13,8 +13,8 @@ trait MovieClipPlugin extends StObject {
     tween: Tween,
     prop: String,
     value: String,
-    startValues: js.Array[js.Any],
-    endValues: js.Array[js.Any],
+    startValues: js.Array[Any],
+    endValues: js.Array[Any],
     ratio: Double,
     wait: js.Object,
     end: js.Object
@@ -23,8 +23,8 @@ trait MovieClipPlugin extends StObject {
     tween: Tween,
     prop: String,
     value: Boolean,
-    startValues: js.Array[js.Any],
-    endValues: js.Array[js.Any],
+    startValues: js.Array[Any],
+    endValues: js.Array[Any],
     ratio: Double,
     wait: js.Object,
     end: js.Object
@@ -33,8 +33,8 @@ trait MovieClipPlugin extends StObject {
     tween: Tween,
     prop: String,
     value: Double,
-    startValues: js.Array[js.Any],
-    endValues: js.Array[js.Any],
+    startValues: js.Array[Any],
+    endValues: js.Array[Any],
     ratio: Double,
     wait: js.Object,
     end: js.Object

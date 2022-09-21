@@ -1,6 +1,7 @@
 package typings.reactGamepad
 
 import typings.react.mod.Component
+import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,8 +10,8 @@ object mod {
   
   @JSImport("react-gamepad", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Props, js.Object, js.Any]
+  open class default ()
+    extends Component[Props, js.Object, Any]
   object default {
     
     /* static member */
@@ -118,7 +119,7 @@ object mod {
     inline def Y: typings.reactGamepad.reactGamepadStrings.Y = "Y".asInstanceOf[typings.reactGamepad.reactGamepadStrings.Y]
   }
   
-  type Gamepad = Component[Props, js.Object, js.Any]
+  type Gamepad = Component[Props, js.Object, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactGamepad.reactGamepadStrings.`-LeftStickX`
@@ -209,19 +210,21 @@ object mod {
       
       inline def setAxis(value: js.Array[InvertibleAxis | Null]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      inline def setAxisVarargs(value: (InvertibleAxis | Null)*): Self = StObject.set(x, "axis", js.Array(value :_*))
+      inline def setAxisVarargs(value: (InvertibleAxis | Null)*): Self = StObject.set(x, "axis", js.Array(value*))
       
       inline def setButtonAxis(value: js.Array[InvertibleAxis | Null]): Self = StObject.set(x, "buttonAxis", value.asInstanceOf[js.Any])
       
-      inline def setButtonAxisVarargs(value: (InvertibleAxis | Null)*): Self = StObject.set(x, "buttonAxis", js.Array(value :_*))
+      inline def setButtonAxisVarargs(value: (InvertibleAxis | Null)*): Self = StObject.set(x, "buttonAxis", js.Array(value*))
       
       inline def setButtons(value: js.Array[Button | Null]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      inline def setButtonsVarargs(value: (Button | Null)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: (Button | Null)*): Self = StObject.set(x, "buttons", js.Array(value*))
     }
   }
   
   trait Props extends StObject {
+    
+    var children: ReactElement
     
     /**
       * Threshold below which the axis values will be rounded to 0.0 Default: 0.08
@@ -254,6 +257,11 @@ object mod {
       * triggered when the B button is pressed.
       */
     var onB: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /**
+      * Triggered when the Back button is pressed.
+      */
+    var onBack: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * triggered when a button is pushed or released.
@@ -326,6 +334,11 @@ object mod {
     var onRight: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
+      * Triggered when the Start button is pressed.
+      */
+    var onStart: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /**
       * Triggered when the D Pad Up button is pressed or the Left Stick is pushed up (above stickThreshold).
       */
     var onUp: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -347,12 +360,14 @@ object mod {
   }
   object Props {
     
-    inline def apply(): Props = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(children: ReactElement): Props = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
     extension [Self <: Props](x: Self) {
+      
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setDeadZone(value: Double): Self = StObject.set(x, "deadZone", value.asInstanceOf[js.Any])
       
@@ -377,6 +392,10 @@ object mod {
       inline def setOnB(value: () => Unit): Self = StObject.set(x, "onB", js.Any.fromFunction0(value))
       
       inline def setOnBUndefined: Self = StObject.set(x, "onB", js.undefined)
+      
+      inline def setOnBack(value: () => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction0(value))
+      
+      inline def setOnBackUndefined: Self = StObject.set(x, "onBack", js.undefined)
       
       inline def setOnButtonChange(value: (/* buttonName */ Button, /* pressed */ Boolean) => Unit): Self = StObject.set(x, "onButtonChange", js.Any.fromFunction2(value))
       
@@ -433,6 +452,10 @@ object mod {
       inline def setOnRight(value: () => Unit): Self = StObject.set(x, "onRight", js.Any.fromFunction0(value))
       
       inline def setOnRightUndefined: Self = StObject.set(x, "onRight", js.undefined)
+      
+      inline def setOnStart(value: () => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
+      
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
       inline def setOnUp(value: () => Unit): Self = StObject.set(x, "onUp", js.Any.fromFunction0(value))
       

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.ContactMaterial")
 @js.native
-class ContactMaterial protected ()
+open class ContactMaterial protected ()
   extends typings.p2.mod.ContactMaterial {
   def this(materialA: typings.p2.mod.Material, materialB: typings.p2.mod.Material) = this()
   def this(

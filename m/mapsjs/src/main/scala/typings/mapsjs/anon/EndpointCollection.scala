@@ -37,7 +37,7 @@ object EndpointCollection {
     
     inline def setEndpointCollection(value: js.Array[String]): Self = StObject.set(x, "endpointCollection", value.asInstanceOf[js.Any])
     
-    inline def setEndpointCollectionVarargs(value: String*): Self = StObject.set(x, "endpointCollection", js.Array(value :_*))
+    inline def setEndpointCollectionVarargs(value: String*): Self = StObject.set(x, "endpointCollection", js.Array(value*))
     
     inline def setIdxMinX(value: Double): Self = StObject.set(x, "idxMinX", value.asInstanceOf[js.Any])
     
@@ -45,7 +45,7 @@ object EndpointCollection {
     
     inline def setQuadCollection(value: js.Array[quad]): Self = StObject.set(x, "quadCollection", value.asInstanceOf[js.Any])
     
-    inline def setQuadCollectionVarargs(value: quad*): Self = StObject.set(x, "quadCollection", js.Array(value :_*))
+    inline def setQuadCollectionVarargs(value: quad*): Self = StObject.set(x, "quadCollection", js.Array(value*))
     
     inline def setUlX(value: Double): Self = StObject.set(x, "ulX", value.asInstanceOf[js.Any])
     

@@ -36,6 +36,6 @@ object ReviewSummary {
     
     inline def setRatingSplit(value: js.Array[RatingCountPerRating]): Self = StObject.set(x, "ratingSplit", value.asInstanceOf[js.Any])
     
-    inline def setRatingSplitVarargs(value: RatingCountPerRating*): Self = StObject.set(x, "ratingSplit", js.Array(value :_*))
+    inline def setRatingSplitVarargs(value: RatingCountPerRating*): Self = StObject.set(x, "ratingSplit", js.Array(value*))
   }
 }

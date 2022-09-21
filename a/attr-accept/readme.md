@@ -10,15 +10,12 @@ JavaScript implementation of the "accept" attribute for HTML5 <input type="file"
 | ------------------ | :-------------: |
 | Full name          | attr-accept |
 | Keywords           | html5, input, tag, attribute, attr, accept, file |
-| # releases         | 6 |
-| # dependents       | 67 |
-| # downloads        | 49174983 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 8263089.0 |
+| # stars            | 91.0 |
 
 ## Links
-- [Homepage](https://github.com/react-dropzone/attr-accept#readme)
-- [Bugs](https://github.com/react-dropzone/attr-accept/issues)
-- [Repository](https://github.com/react-dropzone/attr-accept)
 - [Npm](https://www.npmjs.com/package/attr-accept)
     
 

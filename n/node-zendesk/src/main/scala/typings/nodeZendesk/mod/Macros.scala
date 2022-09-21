@@ -28,6 +28,6 @@ object Macros {
   trait Methods extends StObject {
     
     def applyTicket(ticketId: ZendeskID, macroId: Double): js.Promise[ApplyTicketResponsePayload] = js.native
-    def applyTicket(ticketId: ZendeskID, macroId: Double, cb: ZendeskCallback[js.Any, js.Any]): ApplyTicketResponsePayload = js.native
+    def applyTicket(ticketId: ZendeskID, macroId: Double, cb: ZendeskCallback[Any, Any]): ApplyTicketResponsePayload = js.native
   }
 }

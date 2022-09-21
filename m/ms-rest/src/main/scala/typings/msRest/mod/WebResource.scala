@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ms-rest", "WebResource")
 @js.native
-class WebResource () extends StObject {
+open class WebResource () extends StObject {
   
   /**
     * @property {any} [body] The request body
     */
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[Any] = js.native
   
   /**
     * @property {any} [formData] Formdata parameters.
     */
-  var formData: js.UndefOr[js.Any] = js.native
+  var formData: js.UndefOr[Any] = js.native
   
   /**
     * Access to raw request headers for requests. Useful when you need to set a header
@@ -105,7 +105,7 @@ class WebResource () extends StObject {
   /**
     * @property {any} [query] Query parameters
     */
-  var query: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var query: js.UndefOr[StringDictionary[Any]] = js.native
   
   /**
     * @property {boolean} rawResponse Indicates whether the client should give back the response as-is. (Useful for streaming scenarios).

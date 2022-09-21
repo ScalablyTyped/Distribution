@@ -22,7 +22,7 @@ trait ImportSnapshotResult extends StObject {
   var SnapshotTaskDetail: js.UndefOr[typings.awsSdk.ec2Mod.SnapshotTaskDetail] = js.undefined
   
   /**
-    * Any tags assigned to the snapshot being imported.
+    * Any tags assigned to the import snapshot task.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
@@ -51,6 +51,6 @@ object ImportSnapshotResult {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

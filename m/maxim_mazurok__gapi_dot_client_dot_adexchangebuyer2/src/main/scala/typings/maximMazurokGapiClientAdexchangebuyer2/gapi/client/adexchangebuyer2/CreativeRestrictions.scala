@@ -31,7 +31,7 @@ object CreativeRestrictions {
     
     inline def setCreativeSpecificationsUndefined: Self = StObject.set(x, "creativeSpecifications", js.undefined)
     
-    inline def setCreativeSpecificationsVarargs(value: CreativeSpecification*): Self = StObject.set(x, "creativeSpecifications", js.Array(value :_*))
+    inline def setCreativeSpecificationsVarargs(value: CreativeSpecification*): Self = StObject.set(x, "creativeSpecifications", js.Array(value*))
     
     inline def setSkippableAdType(value: String): Self = StObject.set(x, "skippableAdType", value.asInstanceOf[js.Any])
     

@@ -9,71 +9,71 @@ object colorCurvesMod {
   
   @JSImport("babylonjs/Materials/colorCurves", "ColorCurves")
   @js.native
-  class ColorCurves () extends StObject {
+  open class ColorCurves () extends StObject {
     
-    /* private */ var _dirty: js.Any = js.native
+    /* private */ var _dirty: Any = js.native
     
-    /* private */ var _globalCurve: js.Any = js.native
+    /**
+      * Returns color grading data based on a hue, density, saturation and exposure value.
+      * @param hue
+      * @param density
+      * @param saturation The saturation.
+      * @param exposure The exposure.
+      * @param result The result data container.
+      */
+    /* private */ var _getColorGradingDataToRef: Any = js.native
     
-    /* private */ var _globalDensity: js.Any = js.native
+    /* private */ var _globalCurve: Any = js.native
     
-    /* private */ var _globalExposure: js.Any = js.native
+    /* private */ var _globalDensity: Any = js.native
     
-    /* private */ var _globalHue: js.Any = js.native
+    /* private */ var _globalExposure: Any = js.native
     
-    /* private */ var _globalSaturation: js.Any = js.native
+    /* private */ var _globalHue: Any = js.native
     
-    /* private */ var _highlightsCurve: js.Any = js.native
+    /* private */ var _globalSaturation: Any = js.native
     
-    /* private */ var _highlightsDensity: js.Any = js.native
+    /* private */ var _highlightsCurve: Any = js.native
     
-    /* private */ var _highlightsExposure: js.Any = js.native
+    /* private */ var _highlightsDensity: Any = js.native
     
-    /* private */ var _highlightsHue: js.Any = js.native
+    /* private */ var _highlightsExposure: Any = js.native
     
-    /* private */ var _highlightsSaturation: js.Any = js.native
+    /* private */ var _highlightsHue: Any = js.native
     
-    /* private */ var _midtonesCurve: js.Any = js.native
+    /* private */ var _highlightsSaturation: Any = js.native
     
-    /* private */ var _midtonesDensity: js.Any = js.native
+    /* private */ var _midtonesCurve: Any = js.native
     
-    /* private */ var _midtonesExposure: js.Any = js.native
+    /* private */ var _midtonesDensity: Any = js.native
     
-    /* private */ var _midtonesHue: js.Any = js.native
+    /* private */ var _midtonesExposure: Any = js.native
     
-    /* private */ var _midtonesSaturation: js.Any = js.native
+    /* private */ var _midtonesHue: Any = js.native
     
-    /* private */ var _negativeCurve: js.Any = js.native
+    /* private */ var _midtonesSaturation: Any = js.native
     
-    /* private */ var _positiveCurve: js.Any = js.native
+    /* private */ var _negativeCurve: Any = js.native
     
-    /* private */ var _shadowsCurve: js.Any = js.native
+    /* private */ var _positiveCurve: Any = js.native
     
-    /* private */ var _shadowsDensity: js.Any = js.native
+    /* private */ var _shadowsCurve: Any = js.native
     
-    /* private */ var _shadowsExposure: js.Any = js.native
+    /* private */ var _shadowsDensity: Any = js.native
     
-    /* private */ var _shadowsHue: js.Any = js.native
+    /* private */ var _shadowsExposure: Any = js.native
     
-    /* private */ var _shadowsSaturation: js.Any = js.native
+    /* private */ var _shadowsHue: Any = js.native
     
-    /* private */ var _tempColor: js.Any = js.native
+    /* private */ var _shadowsSaturation: Any = js.native
+    
+    /* private */ var _tempColor: Any = js.native
     
     /**
       * Returns the class name
       * @returns The class name
       */
     def getClassName(): String = js.native
-    
-    /**
-      * Returns color grading data based on a hue, density, saturation and exposure value.
-      * @param filterHue The hue of the color filter.
-      * @param filterDensity The density of the color filter.
-      * @param saturation The saturation.
-      * @param exposure The exposure.
-      * @param result The result data container.
-      */
-    /* private */ var getColorGradingDataToRef: js.Any = js.native
     
     /**
       * Gets the global Density value.
@@ -215,9 +215,9 @@ object colorCurvesMod {
     
     /**
       * Serializes the current color curve instance to a json representation.
-      * @return a JSON representation
+      * @returns a JSON representation
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
     
     /**
       * Gets the shadows Density value.
@@ -316,9 +316,9 @@ object colorCurvesMod {
     /**
       * Parses the color curve from a json representation.
       * @param source the JSON source to parse
-      * @return The parsed curves
+      * @returns The parsed curves
       */
-    inline def Parse(source: js.Any): ColorCurves = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any]).asInstanceOf[ColorCurves]
+    inline def Parse(source: Any): ColorCurves = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any]).asInstanceOf[ColorCurves]
     
     /**
       * Prepare the list of uniforms associated with the ColorCurves effects.
@@ -331,10 +331,10 @@ object colorCurvesMod {
       * @param value The input slider value in range [-100,100].
       * @returns Adjusted value.
       */
-    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.applyColorGradingSliderNonlinear")
+    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves._ApplyColorGradingSliderNonlinear")
     @js.native
-    def applyColorGradingSliderNonlinear: js.Any = js.native
-    inline def applyColorGradingSliderNonlinear_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("applyColorGradingSliderNonlinear")(x.asInstanceOf[js.Any])
+    def _ApplyColorGradingSliderNonlinear: Any = js.native
+    inline def _ApplyColorGradingSliderNonlinear_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ApplyColorGradingSliderNonlinear")(x.asInstanceOf[js.Any])
     
     /**
       * Returns a value clamped between min and max
@@ -343,21 +343,22 @@ object colorCurvesMod {
       * @param max The maximum of value
       * @returns The clamped value.
       */
-    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.clamp")
+    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves._Clamp")
     @js.native
-    def clamp: js.Any = js.native
-    inline def clamp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clamp")(x.asInstanceOf[js.Any])
+    def _Clamp: Any = js.native
+    inline def _Clamp_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Clamp")(x.asInstanceOf[js.Any])
     
     /**
       * Returns an RGBA Color4 based on Hue, Saturation and Brightness (also referred to as value, HSV).
       * @param hue The hue (H) input.
       * @param saturation The saturation (S) input.
       * @param brightness The brightness (B) input.
+      * @param result
       * @result An RGBA color represented as Vector4.
       */
-    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves.fromHSBToRef")
+    @JSImport("babylonjs/Materials/colorCurves", "ColorCurves._FromHSBToRef")
     @js.native
-    def fromHSBToRef: js.Any = js.native
-    inline def fromHSBToRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromHSBToRef")(x.asInstanceOf[js.Any])
+    def _FromHSBToRef: Any = js.native
+    inline def _FromHSBToRef_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FromHSBToRef")(x.asInstanceOf[js.Any])
   }
 }

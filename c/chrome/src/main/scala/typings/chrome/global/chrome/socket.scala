@@ -7,7 +7,6 @@ import typings.chrome.chrome.socket.ReadInfo
 import typings.chrome.chrome.socket.RecvFromInfo
 import typings.chrome.chrome.socket.SocketInfo
 import typings.chrome.chrome.socket.WriteInfo
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,10 +76,10 @@ object socket {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recvFrom")(socketId.asInstanceOf[js.Any], bufferSize.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def recvFrom(socketId: Double, bufferSize: Unit, callback: js.Function1[/* recvFromInfo */ RecvFromInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recvFrom")(socketId.asInstanceOf[js.Any], bufferSize.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def sendTo(socketId: Double, data: ArrayBuffer, address: String, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendTo")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], address.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendTo(socketId: Double, data: js.typedarray.ArrayBuffer, address: String, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendTo")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], address.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def sendTo(
     socketId: Double,
-    data: ArrayBuffer,
+    data: js.typedarray.ArrayBuffer,
     address: String,
     port: Double,
     callback: js.Function1[/* writeInfo */ WriteInfo, Unit]
@@ -99,6 +98,10 @@ object socket {
   inline def setNoDelay(socketId: Double, noDelay: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setNoDelay")(socketId.asInstanceOf[js.Any], noDelay.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setNoDelay(socketId: Double, noDelay: Boolean, callback: js.Function1[/* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setNoDelay")(socketId.asInstanceOf[js.Any], noDelay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def write(socketId: Double, data: ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(socketId: Double, data: ArrayBuffer, callback: js.Function1[/* writeInfo */ WriteInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(socketId: Double, data: js.typedarray.ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    socketId: Double,
+    data: js.typedarray.ArrayBuffer,
+    callback: js.Function1[/* writeInfo */ WriteInfo, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("parse", "Role")
 @js.native
-class RoleCls[T /* <: Attributes */] protected ()
+open class RoleCls[T /* <: Attributes */] protected ()
   extends StObject
      with typings.parse.mod.global.Parse.Role[Partial[T]] {
   def this(name: String, acl: typings.parse.mod.global.Parse.ACL) = this()

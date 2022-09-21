@@ -22,7 +22,7 @@ trait Observer[T] extends StObject {
   /**
     * Defines the current scope used to restore the JS context
     */
-  var scope: js.Any
+  var scope: Any
   
   /**
     * Gets or sets a property defining that the observer as to be unregistered after the next notification
@@ -35,7 +35,7 @@ object Observer {
     _willBeUnregistered: Boolean,
     callback: (T, EventState) => Unit,
     mask: Double,
-    scope: js.Any,
+    scope: Any,
     unregisterOnNextCall: Boolean
   ): Observer[T] = {
     val __obj = js.Dynamic.literal(_willBeUnregistered = _willBeUnregistered.asInstanceOf[js.Any], callback = js.Any.fromFunction2(callback), mask = mask.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], unregisterOnNextCall = unregisterOnNextCall.asInstanceOf[js.Any])
@@ -48,7 +48,7 @@ object Observer {
     
     inline def setMask(value: Double): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setUnregisterOnNextCall(value: Boolean): Self = StObject.set(x, "unregisterOnNextCall", value.asInstanceOf[js.Any])
     

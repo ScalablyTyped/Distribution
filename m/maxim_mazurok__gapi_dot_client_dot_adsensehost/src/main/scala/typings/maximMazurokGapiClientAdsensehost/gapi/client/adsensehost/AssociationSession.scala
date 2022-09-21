@@ -58,7 +58,7 @@ object AssociationSession {
     
     inline def setProductCodesUndefined: Self = StObject.set(x, "productCodes", js.undefined)
     
-    inline def setProductCodesVarargs(value: String*): Self = StObject.set(x, "productCodes", js.Array(value :_*))
+    inline def setProductCodesVarargs(value: String*): Self = StObject.set(x, "productCodes", js.Array(value*))
     
     inline def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
     

@@ -1,12 +1,20 @@
 package typings.typedoc
 
 import typings.typedoc.applicationMod.Application
-import typings.typescript.mod.EnumMember
+import typings.typedoc.modelsMod.ProjectReflection
+import typings.typedoc.modelsMod.Reflection
+import typings.typedoc.typedocStrings.begin
+import typings.typedoc.typedocStrings.createDeclaration
+import typings.typedoc.typedocStrings.createParameter
+import typings.typedoc.typedocStrings.createSignature
+import typings.typedoc.typedocStrings.createTypeParameter
+import typings.typedoc.typedocStrings.end
+import typings.typedoc.typedocStrings.resolveBegin
+import typings.typedoc.typedocStrings.resolveEnd
+import typings.typedoc.typedocStrings.resolveReflection
+import typings.typescript.mod.Declaration
 import typings.typescript.mod.Expression
-import typings.typescript.mod.ParameterDeclaration
 import typings.typescript.mod.Program
-import typings.typescript.mod.TypeChecker
-import typings.typescript.mod.VariableDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,89 +27,130 @@ object converterMod {
   
   @JSImport("typedoc/dist/lib/converter", "Context")
   @js.native
-  class Context protected ()
+  open class Context protected ()
     extends typings.typedoc.contextMod.Context {
+    /**
+      * Create a new Context instance.
+      *
+      * @param converter  The converter instance that has created the context.
+      * @internal
+      */
     def this(
       converter: typings.typedoc.converterConverterMod.Converter,
-      fileNames: js.Array[String],
-      checker: TypeChecker,
-      program: Program
+      programs: js.Array[Program],
+      project: ProjectReflection
+    ) = this()
+    def this(
+      converter: typings.typedoc.converterConverterMod.Converter,
+      programs: js.Array[Program],
+      project: ProjectReflection,
+      scope: Reflection
     ) = this()
   }
   
   @JSImport("typedoc/dist/lib/converter", "Converter")
   @js.native
-  class Converter protected ()
+  open class Converter protected ()
     extends typings.typedoc.converterConverterMod.Converter {
-    def this(owner: js.Symbol) = this()
     def this(owner: Application) = this()
   }
   /* static members */
   object Converter {
     
-    @JSImport("typedoc/dist/lib/converter", "Converter")
-    @js.native
-    val ^ : js.Any = js.native
-    
+    /**
+      * General events
+      */
+    /**
+      * Triggered when the converter begins converting a project.
+      * The listener will be given a {@link Context} object.
+      * @event
+      */
     @JSImport("typedoc/dist/lib/converter", "Converter.EVENT_BEGIN")
     @js.native
-    def EVENT_BEGIN: String = js.native
-    inline def EVENT_BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_BEGIN")(x.asInstanceOf[js.Any])
+    val EVENT_BEGIN: begin = js.native
     
+    /**
+      * Factory events
+      */
+    /**
+      * Triggered when the converter has created a declaration reflection.
+      * The listener will be given {@link Context} and a {@link DeclarationReflection}.
+      * @event
+      */
     @JSImport("typedoc/dist/lib/converter", "Converter.EVENT_CREATE_DECLARATION")
     @js.native
-    def EVENT_CREATE_DECLARATION: String = js.native
-    inline def EVENT_CREATE_DECLARATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CREATE_DECLARATION")(x.asInstanceOf[js.Any])
+    val EVENT_CREATE_DECLARATION: createDeclaration = js.native
     
+    /**
+      * Triggered when the converter has created a parameter reflection.
+      * The listener will be given {@link Context}, {@link ParameterReflection} and a `ts.Node?`
+      * @event
+      */
     @JSImport("typedoc/dist/lib/converter", "Converter.EVENT_CREATE_PARAMETER")
     @js.native
-    def EVENT_CREATE_PARAMETER: String = js.native
-    inline def EVENT_CREATE_PARAMETER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CREATE_PARAMETER")(x.asInstanceOf[js.Any])
+    val EVENT_CREATE_PARAMETER: createParameter = js.native
     
+    /**
+      * Triggered when the converter has created a signature reflection.
+      * The listener will be given {@link Context}, {@link SignatureReflection} | {@link ProjectReflection} and
+      * `ts.SignatureDeclaration | ts.IndexSignatureDeclaration | ts.JSDocSignature | undefined`
+      * @event
+      */
     @JSImport("typedoc/dist/lib/converter", "Converter.EVENT_CREATE_SIGNATURE")
     @js.native
-    def EVENT_CREATE_SIGNATURE: String = js.native
-    inline def EVENT_CREATE_SIGNATURE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CREATE_SIGNATURE")(x.asInstanceOf[js.Any])
+    val EVENT_CREATE_SIGNATURE: createSignature = js.native
     
+    /**
+      * Triggered when the converter has created a type parameter reflection.
+      * The listener will be given {@link Context} and a {@link TypeParameterReflection}
+      * @event
+      */
     @JSImport("typedoc/dist/lib/converter", "Converter.EVENT_CREATE_TYPE_PARAMETER")
     @js.native
-    def EVENT_CREATE_TYPE_PARAMETER: String = js.native
-    inline def EVENT_CREATE_TYPE_PARAMETER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CREATE_TYPE_PARAMETER")(x.asInstanceOf[js.Any])
+    val EVENT_CREATE_TYPE_PARAMETER: createTypeParameter = js.native
     
+    /**
+      * Triggered when the converter has finished converting a project.
+      * The listener will be given a {@link Context} object.
+      * @event
+      */
     @JSImport("typedoc/dist/lib/converter", "Converter.EVENT_END")
     @js.native
-    def EVENT_END: String = js.native
-    inline def EVENT_END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_END")(x.asInstanceOf[js.Any])
+    val EVENT_END: end = js.native
     
-    @JSImport("typedoc/dist/lib/converter", "Converter.EVENT_FILE_BEGIN")
-    @js.native
-    def EVENT_FILE_BEGIN: String = js.native
-    inline def EVENT_FILE_BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_FILE_BEGIN")(x.asInstanceOf[js.Any])
-    
-    @JSImport("typedoc/dist/lib/converter", "Converter.EVENT_FUNCTION_IMPLEMENTATION")
-    @js.native
-    def EVENT_FUNCTION_IMPLEMENTATION: String = js.native
-    inline def EVENT_FUNCTION_IMPLEMENTATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_FUNCTION_IMPLEMENTATION")(x.asInstanceOf[js.Any])
-    
+    /**
+      * Triggered when the converter resolves a reflection.
+      * The listener will be given {@link Context} and a {@link Reflection}.
+      * @event
+      */
     @JSImport("typedoc/dist/lib/converter", "Converter.EVENT_RESOLVE")
     @js.native
-    def EVENT_RESOLVE: String = js.native
-    inline def EVENT_RESOLVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_RESOLVE")(x.asInstanceOf[js.Any])
+    val EVENT_RESOLVE: resolveReflection = js.native
     
+    /**
+      * Resolve events
+      */
+    /**
+      * Triggered when the converter begins resolving a project.
+      * The listener will be given {@link Context}.
+      * @event
+      */
     @JSImport("typedoc/dist/lib/converter", "Converter.EVENT_RESOLVE_BEGIN")
     @js.native
-    def EVENT_RESOLVE_BEGIN: String = js.native
-    inline def EVENT_RESOLVE_BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_RESOLVE_BEGIN")(x.asInstanceOf[js.Any])
+    val EVENT_RESOLVE_BEGIN: resolveBegin = js.native
     
+    /**
+      * Triggered when the converter has finished resolving a project.
+      * The listener will be given {@link Context}.
+      * @event
+      */
     @JSImport("typedoc/dist/lib/converter", "Converter.EVENT_RESOLVE_END")
     @js.native
-    def EVENT_RESOLVE_END: String = js.native
-    inline def EVENT_RESOLVE_END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_RESOLVE_END")(x.asInstanceOf[js.Any])
+    val EVENT_RESOLVE_END: resolveEnd = js.native
   }
   
-  inline def convertDefaultValue(node: EnumMember): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDefaultValue")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
-  inline def convertDefaultValue(node: ParameterDeclaration): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDefaultValue")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
-  inline def convertDefaultValue(node: VariableDeclaration): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDefaultValue")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def convertDefaultValue(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDefaultValue")().asInstanceOf[js.UndefOr[String]]
+  inline def convertDefaultValue(node: Declaration): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDefaultValue")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   inline def convertExpression(expression: Expression): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -27,7 +27,7 @@ trait Stepper
   def select(): Step = js.native
   def select(index: Double): Unit = js.native
   
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   
   def steps(): js.Array[Step] = js.native
   def steps(steps: js.Array[StepOptions]): Unit = js.native

@@ -1,17 +1,16 @@
 package typings.happypack
 
-import typings.std.Plugin
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("happypack", JSImport.Namespace)
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("happypack", JSImport.Namespace)
   @js.native
-  class ^ protected ()
-    extends StObject
-       with Plugin {
+  open class ^ protected () extends StObject {
     def this(options: PluginOptions) = this()
   }
   
@@ -19,13 +18,13 @@ object mod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var loaders: js.Any
+    var loaders: Any
     
     var threads: js.UndefOr[Double] = js.undefined
   }
   object PluginOptions {
     
-    inline def apply(loaders: js.Any): PluginOptions = {
+    inline def apply(loaders: Any): PluginOptions = {
       val __obj = js.Dynamic.literal(loaders = loaders.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluginOptions]
     }
@@ -36,7 +35,7 @@ object mod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setLoaders(value: js.Any): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
+      inline def setLoaders(value: Any): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
       
       inline def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
       

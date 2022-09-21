@@ -24,7 +24,7 @@ trait IFuture extends Disposable {
   /**
     * The original outgoing message.
     */
-  val msg: IMessage = js.native
+  val msg: js.UndefOr[IMessage] = js.native
   
   /**
     * Register hook for IOPub messages.

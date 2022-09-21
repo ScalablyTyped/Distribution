@@ -1,5 +1,6 @@
 package typings.prettier.mod
 
+import typings.prettier.prettierBooleans.`false`
 import typings.prettier.prettierStrings.`as-needed`
 import typings.prettier.prettierStrings.all
 import typings.prettier.prettierStrings.always
@@ -30,6 +31,13 @@ trait RequiredOptions
     * @default 'always'
     */
   var arrowParens: avoid | always
+  
+  /**
+    * Put the `>` of a multi-line HTML (HTML, JSX, Vue, Angular) element at the end of the last line instead of being
+    * alone on the next line (does not apply to self closing elements).
+    * @default false
+    */
+  var bracketSameLine: Boolean
   
   /**
     * Print spaces between brackets in object literals.
@@ -72,6 +80,7 @@ trait RequiredOptions
   /**
     * Put the `>` of a multi-line JSX element at the end of the last line instead of being alone on the next line.
     * @default false
+    * @deprecated use bracketSameLine instead
     */
   var jsxBracketSameLine: Boolean
   
@@ -87,9 +96,14 @@ trait RequiredOptions
   var parser: (LiteralUnion[BuiltInParserName, String]) | CustomParser
   
   /**
-    * The plugin API is in a beta state.
+    * Specify plugin directory paths to search for plugins if not installed in the same `node_modules` where prettier is located.
     */
-  var plugins: js.Array[String | Plugin[js.Any]]
+  var pluginSearchDirs: js.Array[String] | `false`
+  
+  /**
+    * Provide ability to support new languages to prettier.
+    */
+  var plugins: js.Array[String | Plugin[Any]]
   
   /**
     * By default, Prettier will wrap markdown text as-is since some services use a linebreak-sensitive renderer.
@@ -130,6 +144,12 @@ trait RequiredOptions
   var semi: Boolean
   
   /**
+    * Enforce single attribute per line in HTML, Vue and JSX.
+    * @default false
+    */
+  var singleAttributePerLine: Boolean
+  
+  /**
     * Use single quotes instead of double quotes.
     * @default false
     */
@@ -151,8 +171,8 @@ object RequiredOptions {
   
   inline def apply(
     arrowParens: avoid | always,
+    bracketSameLine: Boolean,
     bracketSpacing: Boolean,
-    embeddedInHtml: Boolean,
     embeddedLanguageFormatting: auto | off,
     endOfLine: auto | lf | crlf | cr,
     filepath: String,
@@ -161,7 +181,8 @@ object RequiredOptions {
     jsxBracketSameLine: Boolean,
     jsxSingleQuote: Boolean,
     parser: (LiteralUnion[BuiltInParserName, String]) | CustomParser,
-    plugins: js.Array[String | Plugin[js.Any]],
+    pluginSearchDirs: js.Array[String] | `false`,
+    plugins: js.Array[String | Plugin[Any]],
     printWidth: Double,
     proseWrap: always | never | preserve,
     quoteProps: `as-needed` | consistent | preserve,
@@ -169,19 +190,22 @@ object RequiredOptions {
     rangeStart: Double,
     requirePragma: Boolean,
     semi: Boolean,
+    singleAttributePerLine: Boolean,
     singleQuote: Boolean,
     tabWidth: Double,
     trailingComma: none | es5 | all,
     useTabs: Boolean,
     vueIndentScriptAndStyle: Boolean
   ): RequiredOptions = {
-    val __obj = js.Dynamic.literal(arrowParens = arrowParens.asInstanceOf[js.Any], bracketSpacing = bracketSpacing.asInstanceOf[js.Any], embeddedInHtml = embeddedInHtml.asInstanceOf[js.Any], embeddedLanguageFormatting = embeddedLanguageFormatting.asInstanceOf[js.Any], endOfLine = endOfLine.asInstanceOf[js.Any], filepath = filepath.asInstanceOf[js.Any], htmlWhitespaceSensitivity = htmlWhitespaceSensitivity.asInstanceOf[js.Any], insertPragma = insertPragma.asInstanceOf[js.Any], jsxBracketSameLine = jsxBracketSameLine.asInstanceOf[js.Any], jsxSingleQuote = jsxSingleQuote.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], printWidth = printWidth.asInstanceOf[js.Any], proseWrap = proseWrap.asInstanceOf[js.Any], quoteProps = quoteProps.asInstanceOf[js.Any], rangeEnd = rangeEnd.asInstanceOf[js.Any], rangeStart = rangeStart.asInstanceOf[js.Any], requirePragma = requirePragma.asInstanceOf[js.Any], semi = semi.asInstanceOf[js.Any], singleQuote = singleQuote.asInstanceOf[js.Any], tabWidth = tabWidth.asInstanceOf[js.Any], trailingComma = trailingComma.asInstanceOf[js.Any], useTabs = useTabs.asInstanceOf[js.Any], vueIndentScriptAndStyle = vueIndentScriptAndStyle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arrowParens = arrowParens.asInstanceOf[js.Any], bracketSameLine = bracketSameLine.asInstanceOf[js.Any], bracketSpacing = bracketSpacing.asInstanceOf[js.Any], embeddedLanguageFormatting = embeddedLanguageFormatting.asInstanceOf[js.Any], endOfLine = endOfLine.asInstanceOf[js.Any], filepath = filepath.asInstanceOf[js.Any], htmlWhitespaceSensitivity = htmlWhitespaceSensitivity.asInstanceOf[js.Any], insertPragma = insertPragma.asInstanceOf[js.Any], jsxBracketSameLine = jsxBracketSameLine.asInstanceOf[js.Any], jsxSingleQuote = jsxSingleQuote.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], pluginSearchDirs = pluginSearchDirs.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], printWidth = printWidth.asInstanceOf[js.Any], proseWrap = proseWrap.asInstanceOf[js.Any], quoteProps = quoteProps.asInstanceOf[js.Any], rangeEnd = rangeEnd.asInstanceOf[js.Any], rangeStart = rangeStart.asInstanceOf[js.Any], requirePragma = requirePragma.asInstanceOf[js.Any], semi = semi.asInstanceOf[js.Any], singleAttributePerLine = singleAttributePerLine.asInstanceOf[js.Any], singleQuote = singleQuote.asInstanceOf[js.Any], tabWidth = tabWidth.asInstanceOf[js.Any], trailingComma = trailingComma.asInstanceOf[js.Any], useTabs = useTabs.asInstanceOf[js.Any], vueIndentScriptAndStyle = vueIndentScriptAndStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequiredOptions]
   }
   
   extension [Self <: RequiredOptions](x: Self) {
     
     inline def setArrowParens(value: avoid | always): Self = StObject.set(x, "arrowParens", value.asInstanceOf[js.Any])
+    
+    inline def setBracketSameLine(value: Boolean): Self = StObject.set(x, "bracketSameLine", value.asInstanceOf[js.Any])
     
     inline def setBracketSpacing(value: Boolean): Self = StObject.set(x, "bracketSpacing", value.asInstanceOf[js.Any])
     
@@ -203,9 +227,13 @@ object RequiredOptions {
     
     inline def setParserFunction3(value: (/* text */ String, /* parsers */ BuiltInParsers, /* options */ Options) => AST): Self = StObject.set(x, "parser", js.Any.fromFunction3(value))
     
-    inline def setPlugins(value: js.Array[String | Plugin[js.Any]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPluginSearchDirs(value: js.Array[String] | `false`): Self = StObject.set(x, "pluginSearchDirs", value.asInstanceOf[js.Any])
     
-    inline def setPluginsVarargs(value: (String | Plugin[js.Any])*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginSearchDirsVarargs(value: String*): Self = StObject.set(x, "pluginSearchDirs", js.Array(value*))
+    
+    inline def setPlugins(value: js.Array[String | Plugin[Any]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    
+    inline def setPluginsVarargs(value: (String | Plugin[Any])*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setProseWrap(value: always | never | preserve): Self = StObject.set(x, "proseWrap", value.asInstanceOf[js.Any])
     
@@ -218,6 +246,8 @@ object RequiredOptions {
     inline def setRequirePragma(value: Boolean): Self = StObject.set(x, "requirePragma", value.asInstanceOf[js.Any])
     
     inline def setSemi(value: Boolean): Self = StObject.set(x, "semi", value.asInstanceOf[js.Any])
+    
+    inline def setSingleAttributePerLine(value: Boolean): Self = StObject.set(x, "singleAttributePerLine", value.asInstanceOf[js.Any])
     
     inline def setSingleQuote(value: Boolean): Self = StObject.set(x, "singleQuote", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,7 @@ trait MessageEventInit
   
   var channel: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var lastEventId: js.UndefOr[String] = js.undefined
   
@@ -18,7 +18,7 @@ trait MessageEventInit
   
   var ports: js.UndefOr[js.Array[MessagePort]] = js.undefined
   
-  var source: js.UndefOr[js.Any] = js.undefined
+  var source: js.UndefOr[Any] = js.undefined
 }
 object MessageEventInit {
   
@@ -33,7 +33,7 @@ object MessageEventInit {
     
     inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -49,9 +49,9 @@ object MessageEventInit {
     
     inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
-    inline def setPortsVarargs(value: MessagePort*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: MessagePort*): Self = StObject.set(x, "ports", js.Array(value*))
     
-    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }

@@ -10,15 +10,12 @@ Get all but the last element or last n elements of an array.
 | ------------------ | :-------------: |
 | Full name          | array-initial |
 | Keywords           | array, fast, first, initial, javascript, js, last, rest, util, utility, utils |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 44248662 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4941116.333333333 |
+| # stars            | 8.0 |
 
 ## Links
-- [Homepage](https://github.com/jonschlinkert/array-initial)
-- [Bugs](https://github.com/jonschlinkert/array-initial/issues)
-- [Repository](https://github.com/jonschlinkert/array-initial)
 - [Npm](https://www.npmjs.com/package/array-initial)
     
 

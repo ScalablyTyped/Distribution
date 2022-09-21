@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.XMLNodesCollection")
 @js.native
-/* private */ class XMLNodesCollection ()
+/* private */ open class XMLNodesCollection ()
   extends StObject
      with typings.activexInfopath.InfoPath.XMLNodesCollection {
   
@@ -19,5 +19,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var InfoPathDotXMLNodesCollection_typekey: typings.activexInfopath.InfoPath.XMLNodesCollection = js.native
   
   /* CompleteClass */
-  override def Item(varIndex: js.Any): IXMLDOMNode = js.native
+  override def Item(varIndex: Any): IXMLDOMNode = js.native
 }

@@ -17,5 +17,5 @@ trait BuildingSummaryStatisticsConstructor
 Instantiable0[BuildingSummaryStatistics]
      with Instantiable1[/* properties */ BuildingSummaryStatisticsProperties, BuildingSummaryStatistics] {
   
-  def fromJSON(json: js.Any): BuildingSummaryStatistics = js.native
+  def fromJSON(json: Any): BuildingSummaryStatistics = js.native
 }

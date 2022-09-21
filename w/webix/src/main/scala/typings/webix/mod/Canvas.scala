@@ -8,7 +8,7 @@ trait Canvas extends StObject {
   
   def clearCanvas(): Unit
   
-  def getCanvas(context: String): js.Any
+  def getCanvas(context: String): Any
   
   def hideCanvas(): Unit
   
@@ -30,7 +30,7 @@ object Canvas {
     
     inline def setClearCanvas(value: () => Unit): Self = StObject.set(x, "clearCanvas", js.Any.fromFunction0(value))
     
-    inline def setGetCanvas(value: String => js.Any): Self = StObject.set(x, "getCanvas", js.Any.fromFunction1(value))
+    inline def setGetCanvas(value: String => Any): Self = StObject.set(x, "getCanvas", js.Any.fromFunction1(value))
     
     inline def setHideCanvas(value: () => Unit): Self = StObject.set(x, "hideCanvas", js.Any.fromFunction0(value))
     

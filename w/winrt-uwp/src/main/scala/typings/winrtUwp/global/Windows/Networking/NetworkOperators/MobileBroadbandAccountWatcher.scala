@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher")
 @js.native
 /** Creates a new instance of a MobileBroadbandAccountWatcher . */
-class MobileBroadbandAccountWatcher ()
+open class MobileBroadbandAccountWatcher ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher

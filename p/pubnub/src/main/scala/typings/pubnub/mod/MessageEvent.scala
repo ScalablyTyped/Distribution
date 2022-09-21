@@ -13,7 +13,7 @@ trait MessageEvent extends StObject {
   
   var channel: String
   
-  var message: js.Any
+  var message: Any
   
   var publisher: String
   
@@ -31,7 +31,7 @@ object MessageEvent {
   inline def apply(
     actualChannel: String,
     channel: String,
-    message: js.Any,
+    message: Any,
     publisher: String,
     subscribedChannel: String,
     subscription: String,
@@ -47,7 +47,7 @@ object MessageEvent {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     

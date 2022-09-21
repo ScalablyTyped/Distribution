@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-file-system
 
-Typings are for version 9.2.0
+Typings are for version 14.1.0
 
 ## Library description:
 Provides access to the local file system on the device.
@@ -10,13 +10,13 @@ Provides access to the local file system on the device.
 | ------------------ | :-------------: |
 | Full name          | expo-file-system |
 | Keywords           | react-native, expo, file-system, file |
-| # releases         | 30 |
-| # dependents       | 14 |
-| # downloads        | 1600299 |
-| # stars            | 0 |
+| # releases         | 25 |
+| # dependents       | 0.0 |
+| # downloads        | 1062466.3333333333 |
+| # stars            | 16865.0 |
 
 ## Links
-- [Homepage](https://docs.expo.io/versions/latest/sdk/filesystem/)
+- [Homepage](https://docs.expo.dev/versions/latest/sdk/filesystem/)
 - [Bugs](https://github.com/expo/expo/issues)
 - [Repository](https://github.com/expo/expo)
 - [Npm](https://www.npmjs.com/package/expo-file-system)

@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Window extends StObject {
   
-  var setContentAppend: js.Any
+  var setContentAppend: Any
 }
 object Window {
   
-  inline def apply(setContentAppend: js.Any): Window = {
+  inline def apply(setContentAppend: Any): Window = {
     val __obj = js.Dynamic.literal(setContentAppend = setContentAppend.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
   extension [Self <: Window](x: Self) {
     
-    inline def setSetContentAppend(value: js.Any): Self = StObject.set(x, "setContentAppend", value.asInstanceOf[js.Any])
+    inline def setSetContentAppend(value: Any): Self = StObject.set(x, "setContentAppend", value.asInstanceOf[js.Any])
   }
 }

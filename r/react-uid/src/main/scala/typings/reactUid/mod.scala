@@ -1,6 +1,7 @@
 package typings.reactUid
 
-import typings.react.mod.SFC
+import typings.react.mod.FC
+import typings.react.mod.PropsWithChildren
 import typings.reactUid.contextMod.UIDProps
 import typings.reactUid.controlMod.WithPrefix
 import typings.reactUid.hooksMod.SeedGenerator
@@ -17,31 +18,31 @@ object mod {
   
   @JSImport("react-uid", "UIDConsumer")
   @js.native
-  val UIDConsumer: SFC[UIDProps] = js.native
+  val UIDConsumer: FC[UIDProps] = js.native
   
   @JSImport("react-uid", "UIDFork")
   @js.native
-  val UIDFork: SFC[WithPrefix] = js.native
+  val UIDFork: FC[PropsWithChildren[WithPrefix]] = js.native
   
   @JSImport("react-uid", "UIDReset")
   @js.native
-  val UIDReset: SFC[WithPrefix] = js.native
+  val UIDReset: FC[PropsWithChildren[WithPrefix]] = js.native
   
   @JSImport("react-uid", "UID")
   @js.native
-  class UID_ protected () extends UID {
+  open class UID_ protected () extends UID {
     def this(props: UIDProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: UIDProps, context: js.Any) = this()
+    def this(props: UIDProps, context: Any) = this()
   }
   
-  inline def generateUID(): js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUID")().asInstanceOf[js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]]
+  inline def generateUID(): js.Function2[/* item */ Any, /* index */ js.UndefOr[Double], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUID")().asInstanceOf[js.Function2[/* item */ Any, /* index */ js.UndefOr[Double], String]]
   
-  inline def uid(item: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")(item.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def uid(item: js.Any, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("uid")(item.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def uid(item: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def uid(item: Any, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("uid")(item.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def useUID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useUID")().asInstanceOf[String]
   

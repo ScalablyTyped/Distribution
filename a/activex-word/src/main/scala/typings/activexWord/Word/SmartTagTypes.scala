@@ -12,9 +12,9 @@ trait SmartTagTypes extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): SmartTagType
+  def Item(Index: Any): SmartTagType
   
-  val Parent: js.Any
+  val Parent: Any
   
   def ReloadAll(): Unit
   
@@ -27,8 +27,8 @@ object SmartTagTypes {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => SmartTagType,
-    Parent: js.Any,
+    Item: Any => SmartTagType,
+    Parent: Any,
     ReloadAll: () => Unit,
     WordDotSmartTagTypes_typekey: SmartTagTypes
   ): SmartTagTypes = {
@@ -45,9 +45,9 @@ object SmartTagTypes {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => SmartTagType): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => SmartTagType): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReloadAll(value: () => Unit): Self = StObject.set(x, "ReloadAll", js.Any.fromFunction0(value))
     

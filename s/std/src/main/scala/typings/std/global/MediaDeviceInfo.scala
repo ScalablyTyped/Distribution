@@ -8,22 +8,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MediaDeviceInfo")
 @js.native
-class MediaDeviceInfo ()
+/* standard dom */
+open class MediaDeviceInfo ()
   extends StObject
      with typings.std.MediaDeviceInfo {
   
+  /* standard dom */
   /* CompleteClass */
   override val deviceId: java.lang.String = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val groupId: java.lang.String = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val kind: MediaDeviceKind = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val label: java.lang.String = js.native
   
+  /* standard dom */
   /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  override def toJSON(): Any = js.native
 }

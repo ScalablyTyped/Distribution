@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("rc-collapse", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.rcCollapse.collapseMod.default {
     def this(props: CollapseProps) = this()
   }
@@ -25,7 +25,7 @@ object mod {
     /* was `typeof CollapsePanel` */
     @JSImport("rc-collapse", "default.Panel")
     @js.native
-    class Panel ()
+    open class Panel ()
       extends typings.rcCollapse.collapseMod.default.Panel
     /* was `typeof CollapsePanel` */
     object Panel {
@@ -93,7 +93,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rc-collapse", "Panel")
   @js.native
-  class Panel ()
+  open class Panel ()
     extends typings.rcCollapse.panelMod.default
   @JSImport("rc-collapse", "Panel")
   @js.native

@@ -1,13 +1,13 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.dataMod._Format
+import typings.vegaTypings.dataMod.Format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Parse
   extends StObject
-     with _Format {
+     with Format {
   
   var parse: typings.vegaTypings.dataMod.Parse
 }

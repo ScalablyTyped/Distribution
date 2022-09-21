@@ -65,7 +65,7 @@ object IQueryAPIOptions {
     
     inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    inline def setOrderByVarargs(value: String*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
+    inline def setOrderByVarargs(value: String*): Self = StObject.set(x, "orderBy", js.Array(value*))
     
     inline def setQueryUrl(value: String): Self = StObject.set(x, "queryUrl", value.asInstanceOf[js.Any])
     
@@ -73,7 +73,7 @@ object IQueryAPIOptions {
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    inline def setSelectVarargs(value: String*): Self = StObject.set(x, "select", js.Array(value :_*))
+    inline def setSelectVarargs(value: String*): Self = StObject.set(x, "select", js.Array(value*))
     
     inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     

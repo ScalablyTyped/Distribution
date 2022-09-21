@@ -40,7 +40,7 @@ object Enumeration {
   
   @JSGlobal("Windows.Devices.Enumeration.DeviceInformation")
   @js.native
-  class DeviceInformation ()
+  open class DeviceInformation ()
     extends StObject
        with typings.winrt.Windows.Devices.Enumeration.DeviceInformation {
     
@@ -66,7 +66,7 @@ object Enumeration {
     var name: String = js.native
     
     /* CompleteClass */
-    var properties: IMapView[String, js.Any] = js.native
+    var properties: IMapView[String, Any] = js.native
     
     /* CompleteClass */
     override def update(updateInfo: typings.winrt.Windows.Devices.Enumeration.DeviceInformationUpdate): Unit = js.native
@@ -94,7 +94,7 @@ object Enumeration {
   
   @JSGlobal("Windows.Devices.Enumeration.DeviceInformationCollection")
   @js.native
-  class DeviceInformationCollection ()
+  open class DeviceInformationCollection ()
     extends StObject
        with typings.winrt.Windows.Devices.Enumeration.DeviceInformationCollection {
     
@@ -104,7 +104,7 @@ object Enumeration {
   
   @JSGlobal("Windows.Devices.Enumeration.DeviceInformationUpdate")
   @js.native
-  class DeviceInformationUpdate ()
+  open class DeviceInformationUpdate ()
     extends StObject
        with typings.winrt.Windows.Devices.Enumeration.DeviceInformationUpdate {
     
@@ -112,12 +112,12 @@ object Enumeration {
     var id: String = js.native
     
     /* CompleteClass */
-    var properties: IMapView[String, js.Any] = js.native
+    var properties: IMapView[String, Any] = js.native
   }
   
   @JSGlobal("Windows.Devices.Enumeration.DeviceThumbnail")
   @js.native
-  class DeviceThumbnail ()
+  open class DeviceThumbnail ()
     extends StObject
        with typings.winrt.Windows.Devices.Enumeration.DeviceThumbnail {
     
@@ -166,24 +166,24 @@ object Enumeration {
   
   @JSGlobal("Windows.Devices.Enumeration.DeviceWatcher")
   @js.native
-  class DeviceWatcher ()
+  open class DeviceWatcher ()
     extends StObject
        with typings.winrt.Windows.Devices.Enumeration.DeviceWatcher {
     
     /* CompleteClass */
-    var onadded: js.Any = js.native
+    var onadded: Any = js.native
     
     /* CompleteClass */
-    var onenumerationcompleted: js.Any = js.native
+    var onenumerationcompleted: Any = js.native
     
     /* CompleteClass */
-    var onremoved: js.Any = js.native
+    var onremoved: Any = js.native
     
     /* CompleteClass */
-    var onstopped: js.Any = js.native
+    var onstopped: Any = js.native
     
     /* CompleteClass */
-    var onupdated: js.Any = js.native
+    var onupdated: Any = js.native
     
     /* CompleteClass */
     override def start(): Unit = js.native
@@ -217,7 +217,7 @@ object Enumeration {
   
   @JSGlobal("Windows.Devices.Enumeration.EnclosureLocation")
   @js.native
-  class EnclosureLocation ()
+  open class EnclosureLocation ()
     extends StObject
        with typings.winrt.Windows.Devices.Enumeration.EnclosureLocation {
     
@@ -257,7 +257,7 @@ object Enumeration {
     
     @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObject")
     @js.native
-    class PnpObject ()
+    open class PnpObject ()
       extends StObject
          with typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObject {
       
@@ -265,7 +265,7 @@ object Enumeration {
       var id: String = js.native
       
       /* CompleteClass */
-      var properties: IMapView[String, js.Any] = js.native
+      var properties: IMapView[String, Any] = js.native
       
       /* CompleteClass */
       var `type`: PnpObjectType = js.native
@@ -291,7 +291,7 @@ object Enumeration {
     
     @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObjectCollection")
     @js.native
-    class PnpObjectCollection ()
+    open class PnpObjectCollection ()
       extends StObject
          with typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectCollection {
       
@@ -319,7 +319,7 @@ object Enumeration {
     
     @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObjectUpdate")
     @js.native
-    class PnpObjectUpdate ()
+    open class PnpObjectUpdate ()
       extends StObject
          with typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectUpdate {
       
@@ -327,7 +327,7 @@ object Enumeration {
       var id: String = js.native
       
       /* CompleteClass */
-      var properties: IMapView[String, js.Any] = js.native
+      var properties: IMapView[String, Any] = js.native
       
       /* CompleteClass */
       var `type`: PnpObjectType = js.native
@@ -335,24 +335,24 @@ object Enumeration {
     
     @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObjectWatcher")
     @js.native
-    class PnpObjectWatcher ()
+    open class PnpObjectWatcher ()
       extends StObject
          with typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher {
       
       /* CompleteClass */
-      var onadded: js.Any = js.native
+      var onadded: Any = js.native
       
       /* CompleteClass */
-      var onenumerationcompleted: js.Any = js.native
+      var onenumerationcompleted: Any = js.native
       
       /* CompleteClass */
-      var onremoved: js.Any = js.native
+      var onremoved: Any = js.native
       
       /* CompleteClass */
-      var onstopped: js.Any = js.native
+      var onstopped: Any = js.native
       
       /* CompleteClass */
-      var onupdated: js.Any = js.native
+      var onupdated: Any = js.native
       
       /* CompleteClass */
       override def start(): Unit = js.native

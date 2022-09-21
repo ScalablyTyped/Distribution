@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3Location extends StObject {
   
   /**
-    * The S3 bucket name.
+    * The Amazon S3 bucket name.
     */
   var Bucket: typings.awsSdk.databrewMod.Bucket
+  
+  /**
+    * The Amazon Web Services account ID of the bucket owner.
+    */
+  var BucketOwner: js.UndefOr[typings.awsSdk.databrewMod.BucketOwner] = js.undefined
   
   /**
     * The unique name of the object in the bucket.
@@ -26,6 +31,10 @@ object S3Location {
   extension [Self <: S3Location](x: Self) {
     
     inline def setBucket(value: Bucket): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    
+    inline def setBucketOwner(value: BucketOwner): Self = StObject.set(x, "BucketOwner", value.asInstanceOf[js.Any])
+    
+    inline def setBucketOwnerUndefined: Self = StObject.set(x, "BucketOwner", js.undefined)
     
     inline def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

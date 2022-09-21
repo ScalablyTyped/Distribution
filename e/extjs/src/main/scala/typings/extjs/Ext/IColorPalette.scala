@@ -26,7 +26,7 @@ trait IColorPalette
   var getValue: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Config Option] (Function) */
-  var handler: js.UndefOr[js.Any] = js.undefined
+  var handler: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var itemCls: js.UndefOr[java.lang.String] = js.undefined
@@ -36,7 +36,7 @@ trait IColorPalette
   var onRender_IColorPalette: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
   
   /** [Method] Selects the specified color in the picker fires the select event
     * @param color String A valid 6-digit color hex code (# will be stripped if included)
@@ -85,7 +85,7 @@ object IColorPalette {
     
     inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
-    inline def setHandler(value: js.Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
@@ -97,7 +97,7 @@ object IColorPalette {
     
     inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     

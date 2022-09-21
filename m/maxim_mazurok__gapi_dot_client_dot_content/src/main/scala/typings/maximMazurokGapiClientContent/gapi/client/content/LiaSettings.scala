@@ -32,7 +32,7 @@ object LiaSettings {
     
     inline def setCountrySettingsUndefined: Self = StObject.set(x, "countrySettings", js.undefined)
     
-    inline def setCountrySettingsVarargs(value: LiaCountrySettings*): Self = StObject.set(x, "countrySettings", js.Array(value :_*))
+    inline def setCountrySettingsVarargs(value: LiaCountrySettings*): Self = StObject.set(x, "countrySettings", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -24,6 +24,6 @@ object PowerFormsFormDataResponse {
     
     inline def setEnvelopesUndefined: Self = StObject.set(x, "envelopes", js.undefined)
     
-    inline def setEnvelopesVarargs(value: PowerFormFormDataEnvelope*): Self = StObject.set(x, "envelopes", js.Array(value :_*))
+    inline def setEnvelopesVarargs(value: PowerFormFormDataEnvelope*): Self = StObject.set(x, "envelopes", js.Array(value*))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.AppContextSite")
 @js.native
-class AppContextSite protected ()
+open class AppContextSite protected ()
   extends StObject
      with typings.sharepoint.SP.AppContextSite {
   def this(context: typings.sharepoint.SP.ClientRuntimeContext, siteUrl: String) = this()

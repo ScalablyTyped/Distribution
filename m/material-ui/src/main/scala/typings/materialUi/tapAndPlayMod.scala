@@ -10,10 +10,10 @@ object tapAndPlayMod {
   
   @JSImport("material-ui/svg-icons/notification/tap-and-play", JSImport.Default)
   @js.native
-  class default () extends NotificationTapAndPlay
+  open class default () extends NotificationTapAndPlay
   
   @JSImport("material-ui/svg-icons/notification/tap-and-play", "NotificationTapAndPlay")
   @js.native
-  class NotificationTapAndPlay ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationTapAndPlay ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

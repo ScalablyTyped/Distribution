@@ -10,10 +10,10 @@ Utility to help you polyfill the Node.js runtime when the Intl APIs are missing,
 | ------------------ | :-------------: |
 | Full name          | intl-locales-supported |
 | Keywords           | i18n, intl, internationalization, localization, globalization |
-| # releases         | 42 |
-| # dependents       | 34 |
-| # downloads        | 8419140 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 368627.6666666667 |
+| # stars            | 13242.0 |
 
 ## Links
 - [Homepage](https://github.com/formatjs/formatjs)

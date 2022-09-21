@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class KMS ()
+open class KMS ()
   extends typings.awsSdk.mod.KMS {
   def this(options: ClientConfiguration) = this()
 }

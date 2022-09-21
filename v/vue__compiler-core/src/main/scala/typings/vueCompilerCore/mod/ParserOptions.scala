@@ -1,13 +1,19 @@
 package typings.vueCompilerCore.mod
 
+import typings.vueCompilerCore.vueCompilerCoreStrings.condense
+import typings.vueCompilerCore.vueCompilerCoreStrings.preserve
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ParserOptions extends StObject {
+trait ParserOptions
+  extends StObject
+     with ErrorHandlingOptions
+     with CompilerCompatOptions {
   
   /**
-    * Keep comments in the templates AST, even in production
+    * Whether to keep comments in the templates AST.
+    * This defaults to `true` in development and `false` in production builds.
     */
   var comments: js.UndefOr[Boolean] = js.undefined
   
@@ -58,7 +64,10 @@ trait ParserOptions extends StObject {
     */
   var isVoidTag: js.UndefOr[js.Function1[/* tag */ String, Boolean]] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* error */ CompilerError, Unit]] = js.undefined
+  /**
+    * Whitespace handling strategy
+    */
+  var whitespace: js.UndefOr[preserve | condense] = js.undefined
 }
 object ParserOptions {
   
@@ -109,8 +118,8 @@ object ParserOptions {
     
     inline def setIsVoidTagUndefined: Self = StObject.set(x, "isVoidTag", js.undefined)
     
-    inline def setOnError(value: /* error */ CompilerError => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setWhitespace(value: preserve | condense): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
     
-    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setWhitespaceUndefined: Self = StObject.set(x, "whitespace", js.undefined)
   }
 }

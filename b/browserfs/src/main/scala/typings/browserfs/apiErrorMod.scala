@@ -1,18 +1,19 @@
 package typings.browserfs
 
-import typings.node.Buffer
-import typings.node.NodeJS.ErrnoException
+import typings.node.bufferMod.global.Buffer
+import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiErrorMod {
   
-  @JSImport("browserfs/dist/node/core/api_error", "ApiError")
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException * / any */ @JSImport("browserfs/dist/node/core/api_error", "ApiError")
   @js.native
-  class ApiError protected ()
+  open class ApiError protected ()
     extends StObject
-       with ErrnoException {
+       with Error {
     /**
       * Represents a BrowserFS error. Passed back to applications after a failed
       * call to the BrowserFS API.
@@ -33,22 +34,23 @@ object apiErrorMod {
       */
     def bufferSize(): Double = js.native
     
-    @JSName("code")
-    var code_ApiError: String = js.native
+    var code: String = js.native
     
-    @JSName("errno")
-    var errno_ApiError: ErrorCode = js.native
+    var errno: ErrorCode = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
-    @JSName("syscall")
-    var syscall_ApiError: String = js.native
+    var path: js.UndefOr[String] = js.native
     
-    def toJSON(): js.Any = js.native
+    var syscall: String = js.native
+    
+    def toJSON(): Any = js.native
     
     /**
       * Writes the API error into a buffer.
@@ -85,7 +87,7 @@ object apiErrorMod {
     inline def fromBuffer(buffer: Buffer): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[ApiError]
     inline def fromBuffer(buffer: Buffer, i: Double): ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[ApiError]
     
-    inline def fromJSON(json: js.Any): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ApiError]
+    inline def fromJSON(json: Any): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ApiError]
   }
   
   @js.native

@@ -1,9 +1,5 @@
 package typings.googleapis.manufacturersV1Mod.manufacturersV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +9,12 @@ trait ParamsResourceAccountsProductsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The information to be included in the response. Only sections listed here
-    * will be returned.
+    * The information to be included in the response. Only sections listed here will be returned.
     */
   var include: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Maximum number of product statuses to return in the response, used for
-    * paging.
+    * Maximum number of product statuses to return in the response, used for paging.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
@@ -35,8 +24,7 @@ trait ParamsResourceAccountsProductsList
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Parent ID in the format `accounts/{account_id}`.  `account_id` - The ID
-    * of the Manufacturer Center account.
+    * Parent ID in the format `accounts/{account_id\}`. `account_id` - The ID of the Manufacturer Center account.
     */
   var parent: js.UndefOr[String] = js.undefined
 }
@@ -49,15 +37,11 @@ object ParamsResourceAccountsProductsList {
   
   extension [Self <: ParamsResourceAccountsProductsList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

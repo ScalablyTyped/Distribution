@@ -21,8 +21,8 @@ object mod {
   
   @JSImport("@hig/button", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Props, js.Object, js.Any]
+  open class default ()
+    extends Component[Props, js.Object, Any]
   
   @JSImport("@hig/button", "availableTargets")
   @js.native
@@ -102,7 +102,7 @@ object mod {
     inline def shrink: typings.higButton.higButtonStrings.shrink = "shrink".asInstanceOf[typings.higButton.higButtonStrings.shrink]
   }
   
-  type Button = Component[Props, js.Object, js.Any]
+  type Button = Component[Props, js.Object, Any]
   
   type Callback = js.Function0[Unit]
   
@@ -142,7 +142,7 @@ object mod {
     var onMouseUp: js.UndefOr[Callback] = js.undefined
     
     /** Adds custom/overriding styles */
-    var stylesheet: js.UndefOr[js.Any] = js.undefined
+    var stylesheet: js.UndefOr[Any] = js.undefined
     
     /** Specifies where to display the linked URL */
     var target: js.UndefOr[AvailableTargets_] = js.undefined
@@ -209,7 +209,7 @@ object mod {
       
       inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
-      inline def setStylesheet(value: js.Any): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
+      inline def setStylesheet(value: Any): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
       
       inline def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
       

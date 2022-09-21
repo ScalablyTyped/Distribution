@@ -31,7 +31,7 @@ object XRangeHighlighter {
     acquire: () => Unit,
     addSelectionChangeListener: XSelectionChangeListener => Unit,
     getSelectedRanges: () => SafeArray[HighlightedRange],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeSelectionChangeListener: XSelectionChangeListener => Unit
   ): XRangeHighlighter = {

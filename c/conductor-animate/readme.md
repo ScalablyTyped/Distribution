@@ -10,10 +10,10 @@ Orchestrating complex page layout animations with a flick of the wrist.
 | ------------------ | :-------------: |
 | Full name          | conductor-animate |
 | Keywords           | conductor, conductor-animate, react-transition-group, spring, animate, animations, react |
-| # releases         | 13 |
-| # dependents       | 0 |
-| # downloads        | 626 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 77.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/TaeKimJR/conductor-animate#readme)

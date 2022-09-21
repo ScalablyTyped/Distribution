@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "Popup")
 @js.native
-class Popup () extends Evented {
+open class Popup () extends Evented {
   def this(options: PopupOptions) = this()
   
   /**
@@ -58,6 +58,15 @@ class Popup () extends Evented {
   def setLngLat(lnglat: LngLatLike): this.type = js.native
   
   def setMaxWidth(maxWidth: String): this.type = js.native
+  
+  /**
+    * Sets the popup's offset.
+    *
+    * @param offset Sets the popup's offset.
+    * @returns {Popup} `this`
+    */
+  def setOffset(): this.type = js.native
+  def setOffset(offset: Offset): this.type = js.native
   
   def setText(text: String): this.type = js.native
   

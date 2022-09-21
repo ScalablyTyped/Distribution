@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BrokerSummary extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the broker.
+    * The broker's Amazon Resource Name (ARN).
     */
   var BrokerArn: js.UndefOr[string] = js.undefined
   
@@ -17,29 +17,29 @@ trait BrokerSummary extends StObject {
   var BrokerId: js.UndefOr[string] = js.undefined
   
   /**
-    * The name of the broker. This value must be unique in your AWS account, 1-50 characters long, must contain only letters, numbers, dashes, and underscores, and must not contain whitespaces, brackets, wildcard characters, or special characters.
+    * The broker's name. This value is unique in your AWS account, 1-50 characters long, and containing only letters, numbers, dashes, and underscores, and must not contain white spaces, brackets, wildcard characters, or special characters.
     */
   var BrokerName: js.UndefOr[string] = js.undefined
   
   /**
-    * The status of the broker.
+    * The broker's status.
     */
   var BrokerState: js.UndefOr[typings.awsSdk.mqMod.BrokerState] = js.undefined
   
   /**
     * The time when the broker was created.
     */
-  var Created: js.UndefOr[timestampIso8601] = js.undefined
+  var Created: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Required. The deployment mode of the broker.
+    * The broker's deployment mode.
     */
-  var DeploymentMode: js.UndefOr[typings.awsSdk.mqMod.DeploymentMode] = js.undefined
+  var DeploymentMode: typings.awsSdk.mqMod.DeploymentMode
   
   /**
-    * Required. The type of broker engine.
+    * The type of broker engine.
     */
-  var EngineType: js.UndefOr[typings.awsSdk.mqMod.EngineType] = js.undefined
+  var EngineType: typings.awsSdk.mqMod.EngineType
   
   /**
     * The broker's instance type.
@@ -48,8 +48,8 @@ trait BrokerSummary extends StObject {
 }
 object BrokerSummary {
   
-  inline def apply(): BrokerSummary = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(DeploymentMode: DeploymentMode, EngineType: EngineType): BrokerSummary = {
+    val __obj = js.Dynamic.literal(DeploymentMode = DeploymentMode.asInstanceOf[js.Any], EngineType = EngineType.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerSummary]
   }
   
@@ -71,17 +71,13 @@ object BrokerSummary {
     
     inline def setBrokerStateUndefined: Self = StObject.set(x, "BrokerState", js.undefined)
     
-    inline def setCreated(value: timestampIso8601): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
     
     inline def setDeploymentMode(value: DeploymentMode): Self = StObject.set(x, "DeploymentMode", value.asInstanceOf[js.Any])
     
-    inline def setDeploymentModeUndefined: Self = StObject.set(x, "DeploymentMode", js.undefined)
-    
     inline def setEngineType(value: EngineType): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
-    
-    inline def setEngineTypeUndefined: Self = StObject.set(x, "EngineType", js.undefined)
     
     inline def setHostInstanceType(value: string): Self = StObject.set(x, "HostInstanceType", value.asInstanceOf[js.Any])
     

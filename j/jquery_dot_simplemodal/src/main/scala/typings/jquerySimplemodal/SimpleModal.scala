@@ -13,7 +13,7 @@ object SimpleModal {
     
     var container: JQuery
     
-    var data: js.Any
+    var data: Any
     
     var iframe: JQuery
     
@@ -21,7 +21,7 @@ object SimpleModal {
   }
   object SimpleModalDialog {
     
-    inline def apply(container: JQuery, data: js.Any, iframe: JQuery, overlay: JQuery): SimpleModalDialog = {
+    inline def apply(container: JQuery, data: Any, iframe: JQuery, overlay: JQuery): SimpleModalDialog = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], overlay = overlay.asInstanceOf[js.Any])
       __obj.asInstanceOf[SimpleModalDialog]
     }
@@ -30,7 +30,7 @@ object SimpleModal {
       
       inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setIframe(value: JQuery): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
       
@@ -116,7 +116,7 @@ object SimpleModal {
     var persist: js.UndefOr[Boolean] = js.undefined
     
     /** Position of container [top, left]. Can be number of pixels or percentage. Default: null. */
-    var position: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var position: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Starting z-index value. Default: 1000. */
     var zIndex: js.UndefOr[Double] = js.undefined
@@ -230,11 +230,11 @@ object SimpleModal {
       
       inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
       
-      inline def setPosition(value: js.Array[js.Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: js.Array[Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+      inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
       
       inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       

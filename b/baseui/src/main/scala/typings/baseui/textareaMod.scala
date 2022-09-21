@@ -1,153 +1,162 @@
 package typings.baseui
 
-import typings.baseui.baseuiStrings.both
+import org.scalablytyped.runtime.Shortcut
 import typings.baseui.baseuiStrings.change_
-import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
+import typings.baseui.baseuiStrings.div
 import typings.baseui.baseuiStrings.large_
-import typings.baseui.baseuiStrings.left
-import typings.baseui.baseuiStrings.none
-import typings.baseui.baseuiStrings.right
-import typings.baseui.inputMod.BaseInputProps
-import typings.baseui.inputMod.State
-import typings.baseui.inputMod.StatefulContainerProps
-import typings.react.mod.Component
-import typings.react.mod.FC
-import typings.react.mod.ReactNode
+import typings.baseui.baseuiStrings.textarea
+import typings.baseui.inputTypesMod.StateReducer
+import typings.baseui.textareaStatefulContainerMod.default
+import typings.baseui.textareaTypesMod.SharedStyleProps
+import typings.baseui.textareaTypesMod.StatefulTextareaProps
+import typings.react.mod.global.JSX.Element
+import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
-import typings.styletronReact.mod.StyletronComponent
+import typings.styletronReact.typesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textareaMod {
   
-  trait ADJOINED extends StObject {
-    
-    var both: typings.baseui.baseuiStrings.both
-    
-    var left: typings.baseui.baseuiStrings.left
-    
-    var none: typings.baseui.baseuiStrings.none
-    
-    var right: typings.baseui.baseuiStrings.right
-  }
-  object ADJOINED {
-    
-    @JSImport("baseui/textarea", "ADJOINED")
-    @js.native
-    val ^ : ADJOINED = js.native
-    
-    extension [Self <: ADJOINED](x: Self) {
-      
-      inline def setBoth(value: both): Self = StObject.set(x, "both", value.asInstanceOf[js.Any])
-      
-      inline def setLeft(value: left): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
-      
-      inline def setNone(value: none): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
-      
-      inline def setRight(value: right): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait SIZE extends StObject {
-    
-    var default: default_
-    
-    var compact: typings.baseui.baseuiStrings.compact
-    
-    var large: large_
-  }
-  object SIZE {
-    
-    @JSImport("baseui/textarea", "SIZE")
-    @js.native
-    val ^ : SIZE = js.native
-    
-    extension [Self <: SIZE](x: Self) {
-      
-      inline def setCompact(value: compact): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
-      
-      inline def setDefault(value: default_): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
-      
-      inline def setLarge(value: large_): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  @JSImport("baseui/textarea", "STATE_CHANGE_TYPE")
+  @JSImport("baseui/textarea", JSImport.Namespace)
   @js.native
-  val STATE_CHANGE_TYPE: typings.baseui.inputMod.STATE_CHANGE_TYPE = js.native
+  val ^ : js.Any = js.native
+  
+  object SIZE extends Shortcut {
+    
+    @JSImport("baseui/textarea", "SIZE.default")
+    @js.native
+    val default: default_ = js.native
+    
+    @JSImport("baseui/textarea", "SIZE.compact")
+    @js.native
+    val compact: typings.baseui.baseuiStrings.compact = js.native
+    
+    @JSImport("baseui/textarea", "SIZE.large")
+    @js.native
+    val large: large_ = js.native
+    
+    @JSImport("baseui/textarea", "SIZE.mini")
+    @js.native
+    val mini: typings.baseui.baseuiStrings.mini = js.native
+    
+    type _To = default_
+    
+    /* This means you don't have to write `default`, but can instead just say `SIZE.foo` */
+    override def _to: default_ = default
+  }
+  
+  object STATE_CHANGE_TYPE {
+    
+    @JSImport("baseui/textarea", "STATE_CHANGE_TYPE.change")
+    @js.native
+    val change: change_ = js.native
+  }
   
   @JSImport("baseui/textarea", "StatefulContainer")
   @js.native
-  val StatefulContainer: FC[StatefulContainerProps] = js.native
+  open class StatefulContainer[T /* <: HTMLInputElement | HTMLTextAreaElement */] () extends default[T]
+  object StatefulContainer {
+    
+    /* static member */
+    object defaultProps {
+      
+      @JSImport("baseui/textarea", "StatefulContainer.defaultProps")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      inline def onChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")().asInstanceOf[Unit]
+      
+      inline def onClear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onClear")().asInstanceOf[Unit]
+      
+      @JSImport("baseui/textarea", "StatefulContainer.defaultProps.stateReducer")
+      @js.native
+      def stateReducer: StateReducer = js.native
+      inline def stateReducer_=(x: StateReducer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stateReducer")(x.asInstanceOf[js.Any])
+    }
+  }
   
-  @JSImport("baseui/textarea", "StatefulTextarea")
-  @js.native
-  val StatefulTextarea: FC[StatefulTextareaProps] = js.native
+  inline def StatefulTextarea(props: StatefulTextareaProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StatefulTextarea")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("baseui/textarea", "StyledTextarea")
   @js.native
-  val StyledTextarea: StyletronComponent[js.Any] = js.native
+  val StyledTextarea: StyletronComponent[textarea, SharedStyleProps] = js.native
   
   @JSImport("baseui/textarea", "StyledTextareaContainer")
   @js.native
-  val StyledTextareaContainer: StyletronComponent[js.Any] = js.native
+  val StyledTextareaContainer: StyletronComponent[div, SharedStyleProps] = js.native
   
   @JSImport("baseui/textarea", "Textarea")
   @js.native
-  class Textarea protected ()
-    extends Component[TextareaProps, js.Object, js.Any] {
-    def this(props: TextareaProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: TextareaProps, context: js.Any) = this()
-  }
-  
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.baseui.inputMod.StatefulContainerProps because var conflicts: onChange. Inlined children, initialState, stateReducer */ trait StatefulTextareaProps
-    extends StObject
-       with TextareaProps {
+  open class Textarea ()
+    extends typings.baseui.textareaTextareaMod.default
+  object Textarea {
     
-    var children: js.UndefOr[ReactNode] = js.undefined
-    
-    var initialState: js.UndefOr[State] = js.undefined
-    
-    var stateReducer: js.UndefOr[js.Function3[change_, /* nextState */ State, /* currentState */ State, State]] = js.undefined
-  }
-  object StatefulTextareaProps {
-    
-    inline def apply(): StatefulTextareaProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[StatefulTextareaProps]
-    }
-    
-    extension [Self <: StatefulTextareaProps](x: Self) {
+    /* static member */
+    object defaultProps {
       
-      inline def setChildren(value: scala.Nothing | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      @JSImport("baseui/textarea", "Textarea.defaultProps")
+      @js.native
+      val ^ : js.Any = js.native
       
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      @JSImport("baseui/textarea", "Textarea.defaultProps.autoFocus")
+      @js.native
+      def autoFocus: Boolean = js.native
+      inline def autoFocus_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoFocus")(x.asInstanceOf[js.Any])
       
-      inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      @JSImport("baseui/textarea", "Textarea.defaultProps.disabled")
+      @js.native
+      def disabled: Boolean = js.native
+      inline def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
       
-      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      @JSImport("baseui/textarea", "Textarea.defaultProps.error")
+      @js.native
+      def error: Boolean = js.native
+      inline def error_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("error")(x.asInstanceOf[js.Any])
       
-      inline def setStateReducer(value: (change_, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
+      @JSImport("baseui/textarea", "Textarea.defaultProps.name")
+      @js.native
+      def name: String = js.native
+      inline def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
       
-      inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
-    }
-  }
-  
-  trait TextareaProps
-    extends StObject
-       with BaseInputProps[HTMLTextAreaElement]
-  object TextareaProps {
-    
-    inline def apply(): TextareaProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TextareaProps]
+      inline def onBlur(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBlur")().asInstanceOf[Unit]
+      
+      inline def onChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")().asInstanceOf[Unit]
+      
+      inline def onFocus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFocus")().asInstanceOf[Unit]
+      
+      inline def onKeyDown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onKeyDown")().asInstanceOf[Unit]
+      
+      inline def onKeyPress(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onKeyPress")().asInstanceOf[Unit]
+      
+      inline def onKeyUp(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onKeyUp")().asInstanceOf[Unit]
+      
+      @JSImport("baseui/textarea", "Textarea.defaultProps.placeholder")
+      @js.native
+      def placeholder: String = js.native
+      inline def placeholder_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("placeholder")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/textarea", "Textarea.defaultProps.readOnly")
+      @js.native
+      def readOnly: Boolean = js.native
+      inline def readOnly_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readOnly")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/textarea", "Textarea.defaultProps.required")
+      @js.native
+      def required: Boolean = js.native
+      inline def required_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("required")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/textarea", "Textarea.defaultProps.rows")
+      @js.native
+      def rows: Double = js.native
+      inline def rows_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rows")(x.asInstanceOf[js.Any])
+      
+      @JSImport("baseui/textarea", "Textarea.defaultProps.size")
+      @js.native
+      def size: default_ = js.native
+      inline def size_=(x: default_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
     }
   }
 }

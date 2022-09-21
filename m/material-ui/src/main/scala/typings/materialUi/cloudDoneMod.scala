@@ -10,10 +10,10 @@ object cloudDoneMod {
   
   @JSImport("material-ui/svg-icons/file/cloud-done", JSImport.Default)
   @js.native
-  class default () extends FileCloudDone
+  open class default () extends FileCloudDone
   
   @JSImport("material-ui/svg-icons/file/cloud-done", "FileCloudDone")
   @js.native
-  class FileCloudDone ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class FileCloudDone ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

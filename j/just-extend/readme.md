@@ -1,7 +1,7 @@
 
 # Scala.js typings for just-extend
 
-Typings are for version 1.1
+Typings are for version 6.1.1
 
 ## Library description:
 extend an object
@@ -10,10 +10,10 @@ extend an object
 | ------------------ | :-------------: |
 | Full name          | just-extend |
 | Keywords           | object, assign, clone, copy, merge, deep-copy, extend, no-dependencies, just |
-| # releases         | 3 |
-| # dependents       | 53 |
-| # downloads        | 106594128 |
-| # stars            | 1 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5903290666666666E7 |
+| # stars            | 4414.0 |
 
 ## Links
 - [Homepage](https://github.com/angus-c/just#readme)
@@ -24,7 +24,7 @@ extend an object
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

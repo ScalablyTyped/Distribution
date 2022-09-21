@@ -31,6 +31,6 @@ object ListSecurityPoliciesResponse {
     
     inline def setSecurityPolicyNames(value: SecurityPolicyNames): Self = StObject.set(x, "SecurityPolicyNames", value.asInstanceOf[js.Any])
     
-    inline def setSecurityPolicyNamesVarargs(value: SecurityPolicyName*): Self = StObject.set(x, "SecurityPolicyNames", js.Array(value :_*))
+    inline def setSecurityPolicyNamesVarargs(value: SecurityPolicyName*): Self = StObject.set(x, "SecurityPolicyNames", js.Array(value*))
   }
 }

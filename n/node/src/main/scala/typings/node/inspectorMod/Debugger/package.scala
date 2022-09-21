@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Breakpoint identifier.
   */
-type BreakpointId = java.lang.String
+type BreakpointId = String
 
 /**
   * Call frame identifier.
   */
-type CallFrameId = java.lang.String
+type CallFrameId = String

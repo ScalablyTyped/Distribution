@@ -17,7 +17,7 @@ object eventMod {
   abstract class Event protected () extends StObject {
     /* protected */ def this(eventName: EEventName) = this()
     
-    /* protected */ def copyMember(destination: Event, source: Event, memberArr: js.Array[js.Any]): Event = js.native
+    /* protected */ def copyMember(destination: Event, source: Event, memberArr: js.Array[Any]): Event = js.native
     
     var currentTarget: HTMLElement | EntityObject = js.native
     

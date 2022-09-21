@@ -15,7 +15,7 @@ trait HidInputReport extends StObject {
   /** Retrieves the data associated with a given input report. */
   var data: IBuffer
   
-  var getBooleanControl: js.Any
+  var getBooleanControl: Any
   
   /* unmapped type */
   /**
@@ -25,7 +25,7 @@ trait HidInputReport extends StObject {
     */
   def getBooleanControlByDescription(controlDescription: HidBooleanControlDescription): HidBooleanControl
   
-  var getNumericControl: js.Any
+  var getNumericControl: Any
   
   /* unmapped type */
   /**
@@ -46,9 +46,9 @@ object HidInputReport {
   inline def apply(
     activatedBooleanControls: IVectorView[HidBooleanControl],
     data: IBuffer,
-    getBooleanControl: js.Any,
+    getBooleanControl: Any,
     getBooleanControlByDescription: HidBooleanControlDescription => HidBooleanControl,
-    getNumericControl: js.Any,
+    getNumericControl: Any,
     getNumericControlByDescription: HidNumericControlDescription => HidNumericControl,
     id: Double,
     transitionedBooleanControls: IVectorView[HidBooleanControl]
@@ -63,11 +63,11 @@ object HidInputReport {
     
     inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setGetBooleanControl(value: js.Any): Self = StObject.set(x, "getBooleanControl", value.asInstanceOf[js.Any])
+    inline def setGetBooleanControl(value: Any): Self = StObject.set(x, "getBooleanControl", value.asInstanceOf[js.Any])
     
     inline def setGetBooleanControlByDescription(value: HidBooleanControlDescription => HidBooleanControl): Self = StObject.set(x, "getBooleanControlByDescription", js.Any.fromFunction1(value))
     
-    inline def setGetNumericControl(value: js.Any): Self = StObject.set(x, "getNumericControl", value.asInstanceOf[js.Any])
+    inline def setGetNumericControl(value: Any): Self = StObject.set(x, "getNumericControl", value.asInstanceOf[js.Any])
     
     inline def setGetNumericControlByDescription(value: HidNumericControlDescription => HidNumericControl): Self = StObject.set(x, "getNumericControlByDescription", js.Any.fromFunction1(value))
     

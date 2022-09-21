@@ -29,14 +29,14 @@ trait WebView extends StObject {
     * @param useCallback - Optional. If true the web view waits for the globally available completion function of the web view to be called before terminating. Defaults to false.
     * @see https://docs.scriptable.app/webview/#-evaluatejavascript
     */
-  def evaluateJavaScript(javaScript: String): js.Promise[js.Any] = js.native
-  def evaluateJavaScript(javaScript: String, useCallback: Boolean): js.Promise[js.Any] = js.native
+  def evaluateJavaScript(javaScript: String): js.Promise[Any] = js.native
+  def evaluateJavaScript(javaScript: String, useCallback: Boolean): js.Promise[Any] = js.native
   
   /**
     * _Reads and returns HTML from the loaded website._
     * @see https://docs.scriptable.app/webview/#-gethtml
     */
-  def getHTML(): js.Promise[js.Any] = js.native
+  def getHTML(): js.Promise[Any] = js.native
   
   /**
     * _Loads file in the web view._
@@ -110,5 +110,5 @@ trait WebView extends StObject {
     * will be fulfilled when the page has been loaded.
     * @see https://docs.scriptable.app/webview/#-waitforload
     */
-  def waitForLoad(): js.Promise[js.Any] = js.native
+  def waitForLoad(): js.Promise[Any] = js.native
 }

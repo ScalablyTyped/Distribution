@@ -10,7 +10,7 @@ object parserCoreMod {
   
   @JSImport("markdown-it/lib/parser_core", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Core {
     
@@ -18,7 +18,7 @@ object parserCoreMod {
     var State: Instantiable3[
         /* src */ String, 
         /* md */ MarkdownIt, 
-        /* env */ js.Any, 
+        /* env */ Any, 
         typings.markdownIt.stateCoreMod.^
       ] = js.native
     
@@ -37,7 +37,7 @@ object parserCoreMod {
     var State: Instantiable3[
         /* src */ String, 
         /* md */ MarkdownIt, 
-        /* env */ js.Any, 
+        /* env */ Any, 
         typings.markdownIt.stateCoreMod.^
       ]
     
@@ -54,7 +54,7 @@ object parserCoreMod {
       State: Instantiable3[
           /* src */ String, 
           /* md */ MarkdownIt, 
-          /* env */ js.Any, 
+          /* env */ Any, 
           typings.markdownIt.stateCoreMod.^
         ],
       process: typings.markdownIt.stateCoreMod.^ => Unit,
@@ -74,12 +74,12 @@ object parserCoreMod {
         value: Instantiable3[
               /* src */ String, 
               /* md */ MarkdownIt, 
-              /* env */ js.Any, 
+              /* env */ Any, 
               typings.markdownIt.stateCoreMod.^
             ]
       ): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     }
   }
   
-  type RuleCore = js.Function1[/* state */ typings.markdownIt.stateCoreMod.^, Boolean]
+  type RuleCore = js.Function1[/* state */ typings.markdownIt.stateCoreMod.^, Unit]
 }

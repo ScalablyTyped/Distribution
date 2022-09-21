@@ -73,7 +73,7 @@ object anon {
       
       inline def setGeometries(value: js.Array[Polygon[js.Object] | MultiPolygon[js.Object]]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
       
-      inline def setGeometriesVarargs(value: (Polygon[js.Object] | MultiPolygon[js.Object])*): Self = StObject.set(x, "geometries", js.Array(value :_*))
+      inline def setGeometriesVarargs(value: (Polygon[js.Object] | MultiPolygon[js.Object])*): Self = StObject.set(x, "geometries", js.Array(value*))
       
       inline def setType(value: typings.topojson.topojsonStrings.GeometryCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

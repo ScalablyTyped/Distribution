@@ -29,7 +29,7 @@ trait ActionExecution extends StObject {
   /**
     * The last status change of the action.
     */
-  var lastStatusChange: js.UndefOr[Timestamp] = js.undefined
+  var lastStatusChange: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the user who last changed the pipeline.
@@ -81,7 +81,7 @@ object ActionExecution {
     
     inline def setExternalExecutionUrlUndefined: Self = StObject.set(x, "externalExecutionUrl", js.undefined)
     
-    inline def setLastStatusChange(value: Timestamp): Self = StObject.set(x, "lastStatusChange", value.asInstanceOf[js.Any])
+    inline def setLastStatusChange(value: js.Date): Self = StObject.set(x, "lastStatusChange", value.asInstanceOf[js.Any])
     
     inline def setLastStatusChangeUndefined: Self = StObject.set(x, "lastStatusChange", js.undefined)
     

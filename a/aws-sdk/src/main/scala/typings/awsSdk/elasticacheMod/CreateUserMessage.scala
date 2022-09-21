@@ -7,24 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateUserMessage extends StObject {
   
   /**
-    * Access permissions string used for this user account.
+    * Access permissions string used for this user.
     */
   var AccessString: typings.awsSdk.elasticacheMod.AccessString
   
   /**
-    * Must be Redis. 
+    * The current supported value is Redis. 
     */
   var Engine: EngineType
   
   /**
-    * Indicates a password is not required for this user account.
+    * Indicates a password is not required for this user.
     */
   var NoPasswordRequired: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * Passwords used for this user account. You can create up to two passwords for each user.
+    * Passwords used for this user. You can create up to two passwords for each user.
     */
   var Passwords: js.UndefOr[PasswordListInput] = js.undefined
+  
+  /**
+    * A list of tags to be added to this resource. A tag is a key-value pair. A tag key must be accompanied by a tag value, although null is accepted.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the user.
@@ -57,7 +62,13 @@ object CreateUserMessage {
     
     inline def setPasswordsUndefined: Self = StObject.set(x, "Passwords", js.undefined)
     
-    inline def setPasswordsVarargs(value: String*): Self = StObject.set(x, "Passwords", js.Array(value :_*))
+    inline def setPasswordsVarargs(value: String*): Self = StObject.set(x, "Passwords", js.Array(value*))
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     

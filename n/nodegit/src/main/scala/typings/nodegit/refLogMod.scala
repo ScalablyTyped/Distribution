@@ -11,7 +11,7 @@ object refLogMod {
   
   @JSImport("nodegit/ref-log", "Reflog")
   @js.native
-  class Reflog () extends StObject {
+  open class Reflog () extends StObject {
     
     def append(id: Oid, committer: Signature, msg: String): Double = js.native
     
@@ -41,7 +41,7 @@ object refLogMod {
   
   @JSImport("nodegit/ref-log", "ReflogEntry")
   @js.native
-  class ReflogEntry () extends StObject {
+  open class ReflogEntry () extends StObject {
     
     def committer(): Signature = js.native
     

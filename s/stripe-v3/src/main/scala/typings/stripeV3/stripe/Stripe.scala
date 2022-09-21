@@ -16,6 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Stripe extends StObject {
   
+  def confirmAuBecsDebitPayment(clientSecret: String): js.Promise[PaymentIntentResponse] = js.native
+  def confirmAuBecsDebitPayment(clientSecret: String, options: ConfirmSofortPaymentOptions): js.Promise[PaymentIntentResponse] = js.native
+  
   /**
     * Use stripe.confirmCardPayment when the customer submits your payment form.
     * When called, it will confirm the PaymentIntent with data you provide and
@@ -42,6 +45,9 @@ trait Stripe extends StObject {
   
   def confirmSepaDebitSetup(clientSecret: String): js.Promise[SetupIntentResponse] = js.native
   def confirmSepaDebitSetup(clientSecret: String, data: ConfirmSepaDebitSetupData): js.Promise[SetupIntentResponse] = js.native
+  
+  def confirmSofortPayment(clientSecret: String): js.Promise[PaymentIntentResponse] = js.native
+  def confirmSofortPayment(clientSecret: String, options: ConfirmSofortPaymentOptions): js.Promise[PaymentIntentResponse] = js.native
   
   def createPaymentMethod(data: PaymentMethodData): js.Promise[PaymentMethodResponse] = js.native
   def createPaymentMethod(`type`: paymentMethodType, element: Element): js.Promise[PaymentMethodResponse] = js.native

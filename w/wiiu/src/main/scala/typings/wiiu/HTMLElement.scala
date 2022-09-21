@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLElement extends StObject {
   
   @JSName("addEventListener")
-  def addEventListener_wiiuvideoplayerend(`type`: wiiu_videoplayer_end, listener: js.Function1[/* ev */ CustomEvent[js.Any], js.Any]): Unit = js.native
+  def addEventListener_wiiuvideoplayerend(`type`: wiiu_videoplayer_end, listener: js.Function1[/* ev */ CustomEvent[Any], Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_wiiuvideoplayerend(
     `type`: wiiu_videoplayer_end,
-    listener: js.Function1[/* ev */ CustomEvent[js.Any], js.Any],
+    listener: js.Function1[/* ev */ CustomEvent[Any], Any],
     useCapture: Boolean
   ): Unit = js.native
 }

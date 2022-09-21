@@ -77,7 +77,7 @@ trait ClassMongoCursor
     * 
     * 
     */
-  def map(func: js.Function): js.Array[js.Any] = js.native
+  def map(func: js.Function): js.Array[Any] = js.native
   
   /**
     * 
@@ -129,5 +129,5 @@ trait ClassMongoCursor
     * 
     * 
     */
-  def toArray(): js.Array[js.Any] = js.native
+  def toArray(): js.Array[Any] = js.native
 }

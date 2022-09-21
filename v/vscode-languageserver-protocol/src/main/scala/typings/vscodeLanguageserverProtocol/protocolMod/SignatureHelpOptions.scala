@@ -19,7 +19,7 @@ trait SignatureHelpOptions
   var retriggerCharacters: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * List of characters that trigger signature help.
+    * List of characters that trigger signature help automatically.
     */
   var triggerCharacters: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -36,12 +36,12 @@ object SignatureHelpOptions {
     
     inline def setRetriggerCharactersUndefined: Self = StObject.set(x, "retriggerCharacters", js.undefined)
     
-    inline def setRetriggerCharactersVarargs(value: String*): Self = StObject.set(x, "retriggerCharacters", js.Array(value :_*))
+    inline def setRetriggerCharactersVarargs(value: String*): Self = StObject.set(x, "retriggerCharacters", js.Array(value*))
     
     inline def setTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "triggerCharacters", value.asInstanceOf[js.Any])
     
     inline def setTriggerCharactersUndefined: Self = StObject.set(x, "triggerCharacters", js.undefined)
     
-    inline def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value :_*))
+    inline def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value*))
   }
 }

@@ -251,7 +251,7 @@ object AMap {
         
         inline def setTips(value: js.Array[Tip]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
         
-        inline def setTipsVarargs(value: Tip*): Self = StObject.set(x, "tips", js.Array(value :_*))
+        inline def setTipsVarargs(value: Tip*): Self = StObject.set(x, "tips", js.Array(value*))
       }
     }
     
@@ -285,7 +285,7 @@ object AMap {
       /**
         * 城市
         */
-      var city: js.Array[js.Any]
+      var city: js.Array[Any]
       
       /**
         * 所属区域
@@ -317,7 +317,7 @@ object AMap {
       inline def apply(
         adcode: String,
         address: String,
-        city: js.Array[js.Any],
+        city: js.Array[Any],
         district: String,
         id: String,
         location: LngLat,
@@ -334,9 +334,9 @@ object AMap {
         
         inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
-        inline def setCity(value: js.Array[js.Any]): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+        inline def setCity(value: js.Array[Any]): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
         
-        inline def setCityVarargs(value: js.Any*): Self = StObject.set(x, "city", js.Array(value :_*))
+        inline def setCityVarargs(value: Any*): Self = StObject.set(x, "city", js.Array(value*))
         
         inline def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
         

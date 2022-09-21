@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("prom-client", "Registry")
 @js.native
-class Registry () extends StObject {
+open class Registry () extends StObject {
   
   /**
   	 * Remove all metrics from the registry
@@ -26,24 +26,24 @@ class Registry () extends StObject {
   /**
   	 * Get all metrics as objects
   	 */
-  def getMetricsAsJSON(): js.Array[metric] = js.native
+  def getMetricsAsJSON(): js.Promise[js.Array[metric]] = js.native
   
   /**
   	 * Get a single metric
   	 * @param name The name of the metric
   	 */
-  def getSingleMetric[T /* <: String */](name: String): Metric_[T] = js.native
+  def getSingleMetric[T /* <: String */](name: String): js.UndefOr[Metric_[T]] = js.native
   
   /**
   	 * Get a string representation of a single metric by name
   	 * @param name The name of the metric
   	 */
-  def getSingleMetricAsString(name: String): String = js.native
+  def getSingleMetricAsString(name: String): js.Promise[String] = js.native
   
   /**
   	 * Get string representation for all metrics
   	 */
-  def metrics(): String = js.native
+  def metrics(): js.Promise[String] = js.native
   
   /**
   	 * Register metric to register

@@ -9,7 +9,7 @@ trait ObserverBaseOpts extends StObject {
   /**
   	 * The context to be used for the callback.
   	 */
-  var context: js.UndefOr[js.Any] = js.undefined
+  var context: js.UndefOr[Any] = js.undefined
   
   /**
   	 * Whether or not to defer calling the callback until after the DOM has been updated.
@@ -30,7 +30,7 @@ object ObserverBaseOpts {
   
   extension [Self <: ObserverBaseOpts](x: Self) {
     
-    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     

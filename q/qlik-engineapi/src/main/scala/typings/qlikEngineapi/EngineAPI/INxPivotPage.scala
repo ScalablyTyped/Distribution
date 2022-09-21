@@ -48,14 +48,14 @@ object INxPivotPage {
     
     inline def setQData(value: js.Array[INxPivotValuePoint]): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
-    inline def setQDataVarargs(value: INxPivotValuePoint*): Self = StObject.set(x, "qData", js.Array(value :_*))
+    inline def setQDataVarargs(value: INxPivotValuePoint*): Self = StObject.set(x, "qData", js.Array(value*))
     
     inline def setQLeft(value: js.Array[INxPivotDimensionCell]): Self = StObject.set(x, "qLeft", value.asInstanceOf[js.Any])
     
-    inline def setQLeftVarargs(value: INxPivotDimensionCell*): Self = StObject.set(x, "qLeft", js.Array(value :_*))
+    inline def setQLeftVarargs(value: INxPivotDimensionCell*): Self = StObject.set(x, "qLeft", js.Array(value*))
     
     inline def setQTop(value: js.Array[INxPivotDimensionCell]): Self = StObject.set(x, "qTop", value.asInstanceOf[js.Any])
     
-    inline def setQTopVarargs(value: INxPivotDimensionCell*): Self = StObject.set(x, "qTop", js.Array(value :_*))
+    inline def setQTopVarargs(value: INxPivotDimensionCell*): Self = StObject.set(x, "qTop", js.Array(value*))
   }
 }

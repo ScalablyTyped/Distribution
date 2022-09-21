@@ -54,11 +54,11 @@ object BulkAccess {
     def getItemsAsync(): IAsyncOperation[IVectorView[IStorageItemInformation]] = js.native
     def getItemsAsync(startIndex: Double, maxItemsToRetrieve: Double): IAsyncOperation[IVectorView[IStorageItemInformation]] = js.native
     
-    def getVirtualizedFilesVector(): js.Any = js.native
+    def getVirtualizedFilesVector(): Any = js.native
     
-    def getVirtualizedFoldersVector(): js.Any = js.native
+    def getVirtualizedFoldersVector(): Any = js.native
     
-    def getVirtualizedItemsVector(): js.Any = js.native
+    def getVirtualizedItemsVector(): Any = js.native
   }
   
   trait IFileInformationFactoryFactory extends StObject {
@@ -120,9 +120,9 @@ object BulkAccess {
     
     var musicProperties: MusicProperties
     
-    var onpropertiesupdated: js.Any
+    var onpropertiesupdated: Any
     
-    var onthumbnailupdated: js.Any
+    var onthumbnailupdated: Any
     
     var thumbnail: StorageItemThumbnail
     
@@ -135,8 +135,8 @@ object BulkAccess {
       documentProperties: DocumentProperties,
       imageProperties: ImageProperties,
       musicProperties: MusicProperties,
-      onpropertiesupdated: js.Any,
-      onthumbnailupdated: js.Any,
+      onpropertiesupdated: Any,
+      onthumbnailupdated: Any,
       thumbnail: StorageItemThumbnail,
       videoProperties: VideoProperties
     ): IStorageItemInformation = {
@@ -154,9 +154,9 @@ object BulkAccess {
       
       inline def setMusicProperties(value: MusicProperties): Self = StObject.set(x, "musicProperties", value.asInstanceOf[js.Any])
       
-      inline def setOnpropertiesupdated(value: js.Any): Self = StObject.set(x, "onpropertiesupdated", value.asInstanceOf[js.Any])
+      inline def setOnpropertiesupdated(value: Any): Self = StObject.set(x, "onpropertiesupdated", value.asInstanceOf[js.Any])
       
-      inline def setOnthumbnailupdated(value: js.Any): Self = StObject.set(x, "onthumbnailupdated", value.asInstanceOf[js.Any])
+      inline def setOnthumbnailupdated(value: Any): Self = StObject.set(x, "onthumbnailupdated", value.asInstanceOf[js.Any])
       
       inline def setThumbnail(value: StorageItemThumbnail): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       

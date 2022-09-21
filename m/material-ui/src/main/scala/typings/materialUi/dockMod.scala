@@ -10,10 +10,10 @@ object dockMod {
   
   @JSImport("material-ui/svg-icons/hardware/dock", JSImport.Default)
   @js.native
-  class default () extends HardwareDock
+  open class default () extends HardwareDock
   
   @JSImport("material-ui/svg-icons/hardware/dock", "HardwareDock")
   @js.native
-  class HardwareDock ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareDock ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

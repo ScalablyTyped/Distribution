@@ -44,7 +44,7 @@ object interfaceMod {
       
       inline def setAllCheckedNodes(value: js.Array[LegacyCheckedNode]): Self = StObject.set(x, "allCheckedNodes", value.asInstanceOf[js.Any])
       
-      inline def setAllCheckedNodesVarargs(value: LegacyCheckedNode*): Self = StObject.set(x, "allCheckedNodes", js.Array(value :_*))
+      inline def setAllCheckedNodesVarargs(value: LegacyCheckedNode*): Self = StObject.set(x, "allCheckedNodes", js.Array(value*))
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -52,7 +52,7 @@ object interfaceMod {
       
       inline def setPreValue(value: js.Array[LabelValueType]): Self = StObject.set(x, "preValue", value.asInstanceOf[js.Any])
       
-      inline def setPreValueVarargs(value: LabelValueType*): Self = StObject.set(x, "preValue", js.Array(value :_*))
+      inline def setPreValueVarargs(value: LabelValueType*): Self = StObject.set(x, "preValue", js.Array(value*))
       
       inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
@@ -66,8 +66,7 @@ object interfaceMod {
   
   trait DataNode
     extends StObject
-       with /** Customize data info */
-  /* prop */ StringDictionary[js.Any] {
+       with /* name */ StringDictionary[Any] {
     
     var checkable: js.UndefOr[Boolean] = js.undefined
     
@@ -102,7 +101,7 @@ object interfaceMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: DataNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: DataNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDisableCheckbox(value: Boolean): Self = StObject.set(x, "disableCheckbox", value.asInstanceOf[js.Any])
       
@@ -132,60 +131,119 @@ object interfaceMod {
   
   type DefaultValueType = RawValueType | (js.Array[LabelValueType | RawValueType]) | LabelValueType
   
+  trait FieldNames extends StObject {
+    
+    var children: js.UndefOr[String] = js.undefined
+    
+    var label: js.UndefOr[String] = js.undefined
+    
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object FieldNames {
+    
+    inline def apply(): FieldNames = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FieldNames]
+    }
+    
+    extension [Self <: FieldNames](x: Self) {
+      
+      inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
   trait FlattenDataNode extends StObject {
     
-    var data: DataNode
+    var data: InternalDataEntity
     
     var key: Key
     
     var level: Double
+    
+    var parent: js.UndefOr[FlattenDataNode] = js.undefined
+    
+    var value: RawValueType
   }
   object FlattenDataNode {
     
-    inline def apply(data: DataNode, key: Key, level: Double): FlattenDataNode = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    inline def apply(data: InternalDataEntity, key: Key, level: Double, value: RawValueType): FlattenDataNode = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FlattenDataNode]
     }
     
     extension [Self <: FlattenDataNode](x: Self) {
       
-      inline def setData(value: DataNode): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: InternalDataEntity): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      
+      inline def setParent(value: FlattenDataNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      
+      inline def setValue(value: RawValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  trait InnerDataNode
-    extends StObject
-       with DataNode {
+  trait InternalDataEntity extends StObject {
     
-    @JSName("children")
-    var children_InnerDataNode: js.UndefOr[js.Array[InnerDataNode]] = js.undefined
+    var children: js.UndefOr[js.Array[InternalDataEntity]] = js.undefined
     
-    @JSName("key")
-    var key_InnerDataNode: Key
+    var disableCheckbox: js.UndefOr[Boolean] = js.undefined
     
-    @JSName("value")
-    var value_InnerDataNode: RawValueType
+    var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    var key: Key
+    
+    /** Origin DataNode */
+    var node: DataNode
+    
+    var title: js.UndefOr[ReactNode] = js.undefined
+    
+    var value: RawValueType
   }
-  object InnerDataNode {
+  object InternalDataEntity {
     
-    inline def apply(key: Key, value: RawValueType): InnerDataNode = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[InnerDataNode]
+    inline def apply(key: Key, node: DataNode, value: RawValueType): InternalDataEntity = {
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InternalDataEntity]
     }
     
-    extension [Self <: InnerDataNode](x: Self) {
+    extension [Self <: InternalDataEntity](x: Self) {
       
-      inline def setChildren(value: js.Array[InnerDataNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[InternalDataEntity]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: InnerDataNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: InternalDataEntity*): Self = StObject.set(x, "children", js.Array(value*))
+      
+      inline def setDisableCheckbox(value: Boolean): Self = StObject.set(x, "disableCheckbox", value.asInstanceOf[js.Any])
+      
+      inline def setDisableCheckboxUndefined: Self = StObject.set(x, "disableCheckbox", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setNode(value: DataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       inline def setValue(value: RawValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -252,7 +310,7 @@ object interfaceMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: LegacyCheckedNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: LegacyCheckedNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setNode(value: ReactElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
@@ -264,18 +322,18 @@ object interfaceMod {
     extends StObject
        with DataNode {
     
-    var props: js.Any
+    var props: Any
   }
   object LegacyDataNode {
     
-    inline def apply(props: js.Any): LegacyDataNode = {
+    inline def apply(props: Any): LegacyDataNode = {
       val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[LegacyDataNode]
     }
     
     extension [Self <: LegacyDataNode](x: Self) {
       
-      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
   
@@ -353,7 +411,7 @@ object interfaceMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: TreeDataNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: TreeDataNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }

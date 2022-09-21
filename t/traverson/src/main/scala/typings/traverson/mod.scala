@@ -16,18 +16,18 @@ object mod extends Shortcut {
     
     trait Builder extends StObject {
       
-      def addRequestOptions(options: js.Any): Builder
+      def addRequestOptions(options: Any): Builder
       
       def convertResponseToObject(): Builder
       
       def convertsResponseToObject(): Boolean
       
       def del(
-        callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
+        callback: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit]
       ): InAction
       
       def delete(
-        callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
+        callback: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit]
       ): InAction
       
       def disableAutoHeaders(): Builder
@@ -47,33 +47,33 @@ object mod extends Shortcut {
       def from(url: String): Builder
       
       def get(
-        callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
+        callback: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit]
       ): InAction
       
       def getFrom(): String
       
-      def getJsonParser(): js.Any
+      def getJsonParser(): Any
       
       def getLinkType(): String
       
       def getMediaType(): String
       
-      def getRequestLibrary(): js.Any
+      def getRequestLibrary(): Any
       
-      def getRequestOptions(): js.Any
+      def getRequestOptions(): Any
       
       def getResource(
-        callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
+        callback: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit]
       ): InAction
       
-      def getTemplateParameters(): js.Any
+      def getTemplateParameters(): Any
       
       def getUri(
-        callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
+        callback: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit]
       ): InAction
       
       def getUrl(
-        callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
+        callback: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit]
       ): InAction
       
       def json(): Builder
@@ -85,29 +85,29 @@ object mod extends Shortcut {
       
       def newRequest(): Builder
       
-      def parseResponseBodiesWith(parser: js.Any): Builder
+      def parseResponseBodiesWith(parser: Any): Builder
       
       def patch(
-        data: js.Any,
-        callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
+        data: Any,
+        callback: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit]
       ): InAction
       
       // Alias for getUrl()
       def post(
-        data: js.Any,
-        callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
+        data: Any,
+        callback: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit]
       ): InAction
       
-      def preferEmbeddedResources(flag: js.Any): Builder
+      def preferEmbeddedResources(flag: Any): Builder
       
       def put(
-        data: js.Any,
-        callback: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]
+        data: Any,
+        callback: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit]
       ): InAction
       
-      def resolveRelative(flag: js.Any): Builder
+      def resolveRelative(flag: Any): Builder
       
-      def sendRawPayload(flag: js.Any): Builder
+      def sendRawPayload(flag: Any): Builder
       
       def sendsRawPayload(): Boolean
       
@@ -115,27 +115,27 @@ object mod extends Shortcut {
       
       def setsAutoHeaders(): Boolean
       
-      def useAutoHeaders(flag: js.Any): Builder
+      def useAutoHeaders(flag: Any): Builder
       
       def useContentNegotiation(): Builder
       
       def walk(first_pattern: String, rest_patterns: String*): Builder
       
-      def withRequestLibrary(request: js.Any): Builder
+      def withRequestLibrary(request: Any): Builder
       
-      def withRequestOptions(options: js.Any): Builder
+      def withRequestOptions(options: Any): Builder
       
       // Alias for follow()
-      def withTemplateParameters(parameters: js.Any): Builder
+      def withTemplateParameters(parameters: Any): Builder
     }
     object Builder {
       
       inline def apply(
-        addRequestOptions: js.Any => Builder,
+        addRequestOptions: Any => Builder,
         convertResponseToObject: () => Builder,
         convertsResponseToObject: () => Boolean,
-        del: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction,
-        delete: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction,
+        del: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction,
+        delete: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction,
         disableAutoHeaders: () => Builder,
         doesContentNegotiation: () => Boolean,
         doesPreferEmbeddedResources: () => Boolean,
@@ -144,37 +144,37 @@ object mod extends Shortcut {
         follow: (String, /* repeated */ String) => Builder,
         followLocationHeader: () => Builder,
         from: String => Builder,
-        get: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction,
+        get: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction,
         getFrom: () => String,
-        getJsonParser: () => js.Any,
+        getJsonParser: () => Any,
         getLinkType: () => String,
         getMediaType: () => String,
-        getRequestLibrary: () => js.Any,
-        getRequestOptions: () => js.Any,
-        getResource: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction,
-        getTemplateParameters: () => js.Any,
-        getUri: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction,
-        getUrl: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction,
+        getRequestLibrary: () => Any,
+        getRequestOptions: () => Any,
+        getResource: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction,
+        getTemplateParameters: () => Any,
+        getUri: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction,
+        getUrl: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction,
         json: () => Builder,
         jsonHal: () => Builder,
         linkHeader: () => Builder,
         newRequest: () => Builder,
-        parseResponseBodiesWith: js.Any => Builder,
-        patch: (js.Any, js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]) => InAction,
-        post: (js.Any, js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]) => InAction,
-        preferEmbeddedResources: js.Any => Builder,
-        put: (js.Any, js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]) => InAction,
-        resolveRelative: js.Any => Builder,
-        sendRawPayload: js.Any => Builder,
+        parseResponseBodiesWith: Any => Builder,
+        patch: (Any, js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit]) => InAction,
+        post: (Any, js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit]) => InAction,
+        preferEmbeddedResources: Any => Builder,
+        put: (Any, js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit]) => InAction,
+        resolveRelative: Any => Builder,
+        sendRawPayload: Any => Builder,
         sendsRawPayload: () => Boolean,
         setMediaType: String => Builder,
         setsAutoHeaders: () => Boolean,
-        useAutoHeaders: js.Any => Builder,
+        useAutoHeaders: Any => Builder,
         useContentNegotiation: () => Builder,
         walk: (String, /* repeated */ String) => Builder,
-        withRequestLibrary: js.Any => Builder,
-        withRequestOptions: js.Any => Builder,
-        withTemplateParameters: js.Any => Builder
+        withRequestLibrary: Any => Builder,
+        withRequestOptions: Any => Builder,
+        withTemplateParameters: Any => Builder
       ): Builder = {
         val __obj = js.Dynamic.literal(addRequestOptions = js.Any.fromFunction1(addRequestOptions), convertResponseToObject = js.Any.fromFunction0(convertResponseToObject), convertsResponseToObject = js.Any.fromFunction0(convertsResponseToObject), del = js.Any.fromFunction1(del), delete = js.Any.fromFunction1(delete), disableAutoHeaders = js.Any.fromFunction0(disableAutoHeaders), doesContentNegotiation = js.Any.fromFunction0(doesContentNegotiation), doesPreferEmbeddedResources = js.Any.fromFunction0(doesPreferEmbeddedResources), doesResolveRelative = js.Any.fromFunction0(doesResolveRelative), enableAutoHeaders = js.Any.fromFunction0(enableAutoHeaders), follow = js.Any.fromFunction2(follow), followLocationHeader = js.Any.fromFunction0(followLocationHeader), from = js.Any.fromFunction1(from), get = js.Any.fromFunction1(get), getFrom = js.Any.fromFunction0(getFrom), getJsonParser = js.Any.fromFunction0(getJsonParser), getLinkType = js.Any.fromFunction0(getLinkType), getMediaType = js.Any.fromFunction0(getMediaType), getRequestLibrary = js.Any.fromFunction0(getRequestLibrary), getRequestOptions = js.Any.fromFunction0(getRequestOptions), getResource = js.Any.fromFunction1(getResource), getTemplateParameters = js.Any.fromFunction0(getTemplateParameters), getUri = js.Any.fromFunction1(getUri), getUrl = js.Any.fromFunction1(getUrl), json = js.Any.fromFunction0(json), jsonHal = js.Any.fromFunction0(jsonHal), linkHeader = js.Any.fromFunction0(linkHeader), newRequest = js.Any.fromFunction0(newRequest), parseResponseBodiesWith = js.Any.fromFunction1(parseResponseBodiesWith), patch = js.Any.fromFunction2(patch), post = js.Any.fromFunction2(post), preferEmbeddedResources = js.Any.fromFunction1(preferEmbeddedResources), put = js.Any.fromFunction2(put), resolveRelative = js.Any.fromFunction1(resolveRelative), sendRawPayload = js.Any.fromFunction1(sendRawPayload), sendsRawPayload = js.Any.fromFunction0(sendsRawPayload), setMediaType = js.Any.fromFunction1(setMediaType), setsAutoHeaders = js.Any.fromFunction0(setsAutoHeaders), useAutoHeaders = js.Any.fromFunction1(useAutoHeaders), useContentNegotiation = js.Any.fromFunction0(useContentNegotiation), walk = js.Any.fromFunction2(walk), withRequestLibrary = js.Any.fromFunction1(withRequestLibrary), withRequestOptions = js.Any.fromFunction1(withRequestOptions), withTemplateParameters = js.Any.fromFunction1(withTemplateParameters))
         __obj.asInstanceOf[Builder]
@@ -182,18 +182,18 @@ object mod extends Shortcut {
       
       extension [Self <: Builder](x: Self) {
         
-        inline def setAddRequestOptions(value: js.Any => Builder): Self = StObject.set(x, "addRequestOptions", js.Any.fromFunction1(value))
+        inline def setAddRequestOptions(value: Any => Builder): Self = StObject.set(x, "addRequestOptions", js.Any.fromFunction1(value))
         
         inline def setConvertResponseToObject(value: () => Builder): Self = StObject.set(x, "convertResponseToObject", js.Any.fromFunction0(value))
         
         inline def setConvertsResponseToObject(value: () => Boolean): Self = StObject.set(x, "convertsResponseToObject", js.Any.fromFunction0(value))
         
         inline def setDel(
-          value: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
+          value: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
         ): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
         
         inline def setDelete(
-          value: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
+          value: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
         ): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
         
         inline def setDisableAutoHeaders(value: () => Builder): Self = StObject.set(x, "disableAutoHeaders", js.Any.fromFunction0(value))
@@ -213,33 +213,33 @@ object mod extends Shortcut {
         inline def setFrom(value: String => Builder): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
         
         inline def setGet(
-          value: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
+          value: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
         ): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         
         inline def setGetFrom(value: () => String): Self = StObject.set(x, "getFrom", js.Any.fromFunction0(value))
         
-        inline def setGetJsonParser(value: () => js.Any): Self = StObject.set(x, "getJsonParser", js.Any.fromFunction0(value))
+        inline def setGetJsonParser(value: () => Any): Self = StObject.set(x, "getJsonParser", js.Any.fromFunction0(value))
         
         inline def setGetLinkType(value: () => String): Self = StObject.set(x, "getLinkType", js.Any.fromFunction0(value))
         
         inline def setGetMediaType(value: () => String): Self = StObject.set(x, "getMediaType", js.Any.fromFunction0(value))
         
-        inline def setGetRequestLibrary(value: () => js.Any): Self = StObject.set(x, "getRequestLibrary", js.Any.fromFunction0(value))
+        inline def setGetRequestLibrary(value: () => Any): Self = StObject.set(x, "getRequestLibrary", js.Any.fromFunction0(value))
         
-        inline def setGetRequestOptions(value: () => js.Any): Self = StObject.set(x, "getRequestOptions", js.Any.fromFunction0(value))
+        inline def setGetRequestOptions(value: () => Any): Self = StObject.set(x, "getRequestOptions", js.Any.fromFunction0(value))
         
         inline def setGetResource(
-          value: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
+          value: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
         ): Self = StObject.set(x, "getResource", js.Any.fromFunction1(value))
         
-        inline def setGetTemplateParameters(value: () => js.Any): Self = StObject.set(x, "getTemplateParameters", js.Any.fromFunction0(value))
+        inline def setGetTemplateParameters(value: () => Any): Self = StObject.set(x, "getTemplateParameters", js.Any.fromFunction0(value))
         
         inline def setGetUri(
-          value: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
+          value: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
         ): Self = StObject.set(x, "getUri", js.Any.fromFunction1(value))
         
         inline def setGetUrl(
-          value: js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
+          value: js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit] => InAction
         ): Self = StObject.set(x, "getUrl", js.Any.fromFunction1(value))
         
         inline def setJson(value: () => Builder): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
@@ -250,25 +250,25 @@ object mod extends Shortcut {
         
         inline def setNewRequest(value: () => Builder): Self = StObject.set(x, "newRequest", js.Any.fromFunction0(value))
         
-        inline def setParseResponseBodiesWith(value: js.Any => Builder): Self = StObject.set(x, "parseResponseBodiesWith", js.Any.fromFunction1(value))
+        inline def setParseResponseBodiesWith(value: Any => Builder): Self = StObject.set(x, "parseResponseBodiesWith", js.Any.fromFunction1(value))
         
         inline def setPatch(
-          value: (js.Any, js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]) => InAction
+          value: (Any, js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit]) => InAction
         ): Self = StObject.set(x, "patch", js.Any.fromFunction2(value))
         
         inline def setPost(
-          value: (js.Any, js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]) => InAction
+          value: (Any, js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit]) => InAction
         ): Self = StObject.set(x, "post", js.Any.fromFunction2(value))
         
-        inline def setPreferEmbeddedResources(value: js.Any => Builder): Self = StObject.set(x, "preferEmbeddedResources", js.Any.fromFunction1(value))
+        inline def setPreferEmbeddedResources(value: Any => Builder): Self = StObject.set(x, "preferEmbeddedResources", js.Any.fromFunction1(value))
         
         inline def setPut(
-          value: (js.Any, js.Function3[/* err */ js.Any, /* document */ js.Any, /* traversal */ js.UndefOr[Traversal], Unit]) => InAction
+          value: (Any, js.Function3[/* err */ Any, /* document */ Any, /* traversal */ js.UndefOr[Traversal], Unit]) => InAction
         ): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
         
-        inline def setResolveRelative(value: js.Any => Builder): Self = StObject.set(x, "resolveRelative", js.Any.fromFunction1(value))
+        inline def setResolveRelative(value: Any => Builder): Self = StObject.set(x, "resolveRelative", js.Any.fromFunction1(value))
         
-        inline def setSendRawPayload(value: js.Any => Builder): Self = StObject.set(x, "sendRawPayload", js.Any.fromFunction1(value))
+        inline def setSendRawPayload(value: Any => Builder): Self = StObject.set(x, "sendRawPayload", js.Any.fromFunction1(value))
         
         inline def setSendsRawPayload(value: () => Boolean): Self = StObject.set(x, "sendsRawPayload", js.Any.fromFunction0(value))
         
@@ -276,17 +276,17 @@ object mod extends Shortcut {
         
         inline def setSetsAutoHeaders(value: () => Boolean): Self = StObject.set(x, "setsAutoHeaders", js.Any.fromFunction0(value))
         
-        inline def setUseAutoHeaders(value: js.Any => Builder): Self = StObject.set(x, "useAutoHeaders", js.Any.fromFunction1(value))
+        inline def setUseAutoHeaders(value: Any => Builder): Self = StObject.set(x, "useAutoHeaders", js.Any.fromFunction1(value))
         
         inline def setUseContentNegotiation(value: () => Builder): Self = StObject.set(x, "useContentNegotiation", js.Any.fromFunction0(value))
         
         inline def setWalk(value: (String, /* repeated */ String) => Builder): Self = StObject.set(x, "walk", js.Any.fromFunction2(value))
         
-        inline def setWithRequestLibrary(value: js.Any => Builder): Self = StObject.set(x, "withRequestLibrary", js.Any.fromFunction1(value))
+        inline def setWithRequestLibrary(value: Any => Builder): Self = StObject.set(x, "withRequestLibrary", js.Any.fromFunction1(value))
         
-        inline def setWithRequestOptions(value: js.Any => Builder): Self = StObject.set(x, "withRequestOptions", js.Any.fromFunction1(value))
+        inline def setWithRequestOptions(value: Any => Builder): Self = StObject.set(x, "withRequestOptions", js.Any.fromFunction1(value))
         
-        inline def setWithTemplateParameters(value: js.Any => Builder): Self = StObject.set(x, "withTemplateParameters", js.Any.fromFunction1(value))
+        inline def setWithTemplateParameters(value: Any => Builder): Self = StObject.set(x, "withTemplateParameters", js.Any.fromFunction1(value))
       }
     }
     
@@ -309,18 +309,18 @@ object mod extends Shortcut {
     
     trait Json extends StObject {
       
-      def parseJson(): js.Any
+      def parseJson(): Any
     }
     object Json {
       
-      inline def apply(parseJson: () => js.Any): Json = {
+      inline def apply(parseJson: () => Any): Json = {
         val __obj = js.Dynamic.literal(parseJson = js.Any.fromFunction0(parseJson))
         __obj.asInstanceOf[Json]
       }
       
       extension [Self <: Json](x: Self) {
         
-        inline def setParseJson(value: () => js.Any): Self = StObject.set(x, "parseJson", js.Any.fromFunction0(value))
+        inline def setParseJson(value: () => Any): Self = StObject.set(x, "parseJson", js.Any.fromFunction0(value))
       }
     }
     
@@ -355,7 +355,7 @@ object mod extends Shortcut {
       
       def newRequest(): Builder
       
-      def registerMediaType(name: String, handler: js.Any): TraversonMethods
+      def registerMediaType(name: String, handler: Any): TraversonMethods
     }
     object TraversonMethods {
       
@@ -366,7 +366,7 @@ object mod extends Shortcut {
         jsonHal: () => Builder,
         mediaTypes: () => TraversonMethods,
         newRequest: () => Builder,
-        registerMediaType: (String, js.Any) => TraversonMethods
+        registerMediaType: (String, Any) => TraversonMethods
       ): TraversonMethods = {
         val __obj = js.Dynamic.literal(errors = js.Any.fromFunction0(errors), from = js.Any.fromFunction1(from), json = js.Any.fromFunction0(json), jsonHal = js.Any.fromFunction0(jsonHal), mediaTypes = js.Any.fromFunction0(mediaTypes), newRequest = js.Any.fromFunction0(newRequest), registerMediaType = js.Any.fromFunction2(registerMediaType))
         __obj.asInstanceOf[TraversonMethods]
@@ -386,7 +386,7 @@ object mod extends Shortcut {
         
         inline def setNewRequest(value: () => Builder): Self = StObject.set(x, "newRequest", js.Any.fromFunction0(value))
         
-        inline def setRegisterMediaType(value: (String, js.Any) => TraversonMethods): Self = StObject.set(x, "registerMediaType", js.Any.fromFunction2(value))
+        inline def setRegisterMediaType(value: (String, Any) => TraversonMethods): Self = StObject.set(x, "registerMediaType", js.Any.fromFunction2(value))
       }
     }
   }

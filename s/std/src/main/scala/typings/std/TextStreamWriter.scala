@@ -11,16 +11,19 @@ trait TextStreamWriter
   /**
     * Sends a string to an output stream.
     */
+  /* standard scripthost */
   def Write(s: java.lang.String): Unit
   
   /**
     * Sends a specified number of blank lines (newline characters) to an output stream.
     */
+  /* standard scripthost */
   def WriteBlankLines(intLines: Double): Unit
   
   /**
     * Sends a string followed by a newline character to an output stream.
     */
+  /* standard scripthost */
   def WriteLine(s: java.lang.String): Unit
 }
 object TextStreamWriter {

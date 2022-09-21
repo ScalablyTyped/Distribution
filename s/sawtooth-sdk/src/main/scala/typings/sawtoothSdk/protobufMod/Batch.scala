@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Batch.
   * @param [properties] Properties to set
   */
-class Batch ()
+open class Batch ()
   extends StObject
      with IBatch {
   def this(properties: IBatch) = this()
@@ -26,13 +25,13 @@ class Batch ()
   
   /** Batch header. */
   @JSName("header")
-  var header_Batch: Uint8Array = js.native
+  var header_Batch: js.typedarray.Uint8Array = js.native
   
   /**
     * Converts this Batch to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
   
   /** Batch trace. */
   @JSName("trace")
@@ -57,6 +56,8 @@ object Batch {
   inline def create(): Batch = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Batch]
   inline def create(properties: IBatch): Batch = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Batch]
   
+  inline def decode(reader: js.typedarray.Uint8Array): Batch = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Batch]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): Batch = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Batch]
   /**
     * Decodes a Batch message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -67,9 +68,8 @@ object Batch {
     */
   inline def decode(reader: Reader): Batch = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Batch]
   inline def decode(reader: Reader, length: Double): Batch = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Batch]
-  inline def decode(reader: Uint8Array): Batch = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Batch]
-  inline def decode(reader: Uint8Array, length: Double): Batch = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Batch]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): Batch = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Batch]
   /**
     * Decodes a Batch message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -78,7 +78,6 @@ object Batch {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): Batch = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Batch]
-  inline def decodeDelimited(reader: Uint8Array): Batch = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Batch]
   
   /**
     * Encodes the specified Batch message. Does not implicitly {@link Batch.verify|verify} messages.
@@ -103,7 +102,7 @@ object Batch {
     * @param object Plain object
     * @returns Batch
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): Batch = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Batch]
+  inline def fromObject(`object`: StringDictionary[Any]): Batch = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Batch]
   
   /**
     * Creates a plain object from a Batch message. Also converts values to other types if specified.
@@ -111,13 +110,13 @@ object Batch {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: Batch): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: Batch, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: Batch): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: Batch, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a Batch message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

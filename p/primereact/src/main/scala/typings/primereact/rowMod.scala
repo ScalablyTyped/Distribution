@@ -1,25 +1,27 @@
 package typings.primereact
 
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowMod {
   
-  @JSImport("primereact/components/row/Row", "Row")
+  @JSImport("primereact/row/row", "Row")
   @js.native
-  class Row protected ()
-    extends Component[RowProps, js.Any, js.Any] {
+  open class Row protected () extends Component[RowProps, Any, Any] {
     def this(props: RowProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: RowProps, context: js.Any) = this()
+    def this(props: RowProps, context: Any) = this()
   }
   
   trait RowProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -33,6 +35,10 @@ object rowMod {
     }
     
     extension [Self <: RowProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

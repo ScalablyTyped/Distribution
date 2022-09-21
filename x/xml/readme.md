@@ -11,9 +11,9 @@ Fast and simple xml generator. Supports attributes, CDATA, etc. Includes tests a
 | Full name          | xml |
 | Keywords           | xml, create, builder, json, simple |
 | # releases         | 0 |
-| # dependents       | 353 |
-| # downloads        | 91390649 |
-| # stars            | 38 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7991243333333332E7 |
+| # stars            | 264.0 |
 
 ## Links
 - [Homepage](http://github.com/dylang/node-xml)

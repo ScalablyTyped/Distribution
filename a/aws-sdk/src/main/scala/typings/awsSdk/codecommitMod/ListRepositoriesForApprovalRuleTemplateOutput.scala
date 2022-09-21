@@ -33,6 +33,6 @@ object ListRepositoriesForApprovalRuleTemplateOutput {
     
     inline def setRepositoryNamesUndefined: Self = StObject.set(x, "repositoryNames", js.undefined)
     
-    inline def setRepositoryNamesVarargs(value: RepositoryName*): Self = StObject.set(x, "repositoryNames", js.Array(value :_*))
+    inline def setRepositoryNamesVarargs(value: RepositoryName*): Self = StObject.set(x, "repositoryNames", js.Array(value*))
   }
 }

@@ -10,7 +10,7 @@ object indexerMod {
   
   @JSImport("nodegit/indexer", "Indexer")
   @js.native
-  class Indexer () extends StObject {
+  open class Indexer () extends StObject {
     
     def commit(stats: TransferProgress): Double = js.native
     

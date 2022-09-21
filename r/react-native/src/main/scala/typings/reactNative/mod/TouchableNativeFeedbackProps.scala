@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TouchableNativeFeedbackProps
   extends StObject
-     with TouchableWithoutFeedbackProps {
+     with TouchableWithoutFeedbackProps
+     with TVProps {
   
   /**
     * Determines the type of background drawable that's going to be used to display feedback.

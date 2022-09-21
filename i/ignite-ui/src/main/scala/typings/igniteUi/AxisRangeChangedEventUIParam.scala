@@ -9,32 +9,32 @@ trait AxisRangeChangedEventUIParam extends StObject {
   /**
     * Used to get reference to current chart axis object.
     */
-  var axis: js.UndefOr[js.Any] = js.undefined
+  var axis: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to get reference to chart object.
     */
-  var chart: js.UndefOr[js.Any] = js.undefined
+  var chart: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to get new maximum value.
     */
-  var newMaximumValue: js.UndefOr[js.Any] = js.undefined
+  var newMaximumValue: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to get new minimum value.
     */
-  var newMinimumValue: js.UndefOr[js.Any] = js.undefined
+  var newMinimumValue: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to get old maximum value.
     */
-  var oldMaximumValue: js.UndefOr[js.Any] = js.undefined
+  var oldMaximumValue: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to get old minimum value.
     */
-  var oldMinimumValue: js.UndefOr[js.Any] = js.undefined
+  var oldMinimumValue: js.UndefOr[Any] = js.undefined
 }
 object AxisRangeChangedEventUIParam {
   
@@ -45,27 +45,27 @@ object AxisRangeChangedEventUIParam {
   
   extension [Self <: AxisRangeChangedEventUIParam](x: Self) {
     
-    inline def setAxis(value: js.Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    inline def setChart(value: js.Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     inline def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
     
-    inline def setNewMaximumValue(value: js.Any): Self = StObject.set(x, "newMaximumValue", value.asInstanceOf[js.Any])
+    inline def setNewMaximumValue(value: Any): Self = StObject.set(x, "newMaximumValue", value.asInstanceOf[js.Any])
     
     inline def setNewMaximumValueUndefined: Self = StObject.set(x, "newMaximumValue", js.undefined)
     
-    inline def setNewMinimumValue(value: js.Any): Self = StObject.set(x, "newMinimumValue", value.asInstanceOf[js.Any])
+    inline def setNewMinimumValue(value: Any): Self = StObject.set(x, "newMinimumValue", value.asInstanceOf[js.Any])
     
     inline def setNewMinimumValueUndefined: Self = StObject.set(x, "newMinimumValue", js.undefined)
     
-    inline def setOldMaximumValue(value: js.Any): Self = StObject.set(x, "oldMaximumValue", value.asInstanceOf[js.Any])
+    inline def setOldMaximumValue(value: Any): Self = StObject.set(x, "oldMaximumValue", value.asInstanceOf[js.Any])
     
     inline def setOldMaximumValueUndefined: Self = StObject.set(x, "oldMaximumValue", js.undefined)
     
-    inline def setOldMinimumValue(value: js.Any): Self = StObject.set(x, "oldMinimumValue", value.asInstanceOf[js.Any])
+    inline def setOldMinimumValue(value: Any): Self = StObject.set(x, "oldMinimumValue", value.asInstanceOf[js.Any])
     
     inline def setOldMinimumValueUndefined: Self = StObject.set(x, "oldMinimumValue", js.undefined)
   }

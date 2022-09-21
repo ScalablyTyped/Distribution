@@ -1,7 +1,7 @@
 package typings.cathoQuantum
 
 import typings.cathoQuantum.anon.Name
-import typings.cathoQuantum.anon.`1`
+import typings.cathoQuantum.anon.`17`
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,12 +11,12 @@ object socialsMod {
   
   @JSImport("@catho/quantum/Socials", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SocialsProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SocialsProps, js.Object, Any]
   
   type NonEmptyArray[T] = Array[T]
   
-  type Socials = Component[SocialsProps, js.Object, js.Any]
+  type Socials = Component[SocialsProps, js.Object, Any]
   
   trait SocialsProps extends StObject {
     
@@ -24,7 +24,7 @@ object socialsMod {
     
     var size: js.UndefOr[String] = js.undefined
     
-    var theme: js.UndefOr[`1`] = js.undefined
+    var theme: js.UndefOr[`17`] = js.undefined
     
     var withBox: js.UndefOr[Boolean] = js.undefined
   }
@@ -43,7 +43,7 @@ object socialsMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setTheme(value: `1`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: `17`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       

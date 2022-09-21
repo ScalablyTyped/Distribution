@@ -10,10 +10,10 @@ ECMAScript JS AST traversal functions
 | ------------------ | :-------------: |
 | Full name          | estraverse |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 741 |
-| # downloads        | 1236855317 |
-| # stars            | 10 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.6162521333333334E8 |
+| # stars            | 867.0 |
 
 ## Links
 - [Homepage](https://github.com/estools/estraverse)

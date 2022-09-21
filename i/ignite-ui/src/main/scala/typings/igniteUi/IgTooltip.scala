@@ -10,7 +10,7 @@ trait IgTooltip
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   var arrowLocation: js.UndefOr[String] = js.undefined
   

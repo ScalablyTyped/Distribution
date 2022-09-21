@@ -19,10 +19,10 @@ object componentFromStreamMod {
   inline def default[TProps](propsToReactNode: mapper[Subscribable[TProps], Subscribable[ReactNode]]): ComponentType[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(propsToReactNode.asInstanceOf[js.Any]).asInstanceOf[ComponentType[TProps]]
   
   inline def componentFromStreamWithConfig(config: ObservableConfig): js.Function1[
-    /* propsToReactNode */ mapper[Subscribable[js.Any], Subscribable[ReactNode]], 
-    ComponentType[js.Any]
+    /* propsToReactNode */ mapper[Subscribable[Any], Subscribable[ReactNode]], 
+    ComponentType[Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFromStreamWithConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* propsToReactNode */ mapper[Subscribable[js.Any], Subscribable[ReactNode]], 
-    ComponentType[js.Any]
+    /* propsToReactNode */ mapper[Subscribable[Any], Subscribable[ReactNode]], 
+    ComponentType[Any]
   ]]
 }

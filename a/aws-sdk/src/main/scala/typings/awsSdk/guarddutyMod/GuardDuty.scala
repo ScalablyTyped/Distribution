@@ -13,12 +13,26 @@ trait GuardDuty
      with Service {
   
   /**
-    * Accepts the invitation to be monitored by a master GuardDuty account.
+    * Accepts the invitation to be a member account and get monitored by a GuardDuty administrator account that sent the invitation.
+    */
+  def acceptAdministratorInvitation(): Request[AcceptAdministratorInvitationResponse, AWSError] = js.native
+  def acceptAdministratorInvitation(callback: js.Function2[/* err */ AWSError, /* data */ AcceptAdministratorInvitationResponse, Unit]): Request[AcceptAdministratorInvitationResponse, AWSError] = js.native
+  /**
+    * Accepts the invitation to be a member account and get monitored by a GuardDuty administrator account that sent the invitation.
+    */
+  def acceptAdministratorInvitation(params: AcceptAdministratorInvitationRequest): Request[AcceptAdministratorInvitationResponse, AWSError] = js.native
+  def acceptAdministratorInvitation(
+    params: AcceptAdministratorInvitationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AcceptAdministratorInvitationResponse, Unit]
+  ): Request[AcceptAdministratorInvitationResponse, AWSError] = js.native
+  
+  /**
+    * Accepts the invitation to be monitored by a GuardDuty administrator account.
     */
   def acceptInvitation(): Request[AcceptInvitationResponse, AWSError] = js.native
   def acceptInvitation(callback: js.Function2[/* err */ AWSError, /* data */ AcceptInvitationResponse, Unit]): Request[AcceptInvitationResponse, AWSError] = js.native
   /**
-    * Accepts the invitation to be monitored by a master GuardDuty account.
+    * Accepts the invitation to be monitored by a GuardDuty administrator account.
     */
   def acceptInvitation(params: AcceptInvitationRequest): Request[AcceptInvitationResponse, AWSError] = js.native
   def acceptInvitation(
@@ -27,12 +41,12 @@ trait GuardDuty
   ): Request[AcceptInvitationResponse, AWSError] = js.native
   
   /**
-    * Archives GuardDuty findings that are specified by the list of finding IDs.  Only the master account can archive findings. Member accounts don't have permission to archive findings from their accounts. 
+    * Archives GuardDuty findings that are specified by the list of finding IDs.  Only the administrator account can archive findings. Member accounts don't have permission to archive findings from their accounts. 
     */
   def archiveFindings(): Request[ArchiveFindingsResponse, AWSError] = js.native
   def archiveFindings(callback: js.Function2[/* err */ AWSError, /* data */ ArchiveFindingsResponse, Unit]): Request[ArchiveFindingsResponse, AWSError] = js.native
   /**
-    * Archives GuardDuty findings that are specified by the list of finding IDs.  Only the master account can archive findings. Member accounts don't have permission to archive findings from their accounts. 
+    * Archives GuardDuty findings that are specified by the list of finding IDs.  Only the administrator account can archive findings. Member accounts don't have permission to archive findings from their accounts. 
     */
   def archiveFindings(params: ArchiveFindingsRequest): Request[ArchiveFindingsResponse, AWSError] = js.native
   def archiveFindings(
@@ -71,12 +85,12 @@ trait GuardDuty
   ): Request[CreateFilterResponse, AWSError] = js.native
   
   /**
-    * Creates a new IPSet, which is called a trusted IP list in the console user interface. An IPSet is a list of IP addresses that are trusted for secure communication with AWS infrastructure and applications. GuardDuty doesn't generate findings for IP addresses that are included in IPSets. Only users from the master account can use this operation.
+    * Creates a new IPSet, which is called a trusted IP list in the console user interface. An IPSet is a list of IP addresses that are trusted for secure communication with Amazon Web Services infrastructure and applications. GuardDuty doesn't generate findings for IP addresses that are included in IPSets. Only users from the administrator account can use this operation.
     */
   def createIPSet(): Request[CreateIPSetResponse, AWSError] = js.native
   def createIPSet(callback: js.Function2[/* err */ AWSError, /* data */ CreateIPSetResponse, Unit]): Request[CreateIPSetResponse, AWSError] = js.native
   /**
-    * Creates a new IPSet, which is called a trusted IP list in the console user interface. An IPSet is a list of IP addresses that are trusted for secure communication with AWS infrastructure and applications. GuardDuty doesn't generate findings for IP addresses that are included in IPSets. Only users from the master account can use this operation.
+    * Creates a new IPSet, which is called a trusted IP list in the console user interface. An IPSet is a list of IP addresses that are trusted for secure communication with Amazon Web Services infrastructure and applications. GuardDuty doesn't generate findings for IP addresses that are included in IPSets. Only users from the administrator account can use this operation.
     */
   def createIPSet(params: CreateIPSetRequest): Request[CreateIPSetResponse, AWSError] = js.native
   def createIPSet(
@@ -85,12 +99,12 @@ trait GuardDuty
   ): Request[CreateIPSetResponse, AWSError] = js.native
   
   /**
-    * Creates member accounts of the current AWS account by specifying a list of AWS account IDs. This step is a prerequisite for managing the associated member accounts either by invitation or through an organization. When using Create Members as an organizations delegated administrator this action will enable GuardDuty in the added member accounts, with the exception of the organization master account, which must enable GuardDuty prior to being added as a member. If you are adding accounts by invitation use this action after GuardDuty has been enabled in potential member accounts and before using  Invite Members .
+    * Creates member accounts of the current Amazon Web Services account by specifying a list of Amazon Web Services account IDs. This step is a prerequisite for managing the associated member accounts either by invitation or through an organization. When using Create Members as an organizations delegated administrator this action will enable GuardDuty in the added member accounts, with the exception of the organization delegated administrator account, which must enable GuardDuty prior to being added as a member. If you are adding accounts by invitation use this action after GuardDuty has been enabled in potential member accounts and before using  Invite Members .
     */
   def createMembers(): Request[CreateMembersResponse, AWSError] = js.native
   def createMembers(callback: js.Function2[/* err */ AWSError, /* data */ CreateMembersResponse, Unit]): Request[CreateMembersResponse, AWSError] = js.native
   /**
-    * Creates member accounts of the current AWS account by specifying a list of AWS account IDs. This step is a prerequisite for managing the associated member accounts either by invitation or through an organization. When using Create Members as an organizations delegated administrator this action will enable GuardDuty in the added member accounts, with the exception of the organization master account, which must enable GuardDuty prior to being added as a member. If you are adding accounts by invitation use this action after GuardDuty has been enabled in potential member accounts and before using  Invite Members .
+    * Creates member accounts of the current Amazon Web Services account by specifying a list of Amazon Web Services account IDs. This step is a prerequisite for managing the associated member accounts either by invitation or through an organization. When using Create Members as an organizations delegated administrator this action will enable GuardDuty in the added member accounts, with the exception of the organization delegated administrator account, which must enable GuardDuty prior to being added as a member. If you are adding accounts by invitation use this action after GuardDuty has been enabled in potential member accounts and before using  Invite Members .
     */
   def createMembers(params: CreateMembersRequest): Request[CreateMembersResponse, AWSError] = js.native
   def createMembers(
@@ -127,12 +141,12 @@ trait GuardDuty
   ): Request[CreateSampleFindingsResponse, AWSError] = js.native
   
   /**
-    * Creates a new ThreatIntelSet. ThreatIntelSets consist of known malicious IP addresses. GuardDuty generates findings based on ThreatIntelSets. Only users of the master account can use this operation.
+    * Creates a new ThreatIntelSet. ThreatIntelSets consist of known malicious IP addresses. GuardDuty generates findings based on ThreatIntelSets. Only users of the administrator account can use this operation.
     */
   def createThreatIntelSet(): Request[CreateThreatIntelSetResponse, AWSError] = js.native
   def createThreatIntelSet(callback: js.Function2[/* err */ AWSError, /* data */ CreateThreatIntelSetResponse, Unit]): Request[CreateThreatIntelSetResponse, AWSError] = js.native
   /**
-    * Creates a new ThreatIntelSet. ThreatIntelSets consist of known malicious IP addresses. GuardDuty generates findings based on ThreatIntelSets. Only users of the master account can use this operation.
+    * Creates a new ThreatIntelSet. ThreatIntelSets consist of known malicious IP addresses. GuardDuty generates findings based on ThreatIntelSets. Only users of the administrator account can use this operation.
     */
   def createThreatIntelSet(params: CreateThreatIntelSetRequest): Request[CreateThreatIntelSetResponse, AWSError] = js.native
   def createThreatIntelSet(
@@ -141,12 +155,12 @@ trait GuardDuty
   ): Request[CreateThreatIntelSetResponse, AWSError] = js.native
   
   /**
-    * Declines invitations sent to the current member account by AWS accounts specified by their account IDs.
+    * Declines invitations sent to the current member account by Amazon Web Services accounts specified by their account IDs.
     */
   def declineInvitations(): Request[DeclineInvitationsResponse, AWSError] = js.native
   def declineInvitations(callback: js.Function2[/* err */ AWSError, /* data */ DeclineInvitationsResponse, Unit]): Request[DeclineInvitationsResponse, AWSError] = js.native
   /**
-    * Declines invitations sent to the current member account by AWS accounts specified by their account IDs.
+    * Declines invitations sent to the current member account by Amazon Web Services accounts specified by their account IDs.
     */
   def declineInvitations(params: DeclineInvitationsRequest): Request[DeclineInvitationsResponse, AWSError] = js.native
   def declineInvitations(
@@ -197,12 +211,12 @@ trait GuardDuty
   ): Request[DeleteIPSetResponse, AWSError] = js.native
   
   /**
-    * Deletes invitations sent to the current member account by AWS accounts specified by their account IDs.
+    * Deletes invitations sent to the current member account by Amazon Web Services accounts specified by their account IDs.
     */
   def deleteInvitations(): Request[DeleteInvitationsResponse, AWSError] = js.native
   def deleteInvitations(callback: js.Function2[/* err */ AWSError, /* data */ DeleteInvitationsResponse, Unit]): Request[DeleteInvitationsResponse, AWSError] = js.native
   /**
-    * Deletes invitations sent to the current member account by AWS accounts specified by their account IDs.
+    * Deletes invitations sent to the current member account by Amazon Web Services accounts specified by their account IDs.
     */
   def deleteInvitations(params: DeleteInvitationsRequest): Request[DeleteInvitationsResponse, AWSError] = js.native
   def deleteInvitations(
@@ -211,12 +225,12 @@ trait GuardDuty
   ): Request[DeleteInvitationsResponse, AWSError] = js.native
   
   /**
-    * Deletes GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
+    * Deletes GuardDuty member accounts (to the current GuardDuty administrator account) specified by the account IDs.
     */
   def deleteMembers(): Request[DeleteMembersResponse, AWSError] = js.native
   def deleteMembers(callback: js.Function2[/* err */ AWSError, /* data */ DeleteMembersResponse, Unit]): Request[DeleteMembersResponse, AWSError] = js.native
   /**
-    * Deletes GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
+    * Deletes GuardDuty member accounts (to the current GuardDuty administrator account) specified by the account IDs.
     */
   def deleteMembers(params: DeleteMembersRequest): Request[DeleteMembersResponse, AWSError] = js.native
   def deleteMembers(
@@ -253,6 +267,20 @@ trait GuardDuty
   ): Request[DeleteThreatIntelSetResponse, AWSError] = js.native
   
   /**
+    * Returns a list of malware scans.
+    */
+  def describeMalwareScans(): Request[DescribeMalwareScansResponse, AWSError] = js.native
+  def describeMalwareScans(callback: js.Function2[/* err */ AWSError, /* data */ DescribeMalwareScansResponse, Unit]): Request[DescribeMalwareScansResponse, AWSError] = js.native
+  /**
+    * Returns a list of malware scans.
+    */
+  def describeMalwareScans(params: DescribeMalwareScansRequest): Request[DescribeMalwareScansResponse, AWSError] = js.native
+  def describeMalwareScans(
+    params: DescribeMalwareScansRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMalwareScansResponse, Unit]
+  ): Request[DescribeMalwareScansResponse, AWSError] = js.native
+  
+  /**
     * Returns information about the account selected as the delegated administrator for GuardDuty.
     */
   def describeOrganizationConfiguration(): Request[DescribeOrganizationConfigurationResponse, AWSError] = js.native
@@ -283,14 +311,14 @@ trait GuardDuty
   ): Request[DescribePublishingDestinationResponse, AWSError] = js.native
   
   /**
-    * Disables an AWS account within the Organization as the GuardDuty delegated administrator.
+    * Disables an Amazon Web Services account within the Organization as the GuardDuty delegated administrator.
     */
   def disableOrganizationAdminAccount(): Request[DisableOrganizationAdminAccountResponse, AWSError] = js.native
   def disableOrganizationAdminAccount(
     callback: js.Function2[/* err */ AWSError, /* data */ DisableOrganizationAdminAccountResponse, Unit]
   ): Request[DisableOrganizationAdminAccountResponse, AWSError] = js.native
   /**
-    * Disables an AWS account within the Organization as the GuardDuty delegated administrator.
+    * Disables an Amazon Web Services account within the Organization as the GuardDuty delegated administrator.
     */
   def disableOrganizationAdminAccount(params: DisableOrganizationAdminAccountRequest): Request[DisableOrganizationAdminAccountResponse, AWSError] = js.native
   def disableOrganizationAdminAccount(
@@ -299,12 +327,28 @@ trait GuardDuty
   ): Request[DisableOrganizationAdminAccountResponse, AWSError] = js.native
   
   /**
-    * Disassociates the current GuardDuty member account from its master account.
+    * Disassociates the current GuardDuty member account from its administrator account.
+    */
+  def disassociateFromAdministratorAccount(): Request[DisassociateFromAdministratorAccountResponse, AWSError] = js.native
+  def disassociateFromAdministratorAccount(
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateFromAdministratorAccountResponse, Unit]
+  ): Request[DisassociateFromAdministratorAccountResponse, AWSError] = js.native
+  /**
+    * Disassociates the current GuardDuty member account from its administrator account.
+    */
+  def disassociateFromAdministratorAccount(params: DisassociateFromAdministratorAccountRequest): Request[DisassociateFromAdministratorAccountResponse, AWSError] = js.native
+  def disassociateFromAdministratorAccount(
+    params: DisassociateFromAdministratorAccountRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateFromAdministratorAccountResponse, Unit]
+  ): Request[DisassociateFromAdministratorAccountResponse, AWSError] = js.native
+  
+  /**
+    * Disassociates the current GuardDuty member account from its administrator account.
     */
   def disassociateFromMasterAccount(): Request[DisassociateFromMasterAccountResponse, AWSError] = js.native
   def disassociateFromMasterAccount(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateFromMasterAccountResponse, Unit]): Request[DisassociateFromMasterAccountResponse, AWSError] = js.native
   /**
-    * Disassociates the current GuardDuty member account from its master account.
+    * Disassociates the current GuardDuty member account from its administrator account.
     */
   def disassociateFromMasterAccount(params: DisassociateFromMasterAccountRequest): Request[DisassociateFromMasterAccountResponse, AWSError] = js.native
   def disassociateFromMasterAccount(
@@ -313,12 +357,12 @@ trait GuardDuty
   ): Request[DisassociateFromMasterAccountResponse, AWSError] = js.native
   
   /**
-    * Disassociates GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
+    * Disassociates GuardDuty member accounts (to the current GuardDuty administrator account) specified by the account IDs.
     */
   def disassociateMembers(): Request[DisassociateMembersResponse, AWSError] = js.native
   def disassociateMembers(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateMembersResponse, Unit]): Request[DisassociateMembersResponse, AWSError] = js.native
   /**
-    * Disassociates GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
+    * Disassociates GuardDuty member accounts (to the current GuardDuty administrator account) specified by the account IDs.
     */
   def disassociateMembers(params: DisassociateMembersRequest): Request[DisassociateMembersResponse, AWSError] = js.native
   def disassociateMembers(
@@ -327,20 +371,34 @@ trait GuardDuty
   ): Request[DisassociateMembersResponse, AWSError] = js.native
   
   /**
-    * Enables an AWS account within the organization as the GuardDuty delegated administrator.
+    * Enables an Amazon Web Services account within the organization as the GuardDuty delegated administrator.
     */
   def enableOrganizationAdminAccount(): Request[EnableOrganizationAdminAccountResponse, AWSError] = js.native
   def enableOrganizationAdminAccount(
     callback: js.Function2[/* err */ AWSError, /* data */ EnableOrganizationAdminAccountResponse, Unit]
   ): Request[EnableOrganizationAdminAccountResponse, AWSError] = js.native
   /**
-    * Enables an AWS account within the organization as the GuardDuty delegated administrator.
+    * Enables an Amazon Web Services account within the organization as the GuardDuty delegated administrator.
     */
   def enableOrganizationAdminAccount(params: EnableOrganizationAdminAccountRequest): Request[EnableOrganizationAdminAccountResponse, AWSError] = js.native
   def enableOrganizationAdminAccount(
     params: EnableOrganizationAdminAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ EnableOrganizationAdminAccountResponse, Unit]
   ): Request[EnableOrganizationAdminAccountResponse, AWSError] = js.native
+  
+  /**
+    * Provides the details for the GuardDuty administrator account associated with the current GuardDuty member account.
+    */
+  def getAdministratorAccount(): Request[GetAdministratorAccountResponse, AWSError] = js.native
+  def getAdministratorAccount(callback: js.Function2[/* err */ AWSError, /* data */ GetAdministratorAccountResponse, Unit]): Request[GetAdministratorAccountResponse, AWSError] = js.native
+  /**
+    * Provides the details for the GuardDuty administrator account associated with the current GuardDuty member account.
+    */
+  def getAdministratorAccount(params: GetAdministratorAccountRequest): Request[GetAdministratorAccountResponse, AWSError] = js.native
+  def getAdministratorAccount(
+    params: GetAdministratorAccountRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAdministratorAccountResponse, Unit]
+  ): Request[GetAdministratorAccountResponse, AWSError] = js.native
   
   /**
     * Retrieves an Amazon GuardDuty detector specified by the detectorId.
@@ -427,12 +485,26 @@ trait GuardDuty
   ): Request[GetInvitationsCountResponse, AWSError] = js.native
   
   /**
-    * Provides the details for the GuardDuty master account associated with the current GuardDuty member account.
+    * Returns the details of the malware scan settings.
+    */
+  def getMalwareScanSettings(): Request[GetMalwareScanSettingsResponse, AWSError] = js.native
+  def getMalwareScanSettings(callback: js.Function2[/* err */ AWSError, /* data */ GetMalwareScanSettingsResponse, Unit]): Request[GetMalwareScanSettingsResponse, AWSError] = js.native
+  /**
+    * Returns the details of the malware scan settings.
+    */
+  def getMalwareScanSettings(params: GetMalwareScanSettingsRequest): Request[GetMalwareScanSettingsResponse, AWSError] = js.native
+  def getMalwareScanSettings(
+    params: GetMalwareScanSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMalwareScanSettingsResponse, Unit]
+  ): Request[GetMalwareScanSettingsResponse, AWSError] = js.native
+  
+  /**
+    * Provides the details for the GuardDuty administrator account associated with the current GuardDuty member account.
     */
   def getMasterAccount(): Request[GetMasterAccountResponse, AWSError] = js.native
   def getMasterAccount(callback: js.Function2[/* err */ AWSError, /* data */ GetMasterAccountResponse, Unit]): Request[GetMasterAccountResponse, AWSError] = js.native
   /**
-    * Provides the details for the GuardDuty master account associated with the current GuardDuty member account.
+    * Provides the details for the GuardDuty administrator account associated with the current GuardDuty member account.
     */
   def getMasterAccount(params: GetMasterAccountRequest): Request[GetMasterAccountResponse, AWSError] = js.native
   def getMasterAccount(
@@ -455,18 +527,32 @@ trait GuardDuty
   ): Request[GetMemberDetectorsResponse, AWSError] = js.native
   
   /**
-    * Retrieves GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
+    * Retrieves GuardDuty member accounts (of the current GuardDuty administrator account) specified by the account IDs.
     */
   def getMembers(): Request[GetMembersResponse, AWSError] = js.native
   def getMembers(callback: js.Function2[/* err */ AWSError, /* data */ GetMembersResponse, Unit]): Request[GetMembersResponse, AWSError] = js.native
   /**
-    * Retrieves GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
+    * Retrieves GuardDuty member accounts (of the current GuardDuty administrator account) specified by the account IDs.
     */
   def getMembers(params: GetMembersRequest): Request[GetMembersResponse, AWSError] = js.native
   def getMembers(
     params: GetMembersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMembersResponse, Unit]
   ): Request[GetMembersResponse, AWSError] = js.native
+  
+  /**
+    * Provides the number of days left for each data source used in the free trial period.
+    */
+  def getRemainingFreeTrialDays(): Request[GetRemainingFreeTrialDaysResponse, AWSError] = js.native
+  def getRemainingFreeTrialDays(callback: js.Function2[/* err */ AWSError, /* data */ GetRemainingFreeTrialDaysResponse, Unit]): Request[GetRemainingFreeTrialDaysResponse, AWSError] = js.native
+  /**
+    * Provides the number of days left for each data source used in the free trial period.
+    */
+  def getRemainingFreeTrialDays(params: GetRemainingFreeTrialDaysRequest): Request[GetRemainingFreeTrialDaysResponse, AWSError] = js.native
+  def getRemainingFreeTrialDays(
+    params: GetRemainingFreeTrialDaysRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetRemainingFreeTrialDaysResponse, Unit]
+  ): Request[GetRemainingFreeTrialDaysResponse, AWSError] = js.native
   
   /**
     * Retrieves the ThreatIntelSet that is specified by the ThreatIntelSet ID.
@@ -483,12 +569,12 @@ trait GuardDuty
   ): Request[GetThreatIntelSetResponse, AWSError] = js.native
   
   /**
-    * Lists Amazon GuardDuty usage statistics over the last 30 days for the specified detector ID. For newly enabled detectors or data sources the cost returned will include only the usage so far under 30 days, this may differ from the cost metrics in the console, which projects usage over 30 days to provide a monthly cost estimate. For more information see Understanding How Usage Costs are Calculated.
+    * Lists Amazon GuardDuty usage statistics over the last 30 days for the specified detector ID. For newly enabled detectors or data sources, the cost returned will include only the usage so far under 30 days. This may differ from the cost metrics in the console, which project usage over 30 days to provide a monthly cost estimate. For more information, see Understanding How Usage Costs are Calculated.
     */
   def getUsageStatistics(): Request[GetUsageStatisticsResponse, AWSError] = js.native
   def getUsageStatistics(callback: js.Function2[/* err */ AWSError, /* data */ GetUsageStatisticsResponse, Unit]): Request[GetUsageStatisticsResponse, AWSError] = js.native
   /**
-    * Lists Amazon GuardDuty usage statistics over the last 30 days for the specified detector ID. For newly enabled detectors or data sources the cost returned will include only the usage so far under 30 days, this may differ from the cost metrics in the console, which projects usage over 30 days to provide a monthly cost estimate. For more information see Understanding How Usage Costs are Calculated.
+    * Lists Amazon GuardDuty usage statistics over the last 30 days for the specified detector ID. For newly enabled detectors or data sources, the cost returned will include only the usage so far under 30 days. This may differ from the cost metrics in the console, which project usage over 30 days to provide a monthly cost estimate. For more information, see Understanding How Usage Costs are Calculated.
     */
   def getUsageStatistics(params: GetUsageStatisticsRequest): Request[GetUsageStatisticsResponse, AWSError] = js.native
   def getUsageStatistics(
@@ -497,12 +583,12 @@ trait GuardDuty
   ): Request[GetUsageStatisticsResponse, AWSError] = js.native
   
   /**
-    * Invites other AWS accounts (created as members of the current AWS account by CreateMembers) to enable GuardDuty, and allow the current AWS account to view and manage these accounts' GuardDuty findings on their behalf as the master account.
+    * Invites other Amazon Web Services accounts (created as members of the current Amazon Web Services account by CreateMembers) to enable GuardDuty, and allow the current Amazon Web Services account to view and manage these accounts' findings on their behalf as the GuardDuty administrator account.
     */
   def inviteMembers(): Request[InviteMembersResponse, AWSError] = js.native
   def inviteMembers(callback: js.Function2[/* err */ AWSError, /* data */ InviteMembersResponse, Unit]): Request[InviteMembersResponse, AWSError] = js.native
   /**
-    * Invites other AWS accounts (created as members of the current AWS account by CreateMembers) to enable GuardDuty, and allow the current AWS account to view and manage these accounts' GuardDuty findings on their behalf as the master account.
+    * Invites other Amazon Web Services accounts (created as members of the current Amazon Web Services account by CreateMembers) to enable GuardDuty, and allow the current Amazon Web Services account to view and manage these accounts' findings on their behalf as the GuardDuty administrator account.
     */
   def inviteMembers(params: InviteMembersRequest): Request[InviteMembersResponse, AWSError] = js.native
   def inviteMembers(
@@ -553,12 +639,12 @@ trait GuardDuty
   ): Request[ListFindingsResponse, AWSError] = js.native
   
   /**
-    * Lists the IPSets of the GuardDuty service specified by the detector ID. If you use this operation from a member account, the IPSets returned are the IPSets from the associated master account.
+    * Lists the IPSets of the GuardDuty service specified by the detector ID. If you use this operation from a member account, the IPSets returned are the IPSets from the associated administrator account.
     */
   def listIPSets(): Request[ListIPSetsResponse, AWSError] = js.native
   def listIPSets(callback: js.Function2[/* err */ AWSError, /* data */ ListIPSetsResponse, Unit]): Request[ListIPSetsResponse, AWSError] = js.native
   /**
-    * Lists the IPSets of the GuardDuty service specified by the detector ID. If you use this operation from a member account, the IPSets returned are the IPSets from the associated master account.
+    * Lists the IPSets of the GuardDuty service specified by the detector ID. If you use this operation from a member account, the IPSets returned are the IPSets from the associated administrator account.
     */
   def listIPSets(params: ListIPSetsRequest): Request[ListIPSetsResponse, AWSError] = js.native
   def listIPSets(
@@ -567,12 +653,12 @@ trait GuardDuty
   ): Request[ListIPSetsResponse, AWSError] = js.native
   
   /**
-    * Lists all GuardDuty membership invitations that were sent to the current AWS account.
+    * Lists all GuardDuty membership invitations that were sent to the current Amazon Web Services account.
     */
   def listInvitations(): Request[ListInvitationsResponse, AWSError] = js.native
   def listInvitations(callback: js.Function2[/* err */ AWSError, /* data */ ListInvitationsResponse, Unit]): Request[ListInvitationsResponse, AWSError] = js.native
   /**
-    * Lists all GuardDuty membership invitations that were sent to the current AWS account.
+    * Lists all GuardDuty membership invitations that were sent to the current Amazon Web Services account.
     */
   def listInvitations(params: ListInvitationsRequest): Request[ListInvitationsResponse, AWSError] = js.native
   def listInvitations(
@@ -581,12 +667,12 @@ trait GuardDuty
   ): Request[ListInvitationsResponse, AWSError] = js.native
   
   /**
-    * Lists details about all member accounts for the current GuardDuty master account.
+    * Lists details about all member accounts for the current GuardDuty administrator account.
     */
   def listMembers(): Request[ListMembersResponse, AWSError] = js.native
   def listMembers(callback: js.Function2[/* err */ AWSError, /* data */ ListMembersResponse, Unit]): Request[ListMembersResponse, AWSError] = js.native
   /**
-    * Lists details about all member accounts for the current GuardDuty master account.
+    * Lists details about all member accounts for the current GuardDuty administrator account.
     */
   def listMembers(params: ListMembersRequest): Request[ListMembersResponse, AWSError] = js.native
   def listMembers(
@@ -609,12 +695,12 @@ trait GuardDuty
   ): Request[ListOrganizationAdminAccountsResponse, AWSError] = js.native
   
   /**
-    * Returns a list of publishing destinations associated with the specified dectectorId.
+    * Returns a list of publishing destinations associated with the specified detectorId.
     */
   def listPublishingDestinations(): Request[ListPublishingDestinationsResponse, AWSError] = js.native
   def listPublishingDestinations(callback: js.Function2[/* err */ AWSError, /* data */ ListPublishingDestinationsResponse, Unit]): Request[ListPublishingDestinationsResponse, AWSError] = js.native
   /**
-    * Returns a list of publishing destinations associated with the specified dectectorId.
+    * Returns a list of publishing destinations associated with the specified detectorId.
     */
   def listPublishingDestinations(params: ListPublishingDestinationsRequest): Request[ListPublishingDestinationsResponse, AWSError] = js.native
   def listPublishingDestinations(
@@ -637,12 +723,12 @@ trait GuardDuty
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
-    * Lists the ThreatIntelSets of the GuardDuty service specified by the detector ID. If you use this operation from a member account, the ThreatIntelSets associated with the master account are returned.
+    * Lists the ThreatIntelSets of the GuardDuty service specified by the detector ID. If you use this operation from a member account, the ThreatIntelSets associated with the administrator account are returned.
     */
   def listThreatIntelSets(): Request[ListThreatIntelSetsResponse, AWSError] = js.native
   def listThreatIntelSets(callback: js.Function2[/* err */ AWSError, /* data */ ListThreatIntelSetsResponse, Unit]): Request[ListThreatIntelSetsResponse, AWSError] = js.native
   /**
-    * Lists the ThreatIntelSets of the GuardDuty service specified by the detector ID. If you use this operation from a member account, the ThreatIntelSets associated with the master account are returned.
+    * Lists the ThreatIntelSets of the GuardDuty service specified by the detector ID. If you use this operation from a member account, the ThreatIntelSets associated with the administrator account are returned.
     */
   def listThreatIntelSets(params: ListThreatIntelSetsRequest): Request[ListThreatIntelSetsResponse, AWSError] = js.native
   def listThreatIntelSets(
@@ -775,6 +861,20 @@ trait GuardDuty
     params: UpdateIPSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateIPSetResponse, Unit]
   ): Request[UpdateIPSetResponse, AWSError] = js.native
+  
+  /**
+    * Updates the malware scan settings.
+    */
+  def updateMalwareScanSettings(): Request[UpdateMalwareScanSettingsResponse, AWSError] = js.native
+  def updateMalwareScanSettings(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMalwareScanSettingsResponse, Unit]): Request[UpdateMalwareScanSettingsResponse, AWSError] = js.native
+  /**
+    * Updates the malware scan settings.
+    */
+  def updateMalwareScanSettings(params: UpdateMalwareScanSettingsRequest): Request[UpdateMalwareScanSettingsResponse, AWSError] = js.native
+  def updateMalwareScanSettings(
+    params: UpdateMalwareScanSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateMalwareScanSettingsResponse, Unit]
+  ): Request[UpdateMalwareScanSettingsResponse, AWSError] = js.native
   
   /**
     * Contains information on member accounts to be updated.

@@ -12,7 +12,7 @@ trait Container extends StObject {
   var containerArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The number of CPU units set for the container. The value will be 0 if no value was specified in the container definition when the task definition was registered.
+    * The number of CPU units set for the container. The value is 0 if no value was specified in the container definition when the task definition was registered.
     */
   var cpu: js.UndefOr[String] = js.undefined
   
@@ -27,7 +27,7 @@ trait Container extends StObject {
   var gpuIds: js.UndefOr[GpuIds] = js.undefined
   
   /**
-    * The health status of the container. If health checks are not configured for this container in its task definition, then it reports the health status as UNKNOWN.
+    * The health status of the container. If health checks aren't configured for this container in its task definition, then it reports the health status as UNKNOWN.
     */
   var healthStatus: js.UndefOr[HealthStatus] = js.undefined
   
@@ -45,6 +45,11 @@ trait Container extends StObject {
     * The last known status of the container.
     */
   var lastStatus: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The details of any Amazon ECS managed agents associated with the container.
+    */
+  var managedAgents: js.UndefOr[ManagedAgents] = js.undefined
   
   /**
     * The hard limit (in MiB) of memory set for the container.
@@ -111,7 +116,7 @@ object Container {
     
     inline def setGpuIdsUndefined: Self = StObject.set(x, "gpuIds", js.undefined)
     
-    inline def setGpuIdsVarargs(value: String*): Self = StObject.set(x, "gpuIds", js.Array(value :_*))
+    inline def setGpuIdsVarargs(value: String*): Self = StObject.set(x, "gpuIds", js.Array(value*))
     
     inline def setHealthStatus(value: HealthStatus): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
     
@@ -129,6 +134,12 @@ object Container {
     
     inline def setLastStatusUndefined: Self = StObject.set(x, "lastStatus", js.undefined)
     
+    inline def setManagedAgents(value: ManagedAgents): Self = StObject.set(x, "managedAgents", value.asInstanceOf[js.Any])
+    
+    inline def setManagedAgentsUndefined: Self = StObject.set(x, "managedAgents", js.undefined)
+    
+    inline def setManagedAgentsVarargs(value: ManagedAgent*): Self = StObject.set(x, "managedAgents", js.Array(value*))
+    
     inline def setMemory(value: String): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
     inline def setMemoryReservation(value: String): Self = StObject.set(x, "memoryReservation", value.asInstanceOf[js.Any])
@@ -145,13 +156,13 @@ object Container {
     
     inline def setNetworkBindingsUndefined: Self = StObject.set(x, "networkBindings", js.undefined)
     
-    inline def setNetworkBindingsVarargs(value: NetworkBinding*): Self = StObject.set(x, "networkBindings", js.Array(value :_*))
+    inline def setNetworkBindingsVarargs(value: NetworkBinding*): Self = StObject.set(x, "networkBindings", js.Array(value*))
     
     inline def setNetworkInterfaces(value: NetworkInterfaces): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
     
     inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
     
-    inline def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
+    inline def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value*))
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

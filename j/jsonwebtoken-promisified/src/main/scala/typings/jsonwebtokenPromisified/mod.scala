@@ -2,8 +2,7 @@ package typings.jsonwebtokenPromisified
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jsonwebtokenPromisified.anon.Key
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,39 +16,41 @@ object mod {
   
   @JSImport("jsonwebtoken-promisified", "JsonWebTokenError")
   @js.native
-  class JsonWebTokenError protected ()
+  open class JsonWebTokenError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
-    def this(message: String, error: Error) = this()
+    def this(message: String, error: js.Error) = this()
     
-    var inner: Error = js.native
+    var inner: js.Error = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("jsonwebtoken-promisified", "NotBeforeError")
   @js.native
-  class NotBeforeError protected () extends JsonWebTokenError {
-    def this(message: String, date: Date) = this()
+  open class NotBeforeError protected () extends JsonWebTokenError {
+    def this(message: String, date: js.Date) = this()
     
-    var date: Date = js.native
+    var date: js.Date = js.native
   }
   
   @JSImport("jsonwebtoken-promisified", "TokenExpiredError")
   @js.native
-  class TokenExpiredError protected () extends JsonWebTokenError {
+  open class TokenExpiredError protected () extends JsonWebTokenError {
     def this(message: String, expiredAt: Double) = this()
     
     var expiredAt: Double = js.native
   }
   
-  inline def decode(token: String): Null | StringDictionary[js.Any] | String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any]).asInstanceOf[Null | StringDictionary[js.Any] | String]
-  inline def decode(token: String, options: DecodeOptions): Null | StringDictionary[js.Any] | String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | StringDictionary[js.Any] | String]
+  inline def decode(token: String): Null | StringDictionary[Any] | String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any]).asInstanceOf[Null | StringDictionary[Any] | String]
+  inline def decode(token: String, options: DecodeOptions): Null | StringDictionary[Any] | String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | StringDictionary[Any] | String]
   
   inline def sign(payload: String, secretOrPrivateKey: Secret): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def sign(payload: String, secretOrPrivateKey: Secret, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -117,7 +118,7 @@ object mod {
   
   type Secret = String | Buffer | Key
   
-  type SignCallback = js.Function2[/* err */ Error, /* encoded */ String, Unit]
+  type SignCallback = js.Function2[/* err */ js.Error, /* encoded */ String, Unit]
   
   trait SignOptions extends StObject {
     
@@ -175,7 +176,7 @@ object mod {
       
       inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
+      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value*))
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -260,13 +261,13 @@ object mod {
       
       inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
-      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value*))
       
       inline def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
       inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
+      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value*))
       
       inline def setClockTimestamp(value: Double): Self = StObject.set(x, "clockTimestamp", value.asInstanceOf[js.Any])
       
@@ -288,7 +289,7 @@ object mod {
       
       inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
       
-      inline def setIssuerVarargs(value: String*): Self = StObject.set(x, "issuer", js.Array(value :_*))
+      inline def setIssuerVarargs(value: String*): Self = StObject.set(x, "issuer", js.Array(value*))
       
       inline def setJwtid(value: String): Self = StObject.set(x, "jwtid", value.asInstanceOf[js.Any])
       

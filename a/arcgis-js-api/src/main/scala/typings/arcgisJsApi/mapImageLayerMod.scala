@@ -33,6 +33,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.saturation
 import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
 import typings.arcgisJsApi.esri.Collection
+import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.MapImageLayer
 import typings.arcgisJsApi.esri.MapImageLayerConstructor
 import typings.arcgisJsApi.esri.MapImageLayerProperties
@@ -54,17 +55,19 @@ object mapImageLayerMod extends Shortcut {
   @JSImport("esri/layers/MapImageLayer", JSImport.Namespace)
   @js.native
   /**
-    * MapImageLayer allows you to display and analyze data from [sublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#sublayers) defined in a [map service](http://server.arcgis.com/en/server/latest/publish-services/windows/what-is-a-map-service.htm), exporting images instead of features.
+    * MapImageLayer allows you to display and analyze data from [sublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#sublayers) defined in a [map service](https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-map-service.htm), exporting images instead of features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with MapImageLayer {
     def this(properties: MapImageLayerProperties) = this()
     
     /**
       * Blend modes are used to blend layers together to create an interesting effect in a layer, or even to produce what seems like a new layer.
+      *
+      * @default normal
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#blendMode)
       */
@@ -80,6 +83,24 @@ object mapImageLayerMod extends Shortcut {
     override def createServiceSublayers(): Collection[Sublayer] = js.native
     
     /**
+      * A list of custom parameters appended to the URL of all resources fetched by the layer.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-CustomParametersMixin.html#customParameters)
+      */
+    /* CompleteClass */
+    var customParameters: Any = js.native
+    
+    /**
+      * Effect provides various filter functions that can be performed on the layer to achieve different visual effects similar to how image filters work.
+      *
+      * @default null
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#effect)
+      */
+    /* CompleteClass */
+    var effect: Effect = js.native
+    
+    /**
       * Returns the sublayer with the given layerId.
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SublayersOwner.html#findSublayerById)
@@ -90,6 +111,8 @@ object mapImageLayerMod extends Shortcut {
     /**
       * The maximum scale (most zoomed in) at which the layer is visible in the view.
       *
+      * @default 0
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
       */
     /* CompleteClass */
@@ -97,6 +120,8 @@ object mapImageLayerMod extends Shortcut {
     
     /**
       * The minimum scale (most zoomed out) at which the layer is visible in the view.
+      *
+      * @default 0
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
       */
@@ -114,6 +139,8 @@ object mapImageLayerMod extends Shortcut {
     /**
       * Refresh interval of the layer in minutes.
       *
+      * @default 0
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
       */
     /* CompleteClass */
@@ -121,6 +148,8 @@ object mapImageLayerMod extends Shortcut {
     
     /**
       * The layer's time extent.
+      *
+      * @default null
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeExtent)
       */
@@ -130,6 +159,8 @@ object mapImageLayerMod extends Shortcut {
     /**
       * TimeInfo provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer.
       *
+      * @default null
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeInfo)
       */
     /* CompleteClass */
@@ -138,6 +169,8 @@ object mapImageLayerMod extends Shortcut {
     /**
       * A temporary offset of the time data based on a certain [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html).
       *
+      * @default null
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeOffset)
       */
     /* CompleteClass */
@@ -145,6 +178,8 @@ object mapImageLayerMod extends Shortcut {
     
     /**
       * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
+      *
+      * @default true
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#useViewTime)
       */

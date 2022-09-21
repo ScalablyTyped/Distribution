@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Account extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the account. For more information about ARNs in Organizations, see ARN Formats Supported by Organizations in the AWS Organizations User Guide.
+    * The Amazon Resource Name (ARN) of the account. For more information about ARNs in Organizations, see ARN Formats Supported by Organizations in the Amazon Web Services Service Authorization Reference.
     */
   var Arn: js.UndefOr[AccountArn] = js.undefined
   
   /**
-    * The email address associated with the AWS account. The regex pattern for this parameter is a string of characters that represents a standard internet email address.
+    * The email address associated with the Amazon Web Services account. The regex pattern for this parameter is a string of characters that represents a standard internet email address.
     */
   var Email: js.UndefOr[typings.awsSdk.organizationsMod.Email] = js.undefined
   
@@ -29,7 +29,7 @@ trait Account extends StObject {
   /**
     * The date the account became a part of the organization.
     */
-  var JoinedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var JoinedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The friendly name of the account. The regex pattern that is used to validate this parameter is a string of any of the characters in the ASCII character range.
@@ -66,7 +66,7 @@ object Account {
     
     inline def setJoinedMethodUndefined: Self = StObject.set(x, "JoinedMethod", js.undefined)
     
-    inline def setJoinedTimestamp(value: Timestamp): Self = StObject.set(x, "JoinedTimestamp", value.asInstanceOf[js.Any])
+    inline def setJoinedTimestamp(value: js.Date): Self = StObject.set(x, "JoinedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setJoinedTimestampUndefined: Self = StObject.set(x, "JoinedTimestamp", js.undefined)
     

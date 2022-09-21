@@ -5,10 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An ExtendedSourceContext is a SourceContext combined with additional
-  * details describing the context.
-  */
 trait SchemaExtendedSourceContext extends StObject {
   
   /**
@@ -19,7 +15,7 @@ trait SchemaExtendedSourceContext extends StObject {
   /**
     * Labels with user defined metadata.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
 }
 object SchemaExtendedSourceContext {
   
@@ -35,6 +31,8 @@ object SchemaExtendedSourceContext {
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsNull: Self = StObject.set(x, "labels", null)
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }

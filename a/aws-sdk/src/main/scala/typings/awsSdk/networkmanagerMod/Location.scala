@@ -9,17 +9,17 @@ trait Location extends StObject {
   /**
     * The physical address.
     */
-  var Address: js.UndefOr[String] = js.undefined
+  var Address: js.UndefOr[ConstrainedString] = js.undefined
   
   /**
     * The latitude.
     */
-  var Latitude: js.UndefOr[String] = js.undefined
+  var Latitude: js.UndefOr[ConstrainedString] = js.undefined
   
   /**
     * The longitude.
     */
-  var Longitude: js.UndefOr[String] = js.undefined
+  var Longitude: js.UndefOr[ConstrainedString] = js.undefined
 }
 object Location {
   
@@ -30,15 +30,15 @@ object Location {
   
   extension [Self <: Location](x: Self) {
     
-    inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: ConstrainedString): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
     inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
-    inline def setLatitude(value: String): Self = StObject.set(x, "Latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: ConstrainedString): Self = StObject.set(x, "Latitude", value.asInstanceOf[js.Any])
     
     inline def setLatitudeUndefined: Self = StObject.set(x, "Latitude", js.undefined)
     
-    inline def setLongitude(value: String): Self = StObject.set(x, "Longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: ConstrainedString): Self = StObject.set(x, "Longitude", value.asInstanceOf[js.Any])
     
     inline def setLongitudeUndefined: Self = StObject.set(x, "Longitude", js.undefined)
   }

@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object checkboxCheckedMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/system/dist/components/CheckboxChecked", JSImport.Default)
   @js.native
-  val default: SFC[CheckboxCheckedProps] = js.native
+  val default: FC[CheckboxCheckedProps] = js.native
   
   trait CheckboxCheckedProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object CheckboxCheckedProps {
     
@@ -29,14 +29,14 @@ object checkboxCheckedMod extends Shortcut {
     
     extension [Self <: CheckboxCheckedProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[CheckboxCheckedProps]
+  type _To = FC[CheckboxCheckedProps]
   
   /* This means you don't have to write `default`, but can instead just say `checkboxCheckedMod.foo` */
-  override def _to: SFC[CheckboxCheckedProps] = default
+  override def _to: FC[CheckboxCheckedProps] = default
 }

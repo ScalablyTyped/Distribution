@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SpatialCoordinateSystem extends StObject {
   
-  var tryGetTransformTo: js.Any
+  var tryGetTransformTo: Any
 }
 object SpatialCoordinateSystem {
   
-  inline def apply(tryGetTransformTo: js.Any): SpatialCoordinateSystem = {
+  inline def apply(tryGetTransformTo: Any): SpatialCoordinateSystem = {
     val __obj = js.Dynamic.literal(tryGetTransformTo = tryGetTransformTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialCoordinateSystem]
   }
   
   extension [Self <: SpatialCoordinateSystem](x: Self) {
     
-    inline def setTryGetTransformTo(value: js.Any): Self = StObject.set(x, "tryGetTransformTo", value.asInstanceOf[js.Any])
+    inline def setTryGetTransformTo(value: Any): Self = StObject.set(x, "tryGetTransformTo", value.asInstanceOf[js.Any])
   }
 }

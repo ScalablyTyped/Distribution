@@ -4,82 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dns/v2beta1", "dns_v2beta1.Resource$Projects")
 @js.native
-class ResourceProjects protected () extends StObject {
+open class ResourceProjects protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * dns.projects.get
-    * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Google Cloud DNS API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/dns
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
-    *
-    * var google = require('googleapis');
-    * var dns = google.dns('v2beta1');
-    *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Identifies the project addressed by this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   dns.projects.get(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
-    *   });
-    * });
-    *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias dns.projects.get
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string=} params.clientOperationId
-    * @param {string} params.project
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def get(): GaxiosPromise[SchemaProject] = js.native
   def get(callback: BodyResponseCallback[SchemaProject]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProject] = js.native
@@ -87,13 +24,84 @@ class ResourceProjects protected () extends StObject {
   def get(params: ParamsResourceProjectsGet, callback: BodyResponseCallback[SchemaProject]): Unit = js.native
   def get(
     params: ParamsResourceProjectsGet,
-    options: BodyResponseCallback[SchemaProject],
-    callback: BodyResponseCallback[SchemaProject]
+    options: BodyResponseCallback[Readable | SchemaProject],
+    callback: BodyResponseCallback[Readable | SchemaProject]
   ): Unit = js.native
   def get(params: ParamsResourceProjectsGet, options: MethodOptions): GaxiosPromise[SchemaProject] = js.native
   def get(
     params: ParamsResourceProjectsGet,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaProject]
+  ): Unit = js.native
+  /**
+    * dns.projects.get
+    * @desc Fetch the representation of an existing Project.
+    * @example
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dns.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const dns = google.dns('v2beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloud-platform.read-only',
+    *       'https://www.googleapis.com/auth/ndev.clouddns.readonly',
+    *       'https://www.googleapis.com/auth/ndev.clouddns.readwrite',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dns.projects.get({
+    *     // For mutating operation requests only. An optional identifier
+    *     // specified by the client. Must be unique for operation resources in the
+    *     // Operations collection.
+    *     clientOperationId: 'placeholder-value',
+    *     // Identifies the project addressed by this request.
+    *     project: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "number": "my_number",
+    *   //   "quota": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * @alias dns.projects.get
+    * @memberOf! ()
+    *
+    * @param {object} params Parameters for request
+    * @param {string=} params.clientOperationId For mutating operation requests only. An optional identifier specified by the client. Must be unique for operation resources in the Operations collection.
+    * @param {string} params.project Identifies the project addressed by this request.
+    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param {callback} callback The callback that handles the response.
+    * @return {object} Request object
+    */
+  def get(params: ParamsResourceProjectsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceProjectsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

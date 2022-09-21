@@ -24,5 +24,5 @@ Instantiable0[Polygon]
     */
   def fromExtent(extent: Extent): Polygon = js.native
   
-  def fromJSON(json: js.Any): Polygon = js.native
+  def fromJSON(json: Any): Polygon = js.native
 }

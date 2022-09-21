@@ -17,11 +17,11 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def hsl(colorString: String): Color | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(colorString.asInstanceOf[js.Any]).asInstanceOf[Color | Null]
+    inline def hsl[TColorStr /* <: String | Null */](colorString: TColorStr): Null | Color = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(colorString.asInstanceOf[js.Any]).asInstanceOf[Null | Color]
     
-    inline def hwb(colorString: String): Color | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("hwb")(colorString.asInstanceOf[js.Any]).asInstanceOf[Color | Null]
+    inline def hwb[TColorStr /* <: String | Null */](colorString: TColorStr): Null | Color = ^.asInstanceOf[js.Dynamic].applyDynamic("hwb")(colorString.asInstanceOf[js.Any]).asInstanceOf[Null | Color]
     
-    inline def rgb(colorString: String): Color | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(colorString.asInstanceOf[js.Any]).asInstanceOf[Color | Null]
+    inline def rgb[TColorStr /* <: String | Null */](colorString: TColorStr): Null | Color = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(colorString.asInstanceOf[js.Any]).asInstanceOf[Null | Color]
   }
   
   object to {
@@ -30,23 +30,23 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def hex(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hex")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def hex(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hex")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     
-    inline def hsl(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def hsl(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     
-    inline def hwb(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hwb")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def hwb(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hwb")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     
-    inline def keyword(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyword")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def keyword(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyword")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     
     object rgb {
       
-      inline def apply(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def apply(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
       
       @JSImport("color-string", "to.rgb")
       @js.native
       val ^ : js.Any = js.native
       
-      inline def percent(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("percent")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def percent(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("percent")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     }
   }
   

@@ -17,7 +17,7 @@ trait PutScalingPolicyInput extends StObject {
   var EvaluationPeriods: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
-    * A unique identifier for a fleet to apply this policy to. You can use either the fleet ID or ARN value. The fleet cannot be in any of the following statuses: ERROR or DELETING.
+    * A unique identifier for the fleet to apply this policy to. You can use either the fleet ID or ARN value. The fleet cannot be in any of the following statuses: ERROR or DELETING.
     */
   var FleetId: FleetIdOrArn
   
@@ -27,7 +27,7 @@ trait PutScalingPolicyInput extends StObject {
   var MetricName: typings.awsSdk.gameliftMod.MetricName
   
   /**
-    * A descriptive label that is associated with a scaling policy. Policy names do not need to be unique. A fleet can have only one scaling policy with the same name.
+    * A descriptive label that is associated with a fleet's scaling policy. Policy names do not need to be unique. A fleet can have only one scaling policy with the same name.
     */
   var Name: NonZeroAndMaxString
   
@@ -47,7 +47,7 @@ trait PutScalingPolicyInput extends StObject {
   var ScalingAdjustmentType: js.UndefOr[typings.awsSdk.gameliftMod.ScalingAdjustmentType] = js.undefined
   
   /**
-    * The settings for a target-based scaling policy.
+    * An object that contains settings for a target-based scaling policy.
     */
   var TargetConfiguration: js.UndefOr[typings.awsSdk.gameliftMod.TargetConfiguration] = js.undefined
   

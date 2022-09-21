@@ -1412,7 +1412,7 @@ object componentMod {
     /* arg */ CSSObject | (js.Function1[/* arg */ PropsType, CSSObject]), 
     JSXElementConstructor[PropsType]
   ]]
-  inline def apply[Component /* <: (js.Function1[/* props */ js.Any, ReactElement | Null]) | (Instantiable1[/* props */ js.Any, typings.react.mod.Component[js.Any, js.Any, js.Any]]) */, PropsType /* <: js.Object & ApparentComponentProps[Component] */](component: Component): js.Function1[
+  inline def apply[Component /* <: (js.Function1[/* props */ Any, ReactElement | Null]) | (Instantiable1[/* props */ Any, typings.react.mod.Component[Any, Any, Any]]) */, PropsType /* <: js.Object & ApparentComponentProps[Component] */](component: Component): js.Function1[
     /* arg */ CSSObject | (js.Function1[/* arg */ PropsType, CSSObject]), 
     JSXElementConstructor[PropsType]
   ] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -1425,5 +1425,5 @@ object componentMod {
   val ^ : js.Any = js.native
   
   type ApparentComponentProps[// eslint-disable-next-line @typescript-eslint/no-explicit-any
-  C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */] = ComponentPropsWithRef[C] | (LibraryManagedAttributes[C, js.Any])
+  C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any */] = ComponentPropsWithRef[C] | (LibraryManagedAttributes[C, Any])
 }

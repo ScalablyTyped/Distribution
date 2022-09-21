@@ -9,10 +9,10 @@ Assert methods based on .NET Assert class.
 | ------------------ | :-------------: |
 | Full name          | assertsharp |
 | Keywords           | assert |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1098 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 46.666666666666664 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/brunolm/AssertSharp#readme)

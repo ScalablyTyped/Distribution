@@ -12,10 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("osrm", JSImport.Namespace)
 @js.native
-class ^ protected ()
+open class ^ protected ()
   extends StObject
      with OSRM {
-  def this(name: String) = this()
+  def this(options: String) = this()
+  // tslint:disable-next-line:unified-signatures
+  def this(options: PathConstructorOptions) = this()
+  // tslint:disable-next-line:unified-signatures
+  def this(options: SharedMemoryConstructorOptions) = this()
 }
 @JSImport("osrm", JSImport.Namespace)
 @js.native

@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for performing Google Cloud Vision API tasks over a user-provided
-  * image, with user-requested features, and with context information.
-  */
 trait SchemaGoogleCloudVisionV1p2beta1AnnotateImageRequest extends StObject {
   
   /**
@@ -38,7 +34,7 @@ object SchemaGoogleCloudVisionV1p2beta1AnnotateImageRequest {
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: SchemaGoogleCloudVisionV1p2beta1Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: SchemaGoogleCloudVisionV1p2beta1Feature*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setImage(value: SchemaGoogleCloudVisionV1p2beta1Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

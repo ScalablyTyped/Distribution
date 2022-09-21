@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@blueprintjs/core/lib/esm/components", "Divider")
 @js.native
-class Divider protected ()
+open class Divider protected ()
   extends typings.blueprintjsCore.dividerMod.Divider {
   def this(props: IDividerProps) = this()
-  def this(props: IDividerProps, context: js.Any) = this()
+  def this(props: IDividerProps, context: Any) = this()
 }
 /* static members */
 object Divider {

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateDataSetRequest extends StObject {
   
   /**
-    * The AWS account ID.
+    * The Amazon Web Services account ID.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
-    * Groupings of columns that work together in certain QuickSight features. Currently, only geospatial hierarchy is supported.
+    * Groupings of columns that work together in certain Amazon QuickSight features. Currently, only geospatial hierarchy is supported.
     */
   var ColumnGroups: js.UndefOr[ColumnGroupList] = js.undefined
   
@@ -22,9 +22,16 @@ trait UpdateDataSetRequest extends StObject {
   var ColumnLevelPermissionRules: js.UndefOr[ColumnLevelPermissionRuleList] = js.undefined
   
   /**
-    * The ID for the dataset that you want to update. This ID is unique per AWS Region for each AWS account.
+    * The ID for the dataset that you want to update. This ID is unique per Amazon Web Services Region for each Amazon Web Services account.
     */
   var DataSetId: ResourceId
+  
+  var DataSetUsageConfiguration: js.UndefOr[typings.awsSdk.quicksightMod.DataSetUsageConfiguration] = js.undefined
+  
+  /**
+    * The folder that contains fields and nested subfolders for your dataset.
+    */
+  var FieldFolders: js.UndefOr[FieldFolderMap] = js.undefined
   
   /**
     * Indicates whether you want to import the data into SPICE.
@@ -50,6 +57,11 @@ trait UpdateDataSetRequest extends StObject {
     * The row-level security configuration for the data you want to create.
     */
   var RowLevelPermissionDataSet: js.UndefOr[typings.awsSdk.quicksightMod.RowLevelPermissionDataSet] = js.undefined
+  
+  /**
+    * The configuration of tags on a dataset to set row-level security. Row-level security tags are currently supported for anonymous embedding only.
+    */
+  var RowLevelPermissionTagConfiguration: js.UndefOr[typings.awsSdk.quicksightMod.RowLevelPermissionTagConfiguration] = js.undefined
 }
 object UpdateDataSetRequest {
   
@@ -72,15 +84,23 @@ object UpdateDataSetRequest {
     
     inline def setColumnGroupsUndefined: Self = StObject.set(x, "ColumnGroups", js.undefined)
     
-    inline def setColumnGroupsVarargs(value: ColumnGroup*): Self = StObject.set(x, "ColumnGroups", js.Array(value :_*))
+    inline def setColumnGroupsVarargs(value: ColumnGroup*): Self = StObject.set(x, "ColumnGroups", js.Array(value*))
     
     inline def setColumnLevelPermissionRules(value: ColumnLevelPermissionRuleList): Self = StObject.set(x, "ColumnLevelPermissionRules", value.asInstanceOf[js.Any])
     
     inline def setColumnLevelPermissionRulesUndefined: Self = StObject.set(x, "ColumnLevelPermissionRules", js.undefined)
     
-    inline def setColumnLevelPermissionRulesVarargs(value: ColumnLevelPermissionRule*): Self = StObject.set(x, "ColumnLevelPermissionRules", js.Array(value :_*))
+    inline def setColumnLevelPermissionRulesVarargs(value: ColumnLevelPermissionRule*): Self = StObject.set(x, "ColumnLevelPermissionRules", js.Array(value*))
     
     inline def setDataSetId(value: ResourceId): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    
+    inline def setDataSetUsageConfiguration(value: DataSetUsageConfiguration): Self = StObject.set(x, "DataSetUsageConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setDataSetUsageConfigurationUndefined: Self = StObject.set(x, "DataSetUsageConfiguration", js.undefined)
+    
+    inline def setFieldFolders(value: FieldFolderMap): Self = StObject.set(x, "FieldFolders", value.asInstanceOf[js.Any])
+    
+    inline def setFieldFoldersUndefined: Self = StObject.set(x, "FieldFolders", js.undefined)
     
     inline def setImportMode(value: DataSetImportMode): Self = StObject.set(x, "ImportMode", value.asInstanceOf[js.Any])
     
@@ -95,5 +115,9 @@ object UpdateDataSetRequest {
     inline def setRowLevelPermissionDataSet(value: RowLevelPermissionDataSet): Self = StObject.set(x, "RowLevelPermissionDataSet", value.asInstanceOf[js.Any])
     
     inline def setRowLevelPermissionDataSetUndefined: Self = StObject.set(x, "RowLevelPermissionDataSet", js.undefined)
+    
+    inline def setRowLevelPermissionTagConfiguration(value: RowLevelPermissionTagConfiguration): Self = StObject.set(x, "RowLevelPermissionTagConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setRowLevelPermissionTagConfigurationUndefined: Self = StObject.set(x, "RowLevelPermissionTagConfiguration", js.undefined)
   }
 }

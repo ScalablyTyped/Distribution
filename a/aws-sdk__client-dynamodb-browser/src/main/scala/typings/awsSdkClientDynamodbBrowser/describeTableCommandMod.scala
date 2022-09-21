@@ -16,7 +16,7 @@ object describeTableCommandMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/commands/DescribeTableCommand", "DescribeTableCommand")
   @js.native
-  class DescribeTableCommand protected ()
+  open class DescribeTableCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object describeTableCommandMod {
     override val middlewareStack: MiddlewareStack[DescribeTableInput, DescribeTableOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[DescribeTableInput, DescribeTableOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: DynamoDBResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DescribeTableInput, DescribeTableOutput] = js.native
   }
 }

@@ -26,6 +26,6 @@ object Measure {
     
     inline def setTuple(value: js.Array[String]): Self = StObject.set(x, "tuple", value.asInstanceOf[js.Any])
     
-    inline def setTupleVarargs(value: String*): Self = StObject.set(x, "tuple", js.Array(value :_*))
+    inline def setTupleVarargs(value: String*): Self = StObject.set(x, "tuple", js.Array(value*))
   }
 }

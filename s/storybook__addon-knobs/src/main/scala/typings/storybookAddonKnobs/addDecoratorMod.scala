@@ -8,5 +8,5 @@ object addDecoratorMod {
   
   @JSImport("@storybook/addon-knobs/dist/preset/addDecorator", "decorators")
   @js.native
-  val decorators: js.Array[js.Function1[/* args */ js.Any, js.Any]] = js.native
+  val decorators: js.Array[js.Function1[/* args */ Any, Any]] = js.native
 }

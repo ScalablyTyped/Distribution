@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.BitmapText")
 @js.native
-class BitmapText ()
+open class BitmapText ()
   extends StObject
      with typings.easeljs.createjs.BitmapText {
   def this(text: String) = this()

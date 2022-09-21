@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LoadNetworkResourceRequest extends StObject {
   
   /**
-    * Frame id to get the resource for.
+    * Frame id to get the resource for. Mandatory for frame targets, and
+    * should be omitted for worker targets.
     */
-  var frameId: FrameId
+  var frameId: js.UndefOr[FrameId] = js.undefined
   
   /**
     * Options for the request.
@@ -24,14 +25,16 @@ trait LoadNetworkResourceRequest extends StObject {
 }
 object LoadNetworkResourceRequest {
   
-  inline def apply(frameId: FrameId, options: LoadNetworkResourceOptions, url: String): LoadNetworkResourceRequest = {
-    val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  inline def apply(options: LoadNetworkResourceOptions, url: String): LoadNetworkResourceRequest = {
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadNetworkResourceRequest]
   }
   
   extension [Self <: LoadNetworkResourceRequest](x: Self) {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    
+    inline def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
     
     inline def setOptions(value: LoadNetworkResourceOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

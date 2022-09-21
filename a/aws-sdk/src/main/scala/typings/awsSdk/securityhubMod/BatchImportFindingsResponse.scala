@@ -36,7 +36,7 @@ object BatchImportFindingsResponse {
     
     inline def setFailedFindingsUndefined: Self = StObject.set(x, "FailedFindings", js.undefined)
     
-    inline def setFailedFindingsVarargs(value: ImportFindingsError*): Self = StObject.set(x, "FailedFindings", js.Array(value :_*))
+    inline def setFailedFindingsVarargs(value: ImportFindingsError*): Self = StObject.set(x, "FailedFindings", js.Array(value*))
     
     inline def setSuccessCount(value: Integer): Self = StObject.set(x, "SuccessCount", value.asInstanceOf[js.Any])
   }

@@ -1,33 +1,54 @@
 package typings.amqpConnectionManager
 
-import typings.node.Buffer
-import typings.node.NodeJS.ErrnoException
+import typings.amqpConnectionManager.amqpConnectionManagerMod.AmpqConnectionOptions
+import typings.amqplib.propertiesMod.Options.Connect
+import typings.node.bufferMod.global.Buffer
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.LookupFunction
-import typings.node.netMod.Socket
+import typings.node.netMod.OnReadOpts
+import typings.node.streamMod.Duplex
 import typings.node.tlsMod.KeyObject
 import typings.node.tlsMod.PSKCallbackNegotation
 import typings.node.tlsMod.PeerCertificate
 import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.SecureVersion
-import typings.std.Error
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
+  trait Cancel extends StObject {
+    
+    def cancel(): Unit
+    
+    var promise: js.Promise[Unit]
+  }
+  object Cancel {
+    
+    inline def apply(cancel: () => Unit, promise: js.Promise[Unit]): Cancel = {
+      val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), promise = promise.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Cancel]
+    }
+    
+    extension [Self <: Cancel](x: Self) {
+      
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      
+      inline def setPromise(value: js.Promise[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Connection extends StObject {
     
     var connection: typings.amqplib.mod.Connection
     
-    var url: String
+    var url: String | Connect
   }
   object Connection {
     
-    inline def apply(connection: typings.amqplib.mod.Connection, url: String): Connection = {
+    inline def apply(connection: typings.amqplib.mod.Connection, url: String | Connect): Connection = {
       val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Connection]
     }
@@ -36,18 +57,43 @@ object anon {
       
       inline def setConnection(value: typings.amqplib.mod.Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
+      inline def setUrl(value: String | Connect): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ConnectionOptions extends StObject {
+    
+    var connectionOptions: js.UndefOr[AmpqConnectionOptions] = js.undefined
+    
+    var url: String
+  }
+  object ConnectionOptions {
+    
+    inline def apply(url: String): ConnectionOptions = {
+      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ConnectionOptions]
+    }
+    
+    extension [Self <: ConnectionOptions](x: Self) {
+      
+      inline def setConnectionOptions(value: AmpqConnectionOptions): Self = StObject.set(x, "connectionOptions", value.asInstanceOf[js.Any])
+      
+      inline def setConnectionOptionsUndefined: Self = StObject.set(x, "connectionOptions", js.undefined)
+      
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined node.tls.ConnectionOptions & {  noDelay :boolean | undefined,   timeout :number | undefined,   keepAlive :boolean | undefined,   keepAliveDelay :number | undefined,   clientProperties :any | undefined,   credentials :{  mechanism :string,   username :string,   password :string, response (): node.Buffer} | undefined} */
-  trait ConnectionOptionsnoDelayb extends StObject {
+  /* Inlined node.tls.ConnectionOptions & {  noDelay :boolean | undefined,   timeout :number | undefined,   keepAlive :boolean | undefined,   keepAliveDelay :number | undefined,   clientProperties :any | undefined,   credentials :{  mechanism :string,   username :string,   password :string, response (): node.buffer.<global>.Buffer} | {  mechanism :string, response (): node.buffer.<global>.Buffer} | undefined} */
+  trait ConnectionOptionsnoDelayb
+    extends StObject
+       with AmpqConnectionOptions {
     
     /**
       * An array of strings or a Buffer naming possible ALPN protocols.
       * (Protocols should be ordered by their priority.)
       */
-    var ALPNProtocols: js.UndefOr[(js.Array[String | Uint8Array]) | Uint8Array] = js.undefined
+    var ALPNProtocols: js.UndefOr[(js.Array[String | js.typedarray.Uint8Array]) | js.typedarray.Uint8Array] = js.undefined
     
     /**
       * SNICallback(servername, cb) <Function> A function that will be
@@ -61,7 +107,7 @@ object anon {
     var SNICallback: js.UndefOr[
         js.Function2[
           /* servername */ String, 
-          /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit], 
+          /* cb */ js.Function2[/* err */ js.Error | Null, /* ctx */ js.UndefOr[SecureContext], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -87,7 +133,9 @@ object anon {
     var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
     // Establish secure connection on a given socket rather than creating a new socket
-    var checkServerIdentity: js.UndefOr[js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]]] = js.undefined
+    var checkServerIdentity: js.UndefOr[
+        js.Function2[/* hostname */ String, /* cert */ PeerCertificate, js.UndefOr[js.Error]]
+      ] = js.undefined
     
     /**
       * Cipher suite specification, replacing the default. For more
@@ -102,9 +150,9 @@ object anon {
       */
     var clientCertEngine: js.UndefOr[String] = js.undefined
     
-    var clientProperties: js.UndefOr[js.Any] = js.undefined
+    var clientProperties: js.UndefOr[Any] = js.undefined
     
-    var credentials: js.UndefOr[Mechanism] = js.undefined
+    var credentials: js.UndefOr[Mechanism | Response] = js.undefined
     
     /**
       * PEM formatted CRLs (Certificate Revocation Lists).
@@ -162,7 +210,7 @@ object anon {
       * object.passphrase is optional. Encrypted keys will be decrypted with
       * object.passphrase if provided, or options.passphrase if it is not.
       */
-    var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.undefined
+    var key: js.UndefOr[String | Buffer | (js.Array[String | Buffer | KeyObject])] = js.undefined
     
     var lookup: js.UndefOr[LookupFunction] = js.undefined
     
@@ -313,7 +361,7 @@ object anon {
     var sigalgs: js.UndefOr[String] = js.undefined
     
     // Creates unix socket connection to path. If this option is specified, `host` and `port` are ignored.
-    var socket: js.UndefOr[Socket] = js.undefined
+    var socket: js.UndefOr[Duplex] = js.undefined
     
     /**
       * 48-bytes of cryptographically strong pseudo-random data.
@@ -332,25 +380,25 @@ object anon {
     
     extension [Self <: ConnectionOptionsnoDelayb](x: Self) {
       
-      inline def setALPNProtocols(value: (js.Array[String | Uint8Array]) | Uint8Array): Self = StObject.set(x, "ALPNProtocols", value.asInstanceOf[js.Any])
+      inline def setALPNProtocols(value: (js.Array[String | js.typedarray.Uint8Array]) | js.typedarray.Uint8Array): Self = StObject.set(x, "ALPNProtocols", value.asInstanceOf[js.Any])
       
       inline def setALPNProtocolsUndefined: Self = StObject.set(x, "ALPNProtocols", js.undefined)
       
-      inline def setALPNProtocolsVarargs(value: (String | Uint8Array)*): Self = StObject.set(x, "ALPNProtocols", js.Array(value :_*))
+      inline def setALPNProtocolsVarargs(value: (String | js.typedarray.Uint8Array)*): Self = StObject.set(x, "ALPNProtocols", js.Array(value*))
       
       inline def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value*))
       
       inline def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
       inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value :_*))
+      inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value*))
       
-      inline def setCheckServerIdentity(value: (/* host */ String, /* cert */ PeerCertificate) => js.UndefOr[Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
+      inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ PeerCertificate) => js.UndefOr[js.Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
       
       inline def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
       
@@ -362,11 +410,11 @@ object anon {
       
       inline def setClientCertEngineUndefined: Self = StObject.set(x, "clientCertEngine", js.undefined)
       
-      inline def setClientProperties(value: js.Any): Self = StObject.set(x, "clientProperties", value.asInstanceOf[js.Any])
+      inline def setClientProperties(value: Any): Self = StObject.set(x, "clientProperties", value.asInstanceOf[js.Any])
       
       inline def setClientPropertiesUndefined: Self = StObject.set(x, "clientProperties", js.undefined)
       
-      inline def setCredentials(value: Mechanism): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Mechanism | Response): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
@@ -374,7 +422,7 @@ object anon {
       
       inline def setCrlUndefined: Self = StObject.set(x, "crl", js.undefined)
       
-      inline def setCrlVarargs(value: (String | Buffer)*): Self = StObject.set(x, "crl", js.Array(value :_*))
+      inline def setCrlVarargs(value: (String | Buffer)*): Self = StObject.set(x, "crl", js.Array(value*))
       
       inline def setDhparam(value: String | Buffer): Self = StObject.set(x, "dhparam", value.asInstanceOf[js.Any])
       
@@ -404,14 +452,19 @@ object anon {
       
       inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
       
-      inline def setKey(value: String | Buffer | (js.Array[Buffer | KeyObject])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Buffer | (js.Array[String | Buffer | KeyObject])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setKeyVarargs(value: (Buffer | KeyObject)*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: (String | Buffer | KeyObject)*): Self = StObject.set(x, "key", js.Array(value*))
       
       inline def setLookup(
-        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
+        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
+              /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+              /* address */ String, 
+              /* family */ Double, 
+              Unit
+            ]) => Unit
       ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
       
       inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
@@ -444,7 +497,7 @@ object anon {
       
       inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
       
-      inline def setPfxVarargs(value: (String | Buffer | PxfObject)*): Self = StObject.set(x, "pfx", js.Array(value :_*))
+      inline def setPfxVarargs(value: (String | Buffer | PxfObject)*): Self = StObject.set(x, "pfx", js.Array(value*))
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
@@ -471,7 +524,7 @@ object anon {
       inline def setRequestCertUndefined: Self = StObject.set(x, "requestCert", js.undefined)
       
       inline def setSNICallback(
-        value: (/* servername */ String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Unit
+        value: (/* servername */ String, /* cb */ js.Function2[/* err */ js.Error | Null, /* ctx */ js.UndefOr[SecureContext], Unit]) => Unit
       ): Self = StObject.set(x, "SNICallback", js.Any.fromFunction2(value))
       
       inline def setSNICallbackUndefined: Self = StObject.set(x, "SNICallback", js.undefined)
@@ -508,7 +561,7 @@ object anon {
       
       inline def setSigalgsUndefined: Self = StObject.set(x, "sigalgs", js.undefined)
       
-      inline def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: Duplex): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       
       inline def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
       
@@ -524,18 +577,41 @@ object anon {
   
   trait Err extends StObject {
     
-    var err: Error
+    var err: js.Error
+    
+    var url: js.UndefOr[String | Connect] = js.undefined
   }
   object Err {
     
-    inline def apply(err: Error): Err = {
+    inline def apply(err: js.Error): Err = {
       val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any])
       __obj.asInstanceOf[Err]
     }
     
     extension [Self <: Err](x: Self) {
       
-      inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      
+      inline def setUrl(value: String | Connect): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    }
+  }
+  
+  trait ErrError extends StObject {
+    
+    var err: js.Error
+  }
+  object ErrError {
+    
+    inline def apply(err: js.Error): ErrError = {
+      val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ErrError]
+    }
+    
+    extension [Self <: ErrError](x: Self) {
+      
+      inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     }
   }
   
@@ -582,6 +658,179 @@ object anon {
     extension [Self <: Name](x: Self) {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Reason extends StObject {
+    
+    var reason: String
+  }
+  object Reason {
+    
+    inline def apply(reason: String): Reason = {
+      val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Reason]
+    }
+    
+    extension [Self <: Reason](x: Self) {
+      
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Response extends StObject {
+    
+    var mechanism: String
+    
+    def response(): Buffer
+  }
+  object Response {
+    
+    inline def apply(mechanism: String, response: () => Buffer): Response = {
+      val __obj = js.Dynamic.literal(mechanism = mechanism.asInstanceOf[js.Any], response = js.Any.fromFunction0(response))
+      __obj.asInstanceOf[Response]
+    }
+    
+    extension [Self <: Response](x: Self) {
+      
+      inline def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
+      
+      inline def setResponse(value: () => Buffer): Self = StObject.set(x, "response", js.Any.fromFunction0(value))
+    }
+  }
+  
+  /* Inlined node.net.TcpSocketConnectOpts & {  noDelay :boolean | undefined,   timeout :number | undefined,   keepAlive :boolean | undefined,   keepAliveDelay :number | undefined,   clientProperties :any | undefined,   credentials :{  mechanism :string,   username :string,   password :string, response (): node.buffer.<global>.Buffer} | {  mechanism :string, response (): node.buffer.<global>.Buffer} | undefined} */
+  trait TcpSocketConnectOptsnoDel
+    extends StObject
+       with AmpqConnectionOptions {
+    
+    var clientProperties: js.UndefOr[Any] = js.undefined
+    
+    var credentials: js.UndefOr[Mechanism | Response] = js.undefined
+    
+    var family: js.UndefOr[Double] = js.undefined
+    
+    var hints: js.UndefOr[Double] = js.undefined
+    
+    var host: js.UndefOr[String] = js.undefined
+    
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
+    
+    var keepAliveDelay: js.UndefOr[Double] = js.undefined
+    
+    var keepAliveInitialDelay: js.UndefOr[Double] = js.undefined
+    
+    var localAddress: js.UndefOr[String] = js.undefined
+    
+    var localPort: js.UndefOr[Double] = js.undefined
+    
+    var lookup: js.UndefOr[LookupFunction] = js.undefined
+    
+    var noDelay: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * If specified, incoming data is stored in a single buffer and passed to the supplied callback when data arrives on the socket.
+      * Note: this will cause the streaming functionality to not provide any data, however events like 'error', 'end', and 'close' will
+      * still be emitted as normal and methods like pause() and resume() will also behave as expected.
+      */
+    var onread: js.UndefOr[OnReadOpts] = js.undefined
+    
+    var port: Double
+    
+    var timeout: js.UndefOr[Double] = js.undefined
+  }
+  object TcpSocketConnectOptsnoDel {
+    
+    inline def apply(port: Double): TcpSocketConnectOptsnoDel = {
+      val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TcpSocketConnectOptsnoDel]
+    }
+    
+    extension [Self <: TcpSocketConnectOptsnoDel](x: Self) {
+      
+      inline def setClientProperties(value: Any): Self = StObject.set(x, "clientProperties", value.asInstanceOf[js.Any])
+      
+      inline def setClientPropertiesUndefined: Self = StObject.set(x, "clientProperties", js.undefined)
+      
+      inline def setCredentials(value: Mechanism | Response): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      
+      inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      
+      inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+      
+      inline def setHints(value: Double): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+      
+      inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
+      
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      
+      inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
+      
+      inline def setKeepAliveDelay(value: Double): Self = StObject.set(x, "keepAliveDelay", value.asInstanceOf[js.Any])
+      
+      inline def setKeepAliveDelayUndefined: Self = StObject.set(x, "keepAliveDelay", js.undefined)
+      
+      inline def setKeepAliveInitialDelay(value: Double): Self = StObject.set(x, "keepAliveInitialDelay", value.asInstanceOf[js.Any])
+      
+      inline def setKeepAliveInitialDelayUndefined: Self = StObject.set(x, "keepAliveInitialDelay", js.undefined)
+      
+      inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
+      
+      inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+      
+      inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+      
+      inline def setLocalPort(value: Double): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
+      
+      inline def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
+      
+      inline def setLookup(
+        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
+              /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+              /* address */ String, 
+              /* family */ Double, 
+              Unit
+            ]) => Unit
+      ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
+      
+      inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
+      
+      inline def setNoDelay(value: Boolean): Self = StObject.set(x, "noDelay", value.asInstanceOf[js.Any])
+      
+      inline def setNoDelayUndefined: Self = StObject.set(x, "noDelay", js.undefined)
+      
+      inline def setOnread(value: OnReadOpts): Self = StObject.set(x, "onread", value.asInstanceOf[js.Any])
+      
+      inline def setOnreadUndefined: Self = StObject.set(x, "onread", js.undefined)
+      
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    }
+  }
+  
+  trait Timeout extends StObject {
+    
+    var timeout: js.UndefOr[Double] = js.undefined
+  }
+  object Timeout {
+    
+    inline def apply(): Timeout = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Timeout]
+    }
+    
+    extension [Self <: Timeout](x: Self) {
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

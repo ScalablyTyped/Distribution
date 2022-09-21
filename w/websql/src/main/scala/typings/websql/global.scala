@@ -10,7 +10,7 @@ object global {
     */
   @JSGlobal("SQLError")
   @js.native
-  class SQLError ()
+  open class SQLError ()
     extends StObject
        with typings.websql.SQLError {
     
@@ -86,7 +86,7 @@ object global {
   // synchronous database API error
   @JSGlobal("SQLException")
   @js.native
-  class SQLException ()
+  open class SQLException ()
     extends StObject
        with typings.websql.SQLException {
     

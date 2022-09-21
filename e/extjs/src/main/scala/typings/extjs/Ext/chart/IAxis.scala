@@ -18,7 +18,7 @@ trait IAxis
   /** [Method] Renders the axis into the screen and updates its position
     * @param init Object
     */
-  var drawAxis: js.UndefOr[js.Function1[/* init */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var drawAxis: js.UndefOr[js.Function1[/* init */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Renders an horizontal and or vertical grid into the Surface  */
   var drawGrid: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -27,7 +27,7 @@ trait IAxis
   var drawLabel: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean/Object) */
-  var grid: js.UndefOr[js.Any] = js.undefined
+  var grid: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var hidden: js.UndefOr[Boolean] = js.undefined
@@ -72,7 +72,7 @@ object IAxis {
     
     inline def setDashSizeUndefined: Self = StObject.set(x, "dashSize", js.undefined)
     
-    inline def setDrawAxis(value: /* init */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "drawAxis", js.Any.fromFunction1(value))
+    inline def setDrawAxis(value: /* init */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "drawAxis", js.Any.fromFunction1(value))
     
     inline def setDrawAxisUndefined: Self = StObject.set(x, "drawAxis", js.undefined)
     
@@ -84,7 +84,7 @@ object IAxis {
     
     inline def setDrawLabelUndefined: Self = StObject.set(x, "drawLabel", js.undefined)
     
-    inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     

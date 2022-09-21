@@ -1,5 +1,7 @@
 package typings.qiniuJs
 
+import typings.qiniuJs.indexMockMod.ApiName
+import typings.qiniuJs.loggerMod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,48 +9,70 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object qiniuJsStrings {
   
   @js.native
-  sealed trait Center extends StObject
-  inline def Center: Center = "Center".asInstanceOf[Center]
+  sealed trait ERROR
+    extends StObject
+       with LogLevel
+  inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
-  sealed trait East extends StObject
-  inline def East: East = "East".asInstanceOf[East]
+  sealed trait INFO
+    extends StObject
+       with LogLevel
+  inline def INFO: INFO = "INFO".asInstanceOf[INFO]
   
   @js.native
-  sealed trait North extends StObject
-  inline def North: North = "North".asInstanceOf[North]
+  sealed trait OFF
+    extends StObject
+       with LogLevel
+  inline def OFF: OFF = "OFF".asInstanceOf[OFF]
   
   @js.native
-  sealed trait NorthEast extends StObject
-  inline def NorthEast: NorthEast = "NorthEast".asInstanceOf[NorthEast]
+  sealed trait WARN
+    extends StObject
+       with LogLevel
+  inline def WARN: WARN = "WARN".asInstanceOf[WARN]
   
   @js.native
-  sealed trait NorthWest extends StObject
-  inline def NorthWest: NorthWest = "NorthWest".asInstanceOf[NorthWest]
+  sealed trait as0 extends StObject
+  inline def as0: as0 = "as0".asInstanceOf[as0]
   
   @js.native
-  sealed trait South extends StObject
-  inline def South: South = "South".asInstanceOf[South]
+  sealed trait `cn-east-2` extends StObject
+  inline def `cn-east-2`: `cn-east-2` = "cn-east-2".asInstanceOf[`cn-east-2`]
   
   @js.native
-  sealed trait SouthEast extends StObject
-  inline def SouthEast: SouthEast = "SouthEast".asInstanceOf[SouthEast]
+  sealed trait deleteUploadedChunks
+    extends StObject
+       with ApiName
+  inline def deleteUploadedChunks: deleteUploadedChunks = "deleteUploadedChunks".asInstanceOf[deleteUploadedChunks]
   
   @js.native
-  sealed trait SouthWest extends StObject
-  inline def SouthWest: SouthWest = "SouthWest".asInstanceOf[SouthWest]
+  sealed trait direct
+    extends StObject
+       with ApiName
+  inline def direct: direct = "direct".asInstanceOf[direct]
   
   @js.native
-  sealed trait West extends StObject
-  inline def West: West = "West".asInstanceOf[West]
+  sealed trait getUpHosts
+    extends StObject
+       with ApiName
+  inline def getUpHosts: getUpHosts = "getUpHosts".asInstanceOf[getUpHosts]
   
   @js.native
-  sealed trait bmp extends StObject
-  inline def bmp: bmp = "bmp".asInstanceOf[bmp]
+  sealed trait http extends StObject
+  inline def http: http = "http".asInstanceOf[http]
   
   @js.native
-  sealed trait gif extends StObject
-  inline def gif: gif = "gif".asInstanceOf[gif]
+  sealed trait httpColon extends StObject
+  inline def httpColon: httpColon = "http:".asInstanceOf[httpColon]
+  
+  @js.native
+  sealed trait https extends StObject
+  inline def https: https = "https".asInstanceOf[https]
+  
+  @js.native
+  sealed trait httpsColon extends StObject
+  inline def httpsColon: httpsColon = "https:".asInstanceOf[httpsColon]
   
   @js.native
   sealed trait imageMogr2 extends StObject
@@ -59,22 +83,92 @@ object qiniuJsStrings {
   inline def imageView2: imageView2 = "imageView2".asInstanceOf[imageView2]
   
   @js.native
-  sealed trait jpeg extends StObject
-  inline def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+  sealed trait initUploadParts
+    extends StObject
+       with ApiName
+  inline def initUploadParts: initUploadParts = "initUploadParts".asInstanceOf[initUploadParts]
   
   @js.native
-  sealed trait jpg extends StObject
-  inline def jpg: jpg = "jpg".asInstanceOf[jpg]
+  sealed trait `jssdk-h5` extends StObject
+  inline def `jssdk-h5`: `jssdk-h5` = "jssdk-h5".asInstanceOf[`jssdk-h5`]
   
   @js.native
-  sealed trait png extends StObject
-  inline def png: png = "png".asInstanceOf[png]
+  sealed trait na0 extends StObject
+  inline def na0: na0 = "na0".asInstanceOf[na0]
+  
+  @js.native
+  sealed trait `up-as0DotqiniupDotcom` extends StObject
+  inline def `up-as0DotqiniupDotcom`: `up-as0DotqiniupDotcom` = "up-as0.qiniup.com".asInstanceOf[`up-as0DotqiniupDotcom`]
+  
+  @js.native
+  sealed trait `up-cn-east-2DotqiniupDotcom` extends StObject
+  inline def `up-cn-east-2DotqiniupDotcom`: `up-cn-east-2DotqiniupDotcom` = "up-cn-east-2.qiniup.com".asInstanceOf[`up-cn-east-2DotqiniupDotcom`]
+  
+  @js.native
+  sealed trait `up-na0DotqiniupDotcom` extends StObject
+  inline def `up-na0DotqiniupDotcom`: `up-na0DotqiniupDotcom` = "up-na0.qiniup.com".asInstanceOf[`up-na0DotqiniupDotcom`]
+  
+  @js.native
+  sealed trait `up-z1DotqiniupDotcom` extends StObject
+  inline def `up-z1DotqiniupDotcom`: `up-z1DotqiniupDotcom` = "up-z1.qiniup.com".asInstanceOf[`up-z1DotqiniupDotcom`]
+  
+  @js.native
+  sealed trait `up-z2DotqiniupDotcom` extends StObject
+  inline def `up-z2DotqiniupDotcom`: `up-z2DotqiniupDotcom` = "up-z2.qiniup.com".asInstanceOf[`up-z2DotqiniupDotcom`]
+  
+  @js.native
+  sealed trait upDotqiniupDotcom extends StObject
+  inline def upDotqiniupDotcom: upDotqiniupDotcom = "up.qiniup.com".asInstanceOf[upDotqiniupDotcom]
+  
+  @js.native
+  sealed trait `upload-as0DotqiniupDotcom` extends StObject
+  inline def `upload-as0DotqiniupDotcom`: `upload-as0DotqiniupDotcom` = "upload-as0.qiniup.com".asInstanceOf[`upload-as0DotqiniupDotcom`]
+  
+  @js.native
+  sealed trait `upload-cn-east-2DotqiniupDotcom` extends StObject
+  inline def `upload-cn-east-2DotqiniupDotcom`: `upload-cn-east-2DotqiniupDotcom` = "upload-cn-east-2.qiniup.com".asInstanceOf[`upload-cn-east-2DotqiniupDotcom`]
+  
+  @js.native
+  sealed trait `upload-na0DotqiniupDotcom` extends StObject
+  inline def `upload-na0DotqiniupDotcom`: `upload-na0DotqiniupDotcom` = "upload-na0.qiniup.com".asInstanceOf[`upload-na0DotqiniupDotcom`]
+  
+  @js.native
+  sealed trait `upload-z1DotqiniupDotcom` extends StObject
+  inline def `upload-z1DotqiniupDotcom`: `upload-z1DotqiniupDotcom` = "upload-z1.qiniup.com".asInstanceOf[`upload-z1DotqiniupDotcom`]
+  
+  @js.native
+  sealed trait `upload-z2DotqiniupDotcom` extends StObject
+  inline def `upload-z2DotqiniupDotcom`: `upload-z2DotqiniupDotcom` = "upload-z2.qiniup.com".asInstanceOf[`upload-z2DotqiniupDotcom`]
+  
+  @js.native
+  sealed trait uploadChunk
+    extends StObject
+       with ApiName
+  inline def uploadChunk: uploadChunk = "uploadChunk".asInstanceOf[uploadChunk]
+  
+  @js.native
+  sealed trait uploadComplete
+    extends StObject
+       with ApiName
+  inline def uploadComplete: uploadComplete = "uploadComplete".asInstanceOf[uploadComplete]
+  
+  @js.native
+  sealed trait uploadDotqiniupDotcom extends StObject
+  inline def uploadDotqiniupDotcom: uploadDotqiniupDotcom = "upload.qiniup.com".asInstanceOf[uploadDotqiniupDotcom]
   
   @js.native
   sealed trait watermark extends StObject
   inline def watermark: watermark = "watermark".asInstanceOf[watermark]
   
   @js.native
-  sealed trait webp extends StObject
-  inline def webp: webp = "webp".asInstanceOf[webp]
+  sealed trait z0 extends StObject
+  inline def z0: z0 = "z0".asInstanceOf[z0]
+  
+  @js.native
+  sealed trait z1 extends StObject
+  inline def z1: z1 = "z1".asInstanceOf[z1]
+  
+  @js.native
+  sealed trait z2 extends StObject
+  inline def z2: z2 = "z2".asInstanceOf[z2]
 }

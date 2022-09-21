@@ -36,6 +36,6 @@ object GooglePrivacyDlpV2StoredInfoType {
     
     inline def setPendingVersionsUndefined: Self = StObject.set(x, "pendingVersions", js.undefined)
     
-    inline def setPendingVersionsVarargs(value: GooglePrivacyDlpV2StoredInfoTypeVersion*): Self = StObject.set(x, "pendingVersions", js.Array(value :_*))
+    inline def setPendingVersionsVarargs(value: GooglePrivacyDlpV2StoredInfoTypeVersion*): Self = StObject.set(x, "pendingVersions", js.Array(value*))
   }
 }

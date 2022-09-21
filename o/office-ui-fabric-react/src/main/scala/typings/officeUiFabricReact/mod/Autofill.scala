@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.officeUiFabricReact.pickersMod.Autofill because Inheritance from two classes. Inlined 
 - typings.officeUiFabricReact.libPickersMod.Autofill because Inheritance from two classes. Inlined  */ @JSImport("office-ui-fabric-react", "Autofill")
 @js.native
-class Autofill protected ()
+open class Autofill protected ()
   extends typings.officeUiFabricReact.libAutofillMod.Autofill {
   def this(props: IAutofillProps) = this()
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetUserDefinedFunctionsRequest extends StObject {
   
   /**
-    * The ID of the Data Catalog where the functions to be retrieved are located. If none is provided, the AWS account ID is used by default.
+    * The ID of the Data Catalog where the functions to be retrieved are located. If none is provided, the Amazon Web Services account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
@@ -19,7 +19,7 @@ trait GetUserDefinedFunctionsRequest extends StObject {
   /**
     * The maximum number of functions to return in one response.
     */
-  var MaxResults: js.UndefOr[PageSize] = js.undefined
+  var MaxResults: js.UndefOr[CatalogGetterPageSize] = js.undefined
   
   /**
     * A continuation token, if this is a continuation call.
@@ -48,7 +48,7 @@ object GetUserDefinedFunctionsRequest {
     
     inline def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
-    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: CatalogGetterPageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     

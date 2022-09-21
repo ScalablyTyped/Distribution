@@ -19,6 +19,8 @@ object eventbridgeMod {
     
     var region: String
     
+    var `replay-name`: js.UndefOr[String] = js.undefined
+    
     var resources: js.Array[String]
     
     var source: String
@@ -57,9 +59,13 @@ object eventbridgeMod {
       
       inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
+      inline def `setReplay-name`(value: String): Self = StObject.set(x, "replay-name", value.asInstanceOf[js.Any])
+      
+      inline def `setReplay-nameUndefined`: Self = StObject.set(x, "replay-name", js.undefined)
+      
       inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value*))
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       

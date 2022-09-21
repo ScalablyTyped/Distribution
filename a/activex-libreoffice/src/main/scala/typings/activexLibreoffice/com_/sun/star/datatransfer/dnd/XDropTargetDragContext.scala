@@ -42,7 +42,7 @@ object XDropTargetDragContext {
   inline def apply(
     acceptDrag: Double => Unit,
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     rejectDrag: () => Unit,
     release: () => Unit
   ): XDropTargetDragContext = {

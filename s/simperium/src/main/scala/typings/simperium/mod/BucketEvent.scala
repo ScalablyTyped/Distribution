@@ -1,6 +1,5 @@
 package typings.simperium.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait BucketEvent[T]
   extends StObject
      with SimperiumEvent {
   
-  def error(err: Error, change: Change[T]): Unit
+  def error(err: js.Error, change: Change[T]): Unit
   
   def index(cv: ChangeVersion): Unit
   
@@ -22,7 +21,7 @@ trait BucketEvent[T]
 object BucketEvent {
   
   inline def apply[T](
-    error: (Error, Change[T]) => Unit,
+    error: (js.Error, Change[T]) => Unit,
     index: ChangeVersion => Unit,
     indexing: () => Unit,
     remove: EntityId => Unit,
@@ -34,7 +33,7 @@ object BucketEvent {
   
   extension [Self <: BucketEvent[?], T](x: Self & BucketEvent[T]) {
     
-    inline def setError(value: (Error, Change[T]) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+    inline def setError(value: (js.Error, Change[T]) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
     inline def setIndex(value: ChangeVersion => Unit): Self = StObject.set(x, "index", js.Any.fromFunction1(value))
     

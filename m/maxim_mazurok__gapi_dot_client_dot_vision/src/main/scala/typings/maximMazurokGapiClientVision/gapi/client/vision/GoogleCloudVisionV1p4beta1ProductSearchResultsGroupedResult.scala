@@ -32,12 +32,12 @@ object GoogleCloudVisionV1p4beta1ProductSearchResultsGroupedResult {
     
     inline def setObjectAnnotationsUndefined: Self = StObject.set(x, "objectAnnotations", js.undefined)
     
-    inline def setObjectAnnotationsVarargs(value: GoogleCloudVisionV1p4beta1ProductSearchResultsObjectAnnotation*): Self = StObject.set(x, "objectAnnotations", js.Array(value :_*))
+    inline def setObjectAnnotationsVarargs(value: GoogleCloudVisionV1p4beta1ProductSearchResultsObjectAnnotation*): Self = StObject.set(x, "objectAnnotations", js.Array(value*))
     
     inline def setResults(value: js.Array[GoogleCloudVisionV1p4beta1ProductSearchResultsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: GoogleCloudVisionV1p4beta1ProductSearchResultsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: GoogleCloudVisionV1p4beta1ProductSearchResultsResult*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

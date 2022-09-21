@@ -54,7 +54,7 @@ object heroBodyMod {
   
   @JSImport("rbx/layout/hero/hero-body", "HeroBody")
   @js.native
-  val HeroBody: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val HeroBody: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait HeroBodyProps extends StObject {

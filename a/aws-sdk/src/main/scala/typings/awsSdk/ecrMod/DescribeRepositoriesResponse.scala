@@ -33,6 +33,6 @@ object DescribeRepositoriesResponse {
     
     inline def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
     
-    inline def setRepositoriesVarargs(value: Repository*): Self = StObject.set(x, "repositories", js.Array(value :_*))
+    inline def setRepositoriesVarargs(value: Repository*): Self = StObject.set(x, "repositories", js.Array(value*))
   }
 }

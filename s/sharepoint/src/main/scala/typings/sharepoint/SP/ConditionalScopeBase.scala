@@ -6,27 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConditionalScopeBase extends StObject {
   
-  def customFromJson(initValue: js.Any): Boolean
+  def customFromJson(initValue: Any): Boolean
   
-  def fromJson(initValue: js.Any): Unit
+  def fromJson(initValue: Any): Unit
   
   def get_testResult(): Boolean
   
-  def startIfFalse(): js.Any
+  def startIfFalse(): Any
   
-  def startIfTrue(): js.Any
+  def startIfTrue(): Any
   
-  def startScope(): js.Any
+  def startScope(): Any
 }
 object ConditionalScopeBase {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
-    fromJson: js.Any => Unit,
+    customFromJson: Any => Boolean,
+    fromJson: Any => Unit,
     get_testResult: () => Boolean,
-    startIfFalse: () => js.Any,
-    startIfTrue: () => js.Any,
-    startScope: () => js.Any
+    startIfFalse: () => Any,
+    startIfTrue: () => Any,
+    startScope: () => Any
   ): ConditionalScopeBase = {
     val __obj = js.Dynamic.literal(customFromJson = js.Any.fromFunction1(customFromJson), fromJson = js.Any.fromFunction1(fromJson), get_testResult = js.Any.fromFunction0(get_testResult), startIfFalse = js.Any.fromFunction0(startIfFalse), startIfTrue = js.Any.fromFunction0(startIfTrue), startScope = js.Any.fromFunction0(startScope))
     __obj.asInstanceOf[ConditionalScopeBase]
@@ -34,16 +34,16 @@ object ConditionalScopeBase {
   
   extension [Self <: ConditionalScopeBase](x: Self) {
     
-    inline def setCustomFromJson(value: js.Any => Boolean): Self = StObject.set(x, "customFromJson", js.Any.fromFunction1(value))
+    inline def setCustomFromJson(value: Any => Boolean): Self = StObject.set(x, "customFromJson", js.Any.fromFunction1(value))
     
-    inline def setFromJson(value: js.Any => Unit): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
+    inline def setFromJson(value: Any => Unit): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
     
     inline def setGet_testResult(value: () => Boolean): Self = StObject.set(x, "get_testResult", js.Any.fromFunction0(value))
     
-    inline def setStartIfFalse(value: () => js.Any): Self = StObject.set(x, "startIfFalse", js.Any.fromFunction0(value))
+    inline def setStartIfFalse(value: () => Any): Self = StObject.set(x, "startIfFalse", js.Any.fromFunction0(value))
     
-    inline def setStartIfTrue(value: () => js.Any): Self = StObject.set(x, "startIfTrue", js.Any.fromFunction0(value))
+    inline def setStartIfTrue(value: () => Any): Self = StObject.set(x, "startIfTrue", js.Any.fromFunction0(value))
     
-    inline def setStartScope(value: () => js.Any): Self = StObject.set(x, "startScope", js.Any.fromFunction0(value))
+    inline def setStartScope(value: () => Any): Self = StObject.set(x, "startScope", js.Any.fromFunction0(value))
   }
 }

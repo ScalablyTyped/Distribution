@@ -10,6 +10,8 @@ trait ImportSpecifier
      with NamedDeclaration
      with ImportOrExportSpecifier {
   
+  val isTypeOnly: Boolean = js.native
+  
   @JSName("kind")
   val kind_ImportSpecifier: typings.typescript.mod.SyntaxKind.ImportSpecifier = js.native
   

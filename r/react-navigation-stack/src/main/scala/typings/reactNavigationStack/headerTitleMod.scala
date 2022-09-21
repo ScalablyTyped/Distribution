@@ -1,11 +1,11 @@
 package typings.reactNavigationStack
 
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.Animated.WithAnimatedValue
 import typings.reactNative.mod.ColorValue
@@ -20,19 +20,18 @@ import typings.reactNavigationStack.reactNavigationStackStrings.all
 import typings.reactNavigationStack.reactNavigationStackStrings.assertive
 import typings.reactNavigationStack.reactNavigationStackStrings.auto
 import typings.reactNavigationStack.reactNavigationStackStrings.balanced
-import typings.reactNavigationStack.reactNavigationStackStrings.button
 import typings.reactNavigationStack.reactNavigationStackStrings.clip
 import typings.reactNavigationStack.reactNavigationStackStrings.email
+import typings.reactNavigationStack.reactNavigationStackStrings.full
 import typings.reactNavigationStack.reactNavigationStackStrings.head
 import typings.reactNavigationStack.reactNavigationStackStrings.highQuality
 import typings.reactNavigationStack.reactNavigationStackStrings.link
 import typings.reactNavigationStack.reactNavigationStackStrings.middle
 import typings.reactNavigationStack.reactNavigationStackStrings.no
 import typings.reactNavigationStack.reactNavigationStackStrings.none
+import typings.reactNavigationStack.reactNavigationStackStrings.normal
 import typings.reactNavigationStack.reactNavigationStackStrings.phoneNumber
 import typings.reactNavigationStack.reactNavigationStackStrings.polite
-import typings.reactNavigationStack.reactNavigationStackStrings.radiobutton_checked
-import typings.reactNavigationStack.reactNavigationStackStrings.radiobutton_unchecked
 import typings.reactNavigationStack.reactNavigationStackStrings.simple
 import typings.reactNavigationStack.reactNavigationStackStrings.tail
 import typings.reactNavigationStack.reactNavigationStackStrings.yes
@@ -53,8 +52,6 @@ object headerTitleMod {
     
     var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
     
-    var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
-    
     var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
     
     var accessibilityHint: js.UndefOr[String] = js.undefined
@@ -63,13 +60,15 @@ object headerTitleMod {
     
     var accessibilityLabel: js.UndefOr[String] = js.undefined
     
+    var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    var accessibilityLanguage: js.UndefOr[String] = js.undefined
+    
     var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
     
     var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
     
     var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
-    
-    var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
     
     var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
     
@@ -81,7 +80,9 @@ object headerTitleMod {
     
     var allowFontScaling: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[String] = js.undefined
+    var android_hyphenationFrequency: js.UndefOr[normal | none | full] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] & js.UndefOr[String]
     
     var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all] = js.undefined
     
@@ -113,6 +114,10 @@ object headerTitleMod {
     
     var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
+    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+    
+    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+    
     var onTextLayout: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[TextLayoutEventData], Unit]] = js.undefined
     
     var selectable: js.UndefOr[Boolean] = js.undefined
@@ -131,8 +136,8 @@ object headerTitleMod {
   }
   object Props {
     
-    inline def apply(): Props = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(children: js.UndefOr[ReactNode] & js.UndefOr[String]): Props = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
@@ -142,11 +147,7 @@ object headerTitleMod {
       
       inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
       
-      inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
-      
-      inline def setAccessibilityComponentType(value: none | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-      
-      inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+      inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value*))
       
       inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
       
@@ -164,6 +165,16 @@ object headerTitleMod {
       
       inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
       
+      inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+      
+      inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+      
+      inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
+      
+      inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+      
+      inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+      
       inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
       
       inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -175,12 +186,6 @@ object headerTitleMod {
       inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
       
       inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-      
-      inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-      
-      inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-      
-      inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
       
       inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
       
@@ -202,9 +207,11 @@ object headerTitleMod {
       
       inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
       
-      inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setAndroid_hyphenationFrequency(value: normal | none | full): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
       
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setAndroid_hyphenationFrequencyUndefined: Self = StObject.set(x, "android_hyphenationFrequency", js.undefined)
+      
+      inline def setChildren(value: js.UndefOr[ReactNode] & js.UndefOr[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setDataDetectorType(value: phoneNumber | link | email | none | all): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
       
@@ -267,6 +274,14 @@ object headerTitleMod {
       inline def setOnMagicTapUndefined: Self = StObject.set(x, "onMagicTap", js.undefined)
       
       inline def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+      
+      inline def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
+      
+      inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+      
+      inline def setOnPressOut(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
+      
+      inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
       
       inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       

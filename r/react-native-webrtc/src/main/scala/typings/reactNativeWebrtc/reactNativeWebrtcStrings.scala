@@ -16,6 +16,10 @@ object reactNativeWebrtcStrings {
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
+  sealed trait balanced extends StObject
+  inline def balanced: balanced = "balanced".asInstanceOf[balanced]
+  
+  @js.native
   sealed trait checking
     extends StObject
        with RTCIceConnectionState
@@ -123,6 +127,18 @@ object reactNativeWebrtcStrings {
   inline def live: live = "live".asInstanceOf[live]
   
   @js.native
+  sealed trait `max-bundle` extends StObject
+  inline def `max-bundle`: `max-bundle` = "max-bundle".asInstanceOf[`max-bundle`]
+  
+  @js.native
+  sealed trait `max-compat` extends StObject
+  inline def `max-compat`: `max-compat` = "max-compat".asInstanceOf[`max-compat`]
+  
+  @js.native
+  sealed trait negotiate extends StObject
+  inline def negotiate: negotiate = "negotiate".asInstanceOf[negotiate]
+  
+  @js.native
   sealed trait `new`
     extends StObject
        with RTCIceConnectionState
@@ -131,12 +147,20 @@ object reactNativeWebrtcStrings {
   inline def `new`: `new` = "new".asInstanceOf[`new`]
   
   @js.native
-  sealed trait public extends StObject
-  inline def public: public = "public".asInstanceOf[public]
+  sealed trait nohost extends StObject
+  inline def nohost: nohost = "nohost".asInstanceOf[nohost]
+  
+  @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait relay extends StObject
   inline def relay: relay = "relay".asInstanceOf[relay]
+  
+  @js.native
+  sealed trait require extends StObject
+  inline def require: require = "require".asInstanceOf[require]
   
   @js.native
   sealed trait stable

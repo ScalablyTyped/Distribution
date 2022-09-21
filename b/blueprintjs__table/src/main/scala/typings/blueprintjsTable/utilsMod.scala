@@ -36,6 +36,8 @@ object utilsMod {
       * @param array - the `Array` to copy and adjust
       * @param length - the target length of the array
       * @param fillValue - the value to add to the array if it is too short
+      *
+      * @deprecated this function is no longer used in the table component, so it will be removed in a future major version
       */
     inline def arrayOfLength[T_1](array: js.Array[T_1], length: Double, fillValue: T_1): js.Array[T_1] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfLength")(array.asInstanceOf[js.Any], length.asInstanceOf[js.Any], fillValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_1]]
     
@@ -48,7 +50,7 @@ object utilsMod {
       * @param defaults - the full array of default values
       * @param sparseOverrides - the sparse array of override values
       */
-    inline def assignSparseValues[T_2](defaults: js.Array[T_2], sparseOverrides: js.Array[T_2]): js.Array[T_2] = (^.asInstanceOf[js.Dynamic].applyDynamic("assignSparseValues")(defaults.asInstanceOf[js.Any], sparseOverrides.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_2]]
+    inline def assignSparseValues[T_2](defaults: js.Array[T_2], sparseOverrides: js.Array[js.UndefOr[T_2 | Null]]): js.Array[T_2] = (^.asInstanceOf[js.Dynamic].applyDynamic("assignSparseValues")(defaults.asInstanceOf[js.Any], sparseOverrides.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_2]]
     
     /**
       * Performs the binary search algorithm to find the index of the `value`
@@ -81,6 +83,16 @@ object utilsMod {
     inline def clamp(value: Double, min: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def clamp(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def clamp(value: Double, min: Unit, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    /**
+      * Shallow comparison of potentially sparse arrays.
+      *
+      * @returns true if the array values are equal
+      */
+    inline def compareSparseArrays(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("compareSparseArrays")().asInstanceOf[Boolean]
+    inline def compareSparseArrays(a: js.Array[js.UndefOr[Double | Null]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("compareSparseArrays")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def compareSparseArrays(a: js.Array[js.UndefOr[Double | Null]], b: js.Array[js.UndefOr[Double | Null]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareSparseArrays")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def compareSparseArrays(a: Unit, b: js.Array[js.UndefOr[Double | Null]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareSparseArrays")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def getApproxCellHeight(
       cellText: String,
@@ -143,8 +155,8 @@ object utilsMod {
       * For example, given the array [A,B,C,D,E,F], reordering the 3 contiguous elements starting at
       * index 1 (B, C, and D) to start at index 2 would yield [A,E,B,C,D,F].
       */
-    inline def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double): js.Array[T_3] = (^.asInstanceOf[js.Dynamic].applyDynamic("reorderArray")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_3]]
-    inline def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double, length: Double): js.Array[T_3] = (^.asInstanceOf[js.Dynamic].applyDynamic("reorderArray")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_3]]
+    inline def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double): js.UndefOr[js.Array[T_3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reorderArray")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T_3]]]
+    inline def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double, length: Double): js.UndefOr[js.Array[T_3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reorderArray")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T_3]]]
     
     /**
       * When reordering a contiguous block of rows or columns to a new index, we show a preview guide
@@ -198,7 +210,7 @@ object utilsMod {
       
       inline def setInclude(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      inline def setIncludeVarargs(value: (/* keyof T */ String)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (/* keyof T */ String)*): Self = StObject.set(x, "include", js.Array(value*))
     }
   }
   
@@ -217,7 +229,7 @@ object utilsMod {
       
       inline def setExclude(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      inline def setExcludeVarargs(value: (/* keyof T */ String)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (/* keyof T */ String)*): Self = StObject.set(x, "exclude", js.Array(value*))
     }
   }
 }

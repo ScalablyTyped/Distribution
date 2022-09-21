@@ -10,10 +10,10 @@ Node.js CORS middleware
 | ------------------ | :-------------: |
 | Full name          | cors |
 | Keywords           | cors, express, connect, middleware |
-| # releases         | 0 |
-| # dependents       | 4876 |
-| # downloads        | 190486011 |
-| # stars            | 271 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.4227043666666664E7 |
+| # stars            | 5453.0 |
 
 ## Links
 - [Homepage](https://github.com/expressjs/cors#readme)

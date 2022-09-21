@@ -39,7 +39,7 @@ object Intl {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("Intl.Collator")
   @js.native
-  class CollatorCls ()
+  open class CollatorCls ()
     extends StObject
        with Collator {
     def this(locales: java.lang.String) = this()
@@ -77,7 +77,7 @@ object Intl {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("Intl.DateTimeFormat")
   @js.native
-  class DateTimeFormatCls ()
+  open class DateTimeFormatCls ()
     extends StObject
        with DateTimeFormat {
     def this(locales: java.lang.String) = this()
@@ -109,7 +109,7 @@ object Intl {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("Intl.NumberFormat")
   @js.native
-  class NumberFormatCls ()
+  open class NumberFormatCls ()
     extends StObject
        with NumberFormat {
     def this(locales: java.lang.String) = this()

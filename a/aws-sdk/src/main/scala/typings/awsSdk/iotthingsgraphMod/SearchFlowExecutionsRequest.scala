@@ -9,7 +9,7 @@ trait SearchFlowExecutionsRequest extends StObject {
   /**
     * The date and time of the latest flow execution to return.
     */
-  var endTime: js.UndefOr[Timestamp] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of a flow execution.
@@ -29,7 +29,7 @@ trait SearchFlowExecutionsRequest extends StObject {
   /**
     * The date and time of the earliest flow execution to return.
     */
-  var startTime: js.UndefOr[Timestamp] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the system instance that contains the flow.
@@ -45,7 +45,7 @@ object SearchFlowExecutionsRequest {
   
   extension [Self <: SearchFlowExecutionsRequest](x: Self) {
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -61,7 +61,7 @@ object SearchFlowExecutionsRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     

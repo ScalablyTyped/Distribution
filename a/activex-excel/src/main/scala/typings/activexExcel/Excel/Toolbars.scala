@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Toolbars extends StObject {
   
-  def apply(Index: js.Any): Toolbar = js.native
+  def apply(Index: Any): Toolbar = js.native
   
   def Add(): Toolbar = js.native
-  def Add(Name: js.Any): Toolbar = js.native
+  def Add(Name: Any): Toolbar = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -18,9 +18,9 @@ trait Toolbars extends StObject {
   
   val Creator: XlCreator = js.native
   
-  def Item(Index: js.Any): Toolbar = js.native
+  def Item(Index: Any): Toolbar = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): Toolbar = js.native
+  def _Default(Index: Any): Toolbar = js.native
 }

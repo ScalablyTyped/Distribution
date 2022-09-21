@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("CommandBase")
 @js.native
-class CommandBase ()
+open class CommandBase ()
   extends StObject
      with typings.devexpressWeb.CommandBase

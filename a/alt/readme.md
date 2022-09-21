@@ -10,10 +10,10 @@ A flux implementation
 | ------------------ | :-------------: |
 | Full name          | alt |
 | Keywords           | alt, es6, flow, flux, react, unidirectional |
-| # releases         | 0 |
-| # dependents       | 48 |
-| # downloads        | 627902 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 139197.33333333334 |
+| # stars            | 3454.0 |
 
 ## Links
 - [Homepage](https://github.com/goatslacker/alt#readme)

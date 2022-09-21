@@ -11,14 +11,11 @@ Declarative pointer event binding. Works well alongside PEP.
 | Full name          | react-pointable |
 | Keywords           | pointer, events, pep, react |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 141309 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 53900.0 |
+| # stars            | 26.0 |
 
 ## Links
-- [Homepage](https://github.com/MilllerTime/react-pointable)
-- [Bugs](https://github.com/MilllerTime/react-pointable/issues)
-- [Repository](https://github.com/MilllerTime/react-pointable)
 - [Npm](https://www.npmjs.com/package/react-pointable)
     
 

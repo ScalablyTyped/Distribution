@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "connect-modrewrite" : "0.10.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "connect-modrewrite" : "0.10.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

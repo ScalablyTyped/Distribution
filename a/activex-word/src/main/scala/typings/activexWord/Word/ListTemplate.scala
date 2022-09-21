@@ -10,7 +10,7 @@ trait ListTemplate extends StObject {
   val Application: typings.activexWord.Word.Application = js.native
   
   def Convert(): ListTemplate = js.native
-  def Convert(Level: js.Any): ListTemplate = js.native
+  def Convert(Level: Any): ListTemplate = js.native
   
   val Creator: Double = js.native
   
@@ -20,7 +20,7 @@ trait ListTemplate extends StObject {
   
   var OutlineNumbered: Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.ListTemplate_typekey")
   var WordDotListTemplate_typekey: ListTemplate = js.native

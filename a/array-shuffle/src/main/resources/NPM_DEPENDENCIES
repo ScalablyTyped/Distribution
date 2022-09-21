@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "array-shuffle" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "array-shuffle" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

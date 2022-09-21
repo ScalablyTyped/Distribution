@@ -1,19 +1,19 @@
 
 # Scala.js typings for jasmine
 
-Typings are for version 3.6
+Typings are for version 4.3
 
 ## Library description:
-Command line jasmine
+CLI for Jasmine, a simple JavaScript testing framework for browsers and Node
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | jasmine |
-| Keywords           | test, jasmine, tdd, bdd |
-| # releases         | 8 |
-| # dependents       | 780 |
-| # downloads        | 84716413 |
-| # stars            | 65 |
+| Keywords           | test, testing, jasmine, tdd, bdd |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 7912800.333333333 |
+| # stars            | 357.0 |
 
 ## Links
 - [Homepage](http://jasmine.github.io/)

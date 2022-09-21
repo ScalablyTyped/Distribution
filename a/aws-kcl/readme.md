@@ -10,15 +10,12 @@ Kinesis Client Libray (KCL) in Node.js.
 | ------------------ | :-------------: |
 | Full name          | aws-kcl |
 | Keywords           | api, amazon, aws, big data, kinesis, kinesis client library, kcl, node.js |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 240433 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 85852.0 |
+| # stars            | 272.0 |
 
 ## Links
-- [Homepage](https://github.com/awslabs/amazon-kinesis-client-nodejs)
-- [Bugs](https://github.com/awslabs/amazon-kinesis-client-nodejs/issues)
-- [Repository](https://github.com/awslabs/amazon-kinesis-client-nodejs)
 - [Npm](https://www.npmjs.com/package/aws-kcl)
     
 

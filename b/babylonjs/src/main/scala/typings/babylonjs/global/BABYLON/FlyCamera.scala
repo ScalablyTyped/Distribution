@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.FlyCamera")
 @js.native
-class FlyCamera protected ()
+open class FlyCamera protected ()
   extends StObject
      with typings.babylonjs.BABYLON.FlyCamera {
   /**
@@ -18,9 +18,16 @@ class FlyCamera protected ()
     * @param name Define the name of the camera in the scene.
     * @param position Define the starting position of the camera in the scene.
     * @param scene Define the scene the camera belongs to.
-    * @param setActiveOnSceneIfNoneActive Defines wheter the camera should be marked as active, if no other camera has been defined as active.
+    * @param setActiveOnSceneIfNoneActive Defines whether the camera should be marked as active, if no other camera has been defined as active.
     */
+  def this(name: String, position: typings.babylonjs.BABYLON.Vector3) = this()
   def this(name: String, position: typings.babylonjs.BABYLON.Vector3, scene: typings.babylonjs.BABYLON.Scene) = this()
+  def this(
+    name: String,
+    position: typings.babylonjs.BABYLON.Vector3,
+    scene: Unit,
+    setActiveOnSceneIfNoneActive: Boolean
+  ) = this()
   def this(
     name: String,
     position: typings.babylonjs.BABYLON.Vector3,

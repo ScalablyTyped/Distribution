@@ -54,7 +54,7 @@ object paginationEllipsisMod {
   
   @JSImport("rbx/components/pagination/pagination-ellipsis", "PaginationEllipsis")
   @js.native
-  val PaginationEllipsis: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val PaginationEllipsis: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait PaginationEllipsisProps extends StObject {

@@ -26,7 +26,7 @@ object tilegrid {
     */
   @JSGlobal("ol.tilegrid.TileGrid")
   @js.native
-  class TileGrid protected ()
+  open class TileGrid protected ()
     extends typings.openlayers.mod.tilegrid.TileGrid {
     /**
       * @classdesc
@@ -50,7 +50,7 @@ object tilegrid {
     */
   @JSGlobal("ol.tilegrid.WMTS")
   @js.native
-  class WMTS protected ()
+  open class WMTS protected ()
     extends typings.openlayers.mod.tilegrid.WMTS {
     /**
       * @classdesc

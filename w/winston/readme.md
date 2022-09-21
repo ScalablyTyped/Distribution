@@ -1,7 +1,7 @@
 
 # Scala.js typings for winston
 
-Typings are for version 3.3.3
+Typings are for version 3.8.2
 
 ## Library description:
 A logger for just about everything.
@@ -10,10 +10,10 @@ A logger for just about everything.
 | ------------------ | :-------------: |
 | Full name          | winston |
 | Keywords           | winston, logger, logging, logs, sysadmin, bunyan, pino, loglevel, tools, json, stream |
-| # releases         | 6 |
-| # dependents       | 8706 |
-| # downloads        | 246578135 |
-| # stars            | 439 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 3.4452976E7 |
+| # stars            | 19426.0 |
 
 ## Links
 - [Homepage](https://github.com/winstonjs/winston#readme)

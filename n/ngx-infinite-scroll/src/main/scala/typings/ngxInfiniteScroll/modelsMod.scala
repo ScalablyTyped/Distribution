@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object modelsMod {
   
-  type ContainerRef = Window | ElementRef[js.Any] | js.Any
+  type ContainerRef = Window | ElementRef[Any] | Any
   
   trait IInfiniteScrollAction extends StObject {
     
@@ -51,20 +51,20 @@ object modelsMod {
   
   trait IPositionElements extends StObject {
     
-    var axis: js.Any
+    var axis: Any
     
     var windowElement: ContainerRef
   }
   object IPositionElements {
     
-    inline def apply(axis: js.Any, windowElement: ContainerRef): IPositionElements = {
+    inline def apply(axis: Any, windowElement: ContainerRef): IPositionElements = {
       val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], windowElement = windowElement.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPositionElements]
     }
     
     extension [Self <: IPositionElements](x: Self) {
       
-      inline def setAxis(value: js.Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
       inline def setWindowElement(value: ContainerRef): Self = StObject.set(x, "windowElement", value.asInstanceOf[js.Any])
     }
@@ -103,7 +103,7 @@ object modelsMod {
   
   trait IResolver extends StObject {
     
-    var axis: js.Any
+    var axis: Any
     
     var container: ContainerRef
     
@@ -111,14 +111,14 @@ object modelsMod {
   }
   object IResolver {
     
-    inline def apply(axis: js.Any, container: ContainerRef, isWindow: Boolean): IResolver = {
+    inline def apply(axis: Any, container: ContainerRef, isWindow: Boolean): IResolver = {
       val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], isWindow = isWindow.asInstanceOf[js.Any])
       __obj.asInstanceOf[IResolver]
     }
     
     extension [Self <: IResolver](x: Self) {
       
-      inline def setAxis(value: js.Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
       inline def setContainer(value: ContainerRef): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -214,13 +214,13 @@ object modelsMod {
     
     var downDistance: Double
     
-    var element: ElementRef[js.Any]
+    var element: ElementRef[Any]
     
     var fromRoot: Boolean
     
     var horizontal: Boolean
     
-    var scrollContainer: String | ElementRef[js.Any]
+    var scrollContainer: String | ElementRef[Any]
     
     var scrollWindow: Boolean
     
@@ -234,10 +234,10 @@ object modelsMod {
       alwaysCallback: Boolean,
       disable: Boolean,
       downDistance: Double,
-      element: ElementRef[js.Any],
+      element: ElementRef[Any],
       fromRoot: Boolean,
       horizontal: Boolean,
-      scrollContainer: String | ElementRef[js.Any],
+      scrollContainer: String | ElementRef[Any],
       scrollWindow: Boolean,
       throttle: Double,
       upDistance: Double
@@ -254,13 +254,13 @@ object modelsMod {
       
       inline def setDownDistance(value: Double): Self = StObject.set(x, "downDistance", value.asInstanceOf[js.Any])
       
-      inline def setElement(value: ElementRef[js.Any]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: ElementRef[Any]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setFromRoot(value: Boolean): Self = StObject.set(x, "fromRoot", value.asInstanceOf[js.Any])
       
       inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      inline def setScrollContainer(value: String | ElementRef[js.Any]): Self = StObject.set(x, "scrollContainer", value.asInstanceOf[js.Any])
+      inline def setScrollContainer(value: String | ElementRef[Any]): Self = StObject.set(x, "scrollContainer", value.asInstanceOf[js.Any])
       
       inline def setScrollWindow(value: Boolean): Self = StObject.set(x, "scrollWindow", value.asInstanceOf[js.Any])
       

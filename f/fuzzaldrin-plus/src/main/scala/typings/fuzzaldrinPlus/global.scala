@@ -16,7 +16,7 @@ object global {
     
     @JSGlobal("fuzzaldrin.Query")
     @js.native
-    class Query ()
+    open class Query ()
       extends typings.fuzzaldrinPlus.mod.Query
     
     inline def filter[T](data: js.Array[T], query: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(data.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]

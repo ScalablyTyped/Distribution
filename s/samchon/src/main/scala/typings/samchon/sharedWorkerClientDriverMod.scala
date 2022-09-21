@@ -14,7 +14,7 @@ object sharedWorkerClientDriverMod {
   - typings.samchon.icommunicatorMod.ICommunicator because Already inherited
   - typings.samchon.iclientdriverMod.IClientDriver because var conflicts: onClose. Inlined listen */ @JSImport("samchon/protocol/communicator/client_driver/SharedWorkerClientDriver", "SharedWorkerClientDriver")
   @js.native
-  class SharedWorkerClientDriver protected () extends SharedWorkerCommunicator {
+  open class SharedWorkerClientDriver protected () extends SharedWorkerCommunicator {
     /**
       * Construct from a MessagePort object.
       */
@@ -38,6 +38,6 @@ object sharedWorkerClientDriverMod {
     /**
       * @hidden
       */
-    /* private */ var listening_ : js.Any = js.native
+    /* private */ var listening_ : Any = js.native
   }
 }

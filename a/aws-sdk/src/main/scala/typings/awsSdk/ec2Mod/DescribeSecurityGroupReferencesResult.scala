@@ -24,6 +24,6 @@ object DescribeSecurityGroupReferencesResult {
     
     inline def setSecurityGroupReferenceSetUndefined: Self = StObject.set(x, "SecurityGroupReferenceSet", js.undefined)
     
-    inline def setSecurityGroupReferenceSetVarargs(value: SecurityGroupReference*): Self = StObject.set(x, "SecurityGroupReferenceSet", js.Array(value :_*))
+    inline def setSecurityGroupReferenceSetVarargs(value: SecurityGroupReference*): Self = StObject.set(x, "SecurityGroupReferenceSet", js.Array(value*))
   }
 }

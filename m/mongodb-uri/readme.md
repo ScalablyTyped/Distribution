@@ -10,10 +10,10 @@ A parser and formatter for MongoDB URIs.
 | ------------------ | :-------------: |
 | Full name          | mongodb-uri |
 | Keywords           | mongodb, uri, url, parser, formatter, mongoose |
-| # releases         | 0 |
-| # dependents       | 86 |
-| # downloads        | 4952449 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 639134.3333333334 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/mongolab/mongodb-uri-node)

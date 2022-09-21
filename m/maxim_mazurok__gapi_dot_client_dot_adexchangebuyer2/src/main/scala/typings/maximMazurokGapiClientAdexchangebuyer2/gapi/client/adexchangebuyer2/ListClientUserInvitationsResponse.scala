@@ -28,7 +28,7 @@ object ListClientUserInvitationsResponse {
     
     inline def setInvitationsUndefined: Self = StObject.set(x, "invitations", js.undefined)
     
-    inline def setInvitationsVarargs(value: ClientUserInvitation*): Self = StObject.set(x, "invitations", js.Array(value :_*))
+    inline def setInvitationsVarargs(value: ClientUserInvitation*): Self = StObject.set(x, "invitations", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

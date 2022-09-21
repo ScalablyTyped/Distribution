@@ -10,10 +10,10 @@ The lodash method `_.forOwnRight` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.forownright |
 | Keywords           | lodash-modularized, forownright |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1137 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 138.66666666666666 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

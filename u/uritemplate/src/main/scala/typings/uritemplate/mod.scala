@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("uritemplate", "UriTemplate")
   @js.native
-  class UriTemplate () extends StObject {
+  open class UriTemplate () extends StObject {
     
     /**
       * Expands template into a string using parameter
@@ -23,7 +23,7 @@ object mod {
   
   @JSImport("uritemplate", "UriTemplateError")
   @js.native
-  class UriTemplateError protected () extends StObject {
+  open class UriTemplateError protected () extends StObject {
     def this(options: UriTemplateErrorOptions) = this()
   }
   

@@ -29,7 +29,7 @@ object GoogleActionsV2PackageEntitlement {
     
     inline def setEntitlementsUndefined: Self = StObject.set(x, "entitlements", js.undefined)
     
-    inline def setEntitlementsVarargs(value: GoogleActionsV2Entitlement*): Self = StObject.set(x, "entitlements", js.Array(value :_*))
+    inline def setEntitlementsVarargs(value: GoogleActionsV2Entitlement*): Self = StObject.set(x, "entitlements", js.Array(value*))
     
     inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     

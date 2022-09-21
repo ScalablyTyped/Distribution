@@ -8,18 +8,19 @@ trait Success extends StObject {
   
   /**
     * - An empty string if `success` is `true`.
-    * - The failure reason if `success` is `false`.
+    * - The failure reason if `success` is `false`. Possible reasons:
+    *   - `REQUEST_ABORT`: The republishing or resubscribing is interrupted by server reconnection. After the SDK reconnects to the server, the republishing or resubscribing resumes. You can ignore this error.
     */
   var reason: String
   
   /**
-    * The result of republishing or re-subscribing to the stream.
+    * The result of republishing or resubscribing to the stream.
     * - `true`: Success.
     * - `false`: Failure.
     */
   var success: Boolean
   
-  /** The corresponding uid of the stream being republished or re-subscribed to. */
+  /** The corresponding uid of the stream being republished or resubscribed to. */
   var uid: Double | String
 }
 object Success {

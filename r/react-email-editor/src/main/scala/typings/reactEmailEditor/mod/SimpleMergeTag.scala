@@ -10,6 +10,8 @@ trait SimpleMergeTag
   
   val name: String
   
+  val sample: js.UndefOr[String] = js.undefined
+  
   val value: String
 }
 object SimpleMergeTag {
@@ -22,6 +24,10 @@ object SimpleMergeTag {
   extension [Self <: SimpleMergeTag](x: Self) {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setSample(value: String): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
+    
+    inline def setSampleUndefined: Self = StObject.set(x, "sample", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

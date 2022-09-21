@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "EventDispatcherFactory")
 @js.native
-class EventDispatcherFactory ()
+open class EventDispatcherFactory ()
   extends typings.wonderJs.eventDispatcherFactoryMod.EventDispatcherFactory
 /* static members */
 object EventDispatcherFactory {
@@ -15,5 +15,5 @@ object EventDispatcherFactory {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createEventDispatcher(event: typings.wonderJs.eventMod.Event): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventDispatcher")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createEventDispatcher(event: typings.wonderJs.eventMod.Event): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventDispatcher")(event.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

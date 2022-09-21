@@ -22,6 +22,6 @@ object IExpressionResult {
     
     inline def setQBadFieldNames(value: js.Array[INxRange]): Self = StObject.set(x, "qBadFieldNames", value.asInstanceOf[js.Any])
     
-    inline def setQBadFieldNamesVarargs(value: INxRange*): Self = StObject.set(x, "qBadFieldNames", js.Array(value :_*))
+    inline def setQBadFieldNamesVarargs(value: INxRange*): Self = StObject.set(x, "qBadFieldNames", js.Array(value*))
   }
 }

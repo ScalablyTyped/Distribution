@@ -8,9 +8,9 @@ object suggestionItemDefaultScssMod {
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePickerItems/SuggestionItemDefault.scss", "peoplePickerPersona")
   @js.native
-  val peoplePickerPersona: /* "peoplePickerPersona_0bc208c7" */ String = js.native
+  val peoplePickerPersona: /* "peoplePickerPersona_3a2e817d" */ String = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePickerItems/SuggestionItemDefault.scss", "peoplePickerPersonaContent")
   @js.native
-  val peoplePickerPersonaContent: /* "peoplePickerPersonaContent_0bc208c7" */ String = js.native
+  val peoplePickerPersonaContent: /* "peoplePickerPersonaContent_3a2e817d" */ String = js.native
 }

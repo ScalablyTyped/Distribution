@@ -54,6 +54,6 @@ object ESCOption {
     
     inline def setPwmRangeUndefined: Self = StObject.set(x, "pwmRange", js.undefined)
     
-    inline def setPwmRangeVarargs(value: Double*): Self = StObject.set(x, "pwmRange", js.Array(value :_*))
+    inline def setPwmRangeVarargs(value: Double*): Self = StObject.set(x, "pwmRange", js.Array(value*))
   }
 }

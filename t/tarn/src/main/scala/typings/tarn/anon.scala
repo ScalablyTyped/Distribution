@@ -11,7 +11,7 @@ object anon {
     extends StObject
        with PromiseInspectionArgs[T] {
     
-    var error: js.UndefOr[typings.std.Error] = js.undefined
+    var error: js.UndefOr[js.Error] = js.undefined
     
     var value: T
   }
@@ -24,7 +24,7 @@ object anon {
     
     extension [Self <: Error[?], T](x: Self & Error[T]) {
       
-      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -36,20 +36,20 @@ object anon {
     extends StObject
        with PromiseInspectionArgs[T] {
     
-    var error: typings.std.Error
+    var error: js.Error
     
     var value: js.UndefOr[T] = js.undefined
   }
   object Value {
     
-    inline def apply[T](error: typings.std.Error): Value[T] = {
+    inline def apply[T](error: js.Error): Value[T] = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value[T]]
     }
     
     extension [Self <: Value[?], T](x: Self & Value[T]) {
       
-      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

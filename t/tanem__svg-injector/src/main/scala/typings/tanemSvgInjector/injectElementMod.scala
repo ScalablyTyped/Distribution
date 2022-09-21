@@ -21,9 +21,10 @@ object injectElementMod {
     evalScripts: EvalScripts,
     renumerateIRIElements: Boolean,
     cacheRequests: Boolean,
+    httpRequestWithCredentials: Boolean,
     beforeEach: BeforeEach,
     callback: Errback
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], evalScripts.asInstanceOf[js.Any], renumerateIRIElements.asInstanceOf[js.Any], cacheRequests.asInstanceOf[js.Any], beforeEach.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], evalScripts.asInstanceOf[js.Any], renumerateIRIElements.asInstanceOf[js.Any], cacheRequests.asInstanceOf[js.Any], httpRequestWithCredentials.asInstanceOf[js.Any], beforeEach.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type ElementType = Element | HTMLElement | Null
 }

@@ -10,10 +10,10 @@ Speedtest.net client
 | ------------------ | :-------------: |
 | Full name          | speedtest-net |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 56 |
-| # downloads        | 504957 |
-| # stars            | 13 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 19200.0 |
+| # stars            | 554.0 |
 
 ## Links
 - [Homepage](https://github.com/ddsol/speedtest.net#readme)

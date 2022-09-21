@@ -9,15 +9,14 @@ object activityIndicatorDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/activity-indicator/demo/basic", JSImport.Default)
   @js.native
-  class default protected () extends ActivityIndicatorExample {
-    def this(props: js.Any) = this()
+  open class default protected () extends ActivityIndicatorExample {
+    def this(props: Any) = this()
   }
   
   @js.native
-  trait ActivityIndicatorExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait ActivityIndicatorExample extends Component[Any, Any, Any] {
     
-    var closeTimer: js.Any = js.native
+    var closeTimer: Any = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MActivityIndicatorExample(): Unit = js.native

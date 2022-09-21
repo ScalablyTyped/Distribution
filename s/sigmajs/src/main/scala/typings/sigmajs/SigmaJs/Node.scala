@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Node
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var color: js.UndefOr[String] = js.undefined
   
   var id: String
   
-  var image: js.UndefOr[js.Any] = js.undefined
+  var image: js.UndefOr[Any] = js.undefined
   
   var label: js.UndefOr[String] = js.undefined
   
@@ -40,7 +40,7 @@ object Node {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     

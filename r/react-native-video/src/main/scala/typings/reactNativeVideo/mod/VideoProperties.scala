@@ -9,8 +9,11 @@ import typings.reactNativeVideo.anon.Value
 import typings.reactNativeVideo.reactNativeVideoStrings.all
 import typings.reactNativeVideo.reactNativeVideoStrings.contain
 import typings.reactNativeVideo.reactNativeVideoStrings.cover
+import typings.reactNativeVideo.reactNativeVideoStrings.duck
 import typings.reactNativeVideo.reactNativeVideoStrings.ignore
+import typings.reactNativeVideo.reactNativeVideoStrings.inherit
 import typings.reactNativeVideo.reactNativeVideoStrings.landscape
+import typings.reactNativeVideo.reactNativeVideoStrings.mix
 import typings.reactNativeVideo.reactNativeVideoStrings.none
 import typings.reactNativeVideo.reactNativeVideoStrings.obey
 import typings.reactNativeVideo.reactNativeVideoStrings.portrait
@@ -37,9 +40,11 @@ trait VideoProperties
   
   var disableFocus: js.UndefOr[Boolean] = js.undefined
   
+  var drm: js.UndefOr[DRMSettings] = js.undefined
+  
   var filter: js.UndefOr[FilterType] = js.undefined
   
-  var filterEnable: js.UndefOr[Boolean] = js.undefined
+  var filterEnabled: js.UndefOr[Boolean] = js.undefined
   
   var fullscreen: js.UndefOr[Boolean] = js.undefined
   
@@ -54,6 +59,8 @@ trait VideoProperties
   var maxBitRate: js.UndefOr[Double] = js.undefined
   
   var minLoadRetryCount: js.UndefOr[Double] = js.undefined
+  
+  var mixWithOthers: js.UndefOr[inherit | mix | duck] = js.undefined
   
   var muted: js.UndefOr[Boolean] = js.undefined
   
@@ -137,6 +144,8 @@ trait VideoProperties
   // via Image#resizeMode
   var posterResizeMode: js.UndefOr[stretch | contain | cover | none] = js.undefined
   
+  var preferredForwardBufferDuration: js.UndefOr[Double] = js.undefined
+  
   var preventsDisplaySleepDuringVideoPlayback: js.UndefOr[Boolean] = js.undefined
   
   var progressUpdateInterval: js.UndefOr[Double] = js.undefined
@@ -169,7 +178,7 @@ trait VideoProperties
   var source: Headers | Double
   
   /* Native only */
-  var src: js.UndefOr[js.Any] = js.undefined
+  var src: js.UndefOr[Any] = js.undefined
   
   var stereoPan: js.UndefOr[Double] = js.undefined
   
@@ -220,11 +229,15 @@ object VideoProperties {
     
     inline def setDisableFocusUndefined: Self = StObject.set(x, "disableFocus", js.undefined)
     
+    inline def setDrm(value: DRMSettings): Self = StObject.set(x, "drm", value.asInstanceOf[js.Any])
+    
+    inline def setDrmUndefined: Self = StObject.set(x, "drm", js.undefined)
+    
     inline def setFilter(value: FilterType): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    inline def setFilterEnable(value: Boolean): Self = StObject.set(x, "filterEnable", value.asInstanceOf[js.Any])
+    inline def setFilterEnabled(value: Boolean): Self = StObject.set(x, "filterEnabled", value.asInstanceOf[js.Any])
     
-    inline def setFilterEnableUndefined: Self = StObject.set(x, "filterEnable", js.undefined)
+    inline def setFilterEnabledUndefined: Self = StObject.set(x, "filterEnabled", js.undefined)
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
@@ -255,6 +268,10 @@ object VideoProperties {
     inline def setMinLoadRetryCount(value: Double): Self = StObject.set(x, "minLoadRetryCount", value.asInstanceOf[js.Any])
     
     inline def setMinLoadRetryCountUndefined: Self = StObject.set(x, "minLoadRetryCount", js.undefined)
+    
+    inline def setMixWithOthers(value: inherit | mix | duck): Self = StObject.set(x, "mixWithOthers", value.asInstanceOf[js.Any])
+    
+    inline def setMixWithOthersUndefined: Self = StObject.set(x, "mixWithOthers", js.undefined)
     
     inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
@@ -416,6 +433,10 @@ object VideoProperties {
     
     inline def setPosterUndefined: Self = StObject.set(x, "poster", js.undefined)
     
+    inline def setPreferredForwardBufferDuration(value: Double): Self = StObject.set(x, "preferredForwardBufferDuration", value.asInstanceOf[js.Any])
+    
+    inline def setPreferredForwardBufferDurationUndefined: Self = StObject.set(x, "preferredForwardBufferDuration", js.undefined)
+    
     inline def setPreventsDisplaySleepDuringVideoPlayback(value: Boolean): Self = StObject.set(x, "preventsDisplaySleepDuringVideoPlayback", value.asInstanceOf[js.Any])
     
     inline def setPreventsDisplaySleepDuringVideoPlaybackUndefined: Self = StObject.set(x, "preventsDisplaySleepDuringVideoPlayback", js.undefined)
@@ -470,7 +491,7 @@ object VideoProperties {
     
     inline def setSource(value: Headers | Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setSrc(value: js.Any): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: Any): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
@@ -482,7 +503,7 @@ object VideoProperties {
     
     inline def setTextTracksUndefined: Self = StObject.set(x, "textTracks", js.undefined)
     
-    inline def setTextTracksVarargs(value: Language*): Self = StObject.set(x, "textTracks", js.Array(value :_*))
+    inline def setTextTracksVarargs(value: Language*): Self = StObject.set(x, "textTracks", js.Array(value*))
     
     inline def setTranslateX(value: Double): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     

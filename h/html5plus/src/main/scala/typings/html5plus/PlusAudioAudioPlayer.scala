@@ -44,8 +44,8 @@ trait PlusAudioAudioPlayer extends StObject {
     */
   def play(): Unit = js.native
   def play(successCB: js.Function0[Unit]): Unit = js.native
-  def play(successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def play(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def play(successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def play(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 恢复播放音频

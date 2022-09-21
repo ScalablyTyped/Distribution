@@ -9,7 +9,7 @@ trait SetDockTileRequest extends StObject {
   var badgeLabel: js.UndefOr[String] = js.undefined
   
   /**
-    * Png encoded image.
+    * Png encoded image. (Encoded as a base64 string when passed over JSON)
     */
   var image: js.UndefOr[String] = js.undefined
 }

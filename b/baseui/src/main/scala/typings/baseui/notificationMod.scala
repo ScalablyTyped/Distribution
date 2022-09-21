@@ -1,26 +1,46 @@
 package typings.baseui
 
-import typings.baseui.toastMod.ToastProps
-import typings.react.mod.Component
+import typings.baseui.notificationNotificationMod.default
+import typings.baseui.toastTypesMod.ToastPropsShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationMod {
   
-  @JSImport("baseui/notification", "KIND")
-  @js.native
-  val KIND: typings.baseui.toastMod.KIND = js.native
+  /* Inlined std.Readonly<{ readonly info :'info',  readonly positive :'positive',  readonly warning :'warning',  readonly negative :'negative'}> */
+  object KIND {
+    
+    @JSImport("baseui/notification", "KIND.info")
+    @js.native
+    val info: typings.baseui.baseuiStrings.info = js.native
+    
+    @JSImport("baseui/notification", "KIND.negative")
+    @js.native
+    val negative: typings.baseui.baseuiStrings.negative = js.native
+    
+    @JSImport("baseui/notification", "KIND.positive")
+    @js.native
+    val positive: typings.baseui.baseuiStrings.positive = js.native
+    
+    @JSImport("baseui/notification", "KIND.warning")
+    @js.native
+    val warning: typings.baseui.baseuiStrings.warning = js.native
+  }
   
   @JSImport("baseui/notification", "Notification")
   @js.native
-  class Notification protected ()
-    extends Component[ToastProps, js.Object, js.Any] {
-    def this(props: ToastProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: ToastProps, context: js.Any) = this()
+  open class Notification () extends default
+  /* static members */
+  object Notification {
+    
+    @JSImport("baseui/notification", "Notification")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("baseui/notification", "Notification.defaultProps")
+    @js.native
+    def defaultProps: ToastPropsShape = js.native
+    inline def defaultProps_=(x: ToastPropsShape): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

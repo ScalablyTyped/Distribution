@@ -3,8 +3,8 @@ package typings.cliProgress
 import typings.cliProgress.cliProgressStrings.center
 import typings.cliProgress.cliProgressStrings.left
 import typings.cliProgress.cliProgressStrings.right
-import typings.node.NodeJS.WritableStream
-import typings.std.Date
+import typings.node.eventsMod.^
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,24 +13,108 @@ object mod {
   
   @JSImport("cli-progress", "Bar")
   @js.native
-  class Bar protected () extends SingleBar {
+  open class Bar protected () extends SingleBar {
     /** Initialize a new Progress bar. An instance can be used multiple times! it's not required to re-create it! */
     def this(opt: Options) = this()
     def this(opt: Options, preset: Preset) = this()
   }
   
-  @JSImport("cli-progress", "MultiBar")
+  object Format {
+    
+    @JSImport("cli-progress", "Format")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("cli-progress", "Format.BarFormat")
+    @js.native
+    def BarFormat: BarFormatter = js.native
+    inline def BarFormat(progress: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("BarFormat")(progress.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def BarFormat_=(x: BarFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BarFormat")(x.asInstanceOf[js.Any])
+    
+    @JSImport("cli-progress", "Format.Formatter")
+    @js.native
+    def Formatter: GenericFormatter = js.native
+    inline def Formatter(options: Options, params: Params, payload: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("Formatter")(options.asInstanceOf[js.Any], params.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def Formatter_=(x: GenericFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Formatter")(x.asInstanceOf[js.Any])
+    
+    @JSImport("cli-progress", "Format.TimeFormat")
+    @js.native
+    def TimeFormat: TimeFormatter = js.native
+    inline def TimeFormat(t: Double, options: Options, roundToMultipleOf: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("TimeFormat")(t.asInstanceOf[js.Any], options.asInstanceOf[js.Any], roundToMultipleOf.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def TimeFormat_=(x: TimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimeFormat")(x.asInstanceOf[js.Any])
+    
+    @JSImport("cli-progress", "Format.ValueFormat")
+    @js.native
+    def ValueFormat: ValueFormatter = js.native
+    inline def ValueFormat(v: Double, options: Options, `type`: ValueType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ValueFormat")(v.asInstanceOf[js.Any], options.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def ValueFormat_=(x: ValueFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValueFormat")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("cli-progress", "GenericBar")
   @js.native
-  class MultiBar protected () extends StObject {
+  open class GenericBar protected () extends ^ {
+    /** Initialize a new Progress bar. An instance can be used multiple times! it's not required to re-create it! */
     def this(opt: Options) = this()
     def this(opt: Options, preset: Preset) = this()
     
-    def create(total: Double, startValue: Double): SingleBar = js.native
-    def create(total: Double, startValue: Double, payload: js.Any): SingleBar = js.native
+    /** Calculate the actual progress value */
+    def getProgress(): Double = js.native
     
+    /** Get the total (limit) value */
+    def getTotal(): Double = js.native
+    
+    /** Increases the current progress value by a specified amount (default +1). Update payload optionally */
+    def increment(): Unit = js.native
+    def increment(payload: js.Object): Unit = js.native
+    def increment(step: Double): Unit = js.native
+    def increment(step: Double, payload: js.Object): Unit = js.native
+    def increment(step: Unit, payload: js.Object): Unit = js.native
+    
+    /** Internal render function */
+    def render(): Unit = js.native
+    def render(forceRendering: Boolean): Unit = js.native
+    
+    /** Sets the total progress value while progressbar is active. Especially useful handling dynamic tasks. */
+    def setTotal(total: Double): Unit = js.native
+    
+    /** Starts the progress bar and set the total and initial value */
+    def start(total: Double, startValue: Double): Unit = js.native
+    def start(total: Double, startValue: Double, payload: js.Object): Unit = js.native
+    
+    /** Stops the progress bar and go to next line */
+    def stop(): Unit = js.native
+    
+    /** Sets the current progress value and optionally the payload with values of custom tokens as a second parameter */
+    def update(current: Double): Unit = js.native
+    def update(current: Double, payload: js.Object): Unit = js.native
+    def update(payload: js.Object): Unit = js.native
+    
+    /** Force eta calculation update (long running processes) without altering the progress values. */
+    def updateETA(): Unit = js.native
+  }
+  
+  @JSImport("cli-progress", "MultiBar")
+  @js.native
+  open class MultiBar protected () extends ^ {
+    def this(opt: Options) = this()
+    def this(opt: Options, preset: Preset) = this()
+    
+    /** add a new bar to the stack */
+    def create(total: Double, startValue: Double): SingleBar = js.native
+    def create(total: Double, startValue: Double, payload: Any): SingleBar = js.native
+    def create(total: Double, startValue: Double, payload: Any, barOptions: Options): SingleBar = js.native
+    def create(total: Double, startValue: Double, payload: Unit, barOptions: Options): SingleBar = js.native
+    
+    /** log output above the progress bars; string must end with newline character! */
+    def log(data: String): Unit = js.native
+    
+    /** remove a bar from the stack */
     def remove(bar: SingleBar): Boolean = js.native
     
     def stop(): Unit = js.native
+    
+    /** internal update routine */
+    def update(): Unit = js.native
   }
   
   object Presets {
@@ -68,46 +152,15 @@ object mod {
   
   @JSImport("cli-progress", "SingleBar")
   @js.native
-  class SingleBar protected () extends StObject {
+  open class SingleBar protected () extends GenericBar {
     /** Initialize a new Progress bar. An instance can be used multiple times! it's not required to re-create it! */
     def this(opt: Options) = this()
     def this(opt: Options, preset: Preset) = this()
-    
-    def calculateETA(): Unit = js.native
-    
-    def formatTime(t: js.Any, roundToMultipleOf: js.Any): js.Any = js.native
-    
-    def getTotal(): js.Any = js.native
-    
-    /** Increases the current progress value by a specified amount (default +1). Update payload optionally */
-    def increment(): Unit = js.native
-    def increment(payload: js.Object): Unit = js.native
-    def increment(step: Double): Unit = js.native
-    def increment(step: Double, payload: js.Object): Unit = js.native
-    def increment(step: Unit, payload: js.Object): Unit = js.native
-    
-    def render(): Unit = js.native
-    
-    /** Sets the total progress value while progressbar is active. Especially useful handling dynamic tasks. */
-    def setTotal(total: Double): Unit = js.native
-    
-    /** Starts the progress bar and set the total and initial value */
-    def start(total: Double, startValue: Double): Unit = js.native
-    def start(total: Double, startValue: Double, payload: js.Object): Unit = js.native
-    
-    /** Stops the progress bar and go to next line */
-    def stop(): Unit = js.native
-    
-    def stopTimer(): Unit = js.native
-    
-    /** Sets the current progress value and optionally the payload with values of custom tokens as a second parameter */
-    def update(current: Double): Unit = js.native
-    def update(current: Double, payload: js.Object): Unit = js.native
-    def update(payload: js.Object): Unit = js.native
-    
-    /** Force eta calculation update (long running processes) without altering the progress values. */
-    def updateETA(): Unit = js.native
   }
+  
+  type BarFormatter = js.Function2[/* progress */ Double, /* options */ Options, String]
+  
+  type GenericFormatter = js.Function3[/* options */ Options, /* params */ Params, /* payload */ Any, String]
   
   trait Options extends StObject {
     
@@ -125,6 +178,9 @@ object mod {
     
     /** character to use as "complete" indicator in the bar (default: "=") */
     var barCompleteString: js.UndefOr[String] = js.undefined
+    
+    /** glue sequence (control chars) between bar elements (default: '') */
+    var barGlue: js.UndefOr[String] = js.undefined
     
     /** character to use as "incomplete" indicator in the bar (default: "-") */
     var barIncompleteChar: js.UndefOr[String] = js.undefined
@@ -171,23 +227,22 @@ object mod {
       *    is rendered as
       *      progress [========================================] 100% | ETA: 0s | 200/200
       */
-    var format: js.UndefOr[
-        String | (js.Function3[/* options */ this.type, /* params */ Params, /* payload */ js.Any, String])
-      ] = js.undefined
+    var format: js.UndefOr[String | GenericFormatter] = js.undefined
     
     /** a custom bar formatter function which renders the bar-element (default: format-bar.js) */
-    var formatBar: js.UndefOr[js.Function2[/* progress */ Double, /* options */ this.type, String]] = js.undefined
+    var formatBar: js.UndefOr[BarFormatter] = js.undefined
     
     /** a custom timer formatter function which renders the formatted time elements like eta_formatted and duration-formatted (default: format-time.js) */
-    var formatTime: js.UndefOr[
-        js.Function3[/* t */ Double, /* options */ this.type, /* roundToMultipleOf */ Double, String]
-      ] = js.undefined
+    var formatTime: js.UndefOr[TimeFormatter] = js.undefined
     
     /** a custom value formatter function which renders all other values (default: format-value.js) */
-    var formatValue: js.UndefOr[js.Function3[/* v */ Double, /* options */ this.type, /* type */ String, String]] = js.undefined
+    var formatValue: js.UndefOr[ValueFormatter] = js.undefined
     
     /** the maximum update rate (default: 10) */
     var fps: js.UndefOr[Double] = js.undefined
+    
+    /** stop bar on SIGINT/SIGTERM to restore cursor settings (default: true) */
+    var gracefulExit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * hide the cursor during progress operation; restored on complete (default: false)
@@ -204,11 +259,14 @@ object mod {
     /** set the output schedule/interval for notty output in ms (default: 2000ms) */
     var notTTYSchedule: js.UndefOr[Double] = js.undefined
     
+    /** progress calculation relative to start value ? default start at 0 (default: false) */
+    var progressCalculationRelative: js.UndefOr[Boolean] = js.undefined
+    
     /**  automatically call stop() when the value reaches the total (default: false) */
     var stopOnComplete: js.UndefOr[Boolean] = js.undefined
     
     /** output stream to use (default: process.stderr) */
-    var stream: js.UndefOr[WritableStream] = js.undefined
+    var stream: js.UndefOr[WritableStream[Any]] = js.undefined
     
     /** trigger redraw during update() in case threshold time x2 is exceeded (default: true) - limited to single bar usage */
     var synchronousUpdate: js.UndefOr[Boolean] = js.undefined
@@ -242,6 +300,10 @@ object mod {
       
       inline def setBarCompleteStringUndefined: Self = StObject.set(x, "barCompleteString", js.undefined)
       
+      inline def setBarGlue(value: String): Self = StObject.set(x, "barGlue", value.asInstanceOf[js.Any])
+      
+      inline def setBarGlueUndefined: Self = StObject.set(x, "barGlue", js.undefined)
+      
       inline def setBarIncompleteChar(value: String): Self = StObject.set(x, "barIncompleteChar", value.asInstanceOf[js.Any])
       
       inline def setBarIncompleteCharUndefined: Self = StObject.set(x, "barIncompleteChar", js.undefined)
@@ -274,27 +336,31 @@ object mod {
       
       inline def setForceRedrawUndefined: Self = StObject.set(x, "forceRedraw", js.undefined)
       
-      inline def setFormat(value: String | (js.Function3[Options, /* params */ Params, /* payload */ js.Any, String])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String | GenericFormatter): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      inline def setFormatBar(value: (/* progress */ Double, Options) => String): Self = StObject.set(x, "formatBar", js.Any.fromFunction2(value))
+      inline def setFormatBar(value: (/* progress */ Double, /* options */ Options) => String): Self = StObject.set(x, "formatBar", js.Any.fromFunction2(value))
       
       inline def setFormatBarUndefined: Self = StObject.set(x, "formatBar", js.undefined)
       
-      inline def setFormatFunction3(value: (Options, /* params */ Params, /* payload */ js.Any) => String): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
+      inline def setFormatFunction3(value: (/* options */ Options, /* params */ Params, /* payload */ Any) => String): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
       
-      inline def setFormatTime(value: (/* t */ Double, Options, /* roundToMultipleOf */ Double) => String): Self = StObject.set(x, "formatTime", js.Any.fromFunction3(value))
+      inline def setFormatTime(value: (/* t */ Double, /* options */ Options, /* roundToMultipleOf */ Double) => String): Self = StObject.set(x, "formatTime", js.Any.fromFunction3(value))
       
       inline def setFormatTimeUndefined: Self = StObject.set(x, "formatTime", js.undefined)
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setFormatValue(value: (/* v */ Double, Options, /* type */ String) => String): Self = StObject.set(x, "formatValue", js.Any.fromFunction3(value))
+      inline def setFormatValue(value: (/* v */ Double, /* options */ Options, /* type */ ValueType) => String): Self = StObject.set(x, "formatValue", js.Any.fromFunction3(value))
       
       inline def setFormatValueUndefined: Self = StObject.set(x, "formatValue", js.undefined)
       
       inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
       
       inline def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
+      
+      inline def setGracefulExit(value: Boolean): Self = StObject.set(x, "gracefulExit", value.asInstanceOf[js.Any])
+      
+      inline def setGracefulExitUndefined: Self = StObject.set(x, "gracefulExit", js.undefined)
       
       inline def setHideCursor(value: Boolean): Self = StObject.set(x, "hideCursor", value.asInstanceOf[js.Any])
       
@@ -316,11 +382,15 @@ object mod {
       
       inline def setNotTTYScheduleUndefined: Self = StObject.set(x, "notTTYSchedule", js.undefined)
       
+      inline def setProgressCalculationRelative(value: Boolean): Self = StObject.set(x, "progressCalculationRelative", value.asInstanceOf[js.Any])
+      
+      inline def setProgressCalculationRelativeUndefined: Self = StObject.set(x, "progressCalculationRelative", js.undefined)
+      
       inline def setStopOnComplete(value: Boolean): Self = StObject.set(x, "stopOnComplete", value.asInstanceOf[js.Any])
       
       inline def setStopOnCompleteUndefined: Self = StObject.set(x, "stopOnComplete", js.undefined)
       
-      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
@@ -338,7 +408,7 @@ object mod {
     
     var progress: Double
     
-    var startTime: Date
+    var startTime: Double
     
     var total: Double
     
@@ -346,7 +416,7 @@ object mod {
   }
   object Params {
     
-    inline def apply(eta: Double, maxWidth: Double, progress: Double, startTime: Date, total: Double, value: Double): Params = {
+    inline def apply(eta: Double, maxWidth: Double, progress: Double, startTime: Double, total: Double, value: Double): Params = {
       val __obj = js.Dynamic.literal(eta = eta.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Params]
     }
@@ -359,7 +429,7 @@ object mod {
       
       inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
       inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
@@ -384,7 +454,7 @@ object mod {
       *
       * {value} - the current value set by last update() call
       *
-      * {eta} - expected time of accomplishment in seconds
+      * {eta} -  expected time of accomplishment in seconds (limited to 115days, otherwise INF is displayed)
       *
       * {duration} - elapsed time in seconds
       *
@@ -410,5 +480,30 @@ object mod {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
+  }
+  
+  type TimeFormatter = js.Function3[/* t */ Double, /* options */ Options, /* roundToMultipleOf */ Double, String]
+  
+  type ValueFormatter = js.Function3[/* v */ Double, /* options */ Options, /* type */ ValueType, String]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.cliProgress.cliProgressStrings.percentage
+    - typings.cliProgress.cliProgressStrings.total
+    - typings.cliProgress.cliProgressStrings.value
+    - typings.cliProgress.cliProgressStrings.eta
+    - typings.cliProgress.cliProgressStrings.duration
+  */
+  trait ValueType extends StObject
+  object ValueType {
+    
+    inline def duration: typings.cliProgress.cliProgressStrings.duration = "duration".asInstanceOf[typings.cliProgress.cliProgressStrings.duration]
+    
+    inline def eta: typings.cliProgress.cliProgressStrings.eta = "eta".asInstanceOf[typings.cliProgress.cliProgressStrings.eta]
+    
+    inline def percentage: typings.cliProgress.cliProgressStrings.percentage = "percentage".asInstanceOf[typings.cliProgress.cliProgressStrings.percentage]
+    
+    inline def total: typings.cliProgress.cliProgressStrings.total = "total".asInstanceOf[typings.cliProgress.cliProgressStrings.total]
+    
+    inline def value: typings.cliProgress.cliProgressStrings.value = "value".asInstanceOf[typings.cliProgress.cliProgressStrings.value]
   }
 }

@@ -75,7 +75,7 @@ object formula {
       getLocationOnScreen: () => Point,
       getSize: () => Size,
       grabFocus: () => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeAccessibleEventListener: XAccessibleEventListener => Unit
     ): AccessibleFormulaText = {
@@ -157,7 +157,7 @@ object formula {
       getTextBehindIndex: (Double, Double) => TextSegment,
       getTextRange: (Double, Double) => String,
       grabFocus: () => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeAccessibleEventListener: XAccessibleEventListener => Unit,
       setCaretPosition: Double => Boolean,

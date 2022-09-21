@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VNode extends StObject {
   
   @JSName("$attrs$")
-  var DollarattrsDollar: js.UndefOr[js.Any] = js.undefined
+  var DollarattrsDollar: js.UndefOr[Any] = js.undefined
   
   @JSName("$children$")
   var DollarchildrenDollar: js.Array[VNode]
   
   @JSName("$elm$")
-  var DollarelmDollar: js.Any
+  var DollarelmDollar: Any
   
   @JSName("$flags$")
   var DollarflagsDollar: Double
@@ -34,7 +34,7 @@ object VNode {
   
   inline def apply(
     DollarchildrenDollar: js.Array[VNode],
-    DollarelmDollar: js.Any,
+    DollarelmDollar: Any,
     DollarflagsDollar: Double,
     DollartagDollar: String | Double | js.Function,
     DollartextDollar: String
@@ -50,15 +50,15 @@ object VNode {
   
   extension [Self <: VNode](x: Self) {
     
-    inline def setDollarattrsDollar(value: js.Any): Self = StObject.set(x, "$attrs$", value.asInstanceOf[js.Any])
+    inline def setDollarattrsDollar(value: Any): Self = StObject.set(x, "$attrs$", value.asInstanceOf[js.Any])
     
     inline def setDollarattrsDollarUndefined: Self = StObject.set(x, "$attrs$", js.undefined)
     
     inline def setDollarchildrenDollar(value: js.Array[VNode]): Self = StObject.set(x, "$children$", value.asInstanceOf[js.Any])
     
-    inline def setDollarchildrenDollarVarargs(value: VNode*): Self = StObject.set(x, "$children$", js.Array(value :_*))
+    inline def setDollarchildrenDollarVarargs(value: VNode*): Self = StObject.set(x, "$children$", js.Array(value*))
     
-    inline def setDollarelmDollar(value: js.Any): Self = StObject.set(x, "$elm$", value.asInstanceOf[js.Any])
+    inline def setDollarelmDollar(value: Any): Self = StObject.set(x, "$elm$", value.asInstanceOf[js.Any])
     
     inline def setDollarflagsDollar(value: Double): Self = StObject.set(x, "$flags$", value.asInstanceOf[js.Any])
     

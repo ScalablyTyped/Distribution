@@ -12,7 +12,7 @@ trait EC2SecurityGroup extends StObject {
   var EC2SecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS ID of the owner of the EC2 security group specified in the EC2SecurityGroupName field. 
+    * The Amazon Web Services account ID of the owner of the EC2 security group specified in the EC2SecurityGroupName field. 
     */
   var EC2SecurityGroupOwnerId: js.UndefOr[String] = js.undefined
   
@@ -51,6 +51,6 @@ object EC2SecurityGroup {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

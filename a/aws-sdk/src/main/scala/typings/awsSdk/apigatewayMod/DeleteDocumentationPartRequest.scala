@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteDocumentationPartRequest extends StObject {
   
   /**
-    * [Required] The identifier of the to-be-deleted documentation part.
+    * The identifier of the to-be-deleted documentation part.
     */
   var documentationPartId: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }

@@ -1,6 +1,5 @@
 package typings.jqueryAjaxfile.anon
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait Bail extends StObject {
   
   var bail: js.UndefOr[Boolean] = js.undefined
   
-  var grep: js.UndefOr[RegExp] = js.undefined
+  var grep: js.UndefOr[js.RegExp] = js.undefined
   
   var reporter: js.UndefOr[String] = js.undefined
   
@@ -30,7 +29,7 @@ object Bail {
     
     inline def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
     
-    inline def setGrep(value: RegExp): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
+    inline def setGrep(value: js.RegExp): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
     
     inline def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
     

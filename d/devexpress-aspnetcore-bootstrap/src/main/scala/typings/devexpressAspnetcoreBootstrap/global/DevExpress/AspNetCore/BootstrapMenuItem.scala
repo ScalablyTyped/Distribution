@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("DevExpress.AspNetCore.BootstrapMenuItem")
 @js.native
-class BootstrapMenuItem protected ()
+open class BootstrapMenuItem protected ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapMenuItem {
-  /* protected */ def this(instance: js.Any) = this()
+  /* protected */ def this(instance: Any) = this()
   
   /* CompleteClass */
   override def getBadgeIconCssClass(): String = js.native
@@ -54,7 +54,7 @@ class BootstrapMenuItem protected ()
   override val indexPath: String = js.native
   
   /* protected */ /* CompleteClass */
-  override val instance: js.Any = js.native
+  override val instance: Any = js.native
   
   /* CompleteClass */
   override val menu: typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapMenu | Null = js.native

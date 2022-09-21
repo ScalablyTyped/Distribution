@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter", "SATFactory")
 @js.native
-class SATFactory ()
+open class SATFactory ()
   extends StObject
      with typings.phaser.MatterJS.SATFactory {
   

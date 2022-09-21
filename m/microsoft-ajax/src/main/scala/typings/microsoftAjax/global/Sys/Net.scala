@@ -81,7 +81,7 @@ object Net {
   /**
     * Initializes a new instance of the Sys.Net.WebRequestManager class when implemented in a derived class.
     */
-  class IWebRequestManager ()
+  open class IWebRequestManager ()
     extends StObject
        with typings.microsoftAjax.Sys.Net.IWebRequestManager {
     
@@ -200,7 +200,7 @@ object Net {
     */
   @JSGlobal("Sys.Net.NetworkRequestEventArgs")
   @js.native
-  class NetworkRequestEventArgs protected ()
+  open class NetworkRequestEventArgs protected ()
     extends StObject
        with typings.microsoftAjax.Sys.Net.NetworkRequestEventArgs {
     //#region Constructors
@@ -237,7 +237,7 @@ object Net {
   /**
     * Initializes a new instance of the Sys.Net.WebRequest class.
     */
-  class WebRequest ()
+  open class WebRequest ()
     extends StObject
        with typings.microsoftAjax.Sys.Net.WebRequest {
     
@@ -247,7 +247,7 @@ object Net {
       */
     /* CompleteClass */
     override def add_completed(
-      handler: js.Function2[/* reference */ js.Any, /* eventArgs */ typings.microsoftAjax.Sys.EventArgs, Unit]
+      handler: js.Function2[/* reference */ Any, /* eventArgs */ typings.microsoftAjax.Sys.EventArgs, Unit]
     ): Unit = js.native
     
     /**
@@ -286,7 +286,7 @@ object Net {
     override def get_url(): String = js.native
     
     /* CompleteClass */
-    override def get_userContext(): js.Any = js.native
+    override def get_userContext(): Any = js.native
     
     /**
       * Executes a Web request.
@@ -300,7 +300,7 @@ object Net {
       */
     /* CompleteClass */
     override def remove_completed(
-      handler: js.Function2[/* reference */ js.Any, /* eventArgs */ typings.microsoftAjax.Sys.EventArgs, Unit]
+      handler: js.Function2[/* reference */ Any, /* eventArgs */ typings.microsoftAjax.Sys.EventArgs, Unit]
     ): Unit = js.native
     
     /* CompleteClass */
@@ -319,7 +319,7 @@ object Net {
     override def set_url(value: String): Unit = js.native
     
     /* CompleteClass */
-    override def set_userContext(value: js.Any): Unit = js.native
+    override def set_userContext(value: Any): Unit = js.native
   }
   
   /**
@@ -332,7 +332,7 @@ object Net {
   /**
     * Initializes a Sys.Net.WebRequestExecutor instance when implemented in a derived class.
     */
-  class WebRequestExecutor ()
+  open class WebRequestExecutor ()
     extends StObject
        with typings.microsoftAjax.Sys.Net.WebRequestExecutor {
     
@@ -450,7 +450,7 @@ object Net {
       * @return The JSON-evaluated response object.
       */
     /* CompleteClass */
-    override def `object`(): js.Any = js.native
+    override def `object`(): Any = js.native
   }
   
   @JSGlobal("Sys.Net.WebRequestManager")
@@ -460,15 +460,15 @@ object Net {
   
   @JSGlobal("Sys.Net.WebServiceError")
   @js.native
-  class WebServiceError ()
+  open class WebServiceError ()
     extends StObject
        with typings.microsoftAjax.Sys.Net.WebServiceError {
     
     /* CompleteClass */
-    override def get_errorObject(): js.Any = js.native
+    override def get_errorObject(): Any = js.native
     
     /* CompleteClass */
-    override def get_exceptionType(): js.Any = js.native
+    override def get_exceptionType(): Any = js.native
     
     /* CompleteClass */
     override def get_message(): String = js.native
@@ -490,7 +490,7 @@ object Net {
     */
   @JSGlobal("Sys.Net.WebServiceProxy")
   @js.native
-  class WebServiceProxy ()
+  open class WebServiceProxy ()
     extends StObject
        with typings.microsoftAjax.Sys.Net.WebServiceProxy
   object WebServiceProxy {
@@ -504,12 +504,12 @@ object Net {
       servicePath: String,
       methodName: String,
       useGet: js.UndefOr[Boolean],
-      params: js.UndefOr[js.Any],
+      params: js.UndefOr[Any],
       onSuccess: js.UndefOr[
           js.Function2[/* result */ String, /* eventArgs */ typings.microsoftAjax.Sys.EventArgs, Unit]
         ],
       onFailure: js.UndefOr[js.Function1[/* error */ typings.microsoftAjax.Sys.Net.WebServiceError, Unit]],
-      userContext: js.UndefOr[js.Any],
+      userContext: js.UndefOr[Any],
       timeout: js.UndefOr[Double],
       enableJsonp: js.UndefOr[Boolean],
       jsonpCallbackParameter: js.UndefOr[String]

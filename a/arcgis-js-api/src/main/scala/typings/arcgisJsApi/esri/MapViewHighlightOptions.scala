@@ -13,12 +13,16 @@ trait MapViewHighlightOptions
   /**
     * The color of the highlight fill.
     *
+    * @default #00ffff
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
   var color: js.UndefOr[Color_] = js.undefined
   
   /**
     * The opacity of the fill (area within the halo).
+    *
+    * @default 0.25
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
@@ -34,6 +38,8 @@ trait MapViewHighlightOptions
   /**
     * The opacity of the highlight halo.
     *
+    * @default 1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
   var haloOpacity: js.UndefOr[Double] = js.undefined
@@ -45,8 +51,8 @@ object MapViewHighlightOptions {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ js.Any, MapViewHighlightOptions]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], MapViewHighlightOptions]])
+      js.Function2[/* propertyName */ String, /* value */ Any, MapViewHighlightOptions]
+    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], MapViewHighlightOptions]])
   ): MapViewHighlightOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapViewHighlightOptions]

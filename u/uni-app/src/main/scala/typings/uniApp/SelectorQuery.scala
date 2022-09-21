@@ -17,7 +17,7 @@ trait SelectorQuery extends StObject {
     * 将选择器的选取范围更改为自定义组件component内
     */
   def in(): SelectorQuery = js.native
-  def in(component: js.Any): SelectorQuery = js.native
+  def in(component: Any): SelectorQuery = js.native
   
   /**
     * 在当前页面下选择第一个匹配选择器selector的节点

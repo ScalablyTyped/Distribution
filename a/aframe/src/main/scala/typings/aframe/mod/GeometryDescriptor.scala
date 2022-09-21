@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeometryDescriptor[T /* <: Geometry[js.Any] */] extends StObject {
+trait GeometryDescriptor[T /* <: Geometry[Any] */] extends StObject {
   
   var Geometry: GeometryConstructor[T]
   
@@ -12,12 +12,12 @@ trait GeometryDescriptor[T /* <: Geometry[js.Any] */] extends StObject {
 }
 object GeometryDescriptor {
   
-  inline def apply[T /* <: Geometry[js.Any] */](Geometry: GeometryConstructor[T], schema: Schema_[js.Object]): GeometryDescriptor[T] = {
+  inline def apply[T /* <: Geometry[Any] */](Geometry: GeometryConstructor[T], schema: Schema_[js.Object]): GeometryDescriptor[T] = {
     val __obj = js.Dynamic.literal(Geometry = Geometry.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeometryDescriptor[T]]
   }
   
-  extension [Self <: GeometryDescriptor[?], T /* <: Geometry[js.Any] */](x: Self & GeometryDescriptor[T]) {
+  extension [Self <: GeometryDescriptor[?], T /* <: Geometry[Any] */](x: Self & GeometryDescriptor[T]) {
     
     inline def setGeometry(value: GeometryConstructor[T]): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
     

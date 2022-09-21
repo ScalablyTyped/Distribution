@@ -11,9 +11,9 @@ Streaming JSON.stringify()
 | Full name          | streaming-json-stringify |
 | Keywords           | stream, json, stringify |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 2729958 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 461990.3333333333 |
+| # stars            | 60.0 |
 
 ## Links
 - [Homepage](https://github.com/stream-utils/streaming-json-stringify#readme)

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a Google Tag Manager Folder&#39;s contents.
-  */
 trait SchemaFolderEntities extends StObject {
   
   /**
@@ -37,18 +34,18 @@ object SchemaFolderEntities {
     
     inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    inline def setTagVarargs(value: SchemaTag*): Self = StObject.set(x, "tag", js.Array(value :_*))
+    inline def setTagVarargs(value: SchemaTag*): Self = StObject.set(x, "tag", js.Array(value*))
     
     inline def setTrigger(value: js.Array[SchemaTrigger]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
-    inline def setTriggerVarargs(value: SchemaTrigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+    inline def setTriggerVarargs(value: SchemaTrigger*): Self = StObject.set(x, "trigger", js.Array(value*))
     
     inline def setVariable(value: js.Array[SchemaVariable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
     inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     
-    inline def setVariableVarargs(value: SchemaVariable*): Self = StObject.set(x, "variable", js.Array(value :_*))
+    inline def setVariableVarargs(value: SchemaVariable*): Self = StObject.set(x, "variable", js.Array(value*))
   }
 }

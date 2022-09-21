@@ -32,7 +32,7 @@ object imageAuditdata {
     
     inline def setStars(value: js.Array[imageAuditdata]): Self = StObject.set(x, "stars", value.asInstanceOf[js.Any])
     
-    inline def setStarsVarargs(value: imageAuditdata*): Self = StObject.set(x, "stars", js.Array(value :_*))
+    inline def setStarsVarargs(value: imageAuditdata*): Self = StObject.set(x, "stars", js.Array(value*))
     
     inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Memorable passwords generator
 | ------------------ | :-------------: |
 | Full name          | password |
 | Keywords           | password, generator |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 8065 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1473.6666666666667 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/shimaore/password)

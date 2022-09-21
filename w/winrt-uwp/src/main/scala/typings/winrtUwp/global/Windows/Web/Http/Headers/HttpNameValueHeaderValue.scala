@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents name and value information used in a number of HTTP headers. */
 @JSGlobal("Windows.Web.Http.Headers.HttpNameValueHeaderValue")
 @js.native
-class HttpNameValueHeaderValue protected ()
+open class HttpNameValueHeaderValue protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpNameValueHeaderValue {
   /**

@@ -42,7 +42,7 @@ trait ResultSet[T] extends StObject {
   
   /**
     * This call fetches numRows rows of the ResultSet as an object or an array of column values,
-    * depending on the value of outFormat.
+    * depending on the value of outFormat. If no argument is passed, or numRows is zero, then all rows are fetched. 
     *
     * At the end of fetching, the ResultSet should be freed by calling close().
     *
@@ -51,6 +51,8 @@ trait ResultSet[T] extends StObject {
     *
     * @param numRows The number of rows to fetch
     */
+  def getRows(): js.Promise[js.Array[T]] = js.native
+  def getRows(callback: js.Function2[/* error */ DBError, /* rows */ js.Array[T], Unit]): Unit = js.native
   def getRows(numRows: Double): js.Promise[js.Array[T]] = js.native
   def getRows(numRows: Double, callback: js.Function2[/* error */ DBError, /* rows */ js.Array[T], Unit]): Unit = js.native
   

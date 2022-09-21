@@ -9,7 +9,7 @@ trait GetServersResponse extends StObject {
   /**
     * The time when the server was last modified.
     */
-  var lastModifiedOn: js.UndefOr[Timestamp] = js.undefined
+  var lastModifiedOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The token required to retrieve the next set of results. This value is null when there are no more results to return.
@@ -35,7 +35,7 @@ object GetServersResponse {
   
   extension [Self <: GetServersResponse](x: Self) {
     
-    inline def setLastModifiedOn(value: Timestamp): Self = StObject.set(x, "lastModifiedOn", value.asInstanceOf[js.Any])
+    inline def setLastModifiedOn(value: js.Date): Self = StObject.set(x, "lastModifiedOn", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedOnUndefined: Self = StObject.set(x, "lastModifiedOn", js.undefined)
     
@@ -51,6 +51,6 @@ object GetServersResponse {
     
     inline def setServerListUndefined: Self = StObject.set(x, "serverList", js.undefined)
     
-    inline def setServerListVarargs(value: Server*): Self = StObject.set(x, "serverList", js.Array(value :_*))
+    inline def setServerListVarargs(value: Server*): Self = StObject.set(x, "serverList", js.Array(value*))
   }
 }

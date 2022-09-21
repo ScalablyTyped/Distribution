@@ -20,10 +20,12 @@ trait MeshTexture
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#data)
     */
-  var data: HTMLImageElement | HTMLCanvasElement | js.Any | ImageData = js.native
+  var data: HTMLImageElement | HTMLCanvasElement | Any | ImageData = js.native
   
   /**
     * Indicates whether the image data should be interpreted as being semi-transparent.
+    *
+    * @default undefined
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#transparent)
     */
@@ -38,6 +40,8 @@ trait MeshTexture
   
   /**
     * Specifies how uv coordinates outside the [0, 1] range are handled.
+    *
+    * @default "repeat"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#wrap)
     */

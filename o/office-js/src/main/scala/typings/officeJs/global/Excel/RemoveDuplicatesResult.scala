@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the results from `Range.removeDuplicates`.
   *
-  * Represents the results from the removeDuplicates method on range
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.RemoveDuplicatesResult")
 @js.native
-class RemoveDuplicatesResult ()
+open class RemoveDuplicatesResult ()
   extends StObject
      with typings.officeJs.Excel.RemoveDuplicatesResult {
   

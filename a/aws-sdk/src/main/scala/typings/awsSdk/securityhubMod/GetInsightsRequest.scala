@@ -34,7 +34,7 @@ object GetInsightsRequest {
     
     inline def setInsightArnsUndefined: Self = StObject.set(x, "InsightArns", js.undefined)
     
-    inline def setInsightArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "InsightArns", js.Array(value :_*))
+    inline def setInsightArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "InsightArns", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

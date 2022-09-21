@@ -53,7 +53,7 @@ object dividerDividerMod {
   
   @JSImport("rbx/layout/divider/divider", "Divider")
   @js.native
-  val Divider: ForwardRefAsExoticComponent[DividerProps, ElementType[js.Any]] = js.native
+  val Divider: ForwardRefAsExoticComponent[DividerProps, ElementType[Any]] = js.native
   
   trait DividerModifierProps extends StObject {
     

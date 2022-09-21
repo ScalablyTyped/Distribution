@@ -10,5 +10,5 @@ trait RefreshCompositeFactory
   extends Factory[
       RefreshCompositeConstructor, 
       InstanceType[RefreshCompositeConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[RefreshCompositeConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

@@ -33,6 +33,6 @@ object ListQueryExecutionsOutput {
     
     inline def setQueryExecutionIdsUndefined: Self = StObject.set(x, "QueryExecutionIds", js.undefined)
     
-    inline def setQueryExecutionIdsVarargs(value: QueryExecutionId*): Self = StObject.set(x, "QueryExecutionIds", js.Array(value :_*))
+    inline def setQueryExecutionIdsVarargs(value: QueryExecutionId*): Self = StObject.set(x, "QueryExecutionIds", js.Array(value*))
   }
 }

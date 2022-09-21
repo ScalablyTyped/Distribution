@@ -9,25 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object fileV1 {
   
-  /**
-    * Cloud Filestore API
-    *
-    * The Cloud Filestore API is used for creating and managing cloud file
-    * servers.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const file = google.file('v1');
-    *
-    * @namespace file
-    * @type {Function}
-    * @version v1
-    * @variation v1
-    * @param {object=} options Options for File
-    */
   @JSImport("googleapis", "file_v1.File")
   @js.native
-  class File protected ()
+  open class File protected ()
     extends typings.googleapis.fileV1Mod.fileV1.File {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -35,28 +19,42 @@ object fileV1 {
   
   @JSImport("googleapis", "file_v1.Resource$Projects")
   @js.native
-  class ResourceProjects protected ()
+  open class ResourceProjects protected ()
     extends typings.googleapis.fileV1Mod.fileV1.ResourceProjects {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "file_v1.Resource$Projects$Locations")
   @js.native
-  class ResourceProjectsLocations protected ()
+  open class ResourceProjectsLocations protected ()
     extends typings.googleapis.fileV1Mod.fileV1.ResourceProjectsLocations {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "file_v1.Resource$Projects$Locations$Backups")
+  @js.native
+  open class ResourceProjectsLocationsBackups protected ()
+    extends typings.googleapis.fileV1Mod.fileV1.ResourceProjectsLocationsBackups {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "file_v1.Resource$Projects$Locations$Instances")
   @js.native
-  class ResourceProjectsLocationsInstances protected ()
+  open class ResourceProjectsLocationsInstances protected ()
     extends typings.googleapis.fileV1Mod.fileV1.ResourceProjectsLocationsInstances {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "file_v1.Resource$Projects$Locations$Instances$Snapshots")
+  @js.native
+  open class ResourceProjectsLocationsInstancesSnapshots protected ()
+    extends typings.googleapis.fileV1Mod.fileV1.ResourceProjectsLocationsInstancesSnapshots {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "file_v1.Resource$Projects$Locations$Operations")
   @js.native
-  class ResourceProjectsLocationsOperations protected ()
+  open class ResourceProjectsLocationsOperations protected ()
     extends typings.googleapis.fileV1Mod.fileV1.ResourceProjectsLocationsOperations {
     def this(context: APIRequestContext) = this()
   }

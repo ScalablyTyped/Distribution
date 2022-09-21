@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "NoteStore.SyncChunk")
 @js.native
-class SyncChunk () extends StObject {
+open class SyncChunk () extends StObject {
   def this(args: ChunkHighUSN) = this()
   
   var chunkHighUSN: js.UndefOr[Double] = js.native

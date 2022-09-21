@@ -1,6 +1,6 @@
 package typings.grpcGrpcJs
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.http2Mod.SecureServerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

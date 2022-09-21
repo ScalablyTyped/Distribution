@@ -33,7 +33,7 @@ object FinishingStitching {
     
     inline def `setStitching-locationsUndefined`: Self = StObject.set(x, "stitching-locations", js.undefined)
     
-    inline def `setStitching-locationsVarargs`(value: Double*): Self = StObject.set(x, "stitching-locations", js.Array(value :_*))
+    inline def `setStitching-locationsVarargs`(value: Double*): Self = StObject.set(x, "stitching-locations", js.Array(value*))
     
     inline def `setStitching-method`(value: StitchingMethod): Self = StObject.set(x, "stitching-method", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ object addnPackedGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/addn_packed_gpu", "AddNPackedProgram")
   @js.native
-  class AddNPackedProgram protected ()
+  open class AddNPackedProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(outputShape: js.Array[Double], shapes: js.Array[js.Array[Double]]) = this()

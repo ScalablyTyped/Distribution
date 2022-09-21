@@ -12,7 +12,7 @@ trait ListCommandInvocationsRequest extends StObject {
   var CommandId: js.UndefOr[typings.awsSdk.ssmMod.CommandId] = js.undefined
   
   /**
-    * (Optional) If set this returns the response of the command executions and any command output. By default this is set to False. 
+    * (Optional) If set this returns the response of the command executions and any command output. The default value is false. 
     */
   var Details: js.UndefOr[Boolean] = js.undefined
   
@@ -22,7 +22,7 @@ trait ListCommandInvocationsRequest extends StObject {
   var Filters: js.UndefOr[CommandFilterList] = js.undefined
   
   /**
-    * (Optional) The command execution details for a specific instance ID.
+    * (Optional) The command execution details for a specific managed node ID.
     */
   var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
   
@@ -57,7 +57,7 @@ object ListCommandInvocationsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: CommandFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: CommandFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

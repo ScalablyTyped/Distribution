@@ -27,30 +27,27 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deleteVariable(request: js.Any, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def deleteVariable(request: Any, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def getCache(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCache")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def getCache(name: String, options: CacheOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getCache")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getCache(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCache")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def getCache(name: String, options: CacheOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getCache")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def getMode(): apigee | standalone = ^.asInstanceOf[js.Dynamic].applyDynamic("getMode")().asInstanceOf[apigee | standalone]
     
     inline def getQuota(): QuotaService = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuota")().asInstanceOf[QuotaService]
-    inline def getQuota(options: js.Any): QuotaService = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuota")(options.asInstanceOf[js.Any]).asInstanceOf[QuotaService]
+    inline def getQuota(options: Any): QuotaService = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuota")(options.asInstanceOf[js.Any]).asInstanceOf[QuotaService]
     
-    inline def getVariable(request: js.Any, name: String): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
+    inline def getVariable(request: Any, name: String): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
     
     inline def getVault(name: String): SecureVault = ^.asInstanceOf[js.Dynamic].applyDynamic("getVault")(name.asInstanceOf[js.Any]).asInstanceOf[SecureVault]
+    inline def getVault(name: String, scope: organization | environment): SecureVault = (^.asInstanceOf[js.Dynamic].applyDynamic("getVault")(name.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[SecureVault]
     
-    inline def getVault_environment(name: String, scope: environment): SecureVault = (^.asInstanceOf[js.Dynamic].applyDynamic("getVault")(name.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[SecureVault]
+    inline def setIntVariable(request: Any, name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setIntVariable(request: Any, name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def getVault_organization(name: String, scope: organization): SecureVault = (^.asInstanceOf[js.Dynamic].applyDynamic("getVault")(name.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[SecureVault]
-    
-    inline def setIntVariable(request: js.Any, name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def setIntVariable(request: js.Any, name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def setVariable(request: js.Any, name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def setVariable(request: js.Any, name: String, value: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def setVariable(request: js.Any, name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setVariable(request: Any, name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setVariable(request: Any, name: String, value: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setVariable(request: Any, name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object ApigeeAccess {
@@ -58,15 +55,15 @@ object mod {
     @js.native
     trait Cache extends StObject {
       
-      def get(key: String, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit = js.native
+      def get(key: String, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Unit = js.native
       
-      def put(key: String, data: js.Any): Unit = js.native
-      def put(key: String, data: js.Any, ttl: Double): Unit = js.native
-      def put(key: String, data: js.Any, ttl: Double, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
-      def put(key: String, data: js.Any, ttl: Unit, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+      def put(key: String, data: Any): Unit = js.native
+      def put(key: String, data: Any, ttl: Double): Unit = js.native
+      def put(key: String, data: Any, ttl: Double, callback: js.Function1[/* err */ Any, Unit]): Unit = js.native
+      def put(key: String, data: Any, ttl: Unit, callback: js.Function1[/* err */ Any, Unit]): Unit = js.native
       
       def remove(key: String): Unit = js.native
-      def remove(key: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+      def remove(key: String, callback: js.Function1[/* err */ Any, Unit]): Unit = js.native
     }
     
     trait CacheOptions extends StObject {
@@ -114,14 +111,14 @@ object mod {
       @JSName("apply")
       def apply(
         options: Unit,
-        callback: js.Function2[/* err */ js.Any, /* data */ QuotaServiceApplyCallbackData, Unit]
+        callback: js.Function2[/* err */ Any, /* data */ QuotaServiceApplyCallbackData, Unit]
       ): Unit = js.native
       @JSName("apply")
       def apply(options: QuotaServiceApplyOptions): Unit = js.native
       @JSName("apply")
       def apply(
         options: QuotaServiceApplyOptions,
-        callback: js.Function2[/* err */ js.Any, /* data */ QuotaServiceApplyCallbackData, Unit]
+        callback: js.Function2[/* err */ Any, /* data */ QuotaServiceApplyCallbackData, Unit]
       ): Unit = js.native
     }
     
@@ -197,15 +194,15 @@ object mod {
     
     trait SecureVault extends StObject {
       
-      def get(key: String, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit
+      def get(key: String, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Unit
       
-      def getKeys(callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit
+      def getKeys(callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Unit
     }
     object SecureVault {
       
       inline def apply(
-        get: (String, js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]) => Unit,
-        getKeys: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit] => Unit
+        get: (String, js.Function2[/* err */ Any, /* data */ Any, Unit]) => Unit,
+        getKeys: js.Function2[/* err */ Any, /* data */ Any, Unit] => Unit
       ): SecureVault = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), getKeys = js.Any.fromFunction1(getKeys))
         __obj.asInstanceOf[SecureVault]
@@ -213,9 +210,9 @@ object mod {
       
       extension [Self <: SecureVault](x: Self) {
         
-        inline def setGet(value: (String, js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+        inline def setGet(value: (String, js.Function2[/* err */ Any, /* data */ Any, Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
-        inline def setGetKeys(value: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "getKeys", js.Any.fromFunction1(value))
+        inline def setGetKeys(value: js.Function2[/* err */ Any, /* data */ Any, Unit] => Unit): Self = StObject.set(x, "getKeys", js.Any.fromFunction1(value))
       }
     }
   }

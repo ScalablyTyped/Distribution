@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StringNullableChain
   extends StObject
      with LoDashExplicitWrapper[js.UndefOr[java.lang.String]]
-     with _ExpChain[js.Any] {
+     with _ExpChain[Any] {
   
   /**
     * @see _.castArray
@@ -25,24 +25,24 @@ trait StringNullableChain
     * @see _.each
     */
   def each(): StringNullableChain = js.native
-  def each(iteratee: StringIterator[js.Any]): StringNullableChain = js.native
+  def each(iteratee: StringIterator[Any]): StringNullableChain = js.native
   
   /**
     * @see _.eachRight
     */
   def eachRight(): StringNullableChain = js.native
-  def eachRight(iteratee: StringIterator[js.Any]): StringNullableChain = js.native
+  def eachRight(iteratee: StringIterator[Any]): StringNullableChain = js.native
   /**
     * @see _.eachRight
     */
   @JSName("eachRight")
-  var eachRight_Original: js.Function1[/* iteratee */ js.UndefOr[StringIterator[js.Any]], StringNullableChain] = js.native
+  var eachRight_Original: js.Function1[/* iteratee */ js.UndefOr[StringIterator[Any]], StringNullableChain] = js.native
   
   /**
     * @see _.each
     */
   @JSName("each")
-  var each_Original: js.Function1[/* iteratee */ js.UndefOr[StringIterator[js.Any]], StringNullableChain] = js.native
+  var each_Original: js.Function1[/* iteratee */ js.UndefOr[StringIterator[Any]], StringNullableChain] = js.native
   
   /**
     * @see _.filter
@@ -93,13 +93,13 @@ trait StringNullableChain
     * @see _.forEach
     */
   def forEach(): StringNullableChain = js.native
-  def forEach(iteratee: StringIterator[js.Any]): StringNullableChain = js.native
+  def forEach(iteratee: StringIterator[Any]): StringNullableChain = js.native
   
   /**
     * @see _.forEachRight
     */
   def forEachRight(): StringNullableChain = js.native
-  def forEachRight(iteratee: StringIterator[js.Any]): StringNullableChain = js.native
+  def forEachRight(iteratee: StringIterator[Any]): StringNullableChain = js.native
   
   def get(path: js.Array[Double]): StringNullableChain = js.native
   def get(path: js.Array[Double], defaultValue: java.lang.String): StringChain = js.native
@@ -115,8 +115,8 @@ trait StringNullableChain
   /**
     * @see _.groupBy
     */
-  def groupBy(): ObjectChain[Dictionary[java.lang.String]] = js.native
-  def groupBy(iteratee: ValueIteratee[java.lang.String]): ObjectChain[Dictionary[java.lang.String]] = js.native
+  def groupBy(): ObjectChain[Dictionary[js.Array[java.lang.String]]] = js.native
+  def groupBy(iteratee: ValueIteratee[java.lang.String]): ObjectChain[Dictionary[js.Array[java.lang.String]]] = js.native
   
   /**
     * @see _.head
@@ -132,7 +132,7 @@ trait StringNullableChain
   /**
     * @see _.iteratee
     */
-  def iteratee(): FunctionChain[js.Function1[/* o */ js.Object, js.Any]] = js.native
+  def iteratee(): FunctionChain[js.Function1[/* o */ js.Object, Any]] = js.native
   
   /**
     * @see _.join

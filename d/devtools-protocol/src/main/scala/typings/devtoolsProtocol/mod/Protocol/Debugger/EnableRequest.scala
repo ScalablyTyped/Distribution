@@ -8,7 +8,7 @@ trait EnableRequest extends StObject {
   
   /**
     * The maximum size in bytes of collected scripts (not referenced by other heap objects)
-    * the debugger can hold. Puts no limit if paramter is omitted.
+    * the debugger can hold. Puts no limit if parameter is omitted.
     */
   var maxScriptsCacheSize: js.UndefOr[Double] = js.undefined
 }

@@ -27,14 +27,24 @@ trait InstanceNetworkInterface extends StObject {
   var Groups: js.UndefOr[GroupIdentifierList] = js.undefined
   
   /**
-    * Describes the type of network interface. Valid values: interface | efa 
+    * The type of network interface. Valid values: interface | efa | trunk 
     */
   var InterfaceType: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The IPv4 delegated prefixes that are assigned to the network interface.
+    */
+  var Ipv4Prefixes: js.UndefOr[InstanceIpv4PrefixList] = js.undefined
   
   /**
     * One or more IPv6 addresses associated with the network interface.
     */
   var Ipv6Addresses: js.UndefOr[InstanceIpv6AddressList] = js.undefined
+  
+  /**
+    * The IPv6 delegated prefixes that are assigned to the network interface.
+    */
+  var Ipv6Prefixes: js.UndefOr[InstanceIpv6PrefixList] = js.undefined
   
   /**
     * The MAC address.
@@ -47,7 +57,7 @@ trait InstanceNetworkInterface extends StObject {
   var NetworkInterfaceId: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS account that created the network interface.
+    * The ID of the Amazon Web Services account that created the network interface.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -67,7 +77,7 @@ trait InstanceNetworkInterface extends StObject {
   var PrivateIpAddresses: js.UndefOr[InstancePrivateIpAddressList] = js.undefined
   
   /**
-    * Indicates whether to validate network traffic to or from this network interface.
+    * Indicates whether source/destination checking is enabled.
     */
   var SourceDestCheck: js.UndefOr[Boolean] = js.undefined
   
@@ -111,17 +121,29 @@ object InstanceNetworkInterface {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setInterfaceType(value: String): Self = StObject.set(x, "InterfaceType", value.asInstanceOf[js.Any])
     
     inline def setInterfaceTypeUndefined: Self = StObject.set(x, "InterfaceType", js.undefined)
     
+    inline def setIpv4Prefixes(value: InstanceIpv4PrefixList): Self = StObject.set(x, "Ipv4Prefixes", value.asInstanceOf[js.Any])
+    
+    inline def setIpv4PrefixesUndefined: Self = StObject.set(x, "Ipv4Prefixes", js.undefined)
+    
+    inline def setIpv4PrefixesVarargs(value: InstanceIpv4Prefix*): Self = StObject.set(x, "Ipv4Prefixes", js.Array(value*))
+    
     inline def setIpv6Addresses(value: InstanceIpv6AddressList): Self = StObject.set(x, "Ipv6Addresses", value.asInstanceOf[js.Any])
     
     inline def setIpv6AddressesUndefined: Self = StObject.set(x, "Ipv6Addresses", js.undefined)
     
-    inline def setIpv6AddressesVarargs(value: InstanceIpv6Address*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value :_*))
+    inline def setIpv6AddressesVarargs(value: InstanceIpv6Address*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value*))
+    
+    inline def setIpv6Prefixes(value: InstanceIpv6PrefixList): Self = StObject.set(x, "Ipv6Prefixes", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6PrefixesUndefined: Self = StObject.set(x, "Ipv6Prefixes", js.undefined)
+    
+    inline def setIpv6PrefixesVarargs(value: InstanceIpv6Prefix*): Self = StObject.set(x, "Ipv6Prefixes", js.Array(value*))
     
     inline def setMacAddress(value: String): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
     
@@ -147,7 +169,7 @@ object InstanceNetworkInterface {
     
     inline def setPrivateIpAddressesUndefined: Self = StObject.set(x, "PrivateIpAddresses", js.undefined)
     
-    inline def setPrivateIpAddressesVarargs(value: InstancePrivateIpAddress*): Self = StObject.set(x, "PrivateIpAddresses", js.Array(value :_*))
+    inline def setPrivateIpAddressesVarargs(value: InstancePrivateIpAddress*): Self = StObject.set(x, "PrivateIpAddresses", js.Array(value*))
     
     inline def setSourceDestCheck(value: Boolean): Self = StObject.set(x, "SourceDestCheck", value.asInstanceOf[js.Any])
     

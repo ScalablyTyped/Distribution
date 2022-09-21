@@ -16,7 +16,7 @@ object scheduleKeyDeletionCommandMod {
   
   @JSImport("@aws-sdk/client-kms-browser/commands/ScheduleKeyDeletionCommand", "ScheduleKeyDeletionCommand")
   @js.native
-  class ScheduleKeyDeletionCommand protected ()
+  open class ScheduleKeyDeletionCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object scheduleKeyDeletionCommandMod {
     override val middlewareStack: MiddlewareStack[ScheduleKeyDeletionInput, ScheduleKeyDeletionOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[ScheduleKeyDeletionInput, ScheduleKeyDeletionOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[ScheduleKeyDeletionInput, ScheduleKeyDeletionOutput] = js.native
   }
 }

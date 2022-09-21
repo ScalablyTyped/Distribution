@@ -56,7 +56,7 @@ object GoogleCloudMlV1StudyConfigParameterSpec {
     
     inline def setChildParameterSpecsUndefined: Self = StObject.set(x, "childParameterSpecs", js.undefined)
     
-    inline def setChildParameterSpecsVarargs(value: GoogleCloudMlV1StudyConfigParameterSpec*): Self = StObject.set(x, "childParameterSpecs", js.Array(value :_*))
+    inline def setChildParameterSpecsVarargs(value: GoogleCloudMlV1StudyConfigParameterSpec*): Self = StObject.set(x, "childParameterSpecs", js.Array(value*))
     
     inline def setDiscreteValueSpec(value: GoogleCloudMlV1StudyConfigParameterSpecDiscreteValueSpec): Self = StObject.set(x, "discreteValueSpec", value.asInstanceOf[js.Any])
     

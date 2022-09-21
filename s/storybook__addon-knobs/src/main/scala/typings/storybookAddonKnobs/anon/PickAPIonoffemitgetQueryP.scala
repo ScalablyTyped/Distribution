@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@storybook/api.@storybook/api.API, 'on' | 'off' | 'emit' | 'getQueryParam' | 'setQueryParams'> */
 trait PickAPIonoffemitgetQueryP extends StObject {
   
-  var emit: js.Function2[/* type */ String, /* repeated */ js.Any, Unit]
+  var emit: js.Function2[/* type */ String, /* repeated */ Any, Unit]
   
   var getQueryParam: js.Function1[/* key */ String, js.UndefOr[String]]
   
@@ -22,7 +22,7 @@ trait PickAPIonoffemitgetQueryP extends StObject {
 object PickAPIonoffemitgetQueryP {
   
   inline def apply(
-    emit: (/* type */ String, /* repeated */ js.Any) => Unit,
+    emit: (/* type */ String, /* repeated */ Any) => Unit,
     getQueryParam: /* key */ String => js.UndefOr[String],
     off: (/* type */ String, /* cb */ Listener) => Unit,
     on: (/* type */ String, /* cb */ Listener) => js.Function0[Unit],
@@ -34,7 +34,7 @@ object PickAPIonoffemitgetQueryP {
   
   extension [Self <: PickAPIonoffemitgetQueryP](x: Self) {
     
-    inline def setEmit(value: (/* type */ String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+    inline def setEmit(value: (/* type */ String, /* repeated */ Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     
     inline def setGetQueryParam(value: /* key */ String => js.UndefOr[String]): Self = StObject.set(x, "getQueryParam", js.Any.fromFunction1(value))
     

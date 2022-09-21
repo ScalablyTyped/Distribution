@@ -4,43 +4,64 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** @typedef {import('./xr-hand.js').XrHand} XrHand */
+/** @typedef {import('./xr-joint.js').XrJoint} XrJoint */
 /**
-  * Represents finger with related joints and index
-  * @property index - Index of a finger, numeration is: thumb, index, middle, ring, little
-  * @property hand - Hand that finger relates to
-  * @property joints - List of joints that relates to this finger, starting from joint closest to wrist all the way to the tip of a finger
-  * @property tip - Tip of a finger, or null if not available
-  * @param index - Index of a finger
-  * @param hand - Hand that finger relates to
+  * Represents finger with related joints and index.
   */
-@JSImport("playcanvas", "XrFinger")
 @js.native
-class XrFinger protected ()
-  extends StObject
-     with typings.playcanvas.pc.XrFinger {
-  def this(index: Double, hand: typings.playcanvas.pc.XrHand) = this()
+trait XrFinger extends StObject {
   
   /**
-    * Hand that finger relates to
+    * @type {XrHand}
+    * @private
     */
-  /* CompleteClass */
-  var hand: typings.playcanvas.pc.XrHand = js.native
+  /* private */ var _hand: Any = js.native
   
   /**
-    * Index of a finger, numeration is: thumb, index, middle, ring, little
+    * @type {number}
+    * @private
     */
-  /* CompleteClass */
-  var index: Double = js.native
+  /* private */ var _index: Any = js.native
   
   /**
-    * List of joints that relates to this finger, starting from joint closest to wrist all the way to the tip of a finger
+    * @type {XrJoint[]}
+    * @private
     */
-  /* CompleteClass */
-  var joints: js.Array[typings.playcanvas.pc.XrJoint] = js.native
+  /* private */ var _joints: Any = js.native
   
   /**
-    * Tip of a finger, or null if not available
+    * @type {XrJoint|null}
+    * @private
     */
-  /* CompleteClass */
-  var tip: typings.playcanvas.pc.XrJoint | Null = js.native
+  /* private */ var _tip: Any = js.native
+  
+  /**
+    * Hand that finger relates to.
+    *
+    * @type {XrHand}
+    */
+  def hand: XrHand = js.native
+  
+  /**
+    * Index of a finger, numeration is: thumb, index, middle, ring, little.
+    *
+    * @type {number}
+    */
+  def index: Double = js.native
+  
+  /**
+    * List of joints that relates to this finger, starting from joint closest to wrist all the way
+    * to the tip of a finger.
+    *
+    * @type {XrJoint[]}
+    */
+  def joints: js.Array[XrJoint] = js.native
+  
+  /**
+    * Tip of a finger, or null if not available.
+    *
+    * @type {XrJoint|null}
+    */
+  def tip: XrJoint = js.native
 }

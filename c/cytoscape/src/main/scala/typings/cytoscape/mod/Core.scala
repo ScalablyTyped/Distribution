@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Core
   extends StObject
      with CoreGraphManipulation
+     with CoreData
      with CoreGraphManipulationExt
      with CoreEvents
      with CoreViewportManipulation

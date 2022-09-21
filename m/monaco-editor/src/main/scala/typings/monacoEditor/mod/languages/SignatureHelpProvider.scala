@@ -37,12 +37,12 @@ object SignatureHelpProvider {
     
     inline def setSignatureHelpRetriggerCharactersUndefined: Self = StObject.set(x, "signatureHelpRetriggerCharacters", js.undefined)
     
-    inline def setSignatureHelpRetriggerCharactersVarargs(value: String*): Self = StObject.set(x, "signatureHelpRetriggerCharacters", js.Array(value :_*))
+    inline def setSignatureHelpRetriggerCharactersVarargs(value: String*): Self = StObject.set(x, "signatureHelpRetriggerCharacters", js.Array(value*))
     
     inline def setSignatureHelpTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "signatureHelpTriggerCharacters", value.asInstanceOf[js.Any])
     
     inline def setSignatureHelpTriggerCharactersUndefined: Self = StObject.set(x, "signatureHelpTriggerCharacters", js.undefined)
     
-    inline def setSignatureHelpTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "signatureHelpTriggerCharacters", js.Array(value :_*))
+    inline def setSignatureHelpTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "signatureHelpTriggerCharacters", js.Array(value*))
   }
 }

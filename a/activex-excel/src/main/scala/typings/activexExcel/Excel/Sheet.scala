@@ -11,4 +11,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait Sheet
   extends StObject
-     with AddSheetResult[js.Any]
+     with AddSheetResult[Any]

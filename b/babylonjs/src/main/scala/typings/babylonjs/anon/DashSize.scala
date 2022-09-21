@@ -16,6 +16,8 @@ trait DashSize extends StObject {
   
   var instance: js.UndefOr[LinesMesh] = js.undefined
   
+  var material: js.UndefOr[typings.babylonjs.materialMod.Material] = js.undefined
+  
   var points: js.Array[Vector3]
   
   var updatable: js.UndefOr[Boolean] = js.undefined
@@ -47,9 +49,13 @@ object DashSize {
     
     inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
+    inline def setMaterial(value: typings.babylonjs.materialMod.Material): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    
     inline def setPoints(value: js.Array[Vector3]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: Vector3*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Vector3*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
     

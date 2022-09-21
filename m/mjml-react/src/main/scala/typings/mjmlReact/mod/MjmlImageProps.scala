@@ -1,7 +1,8 @@
 package typings.mjmlReact.mod
 
-import typings.csstype.mod.BackgroundColorProperty
-import typings.csstype.mod.BorderProperty
+import typings.csstype.mod.Property.BackgroundColor
+import typings.csstype.mod.Property.Border
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +13,13 @@ trait MjmlImageProps extends StObject {
   
   var alt: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[BorderProperty[String | Double]] = js.undefined
+  var border: js.UndefOr[Border[String | Double]] = js.undefined
   
   var borderRadius: js.UndefOr[String | Double] = js.undefined
   
-  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
+  var containerBackgroundColor: js.UndefOr[BackgroundColor] = js.undefined
   
   var fluidOnMobile: js.UndefOr[String] = js.undefined
   
@@ -47,7 +50,7 @@ object MjmlImageProps {
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    inline def setBorder(value: BorderProperty[String | Double]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Border[String | Double]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderRadius(value: String | Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
@@ -55,7 +58,11 @@ object MjmlImageProps {
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setContainerBackgroundColor(value: BackgroundColorProperty): Self = StObject.set(x, "containerBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setContainerBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "containerBackgroundColor", value.asInstanceOf[js.Any])
     
     inline def setContainerBackgroundColorUndefined: Self = StObject.set(x, "containerBackgroundColor", js.undefined)
     

@@ -24,7 +24,7 @@ object mod {
   
   @JSImport("popper.js", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Popper {
     def this(reference: ReferenceObject, popper: Element) = this()
@@ -296,7 +296,7 @@ object mod {
     
     trait Modifiers
       extends StObject
-         with /* name */ StringDictionary[js.UndefOr[typings.popperJs.mod.Popper.BaseModifier & (Record[String, js.Any])]] {
+         with /* name */ StringDictionary[js.UndefOr[typings.popperJs.mod.Popper.BaseModifier & (Record[String, Any])]] {
       
       var applyStyle: js.UndefOr[BaseModifieronLoadFunctio] = js.undefined
       

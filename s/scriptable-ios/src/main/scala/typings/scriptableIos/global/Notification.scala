@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * _Schedules and manages notifications._
   * @see https://docs.scriptable.app/notification/#-new-notification
   */
-class Notification ()
+open class Notification ()
   extends StObject
      with typings.scriptableIos.Notification
 object Notification {

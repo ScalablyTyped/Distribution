@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-elemental", "Tabs")
 @js.native
-class Tabs protected ()
-  extends Component[TabsProps, js.Object, js.Any] {
+open class Tabs protected ()
+  extends Component[TabsProps, js.Object, Any] {
   def this(props: TabsProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TabsProps, context: js.Any) = this()
+  def this(props: TabsProps, context: Any) = this()
 }

@@ -10,10 +10,10 @@ object deleteSweepMod {
   
   @JSImport("material-ui/svg-icons/content/delete-sweep", JSImport.Default)
   @js.native
-  class default () extends ContentDeleteSweep
+  open class default () extends ContentDeleteSweep
   
   @JSImport("material-ui/svg-icons/content/delete-sweep", "ContentDeleteSweep")
   @js.native
-  class ContentDeleteSweep ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentDeleteSweep ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

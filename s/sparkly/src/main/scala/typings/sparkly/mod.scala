@@ -8,44 +8,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Generate sparklines `▁▂▃▅▂▇`.
-  @param numbers - Numbers to create the sparkline from.
-  @example
-  ```
-  const sparkly = require('sparkly');
-  sparkly([0, 3, 5, 8, 4, 3, 4, 10]);
-  //=> '▁▃▄▇▄▃▄█'
-  // Specifying anything other than finite numbers will cause holes
-  sparkly([0, 3, 5, '', 4, 3, 4, 10]);
-  //=> '▁▃▄ ▄▃▄█'
-  // Specifying an object with minimum and maximum options will change the sparkline range
-  sparkly([1, 2, 3, 4, 5], {minimum: 0, maximum: 10});
-  //=> '▁▂▃▄▄'
-  ```
-  */
-  inline def apply(numbers: js.Array[Double | _empty]): String = ^.asInstanceOf[js.Dynamic].apply(numbers.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(numbers: js.Array[Double | _empty], options: Options): String = (^.asInstanceOf[js.Dynamic].apply(numbers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  
   @JSImport("sparkly", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(numbers: js.Array[Double | _empty]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(numbers.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(numbers: js.Array[Double | _empty], options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(numbers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait Options extends StObject {
     
     /**
-    		Maximum range.
-    		*/
+    	Maximum range.
+    	*/
     val maximum: js.UndefOr[Double] = js.undefined
     
     /**
-    		Minimum range.
-    		*/
+    	Minimum range.
+    	*/
     val minimum: js.UndefOr[Double] = js.undefined
     
     /**
-    		Style for the sparklines.
-    		*/
+    	Style for the sparklines.
+    	*/
     val style: js.UndefOr[fire] = js.undefined
   }
   object Options {

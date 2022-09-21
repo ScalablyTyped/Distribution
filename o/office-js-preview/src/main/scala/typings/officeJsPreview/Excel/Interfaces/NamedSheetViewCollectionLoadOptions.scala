@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the collection of sheet views in the worksheet.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * @remarks
+  * [Api set: ExcelApiOnline 1.1]
   */
 trait NamedSheetViewCollectionLoadOptions extends StObject {
   
@@ -20,12 +19,11 @@ trait NamedSheetViewCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets or sets the name of the sheet view.
     The temporary sheet view name is the empty string ("").  Naming the view by using the name property causes the sheet view to be saved.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApiOnline 1.1]
     */
   var name: js.UndefOr[Boolean] = js.undefined
 }

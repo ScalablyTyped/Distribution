@@ -1,6 +1,6 @@
 package typings.vcardsJs
 
-import typings.std.Date
+import org.scalablytyped.runtime.StringDictionary
 import typings.vcardsJs.vcardsJsStrings.F
 import typings.vcardsJs.vcardsJsStrings.M
 import org.scalablytyped.runtime.StObject
@@ -135,7 +135,9 @@ object mod {
     }
   }
   
-  trait SocialUrls extends StObject {
+  trait SocialUrls
+    extends StObject
+       with /* custom */ StringDictionary[String] {
     
     var facebook: String
     
@@ -169,22 +171,22 @@ object mod {
     /**
       * Anniversary
       */
-    var anniversary: Date
+    var anniversary: js.Date
     
     /**
       * Date of birth
       */
-    var birthday: Date
+    var birthday: js.Date
     
     /**
       * Cell phone number
       */
-    var cellPhone: String
+    var cellPhone: String | js.Array[String]
     
     /**
       * The address for private electronic mail communication
       */
-    var email: String
+    var email: String | js.Array[String]
     
     /**
       * First name
@@ -220,12 +222,12 @@ object mod {
     /**
       * Home facsimile
       */
-    var homeFax: String
+    var homeFax: String | js.Array[String]
     
     /**
       * Home phone
       */
-    var homePhone: String
+    var homePhone: String | js.Array[String]
     
     /**
       * Whether or not this contact should be shown as a company
@@ -272,10 +274,14 @@ object mod {
       */
     var organization: String
     
+    var otherEmail: String | js.Array[String]
+    
+    var otherPhone: String | js.Array[String]
+    
     /**
       * Other cell phone number or pager
       */
-    var pagerPhone: String
+    var pagerPhone: String | js.Array[String]
     
     /**
       * Individual's photo
@@ -331,17 +337,17 @@ object mod {
     /**
       * The address for work-related electronic mail communication
       */
-    var workEmail: String
+    var workEmail: String | js.Array[String]
     
     /**
       * Work facsimile
       */
-    var workFax: String
+    var workFax: String | js.Array[String]
     
     /**
       * Work phone
       */
-    var workPhone: String
+    var workPhone: String | js.Array[String]
     
     /**
       * URL pointing to a website that represents the person's work in some way
@@ -351,18 +357,18 @@ object mod {
   object vCard {
     
     inline def apply(
-      anniversary: Date,
-      birthday: Date,
-      cellPhone: String,
-      email: String,
+      anniversary: js.Date,
+      birthday: js.Date,
+      cellPhone: String | js.Array[String],
+      email: String | js.Array[String],
       firstName: String,
       formattedName: String,
       gender: M | F,
       getFormattedString: () => String,
       getMajorVersion: () => Double,
       homeAddress: Address,
-      homeFax: String,
-      homePhone: String,
+      homeFax: String | js.Array[String],
+      homePhone: String | js.Array[String],
       isOrganization: Boolean,
       lastName: String,
       logo: Photo,
@@ -372,7 +378,9 @@ object mod {
       nickname: String,
       note: String,
       organization: String,
-      pagerPhone: String,
+      otherEmail: String | js.Array[String],
+      otherPhone: String | js.Array[String],
+      pagerPhone: String | js.Array[String],
       photo: Photo,
       role: String,
       saveToFile: String => Unit,
@@ -383,24 +391,28 @@ object mod {
       url: String,
       version: String,
       workAddress: Address,
-      workEmail: String,
-      workFax: String,
-      workPhone: String,
+      workEmail: String | js.Array[String],
+      workFax: String | js.Array[String],
+      workPhone: String | js.Array[String],
       workUrl: String
     ): vCard = {
-      val __obj = js.Dynamic.literal(anniversary = anniversary.asInstanceOf[js.Any], birthday = birthday.asInstanceOf[js.Any], cellPhone = cellPhone.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], firstName = firstName.asInstanceOf[js.Any], formattedName = formattedName.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], getFormattedString = js.Any.fromFunction0(getFormattedString), getMajorVersion = js.Any.fromFunction0(getMajorVersion), homeAddress = homeAddress.asInstanceOf[js.Any], homeFax = homeFax.asInstanceOf[js.Any], homePhone = homePhone.asInstanceOf[js.Any], isOrganization = isOrganization.asInstanceOf[js.Any], lastName = lastName.asInstanceOf[js.Any], logo = logo.asInstanceOf[js.Any], middleName = middleName.asInstanceOf[js.Any], namePrefix = namePrefix.asInstanceOf[js.Any], nameSuffix = nameSuffix.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], pagerPhone = pagerPhone.asInstanceOf[js.Any], photo = photo.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], saveToFile = js.Any.fromFunction1(saveToFile), socialUrls = socialUrls.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], workAddress = workAddress.asInstanceOf[js.Any], workEmail = workEmail.asInstanceOf[js.Any], workFax = workFax.asInstanceOf[js.Any], workPhone = workPhone.asInstanceOf[js.Any], workUrl = workUrl.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(anniversary = anniversary.asInstanceOf[js.Any], birthday = birthday.asInstanceOf[js.Any], cellPhone = cellPhone.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], firstName = firstName.asInstanceOf[js.Any], formattedName = formattedName.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], getFormattedString = js.Any.fromFunction0(getFormattedString), getMajorVersion = js.Any.fromFunction0(getMajorVersion), homeAddress = homeAddress.asInstanceOf[js.Any], homeFax = homeFax.asInstanceOf[js.Any], homePhone = homePhone.asInstanceOf[js.Any], isOrganization = isOrganization.asInstanceOf[js.Any], lastName = lastName.asInstanceOf[js.Any], logo = logo.asInstanceOf[js.Any], middleName = middleName.asInstanceOf[js.Any], namePrefix = namePrefix.asInstanceOf[js.Any], nameSuffix = nameSuffix.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], otherEmail = otherEmail.asInstanceOf[js.Any], otherPhone = otherPhone.asInstanceOf[js.Any], pagerPhone = pagerPhone.asInstanceOf[js.Any], photo = photo.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], saveToFile = js.Any.fromFunction1(saveToFile), socialUrls = socialUrls.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], workAddress = workAddress.asInstanceOf[js.Any], workEmail = workEmail.asInstanceOf[js.Any], workFax = workFax.asInstanceOf[js.Any], workPhone = workPhone.asInstanceOf[js.Any], workUrl = workUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[vCard]
     }
     
     extension [Self <: vCard](x: Self) {
       
-      inline def setAnniversary(value: Date): Self = StObject.set(x, "anniversary", value.asInstanceOf[js.Any])
+      inline def setAnniversary(value: js.Date): Self = StObject.set(x, "anniversary", value.asInstanceOf[js.Any])
       
-      inline def setBirthday(value: Date): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
+      inline def setBirthday(value: js.Date): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
       
-      inline def setCellPhone(value: String): Self = StObject.set(x, "cellPhone", value.asInstanceOf[js.Any])
+      inline def setCellPhone(value: String | js.Array[String]): Self = StObject.set(x, "cellPhone", value.asInstanceOf[js.Any])
       
-      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setCellPhoneVarargs(value: String*): Self = StObject.set(x, "cellPhone", js.Array(value*))
+      
+      inline def setEmail(value: String | js.Array[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      
+      inline def setEmailVarargs(value: String*): Self = StObject.set(x, "email", js.Array(value*))
       
       inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       
@@ -414,9 +426,13 @@ object mod {
       
       inline def setHomeAddress(value: Address): Self = StObject.set(x, "homeAddress", value.asInstanceOf[js.Any])
       
-      inline def setHomeFax(value: String): Self = StObject.set(x, "homeFax", value.asInstanceOf[js.Any])
+      inline def setHomeFax(value: String | js.Array[String]): Self = StObject.set(x, "homeFax", value.asInstanceOf[js.Any])
       
-      inline def setHomePhone(value: String): Self = StObject.set(x, "homePhone", value.asInstanceOf[js.Any])
+      inline def setHomeFaxVarargs(value: String*): Self = StObject.set(x, "homeFax", js.Array(value*))
+      
+      inline def setHomePhone(value: String | js.Array[String]): Self = StObject.set(x, "homePhone", value.asInstanceOf[js.Any])
+      
+      inline def setHomePhoneVarargs(value: String*): Self = StObject.set(x, "homePhone", js.Array(value*))
       
       inline def setIsOrganization(value: Boolean): Self = StObject.set(x, "isOrganization", value.asInstanceOf[js.Any])
       
@@ -436,7 +452,17 @@ object mod {
       
       inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
       
-      inline def setPagerPhone(value: String): Self = StObject.set(x, "pagerPhone", value.asInstanceOf[js.Any])
+      inline def setOtherEmail(value: String | js.Array[String]): Self = StObject.set(x, "otherEmail", value.asInstanceOf[js.Any])
+      
+      inline def setOtherEmailVarargs(value: String*): Self = StObject.set(x, "otherEmail", js.Array(value*))
+      
+      inline def setOtherPhone(value: String | js.Array[String]): Self = StObject.set(x, "otherPhone", value.asInstanceOf[js.Any])
+      
+      inline def setOtherPhoneVarargs(value: String*): Self = StObject.set(x, "otherPhone", js.Array(value*))
+      
+      inline def setPagerPhone(value: String | js.Array[String]): Self = StObject.set(x, "pagerPhone", value.asInstanceOf[js.Any])
+      
+      inline def setPagerPhoneVarargs(value: String*): Self = StObject.set(x, "pagerPhone", js.Array(value*))
       
       inline def setPhoto(value: Photo): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
       
@@ -458,11 +484,17 @@ object mod {
       
       inline def setWorkAddress(value: Address): Self = StObject.set(x, "workAddress", value.asInstanceOf[js.Any])
       
-      inline def setWorkEmail(value: String): Self = StObject.set(x, "workEmail", value.asInstanceOf[js.Any])
+      inline def setWorkEmail(value: String | js.Array[String]): Self = StObject.set(x, "workEmail", value.asInstanceOf[js.Any])
       
-      inline def setWorkFax(value: String): Self = StObject.set(x, "workFax", value.asInstanceOf[js.Any])
+      inline def setWorkEmailVarargs(value: String*): Self = StObject.set(x, "workEmail", js.Array(value*))
       
-      inline def setWorkPhone(value: String): Self = StObject.set(x, "workPhone", value.asInstanceOf[js.Any])
+      inline def setWorkFax(value: String | js.Array[String]): Self = StObject.set(x, "workFax", value.asInstanceOf[js.Any])
+      
+      inline def setWorkFaxVarargs(value: String*): Self = StObject.set(x, "workFax", js.Array(value*))
+      
+      inline def setWorkPhone(value: String | js.Array[String]): Self = StObject.set(x, "workPhone", value.asInstanceOf[js.Any])
+      
+      inline def setWorkPhoneVarargs(value: String*): Self = StObject.set(x, "workPhone", js.Array(value*))
       
       inline def setWorkUrl(value: String): Self = StObject.set(x, "workUrl", value.asInstanceOf[js.Any])
     }

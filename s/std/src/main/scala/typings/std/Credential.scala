@@ -4,10 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** Available only in secure contexts. */
 trait Credential extends StObject {
   
+  /* standard dom */
   val id: java.lang.String
   
+  /* standard dom */
   val `type`: java.lang.String
 }
 object Credential {

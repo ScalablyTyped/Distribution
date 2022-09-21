@@ -150,7 +150,7 @@ object Person {
     
     inline def setPhonesUndefined: Self = StObject.set(x, "phones", js.undefined)
     
-    inline def setPhonesVarargs(value: Phone*): Self = StObject.set(x, "phones", js.Array(value :_*))
+    inline def setPhonesVarargs(value: Phone*): Self = StObject.set(x, "phones", js.Array(value*))
     
     inline def setPostalAddresses(value: NullableOption[js.Array[Location]]): Self = StObject.set(x, "postalAddresses", value.asInstanceOf[js.Any])
     
@@ -158,7 +158,7 @@ object Person {
     
     inline def setPostalAddressesUndefined: Self = StObject.set(x, "postalAddresses", js.undefined)
     
-    inline def setPostalAddressesVarargs(value: Location*): Self = StObject.set(x, "postalAddresses", js.Array(value :_*))
+    inline def setPostalAddressesVarargs(value: Location*): Self = StObject.set(x, "postalAddresses", js.Array(value*))
     
     inline def setProfession(value: NullableOption[String]): Self = StObject.set(x, "profession", value.asInstanceOf[js.Any])
     
@@ -172,7 +172,7 @@ object Person {
     
     inline def setScoredEmailAddressesUndefined: Self = StObject.set(x, "scoredEmailAddresses", js.undefined)
     
-    inline def setScoredEmailAddressesVarargs(value: ScoredEmailAddress*): Self = StObject.set(x, "scoredEmailAddresses", js.Array(value :_*))
+    inline def setScoredEmailAddressesVarargs(value: ScoredEmailAddress*): Self = StObject.set(x, "scoredEmailAddresses", js.Array(value*))
     
     inline def setSurname(value: NullableOption[String]): Self = StObject.set(x, "surname", value.asInstanceOf[js.Any])
     
@@ -192,7 +192,7 @@ object Person {
     
     inline def setWebsitesUndefined: Self = StObject.set(x, "websites", js.undefined)
     
-    inline def setWebsitesVarargs(value: Website*): Self = StObject.set(x, "websites", js.Array(value :_*))
+    inline def setWebsitesVarargs(value: Website*): Self = StObject.set(x, "websites", js.Array(value*))
     
     inline def setYomiCompany(value: NullableOption[String]): Self = StObject.set(x, "yomiCompany", value.asInstanceOf[js.Any])
     

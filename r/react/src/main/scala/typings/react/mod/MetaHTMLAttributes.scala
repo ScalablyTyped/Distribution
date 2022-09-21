@@ -14,6 +14,8 @@ trait MetaHTMLAttributes[T]
   
   var httpEquiv: js.UndefOr[String] = js.undefined
   
+  var media: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
 }
 object MetaHTMLAttributes {
@@ -36,6 +38,10 @@ object MetaHTMLAttributes {
     inline def setHttpEquiv(value: String): Self = StObject.set(x, "httpEquiv", value.asInstanceOf[js.Any])
     
     inline def setHttpEquivUndefined: Self = StObject.set(x, "httpEquiv", js.undefined)
+    
+    inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

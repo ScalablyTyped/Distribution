@@ -20,6 +20,11 @@ trait Geometry extends StObject {
     */
   def averagePoleNormals(): Geometry
   
+  /**
+    *   computes faces for geometry objects based on the
+    *   vertices.
+    *   @chainable
+    */
   def computeFaces(): Geometry
   
   /**

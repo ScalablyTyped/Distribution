@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientResource")
 @js.native
-class ASPxClientResource ()
+open class ASPxClientResource ()
   extends StObject
      with typings.devexpressWeb.ASPxClientResource {
   

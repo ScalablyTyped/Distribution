@@ -16,11 +16,13 @@ object global {
     
     /**
       * Use this class to handle errors and write custom error messages.
+      *
+      * @remarks
       * [Api set: CustomFunctionsRuntime 1.2]
       */
     @JSGlobal("CustomFunctions.Error")
     @js.native
-    class Error protected ()
+    open class Error protected ()
       extends StObject
          with typings.customFunctionsRuntime.CustomFunctions.Error {
       def this(code: ErrorCode) = this()
@@ -28,6 +30,8 @@ object global {
       
       /**
         * The error code returned by your custom function.
+        *
+        * @remarks
         * [Api set: CustomFunctionsRuntime 1.2]
         */
       /* CompleteClass */

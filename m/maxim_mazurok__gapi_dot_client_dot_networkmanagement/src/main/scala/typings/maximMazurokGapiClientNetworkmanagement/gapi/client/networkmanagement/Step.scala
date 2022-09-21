@@ -6,58 +6,64 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Step extends StObject {
   
-  /** Display info of the final state "abort" and reason. */
+  /** Display information of the final state "abort" and reason. */
   var abort: js.UndefOr[AbortInfo] = js.undefined
   
   /** This is a step that leads to the final state Drop. */
   var causesDrop: js.UndefOr[Boolean] = js.undefined
   
-  /** Display info of the final state "deliver" and reason. */
+  /** Display information of a Cloud SQL instance. */
+  var cloudSqlInstance: js.UndefOr[CloudSQLInstanceInfo] = js.undefined
+  
+  /** Display information of the final state "deliver" and reason. */
   var deliver: js.UndefOr[DeliverInfo] = js.undefined
   
   /** A description of the step. Usually this is a summary of the state. */
   var description: js.UndefOr[String] = js.undefined
   
-  /** Display info of the final state "drop" and reason. */
+  /** Display information of the final state "drop" and reason. */
   var drop: js.UndefOr[DropInfo] = js.undefined
   
   /**
-    * Display info of the source and destination under analysis. The endpiont info in an intermediate state may differ with the initial input, as it might be modified by state like NAT,
-    * or Connection Proxy.
+    * Display information of the source and destination under analysis. The endpoint information in an intermediate state may differ with the initial input, as it might be modified by
+    * state like NAT, or Connection Proxy.
     */
   var endpoint: js.UndefOr[EndpointInfo] = js.undefined
   
-  /** Display info of a Compute Engine firewall rule. */
+  /** Display information of a Compute Engine firewall rule. */
   var firewall: js.UndefOr[FirewallInfo] = js.undefined
   
-  /** Display info of the final state "forward" and reason. */
+  /** Display information of the final state "forward" and reason. */
   var forward: js.UndefOr[ForwardInfo] = js.undefined
   
-  /** Display info of a Compute Engine forwarding rule. */
+  /** Display information of a Compute Engine forwarding rule. */
   var forwardingRule: js.UndefOr[ForwardingRuleInfo] = js.undefined
   
-  /** Display info of a Compute Engine instance. */
+  /** Display information of a Google Kubernetes Engine cluster master. */
+  var gkeMaster: js.UndefOr[GKEMasterInfo] = js.undefined
+  
+  /** Display information of a Compute Engine instance. */
   var instance: js.UndefOr[InstanceInfo] = js.undefined
   
-  /** Display info of the load balancers. */
+  /** Display information of the load balancers. */
   var loadBalancer: js.UndefOr[LoadBalancerInfo] = js.undefined
   
-  /** Display info of a GCP network. */
+  /** Display information of a Google Cloud network. */
   var network: js.UndefOr[NetworkInfo] = js.undefined
   
   /** Project ID that contains the configuration this step is validating. */
   var projectId: js.UndefOr[String] = js.undefined
   
-  /** Display info of a Compute Engine route. */
+  /** Display information of a Compute Engine route. */
   var route: js.UndefOr[RouteInfo] = js.undefined
   
   /** Each step is in one of the pre-defined states. */
   var state: js.UndefOr[String] = js.undefined
   
-  /** Display info of a Compute Engine VPN gateway. */
+  /** Display information of a Compute Engine VPN gateway. */
   var vpnGateway: js.UndefOr[VpnGatewayInfo] = js.undefined
   
-  /** Display info of a Compute Engine VPN tunnel. */
+  /** Display information of a Compute Engine VPN tunnel. */
   var vpnTunnel: js.UndefOr[VpnTunnelInfo] = js.undefined
 }
 object Step {
@@ -76,6 +82,10 @@ object Step {
     inline def setCausesDrop(value: Boolean): Self = StObject.set(x, "causesDrop", value.asInstanceOf[js.Any])
     
     inline def setCausesDropUndefined: Self = StObject.set(x, "causesDrop", js.undefined)
+    
+    inline def setCloudSqlInstance(value: CloudSQLInstanceInfo): Self = StObject.set(x, "cloudSqlInstance", value.asInstanceOf[js.Any])
+    
+    inline def setCloudSqlInstanceUndefined: Self = StObject.set(x, "cloudSqlInstance", js.undefined)
     
     inline def setDeliver(value: DeliverInfo): Self = StObject.set(x, "deliver", value.asInstanceOf[js.Any])
     
@@ -104,6 +114,10 @@ object Step {
     inline def setForwardingRule(value: ForwardingRuleInfo): Self = StObject.set(x, "forwardingRule", value.asInstanceOf[js.Any])
     
     inline def setForwardingRuleUndefined: Self = StObject.set(x, "forwardingRule", js.undefined)
+    
+    inline def setGkeMaster(value: GKEMasterInfo): Self = StObject.set(x, "gkeMaster", value.asInstanceOf[js.Any])
+    
+    inline def setGkeMasterUndefined: Self = StObject.set(x, "gkeMaster", js.undefined)
     
     inline def setInstance(value: InstanceInfo): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     

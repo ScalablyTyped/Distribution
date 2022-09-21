@@ -73,15 +73,15 @@ object urlParserMod {
       
       inline def setNamedParamsKeys(value: js.Array[String]): Self = StObject.set(x, "namedParamsKeys", value.asInstanceOf[js.Any])
       
-      inline def setNamedParamsKeysVarargs(value: String*): Self = StObject.set(x, "namedParamsKeys", js.Array(value :_*))
+      inline def setNamedParamsKeysVarargs(value: String*): Self = StObject.set(x, "namedParamsKeys", js.Array(value*))
       
       inline def setNamedParamsValues(value: js.Array[String]): Self = StObject.set(x, "namedParamsValues", value.asInstanceOf[js.Any])
       
-      inline def setNamedParamsValuesVarargs(value: String*): Self = StObject.set(x, "namedParamsValues", js.Array(value :_*))
+      inline def setNamedParamsValuesVarargs(value: String*): Self = StObject.set(x, "namedParamsValues", js.Array(value*))
       
       inline def setPathNames(value: js.Array[String]): Self = StObject.set(x, "pathNames", value.asInstanceOf[js.Any])
       
-      inline def setPathNamesVarargs(value: String*): Self = StObject.set(x, "pathNames", js.Array(value :_*))
+      inline def setPathNamesVarargs(value: String*): Self = StObject.set(x, "pathNames", js.Array(value*))
       
       inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
@@ -93,11 +93,11 @@ object urlParserMod {
       
       inline def setQueryParamsKeys(value: js.Array[String]): Self = StObject.set(x, "queryParamsKeys", value.asInstanceOf[js.Any])
       
-      inline def setQueryParamsKeysVarargs(value: String*): Self = StObject.set(x, "queryParamsKeys", js.Array(value :_*))
+      inline def setQueryParamsKeysVarargs(value: String*): Self = StObject.set(x, "queryParamsKeys", js.Array(value*))
       
       inline def setQueryParamsValues(value: js.Array[String]): Self = StObject.set(x, "queryParamsValues", value.asInstanceOf[js.Any])
       
-      inline def setQueryParamsValuesVarargs(value: String*): Self = StObject.set(x, "queryParamsValues", js.Array(value :_*))
+      inline def setQueryParamsValuesVarargs(value: String*): Self = StObject.set(x, "queryParamsValues", js.Array(value*))
       
       inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     }

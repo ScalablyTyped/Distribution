@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis", "compute_alpha.Resource$Instancegroupmanagers")
 @js.native
-class ResourceInstancegroupmanagers protected ()
+open class ResourceInstancegroupmanagers protected ()
   extends typings.googleapis.alphaMod.computeAlpha.ResourceInstancegroupmanagers {
   def this(context: APIRequestContext) = this()
 }

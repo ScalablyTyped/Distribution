@@ -31,7 +31,7 @@ object UnderlyingByteSource {
     
     inline def setAutoAllocateChunkSizeUndefined: Self = StObject.set(x, "autoAllocateChunkSize", js.undefined)
     
-    inline def setCancel(value: /* reason */ js.Any => Unit | js.Thenable[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+    inline def setCancel(value: /* reason */ Any => Unit | js.Thenable[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
     inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     

@@ -6,7 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object audioContextMod {
   
-  @JSImport("three/src/audio/AudioContext", "AudioContext")
-  @js.native
-  val AudioContext: typings.std.AudioContext = js.native
+  object AudioContext {
+    
+    @JSImport("three/src/audio/AudioContext", "AudioContext")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getContext(): typings.std.AudioContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")().asInstanceOf[typings.std.AudioContext]
+    
+    inline def setContext(context: typings.std.AudioContext): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  }
 }

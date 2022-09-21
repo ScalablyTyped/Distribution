@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param objects Group objects
   * @param [options] Options object
   */
-class Group ()
+open class Group ()
   extends typings.fabric.fabricImplMod.Group {
   def this(objects: js.Array[typings.fabric.fabricImplMod.Object]) = this()
   def this(objects: js.Array[typings.fabric.fabricImplMod.Object], options: IGroupOptions) = this()
@@ -38,5 +38,5 @@ object Group {
     * @param object Object to create a group from
     * @param [callback] Callback to invoke when an group instance is created
     */
-  inline def fromObject(`object`: js.Any, callback: js.Function1[/* group */ this.type, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromObject(`object`: Any, callback: js.Function1[/* group */ this.type, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

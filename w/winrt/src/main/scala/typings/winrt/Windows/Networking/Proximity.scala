@@ -120,9 +120,9 @@ object Proximity {
     
     def findAllPeersAsync(): IAsyncOperation[IVectorView[PeerInformation]] = js.native
     
-    var onconnectionrequested: js.Any = js.native
+    var onconnectionrequested: Any = js.native
     
-    var ontriggeredconnectionstatechanged: js.Any = js.native
+    var ontriggeredconnectionstatechanged: Any = js.native
     
     def start(): Unit = js.native
     def start(peerMessage: String): Unit = js.native
@@ -158,9 +158,9 @@ object Proximity {
     
     var maxMessageBytes: Double = js.native
     
-    var ondevicearrived: js.Any = js.native
+    var ondevicearrived: Any = js.native
     
-    var ondevicedeparted: js.Any = js.native
+    var ondevicedeparted: Any = js.native
     
     def publishBinaryMessage(messageType: String, message: IBuffer): Double = js.native
     def publishBinaryMessage(messageType: String, message: IBuffer, messageTransmittedHandler: MessageTransmittedHandler): Double = js.native

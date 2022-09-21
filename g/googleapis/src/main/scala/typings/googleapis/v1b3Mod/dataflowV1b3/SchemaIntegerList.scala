@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A metric value representing a list of integers.
-  */
 trait SchemaIntegerList extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaIntegerList {
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    inline def setElementsVarargs(value: SchemaSplitInt64*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: SchemaSplitInt64*): Self = StObject.set(x, "elements", js.Array(value*))
   }
 }

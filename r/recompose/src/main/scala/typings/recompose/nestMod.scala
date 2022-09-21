@@ -14,5 +14,5 @@ object nestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(Components: (String | ComponentType[js.Any])*): ComponentClass[js.Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Components.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Any, ComponentState]]
+  inline def default(Components: (String | ComponentType[Any])*): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Components.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ComponentClass[Any, ComponentState]]
 }

@@ -1,6 +1,6 @@
 package typings.ts3NodejsLibrary
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.ts3NodejsLibrary.abstractMod.Abstract
 import typings.ts3NodejsLibrary.anon.Cgid
 import typings.ts3NodejsLibrary.channelMod.TeamSpeakChannel
@@ -19,7 +19,7 @@ object channelGroupMod {
   
   @JSImport("ts3-nodejs-library/lib/node/ChannelGroup", "TeamSpeakChannelGroup")
   @js.native
-  class TeamSpeakChannelGroup protected () extends Abstract[ChannelGroupEntry] {
+  open class TeamSpeakChannelGroup protected () extends Abstract[ChannelGroupEntry] {
     def this(parent: TeamSpeak, list: ChannelGroupEntry) = this()
     
     /**
@@ -27,7 +27,7 @@ object channelGroupMod {
       * A permission can be specified by permid or permsid.
       * @param perm the permission object
       */
-    def addPerm(perm: PermType): js.Promise[js.Array[js.Any]] = js.native
+    def addPerm(perm: PermType): js.Promise[js.Array[Any]] = js.native
     
     def cgid: String = js.native
     
@@ -53,22 +53,22 @@ object channelGroupMod {
       * Adds a specified permissions to the channel group.
       * A permission can be specified by permid or permsid.
       */
-    def createPerm(): Permission[js.Any] = js.native
+    def createPerm(): Permission[Any] = js.native
     
     /**
       * Deletes the channel group. If force is set to 1, the channel group will be deleted even if there are clients within.
       * @param force if set to 1 the channelgroup will be deleted even when clients are in it
       */
-    def del(): js.Promise[js.Array[js.Any]] = js.native
-    def del(force: Boolean): js.Promise[js.Array[js.Any]] = js.native
+    def del(): js.Promise[js.Array[Any]] = js.native
+    def del(force: Boolean): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Removes a set of specified permissions from the channel group.
       * A permission can be specified by permid or permsid.
       * @param perm the permid or permsid
       */
-    def delPerm(perm: String): js.Promise[js.Array[js.Any]] = js.native
-    def delPerm(perm: Double): js.Promise[js.Array[js.Any]] = js.native
+    def delPerm(perm: String): js.Promise[js.Array[Any]] = js.native
+    def delPerm(perm: Double): js.Promise[js.Array[Any]] = js.native
     
     /** returns a buffer with the icon of the channelgroup */
     def getIcon(): js.Promise[Buffer] = js.native
@@ -99,7 +99,7 @@ object channelGroupMod {
       * changes the name of the channelgroup
       * @param name new name of the group
       */
-    def rename(name: String): js.Promise[js.Array[js.Any]] = js.native
+    def rename(name: String): js.Promise[js.Array[Any]] = js.native
     
     def savedb: Double = js.native
     
@@ -108,10 +108,10 @@ object channelGroupMod {
       * @param channel the channel in which the client should be assigned the Group
       * @param client the client database id which should be added to the Group
       */
-    def setClient(channel: String, client: String): js.Promise[js.Array[js.Any]] = js.native
-    def setClient(channel: String, client: TeamSpeakClient): js.Promise[js.Array[js.Any]] = js.native
-    def setClient(channel: TeamSpeakChannel, client: String): js.Promise[js.Array[js.Any]] = js.native
-    def setClient(channel: TeamSpeakChannel, client: TeamSpeakClient): js.Promise[js.Array[js.Any]] = js.native
+    def setClient(channel: String, client: String): js.Promise[js.Array[Any]] = js.native
+    def setClient(channel: String, client: TeamSpeakClient): js.Promise[js.Array[Any]] = js.native
+    def setClient(channel: TeamSpeakChannel, client: String): js.Promise[js.Array[Any]] = js.native
+    def setClient(channel: TeamSpeakChannel, client: TeamSpeakClient): js.Promise[js.Array[Any]] = js.native
     
     def sortid: Double = js.native
     

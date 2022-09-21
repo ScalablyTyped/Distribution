@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.ContourLine")
 @js.native
-class ContourLine protected ()
+open class ContourLine protected ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.ContourLine {
   /**

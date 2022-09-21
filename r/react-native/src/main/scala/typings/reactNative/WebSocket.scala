@@ -1,8 +1,5 @@
 package typings.reactNative
 
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
-import typings.std.Blob
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebSocket
   extends StObject
      with EventTarget {
+  
+  var addEventListener: WebsocketEventListener = js.native
   
   def close(): Unit = js.native
   def close(code: Double): Unit = js.native
@@ -28,8 +27,10 @@ trait WebSocket
   
   val readyState: Double = js.native
   
+  var removeEventListener: WebsocketEventListener = js.native
+  
   def send(data: String): Unit = js.native
-  def send(data: ArrayBuffer): Unit = js.native
-  def send(data: ArrayBufferView): Unit = js.native
+  def send(data: js.typedarray.ArrayBuffer): Unit = js.native
+  def send(data: js.typedarray.ArrayBufferView): Unit = js.native
   def send(data: Blob): Unit = js.native
 }

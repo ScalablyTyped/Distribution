@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientAccordionGroupCancelEventArgs")
 @js.native
-class BootstrapClientAccordionGroupCancelEventArgs protected ()
+open class BootstrapClientAccordionGroupCancelEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientAccordionGroupCancelEventArgs {
   def this(processOnServer: Boolean, group: typings.devexpressWeb.BootstrapClientAccordionGroup) = this()

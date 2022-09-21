@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Query options for hangouts chat holds.
-  */
 trait SchemaHeldHangoutsChatQuery extends StObject {
   
   /**
-    * If true, include rooms the user has participated in.
+    * To include messages in Chat spaces the user was a member of, set to **true**.
     */
-  var includeRooms: js.UndefOr[Boolean] = js.undefined
+  var includeRooms: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaHeldHangoutsChatQuery {
   
@@ -24,6 +21,8 @@ object SchemaHeldHangoutsChatQuery {
   extension [Self <: SchemaHeldHangoutsChatQuery](x: Self) {
     
     inline def setIncludeRooms(value: Boolean): Self = StObject.set(x, "includeRooms", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeRoomsNull: Self = StObject.set(x, "includeRooms", null)
     
     inline def setIncludeRoomsUndefined: Self = StObject.set(x, "includeRooms", js.undefined)
   }

@@ -1,5 +1,7 @@
 package typings.carbonComponents
 
+import typings.carbonComponents.anon.PartialCheckboxOptions
+import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,31 +11,11 @@ object checkboxMod {
   
   @JSImport("carbon-components/components/checkbox/checkbox", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Checkbox {
-    def this(element: js.Any, options: js.Any) = this()
-    
-    /* CompleteClass */
-    override def _handleBlur(): Unit = js.native
-    
-    /* CompleteClass */
-    override def _handleClick(): Unit = js.native
-    
-    /* CompleteClass */
-    override def _handleFocus(): Unit = js.native
-    
-    /* CompleteClass */
-    override def _indeterminateCheckbox(): Unit = js.native
-    
-    /* CompleteClass */
-    override def _initCheckbox(): Unit = js.native
-    
-    /* CompleteClass */
-    override def setDisabled(value: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def setState(state: js.Any): Unit = js.native
+    def this(element: HTMLElement) = this()
+    def this(element: HTMLElement, options: PartialCheckboxOptions) = this()
   }
   object default {
     
@@ -44,8 +26,8 @@ object checkboxMod {
     /* static member */
     @JSImport("carbon-components/components/checkbox/checkbox", "default.components")
     @js.native
-    def components: WeakMap[js.Object, js.Any] = js.native
-    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    def components: WeakMap[js.Object, Any] = js.native
+    inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
     
     /* static member */
     object stateChangeTypes {
@@ -70,52 +52,74 @@ object checkboxMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ trait Checkbox extends StObject {
+  - Dropped any */ @js.native
+  trait Checkbox extends StObject {
     
-    def _handleBlur(): Unit
+    def _handleBlur(): Unit = js.native
     
-    def _handleClick(): Unit
+    def _handleClick(): Unit = js.native
     
-    def _handleFocus(): Unit
+    def _handleFocus(): Unit = js.native
     
-    def _indeterminateCheckbox(): Unit
+    def _indeterminateCheckbox(): Unit = js.native
     
-    def _initCheckbox(): Unit
+    def _initCheckbox(): Unit = js.native
     
-    def setDisabled(value: js.Any): Unit
+    def setDisabled(): Unit = js.native
+    def setDisabled(value: String): Unit = js.native
+    def setDisabled(value: Boolean): Unit = js.native
     
-    def setState(state: js.Any): Unit
+    def setState(): Unit = js.native
+    def setState(state: String): Unit = js.native
+    def setState(state: Boolean): Unit = js.native
   }
-  object Checkbox {
+  
+  trait CheckboxOptions extends StObject {
+    
+    var attribContainedCheckboxDisabled: String
+    
+    var attribContainedCheckboxState: String
+    
+    var classLabel: String
+    
+    var classLabelFocused: String
+    
+    var selectorContainedCheckboxDisabled: String
+    
+    var selectorContainedCheckboxState: String
+    
+    var selectorInit: String
+  }
+  object CheckboxOptions {
     
     inline def apply(
-      _handleBlur: () => Unit,
-      _handleClick: () => Unit,
-      _handleFocus: () => Unit,
-      _indeterminateCheckbox: () => Unit,
-      _initCheckbox: () => Unit,
-      setDisabled: js.Any => Unit,
-      setState: js.Any => Unit
-    ): Checkbox = {
-      val __obj = js.Dynamic.literal(_handleBlur = js.Any.fromFunction0(_handleBlur), _handleClick = js.Any.fromFunction0(_handleClick), _handleFocus = js.Any.fromFunction0(_handleFocus), _indeterminateCheckbox = js.Any.fromFunction0(_indeterminateCheckbox), _initCheckbox = js.Any.fromFunction0(_initCheckbox), setDisabled = js.Any.fromFunction1(setDisabled), setState = js.Any.fromFunction1(setState))
-      __obj.asInstanceOf[Checkbox]
+      attribContainedCheckboxDisabled: String,
+      attribContainedCheckboxState: String,
+      classLabel: String,
+      classLabelFocused: String,
+      selectorContainedCheckboxDisabled: String,
+      selectorContainedCheckboxState: String,
+      selectorInit: String
+    ): CheckboxOptions = {
+      val __obj = js.Dynamic.literal(attribContainedCheckboxDisabled = attribContainedCheckboxDisabled.asInstanceOf[js.Any], attribContainedCheckboxState = attribContainedCheckboxState.asInstanceOf[js.Any], classLabel = classLabel.asInstanceOf[js.Any], classLabelFocused = classLabelFocused.asInstanceOf[js.Any], selectorContainedCheckboxDisabled = selectorContainedCheckboxDisabled.asInstanceOf[js.Any], selectorContainedCheckboxState = selectorContainedCheckboxState.asInstanceOf[js.Any], selectorInit = selectorInit.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CheckboxOptions]
     }
     
-    extension [Self <: Checkbox](x: Self) {
+    extension [Self <: CheckboxOptions](x: Self) {
       
-      inline def setSetDisabled(value: js.Any => Unit): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
+      inline def setAttribContainedCheckboxDisabled(value: String): Self = StObject.set(x, "attribContainedCheckboxDisabled", value.asInstanceOf[js.Any])
       
-      inline def setSetState(value: js.Any => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+      inline def setAttribContainedCheckboxState(value: String): Self = StObject.set(x, "attribContainedCheckboxState", value.asInstanceOf[js.Any])
       
-      inline def set_handleBlur(value: () => Unit): Self = StObject.set(x, "_handleBlur", js.Any.fromFunction0(value))
+      inline def setClassLabel(value: String): Self = StObject.set(x, "classLabel", value.asInstanceOf[js.Any])
       
-      inline def set_handleClick(value: () => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction0(value))
+      inline def setClassLabelFocused(value: String): Self = StObject.set(x, "classLabelFocused", value.asInstanceOf[js.Any])
       
-      inline def set_handleFocus(value: () => Unit): Self = StObject.set(x, "_handleFocus", js.Any.fromFunction0(value))
+      inline def setSelectorContainedCheckboxDisabled(value: String): Self = StObject.set(x, "selectorContainedCheckboxDisabled", value.asInstanceOf[js.Any])
       
-      inline def set_indeterminateCheckbox(value: () => Unit): Self = StObject.set(x, "_indeterminateCheckbox", js.Any.fromFunction0(value))
+      inline def setSelectorContainedCheckboxState(value: String): Self = StObject.set(x, "selectorContainedCheckboxState", value.asInstanceOf[js.Any])
       
-      inline def set_initCheckbox(value: () => Unit): Self = StObject.set(x, "_initCheckbox", js.Any.fromFunction0(value))
+      inline def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
     }
   }
 }

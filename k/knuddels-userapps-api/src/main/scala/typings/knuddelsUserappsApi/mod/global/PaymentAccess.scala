@@ -7,17 +7,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-	 * @see https://developer.knuddels.de/docs/classes/PaymentAccess.html
-	 * @since AppServer 108571, ChatServer 108571
-	 */
+  * @see https://developer.knuddels.de/docs/classes/PaymentAccess.html
+  * @since AppServer 108571, ChatServer 108571
+  */
 @JSGlobal("PaymentAccess")
 @js.native
-class PaymentAccess () extends StObject {
+open class PaymentAccess () extends StObject {
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/PaymentAccess.html#method_requestKnuddelBuyBonusInfos
-  		 * @since AppServer 20200403-191108, ChatServer 20200403-191108
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/PaymentAccess.html#method_requestKnuddelBuyBonusInfos
+    * @since AppServer 20200403-191108, ChatServer 20200403-191108
+    */
   def requestKnuddelBuyBonusInfos(
     user: User,
     callback: js.Function4[
@@ -30,9 +30,9 @@ class PaymentAccess () extends StObject {
   ): Unit = js.native
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/PaymentAccess.html#method_startKnuddelPurchase
-  		 * @since AppServer 108571, ChatServer 108571
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/PaymentAccess.html#method_startKnuddelPurchase
+    * @since AppServer 108571, ChatServer 108571
+    */
   def startKnuddelPurchase(user: User, amount: KnuddelAmount): Unit = js.native
   def startKnuddelPurchase(user: User, amount: KnuddelAmount, parameters: CustomMessage): Unit = js.native
 }

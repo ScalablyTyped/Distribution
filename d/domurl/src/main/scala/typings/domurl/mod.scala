@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("domurl", JSImport.Namespace)
   @js.native
-  class ^[T] ()
+  open class ^[T] ()
     extends StObject
        with Url[T] {
     def this(url: String) = this()

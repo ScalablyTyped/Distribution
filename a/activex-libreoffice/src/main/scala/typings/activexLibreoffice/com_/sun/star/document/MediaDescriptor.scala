@@ -64,7 +64,7 @@ trait MediaDescriptor extends StObject {
     *
     * For extensibility, it is recommended to use values of type sequence<com.sun.star.beans.NamedValue> with this property.
     */
-  var ComponentData: js.Any
+  var ComponentData: Any
   
   /** The base URL of the document to be used to resolve relative links. */
   var DocumentBaseURL: String
@@ -101,7 +101,7 @@ trait MediaDescriptor extends StObject {
     * This is a parameter that can be used for any properties specific for a special filter type. It should be used if {@link MediaDescriptor.FilterOptions}
     * isn't enough.
     */
-  var FilterData: js.Any
+  var FilterData: Any
   
   /**
     * same as {@link MediaDescriptor.FilterOptions}
@@ -366,7 +366,7 @@ trait MediaDescriptor extends StObject {
     * Data to set a special view state after loading. The type depends on the component and is usually retrieved from a {@link
     * com.sun.star.frame.Controller} object by its {@link com.sun.star.frame.XController} interface. Default is: no view data.
     */
-  var ViewData: js.Any
+  var ViewData: Any
   
   /**
     * id of the initial view
@@ -384,12 +384,12 @@ object MediaDescriptor {
     Author: String,
     CharacterSet: String,
     Comment: String,
-    ComponentData: js.Any,
+    ComponentData: Any,
     DocumentBaseURL: String,
     DocumentTitle: String,
     EncryptionData: SafeArray[NamedValue],
     FileName: String,
-    FilterData: js.Any,
+    FilterData: Any,
     FilterFlags: String,
     FilterName: String,
     FilterOptions: String,
@@ -423,7 +423,7 @@ object MediaDescriptor {
     UpdateDocMode: Double,
     Version: Double,
     ViewControllerName: String,
-    ViewData: js.Any,
+    ViewData: Any,
     ViewId: Double
   ): MediaDescriptor = {
     val __obj = js.Dynamic.literal(Aborted = Aborted.asInstanceOf[js.Any], AsTemplate = AsTemplate.asInstanceOf[js.Any], Author = Author.asInstanceOf[js.Any], CharacterSet = CharacterSet.asInstanceOf[js.Any], Comment = Comment.asInstanceOf[js.Any], ComponentData = ComponentData.asInstanceOf[js.Any], DocumentBaseURL = DocumentBaseURL.asInstanceOf[js.Any], DocumentTitle = DocumentTitle.asInstanceOf[js.Any], EncryptionData = EncryptionData.asInstanceOf[js.Any], FileName = FileName.asInstanceOf[js.Any], FilterData = FilterData.asInstanceOf[js.Any], FilterFlags = FilterFlags.asInstanceOf[js.Any], FilterName = FilterName.asInstanceOf[js.Any], FilterOptions = FilterOptions.asInstanceOf[js.Any], Frame = Frame.asInstanceOf[js.Any], Hidden = Hidden.asInstanceOf[js.Any], HierarchicalDocumentName = HierarchicalDocumentName.asInstanceOf[js.Any], InputStream = InputStream.asInstanceOf[js.Any], InteractionHandler = InteractionHandler.asInstanceOf[js.Any], JumpMark = JumpMark.asInstanceOf[js.Any], MacroExecutionMode = MacroExecutionMode.asInstanceOf[js.Any], MediaType = MediaType.asInstanceOf[js.Any], OpenFlags = OpenFlags.asInstanceOf[js.Any], OpenNewView = OpenNewView.asInstanceOf[js.Any], OutputStream = OutputStream.asInstanceOf[js.Any], Overwrite = Overwrite.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any], PostData = PostData.asInstanceOf[js.Any], PostString = PostString.asInstanceOf[js.Any], Preview = Preview.asInstanceOf[js.Any], ReadOnly = ReadOnly.asInstanceOf[js.Any], Referer = Referer.asInstanceOf[js.Any], RepairPackage = RepairPackage.asInstanceOf[js.Any], StartPresentation = StartPresentation.asInstanceOf[js.Any], StatusIndicator = StatusIndicator.asInstanceOf[js.Any], SuggestedSaveAsDir = SuggestedSaveAsDir.asInstanceOf[js.Any], SuggestedSaveAsName = SuggestedSaveAsName.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any], TemplateRegionName = TemplateRegionName.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], Unpacked = Unpacked.asInstanceOf[js.Any], UpdateDocMode = UpdateDocMode.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any], ViewControllerName = ViewControllerName.asInstanceOf[js.Any], ViewData = ViewData.asInstanceOf[js.Any], ViewId = ViewId.asInstanceOf[js.Any])
@@ -442,7 +442,7 @@ object MediaDescriptor {
     
     inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    inline def setComponentData(value: js.Any): Self = StObject.set(x, "ComponentData", value.asInstanceOf[js.Any])
+    inline def setComponentData(value: Any): Self = StObject.set(x, "ComponentData", value.asInstanceOf[js.Any])
     
     inline def setDocumentBaseURL(value: String): Self = StObject.set(x, "DocumentBaseURL", value.asInstanceOf[js.Any])
     
@@ -452,7 +452,7 @@ object MediaDescriptor {
     
     inline def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
     
-    inline def setFilterData(value: js.Any): Self = StObject.set(x, "FilterData", value.asInstanceOf[js.Any])
+    inline def setFilterData(value: Any): Self = StObject.set(x, "FilterData", value.asInstanceOf[js.Any])
     
     inline def setFilterFlags(value: String): Self = StObject.set(x, "FilterFlags", value.asInstanceOf[js.Any])
     
@@ -520,7 +520,7 @@ object MediaDescriptor {
     
     inline def setViewControllerName(value: String): Self = StObject.set(x, "ViewControllerName", value.asInstanceOf[js.Any])
     
-    inline def setViewData(value: js.Any): Self = StObject.set(x, "ViewData", value.asInstanceOf[js.Any])
+    inline def setViewData(value: Any): Self = StObject.set(x, "ViewData", value.asInstanceOf[js.Any])
     
     inline def setViewId(value: Double): Self = StObject.set(x, "ViewId", value.asInstanceOf[js.Any])
   }

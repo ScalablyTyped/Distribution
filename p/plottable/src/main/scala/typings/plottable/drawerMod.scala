@@ -16,7 +16,7 @@ object drawerMod {
   
   @JSImport("plottable/build/src/drawers/drawer", "ProxyDrawer")
   @js.native
-  class ProxyDrawer protected ()
+  open class ProxyDrawer protected ()
     extends StObject
        with IDrawer {
     /**
@@ -31,11 +31,11 @@ object drawerMod {
       _canvasDrawerFactory: js.Function1[/* ctx */ CanvasRenderingContext2D, CanvasDrawer]
     ) = this()
     
-    /* private */ var _canvasDrawerFactory: js.Any = js.native
+    /* private */ var _canvasDrawerFactory: Any = js.native
     
-    /* private */ var _currentDrawer: js.Any = js.native
+    /* private */ var _currentDrawer: Any = js.native
     
-    /* private */ var _svgDrawerFactory: js.Any = js.native
+    /* private */ var _svgDrawerFactory: Any = js.native
     
     /**
       * Mutate the surface to reflect the data being passed in. This method is responsible
@@ -44,7 +44,7 @@ object drawerMod {
       * @param drawSteps The draw steps that the data go through.
       */
     /* CompleteClass */
-    override def draw(data: js.Array[js.Any], drawSteps: js.Array[AppliedDrawStep]): Unit = js.native
+    override def draw(data: js.Array[Any], drawSteps: js.Array[AppliedDrawStep]): Unit = js.native
     
     def getDrawer(): IDrawer = js.native
     
@@ -70,12 +70,12 @@ object drawerMod {
     /**
       * Remove the old drawer and use Canvas rendering from now on.
       */
-    def useCanvas(canvas: Selection_[HTMLCanvasElement, js.Any, js.Any, js.Any]): Unit = js.native
+    def useCanvas(canvas: Selection_[HTMLCanvasElement, Any, Any, Any]): Unit = js.native
     
     /**
       * Remove the old drawer and use SVG rendering from now on.
       */
-    def useSVG(parent: Selection_[SVGElement, js.Any, js.Any, js.Any]): Unit = js.native
+    def useSVG(parent: Selection_[SVGElement, Any, Any, Any]): Unit = js.native
   }
   
   trait IDrawer extends StObject {
@@ -86,7 +86,7 @@ object drawerMod {
       * @param data The data to be drawn.
       * @param drawSteps The draw steps that the data go through.
       */
-    def draw(data: js.Array[js.Any], drawSteps: js.Array[AppliedDrawStep]): Unit
+    def draw(data: js.Array[Any], drawSteps: js.Array[AppliedDrawStep]): Unit
     
     /**
       * Get the visual primitive for the given *data* index.
@@ -107,7 +107,7 @@ object drawerMod {
   object IDrawer {
     
     inline def apply(
-      draw: (js.Array[js.Any], js.Array[AppliedDrawStep]) => Unit,
+      draw: (js.Array[Any], js.Array[AppliedDrawStep]) => Unit,
       getVisualPrimitiveAtIndex: Double => Element,
       getVisualPrimitives: () => js.Array[Element],
       remove: () => Unit
@@ -118,7 +118,7 @@ object drawerMod {
     
     extension [Self <: IDrawer](x: Self) {
       
-      inline def setDraw(value: (js.Array[js.Any], js.Array[AppliedDrawStep]) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
+      inline def setDraw(value: (js.Array[Any], js.Array[AppliedDrawStep]) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
       
       inline def setGetVisualPrimitiveAtIndex(value: Double => Element): Self = StObject.set(x, "getVisualPrimitiveAtIndex", js.Any.fromFunction1(value))
       

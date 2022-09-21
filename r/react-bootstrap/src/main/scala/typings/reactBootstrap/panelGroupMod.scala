@@ -11,12 +11,10 @@ object panelGroupMod {
   
   @JSImport("react-bootstrap/lib/PanelGroup", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PanelGroupProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PanelGroupProps, js.Object, Any]
   
-  @js.native
-  trait PanelGroup
-    extends Component[PanelGroupProps, js.Object, js.Any]
+  type PanelGroup = Component[PanelGroupProps, js.Object, Any]
   
   trait PanelGroupProps
     extends StObject
@@ -24,14 +22,17 @@ object panelGroupMod {
     
     var accordion: js.UndefOr[Boolean] = js.undefined
     
-    var activeKey: js.UndefOr[js.Any] = js.undefined
+    var activeKey: js.UndefOr[Any] = js.undefined
     
-    var defaultActiveKey: js.UndefOr[js.Any] = js.undefined
+    var defaultActiveKey: js.UndefOr[Any] = js.undefined
     
     var generateChildId: js.UndefOr[js.Function] = js.undefined
     
     @JSName("onSelect")
     var onSelect_PanelGroupProps: js.UndefOr[SelectCallback] = js.undefined
+    
+    @JSName("role")
+    var role_PanelGroupProps: js.UndefOr[String] = js.undefined
   }
   object PanelGroupProps {
     
@@ -46,11 +47,11 @@ object panelGroupMod {
       
       inline def setAccordionUndefined: Self = StObject.set(x, "accordion", js.undefined)
       
-      inline def setActiveKey(value: js.Any): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
+      inline def setActiveKey(value: Any): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       
       inline def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
       
-      inline def setDefaultActiveKey(value: js.Any): Self = StObject.set(x, "defaultActiveKey", value.asInstanceOf[js.Any])
+      inline def setDefaultActiveKey(value: Any): Self = StObject.set(x, "defaultActiveKey", value.asInstanceOf[js.Any])
       
       inline def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
       
@@ -61,6 +62,10 @@ object panelGroupMod {
       inline def setOnSelect(value: SelectCallback): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     }
   }
 }

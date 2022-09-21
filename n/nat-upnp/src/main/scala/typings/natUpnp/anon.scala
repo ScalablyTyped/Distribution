@@ -69,7 +69,7 @@ object anon {
       
       inline def setDevice(value: RawDevice | js.Array[RawDevice]): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
-      inline def setDeviceVarargs(value: RawDevice*): Self = StObject.set(x, "device", js.Array(value :_*))
+      inline def setDeviceVarargs(value: RawDevice*): Self = StObject.set(x, "device", js.Array(value*))
     }
   }
   
@@ -90,17 +90,17 @@ object anon {
       
       inline def setDevices(value: js.Array[RawDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
       
-      inline def setDevicesVarargs(value: RawDevice*): Self = StObject.set(x, "devices", js.Array(value :_*))
+      inline def setDevicesVarargs(value: RawDevice*): Self = StObject.set(x, "devices", js.Array(value*))
       
       inline def setServices(value: js.Array[RawService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
       
-      inline def setServicesVarargs(value: RawService*): Self = StObject.set(x, "services", js.Array(value :_*))
+      inline def setServicesVarargs(value: RawService*): Self = StObject.set(x, "services", js.Array(value*))
     }
   }
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var `@`: Xmlnsu
   }
@@ -179,7 +179,7 @@ object anon {
       
       inline def setService(value: RawService | js.Array[RawService]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      inline def setServiceVarargs(value: RawService*): Self = StObject.set(x, "service", js.Array(value :_*))
+      inline def setServiceVarargs(value: RawService*): Self = StObject.set(x, "service", js.Array(value*))
     }
   }
   

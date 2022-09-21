@@ -7,7 +7,6 @@ import typings.pathToRegexp.mod.ParseOptions
 import typings.pathToRegexp.mod.Path
 import typings.pathToRegexp.mod.RegexpToFunctionOptions
 import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object mod {
   
   @JSImport("universal-router", JSImport.Default)
   @js.native
-  class default[R, C /* <: RouterContext */] protected ()
+  open class default[R, C /* <: RouterContext */] protected ()
     extends StObject
        with UniversalRouter[R, C] {
     def this(routes: Route[R, C]) = this()
@@ -105,7 +104,7 @@ object mod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: (Route[R, C])*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: (Route[R, C])*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setMatch(value: /* path */ String => Match_[RouteParams]): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
       
@@ -125,7 +124,7 @@ object mod {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: (String | RegExp)*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
   
@@ -220,7 +219,7 @@ object mod {
   
   type RouteResult[T] = js.UndefOr[T | Null | (js.Promise[js.UndefOr[T | Null]])]
   
-  type RouterContext = StringDictionary[js.Any]
+  type RouterContext = StringDictionary[Any]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.pathToRegexp.mod.TokensToRegexpOptions because var conflicts: delimiter. Inlined sensitive, start, encode, endsWith, end, strict */ trait RouterOptions[R, C /* <: RouterContext */]

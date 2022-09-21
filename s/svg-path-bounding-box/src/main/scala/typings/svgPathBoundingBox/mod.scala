@@ -18,7 +18,7 @@ object mod {
     */
   @JSImport("svg-path-bounding-box", "BoundingBox")
   @js.native
-  class BoundingBox protected () extends StObject {
+  open class BoundingBox protected () extends StObject {
     def this(x1: Double, y1: Double, x2: Double, y2: Double) = this()
     
     /** @see http://blog.hackers-cafe.net/2009/06/how-to-calculate-bezier-curves-bounding.html */
@@ -56,7 +56,7 @@ object mod {
   
   @JSImport("svg-path-bounding-box", "BoundingBoxView")
   @js.native
-  class BoundingBoxView protected () extends StObject {
+  open class BoundingBoxView protected () extends StObject {
     def this(boundingBox: BoundingBox) = this()
     
     var height: Double = js.native
@@ -88,7 +88,7 @@ object mod {
   
   @JSImport("svg-path-bounding-box", "Path")
   @js.native
-  class Path protected () extends StObject {
+  open class Path protected () extends StObject {
     def this(d: String) = this()
     
     var d: String = js.native

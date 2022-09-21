@@ -10,10 +10,10 @@ Typings are for version 1.1
 | ------------------ | :-------------: |
 | Full name          | pinyin-engine |
 | Keywords           | pinyin |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 3379 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 348.3333333333333 |
+| # stars            | 423.0 |
 
 ## Links
 - [Homepage](https://github.com/aui/pinyin-engine#readme)

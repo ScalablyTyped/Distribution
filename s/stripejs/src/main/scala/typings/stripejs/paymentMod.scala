@@ -204,6 +204,7 @@ object paymentMod {
       */
     def canMakePayment(): js.Promise[CanMakePaymentResult | Null] = js.native
     
+    def on(event: token | source, handler: js.Function1[/* event */ StripePaymentResponse, Unit]): Unit = js.native
     /**
       * Register your event listener
       * @see https://stripe.com/docs/stripe-js/reference#payment-request-on
@@ -214,10 +215,6 @@ object paymentMod {
     def on_shippingaddresschange(event: shippingaddresschange, handler: js.Function1[/* event */ NewShippingAddress, Unit]): Unit = js.native
     @JSName("on")
     def on_shippingoptionchange(event: shippingoptionchange, handler: js.Function1[/* event */ NewShippingOptions, Unit]): Unit = js.native
-    @JSName("on")
-    def on_source(event: source, handler: js.Function1[/* event */ StripePaymentResponse, Unit]): Unit = js.native
-    @JSName("on")
-    def on_token(event: token, handler: js.Function1[/* event */ StripePaymentResponse, Unit]): Unit = js.native
     
     /**
       * Shows the browser’s payment UI
@@ -282,12 +279,12 @@ object paymentMod {
     /**
       * NOTE: Only available when the event type 'source' was used
       */
-    val source: js.UndefOr[js.Any] = js.undefined
+    val source: js.UndefOr[Any] = js.undefined
     
     /**
       * NOTE: Only available when the event type 'token' was used
       */
-    val token: js.UndefOr[js.Any] = js.undefined
+    val token: js.UndefOr[Any] = js.undefined
   }
   object StripePaymentResponse {
     
@@ -323,11 +320,11 @@ object paymentMod {
       
       inline def setShippingOption(value: ShippingOption): Self = StObject.set(x, "shippingOption", value.asInstanceOf[js.Any])
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      inline def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
       inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     }
@@ -379,13 +376,13 @@ object paymentMod {
       
       inline def setDisplayItemsUndefined: Self = StObject.set(x, "displayItems", js.undefined)
       
-      inline def setDisplayItemsVarargs(value: PaymentItem*): Self = StObject.set(x, "displayItems", js.Array(value :_*))
+      inline def setDisplayItemsVarargs(value: PaymentItem*): Self = StObject.set(x, "displayItems", js.Array(value*))
       
       inline def setShippingOptions(value: js.Array[ShippingOption]): Self = StObject.set(x, "shippingOptions", value.asInstanceOf[js.Any])
       
       inline def setShippingOptionsUndefined: Self = StObject.set(x, "shippingOptions", js.undefined)
       
-      inline def setShippingOptionsVarargs(value: ShippingOption*): Self = StObject.set(x, "shippingOptions", js.Array(value :_*))
+      inline def setShippingOptionsVarargs(value: ShippingOption*): Self = StObject.set(x, "shippingOptions", js.Array(value*))
       
       inline def setTotal(value: PaymentItem): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }

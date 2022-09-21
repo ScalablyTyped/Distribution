@@ -1,13 +1,14 @@
 package typings.vscodeLanguageclient
 
+import typings.vscode.mod.Disposable
 import typings.vscode.mod.FoldingContext
 import typings.vscode.mod.FoldingRange
 import typings.vscode.mod.FoldingRangeProvider
 import typings.vscode.mod.ProviderResult
 import typings.vscode.mod.TextDocument
 import typings.vscodeJsonrpc.cancellationMod.CancellationToken
-import typings.vscodeLanguageclient.clientMod.BaseLanguageClient
-import typings.vscodeLanguageclient.clientMod.TextDocumentFeature
+import typings.vscodeLanguageclient.featuresMod.FeatureClient
+import typings.vscodeLanguageclient.featuresMod.TextDocumentLanguageFeature
 import typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRangeOptions
 import typings.vscodeLanguageserverProtocol.protocolFoldingRangeMod.FoldingRangeRegistrationOptions
 import org.scalablytyped.runtime.StObject
@@ -16,14 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object foldingRangeMod {
   
-  @JSImport("vscode-languageclient/lib/foldingRange", "FoldingRangeFeature")
+  @JSImport("vscode-languageclient/lib/common/foldingRange", "FoldingRangeFeature")
   @js.native
-  class FoldingRangeFeature protected () extends TextDocumentFeature[Boolean | FoldingRangeOptions, FoldingRangeRegistrationOptions, FoldingRangeProvider] {
-    def this(client: BaseLanguageClient) = this()
+  open class FoldingRangeFeature protected ()
+    extends TextDocumentLanguageFeature[
+          Boolean | FoldingRangeOptions, 
+          FoldingRangeRegistrationOptions, 
+          FoldingRangeProvider, 
+          FoldingRangeProviderMiddleware, 
+          js.Object
+        ] {
+    def this(client: FeatureClient[FoldingRangeProviderMiddleware, js.Object]) = this()
     
-    /* private */ var asFoldingRangeKind: js.Any = js.native
-    
-    /* private */ var asFoldingRanges: js.Any = js.native
+    /* protected */ def registerLanguageProvider(options: FoldingRangeRegistrationOptions): js.Tuple2[Disposable, FoldingRangeProvider] = js.native
   }
   
   trait FoldingRangeProviderMiddleware extends StObject {

@@ -10,10 +10,10 @@ object callToActionMod {
   
   @JSImport("material-ui/svg-icons/av/call-to-action", JSImport.Default)
   @js.native
-  class default () extends AvCallToAction
+  open class default () extends AvCallToAction
   
   @JSImport("material-ui/svg-icons/av/call-to-action", "AvCallToAction")
   @js.native
-  class AvCallToAction ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvCallToAction ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

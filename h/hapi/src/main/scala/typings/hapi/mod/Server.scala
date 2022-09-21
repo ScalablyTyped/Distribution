@@ -1,5 +1,6 @@
 package typings.hapi.mod
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.catbox.mod.Policy
 import typings.hapi.anon.Apply
 import typings.hapi.anon.ApplyExtend
@@ -16,6 +17,9 @@ import typings.hapi.hapiStrings.tcp
 import typings.hapi.hapiStrings.toolkit
 import typings.hapi.mod.Lifecycle.Method
 import typings.hapi.mod.Util.HTTP_METHODS
+import typings.node.httpMod.IncomingMessage
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.node.zlibMod.Gunzip_
 import typings.node.zlibMod.Gzip_
 import org.scalablytyped.runtime.StObject
@@ -29,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options server configuration object.
   * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptions)
   */
-class Server () extends StObject {
+open class Server () extends StObject {
   def this(options: ServerOptions) = this()
   
   /**
@@ -139,7 +143,7 @@ class Server () extends StObject {
     `type`: request,
     property: DecorateName,
     method: js.Function1[
-      /* existing */ js.Function1[/* repeated */ js.Any, js.Any], 
+      /* existing */ js.Function1[/* repeated */ Any, Any], 
       js.Function1[/* request */ Request, DecorationMethod[Request]]
     ],
     options: Extend
@@ -152,10 +156,7 @@ class Server () extends StObject {
   def decorate_server(
     `type`: server,
     property: DecorateName,
-    method: js.Function1[
-      /* existing */ js.Function1[/* repeated */ js.Any, js.Any], 
-      DecorationMethod[this.type]
-    ],
+    method: js.Function1[/* existing */ js.Function1[/* repeated */ Any, Any], DecorationMethod[this.type]],
     options: `0`
   ): Unit = js.native
   @JSName("decorate")
@@ -167,7 +168,7 @@ class Server () extends StObject {
     `type`: toolkit,
     property: DecorateName,
     method: js.Function1[
-      /* existing */ js.Function1[/* repeated */ js.Any, js.Any], 
+      /* existing */ js.Function1[/* repeated */ Any, Any], 
       DecorationMethod[ResponseToolkit]
     ],
     options: `0`
@@ -252,7 +253,7 @@ class Server () extends StObject {
     * @return Return value: none.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverexposekey-value)
     */
-  def expose(key: String, value: js.Any): Unit = js.native
+  def expose(key: String, value: Any): Unit = js.native
   /**
     * Merges an object into to the existing content of server.plugins[name] where:
     * @param obj - the object merged into the exposed properties container.
@@ -374,7 +375,13 @@ class Server () extends StObject {
     * The node HTTP server object.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverlistener)
     */
-  var listener: typings.node.httpMod.Server = js.native
+  var listener: typings.node.httpMod.Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ] = js.native
   
   /**
     * An object containing the process load metrics (when load.sampleInterval is enabled):
@@ -399,16 +406,16 @@ class Server () extends StObject {
   def log(tags: String): Unit = js.native
   def log(tags: String, data: String): Unit = js.native
   def log(tags: String, data: String, timestamp: Double): Unit = js.native
-  def log(tags: String, data: js.Function0[js.Any]): Unit = js.native
-  def log(tags: String, data: js.Function0[js.Any], timestamp: Double): Unit = js.native
+  def log(tags: String, data: js.Function0[Any]): Unit = js.native
+  def log(tags: String, data: js.Function0[Any], timestamp: Double): Unit = js.native
   def log(tags: String, data: js.Object): Unit = js.native
   def log(tags: String, data: js.Object, timestamp: Double): Unit = js.native
   def log(tags: String, data: Unit, timestamp: Double): Unit = js.native
   def log(tags: js.Array[String]): Unit = js.native
   def log(tags: js.Array[String], data: String): Unit = js.native
   def log(tags: js.Array[String], data: String, timestamp: Double): Unit = js.native
-  def log(tags: js.Array[String], data: js.Function0[js.Any]): Unit = js.native
-  def log(tags: js.Array[String], data: js.Function0[js.Any], timestamp: Double): Unit = js.native
+  def log(tags: js.Array[String], data: js.Function0[Any]): Unit = js.native
+  def log(tags: js.Array[String], data: js.Function0[Any], timestamp: Double): Unit = js.native
   def log(tags: js.Array[String], data: js.Object): Unit = js.native
   def log(tags: js.Array[String], data: js.Object, timestamp: Double): Unit = js.native
   def log(tags: js.Array[String], data: Unit, timestamp: Double): Unit = js.native
@@ -481,7 +488,7 @@ class Server () extends StObject {
     * modified directly but only through the [mime](https://github.com/hapijs/hapi/blob/master/API.md#server.options.mime) server setting.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servermime)
     */
-  var mime: js.Any = js.native
+  var mime: Any = js.native
   
   /**
     * Sets the path prefix used to locate static resources (files and view templates) when relative paths are used where:
@@ -513,14 +520,11 @@ class Server () extends StObject {
     */
   val realm: ServerRealm = js.native
   
-  def register(plugins: js.Array[Plugin[js.Any] | ServerRegisterPluginObject[js.Any]]): js.Promise[Unit] = js.native
-  def register(
-    plugins: js.Array[Plugin[js.Any] | ServerRegisterPluginObject[js.Any]],
-    options: ServerRegisterOptions
-  ): js.Promise[Unit] = js.native
+  def register(plugins: js.Array[Plugin[Any] | ServerRegisterPluginObject[Any]]): js.Promise[Unit] = js.native
+  def register(plugins: js.Array[Plugin[Any] | ServerRegisterPluginObject[Any]], options: ServerRegisterOptions): js.Promise[Unit] = js.native
   /* tslint:disable-next-line:unified-signatures */
-  def register(plugins: Plugin[js.Any]): js.Promise[Unit] = js.native
-  def register(plugins: Plugin[js.Any], options: ServerRegisterOptions): js.Promise[Unit] = js.native
+  def register(plugins: Plugin[Any]): js.Promise[Unit] = js.native
+  def register(plugins: Plugin[Any], options: ServerRegisterOptions): js.Promise[Unit] = js.native
   /**
     * Registers a plugin where:
     * @param plugins - one or an array of:

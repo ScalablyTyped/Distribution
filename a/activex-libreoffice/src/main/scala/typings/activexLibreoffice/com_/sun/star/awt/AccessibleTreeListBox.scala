@@ -71,7 +71,7 @@ object AccessibleTreeListBox {
     getSize: () => Size,
     grabFocus: () => Unit,
     isAccessibleChildSelected: Double => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeAccessibleEventListener: XAccessibleEventListener => Unit,
     selectAccessibleChild: Double => Unit,

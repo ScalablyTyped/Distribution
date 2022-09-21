@@ -9,9 +9,8 @@ object paginationDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/pagination/demo/basic", JSImport.Default)
   @js.native
-  class default () extends BasicPaginationExample
+  open class default () extends BasicPaginationExample
   
   @js.native
-  trait BasicPaginationExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait BasicPaginationExample extends Component[Any, Any, Any]
 }

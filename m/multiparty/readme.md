@@ -9,10 +9,10 @@ multipart/form-data parser which supports streaming
 | ------------------ | :-------------: |
 | Full name          | multiparty |
 | Keywords           | file, upload, formidable, stream, s3 |
-| # releases         | 2 |
-| # dependents       | 400 |
-| # downloads        | 19198460 |
-| # stars            | 66 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1724678.3333333333 |
+| # stars            | 1232.0 |
 
 ## Links
 - [Homepage](https://github.com/pillarjs/multiparty#readme)

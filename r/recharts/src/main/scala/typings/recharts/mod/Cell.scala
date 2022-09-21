@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "Cell")
 @js.native
-class Cell protected ()
-  extends Component[CellProps, js.Object, js.Any] {
+open class Cell protected ()
+  extends Component[CellProps, js.Object, Any] {
   def this(props: CellProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: CellProps, context: js.Any) = this()
+  def this(props: CellProps, context: Any) = this()
 }

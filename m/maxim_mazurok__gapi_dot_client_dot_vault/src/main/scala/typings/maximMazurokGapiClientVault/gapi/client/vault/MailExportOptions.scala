@@ -6,11 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MailExportOptions extends StObject {
   
-  /** The export file format. */
+  /** The file format for exported messages. */
   var exportFormat: js.UndefOr[String] = js.undefined
   
-  /** Set to true to export confidential mode content. */
+  /** To export confidential mode content, set to **true**. */
   var showConfidentialModeContent: js.UndefOr[Boolean] = js.undefined
+  
+  /** To use the new export system, set to **true**. */
+  var useNewExport: js.UndefOr[Boolean] = js.undefined
 }
 object MailExportOptions {
   
@@ -28,5 +31,9 @@ object MailExportOptions {
     inline def setShowConfidentialModeContent(value: Boolean): Self = StObject.set(x, "showConfidentialModeContent", value.asInstanceOf[js.Any])
     
     inline def setShowConfidentialModeContentUndefined: Self = StObject.set(x, "showConfidentialModeContent", js.undefined)
+    
+    inline def setUseNewExport(value: Boolean): Self = StObject.set(x, "useNewExport", value.asInstanceOf[js.Any])
+    
+    inline def setUseNewExportUndefined: Self = StObject.set(x, "useNewExport", js.undefined)
   }
 }

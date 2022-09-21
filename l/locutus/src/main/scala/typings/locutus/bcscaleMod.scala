@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bcscaleMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(scale: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(scale.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(scale: Any): Any = ^.asInstanceOf[js.Dynamic].apply(scale.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("locutus/php/bc/bcscale", JSImport.Namespace)
   @js.native

@@ -10,15 +10,12 @@ Next.js HOC to integrate NProgress inside your app.
 | ------------------ | :-------------: |
 | Full name          | next-nprogress |
 | Keywords           | nextjs, react, nprogress, progress bar, hoc, high order component |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 49408 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2606.3333333333335 |
+| # stars            | 150.0 |
 
 ## Links
-- [Homepage](https://github.com/sergiodxa/next-nprogress#readme)
-- [Bugs](https://github.com/sergiodxa/next-nprogress/issues)
-- [Repository](https://github.com/sergiodxa/next-nprogress)
 - [Npm](https://www.npmjs.com/package/next-nprogress)
     
 

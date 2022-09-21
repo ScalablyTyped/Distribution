@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Dimension extends StObject {
   
   /**
-    * The name of the dimension. Dimension names cannot contain blank spaces or non-ASCII characters.
+    * The name of the dimension. Dimension names must contain only ASCII characters, must include at least one non-whitespace character, and cannot start with a colon (:).
     */
   var Name: DimensionName
   
   /**
-    * The value of the dimension. Dimension values cannot contain blank spaces or non-ASCII characters.
+    * The value of the dimension. Dimension values must contain only ASCII characters and must include at least one non-whitespace character.
     */
   var Value: DimensionValue
 }

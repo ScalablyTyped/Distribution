@@ -9,23 +9,23 @@ object deferredRendererMod {
   
   @JSImport("plottable/build/src/plots/deferredRenderer", "DeferredRenderer")
   @js.native
-  class DeferredRenderer[X, Y] protected () extends StObject {
+  open class DeferredRenderer[X, Y] protected () extends StObject {
     def this(
       renderCallback: js.Function0[Unit],
       applyTransformCallback: js.Function4[/* tx */ Double, /* ty */ Double, /* sx */ Double, /* sy */ Double, Unit]
     ) = this()
     
-    /* private */ def applyTransform(): js.Any = js.native
+    /* private */ var applyTransform: Any = js.native
     
-    /* private */ var applyTransformCallback: js.Any = js.native
+    /* private */ var applyTransformCallback: Any = js.native
     
-    /* private */ var domainTransformX: js.Any = js.native
+    /* private */ var domainTransformX: Any = js.native
     
-    /* private */ var domainTransformY: js.Any = js.native
+    /* private */ var domainTransformY: Any = js.native
     
-    /* private */ var renderCallback: js.Any = js.native
+    /* private */ var renderCallback: Any = js.native
     
-    /* private */ var renderDeferred: js.Any = js.native
+    /* private */ var renderDeferred: Any = js.native
     
     def resetTransforms(): Unit = js.native
     
@@ -34,7 +34,7 @@ object deferredRendererMod {
     def setDomains(scaleX: ITransformableScale): Unit = js.native
     def setDomains(scaleX: ITransformableScale, scaleY: ITransformableScale): Unit = js.native
     
-    /* private */ var timeoutToken: js.Any = js.native
+    /* private */ var timeoutToken: Any = js.native
     
     def updateDomains(): Unit = js.native
     def updateDomains(scaleX: Unit, scaleY: ITransformableScale): Unit = js.native

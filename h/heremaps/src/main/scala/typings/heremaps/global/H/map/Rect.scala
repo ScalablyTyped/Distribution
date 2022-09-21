@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("H.map.Rect")
 @js.native
-class Rect protected ()
+open class Rect protected ()
   extends StObject
      with typings.heremaps.H.map.Rect {
   /**

@@ -7,9 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TimelineGroupBase extends StObject {
   
+  var height: js.UndefOr[Double] = js.undefined
+  
   var id: Id
   
   var rightTitle: js.UndefOr[ReactNode] = js.undefined
+  
+  var stackItems: js.UndefOr[Boolean] = js.undefined
   
   var title: ReactNode
 }
@@ -22,11 +26,19 @@ object TimelineGroupBase {
   
   extension [Self <: TimelineGroupBase](x: Self) {
     
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setRightTitle(value: ReactNode): Self = StObject.set(x, "rightTitle", value.asInstanceOf[js.Any])
     
     inline def setRightTitleUndefined: Self = StObject.set(x, "rightTitle", js.undefined)
+    
+    inline def setStackItems(value: Boolean): Self = StObject.set(x, "stackItems", value.asInstanceOf[js.Any])
+    
+    inline def setStackItemsUndefined: Self = StObject.set(x, "stackItems", js.undefined)
     
     inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("paper.Key")
 @js.native
-class Key ()
+open class Key ()
   extends StObject
      with typings.paper.paper.Key
 object Key {
@@ -51,6 +51,6 @@ object Key {
   /* static member */
   @JSGlobal("paper.Key.modifiers")
   @js.native
-  def modifiers: js.Any = js.native
-  inline def modifiers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modifiers")(x.asInstanceOf[js.Any])
+  def modifiers: Any = js.native
+  inline def modifiers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modifiers")(x.asInstanceOf[js.Any])
 }

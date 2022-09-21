@@ -1,6 +1,6 @@
 package typings.exif
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,6 +60,10 @@ object anon {
     var ImageUniqueID: js.UndefOr[String] = js.undefined
     
     var InteropOffset: js.UndefOr[Double] = js.undefined
+    
+    var LensMake: js.UndefOr[String] = js.undefined
+    
+    var LensModel: js.UndefOr[String] = js.undefined
     
     var MakerNote: js.UndefOr[Buffer] = js.undefined
     
@@ -192,6 +196,14 @@ object anon {
       
       inline def setInteropOffsetUndefined: Self = StObject.set(x, "InteropOffset", js.undefined)
       
+      inline def setLensMake(value: String): Self = StObject.set(x, "LensMake", value.asInstanceOf[js.Any])
+      
+      inline def setLensMakeUndefined: Self = StObject.set(x, "LensMake", js.undefined)
+      
+      inline def setLensModel(value: String): Self = StObject.set(x, "LensModel", value.asInstanceOf[js.Any])
+      
+      inline def setLensModelUndefined: Self = StObject.set(x, "LensModel", js.undefined)
+      
       inline def setMakerNote(value: Buffer): Self = StObject.set(x, "MakerNote", value.asInstanceOf[js.Any])
       
       inline def setMakerNoteUndefined: Self = StObject.set(x, "MakerNote", js.undefined)
@@ -227,6 +239,103 @@ object anon {
       inline def setWhiteBalance(value: Double): Self = StObject.set(x, "WhiteBalance", value.asInstanceOf[js.Any])
       
       inline def setWhiteBalanceUndefined: Self = StObject.set(x, "WhiteBalance", js.undefined)
+    }
+  }
+  
+  trait Artist extends StObject {
+    
+    var Artist: js.UndefOr[String] = js.undefined
+    
+    var Copyright: js.UndefOr[String] = js.undefined
+    
+    var ExifOffset: js.UndefOr[Double] = js.undefined
+    
+    var ImageHeight: js.UndefOr[Double] = js.undefined
+    
+    var ImageWidth: js.UndefOr[Double] = js.undefined
+    
+    var Make: js.UndefOr[String] = js.undefined
+    
+    var Model: js.UndefOr[String] = js.undefined
+    
+    var ModifyDate: js.UndefOr[String] = js.undefined
+    
+    var Orientation: js.UndefOr[Double] = js.undefined
+    
+    var ResolutionUnit: js.UndefOr[Double] = js.undefined
+    
+    var Software: js.UndefOr[String] = js.undefined
+    
+    var XResolution: js.UndefOr[Double] = js.undefined
+    
+    var YCbCrPositioning: js.UndefOr[Double] = js.undefined
+    
+    var YResolution: js.UndefOr[Double] = js.undefined
+  }
+  object Artist {
+    
+    inline def apply(): Artist = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Artist]
+    }
+    
+    extension [Self <: Artist](x: Self) {
+      
+      inline def setArtist(value: String): Self = StObject.set(x, "Artist", value.asInstanceOf[js.Any])
+      
+      inline def setArtistUndefined: Self = StObject.set(x, "Artist", js.undefined)
+      
+      inline def setCopyright(value: String): Self = StObject.set(x, "Copyright", value.asInstanceOf[js.Any])
+      
+      inline def setCopyrightUndefined: Self = StObject.set(x, "Copyright", js.undefined)
+      
+      inline def setExifOffset(value: Double): Self = StObject.set(x, "ExifOffset", value.asInstanceOf[js.Any])
+      
+      inline def setExifOffsetUndefined: Self = StObject.set(x, "ExifOffset", js.undefined)
+      
+      inline def setImageHeight(value: Double): Self = StObject.set(x, "ImageHeight", value.asInstanceOf[js.Any])
+      
+      inline def setImageHeightUndefined: Self = StObject.set(x, "ImageHeight", js.undefined)
+      
+      inline def setImageWidth(value: Double): Self = StObject.set(x, "ImageWidth", value.asInstanceOf[js.Any])
+      
+      inline def setImageWidthUndefined: Self = StObject.set(x, "ImageWidth", js.undefined)
+      
+      inline def setMake(value: String): Self = StObject.set(x, "Make", value.asInstanceOf[js.Any])
+      
+      inline def setMakeUndefined: Self = StObject.set(x, "Make", js.undefined)
+      
+      inline def setModel(value: String): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+      
+      inline def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
+      
+      inline def setModifyDate(value: String): Self = StObject.set(x, "ModifyDate", value.asInstanceOf[js.Any])
+      
+      inline def setModifyDateUndefined: Self = StObject.set(x, "ModifyDate", js.undefined)
+      
+      inline def setOrientation(value: Double): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+      
+      inline def setOrientationUndefined: Self = StObject.set(x, "Orientation", js.undefined)
+      
+      inline def setResolutionUnit(value: Double): Self = StObject.set(x, "ResolutionUnit", value.asInstanceOf[js.Any])
+      
+      inline def setResolutionUnitUndefined: Self = StObject.set(x, "ResolutionUnit", js.undefined)
+      
+      inline def setSoftware(value: String): Self = StObject.set(x, "Software", value.asInstanceOf[js.Any])
+      
+      inline def setSoftwareUndefined: Self = StObject.set(x, "Software", js.undefined)
+      
+      inline def setXResolution(value: Double): Self = StObject.set(x, "XResolution", value.asInstanceOf[js.Any])
+      
+      inline def setXResolutionUndefined: Self = StObject.set(x, "XResolution", js.undefined)
+      
+      inline def setYCbCrPositioning(value: Double): Self = StObject.set(x, "YCbCrPositioning", value.asInstanceOf[js.Any])
+      
+      inline def setYCbCrPositioningUndefined: Self = StObject.set(x, "YCbCrPositioning", js.undefined)
+      
+      inline def setYResolution(value: Double): Self = StObject.set(x, "YResolution", value.asInstanceOf[js.Any])
+      
+      inline def setYResolutionUndefined: Self = StObject.set(x, "YResolution", js.undefined)
     }
   }
   
@@ -388,97 +497,6 @@ object anon {
     }
   }
   
-  trait Copyright extends StObject {
-    
-    var Copyright: js.UndefOr[String] = js.undefined
-    
-    var ExifOffset: js.UndefOr[Double] = js.undefined
-    
-    var ImageHeight: js.UndefOr[Double] = js.undefined
-    
-    var ImageWidth: js.UndefOr[Double] = js.undefined
-    
-    var Make: js.UndefOr[String] = js.undefined
-    
-    var Model: js.UndefOr[String] = js.undefined
-    
-    var ModifyDate: js.UndefOr[String] = js.undefined
-    
-    var Orientation: js.UndefOr[Double] = js.undefined
-    
-    var ResolutionUnit: js.UndefOr[Double] = js.undefined
-    
-    var Software: js.UndefOr[String] = js.undefined
-    
-    var XResolution: js.UndefOr[Double] = js.undefined
-    
-    var YCbCrPositioning: js.UndefOr[Double] = js.undefined
-    
-    var YResolution: js.UndefOr[Double] = js.undefined
-  }
-  object Copyright {
-    
-    inline def apply(): Copyright = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Copyright]
-    }
-    
-    extension [Self <: Copyright](x: Self) {
-      
-      inline def setCopyright(value: String): Self = StObject.set(x, "Copyright", value.asInstanceOf[js.Any])
-      
-      inline def setCopyrightUndefined: Self = StObject.set(x, "Copyright", js.undefined)
-      
-      inline def setExifOffset(value: Double): Self = StObject.set(x, "ExifOffset", value.asInstanceOf[js.Any])
-      
-      inline def setExifOffsetUndefined: Self = StObject.set(x, "ExifOffset", js.undefined)
-      
-      inline def setImageHeight(value: Double): Self = StObject.set(x, "ImageHeight", value.asInstanceOf[js.Any])
-      
-      inline def setImageHeightUndefined: Self = StObject.set(x, "ImageHeight", js.undefined)
-      
-      inline def setImageWidth(value: Double): Self = StObject.set(x, "ImageWidth", value.asInstanceOf[js.Any])
-      
-      inline def setImageWidthUndefined: Self = StObject.set(x, "ImageWidth", js.undefined)
-      
-      inline def setMake(value: String): Self = StObject.set(x, "Make", value.asInstanceOf[js.Any])
-      
-      inline def setMakeUndefined: Self = StObject.set(x, "Make", js.undefined)
-      
-      inline def setModel(value: String): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
-      
-      inline def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
-      
-      inline def setModifyDate(value: String): Self = StObject.set(x, "ModifyDate", value.asInstanceOf[js.Any])
-      
-      inline def setModifyDateUndefined: Self = StObject.set(x, "ModifyDate", js.undefined)
-      
-      inline def setOrientation(value: Double): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
-      
-      inline def setOrientationUndefined: Self = StObject.set(x, "Orientation", js.undefined)
-      
-      inline def setResolutionUnit(value: Double): Self = StObject.set(x, "ResolutionUnit", value.asInstanceOf[js.Any])
-      
-      inline def setResolutionUnitUndefined: Self = StObject.set(x, "ResolutionUnit", js.undefined)
-      
-      inline def setSoftware(value: String): Self = StObject.set(x, "Software", value.asInstanceOf[js.Any])
-      
-      inline def setSoftwareUndefined: Self = StObject.set(x, "Software", js.undefined)
-      
-      inline def setXResolution(value: Double): Self = StObject.set(x, "XResolution", value.asInstanceOf[js.Any])
-      
-      inline def setXResolutionUndefined: Self = StObject.set(x, "XResolution", js.undefined)
-      
-      inline def setYCbCrPositioning(value: Double): Self = StObject.set(x, "YCbCrPositioning", value.asInstanceOf[js.Any])
-      
-      inline def setYCbCrPositioningUndefined: Self = StObject.set(x, "YCbCrPositioning", js.undefined)
-      
-      inline def setYResolution(value: Double): Self = StObject.set(x, "YResolution", value.asInstanceOf[js.Any])
-      
-      inline def setYResolutionUndefined: Self = StObject.set(x, "YResolution", js.undefined)
-    }
-  }
-  
   trait GPSAltitude extends StObject {
     
     var GPSAltitude: js.UndefOr[Double] = js.undefined
@@ -598,7 +616,7 @@ object anon {
       
       inline def setGPSDestLatitudeUndefined: Self = StObject.set(x, "GPSDestLatitude", js.undefined)
       
-      inline def setGPSDestLatitudeVarargs(value: Double*): Self = StObject.set(x, "GPSDestLatitude", js.Array(value :_*))
+      inline def setGPSDestLatitudeVarargs(value: Double*): Self = StObject.set(x, "GPSDestLatitude", js.Array(value*))
       
       inline def setGPSDestLongitude(value: js.Array[Double]): Self = StObject.set(x, "GPSDestLongitude", value.asInstanceOf[js.Any])
       
@@ -608,7 +626,7 @@ object anon {
       
       inline def setGPSDestLongitudeUndefined: Self = StObject.set(x, "GPSDestLongitude", js.undefined)
       
-      inline def setGPSDestLongitudeVarargs(value: Double*): Self = StObject.set(x, "GPSDestLongitude", js.Array(value :_*))
+      inline def setGPSDestLongitudeVarargs(value: Double*): Self = StObject.set(x, "GPSDestLongitude", js.Array(value*))
       
       inline def setGPSDifferential(value: Double): Self = StObject.set(x, "GPSDifferential", value.asInstanceOf[js.Any])
       
@@ -634,7 +652,7 @@ object anon {
       
       inline def setGPSLatitudeUndefined: Self = StObject.set(x, "GPSLatitude", js.undefined)
       
-      inline def setGPSLatitudeVarargs(value: Double*): Self = StObject.set(x, "GPSLatitude", js.Array(value :_*))
+      inline def setGPSLatitudeVarargs(value: Double*): Self = StObject.set(x, "GPSLatitude", js.Array(value*))
       
       inline def setGPSLongitude(value: js.Array[Double]): Self = StObject.set(x, "GPSLongitude", value.asInstanceOf[js.Any])
       
@@ -644,7 +662,7 @@ object anon {
       
       inline def setGPSLongitudeUndefined: Self = StObject.set(x, "GPSLongitude", js.undefined)
       
-      inline def setGPSLongitudeVarargs(value: Double*): Self = StObject.set(x, "GPSLongitude", js.Array(value :_*))
+      inline def setGPSLongitudeVarargs(value: Double*): Self = StObject.set(x, "GPSLongitude", js.Array(value*))
       
       inline def setGPSMapDatum(value: String): Self = StObject.set(x, "GPSMapDatum", value.asInstanceOf[js.Any])
       
@@ -678,7 +696,7 @@ object anon {
       
       inline def setGPSTimeStampUndefined: Self = StObject.set(x, "GPSTimeStamp", js.undefined)
       
-      inline def setGPSTimeStampVarargs(value: Double*): Self = StObject.set(x, "GPSTimeStamp", js.Array(value :_*))
+      inline def setGPSTimeStampVarargs(value: Double*): Self = StObject.set(x, "GPSTimeStamp", js.Array(value*))
       
       inline def setGPSTrack(value: Double): Self = StObject.set(x, "GPSTrack", value.asInstanceOf[js.Any])
       
@@ -692,7 +710,7 @@ object anon {
       
       inline def setGPSVersionIdUndefined: Self = StObject.set(x, "GPSVersionId", js.undefined)
       
-      inline def setGPSVersionIdVarargs(value: Double*): Self = StObject.set(x, "GPSVersionId", js.Array(value :_*))
+      inline def setGPSVersionIdVarargs(value: Double*): Self = StObject.set(x, "GPSVersionId", js.Array(value*))
     }
   }
   

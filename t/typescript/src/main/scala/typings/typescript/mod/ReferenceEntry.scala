@@ -9,22 +9,18 @@ trait ReferenceEntry
   extends StObject
      with DocumentSpan {
   
-  var isDefinition: Boolean
-  
   var isInString: js.UndefOr[`true`] = js.undefined
   
   var isWriteAccess: Boolean
 }
 object ReferenceEntry {
   
-  inline def apply(fileName: java.lang.String, isDefinition: Boolean, isWriteAccess: Boolean, textSpan: TextSpan): ReferenceEntry = {
-    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], isDefinition = isDefinition.asInstanceOf[js.Any], isWriteAccess = isWriteAccess.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
+  inline def apply(fileName: java.lang.String, isWriteAccess: Boolean, textSpan: TextSpan): ReferenceEntry = {
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], isWriteAccess = isWriteAccess.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceEntry]
   }
   
   extension [Self <: ReferenceEntry](x: Self) {
-    
-    inline def setIsDefinition(value: Boolean): Self = StObject.set(x, "isDefinition", value.asInstanceOf[js.Any])
     
     inline def setIsInString(value: `true`): Self = StObject.set(x, "isInString", value.asInstanceOf[js.Any])
     

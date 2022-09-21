@@ -14,7 +14,7 @@ trait IAnimationKey extends StObject {
   /**
     * The input tangent for the cubic hermite spline
     */
-  var inTangent: js.UndefOr[js.Any] = js.undefined
+  var inTangent: js.UndefOr[Any] = js.undefined
   
   /**
     * The animation interpolation type
@@ -22,18 +22,23 @@ trait IAnimationKey extends StObject {
   var interpolation: js.UndefOr[AnimationKeyInterpolation] = js.undefined
   
   /**
+    * Property defined by UI tools to link (or not ) the tangents
+    */
+  var lockedTangent: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The output tangent for the cubic hermite spline
     */
-  var outTangent: js.UndefOr[js.Any] = js.undefined
+  var outTangent: js.UndefOr[Any] = js.undefined
   
   /**
     * Value at the specifies key frame
     */
-  var value: js.Any
+  var value: Any
 }
 object IAnimationKey {
   
-  inline def apply(frame: Double, value: js.Any): IAnimationKey = {
+  inline def apply(frame: Double, value: Any): IAnimationKey = {
     val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnimationKey]
   }
@@ -42,7 +47,7 @@ object IAnimationKey {
     
     inline def setFrame(value: Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    inline def setInTangent(value: js.Any): Self = StObject.set(x, "inTangent", value.asInstanceOf[js.Any])
+    inline def setInTangent(value: Any): Self = StObject.set(x, "inTangent", value.asInstanceOf[js.Any])
     
     inline def setInTangentUndefined: Self = StObject.set(x, "inTangent", js.undefined)
     
@@ -50,10 +55,14 @@ object IAnimationKey {
     
     inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
-    inline def setOutTangent(value: js.Any): Self = StObject.set(x, "outTangent", value.asInstanceOf[js.Any])
+    inline def setLockedTangent(value: Boolean): Self = StObject.set(x, "lockedTangent", value.asInstanceOf[js.Any])
+    
+    inline def setLockedTangentUndefined: Self = StObject.set(x, "lockedTangent", js.undefined)
+    
+    inline def setOutTangent(value: Any): Self = StObject.set(x, "outTangent", value.asInstanceOf[js.Any])
     
     inline def setOutTangentUndefined: Self = StObject.set(x, "outTangent", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

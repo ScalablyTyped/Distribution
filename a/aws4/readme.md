@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws4
 
-Typings are for version 1.5.0
+Typings are for version 1.11
 
 ## Library description:
 Signs and prepares requests using AWS Signature Version 4
@@ -10,10 +10,10 @@ Signs and prepares requests using AWS Signature Version 4
 | ------------------ | :-------------: |
 | Full name          | aws4 |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 292 |
-| # downloads        | 853206695 |
-| # stars            | 11 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 8.576266166666667E7 |
+| # stars            | 620.0 |
 
 ## Links
 - [Homepage](https://github.com/mhart/aws4#readme)

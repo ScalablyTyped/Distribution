@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UpdateServicePrimaryTaskSetResponse extends StObject {
   
+  /**
+    * etails about the task set.
+    */
   var taskSet: js.UndefOr[TaskSet] = js.undefined
 }
 object UpdateServicePrimaryTaskSetResponse {

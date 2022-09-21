@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Start upload file request.
-  */
 trait SchemaStartUploadItemRequest extends StObject {
   
   /**
-    * Name of connector making this call. &lt;br /&gt;Format:
-    * datasources/{source_id}/connectors/{ID}
+    * The name of connector making this call. Format: datasources/{source_id\}/connectors/{ID\}
     */
-  var connectorName: js.UndefOr[String] = js.undefined
+  var connectorName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Common debug options.
@@ -30,6 +26,8 @@ object SchemaStartUploadItemRequest {
   extension [Self <: SchemaStartUploadItemRequest](x: Self) {
     
     inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorNameNull: Self = StObject.set(x, "connectorName", null)
     
     inline def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
     

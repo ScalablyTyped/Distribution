@@ -12,7 +12,7 @@ object renderEventMod {
   
   @JSImport("ol/render/Event", JSImport.Default)
   @js.native
-  class default protected () extends RenderEvent {
+  open class default protected () extends RenderEvent {
     def this(`type`: EventType) = this()
     def this(`type`: EventType, opt_inversePixelTransform: Transform) = this()
     def this(`type`: EventType, opt_inversePixelTransform: Unit, opt_frameState: FrameState) = this()
@@ -51,7 +51,7 @@ object renderEventMod {
       * Canvas context. Not available when the event is dispatched by the map. Only available
       * when a Canvas renderer is used, null otherwise.
       */
-    var context: CanvasRenderingContext2D = js.native
+    var context: CanvasRenderingContext2D | Null = js.native
     
     /**
       * An object representing the current render frame state.
@@ -60,7 +60,7 @@ object renderEventMod {
     
     /**
       * Transform from CSS pixels (relative to the top-left corner of the map viewport)
-      * to rendered pixels on this event's context.
+      * to rendered pixels on this event's context. Only available when a Canvas renderer is used, null otherwise.
       */
     var inversePixelTransform: Transform = js.native
   }

@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.std.ArrayLike
+import typings.std.Generator
 import typings.three.eulerMod.Euler
 import typings.three.matrix4Mod.Matrix4
 import typings.three.threeBooleans.`true`
@@ -14,12 +15,12 @@ object quaternionMod {
   @JSImport("three/src/math/Quaternion", "Quaternion")
   @js.native
   /**
-  	 * @param x x coordinate
-  	 * @param y y coordinate
-  	 * @param z z coordinate
-  	 * @param w w coordinate
-  	 */
-  class Quaternion () extends StObject {
+    * @param x x coordinate
+    * @param y y coordinate
+    * @param z z coordinate
+    * @param w w coordinate
+    */
+  open class Quaternion () extends StObject {
     def this(x: Double) = this()
     def this(x: Double, y: Double) = this()
     def this(x: Unit, y: Double) = this()
@@ -36,17 +37,17 @@ object quaternionMod {
     def this(x: Unit, y: Unit, z: Double, w: Double) = this()
     def this(x: Unit, y: Unit, z: Unit, w: Double) = this()
     
-    def _onChange(callback: js.Function): Quaternion = js.native
+    def _onChange(callback: js.Function0[Unit]): Quaternion = js.native
     
-    var _onChangeCallback: js.Function = js.native
+    def _onChangeCallback(): Unit = js.native
     
     def angleTo(q: Quaternion): Double = js.native
     
     def conjugate(): Quaternion = js.native
     
     /**
-    	 * Copies values of q to this quaternion.
-    	 */
+      * Copies values of q to this quaternion.
+      */
     def copy(q: Quaternion): this.type = js.native
     
     def dot(v: Quaternion): Double = js.native
@@ -54,124 +55,127 @@ object quaternionMod {
     def equals(v: Quaternion): Boolean = js.native
     
     /**
-    	 * Sets this quaternion's x, y, z and w value from the provided array.
-    	 * @param array the source array.
-    	 * @param offset (optional) offset into the array. Default is 0.
-    	 */
+      * Sets this quaternion's x, y, z and w value from the provided array or array-like.
+      * @param array the source array or array-like.
+      * @param offset (optional) offset into the array. Default is 0.
+      */
     def fromArray(array: js.Array[Double]): this.type = js.native
     def fromArray(array: js.Array[Double], offset: Double): this.type = js.native
-    /**
-    	 * Sets this quaternion's x, y, z and w value from the provided array-like.
-    	 * @param array the source array-like.
-    	 * @param offset (optional) offset into the array-like. Default is 0.
-    	 */
     def fromArray(array: ArrayLike[Double]): this.type = js.native
     def fromArray(array: ArrayLike[Double], offset: Double): this.type = js.native
     
     def identity(): Quaternion = js.native
     
     /**
-    	 * Inverts this quaternion.
-    	 */
-    def inverse(): Quaternion = js.native
+      * Inverts this quaternion.
+      */
+    def invert(): Quaternion = js.native
     
     val isQuaternion: `true` = js.native
     
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[Generator[Double, Unit, Any]] = js.native
+    
     /**
-    	 * Computes length of this quaternion.
-    	 */
+      * Computes length of this quaternion.
+      */
     def length(): Double = js.native
     
     def lengthSq(): Double = js.native
     
     /**
-    	 * Multiplies this quaternion by b.
-    	 */
+      * Multiplies this quaternion by b.
+      */
     def multiply(q: Quaternion): Quaternion = js.native
     
     /**
-    	 * Sets this quaternion to a x b
-    	 * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/code/index.htm.
-    	 */
+      * Sets this quaternion to a x b
+      * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/code/index.htm.
+      */
     def multiplyQuaternions(a: Quaternion, b: Quaternion): Quaternion = js.native
     
     /**
-    	 * @deprecated Use {@link Vector#applyQuaternion vector.applyQuaternion( quaternion )} instead.
-    	 */
-    def multiplyVector3(v: js.Any): js.Any = js.native
+      * @deprecated Use {@link Vector#applyQuaternion vector.applyQuaternion( quaternion )} instead.
+      */
+    def multiplyVector3(v: Any): Any = js.native
     
     /**
-    	 * Normalizes this quaternion.
-    	 */
+      * Normalizes this quaternion.
+      */
     def normalize(): Quaternion = js.native
     
     def premultiply(q: Quaternion): Quaternion = js.native
     
+    def random(): Quaternion = js.native
+    
     def rotateTowards(q: Quaternion, step: Double): Quaternion = js.native
     
     /**
-    	 * Sets values of this quaternion.
-    	 */
+      * Sets values of this quaternion.
+      */
     def set(x: Double, y: Double, z: Double, w: Double): Quaternion = js.native
     
     /**
-    	 * Sets this quaternion from rotation specified by axis and angle.
-    	 * Adapted from http://www.euclideanspace.com/maths/geometry/rotations/conversions/angleToQuaternion/index.htm.
-    	 * Axis have to be normalized, angle is in radians.
-    	 */
+      * Sets this quaternion from rotation specified by axis and angle.
+      * Adapted from http://www.euclideanspace.com/maths/geometry/rotations/conversions/angleToQuaternion/index.htm.
+      * Axis have to be normalized, angle is in radians.
+      */
     def setFromAxisAngle(axis: Vector3, angle: Double): Quaternion = js.native
     
     /**
-    	 * Sets this quaternion from rotation specified by Euler angles.
-    	 */
+      * Sets this quaternion from rotation specified by Euler angles.
+      */
     def setFromEuler(euler: Euler): Quaternion = js.native
+    def setFromEuler(euler: Euler, update: Boolean): Quaternion = js.native
     
     /**
-    	 * Sets this quaternion from rotation component of m. Adapted from http://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToQuaternion/index.htm.
-    	 */
+      * Sets this quaternion from rotation component of m. Adapted from http://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToQuaternion/index.htm.
+      */
     def setFromRotationMatrix(m: Matrix4): Quaternion = js.native
     
     def setFromUnitVectors(vFrom: Vector3, vTo: Vector3): Quaternion = js.native
     
     def slerp(qb: Quaternion, t: Double): Quaternion = js.native
     
+    def slerpQuaternions(qa: Quaternion, qb: Quaternion, t: Double): Quaternion = js.native
+    
     /**
-    	 * Returns an array [x, y, z, w], or copies x, y, z and w into the provided array.
-    	 * @param array (optional) array to store the quaternion to. If this is not provided, a new array will be created.
-    	 * @param offset (optional) optional offset into the array.
-    	 * @return The created or provided array.
-    	 */
+      * Returns an array [x, y, z, w], or copies x, y, z and w into the provided array.
+      * @param array (optional) array to store the quaternion to. If this is not provided, a new array will be created.
+      * @param offset (optional) optional offset into the array.
+      * @return The created or provided array.
+      */
     def toArray(): js.Array[Double] = js.native
     def toArray(array: js.Array[Double]): js.Array[Double] = js.native
     def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
     def toArray(array: Unit, offset: Double): js.Array[Double] = js.native
     /**
-    	 * Copies x, y, z and w into the provided array-like.
-    	 * @param array array-like to store the quaternion to.
-    	 * @param offset (optional) optional offset into the array.
-    	 * @return The provided array-like.
-    	 */
+      * Copies x, y, z and w into the provided array-like.
+      * @param array array-like to store the quaternion to.
+      * @param offset (optional) optional offset into the array.
+      * @return The provided array-like.
+      */
     def toArray(array: ArrayLike[Double]): ArrayLike[Double] = js.native
     def toArray(array: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var w: Double = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var x: Double = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var y: Double = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var z: Double = js.native
   }
   /* static members */
@@ -191,9 +195,9 @@ object quaternionMod {
     ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyQuaternionsFlat")(dst.asInstanceOf[js.Any], dstOffset.asInstanceOf[js.Any], src0.asInstanceOf[js.Any], srcOffset.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], stcOffset1.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
-    	 * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
-    	 */
-    inline def slerp(qa: Quaternion, qb: Quaternion, qm: Quaternion, t: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("slerp")(qa.asInstanceOf[js.Any], qb.asInstanceOf[js.Any], qm.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+      * @deprecated Use qm.slerpQuaternions( qa, qb, t ) instead..
+      */
+    inline def slerp(qa: Quaternion, qb: Quaternion, qm: Quaternion, t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("slerp")(qa.asInstanceOf[js.Any], qb.asInstanceOf[js.Any], qm.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def slerpFlat(
       dst: js.Array[Double],

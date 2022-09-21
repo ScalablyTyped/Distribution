@@ -1,7 +1,7 @@
 
 # Scala.js typings for csvtojson
 
-Typings are for version 1.1
+Typings are for version 2.0.10
 
 ## Library description:
 A tool concentrating on converting csv data to JSON with customised parser supporting
@@ -10,10 +10,10 @@ A tool concentrating on converting csv data to JSON with customised parser suppo
 | ------------------ | :-------------: |
 | Full name          | csvtojson |
 | Keywords           | csv, csv parser, parse csv, csvtojson, json, csv to json, csv convert, tojson, convert csv to json, csv-json |
-| # releases         | 3 |
-| # dependents       | 448 |
-| # downloads        | 13814855 |
-| # stars            | 62 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2388200.6666666665 |
+| # stars            | 1818.0 |
 
 ## Links
 - [Homepage](https://github.com/Keyang/node-csvtojson)
@@ -24,7 +24,7 @@ A tool concentrating on converting csv data to JSON with customised parser suppo
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

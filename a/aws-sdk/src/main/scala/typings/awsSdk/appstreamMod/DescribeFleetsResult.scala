@@ -29,7 +29,7 @@ object DescribeFleetsResult {
     
     inline def setFleetsUndefined: Self = StObject.set(x, "Fleets", js.undefined)
     
-    inline def setFleetsVarargs(value: Fleet*): Self = StObject.set(x, "Fleets", js.Array(value :_*))
+    inline def setFleetsVarargs(value: Fleet*): Self = StObject.set(x, "Fleets", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ JSON.minify() minifies blocks of JSON-like content into valid JSON by removing a
 | ------------------ | :-------------: |
 | Full name          | jsonminify |
 | Keywords           | node, json, JSON-like, comment |
-| # releases         | 0 |
-| # dependents       | 67 |
-| # downloads        | 2010434 |
-| # stars            | 6 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 656881.0 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/fkei/JSON.minify)

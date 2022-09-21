@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "email-regex" : "4.0.0"
+      "email-regex" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "email-regex" : "4.0.0"
+      "email-regex" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

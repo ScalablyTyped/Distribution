@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("lime-js", "Channel")
 @js.native
-class Channel protected () extends StObject {
+open class Channel protected () extends StObject {
   def this(transport: Transport, autoReplyPings: Boolean, autoNotifyReceipt: Boolean) = this()
   
   var localNode: String = js.native

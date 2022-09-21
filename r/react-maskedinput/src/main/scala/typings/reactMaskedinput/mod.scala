@@ -11,8 +11,8 @@ object mod {
   
   @JSImport("react-maskedinput", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[MaskedInputProps, js.Object, js.Any]
+  open class default ()
+    extends Component[MaskedInputProps, js.Object, Any]
   
   type CharsFormatters = StringDictionary[FormatCharacter]
   
@@ -39,11 +39,11 @@ object mod {
     }
   }
   
-  type MaskedInput = Component[MaskedInputProps, js.Object, js.Any]
+  type MaskedInput = Component[MaskedInputProps, js.Object, Any]
   
   trait MaskedInputProps
     extends StObject
-       with InputHTMLAttributes[js.Any] {
+       with InputHTMLAttributes[Any] {
     
     var formatCharacters: js.UndefOr[CharsFormatters] = js.undefined
     

@@ -38,21 +38,63 @@ trait QueryProvider
   
   def parseSyntax(ownerUri: String, query: String): Thenable[SyntaxParseResult] = js.native
   
-  def registerOnBatchComplete(handler: js.Function1[/* batchInfo */ QueryExecuteBatchNotificationParams, js.Any]): Unit = js.native
+  /**
+    * Registers a handler for BatchComplete events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  def registerOnBatchComplete(handler: js.Function1[/* batchInfo */ QueryExecuteBatchNotificationParams, Any]): Unit = js.native
   
-  def registerOnBatchStart(handler: js.Function1[/* batchInfo */ QueryExecuteBatchNotificationParams, js.Any]): Unit = js.native
+  /**
+    * Registers a handler for BatchStart events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  def registerOnBatchStart(handler: js.Function1[/* batchInfo */ QueryExecuteBatchNotificationParams, Any]): Unit = js.native
   
   // Edit Data Notifications
-  def registerOnEditSessionReady(handler: js.Function3[/* ownerUri */ String, /* success */ Boolean, /* message */ String, js.Any]): Unit = js.native
+  /**
+    * Registers a handler for EditSessionReady events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  def registerOnEditSessionReady(handler: js.Function3[/* ownerUri */ String, /* success */ Boolean, /* message */ String, Any]): Unit = js.native
   
-  def registerOnMessage(handler: js.Function1[/* message */ QueryExecuteMessageParams, js.Any]): Unit = js.native
+  /**
+    * Registers a handler for Message events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  def registerOnMessage(handler: js.Function1[/* message */ QueryExecuteMessageParams, Any]): Unit = js.native
   
   // Notifications
-  def registerOnQueryComplete(handler: js.Function1[/* result */ QueryExecuteCompleteNotificationResult, js.Any]): Unit = js.native
+  /**
+    * Registers a handler for QueryComplete events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  def registerOnQueryComplete(handler: js.Function1[/* result */ QueryExecuteCompleteNotificationResult, Any]): Unit = js.native
   
-  def registerOnResultSetAvailable(handler: js.Function1[/* resultSetInfo */ QueryExecuteResultSetNotificationParams, js.Any]): Unit = js.native
+  /**
+    * Registers a handler for ResultSetAvailable events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  def registerOnResultSetAvailable(handler: js.Function1[/* resultSetInfo */ QueryExecuteResultSetNotificationParams, Any]): Unit = js.native
   
-  def registerOnResultSetUpdated(handler: js.Function1[/* resultSetInfo */ QueryExecuteResultSetNotificationParams, js.Any]): Unit = js.native
+  /**
+    * Registers a handler for ResultSetUpdated events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  def registerOnResultSetUpdated(handler: js.Function1[/* resultSetInfo */ QueryExecuteResultSetNotificationParams, Any]): Unit = js.native
   
   def revertCell(ownerUri: String, rowId: Double, columnId: Double): Thenable[EditRevertCellResult] = js.native
   

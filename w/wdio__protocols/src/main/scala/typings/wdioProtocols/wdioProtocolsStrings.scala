@@ -1,8 +1,9 @@
 package typings.wdioProtocols
 
-import typings.wdioProtocols.WDIOProtocols.CommandMethod
-import typings.wdioProtocols.WDIOProtocols.Environments
-import typings.wdioProtocols.WDIOProtocols.Platform
+import typings.wdioProtocols.typesMod.CommandMethod
+import typings.wdioProtocols.typesMod.Environments
+import typings.wdioProtocols.typesMod.Platform
+import typings.wdioProtocols.typesMod.SameSiteOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,10 +23,28 @@ object wdioProtocolsStrings {
   inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
+  sealed trait Lax
+    extends StObject
+       with SameSiteOptions
+  inline def Lax: Lax = "Lax".asInstanceOf[Lax]
+  
+  @js.native
+  sealed trait None
+    extends StObject
+       with SameSiteOptions
+  inline def None: None = "None".asInstanceOf[None]
+  
+  @js.native
   sealed trait POST
     extends StObject
        with CommandMethod
   inline def POST: POST = "POST".asInstanceOf[POST]
+  
+  @js.native
+  sealed trait Strict
+    extends StObject
+       with SameSiteOptions
+  inline def Strict: Strict = "Strict".asInstanceOf[Strict]
   
   @js.native
   sealed trait UIAutomation
@@ -52,6 +71,10 @@ object wdioProtocolsStrings {
   inline def android: android = "android".asInstanceOf[android]
   
   @js.native
+  sealed trait `element-6066-11e4-a52e-4f735466cecf` extends StObject
+  inline def `element-6066-11e4-a52e-4f735466cecf`: `element-6066-11e4-a52e-4f735466cecf` = "element-6066-11e4-a52e-4f735466cecf".asInstanceOf[`element-6066-11e4-a52e-4f735466cecf`]
+  
+  @js.native
   sealed trait ios
     extends StObject
        with Platform
@@ -60,4 +83,12 @@ object wdioProtocolsStrings {
   @js.native
   sealed trait string extends StObject
   inline def string: string = "string".asInstanceOf[string]
+  
+  @js.native
+  sealed trait tab extends StObject
+  inline def tab: tab = "tab".asInstanceOf[tab]
+  
+  @js.native
+  sealed trait window extends StObject
+  inline def window: window = "window".asInstanceOf[window]
 }

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object webGLShaderMod {
   
-  @JSImport("three/src/renderers/webgl/WebGLShader", "WebGLShader")
+  @JSImport("three/src/renderers/webgl/WebGLShader", JSImport.Namespace)
   @js.native
-  class WebGLShader protected () extends StObject {
-    def this(gl: WebGLRenderingContext, `type`: String, string: String) = this()
-  }
+  val ^ : js.Any = js.native
+  
+  inline def WebGLShader(gl: WebGLRenderingContext, `type`: String, string: String): typings.std.WebGLShader = (^.asInstanceOf[js.Dynamic].applyDynamic("WebGLShader")(gl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[typings.std.WebGLShader]
 }

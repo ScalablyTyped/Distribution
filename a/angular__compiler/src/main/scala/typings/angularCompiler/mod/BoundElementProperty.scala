@@ -1,87 +1,100 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.astMod.BindingType
-import typings.angularCompiler.coreMod.SecurityContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "BoundElementProperty")
 @js.native
-class BoundElementProperty protected ()
-  extends typings.angularCompiler.compilerMod.BoundElementProperty {
+open class BoundElementProperty protected () extends StObject {
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.ASTWithSource,
+    value: ASTWithSource,
     unit: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.ASTWithSource,
+    value: ASTWithSource,
     unit: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.ASTWithSource,
+    value: ASTWithSource,
     unit: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.ASTWithSource,
+    value: ASTWithSource,
     unit: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.ASTWithSource,
+    value: ASTWithSource,
     unit: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    sourceSpan: ParseSourceSpan,
     keySpan: Unit,
-    valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    valueSpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.ASTWithSource,
+    value: ASTWithSource,
     unit: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan,
+    valueSpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.ASTWithSource,
+    value: ASTWithSource,
     unit: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    sourceSpan: ParseSourceSpan,
     keySpan: Unit,
-    valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    valueSpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
     `type`: BindingType,
     securityContext: SecurityContext,
-    value: typings.angularCompiler.astMod.ASTWithSource,
+    value: ASTWithSource,
     unit: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan,
+    valueSpan: ParseSourceSpan
   ) = this()
+  
+  val keySpan: js.UndefOr[ParseSourceSpan] = js.native
+  
+  var name: String = js.native
+  
+  var securityContext: SecurityContext = js.native
+  
+  var sourceSpan: ParseSourceSpan = js.native
+  
+  var `type`: BindingType = js.native
+  
+  var unit: String | Null = js.native
+  
+  var value: ASTWithSource = js.native
+  
+  var valueSpan: js.UndefOr[ParseSourceSpan] = js.native
 }

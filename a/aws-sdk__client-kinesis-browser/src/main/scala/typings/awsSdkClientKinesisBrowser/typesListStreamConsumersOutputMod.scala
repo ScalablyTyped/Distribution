@@ -44,7 +44,7 @@ object typesListStreamConsumersOutputMod {
       
       inline def setConsumersUndefined: Self = StObject.set(x, "Consumers", js.undefined)
       
-      inline def setConsumersVarargs(value: UnmarshalledConsumer*): Self = StObject.set(x, "Consumers", js.Array(value :_*))
+      inline def setConsumersVarargs(value: UnmarshalledConsumer*): Self = StObject.set(x, "Consumers", js.Array(value*))
       
       inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       

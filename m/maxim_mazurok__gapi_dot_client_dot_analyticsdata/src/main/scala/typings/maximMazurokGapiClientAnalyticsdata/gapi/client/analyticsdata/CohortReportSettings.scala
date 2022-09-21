@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CohortReportSettings extends StObject {
   
-  /** If true, accumulates the result from first visit day to the end day. Not supported in `RunReportRequest`. */
+  /** If true, accumulates the result from first touch day to the end day. Not supported in `RunReportRequest`. */
   var accumulate: js.UndefOr[Boolean] = js.undefined
 }
 object CohortReportSettings {

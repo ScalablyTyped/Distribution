@@ -1,6 +1,5 @@
 package typings.awsSdkClientXrayNode
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +36,7 @@ object typesSamplingStatisticsDocumentMod {
     /**
       * <p>The current time.</p>
       */
-    var Timestamp: Date | String | Double
+    var Timestamp: js.Date | String | Double
   }
   object SamplingStatisticsDocument {
     
@@ -46,7 +45,7 @@ object typesSamplingStatisticsDocumentMod {
       RequestCount: Double,
       RuleName: String,
       SampledCount: Double,
-      Timestamp: Date | String | Double
+      Timestamp: js.Date | String | Double
     ): SamplingStatisticsDocument = {
       val __obj = js.Dynamic.literal(ClientID = ClientID.asInstanceOf[js.Any], RequestCount = RequestCount.asInstanceOf[js.Any], RuleName = RuleName.asInstanceOf[js.Any], SampledCount = SampledCount.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[SamplingStatisticsDocument]
@@ -66,7 +65,7 @@ object typesSamplingStatisticsDocumentMod {
       
       inline def setSampledCount(value: Double): Self = StObject.set(x, "SampledCount", value.asInstanceOf[js.Any])
       
-      inline def setTimestamp(value: Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,18 +77,18 @@ object typesSamplingStatisticsDocumentMod {
       * <p>The current time.</p>
       */
     @JSName("Timestamp")
-    var Timestamp_UnmarshalledSamplingStatisticsDocument: Date
+    var Timestamp_UnmarshalledSamplingStatisticsDocument: js.Date
   }
   object UnmarshalledSamplingStatisticsDocument {
     
-    inline def apply(ClientID: String, RequestCount: Double, RuleName: String, SampledCount: Double, Timestamp: Date): UnmarshalledSamplingStatisticsDocument = {
+    inline def apply(ClientID: String, RequestCount: Double, RuleName: String, SampledCount: Double, Timestamp: js.Date): UnmarshalledSamplingStatisticsDocument = {
       val __obj = js.Dynamic.literal(ClientID = ClientID.asInstanceOf[js.Any], RequestCount = RequestCount.asInstanceOf[js.Any], RuleName = RuleName.asInstanceOf[js.Any], SampledCount = SampledCount.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledSamplingStatisticsDocument]
     }
     
     extension [Self <: UnmarshalledSamplingStatisticsDocument](x: Self) {
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     }
   }
 }

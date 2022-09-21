@@ -1,0 +1,20 @@
+package typings.wixUiIconsCommon
+
+import org.scalablytyped.runtime.Shortcut
+import typings.react.mod.FC
+import typings.wixUiIconsCommon.adminFillMod.AdminFillProps
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object onStageAdminFillMod extends Shortcut {
+  
+  @JSImport("wix-ui-icons-common/on-stage/AdminFill", JSImport.Default)
+  @js.native
+  val default: FC[AdminFillProps] = js.native
+  
+  type _To = FC[AdminFillProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `onStageAdminFillMod.foo` */
+  override def _to: FC[AdminFillProps] = default
+}

@@ -39,7 +39,7 @@ object SdkType {
     
     inline def setConfigurationPropertiesUndefined: Self = StObject.set(x, "configurationProperties", js.undefined)
     
-    inline def setConfigurationPropertiesVarargs(value: SdkConfigurationProperty*): Self = StObject.set(x, "configurationProperties", js.Array(value :_*))
+    inline def setConfigurationPropertiesVarargs(value: SdkConfigurationProperty*): Self = StObject.set(x, "configurationProperties", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

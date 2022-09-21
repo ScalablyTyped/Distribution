@@ -7,9 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ErrorMetric extends StObject {
   
   /**
-    *  Forecast types can be quantiles from 0.01 to 0.99 (by increments of 0.01), and the mean. 
+    *  The Forecast type used to compute WAPE, MAPE, MASE, and RMSE. 
     */
   var ForecastType: js.UndefOr[typings.awsSdk.forecastserviceMod.ForecastType] = js.undefined
+  
+  /**
+    * The Mean Absolute Percentage Error (MAPE)
+    */
+  var MAPE: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The Mean Absolute Scaled Error (MASE)
+    */
+  var MASE: js.UndefOr[Double] = js.undefined
   
   /**
     *  The root-mean-square error (RMSE). 
@@ -33,6 +43,14 @@ object ErrorMetric {
     inline def setForecastType(value: ForecastType): Self = StObject.set(x, "ForecastType", value.asInstanceOf[js.Any])
     
     inline def setForecastTypeUndefined: Self = StObject.set(x, "ForecastType", js.undefined)
+    
+    inline def setMAPE(value: Double): Self = StObject.set(x, "MAPE", value.asInstanceOf[js.Any])
+    
+    inline def setMAPEUndefined: Self = StObject.set(x, "MAPE", js.undefined)
+    
+    inline def setMASE(value: Double): Self = StObject.set(x, "MASE", value.asInstanceOf[js.Any])
+    
+    inline def setMASEUndefined: Self = StObject.set(x, "MASE", js.undefined)
     
     inline def setRMSE(value: Double): Self = StObject.set(x, "RMSE", value.asInstanceOf[js.Any])
     

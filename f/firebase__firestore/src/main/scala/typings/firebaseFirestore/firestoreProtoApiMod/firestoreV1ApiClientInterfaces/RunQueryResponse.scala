@@ -1,30 +1,42 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RunQueryResponse extends js.Object {
+trait RunQueryResponse extends StObject {
+  
   var document: js.UndefOr[Document] = js.undefined
+  
   var readTime: js.UndefOr[String] = js.undefined
+  
   var skippedResults: js.UndefOr[Double] = js.undefined
+  
   var transaction: js.UndefOr[String] = js.undefined
 }
-
 object RunQueryResponse {
-  @scala.inline
-  def apply(
-    document: Document = null,
-    readTime: String = null,
-    skippedResults: js.UndefOr[Double] = js.undefined,
-    transaction: String = null
-  ): RunQueryResponse = {
+  
+  inline def apply(): RunQueryResponse = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(skippedResults)) __obj.updateDynamic("skippedResults")(skippedResults.get.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunQueryResponse]
   }
+  
+  extension [Self <: RunQueryResponse](x: Self) {
+    
+    inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    
+    inline def setSkippedResults(value: Double): Self = StObject.set(x, "skippedResults", value.asInstanceOf[js.Any])
+    
+    inline def setSkippedResultsUndefined: Self = StObject.set(x, "skippedResults", js.undefined)
+    
+    inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+  }
 }
-

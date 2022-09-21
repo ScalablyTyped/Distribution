@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkCheckBox")
 @js.native
-/* private */ class OlkCheckBox ()
+/* private */ open class OlkCheckBox ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkCheckBox {
   
@@ -54,7 +54,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var TripleState: Boolean = js.native
   
   /* CompleteClass */
-  var Value: js.Any = js.native
+  var Value: Any = js.native
   
   /* CompleteClass */
   var WordWrap: Boolean = js.native

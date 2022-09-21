@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CalculateOrderRequest")
 @js.native
-class CalculateOrderRequest () extends StObject {
+open class CalculateOrderRequest () extends StObject {
   
   /**
     * The order to be calculated. Expects the entire order, not a sparse update.

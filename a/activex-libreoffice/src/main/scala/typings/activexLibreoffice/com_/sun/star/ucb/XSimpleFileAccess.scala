@@ -41,7 +41,7 @@ trait XSimpleFileAccess
   /**
     * Returns the content type of a file.
     * @param FileURL URL of the file
-    * @returns {@link Content} type of the file
+    * @returns The {@link Content} type of the file
     * @see XContent.getContentType
     */
   def getContentType(FileURL: String): String
@@ -155,7 +155,7 @@ object XSimpleFileAccess {
     openFileRead: String => XInputStream,
     openFileReadWrite: String => XStream,
     openFileWrite: String => XOutputStream,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setInteractionHandler: XInteractionHandler => Unit,
     setReadOnly: (String, Boolean) => Unit

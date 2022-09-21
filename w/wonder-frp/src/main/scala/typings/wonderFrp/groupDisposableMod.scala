@@ -10,14 +10,14 @@ object groupDisposableMod {
   
   @JSImport("wonder-frp/dist/commonjs/Disposable/GroupDisposable", "GroupDisposable")
   @js.native
-  class GroupDisposable ()
+  open class GroupDisposable ()
     extends Entity
        with IDisposable {
     def this(disposable: IDisposable) = this()
     
-    /* private */ var _group: js.Any = js.native
+    /* private */ var _group: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
     def add(disposable: IDisposable): this.type = js.native
     

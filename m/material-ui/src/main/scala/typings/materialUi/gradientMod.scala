@@ -10,10 +10,10 @@ object gradientMod {
   
   @JSImport("material-ui/svg-icons/image/gradient", JSImport.Default)
   @js.native
-  class default () extends ImageGradient
+  open class default () extends ImageGradient
   
   @JSImport("material-ui/svg-icons/image/gradient", "ImageGradient")
   @js.native
-  class ImageGradient ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageGradient ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

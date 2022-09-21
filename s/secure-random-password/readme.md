@@ -10,10 +10,10 @@ Generate passwords using a cryptographically-strong source of randomness
 | ------------------ | :-------------: |
 | Full name          | secure-random-password |
 | Keywords           | secure, random, password, generator |
-| # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 101624 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 58486.0 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/mkropat/secure-random-password#readme)

@@ -10,15 +10,12 @@ Tools to assist with setting up session management in your Keystone system.
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/session |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 10 |
-| # downloads        | 935844 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 15692.0 |
+| # stars            | 61.0 |
 
 ## Links
-- [Homepage](https://github.com/keystonejs/keystone-5#readme)
-- [Bugs](https://github.com/keystonejs/keystone-5/issues)
-- [Repository](https://github.com/keystonejs/keystone-5)
 - [Npm](https://www.npmjs.com/package/%40keystonejs%2Fsession)
     
 

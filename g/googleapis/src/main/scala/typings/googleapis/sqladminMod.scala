@@ -2,14 +2,20 @@ package typings.googleapis
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
+import typings.googleAuthLibrary.authclientMod.AuthClient
+import typings.googleAuthLibrary.awsclientMod.AwsClientOptions
+import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
+import typings.googleAuthLibrary.googleauthMod.JSONClient
+import typings.googleAuthLibrary.identitypoolclientMod.IdentityPoolClientOptions
 import typings.googleAuthLibrary.jwtclientMod.JWTOptions
 import typings.googleAuthLibrary.mod.OAuth2Client
+import typings.googleapis.googleapisStrings.v1
 import typings.googleapis.googleapisStrings.v1beta4
-import typings.googleapis.v1beta4Mod.sqladminV1beta4.Options
-import typings.googleapis.v1beta4Mod.sqladminV1beta4.Sqladmin
+import typings.googleapis.sqladminV1Mod.sqladminV1.Options
+import typings.googleapis.sqladminV1Mod.sqladminV1.Sqladmin
+import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
-import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +26,13 @@ object sqladminMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("googleapis/build/src/apis/sqladmin", "AuthPlus")
+  @js.native
+  open class AuthPlus ()
+    extends typings.googleapisCommon.mod.AuthPlus {
+    def this(opts: GoogleAuthOptions[JSONClient]) = this()
+  }
+  
   object VERSIONS {
     
     @JSImport("googleapis/build/src/apis/sqladmin", "VERSIONS")
@@ -27,17 +40,40 @@ object sqladminMod {
     val ^ : js.Any = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/sqladmin", "VERSIONS.v1")
+    @js.native
+    open class v1 protected () extends Sqladmin {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    @JSImport("googleapis/build/src/apis/sqladmin", "VERSIONS.v1")
+    @js.native
+    def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Sqladmin] = js.native
+    inline def v1_=(
+      x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Sqladmin]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/sqladmin", "VERSIONS.v1beta4")
     @js.native
-    class v1beta4 protected () extends Sqladmin {
+    open class v1beta4 protected ()
+      extends typings.googleapis.v1beta4Mod.sqladminV1beta4.Sqladmin {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
     @JSImport("googleapis/build/src/apis/sqladmin", "VERSIONS.v1beta4")
     @js.native
-    def v1beta4: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Sqladmin] = js.native
+    def v1beta4: Instantiable2[
+        /* options */ GlobalOptions, 
+        /* google */ js.UndefOr[GoogleConfigurable], 
+        typings.googleapis.v1beta4Mod.sqladminV1beta4.Sqladmin
+      ] = js.native
     inline def v1beta4_=(
-      x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Sqladmin]
+      x: Instantiable2[
+          /* options */ GlobalOptions, 
+          /* google */ js.UndefOr[GoogleConfigurable], 
+          typings.googleapis.v1beta4Mod.sqladminV1beta4.Sqladmin
+        ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1beta4")(x.asInstanceOf[js.Any])
   }
   
@@ -45,7 +81,25 @@ object sqladminMod {
     
     @JSImport("googleapis/build/src/apis/sqladmin", "auth")
     @js.native
-    val ^ : AuthPlus = js.native
+    val ^ : typings.googleapisCommon.mod.AuthPlus = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/sqladmin", "auth.AwsClient")
+    @js.native
+    open class AwsClient protected ()
+      extends typings.googleAuthLibrary.mod.AwsClient {
+      /**
+        * Instantiates an AwsClient instance using the provided JSON
+        * object loaded from an external account credentials file.
+        * An error is thrown if the credential is not a valid AWS credential.
+        * @param options The external account options object typically loaded
+        *   from the external account JSON credential file.
+        * @param additionalOptions Optional additional behavior customization
+        *   options. These currently customize expiration threshold time and
+        *   whether to retry on 401/403 API request errors.
+        */
+      def this(options: AwsClientOptions) = this()
+    }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/sqladmin", "auth.Compute")
@@ -56,7 +110,7 @@ object sqladminMod {
       * Retrieve access token from the metadata server.
       * See: https://developers.google.com/compute/docs/authentication
       */
-    class Compute ()
+    open class Compute ()
       extends typings.googleAuthLibrary.mod.Compute
     
     /**
@@ -65,7 +119,7 @@ object sqladminMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/sqladmin", "auth.DefaultTransporter")
     @js.native
-    class DefaultTransporter ()
+    open class DefaultTransporter ()
       extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
     /* static members */
     object DefaultTransporter {
@@ -74,13 +128,45 @@ object sqladminMod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[Any]
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/sqladmin", "auth.ExternalAccountClient")
+    @js.native
+    open class ExternalAccountClient ()
+      extends typings.googleAuthLibrary.mod.ExternalAccountClient
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/sqladmin", "auth.GoogleAuth")
+    @js.native
+    open class GoogleAuth[T /* <: AuthClient */] ()
+      extends typings.googleAuthLibrary.mod.GoogleAuth[T]
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/sqladmin", "auth.IdentityPoolClient")
+    @js.native
+    open class IdentityPoolClient protected ()
+      extends typings.googleAuthLibrary.mod.IdentityPoolClient {
+      /**
+        * Instantiate an IdentityPoolClient instance using the provided JSON
+        * object loaded from an external account credentials file.
+        * An error is thrown if the credential is not a valid file-sourced or
+        * url-sourced credential or a workforce pool user project is provided
+        * with a non workforce audience.
+        * @param options The external account options object typically loaded
+        *   from the external account JSON credential file.
+        * @param additionalOptions Optional additional behavior customization
+        *   options. These currently customize expiration threshold time and
+        *   whether to retry on 401/403 API request errors.
+        */
+      def this(options: IdentityPoolClientOptions) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/sqladmin", "auth.JWT")
     @js.native
-    class JWT protected ()
+    open class JWT protected ()
       extends typings.googleAuthLibrary.mod.JWT {
       /**
         * JWT service account credentials.
@@ -110,15 +196,194 @@ object sqladminMod {
       * @param opts optional options for overriding the given parameters.
       * @constructor
       */
-    class OAuth2 () extends OAuth2Client
+    open class OAuth2 () extends OAuth2Client
     
-    type _To = AuthPlus
+    type _To = typings.googleapisCommon.mod.AuthPlus
     
     /* This means you don't have to write `^`, but can instead just say `auth.foo` */
-    override def _to: AuthPlus = ^
+    override def _to: typings.googleapisCommon.mod.AuthPlus = ^
   }
   
   inline def sqladmin(options: Options): Sqladmin = ^.asInstanceOf[js.Dynamic].applyDynamic("sqladmin")(options.asInstanceOf[js.Any]).asInstanceOf[Sqladmin]
+  inline def sqladmin(options: typings.googleapis.v1beta4Mod.sqladminV1beta4.Options): typings.googleapis.v1beta4Mod.sqladminV1beta4.Sqladmin = ^.asInstanceOf[js.Dynamic].applyDynamic("sqladmin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1beta4Mod.sqladminV1beta4.Sqladmin]
   
-  inline def sqladmin_v1beta4(version: v1beta4): Sqladmin = ^.asInstanceOf[js.Dynamic].applyDynamic("sqladmin")(version.asInstanceOf[js.Any]).asInstanceOf[Sqladmin]
+  object sqladminV1 {
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1.Resource$Backupruns")
+    @js.native
+    open class ResourceBackupruns protected ()
+      extends typings.googleapis.sqladminV1Mod.sqladminV1.ResourceBackupruns {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1.Resource$Connect")
+    @js.native
+    open class ResourceConnect protected ()
+      extends typings.googleapis.sqladminV1Mod.sqladminV1.ResourceConnect {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1.Resource$Databases")
+    @js.native
+    open class ResourceDatabases protected ()
+      extends typings.googleapis.sqladminV1Mod.sqladminV1.ResourceDatabases {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1.Resource$Flags")
+    @js.native
+    open class ResourceFlags protected ()
+      extends typings.googleapis.sqladminV1Mod.sqladminV1.ResourceFlags {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1.Resource$Instances")
+    @js.native
+    open class ResourceInstances protected ()
+      extends typings.googleapis.sqladminV1Mod.sqladminV1.ResourceInstances {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1.Resource$Operations")
+    @js.native
+    open class ResourceOperations protected ()
+      extends typings.googleapis.sqladminV1Mod.sqladminV1.ResourceOperations {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1.Resource$Projects")
+    @js.native
+    open class ResourceProjects protected ()
+      extends typings.googleapis.sqladminV1Mod.sqladminV1.ResourceProjects {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1.Resource$Projects$Instances")
+    @js.native
+    open class ResourceProjectsInstances protected ()
+      extends typings.googleapis.sqladminV1Mod.sqladminV1.ResourceProjectsInstances {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1.Resource$Sslcerts")
+    @js.native
+    open class ResourceSslcerts protected ()
+      extends typings.googleapis.sqladminV1Mod.sqladminV1.ResourceSslcerts {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1.Resource$Tiers")
+    @js.native
+    open class ResourceTiers protected ()
+      extends typings.googleapis.sqladminV1Mod.sqladminV1.ResourceTiers {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1.Resource$Users")
+    @js.native
+    open class ResourceUsers protected ()
+      extends typings.googleapis.sqladminV1Mod.sqladminV1.ResourceUsers {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1.Sqladmin")
+    @js.native
+    open class Sqladmin protected ()
+      extends typings.googleapis.sqladminV1Mod.sqladminV1.Sqladmin {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+  }
+  
+  object sqladminV1beta4 {
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1beta4.Resource$Backupruns")
+    @js.native
+    open class ResourceBackupruns protected ()
+      extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceBackupruns {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1beta4.Resource$Connect")
+    @js.native
+    open class ResourceConnect protected ()
+      extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceConnect {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1beta4.Resource$Databases")
+    @js.native
+    open class ResourceDatabases protected ()
+      extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceDatabases {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1beta4.Resource$Flags")
+    @js.native
+    open class ResourceFlags protected ()
+      extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceFlags {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1beta4.Resource$Instances")
+    @js.native
+    open class ResourceInstances protected ()
+      extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceInstances {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1beta4.Resource$Operations")
+    @js.native
+    open class ResourceOperations protected ()
+      extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceOperations {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1beta4.Resource$Projects")
+    @js.native
+    open class ResourceProjects protected ()
+      extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceProjects {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1beta4.Resource$Projects$Instances")
+    @js.native
+    open class ResourceProjectsInstances protected ()
+      extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceProjectsInstances {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1beta4.Resource$Sslcerts")
+    @js.native
+    open class ResourceSslcerts protected ()
+      extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceSslcerts {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1beta4.Resource$Tiers")
+    @js.native
+    open class ResourceTiers protected ()
+      extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceTiers {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1beta4.Resource$Users")
+    @js.native
+    open class ResourceUsers protected ()
+      extends typings.googleapis.v1beta4Mod.sqladminV1beta4.ResourceUsers {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin_v1beta4.Sqladmin")
+    @js.native
+    open class Sqladmin protected ()
+      extends typings.googleapis.v1beta4Mod.sqladminV1beta4.Sqladmin {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+  }
+  
+  inline def sqladmin_v1(version: v1): Sqladmin = ^.asInstanceOf[js.Dynamic].applyDynamic("sqladmin")(version.asInstanceOf[js.Any]).asInstanceOf[Sqladmin]
+  
+  inline def sqladmin_v1beta4(version: v1beta4): typings.googleapis.v1beta4Mod.sqladminV1beta4.Sqladmin = ^.asInstanceOf[js.Dynamic].applyDynamic("sqladmin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1beta4Mod.sqladminV1beta4.Sqladmin]
 }

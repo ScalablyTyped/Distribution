@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.SpeechRecognition
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +25,7 @@ trait SpeechRecognitionResult extends StObject {
   var phraseDuration: Double
   
   /** Gets the start time of the utterance. */
-  var phraseStartTime: Date
+  var phraseStartTime: js.Date
   
   /** Gets a value that indicates the relative confidence of the SpeechRecognitionResult when compared with a collection of alternatives returned with the recognition result. */
   var rawConfidence: Double
@@ -50,7 +49,7 @@ object SpeechRecognitionResult {
     constraint: ISpeechRecognitionConstraint,
     getAlternates: Double => IVectorView[SpeechRecognitionResult],
     phraseDuration: Double,
-    phraseStartTime: Date,
+    phraseStartTime: js.Date,
     rawConfidence: Double,
     rulePath: IVectorView[String],
     semanticInterpretation: SpeechRecognitionSemanticInterpretation,
@@ -71,7 +70,7 @@ object SpeechRecognitionResult {
     
     inline def setPhraseDuration(value: Double): Self = StObject.set(x, "phraseDuration", value.asInstanceOf[js.Any])
     
-    inline def setPhraseStartTime(value: Date): Self = StObject.set(x, "phraseStartTime", value.asInstanceOf[js.Any])
+    inline def setPhraseStartTime(value: js.Date): Self = StObject.set(x, "phraseStartTime", value.asInstanceOf[js.Any])
     
     inline def setRawConfidence(value: Double): Self = StObject.set(x, "rawConfidence", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "HemisphericLight")
 @js.native
-class HemisphericLight protected ()
+open class HemisphericLight protected ()
   extends typings.babylonjs.indexMod.HemisphericLight {
   /**
     * Creates a HemisphericLight object in the scene according to the passed direction (Vector3).

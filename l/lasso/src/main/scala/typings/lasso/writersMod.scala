@@ -11,9 +11,9 @@ object writersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createWriter(writerImpl: js.Any): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writerImpl.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def createWriter(writerImpl: Any): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writerImpl.asInstanceOf[js.Any]).asInstanceOf[Writer]
   
-  inline def fileWriter(fileWriterConfig: js.Any, lassoConfig: LassoConfig): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fileWriter")(fileWriterConfig.asInstanceOf[js.Any], lassoConfig.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def fileWriter(fileWriterConfig: Any, lassoConfig: LassoConfig): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fileWriter")(fileWriterConfig.asInstanceOf[js.Any], lassoConfig.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   type Writer = typings.lasso.writerMod.Writer
 }

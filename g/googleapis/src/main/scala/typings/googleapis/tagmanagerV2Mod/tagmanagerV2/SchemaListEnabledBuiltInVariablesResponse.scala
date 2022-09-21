@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A list of enabled built-in variables.
-  */
 trait SchemaListEnabledBuiltInVariablesResponse extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaListEnabledBuiltInVariablesResponse extends StObject {
   /**
     * Continuation token for fetching the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListEnabledBuiltInVariablesResponse {
   
@@ -32,9 +29,11 @@ object SchemaListEnabledBuiltInVariablesResponse {
     
     inline def setBuiltInVariableUndefined: Self = StObject.set(x, "builtInVariable", js.undefined)
     
-    inline def setBuiltInVariableVarargs(value: SchemaBuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value :_*))
+    inline def setBuiltInVariableVarargs(value: SchemaBuiltInVariable*): Self = StObject.set(x, "builtInVariable", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

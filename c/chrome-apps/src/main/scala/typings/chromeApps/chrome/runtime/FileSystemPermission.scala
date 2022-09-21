@@ -29,6 +29,6 @@ object FileSystemPermission {
     
     inline def setFileSystem(value: js.Array[write_ | retainEntries | directory | requestFileSystem]): Self = StObject.set(x, "fileSystem", value.asInstanceOf[js.Any])
     
-    inline def setFileSystemVarargs(value: (write_ | retainEntries | directory | requestFileSystem)*): Self = StObject.set(x, "fileSystem", js.Array(value :_*))
+    inline def setFileSystemVarargs(value: (write_ | retainEntries | directory | requestFileSystem)*): Self = StObject.set(x, "fileSystem", js.Array(value*))
   }
 }

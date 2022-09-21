@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
+import org.scalablytyped.runtime.Instantiable6
+import org.scalablytyped.runtime.Instantiable7
 import typings.firebaseDatabase.browserPollConnectionMod.BrowserPollConnection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,13 +29,32 @@ trait TypeofBrowserPollConnecti
       /* connId */ String, 
       /* repoInfo */ typings.firebaseDatabase.repoInfoMod.RepoInfo, 
       (/* applicationId */ String) | (/* applicationId */ Unit), 
-      /* transportSessionId */ String, 
+      /* appCheckToken */ String, 
       BrowserPollConnection
     ]
      with Instantiable5[
       /* connId */ String, 
       /* repoInfo */ typings.firebaseDatabase.repoInfoMod.RepoInfo, 
       (/* applicationId */ String) | (/* applicationId */ Unit), 
+      (/* appCheckToken */ String) | (/* appCheckToken */ Unit), 
+      /* authToken */ String, 
+      BrowserPollConnection
+    ]
+     with Instantiable6[
+      /* connId */ String, 
+      /* repoInfo */ typings.firebaseDatabase.repoInfoMod.RepoInfo, 
+      (/* applicationId */ String) | (/* applicationId */ Unit), 
+      (/* appCheckToken */ String) | (/* appCheckToken */ Unit), 
+      (/* authToken */ String) | (/* authToken */ Unit), 
+      /* transportSessionId */ String, 
+      BrowserPollConnection
+    ]
+     with Instantiable7[
+      /* connId */ String, 
+      /* repoInfo */ typings.firebaseDatabase.repoInfoMod.RepoInfo, 
+      (/* applicationId */ String) | (/* applicationId */ Unit), 
+      (/* appCheckToken */ String) | (/* appCheckToken */ Unit), 
+      (/* authToken */ String) | (/* authToken */ Unit), 
       (/* transportSessionId */ String) | (/* transportSessionId */ Unit), 
       /* lastSessionId */ String, 
       BrowserPollConnection
@@ -44,14 +65,14 @@ trait TypeofBrowserPollConnecti
     */
   def forceAllow(): Unit = js.native
   
-  /* private */ var forceAllow_ : js.Any = js.native
+  var forceAllow_ : Boolean = js.native
   
   /**
     * Forces longpolling to not be considered as a potential transport
     */
   def forceDisallow(): Unit = js.native
   
-  /* private */ var forceDisallow_ : js.Any = js.native
+  var forceDisallow_ : Boolean = js.native
   
   def isAvailable(): Boolean = js.native
 }

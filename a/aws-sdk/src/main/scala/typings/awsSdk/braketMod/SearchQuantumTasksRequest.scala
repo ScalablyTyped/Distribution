@@ -32,7 +32,7 @@ object SearchQuantumTasksRequest {
     
     inline def setFilters(value: SearchQuantumTasksRequestFiltersList): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    inline def setFiltersVarargs(value: SearchQuantumTasksFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: SearchQuantumTasksFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setMaxResults(value: SearchQuantumTasksRequestMaxResultsInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

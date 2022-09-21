@@ -34,7 +34,7 @@ abstract class ContactAnnotationList ()
     * @return The list of ContactAnnotation objects.
     */
   /* CompleteClass */
-  override def findAnnotationsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  override def findAnnotationsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Gets the list of ContactAnnotation objects containing the specified remote ID property.
@@ -42,7 +42,7 @@ abstract class ContactAnnotationList ()
     * @return The list of ContactAnnotation objects containing the specified remote ID property.
     */
   /* CompleteClass */
-  override def findAnnotationsByRemoteIdAsync(remoteId: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  override def findAnnotationsByRemoteIdAsync(remoteId: String): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Gets the ContactAnnotation with the specified Id .

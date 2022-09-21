@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object hexdecMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(hexString: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(hexString.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(hexString: Any): Any = ^.asInstanceOf[js.Dynamic].apply(hexString.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("locutus/php/math/hexdec", JSImport.Namespace)
   @js.native

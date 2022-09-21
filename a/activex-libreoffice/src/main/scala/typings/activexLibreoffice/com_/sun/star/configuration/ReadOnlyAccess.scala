@@ -27,9 +27,9 @@ object ReadOnlyAccess {
   inline def apply(
     acquire: () => Unit,
     create: String => Unit,
-    getByHierarchicalName: String => js.Any,
+    getByHierarchicalName: String => Any,
     hasByHierarchicalName: String => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): ReadOnlyAccess = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), create = js.Any.fromFunction1(create), getByHierarchicalName = js.Any.fromFunction1(getByHierarchicalName), hasByHierarchicalName = js.Any.fromFunction1(hasByHierarchicalName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

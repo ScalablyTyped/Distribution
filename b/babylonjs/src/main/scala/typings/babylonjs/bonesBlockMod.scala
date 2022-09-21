@@ -10,7 +10,7 @@ object bonesBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Vertex/bonesBlock", "BonesBlock")
   @js.native
-  class BonesBlock protected () extends NodeMaterialBlock {
+  open class BonesBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new BonesBlock
       * @param name defines the block name

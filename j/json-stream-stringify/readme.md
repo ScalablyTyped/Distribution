@@ -1,7 +1,7 @@
 
 # Scala.js typings for json-stream-stringify
 
-Typings are for version 2.0
+Typings are for version 3.0.1
 
 ## Library description:
 JSON.Stringify as a readable stream
@@ -11,9 +11,9 @@ JSON.Stringify as a readable stream
 | Full name          | json-stream-stringify |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 865798 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 128295.0 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://github.com/Faleij/json-stream-stringify#readme)
@@ -24,7 +24,7 @@ JSON.Stringify as a readable stream
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("any-promise", JSImport.Namespace)
   @js.native
-  class ^[R] protected ()
+  open class ^[R] protected ()
     extends StObject
        with Promise[R] {
     /**
@@ -20,7 +20,7 @@ object mod {
       */
     def this(callback: js.Function2[
             /* resolve */ js.Function1[/* value */ js.UndefOr[R | Thenable[R]], Unit], 
-            /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
+            /* reject */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
             Unit
           ]) = this()
   }
@@ -130,7 +130,7 @@ object mod {
     * Make a promise that rejects to obj. For consistency and debugging (eg stack traces), obj should be an instanceof Error
     */
   /* static member */
-  inline def reject[R](error: js.Any): Promise[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(error.asInstanceOf[js.Any]).asInstanceOf[Promise[R]]
+  inline def reject[R](error: Any): Promise[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(error.asInstanceOf[js.Any]).asInstanceOf[Promise[R]]
   
   /**
     * Make a new promise from the thenable.
@@ -153,7 +153,7 @@ object mod {
       * @param onRejected called when/if "promise" rejects
       */
     def `catch`[U](): Promise[U] = js.native
-    def `catch`[U](onRejected: js.Function1[/* error */ js.Any, U | Thenable[U]]): Promise[U] = js.native
+    def `catch`[U](onRejected: js.Function1[/* error */ Any, U | Thenable[U]]): Promise[U] = js.native
   }
   
   @js.native
@@ -163,8 +163,8 @@ object mod {
     def `then`[U](onFulfilled: js.Function1[/* value */ R, U | Thenable[U]]): Thenable[U] = js.native
     def `then`[U](
       onFulfilled: js.Function1[/* value */ R, Thenable[U] | U],
-      onRejected: js.Function1[/* error */ js.Any, Thenable[U] | U | Unit]
+      onRejected: js.Function1[/* error */ Any, Thenable[U] | U | Unit]
     ): Thenable[U] = js.native
-    def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ js.Any, Thenable[U] | U | Unit]): Thenable[U] = js.native
+    def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ Any, Thenable[U] | U | Unit]): Thenable[U] = js.native
   }
 }

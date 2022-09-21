@@ -29,7 +29,7 @@ object ListDashboardsOutput {
     
     inline def setDashboardEntriesUndefined: Self = StObject.set(x, "DashboardEntries", js.undefined)
     
-    inline def setDashboardEntriesVarargs(value: DashboardEntry*): Self = StObject.set(x, "DashboardEntries", js.Array(value :_*))
+    inline def setDashboardEntriesVarargs(value: DashboardEntry*): Self = StObject.set(x, "DashboardEntries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

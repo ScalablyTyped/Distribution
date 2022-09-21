@@ -12,12 +12,12 @@ trait JobCommand extends StObject {
   var Name: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The Python version being used to execute a Python shell job. Allowed values are 2 or 3.
+    * The Python version being used to run a Python shell job. Allowed values are 2 or 3.
     */
   var PythonVersion: js.UndefOr[PythonVersionString] = js.undefined
   
   /**
-    * Specifies the Amazon Simple Storage Service (Amazon S3) path to a script that executes a job.
+    * Specifies the Amazon Simple Storage Service (Amazon S3) path to a script that runs a job.
     */
   var ScriptLocation: js.UndefOr[ScriptLocationString] = js.undefined
 }

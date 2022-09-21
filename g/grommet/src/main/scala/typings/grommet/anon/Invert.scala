@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Invert extends StObject {
   
-  var invert: js.UndefOr[`3`] = js.undefined
+  var invert: js.UndefOr[`4`] = js.undefined
 }
 object Invert {
   
@@ -17,7 +17,7 @@ object Invert {
   
   extension [Self <: Invert](x: Self) {
     
-    inline def setInvert(value: `3`): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
+    inline def setInvert(value: `4`): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     
     inline def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
   }

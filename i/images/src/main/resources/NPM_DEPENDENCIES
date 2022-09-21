@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "images" : "3.2.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "images" : "3.2.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

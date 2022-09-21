@@ -6,19 +6,20 @@ import typings.ebml.ebmlStrings.end
 import typings.ebml.ebmlStrings.error
 import typings.ebml.ebmlStrings.readable
 import typings.ebml.mod.Decoder.State
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ebml", "Decoder")
 @js.native
-class Decoder () extends Transform {
+open class Decoder () extends Transform {
   def this(opts: TransformOptions) = this()
   
+  def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   // #region Duplex methods overloadings
   def addListener[K /* <: /* keyof ebml.ebml.Decoder.EventListenerMap */ data | close | end | readable | error */](
     event: K,
@@ -29,27 +30,37 @@ class Decoder () extends Transform {
   
   var cursor: Double = js.native
   
-  def end(chunk: Buffer): Unit = js.native
-  def end(chunk: Buffer, cb: js.Function0[Unit]): Unit = js.native
-  def end(chunk: Buffer, encoding: String): Unit = js.native
-  def end(chunk: Buffer, encoding: String, cb: js.Function0[Unit]): Unit = js.native
-  def end(chunk: Buffer, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
+  def end(): this.type = js.native
+  def end(cb: js.Function0[Unit]): this.type = js.native
+  def end(chunk: Buffer): this.type = js.native
+  def end(chunk: Buffer, cb: js.Function0[Unit]): this.type = js.native
+  def end(chunk: Buffer, encoding: String): this.type = js.native
+  def end(chunk: Buffer, encoding: String, cb: js.Function0[Unit]): this.type = js.native
+  def end(chunk: Buffer, encoding: Unit, cb: js.Function0[Unit]): this.type = js.native
   
+  def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def on[K /* <: /* keyof ebml.ebml.Decoder.EventListenerMap */ data | close | end | readable | error */](
     event: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
   ): this.type = js.native
   
+  def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def once[K /* <: /* keyof ebml.ebml.Decoder.EventListenerMap */ data | close | end | readable | error */](
     event: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
   ): this.type = js.native
   
+  def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def prependListener[K /* <: /* keyof ebml.ebml.Decoder.EventListenerMap */ data | close | end | readable | error */](
     event: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
   ): this.type = js.native
   
+  def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def prependOnceListener[K /* <: /* keyof ebml.ebml.Decoder.EventListenerMap */ data | close | end | readable | error */](
     event: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
@@ -61,6 +72,8 @@ class Decoder () extends Transform {
   
   def readTag(): Boolean = js.native
   
+  def removeListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+  def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def removeListener[K /* <: /* keyof ebml.ebml.Decoder.EventListenerMap */ data | close | end | readable | error */](
     event: K,
     listener: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
@@ -73,10 +86,10 @@ class Decoder () extends Transform {
   var total: Double = js.native
   
   def write(chunk: Buffer): Boolean = js.native
-  def write(chunk: Buffer, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
+  def write(chunk: Buffer, cb: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]): Boolean = js.native
   def write(chunk: Buffer, encoding: String): Boolean = js.native
-  def write(chunk: Buffer, encoding: String, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
-  def write(chunk: Buffer, encoding: Unit, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
+  def write(chunk: Buffer, encoding: String, cb: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]): Boolean = js.native
+  def write(chunk: Buffer, encoding: Unit, cb: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]): Boolean = js.native
 }
 /* static members */
 object Decoder {
@@ -95,7 +108,7 @@ object Decoder {
     
     def end(): Unit
     
-    def error(err: Error): Unit
+    def error(err: js.Error): Unit
     
     def readable(): Unit
   }
@@ -105,7 +118,7 @@ object Decoder {
       close: () => Unit,
       data: StateAndTagData => Unit,
       end: () => Unit,
-      error: Error => Unit,
+      error: js.Error => Unit,
       readable: () => Unit
     ): EventListenerMap = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), data = js.Any.fromFunction1(data), end = js.Any.fromFunction0(end), error = js.Any.fromFunction1(error), readable = js.Any.fromFunction0(readable))
@@ -120,7 +133,7 @@ object Decoder {
       
       inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      inline def setError(value: Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setReadable(value: () => Unit): Self = StObject.set(x, "readable", js.Any.fromFunction0(value))
     }

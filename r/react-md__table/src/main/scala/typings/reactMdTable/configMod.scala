@@ -30,7 +30,7 @@ object configMod {
       * setting the `type="th"` fot the `TableCell` if using the low-level
       * components.
       *
-      * @private
+      * @internal
       */
     var header: js.UndefOr[Boolean] = js.undefined
   }
@@ -51,11 +51,7 @@ object configMod {
   
   trait TableCellConfiguration extends StObject {
     
-    /**
-      * The horizontal alignment for the content within a cell.
-      *
-      * Note: Table default behavior is to align to the left.
-      */
+    /** {@inheritDoc TableCellHorizontalAlignment} */
     var hAlign: js.UndefOr[TableCellHorizontalAlignment] = js.undefined
     
     /**
@@ -68,14 +64,7 @@ object configMod {
       */
     var lineWrap: js.UndefOr[Boolean | padded] = js.undefined
     
-    /**
-      * The vertical alignment for the content within a cell.
-      *
-      * Note: When this is set to `"top"` or `"bottom"`, `padding-top` or
-      * `padding-bottom` will also be applied due to how styling tables work. This
-      * padding can be configured with the `$rmd-table-cell-vertical-padding` or
-      * `$rmd-table-cell-vertical-alignments` variables.
-      */
+    /** {@inheritDoc TableCellVerticalAlignment} */
     var vAlign: js.UndefOr[TableCellVerticalAlignment] = js.undefined
   }
   object TableCellConfiguration {

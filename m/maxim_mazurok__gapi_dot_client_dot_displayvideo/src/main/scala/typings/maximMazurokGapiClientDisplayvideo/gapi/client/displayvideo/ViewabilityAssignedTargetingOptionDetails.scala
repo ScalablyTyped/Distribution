@@ -9,7 +9,7 @@ trait ViewabilityAssignedTargetingOptionDetails extends StObject {
   /** Required. The targeting_option_id of a TargetingOption of type `TARGETING_TYPE_VIEWABILITY` (e.g., "509010" for targeting the `VIEWABILITY_10_PERCENT_OR_MORE` option). */
   var targetingOptionId: js.UndefOr[String] = js.undefined
   
-  /** Output only. The predicted viewability percentage. */
+  /** The predicted viewability percentage. Output only in v1. Required in v2. */
   var viewability: js.UndefOr[String] = js.undefined
 }
 object ViewabilityAssignedTargetingOptionDetails {

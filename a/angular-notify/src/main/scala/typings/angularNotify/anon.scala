@@ -23,7 +23,7 @@ object anon {
     /**
       * Optional. Element that contains each notification. Defaults to document.body.
       */
-    var container: js.UndefOr[js.Any] = js.undefined
+    var container: js.UndefOr[Any] = js.undefined
     
     /**
       * Optional. The duration (in milliseconds) of the message. A duration of 0 will prevent the message from closing automatically.
@@ -68,7 +68,7 @@ object anon {
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
@@ -97,7 +97,7 @@ object anon {
     /**
       * The default element that contains each notification. Defaults to document.body.
       */
-    var container: js.UndefOr[js.Any] = js.undefined
+    var container: js.UndefOr[Any] = js.undefined
     
     /**
       * The default duration (in milliseconds) of each message. A duration of 0 will prevent messages from closing automatically.
@@ -138,7 +138,7 @@ object anon {
     
     extension [Self <: Container](x: Self) {
       
-      inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       

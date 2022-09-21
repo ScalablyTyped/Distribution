@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("stale-lru-cache", JSImport.Namespace)
   @js.native
-  class ^[K, V] ()
+  open class ^[K, V] ()
     extends StObject
        with Cache[K, V] {
     def this(options: CacheOptions[K, V]) = this()
@@ -84,7 +84,7 @@ object mod {
   }
   
   type OptionsCallback[K, V] = js.Function3[
-    /* error */ js.Any, 
+    /* error */ Any, 
     /* value */ js.UndefOr[V], 
     /* options */ js.UndefOr[String | (SetOptions[K, V])], 
     Unit

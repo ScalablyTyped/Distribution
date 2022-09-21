@@ -130,7 +130,7 @@ object TaskRunnerSettings {
     
     inline def setOauthScopesUndefined: Self = StObject.set(x, "oauthScopes", js.undefined)
     
-    inline def setOauthScopesVarargs(value: String*): Self = StObject.set(x, "oauthScopes", js.Array(value :_*))
+    inline def setOauthScopesVarargs(value: String*): Self = StObject.set(x, "oauthScopes", js.Array(value*))
     
     inline def setParallelWorkerSettings(value: WorkerSettings): Self = StObject.set(x, "parallelWorkerSettings", value.asInstanceOf[js.Any])
     

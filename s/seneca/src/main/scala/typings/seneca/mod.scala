@@ -12,7 +12,6 @@ import typings.seneca.anon.Interval
 import typings.seneca.anon.Level
 import typings.seneca.anon.Local
 import typings.seneca.anon.Running
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,17 +25,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type ActCallback = js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[js.Any], Unit]
+  type ActCallback = js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[Any], Unit]
   
   type AddCallback[T] = js.Function2[
     /* msg */ MessagePayload[T], 
-    /* respond */ js.Function2[/* error */ Error | Null, /* msg */ js.UndefOr[js.Any], Unit], 
+    /* respond */ js.Function2[/* error */ js.Error | Null, /* msg */ js.UndefOr[Any], Unit], 
     Unit
   ]
   
   trait ClientOptions extends StObject
   
-  type CloseCallback = js.Function2[/* optional */ js.Any, /* done */ js.Function1[/* error */ Error, Unit], Unit]
+  type CloseCallback = js.Function2[/* optional */ Any, /* done */ js.Function1[/* error */ js.Error, Unit], Unit]
   
   type DatabaseID = String
   
@@ -48,9 +47,9 @@ object mod {
   @js.native
   trait Entity
     extends StObject
-       with /* plugin_name */ StringDictionary[js.Any] {
+       with /* plugin_name */ StringDictionary[Any] {
     
-    def apply(canon: js.Any, seneca: js.Any): Unit = js.native
+    def apply(canon: Any, seneca: Any): Unit = js.native
     
     @JSName("list$")
     def list$(query: EntityDataWithQuery, callback: EntityListCallback): Unit = js.native
@@ -83,12 +82,12 @@ object mod {
   
   trait EntityDataWithQuery
     extends StObject
-       with /* plugin_name */ StringDictionary[js.Any] {
+       with /* plugin_name */ StringDictionary[Any] {
     
     var id: js.UndefOr[String] = js.undefined
     
     @JSName("sort$")
-    var sort$: js.UndefOr[js.Any] = js.undefined
+    var sort$: js.UndefOr[Any] = js.undefined
   }
   object EntityDataWithQuery {
     
@@ -103,23 +102,23 @@ object mod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setSort$(value: js.Any): Self = StObject.set(x, "sort$", value.asInstanceOf[js.Any])
+      inline def setSort$(value: Any): Self = StObject.set(x, "sort$", value.asInstanceOf[js.Any])
       
       inline def setSort$Undefined: Self = StObject.set(x, "sort$", js.undefined)
     }
   }
   
-  type EntityListCallback = js.Function2[/* error */ Error, /* result */ js.Array[js.Any], Unit]
+  type EntityListCallback = js.Function2[/* error */ js.Error, /* result */ js.Array[Any], Unit]
   
-  type EntityLoadCallback = js.Function2[/* error */ Error, /* result */ js.Any, Unit]
+  type EntityLoadCallback = js.Function2[/* error */ js.Error, /* result */ Any, Unit]
   
-  type EntityRemoveCallback = js.Function1[/* error */ Error, Unit]
+  type EntityRemoveCallback = js.Function1[/* error */ js.Error, Unit]
   
-  type EntitySaveCallback = js.Function2[/* error */ Error, /* result */ js.Any, Unit]
+  type EntitySaveCallback = js.Function2[/* error */ js.Error, /* result */ Any, Unit]
   
   trait Executor extends StObject {
     
-    def cb(err: Error, result: js.Any): Unit
+    def cb(err: js.Error, result: Any): Unit
     @JSName("cb")
     var cb_Original: ExecutorCallback
     
@@ -127,7 +126,7 @@ object mod {
     
     var execute: UnknownType
     
-    def fn(callback: js.Any): Unit
+    def fn(callback: Any): Unit
     @JSName("fn")
     var fn_Original: ExecutorWorker
     
@@ -140,10 +139,10 @@ object mod {
   object Executor {
     
     inline def apply(
-      cb: (/* err */ Error, /* result */ js.Any) => Unit,
+      cb: (/* err */ js.Error, /* result */ Any) => Unit,
       desc: String,
       execute: UnknownType,
-      fn: /* callback */ js.Any => Unit,
+      fn: /* callback */ Any => Unit,
       gate: Boolean,
       id: String,
       ungate: Boolean
@@ -154,13 +153,13 @@ object mod {
     
     extension [Self <: Executor](x: Self) {
       
-      inline def setCb(value: (/* err */ Error, /* result */ js.Any) => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction2(value))
+      inline def setCb(value: (/* err */ js.Error, /* result */ Any) => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction2(value))
       
       inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
       inline def setExecute(value: UnknownType): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
       
-      inline def setFn(value: /* callback */ js.Any => Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+      inline def setFn(value: /* callback */ Any => Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
       
       inline def setGate(value: Boolean): Self = StObject.set(x, "gate", value.asInstanceOf[js.Any])
       
@@ -170,20 +169,20 @@ object mod {
     }
   }
   
-  type ExecutorCallback = js.Function2[/* err */ Error, /* result */ js.Any, Unit]
+  type ExecutorCallback = js.Function2[/* err */ js.Error, /* result */ Any, Unit]
   
-  type ExecutorWorker = js.Function1[/* callback */ js.Any, Unit]
+  type ExecutorWorker = js.Function1[/* callback */ Any, Unit]
   
-  type GlobalErrorHandler = js.Function1[/* error */ Error, Unit]
+  type GlobalErrorHandler = js.Function1[/* error */ js.Error, Unit]
   
   @js.native
   trait Instance extends StObject {
     
-    def act[PatternWithArgs](pattern: PatternWithArgs, msg: js.Any, respond: ActCallback): Unit = js.native
+    def act[PatternWithArgs](pattern: PatternWithArgs, msg: Any, respond: ActCallback): Unit = js.native
     def act[PatternWithArgs](pattern: PatternWithArgs, respond: ActCallback): Unit = js.native
     
     def add[PatternType, CallBackParams](pattern: PatternType, action: AddCallback[PatternType & CallBackParams]): this.type = js.native
-    def add[PatternType, CallbackParams](pattern: PatternType, paramspec: js.Any, action: AddCallback[PatternType & CallbackParams]): this.type = js.native
+    def add[PatternType, CallbackParams](pattern: PatternType, paramspec: Any, action: AddCallback[PatternType & CallbackParams]): this.type = js.native
     
     def client(): this.type = js.native
     def client(options: ClientOptions): this.type = js.native
@@ -199,19 +198,19 @@ object mod {
     def listen(options: ListenOptions): this.type = js.native
     
     def make(base: String, entity_canon: String): Entity = js.native
-    def make(base: String, entity_canon: String, properties: js.Any): Entity = js.native
+    def make(base: String, entity_canon: String, properties: Any): Entity = js.native
     def make(entity_canon: String): Entity = js.native
-    def make(entity_canon: String, properties: js.Any): Entity = js.native
+    def make(entity_canon: String, properties: Any): Entity = js.native
     def make(zone: String, base: String, entity_canon: String): Entity = js.native
-    def make(zone: String, base: String, entity_canon: String, properties: js.Any): Entity = js.native
+    def make(zone: String, base: String, entity_canon: String, properties: Any): Entity = js.native
     
-    def on(eventName: String, callback: js.Function1[/* error */ Error, Unit]): js.Any = js.native
+    def on(eventName: String, callback: js.Function1[/* error */ js.Error, Unit]): Any = js.native
     
     def options(options: Options): Unit = js.native
     
     def pin(pattern: Pattern): Unit = js.native
     
-    def ready(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def ready(callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     def use(module: PluginModule): this.type = js.native
     def use(module: PluginModule, options: PluginOptions): this.type = js.native
@@ -284,7 +283,7 @@ object mod {
   
   trait Options
     extends StObject
-       with /* plugin_name */ StringDictionary[js.Any] {
+       with /* plugin_name */ StringDictionary[Any] {
     
     // Action cache. Makes inbound messages idempotent.
     var actcache: js.UndefOr[Active] = js.undefined
@@ -315,7 +314,7 @@ object mod {
     var log: js.UndefOr[LogSpec | Level] = js.undefined
     
     // Plugin settings
-    var plugin: js.UndefOr[js.Any] = js.undefined
+    var plugin: js.UndefOr[Any] = js.undefined
     
     // Settings for network REPL.
     var repl: js.UndefOr[Host] = js.undefined
@@ -338,7 +337,7 @@ object mod {
     var trace: js.UndefOr[Act] = js.undefined
     
     // zig module settings for seneca.start() chaining.
-    var zig: js.UndefOr[js.Any] = js.undefined
+    var zig: js.UndefOr[Any] = js.undefined
   }
   object Options {
     
@@ -369,7 +368,7 @@ object mod {
       
       inline def setDefault_pluginsUndefined: Self = StObject.set(x, "default_plugins", js.undefined)
       
-      inline def setErrhandler(value: /* error */ Error => Unit): Self = StObject.set(x, "errhandler", js.Any.fromFunction1(value))
+      inline def setErrhandler(value: /* error */ js.Error => Unit): Self = StObject.set(x, "errhandler", js.Any.fromFunction1(value))
       
       inline def setErrhandlerUndefined: Self = StObject.set(x, "errhandler", js.undefined)
       
@@ -385,7 +384,7 @@ object mod {
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      inline def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
       inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
       
@@ -417,7 +416,7 @@ object mod {
       
       inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
       
-      inline def setZig(value: js.Any): Self = StObject.set(x, "zig", value.asInstanceOf[js.Any])
+      inline def setZig(value: Any): Self = StObject.set(x, "zig", value.asInstanceOf[js.Any])
       
       inline def setZigUndefined: Self = StObject.set(x, "zig", js.undefined)
     }
@@ -429,7 +428,7 @@ object mod {
     var fatal$: Boolean
     
     @JSName("plugin$")
-    var plugin$: js.Any
+    var plugin$: Any
     
     @JSName("transport$")
     var transport$: js.Object
@@ -439,7 +438,7 @@ object mod {
   }
   object PartialMessagePayload {
     
-    inline def apply(fatal$: Boolean, plugin$: js.Any, transport$: js.Object, tx$: String): PartialMessagePayload = {
+    inline def apply(fatal$: Boolean, plugin$: Any, transport$: js.Object, tx$: String): PartialMessagePayload = {
       val __obj = js.Dynamic.literal(fatal$ = fatal$.asInstanceOf[js.Any], plugin$ = plugin$.asInstanceOf[js.Any], transport$ = transport$.asInstanceOf[js.Any], tx$ = tx$.asInstanceOf[js.Any])
       __obj.asInstanceOf[PartialMessagePayload]
     }
@@ -448,7 +447,7 @@ object mod {
       
       inline def setFatal$(value: Boolean): Self = StObject.set(x, "fatal$", value.asInstanceOf[js.Any])
       
-      inline def setPlugin$(value: js.Any): Self = StObject.set(x, "plugin$", value.asInstanceOf[js.Any])
+      inline def setPlugin$(value: Any): Self = StObject.set(x, "plugin$", value.asInstanceOf[js.Any])
       
       inline def setTransport$(value: js.Object): Self = StObject.set(x, "transport$", value.asInstanceOf[js.Any])
       
@@ -458,9 +457,9 @@ object mod {
   
   type Pattern = String | MinimalPattern
   
-  type PluginModule = js.Function1[/* options */ js.Any, Unit]
+  type PluginModule = js.Function1[/* options */ Any, Unit]
   
   trait PluginOptions extends StObject
   
-  type UnknownType = js.Any
+  type UnknownType = Any
 }

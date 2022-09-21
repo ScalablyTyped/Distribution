@@ -9,7 +9,6 @@ import typings.lambdaLog.lambdaLogStrings.warn
 import typings.node.eventsMod.EventEmitter
 import typings.node.fsMod.WriteStream
 import typings.std.Console
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,21 +31,21 @@ object mod {
   - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
   - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @JSImport("lambda-log", "LambdaLog")
   @js.native
-  class LambdaLog () extends EventEmitter {
+  open class LambdaLog () extends EventEmitter {
     def this(options: LambdaLogOptions) = this()
-    def this(options: Unit, levels: js.Any) = this()
-    def this(options: LambdaLogOptions, levels: js.Any) = this()
+    def this(options: Unit, levels: Any) = this()
+    def this(options: LambdaLogOptions, levels: Any) = this()
     
     var LambdaLog: typings.lambdaLog.mod.LambdaLog = js.native
     
-    /* private */ var _levels: js.Any = js.native
+    /* private */ var _levels: Any = js.native
     
-    /* private */ var _logLevels: js.Any = js.native
+    /* private */ var _logLevels: Any = js.native
     
-    def assert(test: js.Any, msg: String): Boolean | LogMessage = js.native
-    def assert(test: js.Any, msg: String, meta: js.Object): Boolean | LogMessage = js.native
-    def assert(test: js.Any, msg: String, meta: js.Object, tags: js.Array[String]): Boolean | LogMessage = js.native
-    def assert(test: js.Any, msg: String, meta: Unit, tags: js.Array[String]): Boolean | LogMessage = js.native
+    def assert(test: Any, msg: String): Boolean | LogMessage = js.native
+    def assert(test: Any, msg: String, meta: js.Object): Boolean | LogMessage = js.native
+    def assert(test: Any, msg: String, meta: js.Object, tags: js.Array[String]): Boolean | LogMessage = js.native
+    def assert(test: Any, msg: String, meta: Unit, tags: js.Array[String]): Boolean | LogMessage = js.native
     
     var console: Console = js.native
     
@@ -59,10 +58,10 @@ object mod {
     def error(msg: String, meta: js.Object): LogMessage = js.native
     def error(msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
     def error(msg: String, meta: Unit, tags: js.Array[String]): LogMessage = js.native
-    def error(msg: Error): LogMessage = js.native
-    def error(msg: Error, meta: js.Object): LogMessage = js.native
-    def error(msg: Error, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
-    def error(msg: Error, meta: Unit, tags: js.Array[String]): LogMessage = js.native
+    def error(msg: js.Error): LogMessage = js.native
+    def error(msg: js.Error, meta: js.Object): LogMessage = js.native
+    def error(msg: js.Error, meta: js.Object, tags: js.Array[String]): LogMessage = js.native
+    def error(msg: js.Error, meta: Unit, tags: js.Array[String]): LogMessage = js.native
     
     def info(msg: String): LogMessage = js.native
     def info(msg: String, meta: js.Object): LogMessage = js.native
@@ -84,14 +83,14 @@ object mod {
   
   @JSImport("lambda-log", "LogMessage")
   @js.native
-  class LogMessage protected () extends StObject {
+  open class LogMessage protected () extends StObject {
     def this(logRecordOptions: LogRecordOptions, opts: LambdaLogOptions) = this()
     
     var level: String = js.native
     
     var log: LogRecord = js.native
     
-    var meta: js.UndefOr[js.Any] = js.native
+    var meta: js.UndefOr[Any] = js.native
     
     var msg: String = js.native
     
@@ -111,13 +110,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def isError(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isError(`val`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
-  inline def assert(test: js.Any, msg: String): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(test.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
-  inline def assert(test: js.Any, msg: String, meta: js.Object): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(test.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
-  inline def assert(test: js.Any, msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(test.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
-  inline def assert(test: js.Any, msg: String, meta: Unit, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(test.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  inline def assert(test: Any, msg: String): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(test.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  inline def assert(test: Any, msg: String, meta: js.Object): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(test.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  inline def assert(test: Any, msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(test.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  inline def assert(test: Any, msg: String, meta: Unit, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(test.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
   
   inline def debug(msg: String): LogMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any]).asInstanceOf[LogMessage]
   inline def debug(msg: String, meta: js.Object): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
@@ -128,10 +127,10 @@ object mod {
   inline def error(msg: String, meta: js.Object): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
   inline def error(msg: String, meta: js.Object, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
   inline def error(msg: String, meta: Unit, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
-  inline def error(msg: Error): LogMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[LogMessage]
-  inline def error(msg: Error, meta: js.Object): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
-  inline def error(msg: Error, meta: js.Object, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
-  inline def error(msg: Error, meta: Unit, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  inline def error(msg: js.Error): LogMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[LogMessage]
+  inline def error(msg: js.Error, meta: js.Object): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  inline def error(msg: js.Error, meta: js.Object, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
+  inline def error(msg: js.Error, meta: Unit, tags: js.Array[String]): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
   
   inline def info(msg: String): LogMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any]).asInstanceOf[LogMessage]
   inline def info(msg: String, meta: js.Object): LogMessage = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[LogMessage]
@@ -161,12 +160,12 @@ object mod {
     var dev: js.UndefOr[Boolean] = js.undefined
     
     // Optional function which will run for every log to inject dynamic metadata
-    var dynamicMeta: js.UndefOr[js.Function1[/* message */ LogMessage, js.Any]] = js.undefined
+    var dynamicMeta: js.UndefOr[js.Function1[/* message */ LogMessage, Any]] = js.undefined
     
-    var meta: js.UndefOr[js.Any] = js.undefined
+    var meta: js.UndefOr[Any] = js.undefined
     
     // Optional replacer function for `JSON.stringify`
-    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]] = js.undefined
+    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ Any, Any]] = js.undefined
     
     // Disables logging to the console (used for testing)
     var silent: js.UndefOr[Boolean] = js.undefined
@@ -197,15 +196,15 @@ object mod {
       
       inline def setDevUndefined: Self = StObject.set(x, "dev", js.undefined)
       
-      inline def setDynamicMeta(value: /* message */ LogMessage => js.Any): Self = StObject.set(x, "dynamicMeta", js.Any.fromFunction1(value))
+      inline def setDynamicMeta(value: /* message */ LogMessage => Any): Self = StObject.set(x, "dynamicMeta", js.Any.fromFunction1(value))
       
       inline def setDynamicMetaUndefined: Self = StObject.set(x, "dynamicMeta", js.undefined)
       
-      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      inline def setReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      inline def setReplacer(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
       inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
       
@@ -225,13 +224,13 @@ object mod {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   
   trait LogLevels
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var debug: log | `false`
     
@@ -266,20 +265,20 @@ object mod {
     
     var _tags: js.Array[String]
     
-    var meta: js.Any
+    var meta: Any
     
     var msg: String
   }
   object LogRecord {
     
-    inline def apply(_logLevel: String, _tags: js.Array[String], meta: js.Any, msg: String): LogRecord = {
+    inline def apply(_logLevel: String, _tags: js.Array[String], meta: Any, msg: String): LogRecord = {
       val __obj = js.Dynamic.literal(_logLevel = _logLevel.asInstanceOf[js.Any], _tags = _tags.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogRecord]
     }
     
     extension [Self <: LogRecord](x: Self) {
       
-      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
@@ -287,7 +286,7 @@ object mod {
       
       inline def set_tags(value: js.Array[String]): Self = StObject.set(x, "_tags", value.asInstanceOf[js.Any])
       
-      inline def set_tagsVarargs(value: String*): Self = StObject.set(x, "_tags", js.Array(value :_*))
+      inline def set_tagsVarargs(value: String*): Self = StObject.set(x, "_tags", js.Array(value*))
     }
   }
   
@@ -295,7 +294,7 @@ object mod {
     
     var level: String
     
-    var meta: js.UndefOr[js.Any] = js.undefined
+    var meta: js.UndefOr[Any] = js.undefined
     
     var msg: String
     
@@ -312,7 +311,7 @@ object mod {
       
       inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
@@ -322,7 +321,7 @@ object mod {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
 }

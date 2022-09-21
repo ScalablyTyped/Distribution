@@ -1,7 +1,5 @@
 package typings.tensorflowTfjsCore
 
-import typings.std.Float32Array
-import typings.std.Int32Array
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.float32
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.int32
@@ -17,7 +15,7 @@ object randUtilMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/rand_util", "MPRandGauss")
   @js.native
-  class MPRandGauss protected ()
+  open class MPRandGauss protected ()
     extends StObject
        with RandomBase {
     def this(mean: Double, stdDeviation: Double) = this()
@@ -30,65 +28,63 @@ object randUtilMod {
     def this(mean: Double, stdDeviation: Double, dtype: Unit, truncated: Unit, seed: Double) = this()
     
     /** Handles proper rounding for non-floating-point numbers. */
-    /* private */ var convertValue: js.Any = js.native
+    /* private */ var convertValue: Any = js.native
     
-    /* private */ var dtype: js.Any = js.native
+    /* private */ var dtype: Any = js.native
     
     /** Returns true if less than 2-standard-deviations from the mean. */
-    /* private */ var isValidTruncated: js.Any = js.native
+    /* private */ var isValidTruncated: Any = js.native
     
-    /* private */ var lower: js.Any = js.native
+    /* private */ var lower: Any = js.native
     
-    /* private */ var mean: js.Any = js.native
+    /* private */ var mean: Any = js.native
     
-    /* private */ var nextVal: js.Any = js.native
+    /* private */ var nextVal: Any = js.native
     
     /* CompleteClass */
     override def nextValue(): Double = js.native
     
-    /* private */ var random: js.Any = js.native
+    /* private */ var random: Any = js.native
     
-    /* private */ var stdDev: js.Any = js.native
+    /* private */ var stdDev: Any = js.native
     
-    /* private */ var truncated: js.Any = js.native
+    /* private */ var truncated: Any = js.native
     
-    /* private */ var upper: js.Any = js.native
+    /* private */ var upper: Any = js.native
   }
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/rand_util", "RandGamma")
   @js.native
-  class RandGamma protected ()
+  open class RandGamma protected ()
     extends StObject
        with RandomGamma {
-    def this(alpha: Double, beta: Double, dtype: float32) = this()
-    def this(alpha: Double, beta: Double, dtype: int32) = this()
-    def this(alpha: Double, beta: Double, dtype: float32, seed: Double) = this()
-    def this(alpha: Double, beta: Double, dtype: int32, seed: Double) = this()
+    def this(alpha: Double, beta: Double, dtype: float32 | int32) = this()
+    def this(alpha: Double, beta: Double, dtype: float32 | int32, seed: Double) = this()
     
-    /* private */ var alpha: js.Any = js.native
+    /* private */ var alpha: Any = js.native
     
-    /* private */ var beta: js.Any = js.native
+    /* private */ var beta: Any = js.native
     
-    /* private */ var c: js.Any = js.native
+    /* private */ var c: Any = js.native
     
     /** Handles proper rounding for non-floating-point numbers. */
-    /* private */ var convertValue: js.Any = js.native
+    /* private */ var convertValue: Any = js.native
     
-    /* private */ var d: js.Any = js.native
+    /* private */ var d: Any = js.native
     
-    /* private */ var dtype: js.Any = js.native
+    /* private */ var dtype: Any = js.native
     
     /* CompleteClass */
     override def nextValue(): Double = js.native
     
-    /* private */ var randn: js.Any = js.native
+    /* private */ var randn: Any = js.native
     
-    /* private */ var randu: js.Any = js.native
+    /* private */ var randu: Any = js.native
   }
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/rand_util", "UniformRandom")
   @js.native
-  class UniformRandom ()
+  open class UniformRandom ()
     extends StObject
        with RandomBase {
     def this(min: Double) = this()
@@ -116,20 +112,20 @@ object randUtilMod {
     def this(min: Unit, max: Unit, dtype: Unit, seed: Double) = this()
     
     /** Handles proper rounding for non floating point numbers. */
-    /* private */ var canReturnFloat: js.Any = js.native
+    /* private */ var canReturnFloat: Any = js.native
     
-    /* private */ var convertValue: js.Any = js.native
+    /* private */ var convertValue: Any = js.native
     
-    /* private */ var dtype: js.Any = js.native
+    /* private */ var dtype: Any = js.native
     
-    /* private */ var min: js.Any = js.native
+    /* private */ var min: Any = js.native
     
     /* CompleteClass */
     override def nextValue(): Double = js.native
     
-    /* private */ var random: js.Any = js.native
+    /* private */ var random: Any = js.native
     
-    /* private */ var range: js.Any = js.native
+    /* private */ var range: Any = js.native
   }
   
   inline def expectArrayInMeanStdRange(actual: js.Array[Double], expectedMean: Double, expectedStdDev: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectArrayInMeanStdRange")(actual.asInstanceOf[js.Any], expectedMean.asInstanceOf[js.Any], expectedStdDev.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -142,43 +138,43 @@ object randUtilMod {
   
   trait RandGammaDataTypes extends StObject {
     
-    var float32: Float32Array
+    var float32: js.typedarray.Float32Array
     
-    var int32: Int32Array
+    var int32: js.typedarray.Int32Array
   }
   object RandGammaDataTypes {
     
-    inline def apply(float32: Float32Array, int32: Int32Array): RandGammaDataTypes = {
+    inline def apply(float32: js.typedarray.Float32Array, int32: js.typedarray.Int32Array): RandGammaDataTypes = {
       val __obj = js.Dynamic.literal(float32 = float32.asInstanceOf[js.Any], int32 = int32.asInstanceOf[js.Any])
       __obj.asInstanceOf[RandGammaDataTypes]
     }
     
     extension [Self <: RandGammaDataTypes](x: Self) {
       
-      inline def setFloat32(value: Float32Array): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
+      inline def setFloat32(value: js.typedarray.Float32Array): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
       
-      inline def setInt32(value: Int32Array): Self = StObject.set(x, "int32", value.asInstanceOf[js.Any])
+      inline def setInt32(value: js.typedarray.Int32Array): Self = StObject.set(x, "int32", value.asInstanceOf[js.Any])
     }
   }
   
   trait RandNormalDataTypes extends StObject {
     
-    var float32: Float32Array
+    var float32: js.typedarray.Float32Array
     
-    var int32: Int32Array
+    var int32: js.typedarray.Int32Array
   }
   object RandNormalDataTypes {
     
-    inline def apply(float32: Float32Array, int32: Int32Array): RandNormalDataTypes = {
+    inline def apply(float32: js.typedarray.Float32Array, int32: js.typedarray.Int32Array): RandNormalDataTypes = {
       val __obj = js.Dynamic.literal(float32 = float32.asInstanceOf[js.Any], int32 = int32.asInstanceOf[js.Any])
       __obj.asInstanceOf[RandNormalDataTypes]
     }
     
     extension [Self <: RandNormalDataTypes](x: Self) {
       
-      inline def setFloat32(value: Float32Array): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
+      inline def setFloat32(value: js.typedarray.Float32Array): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
       
-      inline def setInt32(value: Int32Array): Self = StObject.set(x, "int32", value.asInstanceOf[js.Any])
+      inline def setInt32(value: js.typedarray.Int32Array): Self = StObject.set(x, "int32", value.asInstanceOf[js.Any])
     }
   }
   

@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.mirrorHorizontalMod.MirrorHorizontalProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonMirrorHorizontalMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/MirrorHorizontal", JSImport.Default)
   @js.native
-  val default: SFC[MirrorHorizontalProps] = js.native
+  val default: FC[MirrorHorizontalProps] = js.native
   
-  type _To = SFC[MirrorHorizontalProps]
+  type _To = FC[MirrorHorizontalProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonMirrorHorizontalMod.foo` */
-  override def _to: SFC[MirrorHorizontalProps] = default
+  override def _to: FC[MirrorHorizontalProps] = default
 }

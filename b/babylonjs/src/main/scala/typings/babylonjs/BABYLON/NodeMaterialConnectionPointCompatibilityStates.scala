@@ -16,6 +16,12 @@ object NodeMaterialConnectionPointCompatibilityStates extends StObject {
     extends StObject
        with NodeMaterialConnectionPointCompatibilityStates
   
+  /** Points are incompatible because they are in the same hierarchy **/
+  @js.native
+  sealed trait HierarchyIssue
+    extends StObject
+       with NodeMaterialConnectionPointCompatibilityStates
+  
   /** Points are incompatible because of their targets (vertex vs fragment) */
   @js.native
   sealed trait TargetIncompatible

@@ -31,43 +31,43 @@ object MediaControl {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def addEventListener_channeldownpressed(`type`: channeldownpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_channeldownpressed(`type`: channeldownpressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def addEventListener_channeluppressed(`type`: channeluppressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_channeluppressed(`type`: channeluppressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def addEventListener_fastforwardpressed(`type`: fastforwardpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_fastforwardpressed(`type`: fastforwardpressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def addEventListener_nexttrackpressed(`type`: nexttrackpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_nexttrackpressed(`type`: nexttrackpressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def addEventListener_pausepressed(`type`: pausepressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_pausepressed(`type`: pausepressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def addEventListener_playpausetogglepressed(`type`: playpausetogglepressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_playpausetogglepressed(`type`: playpausetogglepressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def addEventListener_playpressed(`type`: playpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_playpressed(`type`: playpressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def addEventListener_previoustrackpressed(`type`: previoustrackpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_previoustrackpressed(`type`: previoustrackpressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def addEventListener_recordpressed(`type`: recordpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_recordpressed(`type`: recordpressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def addEventListener_rewindpressed(`type`: rewindpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_rewindpressed(`type`: rewindpressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def addEventListener_soundlevelchanged(`type`: soundlevelchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_soundlevelchanged(`type`: soundlevelchanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def addEventListener_stoppressed(`type`: stoppressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_stoppressed(`type`: stoppressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Gets or sets the path to the artwork for the album cover. */
   /* static member */
@@ -94,124 +94,124 @@ object MediaControl {
   /* static member */
   @JSGlobal("Windows.Media.MediaControl.onchanneldownpressed")
   @js.native
-  def onchanneldownpressed: EventHandler[js.Any] = js.native
-  inline def onchanneldownpressed_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onchanneldownpressed")(x.asInstanceOf[js.Any])
+  def onchanneldownpressed: EventHandler[Any] = js.native
+  inline def onchanneldownpressed_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onchanneldownpressed")(x.asInstanceOf[js.Any])
   
   /** Event raised when a ChannelUp command is issued to the application. */
   /* static member */
   @JSGlobal("Windows.Media.MediaControl.onchanneluppressed")
   @js.native
-  def onchanneluppressed: EventHandler[js.Any] = js.native
-  inline def onchanneluppressed_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onchanneluppressed")(x.asInstanceOf[js.Any])
+  def onchanneluppressed: EventHandler[Any] = js.native
+  inline def onchanneluppressed_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onchanneluppressed")(x.asInstanceOf[js.Any])
   
   /** Event raised when a FastForward command is issued to the application. */
   /* static member */
   @JSGlobal("Windows.Media.MediaControl.onfastforwardpressed")
   @js.native
-  def onfastforwardpressed: EventHandler[js.Any] = js.native
-  inline def onfastforwardpressed_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onfastforwardpressed")(x.asInstanceOf[js.Any])
+  def onfastforwardpressed: EventHandler[Any] = js.native
+  inline def onfastforwardpressed_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onfastforwardpressed")(x.asInstanceOf[js.Any])
   
   /** Event raised when a NextTrack command is issued to the application. */
   /* static member */
   @JSGlobal("Windows.Media.MediaControl.onnexttrackpressed")
   @js.native
-  def onnexttrackpressed: EventHandler[js.Any] = js.native
-  inline def onnexttrackpressed_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnexttrackpressed")(x.asInstanceOf[js.Any])
+  def onnexttrackpressed: EventHandler[Any] = js.native
+  inline def onnexttrackpressed_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnexttrackpressed")(x.asInstanceOf[js.Any])
   
   /** Event raised when a Pause command is issued to the application. */
   /* static member */
   @JSGlobal("Windows.Media.MediaControl.onpausepressed")
   @js.native
-  def onpausepressed: EventHandler[js.Any] = js.native
-  inline def onpausepressed_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onpausepressed")(x.asInstanceOf[js.Any])
+  def onpausepressed: EventHandler[Any] = js.native
+  inline def onpausepressed_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onpausepressed")(x.asInstanceOf[js.Any])
   
   /** Event raised when a PlayPauseToggle command is issued to the application. */
   /* static member */
   @JSGlobal("Windows.Media.MediaControl.onplaypausetogglepressed")
   @js.native
-  def onplaypausetogglepressed: EventHandler[js.Any] = js.native
-  inline def onplaypausetogglepressed_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onplaypausetogglepressed")(x.asInstanceOf[js.Any])
+  def onplaypausetogglepressed: EventHandler[Any] = js.native
+  inline def onplaypausetogglepressed_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onplaypausetogglepressed")(x.asInstanceOf[js.Any])
   
   /** Event raised when a Play command is issued to the application. */
   /* static member */
   @JSGlobal("Windows.Media.MediaControl.onplaypressed")
   @js.native
-  def onplaypressed: EventHandler[js.Any] = js.native
-  inline def onplaypressed_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onplaypressed")(x.asInstanceOf[js.Any])
+  def onplaypressed: EventHandler[Any] = js.native
+  inline def onplaypressed_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onplaypressed")(x.asInstanceOf[js.Any])
   
   /** Event raised when a PreviousTrack command is issued to the application. */
   /* static member */
   @JSGlobal("Windows.Media.MediaControl.onprevioustrackpressed")
   @js.native
-  def onprevioustrackpressed: EventHandler[js.Any] = js.native
-  inline def onprevioustrackpressed_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprevioustrackpressed")(x.asInstanceOf[js.Any])
+  def onprevioustrackpressed: EventHandler[Any] = js.native
+  inline def onprevioustrackpressed_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprevioustrackpressed")(x.asInstanceOf[js.Any])
   
   /** Event raised when a Record command is issued to the application. */
   /* static member */
   @JSGlobal("Windows.Media.MediaControl.onrecordpressed")
   @js.native
-  def onrecordpressed: EventHandler[js.Any] = js.native
-  inline def onrecordpressed_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecordpressed")(x.asInstanceOf[js.Any])
+  def onrecordpressed: EventHandler[Any] = js.native
+  inline def onrecordpressed_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrecordpressed")(x.asInstanceOf[js.Any])
   
   /** Event raised when a Rewind command is issued to the application. */
   /* static member */
   @JSGlobal("Windows.Media.MediaControl.onrewindpressed")
   @js.native
-  def onrewindpressed: EventHandler[js.Any] = js.native
-  inline def onrewindpressed_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrewindpressed")(x.asInstanceOf[js.Any])
+  def onrewindpressed: EventHandler[Any] = js.native
+  inline def onrewindpressed_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onrewindpressed")(x.asInstanceOf[js.Any])
   
   /** Event raised when the sound level changes. */
   /* static member */
   @JSGlobal("Windows.Media.MediaControl.onsoundlevelchanged")
   @js.native
-  def onsoundlevelchanged: EventHandler[js.Any] = js.native
-  inline def onsoundlevelchanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onsoundlevelchanged")(x.asInstanceOf[js.Any])
+  def onsoundlevelchanged: EventHandler[Any] = js.native
+  inline def onsoundlevelchanged_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onsoundlevelchanged")(x.asInstanceOf[js.Any])
   
   /** Event raised when a Stop command is issued to the application. */
   /* static member */
   @JSGlobal("Windows.Media.MediaControl.onstoppressed")
   @js.native
-  def onstoppressed: EventHandler[js.Any] = js.native
-  inline def onstoppressed_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onstoppressed")(x.asInstanceOf[js.Any])
+  def onstoppressed: EventHandler[Any] = js.native
+  inline def onstoppressed_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onstoppressed")(x.asInstanceOf[js.Any])
   
   /* static member */
-  inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def removeEventListener_channeldownpressed(`type`: channeldownpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_channeldownpressed(`type`: channeldownpressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def removeEventListener_channeluppressed(`type`: channeluppressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_channeluppressed(`type`: channeluppressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def removeEventListener_fastforwardpressed(`type`: fastforwardpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_fastforwardpressed(`type`: fastforwardpressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def removeEventListener_nexttrackpressed(`type`: nexttrackpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_nexttrackpressed(`type`: nexttrackpressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def removeEventListener_pausepressed(`type`: pausepressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_pausepressed(`type`: pausepressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def removeEventListener_playpausetogglepressed(`type`: playpausetogglepressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_playpausetogglepressed(`type`: playpausetogglepressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def removeEventListener_playpressed(`type`: playpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_playpressed(`type`: playpressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def removeEventListener_previoustrackpressed(`type`: previoustrackpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_previoustrackpressed(`type`: previoustrackpressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def removeEventListener_recordpressed(`type`: recordpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_recordpressed(`type`: recordpressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def removeEventListener_rewindpressed(`type`: rewindpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_rewindpressed(`type`: rewindpressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def removeEventListener_soundlevelchanged(`type`: soundlevelchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_soundlevelchanged(`type`: soundlevelchanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def removeEventListener_stoppressed(`type`: stoppressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_stoppressed(`type`: stoppressed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Gets the current sound level. */
   /* static member */

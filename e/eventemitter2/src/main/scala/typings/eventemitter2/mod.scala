@@ -7,16 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("eventemitter2", JSImport.Default)
+  @js.native
+  open class default () extends EventEmitter2 {
+    def this(options: ConstructorOptions) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("eventemitter2", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("eventemitter2", "default.defaultMaxListeners")
+    @js.native
+    def defaultMaxListeners: Double = js.native
+    inline def defaultMaxListeners_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMaxListeners")(x.asInstanceOf[js.Any])
+    
+    inline def once(emitter: EventEmitter2, event: event | eventNS): CancelablePromise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[Any]]]
+    inline def once(emitter: EventEmitter2, event: event | eventNS, options: OnceOptions): CancelablePromise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[Any]]]
+  }
+  
   @JSImport("eventemitter2", "EventEmitter2")
   @js.native
-  class EventEmitter2 () extends StObject {
+  open class EventEmitter2 () extends StObject {
     def this(options: ConstructorOptions) = this()
     
     def addListener(event: event | eventNS, listener: ListenerFn): this.type | Listener = js.native
     
-    def emit(event: event | eventNS, values: js.Any*): Boolean = js.native
+    def emit(event: event | eventNS, values: Any*): Boolean = js.native
     
-    def emitAsync(event: event | eventNS, values: js.Any*): js.Promise[js.Array[js.Any]] = js.native
+    def emitAsync(event: event | eventNS, values: Any*): js.Promise[js.Array[Any]] = js.native
     
     def eventNames(): js.Array[event | eventNS] = js.native
     def eventNames(nsAsArray: Boolean): js.Array[event | eventNS] = js.native
@@ -86,10 +107,10 @@ object mod {
     def stopListeningTo(target: GeneralEventEmitter): Boolean = js.native
     def stopListeningTo(target: GeneralEventEmitter, event: event | eventNS): Boolean = js.native
     
-    def waitFor(event: event | eventNS): CancelablePromise[js.Array[js.Any]] = js.native
-    def waitFor(event: event | eventNS, filter: WaitForFilter): CancelablePromise[js.Array[js.Any]] = js.native
-    def waitFor(event: event | eventNS, options: WaitForOptions): CancelablePromise[js.Array[js.Any]] = js.native
-    def waitFor(event: event | eventNS, timeout: Double): CancelablePromise[js.Array[js.Any]] = js.native
+    def waitFor(event: event | eventNS): CancelablePromise[js.Array[Any]] = js.native
+    def waitFor(event: event | eventNS, filter: WaitForFilter): CancelablePromise[js.Array[Any]] = js.native
+    def waitFor(event: event | eventNS, options: WaitForOptions): CancelablePromise[js.Array[Any]] = js.native
+    def waitFor(event: event | eventNS, timeout: Double): CancelablePromise[js.Array[Any]] = js.native
   }
   /* static members */
   object EventEmitter2 {
@@ -103,8 +124,8 @@ object mod {
     def defaultMaxListeners: Double = js.native
     inline def defaultMaxListeners_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMaxListeners")(x.asInstanceOf[js.Any])
     
-    inline def once(emitter: EventEmitter2, event: event | eventNS): CancelablePromise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[js.Any]]]
-    inline def once(emitter: EventEmitter2, event: event | eventNS, options: OnceOptions): CancelablePromise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[js.Any]]]
+    inline def once(emitter: EventEmitter2, event: event | eventNS): CancelablePromise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[Any]]]
+    inline def once(emitter: EventEmitter2, event: event | eventNS, options: OnceOptions): CancelablePromise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[Any]]]
   }
   
   @js.native
@@ -197,34 +218,61 @@ object mod {
     }
   }
   
-  type EventAndListener = js.Function2[/* event */ String | js.Array[String], /* repeated */ js.Any, Unit]
+  type EventAndListener = js.Function2[/* event */ String | js.Array[String], /* repeated */ Any, Unit]
   
   trait GeneralEventEmitter extends StObject {
     
-    var addEventListener: js.Function
+    def addEventListener(event: event, handler: ListenerFn): this.type
     
-    var removeEventListener: js.Function
+    var addListener: js.UndefOr[js.Function2[/* event */ event, /* handler */ ListenerFn, this.type]] = js.undefined
+    
+    var off: js.UndefOr[js.Function2[/* event */ event, /* handler */ ListenerFn, this.type]] = js.undefined
+    
+    var on: js.UndefOr[js.Function2[/* event */ event, /* handler */ ListenerFn, this.type]] = js.undefined
+    
+    def removeEventListener(event: event, handler: ListenerFn): this.type
+    
+    var removeListener: js.UndefOr[js.Function2[/* event */ event, /* handler */ ListenerFn, this.type]] = js.undefined
   }
   object GeneralEventEmitter {
     
-    inline def apply(addEventListener: js.Function, removeEventListener: js.Function): GeneralEventEmitter = {
-      val __obj = js.Dynamic.literal(addEventListener = addEventListener.asInstanceOf[js.Any], removeEventListener = removeEventListener.asInstanceOf[js.Any])
+    inline def apply(
+      addEventListener: (event, ListenerFn) => GeneralEventEmitter,
+      removeEventListener: (event, ListenerFn) => GeneralEventEmitter
+    ): GeneralEventEmitter = {
+      val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), removeEventListener = js.Any.fromFunction2(removeEventListener))
       __obj.asInstanceOf[GeneralEventEmitter]
     }
     
     extension [Self <: GeneralEventEmitter](x: Self) {
       
-      inline def setAddEventListener(value: js.Function): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
+      inline def setAddEventListener(value: (event, ListenerFn) => GeneralEventEmitter): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
-      inline def setRemoveEventListener(value: js.Function): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
+      inline def setAddListener(value: (/* event */ event, /* handler */ ListenerFn) => GeneralEventEmitter): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      
+      inline def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
+      
+      inline def setOff(value: (/* event */ event, /* handler */ ListenerFn) => GeneralEventEmitter): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      
+      inline def setOffUndefined: Self = StObject.set(x, "off", js.undefined)
+      
+      inline def setOn(value: (/* event */ event, /* handler */ ListenerFn) => GeneralEventEmitter): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      
+      inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+      
+      inline def setRemoveEventListener(value: (event, ListenerFn) => GeneralEventEmitter): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
+      
+      inline def setRemoveListener(value: (/* event */ event, /* handler */ ListenerFn) => GeneralEventEmitter): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      
+      inline def setRemoveListenerUndefined: Self = StObject.set(x, "removeListener", js.undefined)
     }
   }
   
   trait ListenToOptions extends StObject {
     
-    var off: js.UndefOr[js.Function2[/* event */ event | eventNS, /* handler */ js.Function, Unit]] = js.undefined
+    var off: js.UndefOr[js.Function2[/* event */ event | eventNS, /* handler */ ListenerFn, Unit]] = js.undefined
     
-    var on: js.UndefOr[js.Function2[/* event */ event | eventNS, /* handler */ js.Function, Unit]] = js.undefined
+    var on: js.UndefOr[js.Function2[/* event */ event | eventNS, /* handler */ ListenerFn, Unit]] = js.undefined
     
     var reducers: js.Function | js.Object
   }
@@ -237,11 +285,11 @@ object mod {
     
     extension [Self <: ListenToOptions](x: Self) {
       
-      inline def setOff(value: (/* event */ event | eventNS, /* handler */ js.Function) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (/* event */ event | eventNS, /* handler */ ListenerFn) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
       inline def setOffUndefined: Self = StObject.set(x, "off", js.undefined)
       
-      inline def setOn(value: (/* event */ event | eventNS, /* handler */ js.Function) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (/* event */ event | eventNS, /* handler */ ListenerFn) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
       inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
       
@@ -255,7 +303,7 @@ object mod {
     
     var event: typings.eventemitter2.mod.event | eventNS
     
-    def listener(values: js.Any*): Unit
+    def listener(values: Any*): Unit
     @JSName("listener")
     var listener_Original: ListenerFn
     
@@ -266,7 +314,7 @@ object mod {
     inline def apply(
       emitter: EventEmitter2,
       event: event | eventNS,
-      listener: /* repeated */ js.Any => Unit,
+      listener: /* repeated */ Any => Unit,
       off: () => Listener
     ): Listener = {
       val __obj = js.Dynamic.literal(emitter = emitter.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], listener = js.Any.fromFunction1(listener), off = js.Any.fromFunction0(off))
@@ -279,15 +327,15 @@ object mod {
       
       inline def setEvent(value: event | eventNS): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      inline def setEventVarargs(value: event*): Self = StObject.set(x, "event", js.Array(value :_*))
+      inline def setEventVarargs(value: event*): Self = StObject.set(x, "event", js.Array(value*))
       
-      inline def setListener(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
+      inline def setListener(value: /* repeated */ Any => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
       
       inline def setOff(value: () => Listener): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
     }
   }
   
-  type ListenerFn = js.Function1[/* repeated */ js.Any, Unit]
+  type ListenerFn = js.Function1[/* repeated */ Any, Unit]
   
   trait OnOptions extends StObject {
     
@@ -360,7 +408,7 @@ object mod {
     }
   }
   
-  type WaitForFilter = js.Function1[/* repeated */ js.Any, Boolean]
+  type WaitForFilter = js.Function1[/* repeated */ Any, Boolean]
   
   trait WaitForOptions extends StObject {
     
@@ -372,7 +420,7 @@ object mod {
     /**
       * @default null
       */
-    def filter(values: js.Any*): Boolean
+    def filter(values: Any*): Boolean
     /**
       * @default null
       */
@@ -398,7 +446,7 @@ object mod {
     
     inline def apply(
       Promise: js.Function,
-      filter: /* repeated */ js.Any => Boolean,
+      filter: /* repeated */ Any => Boolean,
       handleError: Boolean,
       overload: Boolean,
       timeout: Double
@@ -409,7 +457,7 @@ object mod {
     
     extension [Self <: WaitForOptions](x: Self) {
       
-      inline def setFilter(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* repeated */ Any => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setHandleError(value: Boolean): Self = StObject.set(x, "handleError", value.asInstanceOf[js.Any])
       

@@ -2,6 +2,7 @@ package typings.omelette
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.omelette.omeletteStrings.complete
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -48,6 +49,8 @@ object mod extends Shortcut {
     }
   }
   
+  type CallbackOnComplete = js.Function2[/* fragment */ String, /* obj */ CallbackValue, Unit]
+  
   trait CallbackValue extends StObject {
     
     var before: String
@@ -93,6 +96,9 @@ object mod extends Shortcut {
     def on(action: String, callback: Callback): Unit = js.native
     
     def onAsync(actions: String, callback: CallbackAsync): Unit = js.native
+    
+    @JSName("on")
+    def on_complete(action: complete, callback: CallbackOnComplete): Unit = js.native
     
     def setupShellInitFile(): Unit = js.native
     def setupShellInitFile(initFile: String): Unit = js.native

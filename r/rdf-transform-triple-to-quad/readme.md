@@ -10,10 +10,10 @@ RDFJS Source which transforms a triple stream to a quad stream
 | ------------------ | :-------------: |
 | Full name          | rdf-transform-triple-to-quad |
 | Keywords           | rdf, rdfjs, rdf-ext, triple, quad, stream, transform |
-| # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 8429 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5101.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/rdf-ext/rdf-transform-triple-to-quad)

@@ -66,7 +66,7 @@ object CreateProjectRequest {
     
     inline def setSourceCodeUndefined: Self = StObject.set(x, "sourceCode", js.undefined)
     
-    inline def setSourceCodeVarargs(value: Code*): Self = StObject.set(x, "sourceCode", js.Array(value :_*))
+    inline def setSourceCodeVarargs(value: Code*): Self = StObject.set(x, "sourceCode", js.Array(value*))
     
     inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

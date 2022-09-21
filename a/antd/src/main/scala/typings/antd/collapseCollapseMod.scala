@@ -2,6 +2,7 @@ package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.collapsePanelMod.CollapsePanelProps
+import typings.antd.collapsePanelMod.CollapsibleType
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import typings.react.mod.FunctionComponent
@@ -33,7 +34,11 @@ object collapseCollapseMod extends Shortcut {
     
     var bordered: js.UndefOr[Boolean] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
+    
+    var collapsible: js.UndefOr[CollapsibleType] = js.undefined
     
     var defaultActiveKey: js.UndefOr[(js.Array[String | Double]) | String | Double] = js.undefined
     
@@ -68,21 +73,29 @@ object collapseCollapseMod extends Shortcut {
       
       inline def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
       
-      inline def setActiveKeyVarargs(value: (String | Double)*): Self = StObject.set(x, "activeKey", js.Array(value :_*))
+      inline def setActiveKeyVarargs(value: (String | Double)*): Self = StObject.set(x, "activeKey", js.Array(value*))
       
       inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
       inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setCollapsible(value: CollapsibleType): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+      
+      inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
       
       inline def setDefaultActiveKey(value: (js.Array[String | Double]) | String | Double): Self = StObject.set(x, "defaultActiveKey", value.asInstanceOf[js.Any])
       
       inline def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
       
-      inline def setDefaultActiveKeyVarargs(value: (String | Double)*): Self = StObject.set(x, "defaultActiveKey", js.Array(value :_*))
+      inline def setDefaultActiveKeyVarargs(value: (String | Double)*): Self = StObject.set(x, "defaultActiveKey", js.Array(value*))
       
       inline def setDestroyInactivePanel(value: Boolean): Self = StObject.set(x, "destroyInactivePanel", value.asInstanceOf[js.Any])
       
@@ -115,16 +128,35 @@ object collapseCollapseMod extends Shortcut {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.left
-    - typings.antd.antdStrings.right
+    - typings.antd.antdStrings.start
+    - typings.antd.antdStrings.end
+    - typings.antd.collapseCollapseMod.ExpandIconPositionLegacy
     - scala.Unit
   */
   type ExpandIconPosition = js.UndefOr[_ExpandIconPosition]
+  
+  /** @deprecated Please use `start` | `end` instead */
+  /* Rewritten from type alias, can be one of: 
+    - typings.antd.antdStrings.left
+    - typings.antd.antdStrings.right
+  */
+  trait ExpandIconPositionLegacy
+    extends StObject
+       with _ExpandIconPosition
+  object ExpandIconPositionLegacy {
+    
+    inline def left: typings.antd.antdStrings.left = "left".asInstanceOf[typings.antd.antdStrings.left]
+    
+    inline def right: typings.antd.antdStrings.right = "right".asInstanceOf[typings.antd.antdStrings.right]
+  }
   
   trait PanelProps extends StObject {
     
     var className: js.UndefOr[String] = js.undefined
     
+    var collapsible: js.UndefOr[CollapsibleType] = js.undefined
+    
+    /** @deprecated Use `collapsible="disabled"` instead */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var extra: js.UndefOr[ReactNode] = js.undefined
@@ -151,6 +183,10 @@ object collapseCollapseMod extends Shortcut {
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setCollapsible(value: CollapsibleType): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+      
+      inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.Loader
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,12 +32,12 @@ trait MultiFile extends StObject {
   /**
     * A storage container for transient data that the loading files need.
     */
-  var config: js.Any
+  var config: Any
   
   /**
     * The number of files that failed to load.
     */
-  var failed: integer
+  var failed: Double
   
   /**
     * Array of files that make up this MultiFile.
@@ -81,7 +80,7 @@ trait MultiFile extends StObject {
   /**
     * The number of files to load.
     */
-  var pending: integer
+  var pending: Double
   
   /**
     * A reference to the Loaders prefix at the time this MultiFile was created.
@@ -100,8 +99,8 @@ object MultiFile {
     addToMultiFile: File => MultiFile,
     baseURL: String,
     complete: Boolean,
-    config: js.Any,
-    failed: integer,
+    config: Any,
+    failed: Double,
     files: js.Array[File],
     isReadyToProcess: () => Boolean,
     key: String,
@@ -109,7 +108,7 @@ object MultiFile {
     onFileComplete: File => Unit,
     onFileFailed: File => Unit,
     path: String,
-    pending: integer,
+    pending: Double,
     prefix: String,
     `type`: String
   ): MultiFile = {
@@ -126,13 +125,13 @@ object MultiFile {
     
     inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
-    inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    inline def setFailed(value: integer): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
     inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setIsReadyToProcess(value: () => Boolean): Self = StObject.set(x, "isReadyToProcess", js.Any.fromFunction0(value))
     
@@ -146,7 +145,7 @@ object MultiFile {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPending(value: integer): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     

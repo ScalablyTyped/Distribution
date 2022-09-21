@@ -63,13 +63,13 @@ object EnvelopeTemplateResults {
     
     inline def setEnvelopeTemplatesUndefined: Self = StObject.set(x, "envelopeTemplates", js.undefined)
     
-    inline def setEnvelopeTemplatesVarargs(value: EnvelopeTemplate*): Self = StObject.set(x, "envelopeTemplates", js.Array(value :_*))
+    inline def setEnvelopeTemplatesVarargs(value: EnvelopeTemplate*): Self = StObject.set(x, "envelopeTemplates", js.Array(value*))
     
     inline def setFolders(value: js.Array[/* This object contains details about a folder. */ Folder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
     
     inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
-    inline def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = StObject.set(x, "folders", js.Array(value :_*))
+    inline def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = StObject.set(x, "folders", js.Array(value*))
     
     inline def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
     

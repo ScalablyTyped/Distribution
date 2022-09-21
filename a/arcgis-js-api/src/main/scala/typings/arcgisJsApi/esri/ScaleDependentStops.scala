@@ -11,13 +11,6 @@ trait ScaleDependentStops
      with Object {
   
   /**
-    * The only supported expression is `view.scale`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
-    */
-  var expression: js.UndefOr[String] = js.undefined
-  
-  /**
     * An array of objects that define the size of the icon (or alternatively the width of the polygon outline) at the given scale `value`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
@@ -62,13 +55,9 @@ object ScaleDependentStops {
   
   extension [Self <: ScaleDependentStops](x: Self) {
     
-    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
-    
-    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
-    
     inline def setStops(value: js.Array[SizeStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    inline def setStopsVarargs(value: SizeStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: SizeStop*): Self = StObject.set(x, "stops", js.Array(value*))
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

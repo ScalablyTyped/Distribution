@@ -12,7 +12,7 @@ trait ShowMessageRequestParams extends StObject {
   var actions: js.UndefOr[js.Array[MessageActionItem]] = js.undefined
   
   /**
-    * The actual message
+    * The actual message.
     */
   var message: String
   
@@ -35,7 +35,7 @@ object ShowMessageRequestParams {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: MessageActionItem*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: MessageActionItem*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

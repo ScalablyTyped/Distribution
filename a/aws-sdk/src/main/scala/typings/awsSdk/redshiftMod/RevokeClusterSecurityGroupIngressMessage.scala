@@ -22,7 +22,7 @@ trait RevokeClusterSecurityGroupIngressMessage extends StObject {
   var EC2SecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS account number of the owner of the security group specified in the EC2SecurityGroupName parameter. The AWS access key ID is not an acceptable value. If EC2SecurityGroupOwnerId is specified, EC2SecurityGroupName must also be provided. and CIDRIP cannot be provided.  Example: 111122223333 
+    * The Amazon Web Services account number of the owner of the security group specified in the EC2SecurityGroupName parameter. The Amazon Web Services access key ID is not an acceptable value. If EC2SecurityGroupOwnerId is specified, EC2SecurityGroupName must also be provided. and CIDRIP cannot be provided.  Example: 111122223333 
     */
   var EC2SecurityGroupOwnerId: js.UndefOr[String] = js.undefined
 }

@@ -27,14 +27,14 @@ trait BootstrapTagBox
   
   def addItem(text: String): Double = js.native
   // tslint:disable-line:unified-signatures
-  def addItem(text: String, value: js.Any): Double = js.native
+  def addItem(text: String, value: Any): Double = js.native
   // tslint:disable-line:unified-signatures
-  def addItem(text: String, value: js.Any, iconCssClass: String): Double = js.native
+  def addItem(text: String, value: Any, iconCssClass: String): Double = js.native
   def addItem(texts: js.Array[String]): Double = js.native
   // tslint:disable-line:unified-signatures
-  def addItem(texts: js.Array[String], value: js.Any): Double = js.native
+  def addItem(texts: js.Array[String], value: Any): Double = js.native
   // tslint:disable-line:unified-signatures unified-signatures
-  def addItem(texts: js.Array[String], value: js.Any, iconCssClass: String): Double = js.native
+  def addItem(texts: js.Array[String], value: Any, iconCssClass: String): Double = js.native
   
   // tslint:disable-line:unified-signatures unified-signatures
   def addItemCssClass(index: Double, className: String): Unit = js.native
@@ -53,11 +53,11 @@ trait BootstrapTagBox
   
   def endUpdate(): Unit = js.native
   
-  def ensureDropDownLoaded(callbackFunction: js.Any): Unit = js.native
+  def ensureDropDownLoaded(callbackFunction: Any): Unit = js.native
   
   def findItemByText(text: String): BootstrapListBoxItem | Null = js.native
   
-  def findItemByValue(value: js.Any): BootstrapListBoxItem | Null = js.native
+  def findItemByValue(value: Any): BootstrapListBoxItem | Null = js.native
   
   def getButtonVisible(number: Double): Boolean = js.native
   
@@ -77,13 +77,13 @@ trait BootstrapTagBox
   
   def getTagCollection(): js.Array[String] = js.native
   
-  def getTagHtmlElement(index: Double): js.Any = js.native
+  def getTagHtmlElement(index: Double): Any = js.native
   
   def getTagIndexByText(text: String): Double = js.native
   
-  def getTagRemoveButtonHtmlElement(index: Double): js.Any = js.native
+  def getTagRemoveButtonHtmlElement(index: Double): Any = js.native
   
-  def getTagTextHtmlElement(index: Double): js.Any = js.native
+  def getTagTextHtmlElement(index: Double): Any = js.native
   
   def getText(): String = js.native
   
@@ -91,14 +91,14 @@ trait BootstrapTagBox
   
   def insertItem(index: Double, text: String): Unit = js.native
   // tslint:disable-line:unified-signatures
-  def insertItem(index: Double, text: String, value: js.Any): Unit = js.native
+  def insertItem(index: Double, text: String, value: Any): Unit = js.native
   // tslint:disable-line:unified-signatures
-  def insertItem(index: Double, text: String, value: js.Any, iconCssClass: String): Unit = js.native
+  def insertItem(index: Double, text: String, value: Any, iconCssClass: String): Unit = js.native
   def insertItem(index: Double, texts: js.Array[String]): Unit = js.native
   // tslint:disable-line:unified-signatures
-  def insertItem(index: Double, texts: js.Array[String], value: js.Any): Unit = js.native
+  def insertItem(index: Double, texts: js.Array[String], value: Any): Unit = js.native
   // tslint:disable-line:unified-signatures unified-signatures
-  def insertItem(index: Double, texts: js.Array[String], value: js.Any, iconCssClass: String): Unit = js.native
+  def insertItem(index: Double, texts: js.Array[String], value: Any, iconCssClass: String): Unit = js.native
   
   // tslint:disable-line:unified-signatures unified-signatures
   def isCustomTag(text: String, caseSensitive: Boolean): Boolean = js.native
@@ -392,8 +392,8 @@ trait BootstrapTagBox
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
   
-  def performCallback(data: js.Any): js.Promise[Unit] = js.native
-  def performCallback(data: js.Any, onSuccess: js.Function0[Unit]): Unit = js.native
+  def performCallback(data: Any): js.Promise[Unit] = js.native
+  def performCallback(data: Any, onSuccess: js.Function0[Unit]): Unit = js.native
   
   def removeItem(index: Double): Unit = js.native
   

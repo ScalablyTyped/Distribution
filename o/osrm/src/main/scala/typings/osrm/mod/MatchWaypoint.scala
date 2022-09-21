@@ -38,10 +38,10 @@ object MatchWaypoint {
     
     inline def setMatchings_index(value: js.Array[Double]): Self = StObject.set(x, "matchings_index", value.asInstanceOf[js.Any])
     
-    inline def setMatchings_indexVarargs(value: Double*): Self = StObject.set(x, "matchings_index", js.Array(value :_*))
+    inline def setMatchings_indexVarargs(value: Double*): Self = StObject.set(x, "matchings_index", js.Array(value*))
     
     inline def setWaypoint_index(value: js.Array[Double]): Self = StObject.set(x, "waypoint_index", value.asInstanceOf[js.Any])
     
-    inline def setWaypoint_indexVarargs(value: Double*): Self = StObject.set(x, "waypoint_index", js.Array(value :_*))
+    inline def setWaypoint_indexVarargs(value: Double*): Self = StObject.set(x, "waypoint_index", js.Array(value*))
   }
 }

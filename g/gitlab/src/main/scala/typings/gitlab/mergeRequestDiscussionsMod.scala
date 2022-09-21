@@ -10,7 +10,7 @@ object mergeRequestDiscussionsMod {
   
   @JSImport("gitlab/dist/types/core/services/MergeRequestDiscussions", "MergeRequestDiscussions")
   @js.native
-  class MergeRequestDiscussions protected () extends ResourceDiscussions {
+  open class MergeRequestDiscussions protected () extends ResourceDiscussions {
     def this(options: BaseServiceOptions) = this()
   }
 }

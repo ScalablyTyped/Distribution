@@ -8,7 +8,7 @@ object animationEventMod {
   
   @JSImport("babylonjs/Animations/animationEvent", "AnimationEvent")
   @js.native
-  class AnimationEvent protected () extends StObject {
+  open class AnimationEvent protected () extends StObject {
     /**
       * Initializes the animation event
       * @param frame The frame for which the event is triggered

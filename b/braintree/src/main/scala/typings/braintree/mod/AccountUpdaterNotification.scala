@@ -1,6 +1,5 @@
 package typings.braintree.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object AccountUpdaterNotification {
   inline def apply(
     accountUpdaterDailyReport: AccountUpdaterDailyReport,
     kind: AccountUpdaterNotificationKind,
-    timestamp: Date
+    timestamp: js.Date
   ): AccountUpdaterNotification = {
     val __obj = js.Dynamic.literal(accountUpdaterDailyReport = accountUpdaterDailyReport.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountUpdaterNotification]

@@ -1,9 +1,7 @@
 package typings.intlTelInput.mod
 
-import typings.intlTelInput.mod.intlTelInputUtils.CountryData
 import typings.intlTelInput.mod.intlTelInputUtils.numberFormat
 import typings.intlTelInput.mod.intlTelInputUtils.numberType
-import typings.intlTelInput.mod.intlTelInputUtils.placeholderNumberType
 import typings.intlTelInput.mod.intlTelInputUtils.validationError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

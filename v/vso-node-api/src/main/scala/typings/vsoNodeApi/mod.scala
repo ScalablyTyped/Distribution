@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("vso-node-api/handlers/basiccreds", "BasicCredentialHandler")
   @js.native
-  class BasicCredentialHandler protected ()
+  open class BasicCredentialHandler protected ()
     extends StObject
        with IRequestHandler {
     def this(username: String, password: String) = this()
@@ -19,12 +19,12 @@ object mod {
     override def canHandleAuthentication(res: IHttpResponse): Boolean = js.native
     
     /* CompleteClass */
-    override def handleAuthentication(httpClient: js.Any, protocol: js.Any, options: js.Any, objs: js.Any, finalCallback: js.Any): Unit = js.native
+    override def handleAuthentication(httpClient: Any, protocol: Any, options: Any, objs: Any, finalCallback: Any): Unit = js.native
     
     var password: String = js.native
     
     /* CompleteClass */
-    override def prepareRequest(options: js.Any): Unit = js.native
+    override def prepareRequest(options: Any): Unit = js.native
     
     var username: String = js.native
   }

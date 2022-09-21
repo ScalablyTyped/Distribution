@@ -29,7 +29,7 @@ object ListLexiconsOutput {
     
     inline def setLexiconsUndefined: Self = StObject.set(x, "Lexicons", js.undefined)
     
-    inline def setLexiconsVarargs(value: LexiconDescription*): Self = StObject.set(x, "Lexicons", js.Array(value :_*))
+    inline def setLexiconsVarargs(value: LexiconDescription*): Self = StObject.set(x, "Lexicons", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "TextStyle")
 @js.native
-/* private */ class TextStyle () extends StObject {
+/* private */ open class TextStyle () extends StObject {
   
   def asNormal(): TextStyle = js.native
   

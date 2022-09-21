@@ -6,9 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object supportsMod {
   
-  @JSImport("@sentry/utils/dist/supports", JSImport.Namespace)
+  @JSImport("@sentry/utils/types/supports", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def isNativeFetch(func: js.Function): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNativeFetch")(func.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def supportsDOMError(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsDOMError")().asInstanceOf[Boolean]
   

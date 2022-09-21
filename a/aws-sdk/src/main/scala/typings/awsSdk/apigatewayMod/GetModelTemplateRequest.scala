@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetModelTemplateRequest extends StObject {
   
   /**
-    * [Required] The name of the model for which to generate a template.
+    * The name of the model for which to generate a template.
     */
   var modelName: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }

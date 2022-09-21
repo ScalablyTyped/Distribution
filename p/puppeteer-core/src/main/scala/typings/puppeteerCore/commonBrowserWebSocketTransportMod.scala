@@ -10,19 +10,18 @@ object commonBrowserWebSocketTransportMod {
   
   @JSImport("puppeteer-core/lib/esm/puppeteer/common/BrowserWebSocketTransport", "BrowserWebSocketTransport")
   @js.native
-  class BrowserWebSocketTransport protected ()
+  open class BrowserWebSocketTransport protected ()
     extends StObject
        with ConnectionTransport {
     def this(ws: WebSocket) = this()
     
-    /* private */ var _ws: js.Any = js.native
+    /* CompleteClass */
+    override def close(): Unit = js.native
+    
+    /* private */ var `private`: Any = js.native
     
     /* CompleteClass */
-    override def close(): js.Any = js.native
-    
-    def send(message: String): Unit = js.native
-    /* CompleteClass */
-    override def send(string: js.Any): js.Any = js.native
+    override def send(message: String): Unit = js.native
   }
   /* static members */
   object BrowserWebSocketTransport {

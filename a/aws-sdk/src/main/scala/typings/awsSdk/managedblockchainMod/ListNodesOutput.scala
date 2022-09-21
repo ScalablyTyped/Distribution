@@ -33,6 +33,6 @@ object ListNodesOutput {
     
     inline def setNodesUndefined: Self = StObject.set(x, "Nodes", js.undefined)
     
-    inline def setNodesVarargs(value: NodeSummary*): Self = StObject.set(x, "Nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: NodeSummary*): Self = StObject.set(x, "Nodes", js.Array(value*))
   }
 }

@@ -10,9 +10,9 @@ Implementation of JSON Merge Patch (RFC 7396)
 | Full name          | json-merge-patch |
 | Keywords           | JSON, Merge, Patch, rfc, 7396 |
 | # releases         | 3 |
-| # dependents       | 21 |
-| # downloads        | 3594825 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 577649.0 |
+| # stars            | 66.0 |
 
 ## Links
 - [Homepage](https://github.com/pierreinglebert/json-merge-patch)

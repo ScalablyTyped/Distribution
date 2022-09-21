@@ -1,5 +1,11 @@
 package typings.recharts.mod
 
+import typings.d3Shape.mod.CurveFactory
+import typings.react.mod.ReactNode
+import typings.recharts.anon.ErrorVal
+import typings.recharts.anon.Height
+import typings.recharts.anon.Offset
+import typings.recharts.anon.Width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - java.lang.String
   - scala.Double
-  - typings.recharts.mod.ContentRenderer[js.Any]
+  - typings.recharts.mod.ContentRenderer[scala.Any]
   - typings.recharts.rechartsStrings.auto
   - typings.recharts.rechartsStrings.dataMin
   - typings.recharts.rechartsStrings.dataMax
 */
-type AxisDomain = typings.recharts.mod._AxisDomain | typings.recharts.mod.ContentRenderer[js.Any] | java.lang.String | scala.Double
+type AxisDomain = _AxisDomain | ContentRenderer[Any] | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - scala.Double
@@ -21,9 +27,9 @@ type AxisDomain = typings.recharts.mod._AxisDomain | typings.recharts.mod.Conten
   - typings.recharts.rechartsStrings.preserveEnd
   - typings.recharts.rechartsStrings.preserveStartEnd
 */
-type AxisInterval = typings.recharts.mod._AxisInterval | scala.Double
+type AxisInterval = _AxisInterval | Double
 
-type BBoxUpdateCallback = js.Function1[/* box */ typings.recharts.anon.Width, scala.Unit]
+type BBoxUpdateCallback = js.Function1[/* box */ Width, Unit]
 
 /* Rewritten from type alias, can be one of: 
   - scala.Double
@@ -31,34 +37,27 @@ type BBoxUpdateCallback = js.Function1[/* box */ typings.recharts.anon.Width, sc
   - typings.recharts.rechartsStrings.dataMin
   - typings.recharts.rechartsStrings.dataMax
 */
-type BaseValueType = typings.recharts.mod._BaseValueType | scala.Double
+type BaseValueType = _BaseValueType | Double
 
-type ContentRenderer[P] = js.Function1[/* props */ P, typings.react.mod.ReactNode]
+type ContentRenderer[P] = js.Function1[/* props */ P, ReactNode]
 
-type DataKey = java.lang.String | scala.Double | (js.Function1[
-/* dataObject */ js.Any, 
-java.lang.String | scala.Double | (js.Tuple2[scala.Double, scala.Double]) | scala.Null])
+type DataKey = String | Double | (js.Function1[/* dataObject */ Any, String | Double | (js.Tuple2[Double, Double]) | Null])
 
-type DataPointFormatter = js.Function2[
-/* entry */ js.Any, 
-/* dataKey */ typings.recharts.mod.DataKey, 
-typings.recharts.anon.ErrorVal]
+type DataPointFormatter = js.Function2[/* entry */ Any, /* dataKey */ DataKey, ErrorVal]
 
-type HorizontalCoordinatesGenerator = js.Function1[/* arg */ typings.recharts.anon.Height, js.Array[scala.Double]]
+type HorizontalCoordinatesGenerator = js.Function1[/* arg */ Height, js.Array[Double]]
 
-type ItemSorter[T] = js.Function2[/* a */ T, /* b */ T, scala.Double]
+type ItemSorter[T] = js.Function2[/* a */ T, /* b */ T, Double]
 
-type LabelFormatter = js.Function1[/* label */ java.lang.String | scala.Double, typings.react.mod.ReactNode]
-
-type LabelListProps = typings.recharts.anon.Angle & (typings.recharts.anon.DataKey | typings.recharts.anon.ValueAccessor)
+type LabelFormatter = js.Function1[/* label */ String | Double, ReactNode]
 
 type LegendValueFormatter = js.Function3[
 /* value */ js.UndefOr[
   /* import warning: importer.ImportType#apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ js.Any
 ], 
-/* entry */ js.UndefOr[typings.recharts.mod.LegendPayload], 
-/* i */ js.UndefOr[scala.Double], 
-js.Any]
+/* entry */ js.UndefOr[LegendPayload], 
+/* i */ js.UndefOr[Double], 
+Any]
 
 /* Rewritten from type alias, can be one of: 
   - typings.recharts.rechartsStrings.basis
@@ -75,9 +74,9 @@ js.Any]
   - typings.recharts.rechartsStrings.stepAfter
   - typings.d3Shape.mod.CurveFactory
 */
-type LineType = typings.recharts.mod._LineType | typings.d3Shape.mod.CurveFactory
+type LineType = _LineType | CurveFactory
 
-type Percentage = java.lang.String
+type Percentage = String
 
 /* Rewritten from type alias, can be one of: 
   - scala.Double
@@ -85,19 +84,19 @@ type Percentage = java.lang.String
   - typings.recharts.rechartsStrings.dataMin
   - typings.recharts.rechartsStrings.dataMax
 */
-type PolarRadiusAxisDomain = typings.recharts.mod._PolarRadiusAxisDomain | scala.Double
+type PolarRadiusAxisDomain = _PolarRadiusAxisDomain | Double
 
-type ScaleCalculator = js.Function1[/* x */ scala.Double | java.lang.String, scala.Double]
+type ScaleCalculator = js.Function1[/* x */ Double | String, Double]
 
-type TickFormatterFunction = js.Function1[/* value */ js.Any, js.Any]
+type TickFormatterFunction = js.Function1[/* value */ Any, Any]
 
-type TickGeneratorFunction = js.Function1[/* noTicksProps */ js.Object, js.Array[js.Any]]
+type TickGeneratorFunction = js.Function1[/* noTicksProps */ js.Object, js.Array[Any]]
 
 type TooltipFormatter = js.Function4[
-/* value */ java.lang.String | scala.Double | (js.Array[java.lang.String | scala.Double]), 
-/* name */ java.lang.String, 
-/* entry */ typings.recharts.mod.TooltipPayload, 
-/* index */ scala.Double, 
-typings.react.mod.ReactNode]
+/* value */ String | Double | (js.Array[String | Double]), 
+/* name */ String, 
+/* entry */ TooltipPayload, 
+/* index */ Double, 
+ReactNode]
 
-type VerticalCoordinatesGenerator = js.Function1[/* arg */ typings.recharts.anon.Offset, js.Array[scala.Double]]
+type VerticalCoordinatesGenerator = js.Function1[/* arg */ Offset, js.Array[Double]]

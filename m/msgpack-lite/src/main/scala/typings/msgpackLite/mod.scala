@@ -1,11 +1,10 @@
 package typings.msgpackLite
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,11 +18,11 @@ object mod {
   @js.native
   trait Decoder extends EventEmitter {
     
-    var bufferish: js.Any = js.native
+    var bufferish: Any = js.native
     
-    def decode(chunk: js.Any): Unit = js.native
+    def decode(chunk: Any): Unit = js.native
     
-    def end(chunk: js.Any): Unit = js.native
+    def end(chunk: Any): Unit = js.native
     
     def fetch(): Unit = js.native
     
@@ -33,13 +32,13 @@ object mod {
     
     def pull(): Double = js.native
     
-    def push(chunk: js.Any): Unit = js.native
+    def push(chunk: Any): Unit = js.native
     
     def read(): Double = js.native
     
     def reserve(length: Double): Double = js.native
     
-    def write(chunk: js.Any): Unit = js.native
+    def write(chunk: Any): Unit = js.native
   }
   object Decoder {
     
@@ -75,15 +74,15 @@ object mod {
   inline def createEncodeStream(): EncodeStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createEncodeStream")().asInstanceOf[EncodeStream]
   inline def createEncodeStream(options: EncoderOptions & TransformOptions): EncodeStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createEncodeStream")(options.asInstanceOf[js.Any]).asInstanceOf[EncodeStream]
   
-  inline def decode(input: js.Array[Double]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def decode(input: js.Array[Double], options: DecoderOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def decode(input: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def decode(input: Buffer, options: DecoderOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def decode(input: Uint8Array): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def decode(input: Uint8Array, options: DecoderOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def decode(input: js.Array[Double]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def decode(input: js.Array[Double], options: DecoderOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def decode(input: js.typedarray.Uint8Array): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def decode(input: js.typedarray.Uint8Array, options: DecoderOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def decode(input: Buffer): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def decode(input: Buffer, options: DecoderOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def encode(input: js.Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  inline def encode(input: js.Any, options: EncoderOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def encode(input: Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def encode(input: Any, options: EncoderOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   trait CodecOptions extends StObject {
     
@@ -185,8 +184,8 @@ object mod {
       */
     def addExtPacker[T](
       etype: Double,
-      Class: Instantiable1[/* args (repeated) */ js.Any, T],
-      packer: js.Function1[/* t */ T, Buffer | Uint8Array]
+      Class: Instantiable1[/* args (repeated) */ Any, T],
+      packer: js.Function1[/* t */ T, Buffer | js.typedarray.Uint8Array]
     ): Unit
     
     /**
@@ -195,13 +194,13 @@ object mod {
       * @param etype an integer within the range of 0 and 127 (0x0 and 0x7F)
       * @param unpacker a function that converts bytes to an instance of T
       */
-    def addExtUnpacker[T](etype: Double, unpacker: js.Function1[/* data */ Buffer | Uint8Array, T]): Unit
+    def addExtUnpacker[T](etype: Double, unpacker: js.Function1[/* data */ Buffer | js.typedarray.Uint8Array, T]): Unit
   }
   object Codec_ {
     
     inline def apply(
-      addExtPacker: (Double, Instantiable1[/* args (repeated) */ js.Any, js.Any], js.Function1[js.Any, Buffer | Uint8Array]) => Unit,
-      addExtUnpacker: (Double, js.Function1[/* data */ Buffer | Uint8Array, js.Any]) => Unit
+      addExtPacker: (Double, Instantiable1[/* args (repeated) */ Any, Any], js.Function1[Any, Buffer | js.typedarray.Uint8Array]) => Unit,
+      addExtUnpacker: (Double, js.Function1[/* data */ Buffer | js.typedarray.Uint8Array, Any]) => Unit
     ): Codec_ = {
       val __obj = js.Dynamic.literal(addExtPacker = js.Any.fromFunction3(addExtPacker), addExtUnpacker = js.Any.fromFunction2(addExtUnpacker))
       __obj.asInstanceOf[Codec_]
@@ -210,10 +209,10 @@ object mod {
     extension [Self <: Codec_](x: Self) {
       
       inline def setAddExtPacker(
-        value: (Double, Instantiable1[/* args (repeated) */ js.Any, js.Any], js.Function1[js.Any, Buffer | Uint8Array]) => Unit
+        value: (Double, Instantiable1[/* args (repeated) */ Any, Any], js.Function1[Any, Buffer | js.typedarray.Uint8Array]) => Unit
       ): Self = StObject.set(x, "addExtPacker", js.Any.fromFunction3(value))
       
-      inline def setAddExtUnpacker(value: (Double, js.Function1[/* data */ Buffer | Uint8Array, js.Any]) => Unit): Self = StObject.set(x, "addExtUnpacker", js.Any.fromFunction2(value))
+      inline def setAddExtUnpacker(value: (Double, js.Function1[/* data */ Buffer | js.typedarray.Uint8Array, Any]) => Unit): Self = StObject.set(x, "addExtUnpacker", js.Any.fromFunction2(value))
     }
   }
   
@@ -250,11 +249,11 @@ object mod {
   
   trait Encoder extends StObject {
     
-    var bufferish: js.Any
+    var bufferish: Any
     
-    def encode(chunk: js.Any): Unit
+    def encode(chunk: Any): Unit
     
-    def end(chunk: js.Any): Unit
+    def end(chunk: Any): Unit
     
     def fetch(): Unit
     
@@ -268,7 +267,7 @@ object mod {
     
     def pull(): Double
     
-    def push(chunk: js.Any): Unit
+    def push(chunk: Any): Unit
     
     def read(): Double
     
@@ -278,26 +277,26 @@ object mod {
     
     var start: Double
     
-    def write(chunk: js.Any): Unit
+    def write(chunk: Any): Unit
   }
   object Encoder {
     
     inline def apply(
-      bufferish: js.Any,
-      encode: js.Any => Unit,
-      end: js.Any => Unit,
+      bufferish: Any,
+      encode: Any => Unit,
+      end: Any => Unit,
       fetch: () => Unit,
       flush: () => Unit,
       maxBufferSize: Double,
       minBufferSize: Double,
       offset: Double,
       pull: () => Double,
-      push: js.Any => Unit,
+      push: Any => Unit,
       read: () => Double,
       reserve: Double => Double,
       send: Buffer => Unit,
       start: Double,
-      write: js.Any => Unit
+      write: Any => Unit
     ): Encoder = {
       val __obj = js.Dynamic.literal(bufferish = bufferish.asInstanceOf[js.Any], encode = js.Any.fromFunction1(encode), end = js.Any.fromFunction1(end), fetch = js.Any.fromFunction0(fetch), flush = js.Any.fromFunction0(flush), maxBufferSize = maxBufferSize.asInstanceOf[js.Any], minBufferSize = minBufferSize.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], pull = js.Any.fromFunction0(pull), push = js.Any.fromFunction1(push), read = js.Any.fromFunction0(read), reserve = js.Any.fromFunction1(reserve), send = js.Any.fromFunction1(send), start = start.asInstanceOf[js.Any], write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[Encoder]
@@ -305,11 +304,11 @@ object mod {
     
     extension [Self <: Encoder](x: Self) {
       
-      inline def setBufferish(value: js.Any): Self = StObject.set(x, "bufferish", value.asInstanceOf[js.Any])
+      inline def setBufferish(value: Any): Self = StObject.set(x, "bufferish", value.asInstanceOf[js.Any])
       
-      inline def setEncode(value: js.Any => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: Any => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
       
-      inline def setEnd(value: js.Any => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+      inline def setEnd(value: Any => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
       
       inline def setFetch(value: () => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction0(value))
       
@@ -323,7 +322,7 @@ object mod {
       
       inline def setPull(value: () => Double): Self = StObject.set(x, "pull", js.Any.fromFunction0(value))
       
-      inline def setPush(value: js.Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
       inline def setRead(value: () => Double): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       
@@ -333,7 +332,7 @@ object mod {
       
       inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      inline def setWrite(value: js.Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   

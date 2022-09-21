@@ -10,10 +10,10 @@ thirty-two plugin for otplib
 | ------------------ | :-------------: |
 | Full name          | @otplib/plugin-thirty-two |
 | Keywords           | otplib-plugin, base32 |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 1488783 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 719939.6666666666 |
+| # stars            | 1410.0 |
 
 ## Links
 - [Homepage](https://github.com/yeojz/otplib#readme)

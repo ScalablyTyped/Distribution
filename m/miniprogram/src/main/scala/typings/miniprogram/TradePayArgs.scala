@@ -1,12 +1,13 @@
 package typings.miniprogram
 
+import typings.miniprogram.anon.ResultCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TradePayArgs
   extends StObject
-     with AsyncCallback[String] {
+     with AsyncCallback[ResultCode] {
   
   var orderStr: js.UndefOr[String] = js.undefined
   

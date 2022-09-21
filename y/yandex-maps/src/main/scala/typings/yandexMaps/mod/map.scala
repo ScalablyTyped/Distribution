@@ -10,7 +10,7 @@ object map {
   
   @JSImport("yandex-maps", "map.Balloon")
   @js.native
-  class Balloon protected ()
+  open class Balloon protected ()
     extends StObject
        with IBalloonManager[typings.yandexMaps.mod.map.Balloon] {
     def this(map: Map_) = this()
@@ -21,7 +21,7 @@ object map {
   
   @JSImport("yandex-maps", "map.Container")
   @js.native
-  class Container protected ()
+  open class Container protected ()
     extends StObject
        with IEventEmitter {
     def this(parentElement: String) = this()
@@ -50,7 +50,7 @@ object map {
   
   @JSImport("yandex-maps", "map.Converter")
   @js.native
-  class Converter protected () extends StObject {
+  open class Converter protected () extends StObject {
     def this(map: Map_) = this()
     
     def globalToPage(globalPixelPoint: js.Array[Double]): js.Array[Double] = js.native
@@ -60,7 +60,7 @@ object map {
   
   @JSImport("yandex-maps", "map.Copyrights")
   @js.native
-  class Copyrights protected () extends StObject {
+  open class Copyrights protected () extends StObject {
     def this(map: Map_) = this()
     
     def add(customCopyrights: String): ICopyrightsAccessor = js.native
@@ -81,7 +81,7 @@ object map {
   
   @JSImport("yandex-maps", "map.GeoObjects")
   @js.native
-  class GeoObjects protected ()
+  open class GeoObjects protected ()
     extends StObject
        with IGeoObjectCollection {
     def this(map: Map_) = this()
@@ -104,7 +104,7 @@ object map {
   
   @JSImport("yandex-maps", "map.Hint")
   @js.native
-  class Hint protected ()
+  open class Hint protected ()
     extends StObject
        with IPopupManager[Hint] {
     def this(map: Map_) = this()
@@ -115,7 +115,7 @@ object map {
   
   @JSImport("yandex-maps", "map.ZoomRange")
   @js.native
-  class ZoomRange protected ()
+  open class ZoomRange protected ()
     extends StObject
        with IEventEmitter {
     def this(map: Map_, constraints: js.Array[Double]) = this()
@@ -133,7 +133,7 @@ object map {
     
     @JSImport("yandex-maps", "map.action.Manager")
     @js.native
-    class Manager protected ()
+    open class Manager protected ()
       extends StObject
          with IEventEmitter {
       def this(map: Map_) = this()
@@ -159,7 +159,7 @@ object map {
     
     @JSImport("yandex-maps", "map.behavior.Manager")
     @js.native
-    class Manager protected ()
+    open class Manager protected ()
       extends StObject
          with ICustomizable
          with IParentOnMap {
@@ -197,7 +197,7 @@ object map {
     - typings.yandexMaps.mod.ICollection because var conflicts: events. Inlined add, getIterator, remove
     - typings.yandexMaps.mod.IMapObjectCollection because var conflicts: events, options. Inlined  */ @JSImport("yandex-maps", "map.layer.Manager")
     @js.native
-    class Manager protected ()
+    open class Manager protected ()
       extends StObject
          with ILayer
          with IParentOnMap {
@@ -229,7 +229,7 @@ object map {
     
     @JSImport("yandex-maps", "map.margin.Accessor")
     @js.native
-    class Accessor protected () extends StObject {
+    open class Accessor protected () extends StObject {
       def this(screenArea: js.Object) = this()
       
       def getArea(): js.Object = js.native
@@ -241,7 +241,7 @@ object map {
     
     @JSImport("yandex-maps", "map.margin.Manager")
     @js.native
-    class Manager protected () extends StObject {
+    open class Manager protected () extends StObject {
       def this(map: Map_) = this()
       
       def addArea(screenArea: js.Object): Accessor = js.native
@@ -261,7 +261,7 @@ object map {
     
     @JSImport("yandex-maps", "map.pane.Manager")
     @js.native
-    class Manager protected () extends StObject {
+    open class Manager protected () extends StObject {
       def this(map: Map_) = this()
       
       def append(key: String, pane: IPane): Unit = js.native

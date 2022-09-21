@@ -35,8 +35,8 @@ trait Dispatcher extends StObject {
     * @param dispatchOptions?
     * @return
     */
-  def delete(path: String): typings.bluebird.mod.^[js.Any] = js.native
-  def delete(path: String, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def delete(path: String): typings.bluebird.mod.^[Any] = js.native
+  def delete(path: String, dispatchOptions: Any): typings.bluebird.mod.^[Any] = js.native
   
   /**
     * Dispatches a request to the Asana API. The request parameters are passed to
@@ -48,8 +48,8 @@ trait Dispatcher extends StObject {
     * @param dispatchOptions?
     * @return
     */
-  def dispatch(params: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-  def dispatch(params: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def dispatch(params: Any): typings.bluebird.mod.^[Any] = js.native
+  def dispatch(params: Any, dispatchOptions: Any): typings.bluebird.mod.^[Any] = js.native
   
   /**
     * Dispatches a GET request to the Asana API.
@@ -63,10 +63,10 @@ trait Dispatcher extends StObject {
     * @param dispatchOptions?
     * @return
     */
-  def get(path: String): typings.bluebird.mod.^[js.Any] = js.native
-  def get(path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-  def get(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-  def get(path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def get(path: String): typings.bluebird.mod.^[Any] = js.native
+  def get(path: String, query: Any): typings.bluebird.mod.^[Any] = js.native
+  def get(path: String, query: Any, dispatchOptions: Any): typings.bluebird.mod.^[Any] = js.native
+  def get(path: String, query: Unit, dispatchOptions: Any): typings.bluebird.mod.^[Any] = js.native
   
   /**
     * Handler for unauthorized requests which may seek reauthorization.
@@ -88,8 +88,8 @@ trait Dispatcher extends StObject {
     * @param dispatchOptions?
     * @return
     */
-  def post(path: String, data: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-  def post(path: String, data: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def post(path: String, data: Any): typings.bluebird.mod.^[Any] = js.native
+  def post(path: String, data: Any, dispatchOptions: Any): typings.bluebird.mod.^[Any] = js.native
   
   /**
     * Dispatches a PUT request to the Asana API.
@@ -103,8 +103,8 @@ trait Dispatcher extends StObject {
     * @param dispatchOptions?
     * @return
     */
-  def put(path: String, data: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-  def put(path: String, data: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def put(path: String, data: Any): typings.bluebird.mod.^[Any] = js.native
+  def put(path: String, data: Any, dispatchOptions: Any): typings.bluebird.mod.^[Any] = js.native
   
   /**
     * The amount of time in milliseconds to wait for a request to finish.

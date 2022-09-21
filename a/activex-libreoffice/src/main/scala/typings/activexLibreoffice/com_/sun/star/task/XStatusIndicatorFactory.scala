@@ -27,7 +27,7 @@ object XStatusIndicatorFactory {
   inline def apply(
     acquire: () => Unit,
     createStatusIndicator: () => XStatusIndicator,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XStatusIndicatorFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createStatusIndicator = js.Any.fromFunction0(createStatusIndicator), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

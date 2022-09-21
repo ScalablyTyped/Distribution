@@ -19,7 +19,7 @@ trait CreatePlan extends StObject {
   /**
     * Plan properties.
     */
-  var properties: js.Any
+  var properties: Any
   
   /**
     * Type of plan to create.
@@ -28,7 +28,7 @@ trait CreatePlan extends StObject {
 }
 object CreatePlan {
   
-  inline def apply(description: String, name: String, properties: js.Any, `type`: PlanType): CreatePlan = {
+  inline def apply(description: String, name: String, properties: Any, `type`: PlanType): CreatePlan = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePlan]
@@ -40,7 +40,7 @@ object CreatePlan {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setType(value: PlanType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

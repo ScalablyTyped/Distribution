@@ -19,9 +19,9 @@ trait StyleSheets extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): StyleSheet
+  def Item(Index: Any): StyleSheet
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.StyleSheets_typekey")
   var WordDotStyleSheets_typekey: StyleSheets
@@ -33,8 +33,8 @@ object StyleSheets {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => StyleSheet,
-    Parent: js.Any,
+    Item: Any => StyleSheet,
+    Parent: Any,
     WordDotStyleSheets_typekey: StyleSheets
   ): StyleSheets = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction4(Add), Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -52,9 +52,9 @@ object StyleSheets {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => StyleSheet): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => StyleSheet): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotStyleSheets_typekey(value: StyleSheets): Self = StObject.set(x, "Word.StyleSheets_typekey", value.asInstanceOf[js.Any])
   }

@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IFromJson extends StObject {
   
-  def customFromJson(initValue: js.Any): Boolean
+  def customFromJson(initValue: Any): Boolean
   
-  def fromJson(initValue: js.Any): Unit
+  def fromJson(initValue: Any): Unit
 }
 object IFromJson {
   
-  inline def apply(customFromJson: js.Any => Boolean, fromJson: js.Any => Unit): IFromJson = {
+  inline def apply(customFromJson: Any => Boolean, fromJson: Any => Unit): IFromJson = {
     val __obj = js.Dynamic.literal(customFromJson = js.Any.fromFunction1(customFromJson), fromJson = js.Any.fromFunction1(fromJson))
     __obj.asInstanceOf[IFromJson]
   }
   
   extension [Self <: IFromJson](x: Self) {
     
-    inline def setCustomFromJson(value: js.Any => Boolean): Self = StObject.set(x, "customFromJson", js.Any.fromFunction1(value))
+    inline def setCustomFromJson(value: Any => Boolean): Self = StObject.set(x, "customFromJson", js.Any.fromFunction1(value))
     
-    inline def setFromJson(value: js.Any => Unit): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
+    inline def setFromJson(value: Any => Unit): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
   }
 }

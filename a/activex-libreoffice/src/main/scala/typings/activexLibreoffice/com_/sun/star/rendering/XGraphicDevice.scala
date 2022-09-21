@@ -166,7 +166,7 @@ object XGraphicDevice {
     getPhysicalResolution: () => RealSize2D,
     getPhysicalSize: () => RealSize2D,
     hasFullScreenMode: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XGraphicDevice = {
     val __obj = js.Dynamic.literal(BufferController = BufferController.asInstanceOf[js.Any], DeviceColorSpace = DeviceColorSpace.asInstanceOf[js.Any], ParametricPolyPolygonFactory = ParametricPolyPolygonFactory.asInstanceOf[js.Any], PhysicalResolution = PhysicalResolution.asInstanceOf[js.Any], PhysicalSize = PhysicalSize.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), createCompatibleAlphaBitmap = js.Any.fromFunction1(createCompatibleAlphaBitmap), createCompatibleBezierPolyPolygon = js.Any.fromFunction1(createCompatibleBezierPolyPolygon), createCompatibleBitmap = js.Any.fromFunction1(createCompatibleBitmap), createCompatibleLinePolyPolygon = js.Any.fromFunction1(createCompatibleLinePolyPolygon), createVolatileAlphaBitmap = js.Any.fromFunction1(createVolatileAlphaBitmap), createVolatileBitmap = js.Any.fromFunction1(createVolatileBitmap), enterFullScreenMode = js.Any.fromFunction1(enterFullScreenMode), getBufferController = js.Any.fromFunction0(getBufferController), getDeviceColorSpace = js.Any.fromFunction0(getDeviceColorSpace), getParametricPolyPolygonFactory = js.Any.fromFunction0(getParametricPolyPolygonFactory), getPhysicalResolution = js.Any.fromFunction0(getPhysicalResolution), getPhysicalSize = js.Any.fromFunction0(getPhysicalSize), hasFullScreenMode = js.Any.fromFunction0(hasFullScreenMode), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

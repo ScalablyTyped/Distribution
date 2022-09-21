@@ -1,6 +1,6 @@
 package typings.otplibPresetV11
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ trait HotpOptionsInterface
   
   var createHmacSecret: js.UndefOr[typings.otplibPresetV11.createHmacSecret] = js.undefined
   
-  var crypto: js.UndefOr[js.Any] = js.undefined
+  var crypto: js.UndefOr[Any] = js.undefined
   
   var digits: js.UndefOr[Double] = js.undefined
 }
@@ -28,7 +28,7 @@ object HotpOptionsInterface {
     
     inline def setCreateHmacSecretUndefined: Self = StObject.set(x, "createHmacSecret", js.undefined)
     
-    inline def setCrypto(value: js.Any): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
+    inline def setCrypto(value: Any): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
     
     inline def setCryptoUndefined: Self = StObject.set(x, "crypto", js.undefined)
     

@@ -25,7 +25,7 @@ object linearGradientConfigurationMod {
       
       inline def setColorStops(value: js.Array[String]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
       
-      inline def setColorStopsVarargs(value: String*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
+      inline def setColorStopsVarargs(value: String*): Self = StObject.set(x, "colorStops", js.Array(value*))
       
       inline def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       

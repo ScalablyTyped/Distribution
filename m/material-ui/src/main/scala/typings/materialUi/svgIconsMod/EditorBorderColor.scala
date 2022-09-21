@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "EditorBorderColor")
 @js.native
-class EditorBorderColor ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class EditorBorderColor ()
+  extends Component[SvgIconProps, js.Object, Any]

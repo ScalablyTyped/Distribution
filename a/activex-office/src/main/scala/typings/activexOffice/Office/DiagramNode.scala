@@ -16,9 +16,9 @@ trait DiagramNode extends StObject {
   def AddNode(Pos: MsoRelativeNodePosition): DiagramNode = js.native
   def AddNode(Pos: MsoRelativeNodePosition, NodeType: MsoDiagramNodeType): DiagramNode = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
-  def Children(Index: js.Any): DiagramNode = js.native
+  def Children(Index: Any): DiagramNode = js.native
   @JSName("Children")
   val Children_Original: DiagramNodeChildren = js.native
   
@@ -41,7 +41,7 @@ trait DiagramNode extends StObject {
   /* private */ @JSName("Office.DiagramNode_typekey")
   var OfficeDotDiagramNode_typekey: DiagramNode = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PrevNode(): DiagramNode = js.native
   

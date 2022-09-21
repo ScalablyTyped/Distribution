@@ -49,6 +49,6 @@ object subtitlesArraySubtitleCac {
     
     inline def setSubtitles(value: js.Array[Subtitle]): Self = StObject.set(x, "subtitles", value.asInstanceOf[js.Any])
     
-    inline def setSubtitlesVarargs(value: Subtitle*): Self = StObject.set(x, "subtitles", js.Array(value :_*))
+    inline def setSubtitlesVarargs(value: Subtitle*): Self = StObject.set(x, "subtitles", js.Array(value*))
   }
 }

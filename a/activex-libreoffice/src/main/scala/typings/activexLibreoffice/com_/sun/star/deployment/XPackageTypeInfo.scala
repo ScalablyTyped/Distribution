@@ -54,7 +54,7 @@ trait XPackageTypeInfo extends StObject {
     * @param smallIcon return a small icon (e.g. 16x16 pixel), else return a big one (e.g. 26x26 pixel)
     * @returns currently an unsigned short (resource id for deploymentgui resource file), `VOID` any if none is available
     */
-  def getIcon(highContrast: Boolean, smallIcon: Boolean): js.Any
+  def getIcon(highContrast: Boolean, smallIcon: Boolean): Any
   
   /**
     * returns the media type of a package, e.g. `application/vnd.sun.star.basic-script` .
@@ -77,7 +77,7 @@ object XPackageTypeInfo {
     ShortDescription: String,
     getDescription: () => String,
     getFileFilter: () => String,
-    getIcon: (Boolean, Boolean) => js.Any,
+    getIcon: (Boolean, Boolean) => Any,
     getMediaType: () => String,
     getShortDescription: () => String
   ): XPackageTypeInfo = {
@@ -95,7 +95,7 @@ object XPackageTypeInfo {
     
     inline def setGetFileFilter(value: () => String): Self = StObject.set(x, "getFileFilter", js.Any.fromFunction0(value))
     
-    inline def setGetIcon(value: (Boolean, Boolean) => js.Any): Self = StObject.set(x, "getIcon", js.Any.fromFunction2(value))
+    inline def setGetIcon(value: (Boolean, Boolean) => Any): Self = StObject.set(x, "getIcon", js.Any.fromFunction2(value))
     
     inline def setGetMediaType(value: () => String): Self = StObject.set(x, "getMediaType", js.Any.fromFunction0(value))
     

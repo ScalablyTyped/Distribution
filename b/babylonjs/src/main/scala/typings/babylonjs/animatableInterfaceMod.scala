@@ -28,7 +28,7 @@ object animatableInterfaceMod {
       
       inline def setAnimationsNull: Self = StObject.set(x, "animations", null)
       
-      inline def setAnimationsVarargs(value: Animation*): Self = StObject.set(x, "animations", js.Array(value :_*))
+      inline def setAnimationsVarargs(value: Animation*): Self = StObject.set(x, "animations", js.Array(value*))
     }
   }
 }

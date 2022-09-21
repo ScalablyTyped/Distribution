@@ -32,6 +32,6 @@ object CloudStorageProviders {
     
     inline def setStorageProvidersUndefined: Self = StObject.set(x, "storageProviders", js.undefined)
     
-    inline def setStorageProvidersVarargs(value: (/* Contains details about a specific cloud storage provider. */ CloudStorageProvider)*): Self = StObject.set(x, "storageProviders", js.Array(value :_*))
+    inline def setStorageProvidersVarargs(value: (/* Contains details about a specific cloud storage provider. */ CloudStorageProvider)*): Self = StObject.set(x, "storageProviders", js.Array(value*))
   }
 }

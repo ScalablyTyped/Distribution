@@ -1,7 +1,7 @@
 
 # Scala.js typings for edge-js
 
-Typings are for version 12.3.1
+Typings are for version 18.4.2
 
 ## Library description:
 Edge.js: run .NET and Node.js in-process on Windows, Mac OS, and Linux
@@ -10,10 +10,10 @@ Edge.js: run .NET and Node.js in-process on Windows, Mac OS, and Linux
 | ------------------ | :-------------: |
 | Full name          | edge-js |
 | Keywords           | owin, edge, net, clr, coreclr, c#, mono, managed, .net |
-| # releases         | 10 |
-| # dependents       | 38 |
-| # downloads        | 164088 |
-| # stars            | 1 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 9236.0 |
+| # stars            | 447.0 |
 
 ## Links
 - [Homepage](https://github.com/agracio/edge-js)

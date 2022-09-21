@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateTableRequest extends StObject {
   
   /**
-    * The ID of the Data Catalog where the table resides. If none is provided, the AWS account ID is used by default.
+    * The ID of the Data Catalog where the table resides. If none is provided, the Amazon Web Services account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
@@ -25,6 +25,16 @@ trait UpdateTableRequest extends StObject {
     * An updated TableInput object to define the metadata table in the catalog.
     */
   var TableInput: typings.awsSdk.glueMod.TableInput
+  
+  /**
+    * The transaction ID at which to update the table contents. 
+    */
+  var TransactionId: js.UndefOr[TransactionIdString] = js.undefined
+  
+  /**
+    * The version ID at which to update the table contents. 
+    */
+  var VersionId: js.UndefOr[VersionString] = js.undefined
 }
 object UpdateTableRequest {
   
@@ -46,5 +56,13 @@ object UpdateTableRequest {
     inline def setSkipArchiveUndefined: Self = StObject.set(x, "SkipArchive", js.undefined)
     
     inline def setTableInput(value: TableInput): Self = StObject.set(x, "TableInput", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionId(value: TransactionIdString): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "TransactionId", js.undefined)
+    
+    inline def setVersionId(value: VersionString): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

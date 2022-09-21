@@ -99,7 +99,7 @@ trait IAppState extends StObject {
   def setSectionState(key: String, value: ISectionState): Unit
   
   /** function to validate and set the state on a state object */
-  def setState(stateObj: IStateObject, key: String, value: js.Any, stateObjName: String): Unit
+  def setState(stateObj: IStateObject, key: String, value: Any, stateObjName: String): Unit
   
   /**
     * @ngdoc function
@@ -123,7 +123,7 @@ object IAppState {
     setGlobalState: (String, Boolean) => Unit,
     setMenuState: (String, IMenuState) => Unit,
     setSectionState: (String, ISectionState) => Unit,
-    setState: (IStateObject, String, js.Any, String) => Unit,
+    setState: (IStateObject, String, Any, String) => Unit,
     setTreeState: (String, ITreeState) => Unit
   ): IAppState = {
     val __obj = js.Dynamic.literal(getGlobalState = js.Any.fromFunction1(getGlobalState), getMenuState = js.Any.fromFunction1(getMenuState), getSectionState = js.Any.fromFunction1(getSectionState), getState = js.Any.fromFunction3(getState), getTreeState = js.Any.fromFunction1(getTreeState), setGlobalState = js.Any.fromFunction2(setGlobalState), setMenuState = js.Any.fromFunction2(setMenuState), setSectionState = js.Any.fromFunction2(setSectionState), setState = js.Any.fromFunction4(setState), setTreeState = js.Any.fromFunction2(setTreeState))
@@ -148,7 +148,7 @@ object IAppState {
     
     inline def setSetSectionState(value: (String, ISectionState) => Unit): Self = StObject.set(x, "setSectionState", js.Any.fromFunction2(value))
     
-    inline def setSetState(value: (IStateObject, String, js.Any, String) => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction4(value))
+    inline def setSetState(value: (IStateObject, String, Any, String) => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction4(value))
     
     inline def setSetTreeState(value: (String, ITreeState) => Unit): Self = StObject.set(x, "setTreeState", js.Any.fromFunction2(value))
   }

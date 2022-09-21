@@ -48,7 +48,7 @@ object XPrintable {
     acquire: () => Unit,
     getPrinter: () => SafeArray[PropertyValue],
     print: SeqEquiv[PropertyValue] => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setPrinter: SeqEquiv[PropertyValue] => Unit
   ): XPrintable = {

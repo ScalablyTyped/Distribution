@@ -12,9 +12,9 @@ trait XMLChildNodeSuggestions extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): XMLChildNodeSuggestion
+  def Item(Index: Any): XMLChildNodeSuggestion
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.XMLChildNodeSuggestions_typekey")
   var WordDotXMLChildNodeSuggestions_typekey: XMLChildNodeSuggestions
@@ -25,8 +25,8 @@ object XMLChildNodeSuggestions {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => XMLChildNodeSuggestion,
-    Parent: js.Any,
+    Item: Any => XMLChildNodeSuggestion,
+    Parent: Any,
     WordDotXMLChildNodeSuggestions_typekey: XMLChildNodeSuggestions
   ): XMLChildNodeSuggestions = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -42,9 +42,9 @@ object XMLChildNodeSuggestions {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => XMLChildNodeSuggestion): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => XMLChildNodeSuggestion): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotXMLChildNodeSuggestions_typekey(value: XMLChildNodeSuggestions): Self = StObject.set(x, "Word.XMLChildNodeSuggestions_typekey", value.asInstanceOf[js.Any])
   }

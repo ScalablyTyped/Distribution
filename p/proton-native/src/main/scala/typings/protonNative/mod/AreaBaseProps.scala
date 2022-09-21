@@ -4,6 +4,7 @@ import typings.protonNative.protonNativeStrings.bevel
 import typings.protonNative.protonNativeStrings.flat
 import typings.protonNative.protonNativeStrings.miter
 import typings.protonNative.protonNativeStrings.round
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +14,8 @@ trait AreaBaseProps
      with GridChildrenProps
      with Label
      with Stretchy {
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * The fill color for the component.
@@ -62,6 +65,10 @@ object AreaBaseProps {
   }
   
   extension [Self <: AreaBaseProps](x: Self) {
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

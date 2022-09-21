@@ -180,7 +180,7 @@ object PartialVgTitle {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+    inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value*))
     
     inline def setSubtitle(value: Text | SignalRef): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
@@ -216,13 +216,13 @@ object PartialVgTitle {
     
     inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    inline def setSubtitleVarargs(value: String*): Self = StObject.set(x, "subtitle", js.Array(value :_*))
+    inline def setSubtitleVarargs(value: String*): Self = StObject.set(x, "subtitle", js.Array(value*))
     
     inline def setText(value: Text | SignalRef): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
     
     inline def setZindex(value: Double): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
     

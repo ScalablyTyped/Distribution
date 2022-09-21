@@ -29,7 +29,7 @@ object ListInstanceProfilesResult {
     
     inline def setInstanceProfilesUndefined: Self = StObject.set(x, "instanceProfiles", js.undefined)
     
-    inline def setInstanceProfilesVarargs(value: InstanceProfile*): Self = StObject.set(x, "instanceProfiles", js.Array(value :_*))
+    inline def setInstanceProfilesVarargs(value: InstanceProfile*): Self = StObject.set(x, "instanceProfiles", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("expirymanager", "ExpiryManager")
   @js.native
-  class ExpiryManager () extends StObject {
+  open class ExpiryManager () extends StObject {
     
     def clear(): Unit = js.native
     
@@ -29,7 +29,7 @@ object mod {
     def unexpire(keys: Keys): Unit = js.native
   }
   
-  type Key = js.Any
+  type Key = Any
   
   type Keys = js.Array[Key]
 }

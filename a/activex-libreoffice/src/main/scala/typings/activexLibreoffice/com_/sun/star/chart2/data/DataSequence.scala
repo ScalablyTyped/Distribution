@@ -53,7 +53,7 @@ object DataSequence {
   
   inline def apply(
     Count: Double,
-    Data: SafeArray[js.Any],
+    Data: SafeArray[Any],
     ElementType: `type`,
     HiddenValues: SafeArray[Double],
     IncludeHiddenCells: Boolean,
@@ -68,24 +68,24 @@ object DataSequence {
     addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     createClone: () => XCloneable,
     generateLabel: LabelOrigin => SafeArray[String],
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
-    getData: () => SafeArray[js.Any],
+    getData: () => SafeArray[Any],
     getElementType: () => `type`,
     getNumberFormatKeyByIndex: Double => Double,
     getNumericalData: () => SafeArray[Double],
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
+    getPropertyValue: String => Any,
     getSourceRangeRepresentation: () => String,
     getTextualData: () => SafeArray[String],
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeModifyListener: XModifyListener => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-    replaceByIndex: (Double, js.Any) => Unit,
-    setPropertyValue: (String, js.Any) => Unit
+    replaceByIndex: (Double, Any) => Unit,
+    setPropertyValue: (String, Any) => Unit
   ): DataSequence = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Data = Data.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], HiddenValues = HiddenValues.asInstanceOf[js.Any], IncludeHiddenCells = IncludeHiddenCells.asInstanceOf[js.Any], NumericalData = NumericalData.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Role = Role.asInstanceOf[js.Any], SourceRangeRepresentation = SourceRangeRepresentation.asInstanceOf[js.Any], TextualData = TextualData.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addModifyListener = js.Any.fromFunction1(addModifyListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createClone = js.Any.fromFunction0(createClone), generateLabel = js.Any.fromFunction1(generateLabel), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getData = js.Any.fromFunction0(getData), getElementType = js.Any.fromFunction0(getElementType), getNumberFormatKeyByIndex = js.Any.fromFunction1(getNumberFormatKeyByIndex), getNumericalData = js.Any.fromFunction0(getNumericalData), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getSourceRangeRepresentation = js.Any.fromFunction0(getSourceRangeRepresentation), getTextualData = js.Any.fromFunction0(getTextualData), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeModifyListener = js.Any.fromFunction1(removeModifyListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), replaceByIndex = js.Any.fromFunction2(replaceByIndex), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[DataSequence]

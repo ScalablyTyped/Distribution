@@ -43,17 +43,17 @@ object metadataInterfaceMod {
       
       inline def setKey_value_metadata(value: js.Array[Key]): Self = StObject.set(x, "key_value_metadata", value.asInstanceOf[js.Any])
       
-      inline def setKey_value_metadataVarargs(value: Key*): Self = StObject.set(x, "key_value_metadata", js.Array(value :_*))
+      inline def setKey_value_metadataVarargs(value: Key*): Self = StObject.set(x, "key_value_metadata", js.Array(value*))
       
       inline def setNum_rows(value: ^): Self = StObject.set(x, "num_rows", value.asInstanceOf[js.Any])
       
       inline def setRow_groups(value: js.Array[MetadataRowGroupsInterface]): Self = StObject.set(x, "row_groups", value.asInstanceOf[js.Any])
       
-      inline def setRow_groupsVarargs(value: MetadataRowGroupsInterface*): Self = StObject.set(x, "row_groups", js.Array(value :_*))
+      inline def setRow_groupsVarargs(value: MetadataRowGroupsInterface*): Self = StObject.set(x, "row_groups", js.Array(value*))
       
       inline def setSchema(value: js.Array[MetadataSchemaInterface]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      inline def setSchemaVarargs(value: MetadataSchemaInterface*): Self = StObject.set(x, "schema", js.Array(value :_*))
+      inline def setSchemaVarargs(value: MetadataSchemaInterface*): Self = StObject.set(x, "schema", js.Array(value*))
       
       inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
@@ -107,7 +107,7 @@ object metadataInterfaceMod {
       
       inline def setColumns(value: js.Array[MetadataRowGroupsColumnsInterface]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: MetadataRowGroupsColumnsInterface*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: MetadataRowGroupsColumnsInterface*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setNum_rows(value: ^): Self = StObject.set(x, "num_rows", value.asInstanceOf[js.Any])
       
@@ -115,7 +115,7 @@ object metadataInterfaceMod {
       
       inline def setSorting_columnsNull: Self = StObject.set(x, "sorting_columns", null)
       
-      inline def setSorting_columnsVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "sorting_columns", js.Array(value :_*))
+      inline def setSorting_columnsVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "sorting_columns", js.Array(value*))
       
       inline def setTotal_byte_size(value: ^): Self = StObject.set(x, "total_byte_size", value.asInstanceOf[js.Any])
     }

@@ -15,6 +15,14 @@ object maximMazurokGapiClientCloudbuildStrings {
   inline def BuildTrigger: BuildTrigger = "BuildTrigger".asInstanceOf[BuildTrigger]
   
   @js.native
+  sealed trait HttpBody extends StObject
+  inline def HttpBody: HttpBody = "HttpBody".asInstanceOf[HttpBody]
+  
+  @js.native
+  sealed trait InlineSecret extends StObject
+  inline def InlineSecret: InlineSecret = "InlineSecret".asInstanceOf[InlineSecret]
+  
+  @js.native
   sealed trait Notification extends StObject
   inline def Notification: Notification = "Notification".asInstanceOf[Notification]
   
@@ -37,6 +45,10 @@ object maximMazurokGapiClientCloudbuildStrings {
   @js.native
   sealed trait Status extends StObject
   inline def Status: Status = "Status".asInstanceOf[Status]
+  
+  @js.native
+  sealed trait WorkerPool extends StObject
+  inline def WorkerPool: WorkerPool = "WorkerPool".asInstanceOf[WorkerPool]
   
   @js.native
   sealed trait cloudbuild extends StObject

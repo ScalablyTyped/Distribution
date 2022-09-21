@@ -32,7 +32,7 @@ trait AwsEc2NetworkInterfaceAttachment extends StObject {
   var InstanceId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The AWS account ID of the owner of the instance.
+    * The Amazon Web Services account ID of the owner of the instance.
     */
   var InstanceOwnerId: js.UndefOr[NonEmptyString] = js.undefined
   

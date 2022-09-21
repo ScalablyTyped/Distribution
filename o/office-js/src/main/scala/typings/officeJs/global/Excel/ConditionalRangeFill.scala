@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the background of a conditional range object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalRangeFill")
 @js.native
-class ConditionalRangeFill ()
+open class ConditionalRangeFill ()
   extends StObject
      with typings.officeJs.Excel.ConditionalRangeFill {
   

@@ -1,22 +1,23 @@
 package typings.mnemonist.mod
 
 import typings.mnemonist.defaultMapMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mnemonist", "DefaultMap")
 @js.native
-class DefaultMap[K, V] protected () extends default[K, V] {
+open class DefaultMap[K, V] protected () extends default[K, V] {
   // Constructor
-  def this(factory: js.Function2[/* key */ js.UndefOr[K], /* index */ js.UndefOr[Double], V]) = this()
+  def this(factory: js.Function2[/* key */ K, /* index */ Double, V]) = this()
 }
-
 /* static members */
-@JSImport("mnemonist", "DefaultMap")
-@js.native
-object DefaultMap extends js.Object {
+object DefaultMap {
+  
+  @JSImport("mnemonist", "DefaultMap")
+  @js.native
+  val ^ : js.Any = js.native
+  
   // Statics
-  def autoIncrement(): Double = js.native
+  inline def autoIncrement(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("autoIncrement")().asInstanceOf[Double]
 }
-

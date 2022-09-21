@@ -10,10 +10,10 @@ object popoverAnimationVerticalMod {
   
   @JSImport("material-ui/Popover/PopoverAnimationVertical", JSImport.Default)
   @js.native
-  class default () extends PopoverAnimationVertical
+  open class default () extends PopoverAnimationVertical
   
   @JSImport("material-ui/Popover/PopoverAnimationVertical", "PopoverAnimationVertical")
   @js.native
-  class PopoverAnimationVertical ()
-    extends Component[PopoverAnimationVerticalProps, js.Object, js.Any]
+  open class PopoverAnimationVertical ()
+    extends Component[PopoverAnimationVerticalProps, js.Object, Any]
 }

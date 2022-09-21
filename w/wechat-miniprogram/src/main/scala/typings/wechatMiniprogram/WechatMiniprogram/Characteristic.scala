@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ trait Characteristic extends StObject {
   var uuid: String
   
   /** 特征值对应的二进制值 */
-  var value: js.UndefOr[ArrayBuffer] = js.undefined
+  var value: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
 }
 object Characteristic {
   
@@ -36,7 +35,7 @@ object Characteristic {
     
     inline def setDescriptorsUndefined: Self = StObject.set(x, "descriptors", js.undefined)
     
-    inline def setDescriptorsVarargs(value: CharacteristicDescriptor*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
+    inline def setDescriptorsVarargs(value: CharacteristicDescriptor*): Self = StObject.set(x, "descriptors", js.Array(value*))
     
     inline def setPermission(value: CharacteristicPermission): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
@@ -48,7 +47,7 @@ object Characteristic {
     
     inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

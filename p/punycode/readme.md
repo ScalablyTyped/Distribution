@@ -11,9 +11,9 @@ A robust Punycode converter that fully complies to RFC 3492 and RFC 5891, and wo
 | Full name          | punycode |
 | Keywords           | punycode, unicode, idn, idna, dns, url, domain |
 | # releases         | 0 |
-| # dependents       | 423 |
-| # downloads        | 2085215977 |
-| # stars            | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 2.698660666666667E8 |
+| # stars            | 1386.0 |
 
 ## Links
 - [Homepage](https://mths.be/punycode)

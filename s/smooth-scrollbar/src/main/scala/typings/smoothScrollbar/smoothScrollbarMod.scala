@@ -18,11 +18,11 @@ object smoothScrollbarMod {
   
   @JSImport("smooth-scrollbar/plugin", "ScrollbarPlugin")
   @js.native
-  class ScrollbarPlugin protected ()
+  open class ScrollbarPlugin protected ()
     extends StObject
        with typings.smoothScrollbar.pluginMod.ScrollbarPlugin {
     def this(scrollbar: Scrollbar) = this()
-    def this(scrollbar: Scrollbar, options: js.Any) = this()
+    def this(scrollbar: Scrollbar, options: Any) = this()
     
     /* CompleteClass */
     override val name: String = js.native
@@ -40,14 +40,14 @@ object smoothScrollbarMod {
     override def onUpdate(): Unit = js.native
     
     /* CompleteClass */
-    override val options: js.Any = js.native
+    override val options: Any = js.native
     
     /* CompleteClass */
     override val scrollbar: typings.smoothScrollbar.scrollbarMod.Scrollbar = js.native
     
     def transformDelta(delta: Data2d, _evt: Event): Data2d = js.native
     /* CompleteClass */
-    override def transformDelta(delta: Data2d, fromEvent: js.Any): Data2d = js.native
+    override def transformDelta(delta: Data2d, fromEvent: Any): Data2d = js.native
   }
   /* static members */
   object ScrollbarPlugin {
@@ -58,8 +58,8 @@ object smoothScrollbarMod {
     
     @JSImport("smooth-scrollbar/plugin", "ScrollbarPlugin.defaultOptions")
     @js.native
-    def defaultOptions: js.Any = js.native
-    inline def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+    def defaultOptions: Any = js.native
+    inline def defaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
     
     @JSImport("smooth-scrollbar/plugin", "ScrollbarPlugin.pluginName")
     @js.native
@@ -67,13 +67,13 @@ object smoothScrollbarMod {
     inline def pluginName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pluginName")(x.asInstanceOf[js.Any])
   }
   
-  inline def addPlugins(Plugins: TypeofScrollbarPlugin*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPlugins")(Plugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addPlugins(Plugins: TypeofScrollbarPlugin*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPlugins")(Plugins.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   @JSImport("smooth-scrollbar/plugin", "globalPlugins")
   @js.native
   val globalPlugins: PluginMap = js.native
   
-  inline def initPlugins(scrollbar: Scrollbar, options: js.Any): js.Array[ScrollbarPlugin] = (^.asInstanceOf[js.Dynamic].applyDynamic("initPlugins")(scrollbar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[ScrollbarPlugin]]
+  inline def initPlugins(scrollbar: Scrollbar, options: Any): js.Array[ScrollbarPlugin] = (^.asInstanceOf[js.Dynamic].applyDynamic("initPlugins")(scrollbar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[ScrollbarPlugin]]
   
   trait PluginMap extends StObject {
     

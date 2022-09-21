@@ -29,7 +29,7 @@ object DescribeAssociationExecutionsResult {
     
     inline def setAssociationExecutionsUndefined: Self = StObject.set(x, "AssociationExecutions", js.undefined)
     
-    inline def setAssociationExecutionsVarargs(value: AssociationExecution*): Self = StObject.set(x, "AssociationExecutions", js.Array(value :_*))
+    inline def setAssociationExecutionsVarargs(value: AssociationExecution*): Self = StObject.set(x, "AssociationExecutions", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

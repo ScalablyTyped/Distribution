@@ -10,10 +10,10 @@ Generates an id useable in json rpc payloads.
 | ------------------ | :-------------: |
 | Full name          | json-rpc-random-id |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 1320090 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1030775.3333333334 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/kumavis/json-rpc-random-id#readme)

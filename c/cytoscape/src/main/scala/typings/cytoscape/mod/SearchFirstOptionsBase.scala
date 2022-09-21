@@ -30,7 +30,7 @@ object SearchFirstOptionsBase {
     inline def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
     
     inline def setVisit(
-      value: (/* v */ NodeSingular, /* e */ EdgeSingular, /* u */ NodeSingular, /* i */ Double, /* depth */ Double) => Boolean | Unit
+      value: (/* v */ NodeSingular, /* e */ js.UndefOr[EdgeSingular], /* u */ js.UndefOr[NodeSingular], /* i */ Double, /* depth */ Double) => Boolean | Unit
     ): Self = StObject.set(x, "visit", js.Any.fromFunction5(value))
     
     inline def setVisitUndefined: Self = StObject.set(x, "visit", js.undefined)

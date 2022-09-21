@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("cli-table", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Table {
     def this(options: PartialTableOptions) = this()
@@ -34,7 +34,7 @@ object mod {
   trait Table
     extends StObject
        with Array[
-          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ js.Any
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
         ]
   
   trait TableOptions extends StObject {
@@ -74,17 +74,17 @@ object mod {
       
       inline def setColAligns(value: js.Array[left | middle | right]): Self = StObject.set(x, "colAligns", value.asInstanceOf[js.Any])
       
-      inline def setColAlignsVarargs(value: (left | middle | right)*): Self = StObject.set(x, "colAligns", js.Array(value :_*))
+      inline def setColAlignsVarargs(value: (left | middle | right)*): Self = StObject.set(x, "colAligns", js.Array(value*))
       
       inline def setColWidths(value: js.Array[Double]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
       
-      inline def setColWidthsVarargs(value: Double*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
+      inline def setColWidthsVarargs(value: Double*): Self = StObject.set(x, "colWidths", js.Array(value*))
       
       inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
       inline def setHead(value: js.Array[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value*))
       
       inline def setStyle(value: Partialpaddingleftnumberp): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

@@ -11,12 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLCanvasElement extends StObject {
   
-  @JSName("getContext")
-  def getContext_experimentalwebgl(contextId: `experimental-webgl`): (WebGLRenderingContext & WebGL1Extensions) | Null = js.native
-  @JSName("getContext")
-  def getContext_experimentalwebgl(contextId: `experimental-webgl`, contextAttributes: WebGLContextAttributes): (WebGLRenderingContext & WebGL1Extensions) | Null = js.native
-  @JSName("getContext")
-  def getContext_webgl(contextId: webgl): (WebGLRenderingContext & WebGL1Extensions) | Null = js.native
-  @JSName("getContext")
-  def getContext_webgl(contextId: webgl, contextAttributes: WebGLContextAttributes): (WebGLRenderingContext & WebGL1Extensions) | Null = js.native
+  def getContext(contextId: webgl | `experimental-webgl`): (WebGLRenderingContext & WebGL1Extensions) | Null = js.native
+  def getContext(contextId: webgl | `experimental-webgl`, contextAttributes: WebGLContextAttributes): (WebGLRenderingContext & WebGL1Extensions) | Null = js.native
 }

@@ -3,11 +3,7 @@ package typings.bytebuffer
 import typings.bytebuffer.anon.Length
 import typings.bytebuffer.anon.LengthValue
 import typings.bytebuffer.anon.Value
-import typings.long.mod.Long
-import typings.node.Buffer
-import typings.std.ArrayBuffer
-import typings.std.DataView
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +15,7 @@ object mod {
   /**
     * Constructs a new ByteBuffer.
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with ByteBuffer {
     def this(capacity: Double) = this()
@@ -178,62 +174,94 @@ object mod {
     */
   /* static member */
   inline def calculateVarint64(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def calculateVarint64(value: Long): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def calculateVarint64(value: typings.long.mod.^): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Concatenates multiple ByteBuffers into one.
     */
   /* static member */
-  inline def concat(buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String]): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
-  inline def concat(buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String], encoding: String): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   inline def concat(
-    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+    buffers: js.Array[
+      ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+    ]
+  ): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  inline def concat(
+    buffers: js.Array[
+      ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+    ],
+    encoding: String
+  ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def concat(
+    buffers: js.Array[
+      ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+    ],
     encoding: String,
     litteEndian: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   inline def concat(
-    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+    buffers: js.Array[
+      ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+    ],
     encoding: String,
     litteEndian: Boolean,
     noAssert: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   inline def concat(
-    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+    buffers: js.Array[
+      ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+    ],
     encoding: String,
     litteEndian: Unit,
     noAssert: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  inline def concat(buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String], encoding: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   inline def concat(
-    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+    buffers: js.Array[
+      ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+    ],
+    encoding: Boolean
+  ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def concat(
+    buffers: js.Array[
+      ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+    ],
     encoding: Boolean,
     litteEndian: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   inline def concat(
-    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+    buffers: js.Array[
+      ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+    ],
     encoding: Boolean,
     litteEndian: Boolean,
     noAssert: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   inline def concat(
-    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+    buffers: js.Array[
+      ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+    ],
     encoding: Boolean,
     litteEndian: Unit,
     noAssert: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   inline def concat(
-    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+    buffers: js.Array[
+      ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+    ],
     encoding: Unit,
     litteEndian: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   inline def concat(
-    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+    buffers: js.Array[
+      ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+    ],
     encoding: Unit,
     litteEndian: Boolean,
     noAssert: Boolean
   ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   inline def concat(
-    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+    buffers: js.Array[
+      ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+    ],
     encoding: Unit,
     litteEndian: Unit,
     noAssert: Boolean
@@ -288,7 +316,7 @@ object mod {
     * Gets the backing buffer type.
     */
   /* static member */
-  inline def isByteBuffer(bb: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isByteBuffer")(bb.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isByteBuffer(bb: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isByteBuffer")(bb.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Wraps a buffer or a string. Sets the allocated ByteBuffer's ByteBuffer#offset to 0 and its ByteBuffer#limit to the length of the wrapped data.
@@ -299,7 +327,7 @@ object mod {
     */
   /* static member */
   inline def wrap(
-    buffer: ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String,
+    buffer: ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String,
     enc: js.UndefOr[String | Boolean],
     littleEndian: js.UndefOr[Boolean],
     noAssert: js.UndefOr[Boolean]
@@ -315,8 +343,8 @@ object mod {
     * Decodes a zigzag encoded signed 64bit integer.
     */
   /* static member */
-  inline def zigZagDecode64(n: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
-  inline def zigZagDecode64(n: Long): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def zigZagDecode64(n: Double): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
+  inline def zigZagDecode64(n: typings.long.mod.^): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
   
   /**
     * Zigzag encodes a signed 32bit integer so that it can be effectively used with varint encoding.
@@ -328,8 +356,8 @@ object mod {
     * Zigzag encodes a signed 64bit integer so that it can be effectively used with varint encoding.
     */
   /* static member */
-  inline def zigZagEncode64(n: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
-  inline def zigZagEncode64(n: Long): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def zigZagEncode64(n: Double): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
+  inline def zigZagEncode64(n: typings.long.mod.^): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
   
   @js.native
   trait ByteBuffer extends StObject {
@@ -352,6 +380,18 @@ object mod {
     def append(source: String, encoding: Double): this.type = js.native
     def append(source: String, encoding: Double, offset: Double): this.type = js.native
     def append(source: String, encoding: Unit, offset: Double): this.type = js.native
+    def append(source: js.typedarray.ArrayBuffer): this.type = js.native
+    def append(source: js.typedarray.ArrayBuffer, encoding: String): this.type = js.native
+    def append(source: js.typedarray.ArrayBuffer, encoding: String, offset: Double): this.type = js.native
+    def append(source: js.typedarray.ArrayBuffer, encoding: Double): this.type = js.native
+    def append(source: js.typedarray.ArrayBuffer, encoding: Double, offset: Double): this.type = js.native
+    def append(source: js.typedarray.ArrayBuffer, encoding: Unit, offset: Double): this.type = js.native
+    def append(source: js.typedarray.Uint8Array): this.type = js.native
+    def append(source: js.typedarray.Uint8Array, encoding: String): this.type = js.native
+    def append(source: js.typedarray.Uint8Array, encoding: String, offset: Double): this.type = js.native
+    def append(source: js.typedarray.Uint8Array, encoding: Double): this.type = js.native
+    def append(source: js.typedarray.Uint8Array, encoding: Double, offset: Double): this.type = js.native
+    def append(source: js.typedarray.Uint8Array, encoding: Unit, offset: Double): this.type = js.native
     /**
       * Appends some data to this ByteBuffer. This will overwrite any contents behind the specified offset up to the appended data's length.
       */
@@ -367,18 +407,6 @@ object mod {
     def append(source: Buffer, encoding: Double): this.type = js.native
     def append(source: Buffer, encoding: Double, offset: Double): this.type = js.native
     def append(source: Buffer, encoding: Unit, offset: Double): this.type = js.native
-    def append(source: ArrayBuffer): this.type = js.native
-    def append(source: ArrayBuffer, encoding: String): this.type = js.native
-    def append(source: ArrayBuffer, encoding: String, offset: Double): this.type = js.native
-    def append(source: ArrayBuffer, encoding: Double): this.type = js.native
-    def append(source: ArrayBuffer, encoding: Double, offset: Double): this.type = js.native
-    def append(source: ArrayBuffer, encoding: Unit, offset: Double): this.type = js.native
-    def append(source: Uint8Array): this.type = js.native
-    def append(source: Uint8Array, encoding: String): this.type = js.native
-    def append(source: Uint8Array, encoding: String, offset: Double): this.type = js.native
-    def append(source: Uint8Array, encoding: Double): this.type = js.native
-    def append(source: Uint8Array, encoding: Double, offset: Double): this.type = js.native
-    def append(source: Uint8Array, encoding: Unit, offset: Double): this.type = js.native
     
     /**
       * Appends this ByteBuffer's contents to another ByteBuffer. This will overwrite any contents behind the specified offset up to the length of this ByteBuffer's data.
@@ -501,6 +529,12 @@ object mod {
     def prepend(source: String, encoding: Double): this.type = js.native
     def prepend(source: String, encoding: Double, offset: Double): this.type = js.native
     def prepend(source: String, encoding: Unit, offset: Double): this.type = js.native
+    def prepend(source: js.typedarray.ArrayBuffer): this.type = js.native
+    def prepend(source: js.typedarray.ArrayBuffer, encoding: String): this.type = js.native
+    def prepend(source: js.typedarray.ArrayBuffer, encoding: String, offset: Double): this.type = js.native
+    def prepend(source: js.typedarray.ArrayBuffer, encoding: Double): this.type = js.native
+    def prepend(source: js.typedarray.ArrayBuffer, encoding: Double, offset: Double): this.type = js.native
+    def prepend(source: js.typedarray.ArrayBuffer, encoding: Unit, offset: Double): this.type = js.native
     /**
       * Prepends some data to this ByteBuffer. This will overwrite any contents before the specified offset up to the prepended data's length. If there is not enough space available before the specified offset, the backing buffer will be resized and its contents moved accordingly.
       */
@@ -516,12 +550,6 @@ object mod {
     def prepend(source: Buffer, encoding: Double): this.type = js.native
     def prepend(source: Buffer, encoding: Double, offset: Double): this.type = js.native
     def prepend(source: Buffer, encoding: Unit, offset: Double): this.type = js.native
-    def prepend(source: ArrayBuffer): this.type = js.native
-    def prepend(source: ArrayBuffer, encoding: String): this.type = js.native
-    def prepend(source: ArrayBuffer, encoding: String, offset: Double): this.type = js.native
-    def prepend(source: ArrayBuffer, encoding: Double): this.type = js.native
-    def prepend(source: ArrayBuffer, encoding: Double, offset: Double): this.type = js.native
-    def prepend(source: ArrayBuffer, encoding: Unit, offset: Double): this.type = js.native
     
     /**
       * Prepends this ByteBuffer to another ByteBuffer. This will overwrite any contents before the specified offset up to the prepended data's length. If there is not enough space available before the specified offset, the backing buffer will be resized and its contents moved accordingly.
@@ -604,8 +632,8 @@ object mod {
     /**
       * Reads a 64bit signed integer.
       */
-    def readInt64(): Long = js.native
-    def readInt64(offset: Double): Long = js.native
+    def readInt64(): typings.long.mod.^ = js.native
+    def readInt64(offset: Double): typings.long.mod.^ = js.native
     
     /**
       * Reads an 8bit signed integer.
@@ -616,8 +644,8 @@ object mod {
     /**
       * Reads a 64bit signed integer. This is an alias of ByteBuffer#readInt64.
       */
-    def readLong(): Long = js.native
-    def readLong(offset: Double): Long = js.native
+    def readLong(): typings.long.mod.^ = js.native
+    def readLong(offset: Double): typings.long.mod.^ = js.native
     
     /**
       * Reads a 16bit signed integer. This is an alias of ByteBuffer#readInt16.
@@ -654,8 +682,8 @@ object mod {
     /**
       * Reads a 64bit unsigned integer.
       */
-    def readUint64(): Long = js.native
-    def readUint64(offset: Double): Long = js.native
+    def readUint64(): typings.long.mod.^ = js.native
+    def readUint64(offset: Double): typings.long.mod.^ = js.native
     
     /**
       * Reads an 8bit unsigned integer.
@@ -684,13 +712,13 @@ object mod {
     /**
       * Reads a 64bit base 128 variable-length integer. Requires Long.js.
       */
-    def readVarint64(): Long = js.native
+    def readVarint64(): typings.long.mod.^ = js.native
     def readVarint64(offset: Double): LengthValue = js.native
     
     /**
       * Reads a zig-zag encoded 64bit base 128 variable-length integer. Requires Long.js.
       */
-    def readVarint64ZigZag(): Long = js.native
+    def readVarint64ZigZag(): typings.long.mod.^ = js.native
     def readVarint64ZigZag(offset: Double): LengthValue = js.native
     
     /**
@@ -732,8 +760,8 @@ object mod {
     /**
       * Returns a raw buffer compacted to contain this ByteBuffer's contents. Contents are the bytes between ByteBuffer#offset and ByteBuffer#limit. Will transparently ByteBuffer#flip this ByteBuffer if offset > limit but the actual offsets remain untouched. This is an alias of ByteBuffer#toBuffer.
       */
-    def toArrayBuffer(): ArrayBuffer = js.native
-    def toArrayBuffer(forceCopy: Boolean): ArrayBuffer = js.native
+    def toArrayBuffer(): js.typedarray.ArrayBuffer = js.native
+    def toArrayBuffer(forceCopy: Boolean): js.typedarray.ArrayBuffer = js.native
     
     /**
       * Encodes this ByteBuffer's contents to a base64 encoded string.
@@ -788,7 +816,7 @@ object mod {
     /**
       * Data view to manipulate the backing buffer. Becomes null if the backing buffer has a capacity of 0.
       */
-    var view: DataView = js.native
+    var view: js.typedarray.DataView = js.native
     
     /**
       * Writes an 8bit signed integer. This is an alias of ByteBuffer#writeInt8.
@@ -802,6 +830,18 @@ object mod {
     def writeBytes(source: String, encoding: Double): this.type = js.native
     def writeBytes(source: String, encoding: Double, offset: Double): this.type = js.native
     def writeBytes(source: String, encoding: Unit, offset: Double): this.type = js.native
+    def writeBytes(source: js.typedarray.ArrayBuffer): this.type = js.native
+    def writeBytes(source: js.typedarray.ArrayBuffer, encoding: String): this.type = js.native
+    def writeBytes(source: js.typedarray.ArrayBuffer, encoding: String, offset: Double): this.type = js.native
+    def writeBytes(source: js.typedarray.ArrayBuffer, encoding: Double): this.type = js.native
+    def writeBytes(source: js.typedarray.ArrayBuffer, encoding: Double, offset: Double): this.type = js.native
+    def writeBytes(source: js.typedarray.ArrayBuffer, encoding: Unit, offset: Double): this.type = js.native
+    def writeBytes(source: js.typedarray.Uint8Array): this.type = js.native
+    def writeBytes(source: js.typedarray.Uint8Array, encoding: String): this.type = js.native
+    def writeBytes(source: js.typedarray.Uint8Array, encoding: String, offset: Double): this.type = js.native
+    def writeBytes(source: js.typedarray.Uint8Array, encoding: Double): this.type = js.native
+    def writeBytes(source: js.typedarray.Uint8Array, encoding: Double, offset: Double): this.type = js.native
+    def writeBytes(source: js.typedarray.Uint8Array, encoding: Unit, offset: Double): this.type = js.native
     /**
       * Writes an array of bytes. This is an alias for append
       */
@@ -817,18 +857,6 @@ object mod {
     def writeBytes(source: Buffer, encoding: Double): this.type = js.native
     def writeBytes(source: Buffer, encoding: Double, offset: Double): this.type = js.native
     def writeBytes(source: Buffer, encoding: Unit, offset: Double): this.type = js.native
-    def writeBytes(source: ArrayBuffer): this.type = js.native
-    def writeBytes(source: ArrayBuffer, encoding: String): this.type = js.native
-    def writeBytes(source: ArrayBuffer, encoding: String, offset: Double): this.type = js.native
-    def writeBytes(source: ArrayBuffer, encoding: Double): this.type = js.native
-    def writeBytes(source: ArrayBuffer, encoding: Double, offset: Double): this.type = js.native
-    def writeBytes(source: ArrayBuffer, encoding: Unit, offset: Double): this.type = js.native
-    def writeBytes(source: Uint8Array): this.type = js.native
-    def writeBytes(source: Uint8Array, encoding: String): this.type = js.native
-    def writeBytes(source: Uint8Array, encoding: String, offset: Double): this.type = js.native
-    def writeBytes(source: Uint8Array, encoding: Double): this.type = js.native
-    def writeBytes(source: Uint8Array, encoding: Double, offset: Double): this.type = js.native
-    def writeBytes(source: Uint8Array, encoding: Unit, offset: Double): this.type = js.native
     
     /**
       * Writes a NULL-terminated UTF8 encoded string. For this to work the specified string must not contain any NULL characters itself.
@@ -889,8 +917,8 @@ object mod {
       */
     def writeInt64(value: Double): this.type = js.native
     def writeInt64(value: Double, offset: Double): this.type = js.native
-    def writeInt64(value: Long): this.type = js.native
-    def writeInt64(value: Long, offset: Double): this.type = js.native
+    def writeInt64(value: typings.long.mod.^): this.type = js.native
+    def writeInt64(value: typings.long.mod.^, offset: Double): this.type = js.native
     
     /**
       * Writes an 8bit signed integer.
@@ -903,8 +931,8 @@ object mod {
       */
     def writeLong(value: Double): this.type = js.native
     def writeLong(value: Double, offset: Double): this.type = js.native
-    def writeLong(value: Long): this.type = js.native
-    def writeLong(value: Long, offset: Double): this.type = js.native
+    def writeLong(value: typings.long.mod.^): this.type = js.native
+    def writeLong(value: typings.long.mod.^, offset: Double): this.type = js.native
     
     /**
       * Writes a 16bit signed integer. This is an alias of ByteBuffer#writeInt16.
@@ -943,8 +971,8 @@ object mod {
       */
     def writeUint64(value: Double): this.type = js.native
     def writeUint64(value: Double, offset: Double): this.type = js.native
-    def writeUint64(value: Long): this.type = js.native
-    def writeUint64(value: Long, offset: Double): this.type = js.native
+    def writeUint64(value: typings.long.mod.^): this.type = js.native
+    def writeUint64(value: typings.long.mod.^, offset: Double): this.type = js.native
     
     /**
       * Writes an 8bit unsigned integer.
@@ -975,15 +1003,15 @@ object mod {
       */
     def writeVarint64(value: Double): this.type = js.native
     def writeVarint64(value: Double, offset: Double): Double = js.native
-    def writeVarint64(value: Long): this.type = js.native
-    def writeVarint64(value: Long, offset: Double): Double = js.native
+    def writeVarint64(value: typings.long.mod.^): this.type = js.native
+    def writeVarint64(value: typings.long.mod.^, offset: Double): Double = js.native
     
     /**
       * Writes a zig-zag encoded 64bit base 128 variable-length integer.
       */
     def writeVarint64ZigZag(value: Double): this.type = js.native
     def writeVarint64ZigZag(value: Double, offset: Double): Double = js.native
-    def writeVarint64ZigZag(value: Long): this.type = js.native
-    def writeVarint64ZigZag(value: Long, offset: Double): Double = js.native
+    def writeVarint64ZigZag(value: typings.long.mod.^): this.type = js.native
+    def writeVarint64ZigZag(value: typings.long.mod.^, offset: Double): Double = js.native
   }
 }

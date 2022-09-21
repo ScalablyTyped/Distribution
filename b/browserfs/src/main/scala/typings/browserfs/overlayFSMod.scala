@@ -9,8 +9,7 @@ import typings.browserfs.fileSystemMod.BFSOneArgCallback
 import typings.browserfs.fileSystemMod.BaseFileSystem
 import typings.browserfs.fileSystemMod.FileSystem
 import typings.browserfs.fileSystemMod.FileSystemOptions
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object overlayFSMod {
   
   @JSImport("browserfs/dist/node/backend/OverlayFS", JSImport.Default)
   @js.native
-  class default protected () extends OverlayFS {
+  open class default protected () extends OverlayFS {
     /**
       * **Deprecated. Please use OverlayFS.Create() method instead.**
       * @param writable The file system to write modified files to.
@@ -53,42 +52,42 @@ object overlayFSMod {
   
   @JSImport("browserfs/dist/node/backend/OverlayFS", "UnlockedOverlayFS")
   @js.native
-  class UnlockedOverlayFS protected ()
+  open class UnlockedOverlayFS protected ()
     extends BaseFileSystem
        with FileSystem {
     def this(writable: FileSystem, readable: FileSystem) = this()
     
-    /* private */ var _deleteLog: js.Any = js.native
+    /* private */ var _deleteLog: Any = js.native
     
-    /* private */ var _deleteLogError: js.Any = js.native
+    /* private */ var _deleteLogError: Any = js.native
     
-    /* private */ var _deleteLogUpdateNeeded: js.Any = js.native
+    /* private */ var _deleteLogUpdateNeeded: Any = js.native
     
-    /* private */ var _deleteLogUpdatePending: js.Any = js.native
+    /* private */ var _deleteLogUpdatePending: Any = js.native
     
-    /* private */ var _deletedFiles: js.Any = js.native
+    /* private */ var _deletedFiles: Any = js.native
     
-    /* private */ var _initializeCallbacks: js.Any = js.native
+    /* private */ var _initializeCallbacks: Any = js.native
     
-    /* private */ var _isInitialized: js.Any = js.native
+    /* private */ var _isInitialized: Any = js.native
     
-    /* private */ var _readable: js.Any = js.native
+    /* private */ var _readable: Any = js.native
     
-    /* private */ def _reparseDeletionLog(): js.Any = js.native
+    /* private */ def _reparseDeletionLog(): Any = js.native
     
     def _syncAsync(file: typings.browserfs.preloadFileMod.default[UnlockedOverlayFS], cb: BFSOneArgCallback): Unit = js.native
     
     def _syncSync(file: typings.browserfs.preloadFileMod.default[UnlockedOverlayFS]): Unit = js.native
     
-    /* private */ var _writable: js.Any = js.native
+    /* private */ var _writable: Any = js.native
     
-    /* private */ def checkInitAsync(cb: js.Any): js.Any = js.native
+    /* private */ def checkInitAsync(cb: Any): Any = js.native
     
-    /* private */ def checkInitialized(): js.Any = js.native
+    /* private */ def checkInitialized(): Any = js.native
     
-    /* private */ def checkPath(p: js.Any): js.Any = js.native
+    /* private */ def checkPath(p: Any): Any = js.native
     
-    /* private */ def checkPathAsync(p: js.Any, cb: js.Any): js.Any = js.native
+    /* private */ def checkPathAsync(p: Any, cb: Any): Any = js.native
     
     /* InferMemberOverrides */
     override def chmod(p: String, isLchmod: Boolean, mode: Double, cb: BFSOneArgCallback): Unit = js.native
@@ -106,22 +105,22 @@ object overlayFSMod {
       * Copy from readable to writable storage.
       * PRECONDITION: File does not exist on writable storage.
       */
-    /* private */ def copyToWritable(p: js.Any): js.Any = js.native
+    /* private */ def copyToWritable(p: Any): Any = js.native
     
-    /* private */ def copyToWritableAsync(p: js.Any, cb: js.Any): js.Any = js.native
+    /* private */ def copyToWritableAsync(p: Any, cb: Any): Any = js.native
     
     /**
       * With the given path, create the needed parent directories on the writable storage
       * should they not exist. Use modes from the read-only storage.
       */
-    /* private */ def createParentDirectories(p: js.Any): js.Any = js.native
+    /* private */ def createParentDirectories(p: Any): Any = js.native
     
-    /* private */ def createParentDirectoriesAsync(p: js.Any, cb: js.Any): js.Any = js.native
+    /* private */ def createParentDirectoriesAsync(p: Any, cb: Any): Any = js.native
     
-    /* private */ def deletePath(p: js.Any): js.Any = js.native
+    /* private */ def deletePath(p: Any): Any = js.native
     
     /* InferMemberOverrides */
-    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
+    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, Any]): Unit = js.native
     
     /* InferMemberOverrides */
     override def exists(p: String, cb: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
@@ -162,9 +161,9 @@ object overlayFSMod {
       * - Ensures p is on writable before proceeding. Throws an error if it doesn't exist.
       * - Calls f to perform operation on writable.
       */
-    /* private */ def operateOnWritable(p: js.Any, f: js.Any): js.Any = js.native
+    /* private */ def operateOnWritable(p: Any, f: Any): Any = js.native
     
-    /* private */ def operateOnWritableAsync(p: js.Any, cb: js.Any): js.Any = js.native
+    /* private */ def operateOnWritableAsync(p: Any, cb: Any): Any = js.native
     
     /* InferMemberOverrides */
     override def readFile(fname: String, encoding: String, flag: FileFlag, cb: BFSCallback[String | Buffer]): Unit = js.native
@@ -172,9 +171,9 @@ object overlayFSMod {
     override def readFile(fname: String, encoding: Null, flag: FileFlag, cb: BFSCallback[String | Buffer]): Unit = js.native
     
     /* InferMemberOverrides */
-    override def readFileSync(fname: String, encoding: String, flag: FileFlag): js.Any = js.native
+    override def readFileSync(fname: String, encoding: String, flag: FileFlag): Any = js.native
     /* InferMemberOverrides */
-    override def readFileSync(fname: String, encoding: Null, flag: FileFlag): js.Any = js.native
+    override def readFileSync(fname: String, encoding: Null, flag: FileFlag): Any = js.native
     
     /* InferMemberOverrides */
     override def readdir(p: String, cb: BFSCallback[js.Array[String]]): Unit = js.native
@@ -236,18 +235,18 @@ object overlayFSMod {
     /* InferMemberOverrides */
     override def unlinkSync(p: String): Unit = js.native
     
-    /* private */ def updateLog(addition: js.Any): js.Any = js.native
+    /* private */ def updateLog(addition: Any): Any = js.native
     
     /* InferMemberOverrides */
-    override def utimes(p: String, atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+    override def utimes(p: String, atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimesSync(p: String, atime: Date, mtime: Date): Unit = js.native
+    override def utimesSync(p: String, atime: js.Date, mtime: js.Date): Unit = js.native
     
     /* InferMemberOverrides */
-    override def writeFile(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    override def writeFile(fname: String, data: Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
     /* InferMemberOverrides */
-    override def writeFile(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    override def writeFile(fname: String, data: Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
   }
   /* static members */
   object UnlockedOverlayFS {

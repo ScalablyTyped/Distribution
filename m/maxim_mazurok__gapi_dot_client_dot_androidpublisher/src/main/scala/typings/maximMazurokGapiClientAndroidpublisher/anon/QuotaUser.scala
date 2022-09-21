@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientAndroidpublisher.anon
 
-import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.AppEdit
+import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.Testers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,6 +19,9 @@ trait QuotaUser extends StObject {
   
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
+  
+  /** Identifier of the edit. */
+  var editId: String
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -39,7 +42,10 @@ trait QuotaUser extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: AppEdit
+  var resource: Testers
+  
+  /** The track to update. */
+  var track: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +55,8 @@ trait QuotaUser extends StObject {
 }
 object QuotaUser {
   
-  inline def apply(packageName: String, resource: AppEdit): QuotaUser = {
-    val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(editId: String, packageName: String, resource: Testers, track: String): QuotaUser = {
+    val __obj = js.Dynamic.literal(editId = editId.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUser]
   }
   
@@ -71,6 +77,8 @@ object QuotaUser {
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setEditId(value: String): Self = StObject.set(x, "editId", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -94,7 +102,9 @@ object QuotaUser {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: AppEdit): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Testers): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

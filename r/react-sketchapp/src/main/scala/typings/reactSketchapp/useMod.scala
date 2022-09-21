@@ -1,50 +1,37 @@
 package typings.reactSketchapp
 
+import typings.propTypes.mod.InferProps
 import typings.react.mod.Component
-import typings.reactSketchapp.propsMod.NumberProp
-import typings.reactSketchapp.propsMod.PathProps
+import typings.reactSketchapp.anon.OriginX
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useMod {
   
-  @JSImport("react-sketchapp/lib/components/Svg/Use", JSImport.Default)
+  @JSImport("react-sketchapp/lib/components/Svg/Use", "Use")
   @js.native
-  class default ()
-    extends Component[UseProps, js.Object, js.Any]
-  
-  type Use = Component[UseProps, js.Object, js.Any]
-  
-  trait UseProps
-    extends StObject
-       with PathProps {
-    
-    // Just for reusing `Symbol`
-    var height: js.UndefOr[NumberProp] = js.undefined
-    
-    var href: String
-    
-    var width: js.UndefOr[NumberProp] = js.undefined
+  open class Use protected ()
+    extends Component[Props, js.Object, Any] {
+    def this(props: Props) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props, context: Any) = this()
   }
-  object UseProps {
+  /* static members */
+  object Use {
     
-    inline def apply(href: String): UseProps = {
-      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
-      __obj.asInstanceOf[UseProps]
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Use", "Use")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: UseProps](x: Self) {
-      
-      inline def setHeight(value: NumberProp): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-      
-      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
-      
-      inline def setWidth(value: NumberProp): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Use", "Use.propTypes")
+    @js.native
+    def propTypes: OriginX = js.native
+    inline def propTypes_=(x: OriginX): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
+  
+  type Props = InferProps[OriginX]
 }

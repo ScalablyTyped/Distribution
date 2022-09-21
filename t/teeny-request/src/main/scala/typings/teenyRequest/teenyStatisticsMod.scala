@@ -12,7 +12,7 @@ object teenyStatisticsMod {
   /**
     * @param {TeenyStatisticsOptions} [opts]
     */
-  class TeenyStatistics () extends StObject {
+  open class TeenyStatistics () extends StObject {
     def this(opts: TeenyStatisticsOptions) = this()
     
     /**
@@ -20,20 +20,20 @@ object teenyStatisticsMod {
       * @private
       * @default 0
       */
-    /* private */ var _concurrentRequests: js.Any = js.native
+    /* private */ var _concurrentRequests: Any = js.native
     
     /**
       * @type {boolean}
       * @private
       * @default false
       */
-    /* private */ var _didConcurrentRequestWarn: js.Any = js.native
+    /* private */ var _didConcurrentRequestWarn: Any = js.native
     
     /**
       * @type {TeenyStatisticsConfig}
       * @private
       */
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
     /**
       * @readonly
@@ -99,13 +99,13 @@ object teenyStatisticsMod {
       */
     @JSImport("teeny-request/build/src/TeenyStatistics", "TeenyStatistics._prepareOptions")
     @js.native
-    def _prepareOptions: js.Any = js.native
-    inline def _prepareOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_prepareOptions")(x.asInstanceOf[js.Any])
+    def _prepareOptions: Any = js.native
+    inline def _prepareOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_prepareOptions")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("teeny-request/build/src/TeenyStatistics", "TeenyStatisticsWarning")
   @js.native
-  class TeenyStatisticsWarning protected ()
+  open class TeenyStatisticsWarning protected ()
     extends StObject
        with Error {
     /**
@@ -113,9 +113,11 @@ object teenyStatisticsMod {
       */
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     

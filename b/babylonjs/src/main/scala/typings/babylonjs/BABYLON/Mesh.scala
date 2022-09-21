@@ -2,9 +2,9 @@ package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.DeepImmutableObjectMatrixAdd
 import typings.babylonjs.anon.Report
-import typings.babylonjs.anon.Sizes
-import typings.std.Float32Array
-import typings.std.Uint8Array
+import typings.babylonjs.anon.Strides
+import typings.babylonjs.anon.VertexBuffers
+import typings.babylonjs.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,15 +15,23 @@ trait Mesh
      with AbstractMesh {
   
   /** @hidden */
-  var _binaryInfo: js.Any = js.native
+  var _binaryInfo: Any = js.native
   
-  /** @hidden */
+  /**
+    * @param subMesh
+    * @param effect
+    * @param fillMode
+    * @hidden
+    */
   def _bind(subMesh: SubMesh, effect: Effect, fillMode: Double): Mesh = js.native
   
   /** @hidden */
   def _checkDelayState(): Mesh = js.native
   
-  /** @hidden */
+  /**
+    * @param force
+    * @hidden
+    */
   def _createGlobalSubMesh(force: Boolean): Nullable[SubMesh] = js.native
   
   /** @hidden */
@@ -33,7 +41,7 @@ trait Mesh
   var _delayInfo: js.Array[String] = js.native
   
   /** @hidden */
-  def _delayLoadingFunction(any: js.Any, mesh: Mesh): Unit = js.native
+  def _delayLoadingFunction(any: Any, mesh: Mesh): Unit = js.native
   
   /** @hidden */
   def _disposeInstanceSpecificData(): Unit = js.native
@@ -41,38 +49,68 @@ trait Mesh
   /** @hidden */
   def _disposeThinInstanceSpecificData(): Unit = js.native
   
-  /** @hidden */
+  /**
+    * @param subMesh
+    * @param fillMode
+    * @param instancesCount
+    * @hidden
+    */
   def _draw(subMesh: SubMesh, fillMode: Double): Mesh = js.native
   def _draw(subMesh: SubMesh, fillMode: Double, instancesCount: Double): Mesh = js.native
-  
-  /* private */ var _effectiveMaterial: js.Any = js.native
   
   /** @hidden */
   var _geometry: Nullable[Geometry] = js.native
   
-  /** @hidden */
+  /**
+    * @param subMeshId
+    * @param isReplacementMode
+    * @hidden
+    */
   def _getInstancesRenderList(subMeshId: Double): InstancesBatch = js.native
   def _getInstancesRenderList(subMeshId: Double, isReplacementMode: Boolean): InstancesBatch = js.native
   
   /** @hidden */
   var _instanceDataStorage: InstanceDataStorage = js.native
   
-  /* private */ var _internalMeshDataInfo: js.Any = js.native
+  /* private */ var _internalMeshDataInfo: Any = js.native
+  
+  /**
+    * Invalidate VertexArrayObjects belonging to the mesh (but not to the Geometry of the mesh).
+    */
+  def _invalidateInstanceVertexArrayObject(): Unit = js.native
   
   /** @hidden */
   def _isMesh: Boolean = js.native
   
-  /* private */ var _onBeforeDraw: js.Any = js.native
+  /* private */ var _normalizeSkinFourWeights: Any = js.native
   
-  /* private */ var _onBeforeDrawObserver: js.Any = js.native
+  /* private */ var _normalizeSkinWeightsAndExtra: Any = js.native
+  
+  /* private */ var _onBeforeDraw: Any = js.native
+  
+  /* private */ var _onBeforeDrawObserver: Any = js.native
   
   /** @hidden */
   var _originalBuilderSideOrientation: Double = js.native
   
-  /** @hidden */
+  /**
+    * @param visibleInstances
+    * @param renderSelf
+    * @hidden
+    */
   def _processInstancedBuffers(visibleInstances: js.Array[InstancedMesh], renderSelf: Boolean): Unit = js.native
   
-  /** @hidden */
+  /**
+    * @param renderingMesh
+    * @param subMesh
+    * @param effect
+    * @param fillMode
+    * @param batch
+    * @param hardwareInstancedRendering
+    * @param onBeforeDraw
+    * @param effectiveMaterial
+    * @hidden
+    */
   def _processRendering(
     renderingMesh: AbstractMesh,
     subMesh: SubMesh,
@@ -103,15 +141,32 @@ trait Mesh
     effectiveMaterial: Material
   ): Mesh = js.native
   
-  /* private */ var _queueLoad: js.Any = js.native
+  /* private */ var _queueLoad: Any = js.native
   
-  /** @hidden */
+  /**
+    * @param instance
+    * @param renderId
+    * @hidden
+    */
   def _registerInstanceForRenderId(instance: InstancedMesh, renderId: Double): Mesh = js.native
   
-  /** @hidden */
+  /**
+    * @param subMesh
+    * @param fillMode
+    * @param batch
+    * @param effect
+    * @param engine
+    * @hidden
+    */
   def _renderWithInstances(subMesh: SubMesh, fillMode: Double, batch: InstancesBatch, effect: Effect, engine: Engine): Mesh = js.native
   
-  /** @hidden */
+  /**
+    * @param subMesh
+    * @param fillMode
+    * @param effect
+    * @param engine
+    * @hidden
+    */
   def _renderWithThinInstances(subMesh: SubMesh, fillMode: Double, effect: Effect, engine: Engine): Unit = js.native
   
   /** @hidden */
@@ -120,10 +175,10 @@ trait Mesh
   /** @hidden */
   var _shouldGenerateFlatShading: Boolean = js.native
   
-  /* private */ var _sortLODLevels: js.Any = js.native
+  /* private */ var _sortLODLevels: Any = js.native
   
   /** @hidden */
-  def _syncGeometryWithMorphTargetManager(): Unit = js.native
+  def _thinInstanceCreateMatrixBuffer(kind: String, buffer: Nullable[js.typedarray.Float32Array], staticBuffer: Boolean): Buffer = js.native
   
   /** @hidden */
   var _thinInstanceDataStorage: ThinInstanceDataStorage = js.native
@@ -132,25 +187,30 @@ trait Mesh
   def _thinInstanceInitializeUserStorage(): Unit = js.native
   
   /** @hidden */
+  def _thinInstanceUpdateBufferSize(kind: String): Unit = js.native
   def _thinInstanceUpdateBufferSize(kind: String, numInstances: Double): Unit = js.native
   
   /** @hidden */
-  var _userInstancedBuffersStorage: Sizes = js.native
+  var _userInstancedBuffersStorage: Strides = js.native
   
   /** @hidden */
-  var _userThinInstanceBuffersStorage: Sizes = js.native
+  var _userThinInstanceBuffersStorage: VertexBuffers = js.native
   
-  /** @hidden */
+  /**
+    * @param instance
+    * @hidden
+    */
   def addInstance(instance: InstancedMesh): Unit = js.native
   
   /**
     * Add a mesh as LOD level triggered at the given distance.
     * @see https://doc.babylonjs.com/how_to/how_to_use_lod
-    * @param distance The distance from the center of the object to show this level
+    * @param distanceOrScreenCoverage Either distance from the center of the object to show this level or the screen coverage if `useScreenCoverage` is set to `true`.
+    * If screen coverage, value is a fraction of the screen's total surface, between 0 and 1.
     * @param mesh The mesh to be added as LOD level (can be null)
-    * @return This mesh (for chaining)
+    * @returns This mesh (for chaining)
     */
-  def addLODLevel(distance: Double, mesh: Nullable[Mesh]): Mesh = js.native
+  def addLODLevel(distanceOrScreenCoverage: Double, mesh: Nullable[Mesh]): Mesh = js.native
   
   /**
     * Modifies the mesh geometry according to a displacement map.
@@ -294,21 +354,20 @@ trait Mesh
     * @param heightMapHeight is the height of the buffer image.
     * @param minHeight is the lower limit of the displacement.
     * @param maxHeight is the upper limit of the displacement.
-    * @param onSuccess is an optional Javascript function to be called just after the mesh is modified. It is passed the modified mesh and must return nothing.
     * @param uvOffset is an optional vector2 used to offset UV.
     * @param uvScale is an optional vector2 used to scale UV.
     * @param forceUpdate defines whether or not to force an update of the generated buffers. This is useful to apply on a deserialized model for instance.
     * @returns the Mesh.
     */
   def applyDisplacementMapFromBuffer(
-    buffer: Uint8Array,
+    buffer: js.typedarray.Uint8Array,
     heightMapWidth: Double,
     heightMapHeight: Double,
     minHeight: Double,
     maxHeight: Double
   ): Mesh = js.native
   def applyDisplacementMapFromBuffer(
-    buffer: Uint8Array,
+    buffer: js.typedarray.Uint8Array,
     heightMapWidth: Double,
     heightMapHeight: Double,
     minHeight: Double,
@@ -318,7 +377,7 @@ trait Mesh
     forceUpdate: Boolean
   ): Mesh = js.native
   def applyDisplacementMapFromBuffer(
-    buffer: Uint8Array,
+    buffer: js.typedarray.Uint8Array,
     heightMapWidth: Double,
     heightMapHeight: Double,
     minHeight: Double,
@@ -327,7 +386,7 @@ trait Mesh
     uvScale: Vector2
   ): Mesh = js.native
   def applyDisplacementMapFromBuffer(
-    buffer: Uint8Array,
+    buffer: js.typedarray.Uint8Array,
     heightMapWidth: Double,
     heightMapHeight: Double,
     minHeight: Double,
@@ -337,7 +396,7 @@ trait Mesh
     forceUpdate: Boolean
   ): Mesh = js.native
   def applyDisplacementMapFromBuffer(
-    buffer: Uint8Array,
+    buffer: js.typedarray.Uint8Array,
     heightMapWidth: Double,
     heightMapHeight: Double,
     minHeight: Double,
@@ -345,7 +404,7 @@ trait Mesh
     uvOffset: Vector2
   ): Mesh = js.native
   def applyDisplacementMapFromBuffer(
-    buffer: Uint8Array,
+    buffer: js.typedarray.Uint8Array,
     heightMapWidth: Double,
     heightMapHeight: Double,
     minHeight: Double,
@@ -355,7 +414,7 @@ trait Mesh
     forceUpdate: Boolean
   ): Mesh = js.native
   def applyDisplacementMapFromBuffer(
-    buffer: Uint8Array,
+    buffer: js.typedarray.Uint8Array,
     heightMapWidth: Double,
     heightMapHeight: Double,
     minHeight: Double,
@@ -364,7 +423,7 @@ trait Mesh
     uvScale: Vector2
   ): Mesh = js.native
   def applyDisplacementMapFromBuffer(
-    buffer: Uint8Array,
+    buffer: js.typedarray.Uint8Array,
     heightMapWidth: Double,
     heightMapHeight: Double,
     minHeight: Double,
@@ -506,6 +565,14 @@ trait Mesh
   def forceSharedVertices(): Unit = js.native
   
   /**
+    * Gets or sets the forced number of instances to display.
+    * If 0 (default value), the number of instances is not forced and depends on the draw type
+    * (regular / instance / thin instances mesh)
+    */
+  def forcedInstanceCount: Double = js.native
+  def forcedInstanceCount_=(count: Double): Unit = js.native
+  
+  /**
     * This function affects parametric shapes on vertex position update only : ribbons, tubes, etc. It has no effect at all on other shapes. It prevents the mesh normals from being recomputed on next `positions` array update.
     * @returns the current mesh
     */
@@ -572,20 +639,6 @@ trait Mesh
   
   /**
     * Returns a string which contains the list of existing `kinds` of Vertex Data associated with this mesh.
-    * @param kind defines which buffer to read from (positions, indices, normals, etc). Possible `kind` values :
-    * - VertexBuffer.PositionKind
-    * - VertexBuffer.NormalKind
-    * - VertexBuffer.UVKind
-    * - VertexBuffer.UV2Kind
-    * - VertexBuffer.UV3Kind
-    * - VertexBuffer.UV4Kind
-    * - VertexBuffer.UV5Kind
-    * - VertexBuffer.UV6Kind
-    * - VertexBuffer.ColorKind
-    * - VertexBuffer.MatricesIndicesKind
-    * - VertexBuffer.MatricesIndicesExtraKind
-    * - VertexBuffer.MatricesWeightsKind
-    * - VertexBuffer.MatricesWeightsExtraKind
     * @returns an array of strings
     */
   def getVerticesDataKinds(): js.Array[String] = js.native
@@ -596,11 +649,18 @@ trait Mesh
   def hasLODLevels: Boolean = js.native
   
   /**
+    * Gets or sets a boolean indicating whether to render ignoring the active camera's max z setting. (false by default)
+    * Note this will reduce performance when set to true.
+    */
+  var ignoreCameraMaxZ: Boolean = js.native
+  
+  /**
     * Increase the number of facets and hence vertices in a mesh
     * Vertex normals are interpolated from existing vertex normals
     * Warning : the mesh is really modified even if not set originally as updatable. A new VertexBuffer is created under the hood each call.
     * @param numberPerEdge the number of new vertices to add to each edge of a facet, optional default 1
     */
+  def increaseVertices(): Unit = js.native
   def increaseVertices(numberPerEdge: Double): Unit = js.native
   
   /**
@@ -610,6 +670,19 @@ trait Mesh
     * @see https://doc.babylonjs.com/how_to/how_to_use_instances
     */
   var instances: js.Array[InstancedMesh] = js.native
+  
+  def instantiateHierarchy(newParent: Unit, options: `3`): Nullable[TransformNode] = js.native
+  def instantiateHierarchy(
+    newParent: Unit,
+    options: `3`,
+    onNewNodeCreated: js.Function2[/* source */ TransformNode, /* clone */ TransformNode, Unit]
+  ): Nullable[TransformNode] = js.native
+  def instantiateHierarchy(newParent: Nullable[TransformNode], options: `3`): Nullable[TransformNode] = js.native
+  def instantiateHierarchy(
+    newParent: Nullable[TransformNode],
+    options: `3`,
+    onNewNodeCreated: js.Function2[/* source */ TransformNode, /* clone */ TransformNode, Unit]
+  ): Nullable[TransformNode] = js.native
   
   def isReady(completeCheck: Boolean, forceInstanceSupport: Boolean): Boolean = js.native
   def isReady(completeCheck: Unit, forceInstanceSupport: Boolean): Boolean = js.native
@@ -646,6 +719,10 @@ trait Mesh
   def makeGeometryUnique(): Mesh = js.native
   
   /** Gets or sets a boolean indicating that the update of the instance buffer of the world matrices is manual */
+  def manualUpdateOfPreviousWorldMatrixInstancedBuffer: Boolean = js.native
+  def manualUpdateOfPreviousWorldMatrixInstancedBuffer_=(value: Boolean): Unit = js.native
+  
+  /** Gets or sets a boolean indicating that the update of the instance buffer of the world matrices is manual */
   def manualUpdateOfWorldMatrixInstancedBuffer: Boolean = js.native
   def manualUpdateOfWorldMatrixInstancedBuffer_=(value: Boolean): Unit = js.native
   
@@ -668,17 +745,6 @@ trait Mesh
     */
   def markVerticesDataAsUpdatable(kind: String): Unit = js.native
   def markVerticesDataAsUpdatable(kind: String, updatable: Boolean): Unit = js.native
-  
-  /**
-    * Gets or sets the morph target manager
-    * @see https://doc.babylonjs.com/how_to/how_to_use_morphtargets
-    */
-  def morphTargetManager: Nullable[MorphTargetManager] = js.native
-  def morphTargetManager_=(value: Nullable[MorphTargetManager]): Unit = js.native
-  
-  /* private */ var normalizeSkinFourWeights: js.Any = js.native
-  
-  /* private */ var normalizeSkinWeightsAndExtra: js.Any = js.native
   
   /**
     * An event triggered after rendering the mesh
@@ -706,10 +772,21 @@ trait Mesh
   def onBeforeRenderObservable: Observable[Mesh] = js.native
   
   /**
+    * An event triggeredbetween rendering pass when using separateCullingPass = true
+    */
+  def onBetweenPassObservable: Observable[SubMesh] = js.native
+  
+  /**
     * User defined function used to change how LOD level selection is done
     * @see https://doc.babylonjs.com/how_to/how_to_use_lod
     */
   def onLODLevelSelection(distance: Double, mesh: Mesh, selectedLevel: Nullable[Mesh]): Unit = js.native
+  
+  /**
+    * Will notify when the mesh is completely ready, including materials.
+    * Observers added to this observable will be removed once triggered
+    */
+  var onMeshReadyObservable: Observable[Mesh] = js.native
   
   /**
     * Optimization of the mesh's indices, in case a mesh has duplicated vertices.
@@ -730,6 +807,9 @@ trait Mesh
     * Sets a value overriding the instance count. Only applicable when custom instanced InterleavedVertexBuffer are used rather than InstancedMeshs
     */
   def overridenInstanceCount_=(count: Double): Unit = js.native
+  
+  /** Gets the array buffer used to store the instanced buffer used for instances' previous world matrices */
+  def previousWorldMatrixInstancedBuffer: js.typedarray.Float32Array = js.native
   
   /**
     * Registers for this mesh a javascript function called just after the rendering is complete
@@ -753,14 +833,17 @@ trait Mesh
     */
   def registerInstancedBuffer(kind: String, stride: Double): Unit = js.native
   
-  /** @hidden */
+  /**
+    * @param instance
+    * @hidden
+    */
   def removeInstance(instance: InstancedMesh): Unit = js.native
   
   /**
     * Remove a mesh from the LOD array
     * @see https://doc.babylonjs.com/how_to/how_to_use_lod
     * @param mesh defines the mesh to be removed
-    * @return This mesh (for chaining)
+    * @returns This mesh (for chaining)
     */
   def removeLODLevel(mesh: Mesh): Mesh = js.native
   
@@ -806,27 +889,37 @@ trait Mesh
     * Sets the mesh material by the material or multiMaterial `id` property
     * @param id is a string identifying the material or the multiMaterial
     * @returns the current mesh
+    * @deprecated Please use MeshBuilder instead Please use setMaterialById instead
     */
   def setMaterialByID(id: String): Mesh = js.native
+  
+  /**
+    * Sets the mesh material by the material or multiMaterial `id` property
+    * @param id is a string identifying the material or the multiMaterial
+    * @returns the current mesh
+    */
+  def setMaterialById(id: String): Mesh = js.native
   
   /**
     * Prepare internal normal array for software CPU skinning
     * @returns original normals used for CPU skinning. Useful for integrating Morphing with skeletons in same mesh.
     */
-  def setNormalsForCPUSkinning(): Float32Array = js.native
+  def setNormalsForCPUSkinning(): Nullable[js.typedarray.Float32Array] = js.native
   
   /**
     * Prepare internal position array for software CPU skinning
     * @returns original positions used for CPU skinning. Useful for integrating Morphing with skeletons in same mesh
     */
-  def setPositionsForCPUSkinning(): Float32Array = js.native
+  def setPositionsForCPUSkinning(): Nullable[js.typedarray.Float32Array] = js.native
   
   /**
     * Sets the mesh global Vertex Buffer
     * @param buffer defines the buffer to use
+    * @param disposeExistingBuffer disposes the existing buffer, if any (default: true)
     * @returns the current mesh
     */
   def setVerticesBuffer(buffer: VertexBuffer): Mesh = js.native
+  def setVerticesBuffer(buffer: VertexBuffer, disposeExistingBuffer: Boolean): Mesh = js.native
   
   /**
     * Simplify the mesh according to the given array of settings.
@@ -892,6 +985,7 @@ trait Mesh
     */
   def synchronizeInstances(): Mesh = js.native
   
+  def thinInstanceAdd(matrix: js.Array[DeepImmutableObjectMatrixAdd]): Double = js.native
   def thinInstanceAdd(matrix: js.Array[DeepImmutableObjectMatrixAdd], refresh: Boolean): Double = js.native
   /**
     * Creates a new thin instance
@@ -899,6 +993,7 @@ trait Mesh
     * @param refresh true to refresh the underlying gpu buffer (default: true). If you do multiple calls to this method in a row, set refresh to true only for the last call to save performance
     * @returns the thin instance index number. If you pass an array of matrices, other instance indexes are index+1, index+2, etc
     */
+  def thinInstanceAdd(matrix: DeepImmutableObjectMatrixAdd): Double = js.native
   def thinInstanceAdd(matrix: DeepImmutableObjectMatrixAdd, refresh: Boolean): Double = js.native
   
   /**
@@ -906,6 +1001,7 @@ trait Mesh
     * @param refresh true to refresh the underlying gpu buffer (default: true). If you do multiple calls to this method in a row, set refresh to true only for the last call to save performance
     * @returns the thin instance index number
     */
+  def thinInstanceAddSelf(): Double = js.native
   def thinInstanceAddSelf(refresh: Boolean): Double = js.native
   
   /**
@@ -926,7 +1022,7 @@ trait Mesh
   
   /**
     * Gets the list of world matrices
-    * @return an array containing all the world matrices from the thin instances
+    * @returns an array containing all the world matrices from the thin instances
     */
   def thinInstanceGetWorldMatrices(): js.Array[Matrix] = js.native
   
@@ -937,13 +1033,22 @@ trait Mesh
     * @param data the data to set in the GPU buffer
     * @param offset the offset in the GPU buffer where to update the data
     */
-  def thinInstancePartialBufferUpdate(kind: String, data: Float32Array, offset: Double): Unit = js.native
+  def thinInstancePartialBufferUpdate(kind: String, data: js.typedarray.Float32Array, offset: Double): Unit = js.native
   
   /**
     * Refreshes the bounding info, taking into account all the thin instances defined
     * @param forceRefreshParentInfo true to force recomputing the mesh bounding info and use it to compute the aggregated bounding info
+    * @param applySkeleton defines whether to apply the skeleton before computing the bounding info
+    * @param applyMorph  defines whether to apply the morph target before computing the bounding info
     */
+  def thinInstanceRefreshBoundingInfo(): Unit = js.native
   def thinInstanceRefreshBoundingInfo(forceRefreshParentInfo: Boolean): Unit = js.native
+  def thinInstanceRefreshBoundingInfo(forceRefreshParentInfo: Boolean, applySkeleton: Boolean): Unit = js.native
+  def thinInstanceRefreshBoundingInfo(forceRefreshParentInfo: Boolean, applySkeleton: Boolean, applyMorph: Boolean): Unit = js.native
+  def thinInstanceRefreshBoundingInfo(forceRefreshParentInfo: Boolean, applySkeleton: Unit, applyMorph: Boolean): Unit = js.native
+  def thinInstanceRefreshBoundingInfo(forceRefreshParentInfo: Unit, applySkeleton: Boolean): Unit = js.native
+  def thinInstanceRefreshBoundingInfo(forceRefreshParentInfo: Unit, applySkeleton: Boolean, applyMorph: Boolean): Unit = js.native
+  def thinInstanceRefreshBoundingInfo(forceRefreshParentInfo: Unit, applySkeleton: Unit, applyMorph: Boolean): Unit = js.native
   
   /**
     * Registers a custom attribute to be used with thin instances
@@ -959,6 +1064,7 @@ trait Mesh
     * @param value value to set
     * @param refresh true to refresh the underlying gpu buffer (default: true). If you do multiple calls to this method in a row, set refresh to true only for the last call to save performance
     */
+  def thinInstanceSetAttributeAt(kind: String, index: Double, value: js.Array[Double]): Unit = js.native
   def thinInstanceSetAttributeAt(kind: String, index: Double, value: js.Array[Double], refresh: Boolean): Unit = js.native
   
   /**
@@ -968,7 +1074,10 @@ trait Mesh
     * @param stride size in floats of each value of the buffer
     * @param staticBuffer indicates that the buffer is static, so that you won't change it after it is set (better performances - false by default)
     */
-  def thinInstanceSetBuffer(kind: String, buffer: Nullable[Float32Array], stride: Double, staticBuffer: Boolean): Unit = js.native
+  def thinInstanceSetBuffer(kind: String, buffer: Nullable[js.typedarray.Float32Array]): Unit = js.native
+  def thinInstanceSetBuffer(kind: String, buffer: Nullable[js.typedarray.Float32Array], stride: Double): Unit = js.native
+  def thinInstanceSetBuffer(kind: String, buffer: Nullable[js.typedarray.Float32Array], stride: Double, staticBuffer: Boolean): Unit = js.native
+  def thinInstanceSetBuffer(kind: String, buffer: Nullable[js.typedarray.Float32Array], stride: Unit, staticBuffer: Boolean): Unit = js.native
   
   /**
     * Sets the matrix of a thin instance
@@ -976,6 +1085,7 @@ trait Mesh
     * @param matrix matrix to set
     * @param refresh true to refresh the underlying gpu buffer (default: true). If you do multiple calls to this method in a row, set refresh to true only for the last call to save performance
     */
+  def thinInstanceSetMatrixAt(index: Double, matrix: DeepImmutableObjectMatrixAdd): Unit = js.native
   def thinInstanceSetMatrixAt(index: Double, matrix: DeepImmutableObjectMatrixAdd, refresh: Boolean): Unit = js.native
   
   /**
@@ -1015,6 +1125,12 @@ trait Mesh
   def updateMeshPositions(positionFunction: js.Function1[/* data */ FloatArray, Unit], computeNormals: Boolean): Mesh = js.native
   
   /**
+    * Determines if the LOD levels are intended to be calculated using screen coverage (surface area ratio) instead of distance
+    */
+  def useLODScreenCoverage: Boolean = js.native
+  def useLODScreenCoverage_=(value: Boolean): Unit = js.native
+  
+  /**
     * ValidateSkinning is used to determine that a mesh has valid skinning data along with skin metrics, if missing weights,
     * or not normalized it is returned as invalid mesh the string can be used for console logs, or on screen messages to let
     * the user know there was an issue with importing the mesh
@@ -1023,5 +1139,5 @@ trait Mesh
   def validateSkinning(): Report = js.native
   
   /** Gets the array buffer used to store the instanced buffer used for instances' world matrices */
-  def worldMatrixInstancedBuffer: Float32Array = js.native
+  def worldMatrixInstancedBuffer: js.typedarray.Float32Array = js.native
 }

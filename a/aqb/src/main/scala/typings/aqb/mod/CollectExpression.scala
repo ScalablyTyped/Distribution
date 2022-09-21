@@ -11,11 +11,11 @@ trait CollectExpression
      with PartialStatement
      with Instantiable6[
       /* prev */ PartialStatement, 
-      /* dfns */ js.Array[js.Any], 
-      /* varname */ js.Any, 
-      /* intoExpr */ js.Any, 
-      /* keepNames */ js.Array[js.Any], 
-      /* options */ js.Any, 
+      /* dfns */ js.Array[Any], 
+      /* varname */ Any, 
+      /* intoExpr */ Any, 
+      /* keepNames */ js.Array[Any], 
+      /* options */ Any, 
       PartialStatement
     ] {
   
@@ -23,13 +23,13 @@ trait CollectExpression
   
   var _options: ObjectLiteral = js.native
   
-  def into(newVarname: js.Any*): CollectExpression = js.native
+  def into(newVarname: Any*): CollectExpression = js.native
   
-  def keep(x: js.Any*): js.Any = js.native
+  def keep(x: Any*): Any = js.native
   
-  def options(newOpts: js.Any): js.Any = js.native
+  def options(newOpts: Any): Any = js.native
   
   def toAQL(): String = js.native
   
-  def withCountInto(newVarname: js.Any): CollectWithCountIntoExpression = js.native
+  def withCountInto(newVarname: Any): CollectWithCountIntoExpression = js.native
 }

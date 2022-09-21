@@ -12,7 +12,7 @@ trait FactorySansProvider
     * A list of `token`s to be resolved by the injector. The list of values is then
     * used as arguments to the `useFactory` function.
     */
-  var deps: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var deps: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * A function to invoke to create a value for this `token`. The function is invoked with
@@ -29,11 +29,11 @@ object FactorySansProvider {
   
   extension [Self <: FactorySansProvider](x: Self) {
     
-    inline def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
-    inline def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
+    inline def setDepsVarargs(value: Any*): Self = StObject.set(x, "deps", js.Array(value*))
     
     inline def setUseFactory(value: js.Function): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
   }

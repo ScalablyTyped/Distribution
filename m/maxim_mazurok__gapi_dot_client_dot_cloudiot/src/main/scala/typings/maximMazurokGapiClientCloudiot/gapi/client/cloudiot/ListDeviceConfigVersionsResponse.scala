@@ -22,6 +22,6 @@ object ListDeviceConfigVersionsResponse {
     
     inline def setDeviceConfigsUndefined: Self = StObject.set(x, "deviceConfigs", js.undefined)
     
-    inline def setDeviceConfigsVarargs(value: DeviceConfig*): Self = StObject.set(x, "deviceConfigs", js.Array(value :_*))
+    inline def setDeviceConfigsVarargs(value: DeviceConfig*): Self = StObject.set(x, "deviceConfigs", js.Array(value*))
   }
 }

@@ -24,7 +24,7 @@ object ICandleData {
     labels: js.Array[String],
     low: js.Array[Double],
     open: js.Array[Double],
-    source: js.Any,
+    source: Any,
     values: js.Array[Double]
   ): ICandleData = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], high = high.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
@@ -35,18 +35,18 @@ object ICandleData {
     
     inline def setClose(value: js.Array[Double]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    inline def setCloseVarargs(value: Double*): Self = StObject.set(x, "close", js.Array(value :_*))
+    inline def setCloseVarargs(value: Double*): Self = StObject.set(x, "close", js.Array(value*))
     
     inline def setHigh(value: js.Array[Double]): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
-    inline def setHighVarargs(value: Double*): Self = StObject.set(x, "high", js.Array(value :_*))
+    inline def setHighVarargs(value: Double*): Self = StObject.set(x, "high", js.Array(value*))
     
     inline def setLow(value: js.Array[Double]): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
     
-    inline def setLowVarargs(value: Double*): Self = StObject.set(x, "low", js.Array(value :_*))
+    inline def setLowVarargs(value: Double*): Self = StObject.set(x, "low", js.Array(value*))
     
     inline def setOpen(value: js.Array[Double]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    inline def setOpenVarargs(value: Double*): Self = StObject.set(x, "open", js.Array(value :_*))
+    inline def setOpenVarargs(value: Double*): Self = StObject.set(x, "open", js.Array(value*))
   }
 }

@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("sandboxed-module", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with SandboxedModule {
     
@@ -16,7 +16,7 @@ object mod {
       * A getter returning the sandboxedModule.module.exports object.
       */
     /* CompleteClass */
-    var exports: js.Any = js.native
+    var exports: Any = js.native
     
     /**
       * The full path to the module.
@@ -99,8 +99,8 @@ object mod {
     * @param options the requiring options
     */
   /* static member */
-  inline def require(moduleId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def require(moduleId: String, options: SandboxOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(moduleId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def require(moduleId: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(moduleId.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def require(moduleId: String, options: SandboxOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(moduleId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait SandboxOptions extends StObject {
     
@@ -193,7 +193,7 @@ object mod {
     /**
       * A getter returning the sandboxedModule.module.exports object.
       */
-    var exports: js.Any
+    var exports: Any
     
     /**
       * The full path to the module.
@@ -228,7 +228,7 @@ object mod {
   object SandboxedModule {
     
     inline def apply(
-      exports: js.Any,
+      exports: Any,
       filename: String,
       globals: js.Object,
       locals: js.Object,
@@ -242,7 +242,7 @@ object mod {
     
     extension [Self <: SandboxedModule](x: Self) {
       
-      inline def setExports(value: js.Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+      inline def setExports(value: Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       

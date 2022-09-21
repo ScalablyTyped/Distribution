@@ -1,6 +1,5 @@
 package typings.fmWebsync.fm.websync
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ trait subscribersChangeArgs
 }
 object subscribersChangeArgs {
   
-  inline def apply(client: client, clientId: String, meta: js.Any, timestamp: Date): subscribersChangeArgs = {
+  inline def apply(client: client, clientId: String, meta: Any, timestamp: js.Date): subscribersChangeArgs = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[subscribersChangeArgs]
   }

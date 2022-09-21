@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object xDownloadOptionsMod {
   
-  @JSImport("helmet/dist/middlewares/x-download-options", JSImport.Namespace)
+  @JSImport("helmet/dist/types/middlewares/x-download-options", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def default(): js.Function3[
     /* _req */ IncomingMessage, 
-    /* res */ ServerResponse, 
+    /* res */ ServerResponse[IncomingMessage], 
     /* next */ js.Function0[Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function3[
     /* _req */ IncomingMessage, 
-    /* res */ ServerResponse, 
+    /* res */ ServerResponse[IncomingMessage], 
     /* next */ js.Function0[Unit], 
     Unit
   ]]

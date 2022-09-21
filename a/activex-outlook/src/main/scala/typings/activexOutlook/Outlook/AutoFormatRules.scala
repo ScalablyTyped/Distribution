@@ -14,16 +14,16 @@ trait AutoFormatRules extends StObject {
   
   val Count: Double
   
-  def Insert(Name: String, Index: js.Any): AutoFormatRule
+  def Insert(Name: String, Index: Any): AutoFormatRule
   
-  def Item(Index: js.Any): AutoFormatRule
+  def Item(Index: Any): AutoFormatRule
   
   /* private */ @JSName("Outlook.AutoFormatRules_typekey")
   var OutlookDotAutoFormatRules_typekey: AutoFormatRules
   
-  val Parent: js.Any
+  val Parent: Any
   
-  def Remove(Index: js.Any): Unit
+  def Remove(Index: Any): Unit
   
   def RemoveAll(): Unit
   
@@ -38,11 +38,11 @@ object AutoFormatRules {
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
-    Insert: (String, js.Any) => AutoFormatRule,
-    Item: js.Any => AutoFormatRule,
+    Insert: (String, Any) => AutoFormatRule,
+    Item: Any => AutoFormatRule,
     OutlookDotAutoFormatRules_typekey: AutoFormatRules,
-    Parent: js.Any,
-    Remove: js.Any => Unit,
+    Parent: Any,
+    Remove: Any => Unit,
     RemoveAll: () => Unit,
     Save: () => Unit,
     Session: NameSpace
@@ -62,15 +62,15 @@ object AutoFormatRules {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setInsert(value: (String, js.Any) => AutoFormatRule): Self = StObject.set(x, "Insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (String, Any) => AutoFormatRule): Self = StObject.set(x, "Insert", js.Any.fromFunction2(value))
     
-    inline def setItem(value: js.Any => AutoFormatRule): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => AutoFormatRule): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotAutoFormatRules_typekey(value: AutoFormatRules): Self = StObject.set(x, "Outlook.AutoFormatRules_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
     inline def setRemoveAll(value: () => Unit): Self = StObject.set(x, "RemoveAll", js.Any.fromFunction0(value))
     

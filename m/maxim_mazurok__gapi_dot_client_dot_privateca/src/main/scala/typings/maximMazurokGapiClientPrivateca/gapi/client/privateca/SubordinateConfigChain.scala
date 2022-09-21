@@ -22,6 +22,6 @@ object SubordinateConfigChain {
     
     inline def setPemCertificatesUndefined: Self = StObject.set(x, "pemCertificates", js.undefined)
     
-    inline def setPemCertificatesVarargs(value: String*): Self = StObject.set(x, "pemCertificates", js.Array(value :_*))
+    inline def setPemCertificatesVarargs(value: String*): Self = StObject.set(x, "pemCertificates", js.Array(value*))
   }
 }

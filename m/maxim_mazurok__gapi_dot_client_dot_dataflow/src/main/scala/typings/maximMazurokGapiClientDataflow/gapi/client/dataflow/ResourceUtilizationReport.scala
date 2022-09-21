@@ -11,7 +11,7 @@ trait ResourceUtilizationReport extends StObject {
   var containers: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.ResourceUtilizationReport}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ResourceUtilizationReport & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ResourceUtilizationReport & TopLevel[Any]
   ] = js.undefined
   
   /** CPU utilization samples. */
@@ -32,7 +32,7 @@ object ResourceUtilizationReport {
     inline def setContainers(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.ResourceUtilizationReport}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ResourceUtilizationReport & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ResourceUtilizationReport & TopLevel[Any]
     ): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
     inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
@@ -41,12 +41,12 @@ object ResourceUtilizationReport {
     
     inline def setCpuTimeUndefined: Self = StObject.set(x, "cpuTime", js.undefined)
     
-    inline def setCpuTimeVarargs(value: CPUTime*): Self = StObject.set(x, "cpuTime", js.Array(value :_*))
+    inline def setCpuTimeVarargs(value: CPUTime*): Self = StObject.set(x, "cpuTime", js.Array(value*))
     
     inline def setMemoryInfo(value: js.Array[MemInfo]): Self = StObject.set(x, "memoryInfo", value.asInstanceOf[js.Any])
     
     inline def setMemoryInfoUndefined: Self = StObject.set(x, "memoryInfo", js.undefined)
     
-    inline def setMemoryInfoVarargs(value: MemInfo*): Self = StObject.set(x, "memoryInfo", js.Array(value :_*))
+    inline def setMemoryInfoVarargs(value: MemInfo*): Self = StObject.set(x, "memoryInfo", js.Array(value*))
   }
 }

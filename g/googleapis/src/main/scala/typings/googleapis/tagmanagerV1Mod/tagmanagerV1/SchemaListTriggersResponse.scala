@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * List triggers response.
-  */
 trait SchemaListTriggersResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaListTriggersResponse {
     
     inline def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
     
-    inline def setTriggersVarargs(value: SchemaTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+    inline def setTriggersVarargs(value: SchemaTrigger*): Self = StObject.set(x, "triggers", js.Array(value*))
   }
 }

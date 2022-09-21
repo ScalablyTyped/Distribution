@@ -1,31 +1,40 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.ENABLED
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ARN = java.lang.String
+type ARN = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALLOW
   - typings.awsSdk.awsSdkStrings.DENY
   - java.lang.String
 */
-type AccessPropertyValue = typings.awsSdk.workspacesMod._AccessPropertyValue | java.lang.String
+type AccessPropertyValue = _AccessPropertyValue | String
 
-type AccountModificationList = js.Array[typings.awsSdk.workspacesMod.AccountModification]
+type AccountModificationList = js.Array[AccountModification]
 
-type Alias = java.lang.String
+type AddInName = String
+
+type AddInUrl = String
+
+type Alias = String
+
+type AmazonUuid = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Microsoft_Office_2016
   - typings.awsSdk.awsSdkStrings.Microsoft_Office_2019
   - java.lang.String
 */
-type Application = typings.awsSdk.workspacesMod._Application | java.lang.String
+type Application = _Application | String
 
-type ApplicationList = js.Array[typings.awsSdk.workspacesMod.Application]
+type ApplicationList = js.Array[Application]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_ASSOCIATED
@@ -35,21 +44,42 @@ type ApplicationList = js.Array[typings.awsSdk.workspacesMod.Application]
   - typings.awsSdk.awsSdkStrings.PENDING_DISASSOCIATION
   - java.lang.String
 */
-type AssociationStatus = typings.awsSdk.workspacesMod._AssociationStatus | java.lang.String
+type AssociationStatus = _AssociationStatus | String
 
-type AwsAccount = java.lang.String
+type AwsAccount = String
 
-type BooleanObject = scala.Boolean
+type BooleanObject = Boolean
 
-type BundleId = java.lang.String
+type BundleId = String
 
-type BundleIdList = js.Array[typings.awsSdk.workspacesMod.BundleId]
+type BundleIdList = js.Array[BundleId]
 
-type BundleList = js.Array[typings.awsSdk.workspacesMod.WorkspaceBundle]
+type BundleList = js.Array[WorkspaceBundle]
 
-type BundleOwner = java.lang.String
+type BundleOwner = String
 
-type ClientPropertiesList = js.Array[typings.awsSdk.workspacesMod.ClientPropertiesResult]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DeviceTypeWindows
+  - typings.awsSdk.awsSdkStrings.DeviceTypeOsx
+  - typings.awsSdk.awsSdkStrings.DeviceTypeAndroid
+  - typings.awsSdk.awsSdkStrings.DeviceTypeIos
+  - typings.awsSdk.awsSdkStrings.DeviceTypeLinux
+  - typings.awsSdk.awsSdkStrings.DeviceTypeWeb
+  - java.lang.String
+*/
+type ClientDeviceType = _ClientDeviceType | String
+
+type ClientDeviceTypeList = js.Array[ClientDeviceType]
+
+type ClientEmail = String
+
+type ClientLocale = String
+
+type ClientLoginMessage = String
+
+type ClientPropertiesList = js.Array[ClientPropertiesResult]
+
+type ClientUrl = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.VALUE
@@ -59,21 +89,25 @@ type ClientPropertiesList = js.Array[typings.awsSdk.workspacesMod.ClientProperti
   - typings.awsSdk.awsSdkStrings.GRAPHICS
   - typings.awsSdk.awsSdkStrings.POWERPRO
   - typings.awsSdk.awsSdkStrings.GRAPHICSPRO
+  - typings.awsSdk.awsSdkStrings.GRAPHICS_G4DN
+  - typings.awsSdk.awsSdkStrings.GRAPHICSPRO_G4DN
   - java.lang.String
 */
-type Compute = typings.awsSdk.workspacesMod._Compute | java.lang.String
+type Compute = _Compute | String
 
-type ComputerName = java.lang.String
+type ComputerName = String
 
-type ConnectionAliasAssociationList = js.Array[typings.awsSdk.workspacesMod.ConnectionAliasAssociation]
+type ConnectClientAddInList = js.Array[ConnectClientAddIn]
 
-type ConnectionAliasId = java.lang.String
+type ConnectionAliasAssociationList = js.Array[ConnectionAliasAssociation]
 
-type ConnectionAliasIdList = js.Array[typings.awsSdk.workspacesMod.ConnectionAliasId]
+type ConnectionAliasId = String
 
-type ConnectionAliasList = js.Array[typings.awsSdk.workspacesMod.ConnectionAlias]
+type ConnectionAliasIdList = js.Array[ConnectionAliasId]
 
-type ConnectionAliasPermissions = js.Array[typings.awsSdk.workspacesMod.ConnectionAliasPermission]
+type ConnectionAliasList = js.Array[ConnectionAlias]
+
+type ConnectionAliasPermissions = js.Array[ConnectionAliasPermission]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -81,9 +115,9 @@ type ConnectionAliasPermissions = js.Array[typings.awsSdk.workspacesMod.Connecti
   - typings.awsSdk.awsSdkStrings.DELETING
   - java.lang.String
 */
-type ConnectionAliasState = typings.awsSdk.workspacesMod._ConnectionAliasState | java.lang.String
+type ConnectionAliasState = _ConnectionAliasState | String
 
-type ConnectionIdentifier = java.lang.String
+type ConnectionIdentifier = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CONNECTED
@@ -91,13 +125,13 @@ type ConnectionIdentifier = java.lang.String
   - typings.awsSdk.awsSdkStrings.UNKNOWN
   - java.lang.String
 */
-type ConnectionState = typings.awsSdk.workspacesMod._ConnectionState | java.lang.String
+type ConnectionState = _ConnectionState | String
 
-type ConnectionString = java.lang.String
+type ConnectionString = String
 
-type DedicatedTenancyCidrRangeList = js.Array[typings.awsSdk.workspacesMod.DedicatedTenancyManagementCidrRange]
+type DedicatedTenancyCidrRangeList = js.Array[DedicatedTenancyManagementCidrRange]
 
-type DedicatedTenancyManagementCidrRange = java.lang.String
+type DedicatedTenancyManagementCidrRange = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -105,79 +139,98 @@ type DedicatedTenancyManagementCidrRange = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type DedicatedTenancyModificationStateEnum = typings.awsSdk.workspacesMod._DedicatedTenancyModificationStateEnum | java.lang.String
+type DedicatedTenancyModificationStateEnum = _DedicatedTenancyModificationStateEnum | String
 
-type DedicatedTenancySupportEnum = typings.awsSdk.awsSdkStrings.ENABLED | java.lang.String
+type DedicatedTenancySupportEnum = ENABLED | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type DedicatedTenancySupportResultEnum = typings.awsSdk.workspacesMod._DedicatedTenancySupportResultEnum | java.lang.String
+type DedicatedTenancySupportResultEnum = _DedicatedTenancySupportResultEnum | String
 
-type DefaultOu = java.lang.String
+type DefaultLogo = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type Description = java.lang.String
+type DefaultOu = String
 
-type DirectoryId = java.lang.String
+type DeletableSamlPropertiesList = js.Array[DeletableSamlProperty]
 
-type DirectoryIdList = js.Array[typings.awsSdk.workspacesMod.DirectoryId]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SAML_PROPERTIES_USER_ACCESS_URL
+  - typings.awsSdk.awsSdkStrings.SAML_PROPERTIES_RELAY_STATE_PARAMETER_NAME
+  - java.lang.String
+*/
+type DeletableSamlProperty = _DeletableSamlProperty | String
 
-type DirectoryList = js.Array[typings.awsSdk.workspacesMod.WorkspaceDirectory]
+type Description = String
 
-type DirectoryName = java.lang.String
+type DirectoryId = String
 
-type DnsIpAddresses = js.Array[typings.awsSdk.workspacesMod.IpAddress]
+type DirectoryIdList = js.Array[DirectoryId]
 
-type Ec2ImageId = java.lang.String
+type DirectoryList = js.Array[WorkspaceDirectory]
 
-type ErrorType = java.lang.String
+type DirectoryName = String
 
-type FailedCreateWorkspaceRequests = js.Array[typings.awsSdk.workspacesMod.FailedCreateWorkspaceRequest]
+type DnsIpAddresses = js.Array[IpAddress]
 
-type FailedRebootWorkspaceRequests = js.Array[typings.awsSdk.workspacesMod.FailedWorkspaceChangeRequest]
+type Ec2ImageId = String
 
-type FailedRebuildWorkspaceRequests = js.Array[typings.awsSdk.workspacesMod.FailedWorkspaceChangeRequest]
+type ErrorType = String
 
-type FailedStartWorkspaceRequests = js.Array[typings.awsSdk.workspacesMod.FailedWorkspaceChangeRequest]
+type FailedCreateWorkspaceRequests = js.Array[FailedCreateWorkspaceRequest]
 
-type FailedStopWorkspaceRequests = js.Array[typings.awsSdk.workspacesMod.FailedWorkspaceChangeRequest]
+type FailedRebootWorkspaceRequests = js.Array[FailedWorkspaceChangeRequest]
 
-type FailedTerminateWorkspaceRequests = js.Array[typings.awsSdk.workspacesMod.FailedWorkspaceChangeRequest]
+type FailedRebuildWorkspaceRequests = js.Array[FailedWorkspaceChangeRequest]
 
-type ImagePermissions = js.Array[typings.awsSdk.workspacesMod.ImagePermission]
+type FailedStartWorkspaceRequests = js.Array[FailedWorkspaceChangeRequest]
+
+type FailedStopWorkspaceRequests = js.Array[FailedWorkspaceChangeRequest]
+
+type FailedTerminateWorkspaceRequests = js.Array[FailedWorkspaceChangeRequest]
+
+type ImagePermissions = js.Array[ImagePermission]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OWNED
   - typings.awsSdk.awsSdkStrings.SHARED
   - java.lang.String
 */
-type ImageType = typings.awsSdk.workspacesMod._ImageType | java.lang.String
+type ImageType = _ImageType | String
 
-type IpAddress = java.lang.String
+type Ios2XLogo = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type IpGroupDesc = java.lang.String
+type Ios3XLogo = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type IpGroupId = java.lang.String
+type IosLogo = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type IpGroupIdList = js.Array[typings.awsSdk.workspacesMod.IpGroupId]
+type IpAddress = String
 
-type IpGroupName = java.lang.String
+type IpGroupDesc = String
 
-type IpRevokedRuleList = js.Array[typings.awsSdk.workspacesMod.IpRule]
+type IpGroupId = String
 
-type IpRule = java.lang.String
+type IpGroupIdList = js.Array[IpGroupId]
 
-type IpRuleDesc = java.lang.String
+type IpGroupName = String
 
-type IpRuleList = js.Array[typings.awsSdk.workspacesMod.IpRuleItem]
+type IpRevokedRuleList = js.Array[IpRule]
 
-type Limit = scala.Double
+type IpRule = String
 
-type ManagementCidrRangeConstraint = java.lang.String
+type IpRuleDesc = String
 
-type ManagementCidrRangeMaxResults = scala.Double
+type IpRuleList = js.Array[IpRuleItem]
+
+type Limit = Double
+
+type LoginMessage = StringDictionary[ClientLoginMessage]
+
+type ManagementCidrRangeConstraint = String
+
+type ManagementCidrRangeMaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ROOT_VOLUME
@@ -185,101 +238,117 @@ type ManagementCidrRangeMaxResults = scala.Double
   - typings.awsSdk.awsSdkStrings.COMPUTE_TYPE
   - java.lang.String
 */
-type ModificationResourceEnum = typings.awsSdk.workspacesMod._ModificationResourceEnum | java.lang.String
+type ModificationResourceEnum = _ModificationResourceEnum | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UPDATE_INITIATED
   - typings.awsSdk.awsSdkStrings.UPDATE_IN_PROGRESS
   - java.lang.String
 */
-type ModificationStateEnum = typings.awsSdk.workspacesMod._ModificationStateEnum | java.lang.String
+type ModificationStateEnum = _ModificationStateEnum | String
 
-type ModificationStateList = js.Array[typings.awsSdk.workspacesMod.ModificationState]
+type ModificationStateList = js.Array[ModificationState]
 
-type NonEmptyString = java.lang.String
+type NonEmptyString = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WINDOWS
   - typings.awsSdk.awsSdkStrings.LINUX
   - java.lang.String
 */
-type OperatingSystemType = typings.awsSdk.workspacesMod._OperatingSystemType | java.lang.String
+type OperatingSystemType = _OperatingSystemType | String
 
-type PaginationToken = java.lang.String
+type PaginationToken = String
 
-type RebootWorkspaceRequests = js.Array[typings.awsSdk.workspacesMod.RebootRequest]
+type RebootWorkspaceRequests = js.Array[RebootRequest]
 
-type RebuildWorkspaceRequests = js.Array[typings.awsSdk.workspacesMod.RebuildRequest]
+type RebuildWorkspaceRequests = js.Array[RebuildRequest]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type ReconnectEnum = typings.awsSdk.workspacesMod._ReconnectEnum | java.lang.String
+type ReconnectEnum = _ReconnectEnum | String
 
-type Region = java.lang.String
+type Region = String
 
-type RegistrationCode = java.lang.String
+type RegistrationCode = String
 
-type ResourceIdList = js.Array[typings.awsSdk.workspacesMod.NonEmptyString]
+type ResourceIdList = js.Array[NonEmptyString]
 
-type RootVolumeSizeGib = scala.Double
+type RootVolumeSizeGib = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTO_STOP
   - typings.awsSdk.awsSdkStrings.ALWAYS_ON
   - java.lang.String
 */
-type RunningMode = typings.awsSdk.workspacesMod._RunningMode | java.lang.String
+type RunningMode = _RunningMode | String
 
-type RunningModeAutoStopTimeoutInMinutes = scala.Double
+type RunningModeAutoStopTimeoutInMinutes = Double
 
-type SecurityGroupId = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.ENABLED_WITH_DIRECTORY_LOGIN_FALLBACK
+  - java.lang.String
+*/
+type SamlStatusEnum = _SamlStatusEnum | String
 
-type SnapshotList = js.Array[typings.awsSdk.workspacesMod.Snapshot]
+type SamlUserAccessUrl = String
 
-type StartWorkspaceRequests = js.Array[typings.awsSdk.workspacesMod.StartRequest]
+type SecurityGroupId = String
 
-type StopWorkspaceRequests = js.Array[typings.awsSdk.workspacesMod.StopRequest]
+type SnapshotList = js.Array[Snapshot]
 
-type SubnetId = java.lang.String
+type StartWorkspaceRequests = js.Array[StartRequest]
 
-type SubnetIds = js.Array[typings.awsSdk.workspacesMod.SubnetId]
+type StopWorkspaceRequests = js.Array[StopRequest]
 
-type TagKey = java.lang.String
+type SubnetId = String
 
-type TagKeyList = js.Array[typings.awsSdk.workspacesMod.NonEmptyString]
+type SubnetIds = js.Array[SubnetId]
 
-type TagList = js.Array[typings.awsSdk.workspacesMod.Tag]
+type TagKey = String
 
-type TagValue = java.lang.String
+type TagKeyList = js.Array[NonEmptyString]
+
+type TagList = js.Array[Tag]
+
+type TagValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AVAILABLE
   - typings.awsSdk.awsSdkStrings.ADMIN_MAINTENANCE
   - java.lang.String
 */
-type TargetWorkspaceState = typings.awsSdk.workspacesMod._TargetWorkspaceState | java.lang.String
+type TargetWorkspaceState = _TargetWorkspaceState | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEDICATED
   - typings.awsSdk.awsSdkStrings.SHARED
   - java.lang.String
 */
-type Tenancy = typings.awsSdk.workspacesMod._Tenancy | java.lang.String
+type Tenancy = _Tenancy | String
 
-type TerminateWorkspaceRequests = js.Array[typings.awsSdk.workspacesMod.TerminateRequest]
+type TerminateWorkspaceRequests = js.Array[TerminateRequest]
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
-type UserName = java.lang.String
+type UpdateDescription = String
 
-type UserVolumeSizeGib = scala.Double
+type UserName = String
 
-type VolumeEncryptionKey = java.lang.String
+type UserVolumeSizeGib = Double
 
-type WorkspaceConnectionStatusList = js.Array[typings.awsSdk.workspacesMod.WorkspaceConnectionStatus]
+type VolumeEncryptionKey = String
+
+type WorkspaceBundleDescription = String
+
+type WorkspaceBundleName = String
+
+type WorkspaceConnectionStatusList = js.Array[WorkspaceConnectionStatus]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.REGISTERING
@@ -289,47 +358,49 @@ type WorkspaceConnectionStatusList = js.Array[typings.awsSdk.workspacesMod.Works
   - typings.awsSdk.awsSdkStrings.ERROR
   - java.lang.String
 */
-type WorkspaceDirectoryState = typings.awsSdk.workspacesMod._WorkspaceDirectoryState | java.lang.String
+type WorkspaceDirectoryState = _WorkspaceDirectoryState | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SIMPLE_AD
   - typings.awsSdk.awsSdkStrings.AD_CONNECTOR
   - java.lang.String
 */
-type WorkspaceDirectoryType = typings.awsSdk.workspacesMod._WorkspaceDirectoryType | java.lang.String
+type WorkspaceDirectoryType = _WorkspaceDirectoryType | String
 
-type WorkspaceErrorCode = java.lang.String
+type WorkspaceErrorCode = String
 
-type WorkspaceId = java.lang.String
+type WorkspaceId = String
 
-type WorkspaceIdList = js.Array[typings.awsSdk.workspacesMod.WorkspaceId]
+type WorkspaceIdList = js.Array[WorkspaceId]
 
-type WorkspaceImageDescription = java.lang.String
+type WorkspaceImageDescription = String
 
-type WorkspaceImageErrorCode = java.lang.String
+type WorkspaceImageErrorCode = String
 
-type WorkspaceImageId = java.lang.String
+type WorkspaceImageId = String
 
-type WorkspaceImageIdList = js.Array[typings.awsSdk.workspacesMod.WorkspaceImageId]
+type WorkspaceImageIdList = js.Array[WorkspaceImageId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BYOL_REGULAR
   - typings.awsSdk.awsSdkStrings.BYOL_GRAPHICS
   - typings.awsSdk.awsSdkStrings.BYOL_GRAPHICSPRO
+  - typings.awsSdk.awsSdkStrings.BYOL_GRAPHICS_G4DN
+  - typings.awsSdk.awsSdkStrings.BYOL_REGULAR_WSP
   - java.lang.String
 */
-type WorkspaceImageIngestionProcess = typings.awsSdk.workspacesMod._WorkspaceImageIngestionProcess | java.lang.String
+type WorkspaceImageIngestionProcess = _WorkspaceImageIngestionProcess | String
 
-type WorkspaceImageList = js.Array[typings.awsSdk.workspacesMod.WorkspaceImage]
+type WorkspaceImageList = js.Array[WorkspaceImage]
 
-type WorkspaceImageName = java.lang.String
+type WorkspaceImageName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEFAULT
   - typings.awsSdk.awsSdkStrings.DEDICATED
   - java.lang.String
 */
-type WorkspaceImageRequiredTenancy = typings.awsSdk.workspacesMod._WorkspaceImageRequiredTenancy | java.lang.String
+type WorkspaceImageRequiredTenancy = _WorkspaceImageRequiredTenancy | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AVAILABLE
@@ -337,11 +408,11 @@ type WorkspaceImageRequiredTenancy = typings.awsSdk.workspacesMod._WorkspaceImag
   - typings.awsSdk.awsSdkStrings.ERROR
   - java.lang.String
 */
-type WorkspaceImageState = typings.awsSdk.workspacesMod._WorkspaceImageState | java.lang.String
+type WorkspaceImageState = _WorkspaceImageState | String
 
-type WorkspaceList = js.Array[typings.awsSdk.workspacesMod.Workspace]
+type WorkspaceList = js.Array[Workspace]
 
-type WorkspaceRequestList = js.Array[typings.awsSdk.workspacesMod.WorkspaceRequest]
+type WorkspaceRequestList = js.Array[WorkspaceRequest]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -363,13 +434,13 @@ type WorkspaceRequestList = js.Array[typings.awsSdk.workspacesMod.WorkspaceReque
   - typings.awsSdk.awsSdkStrings.ERROR
   - java.lang.String
 */
-type WorkspaceState = typings.awsSdk.workspacesMod._WorkspaceState | java.lang.String
+type WorkspaceState = _WorkspaceState | String
 
-type WorkspacesIpGroupsList = js.Array[typings.awsSdk.workspacesMod.WorkspacesIpGroup]
+type WorkspacesIpGroupsList = js.Array[WorkspacesIpGroup]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2015-04-08`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.workspacesMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

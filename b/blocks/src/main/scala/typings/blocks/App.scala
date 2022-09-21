@@ -30,11 +30,11 @@ trait App
   /**
     * Creates an application property for a Model.
     */
-  def Property(): js.Any = js.native
+  def Property(): Any = js.native
   /**
     * @param options Configuration options for property
     */
-  def Property(options: PropertyPrototype): js.Any = js.native
+  def Property(options: PropertyPrototype): Any = js.native
   
   /**
     * Defines a view that will be part of the Application.
@@ -42,7 +42,7 @@ trait App
     * @param name The name of the View you are creating
     * @param prototype The object that will represent the View
     */
-  def View(name: String, prototype: ViewPrototype): js.Any = js.native
+  def View(name: String, prototype: ViewPrototype): Any = js.native
   /**
     * Defines a view that will be part of the Application.
     * 
@@ -50,5 +50,5 @@ trait App
     * @param name The name of the View you are creating
     * @param prototype The object that will represent the View
     */
-  def View(parentViewName: String, name: String, prototype: ViewPrototype): js.Any = js.native
+  def View(parentViewName: String, name: String, prototype: ViewPrototype): Any = js.native
 }

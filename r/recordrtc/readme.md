@@ -10,15 +10,13 @@ RecordRTC is a server-less (entire client-side) JavaScript library that can be u
 | ------------------ | :-------------: |
 | Full name          | recordrtc |
 | Keywords           | webrtc, recordrtc, audio-recording, video-recording, gif-recording, audio/video recording |
-| # releases         | 14 |
-| # dependents       | 59 |
-| # downloads        | 902227 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 249315.33333333334 |
+| # stars            | 5319.0 |
 
 ## Links
 - [Homepage](http://RecordRTC.org/)
-- [Bugs](https://github.com/muaz-khan/RecordRTC/issues)
-- [Repository](https://github.com/muaz-khan/RecordRTC)
 - [Npm](https://www.npmjs.com/package/recordrtc)
     
 

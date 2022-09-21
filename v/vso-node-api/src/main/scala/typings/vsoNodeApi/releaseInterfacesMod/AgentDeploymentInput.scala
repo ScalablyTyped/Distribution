@@ -18,7 +18,7 @@ object AgentDeploymentInput {
   inline def apply(
     artifactsDownloadInput: ArtifactsDownloadInput,
     condition: String,
-    demands: js.Array[js.Any],
+    demands: js.Array[Any],
     enableAccessToken: Boolean,
     imageId: Double,
     jobCancelTimeoutInMinutes: Double,

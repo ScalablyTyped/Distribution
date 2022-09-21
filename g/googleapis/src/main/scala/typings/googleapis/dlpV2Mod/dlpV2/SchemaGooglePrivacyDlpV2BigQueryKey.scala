@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Row key for identifying a record in BigQuery table.
-  */
 trait SchemaGooglePrivacyDlpV2BigQueryKey extends StObject {
   
   /**
-    * Absolute number of the row from the beginning of the table at the time of
-    * scanning.
+    * Row number inferred at the time the table was scanned. This value is nondeterministic, cannot be queried, and may be null for inspection jobs. To locate findings within a table, specify `inspect_job.storage_config.big_query_options.identifying_fields` in `CreateDlpJobRequest`.
     */
-  var rowNumber: js.UndefOr[String] = js.undefined
+  var rowNumber: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Complete BigQuery table reference.
@@ -30,6 +26,8 @@ object SchemaGooglePrivacyDlpV2BigQueryKey {
   extension [Self <: SchemaGooglePrivacyDlpV2BigQueryKey](x: Self) {
     
     inline def setRowNumber(value: String): Self = StObject.set(x, "rowNumber", value.asInstanceOf[js.Any])
+    
+    inline def setRowNumberNull: Self = StObject.set(x, "rowNumber", null)
     
     inline def setRowNumberUndefined: Self = StObject.set(x, "rowNumber", js.undefined)
     

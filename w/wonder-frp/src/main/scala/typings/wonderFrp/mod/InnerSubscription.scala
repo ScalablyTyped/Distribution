@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "InnerSubscription")
 @js.native
-class InnerSubscription protected ()
+open class InnerSubscription protected ()
   extends typings.wonderFrp.innerSubscriptionMod.InnerSubscription {
   def this(
     subject: typings.wonderFrp.generatorSubjectMod.GeneratorSubject,

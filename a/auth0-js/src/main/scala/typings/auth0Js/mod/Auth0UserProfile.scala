@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Auth0UserProfile extends StObject {
   
-  var app_metadata: js.UndefOr[js.Any] = js.undefined
+  var app_metadata: js.UndefOr[Any] = js.undefined
   
   var clientID: String
   
@@ -38,7 +38,7 @@ trait Auth0UserProfile extends StObject {
   
   var user_id: String
   
-  var user_metadata: js.UndefOr[js.Any] = js.undefined
+  var user_metadata: js.UndefOr[Any] = js.undefined
   
   var username: js.UndefOr[String] = js.undefined
 }
@@ -61,7 +61,7 @@ object Auth0UserProfile {
   
   extension [Self <: Auth0UserProfile](x: Self) {
     
-    inline def setApp_metadata(value: js.Any): Self = StObject.set(x, "app_metadata", value.asInstanceOf[js.Any])
+    inline def setApp_metadata(value: Any): Self = StObject.set(x, "app_metadata", value.asInstanceOf[js.Any])
     
     inline def setApp_metadataUndefined: Self = StObject.set(x, "app_metadata", js.undefined)
     
@@ -91,7 +91,7 @@ object Auth0UserProfile {
     
     inline def setIdentities(value: js.Array[Auth0Identity]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     
-    inline def setIdentitiesVarargs(value: Auth0Identity*): Self = StObject.set(x, "identities", js.Array(value :_*))
+    inline def setIdentitiesVarargs(value: Auth0Identity*): Self = StObject.set(x, "identities", js.Array(value*))
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
@@ -109,7 +109,7 @@ object Auth0UserProfile {
     
     inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
-    inline def setUser_metadata(value: js.Any): Self = StObject.set(x, "user_metadata", value.asInstanceOf[js.Any])
+    inline def setUser_metadata(value: Any): Self = StObject.set(x, "user_metadata", value.asInstanceOf[js.Any])
     
     inline def setUser_metadataUndefined: Self = StObject.set(x, "user_metadata", js.undefined)
     

@@ -38,26 +38,26 @@ object anon {
     }
   }
   
-  trait Classes[StylesType /* <: ClassKeyInferable[js.Any, js.Any] */] extends StObject {
+  trait Classes[StylesType /* <: ClassKeyInferable[Any, Any] */] extends StObject {
     
     var classes: ClassNameMap[ClassKeyOfStyles[StylesType]]
     
-    var innerRef: js.UndefOr[Ref[js.Any]] = js.undefined
+    var innerRef: js.UndefOr[Ref[Any]] = js.undefined
   }
   object Classes {
     
-    inline def apply[StylesType /* <: ClassKeyInferable[js.Any, js.Any] */](classes: ClassNameMap[ClassKeyOfStyles[StylesType]]): Classes[StylesType] = {
+    inline def apply[StylesType /* <: ClassKeyInferable[Any, Any] */](classes: ClassNameMap[ClassKeyOfStyles[StylesType]]): Classes[StylesType] = {
       val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Classes[StylesType]]
     }
     
-    extension [Self <: Classes[?], StylesType /* <: ClassKeyInferable[js.Any, js.Any] */](x: Self & Classes[StylesType]) {
+    extension [Self <: Classes[?], StylesType /* <: ClassKeyInferable[Any, Any] */](x: Self & Classes[StylesType]) {
       
       inline def setClasses(value: ClassNameMap[ClassKeyOfStyles[StylesType]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      inline def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
@@ -65,7 +65,7 @@ object anon {
     }
   }
   
-  trait NameProps[Props, Name /* <: /* keyof any */ String */, Theme /* <: ThemeWithProps[js.Any] */] extends StObject {
+  trait NameProps[Props, Name /* <: /* keyof any */ String */, Theme /* <: ThemeWithProps[Any] */] extends StObject {
     
     var name: Name
     
@@ -75,12 +75,12 @@ object anon {
   }
   object NameProps {
     
-    inline def apply[Props, Name /* <: /* keyof any */ String */, Theme /* <: ThemeWithProps[js.Any] */](name: Name, props: Props): NameProps[Props, Name, Theme] = {
+    inline def apply[Props, Name /* <: /* keyof any */ String */, Theme /* <: ThemeWithProps[Any] */](name: Name, props: Props): NameProps[Props, Name, Theme] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[NameProps[Props, Name, Theme]]
     }
     
-    extension [Self <: NameProps[?, ?, ?], Props, Name /* <: /* keyof any */ String */, Theme /* <: ThemeWithProps[js.Any] */](x: Self & (NameProps[Props, Name, Theme])) {
+    extension [Self <: NameProps[?, ?, ?], Props, Name /* <: /* keyof any */ String */, Theme /* <: ThemeWithProps[Any] */](x: Self & (NameProps[Props, Name, Theme])) {
       
       inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -122,18 +122,18 @@ object anon {
     }
   }
   
-  trait Theme[StylesType /* <: ClassKeyInferable[js.Any, js.Any] */] extends StObject {
+  trait Theme[StylesType /* <: ClassKeyInferable[Any, Any] */] extends StObject {
     
     var theme: ThemeOfStyles[StylesType]
   }
   object Theme {
     
-    inline def apply[StylesType /* <: ClassKeyInferable[js.Any, js.Any] */](theme: ThemeOfStyles[StylesType]): Theme[StylesType] = {
+    inline def apply[StylesType /* <: ClassKeyInferable[Any, Any] */](theme: ThemeOfStyles[StylesType]): Theme[StylesType] = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[Theme[StylesType]]
     }
     
-    extension [Self <: Theme[?], StylesType /* <: ClassKeyInferable[js.Any, js.Any] */](x: Self & Theme[StylesType]) {
+    extension [Self <: Theme[?], StylesType /* <: ClassKeyInferable[Any, Any] */](x: Self & Theme[StylesType]) {
       
       inline def setTheme(value: ThemeOfStyles[StylesType]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

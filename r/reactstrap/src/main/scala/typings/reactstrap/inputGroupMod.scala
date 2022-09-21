@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ElementType
 import typings.react.mod.HTMLAttributes
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,23 +12,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object inputGroupMod {
   
-  @JSImport("reactstrap/lib/InputGroup", JSImport.Default)
+  @JSImport("reactstrap/types/lib/InputGroup", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[InputGroupProps, js.Object, js.Any]
+  open class default ()
+    extends Component[InputGroupProps, js.Object, Any]
   
-  type InputGroup = Component[InputGroupProps, js.Object, js.Any]
+  type InputGroup = Component[InputGroupProps, js.Object, Any]
   
   trait InputGroupProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var cssModule: js.UndefOr[CSSModule] = js.undefined
     
     var size: js.UndefOr[String] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
   }
   object InputGroupProps {
     
@@ -47,7 +47,7 @@ object inputGroupMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }

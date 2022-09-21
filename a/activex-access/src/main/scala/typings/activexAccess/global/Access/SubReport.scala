@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.SubReport")
 @js.native
-/* private */ class SubReport ()
+/* private */ open class SubReport ()
   extends StObject
      with typings.activexAccess.Access.SubReport {
   
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def IsMemberSafe(dispid: Double): Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Report: typings.activexAccess.Access.Report = js.native

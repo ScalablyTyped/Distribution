@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait User[A, U] extends StObject {
   
+  var _id: js.UndefOr[String] = js.undefined
+  
   var app_metadata: js.UndefOr[A] = js.undefined
   
   var blocked: js.UndefOr[Boolean] = js.undefined
@@ -91,7 +93,7 @@ object User {
     
     inline def setIdentitiesUndefined: Self = StObject.set(x, "identities", js.undefined)
     
-    inline def setIdentitiesVarargs(value: Identity*): Self = StObject.set(x, "identities", js.Array(value :_*))
+    inline def setIdentitiesVarargs(value: Identity*): Self = StObject.set(x, "identities", js.Array(value*))
     
     inline def setLast_ip(value: String): Self = StObject.set(x, "last_ip", value.asInstanceOf[js.Any])
     
@@ -113,7 +115,7 @@ object User {
     
     inline def setMultifactorUndefined: Self = StObject.set(x, "multifactor", js.undefined)
     
-    inline def setMultifactorVarargs(value: String*): Self = StObject.set(x, "multifactor", js.Array(value :_*))
+    inline def setMultifactorVarargs(value: String*): Self = StObject.set(x, "multifactor", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -150,5 +152,9 @@ object User {
     inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    
+    inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    
+    inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
   }
 }

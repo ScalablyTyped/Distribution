@@ -10,10 +10,10 @@ object addAlarmMod {
   
   @JSImport("material-ui/svg-icons/device/add-alarm", JSImport.Default)
   @js.native
-  class default () extends DeviceAddAlarm
+  open class default () extends DeviceAddAlarm
   
   @JSImport("material-ui/svg-icons/device/add-alarm", "DeviceAddAlarm")
   @js.native
-  class DeviceAddAlarm ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceAddAlarm ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

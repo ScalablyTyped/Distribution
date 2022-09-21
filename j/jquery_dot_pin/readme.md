@@ -10,10 +10,10 @@ jquery pin plugin
 | ------------------ | :-------------: |
 | Full name          | jquery.pin |
 | Keywords           | jquery, pin |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 712 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 56.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/jquery.pin)

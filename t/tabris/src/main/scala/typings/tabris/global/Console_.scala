@@ -11,6 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Console")
 @js.native
-/* private */ class Console_ ()
+/**
+  * The console object provides access to the [debugging console](../debug.md).
+  */
+/* private */ open class Console_ ()
   extends StObject
      with Console

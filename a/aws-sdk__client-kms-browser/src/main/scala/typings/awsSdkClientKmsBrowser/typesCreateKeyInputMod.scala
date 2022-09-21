@@ -6,7 +6,6 @@ import typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.EXTERNAL
 import typings.awsSdkClientKmsBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientKmsBrowser.typesTagMod.Tag
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ object typesCreateKeyInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -67,7 +66,7 @@ object typesCreateKeyInputMod {
     /**
       * <p>One or more tags. Each tag consists of a tag key and a tag value. Tag keys and tag values are both required, but tag values can be empty (null) strings.</p> <p>Use this parameter to tag the CMK when it is created. Alternately, you can omit this parameter and instead tag the CMK after it is created using <a>TagResource</a>.</p>
       */
-    var Tags: js.UndefOr[js.Array[Tag] | Iterable[Tag]] = js.undefined
+    var Tags: js.UndefOr[js.Array[Tag] | js.Iterable[Tag]] = js.undefined
   }
   object CreateKeyInput {
     
@@ -83,7 +82,7 @@ object typesCreateKeyInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -112,11 +111,11 @@ object typesCreateKeyInputMod {
       
       inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
       
-      inline def setTags(value: js.Array[Tag] | Iterable[Tag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[Tag] | js.Iterable[Tag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
       inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
       
-      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     }
   }
 }

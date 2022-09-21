@@ -11,11 +11,11 @@ object provideInSyntaxMod {
   
   @JSImport("inversify-binding-decorators/dts/syntax/provide_in_syntax", JSImport.Default)
   @js.native
-  class default[T] protected ()
+  open class default[T] protected ()
     extends StObject
        with ProvideInSyntax[T] {
     def this(
-      bindingInSyntax: js.Function2[/* bind */ Bind, /* target */ js.Any, BindingInSyntax[T]],
+      bindingInSyntax: js.Function2[/* bind */ Bind, /* target */ Any, BindingInSyntax[T]],
       provideDoneSyntax: ProvideDoneSyntax
     ) = this()
   }
@@ -25,8 +25,8 @@ object provideInSyntaxMod {
     extends StObject
        with typings.inversifyBindingDecorators.interfacesMod.interfaces.ProvideInSyntax[T] {
     
-    /* private */ var _bindingInSyntax: js.Any = js.native
+    /* private */ var _bindingInSyntax: Any = js.native
     
-    /* private */ var _provideDoneSyntax: js.Any = js.native
+    /* private */ var _provideDoneSyntax: Any = js.native
   }
 }

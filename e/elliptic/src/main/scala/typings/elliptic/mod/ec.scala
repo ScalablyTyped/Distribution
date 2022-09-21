@@ -11,85 +11,83 @@ import typings.elliptic.mod.ec.KeyPair
 import typings.elliptic.mod.ec.KeyPairOptions
 import typings.elliptic.mod.ec.SignOptions
 import typings.elliptic.mod.ec.Signature
-import typings.node.Buffer
-import typings.std.Error
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elliptic", "ec")
 @js.native
-class ec protected () extends StObject {
+open class ec protected () extends StObject {
   def this(options: String) = this()
   def this(options: PresetCurve) = this()
   
-  var curve: js.Any = js.native
+  var curve: Any = js.native
   
-  var g: js.Any = js.native
+  var g: Any = js.native
   
   def genKeyPair(): KeyPair = js.native
   def genKeyPair(options: GenKeyPairOptions): KeyPair = js.native
   
   def getKeyRecoveryParam(
-    e: Unit,
+    e: js.Error,
     signature: SignatureInput,
-    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
   ): Double = js.native
   def getKeyRecoveryParam(
-    e: Unit,
+    e: js.Error,
     signature: SignatureInput,
-    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
     enc: String
   ): Double = js.native
   def getKeyRecoveryParam(
-    e: Error,
+    e: Unit,
     signature: SignatureInput,
-    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
   ): Double = js.native
   def getKeyRecoveryParam(
-    e: Error,
+    e: Unit,
     signature: SignatureInput,
-    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any,
     enc: String
   ): Double = js.native
   
-  var hash: js.Any = js.native
+  var hash: Any = js.native
   
   def keyFromPrivate(priv: String): KeyPair = js.native
   def keyFromPrivate(priv: String, enc: String): KeyPair = js.native
   def keyFromPrivate(priv: js.Array[Double]): KeyPair = js.native
   def keyFromPrivate(priv: js.Array[Double], enc: String): KeyPair = js.native
+  def keyFromPrivate(priv: js.typedarray.Uint8Array): KeyPair = js.native
+  def keyFromPrivate(priv: js.typedarray.Uint8Array, enc: String): KeyPair = js.native
   def keyFromPrivate(priv: KeyPair): KeyPair = js.native
   def keyFromPrivate(priv: KeyPair, enc: String): KeyPair = js.native
   def keyFromPrivate(priv: Buffer): KeyPair = js.native
   def keyFromPrivate(priv: Buffer, enc: String): KeyPair = js.native
-  def keyFromPrivate(priv: Uint8Array): KeyPair = js.native
-  def keyFromPrivate(priv: Uint8Array, enc: String): KeyPair = js.native
   
   def keyFromPublic(pub: String): KeyPair = js.native
   def keyFromPublic(pub: String, enc: String): KeyPair = js.native
   def keyFromPublic(pub: js.Array[Double]): KeyPair = js.native
   def keyFromPublic(pub: js.Array[Double], enc: String): KeyPair = js.native
+  def keyFromPublic(pub: js.typedarray.Uint8Array): KeyPair = js.native
+  def keyFromPublic(pub: js.typedarray.Uint8Array, enc: String): KeyPair = js.native
   def keyFromPublic(pub: X): KeyPair = js.native
   def keyFromPublic(pub: X, enc: String): KeyPair = js.native
   def keyFromPublic(pub: KeyPair): KeyPair = js.native
   def keyFromPublic(pub: KeyPair, enc: String): KeyPair = js.native
   def keyFromPublic(pub: Buffer): KeyPair = js.native
   def keyFromPublic(pub: Buffer, enc: String): KeyPair = js.native
-  def keyFromPublic(pub: Uint8Array): KeyPair = js.native
-  def keyFromPublic(pub: Uint8Array, enc: String): KeyPair = js.native
   
   def keyPair(options: KeyPairOptions): KeyPair = js.native
   
   var n: js.UndefOr[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | Null
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any) | Null
   ] = js.native
   
-  var nh: js.Any = js.native
+  var nh: Any = js.native
   
-  def recoverPubKey(msg: BNInput, signature: SignatureInput, j: Double): js.Any = js.native
-  def recoverPubKey(msg: BNInput, signature: SignatureInput, j: Double, enc: String): js.Any = js.native
+  def recoverPubKey(msg: BNInput, signature: SignatureInput, j: Double): Any = js.native
+  def recoverPubKey(msg: BNInput, signature: SignatureInput, j: Double, enc: String): Any = js.native
   
   def sign(msg: BNInput, key: KeyPair): Signature = js.native
   def sign(msg: BNInput, key: KeyPair, enc: String): Signature = js.native
@@ -109,14 +107,14 @@ object ec {
   
   @JSImport("elliptic", "ec.KeyPair")
   @js.native
-  class KeyPair protected () extends StObject {
+  open class KeyPair protected () extends StObject {
     def this(ec: typings.elliptic.mod.ec, options: KeyPairOptions) = this()
     
-    def derive(pub: BasePoint): js.Any = js.native
+    def derive(pub: BasePoint): Any = js.native
     
     var ec: typings.elliptic.mod.ec = js.native
     
-    def getPrivate(): js.Any = js.native
+    def getPrivate(): Any = js.native
     @JSName("getPrivate")
     def getPrivate_hex(enc: hex): String = js.native
     
@@ -166,50 +164,32 @@ object ec {
     inline def fromPublic(ec: ec, pub: Buffer, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
   }
   
-  @JSImport("elliptic", "ec.Signature")
-  @js.native
-  class Signature protected ()
-    extends StObject
-       with _SignatureInput {
-    def this(options: SignatureInput) = this()
-    def this(options: SignatureInput, enc: String) = this()
-    
-    var r: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
-    
-    var recoveryParam: Double | Null = js.native
-    
-    var s: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
-    
-    def toDER(): js.Any = js.native
-    def toDER(enc: String): js.Any = js.native
-  }
-  
   trait GenKeyPairOptions extends StObject {
     
-    var entropy: js.Any
+    var entropy: Any
     
     var entropyEnc: js.UndefOr[String] = js.undefined
     
-    var pers: js.UndefOr[js.Any] = js.undefined
+    var pers: js.UndefOr[Any] = js.undefined
     
     var persEnc: js.UndefOr[String] = js.undefined
   }
   object GenKeyPairOptions {
     
-    inline def apply(entropy: js.Any): GenKeyPairOptions = {
+    inline def apply(entropy: Any): GenKeyPairOptions = {
       val __obj = js.Dynamic.literal(entropy = entropy.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenKeyPairOptions]
     }
     
     extension [Self <: GenKeyPairOptions](x: Self) {
       
-      inline def setEntropy(value: js.Any): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
+      inline def setEntropy(value: Any): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
       
       inline def setEntropyEnc(value: String): Self = StObject.set(x, "entropyEnc", value.asInstanceOf[js.Any])
       
       inline def setEntropyEncUndefined: Self = StObject.set(x, "entropyEnc", js.undefined)
       
-      inline def setPers(value: js.Any): Self = StObject.set(x, "pers", value.asInstanceOf[js.Any])
+      inline def setPers(value: Any): Self = StObject.set(x, "pers", value.asInstanceOf[js.Any])
       
       inline def setPersEnc(value: String): Self = StObject.set(x, "persEnc", value.asInstanceOf[js.Any])
       
@@ -261,10 +241,10 @@ object ec {
     var canonical: js.UndefOr[Boolean] = js.undefined
     
     var k: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
       ] = js.undefined
     
-    var pers: js.UndefOr[js.Any] = js.undefined
+    var pers: js.UndefOr[Any] = js.undefined
     
     var persEnc: js.UndefOr[String] = js.undefined
   }
@@ -282,12 +262,12 @@ object ec {
       inline def setCanonicalUndefined: Self = StObject.set(x, "canonical", js.undefined)
       
       inline def setK(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any
       ): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
       inline def setKUndefined: Self = StObject.set(x, "k", js.undefined)
       
-      inline def setPers(value: js.Any): Self = StObject.set(x, "pers", value.asInstanceOf[js.Any])
+      inline def setPers(value: Any): Self = StObject.set(x, "pers", value.asInstanceOf[js.Any])
       
       inline def setPersEnc(value: String): Self = StObject.set(x, "persEnc", value.asInstanceOf[js.Any])
       
@@ -295,6 +275,22 @@ object ec {
       
       inline def setPersUndefined: Self = StObject.set(x, "pers", js.undefined)
     }
+  }
+  
+  @js.native
+  trait Signature
+    extends StObject
+       with _SignatureInput {
+    
+    var r: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any = js.native
+    
+    var recoveryParam: Double | Null = js.native
+    
+    var s: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any = js.native
+    
+    def toDER(): js.Array[Double] = js.native
+    @JSName("toDER")
+    def toDER_hex(enc: hex): String = js.native
   }
   
   trait SignatureOptions
@@ -318,7 +314,7 @@ object ec {
       
       inline def setR(value: BNInput): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      inline def setRVarargs(value: Double*): Self = StObject.set(x, "r", js.Array(value :_*))
+      inline def setRVarargs(value: Double*): Self = StObject.set(x, "r", js.Array(value*))
       
       inline def setRecoveryParam(value: Double): Self = StObject.set(x, "recoveryParam", value.asInstanceOf[js.Any])
       
@@ -326,7 +322,7 @@ object ec {
       
       inline def setS(value: BNInput): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      inline def setSVarargs(value: Double*): Self = StObject.set(x, "s", js.Array(value :_*))
+      inline def setSVarargs(value: Double*): Self = StObject.set(x, "s", js.Array(value*))
     }
   }
 }

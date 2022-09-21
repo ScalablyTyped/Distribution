@@ -7,6 +7,11 @@ import typings.react.mod.NativeMouseEvent
 import typings.reactD3Graph.anon.AlphaTarget
 import typings.reactD3Graph.anon.Height
 import typings.reactD3Graph.reactD3GraphStrings.SAME
+import typings.reactD3Graph.reactD3GraphStrings.bottom
+import typings.reactD3Graph.reactD3GraphStrings.center
+import typings.reactD3Graph.reactD3GraphStrings.left
+import typings.reactD3Graph.reactD3GraphStrings.right
+import typings.reactD3Graph.reactD3GraphStrings.top
 import typings.std.Element
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -17,12 +22,19 @@ object mod {
   
   @JSImport("react-d3-graph", "Graph")
   @js.native
-  class Graph[N /* <: GraphNode */, L /* <: GraphLink */] protected ()
-    extends Component[GraphProps[N, L], js.Any, js.Any] {
-    def this(props: GraphProps[N, L], args: js.Any*) = this()
+  open class Graph[N /* <: GraphNode */, L /* <: GraphLink */] protected () extends Component[GraphProps[N, L], Any, Any] {
+    def this(props: GraphProps[N, L], args: Any*) = this()
     
     @JSName("UNSAFE_componentWillReceiveProps")
-    def UNSAFE_componentWillReceiveProps_MGraph(nextProps: js.Any): js.Any = js.native
+    def UNSAFE_componentWillReceiveProps_MGraph(nextProps: Any): Any = js.native
+    
+    /**
+      * Sets nodes and links highlighted value.
+      *
+      * @param id - the id of the node to highlight.
+      * @param value - the highlight value to be set (true or false).
+      */
+    def _setNodeHighlightedValue(id: String, value: Boolean): Unit = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MGraph(): Unit = js.native
@@ -36,16 +48,14 @@ object mod {
   
   @JSImport("react-d3-graph", "Link")
   @js.native
-  class Link protected ()
-    extends Component[js.Any, js.Any, js.Any] {
-    def this(args: js.Any*) = this()
+  open class Link protected () extends Component[Any, Any, Any] {
+    def this(args: Any*) = this()
   }
   
   @JSImport("react-d3-graph", "Node")
   @js.native
-  class Node protected ()
-    extends Component[js.Any, js.Any, js.Any] {
-    def this(args: js.Any*) = this()
+  open class Node protected () extends Component[Any, Any, Any] {
+    def this(args: Any*) = this()
   }
   
   trait GraphConfiguration[N /* <: GraphNode */, L /* <: GraphLink */] extends StObject {
@@ -67,6 +77,8 @@ object mod {
     var highlightDegree: Double
     
     var highlightOpacity: Double
+    
+    var initialZoom: Double
     
     var link: Partial[GraphLevelLinkConfiguration[L]]
     
@@ -100,6 +112,7 @@ object mod {
       height: Double,
       highlightDegree: Double,
       highlightOpacity: Double,
+      initialZoom: Double,
       link: Partial[GraphLevelLinkConfiguration[L]],
       linkHighlightBehavior: Boolean,
       maxZoom: Double,
@@ -111,7 +124,7 @@ object mod {
       staticGraphWithDragAndDrop: Boolean,
       width: Double
     ): GraphConfiguration[N, L] = {
-      val __obj = js.Dynamic.literal(automaticRearrangeAfterDropNode = automaticRearrangeAfterDropNode.asInstanceOf[js.Any], collapsible = collapsible.asInstanceOf[js.Any], d3 = d3.asInstanceOf[js.Any], directed = directed.asInstanceOf[js.Any], focusAnimationDuration = focusAnimationDuration.asInstanceOf[js.Any], focusZoom = focusZoom.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], highlightDegree = highlightDegree.asInstanceOf[js.Any], highlightOpacity = highlightOpacity.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], linkHighlightBehavior = linkHighlightBehavior.asInstanceOf[js.Any], maxZoom = maxZoom.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], nodeHighlightBehavior = nodeHighlightBehavior.asInstanceOf[js.Any], panAndZoom = panAndZoom.asInstanceOf[js.Any], staticGraph = staticGraph.asInstanceOf[js.Any], staticGraphWithDragAndDrop = staticGraphWithDragAndDrop.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(automaticRearrangeAfterDropNode = automaticRearrangeAfterDropNode.asInstanceOf[js.Any], collapsible = collapsible.asInstanceOf[js.Any], d3 = d3.asInstanceOf[js.Any], directed = directed.asInstanceOf[js.Any], focusAnimationDuration = focusAnimationDuration.asInstanceOf[js.Any], focusZoom = focusZoom.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], highlightDegree = highlightDegree.asInstanceOf[js.Any], highlightOpacity = highlightOpacity.asInstanceOf[js.Any], initialZoom = initialZoom.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], linkHighlightBehavior = linkHighlightBehavior.asInstanceOf[js.Any], maxZoom = maxZoom.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], nodeHighlightBehavior = nodeHighlightBehavior.asInstanceOf[js.Any], panAndZoom = panAndZoom.asInstanceOf[js.Any], staticGraph = staticGraph.asInstanceOf[js.Any], staticGraphWithDragAndDrop = staticGraphWithDragAndDrop.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphConfiguration[N, L]]
     }
     
@@ -134,6 +147,8 @@ object mod {
       inline def setHighlightDegree(value: Double): Self = StObject.set(x, "highlightDegree", value.asInstanceOf[js.Any])
       
       inline def setHighlightOpacity(value: Double): Self = StObject.set(x, "highlightOpacity", value.asInstanceOf[js.Any])
+      
+      inline def setInitialZoom(value: Double): Self = StObject.set(x, "initialZoom", value.asInstanceOf[js.Any])
       
       inline def setLink(value: Partial[GraphLevelLinkConfiguration[L]]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
@@ -180,11 +195,11 @@ object mod {
       
       inline def setLinks(value: js.Array[L]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      inline def setLinksVarargs(value: L*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: L*): Self = StObject.set(x, "links", js.Array(value*))
       
       inline def setNodes(value: js.Array[N]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: N*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: N*): Self = StObject.set(x, "nodes", js.Array(value*))
     }
   }
   
@@ -211,6 +226,8 @@ object mod {
     def onRightClickLink(event: MouseEvent[Element, NativeMouseEvent], source: String, target: String): Unit
     
     def onRightClickNode(event: MouseEvent[Element, NativeMouseEvent], nodeId: String): Unit
+    
+    def onZoomChange(previousZoom: Double, newZoom: Double): Unit
   }
   object GraphEventCallbacks {
     
@@ -225,9 +242,10 @@ object mod {
       onMouseOverNode: String => Unit,
       onNodePositionChange: (String, Double, Double) => Unit,
       onRightClickLink: (MouseEvent[Element, NativeMouseEvent], String, String) => Unit,
-      onRightClickNode: (MouseEvent[Element, NativeMouseEvent], String) => Unit
+      onRightClickNode: (MouseEvent[Element, NativeMouseEvent], String) => Unit,
+      onZoomChange: (Double, Double) => Unit
     ): GraphEventCallbacks = {
-      val __obj = js.Dynamic.literal(onClickGraph = js.Any.fromFunction1(onClickGraph), onClickLink = js.Any.fromFunction2(onClickLink), onClickNode = js.Any.fromFunction1(onClickNode), onDoubleClickNode = js.Any.fromFunction1(onDoubleClickNode), onMouseOutLink = js.Any.fromFunction2(onMouseOutLink), onMouseOutNode = js.Any.fromFunction1(onMouseOutNode), onMouseOverLink = js.Any.fromFunction2(onMouseOverLink), onMouseOverNode = js.Any.fromFunction1(onMouseOverNode), onNodePositionChange = js.Any.fromFunction3(onNodePositionChange), onRightClickLink = js.Any.fromFunction3(onRightClickLink), onRightClickNode = js.Any.fromFunction2(onRightClickNode))
+      val __obj = js.Dynamic.literal(onClickGraph = js.Any.fromFunction1(onClickGraph), onClickLink = js.Any.fromFunction2(onClickLink), onClickNode = js.Any.fromFunction1(onClickNode), onDoubleClickNode = js.Any.fromFunction1(onDoubleClickNode), onMouseOutLink = js.Any.fromFunction2(onMouseOutLink), onMouseOutNode = js.Any.fromFunction1(onMouseOutNode), onMouseOverLink = js.Any.fromFunction2(onMouseOverLink), onMouseOverNode = js.Any.fromFunction1(onMouseOverNode), onNodePositionChange = js.Any.fromFunction3(onNodePositionChange), onRightClickLink = js.Any.fromFunction3(onRightClickLink), onRightClickNode = js.Any.fromFunction2(onRightClickNode), onZoomChange = js.Any.fromFunction2(onZoomChange))
       __obj.asInstanceOf[GraphEventCallbacks]
     }
     
@@ -254,6 +272,8 @@ object mod {
       inline def setOnRightClickLink(value: (MouseEvent[Element, NativeMouseEvent], String, String) => Unit): Self = StObject.set(x, "onRightClickLink", js.Any.fromFunction3(value))
       
       inline def setOnRightClickNode(value: (MouseEvent[Element, NativeMouseEvent], String) => Unit): Self = StObject.set(x, "onRightClickNode", js.Any.fromFunction2(value))
+      
+      inline def setOnZoomChange(value: (Double, Double) => Unit): Self = StObject.set(x, "onZoomChange", js.Any.fromFunction2(value))
     }
   }
   
@@ -356,6 +376,8 @@ object mod {
     
     var highlightStrokeWidth: SAME | Double
     
+    var labelPosition: left | right | top | bottom | center
+    
     var labelProperty: NodeLabelProperty[N]
     
     var mouseCursor: String
@@ -364,7 +386,7 @@ object mod {
     
     var renderLabel: Boolean
     
-    var size: Double | Height
+    var size: NodeSize
     
     var strokeColor: String
     
@@ -374,7 +396,7 @@ object mod {
     
     var symbolType: String
     
-    def viewGenerator(node: N): js.Any
+    def viewGenerator(node: N): Any
   }
   object GraphLevelNodeConfiguration {
     
@@ -388,18 +410,19 @@ object mod {
       highlightFontWeight: String,
       highlightStrokeColor: SAME | String,
       highlightStrokeWidth: SAME | Double,
+      labelPosition: left | right | top | bottom | center,
       labelProperty: NodeLabelProperty[N],
       mouseCursor: String,
       opacity: Double,
       renderLabel: Boolean,
-      size: Double | Height,
+      size: NodeSize,
       strokeColor: String,
       strokeWidth: Double,
       svg: String,
       symbolType: String,
-      viewGenerator: N => js.Any
+      viewGenerator: N => Any
     ): GraphLevelNodeConfiguration[N] = {
-      val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontColor = fontColor.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], highlightColor = highlightColor.asInstanceOf[js.Any], highlightFontSize = highlightFontSize.asInstanceOf[js.Any], highlightFontWeight = highlightFontWeight.asInstanceOf[js.Any], highlightStrokeColor = highlightStrokeColor.asInstanceOf[js.Any], highlightStrokeWidth = highlightStrokeWidth.asInstanceOf[js.Any], labelProperty = labelProperty.asInstanceOf[js.Any], mouseCursor = mouseCursor.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], renderLabel = renderLabel.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], strokeColor = strokeColor.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], symbolType = symbolType.asInstanceOf[js.Any], viewGenerator = js.Any.fromFunction1(viewGenerator))
+      val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontColor = fontColor.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], highlightColor = highlightColor.asInstanceOf[js.Any], highlightFontSize = highlightFontSize.asInstanceOf[js.Any], highlightFontWeight = highlightFontWeight.asInstanceOf[js.Any], highlightStrokeColor = highlightStrokeColor.asInstanceOf[js.Any], highlightStrokeWidth = highlightStrokeWidth.asInstanceOf[js.Any], labelPosition = labelPosition.asInstanceOf[js.Any], labelProperty = labelProperty.asInstanceOf[js.Any], mouseCursor = mouseCursor.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], renderLabel = renderLabel.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], strokeColor = strokeColor.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], symbolType = symbolType.asInstanceOf[js.Any], viewGenerator = js.Any.fromFunction1(viewGenerator))
       __obj.asInstanceOf[GraphLevelNodeConfiguration[N]]
     }
     
@@ -423,6 +446,8 @@ object mod {
       
       inline def setHighlightStrokeWidth(value: SAME | Double): Self = StObject.set(x, "highlightStrokeWidth", value.asInstanceOf[js.Any])
       
+      inline def setLabelPosition(value: left | right | top | bottom | center): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+      
       inline def setLabelProperty(value: NodeLabelProperty[N]): Self = StObject.set(x, "labelProperty", value.asInstanceOf[js.Any])
       
       inline def setLabelPropertyFunction1(value: N => String): Self = StObject.set(x, "labelProperty", js.Any.fromFunction1(value))
@@ -433,7 +458,7 @@ object mod {
       
       inline def setRenderLabel(value: Boolean): Self = StObject.set(x, "renderLabel", value.asInstanceOf[js.Any])
       
-      inline def setSize(value: Double | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: NodeSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
@@ -443,7 +468,7 @@ object mod {
       
       inline def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
       
-      inline def setViewGenerator(value: N => js.Any): Self = StObject.set(x, "viewGenerator", js.Any.fromFunction1(value))
+      inline def setViewGenerator(value: N => Any): Self = StObject.set(x, "viewGenerator", js.Any.fromFunction1(value))
     }
   }
   
@@ -514,7 +539,7 @@ object mod {
     
     var renderLabel: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Double | Height] = js.undefined
+    var size: js.UndefOr[NodeSize] = js.undefined
     
     var strokeColor: js.UndefOr[String] = js.undefined
     
@@ -524,7 +549,7 @@ object mod {
     
     var symbolType: js.UndefOr[String] = js.undefined
     
-    var viewGenerator: js.UndefOr[js.Function1[/* node */ NodeWithExtraParameters, js.Any]] = js.undefined
+    var viewGenerator: js.UndefOr[js.Function1[/* node */ NodeWithExtraParameters, Any]] = js.undefined
   }
   object GraphNode {
     
@@ -559,7 +584,7 @@ object mod {
       
       inline def setRenderLabelUndefined: Self = StObject.set(x, "renderLabel", js.undefined)
       
-      inline def setSize(value: Double | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: NodeSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -579,7 +604,7 @@ object mod {
       
       inline def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
       
-      inline def setViewGenerator(value: /* node */ NodeWithExtraParameters => js.Any): Self = StObject.set(x, "viewGenerator", js.Any.fromFunction1(value))
+      inline def setViewGenerator(value: /* node */ NodeWithExtraParameters => Any): Self = StObject.set(x, "viewGenerator", js.Any.fromFunction1(value))
       
       inline def setViewGeneratorUndefined: Self = StObject.set(x, "viewGenerator", js.undefined)
     }
@@ -624,6 +649,8 @@ object mod {
     var onRightClickNode: js.UndefOr[
         js.Function2[/* event */ MouseEvent[Element, NativeMouseEvent], /* nodeId */ String, Unit]
       ] = js.undefined
+    
+    var onZoomChange: js.UndefOr[js.Function2[/* previousZoom */ Double, /* newZoom */ Double, Unit]] = js.undefined
   }
   object GraphProps {
     
@@ -689,6 +716,10 @@ object mod {
       inline def setOnRightClickNode(value: (/* event */ MouseEvent[Element, NativeMouseEvent], /* nodeId */ String) => Unit): Self = StObject.set(x, "onRightClickNode", js.Any.fromFunction2(value))
       
       inline def setOnRightClickNodeUndefined: Self = StObject.set(x, "onRightClickNode", js.undefined)
+      
+      inline def setOnZoomChange(value: (/* previousZoom */ Double, /* newZoom */ Double) => Unit): Self = StObject.set(x, "onZoomChange", js.Any.fromFunction2(value))
+      
+      inline def setOnZoomChangeUndefined: Self = StObject.set(x, "onZoomChange", js.undefined)
     }
   }
   
@@ -741,7 +772,7 @@ object mod {
     
     var renderLabel: Boolean
     
-    var size: Double | Height
+    var size: NodeSize
     
     var strokeColor: String
     
@@ -751,7 +782,7 @@ object mod {
     
     var symbolType: String
     
-    def viewGenerator(node: NodeWithExtraParameters): js.Any
+    def viewGenerator(node: NodeWithExtraParameters): Any
   }
   object NodeLevelNodeConfiguration {
     
@@ -761,12 +792,12 @@ object mod {
       labelProperty: NodeLabelProperty[NodeWithExtraParameters],
       opacity: Double,
       renderLabel: Boolean,
-      size: Double | Height,
+      size: NodeSize,
       strokeColor: String,
       strokeWidth: Double,
       svg: String,
       symbolType: String,
-      viewGenerator: NodeWithExtraParameters => js.Any
+      viewGenerator: NodeWithExtraParameters => Any
     ): NodeLevelNodeConfiguration = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontColor = fontColor.asInstanceOf[js.Any], labelProperty = labelProperty.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], renderLabel = renderLabel.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], strokeColor = strokeColor.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], symbolType = symbolType.asInstanceOf[js.Any], viewGenerator = js.Any.fromFunction1(viewGenerator))
       __obj.asInstanceOf[NodeLevelNodeConfiguration]
@@ -786,7 +817,7 @@ object mod {
       
       inline def setRenderLabel(value: Boolean): Self = StObject.set(x, "renderLabel", value.asInstanceOf[js.Any])
       
-      inline def setSize(value: Double | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: NodeSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
@@ -796,9 +827,11 @@ object mod {
       
       inline def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
       
-      inline def setViewGenerator(value: NodeWithExtraParameters => js.Any): Self = StObject.set(x, "viewGenerator", js.Any.fromFunction1(value))
+      inline def setViewGenerator(value: NodeWithExtraParameters => Any): Self = StObject.set(x, "viewGenerator", js.Any.fromFunction1(value))
     }
   }
+  
+  type NodeSize = Double | Height
   
   trait NodeWithExtraParameters
     extends StObject

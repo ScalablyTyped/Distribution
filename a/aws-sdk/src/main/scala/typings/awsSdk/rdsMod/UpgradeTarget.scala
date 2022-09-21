@@ -27,9 +27,29 @@ trait UpgradeTarget extends StObject {
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * A value that indicates whether a database engine is upgraded to a major version.
+    * A value that indicates whether upgrading to the target version requires upgrading the major version of the database engine.
     */
   var IsMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * A list of the supported DB engine modes for the target engine version.
+    */
+  var SupportedEngineModes: js.UndefOr[EngineModeList] = js.undefined
+  
+  /**
+    * A value that indicates whether you can use Babelfish for Aurora PostgreSQL with the target engine version.
+    */
+  var SupportsBabelfish: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * A value that indicates whether you can use Aurora global databases with the target engine version.
+    */
+  var SupportsGlobalDatabases: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * A value that indicates whether you can use Aurora parallel query with the target engine version.
+    */
+  var SupportsParallelQuery: js.UndefOr[BooleanOptional] = js.undefined
 }
 object UpgradeTarget {
   
@@ -59,5 +79,23 @@ object UpgradeTarget {
     inline def setIsMajorVersionUpgrade(value: Boolean): Self = StObject.set(x, "IsMajorVersionUpgrade", value.asInstanceOf[js.Any])
     
     inline def setIsMajorVersionUpgradeUndefined: Self = StObject.set(x, "IsMajorVersionUpgrade", js.undefined)
+    
+    inline def setSupportedEngineModes(value: EngineModeList): Self = StObject.set(x, "SupportedEngineModes", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedEngineModesUndefined: Self = StObject.set(x, "SupportedEngineModes", js.undefined)
+    
+    inline def setSupportedEngineModesVarargs(value: String*): Self = StObject.set(x, "SupportedEngineModes", js.Array(value*))
+    
+    inline def setSupportsBabelfish(value: BooleanOptional): Self = StObject.set(x, "SupportsBabelfish", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsBabelfishUndefined: Self = StObject.set(x, "SupportsBabelfish", js.undefined)
+    
+    inline def setSupportsGlobalDatabases(value: BooleanOptional): Self = StObject.set(x, "SupportsGlobalDatabases", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsGlobalDatabasesUndefined: Self = StObject.set(x, "SupportsGlobalDatabases", js.undefined)
+    
+    inline def setSupportsParallelQuery(value: BooleanOptional): Self = StObject.set(x, "SupportsParallelQuery", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsParallelQueryUndefined: Self = StObject.set(x, "SupportsParallelQuery", js.undefined)
   }
 }

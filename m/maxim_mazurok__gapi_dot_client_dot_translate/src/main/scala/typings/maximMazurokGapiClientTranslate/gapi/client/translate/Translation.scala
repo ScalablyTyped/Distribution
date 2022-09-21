@@ -21,7 +21,7 @@ trait Translation extends StObject {
     */
   var model: js.UndefOr[String] = js.undefined
   
-  /** Text translated into the target language. */
+  /** Text translated into the target language. If an error occurs during translation, this field might be excluded from the response. */
   var translatedText: js.UndefOr[String] = js.undefined
 }
 object Translation {

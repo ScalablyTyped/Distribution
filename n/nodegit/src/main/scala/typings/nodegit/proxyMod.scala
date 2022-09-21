@@ -9,7 +9,7 @@ object proxyMod {
   
   @JSImport("nodegit/proxy", "Proxy")
   @js.native
-  class Proxy () extends StObject
+  open class Proxy () extends StObject
   /* static members */
   object Proxy {
     

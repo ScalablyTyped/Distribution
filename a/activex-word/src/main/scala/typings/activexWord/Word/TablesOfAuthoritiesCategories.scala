@@ -12,9 +12,9 @@ trait TablesOfAuthoritiesCategories extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): TableOfAuthoritiesCategory
+  def Item(Index: Any): TableOfAuthoritiesCategory
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.TablesOfAuthoritiesCategories_typekey")
   var WordDotTablesOfAuthoritiesCategories_typekey: TablesOfAuthoritiesCategories
@@ -25,8 +25,8 @@ object TablesOfAuthoritiesCategories {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => TableOfAuthoritiesCategory,
-    Parent: js.Any,
+    Item: Any => TableOfAuthoritiesCategory,
+    Parent: Any,
     WordDotTablesOfAuthoritiesCategories_typekey: TablesOfAuthoritiesCategories
   ): TablesOfAuthoritiesCategories = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -42,9 +42,9 @@ object TablesOfAuthoritiesCategories {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => TableOfAuthoritiesCategory): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => TableOfAuthoritiesCategory): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotTablesOfAuthoritiesCategories_typekey(value: TablesOfAuthoritiesCategories): Self = StObject.set(x, "Word.TablesOfAuthoritiesCategories_typekey", value.asInstanceOf[js.Any])
   }

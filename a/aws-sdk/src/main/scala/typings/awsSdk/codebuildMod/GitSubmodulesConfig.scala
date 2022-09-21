@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GitSubmodulesConfig extends StObject {
   
   /**
-    *  Set to true to fetch Git submodules for your AWS CodeBuild build project. 
+    *  Set to true to fetch Git submodules for your CodeBuild build project. 
     */
   var fetchSubmodules: WrapperBoolean
 }

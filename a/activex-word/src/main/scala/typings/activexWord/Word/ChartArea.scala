@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChartArea extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
-  var AutoScaleFont: js.Any
+  var AutoScaleFont: Any
   
   val Border: ChartBorder
   
-  def Clear(): js.Any
+  def Clear(): Any
   
-  def ClearContents(): js.Any
+  def ClearContents(): Any
   
-  def ClearFormats(): js.Any
+  def ClearFormats(): Any
   
-  def Copy(): js.Any
+  def Copy(): Any
   
   val Creator: Double
   
@@ -36,9 +36,9 @@ trait ChartArea extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
-  def Select(): js.Any
+  def Select(): Any
   
   var Shadow: Boolean
   
@@ -52,13 +52,13 @@ trait ChartArea extends StObject {
 object ChartArea {
   
   inline def apply(
-    Application: js.Any,
-    AutoScaleFont: js.Any,
+    Application: Any,
+    AutoScaleFont: Any,
     Border: ChartBorder,
-    Clear: () => js.Any,
-    ClearContents: () => js.Any,
-    ClearFormats: () => js.Any,
-    Copy: () => js.Any,
+    Clear: () => Any,
+    ClearContents: () => Any,
+    ClearFormats: () => Any,
+    Copy: () => Any,
     Creator: Double,
     Fill: ChartFillFormat,
     Font: ChartFont,
@@ -67,8 +67,8 @@ object ChartArea {
     Interior: Interior,
     Left: Double,
     Name: String,
-    Parent: js.Any,
-    Select: () => js.Any,
+    Parent: Any,
+    Select: () => Any,
     Shadow: Boolean,
     Top: Double,
     Width: Double,
@@ -81,19 +81,19 @@ object ChartArea {
   
   extension [Self <: ChartArea](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    inline def setAutoScaleFont(value: js.Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
+    inline def setAutoScaleFont(value: Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
     
     inline def setBorder(value: ChartBorder): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    inline def setClear(value: () => js.Any): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Any): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    inline def setClearContents(value: () => js.Any): Self = StObject.set(x, "ClearContents", js.Any.fromFunction0(value))
+    inline def setClearContents(value: () => Any): Self = StObject.set(x, "ClearContents", js.Any.fromFunction0(value))
     
-    inline def setClearFormats(value: () => js.Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
+    inline def setClearFormats(value: () => Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
     
-    inline def setCopy(value: () => js.Any): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => Any): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -111,9 +111,9 @@ object ChartArea {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     inline def setShadow(value: Boolean): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     

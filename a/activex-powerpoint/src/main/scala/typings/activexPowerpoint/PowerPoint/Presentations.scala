@@ -20,7 +20,7 @@ trait Presentations extends StObject {
   
   val Count: Double = js.native
   
-  def Item(Index: js.Any): Presentation = js.native
+  def Item(Index: Any): Presentation = js.native
   
   /**
     * @param Office.MsoTriState [ReadOnly=0]
@@ -115,7 +115,7 @@ trait Presentations extends StObject {
   def OpenOld(FileName: String, ReadOnly: MsoTriState, Untitled: MsoTriState): Presentation = js.native
   def OpenOld(FileName: String, ReadOnly: MsoTriState, Untitled: MsoTriState, WithWindow: MsoTriState): Presentation = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.Presentations_typekey")
   var PowerPointDotPresentations_typekey: Presentations = js.native

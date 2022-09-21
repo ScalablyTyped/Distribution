@@ -10,10 +10,10 @@ object leakRemoveMod {
   
   @JSImport("material-ui/svg-icons/image/leak-remove", JSImport.Default)
   @js.native
-  class default () extends ImageLeakRemove
+  open class default () extends ImageLeakRemove
   
   @JSImport("material-ui/svg-icons/image/leak-remove", "ImageLeakRemove")
   @js.native
-  class ImageLeakRemove ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageLeakRemove ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

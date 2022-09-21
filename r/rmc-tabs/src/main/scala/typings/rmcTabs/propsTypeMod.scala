@@ -64,10 +64,10 @@ object propsTypeMod {
     var tabBarPosition: js.UndefOr[top | bottom | left | right] = js.undefined
     
     /** tabBar text style */
-    var tabBarTextStyle: js.UndefOr[CSSProperties | js.Any] = js.undefined
+    var tabBarTextStyle: js.UndefOr[CSSProperties | Any] = js.undefined
     
     /** tabBar underline style */
-    var tabBarUnderlineStyle: js.UndefOr[CSSProperties | js.Any] = js.undefined
+    var tabBarUnderlineStyle: js.UndefOr[CSSProperties | Any] = js.undefined
     
     /** tab paging direction | default: horizontal */
     var tabDirection: js.UndefOr[horizontal | vertical] = js.undefined
@@ -155,11 +155,11 @@ object propsTypeMod {
       
       inline def setTabBarPositionUndefined: Self = StObject.set(x, "tabBarPosition", js.undefined)
       
-      inline def setTabBarTextStyle(value: CSSProperties | js.Any): Self = StObject.set(x, "tabBarTextStyle", value.asInstanceOf[js.Any])
+      inline def setTabBarTextStyle(value: CSSProperties | Any): Self = StObject.set(x, "tabBarTextStyle", value.asInstanceOf[js.Any])
       
       inline def setTabBarTextStyleUndefined: Self = StObject.set(x, "tabBarTextStyle", js.undefined)
       
-      inline def setTabBarUnderlineStyle(value: CSSProperties | js.Any): Self = StObject.set(x, "tabBarUnderlineStyle", value.asInstanceOf[js.Any])
+      inline def setTabBarUnderlineStyle(value: CSSProperties | Any): Self = StObject.set(x, "tabBarUnderlineStyle", value.asInstanceOf[js.Any])
       
       inline def setTabBarUnderlineStyleUndefined: Self = StObject.set(x, "tabBarUnderlineStyle", js.undefined)
       
@@ -169,7 +169,7 @@ object propsTypeMod {
       
       inline def setTabs(value: js.Array[TabData]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      inline def setTabsVarargs(value: TabData*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: TabData*): Self = StObject.set(x, "tabs", js.Array(value*))
       
       inline def setUseLeftInsteadTransform(value: Boolean): Self = StObject.set(x, "useLeftInsteadTransform", value.asInstanceOf[js.Any])
       
@@ -208,7 +208,7 @@ object propsTypeMod {
     var renderTab: js.UndefOr[js.Function1[/* tab */ TabData, ReactNode]] = js.undefined
     
     /** render the underline of tabbar */
-    var renderUnderline: js.UndefOr[js.Function1[/* style */ CSSProperties | js.Any, ReactNode]] = js.undefined
+    var renderUnderline: js.UndefOr[js.Function1[/* style */ CSSProperties | Any, ReactNode]] = js.undefined
     
     /** tabBar active text color */
     var tabBarActiveTextColor: js.UndefOr[String] = js.undefined
@@ -223,10 +223,10 @@ object propsTypeMod {
     var tabBarPosition: js.UndefOr[top | bottom | left | right] = js.undefined
     
     /** tabBar text style */
-    var tabBarTextStyle: js.UndefOr[CSSProperties | js.Any] = js.undefined
+    var tabBarTextStyle: js.UndefOr[CSSProperties | Any] = js.undefined
     
     /** tabBar underline style */
-    var tabBarUnderlineStyle: js.UndefOr[CSSProperties | js.Any] = js.undefined
+    var tabBarUnderlineStyle: js.UndefOr[CSSProperties | Any] = js.undefined
     
     /** tabs data */
     var tabs: js.Array[TabData]
@@ -266,7 +266,7 @@ object propsTypeMod {
       
       inline def setRenderTabUndefined: Self = StObject.set(x, "renderTab", js.undefined)
       
-      inline def setRenderUnderline(value: /* style */ CSSProperties | js.Any => ReactNode): Self = StObject.set(x, "renderUnderline", js.Any.fromFunction1(value))
+      inline def setRenderUnderline(value: /* style */ CSSProperties | Any => ReactNode): Self = StObject.set(x, "renderUnderline", js.Any.fromFunction1(value))
       
       inline def setRenderUnderlineUndefined: Self = StObject.set(x, "renderUnderline", js.undefined)
       
@@ -286,17 +286,17 @@ object propsTypeMod {
       
       inline def setTabBarPositionUndefined: Self = StObject.set(x, "tabBarPosition", js.undefined)
       
-      inline def setTabBarTextStyle(value: CSSProperties | js.Any): Self = StObject.set(x, "tabBarTextStyle", value.asInstanceOf[js.Any])
+      inline def setTabBarTextStyle(value: CSSProperties | Any): Self = StObject.set(x, "tabBarTextStyle", value.asInstanceOf[js.Any])
       
       inline def setTabBarTextStyleUndefined: Self = StObject.set(x, "tabBarTextStyle", js.undefined)
       
-      inline def setTabBarUnderlineStyle(value: CSSProperties | js.Any): Self = StObject.set(x, "tabBarUnderlineStyle", value.asInstanceOf[js.Any])
+      inline def setTabBarUnderlineStyle(value: CSSProperties | Any): Self = StObject.set(x, "tabBarUnderlineStyle", value.asInstanceOf[js.Any])
       
       inline def setTabBarUnderlineStyleUndefined: Self = StObject.set(x, "tabBarUnderlineStyle", js.undefined)
       
       inline def setTabs(value: js.Array[TabData]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      inline def setTabsVarargs(value: TabData*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: TabData*): Self = StObject.set(x, "tabs", js.Array(value*))
     }
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tildify" : "2.0.0"
+      "tildify" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "tildify" : "2.0.0"
+      "tildify" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

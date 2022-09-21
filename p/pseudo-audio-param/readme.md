@@ -10,10 +10,10 @@ Simulate scheduled AudioParam values
 | ------------------ | :-------------: |
 | Full name          | pseudo-audio-param |
 | Keywords           | AudioParam, WebAudioAPI, simulator |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 989 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 76.33333333333333 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/mohayonao/pseudo-audio-param/)

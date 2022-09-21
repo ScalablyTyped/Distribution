@@ -1,63 +1,53 @@
 package typings.wechatMiniprogram.WechatMiniprogram.Component
 
+import org.scalablytyped.runtime.TopLevel
+import typings.std.ArrayConstructor
+import typings.std.BooleanConstructor
+import typings.std.Exclude
+import typings.std.NumberConstructor
+import typings.std.ObjectConstructor
+import typings.std.Partial
+import typings.std.Record
+import typings.std.StringConstructor
+import typings.wechatMiniprogram.WechatMiniprogram.IAnyObject
+import typings.wechatMiniprogram.WechatMiniprogram.Page.ILifetime
+import typings.wechatMiniprogram.wechatMiniprogramBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AllFullProperty = typings.wechatMiniprogram.WechatMiniprogram.Component.FullProperty[
-typings.std.ArrayConstructor | typings.std.BooleanConstructor | scala.Null | typings.std.NumberConstructor | typings.std.ObjectConstructor | typings.std.StringConstructor]
+type AllFullProperty = FullProperty[
+ArrayConstructor | BooleanConstructor | Null | NumberConstructor | ObjectConstructor | StringConstructor]
 
-type AllProperty = typings.wechatMiniprogram.WechatMiniprogram.Component.AllFullProperty | typings.wechatMiniprogram.WechatMiniprogram.Component.ShortProperty
+type AllProperty = AllFullProperty | ShortProperty
 
 type Constructor = js.Function1[
-/* options */ typings.wechatMiniprogram.WechatMiniprogram.Component.Options[
-  typings.wechatMiniprogram.WechatMiniprogram.Component.DataOption, 
-  typings.wechatMiniprogram.WechatMiniprogram.Component.PropertyOption, 
-  typings.wechatMiniprogram.WechatMiniprogram.Component.MethodOption, 
-  js.Object, 
-  typings.wechatMiniprogram.wechatMiniprogramBooleans.`false`
-], 
-java.lang.String]
+/* options */ Options[DataOption, PropertyOption, MethodOption, js.Object, `false`], 
+String]
 
-type DataOption = typings.std.Record[java.lang.String, js.Any]
+type DataOption = Record[String, Any]
 
-type DefinitionFilter = js.Function2[
-/* defFields */ typings.wechatMiniprogram.WechatMiniprogram.Component.TrivialOption, 
-/* definitionFilterArr */ js.UndefOr[
-  js.Array[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias wechat-miniprogram.WechatMiniprogram.Component.DefinitionFilter */ js.Object
-  ]
-], 
-scala.Unit]
-
-type FullPropertyToData[T /* <: typings.wechatMiniprogram.WechatMiniprogram.Component.AllFullProperty */] = typings.wechatMiniprogram.WechatMiniprogram.Component.ValueType[
+type FullPropertyToData[T /* <: AllFullProperty */] = ValueType[
 /* import warning: importer.ImportType#apply Failed type conversion: T['type'] */ js.Any]
 
-type Instance[TData /* <: typings.wechatMiniprogram.WechatMiniprogram.Component.DataOption */, TProperty /* <: typings.wechatMiniprogram.WechatMiniprogram.Component.PropertyOption */, TMethod /* <: typings.std.Partial[typings.wechatMiniprogram.WechatMiniprogram.Component.MethodOption] */, TCustomInstanceProperty /* <: typings.wechatMiniprogram.WechatMiniprogram.IAnyObject */, TIsPage /* <: scala.Boolean */] = typings.wechatMiniprogram.WechatMiniprogram.Component.InstanceProperties & typings.wechatMiniprogram.WechatMiniprogram.Component.InstanceMethods[TData] & TMethod & (js.Object | typings.wechatMiniprogram.WechatMiniprogram.Page.ILifetime) & TCustomInstanceProperty & (typings.wechatMiniprogram.anon.Data[TData, TProperty])
+type Instance[TData /* <: DataOption */, TProperty /* <: PropertyOption */, TMethod /* <: Partial[MethodOption] */, TCustomInstanceProperty /* <: IAnyObject */, TIsPage /* <: Boolean */] = InstanceProperties & InstanceMethods[TData] & TMethod & (js.Object | ILifetime) & TCustomInstanceProperty & (typings.wechatMiniprogram.anon.Data[TData, TProperty])
 
-type MethodOption = typings.std.Record[java.lang.String, js.Function1[/* repeated */ js.Any, js.Any]]
+// tslint:disable-next-line:ban-types
+type MethodOption = Record[String, js.Function]
 
-type PropertyOption = typings.std.Record[
-java.lang.String, 
-typings.wechatMiniprogram.WechatMiniprogram.Component.AllProperty]
+type PropertyOption = Record[String, AllProperty]
 
-type PropertyOptionToData[P /* <: typings.wechatMiniprogram.WechatMiniprogram.Component.PropertyOption */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+type PropertyOptionToData[P /* <: PropertyOption */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ name in keyof P ]: wechat-miniprogram.WechatMiniprogram.Component.PropertyToData<P[name]>}
-  */ typings.wechatMiniprogram.wechatMiniprogramStrings.PropertyOptionToData & org.scalablytyped.runtime.TopLevel[P]
+  */ typings.wechatMiniprogram.wechatMiniprogramStrings.PropertyOptionToData & TopLevel[P]
 
-type PropertyToData[T /* <: typings.wechatMiniprogram.WechatMiniprogram.Component.AllProperty */] = (typings.wechatMiniprogram.WechatMiniprogram.Component.FullPropertyToData[
-typings.std.Exclude[T, typings.wechatMiniprogram.WechatMiniprogram.Component.ShortProperty]]) | typings.wechatMiniprogram.WechatMiniprogram.Component.ValueType[T]
+type PropertyToData[T /* <: AllProperty */] = (FullPropertyToData[Exclude[T, ShortProperty]]) | ValueType[T]
 
-type PropertyType = typings.std.StringConstructor | typings.std.NumberConstructor | typings.std.BooleanConstructor | typings.std.ArrayConstructor | typings.std.ObjectConstructor | scala.Null
+type PropertyType = StringConstructor | NumberConstructor | BooleanConstructor | ArrayConstructor | ObjectConstructor | Null
 
-type ShortProperty = typings.std.StringConstructor | typings.std.NumberConstructor | typings.std.BooleanConstructor | typings.std.ArrayConstructor | typings.std.ObjectConstructor | scala.Null
+type ShortProperty = StringConstructor | NumberConstructor | BooleanConstructor | ArrayConstructor | ObjectConstructor | Null
 
-type TrivialInstance = typings.wechatMiniprogram.WechatMiniprogram.Component.Instance[
-typings.wechatMiniprogram.WechatMiniprogram.IAnyObject, 
-typings.wechatMiniprogram.WechatMiniprogram.IAnyObject, 
-typings.wechatMiniprogram.WechatMiniprogram.IAnyObject, 
-typings.wechatMiniprogram.WechatMiniprogram.IAnyObject, 
-typings.wechatMiniprogram.wechatMiniprogramBooleans.`false`]
+type TrivialInstance = Instance[IAnyObject, IAnyObject, IAnyObject, IAnyObject, `false`]
 
-type ValueType[T /* <: typings.wechatMiniprogram.WechatMiniprogram.Component.PropertyType */] = typings.wechatMiniprogram.WechatMiniprogram.IAnyObject | js.Array[js.Any] | scala.Boolean | scala.Double | java.lang.String
+type ValueType[T /* <: PropertyType */] = IAnyObject | js.Array[Any] | Boolean | Double | String

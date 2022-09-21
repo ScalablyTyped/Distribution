@@ -28,6 +28,12 @@ trait NavigationAnnotationsShapeOptions extends StObject {
   var r: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The radius of the shape in y
+    * direction. Used for the ellipse.
+    */
+  var ry: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Defines additional snapping area
     * around an annotation making this annotation to focus. Defined in pixels.
     */
@@ -51,8 +57,8 @@ trait NavigationAnnotationsShapeOptions extends StObject {
   var strokeWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The type of the shape, e.g.
-    * circle or rectangle.
+    * (Highcharts, Highstock, Highmaps, Gantt) The type of the shape. Avaliable
+    * options are circle, rect and ellipse.
     */
   var `type`: js.UndefOr[String] = js.undefined
   
@@ -60,6 +66,18 @@ trait NavigationAnnotationsShapeOptions extends StObject {
     * (Highcharts, Highstock, Highmaps, Gantt) The width of the shape.
     */
   var width: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The xAxis index to which the
+    * points should be attached. Used for the ellipse.
+    */
+  var xAxis: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The yAxis index to which the
+    * points should be attached. Used for the ellipse.
+    */
+  var yAxis: js.UndefOr[Double] = js.undefined
 }
 object NavigationAnnotationsShapeOptions {
   
@@ -86,6 +104,10 @@ object NavigationAnnotationsShapeOptions {
     
     inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
+    inline def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+    
+    inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
+    
     inline def setSnap(value: Double): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
     
     inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
@@ -109,5 +131,13 @@ object NavigationAnnotationsShapeOptions {
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    
+    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    
+    inline def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    
+    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }
 }

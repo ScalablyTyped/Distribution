@@ -1,6 +1,6 @@
 package typings.wav
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.WriteStream
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("wav", "FileWriter")
   @js.native
-  class FileWriter protected () extends Writer {
+  open class FileWriter protected () extends Writer {
     def this(path: String) = this()
     def this(path: String, opts: WriterOptions) = this()
     
@@ -35,14 +35,16 @@ object mod {
   
   @JSImport("wav", "Reader")
   @js.native
-  class Reader () extends Transform {
+  open class Reader () extends Transform {
     def this(opts: TransformOptions) = this()
     
+    def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_chunk(event: chunk, listener: js.Function1[/* unknownChunk */ UnknownChunk, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_format(event: format, listener: js.Function1[/* format */ Format, Unit]): this.type = js.native
     
+    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_chunk(event: chunk, listener: js.Function1[/* unknownChunk */ UnknownChunk, Unit]): this.type = js.native
     @JSName("on")
@@ -51,9 +53,10 @@ object mod {
   
   @JSImport("wav", "Writer")
   @js.native
-  class Writer () extends Transform {
+  open class Writer () extends Transform {
     def this(opts: WriterOptions) = this()
     
+    def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_header(event: header, listener: js.Function1[/* header */ Buffer, Unit]): this.type = js.native
     
@@ -67,6 +70,7 @@ object mod {
     
     var format: Double = js.native
     
+    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_header(event: header, listener: js.Function1[/* header */ Buffer, Unit]): this.type = js.native
     
@@ -129,20 +133,20 @@ object mod {
   
   trait UnknownChunk extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var id: String
   }
   object UnknownChunk {
     
-    inline def apply(data: js.Any, id: String): UnknownChunk = {
+    inline def apply(data: Any, id: String): UnknownChunk = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnknownChunk]
     }
     
     extension [Self <: UnknownChunk](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }

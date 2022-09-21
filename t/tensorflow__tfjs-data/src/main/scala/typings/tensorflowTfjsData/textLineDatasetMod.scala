@@ -10,7 +10,7 @@ object textLineDatasetMod {
   
   @JSImport("@tensorflow/tfjs-data/dist/datasets/text_line_dataset", "TextLineDataset")
   @js.native
-  class TextLineDataset protected () extends Dataset[String] {
+  open class TextLineDataset protected () extends Dataset[String] {
     /**
       * Create a `TextLineDataset`.
       *

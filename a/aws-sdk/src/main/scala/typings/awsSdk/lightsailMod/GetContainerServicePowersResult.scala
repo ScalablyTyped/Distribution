@@ -24,6 +24,6 @@ object GetContainerServicePowersResult {
     
     inline def setPowersUndefined: Self = StObject.set(x, "powers", js.undefined)
     
-    inline def setPowersVarargs(value: ContainerServicePower*): Self = StObject.set(x, "powers", js.Array(value :_*))
+    inline def setPowersVarargs(value: ContainerServicePower*): Self = StObject.set(x, "powers", js.Array(value*))
   }
 }

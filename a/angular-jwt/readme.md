@@ -10,10 +10,10 @@ Library to help you work with JWTs on AngularJS
 | ------------------ | :-------------: |
 | Full name          | angular-jwt |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 22 |
-| # downloads        | 643276 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 61338.666666666664 |
+| # stars            | 1262.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/angular-jwt#readme)

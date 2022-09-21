@@ -10,7 +10,7 @@ object telemetryMod {
   
   @JSImport("ionic/commands/telemetry", "TelemetryCommand")
   @js.native
-  class TelemetryCommand protected () extends Command {
+  open class TelemetryCommand protected () extends Command {
     def this(namespace: INamespace) = this()
   }
 }

@@ -29,7 +29,7 @@ object XInvocationAdapterFactory {
   inline def apply(
     acquire: () => Unit,
     createAdapter: (XInvocation, `type`) => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XInvocationAdapterFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createAdapter = js.Any.fromFunction2(createAdapter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

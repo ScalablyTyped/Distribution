@@ -43,6 +43,6 @@ object BuildBazelRemoteExecutionV2ExecutionCapabilities {
     
     inline def setSupportedNodePropertiesUndefined: Self = StObject.set(x, "supportedNodeProperties", js.undefined)
     
-    inline def setSupportedNodePropertiesVarargs(value: String*): Self = StObject.set(x, "supportedNodeProperties", js.Array(value :_*))
+    inline def setSupportedNodePropertiesVarargs(value: String*): Self = StObject.set(x, "supportedNodeProperties", js.Array(value*))
   }
 }

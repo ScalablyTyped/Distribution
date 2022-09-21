@@ -20,7 +20,7 @@ object mod {
   /* was `typeof VaraType` */
   @JSImport("vara", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with VaraType {
     def this(queryDom: String, fontJSONSource: String, textStep: js.Array[TextStep]) = this()
@@ -55,7 +55,7 @@ object mod {
       
       inline def setCharacters(value: js.Array[SVGGElement]): Self = StObject.set(x, "characters", value.asInstanceOf[js.Any])
       
-      inline def setCharactersVarargs(value: SVGGElement*): Self = StObject.set(x, "characters", js.Array(value :_*))
+      inline def setCharactersVarargs(value: SVGGElement*): Self = StObject.set(x, "characters", js.Array(value*))
       
       inline def setContainer(value: SVGGElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     }

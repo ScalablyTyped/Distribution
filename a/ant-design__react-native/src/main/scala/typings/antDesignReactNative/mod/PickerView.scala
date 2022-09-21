@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "PickerView")
 @js.native
-class PickerView () extends default
+open class PickerView () extends default
 /* static members */
 object PickerView {
   

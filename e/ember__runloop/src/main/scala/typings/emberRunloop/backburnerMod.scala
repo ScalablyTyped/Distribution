@@ -1,7 +1,6 @@
 package typings.emberRunloop
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,19 +16,19 @@ object backburnerMod {
     
     def getDebugInfo(): DebugInfo = js.native
     
-    def join(args: js.Any*): Unit = js.native
+    def join(args: Any*): Unit = js.native
     
-    def on(args: js.Any*): Unit = js.native
+    def on(args: Any*): Unit = js.native
     
     def schedule(queueName: String, target: js.Object, method: js.Function0[Unit | String]): Unit = js.native
     def schedule(queueName: String, target: Null, method: js.Function0[Unit | String]): Unit = js.native
     
-    def scheduleOnce(args: js.Any*): Unit = js.native
+    def scheduleOnce(args: Any*): Unit = js.native
   }
   
   trait DebugInfo extends StObject {
     
-    var autorun: js.UndefOr[Error | Null] = js.undefined
+    var autorun: js.UndefOr[js.Error | Null] = js.undefined
     
     var counters: js.Object
     
@@ -46,7 +45,7 @@ object backburnerMod {
     
     extension [Self <: DebugInfo](x: Self) {
       
-      inline def setAutorun(value: Error): Self = StObject.set(x, "autorun", value.asInstanceOf[js.Any])
+      inline def setAutorun(value: js.Error): Self = StObject.set(x, "autorun", value.asInstanceOf[js.Any])
       
       inline def setAutorunNull: Self = StObject.set(x, "autorun", null)
       
@@ -56,42 +55,52 @@ object backburnerMod {
       
       inline def setInstanceStack(value: js.Array[DeferredActionQueues]): Self = StObject.set(x, "instanceStack", value.asInstanceOf[js.Any])
       
-      inline def setInstanceStackVarargs(value: DeferredActionQueues*): Self = StObject.set(x, "instanceStack", js.Array(value :_*))
+      inline def setInstanceStackVarargs(value: DeferredActionQueues*): Self = StObject.set(x, "instanceStack", js.Array(value*))
       
       inline def setTimers(value: js.Array[QueueItem]): Self = StObject.set(x, "timers", value.asInstanceOf[js.Any])
       
-      inline def setTimersVarargs(value: QueueItem*): Self = StObject.set(x, "timers", js.Array(value :_*))
+      inline def setTimersVarargs(value: QueueItem*): Self = StObject.set(x, "timers", js.Array(value*))
     }
   }
   
   trait DeferredActionQueues
     extends StObject
-       with /* index */ StringDictionary[js.Any] {
+       with /* index */ StringDictionary[Any] {
     
-    def flush(fromAutorun: Boolean): js.Any
+    def flush(fromAutorun: Boolean): Any
     
     var queues: js.Object
     
-    def schedule(queueName: String, target: js.Any, method: js.Any, args: js.Any, onceFlag: Boolean, stack: js.Any): js.Any
+    def schedule[T, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EmberMethod<T> */ Any */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [queueName: string, target: T, method: M, methodArgs: ...EmberMethodParams<T, M>, onceFlag: boolean, stack: unknown] is not an array type */ args: /* import warning: importer.ImportType#apply c repeated non-array type: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EmberMethodParams<T, M> * / any */ /* methodArgs */ js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EmberMethodParams<T, M> */ Any
+        ]
+    ): Any
   }
   object DeferredActionQueues {
     
     inline def apply(
-      flush: Boolean => js.Any,
+      flush: Boolean => Any,
       queues: js.Object,
-      schedule: (String, js.Any, js.Any, js.Any, Boolean, js.Any) => js.Any
+      schedule: /* import warning: importer.ImportType#apply c repeated non-array type: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EmberMethodParams<T, M> * / any */ /* methodArgs */ js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EmberMethodParams<T, M> */ Any
+        ] => Any
     ): DeferredActionQueues = {
-      val __obj = js.Dynamic.literal(flush = js.Any.fromFunction1(flush), queues = queues.asInstanceOf[js.Any], schedule = js.Any.fromFunction6(schedule))
+      val __obj = js.Dynamic.literal(flush = js.Any.fromFunction1(flush), queues = queues.asInstanceOf[js.Any], schedule = js.Any.fromFunction1(schedule))
       __obj.asInstanceOf[DeferredActionQueues]
     }
     
     extension [Self <: DeferredActionQueues](x: Self) {
       
-      inline def setFlush(value: Boolean => js.Any): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
+      inline def setFlush(value: Boolean => Any): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
       
       inline def setQueues(value: js.Object): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
       
-      inline def setSchedule(value: (String, js.Any, js.Any, js.Any, Boolean, js.Any) => js.Any): Self = StObject.set(x, "schedule", js.Any.fromFunction6(value))
+      inline def setSchedule(
+        value: /* import warning: importer.ImportType#apply c repeated non-array type: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EmberMethodParams<T, M> * / any */ /* methodArgs */ js.Array[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EmberMethodParams<T, M> */ Any
+            ] => Any
+      ): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
     }
   }
   
@@ -116,7 +125,7 @@ object backburnerMod {
       
       inline def setArgs(value: js.Array[js.Object]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: js.Object*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Object*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       

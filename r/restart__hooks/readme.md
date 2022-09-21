@@ -1,18 +1,19 @@
 
 # Scala.js typings for restart__hooks
 
-Typings are for version 0.3.25
+Typings are for version 0.4.7
 
-
+## Library description:
+A set of utility and general-purpose React hooks.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @restart/hooks |
 | Keywords           | - |
-| # releases         | 48 |
-| # dependents       | 33 |
-| # downloads        | 13864200 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 5700696.666666667 |
+| # stars            | 194.0 |
 
 ## Links
 - [Homepage](https://github.com/react-restart/hooks#readme)

@@ -30,12 +30,12 @@ object ConsequenceQuery {
     
     inline def setEditsUndefined: Self = StObject.set(x, "edits", js.undefined)
     
-    inline def setEditsVarargs(value: Delete*): Self = StObject.set(x, "edits", js.Array(value :_*))
+    inline def setEditsVarargs(value: Delete*): Self = StObject.set(x, "edits", js.Array(value*))
     
     inline def setRemove(value: js.Array[String]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    inline def setRemoveVarargs(value: String*): Self = StObject.set(x, "remove", js.Array(value :_*))
+    inline def setRemoveVarargs(value: String*): Self = StObject.set(x, "remove", js.Array(value*))
   }
 }

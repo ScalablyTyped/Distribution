@@ -4,7 +4,6 @@ import typings.openlayers.mod.GlobalObject
 import typings.openlayers.mod.olx.format.MVTOptions
 import typings.openlayers.mod.olx.format.ReadOptions
 import typings.openlayers.mod.proj.Projection
-import typings.std.ArrayBuffer
 import typings.std.Document
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
@@ -27,15 +26,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api
   */
-class MVT () extends Feature {
+open class MVT () extends Feature {
   def this(opt_options: MVTOptions) = this()
   
   def readFeatures(source: String): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: String, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
+  def readFeatures(source: js.typedarray.ArrayBuffer): js.Array[typings.openlayers.mod.Feature] = js.native
+  def readFeatures(source: js.typedarray.ArrayBuffer, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: GlobalObject): js.Array[typings.openlayers.mod.Feature] = js.native
   def readFeatures(source: GlobalObject, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
-  def readFeatures(source: ArrayBuffer): js.Array[typings.openlayers.mod.Feature] = js.native
-  def readFeatures(source: ArrayBuffer, opt_options: ReadOptions): js.Array[typings.openlayers.mod.Feature] = js.native
   /**
     * @inheritDoc
     * @api

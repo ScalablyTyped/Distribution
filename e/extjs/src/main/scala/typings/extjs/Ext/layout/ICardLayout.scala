@@ -42,7 +42,7 @@ trait ICardLayout
     * @param newCard Ext.Component/Number/String The component, component id, itemId, or index of component.
     * @returns Ext.Component the activated component or false when nothing activated. False is returned also when trying to activate an already active card.
     */
-  var setActiveItem: js.UndefOr[js.Function1[/* newCard */ js.UndefOr[js.Any], IComponent]] = js.undefined
+  var setActiveItem: js.UndefOr[js.Function1[/* newCard */ js.UndefOr[Any], IComponent]] = js.undefined
 }
 object ICardLayout {
   
@@ -77,7 +77,7 @@ object ICardLayout {
     
     inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
-    inline def setSetActiveItem(value: /* newCard */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "setActiveItem", js.Any.fromFunction1(value))
+    inline def setSetActiveItem(value: /* newCard */ js.UndefOr[Any] => IComponent): Self = StObject.set(x, "setActiveItem", js.Any.fromFunction1(value))
     
     inline def setSetActiveItemUndefined: Self = StObject.set(x, "setActiveItem", js.undefined)
   }

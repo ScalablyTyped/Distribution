@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object useLocationMod extends Shortcut {
   
-  @JSImport("wouter/preact/use-location", JSImport.Default)
+  @JSImport("wouter/types/use-location", JSImport.Default)
   @js.native
   val default: LocationHook = js.native
   
   @js.native
   trait BaseLocationHook extends StObject {
     
-    def apply(args: js.Any*): js.Tuple2[Path, js.Function2[/* path */ Path, /* repeated */ js.Any, js.Any]] = js.native
+    def apply(args: Any*): js.Tuple2[Path, js.Function2[/* path */ Path, /* repeated */ Any, Any]] = js.native
   }
   
   type HookNavigationOptions[H /* <: BaseLocationHook */] = js.Object

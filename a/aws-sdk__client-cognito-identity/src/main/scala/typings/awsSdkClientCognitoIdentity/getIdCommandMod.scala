@@ -18,20 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object getIdCommandMod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/commands/GetIdCommand", "GetIdCommand")
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/GetIdCommand", "GetIdCommand")
   @js.native
-  class GetIdCommand protected ()
-    extends Command[
-          GetIdCommandInput, 
-          GetIdCommandOutput, 
-          CognitoIdentityClientResolvedConfig, 
-          js.Any, 
-          js.Any
-        ] {
+  open class GetIdCommand protected () extends Command[GetIdCommandInput, GetIdCommandOutput, CognitoIdentityClientResolvedConfig, Any, Any] {
     def this(input: GetIdCommandInput) = this()
     
-    /* private */ var deserialize: js.Any = js.native
+    /* private */ var deserialize: Any = js.native
     
+    /**
+      * @internal
+      */
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
       configuration: CognitoIdentityClientResolvedConfig
@@ -42,7 +38,7 @@ object getIdCommandMod {
       options: HttpHandlerOptions
     ): Handler[GetIdCommandInput, GetIdCommandOutput] = js.native
     
-    /* private */ var serialize: js.Any = js.native
+    /* private */ var serialize: Any = js.native
   }
   
   type GetIdCommandInput = GetIdInput

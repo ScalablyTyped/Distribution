@@ -14,7 +14,7 @@ trait Footnote extends StObject {
   
   val Index: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Range: typings.activexWord.Word.Range
   
@@ -30,7 +30,7 @@ object Footnote {
     Creator: Double,
     Delete: () => Unit,
     Index: Double,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     Reference: Range,
     WordDotFootnote_typekey: Footnote
@@ -50,7 +50,7 @@ object Footnote {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

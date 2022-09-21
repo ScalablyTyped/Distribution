@@ -8,7 +8,7 @@ object oidMod {
   
   @JSImport("nodegit/oid", "Oid")
   @js.native
-  class Oid () extends StObject {
+  open class Oid () extends StObject {
     
     def cmp(b: Oid): Double = js.native
     

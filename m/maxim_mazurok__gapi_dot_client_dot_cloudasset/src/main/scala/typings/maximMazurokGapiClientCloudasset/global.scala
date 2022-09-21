@@ -1,7 +1,10 @@
 package typings.maximMazurokGapiClientCloudasset
 
+import typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset.AssetsResource
+import typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset.EffectiveIamPoliciesResource
 import typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset.FeedsResource
 import typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset.OperationsResource
+import typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset.SavedQueriesResource
 import typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset.V1Resource
 import typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.cloudasset
 import typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.v1
@@ -21,6 +24,14 @@ object global {
       
       object cloudasset {
         
+        @JSGlobal("gapi.client.cloudasset.assets")
+        @js.native
+        val assets: AssetsResource = js.native
+        
+        @JSGlobal("gapi.client.cloudasset.effectiveIamPolicies")
+        @js.native
+        val effectiveIamPolicies: EffectiveIamPoliciesResource = js.native
+        
         @JSGlobal("gapi.client.cloudasset.feeds")
         @js.native
         val feeds: FeedsResource = js.native
@@ -29,6 +40,10 @@ object global {
         @js.native
         val operations: OperationsResource = js.native
         
+        @JSGlobal("gapi.client.cloudasset.savedQueries")
+        @js.native
+        val savedQueries: SavedQueriesResource = js.native
+        
         @JSGlobal("gapi.client.cloudasset.v1")
         @js.native
         val v1: V1Resource = js.native
@@ -36,7 +51,7 @@ object global {
       
       /** Load Cloud Asset API v1 */
       inline def load(name: cloudasset, version: v1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
-      inline def load(name: cloudasset, version: v1, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def load(name: cloudasset, version: v1, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
 }

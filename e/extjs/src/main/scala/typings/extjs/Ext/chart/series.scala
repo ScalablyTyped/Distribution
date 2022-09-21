@@ -21,26 +21,26 @@ object series {
       * @param item Object {Object} Info about the item; same format as returned by getItemForPoint
       */
     @JSName("highlightItem")
-    var highlightItem_IArea: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var highlightItem_IArea: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Highlight this entire series
       * @param item Object Info about the item; same format as returned by getItemForPoint.
       */
-    var highlightSeries: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var highlightSeries: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
     /** [Method] Un highlights the specified item
       * @param item Object Info about the item; same format as returned by getItemForPoint
       */
     @JSName("unHighlightItem")
-    var unHighlightItem_IArea: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var unHighlightItem_IArea: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] UnHighlight this entire series
       * @param item Object Info about the item; same format as returned by getItemForPoint.
       */
-    var unHighlightSeries: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var unHighlightSeries: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IArea {
     
@@ -55,23 +55,23 @@ object series {
       
       inline def setDrawSeriesUndefined: Self = StObject.set(x, "drawSeries", js.undefined)
       
-      inline def setHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
+      inline def setHighlightItem(value: /* item */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
       
       inline def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
       
-      inline def setHighlightSeries(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "highlightSeries", js.Any.fromFunction1(value))
+      inline def setHighlightSeries(value: /* item */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "highlightSeries", js.Any.fromFunction1(value))
       
       inline def setHighlightSeriesUndefined: Self = StObject.set(x, "highlightSeries", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setUnHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "unHighlightItem", js.Any.fromFunction1(value))
+      inline def setUnHighlightItem(value: /* item */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "unHighlightItem", js.Any.fromFunction1(value))
       
       inline def setUnHighlightItemUndefined: Self = StObject.set(x, "unHighlightItem", js.undefined)
       
-      inline def setUnHighlightSeries(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "unHighlightSeries", js.Any.fromFunction1(value))
+      inline def setUnHighlightSeries(value: /* item */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "unHighlightSeries", js.Any.fromFunction1(value))
       
       inline def setUnHighlightSeriesUndefined: Self = StObject.set(x, "unHighlightSeries", js.undefined)
     }
@@ -97,23 +97,23 @@ object series {
       * @param item Object
       */
     @JSName("highlightItem")
-    var highlightItem_IBar: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var highlightItem_IBar: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
     var stacked: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
     /** [Method] Un highlight any existing highlights */
     @JSName("unHighlightItem")
     var unHighlightItem_IBar: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Number/Object) */
-    var xPadding: js.UndefOr[js.Any] = js.undefined
+    var xPadding: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number/Object) */
-    var yPadding: js.UndefOr[js.Any] = js.undefined
+    var yPadding: js.UndefOr[Any] = js.undefined
   }
   object IBar {
     
@@ -140,7 +140,7 @@ object series {
       
       inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
       
-      inline def setHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
+      inline def setHighlightItem(value: /* item */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
       
       inline def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
       
@@ -148,7 +148,7 @@ object series {
       
       inline def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
@@ -156,11 +156,11 @@ object series {
       
       inline def setUnHighlightItemUndefined: Self = StObject.set(x, "unHighlightItem", js.undefined)
       
-      inline def setXPadding(value: js.Any): Self = StObject.set(x, "xPadding", value.asInstanceOf[js.Any])
+      inline def setXPadding(value: Any): Self = StObject.set(x, "xPadding", value.asInstanceOf[js.Any])
       
       inline def setXPaddingUndefined: Self = StObject.set(x, "xPadding", js.undefined)
       
-      inline def setYPadding(value: js.Any): Self = StObject.set(x, "yPadding", value.asInstanceOf[js.Any])
+      inline def setYPadding(value: Any): Self = StObject.set(x, "yPadding", value.asInstanceOf[js.Any])
       
       inline def setYPaddingUndefined: Self = StObject.set(x, "yPadding", js.undefined)
     }
@@ -171,7 +171,7 @@ object series {
        with ISeries {
     
     /** [Config Option] (String/String[]) */
-    var axis: js.UndefOr[js.Any] = js.undefined
+    var axis: js.UndefOr[Any] = js.undefined
     
     /** [Method] Iterates over a given record s values for each of this series s yFields executing a given function for each value
       * @param record Ext.data.Model
@@ -181,8 +181,8 @@ object series {
     var eachYValue: js.UndefOr[
         js.Function3[
           /* record */ js.UndefOr[IModel], 
-          /* fn */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* fn */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -211,7 +211,7 @@ object series {
     var xField: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var yField: js.UndefOr[js.Any] = js.undefined
+    var yField: js.UndefOr[Any] = js.undefined
   }
   object ICartesian {
     
@@ -222,12 +222,12 @@ object series {
     
     extension [Self <: ICartesian](x: Self) {
       
-      inline def setAxis(value: js.Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
       inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
       inline def setEachYValue(
-        value: (/* record */ js.UndefOr[IModel], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+        value: (/* record */ js.UndefOr[IModel], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "eachYValue", js.Any.fromFunction3(value))
       
       inline def setEachYValueUndefined: Self = StObject.set(x, "eachYValue", js.undefined)
@@ -252,7 +252,7 @@ object series {
       
       inline def setXFieldUndefined: Self = StObject.set(x, "xField", js.undefined)
       
-      inline def setYField(value: js.Any): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
+      inline def setYField(value: Any): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
       
       inline def setYFieldUndefined: Self = StObject.set(x, "yField", js.undefined)
     }
@@ -289,7 +289,7 @@ object series {
     var angleField: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Boolean/Number) */
-    var donut: js.UndefOr[js.Any] = js.undefined
+    var donut: js.UndefOr[Any] = js.undefined
     
     /** [Method] Draws the series for the current chart  */
     var drawSeries: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -303,10 +303,10 @@ object series {
     /** [Method] Sets the Gauge chart to the current specified value
       * @param value Object
       */
-    var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
   }
   object IGauge {
     
@@ -321,7 +321,7 @@ object series {
       
       inline def setAngleFieldUndefined: Self = StObject.set(x, "angleField", js.undefined)
       
-      inline def setDonut(value: js.Any): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
+      inline def setDonut(value: Any): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
       
       inline def setDonutUndefined: Self = StObject.set(x, "donut", js.undefined)
       
@@ -337,11 +337,11 @@ object series {
       
       inline def setNeedleUndefined: Self = StObject.set(x, "needle", js.undefined)
       
-      inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
       
       inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
@@ -358,7 +358,7 @@ object series {
     var fill: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var markerConfig: js.UndefOr[js.Any] = js.undefined
+    var markerConfig: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number) */
     var selectionTolerance: js.UndefOr[Double] = js.undefined
@@ -367,10 +367,10 @@ object series {
     var showMarkers: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean/Number) */
-    var smooth: js.UndefOr[js.Any] = js.undefined
+    var smooth: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
   }
   object ILine {
     
@@ -389,7 +389,7 @@ object series {
       
       inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      inline def setMarkerConfig(value: js.Any): Self = StObject.set(x, "markerConfig", value.asInstanceOf[js.Any])
+      inline def setMarkerConfig(value: Any): Self = StObject.set(x, "markerConfig", value.asInstanceOf[js.Any])
       
       inline def setMarkerConfigUndefined: Self = StObject.set(x, "markerConfig", js.undefined)
       
@@ -401,11 +401,11 @@ object series {
       
       inline def setShowMarkersUndefined: Self = StObject.set(x, "showMarkers", js.undefined)
       
-      inline def setSmooth(value: js.Any): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+      inline def setSmooth(value: Any): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
       
       inline def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
@@ -422,7 +422,7 @@ object series {
     var colorSet: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Boolean/Number) */
-    var donut: js.UndefOr[js.Any] = js.undefined
+    var donut: js.UndefOr[Any] = js.undefined
     
     /** [Method] Draws the series for the current chart  */
     var drawSeries: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -437,19 +437,19 @@ object series {
       * @param item Object {Object} Info about the item; same format as returned by getItemForPoint
       */
     @JSName("highlightItem")
-    var highlightItem_IPie: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var highlightItem_IPie: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (String) */
     var lengthField: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Object) */
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
     /** [Method] Un highlights the specified item
       * @param item Object {Object} Info about the item; same format as returned by getItemForPoint
       */
     @JSName("unHighlightItem")
-    var unHighlightItem_IPie: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var unHighlightItem_IPie: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (String) */
     var xField: js.UndefOr[String] = js.undefined
@@ -471,7 +471,7 @@ object series {
       
       inline def setColorSetUndefined: Self = StObject.set(x, "colorSet", js.undefined)
       
-      inline def setDonut(value: js.Any): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
+      inline def setDonut(value: Any): Self = StObject.set(x, "donut", value.asInstanceOf[js.Any])
       
       inline def setDonutUndefined: Self = StObject.set(x, "donut", js.undefined)
       
@@ -487,7 +487,7 @@ object series {
       
       inline def setHighlightDurationUndefined: Self = StObject.set(x, "highlightDuration", js.undefined)
       
-      inline def setHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
+      inline def setHighlightItem(value: /* item */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
       
       inline def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
       
@@ -495,11 +495,11 @@ object series {
       
       inline def setLengthFieldUndefined: Self = StObject.set(x, "lengthField", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setUnHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "unHighlightItem", js.Any.fromFunction1(value))
+      inline def setUnHighlightItem(value: /* item */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "unHighlightItem", js.Any.fromFunction1(value))
       
       inline def setUnHighlightItemUndefined: Self = StObject.set(x, "unHighlightItem", js.undefined)
       
@@ -517,13 +517,13 @@ object series {
     var drawSeries: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var markerConfig: js.UndefOr[js.Any] = js.undefined
+    var markerConfig: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var showMarkers: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var xField: js.UndefOr[String] = js.undefined
@@ -544,7 +544,7 @@ object series {
       
       inline def setDrawSeriesUndefined: Self = StObject.set(x, "drawSeries", js.undefined)
       
-      inline def setMarkerConfig(value: js.Any): Self = StObject.set(x, "markerConfig", value.asInstanceOf[js.Any])
+      inline def setMarkerConfig(value: Any): Self = StObject.set(x, "markerConfig", value.asInstanceOf[js.Any])
       
       inline def setMarkerConfigUndefined: Self = StObject.set(x, "markerConfig", js.undefined)
       
@@ -552,7 +552,7 @@ object series {
       
       inline def setShowMarkersUndefined: Self = StObject.set(x, "showMarkers", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
@@ -574,10 +574,10 @@ object series {
     var drawSeries: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var markerConfig: js.UndefOr[js.Any] = js.undefined
+    var markerConfig: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
   }
   object IScatter {
     
@@ -592,11 +592,11 @@ object series {
       
       inline def setDrawSeriesUndefined: Self = StObject.set(x, "drawSeries", js.undefined)
       
-      inline def setMarkerConfig(value: js.Any): Self = StObject.set(x, "markerConfig", value.asInstanceOf[js.Any])
+      inline def setMarkerConfig(value: Any): Self = StObject.set(x, "markerConfig", value.asInstanceOf[js.Any])
       
       inline def setMarkerConfigUndefined: Self = StObject.set(x, "markerConfig", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
@@ -614,19 +614,19 @@ object series {
       * @param fn Function The function to execute for each record.
       * @param scope Object Scope for the fn.
       */
-    var eachRecord: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var eachRecord: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] For a given x y point relative to the Surface find a corresponding item from this series if any
       * @param x Number
       * @param y Number
       * @returns Object An object describing the item, or null if there is no matching item. The exact contents of this object will vary by series type, but should always contain the following:
       */
-    var getItemForPoint: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], js.Any]] = js.undefined
+    var getItemForPoint: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Any]] = js.undefined
     
     /** [Method] Returns a string with the color to be used for the series legend item
       * @param index Object
       */
-    var getLegendColor: js.UndefOr[js.Function1[/* index */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var getLegendColor: js.UndefOr[js.Function1[/* index */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Return the number of records being displayed in this series  */
     var getRecordCount: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -635,23 +635,23 @@ object series {
     var hideAll: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean/Object) */
-    var highlight: js.UndefOr[js.Any] = js.undefined
+    var highlight: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Object) */
-    var highlightCfg: js.UndefOr[js.Any] = js.undefined
+    var highlightCfg: js.UndefOr[Any] = js.undefined
     
     /** [Method] Highlight the given series item
       * @param item Object Info about the item; same format as returned by #getItemForPoint.
       */
-    var highlightItem: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+    var highlightItem: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Determines whether the series item at the given index has been excluded i e
       * @param index Object
       */
-    var isExcluded: js.UndefOr[js.Function1[/* index */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var isExcluded: js.UndefOr[js.Function1[/* index */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var label: js.UndefOr[js.Any] = js.undefined
+    var label: js.UndefOr[Any] = js.undefined
     
     /** [Method] Called each time a new label is created
       * @param storeItem Ext.data.Model The element of the store that is related to the sprite.
@@ -661,7 +661,7 @@ object series {
       * @returns Ext.draw.Sprite The created sprite that will draw the label.
       */
     var onCreateLabel: js.UndefOr[
-        js.Function4[js.UndefOr[IModel], js.UndefOr[js.Any], js.UndefOr[Double], js.UndefOr[String], ISprite]
+        js.Function4[js.UndefOr[IModel], js.UndefOr[Any], js.UndefOr[Double], js.UndefOr[String], ISprite]
       ] = js.undefined
     
     /** [Method] Called for updating the position of the label
@@ -677,7 +677,7 @@ object series {
         js.Function7[
           js.UndefOr[ISprite], 
           js.UndefOr[IModel], 
-          js.UndefOr[js.Any], 
+          js.UndefOr[Any], 
           js.UndefOr[Double], 
           js.UndefOr[String], 
           js.UndefOr[Boolean], 
@@ -687,7 +687,7 @@ object series {
       ] = js.undefined
     
     /** [Config Option] (Function) */
-    var renderer: js.UndefOr[js.Any] = js.undefined
+    var renderer: js.UndefOr[Any] = js.undefined
     
     /** [Method] Changes the value of the title for the series
       * @param index Number
@@ -707,7 +707,7 @@ object series {
     var showInLegend: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var tips: js.UndefOr[js.Any] = js.undefined
+    var tips: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var title: js.UndefOr[String] = js.undefined
@@ -727,15 +727,15 @@ object series {
     
     extension [Self <: ISeries](x: Self) {
       
-      inline def setEachRecord(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "eachRecord", js.Any.fromFunction2(value))
+      inline def setEachRecord(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "eachRecord", js.Any.fromFunction2(value))
       
       inline def setEachRecordUndefined: Self = StObject.set(x, "eachRecord", js.undefined)
       
-      inline def setGetItemForPoint(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
+      inline def setGetItemForPoint(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Any): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
       
       inline def setGetItemForPointUndefined: Self = StObject.set(x, "getItemForPoint", js.undefined)
       
-      inline def setGetLegendColor(value: /* index */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getLegendColor", js.Any.fromFunction1(value))
+      inline def setGetLegendColor(value: /* index */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getLegendColor", js.Any.fromFunction1(value))
       
       inline def setGetLegendColorUndefined: Self = StObject.set(x, "getLegendColor", js.undefined)
       
@@ -747,37 +747,37 @@ object series {
       
       inline def setHideAllUndefined: Self = StObject.set(x, "hideAll", js.undefined)
       
-      inline def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+      inline def setHighlight(value: Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
-      inline def setHighlightCfg(value: js.Any): Self = StObject.set(x, "highlightCfg", value.asInstanceOf[js.Any])
+      inline def setHighlightCfg(value: Any): Self = StObject.set(x, "highlightCfg", value.asInstanceOf[js.Any])
       
       inline def setHighlightCfgUndefined: Self = StObject.set(x, "highlightCfg", js.undefined)
       
-      inline def setHighlightItem(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
+      inline def setHighlightItem(value: js.UndefOr[Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
       
       inline def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
       
       inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
       
-      inline def setIsExcluded(value: /* index */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "isExcluded", js.Any.fromFunction1(value))
+      inline def setIsExcluded(value: /* index */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "isExcluded", js.Any.fromFunction1(value))
       
       inline def setIsExcludedUndefined: Self = StObject.set(x, "isExcluded", js.undefined)
       
-      inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setOnCreateLabel(value: (js.UndefOr[IModel], js.UndefOr[js.Any], js.UndefOr[Double], js.UndefOr[String]) => ISprite): Self = StObject.set(x, "onCreateLabel", js.Any.fromFunction4(value))
+      inline def setOnCreateLabel(value: (js.UndefOr[IModel], js.UndefOr[Any], js.UndefOr[Double], js.UndefOr[String]) => ISprite): Self = StObject.set(x, "onCreateLabel", js.Any.fromFunction4(value))
       
       inline def setOnCreateLabelUndefined: Self = StObject.set(x, "onCreateLabel", js.undefined)
       
       inline def setOnPlaceLabel(
-        value: (js.UndefOr[ISprite], js.UndefOr[IModel], js.UndefOr[js.Any], js.UndefOr[Double], js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Double]) => Unit
+        value: (js.UndefOr[ISprite], js.UndefOr[IModel], js.UndefOr[Any], js.UndefOr[Double], js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Double]) => Unit
       ): Self = StObject.set(x, "onPlaceLabel", js.Any.fromFunction7(value))
       
       inline def setOnPlaceLabelUndefined: Self = StObject.set(x, "onPlaceLabel", js.undefined)
       
-      inline def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+      inline def setRenderer(value: Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
       
       inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       
@@ -797,7 +797,7 @@ object series {
       
       inline def setShowInLegendUndefined: Self = StObject.set(x, "showInLegend", js.undefined)
       
-      inline def setTips(value: js.Any): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
+      inline def setTips(value: Any): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
       
       inline def setTipsUndefined: Self = StObject.set(x, "tips", js.undefined)
       

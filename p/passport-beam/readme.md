@@ -10,10 +10,10 @@ Beam (OAuth) authentication strategies for Passport.
 | ------------------ | :-------------: |
 | Full name          | passport-beam |
 | Keywords           | passport, beam, auth, authn, authentication, identity |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2563 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 183.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/alfw/passport-beam#readme)

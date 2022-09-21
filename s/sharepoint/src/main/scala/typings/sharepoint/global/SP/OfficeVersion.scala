@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.OfficeVersion")
 @js.native
-class OfficeVersion ()
+open class OfficeVersion ()
   extends StObject
      with typings.sharepoint.SP.OfficeVersion {
   

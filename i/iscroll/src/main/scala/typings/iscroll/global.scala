@@ -9,7 +9,7 @@ object global {
   
   @JSGlobal("IScroll")
   @js.native
-  class IScroll protected ()
+  open class IScroll protected ()
     extends StObject
        with typings.iscroll.IScroll {
     def this(element: String) = this()

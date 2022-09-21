@@ -101,7 +101,7 @@ trait DrawContext extends StObject {
   /**
     * _Retrieves the image._
     *
-    * Call this to retrieve the image you have drawn to the context. Note that this should be called before calling endDrawing().
+    * Call this to retrieve the image you have drawn to the context.
     * @see https://docs.scriptable.app/drawcontext/#-getimage
     */
   def getImage(): Image

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogQueryRange")
 @js.native
-class CatalogQueryRange () extends StObject {
+open class CatalogQueryRange () extends StObject {
   
   /**
     * The desired maximum value for the search attribute (inclusive).

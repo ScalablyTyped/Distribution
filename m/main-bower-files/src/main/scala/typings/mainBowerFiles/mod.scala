@@ -1,6 +1,5 @@
 package typings.mainBowerFiles
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[String]]
+  inline def apply(options: Unit, callback: js.Function1[/* error */ js.Error | Null, Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   inline def apply(options: IOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def apply(options: IOptions, callback: js.Function1[/* error */ js.Error | Null, Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @JSImport("main-bower-files", JSImport.Namespace)
   @js.native
@@ -24,7 +25,7 @@ object mod {
     
     var env: js.UndefOr[String] = js.undefined
     
-    var filter: js.UndefOr[RegExp | IFilterFunction | String | js.Array[String]] = js.undefined
+    var filter: js.UndefOr[js.RegExp | IFilterFunction | String | js.Array[String]] = js.undefined
     
     var includeDev: js.UndefOr[Boolean | String] = js.undefined
     
@@ -55,13 +56,13 @@ object mod {
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      inline def setFilter(value: RegExp | IFilterFunction | String | js.Array[String]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: js.RegExp | IFilterFunction | String | js.Array[String]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       inline def setFilterFunction1(value: /* filepath */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
+      inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value*))
       
       inline def setIncludeDev(value: Boolean | String): Self = StObject.set(x, "includeDev", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,7 @@ object mod {
       
       inline def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
       
-      inline def setMainVarargs(value: String*): Self = StObject.set(x, "main", js.Array(value :_*))
+      inline def setMainVarargs(value: String*): Self = StObject.set(x, "main", js.Array(value*))
       
       inline def setPaths(value: IPaths | String): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       

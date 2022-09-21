@@ -2,11 +2,10 @@ package typings.ionicDiscover
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ionicDiscover.ionicDiscoverStrings.error
-import typings.node.NodeJS.Timer
 import typings.node.dgramMod.Socket
 import typings.node.eventsMod.EventEmitter
 import typings.node.osMod.NetworkInterfaceInfo
-import typings.std.Error
+import typings.node.timersMod.global.NodeJS.Timer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object publisherMod {
   
   @JSImport("@ionic/discover/dist/publisher", "Publisher")
   @js.native
-  class Publisher protected ()
+  open class Publisher protected ()
     extends EventEmitter
        with IPublisherEventEmitter {
     def this(namespace: String, name: String, port: Double) = this()
@@ -45,7 +44,7 @@ object publisherMod {
     
     /* CompleteClass */
     @JSName("on")
-    override def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    override def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     val path: /* "/" */ String = js.native
     
@@ -71,18 +70,18 @@ object publisherMod {
   trait IPublisherEventEmitter extends StObject {
     
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type
   }
   object IPublisherEventEmitter {
     
-    inline def apply(on: (error, js.Function1[/* err */ Error, Unit]) => IPublisherEventEmitter): IPublisherEventEmitter = {
+    inline def apply(on: (error, js.Function1[/* err */ js.Error, Unit]) => IPublisherEventEmitter): IPublisherEventEmitter = {
       val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on))
       __obj.asInstanceOf[IPublisherEventEmitter]
     }
     
     extension [Self <: IPublisherEventEmitter](x: Self) {
       
-      inline def setOn(value: (error, js.Function1[/* err */ Error, Unit]) => IPublisherEventEmitter): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (error, js.Function1[/* err */ js.Error, Unit]) => IPublisherEventEmitter): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
   }
   

@@ -10,9 +10,9 @@ This module finds and manages which socket is from who and visa versa. One user 
 | Full name          | socket.io.users |
 | Keywords           | socket.io.users, socket.io, express, session, socket.io-users |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2453 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 698.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/socket.io.users)

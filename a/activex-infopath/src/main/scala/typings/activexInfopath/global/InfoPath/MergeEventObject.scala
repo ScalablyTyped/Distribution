@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.MergeEventObject")
 @js.native
-/* private */ class MergeEventObject ()
+/* private */ open class MergeEventObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.MergeEventObject {
   

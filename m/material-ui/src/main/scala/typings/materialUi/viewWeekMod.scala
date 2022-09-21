@@ -10,10 +10,10 @@ object viewWeekMod {
   
   @JSImport("material-ui/svg-icons/action/view-week", JSImport.Default)
   @js.native
-  class default () extends ActionViewWeek
+  open class default () extends ActionViewWeek
   
   @JSImport("material-ui/svg-icons/action/view-week", "ActionViewWeek")
   @js.native
-  class ActionViewWeek ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionViewWeek ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

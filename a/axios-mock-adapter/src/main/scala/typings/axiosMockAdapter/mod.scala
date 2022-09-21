@@ -6,7 +6,6 @@ import typings.axios.mod.AxiosInstance
 import typings.axios.mod.AxiosRequestConfig
 import typings.axiosMockAdapter.axiosMockAdapterStrings.passthrough
 import typings.axiosMockAdapter.axiosMockAdapterStrings.throwException
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object mod {
   
   @JSImport("axios-mock-adapter", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with MockAdapter {
     def this(axiosInstance: AxiosInstance) = this()
@@ -25,7 +24,7 @@ object mod {
     override def adapter(): AxiosAdapter = js.native
     
     /* CompleteClass */
-    var history: StringDictionary[js.Array[AxiosRequestConfig]] = js.native
+    var history: StringDictionary[js.Array[AxiosRequestConfig[Any]]] = js.native
     
     /* CompleteClass */
     override def onAny(): RequestHandler = js.native
@@ -42,6 +41,18 @@ object mod {
     /* CompleteClass */
     override def onAny(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
+    override def onAny(matcher: js.RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: js.RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
     override def onAny(matcher: Unit, body: String): RequestHandler = js.native
     /* CompleteClass */
     override def onAny(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
@@ -51,18 +62,6 @@ object mod {
     override def onAny(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
     /* CompleteClass */
     override def onAny(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onAny(matcher: RegExp): RequestHandler = js.native
-    /* CompleteClass */
-    override def onAny(matcher: RegExp, body: String): RequestHandler = js.native
-    /* CompleteClass */
-    override def onAny(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onAny(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onAny(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onAny(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
     @JSName("onAny")
     var onAny_Original: RequestMatcherFunc = js.native
@@ -82,6 +81,18 @@ object mod {
     /* CompleteClass */
     override def onDelete(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
+    override def onDelete(matcher: js.RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: js.RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
     override def onDelete(matcher: Unit, body: String): RequestHandler = js.native
     /* CompleteClass */
     override def onDelete(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
@@ -91,18 +102,6 @@ object mod {
     override def onDelete(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
     /* CompleteClass */
     override def onDelete(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onDelete(matcher: RegExp): RequestHandler = js.native
-    /* CompleteClass */
-    override def onDelete(matcher: RegExp, body: String): RequestHandler = js.native
-    /* CompleteClass */
-    override def onDelete(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onDelete(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onDelete(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onDelete(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
     @JSName("onDelete")
     var onDelete_Original: RequestMatcherFunc = js.native
@@ -122,6 +121,18 @@ object mod {
     /* CompleteClass */
     override def onGet(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
+    override def onGet(matcher: js.RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: js.RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
     override def onGet(matcher: Unit, body: String): RequestHandler = js.native
     /* CompleteClass */
     override def onGet(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
@@ -131,18 +142,6 @@ object mod {
     override def onGet(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
     /* CompleteClass */
     override def onGet(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onGet(matcher: RegExp): RequestHandler = js.native
-    /* CompleteClass */
-    override def onGet(matcher: RegExp, body: String): RequestHandler = js.native
-    /* CompleteClass */
-    override def onGet(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onGet(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onGet(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onGet(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
     @JSName("onGet")
     var onGet_Original: RequestMatcherFunc = js.native
@@ -162,6 +161,18 @@ object mod {
     /* CompleteClass */
     override def onHead(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
+    override def onHead(matcher: js.RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: js.RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
     override def onHead(matcher: Unit, body: String): RequestHandler = js.native
     /* CompleteClass */
     override def onHead(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
@@ -172,20 +183,48 @@ object mod {
     /* CompleteClass */
     override def onHead(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
-    override def onHead(matcher: RegExp): RequestHandler = js.native
-    /* CompleteClass */
-    override def onHead(matcher: RegExp, body: String): RequestHandler = js.native
-    /* CompleteClass */
-    override def onHead(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onHead(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onHead(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onHead(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
     @JSName("onHead")
     var onHead_Original: RequestMatcherFunc = js.native
+    
+    /* CompleteClass */
+    override def onLink(): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: String, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: js.RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: js.RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: Unit, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onLink(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    @JSName("onLink")
+    var onLink_Original: RequestMatcherFunc = js.native
     
     /* CompleteClass */
     override def onList(): RequestHandler = js.native
@@ -202,6 +241,18 @@ object mod {
     /* CompleteClass */
     override def onList(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
+    override def onList(matcher: js.RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: js.RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
     override def onList(matcher: Unit, body: String): RequestHandler = js.native
     /* CompleteClass */
     override def onList(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
@@ -211,18 +262,6 @@ object mod {
     override def onList(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
     /* CompleteClass */
     override def onList(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onList(matcher: RegExp): RequestHandler = js.native
-    /* CompleteClass */
-    override def onList(matcher: RegExp, body: String): RequestHandler = js.native
-    /* CompleteClass */
-    override def onList(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onList(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onList(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onList(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
     @JSName("onList")
     var onList_Original: RequestMatcherFunc = js.native
@@ -242,6 +281,18 @@ object mod {
     /* CompleteClass */
     override def onOptions(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
+    override def onOptions(matcher: js.RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: js.RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
     override def onOptions(matcher: Unit, body: String): RequestHandler = js.native
     /* CompleteClass */
     override def onOptions(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
@@ -251,18 +302,6 @@ object mod {
     override def onOptions(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
     /* CompleteClass */
     override def onOptions(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onOptions(matcher: RegExp): RequestHandler = js.native
-    /* CompleteClass */
-    override def onOptions(matcher: RegExp, body: String): RequestHandler = js.native
-    /* CompleteClass */
-    override def onOptions(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onOptions(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onOptions(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onOptions(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
     @JSName("onOptions")
     var onOptions_Original: RequestMatcherFunc = js.native
@@ -282,6 +321,18 @@ object mod {
     /* CompleteClass */
     override def onPatch(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
+    override def onPatch(matcher: js.RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: js.RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
     override def onPatch(matcher: Unit, body: String): RequestHandler = js.native
     /* CompleteClass */
     override def onPatch(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
@@ -291,18 +342,6 @@ object mod {
     override def onPatch(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
     /* CompleteClass */
     override def onPatch(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPatch(matcher: RegExp): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPatch(matcher: RegExp, body: String): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPatch(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPatch(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPatch(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPatch(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
     @JSName("onPatch")
     var onPatch_Original: RequestMatcherFunc = js.native
@@ -322,6 +361,18 @@ object mod {
     /* CompleteClass */
     override def onPost(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
+    override def onPost(matcher: js.RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: js.RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
     override def onPost(matcher: Unit, body: String): RequestHandler = js.native
     /* CompleteClass */
     override def onPost(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
@@ -331,18 +382,6 @@ object mod {
     override def onPost(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
     /* CompleteClass */
     override def onPost(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPost(matcher: RegExp): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPost(matcher: RegExp, body: String): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPost(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPost(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPost(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPost(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
     @JSName("onPost")
     var onPost_Original: RequestMatcherFunc = js.native
@@ -362,6 +401,18 @@ object mod {
     /* CompleteClass */
     override def onPut(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
+    override def onPut(matcher: js.RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: js.RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
     override def onPut(matcher: Unit, body: String): RequestHandler = js.native
     /* CompleteClass */
     override def onPut(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
@@ -372,20 +423,48 @@ object mod {
     /* CompleteClass */
     override def onPut(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
     /* CompleteClass */
-    override def onPut(matcher: RegExp): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPut(matcher: RegExp, body: String): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPut(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPut(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPut(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    /* CompleteClass */
-    override def onPut(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    /* CompleteClass */
     @JSName("onPut")
     var onPut_Original: RequestMatcherFunc = js.native
+    
+    /* CompleteClass */
+    override def onUnlink(): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: String, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: js.RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: js.RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: Unit, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onUnlink(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    @JSName("onUnlink")
+    var onUnlink_Original: RequestMatcherFunc = js.native
     
     /* CompleteClass */
     override def reset(): Unit = js.native
@@ -439,7 +518,7 @@ object mod {
     }
   }
   
-  type CallbackResponseSpecFunc = js.Function1[/* config */ AxiosRequestConfig, js.Array[js.Any] | js.Promise[js.Array[js.Any]]]
+  type CallbackResponseSpecFunc = js.Function1[/* config */ AxiosRequestConfig[Any], js.Array[Any] | js.Promise[js.Array[Any]]]
   
   type HeadersMatcher = StringDictionary[String]
   
@@ -447,7 +526,7 @@ object mod {
     
     def adapter(): AxiosAdapter
     
-    var history: StringDictionary[js.Array[AxiosRequestConfig]]
+    var history: StringDictionary[js.Array[AxiosRequestConfig[Any]]]
     
     def onAny(): RequestHandler
     def onAny(matcher: String): RequestHandler
@@ -456,17 +535,17 @@ object mod {
     def onAny(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onAny(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
     def onAny(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onAny(matcher: js.RegExp): RequestHandler
+    def onAny(matcher: js.RegExp, body: String): RequestHandler
+    def onAny(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onAny(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onAny(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onAny(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     def onAny(matcher: Unit, body: String): RequestHandler
     def onAny(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
     def onAny(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onAny(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
     def onAny(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onAny(matcher: RegExp): RequestHandler
-    def onAny(matcher: RegExp, body: String): RequestHandler
-    def onAny(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onAny(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onAny(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
-    def onAny(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onAny")
     var onAny_Original: RequestMatcherFunc
     
@@ -477,17 +556,17 @@ object mod {
     def onDelete(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onDelete(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
     def onDelete(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onDelete(matcher: js.RegExp): RequestHandler
+    def onDelete(matcher: js.RegExp, body: String): RequestHandler
+    def onDelete(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onDelete(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onDelete(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onDelete(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     def onDelete(matcher: Unit, body: String): RequestHandler
     def onDelete(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
     def onDelete(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onDelete(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
     def onDelete(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onDelete(matcher: RegExp): RequestHandler
-    def onDelete(matcher: RegExp, body: String): RequestHandler
-    def onDelete(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onDelete(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onDelete(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
-    def onDelete(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onDelete")
     var onDelete_Original: RequestMatcherFunc
     
@@ -498,17 +577,17 @@ object mod {
     def onGet(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onGet(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
     def onGet(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onGet(matcher: js.RegExp): RequestHandler
+    def onGet(matcher: js.RegExp, body: String): RequestHandler
+    def onGet(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onGet(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onGet(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onGet(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     def onGet(matcher: Unit, body: String): RequestHandler
     def onGet(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
     def onGet(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onGet(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
     def onGet(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onGet(matcher: RegExp): RequestHandler
-    def onGet(matcher: RegExp, body: String): RequestHandler
-    def onGet(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onGet(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onGet(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
-    def onGet(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onGet")
     var onGet_Original: RequestMatcherFunc
     
@@ -519,19 +598,40 @@ object mod {
     def onHead(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onHead(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
     def onHead(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onHead(matcher: js.RegExp): RequestHandler
+    def onHead(matcher: js.RegExp, body: String): RequestHandler
+    def onHead(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onHead(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onHead(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onHead(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     def onHead(matcher: Unit, body: String): RequestHandler
     def onHead(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
     def onHead(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onHead(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
     def onHead(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onHead(matcher: RegExp): RequestHandler
-    def onHead(matcher: RegExp, body: String): RequestHandler
-    def onHead(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onHead(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onHead(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
-    def onHead(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onHead")
     var onHead_Original: RequestMatcherFunc
+    
+    def onLink(): RequestHandler
+    def onLink(matcher: String): RequestHandler
+    def onLink(matcher: String, body: String): RequestHandler
+    def onLink(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onLink(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onLink(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onLink(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onLink(matcher: js.RegExp): RequestHandler
+    def onLink(matcher: js.RegExp, body: String): RequestHandler
+    def onLink(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onLink(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onLink(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onLink(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onLink(matcher: Unit, body: String): RequestHandler
+    def onLink(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onLink(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onLink(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onLink(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    @JSName("onLink")
+    var onLink_Original: RequestMatcherFunc
     
     def onList(): RequestHandler
     def onList(matcher: String): RequestHandler
@@ -540,17 +640,17 @@ object mod {
     def onList(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onList(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
     def onList(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onList(matcher: js.RegExp): RequestHandler
+    def onList(matcher: js.RegExp, body: String): RequestHandler
+    def onList(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onList(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onList(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onList(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     def onList(matcher: Unit, body: String): RequestHandler
     def onList(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
     def onList(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onList(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
     def onList(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onList(matcher: RegExp): RequestHandler
-    def onList(matcher: RegExp, body: String): RequestHandler
-    def onList(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onList(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onList(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
-    def onList(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onList")
     var onList_Original: RequestMatcherFunc
     
@@ -561,17 +661,17 @@ object mod {
     def onOptions(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onOptions(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
     def onOptions(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onOptions(matcher: js.RegExp): RequestHandler
+    def onOptions(matcher: js.RegExp, body: String): RequestHandler
+    def onOptions(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onOptions(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onOptions(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onOptions(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     def onOptions(matcher: Unit, body: String): RequestHandler
     def onOptions(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
     def onOptions(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onOptions(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
     def onOptions(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onOptions(matcher: RegExp): RequestHandler
-    def onOptions(matcher: RegExp, body: String): RequestHandler
-    def onOptions(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onOptions(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onOptions(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
-    def onOptions(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onOptions")
     var onOptions_Original: RequestMatcherFunc
     
@@ -582,17 +682,17 @@ object mod {
     def onPatch(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onPatch(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
     def onPatch(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPatch(matcher: js.RegExp): RequestHandler
+    def onPatch(matcher: js.RegExp, body: String): RequestHandler
+    def onPatch(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPatch(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPatch(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onPatch(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     def onPatch(matcher: Unit, body: String): RequestHandler
     def onPatch(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
     def onPatch(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onPatch(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
     def onPatch(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onPatch(matcher: RegExp): RequestHandler
-    def onPatch(matcher: RegExp, body: String): RequestHandler
-    def onPatch(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onPatch(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onPatch(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
-    def onPatch(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onPatch")
     var onPatch_Original: RequestMatcherFunc
     
@@ -603,17 +703,17 @@ object mod {
     def onPost(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onPost(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
     def onPost(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPost(matcher: js.RegExp): RequestHandler
+    def onPost(matcher: js.RegExp, body: String): RequestHandler
+    def onPost(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPost(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPost(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onPost(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     def onPost(matcher: Unit, body: String): RequestHandler
     def onPost(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
     def onPost(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onPost(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
     def onPost(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onPost(matcher: RegExp): RequestHandler
-    def onPost(matcher: RegExp, body: String): RequestHandler
-    def onPost(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onPost(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onPost(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
-    def onPost(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onPost")
     var onPost_Original: RequestMatcherFunc
     
@@ -624,19 +724,40 @@ object mod {
     def onPut(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onPut(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
     def onPut(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPut(matcher: js.RegExp): RequestHandler
+    def onPut(matcher: js.RegExp, body: String): RequestHandler
+    def onPut(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPut(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPut(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onPut(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     def onPut(matcher: Unit, body: String): RequestHandler
     def onPut(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
     def onPut(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
     def onPut(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
     def onPut(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onPut(matcher: RegExp): RequestHandler
-    def onPut(matcher: RegExp, body: String): RequestHandler
-    def onPut(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onPut(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
-    def onPut(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
-    def onPut(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onPut")
     var onPut_Original: RequestMatcherFunc
+    
+    def onUnlink(): RequestHandler
+    def onUnlink(matcher: String): RequestHandler
+    def onUnlink(matcher: String, body: String): RequestHandler
+    def onUnlink(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onUnlink(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onUnlink(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onUnlink(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onUnlink(matcher: js.RegExp): RequestHandler
+    def onUnlink(matcher: js.RegExp, body: String): RequestHandler
+    def onUnlink(matcher: js.RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onUnlink(matcher: js.RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onUnlink(matcher: js.RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onUnlink(matcher: js.RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onUnlink(matcher: Unit, body: String): RequestHandler
+    def onUnlink(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onUnlink(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onUnlink(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onUnlink(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    @JSName("onUnlink")
+    var onUnlink_Original: RequestMatcherFunc
     
     def reset(): Unit
     
@@ -650,22 +771,24 @@ object mod {
     
     inline def apply(
       adapter: () => AxiosAdapter,
-      history: StringDictionary[js.Array[AxiosRequestConfig]],
-      onAny: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
-      onDelete: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
-      onGet: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
-      onHead: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
-      onList: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
-      onOptions: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
-      onPatch: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
-      onPost: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
-      onPut: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      history: StringDictionary[js.Array[AxiosRequestConfig[Any]]],
+      onAny: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onDelete: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onGet: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onHead: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onLink: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onList: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onOptions: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onPatch: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onPost: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onPut: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onUnlink: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
       reset: () => Unit,
       resetHandlers: () => Unit,
       resetHistory: () => Unit,
       restore: () => Unit
     ): MockAdapter = {
-      val __obj = js.Dynamic.literal(adapter = js.Any.fromFunction0(adapter), history = history.asInstanceOf[js.Any], onAny = js.Any.fromFunction3(onAny), onDelete = js.Any.fromFunction3(onDelete), onGet = js.Any.fromFunction3(onGet), onHead = js.Any.fromFunction3(onHead), onList = js.Any.fromFunction3(onList), onOptions = js.Any.fromFunction3(onOptions), onPatch = js.Any.fromFunction3(onPatch), onPost = js.Any.fromFunction3(onPost), onPut = js.Any.fromFunction3(onPut), reset = js.Any.fromFunction0(reset), resetHandlers = js.Any.fromFunction0(resetHandlers), resetHistory = js.Any.fromFunction0(resetHistory), restore = js.Any.fromFunction0(restore))
+      val __obj = js.Dynamic.literal(adapter = js.Any.fromFunction0(adapter), history = history.asInstanceOf[js.Any], onAny = js.Any.fromFunction3(onAny), onDelete = js.Any.fromFunction3(onDelete), onGet = js.Any.fromFunction3(onGet), onHead = js.Any.fromFunction3(onHead), onLink = js.Any.fromFunction3(onLink), onList = js.Any.fromFunction3(onList), onOptions = js.Any.fromFunction3(onOptions), onPatch = js.Any.fromFunction3(onPatch), onPost = js.Any.fromFunction3(onPost), onPut = js.Any.fromFunction3(onPut), onUnlink = js.Any.fromFunction3(onUnlink), reset = js.Any.fromFunction0(reset), resetHandlers = js.Any.fromFunction0(resetHandlers), resetHistory = js.Any.fromFunction0(resetHistory), restore = js.Any.fromFunction0(restore))
       __obj.asInstanceOf[MockAdapter]
     }
     
@@ -673,43 +796,51 @@ object mod {
       
       inline def setAdapter(value: () => AxiosAdapter): Self = StObject.set(x, "adapter", js.Any.fromFunction0(value))
       
-      inline def setHistory(value: StringDictionary[js.Array[AxiosRequestConfig]]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: StringDictionary[js.Array[AxiosRequestConfig[Any]]]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
       inline def setOnAny(
-        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+        value: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onAny", js.Any.fromFunction3(value))
       
       inline def setOnDelete(
-        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+        value: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onDelete", js.Any.fromFunction3(value))
       
       inline def setOnGet(
-        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+        value: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onGet", js.Any.fromFunction3(value))
       
       inline def setOnHead(
-        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+        value: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onHead", js.Any.fromFunction3(value))
       
+      inline def setOnLink(
+        value: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+      ): Self = StObject.set(x, "onLink", js.Any.fromFunction3(value))
+      
       inline def setOnList(
-        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+        value: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onList", js.Any.fromFunction3(value))
       
       inline def setOnOptions(
-        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+        value: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onOptions", js.Any.fromFunction3(value))
       
       inline def setOnPatch(
-        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+        value: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onPatch", js.Any.fromFunction3(value))
       
       inline def setOnPost(
-        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+        value: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onPost", js.Any.fromFunction3(value))
       
       inline def setOnPut(
-        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+        value: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
       ): Self = StObject.set(x, "onPut", js.Any.fromFunction3(value))
+      
+      inline def setOnUnlink(
+        value: (/* matcher */ js.UndefOr[String | js.RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+      ): Self = StObject.set(x, "onUnlink", js.Any.fromFunction3(value))
       
       inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
@@ -748,10 +879,10 @@ object mod {
   
   trait RequestDataMatcher
     extends StObject
-       with /* index */ StringDictionary[js.Any]
+       with /* index */ StringDictionary[Any]
        with AsymmetricRequestDataMatcher {
     
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var params: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object RequestDataMatcher {
     
@@ -762,7 +893,7 @@ object mod {
     
     extension [Self <: RequestDataMatcher](x: Self) {
       
-      inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     }
@@ -782,21 +913,21 @@ object mod {
     
     def reply[T](statusOrCallback: Double): MockAdapter
     def reply[T](statusOrCallback: Double, data: T): MockAdapter
-    def reply[T](statusOrCallback: Double, data: T, headers: js.Any): MockAdapter
-    def reply[T](statusOrCallback: Double, data: Unit, headers: js.Any): MockAdapter
+    def reply[T](statusOrCallback: Double, data: T, headers: Any): MockAdapter
+    def reply[T](statusOrCallback: Double, data: Unit, headers: Any): MockAdapter
     def reply[T](statusOrCallback: CallbackResponseSpecFunc): MockAdapter
     def reply[T](statusOrCallback: CallbackResponseSpecFunc, data: T): MockAdapter
-    def reply[T](statusOrCallback: CallbackResponseSpecFunc, data: T, headers: js.Any): MockAdapter
-    def reply[T](statusOrCallback: CallbackResponseSpecFunc, data: Unit, headers: js.Any): MockAdapter
+    def reply[T](statusOrCallback: CallbackResponseSpecFunc, data: T, headers: Any): MockAdapter
+    def reply[T](statusOrCallback: CallbackResponseSpecFunc, data: Unit, headers: Any): MockAdapter
     
     def replyOnce[T](statusOrCallback: Double): MockAdapter
     def replyOnce[T](statusOrCallback: Double, data: T): MockAdapter
-    def replyOnce[T](statusOrCallback: Double, data: T, headers: js.Any): MockAdapter
-    def replyOnce[T](statusOrCallback: Double, data: Unit, headers: js.Any): MockAdapter
+    def replyOnce[T](statusOrCallback: Double, data: T, headers: Any): MockAdapter
+    def replyOnce[T](statusOrCallback: Double, data: Unit, headers: Any): MockAdapter
     def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc): MockAdapter
     def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc, data: T): MockAdapter
-    def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc, data: T, headers: js.Any): MockAdapter
-    def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc, data: Unit, headers: js.Any): MockAdapter
+    def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc, data: T, headers: Any): MockAdapter
+    def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc, data: Unit, headers: Any): MockAdapter
     @JSName("replyOnce")
     var replyOnce_Original: ResponseSpecFunc
     
@@ -815,8 +946,8 @@ object mod {
       networkError: () => MockAdapter,
       networkErrorOnce: () => MockAdapter,
       passThrough: () => MockAdapter,
-      reply: (/* statusOrCallback */ Double | CallbackResponseSpecFunc, /* data */ js.UndefOr[js.Any], /* headers */ js.UndefOr[js.Any]) => MockAdapter,
-      replyOnce: (/* statusOrCallback */ Double | CallbackResponseSpecFunc, /* data */ js.UndefOr[js.Any], /* headers */ js.UndefOr[js.Any]) => MockAdapter,
+      reply: (/* statusOrCallback */ Double | CallbackResponseSpecFunc, /* data */ js.UndefOr[Any], /* headers */ js.UndefOr[Any]) => MockAdapter,
+      replyOnce: (/* statusOrCallback */ Double | CallbackResponseSpecFunc, /* data */ js.UndefOr[Any], /* headers */ js.UndefOr[Any]) => MockAdapter,
       timeout: () => MockAdapter,
       timeoutOnce: () => MockAdapter
     ): RequestHandler = {
@@ -837,11 +968,11 @@ object mod {
       inline def setPassThrough(value: () => MockAdapter): Self = StObject.set(x, "passThrough", js.Any.fromFunction0(value))
       
       inline def setReply(
-        value: (/* statusOrCallback */ Double | CallbackResponseSpecFunc, /* data */ js.UndefOr[js.Any], /* headers */ js.UndefOr[js.Any]) => MockAdapter
+        value: (/* statusOrCallback */ Double | CallbackResponseSpecFunc, /* data */ js.UndefOr[Any], /* headers */ js.UndefOr[Any]) => MockAdapter
       ): Self = StObject.set(x, "reply", js.Any.fromFunction3(value))
       
       inline def setReplyOnce(
-        value: (/* statusOrCallback */ Double | CallbackResponseSpecFunc, /* data */ js.UndefOr[js.Any], /* headers */ js.UndefOr[js.Any]) => MockAdapter
+        value: (/* statusOrCallback */ Double | CallbackResponseSpecFunc, /* data */ js.UndefOr[Any], /* headers */ js.UndefOr[Any]) => MockAdapter
       ): Self = StObject.set(x, "replyOnce", js.Any.fromFunction3(value))
       
       inline def setTimeout(value: () => MockAdapter): Self = StObject.set(x, "timeout", js.Any.fromFunction0(value))
@@ -851,7 +982,7 @@ object mod {
   }
   
   type RequestMatcherFunc = js.Function3[
-    /* matcher */ js.UndefOr[String | RegExp], 
+    /* matcher */ js.UndefOr[String | js.RegExp], 
     /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], 
     /* headers */ js.UndefOr[AsymmetricHeadersMatcher], 
     RequestHandler
@@ -859,8 +990,8 @@ object mod {
   
   type ResponseSpecFunc = js.Function3[
     /* statusOrCallback */ Double | CallbackResponseSpecFunc, 
-    /* data */ js.UndefOr[js.Any], 
-    /* headers */ js.UndefOr[js.Any], 
+    /* data */ js.UndefOr[Any], 
+    /* headers */ js.UndefOr[Any], 
     MockAdapter
   ]
 }

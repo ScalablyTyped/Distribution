@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an edge that does not know about any Link.
   */
-class LayoutEdge ()
+open class LayoutEdge ()
   extends typings.go.mod.LayoutEdge

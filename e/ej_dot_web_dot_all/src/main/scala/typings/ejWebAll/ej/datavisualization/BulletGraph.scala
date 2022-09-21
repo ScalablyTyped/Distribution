@@ -1029,11 +1029,11 @@ object BulletGraph {
     /** location - X and Y co-ordinate of the points with respect to bullet graph area.id - ID of the target element.    size - Width and height of the bullet graph.    pageX -
       * x-coordinate of the pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Instance of the bullet graph model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -1052,11 +1052,11 @@ object BulletGraph {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1075,11 +1075,11 @@ object BulletGraph {
     /** location - X and Y co-ordinate of the points with respect to bullet graph area.id - ID of the target element.    size - Width and height of the bullet graph.    pageX -
       * x-coordinate of the pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Instance of the bullet graph model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -1098,11 +1098,11 @@ object BulletGraph {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1116,7 +1116,7 @@ object BulletGraph {
     
     /** returns the object of the bullet graph.
       */
-    var Object: js.UndefOr[js.Any] = js.undefined
+    var Object: js.UndefOr[Any] = js.undefined
     
     /** returns the current captionSettings element.
       */
@@ -1147,7 +1147,7 @@ object BulletGraph {
       
       inline def setCaptionTypeUndefined: Self = StObject.set(x, "captionType", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "Object", js.undefined)
       
@@ -1161,7 +1161,7 @@ object BulletGraph {
     
     /** returns the object of the bullet graph.
       */
-    var Object: js.UndefOr[js.Any] = js.undefined
+    var Object: js.UndefOr[Any] = js.undefined
     
     /** returns the text value of the category that is drawn.
       */
@@ -1188,7 +1188,7 @@ object BulletGraph {
       
       inline def setCategoryElementUndefined: Self = StObject.set(x, "categoryElement", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "Object", js.undefined)
       
@@ -1206,7 +1206,7 @@ object BulletGraph {
     
     /** returns the object of the bullet graph.
       */
-    var Object: js.UndefOr[js.Any] = js.undefined
+    var Object: js.UndefOr[Any] = js.undefined
     
     /** returns the value of the comparative measure symbol.
       */
@@ -1229,7 +1229,7 @@ object BulletGraph {
     
     extension [Self <: DrawComparativeMeasureSymbolEventArgs](x: Self) {
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "Object", js.undefined)
       
@@ -1251,7 +1251,7 @@ object BulletGraph {
     
     /** returns the object of the bullet graph.
       */
-    var Object: js.UndefOr[js.Any] = js.undefined
+    var Object: js.UndefOr[Any] = js.undefined
     
     /** returns the value of the feature measure bar.
       */
@@ -1278,7 +1278,7 @@ object BulletGraph {
       
       inline def setCurrentElementUndefined: Self = StObject.set(x, "currentElement", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "Object", js.undefined)
       
@@ -1300,11 +1300,11 @@ object BulletGraph {
     
     /** returns an object to customize bullet graph indicator text and symbol before rendering it.
       */
-    var indicatorSettings: js.UndefOr[js.Any] = js.undefined
+    var indicatorSettings: js.UndefOr[Any] = js.undefined
     
     /** returns the object of bullet graph.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the type of event.
       */
@@ -1323,11 +1323,11 @@ object BulletGraph {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setIndicatorSettings(value: js.Any): Self = StObject.set(x, "indicatorSettings", value.asInstanceOf[js.Any])
+      inline def setIndicatorSettings(value: Any): Self = StObject.set(x, "indicatorSettings", value.asInstanceOf[js.Any])
       
       inline def setIndicatorSettingsUndefined: Self = StObject.set(x, "indicatorSettings", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1341,7 +1341,7 @@ object BulletGraph {
     
     /** returns the object of the bullet graph.
       */
-    var Object: js.UndefOr[js.Any] = js.undefined
+    var Object: js.UndefOr[Any] = js.undefined
     
     /** returns the label type.
       */
@@ -1368,7 +1368,7 @@ object BulletGraph {
       
       inline def setLabelTypeUndefined: Self = StObject.set(x, "labelType", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "Object", js.undefined)
       
@@ -1386,7 +1386,7 @@ object BulletGraph {
     
     /** returns the object of the bullet graph.
       */
-    var Object: js.UndefOr[js.Any] = js.undefined
+    var Object: js.UndefOr[Any] = js.undefined
     
     /** returns the end value of current range.
       */
@@ -1398,7 +1398,7 @@ object BulletGraph {
     
     /** returns the settings for current range.
       */
-    var rangeOptions: js.UndefOr[js.Any] = js.undefined
+    var rangeOptions: js.UndefOr[Any] = js.undefined
   }
   object DrawQualitativeRangesEventArgs {
     
@@ -1409,7 +1409,7 @@ object BulletGraph {
     
     extension [Self <: DrawQualitativeRangesEventArgs](x: Self) {
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "Object", js.undefined)
       
@@ -1421,7 +1421,7 @@ object BulletGraph {
       
       inline def setRangeIndexUndefined: Self = StObject.set(x, "rangeIndex", js.undefined)
       
-      inline def setRangeOptions(value: js.Any): Self = StObject.set(x, "rangeOptions", value.asInstanceOf[js.Any])
+      inline def setRangeOptions(value: Any): Self = StObject.set(x, "rangeOptions", value.asInstanceOf[js.Any])
       
       inline def setRangeOptionsUndefined: Self = StObject.set(x, "rangeOptions", js.undefined)
     }
@@ -1439,7 +1439,7 @@ object BulletGraph {
     
     /** returns the settings for majorTicks.
       */
-    var majorTickSettings: js.UndefOr[js.Any] = js.undefined
+    var majorTickSettings: js.UndefOr[Any] = js.undefined
     
     /** returns the maximum value.
       */
@@ -1455,11 +1455,11 @@ object BulletGraph {
     
     /** returns the settings for minorTicks.
       */
-    var minorTickSettings: js.UndefOr[js.Any] = js.undefined
+    var minorTickSettings: js.UndefOr[Any] = js.undefined
     
     /** returns the model of the bullet graph.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -1482,7 +1482,7 @@ object BulletGraph {
       
       inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      inline def setMajorTickSettings(value: js.Any): Self = StObject.set(x, "majorTickSettings", value.asInstanceOf[js.Any])
+      inline def setMajorTickSettings(value: Any): Self = StObject.set(x, "majorTickSettings", value.asInstanceOf[js.Any])
       
       inline def setMajorTickSettingsUndefined: Self = StObject.set(x, "majorTickSettings", js.undefined)
       
@@ -1498,11 +1498,11 @@ object BulletGraph {
       
       inline def setMinorTickPerIntervalUndefined: Self = StObject.set(x, "minorTickPerInterval", js.undefined)
       
-      inline def setMinorTickSettings(value: js.Any): Self = StObject.set(x, "minorTickSettings", value.asInstanceOf[js.Any])
+      inline def setMinorTickSettings(value: Any): Self = StObject.set(x, "minorTickSettings", value.asInstanceOf[js.Any])
       
       inline def setMinorTickSettingsUndefined: Self = StObject.set(x, "minorTickSettings", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1520,7 +1520,7 @@ object BulletGraph {
     
     /** returns the model of the bullet graph.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -1539,7 +1539,7 @@ object BulletGraph {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1804,7 +1804,7 @@ object BulletGraph {
       
       inline def setQualitativeRangesUndefined: Self = StObject.set(x, "qualitativeRanges", js.undefined)
       
-      inline def setQualitativeRangesVarargs(value: QualitativeRange*): Self = StObject.set(x, "qualitativeRanges", js.Array(value :_*))
+      inline def setQualitativeRangesVarargs(value: QualitativeRange*): Self = StObject.set(x, "qualitativeRanges", js.Array(value*))
       
       inline def setQuantitativeScaleLength(value: Double): Self = StObject.set(x, "quantitativeScaleLength", value.asInstanceOf[js.Any])
       
@@ -1957,7 +1957,7 @@ object BulletGraph {
       
       inline def setFeatureMeasuresUndefined: Self = StObject.set(x, "featureMeasures", js.undefined)
       
-      inline def setFeatureMeasuresVarargs(value: QuantitativeScaleSettingsFeatureMeasure*): Self = StObject.set(x, "featureMeasures", js.Array(value :_*))
+      inline def setFeatureMeasuresVarargs(value: QuantitativeScaleSettingsFeatureMeasure*): Self = StObject.set(x, "featureMeasures", js.Array(value*))
       
       inline def setFeaturedMeasureSettings(value: QuantitativeScaleSettingsFeaturedMeasureSettings): Self = StObject.set(x, "featuredMeasureSettings", value.asInstanceOf[js.Any])
       
@@ -2126,7 +2126,7 @@ object BulletGraph {
     /** Specifies the dataSource for the bullet graph.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Feature measure render based on the values in the specified field.
       * @Default {null}
@@ -2160,7 +2160,7 @@ object BulletGraph {
       
       inline def setComparativeMeasureUndefined: Self = StObject.set(x, "comparativeMeasure", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -2431,11 +2431,11 @@ object BulletGraph {
     /** location - X and Y co-ordinate of the points with respect to bullet graph area.id - ID of the target element.    size - Width and height of the bullet graph.    pageX -
       * x-coordinate of the pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Instance of the bullet graph model object
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Name of the event
       */
@@ -2454,11 +2454,11 @@ object BulletGraph {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "PullContextualTypeContext")
 @js.native
-class PullContextualTypeContext protected ()
+open class PullContextualTypeContext protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.PullContextualTypeContext {
   def this(
@@ -17,7 +17,7 @@ class PullContextualTypeContext protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var astSymbolMap: js.Any = js.native
+  var astSymbolMap: Any = js.native
   
   /* CompleteClass */
   var contextualType: typings.typescriptServices.TypeScript.PullTypeSymbol = js.native

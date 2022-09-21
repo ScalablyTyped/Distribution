@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAccountCustomizationRequest extends StObject {
   
   /**
-    * The ID for the AWS account that you want to describe QuickSight customizations for.
+    * The ID for the Amazon Web Services account that you want to describe Amazon QuickSight customizations for.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
-    * The QuickSight namespace that you want to describe QuickSight customizations for.
+    * The Amazon QuickSight namespace that you want to describe Amazon QuickSight customizations for.
     */
   var Namespace: js.UndefOr[typings.awsSdk.quicksightMod.Namespace] = js.undefined
   
   /**
-    * The Resolved flag works with the other parameters to determine which view of QuickSight customizations is returned. You can add this flag to your command to use the same view that QuickSight uses to identify which customizations to apply to the console. Omit this flag, or set it to no-resolved, to reveal customizations that are configured at different levels. 
+    * The Resolved flag works with the other parameters to determine which view of Amazon QuickSight customizations is returned. You can add this flag to your command to use the same view that Amazon QuickSight uses to identify which customizations to apply to the console. Omit this flag, or set it to no-resolved, to reveal customizations that are configured at different levels. 
     */
   var Resolved: js.UndefOr[scala.Boolean] = js.undefined
 }

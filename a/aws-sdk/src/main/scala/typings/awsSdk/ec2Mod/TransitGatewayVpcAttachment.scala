@@ -9,7 +9,7 @@ trait TransitGatewayVpcAttachment extends StObject {
   /**
     * The creation time.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The VPC attachment options.
@@ -47,7 +47,7 @@ trait TransitGatewayVpcAttachment extends StObject {
   var VpcId: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the VPC.
+    * The ID of the Amazon Web Services account that owns the VPC.
     */
   var VpcOwnerId: js.UndefOr[String] = js.undefined
 }
@@ -60,7 +60,7 @@ object TransitGatewayVpcAttachment {
   
   extension [Self <: TransitGatewayVpcAttachment](x: Self) {
     
-    inline def setCreationTime(value: DateTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -76,13 +76,13 @@ object TransitGatewayVpcAttachment {
     
     inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTransitGatewayAttachmentId(value: String): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
     

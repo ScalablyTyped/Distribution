@@ -1,50 +1,55 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.azdata.mod.^
+import typings.vscode.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DivBuilder = typings.azdata.mod.ContainerBuilder[
-typings.azdata.mod.DivContainer, 
-typings.azdata.mod.DivLayout, 
-typings.azdata.mod.DivItemLayout]
+inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 
-type EditCommitParams = typings.azdata.mod.IEditSessionOperationParams
+type ContainerProperties = ComponentProperties
 
-type EditCreateRowParams = typings.azdata.mod.IEditSessionOperationParams
+type CssStyles = StringDictionary[String | Double]
 
-type EditDeleteRowParams = typings.azdata.mod.IEditRowOperationParams
+type DivBuilder = ContainerBuilder[DivContainer, DivLayout, DivItemLayout, DivContainerProperties]
 
-type EditDisposeParams = typings.azdata.mod.IEditSessionOperationParams
+type EditCommitParams = IEditSessionOperationParams
 
-type EditRevertCellResult = typings.azdata.mod.EditCellResult
+type EditCreateRowParams = IEditSessionOperationParams
 
-type EditRevertRowParams = typings.azdata.mod.IEditRowOperationParams
+type EditDeleteRowParams = IEditRowOperationParams
 
-type EditUpdateCellResult = typings.azdata.mod.EditCellResult
+type EditDisposeParams = IEditSessionOperationParams
 
-type FlexBuilder = typings.azdata.mod.ContainerBuilder[
-typings.azdata.mod.FlexContainer, 
-typings.azdata.mod.FlexLayout, 
-typings.azdata.mod.FlexItemLayout]
+type EditRevertCellResult = EditCellResult
 
-type FlexContainer = typings.azdata.mod.Container[typings.azdata.mod.FlexLayout, typings.azdata.mod.FlexItemLayout]
+type EditRevertRowParams = IEditRowOperationParams
 
-type FormContainer = typings.azdata.mod.Container[typings.azdata.mod.FormLayout, typings.azdata.mod.FormItemLayout]
+type EditUpdateCellResult = EditCellResult
 
-type GroupBuilder = typings.azdata.mod.ContainerBuilder[
-typings.azdata.mod.GroupContainer, 
-typings.azdata.mod.GroupLayout, 
-typings.azdata.mod.GroupItemLayout]
+type FlexBuilder = ContainerBuilder[FlexContainer, FlexLayout, FlexItemLayout, ContainerProperties]
 
-type NavContainer = typings.azdata.mod.Container[js.Any, js.Any]
+type FlexContainer = Container[FlexLayout, FlexItemLayout]
 
-type SplitViewBuilder = typings.azdata.mod.ContainerBuilder[
-typings.azdata.mod.SplitViewContainer, 
-typings.azdata.mod.SplitViewLayout, 
-typings.azdata.mod.FlexItemLayout]
+type FormContainer = Container[FormLayout, FormItemLayout]
 
-type SplitViewContainer = typings.azdata.mod.Container[typings.azdata.mod.SplitViewLayout, typings.azdata.mod.FlexItemLayout]
+type GroupBuilder = ContainerBuilder[GroupContainer, GroupLayout, GroupItemLayout, GroupContainerProperties]
 
-type ToolbarContainer = typings.azdata.mod.Container[typings.azdata.mod.ToolbarLayout, js.Any]
+type IconPath = String | Uri | ThemedIconPath
+
+type ImageComponentProperties = ComponentWithIconProperties
+
+type NavContainer = Container[Any, Any]
+
+type SeparatorComponent = Component
+
+type SeparatorComponentProperties = ComponentProperties
+
+type SplitViewBuilder = ContainerBuilder[SplitViewContainer, SplitViewLayout, FlexItemLayout, ContainerProperties]
+
+type SplitViewContainer = Container[SplitViewLayout, FlexItemLayout]
+
+type ToolbarContainer = Container[ToolbarLayout, Any]

@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait UpdateExpression_
   extends StObject
      with BaseNode
-     with Expression {
+     with Expression
+     with Standardized {
   
   var argument: Expression
   

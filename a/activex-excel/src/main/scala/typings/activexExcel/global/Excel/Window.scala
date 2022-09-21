@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Window")
 @js.native
-/* private */ class Window ()
+/* private */ open class Window ()
   extends StObject
      with typings.activexExcel.Excel.Window

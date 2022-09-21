@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Specifies the border style.
   *
+  * @remarks
   * [Api set: WordApi 1.3]
   */
 trait TableBorderLoadOptions extends StObject {
@@ -19,25 +19,25 @@ trait TableBorderLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets or sets the table border color.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var color: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets or sets the type of the table border.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var width: js.UndefOr[Boolean] = js.undefined

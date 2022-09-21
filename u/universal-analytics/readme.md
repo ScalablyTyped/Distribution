@@ -10,15 +10,12 @@ A node module for Google's Universal Analytics tracking
 | ------------------ | :-------------: |
 | Full name          | universal-analytics |
 | Keywords           | google, analytics, universal, tracking |
-| # releases         | 6 |
-| # dependents       | 171 |
-| # downloads        | 56844087 |
-| # stars            | 35 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 4642176.666666667 |
+| # stars            | 950.0 |
 
 ## Links
-- [Homepage](https://github.com/peaksandpies/universal-analytics#readme)
-- [Bugs](https://github.com/peaksandpies/universal-analytics/issues)
-- [Repository](https://github.com/peaksandpies/universal-analytics)
 - [Npm](https://www.npmjs.com/package/universal-analytics)
     
 

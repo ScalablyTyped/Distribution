@@ -38,7 +38,7 @@ object League {
       
       inline def setEntries(value: js.Array[LeagueEntryDto]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      inline def setEntriesVarargs(value: LeagueEntryDto*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: LeagueEntryDto*): Self = StObject.set(x, "entries", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

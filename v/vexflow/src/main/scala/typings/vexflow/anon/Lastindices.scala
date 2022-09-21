@@ -27,7 +27,7 @@ object Lastindices {
     
     inline def setFirst_indicesUndefined: Self = StObject.set(x, "first_indices", js.undefined)
     
-    inline def setFirst_indicesVarargs(value: Double*): Self = StObject.set(x, "first_indices", js.Array(value :_*))
+    inline def setFirst_indicesVarargs(value: Double*): Self = StObject.set(x, "first_indices", js.Array(value*))
     
     inline def setFirst_note(value: typings.vexflow.Vex.Flow.Note): Self = StObject.set(x, "first_note", value.asInstanceOf[js.Any])
     
@@ -37,7 +37,7 @@ object Lastindices {
     
     inline def setLast_indicesUndefined: Self = StObject.set(x, "last_indices", js.undefined)
     
-    inline def setLast_indicesVarargs(value: Double*): Self = StObject.set(x, "last_indices", js.Array(value :_*))
+    inline def setLast_indicesVarargs(value: Double*): Self = StObject.set(x, "last_indices", js.Array(value*))
     
     inline def setLast_note(value: typings.vexflow.Vex.Flow.Note): Self = StObject.set(x, "last_note", value.asInstanceOf[js.Any])
     

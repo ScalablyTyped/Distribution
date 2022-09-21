@@ -7,34 +7,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IotSiteWiseAction extends StObject {
   
   /**
-    * The ID of the asset that has the specified property. You can specify an expression.
+    * The ID of the asset that has the specified property.
     */
   var assetId: js.UndefOr[AssetId] = js.undefined
   
   /**
-    * A unique identifier for this entry. You can use the entry ID to track which data entry causes an error in case of failure. The default is a new unique identifier. You can also specify an expression.
+    * A unique identifier for this entry. You can use the entry ID to track which data entry causes an error in case of failure. The default is a new unique identifier.
     */
   var entryId: js.UndefOr[AssetPropertyEntryId] = js.undefined
   
   /**
-    * The alias of the asset property. You can also specify an expression.
+    * The alias of the asset property.
     */
   var propertyAlias: js.UndefOr[AssetPropertyAlias] = js.undefined
   
   /**
-    * The ID of the asset property. You can specify an expression.
+    * The ID of the asset property.
     */
   var propertyId: js.UndefOr[AssetPropertyId] = js.undefined
   
   /**
     * The value to send to the asset property. This value contains timestamp, quality, and value (TQV) information. 
     */
-  var propertyValue: AssetPropertyValue
+  var propertyValue: js.UndefOr[AssetPropertyValue] = js.undefined
 }
 object IotSiteWiseAction {
   
-  inline def apply(propertyValue: AssetPropertyValue): IotSiteWiseAction = {
-    val __obj = js.Dynamic.literal(propertyValue = propertyValue.asInstanceOf[js.Any])
+  inline def apply(): IotSiteWiseAction = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IotSiteWiseAction]
   }
   
@@ -57,5 +57,7 @@ object IotSiteWiseAction {
     inline def setPropertyIdUndefined: Self = StObject.set(x, "propertyId", js.undefined)
     
     inline def setPropertyValue(value: AssetPropertyValue): Self = StObject.set(x, "propertyValue", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyValueUndefined: Self = StObject.set(x, "propertyValue", js.undefined)
   }
 }

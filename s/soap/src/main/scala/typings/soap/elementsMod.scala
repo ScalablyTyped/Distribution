@@ -2,7 +2,7 @@ package typings.soap
 
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.StringDictionary
-import typings.soap.anon.Types
+import typings.soap.anon.Elements
 import typings.soap.typesMod.IWsdlBaseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,19 +12,19 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "AllElement")
   @js.native
-  class AllElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class AllElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("allowedChildren")
     val allowedChildren_AllElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
@@ -32,33 +32,33 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "AnyElement")
   @js.native
-  class AnyElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class AnyElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
   }
   
   @JSImport("soap/lib/wsdl/elements", "BindingElement")
   @js.native
-  class BindingElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class BindingElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("$type")
     var $type: js.UndefOr[String] = js.native
     
-    def addChild(child: js.Any): Unit = js.native
+    def addChild(child: Any): Unit = js.native
     
     @JSName("allowedChildren")
     val allowedChildren_BindingElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
@@ -76,11 +76,11 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "BodyElement")
   @js.native
-  class BodyElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class BodyElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("$encodingStyle")
     var $encodingStyle: js.UndefOr[String] = js.native
@@ -91,19 +91,19 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "ChoiceElement")
   @js.native
-  class ChoiceElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class ChoiceElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("allowedChildren")
     val allowedChildren_ChoiceElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
@@ -111,19 +111,19 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "ComplexContentElement")
   @js.native
-  class ComplexContentElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class ComplexContentElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("allowedChildren")
     val allowedChildren_ComplexContentElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
@@ -131,19 +131,19 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "ComplexTypeElement")
   @js.native
-  class ComplexTypeElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class ComplexTypeElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("allowedChildren")
     val allowedChildren_ComplexTypeElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
@@ -151,30 +151,30 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "DefinitionsElement")
   @js.native
-  class DefinitionsElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class DefinitionsElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
-    def addChild(child: js.Any): Unit = js.native
+    def addChild(child: Any): Unit = js.native
     
     @JSName("allowedChildren")
     val allowedChildren_DefinitionsElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
     
     var bindings: StringDictionary[BindingElement] = js.native
     
-    var complexTypes: js.Any = js.native
+    var complexTypes: Any = js.native
     
-    var descriptions: Types = js.native
+    var descriptions: Elements = js.native
     
     var messages: StringDictionary[MessageElement] = js.native
     
@@ -187,28 +187,28 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "DocumentationElement")
   @js.native
-  class DocumentationElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class DocumentationElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
   }
   
   @JSImport("soap/lib/wsdl/elements", "Element")
   @js.native
-  class Element protected () extends StObject {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class Element protected () extends StObject {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("$name")
     var $name: js.UndefOr[String] = js.native
     
     @JSName("$targetNamespace")
-    var $targetNamespace: js.UndefOr[js.Any] = js.native
+    var $targetNamespace: js.UndefOr[Any] = js.native
     
-    /* private */ var _initializeOptions: js.Any = js.native
+    /* private */ var _initializeOptions: Any = js.native
     
     def addChild(child: Element): Unit = js.native
     
@@ -216,9 +216,9 @@ object elementsMod {
         StringDictionary[
           Instantiable4[
             /* nsName */ String, 
-            /* attrs */ js.Any, 
+            /* attrs */ Any, 
             /* options */ js.UndefOr[IWsdlBaseOptions], 
-            /* schemaAttrs */ js.UndefOr[js.Any], 
+            /* schemaAttrs */ js.UndefOr[Any], 
             Element
           ]
         ]
@@ -228,55 +228,49 @@ object elementsMod {
     
     def deleteFixedAttrs(): Unit = js.native
     
-    def description(): js.Any = js.native
-    def description(definitions: Unit, xmlns: IXmlNs): js.Any = js.native
-    def description(definitions: DefinitionsElement): js.Any = js.native
-    def description(definitions: DefinitionsElement, xmlns: IXmlNs): js.Any = js.native
+    def description(): Any = js.native
+    def description(definitions: Unit, xmlns: IXmlNs): Any = js.native
+    def description(definitions: DefinitionsElement): Any = js.native
+    def description(definitions: DefinitionsElement, xmlns: IXmlNs): Any = js.native
     
     def endElement(stack: js.Array[Element], nsName: String): Unit = js.native
     
-    var ignoredNamespaces: js.Any = js.native
+    var ignoredNamespaces: Any = js.native
     
     def init(): Unit = js.native
     
     var name: js.UndefOr[String] = js.native
     
-    var nsName: js.UndefOr[js.Any] = js.native
+    var nsName: js.UndefOr[Any] = js.native
     
     var prefix: js.UndefOr[String] = js.native
     
-    var schemaXmlns: js.UndefOr[js.Any] = js.native
+    var schemaXmlns: js.UndefOr[Any] = js.native
     
-    def startElement(
-      stack: js.Array[Element],
-      nsName: String,
-      attrs: js.Any,
-      options: IWsdlBaseOptions,
-      schemaXmlns: js.Any
-    ): Unit = js.native
+    def startElement(stack: js.Array[Element], nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaXmlns: Any): Unit = js.native
     
     def unexpected(name: String): Unit = js.native
     
     var valueKey: String = js.native
     
-    var xmlKey: js.Any = js.native
+    var xmlKey: Any = js.native
     
     var xmlns: js.UndefOr[IXmlNs] = js.native
   }
   
   @JSImport("soap/lib/wsdl/elements", "ElementElement")
   @js.native
-  class ElementElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class ElementElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("$lookupType")
     var $lookupType: js.UndefOr[String] = js.native
     
     @JSName("$lookupTypes")
-    var $lookupTypes: js.UndefOr[js.Array[js.Any]] = js.native
+    var $lookupTypes: js.UndefOr[js.Array[Any]] = js.native
     
     @JSName("$maxOccurs")
     var $maxOccurs: js.UndefOr[String] = js.native
@@ -294,9 +288,9 @@ object elementsMod {
     val allowedChildren_ElementElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
@@ -308,20 +302,20 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "EnumerationElement")
   @js.native
-  class EnumerationElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class EnumerationElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
   }
   
   @JSImport("soap/lib/wsdl/elements", "ExtensionElement")
   @js.native
-  class ExtensionElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class ExtensionElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("$base")
     var $base: String = js.native
@@ -330,9 +324,9 @@ object elementsMod {
     val allowedChildren_ExtensionElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
@@ -340,47 +334,47 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "ImportElement")
   @js.native
-  class ImportElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class ImportElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("$location")
-    var $location: js.UndefOr[js.Any] = js.native
+    var $location: js.UndefOr[Any] = js.native
     
     @JSName("$namespace")
-    var $namespace: js.UndefOr[js.Any] = js.native
+    var $namespace: js.UndefOr[Any] = js.native
     
     @JSName("$schemaLocation")
-    var $schemaLocation: js.UndefOr[js.Any] = js.native
+    var $schemaLocation: js.UndefOr[Any] = js.native
   }
   
   @JSImport("soap/lib/wsdl/elements", "IncludeElement")
   @js.native
-  class IncludeElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class IncludeElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("$location")
-    var $location: js.UndefOr[js.Any] = js.native
+    var $location: js.UndefOr[Any] = js.native
     
     @JSName("$namespace")
-    var $namespace: js.UndefOr[js.Any] = js.native
+    var $namespace: js.UndefOr[Any] = js.native
     
     @JSName("$schemaLocation")
-    var $schemaLocation: js.UndefOr[js.Any] = js.native
+    var $schemaLocation: js.UndefOr[Any] = js.native
   }
   
   @JSImport("soap/lib/wsdl/elements", "InputElement")
   @js.native
-  class InputElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class InputElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("$lookupType")
     var $lookupType: String = js.native
@@ -392,16 +386,16 @@ object elementsMod {
     val allowedChildren_InputElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
     
     var encodingStyle: String = js.native
     
-    var parts: js.UndefOr[js.Any] = js.native
+    var parts: js.UndefOr[Any] = js.native
     
     var targetNSAlias: js.UndefOr[String] = js.native
     
@@ -412,11 +406,11 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "MessageElement")
   @js.native
-  class MessageElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class MessageElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     /**
       * Takes a given namespaced String(for example: 'alias:property') and creates a lookupType
@@ -429,7 +423,7 @@ object elementsMod {
       * @returns {Object}
       * @private
       */
-    /* private */ var _createLookupTypeObject: js.Any = js.native
+    /* private */ var _createLookupTypeObject: Any = js.native
     
     /**
       * Iterates through the element and every nested child to find any defined `$type`
@@ -441,33 +435,33 @@ object elementsMod {
       * @returns {String}
       * @private
       */
-    /* private */ var _getNestedLookupTypeString: js.Any = js.native
+    /* private */ var _getNestedLookupTypeString: Any = js.native
     
     @JSName("allowedChildren")
     val allowedChildren_MessageElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
     
     var element: ElementElement = js.native
     
-    var parts: js.Any = js.native
+    var parts: Any = js.native
     
     def postProcess(definitions: DefinitionsElement): Unit = js.native
   }
   
   @JSImport("soap/lib/wsdl/elements", "OperationElement")
   @js.native
-  class OperationElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class OperationElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("$soapAction")
     var $soapAction: js.UndefOr[String] = js.native
@@ -475,26 +469,26 @@ object elementsMod {
     @JSName("$style")
     var $style: js.UndefOr[String] = js.native
     
-    def addChild(child: js.Any): Unit = js.native
+    def addChild(child: Any): Unit = js.native
     
     @JSName("allowedChildren")
     val allowedChildren_OperationElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
     
     var input: InputElement = js.native
     
-    var inputSoap: js.Any = js.native
+    var inputSoap: Any = js.native
     
     var output: OutputElement = js.native
     
-    var outputSoap: js.Any = js.native
+    var outputSoap: Any = js.native
     
     def postProcess(definitions: DefinitionsElement, tag: String): Unit = js.native
     
@@ -505,22 +499,22 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "OutputElement")
   @js.native
-  class OutputElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class OutputElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("$lookupTypes")
-    var $lookupTypes: js.Any = js.native
+    var $lookupTypes: Any = js.native
     
     @JSName("allowedChildren")
     val allowedChildren_OutputElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
@@ -536,43 +530,43 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "PortElement")
   @js.native
-  class PortElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class PortElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
-    def addChild(child: js.Any): Unit = js.native
+    def addChild(child: Any): Unit = js.native
     
     @JSName("allowedChildren")
     val allowedChildren_PortElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
     
-    var location: js.Any = js.native
+    var location: Any = js.native
   }
   
   @JSImport("soap/lib/wsdl/elements", "PortTypeElement")
   @js.native
-  class PortTypeElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class PortTypeElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("allowedChildren")
     val allowedChildren_PortTypeElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
@@ -584,11 +578,11 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "RestrictionElement")
   @js.native
-  class RestrictionElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class RestrictionElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("$base")
     var $base: String = js.native
@@ -597,9 +591,9 @@ object elementsMod {
     val allowedChildren_RestrictionElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
@@ -607,22 +601,22 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "SchemaElement")
   @js.native
-  class SchemaElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class SchemaElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("$elementFormDefault")
-    var $elementFormDefault: js.Any = js.native
+    var $elementFormDefault: Any = js.native
     
     @JSName("allowedChildren")
     val allowedChildren_SchemaElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
@@ -640,19 +634,19 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "SequenceElement")
   @js.native
-  class SequenceElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class SequenceElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("allowedChildren")
     val allowedChildren_SequenceElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
@@ -660,19 +654,19 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "ServiceElement")
   @js.native
-  class ServiceElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class ServiceElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("allowedChildren")
     val allowedChildren_ServiceElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
@@ -684,19 +678,19 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "SimpleContentElement")
   @js.native
-  class SimpleContentElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class SimpleContentElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("allowedChildren")
     val allowedChildren_SimpleContentElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
@@ -704,19 +698,19 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "SimpleTypeElement")
   @js.native
-  class SimpleTypeElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class SimpleTypeElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
     @JSName("allowedChildren")
     val allowedChildren_SimpleTypeElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native
@@ -724,21 +718,21 @@ object elementsMod {
   
   @JSImport("soap/lib/wsdl/elements", "TypesElement")
   @js.native
-  class TypesElement protected () extends Element {
-    def this(nsName: String, attrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions) = this()
-    def this(nsName: String, attrs: js.Any, options: Unit, schemaAttrs: js.Any) = this()
-    def this(nsName: String, attrs: js.Any, options: IWsdlBaseOptions, schemaAttrs: js.Any) = this()
+  open class TypesElement protected () extends Element {
+    def this(nsName: String, attrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions) = this()
+    def this(nsName: String, attrs: Any, options: Unit, schemaAttrs: Any) = this()
+    def this(nsName: String, attrs: Any, options: IWsdlBaseOptions, schemaAttrs: Any) = this()
     
-    def addChild(child: js.Any): Unit = js.native
+    def addChild(child: Any): Unit = js.native
     
     @JSName("allowedChildren")
     val allowedChildren_TypesElement: StringDictionary[
         Instantiable4[
           /* nsName */ String, 
-          /* attrs */ js.Any, 
+          /* attrs */ Any, 
           /* options */ js.UndefOr[IWsdlBaseOptions], 
-          /* schemaAttrs */ js.UndefOr[js.Any], 
+          /* schemaAttrs */ js.UndefOr[Any], 
           Element
         ]
       ] = js.native

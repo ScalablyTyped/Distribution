@@ -4,16 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents targeting about where the ads can appear, e.g., certain sites or
-  * mobile applications. Different placement targeting types will be logically
-  * OR&#39;ed.
-  */
 trait SchemaPlacementTargeting extends StObject {
   
   /**
-    * Mobile application targeting information in a deal. This doesn&#39;t
-    * apply to Auction Packages.
+    * Mobile application targeting information in a deal. This doesn't apply to Auction Packages.
     */
   var mobileApplicationTargeting: js.UndefOr[SchemaMobileApplicationTargeting] = js.undefined
   

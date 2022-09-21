@@ -26,7 +26,7 @@ object DescribeDataRepositoryTasksResponse {
     
     inline def setDataRepositoryTasksUndefined: Self = StObject.set(x, "DataRepositoryTasks", js.undefined)
     
-    inline def setDataRepositoryTasksVarargs(value: DataRepositoryTask*): Self = StObject.set(x, "DataRepositoryTasks", js.Array(value :_*))
+    inline def setDataRepositoryTasksVarargs(value: DataRepositoryTask*): Self = StObject.set(x, "DataRepositoryTasks", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

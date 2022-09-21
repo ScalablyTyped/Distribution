@@ -53,7 +53,7 @@ object SharedDriveItem {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: DriveItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: DriveItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setList(value: NullableOption[List]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     

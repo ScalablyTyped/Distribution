@@ -1,6 +1,6 @@
 package typings.prex
 
-import typings.esfxCancelable.distMod.Cancelable
+import typings.esfxCancelable.mod.Cancelable
 import typings.prex.cancellationMod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object semaphoreMod {
   
   @JSImport("prex/out/lib/semaphore", "Semaphore")
   @js.native
-  class Semaphore protected () extends StObject {
+  open class Semaphore protected () extends StObject {
     /**
       * Initializes a new instance of the Semaphore class.
       *
@@ -20,11 +20,11 @@ object semaphoreMod {
     def this(initialCount: Double) = this()
     def this(initialCount: Double, maxCount: Double) = this()
     
-    /* private */ var _currentCount: js.Any = js.native
+    /* private */ var _currentCount: Any = js.native
     
-    /* private */ var _maxCount: js.Any = js.native
+    /* private */ var _maxCount: Any = js.native
     
-    /* private */ var _waiters: js.Any = js.native
+    /* private */ var _waiters: Any = js.native
     
     /**
       * Gets the number of remaining asynchronous operations that can enter

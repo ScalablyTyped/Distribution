@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MFiles.ActionCreateAssignment")
 @js.native
-class ActionCreateAssignment ()
+open class ActionCreateAssignment ()
   extends StObject
      with IActionCreateAssignment {
   

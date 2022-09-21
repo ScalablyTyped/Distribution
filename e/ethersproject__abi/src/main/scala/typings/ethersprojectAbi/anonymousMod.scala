@@ -9,9 +9,9 @@ object anonymousMod {
   
   @JSImport("@ethersproject/abi/lib/coders/anonymous", "AnonymousCoder")
   @js.native
-  class AnonymousCoder protected () extends Coder {
+  open class AnonymousCoder protected () extends Coder {
     def this(coder: Coder) = this()
     
-    /* private */ var coder: js.Any = js.native
+    /* private */ var coder: Any = js.native
   }
 }

@@ -11,9 +11,9 @@ Uses TouchableNativeFeedback where possible and fallback to alternatives where n
 | Full name          | react-native-platform-touchable |
 | Keywords           | react-native, react |
 | # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 585383 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 25556.333333333332 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/react-native-platform-touchable)

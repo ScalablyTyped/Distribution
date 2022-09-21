@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.KmlIcon")
 @js.native
-class KmlIcon ()
+open class KmlIcon ()
   extends StObject
      with typings.googleEarth.google.earth.KmlIcon {
   

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "AvPlaylistAddCheck")
 @js.native
-class AvPlaylistAddCheck ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class AvPlaylistAddCheck ()
+  extends Component[SvgIconProps, js.Object, Any]

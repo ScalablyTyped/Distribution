@@ -56,14 +56,14 @@ object Core {
   @js.native
   trait VariablePhotoSequenceCapture extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_photocaptured(
       `type`: photocaptured,
       listener: TypedEventHandler[VariablePhotoSequenceCapture, VariablePhotoCapturedEventArgs]
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[VariablePhotoSequenceCapture, js.Any]): Unit = js.native
+    def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[VariablePhotoSequenceCapture, Any]): Unit = js.native
     
     /**
       * Asynchronously releases the VariablePhotoSequenceCapture object and resources used by the capture operation.
@@ -78,19 +78,19 @@ object Core {
     var onphotocaptured_Original: TypedEventHandler[VariablePhotoSequenceCapture, VariablePhotoCapturedEventArgs] = js.native
     
     /** Occurs when the VariablePhotoSequenceCapture object stops capturing frames for a variable photo sequence. */
-    def onstopped(ev: js.Any & WinRTEvent[VariablePhotoSequenceCapture]): Unit = js.native
+    def onstopped(ev: Any & WinRTEvent[VariablePhotoSequenceCapture]): Unit = js.native
     /** Occurs when the VariablePhotoSequenceCapture object stops capturing frames for a variable photo sequence. */
     @JSName("onstopped")
-    var onstopped_Original: TypedEventHandler[VariablePhotoSequenceCapture, js.Any] = js.native
+    var onstopped_Original: TypedEventHandler[VariablePhotoSequenceCapture, Any] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_photocaptured(
       `type`: photocaptured,
       listener: TypedEventHandler[VariablePhotoSequenceCapture, VariablePhotoCapturedEventArgs]
     ): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[VariablePhotoSequenceCapture, js.Any]): Unit = js.native
+    def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[VariablePhotoSequenceCapture, Any]): Unit = js.native
     
     /**
       * Starts the capturing of variable photo sequence frames.

@@ -59,6 +59,10 @@ object p5Strings {
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
+  sealed trait char extends StObject
+  inline def char: char = "char".asInstanceOf[char]
+  
+  @js.native
   sealed trait chord extends StObject
   inline def chord: chord = "chord".asInstanceOf[chord]
   
@@ -107,6 +111,10 @@ object p5Strings {
   inline def degrees: degrees = "degrees".asInstanceOf[degrees]
   
   @js.native
+  sealed trait `destination-out` extends StObject
+  inline def `destination-out`: `destination-out` = "destination-out".asInstanceOf[`destination-out`]
+  
+  @js.native
   sealed trait difference extends StObject
   inline def difference: difference = "difference".asInstanceOf[difference]
   
@@ -121,6 +129,10 @@ object p5Strings {
   @js.native
   sealed trait exclusion extends StObject
   inline def exclusion: exclusion = "exclusion".asInstanceOf[exclusion]
+  
+  @js.native
+  sealed trait fallback extends StObject
+  inline def fallback: fallback = "fallback".asInstanceOf[fallback]
   
   @js.native
   sealed trait fill extends StObject
@@ -165,6 +177,10 @@ object p5Strings {
   @js.native
   sealed trait italic extends StObject
   inline def italic: italic = "italic".asInstanceOf[italic]
+  
+  @js.native
+  sealed trait label extends StObject
+  inline def label: label = "label".asInstanceOf[label]
   
   @js.native
   sealed trait landscape extends StObject
@@ -299,6 +315,10 @@ object p5Strings {
   inline def subtract: subtract = "subtract".asInstanceOf[subtract]
   
   @js.native
+  sealed trait tess extends StObject
+  inline def tess: tess = "tess".asInstanceOf[tess]
+  
+  @js.native
   sealed trait text extends StObject
   inline def text: text = "text".asInstanceOf[text]
   
@@ -315,6 +335,10 @@ object p5Strings {
   inline def top: top = "top".asInstanceOf[top]
   
   @js.native
+  sealed trait version extends StObject
+  inline def version: version = "version".asInstanceOf[version]
+  
+  @js.native
   sealed trait video extends StObject
   inline def video: video = "video".asInstanceOf[video]
   
@@ -324,4 +348,8 @@ object p5Strings {
   @js.native
   sealed trait webgl extends StObject
   inline def webgl: webgl = "webgl".asInstanceOf[webgl]
+  
+  @js.native
+  sealed trait word extends StObject
+  inline def word: word = "word".asInstanceOf[word]
 }

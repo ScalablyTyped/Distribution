@@ -15,7 +15,7 @@ object cardFooterMod {
   
   @JSImport("@ant-design/react-native/lib/card/CardFooter", JSImport.Default)
   @js.native
-  class default () extends CardFooter
+  open class default () extends CardFooter
   /* static members */
   object default {
     
@@ -30,8 +30,7 @@ object cardFooterMod {
   }
   
   @js.native
-  trait CardFooter
-    extends Component[CardFooterProps, js.Any, js.Any]
+  trait CardFooter extends Component[CardFooterProps, Any, Any]
   
   trait CardFooterProps
     extends StObject

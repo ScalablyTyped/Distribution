@@ -8,7 +8,7 @@ object Tag {
   
   @JSGlobal("Tag.OpaqueTag")
   @js.native
-  class OpaqueTag[T] ()
+  open class OpaqueTag[T] ()
     extends StObject
        with typings.screeps.Tag.OpaqueTag[T]
   

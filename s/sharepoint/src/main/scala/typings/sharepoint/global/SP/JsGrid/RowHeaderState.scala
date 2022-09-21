@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.JsGrid.RowHeaderState")
 @js.native
-class RowHeaderState protected ()
+open class RowHeaderState protected ()
   extends StObject
      with typings.sharepoint.SP.JsGrid.RowHeaderState {
   def this(

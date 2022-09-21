@@ -1,9 +1,5 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,27 +9,17 @@ trait ParamsResourceOrdersRefund
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The order ID provided to the user when the subscription or in-app order
-    * was purchased.
+    * The order ID provided to the user when the subscription or in-app order was purchased.
     */
   var orderId: js.UndefOr[String] = js.undefined
   
   /**
-    * The package name of the application for which this subscription or in-app
-    * item was purchased (for example, 'com.some.thing').
+    * The package name of the application for which this subscription or in-app item was purchased (for example, 'com.some.thing').
     */
   var packageName: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether to revoke the purchased item. If set to true, access to the
-    * subscription or in-app item will be terminated immediately. If the item
-    * is a recurring subscription, all future payments will also be terminated.
-    * Consumed in-app items need to be handled by developer's app. (optional)
+    * Whether to revoke the purchased item. If set to true, access to the subscription or in-app item will be terminated immediately. If the item is a recurring subscription, all future payments will also be terminated. Consumed in-app items need to be handled by developer's app. (optional).
     */
   var revoke: js.UndefOr[Boolean] = js.undefined
 }
@@ -45,10 +31,6 @@ object ParamsResourceOrdersRefund {
   }
   
   extension [Self <: ParamsResourceOrdersRefund](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     

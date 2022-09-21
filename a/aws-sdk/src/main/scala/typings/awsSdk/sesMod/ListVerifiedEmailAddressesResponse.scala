@@ -24,6 +24,6 @@ object ListVerifiedEmailAddressesResponse {
     
     inline def setVerifiedEmailAddressesUndefined: Self = StObject.set(x, "VerifiedEmailAddresses", js.undefined)
     
-    inline def setVerifiedEmailAddressesVarargs(value: Address*): Self = StObject.set(x, "VerifiedEmailAddresses", js.Array(value :_*))
+    inline def setVerifiedEmailAddressesVarargs(value: Address*): Self = StObject.set(x, "VerifiedEmailAddresses", js.Array(value*))
   }
 }

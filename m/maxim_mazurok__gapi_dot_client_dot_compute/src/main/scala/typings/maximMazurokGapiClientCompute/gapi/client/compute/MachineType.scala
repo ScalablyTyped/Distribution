@@ -69,7 +69,7 @@ object MachineType {
     
     inline def setAcceleratorsUndefined: Self = StObject.set(x, "accelerators", js.undefined)
     
-    inline def setAcceleratorsVarargs(value: GuestAcceleratorCount*): Self = StObject.set(x, "accelerators", js.Array(value :_*))
+    inline def setAcceleratorsVarargs(value: GuestAcceleratorCount*): Self = StObject.set(x, "accelerators", js.Array(value*))
     
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
@@ -123,7 +123,7 @@ object MachineType {
     
     inline def setScratchDisksUndefined: Self = StObject.set(x, "scratchDisks", js.undefined)
     
-    inline def setScratchDisksVarargs(value: DiskGb*): Self = StObject.set(x, "scratchDisks", js.Array(value :_*))
+    inline def setScratchDisksVarargs(value: DiskGb*): Self = StObject.set(x, "scratchDisks", js.Array(value*))
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     

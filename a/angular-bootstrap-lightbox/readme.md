@@ -10,15 +10,13 @@ An AngularJS lightbox built using UI Bootstrap Modal.
 | ------------------ | :-------------: |
 | Full name          | angular-bootstrap-lightbox |
 | Keywords           | angular, lightbox, image, gallery |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 86001 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 13834.333333333334 |
+| # stars            | 310.0 |
 
 ## Links
 - [Homepage](http://compact.github.io/angular-bootstrap-lightbox/)
-- [Bugs](https://github.com/compact/angular-bootstrap-lightbox/issues)
-- [Repository](https://github.com/compact/angular-bootstrap-lightbox)
 - [Npm](https://www.npmjs.com/package/angular-bootstrap-lightbox)
     
 

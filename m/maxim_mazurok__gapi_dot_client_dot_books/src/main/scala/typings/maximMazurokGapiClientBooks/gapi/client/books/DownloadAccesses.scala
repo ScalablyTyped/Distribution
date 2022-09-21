@@ -25,7 +25,7 @@ object DownloadAccesses {
     
     inline def setDownloadAccessListUndefined: Self = StObject.set(x, "downloadAccessList", js.undefined)
     
-    inline def setDownloadAccessListVarargs(value: DownloadAccessRestriction*): Self = StObject.set(x, "downloadAccessList", js.Array(value :_*))
+    inline def setDownloadAccessListVarargs(value: DownloadAccessRestriction*): Self = StObject.set(x, "downloadAccessList", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DrawObject extends StObject {
   
-  val drawObject: js.Any
+  val drawObject: Any
 }
 object DrawObject {
   
-  inline def apply(drawObject: js.Any): DrawObject = {
+  inline def apply(drawObject: Any): DrawObject = {
     val __obj = js.Dynamic.literal(drawObject = drawObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawObject]
   }
   
   extension [Self <: DrawObject](x: Self) {
     
-    inline def setDrawObject(value: js.Any): Self = StObject.set(x, "drawObject", value.asInstanceOf[js.Any])
+    inline def setDrawObject(value: Any): Self = StObject.set(x, "drawObject", value.asInstanceOf[js.Any])
   }
 }

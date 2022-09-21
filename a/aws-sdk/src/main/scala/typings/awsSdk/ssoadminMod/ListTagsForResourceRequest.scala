@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsForResourceRequest extends StObject {
   
   /**
-    * The ARN of the SSO instance under which the operation will be executed. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
+    * The ARN of the IAM Identity Center instance under which the operation will be executed. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
     */
   var InstanceArn: typings.awsSdk.ssoadminMod.InstanceArn
   
@@ -19,11 +19,11 @@ trait ListTagsForResourceRequest extends StObject {
   /**
     * The ARN of the resource with the tags to be listed.
     */
-  var ResourceArn: GeneralArn
+  var ResourceArn: TaggableResourceArn
 }
 object ListTagsForResourceRequest {
   
-  inline def apply(InstanceArn: InstanceArn, ResourceArn: GeneralArn): ListTagsForResourceRequest = {
+  inline def apply(InstanceArn: InstanceArn, ResourceArn: TaggableResourceArn): ListTagsForResourceRequest = {
     val __obj = js.Dynamic.literal(InstanceArn = InstanceArn.asInstanceOf[js.Any], ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForResourceRequest]
   }
@@ -36,6 +36,6 @@ object ListTagsForResourceRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setResourceArn(value: GeneralArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: TaggableResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

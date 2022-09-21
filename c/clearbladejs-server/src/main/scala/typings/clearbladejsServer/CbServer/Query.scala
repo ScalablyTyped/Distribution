@@ -29,7 +29,7 @@ object Query {
     
     inline def setFILTERSUndefined: Self = StObject.set(x, "FILTERS", js.undefined)
     
-    inline def setFILTERSVarargs(value: QueryFilter*): Self = StObject.set(x, "FILTERS", js.Array(value :_*))
+    inline def setFILTERSVarargs(value: QueryFilter*): Self = StObject.set(x, "FILTERS", js.Array(value*))
     
     inline def setPAGENUM(value: Double): Self = StObject.set(x, "PAGENUM", value.asInstanceOf[js.Any])
     
@@ -43,7 +43,7 @@ object Query {
     
     inline def setSELECTCOLUMNSUndefined: Self = StObject.set(x, "SELECTCOLUMNS", js.undefined)
     
-    inline def setSELECTCOLUMNSVarargs(value: String*): Self = StObject.set(x, "SELECTCOLUMNS", js.Array(value :_*))
+    inline def setSELECTCOLUMNSVarargs(value: String*): Self = StObject.set(x, "SELECTCOLUMNS", js.Array(value*))
     
     inline def setSORT(value: QuerySortDirections): Self = StObject.set(x, "SORT", value.asInstanceOf[js.Any])
     

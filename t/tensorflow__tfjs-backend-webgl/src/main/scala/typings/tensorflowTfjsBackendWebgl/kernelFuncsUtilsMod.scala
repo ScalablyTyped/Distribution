@@ -1,9 +1,12 @@
 package typings.tensorflowTfjsBackendWebgl
 
 import typings.tensorflowTfjsBackendWebgl.sharedMod.SimpleBinaryKernelImplCPU
+import typings.tensorflowTfjsBackendWebgl.sharedMod.SimpleUnaryKernelImplCPU
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
+import typings.tensorflowTfjsCore.fusedTypesMod.Activation
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelFunc
+import typings.tensorflowTfjsCore.kernelRegistryMod.NamedAttrMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +33,10 @@ object kernelFuncsUtilsMod {
     hasOpSnippetPackedOpSnippetCheckOutOfBoundsSupportsComplexCpuKernelImplDtype: BinaryKernelFuncConfig
   ): KernelFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(hasOpSnippetPackedOpSnippetCheckOutOfBoundsSupportsComplexCpuKernelImplDtype.asInstanceOf[js.Any]).asInstanceOf[KernelFunc]
   
-  inline def unaryKernelFunc(opSnippet: String): KernelFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFunc")(opSnippet.asInstanceOf[js.Any]).asInstanceOf[KernelFunc]
+  inline def mapActivationToShaderProgram(activation: Activation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mapActivationToShaderProgram")(activation.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def mapActivationToShaderProgram(activation: Activation, packed: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mapActivationToShaderProgram")(activation.asInstanceOf[js.Any], packed.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def unaryKernelFunc(hasOpSnippetPackedOpSnippetCpuKernelImplDtype: UnaryKernelFuncConfig): KernelFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFunc")(hasOpSnippetPackedOpSnippetCpuKernelImplDtype.asInstanceOf[js.Any]).asInstanceOf[KernelFunc]
   
   trait BinaryKernelFuncConfig extends StObject {
     
@@ -60,7 +66,7 @@ object kernelFuncsUtilsMod {
       inline def setCheckOutOfBoundsUndefined: Self = StObject.set(x, "checkOutOfBounds", js.undefined)
       
       inline def setCpuKernelImpl(
-        value: (/* aShape */ js.Array[Double], /* bShape */ js.Array[Double], /* aVals */ TypedArray, /* bVals */ TypedArray, /* dtype */ DataType) => js.Tuple2[TypedArray, js.Array[Double]]
+        value: (/* aShape */ js.Array[Double], /* bShape */ js.Array[Double], /* aVals */ TypedArray | js.Array[String], /* bVals */ TypedArray | js.Array[String], /* dtype */ DataType) => js.Tuple2[TypedArray, js.Array[Double]]
       ): Self = StObject.set(x, "cpuKernelImpl", js.Any.fromFunction5(value))
       
       inline def setCpuKernelImplUndefined: Self = StObject.set(x, "cpuKernelImpl", js.undefined)
@@ -78,6 +84,43 @@ object kernelFuncsUtilsMod {
       inline def setSupportsComplex(value: Boolean): Self = StObject.set(x, "supportsComplex", value.asInstanceOf[js.Any])
       
       inline def setSupportsComplexUndefined: Self = StObject.set(x, "supportsComplex", js.undefined)
+    }
+  }
+  
+  trait UnaryKernelFuncConfig extends StObject {
+    
+    var cpuKernelImpl: js.UndefOr[SimpleUnaryKernelImplCPU] = js.undefined
+    
+    var dtype: js.UndefOr[DataType] = js.undefined
+    
+    var opSnippet: String
+    
+    var packedOpSnippet: js.UndefOr[String] = js.undefined
+  }
+  object UnaryKernelFuncConfig {
+    
+    inline def apply(opSnippet: String): UnaryKernelFuncConfig = {
+      val __obj = js.Dynamic.literal(opSnippet = opSnippet.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UnaryKernelFuncConfig]
+    }
+    
+    extension [Self <: UnaryKernelFuncConfig](x: Self) {
+      
+      inline def setCpuKernelImpl(
+        value: (/* values */ TypedArray, /* dtype */ DataType, /* attrs */ js.UndefOr[NamedAttrMap]) => TypedArray
+      ): Self = StObject.set(x, "cpuKernelImpl", js.Any.fromFunction3(value))
+      
+      inline def setCpuKernelImplUndefined: Self = StObject.set(x, "cpuKernelImpl", js.undefined)
+      
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
+      
+      inline def setOpSnippet(value: String): Self = StObject.set(x, "opSnippet", value.asInstanceOf[js.Any])
+      
+      inline def setPackedOpSnippet(value: String): Self = StObject.set(x, "packedOpSnippet", value.asInstanceOf[js.Any])
+      
+      inline def setPackedOpSnippetUndefined: Self = StObject.set(x, "packedOpSnippet", js.undefined)
     }
   }
 }

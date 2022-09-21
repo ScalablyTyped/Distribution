@@ -1,6 +1,5 @@
 package typings.devexpressWeb.global
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDateNavigatorDayCellCustomHighlightEventArgs")
 @js.native
-class ASPxClientDateNavigatorDayCellCustomHighlightEventArgs protected ()
+open class ASPxClientDateNavigatorDayCellCustomHighlightEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDateNavigatorDayCellCustomHighlightEventArgs {
   /**
@@ -20,8 +19,8 @@ class ASPxClientDateNavigatorDayCellCustomHighlightEventArgs protected ()
     * @param appointments An array of ASPxClientAppointment objects that the highlighted day cell contains.
     */
   def this(
-    htmlElement: js.Any,
-    date: Date,
+    htmlElement: Any,
+    date: js.Date,
     appointments: js.Array[typings.devexpressWeb.ASPxClientAppointment]
   ) = this()
   
@@ -35,11 +34,11 @@ class ASPxClientDateNavigatorDayCellCustomHighlightEventArgs protected ()
     * Provides access to the date object of the processed cell.
     */
   /* CompleteClass */
-  var date: Date = js.native
+  var date: js.Date = js.native
   
   /**
     * Gets the HTML element that the event was triggered on.
     */
   /* CompleteClass */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any = js.native
 }

@@ -17,7 +17,7 @@ trait List extends StObject {
   var nestingLevel: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.NestingLevel}
-    */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.List & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.List & TopLevel[Any]
   ] = js.undefined
 }
 object List {
@@ -36,7 +36,7 @@ object List {
     inline def setNestingLevel(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.NestingLevel}
-      */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.List & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.List & TopLevel[Any]
     ): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
     
     inline def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)

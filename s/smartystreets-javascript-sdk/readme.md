@@ -1,19 +1,19 @@
 
 # Scala.js typings for smartystreets-javascript-sdk
 
-Typings are for version 1.5
+Typings are for version 1.6
 
 ## Library description:
-Quick and easy SmartyStreets address validation.
+Quick and easy Smarty address validation.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | smartystreets-javascript-sdk |
-| Keywords           | smartystreets, address, validation, verification, verify, validate, street-address, geocoding, addresses, zipcode, autocomplete, autosuggest, suggestions, international, http, sdk |
-| # releases         | 18 |
-| # dependents       | 6 |
-| # downloads        | 491104 |
-| # stars            | 0 |
+| Keywords           | smarty, smartystreets, address, validation, verification, verify, validate, street-address, geocoding, addresses, zipcode, autocomplete, autosuggest, suggestions, international, http, sdk |
+| # releases         | 43 |
+| # dependents       | 0.0 |
+| # downloads        | 202826.66666666666 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](https://github.com/smartystreets/smartystreets-javascript-sdk#readme)

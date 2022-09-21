@@ -1,7 +1,7 @@
 
 # Scala.js typings for extract-stack
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Extract the actual stack of an error
@@ -11,14 +11,11 @@ Extract the actual stack of an error
 | Full name          | extract-stack |
 | Keywords           | extract, stack, error, trace, traces, lines, parse, get |
 | # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 41993764 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 7515151.666666667 |
+| # stars            | 60.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/extract-stack#readme)
-- [Bugs](https://github.com/sindresorhus/extract-stack/issues)
-- [Repository](https://github.com/sindresorhus/extract-stack)
 - [Npm](https://www.npmjs.com/package/extract-stack)
     
 

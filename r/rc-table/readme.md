@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-table
 
-Typings are for version 7.11.2
+Typings are for version 7.27.2
 
 ## Library description:
 table ui component for react
@@ -10,10 +10,10 @@ table ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-table |
 | Keywords           | react, react-table, table, component, ui |
-| # releases         | 155 |
-| # dependents       | 286 |
-| # downloads        | 21814196 |
-| # stars            | 2 |
+| # releases         | 64 |
+| # dependents       | 0.0 |
+| # downloads        | 3547615.6666666665 |
+| # stars            | 1049.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/table)

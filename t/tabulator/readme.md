@@ -11,9 +11,9 @@ Put data into tables
 | Full name          | tabulator |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 20837 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 731.6666666666666 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/codenautas/tabulator#readme)

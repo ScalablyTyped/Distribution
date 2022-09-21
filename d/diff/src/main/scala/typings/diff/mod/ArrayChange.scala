@@ -37,6 +37,6 @@ object ArrayChange {
     
     inline def setValue(value: js.Array[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: T*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: T*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

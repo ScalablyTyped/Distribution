@@ -10,15 +10,12 @@ Make your own error types!
 | ------------------ | :-------------: |
 | Full name          | make-error |
 | Keywords           | create, custom, derive, error, errors, extend, extending, extension, factory, inherit, make, subclass |
-| # releases         | 2 |
-| # dependents       | 148 |
-| # downloads        | 319987925 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.4800327333333336E7 |
+| # stars            | 63.0 |
 
 ## Links
-- [Homepage](https://github.com/JsCommunity/make-error)
-- [Bugs](https://github.com/JsCommunity/make-error/issues)
-- [Repository](https://github.com/JsCommunity/make-error)
 - [Npm](https://www.npmjs.com/package/make-error)
     
 

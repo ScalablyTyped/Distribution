@@ -59,7 +59,7 @@ trait XPropertySet
     * @throws UnknownPropertyException if the property does not exist.
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def getPropertyValue(PropertyName: String): js.Any
+  def getPropertyValue(PropertyName: String): Any
   
   /**
     * removes an {@link XPropertyChangeListener} from the listener list.
@@ -86,7 +86,7 @@ trait XPropertySet
     * the property value can be changed.
     * @throws com::sun::star::beans::PropertyVetoException if the property is read-only or vetoable and one of the listeners throws this exception because of a
     */
-  def setPropertyValue(aPropertyName: String, aValue: js.Any): Unit
+  def setPropertyValue(aPropertyName: String, aValue: Any): Unit
 }
 object XPropertySet {
   
@@ -96,12 +96,12 @@ object XPropertySet {
     addPropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
-    queryInterface: `type` => js.Any,
+    getPropertyValue: String => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-    setPropertyValue: (String, js.Any) => Unit
+    setPropertyValue: (String, Any) => Unit
   ): XPropertySet = {
     val __obj = js.Dynamic.literal(PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[XPropertySet]
@@ -115,7 +115,7 @@ object XPropertySet {
     
     inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
-    inline def setGetPropertyValue(value: String => js.Any): Self = StObject.set(x, "getPropertyValue", js.Any.fromFunction1(value))
+    inline def setGetPropertyValue(value: String => Any): Self = StObject.set(x, "getPropertyValue", js.Any.fromFunction1(value))
     
     inline def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
     
@@ -123,6 +123,6 @@ object XPropertySet {
     
     inline def setRemoveVetoableChangeListener(value: (String, XVetoableChangeListener) => Unit): Self = StObject.set(x, "removeVetoableChangeListener", js.Any.fromFunction2(value))
     
-    inline def setSetPropertyValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "setPropertyValue", js.Any.fromFunction2(value))
+    inline def setSetPropertyValue(value: (String, Any) => Unit): Self = StObject.set(x, "setPropertyValue", js.Any.fromFunction2(value))
   }
 }

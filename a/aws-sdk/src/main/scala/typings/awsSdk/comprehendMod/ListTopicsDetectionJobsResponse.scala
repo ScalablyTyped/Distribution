@@ -33,6 +33,6 @@ object ListTopicsDetectionJobsResponse {
     
     inline def setTopicsDetectionJobPropertiesListUndefined: Self = StObject.set(x, "TopicsDetectionJobPropertiesList", js.undefined)
     
-    inline def setTopicsDetectionJobPropertiesListVarargs(value: TopicsDetectionJobProperties*): Self = StObject.set(x, "TopicsDetectionJobPropertiesList", js.Array(value :_*))
+    inline def setTopicsDetectionJobPropertiesListVarargs(value: TopicsDetectionJobProperties*): Self = StObject.set(x, "TopicsDetectionJobPropertiesList", js.Array(value*))
   }
 }

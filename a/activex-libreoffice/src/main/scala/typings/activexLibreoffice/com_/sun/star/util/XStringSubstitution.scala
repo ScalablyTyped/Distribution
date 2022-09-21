@@ -54,7 +54,7 @@ object XStringSubstitution {
   inline def apply(
     acquire: () => Unit,
     getSubstituteVariableValue: String => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     reSubstituteVariables: String => String,
     release: () => Unit,
     substituteVariables: (String, Boolean) => String

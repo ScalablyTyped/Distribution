@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "SpotLight")
 @js.native
-class SpotLight protected ()
+open class SpotLight protected ()
   extends typings.babylonjs.lightsIndexMod.SpotLight {
   /**
     * Creates a SpotLight object in the scene. A spot light is a simply light oriented cone.
@@ -37,11 +37,11 @@ object SpotLight {
   
   @JSImport("babylonjs/index", "SpotLight._IsProceduralTexture")
   @js.native
-  def _IsProceduralTexture: js.Any = js.native
-  inline def _IsProceduralTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsProceduralTexture")(x.asInstanceOf[js.Any])
+  def _IsProceduralTexture: Any = js.native
+  inline def _IsProceduralTexture_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsProceduralTexture")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/index", "SpotLight._IsTexture")
   @js.native
-  def _IsTexture: js.Any = js.native
-  inline def _IsTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsTexture")(x.asInstanceOf[js.Any])
+  def _IsTexture: Any = js.native
+  inline def _IsTexture_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsTexture")(x.asInstanceOf[js.Any])
 }

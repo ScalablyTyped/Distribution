@@ -4,7 +4,7 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDfareporting.anon.CallbackCreativeFieldId
 import typings.maximMazurokGapiClientDfareporting.anon.CreativeFieldId
 import typings.maximMazurokGapiClientDfareporting.anon.CreativeFieldIdFields
-import typings.maximMazurokGapiClientDfareporting.anon.QuotaUserResource
+import typings.maximMazurokGapiClientDfareporting.anon.ResourceUploadType
 import typings.maximMazurokGapiClientDfareporting.anon.SortField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,7 +31,7 @@ trait CreativeFieldValuesResource extends StObject {
   
   def patch(request: CreativeFieldId, body: CreativeFieldValue): Request[CreativeFieldValue] = js.native
   /** Updates an existing creative field value. This method supports patch semantics. */
-  def patch(request: QuotaUserResource): Request[CreativeFieldValue] = js.native
+  def patch(request: ResourceUploadType): Request[CreativeFieldValue] = js.native
   
   /** Updates an existing creative field value. */
   def update(request: CallbackCreativeFieldId): Request[CreativeFieldValue] = js.native

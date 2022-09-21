@@ -1,5 +1,6 @@
 package typings.luminoVirtualdom
 
+import typings.luminoVirtualdom.mod.ARIAAttrNames
 import typings.luminoVirtualdom.mod.CSSPropertyNames
 import typings.luminoVirtualdom.mod.ElementAttrNames
 import org.scalablytyped.runtime.StObject
@@ -133,6 +134,294 @@ object luminoVirtualdomStrings {
     extends StObject
        with CSSPropertyNames
   inline def animationTimingFunction: animationTimingFunction = "animationTimingFunction".asInstanceOf[animationTimingFunction]
+  
+  @js.native
+  sealed trait `aria-activedescendant`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-activedescendant`: `aria-activedescendant` = "aria-activedescendant".asInstanceOf[`aria-activedescendant`]
+  
+  @js.native
+  sealed trait `aria-atomic`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-atomic`: `aria-atomic` = "aria-atomic".asInstanceOf[`aria-atomic`]
+  
+  @js.native
+  sealed trait `aria-autocomplete`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-autocomplete`: `aria-autocomplete` = "aria-autocomplete".asInstanceOf[`aria-autocomplete`]
+  
+  @js.native
+  sealed trait `aria-busy`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-busy`: `aria-busy` = "aria-busy".asInstanceOf[`aria-busy`]
+  
+  @js.native
+  sealed trait `aria-checked`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-checked`: `aria-checked` = "aria-checked".asInstanceOf[`aria-checked`]
+  
+  @js.native
+  sealed trait `aria-colcount`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-colcount`: `aria-colcount` = "aria-colcount".asInstanceOf[`aria-colcount`]
+  
+  @js.native
+  sealed trait `aria-colindex`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-colindex`: `aria-colindex` = "aria-colindex".asInstanceOf[`aria-colindex`]
+  
+  @js.native
+  sealed trait `aria-colspan`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-colspan`: `aria-colspan` = "aria-colspan".asInstanceOf[`aria-colspan`]
+  
+  @js.native
+  sealed trait `aria-controls`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-controls`: `aria-controls` = "aria-controls".asInstanceOf[`aria-controls`]
+  
+  @js.native
+  sealed trait `aria-current`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-current`: `aria-current` = "aria-current".asInstanceOf[`aria-current`]
+  
+  @js.native
+  sealed trait `aria-describedby`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-describedby`: `aria-describedby` = "aria-describedby".asInstanceOf[`aria-describedby`]
+  
+  @js.native
+  sealed trait `aria-details`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-details`: `aria-details` = "aria-details".asInstanceOf[`aria-details`]
+  
+  @js.native
+  sealed trait `aria-dialog`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-dialog`: `aria-dialog` = "aria-dialog".asInstanceOf[`aria-dialog`]
+  
+  @js.native
+  sealed trait `aria-disabled`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-disabled`: `aria-disabled` = "aria-disabled".asInstanceOf[`aria-disabled`]
+  
+  @js.native
+  sealed trait `aria-dropeffect`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-dropeffect`: `aria-dropeffect` = "aria-dropeffect".asInstanceOf[`aria-dropeffect`]
+  
+  @js.native
+  sealed trait `aria-errormessage`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-errormessage`: `aria-errormessage` = "aria-errormessage".asInstanceOf[`aria-errormessage`]
+  
+  @js.native
+  sealed trait `aria-expanded`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-expanded`: `aria-expanded` = "aria-expanded".asInstanceOf[`aria-expanded`]
+  
+  @js.native
+  sealed trait `aria-flowto`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-flowto`: `aria-flowto` = "aria-flowto".asInstanceOf[`aria-flowto`]
+  
+  @js.native
+  sealed trait `aria-grabbed`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-grabbed`: `aria-grabbed` = "aria-grabbed".asInstanceOf[`aria-grabbed`]
+  
+  @js.native
+  sealed trait `aria-haspopup`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-haspopup`: `aria-haspopup` = "aria-haspopup".asInstanceOf[`aria-haspopup`]
+  
+  @js.native
+  sealed trait `aria-hidden`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-hidden`: `aria-hidden` = "aria-hidden".asInstanceOf[`aria-hidden`]
+  
+  @js.native
+  sealed trait `aria-invalid`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-invalid`: `aria-invalid` = "aria-invalid".asInstanceOf[`aria-invalid`]
+  
+  @js.native
+  sealed trait `aria-keyshortcuts`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-keyshortcuts`: `aria-keyshortcuts` = "aria-keyshortcuts".asInstanceOf[`aria-keyshortcuts`]
+  
+  @js.native
+  sealed trait `aria-label`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-label`: `aria-label` = "aria-label".asInstanceOf[`aria-label`]
+  
+  @js.native
+  sealed trait `aria-labelledby`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-labelledby`: `aria-labelledby` = "aria-labelledby".asInstanceOf[`aria-labelledby`]
+  
+  @js.native
+  sealed trait `aria-level`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-level`: `aria-level` = "aria-level".asInstanceOf[`aria-level`]
+  
+  @js.native
+  sealed trait `aria-live`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-live`: `aria-live` = "aria-live".asInstanceOf[`aria-live`]
+  
+  @js.native
+  sealed trait `aria-multiline`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-multiline`: `aria-multiline` = "aria-multiline".asInstanceOf[`aria-multiline`]
+  
+  @js.native
+  sealed trait `aria-multiselectable`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-multiselectable`: `aria-multiselectable` = "aria-multiselectable".asInstanceOf[`aria-multiselectable`]
+  
+  @js.native
+  sealed trait `aria-orientation`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-orientation`: `aria-orientation` = "aria-orientation".asInstanceOf[`aria-orientation`]
+  
+  @js.native
+  sealed trait `aria-owns`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-owns`: `aria-owns` = "aria-owns".asInstanceOf[`aria-owns`]
+  
+  @js.native
+  sealed trait `aria-placeholder`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-placeholder`: `aria-placeholder` = "aria-placeholder".asInstanceOf[`aria-placeholder`]
+  
+  @js.native
+  sealed trait `aria-posinset`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-posinset`: `aria-posinset` = "aria-posinset".asInstanceOf[`aria-posinset`]
+  
+  @js.native
+  sealed trait `aria-pressed`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-pressed`: `aria-pressed` = "aria-pressed".asInstanceOf[`aria-pressed`]
+  
+  @js.native
+  sealed trait `aria-readonly`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-readonly`: `aria-readonly` = "aria-readonly".asInstanceOf[`aria-readonly`]
+  
+  @js.native
+  sealed trait `aria-relevant`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-relevant`: `aria-relevant` = "aria-relevant".asInstanceOf[`aria-relevant`]
+  
+  @js.native
+  sealed trait `aria-required`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-required`: `aria-required` = "aria-required".asInstanceOf[`aria-required`]
+  
+  @js.native
+  sealed trait `aria-roledescription`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-roledescription`: `aria-roledescription` = "aria-roledescription".asInstanceOf[`aria-roledescription`]
+  
+  @js.native
+  sealed trait `aria-rowcount`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-rowcount`: `aria-rowcount` = "aria-rowcount".asInstanceOf[`aria-rowcount`]
+  
+  @js.native
+  sealed trait `aria-rowindex`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-rowindex`: `aria-rowindex` = "aria-rowindex".asInstanceOf[`aria-rowindex`]
+  
+  @js.native
+  sealed trait `aria-rowspan`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-rowspan`: `aria-rowspan` = "aria-rowspan".asInstanceOf[`aria-rowspan`]
+  
+  @js.native
+  sealed trait `aria-selected`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-selected`: `aria-selected` = "aria-selected".asInstanceOf[`aria-selected`]
+  
+  @js.native
+  sealed trait `aria-setsize`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-setsize`: `aria-setsize` = "aria-setsize".asInstanceOf[`aria-setsize`]
+  
+  @js.native
+  sealed trait `aria-sort`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-sort`: `aria-sort` = "aria-sort".asInstanceOf[`aria-sort`]
+  
+  @js.native
+  sealed trait `aria-valuemax`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-valuemax`: `aria-valuemax` = "aria-valuemax".asInstanceOf[`aria-valuemax`]
+  
+  @js.native
+  sealed trait `aria-valuemin`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-valuemin`: `aria-valuemin` = "aria-valuemin".asInstanceOf[`aria-valuemin`]
+  
+  @js.native
+  sealed trait `aria-valuenow`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-valuenow`: `aria-valuenow` = "aria-valuenow".asInstanceOf[`aria-valuenow`]
+  
+  @js.native
+  sealed trait `aria-valuetext`
+    extends StObject
+       with ARIAAttrNames
+  inline def `aria-valuetext`: `aria-valuetext` = "aria-valuetext".asInstanceOf[`aria-valuetext`]
   
   @js.native
   sealed trait autocomplete
@@ -1722,6 +2011,12 @@ object luminoVirtualdomStrings {
     extends StObject
        with CSSPropertyNames
   inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
+  sealed trait role
+    extends StObject
+       with ARIAAttrNames
+  inline def role: role = "role".asInstanceOf[role]
   
   @js.native
   sealed trait rows

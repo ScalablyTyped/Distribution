@@ -10,16 +10,16 @@ object settingsMod {
   
   @JSImport("@nodelib/fs.stat/out/settings", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Settings {
     def this(_options: Options) = this()
     
     /* private */ /* CompleteClass */
-    var _getValue: js.Any = js.native
+    var _getValue: Any = js.native
     
     /* private */ /* CompleteClass */
-    override val _options: js.Any = js.native
+    override val _options: Any = js.native
     
     /* CompleteClass */
     override val followSymbolicLink: Boolean = js.native
@@ -73,9 +73,9 @@ object settingsMod {
   
   trait Settings extends StObject {
     
-    /* private */ var _getValue: js.Any
+    /* private */ var _getValue: Any
     
-    /* private */ val _options: js.Any
+    /* private */ val _options: Any
     
     val followSymbolicLink: Boolean
     
@@ -88,8 +88,8 @@ object settingsMod {
   object Settings {
     
     inline def apply(
-      _getValue: js.Any,
-      _options: js.Any,
+      _getValue: Any,
+      _options: Any,
       followSymbolicLink: Boolean,
       fs: FileSystemAdapter,
       markSymbolicLink: Boolean,
@@ -109,9 +109,9 @@ object settingsMod {
       
       inline def setThrowErrorOnBrokenSymbolicLink(value: Boolean): Self = StObject.set(x, "throwErrorOnBrokenSymbolicLink", value.asInstanceOf[js.Any])
       
-      inline def set_getValue(value: js.Any): Self = StObject.set(x, "_getValue", value.asInstanceOf[js.Any])
+      inline def set_getValue(value: Any): Self = StObject.set(x, "_getValue", value.asInstanceOf[js.Any])
       
-      inline def set_options(value: js.Any): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+      inline def set_options(value: Any): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
     }
   }
 }

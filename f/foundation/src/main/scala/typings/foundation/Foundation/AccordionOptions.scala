@@ -9,7 +9,7 @@ trait AccordionOptions extends StObject {
   
   var active_class: js.UndefOr[String] = js.undefined
   
-  var callback: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var callback: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var content_class: js.UndefOr[String] = js.undefined
   
@@ -30,7 +30,7 @@ object AccordionOptions {
     
     inline def setActive_classUndefined: Self = StObject.set(x, "active_class", js.undefined)
     
-    inline def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    inline def setCallback(value: () => Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     

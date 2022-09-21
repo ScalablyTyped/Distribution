@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Matter.Runner")
 @js.native
-class Runner ()
+open class Runner ()
   extends typings.matterJs.mod.Runner
 /* static members */
 object Runner {

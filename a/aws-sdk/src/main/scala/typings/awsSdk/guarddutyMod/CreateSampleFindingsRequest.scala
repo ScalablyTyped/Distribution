@@ -31,6 +31,6 @@ object CreateSampleFindingsRequest {
     
     inline def setFindingTypesUndefined: Self = StObject.set(x, "FindingTypes", js.undefined)
     
-    inline def setFindingTypesVarargs(value: FindingType*): Self = StObject.set(x, "FindingTypes", js.Array(value :_*))
+    inline def setFindingTypesVarargs(value: FindingType*): Self = StObject.set(x, "FindingTypes", js.Array(value*))
   }
 }

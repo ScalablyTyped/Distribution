@@ -26,7 +26,7 @@ object XDatabaseParameterListener {
     acquire: () => Unit,
     approveParameter: DatabaseParameterEvent => Boolean,
     disposing: EventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDatabaseParameterListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), approveParameter = js.Any.fromFunction1(approveParameter), disposing = js.Any.fromFunction1(disposing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

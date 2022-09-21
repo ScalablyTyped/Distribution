@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AggregateComplianceCount extends StObject {
   
   /**
-    * The number of compliant and noncompliant AWS Config rules.
+    * The number of compliant and noncompliant Config rules.
     */
   var ComplianceSummary: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceSummary] = js.undefined
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "BufferUtils")
 @js.native
-class BufferUtils ()
+open class BufferUtils ()
   extends typings.wonderJs.bufferUtilsMod.BufferUtils
 /* static members */
 object BufferUtils {
@@ -15,5 +15,5 @@ object BufferUtils {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def convertArrayToArrayBuffer(`type`: typings.wonderJs.evariabletypeMod.EVariableType, value: js.Array[js.Any]): typings.wonderJs.arrayBufferMod.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convertArrayToArrayBuffer")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.arrayBufferMod.ArrayBuffer]
+  inline def convertArrayToArrayBuffer(`type`: typings.wonderJs.evariabletypeMod.EVariableType, value: js.Array[Any]): typings.wonderJs.arrayBufferMod.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convertArrayToArrayBuffer")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.arrayBufferMod.ArrayBuffer]
 }

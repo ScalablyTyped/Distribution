@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteCostCategoryDefinitionResponse extends StObject {
   
   /**
-    *  The unique identifier for your Cost Category. 
+    * The unique identifier for your Cost Category. 
     */
   var CostCategoryArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    *  The effective end date of the Cost Category as a result of deleting it. No costs after this date will be categorized by the deleted Cost Category. 
+    * The effective end date of the Cost Category as a result of deleting it. No costs after this date is categorized by the deleted Cost Category. 
     */
   var EffectiveEnd: js.UndefOr[ZonedDateTime] = js.undefined
 }

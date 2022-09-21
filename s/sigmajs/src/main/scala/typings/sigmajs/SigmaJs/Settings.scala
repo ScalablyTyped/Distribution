@@ -9,7 +9,7 @@ trait Settings extends StObject {
   // Animation settings
   var animationsTime: js.UndefOr[Double] = js.undefined
   
-  var autoRescale: js.UndefOr[js.Any] = js.undefined
+  var autoRescale: js.UndefOr[Any] = js.undefined
   
   // Global settings
   var autoResize: js.UndefOr[Boolean] = js.undefined
@@ -188,7 +188,7 @@ object Settings {
     
     inline def setAnimationsTimeUndefined: Self = StObject.set(x, "animationsTime", js.undefined)
     
-    inline def setAutoRescale(value: js.Any): Self = StObject.set(x, "autoRescale", value.asInstanceOf[js.Any])
+    inline def setAutoRescale(value: Any): Self = StObject.set(x, "autoRescale", value.asInstanceOf[js.Any])
     
     inline def setAutoRescaleUndefined: Self = StObject.set(x, "autoRescale", js.undefined)
     

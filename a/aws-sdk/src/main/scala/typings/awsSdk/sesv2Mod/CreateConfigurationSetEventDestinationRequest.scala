@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateConfigurationSetEventDestinationRequest extends StObject {
   
   /**
-    * The name of the configuration set that you want to add an event destination to.
+    * The name of the configuration set .
     */
   var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName
   

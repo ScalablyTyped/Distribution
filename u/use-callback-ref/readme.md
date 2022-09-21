@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-callback-ref
 
-Typings are for version 1.2.4
+Typings are for version 1.3.0
 
 ## Library description:
 The same useRef, but with callback
@@ -10,10 +10,10 @@ The same useRef, but with callback
 | ------------------ | :-------------: |
 | Full name          | use-callback-ref |
 | Keywords           | react, hoot, useRef, createRef |
-| # releases         | 11 |
-| # dependents       | 8 |
-| # downloads        | 61863542 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 6838349.333333333 |
+| # stars            | 242.0 |
 
 ## Links
 - [Homepage](https://github.com/theKashey/use-callback-ref#readme)

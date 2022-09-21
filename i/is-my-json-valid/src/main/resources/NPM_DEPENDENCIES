@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-my-json-valid" : "2.20.5"
+      "is-my-json-valid" : "2.20.6"
     }
   ],
   "test-dependencies" : [
     {
-      "is-my-json-valid" : "2.20.5"
+      "is-my-json-valid" : "2.20.6"
     }
   ],
   "compile-devDependencies" : [

@@ -53,7 +53,7 @@ object notificationNotificationMod {
   
   @JSImport("rbx/elements/notification/notification", "Notification")
   @js.native
-  val Notification: ForwardRefAsExoticComponent[NotificationProps, ElementType[js.Any]] = js.native
+  val Notification: ForwardRefAsExoticComponent[NotificationProps, ElementType[Any]] = js.native
   
   trait NotificationModifierProps extends StObject {
     

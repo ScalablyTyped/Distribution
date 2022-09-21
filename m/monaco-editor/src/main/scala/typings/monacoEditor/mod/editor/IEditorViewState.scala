@@ -13,7 +13,7 @@ trait IEditorViewState extends StObject
 object IEditorViewState {
   
   inline def ICodeEditorViewState(
-    contributionsState: StringDictionary[js.Any],
+    contributionsState: StringDictionary[Any],
     cursorState: js.Array[ICursorState],
     viewState: IViewState
   ): typings.monacoEditor.mod.editor.ICodeEditorViewState = {

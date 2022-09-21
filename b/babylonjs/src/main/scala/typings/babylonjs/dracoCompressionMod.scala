@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.babylonjs.anon.FallbackUrl
 import typings.babylonjs.meshVertexDataMod.VertexData
 import typings.babylonjs.sceneMod.IDisposable
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,25 +16,38 @@ object dracoCompressionMod {
     * Constructor
     * @param numWorkers The number of workers for async operations. Specify `0` to disable web workers and run synchronously in the current context.
     */
-  class DracoCompression ()
+  open class DracoCompression ()
     extends StObject
        with IDisposable {
     def this(numWorkers: Double) = this()
     
-    /* private */ var _decoderModulePromise: js.Any = js.native
+    /* private */ var _decoderModulePromise: Any = js.native
     
-    /* private */ var _workerPoolPromise: js.Any = js.native
+    /* private */ var _workerPoolPromise: Any = js.native
     
     /**
       * Decode Draco compressed mesh data to vertex data.
       * @param data The ArrayBuffer or ArrayBufferView for the Draco compression data
       * @param attributes A map of attributes from vertex buffer kinds to Draco unique ids
+      * @param dividers a list of optional dividers for normalization
       * @returns A promise that resolves with the decoded vertex data
       */
-    def decodeMeshAsync(data: ArrayBuffer): js.Promise[VertexData] = js.native
-    def decodeMeshAsync(data: ArrayBufferView): js.Promise[VertexData] = js.native
-    def decodeMeshAsync(data: ArrayBufferView, attributes: StringDictionary[Double]): js.Promise[VertexData] = js.native
-    def decodeMeshAsync(data: ArrayBuffer, attributes: StringDictionary[Double]): js.Promise[VertexData] = js.native
+    def decodeMeshAsync(data: js.typedarray.ArrayBuffer): js.Promise[VertexData] = js.native
+    def decodeMeshAsync(data: js.typedarray.ArrayBufferView): js.Promise[VertexData] = js.native
+    def decodeMeshAsync(data: js.typedarray.ArrayBufferView, attributes: StringDictionary[Double]): js.Promise[VertexData] = js.native
+    def decodeMeshAsync(
+      data: js.typedarray.ArrayBufferView,
+      attributes: StringDictionary[Double],
+      dividers: StringDictionary[Double]
+    ): js.Promise[VertexData] = js.native
+    def decodeMeshAsync(data: js.typedarray.ArrayBufferView, attributes: Unit, dividers: StringDictionary[Double]): js.Promise[VertexData] = js.native
+    def decodeMeshAsync(data: js.typedarray.ArrayBuffer, attributes: StringDictionary[Double]): js.Promise[VertexData] = js.native
+    def decodeMeshAsync(
+      data: js.typedarray.ArrayBuffer,
+      attributes: StringDictionary[Double],
+      dividers: StringDictionary[Double]
+    ): js.Promise[VertexData] = js.native
+    def decodeMeshAsync(data: js.typedarray.ArrayBuffer, attributes: Unit, dividers: StringDictionary[Double]): js.Promise[VertexData] = js.native
     
     /**
       * Releases all held resources
@@ -78,13 +89,13 @@ object dracoCompressionMod {
     
     @JSImport("babylonjs/Meshes/Compression/dracoCompression", "DracoCompression.GetDefaultNumWorkers")
     @js.native
-    def GetDefaultNumWorkers: js.Any = js.native
-    inline def GetDefaultNumWorkers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDefaultNumWorkers")(x.asInstanceOf[js.Any])
+    def GetDefaultNumWorkers: Any = js.native
+    inline def GetDefaultNumWorkers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDefaultNumWorkers")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Meshes/Compression/dracoCompression", "DracoCompression._Default")
     @js.native
-    def _Default: js.Any = js.native
-    inline def _Default_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Default")(x.asInstanceOf[js.Any])
+    def _Default: Any = js.native
+    inline def _Default_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Default")(x.asInstanceOf[js.Any])
   }
   
   trait IDracoCompressionConfiguration extends StObject {

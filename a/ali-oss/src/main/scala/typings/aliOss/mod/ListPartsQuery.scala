@@ -6,12 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ListPartsQuery extends StObject {
   
-  // Starting position of a specific list. A part is listed only when the part number is greater than the value of this parameter.
+  /** Specify the encoding of the returned content and the encoding type. Optional value: url */
   var `encoding-type`: String
   
+  /** The maximum part number in the response of the OSS. default value: 1000. */
   var `max-parts`: Double
   
-  // The maximum part number in the response of the OSS. default value: 1000.
+  /** Starting position of a specific list. A part is listed only when the part number is greater than the value of this parameter. */
   var `part-number-marker`: Double
 }
 object ListPartsQuery {

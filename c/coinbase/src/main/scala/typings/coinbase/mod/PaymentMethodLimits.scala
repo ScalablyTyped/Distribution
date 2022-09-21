@@ -30,18 +30,18 @@ object PaymentMethodLimits {
     
     inline def setBuy(value: js.Array[PaymentMethodLimit]): Self = StObject.set(x, "buy", value.asInstanceOf[js.Any])
     
-    inline def setBuyVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "buy", js.Array(value :_*))
+    inline def setBuyVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "buy", js.Array(value*))
     
     inline def setDeposit(value: js.Array[PaymentMethodLimit]): Self = StObject.set(x, "deposit", value.asInstanceOf[js.Any])
     
-    inline def setDepositVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "deposit", js.Array(value :_*))
+    inline def setDepositVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "deposit", js.Array(value*))
     
     inline def setInstant_buy(value: js.Array[PaymentMethodLimit]): Self = StObject.set(x, "instant_buy", value.asInstanceOf[js.Any])
     
-    inline def setInstant_buyVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "instant_buy", js.Array(value :_*))
+    inline def setInstant_buyVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "instant_buy", js.Array(value*))
     
     inline def setSell(value: js.Array[PaymentMethodLimit]): Self = StObject.set(x, "sell", value.asInstanceOf[js.Any])
     
-    inline def setSellVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "sell", js.Array(value :_*))
+    inline def setSellVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "sell", js.Array(value*))
   }
 }

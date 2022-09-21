@@ -9,7 +9,7 @@ object ssao2ConfigurationMod {
   
   @JSImport("babylonjs/Rendering/ssao2Configuration", "SSAO2Configuration")
   @js.native
-  class SSAO2Configuration ()
+  open class SSAO2Configuration ()
     extends StObject
        with PrePassEffectConfiguration {
     

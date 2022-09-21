@@ -34,7 +34,7 @@ object DescribeBrokerEngineTypesResponse {
     
     inline def setBrokerEngineTypesUndefined: Self = StObject.set(x, "BrokerEngineTypes", js.undefined)
     
-    inline def setBrokerEngineTypesVarargs(value: BrokerEngineType*): Self = StObject.set(x, "BrokerEngineTypes", js.Array(value :_*))
+    inline def setBrokerEngineTypesVarargs(value: BrokerEngineType*): Self = StObject.set(x, "BrokerEngineTypes", js.Array(value*))
     
     inline def setMaxResults(value: integerMin5Max100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

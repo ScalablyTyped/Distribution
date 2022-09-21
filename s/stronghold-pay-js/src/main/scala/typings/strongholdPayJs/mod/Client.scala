@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("stronghold-pay-js", "Client")
 @js.native
-class Client protected ()
+open class Client protected ()
   extends typings.strongholdPayJs.mod.global.Stronghold.Client {
   def this(options: ClientOptions) = this()
 }

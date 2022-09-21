@@ -10,7 +10,7 @@ trait CPlugins extends StObject {
   /* private */ @JSName("MSHTML.CPlugins_typekey")
   var MSHTMLDotCPlugins_typekey: CPlugins = js.native
   
-  val constructor: js.Any = js.native
+  val constructor: Any = js.native
   
   val length: Double = js.native
   

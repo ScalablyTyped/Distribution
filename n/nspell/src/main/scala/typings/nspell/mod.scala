@@ -1,6 +1,6 @@
 package typings.nspell
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ object mod {
     */
   @JSImport("nspell", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with NSpell {
     def this(aff: String) = this()
@@ -124,7 +124,7 @@ object mod {
   /**
     * Returned by NSpell.spell with the following properties:
     * @param correct - Whether word is correctly spelled
-    * @param - forbidden - Whether word is actually correct, but forbidden from showing up as such (often by the users wish)
+    * @param forbidden - Whether word is actually correct, but forbidden from showing up as such (often by the users wish)
     * @param warn - Whether word is correct, but should trigger a warning (rarely used in dictionaries)
     */
   trait SpellCheck extends StObject {

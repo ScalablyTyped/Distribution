@@ -1,7 +1,7 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.asc_
-import typings.arcgisJsApi.arcgisJsApiStrings.desc_
+import typings.arcgisJsApi.anon.FeatureLayerPropertiestyp
+import typings.arcgisJsApi.anon.SceneLayerPropertiestypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,16 +13,11 @@ trait FieldColumnProperties
   /**
     * The field configuration for the column.
     *
+    * @deprecated since version 4.24. Use {@link module:esri/widgets/FeatureTable/support/FieldColumnTemplate} via the FeatureTable's {@link module:esri/widgets/FeatureTable/support/TableTemplate tableTemplate}.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html#config)
     */
   var config: js.UndefOr[FieldColumnConfigProperties] = js.undefined
-  
-  /**
-    * Controls the sort order of the column.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html#direction)
-    */
-  var direction: js.UndefOr[asc_ | desc_ | js.Any] = js.undefined
   
   /**
     * The [Field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html) associated with this column.
@@ -32,11 +27,11 @@ trait FieldColumnProperties
   var field: js.UndefOr[FieldProperties] = js.undefined
   
   /**
-    * If applicable, the associated [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) tied to the column.
+    * If applicable, the associated [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) or [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html) tied to the column.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html#layer)
     */
-  var layer: js.UndefOr[FeatureLayerProperties] = js.undefined
+  var layer: js.UndefOr[FeatureLayerPropertiestyp | SceneLayerPropertiestypes] = js.undefined
 }
 object FieldColumnProperties {
   
@@ -51,15 +46,11 @@ object FieldColumnProperties {
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    inline def setDirection(value: asc_ | desc_ | js.Any): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
-    
-    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
-    
     inline def setField(value: FieldProperties): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setLayer(value: FeatureLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayerPropertiestyp | SceneLayerPropertiestypes): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
   }

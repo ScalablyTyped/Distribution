@@ -22,6 +22,6 @@ object ModifyAttachmentsRequest {
     
     inline def setAddAttachmentsUndefined: Self = StObject.set(x, "addAttachments", js.undefined)
     
-    inline def setAddAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "addAttachments", js.Array(value :_*))
+    inline def setAddAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "addAttachments", js.Array(value*))
   }
 }

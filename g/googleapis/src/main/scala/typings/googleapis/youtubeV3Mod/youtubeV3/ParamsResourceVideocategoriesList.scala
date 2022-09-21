@@ -1,9 +1,5 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,32 +9,22 @@ trait ParamsResourceVideocategoriesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The hl parameter specifies the language that should be used for text
-    * values in the API response.
+    *
     */
   var hl: js.UndefOr[String] = js.undefined
   
   /**
-    * The id parameter specifies a comma-separated list of video category IDs
-    * for the resources that you are retrieving.
+    * Returns the video categories with the given IDs for Stubby or Apiary.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The part parameter specifies the videoCategory resource properties that
-    * the API response will include. Set the parameter value to snippet.
+    * The *part* parameter specifies the videoCategory resource properties that the API response will include. Set the parameter value to snippet.
     */
-  var part: js.UndefOr[String] = js.undefined
+  var part: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The regionCode parameter instructs the API to return the list of video
-    * categories available in the specified country. The parameter value is an
-    * ISO 3166-1 alpha-2 country code.
+    *
     */
   var regionCode: js.UndefOr[String] = js.undefined
 }
@@ -51,21 +37,21 @@ object ParamsResourceVideocategoriesList {
   
   extension [Self <: ParamsResourceVideocategoriesList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
     
     inline def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Array[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value*))
+    
+    inline def setPart(value: js.Array[String]): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
     inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
+    
+    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value*))
     
     inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     

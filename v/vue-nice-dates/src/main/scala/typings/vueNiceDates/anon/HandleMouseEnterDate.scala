@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HandleMouseEnterDate extends StObject {
   
   def changeLastValidDate(name: String, date: String): Unit = js.native
-  def changeLastValidDate(name: String, date: typings.std.Date): Unit = js.native
+  def changeLastValidDate(name: String, date: js.Date): Unit = js.native
   
-  def handleClickDate(date: typings.std.Date, `type`: String): Unit = js.native
+  def handleClickDate(date: js.Date, `type`: String): Unit = js.native
   
-  def handleMouseEnterDate(date: typings.std.Date): Unit = js.native
+  def handleMouseEnterDate(date: js.Date): Unit = js.native
   
   def handleMouseLeaveDates(): Unit = js.native
   
@@ -20,13 +20,13 @@ trait HandleMouseEnterDate extends StObject {
   
   def initStartDate(): Unit = js.native
   
-  def isEndDate(date: typings.std.Date): Boolean = js.native
+  def isEndDate(date: js.Date): Boolean = js.native
   
-  def isMiddleDate(date: typings.std.Date): Boolean = js.native
+  def isMiddleDate(date: js.Date): Boolean = js.native
   
-  def isStartDate(date: typings.std.Date): Boolean = js.native
+  def isStartDate(date: js.Date): Boolean = js.native
   
-  def isValidAndSelectable(date: typings.std.Date): Boolean = js.native
+  def isValidAndSelectable(date: js.Date): Boolean = js.native
   
   def processInitalDate(): Unit = js.native
 }

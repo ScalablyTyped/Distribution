@@ -25,12 +25,12 @@ object VulnerableHeaders {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: Header*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: Header*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setMissingHeaders(value: js.Array[Header]): Self = StObject.set(x, "missingHeaders", value.asInstanceOf[js.Any])
     
     inline def setMissingHeadersUndefined: Self = StObject.set(x, "missingHeaders", js.undefined)
     
-    inline def setMissingHeadersVarargs(value: Header*): Self = StObject.set(x, "missingHeaders", js.Array(value :_*))
+    inline def setMissingHeadersVarargs(value: Header*): Self = StObject.set(x, "missingHeaders", js.Array(value*))
   }
 }

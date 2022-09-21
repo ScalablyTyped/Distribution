@@ -1,25 +1,48 @@
 package typings.octokitPluginPaginateRest.anon
 
-import typings.octokitTypes.anon.Badgeurl
+import typings.octokitTypes.endpointsMod.ExtractOctokitResponse
+import typings.octokitTypes.endpointsMod.RequiredPreview
+import typings.octokitTypes.endpointsMod.ToOctokitParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `12` extends StObject {
   
-  var data: js.Array[Badgeurl]
+  var parameters: (ToOctokitParameters[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/gists']['get'] */ js.Any
+  ]) & RequiredPreview[Any]
+  
+  var response: ExtractOctokitResponse[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/gists']['get'] */ js.Any
+  ]
 }
 object `12` {
   
-  inline def apply(data: js.Array[Badgeurl]): `12` = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+  inline def apply(
+    parameters: (ToOctokitParameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/gists']['get'] */ js.Any
+    ]) & RequiredPreview[Any],
+    response: ExtractOctokitResponse[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/gists']['get'] */ js.Any
+    ]
+  ): `12` = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`12`]
   }
   
   extension [Self <: `12`](x: Self) {
     
-    inline def setData(value: js.Array[Badgeurl]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setParameters(
+      value: (ToOctokitParameters[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/gists']['get'] */ js.Any
+        ]) & RequiredPreview[Any]
+    ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Badgeurl*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setResponse(
+      value: ExtractOctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/gists']['get'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

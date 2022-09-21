@@ -9,7 +9,7 @@ trait Scope extends StObject {
   /**
     * The primary aspect of the binding scope.  Typically a view-model instance.
     */
-  var bindingContext: js.Any
+  var bindingContext: Any
   
   /**
     * The "parallel" or "artificial" aspect of the binding scope. Provides access to the parent binding
@@ -20,14 +20,14 @@ trait Scope extends StObject {
 }
 object Scope {
   
-  inline def apply(bindingContext: js.Any, overrideContext: OverrideContext): Scope = {
+  inline def apply(bindingContext: Any, overrideContext: OverrideContext): Scope = {
     val __obj = js.Dynamic.literal(bindingContext = bindingContext.asInstanceOf[js.Any], overrideContext = overrideContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scope]
   }
   
   extension [Self <: Scope](x: Self) {
     
-    inline def setBindingContext(value: js.Any): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
+    inline def setBindingContext(value: Any): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
     
     inline def setOverrideContext(value: OverrideContext): Self = StObject.set(x, "overrideContext", value.asInstanceOf[js.Any])
   }

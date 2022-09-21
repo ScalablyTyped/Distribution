@@ -16,12 +16,12 @@ object coreMod {
   
   @JSImport("ng-table/src/core", "NgTableDefaultGetDataProvider")
   @js.native
-  class NgTableDefaultGetDataProvider ()
+  open class NgTableDefaultGetDataProvider ()
     extends typings.ngTable.dataMod.NgTableDefaultGetDataProvider
   
   @JSImport("ng-table/src/core", "NgTableEventsChannel")
   @js.native
-  class NgTableEventsChannel protected ()
+  open class NgTableEventsChannel protected ()
     extends typings.ngTable.ngTableEventsChannelMod.NgTableEventsChannel {
     def this($rootScope: IRootScopeService) = this()
   }
@@ -40,7 +40,7 @@ object coreMod {
   
   @JSImport("ng-table/src/core", "NgTableParams")
   @js.native
-  class NgTableParams[T] ()
+  open class NgTableParams[T] ()
     extends typings.ngTable.ngTableParamsMod.NgTableParams[T] {
     def this(baseParameters: Boolean) = this()
     def this(baseParameters: IParamValues[T]) = this()
@@ -57,13 +57,13 @@ object coreMod {
     
     @JSImport("ng-table/src/core", "NgTableParams.$log")
     @js.native
-    def $log: js.Any = js.native
-    inline def $log_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$log")(x.asInstanceOf[js.Any])
+    def $log: Any = js.native
+    inline def $log_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$log")(x.asInstanceOf[js.Any])
     
     @JSImport("ng-table/src/core", "NgTableParams.$q")
     @js.native
-    def $q: js.Any = js.native
-    inline def $q_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$q")(x.asInstanceOf[js.Any])
+    def $q: Any = js.native
+    inline def $q_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$q")(x.asInstanceOf[js.Any])
     
     inline def init(
       $q: IQService,
@@ -75,18 +75,18 @@ object coreMod {
     
     @JSImport("ng-table/src/core", "NgTableParams.ngTableDefaults")
     @js.native
-    def ngTableDefaults: js.Any = js.native
-    inline def ngTableDefaults_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableDefaults")(x.asInstanceOf[js.Any])
+    def ngTableDefaults: Any = js.native
+    inline def ngTableDefaults_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableDefaults")(x.asInstanceOf[js.Any])
     
     @JSImport("ng-table/src/core", "NgTableParams.ngTableEventsChannel")
     @js.native
-    def ngTableEventsChannel: js.Any = js.native
-    inline def ngTableEventsChannel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableEventsChannel")(x.asInstanceOf[js.Any])
+    def ngTableEventsChannel: Any = js.native
+    inline def ngTableEventsChannel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableEventsChannel")(x.asInstanceOf[js.Any])
     
     @JSImport("ng-table/src/core", "NgTableParams.ngTableSettings")
     @js.native
-    def ngTableSettings: js.Any = js.native
-    inline def ngTableSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableSettings")(x.asInstanceOf[js.Any])
+    def ngTableSettings: Any = js.native
+    inline def ngTableSettings_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableSettings")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ng-table/src/core", "ngTableCoreModule")

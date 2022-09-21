@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Data extends StObject {
   
   var data: js.UndefOr[
-    js.Function2[/* name */ js.UndefOr[String], /* object */ js.UndefOr[js.Any], Boolean]
+    js.Function2[/* name */ js.UndefOr[String], /* object */ js.UndefOr[Any], Boolean]
   ] = js.undefined
   
   var recurse: js.UndefOr[Boolean] = js.undefined
   
   var signals: js.UndefOr[
-    js.Function2[/* name */ js.UndefOr[String], /* operator */ js.UndefOr[js.Any], Boolean]
+    js.Function2[/* name */ js.UndefOr[String], /* operator */ js.UndefOr[Any], Boolean]
   ] = js.undefined
 }
 object Data {
@@ -25,7 +25,7 @@ object Data {
   
   extension [Self <: Data](x: Self) {
     
-    inline def setData(value: (/* name */ js.UndefOr[String], /* object */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
+    inline def setData(value: (/* name */ js.UndefOr[String], /* object */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -33,7 +33,7 @@ object Data {
     
     inline def setRecurseUndefined: Self = StObject.set(x, "recurse", js.undefined)
     
-    inline def setSignals(value: (/* name */ js.UndefOr[String], /* operator */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "signals", js.Any.fromFunction2(value))
+    inline def setSignals(value: (/* name */ js.UndefOr[String], /* operator */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "signals", js.Any.fromFunction2(value))
     
     inline def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
   }

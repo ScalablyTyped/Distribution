@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("rascal", "BrokerAsPromised")
 @js.native
-class BrokerAsPromised protected () extends EventEmitter {
+open class BrokerAsPromised protected () extends EventEmitter {
   def this(broker: Broker) = this()
   
   def bounce(): js.Promise[Unit] = js.native
@@ -17,15 +17,15 @@ class BrokerAsPromised protected () extends EventEmitter {
   
   def connect(name: String): js.Promise[Connection] = js.native
   
-  def forward(name: String, message: js.Any): js.Promise[PublicationSession] = js.native
-  def forward(name: String, message: js.Any, overrides: String): js.Promise[PublicationSession] = js.native
-  def forward(name: String, message: js.Any, overrides: PublicationConfig): js.Promise[PublicationSession] = js.native
+  def forward(name: String, message: Any): js.Promise[PublicationSession] = js.native
+  def forward(name: String, message: Any, overrides: String): js.Promise[PublicationSession] = js.native
+  def forward(name: String, message: Any, overrides: PublicationConfig): js.Promise[PublicationSession] = js.native
   
   def nuke(): js.Promise[Unit] = js.native
   
-  def publish(name: String, message: js.Any): js.Promise[PublicationSession] = js.native
-  def publish(name: String, message: js.Any, overrides: String): js.Promise[PublicationSession] = js.native
-  def publish(name: String, message: js.Any, overrides: PublicationConfig): js.Promise[PublicationSession] = js.native
+  def publish(name: String, message: Any): js.Promise[PublicationSession] = js.native
+  def publish(name: String, message: Any, overrides: String): js.Promise[PublicationSession] = js.native
+  def publish(name: String, message: Any, overrides: PublicationConfig): js.Promise[PublicationSession] = js.native
   
   def purge(): js.Promise[Unit] = js.native
   
@@ -47,5 +47,5 @@ object BrokerAsPromised {
   
   /* static member */
   inline def create(config: BrokerConfig): js.Promise[BrokerAsPromised] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BrokerAsPromised]]
-  inline def create(config: BrokerConfig, components: js.Any): js.Promise[BrokerAsPromised] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], components.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BrokerAsPromised]]
+  inline def create(config: BrokerConfig, components: Any): js.Promise[BrokerAsPromised] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], components.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BrokerAsPromised]]
 }

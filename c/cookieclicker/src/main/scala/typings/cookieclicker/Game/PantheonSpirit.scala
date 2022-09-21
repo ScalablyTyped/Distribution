@@ -49,7 +49,7 @@ trait PantheonSpirit extends StObject {
   /**
     * The flavour text of the spirit
     */
-  var quote: String
+  var quote: js.UndefOr[String] = js.undefined
   
   /**
     * The current slot the spirit is in
@@ -58,8 +58,8 @@ trait PantheonSpirit extends StObject {
 }
 object PantheonSpirit {
   
-  inline def apply(icon: Icon, id: Double, name: String, quote: String, slot: `-1` | `0` | `1` | `2`): PantheonSpirit = {
-    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], quote = quote.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any])
+  inline def apply(icon: Icon, id: Double, name: String, slot: `-1` | `0` | `1` | `2`): PantheonSpirit = {
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any])
     __obj.asInstanceOf[PantheonSpirit]
   }
   
@@ -96,6 +96,8 @@ object PantheonSpirit {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+    
+    inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
     
     inline def setSlot(value: `-1` | `0` | `1` | `2`): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
   }

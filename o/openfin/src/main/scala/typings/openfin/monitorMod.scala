@@ -149,7 +149,7 @@ object monitorMod {
       
       inline def setNonPrimaryMonitors(value: js.Array[MonitorDetails]): Self = StObject.set(x, "nonPrimaryMonitors", value.asInstanceOf[js.Any])
       
-      inline def setNonPrimaryMonitorsVarargs(value: MonitorDetails*): Self = StObject.set(x, "nonPrimaryMonitors", js.Array(value :_*))
+      inline def setNonPrimaryMonitorsVarargs(value: MonitorDetails*): Self = StObject.set(x, "nonPrimaryMonitors", js.Array(value*))
       
       inline def setPrimaryMonitor(value: MonitorDetails): Self = StObject.set(x, "primaryMonitor", value.asInstanceOf[js.Any])
       

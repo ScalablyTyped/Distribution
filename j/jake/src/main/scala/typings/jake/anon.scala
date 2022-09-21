@@ -9,7 +9,7 @@ object anon {
   
   trait Dictname
     extends StObject
-       with /* name */ StringDictionary[js.Any] {
+       with /* name */ StringDictionary[Any] {
     
     var quiet: Boolean
   }

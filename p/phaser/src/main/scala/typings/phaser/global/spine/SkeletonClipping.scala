@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.SkeletonClipping")
 @js.native
-class SkeletonClipping ()
+open class SkeletonClipping ()
   extends StObject
      with typings.phaser.spine.SkeletonClipping {
   
@@ -24,7 +24,7 @@ class SkeletonClipping ()
   ): Boolean = js.native
   
   /* private */ /* CompleteClass */
-  var clipAttachment: js.Any = js.native
+  var clipAttachment: Any = js.native
   
   /* CompleteClass */
   override def clipEnd(): Unit = js.native
@@ -33,7 +33,7 @@ class SkeletonClipping ()
   override def clipEndWithSlot(slot: typings.phaser.spine.Slot): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var clipOutput: js.Any = js.native
+  var clipOutput: Any = js.native
   
   /* CompleteClass */
   override def clipStart(slot: typings.phaser.spine.Slot, clip: typings.phaser.spine.ClippingAttachment): Double = js.native
@@ -57,19 +57,19 @@ class SkeletonClipping ()
   var clippedVertices: js.Array[Double] = js.native
   
   /* private */ /* CompleteClass */
-  var clippingPolygon: js.Any = js.native
+  var clippingPolygon: Any = js.native
   
   /* private */ /* CompleteClass */
-  var clippingPolygons: js.Any = js.native
+  var clippingPolygons: Any = js.native
   
   /* CompleteClass */
   override def isClipping(): Boolean = js.native
   
   /* private */ /* CompleteClass */
-  var scratch: js.Any = js.native
+  var scratch: Any = js.native
   
   /* private */ /* CompleteClass */
-  var triangulator: js.Any = js.native
+  var triangulator: Any = js.native
 }
 object SkeletonClipping {
   

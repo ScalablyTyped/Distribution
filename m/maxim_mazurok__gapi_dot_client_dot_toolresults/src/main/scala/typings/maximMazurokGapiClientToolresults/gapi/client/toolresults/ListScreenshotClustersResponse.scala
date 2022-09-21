@@ -22,6 +22,6 @@ object ListScreenshotClustersResponse {
     
     inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    inline def setClustersVarargs(value: ScreenshotCluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: ScreenshotCluster*): Self = StObject.set(x, "clusters", js.Array(value*))
   }
 }

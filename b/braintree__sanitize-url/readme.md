@@ -1,7 +1,7 @@
 
 # Scala.js typings for braintree__sanitize-url
 
-Typings are for version 5.0.0
+Typings are for version 6.0.0
 
 ## Library description:
 A url sanitizer
@@ -10,10 +10,10 @@ A url sanitizer
 | ------------------ | :-------------: |
 | Full name          | @braintree/sanitize-url |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 44 |
-| # downloads        | 13564319 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2642237.6666666665 |
+| # stars            | 188.0 |
 
 ## Links
 - [Homepage](https://github.com/braintree/sanitize-url#readme)

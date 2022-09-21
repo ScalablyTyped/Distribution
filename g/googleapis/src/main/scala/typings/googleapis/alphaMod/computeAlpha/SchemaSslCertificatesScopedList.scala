@@ -13,10 +13,9 @@ trait SchemaSslCertificatesScopedList extends StObject {
   var sslCertificates: js.UndefOr[js.Array[SchemaSslCertificate]] = js.undefined
   
   /**
-    * Informational warning which replaces the list of backend services when
-    * the list is empty.
+    * Informational warning which replaces the list of backend services when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaSslCertificatesScopedList {
   
@@ -31,9 +30,11 @@ object SchemaSslCertificatesScopedList {
     
     inline def setSslCertificatesUndefined: Self = StObject.set(x, "sslCertificates", js.undefined)
     
-    inline def setSslCertificatesVarargs(value: SchemaSslCertificate*): Self = StObject.set(x, "sslCertificates", js.Array(value :_*))
+    inline def setSslCertificatesVarargs(value: SchemaSslCertificate*): Self = StObject.set(x, "sslCertificates", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

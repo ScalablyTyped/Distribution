@@ -19,6 +19,6 @@ object Animator {
     
     inline def setActions(value: js.Array[AnimationAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: AnimationAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: AnimationAction*): Self = StObject.set(x, "actions", js.Array(value*))
   }
 }

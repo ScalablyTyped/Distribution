@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateContactFlowResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the contact flow.
+    * The Amazon Resource Name (ARN) of the flow.
     */
   var ContactFlowArn: js.UndefOr[ARN] = js.undefined
   
   /**
-    * The identifier of the contact flow.
+    * The identifier of the flow.
     */
   var ContactFlowId: js.UndefOr[typings.awsSdk.connectMod.ContactFlowId] = js.undefined
 }

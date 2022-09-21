@@ -9,7 +9,7 @@ object anon {
   
   trait Args extends StObject {
     
-    var args: js.Array[js.Any]
+    var args: js.Array[Any]
     
     var `class`: String
     
@@ -17,7 +17,7 @@ object anon {
   }
   object Args {
     
-    inline def apply(args: js.Array[js.Any], `class`: String, queue: String): Args = {
+    inline def apply(args: js.Array[Any], `class`: String, queue: String): Args = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
       __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Args]
@@ -25,9 +25,9 @@ object anon {
     
     extension [Self <: Args](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -39,11 +39,11 @@ object anon {
     
     var rTimestamp: Double
     
-    var tasks: js.Array[Job[js.Any]]
+    var tasks: js.Array[Job[Any]]
   }
   object RTimestamp {
     
-    inline def apply(rTimestamp: Double, tasks: js.Array[Job[js.Any]]): RTimestamp = {
+    inline def apply(rTimestamp: Double, tasks: js.Array[Job[Any]]): RTimestamp = {
       val __obj = js.Dynamic.literal(rTimestamp = rTimestamp.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any])
       __obj.asInstanceOf[RTimestamp]
     }
@@ -52,9 +52,9 @@ object anon {
       
       inline def setRTimestamp(value: Double): Self = StObject.set(x, "rTimestamp", value.asInstanceOf[js.Any])
       
-      inline def setTasks(value: js.Array[Job[js.Any]]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+      inline def setTasks(value: js.Array[Job[Any]]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
       
-      inline def setTasksVarargs(value: Job[js.Any]*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+      inline def setTasksVarargs(value: Job[Any]*): Self = StObject.set(x, "tasks", js.Array(value*))
     }
   }
 }

@@ -85,7 +85,7 @@ object shippingMod {
       
       inline def setAddressLine(value: js.Array[String]): Self = StObject.set(x, "addressLine", value.asInstanceOf[js.Any])
       
-      inline def setAddressLineVarargs(value: String*): Self = StObject.set(x, "addressLine", js.Array(value :_*))
+      inline def setAddressLineVarargs(value: String*): Self = StObject.set(x, "addressLine", js.Array(value*))
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       

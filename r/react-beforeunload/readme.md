@@ -4,16 +4,16 @@
 Typings are for version 2.1
 
 ## Library description:
-React component and hook which listens to `beforeunload` on the window when mounted.
+React component and hook which listens to the beforeunload window event.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-beforeunload |
 | Keywords           | beforeunload, component, event, hook, onbeforeunload, react, unload, window |
-| # releases         | 12 |
-| # dependents       | 3 |
-| # downloads        | 1000819 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 418023.0 |
+| # stars            | 164.0 |
 
 ## Links
 - [Homepage](https://github.com/jacobbuck/react-beforeunload#readme)

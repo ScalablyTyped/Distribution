@@ -26,12 +26,12 @@ trait IRequest
   /** [Method] Returns the value of args
     * @returns Object
     */
-  var getArgs: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getArgs: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of callback
     * @returns Object
     */
-  var getCallback: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getCallback: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of callbackKey
     * @returns String
@@ -41,7 +41,7 @@ trait IRequest
   /** [Method] Returns the value of directFn
     * @returns Object
     */
-  var getDirectFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getDirectFn: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of disableCaching
     * @returns Boolean
@@ -51,12 +51,12 @@ trait IRequest
   /** [Method] Returns the value of headers
     * @returns Object
     */
-  var getHeaders: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getHeaders: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of jsonData
     * @returns Object
     */
-  var getJsonData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getJsonData: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of method
     * @returns String
@@ -71,7 +71,7 @@ trait IRequest
   /** [Method] Returns the value of params
     * @returns Object
     */
-  var getParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getParams: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of password
     * @returns String
@@ -86,12 +86,12 @@ trait IRequest
   /** [Method] Returns the value of records
     * @returns Object
     */
-  var getRecords: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getRecords: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of scope
     * @returns Object
     */
-  var getScope: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getScope: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of timeout
     * @returns Number
@@ -106,7 +106,7 @@ trait IRequest
   /** [Method] Returns the value of useDefaultXhrHeader
     * @returns Object
     */
-  var getUseDefaultXhrHeader: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getUseDefaultXhrHeader: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of username
     * @returns String
@@ -121,13 +121,13 @@ trait IRequest
   /** [Method] Returns the value of xmlData
     * @returns Object
     */
-  var getXmlData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getXmlData: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (Object) */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var jsonData: js.UndefOr[js.Any] = js.undefined
+  var jsonData: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Ext.data.JsonP) */
   var jsonp: js.UndefOr[IJsonP] = js.undefined
@@ -139,7 +139,7 @@ trait IRequest
   var operation: js.UndefOr[IOperation] = js.undefined
   
   /** [Config Option] (Object) */
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var password: js.UndefOr[String] = js.undefined
@@ -155,12 +155,12 @@ trait IRequest
   /** [Method] Sets the value of args
     * @param args Object The new value.
     */
-  var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of callback
     * @param callback Object The new value.
     */
-  var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of callbackKey
     * @param callbackKey String The new value.
@@ -170,7 +170,7 @@ trait IRequest
   /** [Method] Sets the value of directFn
     * @param directFn Object The new value.
     */
-  var setDirectFn: js.UndefOr[js.Function1[/* directFn */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setDirectFn: js.UndefOr[js.Function1[/* directFn */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of disableCaching
     * @param disableCaching Boolean The new value.
@@ -180,12 +180,12 @@ trait IRequest
   /** [Method] Sets the value of headers
     * @param headers Object The new value.
     */
-  var setHeaders: js.UndefOr[js.Function1[/* headers */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setHeaders: js.UndefOr[js.Function1[/* headers */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of jsonData
     * @param jsonData Object The new value.
     */
-  var setJsonData: js.UndefOr[js.Function1[/* jsonData */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setJsonData: js.UndefOr[js.Function1[/* jsonData */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of method
     * @param method String The new value.
@@ -200,7 +200,7 @@ trait IRequest
   /** [Method] Sets the value of params
     * @param params Object The new value.
     */
-  var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of password
     * @param password String The new value.
@@ -217,12 +217,12 @@ trait IRequest
   /** [Method] Sets the value of records
     * @param records Object The new value.
     */
-  var setRecords: js.UndefOr[js.Function1[/* records */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setRecords: js.UndefOr[js.Function1[/* records */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of scope
     * @param scope Object The new value.
     */
-  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of timeout
     * @param timeout Number The new value.
@@ -237,7 +237,7 @@ trait IRequest
   /** [Method] Sets the value of useDefaultXhrHeader
     * @param useDefaultXhrHeader Object The new value.
     */
-  var setUseDefaultXhrHeader: js.UndefOr[js.Function1[/* useDefaultXhrHeader */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setUseDefaultXhrHeader: js.UndefOr[js.Function1[/* useDefaultXhrHeader */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of username
     * @param username String The new value.
@@ -252,7 +252,7 @@ trait IRequest
   /** [Method] Sets the value of xmlData
     * @param xmlData Object The new value.
     */
-  var setXmlData: js.UndefOr[js.Function1[/* xmlData */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setXmlData: js.UndefOr[js.Function1[/* xmlData */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
   var url: js.UndefOr[String] = js.undefined
@@ -264,7 +264,7 @@ trait IRequest
   var withCredentials: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var xmlData: js.UndefOr[js.Any] = js.undefined
+  var xmlData: js.UndefOr[Any] = js.undefined
 }
 object IRequest {
   
@@ -291,11 +291,11 @@ object IRequest {
     
     inline def setGetActionUndefined: Self = StObject.set(x, "getAction", js.undefined)
     
-    inline def setGetArgs(value: () => js.Any): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
+    inline def setGetArgs(value: () => Any): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
     
     inline def setGetArgsUndefined: Self = StObject.set(x, "getArgs", js.undefined)
     
-    inline def setGetCallback(value: () => js.Any): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
+    inline def setGetCallback(value: () => Any): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
     
     inline def setGetCallbackKey(value: () => String): Self = StObject.set(x, "getCallbackKey", js.Any.fromFunction0(value))
     
@@ -303,7 +303,7 @@ object IRequest {
     
     inline def setGetCallbackUndefined: Self = StObject.set(x, "getCallback", js.undefined)
     
-    inline def setGetDirectFn(value: () => js.Any): Self = StObject.set(x, "getDirectFn", js.Any.fromFunction0(value))
+    inline def setGetDirectFn(value: () => Any): Self = StObject.set(x, "getDirectFn", js.Any.fromFunction0(value))
     
     inline def setGetDirectFnUndefined: Self = StObject.set(x, "getDirectFn", js.undefined)
     
@@ -311,11 +311,11 @@ object IRequest {
     
     inline def setGetDisableCachingUndefined: Self = StObject.set(x, "getDisableCaching", js.undefined)
     
-    inline def setGetHeaders(value: () => js.Any): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
+    inline def setGetHeaders(value: () => Any): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
     
     inline def setGetHeadersUndefined: Self = StObject.set(x, "getHeaders", js.undefined)
     
-    inline def setGetJsonData(value: () => js.Any): Self = StObject.set(x, "getJsonData", js.Any.fromFunction0(value))
+    inline def setGetJsonData(value: () => Any): Self = StObject.set(x, "getJsonData", js.Any.fromFunction0(value))
     
     inline def setGetJsonDataUndefined: Self = StObject.set(x, "getJsonData", js.undefined)
     
@@ -327,7 +327,7 @@ object IRequest {
     
     inline def setGetOperationUndefined: Self = StObject.set(x, "getOperation", js.undefined)
     
-    inline def setGetParams(value: () => js.Any): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
+    inline def setGetParams(value: () => Any): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
     
     inline def setGetParamsUndefined: Self = StObject.set(x, "getParams", js.undefined)
     
@@ -339,11 +339,11 @@ object IRequest {
     
     inline def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
     
-    inline def setGetRecords(value: () => js.Any): Self = StObject.set(x, "getRecords", js.Any.fromFunction0(value))
+    inline def setGetRecords(value: () => Any): Self = StObject.set(x, "getRecords", js.Any.fromFunction0(value))
     
     inline def setGetRecordsUndefined: Self = StObject.set(x, "getRecords", js.undefined)
     
-    inline def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+    inline def setGetScope(value: () => Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
     
     inline def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
     
@@ -355,7 +355,7 @@ object IRequest {
     
     inline def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
     
-    inline def setGetUseDefaultXhrHeader(value: () => js.Any): Self = StObject.set(x, "getUseDefaultXhrHeader", js.Any.fromFunction0(value))
+    inline def setGetUseDefaultXhrHeader(value: () => Any): Self = StObject.set(x, "getUseDefaultXhrHeader", js.Any.fromFunction0(value))
     
     inline def setGetUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "getUseDefaultXhrHeader", js.undefined)
     
@@ -367,15 +367,15 @@ object IRequest {
     
     inline def setGetWithCredentialsUndefined: Self = StObject.set(x, "getWithCredentials", js.undefined)
     
-    inline def setGetXmlData(value: () => js.Any): Self = StObject.set(x, "getXmlData", js.Any.fromFunction0(value))
+    inline def setGetXmlData(value: () => Any): Self = StObject.set(x, "getXmlData", js.Any.fromFunction0(value))
     
     inline def setGetXmlDataUndefined: Self = StObject.set(x, "getXmlData", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setJsonData(value: js.Any): Self = StObject.set(x, "jsonData", value.asInstanceOf[js.Any])
+    inline def setJsonData(value: Any): Self = StObject.set(x, "jsonData", value.asInstanceOf[js.Any])
     
     inline def setJsonDataUndefined: Self = StObject.set(x, "jsonData", js.undefined)
     
@@ -391,7 +391,7 @@ object IRequest {
     
     inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
@@ -407,11 +407,11 @@ object IRequest {
     
     inline def setSetActionUndefined: Self = StObject.set(x, "setAction", js.undefined)
     
-    inline def setSetArgs(value: /* args */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
+    inline def setSetArgs(value: /* args */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
     
     inline def setSetArgsUndefined: Self = StObject.set(x, "setArgs", js.undefined)
     
-    inline def setSetCallback(value: /* callback */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
+    inline def setSetCallback(value: /* callback */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
     
     inline def setSetCallbackKey(value: /* callbackKey */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setCallbackKey", js.Any.fromFunction1(value))
     
@@ -419,7 +419,7 @@ object IRequest {
     
     inline def setSetCallbackUndefined: Self = StObject.set(x, "setCallback", js.undefined)
     
-    inline def setSetDirectFn(value: /* directFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDirectFn", js.Any.fromFunction1(value))
+    inline def setSetDirectFn(value: /* directFn */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDirectFn", js.Any.fromFunction1(value))
     
     inline def setSetDirectFnUndefined: Self = StObject.set(x, "setDirectFn", js.undefined)
     
@@ -427,11 +427,11 @@ object IRequest {
     
     inline def setSetDisableCachingUndefined: Self = StObject.set(x, "setDisableCaching", js.undefined)
     
-    inline def setSetHeaders(value: /* headers */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
+    inline def setSetHeaders(value: /* headers */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
     
     inline def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
     
-    inline def setSetJsonData(value: /* jsonData */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setJsonData", js.Any.fromFunction1(value))
+    inline def setSetJsonData(value: /* jsonData */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setJsonData", js.Any.fromFunction1(value))
     
     inline def setSetJsonDataUndefined: Self = StObject.set(x, "setJsonData", js.undefined)
     
@@ -443,7 +443,7 @@ object IRequest {
     
     inline def setSetOperationUndefined: Self = StObject.set(x, "setOperation", js.undefined)
     
-    inline def setSetParams(value: /* params */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setParams", js.Any.fromFunction1(value))
+    inline def setSetParams(value: /* params */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setParams", js.Any.fromFunction1(value))
     
     inline def setSetParamsUndefined: Self = StObject.set(x, "setParams", js.undefined)
     
@@ -455,11 +455,11 @@ object IRequest {
     
     inline def setSetProxyUndefined: Self = StObject.set(x, "setProxy", js.undefined)
     
-    inline def setSetRecords(value: /* records */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setRecords", js.Any.fromFunction1(value))
+    inline def setSetRecords(value: /* records */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setRecords", js.Any.fromFunction1(value))
     
     inline def setSetRecordsUndefined: Self = StObject.set(x, "setRecords", js.undefined)
     
-    inline def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
+    inline def setSetScope(value: /* scope */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
     
     inline def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
     
@@ -471,7 +471,7 @@ object IRequest {
     
     inline def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
     
-    inline def setSetUseDefaultXhrHeader(value: /* useDefaultXhrHeader */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUseDefaultXhrHeader", js.Any.fromFunction1(value))
+    inline def setSetUseDefaultXhrHeader(value: /* useDefaultXhrHeader */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setUseDefaultXhrHeader", js.Any.fromFunction1(value))
     
     inline def setSetUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "setUseDefaultXhrHeader", js.undefined)
     
@@ -483,7 +483,7 @@ object IRequest {
     
     inline def setSetWithCredentialsUndefined: Self = StObject.set(x, "setWithCredentials", js.undefined)
     
-    inline def setSetXmlData(value: /* xmlData */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setXmlData", js.Any.fromFunction1(value))
+    inline def setSetXmlData(value: /* xmlData */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setXmlData", js.Any.fromFunction1(value))
     
     inline def setSetXmlDataUndefined: Self = StObject.set(x, "setXmlData", js.undefined)
     
@@ -499,7 +499,7 @@ object IRequest {
     
     inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     
-    inline def setXmlData(value: js.Any): Self = StObject.set(x, "xmlData", value.asInstanceOf[js.Any])
+    inline def setXmlData(value: Any): Self = StObject.set(x, "xmlData", value.asInstanceOf[js.Any])
     
     inline def setXmlDataUndefined: Self = StObject.set(x, "xmlData", js.undefined)
   }

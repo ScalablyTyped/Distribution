@@ -21,7 +21,7 @@ object mod {
   
   trait HttpRequestInterfaceMock
     extends StObject
-       with /* id */ StringDictionary[js.Any] {
+       with /* id */ StringDictionary[Any] {
     
     var headers: HttpRequestHeadersInterfaceMock
   }

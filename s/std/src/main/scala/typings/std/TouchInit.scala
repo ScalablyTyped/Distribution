@@ -6,34 +6,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TouchInit extends StObject {
   
+  /* standard dom */
   var altitudeAngle: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var azimuthAngle: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var clientX: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var clientY: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var force: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var identifier: Double
   
+  /* standard dom */
   var pageX: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var pageY: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var radiusX: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var radiusY: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var rotationAngle: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var screenX: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var screenY: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var target: EventTarget
   
+  /* standard dom */
   var touchType: js.UndefOr[TouchType] = js.undefined
 }
 object TouchInit {

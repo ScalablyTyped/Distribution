@@ -3,7 +3,6 @@ package typings.awsSdkClientPinpointBrowser
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.CSV
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.JSON
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object typesSegmentImportResourceMod {
     /**
       * The number of channel types in the imported segment.
       */
-    var ChannelCounts: js.UndefOr[StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])] = js.undefined
+    var ChannelCounts: js.UndefOr[StringDictionary[Double] | (js.Iterable[js.Tuple2[String, Double]])] = js.undefined
     
     /**
       * (Deprecated) Your AWS account ID, which you assigned to the ExternalID key in an IAM trust policy. Used by Amazon Pinpoint to assume an IAM role. This requirement is removed, and external IDs are not recommended for IAM roles assumed by Amazon Pinpoint.
@@ -52,7 +51,7 @@ object typesSegmentImportResourceMod {
     
     extension [Self <: SegmentImportResource](x: Self) {
       
-      inline def setChannelCounts(value: StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "ChannelCounts", value.asInstanceOf[js.Any])
+      inline def setChannelCounts(value: StringDictionary[Double] | (js.Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "ChannelCounts", value.asInstanceOf[js.Any])
       
       inline def setChannelCountsUndefined: Self = StObject.set(x, "ChannelCounts", js.undefined)
       

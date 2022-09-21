@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CasperOptions extends StObject {
   
-  var clientScripts: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var clientScripts: js.UndefOr[js.Array[Any]] = js.undefined
   
   var exitOnError: js.UndefOr[Boolean] = js.undefined
   
-  var httpStatusHandlers: js.UndefOr[js.Any] = js.undefined
+  var httpStatusHandlers: js.UndefOr[Any] = js.undefined
   
   var logLevel: js.UndefOr[String] = js.undefined
   
@@ -39,9 +39,9 @@ trait CasperOptions extends StObject {
   
   var page: js.UndefOr[WebPage] = js.undefined
   
-  var pageSettings: js.UndefOr[js.Any] = js.undefined
+  var pageSettings: js.UndefOr[Any] = js.undefined
   
-  var remoteScripts: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var remoteScripts: js.UndefOr[js.Array[Any]] = js.undefined
   
   var retryTimeout: js.UndefOr[Double] = js.undefined
   
@@ -55,7 +55,7 @@ trait CasperOptions extends StObject {
   
   var verbose: js.UndefOr[Boolean] = js.undefined
   
-  var viewportSize: js.UndefOr[js.Any] = js.undefined
+  var viewportSize: js.UndefOr[Any] = js.undefined
   
   var waitTimeout: js.UndefOr[Double] = js.undefined
 }
@@ -68,17 +68,17 @@ object CasperOptions {
   
   extension [Self <: CasperOptions](x: Self) {
     
-    inline def setClientScripts(value: js.Array[js.Any]): Self = StObject.set(x, "clientScripts", value.asInstanceOf[js.Any])
+    inline def setClientScripts(value: js.Array[Any]): Self = StObject.set(x, "clientScripts", value.asInstanceOf[js.Any])
     
     inline def setClientScriptsUndefined: Self = StObject.set(x, "clientScripts", js.undefined)
     
-    inline def setClientScriptsVarargs(value: js.Any*): Self = StObject.set(x, "clientScripts", js.Array(value :_*))
+    inline def setClientScriptsVarargs(value: Any*): Self = StObject.set(x, "clientScripts", js.Array(value*))
     
     inline def setExitOnError(value: Boolean): Self = StObject.set(x, "exitOnError", value.asInstanceOf[js.Any])
     
     inline def setExitOnErrorUndefined: Self = StObject.set(x, "exitOnError", js.undefined)
     
-    inline def setHttpStatusHandlers(value: js.Any): Self = StObject.set(x, "httpStatusHandlers", value.asInstanceOf[js.Any])
+    inline def setHttpStatusHandlers(value: Any): Self = StObject.set(x, "httpStatusHandlers", value.asInstanceOf[js.Any])
     
     inline def setHttpStatusHandlersUndefined: Self = StObject.set(x, "httpStatusHandlers", js.undefined)
     
@@ -132,17 +132,17 @@ object CasperOptions {
     
     inline def setPage(value: WebPage): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    inline def setPageSettings(value: js.Any): Self = StObject.set(x, "pageSettings", value.asInstanceOf[js.Any])
+    inline def setPageSettings(value: Any): Self = StObject.set(x, "pageSettings", value.asInstanceOf[js.Any])
     
     inline def setPageSettingsUndefined: Self = StObject.set(x, "pageSettings", js.undefined)
     
     inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    inline def setRemoteScripts(value: js.Array[js.Any]): Self = StObject.set(x, "remoteScripts", value.asInstanceOf[js.Any])
+    inline def setRemoteScripts(value: js.Array[Any]): Self = StObject.set(x, "remoteScripts", value.asInstanceOf[js.Any])
     
     inline def setRemoteScriptsUndefined: Self = StObject.set(x, "remoteScripts", js.undefined)
     
-    inline def setRemoteScriptsVarargs(value: js.Any*): Self = StObject.set(x, "remoteScripts", js.Array(value :_*))
+    inline def setRemoteScriptsVarargs(value: Any*): Self = StObject.set(x, "remoteScripts", js.Array(value*))
     
     inline def setRetryTimeout(value: Double): Self = StObject.set(x, "retryTimeout", value.asInstanceOf[js.Any])
     
@@ -168,7 +168,7 @@ object CasperOptions {
     
     inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     
-    inline def setViewportSize(value: js.Any): Self = StObject.set(x, "viewportSize", value.asInstanceOf[js.Any])
+    inline def setViewportSize(value: Any): Self = StObject.set(x, "viewportSize", value.asInstanceOf[js.Any])
     
     inline def setViewportSizeUndefined: Self = StObject.set(x, "viewportSize", js.undefined)
     

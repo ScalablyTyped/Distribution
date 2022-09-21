@@ -19,6 +19,6 @@ object ActiveSections {
     
     inline def setActiveSections(value: js.Array[Double]): Self = StObject.set(x, "activeSections", value.asInstanceOf[js.Any])
     
-    inline def setActiveSectionsVarargs(value: Double*): Self = StObject.set(x, "activeSections", js.Array(value :_*))
+    inline def setActiveSectionsVarargs(value: Double*): Self = StObject.set(x, "activeSections", js.Array(value*))
   }
 }

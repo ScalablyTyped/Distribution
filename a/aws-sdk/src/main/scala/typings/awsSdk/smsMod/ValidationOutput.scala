@@ -14,7 +14,7 @@ trait ValidationOutput extends StObject {
   /**
     * The latest time that the validation was performed.
     */
-  var latestValidationTime: js.UndefOr[Timestamp] = js.undefined
+  var latestValidationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the validation.
@@ -54,7 +54,7 @@ object ValidationOutput {
     
     inline def setAppValidationOutputUndefined: Self = StObject.set(x, "appValidationOutput", js.undefined)
     
-    inline def setLatestValidationTime(value: Timestamp): Self = StObject.set(x, "latestValidationTime", value.asInstanceOf[js.Any])
+    inline def setLatestValidationTime(value: js.Date): Self = StObject.set(x, "latestValidationTime", value.asInstanceOf[js.Any])
     
     inline def setLatestValidationTimeUndefined: Self = StObject.set(x, "latestValidationTime", js.undefined)
     

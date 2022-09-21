@@ -8,5 +8,5 @@ object putItemMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/PutItem", "PutItem")
   @js.native
-  val PutItem: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val PutItem: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

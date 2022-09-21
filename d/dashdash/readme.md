@@ -10,10 +10,10 @@ A light, featureful and explicit option parsing library.
 | ------------------ | :-------------: |
 | Full name          | dashdash |
 | Keywords           | option, parser, parsing, cli, command, args, bash, completion |
-| # releases         | 0 |
-| # dependents       | 241 |
-| # downloads        | 680503989 |
-| # stars            | 9 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 8.2665708E7 |
+| # stars            | 170.0 |
 
 ## Links
 - [Homepage](https://github.com/trentm/node-dashdash#readme)

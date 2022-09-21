@@ -1,5 +1,6 @@
 package typings.emailTemplates
 
+import typings.emailTemplates.anon.Dictkey
 import typings.emailTemplates.anon.PartialEmailMessage
 import typings.emailTemplates.emailTemplatesBooleans.`false`
 import typings.htmlToText.mod.HtmlToTextOptions
@@ -12,10 +13,50 @@ object mod {
   
   @JSImport("email-templates", JSImport.Namespace)
   @js.native
-  class ^[T] protected ()
+  open class ^[T] ()
     extends StObject
-       with EmailTemplate[T] {
-    def this(config: EmailConfig[js.Any]) = this()
+       with Email[T] {
+    def this(config: EmailConfig[Any]) = this()
+  }
+  
+  @js.native
+  trait Email[T] extends StObject {
+    
+    /**
+      *   shorthand use of `juiceResources` with the config
+      *   mainly for custom renders like from a database).
+      */
+    def juiceResources(html: String): js.Promise[String] = js.native
+    def juiceResources(
+      html: String,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify juice.Options */ Any
+    ): js.Promise[String] = js.native
+    
+    /**
+      * @async
+      * @param view The Html pug to render
+      * @param locals The template Variables
+      */
+    def render(view: String): js.Promise[String] = js.native
+    def render(view: String, locals: T): js.Promise[String] = js.native
+    
+    /**
+      * Render all available template files for a given email
+      * template (e.g. `html.pug`, `text.pug`, and `subject.pug`)
+      *
+      * @async
+      * @param view Name of the template
+      * @param locals The template variables
+      */
+    def renderAll(view: String): js.Promise[PartialEmailMessage] = js.native
+    def renderAll(view: String, locals: T): js.Promise[PartialEmailMessage] = js.native
+    
+    /**
+      * Send the Email
+      * @async
+      */
+    def send(): js.Promise[Any] = js.native
+    def send(options: EmailOptions[T]): js.Promise[Any] = js.native
   }
   
   trait EmailConfig[T] extends StObject {
@@ -31,9 +72,7 @@ object mod {
       * a function that returns the path to a template file
       * @default (path: string, template: string) => string
       */
-    var getPath: js.UndefOr[
-        js.Function3[/* path */ String, /* template */ String, /* locals */ js.Any, String]
-      ] = js.undefined
+    var getPath: js.UndefOr[js.Function3[/* path */ String, /* template */ String, /* locals */ Any, String]] = js.undefined
     
     /**
       * <Https://github.com/werk85/node-html-to-text>
@@ -45,7 +84,7 @@ object mod {
     /**
       * Set to object to configure and Enable <https://github.com/ladjs/il8n>
       */
-    var i18n: js.UndefOr[js.Any] = js.undefined
+    var i18n: js.UndefOr[Any] = js.undefined
     
     /**
       * <https://github.com/Automattic/juice>
@@ -55,12 +94,16 @@ object mod {
     /**
       * <https://github.com/Automattic/juice>
       */
-    var juiceResources: js.UndefOr[js.Any] = js.undefined
+    var juiceResources: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify juice.Options */ Any
+      ] = js.undefined
+    
+    var juiceSettings: js.UndefOr[JuiceGlobalConfig] = js.undefined
     
     /**
       * The message <Nodemailer.com/message/>
       */
-    var message: Options
+    var message: js.UndefOr[Options] = js.undefined
     
     /**
       * Preview the email
@@ -70,7 +113,7 @@ object mod {
     /**
       * Pass a custom render function if necessary
       */
-    var render: js.UndefOr[js.Function2[/* view */ String, /* locals */ js.UndefOr[T], js.Promise[js.Any]]] = js.undefined
+    var render: js.UndefOr[js.Function2[/* view */ String, /* locals */ js.UndefOr[T], js.Promise[Any]]] = js.undefined
     
     /**
       * Do you really want to send, false for test or development
@@ -100,8 +143,8 @@ object mod {
   }
   object EmailConfig {
     
-    inline def apply[T](message: Options): EmailConfig[T] = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    inline def apply[T](): EmailConfig[T] = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EmailConfig[T]]
     }
     
@@ -111,7 +154,7 @@ object mod {
       
       inline def setCustomRenderUndefined: Self = StObject.set(x, "customRender", js.undefined)
       
-      inline def setGetPath(value: (/* path */ String, /* template */ String, /* locals */ js.Any) => String): Self = StObject.set(x, "getPath", js.Any.fromFunction3(value))
+      inline def setGetPath(value: (/* path */ String, /* template */ String, /* locals */ Any) => String): Self = StObject.set(x, "getPath", js.Any.fromFunction3(value))
       
       inline def setGetPathUndefined: Self = StObject.set(x, "getPath", js.undefined)
       
@@ -119,25 +162,33 @@ object mod {
       
       inline def setHtmlToTextUndefined: Self = StObject.set(x, "htmlToText", js.undefined)
       
-      inline def setI18n(value: js.Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+      inline def setI18n(value: Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
       inline def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
       
       inline def setJuice(value: Boolean): Self = StObject.set(x, "juice", value.asInstanceOf[js.Any])
       
-      inline def setJuiceResources(value: js.Any): Self = StObject.set(x, "juiceResources", value.asInstanceOf[js.Any])
+      inline def setJuiceResources(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify juice.Options */ Any
+      ): Self = StObject.set(x, "juiceResources", value.asInstanceOf[js.Any])
       
       inline def setJuiceResourcesUndefined: Self = StObject.set(x, "juiceResources", js.undefined)
+      
+      inline def setJuiceSettings(value: JuiceGlobalConfig): Self = StObject.set(x, "juiceSettings", value.asInstanceOf[js.Any])
+      
+      inline def setJuiceSettingsUndefined: Self = StObject.set(x, "juiceSettings", js.undefined)
       
       inline def setJuiceUndefined: Self = StObject.set(x, "juice", js.undefined)
       
       inline def setMessage(value: Options): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      
       inline def setPreview(value: Boolean | PreviewEmailOpts): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
       
       inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
       
-      inline def setRender(value: (/* view */ String, /* locals */ js.UndefOr[T]) => js.Promise[js.Any]): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (/* view */ String, /* locals */ js.UndefOr[T]) => js.Promise[Any]): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
@@ -200,17 +251,17 @@ object mod {
       *
       * Overrides what is given for constructor
       */
-    var message: Options
+    var message: js.UndefOr[Options] = js.undefined
     
     /**
       * The template name
       */
-    var template: String
+    var template: js.UndefOr[String] = js.undefined
   }
   object EmailOptions {
     
-    inline def apply[T](message: Options, template: String): EmailOptions[T] = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
+    inline def apply[T](): EmailOptions[T] = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EmailOptions[T]]
     }
     
@@ -222,47 +273,106 @@ object mod {
       
       inline def setMessage(value: Options): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      
       inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
   
-  @js.native
-  trait EmailTemplate[T] extends StObject {
+  /* Inlined std.Partial<{  codeBlocks :/ * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.codeBlocks * / any,   excludedProperties :/ * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.excludedProperties * / any,   heightElements :std.Array<string>,   ignoredPseudos :/ * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.ignoredPseudos * / any,   nonVisualElements :/ * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.nonVisualElements * / any,   styleToAttribute :/ * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.styleToAttribute * / any,   tableElements :std.Array<string>,   widthElements :std.Array<string>}> */
+  trait JuiceGlobalConfig extends StObject {
     
-    /**
-      *   shorthand use of `juiceResources` with the config
-      *   mainly for custom renders like from a database).
-      */
-    def juiceResources(html: String): js.Promise[String] = js.native
+    var codeBlocks: js.UndefOr[
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.codeBlocks */ Any
+      ] = js.undefined
     
-    /**
-      *
-      * @param view The Html pug to render
-      * @param locals The template Variables
-      */
-    def render(view: String): js.Promise[String] = js.native
-    def render(view: String, locals: T): js.Promise[String] = js.native
+    var excludedProperties: js.UndefOr[
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.excludedProperties */ Any
+      ] = js.undefined
     
-    /**
-      * Render all available template files for a given email
-      * template (e.g. `html.pug`, `text.pug`, and `subject.pug`)
-      *
-      * @param view Name of the template
-      * @param locals The template variables
-      */
-    def renderAll(view: String): js.Promise[PartialEmailMessage] = js.native
-    def renderAll(view: String, locals: T): js.Promise[PartialEmailMessage] = js.native
+    var heightElements: js.UndefOr[js.Array[String]] = js.undefined
     
-    /**
-      * Send the Email
-      */
-    def send(options: EmailOptions[T]): js.Promise[js.Any] = js.native
+    var ignoredPseudos: js.UndefOr[
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.ignoredPseudos */ Any
+      ] = js.undefined
+    
+    var nonVisualElements: js.UndefOr[
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.nonVisualElements */ Any
+      ] = js.undefined
+    
+    var styleToAttribute: js.UndefOr[
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.styleToAttribute */ Any
+      ] = js.undefined
+    
+    var tableElements: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var widthElements: js.UndefOr[js.Array[String]] = js.undefined
+  }
+  object JuiceGlobalConfig {
+    
+    inline def apply(): JuiceGlobalConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[JuiceGlobalConfig]
+    }
+    
+    extension [Self <: JuiceGlobalConfig](x: Self) {
+      
+      inline def setCodeBlocks(
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.codeBlocks */ Any
+      ): Self = StObject.set(x, "codeBlocks", value.asInstanceOf[js.Any])
+      
+      inline def setCodeBlocksUndefined: Self = StObject.set(x, "codeBlocks", js.undefined)
+      
+      inline def setExcludedProperties(
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.excludedProperties */ Any
+      ): Self = StObject.set(x, "excludedProperties", value.asInstanceOf[js.Any])
+      
+      inline def setExcludedPropertiesUndefined: Self = StObject.set(x, "excludedProperties", js.undefined)
+      
+      inline def setHeightElements(value: js.Array[String]): Self = StObject.set(x, "heightElements", value.asInstanceOf[js.Any])
+      
+      inline def setHeightElementsUndefined: Self = StObject.set(x, "heightElements", js.undefined)
+      
+      inline def setHeightElementsVarargs(value: String*): Self = StObject.set(x, "heightElements", js.Array(value*))
+      
+      inline def setIgnoredPseudos(
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.ignoredPseudos */ Any
+      ): Self = StObject.set(x, "ignoredPseudos", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoredPseudosUndefined: Self = StObject.set(x, "ignoredPseudos", js.undefined)
+      
+      inline def setNonVisualElements(
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.nonVisualElements */ Any
+      ): Self = StObject.set(x, "nonVisualElements", value.asInstanceOf[js.Any])
+      
+      inline def setNonVisualElementsUndefined: Self = StObject.set(x, "nonVisualElements", js.undefined)
+      
+      inline def setStyleToAttribute(
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof juice.styleToAttribute */ Any
+      ): Self = StObject.set(x, "styleToAttribute", value.asInstanceOf[js.Any])
+      
+      inline def setStyleToAttributeUndefined: Self = StObject.set(x, "styleToAttribute", js.undefined)
+      
+      inline def setTableElements(value: js.Array[String]): Self = StObject.set(x, "tableElements", value.asInstanceOf[js.Any])
+      
+      inline def setTableElementsUndefined: Self = StObject.set(x, "tableElements", js.undefined)
+      
+      inline def setTableElementsVarargs(value: String*): Self = StObject.set(x, "tableElements", js.Array(value*))
+      
+      inline def setWidthElements(value: js.Array[String]): Self = StObject.set(x, "widthElements", value.asInstanceOf[js.Any])
+      
+      inline def setWidthElementsUndefined: Self = StObject.set(x, "widthElements", js.undefined)
+      
+      inline def setWidthElementsVarargs(value: String*): Self = StObject.set(x, "widthElements", js.Array(value*))
+    }
   }
   
   // email-templates accepts nodemailer.createTransport options directly
   // too and calls createTransport if given a non-function, thus a lot
   // of different types accepted for transport
-  type NodeMailerTransportOptions = typings.nodemailer.mailerMod.^ | typings.nodemailer.smtpPoolMod.^ | typings.nodemailer.smtpPoolMod.Options | typings.nodemailer.sendmailTransportMod.^ | typings.nodemailer.sendmailTransportMod.Options | typings.nodemailer.streamTransportMod.^ | typings.nodemailer.streamTransportMod.Options | typings.nodemailer.jsonTransportMod.^ | typings.nodemailer.jsonTransportMod.Options | typings.nodemailer.sesTransportMod.^ | typings.nodemailer.sesTransportMod.Options | typings.nodemailer.smtpTransportMod.^ | typings.nodemailer.smtpTransportMod.Options | String
+  type NodeMailerTransportOptions = typings.nodemailer.mailerMod.^[Any] | typings.nodemailer.smtpPoolMod.^ | typings.nodemailer.smtpPoolMod.Options | typings.nodemailer.sendmailTransportMod.^ | typings.nodemailer.sendmailTransportMod.Options | typings.nodemailer.streamTransportMod.^ | typings.nodemailer.streamTransportMod.Options | typings.nodemailer.jsonTransportMod.^ | typings.nodemailer.jsonTransportMod.Options | typings.nodemailer.sesTransportMod.^ | typings.nodemailer.sesTransportMod.Options | typings.nodemailer.smtpTransportMod.^ | typings.nodemailer.smtpTransportMod.Options | String
   
   // No typedef for https://github.com/forwardemail/preview-email
   trait PreviewEmailOpts extends StObject {
@@ -280,12 +390,25 @@ object mod {
     /**
       * https://github.com/sindresorhus/open
       */
-    var open: js.UndefOr[js.Any] = js.undefined
+    var open: js.UndefOr[Any] = js.undefined
+    
+    /**
+      * Whether or not to open the iOS Simulator with the preview url file path.
+      * Defaults to true via process.env.NODE_ENV !== 'test' and will only run if macOS detected and not in a CI environment.
+      */
+    var openSimulator: js.UndefOr[Boolean] = js.undefined
     
     /**
       * a file path to a pug template file (defaults to preview-email's template.pug by default)
       */
     var template: js.UndefOr[String] = js.undefined
+    
+    /**
+      * A function to build preview url from file path.
+      * Defaults to (path) => 'file://[file path]'.
+      * This is where you can customize the opened path to handle WSL to Windows transformation or build a http url if dir is served.
+      */
+    var urlTransform: js.UndefOr[js.Function1[/* path */ String, String]] = js.undefined
   }
   object PreviewEmailOpts {
     
@@ -304,17 +427,30 @@ object mod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setOpen(value: js.Any): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Any): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      
+      inline def setOpenSimulator(value: Boolean): Self = StObject.set(x, "openSimulator", value.asInstanceOf[js.Any])
+      
+      inline def setOpenSimulatorUndefined: Self = StObject.set(x, "openSimulator", js.undefined)
       
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
       inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
       inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      
+      inline def setUrlTransform(value: /* path */ String => String): Self = StObject.set(x, "urlTransform", js.Any.fromFunction1(value))
+      
+      inline def setUrlTransformUndefined: Self = StObject.set(x, "urlTransform", js.undefined)
     }
   }
   
   trait View extends StObject {
+    
+    /**
+      * Default locals to pass to templates for rendering
+      */
+    var locals: js.UndefOr[Dictkey] = js.undefined
     
     var options: js.UndefOr[ViewOptions] = js.undefined
     
@@ -332,6 +468,10 @@ object mod {
     
     extension [Self <: View](x: Self) {
       
+      inline def setLocals(value: Dictkey): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+      
+      inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
+      
       inline def setOptions(value: ViewOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
@@ -347,10 +487,10 @@ object mod {
     /**
       *  the default template engine source, defaults to consolidate
       */
-    var engineSource: js.UndefOr[js.Any] = js.undefined
+    var engineSource: js.UndefOr[Any] = js.undefined
     
     /**
-      *  View extansion. defaults to 'pug', and is the default file extension for templates
+      *  View extension. defaults to 'pug', and is the default file extension for templates
       */
     var `extension`: js.UndefOr[String] = js.undefined
     
@@ -358,7 +498,7 @@ object mod {
       * a template file extension mapping, defaults to { hbs: 'handlebars', njk: 'nunjucks' }
       * (this is useful if you use different file extension naming conventions)
       */
-    var map: js.UndefOr[js.Any] = js.undefined
+    var map: js.UndefOr[Any] = js.undefined
   }
   object ViewOptions {
     
@@ -369,7 +509,7 @@ object mod {
     
     extension [Self <: ViewOptions](x: Self) {
       
-      inline def setEngineSource(value: js.Any): Self = StObject.set(x, "engineSource", value.asInstanceOf[js.Any])
+      inline def setEngineSource(value: Any): Self = StObject.set(x, "engineSource", value.asInstanceOf[js.Any])
       
       inline def setEngineSourceUndefined: Self = StObject.set(x, "engineSource", js.undefined)
       
@@ -377,7 +517,7 @@ object mod {
       
       inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
       
-      inline def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
       inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     }

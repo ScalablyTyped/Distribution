@@ -1,7 +1,7 @@
 
 # Scala.js typings for fs-merger
 
-Typings are for version 3.1.0
+Typings are for version 3.2.1
 
 ## Library description:
 Reads files from a real location
@@ -10,10 +10,10 @@ Reads files from a real location
 | ------------------ | :-------------: |
 | Full name          | fs-merger |
 | Keywords           | - |
-| # releases         | 22 |
-| # dependents       | 4 |
-| # downloads        | 3609026 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1032559.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/SparshithNR/fs-merger#readme)

@@ -8,7 +8,7 @@ trait FileManagerDataSourceSchemaModel
   extends StObject
      with HierarchicalDataSourceSchemaModel {
   
-  var isDirectory: js.UndefOr[js.Any] = js.undefined
+  var isDirectory: js.UndefOr[Any] = js.undefined
 }
 object FileManagerDataSourceSchemaModel {
   
@@ -19,7 +19,7 @@ object FileManagerDataSourceSchemaModel {
   
   extension [Self <: FileManagerDataSourceSchemaModel](x: Self) {
     
-    inline def setIsDirectory(value: js.Any): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
+    inline def setIsDirectory(value: Any): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
     
     inline def setIsDirectoryUndefined: Self = StObject.set(x, "isDirectory", js.undefined)
   }

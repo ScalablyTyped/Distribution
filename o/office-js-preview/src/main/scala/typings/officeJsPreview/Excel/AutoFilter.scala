@@ -9,10 +9,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
-  * Represents the AutoFilter object.
+  * Represents the `AutoFilter` object.
   AutoFilter turns the values in Excel column into specific filters based on the cell contents.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -31,9 +31,10 @@ trait AutoFilter
   /**
     * Applies the AutoFilter to a range. This filters the column if column index and filter criteria are specified.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
-    * @param range The range over which the AutoFilter will apply on.
+    * @param range The range on which the AutoFilter will apply.
     * @param columnIndex The zero-based column index to which the AutoFilter is applied.
     * @param criteria The filter criteria.
     */
@@ -47,8 +48,21 @@ trait AutoFilter
   def apply(range: Range, columnIndex: Unit, criteria: FilterCriteria): Unit = js.native
   
   /**
-    * Clears the filter criteria of the AutoFilter.
+    * Clears the column filter criteria of the AutoFilter.
     *
+    * @remarks
+    * [Api set: ExcelApi 1.14]
+    *
+    * @param columnIndex The zero-based column index, which represents which column filter needs to be cleared.
+    If the index value is not supported (for example, if the value is a negative number, or if the value is greater than the number of available columns in the range),
+    then an `InvalidArgument` error will be thrown.
+    */
+  def clearColumnCriteria(columnIndex: Double): Unit = js.native
+  
+  /**
+    * Clears the filter criteria and sort state of the AutoFilter.
+    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def clearCriteria(): Unit = js.native
@@ -58,40 +72,43 @@ trait AutoFilter
   var context_AutoFilter: RequestContext = js.native
   
   /**
-    *
     * An array that holds all the filter criteria in the autofiltered range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val criteria: js.Array[FilterCriteria] = js.native
   
   /**
-    *
     * Specifies if the AutoFilter is enabled.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val enabled: Boolean = js.native
   
   /**
-    * Returns the Range object that represents the range to which the AutoFilter applies.
+    * Returns the `Range` object that represents the range to which the AutoFilter applies.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def getRange(): Range = js.native
   
   /**
-    * Returns the Range object that represents the range to which the AutoFilter applies.
-    If there is no Range object associated with the AutoFilter, this method returns a null object.
+    * Returns the `Range` object that represents the range to which the AutoFilter applies.
+    If there is no `Range` object associated with the AutoFilter, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def getRangeOrNullObject(): Range = js.native
   
   /**
-    *
     * Specifies if the AutoFilter has filter criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val isDataFiltered: Boolean = js.native
@@ -108,8 +125,9 @@ trait AutoFilter
   def load(propertyNames: js.Array[String]): AutoFilter = js.native
   
   /**
-    * Applies the specified Autofilter object currently on the range.
+    * Applies the specified AutoFilter object currently on the range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def reapply(): Unit = js.native
@@ -117,6 +135,7 @@ trait AutoFilter
   /**
     * Removes the AutoFilter for the range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def remove(): Unit = js.native

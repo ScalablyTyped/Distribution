@@ -10,10 +10,10 @@ A realtime, decentralized, offline-first, graph data synchronization engine.
 | ------------------ | :-------------: |
 | Full name          | gun |
 | Keywords           | gun, gunDB, graph, document, key, value, relational, datastore, database, engine, realtime, decentralized, peer-to-peer, distributed, P2P, OSS, embedded, localstorage, S3 |
-| # releases         | 49 |
-| # dependents       | 69 |
-| # downloads        | 59298 |
-| # stars            | 10 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 7745.666666666667 |
+| # stars            | 16287.0 |
 
 ## Links
 - [Homepage](https://github.com/amark/gun#readme)

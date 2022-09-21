@@ -1,7 +1,7 @@
 
 # Scala.js typings for adal-node
 
-Typings are for version 0.2.1
+Typings are for version 0.2.3
 
 ## Library description:
 Windows Azure Active Directory Client Library for node
@@ -10,15 +10,12 @@ Windows Azure Active Directory Client Library for node
 | ------------------ | :-------------: |
 | Full name          | adal-node |
 | Keywords           | node, azure, AAD, adal, adfs, oauth |
-| # releases         | 3 |
-| # dependents       | 69 |
-| # downloads        | 18409263 |
-| # stars            | 6 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1738014.6666666667 |
+| # stars            | 2487.0 |
 
 ## Links
-- [Homepage](https://github.com/AzureAD/azure-activedirectory-library-for-nodejs#readme)
-- [Bugs](https://github.com/AzureAD/azure-activedirectory-library-for-nodejs/issues)
-- [Repository](https://github.com/AzureAD/azure-activedirectory-library-for-nodejs)
 - [Npm](https://www.npmjs.com/package/adal-node)
     
 

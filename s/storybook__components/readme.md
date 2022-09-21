@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__components
 
-Typings are for version 6.1.2
+Typings are for version 6.5.12
 
 ## Library description:
 Core Storybook Components
@@ -10,13 +10,13 @@ Core Storybook Components
 | ------------------ | :-------------: |
 | Full name          | @storybook/components |
 | Keywords           | storybook |
-| # releases         | 558 |
-| # dependents       | 130 |
-| # downloads        | 121753467 |
-| # stars            | 0 |
+| # releases         | 479 |
+| # dependents       | 0.0 |
+| # downloads        | 2.4535846333333332E7 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/lib/components)
+- [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/components)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
 - [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Fcomponents)

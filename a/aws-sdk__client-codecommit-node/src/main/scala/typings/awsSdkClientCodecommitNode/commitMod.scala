@@ -8,5 +8,5 @@ object commitMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/_Commit", "_Commit")
   @js.native
-  val Commit: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Commit: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -10,11 +10,11 @@ import typings.ecmarkdown.ecmarkdownStrings.tag
 import typings.ecmarkdown.ecmarkdownStrings.text
 import typings.ecmarkdown.ecmarkdownStrings.ul
 import typings.ecmarkdown.ecmarkdownStrings.whitespace
+import typings.ecmarkdown.nodeTypesMod.AttrToken
 import typings.ecmarkdown.nodeTypesMod.CommentToken
 import typings.ecmarkdown.nodeTypesMod.EOFToken
 import typings.ecmarkdown.nodeTypesMod.Format
 import typings.ecmarkdown.nodeTypesMod.FormatToken
-import typings.ecmarkdown.nodeTypesMod.IdToken
 import typings.ecmarkdown.nodeTypesMod.LinebreakToken
 import typings.ecmarkdown.nodeTypesMod.OpaqueTagToken
 import typings.ecmarkdown.nodeTypesMod.OrderedListToken
@@ -35,7 +35,7 @@ object tokenizerMod {
   
   @JSImport("ecmarkdown/dist/tokenizer", "Tokenizer")
   @js.native
-  class Tokenizer protected () extends StObject {
+  open class Tokenizer protected () extends StObject {
     def this(str: String) = this()
     
     var _eof: Boolean = js.native
@@ -52,35 +52,14 @@ object tokenizerMod {
     
     def enqueue(tok: Unlocated[Token], pos: Position): Unit = js.native
     
-    def enqueueLookahead(tok: Unlocated[Token], pos: Position): Unit = js.native
-    
+    def expect(name: EOF | parabreak | linebreak | whitespace | text | comment | tag | ul | ol | opaqueTag): Unit = js.native
     def expect(name: Format): Unit = js.native
-    @JSName("expect")
-    def expect_EOF(name: EOF): Unit = js.native
-    @JSName("expect")
-    def expect_comment(name: comment): Unit = js.native
-    @JSName("expect")
-    def expect_linebreak(name: linebreak): Unit = js.native
-    @JSName("expect")
-    def expect_ol(name: ol): Unit = js.native
-    @JSName("expect")
-    def expect_opaqueTag(name: opaqueTag): Unit = js.native
-    @JSName("expect")
-    def expect_parabreak(name: parabreak): Unit = js.native
-    @JSName("expect")
-    def expect_tag(name: tag): Unit = js.native
-    @JSName("expect")
-    def expect_text(name: text): Unit = js.native
-    @JSName("expect")
-    def expect_ul(name: ul): Unit = js.native
-    @JSName("expect")
-    def expect_whitespace(name: whitespace): Unit = js.native
     
     def getLocation(): Position = js.native
     
     var line: Double = js.native
     
-    def locate(tok: Unlocated[IdToken | Token], startPos: Position): /* asserts tok is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(ecmarkdown), TsIdentModule(None,List(ecmarkdown, dist, node-types)), TsIdentSimple(Token))),IArray())*/ Boolean = js.native
+    def locate(tok: Unlocated[AttrToken | Token], startPos: Position): /* asserts tok is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(ecmarkdown), TsIdentModule(None,List(ecmarkdown, dist, node-types)), TsIdentSimple(Token))),IArray())*/ Boolean = js.native
     
     def matchToken(): Unit = js.native
     
@@ -103,8 +82,6 @@ object tokenizerMod {
     
     def scanEscape(): String = js.native
     
-    def scanToEOL(): String = js.native
-    
     def scanToEndTag(endTag: String): String = js.native
     
     def scanWhitespace(): String = js.native
@@ -113,7 +90,7 @@ object tokenizerMod {
     
     def tryScanComment(): js.UndefOr[String] = js.native
     
-    def tryScanId(): IdToken | Null = js.native
+    def tryScanListItemAttributes(): js.Array[AttrToken] = js.native
     
     def tryScanTag(): js.UndefOr[RegExpMatchArray] = js.native
   }

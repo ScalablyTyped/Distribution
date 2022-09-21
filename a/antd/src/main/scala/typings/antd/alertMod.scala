@@ -30,7 +30,7 @@ object alertMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("antd/lib/alert", "default.ErrorBoundary")
     @js.native
-    class ErrorBoundary ()
+    open class ErrorBoundary ()
       extends typings.antd.errorBoundaryMod.default
     
     type _To = AlertInterface
@@ -49,6 +49,8 @@ object alertMod {
   
   trait AlertProps extends StObject {
     
+    var action: js.UndefOr[ReactNode] = js.undefined
+    
     /** Trigger when animation ending of Alert */
     var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -59,6 +61,9 @@ object alertMod {
     /** Whether Alert can be closed */
     var closable: js.UndefOr[Boolean] = js.undefined
     
+    /** Custome closeIcon */
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
+    
     /** Close text to show */
     var closeText: js.UndefOr[ReactNode] = js.undefined
     
@@ -68,7 +73,7 @@ object alertMod {
     var icon: js.UndefOr[ReactNode] = js.undefined
     
     /** Content of Alert */
-    var message: ReactNode
+    var message: js.UndefOr[ReactNode] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -89,9 +94,7 @@ object alertMod {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    /**
-      * Type of Alert styles, options:`success`, `info`, `warning`, `error`
-      */
+    /** Type of Alert styles, options:`success`, `info`, `warning`, `error` */
     var `type`: js.UndefOr[success | info | warning | error] = js.undefined
   }
   object AlertProps {
@@ -102,6 +105,10 @@ object alertMod {
     }
     
     extension [Self <: AlertProps](x: Self) {
+      
+      inline def setAction(value: ReactNode): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       
@@ -118,6 +125,10 @@ object alertMod {
       inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
       
       inline def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
+      
+      inline def setCloseIcon(value: ReactNode): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
       
       inline def setCloseText(value: ReactNode): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
       

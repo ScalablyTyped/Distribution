@@ -13,8 +13,8 @@ trait FacebookStaticEvent extends StObject {
 object FacebookStaticEvent {
   
   inline def apply(
-    subscribe: (js.Any, FacebookEventCallback[js.Any]) => Unit,
-    unsubscribe: (js.Any, FacebookEventCallback[js.Any]) => Unit
+    subscribe: (Any, FacebookEventCallback[Any]) => Unit,
+    unsubscribe: (Any, FacebookEventCallback[Any]) => Unit
   ): FacebookStaticEvent = {
     val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction2(subscribe), unsubscribe = js.Any.fromFunction2(unsubscribe))
     __obj.asInstanceOf[FacebookStaticEvent]
@@ -22,8 +22,8 @@ object FacebookStaticEvent {
   
   extension [Self <: FacebookStaticEvent](x: Self) {
     
-    inline def setSubscribe(value: (js.Any, FacebookEventCallback[js.Any]) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
+    inline def setSubscribe(value: (Any, FacebookEventCallback[Any]) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
     
-    inline def setUnsubscribe(value: (js.Any, FacebookEventCallback[js.Any]) => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
+    inline def setUnsubscribe(value: (Any, FacebookEventCallback[Any]) => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Task extends StObject {
   
   def Activate(): Unit = js.native
-  def Activate(Wait: js.Any): Unit = js.native
+  def Activate(Wait: Any): Unit = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -24,7 +24,7 @@ trait Task extends StObject {
   
   val Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Resize(Width: Double, Height: Double): Unit = js.native
   

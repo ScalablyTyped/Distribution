@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorYouTubeDialog")
 @js.native
-class ASPxClientHtmlEditorYouTubeDialog ()
+open class ASPxClientHtmlEditorYouTubeDialog ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorYouTubeDialog {
   

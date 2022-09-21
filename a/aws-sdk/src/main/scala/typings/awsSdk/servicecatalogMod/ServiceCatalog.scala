@@ -157,12 +157,12 @@ trait ServiceCatalog extends Service {
   var config_ServiceCatalog: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Copies the specified source product to the specified target product or a new product. You can copy a product to the same account or another account. You can copy a product to the same region or another region. This operation is performed asynchronously. To track the progress of the operation, use DescribeCopyProductStatus.
+    * Copies the specified source product to the specified target product or a new product. You can copy a product to the same account or another account. You can copy a product to the same Region or another Region. If you copy a product to another account, you must first share the product in a portfolio using CreatePortfolioShare. This operation is performed asynchronously. To track the progress of the operation, use DescribeCopyProductStatus.
     */
   def copyProduct(): Request[CopyProductOutput, AWSError] = js.native
   def copyProduct(callback: js.Function2[/* err */ AWSError, /* data */ CopyProductOutput, Unit]): Request[CopyProductOutput, AWSError] = js.native
   /**
-    * Copies the specified source product to the specified target product or a new product. You can copy a product to the same account or another account. You can copy a product to the same region or another region. This operation is performed asynchronously. To track the progress of the operation, use DescribeCopyProductStatus.
+    * Copies the specified source product to the specified target product or a new product. You can copy a product to the same account or another account. You can copy a product to the same Region or another Region. If you copy a product to another account, you must first share the product in a portfolio using CreatePortfolioShare. This operation is performed asynchronously. To track the progress of the operation, use DescribeCopyProductStatus.
     */
   def copyProduct(params: CopyProductInput): Request[CopyProductOutput, AWSError] = js.native
   def copyProduct(
@@ -199,12 +199,12 @@ trait ServiceCatalog extends Service {
   ): Request[CreatePortfolioOutput, AWSError] = js.native
   
   /**
-    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the management account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node. You can't share a shared resource. This includes portfolios that contain a shared product.
+    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the management account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node. You can't share a shared resource, including portfolios that contain a shared product. If the portfolio share with the specified account or organization node already exists, this action will have no effect and will not return an error. To update an existing share, you must use the  UpdatePortfolioShare API instead.
     */
   def createPortfolioShare(): Request[CreatePortfolioShareOutput, AWSError] = js.native
   def createPortfolioShare(callback: js.Function2[/* err */ AWSError, /* data */ CreatePortfolioShareOutput, Unit]): Request[CreatePortfolioShareOutput, AWSError] = js.native
   /**
-    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the management account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node. You can't share a shared resource. This includes portfolios that contain a shared product.
+    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the management account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node. You can't share a shared resource, including portfolios that contain a shared product. If the portfolio share with the specified account or organization node already exists, this action will have no effect and will not return an error. To update an existing share, you must use the  UpdatePortfolioShare API instead.
     */
   def createPortfolioShare(params: CreatePortfolioShareInput): Request[CreatePortfolioShareOutput, AWSError] = js.native
   def createPortfolioShare(
@@ -213,12 +213,12 @@ trait ServiceCatalog extends Service {
   ): Request[CreatePortfolioShareOutput, AWSError] = js.native
   
   /**
-    * Creates a product. A delegated admin is authorized to invoke this command.
+    * Creates a product. A delegated admin is authorized to invoke this command. The user or role that performs this operation must have the cloudformation:GetTemplate IAM policy permission. This policy permission is required when using the ImportFromPhysicalId template source in the information data section.
     */
   def createProduct(): Request[CreateProductOutput, AWSError] = js.native
   def createProduct(callback: js.Function2[/* err */ AWSError, /* data */ CreateProductOutput, Unit]): Request[CreateProductOutput, AWSError] = js.native
   /**
-    * Creates a product. A delegated admin is authorized to invoke this command.
+    * Creates a product. A delegated admin is authorized to invoke this command. The user or role that performs this operation must have the cloudformation:GetTemplate IAM policy permission. This policy permission is required when using the ImportFromPhysicalId template source in the information data section.
     */
   def createProduct(params: CreateProductInput): Request[CreateProductOutput, AWSError] = js.native
   def createProduct(
@@ -227,12 +227,12 @@ trait ServiceCatalog extends Service {
   ): Request[CreateProductOutput, AWSError] = js.native
   
   /**
-    * Creates a plan. A plan includes the list of resources to be created (when provisioning a new product) or modified (when updating a provisioned product) when the plan is executed. You can create one plan per provisioned product. To create a plan for an existing provisioned product, the product status must be AVAILBLE or TAINTED. To view the resource changes in the change set, use DescribeProvisionedProductPlan. To create or modify the provisioned product, use ExecuteProvisionedProductPlan.
+    * Creates a plan. A plan includes the list of resources to be created (when provisioning a new product) or modified (when updating a provisioned product) when the plan is executed. You can create one plan for each provisioned product. To create a plan for an existing provisioned product, the product status must be AVAILABLE or TAINTED. To view the resource changes in the change set, use DescribeProvisionedProductPlan. To create or modify the provisioned product, use ExecuteProvisionedProductPlan.
     */
   def createProvisionedProductPlan(): Request[CreateProvisionedProductPlanOutput, AWSError] = js.native
   def createProvisionedProductPlan(callback: js.Function2[/* err */ AWSError, /* data */ CreateProvisionedProductPlanOutput, Unit]): Request[CreateProvisionedProductPlanOutput, AWSError] = js.native
   /**
-    * Creates a plan. A plan includes the list of resources to be created (when provisioning a new product) or modified (when updating a provisioned product) when the plan is executed. You can create one plan per provisioned product. To create a plan for an existing provisioned product, the product status must be AVAILBLE or TAINTED. To view the resource changes in the change set, use DescribeProvisionedProductPlan. To create or modify the provisioned product, use ExecuteProvisionedProductPlan.
+    * Creates a plan. A plan includes the list of resources to be created (when provisioning a new product) or modified (when updating a provisioned product) when the plan is executed. You can create one plan for each provisioned product. To create a plan for an existing provisioned product, the product status must be AVAILABLE or TAINTED. To view the resource changes in the change set, use DescribeProvisionedProductPlan. To create or modify the provisioned product, use ExecuteProvisionedProductPlan.
     */
   def createProvisionedProductPlan(params: CreateProvisionedProductPlanInput): Request[CreateProvisionedProductPlanOutput, AWSError] = js.native
   def createProvisionedProductPlan(
@@ -241,12 +241,12 @@ trait ServiceCatalog extends Service {
   ): Request[CreateProvisionedProductPlanOutput, AWSError] = js.native
   
   /**
-    * Creates a provisioning artifact (also known as a version) for the specified product. You cannot create a provisioning artifact for a product that was shared with you.
+    * Creates a provisioning artifact (also known as a version) for the specified product. You cannot create a provisioning artifact for a product that was shared with you. The user or role that performs this operation must have the cloudformation:GetTemplate IAM policy permission. This policy permission is required when using the ImportFromPhysicalId template source in the information data section.
     */
   def createProvisioningArtifact(): Request[CreateProvisioningArtifactOutput, AWSError] = js.native
   def createProvisioningArtifact(callback: js.Function2[/* err */ AWSError, /* data */ CreateProvisioningArtifactOutput, Unit]): Request[CreateProvisioningArtifactOutput, AWSError] = js.native
   /**
-    * Creates a provisioning artifact (also known as a version) for the specified product. You cannot create a provisioning artifact for a product that was shared with you.
+    * Creates a provisioning artifact (also known as a version) for the specified product. You cannot create a provisioning artifact for a product that was shared with you. The user or role that performs this operation must have the cloudformation:GetTemplate IAM policy permission. This policy permission is required when using the ImportFromPhysicalId template source in the information data section.
     */
   def createProvisioningArtifact(params: CreateProvisioningArtifactInput): Request[CreateProvisioningArtifactOutput, AWSError] = js.native
   def createProvisioningArtifact(
@@ -451,6 +451,20 @@ trait ServiceCatalog extends Service {
   ): Request[DescribePortfolioShareStatusOutput, AWSError] = js.native
   
   /**
+    * Returns a summary of each of the portfolio shares that were created for the specified portfolio. You can use this API to determine which accounts or organizational nodes this portfolio have been shared, whether the recipient entity has imported the share, and whether TagOptions are included with the share. The PortfolioId and Type parameters are both required.
+    */
+  def describePortfolioShares(): Request[DescribePortfolioSharesOutput, AWSError] = js.native
+  def describePortfolioShares(callback: js.Function2[/* err */ AWSError, /* data */ DescribePortfolioSharesOutput, Unit]): Request[DescribePortfolioSharesOutput, AWSError] = js.native
+  /**
+    * Returns a summary of each of the portfolio shares that were created for the specified portfolio. You can use this API to determine which accounts or organizational nodes this portfolio have been shared, whether the recipient entity has imported the share, and whether TagOptions are included with the share. The PortfolioId and Type parameters are both required.
+    */
+  def describePortfolioShares(params: DescribePortfolioSharesInput): Request[DescribePortfolioSharesOutput, AWSError] = js.native
+  def describePortfolioShares(
+    params: DescribePortfolioSharesInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribePortfolioSharesOutput, Unit]
+  ): Request[DescribePortfolioSharesOutput, AWSError] = js.native
+  
+  /**
     * Gets information about the specified product.
     */
   def describeProduct(): Request[DescribeProductOutput, AWSError] = js.native
@@ -607,12 +621,12 @@ trait ServiceCatalog extends Service {
   ): Request[DescribeTagOptionOutput, AWSError] = js.native
   
   /**
-    * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the management account in the organization. This API can't be invoked if there are active delegated administrators in the organization. Note that a delegated administrator is not authorized to invoke DisableAWSOrganizationsAccess.
+    * Disable portfolio sharing through the Organizations service. This command will not delete your current shares, but prevents you from creating new shares throughout your organization. Current shares are not kept in sync with your organization structure if the structure changes after calling this API. Only the management account in the organization can call this API. You cannot call this API if there are active delegated administrators in the organization. Note that a delegated administrator is not authorized to invoke DisableAWSOrganizationsAccess.  If you share an Service Catalog portfolio in an organization within Organizations, and then disable Organizations access for Service Catalog, the portfolio access permissions will not sync with the latest changes to the organization structure. Specifically, accounts that you removed from the organization after disabling Service Catalog access will retain access to the previously shared portfolio. 
     */
   def disableAWSOrganizationsAccess(): Request[DisableAWSOrganizationsAccessOutput, AWSError] = js.native
   def disableAWSOrganizationsAccess(callback: js.Function2[/* err */ AWSError, /* data */ DisableAWSOrganizationsAccessOutput, Unit]): Request[DisableAWSOrganizationsAccessOutput, AWSError] = js.native
   /**
-    * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the management account in the organization. This API can't be invoked if there are active delegated administrators in the organization. Note that a delegated administrator is not authorized to invoke DisableAWSOrganizationsAccess.
+    * Disable portfolio sharing through the Organizations service. This command will not delete your current shares, but prevents you from creating new shares throughout your organization. Current shares are not kept in sync with your organization structure if the structure changes after calling this API. Only the management account in the organization can call this API. You cannot call this API if there are active delegated administrators in the organization. Note that a delegated administrator is not authorized to invoke DisableAWSOrganizationsAccess.  If you share an Service Catalog portfolio in an organization within Organizations, and then disable Organizations access for Service Catalog, the portfolio access permissions will not sync with the latest changes to the organization structure. Specifically, accounts that you removed from the organization after disabling Service Catalog access will retain access to the previously shared portfolio. 
     */
   def disableAWSOrganizationsAccess(params: DisableAWSOrganizationsAccessInput): Request[DisableAWSOrganizationsAccessOutput, AWSError] = js.native
   def disableAWSOrganizationsAccess(
@@ -707,12 +721,12 @@ trait ServiceCatalog extends Service {
   ): Request[DisassociateTagOptionFromResourceOutput, AWSError] = js.native
   
   /**
-    * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the management account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure. Note that a delegated administrator is not authorized to invoke EnableAWSOrganizationsAccess.
+    * Enable portfolio sharing feature through Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the management account in the organization. When you call this API, Service Catalog calls organizations:EnableAWSServiceAccess on your behalf so that your shares stay in sync with any changes in your Organizations structure. Note that a delegated administrator is not authorized to invoke EnableAWSOrganizationsAccess.  If you have previously disabled Organizations access for Service Catalog, and then enable access again, the portfolio access permissions might not sync with the latest changes to the organization structure. Specifically, accounts that you removed from the organization after disabling Service Catalog access, and before you enabled access again, can retain access to the previously shared portfolio. As a result, an account that has been removed from the organization might still be able to create or manage Amazon Web Services resources when it is no longer authorized to do so. Amazon Web Services is working to resolve this issue. 
     */
   def enableAWSOrganizationsAccess(): Request[EnableAWSOrganizationsAccessOutput, AWSError] = js.native
   def enableAWSOrganizationsAccess(callback: js.Function2[/* err */ AWSError, /* data */ EnableAWSOrganizationsAccessOutput, Unit]): Request[EnableAWSOrganizationsAccessOutput, AWSError] = js.native
   /**
-    * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the management account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure. Note that a delegated administrator is not authorized to invoke EnableAWSOrganizationsAccess.
+    * Enable portfolio sharing feature through Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the management account in the organization. When you call this API, Service Catalog calls organizations:EnableAWSServiceAccess on your behalf so that your shares stay in sync with any changes in your Organizations structure. Note that a delegated administrator is not authorized to invoke EnableAWSOrganizationsAccess.  If you have previously disabled Organizations access for Service Catalog, and then enable access again, the portfolio access permissions might not sync with the latest changes to the organization structure. Specifically, accounts that you removed from the organization after disabling Service Catalog access, and before you enabled access again, can retain access to the previously shared portfolio. As a result, an account that has been removed from the organization might still be able to create or manage Amazon Web Services resources when it is no longer authorized to do so. Amazon Web Services is working to resolve this issue. 
     */
   def enableAWSOrganizationsAccess(params: EnableAWSOrganizationsAccessInput): Request[EnableAWSOrganizationsAccessOutput, AWSError] = js.native
   def enableAWSOrganizationsAccess(
@@ -751,12 +765,12 @@ trait ServiceCatalog extends Service {
   ): Request[ExecuteProvisionedProductServiceActionOutput, AWSError] = js.native
   
   /**
-    * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the management account in the organization or by a delegated admin.
+    * Get the Access Status for Organizations portfolio share feature. This API can only be called by the management account in the organization or by a delegated admin.
     */
   def getAWSOrganizationsAccessStatus(): Request[GetAWSOrganizationsAccessStatusOutput, AWSError] = js.native
   def getAWSOrganizationsAccessStatus(callback: js.Function2[/* err */ AWSError, /* data */ GetAWSOrganizationsAccessStatusOutput, Unit]): Request[GetAWSOrganizationsAccessStatusOutput, AWSError] = js.native
   /**
-    * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the management account in the organization or by a delegated admin.
+    * Get the Access Status for Organizations portfolio share feature. This API can only be called by the management account in the organization or by a delegated admin.
     */
   def getAWSOrganizationsAccessStatus(params: GetAWSOrganizationsAccessStatusInput): Request[GetAWSOrganizationsAccessStatusOutput, AWSError] = js.native
   def getAWSOrganizationsAccessStatus(
@@ -779,12 +793,12 @@ trait ServiceCatalog extends Service {
   ): Request[GetProvisionedProductOutputsOutput, AWSError] = js.native
   
   /**
-    * Requests the import of a resource as a Service Catalog provisioned product that is associated to a Service Catalog product and provisioning artifact. Once imported all supported Service Catalog governance actions are supported on the provisioned product. Resource import only supports CloudFormation stack ARNs. CloudFormation StackSets and non-root nested stacks are not supported. The CloudFormation stack must have one of the following statuses to be imported: CREATE_COMPLETE, UPDATE_COMPLETE, UPDATE_ROLLBACK_COMPLETE, IMPORT_COMPLETE, IMPORT_ROLLBACK_COMPLETE. Import of the resource requires that the CloudFormation stack template matches the associated Service Catalog product provisioning artifact. 
+    * Requests the import of a resource as a Amazon Web Services Service Catalog provisioned product that is associated to a Amazon Web Services Service Catalog product and provisioning artifact. Once imported, all supported Amazon Web Services Service Catalog governance actions are supported on the provisioned product. Resource import only supports CloudFormation stack ARNs. CloudFormation StackSets and non-root nested stacks are not supported. The CloudFormation stack must have one of the following statuses to be imported: CREATE_COMPLETE, UPDATE_COMPLETE, UPDATE_ROLLBACK_COMPLETE, IMPORT_COMPLETE, IMPORT_ROLLBACK_COMPLETE. Import of the resource requires that the CloudFormation stack template matches the associated Amazon Web Services Service Catalog product provisioning artifact.  The user or role that performs this operation must have the cloudformation:GetTemplate and cloudformation:DescribeStacks IAM policy permissions. 
     */
   def importAsProvisionedProduct(): Request[ImportAsProvisionedProductOutput, AWSError] = js.native
   def importAsProvisionedProduct(callback: js.Function2[/* err */ AWSError, /* data */ ImportAsProvisionedProductOutput, Unit]): Request[ImportAsProvisionedProductOutput, AWSError] = js.native
   /**
-    * Requests the import of a resource as a Service Catalog provisioned product that is associated to a Service Catalog product and provisioning artifact. Once imported all supported Service Catalog governance actions are supported on the provisioned product. Resource import only supports CloudFormation stack ARNs. CloudFormation StackSets and non-root nested stacks are not supported. The CloudFormation stack must have one of the following statuses to be imported: CREATE_COMPLETE, UPDATE_COMPLETE, UPDATE_ROLLBACK_COMPLETE, IMPORT_COMPLETE, IMPORT_ROLLBACK_COMPLETE. Import of the resource requires that the CloudFormation stack template matches the associated Service Catalog product provisioning artifact. 
+    * Requests the import of a resource as a Amazon Web Services Service Catalog provisioned product that is associated to a Amazon Web Services Service Catalog product and provisioning artifact. Once imported, all supported Amazon Web Services Service Catalog governance actions are supported on the provisioned product. Resource import only supports CloudFormation stack ARNs. CloudFormation StackSets and non-root nested stacks are not supported. The CloudFormation stack must have one of the following statuses to be imported: CREATE_COMPLETE, UPDATE_COMPLETE, UPDATE_ROLLBACK_COMPLETE, IMPORT_COMPLETE, IMPORT_ROLLBACK_COMPLETE. Import of the resource requires that the CloudFormation stack template matches the associated Amazon Web Services Service Catalog product provisioning artifact.  The user or role that performs this operation must have the cloudformation:GetTemplate and cloudformation:DescribeStacks IAM policy permissions. 
     */
   def importAsProvisionedProduct(params: ImportAsProvisionedProductInput): Request[ImportAsProvisionedProductOutput, AWSError] = js.native
   def importAsProvisionedProduct(
@@ -793,12 +807,12 @@ trait ServiceCatalog extends Service {
   ): Request[ImportAsProvisionedProductOutput, AWSError] = js.native
   
   /**
-    * Lists all portfolios for which sharing was accepted by this account.
+    * Lists all imported portfolios for which account-to-account shares were accepted by this account. By specifying the PortfolioShareType, you can list portfolios for which organizational shares were accepted by this account.
     */
   def listAcceptedPortfolioShares(): Request[ListAcceptedPortfolioSharesOutput, AWSError] = js.native
   def listAcceptedPortfolioShares(callback: js.Function2[/* err */ AWSError, /* data */ ListAcceptedPortfolioSharesOutput, Unit]): Request[ListAcceptedPortfolioSharesOutput, AWSError] = js.native
   /**
-    * Lists all portfolios for which sharing was accepted by this account.
+    * Lists all imported portfolios for which account-to-account shares were accepted by this account. By specifying the PortfolioShareType, you can list portfolios for which organizational shares were accepted by this account.
     */
   def listAcceptedPortfolioShares(params: ListAcceptedPortfolioSharesInput): Request[ListAcceptedPortfolioSharesOutput, AWSError] = js.native
   def listAcceptedPortfolioShares(
@@ -1021,14 +1035,14 @@ trait ServiceCatalog extends Service {
   ): Request[ListServiceActionsForProvisioningArtifactOutput, AWSError] = js.native
   
   /**
-    * Returns summary information about stack instances that are associated with the specified CFN_STACKSET type provisioned product. You can filter for stack instances that are associated with a specific AWS account name or region. 
+    * Returns summary information about stack instances that are associated with the specified CFN_STACKSET type provisioned product. You can filter for stack instances that are associated with a specific Amazon Web Services account name or Region. 
     */
   def listStackInstancesForProvisionedProduct(): Request[ListStackInstancesForProvisionedProductOutput, AWSError] = js.native
   def listStackInstancesForProvisionedProduct(
     callback: js.Function2[/* err */ AWSError, /* data */ ListStackInstancesForProvisionedProductOutput, Unit]
   ): Request[ListStackInstancesForProvisionedProductOutput, AWSError] = js.native
   /**
-    * Returns summary information about stack instances that are associated with the specified CFN_STACKSET type provisioned product. You can filter for stack instances that are associated with a specific AWS account name or region. 
+    * Returns summary information about stack instances that are associated with the specified CFN_STACKSET type provisioned product. You can filter for stack instances that are associated with a specific Amazon Web Services account name or Region. 
     */
   def listStackInstancesForProvisionedProduct(params: ListStackInstancesForProvisionedProductInput): Request[ListStackInstancesForProvisionedProductOutput, AWSError] = js.native
   def listStackInstancesForProvisionedProduct(
@@ -1121,12 +1135,12 @@ trait ServiceCatalog extends Service {
   ): Request[SearchProductsAsAdminOutput, AWSError] = js.native
   
   /**
-    * Gets information about the provisioned products that meet the specified criteria.
+    * Gets information about the provisioned products that meet the specified criteria.  To ensure a complete list of provisioned products and remove duplicate products, use sort-by createdTime.  Here is a CLI example:     aws servicecatalog search-provisioned-products --sort-by createdTime   
     */
   def searchProvisionedProducts(): Request[SearchProvisionedProductsOutput, AWSError] = js.native
   def searchProvisionedProducts(callback: js.Function2[/* err */ AWSError, /* data */ SearchProvisionedProductsOutput, Unit]): Request[SearchProvisionedProductsOutput, AWSError] = js.native
   /**
-    * Gets information about the provisioned products that meet the specified criteria.
+    * Gets information about the provisioned products that meet the specified criteria.  To ensure a complete list of provisioned products and remove duplicate products, use sort-by createdTime.  Here is a CLI example:     aws servicecatalog search-provisioned-products --sort-by createdTime   
     */
   def searchProvisionedProducts(params: SearchProvisionedProductsInput): Request[SearchProvisionedProductsOutput, AWSError] = js.native
   def searchProvisionedProducts(
@@ -1175,6 +1189,20 @@ trait ServiceCatalog extends Service {
     params: UpdatePortfolioInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePortfolioOutput, Unit]
   ): Request[UpdatePortfolioOutput, AWSError] = js.native
+  
+  /**
+    * Updates the specified portfolio share. You can use this API to enable or disable TagOptions sharing for an existing portfolio share.  The portfolio share cannot be updated if the  CreatePortfolioShare operation is IN_PROGRESS, as the share is not available to recipient entities. In this case, you must wait for the portfolio share to be COMPLETED. You must provide the accountId or organization node in the input, but not both. If the portfolio is shared to both an external account and an organization node, and both shares need to be updated, you must invoke UpdatePortfolioShare separately for each share type.  This API cannot be used for removing the portfolio share. You must use DeletePortfolioShare API for that action. 
+    */
+  def updatePortfolioShare(): Request[UpdatePortfolioShareOutput, AWSError] = js.native
+  def updatePortfolioShare(callback: js.Function2[/* err */ AWSError, /* data */ UpdatePortfolioShareOutput, Unit]): Request[UpdatePortfolioShareOutput, AWSError] = js.native
+  /**
+    * Updates the specified portfolio share. You can use this API to enable or disable TagOptions sharing for an existing portfolio share.  The portfolio share cannot be updated if the  CreatePortfolioShare operation is IN_PROGRESS, as the share is not available to recipient entities. In this case, you must wait for the portfolio share to be COMPLETED. You must provide the accountId or organization node in the input, but not both. If the portfolio is shared to both an external account and an organization node, and both shares need to be updated, you must invoke UpdatePortfolioShare separately for each share type.  This API cannot be used for removing the portfolio share. You must use DeletePortfolioShare API for that action. 
+    */
+  def updatePortfolioShare(params: UpdatePortfolioShareInput): Request[UpdatePortfolioShareOutput, AWSError] = js.native
+  def updatePortfolioShare(
+    params: UpdatePortfolioShareInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdatePortfolioShareOutput, Unit]
+  ): Request[UpdatePortfolioShareOutput, AWSError] = js.native
   
   /**
     * Updates the specified product.

@@ -10,10 +10,10 @@ object restoreMod {
   
   @JSImport("material-ui/svg-icons/action/restore", JSImport.Default)
   @js.native
-  class default () extends ActionRestore
+  open class default () extends ActionRestore
   
   @JSImport("material-ui/svg-icons/action/restore", "ActionRestore")
   @js.native
-  class ActionRestore ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionRestore ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

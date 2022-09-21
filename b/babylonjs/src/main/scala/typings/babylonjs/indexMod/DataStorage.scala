@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "DataStorage")
 @js.native
-class DataStorage ()
+open class DataStorage ()
   extends typings.babylonjs.miscIndexMod.DataStorage
 /* static members */
 object DataStorage {
@@ -62,11 +62,11 @@ object DataStorage {
   
   @JSImport("babylonjs/index", "DataStorage._GetStorage")
   @js.native
-  def _GetStorage: js.Any = js.native
-  inline def _GetStorage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetStorage")(x.asInstanceOf[js.Any])
+  def _GetStorage: Any = js.native
+  inline def _GetStorage_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetStorage")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/index", "DataStorage._Storage")
   @js.native
-  def _Storage: js.Any = js.native
-  inline def _Storage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Storage")(x.asInstanceOf[js.Any])
+  def _Storage: Any = js.native
+  inline def _Storage_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Storage")(x.asInstanceOf[js.Any])
 }

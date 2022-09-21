@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "NavigationArrowForward")
 @js.native
-class NavigationArrowForward ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class NavigationArrowForward ()
+  extends Component[SvgIconProps, js.Object, Any]

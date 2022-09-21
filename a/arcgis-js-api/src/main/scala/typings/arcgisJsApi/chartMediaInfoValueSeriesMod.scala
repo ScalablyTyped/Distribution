@@ -17,7 +17,12 @@ object chartMediaInfoValueSeriesMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/popup/content/support/ChartMediaInfoValueSeries", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * The `ChartMediaInfoValueSeries` class is a read-only support class that represents information specific to how data should be plotted in a chart.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html)
+    */
+  open class Class ()
     extends StObject
        with ChartMediaInfoValueSeries {
     def this(properties: ChartMediaInfoValueSeriesProperties) = this()

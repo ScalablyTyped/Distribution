@@ -25,7 +25,7 @@ trait WorksheetView
   /* private */ @JSName("Excel.WorksheetView_typekey")
   var ExcelDotWorksheetView_typekey: WorksheetView
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Sheet: Worksheet
 }
@@ -40,7 +40,7 @@ object WorksheetView {
     DisplayOutline: Boolean,
     DisplayZeros: Boolean,
     ExcelDotWorksheetView_typekey: WorksheetView,
-    Parent: js.Any,
+    Parent: Any,
     Sheet: Worksheet
   ): WorksheetView = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], DisplayFormulas = DisplayFormulas.asInstanceOf[js.Any], DisplayGridlines = DisplayGridlines.asInstanceOf[js.Any], DisplayHeadings = DisplayHeadings.asInstanceOf[js.Any], DisplayOutline = DisplayOutline.asInstanceOf[js.Any], DisplayZeros = DisplayZeros.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Sheet = Sheet.asInstanceOf[js.Any])
@@ -66,7 +66,7 @@ object WorksheetView {
     
     inline def setExcelDotWorksheetView_typekey(value: WorksheetView): Self = StObject.set(x, "Excel.WorksheetView_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSheet(value: Worksheet): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
   }

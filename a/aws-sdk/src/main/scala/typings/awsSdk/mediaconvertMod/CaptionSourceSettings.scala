@@ -22,7 +22,7 @@ trait CaptionSourceSettings extends StObject {
   var EmbeddedSourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.EmbeddedSourceSettings] = js.undefined
   
   /**
-    * If your input captions are SCC, SMI, SRT, STL, TTML, or IMSC 1.1 in an xml file, specify the URI of the input caption source file. If your caption source is IMSC in an IMF package, use TrackSourceSettings instead of FileSoureSettings.
+    * If your input captions are SCC, SMI, SRT, STL, TTML, WebVTT, or IMSC 1.1 in an xml file, specify the URI of the input caption source file. If your caption source is IMSC in an IMF package, use TrackSourceSettings instead of FileSoureSettings.
     */
   var FileSourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.FileSourceSettings] = js.undefined
   
@@ -40,6 +40,11 @@ trait CaptionSourceSettings extends StObject {
     * Settings specific to caption sources that are specified by track number. Currently, this is only IMSC captions in an IMF package. If your caption source is IMSC 1.1 in a separate xml file, use FileSourceSettings instead of TrackSourceSettings.
     */
   var TrackSourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.TrackSourceSettings] = js.undefined
+  
+  /**
+    * Settings specific to WebVTT sources in HLS alternative rendition group. Specify the properties (renditionGroupId, renditionName or renditionLanguageCode) to identify the unique subtitle track among the alternative rendition groups present in the HLS manifest. If no unique track is found, or multiple tracks match the specified properties, the job fails. If there is only one subtitle track in the rendition group, the settings can be left empty and the default subtitle track will be chosen. If your caption source is a sidecar file, use FileSourceSettings instead of WebvttHlsSourceSettings.
+    */
+  var WebvttHlsSourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.WebvttHlsSourceSettings] = js.undefined
 }
 object CaptionSourceSettings {
   
@@ -77,5 +82,9 @@ object CaptionSourceSettings {
     inline def setTrackSourceSettings(value: TrackSourceSettings): Self = StObject.set(x, "TrackSourceSettings", value.asInstanceOf[js.Any])
     
     inline def setTrackSourceSettingsUndefined: Self = StObject.set(x, "TrackSourceSettings", js.undefined)
+    
+    inline def setWebvttHlsSourceSettings(value: WebvttHlsSourceSettings): Self = StObject.set(x, "WebvttHlsSourceSettings", value.asInstanceOf[js.Any])
+    
+    inline def setWebvttHlsSourceSettingsUndefined: Self = StObject.set(x, "WebvttHlsSourceSettings", js.undefined)
   }
 }

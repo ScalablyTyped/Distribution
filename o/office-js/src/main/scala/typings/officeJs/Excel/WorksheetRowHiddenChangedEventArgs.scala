@@ -10,49 +10,49 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Provides information about the worksheet's row hidden change event.
   *
+  * @remarks
   * [Api set: ExcelApi 1.11]
   */
 trait WorksheetRowHiddenChangedEventArgs extends StObject {
   
   /**
-    *
     * Gets the range address that represents the changed area of a specific worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var address: String
   
   /**
-    *
     * Gets the type of change that represents how the event was triggered. See `Excel.RowHiddenChangeType` for details.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var changeType: RowHiddenChangeType | Unhidden | Hidden
   
   /**
+    * Gets the source of the event. See `Excel.EventSource` for details.
     *
-    * Gets the source of the event. See Excel.EventSource for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var source: EventSource | Local | Remote
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var `type`: WorksheetRowHiddenChanged
   
   /**
+    * Gets the ID of the worksheet in which the data changed.
     *
-    * Gets the id of the worksheet in which the data changed.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var worksheetId: String

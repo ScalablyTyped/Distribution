@@ -18,7 +18,7 @@ object navMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Nav", "NavBase")
   @js.native
-  class NavBase protected ()
+  open class NavBase protected ()
     extends typings.officeUiFabricReact.navBaseMod.NavBase {
     def this(props: INavProps) = this()
   }

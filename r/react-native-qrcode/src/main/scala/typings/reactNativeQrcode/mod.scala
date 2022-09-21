@@ -9,10 +9,10 @@ object mod {
   
   @JSImport("react-native-qrcode", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[QRCodeProperties, js.Object, js.Any]
+  open class default ()
+    extends Component[QRCodeProperties, js.Object, Any]
   
-  type QRCode = Component[QRCodeProperties, js.Object, js.Any]
+  type QRCode = Component[QRCodeProperties, js.Object, Any]
   
   trait QRCodeProperties extends StObject {
     

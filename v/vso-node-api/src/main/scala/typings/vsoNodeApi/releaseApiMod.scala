@@ -1,7 +1,6 @@
 package typings.vsoNodeApi
 
-import typings.node.NodeJS.ReadableStream
-import typings.std.Date
+import typings.std.ReadableStream
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
 import typings.vsoNodeApi.formInputInterfacesMod.InputValuesQuery
 import typings.vsoNodeApi.releaseInterfacesMod.AgentArtifactDefinition
@@ -58,7 +57,7 @@ object releaseApiMod {
   
   @JSImport("vso-node-api/ReleaseApi", "ReleaseApi")
   @js.native
-  class ReleaseApi protected () extends IReleaseApi {
+  open class ReleaseApi protected () extends IReleaseApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
@@ -148,7 +147,7 @@ object releaseApiMod {
     def getDefinitionEnvironments(project: String, taskGroupId: String, propertyFilters: js.Array[String]): js.Promise[js.Array[DefinitionEnvironmentReference]] = js.native
     def getDefinitionEnvironments(project: String, taskGroupId: Unit, propertyFilters: js.Array[String]): js.Promise[js.Array[DefinitionEnvironmentReference]] = js.native
     
-    def getDefinitionRevision(project: String, definitionId: Double, revision: Double): js.Promise[ReadableStream] = js.native
+    def getDefinitionRevision(project: String, definitionId: Double, revision: Double): js.Promise[ReadableStream[Any]] = js.native
     
     def getDefinitionTags(project: String, releaseDefinitionId: Double): js.Promise[js.Array[String]] = js.native
     
@@ -160,8 +159,8 @@ object releaseApiMod {
       definitionId: js.UndefOr[Double],
       definitionEnvironmentId: js.UndefOr[Double],
       createdBy: js.UndefOr[String],
-      minModifiedTime: js.UndefOr[Date],
-      maxModifiedTime: js.UndefOr[Date],
+      minModifiedTime: js.UndefOr[js.Date],
+      maxModifiedTime: js.UndefOr[js.Date],
       deploymentStatus: js.UndefOr[DeploymentStatus],
       operationStatus: js.UndefOr[DeploymentOperationStatus],
       latestAttemptsOnly: js.UndefOr[Boolean],
@@ -181,24 +180,24 @@ object releaseApiMod {
     def getFolders(project: String, path: String, queryOrder: FolderPathQueryOrder): js.Promise[js.Array[Folder]] = js.native
     def getFolders(project: String, path: Unit, queryOrder: FolderPathQueryOrder): js.Promise[js.Array[Folder]] = js.native
     
-    def getGateLog(project: String, releaseId: Double, environmentId: Double, gateId: Double, taskId: Double): js.Promise[ReadableStream] = js.native
+    def getGateLog(project: String, releaseId: Double, environmentId: Double, gateId: Double, taskId: Double): js.Promise[ReadableStream[Any]] = js.native
     
     def getInputValues(query: InputValuesQuery, project: String): js.Promise[InputValuesQuery] = js.native
     
     def getIssues(project: String, buildId: Double): js.Promise[js.Array[AutoTriggerIssue]] = js.native
     def getIssues(project: String, buildId: Double, sourceId: String): js.Promise[js.Array[AutoTriggerIssue]] = js.native
     
-    def getLog(project: String, releaseId: Double, environmentId: Double, taskId: Double): js.Promise[ReadableStream] = js.native
-    def getLog(project: String, releaseId: Double, environmentId: Double, taskId: Double, attemptId: Double): js.Promise[ReadableStream] = js.native
+    def getLog(project: String, releaseId: Double, environmentId: Double, taskId: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getLog(project: String, releaseId: Double, environmentId: Double, taskId: Double, attemptId: Double): js.Promise[ReadableStream[Any]] = js.native
     
-    def getLogs(project: String, releaseId: Double): js.Promise[ReadableStream] = js.native
+    def getLogs(project: String, releaseId: Double): js.Promise[ReadableStream[Any]] = js.native
     
     def getManualIntervention(project: String, releaseId: Double, manualInterventionId: Double): js.Promise[ManualIntervention] = js.native
     
     def getManualInterventions(project: String, releaseId: Double): js.Promise[js.Array[ManualIntervention]] = js.native
     
     def getMetrics(project: String): js.Promise[js.Array[Metric]] = js.native
-    def getMetrics(project: String, minMetricsTime: Date): js.Promise[js.Array[Metric]] = js.native
+    def getMetrics(project: String, minMetricsTime: js.Date): js.Promise[js.Array[Metric]] = js.native
     
     def getRelease(project: String, releaseId: Double): js.Promise[Release] = js.native
     def getRelease(project: String, releaseId: Double, approvalFilters: Unit, propertyFilters: js.Array[String]): js.Promise[Release] = js.native
@@ -220,7 +219,7 @@ object releaseApiMod {
     
     def getReleaseDefinitionHistory(project: String, definitionId: Double): js.Promise[js.Array[ReleaseDefinitionRevision]] = js.native
     
-    def getReleaseDefinitionRevision(project: String, definitionId: Double, revision: Double): js.Promise[ReadableStream] = js.native
+    def getReleaseDefinitionRevision(project: String, definitionId: Double, revision: Double): js.Promise[ReadableStream[Any]] = js.native
     
     def getReleaseDefinitionSummary(project: String, definitionId: Double, releaseCount: Double): js.Promise[ReleaseDefinitionSummary] = js.native
     def getReleaseDefinitionSummary(project: String, definitionId: Double, releaseCount: Double, includeArtifact: Boolean): js.Promise[ReleaseDefinitionSummary] = js.native
@@ -262,7 +261,7 @@ object releaseApiMod {
     
     def getReleaseProjects(artifactType: String, artifactSourceId: String): js.Promise[js.Array[ProjectReference]] = js.native
     
-    def getReleaseRevision(project: String, releaseId: Double, definitionSnapshotRevision: Double): js.Promise[ReadableStream] = js.native
+    def getReleaseRevision(project: String, releaseId: Double, definitionSnapshotRevision: Double): js.Promise[ReadableStream[Any]] = js.native
     
     def getReleaseSettings(project: String): js.Promise[ReleaseSettings] = js.native
     
@@ -281,8 +280,8 @@ object releaseApiMod {
       createdBy: js.UndefOr[String],
       statusFilter: js.UndefOr[ReleaseStatus],
       environmentStatusFilter: js.UndefOr[Double],
-      minCreatedTime: js.UndefOr[Date],
-      maxCreatedTime: js.UndefOr[Date],
+      minCreatedTime: js.UndefOr[js.Date],
+      maxCreatedTime: js.UndefOr[js.Date],
       queryOrder: js.UndefOr[ReleaseQueryOrder],
       top: js.UndefOr[Double],
       continuationToken: js.UndefOr[Double],
@@ -312,7 +311,7 @@ object releaseApiMod {
       recordId: String,
       `type`: String,
       name: String
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     
     def getTaskAttachments(
       project: String,
@@ -329,7 +328,7 @@ object releaseApiMod {
       environmentId: Double,
       releaseDeployPhaseId: Double,
       taskId: Double
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     def getTaskLog(
       project: String,
       releaseId: Double,
@@ -337,7 +336,7 @@ object releaseApiMod {
       releaseDeployPhaseId: Double,
       taskId: Double,
       startLine: Double
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     def getTaskLog(
       project: String,
       releaseId: Double,
@@ -346,7 +345,7 @@ object releaseApiMod {
       taskId: Double,
       startLine: Double,
       endLine: Double
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     def getTaskLog(
       project: String,
       releaseId: Double,
@@ -355,7 +354,7 @@ object releaseApiMod {
       taskId: Double,
       startLine: Unit,
       endLine: Double
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     
     def getTaskLog2(
       project: String,
@@ -364,7 +363,7 @@ object releaseApiMod {
       attemptId: Double,
       timelineId: String,
       taskId: Double
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     def getTaskLog2(
       project: String,
       releaseId: Double,
@@ -373,7 +372,7 @@ object releaseApiMod {
       timelineId: String,
       taskId: Double,
       startLine: Double
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     def getTaskLog2(
       project: String,
       releaseId: Double,
@@ -383,7 +382,7 @@ object releaseApiMod {
       taskId: Double,
       startLine: Double,
       endLine: Double
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     def getTaskLog2(
       project: String,
       releaseId: Double,
@@ -393,7 +392,7 @@ object releaseApiMod {
       taskId: Double,
       startLine: Unit,
       endLine: Double
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     
     def getTasks(project: String, releaseId: Double, environmentId: Double): js.Promise[js.Array[ReleaseTask]] = js.native
     def getTasks(project: String, releaseId: Double, environmentId: Double, attemptId: Double): js.Promise[js.Array[ReleaseTask]] = js.native

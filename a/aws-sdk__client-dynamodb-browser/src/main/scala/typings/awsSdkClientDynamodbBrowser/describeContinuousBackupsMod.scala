@@ -8,5 +8,5 @@ object describeContinuousBackupsMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/DescribeContinuousBackups", "DescribeContinuousBackups")
   @js.native
-  val DescribeContinuousBackups: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DescribeContinuousBackups: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

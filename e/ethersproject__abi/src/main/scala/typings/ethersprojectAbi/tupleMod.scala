@@ -1,5 +1,6 @@
 package typings.ethersprojectAbi
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.ethersprojectAbi.abstractCoderMod.Coder
 import typings.ethersprojectAbi.abstractCoderMod.Writer
 import org.scalablytyped.runtime.StObject
@@ -10,11 +11,12 @@ object tupleMod {
   
   @JSImport("@ethersproject/abi/lib/coders/tuple", "TupleCoder")
   @js.native
-  class TupleCoder protected () extends Coder {
+  open class TupleCoder protected () extends Coder {
     def this(coders: js.Array[Coder], localName: String) = this()
     
     val coders: js.Array[Coder] = js.native
     
-    def encode(writer: Writer, value: js.Array[js.Any]): Double = js.native
+    def encode(writer: Writer, value: js.Array[Any]): Double = js.native
+    def encode(writer: Writer, value: StringDictionary[Any]): Double = js.native
   }
 }

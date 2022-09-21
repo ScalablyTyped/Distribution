@@ -43,7 +43,7 @@ trait ControlFormat extends StObject {
   
   var MultiSelect: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var PrintObject: Boolean = js.native
   

@@ -10,7 +10,7 @@ trait IgGridSummariesColumnSettingSummaryOperand
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * If it is false the summary operand will be shown in dropdown but it will not be made calculation

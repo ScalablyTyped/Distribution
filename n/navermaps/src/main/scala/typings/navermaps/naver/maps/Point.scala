@@ -33,4 +33,8 @@ trait Point
   def sub(point: Coord): Point = js.native
   def sub(point: PointLiteral): Point = js.native
   def sub(x: Double, y: Double): Point = js.native
+  
+  var x: Double = js.native
+  
+  var y: Double = js.native
 }

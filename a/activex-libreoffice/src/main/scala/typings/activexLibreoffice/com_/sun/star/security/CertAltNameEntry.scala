@@ -14,11 +14,11 @@ trait CertAltNameEntry extends StObject {
   var Type: ExtAltNameType
   
   /** stores the value of entry. */
-  var Value: js.Any
+  var Value: Any
 }
 object CertAltNameEntry {
   
-  inline def apply(Type: ExtAltNameType, Value: js.Any): CertAltNameEntry = {
+  inline def apply(Type: ExtAltNameType, Value: Any): CertAltNameEntry = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertAltNameEntry]
   }
@@ -27,6 +27,6 @@ object CertAltNameEntry {
     
     inline def setType(value: ExtAltNameType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

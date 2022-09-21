@@ -29,7 +29,7 @@ object GetExportSnapshotRecordsResult {
     
     inline def setExportSnapshotRecordsUndefined: Self = StObject.set(x, "exportSnapshotRecords", js.undefined)
     
-    inline def setExportSnapshotRecordsVarargs(value: ExportSnapshotRecord*): Self = StObject.set(x, "exportSnapshotRecords", js.Array(value :_*))
+    inline def setExportSnapshotRecordsVarargs(value: ExportSnapshotRecord*): Self = StObject.set(x, "exportSnapshotRecords", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

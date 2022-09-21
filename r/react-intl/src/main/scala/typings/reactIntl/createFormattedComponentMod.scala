@@ -5,6 +5,7 @@ import typings.formatjsIntl.srcTypesMod.FormatDisplayNameOptions
 import typings.formatjsIntl.srcTypesMod.FormatListOptions
 import typings.formatjsIntl.srcTypesMod.FormatNumberOptions
 import typings.react.mod.FC
+import typings.reactIntl.anon.Children
 import typings.reactIntl.anon.ChildrenValue
 import typings.reactIntl.anon.Value
 import typings.reactIntl.anon.`0`
@@ -26,9 +27,13 @@ object createFormattedComponentMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("react-intl/lib/src/components/createFormattedComponent", "FormattedListParts")
+  @js.native
+  val FormattedListParts: FC[FormatListOptions & Value] = js.native
+  
   @JSImport("react-intl/lib/src/components/createFormattedComponent", "FormattedNumberParts")
   @js.native
-  val FormattedNumberParts: FC[FormatNumberOptions & Value] = js.native
+  val FormattedNumberParts: FC[FormatNumberOptions & Children] = js.native
   
   inline def createFormattedComponent_formatDate(name: formatDate): FC[FormatDateOptions & `0`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDateOptions & `0`]]
   

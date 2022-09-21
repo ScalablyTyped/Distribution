@@ -10,10 +10,10 @@ A basic but super fast JavaScript implementation of the k-dimensional tree data 
 | ------------------ | :-------------: |
 | Full name          | kd-tree-javascript |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 40417 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 22188.0 |
+| # stars            | 578.0 |
 
 ## Links
 - [Homepage](https://github.com/ubilabs/kd-tree-javascript#readme)

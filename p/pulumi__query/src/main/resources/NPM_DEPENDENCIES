@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pulumi/query" : "0.3.0"
+      "@pulumi/query" : "v0.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@pulumi/query" : "0.3.0"
+      "@pulumi/query" : "v0.6.0"
     }
   ],
   "compile-devDependencies" : [

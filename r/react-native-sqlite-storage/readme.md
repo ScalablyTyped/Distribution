@@ -10,10 +10,10 @@ SQLite3 bindings for React Native (Android & iOS)
 | ------------------ | :-------------: |
 | Full name          | react-native-sqlite-storage |
 | Keywords           | react-native-sqlite-storage, react-native-sqlite, react-component, reactnative, react-native, sqlite, sqlite3, ios, android, promise, cordova-sqlite-storage |
-| # releases         | 6 |
-| # dependents       | 24 |
-| # downloads        | 654565 |
-| # stars            | 10 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 81286.0 |
+| # stars            | 2452.0 |
 
 ## Links
 - [Homepage](https://github.com/andpor/react-native-sqlite-storage)

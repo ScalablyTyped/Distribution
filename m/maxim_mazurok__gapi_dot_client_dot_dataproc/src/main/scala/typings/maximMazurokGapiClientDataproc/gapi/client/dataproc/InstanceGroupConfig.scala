@@ -44,7 +44,7 @@ trait InstanceGroupConfig extends StObject {
   /** Optional. Specifies the minimum cpu platform for the Instance Group. See Dataproc -> Minimum CPU Platform (https://cloud.google.com/dataproc/docs/concepts/compute/dataproc-min-cpu). */
   var minCpuPlatform: js.UndefOr[String] = js.undefined
   
-  /** Optional. The number of VM instances in the instance group. For master instance groups, must be set to 1. */
+  /** Optional. The number of VM instances in the instance group. For HA cluster master_config groups, must be set to 3. For standard cluster master_config groups, must be set to 1. */
   var numInstances: js.UndefOr[Double] = js.undefined
   
   /**
@@ -66,7 +66,7 @@ object InstanceGroupConfig {
     
     inline def setAcceleratorsUndefined: Self = StObject.set(x, "accelerators", js.undefined)
     
-    inline def setAcceleratorsVarargs(value: AcceleratorConfig*): Self = StObject.set(x, "accelerators", js.Array(value :_*))
+    inline def setAcceleratorsVarargs(value: AcceleratorConfig*): Self = StObject.set(x, "accelerators", js.Array(value*))
     
     inline def setDiskConfig(value: DiskConfig): Self = StObject.set(x, "diskConfig", value.asInstanceOf[js.Any])
     
@@ -80,13 +80,13 @@ object InstanceGroupConfig {
     
     inline def setInstanceNamesUndefined: Self = StObject.set(x, "instanceNames", js.undefined)
     
-    inline def setInstanceNamesVarargs(value: String*): Self = StObject.set(x, "instanceNames", js.Array(value :_*))
+    inline def setInstanceNamesVarargs(value: String*): Self = StObject.set(x, "instanceNames", js.Array(value*))
     
     inline def setInstanceReferences(value: js.Array[InstanceReference]): Self = StObject.set(x, "instanceReferences", value.asInstanceOf[js.Any])
     
     inline def setInstanceReferencesUndefined: Self = StObject.set(x, "instanceReferences", js.undefined)
     
-    inline def setInstanceReferencesVarargs(value: InstanceReference*): Self = StObject.set(x, "instanceReferences", js.Array(value :_*))
+    inline def setInstanceReferencesVarargs(value: InstanceReference*): Self = StObject.set(x, "instanceReferences", js.Array(value*))
     
     inline def setIsPreemptible(value: Boolean): Self = StObject.set(x, "isPreemptible", value.asInstanceOf[js.Any])
     

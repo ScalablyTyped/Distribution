@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.SetEffect")
 @js.native
-/* private */ class SetEffect ()
+/* private */ open class SetEffect ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.SetEffect {
   
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.SetEffect_typekey")
@@ -25,5 +25,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Property: MsoAnimProperty = js.native
   
   /* CompleteClass */
-  var To: js.Any = js.native
+  var To: Any = js.native
 }

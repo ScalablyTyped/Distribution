@@ -38,7 +38,7 @@ trait Video extends StObject {
   var localizations: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.VideoLocalization}
-    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Video & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Video & TopLevel[Any]
   ] = js.undefined
   
   /** The monetizationDetails object encapsulates information about the monetization status of the video. */
@@ -55,8 +55,14 @@ trait Video extends StObject {
     */
   var processingDetails: js.UndefOr[VideoProcessingDetails] = js.undefined
   
-  /** The projectDetails object contains information about the project specific video metadata. */
-  var projectDetails: js.UndefOr[VideoProjectDetails] = js.undefined
+  /**
+    * The projectDetails object contains information about the project specific video metadata. b/157517979: This part was never populated after it was added. However, it sees non-zero
+    * traffic because there is generated client code in the wild that refers to it [1]. We keep this field and do NOT remove it because otherwise V3 would return an error when this part
+    * gets requested [2]. [1]
+    * https://developers.google.com/resources/api-libraries/documentation/youtube/v3/csharp/latest/classGoogle_1_1Apis_1_1YouTube_1_1v3_1_1Data_1_1VideoProjectDetails.html [2]
+    * http://google3/video/youtube/src/python/servers/data_api/common.py?l=1565-1569&rcl=344141677
+    */
+  var projectDetails: js.UndefOr[Any] = js.undefined
   
   /** The recordingDetails object encapsulates information about the location, date and address where the video was recorded. */
   var recordingDetails: js.UndefOr[VideoRecordingDetails] = js.undefined
@@ -119,7 +125,7 @@ object Video {
     inline def setLocalizations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.VideoLocalization}
-      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Video & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Video & TopLevel[Any]
     ): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     
     inline def setLocalizationsUndefined: Self = StObject.set(x, "localizations", js.undefined)
@@ -136,7 +142,7 @@ object Video {
     
     inline def setProcessingDetailsUndefined: Self = StObject.set(x, "processingDetails", js.undefined)
     
-    inline def setProjectDetails(value: VideoProjectDetails): Self = StObject.set(x, "projectDetails", value.asInstanceOf[js.Any])
+    inline def setProjectDetails(value: Any): Self = StObject.set(x, "projectDetails", value.asInstanceOf[js.Any])
     
     inline def setProjectDetailsUndefined: Self = StObject.set(x, "projectDetails", js.undefined)
     

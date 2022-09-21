@@ -33,6 +33,6 @@ object CmafAdditionalManifest {
     
     inline def setSelectedOutputsUndefined: Self = StObject.set(x, "SelectedOutputs", js.undefined)
     
-    inline def setSelectedOutputsVarargs(value: stringMin1*): Self = StObject.set(x, "SelectedOutputs", js.Array(value :_*))
+    inline def setSelectedOutputsVarargs(value: stringMin1*): Self = StObject.set(x, "SelectedOutputs", js.Array(value*))
   }
 }

@@ -8,6 +8,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  /* Inlined waterline.waterline.DatastoreConfig & {  identity :undefined} */
+  trait DatastoreConfigidentityun extends StObject {
+    
+    var adapter: String
+    
+    var identity: Unit
+  }
+  object DatastoreConfigidentityun {
+    
+    inline def apply(adapter: String, identity: Unit): DatastoreConfigidentityun = {
+      val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DatastoreConfigidentityun]
+    }
+    
+    extension [Self <: DatastoreConfigidentityun](x: Self) {
+      
+      inline def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      
+      inline def setIdentity(value: Unit): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Extend extends StObject {
     
     def extend(params: CollectionDefinition): CollectionClass

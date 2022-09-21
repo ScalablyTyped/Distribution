@@ -11,17 +11,17 @@ trait XHierarchicalNameReplace
      with XHierarchicalNameAccess {
   
   /** replaces the element at the specified name. */
-  def replaceByHierarchicalName(aName: String, aElement: js.Any): Unit
+  def replaceByHierarchicalName(aName: String, aElement: Any): Unit
 }
 object XHierarchicalNameReplace {
   
   inline def apply(
     acquire: () => Unit,
-    getByHierarchicalName: String => js.Any,
+    getByHierarchicalName: String => Any,
     hasByHierarchicalName: String => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    replaceByHierarchicalName: (String, js.Any) => Unit
+    replaceByHierarchicalName: (String, Any) => Unit
   ): XHierarchicalNameReplace = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getByHierarchicalName = js.Any.fromFunction1(getByHierarchicalName), hasByHierarchicalName = js.Any.fromFunction1(hasByHierarchicalName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), replaceByHierarchicalName = js.Any.fromFunction2(replaceByHierarchicalName))
     __obj.asInstanceOf[XHierarchicalNameReplace]
@@ -29,6 +29,6 @@ object XHierarchicalNameReplace {
   
   extension [Self <: XHierarchicalNameReplace](x: Self) {
     
-    inline def setReplaceByHierarchicalName(value: (String, js.Any) => Unit): Self = StObject.set(x, "replaceByHierarchicalName", js.Any.fromFunction2(value))
+    inline def setReplaceByHierarchicalName(value: (String, Any) => Unit): Self = StObject.set(x, "replaceByHierarchicalName", js.Any.fromFunction2(value))
   }
 }

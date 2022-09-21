@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "PostProcessRenderPipelineManagerSceneComponent")
 @js.native
-class PostProcessRenderPipelineManagerSceneComponent protected ()
+open class PostProcessRenderPipelineManagerSceneComponent protected ()
   extends typings.babylonjs.indexMod.PostProcessRenderPipelineManagerSceneComponent {
   /**
     * Creates a new instance of the component for the given scene

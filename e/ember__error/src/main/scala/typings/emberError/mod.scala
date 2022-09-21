@@ -9,16 +9,18 @@ object mod {
   
   @JSImport("@ember/error", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
-  type EmberError = Error
+  type EmberError = js.Error
 }

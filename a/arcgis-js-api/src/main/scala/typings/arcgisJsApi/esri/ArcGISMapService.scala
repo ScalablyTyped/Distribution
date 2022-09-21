@@ -30,6 +30,8 @@ trait ArcGISMapService extends StObject {
   /**
     * Indicates whether the layer will be included in the legend.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#legendEnabled)
     */
   var legendEnabled: Boolean

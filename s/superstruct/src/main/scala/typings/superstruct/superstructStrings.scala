@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object superstructStrings {
   
   @js.native
-  sealed trait Flatten extends StObject
-  inline def Flatten: Flatten = "Flatten".asInstanceOf[Flatten]
+  sealed trait EnumSchema extends StObject
+  inline def EnumSchema: EnumSchema = "EnumSchema".asInstanceOf[EnumSchema]
   
   @js.native
-  sealed trait InferObjectType extends StObject
-  inline def InferObjectType: InferObjectType = "InferObjectType".asInstanceOf[InferObjectType]
+  sealed trait ObjectType extends StObject
+  inline def ObjectType: ObjectType = "ObjectType".asInstanceOf[ObjectType]
   
   @js.native
-  sealed trait OptionalizeObject extends StObject
-  inline def OptionalizeObject: OptionalizeObject = "OptionalizeObject".asInstanceOf[OptionalizeObject]
+  sealed trait PartialObjectSchema extends StObject
+  inline def PartialObjectSchema: PartialObjectSchema = "PartialObjectSchema".asInstanceOf[PartialObjectSchema]
   
   @js.native
   sealed trait Simplify extends StObject
   inline def Simplify: Simplify = "Simplify".asInstanceOf[Simplify]
   
   @js.native
-  sealed trait StructTuple extends StObject
-  inline def StructTuple: StructTuple = "StructTuple".asInstanceOf[StructTuple]
+  sealed trait StructSchema extends StObject
+  inline def StructSchema: StructSchema = "StructSchema".asInstanceOf[StructSchema]
   
   @js.native
   sealed trait TupleSchema extends StObject
@@ -33,16 +33,4 @@ object superstructStrings {
   @js.native
   sealed trait enums extends StObject
   inline def enums: enums = "enums".asInstanceOf[enums]
-  
-  @js.native
-  sealed trait `object` extends StObject
-  inline def `object`: `object` = "object".asInstanceOf[`object`]
-  
-  @js.native
-  sealed trait partial extends StObject
-  inline def partial: partial = "partial".asInstanceOf[partial]
-  
-  @js.native
-  sealed trait `type` extends StObject
-  inline def `type`: `type` = "type".asInstanceOf[`type`]
 }

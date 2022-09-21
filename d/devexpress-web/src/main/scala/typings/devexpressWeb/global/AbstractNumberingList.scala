@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("AbstractNumberingList")
 @js.native
-class AbstractNumberingList ()
+open class AbstractNumberingList ()
   extends StObject
      with typings.devexpressWeb.AbstractNumberingList {
   

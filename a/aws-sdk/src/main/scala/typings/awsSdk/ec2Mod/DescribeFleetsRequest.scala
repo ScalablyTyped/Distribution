@@ -17,7 +17,7 @@ trait DescribeFleetsRequest extends StObject {
   var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * The ID of the EC2 Fleets.
+    * The IDs of the EC2 Fleets.  If a fleet is of type instant, you must specify the fleet ID, otherwise it does not appear in the response. 
     */
   var FleetIds: js.UndefOr[FleetIdSet] = js.undefined
   
@@ -48,13 +48,13 @@ object DescribeFleetsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setFleetIds(value: FleetIdSet): Self = StObject.set(x, "FleetIds", value.asInstanceOf[js.Any])
     
     inline def setFleetIdsUndefined: Self = StObject.set(x, "FleetIds", js.undefined)
     
-    inline def setFleetIdsVarargs(value: FleetId*): Self = StObject.set(x, "FleetIds", js.Array(value :_*))
+    inline def setFleetIdsVarargs(value: FleetId*): Self = StObject.set(x, "FleetIds", js.Array(value*))
     
     inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

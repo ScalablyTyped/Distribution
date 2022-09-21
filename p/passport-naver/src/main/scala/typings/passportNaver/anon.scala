@@ -10,7 +10,7 @@ object anon {
     
     var age: Double
     
-    var birthday: js.Any
+    var birthday: Any
     
     var email: String
     
@@ -22,7 +22,7 @@ object anon {
   }
   object Age {
     
-    inline def apply(age: Double, birthday: js.Any, email: String, id: String, nickname: String, profile_image: String): Age = {
+    inline def apply(age: Double, birthday: Any, email: String, id: String, nickname: String, profile_image: String): Age = {
       val __obj = js.Dynamic.literal(age = age.asInstanceOf[js.Any], birthday = birthday.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], profile_image = profile_image.asInstanceOf[js.Any])
       __obj.asInstanceOf[Age]
     }
@@ -31,7 +31,7 @@ object anon {
       
       inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       
-      inline def setBirthday(value: js.Any): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
+      inline def setBirthday(value: Any): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

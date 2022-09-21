@@ -11,7 +11,7 @@ trait ClusterSelector extends StObject {
   var clusterLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterSelector & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterSelector & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -32,7 +32,7 @@ object ClusterSelector {
     inline def setClusterLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterSelector & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.ClusterSelector & TopLevel[Any]
     ): Self = StObject.set(x, "clusterLabels", value.asInstanceOf[js.Any])
     
     inline def setClusterLabelsUndefined: Self = StObject.set(x, "clusterLabels", js.undefined)

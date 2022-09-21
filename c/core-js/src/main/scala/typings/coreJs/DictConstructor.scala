@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DictConstructor
   extends StObject
-     with Instantiable0[Dict[js.Any | js.Object]]
-     with Instantiable1[(/* value */ js.Any) | (/* value */ Dict[js.Object]), Dict[js.Any | js.Object]] {
+     with Instantiable0[Dict[Any | js.Object]]
+     with Instantiable1[(/* value */ Any) | (/* value */ Dict[js.Object]), Dict[Any | js.Object]] {
   
-  def apply(): Dict[js.Any] = js.native
-  def apply(value: js.Any): Dict[js.Any] = js.native
+  def apply(): Dict[Any] = js.native
+  def apply(value: Any): Dict[Any] = js.native
   def apply[T](value: Dict[T]): Dict[T] = js.native
   
   def entries[T](`object`: Dict[T]): IterableIterator[js.Tuple2[PropertyKey, T]] = js.native
@@ -27,7 +27,7 @@ trait DictConstructor
   def every[T](
     `object`: Dict[T],
     callbackfn: js.Function3[/* value */ T, /* key */ PropertyKey, /* dict */ Dict[T], Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): Boolean = js.native
   
   def filter[T](
@@ -37,7 +37,7 @@ trait DictConstructor
   def filter[T](
     `object`: Dict[T],
     callbackfn: js.Function3[/* value */ T, /* key */ PropertyKey, /* dict */ Dict[T], Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): Dict[T] = js.native
   
   def find[T](
@@ -47,7 +47,7 @@ trait DictConstructor
   def find[T](
     `object`: Dict[T],
     callbackfn: js.Function3[/* value */ T, /* key */ PropertyKey, /* dict */ Dict[T], Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): js.UndefOr[T] = js.native
   
   def findKey[T](
@@ -57,7 +57,7 @@ trait DictConstructor
   def findKey[T](
     `object`: Dict[T],
     callbackfn: js.Function3[/* value */ T, /* key */ PropertyKey, /* dict */ Dict[T], Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): PropertyKey = js.native
   
   def forEach[T](
@@ -67,7 +67,7 @@ trait DictConstructor
   def forEach[T](
     `object`: Dict[T],
     callbackfn: js.Function3[/* value */ T, /* key */ PropertyKey, /* dict */ Dict[T], Unit],
-    thisArg: js.Any
+    thisArg: Any
   ): Unit = js.native
   
   def get[T](`object`: Dict[T], key: PropertyKey): js.UndefOr[T] = js.native
@@ -76,7 +76,7 @@ trait DictConstructor
   
   def includes[T](`object`: Dict[T], value: T): Boolean = js.native
   
-  def isDict(value: js.Any): /* is core-js.Dict<any> */ Boolean = js.native
+  def isDict(value: Any): /* is core-js.Dict<any> */ Boolean = js.native
   
   def keyOf[T](`object`: Dict[T], value: T): PropertyKey = js.native
   
@@ -89,7 +89,7 @@ trait DictConstructor
   def map[T, U](
     `object`: Dict[T],
     callbackfn: js.Function3[/* value */ T, /* key */ PropertyKey, /* dict */ Dict[T], U],
-    thisArg: js.Any
+    thisArg: Any
   ): Dict[U] = js.native
   
   def mapPairs[T, U](
@@ -99,7 +99,7 @@ trait DictConstructor
   def mapPairs[T, U](
     `object`: Dict[T],
     callbackfn: js.Function3[/* value */ T, /* key */ PropertyKey, /* dict */ Dict[T], js.Tuple2[PropertyKey, U]],
-    thisArg: js.Any
+    thisArg: Any
   ): Dict[U] = js.native
   
   def reduce[T](
@@ -127,7 +127,7 @@ trait DictConstructor
   def some[T](
     `object`: Dict[T],
     callbackfn: js.Function3[/* value */ T, /* key */ PropertyKey, /* dict */ Dict[T], Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): Boolean = js.native
   
   def turn[T](

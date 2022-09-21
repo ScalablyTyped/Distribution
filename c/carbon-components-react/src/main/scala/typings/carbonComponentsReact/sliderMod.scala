@@ -8,6 +8,6 @@ object sliderMod {
   
   @JSImport("carbon-components-react/lib/components/Slider", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.carbonComponentsReact.sliderSliderMod.default
 }

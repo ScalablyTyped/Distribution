@@ -59,7 +59,7 @@ object S3Location {
     
     inline def setAccessControlListUndefined: Self = StObject.set(x, "AccessControlList", js.undefined)
     
-    inline def setAccessControlListVarargs(value: Grant*): Self = StObject.set(x, "AccessControlList", js.Array(value :_*))
+    inline def setAccessControlListVarargs(value: Grant*): Self = StObject.set(x, "AccessControlList", js.Array(value*))
     
     inline def setBucketName(value: String): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     

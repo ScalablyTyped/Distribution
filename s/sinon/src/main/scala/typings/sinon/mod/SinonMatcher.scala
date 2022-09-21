@@ -22,11 +22,11 @@ trait SinonMatcher extends StObject {
     */
   def or(expr: SinonMatcher): SinonMatcher
   
-  def test(`val`: js.Any): Boolean
+  def test(`val`: Any): Boolean
 }
 object SinonMatcher {
   
-  inline def apply(and: SinonMatcher => SinonMatcher, or: SinonMatcher => SinonMatcher, test: js.Any => Boolean): SinonMatcher = {
+  inline def apply(and: SinonMatcher => SinonMatcher, or: SinonMatcher => SinonMatcher, test: Any => Boolean): SinonMatcher = {
     val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), or = js.Any.fromFunction1(or), test = js.Any.fromFunction1(test))
     __obj.asInstanceOf[SinonMatcher]
   }
@@ -37,6 +37,6 @@ object SinonMatcher {
     
     inline def setOr(value: SinonMatcher => SinonMatcher): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
     
-    inline def setTest(value: js.Any => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+    inline def setTest(value: Any => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
   }
 }

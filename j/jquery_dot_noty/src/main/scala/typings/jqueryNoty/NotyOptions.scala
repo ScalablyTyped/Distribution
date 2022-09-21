@@ -13,7 +13,7 @@ trait NotyOptions extends StObject {
   var animation: js.UndefOr[NotyAnimationOptions] = js.undefined
   
   /** an array of buttons, for creating confirmation dialogs. */
-  var buttons: js.UndefOr[js.Any] = js.undefined
+  var buttons: js.UndefOr[Any] = js.undefined
   
   var callback: js.UndefOr[NotyCallbackOptions] = js.undefined
   
@@ -49,7 +49,7 @@ trait NotyOptions extends StObject {
   var theme: js.UndefOr[String] = js.undefined
   
   /** Delay for closing event. Set false for sticky notifications */
-  var timeout: js.UndefOr[js.Any] = js.undefined
+  var timeout: js.UndefOr[Any] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -66,7 +66,7 @@ object NotyOptions {
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setButtons(value: js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
@@ -78,7 +78,7 @@ object NotyOptions {
     
     inline def setCloseWithUndefined: Self = StObject.set(x, "closeWith", js.undefined)
     
-    inline def setCloseWithVarargs(value: (click | button | hover | backdrop)*): Self = StObject.set(x, "closeWith", js.Array(value :_*))
+    inline def setCloseWithVarargs(value: (click | button | hover | backdrop)*): Self = StObject.set(x, "closeWith", js.Array(value*))
     
     inline def setDismissQueue(value: Boolean): Self = StObject.set(x, "dismissQueue", value.asInstanceOf[js.Any])
     
@@ -120,7 +120,7 @@ object NotyOptions {
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     

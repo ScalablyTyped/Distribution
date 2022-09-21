@@ -1,9 +1,5 @@
 package typings.googleapis.sourcerepoV1Mod.sourcerepoV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,26 +9,17 @@ trait ParamsResourceProjectsReposList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The project ID whose repos should be listed. Values are of the form
-    * `projects/<project>`.
+    * The project ID whose repos should be listed. Values are of the form `projects/`.
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Maximum number of repositories to return; between 1 and 500. If not set
-    * or zero, defaults to 100 at the server.
+    * Maximum number of repositories to return; between 1 and 500. If not set or zero, defaults to 100 at the server.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Resume listing repositories where a prior ListReposResponse left off.
-    * This is an opaque token that must be obtained from a recent, prior
-    * ListReposResponse's next_page_token field.
+    * Resume listing repositories where a prior ListReposResponse left off. This is an opaque token that must be obtained from a recent, prior ListReposResponse's next_page_token field.
     */
   var pageToken: js.UndefOr[String] = js.undefined
 }
@@ -44,10 +31,6 @@ object ParamsResourceProjectsReposList {
   }
   
   extension [Self <: ParamsResourceProjectsReposList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

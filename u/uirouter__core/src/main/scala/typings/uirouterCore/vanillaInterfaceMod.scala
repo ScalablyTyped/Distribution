@@ -15,20 +15,20 @@ object vanillaInterfaceMod {
   trait HistoryLike extends StObject {
     
     def back(): Unit = js.native
-    def back(distance: js.Any): Unit = js.native
+    def back(distance: Any): Unit = js.native
     
     def forward(): Unit = js.native
-    def forward(distance: js.Any): Unit = js.native
+    def forward(distance: Any): Unit = js.native
     
-    def pushState(statedata: js.Any): Unit = js.native
-    def pushState(statedata: js.Any, title: String): Unit = js.native
-    def pushState(statedata: js.Any, title: String, url: String): Unit = js.native
-    def pushState(statedata: js.Any, title: Unit, url: String): Unit = js.native
+    def pushState(statedata: Any): Unit = js.native
+    def pushState(statedata: Any, title: String): Unit = js.native
+    def pushState(statedata: Any, title: String, url: String): Unit = js.native
+    def pushState(statedata: Any, title: Unit, url: String): Unit = js.native
     
-    def replaceState(statedata: js.Any): Unit = js.native
-    def replaceState(statedata: js.Any, title: String): Unit = js.native
-    def replaceState(statedata: js.Any, title: String, url: String): Unit = js.native
-    def replaceState(statedata: js.Any, title: Unit, url: String): Unit = js.native
+    def replaceState(statedata: Any): Unit = js.native
+    def replaceState(statedata: Any, title: String): Unit = js.native
+    def replaceState(statedata: Any, title: String, url: String): Unit = js.native
+    def replaceState(statedata: Any, title: Unit, url: String): Unit = js.native
   }
   
   trait LocationLike extends StObject {

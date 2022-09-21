@@ -121,7 +121,7 @@ object Place {
     
     inline def setAreasOfInterestUndefined: Self = StObject.set(x, "areasOfInterest", js.undefined)
     
-    inline def setAreasOfInterestVarargs(value: String*): Self = StObject.set(x, "areasOfInterest", js.Array(value :_*))
+    inline def setAreasOfInterestVarargs(value: String*): Self = StObject.set(x, "areasOfInterest", js.Array(value*))
     
     inline def setCoordinate(value: Coordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     
@@ -135,7 +135,7 @@ object Place {
     
     inline def setDependentLocalitiesUndefined: Self = StObject.set(x, "dependentLocalities", js.undefined)
     
-    inline def setDependentLocalitiesVarargs(value: String*): Self = StObject.set(x, "dependentLocalities", js.Array(value :_*))
+    inline def setDependentLocalitiesVarargs(value: String*): Self = StObject.set(x, "dependentLocalities", js.Array(value*))
     
     inline def setFormattedAddress(value: String): Self = StObject.set(x, "formattedAddress", value.asInstanceOf[js.Any])
     

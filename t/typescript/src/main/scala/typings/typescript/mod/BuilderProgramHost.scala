@@ -38,8 +38,8 @@ object BuilderProgramHost {
     inline def setUseCaseSensitiveFileNames(value: () => Boolean): Self = StObject.set(x, "useCaseSensitiveFileNames", js.Any.fromFunction0(value))
     
     inline def setWriteFile(
-      value: (/* fileName */ java.lang.String, /* data */ java.lang.String, /* writeByteOrderMark */ Boolean, /* onError */ js.UndefOr[js.Function1[/* message */ java.lang.String, Unit]], /* sourceFiles */ js.UndefOr[js.Array[SourceFile]]) => Unit
-    ): Self = StObject.set(x, "writeFile", js.Any.fromFunction5(value))
+      value: (/* fileName */ java.lang.String, /* text */ java.lang.String, /* writeByteOrderMark */ Boolean, /* onError */ js.UndefOr[js.Function1[/* message */ java.lang.String, Unit]], /* sourceFiles */ js.UndefOr[js.Array[SourceFile]], /* data */ js.UndefOr[WriteFileCallbackData]) => Unit
+    ): Self = StObject.set(x, "writeFile", js.Any.fromFunction6(value))
     
     inline def setWriteFileUndefined: Self = StObject.set(x, "writeFile", js.undefined)
   }

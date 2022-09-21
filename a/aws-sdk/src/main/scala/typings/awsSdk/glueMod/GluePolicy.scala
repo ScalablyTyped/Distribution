@@ -9,7 +9,7 @@ trait GluePolicy extends StObject {
   /**
     * The date and time at which the policy was created.
     */
-  var CreateTime: js.UndefOr[Timestamp] = js.undefined
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Contains the hash value associated with this policy.
@@ -24,7 +24,7 @@ trait GluePolicy extends StObject {
   /**
     * The date and time at which the policy was last updated.
     */
-  var UpdateTime: js.UndefOr[Timestamp] = js.undefined
+  var UpdateTime: js.UndefOr[js.Date] = js.undefined
 }
 object GluePolicy {
   
@@ -35,7 +35,7 @@ object GluePolicy {
   
   extension [Self <: GluePolicy](x: Self) {
     
-    inline def setCreateTime(value: Timestamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
@@ -47,7 +47,7 @@ object GluePolicy {
     
     inline def setPolicyInJsonUndefined: Self = StObject.set(x, "PolicyInJson", js.undefined)
     
-    inline def setUpdateTime(value: Timestamp): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: js.Date): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "UpdateTime", js.undefined)
   }

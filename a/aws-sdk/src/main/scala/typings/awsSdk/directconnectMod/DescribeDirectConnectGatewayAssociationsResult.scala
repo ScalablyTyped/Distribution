@@ -29,7 +29,7 @@ object DescribeDirectConnectGatewayAssociationsResult {
     
     inline def setDirectConnectGatewayAssociationsUndefined: Self = StObject.set(x, "directConnectGatewayAssociations", js.undefined)
     
-    inline def setDirectConnectGatewayAssociationsVarargs(value: DirectConnectGatewayAssociation*): Self = StObject.set(x, "directConnectGatewayAssociations", js.Array(value :_*))
+    inline def setDirectConnectGatewayAssociationsVarargs(value: DirectConnectGatewayAssociation*): Self = StObject.set(x, "directConnectGatewayAssociations", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

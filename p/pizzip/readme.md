@@ -10,10 +10,10 @@ Create, read and edit .zip files synchronously with Javascript
 | ------------------ | :-------------: |
 | Full name          | pizzip |
 | Keywords           | zip, deflate, inflate |
-| # releases         | 9 |
-| # dependents       | 14 |
-| # downloads        | 393168 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 151468.0 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/open-xml-templating/pizzip#readme)

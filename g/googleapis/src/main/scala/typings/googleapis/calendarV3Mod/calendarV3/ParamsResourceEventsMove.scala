@@ -1,9 +1,5 @@
 package typings.googleapis.calendarV3Mod.calendarV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +9,12 @@ trait ParamsResourceEventsMove
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Calendar identifier of the source calendar where the event currently is
-    * on.
+    * Calendar identifier of the source calendar where the event currently is on.
     */
   var calendarId: js.UndefOr[String] = js.undefined
   
   /**
-    * Calendar identifier of the target calendar where the event is to be moved
-    * to.
+    * Calendar identifier of the target calendar where the event is to be moved to.
     */
   var destination: js.UndefOr[String] = js.undefined
   
@@ -35,16 +24,14 @@ trait ParamsResourceEventsMove
   var eventId: js.UndefOr[String] = js.undefined
   
   /**
-    * Deprecated. Please use sendUpdates instead.  Whether to send
-    * notifications about the change of the event's organizer. Note that some
-    * emails might still be sent even if you set the value to false. The
-    * default is false.
+    * Deprecated. Please use sendUpdates instead.
+    *
+    * Whether to send notifications about the change of the event's organizer. Note that some emails might still be sent even if you set the value to false. The default is false.
     */
   var sendNotifications: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Guests who should receive notifications about the change of the event's
-    * organizer.
+    * Guests who should receive notifications about the change of the event's organizer.
     */
   var sendUpdates: js.UndefOr[String] = js.undefined
 }
@@ -56,10 +43,6 @@ object ParamsResourceEventsMove {
   }
   
   extension [Self <: ParamsResourceEventsMove](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     

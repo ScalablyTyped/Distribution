@@ -29,11 +29,11 @@ object webCommunicatorMod {
     /**
       * @hidden
       */
-    /* private */ var _Handle_message: js.Any = js.native
+    /* private */ var _Handle_message: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var connection_ : js.Any = js.native
+    /* private */ var connection_ : Any = js.native
   }
 }

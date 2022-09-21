@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PivotTableStyleUpdateData extends StObject {
   
   /**
+    * Specifies the name of the PivotTable style.
     *
-    * Gets the name of the PivotTableStyle.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[String] = js.undefined

@@ -1,7 +1,6 @@
 package typings.sharepoint.SP
 
 import typings.sharepoint.SP.SiteHealth.SiteHealthSummary
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait Site
   
   def extendUpgradeReminderDate(): Unit = js.native
   
-  def getCatalog(typeCatalog: Double): List[js.Any] = js.native
+  def getCatalog(typeCatalog: Double): List[Any] = js.native
   
   def getChanges(query: ChangeQuery): ChangeCollection = js.native
   
@@ -67,7 +66,7 @@ trait Site
   
   def get_upgradeInfo(): UpgradeInfo = js.native
   
-  def get_upgradeReminderDate(): Date = js.native
+  def get_upgradeReminderDate(): js.Date = js.native
   
   def get_upgrading(): Boolean = js.native
   

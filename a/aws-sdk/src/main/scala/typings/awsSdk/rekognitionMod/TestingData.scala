@@ -12,7 +12,7 @@ trait TestingData extends StObject {
   var Assets: js.UndefOr[typings.awsSdk.rekognitionMod.Assets] = js.undefined
   
   /**
-    * If specified, Amazon Rekognition Custom Labels creates a testing dataset with an 80/20 split of the training dataset.
+    * If specified, Amazon Rekognition Custom Labels temporarily splits the training dataset (80%) to create a test dataset (20%) for the training job. After training completes, the test dataset is not stored and the training dataset reverts to its previous size.
     */
   var AutoCreate: js.UndefOr[Boolean] = js.undefined
 }
@@ -29,7 +29,7 @@ object TestingData {
     
     inline def setAssetsUndefined: Self = StObject.set(x, "Assets", js.undefined)
     
-    inline def setAssetsVarargs(value: Asset*): Self = StObject.set(x, "Assets", js.Array(value :_*))
+    inline def setAssetsVarargs(value: Asset*): Self = StObject.set(x, "Assets", js.Array(value*))
     
     inline def setAutoCreate(value: Boolean): Self = StObject.set(x, "AutoCreate", value.asInstanceOf[js.Any])
     

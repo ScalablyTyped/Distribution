@@ -13,7 +13,7 @@ object Input {
   
   @JSGlobal("Windows.Devices.Input.KeyboardCapabilities")
   @js.native
-  class KeyboardCapabilities ()
+  open class KeyboardCapabilities ()
     extends StObject
        with typings.winrt.Windows.Devices.Input.KeyboardCapabilities {
     
@@ -23,7 +23,7 @@ object Input {
   
   @JSGlobal("Windows.Devices.Input.MouseCapabilities")
   @js.native
-  class MouseCapabilities ()
+  open class MouseCapabilities ()
     extends StObject
        with typings.winrt.Windows.Devices.Input.MouseCapabilities {
     
@@ -45,12 +45,12 @@ object Input {
   
   @JSGlobal("Windows.Devices.Input.MouseDevice")
   @js.native
-  class MouseDevice ()
+  open class MouseDevice ()
     extends StObject
        with typings.winrt.Windows.Devices.Input.MouseDevice {
     
     /* CompleteClass */
-    var onmousemoved: js.Any = js.native
+    var onmousemoved: Any = js.native
   }
   /* static members */
   object MouseDevice {
@@ -64,7 +64,7 @@ object Input {
   
   @JSGlobal("Windows.Devices.Input.MouseEventArgs")
   @js.native
-  class MouseEventArgs ()
+  open class MouseEventArgs ()
     extends StObject
        with typings.winrt.Windows.Devices.Input.MouseEventArgs {
     
@@ -74,7 +74,7 @@ object Input {
   
   @JSGlobal("Windows.Devices.Input.PointerDevice")
   @js.native
-  class PointerDevice ()
+  open class PointerDevice ()
     extends StObject
        with typings.winrt.Windows.Devices.Input.PointerDevice {
     
@@ -124,7 +124,7 @@ object Input {
   
   @JSGlobal("Windows.Devices.Input.TouchCapabilities")
   @js.native
-  class TouchCapabilities ()
+  open class TouchCapabilities ()
     extends StObject
        with typings.winrt.Windows.Devices.Input.TouchCapabilities {
     

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  inline def deparam(params: String): js.Any = js.Dynamic.global.applyDynamic("deparam")(params.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def deparam(params: String, coerce: Boolean): js.Any = (js.Dynamic.global.applyDynamic("deparam")(params.asInstanceOf[js.Any], coerce.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def deparam(params: String): Any = js.Dynamic.global.applyDynamic("deparam")(params.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def deparam(params: String, coerce: Boolean): Any = (js.Dynamic.global.applyDynamic("deparam")(params.asInstanceOf[js.Any], coerce.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

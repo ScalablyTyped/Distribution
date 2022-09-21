@@ -16,6 +16,8 @@ trait FeatureTemplatesViewModelProperties extends StObject {
   /**
     * It is possible to group [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html).
     *
+    * @default layer
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#groupBy)
     */
   var groupBy: js.UndefOr[String | GroupByFunction] = js.undefined
@@ -36,13 +38,13 @@ object FeatureTemplatesViewModelProperties {
   
   extension [Self <: FeatureTemplatesViewModelProperties](x: Self) {
     
-    inline def setFilterFunction(value: /* filterName */ js.Any => Boolean): Self = StObject.set(x, "filterFunction", js.Any.fromFunction1(value))
+    inline def setFilterFunction(value: /* filterName */ Any => Boolean): Self = StObject.set(x, "filterFunction", js.Any.fromFunction1(value))
     
     inline def setFilterFunctionUndefined: Self = StObject.set(x, "filterFunction", js.undefined)
     
     inline def setGroupBy(value: String | GroupByFunction): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
-    inline def setGroupByFunction1(value: /* grouping */ js.Any => String | js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
+    inline def setGroupByFunction1(value: /* grouping */ Any => String | Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
     
     inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
     
@@ -50,6 +52,6 @@ object FeatureTemplatesViewModelProperties {
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: FeatureLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: FeatureLayerProperties*): Self = StObject.set(x, "layers", js.Array(value*))
   }
 }

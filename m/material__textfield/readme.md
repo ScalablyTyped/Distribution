@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__textfield
 
-Typings are for version 8.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components for the web text field component
@@ -10,10 +10,10 @@ The Material Components for the web text field component
 | ------------------ | :-------------: |
 | Full name          | @material/textfield |
 | Keywords           | material components, material design, textfield, text field |
-| # releases         | 621 |
-| # dependents       | 73 |
-| # downloads        | 2501741 |
-| # stars            | 0 |
+| # releases         | 712 |
+| # dependents       | 0.0 |
+| # downloads        | 326146.3333333333 |
+| # stars            | 16381.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

@@ -12,14 +12,14 @@ object chainConditionMod {
   
   @JSImport("express-validator/src/context-items/chain-condition", "ChainCondition")
   @js.native
-  class ChainCondition protected ()
+  open class ChainCondition protected ()
     extends StObject
        with ContextItem {
     def this(chain: ValidationChain) = this()
     
-    /* private */ val chain: js.Any = js.native
+    /* private */ val chain: Any = js.native
     
     /* CompleteClass */
-    override def run(context: Context, value: js.Any, meta: Meta): js.Promise[Unit] = js.native
+    override def run(context: Context, value: Any, meta: Meta): js.Promise[Unit] = js.native
   }
 }

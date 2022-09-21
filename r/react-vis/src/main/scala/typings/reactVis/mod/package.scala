@@ -1,96 +1,100 @@
 package typings.reactVis.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.CSSProperties
+import typings.react.mod.FC
+import typings.react.mod.MouseEvent
+import typings.react.mod.MouseEventHandler
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.TouchEventHandler
+import typings.react.mod.WheelEventHandler
+import typings.reactVis.anon.Horizontal
+import typings.reactVis.mod.^
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def ContinuousColorLegend: typings.react.mod.SFC[typings.reactVis.mod.ContinuousColorLegendProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ContinuousColorLegend").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.ContinuousColorLegendProps]]
+inline def ContinuousColorLegend: FC[ContinuousColorLegendProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ContinuousColorLegend").asInstanceOf[FC[ContinuousColorLegendProps]]
 
-inline def ContinuousSizeLegend: typings.react.mod.SFC[typings.reactVis.mod.ContinuousSizeLegendProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ContinuousSizeLegend").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.ContinuousSizeLegendProps]]
+inline def ContinuousSizeLegend: FC[ContinuousSizeLegendProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ContinuousSizeLegend").asInstanceOf[FC[ContinuousSizeLegendProps]]
 
-inline def DiscreteColorLegend: typings.react.mod.SFC[typings.reactVis.mod.DiscreteColorLegendProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DiscreteColorLegend").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.DiscreteColorLegendProps]]
+inline def DiscreteColorLegend: FC[DiscreteColorLegendProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DiscreteColorLegend").asInstanceOf[FC[DiscreteColorLegendProps]]
 
-inline def HorizontalGridLines: typings.react.mod.SFC[typings.reactVis.mod.HorizontalGridLinesProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HorizontalGridLines").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.HorizontalGridLinesProps]]
+inline def HorizontalGridLines: FC[HorizontalGridLinesProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("HorizontalGridLines").asInstanceOf[FC[HorizontalGridLinesProps]]
 
-inline def SearchableDiscreteColorLegend: typings.react.mod.SFC[typings.reactVis.mod.SearchableDiscreteColorLegendProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SearchableDiscreteColorLegend").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.SearchableDiscreteColorLegendProps]]
+inline def SearchableDiscreteColorLegend: FC[SearchableDiscreteColorLegendProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("SearchableDiscreteColorLegend").asInstanceOf[FC[SearchableDiscreteColorLegendProps]]
 
-inline def VerticalGridLines: typings.react.mod.SFC[typings.reactVis.mod.VerticalGridLinesProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VerticalGridLines").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.VerticalGridLinesProps]]
+inline def VerticalGridLines: FC[VerticalGridLinesProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("VerticalGridLines").asInstanceOf[FC[VerticalGridLinesProps]]
 
-inline def Voronoi: typings.react.mod.SFC[typings.reactVis.mod.VoronoiProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Voronoi").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.VoronoiProps]]
+inline def Voronoi: FC[VoronoiProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Voronoi").asInstanceOf[FC[VoronoiProps]]
 
-inline def XAxis: typings.react.mod.SFC[typings.reactVis.mod.XAxisProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("XAxis").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.XAxisProps]]
+inline def XAxis: FC[XAxisProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("XAxis").asInstanceOf[FC[XAxisProps]]
 
-inline def YAxis: typings.react.mod.SFC[typings.reactVis.mod.YAxisProps] = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].selectDynamic("YAxis").asInstanceOf[typings.react.mod.SFC[typings.reactVis.mod.YAxisProps]]
+inline def YAxis: FC[YAxisProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("YAxis").asInstanceOf[FC[YAxisProps]]
 
-inline def makeHeightFlexible(): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeHeightFlexible")().asInstanceOf[js.Any]
-inline def makeHeightFlexible(component: js.Any): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeHeightFlexible")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def makeHeightFlexible(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeHeightFlexible")().asInstanceOf[Any]
+inline def makeHeightFlexible(component: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeHeightFlexible")(component.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def makeVisFlexible(): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeVisFlexible")().asInstanceOf[js.Any]
-inline def makeVisFlexible(component: js.Any): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeVisFlexible")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def makeVisFlexible(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeVisFlexible")().asInstanceOf[Any]
+inline def makeVisFlexible(component: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeVisFlexible")(component.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def makeWidthFlexible(): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeWidthFlexible")().asInstanceOf[js.Any]
-inline def makeWidthFlexible(component: js.Any): js.Any = typings.reactVis.mod.^.asInstanceOf[js.Dynamic].applyDynamic("makeWidthFlexible")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def makeWidthFlexible(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeWidthFlexible")().asInstanceOf[Any]
+inline def makeWidthFlexible(component: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeWidthFlexible")(component.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-type AbstractSeriesPoint = org.scalablytyped.runtime.StringDictionary[js.Any]
+type AbstractSeriesPoint = StringDictionary[Any]
 
-type DecorativeAxisPoint = typings.reactVis.mod.AbstractSeriesPoint
+type DecorativeAxisPoint = AbstractSeriesPoint
 
-type HeatmapSeriesProps = typings.reactVis.mod.AbstractSeriesProps[typings.reactVis.mod.HeatmapSeriesPoint]
+type HeatmapSeriesProps = AbstractSeriesProps[HeatmapSeriesPoint]
 
-type HorizontalRectSeriesCanvasProps = typings.reactVis.mod.AbstractSeriesProps[typings.reactVis.mod.HorizontalRectSeriesPoint]
+type HorizontalRectSeriesCanvasProps = AbstractSeriesProps[HorizontalRectSeriesPoint]
 
-type HorizontalRectSeriesPoint = typings.reactVis.mod.RectSeriesPoint
+type HorizontalRectSeriesPoint = RectSeriesPoint
 
-type HorizontalRectSeriesProps = typings.reactVis.mod.AbstractSeriesProps[typings.reactVis.mod.HorizontalRectSeriesPoint]
+type HorizontalRectSeriesProps = AbstractSeriesProps[HorizontalRectSeriesPoint]
 
-type LineMarkSeriesCanvasProps = typings.reactVis.mod.AbstractSeriesProps[typings.reactVis.mod.LineMarkSeriesPoint]
+type LineMarkSeriesCanvasProps = AbstractSeriesProps[LineMarkSeriesPoint]
 
-type MarkSeriesCanvasProps = typings.reactVis.mod.AbstractSeriesProps[typings.reactVis.mod.MarkSeriesPoint]
+type MarkSeriesCanvasProps = AbstractSeriesProps[MarkSeriesPoint]
 
-type PolygonSeriesProps = typings.reactVis.mod.AbstractSeriesProps[typings.reactVis.mod.PolygonSeriesPoint]
+type PolygonSeriesProps = AbstractSeriesProps[PolygonSeriesPoint]
 
-type RVGet[T /* <: typings.reactVis.mod.AbstractSeriesPoint */, K /* <: /* keyof T */ java.lang.String */] = js.Function1[
+type RVGet[T /* <: AbstractSeriesPoint */, K /* <: /* keyof T */ String */] = js.Function1[
 /* datapoint */ T, 
 /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any]
 
-type RVGetAlignStyle = js.Function3[
-/* align */ typings.reactVis.anon.Horizontal, 
-/* x */ scala.Double, 
-/* y */ scala.Double, 
-typings.react.mod.CSSProperties]
+type RVGetAlignStyle = js.Function3[/* align */ Horizontal, /* x */ Double, /* y */ Double, CSSProperties]
 
-type RVGetNull[T /* <: typings.reactVis.mod.AbstractSeriesPoint */] = js.Function1[/* datapoint */ T, js.Any]
+type RVGetNull[T /* <: AbstractSeriesPoint */] = js.Function1[/* datapoint */ T, Any]
 
 type RVItemEventHandler = js.Function3[
-/* item */ js.Any, 
-/* index */ scala.Double, 
-/* event */ typings.react.mod.MouseEvent[typings.std.HTMLElement, typings.react.mod.NativeMouseEvent], 
-scala.Unit]
+/* item */ Any, 
+/* index */ Double, 
+/* event */ MouseEvent[HTMLElement, NativeMouseEvent], 
+Unit]
 
-type RVMouseEventHandler = typings.react.mod.MouseEventHandler[typings.std.HTMLElement]
+type RVMouseEventHandler = MouseEventHandler[HTMLElement]
 
-type RVNearestXEventHandler[T /* <: typings.reactVis.mod.AbstractSeriesPoint */] = js.Function2[/* datapoint */ T, /* data */ typings.reactVis.mod.RVNearestXData[T], scala.Unit]
+type RVNearestXEventHandler[T /* <: AbstractSeriesPoint */] = js.Function2[/* datapoint */ T, /* data */ RVNearestXData[T], Unit]
 
-type RVNearestXYEventHandler[T /* <: typings.reactVis.mod.AbstractSeriesPoint */] = js.Function2[/* datapoint */ T, /* data */ typings.reactVis.mod.RVNearestXYData[T], scala.Unit]
+type RVNearestXYEventHandler[T /* <: AbstractSeriesPoint */] = js.Function2[/* datapoint */ T, /* data */ RVNearestXYData[T], Unit]
 
-type RVTickFormat = js.Function1[/* tick */ js.Any, java.lang.String]
+type RVTickFormat = js.Function1[/* tick */ Any, String]
 
-type RVTouchEventHandler = typings.react.mod.TouchEventHandler[typings.std.HTMLElement]
+type RVTouchEventHandler = TouchEventHandler[HTMLElement]
 
-type RVValueEventHandler[T /* <: typings.reactVis.mod.AbstractSeriesPoint */] = js.Function2[
-/* datapoint */ T, 
-/* event */ typings.react.mod.MouseEvent[typings.std.HTMLElement, typings.react.mod.NativeMouseEvent], 
-scala.Unit]
+type RVValueEventHandler[T /* <: AbstractSeriesPoint */] = js.Function2[/* datapoint */ T, /* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
 
-type RVWheelEventHandler = typings.react.mod.WheelEventHandler[typings.std.HTMLElement]
+type RVWheelEventHandler = WheelEventHandler[HTMLElement]
 
-type RadarChartPoint = typings.reactVis.mod.AbstractSeriesPoint
+type RadarChartPoint = AbstractSeriesPoint
 
-type RectSeriesCanvasProps = typings.reactVis.mod.AbstractSeriesProps[typings.reactVis.mod.RectSeriesPoint]
+type RectSeriesCanvasProps = AbstractSeriesProps[RectSeriesPoint]
 
-type VerticalRectSeriesCanvasProps = typings.reactVis.mod.AbstractSeriesProps[typings.reactVis.mod.VerticalRectSeriesPoint]
+type VerticalRectSeriesCanvasProps = AbstractSeriesProps[VerticalRectSeriesPoint]
 
-type VerticalRectSeriesPoint = typings.reactVis.mod.RectSeriesPoint
+type VerticalRectSeriesPoint = RectSeriesPoint
 
-type VerticalRectSeriesProps = typings.reactVis.mod.AbstractSeriesProps[typings.reactVis.mod.VerticalRectSeriesPoint]
+type VerticalRectSeriesProps = AbstractSeriesProps[VerticalRectSeriesPoint]

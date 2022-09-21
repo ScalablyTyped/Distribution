@@ -1,11 +1,7 @@
 package typings.matrixAppserviceBridge
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.debug
-import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.error
-import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.info
 import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.off
-import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.warn
 import typings.winston.mod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,7 +41,7 @@ object loggingMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/logging", "LogWrapper")
   @js.native
-  class LogWrapper () extends StObject {
+  open class LogWrapper () extends StObject {
     
     def debug(messageParts: MessagePart*): Unit = js.native
     
@@ -53,15 +49,15 @@ object loggingMod {
     
     def error(messageParts: MessagePart*): Unit = js.native
     
-    /* private */ var formatParts: js.Any = js.native
+    /* private */ var formatParts: Any = js.native
     
     def info(messageParts: MessagePart*): Unit = js.native
     
-    /* private */ var log: js.Any = js.native
+    /* private */ var log: Any = js.native
     
-    /* private */ var logger: js.Any = js.native
+    /* private */ var logger: Any = js.native
     
-    /* private */ var messages: js.Any = js.native
+    /* private */ var messages: Any = js.native
     
     def setLogger(logger: Logger): Unit = js.native
     
@@ -74,13 +70,31 @@ object loggingMod {
   
   inline def get(name: String): LogWrapper = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[LogWrapper]
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.debug
+    - typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.info
+    - typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.warn
+    - typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.error
+  */
+  trait LogLevel extends StObject
+  object LogLevel {
+    
+    inline def debug: typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.debug = "debug".asInstanceOf[typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.debug]
+    
+    inline def error: typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.error = "error".asInstanceOf[typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.error]
+    
+    inline def info: typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.info = "info".asInstanceOf[typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.info]
+    
+    inline def warn: typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.warn = "warn".asInstanceOf[typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.warn]
+  }
+  
   trait LoggerConfig extends StObject {
     
-    var console: js.UndefOr[error | warn | info | debug | off] = js.undefined
+    var console: js.UndefOr[LogLevel | off] = js.undefined
     
     var fileDatePattern: js.UndefOr[String] = js.undefined
     
-    var files: js.UndefOr[StringDictionary[error | warn | info | debug | off]] = js.undefined
+    var files: js.UndefOr[StringDictionary[LogLevel | off]] = js.undefined
     
     var maxFiles: js.UndefOr[Double] = js.undefined
     
@@ -95,7 +109,7 @@ object loggingMod {
     
     extension [Self <: LoggerConfig](x: Self) {
       
-      inline def setConsole(value: error | warn | info | debug | off): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
+      inline def setConsole(value: LogLevel | off): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
       inline def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
       
@@ -103,7 +117,7 @@ object loggingMod {
       
       inline def setFileDatePatternUndefined: Self = StObject.set(x, "fileDatePattern", js.undefined)
       
-      inline def setFiles(value: StringDictionary[error | warn | info | debug | off]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: StringDictionary[LogLevel | off]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
@@ -117,5 +131,5 @@ object loggingMod {
     }
   }
   
-  type MessagePart = js.Any
+  type MessagePart = Any
 }

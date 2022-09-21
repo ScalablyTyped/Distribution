@@ -11,8 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.tmiJs.tmiJsStrings.already_subs_on
   - typings.tmiJs.tmiJsStrings.already_subs_off
   - typings.tmiJs.tmiJsStrings.bad_ban_admin
+  - typings.tmiJs.tmiJsStrings.bad_ban_anon
   - typings.tmiJs.tmiJsStrings.bad_ban_broadcaster
   - typings.tmiJs.tmiJsStrings.bad_ban_global_mod
+  - typings.tmiJs.tmiJsStrings.bad_ban_mod
   - typings.tmiJs.tmiJsStrings.bad_ban_self
   - typings.tmiJs.tmiJsStrings.bad_ban_staff
   - typings.tmiJs.tmiJsStrings.bad_commercial_error
@@ -21,7 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.tmiJs.tmiJsStrings.bad_mod_mod
   - typings.tmiJs.tmiJsStrings.bad_mod_banned
   - typings.tmiJs.tmiJsStrings.bad_timeout_admin
+  - typings.tmiJs.tmiJsStrings.bad_timeout_anon
   - typings.tmiJs.tmiJsStrings.bad_timeout_global_mod
+  - typings.tmiJs.tmiJsStrings.bad_timeout_mod
   - typings.tmiJs.tmiJsStrings.bad_timeout_self
   - typings.tmiJs.tmiJsStrings.bad_timeout_staff
   - typings.tmiJs.tmiJsStrings.bad_unban_no_ban
@@ -93,9 +97,13 @@ object MsgID {
   
   inline def bad_ban_admin: typings.tmiJs.tmiJsStrings.bad_ban_admin = "bad_ban_admin".asInstanceOf[typings.tmiJs.tmiJsStrings.bad_ban_admin]
   
+  inline def bad_ban_anon: typings.tmiJs.tmiJsStrings.bad_ban_anon = "bad_ban_anon".asInstanceOf[typings.tmiJs.tmiJsStrings.bad_ban_anon]
+  
   inline def bad_ban_broadcaster: typings.tmiJs.tmiJsStrings.bad_ban_broadcaster = "bad_ban_broadcaster".asInstanceOf[typings.tmiJs.tmiJsStrings.bad_ban_broadcaster]
   
   inline def bad_ban_global_mod: typings.tmiJs.tmiJsStrings.bad_ban_global_mod = "bad_ban_global_mod".asInstanceOf[typings.tmiJs.tmiJsStrings.bad_ban_global_mod]
+  
+  inline def bad_ban_mod: typings.tmiJs.tmiJsStrings.bad_ban_mod = "bad_ban_mod".asInstanceOf[typings.tmiJs.tmiJsStrings.bad_ban_mod]
   
   inline def bad_ban_self: typings.tmiJs.tmiJsStrings.bad_ban_self = "bad_ban_self".asInstanceOf[typings.tmiJs.tmiJsStrings.bad_ban_self]
   
@@ -113,7 +121,11 @@ object MsgID {
   
   inline def bad_timeout_admin: typings.tmiJs.tmiJsStrings.bad_timeout_admin = "bad_timeout_admin".asInstanceOf[typings.tmiJs.tmiJsStrings.bad_timeout_admin]
   
+  inline def bad_timeout_anon: typings.tmiJs.tmiJsStrings.bad_timeout_anon = "bad_timeout_anon".asInstanceOf[typings.tmiJs.tmiJsStrings.bad_timeout_anon]
+  
   inline def bad_timeout_global_mod: typings.tmiJs.tmiJsStrings.bad_timeout_global_mod = "bad_timeout_global_mod".asInstanceOf[typings.tmiJs.tmiJsStrings.bad_timeout_global_mod]
+  
+  inline def bad_timeout_mod: typings.tmiJs.tmiJsStrings.bad_timeout_mod = "bad_timeout_mod".asInstanceOf[typings.tmiJs.tmiJsStrings.bad_timeout_mod]
   
   inline def bad_timeout_self: typings.tmiJs.tmiJsStrings.bad_timeout_self = "bad_timeout_self".asInstanceOf[typings.tmiJs.tmiJsStrings.bad_timeout_self]
   

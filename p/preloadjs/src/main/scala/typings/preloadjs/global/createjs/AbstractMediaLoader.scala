@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.AbstractMediaLoader")
 @js.native
-class AbstractMediaLoader protected ()
+open class AbstractMediaLoader protected ()
   extends StObject
      with typings.preloadjs.createjs.AbstractMediaLoader {
   def this(loadItem: js.Object, preferXHR: Boolean, `type`: String) = this()

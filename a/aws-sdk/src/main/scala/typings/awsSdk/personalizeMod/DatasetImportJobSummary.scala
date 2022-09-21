@@ -9,7 +9,7 @@ trait DatasetImportJobSummary extends StObject {
   /**
     * The date and time (in Unix time) that the dataset import job was created.
     */
-  var creationDateTime: js.UndefOr[Date] = js.undefined
+  var creationDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset import job.
@@ -22,14 +22,19 @@ trait DatasetImportJobSummary extends StObject {
   var failureReason: js.UndefOr[FailureReason] = js.undefined
   
   /**
+    * The import mode the dataset import job used to update the data in the dataset. For more information see Updating existing bulk data. 
+    */
+  var importMode: js.UndefOr[ImportMode] = js.undefined
+  
+  /**
     * The name of the dataset import job.
     */
   var jobName: js.UndefOr[Name] = js.undefined
   
   /**
-    * The date and time (in Unix time) that the dataset was last updated.
+    * The date and time (in Unix time) that the dataset import job status was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
+  var lastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the dataset import job. A dataset import job can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED  
@@ -45,7 +50,7 @@ object DatasetImportJobSummary {
   
   extension [Self <: DatasetImportJobSummary](x: Self) {
     
-    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
     
@@ -57,11 +62,15 @@ object DatasetImportJobSummary {
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
+    inline def setImportMode(value: ImportMode): Self = StObject.set(x, "importMode", value.asInstanceOf[js.Any])
+    
+    inline def setImportModeUndefined: Self = StObject.set(x, "importMode", js.undefined)
+    
     inline def setJobName(value: Name): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
     inline def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
     
-    inline def setLastUpdatedDateTime(value: Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
     

@@ -8,25 +8,14 @@ trait Endpoint
   extends StObject
      with DirectoryObject {
   
-  /**
-    * Describes the capability that is associated with this resource. (e.g. Messages, Conversations, etc.) Not nullable.
-    * Read-only.
-    */
   var capability: js.UndefOr[String] = js.undefined
   
-  // Application id of the publishing underlying service. Not nullable. Read-only.
   var providerId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Name of the publishing underlying service. Read-only.
   var providerName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  /**
-    * For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable.
-    * Read-only.
-    */
   var providerResourceId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // URL of the published resource. Not nullable. Read-only.
   var uri: js.UndefOr[String] = js.undefined
 }
 object Endpoint {

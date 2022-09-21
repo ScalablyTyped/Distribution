@@ -1,7 +1,5 @@
 package typings.vueNiceDates
 
-import typings.vue.vueMod.Vue
-import typings.vue.vueMod.VueConstructor
 import typings.vueNiceDates.anon.ChangeLastValidEndDate
 import typings.vueNiceDates.anon.EndDate
 import typings.vueNiceDates.anon.HasTouchedEndDate
@@ -12,20 +10,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dateRangePickerMod {
   
-  @js.native
-  trait DateRangePicker
-    extends StObject
-       with VueConstructor[Vue] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor * / any */ trait DateRangePicker extends StObject {
     
-    def date(): HasTouchedEndDate = js.native
+    def date(): HasTouchedEndDate
     
-    var methods: ChangeLastValidEndDate = js.native
+    var methods: ChangeLastValidEndDate
     
-    var props: DateRangePickerProps = js.native
+    var props: DateRangePickerProps
     
-    var watch: EndDate = js.native
+    var watch: EndDate
   }
-  @JSImport("vue-nice-dates/DateRangePicker", "DateRangePicker")
-  @js.native
-  val DateRangePicker: typings.vueNiceDates.dateRangePickerMod.DateRangePicker = js.native
+  object DateRangePicker {
+    
+    @JSImport("vue-nice-dates/DateRangePicker", "DateRangePicker")
+    @js.native
+    val ^ : DateRangePicker = js.native
+    
+    extension [Self <: DateRangePicker](x: Self) {
+      
+      inline def setDate(value: () => HasTouchedEndDate): Self = StObject.set(x, "date", js.Any.fromFunction0(value))
+      
+      inline def setMethods(value: ChangeLastValidEndDate): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: DateRangePickerProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setWatch(value: EndDate): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    }
+  }
 }

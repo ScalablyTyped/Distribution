@@ -31,6 +31,6 @@ object ListProfileTimesResponse {
     
     inline def setProfileTimes(value: ProfileTimes): Self = StObject.set(x, "profileTimes", value.asInstanceOf[js.Any])
     
-    inline def setProfileTimesVarargs(value: ProfileTime*): Self = StObject.set(x, "profileTimes", js.Array(value :_*))
+    inline def setProfileTimesVarargs(value: ProfileTime*): Self = StObject.set(x, "profileTimes", js.Array(value*))
   }
 }

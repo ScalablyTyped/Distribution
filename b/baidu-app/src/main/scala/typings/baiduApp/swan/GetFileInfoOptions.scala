@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetFileInfoOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /** 计算文件摘要的算法，默认值 md5，有效值：md5，sha1 */
   var digestAlgorithm: js.UndefOr[String] = js.undefined

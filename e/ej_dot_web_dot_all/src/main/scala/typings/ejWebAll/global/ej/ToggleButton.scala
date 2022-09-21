@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.ToggleButton")
 @js.native
-class ToggleButton protected ()
+open class ToggleButton protected ()
   extends StObject
      with typings.ejWebAll.ej.ToggleButton {
   def this(element: JQuery) = this()
@@ -25,8 +25,8 @@ object ToggleButton {
   /* static member */
   @JSGlobal("ej.ToggleButton.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("ej.ToggleButton.fn")

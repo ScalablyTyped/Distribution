@@ -10,7 +10,7 @@ object translationMod {
   /* Rewritten from type alias, can be one of: 
     - typings.carbonComponentsReact.dataTableDataTableMod.DataTableTranslationKey
     - typings.carbonComponentsReact.listBoxMenuIconMod.ListBoxMenuIconTranslationKey
-    - typings.carbonComponentsReact.listBoxSelectionMod.ListBoxSelectionTranslationKey
+    - typings.carbonComponentsReact.listBoxListBoxSelectionMod.ListBoxSelectionTranslationKey
     - typings.carbonComponentsReact.numberInputNumberInputMod.NumberInputTranslationKey
     - typings.carbonComponentsReact.paginationNavPaginationNavMod.PaginationNavTranslationKey
     - typings.carbonComponentsReact.progressIndicatorProgressIndicatorMod.ProgressStepTranslationKey

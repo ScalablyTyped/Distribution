@@ -9,13 +9,13 @@ trait OrbitOptions extends StObject {
   
   var active_slide_class: js.UndefOr[String] = js.undefined
   
-  var after_slide_change: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var after_slide_change: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var animation: js.UndefOr[String] = js.undefined
   
   var animation_speed: js.UndefOr[Double] = js.undefined
   
-  var before_slide_change: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var before_slide_change: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var bullets: js.UndefOr[Boolean] = js.undefined
   
@@ -86,7 +86,7 @@ object OrbitOptions {
     
     inline def setActive_slide_classUndefined: Self = StObject.set(x, "active_slide_class", js.undefined)
     
-    inline def setAfter_slide_change(value: () => js.Any): Self = StObject.set(x, "after_slide_change", js.Any.fromFunction0(value))
+    inline def setAfter_slide_change(value: () => Any): Self = StObject.set(x, "after_slide_change", js.Any.fromFunction0(value))
     
     inline def setAfter_slide_changeUndefined: Self = StObject.set(x, "after_slide_change", js.undefined)
     
@@ -98,7 +98,7 @@ object OrbitOptions {
     
     inline def setAnimation_speedUndefined: Self = StObject.set(x, "animation_speed", js.undefined)
     
-    inline def setBefore_slide_change(value: () => js.Any): Self = StObject.set(x, "before_slide_change", js.Any.fromFunction0(value))
+    inline def setBefore_slide_change(value: () => Any): Self = StObject.set(x, "before_slide_change", js.Any.fromFunction0(value))
     
     inline def setBefore_slide_changeUndefined: Self = StObject.set(x, "before_slide_change", js.undefined)
     

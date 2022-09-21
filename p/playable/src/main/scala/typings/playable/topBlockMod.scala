@@ -14,7 +14,7 @@ object topBlockMod {
   
   @JSImport("playable/dist/src/modules/ui/top-block/top-block", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with TopBlock {
     def this(dependencies: IDependencies) = this()
@@ -61,7 +61,7 @@ object topBlockMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("playable/dist/src/modules/ui/top-block/top-block", "default.View")
     @js.native
-    class View protected ()
+    open class View protected ()
       extends typings.playable.topBlockViewMod.default {
       def this(config: ITopBlockViewConfig) = this()
     }
@@ -111,17 +111,17 @@ object topBlockMod {
     extends StObject
        with ITopBlock {
     
-    /* private */ var _bindViewCallbacks: js.Any = js.native
+    /* private */ var _bindViewCallbacks: Any = js.native
     
-    /* private */ var _getElements: js.Any = js.native
+    /* private */ var _getElements: Any = js.native
     
-    /* private */ var _initUI: js.Any = js.native
+    /* private */ var _initUI: Any = js.native
     
-    /* private */ var _isBlockFocused: js.Any = js.native
+    /* private */ var _isBlockFocused: Any = js.native
     
-    /* private */ var _removeFocusState: js.Any = js.native
+    /* private */ var _removeFocusState: Any = js.native
     
-    /* private */ var _setFocusState: js.Any = js.native
+    /* private */ var _setFocusState: Any = js.native
     
     @JSName("isFocused")
     def isFocused_MTopBlock: Boolean = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.List")
 @js.native
-class List[T] ()
+open class List[T] ()
   extends StObject
      with typings.sharepoint.CUI.List[T] {
   

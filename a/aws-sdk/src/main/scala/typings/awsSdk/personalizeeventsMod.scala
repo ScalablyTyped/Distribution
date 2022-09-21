@@ -16,7 +16,7 @@ object personalizeeventsMod {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
-  class ^ () extends PersonalizeEvents {
+  open class ^ () extends PersonalizeEvents {
     def this(options: ClientConfiguration) = this()
   }
   
@@ -51,7 +51,7 @@ object personalizeeventsMod {
     extends ServiceConfigurationOptions
        with ClientApiVersions
   
-  type Date = typings.std.Date
+  type Date = js.Date
   
   trait Event extends StObject {
     
@@ -93,11 +93,11 @@ object personalizeeventsMod {
     /**
       * The timestamp (in Unix time) on the client side when the event occurred.
       */
-    var sentAt: Date
+    var sentAt: js.Date
   }
   object Event {
     
-    inline def apply(eventType: StringType, sentAt: Date): Event = {
+    inline def apply(eventType: StringType, sentAt: js.Date): Event = {
       val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], sentAt = sentAt.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
@@ -118,7 +118,7 @@ object personalizeeventsMod {
       
       inline def setImpressionUndefined: Self = StObject.set(x, "impression", js.undefined)
       
-      inline def setImpressionVarargs(value: ItemId*): Self = StObject.set(x, "impression", js.Array(value :_*))
+      inline def setImpressionVarargs(value: ItemId*): Self = StObject.set(x, "impression", js.Array(value*))
       
       inline def setItemId(value: ItemId): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
       
@@ -132,7 +132,7 @@ object personalizeeventsMod {
       
       inline def setRecommendationIdUndefined: Self = StObject.set(x, "recommendationId", js.undefined)
       
-      inline def setSentAt(value: Date): Self = StObject.set(x, "sentAt", value.asInstanceOf[js.Any])
+      inline def setSentAt(value: js.Date): Self = StObject.set(x, "sentAt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,7 +152,7 @@ object personalizeeventsMod {
     var itemId: StringType
     
     /**
-      * A string map of item-specific metadata. Each element in the map consists of a key-value pair. For example,   {"numberOfRatings": "12"}  The keys use camel case names that match the fields in the Items schema. In the above example, the numberOfRatings would match the 'NUMBER_OF_RATINGS' field defined in the Items schema.
+      * A string map of item-specific metadata. Each element in the map consists of a key-value pair. For example, {"numberOfRatings": "12"}. The keys use camel case names that match the fields in the schema for the Items dataset. In the previous example, the numberOfRatings matches the 'NUMBER_OF_RATINGS' field defined in the Items schema. For categorical string data, to include multiple categories for a single item, separate each category with a pipe separator (|). For example, \"Horror|Action\".
       */
     var properties: js.UndefOr[ItemProperties] = js.undefined
   }
@@ -186,34 +186,34 @@ object personalizeeventsMod {
     var config_PersonalizeEvents: ConfigBase & ClientConfiguration = js.native
     
     /**
-      * Records user interaction event data. For more information see event-record-api.
+      * Records user interaction event data. For more information see Recording Events.
       */
     def putEvents(): Request[js.Object, AWSError] = js.native
     def putEvents(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
     /**
-      * Records user interaction event data. For more information see event-record-api.
+      * Records user interaction event data. For more information see Recording Events.
       */
     def putEvents(params: PutEventsRequest): Request[js.Object, AWSError] = js.native
     def putEvents(params: PutEventsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
     
     /**
-      * Adds one or more items to an Items dataset. For more information see importing-items.
+      * Adds one or more items to an Items dataset. For more information see Importing Items Incrementally. 
       */
     def putItems(): Request[js.Object, AWSError] = js.native
     def putItems(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
     /**
-      * Adds one or more items to an Items dataset. For more information see importing-items.
+      * Adds one or more items to an Items dataset. For more information see Importing Items Incrementally. 
       */
     def putItems(params: PutItemsRequest): Request[js.Object, AWSError] = js.native
     def putItems(params: PutItemsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
     
     /**
-      * Adds one or more users to a Users dataset. For more information see importing-users.
+      * Adds one or more users to a Users dataset. For more information see Importing Users Incrementally.
       */
     def putUsers(): Request[js.Object, AWSError] = js.native
     def putUsers(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
     /**
-      * Adds one or more users to a Users dataset. For more information see importing-users.
+      * Adds one or more users to a Users dataset. For more information see Importing Users Incrementally.
       */
     def putUsers(params: PutUsersRequest): Request[js.Object, AWSError] = js.native
     def putUsers(params: PutUsersRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
@@ -227,7 +227,7 @@ object personalizeeventsMod {
     var eventList: EventList
     
     /**
-      * The session ID associated with the user's visit. Your application generates the sessionId when a user first visits your website or uses your application. Amazon Personalize uses the sessionId to associate events with the user before they log in. For more information see event-record-api.
+      * The session ID associated with the user's visit. Your application generates the sessionId when a user first visits your website or uses your application. Amazon Personalize uses the sessionId to associate events with the user before they log in. For more information, see Recording Events.
       */
     var sessionId: StringType
     
@@ -252,7 +252,7 @@ object personalizeeventsMod {
       
       inline def setEventList(value: EventList): Self = StObject.set(x, "eventList", value.asInstanceOf[js.Any])
       
-      inline def setEventListVarargs(value: Event*): Self = StObject.set(x, "eventList", js.Array(value :_*))
+      inline def setEventListVarargs(value: Event*): Self = StObject.set(x, "eventList", js.Array(value*))
       
       inline def setSessionId(value: StringType): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
       
@@ -267,7 +267,7 @@ object personalizeeventsMod {
   trait PutItemsRequest extends StObject {
     
     /**
-      * The Amazon Resource Number (ARN) of the Items dataset you are adding the item or items to.
+      * The Amazon Resource Name (ARN) of the Items dataset you are adding the item or items to.
       */
     var datasetArn: Arn
     
@@ -289,14 +289,14 @@ object personalizeeventsMod {
       
       inline def setItems(value: ItemList): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value*))
     }
   }
   
   trait PutUsersRequest extends StObject {
     
     /**
-      * The Amazon Resource Number (ARN) of the Users dataset you are adding the user or users to.
+      * The Amazon Resource Name (ARN) of the Users dataset you are adding the user or users to.
       */
     var datasetArn: Arn
     
@@ -318,7 +318,7 @@ object personalizeeventsMod {
       
       inline def setUsers(value: UserList): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      inline def setUsersVarargs(value: User*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: User*): Self = StObject.set(x, "users", js.Array(value*))
     }
   }
   
@@ -329,7 +329,7 @@ object personalizeeventsMod {
   trait User extends StObject {
     
     /**
-      * A string map of user-specific metadata. Each element in the map consists of a key-value pair. For example,   {"numberOfVideosWatched": "45"}  The keys use camel case names that match the fields in the Users schema. In the above example, the numberOfVideosWatched would match the 'NUMBER_OF_VIDEOS_WATCHED' field defined in the Users schema.
+      * A string map of user-specific metadata. Each element in the map consists of a key-value pair. For example, {"numberOfVideosWatched": "45"}. The keys use camel case names that match the fields in the schema for the Users dataset. In the previous example, the numberOfVideosWatched matches the 'NUMBER_OF_VIDEOS_WATCHED' field defined in the Users schema. For categorical string data, to include multiple categories for a single user, separate each category with a pipe separator (|). For example, \"Member|Frequent shopper\".
       */
     var properties: js.UndefOr[UserProperties] = js.undefined
     

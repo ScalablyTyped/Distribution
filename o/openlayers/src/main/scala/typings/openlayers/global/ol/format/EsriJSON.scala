@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api
   */
-class EsriJSON ()
+open class EsriJSON ()
   extends typings.openlayers.mod.format.EsriJSON {
   def this(opt_options: EsriJSONOptions) = this()
 }

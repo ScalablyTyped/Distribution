@@ -29,10 +29,10 @@ object StatelessRulesAndCustomActions {
     
     inline def setCustomActionsUndefined: Self = StObject.set(x, "CustomActions", js.undefined)
     
-    inline def setCustomActionsVarargs(value: CustomAction*): Self = StObject.set(x, "CustomActions", js.Array(value :_*))
+    inline def setCustomActionsVarargs(value: CustomAction*): Self = StObject.set(x, "CustomActions", js.Array(value*))
     
     inline def setStatelessRules(value: StatelessRules): Self = StObject.set(x, "StatelessRules", value.asInstanceOf[js.Any])
     
-    inline def setStatelessRulesVarargs(value: StatelessRule*): Self = StObject.set(x, "StatelessRules", js.Array(value :_*))
+    inline def setStatelessRulesVarargs(value: StatelessRule*): Self = StObject.set(x, "StatelessRules", js.Array(value*))
   }
 }

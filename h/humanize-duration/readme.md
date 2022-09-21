@@ -1,7 +1,7 @@
 
 # Scala.js typings for humanize-duration
 
-Typings are for version 3.18
+Typings are for version 3.27
 
 ## Library description:
 Convert millisecond durations to English and many other languages.
@@ -10,10 +10,10 @@ Convert millisecond durations to English and many other languages.
 | ------------------ | :-------------: |
 | Full name          | humanize-duration |
 | Keywords           | humanize, duration, time, hours, minutes, seconds, days, years, months |
-| # releases         | 12 |
-| # dependents       | 163 |
-| # downloads        | 9885100 |
-| # stars            | 16 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 2330642.6666666665 |
+| # stars            | 1404.0 |
 
 ## Links
 - [Homepage](https://github.com/EvanHahn/HumanizeDuration.js)

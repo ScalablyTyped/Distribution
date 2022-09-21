@@ -11,6 +11,14 @@ object jssipStrings {
   inline def accepted: accepted = "accepted".asInstanceOf[accepted]
   
   @js.native
+  sealed trait authorization_jwt extends StObject
+  inline def authorization_jwt: authorization_jwt = "authorization_jwt".asInstanceOf[authorization_jwt]
+  
+  @js.native
+  sealed trait authorization_user extends StObject
+  inline def authorization_user: authorization_user = "authorization_user".asInstanceOf[authorization_user]
+  
+  @js.native
   sealed trait confirmed extends StObject
   inline def confirmed: confirmed = "confirmed".asInstanceOf[confirmed]
   
@@ -23,8 +31,24 @@ object jssipStrings {
   inline def connecting: connecting = "connecting".asInstanceOf[connecting]
   
   @js.native
+  sealed trait connection_recovery_max_interval extends StObject
+  inline def connection_recovery_max_interval: connection_recovery_max_interval = "connection_recovery_max_interval".asInstanceOf[connection_recovery_max_interval]
+  
+  @js.native
+  sealed trait connection_recovery_min_interval extends StObject
+  inline def connection_recovery_min_interval: connection_recovery_min_interval = "connection_recovery_min_interval".asInstanceOf[connection_recovery_min_interval]
+  
+  @js.native
+  sealed trait contact_uri extends StObject
+  inline def contact_uri: contact_uri = "contact_uri".asInstanceOf[contact_uri]
+  
+  @js.native
   sealed trait disconnected extends StObject
   inline def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  
+  @js.native
+  sealed trait display_name extends StObject
+  inline def display_name: display_name = "display_name".asInstanceOf[display_name]
   
   @js.native
   sealed trait ended extends StObject
@@ -39,12 +63,20 @@ object jssipStrings {
   inline def getusermediafailed: getusermediafailed = "getusermediafailed".asInstanceOf[getusermediafailed]
   
   @js.native
+  sealed trait ha1 extends StObject
+  inline def ha1: ha1 = "ha1".asInstanceOf[ha1]
+  
+  @js.native
   sealed trait hold extends StObject
   inline def hold: hold = "hold".asInstanceOf[hold]
   
   @js.native
   sealed trait icecandidate extends StObject
   inline def icecandidate: icecandidate = "icecandidate".asInstanceOf[icecandidate]
+  
+  @js.native
+  sealed trait instance_id extends StObject
+  inline def instance_id: instance_id = "instance_id".asInstanceOf[instance_id]
   
   @js.native
   sealed trait muted extends StObject
@@ -65,6 +97,14 @@ object jssipStrings {
   @js.native
   sealed trait newRTCSession extends StObject
   inline def newRTCSession: newRTCSession = "newRTCSession".asInstanceOf[newRTCSession]
+  
+  @js.native
+  sealed trait no_answer_timeout extends StObject
+  inline def no_answer_timeout: no_answer_timeout = "no_answer_timeout".asInstanceOf[no_answer_timeout]
+  
+  @js.native
+  sealed trait password extends StObject
+  inline def password: password = "password".asInstanceOf[password]
   
   @js.native
   sealed trait peerconnection extends StObject
@@ -91,12 +131,28 @@ object jssipStrings {
   inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
+  sealed trait realm extends StObject
+  inline def realm: realm = "realm".asInstanceOf[realm]
+  
+  @js.native
   sealed trait refer extends StObject
   inline def refer: refer = "refer".asInstanceOf[refer]
   
   @js.native
+  sealed trait register extends StObject
+  inline def register: register = "register".asInstanceOf[register]
+  
+  @js.native
+  sealed trait register_expires extends StObject
+  inline def register_expires: register_expires = "register_expires".asInstanceOf[register_expires]
+  
+  @js.native
   sealed trait registered extends StObject
   inline def registered: registered = "registered".asInstanceOf[registered]
+  
+  @js.native
+  sealed trait registrar_server extends StObject
+  inline def registrar_server: registrar_server = "registrar_server".asInstanceOf[registrar_server]
   
   @js.native
   sealed trait registrationExpiring extends StObject
@@ -123,8 +179,28 @@ object jssipStrings {
   inline def sending: sending = "sending".asInstanceOf[sending]
   
   @js.native
+  sealed trait session_timers extends StObject
+  inline def session_timers: session_timers = "session_timers".asInstanceOf[session_timers]
+  
+  @js.native
+  sealed trait session_timers_force_refresher extends StObject
+  inline def session_timers_force_refresher: session_timers_force_refresher = "session_timers_force_refresher".asInstanceOf[session_timers_force_refresher]
+  
+  @js.native
+  sealed trait session_timers_refresh_method extends StObject
+  inline def session_timers_refresh_method: session_timers_refresh_method = "session_timers_refresh_method".asInstanceOf[session_timers_refresh_method]
+  
+  @js.native
+  sealed trait sip extends StObject
+  inline def sip: sip = "sip".asInstanceOf[sip]
+  
+  @js.native
   sealed trait sipEvent extends StObject
   inline def sipEvent: sipEvent = "sipEvent".asInstanceOf[sipEvent]
+  
+  @js.native
+  sealed trait sockets extends StObject
+  inline def sockets: sockets = "sockets".asInstanceOf[sockets]
   
   @js.native
   sealed trait succeeded extends StObject
@@ -145,4 +221,16 @@ object jssipStrings {
   @js.native
   sealed trait update extends StObject
   inline def update: update = "update".asInstanceOf[update]
+  
+  @js.native
+  sealed trait uri extends StObject
+  inline def uri: uri = "uri".asInstanceOf[uri]
+  
+  @js.native
+  sealed trait use_preloaded_route extends StObject
+  inline def use_preloaded_route: use_preloaded_route = "use_preloaded_route".asInstanceOf[use_preloaded_route]
+  
+  @js.native
+  sealed trait user_agent extends StObject
+  inline def user_agent: user_agent = "user_agent".asInstanceOf[user_agent]
 }

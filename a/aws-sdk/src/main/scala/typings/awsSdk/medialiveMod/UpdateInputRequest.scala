@@ -63,13 +63,13 @@ object UpdateInputRequest {
     
     inline def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
-    inline def setDestinationsVarargs(value: InputDestinationRequest*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: InputDestinationRequest*): Self = StObject.set(x, "Destinations", js.Array(value*))
     
     inline def setInputDevices(value: listOfInputDeviceRequest): Self = StObject.set(x, "InputDevices", value.asInstanceOf[js.Any])
     
     inline def setInputDevicesUndefined: Self = StObject.set(x, "InputDevices", js.undefined)
     
-    inline def setInputDevicesVarargs(value: InputDeviceRequest*): Self = StObject.set(x, "InputDevices", js.Array(value :_*))
+    inline def setInputDevicesVarargs(value: InputDeviceRequest*): Self = StObject.set(x, "InputDevices", js.Array(value*))
     
     inline def setInputId(value: string): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
     
@@ -77,13 +77,13 @@ object UpdateInputRequest {
     
     inline def setInputSecurityGroupsUndefined: Self = StObject.set(x, "InputSecurityGroups", js.undefined)
     
-    inline def setInputSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "InputSecurityGroups", js.Array(value :_*))
+    inline def setInputSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "InputSecurityGroups", js.Array(value*))
     
     inline def setMediaConnectFlows(value: listOfMediaConnectFlowRequest): Self = StObject.set(x, "MediaConnectFlows", value.asInstanceOf[js.Any])
     
     inline def setMediaConnectFlowsUndefined: Self = StObject.set(x, "MediaConnectFlows", js.undefined)
     
-    inline def setMediaConnectFlowsVarargs(value: MediaConnectFlowRequest*): Self = StObject.set(x, "MediaConnectFlows", js.Array(value :_*))
+    inline def setMediaConnectFlowsVarargs(value: MediaConnectFlowRequest*): Self = StObject.set(x, "MediaConnectFlows", js.Array(value*))
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -97,6 +97,6 @@ object UpdateInputRequest {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
     
-    inline def setSourcesVarargs(value: InputSourceRequest*): Self = StObject.set(x, "Sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: InputSourceRequest*): Self = StObject.set(x, "Sources", js.Array(value*))
   }
 }

@@ -9,10 +9,10 @@ object mod {
   
   @JSImport("react-native-android-taskdescription", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ReactNativeAndroidTaskDescriptionProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ReactNativeAndroidTaskDescriptionProps, js.Object, Any]
   
-  type ReactNativeAndroidTaskDescription = Component[ReactNativeAndroidTaskDescriptionProps, js.Object, js.Any]
+  type ReactNativeAndroidTaskDescription = Component[ReactNativeAndroidTaskDescriptionProps, js.Object, Any]
   
   trait ReactNativeAndroidTaskDescriptionProps extends StObject {
     

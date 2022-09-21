@@ -17,7 +17,7 @@ trait AllocateTransitVirtualInterfaceRequest extends StObject {
   var newTransitVirtualInterfaceAllocation: NewTransitVirtualInterfaceAllocation
   
   /**
-    * The ID of the AWS account that owns the transit virtual interface.
+    * The ID of the Amazon Web Services account that owns the transit virtual interface.
     */
   var ownerAccount: OwnerAccount
 }

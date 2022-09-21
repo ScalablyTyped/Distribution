@@ -24,6 +24,6 @@ object InferenceAcceleratorInfo {
     
     inline def setAcceleratorsUndefined: Self = StObject.set(x, "Accelerators", js.undefined)
     
-    inline def setAcceleratorsVarargs(value: InferenceDeviceInfo*): Self = StObject.set(x, "Accelerators", js.Array(value :_*))
+    inline def setAcceleratorsVarargs(value: InferenceDeviceInfo*): Self = StObject.set(x, "Accelerators", js.Array(value*))
   }
 }

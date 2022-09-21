@@ -8,33 +8,33 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the worksheet that raised the added event.
   *
-  * Provides information about the worksheet that raised the Added event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait WorksheetAddedEventArgs extends StObject {
   
   /**
+    * Gets the source of the event. See `Excel.EventSource` for details.
     *
-    * Gets the source of the event. See Excel.EventSource for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var source: EventSource | Local | Remote
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var `type`: WorksheetAdded
   
   /**
+    * Gets the ID of the worksheet that is added to the workbook.
     *
-    * Gets the id of the worksheet that is added to the workbook.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var worksheetId: String

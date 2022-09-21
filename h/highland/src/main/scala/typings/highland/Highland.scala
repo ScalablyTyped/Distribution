@@ -3,14 +3,11 @@ package typings.highland
 import org.scalablytyped.runtime.StringDictionary
 import typings.highland.anon.End
 import typings.highland.highlandStrings.done
-import typings.node.NodeJS.ReadWriteStream
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.global.NodeJS.EventEmitter
-import typings.std.Error
 import typings.std.Partial
 import typings.std.Pick
-import typings.std.RegExp
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,8 +61,8 @@ object Highland {
   }
   
   type OnFinished = js.Function2[
-    /* r */ ReadableStream, 
-    /* cb */ js.Function1[/* repeated */ js.Any, Unit], 
+    /* r */ ReadableStream[Any], 
+    /* cb */ js.Function1[/* repeated */ Any, Unit], 
     Unit | js.Function | CleanupObject
   ]
   
@@ -219,9 +216,9 @@ object Highland {
       */
     def consume[U](
       f: js.Function4[
-          /* err */ Error, 
+          /* err */ js.Error, 
           /* x */ R | Nil, 
-          /* push */ js.Function2[/* err */ Error | Null, /* value */ js.UndefOr[U | Nil], Unit], 
+          /* push */ js.Function2[/* err */ js.Error | Null, /* value */ js.UndefOr[U | Nil], Unit], 
           /* next */ js.Function0[Unit], 
           Unit
         ]
@@ -339,7 +336,7 @@ object Highland {
     /**
       * Ends a Stream. This is the same as sending a [nil](#nil) value as data.
       * You shouldn't need to call this directly, rather it will be called by
-      * any [Node Readable Streams](http://nodejs.org/api/stream.html#stream_class_stream_readable)
+      * any [Node Readable Streams](https://nodejs.org/api/stream.html#stream_class_stream_readable)
       * you pipe in.
       *
       * @id end
@@ -363,8 +360,8 @@ object Highland {
       */
     def errors(
       f: js.Function2[
-          /* err */ Error, 
-          /* push */ js.Function2[/* err */ Error | Null, /* x */ js.UndefOr[R], Unit], 
+          /* err */ js.Error, 
+          /* push */ js.Function2[/* err */ js.Error | Null, /* x */ js.UndefOr[R], Unit], 
           Unit
         ]
     ): Stream[R] = js.native
@@ -525,7 +522,7 @@ object Highland {
       * @param {Array} args - the arguments to call the method with
       * @api public
       */
-    def invoke[U](method: String, args: js.Array[js.Any]): Stream[U] = js.native
+    def invoke[U](method: String, args: js.Array[Any]): Stream[U] = js.native
     
     /**
       * Drops all values from the Stream apart from the last one (if any).
@@ -699,11 +696,11 @@ object Highland {
         ]
     ): Stream[Partial[R]] = js.native
     
-    def pipe[U /* <: WritableStream */](dest: U): U = js.native
-    def pipe[U /* <: WritableStream */](dest: U, options: End): U = js.native
+    def pipe[U /* <: WritableStream[Any] */](dest: U): U = js.native
+    def pipe[U /* <: WritableStream[Any] */](dest: U, options: End): U = js.native
     /**
       * Pipes a Highland Stream to a [Node Writable
-      * Stream](http://nodejs.org/api/stream.html#stream_class_stream_writable).
+      * Stream](https://nodejs.org/api/stream.html#stream_class_stream_writable).
       * This will pull all the data from the source Highland Stream and write it to
       * the destination, automatically managing flow so that the destination is not
       * overwhelmed by a fast source.
@@ -765,7 +762,7 @@ object Highland {
       * @param {Function} f - the function to handle data
       * @api public
       */
-    def pull(f: js.Function2[/* err */ Error, /* x */ R, Unit]): Unit = js.native
+    def pull(f: js.Function2[/* err */ js.Error, /* x */ R | Nil, Unit]): Unit = js.native
     
     /**
       * Limits number of values through the stream to a maximum of number of values
@@ -964,7 +961,7 @@ object Highland {
       * @api public
       */
     def splitBy(sep: String): Stream[String] = js.native
-    def splitBy(sep: RegExp): Stream[String] = js.native
+    def splitBy(sep: js.RegExp): Stream[String] = js.native
     
     /**
       * Like the [errors](#errors) method, but emits a Stream end marker after
@@ -976,7 +973,7 @@ object Highland {
       * @param {Function} f - the function to handle an error
       * @api public
       */
-    def stopOnError(f: js.Function1[/* err */ Error, Unit]): Stream[R] = js.native
+    def stopOnError(f: js.Function1[/* err */ js.Error, Unit]): Stream[R] = js.native
     
     /**
       * Creates a new Stream with the first `n` values from the source.
@@ -1014,7 +1011,9 @@ object Highland {
       */
     def throttle(ms: Double): Stream[R] = js.native
     
-    def through(thru: ReadWriteStream): Stream[js.Any] = js.native
+    def through(
+      thru: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+    ): Stream[Any] = js.native
     /**
       * Transforms a stream using an arbitrary target transform.
       *
@@ -1113,27 +1112,27 @@ object Highland {
       *     // parameter err will be null
       * });
       */
-    def toCallback(cb: js.Function2[/* err */ js.UndefOr[Error], /* x */ js.UndefOr[R], Unit]): Unit = js.native
+    def toCallback(cb: js.Function2[/* err */ js.UndefOr[js.Error], /* x */ js.UndefOr[R], Unit]): Unit = js.native
     
     /**
       * Converts the stream to a node Readable Stream for use in methods
       * or pipes that depend on the native stream type.
       *
       * The options parameter can be an object passed into the [`Readable`
-      * constructor](http://nodejs.org/api/stream.html#stream_class_stream_readable).
+      * constructor](https://nodejs.org/api/stream.html#stream_class_stream_readable).
       *
       * @id toNodeStream
       * @section Consumption
       * @name Stream.toNodeStream(options)
-      * @param {Object} options - (optional) [`Readable` constructor](http://nodejs.org/api/stream.html#stream_class_stream_readable) options
+      * @param {Object} options - (optional) [`Readable` constructor](https://nodejs.org/api/stream.html#stream_class_stream_readable) options
       * @api public
       *
       * _(fs.createReadStream('./abc')).toNodeStream()
       * _(fs.createReadStream('./abc')).toNodeStream({objectMode: false})
       * _([{a: 1}]).toNodeStream({objectMode: true})
       */
-    def toNodeStream(): ReadableStream = js.native
-    def toNodeStream(options: js.Object): ReadableStream = js.native
+    def toNodeStream(): ReadableStream[Any] = js.native
+    def toNodeStream(options: js.Object): ReadableStream[Any] = js.native
     
     /**
       * Converts the result of a stream to Promise.
@@ -1199,7 +1198,7 @@ object Highland {
       * paused, true otherwise. This lets Node's pipe method handle back-pressure.
       *
       * You shouldn't need to call this yourself, but it may be called by Node
-      * functions which treat Highland Streams as a [Node Writable Stream](http://nodejs.org/api/stream.html#stream_class_stream_writable).
+      * functions which treat Highland Streams as a [Node Writable Stream](https://nodejs.org/api/stream.html#stream_class_stream_writable).
       *
       * @id write
       * @section Streams
@@ -1261,18 +1260,18 @@ object Highland {
   // TODO is this public?
   trait StreamError extends StObject {
     
-    var error: Error
+    var error: js.Error
   }
   object StreamError {
     
-    inline def apply(error: Error): StreamError = {
+    inline def apply(error: js.Error): StreamError = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamError]
     }
     
     extension [Self <: StreamError](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   

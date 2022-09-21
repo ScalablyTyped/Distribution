@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Wallet
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IMap
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import typings.winrtUwp.Windows.UI.Color
@@ -33,7 +32,7 @@ trait WalletItem extends StObject {
   var displayProperties: IMap[String, WalletItemCustomProperty]
   
   /** Gets or sets the expiration date of the wallet item. */
-  var expirationDate: Date
+  var expirationDate: js.Date
   
   /** Gets or sets the header background image of the wallet item. */
   var headerBackgroundImage: IRandomAccessStreamReference
@@ -63,7 +62,7 @@ trait WalletItem extends StObject {
   var kind: WalletItemKind
   
   /** Gets or sets the date and time the data for this item was last updated. */
-  var lastUpdated: Date
+  var lastUpdated: js.Date
   
   /** Gets or sets the medium (159 x 159) logo image of the wallet item. */
   var logo159x159: IRandomAccessStreamReference
@@ -84,7 +83,7 @@ trait WalletItem extends StObject {
   var promotionalImage: IRandomAccessStreamReference
   
   /** Gets or sets the date on which the item is valid. */
-  var relevantDate: Date
+  var relevantDate: js.Date
   
   /** Gets or sets the description of the relevant date of the wallet item. */
   var relevantDateDisplayMessage: String
@@ -108,7 +107,7 @@ object WalletItem {
     displayMessage: String,
     displayName: String,
     displayProperties: IMap[String, WalletItemCustomProperty],
-    expirationDate: Date,
+    expirationDate: js.Date,
     headerBackgroundImage: IRandomAccessStreamReference,
     headerColor: Color,
     headerFontColor: Color,
@@ -118,14 +117,14 @@ object WalletItem {
     isMoreTransactionHistoryLaunchable: Boolean,
     issuerDisplayName: String,
     kind: WalletItemKind,
-    lastUpdated: Date,
+    lastUpdated: js.Date,
     logo159x159: IRandomAccessStreamReference,
     logo336x336: IRandomAccessStreamReference,
     logo99x99: IRandomAccessStreamReference,
     logoImage: IRandomAccessStreamReference,
     logoText: String,
     promotionalImage: IRandomAccessStreamReference,
-    relevantDate: Date,
+    relevantDate: js.Date,
     relevantDateDisplayMessage: String,
     relevantLocations: IMap[String, WalletRelevantLocation],
     transactionHistory: IMap[String, WalletTransaction],
@@ -151,7 +150,7 @@ object WalletItem {
     
     inline def setDisplayProperties(value: IMap[String, WalletItemCustomProperty]): Self = StObject.set(x, "displayProperties", value.asInstanceOf[js.Any])
     
-    inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     inline def setHeaderBackgroundImage(value: IRandomAccessStreamReference): Self = StObject.set(x, "headerBackgroundImage", value.asInstanceOf[js.Any])
     
@@ -171,7 +170,7 @@ object WalletItem {
     
     inline def setKind(value: WalletItemKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdated(value: Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: js.Date): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
     inline def setLogo159x159(value: IRandomAccessStreamReference): Self = StObject.set(x, "logo159x159", value.asInstanceOf[js.Any])
     
@@ -185,7 +184,7 @@ object WalletItem {
     
     inline def setPromotionalImage(value: IRandomAccessStreamReference): Self = StObject.set(x, "promotionalImage", value.asInstanceOf[js.Any])
     
-    inline def setRelevantDate(value: Date): Self = StObject.set(x, "relevantDate", value.asInstanceOf[js.Any])
+    inline def setRelevantDate(value: js.Date): Self = StObject.set(x, "relevantDate", value.asInstanceOf[js.Any])
     
     inline def setRelevantDateDisplayMessage(value: String): Self = StObject.set(x, "relevantDateDisplayMessage", value.asInstanceOf[js.Any])
     

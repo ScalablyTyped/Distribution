@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("kafka-node", "HighLevelProducer")
 @js.native
-class HighLevelProducer protected () extends Producer {
+open class HighLevelProducer protected () extends Producer {
   def this(client: KafkaClient) = this()
   def this(client: KafkaClient, options: ProducerOptions) = this()
   def this(client: KafkaClient, options: Unit, customPartitioner: CustomPartitioner) = this()

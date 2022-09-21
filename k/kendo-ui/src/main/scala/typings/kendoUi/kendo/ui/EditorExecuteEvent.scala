@@ -8,7 +8,7 @@ trait EditorExecuteEvent
   extends StObject
      with EditorEvent {
   
-  var command: js.UndefOr[js.Any] = js.undefined
+  var command: js.UndefOr[Any] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
 }
@@ -21,7 +21,7 @@ object EditorExecuteEvent {
   
   extension [Self <: EditorExecuteEvent](x: Self) {
     
-    inline def setCommand(value: js.Any): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Any): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     

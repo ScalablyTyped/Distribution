@@ -56,7 +56,7 @@ object SetScriptSourceReturnType {
     
     inline def setCallFramesUndefined: Self = StObject.set(x, "callFrames", js.undefined)
     
-    inline def setCallFramesVarargs(value: CallFrame*): Self = StObject.set(x, "callFrames", js.Array(value :_*))
+    inline def setCallFramesVarargs(value: CallFrame*): Self = StObject.set(x, "callFrames", js.Array(value*))
     
     inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     

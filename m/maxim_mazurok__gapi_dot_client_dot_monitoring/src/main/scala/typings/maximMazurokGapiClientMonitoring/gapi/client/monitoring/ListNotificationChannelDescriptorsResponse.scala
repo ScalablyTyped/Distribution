@@ -28,7 +28,7 @@ object ListNotificationChannelDescriptorsResponse {
     
     inline def setChannelDescriptorsUndefined: Self = StObject.set(x, "channelDescriptors", js.undefined)
     
-    inline def setChannelDescriptorsVarargs(value: NotificationChannelDescriptor*): Self = StObject.set(x, "channelDescriptors", js.Array(value :_*))
+    inline def setChannelDescriptorsVarargs(value: NotificationChannelDescriptor*): Self = StObject.set(x, "channelDescriptors", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

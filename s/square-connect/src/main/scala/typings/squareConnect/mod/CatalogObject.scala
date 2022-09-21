@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogObject")
 @js.native
-class CatalogObject () extends StObject {
+open class CatalogObject () extends StObject {
   
   /**
     * A list of locations where the object is not present, even if `present_at_all_locations` is `true`.
@@ -18,7 +18,7 @@ class CatalogObject () extends StObject {
     * The Connect v1 IDs for this object at each location where it is present, where they differ from the object's Connect V2 ID.
     * The field will only be present for objects that have been created or modified by legacy APIs.
     */
-  var catalog_v1_ids: js.UndefOr[js.Array[Record[String, js.Any]]] = js.native
+  var catalog_v1_ids: js.UndefOr[js.Array[Record[String, Any]]] = js.native
   
   /**
     * Structured data for a `CatalogCategory`, set for CatalogObjects of type `CATEGORY`.

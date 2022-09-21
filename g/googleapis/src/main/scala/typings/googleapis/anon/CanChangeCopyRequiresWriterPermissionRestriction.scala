@@ -40,6 +40,8 @@ trait CanChangeCopyRequiresWriterPermissionRestriction extends StObject {
   
   var canRenameTeamDrive: js.UndefOr[Boolean] = js.undefined
   
+  var canResetTeamDriveRestrictions: js.UndefOr[Boolean] = js.undefined
+  
   var canShare: js.UndefOr[Boolean] = js.undefined
   
   var canTrashChildren: js.UndefOr[Boolean] = js.undefined
@@ -120,6 +122,10 @@ object CanChangeCopyRequiresWriterPermissionRestriction {
     inline def setCanRenameTeamDriveUndefined: Self = StObject.set(x, "canRenameTeamDrive", js.undefined)
     
     inline def setCanRenameUndefined: Self = StObject.set(x, "canRename", js.undefined)
+    
+    inline def setCanResetTeamDriveRestrictions(value: Boolean): Self = StObject.set(x, "canResetTeamDriveRestrictions", value.asInstanceOf[js.Any])
+    
+    inline def setCanResetTeamDriveRestrictionsUndefined: Self = StObject.set(x, "canResetTeamDriveRestrictions", js.undefined)
     
     inline def setCanShare(value: Boolean): Self = StObject.set(x, "canShare", value.asInstanceOf[js.Any])
     

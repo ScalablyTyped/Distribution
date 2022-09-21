@@ -53,13 +53,13 @@ object typesBatchGetTracesOutputMod {
       
       inline def setTracesUndefined: Self = StObject.set(x, "Traces", js.undefined)
       
-      inline def setTracesVarargs(value: UnmarshalledTrace*): Self = StObject.set(x, "Traces", js.Array(value :_*))
+      inline def setTracesVarargs(value: UnmarshalledTrace*): Self = StObject.set(x, "Traces", js.Array(value*))
       
       inline def setUnprocessedTraceIds(value: js.Array[String]): Self = StObject.set(x, "UnprocessedTraceIds", value.asInstanceOf[js.Any])
       
       inline def setUnprocessedTraceIdsUndefined: Self = StObject.set(x, "UnprocessedTraceIds", js.undefined)
       
-      inline def setUnprocessedTraceIdsVarargs(value: String*): Self = StObject.set(x, "UnprocessedTraceIds", js.Array(value :_*))
+      inline def setUnprocessedTraceIdsVarargs(value: String*): Self = StObject.set(x, "UnprocessedTraceIds", js.Array(value*))
     }
   }
 }

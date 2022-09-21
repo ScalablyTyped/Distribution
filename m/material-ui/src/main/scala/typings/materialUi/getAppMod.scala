@@ -10,10 +10,10 @@ object getAppMod {
   
   @JSImport("material-ui/svg-icons/action/get-app", JSImport.Default)
   @js.native
-  class default () extends ActionGetApp
+  open class default () extends ActionGetApp
   
   @JSImport("material-ui/svg-icons/action/get-app", "ActionGetApp")
   @js.native
-  class ActionGetApp ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionGetApp ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

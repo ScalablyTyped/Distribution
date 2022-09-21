@@ -1,7 +1,6 @@
 package typings.tensorflowTfjsCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.ArrayBuffer
 import typings.std.File
 import typings.std.RequestInit
 import typings.tensorflowTfjsCore.anon.Data
@@ -9,9 +8,11 @@ import typings.tensorflowTfjsCore.routerRegistryMod.IORouter
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensor
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsCore.typesMod.IOHandler
+import typings.tensorflowTfjsCore.typesMod.IOHandlerSync
 import typings.tensorflowTfjsCore.typesMod.LoadOptions
 import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsCore.typesMod.ModelArtifactsInfo
+import typings.tensorflowTfjsCore.typesMod.ModelJSON
 import typings.tensorflowTfjsCore.typesMod.SaveResult
 import typings.tensorflowTfjsCore.typesMod.TrainingConfig
 import typings.tensorflowTfjsCore.typesMod.WeightGroup
@@ -32,7 +33,7 @@ object io {
   inline def browserHTTPRequest(path: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserHTTPRequest")(path.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
   inline def browserHTTPRequest(path: String, loadOptions: LoadOptions): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("browserHTTPRequest")(path.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
   
-  inline def concatenateArrayBuffers(buffers: js.Array[ArrayBuffer]): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenateArrayBuffers")(buffers.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  inline def concatenateArrayBuffers(buffers: js.Array[js.typedarray.ArrayBuffer]): js.typedarray.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenateArrayBuffers")(buffers.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer]
   
   /**
     * Copy a model from one URL to another.
@@ -83,7 +84,7 @@ object io {
     */
   inline def copyModel(sourceURL: String, destURL: String): js.Promise[ModelArtifactsInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyModel")(sourceURL.asInstanceOf[js.Any], destURL.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ModelArtifactsInfo]]
   
-  inline def decodeWeights(buffer: ArrayBuffer, specs: js.Array[WeightsManifestEntry]): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeWeights")(buffer.asInstanceOf[js.Any], specs.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  inline def decodeWeights(buffer: js.typedarray.ArrayBuffer, specs: js.Array[WeightsManifestEntry]): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeWeights")(buffer.asInstanceOf[js.Any], specs.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   
   inline def encodeWeights(tensors: js.Array[NamedTensor]): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Data]]
   inline def encodeWeights(tensors: js.Array[NamedTensor], group: WeightGroup): js.Promise[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWeights")(tensors.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Data]]
@@ -95,41 +96,52 @@ object io {
   inline def fromMemory(
     modelArtifacts: js.Object,
     weightSpecs: js.Array[WeightsManifestEntry],
-    weightData: Unit,
-    trainingConfig: TrainingConfig
-  ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
-  inline def fromMemory(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry], weightData: ArrayBuffer): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+    weightData: js.typedarray.ArrayBuffer
+  ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
   inline def fromMemory(
     modelArtifacts: js.Object,
     weightSpecs: js.Array[WeightsManifestEntry],
-    weightData: ArrayBuffer,
+    weightData: js.typedarray.ArrayBuffer,
     trainingConfig: TrainingConfig
   ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
-  inline def fromMemory(modelArtifacts: js.Object, weightSpecs: Unit, weightData: Unit, trainingConfig: TrainingConfig): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
-  inline def fromMemory(modelArtifacts: js.Object, weightSpecs: Unit, weightData: ArrayBuffer): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  inline def fromMemory(
+    modelArtifacts: js.Object,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: Unit,
+    trainingConfig: TrainingConfig
+  ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  inline def fromMemory(modelArtifacts: js.Object, weightSpecs: Unit, weightData: js.typedarray.ArrayBuffer): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
   inline def fromMemory(
     modelArtifacts: js.Object,
     weightSpecs: Unit,
-    weightData: ArrayBuffer,
+    weightData: js.typedarray.ArrayBuffer,
     trainingConfig: TrainingConfig
   ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  inline def fromMemory(modelArtifacts: js.Object, weightSpecs: Unit, weightData: Unit, trainingConfig: TrainingConfig): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
   inline def fromMemory(modelArtifacts: ModelArtifacts): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
   inline def fromMemory(modelArtifacts: ModelArtifacts, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
   inline def fromMemory(
     modelArtifacts: ModelArtifacts,
     weightSpecs: js.Array[WeightsManifestEntry],
-    weightData: Unit,
-    trainingConfig: TrainingConfig
-  ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
-  inline def fromMemory(
-    modelArtifacts: ModelArtifacts,
-    weightSpecs: js.Array[WeightsManifestEntry],
-    weightData: ArrayBuffer
+    weightData: js.typedarray.ArrayBuffer
   ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
   inline def fromMemory(
     modelArtifacts: ModelArtifacts,
     weightSpecs: js.Array[WeightsManifestEntry],
-    weightData: ArrayBuffer,
+    weightData: js.typedarray.ArrayBuffer,
+    trainingConfig: TrainingConfig
+  ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  inline def fromMemory(
+    modelArtifacts: ModelArtifacts,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: Unit,
+    trainingConfig: TrainingConfig
+  ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  inline def fromMemory(modelArtifacts: ModelArtifacts, weightSpecs: Unit, weightData: js.typedarray.ArrayBuffer): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  inline def fromMemory(
+    modelArtifacts: ModelArtifacts,
+    weightSpecs: Unit,
+    weightData: js.typedarray.ArrayBuffer,
     trainingConfig: TrainingConfig
   ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
   inline def fromMemory(
@@ -138,18 +150,81 @@ object io {
     weightData: Unit,
     trainingConfig: TrainingConfig
   ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
-  inline def fromMemory(modelArtifacts: ModelArtifacts, weightSpecs: Unit, weightData: ArrayBuffer): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
-  inline def fromMemory(
+  
+  inline def fromMemorySync(modelArtifacts: js.Object): IOHandlerSync = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any]).asInstanceOf[IOHandlerSync]
+  inline def fromMemorySync(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry]): IOHandlerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any])).asInstanceOf[IOHandlerSync]
+  inline def fromMemorySync(
+    modelArtifacts: js.Object,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: js.typedarray.ArrayBuffer
+  ): IOHandlerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[IOHandlerSync]
+  inline def fromMemorySync(
+    modelArtifacts: js.Object,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: js.typedarray.ArrayBuffer,
+    trainingConfig: TrainingConfig
+  ): IOHandlerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandlerSync]
+  inline def fromMemorySync(
+    modelArtifacts: js.Object,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: Unit,
+    trainingConfig: TrainingConfig
+  ): IOHandlerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandlerSync]
+  inline def fromMemorySync(modelArtifacts: js.Object, weightSpecs: Unit, weightData: js.typedarray.ArrayBuffer): IOHandlerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[IOHandlerSync]
+  inline def fromMemorySync(
+    modelArtifacts: js.Object,
+    weightSpecs: Unit,
+    weightData: js.typedarray.ArrayBuffer,
+    trainingConfig: TrainingConfig
+  ): IOHandlerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandlerSync]
+  inline def fromMemorySync(modelArtifacts: js.Object, weightSpecs: Unit, weightData: Unit, trainingConfig: TrainingConfig): IOHandlerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandlerSync]
+  inline def fromMemorySync(modelArtifacts: ModelArtifacts): IOHandlerSync = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any]).asInstanceOf[IOHandlerSync]
+  inline def fromMemorySync(modelArtifacts: ModelArtifacts, weightSpecs: js.Array[WeightsManifestEntry]): IOHandlerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any])).asInstanceOf[IOHandlerSync]
+  inline def fromMemorySync(
+    modelArtifacts: ModelArtifacts,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: js.typedarray.ArrayBuffer
+  ): IOHandlerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[IOHandlerSync]
+  inline def fromMemorySync(
+    modelArtifacts: ModelArtifacts,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: js.typedarray.ArrayBuffer,
+    trainingConfig: TrainingConfig
+  ): IOHandlerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandlerSync]
+  inline def fromMemorySync(
+    modelArtifacts: ModelArtifacts,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: Unit,
+    trainingConfig: TrainingConfig
+  ): IOHandlerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandlerSync]
+  inline def fromMemorySync(modelArtifacts: ModelArtifacts, weightSpecs: Unit, weightData: js.typedarray.ArrayBuffer): IOHandlerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[IOHandlerSync]
+  inline def fromMemorySync(
     modelArtifacts: ModelArtifacts,
     weightSpecs: Unit,
-    weightData: ArrayBuffer,
+    weightData: js.typedarray.ArrayBuffer,
     trainingConfig: TrainingConfig
-  ): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemory")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  ): IOHandlerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandlerSync]
+  inline def fromMemorySync(
+    modelArtifacts: ModelArtifacts,
+    weightSpecs: Unit,
+    weightData: Unit,
+    trainingConfig: TrainingConfig
+  ): IOHandlerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMemorySync")(modelArtifacts.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any], trainingConfig.asInstanceOf[js.Any])).asInstanceOf[IOHandlerSync]
   
   inline def getLoadHandlers(url: String): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
   inline def getLoadHandlers(url: String, loadOptions: LoadOptions): js.Array[IOHandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[IOHandler]]
   inline def getLoadHandlers(url: js.Array[String]): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
   inline def getLoadHandlers(url: js.Array[String], loadOptions: LoadOptions): js.Array[IOHandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoadHandlers")(url.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[IOHandler]]
+  
+  inline def getModelArtifactsForJSON(
+    modelJSON: ModelJSON,
+    loadWeights: js.Function1[
+      /* weightsManifest */ WeightsManifestConfig, 
+      js.Promise[
+        js.Tuple2[js.Array[WeightsManifestEntry], /* weightData */ js.typedarray.ArrayBuffer]
+      ]
+    ]
+  ): js.Promise[ModelArtifacts] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsForJSON")(modelJSON.asInstanceOf[js.Any], loadWeights.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ModelArtifacts]]
   
   inline def getModelArtifactsInfoForJSON(modelArtifacts: ModelArtifacts): ModelArtifactsInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsInfoForJSON")(modelArtifacts.asInstanceOf[js.Any]).asInstanceOf[ModelArtifactsInfo]
   
@@ -310,7 +385,7 @@ object io {
   inline def removeModel(url: String): js.Promise[ModelArtifactsInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeModel")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ModelArtifactsInfo]]
   
   inline def weightsLoaderFactory(
-    fetchWeightsFunction: js.Function1[/* fetchUrls */ js.Array[String], js.Promise[js.Array[ArrayBuffer]]]
+    fetchWeightsFunction: js.Function1[/* fetchUrls */ js.Array[String], js.Promise[js.Array[js.typedarray.ArrayBuffer]]]
   ): js.Function3[
     /* manifest */ WeightsManifestConfig, 
     /* filePathPrefix */ js.UndefOr[String], 
@@ -324,4 +399,6 @@ object io {
   ]]
   
   inline def withSaveHandler(saveHandler: js.Function1[/* artifacts */ ModelArtifacts, js.Promise[SaveResult]]): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("withSaveHandler")(saveHandler.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
+  
+  inline def withSaveHandlerSync(saveHandler: js.Function1[/* artifacts */ ModelArtifacts, SaveResult]): IOHandlerSync = ^.asInstanceOf[js.Dynamic].applyDynamic("withSaveHandlerSync")(saveHandler.asInstanceOf[js.Any]).asInstanceOf[IOHandlerSync]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IDOMParser")
 @js.native
-/* private */ class IDOMParser ()
+/* private */ open class IDOMParser ()
   extends StObject
      with typings.activexMshtml.MSHTML.IDOMParser {
   

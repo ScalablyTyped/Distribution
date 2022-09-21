@@ -14,7 +14,7 @@ object imageArcGISRestMod {
   
   @JSImport("ol/source/ImageArcGISRest", JSImport.Default)
   @js.native
-  class default () extends ImageArcGISRest {
+  open class default () extends ImageArcGISRest {
     def this(opt_options: Options) = this()
   }
   
@@ -31,7 +31,7 @@ object imageArcGISRestMod {
       * Get the user-provided params, i.e. those passed to the constructor through
       * the "params" option, and possibly updated using the updateParams method.
       */
-    def getParams(): js.Any = js.native
+    def getParams(): Any = js.native
     
     /**
       * Return the URL used for this ArcGIS source.
@@ -52,14 +52,14 @@ object imageArcGISRestMod {
     /**
       * Update the user-provided params.
       */
-    def updateParams(params: js.Any): Unit = js.native
+    def updateParams(params: Any): Unit = js.native
   }
   
   trait Options extends StObject {
     
     var attributions: js.UndefOr[AttributionLike] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[Null | String] = js.undefined
     
     var hidpi: js.UndefOr[Boolean] = js.undefined
     
@@ -67,7 +67,7 @@ object imageArcGISRestMod {
     
     var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var params: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var projection: js.UndefOr[ProjectionLike] = js.undefined
     
@@ -92,9 +92,11 @@ object imageArcGISRestMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -110,7 +112,7 @@ object imageArcGISRestMod {
       
       inline def setImageSmoothingUndefined: Self = StObject.set(x, "imageSmoothing", js.undefined)
       
-      inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -126,7 +128,7 @@ object imageArcGISRestMod {
       
       inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
       
-      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       

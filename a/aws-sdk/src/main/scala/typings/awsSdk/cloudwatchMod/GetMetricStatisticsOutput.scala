@@ -29,7 +29,7 @@ object GetMetricStatisticsOutput {
     
     inline def setDatapointsUndefined: Self = StObject.set(x, "Datapoints", js.undefined)
     
-    inline def setDatapointsVarargs(value: Datapoint*): Self = StObject.set(x, "Datapoints", js.Array(value :_*))
+    inline def setDatapointsVarargs(value: Datapoint*): Self = StObject.set(x, "Datapoints", js.Array(value*))
     
     inline def setLabel(value: MetricLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     

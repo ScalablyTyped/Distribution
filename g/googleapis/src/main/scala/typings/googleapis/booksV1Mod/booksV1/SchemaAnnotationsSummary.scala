@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaAnnotationsSummary extends StObject {
   
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
-  var layers: js.UndefOr[js.Array[LayerId]] = js.undefined
+  var layers: js.UndefOr[js.Array[LayerId] | Null] = js.undefined
 }
 object SchemaAnnotationsSummary {
   
@@ -22,12 +22,16 @@ object SchemaAnnotationsSummary {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setLayers(value: js.Array[LayerId]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
+    inline def setLayersNull: Self = StObject.set(x, "layers", null)
+    
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: LayerId*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: LayerId*): Self = StObject.set(x, "layers", js.Array(value*))
   }
 }

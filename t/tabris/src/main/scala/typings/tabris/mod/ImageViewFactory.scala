@@ -10,5 +10,5 @@ trait ImageViewFactory
   extends Factory[
       ImageViewConstructor, 
       InstanceType[ImageViewConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[ImageViewConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

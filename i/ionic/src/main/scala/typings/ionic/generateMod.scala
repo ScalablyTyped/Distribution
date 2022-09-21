@@ -16,7 +16,7 @@ object generateMod {
   - typings.ionic.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @JSImport("ionic/commands/generate", "GenerateCommand")
   @js.native
-  class GenerateCommand protected () extends Command {
+  open class GenerateCommand protected () extends Command {
     def this(namespace: INamespace) = this()
     
     def preRun(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[Unit] = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for widest-line
 
-Typings are for version 3.1.0
+Typings are for version 4.0.1
 
 ## Library description:
 Get the visual width of the widest line in a string - the number of columns required to display it
@@ -10,10 +10,10 @@ Get the visual width of the widest line in a string - the number of columns requ
 | ------------------ | :-------------: |
 | Full name          | widest-line |
 | Keywords           | string, character, unicode, width, visual, column, columns, fullwidth, full-width, full, ansi, escape, codes, cli, command-line, terminal, console, cjk, chinese, japanese, korean, fixed-width |
-| # releases         | 3 |
-| # dependents       | 56 |
-| # downloads        | 436898986 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 5.8755849E7 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/widest-line#readme)

@@ -70,9 +70,9 @@ trait Options extends StObject {
   
   var objectData: js.Object | String
   
-  def onGotoSubmit(): js.Any
+  def onGotoSubmit(): Any
   
-  def pageAliasFunction(): js.Any
+  def pageAliasFunction(): Any
   
   var pageAliases: js.Object
   
@@ -131,8 +131,8 @@ object Options {
     minPagesPerRow: Double,
     minZoomLevel: Double,
     objectData: js.Object | String,
-    onGotoSubmit: () => js.Any,
-    pageAliasFunction: () => js.Any,
+    onGotoSubmit: () => Any,
+    pageAliasFunction: () => Any,
     pageAliases: js.Object,
     pageLoadTimeout: Double,
     pagesPerRow: Double,
@@ -215,9 +215,9 @@ object Options {
     
     inline def setObjectData(value: js.Object | String): Self = StObject.set(x, "objectData", value.asInstanceOf[js.Any])
     
-    inline def setOnGotoSubmit(value: () => js.Any): Self = StObject.set(x, "onGotoSubmit", js.Any.fromFunction0(value))
+    inline def setOnGotoSubmit(value: () => Any): Self = StObject.set(x, "onGotoSubmit", js.Any.fromFunction0(value))
     
-    inline def setPageAliasFunction(value: () => js.Any): Self = StObject.set(x, "pageAliasFunction", js.Any.fromFunction0(value))
+    inline def setPageAliasFunction(value: () => Any): Self = StObject.set(x, "pageAliasFunction", js.Any.fromFunction0(value))
     
     inline def setPageAliases(value: js.Object): Self = StObject.set(x, "pageAliases", value.asInstanceOf[js.Any])
     

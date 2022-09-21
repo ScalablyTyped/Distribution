@@ -1,8 +1,7 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.XREye
 import typings.babylonjs.XRFrame
-import typings.babylonjs.anon.Filename
+import typings.babylonjs.anon.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,17 +11,24 @@ trait WebXRAbstractMotionController
   extends StObject
      with IDisposable {
   
+  /* private */ var _controllerCache: Any = js.native
+  
+  /**
+    * @hidden
+    */
+  var _doNotLoadControllerMesh: Boolean = js.native
+  
   /* protected */ def _getChildByName(node: AbstractMesh, name: String): js.UndefOr[AbstractMesh] = js.native
   
   /**
     * Get the filename and path for this controller's model
     * @returns a map of filename and path
     */
-  /* protected */ def _getFilenameAndPath(): Filename = js.native
+  /* protected */ def _getFilenameAndPath(): Path = js.native
   
-  /* private */ var _getGenericFilenameAndPath: js.Any = js.native
+  /* private */ var _getGenericFilenameAndPath: Any = js.native
   
-  /* private */ var _getGenericParentMesh: js.Any = js.native
+  /* private */ var _getGenericParentMesh: Any = js.native
   
   /* protected */ def _getImmediateChildByName(node: AbstractMesh, name: String): js.UndefOr[AbstractMesh] = js.native
   
@@ -34,18 +40,19 @@ trait WebXRAbstractMotionController
     */
   /* protected */ def _getModelLoadingConstraints(): Boolean = js.native
   
-  /* private */ var _initComponent: js.Any = js.native
+  /* private */ var _initComponent: Any = js.native
   
   /**
     * Moves the axis on the controller mesh based on its current state
-    * @param axis the index of the axis
+    * @param axisMap
     * @param axisValue the value of the axis which determines the meshes new position
+    * @param fixValueCoordinates
     * @hidden
     */
   /* protected */ def _lerpTransform(axisMap: IMotionControllerMeshMap, axisValue: Double): Unit = js.native
   /* protected */ def _lerpTransform(axisMap: IMotionControllerMeshMap, axisValue: Double, fixValueCoordinates: Boolean): Unit = js.native
   
-  /* private */ var _modelReady: js.Any = js.native
+  /* private */ var _modelReady: Any = js.native
   
   /**
     * This function will be called after the model was successfully loaded and can be used
@@ -85,7 +92,7 @@ trait WebXRAbstractMotionController
   /**
     * Returns all components of specific type
     * @param type the type to search for
-    * @return an array of components with this type
+    * @returns an array of components with this type
     */
   def getAllComponentsOfType(`type`: MotionControllerComponentType): js.Array[WebXRControllerComponent] = js.native
   
@@ -105,7 +112,7 @@ trait WebXRAbstractMotionController
   /**
     * Get the first component of specific type
     * @param type type of component to find
-    * @return a controller component or null if not found
+    * @returns a controller component or null if not found
     */
   def getComponentOfType(`type`: MotionControllerComponentType): Nullable[WebXRControllerComponent] = js.native
   
@@ -123,7 +130,7 @@ trait WebXRAbstractMotionController
   /**
     * Backwards compatibility due to a deeply-integrated typo
     */
-  def handness: XREye = js.native
+  def handness: MotionControllerHandedness = js.native
   
   /* protected */ var layout: IMotionControllerLayout = js.native
   

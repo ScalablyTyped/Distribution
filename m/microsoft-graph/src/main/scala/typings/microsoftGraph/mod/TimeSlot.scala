@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TimeSlot extends StObject {
   
-  // The date, time, and time zone that a period begins.
+  // The date, time, and time zone that a period ends.
   var end: js.UndefOr[DateTimeTimeZone] = js.undefined
   
-  // The date, time, and time zone that a period ends.
+  // The date, time, and time zone that a period begins.
   var start: js.UndefOr[DateTimeTimeZone] = js.undefined
 }
 object TimeSlot {

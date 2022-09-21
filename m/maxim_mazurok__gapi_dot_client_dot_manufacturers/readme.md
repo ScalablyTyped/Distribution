@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_manufacturers
 
-Typings are for version 1.0.20201110
+Typings are for version 1.0.20220809
 
 ## Library description:
 TypeScript typings for Manufacturer Center API v1
@@ -10,10 +10,10 @@ TypeScript typings for Manufacturer Center API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.manufacturers |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 1 |
-| # downloads        | 1114 |
-| # stars            | 0 |
+| # releases         | 75 |
+| # dependents       | 0.0 |
+| # downloads        | 905.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

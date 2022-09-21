@@ -10,10 +10,10 @@ object featuredVideoMod {
   
   @JSImport("material-ui/svg-icons/av/featured-video", JSImport.Default)
   @js.native
-  class default () extends AvFeaturedVideo
+  open class default () extends AvFeaturedVideo
   
   @JSImport("material-ui/svg-icons/av/featured-video", "AvFeaturedVideo")
   @js.native
-  class AvFeaturedVideo ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvFeaturedVideo ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -20,6 +20,6 @@ object IUSER_FIND_RESULT {
     
     inline def setUsers(value: js.Array[SFSUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    inline def setUsersVarargs(value: SFSUser*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: SFSUser*): Self = StObject.set(x, "users", js.Array(value*))
   }
 }

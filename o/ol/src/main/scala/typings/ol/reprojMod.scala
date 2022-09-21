@@ -27,7 +27,7 @@ object reprojMod {
     targetResolution: Double,
     targetExtent: Extent,
     triangulation: typings.ol.triangulationMod.default,
-    sources: js.Array[js.Any],
+    sources: js.Array[Any],
     gutter: Double
   ): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any], sourceResolution.asInstanceOf[js.Any], sourceExtent.asInstanceOf[js.Any], targetResolution.asInstanceOf[js.Any], targetExtent.asInstanceOf[js.Any], triangulation.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], gutter.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
   inline def render(
@@ -39,7 +39,7 @@ object reprojMod {
     targetResolution: Double,
     targetExtent: Extent,
     triangulation: typings.ol.triangulationMod.default,
-    sources: js.Array[js.Any],
+    sources: js.Array[Any],
     gutter: Double,
     opt_renderEdges: Boolean
   ): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any], sourceResolution.asInstanceOf[js.Any], sourceExtent.asInstanceOf[js.Any], targetResolution.asInstanceOf[js.Any], targetExtent.asInstanceOf[js.Any], triangulation.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], gutter.asInstanceOf[js.Any], opt_renderEdges.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
@@ -52,10 +52,10 @@ object reprojMod {
     targetResolution: Double,
     targetExtent: Extent,
     triangulation: typings.ol.triangulationMod.default,
-    sources: js.Array[js.Any],
+    sources: js.Array[Any],
     gutter: Double,
     opt_renderEdges: Boolean,
-    opt_contextOptions: js.Any
+    opt_contextOptions: Any
   ): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any], sourceResolution.asInstanceOf[js.Any], sourceExtent.asInstanceOf[js.Any], targetResolution.asInstanceOf[js.Any], targetExtent.asInstanceOf[js.Any], triangulation.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], gutter.asInstanceOf[js.Any], opt_renderEdges.asInstanceOf[js.Any], opt_contextOptions.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
   inline def render(
     width: Double,
@@ -66,9 +66,9 @@ object reprojMod {
     targetResolution: Double,
     targetExtent: Extent,
     triangulation: typings.ol.triangulationMod.default,
-    sources: js.Array[js.Any],
+    sources: js.Array[Any],
     gutter: Double,
     opt_renderEdges: Unit,
-    opt_contextOptions: js.Any
+    opt_contextOptions: Any
   ): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any], sourceResolution.asInstanceOf[js.Any], sourceExtent.asInstanceOf[js.Any], targetResolution.asInstanceOf[js.Any], targetExtent.asInstanceOf[js.Any], triangulation.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], gutter.asInstanceOf[js.Any], opt_renderEdges.asInstanceOf[js.Any], opt_contextOptions.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
 }

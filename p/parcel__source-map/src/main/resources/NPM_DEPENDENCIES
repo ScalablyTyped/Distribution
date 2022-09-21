@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@parcel/source-map" : "2.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@parcel/source-map" : "2.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

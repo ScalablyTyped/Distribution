@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  inline def apply(message: String): Unit = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
   @JSImport("sudo-block", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
+  inline def default(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

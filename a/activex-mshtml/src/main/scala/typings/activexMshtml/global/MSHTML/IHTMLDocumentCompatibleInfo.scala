@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLDocumentCompatibleInfo")
 @js.native
-/* private */ class IHTMLDocumentCompatibleInfo ()
+/* private */ open class IHTMLDocumentCompatibleInfo ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLDocumentCompatibleInfo {
   

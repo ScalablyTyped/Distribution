@@ -16,7 +16,7 @@ object printer {
   
   trait Options extends StObject {
     
-    var embeddedInHtml: Boolean
+    var __embeddedInHtml: js.UndefOr[Boolean] = js.undefined
     
     var parentParser: js.UndefOr[String] = js.undefined
     
@@ -40,14 +40,12 @@ object printer {
   }
   object Options {
     
-    inline def apply(embeddedInHtml: Boolean, printWidth: Double, tabWidth: Double, useTabs: Boolean): Options = {
-      val __obj = js.Dynamic.literal(embeddedInHtml = embeddedInHtml.asInstanceOf[js.Any], printWidth = printWidth.asInstanceOf[js.Any], tabWidth = tabWidth.asInstanceOf[js.Any], useTabs = useTabs.asInstanceOf[js.Any])
+    inline def apply(printWidth: Double, tabWidth: Double, useTabs: Boolean): Options = {
+      val __obj = js.Dynamic.literal(printWidth = printWidth.asInstanceOf[js.Any], tabWidth = tabWidth.asInstanceOf[js.Any], useTabs = useTabs.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
     extension [Self <: Options](x: Self) {
-      
-      inline def setEmbeddedInHtml(value: Boolean): Self = StObject.set(x, "embeddedInHtml", value.asInstanceOf[js.Any])
       
       inline def setParentParser(value: String): Self = StObject.set(x, "parentParser", value.asInstanceOf[js.Any])
       
@@ -58,6 +56,10 @@ object printer {
       inline def setTabWidth(value: Double): Self = StObject.set(x, "tabWidth", value.asInstanceOf[js.Any])
       
       inline def setUseTabs(value: Boolean): Self = StObject.set(x, "useTabs", value.asInstanceOf[js.Any])
+      
+      inline def set__embeddedInHtml(value: Boolean): Self = StObject.set(x, "__embeddedInHtml", value.asInstanceOf[js.Any])
+      
+      inline def set__embeddedInHtmlUndefined: Self = StObject.set(x, "__embeddedInHtml", js.undefined)
     }
   }
 }

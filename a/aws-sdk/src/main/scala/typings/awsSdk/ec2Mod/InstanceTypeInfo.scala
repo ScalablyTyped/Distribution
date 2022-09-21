@@ -77,7 +77,7 @@ trait InstanceTypeInfo extends StObject {
   var InstanceStorageSupported: js.UndefOr[InstanceStorageFlag] = js.undefined
   
   /**
-    * The instance type. For more information, see Instance Types in the Amazon Elastic Compute Cloud User Guide.
+    * The instance type. For more information, see Instance types in the Amazon EC2 User Guide.
     */
   var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
@@ -100,6 +100,11 @@ trait InstanceTypeInfo extends StObject {
     * Describes the processor.
     */
   var ProcessorInfo: js.UndefOr[typings.awsSdk.ec2Mod.ProcessorInfo] = js.undefined
+  
+  /**
+    * The supported boot modes. For more information, see Boot modes in the Amazon EC2 User Guide.
+    */
+  var SupportedBootModes: js.UndefOr[BootModeTypeList] = js.undefined
   
   /**
     * The supported root device types.
@@ -206,23 +211,29 @@ object InstanceTypeInfo {
     
     inline def setProcessorInfoUndefined: Self = StObject.set(x, "ProcessorInfo", js.undefined)
     
+    inline def setSupportedBootModes(value: BootModeTypeList): Self = StObject.set(x, "SupportedBootModes", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedBootModesUndefined: Self = StObject.set(x, "SupportedBootModes", js.undefined)
+    
+    inline def setSupportedBootModesVarargs(value: BootModeType*): Self = StObject.set(x, "SupportedBootModes", js.Array(value*))
+    
     inline def setSupportedRootDeviceTypes(value: RootDeviceTypeList): Self = StObject.set(x, "SupportedRootDeviceTypes", value.asInstanceOf[js.Any])
     
     inline def setSupportedRootDeviceTypesUndefined: Self = StObject.set(x, "SupportedRootDeviceTypes", js.undefined)
     
-    inline def setSupportedRootDeviceTypesVarargs(value: RootDeviceType*): Self = StObject.set(x, "SupportedRootDeviceTypes", js.Array(value :_*))
+    inline def setSupportedRootDeviceTypesVarargs(value: RootDeviceType*): Self = StObject.set(x, "SupportedRootDeviceTypes", js.Array(value*))
     
     inline def setSupportedUsageClasses(value: UsageClassTypeList): Self = StObject.set(x, "SupportedUsageClasses", value.asInstanceOf[js.Any])
     
     inline def setSupportedUsageClassesUndefined: Self = StObject.set(x, "SupportedUsageClasses", js.undefined)
     
-    inline def setSupportedUsageClassesVarargs(value: UsageClassType*): Self = StObject.set(x, "SupportedUsageClasses", js.Array(value :_*))
+    inline def setSupportedUsageClassesVarargs(value: UsageClassType*): Self = StObject.set(x, "SupportedUsageClasses", js.Array(value*))
     
     inline def setSupportedVirtualizationTypes(value: VirtualizationTypeList): Self = StObject.set(x, "SupportedVirtualizationTypes", value.asInstanceOf[js.Any])
     
     inline def setSupportedVirtualizationTypesUndefined: Self = StObject.set(x, "SupportedVirtualizationTypes", js.undefined)
     
-    inline def setSupportedVirtualizationTypesVarargs(value: VirtualizationType*): Self = StObject.set(x, "SupportedVirtualizationTypes", js.Array(value :_*))
+    inline def setSupportedVirtualizationTypesVarargs(value: VirtualizationType*): Self = StObject.set(x, "SupportedVirtualizationTypes", js.Array(value*))
     
     inline def setVCpuInfo(value: VCpuInfo): Self = StObject.set(x, "VCpuInfo", value.asInstanceOf[js.Any])
     

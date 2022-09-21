@@ -5,57 +5,57 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the options in page layout margins.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait PageLayoutMarginOptions extends StObject {
   
   /**
-    *
     * Specifies the page layout bottom margin in the unit specified to use for printing.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var bottom: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies the page layout footer margin in the unit specified to use for printing.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var footer: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies the page layout header margin in the unit specified to use for printing.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var header: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies the page layout left margin in the unit specified to use for printing.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var left: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies the page layout right margin in the unit specified to use for printing.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var right: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies the page layout top margin in the unit specified to use for printing.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var top: js.UndefOr[Double] = js.undefined

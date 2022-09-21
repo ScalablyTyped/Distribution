@@ -9,13 +9,13 @@ object amtRatingPopoverMod {
   
   @JSImport("askmethat-rating/dist/amt-rating-popover", "AskmethatRatingPopover")
   @js.native
-  class AskmethatRatingPopover protected () extends StObject {
+  open class AskmethatRatingPopover protected () extends StObject {
     /**
       *
       */
     def this(options: AskmethatRatingPopoverOptions) = this()
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
     /**
       * @function get the default option for the rating
@@ -98,7 +98,7 @@ object amtRatingPopoverMod {
       
       inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
 }

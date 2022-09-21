@@ -28,6 +28,6 @@ object PBKDF2Params {
     
     inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
     
-    inline def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value :_*))
+    inline def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value*))
   }
 }

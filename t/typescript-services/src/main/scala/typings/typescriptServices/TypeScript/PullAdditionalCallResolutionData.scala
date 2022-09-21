@@ -33,17 +33,17 @@ object PullAdditionalCallResolutionData {
     
     inline def setActualParametersContextTypeSymbols(value: js.Array[PullTypeSymbol]): Self = StObject.set(x, "actualParametersContextTypeSymbols", value.asInstanceOf[js.Any])
     
-    inline def setActualParametersContextTypeSymbolsVarargs(value: PullTypeSymbol*): Self = StObject.set(x, "actualParametersContextTypeSymbols", js.Array(value :_*))
+    inline def setActualParametersContextTypeSymbolsVarargs(value: PullTypeSymbol*): Self = StObject.set(x, "actualParametersContextTypeSymbols", js.Array(value*))
     
     inline def setCandidateSignature(value: PullSignatureSymbol): Self = StObject.set(x, "candidateSignature", value.asInstanceOf[js.Any])
     
     inline def setDiagnosticsFromOverloadResolution(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnosticsFromOverloadResolution", value.asInstanceOf[js.Any])
     
-    inline def setDiagnosticsFromOverloadResolutionVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnosticsFromOverloadResolution", js.Array(value :_*))
+    inline def setDiagnosticsFromOverloadResolutionVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnosticsFromOverloadResolution", js.Array(value*))
     
     inline def setResolvedSignatures(value: js.Array[PullSignatureSymbol]): Self = StObject.set(x, "resolvedSignatures", value.asInstanceOf[js.Any])
     
-    inline def setResolvedSignaturesVarargs(value: PullSignatureSymbol*): Self = StObject.set(x, "resolvedSignatures", js.Array(value :_*))
+    inline def setResolvedSignaturesVarargs(value: PullSignatureSymbol*): Self = StObject.set(x, "resolvedSignatures", js.Array(value*))
     
     inline def setTargetSymbol(value: PullSymbol): Self = StObject.set(x, "targetSymbol", value.asInstanceOf[js.Any])
   }

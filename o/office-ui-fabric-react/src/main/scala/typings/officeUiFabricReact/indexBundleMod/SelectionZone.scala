@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "SelectionZone")
 @js.native
-class SelectionZone protected ()
+open class SelectionZone protected ()
   extends typings.officeUiFabricReact.mod.SelectionZone {
   def this(props: ISelectionZoneProps) = this()
 }

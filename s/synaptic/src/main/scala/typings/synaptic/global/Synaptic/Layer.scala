@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Synaptic.Layer")
 @js.native
-class Layer protected ()
+open class Layer protected ()
   extends typings.synaptic.mod.Layer {
   /**
     * Normally you won't work with single neurons, but use Layers instead. A layer is basically an array of neurons, they can do pretty much the same things as neurons do, but it makes the programming process faster.
@@ -21,7 +21,7 @@ object Layer {
     */
   @JSGlobal("Synaptic.Layer.LayerConnection")
   @js.native
-  class LayerConnection ()
+  open class LayerConnection ()
     extends typings.synaptic.mod.Layer.LayerConnection
   object LayerConnection {
     
@@ -39,7 +39,7 @@ object Layer {
   /* was `typeof LayerConnection` */
   @JSGlobal("Synaptic.Layer.connection")
   @js.native
-  class connection ()
+  open class connection ()
     extends typings.synaptic.mod.Layer.connection
   /* was `typeof LayerConnection` */
   object connection {

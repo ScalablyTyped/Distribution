@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.VoiceGroup")
 @js.native
-class VoiceGroup ()
+open class VoiceGroup ()
   extends StObject
      with typings.vexflow.Vex.Flow.VoiceGroup {
   

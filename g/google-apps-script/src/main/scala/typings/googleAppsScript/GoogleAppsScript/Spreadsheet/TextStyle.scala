@@ -22,6 +22,8 @@ trait TextStyle extends StObject {
   
   def getForegroundColor(): String | Null
   
+  def getForegroundColorObject(): Color | Null
+  
   def isBold(): Boolean | Null
   
   def isItalic(): Boolean | Null
@@ -37,12 +39,13 @@ object TextStyle {
     getFontFamily: () => String | Null,
     getFontSize: () => Integer | Null,
     getForegroundColor: () => String | Null,
+    getForegroundColorObject: () => Color | Null,
     isBold: () => Boolean | Null,
     isItalic: () => Boolean | Null,
     isStrikethrough: () => Boolean | Null,
     isUnderline: () => Boolean | Null
   ): TextStyle = {
-    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getFontFamily = js.Any.fromFunction0(getFontFamily), getFontSize = js.Any.fromFunction0(getFontSize), getForegroundColor = js.Any.fromFunction0(getForegroundColor), isBold = js.Any.fromFunction0(isBold), isItalic = js.Any.fromFunction0(isItalic), isStrikethrough = js.Any.fromFunction0(isStrikethrough), isUnderline = js.Any.fromFunction0(isUnderline))
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getFontFamily = js.Any.fromFunction0(getFontFamily), getFontSize = js.Any.fromFunction0(getFontSize), getForegroundColor = js.Any.fromFunction0(getForegroundColor), getForegroundColorObject = js.Any.fromFunction0(getForegroundColorObject), isBold = js.Any.fromFunction0(isBold), isItalic = js.Any.fromFunction0(isItalic), isStrikethrough = js.Any.fromFunction0(isStrikethrough), isUnderline = js.Any.fromFunction0(isUnderline))
     __obj.asInstanceOf[TextStyle]
   }
   
@@ -55,6 +58,8 @@ object TextStyle {
     inline def setGetFontSize(value: () => Integer | Null): Self = StObject.set(x, "getFontSize", js.Any.fromFunction0(value))
     
     inline def setGetForegroundColor(value: () => String | Null): Self = StObject.set(x, "getForegroundColor", js.Any.fromFunction0(value))
+    
+    inline def setGetForegroundColorObject(value: () => Color | Null): Self = StObject.set(x, "getForegroundColorObject", js.Any.fromFunction0(value))
     
     inline def setIsBold(value: () => Boolean | Null): Self = StObject.set(x, "isBold", js.Any.fromFunction0(value))
     

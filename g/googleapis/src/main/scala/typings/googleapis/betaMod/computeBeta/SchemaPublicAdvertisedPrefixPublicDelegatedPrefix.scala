@@ -1,0 +1,73 @@
+package typings.googleapis.betaMod.computeBeta
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaPublicAdvertisedPrefixPublicDelegatedPrefix extends StObject {
+  
+  /**
+    * The IP address range of the public delegated prefix
+    */
+  var ipRange: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The name of the public delegated prefix
+    */
+  var name: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The project number of the public delegated prefix
+    */
+  var project: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The region of the public delegated prefix if it is regional. If absent, the prefix is global.
+    */
+  var region: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The status of the public delegated prefix. Possible values are: INITIALIZING: The public delegated prefix is being initialized and addresses cannot be created yet. ANNOUNCED: The public delegated prefix is active.
+    */
+  var status: js.UndefOr[String | Null] = js.undefined
+}
+object SchemaPublicAdvertisedPrefixPublicDelegatedPrefix {
+  
+  inline def apply(): SchemaPublicAdvertisedPrefixPublicDelegatedPrefix = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaPublicAdvertisedPrefixPublicDelegatedPrefix]
+  }
+  
+  extension [Self <: SchemaPublicAdvertisedPrefixPublicDelegatedPrefix](x: Self) {
+    
+    inline def setIpRange(value: String): Self = StObject.set(x, "ipRange", value.asInstanceOf[js.Any])
+    
+    inline def setIpRangeNull: Self = StObject.set(x, "ipRange", null)
+    
+    inline def setIpRangeUndefined: Self = StObject.set(x, "ipRange", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    
+    inline def setProjectNull: Self = StObject.set(x, "project", null)
+    
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    
+    inline def setRegionNull: Self = StObject.set(x, "region", null)
+    
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+  }
+}

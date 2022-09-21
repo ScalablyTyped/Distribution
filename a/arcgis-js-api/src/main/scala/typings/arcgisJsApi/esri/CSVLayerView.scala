@@ -21,17 +21,26 @@ trait CSVLayerView
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-CSVLayerView.html#createQuery)
     */
-  def createQuery(): Query = js.native
+  def createQuery(): Query_ = js.native
   
   /**
-    * The effect applied to the layer view.
+    * The effect applied to the layerView.
+    *
+    * @deprecated since version 4.22. Use [featureEffect](#featureEffect) instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-CSVLayerView.html#effect)
     */
   var effect: FeatureEffect = js.native
   
   /**
-    * The [attribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#where), [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#geometry), and [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#timeExtent) filter.
+    * The featureEffect can be used to draw attention features of interest.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-CSVLayerView.html#featureEffect)
+    */
+  var featureEffect: FeatureEffect = js.native
+  
+  /**
+    * The [attribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html#where), [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html#geometry), and [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html#timeExtent) filter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-CSVLayerView.html#filter)
     */
@@ -62,50 +71,50 @@ trait CSVLayerView
   var maximumNumberOfFeaturesExceeded: Boolean = js.native
   
   /**
-    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query.
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) against features available for drawing in the layerView and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-CSVLayerView.html#queryExtent)
     */
-  def queryExtent(): js.Promise[js.Any] = js.native
-  def queryExtent(query: Unit, options: CSVLayerViewQueryExtentOptions): js.Promise[js.Any] = js.native
-  def queryExtent(query: Query): js.Promise[js.Any] = js.native
-  def queryExtent(query: QueryProperties): js.Promise[js.Any] = js.native
-  def queryExtent(query: QueryProperties, options: CSVLayerViewQueryExtentOptions): js.Promise[js.Any] = js.native
-  def queryExtent(query: Query, options: CSVLayerViewQueryExtentOptions): js.Promise[js.Any] = js.native
+  def queryExtent(): js.Promise[Any] = js.native
+  def queryExtent(query: scala.Unit, options: CSVLayerViewQueryExtentOptions): js.Promise[Any] = js.native
+  def queryExtent(query: QueryProperties): js.Promise[Any] = js.native
+  def queryExtent(query: QueryProperties, options: CSVLayerViewQueryExtentOptions): js.Promise[Any] = js.native
+  def queryExtent(query: Query_): js.Promise[Any] = js.native
+  def queryExtent(query: Query_, options: CSVLayerViewQueryExtentOptions): js.Promise[Any] = js.native
   
   /**
-    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns the number of features that satisfy the query.
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) against features available for drawing in the layerView and returns the number of features that satisfy the query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-CSVLayerView.html#queryFeatureCount)
     */
   def queryFeatureCount(): js.Promise[Double] = js.native
-  def queryFeatureCount(query: Unit, options: CSVLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
-  def queryFeatureCount(query: Query): js.Promise[Double] = js.native
+  def queryFeatureCount(query: scala.Unit, options: CSVLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties, options: CSVLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
-  def queryFeatureCount(query: Query, options: CSVLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Query_): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Query_, options: CSVLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
   
   /**
-    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html).
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) against features available for drawing in the layerView and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-CSVLayerView.html#queryFeatures)
     */
   def queryFeatures(): js.Promise[FeatureSet] = js.native
-  def queryFeatures(query: Unit, options: CSVLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
-  def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: scala.Unit, options: CSVLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties, options: CSVLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
-  def queryFeatures(query: Query, options: CSVLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query_): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Query_, options: CSVLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   
   /**
-    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns array of the ObjectIDs of features that satisfy the input query.
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) against features available for drawing in the layerView and returns array of the ObjectIDs of features that satisfy the input query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-CSVLayerView.html#queryObjectIds)
     */
   def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Unit, options: CSVLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: scala.Unit, options: CSVLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties, options: CSVLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
-  def queryObjectIds(query: Query, options: CSVLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query_): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query_, options: CSVLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
 }

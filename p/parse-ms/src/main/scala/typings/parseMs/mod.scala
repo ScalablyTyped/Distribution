@@ -6,30 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Parse milliseconds into an object.
-  @example
-  ```
-  import parseMilliseconds = require('parse-ms');
-  parseMilliseconds(1337000001);
-  // {
-  // 	days: 15,
-  // 	hours: 11,
-  // 	minutes: 23,
-  // 	seconds: 20,
-  // 	milliseconds: 1,
-  // 	microseconds: 0,
-  // 	nanoseconds: 0
-  // }
-  ```
-  */
-  inline def apply(milliseconds: Double): Parsed = ^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any]).asInstanceOf[Parsed]
-  
   @JSImport("parse-ms", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  trait Parsed extends StObject {
+  inline def default(milliseconds: Double): TimeComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[TimeComponents]
+  
+  trait TimeComponents extends StObject {
     
     var days: Double
     
@@ -45,7 +28,7 @@ object mod {
     
     var seconds: Double
   }
-  object Parsed {
+  object TimeComponents {
     
     inline def apply(
       days: Double,
@@ -55,12 +38,12 @@ object mod {
       minutes: Double,
       nanoseconds: Double,
       seconds: Double
-    ): Parsed = {
+    ): TimeComponents = {
       val __obj = js.Dynamic.literal(days = days.asInstanceOf[js.Any], hours = hours.asInstanceOf[js.Any], microseconds = microseconds.asInstanceOf[js.Any], milliseconds = milliseconds.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], nanoseconds = nanoseconds.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Parsed]
+      __obj.asInstanceOf[TimeComponents]
     }
     
-    extension [Self <: Parsed](x: Self) {
+    extension [Self <: TimeComponents](x: Self) {
       
       inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       

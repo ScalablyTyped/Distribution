@@ -49,7 +49,7 @@ object mod {
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      inline def setAlignVarargs(value: (js.UndefOr[l | r | c | Dot | Null])*): Self = StObject.set(x, "align", js.Array(value :_*))
+      inline def setAlignVarargs(value: (js.UndefOr[l | r | c | Dot | Null])*): Self = StObject.set(x, "align", js.Array(value*))
       
       inline def setHsep(value: String): Self = StObject.set(x, "hsep", value.asInstanceOf[js.Any])
       

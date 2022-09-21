@@ -23,6 +23,6 @@ object CodeLensList {
     
     inline def setLenses(value: js.Array[CodeLens]): Self = StObject.set(x, "lenses", value.asInstanceOf[js.Any])
     
-    inline def setLensesVarargs(value: CodeLens*): Self = StObject.set(x, "lenses", js.Array(value :_*))
+    inline def setLensesVarargs(value: CodeLens*): Self = StObject.set(x, "lenses", js.Array(value*))
   }
 }

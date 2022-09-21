@@ -77,10 +77,10 @@ object PartialComputeStylesModif {
     
     inline def setRequiresIfExistsUndefined: Self = StObject.set(x, "requiresIfExists", js.undefined)
     
-    inline def setRequiresIfExistsVarargs(value: String*): Self = StObject.set(x, "requiresIfExists", js.Array(value :_*))
+    inline def setRequiresIfExistsVarargs(value: String*): Self = StObject.set(x, "requiresIfExists", js.Array(value*))
     
     inline def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
     
-    inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
+    inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value*))
   }
 }

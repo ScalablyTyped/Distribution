@@ -90,7 +90,7 @@ object ZC {
     
     var data: Dictionary[String]
     
-    var errors: js.Array[js.Any]
+    var errors: js.Array[Any]
     
     var success: Dictionary[Boolean]
   }
@@ -99,7 +99,7 @@ object ZC {
     inline def apply(
       currentTarget: HTMLObjectElement,
       data: Dictionary[String],
-      errors: js.Array[js.Any],
+      errors: js.Array[Any],
       relatedTarget: HTMLElement,
       success: Dictionary[Boolean],
       target: HTMLElement,
@@ -115,9 +115,9 @@ object ZC {
       
       inline def setData(value: Dictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Any*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setSuccess(value: Dictionary[Boolean]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
@@ -218,19 +218,19 @@ object ZC {
       * @param  {string} name
       * @return {any}
       */
-    def emit(data: Name): js.Any = js.native
+    def emit(data: Name): Any = js.native
     /**
       * Dispatch an event to all registered listeners. The emission of some types of events will result in side effects.
       * @param  {string} eventType
       * @return {any}
       */
-    def emit(eventType: String): js.Any = js.native
+    def emit(eventType: String): Any = js.native
     @JSName("emit")
     def emit_aftercopy(eventType: aftercopy): Unit = js.native
     @JSName("emit")
     def emit_beforecopy(eventType: beforecopy): Unit = js.native
     @JSName("emit")
-    def emit_copy(eventType: copy): js.Any = js.native
+    def emit_copy(eventType: copy): Any = js.native
     @JSName("emit")
     def emit_destroy(eventType: destroy): Unit = js.native
     @JSName("emit")
@@ -580,7 +580,7 @@ object ZC {
       
       inline def setTrustedDomainsUndefined: Self = StObject.set(x, "trustedDomains", js.undefined)
       
-      inline def setTrustedDomainsVarargs(value: String*): Self = StObject.set(x, "trustedDomains", js.Array(value :_*))
+      inline def setTrustedDomainsVarargs(value: String*): Self = StObject.set(x, "trustedDomains", js.Array(value*))
       
       inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
@@ -657,7 +657,7 @@ object ZC {
     
     var data: js.UndefOr[Dictionary[String]] = js.undefined
     
-    var errors: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var errors: js.UndefOr[js.Array[Any]] = js.undefined
     
     var jsVersion: js.UndefOr[String] = js.undefined
     
@@ -703,11 +703,11 @@ object ZC {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
       inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      inline def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Any*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setJsVersion(value: String): Self = StObject.set(x, "jsVersion", value.asInstanceOf[js.Any])
       
@@ -855,7 +855,7 @@ object ZC {
       * @param  {string} propName
       * @return {any}
       */
-    def config(propName: String): js.Any = js.native
+    def config(propName: String): Any = js.native
     @JSName("config")
     def config_activeClass(propName: activeClass): String = js.native
     @JSName("config")

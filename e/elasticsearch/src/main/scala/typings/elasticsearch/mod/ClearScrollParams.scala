@@ -21,6 +21,6 @@ object ClearScrollParams {
     
     inline def setScrollId(value: NameList): Self = StObject.set(x, "scrollId", value.asInstanceOf[js.Any])
     
-    inline def setScrollIdVarargs(value: String*): Self = StObject.set(x, "scrollId", js.Array(value :_*))
+    inline def setScrollIdVarargs(value: String*): Self = StObject.set(x, "scrollId", js.Array(value*))
   }
 }

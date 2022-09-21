@@ -1,6 +1,9 @@
 package typings.gestalt
 
+import typings.gestalt.mod.ExternalLinkIcon
+import typings.gestalt.mod.FourDirections
 import typings.gestalt.mod.Icons
+import typings.gestalt.mod.OnAnimationEndStateType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +11,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object gestaltStrings {
   
   @js.native
-  sealed trait MasonryDefaultLayout extends StObject
-  inline def MasonryDefaultLayout: MasonryDefaultLayout = "MasonryDefaultLayout".asInstanceOf[MasonryDefaultLayout]
+  sealed trait default
+    extends StObject
+       with ExternalLinkIcon
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait MasonryUniformRowLayout extends StObject
-  inline def MasonryUniformRowLayout: MasonryUniformRowLayout = "MasonryUniformRowLayout".asInstanceOf[MasonryUniformRowLayout]
+  sealed trait `100` extends StObject
+  inline def `100`: `100` = "100".asInstanceOf[`100`]
+  
+  @js.native
+  sealed trait `200` extends StObject
+  inline def `200`: `200` = "200".asInstanceOf[`200`]
+  
+  @js.native
+  sealed trait `300` extends StObject
+  inline def `300`: `300` = "300".asInstanceOf[`300`]
+  
+  @js.native
+  sealed trait `400` extends StObject
+  inline def `400`: `400` = "400".asInstanceOf[`400`]
+  
+  @js.native
+  sealed trait `500` extends StObject
+  inline def `500`: `500` = "500".asInstanceOf[`500`]
+  
+  @js.native
+  sealed trait `600` extends StObject
+  inline def `600`: `600` = "600".asInstanceOf[`600`]
   
   @js.native
   sealed trait absolute extends StObject
@@ -222,16 +247,44 @@ object gestaltStrings {
   inline def `arrow-up-right`: `arrow-up-right` = "arrow-up-right".asInstanceOf[`arrow-up-right`]
   
   @js.native
+  sealed trait article extends StObject
+  inline def article: article = "article".asInstanceOf[article]
+  
+  @js.native
   sealed trait asc extends StObject
   inline def asc: asc = "asc".asInstanceOf[asc]
+  
+  @js.native
+  sealed trait aside extends StObject
+  inline def aside: aside = "aside".asInstanceOf[aside]
+  
+  @js.native
+  sealed trait async extends StObject
+  inline def async: async = "async".asInstanceOf[async]
   
   @js.native
   sealed trait auto extends StObject
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
+  sealed trait bad extends StObject
+  inline def bad: bad = "bad".asInstanceOf[bad]
+  
+  @js.native
   sealed trait baseline extends StObject
   inline def baseline: baseline = "baseline".asInstanceOf[baseline]
+  
+  @js.native
+  sealed trait basic extends StObject
+  inline def basic: basic = "basic".asInstanceOf[basic]
+  
+  @js.native
+  sealed trait basicCentered extends StObject
+  inline def basicCentered: basicCentered = "basicCentered".asInstanceOf[basicCentered]
+  
+  @js.native
+  sealed trait bday extends StObject
+  inline def bday: bday = "bday".asInstanceOf[bday]
   
   @js.native
   sealed trait bell
@@ -242,6 +295,10 @@ object gestaltStrings {
   @js.native
   sealed trait between extends StObject
   inline def between: between = "between".asInstanceOf[between]
+  
+  @js.native
+  sealed trait black extends StObject
+  inline def black: black = "black".asInstanceOf[black]
   
   @js.native
   sealed trait blank extends StObject
@@ -258,6 +315,14 @@ object gestaltStrings {
   @js.native
   sealed trait bold extends StObject
   inline def bold: bold = "bold".asInstanceOf[bold]
+  
+  @js.native
+  sealed trait brand extends StObject
+  inline def brand: brand = "brand".asInstanceOf[brand]
+  
+  @js.native
+  sealed trait brandPrimary extends StObject
+  inline def brandPrimary: brandPrimary = "brandPrimary".asInstanceOf[brandPrimary]
   
   @js.native
   sealed trait breakWord extends StObject
@@ -292,6 +357,10 @@ object gestaltStrings {
   inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
+  sealed trait canceled extends StObject
+  inline def canceled: canceled = "canceled".asInstanceOf[canceled]
+  
+  @js.native
   sealed trait `canonical-pin`
     extends StObject
        with Icons
@@ -324,8 +393,8 @@ object gestaltStrings {
   inline def `circle-outline`: `circle-outline` = "circle-outline".asInstanceOf[`circle-outline`]
   
   @js.native
-  sealed trait circule extends StObject
-  inline def circule: circule = "circule".asInstanceOf[circule]
+  sealed trait className extends StObject
+  inline def className: className = "className".asInstanceOf[className]
   
   @js.native
   sealed trait clear
@@ -450,6 +519,10 @@ object gestaltStrings {
   inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
+  sealed trait details extends StObject
+  inline def details: details = "details".asInstanceOf[details]
+  
+  @js.native
   sealed trait dialog extends StObject
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
@@ -466,7 +539,17 @@ object gestaltStrings {
   inline def `directional-arrow-right`: `directional-arrow-right` = "directional-arrow-right".asInstanceOf[`directional-arrow-right`]
   
   @js.native
-  sealed trait down extends StObject
+  sealed trait div extends StObject
+  inline def div: div = "div".asInstanceOf[div]
+  
+  @js.native
+  sealed trait dot extends StObject
+  inline def dot: dot = "dot".asInstanceOf[dot]
+  
+  @js.native
+  sealed trait down
+    extends StObject
+       with FourDirections
   inline def down: down = "down".asInstanceOf[down]
   
   @js.native
@@ -498,8 +581,20 @@ object gestaltStrings {
   inline def edit: edit = "edit".asInstanceOf[edit]
   
   @js.native
-  sealed trait eggplant extends StObject
-  inline def eggplant: eggplant = "eggplant".asInstanceOf[eggplant]
+  sealed trait education extends StObject
+  inline def education: education = "education".asInstanceOf[education]
+  
+  @js.native
+  sealed trait elevationAccent extends StObject
+  inline def elevationAccent: elevationAccent = "elevationAccent".asInstanceOf[elevationAccent]
+  
+  @js.native
+  sealed trait elevationFloating extends StObject
+  inline def elevationFloating: elevationFloating = "elevationFloating".asInstanceOf[elevationFloating]
+  
+  @js.native
+  sealed trait elevationRaised extends StObject
+  inline def elevationRaised: elevationRaised = "elevationRaised".asInstanceOf[elevationRaised]
   
   @js.native
   sealed trait ellipsis
@@ -532,14 +627,36 @@ object gestaltStrings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
+  sealed trait errorBare extends StObject
+  inline def errorBare: errorBare = "errorBare".asInstanceOf[errorBare]
+  
+  @js.native
+  sealed trait errorBase extends StObject
+  inline def errorBase: errorBase = "errorBase".asInstanceOf[errorBase]
+  
+  @js.native
+  sealed trait errorWeak extends StObject
+  inline def errorWeak: errorWeak = "errorWeak".asInstanceOf[errorWeak]
+  
+  @js.native
   sealed trait evenly extends StObject
   inline def evenly: evenly = "evenly".asInstanceOf[evenly]
+  
+  @js.native
+  sealed trait expandable extends StObject
+  inline def expandable: expandable = "expandable".asInstanceOf[expandable]
   
   @js.native
   sealed trait eye
     extends StObject
        with Icons
   inline def eye: eye = "eye".asInstanceOf[eye]
+  
+  @js.native
+  sealed trait `eye-hide`
+    extends StObject
+       with Icons
+  inline def `eye-hide`: `eye-hide` = "eye-hide".asInstanceOf[`eye-hide`]
   
   @js.native
   sealed trait `face-happy`
@@ -564,6 +681,14 @@ object gestaltStrings {
     extends StObject
        with Icons
   inline def facebook: facebook = "facebook".asInstanceOf[facebook]
+  
+  @js.native
+  sealed trait figcaption extends StObject
+  inline def figcaption: figcaption = "figcaption".asInstanceOf[figcaption]
+  
+  @js.native
+  sealed trait figure extends StObject
+  inline def figure: figure = "figure".asInstanceOf[figure]
   
   @js.native
   sealed trait `file-unknown`
@@ -646,6 +771,18 @@ object gestaltStrings {
   inline def folder: folder = "folder".asInstanceOf[folder]
   
   @js.native
+  sealed trait footer extends StObject
+  inline def footer: footer = "footer".asInstanceOf[footer]
+  
+  @js.native
+  sealed trait forceLeft extends StObject
+  inline def forceLeft: forceLeft = "forceLeft".asInstanceOf[forceLeft]
+  
+  @js.native
+  sealed trait forceRight extends StObject
+  inline def forceRight: forceRight = "forceRight".asInstanceOf[forceRight]
+  
+  @js.native
   sealed trait gif
     extends StObject
        with Icons
@@ -668,6 +805,10 @@ object gestaltStrings {
     extends StObject
        with Icons
   inline def gmail: gmail = "gmail".asInstanceOf[gmail]
+  
+  @js.native
+  sealed trait good extends StObject
+  inline def good: good = "good".asInstanceOf[good]
   
   @js.native
   sealed trait `google-plus`
@@ -694,12 +835,12 @@ object gestaltStrings {
   inline def gray: gray = "gray".asInstanceOf[gray]
   
   @js.native
-  sealed trait green extends StObject
-  inline def green: green = "green".asInstanceOf[green]
-  
-  @js.native
   sealed trait grow extends StObject
   inline def grow: grow = "grow".asInstanceOf[grow]
+  
+  @js.native
+  sealed trait halted extends StObject
+  inline def halted: halted = "halted".asInstanceOf[halted]
   
   @js.native
   sealed trait `hand-pointing`
@@ -712,6 +853,10 @@ object gestaltStrings {
     extends StObject
        with Icons
   inline def handle: handle = "handle".asInstanceOf[handle]
+  
+  @js.native
+  sealed trait header extends StObject
+  inline def header: header = "header".asInstanceOf[header]
   
   @js.native
   sealed trait heart
@@ -740,10 +885,36 @@ object gestaltStrings {
   inline def high: high = "high".asInstanceOf[high]
   
   @js.native
+  sealed trait history
+    extends StObject
+       with Icons
+  inline def history: history = "history".asInstanceOf[history]
+  
+  @js.native
+  sealed trait `idea-pin`
+    extends StObject
+       with Icons
+  inline def `idea-pin`: `idea-pin` = "idea-pin".asInstanceOf[`idea-pin`]
+  
+  @js.native
+  sealed trait img extends StObject
+  inline def img: img = "img".asInstanceOf[img]
+  
+  @js.native
   sealed trait impressum
     extends StObject
        with Icons
   inline def impressum: impressum = "impressum".asInstanceOf[impressum]
+  
+  @js.native
+  sealed trait in
+    extends StObject
+       with OnAnimationEndStateType
+  inline def in: in = "in".asInstanceOf[in]
+  
+  @js.native
+  sealed trait inProgress extends StObject
+  inline def inProgress: inProgress = "inProgress".asInstanceOf[inProgress]
   
   @js.native
   sealed trait inactive extends StObject
@@ -760,8 +931,24 @@ object gestaltStrings {
   inline def `info-circle`: `info-circle` = "info-circle".asInstanceOf[`info-circle`]
   
   @js.native
+  sealed trait infoBare extends StObject
+  inline def infoBare: infoBare = "infoBare".asInstanceOf[infoBare]
+  
+  @js.native
+  sealed trait infoBase extends StObject
+  inline def infoBase: infoBase = "infoBase".asInstanceOf[infoBase]
+  
+  @js.native
+  sealed trait infoWeak extends StObject
+  inline def infoWeak: infoWeak = "infoWeak".asInstanceOf[infoWeak]
+  
+  @js.native
   sealed trait inlineBlock extends StObject
   inline def inlineBlock: inlineBlock = "inlineBlock".asInstanceOf[inlineBlock]
+  
+  @js.native
+  sealed trait inverse extends StObject
+  inline def inverse: inverse = "inverse".asInstanceOf[inverse]
   
   @js.native
   sealed trait justify extends StObject
@@ -784,7 +971,9 @@ object gestaltStrings {
   inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
   
   @js.native
-  sealed trait left extends StObject
+  sealed trait left
+    extends StObject
+       with FourDirections
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
@@ -856,6 +1045,10 @@ object gestaltStrings {
   inline def low: low = "low".asInstanceOf[low]
   
   @js.native
+  sealed trait main extends StObject
+  inline def main: main = "main".asInstanceOf[main]
+  
+  @js.native
   sealed trait `margins-large`
     extends StObject
        with Icons
@@ -872,10 +1065,6 @@ object gestaltStrings {
     extends StObject
        with Icons
   inline def `margins-small`: `margins-small` = "margins-small".asInstanceOf[`margins-small`]
-  
-  @js.native
-  sealed trait maroon extends StObject
-  inline def maroon: maroon = "maroon".asInstanceOf[maroon]
   
   @js.native
   sealed trait maximize
@@ -908,10 +1097,6 @@ object gestaltStrings {
   inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait midnight extends StObject
-  inline def midnight: midnight = "midnight".asInstanceOf[midnight]
-  
-  @js.native
   sealed trait minimize
     extends StObject
        with Icons
@@ -924,6 +1109,18 @@ object gestaltStrings {
   inline def move: move = "move".asInstanceOf[move]
   
   @js.native
+  sealed trait `music-off`
+    extends StObject
+       with Icons
+  inline def `music-off`: `music-off` = "music-off".asInstanceOf[`music-off`]
+  
+  @js.native
+  sealed trait `music-on`
+    extends StObject
+       with Icons
+  inline def `music-on`: `music-on` = "music-on".asInstanceOf[`music-on`]
+  
+  @js.native
   sealed trait mute
     extends StObject
        with Icons
@@ -934,12 +1131,16 @@ object gestaltStrings {
   inline def name: name = "name".asInstanceOf[name]
   
   @js.native
-  sealed trait navy extends StObject
-  inline def navy: navy = "navy".asInstanceOf[navy]
+  sealed trait nav extends StObject
+  inline def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
   sealed trait needsAttention extends StObject
   inline def needsAttention: needsAttention = "needsAttention".asInstanceOf[needsAttention]
+  
+  @js.native
+  sealed trait neutral extends StObject
+  inline def neutral: neutral = "neutral".asInstanceOf[neutral]
   
   @js.native
   sealed trait `new-password` extends StObject
@@ -950,11 +1151,17 @@ object gestaltStrings {
   inline def noDrop: noDrop = "noDrop".asInstanceOf[noDrop]
   
   @js.native
+  sealed trait noWrap extends StObject
+  inline def noWrap: noWrap = "noWrap".asInstanceOf[noWrap]
+  
+  @js.native
   sealed trait nofollow extends StObject
   inline def nofollow: nofollow = "nofollow".asInstanceOf[nofollow]
   
   @js.native
-  sealed trait none extends StObject
+  sealed trait none
+    extends StObject
+       with ExternalLinkIcon
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
@@ -966,34 +1173,40 @@ object gestaltStrings {
   inline def notStarted: notStarted = "notStarted".asInstanceOf[notStarted]
   
   @js.native
-  sealed trait number extends StObject
-  inline def number: number = "number".asInstanceOf[number]
-  
-  @js.native
   sealed trait off extends StObject
   inline def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait olive extends StObject
-  inline def olive: olive = "olive".asInstanceOf[olive]
+  sealed trait ok extends StObject
+  inline def ok: ok = "ok".asInstanceOf[ok]
   
   @js.native
   sealed trait on extends StObject
   inline def on: on = "on".asInstanceOf[on]
   
   @js.native
+  sealed trait onClick extends StObject
+  inline def onClick: onClick = "onClick".asInstanceOf[onClick]
+  
+  @js.native
   sealed trait orange extends StObject
   inline def orange: orange = "orange".asInstanceOf[orange]
   
   @js.native
-  sealed trait orchid extends StObject
-  inline def orchid: orchid = "orchid".asInstanceOf[orchid]
+  sealed trait out
+    extends StObject
+       with OnAnimationEndStateType
+  inline def out: out = "out".asInstanceOf[out]
   
   @js.native
   sealed trait `overlay-text`
     extends StObject
        with Icons
   inline def `overlay-text`: `overlay-text` = "overlay-text".asInstanceOf[`overlay-text`]
+  
+  @js.native
+  sealed trait page extends StObject
+  inline def page: page = "page".asInstanceOf[page]
   
   @js.native
   sealed trait password extends StObject
@@ -1050,10 +1263,6 @@ object gestaltStrings {
   inline def `pin-hide`: `pin-hide` = "pin-hide".asInstanceOf[`pin-hide`]
   
   @js.native
-  sealed trait pine extends StObject
-  inline def pine: pine = "pine".asInstanceOf[pine]
-  
-  @js.native
   sealed trait pinterest
     extends StObject
        with Icons
@@ -1070,14 +1279,22 @@ object gestaltStrings {
   inline def pointer: pointer = "pointer".asInstanceOf[pointer]
   
   @js.native
+  sealed trait presentation extends StObject
+  inline def presentation: presentation = "presentation".asInstanceOf[presentation]
+  
+  @js.native
+  sealed trait primary extends StObject
+  inline def primary: primary = "primary".asInstanceOf[primary]
+  
+  @js.native
+  sealed trait problem extends StObject
+  inline def problem: problem = "problem".asInstanceOf[problem]
+  
+  @js.native
   sealed trait protect
     extends StObject
        with Icons
   inline def protect: protect = "protect".asInstanceOf[protect]
-  
-  @js.native
-  sealed trait purple extends StObject
-  inline def purple: purple = "purple".asInstanceOf[purple]
   
   @js.native
   sealed trait `question-mark`
@@ -1086,12 +1303,36 @@ object gestaltStrings {
   inline def `question-mark`: `question-mark` = "question-mark".asInstanceOf[`question-mark`]
   
   @js.native
+  sealed trait raisedBottomShadow extends StObject
+  inline def raisedBottomShadow: raisedBottomShadow = "raisedBottomShadow".asInstanceOf[raisedBottomShadow]
+  
+  @js.native
+  sealed trait raisedTopShadow extends StObject
+  inline def raisedTopShadow: raisedTopShadow = "raisedTopShadow".asInstanceOf[raisedTopShadow]
+  
+  @js.native
+  sealed trait recommendation extends StObject
+  inline def recommendation: recommendation = "recommendation".asInstanceOf[recommendation]
+  
+  @js.native
+  sealed trait recommendationBase extends StObject
+  inline def recommendationBase: recommendationBase = "recommendationBase".asInstanceOf[recommendationBase]
+  
+  @js.native
+  sealed trait recommendationWeak extends StObject
+  inline def recommendationWeak: recommendationWeak = "recommendationWeak".asInstanceOf[recommendationWeak]
+  
+  @js.native
   sealed trait rectangle extends StObject
   inline def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
   
   @js.native
   sealed trait red extends StObject
   inline def red: red = "red".asInstanceOf[red]
+  
+  @js.native
+  sealed trait ref extends StObject
+  inline def ref: ref = "ref".asInstanceOf[ref]
   
   @js.native
   sealed trait refresh
@@ -1128,7 +1369,9 @@ object gestaltStrings {
   inline def report: report = "report".asInstanceOf[report]
   
   @js.native
-  sealed trait right extends StObject
+  sealed trait right
+    extends StObject
+       with FourDirections
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
@@ -1174,20 +1417,40 @@ object gestaltStrings {
   inline def search: search = "search".asInstanceOf[search]
   
   @js.native
+  sealed trait secondary extends StObject
+  inline def secondary: secondary = "secondary".asInstanceOf[secondary]
+  
+  @js.native
+  sealed trait section extends StObject
+  inline def section: section = "section".asInstanceOf[section]
+  
+  @js.native
   sealed trait security
     extends StObject
        with Icons
   inline def security: security = "security".asInstanceOf[security]
   
   @js.native
+  sealed trait selected extends StObject
+  inline def selected: selected = "selected".asInstanceOf[selected]
+  
+  @js.native
   sealed trait self extends StObject
   inline def self: self = "self".asInstanceOf[self]
+  
+  @js.native
+  sealed trait semiTransparentWhite extends StObject
+  inline def semiTransparentWhite: semiTransparentWhite = "semiTransparentWhite".asInstanceOf[semiTransparentWhite]
   
   @js.native
   sealed trait send
     extends StObject
        with Icons
   inline def send: send = "send".asInstanceOf[send]
+  
+  @js.native
+  sealed trait serverRenderedFlexible extends StObject
+  inline def serverRenderedFlexible: serverRenderedFlexible = "serverRenderedFlexible".asInstanceOf[serverRenderedFlexible]
   
   @js.native
   sealed trait shadow extends StObject
@@ -1198,6 +1461,10 @@ object gestaltStrings {
     extends StObject
        with Icons
   inline def share: share = "share".asInstanceOf[share]
+  
+  @js.native
+  sealed trait shopping extends StObject
+  inline def shopping: shopping = "shopping".asInstanceOf[shopping]
   
   @js.native
   sealed trait `shopping-bag`
@@ -1286,22 +1553,40 @@ object gestaltStrings {
   inline def static: static = "static".asInstanceOf[static]
   
   @js.native
-  sealed trait `story-pin`
-    extends StObject
-       with Icons
-  inline def `story-pin`: `story-pin` = "story-pin".asInstanceOf[`story-pin`]
-  
-  @js.native
   sealed trait stretch extends StObject
   inline def stretch: stretch = "stretch".asInstanceOf[stretch]
   
   @js.native
-  sealed trait string extends StObject
-  inline def string: string = "string".asInstanceOf[string]
+  sealed trait style extends StObject
+  inline def style: style = "style".asInstanceOf[style]
   
   @js.native
   sealed trait submit extends StObject
   inline def submit: submit = "submit".asInstanceOf[submit]
+  
+  @js.native
+  sealed trait subtle extends StObject
+  inline def subtle: subtle = "subtle".asInstanceOf[subtle]
+  
+  @js.native
+  sealed trait success extends StObject
+  inline def success: success = "success".asInstanceOf[success]
+  
+  @js.native
+  sealed trait successBare extends StObject
+  inline def successBare: successBare = "successBare".asInstanceOf[successBare]
+  
+  @js.native
+  sealed trait successBase extends StObject
+  inline def successBase: successBase = "successBase".asInstanceOf[successBase]
+  
+  @js.native
+  sealed trait successWeak extends StObject
+  inline def successWeak: successWeak = "successWeak".asInstanceOf[successWeak]
+  
+  @js.native
+  sealed trait summary extends StObject
+  inline def summary: summary = "summary".asInstanceOf[summary]
   
   @js.native
   sealed trait `switch-account`
@@ -1310,8 +1595,8 @@ object gestaltStrings {
   inline def `switch-account`: `switch-account` = "switch-account".asInstanceOf[`switch-account`]
   
   @js.native
-  sealed trait tab extends StObject
-  inline def tab: tab = "tab".asInstanceOf[tab]
+  sealed trait sync extends StObject
+  inline def sync: sync = "sync".asInstanceOf[sync]
   
   @js.native
   sealed trait tag
@@ -1320,10 +1605,18 @@ object gestaltStrings {
   inline def tag: tag = "tag".asInstanceOf[tag]
   
   @js.native
+  sealed trait tel extends StObject
+  inline def tel: tel = "tel".asInstanceOf[tel]
+  
+  @js.native
   sealed trait terms
     extends StObject
        with Icons
   inline def terms: terms = "terms".asInstanceOf[terms]
+  
+  @js.native
+  sealed trait tertiary extends StObject
+  inline def tertiary: tertiary = "tertiary".asInstanceOf[tertiary]
   
   @js.native
   sealed trait text extends StObject
@@ -1434,7 +1727,17 @@ object gestaltStrings {
   inline def underline: underline = "underline".asInstanceOf[underline]
   
   @js.native
-  sealed trait up extends StObject
+  sealed trait uniformRow extends StObject
+  inline def uniformRow: uniformRow = "uniformRow".asInstanceOf[uniformRow]
+  
+  @js.native
+  sealed trait unstarted extends StObject
+  inline def unstarted: unstarted = "unstarted".asInstanceOf[unstarted]
+  
+  @js.native
+  sealed trait up
+    extends StObject
+       with FourDirections
   inline def up: up = "up".asInstanceOf[up]
   
   @js.native
@@ -1494,6 +1797,12 @@ object gestaltStrings {
   inline def visible: visible = "visible".asInstanceOf[visible]
   
   @js.native
+  sealed trait visit
+    extends StObject
+       with Icons
+  inline def visit: visit = "visit".asInstanceOf[visit]
+  
+  @js.native
   sealed trait visuallyHidden extends StObject
   inline def visuallyHidden: visuallyHidden = "visuallyHidden".asInstanceOf[visuallyHidden]
   
@@ -1502,8 +1811,16 @@ object gestaltStrings {
   inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait watermelon extends StObject
-  inline def watermelon: watermelon = "watermelon".asInstanceOf[watermelon]
+  sealed trait warningBare extends StObject
+  inline def warningBare: warningBare = "warningBare".asInstanceOf[warningBare]
+  
+  @js.native
+  sealed trait warningBase extends StObject
+  inline def warningBase: warningBase = "warningBase".asInstanceOf[warningBase]
+  
+  @js.native
+  sealed trait warningWeak extends StObject
+  inline def warningWeak: warningWeak = "warningWeak".asInstanceOf[warningWeak]
   
   @js.native
   sealed trait white extends StObject
@@ -1514,6 +1831,12 @@ object gestaltStrings {
     extends StObject
        with Icons
   inline def `workflow-status-all`: `workflow-status-all` = "workflow-status-all".asInstanceOf[`workflow-status-all`]
+  
+  @js.native
+  sealed trait `workflow-status-canceled`
+    extends StObject
+       with Icons
+  inline def `workflow-status-canceled`: `workflow-status-canceled` = "workflow-status-canceled".asInstanceOf[`workflow-status-canceled`]
   
   @js.native
   sealed trait `workflow-status-halted`

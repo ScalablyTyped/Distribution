@@ -33,6 +33,6 @@ object ListTagsResponse {
     
     inline def setResourceTagListUndefined: Self = StObject.set(x, "ResourceTagList", js.undefined)
     
-    inline def setResourceTagListVarargs(value: ResourceTag*): Self = StObject.set(x, "ResourceTagList", js.Array(value :_*))
+    inline def setResourceTagListVarargs(value: ResourceTag*): Self = StObject.set(x, "ResourceTagList", js.Array(value*))
   }
 }

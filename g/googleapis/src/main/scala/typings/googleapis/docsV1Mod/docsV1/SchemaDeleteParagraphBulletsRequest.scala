@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Deletes bullets from all of the paragraphs that overlap with the given
-  * range.  The nesting level of each paragraph will be visually preserved by
-  * adding indent to the start of the corresponding paragraph.
-  */
 trait SchemaDeleteParagraphBulletsRequest extends StObject {
   
   /**

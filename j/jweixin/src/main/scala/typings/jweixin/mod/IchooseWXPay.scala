@@ -26,7 +26,7 @@ trait IchooseWXPay
   // 支付签名
   // 支付成功后的回调函数
   @JSName("success")
-  def success_MIchooseWXPay(res: js.Any): Unit
+  def success_MIchooseWXPay(res: Any): Unit
   
   var timestamp: Double
 }
@@ -37,7 +37,7 @@ object IchooseWXPay {
     nonceStr: String,
     paySign: String,
     signType: String,
-    success: js.Any => Unit,
+    success: Any => Unit,
     timestamp: Double
   ): IchooseWXPay = {
     val __obj = js.Dynamic.literal(nonceStr = nonceStr.asInstanceOf[js.Any], paySign = paySign.asInstanceOf[js.Any], signType = signType.asInstanceOf[js.Any], success = js.Any.fromFunction1(success), timestamp = timestamp.asInstanceOf[js.Any])
@@ -53,7 +53,7 @@ object IchooseWXPay {
     
     inline def setSignType(value: String): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
     
-    inline def setSuccess(value: js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     

@@ -31,13 +31,14 @@ trait VirtualMachine extends StObject {
     */
   var cpuPlatform: js.UndefOr[String] = js.undefined
   
-  /** The list of disks to create and attach to the VM. */
+  /** The list of disks to create and attach to the VM. Specify either the `volumes[]` field or the `disks[]` field, but not both. */
   var disks: js.UndefOr[js.Array[Disk]] = js.undefined
   
   /**
     * The Compute Engine Disk Images to use as a Docker cache. The disks will be mounted into the Docker folder in a way that the images present in the cache will not need to be pulled.
     * The digests of the cached images must match those of the tags used or the latest version will still be pulled. The root directory of the ext4 image must contain `image` and
-    * `overlay2` directories copied from the Docker directory of a VM where the desired Docker images have already been pulled. Only a single image is supported.
+    * `overlay2` directories copied from the Docker directory of a VM where the desired Docker images have already been pulled. Any images pulled that are not cached will be stored on the
+    * first cache disk instead of the boot disk. Only a single image is supported.
     */
   var dockerCacheImages: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -52,7 +53,7 @@ trait VirtualMachine extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.VirtualMachine & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.VirtualMachine & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -74,10 +75,13 @@ trait VirtualMachine extends StObject {
   /** If true, allocate a preemptible VM. */
   var preemptible: js.UndefOr[Boolean] = js.undefined
   
+  /** If specified, the VM will only be allocated inside the matching reservation. It will fail if the VM parameters don't match the reservation. */
+  var reservation: js.UndefOr[String] = js.undefined
+  
   /** The service account to install on the VM. This account does not need any permissions other than those required by the pipeline. */
   var serviceAccount: js.UndefOr[ServiceAccount] = js.undefined
   
-  /** The list of disks and other storage to create or attach to the VM. */
+  /** The list of disks and other storage to create or attach to the VM. Specify either the `volumes[]` field or the `disks[]` field, but not both. */
   var volumes: js.UndefOr[js.Array[Volume]] = js.undefined
 }
 object VirtualMachine {
@@ -93,7 +97,7 @@ object VirtualMachine {
     
     inline def setAcceleratorsUndefined: Self = StObject.set(x, "accelerators", js.undefined)
     
-    inline def setAcceleratorsVarargs(value: Accelerator*): Self = StObject.set(x, "accelerators", js.Array(value :_*))
+    inline def setAcceleratorsVarargs(value: Accelerator*): Self = StObject.set(x, "accelerators", js.Array(value*))
     
     inline def setBootDiskSizeGb(value: Double): Self = StObject.set(x, "bootDiskSizeGb", value.asInstanceOf[js.Any])
     
@@ -111,13 +115,13 @@ object VirtualMachine {
     
     inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value*))
     
     inline def setDockerCacheImages(value: js.Array[String]): Self = StObject.set(x, "dockerCacheImages", value.asInstanceOf[js.Any])
     
     inline def setDockerCacheImagesUndefined: Self = StObject.set(x, "dockerCacheImages", js.undefined)
     
-    inline def setDockerCacheImagesVarargs(value: String*): Self = StObject.set(x, "dockerCacheImages", js.Array(value :_*))
+    inline def setDockerCacheImagesVarargs(value: String*): Self = StObject.set(x, "dockerCacheImages", js.Array(value*))
     
     inline def setEnableStackdriverMonitoring(value: Boolean): Self = StObject.set(x, "enableStackdriverMonitoring", value.asInstanceOf[js.Any])
     
@@ -126,7 +130,7 @@ object VirtualMachine {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.VirtualMachine & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.VirtualMachine & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -147,6 +151,10 @@ object VirtualMachine {
     
     inline def setPreemptibleUndefined: Self = StObject.set(x, "preemptible", js.undefined)
     
+    inline def setReservation(value: String): Self = StObject.set(x, "reservation", value.asInstanceOf[js.Any])
+    
+    inline def setReservationUndefined: Self = StObject.set(x, "reservation", js.undefined)
+    
     inline def setServiceAccount(value: ServiceAccount): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
     inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
@@ -155,6 +163,6 @@ object VirtualMachine {
     
     inline def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
-    inline def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value :_*))
+    inline def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value*))
   }
 }

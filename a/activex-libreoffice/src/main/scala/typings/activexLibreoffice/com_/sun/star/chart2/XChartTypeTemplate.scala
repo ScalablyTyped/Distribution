@@ -100,7 +100,7 @@ object XChartTypeTemplate {
     getChartTypeForNewSeries: SeqEquiv[XChartType] => XChartType,
     getDataInterpreter: () => XDataInterpreter,
     matchesTemplate: (XDiagram, Boolean) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     resetStyles: XDiagram => Unit,
     supportsCategories: () => Boolean

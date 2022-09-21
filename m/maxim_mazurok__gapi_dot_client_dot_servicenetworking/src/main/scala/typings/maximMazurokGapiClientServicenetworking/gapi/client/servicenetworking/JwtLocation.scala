@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JwtLocation extends StObject {
   
+  /** Specifies cookie name to extract JWT token. */
+  var cookie: js.UndefOr[String] = js.undefined
+  
   /** Specifies HTTP header name to extract JWT token. */
   var header: js.UndefOr[String] = js.undefined
   
@@ -27,6 +30,10 @@ object JwtLocation {
   }
   
   extension [Self <: JwtLocation](x: Self) {
+    
+    inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+    
+    inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
     
     inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

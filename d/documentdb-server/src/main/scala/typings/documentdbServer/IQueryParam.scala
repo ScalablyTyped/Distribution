@@ -11,11 +11,11 @@ trait IQueryParam extends StObject {
   var name: String
   
   /** Value of the parameter */
-  var value: js.Any
+  var value: Any
 }
 object IQueryParam {
   
-  inline def apply(name: String, value: js.Any): IQueryParam = {
+  inline def apply(name: String, value: Any): IQueryParam = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueryParam]
   }
@@ -24,6 +24,6 @@ object IQueryParam {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

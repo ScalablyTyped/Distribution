@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructor
   * @param [options] Options object
   */
-class Rect ()
+open class Rect ()
   extends typings.fabric.fabricImplMod.Rect {
   def this(options: IRectOptions) = this()
 }
@@ -43,5 +43,5 @@ object Rect {
     * Returns Rect instance from an object representation
     * @param object Object to create an instance from
     */
-  inline def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Rect]
+  inline def fromObject(`object`: Any): typings.fabric.fabricImplMod.Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Rect]
 }

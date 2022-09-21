@@ -102,24 +102,24 @@ object anon {
     }
   }
   
-  trait Key extends StObject {
+  trait Key[T] extends StObject {
     
     var key: String
     
-    var value: js.Any
+    var value: T
   }
   object Key {
     
-    inline def apply(key: String, value: js.Any): Key = {
+    inline def apply[T](key: String, value: T): Key[T] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Key]
+      __obj.asInstanceOf[Key[T]]
     }
     
-    extension [Self <: Key](x: Self) {
+    extension [Self <: Key[?], T](x: Self & Key[T]) {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

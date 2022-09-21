@@ -10,10 +10,10 @@ object cameraAltMod {
   
   @JSImport("material-ui/svg-icons/image/camera-alt", JSImport.Default)
   @js.native
-  class default () extends ImageCameraAlt
+  open class default () extends ImageCameraAlt
   
   @JSImport("material-ui/svg-icons/image/camera-alt", "ImageCameraAlt")
   @js.native
-  class ImageCameraAlt ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageCameraAlt ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

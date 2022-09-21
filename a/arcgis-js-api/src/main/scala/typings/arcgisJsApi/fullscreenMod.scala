@@ -22,7 +22,7 @@ object fullscreenMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Fullscreen {
     def this(properties: FullscreenProperties) = this()

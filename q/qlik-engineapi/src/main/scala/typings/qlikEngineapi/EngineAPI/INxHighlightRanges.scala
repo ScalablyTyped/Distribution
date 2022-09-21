@@ -25,6 +25,6 @@ object INxHighlightRanges {
     
     inline def setQRanges(value: js.Array[ICharRange]): Self = StObject.set(x, "qRanges", value.asInstanceOf[js.Any])
     
-    inline def setQRangesVarargs(value: ICharRange*): Self = StObject.set(x, "qRanges", js.Array(value :_*))
+    inline def setQRangesVarargs(value: ICharRange*): Self = StObject.set(x, "qRanges", js.Array(value*))
   }
 }

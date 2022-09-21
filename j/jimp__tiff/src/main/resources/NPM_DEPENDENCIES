@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/tiff" : "0.16.1"
+      "@jimp/tiff" : "0.16.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/tiff" : "0.16.1"
+      "@jimp/tiff" : "0.16.2"
     }
   ],
   "compile-devDependencies" : [

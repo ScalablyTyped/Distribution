@@ -16,11 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object statsMod {
   
-  type BounceCounts = StringDictionary[js.Any]
+  type BounceCounts = StringDictionary[Any]
   
   trait BrowserUsageCounts
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var Days: js.Array[Dictkey]
   }
@@ -35,7 +35,7 @@ object statsMod {
       
       inline def setDays(value: js.Array[Dictkey]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: Dictkey*): Self = StObject.set(x, "Days", js.Array(value :_*))
+      inline def setDaysVarargs(value: Dictkey*): Self = StObject.set(x, "Days", js.Array(value*))
     }
   }
   
@@ -60,7 +60,7 @@ object statsMod {
       
       inline def setDays(value: js.Array[Clicks]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: Clicks*): Self = StObject.set(x, "Days", js.Array(value :_*))
+      inline def setDaysVarargs(value: Clicks*): Self = StObject.set(x, "Days", js.Array(value*))
       
       inline def setUnique(value: Double): Self = StObject.set(x, "Unique", value.asInstanceOf[js.Any])
     }
@@ -85,7 +85,7 @@ object statsMod {
       
       inline def setDays(value: js.Array[HTML]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: HTML*): Self = StObject.set(x, "Days", js.Array(value :_*))
+      inline def setDaysVarargs(value: HTML*): Self = StObject.set(x, "Days", js.Array(value*))
       
       inline def setHTML(value: Double): Self = StObject.set(x, "HTML", value.asInstanceOf[js.Any])
       
@@ -93,7 +93,7 @@ object statsMod {
     }
   }
   
-  trait ClickPlaformUsageCounts extends StObject {
+  trait ClickPlatformUsageCounts extends StObject {
     
     var Days: js.Array[Mobile]
     
@@ -103,18 +103,18 @@ object statsMod {
     
     var Unknown: Double
   }
-  object ClickPlaformUsageCounts {
+  object ClickPlatformUsageCounts {
     
-    inline def apply(Days: js.Array[Mobile], Desktop: Double, Mobile: Double, Unknown: Double): ClickPlaformUsageCounts = {
+    inline def apply(Days: js.Array[Mobile], Desktop: Double, Mobile: Double, Unknown: Double): ClickPlatformUsageCounts = {
       val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any], Desktop = Desktop.asInstanceOf[js.Any], Mobile = Mobile.asInstanceOf[js.Any], Unknown = Unknown.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ClickPlaformUsageCounts]
+      __obj.asInstanceOf[ClickPlatformUsageCounts]
     }
     
-    extension [Self <: ClickPlaformUsageCounts](x: Self) {
+    extension [Self <: ClickPlatformUsageCounts](x: Self) {
       
       inline def setDays(value: js.Array[Mobile]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: Mobile*): Self = StObject.set(x, "Days", js.Array(value :_*))
+      inline def setDaysVarargs(value: Mobile*): Self = StObject.set(x, "Days", js.Array(value*))
       
       inline def setDesktop(value: Double): Self = StObject.set(x, "Desktop", value.asInstanceOf[js.Any])
       
@@ -126,7 +126,7 @@ object statsMod {
   
   trait EmailClientUsageCounts
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var Days: js.Array[Dictkey]
   }
@@ -141,7 +141,7 @@ object statsMod {
       
       inline def setDays(value: js.Array[Dictkey]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: Dictkey*): Self = StObject.set(x, "Days", js.Array(value :_*))
+      inline def setDaysVarargs(value: Dictkey*): Self = StObject.set(x, "Days", js.Array(value*))
     }
   }
   
@@ -168,7 +168,7 @@ object statsMod {
       
       inline def setDays(value: js.Array[Desktop]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: Desktop*): Self = StObject.set(x, "Days", js.Array(value :_*))
+      inline def setDaysVarargs(value: Desktop*): Self = StObject.set(x, "Days", js.Array(value*))
       
       inline def setDesktop(value: Double): Self = StObject.set(x, "Desktop", value.asInstanceOf[js.Any])
       
@@ -190,7 +190,7 @@ object statsMod {
   
   trait EmailReadTimesCounts
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var Days: js.Array[Dictkey]
   }
@@ -205,7 +205,7 @@ object statsMod {
       
       inline def setDays(value: js.Array[Dictkey]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: Dictkey*): Self = StObject.set(x, "Days", js.Array(value :_*))
+      inline def setDaysVarargs(value: Dictkey*): Self = StObject.set(x, "Days", js.Array(value*))
     }
   }
   
@@ -228,7 +228,7 @@ object statsMod {
       
       inline def setDays(value: js.Array[Opens]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: Opens*): Self = StObject.set(x, "Days", js.Array(value :_*))
+      inline def setDaysVarargs(value: Opens*): Self = StObject.set(x, "Days", js.Array(value*))
       
       inline def setOpens(value: Double): Self = StObject.set(x, "Opens", value.asInstanceOf[js.Any])
       
@@ -352,7 +352,7 @@ object statsMod {
       
       inline def setDays(value: js.Array[Date]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: Date*): Self = StObject.set(x, "Days", js.Array(value :_*))
+      inline def setDaysVarargs(value: Date*): Self = StObject.set(x, "Days", js.Array(value*))
       
       inline def setSent(value: Double): Self = StObject.set(x, "Sent", value.asInstanceOf[js.Any])
     }
@@ -375,7 +375,7 @@ object statsMod {
       
       inline def setDays(value: js.Array[SpamComplaint]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: SpamComplaint*): Self = StObject.set(x, "Days", js.Array(value :_*))
+      inline def setDaysVarargs(value: SpamComplaint*): Self = StObject.set(x, "Days", js.Array(value*))
       
       inline def setSpamComplaint(value: Double): Self = StObject.set(x, "SpamComplaint", value.asInstanceOf[js.Any])
     }
@@ -398,7 +398,7 @@ object statsMod {
       
       inline def setDays(value: js.Array[Tracked]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: Tracked*): Self = StObject.set(x, "Days", js.Array(value :_*))
+      inline def setDaysVarargs(value: Tracked*): Self = StObject.set(x, "Days", js.Array(value*))
       
       inline def setTracked(value: Double): Self = StObject.set(x, "Tracked", value.asInstanceOf[js.Any])
     }

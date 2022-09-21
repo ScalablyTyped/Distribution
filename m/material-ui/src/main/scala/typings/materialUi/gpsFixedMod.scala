@@ -10,10 +10,10 @@ object gpsFixedMod {
   
   @JSImport("material-ui/svg-icons/device/gps-fixed", JSImport.Default)
   @js.native
-  class default () extends DeviceGpsFixed
+  open class default () extends DeviceGpsFixed
   
   @JSImport("material-ui/svg-icons/device/gps-fixed", "DeviceGpsFixed")
   @js.native
-  class DeviceGpsFixed ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceGpsFixed ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UploadFileOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /** 文件名，即对应的 key, 开发者在服务器端通过这个 key 可以获取到文件二进制内容 */
   var fileName: String
@@ -24,7 +24,7 @@ trait UploadFileOptions
   var fileType: image | video | audio
   
   /** HTTP 请求中其他额外的 form 数据 */
-  var formData: js.UndefOr[js.Any] = js.undefined
+  var formData: js.UndefOr[Any] = js.undefined
   
   /** HTTP 请求 Header */
   var header: js.UndefOr[RequestHeader] = js.undefined
@@ -50,7 +50,7 @@ object UploadFileOptions {
     
     inline def setFileType(value: image | video | audio): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
-    inline def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     

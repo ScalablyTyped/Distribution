@@ -30,7 +30,7 @@ trait JSONEditor extends StObject {
   
   def scrollTo(top: Double): Unit = js.native
   
-  def search(text: String): js.Array[js.Any] = js.native
+  def search(text: String): js.Array[Any] = js.native
   
   def set(json: js.Object): Unit = js.native
   def set(json: js.Object, name: String): Unit = js.native

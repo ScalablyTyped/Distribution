@@ -8,7 +8,7 @@ object eventsMod {
   
   @JSImport("events", "EventEmitter")
   @js.native
-  class EventEmitter ()
+  open class EventEmitter ()
     extends StObject
        with typings.easyXHeaders.NodeJS.EventEmitter
   /* static members */

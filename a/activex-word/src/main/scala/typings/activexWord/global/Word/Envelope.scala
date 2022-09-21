@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Envelope")
 @js.native
-/* private */ class Envelope ()
+/* private */ open class Envelope ()
   extends StObject
      with typings.activexWord.Word.Envelope {
   
@@ -59,116 +59,116 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   /* CompleteClass */
   override def Insert(
-    ExtractAddress: js.UndefOr[js.Any],
-    Address: js.UndefOr[js.Any],
-    AutoText: js.UndefOr[js.Any],
-    OmitReturnAddress: js.UndefOr[js.Any],
-    ReturnAddress: js.UndefOr[js.Any],
-    ReturnAutoText: js.UndefOr[js.Any],
-    PrintBarCode: js.UndefOr[js.Any],
-    PrintFIMA: js.UndefOr[js.Any],
-    Size: js.UndefOr[js.Any],
-    Height: js.UndefOr[js.Any],
-    Width: js.UndefOr[js.Any],
-    FeedSource: js.UndefOr[js.Any],
-    AddressFromLeft: js.UndefOr[js.Any],
-    AddressFromTop: js.UndefOr[js.Any],
-    ReturnAddressFromLeft: js.UndefOr[js.Any],
-    ReturnAddressFromTop: js.UndefOr[js.Any],
-    DefaultFaceUp: js.UndefOr[js.Any],
-    DefaultOrientation: js.UndefOr[js.Any],
-    PrintEPostage: js.UndefOr[js.Any],
-    Vertical: js.UndefOr[js.Any],
-    RecipientNamefromLeft: js.UndefOr[js.Any],
-    RecipientNamefromTop: js.UndefOr[js.Any],
-    RecipientPostalfromLeft: js.UndefOr[js.Any],
-    RecipientPostalfromTop: js.UndefOr[js.Any],
-    SenderNamefromLeft: js.UndefOr[js.Any],
-    SenderNamefromTop: js.UndefOr[js.Any],
-    SenderPostalfromLeft: js.UndefOr[js.Any],
-    SenderPostalfromTop: js.UndefOr[js.Any]
+    ExtractAddress: js.UndefOr[Any],
+    Address: js.UndefOr[Any],
+    AutoText: js.UndefOr[Any],
+    OmitReturnAddress: js.UndefOr[Any],
+    ReturnAddress: js.UndefOr[Any],
+    ReturnAutoText: js.UndefOr[Any],
+    PrintBarCode: js.UndefOr[Any],
+    PrintFIMA: js.UndefOr[Any],
+    Size: js.UndefOr[Any],
+    Height: js.UndefOr[Any],
+    Width: js.UndefOr[Any],
+    FeedSource: js.UndefOr[Any],
+    AddressFromLeft: js.UndefOr[Any],
+    AddressFromTop: js.UndefOr[Any],
+    ReturnAddressFromLeft: js.UndefOr[Any],
+    ReturnAddressFromTop: js.UndefOr[Any],
+    DefaultFaceUp: js.UndefOr[Any],
+    DefaultOrientation: js.UndefOr[Any],
+    PrintEPostage: js.UndefOr[Any],
+    Vertical: js.UndefOr[Any],
+    RecipientNamefromLeft: js.UndefOr[Any],
+    RecipientNamefromTop: js.UndefOr[Any],
+    RecipientPostalfromLeft: js.UndefOr[Any],
+    RecipientPostalfromTop: js.UndefOr[Any],
+    SenderNamefromLeft: js.UndefOr[Any],
+    SenderNamefromTop: js.UndefOr[Any],
+    SenderPostalfromLeft: js.UndefOr[Any],
+    SenderPostalfromTop: js.UndefOr[Any]
   ): Unit = js.native
   
   /* CompleteClass */
   override def Insert2000(
-    ExtractAddress: js.UndefOr[js.Any],
-    Address: js.UndefOr[js.Any],
-    AutoText: js.UndefOr[js.Any],
-    OmitReturnAddress: js.UndefOr[js.Any],
-    ReturnAddress: js.UndefOr[js.Any],
-    ReturnAutoText: js.UndefOr[js.Any],
-    PrintBarCode: js.UndefOr[js.Any],
-    PrintFIMA: js.UndefOr[js.Any],
-    Size: js.UndefOr[js.Any],
-    Height: js.UndefOr[js.Any],
-    Width: js.UndefOr[js.Any],
-    FeedSource: js.UndefOr[js.Any],
-    AddressFromLeft: js.UndefOr[js.Any],
-    AddressFromTop: js.UndefOr[js.Any],
-    ReturnAddressFromLeft: js.UndefOr[js.Any],
-    ReturnAddressFromTop: js.UndefOr[js.Any],
-    DefaultFaceUp: js.UndefOr[js.Any],
-    DefaultOrientation: js.UndefOr[js.Any]
+    ExtractAddress: js.UndefOr[Any],
+    Address: js.UndefOr[Any],
+    AutoText: js.UndefOr[Any],
+    OmitReturnAddress: js.UndefOr[Any],
+    ReturnAddress: js.UndefOr[Any],
+    ReturnAutoText: js.UndefOr[Any],
+    PrintBarCode: js.UndefOr[Any],
+    PrintFIMA: js.UndefOr[Any],
+    Size: js.UndefOr[Any],
+    Height: js.UndefOr[Any],
+    Width: js.UndefOr[Any],
+    FeedSource: js.UndefOr[Any],
+    AddressFromLeft: js.UndefOr[Any],
+    AddressFromTop: js.UndefOr[Any],
+    ReturnAddressFromLeft: js.UndefOr[Any],
+    ReturnAddressFromTop: js.UndefOr[Any],
+    DefaultFaceUp: js.UndefOr[Any],
+    DefaultOrientation: js.UndefOr[Any]
   ): Unit = js.native
   
   /* CompleteClass */
   override def Options(): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def PrintOut(
-    ExtractAddress: js.UndefOr[js.Any],
-    Address: js.UndefOr[js.Any],
-    AutoText: js.UndefOr[js.Any],
-    OmitReturnAddress: js.UndefOr[js.Any],
-    ReturnAddress: js.UndefOr[js.Any],
-    ReturnAutoText: js.UndefOr[js.Any],
-    PrintBarCode: js.UndefOr[js.Any],
-    PrintFIMA: js.UndefOr[js.Any],
-    Size: js.UndefOr[js.Any],
-    Height: js.UndefOr[js.Any],
-    Width: js.UndefOr[js.Any],
-    FeedSource: js.UndefOr[js.Any],
-    AddressFromLeft: js.UndefOr[js.Any],
-    AddressFromTop: js.UndefOr[js.Any],
-    ReturnAddressFromLeft: js.UndefOr[js.Any],
-    ReturnAddressFromTop: js.UndefOr[js.Any],
-    DefaultFaceUp: js.UndefOr[js.Any],
-    DefaultOrientation: js.UndefOr[js.Any],
-    PrintEPostage: js.UndefOr[js.Any],
-    Vertical: js.UndefOr[js.Any],
-    RecipientNamefromLeft: js.UndefOr[js.Any],
-    RecipientNamefromTop: js.UndefOr[js.Any],
-    RecipientPostalfromLeft: js.UndefOr[js.Any],
-    RecipientPostalfromTop: js.UndefOr[js.Any],
-    SenderNamefromLeft: js.UndefOr[js.Any],
-    SenderNamefromTop: js.UndefOr[js.Any],
-    SenderPostalfromLeft: js.UndefOr[js.Any],
-    SenderPostalfromTop: js.UndefOr[js.Any]
+    ExtractAddress: js.UndefOr[Any],
+    Address: js.UndefOr[Any],
+    AutoText: js.UndefOr[Any],
+    OmitReturnAddress: js.UndefOr[Any],
+    ReturnAddress: js.UndefOr[Any],
+    ReturnAutoText: js.UndefOr[Any],
+    PrintBarCode: js.UndefOr[Any],
+    PrintFIMA: js.UndefOr[Any],
+    Size: js.UndefOr[Any],
+    Height: js.UndefOr[Any],
+    Width: js.UndefOr[Any],
+    FeedSource: js.UndefOr[Any],
+    AddressFromLeft: js.UndefOr[Any],
+    AddressFromTop: js.UndefOr[Any],
+    ReturnAddressFromLeft: js.UndefOr[Any],
+    ReturnAddressFromTop: js.UndefOr[Any],
+    DefaultFaceUp: js.UndefOr[Any],
+    DefaultOrientation: js.UndefOr[Any],
+    PrintEPostage: js.UndefOr[Any],
+    Vertical: js.UndefOr[Any],
+    RecipientNamefromLeft: js.UndefOr[Any],
+    RecipientNamefromTop: js.UndefOr[Any],
+    RecipientPostalfromLeft: js.UndefOr[Any],
+    RecipientPostalfromTop: js.UndefOr[Any],
+    SenderNamefromLeft: js.UndefOr[Any],
+    SenderNamefromTop: js.UndefOr[Any],
+    SenderPostalfromLeft: js.UndefOr[Any],
+    SenderPostalfromTop: js.UndefOr[Any]
   ): Unit = js.native
   
   /* CompleteClass */
   override def PrintOut2000(
-    ExtractAddress: js.UndefOr[js.Any],
-    Address: js.UndefOr[js.Any],
-    AutoText: js.UndefOr[js.Any],
-    OmitReturnAddress: js.UndefOr[js.Any],
-    ReturnAddress: js.UndefOr[js.Any],
-    ReturnAutoText: js.UndefOr[js.Any],
-    PrintBarCode: js.UndefOr[js.Any],
-    PrintFIMA: js.UndefOr[js.Any],
-    Size: js.UndefOr[js.Any],
-    Height: js.UndefOr[js.Any],
-    Width: js.UndefOr[js.Any],
-    FeedSource: js.UndefOr[js.Any],
-    AddressFromLeft: js.UndefOr[js.Any],
-    AddressFromTop: js.UndefOr[js.Any],
-    ReturnAddressFromLeft: js.UndefOr[js.Any],
-    ReturnAddressFromTop: js.UndefOr[js.Any],
-    DefaultFaceUp: js.UndefOr[js.Any],
-    DefaultOrientation: js.UndefOr[js.Any]
+    ExtractAddress: js.UndefOr[Any],
+    Address: js.UndefOr[Any],
+    AutoText: js.UndefOr[Any],
+    OmitReturnAddress: js.UndefOr[Any],
+    ReturnAddress: js.UndefOr[Any],
+    ReturnAutoText: js.UndefOr[Any],
+    PrintBarCode: js.UndefOr[Any],
+    PrintFIMA: js.UndefOr[Any],
+    Size: js.UndefOr[Any],
+    Height: js.UndefOr[Any],
+    Width: js.UndefOr[Any],
+    FeedSource: js.UndefOr[Any],
+    AddressFromLeft: js.UndefOr[Any],
+    AddressFromTop: js.UndefOr[Any],
+    ReturnAddressFromLeft: js.UndefOr[Any],
+    ReturnAddressFromTop: js.UndefOr[Any],
+    DefaultFaceUp: js.UndefOr[Any],
+    DefaultOrientation: js.UndefOr[Any]
   ): Unit = js.native
   
   /* CompleteClass */

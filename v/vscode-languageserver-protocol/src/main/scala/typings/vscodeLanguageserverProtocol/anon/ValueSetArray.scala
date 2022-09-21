@@ -23,6 +23,6 @@ object ValueSetArray {
     
     inline def setValueSet(value: js.Array[CompletionItemTag]): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
     
-    inline def setValueSetVarargs(value: CompletionItemTag*): Self = StObject.set(x, "valueSet", js.Array(value :_*))
+    inline def setValueSetVarargs(value: CompletionItemTag*): Self = StObject.set(x, "valueSet", js.Array(value*))
   }
 }

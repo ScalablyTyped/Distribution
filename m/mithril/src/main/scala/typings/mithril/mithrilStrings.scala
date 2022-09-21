@@ -35,6 +35,34 @@ object mithrilStrings {
   inline def merge: merge = "merge".asInstanceOf[merge]
   
   @js.native
+  sealed trait onbeforeremove extends StObject
+  inline def onbeforeremove: onbeforeremove = "onbeforeremove".asInstanceOf[onbeforeremove]
+  
+  @js.native
+  sealed trait onbeforeupdate extends StObject
+  inline def onbeforeupdate: onbeforeupdate = "onbeforeupdate".asInstanceOf[onbeforeupdate]
+  
+  @js.native
+  sealed trait oncreate extends StObject
+  inline def oncreate: oncreate = "oncreate".asInstanceOf[oncreate]
+  
+  @js.native
+  sealed trait oninit extends StObject
+  inline def oninit: oninit = "oninit".asInstanceOf[oninit]
+  
+  @js.native
+  sealed trait onremove extends StObject
+  inline def onremove: onremove = "onremove".asInstanceOf[onremove]
+  
+  @js.native
+  sealed trait onupdate extends StObject
+  inline def onupdate: onupdate = "onupdate".asInstanceOf[onupdate]
+  
+  @js.native
   sealed trait text extends StObject
   inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait view extends StObject
+  inline def view: view = "view".asInstanceOf[view]
 }

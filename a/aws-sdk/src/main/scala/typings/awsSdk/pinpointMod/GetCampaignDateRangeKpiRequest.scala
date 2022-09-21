@@ -19,7 +19,7 @@ trait GetCampaignDateRangeKpiRequest extends StObject {
   /**
     * The last date and time to retrieve data for, as part of an inclusive date range that filters the query results. This value should be in extended ISO 8601 format and use Coordinated Universal Time (UTC), for example: 2019-07-26T20:00:00Z for 8:00 PM UTC July 26, 2019.
     */
-  var EndTime: js.UndefOr[timestampIso8601] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the metric, also referred to as a key performance indicator (KPI), to retrieve data for. This value describes the associated metric and consists of two or more terms, which are comprised of lowercase alphanumeric characters, separated by a hyphen. Examples are email-open-rate and successful-delivery-rate. For a list of valid values, see the Amazon Pinpoint Developer Guide.
@@ -39,7 +39,7 @@ trait GetCampaignDateRangeKpiRequest extends StObject {
   /**
     * The first date and time to retrieve data for, as part of an inclusive date range that filters the query results. This value should be in extended ISO 8601 format and use Coordinated Universal Time (UTC), for example: 2019-07-19T20:00:00Z for 8:00 PM UTC July 19, 2019. This value should also be fewer than 90 days from the current day.
     */
-  var StartTime: js.UndefOr[timestampIso8601] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object GetCampaignDateRangeKpiRequest {
   
@@ -54,7 +54,7 @@ object GetCampaignDateRangeKpiRequest {
     
     inline def setCampaignId(value: string): Self = StObject.set(x, "CampaignId", value.asInstanceOf[js.Any])
     
-    inline def setEndTime(value: timestampIso8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -68,7 +68,7 @@ object GetCampaignDateRangeKpiRequest {
     
     inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    inline def setStartTime(value: timestampIso8601): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

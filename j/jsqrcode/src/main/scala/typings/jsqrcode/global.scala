@@ -16,7 +16,6 @@ import typings.jsqrcode.jsqrcodeNumbers.`8`
 import typings.jsqrcode.jsqrcodeNumbers.`9`
 import typings.std.CanvasRenderingContext2D
 import typings.std.ImageData
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ object global {
   
   @JSGlobal("AlignmentPattern")
   @js.native
-  class AlignmentPattern protected ()
+  open class AlignmentPattern protected ()
     extends StObject
        with typings.jsqrcode.AlignmentPattern {
     def this(posX: Double, posY: Double, estimatedModuleSize: Double) = this()
@@ -63,11 +62,11 @@ object global {
   
   @JSGlobal("AlignmentPatternFinder")
   @js.native
-  class AlignmentPatternFinder protected ()
+  open class AlignmentPatternFinder protected ()
     extends StObject
        with typings.jsqrcode.AlignmentPatternFinder {
     def this(
-      image: Uint8Array,
+      image: js.typedarray.Uint8Array,
       startX: Double,
       startY: Double,
       width: Double,
@@ -95,7 +94,7 @@ object global {
     var height: Double = js.native
     
     /* CompleteClass */
-    var image: Uint8Array = js.native
+    var image: js.typedarray.Uint8Array = js.native
     
     /* CompleteClass */
     var moduleSize: Double = js.native
@@ -122,7 +121,7 @@ object global {
   
   @JSGlobal("BitMatrix")
   @js.native
-  class BitMatrix protected ()
+  open class BitMatrix protected ()
     extends StObject
        with typings.jsqrcode.BitMatrix {
     def this(width: Double) = this()
@@ -167,7 +166,7 @@ object global {
   
   @JSGlobal("BitMatrixParser")
   @js.native
-  class BitMatrixParser protected ()
+  open class BitMatrixParser protected ()
     extends StObject
        with typings.jsqrcode.BitMatrixParser {
     def this(bitMatrix: typings.jsqrcode.BitMatrix) = this()
@@ -200,7 +199,7 @@ object global {
   
   @JSGlobal("DataBlock")
   @js.native
-  class DataBlock protected ()
+  open class DataBlock protected ()
     extends StObject
        with typings.jsqrcode.DataBlock {
     def this(numDataCodewords: Double, codewords: js.Array[Double]) = this()
@@ -261,7 +260,7 @@ object global {
   
   @JSGlobal("DataMask000")
   @js.native
-  class DataMask000 ()
+  open class DataMask000 ()
     extends StObject
        with typings.jsqrcode.DataMask000 {
     
@@ -274,7 +273,7 @@ object global {
   
   @JSGlobal("DataMask001")
   @js.native
-  class DataMask001 ()
+  open class DataMask001 ()
     extends StObject
        with typings.jsqrcode.DataMask001 {
     
@@ -287,7 +286,7 @@ object global {
   
   @JSGlobal("DataMask010")
   @js.native
-  class DataMask010 ()
+  open class DataMask010 ()
     extends StObject
        with typings.jsqrcode.DataMask010 {
     
@@ -300,7 +299,7 @@ object global {
   
   @JSGlobal("DataMask011")
   @js.native
-  class DataMask011 ()
+  open class DataMask011 ()
     extends StObject
        with typings.jsqrcode.DataMask011 {
     
@@ -313,7 +312,7 @@ object global {
   
   @JSGlobal("DataMask100")
   @js.native
-  class DataMask100 ()
+  open class DataMask100 ()
     extends StObject
        with typings.jsqrcode.DataMask100 {
     
@@ -326,7 +325,7 @@ object global {
   
   @JSGlobal("DataMask101")
   @js.native
-  class DataMask101 ()
+  open class DataMask101 ()
     extends StObject
        with typings.jsqrcode.DataMask101 {
     
@@ -339,7 +338,7 @@ object global {
   
   @JSGlobal("DataMask110")
   @js.native
-  class DataMask110 ()
+  open class DataMask110 ()
     extends StObject
        with typings.jsqrcode.DataMask110 {
     
@@ -352,7 +351,7 @@ object global {
   
   @JSGlobal("DataMask111")
   @js.native
-  class DataMask111 ()
+  open class DataMask111 ()
     extends StObject
        with typings.jsqrcode.DataMask111 {
     
@@ -381,10 +380,10 @@ object global {
   
   @JSGlobal("Detector")
   @js.native
-  class Detector protected ()
+  open class Detector protected ()
     extends StObject
        with typings.jsqrcode.Detector {
-    def this(image: Uint8Array) = this()
+    def this(image: js.typedarray.Uint8Array) = this()
     
     /* CompleteClass */
     override def calculateModuleSize(
@@ -428,7 +427,7 @@ object global {
     ): typings.jsqrcode.AlignmentPattern = js.native
     
     /* CompleteClass */
-    var image: Uint8Array = js.native
+    var image: js.typedarray.Uint8Array = js.native
     
     /* CompleteClass */
     override def processFinderPatternInfo(info: typings.jsqrcode.FinderPatternInfo): typings.jsqrcode.DetectorResult = js.native
@@ -437,7 +436,11 @@ object global {
     var resultPointCallback: ResultPointCallback = js.native
     
     /* CompleteClass */
-    override def sampleGrid(image: Uint8Array, transform: typings.jsqrcode.PerspectiveTransform, dimension: Double): typings.jsqrcode.BitMatrix = js.native
+    override def sampleGrid(
+      image: js.typedarray.Uint8Array,
+      transform: typings.jsqrcode.PerspectiveTransform,
+      dimension: Double
+    ): typings.jsqrcode.BitMatrix = js.native
     
     /* CompleteClass */
     override def sizeOfBlackWhiteBlackRun(fromX: Double, fromY: Double, toX: Double, toY: Double): Double = js.native
@@ -448,7 +451,7 @@ object global {
   
   @JSGlobal("DetectorResult")
   @js.native
-  class DetectorResult protected ()
+  open class DetectorResult protected ()
     extends StObject
        with typings.jsqrcode.DetectorResult {
     def this(
@@ -487,7 +490,7 @@ object global {
   
   @JSGlobal("ECB")
   @js.native
-  class ECB protected ()
+  open class ECB protected ()
     extends StObject
        with typings.jsqrcode.ECB {
     def this(count: Double, dataCodewords: Double) = this()
@@ -507,7 +510,7 @@ object global {
   
   @JSGlobal("ECBlocks")
   @js.native
-  class ECBlocks protected ()
+  open class ECBlocks protected ()
     extends StObject
        with typings.jsqrcode.ECBlocks {
     def this(ecCodewordsPerBlock: Double, ecBlocks1: typings.jsqrcode.ECB) = this()
@@ -534,7 +537,7 @@ object global {
   
   @JSGlobal("ErrorCorrectionLevel")
   @js.native
-  class ErrorCorrectionLevel protected ()
+  open class ErrorCorrectionLevel protected ()
     extends StObject
        with typings.jsqrcode.ErrorCorrectionLevel {
     def this(ordinal: Double, bits: Double, name: String) = this()
@@ -566,7 +569,7 @@ object global {
   
   @JSGlobal("FORMAT_INFO_DECODE_LOOKUP")
   @js.native
-  val FORMAT_INFO_DECODE_LOOKUP: js.Array[js.Any] = js.native
+  val FORMAT_INFO_DECODE_LOOKUP: js.Array[Any] = js.native
   
   @JSGlobal("FORMAT_INFO_MASK_QR")
   @js.native
@@ -578,7 +581,7 @@ object global {
   
   @JSGlobal("FinderPattern")
   @js.native
-  class FinderPattern protected ()
+  open class FinderPattern protected ()
     extends StObject
        with typings.jsqrcode.FinderPattern {
     def this(posX: Double, posY: Double, estimatedModuleSize: Double) = this()
@@ -616,7 +619,7 @@ object global {
   
   @JSGlobal("FinderPatternFinder")
   @js.native
-  class FinderPatternFinder ()
+  open class FinderPatternFinder ()
     extends StObject
        with typings.jsqrcode.FinderPatternFinder {
     
@@ -636,7 +639,7 @@ object global {
     override def crossCheckVertical(startI: Double, centerJ: Double, maxCount: Double, originalStateCountTotal: Double): Double = js.native
     
     /* CompleteClass */
-    override def findFinderPattern(image: Uint8Array): typings.jsqrcode.FinderPatternInfo = js.native
+    override def findFinderPattern(image: js.typedarray.Uint8Array): typings.jsqrcode.FinderPatternInfo = js.native
     
     /* CompleteClass */
     override def findRowSkip(): Double = js.native
@@ -654,7 +657,7 @@ object global {
     override def haveMultiplyConfirmedCenters(): Boolean = js.native
     
     /* CompleteClass */
-    var image: Uint8Array = js.native
+    var image: js.typedarray.Uint8Array = js.native
     
     /* CompleteClass */
     var possibleCenters: js.Array[typings.jsqrcode.FinderPattern] = js.native
@@ -668,7 +671,7 @@ object global {
   
   @JSGlobal("FinderPatternInfo")
   @js.native
-  class FinderPatternInfo protected ()
+  open class FinderPatternInfo protected ()
     extends StObject
        with typings.jsqrcode.FinderPatternInfo {
     def this(patternCenters: js.Tuple3[
@@ -689,7 +692,7 @@ object global {
   
   @JSGlobal("FormatInformation")
   @js.native
-  class FormatInformation ()
+  open class FormatInformation ()
     extends StObject
        with typings.jsqrcode.FormatInformation {
     
@@ -729,7 +732,7 @@ object global {
   
   @JSGlobal("GF256")
   @js.native
-  class GF256 protected ()
+  open class GF256 protected ()
     extends StObject
        with typings.jsqrcode.GF256 {
     def this(primitive: Double) = this()
@@ -789,7 +792,7 @@ object global {
   
   @JSGlobal("GF256Poly")
   @js.native
-  class GF256Poly protected ()
+  open class GF256Poly protected ()
     extends StObject
        with typings.jsqrcode.GF256Poly {
     def this(field: typings.jsqrcode.GF256, coefficients: js.Array[Double]) = this()
@@ -837,12 +840,16 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def checkAndNudgePoints(image: Uint8Array, points: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAndNudgePoints")(image.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def checkAndNudgePoints(image: js.typedarray.Uint8Array, points: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAndNudgePoints")(image.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def sampleGrid3(image: Uint8Array, dimension: Double, transform: typings.jsqrcode.PerspectiveTransform): typings.jsqrcode.BitMatrix = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleGrid3")(image.asInstanceOf[js.Any], dimension.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[typings.jsqrcode.BitMatrix]
+    inline def sampleGrid3(
+      image: js.typedarray.Uint8Array,
+      dimension: Double,
+      transform: typings.jsqrcode.PerspectiveTransform
+    ): typings.jsqrcode.BitMatrix = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleGrid3")(image.asInstanceOf[js.Any], dimension.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[typings.jsqrcode.BitMatrix]
     
     inline def sampleGridx(
-      image: Uint8Array,
+      image: js.typedarray.Uint8Array,
       dimension: Double,
       p1ToX: Double,
       p1ToY: Double,
@@ -889,7 +896,7 @@ object global {
   
   @JSGlobal("PerspectiveTransform")
   @js.native
-  class PerspectiveTransform protected ()
+  open class PerspectiveTransform protected ()
     extends StObject
        with typings.jsqrcode.PerspectiveTransform {
     def this(
@@ -982,7 +989,7 @@ object global {
   
   @JSGlobal("QRCodeDataBlockReader")
   @js.native
-  class QRCodeDataBlockReader protected ()
+  open class QRCodeDataBlockReader protected ()
     extends StObject
        with typings.jsqrcode.QRCodeDataBlockReader {
     def this(blocks: js.Array[Double], version: Double, numErrorCorrectionCode: Double) = this()
@@ -1035,7 +1042,7 @@ object global {
   
   @JSGlobal("ReedSolomonDecoder")
   @js.native
-  class ReedSolomonDecoder protected ()
+  open class ReedSolomonDecoder protected ()
     extends StObject
        with typings.jsqrcode.ReedSolomonDecoder {
     def this(field: typings.jsqrcode.GF256) = this()
@@ -1060,7 +1067,7 @@ object global {
   
   @JSGlobal("Version")
   @js.native
-  class Version protected ()
+  open class Version protected ()
     extends StObject
        with typings.jsqrcode.Version {
     def this(
@@ -1113,7 +1120,7 @@ object global {
     /* static member */
     @JSGlobal("Version.VERSION_DECODE_INFO")
     @js.native
-    val VERSION_DECODE_INFO: js.Array[js.Any] = js.native
+    val VERSION_DECODE_INFO: js.Array[Any] = js.native
     
     /* static member */
     inline def decodeVersionInformation(versionBits: Double): typings.jsqrcode.Version = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeVersionInformation")(versionBits.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.Version]
@@ -1155,9 +1162,9 @@ object global {
     
     inline def getPixel(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPixel")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def grayScaleToBitmap(grayScale: js.Array[Double]): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("grayScaleToBitmap")(grayScale.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def grayScaleToBitmap(grayScale: js.Array[Double]): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("grayScaleToBitmap")(grayScale.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    inline def grayscale(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("grayscale")().asInstanceOf[Uint8Array]
+    inline def grayscale(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("grayscale")().asInstanceOf[js.typedarray.Uint8Array]
     
     @JSGlobal("qrcode.height")
     @js.native
@@ -1182,8 +1189,8 @@ object global {
     
     @JSGlobal("qrcode.qrCodeSymbol")
     @js.native
-    def qrCodeSymbol: js.Any = js.native
-    inline def qrCodeSymbol_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("qrCodeSymbol")(x.asInstanceOf[js.Any])
+    def qrCodeSymbol: Any = js.native
+    inline def qrCodeSymbol_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("qrCodeSymbol")(x.asInstanceOf[js.Any])
     
     inline def setWebcam(videoId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWebcam")(videoId.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -1196,7 +1203,7 @@ object global {
       ] = js.native
     
     inline def vidError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vidError")().asInstanceOf[Unit]
-    inline def vidError(error: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vidError")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def vidError(error: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vidError")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("qrcode.width")
     @js.native

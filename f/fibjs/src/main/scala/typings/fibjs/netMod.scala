@@ -33,25 +33,25 @@ object netMod {
   
   @JSImport("net", "Smtp")
   @js.native
-  class Smtp ()
+  open class Smtp ()
     extends StObject
        with ClassSmtp
   
   @JSImport("net", "Socket")
   @js.native
-  class Socket ()
+  open class Socket ()
     extends StObject
        with ClassSocket
   
   @JSImport("net", "TcpServer")
   @js.native
-  class TcpServer ()
+  open class TcpServer ()
     extends StObject
        with ClassTcpServer
   
   @JSImport("net", "Url")
   @js.native
-  class Url ()
+  open class Url ()
     extends StObject
        with ClassUrlObject
   

@@ -1,8 +1,8 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientDisplayvideo.anon.CallbackFieldsFilter
 import typings.maximMazurokGapiClientDisplayvideo.anon.CustomListId
+import typings.maximMazurokGapiClientDisplayvideo.anon.FieldsFilterKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,5 +16,5 @@ trait CustomListsResource extends StObject {
   
   /** Lists custom lists. The order is defined by the order_by parameter. */
   def list(): Request[ListCustomListsResponse] = js.native
-  def list(request: CallbackFieldsFilter): Request[ListCustomListsResponse] = js.native
+  def list(request: FieldsFilterKey): Request[ListCustomListsResponse] = js.native
 }

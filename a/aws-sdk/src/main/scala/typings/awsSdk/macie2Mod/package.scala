@@ -1,5 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.ACCESS_DENIED
+import typings.awsSdk.awsSdkStrings.AWS_API_CALL
+import typings.awsSdk.awsSdkStrings.S3_OBJECT
+import typings.awsSdk.awsSdkStrings.SENSITIVE_DATA_DISCOVERY_JOB
+import typings.awsSdk.awsSdkStrings.TERABYTES
+import typings.awsSdk.awsSdkStrings.USD
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,17 +17,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.DISABLING_IN_PROGRESS
   - java.lang.String
 */
-type AdminStatus = typings.awsSdk.macie2Mod._AdminStatus | java.lang.String
+type AdminStatus = _AdminStatus | String
 
-type BucketCriteria = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.macie2Mod.BucketCriteriaAdditionalProperties]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.OK
+  - typings.awsSdk.awsSdkStrings.S3_OBJECT_NOT_FOUND
+  - typings.awsSdk.awsSdkStrings.S3_USER_ACCESS_DENIED
+  - typings.awsSdk.awsSdkStrings.S3_OBJECT_ACCESS_DENIED
+  - typings.awsSdk.awsSdkStrings.S3_THROTTLED
+  - typings.awsSdk.awsSdkStrings.S3_OBJECT_OVERSIZE
+  - typings.awsSdk.awsSdkStrings.S3_OBJECT_EMPTY
+  - typings.awsSdk.awsSdkStrings.UNKNOWN_ERROR
+  - java.lang.String
+*/
+type AllowListStatusCode = _AllowListStatusCode | String
 
-type Cells = js.Array[typings.awsSdk.macie2Mod.Cell]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TRUE
+  - typings.awsSdk.awsSdkStrings.FALSE
+  - typings.awsSdk.awsSdkStrings.UNKNOWN
+  - java.lang.String
+*/
+type AllowsUnencryptedObjectUploads = _AllowsUnencryptedObjectUploads | String
 
-type Criterion = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.macie2Mod.CriterionAdditionalProperties]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AVAILABLE
+  - typings.awsSdk.awsSdkStrings.UNAVAILABLE
+  - java.lang.String
+*/
+type AvailabilityCode = _AvailabilityCode | String
 
-type Currency = typings.awsSdk.awsSdkStrings.USD | java.lang.String
+type BucketCriteria = StringDictionary[BucketCriteriaAdditionalProperties]
 
-type CustomDetections = js.Array[typings.awsSdk.macie2Mod.CustomDetection]
+type BucketMetadataErrorCode = ACCESS_DENIED | String
+
+type Cells = js.Array[Cell]
+
+type Criterion = StringDictionary[CriterionAdditionalProperties]
+
+type Currency = USD | String
+
+type CustomDetections = js.Array[CustomDetection]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LOW
+  - typings.awsSdk.awsSdkStrings.MEDIUM
+  - typings.awsSdk.awsSdkStrings.HIGH
+  - java.lang.String
+*/
+type DataIdentifierSeverity = _DataIdentifierSeverity | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUNDAY
@@ -32,9 +77,9 @@ type CustomDetections = js.Array[typings.awsSdk.macie2Mod.CustomDetection]
   - typings.awsSdk.awsSdkStrings.SATURDAY
   - java.lang.String
 */
-type DayOfWeek = typings.awsSdk.macie2Mod._DayOfWeek | java.lang.String
+type DayOfWeek = _DayOfWeek | String
 
-type DefaultDetections = js.Array[typings.awsSdk.macie2Mod.DefaultDetection]
+type DefaultDetections = js.Array[DefaultDetection]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PUBLIC
@@ -42,7 +87,7 @@ type DefaultDetections = js.Array[typings.awsSdk.macie2Mod.DefaultDetection]
   - typings.awsSdk.awsSdkStrings.UNKNOWN
   - java.lang.String
 */
-type EffectivePermission = typings.awsSdk.macie2Mod._EffectivePermission | java.lang.String
+type EffectivePermission = _EffectivePermission | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -51,23 +96,23 @@ type EffectivePermission = typings.awsSdk.macie2Mod._EffectivePermission | java.
   - typings.awsSdk.awsSdkStrings.UNKNOWN
   - java.lang.String
 */
-type EncryptionType = typings.awsSdk.macie2Mod._EncryptionType | java.lang.String
+type EncryptionType = _EncryptionType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ClientError
   - typings.awsSdk.awsSdkStrings.InternalError
   - java.lang.String
 */
-type ErrorCode = typings.awsSdk.macie2Mod._ErrorCode | java.lang.String
+type ErrorCode = _ErrorCode | String
 
-type FindingActionType = typings.awsSdk.awsSdkStrings.AWS_API_CALL | java.lang.String
+type FindingActionType = AWS_API_CALL | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CLASSIFICATION
   - typings.awsSdk.awsSdkStrings.POLICY
   - java.lang.String
 */
-type FindingCategory = typings.awsSdk.macie2Mod._FindingCategory | java.lang.String
+type FindingCategory = _FindingCategory | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FIFTEEN_MINUTES
@@ -75,14 +120,14 @@ type FindingCategory = typings.awsSdk.macie2Mod._FindingCategory | java.lang.Str
   - typings.awsSdk.awsSdkStrings.SIX_HOURS
   - java.lang.String
 */
-type FindingPublishingFrequency = typings.awsSdk.macie2Mod._FindingPublishingFrequency | java.lang.String
+type FindingPublishingFrequency = _FindingPublishingFrequency | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.groupKey
   - typings.awsSdk.awsSdkStrings.count__
   - java.lang.String
 */
-type FindingStatisticsSortAttributeName = typings.awsSdk.macie2Mod._FindingStatisticsSortAttributeName | java.lang.String
+type FindingStatisticsSortAttributeName = _FindingStatisticsSortAttributeName | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SensitiveDataColonS3ObjectSlashMultiple
@@ -97,14 +142,14 @@ type FindingStatisticsSortAttributeName = typings.awsSdk.macie2Mod._FindingStati
   - typings.awsSdk.awsSdkStrings.PolicyColonIAMUserSlashS3BlockPublicAccessDisabled
   - java.lang.String
 */
-type FindingType = typings.awsSdk.macie2Mod._FindingType | java.lang.String
+type FindingType = _FindingType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ARCHIVE
   - typings.awsSdk.awsSdkStrings.NOOP
   - java.lang.String
 */
-type FindingsFilterAction = typings.awsSdk.macie2Mod._FindingsFilterAction | java.lang.String
+type FindingsFilterAction = _FindingsFilterAction | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.resourcesAffectedDots3BucketDotname
@@ -113,7 +158,7 @@ type FindingsFilterAction = typings.awsSdk.macie2Mod._FindingsFilterAction | jav
   - typings.awsSdk.awsSdkStrings.severityDotdescription
   - java.lang.String
 */
-type GroupBy = typings.awsSdk.macie2Mod._GroupBy | java.lang.String
+type GroupBy = _GroupBy | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TRUE
@@ -121,7 +166,7 @@ type GroupBy = typings.awsSdk.macie2Mod._GroupBy | java.lang.String
   - typings.awsSdk.awsSdkStrings.UNKNOWN
   - java.lang.String
 */
-type IsDefinedInJob = typings.awsSdk.macie2Mod._IsDefinedInJob | java.lang.String
+type IsDefinedInJob = _IsDefinedInJob | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TRUE
@@ -129,7 +174,7 @@ type IsDefinedInJob = typings.awsSdk.macie2Mod._IsDefinedInJob | java.lang.Strin
   - typings.awsSdk.awsSdkStrings.UNKNOWN
   - java.lang.String
 */
-type IsMonitoredByJob = typings.awsSdk.macie2Mod._IsMonitoredByJob | java.lang.String
+type IsMonitoredByJob = _IsMonitoredByJob | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EQ
@@ -139,9 +184,10 @@ type IsMonitoredByJob = typings.awsSdk.macie2Mod._IsMonitoredByJob | java.lang.S
   - typings.awsSdk.awsSdkStrings.LTE
   - typings.awsSdk.awsSdkStrings.NE
   - typings.awsSdk.awsSdkStrings.CONTAINS
+  - typings.awsSdk.awsSdkStrings.STARTS_WITH
   - java.lang.String
 */
-type JobComparator = typings.awsSdk.macie2Mod._JobComparator | java.lang.String
+type JobComparator = _JobComparator | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RUNNING
@@ -152,23 +198,23 @@ type JobComparator = typings.awsSdk.macie2Mod._JobComparator | java.lang.String
   - typings.awsSdk.awsSdkStrings.USER_PAUSED
   - java.lang.String
 */
-type JobStatus = typings.awsSdk.macie2Mod._JobStatus | java.lang.String
+type JobStatus = _JobStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ONE_TIME
   - typings.awsSdk.awsSdkStrings.SCHEDULED
   - java.lang.String
 */
-type JobType = typings.awsSdk.macie2Mod._JobType | java.lang.String
+type JobType = _JobType | String
 
-type KeyValuePairList = js.Array[typings.awsSdk.macie2Mod.KeyValuePair]
+type KeyValuePairList = js.Array[KeyValuePair]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.ERROR
   - java.lang.String
 */
-type LastRunErrorStatusCode = typings.awsSdk.macie2Mod._LastRunErrorStatusCode | java.lang.String
+type LastRunErrorStatusCode = _LastRunErrorStatusCode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.jobType
@@ -177,7 +223,7 @@ type LastRunErrorStatusCode = typings.awsSdk.macie2Mod._LastRunErrorStatusCode |
   - typings.awsSdk.awsSdkStrings.name__
   - java.lang.String
 */
-type ListJobsFilterKey = typings.awsSdk.macie2Mod._ListJobsFilterKey | java.lang.String
+type ListJobsFilterKey = _ListJobsFilterKey | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.createdAt_
@@ -186,29 +232,40 @@ type ListJobsFilterKey = typings.awsSdk.macie2Mod._ListJobsFilterKey | java.lang
   - typings.awsSdk.awsSdkStrings.jobType
   - java.lang.String
 */
-type ListJobsSortAttributeName = typings.awsSdk.macie2Mod._ListJobsSortAttributeName | java.lang.String
+type ListJobsSortAttributeName = _ListJobsSortAttributeName | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PAUSED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type MacieStatus = typings.awsSdk.macie2Mod._MacieStatus | java.lang.String
+type MacieStatus = _MacieStatus | String
 
-type MaxResults = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALL
+  - typings.awsSdk.awsSdkStrings.EXCLUDE
+  - typings.awsSdk.awsSdkStrings.INCLUDE
+  - typings.awsSdk.awsSdkStrings.NONE
+  - java.lang.String
+*/
+type ManagedDataIdentifierSelector = _ManagedDataIdentifierSelector | String
+
+type MaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASC
   - typings.awsSdk.awsSdkStrings.DESC
   - java.lang.String
 */
-type OrderBy = typings.awsSdk.macie2Mod._OrderBy | java.lang.String
+type OrderBy = _OrderBy | String
 
-type Pages = js.Array[typings.awsSdk.macie2Mod.Page]
+type OriginType = SENSITIVE_DATA_DISCOVERY_JOB | String
 
-type Ranges = js.Array[typings.awsSdk.macie2Mod.Range]
+type Pages = js.Array[Page]
 
-type Records = js.Array[typings.awsSdk.macie2Mod.Record]
+type Ranges = js.Array[Range]
+
+type Records = js.Array[Record]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Enabled_
@@ -216,26 +273,65 @@ type Records = js.Array[typings.awsSdk.macie2Mod.Record]
   - typings.awsSdk.awsSdkStrings.Invited_
   - typings.awsSdk.awsSdkStrings.Created_
   - typings.awsSdk.awsSdkStrings.Removed_
-  - typings.awsSdk.awsSdkStrings.Resigned
+  - typings.awsSdk.awsSdkStrings.Resigned_
   - typings.awsSdk.awsSdkStrings.EmailVerificationInProgress
   - typings.awsSdk.awsSdkStrings.EmailVerificationFailed
   - typings.awsSdk.awsSdkStrings.RegionDisabled
   - typings.awsSdk.awsSdkStrings.AccountSuspended
   - java.lang.String
 */
-type RelationshipStatus = typings.awsSdk.macie2Mod._RelationshipStatus | java.lang.String
+type RelationshipStatus = _RelationshipStatus | String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.BUCKET_CREATION_DATE
+  - typings.awsSdk.awsSdkStrings.SUCCESS
+  - typings.awsSdk.awsSdkStrings.PROCESSING
+  - typings.awsSdk.awsSdkStrings.ERROR
+  - java.lang.String
+*/
+type RevealRequestStatus = _RevealRequestStatus | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type RevealStatus = _RevealStatus | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OBJECT_EXTENSION
   - typings.awsSdk.awsSdkStrings.OBJECT_LAST_MODIFIED_DATE
   - typings.awsSdk.awsSdkStrings.OBJECT_SIZE
-  - typings.awsSdk.awsSdkStrings.TAG
+  - typings.awsSdk.awsSdkStrings.OBJECT_KEY
   - java.lang.String
 */
-type ScopeFilterKey = typings.awsSdk.macie2Mod._ScopeFilterKey | java.lang.String
+type ScopeFilterKey = _ScopeFilterKey | String
 
-type SensitiveData = js.Array[typings.awsSdk.macie2Mod.SensitiveDataItem]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EQ
+  - typings.awsSdk.awsSdkStrings.NE
+  - java.lang.String
+*/
+type SearchResourcesComparator = _SearchResourcesComparator | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACCOUNT_ID
+  - typings.awsSdk.awsSdkStrings.S3_BUCKET_NAME
+  - typings.awsSdk.awsSdkStrings.S3_BUCKET_EFFECTIVE_PERMISSION
+  - typings.awsSdk.awsSdkStrings.S3_BUCKET_SHARED_ACCESS
+  - java.lang.String
+*/
+type SearchResourcesSimpleCriterionKey = _SearchResourcesSimpleCriterionKey | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACCOUNT_ID
+  - typings.awsSdk.awsSdkStrings.RESOURCE_NAME
+  - typings.awsSdk.awsSdkStrings.S3_CLASSIFIABLE_OBJECT_COUNT
+  - typings.awsSdk.awsSdkStrings.S3_CLASSIFIABLE_SIZE_IN_BYTES
+  - java.lang.String
+*/
+type SearchResourcesSortAttributeName = _SearchResourcesSortAttributeName | String
+
+type SensitiveData = js.Array[SensitiveDataItem]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FINANCIAL_INFORMATION
@@ -244,7 +340,9 @@ type SensitiveData = js.Array[typings.awsSdk.macie2Mod.SensitiveDataItem]
   - typings.awsSdk.awsSdkStrings.CUSTOM_IDENTIFIER
   - java.lang.String
 */
-type SensitiveDataItemCategory = typings.awsSdk.macie2Mod._SensitiveDataItemCategory | java.lang.String
+type SensitiveDataItemCategory = _SensitiveDataItemCategory | String
+
+type SensitiveDataOccurrences = StringDictionary[listOfDetectedDataDetails]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Low_
@@ -252,7 +350,9 @@ type SensitiveDataItemCategory = typings.awsSdk.macie2Mod._SensitiveDataItemCate
   - typings.awsSdk.awsSdkStrings.High_
   - java.lang.String
 */
-type SeverityDescription = typings.awsSdk.macie2Mod._SeverityDescription | java.lang.String
+type SeverityDescription = _SeverityDescription | String
+
+type SeverityLevelList = js.Array[SeverityLevel]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EXTERNAL
@@ -261,7 +361,16 @@ type SeverityDescription = typings.awsSdk.macie2Mod._SeverityDescription | java.
   - typings.awsSdk.awsSdkStrings.UNKNOWN
   - java.lang.String
 */
-type SharedAccess = typings.awsSdk.macie2Mod._SharedAccess | java.lang.String
+type SharedAccess = _SharedAccess | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACCOUNT_ID
+  - typings.awsSdk.awsSdkStrings.S3_BUCKET_NAME
+  - typings.awsSdk.awsSdkStrings.S3_BUCKET_EFFECTIVE_PERMISSION
+  - typings.awsSdk.awsSdkStrings.S3_BUCKET_SHARED_ACCESS
+  - java.lang.String
+*/
+type SimpleCriterionKeyForJob = _SimpleCriterionKeyForJob | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STANDARD
@@ -273,13 +382,38 @@ type SharedAccess = typings.awsSdk.macie2Mod._SharedAccess | java.lang.String
   - typings.awsSdk.awsSdkStrings.GLACIER
   - java.lang.String
 */
-type StorageClass = typings.awsSdk.macie2Mod._StorageClass | java.lang.String
+type StorageClass = _StorageClass | String
 
-type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.macie2Mod.string]
+type TagMap = StringDictionary[string]
 
-type TagTarget = typings.awsSdk.awsSdkStrings.S3_OBJECT | java.lang.String
+type TagTarget = S3_OBJECT | String
 
-type Unit = typings.awsSdk.awsSdkStrings.TERABYTES | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.MONTH_TO_DATE
+  - typings.awsSdk.awsSdkStrings.PAST_30_DAYS
+  - java.lang.String
+*/
+type TimeRange = _TimeRange | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.AES256
+  - typings.awsSdk.awsSdkStrings.awsColonkms
+  - java.lang.String
+*/
+type Type = _Type | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.OBJECT_EXCEEDS_SIZE_QUOTA
+  - typings.awsSdk.awsSdkStrings.UNSUPPORTED_OBJECT_TYPE
+  - typings.awsSdk.awsSdkStrings.UNSUPPORTED_FINDING_TYPE
+  - typings.awsSdk.awsSdkStrings.INVALID_CLASSIFICATION_RESULT
+  - typings.awsSdk.awsSdkStrings.OBJECT_UNAVAILABLE
+  - java.lang.String
+*/
+type UnavailabilityReasonCode = _UnavailabilityReasonCode | String
+
+type Unit = TERABYTES | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GT
@@ -291,7 +425,7 @@ type Unit = typings.awsSdk.awsSdkStrings.TERABYTES | java.lang.String
   - typings.awsSdk.awsSdkStrings.CONTAINS
   - java.lang.String
 */
-type UsageStatisticsFilterComparator = typings.awsSdk.macie2Mod._UsageStatisticsFilterComparator | java.lang.String
+type UsageStatisticsFilterComparator = _UsageStatisticsFilterComparator | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.accountId_
@@ -300,7 +434,7 @@ type UsageStatisticsFilterComparator = typings.awsSdk.macie2Mod._UsageStatistics
   - typings.awsSdk.awsSdkStrings.total_
   - java.lang.String
 */
-type UsageStatisticsFilterKey = typings.awsSdk.macie2Mod._UsageStatisticsFilterKey | java.lang.String
+type UsageStatisticsFilterKey = _UsageStatisticsFilterKey | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.accountId_
@@ -309,14 +443,14 @@ type UsageStatisticsFilterKey = typings.awsSdk.macie2Mod._UsageStatisticsFilterK
   - typings.awsSdk.awsSdkStrings.freeTrialStartDate
   - java.lang.String
 */
-type UsageStatisticsSortKey = typings.awsSdk.macie2Mod._UsageStatisticsSortKey | java.lang.String
+type UsageStatisticsSortKey = _UsageStatisticsSortKey | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DATA_INVENTORY_EVALUATION
   - typings.awsSdk.awsSdkStrings.SENSITIVE_DATA_DISCOVERY
   - java.lang.String
 */
-type UsageType = typings.awsSdk.macie2Mod._UsageType | java.lang.String
+type UsageType = _UsageType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AssumedRole
@@ -327,67 +461,101 @@ type UsageType = typings.awsSdk.macie2Mod._UsageType | java.lang.String
   - typings.awsSdk.awsSdkStrings.AWSService
   - java.lang.String
 */
-type UserIdentityType = typings.awsSdk.macie2Mod._UserIdentityType | java.lang.String
+type UserIdentityType = _UserIdentityType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2020-01-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.macie2Mod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type boolean = scala.Boolean
+type boolean = Boolean
 
-type double = scala.Double
+type double = Double
 
-type integer = scala.Double
+type integer = Double
 
-type listOfAdminAccount = js.Array[typings.awsSdk.macie2Mod.AdminAccount]
+type listOfAdminAccount = js.Array[AdminAccount]
 
-type listOfBatchGetCustomDataIdentifierSummary = js.Array[typings.awsSdk.macie2Mod.BatchGetCustomDataIdentifierSummary]
+type listOfAllowListSummary = js.Array[AllowListSummary]
 
-type listOfBucketMetadata = js.Array[typings.awsSdk.macie2Mod.BucketMetadata]
+type listOfBatchGetCustomDataIdentifierSummary = js.Array[BatchGetCustomDataIdentifierSummary]
 
-type listOfCustomDataIdentifierSummary = js.Array[typings.awsSdk.macie2Mod.CustomDataIdentifierSummary]
+type listOfBucketMetadata = js.Array[BucketMetadata]
 
-type listOfFinding = js.Array[typings.awsSdk.macie2Mod.Finding]
+type listOfCriteriaForJob = js.Array[CriteriaForJob]
 
-type listOfFindingType = js.Array[typings.awsSdk.macie2Mod.FindingType]
+type listOfCustomDataIdentifierSummary = js.Array[CustomDataIdentifierSummary]
 
-type listOfFindingsFilterListItem = js.Array[typings.awsSdk.macie2Mod.FindingsFilterListItem]
+type listOfDetectedDataDetails = js.Array[DetectedDataDetails]
 
-type listOfGroupCount = js.Array[typings.awsSdk.macie2Mod.GroupCount]
+type listOfFinding = js.Array[Finding]
 
-type listOfInvitation = js.Array[typings.awsSdk.macie2Mod.Invitation]
+type listOfFindingType = js.Array[FindingType]
 
-type listOfJobScopeTerm = js.Array[typings.awsSdk.macie2Mod.JobScopeTerm]
+type listOfFindingsFilterListItem = js.Array[FindingsFilterListItem]
 
-type listOfJobSummary = js.Array[typings.awsSdk.macie2Mod.JobSummary]
+type listOfGroupCount = js.Array[GroupCount]
 
-type listOfKeyValuePair = js.Array[typings.awsSdk.macie2Mod.KeyValuePair]
+type listOfInvitation = js.Array[Invitation]
 
-type listOfListJobsFilterTerm = js.Array[typings.awsSdk.macie2Mod.ListJobsFilterTerm]
+type listOfJobScopeTerm = js.Array[JobScopeTerm]
 
-type listOfMember = js.Array[typings.awsSdk.macie2Mod.Member]
+type listOfJobSummary = js.Array[JobSummary]
 
-type listOfS3BucketDefinitionForJob = js.Array[typings.awsSdk.macie2Mod.S3BucketDefinitionForJob]
+type listOfKeyValuePair = js.Array[KeyValuePair]
 
-type listOfString = js.Array[typings.awsSdk.macie2Mod.string]
+type listOfListJobsFilterTerm = js.Array[ListJobsFilterTerm]
 
-type listOfTagValuePair = js.Array[typings.awsSdk.macie2Mod.TagValuePair]
+type listOfManagedDataIdentifierSummary = js.Array[ManagedDataIdentifierSummary]
 
-type listOfUnprocessedAccount = js.Array[typings.awsSdk.macie2Mod.UnprocessedAccount]
+type listOfMatchingResource = js.Array[MatchingResource]
 
-type listOfUsageByAccount = js.Array[typings.awsSdk.macie2Mod.UsageByAccount]
+type listOfMember = js.Array[Member]
 
-type listOfUsageRecord = js.Array[typings.awsSdk.macie2Mod.UsageRecord]
+type listOfS3BucketDefinitionForJob = js.Array[S3BucketDefinitionForJob]
 
-type listOfUsageStatisticsFilter = js.Array[typings.awsSdk.macie2Mod.UsageStatisticsFilter]
+type listOfSearchResourcesCriteria = js.Array[SearchResourcesCriteria]
 
-type listOfUsageTotal = js.Array[typings.awsSdk.macie2Mod.UsageTotal]
+type listOfSearchResourcesTagCriterionPair = js.Array[SearchResourcesTagCriterionPair]
 
-type long = scala.Double
+type listOfString = js.Array[string]
 
-type string = java.lang.String
+type listOfTagCriterionPairForJob = js.Array[TagCriterionPairForJob]
 
-type timestampIso8601 = typings.std.Date
+type listOfTagValuePair = js.Array[TagValuePair]
+
+type listOfUnavailabilityReasonCode = js.Array[UnavailabilityReasonCode]
+
+type listOfUnprocessedAccount = js.Array[UnprocessedAccount]
+
+type listOfUsageByAccount = js.Array[UsageByAccount]
+
+type listOfUsageRecord = js.Array[UsageRecord]
+
+type listOfUsageStatisticsFilter = js.Array[UsageStatisticsFilter]
+
+type listOfUsageTotal = js.Array[UsageTotal]
+
+type long = Double
+
+type string = String
+
+type stringMin1Max1024PatternSS = String
+
+type stringMin1Max128 = String
+
+type stringMin1Max128Pattern = String
+
+type stringMin1Max2048 = String
+
+type stringMin1Max512PatternSS = String
+
+type stringMin22Max22PatternAZ0922 = String
+
+type stringMin3Max255PatternAZaZ093255 = String
+
+type stringMin71Max89PatternArnAwsAwsCnAwsUsGovMacie2AZ19920D12AllowListAZ0922 = String
+
+type timestampIso8601 = js.Date

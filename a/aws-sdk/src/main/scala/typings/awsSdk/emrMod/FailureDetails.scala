@@ -12,7 +12,7 @@ trait FailureDetails extends StObject {
   var LogFile: js.UndefOr[String] = js.undefined
   
   /**
-    * The descriptive message including the error the EMR service has identified as the cause of step failure. This is text from an error log that describes the root cause of the failure.
+    * The descriptive message including the error the Amazon EMR service has identified as the cause of step failure. This is text from an error log that describes the root cause of the failure.
     */
   var Message: js.UndefOr[String] = js.undefined
   

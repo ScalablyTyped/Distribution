@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IMobileBroadbandAccountWatcher extends StObject {
   
-  var onaccountadded: js.Any
+  var onaccountadded: Any
   
-  var onaccountremoved: js.Any
+  var onaccountremoved: Any
   
-  var onaccountupdated: js.Any
+  var onaccountupdated: Any
   
-  var onenumerationcompleted: js.Any
+  var onenumerationcompleted: Any
   
-  var onstopped: js.Any
+  var onstopped: Any
   
   def start(): Unit
   
@@ -25,11 +25,11 @@ trait IMobileBroadbandAccountWatcher extends StObject {
 object IMobileBroadbandAccountWatcher {
   
   inline def apply(
-    onaccountadded: js.Any,
-    onaccountremoved: js.Any,
-    onaccountupdated: js.Any,
-    onenumerationcompleted: js.Any,
-    onstopped: js.Any,
+    onaccountadded: Any,
+    onaccountremoved: Any,
+    onaccountupdated: Any,
+    onenumerationcompleted: Any,
+    onstopped: Any,
     start: () => Unit,
     status: MobileBroadbandAccountWatcherStatus,
     stop: () => Unit
@@ -40,15 +40,15 @@ object IMobileBroadbandAccountWatcher {
   
   extension [Self <: IMobileBroadbandAccountWatcher](x: Self) {
     
-    inline def setOnaccountadded(value: js.Any): Self = StObject.set(x, "onaccountadded", value.asInstanceOf[js.Any])
+    inline def setOnaccountadded(value: Any): Self = StObject.set(x, "onaccountadded", value.asInstanceOf[js.Any])
     
-    inline def setOnaccountremoved(value: js.Any): Self = StObject.set(x, "onaccountremoved", value.asInstanceOf[js.Any])
+    inline def setOnaccountremoved(value: Any): Self = StObject.set(x, "onaccountremoved", value.asInstanceOf[js.Any])
     
-    inline def setOnaccountupdated(value: js.Any): Self = StObject.set(x, "onaccountupdated", value.asInstanceOf[js.Any])
+    inline def setOnaccountupdated(value: Any): Self = StObject.set(x, "onaccountupdated", value.asInstanceOf[js.Any])
     
-    inline def setOnenumerationcompleted(value: js.Any): Self = StObject.set(x, "onenumerationcompleted", value.asInstanceOf[js.Any])
+    inline def setOnenumerationcompleted(value: Any): Self = StObject.set(x, "onenumerationcompleted", value.asInstanceOf[js.Any])
     
-    inline def setOnstopped(value: js.Any): Self = StObject.set(x, "onstopped", value.asInstanceOf[js.Any])
+    inline def setOnstopped(value: Any): Self = StObject.set(x, "onstopped", value.asInstanceOf[js.Any])
     
     inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     

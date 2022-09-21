@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Media.PlayTo
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamWithContentType
@@ -16,10 +15,10 @@ object SourceChangeRequestedEventArgs {
   inline def apply(
     album: String,
     author: String,
-    date: Date,
+    date: js.Date,
     description: String,
     genre: String,
-    properties: IMapView[String, js.Any],
+    properties: IMapView[String, Any],
     rating: Double,
     stream: IRandomAccessStreamWithContentType,
     thumbnail: IRandomAccessStreamReference,

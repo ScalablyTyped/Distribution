@@ -43,13 +43,13 @@ object UpdateThingGroupsForThingRequest {
     
     inline def setThingGroupsToAddUndefined: Self = StObject.set(x, "thingGroupsToAdd", js.undefined)
     
-    inline def setThingGroupsToAddVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupsToAdd", js.Array(value :_*))
+    inline def setThingGroupsToAddVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupsToAdd", js.Array(value*))
     
     inline def setThingGroupsToRemove(value: ThingGroupList): Self = StObject.set(x, "thingGroupsToRemove", value.asInstanceOf[js.Any])
     
     inline def setThingGroupsToRemoveUndefined: Self = StObject.set(x, "thingGroupsToRemove", js.undefined)
     
-    inline def setThingGroupsToRemoveVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupsToRemove", js.Array(value :_*))
+    inline def setThingGroupsToRemoveVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupsToRemove", js.Array(value*))
     
     inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     

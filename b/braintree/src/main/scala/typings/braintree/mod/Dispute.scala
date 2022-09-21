@@ -1,14 +1,13 @@
 package typings.braintree.mod
 
-import typings.braintree.anon.Amount
-import typings.std.Date
+import typings.braintree.anon.CreatedAt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "Dispute")
 @js.native
-class Dispute () extends StObject {
+open class Dispute () extends StObject {
   
   var amountDisputed: String = js.native
   
@@ -16,7 +15,7 @@ class Dispute () extends StObject {
   
   var caseNumber: String = js.native
   
-  var createdAt: Date = js.native
+  var createdAt: String = js.native
   
   var currencyIsoCode: String = js.native
   
@@ -38,17 +37,17 @@ class Dispute () extends StObject {
   
   var reasonDescription: String = js.native
   
-  var receivedDate: Date = js.native
+  var receivedDate: js.Date = js.native
   
   var referenceNumber: String = js.native
   
-  var replyByDate: Date = js.native
+  var replyByDate: js.Date = js.native
   
   var status: DisputeStatus = js.native
   
   var statusHistory: js.Array[DisputeStatusHistory] = js.native
   
-  var transaction: Amount = js.native
+  var transaction: CreatedAt = js.native
   
-  var updatedAt: Date = js.native
+  var updatedAt: String = js.native
 }

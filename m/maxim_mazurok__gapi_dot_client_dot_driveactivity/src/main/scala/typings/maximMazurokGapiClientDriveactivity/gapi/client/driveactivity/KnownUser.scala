@@ -9,7 +9,7 @@ trait KnownUser extends StObject {
   /** True if this is the user making the request. */
   var isCurrentUser: js.UndefOr[Boolean] = js.undefined
   
-  /** The identifier for this user that can be used with the People API to get more information. The format is "people/ACCOUNT_ID". See https://developers.google.com/people/. */
+  /** The identifier for this user that can be used with the People API to get more information. The format is `people/ACCOUNT_ID`. See https://developers.google.com/people/. */
   var personName: js.UndefOr[String] = js.undefined
 }
 object KnownUser {

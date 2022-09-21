@@ -10,7 +10,7 @@ trait COMAddIns extends StObject {
   def apply(Index: String): COMAddIn = js.native
   def apply(Index: Double): COMAddIn = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -19,7 +19,7 @@ trait COMAddIns extends StObject {
   def Item(Index: String): COMAddIn = js.native
   def Item(Index: Double): COMAddIn = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def SetAppModal(varfModal: Boolean): Unit = js.native
   

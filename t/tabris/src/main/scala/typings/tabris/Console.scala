@@ -16,7 +16,7 @@ trait Console extends StObject {
     * @param expression Any boolean expression. If the assertion is false, the error message is written to the console.
     * @param values A list of JavaScript values to output.
     */
-  def assert(expression: Boolean, values: js.Any*): Unit = js.native
+  def assert(expression: Boolean, values: Any*): Unit = js.native
   
   /**
     * Logs the number of times that this particular call to count() has been called.
@@ -36,7 +36,7 @@ trait Console extends StObject {
     * Outputs a debug message to the console.
     * @param values A list of JavaScript values to output.
     */
-  def debug(values: js.Any*): Unit = js.native
+  def debug(values: Any*): Unit = js.native
   
   /**
     * XML tree representation of a given object, if available. Supported types include all widgets
@@ -45,20 +45,20 @@ trait Console extends StObject {
     * representations of some select property values.
     * @param object A JavaScript object
     */
-  def dirxml(`object`: js.Any): Unit = js.native
+  def dirxml(`object`: Any): Unit = js.native
   
   /**
     * Outputs an error message to the console.
     * @param values A list of JavaScript values to output.
     */
-  def error(values: js.Any*): Unit = js.native
+  def error(values: Any*): Unit = js.native
   
   /**
     * Creates a new inline group in the console output. This indents following console messages by an
     * additional spaces, until console.groupEnd() is called.
     * @param values A list of JavaScript values to output.
     */
-  def group(values: js.Any*): Unit = js.native
+  def group(values: Any*): Unit = js.native
   
   /**
     * Exits the current inline group in the console.
@@ -69,13 +69,13 @@ trait Console extends StObject {
     * Outputs an info message to the console.
     * @param values A list of JavaScript values to output.
     */
-  def info(values: js.Any*): Unit = js.native
+  def info(values: Any*): Unit = js.native
   
   /**
     * Outputs a message to the console.
     * @param values A list of JavaScript values to output
     */
-  def log(values: js.Any*): Unit = js.native
+  def log(values: Any*): Unit = js.native
   
   /**
     * Prints a stack trace in a platform-independent format. Framework internals are omitted.
@@ -87,5 +87,5 @@ trait Console extends StObject {
     * Outputs a warning message to the console.
     * @param values A list of JavaScript values to output.
     */
-  def warn(values: js.Any*): Unit = js.native
+  def warn(values: Any*): Unit = js.native
 }

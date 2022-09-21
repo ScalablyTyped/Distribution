@@ -13,7 +13,7 @@ trait ASPxClientToolTipBase extends StObject {
     * Gets the tooltip position. An ASPxClientPoint object representing the tooltip position.
     * @param bounds An object that represents the tooltip bounds.
     */
-  def CalculatePosition(bounds: js.Any): ASPxClientPoint
+  def CalculatePosition(bounds: Any): ASPxClientPoint
   
   /**
     * Returns the value that indicates whether or not the tooltip can be displayed.
@@ -41,13 +41,13 @@ trait ASPxClientToolTipBase extends StObject {
     * Displays the Appointment Menu at the position of the tooltip.
     * @param eventObject An object containing information about the event in which the menu is displayed.
     */
-  def ShowAppointmentMenu(eventObject: js.Any): Unit
+  def ShowAppointmentMenu(eventObject: Any): Unit
   
   /**
     * Displays the View Menu at the position of the tooltip.
     * @param eventObject An object containing information about the event in which the menu is displayed.
     */
-  def ShowViewMenu(eventObject: js.Any): Unit
+  def ShowViewMenu(eventObject: Any): Unit
   
   /**
     * Updates the tooltip content.
@@ -58,13 +58,13 @@ trait ASPxClientToolTipBase extends StObject {
 object ASPxClientToolTipBase {
   
   inline def apply(
-    CalculatePosition: js.Any => ASPxClientPoint,
+    CalculatePosition: Any => ASPxClientPoint,
     CanShowToolTip: () => Boolean,
     Close: () => Unit,
     ConvertIntervalToString: ASPxClientTimeInterval => String,
     FinalizeUpdate: ASPxClientSchedulerToolTipData => Unit,
-    ShowAppointmentMenu: js.Any => Unit,
-    ShowViewMenu: js.Any => Unit,
+    ShowAppointmentMenu: Any => Unit,
+    ShowViewMenu: Any => Unit,
     Update: ASPxClientSchedulerToolTipData => Unit
   ): ASPxClientToolTipBase = {
     val __obj = js.Dynamic.literal(CalculatePosition = js.Any.fromFunction1(CalculatePosition), CanShowToolTip = js.Any.fromFunction0(CanShowToolTip), Close = js.Any.fromFunction0(Close), ConvertIntervalToString = js.Any.fromFunction1(ConvertIntervalToString), FinalizeUpdate = js.Any.fromFunction1(FinalizeUpdate), ShowAppointmentMenu = js.Any.fromFunction1(ShowAppointmentMenu), ShowViewMenu = js.Any.fromFunction1(ShowViewMenu), Update = js.Any.fromFunction1(Update))
@@ -73,7 +73,7 @@ object ASPxClientToolTipBase {
   
   extension [Self <: ASPxClientToolTipBase](x: Self) {
     
-    inline def setCalculatePosition(value: js.Any => ASPxClientPoint): Self = StObject.set(x, "CalculatePosition", js.Any.fromFunction1(value))
+    inline def setCalculatePosition(value: Any => ASPxClientPoint): Self = StObject.set(x, "CalculatePosition", js.Any.fromFunction1(value))
     
     inline def setCanShowToolTip(value: () => Boolean): Self = StObject.set(x, "CanShowToolTip", js.Any.fromFunction0(value))
     
@@ -83,9 +83,9 @@ object ASPxClientToolTipBase {
     
     inline def setFinalizeUpdate(value: ASPxClientSchedulerToolTipData => Unit): Self = StObject.set(x, "FinalizeUpdate", js.Any.fromFunction1(value))
     
-    inline def setShowAppointmentMenu(value: js.Any => Unit): Self = StObject.set(x, "ShowAppointmentMenu", js.Any.fromFunction1(value))
+    inline def setShowAppointmentMenu(value: Any => Unit): Self = StObject.set(x, "ShowAppointmentMenu", js.Any.fromFunction1(value))
     
-    inline def setShowViewMenu(value: js.Any => Unit): Self = StObject.set(x, "ShowViewMenu", js.Any.fromFunction1(value))
+    inline def setShowViewMenu(value: Any => Unit): Self = StObject.set(x, "ShowViewMenu", js.Any.fromFunction1(value))
     
     inline def setUpdate(value: ASPxClientSchedulerToolTipData => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction1(value))
   }

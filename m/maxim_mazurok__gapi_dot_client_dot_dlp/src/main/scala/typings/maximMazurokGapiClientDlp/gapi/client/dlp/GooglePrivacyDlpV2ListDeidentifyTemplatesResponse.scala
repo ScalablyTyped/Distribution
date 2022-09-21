@@ -25,7 +25,7 @@ object GooglePrivacyDlpV2ListDeidentifyTemplatesResponse {
     
     inline def setDeidentifyTemplatesUndefined: Self = StObject.set(x, "deidentifyTemplates", js.undefined)
     
-    inline def setDeidentifyTemplatesVarargs(value: GooglePrivacyDlpV2DeidentifyTemplate*): Self = StObject.set(x, "deidentifyTemplates", js.Array(value :_*))
+    inline def setDeidentifyTemplatesVarargs(value: GooglePrivacyDlpV2DeidentifyTemplate*): Self = StObject.set(x, "deidentifyTemplates", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

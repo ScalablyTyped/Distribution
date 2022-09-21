@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ResResources")
 @js.native
-class ResResources ()
+open class ResResources ()
   extends StObject
      with typings.sharepoint.SP.ResResources
 object ResResources {
@@ -16,5 +16,5 @@ object ResResources {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def getString(resourceId: String, args: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getString")(resourceId.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getString(resourceId: String, args: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getString")(resourceId.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
 }

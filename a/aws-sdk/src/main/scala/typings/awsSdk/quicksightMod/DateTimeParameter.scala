@@ -29,6 +29,6 @@ object DateTimeParameter {
     
     inline def setValues(value: TimestampList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: Timestamp_ *): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Date*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

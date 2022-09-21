@@ -11,19 +11,19 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getExclusive(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExclusive")().asInstanceOf[js.Any]
-  inline def getExclusive(measurements: js.Array[Measurements]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExclusive")(measurements.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getExclusive(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExclusive")().asInstanceOf[Any]
+  inline def getExclusive(measurements: js.Array[Measurements]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExclusive")(measurements.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getInclusive(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInclusive")().asInstanceOf[js.Any]
-  inline def getInclusive(measurements: js.Array[Measurements]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInclusive")(measurements.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getInclusive(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInclusive")().asInstanceOf[Any]
+  inline def getInclusive(measurements: js.Array[Measurements]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInclusive")(measurements.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def getLastMeasurements(): js.Array[Measurements] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastMeasurements")().asInstanceOf[js.Array[Measurements]]
   
-  inline def getOperations(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOperations")().asInstanceOf[js.Any]
-  inline def getOperations(measurements: js.Array[Measurements]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOperations")(measurements.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getOperations(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOperations")().asInstanceOf[Any]
+  inline def getOperations(measurements: js.Array[Measurements]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOperations")(measurements.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getWasted(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getWasted")().asInstanceOf[js.Any]
-  inline def getWasted(measurements: js.Array[Measurements]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getWasted")(measurements.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getWasted(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getWasted")().asInstanceOf[Any]
+  inline def getWasted(measurements: js.Array[Measurements]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getWasted")(measurements.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def printDOM(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printDOM")().asInstanceOf[Unit]
   inline def printDOM(measurements: js.Array[Measurements]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printDOM")(measurements.asInstanceOf[js.Any]).asInstanceOf[Unit]

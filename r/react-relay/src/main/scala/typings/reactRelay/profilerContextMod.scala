@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object profilerContextMod {
   
-  @JSImport("react-relay/lib/relay-experimental/ProfilerContext", "ProfilerContext")
+  @JSImport("react-relay/relay-hooks/ProfilerContext", "ProfilerContext")
   @js.native
   val ProfilerContext: Context[ProfilerContextType] = js.native
   
@@ -17,14 +17,14 @@ object profilerContextMod {
   }
   object ProfilerContextType {
     
-    inline def apply(wrapPrepareQueryResource: js.Function0[js.Any] => js.Any): ProfilerContextType = {
+    inline def apply(wrapPrepareQueryResource: js.Function0[Any] => Any): ProfilerContextType = {
       val __obj = js.Dynamic.literal(wrapPrepareQueryResource = js.Any.fromFunction1(wrapPrepareQueryResource))
       __obj.asInstanceOf[ProfilerContextType]
     }
     
     extension [Self <: ProfilerContextType](x: Self) {
       
-      inline def setWrapPrepareQueryResource(value: js.Function0[js.Any] => js.Any): Self = StObject.set(x, "wrapPrepareQueryResource", js.Any.fromFunction1(value))
+      inline def setWrapPrepareQueryResource(value: js.Function0[Any] => Any): Self = StObject.set(x, "wrapPrepareQueryResource", js.Any.fromFunction1(value))
     }
   }
 }

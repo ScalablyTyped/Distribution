@@ -31,6 +31,6 @@ object SyncOptions {
     
     inline def setImporterUndefined: Self = StObject.set(x, "importer", js.undefined)
     
-    inline def setImporterVarargs(value: SyncImporter*): Self = StObject.set(x, "importer", js.Array(value :_*))
+    inline def setImporterVarargs(value: SyncImporter*): Self = StObject.set(x, "importer", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ Cron string converter
 | ------------------ | :-------------: |
 | Full name          | cron-converter |
 | Keywords           | cron, cronjob, crontab, schedule, parser |
-| # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 486924 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 75340.66666666667 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://github.com/roccivic/cron-converter#readme)

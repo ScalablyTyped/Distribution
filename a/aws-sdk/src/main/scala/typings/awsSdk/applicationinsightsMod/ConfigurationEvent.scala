@@ -29,7 +29,7 @@ trait ConfigurationEvent extends StObject {
   /**
     *  The timestamp of the event. 
     */
-  var EventTime: js.UndefOr[ConfigurationEventTime] = js.undefined
+  var EventTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The resource monitored by Application Insights. 
@@ -61,7 +61,7 @@ object ConfigurationEvent {
     
     inline def setEventStatusUndefined: Self = StObject.set(x, "EventStatus", js.undefined)
     
-    inline def setEventTime(value: ConfigurationEventTime): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
+    inline def setEventTime(value: js.Date): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
     
     inline def setEventTimeUndefined: Self = StObject.set(x, "EventTime", js.undefined)
     

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MatterJS.VerticesFactory")
 @js.native
-class VerticesFactory ()
+open class VerticesFactory ()
   extends StObject
      with typings.phaser.MatterJS.VerticesFactory

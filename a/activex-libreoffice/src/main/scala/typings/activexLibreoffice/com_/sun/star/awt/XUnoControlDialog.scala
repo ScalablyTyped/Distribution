@@ -55,7 +55,7 @@ object XUnoControlDialog {
     getView: () => XView,
     isDesignMode: () => Boolean,
     isTransparent: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeControl: XControl => Unit,
     removeEventListener: XEventListener => Unit,

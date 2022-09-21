@@ -8,8 +8,7 @@ import typings.browserfs.fileSystemMod.BFSOneArgCallback
 import typings.browserfs.fileSystemMod.FileSystem
 import typings.browserfs.fileSystemMod.FileSystemOptions
 import typings.browserfs.fileSystemMod.SynchronousFileSystem
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object isoFSMod {
   
   @JSImport("browserfs/dist/node/backend/IsoFS", JSImport.Default)
   @js.native
-  class default protected () extends IsoFS {
+  open class default protected () extends IsoFS {
     /**
       * **Deprecated. Please use IsoFS.Create() method instead.**
       *
@@ -59,17 +58,17 @@ object isoFSMod {
     extends SynchronousFileSystem
        with FileSystem {
     
-    /* private */ var _data: js.Any = js.native
+    /* private */ var _data: Any = js.native
     
-    /* private */ def _getDirectoryRecord(path: js.Any): js.Any = js.native
+    /* private */ def _getDirectoryRecord(path: Any): Any = js.native
     
-    /* private */ def _getStats(p: js.Any, record: js.Any): js.Any = js.native
+    /* private */ def _getStats(p: Any, record: Any): Any = js.native
     
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _name: Any = js.native
     
-    /* private */ var _pvd: js.Any = js.native
+    /* private */ var _pvd: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
     /* InferMemberOverrides */
     override def chmod(p: String, isLchmod: Boolean, mode: Double, cb: BFSOneArgCallback): Unit = js.native
@@ -84,7 +83,7 @@ object isoFSMod {
     override def chownSync(p: String, isLchown: Boolean, uid: Double, gid: Double): Unit = js.native
     
     /* InferMemberOverrides */
-    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
+    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, Any]): Unit = js.native
     
     /* InferMemberOverrides */
     override def exists(p: String, cb: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
@@ -116,9 +115,9 @@ object isoFSMod {
     override def readFile(fname: String, encoding: Null, flag: FileFlag, cb: BFSCallback[String | Buffer]): Unit = js.native
     
     /* InferMemberOverrides */
-    override def readFileSync(fname: String, encoding: String, flag: FileFlag): js.Any = js.native
+    override def readFileSync(fname: String, encoding: String, flag: FileFlag): Any = js.native
     /* InferMemberOverrides */
-    override def readFileSync(fname: String, encoding: Null, flag: FileFlag): js.Any = js.native
+    override def readFileSync(fname: String, encoding: Null, flag: FileFlag): Any = js.native
     
     /* InferMemberOverrides */
     override def readdir(p: String, cb: BFSCallback[js.Array[String]]): Unit = js.native
@@ -185,15 +184,15 @@ object isoFSMod {
     override def unlinkSync(p: String): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimes(p: String, atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+    override def utimes(p: String, atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimesSync(p: String, atime: Date, mtime: Date): Unit = js.native
+    override def utimesSync(p: String, atime: js.Date, mtime: js.Date): Unit = js.native
     
     /* InferMemberOverrides */
-    override def writeFile(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    override def writeFile(fname: String, data: Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
     /* InferMemberOverrides */
-    override def writeFile(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    override def writeFile(fname: String, data: Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
   }
   
   trait IsoFSOptions extends StObject {

@@ -10,15 +10,15 @@ object anon {
   @js.native
   trait Addcustomrule extends StObject {
     
-    def S(selector: js.Any, context: js.Any): JQuery = js.native
+    def S(selector: Any, context: Any): JQuery = js.native
     
     def add_custom_rule(rule: String, media: String): Unit = js.native
     
     def data_options(el: JQuery): js.Object = js.native
     
-    def debounce(func: js.Function1[/* repeated */ js.Any, js.Any], delay: Double, immediate: Boolean): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+    def debounce(func: js.Function1[/* repeated */ Any, Any], delay: Double, immediate: Boolean): js.Function1[/* repeated */ Any, Any] = js.native
     
-    def image_loaded(images: JQuery, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+    def image_loaded(images: JQuery, callback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
     
     def is_large_only(): Boolean = js.native
     
@@ -45,7 +45,7 @@ object anon {
     
     def register_media(media: String, media_class: String): Unit = js.native
     
-    def throttle(func: js.Function1[/* repeated */ js.Any, js.Any], delay: Double): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+    def throttle(func: js.Function1[/* repeated */ Any, Any], delay: Double): js.Function1[/* repeated */ Any, Any] = js.native
   }
   
   trait Bottom extends StObject {
@@ -71,25 +71,25 @@ object anon {
       
       inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      inline def setBottomVarargs(value: String*): Self = StObject.set(x, "bottom", js.Array(value :_*))
+      inline def setBottomVarargs(value: String*): Self = StObject.set(x, "bottom", js.Array(value*))
       
       inline def setLeft(value: js.Array[String]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
       inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      inline def setLeftVarargs(value: String*): Self = StObject.set(x, "left", js.Array(value :_*))
+      inline def setLeftVarargs(value: String*): Self = StObject.set(x, "left", js.Array(value*))
       
       inline def setRight(value: js.Array[String]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
       inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      inline def setRightVarargs(value: String*): Self = StObject.set(x, "right", js.Array(value :_*))
+      inline def setRightVarargs(value: String*): Self = StObject.set(x, "right", js.Array(value*))
       
       inline def setTop(value: js.Array[String]): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
       inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      inline def setTopVarargs(value: String*): Self = StObject.set(x, "top", js.Array(value :_*))
+      inline def setTopVarargs(value: String*): Self = StObject.set(x, "top", js.Array(value*))
     }
   }
   

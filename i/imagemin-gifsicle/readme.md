@@ -10,10 +10,10 @@ Imagemin plugin for Gifsicle
 | ------------------ | :-------------: |
 | Full name          | imagemin-gifsicle |
 | Keywords           | compress, gif, gifsicle, gulpplugin, image, imageminplugin, img, minify, optimize |
-| # releases         | 4 |
-| # dependents       | 215 |
-| # downloads        | 24685963 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2572272.6666666665 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://github.com/imagemin/imagemin-gifsicle#readme)

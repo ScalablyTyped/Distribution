@@ -9,7 +9,7 @@ trait KinesisStreamSourceDescription extends StObject {
   /**
     * Kinesis Data Firehose starts retrieving records from the Kinesis data stream starting with this timestamp.
     */
-  var DeliveryStartTimestamp: js.UndefOr[typings.awsSdk.firehoseMod.DeliveryStartTimestamp] = js.undefined
+  var DeliveryStartTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the source Kinesis data stream. For more information, see Amazon Kinesis Data Streams ARN Format.
@@ -30,7 +30,7 @@ object KinesisStreamSourceDescription {
   
   extension [Self <: KinesisStreamSourceDescription](x: Self) {
     
-    inline def setDeliveryStartTimestamp(value: DeliveryStartTimestamp): Self = StObject.set(x, "DeliveryStartTimestamp", value.asInstanceOf[js.Any])
+    inline def setDeliveryStartTimestamp(value: js.Date): Self = StObject.set(x, "DeliveryStartTimestamp", value.asInstanceOf[js.Any])
     
     inline def setDeliveryStartTimestampUndefined: Self = StObject.set(x, "DeliveryStartTimestamp", js.undefined)
     

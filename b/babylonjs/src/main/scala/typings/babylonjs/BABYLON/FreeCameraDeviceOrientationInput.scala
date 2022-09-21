@@ -9,28 +9,28 @@ trait FreeCameraDeviceOrientationInput
   extends StObject
      with ICameraInput[FreeCamera] {
   
-  /* private */ var _alpha: js.Any = js.native
+  /* private */ var _alpha: Any = js.native
   
-  /* private */ var _beta: js.Any = js.native
+  /* private */ var _beta: Any = js.native
   
-  /* private */ var _camera: js.Any = js.native
+  /* private */ var _camera: Any = js.native
   
-  /* private */ var _constantTranform: js.Any = js.native
+  /* private */ var _constantTranform: Any = js.native
   
-  /* private */ var _deviceOrientation: js.Any = js.native
+  /* private */ var _deviceOrientation: Any = js.native
   
-  /* private */ var _gamma: js.Any = js.native
+  /* private */ var _gamma: Any = js.native
   
   /**
     * @hidden
     */
   var _onDeviceOrientationChangedObservable: Observable[Unit] = js.native
   
-  /* private */ var _orientationChanged: js.Any = js.native
+  /* private */ var _orientationChanged: Any = js.native
   
-  /* private */ var _screenOrientationAngle: js.Any = js.native
+  /* private */ var _screenOrientationAngle: Any = js.native
   
-  /* private */ var _screenQuaternion: js.Any = js.native
+  /* private */ var _screenQuaternion: Any = js.native
   
   /**
     * Define the camera controlled by the input.

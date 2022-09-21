@@ -30,6 +30,27 @@ trait TransferCounters extends StObject {
   /** Bytes in the data source that are not transferred because they already exist in the data sink. */
   var bytesFromSourceSkippedBySync: js.UndefOr[String] = js.undefined
   
+  /**
+    * For transfers involving PosixFilesystem only. Number of listing failures for each directory found at the source. Potential failures when listing a directory include permission
+    * failure or block failure. If listing a directory fails, no files in the directory are transferred.
+    */
+  var directoriesFailedToListFromSource: js.UndefOr[String] = js.undefined
+  
+  /**
+    * For transfers involving PosixFilesystem only. Number of directories found while listing. For example, if the root directory of the transfer is `base/` and there are two other
+    * directories, `a/` and `b/` under this directory, the count after listing `base/`, `base/a/` and `base/b/` is 3.
+    */
+  var directoriesFoundFromSource: js.UndefOr[String] = js.undefined
+  
+  /** For transfers involving PosixFilesystem only. Number of successful listings for each directory found at the source. */
+  var directoriesSuccessfullyListedFromSource: js.UndefOr[String] = js.undefined
+  
+  /** Number of successfully cleaned up intermediate objects. */
+  var intermediateObjectsCleanedUp: js.UndefOr[String] = js.undefined
+  
+  /** Number of intermediate objects failed cleaned up. */
+  var intermediateObjectsFailedCleanedUp: js.UndefOr[String] = js.undefined
+  
   /** Objects that are copied to the data sink. */
   var objectsCopiedToSink: js.UndefOr[String] = js.undefined
   
@@ -94,6 +115,26 @@ object TransferCounters {
     inline def setBytesFromSourceSkippedBySync(value: String): Self = StObject.set(x, "bytesFromSourceSkippedBySync", value.asInstanceOf[js.Any])
     
     inline def setBytesFromSourceSkippedBySyncUndefined: Self = StObject.set(x, "bytesFromSourceSkippedBySync", js.undefined)
+    
+    inline def setDirectoriesFailedToListFromSource(value: String): Self = StObject.set(x, "directoriesFailedToListFromSource", value.asInstanceOf[js.Any])
+    
+    inline def setDirectoriesFailedToListFromSourceUndefined: Self = StObject.set(x, "directoriesFailedToListFromSource", js.undefined)
+    
+    inline def setDirectoriesFoundFromSource(value: String): Self = StObject.set(x, "directoriesFoundFromSource", value.asInstanceOf[js.Any])
+    
+    inline def setDirectoriesFoundFromSourceUndefined: Self = StObject.set(x, "directoriesFoundFromSource", js.undefined)
+    
+    inline def setDirectoriesSuccessfullyListedFromSource(value: String): Self = StObject.set(x, "directoriesSuccessfullyListedFromSource", value.asInstanceOf[js.Any])
+    
+    inline def setDirectoriesSuccessfullyListedFromSourceUndefined: Self = StObject.set(x, "directoriesSuccessfullyListedFromSource", js.undefined)
+    
+    inline def setIntermediateObjectsCleanedUp(value: String): Self = StObject.set(x, "intermediateObjectsCleanedUp", value.asInstanceOf[js.Any])
+    
+    inline def setIntermediateObjectsCleanedUpUndefined: Self = StObject.set(x, "intermediateObjectsCleanedUp", js.undefined)
+    
+    inline def setIntermediateObjectsFailedCleanedUp(value: String): Self = StObject.set(x, "intermediateObjectsFailedCleanedUp", value.asInstanceOf[js.Any])
+    
+    inline def setIntermediateObjectsFailedCleanedUpUndefined: Self = StObject.set(x, "intermediateObjectsFailedCleanedUp", js.undefined)
     
     inline def setObjectsCopiedToSink(value: String): Self = StObject.set(x, "objectsCopiedToSink", value.asInstanceOf[js.Any])
     

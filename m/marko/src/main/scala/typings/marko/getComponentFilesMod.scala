@@ -43,7 +43,7 @@ object getComponentFilesMod {
       
       inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value*))
       
       inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
       

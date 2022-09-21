@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ButtonProps extends StObject {
   
-  var buttonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var buttonProps: js.UndefOr[StringDictionary[Any]] = js.undefined
   
-  var inputProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var inputProps: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var label: js.UndefOr[String] = js.undefined
   
-  var labelProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var labelProps: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var language: js.UndefOr[String] = js.undefined
   
@@ -28,17 +28,17 @@ object ButtonProps {
   
   extension [Self <: ButtonProps](x: Self) {
     
-    inline def setButtonProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
+    inline def setButtonProps(value: StringDictionary[Any]): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
     
     inline def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
     
-    inline def setInputProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+    inline def setInputProps(value: StringDictionary[Any]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
     
     inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setLabelProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
+    inline def setLabelProps(value: StringDictionary[Any]): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
     
     inline def setLabelPropsUndefined: Self = StObject.set(x, "labelProps", js.undefined)
     

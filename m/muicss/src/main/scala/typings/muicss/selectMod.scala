@@ -10,8 +10,8 @@ object selectMod {
   
   @JSImport("muicss/lib/react/select", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SelectProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SelectProps, js.Object, Any]
   
-  type Select = Component[SelectProps, js.Object, js.Any]
+  type Select = Component[SelectProps, js.Object, Any]
 }

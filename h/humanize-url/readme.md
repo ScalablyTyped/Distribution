@@ -1,7 +1,7 @@
 
 # Scala.js typings for humanize-url
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Humanize a URL: `https://sindresorhus.com` → `sindresorhus.com`
@@ -9,11 +9,11 @@ Humanize a URL: `https://sindresorhus.com` → `sindresorhus.com`
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | humanize-url |
-| Keywords           | url, uri, address, string, normalize, normalise, normalization, normalisation, querystring, unicode, humanize, humanization, simple, simplify, human, pretty, prettify |
-| # releases         | 2 |
-| # dependents       | 124 |
-| # downloads        | 10027723 |
-| # stars            | 4 |
+| Keywords           | url, address, string, normalize, normalise, normalization, normalisation, querystring, unicode, humanize, humanization, simple, simplify, human, pretty, prettify |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 567635.6666666666 |
+| # stars            | 233.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/humanize-url#readme)

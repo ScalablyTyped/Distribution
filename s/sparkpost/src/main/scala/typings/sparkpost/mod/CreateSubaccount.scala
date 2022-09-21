@@ -36,7 +36,7 @@ object CreateSubaccount {
     
     inline def setKey_grants(value: js.Array[String]): Self = StObject.set(x, "key_grants", value.asInstanceOf[js.Any])
     
-    inline def setKey_grantsVarargs(value: String*): Self = StObject.set(x, "key_grants", js.Array(value :_*))
+    inline def setKey_grantsVarargs(value: String*): Self = StObject.set(x, "key_grants", js.Array(value*))
     
     inline def setKey_label(value: String): Self = StObject.set(x, "key_label", value.asInstanceOf[js.Any])
     
@@ -44,7 +44,7 @@ object CreateSubaccount {
     
     inline def setKey_valid_ipsUndefined: Self = StObject.set(x, "key_valid_ips", js.undefined)
     
-    inline def setKey_valid_ipsVarargs(value: String*): Self = StObject.set(x, "key_valid_ips", js.Array(value :_*))
+    inline def setKey_valid_ipsVarargs(value: String*): Self = StObject.set(x, "key_valid_ips", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

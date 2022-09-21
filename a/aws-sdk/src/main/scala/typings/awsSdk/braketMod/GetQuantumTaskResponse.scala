@@ -9,7 +9,7 @@ trait GetQuantumTaskResponse extends StObject {
   /**
     * The time at which the task was created.
     */
-  var createdAt: SyntheticTimestampDateTime
+  var createdAt: js.Date
   
   /**
     * The ARN of the device the task was run on.
@@ -24,12 +24,17 @@ trait GetQuantumTaskResponse extends StObject {
   /**
     * The time at which the task ended.
     */
-  var endedAt: js.UndefOr[SyntheticTimestampDateTime] = js.undefined
+  var endedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The reason that a task failed.
     */
   var failureReason: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The ARN of the Amazon Braket job associated with the quantum task.
+    */
+  var jobArn: js.UndefOr[JobArn] = js.undefined
   
   /**
     * The S3 bucket where task results are stored.
@@ -64,7 +69,7 @@ trait GetQuantumTaskResponse extends StObject {
 object GetQuantumTaskResponse {
   
   inline def apply(
-    createdAt: SyntheticTimestampDateTime,
+    createdAt: js.Date,
     deviceArn: DeviceArn,
     deviceParameters: JsonValue,
     outputS3Bucket: String,
@@ -79,19 +84,23 @@ object GetQuantumTaskResponse {
   
   extension [Self <: GetQuantumTaskResponse](x: Self) {
     
-    inline def setCreatedAt(value: SyntheticTimestampDateTime): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setDeviceArn(value: DeviceArn): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
     
     inline def setDeviceParameters(value: JsonValue): Self = StObject.set(x, "deviceParameters", value.asInstanceOf[js.Any])
     
-    inline def setEndedAt(value: SyntheticTimestampDateTime): Self = StObject.set(x, "endedAt", value.asInstanceOf[js.Any])
+    inline def setEndedAt(value: js.Date): Self = StObject.set(x, "endedAt", value.asInstanceOf[js.Any])
     
     inline def setEndedAtUndefined: Self = StObject.set(x, "endedAt", js.undefined)
     
     inline def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
+    
+    inline def setJobArn(value: JobArn): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
+    
+    inline def setJobArnUndefined: Self = StObject.set(x, "jobArn", js.undefined)
     
     inline def setOutputS3Bucket(value: String): Self = StObject.set(x, "outputS3Bucket", value.asInstanceOf[js.Any])
     

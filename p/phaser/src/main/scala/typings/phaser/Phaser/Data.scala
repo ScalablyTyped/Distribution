@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.phaser.DataEachCallback
 import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.Scenes.Systems
-import typings.phaser.integer
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +21,7 @@ object Data {
     /**
       * Return the total number of entries in this Data Manager.
       */
-    var count: integer = js.native
+    var count: Double = js.native
     
     /**
       * Destroy this data manager.
@@ -36,8 +34,8 @@ object Data {
       * @param context Value to use as `this` when executing callback.
       * @param args Additional arguments that will be passed to the callback, after the game object, key, and data.
       */
-    def each(callback: DataEachCallback, context: js.Any, args: js.Any*): this.type = js.native
-    def each(callback: DataEachCallback, context: Unit, args: js.Any*): this.type = js.native
+    def each(callback: DataEachCallback, context: Any, args: Any*): this.type = js.native
+    def each(callback: DataEachCallback, context: Unit, args: Any*): this.type = js.native
     
     /**
       * The DataManager's event emitter.
@@ -74,13 +72,13 @@ object Data {
       * This approach is useful for destructuring arrays in ES6.
       * @param key The key of the value to retrieve, or an array of keys.
       */
-    def get(key: String): js.Any = js.native
-    def get(key: js.Array[String]): js.Any = js.native
+    def get(key: String): Any = js.native
+    def get(key: js.Array[String]): Any = js.native
     
     /**
       * Retrieves all data values in a new object.
       */
-    def getAll(): StringDictionary[js.Any] = js.native
+    def getAll(): StringDictionary[Any] = js.native
     
     /**
       * Determines whether the given key is set in this Data Manager.
@@ -99,14 +97,14 @@ object Data {
       * @param data The value to increase for the given key.
       */
     def inc(key: String): DataManager = js.native
-    def inc(key: String, data: js.Any): DataManager = js.native
+    def inc(key: String, data: Any): DataManager = js.native
     def inc(key: js.Object): DataManager = js.native
-    def inc(key: js.Object, data: js.Any): DataManager = js.native
+    def inc(key: js.Object, data: Any): DataManager = js.native
     
     /**
       * The data list.
       */
-    var list: StringDictionary[js.Any] = js.native
+    var list: StringDictionary[Any] = js.native
     
     /**
       * Merge the given object of key value pairs into this DataManager.
@@ -116,25 +114,25 @@ object Data {
       * @param data The data to merge.
       * @param overwrite Whether to overwrite existing data. Defaults to true. Default true.
       */
-    def merge(data: StringDictionary[js.Any]): this.type = js.native
-    def merge(data: StringDictionary[js.Any], overwrite: Boolean): this.type = js.native
+    def merge(data: StringDictionary[Any]): this.type = js.native
+    def merge(data: StringDictionary[Any], overwrite: Boolean): this.type = js.native
     
     /**
       * The object that this DataManager belongs to.
       */
-    var parent: js.Any = js.native
+    var parent: Any = js.native
     
     /**
       * Retrieves the data associated with the given 'key', deletes it from this Data Manager, then returns it.
       * @param key The key of the value to retrieve and delete.
       */
-    def pop(key: String): js.Any = js.native
+    def pop(key: String): Any = js.native
     
     /**
       * Queries the DataManager for the values of keys matching the given regular expression.
       * @param search A regular expression object. If a non-RegExp object obj is passed, it is implicitly converted to a RegExp by using new RegExp(obj).
       */
-    def query(search: RegExp): StringDictionary[js.Any] = js.native
+    def query(search: js.RegExp): StringDictionary[Any] = js.native
     
     /**
       * Remove the value for the given key.
@@ -193,8 +191,8 @@ object Data {
       * @param key The key to set the value for. Or an object or key value pairs. If an object the `data` argument is ignored.
       * @param data The value to set for the given key. If an object is provided as the key this argument is ignored.
       */
-    def set(key: String, data: js.Any): this.type = js.native
-    def set(key: js.Object, data: js.Any): this.type = js.native
+    def set(key: String, data: Any): this.type = js.native
+    def set(key: js.Object, data: Any): this.type = js.native
     
     /**
       * Freeze or unfreeze this Data Manager. A frozen Data Manager will block all attempts
@@ -232,7 +230,7 @@ object Data {
       * Do not modify this object directly. Adding properties directly to this object will not
       * emit any events. Always use `DataManager.set` to create new items the first time around.
       */
-    var values: StringDictionary[js.Any] = js.native
+    var values: StringDictionary[Any] = js.native
   }
   
   /**

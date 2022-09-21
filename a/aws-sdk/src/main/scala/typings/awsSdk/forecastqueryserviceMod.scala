@@ -17,7 +17,7 @@ object forecastqueryserviceMod {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
-  class ^ () extends ForecastQueryService {
+  open class ^ () extends ForecastQueryService {
     def this(options: ClientConfiguration) = this()
   }
   
@@ -96,7 +96,7 @@ object forecastqueryserviceMod {
   trait Forecast extends StObject {
     
     /**
-      * The forecast. The string of the string-to-array map is one of the following values:   p10   p50   p90  
+      * The forecast. The string of the string-to-array map is one of the following values:   p10   p50   p90   The default setting is ["0.1", "0.5", "0.9"]. Use the optional ForecastTypes parameter of the CreateForecast operation to change the values. The values will vary depending on how this is set, with a minimum of 1 and a maximum of 5. 
       */
     var Predictions: js.UndefOr[typings.awsSdk.forecastqueryserviceMod.Predictions] = js.undefined
   }
@@ -134,7 +134,23 @@ object forecastqueryserviceMod {
       params: QueryForecastRequest,
       callback: js.Function2[/* err */ AWSError, /* data */ QueryForecastResponse, Unit]
     ): Request[QueryForecastResponse, AWSError] = js.native
+    
+    /**
+      * Retrieves a what-if forecast.
+      */
+    def queryWhatIfForecast(): Request[QueryWhatIfForecastResponse, AWSError] = js.native
+    def queryWhatIfForecast(callback: js.Function2[/* err */ AWSError, /* data */ QueryWhatIfForecastResponse, Unit]): Request[QueryWhatIfForecastResponse, AWSError] = js.native
+    /**
+      * Retrieves a what-if forecast.
+      */
+    def queryWhatIfForecast(params: QueryWhatIfForecastRequest): Request[QueryWhatIfForecastResponse, AWSError] = js.native
+    def queryWhatIfForecast(
+      params: QueryWhatIfForecastRequest,
+      callback: js.Function2[/* err */ AWSError, /* data */ QueryWhatIfForecastResponse, Unit]
+    ): Request[QueryWhatIfForecastResponse, AWSError] = js.native
   }
+  
+  type LongArn = String
   
   type NextToken = String
   
@@ -209,6 +225,79 @@ object forecastqueryserviceMod {
     }
     
     extension [Self <: QueryForecastResponse](x: Self) {
+      
+      inline def setForecast(value: Forecast): Self = StObject.set(x, "Forecast", value.asInstanceOf[js.Any])
+      
+      inline def setForecastUndefined: Self = StObject.set(x, "Forecast", js.undefined)
+    }
+  }
+  
+  trait QueryWhatIfForecastRequest extends StObject {
+    
+    /**
+      * The end date for the what-if forecast. Specify the date using this format: yyyy-MM-dd'T'HH:mm:ss (ISO 8601 format). For example, 2015-01-01T20:00:00. 
+      */
+    var EndDate: js.UndefOr[DateTime] = js.undefined
+    
+    /**
+      * The filtering criteria to apply when retrieving the forecast. For example, to get the forecast for client_21 in the electricity usage dataset, specify the following:  {"item_id" : "client_21"}  To get the full what-if forecast, use the CreateForecastExportJob operation.
+      */
+    var Filters: typings.awsSdk.forecastqueryserviceMod.Filters
+    
+    /**
+      * If the result of the previous request was truncated, the response includes a NextToken. To retrieve the next set of results, use the token in the next request. Tokens expire after 24 hours.
+      */
+    var NextToken: js.UndefOr[typings.awsSdk.forecastqueryserviceMod.NextToken] = js.undefined
+    
+    /**
+      * The start date for the what-if forecast. Specify the date using this format: yyyy-MM-dd'T'HH:mm:ss (ISO 8601 format). For example, 2015-01-01T08:00:00.
+      */
+    var StartDate: js.UndefOr[DateTime] = js.undefined
+    
+    /**
+      * The Amazon Resource Name (ARN) of the what-if forecast to query.
+      */
+    var WhatIfForecastArn: LongArn
+  }
+  object QueryWhatIfForecastRequest {
+    
+    inline def apply(Filters: Filters, WhatIfForecastArn: LongArn): QueryWhatIfForecastRequest = {
+      val __obj = js.Dynamic.literal(Filters = Filters.asInstanceOf[js.Any], WhatIfForecastArn = WhatIfForecastArn.asInstanceOf[js.Any])
+      __obj.asInstanceOf[QueryWhatIfForecastRequest]
+    }
+    
+    extension [Self <: QueryWhatIfForecastRequest](x: Self) {
+      
+      inline def setEndDate(value: DateTime): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
+      
+      inline def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
+      
+      inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+      
+      inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      
+      inline def setStartDate(value: DateTime): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+      
+      inline def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
+      
+      inline def setWhatIfForecastArn(value: LongArn): Self = StObject.set(x, "WhatIfForecastArn", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait QueryWhatIfForecastResponse extends StObject {
+    
+    var Forecast: js.UndefOr[typings.awsSdk.forecastqueryserviceMod.Forecast] = js.undefined
+  }
+  object QueryWhatIfForecastResponse {
+    
+    inline def apply(): QueryWhatIfForecastResponse = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QueryWhatIfForecastResponse]
+    }
+    
+    extension [Self <: QueryWhatIfForecastResponse](x: Self) {
       
       inline def setForecast(value: Forecast): Self = StObject.set(x, "Forecast", value.asInstanceOf[js.Any])
       

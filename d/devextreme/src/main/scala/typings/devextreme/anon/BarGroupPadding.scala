@@ -1,23 +1,7 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.Bright
-import typings.devextreme.devextremeStrings.Carmine
-import typings.devextreme.devextremeStrings.Material
-import typings.devextreme.devextremeStrings.Ocean
-import typings.devextreme.devextremeStrings.Office
-import typings.devextreme.devextremeStrings.Pastel
-import typings.devextreme.devextremeStrings.Soft
-import typings.devextreme.devextremeStrings.Vintage
-import typings.devextreme.devextremeStrings.Violet
-import typings.devextreme.devextremeStrings.`Dark Moon`
-import typings.devextreme.devextremeStrings.`Dark Violet`
-import typings.devextreme.devextremeStrings.`Green Mist`
-import typings.devextreme.devextremeStrings.`Harmony Light`
-import typings.devextreme.devextremeStrings.`Soft Blue`
-import typings.devextreme.devextremeStrings.`Soft Pastel`
-import typings.devextreme.devextremeStrings.alternate
-import typings.devextreme.devextremeStrings.blend
-import typings.devextreme.devextremeStrings.extrapolate
+import typings.devextreme.mod.DevExpress.common.charts.Palette
+import typings.devextreme.mod.DevExpress.common.charts.PaletteExtensionMode
 import typings.devextreme.mod.DevExpress.viz.ChartSeries
 import typings.devextreme.mod.DevExpress.viz.dxChartCommonSeriesSettings
 import org.scalablytyped.runtime.StObject
@@ -26,34 +10,74 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BarGroupPadding extends StObject {
   
+  /**
+    * Controls the padding and consequently the width of a group of bars with the same argument using relative units. Ignored if the barGroupWidth property is set.
+    */
   var barGroupPadding: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies a fixed width for groups of bars with the same argument, measured in pixels. Takes precedence over the barGroupPadding property.
+    */
   var barGroupWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies an indent from the background&apos;s bottom to the lowest chart point. Accepts values from 0 to 1.
+    */
   var bottomIndent: js.UndefOr[Double] = js.undefined
   
+  /**
+    * An object defining the common configuration properties for the chart&apos;s series.
+    */
   var commonSeriesSettings: js.UndefOr[dxChartCommonSeriesSettings] = js.undefined
   
+  /**
+    * An object providing properties for managing data from a data source.
+    */
   var dataPrepareSettings: js.UndefOr[ConvertToAxisDataType] = js.undefined
   
+  /**
+    * Specifies a coefficient that determines the diameter of the largest bubble.
+    */
   var maxBubbleSize: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the diameter of the smallest bubble measured in pixels.
+    */
   var minBubbleSize: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Forces the UI component to treat negative values as zeroes. Applies to stacked-like series only.
+    */
   var negativesAsZeroes: js.UndefOr[Boolean] = js.undefined
   
-  var palette: js.UndefOr[
-    js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-  ] = js.undefined
+  /**
+    * Sets the palette to be used to colorize series in the chart.
+    */
+  var palette: js.UndefOr[js.Array[String] | Palette] = js.undefined
   
-  var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
+  /**
+    * Specifies what to do with colors in the palette when their number is less than the number of series in the chart.
+    */
+  var paletteExtensionMode: js.UndefOr[PaletteExtensionMode] = js.undefined
   
+  /**
+    * An object defining the chart&apos;s series.
+    */
   var series: js.UndefOr[ChartSeries | js.Array[ChartSeries]] = js.undefined
   
+  /**
+    * Defines properties for the series template.
+    */
   var seriesTemplate: js.UndefOr[CustomizeSeries] = js.undefined
   
+  /**
+    * Specifies an indent from the background&apos;s top to the topmost chart point. Accepts values from 0 to 1.
+    */
   var topIndent: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Configures the chart value axis.
+    */
   var valueAxis: js.UndefOr[Inverted] = js.undefined
 }
 object BarGroupPadding {
@@ -97,17 +121,15 @@ object BarGroupPadding {
     
     inline def setNegativesAsZeroesUndefined: Self = StObject.set(x, "negativesAsZeroes", js.undefined)
     
-    inline def setPalette(
-      value: js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-    ): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: js.Array[String] | Palette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
-    inline def setPaletteExtensionMode(value: alternate | blend | extrapolate): Self = StObject.set(x, "paletteExtensionMode", value.asInstanceOf[js.Any])
+    inline def setPaletteExtensionMode(value: PaletteExtensionMode): Self = StObject.set(x, "paletteExtensionMode", value.asInstanceOf[js.Any])
     
     inline def setPaletteExtensionModeUndefined: Self = StObject.set(x, "paletteExtensionMode", js.undefined)
     
     inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
-    inline def setPaletteVarargs(value: String*): Self = StObject.set(x, "palette", js.Array(value :_*))
+    inline def setPaletteVarargs(value: String*): Self = StObject.set(x, "palette", js.Array(value*))
     
     inline def setSeries(value: ChartSeries | js.Array[ChartSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
@@ -117,7 +139,7 @@ object BarGroupPadding {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: ChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: ChartSeries*): Self = StObject.set(x, "series", js.Array(value*))
     
     inline def setTopIndent(value: Double): Self = StObject.set(x, "topIndent", value.asInstanceOf[js.Any])
     

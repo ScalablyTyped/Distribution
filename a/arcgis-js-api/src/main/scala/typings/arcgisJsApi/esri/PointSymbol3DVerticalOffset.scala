@@ -39,8 +39,8 @@ object PointSymbol3DVerticalOffset {
     propertyIsEnumerable: PropertyKey => Boolean,
     screenLength: Double,
     set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ js.Any, PointSymbol3DVerticalOffset]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], PointSymbol3DVerticalOffset]])
+      js.Function2[/* propertyName */ String, /* value */ Any, PointSymbol3DVerticalOffset]
+    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], PointSymbol3DVerticalOffset]])
   ): PointSymbol3DVerticalOffset = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), screenLength = screenLength.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointSymbol3DVerticalOffset]

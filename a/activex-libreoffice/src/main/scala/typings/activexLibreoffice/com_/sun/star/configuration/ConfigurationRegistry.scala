@@ -29,7 +29,7 @@ object ConfigurationRegistry {
     isValid: () => Boolean,
     mergeKey: (String, String) => Unit,
     open: (String, Boolean, Boolean) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeFlushListener: XFlushListener => Unit
   ): ConfigurationRegistry = {

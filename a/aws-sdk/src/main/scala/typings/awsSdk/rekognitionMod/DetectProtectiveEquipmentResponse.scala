@@ -34,7 +34,7 @@ object DetectProtectiveEquipmentResponse {
     
     inline def setPersonsUndefined: Self = StObject.set(x, "Persons", js.undefined)
     
-    inline def setPersonsVarargs(value: ProtectiveEquipmentPerson*): Self = StObject.set(x, "Persons", js.Array(value :_*))
+    inline def setPersonsVarargs(value: ProtectiveEquipmentPerson*): Self = StObject.set(x, "Persons", js.Array(value*))
     
     inline def setProtectiveEquipmentModelVersion(value: String): Self = StObject.set(x, "ProtectiveEquipmentModelVersion", value.asInstanceOf[js.Any])
     

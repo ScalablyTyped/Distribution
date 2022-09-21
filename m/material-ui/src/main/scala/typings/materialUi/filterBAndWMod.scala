@@ -10,10 +10,10 @@ object filterBAndWMod {
   
   @JSImport("material-ui/svg-icons/image/filter-b-and-w", JSImport.Default)
   @js.native
-  class default () extends ImageFilterBAndW
+  open class default () extends ImageFilterBAndW
   
   @JSImport("material-ui/svg-icons/image/filter-b-and-w", "ImageFilterBAndW")
   @js.native
-  class ImageFilterBAndW ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageFilterBAndW ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

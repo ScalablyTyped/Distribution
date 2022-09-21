@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.RelatedContent")
 @js.native
-class RelatedContent () extends StObject {
+open class RelatedContent () extends StObject {
   def this(args: AccessType) = this()
   
   var accessType: js.UndefOr[RelatedContentAccess] = js.native

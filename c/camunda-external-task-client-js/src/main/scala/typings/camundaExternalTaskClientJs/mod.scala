@@ -1,6 +1,8 @@
 package typings.camundaExternalTaskClientJs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.camundaExternalTaskClientJs.anon.Authorization
+import typings.camundaExternalTaskClientJs.anon.Password
 import typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonsuccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,13 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("camunda-external-task-client-js", "BasicAuthInterceptor")
+  @js.native
+  open class BasicAuthInterceptor protected () extends StObject {
+    def this(options: BasicAuthInterceptorConfig) = this()
+    
+    def getHeader(hasUsernamePassword: Password): Authorization = js.native
+    
+    def interceptor(config: Any): Any = js.native
+  }
+  
   @JSImport("camunda-external-task-client-js", "Client")
   @js.native
-  class Client protected () extends StObject {
+  open class Client protected () extends StObject {
     def this(config: ClientConfig) = this()
     
-    def on(name: ErrorEvent, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
-    def on(name: ErrorWithTaskEvent, callback: js.Function2[/* task */ Task, /* error */ js.Any, Unit]): Unit = js.native
+    def on(name: ErrorEvent, callback: js.Function1[/* error */ Any, Unit]): Unit = js.native
+    def on(name: ErrorWithTaskEvent, callback: js.Function2[/* task */ Task, /* error */ Any, Unit]): Unit = js.native
     def on(name: PollEvent, callback: js.Function0[Unit]): Unit = js.native
     def on(name: SuccessWithTaskEvent, callback: js.Function1[/* task */ Task, Unit]): Unit = js.native
     def on(name: SuccessWithTasksEvent, callback: js.Function1[/* tasks */ js.Array[Task], Unit]): Unit = js.native
@@ -33,7 +45,7 @@ object mod {
   
   @JSImport("camunda-external-task-client-js", "Variables")
   @js.native
-  class Variables () extends StObject {
+  open class Variables () extends StObject {
     
     def get(variableName: String): Value = js.native
     
@@ -56,6 +68,27 @@ object mod {
   @js.native
   val logger: Logger_ = js.native
   
+  trait BasicAuthInterceptorConfig extends StObject {
+    
+    var password: String
+    
+    var username: String
+  }
+  object BasicAuthInterceptorConfig {
+    
+    inline def apply(password: String, username: String): BasicAuthInterceptorConfig = {
+      val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BasicAuthInterceptorConfig]
+    }
+    
+    extension [Self <: BasicAuthInterceptorConfig](x: Self) {
+      
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait ClientConfig extends StObject {
     
     var asyncResponseTimeout: js.UndefOr[Double] = js.undefined
@@ -64,7 +97,9 @@ object mod {
     
     var baseUrl: String
     
-    var interceptors: js.UndefOr[Interceptor | js.Array[Interceptor]] = js.undefined
+    var interceptors: js.UndefOr[
+        Interceptor | (js.Array[BasicAuthInterceptor | Interceptor]) | BasicAuthInterceptor | Null
+      ] = js.undefined
     
     var interval: js.UndefOr[Double] = js.undefined
     
@@ -97,13 +132,15 @@ object mod {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      inline def setInterceptors(value: Interceptor | js.Array[Interceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
+      inline def setInterceptors(value: Interceptor | (js.Array[BasicAuthInterceptor | Interceptor]) | BasicAuthInterceptor): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
       
-      inline def setInterceptorsFunction1(value: /* config */ js.Any => js.Any): Self = StObject.set(x, "interceptors", js.Any.fromFunction1(value))
+      inline def setInterceptorsFunction1(value: /* config */ Any => Any): Self = StObject.set(x, "interceptors", js.Any.fromFunction1(value))
+      
+      inline def setInterceptorsNull: Self = StObject.set(x, "interceptors", null)
       
       inline def setInterceptorsUndefined: Self = StObject.set(x, "interceptors", js.undefined)
       
-      inline def setInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
+      inline def setInterceptorsVarargs(value: (BasicAuthInterceptor | Interceptor)*): Self = StObject.set(x, "interceptors", js.Array(value*))
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -127,7 +164,7 @@ object mod {
       
       inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
       
-      inline def setUseVarargs(value: Middleware*): Self = StObject.set(x, "use", js.Array(value :_*))
+      inline def setUseVarargs(value: Middleware*): Self = StObject.set(x, "use", js.Array(value*))
       
       inline def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
       
@@ -225,7 +262,7 @@ object mod {
     }
   }
   
-  type Interceptor = js.Function1[/* config */ js.Any, js.Any]
+  type Interceptor = js.Function1[/* config */ Any, Any]
   
   @js.native
   trait Logger_ extends Middleware {
@@ -267,7 +304,7 @@ object mod {
     
     var tenantIdIn: js.UndefOr[js.Array[String]] = js.undefined
     
-    var variables: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var variables: js.UndefOr[js.Array[Any]] = js.undefined
     
     var withoutTenantId: js.UndefOr[Boolean] = js.undefined
   }
@@ -312,13 +349,13 @@ object mod {
       
       inline def setTenantIdInUndefined: Self = StObject.set(x, "tenantIdIn", js.undefined)
       
-      inline def setTenantIdInVarargs(value: String*): Self = StObject.set(x, "tenantIdIn", js.Array(value :_*))
+      inline def setTenantIdInVarargs(value: String*): Self = StObject.set(x, "tenantIdIn", js.Array(value*))
       
-      inline def setVariables(value: js.Array[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: js.Array[Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
       inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
       
-      inline def setVariablesVarargs(value: js.Any*): Self = StObject.set(x, "variables", js.Array(value :_*))
+      inline def setVariablesVarargs(value: Any*): Self = StObject.set(x, "variables", js.Array(value*))
       
       inline def setWithoutTenantId(value: Boolean): Self = StObject.set(x, "withoutTenantId", value.asInstanceOf[js.Any])
       
@@ -541,7 +578,7 @@ object mod {
   
   type TypedValueMap = StringDictionary[TypedValue]
   
-  type Value = js.Any
+  type Value = Any
   
   type ValueMap = StringDictionary[Value]
 }

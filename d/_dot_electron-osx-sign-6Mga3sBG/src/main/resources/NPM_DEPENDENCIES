@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".electron-osx-sign-6Mga3sBG" : "0.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".electron-osx-sign-6Mga3sBG" : "0.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

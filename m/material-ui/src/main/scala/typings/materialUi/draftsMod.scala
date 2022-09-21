@@ -10,10 +10,10 @@ object draftsMod {
   
   @JSImport("material-ui/svg-icons/content/drafts", JSImport.Default)
   @js.native
-  class default () extends ContentDrafts
+  open class default () extends ContentDrafts
   
   @JSImport("material-ui/svg-icons/content/drafts", "ContentDrafts")
   @js.native
-  class ContentDrafts ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentDrafts ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

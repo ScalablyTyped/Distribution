@@ -104,22 +104,28 @@ object searchBoxTypesMod {
       * Deprecated at v0.52.2, use `onChange` instead.
       * @deprecated Use `onChange` instead.
       */
-    var onChanged: js.UndefOr[js.Function1[/* newValue */ js.Any, Unit]] = js.undefined
+    var onChanged: js.UndefOr[js.Function1[/* newValue */ Any, Unit]] = js.undefined
     
     /**
       * Callback executed when the user clears the search box by either clicking 'X' or hitting escape.
       */
-    var onClear: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onClear: js.UndefOr[js.Function1[/* ev */ js.UndefOr[Any], Unit]] = js.undefined
     
     /**
       * Callback executed when the user presses escape in the search box.
       */
-    var onEscape: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onEscape: js.UndefOr[js.Function1[/* ev */ js.UndefOr[Any], Unit]] = js.undefined
     
     /**
       * Callback executed when the user presses enter in the search box.
       */
-    var onSearch: js.UndefOr[js.Function1[/* newValue */ js.Any, Unit]] = js.undefined
+    var onSearch: js.UndefOr[js.Function1[/* newValue */ Any, Unit]] = js.undefined
+    
+    /**
+      * The role assigned to the root DIV element of the SearchBox, useful for defining a landmark role, such as "search".
+      */
+    @JSName("role")
+    var role_ISearchBoxProps: js.UndefOr[String] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
@@ -188,21 +194,25 @@ object searchBoxTypesMod {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnChanged(value: /* newValue */ js.Any => Unit): Self = StObject.set(x, "onChanged", js.Any.fromFunction1(value))
+      inline def setOnChanged(value: /* newValue */ Any => Unit): Self = StObject.set(x, "onChanged", js.Any.fromFunction1(value))
       
       inline def setOnChangedUndefined: Self = StObject.set(x, "onChanged", js.undefined)
       
-      inline def setOnClear(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction1(value))
+      inline def setOnClear(value: /* ev */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction1(value))
       
       inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
       
-      inline def setOnEscape(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEscape", js.Any.fromFunction1(value))
+      inline def setOnEscape(value: /* ev */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onEscape", js.Any.fromFunction1(value))
       
       inline def setOnEscapeUndefined: Self = StObject.set(x, "onEscape", js.undefined)
       
-      inline def setOnSearch(value: /* newValue */ js.Any => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
+      inline def setOnSearch(value: /* newValue */ Any => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
       
       inline def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
+      
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
       inline def setStyles(value: IStyleFunctionOrObject[ISearchBoxStyleProps, ISearchBoxStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

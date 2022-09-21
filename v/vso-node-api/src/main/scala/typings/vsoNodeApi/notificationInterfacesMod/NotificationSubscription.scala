@@ -1,7 +1,6 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ trait NotificationSubscription extends StObject {
   /**
     * Links to related resources, APIs, and views for the subscription.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Admin-managed settings for the subscription. Only applies when the subscriber is a group.
@@ -62,7 +61,7 @@ trait NotificationSubscription extends StObject {
   /**
     * Date when the subscription was last modified. If the subscription has not been updated since it was created, this value will indicate when the subscription was created.
     */
-  var modifiedDate: Date
+  var modifiedDate: js.Date
   
   /**
     * The permissions the user have for this subscriptions.
@@ -102,7 +101,7 @@ trait NotificationSubscription extends StObject {
 object NotificationSubscription {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     adminSettings: SubscriptionAdminSettings,
     channel: ISubscriptionChannel,
     description: String,
@@ -112,7 +111,7 @@ object NotificationSubscription {
     flags: SubscriptionFlags,
     id: String,
     lastModifiedBy: IdentityRef,
-    modifiedDate: Date,
+    modifiedDate: js.Date,
     permissions: SubscriptionPermissions,
     scope: SubscriptionScope,
     status: SubscriptionStatus,
@@ -145,7 +144,7 @@ object NotificationSubscription {
     
     inline def setLastModifiedBy(value: IdentityRef): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
-    inline def setModifiedDate(value: Date): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
+    inline def setModifiedDate(value: js.Date): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
     
     inline def setPermissions(value: SubscriptionPermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
@@ -161,6 +160,6 @@ object NotificationSubscription {
     
     inline def setUserSettings(value: SubscriptionUserSettings): Self = StObject.set(x, "userSettings", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

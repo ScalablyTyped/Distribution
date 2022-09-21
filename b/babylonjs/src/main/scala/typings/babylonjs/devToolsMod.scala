@@ -6,16 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object devToolsMod {
   
-  @JSImport("babylonjs/Misc/devTools", "_DevTools")
+  @JSImport("babylonjs/Misc/devTools", JSImport.Namespace)
   @js.native
-  class DevTools () extends StObject
-  /* static members */
-  object DevTools {
-    
-    @JSImport("babylonjs/Misc/devTools", "_DevTools")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def WarnImport(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("WarnImport")(name.asInstanceOf[js.Any]).asInstanceOf[String]
-  }
+  val ^ : js.Any = js.native
+  
+  inline def WarnImport(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_WarnImport")(name.asInstanceOf[js.Any]).asInstanceOf[String]
 }

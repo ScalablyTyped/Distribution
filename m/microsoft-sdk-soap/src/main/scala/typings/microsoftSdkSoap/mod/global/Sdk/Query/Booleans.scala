@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sdk.Query.Booleans")
 @js.native
-class Booleans protected () extends ValueBase {
+open class Booleans protected () extends ValueBase {
   def this(args: js.Array[Boolean]) = this()
   
   /**

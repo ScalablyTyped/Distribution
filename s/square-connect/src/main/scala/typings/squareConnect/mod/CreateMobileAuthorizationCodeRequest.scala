@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CreateMobileAuthorizationCodeRequest")
 @js.native
-class CreateMobileAuthorizationCodeRequest () extends StObject {
+open class CreateMobileAuthorizationCodeRequest () extends StObject {
   
   /**
     * The Square location ID the authorization code should be tied to.

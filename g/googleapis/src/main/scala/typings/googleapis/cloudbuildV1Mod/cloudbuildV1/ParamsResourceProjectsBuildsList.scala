@@ -1,9 +1,5 @@
 package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceProjectsBuildsList
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The raw filter text to constrain the results.
@@ -28,12 +19,17 @@ trait ParamsResourceProjectsBuildsList
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Token to provide to skip to a particular spot in the list.
+    * The page token for the next page of Builds. If unspecified, the first page of results is returned. If the token is rejected for any reason, INVALID_ARGUMENT will be thrown. In this case, the token should be discarded, and pagination should be restarted from the first page of results. See https://google.aip.dev/158 for more.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * ID of the project.
+    * The parent of the collection of `Builds`. Format: `projects/{project\}/locations/{location\}`
+    */
+  var parent: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Required. ID of the project.
     */
   var projectId: js.UndefOr[String] = js.undefined
 }
@@ -46,10 +42,6 @@ object ParamsResourceProjectsBuildsList {
   
   extension [Self <: ParamsResourceProjectsBuildsList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
@@ -61,6 +53,10 @@ object ParamsResourceProjectsBuildsList {
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,13 +29,13 @@ trait TestCaseResult extends StObject {
   
   var comment: String
   
-  var completedDate: Date
+  var completedDate: js.Date
   
   var computerName: String
   
   var configuration: ShallowReference
   
-  var createdDate: Date
+  var createdDate: js.Date
   
   var customFields: js.Array[CustomTestField]
   
@@ -54,7 +53,7 @@ trait TestCaseResult extends StObject {
   
   var lastUpdatedBy: IdentityRef
   
-  var lastUpdatedDate: Date
+  var lastUpdatedDate: js.Date
   
   var outcome: String
   
@@ -80,7 +79,7 @@ trait TestCaseResult extends StObject {
   
   var stackTrace: String
   
-  var startedDate: Date
+  var startedDate: js.Date
   
   var state: String
   
@@ -114,10 +113,10 @@ object TestCaseResult {
     build: ShallowReference,
     buildReference: BuildReference,
     comment: String,
-    completedDate: Date,
+    completedDate: js.Date,
     computerName: String,
     configuration: ShallowReference,
-    createdDate: Date,
+    createdDate: js.Date,
     customFields: js.Array[CustomTestField],
     durationInMs: Double,
     errorMessage: String,
@@ -126,7 +125,7 @@ object TestCaseResult {
     id: Double,
     iterationDetails: js.Array[TestIterationDetailsModel],
     lastUpdatedBy: IdentityRef,
-    lastUpdatedDate: Date,
+    lastUpdatedDate: js.Date,
     outcome: String,
     owner: IdentityRef,
     priority: Double,
@@ -139,7 +138,7 @@ object TestCaseResult {
     revision: Double,
     runBy: IdentityRef,
     stackTrace: String,
-    startedDate: Date,
+    startedDate: js.Date,
     state: String,
     testCase: ShallowReference,
     testCaseReferenceId: Double,
@@ -162,7 +161,7 @@ object TestCaseResult {
     
     inline def setAssociatedBugs(value: js.Array[ShallowReference]): Self = StObject.set(x, "associatedBugs", value.asInstanceOf[js.Any])
     
-    inline def setAssociatedBugsVarargs(value: ShallowReference*): Self = StObject.set(x, "associatedBugs", js.Array(value :_*))
+    inline def setAssociatedBugsVarargs(value: ShallowReference*): Self = StObject.set(x, "associatedBugs", js.Array(value*))
     
     inline def setAutomatedTestId(value: String): Self = StObject.set(x, "automatedTestId", value.asInstanceOf[js.Any])
     
@@ -180,17 +179,17 @@ object TestCaseResult {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    inline def setCompletedDate(value: Date): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
+    inline def setCompletedDate(value: js.Date): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
     
     inline def setComputerName(value: String): Self = StObject.set(x, "computerName", value.asInstanceOf[js.Any])
     
     inline def setConfiguration(value: ShallowReference): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setCustomFields(value: js.Array[CustomTestField]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
-    inline def setCustomFieldsVarargs(value: CustomTestField*): Self = StObject.set(x, "customFields", js.Array(value :_*))
+    inline def setCustomFieldsVarargs(value: CustomTestField*): Self = StObject.set(x, "customFields", js.Array(value*))
     
     inline def setDurationInMs(value: Double): Self = StObject.set(x, "durationInMs", value.asInstanceOf[js.Any])
     
@@ -204,11 +203,11 @@ object TestCaseResult {
     
     inline def setIterationDetails(value: js.Array[TestIterationDetailsModel]): Self = StObject.set(x, "iterationDetails", value.asInstanceOf[js.Any])
     
-    inline def setIterationDetailsVarargs(value: TestIterationDetailsModel*): Self = StObject.set(x, "iterationDetails", js.Array(value :_*))
+    inline def setIterationDetailsVarargs(value: TestIterationDetailsModel*): Self = StObject.set(x, "iterationDetails", js.Array(value*))
     
     inline def setLastUpdatedBy(value: IdentityRef): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
@@ -234,7 +233,7 @@ object TestCaseResult {
     
     inline def setStackTrace(value: String): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     
-    inline def setStartedDate(value: Date): Self = StObject.set(x, "startedDate", value.asInstanceOf[js.Any])
+    inline def setStartedDate(value: js.Date): Self = StObject.set(x, "startedDate", value.asInstanceOf[js.Any])
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

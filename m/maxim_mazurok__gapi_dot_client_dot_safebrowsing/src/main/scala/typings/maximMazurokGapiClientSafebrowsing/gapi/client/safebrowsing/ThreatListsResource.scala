@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ThreatListsResource extends StObject {
   
   /** Lists the Safe Browsing threat lists available for download. */
-  def list(): Request[ListThreatListsResponse] = js.native
-  def list(request: Callback): Request[ListThreatListsResponse] = js.native
+  def list(): Request[GoogleSecuritySafebrowsingV4ListThreatListsResponse] = js.native
+  def list(request: Callback): Request[GoogleSecuritySafebrowsingV4ListThreatListsResponse] = js.native
 }

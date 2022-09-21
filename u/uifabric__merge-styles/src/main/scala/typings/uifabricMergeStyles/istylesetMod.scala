@@ -18,7 +18,7 @@ object istylesetMod {
     var subComponentStyles: js.UndefOr[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof TStyleSet['subComponentStyles'] ]: @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyleFunction.IStyleFunction<any, any>}
-      */ typings.uifabricMergeStyles.uifabricMergeStylesStrings.IConcatenatedStyleSet & TopLevel[js.Any]
+      */ typings.uifabricMergeStyles.uifabricMergeStylesStrings.IConcatenatedStyleSet & TopLevel[Any]
       ] = js.native
   }
   
@@ -27,7 +27,7 @@ object istylesetMod {
     
     var subComponentStyles: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof TStyleSet['subComponentStyles'] ]: @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyleSet.__MapToFunctionType<TStyleSet['subComponentStyles'] extends infer J? P extends keyof any? any[P] : never : never>}
-      */ typings.uifabricMergeStyles.uifabricMergeStylesStrings.IProcessedStyleSet & TopLevel[js.Any] = js.native
+      */ typings.uifabricMergeStyles.uifabricMergeStylesStrings.IProcessedStyleSet & TopLevel[Any] = js.native
   }
   
   @js.native
@@ -36,11 +36,11 @@ object istylesetMod {
     var subComponentStyles: js.UndefOr[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof TStyleSet['subComponentStyles'] ]: @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyleFunction.IStyleFunctionOrObject<any, any>}
-      */ typings.uifabricMergeStyles.uifabricMergeStylesStrings.IStyleSet & TopLevel[js.Any]
+      */ typings.uifabricMergeStyles.uifabricMergeStylesStrings.IStyleSet & TopLevel[Any]
       ] = js.native
   }
   
-  type MapToFunctionType[T] = (Extract[T, js.Function]) | (js.Function1[/* repeated */ js.Any, Partial[T]])
+  type MapToFunctionType[T] = (Extract[T, js.Function]) | (js.Function1[/* repeated */ Any, Partial[T]])
   
   type Omit[U, K /* <: /* keyof U */ String */] = Pick[U, Diff[/* keyof U */ String, K]]
 }

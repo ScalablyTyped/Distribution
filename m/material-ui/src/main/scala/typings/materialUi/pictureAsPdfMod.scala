@@ -10,10 +10,10 @@ object pictureAsPdfMod {
   
   @JSImport("material-ui/svg-icons/image/picture-as-pdf", JSImport.Default)
   @js.native
-  class default () extends ImagePictureAsPdf
+  open class default () extends ImagePictureAsPdf
   
   @JSImport("material-ui/svg-icons/image/picture-as-pdf", "ImagePictureAsPdf")
   @js.native
-  class ImagePictureAsPdf ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImagePictureAsPdf ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

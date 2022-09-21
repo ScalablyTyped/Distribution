@@ -22,6 +22,6 @@ object Polygon {
     
     inline def setRings(value: js.Array[js.Array[Position]]): Self = StObject.set(x, "rings", value.asInstanceOf[js.Any])
     
-    inline def setRingsVarargs(value: js.Array[Position]*): Self = StObject.set(x, "rings", js.Array(value :_*))
+    inline def setRingsVarargs(value: js.Array[Position]*): Self = StObject.set(x, "rings", js.Array(value*))
   }
 }

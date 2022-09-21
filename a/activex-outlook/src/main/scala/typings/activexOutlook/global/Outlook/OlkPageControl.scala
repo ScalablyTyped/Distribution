@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkPageControl")
 @js.native
-/* private */ class OlkPageControl ()
+/* private */ open class OlkPageControl ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkPageControl {
   

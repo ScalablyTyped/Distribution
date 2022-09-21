@@ -22,12 +22,12 @@ object serviceServerMod {
     /**
       * @hidden
       */
-    /* private */ var _Erase_user: js.Any = js.native
+    /* private */ var _Erase_user: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var account_map_ : js.Any = js.native
+    /* private */ var account_map_ : Any = js.native
     
     /**
       * Factory method creating {@link User} object.
@@ -75,6 +75,6 @@ object serviceServerMod {
     /**
       * @hidden
       */
-    /* private */ var session_map_ : js.Any = js.native
+    /* private */ var session_map_ : Any = js.native
   }
 }

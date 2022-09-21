@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "ReflectionBlock")
 @js.native
-class ReflectionBlock protected ()
+open class ReflectionBlock protected ()
   extends typings.babylonjs.indexMod.ReflectionBlock {
   /**
     * Create a new ReflectionBlock

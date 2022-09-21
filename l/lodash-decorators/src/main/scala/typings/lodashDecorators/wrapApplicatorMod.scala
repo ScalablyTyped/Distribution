@@ -9,5 +9,5 @@ object wrapApplicatorMod {
   
   @JSImport("lodash-decorators/applicators/WrapApplicator", "WrapApplicator")
   @js.native
-  class WrapApplicator () extends Applicator
+  open class WrapApplicator () extends Applicator
 }

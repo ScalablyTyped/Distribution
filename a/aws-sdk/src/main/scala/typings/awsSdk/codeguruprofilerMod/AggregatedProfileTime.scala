@@ -14,7 +14,7 @@ trait AggregatedProfileTime extends StObject {
   /**
     *  The time that aggregation of posted agent profiles for a profiling group starts. The aggregation profile contains profiles posted by the agent starting at this time for an aggregation period specified by the period property of the AggregatedProfileTime object.   Specify start using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC. 
     */
-  var start: js.UndefOr[Timestamp] = js.undefined
+  var start: js.UndefOr[js.Date] = js.undefined
 }
 object AggregatedProfileTime {
   
@@ -29,7 +29,7 @@ object AggregatedProfileTime {
     
     inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    inline def setStart(value: Timestamp): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }

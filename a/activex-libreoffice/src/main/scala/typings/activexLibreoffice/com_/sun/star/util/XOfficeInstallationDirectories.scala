@@ -76,7 +76,7 @@ object XOfficeInstallationDirectories {
     getOfficeUserDataDirectoryURL: () => String,
     makeAbsoluteURL: String => String,
     makeRelocatableURL: String => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XOfficeInstallationDirectories = {
     val __obj = js.Dynamic.literal(OfficeInstallationDirectoryURL = OfficeInstallationDirectoryURL.asInstanceOf[js.Any], OfficeUserDataDirectoryURL = OfficeUserDataDirectoryURL.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getOfficeInstallationDirectoryURL = js.Any.fromFunction0(getOfficeInstallationDirectoryURL), getOfficeUserDataDirectoryURL = js.Any.fromFunction0(getOfficeUserDataDirectoryURL), makeAbsoluteURL = js.Any.fromFunction1(makeAbsoluteURL), makeRelocatableURL = js.Any.fromFunction1(makeRelocatableURL), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

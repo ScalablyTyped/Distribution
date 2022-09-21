@@ -18,6 +18,9 @@ trait Subnetwork extends StObject {
   /** This is a discovered subnet that is not within the current consumer allocated ranges. */
   var outsideAllocation: js.UndefOr[Boolean] = js.undefined
   
+  /** GCP region where the subnetwork is located. */
+  var region: js.UndefOr[String] = js.undefined
+  
   /** List of secondary IP ranges in this subnetwork. */
   var secondaryIpRanges: js.UndefOr[js.Array[SecondaryIpRange]] = js.undefined
 }
@@ -46,10 +49,14 @@ object Subnetwork {
     
     inline def setOutsideAllocationUndefined: Self = StObject.set(x, "outsideAllocation", js.undefined)
     
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    
     inline def setSecondaryIpRanges(value: js.Array[SecondaryIpRange]): Self = StObject.set(x, "secondaryIpRanges", value.asInstanceOf[js.Any])
     
     inline def setSecondaryIpRangesUndefined: Self = StObject.set(x, "secondaryIpRanges", js.undefined)
     
-    inline def setSecondaryIpRangesVarargs(value: SecondaryIpRange*): Self = StObject.set(x, "secondaryIpRanges", js.Array(value :_*))
+    inline def setSecondaryIpRangesVarargs(value: SecondaryIpRange*): Self = StObject.set(x, "secondaryIpRanges", js.Array(value*))
   }
 }

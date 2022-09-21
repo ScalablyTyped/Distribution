@@ -3,7 +3,6 @@ package typings.rollupPluginutils
 import org.scalablytyped.runtime.StringDictionary
 import typings.rollupPluginutils.anon.Resolve
 import typings.std.Node
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,10 +78,10 @@ object mod {
   }
   
   type CreateFilter_ = js.Function3[
-    /* include */ js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null], 
-    /* exclude */ js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null], 
+    /* include */ js.UndefOr[(js.Array[String | js.RegExp]) | String | js.RegExp | Null], 
+    /* exclude */ js.UndefOr[(js.Array[String | js.RegExp]) | String | js.RegExp | Null], 
     /* options */ js.UndefOr[Resolve], 
-    js.Function1[/* id */ String | js.Any, Boolean]
+    js.Function1[/* id */ String | Any, Boolean]
   ]
   
   trait DataToEsmOptions extends StObject {
@@ -128,7 +127,7 @@ object mod {
     }
   }
   
-  type DataToEsm_ = js.Function2[/* data */ js.Any, /* options */ js.UndefOr[DataToEsmOptions], String]
+  type DataToEsm_ = js.Function2[/* data */ Any, /* options */ js.UndefOr[DataToEsmOptions], String]
   
   type ExtractAssignedNames_ = js.Function1[/* param */ Node, js.Array[String]]
   

@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait ExportNamespaceSpecifier_
   extends StObject
      with BaseNode
-     with ModuleSpecifier {
+     with ModuleSpecifier
+     with Standardized {
   
   var exported: Identifier_
   

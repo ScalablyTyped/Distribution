@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.WebTemplate")
 @js.native
-class WebTemplate ()
+open class WebTemplate ()
   extends StObject
      with typings.sharepoint.SP.WebTemplate

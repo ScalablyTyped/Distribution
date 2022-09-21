@@ -10,10 +10,10 @@ The lodash method `_.pull` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.pull |
 | Keywords           | lodash-modularized, pull |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 442035 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 248091.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

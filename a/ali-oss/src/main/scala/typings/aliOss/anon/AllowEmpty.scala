@@ -26,7 +26,7 @@ object AllowEmpty {
     
     inline def setReferers(value: js.Array[String]): Self = StObject.set(x, "referers", value.asInstanceOf[js.Any])
     
-    inline def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value :_*))
+    inline def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value*))
     
     inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }

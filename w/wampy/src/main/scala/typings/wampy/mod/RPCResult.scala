@@ -12,7 +12,7 @@ trait RPCResult
 }
 object RPCResult {
   
-  inline def apply(argsDict: Dict, argsList: js.Array[js.Any], options: RPCOptions): RPCResult = {
+  inline def apply(argsDict: Dict, argsList: js.Array[Any], options: RPCOptions): RPCResult = {
     val __obj = js.Dynamic.literal(argsDict = argsDict.asInstanceOf[js.Any], argsList = argsList.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[RPCResult]
   }

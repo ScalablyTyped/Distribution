@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tovnodeMod {
   
-  @JSImport("snabbdom/build/package/tovnode", JSImport.Namespace)
+  @JSImport("snabbdom/build/tovnode", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

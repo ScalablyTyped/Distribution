@@ -2,7 +2,7 @@ package typings.ethereumjsVm
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ethereumjsVm.evmMod.EVMResult
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ object runCallMod {
   
   trait RunCallOpts extends StObject {
     
-    var block: js.UndefOr[js.Any] = js.undefined
+    var block: js.UndefOr[Any] = js.undefined
     
     var caller: js.UndefOr[Buffer] = js.undefined
     
@@ -59,7 +59,7 @@ object runCallMod {
     
     extension [Self <: RunCallOpts](x: Self) {
       
-      inline def setBlock(value: js.Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
       inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       

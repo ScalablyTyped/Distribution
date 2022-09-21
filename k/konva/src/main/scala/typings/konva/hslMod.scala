@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object hslMod {
   
-  @JSImport("konva/types/filters/HSL", "HSL")
+  @JSImport("konva/lib/filters/HSL", "HSL")
   @js.native
   val HSL: Filter = js.native
 }

@@ -9,24 +9,25 @@ trait HighlightLayer
   extends StObject
      with EffectLayer {
   
-  /* private */ var _blurTexture: js.Any = js.native
+  /* private */ var _blurTexture: Any = js.native
   
   /**
     * Force the stencil to the normal expected value for none glowing parts
+    * @param mesh
     */
-  /* private */ var _defaultStencilReference: js.Any = js.native
+  /* private */ var _defaultStencilReference: Any = js.native
   
-  /* private */ var _downSamplePostprocess: js.Any = js.native
+  /* private */ var _downSamplePostprocess: Any = js.native
   
-  /* private */ var _excludedMeshes: js.Any = js.native
+  /* private */ var _excludedMeshes: Any = js.native
   
-  /* private */ var _horizontalBlurPostprocess: js.Any = js.native
+  /* private */ var _horizontalBlurPostprocess: Any = js.native
   
-  /* private */ var _instanceGlowingMeshStencilReference: js.Any = js.native
+  /* private */ var _instanceGlowingMeshStencilReference: Any = js.native
   
-  /* private */ var _meshes: js.Any = js.native
+  /* private */ var _meshes: Any = js.native
   
-  /* private */ var _options: js.Any = js.native
+  /* private */ var _options: Any = js.native
   
   /**
     * Returns true if the mesh should render, otherwise false.
@@ -35,7 +36,7 @@ trait HighlightLayer
     */
   /* protected */ def _shouldRenderMesh(mesh: Mesh): Boolean = js.native
   
-  /* private */ var _verticalBlurPostprocess: js.Any = js.native
+  /* private */ var _verticalBlurPostprocess: Any = js.native
   
   /**
     * Add a mesh in the exclusion list to prevent it to impact or being impacted by the highlight layer.
@@ -112,5 +113,5 @@ trait HighlightLayer
     * @returns a serialized Highlight layer object
     */
   @JSName("serialize")
-  def serialize_MHighlightLayer(): js.Any = js.native
+  def serialize_MHighlightLayer(): Any = js.native
 }

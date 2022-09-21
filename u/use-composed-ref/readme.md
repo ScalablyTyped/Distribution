@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-composed-ref
 
-Typings are for version 1.1.0
+Typings are for version 1.3.0
 
 ## Library description:
 React hook which creates a ref function from given refs. Useful when using forwardRef.
@@ -10,15 +10,12 @@ React hook which creates a ref function from given refs. Useful when using forwa
 | ------------------ | :-------------: |
 | Full name          | use-composed-ref |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 24719722 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4334039333333334E7 |
+| # stars            | 13.0 |
 
 ## Links
-- [Homepage](https://github.com/Andarist/use-composed-ref#readme)
-- [Bugs](https://github.com/Andarist/use-composed-ref/issues)
-- [Repository](https://github.com/Andarist/use-composed-ref)
 - [Npm](https://www.npmjs.com/package/use-composed-ref)
     
 

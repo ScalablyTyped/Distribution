@@ -6,6 +6,7 @@ import typings.akamaiEdgeworkers.akamaiEdgeworkersStrings.Lax
 import typings.akamaiEdgeworkers.akamaiEdgeworkersStrings.None
 import typings.akamaiEdgeworkers.akamaiEdgeworkersStrings.Strict
 import typings.akamaiEdgeworkers.akamaiEdgeworkersStrings.byob
+import typings.akamaiEdgeworkers.httpRequestMod.RequestBody
 import typings.akamaiEdgeworkers.streamsMod.ReadableStream
 import typings.akamaiEdgeworkers.streamsMod.WritableStream
 import org.scalablytyped.runtime.StObject
@@ -137,7 +138,7 @@ object anon {
   
   trait Headers extends StObject {
     
-    var body: js.UndefOr[String] = js.undefined
+    var body: js.UndefOr[RequestBody] = js.undefined
     
     var headers: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
     
@@ -154,7 +155,7 @@ object anon {
     
     extension [Self <: Headers](x: Self) {
       
-      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: RequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       

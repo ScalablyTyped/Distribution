@@ -53,7 +53,7 @@ object mod {
     
     trait Headers
       extends StObject
-         with /* header */ StringDictionary[js.Any] {
+         with /* header */ StringDictionary[Any] {
       
       val accept: js.UndefOr[String] = js.undefined
       
@@ -116,19 +116,19 @@ object mod {
         
         inline def setCharsets(value: js.Array[String]): Self = StObject.set(x, "charsets", value.asInstanceOf[js.Any])
         
-        inline def setCharsetsVarargs(value: String*): Self = StObject.set(x, "charsets", js.Array(value :_*))
+        inline def setCharsetsVarargs(value: String*): Self = StObject.set(x, "charsets", js.Array(value*))
         
         inline def setEncodings(value: js.Array[String]): Self = StObject.set(x, "encodings", value.asInstanceOf[js.Any])
         
-        inline def setEncodingsVarargs(value: String*): Self = StObject.set(x, "encodings", js.Array(value :_*))
+        inline def setEncodingsVarargs(value: String*): Self = StObject.set(x, "encodings", js.Array(value*))
         
         inline def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
         
-        inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+        inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value*))
         
         inline def setMediaTypes(value: js.Array[String]): Self = StObject.set(x, "mediaTypes", value.asInstanceOf[js.Any])
         
-        inline def setMediaTypesVarargs(value: String*): Self = StObject.set(x, "mediaTypes", js.Array(value :_*))
+        inline def setMediaTypesVarargs(value: String*): Self = StObject.set(x, "mediaTypes", js.Array(value*))
       }
     }
   }

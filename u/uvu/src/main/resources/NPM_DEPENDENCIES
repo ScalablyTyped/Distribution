@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "uvu" : "0.5.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "uvu" : "0.5.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

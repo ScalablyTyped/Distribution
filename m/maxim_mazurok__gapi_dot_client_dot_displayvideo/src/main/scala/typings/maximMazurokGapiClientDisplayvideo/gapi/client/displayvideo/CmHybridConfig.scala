@@ -55,7 +55,7 @@ object CmHybridConfig {
     
     inline def setCmSyncableSiteIdsUndefined: Self = StObject.set(x, "cmSyncableSiteIds", js.undefined)
     
-    inline def setCmSyncableSiteIdsVarargs(value: String*): Self = StObject.set(x, "cmSyncableSiteIds", js.Array(value :_*))
+    inline def setCmSyncableSiteIdsVarargs(value: String*): Self = StObject.set(x, "cmSyncableSiteIds", js.Array(value*))
     
     inline def setDv360ToCmCostReportingEnabled(value: Boolean): Self = StObject.set(x, "dv360ToCmCostReportingEnabled", value.asInstanceOf[js.Any])
     

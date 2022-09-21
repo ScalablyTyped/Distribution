@@ -58,7 +58,7 @@ object configMod {
   
   @JSImport("@jupyterlab/services/lib/config", "ConfigWithDefaults")
   @js.native
-  class ConfigWithDefaults protected () extends StObject {
+  open class ConfigWithDefaults protected () extends StObject {
     /**
       * Create a new config with defaults.
       */
@@ -70,13 +70,13 @@ object configMod {
       * #### Notes
       * If we have no classname, get all of the data in the Section
       */
-    /* private */ var _classData: js.Any = js.native
+    /* private */ var _classData: Any = js.native
     
-    /* private */ var _className: js.Any = js.native
+    /* private */ var _className: Any = js.native
     
-    /* private */ var _defaults: js.Any = js.native
+    /* private */ var _defaults: Any = js.native
     
-    /* private */ var _section: js.Any = js.native
+    /* private */ var _section: Any = js.native
     
     /**
       * Get data from the config section or fall back to defaults.

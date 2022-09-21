@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("storm-react-diagrams", "DefaultNodeFactory")
 @js.native
-class DefaultNodeFactory ()
+open class DefaultNodeFactory ()
   extends typings.stormReactDiagrams.defaultNodeFactoryMod.DefaultNodeFactory

@@ -1,7 +1,7 @@
 
 # Scala.js typings for chrome-launcher
 
-Typings are for version 0.13.4
+Typings are for version 0.15.1
 
 ## Library description:
 Launch latest Chrome with the Devtools Protocol port open
@@ -10,10 +10,10 @@ Launch latest Chrome with the Devtools Protocol port open
 | ------------------ | :-------------: |
 | Full name          | chrome-launcher |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 259 |
-| # downloads        | 27919532 |
-| # stars            | 13 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 6880352.666666667 |
+| # stars            | 930.0 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChrome/chrome-launcher#readme)

@@ -43,7 +43,7 @@ object anon {
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      inline def setFieldsVarargs(value: CustomField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: CustomField*): Self = StObject.set(x, "fields", js.Array(value*))
     }
   }
   
@@ -140,7 +140,7 @@ object anon {
     
     var pageSize: js.UndefOr[Double] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
   }
   object PageSize {
     
@@ -155,7 +155,7 @@ object anon {
       
       inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     }

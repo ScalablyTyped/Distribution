@@ -36,8 +36,8 @@ trait VLOnlyMarkConfig[ES /* <: ExprRef | SignalRef */]
   /**
     * The secondary (inner) radius in pixels of arc marks.
     *
-    * @minimum 0
     * __Default value:__ `0`
+    * @minimum 0
     */
   var radius2: js.UndefOr[Double | ES] = js.undefined
   
@@ -47,16 +47,16 @@ trait VLOnlyMarkConfig[ES /* <: ExprRef | SignalRef */]
   var theta2: js.UndefOr[Double | ES] = js.undefined
   
   /**
-    * Default relative band size for a time unit. If set to `1`, the bandwidth of the marks will be equal to the time unit band step.
-    * If set to `0.5`, bandwidth of the marks will be half of the time unit band step.
-    */
-  var timeUnitBand: js.UndefOr[Double] = js.undefined
-  
-  /**
     * Default relative band position for a time unit. If set to `0`, the marks will be positioned at the beginning of the time unit band step.
     * If set to `0.5`, the marks will be positioned in the middle of the time unit band step.
     */
   var timeUnitBandPosition: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Default relative band size for a time unit. If set to `1`, the bandwidth of the marks will be equal to the time unit band step.
+    * If set to `0.5`, bandwidth of the marks will be half of the time unit band step.
+    */
+  var timeUnitBandSize: js.UndefOr[Double] = js.undefined
 }
 object VLOnlyMarkConfig {
   
@@ -91,12 +91,12 @@ object VLOnlyMarkConfig {
     
     inline def setTheta2Undefined: Self = StObject.set(x, "theta2", js.undefined)
     
-    inline def setTimeUnitBand(value: Double): Self = StObject.set(x, "timeUnitBand", value.asInstanceOf[js.Any])
-    
     inline def setTimeUnitBandPosition(value: Double): Self = StObject.set(x, "timeUnitBandPosition", value.asInstanceOf[js.Any])
     
     inline def setTimeUnitBandPositionUndefined: Self = StObject.set(x, "timeUnitBandPosition", js.undefined)
     
-    inline def setTimeUnitBandUndefined: Self = StObject.set(x, "timeUnitBand", js.undefined)
+    inline def setTimeUnitBandSize(value: Double): Self = StObject.set(x, "timeUnitBandSize", value.asInstanceOf[js.Any])
+    
+    inline def setTimeUnitBandSizeUndefined: Self = StObject.set(x, "timeUnitBandSize", js.undefined)
   }
 }

@@ -19,7 +19,7 @@ trait HistoryRecord extends StObject {
   /**
     * The date and time of the event, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
     */
-  var Timestamp: js.UndefOr[DateTime] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
 }
 object HistoryRecord {
   
@@ -38,7 +38,7 @@ object HistoryRecord {
     
     inline def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
     
-    inline def setTimestamp(value: DateTime): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }

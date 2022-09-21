@@ -12,6 +12,11 @@ trait DescribeDomainResponse extends StObject {
   var AppNetworkAccessType: js.UndefOr[typings.awsSdk.sagemakerMod.AppNetworkAccessType] = js.undefined
   
   /**
+    * The entity that creates and manages the required security groups for inter-app communication in VPCOnly mode. Required when CreateDomain.AppNetworkAccessType is VPCOnly and DomainSettings.RStudioServerProDomainSettings.DomainExecutionRoleArn is provided.
+    */
+  var AppSecurityGroupManagement: js.UndefOr[typings.awsSdk.sagemakerMod.AppSecurityGroupManagement] = js.undefined
+  
+  /**
     * The domain's authentication mode.
     */
   var AuthMode: js.UndefOr[typings.awsSdk.sagemakerMod.AuthMode] = js.undefined
@@ -19,10 +24,10 @@ trait DescribeDomainResponse extends StObject {
   /**
     * The creation time.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Settings which are applied to all UserProfiles in this domain, if settings are not explicitly specified in a given UserProfile. 
+    * Settings which are applied to UserProfiles in this domain if settings are not explicitly specified in a given UserProfile. 
     */
   var DefaultUserSettings: js.UndefOr[UserSettings] = js.undefined
   
@@ -42,6 +47,11 @@ trait DescribeDomainResponse extends StObject {
   var DomainName: js.UndefOr[typings.awsSdk.sagemakerMod.DomainName] = js.undefined
   
   /**
+    * A collection of Domain settings.
+    */
+  var DomainSettings: js.UndefOr[typings.awsSdk.sagemakerMod.DomainSettings] = js.undefined
+  
+  /**
     * The failure reason.
     */
   var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
@@ -52,22 +62,27 @@ trait DescribeDomainResponse extends StObject {
   var HomeEfsFileSystemId: js.UndefOr[ResourceId] = js.undefined
   
   /**
-    * This member is deprecated and replaced with KmsKeyId.
+    * Use KmsKeyId.
     */
   var HomeEfsFileSystemKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
   /**
-    * The AWS KMS customer managed CMK used to encrypt the EFS volume attached to the domain.
+    * The Amazon Web Services KMS customer managed key used to encrypt the EFS volume attached to the domain.
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.undefined
   
   /**
     * The last modified time.
     */
-  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The SSO managed application instance ID.
+    * The ID of the security group that authorizes traffic between the RSessionGateway apps and the RStudioServerPro app.
+    */
+  var SecurityGroupIdForDomainBoundary: js.UndefOr[SecurityGroupId] = js.undefined
+  
+  /**
+    * The Amazon Web Services SSO managed application instance ID.
     */
   var SingleSignOnManagedApplicationInstanceId: js.UndefOr[String256] = js.undefined
   
@@ -104,11 +119,15 @@ object DescribeDomainResponse {
     
     inline def setAppNetworkAccessTypeUndefined: Self = StObject.set(x, "AppNetworkAccessType", js.undefined)
     
+    inline def setAppSecurityGroupManagement(value: AppSecurityGroupManagement): Self = StObject.set(x, "AppSecurityGroupManagement", value.asInstanceOf[js.Any])
+    
+    inline def setAppSecurityGroupManagementUndefined: Self = StObject.set(x, "AppSecurityGroupManagement", js.undefined)
+    
     inline def setAuthMode(value: AuthMode): Self = StObject.set(x, "AuthMode", value.asInstanceOf[js.Any])
     
     inline def setAuthModeUndefined: Self = StObject.set(x, "AuthMode", js.undefined)
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -128,6 +147,10 @@ object DescribeDomainResponse {
     
     inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
+    inline def setDomainSettings(value: DomainSettings): Self = StObject.set(x, "DomainSettings", value.asInstanceOf[js.Any])
+    
+    inline def setDomainSettingsUndefined: Self = StObject.set(x, "DomainSettings", js.undefined)
+    
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
@@ -144,9 +167,13 @@ object DescribeDomainResponse {
     
     inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    inline def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
+    
+    inline def setSecurityGroupIdForDomainBoundary(value: SecurityGroupId): Self = StObject.set(x, "SecurityGroupIdForDomainBoundary", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityGroupIdForDomainBoundaryUndefined: Self = StObject.set(x, "SecurityGroupIdForDomainBoundary", js.undefined)
     
     inline def setSingleSignOnManagedApplicationInstanceId(value: String256): Self = StObject.set(x, "SingleSignOnManagedApplicationInstanceId", value.asInstanceOf[js.Any])
     
@@ -160,7 +187,7 @@ object DescribeDomainResponse {
     
     inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
     
     inline def setUrl(value: String1024): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     

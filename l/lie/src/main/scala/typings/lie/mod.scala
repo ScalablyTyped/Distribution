@@ -15,7 +15,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("lie", JSImport.Default)
   @js.native
-  class defaultCls[T] protected ()
+  open class defaultCls[T] protected ()
     extends StObject
        with Promise[T] {
     /**
@@ -26,7 +26,7 @@ object mod extends Shortcut {
       */
     def this(executor: js.Function2[
             /* resolve */ js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], Unit], 
-            /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+            /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
             Unit
           ]) = this()
   }
@@ -43,7 +43,7 @@ object mod extends Shortcut {
       * @returns A Promise for the completion of the callback.
       */
     def `catch`[TResult](): Promise[T | TResult] = js.native
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): Promise[T | TResult] = js.native
+    def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]]): Promise[T | TResult] = js.native
     
     /**
       * When the promise is settled, whether fulfilled or rejected, execute the
@@ -66,10 +66,10 @@ object mod extends Shortcut {
     def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+      onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
     ): Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): Promise[TResult1 | TResult2] = js.native
   }
   
   @js.native
@@ -84,7 +84,7 @@ object mod extends Shortcut {
   Instantiable1[
           /* executor */ js.Function2[
             /* resolve */ js.Function1[/* value */ js.UndefOr[js.Object | js.Thenable[js.Object]], Unit], 
-            /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+            /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
             Unit
           ], 
           Promise[js.Object]
@@ -367,14 +367,14 @@ object mod extends Shortcut {
       * @param reason The reason the promise was rejected.
       * @returns A new rejected Promise.
       */
-    def reject(reason: js.Any): Promise[scala.Nothing] = js.native
+    def reject(reason: Any): Promise[scala.Nothing] = js.native
     /**
       * Creates a new rejected promise for the provided reason.
       * @param reason The reason the promise was rejected.
       * @returns A new rejected Promise.
       */
     @JSName("reject")
-    def reject_T[T](reason: js.Any): Promise[T] = js.native
+    def reject_T[T](reason: Any): Promise[T] = js.native
     
     /**
       * Creates a new resolved promise .

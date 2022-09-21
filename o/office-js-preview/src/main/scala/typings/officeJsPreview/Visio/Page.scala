@@ -74,25 +74,15 @@ trait Page
   val isBackground: Boolean = js.native
   
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Visio.Page` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Visio.Page` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Page` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Page = js.native
-  def load(option: String): Page = js.native
-  def load(option: js.Array[String]): Page = js.native
-  def load(option: PageLoadOptions): Page = js.native
-  def load(option: Expand): Page = js.native
+  def load(options: PageLoadOptions): Page = js.native
+  def load(propertyNamesAndPaths: Expand): Page = js.native
+  def load(propertyNames: String): Page = js.native
+  def load(propertyNames: js.Array[String]): Page = js.native
   
   /**
     *
@@ -117,6 +107,11 @@ trait Page
   def set(properties: PageUpdateData, options: UpdateOptions): Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Page): Unit = js.native
+  
+  /**
+    * Set mock data
+    */
+  def setMockData(data: PageData): Unit = js.native
   
   /**
     *

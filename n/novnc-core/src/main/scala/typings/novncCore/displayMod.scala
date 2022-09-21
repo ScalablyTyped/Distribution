@@ -11,7 +11,7 @@ object displayMod {
   
   @JSImport("novnc-core/lib/display", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Display {
     def this(defaults: NvDisplayDefaults) = this()
@@ -101,7 +101,7 @@ object displayMod {
     
     def get_context(): CanvasRenderingContext2D = js.native
     
-    def get_cursor_uri(): js.Any = js.native
+    def get_cursor_uri(): Any = js.native
     
     def get_height(): Double = js.native
     
@@ -127,7 +127,7 @@ object displayMod {
     
     def resize(width: Double, height: Double): Unit = js.native
     
-    def set_cursor_uri(cursorUri: js.Any): Unit = js.native
+    def set_cursor_uri(cursorUri: Any): Unit = js.native
     
     def set_logo(logo: NvLogo): Unit = js.native
     
@@ -159,7 +159,7 @@ object displayMod {
     
     var context: js.UndefOr[CanvasRenderingContext2D] = js.undefined
     
-    var cursor_uri: js.UndefOr[js.Any] = js.undefined
+    var cursor_uri: js.UndefOr[Any] = js.undefined
     
     var height: js.UndefOr[Double] = js.undefined
     
@@ -192,7 +192,7 @@ object displayMod {
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setCursor_uri(value: js.Any): Self = StObject.set(x, "cursor_uri", value.asInstanceOf[js.Any])
+      inline def setCursor_uri(value: Any): Self = StObject.set(x, "cursor_uri", value.asInstanceOf[js.Any])
       
       inline def setCursor_uriUndefined: Self = StObject.set(x, "cursor_uri", js.undefined)
       
@@ -256,7 +256,7 @@ object displayMod {
       
       inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 package typings.cathoQuantum
 
-import typings.cathoQuantum.anon.`13`
-import typings.cathoQuantum.anon.`1`
+import typings.cathoQuantum.anon.`16`
+import typings.cathoQuantum.anon.`17`
 import typings.cathoQuantum.cathoQuantumStrings.button
 import typings.cathoQuantum.cathoQuantumStrings.circle
 import typings.cathoQuantum.cathoQuantumStrings.large
@@ -21,8 +21,8 @@ object skeletonMod {
   
   @JSImport("@catho/quantum/Skeleton", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SkeletonProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SkeletonProps, js.Object, Any]
   /* static members */
   object default {
     
@@ -51,20 +51,20 @@ object skeletonMod {
     inline def Text_=(x: SkeletonText): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
   }
   
-  type Skeleton = Component[SkeletonProps, js.Object, js.Any]
+  type Skeleton = Component[SkeletonProps, js.Object, Any]
   
   type SkeletonButton = ComponentType[SkeletonButtonProps]
   
   trait SkeletonButtonProps extends StObject {
     
-    var size: xsmall | small | medium | large
+    var size: js.UndefOr[xsmall | small | medium | large] = js.undefined
     
-    var theme: `1`
+    var theme: js.UndefOr[`17`] = js.undefined
   }
   object SkeletonButtonProps {
     
-    inline def apply(size: xsmall | small | medium | large, theme: `1`): SkeletonButtonProps = {
-      val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+    inline def apply(): SkeletonButtonProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SkeletonButtonProps]
     }
     
@@ -72,7 +72,11 @@ object skeletonMod {
       
       inline def setSize(value: xsmall | small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      inline def setTheme(value: `1`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
+      inline def setTheme(value: `17`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -84,7 +88,7 @@ object skeletonMod {
     
     var size: js.UndefOr[xsmall | small | medium | large] = js.undefined
     
-    var theme: js.UndefOr[`13`] = js.undefined
+    var theme: js.UndefOr[`16`] = js.undefined
     
     var `type`: js.UndefOr[rect | circle | text | button | tag] = js.undefined
     
@@ -107,7 +111,7 @@ object skeletonMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setTheme(value: `13`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: `16`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
@@ -125,14 +129,14 @@ object skeletonMod {
   
   trait SkeletonTagProps extends StObject {
     
-    var size: xsmall | small | medium | large
+    var size: js.UndefOr[xsmall | small | medium | large] = js.undefined
     
-    var theme: `13`
+    var theme: js.UndefOr[`16`] = js.undefined
   }
   object SkeletonTagProps {
     
-    inline def apply(size: xsmall | small | medium | large, theme: `13`): SkeletonTagProps = {
-      val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+    inline def apply(): SkeletonTagProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SkeletonTagProps]
     }
     
@@ -140,9 +144,13 @@ object skeletonMod {
       
       inline def setSize(value: xsmall | small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      inline def setTheme(value: `13`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
+      inline def setTheme(value: `16`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
-  type SkeletonText = ComponentType[js.Object]
+  type SkeletonText = ComponentType[SkeletonProps]
 }

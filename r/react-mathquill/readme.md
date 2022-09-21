@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-mathquill
 
-Typings are for version 0.1
+Typings are for version 1.0.2
 
 ## Library description:
 React component wrapper for Mathquill
@@ -10,10 +10,10 @@ React component wrapper for Mathquill
 | ------------------ | :-------------: |
 | Full name          | react-mathquill |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 5 |
-| # downloads        | 81420 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 6334.0 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/viktorstrate/react-mathquill#readme)
@@ -24,7 +24,7 @@ React component wrapper for Mathquill
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

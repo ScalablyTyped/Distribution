@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateResourceServerRequest extends StObject {
   
   /**
-    * A unique resource server identifier for the resource server. This could be an HTTPS endpoint where the resource server is located. For example, https://my-weather-api.example.com.
+    * A unique resource server identifier for the resource server. This could be an HTTPS endpoint where the resource server is located, such as https://my-weather-api.example.com.
     */
   var Identifier: ResourceServerIdentifierType
   
@@ -17,7 +17,7 @@ trait CreateResourceServerRequest extends StObject {
   var Name: ResourceServerNameType
   
   /**
-    * A list of scopes. Each scope is map, where the keys are name and description.
+    * A list of scopes. Each scope is a key-value map with the keys name and description.
     */
   var Scopes: js.UndefOr[ResourceServerScopeListType] = js.undefined
   
@@ -43,7 +43,7 @@ object CreateResourceServerRequest {
     
     inline def setScopesUndefined: Self = StObject.set(x, "Scopes", js.undefined)
     
-    inline def setScopesVarargs(value: ResourceServerScopeType*): Self = StObject.set(x, "Scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: ResourceServerScopeType*): Self = StObject.set(x, "Scopes", js.Array(value*))
     
     inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }

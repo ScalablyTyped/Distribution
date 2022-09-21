@@ -5,20 +5,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Children[T] extends StObject {
+trait Children extends StObject {
   
-  var children: js.UndefOr[js.Function1[/* args */ T, ReactNode]] = js.undefined
+  var children: ReactNode
 }
 object Children {
   
-  inline def apply[T](): Children[T] = {
+  inline def apply(): Children = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[Children[T]]
+    __obj.asInstanceOf[Children]
   }
   
-  extension [Self <: Children[?], T](x: Self & Children[T]) {
+  extension [Self <: Children](x: Self) {
     
-    inline def setChildren(value: /* args */ T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }

@@ -9,10 +9,10 @@ A multi-dimensional charting library built to work natively with crossfilter and
 | ------------------ | :-------------: |
 | Full name          | dc |
 | Keywords           | visualization, svg, animation, canvas, chart, dimensional, crossfilter, d3 |
-| # releases         | 29 |
-| # dependents       | 28 |
-| # downloads        | 1686025 |
-| # stars            | 4 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 51302.0 |
+| # stars            | 7342.0 |
 
 ## Links
 - [Homepage](http://dc-js.github.io/dc.js/)

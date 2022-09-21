@@ -11,7 +11,7 @@ object responseErrorMod {
   
   @JSImport("ts3-nodejs-library/lib/exception/ResponseError", "ResponseError")
   @js.native
-  class ResponseError protected ()
+  open class ResponseError protected ()
     extends StObject
        with Error {
     def this(error: QueryErrorMessage, stack: String) = this()
@@ -22,11 +22,13 @@ object responseErrorMod {
     
     val id: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
     val msg: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     

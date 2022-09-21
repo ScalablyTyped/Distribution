@@ -10,10 +10,10 @@ Typings are for version 2.0.3
 | ------------------ | :-------------: |
 | Full name          | fs-promise |
 | Keywords           | promise, fs, file, file system |
-| # releases         | 0 |
-| # dependents       | 564 |
-| # downloads        | 5634217 |
-| # stars            | 27 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 331912.0 |
+| # stars            | 171.0 |
 
 ## Links
 - [Homepage](https://github.com/kevinbeaty/fs-promise#readme)

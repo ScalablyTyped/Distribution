@@ -1,15 +1,10 @@
 package typings.autolinker
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object regexLibMod {
-  
-  @JSImport("autolinker/dist/commonjs/regex-lib", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
   
   @JSImport("autolinker/dist/commonjs/regex-lib", "alphaCharsAndMarksStr")
   @js.native
@@ -23,13 +18,17 @@ object regexLibMod {
   @js.native
   val alphaNumericAndMarksCharsStr: String = js.native
   
-  @JSImport("autolinker/dist/commonjs/regex-lib", "alphaNumericCharsStr")
+  @JSImport("autolinker/dist/commonjs/regex-lib", "alphaNumericAndMarksRe")
   @js.native
-  val alphaNumericCharsStr: String = js.native
+  val alphaNumericAndMarksRe: js.RegExp = js.native
+  
+  @JSImport("autolinker/dist/commonjs/regex-lib", "alphaNumericCharsRe")
+  @js.native
+  val alphaNumericCharsRe: js.RegExp = js.native
   
   @JSImport("autolinker/dist/commonjs/regex-lib", "controlCharsRe")
   @js.native
-  val controlCharsRe: RegExp = js.native
+  val controlCharsRe: js.RegExp = js.native
   
   @JSImport("autolinker/dist/commonjs/regex-lib", "decimalNumbersStr")
   @js.native
@@ -37,25 +36,15 @@ object regexLibMod {
   
   @JSImport("autolinker/dist/commonjs/regex-lib", "digitRe")
   @js.native
-  val digitRe: RegExp = js.native
-  
-  @JSImport("autolinker/dist/commonjs/regex-lib", "domainNameCharRegex")
-  @js.native
-  val domainNameCharRegex: RegExp = js.native
-  
-  @JSImport("autolinker/dist/commonjs/regex-lib", "domainNameRegex")
-  @js.native
-  val domainNameRegex: RegExp = js.native
+  val digitRe: js.RegExp = js.native
   
   @JSImport("autolinker/dist/commonjs/regex-lib", "emojiStr")
   @js.native
   val emojiStr: String = js.native
   
-  inline def getDomainNameStr(group: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainNameStr")(group.asInstanceOf[js.Any]).asInstanceOf[String]
-  
   @JSImport("autolinker/dist/commonjs/regex-lib", "letterRe")
   @js.native
-  val letterRe: RegExp = js.native
+  val letterRe: js.RegExp = js.native
   
   @JSImport("autolinker/dist/commonjs/regex-lib", "marksStr")
   @js.native
@@ -63,13 +52,13 @@ object regexLibMod {
   
   @JSImport("autolinker/dist/commonjs/regex-lib", "nonDigitRe")
   @js.native
-  val nonDigitRe: RegExp = js.native
+  val nonDigitRe: js.RegExp = js.native
   
   @JSImport("autolinker/dist/commonjs/regex-lib", "quoteRe")
   @js.native
-  val quoteRe: RegExp = js.native
+  val quoteRe: js.RegExp = js.native
   
   @JSImport("autolinker/dist/commonjs/regex-lib", "whitespaceRe")
   @js.native
-  val whitespaceRe: RegExp = js.native
+  val whitespaceRe: js.RegExp = js.native
 }

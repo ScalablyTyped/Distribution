@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PerformanceMonitor extends StObject {
   
-  /* private */ var _enabled: js.Any = js.native
+  /* private */ var _enabled: Any = js.native
   
-  /* private */ var _lastFrameTimeMs: js.Any = js.native
+  /* private */ var _lastFrameTimeMs: Any = js.native
   
-  /* private */ var _rollingFrameTime: js.Any = js.native
+  /* private */ var _rollingFrameTime: Any = js.native
   
   /**
     * Returns the average framerate in frames per second over the sliding window (or the subset of frames sampled so far)

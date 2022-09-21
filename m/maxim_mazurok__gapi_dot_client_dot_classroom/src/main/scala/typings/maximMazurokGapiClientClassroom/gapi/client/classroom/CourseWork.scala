@@ -36,6 +36,9 @@ trait CourseWork extends StObject {
   /** Optional time of day, in UTC, that submissions for this course work are due. This must be specified if `due_date` is specified. */
   var dueTime: js.UndefOr[TimeOfDay] = js.undefined
   
+  /** The category that this coursework's grade contributes to. Present only when a category has been chosen for the coursework. May be used in calculating the overall grade. Read-only. */
+  var gradeCategory: js.UndefOr[GradeCategory] = js.undefined
+  
   /** Classroom-assigned identifier of this course work, unique per course. Read-only. */
   var id: js.UndefOr[String] = js.undefined
   
@@ -127,6 +130,10 @@ object CourseWork {
     
     inline def setDueTimeUndefined: Self = StObject.set(x, "dueTime", js.undefined)
     
+    inline def setGradeCategory(value: GradeCategory): Self = StObject.set(x, "gradeCategory", value.asInstanceOf[js.Any])
+    
+    inline def setGradeCategoryUndefined: Self = StObject.set(x, "gradeCategory", js.undefined)
+    
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
@@ -139,7 +146,7 @@ object CourseWork {
     
     inline def setMaterialsUndefined: Self = StObject.set(x, "materials", js.undefined)
     
-    inline def setMaterialsVarargs(value: Material*): Self = StObject.set(x, "materials", js.Array(value :_*))
+    inline def setMaterialsVarargs(value: Material*): Self = StObject.set(x, "materials", js.Array(value*))
     
     inline def setMaxPoints(value: Double): Self = StObject.set(x, "maxPoints", value.asInstanceOf[js.Any])
     

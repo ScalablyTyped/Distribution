@@ -10,7 +10,7 @@ object anon {
   
   trait Dictindex
     extends StObject
-       with /* index */ StringDictionary[js.Any] {
+       with /* index */ StringDictionary[Any] {
     
     @JSName("$scope")
     var $scope: IScope

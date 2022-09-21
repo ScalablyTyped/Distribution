@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-map-gl", "StaticMap")
 @js.native
-class StaticMap protected ()
-  extends PureComponent[StaticMapProps, js.Object, js.Any] {
+open class StaticMap protected ()
+  extends PureComponent[StaticMapProps, js.Object, Any] {
   def this(props: StaticMapProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: StaticMapProps, context: js.Any) = this()
+  def this(props: StaticMapProps, context: Any) = this()
   
   def getMap(): Map = js.native
   

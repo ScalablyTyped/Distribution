@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Contacts.FullContactCardOptions")
 @js.native
 /** Initializes a new instance of the FullContactCardOptions class. */
-class FullContactCardOptions ()
+open class FullContactCardOptions ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.FullContactCardOptions {
   

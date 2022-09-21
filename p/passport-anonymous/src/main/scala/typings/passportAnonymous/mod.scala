@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("passport-anonymous", "Strategy")
   @js.native
-  class Strategy ()
+  open class Strategy ()
     extends StObject
        with typings.passport.mod.Strategy {
     

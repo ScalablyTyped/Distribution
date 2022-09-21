@@ -27,7 +27,7 @@ trait XURLTransformer
     *
     * Sometimes it can be useful to show an {@link URL} on an user interface in a more "human readable" form. Such {@link URL} can't be used on any API
     * call, but make it easier for the user to understand it.
-    * @param aURL {@link URL} in structured form which should be shown at the UI
+    * @param aURL in structured form which should be shown at the UI
     * @param bWithPassword specifies whether the password will be included in the encoding or not. Usually passwords should never be shown at the user interface.
     * @returns a string representing the **aURL** if it is syntactically correct. A empty string if **aURL** is not syntactically correct.
     */
@@ -62,7 +62,7 @@ object XURLTransformer {
     getPresentation: (URL, Boolean) => String,
     parseSmart: (js.Array[URL], String) => Boolean,
     parseStrict: js.Array[URL] => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XURLTransformer = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), assemble = js.Any.fromFunction1(assemble), getPresentation = js.Any.fromFunction2(getPresentation), parseSmart = js.Any.fromFunction2(parseSmart), parseStrict = js.Any.fromFunction1(parseStrict), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

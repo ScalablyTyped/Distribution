@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("xmlbuilder", "XMLProcessingInstruction")
 @js.native
-class XMLProcessingInstruction () extends XMLCharacterData {
+open class XMLProcessingInstruction () extends XMLCharacterData {
   
   /**  Instruction target
     */

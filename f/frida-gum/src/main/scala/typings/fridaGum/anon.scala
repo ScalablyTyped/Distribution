@@ -243,7 +243,7 @@ object anon {
   /* Inlined frida-gum.Java.Wrapper<{}> */
   trait Wrapper
     extends StObject
-       with /* name */ StringDictionary[js.Any] {
+       with /* name */ StringDictionary[Any] {
     
     /**
       * Allocates a new instance without initializing it.
@@ -251,7 +251,7 @@ object anon {
       * Call `$init()` to initialize it.
       */
     @JSName("$alloc")
-    def $alloc(params: js.Any*): js.Any
+    def $alloc(params: Any*): Any
     /**
       * Allocates a new instance without initializing it.
       *
@@ -284,7 +284,7 @@ object anon {
       * Replace the `implementation` property to hook a given constructor.
       */
     @JSName("$init")
-    def $init(params: js.Any*): js.Any
+    def $init(params: Any*): Any
     /**
       * Initializes an instance that was allocated but not yet initialized.
       * This wraps the constructor(s).
@@ -300,7 +300,7 @@ object anon {
       * Use this to create a new instance.
       */
     @JSName("$new")
-    def $new(params: js.Any*): js.Any
+    def $new(params: Any*): Any
     /**
       * Allocates and initializes a new instance of the given class.
       *
@@ -358,7 +358,7 @@ object anon {
       
       inline def set$ownMembers(value: js.Array[String]): Self = StObject.set(x, "$ownMembers", value.asInstanceOf[js.Any])
       
-      inline def set$ownMembersVarargs(value: String*): Self = StObject.set(x, "$ownMembers", js.Array(value :_*))
+      inline def set$ownMembersVarargs(value: String*): Self = StObject.set(x, "$ownMembers", js.Array(value*))
       
       inline def set$super(value: typings.fridaGum.Java.Wrapper[js.Object]): Self = StObject.set(x, "$super", value.asInstanceOf[js.Any])
       

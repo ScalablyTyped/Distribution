@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.TableBackground")
 @js.native
-/* private */ class TableBackground ()
+/* private */ open class TableBackground ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.TableBackground {
   

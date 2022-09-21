@@ -32,7 +32,7 @@ object FilterProperties {
     
     inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    inline def setMembersVarargs(value: FilterItem*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: FilterItem*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     

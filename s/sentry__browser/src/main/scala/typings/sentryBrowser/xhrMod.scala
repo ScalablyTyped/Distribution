@@ -1,30 +1,16 @@
 package typings.sentryBrowser
 
-import typings.sentryBrowser.baseMod.BaseTransport
-import typings.sentryTypes.responseMod.Response
-import typings.sentryTypes.sessionMod.Session
-import typings.sentryTypes.transportMod.TransportOptions
+import typings.sentryBrowser.typesMod.BrowserTransportOptions
+import typings.sentryTypes.transportMod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xhrMod {
   
-  @JSImport("@sentry/browser/dist/transports/xhr", "XHRTransport")
+  @JSImport("@sentry/browser/types/transports/xhr", JSImport.Namespace)
   @js.native
-  class XHRTransport protected () extends BaseTransport {
-    def this(options: TransportOptions) = this()
-    
-    /**
-      * @param sentryRequest Prepared SentryRequest to be delivered
-      * @param originalPayload Original payload used to create SentryRequest
-      */
-    /* private */ var _sendRequest: js.Any = js.native
-    
-    /**
-      * @inheritDoc
-      */
-    @JSName("sendSession")
-    def sendSession_MXHRTransport(session: Session): js.Thenable[Response] = js.native
-  }
+  val ^ : js.Any = js.native
+  
+  inline def makeXHRTransport(options: BrowserTransportOptions): Transport = ^.asInstanceOf[js.Dynamic].applyDynamic("makeXHRTransport")(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
 }

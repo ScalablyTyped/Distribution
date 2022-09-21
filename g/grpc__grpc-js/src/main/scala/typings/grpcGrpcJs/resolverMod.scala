@@ -4,8 +4,13 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
 import typings.grpcGrpcJs.callStreamMod.StatusObject
 import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
+import typings.grpcGrpcJs.constantsMod.Status
+import typings.grpcGrpcJs.filterMod.Filter
+import typings.grpcGrpcJs.filterMod.FilterFactory
+import typings.grpcGrpcJs.metadataMod.Metadata
+import typings.grpcGrpcJs.serviceConfigMod.MethodConfig
 import typings.grpcGrpcJs.serviceConfigMod.ServiceConfig
-import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
+import typings.grpcGrpcJs.subchannelAddressMod.SubchannelAddress
 import typings.grpcGrpcJs.uriParserMod.GrpcUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,13 +28,60 @@ object resolverMod {
   
   inline def mapUriDefaultScheme(target: GrpcUri): GrpcUri | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("mapUriDefaultScheme")(target.asInstanceOf[js.Any]).asInstanceOf[GrpcUri | Null]
   
-  inline def registerAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAll")().asInstanceOf[Unit]
-  
   inline def registerDefaultScheme(scheme: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDefaultScheme")(scheme.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def registerResolver(scheme: String, resolverClass: ResolverConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResolver")(scheme.asInstanceOf[js.Any], resolverClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  trait CallConfig extends StObject {
+    
+    var dynamicFilterFactories: js.Array[FilterFactory[Filter]]
+    
+    var methodConfig: MethodConfig
+    
+    var onCommitted: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var pickInformation: StringDictionary[String]
+    
+    var status: Status
+  }
+  object CallConfig {
+    
+    inline def apply(
+      dynamicFilterFactories: js.Array[FilterFactory[Filter]],
+      methodConfig: MethodConfig,
+      pickInformation: StringDictionary[String],
+      status: Status
+    ): CallConfig = {
+      val __obj = js.Dynamic.literal(dynamicFilterFactories = dynamicFilterFactories.asInstanceOf[js.Any], methodConfig = methodConfig.asInstanceOf[js.Any], pickInformation = pickInformation.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CallConfig]
+    }
+    
+    extension [Self <: CallConfig](x: Self) {
+      
+      inline def setDynamicFilterFactories(value: js.Array[FilterFactory[Filter]]): Self = StObject.set(x, "dynamicFilterFactories", value.asInstanceOf[js.Any])
+      
+      inline def setDynamicFilterFactoriesVarargs(value: FilterFactory[Filter]*): Self = StObject.set(x, "dynamicFilterFactories", js.Array(value*))
+      
+      inline def setMethodConfig(value: MethodConfig): Self = StObject.set(x, "methodConfig", value.asInstanceOf[js.Any])
+      
+      inline def setOnCommitted(value: () => Unit): Self = StObject.set(x, "onCommitted", js.Any.fromFunction0(value))
+      
+      inline def setOnCommittedUndefined: Self = StObject.set(x, "onCommitted", js.undefined)
+      
+      inline def setPickInformation(value: StringDictionary[String]): Self = StObject.set(x, "pickInformation", value.asInstanceOf[js.Any])
+      
+      inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type ConfigSelector = js.Function2[/* methodName */ String, /* metadata */ Metadata, CallConfig]
+  
   trait Resolver extends StObject {
+    
+    /**
+      * Destroy the resolver. Should be called when the owning channel shuts down.
+      */
+    def destroy(): Unit
     
     /**
       * Indicates that the caller wants new name resolution data. Calling this
@@ -41,12 +93,14 @@ object resolverMod {
   }
   object Resolver {
     
-    inline def apply(updateResolution: () => Unit): Resolver = {
-      val __obj = js.Dynamic.literal(updateResolution = js.Any.fromFunction0(updateResolution))
+    inline def apply(destroy: () => Unit, updateResolution: () => Unit): Resolver = {
+      val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), updateResolution = js.Any.fromFunction0(updateResolution))
       __obj.asInstanceOf[Resolver]
     }
     
     extension [Self <: Resolver](x: Self) {
+      
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
       inline def setUpdateResolution(value: () => Unit): Self = StObject.set(x, "updateResolution", js.Any.fromFunction0(value))
     }
@@ -84,19 +138,50 @@ object resolverMod {
       addressList: js.Array[SubchannelAddress],
       serviceConfig: Null,
       serviceConfigError: Null,
-      attributes: StringDictionary[js.Any]
+      configSelector: Null,
+      attributes: StringDictionary[Any]
+    ): Unit = js.native
+    def onSuccessfulResolution(
+      addressList: js.Array[SubchannelAddress],
+      serviceConfig: Null,
+      serviceConfigError: Null,
+      configSelector: ConfigSelector,
+      attributes: StringDictionary[Any]
     ): Unit = js.native
     def onSuccessfulResolution(
       addressList: js.Array[SubchannelAddress],
       serviceConfig: Null,
       serviceConfigError: StatusObject,
-      attributes: StringDictionary[js.Any]
+      configSelector: Null,
+      attributes: StringDictionary[Any]
+    ): Unit = js.native
+    def onSuccessfulResolution(
+      addressList: js.Array[SubchannelAddress],
+      serviceConfig: Null,
+      serviceConfigError: StatusObject,
+      configSelector: ConfigSelector,
+      attributes: StringDictionary[Any]
     ): Unit = js.native
     def onSuccessfulResolution(
       addressList: js.Array[SubchannelAddress],
       serviceConfig: ServiceConfig,
       serviceConfigError: Null,
-      attributes: StringDictionary[js.Any]
+      configSelector: Null,
+      attributes: StringDictionary[Any]
+    ): Unit = js.native
+    def onSuccessfulResolution(
+      addressList: js.Array[SubchannelAddress],
+      serviceConfig: ServiceConfig,
+      serviceConfigError: Null,
+      configSelector: ConfigSelector,
+      attributes: StringDictionary[Any]
+    ): Unit = js.native
+    def onSuccessfulResolution(
+      addressList: js.Array[SubchannelAddress],
+      serviceConfig: ServiceConfig,
+      serviceConfigError: StatusObject,
+      configSelector: Null,
+      attributes: StringDictionary[Any]
     ): Unit = js.native
     /**
       * Called whenever the resolver has new name resolution results to report
@@ -111,7 +196,8 @@ object resolverMod {
       addressList: js.Array[SubchannelAddress],
       serviceConfig: ServiceConfig,
       serviceConfigError: StatusObject,
-      attributes: StringDictionary[js.Any]
+      configSelector: ConfigSelector,
+      attributes: StringDictionary[Any]
     ): Unit = js.native
   }
 }

@@ -10,7 +10,7 @@ trait LineReaderOptions extends StObject {
   
   var encoding: js.UndefOr[String] = js.undefined
   
-  var separator: js.UndefOr[js.Any] = js.undefined
+  var separator: js.UndefOr[Any] = js.undefined
 }
 object LineReaderOptions {
   
@@ -29,7 +29,7 @@ object LineReaderOptions {
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    inline def setSeparator(value: js.Any): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: Any): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
   }

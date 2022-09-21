@@ -12,7 +12,7 @@ trait RequireError
   /**
     * The original error, if there is one (might be null).
     **/
-  var originalError: Error
+  var originalError: js.Error
   
   /**
     * Required modules.
@@ -26,20 +26,20 @@ trait RequireError
 }
 object RequireError {
   
-  inline def apply(message: String, name: String, originalError: Error, requireType: String): RequireError = {
+  inline def apply(message: String, name: String, originalError: js.Error, requireType: String): RequireError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], originalError = originalError.asInstanceOf[js.Any], requireType = requireType.asInstanceOf[js.Any], requireModules = null)
     __obj.asInstanceOf[RequireError]
   }
   
   extension [Self <: RequireError](x: Self) {
     
-    inline def setOriginalError(value: Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
+    inline def setOriginalError(value: js.Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
     
     inline def setRequireModules(value: js.Array[String]): Self = StObject.set(x, "requireModules", value.asInstanceOf[js.Any])
     
     inline def setRequireModulesNull: Self = StObject.set(x, "requireModules", null)
     
-    inline def setRequireModulesVarargs(value: String*): Self = StObject.set(x, "requireModules", js.Array(value :_*))
+    inline def setRequireModulesVarargs(value: String*): Self = StObject.set(x, "requireModules", js.Array(value*))
     
     inline def setRequireType(value: String): Self = StObject.set(x, "requireType", value.asInstanceOf[js.Any])
   }

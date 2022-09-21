@@ -10,7 +10,7 @@ trait FieldConfig[T /* <: js.Object */] extends StObject {
   
   var isEmail: js.UndefOr[SimpleValidator[T]] = js.undefined
   
-  var isEqual: js.UndefOr[ValueValidator[js.Any, T]] = js.undefined
+  var isEqual: js.UndefOr[ValueValidator[Any, T]] = js.undefined
   
   var isExactLength: js.UndefOr[LengthValidator[T]] = js.undefined
   
@@ -51,9 +51,9 @@ object FieldConfig {
     
     inline def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
     
-    inline def setIsEqual(value: ValueValidator[js.Any, T]): Self = StObject.set(x, "isEqual", value.asInstanceOf[js.Any])
+    inline def setIsEqual(value: ValueValidator[Any, T]): Self = StObject.set(x, "isEqual", value.asInstanceOf[js.Any])
     
-    inline def setIsEqualFunction1(value: /* context */ ValidatorContext[T] => ValueValidatorConfig[js.Any, T]): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    inline def setIsEqualFunction1(value: /* context */ ValidatorContext[T] => ValueValidatorConfig[Any, T]): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
     inline def setIsEqualUndefined: Self = StObject.set(x, "isEqual", js.undefined)
     

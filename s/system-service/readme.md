@@ -10,10 +10,10 @@ Typings are for version 1.3
 | ------------------ | :-------------: |
 | Full name          | system-service |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 546 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 60.666666666666664 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/leocwlam/system-service#readme)

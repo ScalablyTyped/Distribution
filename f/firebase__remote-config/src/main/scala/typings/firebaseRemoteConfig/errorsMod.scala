@@ -5,6 +5,7 @@ import typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`fetch-client-pa
 import typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`fetch-status`
 import typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`fetch-throttle`
 import typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`fetch-timeout`
+import typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`indexed-db-unavailable`
 import typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`registration-api-key`
 import typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`registration-app-id`
 import typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`registration-project-id`
@@ -14,22 +15,21 @@ import typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`storage-get`
 import typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`storage-open`
 import typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`storage-set`
 import typings.firebaseUtil.mod.ErrorFactory
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
   
-  @JSImport("@firebase/remote-config/dist/src/errors", JSImport.Namespace)
+  @JSImport("@firebase/remote-config/dist/esm/src/errors", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@firebase/remote-config/dist/src/errors", "ERROR_FACTORY")
+  @JSImport("@firebase/remote-config/dist/esm/src/errors", "ERROR_FACTORY")
   @js.native
   val ERROR_FACTORY: ErrorFactory[ErrorCode, ErrorParams] = js.native
   
-  inline def hasErrorCode(e: Error, errorCode: ErrorCode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasErrorCode")(e.asInstanceOf[js.Any], errorCode.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasErrorCode(e: js.Error, errorCode: ErrorCode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasErrorCode")(e.asInstanceOf[js.Any], errorCode.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`registration-window`
@@ -45,6 +45,7 @@ object errorsMod {
     - typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`fetch-throttle`
     - typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`fetch-client-parse`
     - typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`fetch-status`
+    - typings.firebaseRemoteConfig.firebaseRemoteConfigStrings.`indexed-db-unavailable`
   */
   trait ErrorCode extends StObject
   object ErrorCode {
@@ -58,6 +59,8 @@ object errorsMod {
     inline def FETCH_THROTTLE: `fetch-throttle` = "fetch-throttle".asInstanceOf[`fetch-throttle`]
     
     inline def FETCH_TIMEOUT: `fetch-timeout` = "fetch-timeout".asInstanceOf[`fetch-timeout`]
+    
+    inline def INDEXED_DB_UNAVAILABLE: `indexed-db-unavailable` = "indexed-db-unavailable".asInstanceOf[`indexed-db-unavailable`]
     
     inline def REGISTRATION_API_KEY: `registration-api-key` = "registration-api-key".asInstanceOf[`registration-api-key`]
     

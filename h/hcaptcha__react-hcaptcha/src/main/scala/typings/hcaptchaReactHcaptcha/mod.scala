@@ -14,11 +14,10 @@ object mod {
   
   @JSImport("@hcaptcha/react-hcaptcha", JSImport.Namespace)
   @js.native
-  class ^ () extends HCaptcha
+  open class ^ () extends HCaptcha
   
   @js.native
-  trait HCaptcha
-    extends Component[HCaptchaProps, HCaptchaState, js.Any] {
+  trait HCaptcha extends Component[HCaptchaProps, HCaptchaState, Any] {
     
     def execute(): Unit = js.native
     
@@ -35,11 +34,11 @@ object mod {
     
     var languageOverride: js.UndefOr[String] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* event */ String, js.Any]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* event */ String, Any]] = js.undefined
     
-    var onExpire: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onExpire: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var onVerify: js.UndefOr[js.Function1[/* token */ String, js.Any]] = js.undefined
+    var onVerify: js.UndefOr[js.Function1[/* token */ String, Any]] = js.undefined
     
     var reCaptchaCompat: js.UndefOr[Boolean] = js.undefined
     
@@ -68,15 +67,15 @@ object mod {
       
       inline def setLanguageOverrideUndefined: Self = StObject.set(x, "languageOverride", js.undefined)
       
-      inline def setOnError(value: /* event */ String => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* event */ String => Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnExpire(value: () => js.Any): Self = StObject.set(x, "onExpire", js.Any.fromFunction0(value))
+      inline def setOnExpire(value: () => Any): Self = StObject.set(x, "onExpire", js.Any.fromFunction0(value))
       
       inline def setOnExpireUndefined: Self = StObject.set(x, "onExpire", js.undefined)
       
-      inline def setOnVerify(value: /* token */ String => js.Any): Self = StObject.set(x, "onVerify", js.Any.fromFunction1(value))
+      inline def setOnVerify(value: /* token */ String => Any): Self = StObject.set(x, "onVerify", js.Any.fromFunction1(value))
       
       inline def setOnVerifyUndefined: Self = StObject.set(x, "onVerify", js.undefined)
       

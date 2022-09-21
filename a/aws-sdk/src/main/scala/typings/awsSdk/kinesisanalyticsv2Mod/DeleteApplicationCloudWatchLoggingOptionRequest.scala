@@ -17,18 +17,19 @@ trait DeleteApplicationCloudWatchLoggingOptionRequest extends StObject {
   var CloudWatchLoggingOptionId: Id
   
   /**
-    * The version ID of the application. You can retrieve the application version ID using DescribeApplication.
+    * A value you use to implement strong concurrency for application updates. You must provide the CurrentApplicationVersionId or the ConditionalToken. You get the application's current ConditionalToken using DescribeApplication. For better concurrency support, use the ConditionalToken parameter instead of CurrentApplicationVersionId.
     */
-  var CurrentApplicationVersionId: ApplicationVersionId
+  var ConditionalToken: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ConditionalToken] = js.undefined
+  
+  /**
+    * The version ID of the application. You must provide the CurrentApplicationVersionId or the ConditionalToken. You can retrieve the application version ID using DescribeApplication. For better concurrency support, use the ConditionalToken parameter instead of CurrentApplicationVersionId.
+    */
+  var CurrentApplicationVersionId: js.UndefOr[ApplicationVersionId] = js.undefined
 }
 object DeleteApplicationCloudWatchLoggingOptionRequest {
   
-  inline def apply(
-    ApplicationName: ApplicationName,
-    CloudWatchLoggingOptionId: Id,
-    CurrentApplicationVersionId: ApplicationVersionId
-  ): DeleteApplicationCloudWatchLoggingOptionRequest = {
-    val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CloudWatchLoggingOptionId = CloudWatchLoggingOptionId.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any])
+  inline def apply(ApplicationName: ApplicationName, CloudWatchLoggingOptionId: Id): DeleteApplicationCloudWatchLoggingOptionRequest = {
+    val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CloudWatchLoggingOptionId = CloudWatchLoggingOptionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApplicationCloudWatchLoggingOptionRequest]
   }
   
@@ -38,6 +39,12 @@ object DeleteApplicationCloudWatchLoggingOptionRequest {
     
     inline def setCloudWatchLoggingOptionId(value: Id): Self = StObject.set(x, "CloudWatchLoggingOptionId", value.asInstanceOf[js.Any])
     
+    inline def setConditionalToken(value: ConditionalToken): Self = StObject.set(x, "ConditionalToken", value.asInstanceOf[js.Any])
+    
+    inline def setConditionalTokenUndefined: Self = StObject.set(x, "ConditionalToken", js.undefined)
+    
     inline def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentApplicationVersionIdUndefined: Self = StObject.set(x, "CurrentApplicationVersionId", js.undefined)
   }
 }

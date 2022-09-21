@@ -10,9 +10,9 @@ trait BoardOption extends StObject {
   
   var id: js.UndefOr[Double | String] = js.undefined
   
-  var io: js.UndefOr[js.Any] = js.undefined
+  var io: js.UndefOr[Any] = js.undefined
   
-  var port: js.UndefOr[String | js.Any] = js.undefined
+  var port: js.UndefOr[String | Any] = js.undefined
   
   var repl: js.UndefOr[Boolean] = js.undefined
   
@@ -35,11 +35,11 @@ object BoardOption {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setIo(value: js.Any): Self = StObject.set(x, "io", value.asInstanceOf[js.Any])
+    inline def setIo(value: Any): Self = StObject.set(x, "io", value.asInstanceOf[js.Any])
     
     inline def setIoUndefined: Self = StObject.set(x, "io", js.undefined)
     
-    inline def setPort(value: String | js.Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: String | Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     

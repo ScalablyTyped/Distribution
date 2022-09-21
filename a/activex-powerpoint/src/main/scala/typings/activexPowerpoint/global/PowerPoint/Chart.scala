@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Chart")
 @js.native
-/* private */ class Chart ()
+/* private */ open class Chart ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Chart

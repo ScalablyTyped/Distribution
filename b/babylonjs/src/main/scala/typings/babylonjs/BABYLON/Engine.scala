@@ -1,17 +1,20 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.HTMLCanvasElement
-import typings.babylonjs.ImageBitmap
 import typings.babylonjs.WebGLProgram
 import typings.babylonjs.WebGLUniformLocation
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
+import typings.babylonjs.anon.Ascent
 import typings.std.ClientRect
 import typings.std.HTMLElement
 import typings.std.HTMLImageElement
+import typings.std.ImageBitmap
+import typings.std.ImageBitmapOptions
+import typings.std.ImageBitmapSource
+import typings.std.MediaTrackConstraints
 import typings.std.PointerEvent
 import typings.std.WebGLBuffer
 import typings.std.WebGLQuery
+import typings.std.WebGLTexture
 import typings.std.WebGLTransformFeedback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,27 +25,46 @@ trait Engine
   extends StObject
      with ThinEngine {
   
-  /* private */ var _cachedStencilBuffer: js.Any = js.native
+  /* private */ var _cachedStencilBuffer: Any = js.native
   
-  /* private */ var _cachedStencilFunction: js.Any = js.native
+  /* private */ var _cachedStencilFunction: Any = js.native
   
-  /* private */ var _cachedStencilMask: js.Any = js.native
+  /* private */ var _cachedStencilMask: Any = js.native
   
-  /* private */ var _cachedStencilOperationDepthFail: js.Any = js.native
+  /* private */ var _cachedStencilOperationDepthFail: Any = js.native
   
-  /* private */ var _cachedStencilOperationFail: js.Any = js.native
+  /* private */ var _cachedStencilOperationFail: Any = js.native
   
-  /* private */ var _cachedStencilOperationPass: js.Any = js.native
+  /* private */ var _cachedStencilOperationPass: Any = js.native
   
-  /* private */ var _cachedStencilReference: js.Any = js.native
-  
-  /* private */ var _clientWaitAsync: js.Any = js.native
+  /* private */ var _cachedStencilReference: Any = js.native
   
   /** @hidden */
+  var _captureGPUFrameTime: Boolean = js.native
+  
+  /* private */ var _clientWaitAsync: Any = js.native
+  
+  /* protected */ var _compatibilityMode: Boolean = js.native
+  
+  /**
+    * @param canvas
+    * @param document
+    * @hidden
+    */
   def _connectVREvents(): Unit = js.native
-  def _connectVREvents(canvas: Unit, document: js.Any): Unit = js.native
+  def _connectVREvents(canvas: Unit, document: Any): Unit = js.native
   def _connectVREvents(canvas: HTMLCanvasElement): Unit = js.native
-  def _connectVREvents(canvas: HTMLCanvasElement, document: js.Any): Unit = js.native
+  def _connectVREvents(canvas: HTMLCanvasElement, document: Any): Unit = js.native
+  
+  /** @hidden */
+  /**
+    * Engine abstraction for loading and creating an image bitmap from a given source string.
+    * @param imageSource source to load the image from.
+    * @param options An object that sets options for the image's extraction.
+    * @returns ImageBitmap.
+    */
+  def _createImageBitmapFromSource(imageSource: String): js.Promise[ImageBitmap] = js.native
+  def _createImageBitmapFromSource(imageSource: String, options: ImageBitmapOptions): js.Promise[ImageBitmap] = js.native
   
   /** @hidden */
   def _createTimeQuery(): WebGLQuery = js.native
@@ -53,11 +75,14 @@ trait Engine
   /** @hidden */
   def _deleteTimeQuery(query: WebGLQuery): Unit = js.native
   
-  /* private */ var _deltaTime: js.Any = js.native
+  /* private */ var _deltaTime: Any = js.native
   
-  /* private */ var _deterministicLockstep: js.Any = js.native
+  /* protected */ var _deterministicLockstep: Boolean = js.native
   
-  /* private */ var _disableTouchAction: js.Any = js.native
+  /** @hidden */
+  var _deviceSourceManager: js.UndefOr[InternalDeviceSourceManager] = js.native
+  
+  /* private */ var _disableTouchAction: Any = js.native
   
   /** @hidden */
   var _drawCalls: PerfCounter = js.native
@@ -65,31 +90,45 @@ trait Engine
   /** @hidden */
   var _excludedCompressedTextures: js.Array[String] = js.native
   
-  /* private */ var _fps: js.Any = js.native
+  /* private */ var _fps: Any = js.native
   
   /** @hidden */
   def _getGlAlgorithmType(algorithmType: Double): Double = js.native
   
   /** @hidden */
-  def _getTimeQueryAvailability(query: WebGLQuery): js.Any = js.native
+  def _getTimeQueryAvailability(query: WebGLQuery): Any = js.native
   
   /** @hidden */
-  def _getTimeQueryResult(query: WebGLQuery): js.Any = js.native
+  def _getTimeQueryResult(query: WebGLQuery): Any = js.native
   
   /** @hidden */
   def _getVRDisplaysAsync(): js.Promise[IDisplayChangedEventArgs] = js.native
   
   /** @hidden */
-  def _loadFileAsync(url: String): js.Promise[String | ArrayBuffer] = js.native
-  def _loadFileAsync(url: String, offlineProvider: Unit, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
-  def _loadFileAsync(url: String, offlineProvider: IOfflineProvider): js.Promise[String | ArrayBuffer] = js.native
-  def _loadFileAsync(url: String, offlineProvider: IOfflineProvider, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
+  var _gpuFrameTime: PerfCounter = js.native
   
-  /* private */ var _loadingScreen: js.Any = js.native
+  /** @hidden */
+  var _gpuFrameTimeToken: Nullable[TimeToken] = js.native
   
-  /* private */ var _lockstepMaxSteps: js.Any = js.native
+  /** @hidden */
+  var _inputElement: Nullable[HTMLElement] = js.native
   
-  /* private */ var _measureFps: js.Any = js.native
+  /**
+    * @param url
+    * @param offlineProvider
+    * @param useArrayBuffer
+    * @hidden
+    */
+  def _loadFileAsync(url: String): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+  def _loadFileAsync(url: String, offlineProvider: Unit, useArrayBuffer: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+  def _loadFileAsync(url: String, offlineProvider: IOfflineProvider): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+  def _loadFileAsync(url: String, offlineProvider: IOfflineProvider, useArrayBuffer: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+  
+  /* private */ var _loadingScreen: Any = js.native
+  
+  /* protected */ var _lockstepMaxSteps: Double = js.native
+  
+  /* private */ var _measureFps: Any = js.native
   
   /** @hidden */
   var _oldHardwareScaleFactor: Double = js.native
@@ -97,19 +136,33 @@ trait Engine
   /** @hidden */
   var _oldSize: Size = js.native
   
-  /* private */ var _onBlur: js.Any = js.native
+  /** @hidden */
+  var _onBeginFrameObserver: Nullable[Observer[Engine]] = js.native
   
-  /* private */ var _onCanvasBlur: js.Any = js.native
+  /* private */ var _onBlur: Any = js.native
   
-  /* private */ var _onCanvasFocus: js.Any = js.native
+  /* private */ var _onCanvasBlur: Any = js.native
   
-  /* private */ var _onCanvasPointerOut: js.Any = js.native
+  /* private */ var _onCanvasContextMenu: Any = js.native
   
-  /* private */ var _onFocus: js.Any = js.native
+  /* private */ var _onCanvasFocus: Any = js.native
   
-  /* private */ var _onFullscreenChange: js.Any = js.native
+  /* private */ var _onCanvasPointerOut: Any = js.native
   
-  /* private */ var _onPointerLockChange: js.Any = js.native
+  /** @hidden */
+  var _onEndFrameObserver: Nullable[Observer[Engine]] = js.native
+  
+  /**
+    * Observable to handle when a change to inputElement occurs
+    * @hidden
+    */
+  var _onEngineViewChanged: js.UndefOr[js.Function0[Unit]] = js.native
+  
+  /* private */ var _onFocus: Any = js.native
+  
+  /* private */ var _onFullscreenChange: Any = js.native
+  
+  /* private */ var _onPointerLockChange: Any = js.native
   
   /** @hidden */
   def _onVRDisplayPointerRestricted(): Unit = js.native
@@ -121,7 +174,7 @@ trait Engine
   def _onVRFullScreenTriggered(): Unit = js.native
   
   /** @hidden */
-  var _onVrDisplayConnect: Nullable[js.Function1[/* display */ js.Any, Unit]] = js.native
+  var _onVrDisplayConnect: Nullable[js.Function1[/* display */ Any, Unit]] = js.native
   
   /** @hidden */
   var _onVrDisplayDisconnect: Nullable[js.Function0[Unit]] = js.native
@@ -129,14 +182,23 @@ trait Engine
   /** @hidden */
   var _onVrDisplayPresentChange: Nullable[js.Function0[Unit]] = js.native
   
-  /* private */ var _performanceMonitor: js.Any = js.native
+  /* private */ var _performanceMonitor: Any = js.native
   
-  /* private */ var _pointerLockRequested: js.Any = js.native
+  /* private */ var _pointerLockRequested: Any = js.native
   
   /** @hidden */
   def _prepareVRComponent(): Unit = js.native
   
-  /** @hidden */
+  /**
+    * @param x
+    * @param y
+    * @param w
+    * @param h
+    * @param format
+    * @param type
+    * @param outputBuffer
+    * @hidden
+    */
   def _readPixelsAsync(
     x: Double,
     y: Double,
@@ -144,19 +206,23 @@ trait Engine
     h: Double,
     format: Double,
     `type`: Double,
-    outputBuffer: ArrayBufferView
-  ): js.Promise[ArrayBufferView] | Null = js.native
+    outputBuffer: js.typedarray.ArrayBufferView
+  ): js.Promise[js.typedarray.ArrayBufferView] | Null = js.native
   
   /** @hidden */
   def _renderFrame(): Unit = js.native
   
+  /* private */ var _renderPassNames: Any = js.native
+  
   /** @hidden */
   def _renderViews(): Boolean = js.native
+  
+  def _reportDrawCall(numDrawCalls: Double): Unit = js.native
   
   /** @hidden */
   def _requestVRFrame(): Unit = js.native
   
-  /* private */ var _rescalePostProcess: js.Any = js.native
+  /* private */ var _rescalePostProcess: Any = js.native
   
   /** @hidden */
   def _submitVRFrame(): Unit = js.native
@@ -164,20 +230,29 @@ trait Engine
   /** @hidden */
   var _textureFormatInUse: String = js.native
   
-  /* private */ var _timeStep: js.Any = js.native
+  /* protected */ var _timeStep: Double = js.native
   
-  def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap): Unit = js.native
-  def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: Double): Unit = js.native
-  def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: Double, lod: Double): Unit = js.native
-  def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: Unit, lod: Double): Unit = js.native
-  /** @hidden */
+  /**
+    * @param texture
+    * @param image
+    * @param faceIndex
+    * @param lod
+    * @hidden
+    */
   def _uploadImageToTexture(texture: InternalTexture, image: HTMLImageElement): Unit = js.native
   def _uploadImageToTexture(texture: InternalTexture, image: HTMLImageElement, faceIndex: Double): Unit = js.native
   def _uploadImageToTexture(texture: InternalTexture, image: HTMLImageElement, faceIndex: Double, lod: Double): Unit = js.native
   def _uploadImageToTexture(texture: InternalTexture, image: HTMLImageElement, faceIndex: Unit, lod: Double): Unit = js.native
+  def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap): Unit = js.native
+  def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: Double): Unit = js.native
+  def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: Double, lod: Double): Unit = js.native
+  def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: Unit, lod: Double): Unit = js.native
   
   /** @hidden */
-  var _vrDisplay: js.Any = js.native
+  var _virtualScenes: js.Array[Scene] = js.native
+  
+  /** @hidden */
+  var _vrDisplay: Any = js.native
   
   /** @hidden */
   var _vrExclusivePointerMode: Boolean = js.native
@@ -201,7 +276,7 @@ trait Engine
     * @returns the current engine
     * @see https://doc.babylonjs.com/features/occlusionquery
     */
-  def beginOcclusionQuery(algorithmType: Double, query: WebGLQuery): Engine = js.native
+  def beginOcclusionQuery(algorithmType: Double, query: OcclusionQuery): Boolean = js.native
   
   /**
     * Begins a transform feedback operation
@@ -210,10 +285,10 @@ trait Engine
   def beginTransformFeedback(usePoints: Boolean): Unit = js.native
   
   /**
-    * Binds a multiview framebuffer to be drawn to
-    * @param multiviewTexture texture to bind
+    * Binds a multiview render target wrapper to be drawn to
+    * @param multiviewTexture render target wrapper to bind
     */
-  def bindMultiviewFramebuffer(multiviewTexture: InternalTexture): Unit = js.native
+  def bindMultiviewFramebuffer(multiviewTexture: RenderTargetWrapper): Unit = js.native
   
   /**
     * Bind a webGL transform feedback object to the webgl context
@@ -236,6 +311,20 @@ trait Engine
   var canvasTabIndex: Double = js.native
   
   /**
+    * Enable or disable the GPU frame time capture
+    * @param value True to enable, false to disable
+    */
+  def captureGPUFrameTime(value: Boolean): Unit = js.native
+  
+  /**
+    * (WebGPU only) True (default) to be in compatibility mode, meaning rendering all existing scenes without artifacts (same rendering than WebGL).
+    * Setting the property to false will improve performances but may not work in some scenes if some precautions are not taken.
+    * See https://doc.babylonjs.com/advanced_topics/webGPU/webGPUOptimization/webGPUNonCompatibilityMode for more details
+    */
+  def compatibilityMode: Boolean = js.native
+  def compatibilityMode_=(mode: Boolean): Unit = js.native
+  
+  /**
     * Create an effect to use with particle systems.
     * Please note that some parameters like animation sheets or not being billboard are not supported in this configuration, except if you pass
     * the particle system for which you want to create a custom effect in the last parameter
@@ -243,7 +332,7 @@ trait Engine
     * @param uniformsNames defines a list of attribute names
     * @param samplers defines an array of string used to represent textures
     * @param defines defines the string containing the defines to use to compile the shaders
-    * @param fallbacks defines the list of potential fallbacks to use if shader conmpilation fails
+    * @param fallbacks defines the list of potential fallbacks to use if shader compilation fails
     * @param onCompiled defines a function to call when the effect creation is successful
     * @param onError defines a function to call when the effect creation has failed
     * @param particleSystem the particle system you want to create the effect for
@@ -391,7 +480,16 @@ trait Engine
   ): Effect = js.native
   
   /**
-    * Creates a webGL buffer to use with instanciation
+    * Engine abstraction for createImageBitmap
+    * @param image source for image
+    * @param options An object that sets options for the image's extraction.
+    * @returns ImageBitmap
+    */
+  def createImageBitmap(image: ImageBitmapSource): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: ImageBitmapSource, options: ImageBitmapOptions): js.Promise[ImageBitmap] = js.native
+  
+  /**
+    * Creates a webGL buffer to use with instantiation
     * @param capacity defines the size of the buffer
     * @returns the webGL buffer
     */
@@ -401,15 +499,23 @@ trait Engine
     * Creates a new multiview render target
     * @param width defines the width of the texture
     * @param height defines the height of the texture
-    * @returns the created multiview texture
+    * @returns the created multiview render target wrapper
     */
-  def createMultiviewRenderTargetTexture(width: Double, height: Double): InternalTexture = js.native
+  def createMultiviewRenderTargetTexture(width: Double, height: Double): RenderTargetWrapper = js.native
   
   /**
     * Create a new webGL query (you must be sure that queries are supported by checking getCaps() function)
-    * @return the new query
+    * @returns the new query
     */
-  def createQuery(): WebGLQuery = js.native
+  def createQuery(): OcclusionQuery = js.native
+  
+  /**
+    * Creates a render pass id
+    * @param name Name of the render pass (for debug purpose only)
+    * @returns the id of the new render pass
+    */
+  def createRenderPassId(): Double = js.native
+  def createRenderPassId(name: String): Double = js.native
   
   /**
     * Creates a webGL transform feedback object
@@ -419,12 +525,24 @@ trait Engine
   def createTransformFeedback(): WebGLTransformFeedback = js.native
   
   /**
+    * creates and returns a new video element
+    * @param constraints video constraints
+    * @returns video element
+    */
+  def createVideoElement(constraints: MediaTrackConstraints): Any = js.native
+  
+  /**
+    * Gets or sets the current render pass id
+    */
+  var currentRenderPassId: Double = js.native
+  
+  /**
     * If set, will be used to request the next animation frame for the render loop
     */
   var customAnimationFrameRequester: Nullable[ICustomAnimationFrameRequester] = js.native
   
   /**
-    * Delete a webGL buffer used with instanciation
+    * Delete a webGL buffer used with instantiation
     * @param buffer defines the webGL buffer to delete
     */
   def deleteInstancesBuffer(buffer: WebGLBuffer): Unit = js.native
@@ -432,15 +550,20 @@ trait Engine
   /**
     * Delete and release a webGL query
     * @param query defines the query to delete
-    * @return the current engine
+    * @returns the current engine
     */
-  def deleteQuery(query: WebGLQuery): Engine = js.native
+  def deleteQuery(query: OcclusionQuery): Engine = js.native
   
   /**
     * Delete a webGL transform feedback object
     * @param value defines the webGL transform feedback object to delete
     */
   def deleteTransformFeedback(value: WebGLTransformFeedback): Unit = js.native
+  
+  /**
+    * Gets or sets a boolean to enable/disable the context menu (right-click) from appearing on the main canvas
+    */
+  var disableContextMenu: Boolean = js.native
   
   /**
     * Gets or sets a boolean to enable/disable checking manifest if IndexedDB support is enabled (js will always consider the database is up to date)
@@ -477,7 +600,7 @@ trait Engine
   
   /**
     * Enable scissor test on a specific rectangle (ie. render will only be executed on a specific portion of the screen)
-    * @param x defines the x-coordinate of the top left corner of the clear rectangle
+    * @param x defines the x-coordinate of the bottom left corner of the clear rectangle
     * @param y defines the y-coordinate of the corner of the clear rectangle
     * @param width defines the width of the clear rectangle
     * @param height defines the height of the clear rectangle
@@ -551,6 +674,12 @@ trait Engine
   def getAspectRatio(viewportOwner: IViewportOwnerLike, useScreen: Boolean): Double = js.native
   
   /**
+    * Gets the name of the current render pass
+    * @returns name of the current render pass
+    */
+  def getCurrentRenderPassName(): String = js.native
+  
+  /**
     * Gets the time spent between current and previous frame
     * @returns a number representing the delta time in ms
     */
@@ -562,11 +691,19 @@ trait Engine
     */
   def getDepthFunction(): Nullable[Double] = js.native
   
+  /** States */
   /**
     * Gets a boolean indicating if depth writing is enabled
     * @returns the current depth writing state
     */
   def getDepthWrite(): Boolean = js.native
+  
+  /**
+    * Get Font size information
+    * @param font font name
+    * @returns an object containing ascent, height and descent
+    */
+  def getFontOffset(font: String): Ascent = js.native
   
   /**
     * Gets the current framerate
@@ -582,6 +719,12 @@ trait Engine
   def getFragmentShaderSource(program: WebGLProgram): Nullable[String] = js.native
   
   /**
+    * Get the performance counter associated with the frame time computation
+    * @returns the perf counter
+    */
+  def getGPUFrameTimeCounter(): PerfCounter = js.native
+  
+  /**
     * Gets the HTML element used to attach event listeners
     * @returns a HTML element
     */
@@ -589,7 +732,7 @@ trait Engine
   
   /**
     * Gets the client rect of the HTML element used for events
-    * @returns a client rectanglee
+    * @returns a client rectangle
     */
   def getInputElementClientRect(): Nullable[ClientRect] = js.native
   
@@ -605,11 +748,17 @@ trait Engine
     * @param query defines the query to check
     * @returns the value of the query
     */
-  def getQueryResult(query: WebGLQuery): Double = js.native
+  def getQueryResult(query: OcclusionQuery): Double = js.native
+  
+  /**
+    * Gets the names of the render passes that are currently created
+    * @returns list of the render pass names
+    */
+  def getRenderPassNames(): js.Array[String] = js.native
   
   /**
     * Gets the client rect of the HTML canvas attached with the current webGL context
-    * @returns a client rectanglee
+    * @returns a client rectangle
     */
   def getRenderingCanvasClientRect(): Nullable[ClientRect] = js.native
   
@@ -677,7 +826,7 @@ trait Engine
     * Gets the current webVR device
     * @returns the current webVR device (or null)
     */
-  def getVRDevice(): js.Any = js.native
+  def getVRDevice(): Any = js.native
   
   /**
     * Gets the source code of the vertex shader associated with a specific webGL program
@@ -685,12 +834,6 @@ trait Engine
     * @returns a string containing the source code of the vertex shader associated with the program
     */
   def getVertexShaderSource(program: WebGLProgram): Nullable[String] = js.native
-  
-  /**
-    * Gets the current value of the zOffset
-    * @returns the current zOffset state
-    */
-  def getZOffset(): Double = js.native
   
   /**
     * Hide the loading screen
@@ -740,7 +883,7 @@ trait Engine
     * @param query defines the query to check
     * @returns true if the query got its value
     */
-  def isQueryResultAvailable(query: WebGLQuery): Boolean = js.native
+  def isQueryResultAvailable(query: OcclusionQuery): Boolean = js.native
   
   /**
     * Gets a boolean indicating if a webVR device was detected
@@ -778,14 +921,24 @@ trait Engine
   def loadingUIText_=(text: String): Unit = js.native
   
   /**
-    * Observable raised when the engine has jsut compiled a shader
+    * Observable raised when the engine has just compiled a shader
     */
   var onAfterShaderCompilationObservable: Observable[Engine] = js.native
+  
+  /**
+    * Will be triggered after the view rendered
+    */
+  val onAfterViewRenderObservable: Observable[EngineView] = js.native
   
   /**
     * Observable raised when the engine is about to compile a shader
     */
   var onBeforeShaderCompilationObservable: Observable[Engine] = js.native
+  
+  /**
+    * Will be triggered before the view renders
+    */
+  val onBeforeViewRenderObservable: Observable[EngineView] = js.native
   
   /**
     * Observable raised when the engine begins a new frame
@@ -852,10 +1005,29 @@ trait Engine
     * Register a new child canvas
     * @param canvas defines the canvas to register
     * @param camera defines an optional camera to use with this canvas (it will overwrite the scene.camera for this view)
+    * @param clearBeforeCopy Indicates if the destination view canvas should be cleared before copying the parent canvas. Can help if the scene clear color has alpha < 1
     * @returns the associated view
     */
   def registerView(canvas: HTMLCanvasElement): EngineView = js.native
+  def registerView(canvas: HTMLCanvasElement, camera: Unit, clearBeforeCopy: Boolean): EngineView = js.native
   def registerView(canvas: HTMLCanvasElement, camera: Camera): EngineView = js.native
+  def registerView(canvas: HTMLCanvasElement, camera: Camera, clearBeforeCopy: Boolean): EngineView = js.native
+  
+  /**
+    * Releases a render pass id
+    * @param id id of the render pass to release
+    */
+  def releaseRenderPassId(id: Double): Unit = js.native
+  
+  /**
+    * Resize an image and returns the image data as an uint8array
+    * @param image image to resize
+    * @param bufferWidth destination buffer width
+    * @param bufferHeight destination buffer height
+    * @returns an uint8array containing RGBA values of bufferWidth * bufferHeight size
+    */
+  def resizeImageBitmap(image: HTMLImageElement, bufferWidth: Double, bufferHeight: Double): js.typedarray.Uint8Array = js.native
+  def resizeImageBitmap(image: ImageBitmap, bufferWidth: Double, bufferHeight: Double): js.typedarray.Uint8Array = js.native
   
   /**
     * Restores the state of the stencil buffer
@@ -869,7 +1041,7 @@ trait Engine
   
   /**
     * Executes a scissor clear (ie. a clear on a specific portion of the screen)
-    * @param x defines the x-coordinate of the top left corner of the clear rectangle
+    * @param x defines the x-coordinate of the bottom left corner of the clear rectangle
     * @param y defines the y-coordinate of the corner of the clear rectangle
     * @param width defines the width of the clear rectangle
     * @param height defines the height of the clear rectangle
@@ -884,12 +1056,6 @@ trait Engine
     * Example: [".dds", ".env", "myfile.png"]
     */
   def setCompressedTextureExclusions(skippedFiles: js.Array[String]): Unit = js.native
-  
-  /**
-    * Enable or disable depth buffering
-    * @param enable defines the state to set
-    */
-  def setDepthBuffer(enable: Boolean): Unit = js.native
   
   /**
     * Sets the current depth function
@@ -922,8 +1088,15 @@ trait Engine
     * @param channel The texture channel
     * @param uniform The uniform to set
     * @param texture The render target texture containing the depth stencil texture to apply
+    * @param name The texture name
     */
   def setDepthStencilTexture(channel: Double, uniform: Nullable[WebGLUniformLocation], texture: Nullable[RenderTargetTexture]): Unit = js.native
+  def setDepthStencilTexture(
+    channel: Double,
+    uniform: Nullable[WebGLUniformLocation],
+    texture: Nullable[RenderTargetTexture],
+    name: String
+  ): Unit = js.native
   
   /**
     * Enable or disable depth writing
@@ -937,7 +1110,7 @@ trait Engine
     * @param y defines the y coordinate of the viewport (in screen space)
     * @param width defines the width of the viewport (in screen space)
     * @param height defines the height of the viewport (in screen space)
-    * @return the current viewport Object (if any) that is being replaced by this call. You can restore this viewport later on to go back to the original state
+    * @returns the current viewport Object (if any) that is being replaced by this call. You can restore this viewport later on to go back to the original state
     */
   def setDirectViewport(x: Double, y: Double, width: Double, height: Double): Nullable[IViewportLike] = js.native
   
@@ -952,23 +1125,6 @@ trait Engine
     * @param value defines the rasterizer state
     */
   def setRasterizerState(value: Boolean): Unit = js.native
-  
-  /** States */
-  /**
-    * Set various states to the webGL context
-    * @param culling defines backface culling state
-    * @param zOffset defines the value to apply to zOffset (0 by default)
-    * @param force defines if states must be applied even if cache is up to date
-    * @param reverseSide defines if culling must be reversed (CCW instead of CW and CW instead of CCW)
-    */
-  def setState(culling: Boolean): Unit = js.native
-  def setState(culling: Boolean, zOffset: Double): Unit = js.native
-  def setState(culling: Boolean, zOffset: Double, force: Boolean): Unit = js.native
-  def setState(culling: Boolean, zOffset: Double, force: Boolean, reverseSide: Boolean): Unit = js.native
-  def setState(culling: Boolean, zOffset: Double, force: Unit, reverseSide: Boolean): Unit = js.native
-  def setState(culling: Boolean, zOffset: Unit, force: Boolean): Unit = js.native
-  def setState(culling: Boolean, zOffset: Unit, force: Boolean, reverseSide: Boolean): Unit = js.native
-  def setState(culling: Boolean, zOffset: Unit, force: Unit, reverseSide: Boolean): Unit = js.native
   
   /**
     * Enable or disable the stencil buffer
@@ -1044,15 +1200,17 @@ trait Engine
     * Sets a texture to the webGL context from a postprocess
     * @param channel defines the channel to use
     * @param postProcess defines the source postprocess
+    * @param name name of the channel
     */
-  def setTextureFromPostProcess(channel: Double, postProcess: Nullable[PostProcess]): Unit = js.native
+  def setTextureFromPostProcess(channel: Double, postProcess: Nullable[PostProcess], name: String): Unit = js.native
   
   /**
     * Binds the output of the passed in post process to the texture channel specified
     * @param channel The channel the texture should be bound to
     * @param postProcess The post process which's output should be bound
+    * @param name name of the channel
     */
-  def setTextureFromPostProcessOutput(channel: Double, postProcess: Nullable[PostProcess]): Unit = js.native
+  def setTextureFromPostProcessOutput(channel: Double, postProcess: Nullable[PostProcess], name: String): Unit = js.native
   
   /**
     * Specify the varyings to use with transform feedback
@@ -1060,12 +1218,6 @@ trait Engine
     * @param value defines the list of strings representing the varying names
     */
   def setTranformFeedbackVaryings(program: WebGLProgram, value: js.Array[String]): Unit = js.native
-  
-  /**
-    * Set the z offset to apply to current rendering
-    * @param value defines the offset to apply
-    */
-  def setZOffset(value: Double): Unit = js.native
   
   /**
     * Starts a time query (used to measure time spent by the GPU on a specific frame)
@@ -1098,15 +1250,6 @@ trait Engine
   def unRegisterView(canvas: HTMLCanvasElement): Engine = js.native
   
   /**
-    * Updates the sample count of a render target texture
-    * @see https://doc.babylonjs.com/features/webgl2#multisample-render-targets
-    * @param texture defines the texture to update
-    * @param samples defines the sample count to set
-    * @returns the effective sample count (could be 0 if multisample render targets are not supported)
-    */
-  def updateRenderTargetTextureSampleCount(texture: Nullable[InternalTexture], samples: Double): Double = js.native
-  
-  /**
     * Updates a depth texture Comparison Mode and Function.
     * If the comparison Function is equal to 0, the mode will be set to none.
     * Otherwise, this only works in webgl 2 and requires a shadow sampler in the shader.
@@ -1122,4 +1265,11 @@ trait Engine
     * Gets or sets the presentation attributes used to configure VR rendering
     */
   var vrPresentationAttributes: js.UndefOr[IVRPresentationAttributes] = js.native
+  
+  /**
+    * Wraps an external web gl texture in a Babylon texture.
+    * @param texture defines the external texture
+    * @returns the babylon internal texture
+    */
+  def wrapWebGLTexture(texture: WebGLTexture): InternalTexture = js.native
 }

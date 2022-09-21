@@ -15,7 +15,7 @@ object integrationsCordovaMod {
   
   @JSImport("ionic/lib/integrations/cordova", "Integration")
   @js.native
-  class Integration protected ()
+  open class Integration protected ()
     extends BaseIntegration[ProjectIntegration]
        with IntegationUnion {
     def this(e: IntegrationDeps) = this()

@@ -27,7 +27,7 @@ trait ChokidarOptions extends StObject {
   
   var ignorePermissionErrors: js.UndefOr[Boolean] = js.undefined
   
-  var ignored: js.UndefOr[js.Any] = js.undefined
+  var ignored: js.UndefOr[Any] = js.undefined
   
   var interval: js.UndefOr[Double] = js.undefined
   
@@ -86,7 +86,7 @@ object ChokidarOptions {
     
     inline def setIgnorePermissionErrorsUndefined: Self = StObject.set(x, "ignorePermissionErrors", js.undefined)
     
-    inline def setIgnored(value: js.Any): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
+    inline def setIgnored(value: Any): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
     inline def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
     

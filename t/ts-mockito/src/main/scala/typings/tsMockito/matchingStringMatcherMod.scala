@@ -9,9 +9,9 @@ object matchingStringMatcherMod {
   
   @JSImport("ts-mockito/lib/matcher/type/MatchingStringMatcher", "MatchingStringMatcher")
   @js.native
-  class MatchingStringMatcher protected () extends Matcher {
-    def this(expectedValue: js.Any) = this()
+  open class MatchingStringMatcher protected () extends Matcher {
+    def this(expectedValue: Any) = this()
     
-    /* private */ var expectedValue: js.Any = js.native
+    /* private */ var expectedValue: Any = js.native
   }
 }

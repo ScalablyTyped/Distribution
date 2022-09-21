@@ -17,7 +17,7 @@ trait RadiusSettings extends StObject {
   var DisplayLabel: js.UndefOr[RadiusDisplayLabel] = js.undefined
   
   /**
-    * The port that your RADIUS server is using for communications. Your on-premises network must allow inbound traffic over this port from the AWS Directory Service servers.
+    * The port that your RADIUS server is using for communications. Your self-managed network must allow inbound traffic over this port from the Directory Service servers.
     */
   var RadiusPort: js.UndefOr[PortNumber] = js.undefined
   
@@ -75,7 +75,7 @@ object RadiusSettings {
     
     inline def setRadiusServersUndefined: Self = StObject.set(x, "RadiusServers", js.undefined)
     
-    inline def setRadiusServersVarargs(value: Server*): Self = StObject.set(x, "RadiusServers", js.Array(value :_*))
+    inline def setRadiusServersVarargs(value: Server*): Self = StObject.set(x, "RadiusServers", js.Array(value*))
     
     inline def setRadiusTimeout(value: RadiusTimeout): Self = StObject.set(x, "RadiusTimeout", value.asInstanceOf[js.Any])
     

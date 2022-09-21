@@ -11,9 +11,9 @@ ArangoDB AQL query builder.
 | Full name          | aqb |
 | Keywords           | arangodb, aql, nosql, query |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 5406 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 406.6666666666667 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/arangodb/aqbjs)

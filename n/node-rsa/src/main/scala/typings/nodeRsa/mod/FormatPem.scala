@@ -19,9 +19,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeRsa.nodeRsaStrings.`pkcs8-private-pem`
   - typings.nodeRsa.nodeRsaStrings.`pkcs8-public`
   - typings.nodeRsa.nodeRsaStrings.`pkcs8-public-pem`
+  - typings.nodeRsa.nodeRsaStrings.`openssh-public`
+  - typings.nodeRsa.nodeRsaStrings.`openssh-private`
 */
 trait FormatPem extends StObject
 object FormatPem {
+  
+  inline def `openssh-private`: typings.nodeRsa.nodeRsaStrings.`openssh-private` = "openssh-private".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`openssh-private`]
+  
+  inline def `openssh-public`: typings.nodeRsa.nodeRsaStrings.`openssh-public` = "openssh-public".asInstanceOf[typings.nodeRsa.nodeRsaStrings.`openssh-public`]
   
   inline def pkcs1: typings.nodeRsa.nodeRsaStrings.pkcs1 = "pkcs1".asInstanceOf[typings.nodeRsa.nodeRsaStrings.pkcs1]
   

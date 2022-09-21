@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReserveIdsRequest extends StObject {
   
-  /** If not empty, the ID of the database against which to make the request. */
+  /** The ID of the database against which to make the request. '(default)' is not allowed; please use empty string '' to refer the default database. */
   var databaseId: js.UndefOr[String] = js.undefined
   
   /** Required. A list of keys with complete key paths whose numeric IDs should not be auto-allocated. */
@@ -29,6 +29,6 @@ object ReserveIdsRequest {
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: Key*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: Key*): Self = StObject.set(x, "keys", js.Array(value*))
   }
 }

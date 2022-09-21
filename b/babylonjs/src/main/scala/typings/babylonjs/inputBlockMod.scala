@@ -7,6 +7,7 @@ import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnect
 import typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets
+import typings.babylonjs.nodeMaterialMod.NodeMaterial
 import typings.babylonjs.nodeMaterialSystemValuesMod.NodeMaterialSystemValues
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.Scene
@@ -19,7 +20,7 @@ object inputBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Input/inputBlock", "InputBlock")
   @js.native
-  class InputBlock protected () extends NodeMaterialBlock {
+  open class InputBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new InputBlock
       * @param name defines the block name
@@ -31,35 +32,46 @@ object inputBlockMod {
     def this(name: String, target: Unit, `type`: NodeMaterialBlockConnectionPointTypes) = this()
     def this(name: String, target: NodeMaterialBlockTargets, `type`: NodeMaterialBlockConnectionPointTypes) = this()
     
-    /* private */ var _animationType: js.Any = js.native
+    /* private */ var _animationType: Any = js.native
     
-    /* private */ var _associatedVariableName: js.Any = js.native
+    /* private */ var _associatedVariableName: Any = js.native
     
-    /* private */ var _emit: js.Any = js.native
+    /* private */ var _emit: Any = js.native
     
-    /* private */ var _emitConstant: js.Any = js.native
+    /* private */ var _emitConstant: Any = js.native
     
-    /* private */ var _emitDefine: js.Any = js.native
+    /* private */ var _emitDefine: Any = js.native
     
-    /* private */ var _mode: js.Any = js.native
+    /* private */ var _mode: Any = js.native
     
     /** @hidden */
     def _noContextSwitch: Boolean = js.native
     
-    /* private */ var _storedValue: js.Any = js.native
+    /* private */ var _storedValue: Any = js.native
     
     /** @hidden */
     var _systemValue: Nullable[NodeMaterialSystemValues] = js.native
     
-    /** @hidden */
-    def _transmit(effect: Effect, scene: Scene): Unit = js.native
+    /**
+      * @param effect
+      * @param scene
+      * @param material
+      * @hidden
+      */
+    def _transmit(effect: Effect, scene: Scene, material: NodeMaterial): Unit = js.native
     
-    /** @hidden */
+    /**
+      * @param effect
+      * @param world
+      * @param worldView
+      * @param worldViewProjection
+      * @hidden
+      */
     def _transmitWorld(effect: Effect, world: Matrix, worldView: Matrix, worldViewProjection: Matrix): Unit = js.native
     
-    /* private */ var _type: js.Any = js.native
+    /* private */ var _type: Any = js.native
     
-    /* private */ var _valueCallback: js.Any = js.native
+    /* private */ var _valueCallback: Any = js.native
     
     /**
       * Animate the input if animationType !== None
@@ -85,6 +97,8 @@ object inputBlockMod {
     
     /** Gets or sets the group to use to display this block in the Inspector */
     var groupInInspector: String = js.native
+    
+    def initialize(): Unit = js.native
     
     /**
       * Gets or sets a boolean indicating that this connection point is coming from an attribute.
@@ -177,15 +191,15 @@ object inputBlockMod {
       * Gets or sets the value of that point.
       * Please note that this value will be ignored if valueCallback is defined
       */
-    def value: js.Any = js.native
+    def value: Any = js.native
     
     /**
       * Gets or sets a callback used to get the value of that point.
       * Please note that setting this value will force the connection point to ignore the value property
       */
-    def valueCallback: js.Function0[js.Any] = js.native
-    def valueCallback_=(value: js.Function0[js.Any]): Unit = js.native
+    def valueCallback: js.Function0[Any] = js.native
+    def valueCallback_=(value: js.Function0[Any]): Unit = js.native
     
-    def value_=(value: js.Any): Unit = js.native
+    def value_=(value: Any): Unit = js.native
   }
 }

@@ -10,10 +10,10 @@ This is a library designed to render js objects as xml. Its not made to parse or
 | ------------------ | :-------------: |
 | Full name          | jsontoxml |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 71 |
-| # downloads        | 5892917 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 731681.0 |
+| # stars            | 100.0 |
 
 ## Links
 - [Homepage](http://github.com/ken-franken/node-jsontoxml)

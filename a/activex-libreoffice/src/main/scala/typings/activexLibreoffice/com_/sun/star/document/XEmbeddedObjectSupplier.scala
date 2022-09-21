@@ -24,7 +24,7 @@ object XEmbeddedObjectSupplier {
     EmbeddedObject: XComponent,
     acquire: () => Unit,
     getEmbeddedObject: () => XComponent,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XEmbeddedObjectSupplier = {
     val __obj = js.Dynamic.literal(EmbeddedObject = EmbeddedObject.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getEmbeddedObject = js.Any.fromFunction0(getEmbeddedObject), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

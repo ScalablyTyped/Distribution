@@ -22,21 +22,21 @@ trait XMaterialHolder
     * returns the material that is connected to this (tool-) object
     * @returns the material that is connected to this (tool-) object.
     */
-  val Material: js.Any
+  val Material: Any
   
   /**
     * returns the material that is connected to this (tool-) object
     * @returns the material that is connected to this (tool-) object.
     */
-  def getMaterial(): js.Any
+  def getMaterial(): Any
 }
 object XMaterialHolder {
   
   inline def apply(
-    Material: js.Any,
+    Material: Any,
     acquire: () => Unit,
-    getMaterial: () => js.Any,
-    queryInterface: `type` => js.Any,
+    getMaterial: () => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XMaterialHolder = {
     val __obj = js.Dynamic.literal(Material = Material.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getMaterial = js.Any.fromFunction0(getMaterial), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -45,8 +45,8 @@ object XMaterialHolder {
   
   extension [Self <: XMaterialHolder](x: Self) {
     
-    inline def setGetMaterial(value: () => js.Any): Self = StObject.set(x, "getMaterial", js.Any.fromFunction0(value))
+    inline def setGetMaterial(value: () => Any): Self = StObject.set(x, "getMaterial", js.Any.fromFunction0(value))
     
-    inline def setMaterial(value: js.Any): Self = StObject.set(x, "Material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: Any): Self = StObject.set(x, "Material", value.asInstanceOf[js.Any])
   }
 }

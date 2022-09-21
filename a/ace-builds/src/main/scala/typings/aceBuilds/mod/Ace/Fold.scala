@@ -62,6 +62,6 @@ object Fold {
     
     inline def setSubFolds(value: js.Array[Fold]): Self = StObject.set(x, "subFolds", value.asInstanceOf[js.Any])
     
-    inline def setSubFoldsVarargs(value: Fold*): Self = StObject.set(x, "subFolds", js.Array(value :_*))
+    inline def setSubFoldsVarargs(value: Fold*): Self = StObject.set(x, "subFolds", js.Array(value*))
   }
 }

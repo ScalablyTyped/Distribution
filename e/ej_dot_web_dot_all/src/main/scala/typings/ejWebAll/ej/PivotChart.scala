@@ -38,7 +38,7 @@ trait PivotChart
   /** Returns the JSON records that are formed to render the control.
     * @returns {any[]}
     */
-  def getJSONRecords(): js.Array[js.Any] = js.native
+  def getJSONRecords(): js.Array[Any] = js.native
   
   /** Returns the OlapReport string that is maintained along with the axis elements information.
     * @returns {string}
@@ -48,7 +48,7 @@ trait PivotChart
   /** Returns the PivotEngine that is formed to render the control.
     * @returns {any[]}
     */
-  def getPivotEngine(): js.Array[js.Any] = js.native
+  def getPivotEngine(): js.Array[Any] = js.native
   
   @JSName("model")
   var model_PivotChart: Model = js.native
@@ -207,11 +207,11 @@ object PivotChart {
     
     /** returns the custom object bound with PivotChart control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotChart control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object AfterServiceInvokeEventArgs {
     
@@ -226,11 +226,11 @@ object PivotChart {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -269,7 +269,7 @@ object PivotChart {
     
     /** series - Instance of the series which is about to get rendered
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
   }
   object BeforeSeriesRenderEventArgs {
     
@@ -280,7 +280,7 @@ object PivotChart {
     
     extension [Self <: BeforeSeriesRenderEventArgs](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     }
@@ -294,11 +294,11 @@ object PivotChart {
     
     /** returns the custom object bound with PivotChart control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotChart control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object BeforeServiceInvokeEventArgs {
     
@@ -313,11 +313,11 @@ object PivotChart {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -365,7 +365,7 @@ object PivotChart {
     /** Provides the raw datasource for the pivot chart.
       * @Default {null}
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Lists out the items that supports filtering of values without displaying the members in UI of the pivot chart.
       * @Default {[]}
@@ -409,13 +409,13 @@ object PivotChart {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: DataSourceColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: DataSourceColumn*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setCube(value: String): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
       
       inline def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -423,7 +423,7 @@ object PivotChart {
       
       inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      inline def setFiltersVarargs(value: DataSourceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: DataSourceFilter*): Self = StObject.set(x, "filters", js.Array(value*))
       
       inline def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
       
@@ -433,7 +433,7 @@ object PivotChart {
       
       inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      inline def setRowsVarargs(value: DataSourceRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: DataSourceRow*): Self = StObject.set(x, "rows", js.Array(value*))
       
       inline def setSourceInfo(value: String): Self = StObject.set(x, "sourceInfo", value.asInstanceOf[js.Any])
       
@@ -443,7 +443,7 @@ object PivotChart {
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: DataSourceValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: DataSourceValue*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -513,7 +513,7 @@ object PivotChart {
     /** Contains the collection of items to be included/excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object DataSourceColumnsFilterItems {
     
@@ -528,11 +528,11 @@ object PivotChart {
       
       inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -576,7 +576,7 @@ object PivotChart {
     /** Contains the collection of items to be included/excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object DataSourceFiltersFilterItems {
     
@@ -591,11 +591,11 @@ object PivotChart {
       
       inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -665,7 +665,7 @@ object PivotChart {
     /** Contains the collection of items to be included/excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object DataSourceRowsFilterItems {
     
@@ -680,11 +680,11 @@ object PivotChart {
       
       inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -750,7 +750,7 @@ object PivotChart {
       
       inline def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
       
-      inline def setMeasuresVarargs(value: DataSourceValuesMeasure*): Self = StObject.set(x, "measures", js.Array(value :_*))
+      inline def setMeasuresVarargs(value: DataSourceValuesMeasure*): Self = StObject.set(x, "measures", js.Array(value*))
     }
   }
   
@@ -779,7 +779,7 @@ object PivotChart {
     
     /** returns the current instance of PivotChart.
       */
-    var chartObj: js.UndefOr[js.Any] = js.undefined
+    var chartObj: js.UndefOr[Any] = js.undefined
     
     /** returns the drill action of PivotChart.
       */
@@ -791,7 +791,7 @@ object PivotChart {
     
     /** returns the event object.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
   }
   object DrillSuccessEventArgs {
     
@@ -802,7 +802,7 @@ object PivotChart {
     
     extension [Self <: DrillSuccessEventArgs](x: Self) {
       
-      inline def setChartObj(value: js.Any): Self = StObject.set(x, "chartObj", value.asInstanceOf[js.Any])
+      inline def setChartObj(value: Any): Self = StObject.set(x, "chartObj", value.asInstanceOf[js.Any])
       
       inline def setChartObjUndefined: Self = StObject.set(x, "chartObj", js.undefined)
       
@@ -814,7 +814,7 @@ object PivotChart {
       
       inline def setDrilledMemberUndefined: Self = StObject.set(x, "drilledMember", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     }
@@ -828,11 +828,11 @@ object PivotChart {
     
     /** returns the custom object bound with PivotChart control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotChart control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object LoadEventArgs {
     
@@ -847,11 +847,11 @@ object PivotChart {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -871,7 +871,7 @@ object PivotChart {
     /** To override x axis for particular series, create an axis object by providing unique name by using name property and add it to axes array.
       * @Default {[]}
       */
-    var axes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var axes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Triggers before performing export operation in the pivot chart.
       */
@@ -898,7 +898,7 @@ object PivotChart {
     /** Object is utilized to pass additional information between the client-end and the service-end while operating the control in the server mode.
       * @Default {{}}
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** Initializes the datasource for the pivot chart widget, when it functions completely on the client-side.
       * @Default {{}}
@@ -942,7 +942,7 @@ object PivotChart {
     /** You can customize the legend items and their labels.
       * @Default {{}}
       */
-    var legend: js.UndefOr[js.Any] = js.undefined
+    var legend: js.UndefOr[Any] = js.undefined
     
     /** Triggers when the pivot chart starts to render.
       */
@@ -963,14 +963,14 @@ object PivotChart {
       * the axis and the series.
       * @Default {{}}
       */
-    var primaryXAxis: js.UndefOr[js.Any] = js.undefined
+    var primaryXAxis: js.UndefOr[Any] = js.undefined
     
     /** This is a vertical axis that contains options to configure the axis. This is the primary y-axis for all the series in the series array. To override y-axis for particular series,
       * create an axis object by providing a unique name by using the name property and add it to the axes array. Then, assign the name to the seriesâ€™s yAxisName property to link both
       * the axis and the series.
       * @Default {{}}
       */
-    var primaryYAxis: js.UndefOr[js.Any] = js.undefined
+    var primaryYAxis: js.UndefOr[Any] = js.undefined
     
     /** Triggers when the pivot chart widget completes all operations at client-side after the AJAX request.
       */
@@ -997,7 +997,7 @@ object PivotChart {
     /** Options to customize the size of the pivot chart control.
       * @Default {{}}
       */
-    var size: js.UndefOr[js.Any] = js.undefined
+    var size: js.UndefOr[Any] = js.undefined
     
     /** Options for customizing the title of PivotChart.
       */
@@ -1030,11 +1030,11 @@ object PivotChart {
       
       inline def setAnalysisModeUndefined: Self = StObject.set(x, "analysisMode", js.undefined)
       
-      inline def setAxes(value: js.Array[js.Any]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: js.Array[Any]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
       inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
-      inline def setAxesVarargs(value: js.Any*): Self = StObject.set(x, "axes", js.Array(value :_*))
+      inline def setAxesVarargs(value: Any*): Self = StObject.set(x, "axes", js.Array(value*))
       
       inline def setBeforeExport(value: /* e */ BeforeExportEventArgs => Unit): Self = StObject.set(x, "beforeExport", js.Any.fromFunction1(value))
       
@@ -1056,7 +1056,7 @@ object PivotChart {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
@@ -1092,7 +1092,7 @@ object PivotChart {
       
       inline def setIsResponsiveUndefined: Self = StObject.set(x, "isResponsive", js.undefined)
       
-      inline def setLegend(value: js.Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+      inline def setLegend(value: Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
       
       inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
       
@@ -1108,11 +1108,11 @@ object PivotChart {
       
       inline def setOperationalModeUndefined: Self = StObject.set(x, "operationalMode", js.undefined)
       
-      inline def setPrimaryXAxis(value: js.Any): Self = StObject.set(x, "primaryXAxis", value.asInstanceOf[js.Any])
+      inline def setPrimaryXAxis(value: Any): Self = StObject.set(x, "primaryXAxis", value.asInstanceOf[js.Any])
       
       inline def setPrimaryXAxisUndefined: Self = StObject.set(x, "primaryXAxis", js.undefined)
       
-      inline def setPrimaryYAxis(value: js.Any): Self = StObject.set(x, "primaryYAxis", value.asInstanceOf[js.Any])
+      inline def setPrimaryYAxis(value: Any): Self = StObject.set(x, "primaryYAxis", value.asInstanceOf[js.Any])
       
       inline def setPrimaryYAxisUndefined: Self = StObject.set(x, "primaryYAxis", js.undefined)
       
@@ -1136,7 +1136,7 @@ object PivotChart {
       
       inline def setServiceMethodSettingsUndefined: Self = StObject.set(x, "serviceMethodSettings", js.undefined)
       
-      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -1162,11 +1162,11 @@ object PivotChart {
     
     /** returns the custom object bound with PivotChart control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotChart control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object RenderCompleteEventArgs {
     
@@ -1181,11 +1181,11 @@ object PivotChart {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -1199,11 +1199,11 @@ object PivotChart {
     
     /** returns the custom object bound with PivotChart control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotChart control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the error stack trace of the original exception.
       */
@@ -1222,11 +1222,11 @@ object PivotChart {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -1240,7 +1240,7 @@ object PivotChart {
     
     /** returns the current instance of PivotChart.
       */
-    var args: js.UndefOr[js.Any] = js.undefined
+    var args: js.UndefOr[Any] = js.undefined
   }
   object RenderSuccessEventArgs {
     
@@ -1251,7 +1251,7 @@ object PivotChart {
     
     extension [Self <: RenderSuccessEventArgs](x: Self) {
       
-      inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     }

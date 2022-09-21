@@ -29,7 +29,7 @@ object GetDedicatedIpsResponse {
     
     inline def setDedicatedIpsUndefined: Self = StObject.set(x, "DedicatedIps", js.undefined)
     
-    inline def setDedicatedIpsVarargs(value: DedicatedIp*): Self = StObject.set(x, "DedicatedIps", js.Array(value :_*))
+    inline def setDedicatedIpsVarargs(value: DedicatedIp*): Self = StObject.set(x, "DedicatedIps", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

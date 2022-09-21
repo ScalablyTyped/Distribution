@@ -50,7 +50,7 @@ object Task {
     
     inline def setSourceFields(value: SourceFields): Self = StObject.set(x, "sourceFields", value.asInstanceOf[js.Any])
     
-    inline def setSourceFieldsVarargs(value: String*): Self = StObject.set(x, "sourceFields", js.Array(value :_*))
+    inline def setSourceFieldsVarargs(value: String*): Self = StObject.set(x, "sourceFields", js.Array(value*))
     
     inline def setTaskProperties(value: TaskPropertiesMap): Self = StObject.set(x, "taskProperties", value.asInstanceOf[js.Any])
     

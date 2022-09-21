@@ -37,7 +37,7 @@ object XScaling {
     acquire: () => Unit,
     doScaling: Double => Double,
     getInverseScaling: () => XScaling,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XScaling = {
     val __obj = js.Dynamic.literal(InverseScaling = InverseScaling.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), doScaling = js.Any.fromFunction1(doScaling), getInverseScaling = js.Any.fromFunction0(getInverseScaling), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

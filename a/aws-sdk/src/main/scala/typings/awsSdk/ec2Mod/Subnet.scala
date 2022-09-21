@@ -42,9 +42,24 @@ trait Subnet extends StObject {
   var DefaultForAz: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Indicates whether DNS queries made to the Amazon-provided DNS Resolver in this subnet should return synthetic IPv6 addresses for IPv4-only destinations.
+    */
+  var EnableDns64: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    *  Indicates the device position for local network interfaces in this subnet. For example, 1 indicates local network interfaces in this subnet are the secondary network interface (eth1). 
+    */
+  var EnableLniAtDeviceIndex: js.UndefOr[Integer] = js.undefined
+  
+  /**
     * Information about the IPv6 CIDR blocks associated with the subnet.
     */
   var Ipv6CidrBlockAssociationSet: js.UndefOr[SubnetIpv6CidrBlockAssociationSet] = js.undefined
+  
+  /**
+    * Indicates whether this is an IPv6 only subnet.
+    */
+  var Ipv6Native: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether a network interface created in this subnet (including a network interface created by RunInstances) receives a customer-owned IPv4 address.
@@ -62,9 +77,14 @@ trait Subnet extends StObject {
   var OutpostArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the subnet.
+    * The ID of the Amazon Web Services account that owns the subnet.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The type of hostnames to assign to instances in the subnet at launch. An instance hostname is based on the IPv4 address or ID of the instance.
+    */
+  var PrivateDnsNameOptionsOnLaunch: js.UndefOr[typings.awsSdk.ec2Mod.PrivateDnsNameOptionsOnLaunch] = js.undefined
   
   /**
     * The current state of the subnet.
@@ -128,11 +148,23 @@ object Subnet {
     
     inline def setDefaultForAzUndefined: Self = StObject.set(x, "DefaultForAz", js.undefined)
     
+    inline def setEnableDns64(value: Boolean): Self = StObject.set(x, "EnableDns64", value.asInstanceOf[js.Any])
+    
+    inline def setEnableDns64Undefined: Self = StObject.set(x, "EnableDns64", js.undefined)
+    
+    inline def setEnableLniAtDeviceIndex(value: Integer): Self = StObject.set(x, "EnableLniAtDeviceIndex", value.asInstanceOf[js.Any])
+    
+    inline def setEnableLniAtDeviceIndexUndefined: Self = StObject.set(x, "EnableLniAtDeviceIndex", js.undefined)
+    
     inline def setIpv6CidrBlockAssociationSet(value: SubnetIpv6CidrBlockAssociationSet): Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", value.asInstanceOf[js.Any])
     
     inline def setIpv6CidrBlockAssociationSetUndefined: Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", js.undefined)
     
-    inline def setIpv6CidrBlockAssociationSetVarargs(value: SubnetIpv6CidrBlockAssociation*): Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", js.Array(value :_*))
+    inline def setIpv6CidrBlockAssociationSetVarargs(value: SubnetIpv6CidrBlockAssociation*): Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", js.Array(value*))
+    
+    inline def setIpv6Native(value: Boolean): Self = StObject.set(x, "Ipv6Native", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6NativeUndefined: Self = StObject.set(x, "Ipv6Native", js.undefined)
     
     inline def setMapCustomerOwnedIpOnLaunch(value: Boolean): Self = StObject.set(x, "MapCustomerOwnedIpOnLaunch", value.asInstanceOf[js.Any])
     
@@ -150,6 +182,10 @@ object Subnet {
     
     inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
+    inline def setPrivateDnsNameOptionsOnLaunch(value: PrivateDnsNameOptionsOnLaunch): Self = StObject.set(x, "PrivateDnsNameOptionsOnLaunch", value.asInstanceOf[js.Any])
+    
+    inline def setPrivateDnsNameOptionsOnLaunchUndefined: Self = StObject.set(x, "PrivateDnsNameOptionsOnLaunch", js.undefined)
+    
     inline def setState(value: SubnetState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
@@ -166,7 +202,7 @@ object Subnet {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

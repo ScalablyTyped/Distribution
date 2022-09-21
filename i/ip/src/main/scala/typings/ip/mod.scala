@@ -4,7 +4,7 @@ import typings.ip.ipStrings.`private`
 import typings.ip.ipStrings.ipv4
 import typings.ip.ipStrings.ipv6
 import typings.ip.ipStrings.public
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,21 +16,11 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def address(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")().asInstanceOf[String]
+  inline def address(name: public | `private`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def address(name: public | `private`, family: ipv4 | ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def address(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def address(name: `private`, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def address(name: `private`, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def address(name: public, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def address(name: public, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def address_ipv4(name: String, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def address_ipv4(name: Unit, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def address_ipv6(name: String, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def address_ipv6(name: Unit, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def address_private(name: `private`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def address_public(name: public): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def address(name: String, family: ipv4 | ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def address(name: Unit, family: ipv4 | ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def cidr(cidr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cidr")(cidr.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -39,10 +29,7 @@ object mod {
   inline def fromLong(ip: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLong")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def fromPrefixLen(prefixLength: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrefixLen")(prefixLength.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def fromPrefixLen_ipv4(prefixLength: Double, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrefixLen")(prefixLength.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def fromPrefixLen_ipv6(prefixLength: Double, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrefixLen")(prefixLength.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def fromPrefixLen(prefixLength: Double, family: ipv4 | ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrefixLen")(prefixLength.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def isEqual(ip1: String, ip2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(ip1.asInstanceOf[js.Any], ip2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -57,10 +44,7 @@ object mod {
   inline def isV6Format(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isV6Format")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def loopback(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loopback")().asInstanceOf[String]
-  
-  inline def loopback_ipv4(family: ipv4): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loopback")(family.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def loopback_ipv6(family: ipv6): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loopback")(family.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def loopback(family: ipv4 | ipv6): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loopback")(family.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def mask(ip: String, mask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mask")(ip.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
   

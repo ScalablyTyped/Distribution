@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * gdata
-  */
 trait SchemaGdataDiffChecksumsResponse extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaGdataDiffChecksumsResponse extends StObject {
   /**
     * gdata
     */
-  var chunkSizeBytes: js.UndefOr[String] = js.undefined
+  var chunkSizeBytes: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
@@ -27,12 +24,12 @@ trait SchemaGdataDiffChecksumsResponse extends StObject {
   /**
     * gdata
     */
-  var objectSizeBytes: js.UndefOr[String] = js.undefined
+  var objectSizeBytes: js.UndefOr[String | Null] = js.undefined
   
   /**
     * gdata
     */
-  var objectVersion: js.UndefOr[String] = js.undefined
+  var objectVersion: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGdataDiffChecksumsResponse {
   
@@ -49,6 +46,8 @@ object SchemaGdataDiffChecksumsResponse {
     
     inline def setChunkSizeBytes(value: String): Self = StObject.set(x, "chunkSizeBytes", value.asInstanceOf[js.Any])
     
+    inline def setChunkSizeBytesNull: Self = StObject.set(x, "chunkSizeBytes", null)
+    
     inline def setChunkSizeBytesUndefined: Self = StObject.set(x, "chunkSizeBytes", js.undefined)
     
     inline def setObjectLocation(value: SchemaGdataCompositeMedia): Self = StObject.set(x, "objectLocation", value.asInstanceOf[js.Any])
@@ -57,9 +56,13 @@ object SchemaGdataDiffChecksumsResponse {
     
     inline def setObjectSizeBytes(value: String): Self = StObject.set(x, "objectSizeBytes", value.asInstanceOf[js.Any])
     
+    inline def setObjectSizeBytesNull: Self = StObject.set(x, "objectSizeBytes", null)
+    
     inline def setObjectSizeBytesUndefined: Self = StObject.set(x, "objectSizeBytes", js.undefined)
     
     inline def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
+    
+    inline def setObjectVersionNull: Self = StObject.set(x, "objectVersion", null)
     
     inline def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
   }

@@ -7,47 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Application extends StObject {
-    
-    var application: js.UndefOr[String] = js.undefined
-    
-    var brand: js.UndefOr[String] = js.undefined
-  }
-  object Application {
-    
-    inline def apply(): Application = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Application]
-    }
-    
-    extension [Self <: Application](x: Self) {
-      
-      inline def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
-      
-      inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
-      
-      inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
-      
-      inline def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
-    }
-  }
-  
   trait Callback extends StObject {
     
-    def callback(args: js.Any*): Unit
+    def callback(args: Any*): Unit
     
     var id: String
   }
   object Callback {
     
-    inline def apply(callback: /* repeated */ js.Any => Unit, id: String): Callback = {
+    inline def apply(callback: /* repeated */ Any => Unit, id: String): Callback = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Callback]
     }
     
     extension [Self <: Callback](x: Self) {
       
-      inline def setCallback(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* repeated */ Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }

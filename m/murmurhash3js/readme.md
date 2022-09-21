@@ -10,10 +10,10 @@ A javascript implementation of MurmurHash3's x86 hashing algorithms.(Browser&Ser
 | ------------------ | :-------------: |
 | Full name          | murmurhash3js |
 | Keywords           | murmurhash3, hash |
-| # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 2465374 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 618406.3333333334 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](http://pid.github.io/murmurHash3js/)

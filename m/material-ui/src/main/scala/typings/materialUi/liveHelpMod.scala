@@ -10,10 +10,10 @@ object liveHelpMod {
   
   @JSImport("material-ui/svg-icons/communication/live-help", JSImport.Default)
   @js.native
-  class default () extends CommunicationLiveHelp
+  open class default () extends CommunicationLiveHelp
   
   @JSImport("material-ui/svg-icons/communication/live-help", "CommunicationLiveHelp")
   @js.native
-  class CommunicationLiveHelp ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationLiveHelp ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

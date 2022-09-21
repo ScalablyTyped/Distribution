@@ -198,19 +198,19 @@ object TextSection {
     getChildSections: () => SafeArray[XTextSection],
     getName: () => String,
     getParentSection: () => XTextSection,
-    getPropertyDefault: String => js.Any,
+    getPropertyDefault: String => Any,
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyState: String => PropertyState,
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],
-    getPropertyValue: String => js.Any,
-    queryInterface: `type` => js.Any,
+    getPropertyValue: String => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     setName: String => Unit,
     setPropertyToDefault: String => Unit,
-    setPropertyValue: (String, js.Any) => Unit
+    setPropertyValue: (String, Any) => Unit
   ): TextSection = {
     val __obj = js.Dynamic.literal(Anchor = Anchor.asInstanceOf[js.Any], AnchorType = AnchorType.asInstanceOf[js.Any], AnchorTypes = AnchorTypes.asInstanceOf[js.Any], BackGraphicFilter = BackGraphicFilter.asInstanceOf[js.Any], BackGraphicLocation = BackGraphicLocation.asInstanceOf[js.Any], BackGraphicURL = BackGraphicURL.asInstanceOf[js.Any], ChildSections = ChildSections.asInstanceOf[js.Any], Condition = Condition.asInstanceOf[js.Any], DDECommandElement = DDECommandElement.asInstanceOf[js.Any], DDECommandFile = DDECommandFile.asInstanceOf[js.Any], DDECommandType = DDECommandType.asInstanceOf[js.Any], EndnoteIsCollectAtTextEnd = EndnoteIsCollectAtTextEnd.asInstanceOf[js.Any], EndnoteIsOwnNumbering = EndnoteIsOwnNumbering.asInstanceOf[js.Any], EndnoteIsRestartNumbering = EndnoteIsRestartNumbering.asInstanceOf[js.Any], EndnoteNumberingPrefix = EndnoteNumberingPrefix.asInstanceOf[js.Any], EndnoteNumberingSuffix = EndnoteNumberingSuffix.asInstanceOf[js.Any], EndnoteNumberingType = EndnoteNumberingType.asInstanceOf[js.Any], EndnoteRestartNumberingAt = EndnoteRestartNumberingAt.asInstanceOf[js.Any], FileLink = FileLink.asInstanceOf[js.Any], FootnoteIsCollectAtTextEnd = FootnoteIsCollectAtTextEnd.asInstanceOf[js.Any], FootnoteIsOwnNumbering = FootnoteIsOwnNumbering.asInstanceOf[js.Any], FootnoteIsRestartNumbering = FootnoteIsRestartNumbering.asInstanceOf[js.Any], FootnoteNumberingPrefix = FootnoteNumberingPrefix.asInstanceOf[js.Any], FootnoteNumberingSuffix = FootnoteNumberingSuffix.asInstanceOf[js.Any], FootnoteNumberingType = FootnoteNumberingType.asInstanceOf[js.Any], FootnoteRestartNumberingAt = FootnoteRestartNumberingAt.asInstanceOf[js.Any], IsAutomaticUpdate = IsAutomaticUpdate.asInstanceOf[js.Any], IsProtected = IsProtected.asInstanceOf[js.Any], IsVisible = IsVisible.asInstanceOf[js.Any], LinkRegion = LinkRegion.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ParentSection = ParentSection.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], SectionLeftMargin = SectionLeftMargin.asInstanceOf[js.Any], SectionRightMargin = SectionRightMargin.asInstanceOf[js.Any], TextColumns = TextColumns.asInstanceOf[js.Any], TextWrap = TextWrap.asInstanceOf[js.Any], UserDefinedAttributes = UserDefinedAttributes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), attach = js.Any.fromFunction1(attach), dispose = js.Any.fromFunction0(dispose), getAnchor = js.Any.fromFunction0(getAnchor), getChildSections = js.Any.fromFunction0(getChildSections), getName = js.Any.fromFunction0(getName), getParentSection = js.Any.fromFunction0(getParentSection), getPropertyDefault = js.Any.fromFunction1(getPropertyDefault), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyState = js.Any.fromFunction1(getPropertyState), getPropertyStates = js.Any.fromFunction1(getPropertyStates), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setName = js.Any.fromFunction1(setName), setPropertyToDefault = js.Any.fromFunction1(setPropertyToDefault), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[TextSection]

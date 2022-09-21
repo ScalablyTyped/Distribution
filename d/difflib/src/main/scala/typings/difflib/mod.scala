@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("difflib", "SequenceMatcher")
   @js.native
-  class SequenceMatcher[T] protected () extends StObject {
+  open class SequenceMatcher[T] protected () extends StObject {
     def this(isjunk: js.Function0[Boolean], left: T, right: T) = this()
     def this(isjunk: Null, left: T, right: T) = this()
     def this(isjunk: js.Function0[Boolean], left: T, right: T, autojunk: Boolean) = this()

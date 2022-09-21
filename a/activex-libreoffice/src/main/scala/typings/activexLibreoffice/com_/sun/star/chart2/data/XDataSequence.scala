@@ -20,7 +20,7 @@ trait XDataSequence
     * retrieves the data stored in this component.
     * @returns a sequence containing the actual data. This sequence is a copy of the internal data. Therefore changing this object does not affect the content o
     */
-  val Data: SafeArray[js.Any]
+  val Data: SafeArray[Any]
   
   /** returns the (UI) range representation string used by this {@link XDataSequence} . */
   val SourceRangeRepresentation: String
@@ -43,7 +43,7 @@ trait XDataSequence
     * retrieves the data stored in this component.
     * @returns a sequence containing the actual data. This sequence is a copy of the internal data. Therefore changing this object does not affect the content o
     */
-  def getData(): SafeArray[js.Any]
+  def getData(): SafeArray[Any]
   
   /**
     * returns a number format key for the value at the given index in the data sequence. If nIndex is -1, a key for the entire sequence should be returned,
@@ -62,14 +62,14 @@ trait XDataSequence
 object XDataSequence {
   
   inline def apply(
-    Data: SafeArray[js.Any],
+    Data: SafeArray[Any],
     SourceRangeRepresentation: String,
     acquire: () => Unit,
     generateLabel: LabelOrigin => SafeArray[String],
-    getData: () => SafeArray[js.Any],
+    getData: () => SafeArray[Any],
     getNumberFormatKeyByIndex: Double => Double,
     getSourceRangeRepresentation: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDataSequence = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], SourceRangeRepresentation = SourceRangeRepresentation.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), generateLabel = js.Any.fromFunction1(generateLabel), getData = js.Any.fromFunction0(getData), getNumberFormatKeyByIndex = js.Any.fromFunction1(getNumberFormatKeyByIndex), getSourceRangeRepresentation = js.Any.fromFunction0(getSourceRangeRepresentation), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -78,11 +78,11 @@ object XDataSequence {
   
   extension [Self <: XDataSequence](x: Self) {
     
-    inline def setData(value: SafeArray[js.Any]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: SafeArray[Any]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     inline def setGenerateLabel(value: LabelOrigin => SafeArray[String]): Self = StObject.set(x, "generateLabel", js.Any.fromFunction1(value))
     
-    inline def setGetData(value: () => SafeArray[js.Any]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => SafeArray[Any]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     inline def setGetNumberFormatKeyByIndex(value: Double => Double): Self = StObject.set(x, "getNumberFormatKeyByIndex", js.Any.fromFunction1(value))
     

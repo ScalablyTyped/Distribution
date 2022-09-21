@@ -16,13 +16,15 @@ object mod {
   
   @JSImport("jwt-decode", "InvalidTokenError")
   @js.native
-  class InvalidTokenError ()
+  open class InvalidTokenError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -100,7 +102,7 @@ object mod {
       
       inline def setAudUndefined: Self = StObject.set(x, "aud", js.undefined)
       
-      inline def setAudVarargs(value: String*): Self = StObject.set(x, "aud", js.Array(value :_*))
+      inline def setAudVarargs(value: String*): Self = StObject.set(x, "aud", js.Array(value*))
       
       inline def setExp(value: Double): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
       

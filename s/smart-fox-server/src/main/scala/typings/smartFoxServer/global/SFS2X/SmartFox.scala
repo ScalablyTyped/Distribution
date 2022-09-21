@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new SmartFox instance.
   * @param {IconfigObj} configObj The SmartFox instance can be configured through a configuration object with the following properties (all optional).
   */
-class SmartFox ()
+open class SmartFox ()
   extends StObject
      with typings.smartFoxServer.SFS2X.SmartFox {
   def this(configObj: IconfigObj) = this()

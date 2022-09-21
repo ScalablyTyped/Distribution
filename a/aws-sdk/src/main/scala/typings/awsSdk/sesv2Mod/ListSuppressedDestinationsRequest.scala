@@ -9,7 +9,7 @@ trait ListSuppressedDestinationsRequest extends StObject {
   /**
     * Used to filter the list of suppressed email destinations so that it only includes addresses that were added to the list before a specific date. The date that you specify should be in Unix time format.
     */
-  var EndDate: js.UndefOr[Timestamp] = js.undefined
+  var EndDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A token returned from a previous call to ListSuppressedDestinations to indicate the position in the list of suppressed email addresses.
@@ -29,7 +29,7 @@ trait ListSuppressedDestinationsRequest extends StObject {
   /**
     * Used to filter the list of suppressed email destinations so that it only includes addresses that were added to the list after a specific date. The date that you specify should be in Unix time format.
     */
-  var StartDate: js.UndefOr[Timestamp] = js.undefined
+  var StartDate: js.UndefOr[js.Date] = js.undefined
 }
 object ListSuppressedDestinationsRequest {
   
@@ -40,7 +40,7 @@ object ListSuppressedDestinationsRequest {
   
   extension [Self <: ListSuppressedDestinationsRequest](x: Self) {
     
-    inline def setEndDate(value: Timestamp): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
     inline def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
     
@@ -56,9 +56,9 @@ object ListSuppressedDestinationsRequest {
     
     inline def setReasonsUndefined: Self = StObject.set(x, "Reasons", js.undefined)
     
-    inline def setReasonsVarargs(value: SuppressionListReason*): Self = StObject.set(x, "Reasons", js.Array(value :_*))
+    inline def setReasonsVarargs(value: SuppressionListReason*): Self = StObject.set(x, "Reasons", js.Array(value*))
     
-    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
     inline def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
   }

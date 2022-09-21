@@ -8,5 +8,5 @@ object noncurrentVersionTransitionMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_NoncurrentVersionTransition", "_NoncurrentVersionTransition")
   @js.native
-  val NoncurrentVersionTransition: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val NoncurrentVersionTransition: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

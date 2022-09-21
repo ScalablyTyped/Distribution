@@ -8,5 +8,5 @@ object invalidParameterValueExceptionMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/InvalidParameterValueException", "InvalidParameterValueException")
   @js.native
-  val InvalidParameterValueException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidParameterValueException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

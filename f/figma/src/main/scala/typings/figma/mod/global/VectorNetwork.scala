@@ -25,14 +25,14 @@ object VectorNetwork {
     
     inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    inline def setRegionsVarargs(value: VectorRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: VectorRegion*): Self = StObject.set(x, "regions", js.Array(value*))
     
     inline def setSegments(value: js.Array[VectorSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    inline def setSegmentsVarargs(value: VectorSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: VectorSegment*): Self = StObject.set(x, "segments", js.Array(value*))
     
     inline def setVertices(value: js.Array[VectorVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    inline def setVerticesVarargs(value: VectorVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: VectorVertex*): Self = StObject.set(x, "vertices", js.Array(value*))
   }
 }

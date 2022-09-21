@@ -163,7 +163,7 @@ object Device {
     /**
       * Contains a set of geographic coordinates along with associated accuracy as well as a set of other optional attributes such as altitude and speed.
       */
-    var coords: js.Any
+    var coords: Any
     
     /**
       * Represents the time when the object was acquired and is represented as DOMTimeStamp.
@@ -172,14 +172,14 @@ object Device {
   }
   object GetCurrentPositionResponse {
     
-    inline def apply(coords: js.Any, timestamp: Double): GetCurrentPositionResponse = {
+    inline def apply(coords: Any, timestamp: Double): GetCurrentPositionResponse = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCurrentPositionResponse]
     }
     
     extension [Self <: GetCurrentPositionResponse](x: Self) {
       
-      inline def setCoords(value: js.Any): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+      inline def setCoords(value: Any): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
@@ -193,22 +193,22 @@ object Device {
     /**
       * Image file types to select.
       */
-    var accept: PickFileTypes
+    var accept: js.UndefOr[PickFileTypes] = js.undefined
     
     /**
       * Indicates whether to allow selecting multiple files.
       */
-    var allowMultipleFiles: Boolean
+    var allowMultipleFiles: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Maximum size of the files(s) to be selected.
       */
-    var maximumAllowedFileSize: Double
+    var maximumAllowedFileSize: js.UndefOr[Double] = js.undefined
   }
   object PickFileOptions {
     
-    inline def apply(accept: PickFileTypes, allowMultipleFiles: Boolean, maximumAllowedFileSize: Double): PickFileOptions = {
-      val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], allowMultipleFiles = allowMultipleFiles.asInstanceOf[js.Any], maximumAllowedFileSize = maximumAllowedFileSize.asInstanceOf[js.Any])
+    inline def apply(): PickFileOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickFileOptions]
     }
     
@@ -216,9 +216,15 @@ object Device {
       
       inline def setAccept(value: PickFileTypes): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
+      inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+      
       inline def setAllowMultipleFiles(value: Boolean): Self = StObject.set(x, "allowMultipleFiles", value.asInstanceOf[js.Any])
       
+      inline def setAllowMultipleFilesUndefined: Self = StObject.set(x, "allowMultipleFiles", js.undefined)
+      
       inline def setMaximumAllowedFileSize(value: Double): Self = StObject.set(x, "maximumAllowedFileSize", value.asInstanceOf[js.Any])
+      
+      inline def setMaximumAllowedFileSizeUndefined: Self = StObject.set(x, "maximumAllowedFileSize", js.undefined)
     }
   }
   

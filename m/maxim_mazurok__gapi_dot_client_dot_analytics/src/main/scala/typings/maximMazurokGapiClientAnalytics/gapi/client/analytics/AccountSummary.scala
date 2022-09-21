@@ -50,6 +50,6 @@ object AccountSummary {
     
     inline def setWebPropertiesUndefined: Self = StObject.set(x, "webProperties", js.undefined)
     
-    inline def setWebPropertiesVarargs(value: WebPropertySummary*): Self = StObject.set(x, "webProperties", js.Array(value :_*))
+    inline def setWebPropertiesVarargs(value: WebPropertySummary*): Self = StObject.set(x, "webProperties", js.Array(value*))
   }
 }

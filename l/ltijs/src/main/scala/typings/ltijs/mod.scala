@@ -3,6 +3,7 @@ package typings.ltijs
 import typings.ltijs.anon.Context
 import typings.ltijs.databaseMod.DatabaseOptions
 import typings.ltijs.providerMod.ProviderOptions
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ object mod {
   
   @JSImport("ltijs", "Provider")
   @js.native
-  class Provider protected ()
+  open class Provider protected ()
     extends typings.ltijs.providerMod.Provider {
     def this(encryptionKey: String, database: DatabaseOptions) = this()
     def this(encryptionKey: String, database: DatabaseOptions, options: ProviderOptions) = this()
@@ -19,20 +20,20 @@ object mod {
   
   object expressAugmentingMod {
     
-    trait Response extends StObject {
+    trait Response[ResBody, Locals /* <: Record[String, Any] */] extends StObject {
       
-      var locals: Context
+      var locals: Locals & Context
     }
     object Response {
       
-      inline def apply(locals: Context): Response = {
+      inline def apply[ResBody, Locals /* <: Record[String, Any] */](locals: Locals & Context): Response[ResBody, Locals] = {
         val __obj = js.Dynamic.literal(locals = locals.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Response]
+        __obj.asInstanceOf[Response[ResBody, Locals]]
       }
       
-      extension [Self <: Response](x: Self) {
+      extension [Self <: Response[?, ?], ResBody, Locals /* <: Record[String, Any] */](x: Self & (Response[ResBody, Locals])) {
         
-        inline def setLocals(value: Context): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+        inline def setLocals(value: Locals & Context): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       }
     }
   }

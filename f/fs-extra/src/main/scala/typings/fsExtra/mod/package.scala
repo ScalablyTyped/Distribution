@@ -1,2380 +1,1419 @@
 package typings.fsExtra.mod
 
+import typings.fsExtra.anon.BufferBytesWritten
+import typings.fsExtra.anon.BytesWritten
+import typings.fsExtra.anon.Encoding
+import typings.fsExtra.anon.EncodingFlag
+import typings.fsExtra.anon.EncodingWithFileTypes
+import typings.fsExtra.anon.Flag
+import typings.fsExtra.anon.Force
+import typings.fsExtra.anon.WithFileTypes
+import typings.fsExtra.anon.`0`
+import typings.fsExtra.anon.`1`
+import typings.fsExtra.fsExtraStrings.buffer
+import typings.fsExtra.mod.^
+import typings.node.anon.ObjectEncodingOptionsflagEncoding
+import typings.node.anon.ObjectEncodingOptionswith
+import typings.node.anon.ObjectEncodingOptionswithEncoding
+import typings.node.anon.StatOptionsbigintfalseund
+import typings.node.anon.StatOptionsbiginttrue
+import typings.node.anon.WatchFileOptionsbigintfal
+import typings.node.anon.WatchFileOptionsbiginttru
+import typings.node.anon.WatchOptionsencodingbuffe
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
+import typings.node.fsMod.BigIntStats
+import typings.node.fsMod.BufferEncodingOption
+import typings.node.fsMod.CopySyncOptions
+import typings.node.fsMod.EncodingOption
+import typings.node.fsMod.FSWatcher
+import typings.node.fsMod.MakeDirectoryOptions
+import typings.node.fsMod.NoParamCallback
+import typings.node.fsMod.OpenDirOptions
+import typings.node.fsMod.OpenMode
+import typings.node.fsMod.PathLike
+import typings.node.fsMod.PathOrFileDescriptor
+import typings.node.fsMod.ReadPosition
+import typings.node.fsMod.ReadStreamOptions
+import typings.node.fsMod.ReadSyncOptions
+import typings.node.fsMod.RmDirOptions
+import typings.node.fsMod.RmOptions
+import typings.node.fsMod.StatOptions
+import typings.node.fsMod.StatSyncFn
+import typings.node.fsMod.StatWatcher
+import typings.node.fsMod.StreamOptions
+import typings.node.fsMod.TimeLike
+import typings.node.fsMod.WatchListener
+import typings.node.fsMod.WatchOptions
+import typings.node.fsMod.symlink.Type
+import typings.node.nodeUrlMod.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def access(path: typings.node.fsMod.PathLike): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
+inline def access(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 inline def access(
-  path: typings.node.fsMod.PathLike,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def access(path: typings.node.fsMod.PathLike, mode: scala.Double): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+  path: PathLike,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def access(path: PathLike, mode: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def access(
-  path: typings.node.fsMod.PathLike,
-  mode: scala.Double,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  path: PathLike,
+  mode: Double,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def accessSync(path: typings.node.fsMod.PathLike): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("accessSync")(path.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def accessSync(path: typings.node.fsMod.PathLike, mode: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("accessSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def accessSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("accessSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def accessSync(path: PathLike, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("accessSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def appendFile(file: scala.Double, data: js.Any): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def appendFile(file: Double, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def appendFile(
-  file: scala.Double,
-  data: js.Any,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def appendFile(file: scala.Double, data: js.Any, options: typings.fsExtra.anon.Encoding): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+  file: Double,
+  data: Any,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def appendFile(file: Double, data: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def appendFile(file: Double, data: Any, options: Encoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def appendFile(
-  file: scala.Double,
-  data: js.Any,
-  options: typings.fsExtra.anon.Encoding,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def appendFile(file: typings.node.fsMod.PathLike, data: js.Any): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+  file: Double,
+  data: Any,
+  options: Encoding,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def appendFile(file: Double, data: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def appendFile(file: PathLike, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def appendFile(
-  file: typings.node.fsMod.PathLike,
-  data: js.Any,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def appendFile(file: typings.node.fsMod.PathLike, data: js.Any, options: typings.fsExtra.anon.Encoding): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+  file: PathLike,
+  data: Any,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def appendFile(file: PathLike, data: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def appendFile(file: PathLike, data: Any, options: Encoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def appendFile(
-  file: typings.node.fsMod.PathLike,
-  data: js.Any,
-  options: typings.fsExtra.anon.Encoding,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  file: PathLike,
+  data: Any,
+  options: Encoding,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def appendFile(file: PathLike, data: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
-inline def appendFileSync(file: scala.Double, data: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def appendFileSync(file: scala.Double, data: java.lang.String, options: typings.node.fsMod.WriteFileOptions): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def appendFileSync(file: scala.Double, data: typings.std.Uint8Array): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def appendFileSync(file: scala.Double, data: typings.std.Uint8Array, options: typings.node.fsMod.WriteFileOptions): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def appendFileSync(file: typings.node.fsMod.PathLike, data: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def appendFileSync(path: PathOrFileDescriptor, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def appendFileSync(path: PathOrFileDescriptor, data: String, options: typings.node.fsMod.WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def appendFileSync(path: PathOrFileDescriptor, data: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def appendFileSync(
-  file: typings.node.fsMod.PathLike,
-  data: java.lang.String,
+  path: PathOrFileDescriptor,
+  data: js.typedarray.Uint8Array,
   options: typings.node.fsMod.WriteFileOptions
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def appendFileSync(file: typings.node.fsMod.PathLike, data: typings.std.Uint8Array): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def appendFileSync(
-  file: typings.node.fsMod.PathLike,
-  data: typings.std.Uint8Array,
-  options: typings.node.fsMod.WriteFileOptions
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def chmod(path: typings.node.fsMod.PathLike, mode: typings.fsExtra.mod.Mode): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def chmod(path: PathLike, mode: Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def chmod(
-  path: typings.node.fsMod.PathLike,
-  mode: typings.fsExtra.mod.Mode,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  path: PathLike,
+  mode: Mode,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def chmodSync(path: typings.node.fsMod.PathLike, mode: typings.node.fsMod.Mode): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def chmodSync(path: PathLike, mode: typings.node.fsMod.Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def chown(path: typings.node.fsMod.PathLike, uid: scala.Double, gid: scala.Double): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def chown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def chown(
-  path: typings.node.fsMod.PathLike,
-  uid: scala.Double,
-  gid: scala.Double,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  path: PathLike,
+  uid: Double,
+  gid: Double,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def chownSync(path: typings.node.fsMod.PathLike, uid: scala.Double, gid: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("chownSync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def chownSync(path: PathLike, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chownSync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def close(fd: scala.Double): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
-inline def close(fd: scala.Double, callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def close(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+inline def close(
+  fd: Double,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def closeSync(fd: scala.Double): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("closeSync")(fd.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def closeSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def copy(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def copy(
-  src: java.lang.String,
-  dest: java.lang.String,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def copy(src: java.lang.String, dest: java.lang.String, options: typings.fsExtra.mod.CopyOptions): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def copy(
-  src: java.lang.String,
-  dest: java.lang.String,
-  options: typings.fsExtra.mod.CopyOptions,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def copy(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def copy(src: String, dest: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def copy(src: String, dest: String, options: CopyOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def copy(src: String, dest: String, options: CopyOptions, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def copyFile(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def copyFile(
-  src: java.lang.String,
-  dest: java.lang.String,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def copyFile(src: java.lang.String, dest: java.lang.String, flags: scala.Double): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def copyFile(
-  src: java.lang.String,
-  dest: java.lang.String,
-  flags: scala.Double,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def copyFile(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def copyFile(src: String, dest: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def copyFile(src: String, dest: String, flags: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def copyFile(src: String, dest: String, flags: Double, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def copyFileSync(src: typings.node.fsMod.PathLike, dest: typings.node.fsMod.PathLike): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("copyFileSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def copyFileSync(src: typings.node.fsMod.PathLike, dest: typings.node.fsMod.PathLike, flags: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("copyFileSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def copyFileSync(src: PathLike, dest: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFileSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def copyFileSync(src: PathLike, dest: PathLike, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFileSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def copySync(src: java.lang.String, dest: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("copySync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def copySync(src: java.lang.String, dest: java.lang.String, options: typings.fsExtra.mod.CopyOptionsSync): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("copySync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def copySync(src: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copySync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def copySync(src: String, dest: String, options: CopyOptionsSync): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copySync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def createFile(file: java.lang.String): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
-inline def createFile(file: java.lang.String, callback: js.Function1[/* err */ typings.std.Error, scala.Unit]): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def cp(
+  source: String,
+  destination: String,
+  callback: js.Function1[
+  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cp(
+  source: String,
+  destination: String,
+  opts: typings.node.fsMod.CopyOptions,
+  callback: js.Function1[
+  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cp(
+  source: String,
+  destination: URL,
+  callback: js.Function1[
+  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cp(
+  source: String,
+  destination: URL,
+  opts: typings.node.fsMod.CopyOptions,
+  callback: js.Function1[
+  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cp(
+  source: URL,
+  destination: String,
+  callback: js.Function1[
+  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cp(
+  source: URL,
+  destination: String,
+  opts: typings.node.fsMod.CopyOptions,
+  callback: js.Function1[
+  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cp(
+  source: URL,
+  destination: URL,
+  callback: js.Function1[
+  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cp(
+  source: URL,
+  destination: URL,
+  opts: typings.node.fsMod.CopyOptions,
+  callback: js.Function1[
+  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cp")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def createFileSync(file: java.lang.String): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createFileSync")(file.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def cpSync(source: String, destination: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpSync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cpSync(source: String, destination: String, opts: CopySyncOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpSync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cpSync(source: String, destination: URL): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpSync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cpSync(source: String, destination: URL, opts: CopySyncOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpSync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cpSync(source: URL, destination: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpSync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cpSync(source: URL, destination: String, opts: CopySyncOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpSync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cpSync(source: URL, destination: URL): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpSync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def cpSync(source: URL, destination: URL, opts: CopySyncOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cpSync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def createLink(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def createLink(
-  src: java.lang.String,
-  dest: java.lang.String,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def createFile(file: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+inline def createFile(file: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def createLinkSync: js.Function2[/* src */ java.lang.String, /* dest */ java.lang.String, scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].selectDynamic("createLinkSync").asInstanceOf[js.Function2[/* src */ java.lang.String, /* dest */ java.lang.String, scala.Unit]]
+inline def createFileSync(file: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileSync")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def createReadStream(path: typings.node.fsMod.PathLike): typings.node.fsMod.ReadStream = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.ReadStream]
-inline def createReadStream(path: typings.node.fsMod.PathLike, options: java.lang.String): typings.node.fsMod.ReadStream = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.ReadStream]
-inline def createReadStream(path: typings.node.fsMod.PathLike, options: typings.node.anon.AutoClose): typings.node.fsMod.ReadStream = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.ReadStream]
+inline def createLink(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def createLink(src: String, dest: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def createSymlink(src: java.lang.String, dest: java.lang.String, `type`: typings.fsExtra.mod.SymlinkType): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def createSymlink(
-  src: java.lang.String,
-  dest: java.lang.String,
-  `type`: typings.fsExtra.mod.SymlinkType,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def createLinkSync: js.Function2[/* src */ String, /* dest */ String, Unit] = ^.asInstanceOf[js.Dynamic].selectDynamic("createLinkSync").asInstanceOf[js.Function2[/* src */ String, /* dest */ String, Unit]]
 
-inline def createSymlinkSync(src: java.lang.String, dest: java.lang.String, `type`: typings.fsExtra.mod.SymlinkType): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createSymlinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def createReadStream(path: PathLike): typings.node.fsMod.ReadStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.ReadStream]
+inline def createReadStream(path: PathLike, options: BufferEncoding): typings.node.fsMod.ReadStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.ReadStream]
+inline def createReadStream(path: PathLike, options: ReadStreamOptions): typings.node.fsMod.ReadStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.ReadStream]
 
-inline def createSymlink_Promise(src: java.lang.String, dest: java.lang.String, `type`: typings.fsExtra.mod.SymlinkType): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def createSymlink(src: String, dest: String, `type`: SymlinkType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def createSymlink(src: String, dest: String, `type`: SymlinkType, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def createWriteStream(path: typings.node.fsMod.PathLike): typings.node.fsMod.WriteStream = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.WriteStream]
-inline def createWriteStream(path: typings.node.fsMod.PathLike, options: java.lang.String): typings.node.fsMod.WriteStream = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.WriteStream]
-inline def createWriteStream(path: typings.node.fsMod.PathLike, options: typings.node.anon.EmitClose): typings.node.fsMod.WriteStream = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.WriteStream]
+inline def createSymlinkSync(src: String, dest: String, `type`: SymlinkType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def emptyDirSync_(path: java.lang.String): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("emptyDirSync")(path.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def createSymlink_Promise(src: String, dest: String, `type`: SymlinkType): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
-inline def emptyDir_(path: java.lang.String): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("emptyDir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
-inline def emptyDir_(path: java.lang.String, callback: js.Function1[/* err */ typings.std.Error, scala.Unit]): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("emptyDir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def createWriteStream(path: PathLike): typings.node.fsMod.WriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.WriteStream]
+inline def createWriteStream(path: PathLike, options: BufferEncoding): typings.node.fsMod.WriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.WriteStream]
+inline def createWriteStream(path: PathLike, options: StreamOptions): typings.node.fsMod.WriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.WriteStream]
 
-inline def emptydir(path: java.lang.String): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("emptydir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
-inline def emptydir(path: java.lang.String, callback: js.Function1[/* err */ typings.std.Error, scala.Unit]): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("emptydir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def emptyDirSync_(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyDirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def emptydirSync: js.Function1[/* path */ java.lang.String, scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].selectDynamic("emptydirSync").asInstanceOf[js.Function1[/* path */ java.lang.String, scala.Unit]]
+inline def emptyDir_(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyDir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+inline def emptyDir_(path: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyDir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ensureDir(path: java.lang.String): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def ensureDir(path: java.lang.String, options: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ensureDir(
-  path: java.lang.String,
-  options: scala.Double,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ensureDir(
-  path: java.lang.String,
-  options: scala.Unit,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ensureDir(path: java.lang.String, options: typings.fsExtra.mod.EnsureOptions): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ensureDir(
-  path: java.lang.String,
-  options: typings.fsExtra.mod.EnsureOptions,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def emptydir(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("emptydir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+inline def emptydir(path: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emptydir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ensureDirSync(path: java.lang.String): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirSync")(path.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def ensureDirSync(path: java.lang.String, options: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ensureDirSync(path: java.lang.String, options: typings.fsExtra.mod.EnsureOptions): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def emptydirSync: js.Function1[/* path */ String, Unit] = ^.asInstanceOf[js.Dynamic].selectDynamic("emptydirSync").asInstanceOf[js.Function1[/* path */ String, Unit]]
 
-inline def ensureDir_Promise(path: java.lang.String): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
-inline def ensureDir_Promise(path: java.lang.String, options: scala.Double): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def ensureDir_Promise(path: java.lang.String, options: typings.fsExtra.mod.EnsureOptions): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def ensureDir(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def ensureDir(path: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ensureDir(path: String, options: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ensureDir(path: String, options: Double, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ensureDir(path: String, options: Unit, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ensureDir(path: String, options: EnsureOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ensureDir(path: String, options: EnsureOptions, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ensureFile(path: java.lang.String): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
-inline def ensureFile(path: java.lang.String, callback: js.Function1[/* err */ typings.std.Error, scala.Unit]): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureFile")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ensureDirSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def ensureDirSync(path: String, options: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ensureDirSync(path: String, options: EnsureOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ensureFileSync(path: java.lang.String): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def ensureDir_Promise(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+inline def ensureDir_Promise(path: String, options: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def ensureDir_Promise(path: String, options: EnsureOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
-inline def ensureLink(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def ensureLink(
-  src: java.lang.String,
-  dest: java.lang.String,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ensureFile(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+inline def ensureFile(path: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureFile")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ensureLinkSync(src: java.lang.String, dest: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureLinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ensureFileSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ensureSymlink(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def ensureSymlink(
-  src: java.lang.String,
-  dest: java.lang.String,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ensureSymlink(src: java.lang.String, dest: java.lang.String, `type`: typings.fsExtra.mod.SymlinkType): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def ensureSymlink(
-  src: java.lang.String,
-  dest: java.lang.String,
-  `type`: typings.fsExtra.mod.SymlinkType,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ensureLink(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def ensureLink(src: String, dest: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureLink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ensureSymlinkSync(src: java.lang.String, dest: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ensureSymlinkSync(src: java.lang.String, dest: java.lang.String, `type`: typings.fsExtra.mod.SymlinkType): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ensureLinkSync(src: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureLinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def exists(path: typings.node.fsMod.PathLike, callback: js.Function1[/* exists */ scala.Boolean, scala.Unit]): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exists")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ensureSymlink(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def ensureSymlink(src: String, dest: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ensureSymlink(src: String, dest: String, `type`: SymlinkType): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def ensureSymlink(src: String, dest: String, `type`: SymlinkType, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlink")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def existsSync(path: typings.node.fsMod.PathLike): scala.Boolean = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("existsSync")(path.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def ensureSymlinkSync(src: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ensureSymlinkSync(src: String, dest: String, `type`: SymlinkType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureSymlinkSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def fchmod(fd: scala.Double, mode: typings.fsExtra.mod.Mode): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def exists(path: PathLike, callback: js.Function1[/* exists */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def existsSync(path: PathLike): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("existsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
+inline def fchmod(fd: Double, mode: Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def fchmod(
-  fd: scala.Double,
-  mode: typings.fsExtra.mod.Mode,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  fd: Double,
+  mode: Mode,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def fchmodSync(fd: scala.Double, mode: typings.node.fsMod.Mode): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fchmodSync")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def fchmodSync(fd: Double, mode: typings.node.fsMod.Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmodSync")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def fchown(fd: scala.Double, uid: scala.Double, gid: scala.Double): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fchown")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def fchown(fd: Double, uid: Double, gid: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchown")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def fchown(
-  fd: scala.Double,
-  uid: scala.Double,
-  gid: scala.Double,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fchown")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  fd: Double,
+  uid: Double,
+  gid: Double,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchown")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def fchownSync(fd: scala.Double, uid: scala.Double, gid: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fchownSync")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def fchownSync(fd: Double, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchownSync")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def fdatasync(fd: scala.Double): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fdatasync")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
-inline def fdatasync(fd: scala.Double, callback: js.Function0[scala.Unit]): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fdatasync")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def fdatasync(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fdatasync")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+inline def fdatasync(fd: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fdatasync")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def fdatasyncSync(fd: scala.Double): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fdatasyncSync")(fd.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def fdatasyncSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fdatasyncSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def fstat(fd: scala.Double): js.Promise[typings.node.fsMod.Stats] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
+inline def fstat(fd: Double): js.Promise[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
 inline def fstat(
-  fd: scala.Double,
+  fd: Double,
   callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
   /* stats */ typings.node.fsMod.Stats, 
-  js.Any
+  Any
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def fstatSync(fd: scala.Double): typings.node.fsMod.Stats = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Stats]
+inline def fstatSync(fd: Double): typings.node.fsMod.Stats | BigIntStats = ^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Stats | BigIntStats]
+inline def fstatSync(fd: Double, options: StatOptionsbigintfalseund): typings.node.fsMod.Stats = (^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.Stats]
+inline def fstatSync(fd: Double, options: StatOptionsbiginttrue): BigIntStats = (^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BigIntStats]
+inline def fstatSync(fd: Double, options: StatOptions): typings.node.fsMod.Stats | BigIntStats = (^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.Stats | BigIntStats]
 
-inline def fsync(fd: scala.Double): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fsync")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
-inline def fsync(fd: scala.Double, callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fsync")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def fstatSync_Stats(fd: Double): typings.node.fsMod.Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Stats]
 
-inline def fsyncSync(fd: scala.Double): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fsyncSync")(fd.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def fsync(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fsync")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+inline def fsync(
+  fd: Double,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fsync")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ftruncate(fd: scala.Double): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
-inline def ftruncate(fd: scala.Double, callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ftruncate(fd: scala.Double, len: scala.Double): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def fsyncSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fsyncSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def ftruncate(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 inline def ftruncate(
-  fd: scala.Double,
-  len: scala.Double,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  fd: Double,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ftruncate(fd: Double, len: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def ftruncate(
+  fd: Double,
+  len: Double,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ftruncateSync(fd: scala.Double): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ftruncateSync")(fd.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def ftruncateSync(fd: scala.Double, len: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ftruncateSync")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ftruncateSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ftruncateSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def ftruncateSync(fd: Double, len: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncateSync")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def futimes(fd: scala.Double, atime: scala.Double, mtime: scala.Double): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def futimes(fd: Double, atime: js.Date, mtime: js.Date): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def futimes(
-  fd: scala.Double,
-  atime: scala.Double,
-  mtime: scala.Double,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def futimes(fd: scala.Double, atime: typings.std.Date, mtime: typings.std.Date): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+  fd: Double,
+  atime: js.Date,
+  mtime: js.Date,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def futimes(fd: Double, atime: Double, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def futimes(
-  fd: scala.Double,
-  atime: typings.std.Date,
-  mtime: typings.std.Date,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  fd: Double,
+  atime: Double,
+  mtime: Double,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def futimesSync(fd: scala.Double, atime: java.lang.String, mtime: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def futimesSync(fd: scala.Double, atime: java.lang.String, mtime: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def futimesSync(fd: scala.Double, atime: java.lang.String, mtime: typings.std.Date): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def futimesSync(fd: scala.Double, atime: scala.Double, mtime: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def futimesSync(fd: scala.Double, atime: scala.Double, mtime: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def futimesSync(fd: scala.Double, atime: scala.Double, mtime: typings.std.Date): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def futimesSync(fd: scala.Double, atime: typings.std.Date, mtime: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def futimesSync(fd: scala.Double, atime: typings.std.Date, mtime: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def futimesSync(fd: scala.Double, atime: typings.std.Date, mtime: typings.std.Date): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def futimesSync(fd: Double, atime: TimeLike, mtime: TimeLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def lchmod(
-  path: typings.node.fsMod.PathLike,
-  mode: typings.node.fsMod.Mode,
-  callback: typings.node.fsMod.NoParamCallback
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def lchmod(path: PathLike, mode: typings.node.fsMod.Mode, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def lchmodSync(path: typings.node.fsMod.PathLike, mode: typings.node.fsMod.Mode): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lchmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def lchmodSync(path: PathLike, mode: typings.node.fsMod.Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def lchown(path: typings.node.fsMod.PathLike, uid: scala.Double, gid: scala.Double): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lchown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def lchown(path: PathLike, uid: Double, gid: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def lchown(
-  path: typings.node.fsMod.PathLike,
-  uid: scala.Double,
-  gid: scala.Double,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lchown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  path: PathLike,
+  uid: Double,
+  gid: Double,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def lchownSync(path: typings.node.fsMod.PathLike, uid: scala.Double, gid: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lchownSync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def lchownSync(path: PathLike, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchownSync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def link(existingPath: typings.node.fsMod.PathLike, newPath: typings.node.fsMod.PathLike): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("link")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def link(existingPath: PathLike, newPath: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def link(
-  existingPath: typings.node.fsMod.PathLike,
-  newPath: typings.node.fsMod.PathLike,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("link")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  existingPath: PathLike,
+  newPath: PathLike,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def linkSync(existingPath: typings.node.fsMod.PathLike, newPath: typings.node.fsMod.PathLike): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("linkSync")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def linkSync(existingPath: PathLike, newPath: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("linkSync")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def lstat(path: typings.node.fsMod.PathLike): js.Promise[typings.node.fsMod.Stats] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
+inline def lstat(path: PathLike): js.Promise[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
 inline def lstat(
-  path: typings.node.fsMod.PathLike,
+  path: PathLike,
   callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
   /* stats */ typings.node.fsMod.Stats, 
-  js.Any
+  Any
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def lstatSync(path: typings.node.fsMod.PathLike): typings.node.fsMod.Stats = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lstatSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Stats]
+inline def lstatSync: StatSyncFn = ^.asInstanceOf[js.Dynamic].selectDynamic("lstatSync").asInstanceOf[StatSyncFn]
 
-inline def lutimes(
-  path: typings.node.fsMod.PathLike,
-  atime: java.lang.String,
-  mtime: java.lang.String,
-  callback: typings.node.fsMod.NoParamCallback
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimes(
-  path: typings.node.fsMod.PathLike,
-  atime: java.lang.String,
-  mtime: scala.Double,
-  callback: typings.node.fsMod.NoParamCallback
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimes(
-  path: typings.node.fsMod.PathLike,
-  atime: java.lang.String,
-  mtime: typings.std.Date,
-  callback: typings.node.fsMod.NoParamCallback
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimes(
-  path: typings.node.fsMod.PathLike,
-  atime: scala.Double,
-  mtime: java.lang.String,
-  callback: typings.node.fsMod.NoParamCallback
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimes(
-  path: typings.node.fsMod.PathLike,
-  atime: scala.Double,
-  mtime: scala.Double,
-  callback: typings.node.fsMod.NoParamCallback
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimes(
-  path: typings.node.fsMod.PathLike,
-  atime: scala.Double,
-  mtime: typings.std.Date,
-  callback: typings.node.fsMod.NoParamCallback
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimes(
-  path: typings.node.fsMod.PathLike,
-  atime: typings.std.Date,
-  mtime: java.lang.String,
-  callback: typings.node.fsMod.NoParamCallback
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimes(
-  path: typings.node.fsMod.PathLike,
-  atime: typings.std.Date,
-  mtime: scala.Double,
-  callback: typings.node.fsMod.NoParamCallback
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimes(
-  path: typings.node.fsMod.PathLike,
-  atime: typings.std.Date,
-  mtime: typings.std.Date,
-  callback: typings.node.fsMod.NoParamCallback
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def lutimes(path: PathLike, atime: TimeLike, mtime: TimeLike, callback: NoParamCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def lutimesSync(path: typings.node.fsMod.PathLike, atime: java.lang.String, mtime: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimesSync(path: typings.node.fsMod.PathLike, atime: java.lang.String, mtime: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimesSync(path: typings.node.fsMod.PathLike, atime: java.lang.String, mtime: typings.std.Date): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimesSync(path: typings.node.fsMod.PathLike, atime: scala.Double, mtime: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimesSync(path: typings.node.fsMod.PathLike, atime: scala.Double, mtime: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimesSync(path: typings.node.fsMod.PathLike, atime: scala.Double, mtime: typings.std.Date): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimesSync(path: typings.node.fsMod.PathLike, atime: typings.std.Date, mtime: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimesSync(path: typings.node.fsMod.PathLike, atime: typings.std.Date, mtime: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def lutimesSync(path: typings.node.fsMod.PathLike, atime: typings.std.Date, mtime: typings.std.Date): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def lutimesSync(path: PathLike, atime: TimeLike, mtime: TimeLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lutimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def mkdir(path: typings.node.fsMod.PathLike): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
+inline def mkdir(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 inline def mkdir(
-  path: typings.node.fsMod.PathLike,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  path: PathLike,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def mkdir(
-  path: typings.node.fsMod.PathLike,
-  options: scala.Null,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  path: PathLike,
+  options: Null,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def mkdir(path: PathLike, options: Mode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def mkdir(
-  path: typings.node.fsMod.PathLike,
-  options: typings.fsExtra.mod.Mode,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  path: PathLike,
+  options: Mode,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def mkdir(path: PathLike, options: MakeDirectoryOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def mkdir(
-  path: typings.node.fsMod.PathLike,
-  options: typings.node.fsMod.MakeDirectoryOptions,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  path: PathLike,
+  options: MakeDirectoryOptions,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def mkdirSync(path: typings.node.fsMod.PathLike): js.UndefOr[java.lang.String] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[java.lang.String]]
-inline def mkdirSync(path: typings.node.fsMod.PathLike, options: typings.node.anon.MakeDirectoryOptionsrecur): java.lang.String = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def mkdirSync(path: typings.node.fsMod.PathLike, options: typings.node.anon.MakeDirectoryOptionsrecurMode): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def mkdirSync(path: typings.node.fsMod.PathLike, options: typings.node.fsMod.MakeDirectoryOptions): js.UndefOr[java.lang.String] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String]]
-inline def mkdirSync(path: typings.node.fsMod.PathLike, options: typings.node.fsMod.Mode): js.UndefOr[java.lang.String] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String]]
+inline def mkdirSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def mkdirSync(path: PathLike, options: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def mkdirSync(path: PathLike, options: MakeDirectoryOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def mkdirSync_Unit(path: typings.node.fsMod.PathLike): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def mkdirSync_Unit(path: typings.node.fsMod.PathLike, options: typings.node.fsMod.Mode): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def mkdirp(dir: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+inline def mkdirp(dir: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def mkdirp(dir: java.lang.String): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
-inline def mkdirp(dir: java.lang.String, callback: js.Function1[/* err */ typings.std.Error, scala.Unit]): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdirp")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def mkdirpSync(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirpSync")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def mkdirpSync(dir: java.lang.String): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdirpSync")(dir.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def mkdirs(dir: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+inline def mkdirs(dir: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def mkdirs(dir: java.lang.String): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
-inline def mkdirs(dir: java.lang.String, callback: js.Function1[/* err */ typings.std.Error, scala.Unit]): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def mkdirsSync(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirsSync")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def mkdirsSync(dir: java.lang.String): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdirsSync")(dir.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-
-inline def mkdtemp(prefix: java.lang.String): js.Promise[java.lang.String] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Promise[java.lang.String]]
+inline def mkdtemp(prefix: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 inline def mkdtemp(
-  prefix: java.lang.String,
+  prefix: String,
   callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* folder */ java.lang.String, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* folder */ String, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtemp")(prefix.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def mkdtempSync(prefix: java.lang.String): java.lang.String = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def mkdtempSync(prefix: java.lang.String, options: java.lang.String): java.lang.String | typings.node.Buffer = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | typings.node.Buffer]
-inline def mkdtempSync(prefix: java.lang.String, options: typings.node.BufferEncoding): java.lang.String = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def mkdtempSync(prefix: java.lang.String, options: typings.node.fsMod.BaseEncodingOptions): java.lang.String = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def mkdtempSync(prefix: java.lang.String, options: typings.node.fsMod.BufferEncodingOption): typings.node.Buffer = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.Buffer]
+inline def mkdtempSync(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def mkdtempSync(prefix: String, options: BufferEncodingOption): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+inline def mkdtempSync(prefix: String, options: EncodingOption): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def mkdtempSync_Union(prefix: java.lang.String): java.lang.String | typings.node.Buffer = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any]).asInstanceOf[java.lang.String | typings.node.Buffer]
-inline def mkdtempSync_Union(prefix: java.lang.String, options: typings.node.fsMod.BaseEncodingOptions): java.lang.String | typings.node.Buffer = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | typings.node.Buffer]
+inline def mkdtempSync_Union(prefix: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+inline def mkdtempSync_Union(prefix: String, options: EncodingOption): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdtempSync")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
 
-inline def move(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def move(
-  src: java.lang.String,
-  dest: java.lang.String,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def move(src: java.lang.String, dest: java.lang.String, options: typings.fsExtra.mod.MoveOptions): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def move(
-  src: java.lang.String,
-  dest: java.lang.String,
-  options: typings.fsExtra.mod.MoveOptions,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def move(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def move(src: String, dest: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def move(src: String, dest: String, options: MoveOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def move(src: String, dest: String, options: MoveOptions, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def moveSync(src: java.lang.String, dest: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("moveSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def moveSync(src: java.lang.String, dest: java.lang.String, options: typings.fsExtra.mod.MoveOptions): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("moveSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def moveSync(src: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def moveSync(src: String, dest: String, options: MoveOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveSync")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def open(path: typings.node.fsMod.PathLike, flags: java.lang.String): js.Promise[scala.Double] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Double]]
+inline def open(path: PathLike, flags: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
 inline def open(
-  path: typings.node.fsMod.PathLike,
-  flags: java.lang.String,
-  callback: js.Function2[/* err */ typings.node.NodeJS.ErrnoException, /* fd */ scala.Double, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def open(path: typings.node.fsMod.PathLike, flags: java.lang.String, mode: typings.fsExtra.mod.Mode): js.Promise[scala.Double] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Double]]
+  path: PathLike,
+  flags: String,
+  callback: js.Function2[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* fd */ Double, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def open(path: PathLike, flags: String, mode: Mode): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
 inline def open(
-  path: typings.node.fsMod.PathLike,
-  flags: java.lang.String,
-  mode: typings.fsExtra.mod.Mode,
-  callback: js.Function2[/* err */ typings.node.NodeJS.ErrnoException, /* fd */ scala.Double, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def open(path: typings.node.fsMod.PathLike, flags: scala.Double): js.Promise[scala.Double] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Double]]
+  path: PathLike,
+  flags: String,
+  mode: Mode,
+  callback: js.Function2[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* fd */ Double, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def open(path: PathLike, flags: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
 inline def open(
-  path: typings.node.fsMod.PathLike,
-  flags: scala.Double,
-  callback: js.Function2[/* err */ typings.node.NodeJS.ErrnoException, /* fd */ scala.Double, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def open(path: typings.node.fsMod.PathLike, flags: scala.Double, mode: typings.fsExtra.mod.Mode): js.Promise[scala.Double] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Double]]
+  path: PathLike,
+  flags: Double,
+  callback: js.Function2[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* fd */ Double, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def open(path: PathLike, flags: Double, mode: Mode): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
 inline def open(
-  path: typings.node.fsMod.PathLike,
-  flags: scala.Double,
-  mode: typings.fsExtra.mod.Mode,
-  callback: js.Function2[/* err */ typings.node.NodeJS.ErrnoException, /* fd */ scala.Double, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  path: PathLike,
+  flags: Double,
+  mode: Mode,
+  callback: js.Function2[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* fd */ Double, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def openSync(path: typings.node.fsMod.PathLike, flags: typings.node.fsMod.OpenMode): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def openSync(
-  path: typings.node.fsMod.PathLike,
-  flags: typings.node.fsMod.OpenMode,
-  mode: typings.node.fsMod.Mode
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def openSync(path: PathLike, flags: OpenMode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def openSync(path: PathLike, flags: OpenMode, mode: typings.node.fsMod.Mode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Double]
 
-inline def opendir(path: java.lang.String): js.Promise[typings.node.fsMod.Dir] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Dir]]
+inline def opendir(path: String): js.Promise[typings.node.fsMod.Dir] = ^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Dir]]
 inline def opendir(
-  path: java.lang.String,
+  path: String,
   cb: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException | scala.Null, 
+  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
   /* dir */ typings.node.fsMod.Dir, 
-  scala.Unit
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def opendir(path: java.lang.String, options: typings.node.fsMod.OpenDirOptions): js.Promise[typings.node.fsMod.Dir] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.fsMod.Dir]]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def opendir(path: String, options: OpenDirOptions): js.Promise[typings.node.fsMod.Dir] = (^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.node.fsMod.Dir]]
 inline def opendir(
-  path: java.lang.String,
-  options: typings.node.fsMod.OpenDirOptions,
+  path: String,
+  options: OpenDirOptions,
   cb: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException | scala.Null, 
+  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
   /* dir */ typings.node.fsMod.Dir, 
-  scala.Unit
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("opendir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def opendirSync(path: java.lang.String): typings.node.fsMod.Dir = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("opendirSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Dir]
-inline def opendirSync(path: java.lang.String, options: typings.node.fsMod.OpenDirOptions): typings.node.fsMod.Dir = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("opendirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.Dir]
+inline def opendirSync(path: PathLike): typings.node.fsMod.Dir = ^.asInstanceOf[js.Dynamic].applyDynamic("opendirSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Dir]
+inline def opendirSync(path: PathLike, options: OpenDirOptions): typings.node.fsMod.Dir = (^.asInstanceOf[js.Dynamic].applyDynamic("opendirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.Dir]
 
-inline def outputFile(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def outputFile(file: String, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def outputFile(file: String, data: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputFile(file: String, data: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def outputFile(file: String, data: Any, options: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputFile(file: String, data: Any, options: WriteFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def outputFile(
-  file: java.lang.String,
-  data: js.Any,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def outputFile(file: java.lang.String, data: js.Any, options: java.lang.String): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def outputFile(
-  file: java.lang.String,
-  data: js.Any,
-  options: java.lang.String,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def outputFile(file: java.lang.String, data: js.Any, options: typings.fsExtra.mod.WriteFileOptions): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def outputFile(
-  file: java.lang.String,
-  data: js.Any,
-  options: typings.fsExtra.mod.WriteFileOptions,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  file: String,
+  data: Any,
+  options: WriteFileOptions,
+  callback: js.Function1[/* err */ js.Error, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputFile(file: String, data: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
-inline def outputFileSync(file: java.lang.String, data: js.Any): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def outputFileSync(file: java.lang.String, data: js.Any, options: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def outputFileSync(file: java.lang.String, data: js.Any, options: typings.fsExtra.mod.WriteFileOptions): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def outputFileSync(file: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputFileSync(file: String, data: Any, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputFileSync(file: String, data: Any, options: WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputFileSync(file: String, data: Any, options: BufferEncoding): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def outputJSONSync_(file: java.lang.String, data: js.Any): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputJSONSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def outputJSONSync_(file: java.lang.String, data: js.Any, options: typings.fsExtra.mod.WriteOptions): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputJSONSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def outputJSONSync_(file: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSONSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputJSONSync_(file: String, data: Any, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSONSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputJSONSync_(file: String, data: Any, options: WriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSONSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputJSONSync_(file: String, data: Any, options: BufferEncoding): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSONSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def outputJSON_(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def outputJSON_(
-  file: java.lang.String,
-  data: js.Any,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def outputJSON_(file: java.lang.String, data: js.Any, options: typings.fsExtra.mod.WriteOptions): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def outputJSON_(
-  file: java.lang.String,
-  data: js.Any,
-  options: typings.fsExtra.mod.WriteOptions,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def outputJSON_(file: String, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def outputJSON_(file: String, data: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputJSON_(file: String, data: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def outputJSON_(file: String, data: Any, options: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputJSON_(file: String, data: Any, options: WriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def outputJSON_(file: String, data: Any, options: WriteOptions, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputJSON_(file: String, data: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def outputJSON_(file: String, data: Any, options: BufferEncoding, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJSON")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def outputJson(file: java.lang.String, data: js.Any): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def outputJson(
-  file: java.lang.String,
-  data: js.Any,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def outputJson(file: java.lang.String, data: js.Any, options: typings.fsExtra.mod.WriteOptions): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def outputJson(
-  file: java.lang.String,
-  data: js.Any,
-  options: typings.fsExtra.mod.WriteOptions,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def outputJson(file: String, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def outputJson(file: String, data: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputJson(file: String, data: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def outputJson(file: String, data: Any, options: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputJson(file: String, data: Any, options: WriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def outputJson(file: String, data: Any, options: WriteOptions, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputJson(file: String, data: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def outputJson(file: String, data: Any, options: BufferEncoding, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJson")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def outputJsonSync(file: java.lang.String, data: js.Any): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputJsonSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def outputJsonSync(file: java.lang.String, data: js.Any, options: typings.fsExtra.mod.WriteOptions): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("outputJsonSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def outputJsonSync(file: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJsonSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputJsonSync(file: String, data: Any, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJsonSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputJsonSync(file: String, data: Any, options: WriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJsonSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def outputJsonSync(file: String, data: Any, options: BufferEncoding): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outputJsonSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def pathExists(path: java.lang.String): js.Promise[scala.Boolean] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pathExists")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Boolean]]
-inline def pathExists(
-  path: java.lang.String,
-  callback: js.Function2[/* err */ typings.std.Error, /* exists */ scala.Boolean, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pathExists")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def pathExists(path: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("pathExists")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+inline def pathExists(path: String, callback: js.Function2[/* err */ js.Error, /* exists */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pathExists")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def pathExistsSync(path: java.lang.String): scala.Boolean = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pathExistsSync")(path.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def pathExistsSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("pathExistsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def read(fd: scala.Double, buffer: typings.std.DataView, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferDataView] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferDataView]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.DataView,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferDataView] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferDataView]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.DataView,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
+inline def read[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: Double): js.Promise[typings.fsExtra.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.Buffer[TBuffer]]]
+inline def read[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[typings.fsExtra.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.Buffer[TBuffer]]]
+inline def read[TBuffer /* <: ArrayBufferView */](
+  fd: Double,
+  buffer: TBuffer,
+  offset: Double,
+  length: Double,
+  position: Double,
   callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.DataView, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* bytesRead */ Double, 
+  /* buffer */ TBuffer, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.DataView,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def read[TBuffer /* <: ArrayBufferView */](
+  fd: Double,
+  buffer: TBuffer,
+  offset: Double,
+  length: Double,
+  position: Null,
   callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.DataView, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* bytesRead */ Double, 
+  /* buffer */ TBuffer, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(fd: scala.Double, buffer: typings.std.Float32Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferFloat32Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat32Array]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Float32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferFloat32Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat32Array]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Float32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Float32Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Float32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Float32Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(fd: scala.Double, buffer: typings.std.Float64Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferFloat64Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat64Array]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Float64Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferFloat64Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat64Array]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Float64Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Float64Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Float64Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Float64Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(fd: scala.Double, buffer: typings.std.Int16Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferInt16Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt16Array]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Int16Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferInt16Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt16Array]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Int16Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Int16Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Int16Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Int16Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(fd: scala.Double, buffer: typings.std.Int32Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferInt32Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt32Array]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Int32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferInt32Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt32Array]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Int32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Int32Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Int32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Int32Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(fd: scala.Double, buffer: typings.std.Int8Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferInt8Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt8Array]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Int8Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferInt8Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt8Array]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Int8Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Int8Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Int8Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Int8Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(fd: scala.Double, buffer: typings.std.Uint16Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferBytesRead] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesRead]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Uint16Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferBytesRead] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesRead]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Uint16Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Uint16Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Uint16Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Uint16Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(fd: scala.Double, buffer: typings.std.Uint32Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferUint32Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferUint32Array]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Uint32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferUint32Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferUint32Array]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Uint32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Uint32Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Uint32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Uint32Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(fd: scala.Double, buffer: typings.std.Uint8Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.Buffer] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.Buffer]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Uint8Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.Buffer] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.Buffer]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Uint8Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Uint8Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Uint8Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Uint8Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Uint8ClampedArray,
-  offset: scala.Double,
-  length: scala.Double
-): js.Promise[typings.fsExtra.anon.BytesRead] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesRead]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Uint8ClampedArray,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BytesRead] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesRead]]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Uint8ClampedArray,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Uint8ClampedArray, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def read(
-  fd: scala.Double,
-  buffer: typings.std.Uint8ClampedArray,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* bytesRead */ scala.Double, 
-  /* buffer */ typings.std.Uint8ClampedArray, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def readFile(file: scala.Double): js.Promise[typings.node.Buffer] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.Buffer]]
+inline def readFile(file: Double): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
 inline def readFile(
-  file: scala.Double,
+  file: Double,
   callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* data */ typings.node.Buffer, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* data */ Buffer, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def readFile(file: scala.Double, encoding: java.lang.String): js.Promise[java.lang.String] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[java.lang.String]]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readFile(file: Double, encoding: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 inline def readFile(
-  file: scala.Double,
-  encoding: java.lang.String,
+  file: Double,
+  encoding: String,
   callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* data */ java.lang.String, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* data */ String, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def readFile(file: scala.Double, options: typings.fsExtra.anon.EncodingFlag): js.Promise[java.lang.String] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[java.lang.String]]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readFile(file: Double, encoding: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 inline def readFile(
-  file: scala.Double,
-  options: typings.fsExtra.anon.EncodingFlag,
+  file: Double,
+  encoding: BufferEncoding,
   callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* data */ typings.node.Buffer, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* data */ String, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def readFile(file: scala.Double, options: typings.fsExtra.anon.Flag): js.Promise[java.lang.String] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[java.lang.String]]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readFile(file: Double, options: EncodingFlag): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 inline def readFile(
-  file: scala.Double,
-  options: typings.fsExtra.anon.Flag,
+  file: Double,
+  options: EncodingFlag,
   callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* data */ typings.node.Buffer, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* data */ Buffer, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def readFile(file: typings.node.fsMod.PathLike): js.Promise[typings.node.Buffer] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.Buffer]]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readFile(file: Double, options: Flag): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 inline def readFile(
-  file: typings.node.fsMod.PathLike,
+  file: Double,
+  options: Flag,
   callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* data */ typings.node.Buffer, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* data */ Buffer, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def readFile(file: typings.node.fsMod.PathLike, encoding: java.lang.String): js.Promise[java.lang.String] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[java.lang.String]]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readFile(file: PathLike): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
 inline def readFile(
-  file: typings.node.fsMod.PathLike,
-  encoding: java.lang.String,
+  file: PathLike,
   callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* data */ java.lang.String, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* data */ Buffer, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def readFile(file: typings.node.fsMod.PathLike, options: typings.fsExtra.anon.EncodingFlag): js.Promise[java.lang.String] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[java.lang.String]]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readFile(file: PathLike, encoding: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 inline def readFile(
-  file: typings.node.fsMod.PathLike,
-  options: typings.fsExtra.anon.EncodingFlag,
+  file: PathLike,
+  encoding: String,
   callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* data */ typings.node.Buffer, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* data */ String, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def readFile(file: typings.node.fsMod.PathLike, options: typings.fsExtra.anon.Flag): js.Promise[java.lang.String] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[java.lang.String]]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readFile(file: PathLike, encoding: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 inline def readFile(
-  file: typings.node.fsMod.PathLike,
-  options: typings.fsExtra.anon.Flag,
+  file: PathLike,
+  encoding: BufferEncoding,
   callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* data */ typings.node.Buffer, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* data */ String, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readFile(file: PathLike, options: EncodingFlag): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+inline def readFile(
+  file: PathLike,
+  options: EncodingFlag,
+  callback: js.Function2[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* data */ Buffer, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readFile(file: PathLike, options: Flag): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+inline def readFile(
+  file: PathLike,
+  options: Flag,
+  callback: js.Function2[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* data */ Buffer, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def readFileSync(path: scala.Double): java.lang.String | typings.node.Buffer = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[java.lang.String | typings.node.Buffer]
-inline def readFileSync(path: scala.Double, options: typings.node.BufferEncoding): java.lang.String = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def readFileSync(path: scala.Double, options: typings.node.anon.BaseEncodingOptionsflagst): java.lang.String | typings.node.Buffer = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | typings.node.Buffer]
-inline def readFileSync(path: scala.Double, options: typings.node.anon.EncodingBufferEncoding): java.lang.String = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def readFileSync(path: scala.Double, options: typings.node.anon.`3`): typings.node.Buffer = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.Buffer]
-inline def readFileSync(path: typings.node.fsMod.PathLike): java.lang.String | typings.node.Buffer = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[java.lang.String | typings.node.Buffer]
-inline def readFileSync(path: typings.node.fsMod.PathLike, options: typings.node.BufferEncoding): java.lang.String = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def readFileSync(path: typings.node.fsMod.PathLike, options: typings.node.anon.BaseEncodingOptionsflagst): java.lang.String | typings.node.Buffer = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | typings.node.Buffer]
-inline def readFileSync(path: typings.node.fsMod.PathLike, options: typings.node.anon.EncodingBufferEncoding): java.lang.String = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def readFileSync(path: typings.node.fsMod.PathLike, options: typings.node.anon.`3`): typings.node.Buffer = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.Buffer]
+inline def readFileSync(path: PathOrFileDescriptor): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+inline def readFileSync(path: PathOrFileDescriptor, options: typings.node.anon.EncodingFlag): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def readFileSync(path: PathOrFileDescriptor, options: typings.node.anon.Flag): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+inline def readFileSync(path: PathOrFileDescriptor, options: ObjectEncodingOptionsflagEncoding): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+inline def readFileSync(path: PathOrFileDescriptor, options: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def readFileSync_Buffer(path: scala.Double): typings.node.Buffer = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.Buffer]
-inline def readFileSync_Buffer(path: typings.node.fsMod.PathLike): typings.node.Buffer = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.Buffer]
+inline def readFileSync_Buffer(path: PathOrFileDescriptor): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 
-inline def readFileSync_Union(path: scala.Double, options: typings.node.BufferEncoding): java.lang.String | typings.node.Buffer = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | typings.node.Buffer]
-inline def readFileSync_Union(path: typings.node.fsMod.PathLike, options: typings.node.BufferEncoding): java.lang.String | typings.node.Buffer = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | typings.node.Buffer]
+inline def readFileSync_Union(path: PathOrFileDescriptor, options: BufferEncoding): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
 
-inline def readJSONSync_(file: java.lang.String): js.Any = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(file.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-inline def readJSONSync_(file: java.lang.String, options: typings.fsExtra.mod.ReadOptions): js.Any = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def readJSONSync_(file: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(file.asInstanceOf[js.Any]).asInstanceOf[Any]
+inline def readJSONSync_(file: String, options: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def readJSONSync_(file: String, options: ReadOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def readJSONSync_(file: String, options: BufferEncoding): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSONSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def readJSON_(file: java.lang.String): js.Promise[js.Any] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+inline def readJSON_(file: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+inline def readJSON_(file: String, callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readJSON_(file: String, options: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 inline def readJSON_(
-  file: java.lang.String,
-  callback: js.Function2[/* err */ typings.std.Error, /* jsonObject */ js.Any, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def readJSON_(file: java.lang.String, options: typings.fsExtra.mod.ReadOptions): js.Promise[js.Any] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  file: String,
+  options: String,
+  callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readJSON_(file: String, options: ReadOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 inline def readJSON_(
-  file: java.lang.String,
-  options: typings.fsExtra.mod.ReadOptions,
-  callback: js.Function2[/* err */ typings.std.Error, /* jsonObject */ js.Any, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  file: String,
+  options: ReadOptions,
+  callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readJSON_(file: String, options: BufferEncoding): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+inline def readJSON_(
+  file: String,
+  options: BufferEncoding,
+  callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJSON")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def readJson(file: java.lang.String): js.Promise[js.Any] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+inline def readJson(file: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+inline def readJson(file: String, callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readJson(file: String, options: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 inline def readJson(
-  file: java.lang.String,
-  callback: js.Function2[/* err */ typings.std.Error, /* jsonObject */ js.Any, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def readJson(file: java.lang.String, options: typings.fsExtra.mod.ReadOptions): js.Promise[js.Any] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  file: String,
+  options: String,
+  callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readJson(file: String, options: ReadOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 inline def readJson(
-  file: java.lang.String,
-  options: typings.fsExtra.mod.ReadOptions,
-  callback: js.Function2[/* err */ typings.std.Error, /* jsonObject */ js.Any, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  file: String,
+  options: ReadOptions,
+  callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readJson(file: String, options: BufferEncoding): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+inline def readJson(
+  file: String,
+  options: BufferEncoding,
+  callback: js.Function2[/* err */ js.Error, /* jsonObject */ Any, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readJson")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def readJsonSync(file: java.lang.String): js.Any = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readJsonSync")(file.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-inline def readJsonSync(file: java.lang.String, options: typings.fsExtra.mod.ReadOptions): js.Any = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readJsonSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def readJsonSync(file: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readJsonSync")(file.asInstanceOf[js.Any]).asInstanceOf[Any]
+inline def readJsonSync(file: String, options: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJsonSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def readJsonSync(file: String, options: ReadOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJsonSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def readJsonSync(file: String, options: BufferEncoding): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readJsonSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def readSync(fd: scala.Double, buffer: typings.node.NodeJS.ArrayBufferView): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def readSync(fd: Double, buffer: js.typedarray.ArrayBufferView): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def readSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def readSync(
-  fd: scala.Double,
-  buffer: typings.node.NodeJS.ArrayBufferView,
-  offset: scala.Double,
-  length: scala.Double
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def readSync(
-  fd: scala.Double,
-  buffer: typings.node.NodeJS.ArrayBufferView,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def readSync(
-  fd: scala.Double,
-  buffer: typings.node.NodeJS.ArrayBufferView,
-  opts: typings.node.fsMod.ReadSyncOptions
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  fd: Double,
+  buffer: js.typedarray.ArrayBufferView,
+  offset: Double,
+  length: Double,
+  position: ReadPosition
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def readSync(fd: Double, buffer: js.typedarray.ArrayBufferView, opts: ReadSyncOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
 
-inline def readdir(path: typings.node.fsMod.PathLike): js.Promise[js.Array[java.lang.String]] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[java.lang.String]]]
+inline def readdir(path: PathLike): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
 inline def readdir(
-  path: typings.node.fsMod.PathLike,
+  path: PathLike,
   callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* files */ js.Array[java.lang.String], 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* files */ js.Array[String], 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def readdir(path: typings.node.fsMod.PathLike, options: typings.fsExtra.anon.EncodingWithFileTypes): js.Promise[js.Array[typings.node.Buffer]] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.node.Buffer]]]
-inline def readdir(path: typings.node.fsMod.PathLike, options: typings.fsExtra.anon.WithFileTypes): js.Promise[js.Array[java.lang.String]] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[java.lang.String]]]
-inline def readdir(path: typings.node.fsMod.PathLike, options: typings.fsExtra.anon.`0`): js.Promise[js.Array[typings.node.Buffer | java.lang.String]] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.node.Buffer | java.lang.String]]]
-inline def readdir(path: typings.node.fsMod.PathLike, options: typings.fsExtra.anon.`1`): js.Promise[js.Array[typings.node.fsMod.Dirent]] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.node.fsMod.Dirent]]]
-inline def readdir(path: typings.node.fsMod.PathLike, options: typings.node.BufferEncoding): js.Promise[js.Array[java.lang.String]] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[java.lang.String]]]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def readdir(path: PathLike, options: String): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+inline def readdir(path: PathLike, options: EncodingWithFileTypes): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+inline def readdir(path: PathLike, options: WithFileTypes): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
+inline def readdir(path: PathLike, options: `0`): js.Promise[js.Array[Buffer | String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer | String]]]
+inline def readdir(path: PathLike, options: `1`): js.Promise[js.Array[typings.node.fsMod.Dirent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.node.fsMod.Dirent]]]
+inline def readdir(path: PathLike, options: BufferEncoding): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
 
-inline def readdirSync(path: typings.node.fsMod.PathLike): js.Array[java.lang.String] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
-inline def readdirSync(path: typings.node.fsMod.PathLike, options: typings.node.BufferEncoding): js.Array[java.lang.String] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
-inline def readdirSync(path: typings.node.fsMod.PathLike, options: typings.node.anon.BaseEncodingOptionswithFi): js.Array[typings.node.Buffer | java.lang.String] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.node.Buffer | java.lang.String]]
-inline def readdirSync(path: typings.node.fsMod.PathLike, options: typings.node.anon.BaseEncodingOptionswithFiEncoding): js.Array[typings.node.fsMod.Dirent] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.node.fsMod.Dirent]]
-inline def readdirSync(path: typings.node.fsMod.PathLike, options: typings.node.anon.Encoding): js.Array[typings.node.Buffer] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.node.Buffer]]
-inline def readdirSync(path: typings.node.fsMod.PathLike, options: typings.node.anon.WithFileTypes): js.Array[java.lang.String] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
+inline def readdirSync(path: PathLike): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+inline def readdirSync(path: PathLike, options: typings.node.anon.Encoding): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
+inline def readdirSync(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer | String]]
+inline def readdirSync(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[typings.node.fsMod.Dirent] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.node.fsMod.Dirent]]
+inline def readdirSync(path: PathLike, options: typings.node.anon.WithFileTypes): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+inline def readdirSync(path: PathLike, options: BufferEncoding): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 
-inline def readdirSync_buffer(path: typings.node.fsMod.PathLike, options: typings.fsExtra.fsExtraStrings.buffer): js.Array[typings.node.Buffer] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.node.Buffer]]
+inline def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
 
-inline def readdir_buffer(path: typings.node.fsMod.PathLike, options: typings.fsExtra.fsExtraStrings.buffer): js.Promise[js.Array[typings.node.Buffer]] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.node.Buffer]]]
+inline def readdir_buffer(path: PathLike, options: buffer): js.Promise[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Buffer]]]
 
-inline def readlink(path: typings.node.fsMod.PathLike): js.Promise[java.lang.String] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[java.lang.String]]
+inline def readlink(path: PathLike): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 inline def readlink(
-  path: typings.node.fsMod.PathLike,
+  path: PathLike,
   callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* linkString */ java.lang.String, 
-  js.Any
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* linkString */ String, 
+  Any
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def readlinkSync(path: typings.node.fsMod.PathLike): java.lang.String = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def readlinkSync(path: typings.node.fsMod.PathLike, options: java.lang.String): java.lang.String | typings.node.Buffer = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | typings.node.Buffer]
-inline def readlinkSync(path: typings.node.fsMod.PathLike, options: typings.node.BufferEncoding): java.lang.String = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def readlinkSync(path: typings.node.fsMod.PathLike, options: typings.node.fsMod.BaseEncodingOptions): java.lang.String = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def readlinkSync(path: typings.node.fsMod.PathLike, options: typings.node.fsMod.BufferEncodingOption): typings.node.Buffer = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.Buffer]
+inline def readlinkSync(path: PathLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def readlinkSync(path: PathLike, options: BufferEncodingOption): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+inline def readlinkSync(path: PathLike, options: EncodingOption): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def readlinkSync_Union(path: typings.node.fsMod.PathLike): java.lang.String | typings.node.Buffer = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[java.lang.String | typings.node.Buffer]
-inline def readlinkSync_Union(path: typings.node.fsMod.PathLike, options: typings.node.fsMod.BaseEncodingOptions): java.lang.String | typings.node.Buffer = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | typings.node.Buffer]
+inline def readlinkSync_Union(path: PathLike): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+inline def readlinkSync_Union(path: PathLike, options: EncodingOption): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
 
 inline def readv(
-  fd: scala.Double,
-  buffers: js.Array[typings.node.NodeJS.ArrayBufferView],
+  fd: Double,
+  buffers: js.Array[js.typedarray.ArrayBufferView],
   cb: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException | scala.Null, 
-  /* bytesRead */ scala.Double, 
-  /* buffers */ js.Array[typings.node.NodeJS.ArrayBufferView], 
-  scala.Unit
+  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  /* bytesRead */ Double, 
+  /* buffers */ js.Array[js.typedarray.ArrayBufferView], 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readv")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readv")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def readv(
-  fd: scala.Double,
-  buffers: js.Array[typings.node.NodeJS.ArrayBufferView],
-  position: scala.Double,
+  fd: Double,
+  buffers: js.Array[js.typedarray.ArrayBufferView],
+  position: Double,
   cb: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException | scala.Null, 
-  /* bytesRead */ scala.Double, 
-  /* buffers */ js.Array[typings.node.NodeJS.ArrayBufferView], 
-  scala.Unit
+  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  /* bytesRead */ Double, 
+  /* buffers */ js.Array[js.typedarray.ArrayBufferView], 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readv")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readv")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def readvSync(fd: scala.Double, buffers: js.Array[typings.node.NodeJS.ArrayBufferView]): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readvSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def readvSync(fd: scala.Double, buffers: js.Array[typings.node.NodeJS.ArrayBufferView], position: scala.Double): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("readvSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def readvSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readvSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def readvSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView], position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readvSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
 
-inline def realpath(path: typings.node.fsMod.PathLike): js.Promise[java.lang.String] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[java.lang.String]]
-inline def realpath(
-  path: typings.node.fsMod.PathLike,
-  cache: org.scalablytyped.runtime.StringDictionary[java.lang.String]
-): js.Promise[java.lang.String] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[js.Promise[java.lang.String]]
-inline def realpath(
-  path: typings.node.fsMod.PathLike,
-  cache: org.scalablytyped.runtime.StringDictionary[java.lang.String],
-  callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* resolvedPath */ java.lang.String, 
-  js.Any
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def realpath(
-  path: typings.node.fsMod.PathLike,
-  callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* resolvedPath */ java.lang.String, 
-  js.Any
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def remove(dir: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+inline def remove(dir: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def remove(dir: java.lang.String): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("remove")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
-inline def remove(dir: java.lang.String, callback: js.Function1[/* err */ typings.std.Error, scala.Unit]): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("remove")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def removeSync(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSync")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def removeSync(dir: java.lang.String): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeSync")(dir.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def remove_Promise(dir: String, callback: js.Function1[/* err */ js.Error, Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
-inline def rename(oldPath: typings.node.fsMod.PathLike, newPath: typings.node.fsMod.PathLike): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def rename(oldPath: PathLike, newPath: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def rename(
-  oldPath: typings.node.fsMod.PathLike,
-  newPath: typings.node.fsMod.PathLike,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  oldPath: PathLike,
+  newPath: PathLike,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def renameSync(oldPath: typings.node.fsMod.PathLike, newPath: typings.node.fsMod.PathLike): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("renameSync")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def renameSync(oldPath: PathLike, newPath: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renameSync")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def rm(path: typings.node.fsMod.PathLike, callback: typings.node.fsMod.NoParamCallback): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rm")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def rm(
-  path: typings.node.fsMod.PathLike,
-  options: typings.node.fsMod.RmOptions,
-  callback: typings.node.fsMod.NoParamCallback
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rm")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def rm(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rm")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+inline def rm(path: PathLike, options: Force): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rm")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
-inline def rmSync(path: typings.node.fsMod.PathLike): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rmSync")(path.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def rmSync(path: typings.node.fsMod.PathLike, options: typings.node.fsMod.RmOptions): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rmSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def rmSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rmSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def rmSync(path: PathLike, options: RmOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rmSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def rmdir(path: typings.node.fsMod.PathLike): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
+inline def rmdir(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 inline def rmdir(
-  path: typings.node.fsMod.PathLike,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  path: PathLike,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def rmdir(path: PathLike, options: RmDirOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
-inline def rmdirSync(path: typings.node.fsMod.PathLike): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rmdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def rmdirSync(path: typings.node.fsMod.PathLike, options: typings.node.fsMod.RmDirOptions): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rmdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def rmdirSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def rmdirSync(path: PathLike, options: RmDirOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rmdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def stat(path: typings.node.fsMod.PathLike): js.Promise[typings.node.fsMod.Stats] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
+inline def stat(path: PathLike): js.Promise[typings.node.fsMod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.node.fsMod.Stats]]
 inline def stat(
-  path: typings.node.fsMod.PathLike,
+  path: PathLike,
   callback: js.Function2[
-  /* err */ typings.node.NodeJS.ErrnoException, 
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
   /* stats */ typings.node.fsMod.Stats, 
-  js.Any
+  Any
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def statSync(path: typings.node.fsMod.PathLike): typings.node.fsMod.Stats = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("statSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Stats]
-inline def statSync(path: typings.node.fsMod.PathLike, options: typings.node.fsMod.BigIntOptions): typings.node.fsMod.BigIntStats = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("statSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.BigIntStats]
-inline def statSync(path: typings.node.fsMod.PathLike, options: typings.node.fsMod.StatOptions): typings.node.fsMod.Stats | typings.node.fsMod.BigIntStats = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("statSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.Stats | typings.node.fsMod.BigIntStats]
+inline def statSync: StatSyncFn = ^.asInstanceOf[js.Dynamic].selectDynamic("statSync").asInstanceOf[StatSyncFn]
 
-inline def symlink(target: typings.node.fsMod.PathLike, path: typings.node.fsMod.PathLike): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def symlink(target: PathLike, path: PathLike): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def symlink(
-  target: typings.node.fsMod.PathLike,
-  path: typings.node.fsMod.PathLike,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  target: PathLike,
+  path: PathLike,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def symlink(
-  target: typings.node.fsMod.PathLike,
-  path: typings.node.fsMod.PathLike,
-  `type`: scala.Unit,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  target: PathLike,
+  path: PathLike,
+  `type`: Unit,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def symlink(target: PathLike, path: PathLike, `type`: SymlinkType): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def symlink(
-  target: typings.node.fsMod.PathLike,
-  path: typings.node.fsMod.PathLike,
-  `type`: typings.fsExtra.mod.SymlinkType
-): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def symlink(
-  target: typings.node.fsMod.PathLike,
-  path: typings.node.fsMod.PathLike,
-  `type`: typings.fsExtra.mod.SymlinkType,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  target: PathLike,
+  path: PathLike,
+  `type`: SymlinkType,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def symlinkSync(target: typings.node.fsMod.PathLike, path: typings.node.fsMod.PathLike): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("symlinkSync")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def symlinkSync(
-  target: typings.node.fsMod.PathLike,
-  path: typings.node.fsMod.PathLike,
-  `type`: typings.node.fsMod.symlink.Type
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("symlinkSync")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def symlinkSync(target: PathLike, path: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlinkSync")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def symlinkSync(target: PathLike, path: PathLike, `type`: Type): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlinkSync")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def truncate(path: typings.node.fsMod.PathLike): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
+inline def truncate(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 inline def truncate(
-  path: typings.node.fsMod.PathLike,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def truncate(path: typings.node.fsMod.PathLike, len: scala.Double): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+  path: PathLike,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def truncate(path: PathLike, len: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def truncate(
-  path: typings.node.fsMod.PathLike,
-  len: scala.Double,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  path: PathLike,
+  len: Double,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def truncateSync(path: typings.node.fsMod.PathLike): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("truncateSync")(path.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def truncateSync(path: typings.node.fsMod.PathLike, len: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("truncateSync")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def truncateSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("truncateSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def truncateSync(path: PathLike, len: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateSync")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def unlink(path: typings.node.fsMod.PathLike): js.Promise[scala.Unit] = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
+inline def unlink(path: PathLike): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 inline def unlink(
-  path: typings.node.fsMod.PathLike,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  path: PathLike,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def unlinkSync(path: typings.node.fsMod.PathLike): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def unlinkSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def unwatchFile(filename: typings.node.fsMod.PathLike): scala.Unit = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def unwatchFile(filename: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def unwatchFile(
-  filename: typings.node.fsMod.PathLike,
-  listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  filename: PathLike,
+  listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def utimes(path: typings.node.fsMod.PathLike, atime: scala.Double, mtime: scala.Double): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def utimes(path: PathLike, atime: js.Date, mtime: js.Date): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def utimes(
-  path: typings.node.fsMod.PathLike,
-  atime: scala.Double,
-  mtime: scala.Double,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def utimes(path: typings.node.fsMod.PathLike, atime: typings.std.Date, mtime: typings.std.Date): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+  path: PathLike,
+  atime: js.Date,
+  mtime: js.Date,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def utimes(path: PathLike, atime: Double, mtime: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def utimes(
-  path: typings.node.fsMod.PathLike,
-  atime: typings.std.Date,
-  mtime: typings.std.Date,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  path: PathLike,
+  atime: Double,
+  mtime: Double,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def utimesSync(path: typings.node.fsMod.PathLike, atime: java.lang.String, mtime: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def utimesSync(path: typings.node.fsMod.PathLike, atime: java.lang.String, mtime: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def utimesSync(path: typings.node.fsMod.PathLike, atime: java.lang.String, mtime: typings.std.Date): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def utimesSync(path: typings.node.fsMod.PathLike, atime: scala.Double, mtime: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def utimesSync(path: typings.node.fsMod.PathLike, atime: scala.Double, mtime: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def utimesSync(path: typings.node.fsMod.PathLike, atime: scala.Double, mtime: typings.std.Date): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def utimesSync(path: typings.node.fsMod.PathLike, atime: typings.std.Date, mtime: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def utimesSync(path: typings.node.fsMod.PathLike, atime: typings.std.Date, mtime: scala.Double): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def utimesSync(path: typings.node.fsMod.PathLike, atime: typings.std.Date, mtime: typings.std.Date): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def utimesSync(path: PathLike, atime: TimeLike, mtime: TimeLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def watch(filename: typings.node.fsMod.PathLike): typings.node.fsMod.FSWatcher = typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.FSWatcher]
-inline def watch(
-  filename: typings.node.fsMod.PathLike,
-  listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, js.Any]
-): typings.node.fsMod.FSWatcher = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.FSWatcher]
-inline def watch(filename: typings.node.fsMod.PathLike, options: java.lang.String): typings.node.fsMod.FSWatcher = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.FSWatcher]
-inline def watch(
-  filename: typings.node.fsMod.PathLike,
-  options: java.lang.String,
-  listener: js.Function2[
-  /* event */ java.lang.String, 
-  /* filename */ java.lang.String | typings.node.Buffer, 
-  scala.Unit
-]
-): typings.node.fsMod.FSWatcher = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.FSWatcher]
-inline def watch(
-  filename: typings.node.fsMod.PathLike,
-  options: scala.Null,
-  listener: js.Function2[
-  /* event */ java.lang.String, 
-  typings.node.Buffer | (/* filename */ java.lang.String), 
-  scala.Unit
-]
-): typings.node.fsMod.FSWatcher = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.FSWatcher]
-inline def watch(
-  filename: typings.node.fsMod.PathLike,
-  options: scala.Unit,
-  listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, scala.Unit]
-): typings.node.fsMod.FSWatcher = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.FSWatcher]
-inline def watch(filename: typings.node.fsMod.PathLike, options: typings.node.BufferEncoding): typings.node.fsMod.FSWatcher = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.FSWatcher]
-inline def watch(
-  filename: typings.node.fsMod.PathLike,
-  options: typings.node.BufferEncoding,
-  listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, scala.Unit]
-): typings.node.fsMod.FSWatcher = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.FSWatcher]
-inline def watch(filename: typings.node.fsMod.PathLike, options: typings.node.anon.Persistent): typings.node.fsMod.FSWatcher = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.FSWatcher]
-inline def watch(
-  filename: typings.node.fsMod.PathLike,
-  options: typings.node.anon.Persistent,
-  listener: js.Function2[
-  /* event */ java.lang.String, 
-  typings.node.Buffer | (/* filename */ java.lang.String), 
-  scala.Unit
-]
-): typings.node.fsMod.FSWatcher = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.FSWatcher]
-inline def watch(filename: typings.node.fsMod.PathLike, options: typings.node.anon.Recursive): typings.node.fsMod.FSWatcher = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.FSWatcher]
-inline def watch(
-  filename: typings.node.fsMod.PathLike,
-  options: typings.node.anon.Recursive,
-  listener: js.Function2[/* event */ java.lang.String, /* filename */ typings.node.Buffer, scala.Unit]
-): typings.node.fsMod.FSWatcher = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.FSWatcher]
+inline def watch(filename: PathLike): FSWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any]).asInstanceOf[FSWatcher]
+inline def watch(filename: PathLike, listener: WatchListener[String]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+inline def watch(filename: PathLike, options: String): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+inline def watch(filename: PathLike, options: String, listener: WatchListener[String | Buffer]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+inline def watch(filename: PathLike, options: Null, listener: WatchListener[String]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+inline def watch(filename: PathLike, options: Unit, listener: WatchListener[String]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+inline def watch(filename: PathLike, options: WatchOptionsencodingbuffe): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+inline def watch(filename: PathLike, options: WatchOptionsencodingbuffe, listener: WatchListener[Buffer]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+inline def watch(filename: PathLike, options: BufferEncoding): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+inline def watch(filename: PathLike, options: BufferEncoding, listener: WatchListener[String]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+inline def watch(filename: PathLike, options: WatchOptions): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+inline def watch(filename: PathLike, options: WatchOptions, listener: WatchListener[Buffer | String]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
 
 inline def watchFile(
-  filename: typings.node.fsMod.PathLike,
-  listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  filename: PathLike,
+  listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
+): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
 inline def watchFile(
-  filename: typings.node.fsMod.PathLike,
-  options: scala.Unit,
-  listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  filename: PathLike,
+  options: Unit,
+  listener: js.Function2[
+  (/* curr */ BigIntStats) | (/* curr */ typings.node.fsMod.Stats), 
+  (/* prev */ BigIntStats) | (/* prev */ typings.node.fsMod.Stats), 
+  Unit
+]
+): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
 inline def watchFile(
-  filename: typings.node.fsMod.PathLike,
-  options: typings.node.anon.Interval,
-  listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  filename: PathLike,
+  options: WatchFileOptionsbigintfal,
+  listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
+): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
+inline def watchFile(
+  filename: PathLike,
+  options: WatchFileOptionsbiginttru,
+  listener: js.Function2[/* curr */ BigIntStats, /* prev */ BigIntStats, Unit]
+): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
 
-inline def watch_buffer(filename: typings.node.fsMod.PathLike, options: typings.fsExtra.fsExtraStrings.buffer): typings.node.fsMod.FSWatcher = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.FSWatcher]
-inline def watch_buffer(
-  filename: typings.node.fsMod.PathLike,
-  options: typings.fsExtra.fsExtraStrings.buffer,
-  listener: js.Function2[/* event */ java.lang.String, /* filename */ typings.node.Buffer, scala.Unit]
-): typings.node.fsMod.FSWatcher = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.FSWatcher]
+inline def watch_buffer(filename: PathLike, options: buffer): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
+inline def watch_buffer(filename: PathLike, options: buffer, listener: WatchListener[Buffer]): FSWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[FSWatcher]
 
-inline def write(fd: scala.Double, buffer: typings.std.DataView): js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.DataView, offset: scala.Double): js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.DataView, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber]]
+inline def write(fd: Double, data: Any): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
 inline def write(
-  fd: scala.Double,
-  buffer: typings.std.DataView,
-  offset: scala.Double,
-  length: scala.Double,
+  fd: Double,
+  data: Any,
   callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.DataView, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* written */ Double, 
+  /* str */ String, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(fd: Double, data: Any, offset: Double): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
 inline def write(
-  fd: scala.Double,
-  buffer: typings.std.DataView,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.DataView,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
+  fd: Double,
+  data: Any,
+  offset: Double,
   callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.DataView, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* written */ Double, 
+  /* str */ String, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(fd: Double, data: Any, offset: Double, encoding: String): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
 inline def write(
-  fd: scala.Double,
-  buffer: typings.std.DataView,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
+  fd: Double,
+  data: Any,
+  offset: Double,
+  encoding: String,
   callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.DataView, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* written */ Double, 
+  /* str */ String, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(fd: Double, data: Any, offset: Double, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
 inline def write(
-  fd: scala.Double,
-  buffer: typings.std.DataView,
-  offset: scala.Double,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.DataView, offset: scala.Unit, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.DataView,
-  offset: scala.Unit,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.DataView,
-  offset: scala.Unit,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferDataViewBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Float32Array): js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Float32Array, offset: scala.Double): js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Float32Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Float32Array,
-  offset: scala.Double,
-  length: scala.Double,
+  fd: Double,
+  data: Any,
+  offset: Double,
+  encoding: BufferEncoding,
   callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Float32Array, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* written */ Double, 
+  /* str */ String, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Float32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Float32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write(fd: Double, data: Any, offset: Unit, encoding: String): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
+inline def write(fd: Double, data: Any, offset: Unit, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BufferBytesWritten]]
+inline def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+inline def write[TBuffer /* <: ArrayBufferView */](
+  fd: Double,
+  buffer: TBuffer,
+  offset: Double,
+  length: Double,
   callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Float32Array, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* written */ Double, 
+  /* buffer */ TBuffer, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Float32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+inline def write[TBuffer /* <: ArrayBufferView */](
+  fd: Double,
+  buffer: TBuffer,
+  offset: Double,
+  length: Double,
+  position: Double,
   callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Float32Array, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* written */ Double, 
+  /* buffer */ TBuffer, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Float32Array,
-  offset: scala.Double,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Float32Array, offset: scala.Unit, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Float32Array,
-  offset: scala.Unit,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Float32Array,
-  offset: scala.Unit,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat32ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Float64Array): js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Float64Array, offset: scala.Double): js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Float64Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Float64Array,
-  offset: scala.Double,
-  length: scala.Double,
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write[TBuffer /* <: ArrayBufferView */](
+  fd: Double,
+  buffer: TBuffer,
+  offset: Double,
+  length: Double,
+  position: Null,
   callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Float64Array, 
-  scala.Unit
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  /* written */ Double, 
+  /* buffer */ TBuffer, 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Float64Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Float64Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Float64Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Float64Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Float64Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Float64Array,
-  offset: scala.Double,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Float64Array, offset: scala.Unit, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Float64Array,
-  offset: scala.Unit,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Float64Array,
-  offset: scala.Unit,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferFloat64ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Int16Array): js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Int16Array, offset: scala.Double): js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Int16Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int16Array,
-  offset: scala.Double,
-  length: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Int16Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int16Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int16Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Int16Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int16Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Int16Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int16Array,
-  offset: scala.Double,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Int16Array, offset: scala.Unit, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int16Array,
-  offset: scala.Unit,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int16Array,
-  offset: scala.Unit,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt16ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Int32Array): js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Int32Array, offset: scala.Double): js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Int32Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Int32Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Int32Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Int32Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int32Array,
-  offset: scala.Double,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Int32Array, offset: scala.Unit, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int32Array,
-  offset: scala.Unit,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int32Array,
-  offset: scala.Unit,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt32ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Int8Array): js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Int8Array, offset: scala.Double): js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Int8Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int8Array,
-  offset: scala.Double,
-  length: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Int8Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int8Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int8Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Int8Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int8Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Int8Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int8Array,
-  offset: scala.Double,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Int8Array, offset: scala.Unit, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int8Array,
-  offset: scala.Unit,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Int8Array,
-  offset: scala.Unit,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferInt8ArrayBytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Uint16Array): js.Promise[typings.fsExtra.anon.BufferUint16Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferUint16Array]]
-inline def write(fd: scala.Double, buffer: typings.std.Uint16Array, offset: scala.Double): js.Promise[typings.fsExtra.anon.BufferUint16Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferUint16Array]]
-inline def write(fd: scala.Double, buffer: typings.std.Uint16Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferUint16Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferUint16Array]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint16Array,
-  offset: scala.Double,
-  length: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Uint16Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint16Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferUint16Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferUint16Array]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint16Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Uint16Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint16Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Uint16Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint16Array,
-  offset: scala.Double,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferUint16Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferUint16Array]]
-inline def write(fd: scala.Double, buffer: typings.std.Uint16Array, offset: scala.Unit, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferUint16Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferUint16Array]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint16Array,
-  offset: scala.Unit,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferUint16Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferUint16Array]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint16Array,
-  offset: scala.Unit,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferUint16Array] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferUint16Array]]
-inline def write(fd: scala.Double, buffer: typings.std.Uint32Array): js.Promise[typings.fsExtra.anon.BytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Uint32Array, offset: scala.Double): js.Promise[typings.fsExtra.anon.BytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Uint32Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Uint32Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Uint32Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint32Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Uint32Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint32Array,
-  offset: scala.Double,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Uint32Array, offset: scala.Unit, length: scala.Double): js.Promise[typings.fsExtra.anon.BytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint32Array,
-  offset: scala.Unit,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWrittenNumber]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint32Array,
-  offset: scala.Unit,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BytesWrittenNumber] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWrittenNumber]]
-inline def write(fd: scala.Double, buffer: typings.std.Uint8Array): js.Promise[typings.fsExtra.anon.BytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
-inline def write(fd: scala.Double, buffer: typings.std.Uint8Array, offset: scala.Double): js.Promise[typings.fsExtra.anon.BytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
-inline def write(fd: scala.Double, buffer: typings.std.Uint8Array, offset: scala.Double, length: scala.Double): js.Promise[typings.fsExtra.anon.BytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint8Array,
-  offset: scala.Double,
-  length: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Uint8Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint8Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint8Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Uint8Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint8Array,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Uint8Array, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint8Array,
-  offset: scala.Double,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
-inline def write(fd: scala.Double, buffer: typings.std.Uint8Array, offset: scala.Unit, length: scala.Double): js.Promise[typings.fsExtra.anon.BytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint8Array,
-  offset: scala.Unit,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint8Array,
-  offset: scala.Unit,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BytesWritten]]
-inline def write(fd: scala.Double, buffer: typings.std.Uint8ClampedArray): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
-inline def write(fd: scala.Double, buffer: typings.std.Uint8ClampedArray, offset: scala.Double): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint8ClampedArray,
-  offset: scala.Double,
-  length: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint8ClampedArray,
-  offset: scala.Double,
-  length: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Uint8ClampedArray, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint8ClampedArray,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint8ClampedArray,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Uint8ClampedArray, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint8ClampedArray,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Null,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* buffer */ typings.std.Uint8ClampedArray, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint8ClampedArray,
-  offset: scala.Double,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
-inline def write(fd: scala.Double, buffer: typings.std.Uint8ClampedArray, offset: scala.Unit, length: scala.Double): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint8ClampedArray,
-  offset: scala.Unit,
-  length: scala.Double,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
-inline def write(
-  fd: scala.Double,
-  buffer: typings.std.Uint8ClampedArray,
-  offset: scala.Unit,
-  length: scala.Unit,
-  position: scala.Double
-): js.Promise[typings.fsExtra.anon.BufferBytesWritten] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferBytesWritten]]
-inline def write(fd: scala.Double, data: js.Any): js.Promise[typings.fsExtra.anon.BufferString] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferString]]
-inline def write(
-  fd: scala.Double,
-  data: js.Any,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* str */ java.lang.String, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(fd: scala.Double, data: js.Any, offset: scala.Double): js.Promise[typings.fsExtra.anon.BufferString] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferString]]
-inline def write(
-  fd: scala.Double,
-  data: js.Any,
-  offset: scala.Double,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* str */ java.lang.String, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(fd: scala.Double, data: js.Any, offset: scala.Double, encoding: java.lang.String): js.Promise[typings.fsExtra.anon.BufferString] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferString]]
-inline def write(
-  fd: scala.Double,
-  data: js.Any,
-  offset: scala.Double,
-  encoding: java.lang.String,
-  callback: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException, 
-  /* written */ scala.Double, 
-  /* str */ java.lang.String, 
-  scala.Unit
-]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def write(fd: scala.Double, data: js.Any, offset: scala.Unit, encoding: java.lang.String): js.Promise[typings.fsExtra.anon.BufferString] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.BufferString]]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: Unit, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+inline def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Unit, length: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+inline def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Unit, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+inline def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Unit, length: Unit, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
 
-inline def writeFile(file: scala.Double, data: js.Any): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def writeFile(file: Double, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def writeFile(
-  file: scala.Double,
-  data: js.Any,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writeFile(file: scala.Double, data: js.Any, options: java.lang.String): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+  file: Double,
+  data: Any,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeFile(file: Double, data: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def writeFile(
-  file: scala.Double,
-  data: js.Any,
-  options: java.lang.String,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writeFile(file: scala.Double, data: js.Any, options: typings.fsExtra.mod.WriteFileOptions): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+  file: Double,
+  data: Any,
+  options: String,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeFile(file: Double, data: Any, options: WriteFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def writeFile(
-  file: scala.Double,
-  data: js.Any,
-  options: typings.fsExtra.mod.WriteFileOptions,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writeFile(file: typings.node.fsMod.PathLike, data: js.Any): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+  file: Double,
+  data: Any,
+  options: WriteFileOptions,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeFile(file: Double, data: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def writeFile(
-  file: typings.node.fsMod.PathLike,
-  data: js.Any,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writeFile(file: typings.node.fsMod.PathLike, data: js.Any, options: java.lang.String): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+  file: Double,
+  data: Any,
+  options: BufferEncoding,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeFile(file: PathLike, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def writeFile(
-  file: typings.node.fsMod.PathLike,
-  data: js.Any,
-  options: java.lang.String,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writeFile(file: typings.node.fsMod.PathLike, data: js.Any, options: typings.fsExtra.mod.WriteFileOptions): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+  file: PathLike,
+  data: Any,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeFile(file: PathLike, data: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def writeFile(
-  file: typings.node.fsMod.PathLike,
-  data: js.Any,
-  options: typings.fsExtra.mod.WriteFileOptions,
-  callback: js.Function1[/* err */ typings.node.NodeJS.ErrnoException, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  file: PathLike,
+  data: Any,
+  options: String,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeFile(file: PathLike, data: Any, options: WriteFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def writeFile(
+  file: PathLike,
+  data: Any,
+  options: WriteFileOptions,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeFile(file: PathLike, data: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def writeFile(
+  file: PathLike,
+  data: Any,
+  options: BufferEncoding,
+  callback: js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+  Unit
+]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def writeFileSync(path: scala.Double, data: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writeFileSync(path: scala.Double, data: java.lang.String, options: typings.node.fsMod.WriteFileOptions): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writeFileSync(path: scala.Double, data: typings.node.NodeJS.ArrayBufferView): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def writeFileSync(file: PathOrFileDescriptor, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeFileSync(file: PathOrFileDescriptor, data: String, options: typings.node.fsMod.WriteFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeFileSync(file: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def writeFileSync(
-  path: scala.Double,
-  data: typings.node.NodeJS.ArrayBufferView,
+  file: PathOrFileDescriptor,
+  data: js.typedarray.ArrayBufferView,
   options: typings.node.fsMod.WriteFileOptions
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writeFileSync(path: typings.node.fsMod.PathLike, data: java.lang.String): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writeFileSync(
-  path: typings.node.fsMod.PathLike,
-  data: java.lang.String,
-  options: typings.node.fsMod.WriteFileOptions
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writeFileSync(path: typings.node.fsMod.PathLike, data: typings.node.NodeJS.ArrayBufferView): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writeFileSync(
-  path: typings.node.fsMod.PathLike,
-  data: typings.node.NodeJS.ArrayBufferView,
-  options: typings.node.fsMod.WriteFileOptions
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def writeJSONSync_(file: java.lang.String, `object`: js.Any): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writeJSONSync_(file: java.lang.String, `object`: js.Any, options: typings.fsExtra.mod.WriteOptions): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def writeJSONSync_(file: String, `object`: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeJSONSync_(file: String, `object`: Any, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeJSONSync_(file: String, `object`: Any, options: WriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeJSONSync_(file: String, `object`: Any, options: BufferEncoding): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSONSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def writeJSON_(file: java.lang.String, `object`: js.Any): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def writeJSON_(file: String, `object`: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def writeJSON_(file: String, `object`: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeJSON_(file: String, `object`: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def writeJSON_(file: String, `object`: Any, options: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeJSON_(file: String, `object`: Any, options: WriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def writeJSON_(
-  file: java.lang.String,
-  `object`: js.Any,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writeJSON_(file: java.lang.String, `object`: js.Any, options: typings.fsExtra.mod.WriteOptions): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+  file: String,
+  `object`: Any,
+  options: WriteOptions,
+  callback: js.Function1[/* err */ js.Error, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeJSON_(file: String, `object`: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def writeJSON_(
-  file: java.lang.String,
-  `object`: js.Any,
-  options: typings.fsExtra.mod.WriteOptions,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  file: String,
+  `object`: Any,
+  options: BufferEncoding,
+  callback: js.Function1[/* err */ js.Error, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJSON")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def writeJson(file: java.lang.String, `object`: js.Any): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+inline def writeJson(file: String, `object`: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def writeJson(file: String, `object`: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeJson(file: String, `object`: Any, options: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def writeJson(file: String, `object`: Any, options: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeJson(file: String, `object`: Any, options: WriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def writeJson(
-  file: java.lang.String,
-  `object`: js.Any,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writeJson(file: java.lang.String, `object`: js.Any, options: typings.fsExtra.mod.WriteOptions): js.Promise[scala.Unit] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+  file: String,
+  `object`: Any,
+  options: WriteOptions,
+  callback: js.Function1[/* err */ js.Error, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeJson(file: String, `object`: Any, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def writeJson(
-  file: java.lang.String,
-  `object`: js.Any,
-  options: typings.fsExtra.mod.WriteOptions,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  file: String,
+  `object`: Any,
+  options: BufferEncoding,
+  callback: js.Function1[/* err */ js.Error, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJson")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def writeJsonSync(file: java.lang.String, `object`: js.Any): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writeJsonSync(file: java.lang.String, `object`: js.Any, options: typings.fsExtra.mod.WriteOptions): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def writeJsonSync(file: String, `object`: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeJsonSync(file: String, `object`: Any, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeJsonSync(file: String, `object`: Any, options: WriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writeJsonSync(file: String, `object`: Any, options: BufferEncoding): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeJsonSync")(file.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def writeSync(fd: scala.Double, buffer: typings.node.NodeJS.ArrayBufferView): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(fd: scala.Double, buffer: typings.node.NodeJS.ArrayBufferView, offset: scala.Double): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def writeSync(
-  fd: scala.Double,
-  buffer: typings.node.NodeJS.ArrayBufferView,
-  offset: scala.Double,
-  length: scala.Double
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(
-  fd: scala.Double,
-  buffer: typings.node.NodeJS.ArrayBufferView,
-  offset: scala.Double,
-  length: scala.Double,
-  position: scala.Double
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(
-  fd: scala.Double,
-  buffer: typings.node.NodeJS.ArrayBufferView,
-  offset: scala.Double,
-  length: scala.Null,
-  position: scala.Double
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(
-  fd: scala.Double,
-  buffer: typings.node.NodeJS.ArrayBufferView,
-  offset: scala.Double,
-  length: scala.Unit,
-  position: scala.Double
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(
-  fd: scala.Double,
-  buffer: typings.node.NodeJS.ArrayBufferView,
-  offset: scala.Null,
-  length: scala.Double
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(
-  fd: scala.Double,
-  buffer: typings.node.NodeJS.ArrayBufferView,
-  offset: scala.Null,
-  length: scala.Double,
-  position: scala.Double
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(
-  fd: scala.Double,
-  buffer: typings.node.NodeJS.ArrayBufferView,
-  offset: scala.Null,
-  length: scala.Null,
-  position: scala.Double
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(
-  fd: scala.Double,
-  buffer: typings.node.NodeJS.ArrayBufferView,
-  offset: scala.Null,
-  length: scala.Unit,
-  position: scala.Double
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(
-  fd: scala.Double,
-  buffer: typings.node.NodeJS.ArrayBufferView,
-  offset: scala.Unit,
-  length: scala.Double
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(
-  fd: scala.Double,
-  buffer: typings.node.NodeJS.ArrayBufferView,
-  offset: scala.Unit,
-  length: scala.Double,
-  position: scala.Double
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(
-  fd: scala.Double,
-  buffer: typings.node.NodeJS.ArrayBufferView,
-  offset: scala.Unit,
-  length: scala.Null,
-  position: scala.Double
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(
-  fd: scala.Double,
-  buffer: typings.node.NodeJS.ArrayBufferView,
-  offset: scala.Unit,
-  length: scala.Unit,
-  position: scala.Double
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(fd: scala.Double, string: java.lang.String): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(fd: scala.Double, string: java.lang.String, position: scala.Double): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(
-  fd: scala.Double,
-  string: java.lang.String,
-  position: scala.Double,
-  encoding: typings.node.BufferEncoding
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(
-  fd: scala.Double,
-  string: java.lang.String,
-  position: scala.Null,
-  encoding: typings.node.BufferEncoding
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writeSync(
-  fd: scala.Double,
-  string: java.lang.String,
-  position: scala.Unit,
-  encoding: typings.node.BufferEncoding
-): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  fd: Double,
+  buffer: js.typedarray.ArrayBufferView,
+  offset: Double,
+  length: Double,
+  position: Double
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Null, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Double, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Null, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Null, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Null, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, buffer: js.typedarray.ArrayBufferView, offset: Unit, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, string: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, string: String, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, string: String, position: Double, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, string: String, position: Null, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writeSync(fd: Double, string: String, position: Unit, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
 
-inline def writev(fd: scala.Double, buffers: js.Array[typings.node.NodeJS.ArrayBufferView]): js.Promise[typings.fsExtra.mod.WritevResult] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.mod.WritevResult]]
+inline def write_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+inline def write_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
+
+inline def writev(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView]): js.Promise[WritevResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WritevResult]]
 inline def writev(
-  fd: scala.Double,
-  buffers: js.Array[typings.node.NodeJS.ArrayBufferView],
+  fd: Double,
+  buffers: js.Array[js.typedarray.ArrayBufferView],
   cb: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException | scala.Null, 
-  /* bytesWritten */ scala.Double, 
-  /* buffers */ js.Array[typings.node.NodeJS.ArrayBufferView], 
-  scala.Unit
+  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  /* bytesWritten */ Double, 
+  /* buffers */ js.Array[js.typedarray.ArrayBufferView], 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def writev(fd: scala.Double, buffers: js.Array[typings.node.NodeJS.ArrayBufferView], position: scala.Double): js.Promise[typings.fsExtra.mod.WritevResult] = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.mod.WritevResult]]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def writev(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView], position: Double): js.Promise[WritevResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WritevResult]]
 inline def writev(
-  fd: scala.Double,
-  buffers: js.Array[typings.node.NodeJS.ArrayBufferView],
-  position: scala.Double,
+  fd: Double,
+  buffers: js.Array[js.typedarray.ArrayBufferView],
+  position: Double,
   cb: js.Function3[
-  /* err */ typings.node.NodeJS.ErrnoException | scala.Null, 
-  /* bytesWritten */ scala.Double, 
-  /* buffers */ js.Array[typings.node.NodeJS.ArrayBufferView], 
-  scala.Unit
+  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+  /* bytesWritten */ Double, 
+  /* buffers */ js.Array[js.typedarray.ArrayBufferView], 
+  Unit
 ]
-): scala.Unit = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def writevSync(fd: scala.Double, buffers: js.Array[typings.node.NodeJS.ArrayBufferView]): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writevSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def writevSync(fd: scala.Double, buffers: js.Array[typings.node.NodeJS.ArrayBufferView], position: scala.Double): scala.Double = (typings.fsExtra.mod.^.asInstanceOf[js.Dynamic].applyDynamic("writevSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def writevSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writevSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def writevSync(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView], position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writevSync")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
 
-type ArrayBufferView = typings.node.NodeJS.TypedArray | typings.std.DataView
+type ArrayBufferView = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.DataView
 
-type CopyFilterAsync = js.Function2[/* src */ java.lang.String, /* dest */ java.lang.String, js.Promise[scala.Boolean]]
+type CopyFilterAsync = js.Function2[/* src */ String, /* dest */ String, js.Promise[Boolean]]
 
-type CopyFilterSync = js.Function2[/* src */ java.lang.String, /* dest */ java.lang.String, scala.Boolean]
+type CopyFilterSync = js.Function2[/* src */ String, /* dest */ String, Boolean]
 
-type Mode = java.lang.String | scala.Double
+type Mode = String | Double

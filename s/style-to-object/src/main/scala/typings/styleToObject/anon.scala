@@ -11,13 +11,13 @@ object anon {
     
     var end: DeclarationPos
     
-    var source: js.Any
+    var source: Any
     
     var start: DeclarationPos
   }
   object End {
     
-    inline def apply(end: DeclarationPos, source: js.Any, start: DeclarationPos): End = {
+    inline def apply(end: DeclarationPos, source: Any, start: DeclarationPos): End = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[End]
     }
@@ -26,7 +26,7 @@ object anon {
       
       inline def setEnd(value: DeclarationPos): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setStart(value: DeclarationPos): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "RetrieveCashDrawerShiftRequest")
 @js.native
-class RetrieveCashDrawerShiftRequest () extends StObject {
+open class RetrieveCashDrawerShiftRequest () extends StObject {
   
   /**
     * The ID of the location to retrieve cash drawer shifts from.

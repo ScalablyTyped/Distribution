@@ -28,12 +28,12 @@ object Local {
     
     inline def setEffectiveUndefined: Self = StObject.set(x, "effective", js.undefined)
     
-    inline def setEffectiveVarargs(value: String*): Self = StObject.set(x, "effective", js.Array(value :_*))
+    inline def setEffectiveVarargs(value: String*): Self = StObject.set(x, "effective", js.Array(value*))
     
     inline def setLocal(value: js.Array[String]): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
-    inline def setLocalVarargs(value: String*): Self = StObject.set(x, "local", js.Array(value :_*))
+    inline def setLocalVarargs(value: String*): Self = StObject.set(x, "local", js.Array(value*))
   }
 }

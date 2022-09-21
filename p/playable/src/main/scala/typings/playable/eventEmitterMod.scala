@@ -12,7 +12,7 @@ object eventEmitterMod {
   
   @JSImport("playable/dist/src/modules/event-emitter/event-emitter", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with EventEmitterModule
   object default {
@@ -31,10 +31,22 @@ object eventEmitterMod {
   @js.native
   trait EventEmitterModule
     extends StObject
-       with EventEmitter[String | js.Symbol, js.Any]
+       with EventEmitter[String | js.Symbol, Any]
        with IEventEmitter {
     
     def bindEvents(eventsMap: js.Array[IEventMap], defaultFnContext: js.Object): js.Function0[Unit] = js.native
+    
+    def off(event: js.Symbol): this.type = js.native
+    def off(event: js.Symbol, fn: Unit, context: Any): this.type = js.native
+    def off(event: js.Symbol, fn: Unit, context: Any, once: Boolean): this.type = js.native
+    def off(event: js.Symbol, fn: Unit, context: Unit, once: Boolean): this.type = js.native
+    def off(event: js.Symbol, fn: ListenerFn[js.Array[Any]]): this.type = js.native
+    def off(event: js.Symbol, fn: ListenerFn[js.Array[Any]], context: Any): this.type = js.native
+    def off(event: js.Symbol, fn: ListenerFn[js.Array[Any]], context: Any, once: Boolean): this.type = js.native
+    def off(event: js.Symbol, fn: ListenerFn[js.Array[Any]], context: Unit, once: Boolean): this.type = js.native
+    
+    def on(event: js.Symbol, fn: ListenerFn[js.Array[Any]]): this.type = js.native
+    def on(event: js.Symbol, fn: ListenerFn[js.Array[Any]], context: Any): this.type = js.native
     
     /**
       * The `.once()` method is identical to `.on()`, except that the handler for a given element and event type is unbound after its first invocation.
@@ -51,7 +63,9 @@ object eventEmitterMod {
       *   // Will be executed only one time
       * });
       */
-    def once(event: String, fn: ListenerFn[js.Array[js.Any]]): this.type = js.native
-    def once(event: String, fn: ListenerFn[js.Array[js.Any]], context: js.Any): this.type = js.native
+    def once(event: String, fn: ListenerFn[js.Array[Any]]): this.type = js.native
+    def once(event: String, fn: ListenerFn[js.Array[Any]], context: Any): this.type = js.native
+    def once(event: js.Symbol, fn: ListenerFn[js.Array[Any]]): this.type = js.native
+    def once(event: js.Symbol, fn: ListenerFn[js.Array[Any]], context: Any): this.type = js.native
   }
 }

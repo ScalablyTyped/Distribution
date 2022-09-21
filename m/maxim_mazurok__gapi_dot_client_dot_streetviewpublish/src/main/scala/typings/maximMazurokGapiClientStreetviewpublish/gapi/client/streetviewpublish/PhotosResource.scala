@@ -34,12 +34,12 @@ trait PhotosResource extends StObject {
     * Updates the metadata of Photos, such as pose, place association, connections, etc. Changing the pixels of photos is not supported. Note that if BatchUpdatePhotos fails, either
     * critical fields are missing or there is an authentication error. Even if BatchUpdatePhotos succeeds, individual photos in the batch may have failures. These failures are specified
     * in each PhotoResponse.status in BatchUpdatePhotosResponse.results. See UpdatePhoto for specific failures that can occur per photo. Only the fields specified in updateMask field are
-    * used. If `updateMask` is not present, the update applies to all fields. The number of UpdatePhotoRequest messages in a BatchUpdatePhotosRequest must not exceed 20. *Note:* To update
+    * used. If `updateMask` is not present, the update applies to all fields. The number of UpdatePhotoRequest messages in a BatchUpdatePhotosRequest must not exceed 20. > Note: To update
     * Pose.altitude, Pose.latLngPair has to be filled as well. Otherwise, the request will fail.
     */
   def batchUpdate(request: QuotaUser): Request[BatchUpdatePhotosResponse] = js.native
   
-  /** Lists all the Photos that belong to the user. *Note:* Recently created photos that are still being indexed are not returned in the response. */
+  /** Lists all the Photos that belong to the user. > Note: Recently created photos that are still being indexed are not returned in the response. */
   def list(): Request[ListPhotosResponse] = js.native
   def list(request: Filter): Request[ListPhotosResponse] = js.native
 }

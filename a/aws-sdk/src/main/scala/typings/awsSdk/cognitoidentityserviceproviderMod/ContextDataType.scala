@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContextDataType extends StObject {
   
   /**
-    * Encoded data containing device fingerprinting details, collected using the Amazon Cognito context data collection library.
+    * Encoded device-fingerprint details that your app collected with the Amazon Cognito context data collection library. For more information, see Adding user device and session data to API requests.
     */
   var EncodedData: js.UndefOr[StringType] = js.undefined
   
@@ -17,7 +17,7 @@ trait ContextDataType extends StObject {
   var HttpHeaders: HttpHeaderList
   
   /**
-    * Source IP address of your user.
+    * The source IP address of your user's device.
     */
   var IpAddress: StringType
   
@@ -27,7 +27,7 @@ trait ContextDataType extends StObject {
   var ServerName: StringType
   
   /**
-    * Your server path where this API is invoked. 
+    * Your server path where this API is invoked.
     */
   var ServerPath: StringType
 }
@@ -46,7 +46,7 @@ object ContextDataType {
     
     inline def setHttpHeaders(value: HttpHeaderList): Self = StObject.set(x, "HttpHeaders", value.asInstanceOf[js.Any])
     
-    inline def setHttpHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "HttpHeaders", js.Array(value :_*))
+    inline def setHttpHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "HttpHeaders", js.Array(value*))
     
     inline def setIpAddress(value: StringType): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     

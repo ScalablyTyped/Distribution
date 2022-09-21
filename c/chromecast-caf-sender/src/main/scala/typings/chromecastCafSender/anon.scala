@@ -121,7 +121,7 @@ object anon {
     var RemotePlayerChangedEvent: Instantiable3[
         /* type */ RemotePlayerEventType, 
         /* field */ String, 
-        /* import warning: RewrittenClass.unapply cls was tparam T */ /* value */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam T */ /* value */ Any, 
         typings.chromecastCafSender.cast.framework.RemotePlayerChangedEvent[js.Object]
       ]
     
@@ -163,7 +163,7 @@ object anon {
       RemotePlayerChangedEvent: Instantiable3[
           /* type */ RemotePlayerEventType, 
           /* field */ String, 
-          /* import warning: RewrittenClass.unapply cls was tparam T */ /* value */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam T */ /* value */ Any, 
           RemotePlayerChangedEvent[js.Object]
         ],
       RemotePlayerController: Instantiable1[/* player */ RemotePlayer, RemotePlayerController],
@@ -207,7 +207,7 @@ object anon {
         value: Instantiable3[
               /* type */ RemotePlayerEventType, 
               /* field */ String, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ /* value */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ /* value */ Any, 
               RemotePlayerChangedEvent[js.Object]
             ]
       ): Self = StObject.set(x, "RemotePlayerChangedEvent", value.asInstanceOf[js.Any])

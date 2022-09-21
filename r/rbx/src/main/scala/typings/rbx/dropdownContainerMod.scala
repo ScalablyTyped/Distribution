@@ -45,7 +45,6 @@ import typings.rbx.rbxStrings.warning
 import typings.rbx.rbxStrings.white
 import typings.react.mod.ComponentType
 import typings.react.mod.PureComponent
-import typings.react.mod.ReactType
 import typings.react.mod.Ref
 import typings.std.HTMLElement
 import typings.std.SVGElement
@@ -69,11 +68,10 @@ object dropdownContainerMod {
   
   @JSImport("rbx/components/dropdown/dropdown-container", "DropdownContainer")
   @js.native
-  class DropdownContainer protected ()
-    extends PureComponent[DropdownContainerProps, DropdownContainerState, js.Any] {
+  open class DropdownContainer protected () extends PureComponent[DropdownContainerProps, DropdownContainerState, Any] {
     def this(props: DropdownContainerProps) = this()
     
-    /* private */ var active: js.Any = js.native
+    /* private */ var active: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDropdownContainer(): Unit = js.native
@@ -81,9 +79,9 @@ object dropdownContainerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MDropdownContainer(): Unit = js.native
     
-    /* private */ val handleClick: js.Any = js.native
+    /* private */ val handleClick: Any = js.native
     
-    /* private */ val ref: js.Any = js.native
+    /* private */ val ref: Any = js.native
   }
   /* static members */
   object DropdownContainer {
@@ -104,7 +102,9 @@ object dropdownContainerMod {
     
     var align: js.UndefOr[right] = js.undefined
     
-    var as: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var as: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ] = js.undefined
     
     var hoverable: js.UndefOr[Boolean] = js.undefined
     
@@ -131,7 +131,9 @@ object dropdownContainerMod {
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      inline def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -164,7 +166,9 @@ object dropdownContainerMod {
     
     var align: js.UndefOr[right] = js.undefined
     
-    var as: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var as: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ] = js.undefined
     
     var backgroundColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -265,7 +269,9 @@ object dropdownContainerMod {
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      inline def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

@@ -25,7 +25,7 @@ object ErrorLogEntry {
     
     inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    inline def setErrorDetailsVarargs(value: String*): Self = StObject.set(x, "errorDetails", js.Array(value :_*))
+    inline def setErrorDetailsVarargs(value: String*): Self = StObject.set(x, "errorDetails", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

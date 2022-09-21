@@ -23,7 +23,7 @@ object writer {
     /** [Method] The Reader classes support dot delimited data mappings for extracting nested raw data into fields so the writer must
       * @param data Object
       */
-    var getExpandedData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var getExpandedData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (String) */
     var root: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ object writer {
       
       inline def setExpandDataUndefined: Self = StObject.set(x, "expandData", js.undefined)
       
-      inline def setGetExpandedData(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getExpandedData", js.Any.fromFunction1(value))
+      inline def setGetExpandedData(value: /* data */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getExpandedData", js.Any.fromFunction1(value))
       
       inline def setGetExpandedDataUndefined: Self = StObject.set(x, "getExpandedData", js.undefined)
       
@@ -72,7 +72,7 @@ object writer {
       * @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
       */
     var getRecordData: js.UndefOr[
-        js.Function2[/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation], js.Any]
+        js.Function2[/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation], Any]
       ] = js.undefined
     
     /** [Config Option] (String) */
@@ -103,7 +103,7 @@ object writer {
       
       inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
-      inline def setGetRecordData(value: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => js.Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction2(value))
+      inline def setGetRecordData(value: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction2(value))
       
       inline def setGetRecordDataUndefined: Self = StObject.set(x, "getRecordData", js.undefined)
       

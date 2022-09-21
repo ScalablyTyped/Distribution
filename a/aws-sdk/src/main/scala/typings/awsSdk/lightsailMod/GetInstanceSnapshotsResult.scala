@@ -29,7 +29,7 @@ object GetInstanceSnapshotsResult {
     
     inline def setInstanceSnapshotsUndefined: Self = StObject.set(x, "instanceSnapshots", js.undefined)
     
-    inline def setInstanceSnapshotsVarargs(value: InstanceSnapshot*): Self = StObject.set(x, "instanceSnapshots", js.Array(value :_*))
+    inline def setInstanceSnapshotsVarargs(value: InstanceSnapshot*): Self = StObject.set(x, "instanceSnapshots", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

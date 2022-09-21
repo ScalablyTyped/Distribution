@@ -9,7 +9,7 @@ trait BackupRunsListResponse extends StObject {
   /** A list of backup runs in reverse chronological order of the enqueued time. */
   var items: js.UndefOr[js.Array[BackupRun]] = js.undefined
   
-  /** This is always *sql#backupRunsList*. */
+  /** This is always `sql#backupRunsList`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The continuation token, used to page through large result sets. Provide this value in a subsequent request to return the next page of results. */
@@ -28,7 +28,7 @@ object BackupRunsListResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: BackupRun*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: BackupRun*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

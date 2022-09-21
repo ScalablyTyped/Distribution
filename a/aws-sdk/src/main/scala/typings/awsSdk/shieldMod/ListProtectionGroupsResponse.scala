@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListProtectionGroupsResponse extends StObject {
   
   /**
-    * If you specify a value for MaxResults and you have more protection groups than the value of MaxResults, AWS Shield Advanced returns this token that you can use in your next request, to get the next batch of objects. 
+    * When you request a list of objects from Shield Advanced, if the response does not include all of the remaining available objects, Shield Advanced includes a NextToken value in the response. You can retrieve the next batch of objects by requesting the list again and providing the token that was returned by the prior call in your request.  You can indicate the maximum number of objects that you want Shield Advanced to return for a single call with the MaxResults setting. Shield Advanced will not return more than MaxResults objects, but may return fewer, even if more objects are still available. Whenever more objects remain that Shield Advanced has not yet returned to you, the response will include a NextToken value.
     */
   var NextToken: js.UndefOr[Token] = js.undefined
   
@@ -31,6 +31,6 @@ object ListProtectionGroupsResponse {
     
     inline def setProtectionGroups(value: ProtectionGroups): Self = StObject.set(x, "ProtectionGroups", value.asInstanceOf[js.Any])
     
-    inline def setProtectionGroupsVarargs(value: ProtectionGroup*): Self = StObject.set(x, "ProtectionGroups", js.Array(value :_*))
+    inline def setProtectionGroupsVarargs(value: ProtectionGroup*): Self = StObject.set(x, "ProtectionGroups", js.Array(value*))
   }
 }

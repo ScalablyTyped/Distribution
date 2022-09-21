@@ -13,7 +13,7 @@ object userGPGKeysMod {
   
   @JSImport("gitlab/dist/types/core/services/UserGPGKeys", "UserGPGKeys")
   @js.native
-  class UserGPGKeys () extends BaseService {
+  open class UserGPGKeys () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def add(key: String): js.Promise[js.Object] = js.native

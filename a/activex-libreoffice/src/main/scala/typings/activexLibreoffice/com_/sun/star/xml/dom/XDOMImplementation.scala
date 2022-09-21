@@ -40,7 +40,7 @@ object XDOMImplementation {
     createDocument: (String, String, XDocumentType) => XDocument,
     createDocumentType: (String, String, String) => XDocumentType,
     hasFeature: (String, String) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDOMImplementation = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDocument = js.Any.fromFunction3(createDocument), createDocumentType = js.Any.fromFunction3(createDocumentType), hasFeature = js.Any.fromFunction2(hasFeature), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

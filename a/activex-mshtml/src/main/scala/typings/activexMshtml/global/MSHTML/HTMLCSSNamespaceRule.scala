@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLCSSNamespaceRule")
 @js.native
-/* private */ class HTMLCSSNamespaceRule ()
+/* private */ open class HTMLCSSNamespaceRule ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLCSSNamespaceRule {
   

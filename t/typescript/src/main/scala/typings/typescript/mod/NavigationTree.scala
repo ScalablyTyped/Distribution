@@ -47,7 +47,7 @@ object NavigationTree {
     
     inline def setChildItemsUndefined: Self = StObject.set(x, "childItems", js.undefined)
     
-    inline def setChildItemsVarargs(value: NavigationTree*): Self = StObject.set(x, "childItems", js.Array(value :_*))
+    inline def setChildItemsVarargs(value: NavigationTree*): Self = StObject.set(x, "childItems", js.Array(value*))
     
     inline def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -59,7 +59,7 @@ object NavigationTree {
     
     inline def setSpans(value: js.Array[TextSpan]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
     
-    inline def setSpansVarargs(value: TextSpan*): Self = StObject.set(x, "spans", js.Array(value :_*))
+    inline def setSpansVarargs(value: TextSpan*): Self = StObject.set(x, "spans", js.Array(value*))
     
     inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

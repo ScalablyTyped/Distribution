@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RateLimitOptions
   extends StObject
-     with /* option */ StringDictionary[js.Any] {
+     with /* option */ StringDictionary[Any] {
   
   var method: js.UndefOr[notifyAtFixedRate | notifyWhenChangesStop | RateLimitMethod] = js.undefined
   
@@ -27,7 +27,7 @@ object RateLimitOptions {
     inline def setMethod(value: notifyAtFixedRate | notifyWhenChangesStop | RateLimitMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     inline def setMethodFunction3(
-      value: (/* callback */ js.Function0[Unit], /* timeout */ Double, /* options */ js.Any) => js.Function0[Unit]
+      value: (/* callback */ js.Function0[Unit], /* timeout */ Double, /* options */ Any) => js.Function0[Unit]
     ): Self = StObject.set(x, "method", js.Any.fromFunction3(value))
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)

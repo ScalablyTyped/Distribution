@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @remarks
   *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @js.native
 trait CustomProperties extends StObject {
@@ -28,13 +28,13 @@ trait CustomProperties extends StObject {
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param name - The name of the custom property to be returned.
     */
-  def get(name: String): js.Any = js.native
+  def get(name: String): Any = js.native
   
   /**
     * Returns an object with all custom properties in a collection of name/value pairs. The following are equivalent.
@@ -45,17 +45,16 @@ trait CustomProperties extends StObject {
     *
     * You can iterate through the dictionary object to discover all `names` and `values`.
     *
-    * [Api set: Mailbox 1.9]
-    *
     * @returns An object with all custom properties in a collection of name/value pairs.
     *
     * @remarks
+    * [Api set: Mailbox 1.9]
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  def getAll(): js.Any = js.native
+  def getAll(): Any = js.native
   
   /**
     * Removes the specified property from the custom property collection.
@@ -64,9 +63,9 @@ trait CustomProperties extends StObject {
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param name - The `name` of the property to be removed.
     */
@@ -82,22 +81,42 @@ trait CustomProperties extends StObject {
     * In particular, a read add-in can be activated while the user is in a connected state in a read form, and subsequently the user becomes
     * disconnected.
     * If the add-in calls `saveAsync` while in the disconnected state, `saveAsync` would return an error.
-    * Your callback method should handle this error accordingly.
+    * Your callback function should handle this error accordingly.
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
-    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-    *                 type `Office.AsyncResult`.
-    * @param asyncContext - Optional. Any state data that is passed to the callback method.
+    * @param asyncContext - Optional. Any state data that is passed to the callback function.
     */
   def saveAsync(): Unit = js.native
+  def saveAsync(asyncContext: Any): Unit = js.native
+  /**
+    * Saves item-specific custom properties to the server.
+    *
+    * You must call the `saveAsync` method to persist any changes made with the `set` method or the `remove` method of the `CustomProperties` object.
+    * The saving action is asynchronous.
+    *
+    * It's a good practice to have your callback function check for and handle errors from `saveAsync`.
+    * In particular, a read add-in can be activated while the user is in a connected state in a read form, and subsequently the user becomes
+    * disconnected.
+    * If the add-in calls `saveAsync` while in the disconnected state, `saveAsync` would return an error.
+    * Your callback function should handle this error accordingly.
+    *
+    * @remarks
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    *
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
+    *                 type `Office.AsyncResult`.
+    * @param asyncContext - Optional. Any state data that is passed to the callback function.
+    */
   def saveAsync(callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
-  def saveAsync(callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit], asyncContext: js.Any): Unit = js.native
-  def saveAsync(callback: Unit, asyncContext: js.Any): Unit = js.native
+  def saveAsync(callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit], asyncContext: Any): Unit = js.native
   
   /**
     * Sets the specified property to the specified value.
@@ -110,9 +129,9 @@ trait CustomProperties extends StObject {
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param name - The name of the property to be set.
     * @param value - The value of the property to be set.

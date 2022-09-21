@@ -17,7 +17,7 @@ trait GoogleCloudRecommendationengineV1beta1PredictResponse extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponse & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponse & TopLevel[Any]
   ] = js.undefined
   
   /** If empty, the list is complete. If nonempty, the token to pass to the next request's PredictRequest.page_token. */
@@ -49,12 +49,12 @@ object GoogleCloudRecommendationengineV1beta1PredictResponse {
     
     inline def setItemsMissingInCatalogUndefined: Self = StObject.set(x, "itemsMissingInCatalog", js.undefined)
     
-    inline def setItemsMissingInCatalogVarargs(value: String*): Self = StObject.set(x, "itemsMissingInCatalog", js.Array(value :_*))
+    inline def setItemsMissingInCatalogVarargs(value: String*): Self = StObject.set(x, "itemsMissingInCatalog", js.Array(value*))
     
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponse & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponse & TopLevel[Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
@@ -71,6 +71,6 @@ object GoogleCloudRecommendationengineV1beta1PredictResponse {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

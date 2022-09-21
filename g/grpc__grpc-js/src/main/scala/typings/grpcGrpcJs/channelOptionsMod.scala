@@ -1,6 +1,7 @@
 package typings.grpcGrpcJs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.grpcGrpcJs.compressionAlgorithmsMod.CompressionAlgorithms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,6 +26,18 @@ object channelOptionsMod {
     
     inline def grpcDefaultAuthority_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.default_authority")(x.asInstanceOf[js.Any])
     
+    @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.dns_min_time_between_resolutions_ms")
+    @js.native
+    def grpcDnsMinTimeBetweenResolutionsMs: Boolean = js.native
+    
+    inline def grpcDnsMinTimeBetweenResolutionsMs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.dns_min_time_between_resolutions_ms")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.enable_channelz")
+    @js.native
+    def grpcEnableChannelz: Boolean = js.native
+    
+    inline def grpcEnableChannelz_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.enable_channelz")(x.asInstanceOf[js.Any])
+    
     @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.enable_http_proxy")
     @js.native
     def grpcEnableHttpProxy: Boolean = js.native
@@ -36,6 +49,12 @@ object channelOptionsMod {
     def grpcInitialReconnectBackoffMs: Boolean = js.native
     
     inline def grpcInitialReconnectBackoffMs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.initial_reconnect_backoff_ms")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.keepalive_permit_without_calls")
+    @js.native
+    def grpcKeepalivePermitWithoutCalls: Boolean = js.native
+    
+    inline def grpcKeepalivePermitWithoutCalls_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.keepalive_permit_without_calls")(x.asInstanceOf[js.Any])
     
     @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.keepalive_time_ms")
     @js.native
@@ -73,6 +92,12 @@ object channelOptionsMod {
     
     inline def grpcMaxSendMessageLength_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.max_send_message_length")(x.asInstanceOf[js.Any])
     
+    @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc-node.max_session_memory")
+    @js.native
+    def grpcNodeMaxSessionMemory: Boolean = js.native
+    
+    inline def grpcNodeMaxSessionMemory_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc-node.max_session_memory")(x.asInstanceOf[js.Any])
+    
     @JSImport("@grpc/grpc-js/build/src/channel-options", "recognizedOptions.grpc.primary_user_agent")
     @js.native
     def grpcPrimaryUserAgent: Boolean = js.native
@@ -106,10 +131,22 @@ object channelOptionsMod {
   
   trait ChannelOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
+    
+    @JSName("grpc-node.max_session_memory")
+    var `grpc-nodeDotmax_session_memory`: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.default_authority")
     var grpcDotdefault_authority: js.UndefOr[String] = js.undefined
+    
+    @JSName("grpc.default_compression_algorithm")
+    var grpcDotdefault_compression_algorithm: js.UndefOr[CompressionAlgorithms] = js.undefined
+    
+    @JSName("grpc.dns_min_time_between_resolutions_ms")
+    var grpcDotdns_min_time_between_resolutions_ms: js.UndefOr[Double] = js.undefined
+    
+    @JSName("grpc.enable_channelz")
+    var grpcDotenable_channelz: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.enable_http_proxy")
     var grpcDotenable_http_proxy: js.UndefOr[Double] = js.undefined
@@ -122,6 +159,9 @@ object channelOptionsMod {
     
     @JSName("grpc.initial_reconnect_backoff_ms")
     var grpcDotinitial_reconnect_backoff_ms: js.UndefOr[Double] = js.undefined
+    
+    @JSName("grpc.keepalive_permit_without_calls")
+    var grpcDotkeepalive_permit_without_calls: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.keepalive_time_ms")
     var grpcDotkeepalive_time_ms: js.UndefOr[Double] = js.undefined
@@ -165,9 +205,25 @@ object channelOptionsMod {
     
     extension [Self <: ChannelOptions](x: Self) {
       
+      inline def `setGrpc-nodeDotmax_session_memory`(value: Double): Self = StObject.set(x, "grpc-node.max_session_memory", value.asInstanceOf[js.Any])
+      
+      inline def `setGrpc-nodeDotmax_session_memoryUndefined`: Self = StObject.set(x, "grpc-node.max_session_memory", js.undefined)
+      
       inline def setGrpcDotdefault_authority(value: String): Self = StObject.set(x, "grpc.default_authority", value.asInstanceOf[js.Any])
       
       inline def setGrpcDotdefault_authorityUndefined: Self = StObject.set(x, "grpc.default_authority", js.undefined)
+      
+      inline def setGrpcDotdefault_compression_algorithm(value: CompressionAlgorithms): Self = StObject.set(x, "grpc.default_compression_algorithm", value.asInstanceOf[js.Any])
+      
+      inline def setGrpcDotdefault_compression_algorithmUndefined: Self = StObject.set(x, "grpc.default_compression_algorithm", js.undefined)
+      
+      inline def setGrpcDotdns_min_time_between_resolutions_ms(value: Double): Self = StObject.set(x, "grpc.dns_min_time_between_resolutions_ms", value.asInstanceOf[js.Any])
+      
+      inline def setGrpcDotdns_min_time_between_resolutions_msUndefined: Self = StObject.set(x, "grpc.dns_min_time_between_resolutions_ms", js.undefined)
+      
+      inline def setGrpcDotenable_channelz(value: Double): Self = StObject.set(x, "grpc.enable_channelz", value.asInstanceOf[js.Any])
+      
+      inline def setGrpcDotenable_channelzUndefined: Self = StObject.set(x, "grpc.enable_channelz", js.undefined)
       
       inline def setGrpcDotenable_http_proxy(value: Double): Self = StObject.set(x, "grpc.enable_http_proxy", value.asInstanceOf[js.Any])
       
@@ -184,6 +240,10 @@ object channelOptionsMod {
       inline def setGrpcDotinitial_reconnect_backoff_ms(value: Double): Self = StObject.set(x, "grpc.initial_reconnect_backoff_ms", value.asInstanceOf[js.Any])
       
       inline def setGrpcDotinitial_reconnect_backoff_msUndefined: Self = StObject.set(x, "grpc.initial_reconnect_backoff_ms", js.undefined)
+      
+      inline def setGrpcDotkeepalive_permit_without_calls(value: Double): Self = StObject.set(x, "grpc.keepalive_permit_without_calls", value.asInstanceOf[js.Any])
+      
+      inline def setGrpcDotkeepalive_permit_without_callsUndefined: Self = StObject.set(x, "grpc.keepalive_permit_without_calls", js.undefined)
       
       inline def setGrpcDotkeepalive_time_ms(value: Double): Self = StObject.set(x, "grpc.keepalive_time_ms", value.asInstanceOf[js.Any])
       

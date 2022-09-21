@@ -6,10 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TenantProjectPolicy extends StObject {
   
-  /**
-    * Policy bindings to be applied to the tenant project, in addition to the 'roles/owner' role granted to the Service Consumer Management service account. At least one binding must have
-    * the role `roles/owner`. Among the list of members for `roles/owner`, at least one of them must be either the `user` or `group` type.
-    */
+  /** Policy bindings to be applied to the tenant project, in addition to the 'roles/owner' role granted to the Service Consumer Management service account. */
   var policyBindings: js.UndefOr[js.Array[PolicyBinding]] = js.undefined
 }
 object TenantProjectPolicy {
@@ -25,6 +22,6 @@ object TenantProjectPolicy {
     
     inline def setPolicyBindingsUndefined: Self = StObject.set(x, "policyBindings", js.undefined)
     
-    inline def setPolicyBindingsVarargs(value: PolicyBinding*): Self = StObject.set(x, "policyBindings", js.Array(value :_*))
+    inline def setPolicyBindingsVarargs(value: PolicyBinding*): Self = StObject.set(x, "policyBindings", js.Array(value*))
   }
 }

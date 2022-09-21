@@ -1,7 +1,7 @@
 
 # Scala.js typings for file-url
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Convert a file path to a file url: `unicorn.jpg` → `file:///Users/sindresorhus/unicorn.jpg`
@@ -11,9 +11,9 @@ Convert a file path to a file url: `unicorn.jpg` → `file:///Users/sindresorhus
 | Full name          | file-url |
 | Keywords           | file, url, uri, path, scheme, slash |
 | # releases         | 2 |
-| # dependents       | 114 |
-| # downloads        | 4651416 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 769543.6666666666 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/file-url#readme)

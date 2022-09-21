@@ -10,10 +10,10 @@ Secure secret storage and cryptographic key retrieval for Node.js
 | ------------------ | :-------------: |
 | Full name          | cryptex |
 | Keywords           | crypto, key, keys, secret, secrets, passwords, encrypt, decrypt, encryption, decryption |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 21942 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1966.0 |
+| # stars            | 140.0 |
 
 ## Links
 - [Homepage](https://github.com/TomFrost/Cryptex#readme)

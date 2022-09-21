@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TrainingDataSchema extends StObject {
   
-  var labelSchema: LabelSchema
+  var labelSchema: js.UndefOr[LabelSchema] = js.undefined
   
   /**
     * The training data schema variables.
@@ -15,8 +15,8 @@ trait TrainingDataSchema extends StObject {
 }
 object TrainingDataSchema {
   
-  inline def apply(labelSchema: LabelSchema, modelVariables: ListOfStrings): TrainingDataSchema = {
-    val __obj = js.Dynamic.literal(labelSchema = labelSchema.asInstanceOf[js.Any], modelVariables = modelVariables.asInstanceOf[js.Any])
+  inline def apply(modelVariables: ListOfStrings): TrainingDataSchema = {
+    val __obj = js.Dynamic.literal(modelVariables = modelVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingDataSchema]
   }
   
@@ -24,8 +24,10 @@ object TrainingDataSchema {
     
     inline def setLabelSchema(value: LabelSchema): Self = StObject.set(x, "labelSchema", value.asInstanceOf[js.Any])
     
+    inline def setLabelSchemaUndefined: Self = StObject.set(x, "labelSchema", js.undefined)
+    
     inline def setModelVariables(value: ListOfStrings): Self = StObject.set(x, "modelVariables", value.asInstanceOf[js.Any])
     
-    inline def setModelVariablesVarargs(value: String*): Self = StObject.set(x, "modelVariables", js.Array(value :_*))
+    inline def setModelVariablesVarargs(value: String*): Self = StObject.set(x, "modelVariables", js.Array(value*))
   }
 }

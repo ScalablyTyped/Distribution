@@ -1,5 +1,64 @@
 package typings.screeps.global
 
+import typings.screeps.BodyPartConstant
+import typings.screeps.ColorConstant
+import typings.screeps.InterShardResourceConstant
+import typings.screeps.ResourceConstant
+import typings.screeps.screepsNumbers._2592000000
+import typings.screeps.screepsNumbers.`0.005`
+import typings.screeps.screepsNumbers.`0.01`
+import typings.screeps.screepsNumbers.`0.03`
+import typings.screeps.screepsNumbers.`0.2`
+import typings.screeps.screepsNumbers.`1000000`
+import typings.screeps.screepsNumbers.`10000`
+import typings.screeps.screepsNumbers.`1000`
+import typings.screeps.screepsNumbers.`100`
+import typings.screeps.screepsNumbers.`10`
+import typings.screeps.screepsNumbers.`12`
+import typings.screeps.screepsNumbers.`150000`
+import typings.screeps.screepsNumbers.`15000`
+import typings.screeps.screepsNumbers.`1500`
+import typings.screeps.screepsNumbers.`150`
+import typings.screeps.screepsNumbers.`1`
+import typings.screeps.screepsNumbers.`20000`
+import typings.screeps.screepsNumbers.`25`
+import typings.screeps.screepsNumbers.`28800000`
+import typings.screeps.screepsNumbers.`2`
+import typings.screeps.screepsNumbers.`300000000`
+import typings.screeps.screepsNumbers.`3000`
+import typings.screeps.screepsNumbers.`300`
+import typings.screeps.screepsNumbers.`30`
+import typings.screeps.screepsNumbers.`3`
+import typings.screeps.screepsNumbers.`4000`
+import typings.screeps.screepsNumbers.`4`
+import typings.screeps.screepsNumbers.`50000`
+import typings.screeps.screepsNumbers.`5000`
+import typings.screeps.screepsNumbers.`500`
+import typings.screeps.screepsNumbers.`50`
+import typings.screeps.screepsNumbers.`5`
+import typings.screeps.screepsNumbers.`600`
+import typings.screeps.screepsNumbers.`800`
+import typings.screeps.screepsNumbers.`86400000`
+import typings.screeps.screepsStrings.`extension`
+import typings.screeps.screepsStrings.constructedWall
+import typings.screeps.screepsStrings.controller
+import typings.screeps.screepsStrings.creep
+import typings.screeps.screepsStrings.deposit
+import typings.screeps.screepsStrings.factory
+import typings.screeps.screepsStrings.invaderCore
+import typings.screeps.screepsStrings.lab
+import typings.screeps.screepsStrings.link
+import typings.screeps.screepsStrings.mineral
+import typings.screeps.screepsStrings.nuker
+import typings.screeps.screepsStrings.observer
+import typings.screeps.screepsStrings.powerBank
+import typings.screeps.screepsStrings.powerCreep
+import typings.screeps.screepsStrings.powerSpawn
+import typings.screeps.screepsStrings.source
+import typings.screeps.screepsStrings.spawn
+import typings.screeps.screepsStrings.storage
+import typings.screeps.screepsStrings.terminal
+import typings.screeps.screepsStrings.tower
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +68,9 @@ inline def ACCESS_KEY: typings.screeps.ACCESS_KEY = js.Dynamic.global.selectDyna
 
 inline def ATTACK: typings.screeps.ATTACK = js.Dynamic.global.selectDynamic("ATTACK").asInstanceOf[typings.screeps.ATTACK]
 
-inline def ATTACK_POWER: typings.screeps.screepsNumbers.`30` = js.Dynamic.global.selectDynamic("ATTACK_POWER").asInstanceOf[typings.screeps.screepsNumbers.`30`]
+inline def ATTACK_POWER: `30` = js.Dynamic.global.selectDynamic("ATTACK_POWER").asInstanceOf[`30`]
 
-inline def BODYPARTS_ALL: js.Array[typings.screeps.BodyPartConstant] = js.Dynamic.global.selectDynamic("BODYPARTS_ALL").asInstanceOf[js.Array[typings.screeps.BodyPartConstant]]
+inline def BODYPARTS_ALL: js.Array[BodyPartConstant] = js.Dynamic.global.selectDynamic("BODYPARTS_ALL").asInstanceOf[js.Array[BodyPartConstant]]
 
 inline def BOTTOM: typings.screeps.BOTTOM = js.Dynamic.global.selectDynamic("BOTTOM").asInstanceOf[typings.screeps.BOTTOM]
 
@@ -19,15 +78,15 @@ inline def BOTTOM_LEFT: typings.screeps.BOTTOM_LEFT = js.Dynamic.global.selectDy
 
 inline def BOTTOM_RIGHT: typings.screeps.BOTTOM_RIGHT = js.Dynamic.global.selectDynamic("BOTTOM_RIGHT").asInstanceOf[typings.screeps.BOTTOM_RIGHT]
 
-inline def BUILD_POWER: typings.screeps.screepsNumbers.`5` = js.Dynamic.global.selectDynamic("BUILD_POWER").asInstanceOf[typings.screeps.screepsNumbers.`5`]
+inline def BUILD_POWER: `5` = js.Dynamic.global.selectDynamic("BUILD_POWER").asInstanceOf[`5`]
 
 inline def CARRY: typings.screeps.CARRY = js.Dynamic.global.selectDynamic("CARRY").asInstanceOf[typings.screeps.CARRY]
 
-inline def CARRY_CAPACITY: typings.screeps.screepsNumbers.`50` = js.Dynamic.global.selectDynamic("CARRY_CAPACITY").asInstanceOf[typings.screeps.screepsNumbers.`50`]
+inline def CARRY_CAPACITY: `50` = js.Dynamic.global.selectDynamic("CARRY_CAPACITY").asInstanceOf[`50`]
 
 inline def CLAIM: typings.screeps.CLAIM = js.Dynamic.global.selectDynamic("CLAIM").asInstanceOf[typings.screeps.CLAIM]
 
-inline def COLORS_ALL: js.Array[typings.screeps.ColorConstant] = js.Dynamic.global.selectDynamic("COLORS_ALL").asInstanceOf[js.Array[typings.screeps.ColorConstant]]
+inline def COLORS_ALL: js.Array[ColorConstant] = js.Dynamic.global.selectDynamic("COLORS_ALL").asInstanceOf[js.Array[ColorConstant]]
 
 inline def COLOR_BLUE: typings.screeps.COLOR_BLUE = js.Dynamic.global.selectDynamic("COLOR_BLUE").asInstanceOf[typings.screeps.COLOR_BLUE]
 
@@ -49,71 +108,71 @@ inline def COLOR_WHITE: typings.screeps.COLOR_WHITE = js.Dynamic.global.selectDy
 
 inline def COLOR_YELLOW: typings.screeps.COLOR_YELLOW = js.Dynamic.global.selectDynamic("COLOR_YELLOW").asInstanceOf[typings.screeps.COLOR_YELLOW]
 
-inline def CONSTRUCTION_COST_ROAD_SWAMP_RATIO: typings.screeps.screepsNumbers.`5` = js.Dynamic.global.selectDynamic("CONSTRUCTION_COST_ROAD_SWAMP_RATIO").asInstanceOf[typings.screeps.screepsNumbers.`5`]
+inline def CONSTRUCTION_COST_ROAD_SWAMP_RATIO: `5` = js.Dynamic.global.selectDynamic("CONSTRUCTION_COST_ROAD_SWAMP_RATIO").asInstanceOf[`5`]
 
-inline def CONSTRUCTION_COST_ROAD_WALL_RATIO: typings.screeps.screepsNumbers.`150` = js.Dynamic.global.selectDynamic("CONSTRUCTION_COST_ROAD_WALL_RATIO").asInstanceOf[typings.screeps.screepsNumbers.`150`]
+inline def CONSTRUCTION_COST_ROAD_WALL_RATIO: `150` = js.Dynamic.global.selectDynamic("CONSTRUCTION_COST_ROAD_WALL_RATIO").asInstanceOf[`150`]
 
-inline def CONTAINER_CAPACITY: scala.Double = js.Dynamic.global.selectDynamic("CONTAINER_CAPACITY").asInstanceOf[scala.Double]
+inline def CONTAINER_CAPACITY: Double = js.Dynamic.global.selectDynamic("CONTAINER_CAPACITY").asInstanceOf[Double]
 
-inline def CONTAINER_DECAY: scala.Double = js.Dynamic.global.selectDynamic("CONTAINER_DECAY").asInstanceOf[scala.Double]
+inline def CONTAINER_DECAY: Double = js.Dynamic.global.selectDynamic("CONTAINER_DECAY").asInstanceOf[Double]
 
-inline def CONTAINER_DECAY_TIME: scala.Double = js.Dynamic.global.selectDynamic("CONTAINER_DECAY_TIME").asInstanceOf[scala.Double]
+inline def CONTAINER_DECAY_TIME: Double = js.Dynamic.global.selectDynamic("CONTAINER_DECAY_TIME").asInstanceOf[Double]
 
-inline def CONTAINER_DECAY_TIME_OWNED: scala.Double = js.Dynamic.global.selectDynamic("CONTAINER_DECAY_TIME_OWNED").asInstanceOf[scala.Double]
+inline def CONTAINER_DECAY_TIME_OWNED: Double = js.Dynamic.global.selectDynamic("CONTAINER_DECAY_TIME_OWNED").asInstanceOf[Double]
 
-inline def CONTAINER_HITS: scala.Double = js.Dynamic.global.selectDynamic("CONTAINER_HITS").asInstanceOf[scala.Double]
+inline def CONTAINER_HITS: Double = js.Dynamic.global.selectDynamic("CONTAINER_HITS").asInstanceOf[Double]
 
-inline def CONTROLLER_ATTACK_BLOCKED_UPGRADE: scala.Double = js.Dynamic.global.selectDynamic("CONTROLLER_ATTACK_BLOCKED_UPGRADE").asInstanceOf[scala.Double]
+inline def CONTROLLER_ATTACK_BLOCKED_UPGRADE: Double = js.Dynamic.global.selectDynamic("CONTROLLER_ATTACK_BLOCKED_UPGRADE").asInstanceOf[Double]
 
-inline def CONTROLLER_CLAIM_DOWNGRADE: scala.Double = js.Dynamic.global.selectDynamic("CONTROLLER_CLAIM_DOWNGRADE").asInstanceOf[scala.Double]
+inline def CONTROLLER_CLAIM_DOWNGRADE: Double = js.Dynamic.global.selectDynamic("CONTROLLER_CLAIM_DOWNGRADE").asInstanceOf[Double]
 
-inline def CONTROLLER_DOWNGRADE_RESTORE: scala.Double = js.Dynamic.global.selectDynamic("CONTROLLER_DOWNGRADE_RESTORE").asInstanceOf[scala.Double]
+inline def CONTROLLER_DOWNGRADE_RESTORE: Double = js.Dynamic.global.selectDynamic("CONTROLLER_DOWNGRADE_RESTORE").asInstanceOf[Double]
 
-inline def CONTROLLER_DOWNGRADE_SAFEMODE_THRESHOLD: scala.Double = js.Dynamic.global.selectDynamic("CONTROLLER_DOWNGRADE_SAFEMODE_THRESHOLD").asInstanceOf[scala.Double]
+inline def CONTROLLER_DOWNGRADE_SAFEMODE_THRESHOLD: Double = js.Dynamic.global.selectDynamic("CONTROLLER_DOWNGRADE_SAFEMODE_THRESHOLD").asInstanceOf[Double]
 
-inline def CONTROLLER_MAX_UPGRADE_PER_TICK: scala.Double = js.Dynamic.global.selectDynamic("CONTROLLER_MAX_UPGRADE_PER_TICK").asInstanceOf[scala.Double]
+inline def CONTROLLER_MAX_UPGRADE_PER_TICK: Double = js.Dynamic.global.selectDynamic("CONTROLLER_MAX_UPGRADE_PER_TICK").asInstanceOf[Double]
 
-inline def CONTROLLER_NUKE_BLOCKED_UPGRADE: scala.Double = js.Dynamic.global.selectDynamic("CONTROLLER_NUKE_BLOCKED_UPGRADE").asInstanceOf[scala.Double]
+inline def CONTROLLER_NUKE_BLOCKED_UPGRADE: Double = js.Dynamic.global.selectDynamic("CONTROLLER_NUKE_BLOCKED_UPGRADE").asInstanceOf[Double]
 
-inline def CONTROLLER_RESERVE: scala.Double = js.Dynamic.global.selectDynamic("CONTROLLER_RESERVE").asInstanceOf[scala.Double]
+inline def CONTROLLER_RESERVE: Double = js.Dynamic.global.selectDynamic("CONTROLLER_RESERVE").asInstanceOf[Double]
 
-inline def CONTROLLER_RESERVE_MAX: scala.Double = js.Dynamic.global.selectDynamic("CONTROLLER_RESERVE_MAX").asInstanceOf[scala.Double]
+inline def CONTROLLER_RESERVE_MAX: Double = js.Dynamic.global.selectDynamic("CONTROLLER_RESERVE_MAX").asInstanceOf[Double]
 
 inline def CPU_UNLOCK: typings.screeps.CPU_UNLOCK = js.Dynamic.global.selectDynamic("CPU_UNLOCK").asInstanceOf[typings.screeps.CPU_UNLOCK]
 
-inline def CREEP_CLAIM_LIFE_TIME: typings.screeps.screepsNumbers.`600` = js.Dynamic.global.selectDynamic("CREEP_CLAIM_LIFE_TIME").asInstanceOf[typings.screeps.screepsNumbers.`600`]
+inline def CREEP_CLAIM_LIFE_TIME: `600` = js.Dynamic.global.selectDynamic("CREEP_CLAIM_LIFE_TIME").asInstanceOf[`600`]
 
-inline def CREEP_CORPSE_RATE: typings.screeps.screepsNumbers.`0.2` = js.Dynamic.global.selectDynamic("CREEP_CORPSE_RATE").asInstanceOf[typings.screeps.screepsNumbers.`0.2`]
+inline def CREEP_CORPSE_RATE: `0.2` = js.Dynamic.global.selectDynamic("CREEP_CORPSE_RATE").asInstanceOf[`0.2`]
 
-inline def CREEP_LIFE_TIME: typings.screeps.screepsNumbers.`1500` = js.Dynamic.global.selectDynamic("CREEP_LIFE_TIME").asInstanceOf[typings.screeps.screepsNumbers.`1500`]
+inline def CREEP_LIFE_TIME: `1500` = js.Dynamic.global.selectDynamic("CREEP_LIFE_TIME").asInstanceOf[`1500`]
 
-inline def CREEP_SPAWN_TIME: typings.screeps.screepsNumbers.`3` = js.Dynamic.global.selectDynamic("CREEP_SPAWN_TIME").asInstanceOf[typings.screeps.screepsNumbers.`3`]
+inline def CREEP_SPAWN_TIME: `3` = js.Dynamic.global.selectDynamic("CREEP_SPAWN_TIME").asInstanceOf[`3`]
 
-inline def DENSITY_HIGH: scala.Double = js.Dynamic.global.selectDynamic("DENSITY_HIGH").asInstanceOf[scala.Double]
+inline def DENSITY_HIGH: Double = js.Dynamic.global.selectDynamic("DENSITY_HIGH").asInstanceOf[Double]
 
-inline def DENSITY_LOW: scala.Double = js.Dynamic.global.selectDynamic("DENSITY_LOW").asInstanceOf[scala.Double]
+inline def DENSITY_LOW: Double = js.Dynamic.global.selectDynamic("DENSITY_LOW").asInstanceOf[Double]
 
-inline def DENSITY_MODERATE: scala.Double = js.Dynamic.global.selectDynamic("DENSITY_MODERATE").asInstanceOf[scala.Double]
+inline def DENSITY_MODERATE: Double = js.Dynamic.global.selectDynamic("DENSITY_MODERATE").asInstanceOf[Double]
 
-inline def DENSITY_ULTRA: scala.Double = js.Dynamic.global.selectDynamic("DENSITY_ULTRA").asInstanceOf[scala.Double]
+inline def DENSITY_ULTRA: Double = js.Dynamic.global.selectDynamic("DENSITY_ULTRA").asInstanceOf[Double]
 
-inline def DEPOSIT_DECAY_TIME: scala.Double = js.Dynamic.global.selectDynamic("DEPOSIT_DECAY_TIME").asInstanceOf[scala.Double]
+inline def DEPOSIT_DECAY_TIME: Double = js.Dynamic.global.selectDynamic("DEPOSIT_DECAY_TIME").asInstanceOf[Double]
 
-inline def DEPOSIT_EXHAUST_MULTIPLY: scala.Double = js.Dynamic.global.selectDynamic("DEPOSIT_EXHAUST_MULTIPLY").asInstanceOf[scala.Double]
+inline def DEPOSIT_EXHAUST_MULTIPLY: Double = js.Dynamic.global.selectDynamic("DEPOSIT_EXHAUST_MULTIPLY").asInstanceOf[Double]
 
-inline def DEPOSIT_EXHAUST_POW: scala.Double = js.Dynamic.global.selectDynamic("DEPOSIT_EXHAUST_POW").asInstanceOf[scala.Double]
+inline def DEPOSIT_EXHAUST_POW: Double = js.Dynamic.global.selectDynamic("DEPOSIT_EXHAUST_POW").asInstanceOf[Double]
 
-inline def DISMANTLE_COST: typings.screeps.screepsNumbers.`0.005` = js.Dynamic.global.selectDynamic("DISMANTLE_COST").asInstanceOf[typings.screeps.screepsNumbers.`0.005`]
+inline def DISMANTLE_COST: `0.005` = js.Dynamic.global.selectDynamic("DISMANTLE_COST").asInstanceOf[`0.005`]
 
-inline def DISMANTLE_POWER: typings.screeps.screepsNumbers.`50` = js.Dynamic.global.selectDynamic("DISMANTLE_POWER").asInstanceOf[typings.screeps.screepsNumbers.`50`]
+inline def DISMANTLE_POWER: `50` = js.Dynamic.global.selectDynamic("DISMANTLE_POWER").asInstanceOf[`50`]
 
 inline def EFFECT_COLLAPSE_TIMER: typings.screeps.EFFECT_COLLAPSE_TIMER = js.Dynamic.global.selectDynamic("EFFECT_COLLAPSE_TIMER").asInstanceOf[typings.screeps.EFFECT_COLLAPSE_TIMER]
 
 inline def EFFECT_INVULNERABILITY: typings.screeps.EFFECT_INVULNERABILITY = js.Dynamic.global.selectDynamic("EFFECT_INVULNERABILITY").asInstanceOf[typings.screeps.EFFECT_INVULNERABILITY]
 
-inline def ENERGY_DECAY: typings.screeps.screepsNumbers.`1000` = js.Dynamic.global.selectDynamic("ENERGY_DECAY").asInstanceOf[typings.screeps.screepsNumbers.`1000`]
+inline def ENERGY_DECAY: `1000` = js.Dynamic.global.selectDynamic("ENERGY_DECAY").asInstanceOf[`1000`]
 
-inline def ENERGY_REGEN_TIME: typings.screeps.screepsNumbers.`300` = js.Dynamic.global.selectDynamic("ENERGY_REGEN_TIME").asInstanceOf[typings.screeps.screepsNumbers.`300`]
+inline def ENERGY_REGEN_TIME: `300` = js.Dynamic.global.selectDynamic("ENERGY_REGEN_TIME").asInstanceOf[`300`]
 
 inline def ERR_BUSY: typings.screeps.ERR_BUSY = js.Dynamic.global.selectDynamic("ERR_BUSY").asInstanceOf[typings.screeps.ERR_BUSY]
 
@@ -187,15 +246,15 @@ inline def EVENT_TRANSFER: typings.screeps.EVENT_TRANSFER = js.Dynamic.global.se
 
 inline def EVENT_UPGRADE_CONTROLLER: typings.screeps.EVENT_UPGRADE_CONTROLLER = js.Dynamic.global.selectDynamic("EVENT_UPGRADE_CONTROLLER").asInstanceOf[typings.screeps.EVENT_UPGRADE_CONTROLLER]
 
-inline def EXTENSION_HITS: typings.screeps.screepsNumbers.`1000` = js.Dynamic.global.selectDynamic("EXTENSION_HITS").asInstanceOf[typings.screeps.screepsNumbers.`1000`]
+inline def EXTENSION_HITS: `1000` = js.Dynamic.global.selectDynamic("EXTENSION_HITS").asInstanceOf[`1000`]
 
-inline def EXTRACTOR_COOLDOWN: scala.Double = js.Dynamic.global.selectDynamic("EXTRACTOR_COOLDOWN").asInstanceOf[scala.Double]
+inline def EXTRACTOR_COOLDOWN: Double = js.Dynamic.global.selectDynamic("EXTRACTOR_COOLDOWN").asInstanceOf[Double]
 
-inline def EXTRACTOR_HITS: scala.Double = js.Dynamic.global.selectDynamic("EXTRACTOR_HITS").asInstanceOf[scala.Double]
+inline def EXTRACTOR_HITS: Double = js.Dynamic.global.selectDynamic("EXTRACTOR_HITS").asInstanceOf[Double]
 
-inline def FACTORY_CAPACITY: typings.screeps.screepsNumbers.`50000` = js.Dynamic.global.selectDynamic("FACTORY_CAPACITY").asInstanceOf[typings.screeps.screepsNumbers.`50000`]
+inline def FACTORY_CAPACITY: `50000` = js.Dynamic.global.selectDynamic("FACTORY_CAPACITY").asInstanceOf[`50000`]
 
-inline def FACTORY_HITS: typings.screeps.screepsNumbers.`1000` = js.Dynamic.global.selectDynamic("FACTORY_HITS").asInstanceOf[typings.screeps.screepsNumbers.`1000`]
+inline def FACTORY_HITS: `1000` = js.Dynamic.global.selectDynamic("FACTORY_HITS").asInstanceOf[`1000`]
 
 inline def FIND_CONSTRUCTION_SITES: typings.screeps.FIND_CONSTRUCTION_SITES = js.Dynamic.global.selectDynamic("FIND_CONSTRUCTION_SITES").asInstanceOf[typings.screeps.FIND_CONSTRUCTION_SITES]
 
@@ -253,65 +312,65 @@ inline def FIND_STRUCTURES: typings.screeps.FIND_STRUCTURES = js.Dynamic.global.
 
 inline def FIND_TOMBSTONES: typings.screeps.FIND_TOMBSTONES = js.Dynamic.global.selectDynamic("FIND_TOMBSTONES").asInstanceOf[typings.screeps.FIND_TOMBSTONES]
 
-inline def GCL_MULTIPLY: scala.Double = js.Dynamic.global.selectDynamic("GCL_MULTIPLY").asInstanceOf[scala.Double]
+inline def GCL_MULTIPLY: Double = js.Dynamic.global.selectDynamic("GCL_MULTIPLY").asInstanceOf[Double]
 
-inline def GCL_NOVICE: scala.Double = js.Dynamic.global.selectDynamic("GCL_NOVICE").asInstanceOf[scala.Double]
+inline def GCL_NOVICE: Double = js.Dynamic.global.selectDynamic("GCL_NOVICE").asInstanceOf[Double]
 
-inline def GCL_POW: scala.Double = js.Dynamic.global.selectDynamic("GCL_POW").asInstanceOf[scala.Double]
+inline def GCL_POW: Double = js.Dynamic.global.selectDynamic("GCL_POW").asInstanceOf[Double]
 
 inline def Game: typings.screeps.Game = js.Dynamic.global.selectDynamic("Game").asInstanceOf[typings.screeps.Game]
-inline def Game_=(x: typings.screeps.Game): scala.Unit = js.Dynamic.global.updateDynamic("Game")(x.asInstanceOf[js.Any])
+inline def Game_=(x: typings.screeps.Game): Unit = js.Dynamic.global.updateDynamic("Game")(x.asInstanceOf[js.Any])
 
-inline def HARVEST_DEPOSIT_POWER: typings.screeps.screepsNumbers.`1` = js.Dynamic.global.selectDynamic("HARVEST_DEPOSIT_POWER").asInstanceOf[typings.screeps.screepsNumbers.`1`]
+inline def HARVEST_DEPOSIT_POWER: `1` = js.Dynamic.global.selectDynamic("HARVEST_DEPOSIT_POWER").asInstanceOf[`1`]
 
-inline def HARVEST_MINERAL_POWER: typings.screeps.screepsNumbers.`1` = js.Dynamic.global.selectDynamic("HARVEST_MINERAL_POWER").asInstanceOf[typings.screeps.screepsNumbers.`1`]
+inline def HARVEST_MINERAL_POWER: `1` = js.Dynamic.global.selectDynamic("HARVEST_MINERAL_POWER").asInstanceOf[`1`]
 
-inline def HARVEST_POWER: typings.screeps.screepsNumbers.`2` = js.Dynamic.global.selectDynamic("HARVEST_POWER").asInstanceOf[typings.screeps.screepsNumbers.`2`]
+inline def HARVEST_POWER: `2` = js.Dynamic.global.selectDynamic("HARVEST_POWER").asInstanceOf[`2`]
 
 inline def HEAL: typings.screeps.HEAL = js.Dynamic.global.selectDynamic("HEAL").asInstanceOf[typings.screeps.HEAL]
 
-inline def HEAL_POWER: typings.screeps.screepsNumbers.`12` = js.Dynamic.global.selectDynamic("HEAL_POWER").asInstanceOf[typings.screeps.screepsNumbers.`12`]
+inline def HEAL_POWER: `12` = js.Dynamic.global.selectDynamic("HEAL_POWER").asInstanceOf[`12`]
 
-inline def INTERSHARD_RESOURCES: js.Array[typings.screeps.InterShardResourceConstant] = js.Dynamic.global.selectDynamic("INTERSHARD_RESOURCES").asInstanceOf[js.Array[typings.screeps.InterShardResourceConstant]]
+inline def INTERSHARD_RESOURCES: js.Array[InterShardResourceConstant] = js.Dynamic.global.selectDynamic("INTERSHARD_RESOURCES").asInstanceOf[js.Array[InterShardResourceConstant]]
 
 // 1000*60*60*24*30
-inline def INVADERS_ENERGY_GOAL: scala.Double = js.Dynamic.global.selectDynamic("INVADERS_ENERGY_GOAL").asInstanceOf[scala.Double]
+inline def INVADERS_ENERGY_GOAL: Double = js.Dynamic.global.selectDynamic("INVADERS_ENERGY_GOAL").asInstanceOf[Double]
 
-inline def INVADER_CORE_CONTROLLER_DOWNGRADE: typings.screeps.screepsNumbers.`5000` = js.Dynamic.global.selectDynamic("INVADER_CORE_CONTROLLER_DOWNGRADE").asInstanceOf[typings.screeps.screepsNumbers.`5000`]
+inline def INVADER_CORE_CONTROLLER_DOWNGRADE: `5000` = js.Dynamic.global.selectDynamic("INVADER_CORE_CONTROLLER_DOWNGRADE").asInstanceOf[`5000`]
 
-inline def INVADER_CORE_CONTROLLER_POWER: typings.screeps.screepsNumbers.`100` = js.Dynamic.global.selectDynamic("INVADER_CORE_CONTROLLER_POWER").asInstanceOf[typings.screeps.screepsNumbers.`100`]
+inline def INVADER_CORE_CONTROLLER_POWER: `100` = js.Dynamic.global.selectDynamic("INVADER_CORE_CONTROLLER_POWER").asInstanceOf[`100`]
 
-inline def INVADER_CORE_EXPAND_TIME: typings.screeps.screepsNumbers.`15000` = js.Dynamic.global.selectDynamic("INVADER_CORE_EXPAND_TIME").asInstanceOf[typings.screeps.screepsNumbers.`15000`]
+inline def INVADER_CORE_EXPAND_TIME: `15000` = js.Dynamic.global.selectDynamic("INVADER_CORE_EXPAND_TIME").asInstanceOf[`15000`]
 
-inline def INVADER_CORE_HITS: typings.screeps.screepsNumbers.`1000000` = js.Dynamic.global.selectDynamic("INVADER_CORE_HITS").asInstanceOf[typings.screeps.screepsNumbers.`1000000`]
+inline def INVADER_CORE_HITS: `1000000` = js.Dynamic.global.selectDynamic("INVADER_CORE_HITS").asInstanceOf[`1000000`]
 
 inline def InterShardMemory: typings.screeps.InterShardMemory = js.Dynamic.global.selectDynamic("InterShardMemory").asInstanceOf[typings.screeps.InterShardMemory]
 
-inline def LAB_BOOST_ENERGY: scala.Double = js.Dynamic.global.selectDynamic("LAB_BOOST_ENERGY").asInstanceOf[scala.Double]
+inline def LAB_BOOST_ENERGY: Double = js.Dynamic.global.selectDynamic("LAB_BOOST_ENERGY").asInstanceOf[Double]
 
-inline def LAB_BOOST_MINERAL: scala.Double = js.Dynamic.global.selectDynamic("LAB_BOOST_MINERAL").asInstanceOf[scala.Double]
+inline def LAB_BOOST_MINERAL: Double = js.Dynamic.global.selectDynamic("LAB_BOOST_MINERAL").asInstanceOf[Double]
 
-inline def LAB_COOLDOWN: scala.Double = js.Dynamic.global.selectDynamic("LAB_COOLDOWN").asInstanceOf[scala.Double]
+inline def LAB_COOLDOWN: Double = js.Dynamic.global.selectDynamic("LAB_COOLDOWN").asInstanceOf[Double]
 
-inline def LAB_ENERGY_CAPACITY: scala.Double = js.Dynamic.global.selectDynamic("LAB_ENERGY_CAPACITY").asInstanceOf[scala.Double]
+inline def LAB_ENERGY_CAPACITY: Double = js.Dynamic.global.selectDynamic("LAB_ENERGY_CAPACITY").asInstanceOf[Double]
 
-inline def LAB_HITS: scala.Double = js.Dynamic.global.selectDynamic("LAB_HITS").asInstanceOf[scala.Double]
+inline def LAB_HITS: Double = js.Dynamic.global.selectDynamic("LAB_HITS").asInstanceOf[Double]
 
-inline def LAB_MINERAL_CAPACITY: scala.Double = js.Dynamic.global.selectDynamic("LAB_MINERAL_CAPACITY").asInstanceOf[scala.Double]
+inline def LAB_MINERAL_CAPACITY: Double = js.Dynamic.global.selectDynamic("LAB_MINERAL_CAPACITY").asInstanceOf[Double]
 
-inline def LAB_REACTION_AMOUNT: scala.Double = js.Dynamic.global.selectDynamic("LAB_REACTION_AMOUNT").asInstanceOf[scala.Double]
+inline def LAB_REACTION_AMOUNT: Double = js.Dynamic.global.selectDynamic("LAB_REACTION_AMOUNT").asInstanceOf[Double]
 
 inline def LEFT: typings.screeps.LEFT = js.Dynamic.global.selectDynamic("LEFT").asInstanceOf[typings.screeps.LEFT]
 
-inline def LINK_CAPACITY: typings.screeps.screepsNumbers.`800` = js.Dynamic.global.selectDynamic("LINK_CAPACITY").asInstanceOf[typings.screeps.screepsNumbers.`800`]
+inline def LINK_CAPACITY: `800` = js.Dynamic.global.selectDynamic("LINK_CAPACITY").asInstanceOf[`800`]
 
-inline def LINK_COOLDOWN: typings.screeps.screepsNumbers.`1` = js.Dynamic.global.selectDynamic("LINK_COOLDOWN").asInstanceOf[typings.screeps.screepsNumbers.`1`]
+inline def LINK_COOLDOWN: `1` = js.Dynamic.global.selectDynamic("LINK_COOLDOWN").asInstanceOf[`1`]
 
-inline def LINK_HITS: typings.screeps.screepsNumbers.`1000` = js.Dynamic.global.selectDynamic("LINK_HITS").asInstanceOf[typings.screeps.screepsNumbers.`1000`]
+inline def LINK_HITS: `1000` = js.Dynamic.global.selectDynamic("LINK_HITS").asInstanceOf[`1000`]
 
-inline def LINK_HITS_MAX: typings.screeps.screepsNumbers.`1000` = js.Dynamic.global.selectDynamic("LINK_HITS_MAX").asInstanceOf[typings.screeps.screepsNumbers.`1000`]
+inline def LINK_HITS_MAX: `1000` = js.Dynamic.global.selectDynamic("LINK_HITS_MAX").asInstanceOf[`1000`]
 
-inline def LINK_LOSS_RATIO: typings.screeps.screepsNumbers.`0.03` = js.Dynamic.global.selectDynamic("LINK_LOSS_RATIO").asInstanceOf[typings.screeps.screepsNumbers.`0.03`]
+inline def LINK_LOSS_RATIO: `0.03` = js.Dynamic.global.selectDynamic("LINK_LOSS_RATIO").asInstanceOf[`0.03`]
 
 inline def LOOK_CONSTRUCTION_SITES: typings.screeps.LOOK_CONSTRUCTION_SITES = js.Dynamic.global.selectDynamic("LOOK_CONSTRUCTION_SITES").asInstanceOf[typings.screeps.LOOK_CONSTRUCTION_SITES]
 
@@ -341,89 +400,89 @@ inline def LOOK_TERRAIN: typings.screeps.LOOK_TERRAIN = js.Dynamic.global.select
 
 inline def LOOK_TOMBSTONES: typings.screeps.LOOK_TOMBSTONES = js.Dynamic.global.selectDynamic("LOOK_TOMBSTONES").asInstanceOf[typings.screeps.LOOK_TOMBSTONES]
 
-inline def MARKET_MAX_ORDERS: typings.screeps.screepsNumbers.`300` = js.Dynamic.global.selectDynamic("MARKET_MAX_ORDERS").asInstanceOf[typings.screeps.screepsNumbers.`300`]
+inline def MARKET_MAX_ORDERS: `300` = js.Dynamic.global.selectDynamic("MARKET_MAX_ORDERS").asInstanceOf[`300`]
 
-inline def MARKET_ORDER_LIFE_TIME: typings.screeps.screepsNumbers._2592000000 = js.Dynamic.global.selectDynamic("MARKET_ORDER_LIFE_TIME").asInstanceOf[typings.screeps.screepsNumbers._2592000000]
+inline def MARKET_ORDER_LIFE_TIME: _2592000000 = js.Dynamic.global.selectDynamic("MARKET_ORDER_LIFE_TIME").asInstanceOf[_2592000000]
 
-inline def MAX_CONSTRUCTION_SITES: scala.Double = js.Dynamic.global.selectDynamic("MAX_CONSTRUCTION_SITES").asInstanceOf[scala.Double]
+inline def MAX_CONSTRUCTION_SITES: Double = js.Dynamic.global.selectDynamic("MAX_CONSTRUCTION_SITES").asInstanceOf[Double]
 
-inline def MAX_CREEP_SIZE: scala.Double = js.Dynamic.global.selectDynamic("MAX_CREEP_SIZE").asInstanceOf[scala.Double]
+inline def MAX_CREEP_SIZE: Double = js.Dynamic.global.selectDynamic("MAX_CREEP_SIZE").asInstanceOf[Double]
 
-inline def MINERAL_DENSITY_CHANGE: scala.Double = js.Dynamic.global.selectDynamic("MINERAL_DENSITY_CHANGE").asInstanceOf[scala.Double]
+inline def MINERAL_DENSITY_CHANGE: Double = js.Dynamic.global.selectDynamic("MINERAL_DENSITY_CHANGE").asInstanceOf[Double]
 
-inline def MINERAL_RANDOM_FACTOR: scala.Double = js.Dynamic.global.selectDynamic("MINERAL_RANDOM_FACTOR").asInstanceOf[scala.Double]
+inline def MINERAL_RANDOM_FACTOR: Double = js.Dynamic.global.selectDynamic("MINERAL_RANDOM_FACTOR").asInstanceOf[Double]
 
-inline def MINERAL_REGEN_TIME: scala.Double = js.Dynamic.global.selectDynamic("MINERAL_REGEN_TIME").asInstanceOf[scala.Double]
+inline def MINERAL_REGEN_TIME: Double = js.Dynamic.global.selectDynamic("MINERAL_REGEN_TIME").asInstanceOf[Double]
 
-inline def MODE_ARENA: java.lang.String = js.Dynamic.global.selectDynamic("MODE_ARENA").asInstanceOf[java.lang.String]
+inline def MODE_ARENA: String = js.Dynamic.global.selectDynamic("MODE_ARENA").asInstanceOf[String]
 
-inline def MODE_SIMULATION: java.lang.String = js.Dynamic.global.selectDynamic("MODE_SIMULATION").asInstanceOf[java.lang.String]
+inline def MODE_SIMULATION: String = js.Dynamic.global.selectDynamic("MODE_SIMULATION").asInstanceOf[String]
 
-inline def MODE_SURVIVAL: java.lang.String = js.Dynamic.global.selectDynamic("MODE_SURVIVAL").asInstanceOf[java.lang.String]
+inline def MODE_SURVIVAL: String = js.Dynamic.global.selectDynamic("MODE_SURVIVAL").asInstanceOf[String]
 
-inline def MODE_WORLD: java.lang.String = js.Dynamic.global.selectDynamic("MODE_WORLD").asInstanceOf[java.lang.String]
+inline def MODE_WORLD: String = js.Dynamic.global.selectDynamic("MODE_WORLD").asInstanceOf[String]
 
 inline def MOVE: typings.screeps.MOVE = js.Dynamic.global.selectDynamic("MOVE").asInstanceOf[typings.screeps.MOVE]
 
 inline def Memory: typings.screeps.Memory = js.Dynamic.global.selectDynamic("Memory").asInstanceOf[typings.screeps.Memory]
 
-inline def NUKER_COOLDOWN: scala.Double = js.Dynamic.global.selectDynamic("NUKER_COOLDOWN").asInstanceOf[scala.Double]
+inline def NUKER_COOLDOWN: Double = js.Dynamic.global.selectDynamic("NUKER_COOLDOWN").asInstanceOf[Double]
 
-inline def NUKER_ENERGY_CAPACITY: scala.Double = js.Dynamic.global.selectDynamic("NUKER_ENERGY_CAPACITY").asInstanceOf[scala.Double]
+inline def NUKER_ENERGY_CAPACITY: Double = js.Dynamic.global.selectDynamic("NUKER_ENERGY_CAPACITY").asInstanceOf[Double]
 
-inline def NUKER_GHODIUM_CAPACITY: scala.Double = js.Dynamic.global.selectDynamic("NUKER_GHODIUM_CAPACITY").asInstanceOf[scala.Double]
+inline def NUKER_GHODIUM_CAPACITY: Double = js.Dynamic.global.selectDynamic("NUKER_GHODIUM_CAPACITY").asInstanceOf[Double]
 
-inline def NUKER_HITS: scala.Double = js.Dynamic.global.selectDynamic("NUKER_HITS").asInstanceOf[scala.Double]
+inline def NUKER_HITS: Double = js.Dynamic.global.selectDynamic("NUKER_HITS").asInstanceOf[Double]
 
-inline def NUKE_LAND_TIME: scala.Double = js.Dynamic.global.selectDynamic("NUKE_LAND_TIME").asInstanceOf[scala.Double]
+inline def NUKE_LAND_TIME: Double = js.Dynamic.global.selectDynamic("NUKE_LAND_TIME").asInstanceOf[Double]
 
-inline def NUKE_RANGE: scala.Double = js.Dynamic.global.selectDynamic("NUKE_RANGE").asInstanceOf[scala.Double]
+inline def NUKE_RANGE: Double = js.Dynamic.global.selectDynamic("NUKE_RANGE").asInstanceOf[Double]
 
-inline def OBSERVER_HITS: scala.Double = js.Dynamic.global.selectDynamic("OBSERVER_HITS").asInstanceOf[scala.Double]
+inline def OBSERVER_HITS: Double = js.Dynamic.global.selectDynamic("OBSERVER_HITS").asInstanceOf[Double]
 
-inline def OBSERVER_RANGE: scala.Double = js.Dynamic.global.selectDynamic("OBSERVER_RANGE").asInstanceOf[scala.Double]
+inline def OBSERVER_RANGE: Double = js.Dynamic.global.selectDynamic("OBSERVER_RANGE").asInstanceOf[Double]
 
 inline def OBSTACLE_OBJECT_TYPES: js.Tuple20[
-typings.screeps.screepsStrings.spawn, 
-typings.screeps.screepsStrings.creep, 
-typings.screeps.screepsStrings.powerCreep, 
-typings.screeps.screepsStrings.source, 
-typings.screeps.screepsStrings.mineral, 
-typings.screeps.screepsStrings.deposit, 
-typings.screeps.screepsStrings.controller, 
-typings.screeps.screepsStrings.constructedWall, 
-typings.screeps.screepsStrings.`extension`, 
-typings.screeps.screepsStrings.link, 
-typings.screeps.screepsStrings.storage, 
-typings.screeps.screepsStrings.tower, 
-typings.screeps.screepsStrings.observer, 
-typings.screeps.screepsStrings.powerSpawn, 
-typings.screeps.screepsStrings.powerBank, 
-typings.screeps.screepsStrings.lab, 
-typings.screeps.screepsStrings.terminal, 
-typings.screeps.screepsStrings.nuker, 
-typings.screeps.screepsStrings.factory, 
-typings.screeps.screepsStrings.invaderCore] = js.Dynamic.global.selectDynamic("OBSTACLE_OBJECT_TYPES").asInstanceOf[js.Tuple20[
-typings.screeps.screepsStrings.spawn, 
-typings.screeps.screepsStrings.creep, 
-typings.screeps.screepsStrings.powerCreep, 
-typings.screeps.screepsStrings.source, 
-typings.screeps.screepsStrings.mineral, 
-typings.screeps.screepsStrings.deposit, 
-typings.screeps.screepsStrings.controller, 
-typings.screeps.screepsStrings.constructedWall, 
-typings.screeps.screepsStrings.`extension`, 
-typings.screeps.screepsStrings.link, 
-typings.screeps.screepsStrings.storage, 
-typings.screeps.screepsStrings.tower, 
-typings.screeps.screepsStrings.observer, 
-typings.screeps.screepsStrings.powerSpawn, 
-typings.screeps.screepsStrings.powerBank, 
-typings.screeps.screepsStrings.lab, 
-typings.screeps.screepsStrings.terminal, 
-typings.screeps.screepsStrings.nuker, 
-typings.screeps.screepsStrings.factory, 
-typings.screeps.screepsStrings.invaderCore]]
+spawn, 
+creep, 
+powerCreep, 
+source, 
+mineral, 
+deposit, 
+controller, 
+constructedWall, 
+`extension`, 
+link, 
+storage, 
+tower, 
+observer, 
+powerSpawn, 
+powerBank, 
+lab, 
+terminal, 
+nuker, 
+factory, 
+invaderCore] = js.Dynamic.global.selectDynamic("OBSTACLE_OBJECT_TYPES").asInstanceOf[js.Tuple20[
+spawn, 
+creep, 
+powerCreep, 
+source, 
+mineral, 
+deposit, 
+controller, 
+constructedWall, 
+`extension`, 
+link, 
+storage, 
+tower, 
+observer, 
+powerSpawn, 
+powerBank, 
+lab, 
+terminal, 
+nuker, 
+factory, 
+invaderCore]]
 
 inline def OK: typings.screeps.OK = js.Dynamic.global.selectDynamic("OK").asInstanceOf[typings.screeps.OK]
 
@@ -433,41 +492,41 @@ inline def ORDER_SELL: typings.screeps.ORDER_SELL = js.Dynamic.global.selectDyna
 
 inline def PIXEL: typings.screeps.PIXEL = js.Dynamic.global.selectDynamic("PIXEL").asInstanceOf[typings.screeps.PIXEL]
 
-inline def PIXEL_CPU_COST: typings.screeps.screepsNumbers.`5000` = js.Dynamic.global.selectDynamic("PIXEL_CPU_COST").asInstanceOf[typings.screeps.screepsNumbers.`5000`]
+inline def PIXEL_CPU_COST: `10000` = js.Dynamic.global.selectDynamic("PIXEL_CPU_COST").asInstanceOf[`10000`]
 
-inline def POWER_BANK_CAPACITY_CRIT: scala.Double = js.Dynamic.global.selectDynamic("POWER_BANK_CAPACITY_CRIT").asInstanceOf[scala.Double]
+inline def POWER_BANK_CAPACITY_CRIT: Double = js.Dynamic.global.selectDynamic("POWER_BANK_CAPACITY_CRIT").asInstanceOf[Double]
 
-inline def POWER_BANK_CAPACITY_MAX: scala.Double = js.Dynamic.global.selectDynamic("POWER_BANK_CAPACITY_MAX").asInstanceOf[scala.Double]
+inline def POWER_BANK_CAPACITY_MAX: Double = js.Dynamic.global.selectDynamic("POWER_BANK_CAPACITY_MAX").asInstanceOf[Double]
 
-inline def POWER_BANK_CAPACITY_MIN: scala.Double = js.Dynamic.global.selectDynamic("POWER_BANK_CAPACITY_MIN").asInstanceOf[scala.Double]
+inline def POWER_BANK_CAPACITY_MIN: Double = js.Dynamic.global.selectDynamic("POWER_BANK_CAPACITY_MIN").asInstanceOf[Double]
 
-inline def POWER_BANK_DECAY: scala.Double = js.Dynamic.global.selectDynamic("POWER_BANK_DECAY").asInstanceOf[scala.Double]
+inline def POWER_BANK_DECAY: Double = js.Dynamic.global.selectDynamic("POWER_BANK_DECAY").asInstanceOf[Double]
 
-inline def POWER_BANK_HITS: scala.Double = js.Dynamic.global.selectDynamic("POWER_BANK_HITS").asInstanceOf[scala.Double]
+inline def POWER_BANK_HITS: Double = js.Dynamic.global.selectDynamic("POWER_BANK_HITS").asInstanceOf[Double]
 
-inline def POWER_BANK_HIT_BACK: scala.Double = js.Dynamic.global.selectDynamic("POWER_BANK_HIT_BACK").asInstanceOf[scala.Double]
+inline def POWER_BANK_HIT_BACK: Double = js.Dynamic.global.selectDynamic("POWER_BANK_HIT_BACK").asInstanceOf[Double]
 
 // 8 * 3600 * 1000
-inline def POWER_CREEP_DELETE_COOLDOWN: typings.screeps.screepsNumbers.`86400000` = js.Dynamic.global.selectDynamic("POWER_CREEP_DELETE_COOLDOWN").asInstanceOf[typings.screeps.screepsNumbers.`86400000`]
+inline def POWER_CREEP_DELETE_COOLDOWN: `86400000` = js.Dynamic.global.selectDynamic("POWER_CREEP_DELETE_COOLDOWN").asInstanceOf[`86400000`]
 
-inline def POWER_CREEP_LIFE_TIME: typings.screeps.screepsNumbers.`5000` = js.Dynamic.global.selectDynamic("POWER_CREEP_LIFE_TIME").asInstanceOf[typings.screeps.screepsNumbers.`5000`]
+inline def POWER_CREEP_LIFE_TIME: `5000` = js.Dynamic.global.selectDynamic("POWER_CREEP_LIFE_TIME").asInstanceOf[`5000`]
 
 // 24 * 3600 * 1000
-inline def POWER_CREEP_MAX_LEVEL: typings.screeps.screepsNumbers.`25` = js.Dynamic.global.selectDynamic("POWER_CREEP_MAX_LEVEL").asInstanceOf[typings.screeps.screepsNumbers.`25`]
+inline def POWER_CREEP_MAX_LEVEL: `25` = js.Dynamic.global.selectDynamic("POWER_CREEP_MAX_LEVEL").asInstanceOf[`25`]
 
-inline def POWER_CREEP_SPAWN_COOLDOWN: typings.screeps.screepsNumbers.`28800000` = js.Dynamic.global.selectDynamic("POWER_CREEP_SPAWN_COOLDOWN").asInstanceOf[typings.screeps.screepsNumbers.`28800000`]
+inline def POWER_CREEP_SPAWN_COOLDOWN: `28800000` = js.Dynamic.global.selectDynamic("POWER_CREEP_SPAWN_COOLDOWN").asInstanceOf[`28800000`]
 
-inline def POWER_LEVEL_MULTIPLY: typings.screeps.screepsNumbers.`1000` = js.Dynamic.global.selectDynamic("POWER_LEVEL_MULTIPLY").asInstanceOf[typings.screeps.screepsNumbers.`1000`]
+inline def POWER_LEVEL_MULTIPLY: `1000` = js.Dynamic.global.selectDynamic("POWER_LEVEL_MULTIPLY").asInstanceOf[`1000`]
 
-inline def POWER_LEVEL_POW: typings.screeps.screepsNumbers.`2` = js.Dynamic.global.selectDynamic("POWER_LEVEL_POW").asInstanceOf[typings.screeps.screepsNumbers.`2`]
+inline def POWER_LEVEL_POW: `2` = js.Dynamic.global.selectDynamic("POWER_LEVEL_POW").asInstanceOf[`2`]
 
-inline def POWER_SPAWN_ENERGY_CAPACITY: scala.Double = js.Dynamic.global.selectDynamic("POWER_SPAWN_ENERGY_CAPACITY").asInstanceOf[scala.Double]
+inline def POWER_SPAWN_ENERGY_CAPACITY: Double = js.Dynamic.global.selectDynamic("POWER_SPAWN_ENERGY_CAPACITY").asInstanceOf[Double]
 
-inline def POWER_SPAWN_ENERGY_RATIO: scala.Double = js.Dynamic.global.selectDynamic("POWER_SPAWN_ENERGY_RATIO").asInstanceOf[scala.Double]
+inline def POWER_SPAWN_ENERGY_RATIO: Double = js.Dynamic.global.selectDynamic("POWER_SPAWN_ENERGY_RATIO").asInstanceOf[Double]
 
-inline def POWER_SPAWN_HITS: scala.Double = js.Dynamic.global.selectDynamic("POWER_SPAWN_HITS").asInstanceOf[scala.Double]
+inline def POWER_SPAWN_HITS: Double = js.Dynamic.global.selectDynamic("POWER_SPAWN_HITS").asInstanceOf[Double]
 
-inline def POWER_SPAWN_POWER_CAPACITY: scala.Double = js.Dynamic.global.selectDynamic("POWER_SPAWN_POWER_CAPACITY").asInstanceOf[scala.Double]
+inline def POWER_SPAWN_POWER_CAPACITY: Double = js.Dynamic.global.selectDynamic("POWER_SPAWN_POWER_CAPACITY").asInstanceOf[Double]
 
 inline def PWR_DISRUPT_SOURCE: typings.screeps.PWR_DISRUPT_SOURCE = js.Dynamic.global.selectDynamic("PWR_DISRUPT_SOURCE").asInstanceOf[typings.screeps.PWR_DISRUPT_SOURCE]
 
@@ -507,23 +566,23 @@ inline def PWR_REGEN_SOURCE: typings.screeps.PWR_REGEN_SOURCE = js.Dynamic.globa
 
 inline def PWR_SHIELD: typings.screeps.PWR_SHIELD = js.Dynamic.global.selectDynamic("PWR_SHIELD").asInstanceOf[typings.screeps.PWR_SHIELD]
 
-inline def RAMPART_DECAY_AMOUNT: typings.screeps.screepsNumbers.`300` = js.Dynamic.global.selectDynamic("RAMPART_DECAY_AMOUNT").asInstanceOf[typings.screeps.screepsNumbers.`300`]
+inline def RAMPART_DECAY_AMOUNT: `300` = js.Dynamic.global.selectDynamic("RAMPART_DECAY_AMOUNT").asInstanceOf[`300`]
 
-inline def RAMPART_DECAY_TIME: typings.screeps.screepsNumbers.`100` = js.Dynamic.global.selectDynamic("RAMPART_DECAY_TIME").asInstanceOf[typings.screeps.screepsNumbers.`100`]
+inline def RAMPART_DECAY_TIME: `100` = js.Dynamic.global.selectDynamic("RAMPART_DECAY_TIME").asInstanceOf[`100`]
 
-inline def RAMPART_HITS: typings.screeps.screepsNumbers.`1` = js.Dynamic.global.selectDynamic("RAMPART_HITS").asInstanceOf[typings.screeps.screepsNumbers.`1`]
+inline def RAMPART_HITS: `1` = js.Dynamic.global.selectDynamic("RAMPART_HITS").asInstanceOf[`1`]
 
 inline def RANGED_ATTACK: typings.screeps.RANGED_ATTACK = js.Dynamic.global.selectDynamic("RANGED_ATTACK").asInstanceOf[typings.screeps.RANGED_ATTACK]
 
-inline def RANGED_ATTACK_POWER: typings.screeps.screepsNumbers.`10` = js.Dynamic.global.selectDynamic("RANGED_ATTACK_POWER").asInstanceOf[typings.screeps.screepsNumbers.`10`]
+inline def RANGED_ATTACK_POWER: `10` = js.Dynamic.global.selectDynamic("RANGED_ATTACK_POWER").asInstanceOf[`10`]
 
-inline def RANGED_HEAL_POWER: typings.screeps.screepsNumbers.`4` = js.Dynamic.global.selectDynamic("RANGED_HEAL_POWER").asInstanceOf[typings.screeps.screepsNumbers.`4`]
+inline def RANGED_HEAL_POWER: `4` = js.Dynamic.global.selectDynamic("RANGED_HEAL_POWER").asInstanceOf[`4`]
 
-inline def REPAIR_COST: typings.screeps.screepsNumbers.`0.01` = js.Dynamic.global.selectDynamic("REPAIR_COST").asInstanceOf[typings.screeps.screepsNumbers.`0.01`]
+inline def REPAIR_COST: `0.01` = js.Dynamic.global.selectDynamic("REPAIR_COST").asInstanceOf[`0.01`]
 
-inline def REPAIR_POWER: typings.screeps.screepsNumbers.`100` = js.Dynamic.global.selectDynamic("REPAIR_POWER").asInstanceOf[typings.screeps.screepsNumbers.`100`]
+inline def REPAIR_POWER: `100` = js.Dynamic.global.selectDynamic("REPAIR_POWER").asInstanceOf[`100`]
 
-inline def RESOURCES_ALL: js.Array[typings.screeps.ResourceConstant] = js.Dynamic.global.selectDynamic("RESOURCES_ALL").asInstanceOf[js.Array[typings.screeps.ResourceConstant]]
+inline def RESOURCES_ALL: js.Array[ResourceConstant] = js.Dynamic.global.selectDynamic("RESOURCES_ALL").asInstanceOf[js.Array[ResourceConstant]]
 
 inline def RESOURCE_ALLOY: typings.screeps.RESOURCE_ALLOY = js.Dynamic.global.selectDynamic("RESOURCE_ALLOY").asInstanceOf[typings.screeps.RESOURCE_ALLOY]
 
@@ -695,43 +754,43 @@ inline def RESOURCE_ZYNTHIUM_OXIDE: typings.screeps.RESOURCE_ZYNTHIUM_OXIDE = js
 
 inline def RIGHT: typings.screeps.RIGHT = js.Dynamic.global.selectDynamic("RIGHT").asInstanceOf[typings.screeps.RIGHT]
 
-inline def ROAD_DECAY_AMOUNT: typings.screeps.screepsNumbers.`100` = js.Dynamic.global.selectDynamic("ROAD_DECAY_AMOUNT").asInstanceOf[typings.screeps.screepsNumbers.`100`]
+inline def ROAD_DECAY_AMOUNT: `100` = js.Dynamic.global.selectDynamic("ROAD_DECAY_AMOUNT").asInstanceOf[`100`]
 
-inline def ROAD_DECAY_TIME: typings.screeps.screepsNumbers.`1000` = js.Dynamic.global.selectDynamic("ROAD_DECAY_TIME").asInstanceOf[typings.screeps.screepsNumbers.`1000`]
+inline def ROAD_DECAY_TIME: `1000` = js.Dynamic.global.selectDynamic("ROAD_DECAY_TIME").asInstanceOf[`1000`]
 
-inline def ROAD_HITS: typings.screeps.screepsNumbers.`5000` = js.Dynamic.global.selectDynamic("ROAD_HITS").asInstanceOf[typings.screeps.screepsNumbers.`5000`]
+inline def ROAD_HITS: `5000` = js.Dynamic.global.selectDynamic("ROAD_HITS").asInstanceOf[`5000`]
 
-inline def ROAD_WEAROUT: typings.screeps.screepsNumbers.`1` = js.Dynamic.global.selectDynamic("ROAD_WEAROUT").asInstanceOf[typings.screeps.screepsNumbers.`1`]
+inline def ROAD_WEAROUT: `1` = js.Dynamic.global.selectDynamic("ROAD_WEAROUT").asInstanceOf[`1`]
 
-inline def ROAD_WEAROUT_POWER_CREEP: typings.screeps.screepsNumbers.`100` = js.Dynamic.global.selectDynamic("ROAD_WEAROUT_POWER_CREEP").asInstanceOf[typings.screeps.screepsNumbers.`100`]
+inline def ROAD_WEAROUT_POWER_CREEP: `100` = js.Dynamic.global.selectDynamic("ROAD_WEAROUT_POWER_CREEP").asInstanceOf[`100`]
 
-inline def RUIN_DECAY: typings.screeps.screepsNumbers.`500` = js.Dynamic.global.selectDynamic("RUIN_DECAY").asInstanceOf[typings.screeps.screepsNumbers.`500`]
+inline def RUIN_DECAY: `500` = js.Dynamic.global.selectDynamic("RUIN_DECAY").asInstanceOf[`500`]
 
 inline def RawMemory: typings.screeps.RawMemory = js.Dynamic.global.selectDynamic("RawMemory").asInstanceOf[typings.screeps.RawMemory]
 
-inline def SAFE_MODE_COOLDOWN: typings.screeps.screepsNumbers.`50000` = js.Dynamic.global.selectDynamic("SAFE_MODE_COOLDOWN").asInstanceOf[typings.screeps.screepsNumbers.`50000`]
+inline def SAFE_MODE_COOLDOWN: `50000` = js.Dynamic.global.selectDynamic("SAFE_MODE_COOLDOWN").asInstanceOf[`50000`]
 
-inline def SAFE_MODE_COST: typings.screeps.screepsNumbers.`1000` = js.Dynamic.global.selectDynamic("SAFE_MODE_COST").asInstanceOf[typings.screeps.screepsNumbers.`1000`]
+inline def SAFE_MODE_COST: `1000` = js.Dynamic.global.selectDynamic("SAFE_MODE_COST").asInstanceOf[`1000`]
 
-inline def SAFE_MODE_DURATION: typings.screeps.screepsNumbers.`20000` = js.Dynamic.global.selectDynamic("SAFE_MODE_DURATION").asInstanceOf[typings.screeps.screepsNumbers.`20000`]
+inline def SAFE_MODE_DURATION: `20000` = js.Dynamic.global.selectDynamic("SAFE_MODE_DURATION").asInstanceOf[`20000`]
 
-inline def SOURCE_ENERGY_CAPACITY: typings.screeps.screepsNumbers.`3000` = js.Dynamic.global.selectDynamic("SOURCE_ENERGY_CAPACITY").asInstanceOf[typings.screeps.screepsNumbers.`3000`]
+inline def SOURCE_ENERGY_CAPACITY: `3000` = js.Dynamic.global.selectDynamic("SOURCE_ENERGY_CAPACITY").asInstanceOf[`3000`]
 
-inline def SOURCE_ENERGY_KEEPER_CAPACITY: typings.screeps.screepsNumbers.`4000` = js.Dynamic.global.selectDynamic("SOURCE_ENERGY_KEEPER_CAPACITY").asInstanceOf[typings.screeps.screepsNumbers.`4000`]
+inline def SOURCE_ENERGY_KEEPER_CAPACITY: `4000` = js.Dynamic.global.selectDynamic("SOURCE_ENERGY_KEEPER_CAPACITY").asInstanceOf[`4000`]
 
-inline def SOURCE_ENERGY_NEUTRAL_CAPACITY: typings.screeps.screepsNumbers.`1500` = js.Dynamic.global.selectDynamic("SOURCE_ENERGY_NEUTRAL_CAPACITY").asInstanceOf[typings.screeps.screepsNumbers.`1500`]
+inline def SOURCE_ENERGY_NEUTRAL_CAPACITY: `1500` = js.Dynamic.global.selectDynamic("SOURCE_ENERGY_NEUTRAL_CAPACITY").asInstanceOf[`1500`]
 
-inline def SPAWN_ENERGY_CAPACITY: typings.screeps.screepsNumbers.`300` = js.Dynamic.global.selectDynamic("SPAWN_ENERGY_CAPACITY").asInstanceOf[typings.screeps.screepsNumbers.`300`]
+inline def SPAWN_ENERGY_CAPACITY: `300` = js.Dynamic.global.selectDynamic("SPAWN_ENERGY_CAPACITY").asInstanceOf[`300`]
 
-inline def SPAWN_ENERGY_START: typings.screeps.screepsNumbers.`300` = js.Dynamic.global.selectDynamic("SPAWN_ENERGY_START").asInstanceOf[typings.screeps.screepsNumbers.`300`]
+inline def SPAWN_ENERGY_START: `300` = js.Dynamic.global.selectDynamic("SPAWN_ENERGY_START").asInstanceOf[`300`]
 
-inline def SPAWN_HITS: typings.screeps.screepsNumbers.`5000` = js.Dynamic.global.selectDynamic("SPAWN_HITS").asInstanceOf[typings.screeps.screepsNumbers.`5000`]
+inline def SPAWN_HITS: `5000` = js.Dynamic.global.selectDynamic("SPAWN_HITS").asInstanceOf[`5000`]
 
-inline def STORAGE_CAPACITY: typings.screeps.screepsNumbers.`1000000` = js.Dynamic.global.selectDynamic("STORAGE_CAPACITY").asInstanceOf[typings.screeps.screepsNumbers.`1000000`]
+inline def STORAGE_CAPACITY: `1000000` = js.Dynamic.global.selectDynamic("STORAGE_CAPACITY").asInstanceOf[`1000000`]
 
-inline def STORAGE_HITS: typings.screeps.screepsNumbers.`10000` = js.Dynamic.global.selectDynamic("STORAGE_HITS").asInstanceOf[typings.screeps.screepsNumbers.`10000`]
+inline def STORAGE_HITS: `10000` = js.Dynamic.global.selectDynamic("STORAGE_HITS").asInstanceOf[`10000`]
 
-inline def STRONGHOLD_DECAY_TICKS: typings.screeps.screepsNumbers.`150000` = js.Dynamic.global.selectDynamic("STRONGHOLD_DECAY_TICKS").asInstanceOf[typings.screeps.screepsNumbers.`150000`]
+inline def STRONGHOLD_DECAY_TICKS: `150000` = js.Dynamic.global.selectDynamic("STRONGHOLD_DECAY_TICKS").asInstanceOf[`150000`]
 
 inline def STRUCTURE_CONTAINER: typings.screeps.STRUCTURE_CONTAINER = js.Dynamic.global.selectDynamic("STRUCTURE_CONTAINER").asInstanceOf[typings.screeps.STRUCTURE_CONTAINER]
 
@@ -777,17 +836,17 @@ inline def STRUCTURE_WALL: typings.screeps.STRUCTURE_WALL = js.Dynamic.global.se
 
 inline def SUBSCRIPTION_TOKEN: typings.screeps.SUBSCRIPTION_TOKEN = js.Dynamic.global.selectDynamic("SUBSCRIPTION_TOKEN").asInstanceOf[typings.screeps.SUBSCRIPTION_TOKEN]
 
-inline def SYSTEM_USERNAME: java.lang.String = js.Dynamic.global.selectDynamic("SYSTEM_USERNAME").asInstanceOf[java.lang.String]
+inline def SYSTEM_USERNAME: String = js.Dynamic.global.selectDynamic("SYSTEM_USERNAME").asInstanceOf[String]
 
-inline def TERMINAL_CAPACITY: scala.Double = js.Dynamic.global.selectDynamic("TERMINAL_CAPACITY").asInstanceOf[scala.Double]
+inline def TERMINAL_CAPACITY: Double = js.Dynamic.global.selectDynamic("TERMINAL_CAPACITY").asInstanceOf[Double]
 
-inline def TERMINAL_COOLDOWN: scala.Double = js.Dynamic.global.selectDynamic("TERMINAL_COOLDOWN").asInstanceOf[scala.Double]
+inline def TERMINAL_COOLDOWN: Double = js.Dynamic.global.selectDynamic("TERMINAL_COOLDOWN").asInstanceOf[Double]
 
-inline def TERMINAL_HITS: scala.Double = js.Dynamic.global.selectDynamic("TERMINAL_HITS").asInstanceOf[scala.Double]
+inline def TERMINAL_HITS: Double = js.Dynamic.global.selectDynamic("TERMINAL_HITS").asInstanceOf[Double]
 
-inline def TERMINAL_MIN_SEND: scala.Double = js.Dynamic.global.selectDynamic("TERMINAL_MIN_SEND").asInstanceOf[scala.Double]
+inline def TERMINAL_MIN_SEND: Double = js.Dynamic.global.selectDynamic("TERMINAL_MIN_SEND").asInstanceOf[Double]
 
-inline def TERMINAL_SEND_COST: scala.Double = js.Dynamic.global.selectDynamic("TERMINAL_SEND_COST").asInstanceOf[scala.Double]
+inline def TERMINAL_SEND_COST: Double = js.Dynamic.global.selectDynamic("TERMINAL_SEND_COST").asInstanceOf[Double]
 
 inline def TERRAIN_MASK_LAVA: typings.screeps.TERRAIN_MASK_LAVA = js.Dynamic.global.selectDynamic("TERRAIN_MASK_LAVA").asInstanceOf[typings.screeps.TERRAIN_MASK_LAVA]
 
@@ -795,9 +854,9 @@ inline def TERRAIN_MASK_SWAMP: typings.screeps.TERRAIN_MASK_SWAMP = js.Dynamic.g
 
 inline def TERRAIN_MASK_WALL: typings.screeps.TERRAIN_MASK_WALL = js.Dynamic.global.selectDynamic("TERRAIN_MASK_WALL").asInstanceOf[typings.screeps.TERRAIN_MASK_WALL]
 
-inline def TOMBSTONE_DECAY_PER_PART: typings.screeps.screepsNumbers.`5` = js.Dynamic.global.selectDynamic("TOMBSTONE_DECAY_PER_PART").asInstanceOf[typings.screeps.screepsNumbers.`5`]
+inline def TOMBSTONE_DECAY_PER_PART: `5` = js.Dynamic.global.selectDynamic("TOMBSTONE_DECAY_PER_PART").asInstanceOf[`5`]
 
-inline def TOMBSTONE_DECAY_POWER_CREEP: typings.screeps.screepsNumbers.`500` = js.Dynamic.global.selectDynamic("TOMBSTONE_DECAY_POWER_CREEP").asInstanceOf[typings.screeps.screepsNumbers.`500`]
+inline def TOMBSTONE_DECAY_POWER_CREEP: `500` = js.Dynamic.global.selectDynamic("TOMBSTONE_DECAY_POWER_CREEP").asInstanceOf[`500`]
 
 inline def TOP: typings.screeps.TOP = js.Dynamic.global.selectDynamic("TOP").asInstanceOf[typings.screeps.TOP]
 
@@ -807,28 +866,28 @@ inline def TOP_RIGHT: typings.screeps.TOP_RIGHT = js.Dynamic.global.selectDynami
 
 inline def TOUGH: typings.screeps.TOUGH = js.Dynamic.global.selectDynamic("TOUGH").asInstanceOf[typings.screeps.TOUGH]
 
-inline def TOWER_CAPACITY: scala.Double = js.Dynamic.global.selectDynamic("TOWER_CAPACITY").asInstanceOf[scala.Double]
+inline def TOWER_CAPACITY: Double = js.Dynamic.global.selectDynamic("TOWER_CAPACITY").asInstanceOf[Double]
 
-inline def TOWER_ENERGY_COST: scala.Double = js.Dynamic.global.selectDynamic("TOWER_ENERGY_COST").asInstanceOf[scala.Double]
+inline def TOWER_ENERGY_COST: Double = js.Dynamic.global.selectDynamic("TOWER_ENERGY_COST").asInstanceOf[Double]
 
-inline def TOWER_FALLOFF: scala.Double = js.Dynamic.global.selectDynamic("TOWER_FALLOFF").asInstanceOf[scala.Double]
+inline def TOWER_FALLOFF: Double = js.Dynamic.global.selectDynamic("TOWER_FALLOFF").asInstanceOf[Double]
 
-inline def TOWER_FALLOFF_RANGE: scala.Double = js.Dynamic.global.selectDynamic("TOWER_FALLOFF_RANGE").asInstanceOf[scala.Double]
+inline def TOWER_FALLOFF_RANGE: Double = js.Dynamic.global.selectDynamic("TOWER_FALLOFF_RANGE").asInstanceOf[Double]
 
-inline def TOWER_HITS: scala.Double = js.Dynamic.global.selectDynamic("TOWER_HITS").asInstanceOf[scala.Double]
+inline def TOWER_HITS: Double = js.Dynamic.global.selectDynamic("TOWER_HITS").asInstanceOf[Double]
 
-inline def TOWER_OPTIMAL_RANGE: scala.Double = js.Dynamic.global.selectDynamic("TOWER_OPTIMAL_RANGE").asInstanceOf[scala.Double]
+inline def TOWER_OPTIMAL_RANGE: Double = js.Dynamic.global.selectDynamic("TOWER_OPTIMAL_RANGE").asInstanceOf[Double]
 
-inline def TOWER_POWER_ATTACK: scala.Double = js.Dynamic.global.selectDynamic("TOWER_POWER_ATTACK").asInstanceOf[scala.Double]
+inline def TOWER_POWER_ATTACK: Double = js.Dynamic.global.selectDynamic("TOWER_POWER_ATTACK").asInstanceOf[Double]
 
-inline def TOWER_POWER_HEAL: scala.Double = js.Dynamic.global.selectDynamic("TOWER_POWER_HEAL").asInstanceOf[scala.Double]
+inline def TOWER_POWER_HEAL: Double = js.Dynamic.global.selectDynamic("TOWER_POWER_HEAL").asInstanceOf[Double]
 
-inline def TOWER_POWER_REPAIR: scala.Double = js.Dynamic.global.selectDynamic("TOWER_POWER_REPAIR").asInstanceOf[scala.Double]
+inline def TOWER_POWER_REPAIR: Double = js.Dynamic.global.selectDynamic("TOWER_POWER_REPAIR").asInstanceOf[Double]
 
-inline def UPGRADE_CONTROLLER_POWER: typings.screeps.screepsNumbers.`1` = js.Dynamic.global.selectDynamic("UPGRADE_CONTROLLER_POWER").asInstanceOf[typings.screeps.screepsNumbers.`1`]
+inline def UPGRADE_CONTROLLER_POWER: `1` = js.Dynamic.global.selectDynamic("UPGRADE_CONTROLLER_POWER").asInstanceOf[`1`]
 
-inline def WALL_HITS: typings.screeps.screepsNumbers.`1` = js.Dynamic.global.selectDynamic("WALL_HITS").asInstanceOf[typings.screeps.screepsNumbers.`1`]
+inline def WALL_HITS: `1` = js.Dynamic.global.selectDynamic("WALL_HITS").asInstanceOf[`1`]
 
-inline def WALL_HITS_MAX: typings.screeps.screepsNumbers.`300000000` = js.Dynamic.global.selectDynamic("WALL_HITS_MAX").asInstanceOf[typings.screeps.screepsNumbers.`300000000`]
+inline def WALL_HITS_MAX: `300000000` = js.Dynamic.global.selectDynamic("WALL_HITS_MAX").asInstanceOf[`300000000`]
 
 inline def WORK: typings.screeps.WORK = js.Dynamic.global.selectDynamic("WORK").asInstanceOf[typings.screeps.WORK]

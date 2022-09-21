@@ -25,7 +25,7 @@ object ProductPermissions {
     
     inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    inline def setPermissionVarargs(value: ProductPermission*): Self = StObject.set(x, "permission", js.Array(value :_*))
+    inline def setPermissionVarargs(value: ProductPermission*): Self = StObject.set(x, "permission", js.Array(value*))
     
     inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     

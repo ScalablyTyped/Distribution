@@ -1,25 +1,27 @@
 package typings.jsJoda.mod
 
+import typings.jsJoda.anon.ToDate
+import typings.jsJoda.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def convert(temporal: typings.jsJoda.mod.LocalDate): typings.jsJoda.anon.ToDate = typings.jsJoda.mod.^.asInstanceOf[js.Dynamic].applyDynamic("convert")(temporal.asInstanceOf[js.Any]).asInstanceOf[typings.jsJoda.anon.ToDate]
-inline def convert(temporal: typings.jsJoda.mod.LocalDateTime): typings.jsJoda.anon.ToDate = typings.jsJoda.mod.^.asInstanceOf[js.Dynamic].applyDynamic("convert")(temporal.asInstanceOf[js.Any]).asInstanceOf[typings.jsJoda.anon.ToDate]
-inline def convert(temporal: typings.jsJoda.mod.LocalDateTime, zone: typings.jsJoda.mod.ZoneId): typings.jsJoda.anon.ToDate = (typings.jsJoda.mod.^.asInstanceOf[js.Dynamic].applyDynamic("convert")(temporal.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[typings.jsJoda.anon.ToDate]
-inline def convert(temporal: typings.jsJoda.mod.LocalDate, zone: typings.jsJoda.mod.ZoneId): typings.jsJoda.anon.ToDate = (typings.jsJoda.mod.^.asInstanceOf[js.Dynamic].applyDynamic("convert")(temporal.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[typings.jsJoda.anon.ToDate]
-inline def convert(temporal: typings.jsJoda.mod.ZonedDateTime): typings.jsJoda.anon.ToDate = typings.jsJoda.mod.^.asInstanceOf[js.Dynamic].applyDynamic("convert")(temporal.asInstanceOf[js.Any]).asInstanceOf[typings.jsJoda.anon.ToDate]
-inline def convert(temporal: typings.jsJoda.mod.ZonedDateTime, zone: typings.jsJoda.mod.ZoneId): typings.jsJoda.anon.ToDate = (typings.jsJoda.mod.^.asInstanceOf[js.Dynamic].applyDynamic("convert")(temporal.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[typings.jsJoda.anon.ToDate]
+inline def convert(temporal: LocalDate): ToDate = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(temporal.asInstanceOf[js.Any]).asInstanceOf[ToDate]
+inline def convert(temporal: LocalDateTime): ToDate = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(temporal.asInstanceOf[js.Any]).asInstanceOf[ToDate]
+inline def convert(temporal: LocalDateTime, zone: ZoneId): ToDate = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(temporal.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ToDate]
+inline def convert(temporal: LocalDate, zone: ZoneId): ToDate = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(temporal.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ToDate]
+inline def convert(temporal: ZonedDateTime): ToDate = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(temporal.asInstanceOf[js.Any]).asInstanceOf[ToDate]
+inline def convert(temporal: ZonedDateTime, zone: ZoneId): ToDate = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(temporal.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ToDate]
 
-inline def nativeJs(date: js.Any): typings.jsJoda.mod.TemporalAccessor = typings.jsJoda.mod.^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsJoda.mod.TemporalAccessor]
-inline def nativeJs(date: js.Any, zone: typings.jsJoda.mod.ZoneId): typings.jsJoda.mod.TemporalAccessor = (typings.jsJoda.mod.^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[typings.jsJoda.mod.TemporalAccessor]
-inline def nativeJs(date: typings.std.Date): typings.jsJoda.mod.TemporalAccessor = typings.jsJoda.mod.^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any]).asInstanceOf[typings.jsJoda.mod.TemporalAccessor]
-inline def nativeJs(date: typings.std.Date, zone: typings.jsJoda.mod.ZoneId): typings.jsJoda.mod.TemporalAccessor = (typings.jsJoda.mod.^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[typings.jsJoda.mod.TemporalAccessor]
+inline def nativeJs(date: js.Date): TemporalAccessor = ^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any]).asInstanceOf[TemporalAccessor]
+inline def nativeJs(date: js.Date, zone: ZoneId): TemporalAccessor = (^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[TemporalAccessor]
+inline def nativeJs(date: Any): TemporalAccessor = ^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any]).asInstanceOf[TemporalAccessor]
+inline def nativeJs(date: Any, zone: ZoneId): TemporalAccessor = (^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[TemporalAccessor]
 
-inline def use(plugin: js.Function): js.Any = typings.jsJoda.mod.^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugin.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def use(plugin: js.Function): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugin.asInstanceOf[js.Any]).asInstanceOf[Any]
 
 // TODO: js-joda doesn't have Chronology yet. Methods like `LocalDate.chronology()`
 // actually return an `IsoChronology` so Chronology is an alias type of that class
 // for now. Change this if Chronology is added.
-type Chronology = typings.jsJoda.mod.IsoChronology
+type Chronology = IsoChronology

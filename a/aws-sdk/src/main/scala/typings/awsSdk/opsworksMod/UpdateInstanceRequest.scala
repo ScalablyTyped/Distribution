@@ -113,7 +113,7 @@ object UpdateInstanceRequest {
     
     inline def setLayerIdsUndefined: Self = StObject.set(x, "LayerIds", js.undefined)
     
-    inline def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "LayerIds", js.Array(value :_*))
+    inline def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "LayerIds", js.Array(value*))
     
     inline def setOs(value: String): Self = StObject.set(x, "Os", value.asInstanceOf[js.Any])
     

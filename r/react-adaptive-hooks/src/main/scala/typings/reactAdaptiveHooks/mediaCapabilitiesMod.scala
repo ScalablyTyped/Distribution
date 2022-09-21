@@ -1,9 +1,10 @@
 package typings.reactAdaptiveHooks
 
-import typings.reactAdaptiveHooks.anon.Audio
 import typings.reactAdaptiveHooks.anon.MediaCapabilities
-import typings.reactAdaptiveHooks.anon.Type
-import typings.reactAdaptiveHooks.anon.Video
+import typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.`media-source`
+import typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.file
+import typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.record
+import typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.transmission
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +46,25 @@ object mediaCapabilitiesMod {
     }
   }
   
-  type MediaConfiguration = Type & (Audio | Video)
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactAdaptiveHooks.anon.audioAudioMediaConfigurat
+    - typings.reactAdaptiveHooks.anon.videoVideoMediaConfigurat
+  */
+  trait MediaConfiguration extends StObject
+  object MediaConfiguration {
+    
+    inline def audioAudioMediaConfigurat(audio: AudioMediaConfiguration, `type`: file | record | transmission | `media-source`): typings.reactAdaptiveHooks.anon.audioAudioMediaConfigurat = {
+      val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.reactAdaptiveHooks.anon.audioAudioMediaConfigurat]
+    }
+    
+    inline def videoVideoMediaConfigurat(`type`: file | record | transmission | `media-source`, video: VideoMediaConfiguration): typings.reactAdaptiveHooks.anon.videoVideoMediaConfigurat = {
+      val __obj = js.Dynamic.literal(video = video.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.reactAdaptiveHooks.anon.videoVideoMediaConfigurat]
+    }
+  }
   
   trait MediaConfigurationInfo extends StObject {
     

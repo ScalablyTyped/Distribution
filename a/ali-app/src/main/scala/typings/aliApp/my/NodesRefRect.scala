@@ -9,7 +9,7 @@ trait NodesRefRect
      with RectArea {
   
   /** 节点的dataset */
-  var dataset: js.Any
+  var dataset: Any
   
   /** 节点的ID */
   var id: String
@@ -18,7 +18,7 @@ object NodesRefRect {
   
   inline def apply(
     bottom: Double,
-    dataset: js.Any,
+    dataset: Any,
     height: Double,
     id: String,
     left: Double,
@@ -32,7 +32,7 @@ object NodesRefRect {
   
   extension [Self <: NodesRefRect](x: Self) {
     
-    inline def setDataset(value: js.Any): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: Any): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

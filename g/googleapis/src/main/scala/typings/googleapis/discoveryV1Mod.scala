@@ -2,10 +2,7 @@ package typings.googleapis
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.gaxios.commonMod.GaxiosPromise
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
+import typings.googleAuthLibrary.googleauthMod.JSONClient
 import typings.googleapis.anon.Accept
 import typings.googleapis.anon.DiscoveryLink
 import typings.googleapis.anon.Discriminant
@@ -13,13 +10,21 @@ import typings.googleapis.anon.Oauth2
 import typings.googleapis.anon.ParameterName
 import typings.googleapis.anon.Required
 import typings.googleapis.anon.X16
-import typings.googleapis.anon.`5`
+import typings.googleapis.anon.`8`
 import typings.googleapis.googleapisStrings.v1
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.googleapisCommon.mod.BaseExternalAccountClient
+import typings.googleapisCommon.mod.Compute
+import typings.googleapisCommon.mod.GoogleAuth
+import typings.googleapisCommon.mod.JWT
+import typings.googleapisCommon.mod.OAuth2Client
+import typings.googleapisCommon.mod.UserRefreshClient
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,25 +33,9 @@ object discoveryV1Mod {
   
   object discoveryV1 {
     
-    /**
-      * API Discovery Service
-      *
-      * Provides information about other Google APIs, such as what APIs are
-      * available, the resource, and method details for each API.
-      *
-      * @example
-      * const {google} = require('googleapis');
-      * const discovery = google.discovery('v1');
-      *
-      * @namespace discovery
-      * @type {Function}
-      * @version v1
-      * @variation v1
-      * @param {object=} options Options for Discovery
-      */
     @JSImport("googleapis/build/src/apis/discovery/v1", "discovery_v1.Discovery")
     @js.native
-    class Discovery protected () extends StObject {
+    open class Discovery protected () extends StObject {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
       
@@ -57,24 +46,11 @@ object discoveryV1Mod {
     
     @JSImport("googleapis/build/src/apis/discovery/v1", "discovery_v1.Resource$Apis")
     @js.native
-    class ResourceApis protected () extends StObject {
+    open class ResourceApis protected () extends StObject {
       def this(context: APIRequestContext) = this()
       
       var context: APIRequestContext = js.native
       
-      /**
-        * discovery.apis.getRest
-        * @desc Retrieve the description of a particular version of an api.
-        * @alias discovery.apis.getRest
-        * @memberOf! ()
-        *
-        * @param {object} params Parameters for request
-        * @param {string} params.api The name of the API.
-        * @param {string} params.version The version of the API.
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
-        */
       def getRest(): GaxiosPromise[SchemaRestDescription] = js.native
       def getRest(callback: BodyResponseCallback[SchemaRestDescription]): Unit = js.native
       def getRest(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRestDescription] = js.native
@@ -82,8 +58,8 @@ object discoveryV1Mod {
       def getRest(params: ParamsResourceApisGetrest, callback: BodyResponseCallback[SchemaRestDescription]): Unit = js.native
       def getRest(
         params: ParamsResourceApisGetrest,
-        options: BodyResponseCallback[SchemaRestDescription],
-        callback: BodyResponseCallback[SchemaRestDescription]
+        options: BodyResponseCallback[Readable | SchemaRestDescription],
+        callback: BodyResponseCallback[Readable | SchemaRestDescription]
       ): Unit = js.native
       def getRest(params: ParamsResourceApisGetrest, options: MethodOptions): GaxiosPromise[SchemaRestDescription] = js.native
       def getRest(
@@ -91,20 +67,94 @@ object discoveryV1Mod {
         options: MethodOptions,
         callback: BodyResponseCallback[SchemaRestDescription]
       ): Unit = js.native
-      
       /**
-        * discovery.apis.list
-        * @desc Retrieve the list of APIs supported at this endpoint.
-        * @alias discovery.apis.list
-        * @memberOf! ()
+        * Retrieve the description of a particular version of an api.
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/discovery.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
         *
-        * @param {object=} params Parameters for request
-        * @param {string=} params.name Only include APIs with the given name.
-        * @param {boolean=} params.preferred Return only the preferred version of an API.
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
+        * const {google} = require('googleapis');
+        * const discovery = google.discovery('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: [],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await discovery.apis.getRest({
+        *     // The name of the API.
+        *     api: 'placeholder-value',
+        *     // The version of the API.
+        *     version: 'placeholder-value',
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {
+        *   //   "auth": {},
+        *   //   "basePath": "my_basePath",
+        *   //   "baseUrl": "my_baseUrl",
+        *   //   "batchPath": "my_batchPath",
+        *   //   "canonicalName": "my_canonicalName",
+        *   //   "description": "my_description",
+        *   //   "discoveryVersion": "my_discoveryVersion",
+        *   //   "documentationLink": "my_documentationLink",
+        *   //   "etag": "my_etag",
+        *   //   "exponentialBackoffDefault": false,
+        *   //   "features": [],
+        *   //   "icons": {},
+        *   //   "id": "my_id",
+        *   //   "kind": "my_kind",
+        *   //   "labels": [],
+        *   //   "methods": {},
+        *   //   "name": "my_name",
+        *   //   "ownerDomain": "my_ownerDomain",
+        *   //   "ownerName": "my_ownerName",
+        *   //   "packagePath": "my_packagePath",
+        *   //   "parameters": {},
+        *   //   "protocol": "my_protocol",
+        *   //   "resources": {},
+        *   //   "revision": "my_revision",
+        *   //   "rootUrl": "my_rootUrl",
+        *   //   "schemas": {},
+        *   //   "servicePath": "my_servicePath",
+        *   //   "title": "my_title",
+        *   //   "version": "my_version",
+        *   //   "version_module": false
+        *   // }
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
         */
+      def getRest(params: ParamsResourceApisGetrest, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def getRest(
+        params: ParamsResourceApisGetrest,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
+      ): Unit = js.native
+      
       def list(): GaxiosPromise[SchemaDirectoryList] = js.native
       def list(callback: BodyResponseCallback[SchemaDirectoryList]): Unit = js.native
       def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDirectoryList] = js.native
@@ -112,14 +162,74 @@ object discoveryV1Mod {
       def list(params: ParamsResourceApisList, callback: BodyResponseCallback[SchemaDirectoryList]): Unit = js.native
       def list(
         params: ParamsResourceApisList,
-        options: BodyResponseCallback[SchemaDirectoryList],
-        callback: BodyResponseCallback[SchemaDirectoryList]
+        options: BodyResponseCallback[Readable | SchemaDirectoryList],
+        callback: BodyResponseCallback[Readable | SchemaDirectoryList]
       ): Unit = js.native
       def list(params: ParamsResourceApisList, options: MethodOptions): GaxiosPromise[SchemaDirectoryList] = js.native
       def list(
         params: ParamsResourceApisList,
         options: MethodOptions,
         callback: BodyResponseCallback[SchemaDirectoryList]
+      ): Unit = js.native
+      /**
+        * Retrieve the list of APIs supported at this endpoint.
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/discovery.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
+        *
+        * const {google} = require('googleapis');
+        * const discovery = google.discovery('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: [],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await discovery.apis.list({
+        *     // Only include APIs with the given name.
+        *     name: 'placeholder-value',
+        *     // Return only the preferred version of an API.
+        *     preferred: 'placeholder-value',
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {
+        *   //   "discoveryVersion": "my_discoveryVersion",
+        *   //   "items": [],
+        *   //   "kind": "my_kind"
+        *   // }
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
+        */
+      def list(params: ParamsResourceApisList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def list(
+        params: ParamsResourceApisList,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
       ): Unit = js.native
     }
     
@@ -152,11 +262,6 @@ object discoveryV1Mod {
       var api: js.UndefOr[String] = js.undefined
       
       /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-      
-      /**
         * The version of the API.
         */
       var version: js.UndefOr[String] = js.undefined
@@ -174,10 +279,6 @@ object discoveryV1Mod {
         
         inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
         
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-        
         inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
         
         inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
@@ -187,11 +288,6 @@ object discoveryV1Mod {
     trait ParamsResourceApisList
       extends StObject
          with StandardParameters {
-      
-      /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Only include APIs with the given name.
@@ -212,10 +308,6 @@ object discoveryV1Mod {
       
       extension [Self <: ParamsResourceApisList](x: Self) {
         
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-        
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
         inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -231,17 +323,17 @@ object discoveryV1Mod {
       /**
         * Indicate the version of the Discovery API used to generate this doc.
         */
-      var discoveryVersion: js.UndefOr[String] = js.undefined
+      var discoveryVersion: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The individual directory entries. One entry per api/version pair.
         */
-      var items: js.UndefOr[js.Array[DiscoveryLink]] = js.undefined
+      var items: js.UndefOr[js.Array[DiscoveryLink] | Null] = js.undefined
       
       /**
         * The kind for this response.
         */
-      var kind: js.UndefOr[String] = js.undefined
+      var kind: js.UndefOr[String | Null] = js.undefined
     }
     object SchemaDirectoryList {
       
@@ -254,15 +346,21 @@ object discoveryV1Mod {
         
         inline def setDiscoveryVersion(value: String): Self = StObject.set(x, "discoveryVersion", value.asInstanceOf[js.Any])
         
+        inline def setDiscoveryVersionNull: Self = StObject.set(x, "discoveryVersion", null)
+        
         inline def setDiscoveryVersionUndefined: Self = StObject.set(x, "discoveryVersion", js.undefined)
         
         inline def setItems(value: js.Array[DiscoveryLink]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
+        inline def setItemsNull: Self = StObject.set(x, "items", null)
+        
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: DiscoveryLink*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: DiscoveryLink*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        
+        inline def setKindNull: Self = StObject.set(x, "kind", null)
         
         inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       }
@@ -273,117 +371,103 @@ object discoveryV1Mod {
       /**
         * The default value of this property (if one exists).
         */
-      var default: js.UndefOr[String] = js.undefined
+      var default: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * A reference to another schema. The value of this property is the
-        * &quot;id&quot; of another schema.
+        * A reference to another schema. The value of this property is the "id" of another schema.
         */
       @JSName("$ref")
-      var $ref: js.UndefOr[String] = js.undefined
+      var $ref: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * If this is a schema for an object, this property is the schema for any
-        * additional properties with dynamic keys on this object.
+        * If this is a schema for an object, this property is the schema for any additional properties with dynamic keys on this object.
         */
       var additionalProperties: js.UndefOr[SchemaJsonSchema] = js.undefined
       
       /**
         * Additional information about this property.
         */
-      var annotations: js.UndefOr[Required] = js.undefined
+      var annotations: js.UndefOr[Required | Null] = js.undefined
       
       /**
         * A description of this object.
         */
-      var description: js.UndefOr[String] = js.undefined
+      var description: js.UndefOr[String | Null] = js.undefined
       
       /**
         * Values this parameter may take (if it is an enum).
         */
-      var `enum`: js.UndefOr[js.Array[String]] = js.undefined
+      var `enum`: js.UndefOr[js.Array[String] | Null] = js.undefined
       
       /**
-        * The descriptions for the enums. Each position maps to the corresponding
-        * value in the &quot;enum&quot; array.
+        * The descriptions for the enums. Each position maps to the corresponding value in the "enum" array.
         */
-      var enumDescriptions: js.UndefOr[js.Array[String]] = js.undefined
+      var enumDescriptions: js.UndefOr[js.Array[String] | Null] = js.undefined
       
       /**
-        * An additional regular expression or key that helps constrain the value.
-        * For more details see:
-        * http://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.23
+        * An additional regular expression or key that helps constrain the value. For more details see: http://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.23
         */
-      var format: js.UndefOr[String] = js.undefined
+      var format: js.UndefOr[String | Null] = js.undefined
       
       /**
         * Unique identifier for this schema.
         */
-      var id: js.UndefOr[String] = js.undefined
+      var id: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * If this is a schema for an array, this property is the schema for each
-        * element in the array.
+        * If this is a schema for an array, this property is the schema for each element in the array.
         */
       var items: js.UndefOr[SchemaJsonSchema] = js.undefined
       
       /**
         * Whether this parameter goes in the query or the path for REST requests.
         */
-      var location: js.UndefOr[String] = js.undefined
+      var location: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The maximum value of this parameter.
         */
-      var maximum: js.UndefOr[String] = js.undefined
+      var maximum: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The minimum value of this parameter.
         */
-      var minimum: js.UndefOr[String] = js.undefined
+      var minimum: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * The regular expression this parameter must conform to. Uses Java 6 regex
-        * format:
-        * http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html
+        * The regular expression this parameter must conform to. Uses Java 6 regex format: http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html
         */
-      var pattern: js.UndefOr[String] = js.undefined
+      var pattern: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * If this is a schema for an object, list the schema for each property of
-        * this object.
+        * If this is a schema for an object, list the schema for each property of this object.
         */
-      var properties: js.UndefOr[StringDictionary[SchemaJsonSchema]] = js.undefined
+      var properties: js.UndefOr[StringDictionary[SchemaJsonSchema] | Null] = js.undefined
       
       /**
-        * The value is read-only, generated by the service. The value cannot be
-        * modified by the client. If the value is included in a POST, PUT, or PATCH
-        * request, it is ignored by the service.
+        * The value is read-only, generated by the service. The value cannot be modified by the client. If the value is included in a POST, PUT, or PATCH request, it is ignored by the service.
         */
-      var readOnly: js.UndefOr[Boolean] = js.undefined
+      var readOnly: js.UndefOr[Boolean | Null] = js.undefined
       
       /**
         * Whether this parameter may appear multiple times.
         */
-      var repeated: js.UndefOr[Boolean] = js.undefined
+      var repeated: js.UndefOr[Boolean | Null] = js.undefined
       
       /**
         * Whether the parameter is required.
         */
-      var required: js.UndefOr[Boolean] = js.undefined
+      var required: js.UndefOr[Boolean | Null] = js.undefined
       
       /**
-        * The value type for this schema. A list of values can be found here:
-        * http://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.1
+        * The value type for this schema. A list of values can be found here: http://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.1
         */
-      var `type`: js.UndefOr[String] = js.undefined
+      var `type`: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * In a variant data type, the value of one property is used to determine
-        * how to interpret the entire entity. Its value must exist in a map of
-        * descriminant values to schema names.
+        * In a variant data type, the value of one property is used to determine how to interpret the entire entity. Its value must exist in a map of descriminant values to schema names.
         */
-      var variant: js.UndefOr[Discriminant] = js.undefined
+      var variant: js.UndefOr[Discriminant | Null] = js.undefined
     }
     object SchemaJsonSchema {
       
@@ -396,6 +480,8 @@ object discoveryV1Mod {
         
         inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
         
+        inline def set$refNull: Self = StObject.set(x, "$ref", null)
+        
         inline def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
         
         inline def setAdditionalProperties(value: SchemaJsonSchema): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
@@ -404,13 +490,19 @@ object discoveryV1Mod {
         
         inline def setAnnotations(value: Required): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
         
+        inline def setAnnotationsNull: Self = StObject.set(x, "annotations", null)
+        
         inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
         
         inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
+        inline def setDefaultNull: Self = StObject.set(x, "default", null)
+        
         inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        
+        inline def setDescriptionNull: Self = StObject.set(x, "description", null)
         
         inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
@@ -418,19 +510,27 @@ object discoveryV1Mod {
         
         inline def setEnumDescriptions(value: js.Array[String]): Self = StObject.set(x, "enumDescriptions", value.asInstanceOf[js.Any])
         
+        inline def setEnumDescriptionsNull: Self = StObject.set(x, "enumDescriptions", null)
+        
         inline def setEnumDescriptionsUndefined: Self = StObject.set(x, "enumDescriptions", js.undefined)
         
-        inline def setEnumDescriptionsVarargs(value: String*): Self = StObject.set(x, "enumDescriptions", js.Array(value :_*))
+        inline def setEnumDescriptionsVarargs(value: String*): Self = StObject.set(x, "enumDescriptions", js.Array(value*))
+        
+        inline def setEnumNull: Self = StObject.set(x, "enum", null)
         
         inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
         
-        inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+        inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value*))
         
         inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+        
+        inline def setFormatNull: Self = StObject.set(x, "format", null)
         
         inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        
+        inline def setIdNull: Self = StObject.set(x, "id", null)
         
         inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
@@ -440,41 +540,61 @@ object discoveryV1Mod {
         
         inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
+        inline def setLocationNull: Self = StObject.set(x, "location", null)
+        
         inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
         
         inline def setMaximum(value: String): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+        
+        inline def setMaximumNull: Self = StObject.set(x, "maximum", null)
         
         inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
         
         inline def setMinimum(value: String): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
         
+        inline def setMinimumNull: Self = StObject.set(x, "minimum", null)
+        
         inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
         
         inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+        
+        inline def setPatternNull: Self = StObject.set(x, "pattern", null)
         
         inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
         
         inline def setProperties(value: StringDictionary[SchemaJsonSchema]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
         
+        inline def setPropertiesNull: Self = StObject.set(x, "properties", null)
+        
         inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
         
         inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+        
+        inline def setReadOnlyNull: Self = StObject.set(x, "readOnly", null)
         
         inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
         
         inline def setRepeated(value: Boolean): Self = StObject.set(x, "repeated", value.asInstanceOf[js.Any])
         
+        inline def setRepeatedNull: Self = StObject.set(x, "repeated", null)
+        
         inline def setRepeatedUndefined: Self = StObject.set(x, "repeated", js.undefined)
         
         inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+        
+        inline def setRequiredNull: Self = StObject.set(x, "required", null)
         
         inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
+        inline def setTypeNull: Self = StObject.set(x, "type", null)
+        
         inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         
         inline def setVariant(value: Discriminant): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+        
+        inline def setVariantNull: Self = StObject.set(x, "variant", null)
         
         inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       }
@@ -485,152 +605,149 @@ object discoveryV1Mod {
       /**
         * Authentication information.
         */
-      var auth: js.UndefOr[Oauth2] = js.undefined
+      var auth: js.UndefOr[Oauth2 | Null] = js.undefined
       
       /**
         * [DEPRECATED] The base path for REST requests.
         */
-      var basePath: js.UndefOr[String] = js.undefined
+      var basePath: js.UndefOr[String | Null] = js.undefined
       
       /**
         * [DEPRECATED] The base URL for REST requests.
         */
-      var baseUrl: js.UndefOr[String] = js.undefined
+      var baseUrl: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The path for REST batch requests.
         */
-      var batchPath: js.UndefOr[String] = js.undefined
+      var batchPath: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * Indicates how the API name should be capitalized and split into various
-        * parts. Useful for generating pretty class names.
+        * Indicates how the API name should be capitalized and split into various parts. Useful for generating pretty class names.
         */
-      var canonicalName: js.UndefOr[String] = js.undefined
+      var canonicalName: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The description of this API.
         */
-      var description: js.UndefOr[String] = js.undefined
+      var description: js.UndefOr[String | Null] = js.undefined
       
       /**
         * Indicate the version of the Discovery API used to generate this doc.
         */
-      var discoveryVersion: js.UndefOr[String] = js.undefined
+      var discoveryVersion: js.UndefOr[String | Null] = js.undefined
       
       /**
         * A link to human readable documentation for the API.
         */
-      var documentationLink: js.UndefOr[String] = js.undefined
+      var documentationLink: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The ETag for this response.
         */
-      var etag: js.UndefOr[String] = js.undefined
+      var etag: js.UndefOr[String | Null] = js.undefined
       
       /**
         * Enable exponential backoff for suitable methods in the generated clients.
         */
-      var exponentialBackoffDefault: js.UndefOr[Boolean] = js.undefined
+      var exponentialBackoffDefault: js.UndefOr[Boolean | Null] = js.undefined
       
       /**
         * A list of supported features for this API.
         */
-      var features: js.UndefOr[js.Array[String]] = js.undefined
+      var features: js.UndefOr[js.Array[String] | Null] = js.undefined
       
       /**
         * Links to 16x16 and 32x32 icons representing the API.
         */
-      var icons: js.UndefOr[X16] = js.undefined
+      var icons: js.UndefOr[X16 | Null] = js.undefined
       
       /**
         * The ID of this API.
         */
-      var id: js.UndefOr[String] = js.undefined
+      var id: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The kind for this response.
         */
-      var kind: js.UndefOr[String] = js.undefined
+      var kind: js.UndefOr[String | Null] = js.undefined
       
       /**
         * Labels for the status of this API, such as labs or deprecated.
         */
-      var labels: js.UndefOr[js.Array[String]] = js.undefined
+      var labels: js.UndefOr[js.Array[String] | Null] = js.undefined
       
       /**
         * API-level methods for this API.
         */
-      var methods: js.UndefOr[StringDictionary[SchemaRestMethod]] = js.undefined
+      var methods: js.UndefOr[StringDictionary[SchemaRestMethod] | Null] = js.undefined
       
       /**
         * The name of this API.
         */
-      var name: js.UndefOr[String] = js.undefined
+      var name: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * The domain of the owner of this API. Together with the ownerName and a
-        * packagePath values, this can be used to generate a library for this API
-        * which would have a unique fully qualified name.
+        * The domain of the owner of this API. Together with the ownerName and a packagePath values, this can be used to generate a library for this API which would have a unique fully qualified name.
         */
-      var ownerDomain: js.UndefOr[String] = js.undefined
+      var ownerDomain: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The name of the owner of this API. See ownerDomain.
         */
-      var ownerName: js.UndefOr[String] = js.undefined
+      var ownerName: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The package of the owner of this API. See ownerDomain.
         */
-      var packagePath: js.UndefOr[String] = js.undefined
+      var packagePath: js.UndefOr[String | Null] = js.undefined
       
       /**
         * Common parameters that apply across all apis.
         */
-      var parameters: js.UndefOr[StringDictionary[SchemaJsonSchema]] = js.undefined
+      var parameters: js.UndefOr[StringDictionary[SchemaJsonSchema] | Null] = js.undefined
       
       /**
         * The protocol described by this document.
         */
-      var protocol: js.UndefOr[String] = js.undefined
+      var protocol: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The resources in this API.
         */
-      var resources: js.UndefOr[StringDictionary[SchemaRestResource]] = js.undefined
+      var resources: js.UndefOr[StringDictionary[SchemaRestResource] | Null] = js.undefined
       
       /**
         * The version of this API.
         */
-      var revision: js.UndefOr[String] = js.undefined
+      var revision: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The root URL under which all API services live.
         */
-      var rootUrl: js.UndefOr[String] = js.undefined
+      var rootUrl: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The schemas for this API.
         */
-      var schemas: js.UndefOr[StringDictionary[SchemaJsonSchema]] = js.undefined
+      var schemas: js.UndefOr[StringDictionary[SchemaJsonSchema] | Null] = js.undefined
       
       /**
         * The base path for all REST requests.
         */
-      var servicePath: js.UndefOr[String] = js.undefined
+      var servicePath: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The title of this API.
         */
-      var title: js.UndefOr[String] = js.undefined
+      var title: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The version of this API.
         */
-      var version: js.UndefOr[String] = js.undefined
+      var version: js.UndefOr[String | Null] = js.undefined
       
-      var version_module: js.UndefOr[Boolean] = js.undefined
+      var version_module: js.UndefOr[Boolean | Null] = js.undefined
     }
     object SchemaRestDescription {
       
@@ -643,125 +760,185 @@ object discoveryV1Mod {
         
         inline def setAuth(value: Oauth2): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
+        inline def setAuthNull: Self = StObject.set(x, "auth", null)
+        
         inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
         inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+        
+        inline def setBasePathNull: Self = StObject.set(x, "basePath", null)
         
         inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
         
         inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
         
+        inline def setBaseUrlNull: Self = StObject.set(x, "baseUrl", null)
+        
         inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
         
         inline def setBatchPath(value: String): Self = StObject.set(x, "batchPath", value.asInstanceOf[js.Any])
+        
+        inline def setBatchPathNull: Self = StObject.set(x, "batchPath", null)
         
         inline def setBatchPathUndefined: Self = StObject.set(x, "batchPath", js.undefined)
         
         inline def setCanonicalName(value: String): Self = StObject.set(x, "canonicalName", value.asInstanceOf[js.Any])
         
+        inline def setCanonicalNameNull: Self = StObject.set(x, "canonicalName", null)
+        
         inline def setCanonicalNameUndefined: Self = StObject.set(x, "canonicalName", js.undefined)
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        
+        inline def setDescriptionNull: Self = StObject.set(x, "description", null)
         
         inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
         inline def setDiscoveryVersion(value: String): Self = StObject.set(x, "discoveryVersion", value.asInstanceOf[js.Any])
         
+        inline def setDiscoveryVersionNull: Self = StObject.set(x, "discoveryVersion", null)
+        
         inline def setDiscoveryVersionUndefined: Self = StObject.set(x, "discoveryVersion", js.undefined)
         
         inline def setDocumentationLink(value: String): Self = StObject.set(x, "documentationLink", value.asInstanceOf[js.Any])
+        
+        inline def setDocumentationLinkNull: Self = StObject.set(x, "documentationLink", null)
         
         inline def setDocumentationLinkUndefined: Self = StObject.set(x, "documentationLink", js.undefined)
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
+        inline def setEtagNull: Self = StObject.set(x, "etag", null)
+        
         inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
         
         inline def setExponentialBackoffDefault(value: Boolean): Self = StObject.set(x, "exponentialBackoffDefault", value.asInstanceOf[js.Any])
+        
+        inline def setExponentialBackoffDefaultNull: Self = StObject.set(x, "exponentialBackoffDefault", null)
         
         inline def setExponentialBackoffDefaultUndefined: Self = StObject.set(x, "exponentialBackoffDefault", js.undefined)
         
         inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
         
+        inline def setFeaturesNull: Self = StObject.set(x, "features", null)
+        
         inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
         
-        inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+        inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value*))
         
         inline def setIcons(value: X16): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+        
+        inline def setIconsNull: Self = StObject.set(x, "icons", null)
         
         inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
+        inline def setIdNull: Self = StObject.set(x, "id", null)
+        
         inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        
+        inline def setKindNull: Self = StObject.set(x, "kind", null)
         
         inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
         inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
         
+        inline def setLabelsNull: Self = StObject.set(x, "labels", null)
+        
         inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
         
-        inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+        inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value*))
         
         inline def setMethods(value: StringDictionary[SchemaRestMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+        
+        inline def setMethodsNull: Self = StObject.set(x, "methods", null)
         
         inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
+        inline def setNameNull: Self = StObject.set(x, "name", null)
+        
         inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
         inline def setOwnerDomain(value: String): Self = StObject.set(x, "ownerDomain", value.asInstanceOf[js.Any])
+        
+        inline def setOwnerDomainNull: Self = StObject.set(x, "ownerDomain", null)
         
         inline def setOwnerDomainUndefined: Self = StObject.set(x, "ownerDomain", js.undefined)
         
         inline def setOwnerName(value: String): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
         
+        inline def setOwnerNameNull: Self = StObject.set(x, "ownerName", null)
+        
         inline def setOwnerNameUndefined: Self = StObject.set(x, "ownerName", js.undefined)
         
         inline def setPackagePath(value: String): Self = StObject.set(x, "packagePath", value.asInstanceOf[js.Any])
+        
+        inline def setPackagePathNull: Self = StObject.set(x, "packagePath", null)
         
         inline def setPackagePathUndefined: Self = StObject.set(x, "packagePath", js.undefined)
         
         inline def setParameters(value: StringDictionary[SchemaJsonSchema]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
         
+        inline def setParametersNull: Self = StObject.set(x, "parameters", null)
+        
         inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
         
         inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+        
+        inline def setProtocolNull: Self = StObject.set(x, "protocol", null)
         
         inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
         
         inline def setResources(value: StringDictionary[SchemaRestResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
         
+        inline def setResourcesNull: Self = StObject.set(x, "resources", null)
+        
         inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
         
         inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+        
+        inline def setRevisionNull: Self = StObject.set(x, "revision", null)
         
         inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
         
         inline def setRootUrl(value: String): Self = StObject.set(x, "rootUrl", value.asInstanceOf[js.Any])
         
+        inline def setRootUrlNull: Self = StObject.set(x, "rootUrl", null)
+        
         inline def setRootUrlUndefined: Self = StObject.set(x, "rootUrl", js.undefined)
         
         inline def setSchemas(value: StringDictionary[SchemaJsonSchema]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+        
+        inline def setSchemasNull: Self = StObject.set(x, "schemas", null)
         
         inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
         
         inline def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
         
+        inline def setServicePathNull: Self = StObject.set(x, "servicePath", null)
+        
         inline def setServicePathUndefined: Self = StObject.set(x, "servicePath", js.undefined)
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        
+        inline def setTitleNull: Self = StObject.set(x, "title", null)
         
         inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
         inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
         
+        inline def setVersionNull: Self = StObject.set(x, "version", null)
+        
         inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
         
         inline def setVersion_module(value: Boolean): Self = StObject.set(x, "version_module", value.asInstanceOf[js.Any])
+        
+        inline def setVersion_moduleNull: Self = StObject.set(x, "version_module", null)
         
         inline def setVersion_moduleUndefined: Self = StObject.set(x, "version_module", js.undefined)
       }
@@ -772,84 +949,82 @@ object discoveryV1Mod {
       /**
         * Description of this method.
         */
-      var description: js.UndefOr[String] = js.undefined
+      var description: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * Whether this method requires an ETag to be specified. The ETag is sent as
-        * an HTTP If-Match or If-None-Match header.
+        * Whether this method requires an ETag to be specified. The ETag is sent as an HTTP If-Match or If-None-Match header.
         */
-      var etagRequired: js.UndefOr[Boolean] = js.undefined
+      var etagRequired: js.UndefOr[Boolean | Null] = js.undefined
+      
+      /**
+        * The URI path of this REST method in (RFC 6570) format without level 2 features ({+var\}). Supplementary to the path property.
+        */
+      var flatPath: js.UndefOr[String | Null] = js.undefined
       
       /**
         * HTTP method used by this method.
         */
-      var httpMethod: js.UndefOr[String] = js.undefined
+      var httpMethod: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * A unique ID for this method. This property can be used to match methods
-        * between different versions of Discovery.
+        * A unique ID for this method. This property can be used to match methods between different versions of Discovery.
         */
-      var id: js.UndefOr[String] = js.undefined
+      var id: js.UndefOr[String | Null] = js.undefined
       
       /**
         * Media upload parameters.
         */
-      var mediaUpload: js.UndefOr[Accept] = js.undefined
+      var mediaUpload: js.UndefOr[Accept | Null] = js.undefined
       
       /**
-        * Ordered list of required parameters, serves as a hint to clients on how
-        * to structure their method signatures. The array is ordered such that the
-        * &quot;most-significant&quot; parameter appears first.
+        * Ordered list of required parameters, serves as a hint to clients on how to structure their method signatures. The array is ordered such that the "most-significant" parameter appears first.
         */
-      var parameterOrder: js.UndefOr[js.Array[String]] = js.undefined
+      var parameterOrder: js.UndefOr[js.Array[String] | Null] = js.undefined
       
       /**
         * Details for all parameters in this method.
         */
-      var parameters: js.UndefOr[StringDictionary[SchemaJsonSchema]] = js.undefined
+      var parameters: js.UndefOr[StringDictionary[SchemaJsonSchema] | Null] = js.undefined
       
       /**
-        * The URI path of this REST method. Should be used in conjunction with the
-        * basePath property at the api-level.
+        * The URI path of this REST method. Should be used in conjunction with the basePath property at the api-level.
         */
-      var path: js.UndefOr[String] = js.undefined
+      var path: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The schema for the request.
         */
-      var request: js.UndefOr[ParameterName] = js.undefined
+      var request: js.UndefOr[ParameterName | Null] = js.undefined
       
       /**
         * The schema for the response.
         */
-      var response: js.UndefOr[`5`] = js.undefined
+      var response: js.UndefOr[`8` | Null] = js.undefined
       
       /**
         * OAuth 2.0 scopes applicable to this method.
         */
-      var scopes: js.UndefOr[js.Array[String]] = js.undefined
+      var scopes: js.UndefOr[js.Array[String] | Null] = js.undefined
       
       /**
         * Whether this method supports media downloads.
         */
-      var supportsMediaDownload: js.UndefOr[Boolean] = js.undefined
+      var supportsMediaDownload: js.UndefOr[Boolean | Null] = js.undefined
       
       /**
         * Whether this method supports media uploads.
         */
-      var supportsMediaUpload: js.UndefOr[Boolean] = js.undefined
+      var supportsMediaUpload: js.UndefOr[Boolean | Null] = js.undefined
       
       /**
         * Whether this method supports subscriptions.
         */
-      var supportsSubscription: js.UndefOr[Boolean] = js.undefined
+      var supportsSubscription: js.UndefOr[Boolean | Null] = js.undefined
       
       /**
-        * Indicates that downloads from this method should use the download service
-        * URL (i.e. &quot;/download&quot;). Only applies if the method supports
-        * media download.
+        * Indicates that downloads from this method should use the download service URL (i.e. "/download"). Only applies if the method supports media download.
         */
-      var useMediaDownloadService: js.UndefOr[Boolean] = js.undefined
+      var useMediaDownloadService: js.UndefOr[Boolean | Null] = js.undefined
     }
     object SchemaRestMethod {
       
@@ -862,65 +1037,101 @@ object discoveryV1Mod {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
+        inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+        
         inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
         inline def setEtagRequired(value: Boolean): Self = StObject.set(x, "etagRequired", value.asInstanceOf[js.Any])
         
+        inline def setEtagRequiredNull: Self = StObject.set(x, "etagRequired", null)
+        
         inline def setEtagRequiredUndefined: Self = StObject.set(x, "etagRequired", js.undefined)
         
+        inline def setFlatPath(value: String): Self = StObject.set(x, "flatPath", value.asInstanceOf[js.Any])
+        
+        inline def setFlatPathNull: Self = StObject.set(x, "flatPath", null)
+        
+        inline def setFlatPathUndefined: Self = StObject.set(x, "flatPath", js.undefined)
+        
         inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+        
+        inline def setHttpMethodNull: Self = StObject.set(x, "httpMethod", null)
         
         inline def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
+        inline def setIdNull: Self = StObject.set(x, "id", null)
+        
         inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
         inline def setMediaUpload(value: Accept): Self = StObject.set(x, "mediaUpload", value.asInstanceOf[js.Any])
+        
+        inline def setMediaUploadNull: Self = StObject.set(x, "mediaUpload", null)
         
         inline def setMediaUploadUndefined: Self = StObject.set(x, "mediaUpload", js.undefined)
         
         inline def setParameterOrder(value: js.Array[String]): Self = StObject.set(x, "parameterOrder", value.asInstanceOf[js.Any])
         
+        inline def setParameterOrderNull: Self = StObject.set(x, "parameterOrder", null)
+        
         inline def setParameterOrderUndefined: Self = StObject.set(x, "parameterOrder", js.undefined)
         
-        inline def setParameterOrderVarargs(value: String*): Self = StObject.set(x, "parameterOrder", js.Array(value :_*))
+        inline def setParameterOrderVarargs(value: String*): Self = StObject.set(x, "parameterOrder", js.Array(value*))
         
         inline def setParameters(value: StringDictionary[SchemaJsonSchema]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+        
+        inline def setParametersNull: Self = StObject.set(x, "parameters", null)
         
         inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
         
         inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
+        inline def setPathNull: Self = StObject.set(x, "path", null)
+        
         inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
         inline def setRequest(value: ParameterName): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
+        inline def setRequestNull: Self = StObject.set(x, "request", null)
+        
         inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
         
-        inline def setResponse(value: `5`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: `8`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        
+        inline def setResponseNull: Self = StObject.set(x, "response", null)
         
         inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
         
         inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
         
+        inline def setScopesNull: Self = StObject.set(x, "scopes", null)
+        
         inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
         
-        inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+        inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
         
         inline def setSupportsMediaDownload(value: Boolean): Self = StObject.set(x, "supportsMediaDownload", value.asInstanceOf[js.Any])
+        
+        inline def setSupportsMediaDownloadNull: Self = StObject.set(x, "supportsMediaDownload", null)
         
         inline def setSupportsMediaDownloadUndefined: Self = StObject.set(x, "supportsMediaDownload", js.undefined)
         
         inline def setSupportsMediaUpload(value: Boolean): Self = StObject.set(x, "supportsMediaUpload", value.asInstanceOf[js.Any])
         
+        inline def setSupportsMediaUploadNull: Self = StObject.set(x, "supportsMediaUpload", null)
+        
         inline def setSupportsMediaUploadUndefined: Self = StObject.set(x, "supportsMediaUpload", js.undefined)
         
         inline def setSupportsSubscription(value: Boolean): Self = StObject.set(x, "supportsSubscription", value.asInstanceOf[js.Any])
         
+        inline def setSupportsSubscriptionNull: Self = StObject.set(x, "supportsSubscription", null)
+        
         inline def setSupportsSubscriptionUndefined: Self = StObject.set(x, "supportsSubscription", js.undefined)
         
         inline def setUseMediaDownloadService(value: Boolean): Self = StObject.set(x, "useMediaDownloadService", value.asInstanceOf[js.Any])
+        
+        inline def setUseMediaDownloadServiceNull: Self = StObject.set(x, "useMediaDownloadService", null)
         
         inline def setUseMediaDownloadServiceUndefined: Self = StObject.set(x, "useMediaDownloadService", js.undefined)
       }
@@ -931,12 +1142,12 @@ object discoveryV1Mod {
       /**
         * Methods on this resource.
         */
-      var methods: js.UndefOr[StringDictionary[SchemaRestMethod]] = js.undefined
+      var methods: js.UndefOr[StringDictionary[SchemaRestMethod] | Null] = js.undefined
       
       /**
         * Sub-resources on this resource.
         */
-      var resources: js.UndefOr[StringDictionary[SchemaRestResource]] = js.undefined
+      var resources: js.UndefOr[StringDictionary[SchemaRestResource] | Null] = js.undefined
     }
     object SchemaRestResource {
       
@@ -949,9 +1160,13 @@ object discoveryV1Mod {
         
         inline def setMethods(value: StringDictionary[SchemaRestMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
         
+        inline def setMethodsNull: Self = StObject.set(x, "methods", null)
+        
         inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
         
         inline def setResources(value: StringDictionary[SchemaRestResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+        
+        inline def setResourcesNull: Self = StObject.set(x, "resources", null)
         
         inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       }
@@ -965,14 +1180,19 @@ object discoveryV1Mod {
       var alt: js.UndefOr[String] = js.undefined
       
       /**
+        * Auth client or API Key for the request
+        */
+      var auth: js.UndefOr[
+            String | OAuth2Client | JWT | Compute | UserRefreshClient | BaseExternalAccountClient | GoogleAuth[JSONClient]
+          ] = js.undefined
+      
+      /**
         * Selector specifying which fields to include in a partial response.
         */
       var fields: js.UndefOr[String] = js.undefined
       
       /**
-        * API key. Your API key identifies your project and provides you with API
-        * access, quota, and reports. Required unless you provide an OAuth 2.0
-        * token.
+        * API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.
         */
       var key: js.UndefOr[String] = js.undefined
       
@@ -987,8 +1207,7 @@ object discoveryV1Mod {
       var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
-        * An opaque string that represents a user for quota purposes. Must not
-        * exceed 40 characters.
+        * An opaque string that represents a user for quota purposes. Must not exceed 40 characters.
         */
       var quotaUser: js.UndefOr[String] = js.undefined
       
@@ -1009,6 +1228,12 @@ object discoveryV1Mod {
         inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         
         inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+        
+        inline def setAuth(
+          value: String | OAuth2Client | JWT | Compute | UserRefreshClient | BaseExternalAccountClient | GoogleAuth[JSONClient]
+        ): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         

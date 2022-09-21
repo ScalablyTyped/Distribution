@@ -1,7 +1,7 @@
 
 # Scala.js typings for filepond
 
-Typings are for version 4.23.1
+Typings are for version 4.30.4
 
 ## Library description:
 FilePond, Where files go to stretch their bits.
@@ -10,10 +10,10 @@ FilePond, Where files go to stretch their bits.
 | ------------------ | :-------------: |
 | Full name          | filepond |
 | Keywords           | javascript, file, upload, drag, drop, browse, paste, image, preview |
-| # releases         | 92 |
-| # dependents       | 58 |
-| # downloads        | 2053920 |
-| # stars            | 1 |
+| # releases         | 34 |
+| # dependents       | 0.0 |
+| # downloads        | 290254.6666666667 |
+| # stars            | 12608.0 |
 
 ## Links
 - [Homepage](https://pqina.nl/filepond/)

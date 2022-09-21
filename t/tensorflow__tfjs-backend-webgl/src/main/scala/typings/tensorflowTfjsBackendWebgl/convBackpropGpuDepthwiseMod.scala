@@ -10,7 +10,7 @@ object convBackpropGpuDepthwiseMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/conv_backprop_gpu_depthwise", "DepthwiseConv2DDerFilterProgram")
   @js.native
-  class DepthwiseConv2DDerFilterProgram protected ()
+  open class DepthwiseConv2DDerFilterProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(convInfo: Conv2DInfo) = this()
@@ -27,7 +27,7 @@ object convBackpropGpuDepthwiseMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/conv_backprop_gpu_depthwise", "DepthwiseConv2DDerInputProgram")
   @js.native
-  class DepthwiseConv2DDerInputProgram protected ()
+  open class DepthwiseConv2DDerInputProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(convInfo: Conv2DInfo) = this()

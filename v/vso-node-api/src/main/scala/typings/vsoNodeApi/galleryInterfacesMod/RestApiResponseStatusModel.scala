@@ -9,7 +9,7 @@ trait RestApiResponseStatusModel extends StObject {
   /**
     * Gets or sets the operation details
     */
-  var operationDetails: js.Any
+  var operationDetails: Any
   
   /**
     * Gets or sets the operation id
@@ -34,7 +34,7 @@ trait RestApiResponseStatusModel extends StObject {
 object RestApiResponseStatusModel {
   
   inline def apply(
-    operationDetails: js.Any,
+    operationDetails: Any,
     operationId: String,
     percentageCompleted: Double,
     status: RestApiResponseStatus,
@@ -46,7 +46,7 @@ object RestApiResponseStatusModel {
   
   extension [Self <: RestApiResponseStatusModel](x: Self) {
     
-    inline def setOperationDetails(value: js.Any): Self = StObject.set(x, "operationDetails", value.asInstanceOf[js.Any])
+    inline def setOperationDetails(value: Any): Self = StObject.set(x, "operationDetails", value.asInstanceOf[js.Any])
     
     inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     

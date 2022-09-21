@@ -82,6 +82,11 @@ trait CampaignResponse extends StObject {
   var Name: js.UndefOr[string] = js.undefined
   
   /**
+    * Defines the priority of the campaign, used to decide the order of messages displayed to user if there are multiple messages scheduled to be displayed at the same moment.
+    */
+  var Priority: js.UndefOr[integer] = js.undefined
+  
+  /**
     * The schedule settings for the campaign.
     */
   var Schedule: js.UndefOr[typings.awsSdk.pinpointMod.Schedule] = js.undefined
@@ -147,7 +152,7 @@ object CampaignResponse {
     
     inline def setAdditionalTreatmentsUndefined: Self = StObject.set(x, "AdditionalTreatments", js.undefined)
     
-    inline def setAdditionalTreatmentsVarargs(value: TreatmentResource*): Self = StObject.set(x, "AdditionalTreatments", js.Array(value :_*))
+    inline def setAdditionalTreatmentsVarargs(value: TreatmentResource*): Self = StObject.set(x, "AdditionalTreatments", js.Array(value*))
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
@@ -194,6 +199,10 @@ object CampaignResponse {
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setPriority(value: integer): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
     inline def setSchedule(value: Schedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     

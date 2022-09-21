@@ -22,6 +22,6 @@ object AppMakerSqlSetupNotification {
     
     inline def setRequestInfoUndefined: Self = StObject.set(x, "requestInfo", js.undefined)
     
-    inline def setRequestInfoVarargs(value: RequestInfo*): Self = StObject.set(x, "requestInfo", js.Array(value :_*))
+    inline def setRequestInfoVarargs(value: RequestInfo*): Self = StObject.set(x, "requestInfo", js.Array(value*))
   }
 }

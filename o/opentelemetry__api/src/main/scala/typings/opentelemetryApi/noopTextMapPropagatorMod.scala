@@ -1,27 +1,23 @@
 package typings.opentelemetryApi
 
-import typings.opentelemetryApi.getterMod.GetterFunction
-import typings.opentelemetryApi.setterMod.SetterFunction
+import typings.opentelemetryApi.contextTypesMod.Context
+import typings.opentelemetryApi.textMapPropagatorMod.TextMapGetter
 import typings.opentelemetryApi.textMapPropagatorMod.TextMapPropagator
-import typings.opentelemetryContextBase.mod.Context
+import typings.opentelemetryApi.textMapPropagatorMod.TextMapSetter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noopTextMapPropagatorMod {
   
-  @JSImport("@opentelemetry/api/build/src/context/propagation/NoopTextMapPropagator", "NOOP_TEXT_MAP_PROPAGATOR")
+  @JSImport("@opentelemetry/api/build/src/propagation/NoopTextMapPropagator", "NoopTextMapPropagator")
   @js.native
-  val NOOP_TEXT_MAP_PROPAGATOR: NoopTextMapPropagator = js.native
-  
-  @JSImport("@opentelemetry/api/build/src/context/propagation/NoopTextMapPropagator", "NoopTextMapPropagator")
-  @js.native
-  class NoopTextMapPropagator ()
+  open class NoopTextMapPropagator ()
     extends StObject
-       with TextMapPropagator {
+       with TextMapPropagator[Any] {
     
     /** Noop extract function does nothing and returns the input context */
-    def extract(context: Context, carrier: js.Any, getter: js.Function): Context = js.native
+    def extract(context: Context, _carrier: Any): Context = js.native
     /**
       * Given a `Context` and a carrier, extract context values from a
       * carrier and return a new context, created from the old context, with the
@@ -31,14 +27,20 @@ object noopTextMapPropagatorMod {
       *     the wire.
       * @param carrier the carrier of propagation fields, such as http request
       *     headers.
-      * @param getter a function which accepts a carrier and a key, and returns
-      *     the value from the carrier identified by the key.
+      * @param getter an optional {@link TextMapGetter}. If undefined, keys will be all
+      *     own properties, and keys will be accessed by direct object access.
       */
     /* CompleteClass */
-    override def extract(context: Context, carrier: js.Any, getter: GetterFunction[js.Any]): Context = js.native
+    override def extract(context: Context, carrier: Any, getter: TextMapGetter[Any]): Context = js.native
+    
+    /**
+      * Return a list of all fields which may be used by the propagator.
+      */
+    /* CompleteClass */
+    override def fields(): js.Array[String] = js.native
     
     /** Noop inject function does nothing */
-    def inject(context: Context, carrier: js.Any, setter: js.Function): Unit = js.native
+    def inject(_context: Context, _carrier: Any): Unit = js.native
     /**
       * Injects values from a given `Context` into a carrier.
       *
@@ -49,10 +51,10 @@ object noopTextMapPropagatorMod {
       *     the wire.
       * @param carrier the carrier of propagation fields, such as http request
       *     headers.
-      * @param setter a function which accepts a carrier, key, and value, which
-      *     sets the key on the carrier to the value.
+      * @param setter an optional {@link TextMapSetter}. If undefined, values will be
+      *     set by direct object assignment.
       */
     /* CompleteClass */
-    override def inject(context: Context, carrier: js.Any, setter: SetterFunction[js.Any]): Unit = js.native
+    override def inject(context: Context, carrier: Any, setter: TextMapSetter[Any]): Unit = js.native
   }
 }

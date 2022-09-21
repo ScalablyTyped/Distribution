@@ -2,13 +2,17 @@ package typings.fpTs.mod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.fpTs.applicativeMod.Applicative2
+import typings.fpTs.applyMod.Apply2
 import typings.fpTs.categoryMod.Category2
+import typings.fpTs.chainMod.Chain2
 import typings.fpTs.choiceMod.Choice2
 import typings.fpTs.functorMod.Functor2
 import typings.fpTs.monadMod.Monad2
 import typings.fpTs.monoidMod.Monoid
+import typings.fpTs.pointedMod.Pointed2
 import typings.fpTs.profunctorMod.Profunctor2
 import typings.fpTs.readerMod.Reader_
+import typings.fpTs.readonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
 import typings.fpTs.semigroupMod.Semigroup
 import typings.fpTs.strongMod.Strong2
 import typings.std.Exclude
@@ -22,17 +26,33 @@ object reader {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("fp-ts", "reader.ApT")
+  @js.native
+  val ApT: Reader_[Any, js.Array[Any]] = js.native
+  
   @JSImport("fp-ts", "reader.Applicative")
   @js.native
   val Applicative: Applicative2[typings.fpTs.readerMod.URI] = js.native
+  
+  @JSImport("fp-ts", "reader.Apply")
+  @js.native
+  val Apply: Apply2[typings.fpTs.readerMod.URI] = js.native
   
   @JSImport("fp-ts", "reader.Category")
   @js.native
   val Category: Category2[typings.fpTs.readerMod.URI] = js.native
   
+  @JSImport("fp-ts", "reader.Chain")
+  @js.native
+  val Chain_ : Chain2[typings.fpTs.readerMod.URI] = js.native
+  
   @JSImport("fp-ts", "reader.Choice")
   @js.native
   val Choice: Choice2[typings.fpTs.readerMod.URI] = js.native
+  
+  @JSImport("fp-ts", "reader.Do")
+  @js.native
+  val Do: Reader_[Any, js.Object] = js.native
   
   @JSImport("fp-ts", "reader.Functor")
   @js.native
@@ -41,6 +61,10 @@ object reader {
   @JSImport("fp-ts", "reader.Monad")
   @js.native
   val Monad: Monad2[typings.fpTs.readerMod.URI] = js.native
+  
+  @JSImport("fp-ts", "reader.Pointed")
+  @js.native
+  val Pointed: Pointed2[typings.fpTs.readerMod.URI] = js.native
   
   @JSImport("fp-ts", "reader.Profunctor")
   @js.native
@@ -54,123 +78,138 @@ object reader {
   @js.native
   val URI: /* "Reader" */ String = js.native
   
-  inline def ap[R, A](fa: Reader_[R, A]): js.Function1[/* fab */ Reader_[R, js.Function1[/* a */ A, js.Any]], Reader_[R, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Reader_[R, js.Function1[/* a */ A, js.Any]], Reader_[R, js.Any]]]
+  inline def ap[R, A](fa: Reader_[R, A]): js.Function1[/* fab */ Reader_[R, js.Function1[/* a */ A, Any]], Reader_[R, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Reader_[R, js.Function1[/* a */ A, Any]], Reader_[R, Any]]]
   
-  inline def apFirst[R, B](fb: Reader_[R, B]): js.Function1[/* fa */ Reader_[R, js.Any], Reader_[R, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apFirst")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Reader_[R, js.Any], Reader_[R, js.Any]]]
+  inline def apFirst[E, B](second: Reader_[E, B]): js.Function1[/* first */ Reader_[E, Any], Reader_[E, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apFirst")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ Reader_[E, Any], Reader_[E, Any]]]
   
-  inline def apS[A, N /* <: String */, R, B](name: Exclude[N, /* keyof A */ String], fb: Reader_[R, B]): js.Function1[
-    /* fa */ Reader_[R, A], 
+  inline def apFirstW[R2, B](second: Reader_[R2, B]): js.Function1[/* first */ Reader_[Any, Any], Reader_[Any & R2, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apFirstW")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ Reader_[Any, Any], Reader_[Any & R2, Any]]]
+  
+  inline def apS[N /* <: String */, A, E, B](name: Exclude[N, /* keyof A */ String], fb: Reader_[E, B]): js.Function1[
+    /* fa */ Reader_[E, A], 
     Reader_[
-      R, 
+      E, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A | N ]: K extends keyof A? A[K] : B}
+  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
     */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("apS")(name.asInstanceOf[js.Any], fb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* fa */ Reader_[R, A], 
+    /* fa */ Reader_[E, A], 
     Reader_[
-      R, 
+      E, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A | N ]: K extends keyof A? A[K] : B}
+  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
     */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
     ]
   ]]
   
-  inline def apSW[A, N /* <: String */, Q, B](name: Exclude[N, /* keyof A */ String], fb: Reader_[Q, B]): js.Function1[
-    /* fa */ Reader_[js.Any, A], 
+  inline def apSW[A, N /* <: String */, R2, B](name: Exclude[N, /* keyof A */ String], fb: Reader_[R2, B]): js.Function1[
+    /* fa */ Reader_[Any, A], 
     Reader_[
-      Q & js.Any, 
+      Any & R2, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in N | keyof A ]: K extends keyof A? A[K] : B}
+  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
     */ typings.fpTs.fpTsStrings.apSW & TopLevel[A]
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("apSW")(name.asInstanceOf[js.Any], fb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* fa */ Reader_[js.Any, A], 
+    /* fa */ Reader_[Any, A], 
     Reader_[
-      Q & js.Any, 
+      Any & R2, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in N | keyof A ]: K extends keyof A? A[K] : B}
+  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
     */ typings.fpTs.fpTsStrings.apSW & TopLevel[A]
     ]
   ]]
   
-  inline def apSecond[R, B](fb: Reader_[R, B]): js.Function1[/* fa */ Reader_[R, js.Any], Reader_[R, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apSecond")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Reader_[R, js.Any], Reader_[R, B]]]
+  inline def apSecond[E, B](second: Reader_[E, B]): js.Function1[/* first */ Reader_[E, Any], Reader_[E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apSecond")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ Reader_[E, Any], Reader_[E, B]]]
   
-  inline def apW[Q, A](fa: Reader_[Q, A]): js.Function1[
-    /* fab */ Reader_[js.Any, js.Function1[/* a */ A, js.Any]], 
-    Reader_[Q & js.Any, js.Any]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("apW")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* fab */ Reader_[js.Any, js.Function1[/* a */ A, js.Any]], 
-    Reader_[Q & js.Any, js.Any]
-  ]]
+  inline def apSecondW[R2, B](second: Reader_[R2, B]): js.Function1[/* first */ Reader_[Any, Any], Reader_[Any & R2, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apSecondW")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ Reader_[Any, Any], Reader_[Any & R2, B]]]
+  
+  inline def apW[R2, A](fa: Reader_[R2, A]): js.Function1[/* fab */ Reader_[Any, js.Function1[/* a */ A, Any]], Reader_[Any & R2, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apW")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Reader_[Any, js.Function1[/* a */ A, Any]], Reader_[Any & R2, Any]]]
   
   inline def ask[R](): Reader_[R, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("ask")().asInstanceOf[Reader_[R, R]]
   
   inline def asks[R, A](f: js.Function1[/* r */ R, A]): Reader_[R, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asks")(f.asInstanceOf[js.Any]).asInstanceOf[Reader_[R, A]]
   
-  inline def bind[N /* <: String */, A, R, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[
-    /* fa */ Reader_[R, A], 
+  inline def asksReader[R, A](f: js.Function1[/* r */ R, Reader_[R, A]]): Reader_[R, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asksReader")(f.asInstanceOf[js.Any]).asInstanceOf[Reader_[R, A]]
+  
+  inline def asksReaderW[R1, R2, A](f: js.Function1[/* r1 */ R1, Reader_[R2, A]]): Reader_[R1 & R2, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("asksReaderW")(f.asInstanceOf[js.Any]).asInstanceOf[Reader_[R1 & R2, A]]
+  
+  inline def bind[N /* <: String */, A, E, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, Reader_[E, B]]): js.Function1[
+    /* ma */ Reader_[E, A], 
     Reader_[
-      R, 
+      E, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A | N ]: K extends keyof A? A[K] : B}
+  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
     */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* fa */ Reader_[R, A], 
+    /* ma */ Reader_[E, A], 
     Reader_[
-      R, 
+      E, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A | N ]: K extends keyof A? A[K] : B}
+  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
     */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
     ]
   ]]
   
   inline def bindTo[N /* <: String */](name: N): js.Function1[
-    /* fa */ Reader_[js.Any, js.Any], 
+    /* fa */ Reader_[Any, Any], 
     Reader_[
-      js.Any, 
+      Any, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[js.Any]
+  {readonly [ K in N ]: any}
+    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindTo")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* fa */ Reader_[js.Any, js.Any], 
+    /* fa */ Reader_[Any, Any], 
     Reader_[
-      js.Any, 
+      Any, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[js.Any]
+  {readonly [ K in N ]: any}
+    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
     ]
   ]]
   
-  inline def bindW[N /* <: String */, A, Q, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, Reader_[Q, B]]): js.Function1[
-    /* fa */ Reader_[js.Any, A], 
+  inline def bindW[N /* <: String */, A, R2, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, Reader_[R2, B]]): js.Function1[
+    /* fa */ Reader_[Any, A], 
     Reader_[
-      Q & js.Any, 
+      Any & R2, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in N | keyof A ]: K extends keyof A? A[K] : B}
+  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
     */ typings.fpTs.fpTsStrings.bindW & TopLevel[A]
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindW")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* fa */ Reader_[js.Any, A], 
+    /* fa */ Reader_[Any, A], 
     Reader_[
-      Q & js.Any, 
+      Any & R2, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in N | keyof A ]: K extends keyof A? A[K] : B}
+  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
     */ typings.fpTs.fpTsStrings.bindW & TopLevel[A]
     ]
   ]]
   
   inline def chain[A, R, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[/* ma */ Reader_[R, A], Reader_[R, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Reader_[R, A], Reader_[R, B]]]
   
-  inline def chainFirst[A, R, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[/* ma */ Reader_[R, A], Reader_[R, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Reader_[R, A], Reader_[R, A]]]
+  inline def chainFirst[A, E, B](f: js.Function1[/* a */ A, Reader_[E, B]]): js.Function1[/* first */ Reader_[E, A], Reader_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ Reader_[E, A], Reader_[E, A]]]
   
-  inline def chainW[R, A, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[/* ma */ Reader_[js.Any, A], Reader_[js.Any & R, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Reader_[js.Any, A], Reader_[js.Any & R, B]]]
+  inline def chainFirstW[R2, A, B](f: js.Function1[/* a */ A, Reader_[R2, B]]): js.Function1[/* ma */ Reader_[Any, A], Reader_[Any & R2, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Reader_[Any, A], Reader_[Any & R2, A]]]
   
-  inline def compose[A, B](ab: Reader_[A, B]): js.Function1[/* bc */ Reader_[B, js.Any], Reader_[A, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* bc */ Reader_[B, js.Any], Reader_[A, js.Any]]]
+  inline def chainW[R2, A, B](f: js.Function1[/* a */ A, Reader_[R2, B]]): js.Function1[/* ma */ Reader_[Any, A], Reader_[Any & R2, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Reader_[Any, A], Reader_[Any & R2, B]]]
+  
+  inline def compose[A, B](ab: Reader_[A, B]): js.Function1[/* bc */ Reader_[B, Any], Reader_[A, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* bc */ Reader_[B, Any], Reader_[A, Any]]]
+  
+  @JSImport("fp-ts", "reader.first")
+  @js.native
+  val first: js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, B> */ /* pab */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, [A, C], [B, C]> */ Any
+  ] = js.native
+  
+  inline def flap[A](a: A): js.Function1[/* fab */ Reader_[Any, js.Function1[/* a */ A, Any]], Reader_[Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Reader_[Any, js.Function1[/* a */ A, Any]], Reader_[Any, Any]]]
   
   inline def flatten[R, A](mma: Reader_[R, Reader_[R, A]]): Reader_[R, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[Reader_[R, A]]
+  
+  inline def flattenW[R1, R2, A](mma: Reader_[R1, Reader_[R2, A]]): Reader_[R1 & R2, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenW")(mma.asInstanceOf[js.Any]).asInstanceOf[Reader_[R1 & R2, A]]
   
   inline def getMonoid[R, A](M: Monoid[A]): Monoid[Reader_[R, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonoid")(M.asInstanceOf[js.Any]).asInstanceOf[Monoid[Reader_[R, A]]]
   
@@ -179,25 +218,56 @@ object reader {
   @JSImport("fp-ts", "reader.id")
   @js.native
   val id: js.Function0[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, A> */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, A> */ Any
   ] = js.native
   
-  inline def local[Q, R](f: js.Function1[/* d */ Q, R]): js.Function1[/* ma */ Reader_[R, js.Any], Reader_[Q, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("local")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Reader_[R, js.Any], Reader_[Q, js.Any]]]
+  @JSImport("fp-ts", "reader.left")
+  @js.native
+  val left: js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, B> */ /* pab */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, Either<A, C>, Either<B, C>> */ Any
+  ] = js.native
   
-  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Reader_[js.Any, A], Reader_[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Reader_[js.Any, A], Reader_[js.Any, B]]]
+  inline def local[R2, R1](f: js.Function1[/* r2 */ R2, R1]): js.Function1[/* ma */ Reader_[R1, Any], Reader_[R2, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("local")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Reader_[R1, Any], Reader_[R2, Any]]]
+  
+  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Reader_[Any, A], Reader_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Reader_[Any, A], Reader_[Any, B]]]
   
   @JSImport("fp-ts", "reader.of")
   @js.native
   val of: js.Function1[
-    /* a */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any
+    /* a */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
   ] = js.native
   
-  inline def promap[E, A, D, B](f: js.Function1[/* d */ D, E], g: js.Function1[/* a */ A, B]): js.Function1[/* fbc */ Reader_[E, A], Reader_[D, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("promap")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fbc */ Reader_[E, A], Reader_[D, B]]]
+  inline def promap[E, A, D, B](f: js.Function1[/* d */ D, E], g: js.Function1[/* a */ A, B]): js.Function1[/* fea */ Reader_[E, A], Reader_[D, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("promap")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fea */ Reader_[E, A], Reader_[D, B]]]
   
   @JSImport("fp-ts", "reader.reader")
   @js.native
   val reader: Monad2[typings.fpTs.readerMod.URI] & Profunctor2[typings.fpTs.readerMod.URI] & Category2[typings.fpTs.readerMod.URI] & Strong2[typings.fpTs.readerMod.URI] & Choice2[typings.fpTs.readerMod.URI] = js.native
+  
+  @JSImport("fp-ts", "reader.right")
+  @js.native
+  val right: js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, B, C> */ /* pbc */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, Either<A, B>, Either<A, C>> */ Any
+  ] = js.native
+  
+  @JSImport("fp-ts", "reader.second")
+  @js.native
+  val second: js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, B, C> */ /* pab */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, [A, B], [A, C]> */ Any
+  ] = js.native
+  
+  inline def sequenceArray[R, A](arr: js.Array[Reader_[R, A]]): Reader_[R, js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceArray")(arr.asInstanceOf[js.Any]).asInstanceOf[Reader_[R, js.Array[A]]]
+  
+  inline def traverseArray[R, A, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[/* as */ js.Array[A], Reader_[R, js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseArray")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Reader_[R, js.Array[B]]]]
+  
+  inline def traverseArrayWithIndex[R, A, B](f: js.Function2[/* index */ Double, /* a */ A, Reader_[R, B]]): js.Function1[/* as */ js.Array[A], Reader_[R, js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseArrayWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Reader_[R, js.Array[B]]]]
+  
+  inline def traverseReadonlyArrayWithIndex[A, R, B](f: js.Function2[/* index */ Double, /* a */ A, Reader_[R, B]]): js.Function1[/* as */ js.Array[A], Reader_[R, js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseReadonlyArrayWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Reader_[R, js.Array[B]]]]
+  
+  inline def traverseReadonlyNonEmptyArrayWithIndex[A, R, B](f: js.Function2[/* index */ Double, /* a */ A, Reader_[R, B]]): js.Function1[/* as */ ReadonlyNonEmptyArray_[A], Reader_[R, ReadonlyNonEmptyArray_[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseReadonlyNonEmptyArrayWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[A], Reader_[R, ReadonlyNonEmptyArray_[B]]]]
   
   object HKTAugmentingMod {
     

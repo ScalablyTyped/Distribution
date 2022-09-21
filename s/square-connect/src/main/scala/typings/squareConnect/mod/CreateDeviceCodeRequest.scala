@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CreateDeviceCodeRequest")
 @js.native
-class CreateDeviceCodeRequest () extends StObject {
+open class CreateDeviceCodeRequest () extends StObject {
   
   /**
     * The device code to create.

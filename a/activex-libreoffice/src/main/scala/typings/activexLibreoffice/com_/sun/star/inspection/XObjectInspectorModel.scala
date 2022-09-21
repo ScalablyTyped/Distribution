@@ -27,7 +27,7 @@ trait XObjectInspectorModel extends StObject {
     * @see XPropertyHandler.getSupportedProperties
     * @see XPropertyHandler.getSupersededProperties
     */
-  var HandlerFactories: SafeArray[js.Any]
+  var HandlerFactories: SafeArray[Any]
   
   /**
     * indicates that the object inspector should have a help section.
@@ -105,7 +105,7 @@ trait XObjectInspectorModel extends StObject {
 object XObjectInspectorModel {
   
   inline def apply(
-    HandlerFactories: SafeArray[js.Any],
+    HandlerFactories: SafeArray[Any],
     HasHelpSection: Boolean,
     IsReadOnly: Boolean,
     MaxHelpTextLines: Double,
@@ -123,7 +123,7 @@ object XObjectInspectorModel {
     
     inline def setGetPropertyOrderIndex(value: String => Double): Self = StObject.set(x, "getPropertyOrderIndex", js.Any.fromFunction1(value))
     
-    inline def setHandlerFactories(value: SafeArray[js.Any]): Self = StObject.set(x, "HandlerFactories", value.asInstanceOf[js.Any])
+    inline def setHandlerFactories(value: SafeArray[Any]): Self = StObject.set(x, "HandlerFactories", value.asInstanceOf[js.Any])
     
     inline def setHasHelpSection(value: Boolean): Self = StObject.set(x, "HasHelpSection", value.asInstanceOf[js.Any])
     

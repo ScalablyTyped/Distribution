@@ -57,7 +57,7 @@ trait XAxisProps extends StObject {
   
   var tickTotal: js.UndefOr[Double] = js.undefined
   
-  var tickValues: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var tickValues: js.UndefOr[js.Array[Any]] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
   
@@ -139,7 +139,7 @@ object XAxisProps {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTickFormat(value: /* tick */ js.Any => String): Self = StObject.set(x, "tickFormat", js.Any.fromFunction1(value))
+    inline def setTickFormat(value: /* tick */ Any => String): Self = StObject.set(x, "tickFormat", js.Any.fromFunction1(value))
     
     inline def setTickFormatUndefined: Self = StObject.set(x, "tickFormat", js.undefined)
     
@@ -167,11 +167,11 @@ object XAxisProps {
     
     inline def setTickTotalUndefined: Self = StObject.set(x, "tickTotal", js.undefined)
     
-    inline def setTickValues(value: js.Array[js.Any]): Self = StObject.set(x, "tickValues", value.asInstanceOf[js.Any])
+    inline def setTickValues(value: js.Array[Any]): Self = StObject.set(x, "tickValues", value.asInstanceOf[js.Any])
     
     inline def setTickValuesUndefined: Self = StObject.set(x, "tickValues", js.undefined)
     
-    inline def setTickValuesVarargs(value: js.Any*): Self = StObject.set(x, "tickValues", js.Array(value :_*))
+    inline def setTickValuesVarargs(value: Any*): Self = StObject.set(x, "tickValues", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

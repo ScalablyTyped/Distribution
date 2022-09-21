@@ -27,6 +27,15 @@ trait CsvOptions extends StObject {
     */
   var fieldDelimiter: js.UndefOr[String] = js.undefined
   
+  /** [Optional] An custom string that will represent a NULL value in CSV import data. */
+  var null_marker: js.UndefOr[String] = js.undefined
+  
+  /**
+    * [Optional] Preserves the embedded ASCII control characters (the first 32 characters in the ASCII-table, from '\x00' to '\x1F') when loading from CSV. Only applicable to CSV, ignored
+    * for other formats.
+    */
+  var preserveAsciiControlCharacters: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * [Optional] The value that is used to quote data sections in a CSV file. BigQuery converts the string to ISO-8859-1 encoding, and then uses the first byte of the encoded string to
     * split the data in its raw, binary state. The default value is a double-quote ('"'). If your data does not contain quoted sections, set the property value to an empty string. If your
@@ -67,6 +76,14 @@ object CsvOptions {
     inline def setFieldDelimiter(value: String): Self = StObject.set(x, "fieldDelimiter", value.asInstanceOf[js.Any])
     
     inline def setFieldDelimiterUndefined: Self = StObject.set(x, "fieldDelimiter", js.undefined)
+    
+    inline def setNull_marker(value: String): Self = StObject.set(x, "null_marker", value.asInstanceOf[js.Any])
+    
+    inline def setNull_markerUndefined: Self = StObject.set(x, "null_marker", js.undefined)
+    
+    inline def setPreserveAsciiControlCharacters(value: Boolean): Self = StObject.set(x, "preserveAsciiControlCharacters", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveAsciiControlCharactersUndefined: Self = StObject.set(x, "preserveAsciiControlCharacters", js.undefined)
     
     inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     

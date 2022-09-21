@@ -9,12 +9,12 @@ object fromEventPatternStreamMod {
   
   @JSImport("wonder-frp/dist/commonjs/stream/FromEventPatternStream", "FromEventPatternStream")
   @js.native
-  class FromEventPatternStream protected () extends BaseStream {
+  open class FromEventPatternStream protected () extends BaseStream {
     def this(addHandler: js.Function, removeHandler: js.Function) = this()
     
-    /* private */ var _addHandler: js.Any = js.native
+    /* private */ var _addHandler: Any = js.native
     
-    /* private */ var _removeHandler: js.Any = js.native
+    /* private */ var _removeHandler: Any = js.native
   }
   /* static members */
   object FromEventPatternStream {

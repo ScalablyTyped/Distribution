@@ -9,20 +9,20 @@ trait PipeableFunctorWithIndex[F, I]
      with PipeableFunctor[F] {
   
   def mapWithIndex[A, B](f: js.Function2[/* i */ I, /* a */ A, B]): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ Any
   ]
 }
 object PipeableFunctorWithIndex {
   
   inline def apply[F, I](
-    map: js.Function1[js.Any, js.Any] => js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
+    map: js.Function1[Any, Any] => js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ Any
     ],
-    mapWithIndex: js.Function2[/* i */ I, js.Any, js.Any] => js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
+    mapWithIndex: js.Function2[/* i */ I, Any, Any] => js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ Any
     ]
   ): PipeableFunctorWithIndex[F, I] = {
     val __obj = js.Dynamic.literal(map = js.Any.fromFunction1(map), mapWithIndex = js.Any.fromFunction1(mapWithIndex))
@@ -32,9 +32,9 @@ object PipeableFunctorWithIndex {
   extension [Self <: PipeableFunctorWithIndex[?, ?], F, I](x: Self & (PipeableFunctorWithIndex[F, I])) {
     
     inline def setMapWithIndex(
-      value: js.Function2[/* i */ I, js.Any, js.Any] => js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
+      value: js.Function2[/* i */ I, Any, Any] => js.Function1[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ Any
         ]
     ): Self = StObject.set(x, "mapWithIndex", js.Any.fromFunction1(value))
   }

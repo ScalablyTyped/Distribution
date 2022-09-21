@@ -9,7 +9,7 @@ trait ThemeFonts extends StObject {
   
   def apply(Index: MsoFontLanguageIndex): ThemeFont = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -17,5 +17,5 @@ trait ThemeFonts extends StObject {
   
   def Item(Index: MsoFontLanguageIndex): ThemeFont = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

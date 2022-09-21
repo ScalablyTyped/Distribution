@@ -6,7 +6,6 @@ import typings.phaser.EachMapCallback
 import typings.phaser.EachSetCallback
 import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.Math.Vector2
-import typings.phaser.integer
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,9 +39,9 @@ object Structs {
       * @param skipCallback Skip calling the List.addCallback if this child is added successfully. Default false.
       */
     def addAt(child: T): T = js.native
+    def addAt(child: T, index: Double): T = js.native
+    def addAt(child: T, index: Double, skipCallback: Boolean): T = js.native
     def addAt(child: T, index: Unit, skipCallback: Boolean): T = js.native
-    def addAt(child: T, index: integer): T = js.native
-    def addAt(child: T, index: integer, skipCallback: Boolean): T = js.native
     
     /**
       * A callback that is invoked every time a child is added to this list.
@@ -60,7 +59,7 @@ object Structs {
       * @param property The property to test on each item.
       * @param value The value to test the property against.
       */
-    def count(property: String, value: T): integer = js.native
+    def count(property: String, value: T): Double = js.native
     
     /**
       * Destroys this List.
@@ -73,8 +72,8 @@ object Structs {
       * @param context Value to use as `this` when executing callback.
       * @param args Additional arguments that will be passed to the callback, after the child.
       */
-    def each(callback: EachListCallback[T], context: js.Any, args: js.Any*): Unit = js.native
-    def each(callback: EachListCallback[T], context: Unit, args: js.Any*): Unit = js.native
+    def each(callback: EachListCallback[T], context: Any, args: Any*): Unit = js.native
+    def each(callback: EachListCallback[T], context: Unit, args: Any*): Unit = js.native
     
     /**
       * Checks if an item exists within the List.
@@ -109,25 +108,25 @@ object Structs {
     def getAll(): js.Array[T] = js.native
     def getAll(property: String): js.Array[T] = js.native
     def getAll(property: String, value: T): js.Array[T] = js.native
-    def getAll(property: String, value: T, startIndex: Unit, endIndex: integer): js.Array[T] = js.native
-    def getAll(property: String, value: T, startIndex: integer): js.Array[T] = js.native
-    def getAll(property: String, value: T, startIndex: integer, endIndex: integer): js.Array[T] = js.native
-    def getAll(property: String, value: Unit, startIndex: Unit, endIndex: integer): js.Array[T] = js.native
-    def getAll(property: String, value: Unit, startIndex: integer): js.Array[T] = js.native
-    def getAll(property: String, value: Unit, startIndex: integer, endIndex: integer): js.Array[T] = js.native
+    def getAll(property: String, value: T, startIndex: Double): js.Array[T] = js.native
+    def getAll(property: String, value: T, startIndex: Double, endIndex: Double): js.Array[T] = js.native
+    def getAll(property: String, value: T, startIndex: Unit, endIndex: Double): js.Array[T] = js.native
+    def getAll(property: String, value: Unit, startIndex: Double): js.Array[T] = js.native
+    def getAll(property: String, value: Unit, startIndex: Double, endIndex: Double): js.Array[T] = js.native
+    def getAll(property: String, value: Unit, startIndex: Unit, endIndex: Double): js.Array[T] = js.native
     def getAll(property: Unit, value: T): js.Array[T] = js.native
-    def getAll(property: Unit, value: T, startIndex: Unit, endIndex: integer): js.Array[T] = js.native
-    def getAll(property: Unit, value: T, startIndex: integer): js.Array[T] = js.native
-    def getAll(property: Unit, value: T, startIndex: integer, endIndex: integer): js.Array[T] = js.native
-    def getAll(property: Unit, value: Unit, startIndex: Unit, endIndex: integer): js.Array[T] = js.native
-    def getAll(property: Unit, value: Unit, startIndex: integer): js.Array[T] = js.native
-    def getAll(property: Unit, value: Unit, startIndex: integer, endIndex: integer): js.Array[T] = js.native
+    def getAll(property: Unit, value: T, startIndex: Double): js.Array[T] = js.native
+    def getAll(property: Unit, value: T, startIndex: Double, endIndex: Double): js.Array[T] = js.native
+    def getAll(property: Unit, value: T, startIndex: Unit, endIndex: Double): js.Array[T] = js.native
+    def getAll(property: Unit, value: Unit, startIndex: Double): js.Array[T] = js.native
+    def getAll(property: Unit, value: Unit, startIndex: Double, endIndex: Double): js.Array[T] = js.native
+    def getAll(property: Unit, value: Unit, startIndex: Unit, endIndex: Double): js.Array[T] = js.native
     
     /**
       * Retrieves the item at a given position inside the List.
       * @param index The index of the item.
       */
-    def getAt(index: integer): T = js.native
+    def getAt(index: Double): T = js.native
     
     /**
       * Searches for the first instance of a child with its `name`
@@ -144,16 +143,16 @@ object Structs {
       * @param startIndex The position in the List to start the search at. Default 0.
       * @param endIndex The position in the List to optionally stop the search at. It won't be checked.
       */
-    def getFirst(property: String, value: js.Any): T | Null = js.native
-    def getFirst(property: String, value: js.Any, startIndex: Double): T | Null = js.native
-    def getFirst(property: String, value: js.Any, startIndex: Double, endIndex: Double): T | Null = js.native
-    def getFirst(property: String, value: js.Any, startIndex: Unit, endIndex: Double): T | Null = js.native
+    def getFirst(property: String, value: Any): T | Null = js.native
+    def getFirst(property: String, value: Any, startIndex: Double): T | Null = js.native
+    def getFirst(property: String, value: Any, startIndex: Double, endIndex: Double): T | Null = js.native
+    def getFirst(property: String, value: Any, startIndex: Unit, endIndex: Double): T | Null = js.native
     
     /**
       * Locates an item within the List and returns its index.
       * @param child The item to locate.
       */
-    def getIndex(child: T): integer = js.native
+    def getIndex(child: T): Double = js.native
     
     /**
       * Returns a random child from the group.
@@ -161,9 +160,9 @@ object Structs {
       * @param length Restriction on the number of values you want to randomly select from. Default (to top).
       */
     def getRandom(): T | Null = js.native
-    def getRandom(startIndex: Unit, length: integer): T | Null = js.native
-    def getRandom(startIndex: integer): T | Null = js.native
-    def getRandom(startIndex: integer, length: integer): T | Null = js.native
+    def getRandom(startIndex: Double): T | Null = js.native
+    def getRandom(startIndex: Double, length: Double): T | Null = js.native
+    def getRandom(startIndex: Unit, length: Double): T | Null = js.native
     
     /**
       * The last item in the List, or `null` for an empty List.
@@ -173,12 +172,26 @@ object Structs {
     /**
       * The number of items inside the List.
       */
-    val length: integer = js.native
+    val length: Double = js.native
     
     /**
       * The objects that belong to this collection.
       */
     var list: js.Array[T] = js.native
+    
+    /**
+      * Moves the given array element above another one in the array.
+      * @param child1 The element to move above base element.
+      * @param child2 The base element.
+      */
+    def moveAbove(child1: T, child2: T): Unit = js.native
+    
+    /**
+      * Moves the given array element below another one in the array.
+      * @param child1 The element to move below base element.
+      * @param child2 The base element.
+      */
+    def moveBelow(child1: T, child2: T): Unit = js.native
     
     /**
       * Moves the given child down one place in this group unless it's already at the bottom.
@@ -191,7 +204,7 @@ object Structs {
       * @param child The item to move.
       * @param index Moves an item in the List to a new position.
       */
-    def moveTo(child: T, index: integer): T = js.native
+    def moveTo(child: T, index: Double): T = js.native
     
     /**
       * Moves the given child up one place in this group unless it's already at the top.
@@ -209,14 +222,14 @@ object Structs {
     /**
       * The parent of this list.
       */
-    var parent: js.Any = js.native
+    var parent: Any = js.native
     
     /**
       * The index of the current element.
       * 
       * This is used internally when iterating through the list with the {@link #first}, {@link #last}, {@link #get}, and {@link #previous} properties.
       */
-    var position: integer = js.native
+    var position: Double = js.native
     
     /**
       * The previous item in the List, or `null` if the entire List has been traversed.
@@ -245,8 +258,8 @@ object Structs {
       * @param index The position to remove the item from.
       * @param skipCallback Skip calling the List.removeCallback. Default false.
       */
-    def removeAt(index: integer): T = js.native
-    def removeAt(index: integer, skipCallback: Boolean): T = js.native
+    def removeAt(index: Double): T = js.native
+    def removeAt(index: Double, skipCallback: Boolean): T = js.native
     
     /**
       * Removes the items within the given range in the List.
@@ -255,13 +268,13 @@ object Structs {
       * @param skipCallback Skip calling the List.removeCallback. Default false.
       */
     def removeBetween(): js.Array[T] = js.native
+    def removeBetween(startIndex: Double): js.Array[T] = js.native
+    def removeBetween(startIndex: Double, endIndex: Double): js.Array[T] = js.native
+    def removeBetween(startIndex: Double, endIndex: Double, skipCallback: Boolean): js.Array[T] = js.native
+    def removeBetween(startIndex: Double, endIndex: Unit, skipCallback: Boolean): js.Array[T] = js.native
+    def removeBetween(startIndex: Unit, endIndex: Double): js.Array[T] = js.native
+    def removeBetween(startIndex: Unit, endIndex: Double, skipCallback: Boolean): js.Array[T] = js.native
     def removeBetween(startIndex: Unit, endIndex: Unit, skipCallback: Boolean): js.Array[T] = js.native
-    def removeBetween(startIndex: Unit, endIndex: integer): js.Array[T] = js.native
-    def removeBetween(startIndex: Unit, endIndex: integer, skipCallback: Boolean): js.Array[T] = js.native
-    def removeBetween(startIndex: integer): js.Array[T] = js.native
-    def removeBetween(startIndex: integer, endIndex: Unit, skipCallback: Boolean): js.Array[T] = js.native
-    def removeBetween(startIndex: integer, endIndex: integer): js.Array[T] = js.native
-    def removeBetween(startIndex: integer, endIndex: integer, skipCallback: Boolean): js.Array[T] = js.native
     
     /**
       * A callback that is invoked every time a child is removed from this list.
@@ -294,9 +307,9 @@ object Structs {
       * @param endIndex The last child index to search up until.
       */
     def setAll(property: String, value: T): Unit = js.native
-    def setAll(property: String, value: T, startIndex: Unit, endIndex: integer): Unit = js.native
-    def setAll(property: String, value: T, startIndex: integer): Unit = js.native
-    def setAll(property: String, value: T, startIndex: integer, endIndex: integer): Unit = js.native
+    def setAll(property: String, value: T, startIndex: Double): Unit = js.native
+    def setAll(property: String, value: T, startIndex: Double, endIndex: Double): Unit = js.native
+    def setAll(property: String, value: T, startIndex: Unit, endIndex: Double): Unit = js.native
     
     /**
       * Shuffles the items in the list.
@@ -362,7 +375,9 @@ object Structs {
     def dump(): Unit = js.native
     
     /**
-      * Passes all entries in this Map to the given callback.
+      * Iterates through all entries in this Map, passing each one to the given callback.
+      * 
+      * If the callback returns `false`, the iteration will break.
       * @param callback The callback which will receive the keys and entries held in this Map.
       */
     def each(callback: EachMapCallback[V]): Map[K, V] = js.native
@@ -448,6 +463,11 @@ object Structs {
     def add(item: T): ProcessQueue[T] = js.native
     
     /**
+      * If `true` only unique objects will be allowed in the queue.
+      */
+    var checkQueue: Boolean = js.native
+    
+    /**
       * Returns the current list of active items.
       * 
       * This method returns a reference to the active list array, not a copy of it.
@@ -458,7 +478,7 @@ object Structs {
     /**
       * The number of entries in the active list.
       */
-    val length: integer = js.native
+    val length: Double = js.native
     
     /**
       * Removes an item from the Process Queue.
@@ -539,7 +559,7 @@ object Structs {
       * @param callbackScope The scope of the callback.
       */
     def each(callback: EachSetCallback[T]): Set[T] = js.native
-    def each(callback: EachSetCallback[T], callbackScope: js.Any): Set[T] = js.native
+    def each(callback: EachSetCallback[T], callbackScope: Any): Set[T] = js.native
     
     /**
       * The entries of this Set. Stored internally as an array.
@@ -572,14 +592,14 @@ object Structs {
       * @param callbackScope The scope of the callback.
       */
     def iterate(callback: EachSetCallback[T]): Set[T] = js.native
-    def iterate(callback: EachSetCallback[T], callbackScope: js.Any): Set[T] = js.native
+    def iterate(callback: EachSetCallback[T], callbackScope: Any): Set[T] = js.native
     
     /**
       * Goes through each entry in this Set and invokes the given function on them, passing in the arguments.
       * @param callbackKey The key of the function to be invoked on each Set entry.
       * @param args Additional arguments that will be passed to the callback, after the child.
       */
-    def iterateLocal(callbackKey: String, args: js.Any*): Set[T] = js.native
+    def iterateLocal(callbackKey: String, args: Any*): Set[T] = js.native
     
     /**
       * Inserts the provided value into this Set. If the value is already contained in this Set this method will have no effect.
@@ -592,7 +612,7 @@ object Structs {
       * Changing the size will truncate the Set if the given value is smaller than the current size.
       * Increasing the size larger than the current size has no effect.
       */
-    var size: integer = js.native
+    var size: Double = js.native
     
     /**
       * Returns a new Set containing all values that are either in this Set or in the Set provided as an argument.
@@ -615,7 +635,7 @@ object Structs {
       * The aspect mode this Size component will use when calculating its dimensions.
       * This property is read-only. To change it use the `setAspectMode` method.
       */
-    val aspectMode: integer = js.native
+    val aspectMode: Double = js.native
     
     /**
       * The proportional relationship between the width and height.
@@ -773,7 +793,7 @@ object Structs {
       * @param value The aspect mode value. Default 0.
       */
     def setAspectMode(): this.type = js.native
-    def setAspectMode(value: integer): this.type = js.native
+    def setAspectMode(value: Double): this.type = js.native
     
     /**
       * Sets a new aspect ratio, overriding what was there previously.
@@ -848,7 +868,7 @@ object Structs {
       * @param parent Sets the parent of this Size component. Don't provide a value to clear an existing parent.
       */
     def setParent(): this.type = js.native
-    def setParent(parent: js.Any): this.type = js.native
+    def setParent(parent: Any): this.type = js.native
     
     /**
       * Sets the width and height of this Size component based on the aspect mode.

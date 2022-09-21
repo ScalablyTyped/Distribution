@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UpdateDatasetRequest extends StObject {
   
+  /**
+    * The file format of a dataset that is created from an Amazon S3 file or folder.
+    */
+  var Format: js.UndefOr[InputFormat] = js.undefined
+  
   var FormatOptions: js.UndefOr[typings.awsSdk.databrewMod.FormatOptions] = js.undefined
   
   var Input: typings.awsSdk.databrewMod.Input
@@ -14,6 +19,11 @@ trait UpdateDatasetRequest extends StObject {
     * The name of the dataset to be updated.
     */
   var Name: DatasetName
+  
+  /**
+    * A set of options that defines how DataBrew interprets an Amazon S3 path of the dataset.
+    */
+  var PathOptions: js.UndefOr[typings.awsSdk.databrewMod.PathOptions] = js.undefined
 }
 object UpdateDatasetRequest {
   
@@ -24,12 +34,20 @@ object UpdateDatasetRequest {
   
   extension [Self <: UpdateDatasetRequest](x: Self) {
     
+    inline def setFormat(value: InputFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    
     inline def setFormatOptions(value: FormatOptions): Self = StObject.set(x, "FormatOptions", value.asInstanceOf[js.Any])
     
     inline def setFormatOptionsUndefined: Self = StObject.set(x, "FormatOptions", js.undefined)
     
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    
     inline def setInput(value: Input): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
     inline def setName(value: DatasetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setPathOptions(value: PathOptions): Self = StObject.set(x, "PathOptions", value.asInstanceOf[js.Any])
+    
+    inline def setPathOptionsUndefined: Self = StObject.set(x, "PathOptions", js.undefined)
   }
 }

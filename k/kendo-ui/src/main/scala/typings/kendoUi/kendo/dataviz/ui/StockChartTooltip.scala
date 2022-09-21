@@ -16,7 +16,7 @@ trait StockChartTooltip extends StObject {
   
   var format: js.UndefOr[String] = js.undefined
   
-  var padding: js.UndefOr[Double | js.Any] = js.undefined
+  var padding: js.UndefOr[Double | Any] = js.undefined
   
   var shared: js.UndefOr[Boolean] = js.undefined
   
@@ -55,7 +55,7 @@ object StockChartTooltip {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setPadding(value: Double | js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     

@@ -15,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.iobroker.iobrokerStrings.config
   - typings.iobroker.iobrokerStrings.group
   - typings.iobroker.iobrokerStrings.host
-  - typings.iobroker.iobrokerStrings.info
   - typings.iobroker.iobrokerStrings.instance
   - typings.iobroker.iobrokerStrings.meta
   - typings.iobroker.iobrokerStrings.script
@@ -42,8 +41,6 @@ object ObjectType {
   inline def group: typings.iobroker.iobrokerStrings.group = "group".asInstanceOf[typings.iobroker.iobrokerStrings.group]
   
   inline def host: typings.iobroker.iobrokerStrings.host = "host".asInstanceOf[typings.iobroker.iobrokerStrings.host]
-  
-  inline def info: typings.iobroker.iobrokerStrings.info = "info".asInstanceOf[typings.iobroker.iobrokerStrings.info]
   
   inline def instance: typings.iobroker.iobrokerStrings.instance = "instance".asInstanceOf[typings.iobroker.iobrokerStrings.instance]
   

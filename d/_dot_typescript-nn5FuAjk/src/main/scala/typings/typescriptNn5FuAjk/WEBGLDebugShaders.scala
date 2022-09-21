@@ -1,0 +1,23 @@
+package typings.typescriptNn5FuAjk
+
+import typings.std.WebGLShader
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait WEBGLDebugShaders extends StObject {
+  
+  def getTranslatedShaderSource(shader: WebGLShader): java.lang.String
+}
+object WEBGLDebugShaders {
+  
+  inline def apply(getTranslatedShaderSource: WebGLShader => java.lang.String): WEBGLDebugShaders = {
+    val __obj = js.Dynamic.literal(getTranslatedShaderSource = js.Any.fromFunction1(getTranslatedShaderSource))
+    __obj.asInstanceOf[WEBGLDebugShaders]
+  }
+  
+  extension [Self <: WEBGLDebugShaders](x: Self) {
+    
+    inline def setGetTranslatedShaderSource(value: WebGLShader => java.lang.String): Self = StObject.set(x, "getTranslatedShaderSource", js.Any.fromFunction1(value))
+  }
+}

@@ -1,8 +1,11 @@
 package typings.sockjs
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.ReadWriteStream
 import typings.node.eventsMod.global.NodeJS.EventEmitter
+import typings.node.httpMod.IncomingMessage
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.sockjs.anon.Address
 import typings.sockjs.sockjsStrings.close
 import typings.sockjs.sockjsStrings.connection
@@ -20,10 +23,9 @@ object mod {
   inline def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
   inline def createServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
   
-  @js.native
-  trait Connection
-    extends StObject
-       with ReadWriteStream {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream * / any */ @js.native
+  trait Connection extends StObject {
     
     var address: StringDictionary[Address] = js.native
     
@@ -42,7 +44,7 @@ object mod {
     @JSName("on")
     def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_data(event: data, listener: js.Function1[/* message */ String, js.Any]): this.type = js.native
+    def on_data(event: data, listener: js.Function1[/* message */ String, Any]): this.type = js.native
     
     var pathname: String = js.native
     
@@ -64,12 +66,29 @@ object mod {
     extends StObject
        with EventEmitter {
     
-    def installHandlers(server: typings.node.httpMod.Server): js.Any = js.native
-    def installHandlers(server: typings.node.httpMod.Server, options: ServerOptions): js.Any = js.native
+    def installHandlers(
+      server: typings.node.httpMod.Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]
+    ): Any = js.native
+    def installHandlers(
+      server: typings.node.httpMod.Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ],
+      options: ServerOptions
+    ): Any = js.native
     
     def on(event: String, listener: js.Function): this.type = js.native
     @JSName("on")
-    def on_connection(event: connection, listener: js.Function1[/* conn */ Connection, js.Any]): this.type = js.native
+    def on_connection(event: connection, listener: js.Function1[/* conn */ Connection, Any]): this.type = js.native
   }
   
   trait ServerOptions extends StObject {
@@ -78,7 +97,7 @@ object mod {
     
     var heartbeat_delay: js.UndefOr[Double] = js.undefined
     
-    var jsessionid: js.UndefOr[js.Any] = js.undefined
+    var jsessionid: js.UndefOr[Any] = js.undefined
     
     var log: js.UndefOr[js.Function2[/* severity */ String, /* message */ String, Unit]] = js.undefined
     
@@ -107,7 +126,7 @@ object mod {
       
       inline def setHeartbeat_delayUndefined: Self = StObject.set(x, "heartbeat_delay", js.undefined)
       
-      inline def setJsessionid(value: js.Any): Self = StObject.set(x, "jsessionid", value.asInstanceOf[js.Any])
+      inline def setJsessionid(value: Any): Self = StObject.set(x, "jsessionid", value.asInstanceOf[js.Any])
       
       inline def setJsessionidUndefined: Self = StObject.set(x, "jsessionid", js.undefined)
       

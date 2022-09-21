@@ -24,6 +24,6 @@ object SchemaGetPublisherProfilesByAccountIdResponse {
     
     inline def setProfilesUndefined: Self = StObject.set(x, "profiles", js.undefined)
     
-    inline def setProfilesVarargs(value: SchemaPublisherProfileApiProto*): Self = StObject.set(x, "profiles", js.Array(value :_*))
+    inline def setProfilesVarargs(value: SchemaPublisherProfileApiProto*): Self = StObject.set(x, "profiles", js.Array(value*))
   }
 }

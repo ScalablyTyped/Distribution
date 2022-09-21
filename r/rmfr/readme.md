@@ -11,9 +11,9 @@ Node.js implementation of `rm -fr` – recursive removal of files and directorie
 | Full name          | rmfr |
 | Keywords           | rimraf, rm, rmdir, unlink, remove, clean, recursive, glob, file, directory, promise, promisified, then, thenable |
 | # releases         | 0 |
-| # dependents       | 61 |
-| # downloads        | 956156 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 102930.66666666667 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/shinnn/rmfr#readme)

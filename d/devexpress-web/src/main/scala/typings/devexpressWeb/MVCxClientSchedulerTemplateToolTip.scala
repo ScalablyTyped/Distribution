@@ -19,13 +19,13 @@ trait MVCxClientSchedulerTemplateToolTip
 object MVCxClientSchedulerTemplateToolTip {
   
   inline def apply(
-    CalculatePosition: js.Any => ASPxClientPoint,
+    CalculatePosition: Any => ASPxClientPoint,
     CanShowToolTip: () => Boolean,
     Close: () => Unit,
     ConvertIntervalToString: ASPxClientTimeInterval => String,
     FinalizeUpdate: ASPxClientSchedulerToolTipData => Unit,
-    ShowAppointmentMenu: js.Any => Unit,
-    ShowViewMenu: js.Any => Unit,
+    ShowAppointmentMenu: Any => Unit,
+    ShowViewMenu: Any => Unit,
     Update: ASPxClientSchedulerToolTipData => Unit,
     `type`: MVCxSchedulerToolTipType
   ): MVCxClientSchedulerTemplateToolTip = {

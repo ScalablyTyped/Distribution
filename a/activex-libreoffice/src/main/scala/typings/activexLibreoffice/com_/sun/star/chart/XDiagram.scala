@@ -52,7 +52,7 @@ object XDiagram {
     getPosition: () => Point,
     getShapeType: () => String,
     getSize: () => Size,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setPosition: Point => Unit,
     setSize: Size => Unit

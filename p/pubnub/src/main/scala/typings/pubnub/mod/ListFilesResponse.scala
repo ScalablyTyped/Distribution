@@ -28,7 +28,7 @@ object ListFilesResponse {
     
     inline def setData(value: js.Array[Created]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Created*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Created*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     

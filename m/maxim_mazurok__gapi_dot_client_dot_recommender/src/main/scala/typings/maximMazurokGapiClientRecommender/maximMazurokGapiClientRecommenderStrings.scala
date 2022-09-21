@@ -15,6 +15,14 @@ object maximMazurokGapiClientRecommenderStrings {
   inline def GoogleCloudRecommenderV1InsightStateInfo: GoogleCloudRecommenderV1InsightStateInfo = "GoogleCloudRecommenderV1InsightStateInfo".asInstanceOf[GoogleCloudRecommenderV1InsightStateInfo]
   
   @js.native
+  sealed trait GoogleCloudRecommenderV1InsightTypeConfig extends StObject
+  inline def GoogleCloudRecommenderV1InsightTypeConfig: GoogleCloudRecommenderV1InsightTypeConfig = "GoogleCloudRecommenderV1InsightTypeConfig".asInstanceOf[GoogleCloudRecommenderV1InsightTypeConfig]
+  
+  @js.native
+  sealed trait GoogleCloudRecommenderV1InsightTypeGenerationConfig extends StObject
+  inline def GoogleCloudRecommenderV1InsightTypeGenerationConfig: GoogleCloudRecommenderV1InsightTypeGenerationConfig = "GoogleCloudRecommenderV1InsightTypeGenerationConfig".asInstanceOf[GoogleCloudRecommenderV1InsightTypeGenerationConfig]
+  
+  @js.native
   sealed trait GoogleCloudRecommenderV1MarkInsightAcceptedRequest extends StObject
   inline def GoogleCloudRecommenderV1MarkInsightAcceptedRequest: GoogleCloudRecommenderV1MarkInsightAcceptedRequest = "GoogleCloudRecommenderV1MarkInsightAcceptedRequest".asInstanceOf[GoogleCloudRecommenderV1MarkInsightAcceptedRequest]
   
@@ -35,8 +43,24 @@ object maximMazurokGapiClientRecommenderStrings {
   inline def GoogleCloudRecommenderV1Operation: GoogleCloudRecommenderV1Operation = "GoogleCloudRecommenderV1Operation".asInstanceOf[GoogleCloudRecommenderV1Operation]
   
   @js.native
+  sealed trait GoogleCloudRecommenderV1RecommendationContent extends StObject
+  inline def GoogleCloudRecommenderV1RecommendationContent: GoogleCloudRecommenderV1RecommendationContent = "GoogleCloudRecommenderV1RecommendationContent".asInstanceOf[GoogleCloudRecommenderV1RecommendationContent]
+  
+  @js.native
   sealed trait GoogleCloudRecommenderV1RecommendationStateInfo extends StObject
   inline def GoogleCloudRecommenderV1RecommendationStateInfo: GoogleCloudRecommenderV1RecommendationStateInfo = "GoogleCloudRecommenderV1RecommendationStateInfo".asInstanceOf[GoogleCloudRecommenderV1RecommendationStateInfo]
+  
+  @js.native
+  sealed trait GoogleCloudRecommenderV1RecommenderConfig extends StObject
+  inline def GoogleCloudRecommenderV1RecommenderConfig: GoogleCloudRecommenderV1RecommenderConfig = "GoogleCloudRecommenderV1RecommenderConfig".asInstanceOf[GoogleCloudRecommenderV1RecommenderConfig]
+  
+  @js.native
+  sealed trait GoogleCloudRecommenderV1RecommenderGenerationConfig extends StObject
+  inline def GoogleCloudRecommenderV1RecommenderGenerationConfig: GoogleCloudRecommenderV1RecommenderGenerationConfig = "GoogleCloudRecommenderV1RecommenderGenerationConfig".asInstanceOf[GoogleCloudRecommenderV1RecommenderGenerationConfig]
+  
+  @js.native
+  sealed trait GoogleCloudRecommenderV1SecurityProjection extends StObject
+  inline def GoogleCloudRecommenderV1SecurityProjection: GoogleCloudRecommenderV1SecurityProjection = "GoogleCloudRecommenderV1SecurityProjection".asInstanceOf[GoogleCloudRecommenderV1SecurityProjection]
   
   @js.native
   sealed trait recommender extends StObject

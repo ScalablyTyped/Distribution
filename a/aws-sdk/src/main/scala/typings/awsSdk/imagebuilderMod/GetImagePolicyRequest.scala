@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetImagePolicyRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the image whose policy you want to retrieve. 
+    * The Amazon Resource Name (ARN) of the image whose policy you want to retrieve.
     */
   var imageArn: ImageBuildVersionArn
 }

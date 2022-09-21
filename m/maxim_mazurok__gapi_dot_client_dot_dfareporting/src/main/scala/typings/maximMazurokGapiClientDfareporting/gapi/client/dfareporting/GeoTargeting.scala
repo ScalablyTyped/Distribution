@@ -52,13 +52,13 @@ object GeoTargeting {
     
     inline def setCitiesUndefined: Self = StObject.set(x, "cities", js.undefined)
     
-    inline def setCitiesVarargs(value: City*): Self = StObject.set(x, "cities", js.Array(value :_*))
+    inline def setCitiesVarargs(value: City*): Self = StObject.set(x, "cities", js.Array(value*))
     
     inline def setCountries(value: js.Array[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     
     inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
     
-    inline def setCountriesVarargs(value: Country*): Self = StObject.set(x, "countries", js.Array(value :_*))
+    inline def setCountriesVarargs(value: Country*): Self = StObject.set(x, "countries", js.Array(value*))
     
     inline def setExcludeCountries(value: Boolean): Self = StObject.set(x, "excludeCountries", value.asInstanceOf[js.Any])
     
@@ -68,18 +68,18 @@ object GeoTargeting {
     
     inline def setMetrosUndefined: Self = StObject.set(x, "metros", js.undefined)
     
-    inline def setMetrosVarargs(value: Metro*): Self = StObject.set(x, "metros", js.Array(value :_*))
+    inline def setMetrosVarargs(value: Metro*): Self = StObject.set(x, "metros", js.Array(value*))
     
     inline def setPostalCodes(value: js.Array[PostalCode]): Self = StObject.set(x, "postalCodes", value.asInstanceOf[js.Any])
     
     inline def setPostalCodesUndefined: Self = StObject.set(x, "postalCodes", js.undefined)
     
-    inline def setPostalCodesVarargs(value: PostalCode*): Self = StObject.set(x, "postalCodes", js.Array(value :_*))
+    inline def setPostalCodesVarargs(value: PostalCode*): Self = StObject.set(x, "postalCodes", js.Array(value*))
     
     inline def setRegions(value: js.Array[Region]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
     inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value*))
   }
 }

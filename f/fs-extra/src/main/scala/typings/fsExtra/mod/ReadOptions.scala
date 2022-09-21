@@ -1,18 +1,19 @@
 package typings.fsExtra.mod
 
+import typings.node.bufferMod.global.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ReadOptions extends StObject {
   
-  var encoding: js.UndefOr[String] = js.undefined
+  var encoding: js.UndefOr[BufferEncoding | String] = js.undefined
   
   var flag: js.UndefOr[String] = js.undefined
   
   var fs: js.UndefOr[js.Object] = js.undefined
   
-  var reviver: js.UndefOr[js.Any] = js.undefined
+  var reviver: js.UndefOr[Any] = js.undefined
   
   var throws: js.UndefOr[Boolean] = js.undefined
 }
@@ -25,7 +26,7 @@ object ReadOptions {
   
   extension [Self <: ReadOptions](x: Self) {
     
-    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: BufferEncoding | String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
@@ -37,7 +38,7 @@ object ReadOptions {
     
     inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
     
-    inline def setReviver(value: js.Any): Self = StObject.set(x, "reviver", value.asInstanceOf[js.Any])
+    inline def setReviver(value: Any): Self = StObject.set(x, "reviver", value.asInstanceOf[js.Any])
     
     inline def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
     

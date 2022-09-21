@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "AnnotatedCommit")
 @js.native
-class AnnotatedCommit ()
+open class AnnotatedCommit ()
   extends typings.nodegit.annotatedCommitMod.AnnotatedCommit
 /* static members */
 object AnnotatedCommit {

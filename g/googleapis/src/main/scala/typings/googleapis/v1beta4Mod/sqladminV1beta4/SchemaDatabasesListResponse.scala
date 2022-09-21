@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Database list response.
-  */
 trait SchemaDatabasesListResponse extends StObject {
   
   /**
@@ -15,9 +12,9 @@ trait SchemaDatabasesListResponse extends StObject {
   var items: js.UndefOr[js.Array[SchemaDatabase]] = js.undefined
   
   /**
-    * This is always sql#databasesList.
+    * This is always `sql#databasesList`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDatabasesListResponse {
   
@@ -32,9 +29,11 @@ object SchemaDatabasesListResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaDatabase*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaDatabase*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

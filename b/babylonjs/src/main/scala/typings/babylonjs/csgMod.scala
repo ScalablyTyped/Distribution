@@ -15,7 +15,9 @@ object csgMod {
   
   @JSImport("babylonjs/Meshes/csg", "CSG")
   @js.native
-  class CSG () extends StObject {
+  open class CSG () extends StObject {
+    
+    /* private */ var _polygons: Any = js.native
     
     /**
       * Build Raw mesh from CSG
@@ -69,8 +71,6 @@ object csgMod {
       */
     var matrix: Matrix = js.native
     
-    /* private */ var polygons: js.Any = js.native
-    
     /**
       * Stores the position
       */
@@ -100,7 +100,7 @@ object csgMod {
     
     /**
       * Subtracts this CSG with another CSG in place
-      * @param csg The CSG to subtact against this CSG
+      * @param csg The CSG to subtract against this CSG
       */
     def subtractInPlace(csg: CSG): Unit = js.native
     
@@ -144,17 +144,19 @@ object csgMod {
     /**
       * Convert the Mesh to CSG
       * @param mesh The Mesh to convert to CSG
+      * @param absolute If true, the final (local) matrix transformation is set to the identity and not to that of `mesh`. It can help when dealing with right-handed meshes (default: false)
       * @returns A new CSG from the Mesh
       */
     inline def FromMesh(mesh: Mesh): CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any]).asInstanceOf[CSG]
+    inline def FromMesh(mesh: Mesh, absolute: Boolean): CSG = (^.asInstanceOf[js.Dynamic].applyDynamic("FromMesh")(mesh.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any])).asInstanceOf[CSG]
     
     /**
       * Construct a CSG solid from a list of `CSG.Polygon` instances.
       * @param polygons Polygons used to construct a CSG solid
       */
-    @JSImport("babylonjs/Meshes/csg", "CSG.FromPolygons")
+    @JSImport("babylonjs/Meshes/csg", "CSG._FromPolygons")
     @js.native
-    def FromPolygons: js.Any = js.native
-    inline def FromPolygons_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FromPolygons")(x.asInstanceOf[js.Any])
+    def _FromPolygons: Any = js.native
+    inline def _FromPolygons_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FromPolygons")(x.asInstanceOf[js.Any])
   }
 }

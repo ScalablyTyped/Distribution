@@ -29,7 +29,7 @@ object DescribeDBLogFilesResponse {
     
     inline def setDescribeDBLogFilesUndefined: Self = StObject.set(x, "DescribeDBLogFiles", js.undefined)
     
-    inline def setDescribeDBLogFilesVarargs(value: DescribeDBLogFilesDetails*): Self = StObject.set(x, "DescribeDBLogFiles", js.Array(value :_*))
+    inline def setDescribeDBLogFilesVarargs(value: DescribeDBLogFilesDetails*): Self = StObject.set(x, "DescribeDBLogFiles", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

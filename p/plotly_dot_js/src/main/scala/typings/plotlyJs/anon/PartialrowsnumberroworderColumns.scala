@@ -77,13 +77,13 @@ object PartialrowsnumberroworderColumns {
     
     inline def setSubplotsUndefined: Self = StObject.set(x, "subplots", js.undefined)
     
-    inline def setSubplotsVarargs(value: String*): Self = StObject.set(x, "subplots", js.Array(value :_*))
+    inline def setSubplotsVarargs(value: String*): Self = StObject.set(x, "subplots", js.Array(value*))
     
     inline def setXaxes(value: js.Array[String]): Self = StObject.set(x, "xaxes", value.asInstanceOf[js.Any])
     
     inline def setXaxesUndefined: Self = StObject.set(x, "xaxes", js.undefined)
     
-    inline def setXaxesVarargs(value: String*): Self = StObject.set(x, "xaxes", js.Array(value :_*))
+    inline def setXaxesVarargs(value: String*): Self = StObject.set(x, "xaxes", js.Array(value*))
     
     inline def setXgap(value: Double): Self = StObject.set(x, "xgap", value.asInstanceOf[js.Any])
     
@@ -97,7 +97,7 @@ object PartialrowsnumberroworderColumns {
     
     inline def setYaxesUndefined: Self = StObject.set(x, "yaxes", js.undefined)
     
-    inline def setYaxesVarargs(value: String*): Self = StObject.set(x, "yaxes", js.Array(value :_*))
+    inline def setYaxesVarargs(value: String*): Self = StObject.set(x, "yaxes", js.Array(value*))
     
     inline def setYgap(value: Double): Self = StObject.set(x, "ygap", value.asInstanceOf[js.Any])
     

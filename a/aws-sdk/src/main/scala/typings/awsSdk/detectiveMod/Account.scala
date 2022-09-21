@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Account extends StObject {
   
   /**
-    * The account identifier of the AWS account.
+    * The account identifier of the Amazon Web Services account.
     */
   var AccountId: typings.awsSdk.detectiveMod.AccountId
   
   /**
-    * The AWS account root user email address for the AWS account.
+    * The Amazon Web Services account root user email address for the Amazon Web Services account.
     */
   var EmailAddress: typings.awsSdk.detectiveMod.EmailAddress
 }

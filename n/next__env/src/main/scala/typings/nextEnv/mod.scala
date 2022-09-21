@@ -15,36 +15,44 @@ object mod {
   
   inline def loadEnvConfig(dir: String): CombinedEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvConfig")(dir.asInstanceOf[js.Any]).asInstanceOf[CombinedEnv]
   inline def loadEnvConfig(dir: String, dev: Boolean): CombinedEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvConfig")(dir.asInstanceOf[js.Any], dev.asInstanceOf[js.Any])).asInstanceOf[CombinedEnv]
+  inline def loadEnvConfig(dir: String, dev: Boolean, log: Unit, forceReload: Boolean): CombinedEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvConfig")(dir.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], log.asInstanceOf[js.Any], forceReload.asInstanceOf[js.Any])).asInstanceOf[CombinedEnv]
   inline def loadEnvConfig(dir: String, dev: Boolean, log: Log): CombinedEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvConfig")(dir.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], log.asInstanceOf[js.Any])).asInstanceOf[CombinedEnv]
+  inline def loadEnvConfig(dir: String, dev: Boolean, log: Log, forceReload: Boolean): CombinedEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvConfig")(dir.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], log.asInstanceOf[js.Any], forceReload.asInstanceOf[js.Any])).asInstanceOf[CombinedEnv]
+  inline def loadEnvConfig(dir: String, dev: Unit, log: Unit, forceReload: Boolean): CombinedEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvConfig")(dir.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], log.asInstanceOf[js.Any], forceReload.asInstanceOf[js.Any])).asInstanceOf[CombinedEnv]
   inline def loadEnvConfig(dir: String, dev: Unit, log: Log): CombinedEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvConfig")(dir.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], log.asInstanceOf[js.Any])).asInstanceOf[CombinedEnv]
+  inline def loadEnvConfig(dir: String, dev: Unit, log: Log, forceReload: Boolean): CombinedEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvConfig")(dir.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], log.asInstanceOf[js.Any], forceReload.asInstanceOf[js.Any])).asInstanceOf[CombinedEnv]
   
   inline def processEnv(loadedEnvFiles: LoadedEnvFiles): Env = ^.asInstanceOf[js.Dynamic].applyDynamic("processEnv")(loadedEnvFiles.asInstanceOf[js.Any]).asInstanceOf[Env]
   inline def processEnv(loadedEnvFiles: LoadedEnvFiles, dir: String): Env = (^.asInstanceOf[js.Dynamic].applyDynamic("processEnv")(loadedEnvFiles.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Env]
+  inline def processEnv(loadedEnvFiles: LoadedEnvFiles, dir: String, log: Unit, forceReload: Boolean): Env = (^.asInstanceOf[js.Dynamic].applyDynamic("processEnv")(loadedEnvFiles.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], log.asInstanceOf[js.Any], forceReload.asInstanceOf[js.Any])).asInstanceOf[Env]
   inline def processEnv(loadedEnvFiles: LoadedEnvFiles, dir: String, log: Log): Env = (^.asInstanceOf[js.Dynamic].applyDynamic("processEnv")(loadedEnvFiles.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], log.asInstanceOf[js.Any])).asInstanceOf[Env]
+  inline def processEnv(loadedEnvFiles: LoadedEnvFiles, dir: String, log: Log, forceReload: Boolean): Env = (^.asInstanceOf[js.Dynamic].applyDynamic("processEnv")(loadedEnvFiles.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], log.asInstanceOf[js.Any], forceReload.asInstanceOf[js.Any])).asInstanceOf[Env]
+  inline def processEnv(loadedEnvFiles: LoadedEnvFiles, dir: Unit, log: Unit, forceReload: Boolean): Env = (^.asInstanceOf[js.Dynamic].applyDynamic("processEnv")(loadedEnvFiles.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], log.asInstanceOf[js.Any], forceReload.asInstanceOf[js.Any])).asInstanceOf[Env]
   inline def processEnv(loadedEnvFiles: LoadedEnvFiles, dir: Unit, log: Log): Env = (^.asInstanceOf[js.Dynamic].applyDynamic("processEnv")(loadedEnvFiles.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], log.asInstanceOf[js.Any])).asInstanceOf[Env]
+  inline def processEnv(loadedEnvFiles: LoadedEnvFiles, dir: Unit, log: Log, forceReload: Boolean): Env = (^.asInstanceOf[js.Dynamic].applyDynamic("processEnv")(loadedEnvFiles.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], log.asInstanceOf[js.Any], forceReload.asInstanceOf[js.Any])).asInstanceOf[Env]
   
-  type Env = StringDictionary[String]
+  type Env = StringDictionary[js.UndefOr[String]]
   
   type LoadedEnvFiles = js.Array[Contents]
   
   trait Log extends StObject {
     
-    def error(args: js.Any*): Unit
+    def error(args: Any*): Unit
     
-    def info(args: js.Any*): Unit
+    def info(args: Any*): Unit
   }
   object Log {
     
-    inline def apply(error: /* repeated */ js.Any => Unit, info: /* repeated */ js.Any => Unit): Log = {
+    inline def apply(error: /* repeated */ Any => Unit, info: /* repeated */ Any => Unit): Log = {
       val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info))
       __obj.asInstanceOf[Log]
     }
     
     extension [Self <: Log](x: Self) {
       
-      inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      inline def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: /* repeated */ Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     }
   }
 }

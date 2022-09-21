@@ -16,25 +16,11 @@ trait FeatureFormViewModel
      with Evented {
   
   /**
-    * The description of the form.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#description)
-    */
-  var description: String = js.native
-  
-  /**
     * The associated feature containing the editable attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#feature)
     */
   var feature: Graphic = js.native
-  
-  /**
-    * Array of individual or grouped field configuration objects.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#fieldConfig)
-    */
-  var fieldConfig: js.Array[FieldConfig | FieldGroupConfig] = js.native
   
   /**
     * Convenience method to find input fields.
@@ -55,7 +41,7 @@ trait FeatureFormViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#getValues)
     */
-  def getValues(): js.Any = js.native
+  def getValues(): Any = js.native
   
   /**
     * The input fields and/or grouped field rendered by the [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html) widget.
@@ -69,15 +55,26 @@ trait FeatureFormViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#layer)
     */
-  var layer: FeatureLayer = js.native
+  var layer: FeatureLayer | SceneLayer = js.native
   
   @JSName("on")
   def on_submit(name: submit, eventHandler: FeatureFormViewModelSubmitEventHandler): IHandle = js.native
   @JSName("on")
   def on_valuechange(name: `value-change`, eventHandler: FeatureFormViewModelValueChangeEventHandler): IHandle = js.native
   
+  def setValue(fieldName: String, value: String): scala.Unit = js.native
+  def setValue(fieldName: String, value: Any): scala.Unit = js.native
+  /**
+    * Used to set the updated field value.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#setValue)
+    */
+  def setValue(fieldName: String, value: Double): scala.Unit = js.native
+  
   /**
     * The widget's state.
+    *
+    * @default disabled
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#state)
     */
@@ -88,14 +85,14 @@ trait FeatureFormViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#submit)
     */
-  def submit(): Unit = js.native
+  def submit(): scala.Unit = js.native
   
   /**
-    * The title of the form.
+    * When true, this form can be submitted without _introducing_ data validation issues.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#title)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#submittable)
     */
-  var title: String = js.native
+  var submittable: Boolean = js.native
   
   /**
     * Indicates whether all input fields are valid.
@@ -103,4 +100,7 @@ trait FeatureFormViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#valid)
     */
   var valid: Boolean = js.native
+  
+  def validateContingencyConstraints(values: String): js.Array[Any] = js.native
+  def validateContingencyConstraints(values: String, options: FeatureFormViewModelValidateContingencyConstraintsOptions): js.Array[Any] = js.native
 }

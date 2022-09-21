@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "StringType")
 @js.native
-class StringType ()
-  extends Type_[/* keyof D */ String, /* keyof D */ String, js.Any] {
+open class StringType () extends Type_[/* keyof D */ String, /* keyof D */ String, Any] {
   
   /**
     * @since 1.0.0

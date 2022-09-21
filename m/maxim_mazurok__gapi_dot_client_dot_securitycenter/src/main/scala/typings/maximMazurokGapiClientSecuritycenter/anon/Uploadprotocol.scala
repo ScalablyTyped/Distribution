@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSecuritycenter.anon
 
-import typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter.SetFindingStateRequest
+import typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter.SetMuteRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +28,8 @@ trait Uploadprotocol extends StObject {
   
   /**
     * Required. The relative resource name of the finding. See: https://cloud.google.com/apis/design/resource_names#relative_resource_name Example:
-    * "organizations/{organization_id}/sources/{source_id}/finding/{finding_id}".
+    * "organizations/{organization_id}/sources/{source_id}/finding/{finding_id}", "folders/{folder_id}/sources/{source_id}/finding/{finding_id}",
+    * "projects/{project_id}/sources/{source_id}/finding/{finding_id}".
     */
   var name: String
   
@@ -42,7 +43,7 @@ trait Uploadprotocol extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: SetFindingStateRequest
+  var resource: SetMuteRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +53,7 @@ trait Uploadprotocol extends StObject {
 }
 object Uploadprotocol {
   
-  inline def apply(name: String, resource: SetFindingStateRequest): Uploadprotocol = {
+  inline def apply(name: String, resource: SetMuteRequest): Uploadprotocol = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Uploadprotocol]
   }
@@ -97,7 +98,7 @@ object Uploadprotocol {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SetFindingStateRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SetMuteRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

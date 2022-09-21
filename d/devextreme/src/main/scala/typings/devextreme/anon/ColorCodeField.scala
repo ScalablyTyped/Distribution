@@ -1,46 +1,43 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.Bright
-import typings.devextreme.devextremeStrings.Carmine
-import typings.devextreme.devextremeStrings.Material
-import typings.devextreme.devextremeStrings.Ocean
-import typings.devextreme.devextremeStrings.Office
-import typings.devextreme.devextremeStrings.Pastel
-import typings.devextreme.devextremeStrings.Soft
-import typings.devextreme.devextremeStrings.Vintage
-import typings.devextreme.devextremeStrings.Violet
-import typings.devextreme.devextremeStrings.`Dark Moon`
-import typings.devextreme.devextremeStrings.`Dark Violet`
-import typings.devextreme.devextremeStrings.`Green Mist`
-import typings.devextreme.devextremeStrings.`Harmony Light`
-import typings.devextreme.devextremeStrings.`Soft Blue`
-import typings.devextreme.devextremeStrings.`Soft Pastel`
-import typings.devextreme.devextremeStrings.alternate
-import typings.devextreme.devextremeStrings.blend
-import typings.devextreme.devextremeStrings.discrete
-import typings.devextreme.devextremeStrings.extrapolate
-import typings.devextreme.devextremeStrings.gradient
-import typings.devextreme.devextremeStrings.none
-import typings.devextreme.devextremeStrings.range
+import typings.devextreme.mod.DevExpress.common.charts.Palette
+import typings.devextreme.mod.DevExpress.common.charts.PaletteExtensionMode
+import typings.devextreme.mod.DevExpress.viz.dxTreeMap.TreeMapColorizerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ColorCodeField extends StObject {
   
+  /**
+    * Specifies the name of the data source field whose values define the color of a tile. Applies only if the type property is &apos;gradient&apos; or &apos;range&apos;.
+    */
   var colorCodeField: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies whether or not all tiles in a group must be colored uniformly. Applies only if the type property is &apos;discrete&apos;.
+    */
   var colorizeGroups: js.UndefOr[Boolean] = js.undefined
   
-  var palette: js.UndefOr[
-    js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-  ] = js.undefined
+  /**
+    * Sets the palette to be used to colorize tiles.
+    */
+  var palette: js.UndefOr[js.Array[String] | Palette] = js.undefined
   
-  var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
+  /**
+    * Specifies what to do with colors in the palette when their number is less than the number of treemap tiles.
+    */
+  var paletteExtensionMode: js.UndefOr[PaletteExtensionMode] = js.undefined
   
+  /**
+    * Allows you to paint tiles with similar values uniformly. Applies only if the type property is &apos;gradient&apos; or &apos;range&apos;.
+    */
   var range: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `type`: js.UndefOr[discrete | gradient | none | range] = js.undefined
+  /**
+    * Specifies the colorizing algorithm.
+    */
+  var `type`: js.UndefOr[TreeMapColorizerType] = js.undefined
 }
 object ColorCodeField {
   
@@ -59,25 +56,23 @@ object ColorCodeField {
     
     inline def setColorizeGroupsUndefined: Self = StObject.set(x, "colorizeGroups", js.undefined)
     
-    inline def setPalette(
-      value: js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-    ): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: js.Array[String] | Palette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
-    inline def setPaletteExtensionMode(value: alternate | blend | extrapolate): Self = StObject.set(x, "paletteExtensionMode", value.asInstanceOf[js.Any])
+    inline def setPaletteExtensionMode(value: PaletteExtensionMode): Self = StObject.set(x, "paletteExtensionMode", value.asInstanceOf[js.Any])
     
     inline def setPaletteExtensionModeUndefined: Self = StObject.set(x, "paletteExtensionMode", js.undefined)
     
     inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
-    inline def setPaletteVarargs(value: String*): Self = StObject.set(x, "palette", js.Array(value :_*))
+    inline def setPaletteVarargs(value: String*): Self = StObject.set(x, "palette", js.Array(value*))
     
     inline def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value*))
     
-    inline def setType(value: discrete | gradient | none | range): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TreeMapColorizerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

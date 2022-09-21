@@ -36,17 +36,17 @@ object mod {
     * @param queryString Querystring
     * @param charsetParam The charset for parsing
     */
-  inline def parse(queryString: String, charsetParam: charsetParam): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(queryString.asInstanceOf[js.Any], charsetParam.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parse(queryString: String, charsetParam: charsetParam): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(queryString.asInstanceOf[js.Any], charsetParam.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Stringify object
     * @param obj Query Object
     * @param charsetParam The charset for parsing
     */
-  inline def stringify(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def stringify(obj: js.Any, prefix: Unit, charsetParam: charsetParam): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], charsetParam.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(obj: js.Any, prefix: charsetParam): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(obj: js.Any, prefix: charsetParam, charsetParam: charsetParam): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], charsetParam.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(obj: Any, prefix: Unit, charsetParam: charsetParam): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], charsetParam.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(obj: Any, prefix: charsetParam): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(obj: Any, prefix: charsetParam, charsetParam: charsetParam): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], charsetParam.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait charsetParam extends StObject {
     

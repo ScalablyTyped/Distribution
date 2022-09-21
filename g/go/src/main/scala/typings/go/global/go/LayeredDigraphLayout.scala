@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a LayeredDigraphLayout with no Layout.network and with no owning Layout.diagram.
   */
-class LayeredDigraphLayout ()
+open class LayeredDigraphLayout ()
   extends typings.go.mod.LayeredDigraphLayout
 object LayeredDigraphLayout {
   

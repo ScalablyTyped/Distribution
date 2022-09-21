@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateSubnetCidrBlockResult extends StObject {
   
   /**
-    * Information about the IPv6 CIDR block association.
+    * Information about the IPv6 association.
     */
   var Ipv6CidrBlockAssociation: js.UndefOr[SubnetIpv6CidrBlockAssociation] = js.undefined
   

@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a row in a Word document.
   *
+  * @remarks
   * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.TableRow")
 @js.native
-class TableRow ()
+open class TableRow ()
   extends StObject
      with typings.officeJsPreview.Word.TableRow {
   

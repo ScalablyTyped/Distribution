@@ -22,6 +22,6 @@ object EndpointsResponse {
     
     inline def setItem(value: ListOfEndpointResponse): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    inline def setItemVarargs(value: EndpointResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+    inline def setItemVarargs(value: EndpointResponse*): Self = StObject.set(x, "Item", js.Array(value*))
   }
 }

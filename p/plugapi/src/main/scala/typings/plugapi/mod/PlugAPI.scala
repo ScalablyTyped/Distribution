@@ -109,7 +109,7 @@ trait PlugAPI extends StObject {
   
   var multiLineLimit: Double = js.native
   
-  def on(event: String, callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+  def on(event: String, callback: js.Function1[/* data */ Any, Unit]): Unit = js.native
   @JSName("on")
   def on_advance(event: advance, callback: js.Function1[/* data */ Advance, Unit]): Unit = js.native
   @JSName("on")

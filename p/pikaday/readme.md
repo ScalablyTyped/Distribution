@@ -11,9 +11,9 @@ A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS
 | Full name          | pikaday |
 | Keywords           | datepicker, calendar, date |
 | # releases         | 3 |
-| # dependents       | 149 |
-| # downloads        | 10199026 |
-| # stars            | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 1184507.3333333333 |
+| # stars            | 7846.0 |
 
 ## Links
 - [Homepage](https://pikaday.com)

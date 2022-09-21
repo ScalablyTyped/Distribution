@@ -9,9 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@octokit/plugin-paginate-rest", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@octokit/plugin-paginate-rest", "composePaginateRest")
   @js.native
   val composePaginateRest: ComposePaginateInterface = js.native
+  
+  inline def isPaginatingEndpoint(arg: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPaginatingEndpoint")(arg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   object paginateRest {
     
@@ -26,4 +32,10 @@ object mod {
     def VERSION: String = js.native
     inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("@octokit/plugin-paginate-rest", "paginatingEndpoints")
+  @js.native
+  val paginatingEndpoints: js.Array[
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 214 */ Any
+  ] = js.native
 }

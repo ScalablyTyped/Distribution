@@ -1,9 +1,9 @@
 package typings.materialComponentsWeb.mod
 
+import typings.materialBase.Element
 import typings.materialDialog.anon.PartialMDCDialogAdapter
 import typings.materialDialog.utilMod.MDCDialogFocusTrapFactory
 import typings.materialDom.focusTrapMod.FocusTrap
-import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,10 +13,10 @@ object dialog {
   
   @JSImport("material-components-web", "dialog.MDCDialog")
   @js.native
-  class MDCDialog protected ()
+  open class MDCDialog protected ()
     extends typings.materialDialog.mod.MDCDialog {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: typings.materialDialog.foundationMod.MDCDialogFoundation, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: typings.materialDialog.foundationMod.MDCDialogFoundation, args: Any*) = this()
   }
   /* static members */
   object MDCDialog {
@@ -25,12 +25,12 @@ object dialog {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialDialog.componentMod.MDCDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialDialog.componentMod.MDCDialog]
+    inline def attachTo(root: typings.std.Element): typings.materialDialog.componentMod.MDCDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialDialog.componentMod.MDCDialog]
   }
   
   @JSImport("material-components-web", "dialog.MDCDialogFoundation")
   @js.native
-  class MDCDialogFoundation ()
+  open class MDCDialogFoundation ()
     extends typings.materialDialog.mod.MDCDialogFoundation {
     def this(adapter: PartialMDCDialogAdapter) = this()
   }
@@ -46,6 +46,11 @@ object dialog {
     def CLOSING: String = js.native
     inline def CLOSING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
     
+    @JSImport("material-components-web", "dialog.cssClasses.FULLSCREEN")
+    @js.native
+    def FULLSCREEN: String = js.native
+    inline def FULLSCREEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FULLSCREEN")(x.asInstanceOf[js.Any])
+    
     @JSImport("material-components-web", "dialog.cssClasses.OPEN")
     @js.native
     def OPEN: String = js.native
@@ -57,10 +62,25 @@ object dialog {
     
     inline def OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
     
+    @JSImport("material-components-web", "dialog.cssClasses.SCRIM_HIDDEN")
+    @js.native
+    def SCRIM_HIDDEN: String = js.native
+    inline def SCRIM_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCRIM_HIDDEN")(x.asInstanceOf[js.Any])
+    
     @JSImport("material-components-web", "dialog.cssClasses.SCROLLABLE")
     @js.native
     def SCROLLABLE: String = js.native
     inline def SCROLLABLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCROLLABLE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "dialog.cssClasses.SCROLL_DIVIDER_FOOTER")
+    @js.native
+    def SCROLL_DIVIDER_FOOTER: String = js.native
+    inline def SCROLL_DIVIDER_FOOTER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCROLL_DIVIDER_FOOTER")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "dialog.cssClasses.SCROLL_DIVIDER_HEADER")
+    @js.native
+    def SCROLL_DIVIDER_HEADER: String = js.native
+    inline def SCROLL_DIVIDER_HEADER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCROLL_DIVIDER_HEADER")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "dialog.cssClasses.SCROLL_LOCK")
     @js.native
@@ -71,6 +91,21 @@ object dialog {
     @js.native
     def STACKED: String = js.native
     inline def STACKED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STACKED")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "dialog.cssClasses.SURFACE_SCRIM_HIDING")
+    @js.native
+    def SURFACE_SCRIM_HIDING: String = js.native
+    inline def SURFACE_SCRIM_HIDING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SURFACE_SCRIM_HIDING")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "dialog.cssClasses.SURFACE_SCRIM_SHOWING")
+    @js.native
+    def SURFACE_SCRIM_SHOWING: String = js.native
+    inline def SURFACE_SCRIM_SHOWING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SURFACE_SCRIM_SHOWING")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "dialog.cssClasses.SURFACE_SCRIM_SHOWN")
+    @js.native
+    def SURFACE_SCRIM_SHOWN: String = js.native
+    inline def SURFACE_SCRIM_SHOWN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SURFACE_SCRIM_SHOWN")(x.asInstanceOf[js.Any])
   }
   
   object numbers {
@@ -182,6 +217,12 @@ object dialog {
     
     inline def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDialogFocusTrapFactory): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusTrapInstance")(surfaceEl.asInstanceOf[js.Any], focusTrapFactory.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
     inline def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDialogFocusTrapFactory, initialFocusEl: HTMLElement): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusTrapInstance")(surfaceEl.asInstanceOf[js.Any], focusTrapFactory.asInstanceOf[js.Any], initialFocusEl.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
+    
+    inline def isScrollAtBottom(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollAtBottom")().asInstanceOf[Boolean]
+    inline def isScrollAtBottom(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollAtBottom")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def isScrollAtTop(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollAtTop")().asInstanceOf[Boolean]
+    inline def isScrollAtTop(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollAtTop")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def isScrollable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollable")().asInstanceOf[Boolean]
     inline def isScrollable(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollable")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]

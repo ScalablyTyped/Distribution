@@ -1,7 +1,7 @@
 
 # Scala.js typings for has-yarn
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Check if a project is using Yarn
@@ -10,10 +10,10 @@ Check if a project is using Yarn
 | ------------------ | :-------------: |
 | Full name          | has-yarn |
 | Keywords           | yarn, has, detect, is, project, app, module, package, manager, npm |
-| # releases         | 3 |
-| # dependents       | 115 |
-| # downloads        | 150651823 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.9781471333333332E7 |
+| # stars            | 96.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/has-yarn#readme)

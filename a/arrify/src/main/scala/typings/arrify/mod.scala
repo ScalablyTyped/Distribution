@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[ValueType](value: ValueType): (js.Array[js.Any | String | ValueType]) | ValueType = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[(js.Array[js.Any | String | ValueType]) | ValueType]
-  
   @JSImport("arrify", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default[ValueType](value: ValueType): (js.Array[Any | String | ValueType]) | ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[(js.Array[Any | String | ValueType]) | ValueType]
 }

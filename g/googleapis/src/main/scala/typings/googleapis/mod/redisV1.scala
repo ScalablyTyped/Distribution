@@ -9,24 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object redisV1 {
   
-  /**
-    * Google Cloud Memorystore for Redis API
-    *
-    * Creates and manages Redis instances on the Google Cloud Platform.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const redis = google.redis('v1');
-    *
-    * @namespace redis
-    * @type {Function}
-    * @version v1
-    * @variation v1
-    * @param {object=} options Options for Redis
-    */
   @JSImport("googleapis", "redis_v1.Redis")
   @js.native
-  class Redis protected ()
+  open class Redis protected ()
     extends typings.googleapis.redisV1Mod.redisV1.Redis {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -34,28 +19,28 @@ object redisV1 {
   
   @JSImport("googleapis", "redis_v1.Resource$Projects")
   @js.native
-  class ResourceProjects protected ()
+  open class ResourceProjects protected ()
     extends typings.googleapis.redisV1Mod.redisV1.ResourceProjects {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "redis_v1.Resource$Projects$Locations")
   @js.native
-  class ResourceProjectsLocations protected ()
+  open class ResourceProjectsLocations protected ()
     extends typings.googleapis.redisV1Mod.redisV1.ResourceProjectsLocations {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "redis_v1.Resource$Projects$Locations$Instances")
   @js.native
-  class ResourceProjectsLocationsInstances protected ()
+  open class ResourceProjectsLocationsInstances protected ()
     extends typings.googleapis.redisV1Mod.redisV1.ResourceProjectsLocationsInstances {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "redis_v1.Resource$Projects$Locations$Operations")
   @js.native
-  class ResourceProjectsLocationsOperations protected ()
+  open class ResourceProjectsLocationsOperations protected ()
     extends typings.googleapis.redisV1Mod.redisV1.ResourceProjectsLocationsOperations {
     def this(context: APIRequestContext) = this()
   }

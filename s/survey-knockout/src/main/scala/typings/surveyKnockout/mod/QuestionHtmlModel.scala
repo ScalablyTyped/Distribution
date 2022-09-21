@@ -6,15 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionHtmlModel")
 @js.native
-class QuestionHtmlModel protected () extends QuestionNonValue {
+open class QuestionHtmlModel protected () extends QuestionNonValue {
   def this(name: String) = this()
   
-  /**
+  /*
     * Set html to display it
     */
-  var html: String = js.native
+  def html: String = js.native
+  def html_=(`val`: String): Unit = js.native
   
-  val locHtml: LocalizableString = js.native
+  var ignoreHtmlProgressing: Boolean = js.native
   
-  val processedHtml: String = js.native
+  def locHtml: LocalizableString = js.native
+  
+  def processedHtml: String = js.native
 }

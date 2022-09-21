@@ -1,7 +1,7 @@
 
 # Scala.js typings for dinero_dot_js
 
-Typings are for version 1.6
+Typings are for version 1.9
 
 ## Library description:
 An immutable library to create, calculate and format monetary values.
@@ -10,10 +10,10 @@ An immutable library to create, calculate and format monetary values.
 | ------------------ | :-------------: |
 | Full name          | dinero.js |
 | Keywords           | money, monetary, amount, immutable |
-| # releases         | 6 |
-| # dependents       | 23 |
-| # downloads        | 1962386 |
-| # stars            | 1 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 386716.0 |
+| # stars            | 5541.0 |
 
 ## Links
 - [Homepage](https://dinerojs.com/)

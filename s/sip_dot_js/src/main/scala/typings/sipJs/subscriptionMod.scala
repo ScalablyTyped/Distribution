@@ -30,13 +30,13 @@ object subscriptionMod {
       */
     /* protected */ var _dialog: js.UndefOr[typings.sipJs.subscriptionSubscriptionMod.Subscription] = js.native
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
-    /* private */ var _logger: js.Any = js.native
+    /* private */ var _logger: Any = js.native
     
-    /* private */ var _state: js.Any = js.native
+    /* private */ var _state: Any = js.native
     
-    /* private */ var _stateEventEmitter: js.Any = js.native
+    /* private */ var _stateEventEmitter: Any = js.native
     
     /**
       * Our user agent.
@@ -48,7 +48,7 @@ object subscriptionMod {
       * Property reserved for use by instance owner.
       * @defaultValue `undefined`
       */
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     /**
       * Subscription delegate. See {@link SubscriptionDelegate} for details.

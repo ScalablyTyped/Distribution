@@ -24,11 +24,11 @@ trait ASPxClientHtmlEditorDialogCloseEventArgs
   /**
     * Gets a string that contains specific information (if any) passed from the client side for server-side processing.
     */
-  var parameter: js.Any
+  var parameter: Any
 }
 object ASPxClientHtmlEditorDialogCloseEventArgs {
   
-  inline def apply(dialog: ASPxClientHtmlEditorDialogBase, dialogName: String, parameter: js.Any): ASPxClientHtmlEditorDialogCloseEventArgs = {
+  inline def apply(dialog: ASPxClientHtmlEditorDialogBase, dialogName: String, parameter: Any): ASPxClientHtmlEditorDialogCloseEventArgs = {
     val __obj = js.Dynamic.literal(dialog = dialog.asInstanceOf[js.Any], dialogName = dialogName.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorDialogCloseEventArgs]
   }
@@ -39,6 +39,6 @@ object ASPxClientHtmlEditorDialogCloseEventArgs {
     
     inline def setDialogName(value: String): Self = StObject.set(x, "dialogName", value.asInstanceOf[js.Any])
     
-    inline def setParameter(value: js.Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
   }
 }

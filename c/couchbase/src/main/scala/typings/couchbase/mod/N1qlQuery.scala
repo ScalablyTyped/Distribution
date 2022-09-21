@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("couchbase", "N1qlQuery")
 @js.native
-class N1qlQuery () extends StObject {
+open class N1qlQuery () extends StObject {
   
   // Private declaration to avoid other queries being misstaken for N1qlQuery
   /* private */ var __nominal: Unit = js.native
@@ -36,10 +36,10 @@ object N1qlQuery {
       *     This is the default (for single-statement requests).
       */
     @js.native
-    sealed trait NOT_BOUND
+    sealed trait NOT_BOUNDED
       extends StObject
          with Consistency
-    /* 0 */ val NOT_BOUND: typings.couchbase.mod.N1qlQuery.Consistency.NOT_BOUND & Double = js.native
+    /* 0 */ val NOT_BOUNDED: typings.couchbase.mod.N1qlQuery.Consistency.NOT_BOUNDED & Double = js.native
     
     /**
       * This implements strong consistency per request.

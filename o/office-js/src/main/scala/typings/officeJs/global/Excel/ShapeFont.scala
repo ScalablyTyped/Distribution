@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the font attributes, such as font name, font size, and color, for a shape's `TextRange` object.
   *
-  * Represents the font attributes, such as font name, font size, and color, for a shape's TextRange object.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeFont")
 @js.native
-class ShapeFont ()
+open class ShapeFont ()
   extends StObject
      with typings.officeJs.Excel.ShapeFont {
   

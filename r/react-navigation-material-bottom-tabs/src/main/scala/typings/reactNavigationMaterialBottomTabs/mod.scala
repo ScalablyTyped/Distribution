@@ -11,32 +11,34 @@ import typings.reactNavigation.mod.NavigationTabRouterConfig
 import typings.reactNavigationMaterialBottomTabs.typesMod.NavigationMaterialBottomTabConfig
 import typings.reactNavigationMaterialBottomTabs.typesMod.NavigationMaterialBottomTabOptions
 import typings.reactNavigationMaterialBottomTabs.typesMod.NavigationTabProp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-navigation-material-bottom-tabs", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def createMaterialBottomTabNavigator(
+object mod {
+  
+  @JSImport("react-navigation-material-bottom-tabs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def createMaterialBottomTabNavigator(
     routes: NavigationRouteConfigMap[
       NavigationMaterialBottomTabOptions, 
-      NavigationTabProp[NavigationRoute[NavigationParams], _], 
-      _
+      NavigationTabProp[NavigationRoute[NavigationParams], Any], 
+      Any
     ]
-  ): NavigationNavigator[_, NavigationProp[NavigationState]] = js.native
-  def createMaterialBottomTabNavigator(
+  ): NavigationNavigator[Any, NavigationProp[NavigationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMaterialBottomTabNavigator")(routes.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigator[Any, NavigationProp[NavigationState]]]
+  inline def createMaterialBottomTabNavigator(
     routes: NavigationRouteConfigMap[
       NavigationMaterialBottomTabOptions, 
-      NavigationTabProp[NavigationRoute[NavigationParams], _], 
-      _
+      NavigationTabProp[NavigationRoute[NavigationParams], Any], 
+      Any
     ],
     config: CreateNavigatorConfig[
       NavigationMaterialBottomTabConfig, 
       NavigationTabRouterConfig, 
       NavigationMaterialBottomTabOptions, 
-      NavigationTabProp[NavigationRoute[NavigationParams], _]
+      NavigationTabProp[NavigationRoute[NavigationParams], Any]
     ]
-  ): NavigationNavigator[_, NavigationProp[NavigationState]] = js.native
+  ): NavigationNavigator[Any, NavigationProp[NavigationState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMaterialBottomTabNavigator")(routes.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[NavigationNavigator[Any, NavigationProp[NavigationState]]]
 }
-

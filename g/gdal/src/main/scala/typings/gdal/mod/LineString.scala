@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gdal", "LineString")
 @js.native
-class LineString () extends Geometry {
+open class LineString () extends Geometry {
   
   def addSubLineString(line: LineString): Unit = js.native
   def addSubLineString(line: LineString, start: Double): Unit = js.native

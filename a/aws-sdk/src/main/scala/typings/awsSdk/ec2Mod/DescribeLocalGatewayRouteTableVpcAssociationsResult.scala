@@ -29,7 +29,7 @@ object DescribeLocalGatewayRouteTableVpcAssociationsResult {
     
     inline def setLocalGatewayRouteTableVpcAssociationsUndefined: Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociations", js.undefined)
     
-    inline def setLocalGatewayRouteTableVpcAssociationsVarargs(value: LocalGatewayRouteTableVpcAssociation*): Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociations", js.Array(value :_*))
+    inline def setLocalGatewayRouteTableVpcAssociationsVarargs(value: LocalGatewayRouteTableVpcAssociation*): Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociations", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

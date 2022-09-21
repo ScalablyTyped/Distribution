@@ -53,6 +53,6 @@ object Image {
     
     inline def setVariant_ids(value: js.Array[String]): Self = StObject.set(x, "variant_ids", value.asInstanceOf[js.Any])
     
-    inline def setVariant_idsVarargs(value: String*): Self = StObject.set(x, "variant_ids", js.Array(value :_*))
+    inline def setVariant_idsVarargs(value: String*): Self = StObject.set(x, "variant_ids", js.Array(value*))
   }
 }

@@ -11,7 +11,7 @@ trait ConfigurationRevision extends StObject {
     The time when the configuration revision was created.
     
     */
-  var CreationTime: timestampIso8601
+  var CreationTime: js.Date
   
   /**
     * 
@@ -29,14 +29,14 @@ trait ConfigurationRevision extends StObject {
 }
 object ConfigurationRevision {
   
-  inline def apply(CreationTime: timestampIso8601, Revision: long): ConfigurationRevision = {
+  inline def apply(CreationTime: js.Date, Revision: long): ConfigurationRevision = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], Revision = Revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationRevision]
   }
   
   extension [Self <: ConfigurationRevision](x: Self) {
     
-    inline def setCreationTime(value: timestampIso8601): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

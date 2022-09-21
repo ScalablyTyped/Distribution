@@ -22,13 +22,13 @@ trait ReadonlyNativeMethods extends StObject {
   val measureInWindow: js.Function1[/* callback */ MeasureInWindowOnSuccessCallback, Unit]
   
   val measureLayout: js.Function3[
-    /* relativeToNativeComponentRef */ HostComponent[js.Any] | Double, 
+    /* relativeToNativeComponentRef */ HostComponent[Any] | Double, 
     /* onSuccess */ MeasureLayoutOnSuccessCallback, 
     /* onFail */ js.Function0[Unit], 
     Unit
   ]
   
-  val refs: StringDictionary[Component[js.Any, js.Any, js.Any]]
+  val refs: StringDictionary[Component[Any, Any, Any]]
   
   val setNativeProps: js.Function1[/* nativeProps */ js.Object, Unit]
 }
@@ -39,8 +39,8 @@ object ReadonlyNativeMethods {
     focus: () => Unit,
     measure: /* callback */ MeasureOnSuccessCallback => Unit,
     measureInWindow: /* callback */ MeasureInWindowOnSuccessCallback => Unit,
-    measureLayout: (/* relativeToNativeComponentRef */ HostComponent[js.Any] | Double, /* onSuccess */ MeasureLayoutOnSuccessCallback, /* onFail */ js.Function0[Unit]) => Unit,
-    refs: StringDictionary[Component[js.Any, js.Any, js.Any]],
+    measureLayout: (/* relativeToNativeComponentRef */ HostComponent[Any] | Double, /* onSuccess */ MeasureLayoutOnSuccessCallback, /* onFail */ js.Function0[Unit]) => Unit,
+    refs: StringDictionary[Component[Any, Any, Any]],
     setNativeProps: /* nativeProps */ js.Object => Unit
   ): ReadonlyNativeMethods = {
     val __obj = js.Dynamic.literal(blur = js.Any.fromFunction0(blur), focus = js.Any.fromFunction0(focus), measure = js.Any.fromFunction1(measure), measureInWindow = js.Any.fromFunction1(measureInWindow), measureLayout = js.Any.fromFunction3(measureLayout), refs = refs.asInstanceOf[js.Any], setNativeProps = js.Any.fromFunction1(setNativeProps))
@@ -58,10 +58,10 @@ object ReadonlyNativeMethods {
     inline def setMeasureInWindow(value: /* callback */ MeasureInWindowOnSuccessCallback => Unit): Self = StObject.set(x, "measureInWindow", js.Any.fromFunction1(value))
     
     inline def setMeasureLayout(
-      value: (/* relativeToNativeComponentRef */ HostComponent[js.Any] | Double, /* onSuccess */ MeasureLayoutOnSuccessCallback, /* onFail */ js.Function0[Unit]) => Unit
+      value: (/* relativeToNativeComponentRef */ HostComponent[Any] | Double, /* onSuccess */ MeasureLayoutOnSuccessCallback, /* onFail */ js.Function0[Unit]) => Unit
     ): Self = StObject.set(x, "measureLayout", js.Any.fromFunction3(value))
     
-    inline def setRefs(value: StringDictionary[Component[js.Any, js.Any, js.Any]]): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+    inline def setRefs(value: StringDictionary[Component[Any, Any, Any]]): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
     
     inline def setSetNativeProps(value: /* nativeProps */ js.Object => Unit): Self = StObject.set(x, "setNativeProps", js.Any.fromFunction1(value))
   }

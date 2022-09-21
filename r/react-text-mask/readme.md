@@ -11,14 +11,11 @@ React input component that accepts mask pattern
 | Full name          | react-text-mask |
 | Keywords           | react, react-component, text mask, input mask, string mask, input formatting, text formatting, string formatting |
 | # releases         | 0 |
-| # dependents       | 296 |
-| # downloads        | 17279170 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1463388.6666666667 |
+| # stars            | 8134.0 |
 
 ## Links
-- [Homepage](https://github.com/text-mask/text-mask/tree/master/react/#readme)
-- [Bugs](https://github.com/text-mask/text-mask/issues)
-- [Repository](https://github.com/text-mask/text-mask)
 - [Npm](https://www.npmjs.com/package/react-text-mask)
     
 

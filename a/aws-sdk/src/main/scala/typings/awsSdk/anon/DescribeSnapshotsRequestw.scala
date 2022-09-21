@@ -26,12 +26,12 @@ trait DescribeSnapshotsRequestw extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The filters.    description - A description of the snapshot.    encrypted - Indicates whether the snapshot is encrypted (true | false)    owner-alias - The owner alias, from an Amazon-maintained list (amazon). This is not the user-configured AWS account alias set using the IAM console. We recommend that you use the related parameter instead of this filter.    owner-id - The AWS account ID of the owner. We recommend that you use the related parameter instead of this filter.    progress - The progress of the snapshot, as a percentage (for example, 80%).    snapshot-id - The snapshot ID.    start-time - The time stamp when the snapshot was initiated.    status - The status of the snapshot (pending | completed | error).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    volume-id - The ID of the volume the snapshot is for.    volume-size - The size of the volume, in GiB.  
+    * The filters.    description - A description of the snapshot.    encrypted - Indicates whether the snapshot is encrypted (true | false)    owner-alias - The owner alias, from an Amazon-maintained list (amazon). This is not the user-configured Amazon Web Services account alias set using the IAM console. We recommend that you use the related parameter instead of this filter.    owner-id - The Amazon Web Services account ID of the owner. We recommend that you use the related parameter instead of this filter.    progress - The progress of the snapshot, as a percentage (for example, 80%).    snapshot-id - The snapshot ID.    start-time - The time stamp when the snapshot was initiated.    status - The status of the snapshot (pending | completed | error).    storage-tier - The storage tier of the snapshot (archive | standard).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    volume-id - The ID of the volume the snapshot is for.    volume-size - The size of the volume, in GiB.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * The maximum number of snapshot results returned by DescribeSnapshots in paginated output. When this parameter is used, DescribeSnapshots only returns MaxResults results in a single page along with a NextToken response element. The remaining results of the initial request can be seen by sending another DescribeSnapshots request with the returned NextToken value. This value can be between 5 and 1000; if MaxResults is given a value larger than 1000, only 1000 results are returned. If this parameter is not used, then DescribeSnapshots returns all results. You cannot specify this parameter and the snapshot IDs parameter in the same request.
+    * The maximum number of snapshot results returned by DescribeSnapshots in paginated output. When this parameter is used, DescribeSnapshots only returns MaxResults results in a single page along with a NextToken response element. The remaining results of the initial request can be seen by sending another DescribeSnapshots request with the returned NextToken value. This value can be between 5 and 1,000; if MaxResults is given a value larger than 1,000, only 1,000 results are returned. If this parameter is not used, then DescribeSnapshots returns all results. You cannot specify this parameter and the snapshot IDs parameter in the same request.
     */
   var MaxResults: js.UndefOr[Integer] = js.undefined
   
@@ -41,12 +41,12 @@ trait DescribeSnapshotsRequestw extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Scopes the results to snapshots with the specified owners. You can specify a combination of AWS account IDs, self, and amazon.
+    * Scopes the results to snapshots with the specified owners. You can specify a combination of Amazon Web Services account IDs, self, and amazon.
     */
   var OwnerIds: js.UndefOr[OwnerStringList] = js.undefined
   
   /**
-    * The IDs of the AWS accounts that can create volumes from the snapshot.
+    * The IDs of the Amazon Web Services accounts that can create volumes from the snapshot.
     */
   var RestorableByUserIds: js.UndefOr[RestorableByStringList] = js.undefined
   
@@ -76,7 +76,7 @@ object DescribeSnapshotsRequestw {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -90,18 +90,18 @@ object DescribeSnapshotsRequestw {
     
     inline def setOwnerIdsUndefined: Self = StObject.set(x, "OwnerIds", js.undefined)
     
-    inline def setOwnerIdsVarargs(value: String*): Self = StObject.set(x, "OwnerIds", js.Array(value :_*))
+    inline def setOwnerIdsVarargs(value: String*): Self = StObject.set(x, "OwnerIds", js.Array(value*))
     
     inline def setRestorableByUserIds(value: RestorableByStringList): Self = StObject.set(x, "RestorableByUserIds", value.asInstanceOf[js.Any])
     
     inline def setRestorableByUserIdsUndefined: Self = StObject.set(x, "RestorableByUserIds", js.undefined)
     
-    inline def setRestorableByUserIdsVarargs(value: String*): Self = StObject.set(x, "RestorableByUserIds", js.Array(value :_*))
+    inline def setRestorableByUserIdsVarargs(value: String*): Self = StObject.set(x, "RestorableByUserIds", js.Array(value*))
     
     inline def setSnapshotIds(value: SnapshotIdStringList): Self = StObject.set(x, "SnapshotIds", value.asInstanceOf[js.Any])
     
     inline def setSnapshotIdsUndefined: Self = StObject.set(x, "SnapshotIds", js.undefined)
     
-    inline def setSnapshotIdsVarargs(value: SnapshotId*): Self = StObject.set(x, "SnapshotIds", js.Array(value :_*))
+    inline def setSnapshotIdsVarargs(value: SnapshotId*): Self = StObject.set(x, "SnapshotIds", js.Array(value*))
   }
 }

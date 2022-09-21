@@ -10,7 +10,7 @@ object proseFormatterMod {
   
   @JSImport("tslint/lib/formatters/proseFormatter", "Formatter")
   @js.native
-  class Formatter () extends AbstractFormatter
+  open class Formatter () extends AbstractFormatter
   /* static members */
   object Formatter {
     

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("text-buffer", "Point")
 @js.native
 /** Construct a Point object */
-class Point ()
+open class Point ()
   extends StObject
      with typings.textBuffer.mod.global.TextBuffer.Point {
   def this(row: Double) = this()

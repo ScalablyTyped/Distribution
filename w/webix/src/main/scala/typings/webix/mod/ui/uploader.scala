@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webix", "ui.uploader")
 @js.native
-class uploader ()
+open class uploader ()
   extends StObject
      with typings.webix.webix.ui.baseview {
   
@@ -17,7 +17,7 @@ class uploader ()
   var $allowsClear: Boolean = js.native
   
   @JSName("$compareValue")
-  def $compareValue(args: js.Any*): js.Any = js.native
+  def $compareValue(args: Any*): Any = js.native
   @JSName("$compareValue")
   var $compareValue_Original: WebixCallback = js.native
   
@@ -28,15 +28,15 @@ class uploader ()
   def $getValue(): String = js.native
   
   @JSName("$prepareValue")
-  def $prepareValue(args: js.Any*): js.Any = js.native
+  def $prepareValue(args: Any*): Any = js.native
   @JSName("$prepareValue")
   var $prepareValue_Original: WebixCallback = js.native
   
   @JSName("$renderInput")
-  def $renderInput(config: js.Any): HTMLElement = js.native
+  def $renderInput(config: Any): HTMLElement = js.native
   
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
   
   @JSName("$setValue")
   def $setValue(value: String): Unit = js.native
@@ -54,26 +54,26 @@ class uploader ()
   def $tooltipOut(): Unit = js.native
   
   @JSName("$updateProgress")
-  def $updateProgress(args: js.Any*): js.Any = js.native
+  def $updateProgress(args: Any*): Any = js.native
   @JSName("$updateProgress")
   var $updateProgress_Original: WebixCallback = js.native
   
   def addDropZone(element: HTMLElement): Unit = js.native
   
-  def addFile(name: js.Any, size: Double): Unit = js.native
-  def addFile(name: js.Any, size: Double, `type`: String): Unit = js.native
+  def addFile(name: Any, size: Double): Unit = js.native
+  def addFile(name: Any, size: Double, `type`: String): Unit = js.native
   
   def attachEvent(`type`: uploaderEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: uploaderEventName, functor: WebixCallback, id: String): String | Double = js.native
   
-  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
-  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  def bind(target: Any, rule: WebixCallback): Unit = js.native
+  def bind(target: Any, rule: WebixCallback, format: String): Unit = js.native
   
   def blockEvent(): Unit = js.native
   
   def blur(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   @JSName("config")
   var config_uploader: uploaderConfig = js.native
@@ -81,9 +81,9 @@ class uploader ()
   def detachEvent(id: String): Unit = js.native
   
   def fileDialog(): Unit = js.native
-  def fileDialog(content: js.Any): Unit = js.native
+  def fileDialog(content: Any): Unit = js.native
   
-  var files: js.Any = js.native
+  var files: Any = js.native
   
   def focus(): Unit = js.native
   
@@ -95,16 +95,16 @@ class uploader ()
   
   def isUploaded(): Boolean = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
-  def on_click(args: js.Any*): js.Any = js.native
+  def on_click(args: Any*): Any = js.native
   @JSName("on_click")
   var on_click_Original: WebixCallback = js.native
   
   def refresh(): Unit = js.native
   
-  def render(id: String, data: js.Any, `type`: String): Unit = js.native
-  def render(id: Double, data: js.Any, `type`: String): Unit = js.native
+  def render(id: String, data: Any, `type`: String): Unit = js.native
+  def render(id: Double, data: Any, `type`: String): Unit = js.native
   
   def send(id: String): Unit = js.native
   def send(id: Double): Unit = js.native
@@ -115,7 +115,7 @@ class uploader ()
   def stopUpload(id: String): Unit = js.native
   def stopUpload(id: Double): Unit = js.native
   
-  def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   var touchable: Boolean = js.native
   

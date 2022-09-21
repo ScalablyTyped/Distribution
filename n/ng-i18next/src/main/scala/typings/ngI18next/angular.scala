@@ -10,18 +10,18 @@ object angular {
     
     trait I18nextProvider extends StObject {
       
-      var options: js.Any
+      var options: Any
     }
     object I18nextProvider {
       
-      inline def apply(options: js.Any): I18nextProvider = {
+      inline def apply(options: Any): I18nextProvider = {
         val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
         __obj.asInstanceOf[I18nextProvider]
       }
       
       extension [Self <: I18nextProvider](x: Self) {
         
-        inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       }
     }
   }

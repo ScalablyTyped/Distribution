@@ -1,13 +1,13 @@
 package typings.browserfs.zipFSMod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("browserfs/dist/node/backend/ZipFS", "EndOfCentralDirectory")
 @js.native
-class EndOfCentralDirectory protected () extends StObject {
+open class EndOfCentralDirectory protected () extends StObject {
   def this(data: Buffer) = this()
   
   def cdDiskEntryCount(): Double = js.native
@@ -24,7 +24,7 @@ class EndOfCentralDirectory protected () extends StObject {
   
   def cdZipCommentLength(): Double = js.native
   
-  /* private */ var data: js.Any = js.native
+  /* private */ var data: Any = js.native
   
   def diskNumber(): Double = js.native
   

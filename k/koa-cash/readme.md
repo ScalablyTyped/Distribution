@@ -10,10 +10,10 @@ HTTP response caching for Koa. HTTP response caching for Koa.  Supports Redis, i
 | ------------------ | :-------------: |
 | Full name          | koa-cash |
 | Keywords           | alternative, amazon, aws, cache, caching, cdn, cloudfront, content, database, db, delivery, handler, hosting, http, in-memory, ioredis, key, koa, memory, middleware, network, provider, redis, response, responses, s3, sentinel, serve, server, service, session, sessions, space, spaces, static, storage, value |
-| # releases         | 11 |
-| # dependents       | 14 |
-| # downloads        | 24274 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 8515.0 |
+| # stars            | 148.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/cash)

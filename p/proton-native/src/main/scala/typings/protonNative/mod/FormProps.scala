@@ -1,5 +1,6 @@
 package typings.protonNative.mod
 
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +9,8 @@ trait FormProps
   extends StObject
      with GridChildrenProps
      with Stretchy {
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * Whether the Form is enabled.
@@ -32,6 +35,10 @@ object FormProps {
   }
   
   extension [Self <: FormProps](x: Self) {
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

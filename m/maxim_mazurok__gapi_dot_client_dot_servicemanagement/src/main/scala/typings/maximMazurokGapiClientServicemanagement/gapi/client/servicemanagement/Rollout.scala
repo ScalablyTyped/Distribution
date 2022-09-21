@@ -9,11 +9,11 @@ trait Rollout extends StObject {
   /** Creation time of the rollout. Readonly. */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** This field is deprecated and will be deleted. Please remove usage of this field. */
+  /** The user who created the Rollout. Readonly. */
   var createdBy: js.UndefOr[String] = js.undefined
   
   /** The strategy associated with a rollout to delete a `ManagedService`. Readonly. */
-  var deleteServiceStrategy: js.UndefOr[js.Any] = js.undefined
+  var deleteServiceStrategy: js.UndefOr[Any] = js.undefined
   
   /**
     * Optional. Unique identifier of this Rollout. Must be no longer than 63 characters and only lower case letters, digits, '.', '_' and '-' are allowed. If not specified by client, the
@@ -48,7 +48,7 @@ object Rollout {
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
-    inline def setDeleteServiceStrategy(value: js.Any): Self = StObject.set(x, "deleteServiceStrategy", value.asInstanceOf[js.Any])
+    inline def setDeleteServiceStrategy(value: Any): Self = StObject.set(x, "deleteServiceStrategy", value.asInstanceOf[js.Any])
     
     inline def setDeleteServiceStrategyUndefined: Self = StObject.set(x, "deleteServiceStrategy", js.undefined)
     

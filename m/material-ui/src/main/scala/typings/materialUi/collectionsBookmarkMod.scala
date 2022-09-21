@@ -10,10 +10,10 @@ object collectionsBookmarkMod {
   
   @JSImport("material-ui/svg-icons/image/collections-bookmark", JSImport.Default)
   @js.native
-  class default () extends ImageCollectionsBookmark
+  open class default () extends ImageCollectionsBookmark
   
   @JSImport("material-ui/svg-icons/image/collections-bookmark", "ImageCollectionsBookmark")
   @js.native
-  class ImageCollectionsBookmark ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageCollectionsBookmark ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

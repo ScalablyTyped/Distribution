@@ -1,7 +1,7 @@
 package typings.glTexture2d
 
-import typings.ndarray.mod.ndarray
-import typings.std.ArrayBufferView
+import typings.ndarray.mod.Data
+import typings.ndarray.mod.NdArray
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(gl: WebGLRenderingContext, array: ndarray[Double]): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  inline def apply(gl: WebGLRenderingContext, array: NdArray[Data[Double]]): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[Texture]
   inline def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double]): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Texture]
   inline def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double], format: Unit, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
   inline def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double], format: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Texture]
@@ -41,13 +41,13 @@ object mod {
     
     var height: Double
     
-    var raw: ArrayBufferView | InputType | ImageBitmap
+    var raw: js.typedarray.ArrayBufferView | InputType | ImageBitmap
     
     var width: Double
   }
   object RawObject {
     
-    inline def apply(height: Double, raw: ArrayBufferView | InputType | ImageBitmap, width: Double): RawObject = {
+    inline def apply(height: Double, raw: js.typedarray.ArrayBufferView | InputType | ImageBitmap, width: Double): RawObject = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[RawObject]
     }
@@ -56,7 +56,7 @@ object mod {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      inline def setRaw(value: ArrayBufferView | InputType | ImageBitmap): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: js.typedarray.ArrayBufferView | InputType | ImageBitmap): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
@@ -92,10 +92,10 @@ object mod {
     def setPixels(data: RawObject, offset: js.Tuple2[Double, Double]): Unit = js.native
     def setPixels(data: RawObject, offset: js.Tuple2[Double, Double], mipLevel: GLenum): Unit = js.native
     def setPixels(data: RawObject, offset: Unit, mipLevel: GLenum): Unit = js.native
-    def setPixels(data: ndarray[Double]): Unit = js.native
-    def setPixels(data: ndarray[Double], offset: js.Tuple2[Double, Double]): Unit = js.native
-    def setPixels(data: ndarray[Double], offset: js.Tuple2[Double, Double], mipLevel: GLenum): Unit = js.native
-    def setPixels(data: ndarray[Double], offset: Unit, mipLevel: GLenum): Unit = js.native
+    def setPixels(data: NdArray[Data[Double]]): Unit = js.native
+    def setPixels(data: NdArray[Data[Double]], offset: js.Tuple2[Double, Double]): Unit = js.native
+    def setPixels(data: NdArray[Data[Double]], offset: js.Tuple2[Double, Double], mipLevel: GLenum): Unit = js.native
+    def setPixels(data: NdArray[Data[Double]], offset: Unit, mipLevel: GLenum): Unit = js.native
     
     var shape: js.Tuple2[Double, Double] = js.native
     

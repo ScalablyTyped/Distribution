@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gdal", "Point")
 @js.native
-class Point protected () extends Geometry {
+open class Point protected () extends Geometry {
   def this(x: Double, y: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
   

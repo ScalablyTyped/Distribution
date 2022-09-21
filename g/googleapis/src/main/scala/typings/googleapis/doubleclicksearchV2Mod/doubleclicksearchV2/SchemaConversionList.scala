@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A list of conversions.
-  */
 trait SchemaConversionList extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaConversionList extends StObject {
   var conversion: js.UndefOr[js.Array[SchemaConversion]] = js.undefined
   
   /**
-    * Identifies this as a ConversionList resource. Value: the fixed string
-    * doubleclicksearch#conversionList.
+    * Identifies this as a ConversionList resource. Value: the fixed string doubleclicksearch#conversionList.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaConversionList {
   
@@ -33,9 +29,11 @@ object SchemaConversionList {
     
     inline def setConversionUndefined: Self = StObject.set(x, "conversion", js.undefined)
     
-    inline def setConversionVarargs(value: SchemaConversion*): Self = StObject.set(x, "conversion", js.Array(value :_*))
+    inline def setConversionVarargs(value: SchemaConversion*): Self = StObject.set(x, "conversion", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

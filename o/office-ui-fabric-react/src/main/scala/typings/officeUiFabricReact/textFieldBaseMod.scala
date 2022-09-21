@@ -12,20 +12,20 @@ object textFieldBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/TextField/TextField.base", "TextFieldBase")
   @js.native
-  class TextFieldBase protected ()
+  open class TextFieldBase protected ()
     extends Component[ITextFieldProps, ITextFieldState, ITextFieldSnapshot]
        with ITextField {
     def this(props: ITextFieldProps) = this()
     
-    /* private */ var _adjustInputHeight: js.Any = js.native
+    /* private */ var _adjustInputHeight: Any = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _delayedValidate: js.Any = js.native
+    /* private */ var _delayedValidate: Any = js.native
     
-    /* private */ var _descriptionId: js.Any = js.native
+    /* private */ var _descriptionId: Any = js.native
     
     /**
       * Current error message from either `props.errorMessage` or the result of `props.onGetErrorMessage`.
@@ -33,60 +33,60 @@ object textFieldBaseMod {
       * - If there is no validation error or we have not validated the input value, errorMessage is an empty string.
       * - If we have done the validation and there is validation error, errorMessage is the validation error message.
       */
-    /* private */ val _errorMessage: js.Any = js.native
+    /* private */ val _errorMessage: Any = js.native
     
     /** Fallback ID if none is provided in props. Access proper value via `this._id`. */
-    /* private */ var _fallbackId: js.Any = js.native
+    /* private */ var _fallbackId: Any = js.native
     
-    /* private */ var _hasWarnedNullValue: js.Any = js.native
+    /* private */ var _hasWarnedNullValue: Any = js.native
     
     /** Returns `props.id` if available, or a fallback if not. */
-    /* private */ val _id: js.Any = js.native
+    /* private */ val _id: Any = js.native
     
-    /* private */ val _isControlled: js.Any = js.native
+    /* private */ val _isControlled: Any = js.native
     
     /**
       * If a custom description render function is supplied then treat description as always available.
       * Otherwise defer to the presence of description or error message text.
       */
-    /* private */ val _isDescriptionAvailable: js.Any = js.native
+    /* private */ val _isDescriptionAvailable: Any = js.native
     
-    /* private */ var _labelId: js.Any = js.native
+    /* private */ var _labelId: Any = js.native
     
     /** Most recent value from a change or input event, to help avoid processing events twice */
-    /* private */ var _lastChangeValue: js.Any = js.native
+    /* private */ var _lastChangeValue: Any = js.native
     
-    /* private */ var _lastValidation: js.Any = js.native
+    /* private */ var _lastValidation: Any = js.native
     
-    /* private */ var _latestValidateValue: js.Any = js.native
+    /* private */ var _latestValidateValue: Any = js.native
     
-    /* private */ var _notifyAfterValidate: js.Any = js.native
+    /* private */ var _notifyAfterValidate: Any = js.native
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: Any = js.native
     
-    /* private */ var _onInputChange: js.Any = js.native
+    /* private */ var _onInputChange: Any = js.native
     
-    /* private */ var _onRenderDescription: js.Any = js.native
+    /* private */ var _onRenderDescription: Any = js.native
     
-    /* private */ var _onRenderLabel: js.Any = js.native
+    /* private */ var _onRenderLabel: Any = js.native
     
-    /* private */ var _onRenderPrefix: js.Any = js.native
+    /* private */ var _onRenderPrefix: Any = js.native
     
-    /* private */ var _onRenderSuffix: js.Any = js.native
+    /* private */ var _onRenderSuffix: Any = js.native
     
-    /* private */ var _onRevealButtonClick: js.Any = js.native
+    /* private */ var _onRevealButtonClick: Any = js.native
     
-    /* private */ var _renderInput: js.Any = js.native
+    /* private */ var _renderInput: Any = js.native
     
-    /* private */ var _renderTextArea: js.Any = js.native
+    /* private */ var _renderTextArea: Any = js.native
     
-    /* private */ var _textElement: js.Any = js.native
+    /* private */ var _textElement: Any = js.native
     
-    /* private */ var _validate: js.Any = js.native
+    /* private */ var _validate: Any = js.native
     
-    /* private */ var _warnControlledUsage: js.Any = js.native
+    /* private */ var _warnControlledUsage: Any = js.native
     
     /** Blurs the input */
     /* CompleteClass */

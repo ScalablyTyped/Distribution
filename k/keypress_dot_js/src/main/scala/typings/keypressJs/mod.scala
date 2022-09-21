@@ -10,14 +10,14 @@ object mod {
   
   @JSImport("keypress.js", "Listener")
   @js.native
-  class Listener () extends StObject {
+  open class Listener () extends StObject {
     def this(element: Element) = this()
     def this(element: Unit, defaults: ListenerDefaults) = this()
     def this(element: Element, defaults: ListenerDefaults) = this()
     
     def counting_combo(
       keys: String,
-      on_count_callback: js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], js.Any]
+      on_count_callback: js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], Any]
     ): Unit = js.native
     
     def destroy(): Unit = js.native
@@ -34,12 +34,12 @@ object mod {
     
     def sequence_combo(
       keys: String,
-      callback: js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], js.Any]
+      callback: js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], Any]
     ): Unit = js.native
     
     def simple_combo(
       keys: String,
-      on_keydown_callback: js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], js.Any]
+      on_keydown_callback: js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], Any]
     ): Unit = js.native
     
     def stop_listening(): Unit = js.native
@@ -65,12 +65,12 @@ object mod {
     var keys: js.UndefOr[String] = js.undefined
     
     var on_keydown: js.UndefOr[
-        js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], js.Any]
+        js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], Any]
       ] = js.undefined
     
-    var on_keyup: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], js.Any]] = js.undefined
+    var on_keyup: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], Any]] = js.undefined
     
-    var on_release: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], js.Any]] = js.undefined
+    var on_release: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], Any]] = js.undefined
     
     var prevent_default: js.UndefOr[Boolean] = js.undefined
     
@@ -111,15 +111,15 @@ object mod {
       
       inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      inline def setOn_keydown(value: (/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "on_keydown", js.Any.fromFunction2(value))
+      inline def setOn_keydown(value: (/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double]) => Any): Self = StObject.set(x, "on_keydown", js.Any.fromFunction2(value))
       
       inline def setOn_keydownUndefined: Self = StObject.set(x, "on_keydown", js.undefined)
       
-      inline def setOn_keyup(value: /* event */ js.UndefOr[KeyboardEvent] => js.Any): Self = StObject.set(x, "on_keyup", js.Any.fromFunction1(value))
+      inline def setOn_keyup(value: /* event */ js.UndefOr[KeyboardEvent] => Any): Self = StObject.set(x, "on_keyup", js.Any.fromFunction1(value))
       
       inline def setOn_keyupUndefined: Self = StObject.set(x, "on_keyup", js.undefined)
       
-      inline def setOn_release(value: /* event */ js.UndefOr[KeyboardEvent] => js.Any): Self = StObject.set(x, "on_release", js.Any.fromFunction1(value))
+      inline def setOn_release(value: /* event */ js.UndefOr[KeyboardEvent] => Any): Self = StObject.set(x, "on_release", js.Any.fromFunction1(value))
       
       inline def setOn_releaseUndefined: Self = StObject.set(x, "on_release", js.undefined)
       

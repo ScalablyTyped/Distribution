@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("athenajs", "Scene")
 @js.native
-class Scene () extends StObject {
+open class Scene () extends StObject {
   def this(options: SceneOptions) = this()
   
   def addObject(`object`: js.Array[Drawable]): Scene = js.native

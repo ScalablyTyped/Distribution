@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-orm
 
-Typings are for version 0.13
+Typings are for version 0.16
 
 ## Library description:
 Simple ORM to manage and query your state trees
@@ -10,10 +10,10 @@ Simple ORM to manage and query your state trees
 | ------------------ | :-------------: |
 | Full name          | redux-orm |
 | Keywords           | redux, orm |
-| # releases         | 18 |
-| # dependents       | 12 |
-| # downloads        | 276422 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 16760.666666666668 |
+| # stars            | 2942.0 |
 
 ## Links
 - [Homepage](https://redux-orm.github.io/redux-orm)

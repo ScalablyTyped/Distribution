@@ -22,6 +22,6 @@ object Effective {
     
     inline def setEffectiveUndefined: Self = StObject.set(x, "effective", js.undefined)
     
-    inline def setEffectiveVarargs(value: String*): Self = StObject.set(x, "effective", js.Array(value :_*))
+    inline def setEffectiveVarargs(value: String*): Self = StObject.set(x, "effective", js.Array(value*))
   }
 }

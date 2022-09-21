@@ -20,7 +20,7 @@ trait IStorageQueryResultBase extends StObject {
     * @param value The property value to match when searching the query results.
     * @return When this method completes successfully it returns the index of the matched item in the query results.
     */
-  def findStartIndexAsync(value: js.Any): IPromiseWithIAsyncOperation[Double]
+  def findStartIndexAsync(value: Any): IPromiseWithIAsyncOperation[Double]
   
   /** Gets the folder originally used to create a StorageFileQueryResult , StorageFolderQueryResult , or StorageItemQueryResult object. This folder represents the scope of the query. */
   var folder: StorageFolder
@@ -41,7 +41,7 @@ object IStorageQueryResultBase {
   
   inline def apply(
     applyNewQueryOptions: QueryOptions => Unit,
-    findStartIndexAsync: js.Any => IPromiseWithIAsyncOperation[Double],
+    findStartIndexAsync: Any => IPromiseWithIAsyncOperation[Double],
     folder: StorageFolder,
     getCurrentQueryOptions: () => QueryOptions,
     getItemCountAsync: () => IPromiseWithIAsyncOperation[Double]
@@ -54,7 +54,7 @@ object IStorageQueryResultBase {
     
     inline def setApplyNewQueryOptions(value: QueryOptions => Unit): Self = StObject.set(x, "applyNewQueryOptions", js.Any.fromFunction1(value))
     
-    inline def setFindStartIndexAsync(value: js.Any => IPromiseWithIAsyncOperation[Double]): Self = StObject.set(x, "findStartIndexAsync", js.Any.fromFunction1(value))
+    inline def setFindStartIndexAsync(value: Any => IPromiseWithIAsyncOperation[Double]): Self = StObject.set(x, "findStartIndexAsync", js.Any.fromFunction1(value))
     
     inline def setFolder(value: StorageFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     

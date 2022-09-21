@@ -54,7 +54,7 @@ object panelHeadingMod {
   
   @JSImport("rbx/components/panel/panel-heading", "PanelHeading")
   @js.native
-  val PanelHeading: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val PanelHeading: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait PanelHeadingProps extends StObject {

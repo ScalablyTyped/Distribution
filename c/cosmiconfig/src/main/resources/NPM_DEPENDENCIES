@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cosmiconfig" : "7.0.0"
+      "cosmiconfig" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "cosmiconfig" : "7.0.0"
+      "cosmiconfig" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

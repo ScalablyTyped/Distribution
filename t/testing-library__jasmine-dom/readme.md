@@ -11,9 +11,9 @@ Custom Jasmine matchers for testing DOM elements
 | Full name          | @testing-library/jasmine-dom |
 | Keywords           | testing, dom, jasmine, matchers, jsdom |
 | # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 1392 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 29278.0 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/testing-library/jasmine-dom#readme)

@@ -24,7 +24,7 @@ trait ReplicationTaskIndividualAssessment extends StObject {
   /**
     * Date when this individual assessment was started as part of running the StartReplicationTaskAssessmentRun operation.
     */
-  var ReplicationTaskIndividualAssessmentStartDate: js.UndefOr[TStamp] = js.undefined
+  var ReplicationTaskIndividualAssessmentStartDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Individual assessment status. This status can have one of the following values:    "cancelled"     "error"     "failed"     "passed"     "pending"     "running"   
@@ -52,7 +52,7 @@ object ReplicationTaskIndividualAssessment {
     
     inline def setReplicationTaskIndividualAssessmentArnUndefined: Self = StObject.set(x, "ReplicationTaskIndividualAssessmentArn", js.undefined)
     
-    inline def setReplicationTaskIndividualAssessmentStartDate(value: TStamp): Self = StObject.set(x, "ReplicationTaskIndividualAssessmentStartDate", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskIndividualAssessmentStartDate(value: js.Date): Self = StObject.set(x, "ReplicationTaskIndividualAssessmentStartDate", value.asInstanceOf[js.Any])
     
     inline def setReplicationTaskIndividualAssessmentStartDateUndefined: Self = StObject.set(x, "ReplicationTaskIndividualAssessmentStartDate", js.undefined)
     

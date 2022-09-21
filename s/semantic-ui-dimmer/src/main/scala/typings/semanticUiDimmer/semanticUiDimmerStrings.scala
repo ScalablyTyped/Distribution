@@ -15,40 +15,16 @@ object semanticUiDimmerStrings {
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait className extends StObject
-  inline def className: className = "className".asInstanceOf[className]
-  
-  @js.native
   sealed trait click extends StObject
   inline def click: click = "click".asInstanceOf[click]
-  
-  @js.native
-  sealed trait closable extends StObject
-  inline def closable: closable = "closable".asInstanceOf[closable]
   
   @js.native
   sealed trait create extends StObject
   inline def create: create = "create".asInstanceOf[create]
   
   @js.native
-  sealed trait debug extends StObject
-  inline def debug: debug = "debug".asInstanceOf[debug]
-  
-  @js.native
   sealed trait destroy extends StObject
   inline def destroy: destroy = "destroy".asInstanceOf[destroy]
-  
-  @js.native
-  sealed trait dimmerName extends StObject
-  inline def dimmerName: dimmerName = "dimmerName".asInstanceOf[dimmerName]
-  
-  @js.native
-  sealed trait duration extends StObject
-  inline def duration: duration = "duration".asInstanceOf[duration]
-  
-  @js.native
-  sealed trait error extends StObject
-  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait `get dimmer` extends StObject
@@ -103,42 +79,6 @@ object semanticUiDimmerStrings {
   inline def `is page dimmer`: `is page dimmer` = ("is page dimmer").asInstanceOf[`is page dimmer`]
   
   @js.native
-  sealed trait name extends StObject
-  inline def name: name = "name".asInstanceOf[name]
-  
-  @js.native
-  sealed trait namespace extends StObject
-  inline def namespace: namespace = "namespace".asInstanceOf[namespace]
-  
-  @js.native
-  sealed trait on extends StObject
-  inline def on: on = "on".asInstanceOf[on]
-  
-  @js.native
-  sealed trait onChange extends StObject
-  inline def onChange: onChange = "onChange".asInstanceOf[onChange]
-  
-  @js.native
-  sealed trait onHide extends StObject
-  inline def onHide: onHide = "onHide".asInstanceOf[onHide]
-  
-  @js.native
-  sealed trait onShow extends StObject
-  inline def onShow: onShow = "onShow".asInstanceOf[onShow]
-  
-  @js.native
-  sealed trait opacity extends StObject
-  inline def opacity: opacity = "opacity".asInstanceOf[opacity]
-  
-  @js.native
-  sealed trait performance extends StObject
-  inline def performance: performance = "performance".asInstanceOf[performance]
-  
-  @js.native
-  sealed trait selector extends StObject
-  inline def selector: selector = "selector".asInstanceOf[selector]
-  
-  @js.native
   sealed trait `set active` extends StObject
   inline def `set active`: `set active` = ("set active").asInstanceOf[`set active`]
   
@@ -171,30 +111,6 @@ object semanticUiDimmerStrings {
   inline def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait silent extends StObject
-  inline def silent: silent = "silent".asInstanceOf[silent]
-  
-  @js.native
-  sealed trait template extends StObject
-  inline def template: template = "template".asInstanceOf[template]
-  
-  @js.native
   sealed trait toggle extends StObject
   inline def toggle: toggle = "toggle".asInstanceOf[toggle]
-  
-  @js.native
-  sealed trait transition extends StObject
-  inline def transition: transition = "transition".asInstanceOf[transition]
-  
-  @js.native
-  sealed trait useCSS extends StObject
-  inline def useCSS: useCSS = "useCSS".asInstanceOf[useCSS]
-  
-  @js.native
-  sealed trait variation extends StObject
-  inline def variation: variation = "variation".asInstanceOf[variation]
-  
-  @js.native
-  sealed trait verbose extends StObject
-  inline def verbose: verbose = "verbose".asInstanceOf[verbose]
 }

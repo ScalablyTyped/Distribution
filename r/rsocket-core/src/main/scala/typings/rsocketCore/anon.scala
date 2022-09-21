@@ -4,7 +4,6 @@ import typings.rsocketCore.rsocketframeMod.ErrorSource
 import typings.rsocketTypes.reactiveSocketTypesMod.Frame
 import typings.rsocketTypes.reactiveSocketTypesMod.Payload
 import typings.rsocketTypes.reactiveStreamTypesMod.ISubscription
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,12 +48,18 @@ object anon {
   /* Inlined std.Error & {  source :rsocket-core.rsocket-core/RSocketFrame.ErrorSource} */
   trait ErrorsourceErrorSource extends StObject {
     
+    /* standard es2022.error */
+    var cause: js.UndefOr[Any] = js.undefined
+    
+    /* standard es5 */
     var message: String
     
+    /* standard es5 */
     var name: String
     
     var source: ErrorSource
     
+    /* standard es5 */
     var stack: js.UndefOr[String] = js.undefined
   }
   object ErrorsourceErrorSource {
@@ -65,6 +70,10 @@ object anon {
     }
     
     extension [Self <: ErrorsourceErrorSource](x: Self) {
+      
+      inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+      
+      inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -83,7 +92,7 @@ object anon {
     
     var onComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
     
     var onNext: js.UndefOr[js.Function1[/* value */ Frame, Unit]] = js.undefined
     
@@ -102,7 +111,7 @@ object anon {
       
       inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      inline def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for npm-license-crawler
 
-Typings are for version 0.1
+Typings are for version 0.2
 
 ## Library description:
 Analyzes license information for multiple node.js modules (package.json files) as part of your software project.
@@ -10,10 +10,10 @@ Analyzes license information for multiple node.js modules (package.json files) a
 | ------------------ | :-------------: |
 | Full name          | npm-license-crawler |
 | Keywords           | license, npm, checker, crawler |
-| # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 441494 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 53049.666666666664 |
+| # stars            | 210.0 |
 
 ## Links
 - [Homepage](https://github.com/mwittig/npm-license-crawler)

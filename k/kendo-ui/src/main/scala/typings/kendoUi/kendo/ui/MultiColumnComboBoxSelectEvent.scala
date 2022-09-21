@@ -9,7 +9,7 @@ trait MultiColumnComboBoxSelectEvent
   extends StObject
      with MultiColumnComboBoxEvent {
   
-  var dataItem: js.UndefOr[js.Any] = js.undefined
+  var dataItem: js.UndefOr[Any] = js.undefined
   
   var item: js.UndefOr[JQuery] = js.undefined
 }
@@ -22,7 +22,7 @@ object MultiColumnComboBoxSelectEvent {
   
   extension [Self <: MultiColumnComboBoxSelectEvent](x: Self) {
     
-    inline def setDataItem(value: js.Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
+    inline def setDataItem(value: Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
     
     inline def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
     

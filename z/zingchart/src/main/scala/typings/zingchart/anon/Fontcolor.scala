@@ -7,24 +7,64 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Fontcolor extends StObject {
   
   /**
-    * To specify the font color of the context menu items. 'gray' | '##666699'
+    * Sets the transparency of the object. Values must range between 0.0 and 1.0, with 0.0 being completely transparent and 1.0 being co
+    * mpletely opaque. Note that values require the leading zero before the decimal point. 0.3 | 0.4 | 0.9 | ...
     */
-  var `font-color`: js.UndefOr[js.Any] = js.undefined
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
-    * To display or remove the Save Image context menu item. true | false
+    * Sets the background color of the object. Colors can be entered by name (e.g., 'purple', 'blue'), hexadecimal notation (e.g., '#666
+    * 699', '#33ccff'), or RGB notation (e.g., 'rgb(255,0,0)', 'rgb(0,0,255)'). 'none' | 'transparent' | 'purple' | '#33ccff' | 'rgb(100
+    * , 15, 15)' | ...
     */
-  var image: js.UndefOr[Boolean] = js.undefined
+  var `background-color`: js.UndefOr[String] = js.undefined
+  
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
-    * To display or remove the Lock/Unlock Scrolling context menu item. true | false
+    * Sets the border color of the object. 'none' | 'transparent' | 'purple' | '#33ccff' | 'rgb(100, 15, 15)' | ...
     */
-  var lock: js.UndefOr[Boolean] = js.undefined
+  var `border-color`: js.UndefOr[String] = js.undefined
   
   /**
-    * Use the object to display or remove individual Share Image context menu items: email, facebook, twitter, and linkedin. {...}
+    * Sets the border radius of the object. 2 | 3 | '5px' | ...
     */
-  var share: js.UndefOr[js.Any] = js.undefined
+  var `border-radius`: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * Sets the border width of the object. 1 | 3 | '6px' | ...
+    */
+  var `border-width`: js.UndefOr[Any] = js.undefined
+  
+  var borderColor: js.UndefOr[String] = js.undefined
+  
+  var borderRadius: js.UndefOr[Any] = js.undefined
+  
+  var borderWidth: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * Sets the font color of the object. 'none' | 'transparent' | 'purple' | '#33ccff' | 'rgb(100, 15, 15)' | ...
+    */
+  var `font-color`: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Sets the font size of the object. 10 | 12 | '20px' | ...
+    */
+  var `font-size`: js.UndefOr[Any] = js.undefined
+  
+  var fontColor: js.UndefOr[String] = js.undefined
+  
+  var fontSize: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * Sets the padding of the object. 3 | '5px' | '10px' | ...
+    */
+  var padding: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * Sets the shared venn diagram text to display. 'Shared' | '%shared-value' | ...
+    */
+  var text: js.UndefOr[String] = js.undefined
 }
 object Fontcolor {
   
@@ -35,20 +75,64 @@ object Fontcolor {
   
   extension [Self <: Fontcolor](x: Self) {
     
-    inline def `setFont-color`(value: js.Any): Self = StObject.set(x, "font-color", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    
+    inline def `setBackground-color`(value: String): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
+    
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def `setBorder-color`(value: String): Self = StObject.set(x, "border-color", value.asInstanceOf[js.Any])
+    
+    inline def `setBorder-colorUndefined`: Self = StObject.set(x, "border-color", js.undefined)
+    
+    inline def `setBorder-radius`(value: Any): Self = StObject.set(x, "border-radius", value.asInstanceOf[js.Any])
+    
+    inline def `setBorder-radiusUndefined`: Self = StObject.set(x, "border-radius", js.undefined)
+    
+    inline def `setBorder-width`(value: Any): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
+    
+    inline def `setBorder-widthUndefined`: Self = StObject.set(x, "border-width", js.undefined)
+    
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
+    inline def setBorderRadius(value: Any): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    
+    inline def setBorderWidth(value: Any): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    
+    inline def `setFont-color`(value: String): Self = StObject.set(x, "font-color", value.asInstanceOf[js.Any])
     
     inline def `setFont-colorUndefined`: Self = StObject.set(x, "font-color", js.undefined)
     
-    inline def setImage(value: Boolean): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def `setFont-size`(value: Any): Self = StObject.set(x, "font-size", value.asInstanceOf[js.Any])
     
-    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def `setFont-sizeUndefined`: Self = StObject.set(x, "font-size", js.undefined)
     
-    inline def setLock(value: Boolean): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+    inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
-    inline def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
+    inline def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
     
-    inline def setShare(value: js.Any): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Any): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    inline def setShareUndefined: Self = StObject.set(x, "share", js.undefined)
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

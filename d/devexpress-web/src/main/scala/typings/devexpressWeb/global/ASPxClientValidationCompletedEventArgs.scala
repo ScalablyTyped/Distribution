@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientValidationCompletedEventArgs")
 @js.native
-class ASPxClientValidationCompletedEventArgs protected ()
+open class ASPxClientValidationCompletedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientValidationCompletedEventArgs {
   /**
@@ -22,7 +22,7 @@ class ASPxClientValidationCompletedEventArgs protected ()
     * @param firstVisibleInvalidControl An object representing the first visible input control that has an invalid value.
     */
   def this(
-    container: js.Any,
+    container: Any,
     validationGroup: String,
     invisibleControlsValidated: Boolean,
     isValid: Boolean,
@@ -34,7 +34,7 @@ class ASPxClientValidationCompletedEventArgs protected ()
     * Gets a container object that holds the validated control(s).
     */
   /* CompleteClass */
-  var container: js.Any = js.native
+  var container: Any = js.native
   
   /**
     * Gets the first control (either visible or invisible) that hasn't passed the validation applied.

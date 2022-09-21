@@ -14,7 +14,7 @@ trait OMathFunc extends StObject {
   
   val FName: OMath
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.OMathFunc_typekey")
   var WordDotOMathFunc_typekey: OMathFunc
@@ -26,7 +26,7 @@ object OMathFunc {
     Creator: Double,
     E: OMath,
     FName: OMath,
-    Parent: js.Any,
+    Parent: Any,
     WordDotOMathFunc_typekey: OMathFunc
   ): OMathFunc = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], E = E.asInstanceOf[js.Any], FName = FName.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object OMathFunc {
     
     inline def setFName(value: OMath): Self = StObject.set(x, "FName", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotOMathFunc_typekey(value: OMathFunc): Self = StObject.set(x, "Word.OMathFunc_typekey", value.asInstanceOf[js.Any])
   }

@@ -18,12 +18,12 @@ object dataSetMod {
   /**
     * @param initialProps - 初始状态
     */
-  class DataSet () extends ^ {
+  open class DataSet () extends ^ {
     def this(initialProps: DataSetOptions) = this()
     
-    /* private */ var _getUniqueViewName: js.Any = js.native
+    /* private */ var _getUniqueViewName: Any = js.native
     
-    /* private */ var _onChangeTimer: js.Any = js.native
+    /* private */ var _onChangeTimer: Any = js.native
     
     def createView(): View = js.native
     def createView(name: String): View = js.native
@@ -52,7 +52,7 @@ object dataSetMod {
       * @param name - 状态名
       * @param value - 值
       */
-    def setState(name: String, value: js.Any): Unit = js.native
+    def setState(name: String, value: Any): Unit = js.native
     
     /**
       * 设置 name 对应的数据视图实例为 dv
@@ -64,7 +64,7 @@ object dataSetMod {
     /**
       * 存储数据集上的状态量（key-value 对）
       */
-    var state: Record[String, js.Any] = js.native
+    var state: Record[String, Any] = js.native
     
     /**
       * 所有挂在数据集上的数据视图（key-value 对）
@@ -106,8 +106,8 @@ object dataSetMod {
       */
     @JSImport("@antv/data-set/lib/data-set", "DataSet.connectors")
     @js.native
-    def connectors: Record[String, js.Any] = js.native
-    inline def connectors_=(x: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectors")(x.asInstanceOf[js.Any])
+    def connectors: Record[String, Any] = js.native
+    inline def connectors_=(x: Record[String, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectors")(x.asInstanceOf[js.Any])
     
     inline def getConnector(name: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnector")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function]
     
@@ -119,25 +119,22 @@ object dataSetMod {
       * @param name - 类型
       * @param connector - 解析逻辑
       */
-    inline def registerConnector(
-      name: String,
-      connector: js.Function3[/* data */ js.Any, /* options */ js.Any, /* view */ View, js.Any]
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerConnector")(name.asInstanceOf[js.Any], connector.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerConnector(name: String, connector: js.Function3[/* data */ Any, /* options */ Any, /* view */ View, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerConnector")(name.asInstanceOf[js.Any], connector.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * 注册一个数据处理函数，注册后所有数据视图都可以使用 name 来引用这个数据处理函数，从而进行某种数据处理
       * @param name - transform 类型
       * @param transform - transform逻辑
       */
-    inline def registerTransform(name: String, transform: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTransform")(name.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerTransform(name: String, transform: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTransform")(name.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * 已注册的 Transform（key-value 对）
       */
     @JSImport("@antv/data-set/lib/data-set", "DataSet.transforms")
     @js.native
-    def transforms: Record[String, js.Any] = js.native
-    inline def transforms_=(x: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transforms")(x.asInstanceOf[js.Any])
+    def transforms: Record[String, Any] = js.native
+    inline def transforms_=(x: Record[String, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transforms")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/data-set/lib/data-set", "DataSet.version")
     @js.native
@@ -147,18 +144,18 @@ object dataSetMod {
   
   trait DataSetOptions extends StObject {
     
-    var state: Record[String, js.Any]
+    var state: Record[String, Any]
   }
   object DataSetOptions {
     
-    inline def apply(state: Record[String, js.Any]): DataSetOptions = {
+    inline def apply(state: Record[String, Any]): DataSetOptions = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataSetOptions]
     }
     
     extension [Self <: DataSetOptions](x: Self) {
       
-      inline def setState(value: Record[String, js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Record[String, Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

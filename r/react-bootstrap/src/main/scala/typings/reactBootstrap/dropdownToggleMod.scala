@@ -10,12 +10,10 @@ object dropdownToggleMod {
   
   @JSImport("react-bootstrap/lib/DropdownToggle", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[DropdownToggleProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[DropdownToggleProps, js.Object, Any]
   
-  @js.native
-  trait DropdownToggle
-    extends Component[DropdownToggleProps, js.Object, js.Any]
+  type DropdownToggle = Component[DropdownToggleProps, js.Object, Any]
   
   trait DropdownToggleProps
     extends StObject

@@ -17,7 +17,7 @@ trait DeploymentStrategy extends StObject {
   var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.undefined
   
   /**
-    * The amount of time AppConfig monitored for alarms before considering the deployment to be complete and no longer eligible for automatic roll back.
+    * The amount of time that AppConfig monitored for alarms before considering the deployment to be complete and no longer eligible for automatic rollback.
     */
   var FinalBakeTimeInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.undefined
   

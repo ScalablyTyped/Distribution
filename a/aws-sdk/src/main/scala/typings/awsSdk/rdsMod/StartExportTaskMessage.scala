@@ -12,17 +12,17 @@ trait StartExportTaskMessage extends StObject {
   var ExportOnly: js.UndefOr[StringList] = js.undefined
   
   /**
-    * A unique identifier for the snapshot export task. This ID isn't an identifier for the Amazon S3 bucket where the snapshot is to be exported to. 
+    * A unique identifier for the snapshot export task. This ID isn't an identifier for the Amazon S3 bucket where the snapshot is to be exported to.
     */
   var ExportTaskIdentifier: String
   
   /**
-    * The name of the IAM role to use for writing to the Amazon S3 bucket when exporting a snapshot. 
+    * The name of the IAM role to use for writing to the Amazon S3 bucket when exporting a snapshot.
     */
   var IamRoleArn: String
   
   /**
-    * The ID of the AWS KMS key to use to encrypt the snapshot exported to Amazon S3. The KMS key ID is the Amazon Resource Name (ARN), the KMS key identifier, or the KMS key alias for the KMS encryption key. The caller of this operation must be authorized to execute the following operations. These can be set in the KMS key policy:    GrantOperation.Encrypt   GrantOperation.Decrypt   GrantOperation.GenerateDataKey   GrantOperation.GenerateDataKeyWithoutPlaintext   GrantOperation.ReEncryptFrom   GrantOperation.ReEncryptTo   GrantOperation.CreateGrant   GrantOperation.DescribeKey   GrantOperation.RetireGrant  
+    * The ID of the Amazon Web Services KMS key to use to encrypt the snapshot exported to Amazon S3. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key. The caller of this operation must be authorized to execute the following operations. These can be set in the Amazon Web Services KMS key policy:   GrantOperation.Encrypt   GrantOperation.Decrypt   GrantOperation.GenerateDataKey   GrantOperation.GenerateDataKeyWithoutPlaintext   GrantOperation.ReEncryptFrom   GrantOperation.ReEncryptTo   GrantOperation.CreateGrant   GrantOperation.DescribeKey   GrantOperation.RetireGrant  
     */
   var KmsKeyId: String
   
@@ -60,7 +60,7 @@ object StartExportTaskMessage {
     
     inline def setExportOnlyUndefined: Self = StObject.set(x, "ExportOnly", js.undefined)
     
-    inline def setExportOnlyVarargs(value: String*): Self = StObject.set(x, "ExportOnly", js.Array(value :_*))
+    inline def setExportOnlyVarargs(value: String*): Self = StObject.set(x, "ExportOnly", js.Array(value*))
     
     inline def setExportTaskIdentifier(value: String): Self = StObject.set(x, "ExportTaskIdentifier", value.asInstanceOf[js.Any])
     

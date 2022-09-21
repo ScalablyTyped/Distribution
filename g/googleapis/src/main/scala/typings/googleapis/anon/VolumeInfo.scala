@@ -21,6 +21,6 @@ object VolumeInfo {
     
     inline def setVolumeInfoUndefined: Self = StObject.set(x, "volumeInfo", js.undefined)
     
-    inline def setVolumeInfoVarargs(value: StorageFree*): Self = StObject.set(x, "volumeInfo", js.Array(value :_*))
+    inline def setVolumeInfoVarargs(value: StorageFree*): Self = StObject.set(x, "volumeInfo", js.Array(value*))
   }
 }

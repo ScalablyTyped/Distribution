@@ -1,7 +1,7 @@
 
 # Scala.js typings for soundex-code
 
-Typings are for version 1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Soundex phonetic algorithm
@@ -10,10 +10,10 @@ Soundex phonetic algorithm
 | ------------------ | :-------------: |
 | Full name          | soundex-code |
 | Keywords           | natural, language, phonetics, soundex, cli, bin |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 13667 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1790.3333333333333 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://words.github.io/soundex-code/)
@@ -24,7 +24,7 @@ Soundex phonetic algorithm
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

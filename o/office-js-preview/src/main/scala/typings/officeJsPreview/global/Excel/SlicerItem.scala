@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a slicer item in a slicer.
   *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.SlicerItem")
 @js.native
-class SlicerItem ()
+open class SlicerItem ()
   extends StObject
      with typings.officeJsPreview.Excel.SlicerItem {
   

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The currently supported iOS devices.
-  */
 trait SchemaIosDeviceCatalog extends StObject {
   
   /**
@@ -42,7 +39,7 @@ object SchemaIosDeviceCatalog {
     
     inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
-    inline def setModelsVarargs(value: SchemaIosModel*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: SchemaIosModel*): Self = StObject.set(x, "models", js.Array(value*))
     
     inline def setRuntimeConfiguration(value: SchemaIosRuntimeConfiguration): Self = StObject.set(x, "runtimeConfiguration", value.asInstanceOf[js.Any])
     
@@ -52,12 +49,12 @@ object SchemaIosDeviceCatalog {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    inline def setVersionsVarargs(value: SchemaIosVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: SchemaIosVersion*): Self = StObject.set(x, "versions", js.Array(value*))
     
     inline def setXcodeVersions(value: js.Array[SchemaXcodeVersion]): Self = StObject.set(x, "xcodeVersions", value.asInstanceOf[js.Any])
     
     inline def setXcodeVersionsUndefined: Self = StObject.set(x, "xcodeVersions", js.undefined)
     
-    inline def setXcodeVersionsVarargs(value: SchemaXcodeVersion*): Self = StObject.set(x, "xcodeVersions", js.Array(value :_*))
+    inline def setXcodeVersionsVarargs(value: SchemaXcodeVersion*): Self = StObject.set(x, "xcodeVersions", js.Array(value*))
   }
 }

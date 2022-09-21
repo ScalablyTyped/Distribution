@@ -6,27 +6,64 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Watermark extends StObject {
   
-  /** angle of text rotation (minimal version: 0.1.60) */
+  /**
+    * Clock-wise rotation angle of the {@link text}, with `0` being normal text
+    * from left to right, and `90` being vertical text from top to bottom.
+    *
+    * Defaults to an angle from the bottom left to the top right depending on the page size
+    * (~ `305` for A4).
+    */
   var angle: js.UndefOr[Double] = js.undefined
   
-  /** bold style of text */
+  /**
+    * Controls whether the {@link text} is bold.
+    *
+    * Defaults to `false`.
+    */
   var bold: js.UndefOr[Boolean] = js.undefined
   
-  /** color of text */
+  /**
+    * Color of the {@link text}.
+    *
+    * Supports well-known color names like `blue` or hexadecimal color strings like `#ccffcc`.
+    *
+    * Defaults to `black`.
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * Name of the font.
+    *
+    * Only built-in and globally declared fonts are available, regardless of the fonts
+    * installed on the system.
+    *
+    * Defaults to `Roboto`.
+    */
   var font: js.UndefOr[String] = js.undefined
   
-  /** own font size of text (ideal size is calculated automatically) (minimal version: 0.1.60) */
+  /**
+    * Font size in `pt`.
+    *
+    * Defaults to a heuristic depending on the length of {@link text} to cover most of the page.
+    */
   var fontSize: js.UndefOr[Double] = js.undefined
   
-  /** italics style of text */
+  /**
+    * Controls whether the {@link text} is italic.
+    *
+    * Defaults to `false`.
+    */
   var italics: js.UndefOr[Boolean] = js.undefined
   
-  /** opacity of text */
+  /**
+    * Opacity of the {@link text}.
+    * Must be between 0 (fully transparent) and 1 (fully opaque).
+    *
+    * Defaults to `0.6`.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
   
-  /** watermark text */
+  /** Text of the watermark. */
   var text: String
 }
 object Watermark {

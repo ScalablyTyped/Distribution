@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CreateBreakTypeRequest")
 @js.native
-class CreateBreakTypeRequest () extends StObject {
+open class CreateBreakTypeRequest () extends StObject {
   
   /**
     * The `BreakType` to be created.

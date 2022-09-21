@@ -9,15 +9,15 @@ trait CustomProceduralTexture
   extends StObject
      with ProceduralTexture {
   
-  /* private */ var _animate: js.Any = js.native
+  /* private */ var _animate: Any = js.native
   
-  /* private */ var _config: js.Any = js.native
+  /* private */ var _config: Any = js.native
   
-  /* private */ var _loadJson: js.Any = js.native
+  /* private */ var _loadJson: Any = js.native
   
-  /* private */ var _texturePath: js.Any = js.native
+  /* private */ var _texturePath: Any = js.native
   
-  /* private */ var _time: js.Any = js.native
+  /* private */ var _time: Any = js.native
   
   /**
     * Define if the texture animates or not.

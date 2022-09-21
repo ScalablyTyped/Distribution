@@ -14,6 +14,8 @@ object languages {
   inline def createDiagnosticCollection(): DiagnosticCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createDiagnosticCollection")().asInstanceOf[DiagnosticCollection]
   inline def createDiagnosticCollection(name: String): DiagnosticCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createDiagnosticCollection")(name.asInstanceOf[js.Any]).asInstanceOf[DiagnosticCollection]
   
+  inline def createLanguageStatusItem(id: String, selector: DocumentSelector): LanguageStatusItem = (^.asInstanceOf[js.Dynamic].applyDynamic("createLanguageStatusItem")(id.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[LanguageStatusItem]
+  
   inline def getDiagnostics(): js.Array[js.Tuple2[Uri, js.Array[Diagnostic]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDiagnostics")().asInstanceOf[js.Array[js.Tuple2[Uri, js.Array[Diagnostic]]]]
   inline def getDiagnostics(resource: Uri): js.Array[Diagnostic] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDiagnostics")(resource.asInstanceOf[js.Any]).asInstanceOf[js.Array[Diagnostic]]
   
@@ -42,11 +44,13 @@ object languages {
     selector: DocumentSelector,
     provider: CompletionItemProvider[CompletionItem],
     triggerCharacters: String*
-  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCompletionItemProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], triggerCharacters.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCompletionItemProvider")((List(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).`++`(triggerCharacters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Disposable]
   
   inline def registerDeclarationProvider(selector: DocumentSelector, provider: DeclarationProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDeclarationProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
   inline def registerDefinitionProvider(selector: DocumentSelector, provider: DefinitionProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDefinitionProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  
+  inline def registerDocumentDropEditProvider(selector: DocumentSelector, provider: DocumentDropEditProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDocumentDropEditProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
   inline def registerDocumentFormattingEditProvider(selector: DocumentSelector, provider: DocumentFormattingEditProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDocumentFormattingEditProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
@@ -79,12 +83,20 @@ object languages {
   
   inline def registerImplementationProvider(selector: DocumentSelector, provider: ImplementationProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerImplementationProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
+  inline def registerInlayHintsProvider(selector: DocumentSelector, provider: InlayHintsProvider[InlayHint]): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerInlayHintsProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  
+  inline def registerInlineCompletionItemProvider(selector: DocumentSelector, provider: InlineCompletionItemProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerInlineCompletionItemProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  
+  inline def registerInlineValuesProvider(selector: DocumentSelector, provider: InlineValuesProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerInlineValuesProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  
+  inline def registerLinkedEditingRangeProvider(selector: DocumentSelector, provider: LinkedEditingRangeProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLinkedEditingRangeProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  
   inline def registerOnTypeFormattingEditProvider(
     selector: DocumentSelector,
     provider: OnTypeFormattingEditProvider,
     firstTriggerCharacter: String,
     moreTriggerCharacter: String*
-  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOnTypeFormattingEditProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], firstTriggerCharacter.asInstanceOf[js.Any], moreTriggerCharacter.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOnTypeFormattingEditProvider")((List(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], firstTriggerCharacter.asInstanceOf[js.Any])).`++`(moreTriggerCharacter.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Disposable]
   
   inline def registerReferenceProvider(selector: DocumentSelector, provider: ReferenceProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerReferenceProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
@@ -97,9 +109,11 @@ object languages {
     provider: SignatureHelpProvider,
     metadata: SignatureHelpProviderMetadata
   ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSignatureHelpProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Disposable]
-  inline def registerSignatureHelpProvider(selector: DocumentSelector, provider: SignatureHelpProvider, triggerCharacters: String*): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSignatureHelpProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], triggerCharacters.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  inline def registerSignatureHelpProvider(selector: DocumentSelector, provider: SignatureHelpProvider, triggerCharacters: String*): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSignatureHelpProvider")((List(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).`++`(triggerCharacters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Disposable]
   
   inline def registerTypeDefinitionProvider(selector: DocumentSelector, provider: TypeDefinitionProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTypeDefinitionProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  
+  inline def registerTypeHierarchyProvider(selector: DocumentSelector, provider: TypeHierarchyProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTypeHierarchyProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
   inline def registerWorkspaceSymbolProvider(provider: WorkspaceSymbolProvider[SymbolInformation]): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("registerWorkspaceSymbolProvider")(provider.asInstanceOf[js.Any]).asInstanceOf[Disposable]
   

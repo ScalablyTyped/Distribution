@@ -20,7 +20,7 @@ trait Comment extends StObject {
   
   def Next(): Comment = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Previous(): Comment = js.native
   

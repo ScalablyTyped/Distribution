@@ -34,7 +34,7 @@ object GoogleCloudVisionV1p3beta1Page {
     
     inline def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
     
-    inline def setBlocksVarargs(value: GoogleCloudVisionV1p3beta1Block*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: GoogleCloudVisionV1p3beta1Block*): Self = StObject.set(x, "blocks", js.Array(value*))
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

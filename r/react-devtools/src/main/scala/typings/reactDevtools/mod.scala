@@ -10,5 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def main(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("main")().asInstanceOf[js.Any]
+  inline def main(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("main")().asInstanceOf[Any]
 }

@@ -19,5 +19,5 @@ object isOctalMod {
   inline def IsOctal_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsOctal")().asInstanceOf[PropertyDecorator]
   inline def IsOctal_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsOctal")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  inline def isOctal(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOctal")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isOctal(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOctal")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

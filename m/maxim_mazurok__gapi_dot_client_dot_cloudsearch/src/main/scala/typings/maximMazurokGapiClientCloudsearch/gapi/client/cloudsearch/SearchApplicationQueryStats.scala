@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SearchApplicationQueryStats extends StObject {
   
-  /** Date for which query stats were calculated. Stats calculated on the next day close to midnight are returned. */
+  /** The date for which query stats were calculated. Stats calculated on the next day close to midnight are returned. */
   var date: js.UndefOr[Date] = js.undefined
   
   var queryCountByStatus: js.UndefOr[js.Array[QueryCountByStatus]] = js.undefined
@@ -28,6 +28,6 @@ object SearchApplicationQueryStats {
     
     inline def setQueryCountByStatusUndefined: Self = StObject.set(x, "queryCountByStatus", js.undefined)
     
-    inline def setQueryCountByStatusVarargs(value: QueryCountByStatus*): Self = StObject.set(x, "queryCountByStatus", js.Array(value :_*))
+    inline def setQueryCountByStatusVarargs(value: QueryCountByStatus*): Self = StObject.set(x, "queryCountByStatus", js.Array(value*))
   }
 }

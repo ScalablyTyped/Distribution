@@ -1,6 +1,6 @@
 package typings.torrentStream
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.torrentStream.TorrentStream.TorrentEngine
 import typings.torrentStream.TorrentStream.TorrentEngineOptions
 import org.scalablytyped.runtime.StObject

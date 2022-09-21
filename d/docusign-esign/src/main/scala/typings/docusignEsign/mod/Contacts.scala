@@ -137,7 +137,7 @@ object Contacts {
     
     inline def setContactPhoneNumbersVarargs(
       value: (/* Details about the phone numbers associated with a specific contact. */ ContactPhoneNumber)*
-    ): Self = StObject.set(x, "contactPhoneNumbers", js.Array(value :_*))
+    ): Self = StObject.set(x, "contactPhoneNumbers", js.Array(value*))
     
     inline def setContactUri(value: String): Self = StObject.set(x, "contactUri", value.asInstanceOf[js.Any])
     
@@ -147,7 +147,7 @@ object Contacts {
     
     inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
-    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value*))
     
     inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails

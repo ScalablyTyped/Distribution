@@ -11,25 +11,24 @@ object depthToSpaceGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/depth_to_space_gpu", "DepthToSpaceProgram")
   @js.native
-  class DepthToSpaceProgram protected ()
+  open class DepthToSpaceProgram protected ()
     extends StObject
        with GPGPUProgram {
-    def this(outputShape: js.Array[Double], blockSize: Double, dataFormat: NCHW) = this()
-    def this(outputShape: js.Array[Double], blockSize: Double, dataFormat: NHWC) = this()
+    def this(outputShape: js.Array[Double], blockSize: Double, dataFormat: NHWC | NCHW) = this()
     
     var blockSize: Double = js.native
     
     var dataFormat: String = js.native
     
-    /* private */ var getDepthCoordString: js.Any = js.native
+    /* private */ var getDepthCoordString: Any = js.native
     
-    /* private */ var getHeightCoordString: js.Any = js.native
+    /* private */ var getHeightCoordString: Any = js.native
     
-    /* private */ var getInputSamplingString: js.Any = js.native
+    /* private */ var getInputSamplingString: Any = js.native
     
-    /* private */ var getOutputDepthSize: js.Any = js.native
+    /* private */ var getOutputDepthSize: Any = js.native
     
-    /* private */ var getWidthCoordString: js.Any = js.native
+    /* private */ var getWidthCoordString: Any = js.native
     
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native

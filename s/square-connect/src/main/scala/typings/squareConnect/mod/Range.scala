@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "Range")
 @js.native
-class Range () extends StObject {
+open class Range () extends StObject {
   
   /**
     * The upper bound of the number range.

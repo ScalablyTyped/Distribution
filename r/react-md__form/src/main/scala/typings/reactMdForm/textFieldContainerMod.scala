@@ -65,6 +65,15 @@ object textFieldContainerMod {
       * field.
       */
     var rightChildren: js.UndefOr[ReactNode] = js.undefined
+    
+    /**
+      * Boolean if the component should gain `flex: 1 1 auto;` which is useful for
+      * full-width behavior within flex containers.
+      *
+      * @defaultValue `false`
+      * @remarks \@since 5.0.0
+      */
+    var stretch: js.UndefOr[Boolean] = js.undefined
   }
   object TextFieldContainerOptions {
     
@@ -102,6 +111,10 @@ object textFieldContainerMod {
       inline def setRightChildren(value: ReactNode): Self = StObject.set(x, "rightChildren", value.asInstanceOf[js.Any])
       
       inline def setRightChildrenUndefined: Self = StObject.set(x, "rightChildren", js.undefined)
+      
+      inline def setStretch(value: Boolean): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
+      
+      inline def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
     }
   }
   

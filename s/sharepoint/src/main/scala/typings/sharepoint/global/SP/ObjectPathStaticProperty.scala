@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ObjectPathStaticProperty")
 @js.native
-class ObjectPathStaticProperty protected ()
+open class ObjectPathStaticProperty protected ()
   extends StObject
      with typings.sharepoint.SP.ObjectPath {
   def this(context: typings.sharepoint.SP.ClientRuntimeContext, typeId: String, propertyName: String) = this()

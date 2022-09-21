@@ -13,10 +13,9 @@ trait SchemaMachineTypesScopedList extends StObject {
   var machineTypes: js.UndefOr[js.Array[SchemaMachineType]] = js.undefined
   
   /**
-    * [Output Only] An informational warning that appears when the machine
-    * types list is empty.
+    * [Output Only] An informational warning that appears when the machine types list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaMachineTypesScopedList {
   
@@ -31,9 +30,11 @@ object SchemaMachineTypesScopedList {
     
     inline def setMachineTypesUndefined: Self = StObject.set(x, "machineTypes", js.undefined)
     
-    inline def setMachineTypesVarargs(value: SchemaMachineType*): Self = StObject.set(x, "machineTypes", js.Array(value :_*))
+    inline def setMachineTypesVarargs(value: SchemaMachineType*): Self = StObject.set(x, "machineTypes", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

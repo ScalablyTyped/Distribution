@@ -1,27 +1,30 @@
 
 # Scala.js typings for typeform__embed
 
-Typings are for version 0.22
+Typings are for version 1.38.0
 
 ## Library description:
-Core library written in Typescript. Compiles to vanilla JavaScript.
+**Typeform/embed** is the core embed library that lets you embed typeforms to your website using vanilla JavaScript.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @typeform/embed |
-| Keywords           | - |
-| # releases         | 71 |
-| # dependents       | 10 |
-| # downloads        | 1518647 |
-| # stars            | 2 |
+| Keywords           | typeform, embed, form, widget, slider, sidetab, popover |
+| # releases         | 144 |
+| # dependents       | 0.0 |
+| # downloads        | 610420.0 |
+| # stars            | 205.0 |
 
 ## Links
+- [Homepage](https://github.com/Typeform/embed/blob/main/packages/embed#readme)
+- [Bugs](https://github.com/Typeform/embed/issues)
+- [Repository](https://github.com/Typeform/embed)
 - [Npm](https://www.npmjs.com/package/%40typeform%2Fembed)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

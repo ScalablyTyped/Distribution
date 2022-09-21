@@ -10,11 +10,9 @@ trait ArcRotateCamera
   extends StObject
      with TargetCamera {
   
-  /* protected */ var _YToUpMatrix: Matrix = js.native
+  /* private */ var _autoRotationBehavior: Any = js.native
   
-  /* private */ var _autoRotationBehavior: js.Any = js.native
-  
-  /* private */ var _bouncingBehavior: js.Any = js.native
+  /* private */ var _bouncingBehavior: Any = js.native
   
   /* protected */ def _checkLimits(): Unit = js.native
   
@@ -24,13 +22,11 @@ trait ArcRotateCamera
   
   /* protected */ var _collisionVelocity: Vector3 = js.native
   
-  /* private */ var _computationVector: js.Any = js.native
+  /* private */ var _computationVector: Any = js.native
   
-  /* private */ var _framingBehavior: js.Any = js.native
+  /* private */ var _framingBehavior: Any = js.native
   
   /* protected */ def _getTargetPosition(): Vector3 = js.native
-  
-  /* protected */ var _localDirection: Vector3 = js.native
   
   /* protected */ var _newPosition: Vector3 = js.native
   
@@ -48,15 +44,15 @@ trait ArcRotateCamera
   
   /* protected */ var _previousRadius: Double = js.native
   
-  /* private */ var _storedAlpha: js.Any = js.native
+  /* private */ var _storedAlpha: Any = js.native
   
-  /* private */ var _storedBeta: js.Any = js.native
+  /* private */ var _storedBeta: Any = js.native
   
-  /* private */ var _storedRadius: js.Any = js.native
+  /* private */ var _storedRadius: Any = js.native
   
-  /* private */ var _storedTarget: js.Any = js.native
+  /* private */ var _storedTarget: Any = js.native
   
-  /* private */ var _storedTargetScreenOffset: js.Any = js.native
+  /* private */ var _storedTargetScreenOffset: Any = js.native
   
   /* protected */ var _target: Vector3 = js.native
   
@@ -70,6 +66,8 @@ trait ArcRotateCamera
   
   /** @hidden */
   var _useCtrlForPanning: Boolean = js.native
+  
+  /* protected */ var _yToUpMatrix: Matrix = js.native
   
   /**
     * Allows the camera to be completely reversed.
@@ -96,21 +94,21 @@ trait ArcRotateCamera
   
   /**
     * Attached controls to the current camera.
-    * @param ignored defines an ignored parameter kept for backward compatibility. If you want to define the source input element, you can set engine.inputElement before calling camera.attachControl
+    * @param ignored defines an ignored parameter kept for backward compatibility.
     * @param noPreventDefault Defines whether event caught by the controls should call preventdefault() (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
-    * @param useCtrlForPanning  Defines whether ctrl is used for paning within the controls
+    * @param useCtrlForPanning  Defines whether ctrl is used for panning within the controls
     */
-  def attachControl(ignored: js.Any, noPreventDefault: Boolean, useCtrlForPanning: Boolean): Unit = js.native
+  def attachControl(ignored: Any, noPreventDefault: Boolean, useCtrlForPanning: Boolean): Unit = js.native
   /**
     * Attached controls to the current camera.
     * @param noPreventDefault Defines whether event caught by the controls should call preventdefault() (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
-    * @param useCtrlForPanning  Defines whether ctrl is used for paning within the controls
+    * @param useCtrlForPanning  Defines whether ctrl is used for panning within the controls
     */
   def attachControl(noPreventDefault: Boolean, useCtrlForPanning: Boolean): Unit = js.native
   /**
     * Attached controls to the current camera.
     * @param noPreventDefault Defines whether event caught by the controls should call preventdefault() (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
-    * @param useCtrlForPanning  Defines whether ctrl is used for paning within the controls
+    * @param useCtrlForPanning  Defines whether ctrl is used for panning within the controls
     * @param panningMouseButton Defines whether panning is allowed through mouse click button
     */
   def attachControl(noPreventDefault: Boolean, useCtrlForPanning: Boolean, panningMouseButton: Double): Unit = js.native
@@ -239,6 +237,11 @@ trait ArcRotateCamera
   var lowerRadiusLimit: Nullable[Double] = js.native
   
   /**
+    * Defines if camera will eliminate transform on y axis.
+    */
+  var mapPanning: Boolean = js.native
+  
+  /**
     * Event raised when the camera is colliding with a mesh.
     */
   def onCollide(collidedMesh: AbstractMesh): Unit = js.native
@@ -249,24 +252,30 @@ trait ArcRotateCamera
   var onMeshTargetChangedObservable: Observable[Nullable[AbstractMesh]] = js.native
   
   /**
+    * Defines an override value to use as the parameter to setTarget.
+    * This allows the parameter to be specified when animating the target (e.g. using FramingBehavior).
+    */
+  var overrideCloneAlphaBetaRadius: Nullable[Boolean] = js.native
+  
+  /**
     * Defines the allowed panning axis.
     */
   var panningAxis: Vector3 = js.native
   
   /**
     * Defines the maximum distance the camera can pan.
-    * This could help keeping the cammera always in your scene.
+    * This could help keeping the camera always in your scene.
     */
   var panningDistanceLimit: Nullable[Double] = js.native
   
   /**
     * Defines the value of the inertia used during panning.
-    * 0 would mean stop inertia and one would mean no decelleration at all.
+    * 0 would mean stop inertia and one would mean no deceleration at all.
     */
   var panningInertia: Double = js.native
   
   /**
-    * Defines the target of the camera before paning.
+    * Defines the target of the camera before panning.
     */
   var panningOriginTarget: Vector3 = js.native
   
@@ -321,17 +330,60 @@ trait ArcRotateCamera
   /**
     * Defines the target the camera should look at.
     * This will automatically adapt alpha beta and radius to fit within the new target.
+    * Please note that setting a target as a mesh will disable panning.
     * @param target Defines the new target as a Vector or a mesh
     * @param toBoundingCenter In case of a mesh target, defines whether to target the mesh position or its bounding information center
     * @param allowSamePosition If false, prevents reapplying the new computed position if it is identical to the current one (optim)
+    * @param cloneAlphaBetaRadius If true, replicate the current setup (alpha, beta, radius) on the new target
     */
   def setTarget(target: AbstractMesh): Unit = js.native
   def setTarget(target: AbstractMesh, toBoundingCenter: Boolean): Unit = js.native
   def setTarget(target: AbstractMesh, toBoundingCenter: Boolean, allowSamePosition: Boolean): Unit = js.native
+  def setTarget(
+    target: AbstractMesh,
+    toBoundingCenter: Boolean,
+    allowSamePosition: Boolean,
+    cloneAlphaBetaRadius: Boolean
+  ): Unit = js.native
+  def setTarget(
+    target: AbstractMesh,
+    toBoundingCenter: Boolean,
+    allowSamePosition: Unit,
+    cloneAlphaBetaRadius: Boolean
+  ): Unit = js.native
   def setTarget(target: AbstractMesh, toBoundingCenter: Unit, allowSamePosition: Boolean): Unit = js.native
+  def setTarget(
+    target: AbstractMesh,
+    toBoundingCenter: Unit,
+    allowSamePosition: Boolean,
+    cloneAlphaBetaRadius: Boolean
+  ): Unit = js.native
+  def setTarget(
+    target: AbstractMesh,
+    toBoundingCenter: Unit,
+    allowSamePosition: Unit,
+    cloneAlphaBetaRadius: Boolean
+  ): Unit = js.native
   def setTarget(target: Vector3, toBoundingCenter: Boolean): Unit = js.native
   def setTarget(target: Vector3, toBoundingCenter: Boolean, allowSamePosition: Boolean): Unit = js.native
+  def setTarget(
+    target: Vector3,
+    toBoundingCenter: Boolean,
+    allowSamePosition: Boolean,
+    cloneAlphaBetaRadius: Boolean
+  ): Unit = js.native
+  def setTarget(target: Vector3, toBoundingCenter: Boolean, allowSamePosition: Unit, cloneAlphaBetaRadius: Boolean): Unit = js.native
   def setTarget(target: Vector3, toBoundingCenter: Unit, allowSamePosition: Boolean): Unit = js.native
+  def setTarget(target: Vector3, toBoundingCenter: Unit, allowSamePosition: Boolean, cloneAlphaBetaRadius: Boolean): Unit = js.native
+  def setTarget(target: Vector3, toBoundingCenter: Unit, allowSamePosition: Unit, cloneAlphaBetaRadius: Boolean): Unit = js.native
+  
+  /**
+    * Defines the target mesh of the camera.
+    * The camera looks towards it from the radius distance.
+    * Please note that setting a target host will disable panning.
+    */
+  def targetHost: Nullable[AbstractMesh] = js.native
+  def targetHost_=(value: Nullable[AbstractMesh]): Unit = js.native
   
   /**
     * Defines a screen offset for the camera position.
@@ -417,7 +469,14 @@ trait ArcRotateCamera
   def zoomOn(meshes: Unit, doNotUpdateMaxZ: Boolean): Unit = js.native
   
   /**
-    * Defines how much the radius should be scaled while zomming on a particular mesh (through the zoomOn function)
+    * Defines how much the radius should be scaled while zooming on a particular mesh (through the zoomOn function)
     */
   var zoomOnFactor: Double = js.native
+  
+  /**
+    * Gets or Set the boolean value that controls whether or not the mouse wheel
+    * zooms to the location of the mouse pointer or not.  The default is false.
+    */
+  def zoomToMouseLocation: Boolean = js.native
+  def zoomToMouseLocation_=(value: Boolean): Unit = js.native
 }

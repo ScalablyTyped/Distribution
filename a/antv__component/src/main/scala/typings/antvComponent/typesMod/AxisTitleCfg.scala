@@ -14,10 +14,26 @@ trait AxisTitleCfg extends StObject {
   var autoRotate: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * 坐标轴标题详细信息
+    */
+  var description: js.UndefOr[String] = js.undefined
+  
+  /**
+    * 坐标轴标题详情icon
+    */
+  var iconStyle: js.UndefOr[AxisIconStyle] = js.undefined
+  
+  /**
     * 标题距离坐标轴的距离
     * @type {number}
     */
   var offset: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * 文本对齐方式
+    * @type {string} start, center, end
+    */
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * 标题距离坐标轴文本的距离
@@ -49,9 +65,21 @@ object AxisTitleCfg {
     
     inline def setAutoRotateUndefined: Self = StObject.set(x, "autoRotate", js.undefined)
     
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setIconStyle(value: AxisIconStyle): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
+    
+    inline def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
+    
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     

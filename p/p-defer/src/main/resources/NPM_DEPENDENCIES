@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-defer" : "3.0.0"
+      "p-defer" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "p-defer" : "3.0.0"
+      "p-defer" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

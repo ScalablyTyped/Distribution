@@ -23,7 +23,7 @@ trait Slider
   @JSName("options")
   var options_Slider: SliderOptions = js.native
   
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   
   def value(): Double = js.native
   def value(value: Double): Unit = js.native

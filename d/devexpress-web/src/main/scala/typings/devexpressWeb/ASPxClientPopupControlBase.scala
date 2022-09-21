@@ -75,12 +75,12 @@ trait ASPxClientPopupControlBase
   /**
     * Returns an iframe object containing a web page specified via the control's ASPxPopupControlBase.ContentUrl property (or the client ASPxClientPopupControlBase.SetContentUrl method).
     */
-  def GetContentIFrame(): js.Any = js.native
+  def GetContentIFrame(): Any = js.native
   
   /**
     * Returns an iframe object containing a web page specified via the control's ASPxPopupControlBase.ContentUrl property (or the client ASPxClientPopupControlBase.SetContentUrl method).
     */
-  def GetContentIFrameWindow(): js.Any = js.native
+  def GetContentIFrameWindow(): Any = js.native
   
   /**
     * Returns the URL pointing to the web page displayed within the control's window.
@@ -245,7 +245,7 @@ trait ASPxClientPopupControlBase
     * Invokes the control's window and displays it over the specified HTML element.
     * @param htmlElement An object specifying the HTML element relative to whose position the window is invoked.
     */
-  def ShowAtElement(htmlElement: js.Any): Unit = js.native
+  def ShowAtElement(htmlElement: Any): Unit = js.native
   
   /**
     * Invokes the control's window and displays it over an HTML element specified by its unique identifier.

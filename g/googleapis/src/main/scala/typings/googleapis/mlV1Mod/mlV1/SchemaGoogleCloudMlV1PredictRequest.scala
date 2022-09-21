@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for predictions to be issued against a trained model.
-  */
 trait SchemaGoogleCloudMlV1PredictRequest extends StObject {
   
   /**
-    *  Required. The prediction request body.
+    *  Required. The prediction request body. Refer to the [request body details section](#request-body-details) for more information on how to structure your request.
     */
   var httpBody: js.UndefOr[SchemaGoogleApiHttpBody] = js.undefined
 }

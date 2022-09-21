@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientSecuritycenter.anon
 
+import typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter.Finding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,8 +27,8 @@ trait UpdateMask extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * The relative resource name of the settings. See: https://cloud.google.com/apis/design/resource_names#relative_resource_name Example:
-    * "organizations/{organization_id}/organizationSettings".
+    * The relative resource name of this finding. See: https://cloud.google.com/apis/design/resource_names#relative_resource_name Example:
+    * "organizations/{organization_id}/sources/{source_id}/findings/{finding_id}"
     */
   var name: String
   
@@ -40,7 +41,13 @@ trait UpdateMask extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** The FieldMask to use when updating the settings resource. If empty all mutable fields will be updated. */
+  /** Request body */
+  var resource: Finding
+  
+  /**
+    * The FieldMask to use when updating the finding resource. This field should not be specified when creating a finding. When updating a finding, an empty mask is treated as
+    * updating all mutable fields and replacing source_properties. Individual source_properties can be added/updated by using "source_properties." in the field mask.
+    */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -51,8 +58,8 @@ trait UpdateMask extends StObject {
 }
 object UpdateMask {
   
-  inline def apply(name: String): UpdateMask = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: Finding): UpdateMask = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMask]
   }
   
@@ -95,6 +102,8 @@ object UpdateMask {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: Finding): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,7 @@ object anon {
     
     var count: js.UndefOr[Double] = js.undefined
     
-    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var data: js.UndefOr[js.Array[Any]] = js.undefined
     
     var deselectOnClickaway: js.UndefOr[Boolean] = js.undefined
     
@@ -35,7 +35,7 @@ object anon {
     
     var headerToolbarMode: js.UndefOr[default | filter | String] = js.undefined
     
-    var height: js.UndefOr[js.Any] = js.undefined
+    var height: js.UndefOr[Any] = js.undefined
     
     var multiSelectable: js.UndefOr[Boolean] = js.undefined
     
@@ -43,9 +43,9 @@ object anon {
         js.Function5[
           /* rowIndex */ Double, 
           /* columnIndex */ Double, 
-          /* row */ js.Any, 
-          /* columnValue */ js.Any, 
-          /* event */ js.Any, 
+          /* row */ Any, 
+          /* columnValue */ Any, 
+          /* event */ Any, 
           Unit
         ]
       ] = js.undefined
@@ -54,22 +54,22 @@ object anon {
         js.Function5[
           /* rowIndex */ Double, 
           /* columnIndex */ Double, 
-          /* row */ js.Any, 
-          /* columnValue */ js.Any, 
-          /* event */ js.Any, 
+          /* row */ Any, 
+          /* columnValue */ Any, 
+          /* event */ Any, 
           Unit
         ]
       ] = js.undefined
     
     var onFilterValueChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onNextPageClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+    var onNextPageClick: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
     
-    var onPreviousPageClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+    var onPreviousPageClick: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
     
-    var onRowSelection: js.UndefOr[js.Function1[/* selectedRows */ js.Any, Unit]] = js.undefined
+    var onRowSelection: js.UndefOr[js.Function1[/* selectedRows */ Any, Unit]] = js.undefined
     
-    var onRowSizeChange: js.UndefOr[js.Function2[/* index */ Double, /* value */ js.Any, Unit]] = js.undefined
+    var onRowSizeChange: js.UndefOr[js.Function2[/* index */ Double, /* value */ Any, Unit]] = js.undefined
     
     var onSortOrderChange: js.UndefOr[js.Function2[/* key */ String, /* order */ String, Unit]] = js.undefined
     
@@ -97,7 +97,7 @@ object anon {
     
     var stripedRows: js.UndefOr[Boolean] = js.undefined
     
-    var summaryLabelTemplate: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, /* count */ Double, js.Any]] = js.undefined
+    var summaryLabelTemplate: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, /* count */ Double, Any]] = js.undefined
     
     var tableBodyStyle: js.UndefOr[CSSProperties] = js.undefined
     
@@ -117,7 +117,7 @@ object anon {
     
     var titleStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var toolbarIconRight: js.UndefOr[js.Any] = js.undefined
+    var toolbarIconRight: js.UndefOr[Any] = js.undefined
   }
   object PartialDataTableProps {
     
@@ -132,17 +132,17 @@ object anon {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
       inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDeselectOnClickaway(value: Boolean): Self = StObject.set(x, "deselectOnClickaway", value.asInstanceOf[js.Any])
       
@@ -176,7 +176,7 @@ object anon {
       
       inline def setHeaderToolbarModeUndefined: Self = StObject.set(x, "headerToolbarMode", js.undefined)
       
-      inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
@@ -185,13 +185,13 @@ object anon {
       inline def setMultiSelectableUndefined: Self = StObject.set(x, "multiSelectable", js.undefined)
       
       inline def setOnCellClick(
-        value: (/* rowIndex */ Double, /* columnIndex */ Double, /* row */ js.Any, /* columnValue */ js.Any, /* event */ js.Any) => Unit
+        value: (/* rowIndex */ Double, /* columnIndex */ Double, /* row */ Any, /* columnValue */ Any, /* event */ Any) => Unit
       ): Self = StObject.set(x, "onCellClick", js.Any.fromFunction5(value))
       
       inline def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
       
       inline def setOnCellDoubleClick(
-        value: (/* rowIndex */ Double, /* columnIndex */ Double, /* row */ js.Any, /* columnValue */ js.Any, /* event */ js.Any) => Unit
+        value: (/* rowIndex */ Double, /* columnIndex */ Double, /* row */ Any, /* columnValue */ Any, /* event */ Any) => Unit
       ): Self = StObject.set(x, "onCellDoubleClick", js.Any.fromFunction5(value))
       
       inline def setOnCellDoubleClickUndefined: Self = StObject.set(x, "onCellDoubleClick", js.undefined)
@@ -200,19 +200,19 @@ object anon {
       
       inline def setOnFilterValueChangeUndefined: Self = StObject.set(x, "onFilterValueChange", js.undefined)
       
-      inline def setOnNextPageClick(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onNextPageClick", js.Any.fromFunction1(value))
+      inline def setOnNextPageClick(value: /* event */ Any => Unit): Self = StObject.set(x, "onNextPageClick", js.Any.fromFunction1(value))
       
       inline def setOnNextPageClickUndefined: Self = StObject.set(x, "onNextPageClick", js.undefined)
       
-      inline def setOnPreviousPageClick(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onPreviousPageClick", js.Any.fromFunction1(value))
+      inline def setOnPreviousPageClick(value: /* event */ Any => Unit): Self = StObject.set(x, "onPreviousPageClick", js.Any.fromFunction1(value))
       
       inline def setOnPreviousPageClickUndefined: Self = StObject.set(x, "onPreviousPageClick", js.undefined)
       
-      inline def setOnRowSelection(value: /* selectedRows */ js.Any => Unit): Self = StObject.set(x, "onRowSelection", js.Any.fromFunction1(value))
+      inline def setOnRowSelection(value: /* selectedRows */ Any => Unit): Self = StObject.set(x, "onRowSelection", js.Any.fromFunction1(value))
       
       inline def setOnRowSelectionUndefined: Self = StObject.set(x, "onRowSelection", js.undefined)
       
-      inline def setOnRowSizeChange(value: (/* index */ Double, /* value */ js.Any) => Unit): Self = StObject.set(x, "onRowSizeChange", js.Any.fromFunction2(value))
+      inline def setOnRowSizeChange(value: (/* index */ Double, /* value */ Any) => Unit): Self = StObject.set(x, "onRowSizeChange", js.Any.fromFunction2(value))
       
       inline def setOnRowSizeChangeUndefined: Self = StObject.set(x, "onRowSizeChange", js.undefined)
       
@@ -234,7 +234,7 @@ object anon {
       
       inline def setRowSizeListUndefined: Self = StObject.set(x, "rowSizeList", js.undefined)
       
-      inline def setRowSizeListVarargs(value: Double*): Self = StObject.set(x, "rowSizeList", js.Array(value :_*))
+      inline def setRowSizeListVarargs(value: Double*): Self = StObject.set(x, "rowSizeList", js.Array(value*))
       
       inline def setRowSizeUndefined: Self = StObject.set(x, "rowSize", js.undefined)
       
@@ -270,7 +270,7 @@ object anon {
       
       inline def setStripedRowsUndefined: Self = StObject.set(x, "stripedRows", js.undefined)
       
-      inline def setSummaryLabelTemplate(value: (/* start */ Double, /* end */ Double, /* count */ Double) => js.Any): Self = StObject.set(x, "summaryLabelTemplate", js.Any.fromFunction3(value))
+      inline def setSummaryLabelTemplate(value: (/* start */ Double, /* end */ Double, /* count */ Double) => Any): Self = StObject.set(x, "summaryLabelTemplate", js.Any.fromFunction3(value))
       
       inline def setSummaryLabelTemplateUndefined: Self = StObject.set(x, "summaryLabelTemplate", js.undefined)
       
@@ -310,7 +310,7 @@ object anon {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setToolbarIconRight(value: js.Any): Self = StObject.set(x, "toolbarIconRight", value.asInstanceOf[js.Any])
+      inline def setToolbarIconRight(value: Any): Self = StObject.set(x, "toolbarIconRight", value.asInstanceOf[js.Any])
       
       inline def setToolbarIconRightUndefined: Self = StObject.set(x, "toolbarIconRight", js.undefined)
     }

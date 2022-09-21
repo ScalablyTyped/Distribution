@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Enumerates PlayReady secure stop service requests. */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadySecureStopIterable")
 @js.native
-class PlayReadySecureStopIterable protected ()
+open class PlayReadySecureStopIterable protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadySecureStopIterable {
   /**

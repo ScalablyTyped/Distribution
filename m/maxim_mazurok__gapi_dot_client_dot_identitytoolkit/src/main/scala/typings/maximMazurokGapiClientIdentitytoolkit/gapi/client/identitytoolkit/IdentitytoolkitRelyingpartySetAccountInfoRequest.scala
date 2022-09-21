@@ -108,13 +108,13 @@ object IdentitytoolkitRelyingpartySetAccountInfoRequest {
     
     inline def setDeleteAttributeUndefined: Self = StObject.set(x, "deleteAttribute", js.undefined)
     
-    inline def setDeleteAttributeVarargs(value: String*): Self = StObject.set(x, "deleteAttribute", js.Array(value :_*))
+    inline def setDeleteAttributeVarargs(value: String*): Self = StObject.set(x, "deleteAttribute", js.Array(value*))
     
     inline def setDeleteProvider(value: js.Array[String]): Self = StObject.set(x, "deleteProvider", value.asInstanceOf[js.Any])
     
     inline def setDeleteProviderUndefined: Self = StObject.set(x, "deleteProvider", js.undefined)
     
-    inline def setDeleteProviderVarargs(value: String*): Self = StObject.set(x, "deleteProvider", js.Array(value :_*))
+    inline def setDeleteProviderVarargs(value: String*): Self = StObject.set(x, "deleteProvider", js.Array(value*))
     
     inline def setDisableUser(value: Boolean): Self = StObject.set(x, "disableUser", value.asInstanceOf[js.Any])
     
@@ -168,7 +168,7 @@ object IdentitytoolkitRelyingpartySetAccountInfoRequest {
     
     inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    inline def setProviderVarargs(value: String*): Self = StObject.set(x, "provider", js.Array(value :_*))
+    inline def setProviderVarargs(value: String*): Self = StObject.set(x, "provider", js.Array(value*))
     
     inline def setReturnSecureToken(value: Boolean): Self = StObject.set(x, "returnSecureToken", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ trait TimeZone
   
   def get_information(): TimeZoneInformation = js.native
   
-  def localTimeToUTC(date: Date): DateTimeResult = js.native
+  def localTimeToUTC(date: js.Date): DateTimeResult = js.native
   
-  def utcToLocalTime(date: Date): DateTimeResult = js.native
+  def utcToLocalTime(date: js.Date): DateTimeResult = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for pem-jwk
 
-Typings are for version 1.5
+Typings are for version 2.0
 
 ## Library description:
 convert between PEM and JWK formats
@@ -10,10 +10,10 @@ convert between PEM and JWK formats
 | ------------------ | :-------------: |
 | Full name          | pem-jwk |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 58 |
-| # downloads        | 1666509 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 328661.0 |
+| # stars            | 61.0 |
 
 ## Links
 - [Homepage](https://github.com/dannycoates/pem-jwk)

@@ -26,14 +26,14 @@ object libCalloutMod {
   
   @JSImport("office-ui-fabric-react/lib/Callout", "Callout")
   @js.native
-  class Callout protected ()
+  open class Callout protected ()
     extends typings.officeUiFabricReact.calloutMod.Callout {
     def this(props: ICalloutProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ICalloutProps, context: js.Any) = this()
+    def this(props: ICalloutProps, context: Any) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/Callout", "CalloutContent")
@@ -42,7 +42,7 @@ object libCalloutMod {
   
   @JSImport("office-ui-fabric-react/lib/Callout", "CalloutContentBase")
   @js.native
-  class CalloutContentBase protected ()
+  open class CalloutContentBase protected ()
     extends typings.officeUiFabricReact.calloutMod.CalloutContentBase {
     def this(props: ICalloutProps) = this()
   }

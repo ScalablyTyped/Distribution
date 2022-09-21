@@ -9,28 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Ensures a value is a valid error by making it one if not.
-  If `input` is an `Error`, any missing `Error` properties will be added.
-  If it's not an `Error`, `input` is converted to an `Error`.
-  @example
-  ```
-  import ensureError = require('ensure-error');
-  const error = new TypeError('🦄');
-  error.name = '';
-  console.log(error.name);
-  //=> ''
-  console.log(ensureError(error).name);
-  //=> 'TypeError'
-  console.log(ensureError(10));
-  //=> [NonError: 10]
-  ```
-  */
-  inline def apply[T](input: T): IfAny[T, ErrorWithStackError, NonError | ErrorWithStack[T]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[IfAny[T, ErrorWithStackError, NonError | ErrorWithStack[T]]]
-  
   @JSImport("ensure-error", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default[T](input: T): IfAny[T, ErrorWithStackError, NonError | ErrorWithStack[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[IfAny[T, ErrorWithStackError, NonError | ErrorWithStack[T]]]
   
   type ErrorWithStack[T] = T & Stack
   

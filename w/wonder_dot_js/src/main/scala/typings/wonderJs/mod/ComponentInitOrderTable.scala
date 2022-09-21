@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "ComponentInitOrderTable")
 @js.native
-class ComponentInitOrderTable ()
+open class ComponentInitOrderTable ()
   extends typings.wonderJs.componentInitOrderTableMod.ComponentInitOrderTable
 /* static members */
 object ComponentInitOrderTable {

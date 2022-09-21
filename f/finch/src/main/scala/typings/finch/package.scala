@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 type FinchCallback = js.Function2[
-/* bindings */ js.UndefOr[js.Any], 
-/* childCallback */ js.UndefOr[js.Function0[scala.Unit]], 
-js.Any]
+/* bindings */ js.UndefOr[Any], 
+/* childCallback */ js.UndefOr[js.Function0[Unit]], 
+Any]
 
-type ObserveCallback = js.Function1[/* repeated */ js.Any, java.lang.String]
+type ObserveCallback = js.Function1[/* repeated */ Any, String]

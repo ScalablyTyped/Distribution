@@ -8,19 +8,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AudioBuffer extends StObject {
   
-  def copyFromChannel(destination: Float32Array, channelNumber: Double): Unit = js.native
-  def copyFromChannel(destination: Float32Array, channelNumber: Double, bufferOffset: Double): Unit = js.native
+  /* standard dom */
+  def copyFromChannel(destination: js.typedarray.Float32Array, channelNumber: Double): Unit = js.native
+  def copyFromChannel(destination: js.typedarray.Float32Array, channelNumber: Double, bufferOffset: Double): Unit = js.native
   
-  def copyToChannel(source: Float32Array, channelNumber: Double): Unit = js.native
-  def copyToChannel(source: Float32Array, channelNumber: Double, bufferOffset: Double): Unit = js.native
+  /* standard dom */
+  def copyToChannel(source: js.typedarray.Float32Array, channelNumber: Double): Unit = js.native
+  def copyToChannel(source: js.typedarray.Float32Array, channelNumber: Double, bufferOffset: Double): Unit = js.native
   
+  /* standard dom */
   val duration: Double = js.native
   
-  def getChannelData(channel: Double): Float32Array = js.native
+  /* standard dom */
+  def getChannelData(channel: Double): js.typedarray.Float32Array = js.native
   
+  /* standard dom */
   val length: Double = js.native
   
+  /* standard dom */
   val numberOfChannels: Double = js.native
   
+  /* standard dom */
   val sampleRate: Double = js.native
 }

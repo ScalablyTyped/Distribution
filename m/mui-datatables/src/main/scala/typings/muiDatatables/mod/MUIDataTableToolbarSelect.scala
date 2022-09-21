@@ -11,13 +11,13 @@ trait MUIDataTableToolbarSelect extends StObject {
   
   var displayData: js.UndefOr[DisplayData] = js.undefined
   
-  var onRowsDelete: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
+  var onRowsDelete: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
   
   var options: MUIDataTableOptions
   
   var rowSelected: js.UndefOr[Boolean] = js.undefined
   
-  var selectRowUpdate: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
+  var selectRowUpdate: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
 }
 object MUIDataTableToolbarSelect {
   
@@ -36,9 +36,9 @@ object MUIDataTableToolbarSelect {
     
     inline def setDisplayDataUndefined: Self = StObject.set(x, "displayData", js.undefined)
     
-    inline def setDisplayDataVarargs(value: Data*): Self = StObject.set(x, "displayData", js.Array(value :_*))
+    inline def setDisplayDataVarargs(value: Data*): Self = StObject.set(x, "displayData", js.Array(value*))
     
-    inline def setOnRowsDelete(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onRowsDelete", js.Any.fromFunction1(value))
+    inline def setOnRowsDelete(value: /* args */ Any => Any): Self = StObject.set(x, "onRowsDelete", js.Any.fromFunction1(value))
     
     inline def setOnRowsDeleteUndefined: Self = StObject.set(x, "onRowsDelete", js.undefined)
     
@@ -48,7 +48,7 @@ object MUIDataTableToolbarSelect {
     
     inline def setRowSelectedUndefined: Self = StObject.set(x, "rowSelected", js.undefined)
     
-    inline def setSelectRowUpdate(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "selectRowUpdate", js.Any.fromFunction1(value))
+    inline def setSelectRowUpdate(value: /* args */ Any => Any): Self = StObject.set(x, "selectRowUpdate", js.Any.fromFunction1(value))
     
     inline def setSelectRowUpdateUndefined: Self = StObject.set(x, "selectRowUpdate", js.undefined)
   }

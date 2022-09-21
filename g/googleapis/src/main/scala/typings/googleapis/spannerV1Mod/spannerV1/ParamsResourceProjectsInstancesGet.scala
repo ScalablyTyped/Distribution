@@ -1,9 +1,5 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,12 @@ trait ParamsResourceProjectsInstancesGet
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * If field_mask is present, specifies the subset of Instance fields that should be returned. If absent, all Instance fields are returned.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var fieldMask: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The name of the requested instance. Values are of the form
-    * `projects/<project>/instances/<instance>`.
+    * Required. The name of the requested instance. Values are of the form `projects//instances/`.
     */
   var name: js.UndefOr[String] = js.undefined
 }
@@ -32,9 +27,9 @@ object ParamsResourceProjectsInstancesGet {
   
   extension [Self <: ParamsResourceProjectsInstancesGet](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setFieldMask(value: String): Self = StObject.set(x, "fieldMask", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setFieldMaskUndefined: Self = StObject.set(x, "fieldMask", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

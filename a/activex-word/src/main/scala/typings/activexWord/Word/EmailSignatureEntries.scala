@@ -14,9 +14,9 @@ trait EmailSignatureEntries extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): EmailSignatureEntry
+  def Item(Index: Any): EmailSignatureEntry
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.EmailSignatureEntries_typekey")
   var WordDotEmailSignatureEntries_typekey: EmailSignatureEntries
@@ -28,8 +28,8 @@ object EmailSignatureEntries {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => EmailSignatureEntry,
-    Parent: js.Any,
+    Item: Any => EmailSignatureEntry,
+    Parent: Any,
     WordDotEmailSignatureEntries_typekey: EmailSignatureEntries
   ): EmailSignatureEntries = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -47,9 +47,9 @@ object EmailSignatureEntries {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => EmailSignatureEntry): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => EmailSignatureEntry): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotEmailSignatureEntries_typekey(value: EmailSignatureEntries): Self = StObject.set(x, "Word.EmailSignatureEntries_typekey", value.asInstanceOf[js.Any])
   }

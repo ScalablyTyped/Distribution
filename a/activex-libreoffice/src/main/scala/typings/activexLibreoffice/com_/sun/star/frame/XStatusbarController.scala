@@ -44,7 +44,7 @@ trait XStatusbarController
     * @param bMouseEvent `TRUE` if the command is based on a mouse event, otherwise `FALSE` .
     * @param aData for future use only.
     */
-  def command(aPos: Point, nCommand: Double, bMouseEvent: Boolean, aData: js.Any): Unit
+  def command(aPos: Point, nCommand: Double, bMouseEvent: Boolean, aData: Any): Unit
   
   /**
     * is called by a status bar if the user double-clicked with mouse into the field of the corresponding control.
@@ -90,16 +90,16 @@ object XStatusbarController {
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     click: Point => Unit,
-    command: (Point, Double, Boolean, js.Any) => Unit,
+    command: (Point, Double, Boolean, Any) => Unit,
     dispose: () => Unit,
     disposing: EventObject => Unit,
     doubleClick: Point => Unit,
-    initialize: SeqEquiv[js.Any] => Unit,
+    initialize: SeqEquiv[Any] => Unit,
     mouseButtonDown: MouseEvent => Boolean,
     mouseButtonUp: MouseEvent => Boolean,
     mouseMove: MouseEvent => Boolean,
     paint: (XGraphics, Rectangle, Double) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     statusChanged: FeatureStateEvent => Unit,
@@ -113,7 +113,7 @@ object XStatusbarController {
     
     inline def setClick(value: Point => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
-    inline def setCommand(value: (Point, Double, Boolean, js.Any) => Unit): Self = StObject.set(x, "command", js.Any.fromFunction4(value))
+    inline def setCommand(value: (Point, Double, Boolean, Any) => Unit): Self = StObject.set(x, "command", js.Any.fromFunction4(value))
     
     inline def setDoubleClick(value: Point => Unit): Self = StObject.set(x, "doubleClick", js.Any.fromFunction1(value))
     

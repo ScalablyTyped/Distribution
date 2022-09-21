@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NodeGroupNode extends StObject {
   
+  /** Accelerators for this node. */
+  var accelerators: js.UndefOr[js.Array[AcceleratorConfig]] = js.undefined
+  
   /** CPU overcommit. */
   var cpuOvercommitType: js.UndefOr[String] = js.undefined
+  
+  /** Local disk configurations. */
+  var disks: js.UndefOr[js.Array[LocalDisk]] = js.undefined
   
   /** Instances scheduled on this node. */
   var instances: js.UndefOr[js.Array[String]] = js.undefined
@@ -17,6 +23,9 @@ trait NodeGroupNode extends StObject {
   
   /** The type of this node. */
   var nodeType: js.UndefOr[String] = js.undefined
+  
+  /** [Output Only] Reserved for future use. */
+  var satisfiesPzs: js.UndefOr[Boolean] = js.undefined
   
   /** Binding properties for the physical server. */
   var serverBinding: js.UndefOr[ServerBinding] = js.undefined
@@ -35,15 +44,27 @@ object NodeGroupNode {
   
   extension [Self <: NodeGroupNode](x: Self) {
     
+    inline def setAccelerators(value: js.Array[AcceleratorConfig]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
+    
+    inline def setAcceleratorsUndefined: Self = StObject.set(x, "accelerators", js.undefined)
+    
+    inline def setAcceleratorsVarargs(value: AcceleratorConfig*): Self = StObject.set(x, "accelerators", js.Array(value*))
+    
     inline def setCpuOvercommitType(value: String): Self = StObject.set(x, "cpuOvercommitType", value.asInstanceOf[js.Any])
     
     inline def setCpuOvercommitTypeUndefined: Self = StObject.set(x, "cpuOvercommitType", js.undefined)
+    
+    inline def setDisks(value: js.Array[LocalDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
+    
+    inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
+    
+    inline def setDisksVarargs(value: LocalDisk*): Self = StObject.set(x, "disks", js.Array(value*))
     
     inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
     inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -52,6 +73,10 @@ object NodeGroupNode {
     inline def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
     inline def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
+    
+    inline def setSatisfiesPzs(value: Boolean): Self = StObject.set(x, "satisfiesPzs", value.asInstanceOf[js.Any])
+    
+    inline def setSatisfiesPzsUndefined: Self = StObject.set(x, "satisfiesPzs", js.undefined)
     
     inline def setServerBinding(value: ServerBinding): Self = StObject.set(x, "serverBinding", value.asInstanceOf[js.Any])
     

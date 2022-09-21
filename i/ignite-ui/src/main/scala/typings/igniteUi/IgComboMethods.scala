@@ -180,13 +180,13 @@ trait IgComboMethods extends StObject {
     * @param expressions Filter by array of objects, such as each object represents filtering expression.
     * @param event Indicates the browser event which triggered this action (not API). Calling the method with this param set to "true" will trigger [filtering](ui.igcombo#events:filtering) and [filtered](ui.igcombo#events:filtered) events.
     */
-  def filterByExpressions(expressions: js.Array[js.Any]): js.Object = js.native
-  def filterByExpressions(expressions: js.Array[js.Any], event: js.Object): js.Object = js.native
+  def filterByExpressions(expressions: js.Array[Any]): js.Object = js.native
+  def filterByExpressions(expressions: js.Array[Any], event: js.Object): js.Object = js.native
   
   /**
     * Gets array with objects representing the filtered li elements in combo box.
     */
-  def filteredItems(): js.Array[js.Any] = js.native
+  def filteredItems(): js.Array[Any] = js.native
   
   /**
     * Gets/Sets selected item/s from the drop-down list by specified index.
@@ -236,7 +236,7 @@ trait IgComboMethods extends StObject {
   /**
     * Gets array with data and objects representing li elements in combo box.
     */
-  def items(): js.Array[js.Any] = js.native
+  def items(): js.Array[Any] = js.native
   
   /**
     * Gets object/s containing data and list item in the combo by element/s.
@@ -348,7 +348,7 @@ trait IgComboMethods extends StObject {
   /**
     * Gets array with objects representing selected li elements in combo box.
     */
-  def selectedItems(): js.Array[js.Any] = js.native
+  def selectedItems(): js.Array[Any] = js.native
   
   /**
     * Gets/Sets text in text input field.

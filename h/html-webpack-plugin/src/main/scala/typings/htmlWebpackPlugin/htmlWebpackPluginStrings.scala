@@ -33,4 +33,8 @@ object htmlWebpackPluginStrings {
   @js.native
   sealed trait manual extends StObject
   inline def manual: manual = "manual".asInstanceOf[manual]
+  
+  @js.native
+  sealed trait module extends StObject
+  inline def module: module = "module".asInstanceOf[module]
 }

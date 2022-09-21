@@ -33,7 +33,7 @@ object optionsMod {
     
     var delimiters: js.UndefOr[js.Array[String]] = js.undefined
     
-    var initValue: js.UndefOr[js.Any] = js.undefined
+    var initValue: js.UndefOr[Any] = js.undefined
     
     var lowercase: js.UndefOr[Boolean] = js.undefined
     
@@ -55,7 +55,7 @@ object optionsMod {
     
     var onCreditCardTypeChanged: js.UndefOr[CreditCardTypeChangeHandler] = js.undefined
     
-    var onValueChanged: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+    var onValueChanged: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
     
     var phone: js.UndefOr[Boolean] = js.undefined
     
@@ -66,6 +66,8 @@ object optionsMod {
     var rawValueTrimPrefix: js.UndefOr[Boolean] = js.undefined
     
     var stripLeadingZeroes: js.UndefOr[Boolean] = js.undefined
+    
+    var tailPrefix: js.UndefOr[Boolean] = js.undefined
     
     var time: js.UndefOr[Boolean] = js.undefined
     
@@ -88,7 +90,7 @@ object optionsMod {
       
       inline def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
       
-      inline def setBlocksVarargs(value: Double*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+      inline def setBlocksVarargs(value: Double*): Self = StObject.set(x, "blocks", js.Array(value*))
       
       inline def setCopyDelimiter(value: Boolean): Self = StObject.set(x, "copyDelimiter", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,7 @@ object optionsMod {
       
       inline def setDatePatternUndefined: Self = StObject.set(x, "datePattern", js.undefined)
       
-      inline def setDatePatternVarargs(value: String*): Self = StObject.set(x, "datePattern", js.Array(value :_*))
+      inline def setDatePatternVarargs(value: String*): Self = StObject.set(x, "datePattern", js.Array(value*))
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -136,9 +138,9 @@ object optionsMod {
       
       inline def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
       
-      inline def setDelimitersVarargs(value: String*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
+      inline def setDelimitersVarargs(value: String*): Self = StObject.set(x, "delimiters", js.Array(value*))
       
-      inline def setInitValue(value: js.Any): Self = StObject.set(x, "initValue", value.asInstanceOf[js.Any])
+      inline def setInitValue(value: Any): Self = StObject.set(x, "initValue", value.asInstanceOf[js.Any])
       
       inline def setInitValueUndefined: Self = StObject.set(x, "initValue", js.undefined)
       
@@ -182,7 +184,7 @@ object optionsMod {
       
       inline def setOnCreditCardTypeChangedUndefined: Self = StObject.set(x, "onCreditCardTypeChanged", js.undefined)
       
-      inline def setOnValueChanged(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
+      inline def setOnValueChanged(value: /* event */ Any => Unit): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
       
       inline def setOnValueChangedUndefined: Self = StObject.set(x, "onValueChanged", js.undefined)
       
@@ -206,6 +208,10 @@ object optionsMod {
       
       inline def setStripLeadingZeroesUndefined: Self = StObject.set(x, "stripLeadingZeroes", js.undefined)
       
+      inline def setTailPrefix(value: Boolean): Self = StObject.set(x, "tailPrefix", value.asInstanceOf[js.Any])
+      
+      inline def setTailPrefixUndefined: Self = StObject.set(x, "tailPrefix", js.undefined)
+      
       inline def setTime(value: Boolean): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
       inline def setTimeFormat(value: String): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
@@ -216,7 +222,7 @@ object optionsMod {
       
       inline def setTimePatternUndefined: Self = StObject.set(x, "timePattern", js.undefined)
       
-      inline def setTimePatternVarargs(value: String*): Self = StObject.set(x, "timePattern", js.Array(value :_*))
+      inline def setTimePatternVarargs(value: String*): Self = StObject.set(x, "timePattern", js.Array(value*))
       
       inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
       

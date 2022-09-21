@@ -12,7 +12,7 @@ trait Statistics extends StObject {
   var average: js.UndefOr[Average] = js.undefined
   
   /**
-    * The count of things that match the query.
+    * The count of things that match the query string criteria and contain a valid aggregation field value.
     */
   var count: js.UndefOr[Count] = js.undefined
   

@@ -8,5 +8,5 @@ object apnsvoipchannelresponseMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_APNSVoipChannelResponse", "_APNSVoipChannelResponse")
   @js.native
-  val APNSVoipChannelResponse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val APNSVoipChannelResponse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

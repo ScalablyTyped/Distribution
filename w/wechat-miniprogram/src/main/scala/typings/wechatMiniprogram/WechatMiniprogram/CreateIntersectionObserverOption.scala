@@ -39,6 +39,6 @@ object CreateIntersectionObserverOption {
     
     inline def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
     
-    inline def setThresholdsVarargs(value: Double*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
+    inline def setThresholdsVarargs(value: Double*): Self = StObject.set(x, "thresholds", js.Array(value*))
   }
 }

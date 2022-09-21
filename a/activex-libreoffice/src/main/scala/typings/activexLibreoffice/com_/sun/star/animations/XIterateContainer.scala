@@ -29,29 +29,29 @@ trait XIterateContainer
   var SubItem: Double
   
   /** a target that contains iterable contents, f.e. a paragraph. ;  See documentation of used animation engine for supported targets. */
-  var Target: js.Any
+  var Target: Any
 }
 object XIterateContainer {
   
   inline def apply(
     Acceleration: Double,
     AutoReverse: Boolean,
-    Begin: js.Any,
+    Begin: Any,
     Decelerate: Double,
-    Duration: js.Any,
-    End: js.Any,
-    EndSync: js.Any,
+    Duration: Any,
+    End: Any,
+    EndSync: Any,
     Fill: Double,
     FillDefault: Double,
     IterateInterval: Double,
     IterateType: Double,
     Parent: XInterface,
-    RepeatCount: js.Any,
-    RepeatDuration: js.Any,
+    RepeatCount: Any,
+    RepeatDuration: Any,
     Restart: Double,
     RestartDefault: Double,
     SubItem: Double,
-    Target: js.Any,
+    Target: Any,
     Type: Double,
     UserData: SafeArray[NamedValue],
     acquire: () => Unit,
@@ -59,7 +59,7 @@ object XIterateContainer {
     getParent: () => XInterface,
     insertAfter: (XAnimationNode, XAnimationNode) => XAnimationNode,
     insertBefore: (XAnimationNode, XAnimationNode) => XAnimationNode,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeChild: XAnimationNode => XAnimationNode,
     replaceChild: (XAnimationNode, XAnimationNode) => XAnimationNode,
@@ -77,6 +77,6 @@ object XIterateContainer {
     
     inline def setSubItem(value: Double): Self = StObject.set(x, "SubItem", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

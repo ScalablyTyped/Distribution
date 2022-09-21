@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExcludedRule extends StObject {
   
   /**
-    * The name of the rule to exclude.
+    * The name of the rule whose action you want to override to Count.
     */
   var Name: EntityName
 }

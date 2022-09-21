@@ -53,7 +53,7 @@ object anon {
       * This is used to cache the data that a repeater uses. After the repeater is rendered, the reference is deleted from this object.
       * Example: $.template.data["myRepeater"] = [{name: "Joe"}, {name: "Sue"}];
       */
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     /**
       * Use this value to output an index value in a template repeater.
@@ -67,7 +67,7 @@ object anon {
     /**
       * The repeater method used to rendering iterable template data.
       */
-    def repeater(element: ChocolateChipElementArray, template: String, data: js.Any): Unit = js.native
+    def repeater(element: ChocolateChipElementArray, template: String, data: Any): Unit = js.native
   }
   
   trait CallbackName extends StObject {
@@ -139,20 +139,20 @@ object anon {
     
     var hasKey: js.Function
     
-    var keys: js.Array[js.Any]
+    var keys: js.Array[Any]
     
     var set: js.Function
     
-    var values: js.Array[js.Any]
+    var values: js.Array[Any]
   }
   object Delete {
     
     inline def apply(
       _delete: js.Function,
       hasKey: js.Function,
-      keys: js.Array[js.Any],
+      keys: js.Array[Any],
       set: js.Function,
-      values: js.Array[js.Any]
+      values: js.Array[Any]
     ): Delete = {
       val __obj = js.Dynamic.literal(_delete = _delete.asInstanceOf[js.Any], hasKey = hasKey.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[Delete]
@@ -162,15 +162,15 @@ object anon {
       
       inline def setHasKey(value: js.Function): Self = StObject.set(x, "hasKey", value.asInstanceOf[js.Any])
       
-      inline def setKeys(value: js.Array[js.Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: js.Array[Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      inline def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: Any*): Self = StObject.set(x, "keys", js.Array(value*))
       
       inline def setSet(value: js.Function): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
       
       inline def set_delete(value: js.Function): Self = StObject.set(x, "_delete", value.asInstanceOf[js.Any])
     }

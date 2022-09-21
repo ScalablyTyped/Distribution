@@ -11,7 +11,6 @@ import typings.ionicCliFramework.definitionsMod.CommandLineInputs
 import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import typings.ionicCliFramework.definitionsMod.CommandMetadataInput
 import typings.ionicCliFramework.mod.BaseCommand
-import typings.ionicCliFramework.mod.TaskChain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ object commandMod {
   abstract class Command protected () extends BaseCommand[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
     def this(namespace: INamespace) = this()
     
-    def createTaskChain(): TaskChain = js.native
+    def createTaskChain(): Any = js.native
     
     def env: IonicEnvironment = js.native
     @JSName("env")
@@ -39,6 +38,8 @@ object commandMod {
     @JSName("project")
     val project_FCommand: js.UndefOr[IProject] = js.native
     
-    /* protected */ val taskChains: js.Array[TaskChain] = js.native
+    /* protected */ val taskChains: js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskChain */ Any
+      ] = js.native
   }
 }

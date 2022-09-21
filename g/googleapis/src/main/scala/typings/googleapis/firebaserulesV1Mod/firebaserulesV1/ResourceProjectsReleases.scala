@@ -4,44 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebaserules/v1", "firebaserules_v1.Resource$Projects$Releases")
 @js.native
-class ResourceProjectsReleases protected () extends StObject {
+open class ResourceProjectsReleases protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * firebaserules.projects.releases.create
-    * @desc Create a `Release`.  Release names should reflect the developer's
-    * deployment practices. For example, the release name may include the
-    * environment name, application name, application version, or any other
-    * name meaningful to the developer. Once a `Release` refers to a `Ruleset`,
-    * the rules can be enforced by Firebase Rules-enabled services.  More than
-    * one `Release` may be 'live' concurrently. Consider the following three
-    * `Release` names for `projects/foo` and the `Ruleset` to which they refer.
-    * Release Name                    | Ruleset Name
-    * --------------------------------|------------- projects/foo/releases/prod
-    * | projects/foo/rulesets/uuid123 projects/foo/releases/prod/beta |
-    * projects/foo/rulesets/uuid123 projects/foo/releases/prod/v23  |
-    * projects/foo/rulesets/uuid456  The table reflects the `Ruleset` rollout
-    * in progress. The `prod` and `prod/beta` releases refer to the same
-    * `Ruleset`. However, `prod/v23` refers to a new `Ruleset`. The `Ruleset`
-    * reference for a `Release` may be updated using the UpdateRelease method.
-    * @alias firebaserules.projects.releases.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Resource name for the project which owns this `Release`.  Format: `projects/{project_id}`
-    * @param {().Release} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaRelease] = js.native
   def create(callback: BodyResponseCallback[SchemaRelease]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRelease] = js.native
@@ -49,8 +24,8 @@ class ResourceProjectsReleases protected () extends StObject {
   def create(params: ParamsResourceProjectsReleasesCreate, callback: BodyResponseCallback[SchemaRelease]): Unit = js.native
   def create(
     params: ParamsResourceProjectsReleasesCreate,
-    options: BodyResponseCallback[SchemaRelease],
-    callback: BodyResponseCallback[SchemaRelease]
+    options: BodyResponseCallback[Readable | SchemaRelease],
+    callback: BodyResponseCallback[Readable | SchemaRelease]
   ): Unit = js.native
   def create(params: ParamsResourceProjectsReleasesCreate, options: MethodOptions): GaxiosPromise[SchemaRelease] = js.native
   def create(
@@ -58,19 +33,80 @@ class ResourceProjectsReleases protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRelease]
   ): Unit = js.native
-  
   /**
-    * firebaserules.projects.releases.delete
-    * @desc Delete a `Release` by resource name.
-    * @alias firebaserules.projects.releases.delete
-    * @memberOf! ()
+    * Create a `Release`. Release names should reflect the developer's deployment practices. For example, the release name may include the environment name, application name, application version, or any other name meaningful to the developer. Once a `Release` refers to a `Ruleset`, the rules can be enforced by Firebase Rules-enabled services. More than one `Release` may be 'live' concurrently. Consider the following three `Release` names for `projects/foo` and the `Ruleset` to which they refer. Release Name -\> Ruleset Name * projects/foo/releases/prod -\> projects/foo/rulesets/uuid123 * projects/foo/releases/prod/beta -\> projects/foo/rulesets/uuid123 * projects/foo/releases/prod/v23 -\> projects/foo/rulesets/uuid456 The relationships reflect a `Ruleset` rollout in progress. The `prod` and `prod/beta` releases refer to the same `Ruleset`. However, `prod/v23` refers to a new `Ruleset`. The `Ruleset` reference for a `Release` may be updated using the UpdateRelease method.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/firebaserules.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Resource name for the `Release` to delete.  Format: `projects/{project_id}/releases/{release_id}`
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const firebaserules = google.firebaserules('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/firebase',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await firebaserules.projects.releases.create({
+    *     // Required. Resource name for the project which owns this `Release`. Format: `projects/{project_id\}`
+    *     name: 'projects/my-project',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "createTime": "my_createTime",
+    *       //   "name": "my_name",
+    *       //   "rulesetName": "my_rulesetName",
+    *       //   "updateTime": "my_updateTime"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "createTime": "my_createTime",
+    *   //   "name": "my_name",
+    *   //   "rulesetName": "my_rulesetName",
+    *   //   "updateTime": "my_updateTime"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceProjectsReleasesCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceProjectsReleasesCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
@@ -78,8 +114,8 @@ class ResourceProjectsReleases protected () extends StObject {
   def delete(params: ParamsResourceProjectsReleasesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
     params: ParamsResourceProjectsReleasesDelete,
-    options: BodyResponseCallback[SchemaEmpty],
-    callback: BodyResponseCallback[SchemaEmpty]
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
   ): Unit = js.native
   def delete(params: ParamsResourceProjectsReleasesDelete, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
@@ -87,19 +123,64 @@ class ResourceProjectsReleases protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  
   /**
-    * firebaserules.projects.releases.get
-    * @desc Get a `Release` by name.
-    * @alias firebaserules.projects.releases.get
-    * @memberOf! ()
+    * Delete a `Release` by resource name.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/firebaserules.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Resource name of the `Release`.  Format: `projects/{project_id}/releases/{release_id}`
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const firebaserules = google.firebaserules('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/firebase',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await firebaserules.projects.releases.delete({
+    *     // Required. Resource name for the `Release` to delete. Format: `projects/{project_id\}/releases/{release_id\}`
+    *     name: 'projects/my-project/releases/.*',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceProjectsReleasesDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceProjectsReleasesDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaRelease] = js.native
   def get(callback: BodyResponseCallback[SchemaRelease]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRelease] = js.native
@@ -107,8 +188,8 @@ class ResourceProjectsReleases protected () extends StObject {
   def get(params: ParamsResourceProjectsReleasesGet, callback: BodyResponseCallback[SchemaRelease]): Unit = js.native
   def get(
     params: ParamsResourceProjectsReleasesGet,
-    options: BodyResponseCallback[SchemaRelease],
-    callback: BodyResponseCallback[SchemaRelease]
+    options: BodyResponseCallback[Readable | SchemaRelease],
+    callback: BodyResponseCallback[Readable | SchemaRelease]
   ): Unit = js.native
   def get(params: ParamsResourceProjectsReleasesGet, options: MethodOptions): GaxiosPromise[SchemaRelease] = js.native
   def get(
@@ -116,20 +197,70 @@ class ResourceProjectsReleases protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRelease]
   ): Unit = js.native
-  
   /**
-    * firebaserules.projects.releases.getExecutable
-    * @desc Get the `Release` executable to use when enforcing rules.
-    * @alias firebaserules.projects.releases.getExecutable
-    * @memberOf! ()
+    * Get a `Release` by name.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/firebaserules.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.executableVersion The requested runtime executable version. Defaults to FIREBASE_RULES_EXECUTABLE_V1.
-    * @param {string} params.name Resource name of the `Release`.  Format: `projects/{project_id}/releases/{release_id}`
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const firebaserules = google.firebaserules('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/firebase',
+    *       'https://www.googleapis.com/auth/firebase.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await firebaserules.projects.releases.get({
+    *     // Required. Resource name of the `Release`. Format: `projects/{project_id\}/releases/{release_id\}`
+    *     name: 'projects/my-project/releases/.*',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "createTime": "my_createTime",
+    *   //   "name": "my_name",
+    *   //   "rulesetName": "my_rulesetName",
+    *   //   "updateTime": "my_updateTime"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceProjectsReleasesGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceProjectsReleasesGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def getExecutable(): GaxiosPromise[SchemaGetReleaseExecutableResponse] = js.native
   def getExecutable(callback: BodyResponseCallback[SchemaGetReleaseExecutableResponse]): Unit = js.native
   def getExecutable(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetReleaseExecutableResponse] = js.native
@@ -140,8 +271,8 @@ class ResourceProjectsReleases protected () extends StObject {
   ): Unit = js.native
   def getExecutable(
     params: ParamsResourceProjectsReleasesGetexecutable,
-    options: BodyResponseCallback[SchemaGetReleaseExecutableResponse],
-    callback: BodyResponseCallback[SchemaGetReleaseExecutableResponse]
+    options: BodyResponseCallback[Readable | SchemaGetReleaseExecutableResponse],
+    callback: BodyResponseCallback[Readable | SchemaGetReleaseExecutableResponse]
   ): Unit = js.native
   def getExecutable(params: ParamsResourceProjectsReleasesGetexecutable, options: MethodOptions): GaxiosPromise[SchemaGetReleaseExecutableResponse] = js.native
   def getExecutable(
@@ -149,24 +280,74 @@ class ResourceProjectsReleases protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGetReleaseExecutableResponse]
   ): Unit = js.native
-  
   /**
-    * firebaserules.projects.releases.list
-    * @desc List the `Release` values for a project. This list may optionally
-    * be filtered by `Release` name, `Ruleset` name, `TestSuite` name, or any
-    * combination thereof.
-    * @alias firebaserules.projects.releases.list
-    * @memberOf! ()
+    * Get the `Release` executable to use when enforcing rules.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/firebaserules.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter `Release` filter. The list method supports filters with restrictions on the `Release.name`, `Release.ruleset_name`, and `Release.test_suite_name`.  Example 1: A filter of 'name=prod*' might return `Release`s with names within 'projects/foo' prefixed with 'prod':  Name                          | Ruleset Name ------------------------------|------------- projects/foo/releases/prod    | projects/foo/rulesets/uuid1234 projects/foo/releases/prod/v1 | projects/foo/rulesets/uuid1234 projects/foo/releases/prod/v2 | projects/foo/rulesets/uuid8888  Example 2: A filter of `name=prod* ruleset_name=uuid1234` would return only `Release` instances for 'projects/foo' with names prefixed with 'prod' referring to the same `Ruleset` name of 'uuid1234':  Name                          | Ruleset Name ------------------------------|------------- projects/foo/releases/prod    | projects/foo/rulesets/1234 projects/foo/releases/prod/v1 | projects/foo/rulesets/1234  In the examples, the filter parameters refer to the search filters are relative to the project. Fully qualified prefixed may also be used. e.g. `test_suite_name=projects/foo/testsuites/uuid1`
-    * @param {string} params.name Resource name for the project.  Format: `projects/{project_id}`
-    * @param {integer=} params.pageSize Page size to load. Maximum of 100. Defaults to 10. Note: `page_size` is just a hint and the service may choose to load fewer than `page_size` results due to the size of the output. To traverse all of the releases, the caller should iterate until the `page_token` on the response is empty.
-    * @param {string=} params.pageToken Next page token for the next batch of `Release` instances.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const firebaserules = google.firebaserules('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/firebase',
+    *       'https://www.googleapis.com/auth/firebase.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await firebaserules.projects.releases.getExecutable({
+    *     // The requested runtime executable version. Defaults to FIREBASE_RULES_EXECUTABLE_V1.
+    *     executableVersion: 'placeholder-value',
+    *     // Required. Resource name of the `Release`. Format: `projects/{project_id\}/releases/{release_id\}`
+    *     name: 'projects/my-project/releases/.*',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "executable": "my_executable",
+    *   //   "executableVersion": "my_executableVersion",
+    *   //   "language": "my_language",
+    *   //   "rulesetName": "my_rulesetName",
+    *   //   "syncTime": "my_syncTime",
+    *   //   "updateTime": "my_updateTime"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def getExecutable(params: ParamsResourceProjectsReleasesGetexecutable, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getExecutable(
+    params: ParamsResourceProjectsReleasesGetexecutable,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaListReleasesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListReleasesResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListReleasesResponse] = js.native
@@ -177,8 +358,8 @@ class ResourceProjectsReleases protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceProjectsReleasesList,
-    options: BodyResponseCallback[SchemaListReleasesResponse],
-    callback: BodyResponseCallback[SchemaListReleasesResponse]
+    options: BodyResponseCallback[Readable | SchemaListReleasesResponse],
+    callback: BodyResponseCallback[Readable | SchemaListReleasesResponse]
   ): Unit = js.native
   def list(params: ParamsResourceProjectsReleasesList, options: MethodOptions): GaxiosPromise[SchemaListReleasesResponse] = js.native
   def list(
@@ -186,22 +367,74 @@ class ResourceProjectsReleases protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListReleasesResponse]
   ): Unit = js.native
-  
   /**
-    * firebaserules.projects.releases.patch
-    * @desc Update a `Release` via PATCH.  Only updates to the `ruleset_name`
-    * and `test_suite_name` fields will be honored. `Release` rename is not
-    * supported. To create a `Release` use the CreateRelease method.
-    * @alias firebaserules.projects.releases.patch
-    * @memberOf! ()
+    * List the `Release` values for a project. This list may optionally be filtered by `Release` name, `Ruleset` name, `TestSuite` name, or any combination thereof.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/firebaserules.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Resource name for the project which owns this `Release`.  Format: `projects/{project_id}`
-    * @param {().UpdateReleaseRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const firebaserules = google.firebaserules('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/firebase',
+    *       'https://www.googleapis.com/auth/firebase.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await firebaserules.projects.releases.list({
+    *     // `Release` filter. The list method supports filters with restrictions on the `Release.name`, and `Release.ruleset_name`. Example 1: A filter of 'name=prod*' might return `Release`s with names within 'projects/foo' prefixed with 'prod': Name -\> Ruleset Name: * projects/foo/releases/prod -\> projects/foo/rulesets/uuid1234 * projects/foo/releases/prod/v1 -\> projects/foo/rulesets/uuid1234 * projects/foo/releases/prod/v2 -\> projects/foo/rulesets/uuid8888 Example 2: A filter of `name=prod* ruleset_name=uuid1234` would return only `Release` instances for 'projects/foo' with names prefixed with 'prod' referring to the same `Ruleset` name of 'uuid1234': Name -\> Ruleset Name: * projects/foo/releases/prod -\> projects/foo/rulesets/1234 * projects/foo/releases/prod/v1 -\> projects/foo/rulesets/1234 In the examples, the filter parameters refer to the search filters are relative to the project. Fully qualified prefixed may also be used.
+    *     filter: 'placeholder-value',
+    *     // Required. Resource name for the project. Format: `projects/{project_id\}`
+    *     name: 'projects/my-project',
+    *     // Page size to load. Maximum of 100. Defaults to 10. Note: `page_size` is just a hint and the service may choose to load fewer than `page_size` results due to the size of the output. To traverse all of the releases, the caller should iterate until the `page_token` on the response is empty.
+    *     pageSize: 'placeholder-value',
+    *     // Next page token for the next batch of `Release` instances.
+    *     pageToken: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "releases": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceProjectsReleasesList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceProjectsReleasesList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaRelease] = js.native
   def patch(callback: BodyResponseCallback[SchemaRelease]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRelease] = js.native
@@ -209,13 +442,84 @@ class ResourceProjectsReleases protected () extends StObject {
   def patch(params: ParamsResourceProjectsReleasesPatch, callback: BodyResponseCallback[SchemaRelease]): Unit = js.native
   def patch(
     params: ParamsResourceProjectsReleasesPatch,
-    options: BodyResponseCallback[SchemaRelease],
-    callback: BodyResponseCallback[SchemaRelease]
+    options: BodyResponseCallback[Readable | SchemaRelease],
+    callback: BodyResponseCallback[Readable | SchemaRelease]
   ): Unit = js.native
   def patch(params: ParamsResourceProjectsReleasesPatch, options: MethodOptions): GaxiosPromise[SchemaRelease] = js.native
   def patch(
     params: ParamsResourceProjectsReleasesPatch,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRelease]
+  ): Unit = js.native
+  /**
+    * Update a `Release` via PATCH. Only updates to `ruleset_name` will be honored. `Release` rename is not supported. To create a `Release` use the CreateRelease method.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/firebaserules.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const firebaserules = google.firebaserules('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/firebase',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await firebaserules.projects.releases.patch({
+    *     // Required. Resource name for the project which owns this `Release`. Format: `projects/{project_id\}`
+    *     name: 'projects/my-project/releases/.*',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "release": {},
+    *       //   "updateMask": "my_updateMask"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "createTime": "my_createTime",
+    *   //   "name": "my_name",
+    *   //   "rulesetName": "my_rulesetName",
+    *   //   "updateTime": "my_updateTime"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def patch(params: ParamsResourceProjectsReleasesPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceProjectsReleasesPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

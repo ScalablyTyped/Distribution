@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DeleteBookmarkCommand")
 @js.native
-class DeleteBookmarkCommand ()
+open class DeleteBookmarkCommand ()
   extends StObject
      with typings.devexpressWeb.DeleteBookmarkCommand {
   

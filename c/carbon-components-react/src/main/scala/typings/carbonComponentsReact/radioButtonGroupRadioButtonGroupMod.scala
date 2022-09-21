@@ -17,10 +17,10 @@ object radioButtonGroupRadioButtonGroupMod {
   
   @JSImport("carbon-components-react/lib/components/RadioButtonGroup/RadioButtonGroup", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[RadioButtonGroupProps, js.Object, js.Any]
+  open class default ()
+    extends Component[RadioButtonGroupProps, js.Object, Any]
   
-  type RadioButtonGroup = Component[RadioButtonGroupProps, js.Object, js.Any]
+  type RadioButtonGroup = Component[RadioButtonGroupProps, js.Object, Any]
   
   trait RadioButtonGroupProps extends StObject {
     
@@ -32,7 +32,11 @@ object radioButtonGroupRadioButtonGroupMod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    var hideLegend: js.UndefOr[Boolean] = js.undefined
+    
     var labelPosition: js.UndefOr[left | right] = js.undefined
+    
+    var legendText: js.UndefOr[ReactNode] = js.undefined
     
     var name: String
     
@@ -75,9 +79,17 @@ object radioButtonGroupRadioButtonGroupMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
+      inline def setHideLegend(value: Boolean): Self = StObject.set(x, "hideLegend", value.asInstanceOf[js.Any])
+      
+      inline def setHideLegendUndefined: Self = StObject.set(x, "hideLegend", js.undefined)
+      
       inline def setLabelPosition(value: left | right): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
       
       inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
+      
+      inline def setLegendText(value: ReactNode): Self = StObject.set(x, "legendText", value.asInstanceOf[js.Any])
+      
+      inline def setLegendTextUndefined: Self = StObject.set(x, "legendText", js.undefined)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -11,28 +11,28 @@ object keyboardManagerMod {
   
   @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/KeyboardManager", JSImport.Default)
   @js.native
-  class default () extends KeyboardManager
+  open class default () extends KeyboardManager
   
   @js.native
   trait KeyboardManager
-    extends Component[Props, js.Object, js.Any] {
+    extends Component[Props, js.Object, Any] {
     
-    /* private */ var clearKeyboardTimeout: js.Any = js.native
+    /* private */ var clearKeyboardTimeout: Any = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MKeyboardManager(): Unit = js.native
     
-    /* private */ var handlePageChangeCancel: js.Any = js.native
+    /* private */ var handlePageChangeCancel: Any = js.native
     
-    /* private */ var handlePageChangeConfirm: js.Any = js.native
+    /* private */ var handlePageChangeConfirm: Any = js.native
     
-    /* private */ var handlePageChangeStart: js.Any = js.native
+    /* private */ var handlePageChangeStart: Any = js.native
     
-    /* private */ var keyboardTimeout: js.Any = js.native
+    /* private */ var keyboardTimeout: Any = js.native
     
-    /* private */ var previouslyFocusedTextInput: js.Any = js.native
+    /* private */ var previouslyFocusedTextInput: Any = js.native
     
-    /* private */ var startTimestamp: js.Any = js.native
+    /* private */ var startTimestamp: Any = js.native
   }
   
   trait Props extends StObject {

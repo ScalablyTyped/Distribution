@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.Frustum")
 @js.native
-class Frustum protected ()
+open class Frustum protected ()
   extends typings.three.mod.Frustum {
   def this(
     p0: js.UndefOr[typings.three.planeMod.Plane],

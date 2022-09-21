@@ -1,7 +1,6 @@
 package typings.textToSvg
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object mod {
   
   @JSImport("text-to-svg", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with TextToSVG {
     /**
@@ -21,7 +20,7 @@ object mod {
       *
       * @param font parsed font file
       */
-    def this(font: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Font */ js.Any) = this()
+    def this(font: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Font */ Any) = this()
   }
   @JSImport("text-to-svg", JSImport.Namespace)
   @js.native
@@ -236,7 +235,7 @@ object mod {
     }
   }
   
-  type LoadCallback = js.Function2[/* error */ Error | Null, /* textToSVG */ TextToSVG | Null, Unit]
+  type LoadCallback = js.Function2[/* error */ js.Error | Null, /* textToSVG */ TextToSVG | Null, Unit]
   
   trait Metrics extends StObject {
     

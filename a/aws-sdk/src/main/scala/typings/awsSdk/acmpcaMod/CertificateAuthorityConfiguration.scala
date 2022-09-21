@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CertificateAuthorityConfiguration extends StObject {
   
   /**
+    * Specifies information to be added to the extension section of the certificate signing request (CSR).
+    */
+  var CsrExtensions: js.UndefOr[typings.awsSdk.acmpcaMod.CsrExtensions] = js.undefined
+  
+  /**
     * Type of the public key algorithm and size, in bits, of the key pair that your CA creates when it issues a certificate. When you create a subordinate CA, you must use a key algorithm supported by the parent CA.
     */
   var KeyAlgorithm: typings.awsSdk.acmpcaMod.KeyAlgorithm
@@ -29,6 +34,10 @@ object CertificateAuthorityConfiguration {
   }
   
   extension [Self <: CertificateAuthorityConfiguration](x: Self) {
+    
+    inline def setCsrExtensions(value: CsrExtensions): Self = StObject.set(x, "CsrExtensions", value.asInstanceOf[js.Any])
+    
+    inline def setCsrExtensionsUndefined: Self = StObject.set(x, "CsrExtensions", js.undefined)
     
     inline def setKeyAlgorithm(value: KeyAlgorithm): Self = StObject.set(x, "KeyAlgorithm", value.asInstanceOf[js.Any])
     

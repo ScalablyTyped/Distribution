@@ -4,78 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Groups")
 @js.native
-class ResourceProjectsGroups protected () extends StObject {
+open class ResourceProjectsGroups protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * monitoring.projects.groups.create
-    * @desc Creates a new group.
-    * @example
-    * * // PRE-REQUISITES:
-    * // ---------------
-    * // 1. If not already done, enable the Google Monitoring API and check the
-    * quota for your project at
-    * //
-    * https://console.developers.google.com/apis/api/monitoring_component/quotas
-    * // 2. This sample uses Application Default Credentials for Auth. If not
-    * already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk/ and run 'gcloud beta auth
-    * application-default login'
-    * // 3. To install the client library and Application Default Credentials
-    * library, run:
-    * //    'npm install googleapis --save'
-    * var google = require('googleapis');
-    * var monitoring = google.monitoring('v3');
-    *
-    * google.auth.getApplicationDefault(function(err, authClient) {
-    *   if (err) {
-    *     console.log('Authentication failed because of ', err);
-    *     return;
-    *   }
-    *   if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *   }
-    *
-    *   var request = {
-    *     // TODO: Change placeholders below to appropriate parameter values
-    * for the 'create' method:
-    *
-    *     // The project in which to create the group. The format is
-    * `"projects/{project_id_or_number}"`. name: "projects/{MY-PROJECT}",
-    *     resource: {},
-    *     // Auth client
-    *     auth: authClient
-    *   };
-    *
-    *   monitoring.projects.groups.create(request, function(err, result) {
-    *     if (err) {
-    *       console.log(err);
-    *     } else {
-    *       console.log(result);
-    *     }
-    *   });
-    * });
-    * @alias monitoring.projects.groups.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The project in which to create the group. The format is "projects/{project_id_or_number}".
-    * @param {boolean=} params.validateOnly If true, validate this request but do not create the group.
-    * @param {().Group} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaGroup] = js.native
   def create(callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGroup] = js.native
@@ -83,8 +24,8 @@ class ResourceProjectsGroups protected () extends StObject {
   def create(params: ParamsResourceProjectsGroupsCreate, callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
   def create(
     params: ParamsResourceProjectsGroupsCreate,
-    options: BodyResponseCallback[SchemaGroup],
-    callback: BodyResponseCallback[SchemaGroup]
+    options: BodyResponseCallback[Readable | SchemaGroup],
+    callback: BodyResponseCallback[Readable | SchemaGroup]
   ): Unit = js.native
   def create(params: ParamsResourceProjectsGroupsCreate, options: MethodOptions): GaxiosPromise[SchemaGroup] = js.native
   def create(
@@ -92,67 +33,84 @@ class ResourceProjectsGroups protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroup]
   ): Unit = js.native
-  
   /**
-    * monitoring.projects.groups.delete
-    * @desc Deletes an existing group.
+    * Creates a new group.
     * @example
-    * * // PRE-REQUISITES:
-    * // ---------------
-    * // 1. If not already done, enable the Google Monitoring API and check the
-    * quota for your project at
-    * //
-    * https://console.developers.google.com/apis/api/monitoring_component/quotas
-    * // 2. This sample uses Application Default Credentials for Auth. If not
-    * already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk/ and run 'gcloud beta auth
-    * application-default login'
-    * // 3. To install the client library and Application Default Credentials
-    * library, run:
-    * //    'npm install googleapis --save'
-    * var google = require('googleapis');
-    * var monitoring = google.monitoring('v3');
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/monitoring.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * google.auth.getApplicationDefault(function(err, authClient) {
-    *   if (err) {
-    *     console.log('Authentication failed because of ', err);
-    *     return;
-    *   }
-    *   if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *   }
+    * const {google} = require('googleapis');
+    * const monitoring = google.monitoring('v3');
     *
-    *   var request = {
-    *     // TODO: Change placeholders below to appropriate parameter values
-    * for the 'delete' method:
-    *
-    *     // The group to delete. The format is
-    * `"projects/{project_id_or_number}/groups/{group_id}"`. name:
-    * "projects/{MY-PROJECT}/groups/{MY-GROUP}",
-    *     // Auth client
-    *     auth: authClient
-    *   };
-    *
-    *   monitoring.projects.groups.delete(request, function(err, result) {
-    *     if (err) {
-    *       console.log(err);
-    *     } else {
-    *       console.log(result);
-    *     }
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/monitoring',
+    *     ],
     *   });
-    * });
-    * @alias monitoring.projects.groups.delete
-    * @memberOf! ()
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The group to delete. The format is "projects/{project_id_or_number}/groups/{group_id}".
-    * @param {boolean=} params.recursive If this field is true, then the request means to delete a group with all its descendants. Otherwise, the request means to delete a group only when it has no descendants. The default value is false.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await monitoring.projects.groups.create({
+    *     // Required. The project (https://cloud.google.com/monitoring/api/v3#project_name) in which to create the group. The format is: projects/[PROJECT_ID_OR_NUMBER]
+    *     name: 'projects/my-project',
+    *     // If true, validate this request but do not create the group.
+    *     validateOnly: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "displayName": "my_displayName",
+    *       //   "filter": "my_filter",
+    *       //   "isCluster": false,
+    *       //   "name": "my_name",
+    *       //   "parentName": "my_parentName"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "displayName": "my_displayName",
+    *   //   "filter": "my_filter",
+    *   //   "isCluster": false,
+    *   //   "name": "my_name",
+    *   //   "parentName": "my_parentName"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceProjectsGroupsCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceProjectsGroupsCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
@@ -160,8 +118,8 @@ class ResourceProjectsGroups protected () extends StObject {
   def delete(params: ParamsResourceProjectsGroupsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
     params: ParamsResourceProjectsGroupsDelete,
-    options: BodyResponseCallback[SchemaEmpty],
-    callback: BodyResponseCallback[SchemaEmpty]
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
   ): Unit = js.native
   def delete(params: ParamsResourceProjectsGroupsDelete, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
@@ -169,66 +127,66 @@ class ResourceProjectsGroups protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  
   /**
-    * monitoring.projects.groups.get
-    * @desc Gets a single group.
+    * Deletes an existing group.
     * @example
-    * * // PRE-REQUISITES:
-    * // ---------------
-    * // 1. If not already done, enable the Google Monitoring API and check the
-    * quota for your project at
-    * //
-    * https://console.developers.google.com/apis/api/monitoring_component/quotas
-    * // 2. This sample uses Application Default Credentials for Auth. If not
-    * already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk/ and run 'gcloud beta auth
-    * application-default login'
-    * // 3. To install the client library and Application Default Credentials
-    * library, run:
-    * //    'npm install googleapis --save'
-    * var google = require('googleapis');
-    * var monitoring = google.monitoring('v3');
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/monitoring.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * google.auth.getApplicationDefault(function(err, authClient) {
-    *   if (err) {
-    *     console.log('Authentication failed because of ', err);
-    *     return;
-    *   }
-    *   if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *   }
+    * const {google} = require('googleapis');
+    * const monitoring = google.monitoring('v3');
     *
-    *   var request = {
-    *     // TODO: Change placeholders below to appropriate parameter values
-    * for the 'get' method:
-    *
-    *     // The group to retrieve. The format is
-    * `"projects/{project_id_or_number}/groups/{group_id}"`. name:
-    * "projects/{MY-PROJECT}/groups/{MY-GROUP}",
-    *     // Auth client
-    *     auth: authClient
-    *   };
-    *
-    *   monitoring.projects.groups.get(request, function(err, result) {
-    *     if (err) {
-    *       console.log(err);
-    *     } else {
-    *       console.log(result);
-    *     }
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/monitoring',
+    *     ],
     *   });
-    * });
-    * @alias monitoring.projects.groups.get
-    * @memberOf! ()
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The group to retrieve. The format is "projects/{project_id_or_number}/groups/{group_id}".
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await monitoring.projects.groups.delete({
+    *     // Required. The group to delete. The format is: projects/[PROJECT_ID_OR_NUMBER]/groups/[GROUP_ID]
+    *     name: 'projects/my-project/groups/my-group',
+    *     // If this field is true, then the request means to delete a group with all its descendants. Otherwise, the request means to delete a group only when it has no descendants. The default value is false.
+    *     recursive: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceProjectsGroupsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceProjectsGroupsDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGroup] = js.native
@@ -236,8 +194,8 @@ class ResourceProjectsGroups protected () extends StObject {
   def get(params: ParamsResourceProjectsGroupsGet, callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
   def get(
     params: ParamsResourceProjectsGroupsGet,
-    options: BodyResponseCallback[SchemaGroup],
-    callback: BodyResponseCallback[SchemaGroup]
+    options: BodyResponseCallback[Readable | SchemaGroup],
+    callback: BodyResponseCallback[Readable | SchemaGroup]
   ): Unit = js.native
   def get(params: ParamsResourceProjectsGroupsGet, options: MethodOptions): GaxiosPromise[SchemaGroup] = js.native
   def get(
@@ -245,77 +203,71 @@ class ResourceProjectsGroups protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroup]
   ): Unit = js.native
-  
   /**
-    * monitoring.projects.groups.list
-    * @desc Lists the existing groups.
+    * Gets a single group.
     * @example
-    * * // PRE-REQUISITES:
-    * // ---------------
-    * // 1. If not already done, enable the Google Monitoring API and check the
-    * quota for your project at
-    * //
-    * https://console.developers.google.com/apis/api/monitoring_component/quotas
-    * // 2. This sample uses Application Default Credentials for Auth. If not
-    * already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk/ and run 'gcloud beta auth
-    * application-default login'
-    * // 3. To install the client library and Application Default Credentials
-    * library, run:
-    * //    'npm install googleapis --save'
-    * var google = require('googleapis');
-    * var monitoring = google.monitoring('v3');
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/monitoring.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * google.auth.getApplicationDefault(function(err, authClient) {
-    *   if (err) {
-    *     console.log('Authentication failed because of ', err);
-    *     return;
-    *   }
-    *   if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *   }
+    * const {google} = require('googleapis');
+    * const monitoring = google.monitoring('v3');
     *
-    *   var request = {
-    *     // TODO: Change placeholders below to appropriate parameter values
-    * for the 'list' method:
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/monitoring',
+    *       'https://www.googleapis.com/auth/monitoring.read',
+    *     ],
+    *   });
     *
-    *     // The project whose groups are to be listed. The format is
-    * `"projects/{project_id_or_number}"`. name: "projects/{MY-PROJECT}",
-    *     // Auth client
-    *     auth: authClient
-    *   };
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
     *
+    *   // Do the magic
+    *   const res = await monitoring.projects.groups.get({
+    *     // Required. The group to retrieve. The format is: projects/[PROJECT_ID_OR_NUMBER]/groups/[GROUP_ID]
+    *     name: 'projects/my-project/groups/my-group',
+    *   });
+    *   console.log(res.data);
     *
-    *   var recur = function(err, result) {
-    *     if (err) {
-    *       console.log(err);
-    *     } else {
-    *       console.log(result);
-    *       if (result.nextPageToken) {
-    *         request.pageToken = result.nextPageToken;
-    *         monitoring.projects.groups.list(request, recur);
-    *       }
-    *     }
-    *   };
+    *   // Example response
+    *   // {
+    *   //   "displayName": "my_displayName",
+    *   //   "filter": "my_filter",
+    *   //   "isCluster": false,
+    *   //   "name": "my_name",
+    *   //   "parentName": "my_parentName"
+    *   // }
+    * }
     *
-    *   monitoring.projects.groups.list(request, recur);
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
-    * @alias monitoring.projects.groups.list
-    * @memberOf! ()
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.ancestorsOfGroup A group name: "projects/{project_id_or_number}/groups/{group_id}". Returns groups that are ancestors of the specified group. The groups are returned in order, starting with the immediate parent and ending with the most distant ancestor. If the specified group has no immediate parent, the results are empty.
-    * @param {string=} params.childrenOfGroup A group name: "projects/{project_id_or_number}/groups/{group_id}". Returns groups whose parentName field contains the group name. If no groups have this parent, the results are empty.
-    * @param {string=} params.descendantsOfGroup A group name: "projects/{project_id_or_number}/groups/{group_id}". Returns the descendants of the specified group. This is a superset of the results returned by the childrenOfGroup filter, and includes children-of-children, and so forth.
-    * @param {string} params.name The project whose groups are to be listed. The format is "projects/{project_id_or_number}".
-    * @param {integer=} params.pageSize A positive number that is the maximum number of results to return.
-    * @param {string=} params.pageToken If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceProjectsGroupsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceProjectsGroupsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaListGroupsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListGroupsResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListGroupsResponse] = js.native
@@ -323,8 +275,8 @@ class ResourceProjectsGroups protected () extends StObject {
   def list(params: ParamsResourceProjectsGroupsList, callback: BodyResponseCallback[SchemaListGroupsResponse]): Unit = js.native
   def list(
     params: ParamsResourceProjectsGroupsList,
-    options: BodyResponseCallback[SchemaListGroupsResponse],
-    callback: BodyResponseCallback[SchemaListGroupsResponse]
+    options: BodyResponseCallback[Readable | SchemaListGroupsResponse],
+    callback: BodyResponseCallback[Readable | SchemaListGroupsResponse]
   ): Unit = js.native
   def list(params: ParamsResourceProjectsGroupsList, options: MethodOptions): GaxiosPromise[SchemaListGroupsResponse] = js.native
   def list(
@@ -332,77 +284,80 @@ class ResourceProjectsGroups protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListGroupsResponse]
   ): Unit = js.native
+  /**
+    * Lists the existing groups.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/monitoring.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const monitoring = google.monitoring('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/monitoring',
+    *       'https://www.googleapis.com/auth/monitoring.read',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await monitoring.projects.groups.list({
+    *     // A group name. The format is: projects/[PROJECT_ID_OR_NUMBER]/groups/[GROUP_ID] Returns groups that are ancestors of the specified group. The groups are returned in order, starting with the immediate parent and ending with the most distant ancestor. If the specified group has no immediate parent, the results are empty.
+    *     ancestorsOfGroup: 'placeholder-value',
+    *     // A group name. The format is: projects/[PROJECT_ID_OR_NUMBER]/groups/[GROUP_ID] Returns groups whose parent_name field contains the group name. If no groups have this parent, the results are empty.
+    *     childrenOfGroup: 'placeholder-value',
+    *     // A group name. The format is: projects/[PROJECT_ID_OR_NUMBER]/groups/[GROUP_ID] Returns the descendants of the specified group. This is a superset of the results returned by the children_of_group filter, and includes children-of-children, and so forth.
+    *     descendantsOfGroup: 'placeholder-value',
+    *     // Required. The project (https://cloud.google.com/monitoring/api/v3#project_name) whose groups are to be listed. The format is: projects/[PROJECT_ID_OR_NUMBER]
+    *     name: 'projects/my-project',
+    *     // A positive number that is the maximum number of results to return.
+    *     pageSize: 'placeholder-value',
+    *     // If this field is not empty then it must contain the next_page_token value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.
+    *     pageToken: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "group": [],
+    *   //   "nextPageToken": "my_nextPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceProjectsGroupsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceProjectsGroupsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
   var members: ResourceProjectsGroupsMembers = js.native
   
-  /**
-    * monitoring.projects.groups.update
-    * @desc Updates an existing group. You can change any group attributes
-    * except name.
-    * @example
-    * * // PRE-REQUISITES:
-    * // ---------------
-    * // 1. If not already done, enable the Google Monitoring API and check the
-    * quota for your project at
-    * //
-    * https://console.developers.google.com/apis/api/monitoring_component/quotas
-    * // 2. This sample uses Application Default Credentials for Auth. If not
-    * already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk/ and run 'gcloud beta auth
-    * application-default login'
-    * // 3. To install the client library and Application Default Credentials
-    * library, run:
-    * //    'npm install googleapis --save'
-    * var google = require('googleapis');
-    * var monitoring = google.monitoring('v3');
-    *
-    * google.auth.getApplicationDefault(function(err, authClient) {
-    *   if (err) {
-    *     console.log('Authentication failed because of ', err);
-    *     return;
-    *   }
-    *   if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *   }
-    *
-    *   var request = {
-    *     // TODO: Change placeholders below to appropriate parameter values
-    * for the 'update' method:
-    *
-    *     // The name of this group. The format is
-    * `"projects/{project_id_or_number}/groups/{group_id}"`. When
-    *     // creating a group, this field is ignored and a new name is created
-    * consisting of the project
-    *     // specified in the call to `CreateGroup` and a unique `{group_id}`
-    * that is generated automatically.
-    *     // @OutputOnly
-    *     name: "projects/{MY-PROJECT}/groups/{MY-GROUP}",
-    *     resource: {},
-    *     // Auth client
-    *     auth: authClient
-    *   };
-    *
-    *   monitoring.projects.groups.update(request, function(err, result) {
-    *     if (err) {
-    *       console.log(err);
-    *     } else {
-    *       console.log(result);
-    *     }
-    *   });
-    * });
-    * @alias monitoring.projects.groups.update
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Output only. The name of this group. The format is "projects/{project_id_or_number}/groups/{group_id}". When creating a group, this field is ignored and a new name is created consisting of the project specified in the call to CreateGroup and a unique {group_id} that is generated automatically.
-    * @param {boolean=} params.validateOnly If true, validate this request but do not update the existing group.
-    * @param {().Group} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def update(): GaxiosPromise[SchemaGroup] = js.native
   def update(callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGroup] = js.native
@@ -410,13 +365,90 @@ class ResourceProjectsGroups protected () extends StObject {
   def update(params: ParamsResourceProjectsGroupsUpdate, callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
   def update(
     params: ParamsResourceProjectsGroupsUpdate,
-    options: BodyResponseCallback[SchemaGroup],
-    callback: BodyResponseCallback[SchemaGroup]
+    options: BodyResponseCallback[Readable | SchemaGroup],
+    callback: BodyResponseCallback[Readable | SchemaGroup]
   ): Unit = js.native
   def update(params: ParamsResourceProjectsGroupsUpdate, options: MethodOptions): GaxiosPromise[SchemaGroup] = js.native
   def update(
     params: ParamsResourceProjectsGroupsUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGroup]
+  ): Unit = js.native
+  /**
+    * Updates an existing group. You can change any group attributes except name.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/monitoring.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const monitoring = google.monitoring('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/monitoring',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await monitoring.projects.groups.update({
+    *     // Output only. The name of this group. The format is: projects/[PROJECT_ID_OR_NUMBER]/groups/[GROUP_ID] When creating a group, this field is ignored and a new name is created consisting of the project specified in the call to CreateGroup and a unique [GROUP_ID] that is generated automatically.
+    *     name: 'projects/my-project/groups/my-group',
+    *     // If true, validate this request but do not update the existing group.
+    *     validateOnly: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "displayName": "my_displayName",
+    *       //   "filter": "my_filter",
+    *       //   "isCluster": false,
+    *       //   "name": "my_name",
+    *       //   "parentName": "my_parentName"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "displayName": "my_displayName",
+    *   //   "filter": "my_filter",
+    *   //   "isCluster": false,
+    *   //   "name": "my_name",
+    *   //   "parentName": "my_parentName"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceProjectsGroupsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceProjectsGroupsUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

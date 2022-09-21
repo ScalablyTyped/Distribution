@@ -2,7 +2,6 @@ package typings.materialUi.MaterialUI
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.DOMAttributes
-import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
@@ -10,8 +9,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.react.mod.Props because var conflicts: children. Inlined ref, key */ trait DialogProps
+trait DialogProps
   extends StObject
      with DOMAttributes[js.Object] {
   
@@ -38,8 +36,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var contentStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var key: js.UndefOr[Key] = js.undefined
-  
   var modal: js.UndefOr[Boolean] = js.undefined
   
   var onRequestClose: js.UndefOr[js.Function1[/* buttonClicked */ Boolean, Unit]] = js.undefined
@@ -52,7 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var paperClassName: js.UndefOr[String] = js.undefined
   
-  var paperProps: js.UndefOr[js.Any] = js.undefined
+  var paperProps: js.UndefOr[Any] = js.undefined
   
   var ref: js.UndefOr[LegacyRef[Dialog]] = js.undefined
   
@@ -91,7 +87,7 @@ object DialogProps {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: (DialogAction | ReactElement)*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: (DialogAction | ReactElement)*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setAutoDetectWindowHeight(value: Boolean): Self = StObject.set(x, "autoDetectWindowHeight", value.asInstanceOf[js.Any])
     
@@ -121,10 +117,6 @@ object DialogProps {
     
     inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
     
-    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-    
-    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-    
     inline def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
     inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
@@ -147,7 +139,7 @@ object DialogProps {
     
     inline def setPaperClassNameUndefined: Self = StObject.set(x, "paperClassName", js.undefined)
     
-    inline def setPaperProps(value: js.Any): Self = StObject.set(x, "paperProps", value.asInstanceOf[js.Any])
+    inline def setPaperProps(value: Any): Self = StObject.set(x, "paperProps", value.asInstanceOf[js.Any])
     
     inline def setPaperPropsUndefined: Self = StObject.set(x, "paperProps", js.undefined)
     

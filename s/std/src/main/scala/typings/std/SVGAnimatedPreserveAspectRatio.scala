@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Used for attributes of type SVGPreserveAspectRatio which can be animated. */
 trait SVGAnimatedPreserveAspectRatio extends StObject {
   
+  /* standard dom */
   val animVal: SVGPreserveAspectRatio
   
+  /* standard dom */
   val baseVal: SVGPreserveAspectRatio
 }
 object SVGAnimatedPreserveAspectRatio {

@@ -21,15 +21,6 @@ object InitializeError {
     __obj.asInstanceOf[InitializeError]
   }
   
-  /**
-    * If the protocol version provided by the client can't be handled by the server.
-    * @deprecated This initialize error got replaced by client capabilities. There is
-    * no version handshake in version 3.0x
-    */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "InitializeError.unknownProtocolVersion")
-  @js.native
-  val unknownProtocolVersion: Double = js.native
-  
   extension [Self <: InitializeError](x: Self) {
     
     inline def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])

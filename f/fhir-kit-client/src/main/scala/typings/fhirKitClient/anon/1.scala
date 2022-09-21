@@ -1,39 +1,24 @@
 package typings.fhirKitClient.anon
 
-import typings.fhirKitClient.fhirKitClientStrings.ClaimResponse
+import typings.fhirKitClient.fhirKitClientStrings.transaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `1` extends StObject {
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
-  
-  var id: String
-  
-  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
-  
-  var resourceType: ClaimResponse
+  var `type`: transaction
 }
 object `1` {
   
-  inline def apply(id: String): `1` = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = "ClaimResponse")
+  inline def apply(): `1` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("transaction")
     __obj.asInstanceOf[`1`]
   }
   
   extension [Self <: `1`](x: Self) {
     
-    inline def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
-    
-    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
-    
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-    
-    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
-    
-    inline def setResourceType(value: ClaimResponse): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setType(value: transaction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

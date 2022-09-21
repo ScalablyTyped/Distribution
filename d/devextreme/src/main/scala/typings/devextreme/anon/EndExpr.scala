@@ -1,28 +1,50 @@
 package typings.devextreme.anon
 
-import typings.devextreme.mod.DevExpress.data.DataSourceOptions
+import typings.devextreme.mod.DevExpress.data.DataSource.DataSourceLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait EndExpr extends StObject {
   
+  /**
+    * Specifies the data field that provides tasks&apos; color.
+    */
   var colorExpr: js.UndefOr[String | js.Function] = js.undefined
   
-  var dataSource: js.UndefOr[
-    js.Array[js.Any] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions
-  ] = js.undefined
+  /**
+    * Binds the UI component to the data source which contains tasks.
+    */
+  var dataSource: js.UndefOr[(DataSourceLike[Any, Any]) | Null] = js.undefined
   
+  /**
+    * Specifies the data field that provides tasks&apos; end dates.
+    */
   var endExpr: js.UndefOr[String | js.Function] = js.undefined
   
+  /**
+    * Specifies the data field that provides keys for tasks.
+    */
   var keyExpr: js.UndefOr[String | js.Function] = js.undefined
   
+  /**
+    * Specifies the data field that provides tasks&apos; parent IDs.
+    */
   var parentIdExpr: js.UndefOr[String | js.Function] = js.undefined
   
+  /**
+    * Specifies the data field that provides tasks&apos; progress.
+    */
   var progressExpr: js.UndefOr[String | js.Function] = js.undefined
   
+  /**
+    * Specifies the data field that provides tasks&apos; start dates.
+    */
   var startExpr: js.UndefOr[String | js.Function] = js.undefined
   
+  /**
+    * Specifies the data field that provides task titles.
+    */
   var titleExpr: js.UndefOr[String | js.Function] = js.undefined
 }
 object EndExpr {
@@ -38,11 +60,13 @@ object EndExpr {
     
     inline def setColorExprUndefined: Self = StObject.set(x, "colorExpr", js.undefined)
     
-    inline def setDataSource(value: js.Array[js.Any] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: DataSourceLike[Any, Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceNull: Self = StObject.set(x, "dataSource", null)
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
     
     inline def setEndExpr(value: String | js.Function): Self = StObject.set(x, "endExpr", value.asInstanceOf[js.Any])
     

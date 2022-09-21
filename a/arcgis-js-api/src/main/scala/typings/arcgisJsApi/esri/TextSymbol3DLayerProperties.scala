@@ -1,5 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.baseline_
+import typings.arcgisJsApi.arcgisJsApiStrings.bottom_
+import typings.arcgisJsApi.arcgisJsApiStrings.center_
+import typings.arcgisJsApi.arcgisJsApiStrings.left_
+import typings.arcgisJsApi.arcgisJsApiStrings.middle
+import typings.arcgisJsApi.arcgisJsApiStrings.right_
+import typings.arcgisJsApi.arcgisJsApiStrings.top_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,6 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextSymbol3DLayerProperties
   extends StObject
      with Symbol3DLayerProperties {
+  
+  /**
+    * The background of the text.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#background)
+    */
+  var background: js.UndefOr[TextSymbol3DLayerBackgroundProperties] = js.undefined
   
   /**
     * The font of the text label.
@@ -23,6 +37,24 @@ trait TextSymbol3DLayerProperties
   var halo: js.UndefOr[TextSymbol3DLayerHaloProperties] = js.undefined
   
   /**
+    * Adjusts the horizontal alignment of the text in multi-lines.
+    *
+    * @default "center"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#horizontalAlignment)
+    */
+  var horizontalAlignment: js.UndefOr[left_ | right_ | center_] = js.undefined
+  
+  /**
+    * The height of the space between each line of text.
+    *
+    * @default 1.0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#lineHeight)
+    */
+  var lineHeight: js.UndefOr[Double] = js.undefined
+  
+  /**
     * The material used to color the text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#material)
@@ -31,6 +63,8 @@ trait TextSymbol3DLayerProperties
   
   /**
     * Size of the text label in points.
+    *
+    * @default 9
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#size)
     */
@@ -42,6 +76,15 @@ trait TextSymbol3DLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#text)
     */
   var text: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Adjusts the vertical alignment of the text.
+    *
+    * @default "baseline"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#verticalAlignment)
+    */
+  var verticalAlignment: js.UndefOr[baseline_ | top_ | middle | bottom_] = js.undefined
 }
 object TextSymbol3DLayerProperties {
   
@@ -52,6 +95,10 @@ object TextSymbol3DLayerProperties {
   
   extension [Self <: TextSymbol3DLayerProperties](x: Self) {
     
+    inline def setBackground(value: TextSymbol3DLayerBackgroundProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
     inline def setFont(value: FontProperties): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
@@ -59,6 +106,14 @@ object TextSymbol3DLayerProperties {
     inline def setHalo(value: TextSymbol3DLayerHaloProperties): Self = StObject.set(x, "halo", value.asInstanceOf[js.Any])
     
     inline def setHaloUndefined: Self = StObject.set(x, "halo", js.undefined)
+    
+    inline def setHorizontalAlignment(value: left_ | right_ | center_): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    
+    inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    
+    inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
     inline def setMaterial(value: TextSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
@@ -71,5 +126,9 @@ object TextSymbol3DLayerProperties {
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setVerticalAlignment(value: baseline_ | top_ | middle | bottom_): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
   }
 }

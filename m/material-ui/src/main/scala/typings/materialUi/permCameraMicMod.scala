@@ -10,10 +10,10 @@ object permCameraMicMod {
   
   @JSImport("material-ui/svg-icons/action/perm-camera-mic", JSImport.Default)
   @js.native
-  class default () extends ActionPermCameraMic
+  open class default () extends ActionPermCameraMic
   
   @JSImport("material-ui/svg-icons/action/perm-camera-mic", "ActionPermCameraMic")
   @js.native
-  class ActionPermCameraMic ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionPermCameraMic ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

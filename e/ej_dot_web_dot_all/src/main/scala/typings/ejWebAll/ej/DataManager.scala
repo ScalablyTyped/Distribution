@@ -12,40 +12,40 @@ trait DataManager extends StObject {
   def executeLocal(): DataManager = js.native
   def executeLocal(query: Query): DataManager = js.native
   
-  def executeQuery(): JQueryPromise[js.Any] = js.native
-  def executeQuery(query: Unit, done: js.Any): JQueryPromise[js.Any] = js.native
-  def executeQuery(query: Unit, done: js.Any, fail: js.Any): JQueryPromise[js.Any] = js.native
-  def executeQuery(query: Unit, done: js.Any, fail: js.Any, always: js.Any): JQueryPromise[js.Any] = js.native
-  def executeQuery(query: Unit, done: js.Any, fail: Unit, always: js.Any): JQueryPromise[js.Any] = js.native
-  def executeQuery(query: Unit, done: Unit, fail: js.Any): JQueryPromise[js.Any] = js.native
-  def executeQuery(query: Unit, done: Unit, fail: js.Any, always: js.Any): JQueryPromise[js.Any] = js.native
-  def executeQuery(query: Unit, done: Unit, fail: Unit, always: js.Any): JQueryPromise[js.Any] = js.native
-  def executeQuery(query: Query): JQueryPromise[js.Any] = js.native
-  def executeQuery(query: Query, done: js.Any): JQueryPromise[js.Any] = js.native
-  def executeQuery(query: Query, done: js.Any, fail: js.Any): JQueryPromise[js.Any] = js.native
-  def executeQuery(query: Query, done: js.Any, fail: js.Any, always: js.Any): JQueryPromise[js.Any] = js.native
-  def executeQuery(query: Query, done: js.Any, fail: Unit, always: js.Any): JQueryPromise[js.Any] = js.native
-  def executeQuery(query: Query, done: Unit, fail: js.Any): JQueryPromise[js.Any] = js.native
-  def executeQuery(query: Query, done: Unit, fail: js.Any, always: js.Any): JQueryPromise[js.Any] = js.native
-  def executeQuery(query: Query, done: Unit, fail: Unit, always: js.Any): JQueryPromise[js.Any] = js.native
+  def executeQuery(): JQueryPromise[Any] = js.native
+  def executeQuery(query: Unit, done: Any): JQueryPromise[Any] = js.native
+  def executeQuery(query: Unit, done: Any, fail: Any): JQueryPromise[Any] = js.native
+  def executeQuery(query: Unit, done: Any, fail: Any, always: Any): JQueryPromise[Any] = js.native
+  def executeQuery(query: Unit, done: Any, fail: Unit, always: Any): JQueryPromise[Any] = js.native
+  def executeQuery(query: Unit, done: Unit, fail: Any): JQueryPromise[Any] = js.native
+  def executeQuery(query: Unit, done: Unit, fail: Any, always: Any): JQueryPromise[Any] = js.native
+  def executeQuery(query: Unit, done: Unit, fail: Unit, always: Any): JQueryPromise[Any] = js.native
+  def executeQuery(query: Query): JQueryPromise[Any] = js.native
+  def executeQuery(query: Query, done: Any): JQueryPromise[Any] = js.native
+  def executeQuery(query: Query, done: Any, fail: Any): JQueryPromise[Any] = js.native
+  def executeQuery(query: Query, done: Any, fail: Any, always: Any): JQueryPromise[Any] = js.native
+  def executeQuery(query: Query, done: Any, fail: Unit, always: Any): JQueryPromise[Any] = js.native
+  def executeQuery(query: Query, done: Unit, fail: Any): JQueryPromise[Any] = js.native
+  def executeQuery(query: Query, done: Unit, fail: Any, always: Any): JQueryPromise[Any] = js.native
+  def executeQuery(query: Query, done: Unit, fail: Unit, always: Any): JQueryPromise[Any] = js.native
   
-  def insert(data: js.Any): JQueryPromise[js.Any] = js.native
-  def insert(data: js.Any, tableName: String): JQueryPromise[js.Any] = js.native
+  def insert(data: Any): JQueryPromise[Any] = js.native
+  def insert(data: Any, tableName: String): JQueryPromise[Any] = js.native
   
-  def remove(keyField: String, value: js.Any): js.Any = js.native
-  def remove(keyField: String, value: js.Any, tableName: String): js.Any = js.native
+  def remove(keyField: String, value: Any): Any = js.native
+  def remove(keyField: String, value: Any, tableName: String): Any = js.native
   
-  def saveChanges(): JQueryDeferred[js.Any] = js.native
-  def saveChanges(changes: Unit, key: String): JQueryDeferred[js.Any] = js.native
-  def saveChanges(changes: Unit, key: String, tableName: String): JQueryDeferred[js.Any] = js.native
-  def saveChanges(changes: Unit, key: Unit, tableName: String): JQueryDeferred[js.Any] = js.native
-  def saveChanges(changes: Changes): JQueryDeferred[js.Any] = js.native
-  def saveChanges(changes: Changes, key: String): JQueryDeferred[js.Any] = js.native
-  def saveChanges(changes: Changes, key: String, tableName: String): JQueryDeferred[js.Any] = js.native
-  def saveChanges(changes: Changes, key: Unit, tableName: String): JQueryDeferred[js.Any] = js.native
+  def saveChanges(): JQueryDeferred[Any] = js.native
+  def saveChanges(changes: Unit, key: String): JQueryDeferred[Any] = js.native
+  def saveChanges(changes: Unit, key: String, tableName: String): JQueryDeferred[Any] = js.native
+  def saveChanges(changes: Unit, key: Unit, tableName: String): JQueryDeferred[Any] = js.native
+  def saveChanges(changes: Changes): JQueryDeferred[Any] = js.native
+  def saveChanges(changes: Changes, key: String): JQueryDeferred[Any] = js.native
+  def saveChanges(changes: Changes, key: String, tableName: String): JQueryDeferred[Any] = js.native
+  def saveChanges(changes: Changes, key: Unit, tableName: String): JQueryDeferred[Any] = js.native
   
   def setDefaultQuery(query: Query): Unit = js.native
   
-  def update(keyField: String, value: js.Any): js.Any = js.native
-  def update(keyField: String, value: js.Any, tableName: String): js.Any = js.native
+  def update(keyField: String, value: Any): Any = js.native
+  def update(keyField: String, value: Any, tableName: String): Any = js.native
 }

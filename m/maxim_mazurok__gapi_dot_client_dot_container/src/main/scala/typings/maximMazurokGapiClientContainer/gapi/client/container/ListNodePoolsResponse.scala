@@ -22,6 +22,6 @@ object ListNodePoolsResponse {
     
     inline def setNodePoolsUndefined: Self = StObject.set(x, "nodePools", js.undefined)
     
-    inline def setNodePoolsVarargs(value: NodePool*): Self = StObject.set(x, "nodePools", js.Array(value :_*))
+    inline def setNodePoolsVarargs(value: NodePool*): Self = StObject.set(x, "nodePools", js.Array(value*))
   }
 }

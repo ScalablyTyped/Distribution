@@ -31,13 +31,13 @@ object StatementInfo {
     
     inline def setBindNamesUndefined: Self = StObject.set(x, "bindNames", js.undefined)
     
-    inline def setBindNamesVarargs(value: String*): Self = StObject.set(x, "bindNames", js.Array(value :_*))
+    inline def setBindNamesVarargs(value: String*): Self = StObject.set(x, "bindNames", js.Array(value*))
     
     inline def setMetaData(value: js.Array[Metadata[T]]): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     
     inline def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
     
-    inline def setMetaDataVarargs(value: Metadata[T]*): Self = StObject.set(x, "metaData", js.Array(value :_*))
+    inline def setMetaDataVarargs(value: Metadata[T]*): Self = StObject.set(x, "metaData", js.Array(value*))
     
     inline def setStatementType(value: Double): Self = StObject.set(x, "statementType", value.asInstanceOf[js.Any])
     

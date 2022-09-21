@@ -8,5 +8,5 @@ object invalidRequestExceptionMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/InvalidRequestException", "InvalidRequestException")
   @js.native
-  val InvalidRequestException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidRequestException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

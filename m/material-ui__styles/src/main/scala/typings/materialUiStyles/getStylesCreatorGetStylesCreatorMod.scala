@@ -12,7 +12,7 @@ object getStylesCreatorGetStylesCreatorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[S /* <: Styles[js.Any, js.Any, String] */](style: S): StylesCreator[js.Any, js.Any, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(style.asInstanceOf[js.Any]).asInstanceOf[StylesCreator[js.Any, js.Any, String]]
+  inline def default[S /* <: Styles[Any, Any, String] */](style: S): StylesCreator[Any, Any, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(style.asInstanceOf[js.Any]).asInstanceOf[StylesCreator[Any, Any, String]]
   
   trait StylesCreator[Theme, Props /* <: js.Object */, ClassKey /* <: String */] extends StObject {
     

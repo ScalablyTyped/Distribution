@@ -21,12 +21,12 @@ trait GetOrganizationsAccessReportResponse extends StObject {
   /**
     * The date and time, in ISO 8601 date-time format, when the generated report job was completed or failed. This field is null if the job is still in progress, as indicated by a job status value of IN_PROGRESS.
     */
-  var JobCompletionDate: js.UndefOr[dateType] = js.undefined
+  var JobCompletionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date and time, in ISO 8601 date-time format, when the report job was created.
     */
-  var JobCreationDate: dateType
+  var JobCreationDate: js.Date
   
   /**
     * The status of the job.
@@ -50,7 +50,7 @@ trait GetOrganizationsAccessReportResponse extends StObject {
 }
 object GetOrganizationsAccessReportResponse {
   
-  inline def apply(JobCreationDate: dateType, JobStatus: jobStatusType): GetOrganizationsAccessReportResponse = {
+  inline def apply(JobCreationDate: js.Date, JobStatus: jobStatusType): GetOrganizationsAccessReportResponse = {
     val __obj = js.Dynamic.literal(JobCreationDate = JobCreationDate.asInstanceOf[js.Any], JobStatus = JobStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOrganizationsAccessReportResponse]
   }
@@ -61,7 +61,7 @@ object GetOrganizationsAccessReportResponse {
     
     inline def setAccessDetailsUndefined: Self = StObject.set(x, "AccessDetails", js.undefined)
     
-    inline def setAccessDetailsVarargs(value: AccessDetail*): Self = StObject.set(x, "AccessDetails", js.Array(value :_*))
+    inline def setAccessDetailsVarargs(value: AccessDetail*): Self = StObject.set(x, "AccessDetails", js.Array(value*))
     
     inline def setErrorDetails(value: ErrorDetails): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
     
@@ -71,11 +71,11 @@ object GetOrganizationsAccessReportResponse {
     
     inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    inline def setJobCompletionDate(value: dateType): Self = StObject.set(x, "JobCompletionDate", value.asInstanceOf[js.Any])
+    inline def setJobCompletionDate(value: js.Date): Self = StObject.set(x, "JobCompletionDate", value.asInstanceOf[js.Any])
     
     inline def setJobCompletionDateUndefined: Self = StObject.set(x, "JobCompletionDate", js.undefined)
     
-    inline def setJobCreationDate(value: dateType): Self = StObject.set(x, "JobCreationDate", value.asInstanceOf[js.Any])
+    inline def setJobCreationDate(value: js.Date): Self = StObject.set(x, "JobCreationDate", value.asInstanceOf[js.Any])
     
     inline def setJobStatus(value: jobStatusType): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait ExportTask extends StObject {
   var ExportOnly: js.UndefOr[StringList] = js.undefined
   
   /**
-    * A unique identifier for the snapshot export task. This ID isn't an identifier for the Amazon S3 bucket where the snapshot is exported to. 
+    * A unique identifier for the snapshot export task. This ID isn't an identifier for the Amazon S3 bucket where the snapshot is exported to.
     */
   var ExportTaskIdentifier: js.UndefOr[String] = js.undefined
   
@@ -22,12 +22,12 @@ trait ExportTask extends StObject {
   var FailureCause: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the IAM role that is used to write to Amazon S3 when exporting a snapshot. 
+    * The name of the IAM role that is used to write to Amazon S3 when exporting a snapshot.
     */
   var IamRoleArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS KMS key that is used to encrypt the snapshot when it's exported to Amazon S3. The KMS key ID is the Amazon Resource Name (ARN), the KMS key identifier, or the KMS key alias for the KMS encryption key. The IAM role used for the snapshot export must have encryption and decryption permissions to use this KMS key. 
+    * The key identifier of the Amazon Web Services KMS key that is used to encrypt the snapshot when it's exported to Amazon S3. The KMS key identifier is its key ARN, key ID, alias ARN, or alias name. The IAM role used for the snapshot export must have encryption and decryption permissions to use this KMS key.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -49,7 +49,7 @@ trait ExportTask extends StObject {
   /**
     * The time that the snapshot was created.
     */
-  var SnapshotTime: js.UndefOr[TStamp] = js.undefined
+  var SnapshotTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the snapshot exported to Amazon S3.
@@ -64,12 +64,12 @@ trait ExportTask extends StObject {
   /**
     * The time that the snapshot export task completed.
     */
-  var TaskEndTime: js.UndefOr[TStamp] = js.undefined
+  var TaskEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time that the snapshot export task started.
     */
-  var TaskStartTime: js.UndefOr[TStamp] = js.undefined
+  var TaskStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The total amount of data exported, in gigabytes.
@@ -94,7 +94,7 @@ object ExportTask {
     
     inline def setExportOnlyUndefined: Self = StObject.set(x, "ExportOnly", js.undefined)
     
-    inline def setExportOnlyVarargs(value: String*): Self = StObject.set(x, "ExportOnly", js.Array(value :_*))
+    inline def setExportOnlyVarargs(value: String*): Self = StObject.set(x, "ExportOnly", js.Array(value*))
     
     inline def setExportTaskIdentifier(value: String): Self = StObject.set(x, "ExportTaskIdentifier", value.asInstanceOf[js.Any])
     
@@ -124,7 +124,7 @@ object ExportTask {
     
     inline def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
     
-    inline def setSnapshotTime(value: TStamp): Self = StObject.set(x, "SnapshotTime", value.asInstanceOf[js.Any])
+    inline def setSnapshotTime(value: js.Date): Self = StObject.set(x, "SnapshotTime", value.asInstanceOf[js.Any])
     
     inline def setSnapshotTimeUndefined: Self = StObject.set(x, "SnapshotTime", js.undefined)
     
@@ -136,11 +136,11 @@ object ExportTask {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setTaskEndTime(value: TStamp): Self = StObject.set(x, "TaskEndTime", value.asInstanceOf[js.Any])
+    inline def setTaskEndTime(value: js.Date): Self = StObject.set(x, "TaskEndTime", value.asInstanceOf[js.Any])
     
     inline def setTaskEndTimeUndefined: Self = StObject.set(x, "TaskEndTime", js.undefined)
     
-    inline def setTaskStartTime(value: TStamp): Self = StObject.set(x, "TaskStartTime", value.asInstanceOf[js.Any])
+    inline def setTaskStartTime(value: js.Date): Self = StObject.set(x, "TaskStartTime", value.asInstanceOf[js.Any])
     
     inline def setTaskStartTimeUndefined: Self = StObject.set(x, "TaskStartTime", js.undefined)
     

@@ -9,5 +9,5 @@ object notNullMatcherMod {
   
   @JSImport("ts-mockito/lib/matcher/type/NotNullMatcher", "NotNullMatcher")
   @js.native
-  class NotNullMatcher () extends Matcher
+  open class NotNullMatcher () extends Matcher
 }

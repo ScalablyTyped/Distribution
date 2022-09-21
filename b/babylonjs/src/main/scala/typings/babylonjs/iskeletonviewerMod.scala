@@ -112,7 +112,7 @@ object iskeletonviewerMod {
       
       inline def setColorMapUndefined: Self = StObject.set(x, "colorMap", js.undefined)
       
-      inline def setColorMapVarargs(value: ISkeletonMapShaderColorMapKnot*): Self = StObject.set(x, "colorMap", js.Array(value :_*))
+      inline def setColorMapVarargs(value: ISkeletonMapShaderColorMapKnot*): Self = StObject.set(x, "colorMap", js.Array(value*))
       
       inline def setSkeleton(value: Skeleton): Self = StObject.set(x, "skeleton", value.asInstanceOf[js.Any])
     }

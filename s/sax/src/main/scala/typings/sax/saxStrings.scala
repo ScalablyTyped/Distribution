@@ -71,6 +71,10 @@ object saxStrings {
   inline def opentag: opentag = "opentag".asInstanceOf[opentag]
   
   @js.native
+  sealed trait opentagstart extends StObject
+  inline def opentagstart: opentagstart = "opentagstart".asInstanceOf[opentagstart]
+  
+  @js.native
   sealed trait pipe extends StObject
   inline def pipe: pipe = "pipe".asInstanceOf[pipe]
   
@@ -89,6 +93,10 @@ object saxStrings {
   @js.native
   sealed trait script extends StObject
   inline def script: script = "script".asInstanceOf[script]
+  
+  @js.native
+  sealed trait sgmldeclaration extends StObject
+  inline def sgmldeclaration: sgmldeclaration = "sgmldeclaration".asInstanceOf[sgmldeclaration]
   
   @js.native
   sealed trait text extends StObject

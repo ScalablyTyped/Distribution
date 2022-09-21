@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.i18n.TextConversion
   * @since OOo 1.1.2
   */
-type ConversionDictionaryList = typings.activexLibreoffice.com_.sun.star.linguistic2.XConversionDictionaryList
+type ConversionDictionaryList = XConversionDictionaryList
 
 /**
   * is the list of personal dictionaries.
@@ -27,7 +27,7 @@ type ConversionDictionaryList = typings.activexLibreoffice.com_.sun.star.linguis
   * @see com.sun.star.linguistic2.XDictionaryList
   * @see com.sun.star.linguistic2.XSearchableDictionaryList
   */
-type DictionaryList = typings.activexLibreoffice.com_.sun.star.linguistic2.XSearchableDictionaryList
+type DictionaryList = XSearchableDictionaryList
 
 /**
   * represents a dictionary for Hangul/Hanja text conversion.
@@ -39,15 +39,15 @@ type DictionaryList = typings.activexLibreoffice.com_.sun.star.linguistic2.XSear
   * the same as for the right part.
   * @since OOo 1.1.2
   */
-type HangulHanjaConversionDictionary = typings.activexLibreoffice.com_.sun.star.linguistic2.ConversionDictionary
+type HangulHanjaConversionDictionary = ConversionDictionary
 
-type LanguageGuessing = typings.activexLibreoffice.com_.sun.star.linguistic2.XLanguageGuessing
+type LanguageGuessing = XLanguageGuessing
 
 /** the set of linguistic relevant properties. */
-type LinguProperties = typings.activexLibreoffice.com_.sun.star.linguistic2.XLinguProperties
+type LinguProperties = XLinguProperties
 
 /** offers linguistic functionality. Is to be used to access spell checker, hyphenator and thesaurus. */
-type LinguServiceManager = typings.activexLibreoffice.com_.sun.star.linguistic2.XLinguServiceManager2
+type LinguServiceManager = XLinguServiceManager2
 
 /**
   * provides a proofreader (often known as grammar checker) for text
@@ -59,7 +59,7 @@ type LinguServiceManager = typings.activexLibreoffice.com_.sun.star.linguistic2.
   * currently required to be checked. However error reports need to be limited to the current sentence.
   * @since OOo 3.0.1
   */
-type Proofreader = typings.activexLibreoffice.com_.sun.star.linguistic2.XProofreader
+type Proofreader = XProofreader
 
 /**
   * provides a proofreading iterator
@@ -68,4 +68,4 @@ type Proofreader = typings.activexLibreoffice.com_.sun.star.linguistic2.XProofre
   * process requests for proofreading text portions.
   * @since OOo 3.0.1
   */
-type ProofreadingIterator = typings.activexLibreoffice.com_.sun.star.linguistic2.XProofreadingIterator
+type ProofreadingIterator = XProofreadingIterator

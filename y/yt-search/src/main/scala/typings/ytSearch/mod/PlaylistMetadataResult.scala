@@ -59,7 +59,7 @@ object PlaylistMetadataResult {
     
     inline def setVideos(value: js.Array[PlaylistItem]): Self = StObject.set(x, "videos", value.asInstanceOf[js.Any])
     
-    inline def setVideosVarargs(value: PlaylistItem*): Self = StObject.set(x, "videos", js.Array(value :_*))
+    inline def setVideosVarargs(value: PlaylistItem*): Self = StObject.set(x, "videos", js.Array(value*))
     
     inline def setViews(value: Double): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
   }

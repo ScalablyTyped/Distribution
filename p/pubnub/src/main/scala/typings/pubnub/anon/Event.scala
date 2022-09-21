@@ -1,32 +1,35 @@
 package typings.pubnub.anon
 
-import typings.pubnub.mod.SpaceData
+import typings.pubnub.mod.ObjectCustom
+import typings.pubnub.mod.UUIDMetadataObject
+import typings.pubnub.pubnubStrings.set
+import typings.pubnub.pubnubStrings.uuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Event extends StObject {
+trait Event[UUIDCustom /* <: ObjectCustom */] extends StObject {
   
-  var data: SpaceData
+  var data: UUIDMetadataObject[UUIDCustom]
   
-  var event: String
+  var event: set
   
-  var `type`: String
+  var `type`: uuid
 }
 object Event {
   
-  inline def apply(data: SpaceData, event: String, `type`: String): Event = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Event]
+  inline def apply[UUIDCustom /* <: ObjectCustom */](data: UUIDMetadataObject[UUIDCustom]): Event[UUIDCustom] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "set")
+    __obj.updateDynamic("type")("uuid")
+    __obj.asInstanceOf[Event[UUIDCustom]]
   }
   
-  extension [Self <: Event](x: Self) {
+  extension [Self <: Event[?], UUIDCustom /* <: ObjectCustom */](x: Self & Event[UUIDCustom]) {
     
-    inline def setData(value: SpaceData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: UUIDMetadataObject[UUIDCustom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: set): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: uuid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

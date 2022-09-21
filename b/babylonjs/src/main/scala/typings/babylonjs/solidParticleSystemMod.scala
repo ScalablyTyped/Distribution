@@ -1,8 +1,8 @@
 package typings.babylonjs
 
-import typings.babylonjs.anon.BSphereRadiusFactor
-import typings.babylonjs.anon.Delta
+import typings.babylonjs.anon.AutoFixFaceOrientation
 import typings.babylonjs.anon.FaceId
+import typings.babylonjs.anon.FacetNb
 import typings.babylonjs.anon.PositionFunction
 import typings.babylonjs.materialMod.Material
 import typings.babylonjs.meshMod.Mesh
@@ -22,7 +22,7 @@ object solidParticleSystemMod {
   
   @JSImport("babylonjs/Particles/solidParticleSystem", "SolidParticleSystem")
   @js.native
-  class SolidParticleSystem protected ()
+  open class SolidParticleSystem protected ()
     extends StObject
        with IDisposable {
     /**
@@ -33,16 +33,29 @@ object solidParticleSystemMod {
       * * updatable (optional boolean, default true) : if the SPS must be updatable or immutable.
       * * isPickable (optional boolean, default false) : if the solid particles must be pickable.
       * * enableDepthSort (optional boolean, default false) : if the solid particles must be sorted in the geometry according to their distance to the camera.
-      * * useModelMaterial (optional boolean, defaut false) : if the model materials must be used to create the SPS multimaterial. This enables the multimaterial supports of the SPS.
+      * * useModelMaterial (optional boolean, default false) : if the model materials must be used to create the SPS multimaterial. This enables the multimaterial supports of the SPS.
       * * enableMultiMaterial (optional boolean, default false) : if the solid particles can be given different materials.
       * * expandable (optional boolean, default false) : if particles can still be added after the initial SPS mesh creation.
       * * particleIntersection (optional boolean, default false) : if the solid particle intersections must be computed.
       * * boundingSphereOnly (optional boolean, default false) : if the particle intersection must be computed only with the bounding sphere (no bounding box computation, so faster).
-      * * bSphereRadiusFactor (optional float, default 1.0) : a number to multiply the boundind sphere radius by in order to reduce it for instance.
+      * * bSphereRadiusFactor (optional float, default 1.0) : a number to multiply the bounding sphere radius by in order to reduce it for instance.
+      * * computeBoundingBox (optional boolean, default false): if the bounding box of the entire SPS will be computed (for occlusion detection, for example). If it is false, the bounding box will be the bounding box of the first particle.
+      * * autoFixFaceOrientation (optional boolean, default false): if the particle face orientations will be flipped for transformations that change orientation (scale (-1, 1, 1), for example)
+      * @param options.updatable
+      * @param options.isPickable
+      * @param options.enableDepthSort
+      * @param options.particleIntersection
+      * @param options.boundingSphereOnly
+      * @param options.bSphereRadiusFactor
+      * @param options.expandable
+      * @param options.useModelMaterial
+      * @param options.enableMultiMaterial
+      * @param options.computeBoundingBox
+      * @param options.autoFixFaceOrientation
       * @example bSphereRadiusFactor = 1.0 / Math.sqrt(3.0) => the bounding sphere exactly matches a spherical mesh.
       */
     def this(name: String, scene: Scene) = this()
-    def this(name: String, scene: Scene, options: BSphereRadiusFactor) = this()
+    def this(name: String, scene: Scene, options: AutoFixFaceOrientation) = this()
     
     /**
       * Adds a new particle object in the particles array
@@ -57,11 +70,13 @@ object solidParticleSystemMod {
       * @param storage target storage array, if any
       * @hidden
       */
-    /* private */ var _addParticle: js.Any = js.native
+    /* private */ var _addParticle: Any = js.native
     
-    /* private */ var _alwaysVisible: js.Any = js.native
+    /* private */ var _alwaysVisible: Any = js.native
     
-    /* private */ var _autoUpdateSubMeshes: js.Any = js.native
+    /* private */ var _autoFixFaceOrientation: Any = js.native
+    
+    /* private */ var _autoUpdateSubMeshes: Any = js.native
     
     /**
       * If the particle intersection must be computed only with the bounding sphere (no bounding box computation, so faster). (Internal use only)
@@ -70,59 +85,59 @@ object solidParticleSystemMod {
     var _bSphereOnly: Boolean = js.native
     
     /**
-      * A number to multiply the boundind sphere radius by in order to reduce it for instance. (Internal use only)
+      * A number to multiply the bounding sphere radius by in order to reduce it for instance. (Internal use only)
       * @hidden
       */
     var _bSphereRadiusFactor: Double = js.native
     
-    /* private */ var _camera: js.Any = js.native
+    /* private */ var _camera: Any = js.native
     
-    /* private */ var _color: js.Any = js.native
+    /* private */ var _color: Any = js.native
     
-    /* private */ var _colors: js.Any = js.native
+    /* private */ var _colors: Any = js.native
     
-    /* private */ var _colors32: js.Any = js.native
+    /* private */ var _colors32: Any = js.native
     
-    /* private */ var _computeBoundingBox: js.Any = js.native
+    /* private */ var _computeBoundingBox: Any = js.native
     
-    /* private */ var _computeParticleColor: js.Any = js.native
+    /* private */ var _computeParticleColor: Any = js.native
     
-    /* private */ var _computeParticleRotation: js.Any = js.native
+    /* private */ var _computeParticleRotation: Any = js.native
     
-    /* private */ var _computeParticleTexture: js.Any = js.native
+    /* private */ var _computeParticleTexture: Any = js.native
     
-    /* private */ var _computeParticleVertex: js.Any = js.native
+    /* private */ var _computeParticleVertex: Any = js.native
     
-    /* private */ var _copy: js.Any = js.native
+    /* private */ var _copy: Any = js.native
     
-    /* private */ var _defaultMaterial: js.Any = js.native
+    /* private */ var _defaultMaterial: Any = js.native
     
-    /* private */ var _depthSort: js.Any = js.native
+    /* private */ var _depthSort: Any = js.native
     
-    /* private */ var _depthSortFunction: js.Any = js.native
+    /* private */ var _depthSortFunction: Any = js.native
     
-    /* private */ var _depthSortParticles: js.Any = js.native
+    /* private */ var _depthSortParticles: Any = js.native
     
-    /* private */ var _expandable: js.Any = js.native
+    /* private */ var _expandable: Any = js.native
     
     /**
       * Returns an array with unique values of Materials from the passed array
       * @param array the material array to be checked and filtered
       * @hidden
       */
-    /* private */ var _filterUniqueMaterialId: js.Any = js.native
+    /* private */ var _filterUniqueMaterialId: Any = js.native
     
-    /* private */ var _fixedNormal32: js.Any = js.native
+    /* private */ var _fixedNormal32: Any = js.native
     
-    /* private */ var _idxOfId: js.Any = js.native
+    /* private */ var _idxOfId: Any = js.native
     
-    /* private */ var _index: js.Any = js.native
+    /* private */ var _index: Any = js.native
     
-    /* private */ var _indices: js.Any = js.native
+    /* private */ var _indices: Any = js.native
     
-    /* private */ var _indices32: js.Any = js.native
+    /* private */ var _indices32: Any = js.native
     
-    /* private */ var _indicesByMaterial: js.Any = js.native
+    /* private */ var _indicesByMaterial: Any = js.native
     
     /**
       * Creates a new particle and modifies the SPS mesh geometry :
@@ -139,24 +154,25 @@ object solidParticleSystemMod {
       * @param meshNor shape normals array
       * @param bbInfo shape bounding info
       * @param storage target particle storage
+      * @param options
       * @options addShape() passed options
       * @hidden
       */
-    /* private */ var _insertNewParticle: js.Any = js.native
+    /* private */ var _insertNewParticle: Any = js.native
     
-    /* private */ var _isNotBuilt: js.Any = js.native
+    /* private */ var _isNotBuilt: Any = js.native
     
-    /* private */ var _isVisibilityBoxLocked: js.Any = js.native
+    /* private */ var _isVisibilityBoxLocked: Any = js.native
     
-    /* private */ var _lastParticleId: js.Any = js.native
+    /* private */ var _lastParticleId: Any = js.native
     
-    /* private */ var _materialIndexes: js.Any = js.native
+    /* private */ var _materialIndexes: Any = js.native
     
-    /* private */ var _materialIndexesById: js.Any = js.native
+    /* private */ var _materialIndexesById: Any = js.native
     
-    /* private */ var _materialSortFunction: js.Any = js.native
+    /* private */ var _materialSortFunction: Any = js.native
     
-    /* private */ var _materials: js.Any = js.native
+    /* private */ var _materials: Any = js.native
     
     /**
       * Inserts the shape model geometry in the global SPS mesh by updating the positions, indices, normals, colors, uvs arrays
@@ -175,26 +191,27 @@ object solidParticleSystemMod {
       * @param idx the particle index
       * @param idxInShape the particle index in its shape
       * @param options the addShape() method  passed options
+      * @param model
       * @model the particle model
       * @hidden
       */
-    /* private */ var _meshBuilder: js.Any = js.native
+    /* private */ var _meshBuilder: Any = js.native
     
-    /* private */ var _multimaterial: js.Any = js.native
+    /* private */ var _multimaterial: Any = js.native
     
-    /* private */ var _multimaterialEnabled: js.Any = js.native
+    /* private */ var _multimaterialEnabled: Any = js.native
     
-    /* private */ var _mustUnrotateFixedNormals: js.Any = js.native
+    /* private */ var _mustUnrotateFixedNormals: Any = js.native
     
-    /* private */ var _needs32Bits: js.Any = js.native
+    /* private */ var _needs32Bits: Any = js.native
     
-    /* private */ var _normals: js.Any = js.native
+    /* private */ var _normals: Any = js.native
     
-    /* private */ var _normals32: js.Any = js.native
+    /* private */ var _normals32: Any = js.native
     
-    /* private */ var _particlesIntersect: js.Any = js.native
+    /* private */ var _particlesIntersect: Any = js.native
     
-    /* private */ var _pickable: js.Any = js.native
+    /* private */ var _pickable: Any = js.native
     
     /**
       * Returns a shape Vector3 array from positions float array
@@ -202,39 +219,43 @@ object solidParticleSystemMod {
       * @returns a vector3 array
       * @hidden
       */
-    /* private */ var _posToShape: js.Any = js.native
+    /* private */ var _posToShape: Any = js.native
     
-    /* private */ var _positions: js.Any = js.native
+    /* private */ var _positions: Any = js.native
     
-    /* private */ var _positions32: js.Any = js.native
+    /* private */ var _positions32: Any = js.native
     
     /**
       * Rebuilds a particle back to its just built status : if needed, recomputes the custom positions and vertices
+      * @param particle
+      * @param reset
       * @hidden
       */
-    /* private */ var _rebuildParticle: js.Any = js.native
+    /* private */ var _rebuildParticle: Any = js.native
+    
+    /* private */ var _recomputeInvisibles: Any = js.native
     
     /**
       * Resets the temporary working copy particle
       * @hidden
       */
-    /* private */ var _resetCopy: js.Any = js.native
+    /* private */ var _resetCopy: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
     /**
       * Sets a new Standard Material as _defaultMaterial if not already set.
       * @hidden
       */
-    /* private */ var _setDefaultMaterial: js.Any = js.native
+    /* private */ var _setDefaultMaterial: Any = js.native
     
     /**
       * Sets the material indexes by id materialIndexesById[id] = materialIndex
       * @hidden
       */
-    /* private */ var _setMaterialIndexesById: js.Any = js.native
+    /* private */ var _setMaterialIndexesById: Any = js.native
     
-    /* private */ var _shapeCounter: js.Any = js.native
+    /* private */ var _shapeCounter: Any = js.native
     
     /**
       * Sorts the solid particles by material when MultiMaterial is enabled.
@@ -244,23 +265,23 @@ object solidParticleSystemMod {
       * @returns the SPS
       * @hidden
       */
-    /* private */ var _sortParticlesByMaterial: js.Any = js.native
+    /* private */ var _sortParticlesByMaterial: Any = js.native
     
-    /* private */ var _tmpVertex: js.Any = js.native
+    /* private */ var _tmpVertex: Any = js.native
     
     /**
       * Unrotate the fixed normals in case the mesh was built with pre-rotated particles, ex : use of positionFunction in addShape()
       * @hidden
       */
-    /* private */ var _unrotateFixedNormals: js.Any = js.native
+    /* private */ var _unrotateFixedNormals: Any = js.native
     
-    /* private */ var _updatable: js.Any = js.native
+    /* private */ var _updatable: Any = js.native
     
-    /* private */ var _useModelMaterial: js.Any = js.native
+    /* private */ var _useModelMaterial: Any = js.native
     
-    /* private */ var _uvs: js.Any = js.native
+    /* private */ var _uvs: Any = js.native
     
-    /* private */ var _uvs32: js.Any = js.native
+    /* private */ var _uvs32: Any = js.native
     
     /**
       * Returns a shapeUV array from a float uvs (array deep copy)
@@ -268,7 +289,7 @@ object solidParticleSystemMod {
       * @returns a shapeUV array
       * @hidden
       */
-    /* private */ var _uvsToShapeUV: js.Any = js.native
+    /* private */ var _uvsToShapeUV: Any = js.native
     
     /**
       * Adds some particles to the SPS from the model shape. Returns the shape id.
@@ -278,6 +299,9 @@ object solidParticleSystemMod {
       * @param options {positionFunction} is an optional javascript function to called for each particle on SPS creation.
       * {vertexFunction} is an optional javascript function to called for each vertex of each particle on SPS creation
       * {storage} (optional existing array) is an array where the particles will be stored for a further use instead of being inserted in the SPS.
+      * @param options.positionFunction
+      * @param options.vertexFunction
+      * @param options.storage
       * @returns the number of shapes in the system
       */
     def addShape(mesh: Mesh, nb: Double): Double = js.native
@@ -426,14 +450,18 @@ object solidParticleSystemMod {
       * These particles will have the same geometry than the mesh parts and will be positioned at the same localisation than the mesh original places.
       * Thus the particles generated from `digest()` have their property `position` set yet.
       * @param mesh ( Mesh ) is the mesh to be digested
-      * @param options {facetNb} (optional integer, default 1) is the number of mesh facets per particle, this parameter is overriden by the parameter `number` if any
+      * @param options {facetNb} (optional integer, default 1) is the number of mesh facets per particle, this parameter is overridden by the parameter `number` if any
       * {delta} (optional integer, default 0) is the random extra number of facets per particle , each particle will have between `facetNb` and `facetNb + delta` facets
       * {number} (optional positive integer) is the wanted number of particles : each particle is built with `mesh_total_facets / number` facets
       * {storage} (optional existing array) is an array where the particles will be stored for a further use instead of being inserted in the SPS.
+      * @param options.facetNb
+      * @param options.number
+      * @param options.delta
+      * @param options.storage
       * @returns the current SPS
       */
     def digest(mesh: Mesh): SolidParticleSystem = js.native
-    def digest(mesh: Mesh, options: Delta): SolidParticleSystem = js.native
+    def digest(mesh: Mesh, options: FacetNb): SolidParticleSystem = js.native
     
     /**
       * Releases all held resources
@@ -511,7 +539,7 @@ object solidParticleSystemMod {
     def materials: js.Array[Material] = js.native
     
     /**
-      * The SPS mesh. It's a standard BJS Mesh, so all the methods from the Mesh class are avalaible.
+      * The SPS mesh. It's a standard BJS Mesh, so all the methods from the Mesh class are available.
       */
     var mesh: Mesh = js.native
     
@@ -556,7 +584,7 @@ object solidParticleSystemMod {
       */
     var pickedBySubMesh: js.Array[js.Array[FaceId]] = js.native
     
-    /** Returns an object {idx: numbern faceId: number} for the picked particle from the passed pickingInfo object.
+    /** Returns an object {idx: number faceId: number} for the picked particle from the passed pickingInfo object.
       * idx is the particle index in the SPS
       * faceId is the picked face index counted within this particle.
       * Returns null if the pickInfo can't identify a picked particle.
@@ -601,7 +629,7 @@ object solidParticleSystemMod {
     def recycleParticle(particle: SolidParticle): SolidParticle = js.native
     
     /**
-      * Visibilty helper : Recomputes the visible size according to the mesh bounding box
+      * Visibility helper : Recomputes the visible size according to the mesh bounding box
       * doc : https://doc.babylonjs.com/how_to/Solid_Particle_System#sps-visibility
       * @returns the SPS.
       */
@@ -683,6 +711,6 @@ object solidParticleSystemMod {
       * This empty object is intended to store some SPS specific or temporary values in order to lower the Garbage Collector activity.
       * Please read : https://doc.babylonjs.com/how_to/Solid_Particle_System#garbage-collector-concerns
       */
-    var vars: js.Any = js.native
+    var vars: Any = js.native
   }
 }

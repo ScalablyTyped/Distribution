@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UserWatcher extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_added(`type`: added, listener: TypedEventHandler[UserWatcher, UserChangedEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -32,11 +32,11 @@ trait UserWatcher extends StObject {
     listener: TypedEventHandler[UserWatcher, UserAuthenticationStatusChangingEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[UserWatcher, js.Any]): Unit = js.native
+  def addEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[UserWatcher, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_removed(`type`: removed, listener: TypedEventHandler[UserWatcher, UserChangedEventArgs]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[UserWatcher, js.Any]): Unit = js.native
+  def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[UserWatcher, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_updated(`type`: updated, listener: TypedEventHandler[UserWatcher, UserChangedEventArgs]): Unit = js.native
   
@@ -59,10 +59,10 @@ trait UserWatcher extends StObject {
   var onauthenticationstatuschanging_Original: TypedEventHandler[UserWatcher, UserAuthenticationStatusChangingEventArgs] = js.native
   
   /** Fires when the initial pass of watcher events has been processed and the collection of users is complete. */
-  def onenumerationcompleted(ev: js.Any & WinRTEvent[UserWatcher]): Unit = js.native
+  def onenumerationcompleted(ev: Any & WinRTEvent[UserWatcher]): Unit = js.native
   /** Fires when the initial pass of watcher events has been processed and the collection of users is complete. */
   @JSName("onenumerationcompleted")
-  var onenumerationcompleted_Original: TypedEventHandler[UserWatcher, js.Any] = js.native
+  var onenumerationcompleted_Original: TypedEventHandler[UserWatcher, Any] = js.native
   
   /** Fires when a user is removed from the collection of users returned by User.FindAllAsync . */
   def onremoved(ev: UserChangedEventArgs & WinRTEvent[UserWatcher]): Unit = js.native
@@ -71,10 +71,10 @@ trait UserWatcher extends StObject {
   var onremoved_Original: TypedEventHandler[UserWatcher, UserChangedEventArgs] = js.native
   
   /** Fires when the user watcher has stopped. */
-  def onstopped(ev: js.Any & WinRTEvent[UserWatcher]): Unit = js.native
+  def onstopped(ev: Any & WinRTEvent[UserWatcher]): Unit = js.native
   /** Fires when the user watcher has stopped. */
   @JSName("onstopped")
-  var onstopped_Original: TypedEventHandler[UserWatcher, js.Any] = js.native
+  var onstopped_Original: TypedEventHandler[UserWatcher, Any] = js.native
   
   /** Fires when the data associated with a user has changed. */
   def onupdated(ev: UserChangedEventArgs & WinRTEvent[UserWatcher]): Unit = js.native
@@ -82,7 +82,7 @@ trait UserWatcher extends StObject {
   @JSName("onupdated")
   var onupdated_Original: TypedEventHandler[UserWatcher, UserChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_added(`type`: added, listener: TypedEventHandler[UserWatcher, UserChangedEventArgs]): Unit = js.native
   @JSName("removeEventListener")
@@ -96,11 +96,11 @@ trait UserWatcher extends StObject {
     listener: TypedEventHandler[UserWatcher, UserAuthenticationStatusChangingEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[UserWatcher, js.Any]): Unit = js.native
+  def removeEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[UserWatcher, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_removed(`type`: removed, listener: TypedEventHandler[UserWatcher, UserChangedEventArgs]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[UserWatcher, js.Any]): Unit = js.native
+  def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[UserWatcher, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_updated(`type`: updated, listener: TypedEventHandler[UserWatcher, UserChangedEventArgs]): Unit = js.native
   

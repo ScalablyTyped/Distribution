@@ -67,7 +67,7 @@ object XPersistObject {
     ServiceName: String,
     acquire: () => Unit,
     getServiceName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     read: XObjectInputStream => Unit,
     release: () => Unit,
     write: XObjectOutputStream => Unit

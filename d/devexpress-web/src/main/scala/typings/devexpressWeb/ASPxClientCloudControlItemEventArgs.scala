@@ -14,31 +14,31 @@ trait ASPxClientCloudControlItemEventArgs
   /**
     * Gets the HTML object that contains the processed item.
     */
-  var htmlElement: js.Any
+  var htmlElement: Any
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any
+  var htmlEvent: Any
   
   /**
     * Gets the name that uniquely identifies the processed item.
     */
-  var name: js.Any
+  var name: Any
 }
 object ASPxClientCloudControlItemEventArgs {
   
-  inline def apply(htmlElement: js.Any, htmlEvent: js.Any, name: js.Any, processOnServer: Boolean): ASPxClientCloudControlItemEventArgs = {
+  inline def apply(htmlElement: Any, htmlEvent: Any, name: Any, processOnServer: Boolean): ASPxClientCloudControlItemEventArgs = {
     val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCloudControlItemEventArgs]
   }
   
   extension [Self <: ASPxClientCloudControlItemEventArgs](x: Self) {
     
-    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     
-    inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

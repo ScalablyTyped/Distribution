@@ -11,9 +11,9 @@ architecture-free neural network library
 | Full name          | synaptic |
 | Keywords           | neural network, machine learning, long short term memory, perceptron, architecture free |
 | # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 24507 |
-| # stars            | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 1431.6666666666667 |
+| # stars            | 6830.0 |
 
 ## Links
 - [Homepage](http://caza.la/synaptic)

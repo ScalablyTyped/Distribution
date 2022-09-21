@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Location extends StObject {
   
-  /* private */ var _fileName: js.Any
+  /* private */ var _fileName: Any
   
-  /* private */ var _length: js.Any
+  /* private */ var _length: Any
   
-  /* private */ var _lineMap: js.Any
+  /* private */ var _lineMap: Any
   
-  /* private */ var _start: js.Any
+  /* private */ var _start: Any
   
   def character(): Double
   
@@ -29,10 +29,10 @@ trait Location extends StObject {
 object Location {
   
   inline def apply(
-    _fileName: js.Any,
-    _length: js.Any,
-    _lineMap: js.Any,
-    _start: js.Any,
+    _fileName: Any,
+    _length: Any,
+    _lineMap: Any,
+    _start: Any,
     character: () => Double,
     fileName: () => String,
     length: () => Double,
@@ -58,12 +58,12 @@ object Location {
     
     inline def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    inline def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
+    inline def set_fileName(value: Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
     
-    inline def set_length(value: js.Any): Self = StObject.set(x, "_length", value.asInstanceOf[js.Any])
+    inline def set_length(value: Any): Self = StObject.set(x, "_length", value.asInstanceOf[js.Any])
     
-    inline def set_lineMap(value: js.Any): Self = StObject.set(x, "_lineMap", value.asInstanceOf[js.Any])
+    inline def set_lineMap(value: Any): Self = StObject.set(x, "_lineMap", value.asInstanceOf[js.Any])
     
-    inline def set_start(value: js.Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
+    inline def set_start(value: Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
   }
 }

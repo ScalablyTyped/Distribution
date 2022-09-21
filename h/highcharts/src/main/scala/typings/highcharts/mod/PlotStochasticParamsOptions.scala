@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PlotStochasticParamsOptions extends StObject {
   
+  var index: js.UndefOr[String] = js.undefined
+  
+  var period: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highstock) Periods for Stochastic oscillator: [%K, %D].
     */
@@ -19,6 +23,14 @@ object PlotStochasticParamsOptions {
   }
   
   extension [Self <: PlotStochasticParamsOptions](x: Self) {
+    
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
     inline def setPeriods(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
     

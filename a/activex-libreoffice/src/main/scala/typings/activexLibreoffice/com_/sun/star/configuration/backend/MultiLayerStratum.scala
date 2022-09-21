@@ -27,7 +27,7 @@ object MultiLayerStratum {
     getUpdateLayerId: (String, String) => String,
     isEqualEntity: (String, String) => Boolean,
     listLayerIds: (String, String) => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     supportsEntity: String => Boolean
   ): MultiLayerStratum = {

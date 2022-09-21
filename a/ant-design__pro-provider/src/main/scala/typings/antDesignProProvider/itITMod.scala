@@ -1,8 +1,13 @@
 package typings.antDesignProProvider
 
+import typings.antDesignProProvider.anon.Action
+import typings.antDesignProProvider.anon.Close
 import typings.antDesignProProvider.anon.Collapsed
-import typings.antDesignProProvider.anon.ColumnSetting
+import typings.antDesignProProvider.anon.ColumnDisplay
 import typings.antDesignProProvider.anon.Item
+import typings.antDesignProProvider.anon.LightFilter
+import typings.antDesignProProvider.anon.Next
+import typings.antDesignProProvider.anon.SubmitText
 import typings.antDesignProProvider.anon.Total
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,33 +17,58 @@ object itITMod {
   
   object default {
     
-    @JSImport("@ant-design/pro-provider/lib/locale/it_IT", JSImport.Default)
+    @JSImport("@ant-design/pro-provider/es/locale/it_IT", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@ant-design/pro-provider/lib/locale/it_IT", "default.alert")
+    @JSImport("@ant-design/pro-provider/es/locale/it_IT", "default.alert")
     @js.native
     def alert: Item = js.native
     inline def alert_=(x: Item): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alert")(x.asInstanceOf[js.Any])
     
-    @JSImport("@ant-design/pro-provider/lib/locale/it_IT", "default.moneySymbol")
+    @JSImport("@ant-design/pro-provider/es/locale/it_IT", "default.editableTable")
+    @js.native
+    def editableTable: Action = js.native
+    inline def editableTable_=(x: Action): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("editableTable")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/pro-provider/es/locale/it_IT", "default.form")
+    @js.native
+    def form: LightFilter = js.native
+    inline def form_=(x: LightFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("form")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/pro-provider/es/locale/it_IT", "default.loginForm")
+    @js.native
+    def loginForm: SubmitText = js.native
+    inline def loginForm_=(x: SubmitText): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loginForm")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/pro-provider/es/locale/it_IT", "default.moneySymbol")
     @js.native
     def moneySymbol: String = js.native
     inline def moneySymbol_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moneySymbol")(x.asInstanceOf[js.Any])
     
-    @JSImport("@ant-design/pro-provider/lib/locale/it_IT", "default.pagination")
+    @JSImport("@ant-design/pro-provider/es/locale/it_IT", "default.pagination")
     @js.native
     def pagination: Total = js.native
     inline def pagination_=(x: Total): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pagination")(x.asInstanceOf[js.Any])
     
-    @JSImport("@ant-design/pro-provider/lib/locale/it_IT", "default.tableForm")
+    @JSImport("@ant-design/pro-provider/es/locale/it_IT", "default.stepsForm")
+    @js.native
+    def stepsForm: Next = js.native
+    inline def stepsForm_=(x: Next): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stepsForm")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/pro-provider/es/locale/it_IT", "default.switch")
+    @js.native
+    def switch: Close = js.native
+    inline def switch_=(x: Close): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("switch")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/pro-provider/es/locale/it_IT", "default.tableForm")
     @js.native
     def tableForm: Collapsed = js.native
     inline def tableForm_=(x: Collapsed): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tableForm")(x.asInstanceOf[js.Any])
     
-    @JSImport("@ant-design/pro-provider/lib/locale/it_IT", "default.tableToolBar")
+    @JSImport("@ant-design/pro-provider/es/locale/it_IT", "default.tableToolBar")
     @js.native
-    def tableToolBar: ColumnSetting = js.native
-    inline def tableToolBar_=(x: ColumnSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tableToolBar")(x.asInstanceOf[js.Any])
+    def tableToolBar: ColumnDisplay = js.native
+    inline def tableToolBar_=(x: ColumnDisplay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tableToolBar")(x.asInstanceOf[js.Any])
   }
 }

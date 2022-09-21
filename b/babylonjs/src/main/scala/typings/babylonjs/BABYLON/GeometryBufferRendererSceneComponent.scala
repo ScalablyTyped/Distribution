@@ -8,12 +8,12 @@ trait GeometryBufferRendererSceneComponent
   extends StObject
      with ISceneComponent {
   
-  /* private */ var _gatherRenderTargets: js.Any
+  /* private */ var _gatherRenderTargets: Any
 }
 object GeometryBufferRendererSceneComponent {
   
   inline def apply(
-    _gatherRenderTargets: js.Any,
+    _gatherRenderTargets: Any,
     dispose: () => Unit,
     name: String,
     rebuild: () => Unit,
@@ -26,6 +26,6 @@ object GeometryBufferRendererSceneComponent {
   
   extension [Self <: GeometryBufferRendererSceneComponent](x: Self) {
     
-    inline def set_gatherRenderTargets(value: js.Any): Self = StObject.set(x, "_gatherRenderTargets", value.asInstanceOf[js.Any])
+    inline def set_gatherRenderTargets(value: Any): Self = StObject.set(x, "_gatherRenderTargets", value.asInstanceOf[js.Any])
   }
 }

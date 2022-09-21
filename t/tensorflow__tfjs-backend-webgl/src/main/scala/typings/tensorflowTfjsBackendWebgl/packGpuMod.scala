@@ -9,10 +9,21 @@ object packGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/pack_gpu", "PackProgram")
   @js.native
-  class PackProgram protected ()
+  open class PackProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(outputShape: js.Array[Double]) = this()
+    
+    @JSName("enableShapeUniforms")
+    var enableShapeUniforms_PackProgram: Boolean = js.native
+    
+    /* private */ var getOutOfBoundsCondition: Any = js.native
+    
+    /* private */ var getOutput: Any = js.native
+    
+    /* private */ var getSetup: Any = js.native
+    
+    /* private */ var getSourceCoordsArr: Any = js.native
     
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native
@@ -22,6 +33,8 @@ object packGpuMod {
     
     @JSName("packedOutput")
     var packedOutput_PackProgram: Boolean = js.native
+    
+    var rank: Double = js.native
     
     /* CompleteClass */
     var userCode: String = js.native

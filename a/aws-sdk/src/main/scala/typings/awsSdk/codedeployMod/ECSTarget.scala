@@ -14,7 +14,7 @@ trait ECSTarget extends StObject {
   /**
     *  The date and time when the target Amazon ECS application was updated by a deployment. 
     */
-  var lastUpdatedAt: js.UndefOr[Time] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The lifecycle events of the deployment to this target Amazon ECS application. 
@@ -54,7 +54,7 @@ object ECSTarget {
     
     inline def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
-    inline def setLastUpdatedAt(value: Time): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
@@ -62,7 +62,7 @@ object ECSTarget {
     
     inline def setLifecycleEventsUndefined: Self = StObject.set(x, "lifecycleEvents", js.undefined)
     
-    inline def setLifecycleEventsVarargs(value: LifecycleEvent*): Self = StObject.set(x, "lifecycleEvents", js.Array(value :_*))
+    inline def setLifecycleEventsVarargs(value: LifecycleEvent*): Self = StObject.set(x, "lifecycleEvents", js.Array(value*))
     
     inline def setStatus(value: TargetStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
@@ -80,6 +80,6 @@ object ECSTarget {
     
     inline def setTaskSetsInfoUndefined: Self = StObject.set(x, "taskSetsInfo", js.undefined)
     
-    inline def setTaskSetsInfoVarargs(value: ECSTaskSet*): Self = StObject.set(x, "taskSetsInfo", js.Array(value :_*))
+    inline def setTaskSetsInfoVarargs(value: ECSTaskSet*): Self = StObject.set(x, "taskSetsInfo", js.Array(value*))
   }
 }

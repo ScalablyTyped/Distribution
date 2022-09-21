@@ -22,12 +22,12 @@ trait Attachment extends StObject {
   
   val Index: Double
   
-  val MAPIOBJECT: js.Any
+  val MAPIOBJECT: Any
   
   /* private */ @JSName("Outlook.Attachment_typekey")
   var OutlookDotAttachment_typekey: Attachment
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PathName: String
   
@@ -54,9 +54,9 @@ object Attachment {
     FileName: String,
     GetTemporaryFilePath: () => String,
     Index: Double,
-    MAPIOBJECT: js.Any,
+    MAPIOBJECT: Any,
     OutlookDotAttachment_typekey: Attachment,
-    Parent: js.Any,
+    Parent: Any,
     PathName: String,
     Position: Double,
     PropertyAccessor: PropertyAccessor,
@@ -88,11 +88,11 @@ object Attachment {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    inline def setMAPIOBJECT(value: js.Any): Self = StObject.set(x, "MAPIOBJECT", value.asInstanceOf[js.Any])
+    inline def setMAPIOBJECT(value: Any): Self = StObject.set(x, "MAPIOBJECT", value.asInstanceOf[js.Any])
     
     inline def setOutlookDotAttachment_typekey(value: Attachment): Self = StObject.set(x, "Outlook.Attachment_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPathName(value: String): Self = StObject.set(x, "PathName", value.asInstanceOf[js.Any])
     

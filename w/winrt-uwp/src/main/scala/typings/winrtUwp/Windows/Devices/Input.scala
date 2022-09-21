@@ -131,7 +131,7 @@ object Input {
   @js.native
   trait MouseDevice extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_mousemoved(`type`: mousemoved, listener: TypedEventHandler[MouseDevice, MouseEventArgs]): Unit = js.native
     
@@ -141,7 +141,7 @@ object Input {
     @JSName("onmousemoved")
     var onmousemoved_Original: TypedEventHandler[MouseDevice, MouseEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_mousemoved(`type`: mousemoved, listener: TypedEventHandler[MouseDevice, MouseEventArgs]): Unit = js.native
   }
@@ -174,7 +174,7 @@ object Input {
     /** Gets a value indicating the maximum number of contacts supported by the input device. */
     var maxContacts: Double
     
-    var maxPointersWithZDistance: js.Any
+    var maxPointersWithZDistance: Any
     
     /* unmapped type */
     /** Gets the coordinates of the bounding rectangle supported by the input device. */
@@ -194,7 +194,7 @@ object Input {
     inline def apply(
       isIntegrated: Boolean,
       maxContacts: Double,
-      maxPointersWithZDistance: js.Any,
+      maxPointersWithZDistance: Any,
       physicalDeviceRect: Rect,
       pointerDeviceType: PointerDeviceType,
       screenRect: Rect,
@@ -210,7 +210,7 @@ object Input {
       
       inline def setMaxContacts(value: Double): Self = StObject.set(x, "maxContacts", value.asInstanceOf[js.Any])
       
-      inline def setMaxPointersWithZDistance(value: js.Any): Self = StObject.set(x, "maxPointersWithZDistance", value.asInstanceOf[js.Any])
+      inline def setMaxPointersWithZDistance(value: Any): Self = StObject.set(x, "maxPointersWithZDistance", value.asInstanceOf[js.Any])
       
       inline def setPhysicalDeviceRect(value: Rect): Self = StObject.set(x, "physicalDeviceRect", value.asInstanceOf[js.Any])
       

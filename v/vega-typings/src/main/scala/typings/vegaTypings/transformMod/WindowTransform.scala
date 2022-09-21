@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WindowTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var as: js.UndefOr[(js.Array[String | SignalRef | Null]) | SignalRef] = js.undefined
   
@@ -44,13 +44,13 @@ object WindowTransform {
     
     inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    inline def setAsVarargs(value: (String | SignalRef | Null)*): Self = StObject.set(x, "as", js.Array(value :_*))
+    inline def setAsVarargs(value: (String | SignalRef | Null)*): Self = StObject.set(x, "as", js.Array(value*))
     
     inline def setFields(value: (js.Array[FieldRef | Null]) | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: (FieldRef | Null)*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: (FieldRef | Null)*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setFrame(value: (Vector2[Double | SignalRef | Null]) | SignalRef): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
@@ -60,7 +60,7 @@ object WindowTransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setIgnorePeers(value: Boolean | SignalRef): Self = StObject.set(x, "ignorePeers", value.asInstanceOf[js.Any])
     
@@ -70,13 +70,13 @@ object WindowTransform {
     
     inline def setOpsUndefined: Self = StObject.set(x, "ops", js.undefined)
     
-    inline def setOpsVarargs(value: (AggregateOp | WindowOnlyOp | SignalRef)*): Self = StObject.set(x, "ops", js.Array(value :_*))
+    inline def setOpsVarargs(value: (AggregateOp | WindowOnlyOp | SignalRef)*): Self = StObject.set(x, "ops", js.Array(value*))
     
     inline def setParams(value: (js.Array[Double | SignalRef | Null]) | SignalRef): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setParamsVarargs(value: (Double | SignalRef | Null)*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: (Double | SignalRef | Null)*): Self = StObject.set(x, "params", js.Array(value*))
     
     inline def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     

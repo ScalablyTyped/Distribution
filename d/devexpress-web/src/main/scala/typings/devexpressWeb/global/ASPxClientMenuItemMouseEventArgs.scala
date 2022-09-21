@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientMenuItemMouseEventArgs")
 @js.native
-class ASPxClientMenuItemMouseEventArgs protected ()
+open class ASPxClientMenuItemMouseEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientMenuItemMouseEventArgs {
   /**
@@ -17,13 +17,13 @@ class ASPxClientMenuItemMouseEventArgs protected ()
     * @param item An ASPxClientMenuItem object that represents an item related to the event.
     * @param htmlElement An HTML object that contains the processed item.
     */
-  def this(item: typings.devexpressWeb.ASPxClientMenuItem, htmlElement: js.Any) = this()
+  def this(item: typings.devexpressWeb.ASPxClientMenuItem, htmlElement: Any) = this()
   
   /**
     * Gets the HTML object that contains the processed item.
     */
   /* CompleteClass */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any = js.native
   
   /**
     * Gets the menu item object related to the event.

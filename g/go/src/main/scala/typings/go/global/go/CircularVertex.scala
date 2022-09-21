@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs a vertex that does not know about any Node.
   */
-class CircularVertex ()
+open class CircularVertex ()
   extends typings.go.mod.CircularVertex

@@ -12,6 +12,11 @@ trait M2tsSettings extends StObject {
   var AudioBufferModel: js.UndefOr[M2tsAudioBufferModel] = js.undefined
   
   /**
+    * Specify this setting only when your output will be consumed by a downstream repackaging workflow that is sensitive to very small duration differences between video and audio. For this situation, choose Match video duration (MATCH_VIDEO_DURATION). In all other cases, keep the default value, Default codec duration (DEFAULT_CODEC_DURATION). When you choose Match video duration, MediaConvert pads the output audio streams with silence or trims them to ensure that the total duration of each audio stream is at least as long as the total duration of the video stream. After padding or trimming, the audio stream duration is no more than one frame longer than the video stream. MediaConvert applies audio padding or trimming only to the end of the last segment of the output. For unsegmented outputs, MediaConvert adds padding only to the end of the file. When you keep the default value, any minor discrepancies between audio and video duration will depend on your output audio codec.
+    */
+  var AudioDuration: js.UndefOr[M2tsAudioDuration] = js.undefined
+  
+  /**
     * The number of audio frames to insert for each PES packet.
     */
   var AudioFramesPerPes: js.UndefOr[integerMin0Max2147483647] = js.undefined
@@ -32,12 +37,17 @@ trait M2tsSettings extends StObject {
   var BufferModel: js.UndefOr[M2tsBufferModel] = js.undefined
   
   /**
-    * Inserts DVB Network Information Table (NIT) at the specified table repetition interval.
+    * If you select ALIGN_TO_VIDEO, MediaConvert writes captions and data packets with Presentation Timestamp (PTS) values greater than or equal to the first video packet PTS (MediaConvert drops captions and data packets with lesser PTS values). Keep the default value (AUTO) to allow all PTS values.
+    */
+  var DataPTSControl: js.UndefOr[M2tsDataPtsControl] = js.undefined
+  
+  /**
+    * Use these settings to insert a DVB Network Information Table (NIT) in the transport stream of this output. When you work directly in your JSON job specification, include this object only when your job has a transport stream output and the container settings contain the object M2tsSettings.
     */
   var DvbNitSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.DvbNitSettings] = js.undefined
   
   /**
-    * Inserts DVB Service Description Table (NIT) at the specified table repetition interval.
+    * Use these settings to insert a DVB Service Description Table (SDT) in the transport stream of this output. When you work directly in your JSON job specification, include this object only when your job has a transport stream output and the container settings contain the object M2tsSettings.
     */
   var DvbSdtSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.DvbSdtSettings] = js.undefined
   
@@ -47,7 +57,7 @@ trait M2tsSettings extends StObject {
   var DvbSubPids: js.UndefOr[listOfIntegerMin32Max8182] = js.undefined
   
   /**
-    * Inserts DVB Time and Date Table (TDT) at the specified table repetition interval.
+    * Use these settings to insert a DVB Time and Date Table (TDT) in the transport stream of this output. When you work directly in your JSON job specification, include this object only when your job has a transport stream output and the container settings contain the object M2tsSettings.
     */
   var DvbTdtSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.DvbTdtSettings] = js.undefined
   
@@ -80,6 +90,11 @@ trait M2tsSettings extends StObject {
     * The length, in seconds, of each fragment. Only used with EBP markers.
     */
   var FragmentTime: js.UndefOr[doubleMin0] = js.undefined
+  
+  /**
+    * To include key-length-value metadata in this output: Set KLV metadata insertion to Passthrough. MediaConvert reads KLV metadata present in your input and passes it through to the output transport stream. To exclude this KLV metadata: Set KLV metadata insertion to None or leave blank.
+    */
+  var KlvMetadata: js.UndefOr[M2tsKlvMetadata] = js.undefined
   
   /**
     * Specify the maximum time, in milliseconds, between Program Clock References (PCRs) inserted into the transport stream.
@@ -172,7 +187,7 @@ trait M2tsSettings extends StObject {
   var SegmentationTime: js.UndefOr[doubleMin0] = js.undefined
   
   /**
-    * Specify the packet identifier (PID) for timed metadata in this output. Default is 502.
+    * Packet Identifier (PID) of the ID3 metadata stream in the transport stream.
     */
   var TimedMetadataPid: js.UndefOr[integerMin32Max8182] = js.undefined
   
@@ -199,6 +214,10 @@ object M2tsSettings {
     
     inline def setAudioBufferModelUndefined: Self = StObject.set(x, "AudioBufferModel", js.undefined)
     
+    inline def setAudioDuration(value: M2tsAudioDuration): Self = StObject.set(x, "AudioDuration", value.asInstanceOf[js.Any])
+    
+    inline def setAudioDurationUndefined: Self = StObject.set(x, "AudioDuration", js.undefined)
+    
     inline def setAudioFramesPerPes(value: integerMin0Max2147483647): Self = StObject.set(x, "AudioFramesPerPes", value.asInstanceOf[js.Any])
     
     inline def setAudioFramesPerPesUndefined: Self = StObject.set(x, "AudioFramesPerPes", js.undefined)
@@ -207,7 +226,7 @@ object M2tsSettings {
     
     inline def setAudioPidsUndefined: Self = StObject.set(x, "AudioPids", js.undefined)
     
-    inline def setAudioPidsVarargs(value: integerMin32Max8182*): Self = StObject.set(x, "AudioPids", js.Array(value :_*))
+    inline def setAudioPidsVarargs(value: integerMin32Max8182*): Self = StObject.set(x, "AudioPids", js.Array(value*))
     
     inline def setBitrate(value: integerMin0Max2147483647): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
@@ -216,6 +235,10 @@ object M2tsSettings {
     inline def setBufferModel(value: M2tsBufferModel): Self = StObject.set(x, "BufferModel", value.asInstanceOf[js.Any])
     
     inline def setBufferModelUndefined: Self = StObject.set(x, "BufferModel", js.undefined)
+    
+    inline def setDataPTSControl(value: M2tsDataPtsControl): Self = StObject.set(x, "DataPTSControl", value.asInstanceOf[js.Any])
+    
+    inline def setDataPTSControlUndefined: Self = StObject.set(x, "DataPTSControl", js.undefined)
     
     inline def setDvbNitSettings(value: DvbNitSettings): Self = StObject.set(x, "DvbNitSettings", value.asInstanceOf[js.Any])
     
@@ -229,7 +252,7 @@ object M2tsSettings {
     
     inline def setDvbSubPidsUndefined: Self = StObject.set(x, "DvbSubPids", js.undefined)
     
-    inline def setDvbSubPidsVarargs(value: integerMin32Max8182*): Self = StObject.set(x, "DvbSubPids", js.Array(value :_*))
+    inline def setDvbSubPidsVarargs(value: integerMin32Max8182*): Self = StObject.set(x, "DvbSubPids", js.Array(value*))
     
     inline def setDvbTdtSettings(value: DvbTdtSettings): Self = StObject.set(x, "DvbTdtSettings", value.asInstanceOf[js.Any])
     
@@ -258,6 +281,10 @@ object M2tsSettings {
     inline def setFragmentTime(value: doubleMin0): Self = StObject.set(x, "FragmentTime", value.asInstanceOf[js.Any])
     
     inline def setFragmentTimeUndefined: Self = StObject.set(x, "FragmentTime", js.undefined)
+    
+    inline def setKlvMetadata(value: M2tsKlvMetadata): Self = StObject.set(x, "KlvMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setKlvMetadataUndefined: Self = StObject.set(x, "KlvMetadata", js.undefined)
     
     inline def setMaxPcrInterval(value: integerMin0Max500): Self = StObject.set(x, "MaxPcrInterval", value.asInstanceOf[js.Any])
     

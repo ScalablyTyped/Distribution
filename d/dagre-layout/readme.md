@@ -10,10 +10,10 @@ Graph layout for JavaScript
 | ------------------ | :-------------: |
 | Full name          | dagre-layout |
 | Keywords           | graph, layout, dagre |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 908503 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 16450.666666666668 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/tylingsoft/dagre-layout#readme)

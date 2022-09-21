@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for updating an existing operation
-  */
 trait SchemaUpdateOperationRequest extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaUpdateOperationRequest extends StObject {
   /**
     * The fields to update.
     */
-  var updateMask: js.UndefOr[String] = js.undefined
+  var updateMask: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUpdateOperationRequest {
   
@@ -33,6 +30,8 @@ object SchemaUpdateOperationRequest {
     inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
     inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }

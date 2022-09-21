@@ -10,8 +10,6 @@ abstract class ChronoZonedDateTime () extends Temporal {
   
   def compareTo(other: ChronoZonedDateTime): Double = js.native
   
-  def equals(other: js.Any): Boolean = js.native
-  
   def format(formatter: DateTimeFormatter): String = js.native
   
   def isAfter(other: ChronoZonedDateTime): Boolean = js.native
@@ -20,7 +18,7 @@ abstract class ChronoZonedDateTime () extends Temporal {
   
   def isEqual(other: ChronoZonedDateTime): Boolean = js.native
   
-  def query(query: js.Any): js.Any = js.native
+  def query(query: Any): Any = js.native
   
   def toEpochSecond(): Double = js.native
   

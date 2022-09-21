@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TranslatableProvided extends StObject {
   
-  def translate(key: String, params: js.Any*): String
+  def translate(key: String, params: Any*): String
 }
 object TranslatableProvided {
   
-  inline def apply(translate: (String, /* repeated */ js.Any) => String): TranslatableProvided = {
+  inline def apply(translate: (String, /* repeated */ Any) => String): TranslatableProvided = {
     val __obj = js.Dynamic.literal(translate = js.Any.fromFunction2(translate))
     __obj.asInstanceOf[TranslatableProvided]
   }
   
   extension [Self <: TranslatableProvided](x: Self) {
     
-    inline def setTranslate(value: (String, /* repeated */ js.Any) => String): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
+    inline def setTranslate(value: (String, /* repeated */ Any) => String): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
   }
 }

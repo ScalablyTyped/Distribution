@@ -23,11 +23,11 @@ object anon {
       
       inline def setState(value: js.Array[js.Tuple2[String, Double]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      inline def setStateVarargs(value: (js.Tuple2[String, Double])*): Self = StObject.set(x, "state", js.Array(value :_*))
+      inline def setStateVarargs(value: (js.Tuple2[String, Double])*): Self = StObject.set(x, "state", js.Array(value*))
       
       inline def setTracker_host(value: js.Array[js.Tuple2[String, Double]]): Self = StObject.set(x, "tracker_host", value.asInstanceOf[js.Any])
       
-      inline def setTracker_hostVarargs(value: (js.Tuple2[String, Double])*): Self = StObject.set(x, "tracker_host", js.Array(value :_*))
+      inline def setTracker_hostVarargs(value: (js.Tuple2[String, Double])*): Self = StObject.set(x, "tracker_host", js.Array(value*))
     }
   }
 }

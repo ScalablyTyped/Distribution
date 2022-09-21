@@ -34,8 +34,8 @@ trait Service extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The carrier-service pair delivering items to collection points. The list of supported pickup services can be retrieved via the `getSupportedPickupServices` method. Required if and
-    * only if the service delivery type is `pickup`.
+    * The carrier-service pair delivering items to collection points. The list of supported pickup services can be retrieved through the `getSupportedPickupServices` method. Required if
+    * and only if the service delivery type is `pickup`.
     */
   var pickupService: js.UndefOr[PickupCarrierService] = js.undefined
   
@@ -97,7 +97,7 @@ object Service {
     
     inline def setRateGroupsUndefined: Self = StObject.set(x, "rateGroups", js.undefined)
     
-    inline def setRateGroupsVarargs(value: RateGroup*): Self = StObject.set(x, "rateGroups", js.Array(value :_*))
+    inline def setRateGroupsVarargs(value: RateGroup*): Self = StObject.set(x, "rateGroups", js.Array(value*))
     
     inline def setShipmentType(value: String): Self = StObject.set(x, "shipmentType", value.asInstanceOf[js.Any])
     

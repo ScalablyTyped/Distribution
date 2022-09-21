@@ -1,0 +1,33 @@
+package typings.tensorflowTfjsBackendWebgl.anon
+
+import typings.tensorflowTfjsBackendWebgl.backendWebglMod.MathBackendWebGL
+import typings.tensorflowTfjsCore.kernelNamesMod.MinAttrs
+import typings.tensorflowTfjsCore.kernelNamesMod.MinInputs
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait AttrsMinAttrs extends StObject {
+  
+  var attrs: MinAttrs
+  
+  var backend: MathBackendWebGL
+  
+  var inputs: MinInputs
+}
+object AttrsMinAttrs {
+  
+  inline def apply(attrs: MinAttrs, backend: MathBackendWebGL, inputs: MinInputs): AttrsMinAttrs = {
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AttrsMinAttrs]
+  }
+  
+  extension [Self <: AttrsMinAttrs](x: Self) {
+    
+    inline def setAttrs(value: MinAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    
+    inline def setBackend(value: MathBackendWebGL): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    
+    inline def setInputs(value: MinInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+  }
+}

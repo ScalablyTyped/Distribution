@@ -35,7 +35,7 @@ object BatchUpdateSpreadsheetRequest {
     
     inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    inline def setRequestsVarargs(value: Request*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: Request*): Self = StObject.set(x, "requests", js.Array(value*))
     
     inline def setResponseIncludeGridData(value: Boolean): Self = StObject.set(x, "responseIncludeGridData", value.asInstanceOf[js.Any])
     
@@ -45,6 +45,6 @@ object BatchUpdateSpreadsheetRequest {
     
     inline def setResponseRangesUndefined: Self = StObject.set(x, "responseRanges", js.undefined)
     
-    inline def setResponseRangesVarargs(value: String*): Self = StObject.set(x, "responseRanges", js.Array(value :_*))
+    inline def setResponseRangesVarargs(value: String*): Self = StObject.set(x, "responseRanges", js.Array(value*))
   }
 }

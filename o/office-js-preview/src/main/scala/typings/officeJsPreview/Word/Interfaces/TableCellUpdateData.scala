@@ -19,49 +19,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableCellUpdateData extends StObject {
   
   /**
-    *
     * Gets the body object of the cell.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var body: js.UndefOr[BodyUpdateData] = js.undefined
   
   /**
-    *
     * Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var columnWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   
   /**
-    *
     * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var shadingColor: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets and sets the text of the cell.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var value: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var verticalAlignment: js.UndefOr[VerticalAlignment | Mixed | Top | Center | Bottom] = js.undefined

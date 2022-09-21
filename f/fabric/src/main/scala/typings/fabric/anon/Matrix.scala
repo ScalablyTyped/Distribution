@@ -22,6 +22,6 @@ object Matrix {
     
     inline def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
     
-    inline def setMatrixVarargs(value: Double*): Self = StObject.set(x, "matrix", js.Array(value :_*))
+    inline def setMatrixVarargs(value: Double*): Self = StObject.set(x, "matrix", js.Array(value*))
   }
 }

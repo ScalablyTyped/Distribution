@@ -1,8 +1,11 @@
 package typings.reactMdTransition
 
-import typings.reactMdTransition.constantsMod.TransitionStage
+import typings.reactMdTransition.anon.ReadonlyRequiredCSSTransi
+import typings.reactMdTransition.anon.ReadonlyRequiredTransitio
+import typings.reactMdTransition.anon.ReadonlyTransitionTimeoutAppear
+import typings.reactMdTransition.typesMod.CSSTransitionClassNames
+import typings.reactMdTransition.typesMod.TransitionTimeout
 import typings.std.HTMLElement
-import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,42 +16,15 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getClassNames(
-    classNames: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionClassNames */ js.Any,
-    timeout: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionStageTimeouts */ js.Any,
-    disableAppearAsEnter: Boolean
-  ): Required[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionStageClassNames */ js.Any
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")(classNames.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], disableAppearAsEnter.asInstanceOf[js.Any])).asInstanceOf[Required[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionStageClassNames */ js.Any
-  ]]
-  
   inline def getElementSizing(): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")().asInstanceOf[CollapseSizing]
   inline def getElementSizing(element: HTMLElement): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")(element.asInstanceOf[js.Any]).asInstanceOf[CollapseSizing]
   
-  inline def getNextStage(stage: TransitionStage, transitionIn: Boolean): TransitionStage = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextStage")(stage.asInstanceOf[js.Any], transitionIn.asInstanceOf[js.Any])).asInstanceOf[TransitionStage]
+  inline def getTransitionClassNames(hasClassNamesTimeoutOptions: TransitionClassNamesOptions): ReadonlyRequiredCSSTransi = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionClassNames")(hasClassNamesTimeoutOptions.asInstanceOf[js.Any]).asInstanceOf[ReadonlyRequiredCSSTransi]
   
-  inline def getTimeoutDuration(
-    timeout: Required[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionStageTimeouts */ js.Any
-    ],
-    appearing: Boolean,
-    stage: TransitionStage
-  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimeoutDuration")(timeout.asInstanceOf[js.Any], appearing.asInstanceOf[js.Any], stage.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getTransitionTimeout(hasTimeoutAppearEnterExit: ReadonlyTransitionTimeoutAppear): ReadonlyRequiredTransitio = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionTimeout")(hasTimeoutAppearEnterExit.asInstanceOf[js.Any]).asInstanceOf[ReadonlyRequiredTransitio]
   
-  inline def isEnter(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnter")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isWithinViewport(hasFixedElementFixedToElement: IsWithinViewportOptions): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWithinViewport")(hasFixedElementFixedToElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isEntered(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEntered")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def isEntering(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEntering")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def isExit(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExit")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def isExited(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExited")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def isExiting(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExiting")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  /** @private */
   trait CollapseSizing extends StObject {
     
     var maxHeight: js.UndefOr[Double] = js.undefined
@@ -77,6 +53,86 @@ object utilsMod {
       inline def setPaddingTop(value: Double): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
       inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
+    }
+  }
+  
+  /**
+    * @remarks \@since 4.0.0
+    * @internal
+    */
+  trait IsWithinViewportOptions extends StObject {
+    
+    var fixedElement: HTMLElement
+    
+    var fixedToElement: HTMLElement
+  }
+  object IsWithinViewportOptions {
+    
+    inline def apply(fixedElement: HTMLElement, fixedToElement: HTMLElement): IsWithinViewportOptions = {
+      val __obj = js.Dynamic.literal(fixedElement = fixedElement.asInstanceOf[js.Any], fixedToElement = fixedToElement.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IsWithinViewportOptions]
+    }
+    
+    extension [Self <: IsWithinViewportOptions](x: Self) {
+      
+      inline def setFixedElement(value: HTMLElement): Self = StObject.set(x, "fixedElement", value.asInstanceOf[js.Any])
+      
+      inline def setFixedToElement(value: HTMLElement): Self = StObject.set(x, "fixedToElement", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait TransitionClassNamesOptions
+    extends StObject
+       with TransitionTimeoutOptions {
+    
+    var classNames: CSSTransitionClassNames
+  }
+  object TransitionClassNamesOptions {
+    
+    inline def apply(
+      appear: Boolean,
+      classNames: CSSTransitionClassNames,
+      enter: Boolean,
+      exit: Boolean,
+      timeout: TransitionTimeout
+    ): TransitionClassNamesOptions = {
+      val __obj = js.Dynamic.literal(appear = appear.asInstanceOf[js.Any], classNames = classNames.asInstanceOf[js.Any], enter = enter.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TransitionClassNamesOptions]
+    }
+    
+    extension [Self <: TransitionClassNamesOptions](x: Self) {
+      
+      inline def setClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined parent std.Required<@react-md/transition.@react-md/transition/types/types.TransitionActions> */
+  trait TransitionTimeoutOptions extends StObject {
+    
+    var appear: Boolean
+    
+    var enter: Boolean
+    
+    var exit: Boolean
+    
+    var timeout: TransitionTimeout
+  }
+  object TransitionTimeoutOptions {
+    
+    inline def apply(appear: Boolean, enter: Boolean, exit: Boolean, timeout: TransitionTimeout): TransitionTimeoutOptions = {
+      val __obj = js.Dynamic.literal(appear = appear.asInstanceOf[js.Any], enter = enter.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TransitionTimeoutOptions]
+    }
+    
+    extension [Self <: TransitionTimeoutOptions](x: Self) {
+      
+      inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
+      
+      inline def setEnter(value: Boolean): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      
+      inline def setExit(value: Boolean): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      
+      inline def setTimeout(value: TransitionTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
 }

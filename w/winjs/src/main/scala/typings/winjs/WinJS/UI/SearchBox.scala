@@ -41,7 +41,7 @@ trait SearchBox extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Releases resources held by this SearchBox. Call this method when the SearchBox is no longer needed. After calling this method, the SearchBox becomes unusable.
@@ -64,25 +64,25 @@ trait SearchBox extends StObject {
     * Raised when the user or the app changes the queryText.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.language, detail.queryText, detail.linguisticDetails.
     **/
-  def onquerychanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onquerychanged(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised awhen the user clicks the search glyph or presses Enter.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.language, detail.queryText, detail.linguisticDetails, detail.keyModifiers.
     **/
-  def onquerysubmitted(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onquerysubmitted(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the user selects a suggested option for the search.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.tag, detail.keyModifiers, detail.storageFile.
     **/
-  def onresultsuggestionchosen(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onresultsuggestionchosen(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the system requests search suggestions from this app.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.language, detail.linguisticDetails, detail.queryText, detail.searchSuggestionCollection.
     **/
-  def onsuggestionsrequested(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onsuggestionsrequested(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Gets or sets the placeholder text for the SearchBox. This text is displayed if there is no other text in the input box.
@@ -117,5 +117,5 @@ trait SearchBox extends StObject {
     * Specifies whether suggestions based on local files are automatically displayed in the search pane, and defines the criteria that Windows uses to locate and filter these suggestions.
     * @param settings The new settings for local content suggestions.
     **/
-  def setLocalContentSuggestionSettings(settings: js.Any): Unit = js.native
+  def setLocalContentSuggestionSettings(settings: Any): Unit = js.native
 }

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Overlay
 @JSGlobal("naver.maps.OverlayView")
 @js.native
-class OverlayView ()
+open class OverlayView ()
   extends StObject
      with typings.navermaps.naver.maps.OverlayView

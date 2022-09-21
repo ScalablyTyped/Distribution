@@ -1,5 +1,6 @@
 package typings.mapboxMapboxSdk.anon
 
+import typings.mapboxMapboxSdk.stylesMod.Style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +9,12 @@ trait OwnerId extends StObject {
   
   var ownerId: js.UndefOr[String] = js.undefined
   
-  var styleId: String
+  var style: Style
 }
 object OwnerId {
   
-  inline def apply(styleId: String): OwnerId = {
-    val __obj = js.Dynamic.literal(styleId = styleId.asInstanceOf[js.Any])
+  inline def apply(style: Style): OwnerId = {
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[OwnerId]
   }
   
@@ -23,6 +24,6 @@ object OwnerId {
     
     inline def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
     
-    inline def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

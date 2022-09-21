@@ -13,7 +13,7 @@ object featureFlagsMod {
   
   @JSImport("gitlab/dist/types/core/services/FeatureFlags", "FeatureFlags")
   @js.native
-  class FeatureFlags () extends BaseService {
+  open class FeatureFlags () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(): js.Promise[GetResponse] = js.native

@@ -44,7 +44,7 @@ object WebApp {
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setIconsVarargs(value: WebAppIcon*): Self = StObject.set(x, "icons", js.Array(value :_*))
+    inline def setIconsVarargs(value: WebAppIcon*): Self = StObject.set(x, "icons", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

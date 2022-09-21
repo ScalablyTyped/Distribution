@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RootCause extends StObject {
   
   /**
-    *  The linked account value associated with the cost anomaly. 
+    * The member account value that's associated with the cost anomaly. 
     */
   var LinkedAccount: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  The AWS Region associated with the cost anomaly. 
+    * The Amazon Web Services Region that's associated with the cost anomaly. 
     */
   var Region: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  The AWS service name associated with the cost anomaly. 
+    * The Amazon Web Service name that's associated with the cost anomaly. 
     */
   var Service: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  The UsageType value associated with the cost anomaly. 
+    * The UsageType value that's associated with the cost anomaly. 
     */
   var UsageType: js.UndefOr[GenericString] = js.undefined
 }

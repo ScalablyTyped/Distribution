@@ -13,6 +13,9 @@ trait Action extends StObject {
     */
   var alwaysRun: js.UndefOr[Boolean] = js.undefined
   
+  /** Prevents the container from accessing the external network. */
+  var blockExternalNetwork: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If specified, overrides the `CMD` specified in the container. If the container also has an `ENTRYPOINT` the values are used as entrypoint arguments. Otherwise, they are used as a
     * command and arguments to run inside the container.
@@ -47,6 +50,13 @@ trait Action extends StObject {
     */
   var enableFuse: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * The encrypted environment to pass into the container. This environment is merged with values specified in the google.cloud.lifesciences.v2beta.Pipeline message, overwriting any
+    * duplicate values. The secret must decrypt to a JSON-encoded dictionary where key-value pairs serve as environment variable names and their values. The decoded environment variables
+    * can overwrite the values specified by the `environment` field.
+    */
+  var encryptedEnvironment: js.UndefOr[Secret] = js.undefined
+  
   /** If specified, overrides the `ENTRYPOINT` specified in the container. */
   var entrypoint: js.UndefOr[String] = js.undefined
   
@@ -60,7 +70,7 @@ trait Action extends StObject {
   var environment: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[Any]
   ] = js.undefined
   
   /** Normally, a non-zero exit status causes the pipeline to fail. This flag allows execution of other actions to continue instead. */
@@ -82,14 +92,14 @@ trait Action extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[Any]
   ] = js.undefined
   
   /**
     * A list of mounts to make available to the action. In addition to the values specified here, every action has a special virtual disk mounted under `/google` that contains log files
     * and other operational components. - /google/logs All logs written during the pipeline execution. - /google/logs/output The combined standard output and standard error of all actions
-    * run as part of the pipeline execution. - /google/logs/action/∗/stdout The complete contents of each individual action's standard output. - /google/logs/action/∗/stderr The complete
-    * contents of each individual action's standard error output.
+    * run as part of the pipeline execution. - /google/logs/action/ *‍/stdout The complete contents of each individual action's standard output. - /google/logs/action/ *‍/stderr The
+    * complete contents of each individual action's standard error output.
     */
   var mounts: js.UndefOr[js.Array[Mount]] = js.undefined
   
@@ -106,7 +116,7 @@ trait Action extends StObject {
   var portMappings: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[Any]
   ] = js.undefined
   
   /** Exposes all ports specified by `EXPOSE` statements in the container. To discover the host side port numbers, consult the `ACTION_STARTED` event in the operation metadata. */
@@ -137,11 +147,15 @@ object Action {
     
     inline def setAlwaysRunUndefined: Self = StObject.set(x, "alwaysRun", js.undefined)
     
+    inline def setBlockExternalNetwork(value: Boolean): Self = StObject.set(x, "blockExternalNetwork", value.asInstanceOf[js.Any])
+    
+    inline def setBlockExternalNetworkUndefined: Self = StObject.set(x, "blockExternalNetwork", js.undefined)
+    
     inline def setCommands(value: js.Array[String]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
     inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
-    inline def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value*))
     
     inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
@@ -163,6 +177,10 @@ object Action {
     
     inline def setEnableFuseUndefined: Self = StObject.set(x, "enableFuse", js.undefined)
     
+    inline def setEncryptedEnvironment(value: Secret): Self = StObject.set(x, "encryptedEnvironment", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptedEnvironmentUndefined: Self = StObject.set(x, "encryptedEnvironment", js.undefined)
+    
     inline def setEntrypoint(value: String): Self = StObject.set(x, "entrypoint", value.asInstanceOf[js.Any])
     
     inline def setEntrypointUndefined: Self = StObject.set(x, "entrypoint", js.undefined)
@@ -170,7 +188,7 @@ object Action {
     inline def setEnvironment(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[Any]
     ): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
@@ -186,7 +204,7 @@ object Action {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -195,7 +213,7 @@ object Action {
     
     inline def setMountsUndefined: Self = StObject.set(x, "mounts", js.undefined)
     
-    inline def setMountsVarargs(value: Mount*): Self = StObject.set(x, "mounts", js.Array(value :_*))
+    inline def setMountsVarargs(value: Mount*): Self = StObject.set(x, "mounts", js.Array(value*))
     
     inline def setPidNamespace(value: String): Self = StObject.set(x, "pidNamespace", value.asInstanceOf[js.Any])
     
@@ -204,7 +222,7 @@ object Action {
     inline def setPortMappings(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[Any]
     ): Self = StObject.set(x, "portMappings", value.asInstanceOf[js.Any])
     
     inline def setPortMappingsUndefined: Self = StObject.set(x, "portMappings", js.undefined)

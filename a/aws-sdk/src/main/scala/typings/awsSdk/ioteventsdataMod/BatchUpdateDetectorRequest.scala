@@ -22,6 +22,6 @@ object BatchUpdateDetectorRequest {
     
     inline def setDetectors(value: UpdateDetectorRequests): Self = StObject.set(x, "detectors", value.asInstanceOf[js.Any])
     
-    inline def setDetectorsVarargs(value: UpdateDetectorRequest*): Self = StObject.set(x, "detectors", js.Array(value :_*))
+    inline def setDetectorsVarargs(value: UpdateDetectorRequest*): Self = StObject.set(x, "detectors", js.Array(value*))
   }
 }

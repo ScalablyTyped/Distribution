@@ -14,7 +14,7 @@ trait HeadlessExperimentalApi extends StObject {
     * Sends a BeginFrame to the target and returns when the frame was completed. Optionally captures a
     * screenshot from the resulting frame. Requires that the target was created with enabled
     * BeginFrameControl. Designed for use with --run-all-compositor-stages-before-draw, see also
-    * https://goo.gl/3zHXhB for more background.
+    * https://goo.gle/chrome-headless-rendering for more background.
     */
   def beginFrame(params: BeginFrameRequest): js.Promise[BeginFrameResponse]
   

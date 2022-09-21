@@ -10,7 +10,7 @@ trait SmartArtColors extends StObject {
   def apply(Index: String): SmartArtColor = js.native
   def apply(Index: Double): SmartArtColor = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -19,5 +19,5 @@ trait SmartArtColors extends StObject {
   def Item(Index: String): SmartArtColor = js.native
   def Item(Index: Double): SmartArtColor = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

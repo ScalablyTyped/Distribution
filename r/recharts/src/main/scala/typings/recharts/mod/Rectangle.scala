@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "Rectangle")
 @js.native
-class Rectangle protected ()
-  extends Component[RectangleProps, js.Object, js.Any] {
+open class Rectangle protected ()
+  extends Component[RectangleProps, js.Object, Any] {
   def this(props: RectangleProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: RectangleProps, context: js.Any) = this()
+  def this(props: RectangleProps, context: Any) = this()
 }

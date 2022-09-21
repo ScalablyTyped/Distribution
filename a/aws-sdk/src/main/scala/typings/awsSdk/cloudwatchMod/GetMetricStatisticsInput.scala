@@ -14,7 +14,7 @@ trait GetMetricStatisticsInput extends StObject {
   /**
     * The time stamp that determines the last data point to return. The value specified is exclusive; results include data points up to the specified time stamp. In a raw HTTP query, the time stamp must be in ISO 8601 UTC format (for example, 2016-10-10T23:00:00Z).
     */
-  var EndTime: Timestamp
+  var EndTime: js.Date
   
   /**
     * The percentile statistics. Specify values between p0.0 and p100. When calling GetMetricStatistics, you must specify either Statistics or ExtendedStatistics, but not both. Percentile statistics are not available for metrics when any of the metric values are negative numbers.
@@ -39,7 +39,7 @@ trait GetMetricStatisticsInput extends StObject {
   /**
     * The time stamp that determines the first data point to return. Start times are evaluated relative to the time that CloudWatch receives the request. The value specified is inclusive; results include data points with the specified time stamp. In a raw HTTP query, the time stamp must be in ISO 8601 UTC format (for example, 2016-10-03T23:00:00Z). CloudWatch rounds the specified time stamp as follows:   Start time less than 15 days ago - Round down to the nearest whole minute. For example, 12:32:34 is rounded down to 12:32:00.   Start time between 15 and 63 days ago - Round down to the nearest 5-minute clock interval. For example, 12:32:34 is rounded down to 12:30:00.   Start time greater than 63 days ago - Round down to the nearest 1-hour clock interval. For example, 12:32:34 is rounded down to 12:00:00.   If you set Period to 5, 10, or 30, the start time of your request is rounded down to the nearest time that corresponds to even 5-, 10-, or 30-second divisions of a minute. For example, if you make a query at (HH:mm:ss) 01:05:23 for the previous 10-second period, the start time of your request is rounded down and you receive data from 01:05:10 to 01:05:20. If you make a query at 15:07:17 for the previous 5 minutes of data, using a period of 5 seconds, you receive data timestamped between 15:02:15 and 15:07:15. 
     */
-  var StartTime: Timestamp
+  var StartTime: js.Date
   
   /**
     * The metric statistics, other than percentile. For percentile statistics, use ExtendedStatistics. When calling GetMetricStatistics, you must specify either Statistics or ExtendedStatistics, but not both.
@@ -53,13 +53,7 @@ trait GetMetricStatisticsInput extends StObject {
 }
 object GetMetricStatisticsInput {
   
-  inline def apply(
-    EndTime: Timestamp,
-    MetricName: MetricName,
-    Namespace: Namespace,
-    Period: Period,
-    StartTime: Timestamp
-  ): GetMetricStatisticsInput = {
+  inline def apply(EndTime: js.Date, MetricName: MetricName, Namespace: Namespace, Period: Period, StartTime: js.Date): GetMetricStatisticsInput = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], MetricName = MetricName.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], Period = Period.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMetricStatisticsInput]
   }
@@ -70,15 +64,15 @@ object GetMetricStatisticsInput {
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value*))
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setExtendedStatistics(value: ExtendedStatistics): Self = StObject.set(x, "ExtendedStatistics", value.asInstanceOf[js.Any])
     
     inline def setExtendedStatisticsUndefined: Self = StObject.set(x, "ExtendedStatistics", js.undefined)
     
-    inline def setExtendedStatisticsVarargs(value: ExtendedStatistic*): Self = StObject.set(x, "ExtendedStatistics", js.Array(value :_*))
+    inline def setExtendedStatisticsVarargs(value: ExtendedStatistic*): Self = StObject.set(x, "ExtendedStatistics", js.Array(value*))
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
@@ -86,13 +80,13 @@ object GetMetricStatisticsInput {
     
     inline def setPeriod(value: Period): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStatistics(value: Statistics): Self = StObject.set(x, "Statistics", value.asInstanceOf[js.Any])
     
     inline def setStatisticsUndefined: Self = StObject.set(x, "Statistics", js.undefined)
     
-    inline def setStatisticsVarargs(value: Statistic*): Self = StObject.set(x, "Statistics", js.Array(value :_*))
+    inline def setStatisticsVarargs(value: Statistic*): Self = StObject.set(x, "Statistics", js.Array(value*))
     
     inline def setUnit(value: StandardUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     

@@ -137,7 +137,7 @@ object ExplainQueryStage {
     
     inline def setInputStagesUndefined: Self = StObject.set(x, "inputStages", js.undefined)
     
-    inline def setInputStagesVarargs(value: String*): Self = StObject.set(x, "inputStages", js.Array(value :_*))
+    inline def setInputStagesVarargs(value: String*): Self = StObject.set(x, "inputStages", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -195,7 +195,7 @@ object ExplainQueryStage {
     
     inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    inline def setStepsVarargs(value: ExplainQueryStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: ExplainQueryStep*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setWaitMsAvg(value: String): Self = StObject.set(x, "waitMsAvg", value.asInstanceOf[js.Any])
     

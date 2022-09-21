@@ -11,7 +11,7 @@ object notificationMod {
   
   @JSImport("sip.js/lib/api/notification", "Notification")
   @js.native
-  class Notification protected () extends StObject {
+  open class Notification protected () extends StObject {
     /** @internal */
     def this(incomingNotifyRequest: IncomingNotifyRequest) = this()
     
@@ -19,7 +19,7 @@ object notificationMod {
     def accept(): js.Promise[Unit] = js.native
     def accept(options: ResponseOptions): js.Promise[Unit] = js.native
     
-    /* private */ var incomingNotifyRequest: js.Any = js.native
+    /* private */ var incomingNotifyRequest: Any = js.native
     
     /** Reject the request. */
     def reject(): js.Promise[Unit] = js.native

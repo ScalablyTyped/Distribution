@@ -8,5 +8,5 @@ object inventoryOptionalFieldsMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_InventoryOptionalFields", "_InventoryOptionalFields")
   @js.native
-  val InventoryOptionalFields: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val InventoryOptionalFields: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

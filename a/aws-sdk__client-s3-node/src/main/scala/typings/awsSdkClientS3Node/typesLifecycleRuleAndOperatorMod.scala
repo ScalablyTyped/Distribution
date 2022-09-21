@@ -2,7 +2,6 @@ package typings.awsSdkClientS3Node
 
 import typings.awsSdkClientS3Node.typesTagMod.Tag
 import typings.awsSdkClientS3Node.typesTagMod.UnmarshalledTag
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object typesLifecycleRuleAndOperatorMod {
     /**
       * <p>All of these tags must exist in the object's tag set in order for the rule to apply.</p>
       */
-    var Tags: js.UndefOr[js.Array[Tag] | Iterable[Tag]] = js.undefined
+    var Tags: js.UndefOr[js.Array[Tag] | js.Iterable[Tag]] = js.undefined
   }
   object LifecycleRuleAndOperator {
     
@@ -34,11 +33,11 @@ object typesLifecycleRuleAndOperatorMod {
       
       inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
       
-      inline def setTags(value: js.Array[Tag] | Iterable[Tag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[Tag] | js.Iterable[Tag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
       inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
       
-      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     }
   }
   
@@ -65,7 +64,7 @@ object typesLifecycleRuleAndOperatorMod {
       
       inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
       
-      inline def setTagsVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "Tags", js.Array(value*))
     }
   }
 }

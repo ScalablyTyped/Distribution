@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReplicationTaskAssessmentResult extends StObject {
   
   /**
-    *  The task assessment results in JSON format. 
+    *  The task assessment results in JSON format.  The response object only contains this field if you provide DescribeReplicationTaskAssessmentResultsMessage$ReplicationTaskArn in the request.
     */
   var AssessmentResults: js.UndefOr[String] = js.undefined
   
@@ -34,10 +34,10 @@ trait ReplicationTaskAssessmentResult extends StObject {
   /**
     * The date the task assessment was completed. 
     */
-  var ReplicationTaskLastAssessmentDate: js.UndefOr[TStamp] = js.undefined
+  var ReplicationTaskLastAssessmentDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The URL of the S3 object containing the task assessment results. 
+    *  The URL of the S3 object containing the task assessment results.  The response object only contains this field if you provide DescribeReplicationTaskAssessmentResultsMessage$ReplicationTaskArn in the request.
     */
   var S3ObjectUrl: js.UndefOr[String] = js.undefined
 }
@@ -70,7 +70,7 @@ object ReplicationTaskAssessmentResult {
     
     inline def setReplicationTaskIdentifierUndefined: Self = StObject.set(x, "ReplicationTaskIdentifier", js.undefined)
     
-    inline def setReplicationTaskLastAssessmentDate(value: TStamp): Self = StObject.set(x, "ReplicationTaskLastAssessmentDate", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskLastAssessmentDate(value: js.Date): Self = StObject.set(x, "ReplicationTaskLastAssessmentDate", value.asInstanceOf[js.Any])
     
     inline def setReplicationTaskLastAssessmentDateUndefined: Self = StObject.set(x, "ReplicationTaskLastAssessmentDate", js.undefined)
     

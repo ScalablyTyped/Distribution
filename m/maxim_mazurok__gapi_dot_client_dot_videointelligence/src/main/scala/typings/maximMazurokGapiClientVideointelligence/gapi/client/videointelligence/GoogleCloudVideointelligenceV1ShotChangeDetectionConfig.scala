@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GoogleCloudVideointelligenceV1ShotChangeDetectionConfig extends StObject {
   
-  /** Model to use for shot change detection. Supported values: "builtin/stable" (the default if unset) and "builtin/latest". */
+  /** Model to use for shot change detection. Supported values: "builtin/stable" (the default if unset), "builtin/latest", and "builtin/legacy". */
   var model: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVideointelligenceV1ShotChangeDetectionConfig {

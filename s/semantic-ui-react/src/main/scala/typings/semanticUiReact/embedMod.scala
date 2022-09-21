@@ -14,10 +14,9 @@ object embedMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Embed", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[EmbedProps, ComponentState, js.Any] {
+  open class default protected () extends Component[EmbedProps, ComponentState, Any] {
     def this(props: EmbedProps) = this()
-    def this(props: EmbedProps, context: js.Any) = this()
+    def this(props: EmbedProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Embed", JSImport.Default)
   @js.native

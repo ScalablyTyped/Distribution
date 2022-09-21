@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.TextEffectFormat")
 @js.native
-/* private */ class TextEffectFormat ()
+/* private */ open class TextEffectFormat ()
   extends StObject
      with typings.activexOffice.Office.TextEffectFormat {
   
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Alignment: MsoTextEffectAlignment = js.native
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
@@ -46,7 +46,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotTextEffectFormat_typekey: typings.activexOffice.Office.TextEffectFormat = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var PresetShape: MsoPresetTextEffectShape = js.native

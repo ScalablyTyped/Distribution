@@ -38,7 +38,7 @@ trait XPropertyControl extends StObject {
     * At every point in time, this value is either `VOID` , or of the type described by {@link ValueType} .
     * @throws com::sun::star::beans::IllegalTypeException if an attempt is made to set a value which is not `VOID` and whose type does not equal {@link ValueType} .
     */
-  var Value: js.Any
+  var Value: Any
   
   /**
     * denotes the value type of the control.
@@ -72,7 +72,7 @@ object XPropertyControl {
     ControlContext: XPropertyControlContext,
     ControlType: Double,
     ControlWindow: XWindow,
-    Value: js.Any,
+    Value: Any,
     ValueType: `type`,
     isModified: () => Boolean,
     notifyModifiedValue: () => Unit
@@ -93,7 +93,7 @@ object XPropertyControl {
     
     inline def setNotifyModifiedValue(value: () => Unit): Self = StObject.set(x, "notifyModifiedValue", js.Any.fromFunction0(value))
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     inline def setValueType(value: `type`): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
   }

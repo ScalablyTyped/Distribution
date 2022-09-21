@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTCAttachBehavior extends StObject {
   
-  def apply(evt: js.Any): Unit = js.native
+  def apply(evt: Any): Unit = js.native
   
-  def FireEvent(evt: js.Any): Unit = js.native
+  def FireEvent(evt: Any): Unit = js.native
   
   def detachEvent(): Unit = js.native
 }

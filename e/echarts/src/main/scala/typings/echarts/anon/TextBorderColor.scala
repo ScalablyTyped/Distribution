@@ -11,7 +11,7 @@ trait TextBorderColor
   * Some properties like "normal" or "emphasis" are not documented.
   * Please, write description for them
   */
-/* unknownProperty */ StringDictionary[js.Any] {
+/* unknownProperty */ StringDictionary[Any] {
   
   /**
     * Horizontal alignment of text, automatic by default.
@@ -230,7 +230,7 @@ trait TextBorderColor
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.label.padding
     */
-  var padding: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+  var padding: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
   /**
     * The position of label.
@@ -477,11 +477,11 @@ object TextBorderColor {
     
     inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    inline def setPadding(value: js.Array[js.Any] | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: js.Array[Any] | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPaddingVarargs(value: js.Any*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Any*): Self = StObject.set(x, "padding", js.Array(value*))
     
     inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

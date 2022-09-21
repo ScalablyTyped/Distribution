@@ -11,7 +11,7 @@ trait GoogleCloudDialogflowV2EventInput extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var parameters: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var parameters: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
 }
 object GoogleCloudDialogflowV2EventInput {
   
@@ -30,7 +30,7 @@ object GoogleCloudDialogflowV2EventInput {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setParameters(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }

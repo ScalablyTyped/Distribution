@@ -27,14 +27,14 @@ object comboBoxTypesMod {
   trait IComboBox extends StObject {
     
     /**
-      * If there is a menu open this will dismiss the menu
+      * If there is a menu open this will dismiss the menu.
       */
     def dismissMenu(): Unit = js.native
     
     /**
-      * Sets focus to the input in the comboBox
-      * @param shouldOpenOnFocus - Determines if we should open the ComboBox menu when the input gets focus
-      * @param useFocusAsync - Determines if we should focus the input asynchronously
+      * Sets focus to the input in the ComboBox
+      * @param shouldOpenOnFocus - Determines if we should open the ComboBox menu when the input gets focus.
+      * @param useFocusAsync - Determines if we should focus the input asynchronously.
       * @returns True if focus could be set, false if no operation was taken.
       */
     def focus(): Boolean = js.native
@@ -43,7 +43,7 @@ object comboBoxTypesMod {
     def focus(shouldOpenOnFocus: Unit, useFocusAsync: Boolean): Boolean = js.native
     
     /**
-      * All selected options
+      * All selected options.
       */
     val selectedOptions: js.Array[IComboBoxOption] = js.native
   }
@@ -122,16 +122,14 @@ object comboBoxTypesMod {
        with ISelectableOption {
     
     /**
-      * Specific styles for each comboBox option. If you intend to give
-      * common styles to all comboBox option please use
-      * the prop comboBoxOptionStyles
+      * Specific styles for each ComboBox option. To give common styles to all options, use
+      * `IComboBoxProps.comboBoxOptionStyles` instead.
       */
     var styles: js.UndefOr[PartialIComboBoxOptionSty] = js.undefined
     
     /**
-      * In scenarios where embedded data is used at the text prop, we will use the ariaLabel prop
-      * to set the aria-label and preview text. Default to false
-      * @defaultvalue false;
+      * Whether to use the `ariaLabel` prop instead of the `text` prop to set the preview text as well
+      * as the `aria-label`. This is for scenarios where the `text` prop is used for embedded data.
       */
     var useAriaLabelAsText: js.UndefOr[Boolean] = js.undefined
   }
@@ -184,15 +182,13 @@ object comboBoxTypesMod {
        with IButtonStyles {
     
     /**
-      * Styles for the text inside the comboBox option.
-      * This should be used instead of the description
-      * inside IButtonStyles because we custom render the text
-      * in the comboBox options.
+      * Styles for the text inside the ComboBox option. This should be used instead of the description
+      * in IButtonStyles because we custom render the text in the ComboBox options.
       */
     var optionText: IStyle
     
     /**
-      * Styles for the comboBox option text's wrapper.
+      * Styles for the ComboBox option text's wrapper.
       */
     var optionTextWrapper: IStyle
   }
@@ -224,31 +220,31 @@ object comboBoxTypesMod {
        with ISelectableDroppableTextProps[IComboBox, IComboBox] {
     
     /**
-      * Whether the ComboBox is free form, meaning that the user input is not bound to provided options. Defaults to false.
+      * Whether the ComboBox allows freeform user input, rather than restricting to the provided options.
       */
     var allowFreeform: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Optional prop to add a string id that can be referenced inside the aria-describedby attribute
+      * Optional ID of an element providing a description of the ComboBox for screen reader users.
       */
     var ariaDescribedBy: js.UndefOr[String] = js.undefined
     
     /**
-      * Whether the ComboBox auto completes. As the user is inputing text, it will be suggested potential matches from
-      * the list of options. If the combo box is expanded, this will also scroll to the suggested option, and give it a
-      * selected style.
+      * Whether the ComboBox auto completes. As the user is entering text, potential matches will be
+      * suggested from the list of options. If the ComboBox is expanded, this will also scroll to the
+      * suggested option and give it a selected style.
       *
       * @defaultvalue "on"
       */
     var autoComplete: js.UndefOr[on | off] = js.undefined
     
     /**
-      * The AutofillProps to be passed into the Autofill component inside combobox
+      * Props to pass through to the Autofill component (the input field) inside the ComboBox.
       */
     var autofill: js.UndefOr[IAutofillProps] = js.undefined
     
     /**
-      * The IconProps to use for the button aspect of the combobox
+      * The IconProps to use for the caret button of the ComboBox.
       */
     var buttonIconProps: js.UndefOr[IIconProps] = js.undefined
     
@@ -258,18 +254,17 @@ object comboBoxTypesMod {
     var caretDownButtonStyles: js.UndefOr[PartialIButtonStyles] = js.undefined
     
     /**
-      * Default styles that should be applied to ComboBox options,
-      * in case an option does not come with user-defined custom styles
+      * Default styles that should be applied to ComboBox options.
       */
     var comboBoxOptionStyles: js.UndefOr[PartialIComboBoxOptionSty] = js.undefined
     
     /**
-      * Custom max width for dropdown
+      * Custom max width for the options list dropdown.
       */
     var dropdownMaxWidth: js.UndefOr[Double] = js.undefined
     
     /**
-      * Custom width for dropdown (unless useComboBoxAsMenuWidth is undefined or false)
+      * Custom width for options list dropdown. Mutually exclusive with `useComboBoxAsMenuWidth`.
       */
     var dropdownWidth: js.UndefOr[Double] = js.undefined
     
@@ -292,35 +287,35 @@ object comboBoxTypesMod {
       ] = js.undefined
     
     /**
-      * Optional iconButton props on combo box
+      * Additional props for the caret button.
       */
     var iconButtonProps: js.UndefOr[IButtonProps] = js.undefined
     
     /**
-      * Sets the 'aria-hidden' attribute on the ComboBox's button element instructing screen readers how to handle
-      * the element. This element is hidden by default because all functionality is handled by the input element and
+      * Sets the `aria-hidden` attribute on the ComboBox's caret button element. This element is hidden
+      * from screen readers by default because all functionality is handled by the input element and
       * the arrow button is only meant to be decorative.
       * @defaultvalue true
       */
     var isButtonAriaHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Optional keytip for this combo box
+      * Optional keytip for this ComboBox.
       */
     var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
     
     /**
-      * When multiple items are selected, this will be used to separate values in the combobox input.
+      * When multiple items are selected, this will be used to separate values in the ComboBox input.
       *
       * @defaultvalue ", "
       */
     var multiSelectDelimiter: js.UndefOr[String] = js.undefined
     
     /**
-      * Callback issued when either:
-      * 1) the selected option changes
-      * 2) a manually edited value is submitted. In this case there may not be a matched option if allowFreeform
-      *    is also true (and hence only value would be true, the other parameter would be null in this case)
+      * Callback for when either:
+      * 1) The selected option changes.
+      * 2) A manually edited value is submitted. In this case there may not be a matched option if `allowFreeform`
+      *    is also true (and hence only `value` would be provided; the other parameters would be unspecified).
       */
     @JSName("onChange")
     var onChange_IComboBoxProps: js.UndefOr[
@@ -334,7 +329,7 @@ object comboBoxTypesMod {
       ] = js.undefined
     
     /**
-      * Callback issued when a ComboBox item is clicked.
+      * Callback for when a ComboBox item is clicked.
       */
     var onItemClick: js.UndefOr[
         js.Function3[
@@ -346,22 +341,22 @@ object comboBoxTypesMod {
       ] = js.undefined
     
     /**
-      * Function that gets invoked before the menu gets dismissed
+      * Callback for before the menu gets dismissed.
       */
     var onMenuDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
-      * Function that gets invoked when the ComboBox menu is dismissed
+      * Callback for when the ComboBox menu is dismissed.
       */
     var onMenuDismissed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
-      * Function that gets invoked when the ComboBox menu is launched
+      * Callback for when the ComboBox menu is launched.
       */
     var onMenuOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
-      * Callback issued when the user changes the pending value in ComboBox.
+      * Callback for when the user changes the pending value in ComboBox.
       * This will be called any time the component is updated and there is a current
       * pending value. Option, index, and value will all be undefined if no change
       * has taken place and the previously entered pending value is still valid.
@@ -381,18 +376,18 @@ object comboBoxTypesMod {
     var onRenderLabel: js.UndefOr[IRenderFunction[IOnRenderComboBoxLabelProps]] = js.undefined
     
     /**
-      * Add additional content below the callout list.
+      * Add additional content below the option list in the callout.
       */
     var onRenderLowerContent: js.UndefOr[IRenderFunction[IComboBoxProps]] = js.undefined
     
     /**
-      * Add additional content above the callout list.
+      * Add additional content above the option list in the callout.
       */
     var onRenderUpperContent: js.UndefOr[IRenderFunction[IComboBoxProps]] = js.undefined
     
     /**
-      * Callback issued when the options should be resolved, if they have been updated or
-      * if they need to be passed in the first time
+      * Callback for when the options should be resolved, if they have been updated or
+      * if they need to be passed in the first time.
       */
     var onResolveOptions: js.UndefOr[
         js.Function1[
@@ -402,47 +397,46 @@ object comboBoxTypesMod {
       ] = js.undefined
     
     /**
-      * Callback issued when the ComboBox requests the list to scroll to a specific element
+      * Callback for when the ComboBox requests the list to scroll to a specific element.
       */
     var onScrollToItem: js.UndefOr[js.Function1[/* itemIndex */ Double, Unit]] = js.undefined
     
     /**
-      * Collection of options for this ComboBox
+      * Collection of options for this ComboBox.
       */
     @JSName("options")
     var options_IComboBoxProps: js.Array[IComboBoxOption]
     
     /**
-      * Menu will not be created or destroyed when opened or closed, instead it
-      * will be hidden. This will improve perf of the menu opening but could potentially
-      * impact overall perf by having more elements in the dom. Should only be used
-      * when perf is important.
-      * Note: This may increase the amount of time it takes for the comboBox itself to mount.
+      * Whether to show/hide the menu when it's opened/closed (rather than creating/destroying it).
+      * This will improve perf of the menu opening but could potentially have a negative impact on
+      * overall perf by increasing initial render time (since the ComboBox will render the menu hidden
+      * on mount) and keeping more elements in the DOM. Should only be used when perf to open/close
+      * the menu is important.
       */
     var persistMenu: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * When options are scrollable the selected option is positioned at the top of the callout when it is opened
-      * (unless it has reached the end of the scrollbar).
+      * When the options list is scrollable, whether to position the selected option at the top of the
+      * callout when it is opened (unless it has reached the end of the scrollbar).
       * @defaultvalue false;
       */
     var scrollSelectedToTop: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * When specified, determines whether the callout (the menu which drops down) should
-      * restore the focus after being dismissed or not.  If false, then the menu will not try
-      * to set focus to whichever element had focus before the menu was opened.
+      * Whether the options list callout should restore focus after being dismissed. Set to false to
+      * prevent the menu from trying to re-focus the element that had focus before the menu was opened.
       * @defaultvalue true;
       */
     var shouldRestoreFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Custom styles for this component
+      * Custom styles for this component.
       */
     var styles: js.UndefOr[PartialIComboBoxStyles] = js.undefined
     
     /**
-      * Value to show in the input, does not have to map to a combobox option
+      * Value to show in the input (does not have to map to a ComboBox option).
       */
     var text: js.UndefOr[String] = js.undefined
     
@@ -452,7 +446,7 @@ object comboBoxTypesMod {
     var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
-      * Whether to use the ComboBoxes width as the menu's width
+      * Whether to use the ComboBox field width as the menu's width.
       */
     var useComboBoxAsMenuWidth: js.UndefOr[Boolean] = js.undefined
   }
@@ -585,7 +579,7 @@ object comboBoxTypesMod {
       
       inline def setOptions(value: js.Array[IComboBoxOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: IComboBoxOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: IComboBoxOption*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPersistMenu(value: Boolean): Self = StObject.set(x, "persistMenu", value.asInstanceOf[js.Any])
       
@@ -625,7 +619,8 @@ object comboBoxTypesMod {
     var callout: IStyle
     
     /**
-      * Style for the container which has the ComboBox and the label
+      * Style for the container which has the ComboBox and the label.
+      * (In most other components this would be called `root`.)
       */
     var container: IStyle
     
@@ -635,7 +630,7 @@ object comboBoxTypesMod {
     var divider: IStyle
     
     /**
-      * Styles for the error Message text of the comboBox.
+      * Styles for the error message text of the ComboBox.
       */
     var errorMessage: IStyle
     
@@ -645,13 +640,12 @@ object comboBoxTypesMod {
     var header: IStyle
     
     /**
-      * Base styles for the input element - which contains the currently selected
-      * option.
+      * Base styles for the input element which contains the currently selected option.
       */
     var input: IStyle
     
     /**
-      * Style override for the input element when comboBox is disabled.
+      * Style override for the input element when ComboBox is disabled.
       */
     var inputDisabled: IStyle
     
@@ -666,52 +660,60 @@ object comboBoxTypesMod {
     var labelDisabled: IStyle
     
     /**
-      * Styles for the container of all the Combobox options
+      * Styles for the container of all the ComboBox options.
       * Includes the headers and dividers.
       */
     var optionsContainer: IStyle
     
     /**
-      * Styles for the optionsContainerWrapper.
+      * Styles for the options list container element.
       */
     var optionsContainerWrapper: IStyle
     
     /**
-      * Base styles for the root element of all ComboBoxes.
+      * Base styles for the wrapper element containing the input field and caret button, applied to
+      * all state variants.
+      *
+      * Unlike in most components, this is NOT the actual root element which also contains the label
+      * as well as the field; for that, use `container`.
       */
     var root: IStyle
     
     /**
-      * Styles for when the comboBox is disabled. These styles override all the other styles.
-      * NOTE : Hover (or) Focused (or) active styles are not applied for disabled comboBoxes.
+      * Styles for the wrapper element containing the input field and caret button, applied when the
+      * ComboBox is disabled. These override all the other styles.
+      *
+      * NOTE: Hover/focused/active styles are not applied for disabled ComboBoxes.
       */
     var rootDisabled: IStyle
     
     /**
-      * Styles for variant of ComboBox where allowFreeForm is false in the props.
+      * Styles for the wrapper element containing the input field and caret button, applied when
+      * `IComboBoxProps.allowFreeform` is false.
       */
     var rootDisallowFreeForm: IStyle
     
     /**
-      * Styles for the root element for variant of ComboBox with an errorMessage in the props.
+      * Styles for the wrapper element containing the input field and caret button, applied when
+      * the ComboBox has an error message.
       */
     var rootError: IStyle
     
     /**
-      * Styles for when the ComboBox is focused. These styles are applied for all comboBoxes except when
-      * the comboBox is disabled.
+      * Styles for the wrapper element containing the input field and caret button, applied any time
+      * the ComboBox is focused (unless it's disabled).
       */
     var rootFocused: IStyle
     
     /**
-      * Styles for when the ComboBox is hovered. These styles are applied for all comboBoxes except when
-      * the comboBox is disabled.
+      * Styles for the wrapper element containing the input field and caret button, applied any time
+      * the ComboBox is hovered (unless it's disabled).
       */
     var rootHovered: IStyle
     
     /**
-      * Styles for when the ComboBox is active. These styles are applied for all comboBoxes except when
-      * the comboBox is disabled.
+      * Styles for the wrapper element containing the input field and caret button, applied any time
+      * the ComboBox is active (unless it's disabled).
       */
     var rootPressed: IStyle
     
@@ -848,12 +850,12 @@ object comboBoxTypesMod {
   trait IOnRenderComboBoxLabelProps extends StObject {
     
     /**
-      * Accessible text for label when combobox is multiselected.
+      * Accessible text for label when ComboBox is multiselected.
       */
     var multiselectAccessibleText: js.UndefOr[String] = js.undefined
     
     /**
-      * Props to render the combobox.
+      * Props to render the ComboBox.
       */
     var props: IComboBoxProps
   }

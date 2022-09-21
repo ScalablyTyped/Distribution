@@ -2,6 +2,7 @@ package typings.three
 
 import typings.std.ArrayLike
 import typings.three.bufferAttributeMod.BufferAttribute
+import typings.three.eventDispatcherMod.Event
 import typings.three.matrix4Mod.Matrix4
 import typings.three.object3DMod.Object3D
 import typings.three.planeMod.Plane
@@ -17,7 +18,7 @@ object box3Mod {
   
   @JSImport("three/src/math/Box3", "Box3")
   @js.native
-  class Box3 () extends StObject {
+  open class Box3 () extends StObject {
     def this(min: Vector3) = this()
     def this(min: Unit, max: Vector3) = this()
     def this(min: Vector3, max: Vector3) = this()
@@ -35,13 +36,14 @@ object box3Mod {
     def distanceToPoint(point: Vector3): Double = js.native
     
     /**
-    	 * @deprecated Use {@link Box3#isEmpty .isEmpty()} instead.
-    	 */
-    def empty(): js.Any = js.native
+      * @deprecated Use {@link Box3#isEmpty .isEmpty()} instead.
+      */
+    def empty(): Any = js.native
     
     def equals(box: Box3): Boolean = js.native
     
-    def expandByObject(`object`: Object3D): this.type = js.native
+    def expandByObject(`object`: Object3D[Event]): this.type = js.native
+    def expandByObject(`object`: Object3D[Event], precise: Boolean): this.type = js.native
     
     def expandByPoint(point: Vector3): this.type = js.native
     
@@ -72,25 +74,25 @@ object box3Mod {
     def isEmpty(): Boolean = js.native
     
     /**
-    	 * @deprecated Use {@link Box3#intersectsBox .intersectsBox()} instead.
-    	 */
-    def isIntersectionBox(b: js.Any): js.Any = js.native
+      * @deprecated Use {@link Box3#intersectsBox .intersectsBox()} instead.
+      */
+    def isIntersectionBox(b: Any): Any = js.native
     
     /**
-    	 * @deprecated Use {@link Box3#intersectsSphere .intersectsSphere()} instead.
-    	 */
-    def isIntersectionSphere(s: js.Any): js.Any = js.native
+      * @deprecated Use {@link Box3#intersectsSphere .intersectsSphere()} instead.
+      */
+    def isIntersectionSphere(s: Any): Any = js.native
     
     def makeEmpty(): this.type = js.native
     
     /**
-    	 * @default new THREE.Vector3( - Infinity, - Infinity, - Infinity )
-    	 */
+      * @default new THREE.Vector3( - Infinity, - Infinity, - Infinity )
+      */
     var max: Vector3 = js.native
     
     /**
-    	 * @default new THREE.Vector3( + Infinity, + Infinity, + Infinity )
-    	 */
+      * @default new THREE.Vector3( + Infinity, + Infinity, + Infinity )
+      */
     var min: Vector3 = js.native
     
     def set(min: Vector3, max: Vector3): this.type = js.native
@@ -101,7 +103,8 @@ object box3Mod {
     
     def setFromCenterAndSize(center: Vector3, size: Vector3): this.type = js.native
     
-    def setFromObject(`object`: Object3D): this.type = js.native
+    def setFromObject(`object`: Object3D[Event]): this.type = js.native
+    def setFromObject(`object`: Object3D[Event], precise: Boolean): this.type = js.native
     
     def setFromPoints(points: js.Array[Vector3]): this.type = js.native
     

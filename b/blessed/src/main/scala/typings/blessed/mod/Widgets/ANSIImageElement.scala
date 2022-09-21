@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("blessed", "Widgets.ANSIImageElement")
 @js.native
-class ANSIImageElement () extends BoxElement {
+open class ANSIImageElement () extends BoxElement {
   def this(options: ANSIImageOptions) = this()
   
   /**

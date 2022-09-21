@@ -10,7 +10,7 @@ trait IModalService extends StObject {
   /**
     * @returns {IPromise}
     */
-  def getPromiseChain(): IPromise[js.Any]
+  def getPromiseChain(): IPromise[Any]
   
   /**
     * @param {IModalSettings} options
@@ -20,14 +20,14 @@ trait IModalService extends StObject {
 }
 object IModalService {
   
-  inline def apply(getPromiseChain: () => IPromise[js.Any], open: IModalSettings => IModalInstanceService): IModalService = {
+  inline def apply(getPromiseChain: () => IPromise[Any], open: IModalSettings => IModalInstanceService): IModalService = {
     val __obj = js.Dynamic.literal(getPromiseChain = js.Any.fromFunction0(getPromiseChain), open = js.Any.fromFunction1(open))
     __obj.asInstanceOf[IModalService]
   }
   
   extension [Self <: IModalService](x: Self) {
     
-    inline def setGetPromiseChain(value: () => IPromise[js.Any]): Self = StObject.set(x, "getPromiseChain", js.Any.fromFunction0(value))
+    inline def setGetPromiseChain(value: () => IPromise[Any]): Self = StObject.set(x, "getPromiseChain", js.Any.fromFunction0(value))
     
     inline def setOpen(value: IModalSettings => IModalInstanceService): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
   }

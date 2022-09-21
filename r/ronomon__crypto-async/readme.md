@@ -1,7 +1,7 @@
 
 # Scala.js typings for ronomon__crypto-async
 
-Typings are for version 2.0
+Typings are for version 5.0
 
 ## Library description:
 Fast, reliable cipher, hash and hmac methods executed in Node's threadpool for multi-core throughput.
@@ -10,10 +10,10 @@ Fast, reliable cipher, hash and hmac methods executed in Node's threadpool for m
 | ------------------ | :-------------: |
 | Full name          | @ronomon/crypto-async |
 | Keywords           | aes, aead, async, asynchronous, blake, chacha20-poly1305, cipher, cipheriv, crypto, ctr, decipher, decipheriv, event loop, gcm, hash, hmac, non-blocking, sha256, sha512, thread, threadpool, throughput, worker, zero-copy |
-| # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 107783 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6569.0 |
+| # stars            | 172.0 |
 
 ## Links
 - [Homepage](https://github.com/ronomon/crypto-async#readme)

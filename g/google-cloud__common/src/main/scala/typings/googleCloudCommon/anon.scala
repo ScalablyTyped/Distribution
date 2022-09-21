@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.googleCloudCommon.utilMod.ApiError
 import typings.googleCloudCommon.utilMod.GoogleErrorBody
 import typings.googleCloudCommon.utilMod.GoogleInnerError
-import typings.std.Error
 import typings.teenyRequest.mod.CoreOptions
 import typings.teenyRequest.mod.Options
 import org.scalablytyped.runtime.StObject
@@ -36,9 +35,9 @@ object anon {
   trait OnAuthenticated extends StObject {
     
     def onAuthenticated(): Unit = js.native
+    def onAuthenticated(err: js.Error): Unit = js.native
+    def onAuthenticated(err: js.Error, authenticatedReqOpts: Options): Unit = js.native
     def onAuthenticated(err: Null, authenticatedReqOpts: Options): Unit = js.native
-    def onAuthenticated(err: Error): Unit = js.native
-    def onAuthenticated(err: Error, authenticatedReqOpts: Options): Unit = js.native
   }
   
   trait ReqOpts extends StObject {

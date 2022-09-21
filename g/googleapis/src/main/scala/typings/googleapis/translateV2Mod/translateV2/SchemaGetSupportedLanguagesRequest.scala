@@ -4,16 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request message for discovering supported languages.
-  */
 trait SchemaGetSupportedLanguagesRequest extends StObject {
   
   /**
-    * The language to use to return localized, human readable names of
-    * supported languages.
+    * The language to use to return localized, human readable names of supported
+    * languages.
     */
-  var target: js.UndefOr[String] = js.undefined
+  var target: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGetSupportedLanguagesRequest {
   
@@ -25,6 +22,8 @@ object SchemaGetSupportedLanguagesRequest {
   extension [Self <: SchemaGetSupportedLanguagesRequest](x: Self) {
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetNull: Self = StObject.set(x, "target", null)
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }

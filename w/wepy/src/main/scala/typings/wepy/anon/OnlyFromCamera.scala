@@ -27,6 +27,6 @@ object OnlyFromCamera {
     
     inline def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
     
-    inline def setScanTypeVarargs(value: String*): Self = StObject.set(x, "scanType", js.Array(value :_*))
+    inline def setScanTypeVarargs(value: String*): Self = StObject.set(x, "scanType", js.Array(value*))
   }
 }

@@ -4,7 +4,6 @@ import typings.hapiCatbox.mod.CacheKey
 import typings.hapiCatbox.mod.CachedObject
 import typings.hapiCatbox.mod.ClientApi
 import typings.hapiCatbox.mod.ClientOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object mod {
   
   @JSImport("@hapi/catbox-memcached", JSImport.Namespace)
   @js.native
-  class ^[T] ()
+  open class ^[T] ()
     extends StObject
        with CatboxMemcached[T] {
     def this(options: Options) = this()
@@ -58,7 +57,7 @@ object mod {
     
     /** validateSegmentName(segment) - returns null if the segment name is valid (see below), otherwise should return an instance of Error with an appropriate message. */
     /* CompleteClass */
-    override def validateSegmentName(segment: String): Null | Error = js.native
+    override def validateSegmentName(segment: String): Null | js.Error = js.native
   }
   
   trait CatboxMemcached[T]
@@ -77,7 +76,7 @@ object mod {
       set: (CacheKey, T, Double) => js.Promise[Unit],
       start: () => js.Promise[Unit],
       stop: () => Unit,
-      validateSegmentName: String => Null | Error
+      validateSegmentName: String => Null | js.Error
     ): CatboxMemcached[T] = {
       val __obj = js.Dynamic.literal(drop = js.Any.fromFunction1(drop), generateKey = js.Any.fromFunction1(generateKey), get = js.Any.fromFunction1(get), isReady = js.Any.fromFunction0(isReady), set = js.Any.fromFunction3(set), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), validateSegmentName = js.Any.fromFunction1(validateSegmentName))
       __obj.asInstanceOf[CatboxMemcached[T]]

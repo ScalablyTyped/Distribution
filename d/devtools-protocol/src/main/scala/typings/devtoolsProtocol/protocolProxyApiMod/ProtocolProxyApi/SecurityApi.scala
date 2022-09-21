@@ -40,7 +40,7 @@ trait SecurityApi extends StObject {
   @JSName("on")
   def on_certificateError(event: certificateError, listener: js.Function1[/* params */ CertificateErrorEvent, Unit]): Unit = js.native
   /**
-    * The security state of the page changed.
+    * The security state of the page changed. No longer being sent.
     */
   @JSName("on")
   def on_securityStateChanged(event: securityStateChanged, listener: js.Function1[/* params */ SecurityStateChangedEvent, Unit]): Unit = js.native

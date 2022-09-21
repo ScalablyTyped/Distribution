@@ -11,29 +11,36 @@ trait SVGFEDisplacementMapElement
      with SVGElement
      with SVGFilterPrimitiveStandardAttributes {
   
+  /* standard dom */
   val SVG_CHANNEL_A: Double = js.native
   
+  /* standard dom */
   val SVG_CHANNEL_B: Double = js.native
   
+  /* standard dom */
   val SVG_CHANNEL_G: Double = js.native
   
+  /* standard dom */
   val SVG_CHANNEL_R: Double = js.native
   
+  /* standard dom */
   val SVG_CHANNEL_UNKNOWN: Double = js.native
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val in1: SVGAnimatedString = js.native
   
+  /* standard dom */
   val in2: SVGAnimatedString = js.native
   
   /* InferMemberOverrides */
@@ -47,9 +54,12 @@ trait SVGFEDisplacementMapElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val scale: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val xChannelSelector: SVGAnimatedEnumeration = js.native
   
+  /* standard dom */
   val yChannelSelector: SVGAnimatedEnumeration = js.native
 }

@@ -1,6 +1,5 @@
 package typings.winrt.Windows.UI.Notifications
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.Uri
@@ -24,10 +23,10 @@ trait ITileUpdater extends StObject {
   var setting: NotificationSetting = js.native
   
   def startPeriodicUpdate(tileContent: Uri, requestedInterval: PeriodicUpdateRecurrence): Unit = js.native
-  def startPeriodicUpdate(tileContent: Uri, startTime: Date, requestedInterval: PeriodicUpdateRecurrence): Unit = js.native
+  def startPeriodicUpdate(tileContent: Uri, startTime: js.Date, requestedInterval: PeriodicUpdateRecurrence): Unit = js.native
   
   def startPeriodicUpdateBatch(tileContents: IIterable[Uri], requestedInterval: PeriodicUpdateRecurrence): Unit = js.native
-  def startPeriodicUpdateBatch(tileContents: IIterable[Uri], startTime: Date, requestedInterval: PeriodicUpdateRecurrence): Unit = js.native
+  def startPeriodicUpdateBatch(tileContents: IIterable[Uri], startTime: js.Date, requestedInterval: PeriodicUpdateRecurrence): Unit = js.native
   
   def stopPeriodicUpdate(): Unit = js.native
   

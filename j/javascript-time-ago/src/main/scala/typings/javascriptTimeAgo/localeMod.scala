@@ -245,7 +245,7 @@ object localeMod {
     
     var localeMatcher: String
     
-    var numberFormat: StringDictionary[js.Any]
+    var numberFormat: StringDictionary[Any]
     
     var numeric: String
     
@@ -256,7 +256,7 @@ object localeMod {
     inline def apply(
       locale: String,
       localeMatcher: String,
-      numberFormat: StringDictionary[js.Any],
+      numberFormat: StringDictionary[Any],
       numeric: String,
       style: DefaultFormats
     ): RTFFormatter = {
@@ -270,7 +270,7 @@ object localeMod {
       
       inline def setLocaleMatcher(value: String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
-      inline def setNumberFormat(value: StringDictionary[js.Any]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+      inline def setNumberFormat(value: StringDictionary[Any]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
       
       inline def setNumeric(value: String): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
       

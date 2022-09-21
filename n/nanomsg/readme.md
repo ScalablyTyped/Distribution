@@ -1,7 +1,7 @@
 
 # Scala.js typings for nanomsg
 
-Typings are for version 3.2
+Typings are for version 4.2
 
 ## Library description:
 Node bindings for nanomsg
@@ -10,10 +10,10 @@ Node bindings for nanomsg
 | ------------------ | :-------------: |
 | Full name          | nanomsg |
 | Keywords           | nanomsg, native, binding, addon, nn, nanømsg |
-| # releases         | 2 |
-| # dependents       | 12 |
-| # downloads        | 20525 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 658.0 |
+| # stars            | 389.0 |
 
 ## Links
 - [Homepage](https://github.com/nickdesaulniers/node-nanomsg#readme)

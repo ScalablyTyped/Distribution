@@ -24,6 +24,6 @@ object ListAvailableZonesResponse {
     
     inline def setAZListUndefined: Self = StObject.set(x, "AZList", js.undefined)
     
-    inline def setAZListVarargs(value: AZ*): Self = StObject.set(x, "AZList", js.Array(value :_*))
+    inline def setAZListVarargs(value: AZ*): Self = StObject.set(x, "AZList", js.Array(value*))
   }
 }

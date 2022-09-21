@@ -35,7 +35,7 @@ object Opacity {
     
     inline def setPoints(value: js.Array[X]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: X*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: X*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setText(value: (/* value */ Double, /* percentage */ Double) => String): Self = StObject.set(x, "text", js.Any.fromFunction2(value))
     

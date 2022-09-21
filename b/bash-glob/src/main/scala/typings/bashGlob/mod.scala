@@ -3,7 +3,6 @@ package typings.bashGlob
 import typings.bashGlob.bashGlobStrings.`match`
 import typings.bashGlob.bashGlobStrings.end
 import typings.bashGlob.bashGlobStrings.files
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,11 +19,9 @@ object mod {
   inline def each(patterns: Patterns, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(patterns.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def each(patterns: Patterns, options: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def on(event: `match` | files, callback: js.Function2[/* files */ String, /* cwd */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def on_end(event: end, callback: js.Function1[/* files */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def on_files(event: files, callback: js.Function2[/* files */ String, /* cwd */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def on_match(event: `match`, callback: js.Function2[/* files */ String, /* cwd */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def promise(patterns: Patterns): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   inline def promise(patterns: Patterns, options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
@@ -32,7 +29,7 @@ object mod {
   inline def sync(patterns: Patterns): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   inline def sync(patterns: Patterns, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  type Callback = js.Function2[/* err */ Error, /* files */ js.Array[String], Unit]
+  type Callback = js.Function2[/* err */ js.Error, /* files */ js.Array[String], Unit]
   
   trait Options extends StObject {
     

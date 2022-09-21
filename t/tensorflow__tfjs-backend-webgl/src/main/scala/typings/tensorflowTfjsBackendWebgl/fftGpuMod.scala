@@ -11,11 +11,10 @@ object fftGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/fft_gpu", "FFTProgram")
   @js.native
-  class FFTProgram protected ()
+  open class FFTProgram protected ()
     extends StObject
        with GPGPUProgram {
-    def this(component: imag, inputShape: js.Tuple2[Double, Double], inverse: Boolean) = this()
-    def this(component: real, inputShape: js.Tuple2[Double, Double], inverse: Boolean) = this()
+    def this(component: real | imag, inputShape: js.Tuple2[Double, Double], inverse: Boolean) = this()
     
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native

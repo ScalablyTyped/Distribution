@@ -6,33 +6,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionImageModel")
 @js.native
-class QuestionImageModel protected () extends QuestionNonValue {
+open class QuestionImageModel protected () extends QuestionNonValue {
   def this(name: String) = this()
   
-  /**
+  /* protected */ def calculateRenderedMode(): Unit = js.native
+  
+  /*
     * The content mode.
     */
-  var contentMode: String = js.native
+  def contentMode: String = js.native
+  def contentMode_=(`val`: String): Unit = js.native
   
-  /**
+  def getImageCss(): String = js.native
+  
+  /*
     * The image fit mode.
     */
-  var imageFit: String = js.native
+  def imageFit: String = js.native
+  def imageFit_=(`val`: String): Unit = js.native
   
-  /**
+  /*
     * The image height.
     */
-  var imageHeight: String = js.native
+  def imageHeight: String = js.native
+  def imageHeight_=(`val`: String): Unit = js.native
   
-  /**
+  /*
     * The image URL.
     */
-  var imageLink: String = js.native
+  def imageLink: String = js.native
+  def imageLink_=(`val`: String): Unit = js.native
   
-  /**
+  /*
     * The image width.
     */
-  var imageWidth: String = js.native
+  def imageWidth: String = js.native
+  def imageWidth_=(`val`: String): Unit = js.native
   
-  val locImageLink: LocalizableString = js.native
+  def locImageLink: LocalizableString = js.native
+  
+  def locText: LocalizableString = js.native
+  
+  def renderedHeight: String = js.native
+  
+  /*
+    * The rendered mode.
+    */
+  def renderedMode: String = js.native
+  
+  def renderedWidth: String = js.native
+  
+  /*
+    * The image alt text.
+    */
+  def text: String = js.native
+  def text_=(`val`: String): Unit = js.native
 }

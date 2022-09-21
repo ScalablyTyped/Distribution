@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Schema extends StObject {
   
   def validate[T](value: T): ValidationResult[T] = js.native
-  def validate[T](value: T, options: js.Any): ValidationResult[T] = js.native
+  def validate[T](value: T, options: Any): ValidationResult[T] = js.native
 }

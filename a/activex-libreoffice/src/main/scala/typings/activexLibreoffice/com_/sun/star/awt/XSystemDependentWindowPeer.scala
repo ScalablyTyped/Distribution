@@ -23,14 +23,14 @@ trait XSystemDependentWindowPeer
     * @param SystemType one constant out of the constant group {@link com.sun.star.lang.SystemDependent} .
     * @returns a system-specific handle to a window or 0 if the window is not in the same process.  You must check the machine ID and the process ID. ;  WIN32:
     */
-  def getWindowHandle(ProcessId: SeqEquiv[Double], SystemType: Double): js.Any
+  def getWindowHandle(ProcessId: SeqEquiv[Double], SystemType: Double): Any
 }
 object XSystemDependentWindowPeer {
   
   inline def apply(
     acquire: () => Unit,
-    getWindowHandle: (SeqEquiv[Double], Double) => js.Any,
-    queryInterface: `type` => js.Any,
+    getWindowHandle: (SeqEquiv[Double], Double) => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSystemDependentWindowPeer = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getWindowHandle = js.Any.fromFunction2(getWindowHandle), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -39,6 +39,6 @@ object XSystemDependentWindowPeer {
   
   extension [Self <: XSystemDependentWindowPeer](x: Self) {
     
-    inline def setGetWindowHandle(value: (SeqEquiv[Double], Double) => js.Any): Self = StObject.set(x, "getWindowHandle", js.Any.fromFunction2(value))
+    inline def setGetWindowHandle(value: (SeqEquiv[Double], Double) => Any): Self = StObject.set(x, "getWindowHandle", js.Any.fromFunction2(value))
   }
 }

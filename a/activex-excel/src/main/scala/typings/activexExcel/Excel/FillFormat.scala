@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FillFormat extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   var BackColor: ColorFormat
   
@@ -48,7 +48,7 @@ trait FillFormat extends StObject {
   
   def OneColorGradient(Style: MsoGradientStyle, Variant: Double, Degree: Double): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Pattern: MsoPatternType
   
@@ -101,7 +101,7 @@ trait FillFormat extends StObject {
 object FillFormat {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     BackColor: ColorFormat,
     Background: () => Unit,
     Creator: Double,
@@ -114,7 +114,7 @@ object FillFormat {
     GradientStyle: MsoGradientStyle,
     GradientVariant: Double,
     OneColorGradient: (MsoGradientStyle, Double, Double) => Unit,
-    Parent: js.Any,
+    Parent: Any,
     Pattern: MsoPatternType,
     Patterned: MsoPatternType => Unit,
     PictureEffects: PictureEffects,
@@ -146,7 +146,7 @@ object FillFormat {
   
   extension [Self <: FillFormat](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setBackColor(value: ColorFormat): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
@@ -172,7 +172,7 @@ object FillFormat {
     
     inline def setOneColorGradient(value: (MsoGradientStyle, Double, Double) => Unit): Self = StObject.set(x, "OneColorGradient", js.Any.fromFunction3(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPattern(value: MsoPatternType): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     

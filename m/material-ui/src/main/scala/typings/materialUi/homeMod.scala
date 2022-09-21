@@ -10,10 +10,10 @@ object homeMod {
   
   @JSImport("material-ui/svg-icons/action/home", JSImport.Default)
   @js.native
-  class default () extends ActionHome
+  open class default () extends ActionHome
   
   @JSImport("material-ui/svg-icons/action/home", "ActionHome")
   @js.native
-  class ActionHome ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionHome ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -10,7 +10,7 @@ object triangulationMod {
   
   @JSImport("ol/reproj/Triangulation", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Triangulation {
     def this(
@@ -49,11 +49,11 @@ object triangulationMod {
       
       inline def setSource(value: js.Array[Coordinate]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      inline def setSourceVarargs(value: Coordinate*): Self = StObject.set(x, "source", js.Array(value :_*))
+      inline def setSourceVarargs(value: Coordinate*): Self = StObject.set(x, "source", js.Array(value*))
       
       inline def setTarget(value: js.Array[Coordinate]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      inline def setTargetVarargs(value: Coordinate*): Self = StObject.set(x, "target", js.Array(value :_*))
+      inline def setTargetVarargs(value: Coordinate*): Self = StObject.set(x, "target", js.Array(value*))
     }
   }
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cannon", "Constraint")
 @js.native
-class Constraint protected ()
+open class Constraint protected ()
   extends StObject
      with typings.cannon.CANNON.Constraint {
   def this(bodyA: typings.cannon.CANNON.Body, bodyB: typings.cannon.CANNON.Body) = this()
@@ -29,7 +29,7 @@ class Constraint protected ()
   override def enable(): Unit = js.native
   
   /* CompleteClass */
-  var equations: js.Array[js.Any] = js.native
+  var equations: js.Array[Any] = js.native
   
   /* CompleteClass */
   var id: Double = js.native

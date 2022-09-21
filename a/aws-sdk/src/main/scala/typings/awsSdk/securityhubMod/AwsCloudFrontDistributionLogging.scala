@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsCloudFrontDistributionLogging extends StObject {
   
   /**
-    * The Amazon S3 bucket to store the access logs in.
+    * The S3 bucket to store the access logs in.
     */
   var Bucket: js.UndefOr[NonEmptyString] = js.undefined
   

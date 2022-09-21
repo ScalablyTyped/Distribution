@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "Year")
 @js.native
-/* private */ class Year () extends Temporal {
+/* private */ open class Year () extends Temporal {
   
   def atMonth(monthOrNumber: Double): YearMonth = js.native
   def atMonth(monthOrNumber: Month): YearMonth = js.native

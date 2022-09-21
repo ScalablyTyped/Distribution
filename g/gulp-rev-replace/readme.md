@@ -10,15 +10,12 @@ Rewrite occurences of filenames which have been renamed by gulp-rev
 | ------------------ | :-------------: |
 | Full name          | gulp-rev-replace |
 | Keywords           | gulpplugin, rev, revision, version, replace, asset |
-| # releases         | 0 |
-| # dependents       | 153 |
-| # downloads        | 1944291 |
-| # stars            | 49 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 148167.0 |
+| # stars            | 395.0 |
 
 ## Links
-- [Homepage](https://github.com/jamesknelson/gulp-rev-replace#readme)
-- [Bugs](https://github.com/jamesknelson/gulp-rev-replace/issues)
-- [Repository](https://github.com/jamesknelson/gulp-rev-replace)
 - [Npm](https://www.npmjs.com/package/gulp-rev-replace)
     
 

@@ -22,11 +22,7 @@ object mod {
     * @returns A BIP39 mnemonic seed phrase.
     */
   inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  inline def apply(bits: `128`): String = ^.asInstanceOf[js.Dynamic].apply(bits.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(bits: `160`): String = ^.asInstanceOf[js.Dynamic].apply(bits.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(bits: `192`): String = ^.asInstanceOf[js.Dynamic].apply(bits.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(bits: `224`): String = ^.asInstanceOf[js.Dynamic].apply(bits.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(bits: `256`): String = ^.asInstanceOf[js.Dynamic].apply(bits.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(bits: `128` | `160` | `192` | `224` | `256`): String = ^.asInstanceOf[js.Dynamic].apply(bits.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("doge-seed", JSImport.Namespace)
   @js.native

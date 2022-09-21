@@ -33,7 +33,7 @@ object GeographicDivision {
     
     inline def setAlsoKnownAsUndefined: Self = StObject.set(x, "alsoKnownAs", js.undefined)
     
-    inline def setAlsoKnownAsVarargs(value: String*): Self = StObject.set(x, "alsoKnownAs", js.Array(value :_*))
+    inline def setAlsoKnownAsVarargs(value: String*): Self = StObject.set(x, "alsoKnownAs", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -43,6 +43,6 @@ object GeographicDivision {
     
     inline def setOfficeIndicesUndefined: Self = StObject.set(x, "officeIndices", js.undefined)
     
-    inline def setOfficeIndicesVarargs(value: Double*): Self = StObject.set(x, "officeIndices", js.Array(value :_*))
+    inline def setOfficeIndicesVarargs(value: Double*): Self = StObject.set(x, "officeIndices", js.Array(value*))
   }
 }

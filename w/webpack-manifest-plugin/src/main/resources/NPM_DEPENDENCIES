@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "webpack-manifest-plugin" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "webpack-manifest-plugin" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

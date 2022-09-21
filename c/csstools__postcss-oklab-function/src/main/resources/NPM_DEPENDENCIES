@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@csstools/postcss-oklab-function" : "1.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@csstools/postcss-oklab-function" : "1.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

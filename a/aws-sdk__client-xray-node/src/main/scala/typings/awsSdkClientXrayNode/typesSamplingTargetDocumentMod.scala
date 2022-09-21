@@ -1,6 +1,5 @@
 package typings.awsSdkClientXrayNode
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesSamplingTargetDocumentMod {
     /**
       * <p>When the reservoir quota expires.</p>
       */
-    var ReservoirQuotaTTL: js.UndefOr[Date | String | Double] = js.undefined
+    var ReservoirQuotaTTL: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The name of the sampling rule.</p>
@@ -53,7 +52,7 @@ object typesSamplingTargetDocumentMod {
       
       inline def setReservoirQuota(value: Double): Self = StObject.set(x, "ReservoirQuota", value.asInstanceOf[js.Any])
       
-      inline def setReservoirQuotaTTL(value: Date | String | Double): Self = StObject.set(x, "ReservoirQuotaTTL", value.asInstanceOf[js.Any])
+      inline def setReservoirQuotaTTL(value: js.Date | String | Double): Self = StObject.set(x, "ReservoirQuotaTTL", value.asInstanceOf[js.Any])
       
       inline def setReservoirQuotaTTLUndefined: Self = StObject.set(x, "ReservoirQuotaTTL", js.undefined)
       
@@ -73,7 +72,7 @@ object typesSamplingTargetDocumentMod {
       * <p>When the reservoir quota expires.</p>
       */
     @JSName("ReservoirQuotaTTL")
-    var ReservoirQuotaTTL_UnmarshalledSamplingTargetDocument: js.UndefOr[Date] = js.undefined
+    var ReservoirQuotaTTL_UnmarshalledSamplingTargetDocument: js.UndefOr[js.Date] = js.undefined
   }
   object UnmarshalledSamplingTargetDocument {
     
@@ -84,7 +83,7 @@ object typesSamplingTargetDocumentMod {
     
     extension [Self <: UnmarshalledSamplingTargetDocument](x: Self) {
       
-      inline def setReservoirQuotaTTL(value: Date): Self = StObject.set(x, "ReservoirQuotaTTL", value.asInstanceOf[js.Any])
+      inline def setReservoirQuotaTTL(value: js.Date): Self = StObject.set(x, "ReservoirQuotaTTL", value.asInstanceOf[js.Any])
       
       inline def setReservoirQuotaTTLUndefined: Self = StObject.set(x, "ReservoirQuotaTTL", js.undefined)
     }

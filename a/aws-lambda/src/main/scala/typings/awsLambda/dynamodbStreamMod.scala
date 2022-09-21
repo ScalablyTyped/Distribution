@@ -56,7 +56,7 @@ object dynamodbStreamMod {
       
       inline def setBSUndefined: Self = StObject.set(x, "BS", js.undefined)
       
-      inline def setBSVarargs(value: String*): Self = StObject.set(x, "BS", js.Array(value :_*))
+      inline def setBSVarargs(value: String*): Self = StObject.set(x, "BS", js.Array(value*))
       
       inline def setBUndefined: Self = StObject.set(x, "B", js.undefined)
       
@@ -64,7 +64,7 @@ object dynamodbStreamMod {
       
       inline def setLUndefined: Self = StObject.set(x, "L", js.undefined)
       
-      inline def setLVarargs(value: AttributeValue*): Self = StObject.set(x, "L", js.Array(value :_*))
+      inline def setLVarargs(value: AttributeValue*): Self = StObject.set(x, "L", js.Array(value*))
       
       inline def setM(value: StringDictionary[AttributeValue]): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
       
@@ -76,7 +76,7 @@ object dynamodbStreamMod {
       
       inline def setNSUndefined: Self = StObject.set(x, "NS", js.undefined)
       
-      inline def setNSVarargs(value: String*): Self = StObject.set(x, "NS", js.Array(value :_*))
+      inline def setNSVarargs(value: String*): Self = StObject.set(x, "NS", js.Array(value*))
       
       inline def setNULL(value: Boolean): Self = StObject.set(x, "NULL", value.asInstanceOf[js.Any])
       
@@ -90,9 +90,45 @@ object dynamodbStreamMod {
       
       inline def setSSUndefined: Self = StObject.set(x, "SS", js.undefined)
       
-      inline def setSSVarargs(value: String*): Self = StObject.set(x, "SS", js.Array(value :_*))
+      inline def setSSVarargs(value: String*): Self = StObject.set(x, "SS", js.Array(value*))
       
       inline def setSUndefined: Self = StObject.set(x, "S", js.undefined)
+    }
+  }
+  
+  trait DynamoDBBatchItemFailure extends StObject {
+    
+    var itemIdentifier: String
+  }
+  object DynamoDBBatchItemFailure {
+    
+    inline def apply(itemIdentifier: String): DynamoDBBatchItemFailure = {
+      val __obj = js.Dynamic.literal(itemIdentifier = itemIdentifier.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DynamoDBBatchItemFailure]
+    }
+    
+    extension [Self <: DynamoDBBatchItemFailure](x: Self) {
+      
+      inline def setItemIdentifier(value: String): Self = StObject.set(x, "itemIdentifier", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DynamoDBBatchResponse extends StObject {
+    
+    var batchItemFailures: js.Array[DynamoDBBatchItemFailure]
+  }
+  object DynamoDBBatchResponse {
+    
+    inline def apply(batchItemFailures: js.Array[DynamoDBBatchItemFailure]): DynamoDBBatchResponse = {
+      val __obj = js.Dynamic.literal(batchItemFailures = batchItemFailures.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DynamoDBBatchResponse]
+    }
+    
+    extension [Self <: DynamoDBBatchResponse](x: Self) {
+      
+      inline def setBatchItemFailures(value: js.Array[DynamoDBBatchItemFailure]): Self = StObject.set(x, "batchItemFailures", value.asInstanceOf[js.Any])
+      
+      inline def setBatchItemFailuresVarargs(value: DynamoDBBatchItemFailure*): Self = StObject.set(x, "batchItemFailures", js.Array(value*))
     }
   }
   
@@ -112,7 +148,7 @@ object dynamodbStreamMod {
     
     var eventVersion: js.UndefOr[String] = js.undefined
     
-    var userIdentity: js.UndefOr[js.Any] = js.undefined
+    var userIdentity: js.UndefOr[Any] = js.undefined
   }
   object DynamoDBRecord {
     
@@ -151,7 +187,7 @@ object dynamodbStreamMod {
       
       inline def setEventVersionUndefined: Self = StObject.set(x, "eventVersion", js.undefined)
       
-      inline def setUserIdentity(value: js.Any): Self = StObject.set(x, "userIdentity", value.asInstanceOf[js.Any])
+      inline def setUserIdentity(value: Any): Self = StObject.set(x, "userIdentity", value.asInstanceOf[js.Any])
       
       inline def setUserIdentityUndefined: Self = StObject.set(x, "userIdentity", js.undefined)
     }
@@ -172,11 +208,11 @@ object dynamodbStreamMod {
       
       inline def setRecords(value: js.Array[DynamoDBRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      inline def setRecordsVarargs(value: DynamoDBRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: DynamoDBRecord*): Self = StObject.set(x, "Records", js.Array(value*))
     }
   }
   
-  type DynamoDBStreamHandler = Handler[DynamoDBStreamEvent, Unit]
+  type DynamoDBStreamHandler = Handler[DynamoDBStreamEvent, DynamoDBBatchResponse | Unit]
   
   trait StreamRecord extends StObject {
     

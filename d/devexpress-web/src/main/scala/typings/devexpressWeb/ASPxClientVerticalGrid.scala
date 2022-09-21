@@ -133,7 +133,7 @@ trait ASPxClientVerticalGrid
     * Deletes a record with the specified key value.
     * @param key An object that uniquely identifies the record.
     */
-  def DeleteRecordByKey(key: js.Any): Unit = js.native
+  def DeleteRecordByKey(key: Any): Unit = js.native
   
   /**
     * Occurs on the client after a callback's server-side processing has been completed.
@@ -241,7 +241,7 @@ trait ASPxClientVerticalGrid
   /**
     * Returns key values of selected records displayed within the current page.
     */
-  def GetSelectedKeysOnPage(): js.Array[js.Any] = js.native
+  def GetSelectedKeysOnPage(): js.Array[Any] = js.native
   
   /**
     * Returns the number of selected records.
@@ -357,15 +357,15 @@ trait ASPxClientVerticalGrid
   def SelectRecords(visibleIndices: Double, selected: Boolean): Unit = js.native
   def SelectRecords(visibleIndices: Unit, selected: Boolean): Unit = js.native
   
-  def SelectRecordsByKey(keys: js.Any): Unit = js.native
-  def SelectRecordsByKey(keys: js.Any, selected: Boolean): Unit = js.native
   /**
     * Selects or deselects the specified records displayed within the grid.
     * @param keys An array of objects that uniquely identify the records.
     * @param selected true to select the specified records; false to deselect the records.
     */
-  def SelectRecordsByKey(keys: js.Array[js.Any]): Unit = js.native
-  def SelectRecordsByKey(keys: js.Array[js.Any], selected: Boolean): Unit = js.native
+  def SelectRecordsByKey(keys: js.Array[Any]): Unit = js.native
+  def SelectRecordsByKey(keys: js.Array[Any], selected: Boolean): Unit = js.native
+  def SelectRecordsByKey(keys: Any): Unit = js.native
+  def SelectRecordsByKey(keys: Any, selected: Boolean): Unit = js.native
   
   /**
     * Fires after the selection has been changed.
@@ -470,12 +470,12 @@ trait ASPxClientVerticalGrid
   def UnselectRecords(visibleIndices: js.Array[Double]): Unit = js.native
   def UnselectRecords(visibleIndices: Double): Unit = js.native
   
-  def UnselectRecordsByKey(keys: js.Any): Unit = js.native
   /**
     * Deselects the specified records displayed within the grid.
     * @param keys An array of objects that uniquely identify the records.
     */
-  def UnselectRecordsByKey(keys: js.Array[js.Any]): Unit = js.native
+  def UnselectRecordsByKey(keys: js.Array[Any]): Unit = js.native
+  def UnselectRecordsByKey(keys: Any): Unit = js.native
   
   /**
     * Saves all the changes made and switches the grid to browse mode.

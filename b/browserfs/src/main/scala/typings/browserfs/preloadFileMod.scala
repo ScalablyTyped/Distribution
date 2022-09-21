@@ -7,8 +7,7 @@ import typings.browserfs.fileSystemMod.BFSCallback
 import typings.browserfs.fileSystemMod.BFSOneArgCallback
 import typings.browserfs.fileSystemMod.BFSThreeArgCallback
 import typings.browserfs.fileSystemMod.FileSystem
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object preloadFileMod {
   
   @JSImport("browserfs/dist/node/generic/preload_file", JSImport.Default)
   @js.native
-  class default[T /* <: FileSystem */] protected () extends PreloadFile[T] {
+  open class default[T /* <: FileSystem */] protected () extends PreloadFile[T] {
     /**
       * Creates a file with the given path and, optionally, the given contents. Note
       * that, if contents is specified, it will be mutated by the file!
@@ -44,7 +43,7 @@ object preloadFileMod {
   
   @JSImport("browserfs/dist/node/generic/preload_file", "NoSyncFile")
   @js.native
-  class NoSyncFile[T /* <: FileSystem */] protected ()
+  open class NoSyncFile[T /* <: FileSystem */] protected ()
     extends PreloadFile[T]
        with File {
     def this(_fs: T, _path: String, _flag: FileFlag, _stat: typings.browserfs.nodeFsStatsMod.default) = this()
@@ -172,10 +171,10 @@ object preloadFileMod {
     override def truncateSync(len: Double): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimes(atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+    override def utimes(atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimesSync(atime: Date, mtime: Date): Unit = js.native
+    override def utimesSync(atime: js.Date, mtime: js.Date): Unit = js.native
     
     /**
       * Write buffer to the file.
@@ -220,19 +219,19 @@ object preloadFileMod {
   @js.native
   trait PreloadFile[T /* <: FileSystem */] extends BaseFile {
     
-    /* private */ var _buffer: js.Any = js.native
+    /* private */ var _buffer: Any = js.native
     
-    /* private */ var _dirty: js.Any = js.native
+    /* private */ var _dirty: Any = js.native
     
-    /* private */ var _flag: js.Any = js.native
+    /* private */ var _flag: Any = js.native
     
     /* protected */ var _fs: T = js.native
     
-    /* private */ var _path: js.Any = js.native
+    /* private */ var _path: Any = js.native
     
-    /* private */ var _pos: js.Any = js.native
+    /* private */ var _pos: Any = js.native
     
-    /* private */ var _stat: js.Any = js.native
+    /* private */ var _stat: Any = js.native
     
     /**
       * Advance the current file position by the indicated number of positions.

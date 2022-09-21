@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TotalImpactFilter extends StObject {
   
   /**
-    *  The upper bound dollar value used in the filter. 
+    * The upper bound dollar value that's used in the filter. 
     */
   var EndValue: js.UndefOr[GenericDouble] = js.undefined
   
   /**
-    *  The comparing value used in the filter. 
+    * The comparing value that's used in the filter. 
     */
   var NumericOperator: typings.awsSdk.costexplorerMod.NumericOperator
   
   /**
-    *  The lower bound dollar value used in the filter. 
+    * The lower bound dollar value that's used in the filter. 
     */
   var StartValue: GenericDouble
 }

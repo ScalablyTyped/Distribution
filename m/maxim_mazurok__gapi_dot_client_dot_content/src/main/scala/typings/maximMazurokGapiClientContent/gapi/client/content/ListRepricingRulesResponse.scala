@@ -29,6 +29,6 @@ object ListRepricingRulesResponse {
     
     inline def setRepricingRulesUndefined: Self = StObject.set(x, "repricingRules", js.undefined)
     
-    inline def setRepricingRulesVarargs(value: RepricingRule*): Self = StObject.set(x, "repricingRules", js.Array(value :_*))
+    inline def setRepricingRulesVarargs(value: RepricingRule*): Self = StObject.set(x, "repricingRules", js.Array(value*))
   }
 }

@@ -27,7 +27,7 @@ object DescribeExclusionsRequest {
     
     inline def setExclusionArns(value: BatchDescribeExclusionsArnList): Self = StObject.set(x, "exclusionArns", value.asInstanceOf[js.Any])
     
-    inline def setExclusionArnsVarargs(value: Arn*): Self = StObject.set(x, "exclusionArns", js.Array(value :_*))
+    inline def setExclusionArnsVarargs(value: Arn*): Self = StObject.set(x, "exclusionArns", js.Array(value*))
     
     inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

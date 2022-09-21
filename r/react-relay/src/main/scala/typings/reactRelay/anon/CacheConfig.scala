@@ -8,7 +8,7 @@ trait CacheConfig extends StObject {
   
   var cacheConfig: js.UndefOr[typings.relayRuntime.relayRuntimeTypesMod.CacheConfig | Null] = js.undefined
   
-  var fetchPolicy: js.UndefOr[typings.reactRelay.mod.FetchPolicy] = js.undefined
+  var fetchPolicy: js.UndefOr[typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy] = js.undefined
 }
 object CacheConfig {
   
@@ -25,7 +25,7 @@ object CacheConfig {
     
     inline def setCacheConfigUndefined: Self = StObject.set(x, "cacheConfig", js.undefined)
     
-    inline def setFetchPolicy(value: typings.reactRelay.mod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
+    inline def setFetchPolicy(value: typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
     
     inline def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
   }

@@ -20,6 +20,8 @@ trait PointCloudRendererColorModulation
   /**
     * Field value at which the point color will be left unchanged.
     *
+    * @default 255
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#colorModulation)
     */
   var maxValue: js.UndefOr[Double] = js.undefined

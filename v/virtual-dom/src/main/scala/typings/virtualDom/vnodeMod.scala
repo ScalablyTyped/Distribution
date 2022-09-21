@@ -14,7 +14,7 @@ object vnodeMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("virtual-dom/vnode/vnode", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with VNode {
     def this(tagName: String, properties: VProperties, children: js.Array[VTree]) = this()
@@ -35,7 +35,7 @@ object vnodeMod extends Shortcut {
     var count: Double = js.native
     
     /* CompleteClass */
-    var descendantHooks: js.Array[js.Any] = js.native
+    var descendantHooks: js.Array[Any] = js.native
     
     /* CompleteClass */
     var hasThunks: Boolean = js.native
@@ -44,7 +44,7 @@ object vnodeMod extends Shortcut {
     var hasWidgets: Boolean = js.native
     
     /* CompleteClass */
-    var hooks: js.Array[js.Any] = js.native
+    var hooks: js.Array[Any] = js.native
     
     /* CompleteClass */
     var properties: VProperties = js.native

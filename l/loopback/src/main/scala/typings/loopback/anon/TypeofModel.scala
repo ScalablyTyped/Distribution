@@ -3,7 +3,6 @@ package typings.loopback.anon
 import typings.loopback.mod.AccessToken
 import typings.loopback.mod.Application
 import typings.loopback.mod.RemoteMethodOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,15 +23,15 @@ trait TypeofModel extends StObject {
   /* static member */
   def checkAccess(
     token: AccessToken,
-    modelId: js.Any,
-    sharedMethod: js.Any,
-    ctx: js.Any,
-    callback: js.Function2[/* err */ String | Error, /* allowed */ Boolean, Unit]
+    modelId: Any,
+    sharedMethod: Any,
+    ctx: Any,
+    callback: js.Function2[/* err */ String | js.Error, /* allowed */ Boolean, Unit]
   ): Unit = js.native
   
   /** Data source to which the model is connected, if any. */
   /* static member */
-  var dataSource: js.Any = js.native
+  var dataSource: Any = js.native
   
   /**
     * Disable remote invocation for the method with the given name
@@ -60,7 +59,7 @@ trait TypeofModel extends StObject {
     * @end
     */
   /* static member */
-  def getApp(callback: js.Function2[/* err */ Error, /* app */ Application, Unit]): Unit = js.native
+  def getApp(callback: js.Function2[/* err */ js.Error, /* app */ Application, Unit]): Unit = js.native
   
   /** The name of the model. */
   /* static member */
@@ -105,7 +104,7 @@ trait TypeofModel extends StObject {
     getterName: String,
     hooks: Boolean,
     options: js.Object,
-    filterCallback: js.Function2[/* SharedMethod */ js.Any, /* RelationDefinition */ js.Any, Unit]
+    filterCallback: js.Function2[/* SharedMethod */ Any, /* RelationDefinition */ Any, Unit]
   ): Unit = js.native
   def nestRemoting(
     relationName: String,
@@ -115,7 +114,7 @@ trait TypeofModel extends StObject {
     getterName: String,
     hooks: Boolean,
     options: Unit,
-    filterCallback: js.Function2[/* SharedMethod */ js.Any, /* RelationDefinition */ js.Any, Unit]
+    filterCallback: js.Function2[/* SharedMethod */ Any, /* RelationDefinition */ Any, Unit]
   ): Unit = js.native
   
   /**
@@ -143,5 +142,5 @@ trait TypeofModel extends StObject {
   
   /** The `strong-remoting` */
   /* static member */
-  var sharedMethod: js.Any = js.native
+  var sharedMethod: Any = js.native
 }

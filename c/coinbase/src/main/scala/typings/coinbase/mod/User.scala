@@ -1,14 +1,13 @@
 package typings.coinbase.mod
 
 import typings.coinbase.coinbaseStrings.user
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("coinbase", "User")
 @js.native
-class User ()
+open class User ()
   extends StObject
      with Resource {
   
@@ -26,11 +25,6 @@ class User ()
     * (needs wallet:user:read permission)
     */
   var country: js.UndefOr[Country] = js.native
-  
-  /**
-    * ISO timestamp (sometimes needs additional permissions)
-    */
-  var created_at: js.UndefOr[String] = js.native
   
   /**
     * Email address (needs wallet:user:email permission)
@@ -87,7 +81,7 @@ class User ()
     * Get current user’s authorization information including granted scopes and send limits when using OAuth2 authentication
     * No permission required
     */
-  def showAuth(cb: js.Function2[/* error */ Error | Null, /* result */ Auth, Unit]): Unit = js.native
+  def showAuth(cb: js.Function2[/* error */ js.Error | Null, /* result */ Auth, Unit]): Unit = js.native
   
   /**
     * Time zone (needs wallet:user:read permission)
@@ -98,12 +92,7 @@ class User ()
     * Change user properties
     * Scope: wallet:user:update
     */
-  def update(opts: UpdateUserOpts, cb: js.Function2[/* error */ Error | Null, /* result */ this.type, Unit]): Unit = js.native
-  
-  /**
-    * ISO timestamp (sometimes needs additional permissions)
-    */
-  var updated_at: js.UndefOr[String] = js.native
+  def update(opts: UpdateUserOpts, cb: js.Function2[/* error */ js.Error | Null, /* result */ this.type, Unit]): Unit = js.native
   
   /**
     * <undocumented>

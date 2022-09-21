@@ -6,5 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.App")
 @js.native
-/* private */ class App_ ()
+/**
+  * Provides information about the application and allows to handle global application ui events.
+  */
+/* private */ open class App_ ()
   extends typings.tabris.mod.App_

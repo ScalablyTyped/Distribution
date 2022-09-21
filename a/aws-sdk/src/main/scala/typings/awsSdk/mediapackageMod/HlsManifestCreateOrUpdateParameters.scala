@@ -80,7 +80,7 @@ object HlsManifestCreateOrUpdateParameters {
     
     inline def setAdTriggersUndefined: Self = StObject.set(x, "AdTriggers", js.undefined)
     
-    inline def setAdTriggersVarargs(value: AdTriggersElement*): Self = StObject.set(x, "AdTriggers", js.Array(value :_*))
+    inline def setAdTriggersVarargs(value: AdTriggersElement*): Self = StObject.set(x, "AdTriggers", js.Array(value*))
     
     inline def setAdsOnDeliveryRestrictions(value: AdsOnDeliveryRestrictions): Self = StObject.set(x, "AdsOnDeliveryRestrictions", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateContainerAgentResponse extends StObject {
   
   /**
-    * The container instance for which the container agent was updated.
+    * The container instance that the container agent was updated for.
     */
   var containerInstance: js.UndefOr[ContainerInstance] = js.undefined
 }

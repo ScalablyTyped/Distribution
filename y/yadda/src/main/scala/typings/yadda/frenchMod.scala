@@ -1,8 +1,6 @@
 package typings.yadda
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,20 +19,24 @@ object frenchMod extends Shortcut {
     def alors(
       step: String,
       fn: js.Function1[
-          (/* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def alors(
       step: String,
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
+      fn: js.Function2[
+          /* arg1 */ String, 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
     ): this.type = js.native
     def alors(
       step: String,
       fn: js.Function3[
           /* arg1 */ String, 
           /* arg2 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -44,7 +46,7 @@ object frenchMod extends Shortcut {
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -55,7 +57,7 @@ object frenchMod extends Shortcut {
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -67,7 +69,7 @@ object frenchMod extends Shortcut {
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -80,65 +82,65 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def alors(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function1[
-          (/* next */ js.Function1[js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def alors(
-      step: js.Array[RegExp | String],
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[js.UndefOr[Error], Unit], Unit]
+      step: js.Array[js.RegExp | String],
+      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[js.UndefOr[js.Error], Unit], Unit]
     ): this.type = js.native
     def alors(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function3[
           /* arg1 */ String, 
           /* arg2 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def alors(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function4[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def alors(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function5[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def alors(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function6[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def alors(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function7[
           /* arg1 */ String, 
           /* arg2 */ String, 
@@ -146,65 +148,69 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def alors(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function1[
-          (/* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def alors(
-      step: RegExp,
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
-    ): this.type = js.native
-    def alors(
-      step: RegExp,
-      fn: js.Function3[
+      step: js.RegExp,
+      fn: js.Function2[
           /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def alors(
-      step: RegExp,
+      step: js.RegExp,
+      fn: js.Function3[
+          /* arg1 */ String, 
+          /* arg2 */ String, 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
+    ): this.type = js.native
+    def alors(
+      step: js.RegExp,
       fn: js.Function4[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def alors(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function5[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def alors(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function6[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def alors(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function7[
           /* arg1 */ String, 
           /* arg2 */ String, 
@@ -212,7 +218,7 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -220,20 +226,24 @@ object frenchMod extends Shortcut {
     def etantdonnalors(
       step: String,
       fn: js.Function1[
-          (/* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def etantdonnalors(
       step: String,
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
+      fn: js.Function2[
+          /* arg1 */ String, 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
     ): this.type = js.native
     def etantdonnalors(
       step: String,
       fn: js.Function3[
           /* arg1 */ String, 
           /* arg2 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -243,7 +253,7 @@ object frenchMod extends Shortcut {
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -254,7 +264,7 @@ object frenchMod extends Shortcut {
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -266,7 +276,7 @@ object frenchMod extends Shortcut {
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -279,65 +289,65 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalors(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function1[
-          (/* next */ js.Function1[js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def etantdonnalors(
-      step: js.Array[RegExp | String],
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[js.UndefOr[Error], Unit], Unit]
+      step: js.Array[js.RegExp | String],
+      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[js.UndefOr[js.Error], Unit], Unit]
     ): this.type = js.native
     def etantdonnalors(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function3[
           /* arg1 */ String, 
           /* arg2 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalors(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function4[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalors(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function5[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalors(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function6[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalors(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function7[
           /* arg1 */ String, 
           /* arg2 */ String, 
@@ -345,65 +355,69 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalors(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function1[
-          (/* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def etantdonnalors(
-      step: RegExp,
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
-    ): this.type = js.native
-    def etantdonnalors(
-      step: RegExp,
-      fn: js.Function3[
+      step: js.RegExp,
+      fn: js.Function2[
           /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalors(
-      step: RegExp,
+      step: js.RegExp,
+      fn: js.Function3[
+          /* arg1 */ String, 
+          /* arg2 */ String, 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
+    ): this.type = js.native
+    def etantdonnalors(
+      step: js.RegExp,
       fn: js.Function4[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalors(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function5[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalors(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function6[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalors(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function7[
           /* arg1 */ String, 
           /* arg2 */ String, 
@@ -411,7 +425,7 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -419,20 +433,24 @@ object frenchMod extends Shortcut {
     def etantdonnalorss(
       step: String,
       fn: js.Function1[
-          (/* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def etantdonnalorss(
       step: String,
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
+      fn: js.Function2[
+          /* arg1 */ String, 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
     ): this.type = js.native
     def etantdonnalorss(
       step: String,
       fn: js.Function3[
           /* arg1 */ String, 
           /* arg2 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -442,7 +460,7 @@ object frenchMod extends Shortcut {
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -453,7 +471,7 @@ object frenchMod extends Shortcut {
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -465,7 +483,7 @@ object frenchMod extends Shortcut {
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -478,65 +496,65 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalorss(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function1[
-          (/* next */ js.Function1[js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def etantdonnalorss(
-      step: js.Array[RegExp | String],
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[js.UndefOr[Error], Unit], Unit]
+      step: js.Array[js.RegExp | String],
+      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[js.UndefOr[js.Error], Unit], Unit]
     ): this.type = js.native
     def etantdonnalorss(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function3[
           /* arg1 */ String, 
           /* arg2 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalorss(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function4[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalorss(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function5[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalorss(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function6[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalorss(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function7[
           /* arg1 */ String, 
           /* arg2 */ String, 
@@ -544,65 +562,69 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalorss(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function1[
-          (/* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def etantdonnalorss(
-      step: RegExp,
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
-    ): this.type = js.native
-    def etantdonnalorss(
-      step: RegExp,
-      fn: js.Function3[
+      step: js.RegExp,
+      fn: js.Function2[
           /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalorss(
-      step: RegExp,
+      step: js.RegExp,
+      fn: js.Function3[
+          /* arg1 */ String, 
+          /* arg2 */ String, 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
+    ): this.type = js.native
+    def etantdonnalorss(
+      step: js.RegExp,
       fn: js.Function4[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalorss(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function5[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalorss(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function6[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonnalorss(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function7[
           /* arg1 */ String, 
           /* arg2 */ String, 
@@ -610,7 +632,7 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -618,20 +640,24 @@ object frenchMod extends Shortcut {
     def etantdonne(
       step: String,
       fn: js.Function1[
-          (/* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def etantdonne(
       step: String,
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
+      fn: js.Function2[
+          /* arg1 */ String, 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
     ): this.type = js.native
     def etantdonne(
       step: String,
       fn: js.Function3[
           /* arg1 */ String, 
           /* arg2 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -641,7 +667,7 @@ object frenchMod extends Shortcut {
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -652,7 +678,7 @@ object frenchMod extends Shortcut {
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -664,7 +690,7 @@ object frenchMod extends Shortcut {
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -677,65 +703,65 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonne(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function1[
-          (/* next */ js.Function1[js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def etantdonne(
-      step: js.Array[RegExp | String],
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[js.UndefOr[Error], Unit], Unit]
+      step: js.Array[js.RegExp | String],
+      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[js.UndefOr[js.Error], Unit], Unit]
     ): this.type = js.native
     def etantdonne(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function3[
           /* arg1 */ String, 
           /* arg2 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonne(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function4[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonne(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function5[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonne(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function6[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonne(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function7[
           /* arg1 */ String, 
           /* arg2 */ String, 
@@ -743,65 +769,69 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonne(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function1[
-          (/* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def etantdonne(
-      step: RegExp,
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
-    ): this.type = js.native
-    def etantdonne(
-      step: RegExp,
-      fn: js.Function3[
+      step: js.RegExp,
+      fn: js.Function2[
           /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonne(
-      step: RegExp,
+      step: js.RegExp,
+      fn: js.Function3[
+          /* arg1 */ String, 
+          /* arg2 */ String, 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
+    ): this.type = js.native
+    def etantdonne(
+      step: js.RegExp,
       fn: js.Function4[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonne(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function5[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonne(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function6[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def etantdonne(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function7[
           /* arg1 */ String, 
           /* arg2 */ String, 
@@ -809,7 +839,7 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -817,20 +847,24 @@ object frenchMod extends Shortcut {
     def lorsque(
       step: String,
       fn: js.Function1[
-          (/* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def lorsque(
       step: String,
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
+      fn: js.Function2[
+          /* arg1 */ String, 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
     ): this.type = js.native
     def lorsque(
       step: String,
       fn: js.Function3[
           /* arg1 */ String, 
           /* arg2 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -840,7 +874,7 @@ object frenchMod extends Shortcut {
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -851,7 +885,7 @@ object frenchMod extends Shortcut {
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -863,7 +897,7 @@ object frenchMod extends Shortcut {
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -876,65 +910,65 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def lorsque(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function1[
-          (/* next */ js.Function1[js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def lorsque(
-      step: js.Array[RegExp | String],
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[js.UndefOr[Error], Unit], Unit]
+      step: js.Array[js.RegExp | String],
+      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[js.UndefOr[js.Error], Unit], Unit]
     ): this.type = js.native
     def lorsque(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function3[
           /* arg1 */ String, 
           /* arg2 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def lorsque(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function4[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def lorsque(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function5[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def lorsque(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function6[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def lorsque(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function7[
           /* arg1 */ String, 
           /* arg2 */ String, 
@@ -942,65 +976,69 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def lorsque(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function1[
-          (/* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def lorsque(
-      step: RegExp,
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
-    ): this.type = js.native
-    def lorsque(
-      step: RegExp,
-      fn: js.Function3[
+      step: js.RegExp,
+      fn: js.Function2[
           /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def lorsque(
-      step: RegExp,
+      step: js.RegExp,
+      fn: js.Function3[
+          /* arg1 */ String, 
+          /* arg2 */ String, 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
+    ): this.type = js.native
+    def lorsque(
+      step: js.RegExp,
       fn: js.Function4[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def lorsque(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function5[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def lorsque(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function6[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def lorsque(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function7[
           /* arg1 */ String, 
           /* arg2 */ String, 
@@ -1008,7 +1046,7 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -1016,20 +1054,24 @@ object frenchMod extends Shortcut {
     def quand(
       step: String,
       fn: js.Function1[
-          (/* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def quand(
       step: String,
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
+      fn: js.Function2[
+          /* arg1 */ String, 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
     ): this.type = js.native
     def quand(
       step: String,
       fn: js.Function3[
           /* arg1 */ String, 
           /* arg2 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -1039,7 +1081,7 @@ object frenchMod extends Shortcut {
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -1050,7 +1092,7 @@ object frenchMod extends Shortcut {
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -1062,7 +1104,7 @@ object frenchMod extends Shortcut {
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -1075,65 +1117,65 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def quand(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function1[
-          (/* next */ js.Function1[js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def quand(
-      step: js.Array[RegExp | String],
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[js.UndefOr[Error], Unit], Unit]
+      step: js.Array[js.RegExp | String],
+      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[js.UndefOr[js.Error], Unit], Unit]
     ): this.type = js.native
     def quand(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function3[
           /* arg1 */ String, 
           /* arg2 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def quand(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function4[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def quand(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function5[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def quand(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function6[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def quand(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function7[
           /* arg1 */ String, 
           /* arg2 */ String, 
@@ -1141,65 +1183,69 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def quand(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function1[
-          (/* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def quand(
-      step: RegExp,
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
-    ): this.type = js.native
-    def quand(
-      step: RegExp,
-      fn: js.Function3[
+      step: js.RegExp,
+      fn: js.Function2[
           /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def quand(
-      step: RegExp,
+      step: js.RegExp,
+      fn: js.Function3[
+          /* arg1 */ String, 
+          /* arg2 */ String, 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
+    ): this.type = js.native
+    def quand(
+      step: js.RegExp,
       fn: js.Function4[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def quand(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function5[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def quand(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function6[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def quand(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function7[
           /* arg1 */ String, 
           /* arg2 */ String, 
@@ -1207,7 +1253,7 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -1215,20 +1261,24 @@ object frenchMod extends Shortcut {
     def soit(
       step: String,
       fn: js.Function1[
-          (/* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def soit(
       step: String,
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
+      fn: js.Function2[
+          /* arg1 */ String, 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
     ): this.type = js.native
     def soit(
       step: String,
       fn: js.Function3[
           /* arg1 */ String, 
           /* arg2 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -1238,7 +1288,7 @@ object frenchMod extends Shortcut {
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -1249,7 +1299,7 @@ object frenchMod extends Shortcut {
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -1261,7 +1311,7 @@ object frenchMod extends Shortcut {
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -1274,65 +1324,65 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def soit(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function1[
-          (/* next */ js.Function1[js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def soit(
-      step: js.Array[RegExp | String],
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[js.UndefOr[Error], Unit], Unit]
+      step: js.Array[js.RegExp | String],
+      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[js.UndefOr[js.Error], Unit], Unit]
     ): this.type = js.native
     def soit(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function3[
           /* arg1 */ String, 
           /* arg2 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def soit(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function4[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def soit(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function5[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def soit(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function6[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def soit(
-      step: js.Array[RegExp | String],
+      step: js.Array[js.RegExp | String],
       fn: js.Function7[
           /* arg1 */ String, 
           /* arg2 */ String, 
@@ -1340,65 +1390,69 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def soit(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function1[
-          (/* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) | (/* repeated */ String), 
+          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
     def soit(
-      step: RegExp,
-      fn: js.Function2[/* arg1 */ String, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
-    ): this.type = js.native
-    def soit(
-      step: RegExp,
-      fn: js.Function3[
+      step: js.RegExp,
+      fn: js.Function2[
           /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def soit(
-      step: RegExp,
+      step: js.RegExp,
+      fn: js.Function3[
+          /* arg1 */ String, 
+          /* arg2 */ String, 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
+    ): this.type = js.native
+    def soit(
+      step: js.RegExp,
       fn: js.Function4[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def soit(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function5[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def soit(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function6[
           /* arg1 */ String, 
           /* arg2 */ String, 
           /* arg3 */ String, 
           /* arg4 */ String, 
           /* arg5 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native
     def soit(
-      step: RegExp,
+      step: js.RegExp,
       fn: js.Function7[
           /* arg1 */ String, 
           /* arg2 */ String, 
@@ -1406,7 +1460,7 @@ object frenchMod extends Shortcut {
           /* arg4 */ String, 
           /* arg5 */ String, 
           /* arg6 */ String, 
-          /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+          /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
     ): this.type = js.native

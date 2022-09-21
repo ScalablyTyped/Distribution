@@ -9,7 +9,7 @@ trait Explanation extends StObject {
   /** Attribution of feature. */
   var attribution: js.UndefOr[Double] = js.undefined
   
-  /** Full name of the feature. For non-numerical features, will be formatted like .. Overall size of feature name will always be truncated to first 120 characters. */
+  /** The full feature name. For non-numerical features, will be formatted like `.`. Overall size of feature name will always be truncated to first 120 characters. */
   var featureName: js.UndefOr[String] = js.undefined
 }
 object Explanation {

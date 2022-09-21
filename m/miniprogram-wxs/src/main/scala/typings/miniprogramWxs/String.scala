@@ -79,12 +79,12 @@ trait String
     */
   def replace(
     searchValue: java.lang.String,
-    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
+    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ Any, java.lang.String]
   ): java.lang.String = js.native
   def replace(searchValue: RegExp, replaceValue: java.lang.String): java.lang.String = js.native
   def replace(
     searchValue: RegExp,
-    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
+    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ Any, java.lang.String]
   ): java.lang.String = js.native
   
   /**

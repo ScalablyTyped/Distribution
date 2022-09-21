@@ -10,10 +10,10 @@ A simple object to represent an http response
 | ------------------ | :-------------: |
 | Full name          | http-response-object |
 | Keywords           | http, https, response, request |
-| # releases         | 2 |
-| # dependents       | 20 |
-| # downloads        | 15908548 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2044304.0 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/ForbesLindesay/http-response-object#readme)

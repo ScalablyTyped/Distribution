@@ -10,10 +10,10 @@ A Karma plugin. Report results in a detailed HTML page.
 | ------------------ | :-------------: |
 | Full name          | karma-html-detailed-reporter |
 | Keywords           | karma, karma-plugin, karma-reporter, html |
-| # releases         | 12 |
-| # dependents       | 1 |
-| # downloads        | 70977 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7640.333333333333 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/a11smiles/karma-html-detailed-reporter)

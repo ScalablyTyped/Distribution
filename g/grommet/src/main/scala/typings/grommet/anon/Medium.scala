@@ -10,6 +10,8 @@ trait Medium extends StObject {
   
   var medium: js.UndefOr[String] = js.undefined
   
+  var none: js.UndefOr[String] = js.undefined
+  
   var small: js.UndefOr[String] = js.undefined
   
   var xlarge: js.UndefOr[String] = js.undefined
@@ -32,6 +34,10 @@ object Medium {
     inline def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+    
+    inline def setNone(value: String): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    
+    inline def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
     
     inline def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     

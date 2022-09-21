@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientDomainsStrings {
   
   @js.native
+  sealed trait ImportDomainRequest extends StObject
+  inline def ImportDomainRequest: ImportDomainRequest = "ImportDomainRequest".asInstanceOf[ImportDomainRequest]
+  
+  @js.native
   sealed trait Location extends StObject
   inline def Location: Location = "Location".asInstanceOf[Location]
   
@@ -27,6 +31,6 @@ object maximMazurokGapiClientDomainsStrings {
   inline def domains: domains = "domains".asInstanceOf[domains]
   
   @js.native
-  sealed trait v1beta1 extends StObject
-  inline def v1beta1: v1beta1 = "v1beta1".asInstanceOf[v1beta1]
+  sealed trait v1 extends StObject
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

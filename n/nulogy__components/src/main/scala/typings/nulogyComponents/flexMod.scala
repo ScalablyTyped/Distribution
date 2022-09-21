@@ -8,5 +8,5 @@ object flexMod {
   
   @JSImport("@nulogy/components/src/Flex", "Flex")
   @js.native
-  val Flex: js.Any = js.native
+  val Flex: Any = js.native
 }

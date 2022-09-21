@@ -10,9 +10,9 @@ connect missing router middleware, support express format routing.
 | Full name          | urlrouter |
 | Keywords           | router, url, connect, middleware, express |
 | # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 6494 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 531.6666666666666 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](http://github.com/fengmk2/urlrouter)

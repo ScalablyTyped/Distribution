@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-weui", "Article")
 @js.native
-class Article protected () extends StObject {
-  def this(args: js.Any*) = this()
+open class Article protected () extends StObject {
+  def this(args: Any*) = this()
   
-  def render(): js.Any = js.native
+  def render(): Any = js.native
 }
 /* static members */
 object Article {

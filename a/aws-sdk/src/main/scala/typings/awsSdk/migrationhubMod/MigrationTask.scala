@@ -29,7 +29,7 @@ trait MigrationTask extends StObject {
   /**
     * The timestamp when the task was gathered.
     */
-  var UpdateDateTime: js.UndefOr[typings.awsSdk.migrationhubMod.UpdateDateTime] = js.undefined
+  var UpdateDateTime: js.UndefOr[js.Date] = js.undefined
 }
 object MigrationTask {
   
@@ -52,13 +52,13 @@ object MigrationTask {
     
     inline def setResourceAttributeListUndefined: Self = StObject.set(x, "ResourceAttributeList", js.undefined)
     
-    inline def setResourceAttributeListVarargs(value: ResourceAttribute*): Self = StObject.set(x, "ResourceAttributeList", js.Array(value :_*))
+    inline def setResourceAttributeListVarargs(value: ResourceAttribute*): Self = StObject.set(x, "ResourceAttributeList", js.Array(value*))
     
     inline def setTask(value: Task): Self = StObject.set(x, "Task", value.asInstanceOf[js.Any])
     
     inline def setTaskUndefined: Self = StObject.set(x, "Task", js.undefined)
     
-    inline def setUpdateDateTime(value: UpdateDateTime): Self = StObject.set(x, "UpdateDateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateDateTime(value: js.Date): Self = StObject.set(x, "UpdateDateTime", value.asInstanceOf[js.Any])
     
     inline def setUpdateDateTimeUndefined: Self = StObject.set(x, "UpdateDateTime", js.undefined)
   }

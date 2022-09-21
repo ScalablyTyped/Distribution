@@ -8,5 +8,5 @@ object lookupDeveloperIdentityInputMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/LookupDeveloperIdentityInput", "LookupDeveloperIdentityInput")
   @js.native
-  val LookupDeveloperIdentityInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val LookupDeveloperIdentityInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

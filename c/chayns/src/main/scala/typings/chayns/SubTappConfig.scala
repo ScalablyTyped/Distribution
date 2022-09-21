@@ -11,7 +11,7 @@ trait SubTappConfig extends StObject {
   
   var buttonName: String
   
-  var callbackURL: js.UndefOr[js.Function1[/* result */ js.Any, js.Any]] = js.undefined
+  var callbackURL: js.UndefOr[js.Function1[/* result */ Any, Any]] = js.undefined
   
   var color: String
   
@@ -54,7 +54,7 @@ object SubTappConfig {
     
     inline def setButtonName(value: String): Self = StObject.set(x, "buttonName", value.asInstanceOf[js.Any])
     
-    inline def setCallbackURL(value: /* result */ js.Any => js.Any): Self = StObject.set(x, "callbackURL", js.Any.fromFunction1(value))
+    inline def setCallbackURL(value: /* result */ Any => Any): Self = StObject.set(x, "callbackURL", js.Any.fromFunction1(value))
     
     inline def setCallbackURLUndefined: Self = StObject.set(x, "callbackURL", js.undefined)
     

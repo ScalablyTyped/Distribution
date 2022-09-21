@@ -1,7 +1,7 @@
 
 # Scala.js typings for babel-walk
 
-Typings are for version 3.0.0-canary-5
+Typings are for version 3.0.0
 
 ## Library description:
 Lightweight Babel AST traversal
@@ -10,10 +10,10 @@ Lightweight Babel AST traversal
 | ------------------ | :-------------: |
 | Full name          | babel-walk |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 6 |
-| # downloads        | 1812698 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3528002.6666666665 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/pugjs/babel-walk#readme)

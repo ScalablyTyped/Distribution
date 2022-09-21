@@ -10,10 +10,10 @@ Break free from CSS prefix hell!
 | ------------------ | :-------------: |
 | Full name          | prefixfree |
 | Keywords           | CSS, prefixes |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 185162 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19715.333333333332 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/LeaVerou/prefixfree)

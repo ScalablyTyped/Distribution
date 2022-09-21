@@ -11,9 +11,9 @@ Embed PDF.js viewer into your angular application
 | Full name          | angular-pdfjs-viewer |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 24296 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1586.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/angular-pdfjs-viewer)

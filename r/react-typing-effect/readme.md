@@ -10,10 +10,10 @@ Simulates typing effect, eraser effect and blinking cursor.
 | ------------------ | :-------------: |
 | Full name          | react-typing-effect |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 23995 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 10650.333333333334 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/lamyfarai/react-typing-effect#readme)

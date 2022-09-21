@@ -33,6 +33,6 @@ object DescribeTransitGatewayPeeringAttachmentsResult {
     
     inline def setTransitGatewayPeeringAttachmentsUndefined: Self = StObject.set(x, "TransitGatewayPeeringAttachments", js.undefined)
     
-    inline def setTransitGatewayPeeringAttachmentsVarargs(value: TransitGatewayPeeringAttachment*): Self = StObject.set(x, "TransitGatewayPeeringAttachments", js.Array(value :_*))
+    inline def setTransitGatewayPeeringAttachmentsVarargs(value: TransitGatewayPeeringAttachment*): Self = StObject.set(x, "TransitGatewayPeeringAttachments", js.Array(value*))
   }
 }

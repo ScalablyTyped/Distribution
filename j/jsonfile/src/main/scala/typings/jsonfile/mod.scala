@@ -3,17 +3,16 @@ package typings.jsonfile
 import typings.jsonfile.anon.EOL
 import typings.jsonfile.anon.Encoding
 import typings.jsonfile.anon.FnCall
-import typings.jsonfile.anon.FnCallPathDataOptions
+import typings.jsonfile.anon.FnCallFileDataOptions
 import typings.jsonfile.anon.TypeoffsReadFile
 import typings.jsonfile.anon.TypeoffsWriteFile
-import typings.node.Buffer
-import typings.node.BufferEncoding
-import typings.node.NodeJS.ArrayBufferView
-import typings.node.NodeJS.ErrnoException
-import typings.node.anon.BaseEncodingOptionsflagst
-import typings.node.anon.EncodingBufferEncoding
-import typings.node.anon.`3`
+import typings.node.anon.EncodingFlag
+import typings.node.anon.Flag
+import typings.node.anon.ObjectEncodingOptionsflagEncoding
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.PathLike
+import typings.node.fsMod.PathOrFileDescriptor
 import typings.node.fsMod.WriteFileOptions
 import typings.node.urlMod.Url
 import org.scalablytyped.runtime.StObject
@@ -26,59 +25,46 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def readFile(file: Path): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def readFile(file: Path): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   inline def readFile(file: Path, callback: ReadCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def readFile(file: Path, options: JFReadOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def readFile(file: Path, options: JFReadOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def readFile(file: Path, options: JFReadOptions, callback: ReadCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def readFileSync(file: Path): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(file.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def readFileSync(file: Path, options: JFReadOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def readFileSync(file: Path): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(file.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def readFileSync(file: Path, options: JFReadOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def writeFile(file: Path, obj: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: Path, obj: js.Any, callback: WriteCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeFile(file: Path, obj: js.Any, options: JFWriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def writeFile(file: Path, obj: js.Any, options: JFWriteOptions, callback: WriteCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeFile(file: Path, obj: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: Path, obj: Any, callback: WriteCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeFile(file: Path, obj: Any, options: JFWriteOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeFile(file: Path, obj: Any, options: JFWriteOptions, callback: WriteCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def writeFileSync(file: Path, obj: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def writeFileSync(file: Path, obj: js.Any, options: JFWriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeFileSync(file: Path, obj: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeFileSync(file: Path, obj: Any, options: JFWriteOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(file.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait FS extends StObject {
     
     var readFile: TypeoffsReadFile
     
-    def readFileSync(path: Double): String | Buffer
-    def readFileSync(path: Double, options: BufferEncoding): String
-    def readFileSync(path: Double, options: BaseEncodingOptionsflagst): String | Buffer
-    def readFileSync(path: Double, options: EncodingBufferEncoding): String
-    def readFileSync(path: Double, options: `3`): Buffer
-    def readFileSync(path: PathLike): String | Buffer
-    def readFileSync(path: PathLike, options: BufferEncoding): String
-    def readFileSync(path: PathLike, options: BaseEncodingOptionsflagst): String | Buffer
-    def readFileSync(path: PathLike, options: EncodingBufferEncoding): String
-    def readFileSync(path: PathLike, options: `3`): Buffer
+    def readFileSync(path: PathOrFileDescriptor): String | Buffer
+    def readFileSync(path: PathOrFileDescriptor, options: EncodingFlag): String
+    def readFileSync(path: PathOrFileDescriptor, options: Flag): Buffer
+    def readFileSync(path: PathOrFileDescriptor, options: ObjectEncodingOptionsflagEncoding): String | Buffer
+    def readFileSync(path: PathOrFileDescriptor, options: BufferEncoding): String
     @JSName("readFileSync")
-    def readFileSync_Buffer(path: Double): Buffer
-    @JSName("readFileSync")
-    def readFileSync_Buffer(path: PathLike): Buffer
+    def readFileSync_Buffer(path: PathOrFileDescriptor): Buffer
     @JSName("readFileSync")
     var readFileSync_Original: FnCall
     @JSName("readFileSync")
-    def readFileSync_Union(path: Double, options: BufferEncoding): String | Buffer
-    @JSName("readFileSync")
-    def readFileSync_Union(path: PathLike, options: BufferEncoding): String | Buffer
+    def readFileSync_Union(path: PathOrFileDescriptor, options: BufferEncoding): String | Buffer
     
     var writeFile: TypeoffsWriteFile
     
-    def writeFileSync(path: Double, data: String): Unit
-    def writeFileSync(path: Double, data: String, options: WriteFileOptions): Unit
-    def writeFileSync(path: Double, data: ArrayBufferView): Unit
-    def writeFileSync(path: Double, data: ArrayBufferView, options: WriteFileOptions): Unit
-    def writeFileSync(path: PathLike, data: String): Unit
-    def writeFileSync(path: PathLike, data: String, options: WriteFileOptions): Unit
-    def writeFileSync(path: PathLike, data: ArrayBufferView): Unit
-    def writeFileSync(path: PathLike, data: ArrayBufferView, options: WriteFileOptions): Unit
+    def writeFileSync(file: PathOrFileDescriptor, data: String): Unit
+    def writeFileSync(file: PathOrFileDescriptor, data: String, options: WriteFileOptions): Unit
+    def writeFileSync(file: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView): Unit
+    def writeFileSync(file: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView, options: WriteFileOptions): Unit
     @JSName("writeFileSync")
-    var writeFileSync_Original: FnCallPathDataOptions
+    var writeFileSync_Original: FnCallFileDataOptions
   }
   object FS {
     
@@ -86,7 +72,7 @@ object mod {
       readFile: TypeoffsReadFile,
       readFileSync: FnCall,
       writeFile: TypeoffsWriteFile,
-      writeFileSync: FnCallPathDataOptions
+      writeFileSync: FnCallFileDataOptions
     ): FS = {
       val __obj = js.Dynamic.literal(readFile = readFile.asInstanceOf[js.Any], readFileSync = readFileSync.asInstanceOf[js.Any], writeFile = writeFile.asInstanceOf[js.Any], writeFileSync = writeFileSync.asInstanceOf[js.Any])
       __obj.asInstanceOf[FS]
@@ -100,7 +86,7 @@ object mod {
       
       inline def setWriteFile(value: TypeoffsWriteFile): Self = StObject.set(x, "writeFile", value.asInstanceOf[js.Any])
       
-      inline def setWriteFileSync(value: FnCallPathDataOptions): Self = StObject.set(x, "writeFileSync", value.asInstanceOf[js.Any])
+      inline def setWriteFileSync(value: FnCallFileDataOptions): Self = StObject.set(x, "writeFileSync", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,7 +96,14 @@ object mod {
   
   type Path = PathLike | Url
   
-  type ReadCallback = js.Function2[/* err */ ErrnoException | Null, /* data */ js.Any, Unit]
+  type ReadCallback = js.Function2[
+    /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+    /* data */ Any, 
+    Unit
+  ]
   
-  type WriteCallback = js.Function1[/* err */ ErrnoException, Unit]
+  type WriteCallback = js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
+    Unit
+  ]
 }

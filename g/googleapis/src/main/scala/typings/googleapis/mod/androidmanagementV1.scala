@@ -9,25 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object androidmanagementV1 {
   
-  /**
-    * Android Management API
-    *
-    * The Android Management API provides remote enterprise management of Android
-    * devices and apps.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const androidmanagement = google.androidmanagement('v1');
-    *
-    * @namespace androidmanagement
-    * @type {Function}
-    * @version v1
-    * @variation v1
-    * @param {object=} options Options for Androidmanagement
-    */
   @JSImport("googleapis", "androidmanagement_v1.Androidmanagement")
   @js.native
-  class Androidmanagement protected ()
+  open class Androidmanagement protected ()
     extends typings.googleapis.androidmanagementV1Mod.androidmanagementV1.Androidmanagement {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -35,63 +19,63 @@ object androidmanagementV1 {
   
   @JSImport("googleapis", "androidmanagement_v1.Resource$Enterprises")
   @js.native
-  class ResourceEnterprises protected ()
+  open class ResourceEnterprises protected ()
     extends typings.googleapis.androidmanagementV1Mod.androidmanagementV1.ResourceEnterprises {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "androidmanagement_v1.Resource$Enterprises$Applications")
   @js.native
-  class ResourceEnterprisesApplications protected ()
+  open class ResourceEnterprisesApplications protected ()
     extends typings.googleapis.androidmanagementV1Mod.androidmanagementV1.ResourceEnterprisesApplications {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "androidmanagement_v1.Resource$Enterprises$Devices")
   @js.native
-  class ResourceEnterprisesDevices protected ()
+  open class ResourceEnterprisesDevices protected ()
     extends typings.googleapis.androidmanagementV1Mod.androidmanagementV1.ResourceEnterprisesDevices {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "androidmanagement_v1.Resource$Enterprises$Devices$Operations")
   @js.native
-  class ResourceEnterprisesDevicesOperations protected ()
+  open class ResourceEnterprisesDevicesOperations protected ()
     extends typings.googleapis.androidmanagementV1Mod.androidmanagementV1.ResourceEnterprisesDevicesOperations {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "androidmanagement_v1.Resource$Enterprises$Enrollmenttokens")
   @js.native
-  class ResourceEnterprisesEnrollmenttokens protected ()
+  open class ResourceEnterprisesEnrollmenttokens protected ()
     extends typings.googleapis.androidmanagementV1Mod.androidmanagementV1.ResourceEnterprisesEnrollmenttokens {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "androidmanagement_v1.Resource$Enterprises$Policies")
   @js.native
-  class ResourceEnterprisesPolicies protected ()
+  open class ResourceEnterprisesPolicies protected ()
     extends typings.googleapis.androidmanagementV1Mod.androidmanagementV1.ResourceEnterprisesPolicies {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "androidmanagement_v1.Resource$Enterprises$Webapps")
   @js.native
-  class ResourceEnterprisesWebapps protected ()
+  open class ResourceEnterprisesWebapps protected ()
     extends typings.googleapis.androidmanagementV1Mod.androidmanagementV1.ResourceEnterprisesWebapps {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "androidmanagement_v1.Resource$Enterprises$Webtokens")
   @js.native
-  class ResourceEnterprisesWebtokens protected ()
+  open class ResourceEnterprisesWebtokens protected ()
     extends typings.googleapis.androidmanagementV1Mod.androidmanagementV1.ResourceEnterprisesWebtokens {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "androidmanagement_v1.Resource$Signupurls")
   @js.native
-  class ResourceSignupurls protected ()
+  open class ResourceSignupurls protected ()
     extends typings.googleapis.androidmanagementV1Mod.androidmanagementV1.ResourceSignupurls {
     def this(context: APIRequestContext) = this()
   }

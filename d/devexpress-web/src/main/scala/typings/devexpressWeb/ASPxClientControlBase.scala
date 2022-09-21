@@ -18,12 +18,12 @@ trait ASPxClientControlBase extends StObject {
   /**
     * Returns an HTML element that is the root of the control's hierarchy.
     */
-  def GetMainElement(): js.Any
+  def GetMainElement(): Any
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
-  def GetParentControl(): js.Any
+  def GetParentControl(): Any
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -67,8 +67,8 @@ object ASPxClientControlBase {
   
   inline def apply(
     GetClientVisible: () => Boolean,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
     GetVisible: () => Boolean,
     InCallback: () => Boolean,
     Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
@@ -85,9 +85,9 @@ object ASPxClientControlBase {
     
     inline def setGetClientVisible(value: () => Boolean): Self = StObject.set(x, "GetClientVisible", js.Any.fromFunction0(value))
     
-    inline def setGetMainElement(value: () => js.Any): Self = StObject.set(x, "GetMainElement", js.Any.fromFunction0(value))
+    inline def setGetMainElement(value: () => Any): Self = StObject.set(x, "GetMainElement", js.Any.fromFunction0(value))
     
-    inline def setGetParentControl(value: () => js.Any): Self = StObject.set(x, "GetParentControl", js.Any.fromFunction0(value))
+    inline def setGetParentControl(value: () => Any): Self = StObject.set(x, "GetParentControl", js.Any.fromFunction0(value))
     
     inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
     

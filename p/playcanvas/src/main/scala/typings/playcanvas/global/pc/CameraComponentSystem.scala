@@ -5,14 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new CameraComponentSystem.
-  * @property cameras - Holds all the active camera components.
-  * @param app - The Application.
+  * Used to add and remove {@link CameraComponent}s from Entities. It also holds an array of all
+  * active cameras.
+  *
+  * @augments ComponentSystem
   */
 @JSGlobal("pc.CameraComponentSystem")
 @js.native
-class CameraComponentSystem protected ()
-  extends StObject
-     with typings.playcanvas.pc.CameraComponentSystem {
-  def this(app: typings.playcanvas.pc.Application) = this()
+open class CameraComponentSystem protected ()
+  extends typings.playcanvas.mod.CameraComponentSystem {
+  /**
+    * Create a new ComponentSystem instance.
+    *
+    * @param {AppBase} app - The application managing this system.
+    */
+  def this(app: typings.playcanvas.mod.AppBase) = this()
 }

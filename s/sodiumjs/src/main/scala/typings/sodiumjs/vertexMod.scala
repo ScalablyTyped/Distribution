@@ -47,25 +47,25 @@ object vertexMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/Vertex", "Source")
   @js.native
-  class Source protected () extends StObject {
+  open class Source protected () extends StObject {
     def this(origin: Vertex, register_ : js.Function0[js.Function0[Unit]]) = this()
     
     def deregister(target: Vertex): Unit = js.native
     
-    /* private */ var deregister_ : js.Any = js.native
+    /* private */ var deregister_ : Any = js.native
     
     var origin: Vertex = js.native
     
     def register(target: Vertex): Unit = js.native
     
-    /* private */ var register_ : js.Any = js.native
+    /* private */ var register_ : Any = js.native
     
-    /* private */ var registered: js.Any = js.native
+    /* private */ var registered: Any = js.native
   }
   
   @JSImport("sodiumjs/dist/typings/sodium/Vertex", "Vertex")
   @js.native
-  class Vertex protected () extends StObject {
+  open class Vertex protected () extends StObject {
     def this(name: String, rank: Double, sources: js.Array[Source]) = this()
     
     def addSource(src: Source): Unit = js.native
@@ -80,7 +80,7 @@ object vertexMod {
     
     var color: Color = js.native
     
-    /* private */ var decRefCount: js.Any = js.native
+    /* private */ var decRefCount: Any = js.native
     
     def decrement(referrer: Vertex): Unit = js.native
     
@@ -88,13 +88,13 @@ object vertexMod {
     
     def descr(): String = js.native
     
-    /* private */ var ensureBiggerThan: js.Any = js.native
+    /* private */ var ensureBiggerThan: Any = js.native
     
     def free(): Unit = js.native
     
     var id: Double = js.native
     
-    /* private */ var incRefCount: js.Any = js.native
+    /* private */ var incRefCount: Any = js.native
     
     def increment(referrer: Vertex): Boolean = js.native
     

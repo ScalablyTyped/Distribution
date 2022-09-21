@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Resources extends StObject {
   
+  var Conditions: js.UndefOr[ResourcesConditions] = js.undefined
+  
   var Description: js.UndefOr[String] = js.undefined
   
   var Outputs: js.UndefOr[typings.serverless.awsProviderMod.Outputs] = js.undefined
@@ -22,6 +24,10 @@ object Resources {
   }
   
   extension [Self <: Resources](x: Self) {
+    
+    inline def setConditions(value: ResourcesConditions): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
+    
+    inline def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

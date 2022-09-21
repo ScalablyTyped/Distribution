@@ -8,15 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The definition of the action for a notification message.
   *
-  * [Api set: Mailbox Preview]
+  * **Important**: In modern Outlook on the web, the `NotificationMessageAction` object is available in Compose mode only.
   *
   * @remarks
+  * [Api set: Mailbox 1.10]
   *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-  *
-  * @beta
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 trait NotificationMessageAction extends StObject {
   
@@ -37,13 +36,14 @@ trait NotificationMessageAction extends StObject {
   var commandId: String
   
   /**
-    * Any JSON data the button needs to pass on.
+    * Any JSON data the action button needs to pass on.
+    * This data can be retrieved by calling `item.getInitializationContextAsync`.
     */
-  var contextData: js.Any
+  var contextData: Any
 }
 object NotificationMessageAction {
   
-  inline def apply(actionText: String, actionType: String | ActionType, commandId: String, contextData: js.Any): NotificationMessageAction = {
+  inline def apply(actionText: String, actionType: String | ActionType, commandId: String, contextData: Any): NotificationMessageAction = {
     val __obj = js.Dynamic.literal(actionText = actionText.asInstanceOf[js.Any], actionType = actionType.asInstanceOf[js.Any], commandId = commandId.asInstanceOf[js.Any], contextData = contextData.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationMessageAction]
   }
@@ -56,6 +56,6 @@ object NotificationMessageAction {
     
     inline def setCommandId(value: String): Self = StObject.set(x, "commandId", value.asInstanceOf[js.Any])
     
-    inline def setContextData(value: js.Any): Self = StObject.set(x, "contextData", value.asInstanceOf[js.Any])
+    inline def setContextData(value: Any): Self = StObject.set(x, "contextData", value.asInstanceOf[js.Any])
   }
 }

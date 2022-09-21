@@ -28,7 +28,7 @@ trait AbstractEventObject extends StObject {
   def stopPropagation(): Unit
   
   /** indicates the element or core that first caused the event */
-  var target: js.Any
+  var target: Any
   
   /** Unix epoch time of event in milliseconds */
   var timeStamp: Double
@@ -47,7 +47,7 @@ object AbstractEventObject {
     preventDefault: () => Unit,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
-    target: js.Any,
+    target: Any,
     timeStamp: Double,
     `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt
   ): AbstractEventObject = {
@@ -74,7 +74,7 @@ object AbstractEventObject {
     
     inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     

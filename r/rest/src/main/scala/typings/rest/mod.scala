@@ -36,13 +36,13 @@ object mod {
     def wrap[T](interceptor: Interceptor[T], config: T): Client = js.native
   }
   
-  type Headers = StringDictionary[js.Any]
+  type Headers = StringDictionary[Any]
   
   type Interceptor[T] = js.Function2[/* parent */ js.UndefOr[Client], /* config */ js.UndefOr[T], Client]
   
   trait Meta extends StObject {
     
-    var arguments: js.Any
+    var arguments: Any
     
     def client(path: String): ResponsePromise
     def client(request: Request): ResponsePromise
@@ -51,14 +51,14 @@ object mod {
   }
   object Meta {
     
-    inline def apply(arguments: js.Any, client: Client): Meta = {
+    inline def apply(arguments: Any, client: Client): Meta = {
       val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[Meta]
     }
     
     extension [Self <: Meta](x: Self) {
       
-      inline def setArguments(value: js.Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
       inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
@@ -70,17 +70,17 @@ object mod {
     
     var canceled: js.UndefOr[Boolean] = js.undefined
     
-    var entity: js.UndefOr[js.Any] = js.undefined
+    var entity: js.UndefOr[Any] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.undefined
+    var headers: js.UndefOr[Any] = js.undefined
     
     var method: js.UndefOr[String] = js.undefined
     
-    var mixin: js.UndefOr[js.Any] = js.undefined
+    var mixin: js.UndefOr[Any] = js.undefined
     
     var originator: js.UndefOr[js.Function1[/* request */ js.UndefOr[this.type], ResponsePromise]] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
     var path: js.UndefOr[String] = js.undefined
   }
@@ -101,11 +101,11 @@ object mod {
       
       inline def setCanceledUndefined: Self = StObject.set(x, "canceled", js.undefined)
       
-      inline def setEntity(value: js.Any): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: Any): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
       inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -113,7 +113,7 @@ object mod {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setMixin(value: js.Any): Self = StObject.set(x, "mixin", value.asInstanceOf[js.Any])
+      inline def setMixin(value: Any): Self = StObject.set(x, "mixin", value.asInstanceOf[js.Any])
       
       inline def setMixinUndefined: Self = StObject.set(x, "mixin", js.undefined)
       
@@ -121,7 +121,7 @@ object mod {
       
       inline def setOriginatorUndefined: Self = StObject.set(x, "originator", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -133,11 +133,11 @@ object mod {
   
   trait Response extends StObject {
     
-    var entity: js.Any
+    var entity: Any
     
     var headers: Headers
     
-    var raw: js.Any
+    var raw: Any
     
     var request: Request
     
@@ -145,18 +145,18 @@ object mod {
   }
   object Response {
     
-    inline def apply(entity: js.Any, headers: Headers, raw: js.Any, request: Request, status: Status): Response = {
+    inline def apply(entity: Any, headers: Headers, raw: Any, request: Request, status: Status): Response = {
       val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
     extension [Self <: Response](x: Self) {
       
-      inline def setEntity(value: js.Any): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: Any): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
       inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
@@ -169,9 +169,9 @@ object mod {
     extends StObject
        with Promise[Response] {
     
-    def entity(): Promise[js.Any] = js.native
+    def entity(): Promise[Any] = js.native
     
-    def header(headerName: String): Promise[js.Any] = js.native
+    def header(headerName: String): Promise[Any] = js.native
     
     def headers(): Promise[Headers] = js.native
     

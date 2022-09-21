@@ -37,12 +37,12 @@ trait ExportImageRequest extends StObject {
   var RoleName: js.UndefOr[String] = js.undefined
   
   /**
-    * Information about the destination Amazon S3 bucket. The bucket must exist and grant WRITE and READ_ACP permissions to the AWS account vm-import-export@amazon.com.
+    * The Amazon S3 bucket for the destination image. The destination bucket must exist.
     */
   var S3ExportLocation: ExportTaskS3LocationRequest
   
   /**
-    * The tags to apply to the image being exported.
+    * The tags to apply to the export image task during creation.
     */
   var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
 }
@@ -81,6 +81,6 @@ object ExportImageRequest {
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
   }
 }

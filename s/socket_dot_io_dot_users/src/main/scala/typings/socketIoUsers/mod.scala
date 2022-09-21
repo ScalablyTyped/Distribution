@@ -5,6 +5,7 @@ import typings.express.mod.Application_
 import typings.expressSession.mod.SessionOptions
 import typings.node.eventsMod.EventEmitter
 import typings.socketIo.mod.Socket
+import typings.socketIo.typedEventsMod.DefaultEventsMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,12 +23,26 @@ object mod {
   
   @JSImport("socket.io.users", "Middleware")
   @js.native
-  def Middleware: js.Function0[js.Function2[/* socket */ Socket, /* next */ js.Function0[js.Any], Unit]] = js.native
-  inline def Middleware_=(x: js.Function0[js.Function2[/* socket */ Socket, /* next */ js.Function0[js.Any], Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Middleware")(x.asInstanceOf[js.Any])
+  def Middleware: js.Function0[
+    js.Function2[
+      /* socket */ Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any], 
+      /* next */ js.Function0[Any], 
+      Unit
+    ]
+  ] = js.native
+  inline def Middleware_=(
+    x: js.Function0[
+      js.Function2[
+        /* socket */ Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any], 
+        /* next */ js.Function0[Any], 
+        Unit
+      ]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Middleware")(x.asInstanceOf[js.Any])
   
   @JSImport("socket.io.users", "Namespaces")
   @js.native
-  class Namespaces () extends StObject
+  open class Namespaces () extends StObject
   object Namespaces {
     
     @JSImport("socket.io.users", "Namespaces")
@@ -43,8 +58,8 @@ object mod {
     /* static member */
     @JSImport("socket.io.users", "Namespaces.socketUsersList")
     @js.native
-    def socketUsersList: js.Any = js.native
-    inline def socketUsersList_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("socketUsersList")(x.asInstanceOf[js.Any])
+    def socketUsersList: Any = js.native
+    inline def socketUsersList_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("socketUsersList")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("socket.io.users", "Session")
@@ -54,20 +69,20 @@ object mod {
   
   @JSImport("socket.io.users", "User")
   @js.native
-  class User () extends StObject {
+  open class User () extends StObject {
     
-    def attach(socket: Socket): Unit = js.native
+    def attach(socket: Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any]): Unit = js.native
     
     /** same as in, checks if this user is inside a room */
     def belong(room: String): Boolean = js.native
     
     def detach(): Unit = js.native
     
-    def detachSocket(socket: Socket): Unit = js.native
+    def detachSocket(socket: Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any]): Unit = js.native
     
-    def emit(args: js.Any*): Unit = js.native
+    def emit(args: Any*): Unit = js.native
     
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     
     var id: String | Double = js.native
     
@@ -86,32 +101,32 @@ object mod {
     
     var rooms: js.Array[String] = js.native
     
-    def set(key: String, value: js.Any): Unit = js.native
-    def set(key: String, value: js.Any, callback: js.Function0[Unit]): Unit = js.native
+    def set(key: String, value: Any): Unit = js.native
+    def set(key: String, value: Any, callback: js.Function0[Unit]): Unit = js.native
     
-    var socket: Socket = js.native
+    var socket: Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any] = js.native
     
-    var sockets: js.Array[Socket] = js.native
+    var sockets: js.Array[Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any]] = js.native
     
-    var store: js.Any = js.native
+    var store: Any = js.native
     
-    def to(room: String): Socket = js.native
+    def to(room: String): Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any] = js.native
   }
   
   @JSImport("socket.io.users", "Users")
   @js.native
-  class Users () extends EventEmitter {
+  open class Users () extends EventEmitter {
     def this(namespace: String) = this()
     
-    def add(socket: Socket): User = js.native
+    def add(socket: Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any]): User = js.native
     
-    def create(socket: Socket): User = js.native
+    def create(socket: Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any]): User = js.native
     
-    def emitAll(args: js.Any*): Unit = js.native
+    def emitAll(args: Any*): Unit = js.native
     
     def from(room: String): js.Array[User] = js.native
     
-    def get(socket: Socket): User = js.native
+    def get(socket: Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any]): User = js.native
     
     def getById(id: String): User = js.native
     def getById(id: Double): User = js.native
@@ -134,7 +149,7 @@ object mod {
     
     def size(): Double = js.native
     
-    def takeId(request: js.Any): String | Double = js.native
+    def takeId(request: Any): String | Double = js.native
     
     def update(user: User): Unit = js.native
     

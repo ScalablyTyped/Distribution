@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Time window specified for weekly operations.
-  */
 trait SchemaResourcePolicyWeeklyCycle extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaResourcePolicyWeeklyCycle {
     
     inline def setDayOfWeeksUndefined: Self = StObject.set(x, "dayOfWeeks", js.undefined)
     
-    inline def setDayOfWeeksVarargs(value: SchemaResourcePolicyWeeklyCycleDayOfWeek*): Self = StObject.set(x, "dayOfWeeks", js.Array(value :_*))
+    inline def setDayOfWeeksVarargs(value: SchemaResourcePolicyWeeklyCycleDayOfWeek*): Self = StObject.set(x, "dayOfWeeks", js.Array(value*))
   }
 }

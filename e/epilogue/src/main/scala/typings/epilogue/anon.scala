@@ -8,18 +8,18 @@ object anon {
   
   trait Model extends StObject {
     
-    var model: js.Any
+    var model: Any
   }
   object Model {
     
-    inline def apply(model: js.Any): Model = {
+    inline def apply(model: Any): Model = {
       val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
       __obj.asInstanceOf[Model]
     }
     
     extension [Self <: Model](x: Self) {
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     }
   }
   

@@ -9,9 +9,9 @@ object mergeOptionsMod {
   
   @JSImport("nodegit/merge-options", "MergeOptions")
   @js.native
-  class MergeOptions ()
+  open class MergeOptions ()
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var defaultDriver: js.UndefOr[String] = js.native
     

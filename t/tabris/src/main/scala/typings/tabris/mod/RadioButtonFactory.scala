@@ -10,5 +10,5 @@ trait RadioButtonFactory
   extends Factory[
       RadioButtonConstructor, 
       InstanceType[RadioButtonConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[RadioButtonConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

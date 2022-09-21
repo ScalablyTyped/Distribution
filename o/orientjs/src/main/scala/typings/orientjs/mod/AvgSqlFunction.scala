@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("orientjs", "AvgSqlFunction")
 @js.native
-class AvgSqlFunction protected () extends StObject {
+open class AvgSqlFunction protected () extends StObject {
   def this(field: String) = this()
 }

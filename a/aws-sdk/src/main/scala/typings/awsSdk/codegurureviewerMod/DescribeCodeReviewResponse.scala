@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeCodeReviewResponse extends StObject {
   
   /**
-    *  Information about the code review. 
+    * Information about the code review.
     */
   var CodeReview: js.UndefOr[typings.awsSdk.codegurureviewerMod.CodeReview] = js.undefined
 }

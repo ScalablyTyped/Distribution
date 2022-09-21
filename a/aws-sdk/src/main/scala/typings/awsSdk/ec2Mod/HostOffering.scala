@@ -29,7 +29,7 @@ trait HostOffering extends StObject {
   /**
     * The ID of the offering.
     */
-  var OfferingId: js.UndefOr[String] = js.undefined
+  var OfferingId: js.UndefOr[typings.awsSdk.ec2Mod.OfferingId] = js.undefined
   
   /**
     * The available payment option.
@@ -66,7 +66,7 @@ object HostOffering {
     
     inline def setInstanceFamilyUndefined: Self = StObject.set(x, "InstanceFamily", js.undefined)
     
-    inline def setOfferingId(value: String): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
+    inline def setOfferingId(value: OfferingId): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
     
     inline def setOfferingIdUndefined: Self = StObject.set(x, "OfferingId", js.undefined)
     

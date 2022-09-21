@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Query.QueryByAttribute")
 @js.native
-class QueryByAttribute protected () extends QueryBase {
+open class QueryByAttribute protected () extends QueryBase {
   /**
     * Initializes a new instance of the QueryByAttribute class setting the entity name.
     * @param entityName The logical name of the entity.

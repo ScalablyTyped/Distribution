@@ -17,7 +17,7 @@ trait At extends StObject {
     */
   var _at: js.UndefOr[String] = js.undefined
   
-  /** The maximum number of search results on a page. Default value is 100. Maximum value is 1,000. */
+  /** The maximum number of search results on a page. If not specified, 100 is used. May not be larger than 1000. */
   var _count: js.UndefOr[Double] = js.undefined
   
   /**

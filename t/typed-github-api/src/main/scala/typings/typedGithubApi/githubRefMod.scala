@@ -10,7 +10,7 @@ object githubRefMod {
   
   @JSImport("typed-github-api/dist/github-ref", "GitHubRef")
   @js.native
-  class GitHubRef protected ()
+  open class GitHubRef protected ()
     extends StObject
        with OptionsOrRef {
     /* protected */ def this(options: OptionsOrRef) = this()

@@ -10,15 +10,12 @@ A module which will endeavor to guess your terminal's level of color support.
 | ------------------ | :-------------: |
 | Full name          | color-support |
 | Keywords           | terminal, color, support, xterm, truecolor, 256 |
-| # releases         | 0 |
-| # dependents       | 82 |
-| # downloads        | 107885126 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.5542402333333336E7 |
+| # stars            | 22.0 |
 
 ## Links
-- [Homepage](https://github.com/isaacs/color-support#readme)
-- [Bugs](https://github.com/isaacs/color-support/issues)
-- [Repository](https://github.com/isaacs/color-support)
 - [Npm](https://www.npmjs.com/package/color-support)
     
 

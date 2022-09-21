@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.EventEmitter")
 @js.native
-class EventEmitter ()
+open class EventEmitter ()
   extends typings.p2.mod.EventEmitter

@@ -22,6 +22,6 @@ object GoogleCloudDialogflowV2beta1KnowledgeAnswers {
     
     inline def setAnswersUndefined: Self = StObject.set(x, "answers", js.undefined)
     
-    inline def setAnswersVarargs(value: GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer*): Self = StObject.set(x, "answers", js.Array(value :_*))
+    inline def setAnswersVarargs(value: GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer*): Self = StObject.set(x, "answers", js.Array(value*))
   }
 }

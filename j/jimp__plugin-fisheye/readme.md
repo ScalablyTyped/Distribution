@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-fisheye
 
-Typings are for version 0.16.1
+Typings are for version 0.16.2
 
 ## Library description:
 Apply a fisheye effect to an image.
@@ -10,10 +10,10 @@ Apply a fisheye effect to an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-fisheye |
 | Keywords           | - |
-| # releases         | 102 |
-| # dependents       | 1 |
-| # downloads        | 21689884 |
-| # stars            | 0 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 4390765.666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40jimp%2Fplugin-fisheye)

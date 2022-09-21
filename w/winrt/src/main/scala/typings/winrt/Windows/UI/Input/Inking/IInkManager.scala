@@ -20,7 +20,7 @@ trait IInkManager
   
   def processPointerUp(pointerPoint: PointerPoint): Rect = js.native
   
-  def processPointerUpdate(pointerPoint: PointerPoint): js.Any = js.native
+  def processPointerUpdate(pointerPoint: PointerPoint): Any = js.native
   
   def recognizeAsync(recognitionTarget: InkRecognitionTarget): IAsyncOperation[IVectorView[InkRecognitionResult]] = js.native
   

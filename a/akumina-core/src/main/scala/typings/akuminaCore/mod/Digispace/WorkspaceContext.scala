@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("akumina-core", "Digispace.WorkspaceContext")
 @js.native
-class WorkspaceContext () extends StObject
+open class WorkspaceContext () extends StObject
 object WorkspaceContext {
   
   @JSImport("akumina-core", "Digispace.WorkspaceContext")

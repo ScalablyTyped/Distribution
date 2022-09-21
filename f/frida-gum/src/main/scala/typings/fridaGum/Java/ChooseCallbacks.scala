@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChooseCallbacks extends StObject {
+trait ChooseCallbacks[T /* <: Members[T] */] extends StObject {
   
   /**
     * Called when all instances have been enumerated.
@@ -19,19 +19,19 @@ trait ChooseCallbacks extends StObject {
     *
     * May return `EnumerateAction.Stop` to stop the enumeration early.
     */
-  def onMatch(instance: typings.fridaGum.anon.Wrapper): Unit | EnumerateAction
+  def onMatch(instance: Wrapper[T]): Unit | EnumerateAction
 }
 object ChooseCallbacks {
   
-  inline def apply(onComplete: () => Unit, onMatch: typings.fridaGum.anon.Wrapper => Unit | EnumerateAction): ChooseCallbacks = {
+  inline def apply[T /* <: Members[T] */](onComplete: () => Unit, onMatch: Wrapper[T] => Unit | EnumerateAction): ChooseCallbacks[T] = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onMatch = js.Any.fromFunction1(onMatch))
-    __obj.asInstanceOf[ChooseCallbacks]
+    __obj.asInstanceOf[ChooseCallbacks[T]]
   }
   
-  extension [Self <: ChooseCallbacks](x: Self) {
+  extension [Self <: ChooseCallbacks[?], T /* <: Members[T] */](x: Self & ChooseCallbacks[T]) {
     
     inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
     
-    inline def setOnMatch(value: typings.fridaGum.anon.Wrapper => Unit | EnumerateAction): Self = StObject.set(x, "onMatch", js.Any.fromFunction1(value))
+    inline def setOnMatch(value: Wrapper[T] => Unit | EnumerateAction): Self = StObject.set(x, "onMatch", js.Any.fromFunction1(value))
   }
 }

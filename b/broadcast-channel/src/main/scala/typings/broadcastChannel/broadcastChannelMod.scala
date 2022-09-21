@@ -1,9 +1,10 @@
 package typings.broadcastChannel
 
 import typings.broadcastChannel.anon.FallbackInterval
-import typings.broadcastChannel.anon.Ttl
+import typings.broadcastChannel.anon.MaxParallelWrites
 import typings.broadcastChannel.broadcastChannelBooleans.`false`
 import typings.std.MessageEvent
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,14 +17,18 @@ object broadcastChannelMod {
   
   @JSImport("broadcast-channel/types/broadcast-channel", "BroadcastChannel")
   @js.native
-  class BroadcastChannel[T] protected () extends StObject {
+  open class BroadcastChannel[T] protected () extends StObject {
     def this(name: String) = this()
     def this(name: String, opts: BroadcastChannelOptions) = this()
     
     // not defined in the offical standard
-    def addEventListener(`type`: EventType, handler: OnMessageHandler[T]): Unit = js.native
+    def addEventListener(`type`: EventContext, handler: OnMessageHandler[T]): Unit = js.native
     
     def close(): js.Promise[Unit] = js.native
+    
+    val id: Double = js.native
+    
+    val isClosed: Boolean = js.native
     
     val name: String = js.native
     
@@ -33,10 +38,14 @@ object broadcastChannelMod {
     
     def postMessage(msg: T): js.Promise[Unit] = js.native
     
-    def removeEventListener(`type`: EventType, handler: OnMessageHandler[T]): Unit = js.native
+    def removeEventListener(`type`: EventContext, handler: OnMessageHandler[T]): Unit = js.native
     
     val `type`: MethodType = js.native
   }
+  
+  @JSImport("broadcast-channel/types/broadcast-channel", "OPEN_BROADCAST_CHANNELS")
+  @js.native
+  val OPEN_BROADCAST_CHANNELS: Set[BroadcastChannel[Any]] = js.native
   
   inline def clearNodeFolder(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearNodeFolder")().asInstanceOf[js.Promise[Boolean]]
   inline def clearNodeFolder(opts: BroadcastChannelOptions): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearNodeFolder")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
@@ -48,22 +57,22 @@ object broadcastChannelMod {
   
   trait BroadcastChannelEventMap extends StObject {
     
-    var message: MessageEvent[js.Any]
+    var message: MessageEvent[Any]
     
-    var messageerror: MessageEvent[js.Any]
+    var messageerror: MessageEvent[Any]
   }
   object BroadcastChannelEventMap {
     
-    inline def apply(message: MessageEvent[js.Any], messageerror: MessageEvent[js.Any]): BroadcastChannelEventMap = {
+    inline def apply(message: MessageEvent[Any], messageerror: MessageEvent[Any]): BroadcastChannelEventMap = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], messageerror = messageerror.asInstanceOf[js.Any])
       __obj.asInstanceOf[BroadcastChannelEventMap]
     }
     
     extension [Self <: BroadcastChannelEventMap](x: Self) {
       
-      inline def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: MessageEvent[Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      inline def setMessageerror(value: MessageEvent[js.Any]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
+      inline def setMessageerror(value: MessageEvent[Any]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,7 +82,7 @@ object broadcastChannelMod {
     
     var methods: js.UndefOr[js.Array[BroadcastMethod[js.Object]] | BroadcastMethod[js.Object]] = js.undefined
     
-    var node: js.UndefOr[Ttl] = js.undefined
+    var node: js.UndefOr[MaxParallelWrites] = js.undefined
     
     var prepareDelay: js.UndefOr[Double] = js.undefined
     
@@ -98,9 +107,9 @@ object broadcastChannelMod {
       
       inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      inline def setMethodsVarargs(value: BroadcastMethod[js.Object]*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: BroadcastMethod[js.Object]*): Self = StObject.set(x, "methods", js.Array(value*))
       
-      inline def setNode(value: Ttl): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: MaxParallelWrites): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       
@@ -130,9 +139,9 @@ object broadcastChannelMod {
     
     def microSeconds(): Double
     
-    def onMessage(channelState: State, callback: js.Function1[/* args */ js.Any, Unit]): Unit
+    def onMessage(channelState: State, callback: js.Function1[/* args */ Any, Unit]): Unit
     
-    def postMessage(channelState: State, message: js.Any): js.Promise[js.Any]
+    def postMessage(channelState: State, message: Any): js.Promise[Any]
     
     var `type`: String
   }
@@ -144,8 +153,8 @@ object broadcastChannelMod {
       close: State => Unit,
       create: (String, BroadcastChannelOptions) => js.Promise[State] | State,
       microSeconds: () => Double,
-      onMessage: (State, js.Function1[/* args */ js.Any, Unit]) => Unit,
-      postMessage: (State, js.Any) => js.Promise[js.Any],
+      onMessage: (State, js.Function1[/* args */ Any, Unit]) => Unit,
+      postMessage: (State, Any) => js.Promise[Any],
       `type`: String
     ): BroadcastMethod[State] = {
       val __obj = js.Dynamic.literal(averageResponseTime = js.Any.fromFunction0(averageResponseTime), canBeUsed = js.Any.fromFunction0(canBeUsed), close = js.Any.fromFunction1(close), create = js.Any.fromFunction2(create), microSeconds = js.Any.fromFunction0(microSeconds), onMessage = js.Any.fromFunction2(onMessage), postMessage = js.Any.fromFunction2(postMessage))
@@ -165,9 +174,9 @@ object broadcastChannelMod {
       
       inline def setMicroSeconds(value: () => Double): Self = StObject.set(x, "microSeconds", js.Any.fromFunction0(value))
       
-      inline def setOnMessage(value: (State, js.Function1[/* args */ js.Any, Unit]) => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction2(value))
+      inline def setOnMessage(value: (State, js.Function1[/* args */ Any, Unit]) => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction2(value))
       
-      inline def setPostMessage(value: (State, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "postMessage", js.Any.fromFunction2(value))
+      inline def setPostMessage(value: (State, Any) => js.Promise[Any]): Self = StObject.set(x, "postMessage", js.Any.fromFunction2(value))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -176,11 +185,14 @@ object broadcastChannelMod {
   /* Rewritten from type alias, can be one of: 
     - typings.broadcastChannel.broadcastChannelStrings.message
     - typings.broadcastChannel.broadcastChannelStrings.internal
+    - typings.broadcastChannel.broadcastChannelStrings.leader
   */
-  trait EventType extends StObject
-  object EventType {
+  trait EventContext extends StObject
+  object EventContext {
     
     inline def internal: typings.broadcastChannel.broadcastChannelStrings.internal = "internal".asInstanceOf[typings.broadcastChannel.broadcastChannelStrings.internal]
+    
+    inline def leader: typings.broadcastChannel.broadcastChannelStrings.leader = "leader".asInstanceOf[typings.broadcastChannel.broadcastChannelStrings.leader]
     
     inline def message: typings.broadcastChannel.broadcastChannelStrings.message = "message".asInstanceOf[typings.broadcastChannel.broadcastChannelStrings.message]
   }
@@ -206,5 +218,5 @@ object broadcastChannelMod {
     inline def simulate: typings.broadcastChannel.broadcastChannelStrings.simulate = "simulate".asInstanceOf[typings.broadcastChannel.broadcastChannelStrings.simulate]
   }
   
-  type OnMessageHandler[T] = (js.ThisFunction1[/* this */ BroadcastChannel[js.Any], /* ev */ T, js.Any]) | Null
+  type OnMessageHandler[T] = (js.ThisFunction1[/* this */ BroadcastChannel[Any], /* ev */ T, Any]) | Null
 }

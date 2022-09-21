@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetDeploymentRequest extends StObject {
   
   /**
-    * [Required] The identifier of the Deployment resource to get information about.
+    * The identifier of the Deployment resource to get information about.
     */
   var deploymentId: String
   
@@ -17,7 +17,7 @@ trait GetDeploymentRequest extends StObject {
   var embed: js.UndefOr[ListOfString] = js.undefined
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }
@@ -36,7 +36,7 @@ object GetDeploymentRequest {
     
     inline def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
     
-    inline def setEmbedVarargs(value: String*): Self = StObject.set(x, "embed", js.Array(value :_*))
+    inline def setEmbedVarargs(value: String*): Self = StObject.set(x, "embed", js.Array(value*))
     
     inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }

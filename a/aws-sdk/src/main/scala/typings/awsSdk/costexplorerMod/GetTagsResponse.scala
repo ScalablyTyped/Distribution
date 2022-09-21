@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetTagsResponse extends StObject {
   
   /**
-    * The token for the next set of retrievable results. AWS provides the token when the response from a previous call has more results than the maximum page size.
+    * The token for the next set of retrievable results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size.
     */
   var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
   
   /**
-    * The number of query results that AWS returns at a time.
+    * The number of query results that Amazon Web Services returns at a time.
     */
   var ReturnSize: PageSize
   
@@ -43,7 +43,7 @@ object GetTagsResponse {
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: Entity*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Entity*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTotalSize(value: PageSize): Self = StObject.set(x, "TotalSize", value.asInstanceOf[js.Any])
   }

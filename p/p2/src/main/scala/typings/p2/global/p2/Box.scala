@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.Box")
 @js.native
-class Box ()
+open class Box ()
   extends typings.p2.mod.Box {
   def this(options: BoxOptions) = this()
 }

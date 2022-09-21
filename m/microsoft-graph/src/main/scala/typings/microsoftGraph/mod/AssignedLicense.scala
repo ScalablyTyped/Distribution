@@ -25,7 +25,7 @@ object AssignedLicense {
     
     inline def setDisabledPlansUndefined: Self = StObject.set(x, "disabledPlans", js.undefined)
     
-    inline def setDisabledPlansVarargs(value: String*): Self = StObject.set(x, "disabledPlans", js.Array(value :_*))
+    inline def setDisabledPlansVarargs(value: String*): Self = StObject.set(x, "disabledPlans", js.Array(value*))
     
     inline def setSkuId(value: NullableOption[String]): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
     

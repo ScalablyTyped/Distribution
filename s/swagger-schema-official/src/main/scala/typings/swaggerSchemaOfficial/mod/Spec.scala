@@ -54,7 +54,7 @@ object Spec {
     
     inline def setConsumesUndefined: Self = StObject.set(x, "consumes", js.undefined)
     
-    inline def setConsumesVarargs(value: String*): Self = StObject.set(x, "consumes", js.Array(value :_*))
+    inline def setConsumesVarargs(value: String*): Self = StObject.set(x, "consumes", js.Array(value*))
     
     inline def setDefinitions(value: StringDictionary[Schema]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     
@@ -80,7 +80,7 @@ object Spec {
     
     inline def setProducesUndefined: Self = StObject.set(x, "produces", js.undefined)
     
-    inline def setProducesVarargs(value: String*): Self = StObject.set(x, "produces", js.Array(value :_*))
+    inline def setProducesVarargs(value: String*): Self = StObject.set(x, "produces", js.Array(value*))
     
     inline def setResponses(value: StringDictionary[Response]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
@@ -90,7 +90,7 @@ object Spec {
     
     inline def setSchemesUndefined: Self = StObject.set(x, "schemes", js.undefined)
     
-    inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
+    inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value*))
     
     inline def setSecurity(value: js.Array[StringDictionary[js.Array[String]]]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     
@@ -100,7 +100,7 @@ object Spec {
     
     inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
     
-    inline def setSecurityVarargs(value: StringDictionary[js.Array[String]]*): Self = StObject.set(x, "security", js.Array(value :_*))
+    inline def setSecurityVarargs(value: StringDictionary[js.Array[String]]*): Self = StObject.set(x, "security", js.Array(value*))
     
     inline def setSwagger(value: String): Self = StObject.set(x, "swagger", value.asInstanceOf[js.Any])
     
@@ -108,6 +108,6 @@ object Spec {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

@@ -16,10 +16,16 @@ object pricingMod {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Pricing {
     def this(options: ClientConfiguration) = this()
+    
+    /**
+      * The code for the Amazon Web Services service.
+      */
+    /* CompleteClass */
+    var ServiceCode: String = js.native
   }
   
   type AttributeNameList = js.Array[String]
@@ -136,7 +142,7 @@ object pricingMod {
     var FormatVersion: js.UndefOr[String] = js.undefined
     
     /**
-      * The pagination token for the next set of retreivable results.
+      * The pagination token for the next set of retrievable results.
       */
     var NextToken: js.UndefOr[String] = js.undefined
     
@@ -166,7 +172,7 @@ object pricingMod {
       
       inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
       
-      inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "Services", js.Array(value :_*))
+      inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "Services", js.Array(value*))
     }
   }
   
@@ -278,7 +284,7 @@ object pricingMod {
       
       inline def setAttributeValuesUndefined: Self = StObject.set(x, "AttributeValues", js.undefined)
       
-      inline def setAttributeValuesVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValues", js.Array(value :_*))
+      inline def setAttributeValuesVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValues", js.Array(value*))
       
       inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
@@ -311,12 +317,12 @@ object pricingMod {
     /**
       * The code for the service whose products you want to retrieve. 
       */
-    var ServiceCode: js.UndefOr[String] = js.undefined
+    var ServiceCode: String
   }
   object GetProductsRequest {
     
-    inline def apply(): GetProductsRequest = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(ServiceCode: String): GetProductsRequest = {
+      val __obj = js.Dynamic.literal(ServiceCode = ServiceCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetProductsRequest]
     }
     
@@ -326,7 +332,7 @@ object pricingMod {
       
       inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
       
-      inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
       
       inline def setFormatVersion(value: String): Self = StObject.set(x, "FormatVersion", value.asInstanceOf[js.Any])
       
@@ -341,8 +347,6 @@ object pricingMod {
       inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
       inline def setServiceCode(value: String): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
-      
-      inline def setServiceCodeUndefined: Self = StObject.set(x, "ServiceCode", js.undefined)
     }
   }
   
@@ -361,7 +365,7 @@ object pricingMod {
     /**
       * The list of products that match your filters. The list contains both the product metadata and the price information.
       */
-    var PriceList: js.UndefOr[typings.awsSdk.pricingMod.PriceList] = js.undefined
+    var PriceList: js.UndefOr[PriceListJsonItems] = js.undefined
   }
   object GetProductsResponse {
     
@@ -380,17 +384,17 @@ object pricingMod {
       
       inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      inline def setPriceList(value: PriceList): Self = StObject.set(x, "PriceList", value.asInstanceOf[js.Any])
+      inline def setPriceList(value: PriceListJsonItems): Self = StObject.set(x, "PriceList", value.asInstanceOf[js.Any])
       
       inline def setPriceListUndefined: Self = StObject.set(x, "PriceList", js.undefined)
       
-      inline def setPriceListVarargs(value: PriceListItemJSON*): Self = StObject.set(x, "PriceList", js.Array(value :_*))
+      inline def setPriceListVarargs(value: PriceListJsonItem*): Self = StObject.set(x, "PriceList", js.Array(value*))
     }
   }
   
-  type PriceList = js.Array[PriceListItemJSON]
+  type PriceListJsonItem = java.lang.String
   
-  type PriceListItemJSON = java.lang.String
+  type PriceListJsonItems = js.Array[PriceListJsonItem]
   
   @js.native
   trait Pricing
@@ -414,12 +418,12 @@ object pricingMod {
     ): Request[DescribeServicesResponse, AWSError] = js.native
     
     /**
-      * Returns a list of attribute values. Attibutes are similar to the details in a Price List API offer file. For a list of available attributes, see Offer File Definitions in the AWS Billing and Cost Management User Guide.
+      * Returns a list of attribute values. Attributes are similar to the details in a Price List API offer file. For a list of available attributes, see Offer File Definitions in the Billing and Cost Management User Guide.
       */
     def getAttributeValues(): Request[GetAttributeValuesResponse, AWSError] = js.native
     def getAttributeValues(callback: js.Function2[/* err */ AWSError, /* data */ GetAttributeValuesResponse, Unit]): Request[GetAttributeValuesResponse, AWSError] = js.native
     /**
-      * Returns a list of attribute values. Attibutes are similar to the details in a Price List API offer file. For a list of available attributes, see Offer File Definitions in the AWS Billing and Cost Management User Guide.
+      * Returns a list of attribute values. Attributes are similar to the details in a Price List API offer file. For a list of available attributes, see Offer File Definitions in the Billing and Cost Management User Guide.
       */
     def getAttributeValues(params: GetAttributeValuesRequest): Request[GetAttributeValuesResponse, AWSError] = js.native
     def getAttributeValues(
@@ -450,14 +454,14 @@ object pricingMod {
     var AttributeNames: js.UndefOr[AttributeNameList] = js.undefined
     
     /**
-      * The code for the AWS service.
+      * The code for the Amazon Web Services service.
       */
-    var ServiceCode: js.UndefOr[String] = js.undefined
+    var ServiceCode: String
   }
   object Service {
     
-    inline def apply(): Service = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(ServiceCode: String): Service = {
+      val __obj = js.Dynamic.literal(ServiceCode = ServiceCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Service]
     }
     
@@ -467,11 +471,9 @@ object pricingMod {
       
       inline def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
       
-      inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
+      inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "AttributeNames", js.Array(value*))
       
       inline def setServiceCode(value: String): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
-      
-      inline def setServiceCodeUndefined: Self = StObject.set(x, "ServiceCode", js.undefined)
     }
   }
   

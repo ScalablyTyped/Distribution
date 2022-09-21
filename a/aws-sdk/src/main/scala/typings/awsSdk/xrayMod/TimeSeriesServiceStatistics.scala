@@ -23,7 +23,7 @@ trait TimeSeriesServiceStatistics extends StObject {
   /**
     * Timestamp of the window for which statistics are aggregated.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.xrayMod.Timestamp] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
 }
 object TimeSeriesServiceStatistics {
   
@@ -42,7 +42,7 @@ object TimeSeriesServiceStatistics {
     
     inline def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
     
-    inline def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
+    inline def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value*))
     
     inline def setServiceForecastStatistics(value: ForecastStatistics): Self = StObject.set(x, "ServiceForecastStatistics", value.asInstanceOf[js.Any])
     
@@ -52,7 +52,7 @@ object TimeSeriesServiceStatistics {
     
     inline def setServiceSummaryStatisticsUndefined: Self = StObject.set(x, "ServiceSummaryStatistics", js.undefined)
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }

@@ -3,7 +3,6 @@ package typings.npmRegistryPackageInfo
 import typings.npmRegistryPackageInfo.anon.Failure
 import typings.npmRegistryPackageInfo.npmRegistryPackageInfoStrings.http
 import typings.npmRegistryPackageInfo.npmRegistryPackageInfoStrings.https
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +17,24 @@ object mod {
   
   inline def factory(opts: Options, callback: Callback): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("factory")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  type Callback = js.Function2[/* error */ Error | Null, /* data */ Data, Unit]
+  type Callback = js.Function2[/* error */ js.Error | Null, /* data */ Data, Unit]
   
   trait Data extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var meta: Failure
   }
   object Data {
     
-    inline def apply(data: js.Any, meta: Failure): Data = {
+    inline def apply(data: Any, meta: Failure): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setMeta(value: Failure): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
@@ -73,7 +72,7 @@ object mod {
       
       inline def setPackages(value: js.Array[String]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
       
-      inline def setPackagesVarargs(value: String*): Self = StObject.set(x, "packages", js.Array(value :_*))
+      inline def setPackagesVarargs(value: String*): Self = StObject.set(x, "packages", js.Array(value*))
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       

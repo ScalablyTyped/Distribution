@@ -31,7 +31,7 @@ object reactiveVarMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("meteor/reactive-var", "ReactiveVar")
   @js.native
-  class ReactiveVarCls[T] protected ()
+  open class ReactiveVarCls[T] protected ()
     extends StObject
        with typings.meteorTypings.reactiveVarMod.ReactiveVar[T] {
     def this(initialValue: T) = this()

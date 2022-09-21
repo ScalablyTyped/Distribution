@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-virtualized", "ColumnSizer")
 @js.native
-class ColumnSizer protected ()
+open class ColumnSizer protected ()
   extends typings.reactVirtualized.esColumnSizerMod.ColumnSizer {
   def this(props: ColumnSizerProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ColumnSizerProps, context: js.Any) = this()
+  def this(props: ColumnSizerProps, context: Any) = this()
 }
 /* static members */
 object ColumnSizer {

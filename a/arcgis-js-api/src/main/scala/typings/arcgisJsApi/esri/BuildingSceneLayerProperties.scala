@@ -9,7 +9,8 @@ trait BuildingSceneLayerProperties
      with LayerProperties
      with SceneServiceProperties
      with PortalLayerProperties
-     with ScaleRangeLayerProperties {
+     with ScaleRangeLayerProperties
+     with APIKeyMixinProperties {
   
   /**
     * The id of the currently active filter.
@@ -34,6 +35,8 @@ trait BuildingSceneLayerProperties
   
   /**
     * An array of field names from the service to include with each feature in all sublayers.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#outFields)
     */
@@ -60,12 +63,12 @@ object BuildingSceneLayerProperties {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: BuildingFilterProperties*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: BuildingFilterProperties*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
     
     inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
-    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value*))
   }
 }

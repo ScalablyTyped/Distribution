@@ -22,6 +22,6 @@ object BulkEditSitesResponse {
     
     inline def setSitesUndefined: Self = StObject.set(x, "sites", js.undefined)
     
-    inline def setSitesVarargs(value: Site*): Self = StObject.set(x, "sites", js.Array(value :_*))
+    inline def setSitesVarargs(value: Site*): Self = StObject.set(x, "sites", js.Array(value*))
   }
 }

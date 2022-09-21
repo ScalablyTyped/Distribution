@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientListEditItem")
 @js.native
-class ASPxClientListEditItem ()
+open class ASPxClientListEditItem ()
   extends StObject
      with typings.devexpressWeb.ASPxClientListEditItem

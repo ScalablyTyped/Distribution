@@ -57,7 +57,7 @@ object XCoordinateSystem {
     getDimension: () => Double,
     getMaximumAxisIndexByDimension: Double => Double,
     getViewServiceName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setAxisByDimension: (Double, XAxis, Double) => Unit
   ): XCoordinateSystem = {

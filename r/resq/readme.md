@@ -1,7 +1,7 @@
 
 # Scala.js typings for resq
 
-Typings are for version 1.10.0
+Typings are for version 1.10.2
 
 ## Library description:
 React Element Selector Query (resq) - Query React components and children by selector (component name)
@@ -10,10 +10,10 @@ React Element Selector Query (resq) - Query React components and children by sel
 | ------------------ | :-------------: |
 | Full name          | resq |
 | Keywords           | react, selector, resq, rescue, queryselector, query |
-| # releases         | 37 |
-| # dependents       | 9 |
-| # downloads        | 14848413 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 3390935.6666666665 |
+| # stars            | 136.0 |
 
 ## Links
 - [Homepage](https://github.com/baruchvlz/resq#readme)

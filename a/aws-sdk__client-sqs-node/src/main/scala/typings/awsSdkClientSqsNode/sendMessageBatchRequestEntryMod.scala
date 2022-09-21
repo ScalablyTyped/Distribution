@@ -8,5 +8,5 @@ object sendMessageBatchRequestEntryMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/_SendMessageBatchRequestEntry", "_SendMessageBatchRequestEntry")
   @js.native
-  val SendMessageBatchRequestEntry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SendMessageBatchRequestEntry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -10,6 +10,11 @@ trait CreateAccessPointResult extends StObject {
     * The ARN of the access point.  This is only supported by Amazon S3 on Outposts. 
     */
   var AccessPointArn: js.UndefOr[S3AccessPointArn] = js.undefined
+  
+  /**
+    * The name or alias of the access point.
+    */
+  var Alias: js.UndefOr[typings.awsSdk.s3controlMod.Alias] = js.undefined
 }
 object CreateAccessPointResult {
   
@@ -23,5 +28,9 @@ object CreateAccessPointResult {
     inline def setAccessPointArn(value: S3AccessPointArn): Self = StObject.set(x, "AccessPointArn", value.asInstanceOf[js.Any])
     
     inline def setAccessPointArnUndefined: Self = StObject.set(x, "AccessPointArn", js.undefined)
+    
+    inline def setAlias(value: Alias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+    
+    inline def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
   }
 }

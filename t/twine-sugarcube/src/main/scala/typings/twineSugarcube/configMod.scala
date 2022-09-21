@@ -8,11 +8,8 @@ import typings.twineSugarcube.anon.Override
 import typings.twineSugarcube.anon.PauseOnFadeToZero
 import typings.twineSugarcube.anon.StowBarInitially
 import typings.twineSugarcube.passageMod.Passage
+import typings.twineSugarcube.saveMod.SaveDetails
 import typings.twineSugarcube.saveMod.SaveObject
-import typings.twineSugarcube.twineSugarcubeStrings.autosave
-import typings.twineSugarcube.twineSugarcubeStrings.disk
-import typings.twineSugarcube.twineSugarcubeStrings.serialize
-import typings.twineSugarcube.twineSugarcubeStrings.slot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -149,27 +146,6 @@ object configMod {
   }
   
   type DescriptionHandler = js.ThisFunction0[/* this */ Passage, String | Null]
-  
-  trait SaveDetails extends StObject {
-    
-    /**
-      * A string representing how the save operation came about—i.e., what caused it.
-      */
-    var `type`: autosave | disk | serialize | slot
-  }
-  object SaveDetails {
-    
-    inline def apply(`type`: autosave | disk | serialize | slot): SaveDetails = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SaveDetails]
-    }
-    
-    extension [Self <: SaveDetails](x: Self) {
-      
-      inline def setType(value: autosave | disk | serialize | slot): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
   
   type SaveObjectHander = js.Function2[/* save */ SaveObject, /* details */ SaveDetails, Unit]
 }

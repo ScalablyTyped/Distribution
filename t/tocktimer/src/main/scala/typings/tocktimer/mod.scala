@@ -18,7 +18,7 @@ object mod {
   /**
     * Create a Tock instance
     */
-  class Tock () extends StObject {
+  open class Tock () extends StObject {
     def this(opts: TockOptions) = this()
     
     /**

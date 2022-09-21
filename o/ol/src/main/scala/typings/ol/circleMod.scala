@@ -10,7 +10,7 @@ object circleMod {
   
   @JSImport("ol/geom/Circle", JSImport.Default)
   @js.native
-  class default protected () extends Circle {
+  open class default protected () extends Circle {
     def this(center: Coordinate) = this()
     def this(center: Coordinate, opt_radius: Double) = this()
     def this(center: Coordinate, opt_radius: Double, opt_layout: GeometryLayout) = this()

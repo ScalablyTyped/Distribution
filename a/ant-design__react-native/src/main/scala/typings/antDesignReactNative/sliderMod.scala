@@ -11,7 +11,7 @@ object sliderMod {
   
   @JSImport("@ant-design/react-native/lib/slider", JSImport.Default)
   @js.native
-  class default () extends SliderAntm
+  open class default () extends SliderAntm
   /* static members */
   object default {
     
@@ -26,8 +26,7 @@ object sliderMod {
   }
   
   @js.native
-  trait SliderAntm
-    extends Component[SliderProps, js.Any, js.Any]
+  trait SliderAntm extends Component[SliderProps, Any, Any]
   
   trait SliderProps extends StObject {
     

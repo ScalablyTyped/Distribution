@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.IAsyncAction
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Media.Protection.PlayReady.IPlayReadyServiceRequest
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Manages secure stop messages. */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadySecureStopServiceRequest")
 @js.native
-class PlayReadySecureStopServiceRequest protected ()
+open class PlayReadySecureStopServiceRequest protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadySecureStopServiceRequest {
   /**
@@ -78,7 +77,7 @@ class PlayReadySecureStopServiceRequest protected ()
   
   /** Gets the secure stop session's start time property. */
   /* CompleteClass */
-  var startTime: Date = js.native
+  var startTime: js.Date = js.native
   
   /** Gets the secure stop session's stopped flag property which indicates whether the secure stop session for this request was cleanly shut down. */
   /* CompleteClass */
@@ -90,7 +89,7 @@ class PlayReadySecureStopServiceRequest protected ()
   
   /** Gets the secure stop session's update/stop time property. */
   /* CompleteClass */
-  var updateTime: Date = js.native
+  var updateTime: js.Date = js.native
   
   /** Gets or sets the URI used to perform a service request action. */
   /* CompleteClass */

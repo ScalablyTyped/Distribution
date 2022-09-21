@@ -18,7 +18,7 @@ trait OMathEqArray extends StObject {
   
   var ObjDist: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var RowSpacing: Double
   
@@ -36,7 +36,7 @@ object OMathEqArray {
     E: OMathArgs,
     MaxDist: Boolean,
     ObjDist: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     RowSpacing: Double,
     RowSpacingRule: WdOMathSpacingRule,
     WordDotOMathEqArray_typekey: OMathEqArray
@@ -60,7 +60,7 @@ object OMathEqArray {
     
     inline def setObjDist(value: Boolean): Self = StObject.set(x, "ObjDist", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRowSpacing(value: Double): Self = StObject.set(x, "RowSpacing", value.asInstanceOf[js.Any])
     

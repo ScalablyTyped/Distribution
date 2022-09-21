@@ -4,7 +4,6 @@ import typings.phaser.Phaser.Curves.Path
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Textures.Texture
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Phaser.GameObjects.PathFollower")
 @js.native
-class PathFollower protected ()
+open class PathFollower protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.PathFollower {
   /**
@@ -38,9 +37,9 @@ class PathFollower protected ()
   def this(scene: Scene, path: Path, x: Double, y: Double, texture: String) = this()
   def this(scene: Scene, path: Path, x: Double, y: Double, texture: Texture) = this()
   def this(scene: Scene, path: Path, x: Double, y: Double, texture: String, frame: String) = this()
-  def this(scene: Scene, path: Path, x: Double, y: Double, texture: String, frame: integer) = this()
+  def this(scene: Scene, path: Path, x: Double, y: Double, texture: String, frame: Double) = this()
   def this(scene: Scene, path: Path, x: Double, y: Double, texture: Texture, frame: String) = this()
-  def this(scene: Scene, path: Path, x: Double, y: Double, texture: Texture, frame: integer) = this()
+  def this(scene: Scene, path: Path, x: Double, y: Double, texture: Texture, frame: Double) = this()
   
   /**
     * The depth of this Game Object within the Scene.
@@ -125,7 +124,7 @@ class PathFollower protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the display size of this Game Object.

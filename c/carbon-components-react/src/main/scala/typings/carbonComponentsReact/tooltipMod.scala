@@ -11,10 +11,10 @@ object tooltipMod extends Shortcut {
   
   @JSImport("carbon-components-react/lib/components/Tooltip", JSImport.Default)
   @js.native
-  val default: ForwardRefReturn[js.Any, TooltipProps] = js.native
+  val default: ForwardRefReturn[Any, TooltipProps] = js.native
   
-  type _To = ForwardRefReturn[js.Any, TooltipProps]
+  type _To = ForwardRefReturn[Any, TooltipProps]
   
   /* This means you don't have to write `default`, but can instead just say `tooltipMod.foo` */
-  override def _to: ForwardRefReturn[js.Any, TooltipProps] = default
+  override def _to: ForwardRefReturn[Any, TooltipProps] = default
 }

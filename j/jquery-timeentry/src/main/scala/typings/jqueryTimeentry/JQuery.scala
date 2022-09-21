@@ -9,18 +9,18 @@ trait JQuery extends StObject {
   /**
     * initialize TimeEntry plugin
     */
-  def timeEntry(): js.Any
-  def timeEntry(configOrFnName: String): js.Any
-  def timeEntry(configOrFnName: String, nameOrOption: js.Any): js.Any
-  def timeEntry(configOrFnName: String, nameOrOption: js.Any, value: js.Any): js.Any
-  def timeEntry(configOrFnName: String, nameOrOption: Unit, value: js.Any): js.Any
-  def timeEntry(configOrFnName: Unit, nameOrOption: js.Any): js.Any
-  def timeEntry(configOrFnName: Unit, nameOrOption: js.Any, value: js.Any): js.Any
-  def timeEntry(configOrFnName: Unit, nameOrOption: Unit, value: js.Any): js.Any
-  def timeEntry(configOrFnName: ITimeEntryOptions): js.Any
-  def timeEntry(configOrFnName: ITimeEntryOptions, nameOrOption: js.Any): js.Any
-  def timeEntry(configOrFnName: ITimeEntryOptions, nameOrOption: js.Any, value: js.Any): js.Any
-  def timeEntry(configOrFnName: ITimeEntryOptions, nameOrOption: Unit, value: js.Any): js.Any
+  def timeEntry(): Any
+  def timeEntry(configOrFnName: String): Any
+  def timeEntry(configOrFnName: String, nameOrOption: Any): Any
+  def timeEntry(configOrFnName: String, nameOrOption: Any, value: Any): Any
+  def timeEntry(configOrFnName: String, nameOrOption: Unit, value: Any): Any
+  def timeEntry(configOrFnName: Unit, nameOrOption: Any): Any
+  def timeEntry(configOrFnName: Unit, nameOrOption: Any, value: Any): Any
+  def timeEntry(configOrFnName: Unit, nameOrOption: Unit, value: Any): Any
+  def timeEntry(configOrFnName: ITimeEntryOptions): Any
+  def timeEntry(configOrFnName: ITimeEntryOptions, nameOrOption: Any): Any
+  def timeEntry(configOrFnName: ITimeEntryOptions, nameOrOption: Any, value: Any): Any
+  def timeEntry(configOrFnName: ITimeEntryOptions, nameOrOption: Unit, value: Any): Any
   /**
     * initialize TimeEntry plugin
     */
@@ -30,7 +30,7 @@ trait JQuery extends StObject {
 object JQuery {
   
   inline def apply(
-    timeEntry: (/* configOrFnName */ js.UndefOr[ITimeEntryOptions | String], /* nameOrOption */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any]) => js.Any
+    timeEntry: (/* configOrFnName */ js.UndefOr[ITimeEntryOptions | String], /* nameOrOption */ js.UndefOr[Any], /* value */ js.UndefOr[Any]) => Any
   ): JQuery = {
     val __obj = js.Dynamic.literal(timeEntry = js.Any.fromFunction3(timeEntry))
     __obj.asInstanceOf[JQuery]
@@ -39,7 +39,7 @@ object JQuery {
   extension [Self <: JQuery](x: Self) {
     
     inline def setTimeEntry(
-      value: (/* configOrFnName */ js.UndefOr[ITimeEntryOptions | String], /* nameOrOption */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any]) => js.Any
+      value: (/* configOrFnName */ js.UndefOr[ITimeEntryOptions | String], /* nameOrOption */ js.UndefOr[Any], /* value */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "timeEntry", js.Any.fromFunction3(value))
   }
 }

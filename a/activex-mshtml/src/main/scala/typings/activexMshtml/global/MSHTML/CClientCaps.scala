@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.CClientCaps")
 @js.native
-/* private */ class CClientCaps ()
+/* private */ open class CClientCaps ()
   extends StObject
      with typings.activexMshtml.MSHTML.CClientCaps

@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartGridlinesUpdateData extends StObject {
   
   /**
-    *
     * Represents the formatting of chart gridlines.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var format: js.UndefOr[ChartGridlinesFormatUpdateData] = js.undefined
   
   /**
-    *
     * Specifies if the axis gridlines are visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var visible: js.UndefOr[Boolean] = js.undefined

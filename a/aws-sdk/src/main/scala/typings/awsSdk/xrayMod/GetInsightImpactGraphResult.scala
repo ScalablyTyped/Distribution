@@ -9,7 +9,7 @@ trait GetInsightImpactGraphResult extends StObject {
   /**
     * The provided end time. 
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The insight's unique identifier.
@@ -24,22 +24,22 @@ trait GetInsightImpactGraphResult extends StObject {
   /**
     * The time, in Unix seconds, at which the service graph ended.
     */
-  var ServiceGraphEndTime: js.UndefOr[Timestamp] = js.undefined
+  var ServiceGraphEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time, in Unix seconds, at which the service graph started.
     */
-  var ServiceGraphStartTime: js.UndefOr[Timestamp] = js.undefined
+  var ServiceGraphStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The AWS instrumented services related to the insight.
+    * The Amazon Web Services instrumented services related to the insight.
     */
   var Services: js.UndefOr[InsightImpactGraphServiceList] = js.undefined
   
   /**
     * The provided start time.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object GetInsightImpactGraphResult {
   
@@ -50,7 +50,7 @@ object GetInsightImpactGraphResult {
   
   extension [Self <: GetInsightImpactGraphResult](x: Self) {
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -62,11 +62,11 @@ object GetInsightImpactGraphResult {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setServiceGraphEndTime(value: Timestamp): Self = StObject.set(x, "ServiceGraphEndTime", value.asInstanceOf[js.Any])
+    inline def setServiceGraphEndTime(value: js.Date): Self = StObject.set(x, "ServiceGraphEndTime", value.asInstanceOf[js.Any])
     
     inline def setServiceGraphEndTimeUndefined: Self = StObject.set(x, "ServiceGraphEndTime", js.undefined)
     
-    inline def setServiceGraphStartTime(value: Timestamp): Self = StObject.set(x, "ServiceGraphStartTime", value.asInstanceOf[js.Any])
+    inline def setServiceGraphStartTime(value: js.Date): Self = StObject.set(x, "ServiceGraphStartTime", value.asInstanceOf[js.Any])
     
     inline def setServiceGraphStartTimeUndefined: Self = StObject.set(x, "ServiceGraphStartTime", js.undefined)
     
@@ -74,9 +74,9 @@ object GetInsightImpactGraphResult {
     
     inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
     
-    inline def setServicesVarargs(value: InsightImpactGraphService*): Self = StObject.set(x, "Services", js.Array(value :_*))
+    inline def setServicesVarargs(value: InsightImpactGraphService*): Self = StObject.set(x, "Services", js.Array(value*))
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

@@ -1,6 +1,6 @@
 package typings.ethereumjsAccount
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +9,10 @@ object mod {
   
   @JSImport("ethereumjs-account", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Account {
-    def this(data: js.Any) = this()
+    def this(data: Any) = this()
   }
   
   @js.native
@@ -35,7 +35,7 @@ object mod {
     
     def serialize(): Buffer = js.native
     
-    def setCode(trie: Trie, code: Buffer, cb: js.Function2[/* err */ js.Any, /* codeHash */ Buffer, Unit]): Unit = js.native
+    def setCode(trie: Trie, code: Buffer, cb: js.Function2[/* err */ Any, /* codeHash */ Buffer, Unit]): Unit = js.native
     
     def setStorage(trie: Trie, key: String, `val`: String, cb: js.Function0[Unit]): Unit = js.native
     def setStorage(trie: Trie, key: String, `val`: Buffer, cb: js.Function0[Unit]): Unit = js.native
@@ -66,7 +66,7 @@ object mod {
     var root: Buffer = js.native
   }
   
-  type TrieGetCb = js.Function2[/* err */ js.Any, /* value */ Buffer | Null, Unit]
+  type TrieGetCb = js.Function2[/* err */ Any, /* value */ Buffer | Null, Unit]
   
-  type TriePutCb = js.Function1[/* err */ js.UndefOr[js.Any], Unit]
+  type TriePutCb = js.Function1[/* err */ js.UndefOr[Any], Unit]
 }

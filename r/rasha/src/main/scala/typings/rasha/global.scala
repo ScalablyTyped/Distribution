@@ -25,6 +25,6 @@ object global {
     // PEM-to-JWK
     inline def `import`(opts: ImportOptions): js.Promise[Jwk] = ^.asInstanceOf[js.Dynamic].applyDynamic("import")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Jwk]]
     
-    inline def thumbprint(jwk: Jwk): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("thumbprint")(jwk.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def thumbprint(jwk: Jwk): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("thumbprint")(jwk.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   }
 }

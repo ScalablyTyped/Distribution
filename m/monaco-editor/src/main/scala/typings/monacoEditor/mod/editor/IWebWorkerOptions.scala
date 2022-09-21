@@ -9,12 +9,12 @@ trait IWebWorkerOptions extends StObject {
   /**
     * The data to send over when calling create on the module.
     */
-  var createData: js.UndefOr[js.Any] = js.undefined
+  var createData: js.UndefOr[Any] = js.undefined
   
   /**
     * An object that can be used by the web worker to make calls back to the main thread.
     */
-  var host: js.UndefOr[js.Any] = js.undefined
+  var host: js.UndefOr[Any] = js.undefined
   
   /**
     * Keep idle models.
@@ -42,11 +42,11 @@ object IWebWorkerOptions {
   
   extension [Self <: IWebWorkerOptions](x: Self) {
     
-    inline def setCreateData(value: js.Any): Self = StObject.set(x, "createData", value.asInstanceOf[js.Any])
+    inline def setCreateData(value: Any): Self = StObject.set(x, "createData", value.asInstanceOf[js.Any])
     
     inline def setCreateDataUndefined: Self = StObject.set(x, "createData", js.undefined)
     
-    inline def setHost(value: js.Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     

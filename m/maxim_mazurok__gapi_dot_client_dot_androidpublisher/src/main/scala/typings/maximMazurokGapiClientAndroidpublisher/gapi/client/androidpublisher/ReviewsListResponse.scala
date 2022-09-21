@@ -32,7 +32,7 @@ object ReviewsListResponse {
     
     inline def setReviewsUndefined: Self = StObject.set(x, "reviews", js.undefined)
     
-    inline def setReviewsVarargs(value: Review*): Self = StObject.set(x, "reviews", js.Array(value :_*))
+    inline def setReviewsVarargs(value: Review*): Self = StObject.set(x, "reviews", js.Array(value*))
     
     inline def setTokenPagination(value: TokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     

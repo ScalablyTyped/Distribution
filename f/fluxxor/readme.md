@@ -10,10 +10,10 @@ Flux architecture tools for React
 | ------------------ | :-------------: |
 | Full name          | fluxxor |
 | Keywords           | react, flux |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 56821 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6335.666666666667 |
+| # stars            | 1695.0 |
 
 ## Links
 - [Homepage](https://github.com/BinaryMuse/fluxxor#readme)

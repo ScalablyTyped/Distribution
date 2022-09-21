@@ -27,7 +27,7 @@ trait ListNetworksInput extends StObject {
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    * An optional status specifier. If provided, only networks currently in this status are listed.
+    * An optional status specifier. If provided, only networks currently in this status are listed. Applies only to Hyperledger Fabric.
     */
   var Status: js.UndefOr[NetworkStatus] = js.undefined
 }

@@ -73,7 +73,7 @@ object FlightplanInterfaces {
     
     var runtime: Runtime = js.native
     
-    def target(name: String, fn: js.Function1[/* done */ js.Function1[/* result */ js.Any, Unit], Unit]): Flightplan = js.native
+    def target(name: String, fn: js.Function1[/* done */ js.Function1[/* result */ Any, Unit], Unit]): Flightplan = js.native
     def target(name: String, options: js.Array[TargetOptions]): Flightplan = js.native
     def target(name: String, options: TargetOptions): Flightplan = js.native
   }
@@ -128,7 +128,7 @@ object FlightplanInterfaces {
     
     var hosts: js.Array[Host]
     
-    var options: js.Any
+    var options: Any
     
     var target: String
     
@@ -136,7 +136,7 @@ object FlightplanInterfaces {
   }
   object Runtime {
     
-    inline def apply(hosts: js.Array[Host], options: js.Any, target: String, task: String): Runtime = {
+    inline def apply(hosts: js.Array[Host], options: Any, target: String, task: String): Runtime = {
       val __obj = js.Dynamic.literal(hosts = hosts.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any])
       __obj.asInstanceOf[Runtime]
     }
@@ -145,9 +145,9 @@ object FlightplanInterfaces {
       
       inline def setHosts(value: js.Array[Host]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
       
-      inline def setHostsVarargs(value: Host*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+      inline def setHostsVarargs(value: Host*): Self = StObject.set(x, "hosts", js.Array(value*))
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
@@ -373,7 +373,7 @@ object FlightplanInterfaces {
     
     def verbose(): Unit = js.native
     
-    def waitFor(fn: js.Function1[/* done */ js.Function1[/* result */ js.Any, Unit], Unit]): js.Any = js.native
+    def waitFor(fn: js.Function1[/* done */ js.Function1[/* result */ Any, Unit], Unit]): Any = js.native
     
     def whoami(command: String): CommandResult = js.native
     def whoami(command: String, options: CommandOptions): CommandResult = js.native

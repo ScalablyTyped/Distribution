@@ -8,5 +8,5 @@ object alertMod {
   
   @JSImport("@nulogy/components/src/Alert", "Alert")
   @js.native
-  val Alert: js.Any = js.native
+  val Alert: Any = js.native
 }

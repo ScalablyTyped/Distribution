@@ -6,7 +6,7 @@ import typings.gtmetrix.anon.ReadonlyBrowserFeatures
 import typings.gtmetrix.anon.ReadonlyBuffer
 import typings.gtmetrix.anon.ReadonlyTestBasicInfo
 import typings.gtmetrix.anon.ReadonlyTestDetails
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -246,7 +246,7 @@ object mod {
       
       inline def setBrowsers(value: js.Array[Double]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
       
-      inline def setBrowsersVarargs(value: Double*): Self = StObject.set(x, "browsers", js.Array(value :_*))
+      inline def setBrowsersVarargs(value: Double*): Self = StObject.set(x, "browsers", js.Array(value*))
       
       inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -267,11 +267,11 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.std.Error
+    - js.Error
     - typings.gtmetrix.mod.InvalidResponseError
     - typings.gtmetrix.mod.ApiError
   */
-  type MetricsError = _MetricsError | Error
+  type MetricsError = _MetricsError | js.Error
   
   /**
     * https://github.com/fvdm/nodejs-gtmetrix#resources
@@ -340,13 +340,13 @@ object mod {
   @js.native
   trait TestApi extends StObject {
     
-    def create(params: StringDictionary[js.Any]): js.Promise[ReadonlyTestBasicInfo] = js.native
+    def create(params: StringDictionary[Any]): js.Promise[ReadonlyTestBasicInfo] = js.native
     /**
       * Run a test.
       * {@link https://github.com/fvdm/nodejs-gtmetrix#testcreate}
       */
     def create(
-      params: StringDictionary[js.Any],
+      params: StringDictionary[Any],
       callback: js.Function2[/* error */ MetricsError, /* data */ ReadonlyTestBasicInfo, Unit]
     ): Unit = js.native
     
@@ -418,13 +418,13 @@ object mod {
     
     var resources: StringDictionary[String]
     
-    var results: StringDictionary[js.Any]
+    var results: StringDictionary[Any]
     
     var state: String
   }
   object TestDetails {
     
-    inline def apply(resources: StringDictionary[String], results: StringDictionary[js.Any], state: String): TestDetails = {
+    inline def apply(resources: StringDictionary[String], results: StringDictionary[Any], state: String): TestDetails = {
       val __obj = js.Dynamic.literal(resources = resources.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestDetails]
     }
@@ -437,7 +437,7 @@ object mod {
       
       inline def setResources(value: StringDictionary[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      inline def setResults(value: StringDictionary[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: StringDictionary[Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }

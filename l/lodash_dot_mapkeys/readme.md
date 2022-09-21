@@ -10,10 +10,10 @@ The lodash method `_.mapKeys` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.mapkeys |
 | Keywords           | lodash-modularized, mapkeys |
-| # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 1398922 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 903473.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

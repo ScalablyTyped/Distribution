@@ -10,7 +10,7 @@ trait ObjectTypeIndexer
   extends StObject
      with Node {
   
-  var id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any = js.native
+  var id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ Any = js.native
   
   var key: FlowTypeAnnotation = js.native
   

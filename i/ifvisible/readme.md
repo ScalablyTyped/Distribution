@@ -10,10 +10,10 @@ Crossbrowser & lightweight way to check if user is looking at the page or intera
 | ------------------ | :-------------: |
 | Full name          | ifvisible |
 | Keywords           | visibility, HTML5, cross, browser, api, UI, idle, status, mousemove, reading, mode, tab, change |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 434584 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 18319.666666666668 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/muhammaddadu/ifvisible)

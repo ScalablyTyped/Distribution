@@ -18,7 +18,7 @@ trait GoogleApiHttpBody extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleApiHttpBody & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleApiHttpBody & TopLevel[Any]
     ]
   ] = js.undefined
 }
@@ -43,7 +43,7 @@ object GoogleApiHttpBody {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleApiHttpBody & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleApiHttpBody & TopLevel[Any]
         ]
     ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
@@ -52,7 +52,7 @@ object GoogleApiHttpBody {
     inline def setExtensionsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleApiHttpBody & TopLevel[js.Any])*
-    ): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleApiHttpBody & TopLevel[Any])*
+    ): Self = StObject.set(x, "extensions", js.Array(value*))
   }
 }

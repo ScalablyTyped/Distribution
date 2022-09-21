@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientWebDocumentViewerEditingFieldChangedEventArgs")
 @js.native
-class ASPxClientWebDocumentViewerEditingFieldChangedEventArgs protected ()
+open class ASPxClientWebDocumentViewerEditingFieldChangedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientWebDocumentViewerEditingFieldChangedEventArgs {
   /**
@@ -18,11 +18,7 @@ class ASPxClientWebDocumentViewerEditingFieldChangedEventArgs protected ()
     * @param oldValue An object that specifies an editing field's previous value. This value is assigned to the ASPxClientWebDocumentViewerEditingFieldChangedEventArgs.OldValue property.
     * @param newValue An object that specifies an editing field's new value. This value is assigned to the ASPxClientWebDocumentViewerEditingFieldChangedEventArgs.NewValue property.
     */
-  def this(
-    field: typings.devexpressWeb.ASPxClientWebDocumentViewerEditingField,
-    oldValue: js.Any,
-    newValue: js.Any
-  ) = this()
+  def this(field: typings.devexpressWeb.ASPxClientWebDocumentViewerEditingField, oldValue: Any, newValue: Any) = this()
   
   /**
     * Gets an editing field whose value has been changed.
@@ -34,11 +30,11 @@ class ASPxClientWebDocumentViewerEditingFieldChangedEventArgs protected ()
     * Provides access to a new value of an editing field.
     */
   /* CompleteClass */
-  var NewValue: js.Any = js.native
+  var NewValue: Any = js.native
   
   /**
     * Provides access to a previous value of an editing field.
     */
   /* CompleteClass */
-  var OldValue: js.Any = js.native
+  var OldValue: Any = js.native
 }

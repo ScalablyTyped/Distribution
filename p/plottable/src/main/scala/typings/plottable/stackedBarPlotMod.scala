@@ -22,22 +22,22 @@ object stackedBarPlotMod {
     * @param {Scale} yScale
     * @param {string} [orientation="vertical"] One of "vertical"/"horizontal".
     */
-  class StackedBar[X, Y] () extends Bar[X, Y] {
+  open class StackedBar[X, Y] () extends Bar[X, Y] {
     def this(orientation: BarOrientation) = this()
     
-    /* private */ var _extremaFormatter: js.Any = js.native
+    /* private */ var _extremaFormatter: Any = js.native
     
-    /* private */ var _labelArea: js.Any = js.native
+    /* private */ var _labelArea: Any = js.native
     
-    /* private */ var _measurer: js.Any = js.native
+    /* private */ var _measurer: Any = js.native
     
-    /* private */ var _stackedExtent: js.Any = js.native
+    /* private */ var _stackedExtent: Any = js.native
     
-    /* private */ var _stackingOrder: js.Any = js.native
+    /* private */ var _stackingOrder: Any = js.native
     
-    /* private */ var _stackingResult: js.Any = js.native
+    /* private */ var _stackingResult: Any = js.native
     
-    /* private */ var _writer: js.Any = js.native
+    /* private */ var _writer: Any = js.native
     
     /**
       * Gets the Formatter for the stacked bar extrema labels.

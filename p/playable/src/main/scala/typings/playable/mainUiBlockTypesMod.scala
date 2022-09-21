@@ -58,7 +58,11 @@ object mainUiBlockTypesMod {
   
   trait IMainUIBlockAPI extends StObject {
     
+    var hideMainUI: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
     var setMainUIShouldAlwaysShow: js.UndefOr[js.Function1[/* flag */ Boolean, Unit]] = js.undefined
+    
+    var showMainUI: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IMainUIBlockAPI {
     
@@ -69,9 +73,17 @@ object mainUiBlockTypesMod {
     
     extension [Self <: IMainUIBlockAPI](x: Self) {
       
+      inline def setHideMainUI(value: () => Unit): Self = StObject.set(x, "hideMainUI", js.Any.fromFunction0(value))
+      
+      inline def setHideMainUIUndefined: Self = StObject.set(x, "hideMainUI", js.undefined)
+      
       inline def setSetMainUIShouldAlwaysShow(value: /* flag */ Boolean => Unit): Self = StObject.set(x, "setMainUIShouldAlwaysShow", js.Any.fromFunction1(value))
       
       inline def setSetMainUIShouldAlwaysShowUndefined: Self = StObject.set(x, "setMainUIShouldAlwaysShow", js.undefined)
+      
+      inline def setShowMainUI(value: () => Unit): Self = StObject.set(x, "showMainUI", js.Any.fromFunction0(value))
+      
+      inline def setShowMainUIUndefined: Self = StObject.set(x, "showMainUI", js.undefined)
     }
   }
   

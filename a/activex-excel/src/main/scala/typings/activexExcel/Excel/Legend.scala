@@ -8,15 +8,15 @@ trait Legend extends StObject {
   
   val Application: typings.activexExcel.Excel.Application
   
-  var AutoScaleFont: js.Any
+  var AutoScaleFont: Any
   
   val Border: typings.activexExcel.Excel.Border
   
-  def Clear(): js.Any
+  def Clear(): Any
   
   val Creator: XlCreator
   
-  def Delete(): js.Any
+  def Delete(): Any
   
   /* private */ @JSName("Excel.Legend_typekey")
   var ExcelDotLegend_typekey: Legend
@@ -41,11 +41,11 @@ trait Legend extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: XlLegendPosition
   
-  def Select(): js.Any
+  def Select(): Any
   
   var Shadow: Boolean
   
@@ -57,11 +57,11 @@ object Legend {
   
   inline def apply(
     Application: Application,
-    AutoScaleFont: js.Any,
+    AutoScaleFont: Any,
     Border: Border,
-    Clear: () => js.Any,
+    Clear: () => Any,
     Creator: XlCreator,
-    Delete: () => js.Any,
+    Delete: () => Any,
     ExcelDotLegend_typekey: Legend,
     Fill: ChartFillFormat,
     Font: Font,
@@ -72,9 +72,9 @@ object Legend {
     Left: Double,
     LegendEntries: LegendEntries & (js.Function1[/* Index */ Double, LegendEntry]),
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Position: XlLegendPosition,
-    Select: () => js.Any,
+    Select: () => Any,
     Shadow: Boolean,
     Top: Double,
     Width: Double
@@ -88,15 +88,15 @@ object Legend {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    inline def setAutoScaleFont(value: js.Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
+    inline def setAutoScaleFont(value: Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
     
     inline def setBorder(value: Border): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    inline def setClear(value: () => js.Any): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Any): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
     inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     inline def setExcelDotLegend_typekey(value: Legend): Self = StObject.set(x, "Excel.Legend_typekey", value.asInstanceOf[js.Any])
     
@@ -118,11 +118,11 @@ object Legend {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: XlLegendPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     inline def setShadow(value: Boolean): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     

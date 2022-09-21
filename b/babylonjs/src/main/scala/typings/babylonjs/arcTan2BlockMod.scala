@@ -10,7 +10,7 @@ object arcTan2BlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/arcTan2Block", "ArcTan2Block")
   @js.native
-  class ArcTan2Block protected () extends NodeMaterialBlock {
+  open class ArcTan2Block protected () extends NodeMaterialBlock {
     /**
       * Creates a new ArcTan2Block
       * @param name defines the block name

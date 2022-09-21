@@ -24,6 +24,6 @@ object UpdateUserAttributesResponse {
     
     inline def setCodeDeliveryDetailsListUndefined: Self = StObject.set(x, "CodeDeliveryDetailsList", js.undefined)
     
-    inline def setCodeDeliveryDetailsListVarargs(value: CodeDeliveryDetailsType*): Self = StObject.set(x, "CodeDeliveryDetailsList", js.Array(value :_*))
+    inline def setCodeDeliveryDetailsListVarargs(value: CodeDeliveryDetailsType*): Self = StObject.set(x, "CodeDeliveryDetailsList", js.Array(value*))
   }
 }

@@ -1,9 +1,5 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceDevicesUpdate
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the device.
@@ -33,9 +24,7 @@ trait ParamsResourceDevicesUpdate
   var requestBody: js.UndefOr[SchemaDevice] = js.undefined
   
   /**
-    * Mask that identifies which fields to update. If not set, all modifiable
-    * fields will be modified.  When set in a query parameter, this field
-    * should be specified as updateMask=<field1>,<field2>,...
+    * Mask that identifies which fields to update. If not set, all modifiable fields will be modified. When set in a query parameter, this field should be specified as updateMask=<field1\>,<field2\>,...
     */
   var updateMask: js.UndefOr[String] = js.undefined
   
@@ -52,10 +41,6 @@ object ParamsResourceDevicesUpdate {
   }
   
   extension [Self <: ParamsResourceDevicesUpdate](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

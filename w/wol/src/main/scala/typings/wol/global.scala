@@ -1,6 +1,6 @@
 package typings.wol
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.wol.mod.WakeCallback
 import typings.wol.mod.WakeOptions
 import org.scalablytyped.runtime.StObject

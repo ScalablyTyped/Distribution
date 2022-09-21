@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.FunctionComponent
 import typings.react.mod.HTMLProps
 import typings.react.mod.ReactElement
-import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,41 +20,38 @@ object mod extends Shortcut {
   @JSImport("react-fa", "Icon")
   @js.native
   val Icon: ComponentClass[IconProps, ComponentState] = js.native
-  type Icon = Component[IconProps, js.Object, js.Any]
+  type Icon = Component[IconProps, js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-fa", "Icon")
   @js.native
-  class IconCls protected ()
-    extends Component[IconProps, ComponentState, js.Any] {
+  open class IconCls protected () extends Component[IconProps, ComponentState, Any] {
     def this(props: IconProps) = this()
-    def this(props: IconProps, context: js.Any) = this()
+    def this(props: IconProps, context: Any) = this()
   }
   
   @JSImport("react-fa", "IconStack")
   @js.native
   val IconStack: ComponentClass[IconStackProps, ComponentState] = js.native
-  type IconStack = Component[IconStackProps, js.Object, js.Any]
+  type IconStack = Component[IconStackProps, js.Object, Any]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-fa", "IconStack")
   @js.native
-  class IconStackCls protected ()
-    extends Component[IconStackProps, ComponentState, js.Any] {
+  open class IconStackCls protected () extends Component[IconStackProps, ComponentState, Any] {
     def this(props: IconStackProps) = this()
-    def this(props: IconStackProps, context: js.Any) = this()
+    def this(props: IconStackProps, context: Any) = this()
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-fa", JSImport.Default)
   @js.native
-  class defaultCls protected ()
-    extends Component[IconProps, ComponentState, js.Any] {
+  open class defaultCls protected () extends Component[IconProps, ComponentState, Any] {
     def this(props: IconProps) = this()
-    def this(props: IconProps, context: js.Any) = this()
+    def this(props: IconProps, context: Any) = this()
   }
   
-  type CustomComponent = String | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]
+  type CustomComponent = String | (ComponentClass[Any, ComponentState]) | FunctionComponent[Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactFa.reactFaStrings.horizontal
@@ -214,7 +211,7 @@ object mod extends Shortcut {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setSize(value: IconSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -241,7 +238,7 @@ object mod extends Shortcut {
        with HTMLProps[T] {
     
     @JSName("size")
-    var size_SizeOverrideHTMLProps: js.UndefOr[js.Any] = js.undefined
+    var size_SizeOverrideHTMLProps: js.UndefOr[Any] = js.undefined
   }
   object SizeOverrideHTMLProps {
     
@@ -252,7 +249,7 @@ object mod extends Shortcut {
     
     extension [Self <: SizeOverrideHTMLProps[?], T](x: Self & SizeOverrideHTMLProps[T]) {
       
-      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }

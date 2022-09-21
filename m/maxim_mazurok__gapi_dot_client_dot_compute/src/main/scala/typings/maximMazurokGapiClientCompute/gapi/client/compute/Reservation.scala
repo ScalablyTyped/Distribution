@@ -28,6 +28,9 @@ trait Reservation extends StObject {
     */
   var name: js.UndefOr[String] = js.undefined
   
+  /** [Output Only] Reserved for future use. */
+  var satisfiesPzs: js.UndefOr[Boolean] = js.undefined
+  
   /** [Output Only] Server-defined fully-qualified URL for this resource. */
   var selfLink: js.UndefOr[String] = js.undefined
   
@@ -78,6 +81,10 @@ object Reservation {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSatisfiesPzs(value: Boolean): Self = StObject.set(x, "satisfiesPzs", value.asInstanceOf[js.Any])
+    
+    inline def setSatisfiesPzsUndefined: Self = StObject.set(x, "satisfiesPzs", js.undefined)
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     

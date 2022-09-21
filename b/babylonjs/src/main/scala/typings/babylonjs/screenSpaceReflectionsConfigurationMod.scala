@@ -9,7 +9,7 @@ object screenSpaceReflectionsConfigurationMod {
   
   @JSImport("babylonjs/Rendering/screenSpaceReflectionsConfiguration", "ScreenSpaceReflectionsConfiguration")
   @js.native
-  class ScreenSpaceReflectionsConfiguration ()
+  open class ScreenSpaceReflectionsConfiguration ()
     extends StObject
        with PrePassEffectConfiguration {
     

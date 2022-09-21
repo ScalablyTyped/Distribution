@@ -1,0 +1,35 @@
+package typings.mauron85ReactNativeBackgroundGeolocation.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.IN_VEHICLE
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.ON_BICYCLE
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.ON_FOOT
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.RUNNING
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.STILL
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.TILTING
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.UNKNOWN
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.WALKING
+*/
+trait ActivityType extends StObject
+object ActivityType {
+  
+  inline def IN_VEHICLE: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.IN_VEHICLE = "IN_VEHICLE".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.IN_VEHICLE]
+  
+  inline def ON_BICYCLE: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.ON_BICYCLE = "ON_BICYCLE".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.ON_BICYCLE]
+  
+  inline def ON_FOOT: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.ON_FOOT = "ON_FOOT".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.ON_FOOT]
+  
+  inline def RUNNING: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.RUNNING = "RUNNING".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.RUNNING]
+  
+  inline def STILL: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.STILL = "STILL".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.STILL]
+  
+  inline def TILTING: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.TILTING = "TILTING".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.TILTING]
+  
+  inline def UNKNOWN: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.UNKNOWN]
+  
+  inline def WALKING: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.WALKING = "WALKING".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.WALKING]
+}

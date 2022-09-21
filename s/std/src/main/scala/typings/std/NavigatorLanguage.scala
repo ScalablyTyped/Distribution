@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NavigatorLanguage extends StObject {
   
+  /* standard dom */
   val language: java.lang.String
   
+  /* standard dom */
   val languages: js.Array[java.lang.String]
 }
 object NavigatorLanguage {
@@ -23,6 +25,6 @@ object NavigatorLanguage {
     
     inline def setLanguages(value: js.Array[java.lang.String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    inline def setLanguagesVarargs(value: java.lang.String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: java.lang.String*): Self = StObject.set(x, "languages", js.Array(value*))
   }
 }

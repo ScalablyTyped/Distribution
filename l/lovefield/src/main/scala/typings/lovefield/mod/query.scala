@@ -10,7 +10,7 @@ object query {
   
   trait Builder extends StObject {
     
-    def bind(values: js.Any*): Builder
+    def bind(values: Any*): Builder
     
     def exec(): js.Promise[js.Array[js.Object]]
     
@@ -21,7 +21,7 @@ object query {
   object Builder {
     
     inline def apply(
-      bind: /* repeated */ js.Any => Builder,
+      bind: /* repeated */ Any => Builder,
       exec: () => js.Promise[js.Array[js.Object]],
       explain: () => String,
       toSql: () => String
@@ -32,7 +32,7 @@ object query {
     
     extension [Self <: Builder](x: Self) {
       
-      inline def setBind(value: /* repeated */ js.Any => Builder): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
+      inline def setBind(value: /* repeated */ Any => Builder): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
       
       inline def setExec(value: () => js.Promise[js.Array[js.Object]]): Self = StObject.set(x, "exec", js.Any.fromFunction0(value))
       
@@ -53,7 +53,7 @@ object query {
   object Delete {
     
     inline def apply(
-      bind: /* repeated */ js.Any => Builder,
+      bind: /* repeated */ Any => Builder,
       exec: () => js.Promise[js.Array[js.Object]],
       explain: () => String,
       from: Table => Delete,
@@ -112,17 +112,17 @@ object query {
     extends StObject
        with Builder {
     
-    def set(column: Column, value: js.Any): Update
+    def set(column: Column, value: Any): Update
     
     def where(predicate: Predicate): Update
   }
   object Update {
     
     inline def apply(
-      bind: /* repeated */ js.Any => Builder,
+      bind: /* repeated */ Any => Builder,
       exec: () => js.Promise[js.Array[js.Object]],
       explain: () => String,
-      set: (Column, js.Any) => Update,
+      set: (Column, Any) => Update,
       toSql: () => String,
       where: Predicate => Update
     ): Update = {
@@ -132,7 +132,7 @@ object query {
     
     extension [Self <: Update](x: Self) {
       
-      inline def setSet(value: (Column, js.Any) => Update): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (Column, Any) => Update): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
       inline def setWhere(value: Predicate => Update): Self = StObject.set(x, "where", js.Any.fromFunction1(value))
     }

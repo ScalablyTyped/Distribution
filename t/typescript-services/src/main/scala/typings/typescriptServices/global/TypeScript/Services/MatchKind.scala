@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.MatchKind")
 @js.native
-class MatchKind ()
+open class MatchKind ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.MatchKind
 object MatchKind {

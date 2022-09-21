@@ -25,8 +25,8 @@ trait StaveNote
   
   //TODO: vexflow actualy managed to have Note use modifier, index and stavenote index,modifier. To use the function in
   // Typescript we need to allow both. The name is the correct type :(
-  def addModifier(index: js.Any): Note = js.native
-  def addModifier(index: js.Any, modifier: js.Any): Note = js.native
+  def addModifier(index: Any): Note = js.native
+  def addModifier(index: Any, modifier: Any): Note = js.native
   
   def autoStem(): Unit = js.native
   

@@ -4,9 +4,9 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientTagmanager.anon.Alt
 import typings.maximMazurokGapiClientTagmanager.anon.Callback
 import typings.maximMazurokGapiClientTagmanager.anon.Fields
-import typings.maximMazurokGapiClientTagmanager.anon.FieldsKey
-import typings.maximMazurokGapiClientTagmanager.anon.FingerprintKey
+import typings.maximMazurokGapiClientTagmanager.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientTagmanager.anon.Oauthtoken
+import typings.maximMazurokGapiClientTagmanager.anon.OauthtokenPath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait VariablesResource extends StObject {
   
   def create(request: Alt, body: Variable): Request[Variable] = js.native
   /** Creates a GTM Variable. */
-  def create(request: FieldsKey): Request[Variable] = js.native
+  def create(request: KeyOauthtoken): Request[Variable] = js.native
   
   /** Deletes a GTM Variable. */
   def delete(): Request[Unit] = js.native
@@ -35,6 +35,6 @@ trait VariablesResource extends StObject {
   def revert(request: Oauthtoken): Request[RevertVariableResponse] = js.native
   
   /** Updates a GTM Variable. */
-  def update(request: FingerprintKey): Request[Variable] = js.native
+  def update(request: OauthtokenPath): Request[Variable] = js.native
   def update(request: Oauthtoken, body: Variable): Request[Variable] = js.native
 }

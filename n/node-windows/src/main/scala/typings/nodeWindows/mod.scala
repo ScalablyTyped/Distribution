@@ -1,6 +1,6 @@
 package typings.nodeWindows
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.childProcessMod.ExecException
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("node-windows", "EventLogger")
   @js.native
-  class EventLogger () extends StObject {
+  open class EventLogger () extends StObject {
     def this(config: EventLogConfig) = this()
     
     /**
@@ -229,7 +229,7 @@ object mod {
   
   @JSImport("node-windows", "Service")
   @js.native
-  class Service protected () extends EventEmitter {
+  open class Service protected () extends EventEmitter {
     def this(config: ServiceConfig) = this()
     
     /**
@@ -403,7 +403,7 @@ object mod {
     var workingdirectory: String = js.native
   }
   
-  inline def elevate(cmd: String, options: js.Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("elevate")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def elevate(cmd: String, options: Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("elevate")(cmd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def isAdminUser(callback: js.Function1[/* isAdmin */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isAdminUser")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -412,10 +412,10 @@ object mod {
   inline def kill(pid: Double, force: Boolean, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], force.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def kill(pid: Double, force: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], force.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def list(callback: js.Function1[/* proc */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def list(callback: js.Function1[/* proc */ js.Any, Unit], verbose: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def list(callback: js.Function1[/* proc */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def list(callback: js.Function1[/* proc */ Any, Unit], verbose: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def sudo(cmd: String, password: String, options: js.Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sudo")(cmd.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sudo(cmd: String, password: String, options: Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sudo")(cmd.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait EnvironmentPair extends StObject {
     
@@ -597,7 +597,7 @@ object mod {
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      inline def setEnvVarargs(value: EnvironmentPair*): Self = StObject.set(x, "env", js.Array(value :_*))
+      inline def setEnvVarargs(value: EnvironmentPair*): Self = StObject.set(x, "env", js.Array(value*))
       
       inline def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
       
@@ -726,7 +726,7 @@ object mod {
       
       inline def setDependencies(value: String | js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -734,7 +734,7 @@ object mod {
       
       inline def setEnv(value: EnvironmentPair | js.Array[EnvironmentPair]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      inline def setEnvVarargs(value: EnvironmentPair*): Self = StObject.set(x, "env", js.Array(value :_*))
+      inline def setEnvVarargs(value: EnvironmentPair*): Self = StObject.set(x, "env", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -750,7 +750,7 @@ object mod {
       
       inline def setNodeOptionsUndefined: Self = StObject.set(x, "nodeOptions", js.undefined)
       
-      inline def setNodeOptionsVarargs(value: String*): Self = StObject.set(x, "nodeOptions", js.Array(value :_*))
+      inline def setNodeOptionsVarargs(value: String*): Self = StObject.set(x, "nodeOptions", js.Array(value*))
       
       inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       

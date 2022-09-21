@@ -57,7 +57,7 @@ object StartSoterAuthenticationOption {
     
     inline def setRequestAuthModes(value: js.Array[fingerPrint | facial | speech]): Self = StObject.set(x, "requestAuthModes", value.asInstanceOf[js.Any])
     
-    inline def setRequestAuthModesVarargs(value: (fingerPrint | facial | speech)*): Self = StObject.set(x, "requestAuthModes", js.Array(value :_*))
+    inline def setRequestAuthModesVarargs(value: (fingerPrint | facial | speech)*): Self = StObject.set(x, "requestAuthModes", js.Array(value*))
     
     inline def setSuccess(value: /* result */ StartSoterAuthenticationSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

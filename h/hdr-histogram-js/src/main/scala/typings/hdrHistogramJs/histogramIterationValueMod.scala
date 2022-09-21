@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object histogramIterationValueMod {
   
-  @JSImport("hdr-histogram-js/HistogramIterationValue", JSImport.Default)
+  @JSImport("hdr-histogram-js/dist/HistogramIterationValue", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with HistogramIterationValue {
     

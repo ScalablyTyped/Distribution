@@ -8,25 +8,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NamedItemUpdateData extends StObject {
   
   /**
-    *
     * Specifies the comment associated with this name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   var comment: js.UndefOr[String] = js.undefined
   
   /**
+    * The formula of the named item. Formulas always start with an equal sign ("=").
     *
-    * The formula of the named item. Formula always starts with a '=' sign.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
-  var formula: js.UndefOr[js.Any] = js.undefined
+  var formula: js.UndefOr[Any] = js.undefined
   
   /**
-    *
     * Specifies if the object is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -44,7 +44,7 @@ object NamedItemUpdateData {
     
     inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    inline def setFormula(value: js.Any): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: Any): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
     inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     

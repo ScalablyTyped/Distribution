@@ -9,7 +9,7 @@ trait CanvasImageData extends StObject {
   /* private */ @JSName("MSHTML.CanvasImageData_typekey")
   var MSHTMLDotCanvasImageData_typekey: CanvasImageData
   
-  val data: js.Any
+  val data: Any
   
   val height: Double
   
@@ -17,7 +17,7 @@ trait CanvasImageData extends StObject {
 }
 object CanvasImageData {
   
-  inline def apply(MSHTMLDotCanvasImageData_typekey: CanvasImageData, data: js.Any, height: Double, width: Double): CanvasImageData = {
+  inline def apply(MSHTMLDotCanvasImageData_typekey: CanvasImageData, data: Any, height: Double, width: Double): CanvasImageData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.updateDynamic("MSHTML.CanvasImageData_typekey")(MSHTMLDotCanvasImageData_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasImageData]
@@ -25,7 +25,7 @@ object CanvasImageData {
   
   extension [Self <: CanvasImageData](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

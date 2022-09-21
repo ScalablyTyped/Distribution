@@ -25,8 +25,8 @@ object XCommandProcessor2 {
     abort: Double => Unit,
     acquire: () => Unit,
     createCommandIdentifier: () => Double,
-    execute: (Command, Double, XCommandEnvironment) => js.Any,
-    queryInterface: `type` => js.Any,
+    execute: (Command, Double, XCommandEnvironment) => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     releaseCommandIdentifier: Double => Unit
   ): XCommandProcessor2 = {

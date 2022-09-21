@@ -22,6 +22,6 @@ object ObjectId {
     
     inline def setObjectIdPathUndefined: Self = StObject.set(x, "objectIdPath", js.undefined)
     
-    inline def setObjectIdPathVarargs(value: Double*): Self = StObject.set(x, "objectIdPath", js.Array(value :_*))
+    inline def setObjectIdPathVarargs(value: Double*): Self = StObject.set(x, "objectIdPath", js.Array(value*))
   }
 }

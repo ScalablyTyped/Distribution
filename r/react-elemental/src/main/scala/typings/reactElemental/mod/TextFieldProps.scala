@@ -2,14 +2,17 @@ package typings.reactElemental.mod
 
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
+import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.TextareaHTMLAttributes
 import typings.react.reactStrings.done
 import typings.react.reactStrings.enter
+import typings.react.reactStrings.environment
 import typings.react.reactStrings.go
 import typings.react.reactStrings.next
 import typings.react.reactStrings.previous
 import typings.react.reactStrings.search
 import typings.react.reactStrings.send
+import typings.react.reactStrings.user
 import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
@@ -28,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var alt: js.UndefOr[String] = js.undefined
   
-  var capture: js.UndefOr[Boolean | String] = js.undefined
+  var capture: js.UndefOr[Boolean | user | environment] = js.undefined
   
   // https://www.w3.org/TR/html-media-capture/#the-capture-attribute
   var checked: js.UndefOr[Boolean] = js.undefined
@@ -74,7 +77,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   val textarea: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[HTMLInputTypeAttribute] = js.undefined
   
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -95,7 +98,7 @@ object TextFieldProps {
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
@@ -183,7 +186,7 @@ object TextFieldProps {
     
     inline def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: HTMLInputTypeAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     

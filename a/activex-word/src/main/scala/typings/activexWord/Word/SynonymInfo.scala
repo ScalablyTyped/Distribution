@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SynonymInfo extends StObject {
   
-  val AntonymList: js.Any
+  val AntonymList: Any
   
   val Application: typings.activexWord.Word.Application
   
@@ -16,17 +16,17 @@ trait SynonymInfo extends StObject {
   
   val MeaningCount: Double
   
-  val MeaningList: js.Any
+  val MeaningList: Any
   
-  val Parent: js.Any
+  val Parent: Any
   
-  val PartOfSpeechList: js.Any
+  val PartOfSpeechList: Any
   
-  val RelatedExpressionList: js.Any
+  val RelatedExpressionList: Any
   
-  val RelatedWordList: js.Any
+  val RelatedWordList: Any
   
-  def SynonymList(Meaning: js.Any): js.Any
+  def SynonymList(Meaning: Any): Any
   
   val Word: String
   
@@ -36,17 +36,17 @@ trait SynonymInfo extends StObject {
 object SynonymInfo {
   
   inline def apply(
-    AntonymList: js.Any,
+    AntonymList: Any,
     Application: Application,
     Creator: Double,
     Found: Boolean,
     MeaningCount: Double,
-    MeaningList: js.Any,
-    Parent: js.Any,
-    PartOfSpeechList: js.Any,
-    RelatedExpressionList: js.Any,
-    RelatedWordList: js.Any,
-    SynonymList: js.Any => js.Any,
+    MeaningList: Any,
+    Parent: Any,
+    PartOfSpeechList: Any,
+    RelatedExpressionList: Any,
+    RelatedWordList: Any,
+    SynonymList: Any => Any,
     Word: String,
     WordDotSynonymInfo_typekey: SynonymInfo
   ): SynonymInfo = {
@@ -57,7 +57,7 @@ object SynonymInfo {
   
   extension [Self <: SynonymInfo](x: Self) {
     
-    inline def setAntonymList(value: js.Any): Self = StObject.set(x, "AntonymList", value.asInstanceOf[js.Any])
+    inline def setAntonymList(value: Any): Self = StObject.set(x, "AntonymList", value.asInstanceOf[js.Any])
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
@@ -67,17 +67,17 @@ object SynonymInfo {
     
     inline def setMeaningCount(value: Double): Self = StObject.set(x, "MeaningCount", value.asInstanceOf[js.Any])
     
-    inline def setMeaningList(value: js.Any): Self = StObject.set(x, "MeaningList", value.asInstanceOf[js.Any])
+    inline def setMeaningList(value: Any): Self = StObject.set(x, "MeaningList", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setPartOfSpeechList(value: js.Any): Self = StObject.set(x, "PartOfSpeechList", value.asInstanceOf[js.Any])
+    inline def setPartOfSpeechList(value: Any): Self = StObject.set(x, "PartOfSpeechList", value.asInstanceOf[js.Any])
     
-    inline def setRelatedExpressionList(value: js.Any): Self = StObject.set(x, "RelatedExpressionList", value.asInstanceOf[js.Any])
+    inline def setRelatedExpressionList(value: Any): Self = StObject.set(x, "RelatedExpressionList", value.asInstanceOf[js.Any])
     
-    inline def setRelatedWordList(value: js.Any): Self = StObject.set(x, "RelatedWordList", value.asInstanceOf[js.Any])
+    inline def setRelatedWordList(value: Any): Self = StObject.set(x, "RelatedWordList", value.asInstanceOf[js.Any])
     
-    inline def setSynonymList(value: js.Any => js.Any): Self = StObject.set(x, "SynonymList", js.Any.fromFunction1(value))
+    inline def setSynonymList(value: Any => Any): Self = StObject.set(x, "SynonymList", js.Any.fromFunction1(value))
     
     inline def setWord(value: String): Self = StObject.set(x, "Word", value.asInstanceOf[js.Any])
     

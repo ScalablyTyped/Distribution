@@ -11,31 +11,31 @@ object keyboardControlMod {
   
   @JSImport("playable/dist/src/modules/keyboard-control/keyboard-control", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with KeyboardControl {
     def this(hasConfigEventEmitterRootContainerEngine: EventEmitter) = this()
     
     /* private */ /* CompleteClass */
-    var _attachDefaultControls: js.Any = js.native
+    var _attachDefaultControls: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _destroyInterceptor: js.Any = js.native
+    var _destroyInterceptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _engine: js.Any = js.native
+    var _engine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initInterceptor: js.Any = js.native
+    var _initInterceptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _isEnabled: js.Any = js.native
+    var _isEnabled: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _keyboardInterceptor: js.Any = js.native
+    var _keyboardInterceptor: Any = js.native
     
     /* CompleteClass */
     override def addKeyControl(key: Double, callback: EventListener): Unit = js.native
@@ -73,30 +73,30 @@ object keyboardControlMod {
     extends StObject
        with IKeyboardControl {
     
-    /* private */ var _attachDefaultControls: js.Any
+    /* private */ var _attachDefaultControls: Any
     
-    /* private */ var _destroyInterceptor: js.Any
+    /* private */ var _destroyInterceptor: Any
     
-    /* private */ var _engine: js.Any
+    /* private */ var _engine: Any
     
-    /* private */ var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: Any
     
-    /* private */ var _initInterceptor: js.Any
+    /* private */ var _initInterceptor: Any
     
-    /* private */ var _isEnabled: js.Any
+    /* private */ var _isEnabled: Any
     
-    /* private */ var _keyboardInterceptor: js.Any
+    /* private */ var _keyboardInterceptor: Any
   }
   object KeyboardControl {
     
     inline def apply(
-      _attachDefaultControls: js.Any,
-      _destroyInterceptor: js.Any,
-      _engine: js.Any,
-      _eventEmitter: js.Any,
-      _initInterceptor: js.Any,
-      _isEnabled: js.Any,
-      _keyboardInterceptor: js.Any,
+      _attachDefaultControls: Any,
+      _destroyInterceptor: Any,
+      _engine: Any,
+      _eventEmitter: Any,
+      _initInterceptor: Any,
+      _isEnabled: Any,
+      _keyboardInterceptor: Any,
       addKeyControl: (Double, EventListener) => Unit,
       destroy: () => Unit
     ): KeyboardControl = {
@@ -106,19 +106,19 @@ object keyboardControlMod {
     
     extension [Self <: KeyboardControl](x: Self) {
       
-      inline def set_attachDefaultControls(value: js.Any): Self = StObject.set(x, "_attachDefaultControls", value.asInstanceOf[js.Any])
+      inline def set_attachDefaultControls(value: Any): Self = StObject.set(x, "_attachDefaultControls", value.asInstanceOf[js.Any])
       
-      inline def set_destroyInterceptor(value: js.Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
+      inline def set_destroyInterceptor(value: Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
       
-      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      inline def set_initInterceptor(value: js.Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
+      inline def set_initInterceptor(value: Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
       
-      inline def set_isEnabled(value: js.Any): Self = StObject.set(x, "_isEnabled", value.asInstanceOf[js.Any])
+      inline def set_isEnabled(value: Any): Self = StObject.set(x, "_isEnabled", value.asInstanceOf[js.Any])
       
-      inline def set_keyboardInterceptor(value: js.Any): Self = StObject.set(x, "_keyboardInterceptor", value.asInstanceOf[js.Any])
+      inline def set_keyboardInterceptor(value: Any): Self = StObject.set(x, "_keyboardInterceptor", value.asInstanceOf[js.Any])
     }
   }
 }

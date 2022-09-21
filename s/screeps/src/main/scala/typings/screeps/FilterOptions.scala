@@ -5,23 +5,36 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Filter Options
-trait FilterOptions[T /* <: FindConstant */] extends StObject {
+trait FilterOptions[T /* <: FindConstant */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[T] */ js.Any */] extends StObject {
   
-  var filter: FilterFunction[T] | FilterObject | String
+  var filter: (FilterFunction[
+    /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[T] */ js.Any, 
+    S
+  ]) | FilterObject | String
 }
 object FilterOptions {
   
-  inline def apply[T /* <: FindConstant */](filter: FilterFunction[T] | FilterObject | String): FilterOptions[T] = {
+  inline def apply[T /* <: FindConstant */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[T] */ js.Any */](
+    filter: (FilterFunction[
+      /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[T] */ js.Any, 
+      S
+    ]) | FilterObject | String
+  ): FilterOptions[T, S] = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FilterOptions[T]]
+    __obj.asInstanceOf[FilterOptions[T, S]]
   }
   
-  extension [Self <: FilterOptions[?], T /* <: FindConstant */](x: Self & FilterOptions[T]) {
+  extension [Self <: FilterOptions[?, ?], T /* <: FindConstant */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[T] */ js.Any */](x: Self & (FilterOptions[T, S])) {
     
-    inline def setFilter(value: FilterFunction[T] | FilterObject | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(
+      value: (FilterFunction[
+          /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[T] */ js.Any, 
+          S
+        ]) | FilterObject | String
+    ): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterFunction1(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[T] */ /* object */ js.Any => Boolean
+      value: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[T] */ js.Any => /* is S */ Boolean
     ): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
   }
 }

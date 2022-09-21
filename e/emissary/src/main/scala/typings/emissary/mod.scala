@@ -21,18 +21,18 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("emissary", "Emitter")
   @js.native
-  class Emitter ()
+  open class Emitter ()
     extends StObject
        with IEmitter {
     
     /* CompleteClass */
-    override def behavior(eventName: String, initialValue: js.Any): Unit = js.native
+    override def behavior(eventName: String, initialValue: Any): Unit = js.native
     
     /* CompleteClass */
     override def decrementSubscriptionCount(eventName: String): Double = js.native
     
     /* CompleteClass */
-    override def emit(eventName: String, args: js.Any*): Unit = js.native
+    override def emit(eventName: String, args: Any*): Unit = js.native
     
     /* CompleteClass */
     override def getSubscriptionCount(eventName: String): Double = js.native
@@ -47,11 +47,11 @@ object mod {
     override def off(eventNames: String, handler: js.Function): Unit = js.native
     
     /* CompleteClass */
-    override def on(eventNames: String, handler: js.Function): js.Any = js.native
+    override def on(eventNames: String, handler: js.Function): Any = js.native
     
     // return value type are Signal
     /* CompleteClass */
-    override def once(eventName: String, handler: js.Function): js.Any = js.native
+    override def once(eventName: String, handler: js.Function): Any = js.native
     
     /* CompleteClass */
     override def pauseEvents(eventNames: String): Unit = js.native
@@ -76,7 +76,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("emissary", "Subscriber")
   @js.native
-  class Subscriber ()
+  open class Subscriber ()
     extends StObject
        with ISubscriber
   @JSImport("emissary", "Subscriber")
@@ -91,11 +91,11 @@ object mod {
   
   trait IEmitter extends StObject {
     
-    def behavior(eventName: String, initialValue: js.Any): Unit
+    def behavior(eventName: String, initialValue: Any): Unit
     
     def decrementSubscriptionCount(eventName: String): Double
     
-    def emit(eventName: String, args: js.Any*): Unit
+    def emit(eventName: String, args: Any*): Unit
     
     def getSubscriptionCount(eventName: String): Double
     
@@ -105,10 +105,10 @@ object mod {
     
     def off(eventNames: String, handler: js.Function): Unit
     
-    def on(eventNames: String, handler: js.Function): js.Any
+    def on(eventNames: String, handler: js.Function): Any
     
     // return value type are Signal
-    def once(eventName: String, handler: js.Function): js.Any
+    def once(eventName: String, handler: js.Function): Any
     
     def pauseEvents(eventNames: String): Unit
     
@@ -120,15 +120,15 @@ object mod {
   object IEmitter {
     
     inline def apply(
-      behavior: (String, js.Any) => Unit,
+      behavior: (String, Any) => Unit,
       decrementSubscriptionCount: String => Double,
-      emit: (String, /* repeated */ js.Any) => Unit,
+      emit: (String, /* repeated */ Any) => Unit,
       getSubscriptionCount: String => Double,
       hasSubscriptions: String => Boolean,
       incrementSubscriptionCount: String => Double,
       off: (String, js.Function) => Unit,
-      on: (String, js.Function) => js.Any,
-      once: (String, js.Function) => js.Any,
+      on: (String, js.Function) => Any,
+      once: (String, js.Function) => Any,
       pauseEvents: String => Unit,
       resumeEvents: String => Unit,
       signal: String => Unit
@@ -139,11 +139,11 @@ object mod {
     
     extension [Self <: IEmitter](x: Self) {
       
-      inline def setBehavior(value: (String, js.Any) => Unit): Self = StObject.set(x, "behavior", js.Any.fromFunction2(value))
+      inline def setBehavior(value: (String, Any) => Unit): Self = StObject.set(x, "behavior", js.Any.fromFunction2(value))
       
       inline def setDecrementSubscriptionCount(value: String => Double): Self = StObject.set(x, "decrementSubscriptionCount", js.Any.fromFunction1(value))
       
-      inline def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
       inline def setGetSubscriptionCount(value: String => Double): Self = StObject.set(x, "getSubscriptionCount", js.Any.fromFunction1(value))
       
@@ -153,9 +153,9 @@ object mod {
       
       inline def setOff(value: (String, js.Function) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      inline def setOn(value: (String, js.Function) => js.Any): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function) => Any): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      inline def setOnce(value: (String, js.Function) => js.Any): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      inline def setOnce(value: (String, js.Function) => Any): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
       
       inline def setPauseEvents(value: String => Unit): Self = StObject.set(x, "pauseEvents", js.Any.fromFunction1(value))
       
@@ -174,16 +174,16 @@ object mod {
   @js.native
   trait ISubscriber extends StObject {
     
-    def addSubscription(subscription: js.Any): ISubscription = js.native
+    def addSubscription(subscription: Any): ISubscription = js.native
     
-    def subscribe(eventEmitterOrSubscription: js.Any, args: js.Any*): ISubscription = js.native
+    def subscribe(eventEmitterOrSubscription: Any, args: Any*): ISubscription = js.native
     
-    def subscribeToCommand(eventEmitter: js.Any, args: js.Any*): ISubscription = js.native
+    def subscribeToCommand(eventEmitter: Any, args: Any*): ISubscription = js.native
     
-    def subscribeWith(eventEmitter: js.Any, methodName: String, args: js.Any): ISubscription = js.native
+    def subscribeWith(eventEmitter: Any, methodName: String, args: Any): ISubscription = js.native
     
-    def unsubscribe(): js.Any = js.native
-    def unsubscribe(`object`: js.Any): js.Any = js.native
+    def unsubscribe(): Any = js.native
+    def unsubscribe(`object`: Any): Any = js.native
   }
   
   @js.native
@@ -198,21 +198,21 @@ object mod {
     
     var cancelled: Boolean
     
-    def off(): js.Any
+    def off(): Any
   }
   object ISubscription {
     
     inline def apply(
-      behavior: (String, js.Any) => Unit,
+      behavior: (String, Any) => Unit,
       cancelled: Boolean,
       decrementSubscriptionCount: String => Double,
-      emit: (String, /* repeated */ js.Any) => Unit,
+      emit: (String, /* repeated */ Any) => Unit,
       getSubscriptionCount: String => Double,
       hasSubscriptions: String => Boolean,
       incrementSubscriptionCount: String => Double,
-      off: () => js.Any,
-      on: (String, js.Function) => js.Any,
-      once: (String, js.Function) => js.Any,
+      off: () => Any,
+      on: (String, js.Function) => Any,
+      once: (String, js.Function) => Any,
       pauseEvents: String => Unit,
       resumeEvents: String => Unit,
       signal: String => Unit
@@ -225,17 +225,12 @@ object mod {
       
       inline def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
       
-      inline def setOff(value: () => js.Any): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
+      inline def setOff(value: () => Any): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
     }
   }
   
   @js.native
   trait ISubscriptionStatic
     extends StObject
-       with Instantiable3[
-          /* emitter */ js.Any, 
-          /* eventNames */ String, 
-          /* handler */ js.Function, 
-          ISubscription
-        ]
+       with Instantiable3[/* emitter */ Any, /* eventNames */ String, /* handler */ js.Function, ISubscription]
 }

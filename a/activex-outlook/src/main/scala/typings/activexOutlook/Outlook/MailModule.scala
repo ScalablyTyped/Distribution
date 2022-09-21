@@ -19,7 +19,7 @@ trait MailModule extends StObject {
   /* private */ @JSName("Outlook.MailModule_typekey")
   var OutlookDotMailModule_typekey: MailModule
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: Double
   
@@ -36,7 +36,7 @@ object MailModule {
     NavigationGroups: NavigationGroups,
     NavigationModuleType: OlNavigationModuleType,
     OutlookDotMailModule_typekey: MailModule,
-    Parent: js.Any,
+    Parent: Any,
     Position: Double,
     Session: NameSpace,
     Visible: Boolean
@@ -60,7 +60,7 @@ object MailModule {
     
     inline def setOutlookDotMailModule_typekey(value: MailModule): Self = StObject.set(x, "Outlook.MailModule_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,7 @@ object ListActiveBreakpointsResponse {
     
     inline def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
     
-    inline def setBreakpointsVarargs(value: Breakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
+    inline def setBreakpointsVarargs(value: Breakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value*))
     
     inline def setNextWaitToken(value: String): Self = StObject.set(x, "nextWaitToken", value.asInstanceOf[js.Any])
     

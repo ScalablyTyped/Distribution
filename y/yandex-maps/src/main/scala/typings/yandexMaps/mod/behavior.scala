@@ -6,14 +6,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-//option.presetStorage
-//[number, number]
-//[[number, number], [number, number]]
 object behavior {
   
   @JSImport("yandex-maps", "behavior.DblClickZoom")
   @js.native
-  class DblClickZoom ()
+  open class DblClickZoom ()
     extends StObject
        with IBehavior {
     def this(options: IDblClickZoomOptions) = this()
@@ -26,7 +23,7 @@ object behavior {
   
   @JSImport("yandex-maps", "behavior.Drag")
   @js.native
-  class Drag ()
+  open class Drag ()
     extends StObject
        with IBehavior {
     def this(options: IDragOptions) = this()
@@ -39,7 +36,7 @@ object behavior {
   
   @JSImport("yandex-maps", "behavior.LeftMouseButtonMagnifier")
   @js.native
-  class LeftMouseButtonMagnifier ()
+  open class LeftMouseButtonMagnifier ()
     extends StObject
        with IBehavior {
     def this(options: ILeftMouseButtonMagnifierOptions) = this()
@@ -52,7 +49,7 @@ object behavior {
   
   @JSImport("yandex-maps", "behavior.MultiTouch")
   @js.native
-  class MultiTouch ()
+  open class MultiTouch ()
     extends StObject
        with IBehavior {
     def this(options: IMultiTouchOptions) = this()
@@ -65,7 +62,7 @@ object behavior {
   
   @JSImport("yandex-maps", "behavior.RightMouseButtonMagnifier")
   @js.native
-  class RightMouseButtonMagnifier ()
+  open class RightMouseButtonMagnifier ()
     extends StObject
        with IBehavior {
     def this(options: IRightMouseButtonMagnifierOptions) = this()
@@ -78,7 +75,7 @@ object behavior {
   
   @JSImport("yandex-maps", "behavior.RouteEditor")
   @js.native
-  class RouteEditor ()
+  open class RouteEditor ()
     extends StObject
        with IBehavior {
     
@@ -97,7 +94,7 @@ object behavior {
   
   @JSImport("yandex-maps", "behavior.Ruler")
   @js.native
-  class Ruler ()
+  open class Ruler ()
     extends StObject
        with IBehavior {
     def this(options: IRulerOptions) = this()
@@ -117,7 +114,7 @@ object behavior {
   
   @JSImport("yandex-maps", "behavior.ScrollZoom")
   @js.native
-  class ScrollZoom ()
+  open class ScrollZoom ()
     extends StObject
        with IBehavior {
     def this(options: IScrollZoomOptions) = this()

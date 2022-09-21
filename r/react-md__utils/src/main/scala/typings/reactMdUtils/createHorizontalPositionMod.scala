@@ -1,9 +1,8 @@
 package typings.reactMdUtils
 
 import typings.reactMdUtils.getCoordMod.XCoordConfig
-import typings.reactMdUtils.typesMod.HorizontalPosition
-import typings.reactMdUtils.typesMod.PositionWidth
-import typings.std.ClientRect
+import typings.reactMdUtils.positioningTypesMod.HorizontalPosition
+import typings.reactMdUtils.positioningTypesMod.PositionWidth
 import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,7 +31,7 @@ object createHorizontalPositionMod {
   /* Inlined parent std.Pick<@react-md/utils.@react-md/utils/types/positioning/createHorizontalPosition.Options, 'x' | 'vw' | 'elWidth' | 'xMargin' | 'vwMargin' | 'containerRect' | 'initialX'> */
   trait EqualWidthOptions extends StObject {
     
-    var containerRect: DOMRect | ClientRect
+    var containerRect: DOMRect
     
     var elWidth: Double
     
@@ -51,7 +50,7 @@ object createHorizontalPositionMod {
   object EqualWidthOptions {
     
     inline def apply(
-      containerRect: DOMRect | ClientRect,
+      containerRect: DOMRect,
       elWidth: Double,
       isMinWidth: Boolean,
       vw: Double,
@@ -65,7 +64,7 @@ object createHorizontalPositionMod {
     
     extension [Self <: EqualWidthOptions](x: Self) {
       
-      inline def setContainerRect(value: DOMRect | ClientRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
+      inline def setContainerRect(value: DOMRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
       
       inline def setElWidth(value: Double): Self = StObject.set(x, "elWidth", value.asInstanceOf[js.Any])
       
@@ -98,7 +97,7 @@ object createHorizontalPositionMod {
   object FixConfig {
     
     inline def apply(
-      containerRect: DOMRect | ClientRect,
+      containerRect: DOMRect,
       disableSwapping: Boolean,
       elWidth: Double,
       screenRight: Double,
@@ -120,12 +119,12 @@ object createHorizontalPositionMod {
   }
   
   /**
-    * @private
+    * @internal
     */
   /* Inlined parent std.Required<std.Pick<@react-md/utils.@react-md/utils/types/positioning/types.FixedPositionOptions, 'vwMargin' | 'xMargin' | 'width' | 'disableSwapping'>> */
   trait Options extends StObject {
     
-    var containerRect: DOMRect | ClientRect
+    var containerRect: DOMRect
     
     var disableSwapping: Boolean
     
@@ -146,7 +145,7 @@ object createHorizontalPositionMod {
   object Options {
     
     inline def apply(
-      containerRect: DOMRect | ClientRect,
+      containerRect: DOMRect,
       disableSwapping: Boolean,
       elWidth: Double,
       vw: Double,
@@ -161,7 +160,7 @@ object createHorizontalPositionMod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setContainerRect(value: DOMRect | ClientRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
+      inline def setContainerRect(value: DOMRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
       
       inline def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
       
@@ -184,7 +183,7 @@ object createHorizontalPositionMod {
   }
   
   /**
-    * @private
+    * @internal
     */
   trait XPosition extends StObject {
     

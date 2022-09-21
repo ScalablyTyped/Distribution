@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NormalSuccessResponse extends StObject {
   
-  // response headers
+  /** response headers */
+  /** todo the object in detail */
   var headers: js.Object
   
-  //  request total use time (ms)
+  /**  request total use time (ms) */
   var rt: Double
   
-  // todo the object in detail
-  // response size
+  /** response size */
   var size: Double
   
-  // response status
+  /** response status */
   var status: Double
 }
 object NormalSuccessResponse {

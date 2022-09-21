@@ -12,7 +12,7 @@ trait StorageLensConfiguration extends StObject {
   var AccountLevel: typings.awsSdk.s3controlMod.AccountLevel
   
   /**
-    * A container for the AWS organization for this S3 Storage Lens configuration.
+    * A container for the Amazon Web Services organization for this S3 Storage Lens configuration.
     */
   var AwsOrg: js.UndefOr[StorageLensAwsOrg] = js.undefined
   

@@ -48,7 +48,7 @@ object anon {
     
     var consentCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var ipfs: js.UndefOr[js.Any] = js.undefined
+    var ipfs: js.UndefOr[Any] = js.undefined
     
     var pinningNode: js.UndefOr[String] = js.undefined
   }
@@ -69,7 +69,7 @@ object anon {
       
       inline def setConsentCallbackUndefined: Self = StObject.set(x, "consentCallback", js.undefined)
       
-      inline def setIpfs(value: js.Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
+      inline def setIpfs(value: Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
       
       inline def setIpfsUndefined: Self = StObject.set(x, "ipfs", js.undefined)
       
@@ -104,7 +104,7 @@ object anon {
     
     var blocklist: js.UndefOr[js.Function1[/* address */ String, Boolean]] = js.undefined
     
-    var ipfs: js.UndefOr[js.Any] = js.undefined
+    var ipfs: js.UndefOr[Any] = js.undefined
     
     var metadata: js.UndefOr[String] = js.undefined
     
@@ -129,7 +129,7 @@ object anon {
       
       inline def setBlocklistUndefined: Self = StObject.set(x, "blocklist", js.undefined)
       
-      inline def setIpfs(value: js.Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
+      inline def setIpfs(value: Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
       
       inline def setIpfsUndefined: Self = StObject.set(x, "ipfs", js.undefined)
       
@@ -267,7 +267,7 @@ object anon {
   
   trait Metadata extends StObject {
     
-    var blocklist: js.UndefOr[js.Any] = js.undefined
+    var blocklist: js.UndefOr[Any] = js.undefined
     
     var metadata: js.UndefOr[String] = js.undefined
     
@@ -282,7 +282,7 @@ object anon {
     
     extension [Self <: Metadata](x: Self) {
       
-      inline def setBlocklist(value: js.Any): Self = StObject.set(x, "blocklist", value.asInstanceOf[js.Any])
+      inline def setBlocklist(value: Any): Self = StObject.set(x, "blocklist", value.asInstanceOf[js.Any])
       
       inline def setBlocklistUndefined: Self = StObject.set(x, "blocklist", js.undefined)
       

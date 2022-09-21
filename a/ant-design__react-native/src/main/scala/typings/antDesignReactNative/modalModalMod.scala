@@ -6,13 +6,11 @@ import typings.antDesignReactNative.modalPropsTypeMod.CallbackOnBackHandler
 import typings.antDesignReactNative.modalPropsTypeMod.CallbackOrActions
 import typings.antDesignReactNative.modalPropsTypeMod.ModalPropsType
 import typings.antDesignReactNative.modalStyleMod.ModalStyle
-import typings.propTypes.mod.Requireable
 import typings.react.mod.Component
+import typings.react.mod.Context
 import typings.react.mod.ReactNode
-import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
-import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +20,7 @@ object modalModalMod {
   
   @JSImport("@ant-design/react-native/lib/modal/Modal", JSImport.Default)
   @js.native
-  class default () extends AntmModal
+  open class default () extends AntmModal
   object default {
     
     @JSImport("@ant-design/react-native/lib/modal/Modal", JSImport.Default)
@@ -51,17 +49,10 @@ object modalModalMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alert")(x.asInstanceOf[js.Any])
     
     /* static member */
-    object contextTypes {
-      
-      @JSImport("@ant-design/react-native/lib/modal/Modal", "default.contextTypes")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@ant-design/react-native/lib/modal/Modal", "default.contextTypes.antLocale")
-      @js.native
-      def antLocale: Requireable[js.Object] = js.native
-      inline def antLocale_=(x: Requireable[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("antLocale")(x.asInstanceOf[js.Any])
-    }
+    @JSImport("@ant-design/react-native/lib/modal/Modal", "default.contextType")
+    @js.native
+    def contextType: Context[js.Object] = js.native
+    inline def contextType_=(x: Context[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     /* static member */
     object defaultProps {
@@ -123,13 +114,13 @@ object modalModalMod {
     @JSImport("@ant-design/react-native/lib/modal/Modal", "default.operation")
     @js.native
     def operation: js.Function2[
-        /* actions */ js.Array[js.Any], 
+        /* actions */ js.Array[Any], 
         /* onBackHandler */ js.UndefOr[CallbackOnBackHandler], 
         Double
       ] = js.native
     inline def operation_=(
       x: js.Function2[
-          /* actions */ js.Array[js.Any], 
+          /* actions */ js.Array[Any], 
           /* onBackHandler */ js.UndefOr[CallbackOnBackHandler], 
           Double
         ]
@@ -164,15 +155,7 @@ object modalModalMod {
   }
   
   @js.native
-  trait AntmModal
-    extends Component[ModalProps, js.Any, js.Any] {
-    
-    def onFooterLayout(e: LayoutChangeEvent): Unit = js.native
-    
-    var root: View | Null = js.native
-    
-    def saveRoot(root: js.Any): Unit = js.native
-  }
+  trait AntmModal extends Component[ModalProps, Any, Any]
   
   trait ModalProps
     extends StObject

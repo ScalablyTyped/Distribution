@@ -22,17 +22,17 @@ object viewDirectiveMod {
   trait UIViewAnimData extends StObject {
     
     @JSName("$animEnter")
-    var $animEnter: js.Promise[js.Any]
+    var $animEnter: js.Promise[Any]
     
     @JSName("$animLeave")
-    var $animLeave: js.Promise[js.Any]
+    var $animLeave: js.Promise[Any]
     
     @JSName("$$animLeave")
     var DollarDollaranimLeave: Resolve
   }
   object UIViewAnimData {
     
-    inline def apply($animEnter: js.Promise[js.Any], $animLeave: js.Promise[js.Any], DollarDollaranimLeave: Resolve): UIViewAnimData = {
+    inline def apply($animEnter: js.Promise[Any], $animLeave: js.Promise[Any], DollarDollaranimLeave: Resolve): UIViewAnimData = {
       val __obj = js.Dynamic.literal($animEnter = $animEnter.asInstanceOf[js.Any], $animLeave = $animLeave.asInstanceOf[js.Any])
       __obj.updateDynamic("$$animLeave")(DollarDollaranimLeave.asInstanceOf[js.Any])
       __obj.asInstanceOf[UIViewAnimData]
@@ -40,9 +40,9 @@ object viewDirectiveMod {
     
     extension [Self <: UIViewAnimData](x: Self) {
       
-      inline def set$animEnter(value: js.Promise[js.Any]): Self = StObject.set(x, "$animEnter", value.asInstanceOf[js.Any])
+      inline def set$animEnter(value: js.Promise[Any]): Self = StObject.set(x, "$animEnter", value.asInstanceOf[js.Any])
       
-      inline def set$animLeave(value: js.Promise[js.Any]): Self = StObject.set(x, "$animLeave", value.asInstanceOf[js.Any])
+      inline def set$animLeave(value: js.Promise[Any]): Self = StObject.set(x, "$animLeave", value.asInstanceOf[js.Any])
       
       inline def setDollarDollaranimLeave(value: Resolve): Self = StObject.set(x, "$$animLeave", value.asInstanceOf[js.Any])
     }

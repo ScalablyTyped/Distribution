@@ -68,7 +68,7 @@ object Champion {
       
       inline def setChampions(value: js.Array[ChampionDto]): Self = StObject.set(x, "champions", value.asInstanceOf[js.Any])
       
-      inline def setChampionsVarargs(value: ChampionDto*): Self = StObject.set(x, "champions", js.Array(value :_*))
+      inline def setChampionsVarargs(value: ChampionDto*): Self = StObject.set(x, "champions", js.Array(value*))
     }
   }
 }

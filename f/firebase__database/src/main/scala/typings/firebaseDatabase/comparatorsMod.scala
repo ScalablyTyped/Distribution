@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object comparatorsMod {
   
-  @JSImport("@firebase/database/dist/src/core/snap/comparators", JSImport.Namespace)
+  @JSImport("@firebase/database/dist/node-esm/src/core/snap/comparators", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

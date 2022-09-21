@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "SliderBase")
 @js.native
-class SliderBase protected ()
+open class SliderBase protected ()
   extends typings.officeUiFabricReact.mod.SliderBase {
   def this(props: ISliderProps) = this()
 }

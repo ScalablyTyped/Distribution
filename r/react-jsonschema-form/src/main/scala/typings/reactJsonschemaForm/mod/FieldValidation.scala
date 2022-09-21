@@ -23,6 +23,6 @@ object FieldValidation {
     
     inline def set__errors(value: js.Array[FieldError]): Self = StObject.set(x, "__errors", value.asInstanceOf[js.Any])
     
-    inline def set__errorsVarargs(value: FieldError*): Self = StObject.set(x, "__errors", js.Array(value :_*))
+    inline def set__errorsVarargs(value: FieldError*): Self = StObject.set(x, "__errors", js.Array(value*))
   }
 }

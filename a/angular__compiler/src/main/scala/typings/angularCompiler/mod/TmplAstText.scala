@@ -6,7 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "TmplAstText")
 @js.native
-class TmplAstText protected ()
-  extends typings.angularCompiler.compilerMod.TmplAstText {
-  def this(value: String, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
+open class TmplAstText protected ()
+  extends StObject
+     with TmplAstNode {
+  def this(value: String, sourceSpan: ParseSourceSpan) = this()
+  
+  /* CompleteClass */
+  var sourceSpan: ParseSourceSpan = js.native
+  
+  var value: String = js.native
+  
+  /* CompleteClass */
+  override def visit[Result](visitor: Visitor3[Result]): Result = js.native
 }

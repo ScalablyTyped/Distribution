@@ -10,10 +10,10 @@ object descriptionMod {
   
   @JSImport("material-ui/svg-icons/action/description", JSImport.Default)
   @js.native
-  class default () extends ActionDescription
+  open class default () extends ActionDescription
   
   @JSImport("material-ui/svg-icons/action/description", "ActionDescription")
   @js.native
-  class ActionDescription ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionDescription ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the columns that are part of the table.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -24,11 +24,12 @@ trait TableColumnCollection
   /**
     * Adds a new column to the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1 requires an index smaller than the total column count; 1.4 allows index to be optional (null or -1) and will append a column at the end; 1.4 allows name parameter at creation time.]
     *
     * @param index Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.
-    * @param values Optional. A 2-dimensional array of unformatted values of the table column.
-    * @param name Optional. Specifies the name of the new column. If null, the default name will be used.
+    * @param values Optional. A 2D array of unformatted values of the table column.
+    * @param name Optional. Specifies the name of the new column. If `null`, the default name will be used.
     */
   def add(): TableColumn = js.native
   def add(index: Double): TableColumn = js.native
@@ -56,9 +57,9 @@ trait TableColumnCollection
   var context_TableColumnCollection: RequestContext = js.native
   
   /**
-    *
     * Returns the number of columns in the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val count: Double = js.native
@@ -66,23 +67,26 @@ trait TableColumnCollection
   /**
     * Gets the number of columns in the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   
   def getItem(key: String): TableColumn = js.native
   /**
-    * Gets a column object by Name or ID.
+    * Gets a column object by name or ID.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     *
-    * @param key Column Name or ID.
+    * @param key Column name or ID.
     */
   def getItem(key: Double): TableColumn = js.native
   
   /**
     * Gets a column based on its position in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     *
     * @param index Index value of the object to be retrieved. Zero-indexed.
@@ -91,11 +95,13 @@ trait TableColumnCollection
   
   def getItemOrNullObject(key: String): TableColumn = js.native
   /**
-    * Gets a column object by Name or ID. If the column does not exist, will return a null object.
+    * Gets a column object by name or ID. If the column doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     *
-    * @param key Column Name or ID.
+    * @param key Column name or ID.
     */
   def getItemOrNullObject(key: Double): TableColumn = js.native
   

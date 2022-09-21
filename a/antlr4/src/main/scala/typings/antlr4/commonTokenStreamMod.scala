@@ -10,9 +10,9 @@ object commonTokenStreamMod {
   
   @JSImport("antlr4/CommonTokenStream", "CommonTokenStream")
   @js.native
-  class CommonTokenStream protected () extends BufferedTokenStream {
+  open class CommonTokenStream protected () extends BufferedTokenStream {
     def this(lexer: Lexer) = this()
-    def this(lexer: Lexer, channel: js.Any) = this()
+    def this(lexer: Lexer, channel: Any) = this()
     
     def getNumberOfOnChannelTokens(): Double = js.native
   }

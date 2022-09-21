@@ -24,6 +24,6 @@ object RegisterDBProxyTargetsResponse {
     
     inline def setDBProxyTargetsUndefined: Self = StObject.set(x, "DBProxyTargets", js.undefined)
     
-    inline def setDBProxyTargetsVarargs(value: DBProxyTarget*): Self = StObject.set(x, "DBProxyTargets", js.Array(value :_*))
+    inline def setDBProxyTargetsVarargs(value: DBProxyTarget*): Self = StObject.set(x, "DBProxyTargets", js.Array(value*))
   }
 }

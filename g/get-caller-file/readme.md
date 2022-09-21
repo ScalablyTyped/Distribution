@@ -10,15 +10,12 @@ Typings are for version 2.0.5
 | ------------------ | :-------------: |
 | Full name          | get-caller-file |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 145 |
-| # downloads        | 912042905 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.33867586E8 |
+| # stars            | 27.0 |
 
 ## Links
-- [Homepage](https://github.com/stefanpenner/get-caller-file#readme)
-- [Bugs](https://github.com/stefanpenner/get-caller-file/issues)
-- [Repository](https://github.com/stefanpenner/get-caller-file)
 - [Npm](https://www.npmjs.com/package/get-caller-file)
     
 

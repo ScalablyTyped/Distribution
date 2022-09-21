@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.organization
   - typings.microsoftGraph.microsoftGraphStrings.roleIsPresenter
   - typings.microsoftGraph.microsoftGraphStrings.organizer
-  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
 trait OnlineMeetingPresenters extends StObject
 object OnlineMeetingPresenters {
@@ -22,5 +23,5 @@ object OnlineMeetingPresenters {
   
   inline def roleIsPresenter: typings.microsoftGraph.microsoftGraphStrings.roleIsPresenter = "roleIsPresenter".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.roleIsPresenter]
   
-  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
 }

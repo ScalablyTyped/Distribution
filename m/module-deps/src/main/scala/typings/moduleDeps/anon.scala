@@ -1,11 +1,31 @@
 package typings.moduleDeps
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.moduleDeps.mod.PackageObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait Basedir extends StObject {
+    
+    var basedir: js.UndefOr[String] = js.undefined
+  }
+  object Basedir {
+    
+    inline def apply(): Basedir = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Basedir]
+    }
+    
+    extension [Self <: Basedir](x: Self) {
+      
+      inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
+      
+      inline def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
+    }
+  }
   
   trait Builtin extends StObject {
     
@@ -32,36 +52,9 @@ object anon {
     }
   }
   
-  trait Deps extends StObject {
-    
-    @JSName("package")
-    var _package: js.Any
-    
-    var deps: StringDictionary[Boolean]
-    
-    var source: String
-  }
-  object Deps {
-    
-    inline def apply(_package: js.Any, deps: StringDictionary[Boolean], source: String): Deps = {
-      val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-      __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Deps]
-    }
-    
-    extension [Self <: Deps](x: Self) {
-      
-      inline def setDeps(value: StringDictionary[Boolean]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
-      
-      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
-      
-      inline def set_package(value: js.Any): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Dictprop
     extends StObject
-       with /* prop */ StringDictionary[js.Any] {
+       with /* prop */ StringDictionary[Any] {
     
     var filename: String
     
@@ -127,37 +120,113 @@ object anon {
     }
   }
   
-  trait Id extends StObject {
-    
-    var id: String
-  }
-  object Id {
-    
-    inline def apply(id: String): Id = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Id]
-    }
-    
-    extension [Self <: Id](x: Self) {
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Modules extends StObject {
     
-    var modules: js.Any
+    var modules: Any
   }
   object Modules {
     
-    inline def apply(modules: js.Any): Modules = {
+    inline def apply(modules: Any): Modules = {
       val __obj = js.Dynamic.literal(modules = modules.asInstanceOf[js.Any])
       __obj.asInstanceOf[Modules]
     }
     
     extension [Self <: Modules](x: Self) {
       
-      inline def setModules(value: js.Any): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      inline def setModules(value: Any): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined module-deps.module-deps.PackageObject & {  __dirname :string} */
+  trait PackageObjectdirnamestrin
+    extends StObject
+       with /* prop */ StringDictionary[Any] {
+    
+    var __dirname: String
+  }
+  object PackageObjectdirnamestrin {
+    
+    inline def apply(__dirname: String): PackageObjectdirnamestrin = {
+      val __obj = js.Dynamic.literal(__dirname = __dirname.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PackageObjectdirnamestrin]
+    }
+    
+    extension [Self <: PackageObjectdirnamestrin](x: Self) {
+      
+      inline def set__dirname(value: String): Self = StObject.set(x, "__dirname", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Partial<module-deps.module-deps.ParentObject> & {  id :string, [name: string] : any} */
+  trait PartialParentObjectidstri
+    extends StObject
+       with /* prop */ StringDictionary[Any] {
+    
+    @JSName("package")
+    var _package: js.UndefOr[Any] = js.undefined
+    
+    var basedir: js.UndefOr[String] = js.undefined
+    
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var filename: js.UndefOr[String] = js.undefined
+    
+    var id: js.UndefOr[String] & String
+    
+    var inNodeModules: js.UndefOr[Boolean] = js.undefined
+    
+    var modules: js.UndefOr[StringDictionary[Any]] = js.undefined
+    
+    var packageFilter: js.UndefOr[js.Function2[/* p */ PackageObject, /* x */ String, PackageObjectdirnamestrin]] = js.undefined
+    
+    var paths: js.UndefOr[js.Array[String]] = js.undefined
+  }
+  object PartialParentObjectidstri {
+    
+    inline def apply(id: js.UndefOr[String] & String): PartialParentObjectidstri = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PartialParentObjectidstri]
+    }
+    
+    extension [Self <: PartialParentObjectidstri](x: Self) {
+      
+      inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
+      
+      inline def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
+      
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
+      
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setId(value: js.UndefOr[String] & String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setInNodeModules(value: Boolean): Self = StObject.set(x, "inNodeModules", value.asInstanceOf[js.Any])
+      
+      inline def setInNodeModulesUndefined: Self = StObject.set(x, "inNodeModules", js.undefined)
+      
+      inline def setModules(value: StringDictionary[Any]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      
+      inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+      
+      inline def setPackageFilter(value: (/* p */ PackageObject, /* x */ String) => PackageObjectdirnamestrin): Self = StObject.set(x, "packageFilter", js.Any.fromFunction2(value))
+      
+      inline def setPackageFilterUndefined: Self = StObject.set(x, "packageFilter", js.undefined)
+      
+      inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      
+      inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+      
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value*))
+      
+      inline def set_package(value: Any): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+      
+      inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
     }
   }
 }

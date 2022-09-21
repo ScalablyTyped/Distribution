@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientTagmanager.anon
 
-import typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager.Container
+import typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager.Workspace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ trait ResourceUploadType extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** When provided, this fingerprint must match the fingerprint of the container in storage. */
+  /** When provided, this fingerprint must match the fingerprint of the workspace in storage. */
   var fingerprint: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
@@ -32,7 +32,7 @@ trait ResourceUploadType extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** GTM Container's API relative path. Example: accounts/{account_id}/containers/{container_id} */
+  /** GTM Workspace's API relative path. Example: accounts/{account_id}/containers/{container_id}/workspaces/{workspace_id} */
   var path: String
   
   /** Returns response with indentations and line breaks. */
@@ -42,7 +42,7 @@ trait ResourceUploadType extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Container
+  var resource: Workspace
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait ResourceUploadType extends StObject {
 }
 object ResourceUploadType {
   
-  inline def apply(path: String, resource: Container): ResourceUploadType = {
+  inline def apply(path: String, resource: Workspace): ResourceUploadType = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceUploadType]
   }
@@ -101,7 +101,7 @@ object ResourceUploadType {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Container): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Workspace): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

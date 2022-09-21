@@ -6,16 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConditionalAccessApplications extends StObject {
   
-  // The list of application IDs explicitly excluded from the policy.
+  /**
+    * Can be one of the following: The list of client IDs (appId) explicitly excluded from the policy. Office365 - For the
+    * list of apps included in Office365, see Conditional Access target apps: Office 365
+    */
   var excludeApplications: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The list of application IDs the policy applies to, unless explicitly excluded (in excludeApplications). Can also be set
-    * to All.
+    * Can be one of the following: The list of client IDs (appId) the policy applies to, unless explicitly excluded (in
+    * excludeApplications) All Office365 - For the list of apps included in Office365, see Conditional Access target apps:
+    * Office 365
     */
   var includeApplications: js.UndefOr[js.Array[String]] = js.undefined
   
-  // User actions to include. For example, urn:user:registersecurityinfo
+  var includeAuthenticationContextClassReferences: js.UndefOr[js.Array[String]] = js.undefined
+  
+  // User actions to include. Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
   var includeUserActions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ConditionalAccessApplications {
@@ -31,18 +37,24 @@ object ConditionalAccessApplications {
     
     inline def setExcludeApplicationsUndefined: Self = StObject.set(x, "excludeApplications", js.undefined)
     
-    inline def setExcludeApplicationsVarargs(value: String*): Self = StObject.set(x, "excludeApplications", js.Array(value :_*))
+    inline def setExcludeApplicationsVarargs(value: String*): Self = StObject.set(x, "excludeApplications", js.Array(value*))
     
     inline def setIncludeApplications(value: js.Array[String]): Self = StObject.set(x, "includeApplications", value.asInstanceOf[js.Any])
     
     inline def setIncludeApplicationsUndefined: Self = StObject.set(x, "includeApplications", js.undefined)
     
-    inline def setIncludeApplicationsVarargs(value: String*): Self = StObject.set(x, "includeApplications", js.Array(value :_*))
+    inline def setIncludeApplicationsVarargs(value: String*): Self = StObject.set(x, "includeApplications", js.Array(value*))
+    
+    inline def setIncludeAuthenticationContextClassReferences(value: js.Array[String]): Self = StObject.set(x, "includeAuthenticationContextClassReferences", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeAuthenticationContextClassReferencesUndefined: Self = StObject.set(x, "includeAuthenticationContextClassReferences", js.undefined)
+    
+    inline def setIncludeAuthenticationContextClassReferencesVarargs(value: String*): Self = StObject.set(x, "includeAuthenticationContextClassReferences", js.Array(value*))
     
     inline def setIncludeUserActions(value: js.Array[String]): Self = StObject.set(x, "includeUserActions", value.asInstanceOf[js.Any])
     
     inline def setIncludeUserActionsUndefined: Self = StObject.set(x, "includeUserActions", js.undefined)
     
-    inline def setIncludeUserActionsVarargs(value: String*): Self = StObject.set(x, "includeUserActions", js.Array(value :_*))
+    inline def setIncludeUserActionsVarargs(value: String*): Self = StObject.set(x, "includeUserActions", js.Array(value*))
   }
 }

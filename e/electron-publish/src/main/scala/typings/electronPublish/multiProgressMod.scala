@@ -9,24 +9,24 @@ object multiProgressMod {
   
   @JSImport("electron-publish/out/multiProgress", "MultiProgress")
   @js.native
-  class MultiProgress () extends StObject {
+  open class MultiProgress () extends StObject {
     
-    /* private */ var allocateLines: js.Any = js.native
+    /* private */ var allocateLines: Any = js.native
     
-    /* private */ var barCount: js.Any = js.native
+    /* private */ var barCount: Any = js.native
     
-    def createBar(format: String, options: js.Any): ProgressBar = js.native
+    def createBar(format: String, options: Any): ProgressBar = js.native
     
-    /* private */ var cursor: js.Any = js.native
+    /* private */ var cursor: Any = js.native
     
-    /* private */ var isLogListenerAdded: js.Any = js.native
+    /* private */ var isLogListenerAdded: Any = js.native
     
-    /* private */ var moveCursor: js.Any = js.native
+    /* private */ var moveCursor: Any = js.native
     
-    /* private */ val stream: js.Any = js.native
+    /* private */ val stream: Any = js.native
     
     def terminate(): Unit = js.native
     
-    /* private */ var totalLines: js.Any = js.native
+    /* private */ var totalLines: Any = js.native
   }
 }

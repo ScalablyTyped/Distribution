@@ -14,7 +14,7 @@ trait MapValue extends StObject {
   var fields: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.firestore.gapi.client.firestore.Value}
-    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.MapValue & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.MapValue & TopLevel[Any]
   ] = js.undefined
 }
 object MapValue {
@@ -29,7 +29,7 @@ object MapValue {
     inline def setFields(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.firestore.gapi.client.firestore.Value}
-      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.MapValue & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.MapValue & TopLevel[Any]
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)

@@ -31,18 +31,18 @@ object MaxAgeSeconds {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
+    inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value*))
     
     inline def setOrigin(value: js.Array[String]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    inline def setOriginVarargs(value: String*): Self = StObject.set(x, "origin", js.Array(value :_*))
+    inline def setOriginVarargs(value: String*): Self = StObject.set(x, "origin", js.Array(value*))
     
     inline def setResponseHeader(value: js.Array[String]): Self = StObject.set(x, "responseHeader", value.asInstanceOf[js.Any])
     
     inline def setResponseHeaderUndefined: Self = StObject.set(x, "responseHeader", js.undefined)
     
-    inline def setResponseHeaderVarargs(value: String*): Self = StObject.set(x, "responseHeader", js.Array(value :_*))
+    inline def setResponseHeaderVarargs(value: String*): Self = StObject.set(x, "responseHeader", js.Array(value*))
   }
 }

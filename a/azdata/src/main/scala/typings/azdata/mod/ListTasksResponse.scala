@@ -19,6 +19,6 @@ object ListTasksResponse {
     
     inline def setTasks(value: js.Array[TaskInfo]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    inline def setTasksVarargs(value: TaskInfo*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: TaskInfo*): Self = StObject.set(x, "tasks", js.Array(value*))
   }
 }

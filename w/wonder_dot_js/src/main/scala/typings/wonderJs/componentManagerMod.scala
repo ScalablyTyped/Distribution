@@ -13,7 +13,7 @@ object componentManagerMod {
   
   @JSImport("wonder.js/dist/es2015/core/entityObject/manager/ComponentManager", "ComponentManager")
   @js.native
-  class ComponentManager protected () extends StObject {
+  open class ComponentManager protected () extends StObject {
     def this(entityObject: EntityObject) = this()
     
     def addComponent(component: Component): this.type = js.native
@@ -21,15 +21,15 @@ object componentManagerMod {
     
     def dispose(): Unit = js.native
     
-    def findComponentByUid(uid: Double): js.Any = js.native
+    def findComponentByUid(uid: Double): Any = js.native
     
     def forEachComponent(func: js.Function1[/* component */ Component, Unit]): this.type = js.native
     
-    def getComponent[T](_class: js.Any): T = js.native
+    def getComponent[T](_class: Any): T = js.native
     
     def getComponentCount(_class: js.Function): Double = js.native
     
-    def getComponents(): js.Any = js.native
+    def getComponents(): Any = js.native
     
     def getGeometry(): Geometry = js.native
     
@@ -40,10 +40,10 @@ object componentManagerMod {
     
     def init(): Unit = js.native
     
-    def removeAllComponent(): js.Any = js.native
+    def removeAllComponent(): Any = js.native
     
-    def removeComponent(_class: js.Function): js.Any = js.native
-    def removeComponent(component: Component): js.Any = js.native
+    def removeComponent(_class: js.Function): Any = js.native
+    def removeComponent(component: Component): Any = js.native
     
     var transform: Transform = js.native
   }

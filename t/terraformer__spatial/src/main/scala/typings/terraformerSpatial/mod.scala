@@ -81,23 +81,23 @@ object mod {
   
   inline def toGeographic(geojson: Feature[Geometry, GeoJsonProperties]): Feature[Geometry, GeoJsonProperties] = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[Feature[Geometry, GeoJsonProperties]]
   inline def toGeographic(geojson: FeatureCollection[Geometry, GeoJsonProperties]): FeatureCollection[Geometry, GeoJsonProperties] = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[FeatureCollection[Geometry, GeoJsonProperties]]
-  inline def toGeographic(geojson: GeometryCollection): GeometryCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[GeometryCollection]
   inline def toGeographic(geojson: LineString): LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[LineString]
   inline def toGeographic(geojson: MultiLineString): MultiLineString = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[MultiLineString]
   inline def toGeographic(geojson: MultiPoint): MultiPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[MultiPoint]
   inline def toGeographic(geojson: MultiPolygon): MultiPolygon = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[MultiPolygon]
   inline def toGeographic(geojson: Point): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[Point]
   inline def toGeographic(geojson: Polygon): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[Polygon]
+  inline def toGeographic[T /* <: GeometryCollection[Any] */](geojson: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeographic")(geojson.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def toMercator(geojson: Feature[Geometry, GeoJsonProperties]): Feature[Geometry, GeoJsonProperties] = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[Feature[Geometry, GeoJsonProperties]]
   inline def toMercator(geojson: FeatureCollection[Geometry, GeoJsonProperties]): FeatureCollection[Geometry, GeoJsonProperties] = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[FeatureCollection[Geometry, GeoJsonProperties]]
-  inline def toMercator(geojson: GeometryCollection): GeometryCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[GeometryCollection]
   inline def toMercator(geojson: LineString): LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[LineString]
   inline def toMercator(geojson: MultiLineString): MultiLineString = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[MultiLineString]
   inline def toMercator(geojson: MultiPoint): MultiPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[MultiPoint]
   inline def toMercator(geojson: MultiPolygon): MultiPolygon = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[MultiPolygon]
   inline def toMercator(geojson: Point): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[Point]
   inline def toMercator(geojson: Polygon): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[Polygon]
+  inline def toMercator[T /* <: GeometryCollection[Any] */](geojson: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("toMercator")(geojson.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def within(geojson: GeoJSON, comparisonGeojson: GeoJSON): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(geojson.asInstanceOf[js.Any], comparisonGeojson.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

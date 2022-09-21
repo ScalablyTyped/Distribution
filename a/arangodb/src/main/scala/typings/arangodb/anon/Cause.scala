@@ -1,15 +1,14 @@
 package typings.arangodb.anon
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Cause extends StObject {
   
-  var cause: js.UndefOr[Error] = js.undefined
+  var cause: js.UndefOr[js.Error] = js.undefined
   
-  var extra: js.UndefOr[js.Any] = js.undefined
+  var extra: js.UndefOr[Any] = js.undefined
 }
 object Cause {
   
@@ -20,11 +19,11 @@ object Cause {
   
   extension [Self <: Cause](x: Self) {
     
-    inline def setCause(value: Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: js.Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
     inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
-    inline def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
     inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
   }

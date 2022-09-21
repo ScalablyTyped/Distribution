@@ -32,7 +32,7 @@ object XTransientDocumentsDocumentContentFactory {
   inline def apply(
     acquire: () => Unit,
     createDocumentContent: XModel => XContent,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTransientDocumentsDocumentContentFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDocumentContent = js.Any.fromFunction1(createDocumentContent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

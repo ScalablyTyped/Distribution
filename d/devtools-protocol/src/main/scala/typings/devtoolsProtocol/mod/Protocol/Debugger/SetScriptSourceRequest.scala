@@ -8,6 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetScriptSourceRequest extends StObject {
   
   /**
+    * If true, then `scriptSource` is allowed to change the function on top of the stack
+    * as long as the top-most stack frame is the only activation of that function.
+    */
+  var allowTopFrameEditing: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * If true the change will not actually be applied. Dry run may be used to get result
     * description without actually modifying the code.
     */
@@ -31,6 +37,10 @@ object SetScriptSourceRequest {
   }
   
   extension [Self <: SetScriptSourceRequest](x: Self) {
+    
+    inline def setAllowTopFrameEditing(value: Boolean): Self = StObject.set(x, "allowTopFrameEditing", value.asInstanceOf[js.Any])
+    
+    inline def setAllowTopFrameEditingUndefined: Self = StObject.set(x, "allowTopFrameEditing", js.undefined)
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     

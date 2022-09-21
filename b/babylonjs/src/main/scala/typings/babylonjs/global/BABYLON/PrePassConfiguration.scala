@@ -1,16 +1,18 @@
 package typings.babylonjs.global.BABYLON
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PrePassConfiguration")
 @js.native
-class PrePassConfiguration ()
+open class PrePassConfiguration ()
   extends StObject
      with typings.babylonjs.BABYLON.PrePassConfiguration {
+  
+  /* private */ /* CompleteClass */
+  var _lastUpdateFrameId: Any = js.native
   
   /**
     * Binds the material data.
@@ -30,11 +32,18 @@ class PrePassConfiguration ()
   ): Unit = js.native
   
   /**
+    * Current view projection matrix
+    * Used for computing velocity
+    */
+  /* CompleteClass */
+  var currentViewProjection: typings.babylonjs.BABYLON.Matrix = js.native
+  
+  /**
     * Previous bones of meshes carrying this material
     * Used for computing velocity
     */
   /* CompleteClass */
-  var previousBones: NumberDictionary[Float32Array] = js.native
+  var previousBones: NumberDictionary[js.typedarray.Float32Array] = js.native
   
   /**
     * Previous view project matrix

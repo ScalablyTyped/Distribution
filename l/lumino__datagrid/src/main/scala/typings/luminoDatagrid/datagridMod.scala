@@ -5,6 +5,7 @@ import typings.luminoDatagrid.anon.Lx
 import typings.luminoDatagrid.anon.Vx
 import typings.luminoDatagrid.celleditorcontrollerMod.ICellEditorController
 import typings.luminoDatagrid.cellrendererMod.CellRenderer
+import typings.luminoDatagrid.datagridMod.DataGrid.ColumnFitType
 import typings.luminoDatagrid.datagridMod.DataGrid.CopyConfig
 import typings.luminoDatagrid.datagridMod.DataGrid.DefaultSizes_
 import typings.luminoDatagrid.datagridMod.DataGrid.HeaderVisibility
@@ -28,6 +29,7 @@ import typings.luminoDatagrid.luminoDatagridStrings.row
 import typings.luminoDatagrid.luminoDatagridStrings.up
 import typings.luminoDatagrid.luminoDatagridStrings.void
 import typings.luminoDatagrid.renderermapMod.RendererMap
+import typings.luminoDatagrid.sectionlistMod.SectionList
 import typings.luminoDatagrid.selectionmodelMod.SelectionModel
 import typings.luminoDatagrid.selectionmodelMod.SelectionModel.CursorMoveDirection
 import typings.luminoDisposable.mod.IDisposable
@@ -35,6 +37,7 @@ import typings.luminoMessaging.mod.IMessageHandler
 import typings.luminoMessaging.mod.Message
 import typings.luminoWidgets.mod.Widget
 import typings.luminoWidgets.mod.Widget.ResizeMessage
+import typings.std.CanvasRenderingContext2D
 import typings.std.Event
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -45,14 +48,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object datagridMod {
   
-  @JSImport("@lumino/datagrid/lib/datagrid", "DataGrid")
+  @JSImport("@lumino/datagrid/types/datagrid", "DataGrid")
   @js.native
   /**
     * Construct a new data grid.
     *
     * @param options - The options for initializing the data grid.
     */
-  class DataGrid () extends Widget {
+  open class DataGrid () extends Widget {
     def this(options: IOptions) = this()
     
     /**
@@ -62,278 +65,290 @@ object datagridMod {
       *
       * This automatically accounts for the dpi ratio.
       */
-    /* private */ var _blitContent: js.Any = js.native
+    /* private */ var _blitContent: Any = js.native
     
-    /* private */ var _buffer: js.Any = js.native
+    /* private */ var _buffer: Any = js.native
     
-    /* private */ var _bufferGC: js.Any = js.native
+    /* private */ var _bufferGC: Any = js.native
     
-    /* private */ var _canvas: js.Any = js.native
+    /* private */ var _canvas: Any = js.native
     
-    /* private */ var _canvasGC: js.Any = js.native
+    /* private */ var _canvasGC: Any = js.native
     
-    /* private */ var _cellRenderers: js.Any = js.native
+    /* private */ var _cellRenderers: Any = js.native
     
-    /* private */ var _columnHeaderSections: js.Any = js.native
+    /* private */ var _columnHeaderSections: Any = js.native
     
-    /* private */ var _columnSections: js.Any = js.native
+    /* private */ var _columnSections: Any = js.native
     
-    /* private */ var _copyConfig: js.Any = js.native
+    /* private */ var _copyConfig: Any = js.native
     
-    /* private */ var _dataModel: js.Any = js.native
+    /* private */ var _dataModel: Any = js.native
     
-    /* private */ var _dpiRatio: js.Any = js.native
+    /* private */ var _dpiRatio: Any = js.native
     
     /**
       * Draw the background for the given paint region.
       */
-    /* private */ var _drawBackground: js.Any = js.native
+    /* private */ var _drawBackground: Any = js.native
     
     /**
       * Draw the body region which intersects the dirty rect.
       */
-    /* private */ var _drawBodyRegion: js.Any = js.native
+    /* private */ var _drawBodyRegion: Any = js.native
     
     /**
       * Draw the body selections for the data grid.
       */
-    /* private */ var _drawBodySelections: js.Any = js.native
+    /* private */ var _drawBodySelections: Any = js.native
     
     /**
       * Draw the cells for the given paint region.
       */
-    /* private */ var _drawCells: js.Any = js.native
+    /* private */ var _drawCells: Any = js.native
     
     /**
       * Draw the column background for the given paint region.
       */
-    /* private */ var _drawColumnBackground: js.Any = js.native
+    /* private */ var _drawColumnBackground: Any = js.native
     
     /**
       * Draw the column header region which intersects the dirty rect.
       */
-    /* private */ var _drawColumnHeaderRegion: js.Any = js.native
+    /* private */ var _drawColumnHeaderRegion: Any = js.native
     
     /**
       * Draw the column header selections for the data grid.
       */
-    /* private */ var _drawColumnHeaderSelections: js.Any = js.native
-    
-    /**
-      * Draw the corner header region which intersects the dirty rect.
-      */
-    /* private */ var _drawCornerHeaderRegion: js.Any = js.native
+    /* private */ var _drawColumnHeaderSelections: Any = js.native
     
     /**
       * Draw the overlay cursor for the data grid.
       */
-    /* private */ var _drawCursor: js.Any = js.native
+    /* private */ var _drawCursor: Any = js.native
     
     /**
       * Draw the horizontal grid lines for the given paint region.
       */
-    /* private */ var _drawHorizontalGridLines: js.Any = js.native
+    /* private */ var _drawHorizontalGridLines: Any = js.native
     
     /**
       * Draw the row background for the given paint region.
       */
-    /* private */ var _drawRowBackground: js.Any = js.native
+    /* private */ var _drawRowBackground: Any = js.native
     
     /**
       * Draw the row header region which intersects the dirty rect.
       */
-    /* private */ var _drawRowHeaderRegion: js.Any = js.native
+    /* private */ var _drawRowHeaderRegion: Any = js.native
     
     /**
       * Draw the row header selections for the data grid.
       */
-    /* private */ var _drawRowHeaderSelections: js.Any = js.native
+    /* private */ var _drawRowHeaderSelections: Any = js.native
     
     /**
       * Draw the overlay shadows for the data grid.
       */
-    /* private */ var _drawShadows: js.Any = js.native
+    /* private */ var _drawShadows: Any = js.native
     
     /**
       * Draw the vertical grid lines for the given paint region.
       */
-    /* private */ var _drawVerticalGridLines: js.Any = js.native
+    /* private */ var _drawVerticalGridLines: Any = js.native
     
     /**
       * Draw the void region for the dirty rect.
       */
-    /* private */ var _drawVoidRegion: js.Any = js.native
+    /* private */ var _drawVoidRegion: Any = js.native
     
-    /* private */ var _editingEnabled: js.Any = js.native
+    /* private */ var _editingEnabled: Any = js.native
     
-    /* private */ var _editorController: js.Any = js.native
+    /* private */ var _editorController: Any = js.native
     
     /**
       * Handle the `'contextmenu'` event for the data grid.
       */
-    /* private */ var _evtContextMenu: js.Any = js.native
+    /* private */ var _evtContextMenu: Any = js.native
     
     /**
       * Handle the `'keydown'` event for the data grid.
       */
-    /* private */ var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: Any = js.native
     
     /**
       * Handle the `'dblclick'` event for the data grid.
       */
-    /* private */ var _evtMouseDoubleClick: js.Any = js.native
+    /* private */ var _evtMouseDoubleClick: Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the data grid.
       */
-    /* private */ var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: Any = js.native
     
     /**
       * Handle the `'mouseleave'` event for the data grid.
       */
-    /* private */ var _evtMouseLeave: js.Any = js.native
+    /* private */ var _evtMouseLeave: Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the data grid.
       */
-    /* private */ var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the data grid.
       */
-    /* private */ var _evtMouseUp: js.Any = js.native
+    /* private */ var _evtMouseUp: Any = js.native
     
     /**
       * Handle the `'wheel'` event for the data grid.
       */
-    /* private */ var _evtWheel: js.Any = js.native
+    /* private */ var _evtWheel: Any = js.native
     
-    /* private */ var _hScrollBar: js.Any = js.native
+    /**
+      * Resizes body column headers so their text fits
+      * without clipping or wrapping.
+      * @param dataModel
+      */
+    /* private */ var _fitBodyColumnHeaders: Any = js.native
     
-    /* private */ var _hScrollBarMinHeight: js.Any = js.native
+    /**
+      * Resizes row header columns so their text fits
+      * without clipping or wrapping.
+      * @param dataModel
+      */
+    /* private */ var _fitRowColumnHeaders: Any = js.native
     
-    /* private */ var _headerVisibility: js.Any = js.native
+    /**
+      * Returns column size
+      * @param region
+      * @param index
+      */
+    /* private */ var _getColumnSize: Any = js.native
     
-    /* private */ var _keyHandler: js.Any = js.native
+    /**
+      * Returns row size
+      * @param region
+      * @param index
+      */
+    /* private */ var _getRowSize: Any = js.native
     
-    /* private */ var _mouseHandler: js.Any = js.native
+    /* private */ var _hScrollBar: Any = js.native
     
-    /* private */ var _mousedown: js.Any = js.native
+    /* private */ var _hScrollBarMinHeight: Any = js.native
+    
+    /* private */ var _headerVisibility: Any = js.native
+    
+    /* private */ var _keyHandler: Any = js.native
+    
+    /* private */ var _mouseHandler: Any = js.native
+    
+    /* private */ var _mousedown: Any = js.native
     
     /**
       * Handle cells changing in the data model.
       */
-    /* private */ var _onCellsChanged: js.Any = js.native
+    /* private */ var _onCellsChanged: Any = js.native
     
     /**
       * Handle columns being inserted into the data model.
       */
-    /* private */ var _onColumnsInserted: js.Any = js.native
+    /* private */ var _onColumnsInserted: Any = js.native
     
     /**
       * Handle columns moving in the data model.
       */
-    /* private */ var _onColumnsMoved: js.Any = js.native
+    /* private */ var _onColumnsMoved: Any = js.native
     
     /**
       * Handle columns being removed from the data model.
       */
-    /* private */ var _onColumnsRemoved: js.Any = js.native
+    /* private */ var _onColumnsRemoved: Any = js.native
     
     /**
       * A signal handler for the data model `changed` signal.
       */
-    /* private */ var _onDataModelChanged: js.Any = js.native
+    /* private */ var _onDataModelChanged: Any = js.native
     
     /**
       * Handle a full data model reset.
       */
-    /* private */ var _onModelReset: js.Any = js.native
+    /* private */ var _onModelReset: Any = js.native
     
     /**
       * Handle the `pageRequested` signal from a scroll bar.
       */
-    /* private */ var _onPageRequested: js.Any = js.native
+    /* private */ var _onPageRequested: Any = js.native
     
     /**
       * A signal handler for the renderer map `changed` signal.
       */
-    /* private */ var _onRenderersChanged: js.Any = js.native
+    /* private */ var _onRenderersChanged: Any = js.native
     
     /**
       * Handle rows being inserted in the data model.
       */
-    /* private */ var _onRowsInserted: js.Any = js.native
+    /* private */ var _onRowsInserted: Any = js.native
     
     /**
       * Handle rows moving in the data model.
       */
-    /* private */ var _onRowsMoved: js.Any = js.native
+    /* private */ var _onRowsMoved: Any = js.native
     
     /**
       * Handle rows being removed from the data model.
       */
-    /* private */ var _onRowsRemoved: js.Any = js.native
+    /* private */ var _onRowsRemoved: Any = js.native
     
     /**
       * A signal handler for the selection model `changed` signal.
       */
-    /* private */ var _onSelectionsChanged: js.Any = js.native
+    /* private */ var _onSelectionsChanged: Any = js.native
     
     /**
       * Handle the `stepRequested` signal from a scroll bar.
       */
-    /* private */ var _onStepRequested: js.Any = js.native
+    /* private */ var _onStepRequested: Any = js.native
     
     /**
       * Handle the `thumbMoved` signal from a scroll bar.
       */
-    /* private */ var _onThumbMoved: js.Any = js.native
+    /* private */ var _onThumbMoved: Any = js.native
     
     /**
       * A message hook invoked on a viewport `'column-resize-request'` message.
       */
-    /* private */ var _onViewportColumnResizeRequest: js.Any = js.native
+    /* private */ var _onViewportColumnResizeRequest: Any = js.native
     
     /**
       * A message hook invoked on a viewport `'overlay-paint-request'` message.
       */
-    /* private */ var _onViewportOverlayPaintRequest: js.Any = js.native
+    /* private */ var _onViewportOverlayPaintRequest: Any = js.native
     
     /**
       * A message hook invoked on a viewport `'paint-request'` message.
       */
-    /* private */ var _onViewportPaintRequest: js.Any = js.native
+    /* private */ var _onViewportPaintRequest: Any = js.native
     
     /**
       * A message hook invoked on a viewport `'resize'` message.
       */
-    /* private */ var _onViewportResize: js.Any = js.native
+    /* private */ var _onViewportResize: Any = js.native
     
     /**
       * A message hook invoked on a viewport `'row-resize-request'` message.
       */
-    /* private */ var _onViewportRowResizeRequest: js.Any = js.native
+    /* private */ var _onViewportRowResizeRequest: Any = js.native
     
     /**
       * A message hook invoked on a viewport `'scroll-request'` message.
       */
-    /* private */ var _onViewportScrollRequest: js.Any = js.native
+    /* private */ var _onViewportScrollRequest: Any = js.native
     
-    /* private */ var _overlay: js.Any = js.native
+    /* private */ var _overlay: Any = js.native
     
-    /* private */ var _overlayGC: js.Any = js.native
-    
-    /**
-      * Paint the grid content for the given dirty rect.
-      *
-      * The rect should be expressed in valid viewport coordinates.
-      *
-      * This is the primary paint entry point. The individual `_draw*`
-      * methods should not be invoked directly. This method dispatches
-      * to the drawing methods in the correct order.
-      */
-    /* private */ var _paintContent: js.Any = js.native
+    /* private */ var _overlayGC: Any = js.native
     
     /**
       * Paint the overlay content for the entire grid.
@@ -342,87 +357,72 @@ object datagridMod {
       * `_draw*` methods should not be invoked directly. This method
       * dispatches to the drawing methods in the correct order.
       */
-    /* private */ var _paintOverlay: js.Any = js.native
+    /* private */ var _paintOverlay: Any = js.native
     
     /**
       * Process a message sent to the viewport
       */
-    /* private */ var _processViewportMessage: js.Any = js.native
+    /* private */ var _processViewportMessage: Any = js.native
     
     /**
       * Refresh the dpi ratio.
       */
-    /* private */ var _refreshDPI: js.Any = js.native
+    /* private */ var _refreshDPI: Any = js.native
     
     /**
       * Release the mouse grab.
       */
-    /* private */ var _releaseMouse: js.Any = js.native
-    
-    /**
-      * Schedule a repaint of all of the grid content.
-      */
-    /* private */ var _repaintContent: js.Any = js.native
-    
-    /**
-      * Schedule a repaint of the overlay.
-      */
-    /* private */ var _repaintOverlay: js.Any = js.native
-    
-    /**
-      * Schedule a repaint of specific grid content.
-      */
-    /* private */ var _repaintRegion: js.Any = js.native
+    /* private */ var _releaseMouse: Any = js.native
     
     /**
       * Ensure the canvas is at least the specified size.
       *
       * This method will retain the valid canvas content.
       */
-    /* private */ var _resizeCanvasIfNeeded: js.Any = js.native
+    /* private */ var _resizeCanvasIfNeeded: Any = js.native
     
     /**
       * Resize a column section immediately.
       */
-    /* private */ var _resizeColumn: js.Any = js.native
+    /* private */ var _resizeColumn: Any = js.native
     
     /**
       * Resize a column header section immediately.
       */
-    /* private */ var _resizeColumnHeader: js.Any = js.native
+    /* private */ var _resizeColumnHeader: Any = js.native
     
     /**
       * Resize a row section immediately.
       */
-    /* private */ var _resizeRow: js.Any = js.native
+    /* private */ var _resizeRow: Any = js.native
     
     /**
       * Resize a row header section immediately.
       */
-    /* private */ var _resizeRowHeader: js.Any = js.native
+    /* private */ var _resizeRowHeader: Any = js.native
     
-    /* private */ var _rowHeaderSections: js.Any = js.native
+    /* private */ var _rowHeaderSections: Any = js.native
     
-    /* private */ var _rowSections: js.Any = js.native
+    /* private */ var _rowSections: Any = js.native
     
-    /* private */ var _scrollCorner: js.Any = js.native
+    /* private */ var _scrollCorner: Any = js.native
     
     /**
       * Scroll immediately to the specified offset position.
       */
-    /* private */ var _scrollTo: js.Any = js.native
+    /* private */ var _scrollTo: Any = js.native
     
-    /* private */ var _scrollX: js.Any = js.native
+    /* private */ var _scrollX: Any = js.native
     
-    /* private */ var _scrollY: js.Any = js.native
+    /* private */ var _scrollY: Any = js.native
     
-    /* private */ var _selectionModel: js.Any = js.native
+    /* private */ var _selectionModel: Any = js.native
     
-    /* private */ var _stretchLastColumn: js.Any = js.native
+    /* private */ var _stretchLastColumn: Any = js.native
     
-    /* private */ var _stretchLastRow: js.Any = js.native
+    /* private */ var _stretchLastRow: Any = js.native
     
-    /* private */ var _style: js.Any = js.native
+    /* private */ var _style: Any = js.native
     
     /**
       * Sync the scroll bars and scroll state with the viewport.
@@ -432,7 +432,7 @@ object datagridMod {
       * fit-request will be dispatched to the data grid to immediately
       * resize the viewport.
       */
-    /* private */ var _syncScrollState: js.Any = js.native
+    /* private */ var _syncScrollState: Any = js.native
     
     /**
       * Sync the viewport to the given scroll position.
@@ -440,17 +440,17 @@ object datagridMod {
       * #### Notes
       * This schedules a full repaint and syncs the scroll state.
       */
-    /* private */ var _syncViewport: js.Any = js.native
+    /* private */ var _syncViewport: Any = js.native
     
-    /* private */ var _vScrollBar: js.Any = js.native
+    /* private */ var _vScrollBar: Any = js.native
     
-    /* private */ var _vScrollBarMinWidth: js.Any = js.native
+    /* private */ var _vScrollBarMinWidth: Any = js.native
     
-    /* private */ var _viewport: js.Any = js.native
+    /* private */ var _viewport: Any = js.native
     
-    /* private */ var _viewportHeight: js.Any = js.native
+    /* private */ var _viewportHeight: Any = js.native
     
-    /* private */ var _viewportWidth: js.Any = js.native
+    /* private */ var _viewportWidth: Any = js.native
     
     /**
       * The virtual height of the grid body.
@@ -467,6 +467,11 @@ object datagridMod {
       * This does *not* account for a stretched last column.
       */
     val bodyWidth: Double = js.native
+    
+    /**
+      * The rendering context for painting the data grid.
+      */
+    /* protected */ val canvasGC: CanvasRenderingContext2D = js.native
     
     /**
       * Get the cell renderer map for the data grid.
@@ -497,7 +502,12 @@ object datagridMod {
       *
       * @returns The column count for the specified region.
       */
-    def columnCount(region: RowRegion): Double = js.native
+    def columnCount(region: ColumnRegion): Double = js.native
+    
+    /**
+      * The column header sections of the data grid.
+      */
+    /* protected */ val columnHeaderSections: SectionList = js.native
     
     /**
       * Get the offset of a column in the data grid.
@@ -512,6 +522,11 @@ object datagridMod {
       * A stretched last column has no effect on the return value.
       */
     def columnOffset(region: ColumnRegion, index: Double): Double = js.native
+    
+    /**
+      * The column sections of the data grid.
+      */
+    /* protected */ val columnSections: SectionList = js.native
     
     /**
       * Get the size of a column in the data grid.
@@ -565,6 +580,11 @@ object datagridMod {
     var defaultSizes: DefaultSizes_ = js.native
     
     /**
+      * Draw the corner header region which intersects the dirty rect.
+      */
+    /* protected */ def drawCornerHeaderRegion(rx: Double, ry: Double, rw: Double, rh: Double): Unit = js.native
+    
+    /**
       * Whether the grid cells are editable.
       *
       * `editingEnabled` flag must be on and grid must have required
@@ -581,6 +601,21 @@ object datagridMod {
       * The cell editor controller object for the data grid.
       */
     var editorController: ICellEditorController | Null = js.native
+    
+    /**
+      * Auto sizes column widths based on their text content.
+      * @param area which area to resize: 'body', 'row-header' or 'all'.
+      * @param padding padding added to resized columns (pixels).
+      * @param numCols specify cap on the number of column resizes (optional).
+      */
+    def fitColumnNames(): Unit = js.native
+    def fitColumnNames(area: Unit, padding: Double): Unit = js.native
+    def fitColumnNames(area: Unit, padding: Double, numCols: Double): Unit = js.native
+    def fitColumnNames(area: Unit, padding: Unit, numCols: Double): Unit = js.native
+    def fitColumnNames(area: ColumnFitType): Unit = js.native
+    def fitColumnNames(area: ColumnFitType, padding: Double): Unit = js.native
+    def fitColumnNames(area: ColumnFitType, padding: Double, numCols: Double): Unit = js.native
+    def fitColumnNames(area: ColumnFitType, padding: Unit, numCols: Double): Unit = js.native
     
     /**
       * Handle the DOM events for the data grid.
@@ -680,6 +715,14 @@ object datagridMod {
     def messageHook(handler: IMessageHandler, msg: Message): Boolean = js.native
     
     /**
+      * Get the minimum sizes for the various sections of the data grid.
+      */
+    /**
+      * Set the minimum sizes for the various sections of the data grid.
+      */
+    var minimumSizes: DefaultSizes_ = js.native
+    
+    /**
       * Get the mouse handler for the data grid.
       */
     /**
@@ -709,6 +752,32 @@ object datagridMod {
       * The width of the visible portion of the grid body.
       */
     val pageWidth: Double = js.native
+    
+    /**
+      * Paint the grid content for the given dirty rect.
+      *
+      * The rect should be expressed in valid viewport coordinates.
+      *
+      * This is the primary paint entry point. The individual `_draw*`
+      * methods should not be invoked directly. This method dispatches
+      * to the drawing methods in the correct order.
+      */
+    /* protected */ def paintContent(rx: Double, ry: Double, rw: Double, rh: Double): Unit = js.native
+    
+    /**
+      * Schedule a repaint of all of the grid content.
+      */
+    /* protected */ def repaintContent(): Unit = js.native
+    
+    /**
+      * Schedule a repaint of the overlay.
+      */
+    /* protected */ def repaintOverlay(): Unit = js.native
+    
+    /**
+      * Schedule a repaint of specific grid content.
+      */
+    /* protected */ def repaintRegion(region: CellRegion, r1: Double, c1: Double, r2: Double, c2: Double): Unit = js.native
     
     /**
       * Reset modified columns to their default size.
@@ -774,6 +843,11 @@ object datagridMod {
     def rowCount(region: RowRegion): Double = js.native
     
     /**
+      * The row header sections of the data grid.
+      */
+    /* protected */ val rowHeaderSections: SectionList = js.native
+    
+    /**
       * Get the offset of a row in the data grid.
       *
       * @param region - The region which holds the row of interest.
@@ -786,6 +860,11 @@ object datagridMod {
       * A stretched last row has no effect on the return value.
       */
     def rowOffset(region: RowRegion, index: Double): Double = js.native
+    
+    /**
+      * The row sections of the data grid.
+      */
+    /* protected */ val rowSections: SectionList = js.native
     
     /**
       * Get the size of a row in the data grid.
@@ -810,33 +889,19 @@ object datagridMod {
       */
     def scrollBy(dx: Double, dy: Double): Unit = js.native
     
-    @JSName("scrollByPage")
-    def scrollByPage_down(dir: down): Unit = js.native
-    @JSName("scrollByPage")
-    def scrollByPage_left(dir: left): Unit = js.native
-    @JSName("scrollByPage")
-    def scrollByPage_right(dir: right): Unit = js.native
     /**
       * Scroll the viewport by one page.
       *
       * @param dir - The desired direction of the scroll.
       */
-    @JSName("scrollByPage")
-    def scrollByPage_up(dir: up): Unit = js.native
+    def scrollByPage(dir: up | down | left | right): Unit = js.native
     
-    @JSName("scrollByStep")
-    def scrollByStep_down(dir: down): Unit = js.native
-    @JSName("scrollByStep")
-    def scrollByStep_left(dir: left): Unit = js.native
-    @JSName("scrollByStep")
-    def scrollByStep_right(dir: right): Unit = js.native
     /**
       * Scroll the viewport by one cell-aligned step.
       *
       * @param dir - The desired direction of the scroll.
       */
-    @JSName("scrollByStep")
-    def scrollByStep_up(dir: up): Unit = js.native
+    def scrollByStep(dir: up | down | left | right): Unit = js.native
     
     /**
       * Scroll to the specified offset position.
@@ -963,7 +1028,7 @@ object datagridMod {
   }
   object DataGrid {
     
-    @JSImport("@lumino/datagrid/lib/datagrid", "DataGrid")
+    @JSImport("@lumino/datagrid/types/datagrid", "DataGrid")
     @js.native
     val ^ : js.Any = js.native
     
@@ -982,23 +1047,48 @@ object datagridMod {
     /**
       * The default copy config for a data grid.
       */
-    @JSImport("@lumino/datagrid/lib/datagrid", "DataGrid.defaultCopyConfig")
+    @JSImport("@lumino/datagrid/types/datagrid", "DataGrid.defaultCopyConfig")
     @js.native
     val defaultCopyConfig: CopyConfig = js.native
     
     /**
       * The default sizes for a data grid.
       */
-    @JSImport("@lumino/datagrid/lib/datagrid", "DataGrid.defaultSizes")
+    @JSImport("@lumino/datagrid/types/datagrid", "DataGrid.defaultSizes")
     @js.native
     val defaultSizes: DefaultSizes_ = js.native
     
     /**
       * The default theme for a data grid.
       */
-    @JSImport("@lumino/datagrid/lib/datagrid", "DataGrid.defaultStyle")
+    @JSImport("@lumino/datagrid/types/datagrid", "DataGrid.defaultStyle")
     @js.native
     val defaultStyle: Style = js.native
+    
+    /**
+      * The default minimum sizes for a data grid.
+      */
+    @JSImport("@lumino/datagrid/types/datagrid", "DataGrid.minimumSizes")
+    @js.native
+    val minimumSizes: MinimumSizes_ = js.native
+    
+    /**
+      * A type alias for the supported column auto resize modes.
+      */
+    /* Rewritten from type alias, can be one of: 
+      - typings.luminoDatagrid.luminoDatagridStrings.all
+      - typings.luminoDatagrid.luminoDatagridStrings.`row-header`
+      - typings.luminoDatagrid.luminoDatagridStrings.body
+    */
+    trait ColumnFitType extends StObject
+    object ColumnFitType {
+      
+      inline def all: typings.luminoDatagrid.luminoDatagridStrings.all = "all".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.all]
+      
+      inline def body: typings.luminoDatagrid.luminoDatagridStrings.body = "body".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.body]
+      
+      inline def `row-header`: typings.luminoDatagrid.luminoDatagridStrings.`row-header` = "row-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`row-header`]
+    }
     
     /**
       * A type alias for the data grid copy config.
@@ -1077,11 +1167,11 @@ object datagridMod {
       /**
         * The value for the cell.
         */
-      var value: js.Any
+      var value: Any
     }
     object CopyFormatArgs {
       
-      inline def apply(column: Double, metadata: Metadata, region: CellRegion, row: Double, value: js.Any): CopyFormatArgs = {
+      inline def apply(column: Double, metadata: Metadata, region: CellRegion, row: Double, value: Any): CopyFormatArgs = {
         val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[CopyFormatArgs]
       }
@@ -1096,7 +1186,7 @@ object datagridMod {
         
         inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
         
-        inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1457,6 +1547,13 @@ object datagridMod {
       var headerVisibility: js.UndefOr[HeaderVisibility] = js.undefined
       
       /**
+        * The minimum sizes for the data grid.
+        *
+        * The default is `DataGrid.minimumSizes`.
+        */
+      var minimumSizes: js.UndefOr[MinimumSizes_] = js.undefined
+      
+      /**
         * Whether to stretch the last column of the grid.
         *
         * The default is `false`.
@@ -1506,6 +1603,10 @@ object datagridMod {
         
         inline def setHeaderVisibilityUndefined: Self = StObject.set(x, "headerVisibility", js.undefined)
         
+        inline def setMinimumSizes(value: MinimumSizes_): Self = StObject.set(x, "minimumSizes", value.asInstanceOf[js.Any])
+        
+        inline def setMinimumSizesUndefined: Self = StObject.set(x, "minimumSizes", js.undefined)
+        
         inline def setStretchLastColumn(value: Boolean): Self = StObject.set(x, "stretchLastColumn", value.asInstanceOf[js.Any])
         
         inline def setStretchLastColumnUndefined: Self = StObject.set(x, "stretchLastColumn", js.undefined)
@@ -1517,6 +1618,50 @@ object datagridMod {
         inline def setStyle(value: Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
         inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      }
+    }
+    
+    /**
+      * An object which defines the minimum sizes for a data grid.
+      */
+    trait MinimumSizes_ extends StObject {
+      
+      /**
+        * The minimum height of a column header.
+        */
+      val columnHeaderHeight: Double
+      
+      /**
+        * The minimum width of a column.
+        */
+      val columnWidth: Double
+      
+      /**
+        * The minimum width of a row header.
+        */
+      val rowHeaderWidth: Double
+      
+      /**
+        * The minimum height of a row.
+        */
+      val rowHeight: Double
+    }
+    object MinimumSizes_ {
+      
+      inline def apply(columnHeaderHeight: Double, columnWidth: Double, rowHeaderWidth: Double, rowHeight: Double): MinimumSizes_ = {
+        val __obj = js.Dynamic.literal(columnHeaderHeight = columnHeaderHeight.asInstanceOf[js.Any], columnWidth = columnWidth.asInstanceOf[js.Any], rowHeaderWidth = rowHeaderWidth.asInstanceOf[js.Any], rowHeight = rowHeight.asInstanceOf[js.Any])
+        __obj.asInstanceOf[MinimumSizes_]
+      }
+      
+      extension [Self <: MinimumSizes_](x: Self) {
+        
+        inline def setColumnHeaderHeight(value: Double): Self = StObject.set(x, "columnHeaderHeight", value.asInstanceOf[js.Any])
+        
+        inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+        
+        inline def setRowHeaderWidth(value: Double): Self = StObject.set(x, "rowHeaderWidth", value.asInstanceOf[js.Any])
+        
+        inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
       }
     }
     

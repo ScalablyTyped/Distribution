@@ -1,6 +1,5 @@
 package typings.saml20
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,13 +14,13 @@ object mod {
   
   inline def validate(rawAssertion: String, options: ValidationOptions, cb: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(rawAssertion.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type ParseCallback = js.Function3[/* err */ Error | Null, /* profile */ Profile, /* version */ String, Unit]
+  type ParseCallback = js.Function3[/* err */ js.Error | Null, /* profile */ Profile, /* version */ String, Unit]
   
   trait Profile extends StObject {
     
     var audience: js.UndefOr[String] = js.undefined
     
-    var claims: js.Any
+    var claims: Any
     
     var issuer: String
     
@@ -29,7 +28,7 @@ object mod {
   }
   object Profile {
     
-    inline def apply(claims: js.Any, issuer: String): Profile = {
+    inline def apply(claims: Any, issuer: String): Profile = {
       val __obj = js.Dynamic.literal(claims = claims.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any])
       __obj.asInstanceOf[Profile]
     }
@@ -40,7 +39,7 @@ object mod {
       
       inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      inline def setClaims(value: js.Any): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
+      inline def setClaims(value: Any): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
       
       inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
@@ -72,7 +71,7 @@ object mod {
     extends StObject
        with ValidationOptions {
     
-    var audience: js.UndefOr[js.Any] = js.undefined
+    var audience: js.UndefOr[Any] = js.undefined
     
     var bypassExpiration: js.UndefOr[Boolean] = js.undefined
     
@@ -87,7 +86,7 @@ object mod {
     
     extension [Self <: ValidationOptionsWithKey](x: Self) {
       
-      inline def setAudience(value: js.Any): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: Any): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
       inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
@@ -103,7 +102,7 @@ object mod {
     extends StObject
        with ValidationOptions {
     
-    var audience: js.UndefOr[js.Any] = js.undefined
+    var audience: js.UndefOr[Any] = js.undefined
     
     var bypassExpiration: js.UndefOr[Boolean] = js.undefined
     
@@ -118,7 +117,7 @@ object mod {
     
     extension [Self <: ValidationOptionsWithPrint](x: Self) {
       
-      inline def setAudience(value: js.Any): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: Any): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
       inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       

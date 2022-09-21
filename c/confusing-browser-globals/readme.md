@@ -10,10 +10,10 @@ A list of browser globals that are often used by mistake instead of local variab
 | ------------------ | :-------------: |
 | Full name          | confusing-browser-globals |
 | Keywords           | eslint, globals |
-| # releases         | 19 |
-| # dependents       | 299 |
-| # downloads        | 184357065 |
-| # stars            | 0 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 3.6236325E7 |
+| # stars            | 95893.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/create-react-app#readme)

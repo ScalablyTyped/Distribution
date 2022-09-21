@@ -14,27 +14,27 @@ object Pwm {
     
     /* unmapped type */
     /* CompleteClass */
-    var actualFrequency: js.Any = js.native
+    var actualFrequency: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var maxFrequency: js.Any = js.native
+    var maxFrequency: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var minFrequency: js.Any = js.native
+    var minFrequency: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var openPin: js.Any = js.native
+    var openPin: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var pinCount: js.Any = js.native
+    var pinCount: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var setDesiredFrequency: js.Any = js.native
+    var setDesiredFrequency: Any = js.native
   }
   object PwmController {
     
@@ -45,15 +45,15 @@ object Pwm {
     /* static member */
     @JSGlobal("Windows.Devices.Pwm.PwmController.getControllersAsync")
     @js.native
-    def getControllersAsync: js.Any = js.native
-    inline def getControllersAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getControllersAsync")(x.asInstanceOf[js.Any])
+    def getControllersAsync: Any = js.native
+    inline def getControllersAsync_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getControllersAsync")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /* static member */
     @JSGlobal("Windows.Devices.Pwm.PwmController.getDefaultAsync")
     @js.native
-    def getDefaultAsync: js.Any = js.native
-    inline def getDefaultAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultAsync")(x.asInstanceOf[js.Any])
+    def getDefaultAsync: Any = js.native
+    inline def getDefaultAsync_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultAsync")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Devices.Pwm.PwmPin")
@@ -63,35 +63,35 @@ object Pwm {
        with typings.winrtUwp.Windows.Devices.Pwm.PwmPin {
     
     /* CompleteClass */
-    var close: js.Any = js.native
+    var close: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var controller: js.Any = js.native
+    var controller: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var getActiveDutyCyclePercentage: js.Any = js.native
+    var getActiveDutyCyclePercentage: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var isStarted: js.Any = js.native
+    var isStarted: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var polarity: js.Any = js.native
+    var polarity: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var setActiveDutyCyclePercentage: js.Any = js.native
+    var setActiveDutyCyclePercentage: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var start: js.Any = js.native
+    var start: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var stop: js.Any = js.native
+    var stop: Any = js.native
   }
   
   object PwmPulsePolarity {
@@ -102,13 +102,13 @@ object Pwm {
     
     @JSGlobal("Windows.Devices.Pwm.PwmPulsePolarity.activeHigh")
     @js.native
-    def activeHigh: js.Any = js.native
-    inline def activeHigh_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activeHigh")(x.asInstanceOf[js.Any])
+    def activeHigh: Any = js.native
+    inline def activeHigh_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activeHigh")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.Devices.Pwm.PwmPulsePolarity.activeLow")
     @js.native
-    def activeLow: js.Any = js.native
-    inline def activeLow_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activeLow")(x.asInstanceOf[js.Any])
+    def activeLow: Any = js.native
+    inline def activeLow_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activeLow")(x.asInstanceOf[js.Any])
   }
 }

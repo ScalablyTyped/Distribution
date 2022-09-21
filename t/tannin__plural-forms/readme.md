@@ -10,10 +10,10 @@ Compiles a function to compute the plural forms index for a given value
 | ------------------ | :-------------: |
 | Full name          | @tannin/plural-forms |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 983862 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 136495.66666666666 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/aduth/tannin)

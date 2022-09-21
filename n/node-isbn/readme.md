@@ -10,10 +10,10 @@ Find books by ISBN
 | ------------------ | :-------------: |
 | Full name          | node-isbn |
 | Keywords           | isbn, book, google, openlibrary, api, worldcat, isbndb |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 5573 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 388.0 |
+| # stars            | 92.0 |
 
 ## Links
 - [Homepage](https://github.com/palmerabollo/node-isbn#readme)

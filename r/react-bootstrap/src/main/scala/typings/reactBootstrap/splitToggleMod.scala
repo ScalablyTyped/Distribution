@@ -10,12 +10,10 @@ object splitToggleMod {
   
   @JSImport("react-bootstrap/lib/SplitToggle", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[SplitToggleProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[SplitToggleProps, js.Object, Any]
   
-  @js.native
-  trait SplitToggle
-    extends Component[SplitToggleProps, js.Object, js.Any]
+  type SplitToggle = Component[SplitToggleProps, js.Object, Any]
   
   trait SplitToggleProps
     extends StObject

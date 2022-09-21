@@ -11,9 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def seed(data: js.Any, callback: seedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("seed")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def seed(data: js.Any, options: IOptions): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("seed")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
-  inline def seed(data: js.Any, options: IOptions, callback: seedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("seed")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def seed(data: Any, callback: seedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("seed")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def seed(data: Any, options: IOptions): Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("seed")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[Any]]
+  inline def seed(data: Any, options: IOptions, callback: seedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("seed")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait IOptions extends StObject {
     
@@ -40,5 +40,5 @@ object mod {
     }
   }
   
-  type seedCallback = js.Function2[/* err */ js.Any, /* dbData */ js.Any, Unit]
+  type seedCallback = js.Function2[/* err */ Any, /* dbData */ Any, Unit]
 }

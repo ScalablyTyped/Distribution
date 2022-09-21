@@ -108,7 +108,7 @@ object UpdateAuthorizerRequest {
     
     inline def setIdentitySourceUndefined: Self = StObject.set(x, "IdentitySource", js.undefined)
     
-    inline def setIdentitySourceVarargs(value: string*): Self = StObject.set(x, "IdentitySource", js.Array(value :_*))
+    inline def setIdentitySourceVarargs(value: string*): Self = StObject.set(x, "IdentitySource", js.Array(value*))
     
     inline def setIdentityValidationExpression(value: StringWithLengthBetween0And1024): Self = StObject.set(x, "IdentityValidationExpression", value.asInstanceOf[js.Any])
     

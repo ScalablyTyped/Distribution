@@ -10,15 +10,12 @@ Angular directive to show an animated spinner (using [spin.js](http://fgnass.git
 | ------------------ | :-------------: |
 | Full name          | angular-spinner |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 278848 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 27522.666666666668 |
+| # stars            | 702.0 |
 
 ## Links
-- [Homepage](https://github.com/urish/angular-spinner#readme)
-- [Bugs](https://github.com/urish/angular-spinner/issues)
-- [Repository](https://github.com/urish/angular-spinner)
 - [Npm](https://www.npmjs.com/package/angular-spinner)
     
 

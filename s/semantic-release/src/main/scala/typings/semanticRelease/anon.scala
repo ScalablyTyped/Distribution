@@ -2,116 +2,147 @@ package typings.semanticRelease
 
 import typings.semanticRelease.mod.Commit
 import typings.semanticRelease.mod.LastRelease
+import typings.semanticRelease.mod.LoggerFunction
 import typings.semanticRelease.mod.NextRelease
 import typings.semanticRelease.mod.Release
 import typings.semanticRelease.mod.Result
-import typings.semanticRelease.semanticReleaseBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Channel extends StObject {
+  trait Await extends StObject {
     
-    /**
-      * The distribution channel on which to publish releases from this
-      * branch.
-      *
-      * If this field is set to `false`, then the branch will be released
-      * on the default distribution channel (for example the `@latest`
-      * [dist-tag](https://docs.npmjs.com/cli/dist-tag) for npm). This is
-      * also the default behavior for the first
-      * [release branch](https://semantic-release.gitbook.io/semantic-release/usage/workflow-configuration#release-branches)
-      * if the channel property is not set.
-      *
-      * For all other branches, if the channel property is not set, then the
-      * channel name will be the same as the branch name.
-      *
-      * The value of `channel`, if defined as a string, is generated with
-      * [Lodash template](https://lodash.com/docs#template) with the
-      * variable `name` set to the branch name.
-      *
-      * For example `{name: 'next', channel: 'channel-${name}'}` will be
-      * expanded to `{name: 'next', channel: 'channel-next'}`.
-      */
-    var channel: js.UndefOr[String | `false`] = js.undefined
+    def await(message: Any*): Unit
+    @JSName("await")
+    var await_Original: LoggerFunction
     
-    /**
-      * The name of git branch.
-      *
-      * A `name` is required for all types of branch. It can be defined as a
-      * [glob](https://github.com/micromatch/micromatch#matching-features)
-      * in which case the definition will be expanded to one per matching
-      * branch existing in the repository.
-      *
-      * If `name` doesn't match any branch existing in the repository, the
-      * definition will be ignored. For example, the default configuration
-      * includes the definition `next` and `next-major` which will become
-      * active only  when the branches `next` and/or `next-major` are
-      * created in the repository.
-      */
-    var name: String
+    def complete(message: Any*): Unit
+    @JSName("complete")
+    var complete_Original: LoggerFunction
     
-    /**
-      * The pre-release identifier to append to [semantic versions](https://semver.org/)
-      * released from this branch.
-      *
-      * A `prerelease` property applies only to pre-release branches and
-      * the `prerelease` value must be valid per the [Semantic Versioning
-      * Specification](https://semver.org/#spec-item-9). It will determine
-      * the name of versions. For example if `prerelease` is set to
-      * `"beta"`, the version will be formatted like `2.0.0-beta.1`,
-      * `2.0.0-beta.2`, etc.
-      *
-      * The value of `prerelease`, if defined as a string, is generated with
-      * [Lodash template](https://lodash.com/docs#template) with the
-      * variable `name` set to the name of the branch.
-      *
-      * If the `prerelease property is set to `true` then the name of the
-      * branch is used as the pre-release identifier.
-      *
-      * Required for pre-release branches.
-      */
-    var prerelease: js.UndefOr[String | Boolean] = js.undefined
+    def debug(message: Any*): Unit
+    @JSName("debug")
+    var debug_Original: LoggerFunction
     
-    /**
-      * The range of [semantic versions](https://semver.org/) to support on
-      * this branch.
-      *
-      * A `range` only applies to maintenance branches and must be formatted
-      * like `N.N.x` or `N.x` (`N` is a number). If no range is specified
-      * but the `name` is formatted as a range, then the branch will be
-      * considered a maintenance branch and the `name` value will be used
-      * for the `range`.
-      *
-      * Required for maintenance branches, unless `name` is formatted like
-      * `N.N.x` or `N.x` (`N` is a number).
-      */
-    var range: js.UndefOr[String] = js.undefined
+    def error(message: Any*): Unit
+    @JSName("error")
+    var error_Original: LoggerFunction
+    
+    def fatal(message: Any*): Unit
+    @JSName("fatal")
+    var fatal_Original: LoggerFunction
+    
+    def fav(message: Any*): Unit
+    @JSName("fav")
+    var fav_Original: LoggerFunction
+    
+    def info(message: Any*): Unit
+    @JSName("info")
+    var info_Original: LoggerFunction
+    
+    def log(message: Any*): Unit
+    @JSName("log")
+    var log_Original: LoggerFunction
+    
+    def note(message: Any*): Unit
+    @JSName("note")
+    var note_Original: LoggerFunction
+    
+    def pause(message: Any*): Unit
+    @JSName("pause")
+    var pause_Original: LoggerFunction
+    
+    def pending(message: Any*): Unit
+    @JSName("pending")
+    var pending_Original: LoggerFunction
+    
+    def star(message: Any*): Unit
+    @JSName("star")
+    var star_Original: LoggerFunction
+    
+    def start(message: Any*): Unit
+    @JSName("start")
+    var start_Original: LoggerFunction
+    
+    def success(message: Any*): Unit
+    @JSName("success")
+    var success_Original: LoggerFunction
+    
+    def wait(message: Any*): Unit
+    @JSName("wait")
+    var wait_Original: LoggerFunction
+    
+    def warn(message: Any*): Unit
+    @JSName("warn")
+    var warn_Original: LoggerFunction
+    
+    def watch(message: Any*): Unit
+    @JSName("watch")
+    var watch_Original: LoggerFunction
   }
-  object Channel {
+  object Await {
     
-    inline def apply(name: String): Channel = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Channel]
+    inline def apply(
+      await: LoggerFunction,
+      complete: LoggerFunction,
+      debug: LoggerFunction,
+      error: LoggerFunction,
+      fatal: LoggerFunction,
+      fav: LoggerFunction,
+      info: LoggerFunction,
+      log: LoggerFunction,
+      note: LoggerFunction,
+      pause: LoggerFunction,
+      pending: LoggerFunction,
+      star: LoggerFunction,
+      start: LoggerFunction,
+      success: LoggerFunction,
+      wait_ : LoggerFunction,
+      warn: LoggerFunction,
+      watch: LoggerFunction
+    ): Await = {
+      val __obj = js.Dynamic.literal(await = await.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any], fav = fav.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], star = star.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any])
+      __obj.updateDynamic("wait")(wait_.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Await]
     }
     
-    extension [Self <: Channel](x: Self) {
+    extension [Self <: Await](x: Self) {
       
-      inline def setChannel(value: String | `false`): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setAwait(value: LoggerFunction): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
       
-      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setComplete(value: LoggerFunction): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setDebug(value: LoggerFunction): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      inline def setPrerelease(value: String | Boolean): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
+      inline def setError(value: LoggerFunction): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setPrereleaseUndefined: Self = StObject.set(x, "prerelease", js.undefined)
+      inline def setFatal(value: LoggerFunction): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
       
-      inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setFav(value: LoggerFunction): Self = StObject.set(x, "fav", value.asInstanceOf[js.Any])
       
-      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setInfo(value: LoggerFunction): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      
+      inline def setLog(value: LoggerFunction): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      
+      inline def setNote(value: LoggerFunction): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+      
+      inline def setPause(value: LoggerFunction): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+      
+      inline def setPending(value: LoggerFunction): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      
+      inline def setStar(value: LoggerFunction): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
+      
+      inline def setStart(value: LoggerFunction): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      
+      inline def setSuccess(value: LoggerFunction): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      
+      inline def setWait_(value: LoggerFunction): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      
+      inline def setWarn(value: LoggerFunction): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      
+      inline def setWatch(value: LoggerFunction): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,7 +186,7 @@ object anon {
       
       inline def setCommits(value: js.Array[Commit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
       
-      inline def setCommitsVarargs(value: Commit*): Self = StObject.set(x, "commits", js.Array(value :_*))
+      inline def setCommitsVarargs(value: Commit*): Self = StObject.set(x, "commits", js.Array(value*))
       
       inline def setLastRelease(value: LastRelease): Self = StObject.set(x, "lastRelease", value.asInstanceOf[js.Any])
       
@@ -163,7 +194,7 @@ object anon {
       
       inline def setReleases(value: js.Array[Release]): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
       
-      inline def setReleasesVarargs(value: Release*): Self = StObject.set(x, "releases", js.Array(value :_*))
+      inline def setReleasesVarargs(value: Release*): Self = StObject.set(x, "releases", js.Array(value*))
     }
   }
   
@@ -198,27 +229,6 @@ object anon {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Error extends StObject {
-    
-    def error(message: String, vars: js.Any*): Unit
-    
-    def log(message: String, vars: js.Any*): Unit
-  }
-  object Error {
-    
-    inline def apply(error: (String, /* repeated */ js.Any) => Unit, log: (String, /* repeated */ js.Any) => Unit): Error = {
-      val __obj = js.Dynamic.literal(error = js.Any.fromFunction2(error), log = js.Any.fromFunction2(log))
-      __obj.asInstanceOf[Error]
-    }
-    
-    extension [Self <: Error](x: Self) {
-      
-      inline def setError(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
-      
-      inline def setLog(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     }
   }
   

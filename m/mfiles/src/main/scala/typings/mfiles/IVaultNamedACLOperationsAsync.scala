@@ -13,12 +13,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def AddNamedACLAdmin(
     NamedACLAdmin: INamedACLAdmin,
     successCallback: js.Function1[/* result */ INamedACLAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddNamedACLAdmin(
     NamedACLAdmin: INamedACLAdmin,
     successCallback: js.Function1[/* result */ INamedACLAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddNamedACLAdmin(
@@ -30,12 +30,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def AddNamedACLAdmin(
     NamedACLAdmin: INamedACLAdmin,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddNamedACLAdmin(
     NamedACLAdmin: INamedACLAdmin,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddNamedACLAdmin(
@@ -64,7 +64,7 @@ trait IVaultNamedACLOperationsAsync extends StObject {
     ActiveAccessControlComponentsOnly: Boolean,
     RefreshFromServer: Boolean,
     successCallback: js.Function1[/* result */ INamedACL, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetMatchingNamedACLForAccessControlList(
     AccessControlList: IAccessControlList,
@@ -72,7 +72,7 @@ trait IVaultNamedACLOperationsAsync extends StObject {
     ActiveAccessControlComponentsOnly: Boolean,
     RefreshFromServer: Boolean,
     successCallback: js.Function1[/* result */ INamedACL, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetMatchingNamedACLForAccessControlList(
@@ -90,7 +90,7 @@ trait IVaultNamedACLOperationsAsync extends StObject {
     ActiveAccessControlComponentsOnly: Boolean,
     RefreshFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetMatchingNamedACLForAccessControlList(
     AccessControlList: IAccessControlList,
@@ -98,7 +98,7 @@ trait IVaultNamedACLOperationsAsync extends StObject {
     ActiveAccessControlComponentsOnly: Boolean,
     RefreshFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetMatchingNamedACLForAccessControlList(
@@ -127,14 +127,14 @@ trait IVaultNamedACLOperationsAsync extends StObject {
     ExplicitLinkOnly: Boolean,
     RefreshFromServer: Boolean,
     successCallback: js.Function1[/* result */ INamedACL, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetMatchingNamedACLForAccessControlListComponent(
     AccessControlListComponent: IAccessControlListComponent,
     ExplicitLinkOnly: Boolean,
     RefreshFromServer: Boolean,
     successCallback: js.Function1[/* result */ INamedACL, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetMatchingNamedACLForAccessControlListComponent(
@@ -150,14 +150,14 @@ trait IVaultNamedACLOperationsAsync extends StObject {
     ExplicitLinkOnly: Boolean,
     RefreshFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetMatchingNamedACLForAccessControlListComponent(
     AccessControlListComponent: IAccessControlListComponent,
     ExplicitLinkOnly: Boolean,
     RefreshFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetMatchingNamedACLForAccessControlListComponent(
@@ -174,12 +174,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def GetNamedACL(
     NamedACLID: Double,
     successCallback: js.Function1[/* result */ INamedACL, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACL(
     NamedACLID: Double,
     successCallback: js.Function1[/* result */ INamedACL, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACL(
@@ -191,12 +191,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def GetNamedACL(
     NamedACLID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACL(
     NamedACLID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACL(
@@ -211,12 +211,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def GetNamedACLAdmin(
     NamedACLID: Double,
     successCallback: js.Function1[/* result */ INamedACLAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACLAdmin(
     NamedACLID: Double,
     successCallback: js.Function1[/* result */ INamedACLAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACLAdmin(
@@ -228,12 +228,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def GetNamedACLAdmin(
     NamedACLID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACLAdmin(
     NamedACLID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACLAdmin(
@@ -248,12 +248,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def GetNamedACLIDByAlias(
     Alias: String,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACLIDByAlias(
     Alias: String,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACLIDByAlias(
@@ -265,12 +265,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def GetNamedACLIDByAlias(
     Alias: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACLIDByAlias(
     Alias: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACLIDByAlias(Alias: String, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -280,12 +280,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def GetNamedACLIDByGUID(
     NamedACLGUID: String,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACLIDByGUID(
     NamedACLGUID: String,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACLIDByGUID(
@@ -297,12 +297,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def GetNamedACLIDByGUID(
     NamedACLGUID: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACLIDByGUID(
     NamedACLGUID: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACLIDByGUID(
@@ -322,13 +322,13 @@ trait IVaultNamedACLOperationsAsync extends StObject {
     NamedACLID: Double,
     RefreshFromServer: Boolean,
     successCallback: js.Function1[/* result */ INamedACL, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACLWithRefresh(
     NamedACLID: Double,
     RefreshFromServer: Boolean,
     successCallback: js.Function1[/* result */ INamedACL, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACLWithRefresh(
@@ -342,13 +342,13 @@ trait IVaultNamedACLOperationsAsync extends StObject {
     NamedACLID: Double,
     RefreshFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACLWithRefresh(
     NamedACLID: Double,
     RefreshFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACLWithRefresh(
@@ -363,11 +363,11 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def GetNamedACLs(successCallback: js.Function1[/* result */ INamedACLs, Unit]): Unit = js.native
   def GetNamedACLs(
     successCallback: js.Function1[/* result */ INamedACLs, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACLs(
     successCallback: js.Function1[/* result */ INamedACLs, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACLs(
@@ -377,11 +377,11 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   ): Unit = js.native
   def GetNamedACLs(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACLs(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACLs(successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -391,12 +391,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def GetNamedACLsByTypeAdmin(
     Type: MFNamedACLType,
     successCallback: js.Function1[/* result */ INamedACLsAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACLsByTypeAdmin(
     Type: MFNamedACLType,
     successCallback: js.Function1[/* result */ INamedACLsAdmin, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACLsByTypeAdmin(
@@ -408,12 +408,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def GetNamedACLsByTypeAdmin(
     Type: MFNamedACLType,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACLsByTypeAdmin(
     Type: MFNamedACLType,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACLsByTypeAdmin(
@@ -428,12 +428,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def GetNamedACLsWithRefresh(
     RefreshFromServer: Boolean,
     successCallback: js.Function1[/* result */ INamedACLs, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACLsWithRefresh(
     RefreshFromServer: Boolean,
     successCallback: js.Function1[/* result */ INamedACLs, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACLsWithRefresh(
@@ -445,12 +445,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def GetNamedACLsWithRefresh(
     RefreshFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetNamedACLsWithRefresh(
     RefreshFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetNamedACLsWithRefresh(
@@ -465,12 +465,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def IsNamedACLUsedInAutomaticPermissionsAdmin(
     NamedACLID: Double,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def IsNamedACLUsedInAutomaticPermissionsAdmin(
     NamedACLID: Double,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def IsNamedACLUsedInAutomaticPermissionsAdmin(
@@ -482,12 +482,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def IsNamedACLUsedInAutomaticPermissionsAdmin(
     NamedACLID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def IsNamedACLUsedInAutomaticPermissionsAdmin(
     NamedACLID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def IsNamedACLUsedInAutomaticPermissionsAdmin(
@@ -503,13 +503,13 @@ trait IVaultNamedACLOperationsAsync extends StObject {
     NamedACLID: Double,
     AllowPropagation: Boolean,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveNamedACLWithPropagationAdmin(
     NamedACLID: Double,
     AllowPropagation: Boolean,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveNamedACLWithPropagationAdmin(
@@ -523,13 +523,13 @@ trait IVaultNamedACLOperationsAsync extends StObject {
     NamedACLID: Double,
     AllowPropagation: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveNamedACLWithPropagationAdmin(
     NamedACLID: Double,
     AllowPropagation: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveNamedACLWithPropagationAdmin(
@@ -545,12 +545,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def UpdateNamedACLAdmin(
     NamedACLAdmin: INamedACLAdmin,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def UpdateNamedACLAdmin(
     NamedACLAdmin: INamedACLAdmin,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def UpdateNamedACLAdmin(
@@ -562,12 +562,12 @@ trait IVaultNamedACLOperationsAsync extends StObject {
   def UpdateNamedACLAdmin(
     NamedACLAdmin: INamedACLAdmin,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def UpdateNamedACLAdmin(
     NamedACLAdmin: INamedACLAdmin,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def UpdateNamedACLAdmin(
@@ -589,14 +589,14 @@ trait IVaultNamedACLOperationsAsync extends StObject {
     MaintainLinks: Boolean,
     AllowPropagation: Boolean,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def UpdateNamedACLWithPropagationAdmin(
     NamedACLAdmin: INamedACLAdmin,
     MaintainLinks: Boolean,
     AllowPropagation: Boolean,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def UpdateNamedACLWithPropagationAdmin(
@@ -612,14 +612,14 @@ trait IVaultNamedACLOperationsAsync extends StObject {
     MaintainLinks: Boolean,
     AllowPropagation: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def UpdateNamedACLWithPropagationAdmin(
     NamedACLAdmin: INamedACLAdmin,
     MaintainLinks: Boolean,
     AllowPropagation: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def UpdateNamedACLWithPropagationAdmin(

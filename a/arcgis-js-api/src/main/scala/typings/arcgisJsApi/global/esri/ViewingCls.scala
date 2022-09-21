@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.Viewing")
 @js.native
-class ViewingCls ()
+/**
+  * Represents view-specific properties of application and UI elements for the web map or web scene.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-Viewing.html)
+  */
+open class ViewingCls ()
   extends StObject
      with typings.arcgisJsApi.esri.Viewing {
   def this(properties: ViewingProperties) = this()

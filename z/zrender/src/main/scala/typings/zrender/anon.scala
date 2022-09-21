@@ -19,7 +19,7 @@ object anon {
     
     var colorStops: ColorStops
     
-    var globalCoord: GlobalCoords
+    var global: GlobalCoords
     
     var `type`: linear
     
@@ -36,13 +36,13 @@ object anon {
     inline def apply(
       addColorStop: (Double, String) => Unit,
       colorStops: ColorStops,
-      globalCoord: GlobalCoords,
+      global: GlobalCoords,
       x: X,
       x2: X2,
       y: Y,
       y2: Y2
     ): AddColorStop = {
-      val __obj = js.Dynamic.literal(addColorStop = js.Any.fromFunction2(addColorStop), colorStops = colorStops.asInstanceOf[js.Any], globalCoord = globalCoord.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(addColorStop = js.Any.fromFunction2(addColorStop), colorStops = colorStops.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("linear")
       __obj.asInstanceOf[AddColorStop]
     }
@@ -53,9 +53,9 @@ object anon {
       
       inline def setColorStops(value: ColorStops): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
       
-      inline def setColorStopsVarargs(value: Color*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
+      inline def setColorStopsVarargs(value: Color*): Self = StObject.set(x, "colorStops", js.Array(value*))
       
-      inline def setGlobalCoord(value: GlobalCoords): Self = StObject.set(x, "globalCoord", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: GlobalCoords): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
       inline def setType(value: linear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

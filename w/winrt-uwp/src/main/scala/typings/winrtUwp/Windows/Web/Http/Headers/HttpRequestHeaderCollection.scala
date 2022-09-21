@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
@@ -46,7 +45,7 @@ trait HttpRequestHeaderCollection extends StObject {
   var cookie: HttpCookiePairHeaderValueCollection = js.native
   
   /** Gets or sets the DateTime object that represents the value of a Date HTTP header on an HTTP request. */
-  var date: Date = js.native
+  var date: js.Date = js.native
   
   /** Gets the HttpExpectationHeaderValueCollection of HttpExpectationHeaderValue objects that represent the value of an Expect HTTP header on an HTTP request. */
   var expect: HttpExpectationHeaderValueCollection = js.native
@@ -55,7 +54,7 @@ trait HttpRequestHeaderCollection extends StObject {
     * Retrieves an iterator to the first item in the HttpRequestHeaderCollection .
     * @return An object that can be used to enumerate the items in the collection. The iterator points to the first item in the HttpRequestHeaderCollection .
     */
-  def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+  def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
   
   /** Gets or sets the String that represents the value of a From HTTP header on an HTTP request. */
   var from: String = js.native
@@ -77,10 +76,10 @@ trait HttpRequestHeaderCollection extends StObject {
   var host: HostName = js.native
   
   /** Gets or sets the DateTime object that represents the value of an If-Modified-Since HTTP header on an HTTP request. */
-  var ifModifiedSince: Date = js.native
+  var ifModifiedSince: js.Date = js.native
   
   /** Gets or sets the DateTime object that represents the value of an If-Unmodified-Since HTTP header on an HTTP request. */
-  var ifUnmodifiedSince: Date = js.native
+  var ifUnmodifiedSince: js.Date = js.native
   
   /**
     * Inserts or replaces an item in the HttpRequestHeaderCollection with the specified key and value.

@@ -31,7 +31,7 @@ object mod {
   trait MochaClientOptions
     extends StObject
        with /** any supported Mocha configuration options */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /** This will be exposed in a reporter as `result.mocha.{exportedValue}` */
     var `export`: js.UndefOr[js.Array[String]] = js.undefined
@@ -52,7 +52,7 @@ object mod {
       
       inline def setExportUndefined: Self = StObject.set(x, "export", js.undefined)
       
-      inline def setExportVarargs(value: String*): Self = StObject.set(x, "export", js.Array(value :_*))
+      inline def setExportVarargs(value: String*): Self = StObject.set(x, "export", js.Array(value*))
       
       inline def setOpts(value: `true` | String): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       

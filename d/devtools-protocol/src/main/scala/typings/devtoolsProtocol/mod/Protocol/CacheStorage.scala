@@ -46,7 +46,7 @@ object CacheStorage {
   trait CachedResponse extends StObject {
     
     /**
-      * Entry content, base64-encoded.
+      * Entry content, base64-encoded. (Encoded as a base64 string when passed over JSON)
       */
     var body: String
   }
@@ -149,7 +149,7 @@ object CacheStorage {
       
       inline def setRequestHeaders(value: js.Array[Header]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
       
-      inline def setRequestHeadersVarargs(value: Header*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
+      inline def setRequestHeadersVarargs(value: Header*): Self = StObject.set(x, "requestHeaders", js.Array(value*))
       
       inline def setRequestMethod(value: String): Self = StObject.set(x, "requestMethod", value.asInstanceOf[js.Any])
       
@@ -157,7 +157,7 @@ object CacheStorage {
       
       inline def setResponseHeaders(value: js.Array[Header]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
       
-      inline def setResponseHeadersVarargs(value: Header*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+      inline def setResponseHeadersVarargs(value: Header*): Self = StObject.set(x, "responseHeaders", js.Array(value*))
       
       inline def setResponseStatus(value: integer): Self = StObject.set(x, "responseStatus", value.asInstanceOf[js.Any])
       
@@ -275,7 +275,7 @@ object CacheStorage {
       
       inline def setCaches(value: js.Array[Cache]): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
       
-      inline def setCachesVarargs(value: Cache*): Self = StObject.set(x, "caches", js.Array(value :_*))
+      inline def setCachesVarargs(value: Cache*): Self = StObject.set(x, "caches", js.Array(value*))
     }
   }
   
@@ -309,7 +309,7 @@ object CacheStorage {
       
       inline def setRequestHeaders(value: js.Array[Header]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
       
-      inline def setRequestHeadersVarargs(value: Header*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
+      inline def setRequestHeadersVarargs(value: Header*): Self = StObject.set(x, "requestHeaders", js.Array(value*))
       
       inline def setRequestURL(value: String): Self = StObject.set(x, "requestURL", value.asInstanceOf[js.Any])
     }
@@ -406,7 +406,7 @@ object CacheStorage {
       
       inline def setCacheDataEntries(value: js.Array[DataEntry]): Self = StObject.set(x, "cacheDataEntries", value.asInstanceOf[js.Any])
       
-      inline def setCacheDataEntriesVarargs(value: DataEntry*): Self = StObject.set(x, "cacheDataEntries", js.Array(value :_*))
+      inline def setCacheDataEntriesVarargs(value: DataEntry*): Self = StObject.set(x, "cacheDataEntries", js.Array(value*))
       
       inline def setReturnCount(value: Double): Self = StObject.set(x, "returnCount", value.asInstanceOf[js.Any])
     }

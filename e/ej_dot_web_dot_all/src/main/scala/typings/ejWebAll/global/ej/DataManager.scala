@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.DataManager")
 @js.native
-class DataManager ()
+open class DataManager ()
   extends StObject
      with typings.ejWebAll.ej.DataManager {
-  def this(dataSource: js.Any) = this()
-  def this(dataSource: js.Any, query: typings.ejWebAll.ej.Query) = this()
+  def this(dataSource: Any) = this()
+  def this(dataSource: Any, query: typings.ejWebAll.ej.Query) = this()
   def this(dataSource: Unit, query: typings.ejWebAll.ej.Query) = this()
-  def this(dataSource: js.Any, query: Unit, adaptor: js.Any) = this()
-  def this(dataSource: js.Any, query: typings.ejWebAll.ej.Query, adaptor: js.Any) = this()
-  def this(dataSource: Unit, query: Unit, adaptor: js.Any) = this()
-  def this(dataSource: Unit, query: typings.ejWebAll.ej.Query, adaptor: js.Any) = this()
+  def this(dataSource: Any, query: Unit, adaptor: Any) = this()
+  def this(dataSource: Any, query: typings.ejWebAll.ej.Query, adaptor: Any) = this()
+  def this(dataSource: Unit, query: Unit, adaptor: Any) = this()
+  def this(dataSource: Unit, query: typings.ejWebAll.ej.Query, adaptor: Any) = this()
 }

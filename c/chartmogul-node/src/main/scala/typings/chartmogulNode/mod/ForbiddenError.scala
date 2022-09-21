@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("chartmogul-node", "ForbiddenError")
 @js.native
-class ForbiddenError () extends ChartMogulError
+open class ForbiddenError () extends ChartMogulError

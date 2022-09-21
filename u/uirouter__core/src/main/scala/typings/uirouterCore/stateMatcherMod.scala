@@ -11,10 +11,10 @@ object stateMatcherMod {
   
   @JSImport("@uirouter/core/lib/state/stateMatcher", "StateMatcher")
   @js.native
-  class StateMatcher protected () extends StObject {
+  open class StateMatcher protected () extends StObject {
     def this(_states: StringDictionary[StateObject]) = this()
     
-    /* private */ var _states: js.Any = js.native
+    /* private */ var _states: Any = js.native
     
     def find(stateOrName: StateOrName): StateObject = js.native
     def find(stateOrName: StateOrName, base: Unit, matchGlob: Boolean): StateObject = js.native

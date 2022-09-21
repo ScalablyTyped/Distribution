@@ -34,9 +34,11 @@ trait MapOptions extends StObject {
   
   var keyboardShortcuts: js.UndefOr[Boolean] = js.undefined
   
+  var mapId: js.UndefOr[String] = js.undefined
+  
   var mapTypeControl: js.UndefOr[Boolean] = js.undefined
   
-  var mapTypeControlOptions: js.UndefOr[js.Any] = js.undefined
+  var mapTypeControlOptions: js.UndefOr[Any] = js.undefined
   
   var mapTypeId: js.UndefOr[String] = js.undefined
   
@@ -60,11 +62,11 @@ trait MapOptions extends StObject {
   
   var scaleControl: js.UndefOr[Boolean] = js.undefined
   
-  var scaleControlOptions: js.UndefOr[js.Any] = js.undefined
+  var scaleControlOptions: js.UndefOr[Any] = js.undefined
   
   var scrollwheel: js.UndefOr[Boolean] = js.undefined
   
-  var streetView: js.UndefOr[js.Any] = js.undefined
+  var streetView: js.UndefOr[Any] = js.undefined
   
   var streetViewControl: js.UndefOr[Boolean] = js.undefined
   
@@ -139,9 +141,13 @@ object MapOptions {
     
     inline def setKeyboardShortcutsUndefined: Self = StObject.set(x, "keyboardShortcuts", js.undefined)
     
+    inline def setMapId(value: String): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
+    
+    inline def setMapIdUndefined: Self = StObject.set(x, "mapId", js.undefined)
+    
     inline def setMapTypeControl(value: Boolean): Self = StObject.set(x, "mapTypeControl", value.asInstanceOf[js.Any])
     
-    inline def setMapTypeControlOptions(value: js.Any): Self = StObject.set(x, "mapTypeControlOptions", value.asInstanceOf[js.Any])
+    inline def setMapTypeControlOptions(value: Any): Self = StObject.set(x, "mapTypeControlOptions", value.asInstanceOf[js.Any])
     
     inline def setMapTypeControlOptionsUndefined: Self = StObject.set(x, "mapTypeControlOptions", js.undefined)
     
@@ -189,7 +195,7 @@ object MapOptions {
     
     inline def setScaleControl(value: Boolean): Self = StObject.set(x, "scaleControl", value.asInstanceOf[js.Any])
     
-    inline def setScaleControlOptions(value: js.Any): Self = StObject.set(x, "scaleControlOptions", value.asInstanceOf[js.Any])
+    inline def setScaleControlOptions(value: Any): Self = StObject.set(x, "scaleControlOptions", value.asInstanceOf[js.Any])
     
     inline def setScaleControlOptionsUndefined: Self = StObject.set(x, "scaleControlOptions", js.undefined)
     
@@ -199,7 +205,7 @@ object MapOptions {
     
     inline def setScrollwheelUndefined: Self = StObject.set(x, "scrollwheel", js.undefined)
     
-    inline def setStreetView(value: js.Any): Self = StObject.set(x, "streetView", value.asInstanceOf[js.Any])
+    inline def setStreetView(value: Any): Self = StObject.set(x, "streetView", value.asInstanceOf[js.Any])
     
     inline def setStreetViewControl(value: Boolean): Self = StObject.set(x, "streetViewControl", value.asInstanceOf[js.Any])
     
@@ -215,7 +221,7 @@ object MapOptions {
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    inline def setStylesVarargs(value: MapTypeStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: MapTypeStyle*): Self = StObject.set(x, "styles", js.Array(value*))
     
     inline def setTilt(value: Double): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
     

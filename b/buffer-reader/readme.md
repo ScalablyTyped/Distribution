@@ -10,10 +10,10 @@ a reader for nodejs buffer
 | ------------------ | :-------------: |
 | Full name          | buffer-reader |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 19270 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1669.3333333333333 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/villadora/node-buffer-reader)

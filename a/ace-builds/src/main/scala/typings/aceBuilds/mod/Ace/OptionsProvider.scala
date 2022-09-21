@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OptionsProvider extends StObject {
   
-  def getOption(name: String): js.Any = js.native
+  def getOption(name: String): Any = js.native
   
-  def getOptions(): StringDictionary[js.Any] = js.native
-  def getOptions(optionNames: js.Array[String]): StringDictionary[js.Any] = js.native
-  def getOptions(optionNames: StringDictionary[js.Any]): StringDictionary[js.Any] = js.native
+  def getOptions(): StringDictionary[Any] = js.native
+  def getOptions(optionNames: js.Array[String]): StringDictionary[Any] = js.native
+  def getOptions(optionNames: StringDictionary[Any]): StringDictionary[Any] = js.native
   
-  def setOption(name: String, value: js.Any): Unit = js.native
+  def setOption(name: String, value: Any): Unit = js.native
   
-  def setOptions(optList: StringDictionary[js.Any]): Unit = js.native
+  def setOptions(optList: StringDictionary[Any]): Unit = js.native
 }

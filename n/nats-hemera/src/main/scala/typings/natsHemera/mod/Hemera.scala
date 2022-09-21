@@ -10,8 +10,8 @@ import typings.natsHemera.natsHemeraStrings.onRequest
 import typings.natsHemera.natsHemeraStrings.onResponse
 import typings.natsHemera.natsHemeraStrings.onSend
 import typings.natsHemera.natsHemeraStrings.preHandler
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
+import typings.pino.mod.LoggerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +31,7 @@ trait Hemera[Request, Response] extends StObject {
     handler: js.ThisFunction1[
       /* this */ Hemera[ServerRequest, ServerResponse], 
       /* request */ ServerPattern, 
-      js.Promise[js.Any]
+      js.Promise[Any]
     ]
   ): AddDefinition = js.native
   // add
@@ -50,7 +50,7 @@ trait Hemera[Request, Response] extends StObject {
     handler: js.ThisFunction1[
       /* this */ Hemera[ServerRequest, ServerResponse], 
       /* request */ ServerPattern, 
-      js.Promise[js.Any]
+      js.Promise[Any]
     ]
   ): AddDefinition = js.native
   def add(
@@ -64,30 +64,30 @@ trait Hemera[Request, Response] extends StObject {
   ): AddDefinition = js.native
   
   @JSName("auth$")
-  var auth$: js.Any = js.native
+  var auth$: Any = js.native
   
   def checkPluginDependencies(plugin: Plugin): Unit = js.native
   
   def close(): js.Promise[Unit] = js.native
-  def close(closeListener: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+  def close(closeListener: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = js.native
   
   var config: Config = js.native
   
   @JSName("context$")
-  var context$: js.Any = js.native
+  var context$: Any = js.native
   
-  def createError(name: String): js.Any = js.native
+  def createError(name: String): Any = js.native
   
-  def decorate(name: String, decoration: js.Any): Hemera[NoContext, NoContext] = js.native
-  def decorate(name: String, decoration: js.Any, dependencies: js.Array[String]): Hemera[NoContext, NoContext] = js.native
+  def decorate(name: String, decoration: Any): Hemera[NoContext, NoContext] = js.native
+  def decorate(name: String, decoration: Any, dependencies: js.Array[String]): Hemera[NoContext, NoContext] = js.native
   
   @JSName("delegate$")
-  var delegate$: js.Any = js.native
+  var delegate$: Any = js.native
   
-  var errors: StringDictionary[Error] = js.native
+  var errors: StringDictionary[js.Error] = js.native
   
-  def expose(name: String, exposition: js.Any): Hemera[NoContext, NoContext] = js.native
-  def expose(name: String, exposition: js.Any, dependencies: js.Array[String]): Hemera[NoContext, NoContext] = js.native
+  def expose(name: String, exposition: Any): Hemera[NoContext, NoContext] = js.native
+  def expose(name: String, exposition: Any, dependencies: js.Array[String]): Hemera[NoContext, NoContext] = js.native
   
   @JSName("ext")
   def ext_onAct(
@@ -125,9 +125,9 @@ trait Hemera[Request, Response] extends StObject {
     name: onError,
     handler: js.Function4[
       /* instance */ Hemera[ServerRequest, ServerResponse], 
-      /* payload */ js.Any, 
-      /* error */ Error, 
-      /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+      /* payload */ Any, 
+      /* error */ js.Error, 
+      /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
       Unit
     ]
   ): Hemera[ServerRequest, ServerResponse] = js.native
@@ -166,8 +166,8 @@ trait Hemera[Request, Response] extends StObject {
     name: onResponse,
     handler: js.Function3[
       /* instance */ Hemera[ServerRequest, ServerResponse], 
-      (/* payload */ js.Any) | (/* reply */ Reply), 
-      (/* error */ Error) | (/* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]), 
+      (/* payload */ Any) | (/* reply */ Reply), 
+      (/* error */ js.Error) | (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]), 
       js.Promise[Unit] | Unit
     ]
   ): Hemera[ServerRequest, ServerResponse] = js.native
@@ -188,7 +188,7 @@ trait Hemera[Request, Response] extends StObject {
       /* instance */ Hemera[ServerRequest, ServerResponse], 
       /* request */ ServerRequest, 
       /* reply */ Reply, 
-      /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+      /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
       Unit
     ]
   ): Hemera[ServerRequest, ServerResponse] = js.native
@@ -219,7 +219,7 @@ trait Hemera[Request, Response] extends StObject {
   
   def hasDecorator(name: String): Boolean = js.native
   
-  def list(Pattern: js.Any, options: js.Any): js.Array[AddDefinition] = js.native
+  def list(Pattern: Any, options: Any): js.Array[AddDefinition] = js.native
   
   /**
     * Returns the load propert from heavy instance
@@ -228,19 +228,19 @@ trait Hemera[Request, Response] extends StObject {
     * @type {*}
     * @memberof Hemera
     */
-  var load: js.Any = js.native
+  var load: Any = js.native
   
-  var log: typings.pino.mod.Logger | Logger = js.native
+  var log: typings.pino.mod.Logger[LoggerOptions] | Logger = js.native
   
   var matchedAction: AddDefinition = js.native
   
   @JSName("meta$")
-  var meta$: js.Any = js.native
+  var meta$: Any = js.native
   
   var notFoundPattern: ServerPattern = js.native
   
   def ready(): js.Promise[Unit] = js.native
-  def ready(readyListener: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def ready(readyListener: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   def remove(topic: String, maxMessages: Double): Boolean = js.native
   def remove(topic: Double, maxMessages: Double): Boolean = js.native
@@ -261,14 +261,14 @@ trait Hemera[Request, Response] extends StObject {
     * @type {*}
     * @memberof Hemera
     */
-  var router: js.Any = js.native
+  var router: Any = js.native
   
   def setClientDecoder(encoder: js.Function1[/* message */ String | Buffer, DecoderResult]): Hemera[NoContext, NoContext] = js.native
   
   // serialization
   def setClientEncoder(encoder: js.Function1[/* message */ js.Object | Buffer, EncoderResult]): Hemera[NoContext, NoContext] = js.native
   
-  def setErrorHandler(handler: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def setErrorHandler(handler: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   def setIdGenerator(generatorFunction: js.Function0[String]): Hemera[NoContext, NoContext] = js.native
   
@@ -276,9 +276,9 @@ trait Hemera[Request, Response] extends StObject {
   def setNotFoundPattern(pattern: String): Unit = js.native
   def setNotFoundPattern(pattern: ServerPattern): Unit = js.native
   
-  def setResponseSchemaCompiler(compilerFunction: js.Function1[/* schema */ js.Object, js.Function | js.Promise[js.Any]]): Hemera[NoContext, NoContext] = js.native
+  def setResponseSchemaCompiler(compilerFunction: js.Function1[/* schema */ js.Object, js.Function | js.Promise[Any]]): Hemera[NoContext, NoContext] = js.native
   
-  def setSchemaCompiler(compilerFunction: js.Function1[/* schema */ js.Object, js.Function | js.Promise[js.Any]]): Hemera[NoContext, NoContext] = js.native
+  def setSchemaCompiler(compilerFunction: js.Function1[/* schema */ js.Object, js.Function | js.Promise[Any]]): Hemera[NoContext, NoContext] = js.native
   
   def setServerDecoder(encoder: js.Function1[/* message */ String | Buffer, DecoderResult]): Hemera[NoContext, NoContext] = js.native
   

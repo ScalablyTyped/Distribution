@@ -1,13 +1,12 @@
 package typings.braintree.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DisbursementDetails extends StObject {
   
-  var disbursementDate: Date
+  var disbursementDate: js.Date
   
   var fundsHeld: Boolean
   
@@ -22,7 +21,7 @@ trait DisbursementDetails extends StObject {
 object DisbursementDetails {
   
   inline def apply(
-    disbursementDate: Date,
+    disbursementDate: js.Date,
     fundsHeld: Boolean,
     settlementAmount: String,
     settlementCurrencyExchangeRate: String,
@@ -35,7 +34,7 @@ object DisbursementDetails {
   
   extension [Self <: DisbursementDetails](x: Self) {
     
-    inline def setDisbursementDate(value: Date): Self = StObject.set(x, "disbursementDate", value.asInstanceOf[js.Any])
+    inline def setDisbursementDate(value: js.Date): Self = StObject.set(x, "disbursementDate", value.asInstanceOf[js.Any])
     
     inline def setFundsHeld(value: Boolean): Self = StObject.set(x, "fundsHeld", value.asInstanceOf[js.Any])
     

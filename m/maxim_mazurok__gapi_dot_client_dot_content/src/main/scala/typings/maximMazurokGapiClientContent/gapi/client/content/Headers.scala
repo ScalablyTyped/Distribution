@@ -48,30 +48,30 @@ object Headers {
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: LocationIdSet*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: LocationIdSet*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setNumberOfItems(value: js.Array[String]): Self = StObject.set(x, "numberOfItems", value.asInstanceOf[js.Any])
     
     inline def setNumberOfItemsUndefined: Self = StObject.set(x, "numberOfItems", js.undefined)
     
-    inline def setNumberOfItemsVarargs(value: String*): Self = StObject.set(x, "numberOfItems", js.Array(value :_*))
+    inline def setNumberOfItemsVarargs(value: String*): Self = StObject.set(x, "numberOfItems", js.Array(value*))
     
     inline def setPostalCodeGroupNames(value: js.Array[String]): Self = StObject.set(x, "postalCodeGroupNames", value.asInstanceOf[js.Any])
     
     inline def setPostalCodeGroupNamesUndefined: Self = StObject.set(x, "postalCodeGroupNames", js.undefined)
     
-    inline def setPostalCodeGroupNamesVarargs(value: String*): Self = StObject.set(x, "postalCodeGroupNames", js.Array(value :_*))
+    inline def setPostalCodeGroupNamesVarargs(value: String*): Self = StObject.set(x, "postalCodeGroupNames", js.Array(value*))
     
     inline def setPrices(value: js.Array[Price]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
     inline def setPricesUndefined: Self = StObject.set(x, "prices", js.undefined)
     
-    inline def setPricesVarargs(value: Price*): Self = StObject.set(x, "prices", js.Array(value :_*))
+    inline def setPricesVarargs(value: Price*): Self = StObject.set(x, "prices", js.Array(value*))
     
     inline def setWeights(value: js.Array[Weight]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
     
     inline def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
     
-    inline def setWeightsVarargs(value: Weight*): Self = StObject.set(x, "weights", js.Array(value :_*))
+    inline def setWeightsVarargs(value: Weight*): Self = StObject.set(x, "weights", js.Array(value*))
   }
 }

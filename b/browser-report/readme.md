@@ -10,10 +10,10 @@ Report browser settings like whatsmybrowser.org.
 | ------------------ | :-------------: |
 | Full name          | browser-report |
 | Keywords           | browser details, browser detection, browser, detect, report, supported, user agent string, user agent, user-agent, useragent, viewport, whatsmybrowser |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 9377 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 612.3333333333334 |
+| # stars            | 87.0 |
 
 ## Links
 - [Homepage](https://github.com/keithws/browser-report#readme)

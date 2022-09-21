@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.TorusKnotGeometry")
 @js.native
-class TorusKnotGeometry protected ()
+open class TorusKnotGeometry protected ()
   extends typings.three.mod.TorusKnotGeometry {
   /**
-  	 * @param [radius=1]
-  	 * @param [tube=0.4]
-  	 * @param [radialSegments=64]
-  	 * @param [tubularSegments=8]
-  	 * @param [p=2]
-  	 * @param [q=3]
-  	 */
+    * @param [radius=1]
+    * @param [tube=0.4]
+    * @param [radialSegments=64]
+    * @param [tubularSegments=8]
+    * @param [p=2]
+    * @param [q=3]
+    */
   def this(
     radius: js.UndefOr[Double],
     tube: js.UndefOr[Double],

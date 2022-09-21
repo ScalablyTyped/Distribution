@@ -8,5 +8,5 @@ object hardforksMod {
   
   @JSImport("ethereumjs-common/dist/hardforks", "hardforks")
   @js.native
-  val hardforks: js.Array[js.Array[js.Any]] = js.native
+  val hardforks: js.Array[js.Array[Any]] = js.native
 }

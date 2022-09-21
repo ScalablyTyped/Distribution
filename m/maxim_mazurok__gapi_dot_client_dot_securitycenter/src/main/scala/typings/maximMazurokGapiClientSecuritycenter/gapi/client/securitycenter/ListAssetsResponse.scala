@@ -31,7 +31,7 @@ object ListAssetsResponse {
     
     inline def setListAssetsResultsUndefined: Self = StObject.set(x, "listAssetsResults", js.undefined)
     
-    inline def setListAssetsResultsVarargs(value: ListAssetsResult*): Self = StObject.set(x, "listAssetsResults", js.Array(value :_*))
+    inline def setListAssetsResultsVarargs(value: ListAssetsResult*): Self = StObject.set(x, "listAssetsResults", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -19,8 +19,8 @@ object Match {
   @js.native
   trait MatchExpression extends StObject {
     
-    def and(varName: String, condition: BoolMatch, value: js.Any): MatchExpression = js.native
-    def and(varName: String, condition: NumberMatch, value: js.Any): MatchExpression = js.native
+    def and(varName: String, condition: BoolMatch, value: Any): MatchExpression = js.native
+    def and(varName: String, condition: NumberMatch, value: Any): MatchExpression = js.native
     /**
       * Concatenates the current expression with a new one using the logical AND operator.
       * @param  {string}            varName Name of the additional variable or property to match.
@@ -28,12 +28,12 @@ object Match {
       * @param  {any}               value   The value to compare against the additional variable or property during the matching.
       * @return {MatchExpression}            A new MatchExpression resulting from the concatenation of the current expression with a new one generated from the specified parameters.
       */
-    def and(varName: String, condition: RoomProperties, value: js.Any): MatchExpression = js.native
-    def and(varName: String, condition: StringMatch, value: js.Any): MatchExpression = js.native
-    def and(varName: String, condition: UserProperties, value: js.Any): MatchExpression = js.native
-    def and(varName: String, condition: CreateSFSGameRequest, value: js.Any): MatchExpression = js.native
-    def and(varName: String, condition: FindRoomsRequest, value: js.Any): MatchExpression = js.native
-    def and(varName: String, condition: FindUsersRequest, value: js.Any): MatchExpression = js.native
+    def and(varName: String, condition: RoomProperties, value: Any): MatchExpression = js.native
+    def and(varName: String, condition: StringMatch, value: Any): MatchExpression = js.native
+    def and(varName: String, condition: UserProperties, value: Any): MatchExpression = js.native
+    def and(varName: String, condition: CreateSFSGameRequest, value: Any): MatchExpression = js.native
+    def and(varName: String, condition: FindRoomsRequest, value: Any): MatchExpression = js.native
+    def and(varName: String, condition: FindUsersRequest, value: Any): MatchExpression = js.native
     
     /** @type {(RoomProperties | UserProperties | BoolMatch | NumberMatch | StringMatch | Requests.Game.CreateSFSGameRequest | Requests.System.FindRoomsRequest | Requests.System.FindUsersRequest)} Returns the matching criteria used during values comparison among those provided by the BoolMatch, NumberMatch and StringMatch classes. */
     var condition: RoomProperties | UserProperties | BoolMatch | NumberMatch | StringMatch | CreateSFSGameRequest | FindRoomsRequest | FindUsersRequest = js.native
@@ -50,8 +50,8 @@ object Match {
     /** @type {MatchExpression} Returns the next matching expression concatenated to the current one, if existing. */
     var next: MatchExpression = js.native
     
-    def or(varName: String, condition: BoolMatch, value: js.Any): MatchExpression = js.native
-    def or(varName: String, condition: NumberMatch, value: js.Any): MatchExpression = js.native
+    def or(varName: String, condition: BoolMatch, value: Any): MatchExpression = js.native
+    def or(varName: String, condition: NumberMatch, value: Any): MatchExpression = js.native
     /**
       * Concatenates the current expression with a new one using the logical OR operator.
       * @param  {string}            varName Name of the additional variable or property to match.
@@ -59,12 +59,12 @@ object Match {
       * @param  {any}               value   The value to compare against the additional variable or property during the matching.
       * @return {MatchExpression}           A new MatchExpression resulting from the concatenation of the current expression with a new one generated from the specified parameters.
       */
-    def or(varName: String, condition: RoomProperties, value: js.Any): MatchExpression = js.native
-    def or(varName: String, condition: StringMatch, value: js.Any): MatchExpression = js.native
-    def or(varName: String, condition: UserProperties, value: js.Any): MatchExpression = js.native
-    def or(varName: String, condition: CreateSFSGameRequest, value: js.Any): MatchExpression = js.native
-    def or(varName: String, condition: FindRoomsRequest, value: js.Any): MatchExpression = js.native
-    def or(varName: String, condition: FindUsersRequest, value: js.Any): MatchExpression = js.native
+    def or(varName: String, condition: RoomProperties, value: Any): MatchExpression = js.native
+    def or(varName: String, condition: StringMatch, value: Any): MatchExpression = js.native
+    def or(varName: String, condition: UserProperties, value: Any): MatchExpression = js.native
+    def or(varName: String, condition: CreateSFSGameRequest, value: Any): MatchExpression = js.native
+    def or(varName: String, condition: FindRoomsRequest, value: Any): MatchExpression = js.native
+    def or(varName: String, condition: FindUsersRequest, value: Any): MatchExpression = js.native
     
     /**
       * Moves the iterator cursor to the first matching expression in the chain.
@@ -73,7 +73,7 @@ object Match {
     def rewind(): MatchExpression = js.native
     
     /** @type {any} Returns the value against which the variable or property corresponding to varName is compared. */
-    var value: js.Any = js.native
+    var value: Any = js.native
     
     /** @type {string} Returns the name of the variable or property against which the comparison is made. */
     var varName: String = js.native

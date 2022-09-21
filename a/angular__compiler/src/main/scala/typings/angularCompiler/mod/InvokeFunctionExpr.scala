@@ -6,96 +6,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "InvokeFunctionExpr")
 @js.native
-class InvokeFunctionExpr protected ()
-  extends typings.angularCompiler.compilerMod.InvokeFunctionExpr {
+open class InvokeFunctionExpr protected () extends Expression {
+  def this(fn: Expression, args: js.Array[Expression]) = this()
+  def this(fn: Expression, args: js.Array[Expression], `type`: Type) = this()
+  def this(fn: Expression, args: js.Array[Expression], `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(fn: Expression, args: js.Array[Expression], `type`: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(fn: Expression, args: js.Array[Expression], `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  def this(fn: Expression, args: js.Array[Expression], `type`: Null, sourceSpan: Null, pure: Boolean) = this()
+  def this(fn: Expression, args: js.Array[Expression], `type`: Null, sourceSpan: Unit, pure: Boolean) = this()
   def this(
-    fn: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression]
-  ) = this()
-  def this(
-    fn: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: typings.angularCompiler.outputAstMod.Type
-  ) = this()
-  def this(
-    fn: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
+    fn: Expression,
+    args: js.Array[Expression],
     `type`: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan,
+    pure: Boolean
   ) = this()
+  def this(fn: Expression, args: js.Array[Expression], `type`: Unit, sourceSpan: Null, pure: Boolean) = this()
+  def this(fn: Expression, args: js.Array[Expression], `type`: Unit, sourceSpan: Unit, pure: Boolean) = this()
   def this(
-    fn: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
+    fn: Expression,
+    args: js.Array[Expression],
     `type`: Unit,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    fn: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    fn: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: Null,
-    sourceSpan: Null,
+    sourceSpan: ParseSourceSpan,
     pure: Boolean
   ) = this()
+  def this(fn: Expression, args: js.Array[Expression], `type`: Type, sourceSpan: Null, pure: Boolean) = this()
+  def this(fn: Expression, args: js.Array[Expression], `type`: Type, sourceSpan: Unit, pure: Boolean) = this()
   def this(
-    fn: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: Null,
-    sourceSpan: Unit,
+    fn: Expression,
+    args: js.Array[Expression],
+    `type`: Type,
+    sourceSpan: ParseSourceSpan,
     pure: Boolean
   ) = this()
-  def this(
-    fn: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    pure: Boolean
-  ) = this()
-  def this(
-    fn: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: Unit,
-    sourceSpan: Null,
-    pure: Boolean
-  ) = this()
-  def this(
-    fn: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: Unit,
-    sourceSpan: Unit,
-    pure: Boolean
-  ) = this()
-  def this(
-    fn: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: Unit,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    pure: Boolean
-  ) = this()
-  def this(
-    fn: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: Null,
-    pure: Boolean
-  ) = this()
-  def this(
-    fn: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: Unit,
-    pure: Boolean
-  ) = this()
-  def this(
-    fn: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    pure: Boolean
-  ) = this()
+  
+  var args: js.Array[Expression] = js.native
+  
+  var fn: Expression = js.native
+  
+  var pure: Boolean = js.native
 }

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("muicss/react", "Dropdown")
 @js.native
-class Dropdown () extends default
+open class Dropdown () extends default

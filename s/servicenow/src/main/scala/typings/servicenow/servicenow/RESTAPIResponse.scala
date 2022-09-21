@@ -8,15 +8,15 @@ trait RESTAPIResponse extends StObject {
   
   def getStreamWriter(): RESTAPIResponseStream
   
-  def setBody(body: js.Any): Unit
+  def setBody(body: Any): Unit
   
   def setContentType(contentType: String): Unit
   
-  def setError(error: js.Any): Unit
+  def setError(error: Any): Unit
   
   def setHeader(header: String, value: String): Unit
   
-  def setHeaders(headers: js.Any): Unit
+  def setHeaders(headers: Any): Unit
   
   def setLocation(location: String): Unit
   
@@ -26,11 +26,11 @@ object RESTAPIResponse {
   
   inline def apply(
     getStreamWriter: () => RESTAPIResponseStream,
-    setBody: js.Any => Unit,
+    setBody: Any => Unit,
     setContentType: String => Unit,
-    setError: js.Any => Unit,
+    setError: Any => Unit,
     setHeader: (String, String) => Unit,
-    setHeaders: js.Any => Unit,
+    setHeaders: Any => Unit,
     setLocation: String => Unit,
     setStatus: Double => Unit
   ): RESTAPIResponse = {
@@ -42,15 +42,15 @@ object RESTAPIResponse {
     
     inline def setGetStreamWriter(value: () => RESTAPIResponseStream): Self = StObject.set(x, "getStreamWriter", js.Any.fromFunction0(value))
     
-    inline def setSetBody(value: js.Any => Unit): Self = StObject.set(x, "setBody", js.Any.fromFunction1(value))
+    inline def setSetBody(value: Any => Unit): Self = StObject.set(x, "setBody", js.Any.fromFunction1(value))
     
     inline def setSetContentType(value: String => Unit): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
     
-    inline def setSetError(value: js.Any => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
+    inline def setSetError(value: Any => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
     
     inline def setSetHeader(value: (String, String) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
     
-    inline def setSetHeaders(value: js.Any => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
+    inline def setSetHeaders(value: Any => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
     
     inline def setSetLocation(value: String => Unit): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
     

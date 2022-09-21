@@ -8,8 +8,7 @@ import typings.browserfs.fileSystemMod.BFSOneArgCallback
 import typings.browserfs.fileSystemMod.BaseFileSystem
 import typings.browserfs.fileSystemMod.FileSystem
 import typings.browserfs.fileSystemMod.FileSystemOptions
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +18,7 @@ object workerFSMod {
   
   @JSImport("browserfs/dist/node/backend/WorkerFS", JSImport.Default)
   @js.native
-  class default protected () extends WorkerFS {
+  open class default protected () extends WorkerFS {
     /**
       * **Deprecated. Please use WorkerFS.Create() method instead.**
       *
@@ -62,23 +61,23 @@ object workerFSMod {
     /**
       * Converts a local argument into a remote argument. Public so WorkerFile objects can call it.
       */
-    /* private */ def _argLocal2Remote(arg: js.Any): js.Any = js.native
+    /* private */ def _argLocal2Remote(arg: Any): Any = js.native
     
-    /* private */ def _argRemote2Local(arg: js.Any): js.Any = js.native
+    /* private */ def _argRemote2Local(arg: Any): Any = js.native
     
-    /* private */ var _callbackConverter: js.Any = js.native
+    /* private */ var _callbackConverter: Any = js.native
     
-    /* private */ var _isInitialized: js.Any = js.native
+    /* private */ var _isInitialized: Any = js.native
     
-    /* private */ var _isReadOnly: js.Any = js.native
+    /* private */ var _isReadOnly: Any = js.native
     
-    /* private */ def _rpc(methodName: js.Any, args: js.Any): js.Any = js.native
+    /* private */ def _rpc(methodName: Any, args: Any): Any = js.native
     
-    /* private */ var _supportLinks: js.Any = js.native
+    /* private */ var _supportLinks: Any = js.native
     
-    /* private */ var _supportProps: js.Any = js.native
+    /* private */ var _supportProps: Any = js.native
     
-    /* private */ var _worker: js.Any = js.native
+    /* private */ var _worker: Any = js.native
     
     def chmod(p: String, isLchmod: Boolean, mode: Double, cb: js.Function): Unit = js.native
     /* InferMemberOverrides */
@@ -95,7 +94,7 @@ object workerFSMod {
     override def chownSync(p: String, isLchown: Boolean, uid: Double, gid: Double): Unit = js.native
     
     /* InferMemberOverrides */
-    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
+    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, Any]): Unit = js.native
     
     /* InferMemberOverrides */
     override def exists(p: String, cb: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
@@ -136,9 +135,9 @@ object workerFSMod {
     override def readFile(fname: String, encoding: Null, flag: FileFlag, cb: BFSCallback[String | Buffer]): Unit = js.native
     
     /* InferMemberOverrides */
-    override def readFileSync(fname: String, encoding: String, flag: FileFlag): js.Any = js.native
+    override def readFileSync(fname: String, encoding: String, flag: FileFlag): Any = js.native
     /* InferMemberOverrides */
-    override def readFileSync(fname: String, encoding: Null, flag: FileFlag): js.Any = js.native
+    override def readFileSync(fname: String, encoding: Null, flag: FileFlag): Any = js.native
     
     /* InferMemberOverrides */
     override def readdir(p: String, cb: BFSCallback[js.Array[String]]): Unit = js.native
@@ -206,17 +205,17 @@ object workerFSMod {
     /* InferMemberOverrides */
     override def unlinkSync(p: String): Unit = js.native
     
-    def utimes(p: String, atime: Date, mtime: Date, cb: js.Function): Unit = js.native
+    def utimes(p: String, atime: js.Date, mtime: js.Date, cb: js.Function): Unit = js.native
     /* InferMemberOverrides */
-    override def utimes(p: String, atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+    override def utimes(p: String, atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimesSync(p: String, atime: Date, mtime: Date): Unit = js.native
+    override def utimesSync(p: String, atime: js.Date, mtime: js.Date): Unit = js.native
     
     /* InferMemberOverrides */
-    override def writeFile(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    override def writeFile(fname: String, data: Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
     /* InferMemberOverrides */
-    override def writeFile(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    override def writeFile(fname: String, data: Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
   }
   
   trait WorkerFSOptions extends StObject {

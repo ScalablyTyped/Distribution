@@ -1,5 +1,7 @@
 package typings.fridaGum.global
 
+import typings.fridaGum.Java.Backtrace
+import typings.fridaGum.Java.BacktraceOptions
 import typings.fridaGum.Java.ChooseCallbacks
 import typings.fridaGum.Java.ClassFactory
 import typings.fridaGum.Java.ClassSpec
@@ -23,7 +25,7 @@ object Java {
   
   @JSGlobal("Java.ClassFactory")
   @js.native
-  class ClassFactory_ ()
+  open class ClassFactory_ ()
     extends StObject
        with ClassFactory
   object ClassFactory_ {
@@ -64,7 +66,7 @@ object Java {
     * @param elements Array of JavaScript values to use for constructing the
     *                 Java array.
     */
-  inline def array(`type`: String, elements: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(`type`.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def array(`type`: String, elements: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(`type`.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   /**
     * Whether the current process has a Java runtime loaded. Do not invoke any other Java properties or
@@ -73,6 +75,14 @@ object Java {
   @JSGlobal("Java.available")
   @js.native
   val available: Boolean = js.native
+  
+  /**
+    * Generates a backtrace for the current thread.
+    *
+    * @param options Options to customize the stack-walking.
+    */
+  inline def backtrace(): Backtrace = ^.asInstanceOf[js.Dynamic].applyDynamic("backtrace")().asInstanceOf[Backtrace]
+  inline def backtrace(options: BacktraceOptions): Backtrace = ^.asInstanceOf[js.Dynamic].applyDynamic("backtrace")(options.asInstanceOf[js.Any]).asInstanceOf[Backtrace]
   
   /**
     * Creates a JavaScript wrapper given the existing instance at `handle` of
@@ -91,7 +101,7 @@ object Java {
     * @param className Name of class to enumerate instances of.
     * @param callbacks Object with callbacks.
     */
-  inline def choose(className: String, callbacks: ChooseCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(className.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def choose(className: String, callbacks: ChooseCallbacks[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(className.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * The default class factory used to implement e.g. `Java.use()`.
@@ -100,6 +110,13 @@ object Java {
   @JSGlobal("Java.classFactory")
   @js.native
   val classFactory: ClassFactory = js.native
+  
+  /**
+    * Similar to deoptimizeEverything but only deoptimizes boot image code.
+    * Use with `dalvik.vm.dex2oat-flags --inline-max-code-units=0` for best
+    * results.
+    */
+  inline def deoptimizeBootImage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deoptimizeBootImage")().asInstanceOf[Unit]
   
   /**
     * Forces the VM to execute everything with its interpreter. Necessary to

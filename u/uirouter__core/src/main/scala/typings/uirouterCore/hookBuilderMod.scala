@@ -14,7 +14,7 @@ object hookBuilderMod {
   
   @JSImport("@uirouter/core/lib/transition/hookBuilder", "HookBuilder")
   @js.native
-  class HookBuilder protected () extends StObject {
+  open class HookBuilder protected () extends StObject {
     def this(transition: Transition) = this()
     
     /**
@@ -43,6 +43,6 @@ object hookBuilderMod {
       */
     def getMatchingHooks(hookType: TransitionEventType, treeChanges: TreeChanges, transition: Transition): js.Array[RegisteredHook] = js.native
     
-    /* private */ var transition: js.Any = js.native
+    /* private */ var transition: Any = js.native
   }
 }

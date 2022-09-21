@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.anon
 
-import typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2.Proposal
+import typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2.CancelNegotiationRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,11 +35,14 @@ trait OauthtokenPrettyPrint extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
+  /** The ID of the proposal to cancel negotiation for. */
+  var proposalId: String
+  
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Proposal
+  var resource: CancelNegotiationRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +52,8 @@ trait OauthtokenPrettyPrint extends StObject {
 }
 object OauthtokenPrettyPrint {
   
-  inline def apply(accountId: String, resource: Proposal): OauthtokenPrettyPrint = {
-    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(accountId: String, proposalId: String, resource: CancelNegotiationRequest): OauthtokenPrettyPrint = {
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], proposalId = proposalId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthtokenPrettyPrint]
   }
   
@@ -90,11 +93,13 @@ object OauthtokenPrettyPrint {
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
+    inline def setProposalId(value: String): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
+    
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Proposal): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: CancelNegotiationRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -10,13 +10,13 @@ Single-sign-on helper package for Discourse
 | ------------------ | :-------------: |
 | Full name          | discourse-sso |
 | Keywords           | discourse, sso, login, helper package |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 206062 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 62651.333333333336 |
+| # stars            | 47.0 |
 
 ## Links
-- [Homepage](https://github.com/ArmedGuy/discourse_sso_node)
+- [Homepage](https://github.com/ArmedGuy/discourse_sso_node#readme)
 - [Bugs](https://github.com/ArmedGuy/discourse_sso_node/issues)
 - [Repository](https://github.com/ArmedGuy/discourse_sso_node)
 - [Npm](https://www.npmjs.com/package/discourse-sso)

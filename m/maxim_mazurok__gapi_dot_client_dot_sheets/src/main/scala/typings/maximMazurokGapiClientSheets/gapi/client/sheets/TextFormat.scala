@@ -15,7 +15,7 @@ trait TextFormat extends StObject {
   /** The size of the font. */
   var fontSize: js.UndefOr[Double] = js.undefined
   
-  /** The foreground color of the text. */
+  /** The foreground color of the text. Deprecated: Use foreground_color_style. */
   var foregroundColor: js.UndefOr[Color] = js.undefined
   
   /** The foreground color of the text. If foreground_color is also set, this field takes precedence. */
@@ -23,6 +23,13 @@ trait TextFormat extends StObject {
   
   /** True if the text is italicized. */
   var italic: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The link destination of the text, if any. Setting the link field in a TextFormatRun will clear the cell's existing links or a cell-level link set in the same request. When a link is
+    * set, the text foreground color will be set to the default link color and the text will be underlined. If these fields are modified in the same request, those values will be used
+    * instead of the link defaults.
+    */
+  var link: js.UndefOr[Link] = js.undefined
   
   /** True if the text has a strikethrough. */
   var strikethrough: js.UndefOr[Boolean] = js.undefined
@@ -62,6 +69,10 @@ object TextFormat {
     inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
     inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+    
+    inline def setLink(value: Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     inline def setStrikethrough(value: Boolean): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
     

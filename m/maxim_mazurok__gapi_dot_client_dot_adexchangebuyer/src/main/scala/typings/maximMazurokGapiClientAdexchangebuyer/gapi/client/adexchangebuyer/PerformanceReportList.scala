@@ -29,6 +29,6 @@ object PerformanceReportList {
     
     inline def setPerformanceReportUndefined: Self = StObject.set(x, "performanceReport", js.undefined)
     
-    inline def setPerformanceReportVarargs(value: PerformanceReport*): Self = StObject.set(x, "performanceReport", js.Array(value :_*))
+    inline def setPerformanceReportVarargs(value: PerformanceReport*): Self = StObject.set(x, "performanceReport", js.Array(value*))
   }
 }

@@ -6,14 +6,13 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorSet")
 @js.native
-class FileDescriptorSet () extends Message {
+open class FileDescriptorSet () extends Message {
   
   def addFile(): FileDescriptorProto = js.native
   def addFile(value: Unit, index: Double): FileDescriptorProto = js.native
@@ -33,7 +32,7 @@ object FileDescriptorSet {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
   
   inline def deserializeBinaryFromReader(message: FileDescriptorSet, reader: BinaryReader): FileDescriptorSet = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[FileDescriptorSet]
   
@@ -67,7 +66,7 @@ object FileDescriptorSet {
       
       inline def setFileList(value: js.Array[typings.googleProtobuf.descriptorPbMod.FileDescriptorProto.AsObject]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
       
-      inline def setFileListVarargs(value: typings.googleProtobuf.descriptorPbMod.FileDescriptorProto.AsObject*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+      inline def setFileListVarargs(value: typings.googleProtobuf.descriptorPbMod.FileDescriptorProto.AsObject*): Self = StObject.set(x, "fileList", js.Array(value*))
     }
   }
 }

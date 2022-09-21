@@ -18,6 +18,8 @@ trait QRCodeOptions extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
+  var overlay: js.UndefOr[QRCodeOverlay] = js.undefined
+  
   var padding: js.UndefOr[Double] = js.undefined
   
   var renderAs: js.UndefOr[String] = js.undefined
@@ -58,6 +60,10 @@ object QRCodeOptions {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOverlay(value: QRCodeOverlay): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    
+    inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
     inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     

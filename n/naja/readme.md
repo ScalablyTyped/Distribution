@@ -1,7 +1,7 @@
 
 # Scala.js typings for naja
 
-Typings are for version 2.0.1
+Typings are for version 2.4.0
 
 ## Library description:
 Modern AJAX library for Nette Framework
@@ -10,15 +10,15 @@ Modern AJAX library for Nette Framework
 | ------------------ | :-------------: |
 | Full name          | naja |
 | Keywords           | nette, ajax, history |
-| # releases         | 15 |
-| # dependents       | 0 |
-| # downloads        | 19896 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 7391.333333333333 |
+| # stars            | 100.0 |
 
 ## Links
 - [Homepage](https://naja.js.org)
-- [Bugs](https://github.com/jiripudil/Naja/issues)
-- [Repository](https://github.com/jiripudil/Naja)
+- [Bugs](https://github.com/naja-js/naja/issues)
+- [Repository](https://github.com/naja-js/naja)
 - [Npm](https://www.npmjs.com/package/naja)
     
 

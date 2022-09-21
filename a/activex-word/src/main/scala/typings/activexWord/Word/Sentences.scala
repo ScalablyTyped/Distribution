@@ -18,7 +18,7 @@ trait Sentences extends StObject {
   
   val Last: Range
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.Sentences_typekey")
   var WordDotSentences_typekey: Sentences
@@ -32,7 +32,7 @@ object Sentences {
     First: Range,
     Item: Double => Range,
     Last: Range,
-    Parent: js.Any,
+    Parent: Any,
     WordDotSentences_typekey: Sentences
   ): Sentences = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], First = First.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Last = Last.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object Sentences {
     
     inline def setLast(value: Range): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotSentences_typekey(value: Sentences): Self = StObject.set(x, "Word.Sentences_typekey", value.asInstanceOf[js.Any])
   }

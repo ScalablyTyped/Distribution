@@ -1,12 +1,35 @@
 package typings.fabric.fabricImplMod
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.fabric.fabricStrings.mouseColondblclick
+import typings.fabric.fabricStrings.mouseColondown
+import typings.fabric.fabricStrings.mouseColondownColonbefore
+import typings.fabric.fabricStrings.mouseColonmove
+import typings.fabric.fabricStrings.mouseColonmoveColonbefore
+import typings.fabric.fabricStrings.mouseColonout
+import typings.fabric.fabricStrings.mouseColonover
+import typings.fabric.fabricStrings.mouseColonup
+import typings.fabric.fabricStrings.mouseColonupColonbefore
+import typings.fabric.fabricStrings.mouseColonwheel
+import typings.std.Event
+import typings.std.MouseEvent
+import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IObservable[T] extends StObject {
+  
+  /**
+    * Fires event with an optional options object
+    * @memberOf fabric.Observable
+    * @param {String} eventName Event name to fire
+    * @param {Object} [options] Options object
+    * @return {Self} thisArg
+    * @chainable
+    */
+  def fire(eventName: String): T = js.native
+  def fire(eventName: String, options: Any): T = js.native
   
   /**
     * Stops event observing for a particular event handler. Calling this method
@@ -16,28 +39,21 @@ trait IObservable[T] extends StObject {
     */
   def off(): T = js.native
   def off(eventName: String): T = js.native
-  def off(eventName: String, handler: js.Function1[/* e */ IEvent, Unit]): T = js.native
-  def off(eventName: js.Any): T = js.native
-  def off(eventName: js.Any, handler: js.Function1[/* e */ IEvent, Unit]): T = js.native
-  def off(eventName: Unit, handler: js.Function1[/* e */ IEvent, Unit]): T = js.native
+  def off(eventName: String, handler: js.Function1[/* e */ IEvent[Event], Unit]): T = js.native
+  def off(eventName: Any): T = js.native
+  def off(eventName: Any, handler: js.Function1[/* e */ IEvent[Event], Unit]): T = js.native
+  def off(eventName: Unit, handler: js.Function1[/* e */ IEvent[Event], Unit]): T = js.native
   
   /**
     * Observes specified event
     * @param eventName Event name (eg. 'after:render')
     * @param handler Function that receives a notification when an event of the specified type occurs
     */
-  def on(eventName: String, handler: js.Function1[/* e */ IEvent, Unit]): T = js.native
-  /**
-    * Observes specified event
-    * @param eventName Object with key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler})
-    */
-  def on(events: StringDictionary[js.Function1[/* e */ IEvent, Unit]]): T = js.native
-  
-  /**
-    * Fires event with an optional options object
-    * @param eventName Event name to fire
-    * @param [options] Options object
-    */
-  def trigger(eventName: String): T = js.native
-  def trigger(eventName: String, options: js.Any): T = js.native
+  def on(
+    eventName: mouseColonup | mouseColondown | mouseColonmove | mouseColonupColonbefore | mouseColondownColonbefore | mouseColonmoveColonbefore | mouseColondblclick | mouseColonover | mouseColonout,
+    handler: js.Function1[/* e */ IEvent[MouseEvent], Unit]
+  ): T = js.native
+  def on(eventName: String, handler: js.Function1[/* e */ IEvent[Event], Unit]): T = js.native
+  @JSName("on")
+  def on_mousewheel(eventName: mouseColonwheel, handler: js.Function1[/* e */ IEvent[WheelEvent], Unit]): T = js.native
 }

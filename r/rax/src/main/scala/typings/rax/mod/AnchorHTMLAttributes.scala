@@ -8,7 +8,7 @@ trait AnchorHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var download: js.UndefOr[js.Any] = js.undefined
+  var download: js.UndefOr[Any] = js.undefined
   
   var href: js.UndefOr[String] = js.undefined
   
@@ -33,7 +33,7 @@ object AnchorHTMLAttributes {
   
   extension [Self <: AnchorHTMLAttributes[?], T](x: Self & AnchorHTMLAttributes[T]) {
     
-    inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     

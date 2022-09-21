@@ -11,7 +11,7 @@ trait HTMLPerformanceNavigation extends StObject {
   
   val redirectCount: Double
   
-  def toJSON(): js.Any
+  def toJSON(): Any
   
   val `type`: Double
 }
@@ -20,7 +20,7 @@ object HTMLPerformanceNavigation {
   inline def apply(
     MSHTMLDotHTMLPerformanceNavigation_typekey: HTMLPerformanceNavigation,
     redirectCount: Double,
-    toJSON: () => js.Any,
+    toJSON: () => Any,
     `type`: Double
   ): HTMLPerformanceNavigation = {
     val __obj = js.Dynamic.literal(redirectCount = redirectCount.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
@@ -35,7 +35,7 @@ object HTMLPerformanceNavigation {
     
     inline def setRedirectCount(value: Double): Self = StObject.set(x, "redirectCount", value.asInstanceOf[js.Any])
     
-    inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
     inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

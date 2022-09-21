@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-community__cameraroll
 
-Typings are for version 4.0.1
+Typings are for version 4.1.2
 
 ## Library description:
 React Native Camera Roll for iOS & Android
@@ -10,10 +10,10 @@ React Native Camera Roll for iOS & Android
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/cameraroll |
 | Keywords           | react-native, react native, cameraroll, camera, photo gallery |
-| # releases         | 33 |
-| # dependents       | 14 |
-| # downloads        | 1461464 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 236591.66666666666 |
+| # stars            | 614.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-community/react-native-cameraroll#readme)

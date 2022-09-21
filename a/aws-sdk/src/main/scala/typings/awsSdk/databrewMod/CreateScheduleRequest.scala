@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateScheduleRequest extends StObject {
   
   /**
-    * The date or dates and time or times, in cron format, when the jobs are to be run.
+    * The date or dates and time or times when the jobs are to be run. For more information, see Cron expressions in the Glue DataBrew Developer Guide.
     */
   var CronExpression: typings.awsSdk.databrewMod.CronExpression
   
@@ -17,7 +17,7 @@ trait CreateScheduleRequest extends StObject {
   var JobNames: js.UndefOr[JobNameList] = js.undefined
   
   /**
-    * A unique name for the schedule.
+    * A unique name for the schedule. Valid characters are alphanumeric (A-Z, a-z, 0-9), hyphen (-), period (.), and space.
     */
   var Name: ScheduleName
   
@@ -41,7 +41,7 @@ object CreateScheduleRequest {
     
     inline def setJobNamesUndefined: Self = StObject.set(x, "JobNames", js.undefined)
     
-    inline def setJobNamesVarargs(value: JobName*): Self = StObject.set(x, "JobNames", js.Array(value :_*))
+    inline def setJobNamesVarargs(value: JobName*): Self = StObject.set(x, "JobNames", js.Array(value*))
     
     inline def setName(value: ScheduleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

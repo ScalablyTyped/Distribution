@@ -37,13 +37,13 @@ trait IMonthPicker
     * @param value Date/Number[] The value to set. It can be a Date object, where the month/year will be extracted, or it can be an array, with the month as the first index and the year as the second.
     * @returns Ext.picker.Month this
     */
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], IMonth]] = js.undefined
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], IMonth]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var showButtons: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Date/Number[]) */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object IMonthPicker {
   
@@ -78,7 +78,7 @@ object IMonthPicker {
     
     inline def setSelectedClsUndefined: Self = StObject.set(x, "selectedCls", js.undefined)
     
-    inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => IMonth): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[Any] => IMonth): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
@@ -86,7 +86,7 @@ object IMonthPicker {
     
     inline def setShowButtonsUndefined: Self = StObject.set(x, "showButtons", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

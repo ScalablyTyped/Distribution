@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDiagramItemClickEventArgs")
 @js.native
-class ASPxClientDiagramItemClickEventArgs protected ()
+open class ASPxClientDiagramItemClickEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDiagramItemClickEventArgs {
   /**
@@ -19,7 +19,7 @@ class ASPxClientDiagramItemClickEventArgs protected ()
   def this(item: typings.devexpressWeb.DiagramItem) = this()
   
   /**
-    * Gets an object that provides information about an item (shape or connector) related to the event.
+    * Gets an object that provides information about an item (DiagramShape or DiagramConnector) related to the event.
     */
   /* CompleteClass */
   var item: typings.devexpressWeb.DiagramItem = js.native

@@ -10,10 +10,10 @@ A small ajax lib
 | ------------------ | :-------------: |
 | Full name          | nanoajax |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 102329 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7132.666666666667 |
+| # stars            | 247.0 |
 
 ## Links
 - [Homepage](https://github.com/yanatan16/nanoajax)

@@ -13,6 +13,6 @@ trait IEventProviderStatic
       /* grid */ IGridInstance, 
       /* $scope */ IGridScope, 
       /* domUtilityService */ IDomUtilityService, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ITimeoutService */ /* $timeout */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ITimeoutService */ /* $timeout */ Any, 
       IEventProvider
     ]

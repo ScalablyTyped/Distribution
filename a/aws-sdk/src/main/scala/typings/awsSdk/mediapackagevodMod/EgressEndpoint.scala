@@ -12,6 +12,11 @@ trait EgressEndpoint extends StObject {
   var PackagingConfigurationId: js.UndefOr[string] = js.undefined
   
   /**
+    * The current processing status of the asset used for the packaging configuration. The status can be either QUEUED, PROCESSING, PLAYABLE, or FAILED. Status information won't be available for most assets ingested before 2021-09-30.
+    */
+  var Status: js.UndefOr[string] = js.undefined
+  
+  /**
     * The URL of the parent manifest for the repackaged Asset.
     */
   var Url: js.UndefOr[string] = js.undefined
@@ -28,6 +33,10 @@ object EgressEndpoint {
     inline def setPackagingConfigurationId(value: string): Self = StObject.set(x, "PackagingConfigurationId", value.asInstanceOf[js.Any])
     
     inline def setPackagingConfigurationIdUndefined: Self = StObject.set(x, "PackagingConfigurationId", js.undefined)
+    
+    inline def setStatus(value: string): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     inline def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     

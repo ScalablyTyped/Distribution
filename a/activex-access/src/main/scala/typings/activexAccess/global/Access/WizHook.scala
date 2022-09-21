@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.WizHook")
 @js.native
-/* private */ class WizHook ()
+/* private */ open class WizHook ()
   extends StObject
      with typings.activexAccess.Access.WizHook {
   
@@ -148,7 +148,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     View: Double,
     flags: Double,
     fOpen: Boolean,
-    fFileSystem: js.Any
+    fFileSystem: Any
   ): Double = js.native
   
   /* CompleteClass */
@@ -170,7 +170,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def GetScriptString(HScr: Double, ScriptColumn: Double, Value: String): Boolean = js.native
   
   /* CompleteClass */
-  override def GetWizGlob(lWhich: Double): js.Any = js.native
+  override def GetWizGlob(lWhich: Double): Any = js.native
   
   /* CompleteClass */
   override def GlobalProcExists(Name: String): Boolean = js.native
@@ -244,7 +244,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def SetVbaPassword(bstrDbName: String, bstrConnect: String, bstrPasswd: String): Boolean = js.native
   
   /* CompleteClass */
-  override def SetWizGlob(lWhich: Double, vValue: js.Any): Unit = js.native
+  override def SetWizGlob(lWhich: Double, vValue: Any): Unit = js.native
   
   /* CompleteClass */
   override def SortStringArray(Array: SafeArray[String]): Unit = js.native

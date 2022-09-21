@@ -2,15 +2,17 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.rollup.rollupBooleans.`false`
+import typings.rollup.rollupStrings.ifRelativeSource
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NormalizedInputOptions extends StObject {
   
-  var acorn: js.Object
+  var acorn: Record[String, Any]
   
-  var acornInjectPlugins: js.Array[js.Function]
+  var acornInjectPlugins: js.Array[js.Function0[Any]]
   
   var cache: js.UndefOr[`false` | RollupCache] = js.undefined
   
@@ -28,8 +30,15 @@ trait NormalizedInputOptions extends StObject {
   
   var input: js.Array[String] | StringDictionary[String]
   
+  var makeAbsoluteExternalsRelative: Boolean | ifRelativeSource
+  
   /** @deprecated Use the "manualChunks" output option instead. */
   var manualChunks: js.UndefOr[ManualChunksOption] = js.undefined
+  
+  var maxParallelFileOps: Double
+  
+  /** @deprecated Use the "maxParallelFileOps" option instead. */
+  var maxParallelFileReads: Double
   
   def moduleContext(id: String): String
   
@@ -57,12 +66,15 @@ trait NormalizedInputOptions extends StObject {
 object NormalizedInputOptions {
   
   inline def apply(
-    acorn: js.Object,
-    acornInjectPlugins: js.Array[js.Function],
+    acorn: Record[String, Any],
+    acornInjectPlugins: js.Array[js.Function0[Any]],
     context: String,
     experimentalCacheExpiry: Double,
     external: (/* source */ String, /* importer */ js.UndefOr[String], /* isResolved */ Boolean) => Boolean,
     input: js.Array[String] | StringDictionary[String],
+    makeAbsoluteExternalsRelative: Boolean | ifRelativeSource,
+    maxParallelFileOps: Double,
+    maxParallelFileReads: Double,
     moduleContext: String => String,
     onwarn: /* warning */ RollupWarning => Unit,
     perf: Boolean,
@@ -73,17 +85,17 @@ object NormalizedInputOptions {
     strictDeprecations: Boolean,
     treeshake: `false` | NormalizedTreeshakingOptions
   ): NormalizedInputOptions = {
-    val __obj = js.Dynamic.literal(acorn = acorn.asInstanceOf[js.Any], acornInjectPlugins = acornInjectPlugins.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], experimentalCacheExpiry = experimentalCacheExpiry.asInstanceOf[js.Any], external = js.Any.fromFunction3(external), input = input.asInstanceOf[js.Any], moduleContext = js.Any.fromFunction1(moduleContext), onwarn = js.Any.fromFunction1(onwarn), perf = perf.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], preserveEntrySignatures = preserveEntrySignatures.asInstanceOf[js.Any], preserveSymlinks = preserveSymlinks.asInstanceOf[js.Any], shimMissingExports = shimMissingExports.asInstanceOf[js.Any], strictDeprecations = strictDeprecations.asInstanceOf[js.Any], treeshake = treeshake.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(acorn = acorn.asInstanceOf[js.Any], acornInjectPlugins = acornInjectPlugins.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], experimentalCacheExpiry = experimentalCacheExpiry.asInstanceOf[js.Any], external = js.Any.fromFunction3(external), input = input.asInstanceOf[js.Any], makeAbsoluteExternalsRelative = makeAbsoluteExternalsRelative.asInstanceOf[js.Any], maxParallelFileOps = maxParallelFileOps.asInstanceOf[js.Any], maxParallelFileReads = maxParallelFileReads.asInstanceOf[js.Any], moduleContext = js.Any.fromFunction1(moduleContext), onwarn = js.Any.fromFunction1(onwarn), perf = perf.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], preserveEntrySignatures = preserveEntrySignatures.asInstanceOf[js.Any], preserveSymlinks = preserveSymlinks.asInstanceOf[js.Any], shimMissingExports = shimMissingExports.asInstanceOf[js.Any], strictDeprecations = strictDeprecations.asInstanceOf[js.Any], treeshake = treeshake.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizedInputOptions]
   }
   
   extension [Self <: NormalizedInputOptions](x: Self) {
     
-    inline def setAcorn(value: js.Object): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
+    inline def setAcorn(value: Record[String, Any]): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
     
-    inline def setAcornInjectPlugins(value: js.Array[js.Function]): Self = StObject.set(x, "acornInjectPlugins", value.asInstanceOf[js.Any])
+    inline def setAcornInjectPlugins(value: js.Array[js.Function0[Any]]): Self = StObject.set(x, "acornInjectPlugins", value.asInstanceOf[js.Any])
     
-    inline def setAcornInjectPluginsVarargs(value: js.Function*): Self = StObject.set(x, "acornInjectPlugins", js.Array(value :_*))
+    inline def setAcornInjectPluginsVarargs(value: js.Function0[Any]*): Self = StObject.set(x, "acornInjectPlugins", js.Array(value*))
     
     inline def setCache(value: `false` | RollupCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
@@ -103,13 +115,19 @@ object NormalizedInputOptions {
     
     inline def setInput(value: js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
+    inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value*))
+    
+    inline def setMakeAbsoluteExternalsRelative(value: Boolean | ifRelativeSource): Self = StObject.set(x, "makeAbsoluteExternalsRelative", value.asInstanceOf[js.Any])
     
     inline def setManualChunks(value: ManualChunksOption): Self = StObject.set(x, "manualChunks", value.asInstanceOf[js.Any])
     
-    inline def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => js.UndefOr[String | Null]): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
+    inline def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => String | Null | Unit): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
     
     inline def setManualChunksUndefined: Self = StObject.set(x, "manualChunks", js.undefined)
+    
+    inline def setMaxParallelFileOps(value: Double): Self = StObject.set(x, "maxParallelFileOps", value.asInstanceOf[js.Any])
+    
+    inline def setMaxParallelFileReads(value: Double): Self = StObject.set(x, "maxParallelFileReads", value.asInstanceOf[js.Any])
     
     inline def setModuleContext(value: String => String): Self = StObject.set(x, "moduleContext", js.Any.fromFunction1(value))
     
@@ -119,7 +137,7 @@ object NormalizedInputOptions {
     
     inline def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setPreserveEntrySignatures(value: PreserveEntrySignaturesOption): Self = StObject.set(x, "preserveEntrySignatures", value.asInstanceOf[js.Any])
     

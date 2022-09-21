@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateConfigurationSetRequest extends StObject {
   
   /**
-    * The name of the configuration set.
+    * The name of the configuration set. The name can contain up to 64 alphanumeric characters, including letters, numbers, hyphens (-) and underscores (_) only.
     */
   var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName
   
@@ -29,7 +29,7 @@ trait CreateConfigurationSetRequest extends StObject {
   var SuppressionOptions: js.UndefOr[typings.awsSdk.sesv2Mod.SuppressionOptions] = js.undefined
   
   /**
-    * An array of objects that define the tags (keys and values) that you want to associate with the configuration set.
+    * An array of objects that define the tags (keys and values) to associate with the configuration set.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   
@@ -69,7 +69,7 @@ object CreateConfigurationSetRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTrackingOptions(value: TrackingOptions): Self = StObject.set(x, "TrackingOptions", value.asInstanceOf[js.Any])
     

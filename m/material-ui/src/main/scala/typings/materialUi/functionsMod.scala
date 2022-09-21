@@ -10,10 +10,10 @@ object functionsMod {
   
   @JSImport("material-ui/svg-icons/editor/functions", JSImport.Default)
   @js.native
-  class default () extends EditorFunctions
+  open class default () extends EditorFunctions
   
   @JSImport("material-ui/svg-icons/editor/functions", "EditorFunctions")
   @js.native
-  class EditorFunctions ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFunctions ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,9 +1,9 @@
 package typings.reactCustomScrollbars
 
 import typings.react.mod.Component
+import typings.react.mod.FunctionComponent
 import typings.react.mod.HTMLProps
 import typings.react.mod.NativeUIEvent
-import typings.react.mod.StatelessComponent
 import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import org.scalablytyped.runtime.StObject
@@ -14,25 +14,25 @@ object mod {
   
   @JSImport("react-custom-scrollbars", JSImport.Default)
   @js.native
-  class default protected () extends Scrollbars {
+  open class default protected () extends Scrollbars {
     def this(props: ScrollbarProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ScrollbarProps, context: js.Any) = this()
+    def this(props: ScrollbarProps, context: Any) = this()
   }
   
   @JSImport("react-custom-scrollbars", "Scrollbars")
   @js.native
-  class Scrollbars protected ()
-    extends Component[ScrollbarProps, js.Object, js.Any] {
+  open class Scrollbars protected ()
+    extends Component[ScrollbarProps, js.Object, Any] {
     def this(props: ScrollbarProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ScrollbarProps, context: js.Any) = this()
+    def this(props: ScrollbarProps, context: Any) = this()
     
     def getClientHeight(): Double = js.native
     
@@ -86,19 +86,19 @@ object mod {
     var onScrollStop: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     @JSName("onScroll")
-    var onScroll_ScrollbarProps: js.UndefOr[UIEventHandler[js.Any]] = js.undefined
+    var onScroll_ScrollbarProps: js.UndefOr[UIEventHandler[Any]] = js.undefined
     
     var onUpdate: js.UndefOr[js.Function1[/* values */ positionValues, Unit]] = js.undefined
     
-    var renderThumbHorizontal: js.UndefOr[StatelessComponent[js.Any]] = js.undefined
+    var renderThumbHorizontal: js.UndefOr[FunctionComponent[Any]] = js.undefined
     
-    var renderThumbVertical: js.UndefOr[StatelessComponent[js.Any]] = js.undefined
+    var renderThumbVertical: js.UndefOr[FunctionComponent[Any]] = js.undefined
     
-    var renderTrackHorizontal: js.UndefOr[StatelessComponent[js.Any]] = js.undefined
+    var renderTrackHorizontal: js.UndefOr[FunctionComponent[Any]] = js.undefined
     
-    var renderTrackVertical: js.UndefOr[StatelessComponent[js.Any]] = js.undefined
+    var renderTrackVertical: js.UndefOr[FunctionComponent[Any]] = js.undefined
     
-    var renderView: js.UndefOr[StatelessComponent[js.Any]] = js.undefined
+    var renderView: js.UndefOr[FunctionComponent[Any]] = js.undefined
     
     var tagName: js.UndefOr[String] = js.undefined
     
@@ -145,7 +145,7 @@ object mod {
       
       inline def setHideTracksWhenNotNeededUndefined: Self = StObject.set(x, "hideTracksWhenNotNeeded", js.undefined)
       
-      inline def setOnScroll(value: UIEvent[js.Any, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: UIEvent[Any, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollFrame(value: /* values */ positionValues => Unit): Self = StObject.set(x, "onScrollFrame", js.Any.fromFunction1(value))
       
@@ -165,23 +165,23 @@ object mod {
       
       inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      inline def setRenderThumbHorizontal(value: StatelessComponent[js.Any]): Self = StObject.set(x, "renderThumbHorizontal", value.asInstanceOf[js.Any])
+      inline def setRenderThumbHorizontal(value: FunctionComponent[Any]): Self = StObject.set(x, "renderThumbHorizontal", value.asInstanceOf[js.Any])
       
       inline def setRenderThumbHorizontalUndefined: Self = StObject.set(x, "renderThumbHorizontal", js.undefined)
       
-      inline def setRenderThumbVertical(value: StatelessComponent[js.Any]): Self = StObject.set(x, "renderThumbVertical", value.asInstanceOf[js.Any])
+      inline def setRenderThumbVertical(value: FunctionComponent[Any]): Self = StObject.set(x, "renderThumbVertical", value.asInstanceOf[js.Any])
       
       inline def setRenderThumbVerticalUndefined: Self = StObject.set(x, "renderThumbVertical", js.undefined)
       
-      inline def setRenderTrackHorizontal(value: StatelessComponent[js.Any]): Self = StObject.set(x, "renderTrackHorizontal", value.asInstanceOf[js.Any])
+      inline def setRenderTrackHorizontal(value: FunctionComponent[Any]): Self = StObject.set(x, "renderTrackHorizontal", value.asInstanceOf[js.Any])
       
       inline def setRenderTrackHorizontalUndefined: Self = StObject.set(x, "renderTrackHorizontal", js.undefined)
       
-      inline def setRenderTrackVertical(value: StatelessComponent[js.Any]): Self = StObject.set(x, "renderTrackVertical", value.asInstanceOf[js.Any])
+      inline def setRenderTrackVertical(value: FunctionComponent[Any]): Self = StObject.set(x, "renderTrackVertical", value.asInstanceOf[js.Any])
       
       inline def setRenderTrackVerticalUndefined: Self = StObject.set(x, "renderTrackVertical", js.undefined)
       
-      inline def setRenderView(value: StatelessComponent[js.Any]): Self = StObject.set(x, "renderView", value.asInstanceOf[js.Any])
+      inline def setRenderView(value: FunctionComponent[Any]): Self = StObject.set(x, "renderView", value.asInstanceOf[js.Any])
       
       inline def setRenderViewUndefined: Self = StObject.set(x, "renderView", js.undefined)
       

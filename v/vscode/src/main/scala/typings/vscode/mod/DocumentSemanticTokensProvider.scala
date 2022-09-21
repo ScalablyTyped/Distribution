@@ -66,8 +66,8 @@ trait DocumentSemanticTokensProvider extends StObject {
     *    [  2,5,3,0,3,  0,5,4,1,0,  3,2,7,2,0 ]
     * ```
     *
-    * @see [SemanticTokensBuilder](#SemanticTokensBuilder) for a helper to encode tokens as integers.
-    * *NOTE*: When doing edits, it is possible that multiple edits occur until VS Code decides to invoke the semantic tokens provider.
+    * @see {@link SemanticTokensBuilder} for a helper to encode tokens as integers.
+    * *NOTE*: When doing edits, it is possible that multiple edits occur until the editor decides to invoke the semantic tokens provider.
     * *NOTE*: If the provider cannot temporarily compute semantic tokens, it can indicate this by throwing an error with the message 'Busy'.
     */
   def provideDocumentSemanticTokens(document: TextDocument, token: CancellationToken): ProviderResult[SemanticTokens]
@@ -120,7 +120,7 @@ object DocumentSemanticTokensProvider {
   extension [Self <: DocumentSemanticTokensProvider](x: Self) {
     
     inline def setOnDidChangeSemanticTokens(
-      value: (/* listener */ js.Function1[Unit, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
+      value: (/* listener */ js.Function1[Unit, Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
     ): Self = StObject.set(x, "onDidChangeSemanticTokens", js.Any.fromFunction3(value))
     
     inline def setOnDidChangeSemanticTokensUndefined: Self = StObject.set(x, "onDidChangeSemanticTokens", js.undefined)

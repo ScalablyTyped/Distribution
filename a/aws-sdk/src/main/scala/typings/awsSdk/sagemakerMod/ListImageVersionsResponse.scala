@@ -29,7 +29,7 @@ object ListImageVersionsResponse {
     
     inline def setImageVersionsUndefined: Self = StObject.set(x, "ImageVersions", js.undefined)
     
-    inline def setImageVersionsVarargs(value: ImageVersion*): Self = StObject.set(x, "ImageVersions", js.Array(value :_*))
+    inline def setImageVersionsVarargs(value: ImageVersion*): Self = StObject.set(x, "ImageVersions", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

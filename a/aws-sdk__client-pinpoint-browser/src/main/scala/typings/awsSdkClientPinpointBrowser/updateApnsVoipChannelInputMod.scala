@@ -8,5 +8,5 @@ object updateApnsVoipChannelInputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/UpdateApnsVoipChannelInput", "UpdateApnsVoipChannelInput")
   @js.native
-  val UpdateApnsVoipChannelInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UpdateApnsVoipChannelInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -6,11 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "LiteralArray")
 @js.native
-class LiteralArray protected ()
-  extends typings.angularCompiler.compilerMod.LiteralArray {
-  def this(
-    span: typings.angularCompiler.astMod.ParseSpan,
-    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
-    expressions: js.Array[js.Any]
-  ) = this()
+open class LiteralArray protected () extends AST {
+  def this(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, expressions: js.Array[Any]) = this()
+  
+  var expressions: js.Array[Any] = js.native
 }

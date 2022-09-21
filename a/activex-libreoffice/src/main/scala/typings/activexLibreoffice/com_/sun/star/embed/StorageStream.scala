@@ -88,8 +88,8 @@ object StorageStream {
     getOutputStream: () => XOutputStream,
     getPosition: () => Double,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
-    queryInterface: `type` => js.Any,
+    getPropertyValue: String => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEncryption: () => Unit,
     removeEventListener: XEventListener => Unit,
@@ -97,7 +97,7 @@ object StorageStream {
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     seek: Double => Unit,
     setEncryptionPassword: String => Unit,
-    setPropertyValue: (String, js.Any) => Unit
+    setPropertyValue: (String, Any) => Unit
   ): StorageStream = {
     val __obj = js.Dynamic.literal(InputStream = InputStream.asInstanceOf[js.Any], IsCompressed = IsCompressed.asInstanceOf[js.Any], IsEncrypted = IsEncrypted.asInstanceOf[js.Any], Length = Length.asInstanceOf[js.Any], MediaType = MediaType.asInstanceOf[js.Any], OutputStream = OutputStream.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], UseCommonStoragePasswordEncryption = UseCommonStoragePasswordEncryption.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), dispose = js.Any.fromFunction0(dispose), getInputStream = js.Any.fromFunction0(getInputStream), getLength = js.Any.fromFunction0(getLength), getOutputStream = js.Any.fromFunction0(getOutputStream), getPosition = js.Any.fromFunction0(getPosition), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEncryption = js.Any.fromFunction0(removeEncryption), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), seek = js.Any.fromFunction1(seek), setEncryptionPassword = js.Any.fromFunction1(setEncryptionPassword), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[StorageStream]

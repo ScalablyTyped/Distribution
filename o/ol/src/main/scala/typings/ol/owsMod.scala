@@ -8,7 +8,7 @@ object owsMod {
   
   @JSImport("ol/format/OWS", JSImport.Default)
   @js.native
-  class default () extends OWS
+  open class default () extends OWS
   
   @js.native
   trait OWS

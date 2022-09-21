@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextDocumentItem extends StObject {
   
   /**
-    * The text document's language identifier
+    * The text document's language identifier.
     */
   var languageId: String
   
@@ -25,11 +25,11 @@ trait TextDocumentItem extends StObject {
     * The version number of this document (it will increase after each
     * change, including undo/redo).
     */
-  var version: Double
+  var version: integer
 }
 object TextDocumentItem {
   
-  inline def apply(languageId: String, text: String, uri: DocumentUri, version: Double): TextDocumentItem = {
+  inline def apply(languageId: String, text: String, uri: DocumentUri, version: integer): TextDocumentItem = {
     val __obj = js.Dynamic.literal(languageId = languageId.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDocumentItem]
   }
@@ -45,12 +45,12 @@ object TextDocumentItem {
     * @param version The document's version number.
     * @param text The document's text.
     */
-  inline def create(uri: DocumentUri, languageId: String, version: Double, text: String): TextDocumentItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any], version.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[TextDocumentItem]
+  inline def create(uri: DocumentUri, languageId: String, version: integer, text: String): TextDocumentItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any], version.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[TextDocumentItem]
   
   /**
     * Checks whether the given literal conforms to the [TextDocumentItem](#TextDocumentItem) interface.
     */
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentItem */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentItem */ Boolean]
   
   extension [Self <: TextDocumentItem](x: Self) {
     
@@ -60,6 +60,6 @@ object TextDocumentItem {
     
     inline def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: integer): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

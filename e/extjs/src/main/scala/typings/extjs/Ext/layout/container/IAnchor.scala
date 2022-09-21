@@ -20,7 +20,7 @@ trait IAnchor
     * @returns Ext.layout.SizePolicy An object describing the sizing done by the layout for this item.
     */
   @JSName("getItemSizePolicy")
-  var getItemSizePolicy_IAnchor: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], ISizePolicy]] = js.undefined
+  var getItemSizePolicy_IAnchor: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], ISizePolicy]] = js.undefined
 }
 object IAnchor {
   
@@ -39,7 +39,7 @@ object IAnchor {
     
     inline def setDefaultAnchorUndefined: Self = StObject.set(x, "defaultAnchor", js.undefined)
     
-    inline def setGetItemSizePolicy(value: /* item */ js.UndefOr[js.Any] => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction1(value))
+    inline def setGetItemSizePolicy(value: /* item */ js.UndefOr[Any] => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction1(value))
     
     inline def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
   }

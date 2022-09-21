@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashGetOr7x4 extends StObject {
   
-  def apply(defaultValue: js.Any): LodashGetOr7x5 = js.native
-  def apply(defaultValue: js.Any, path: PropertyPath): js.Any = js.native
+  def apply(defaultValue: Any): LodashGetOr7x5 = js.native
+  def apply(defaultValue: Any, path: PropertyPath): Any = js.native
   def apply(defaultValue: __, path: PropertyPath): LodashGetOr7x6 = js.native
 }

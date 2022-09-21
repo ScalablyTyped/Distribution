@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.KiiSocialConnect")
 @js.native
-class KiiSocialConnect ()
+open class KiiSocialConnect ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.KiiSocialConnect
 object KiiSocialConnect {
@@ -81,7 +81,7 @@ object KiiSocialConnect {
     * @return tokenObject The current access token object, null if unavailable.
     */
   /* static member */
-  inline def getAccessTokenObjectForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessTokenObjectForNetwork")(networkName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getAccessTokenObjectForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessTokenObjectForNetwork")(networkName.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Link the currently logged in user with a social network
@@ -603,7 +603,7 @@ object KiiSocialConnect {
     networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName,
     apiKey: String,
     apiSecret: String,
-    extras: js.Any
+    extras: Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupNetwork")(networkName.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], apiSecret.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**

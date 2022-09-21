@@ -12,7 +12,7 @@ trait ScanRange extends StObject {
   var End: js.UndefOr[typings.awsSdk.s3Mod.End] = js.undefined
   
   /**
-    * Specifies the start of the byte range. This parameter is optional. Valid values: non-negative integers. The default value is 0. If only start is supplied, it means scan from that point to the end of the file.For example; &lt;scanrange&gt;&lt;start&gt;50&lt;/start&gt;&lt;/scanrange&gt; means scan from byte 50 until the end of the file.
+    * Specifies the start of the byte range. This parameter is optional. Valid values: non-negative integers. The default value is 0. If only start is supplied, it means scan from that point to the end of the file. For example, &lt;scanrange&gt;&lt;start&gt;50&lt;/start&gt;&lt;/scanrange&gt; means scan from byte 50 until the end of the file.
     */
   var Start: js.UndefOr[typings.awsSdk.s3Mod.Start] = js.undefined
 }

@@ -16,10 +16,10 @@ object mod extends Shortcut {
   trait HyperScript extends StObject {
     
     /** Creates an Element */
-    def apply[T /* <: /* keyof hyperscript.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](tagName: T, attrs: js.Object, children: js.Any*): /* import warning: importer.ImportType#apply Failed type conversion: hyperscript.anon.ElementTagNameMap[T] */ js.Any = js.native
-    def apply[T /* <: /* keyof hyperscript.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](tagName: T, attrs: Unit, children: js.Any*): /* import warning: importer.ImportType#apply Failed type conversion: hyperscript.anon.ElementTagNameMap[T] */ js.Any = js.native
-    def apply[T /* <: Element */](tagName: String, attrs: js.Object, children: js.Any*): T = js.native
-    def apply[T /* <: Element */](tagName: String, attrs: Unit, children: js.Any*): T = js.native
+    def apply[T /* <: /* keyof hyperscript.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](tagName: T, attrs: js.Object, children: Any*): /* import warning: importer.ImportType#apply Failed type conversion: hyperscript.anon.ElementTagNameMap[T] */ js.Any = js.native
+    def apply[T /* <: /* keyof hyperscript.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](tagName: T, attrs: Unit, children: Any*): /* import warning: importer.ImportType#apply Failed type conversion: hyperscript.anon.ElementTagNameMap[T] */ js.Any = js.native
+    def apply[T /* <: Element */](tagName: String, attrs: js.Object, children: Any*): T = js.native
+    def apply[T /* <: Element */](tagName: String, attrs: Unit, children: Any*): T = js.native
     
     /** Cleans up any event handlers created by this hyperscript context */
     def cleanup(): Unit = js.native

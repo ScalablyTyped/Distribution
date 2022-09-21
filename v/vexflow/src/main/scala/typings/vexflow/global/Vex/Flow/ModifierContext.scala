@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.ModifierContext")
 @js.native
-class ModifierContext ()
+open class ModifierContext ()
   extends StObject
      with typings.vexflow.Vex.Flow.ModifierContext {
   

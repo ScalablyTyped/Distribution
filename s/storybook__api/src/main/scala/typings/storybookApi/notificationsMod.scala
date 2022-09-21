@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object notificationsMod {
   
-  @JSImport("@storybook/api/dist/modules/notifications", "init")
+  @JSImport("@storybook/api/dist/ts3.9/modules/notifications", "init")
   @js.native
   val init: ModuleFn = js.native
   
@@ -86,7 +86,7 @@ object notificationsMod {
       
       inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value*))
     }
   }
 }

@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SpatialLocatorPositionalTrackingDeactivatingEventArgs extends StObject {
   
-  var canceled: js.Any
+  var canceled: Any
 }
 object SpatialLocatorPositionalTrackingDeactivatingEventArgs {
   
-  inline def apply(canceled: js.Any): SpatialLocatorPositionalTrackingDeactivatingEventArgs = {
+  inline def apply(canceled: Any): SpatialLocatorPositionalTrackingDeactivatingEventArgs = {
     val __obj = js.Dynamic.literal(canceled = canceled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialLocatorPositionalTrackingDeactivatingEventArgs]
   }
   
   extension [Self <: SpatialLocatorPositionalTrackingDeactivatingEventArgs](x: Self) {
     
-    inline def setCanceled(value: js.Any): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
+    inline def setCanceled(value: Any): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
   }
 }

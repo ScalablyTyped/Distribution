@@ -12,5 +12,5 @@ trait DatetimepickerChangeEventObject
   extends StObject
      with DatetimepickerEventObject {
   
-  var oldDate: js.Any = js.native
+  var oldDate: Any = js.native
 }

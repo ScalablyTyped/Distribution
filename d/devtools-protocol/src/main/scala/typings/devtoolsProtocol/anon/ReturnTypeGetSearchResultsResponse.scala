@@ -23,7 +23,7 @@ object ReturnTypeGetSearchResultsResponse {
     
     inline def setParamsType(value: js.Array[GetSearchResultsRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: GetSearchResultsRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetSearchResultsRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: GetSearchResultsResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientEvent")
 @js.native
-class ASPxClientEvent[T] ()
+open class ASPxClientEvent[T] ()
   extends StObject
      with typings.devexpressWeb.ASPxClientEvent[T] {
   
@@ -30,7 +30,7 @@ class ASPxClientEvent[T] ()
     * For internal use only.
     */
   /* CompleteClass */
-  override def FireEvent(source: js.Any, e: typings.devexpressWeb.ASPxClientEventArgs): Unit = js.native
+  override def FireEvent(source: Any, e: typings.devexpressWeb.ASPxClientEventArgs): Unit = js.native
   
   /**
     * Dynamically disconnects the event from the associated event handler function.

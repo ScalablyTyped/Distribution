@@ -1,7 +1,6 @@
 package typings.neffosJs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,9 +14,9 @@ object mod {
   
   @JSImport("neffos.js", "Conn")
   @js.native
-  class Conn protected () extends StObject {
-    def this(conn: js.Any, namespaces: Namespaces) = this()
-    def this(conn: js.Any, namespaces: Namespaces, protocols: js.Array[String]) = this()
+  open class Conn protected () extends StObject {
+    def this(conn: Any, namespaces: Namespaces) = this()
+    def this(conn: Any, namespaces: Namespaces, protocols: js.Array[String]) = this()
     
     /* ID is the generated connection ID from the server-side, all connected namespaces(`NSConn` instances)
       that belong to that connection have the same ID. It is available immediately after the `dial`. */
@@ -57,34 +56,34 @@ object mod {
   
   @JSImport("neffos.js", "ErrBadNamespace")
   @js.native
-  val ErrBadNamespace: Error = js.native
+  val ErrBadNamespace: js.Error = js.native
   
   @JSImport("neffos.js", "ErrBadRoom")
   @js.native
-  val ErrBadRoom: Error = js.native
+  val ErrBadRoom: js.Error = js.native
   
   @JSImport("neffos.js", "ErrClosed")
   @js.native
-  val ErrClosed: Error = js.native
+  val ErrClosed: js.Error = js.native
   
   @JSImport("neffos.js", "ErrInvalidPayload")
   @js.native
-  val ErrInvalidPayload: Error = js.native
+  val ErrInvalidPayload: js.Error = js.native
   
   @JSImport("neffos.js", "ErrWrite")
   @js.native
-  val ErrWrite: Error = js.native
+  val ErrWrite: js.Error = js.native
   
   @JSImport("neffos.js", "Message")
   @js.native
-  class Message () extends StObject {
+  open class Message () extends StObject {
     
     /* The actual body of the incoming data. */
     var Body: WSData = js.native
     
     /* The Err contains any message's error if defined and not empty.
       server-side and client-side can return an error instead of a message from inside event callbacks. */
-    var Err: Error = js.native
+    var Err: js.Error = js.native
     
     /* The Event that this message sent to. */
     var Event: String = js.native
@@ -113,12 +112,12 @@ object mod {
       equivalent to the Go's `neffos.Message.Unmarshal` method.
       It can be used inside an event's callbacks.
       See library-level `marshal` function too. */
-    def unmarshal(): js.Any = js.native
+    def unmarshal(): Any = js.native
   }
   
   @JSImport("neffos.js", "NSConn")
   @js.native
-  class NSConn protected () extends StObject {
+  open class NSConn protected () extends StObject {
     def this(conn: Conn, namespace: String, events: Events) = this()
     
     /* See `Conn.ask`. */
@@ -128,7 +127,7 @@ object mod {
     var conn: Conn = js.native
     
     /* The disconnect method sends a disconnect signal to the server and fires the `OnNamespaceDisconnect` event. */
-    def disconnect(): js.Promise[Error] = js.native
+    def disconnect(): js.Promise[js.Error] = js.native
     
     /* The emit method sends a message to the server with its `Message.Namespace` filled to this specific namespace. */
     def emit(event: String, body: WSData): Boolean = js.native
@@ -140,7 +139,7 @@ object mod {
     def joinRoom(roomName: String): js.Promise[Room] = js.native
     
     /* The leaveAll method sends a leave room signal to all rooms and fires the `OnRoomLeave` and `OnRoomLeft` (if no error occurred) events. */
-    def leaveAll(): js.Promise[Error] = js.native
+    def leaveAll(): js.Promise[js.Error] = js.native
     
     var namespace: String = js.native
     
@@ -189,7 +188,7 @@ object mod {
   
   @JSImport("neffos.js", "Room")
   @js.native
-  class Room protected () extends StObject {
+  open class Room protected () extends StObject {
     def this(ns: NSConn, roomName: String) = this()
     
     /* The emit method sends a message to the server with its `Message.Room` filled to this specific room
@@ -202,7 +201,7 @@ object mod {
     
     /* The leave method sends a local and server room leave signal `OnRoomLeave`
       and if succeed it fires the OnRoomLeft` event. */
-    def leave(): js.Promise[Error] = js.native
+    def leave(): js.Promise[js.Error] = js.native
     
     var name: String = js.native
     
@@ -213,23 +212,23 @@ object mod {
   @js.native
   val URLParamAsHeaderPrefix: /* "X-Websocket-Header-" */ String = js.native
   
-  inline def dial(endpoint: String, connHandler: js.Any): js.Promise[Conn] = (^.asInstanceOf[js.Dynamic].applyDynamic("dial")(endpoint.asInstanceOf[js.Any], connHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conn]]
-  inline def dial(endpoint: String, connHandler: js.Any, options: js.Any): js.Promise[Conn] = (^.asInstanceOf[js.Dynamic].applyDynamic("dial")(endpoint.asInstanceOf[js.Any], connHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conn]]
-  inline def dial(endpoint: String, connHandler: js.Any, options: Options): js.Promise[Conn] = (^.asInstanceOf[js.Dynamic].applyDynamic("dial")(endpoint.asInstanceOf[js.Any], connHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conn]]
+  inline def dial(endpoint: String, connHandler: Any): js.Promise[Conn] = (^.asInstanceOf[js.Dynamic].applyDynamic("dial")(endpoint.asInstanceOf[js.Any], connHandler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conn]]
+  inline def dial(endpoint: String, connHandler: Any, options: Any): js.Promise[Conn] = (^.asInstanceOf[js.Dynamic].applyDynamic("dial")(endpoint.asInstanceOf[js.Any], connHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conn]]
+  inline def dial(endpoint: String, connHandler: Any, options: Options): js.Promise[Conn] = (^.asInstanceOf[js.Dynamic].applyDynamic("dial")(endpoint.asInstanceOf[js.Any], connHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conn]]
   
-  inline def isCloseError(err: Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCloseError")(err.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCloseError(err: js.Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCloseError")(err.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isSystemEvent(event: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSystemEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def marshal(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("marshal")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def marshal(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("marshal")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def reply(body: WSData): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("reply")(body.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def reply(body: WSData): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("reply")(body.asInstanceOf[js.Any]).asInstanceOf[js.Error]
   
   type Events = Map[String, MessageHandlerFunc]
   
-  type Headers = StringDictionary[js.Any]
+  type Headers = StringDictionary[Any]
   
-  type MessageHandlerFunc = js.Function2[/* c */ NSConn, /* msg */ Message, Error]
+  type MessageHandlerFunc = js.Function2[/* c */ NSConn, /* msg */ Message, js.Error]
   
   type Namespaces = Map[String, Events]
   
@@ -258,7 +257,7 @@ object mod {
       
       inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
       
-      inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value*))
       
       inline def setReconnnect(value: Double): Self = StObject.set(x, "reconnnect", value.asInstanceOf[js.Any])
       

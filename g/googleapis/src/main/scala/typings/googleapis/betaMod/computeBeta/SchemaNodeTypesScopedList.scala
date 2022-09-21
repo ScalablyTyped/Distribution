@@ -13,10 +13,9 @@ trait SchemaNodeTypesScopedList extends StObject {
   var nodeTypes: js.UndefOr[js.Array[SchemaNodeType]] = js.undefined
   
   /**
-    * [Output Only] An informational warning that appears when the node types
-    * list is empty.
+    * [Output Only] An informational warning that appears when the node types list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaNodeTypesScopedList {
   
@@ -31,9 +30,11 @@ object SchemaNodeTypesScopedList {
     
     inline def setNodeTypesUndefined: Self = StObject.set(x, "nodeTypes", js.undefined)
     
-    inline def setNodeTypesVarargs(value: SchemaNodeType*): Self = StObject.set(x, "nodeTypes", js.Array(value :_*))
+    inline def setNodeTypesVarargs(value: SchemaNodeType*): Self = StObject.set(x, "nodeTypes", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

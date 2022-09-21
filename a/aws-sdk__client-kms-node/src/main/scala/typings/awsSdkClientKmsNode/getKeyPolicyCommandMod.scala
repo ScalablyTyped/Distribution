@@ -16,7 +16,7 @@ object getKeyPolicyCommandMod {
   
   @JSImport("@aws-sdk/client-kms-node/commands/GetKeyPolicyCommand", "GetKeyPolicyCommand")
   @js.native
-  class GetKeyPolicyCommand protected ()
+  open class GetKeyPolicyCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object getKeyPolicyCommandMod {
     override val middlewareStack: MiddlewareStack[GetKeyPolicyInput, GetKeyPolicyOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[GetKeyPolicyInput, GetKeyPolicyOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[GetKeyPolicyInput, GetKeyPolicyOutput] = js.native
   }
 }

@@ -9,7 +9,7 @@ object emitterMod {
   @js.native
   trait Emitter[Event] extends StObject {
     
-    def emit(event: Event, args: js.Any*): Emitter[Event] = js.native
+    def emit(event: Event, args: Any*): Emitter[Event] = js.native
     
     def hasListeners(event: Event): Boolean = js.native
     
@@ -28,6 +28,6 @@ object emitterMod {
   @js.native
   trait Listener extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
 }

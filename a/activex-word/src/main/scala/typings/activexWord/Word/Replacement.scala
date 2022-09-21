@@ -26,9 +26,9 @@ trait Replacement extends StObject {
   
   var ParagraphFormat: typings.activexWord.Word.ParagraphFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
-  var Style: js.Any
+  var Style: Any
   
   var Text: String
   
@@ -48,8 +48,8 @@ object Replacement {
     LanguageIDFarEast: WdLanguageID,
     NoProofing: Double,
     ParagraphFormat: ParagraphFormat,
-    Parent: js.Any,
-    Style: js.Any,
+    Parent: Any,
+    Style: Any,
     Text: String,
     WordDotReplacement_typekey: Replacement
   ): Replacement = {
@@ -80,9 +80,9 @@ object Replacement {
     
     inline def setParagraphFormat(value: ParagraphFormat): Self = StObject.set(x, "ParagraphFormat", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setStyle(value: js.Any): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Any): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     

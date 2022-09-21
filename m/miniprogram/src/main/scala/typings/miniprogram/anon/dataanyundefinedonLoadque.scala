@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined {  data :any | undefined,   onLoad :(query : any | undefined): void | undefined,   onShow :miniprogram.EmptyFn | undefined,   onReady :miniprogram.EmptyFn | undefined,   onHide :miniprogram.EmptyFn | undefined,   onUnload :miniprogram.EmptyFn | undefined,   onTitleClick :miniprogram.EmptyFn | undefined,   onPullDownRefresh :miniprogram.OnPullDownRefresh | undefined,   onPullIntercept :miniprogram.EmptyFn | undefined,   onReachBottom :miniprogram.EmptyFn | undefined,   onShareAppMessage :(opts : any): void | undefined,   onOptionMenuClick :miniprogram.EmptyFn | undefined,   onPopMenuClick :miniprogram.EmptyFn | undefined,   onTabItemTap :miniprogram.OnTabItemTap | undefined,   onPageScroll :(opts : {  scrollTop :number}): void | undefined,   events :{  onBack :miniprogram.EmptyFn | undefined,   onKeyboardHeight :miniprogram.EmptyFn | undefined,   onOptionMenuClick :miniprogram.EmptyFn | undefined,   onPopMenuClick :miniprogram.EmptyFn | undefined,   onPullIntercept :miniprogram.EmptyFn | undefined,   onPullDownRefresh :miniprogram.OnPullDownRefresh | undefined,   onTitleClick :miniprogram.EmptyFn | undefined,   onTabItemTap :miniprogram.OnTabItemTap | undefined,   beforeTabItemTap :miniprogram.EmptyFn | undefined,   onResize :(opts : {  size :{  windowWidth :number,   windowHeight :number}}): void | undefined} | undefined, [key: string] : any} & std.ThisType<{ readonly data :any,  readonly route :string, setData (data : any, cb : miniprogram.EmptyFn | undefined): void, $spliceData (data : any, cb : miniprogram.EmptyFn | undefined): void, $batchedUpdates (cb : miniprogram.EmptyFn): void, [key: string] : any}> */
 trait dataanyundefinedonLoadque
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var events: js.UndefOr[BeforeTabItemTap] = js.undefined
   
@@ -22,7 +22,7 @@ trait dataanyundefinedonLoadque
   /**
     * Page loading
     */
-  var onLoad: js.UndefOr[js.Function1[/* query */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onLoad: js.UndefOr[js.Function1[/* query */ js.UndefOr[Any], Unit]] = js.undefined
   
   var onOptionMenuClick: js.UndefOr[EmptyFn] = js.undefined
   
@@ -41,7 +41,7 @@ trait dataanyundefinedonLoadque
     */
   var onReady: js.UndefOr[EmptyFn] = js.undefined
   
-  var onShareAppMessage: js.UndefOr[js.Function1[/* opts */ js.Any, Unit]] = js.undefined
+  var onShareAppMessage: js.UndefOr[js.Function1[/* opts */ Any, Unit]] = js.undefined
   
   var onShow: js.UndefOr[EmptyFn] = js.undefined
   
@@ -60,7 +60,7 @@ object dataanyundefinedonLoadque {
   
   extension [Self <: dataanyundefinedonLoadque](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -72,7 +72,7 @@ object dataanyundefinedonLoadque {
     
     inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    inline def setOnLoad(value: /* query */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+    inline def setOnLoad(value: /* query */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
     inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
@@ -104,7 +104,7 @@ object dataanyundefinedonLoadque {
     
     inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
     
-    inline def setOnShareAppMessage(value: /* opts */ js.Any => Unit): Self = StObject.set(x, "onShareAppMessage", js.Any.fromFunction1(value))
+    inline def setOnShareAppMessage(value: /* opts */ Any => Unit): Self = StObject.set(x, "onShareAppMessage", js.Any.fromFunction1(value))
     
     inline def setOnShareAppMessageUndefined: Self = StObject.set(x, "onShareAppMessage", js.undefined)
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Scopes extends StObject {
   
-  var scopes: js.UndefOr[StringDictionary[`4`]] = js.undefined
+  var scopes: js.UndefOr[StringDictionary[`7`]] = js.undefined
 }
 object Scopes {
   
@@ -18,7 +18,7 @@ object Scopes {
   
   extension [Self <: Scopes](x: Self) {
     
-    inline def setScopes(value: StringDictionary[`4`]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: StringDictionary[`7`]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
     inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
   }

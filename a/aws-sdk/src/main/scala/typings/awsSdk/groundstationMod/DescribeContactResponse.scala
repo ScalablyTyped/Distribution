@@ -24,7 +24,7 @@ trait DescribeContactResponse extends StObject {
   /**
     * End time of a contact.
     */
-  var endTime: js.UndefOr[Timestamp] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Error message for a contact.
@@ -49,12 +49,12 @@ trait DescribeContactResponse extends StObject {
   /**
     * Amount of time after a contact ends that you’d like to receive a CloudWatch event indicating the pass has finished.
     */
-  var postPassEndTime: js.UndefOr[Timestamp] = js.undefined
+  var postPassEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Amount of time prior to contact start you’d like to receive a CloudWatch event indicating an upcoming pass.
     */
-  var prePassStartTime: js.UndefOr[Timestamp] = js.undefined
+  var prePassStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Region of a contact.
@@ -69,7 +69,7 @@ trait DescribeContactResponse extends StObject {
   /**
     * Start time of a contact.
     */
-  var startTime: js.UndefOr[Timestamp] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Tags assigned to a contact.
@@ -97,9 +97,9 @@ object DescribeContactResponse {
     
     inline def setDataflowListUndefined: Self = StObject.set(x, "dataflowList", js.undefined)
     
-    inline def setDataflowListVarargs(value: DataflowDetail*): Self = StObject.set(x, "dataflowList", js.Array(value :_*))
+    inline def setDataflowListVarargs(value: DataflowDetail*): Self = StObject.set(x, "dataflowList", js.Array(value*))
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -119,11 +119,11 @@ object DescribeContactResponse {
     
     inline def setMissionProfileArnUndefined: Self = StObject.set(x, "missionProfileArn", js.undefined)
     
-    inline def setPostPassEndTime(value: Timestamp): Self = StObject.set(x, "postPassEndTime", value.asInstanceOf[js.Any])
+    inline def setPostPassEndTime(value: js.Date): Self = StObject.set(x, "postPassEndTime", value.asInstanceOf[js.Any])
     
     inline def setPostPassEndTimeUndefined: Self = StObject.set(x, "postPassEndTime", js.undefined)
     
-    inline def setPrePassStartTime(value: Timestamp): Self = StObject.set(x, "prePassStartTime", value.asInstanceOf[js.Any])
+    inline def setPrePassStartTime(value: js.Date): Self = StObject.set(x, "prePassStartTime", value.asInstanceOf[js.Any])
     
     inline def setPrePassStartTimeUndefined: Self = StObject.set(x, "prePassStartTime", js.undefined)
     
@@ -135,7 +135,7 @@ object DescribeContactResponse {
     
     inline def setSatelliteArnUndefined: Self = StObject.set(x, "satelliteArn", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     

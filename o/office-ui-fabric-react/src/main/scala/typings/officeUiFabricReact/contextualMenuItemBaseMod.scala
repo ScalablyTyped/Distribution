@@ -10,11 +10,11 @@ object contextualMenuItemBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenuItem.base", "ContextualMenuItemBase")
   @js.native
-  class ContextualMenuItemBase protected ()
-    extends Component[IContextualMenuItemProps, js.Object, js.Any] {
+  open class ContextualMenuItemBase protected ()
+    extends Component[IContextualMenuItemProps, js.Object, Any] {
     def this(props: IContextualMenuItemProps) = this()
     
-    /* private */ var _renderLayout: js.Any = js.native
+    /* private */ var _renderLayout: Any = js.native
     
     def dismissMenu(): Unit = js.native
     def dismissMenu(dismissAll: Boolean): Unit = js.native

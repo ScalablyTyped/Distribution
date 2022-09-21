@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Manifest extends StObject {
   
-  /** The name of the generated file. The default is `"manifest"` with the extension suffix corresponding to the `Manifest.type`. */
+  /** The name of the generated file. The default is `manifest` with the extension suffix corresponding to the `Manifest.type`. */
   var fileName: js.UndefOr[String] = js.undefined
   
   /**
@@ -15,7 +15,7 @@ trait Manifest extends StObject {
     */
   var muxStreams: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** Required. Type of the manifest, can be "HLS" or "DASH". */
+  /** Required. Type of the manifest, can be `HLS` or `DASH`. */
   var `type`: js.UndefOr[String] = js.undefined
 }
 object Manifest {
@@ -35,7 +35,7 @@ object Manifest {
     
     inline def setMuxStreamsUndefined: Self = StObject.set(x, "muxStreams", js.undefined)
     
-    inline def setMuxStreamsVarargs(value: String*): Self = StObject.set(x, "muxStreams", js.Array(value :_*))
+    inline def setMuxStreamsVarargs(value: String*): Self = StObject.set(x, "muxStreams", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap/lib", "FormGroup")
 @js.native
-class FormGroup () extends ^
+open class FormGroup () extends ^

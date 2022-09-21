@@ -26,7 +26,7 @@ object mod extends Shortcut {
     def apply(args: StyleArg*): String = js.native
   }
   
-  type StyleArg = JssStyle | js.Array[JssStyle]
+  type StyleArg = (JssStyle[Any, Unit]) | (js.Array[JssStyle[Any, Unit]])
   
   type _To = ReturnType[CreateCss]
   

@@ -14,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with Function
      with FunctionParent
      with Pureish
-     with Scopable {
+     with Scopable
+     with Standardized {
   
   var async: Boolean
   
@@ -24,7 +25,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var id: Identifier_ | Null
   
-  var params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+  var params: js.Array[Identifier_ | Pattern | RestElement_]
+  
+  var predicate: DeclaredPredicate_ | InferredPredicate_ | Null
   
   var returnType: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
   
@@ -39,9 +42,9 @@ object FunctionExpression_ {
     async: Boolean,
     body: BlockStatement_,
     generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+    params: js.Array[Identifier_ | Pattern | RestElement_]
   ): FunctionExpression_ = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], end = null, id = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], end = null, id = null, innerComments = null, leadingComments = null, loc = null, predicate = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("FunctionExpression")
     __obj.asInstanceOf[FunctionExpression_]
   }
@@ -58,9 +61,13 @@ object FunctionExpression_ {
     
     inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    inline def setParams(value: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[Identifier_ | Pattern | RestElement_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setParamsVarargs(value: (Identifier_ | Pattern | RestElement_ | TSParameterProperty_)*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: (Identifier_ | Pattern | RestElement_)*): Self = StObject.set(x, "params", js.Array(value*))
+    
+    inline def setPredicate(value: DeclaredPredicate_ | InferredPredicate_): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
+    
+    inline def setPredicateNull: Self = StObject.set(x, "predicate", null)
     
     inline def setReturnType(value: TypeAnnotation_ | TSTypeAnnotation_ | Noop_): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     

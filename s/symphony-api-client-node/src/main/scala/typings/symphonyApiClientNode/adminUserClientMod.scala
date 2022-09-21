@@ -67,7 +67,7 @@ object adminUserClientMod {
       
       inline def setAssetClassesUndefined: Self = StObject.set(x, "assetClasses", js.undefined)
       
-      inline def setAssetClassesVarargs(value: String*): Self = StObject.set(x, "assetClasses", js.Array(value :_*))
+      inline def setAssetClassesVarargs(value: String*): Self = StObject.set(x, "assetClasses", js.Array(value*))
       
       inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
       
@@ -95,7 +95,7 @@ object adminUserClientMod {
       
       inline def setIndustriesUndefined: Self = StObject.set(x, "industries", js.undefined)
       
-      inline def setIndustriesVarargs(value: String*): Self = StObject.set(x, "industries", js.Array(value :_*))
+      inline def setIndustriesVarargs(value: String*): Self = StObject.set(x, "industries", js.Array(value*))
       
       inline def setJobFunction(value: String): Self = StObject.set(x, "jobFunction", value.asInstanceOf[js.Any])
       
@@ -148,7 +148,7 @@ object adminUserClientMod {
       
       inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value*))
       
       inline def setUserAttributes(value: AdminUserAttributes): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
       

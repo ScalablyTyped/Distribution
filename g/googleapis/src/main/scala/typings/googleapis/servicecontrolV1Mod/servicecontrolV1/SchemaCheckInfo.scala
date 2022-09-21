@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains additional information about the check operation.
-  */
 trait SchemaCheckInfo extends StObject {
   
   /**
@@ -15,11 +12,9 @@ trait SchemaCheckInfo extends StObject {
   var consumerInfo: js.UndefOr[SchemaConsumerInfo] = js.undefined
   
   /**
-    * A list of fields and label keys that are ignored by the server. The
-    * client doesn&#39;t need to send them for following requests to improve
-    * performance and allow better aggregation.
+    * A list of fields and label keys that are ignored by the server. The client doesn't need to send them for following requests to improve performance and allow better aggregation.
     */
-  var unusedArguments: js.UndefOr[js.Array[String]] = js.undefined
+  var unusedArguments: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaCheckInfo {
   
@@ -36,8 +31,10 @@ object SchemaCheckInfo {
     
     inline def setUnusedArguments(value: js.Array[String]): Self = StObject.set(x, "unusedArguments", value.asInstanceOf[js.Any])
     
+    inline def setUnusedArgumentsNull: Self = StObject.set(x, "unusedArguments", null)
+    
     inline def setUnusedArgumentsUndefined: Self = StObject.set(x, "unusedArguments", js.undefined)
     
-    inline def setUnusedArgumentsVarargs(value: String*): Self = StObject.set(x, "unusedArguments", js.Array(value :_*))
+    inline def setUnusedArgumentsVarargs(value: String*): Self = StObject.set(x, "unusedArguments", js.Array(value*))
   }
 }

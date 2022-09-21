@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Graphics.Printing.PrintTaskProgressingEventArgs")
 @js.native
-class PrintTaskProgressingEventArgs ()
+open class PrintTaskProgressingEventArgs ()
   extends StObject
      with typings.winrt.Windows.Graphics.Printing.PrintTaskProgressingEventArgs {
   

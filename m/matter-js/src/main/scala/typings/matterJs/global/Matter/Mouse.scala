@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Matter.Mouse")
 @js.native
-class Mouse ()
+open class Mouse ()
   extends typings.matterJs.mod.Mouse
 /* static members */
 object Mouse {

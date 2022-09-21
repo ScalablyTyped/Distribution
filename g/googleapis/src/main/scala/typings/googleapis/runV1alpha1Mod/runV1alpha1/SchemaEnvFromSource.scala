@@ -4,24 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * EnvFromSource represents the source of a set of ConfigMaps
-  */
 trait SchemaEnvFromSource extends StObject {
   
   /**
-    * The ConfigMap to select from +optional
+    * (Optional) The ConfigMap to select from
     */
   var configMapRef: js.UndefOr[SchemaConfigMapEnvSource] = js.undefined
   
   /**
-    * An optional identifier to prepend to each key in the ConfigMap. Must be a
-    * C_IDENTIFIER. +optional
+    * (Optional) An optional identifier to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
     */
-  var prefix: js.UndefOr[String] = js.undefined
+  var prefix: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The Secret to select from +optional
+    * (Optional) The Secret to select from
     */
   var secretRef: js.UndefOr[SchemaSecretEnvSource] = js.undefined
 }
@@ -39,6 +35,8 @@ object SchemaEnvFromSource {
     inline def setConfigMapRefUndefined: Self = StObject.set(x, "configMapRef", js.undefined)
     
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    
+    inline def setPrefixNull: Self = StObject.set(x, "prefix", null)
     
     inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     

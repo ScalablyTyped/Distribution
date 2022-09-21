@@ -38,7 +38,7 @@ object HumanLoopActivationOutput {
     
     inline def setHumanLoopActivationReasonsUndefined: Self = StObject.set(x, "HumanLoopActivationReasons", js.undefined)
     
-    inline def setHumanLoopActivationReasonsVarargs(value: HumanLoopActivationReason*): Self = StObject.set(x, "HumanLoopActivationReasons", js.Array(value :_*))
+    inline def setHumanLoopActivationReasonsVarargs(value: HumanLoopActivationReason*): Self = StObject.set(x, "HumanLoopActivationReasons", js.Array(value*))
     
     inline def setHumanLoopArn(value: HumanLoopArn): Self = StObject.set(x, "HumanLoopArn", value.asInstanceOf[js.Any])
     

@@ -1,95 +1,114 @@
 package typings.sentryTypes
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.StringDictionary
-import typings.sentryTypes.dsnMod.DsnLike
-import typings.sentryTypes.eventMod.Event
-import typings.sentryTypes.responseMod.Response
-import typings.sentryTypes.sessionMod.Session
+import typings.sentryTypes.anon.Dictkey
+import typings.sentryTypes.clientreportMod.EventDropReason
+import typings.sentryTypes.datacategoryMod.DataCategory
+import typings.sentryTypes.envelopeMod.Envelope
+import typings.sentryTypes.textencoderMod.TextEncoderInternal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transportMod {
   
+  trait BaseTransportOptions
+    extends StObject
+       with InternalBaseTransportOptions {
+    
+    var url: String
+  }
+  object BaseTransportOptions {
+    
+    inline def apply(recordDroppedEvent: (EventDropReason, DataCategory) => Unit, url: String): BaseTransportOptions = {
+      val __obj = js.Dynamic.literal(recordDroppedEvent = js.Any.fromFunction2(recordDroppedEvent), url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BaseTransportOptions]
+    }
+    
+    extension [Self <: BaseTransportOptions](x: Self) {
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait InternalBaseTransportOptions extends StObject {
+    
+    var bufferSize: js.UndefOr[Double] = js.undefined
+    
+    def recordDroppedEvent(reason: EventDropReason, dataCategory: DataCategory): Unit
+    
+    var textEncoder: js.UndefOr[TextEncoderInternal] = js.undefined
+  }
+  object InternalBaseTransportOptions {
+    
+    inline def apply(recordDroppedEvent: (EventDropReason, DataCategory) => Unit): InternalBaseTransportOptions = {
+      val __obj = js.Dynamic.literal(recordDroppedEvent = js.Any.fromFunction2(recordDroppedEvent))
+      __obj.asInstanceOf[InternalBaseTransportOptions]
+    }
+    
+    extension [Self <: InternalBaseTransportOptions](x: Self) {
+      
+      inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+      
+      inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+      
+      inline def setRecordDroppedEvent(value: (EventDropReason, DataCategory) => Unit): Self = StObject.set(x, "recordDroppedEvent", js.Any.fromFunction2(value))
+      
+      inline def setTextEncoder(value: TextEncoderInternal): Self = StObject.set(x, "textEncoder", value.asInstanceOf[js.Any])
+      
+      inline def setTextEncoderUndefined: Self = StObject.set(x, "textEncoder", js.undefined)
+    }
+  }
+  
   @js.native
   trait Transport extends StObject {
     
-    /**
-      * Call this function to wait until all pending requests have been sent.
-      *
-      * @param timeout Number time in ms to wait until the buffer is drained.
-      */
-    def close(): js.Thenable[Boolean] = js.native
-    def close(timeout: Double): js.Thenable[Boolean] = js.native
+    def flush(): js.Thenable[Boolean] = js.native
+    def flush(timeout: Double): js.Thenable[Boolean] = js.native
     
-    /**
-      * Sends the event to the Store endpoint in Sentry.
-      *
-      * @param event Event that should be sent to Sentry.
-      */
-    def sendEvent(event: Event): js.Thenable[Response] = js.native
-    
-    /**
-      * Sends the session to the Store endpoint in Sentry.
-      *
-      * @param body Session that should be sent to Sentry.
-      */
-    var sendSession: js.UndefOr[js.Function1[/* session */ Session, js.Thenable[Response]]] = js.native
+    def send(request: Envelope): js.Thenable[Unit] = js.native
   }
   
-  type TransportClass[T /* <: Transport */] = Instantiable1[/* options */ TransportOptions, T]
-  
-  trait TransportOptions extends StObject {
+  trait TransportMakeRequestResponse extends StObject {
     
-    /** HTTPS proxy certificates path */
-    var caCerts: js.UndefOr[String] = js.undefined
+    var headers: js.UndefOr[Dictkey] = js.undefined
     
-    /** Sentry DSN */
-    var dsn: DsnLike
-    
-    /** Fetch API init parameters */
-    var fetchParameters: js.UndefOr[StringDictionary[String]] = js.undefined
-    
-    /** Define custom headers */
-    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
-    
-    /** Set a HTTP proxy that should be used for outbound requests. */
-    var httpProxy: js.UndefOr[String] = js.undefined
-    
-    /** Set a HTTPS proxy that should be used for outbound requests. */
-    var httpsProxy: js.UndefOr[String] = js.undefined
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
-  object TransportOptions {
+  object TransportMakeRequestResponse {
     
-    inline def apply(dsn: DsnLike): TransportOptions = {
-      val __obj = js.Dynamic.literal(dsn = dsn.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TransportOptions]
+    inline def apply(): TransportMakeRequestResponse = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TransportMakeRequestResponse]
     }
     
-    extension [Self <: TransportOptions](x: Self) {
+    extension [Self <: TransportMakeRequestResponse](x: Self) {
       
-      inline def setCaCerts(value: String): Self = StObject.set(x, "caCerts", value.asInstanceOf[js.Any])
-      
-      inline def setCaCertsUndefined: Self = StObject.set(x, "caCerts", js.undefined)
-      
-      inline def setDsn(value: DsnLike): Self = StObject.set(x, "dsn", value.asInstanceOf[js.Any])
-      
-      inline def setFetchParameters(value: StringDictionary[String]): Self = StObject.set(x, "fetchParameters", value.asInstanceOf[js.Any])
-      
-      inline def setFetchParametersUndefined: Self = StObject.set(x, "fetchParameters", js.undefined)
-      
-      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Dictkey): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHttpProxy(value: String): Self = StObject.set(x, "httpProxy", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      inline def setHttpProxyUndefined: Self = StObject.set(x, "httpProxy", js.undefined)
-      
-      inline def setHttpsProxy(value: String): Self = StObject.set(x, "httpsProxy", value.asInstanceOf[js.Any])
-      
-      inline def setHttpsProxyUndefined: Self = StObject.set(x, "httpsProxy", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     }
   }
+  
+  trait TransportRequest extends StObject {
+    
+    var body: String | js.typedarray.Uint8Array
+  }
+  object TransportRequest {
+    
+    inline def apply(body: String | js.typedarray.Uint8Array): TransportRequest = {
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TransportRequest]
+    }
+    
+    extension [Self <: TransportRequest](x: Self) {
+      
+      inline def setBody(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type TransportRequestExecutor = js.Function1[/* request */ TransportRequest, js.Thenable[TransportMakeRequestResponse]]
 }

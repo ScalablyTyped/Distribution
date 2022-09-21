@@ -51,8 +51,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     include a Geometry associated with a `geometry` key.
   * @api stable
   */
-class Feature ()
+open class Feature ()
   extends typings.openlayers.mod.Feature {
-  def this(opt_geometryOrProperties: StringDictionary[js.Any]) = this()
+  def this(opt_geometryOrProperties: StringDictionary[Any]) = this()
   def this(opt_geometryOrProperties: Geometry) = this()
 }

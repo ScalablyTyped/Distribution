@@ -1,9 +1,10 @@
 package typings.reactMdLink
 
+import typings.react.mod.ElementType
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
+import typings.reactMdLink.anon.PickLinkWithComponentProp
 import typings.reactMdLink.linkMod.LinkProps
-import typings.reactMdLink.linkMod.LinkWithComponentProps
 import typings.reactMdLink.skipToMainContentMod.SkipToMainContentProps
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
@@ -15,11 +16,7 @@ object mod {
   @JSImport("@react-md/link", "Link")
   @js.native
   val Link: ForwardRefExoticComponent[
-    (LinkProps & (RefAttributes[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178 */ js.Any
-    ])) | (LinkWithComponentProps & (RefAttributes[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178 */ js.Any
-    ]))
+    (LinkProps & (RefAttributes[HTMLAnchorElement | ElementType[Any]])) | PickLinkWithComponentProp
   ] = js.native
   
   @JSImport("@react-md/link", "SkipToMainContent")

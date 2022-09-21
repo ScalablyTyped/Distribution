@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticsearch", "errors.UnsupportedMediaType")
 @js.native
-class UnsupportedMediaType () extends Abstract
+open class UnsupportedMediaType () extends Abstract

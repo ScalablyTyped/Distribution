@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DomainDetails extends StObject {
   
   /**
-    * The domain information for the AWS API call.
+    * The domain information for the Amazon Web Services API call.
     */
   var Domain: js.UndefOr[String] = js.undefined
 }

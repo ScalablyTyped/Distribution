@@ -29,7 +29,7 @@ object ListJobsResponse {
     
     inline def setJobNamesUndefined: Self = StObject.set(x, "JobNames", js.undefined)
     
-    inline def setJobNamesVarargs(value: NameString*): Self = StObject.set(x, "JobNames", js.Array(value :_*))
+    inline def setJobNamesVarargs(value: NameString*): Self = StObject.set(x, "JobNames", js.Array(value*))
     
     inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

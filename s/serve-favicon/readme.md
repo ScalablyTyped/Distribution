@@ -11,14 +11,11 @@ favicon serving middleware with caching
 | Full name          | serve-favicon |
 | Keywords           | express, favicon, middleware |
 | # releases         | 0 |
-| # dependents       | 1912 |
-| # downloads        | 105138165 |
-| # stars            | 124 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6701739666666666E7 |
+| # stars            | 600.0 |
 
 ## Links
-- [Homepage](https://github.com/expressjs/serve-favicon#readme)
-- [Bugs](https://github.com/expressjs/serve-favicon/issues)
-- [Repository](https://github.com/expressjs/serve-favicon)
 - [Npm](https://www.npmjs.com/package/serve-favicon)
     
 

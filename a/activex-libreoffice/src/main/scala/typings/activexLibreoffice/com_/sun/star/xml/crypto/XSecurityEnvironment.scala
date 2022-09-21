@@ -71,7 +71,7 @@ object XSecurityEnvironment {
     getCertificateCharacters: XCertificate => Double,
     getPersonalCertificates: () => SafeArray[XCertificate],
     getSecurityEnvironmentInformation: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     verifyCertificate: (XCertificate, SeqEquiv[XCertificate]) => Double
   ): XSecurityEnvironment = {

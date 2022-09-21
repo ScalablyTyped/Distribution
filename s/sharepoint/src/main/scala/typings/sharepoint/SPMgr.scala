@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SPMgr extends StObject {
   
-  def NewGroup(listItem: StringDictionary[js.Any], fieldName: String): Boolean
+  def NewGroup(listItem: StringDictionary[Any], fieldName: String): Boolean
   
   def RenderField(
     renderCtx: RenderContext,
     field: FieldSchema,
-    listItem: StringDictionary[js.Any],
+    listItem: StringDictionary[Any],
     listSchema: ListSchema
   ): String
   
   def RenderFieldByName(
     renderCtx: RenderContext,
     fieldName: String,
-    listItem: StringDictionary[js.Any],
+    listItem: StringDictionary[Any],
     listSchema: ListSchema
   ): String
   
@@ -31,9 +31,9 @@ trait SPMgr extends StObject {
 object SPMgr {
   
   inline def apply(
-    NewGroup: (StringDictionary[js.Any], String) => Boolean,
-    RenderField: (RenderContext, FieldSchema, StringDictionary[js.Any], ListSchema) => String,
-    RenderFieldByName: (RenderContext, String, StringDictionary[js.Any], ListSchema) => String,
+    NewGroup: (StringDictionary[Any], String) => Boolean,
+    RenderField: (RenderContext, FieldSchema, StringDictionary[Any], ListSchema) => String,
+    RenderFieldByName: (RenderContext, String, StringDictionary[Any], ListSchema) => String,
     RenderHeader: (RenderContext, FieldSchema) => String
   ): SPMgr = {
     val __obj = js.Dynamic.literal(NewGroup = js.Any.fromFunction2(NewGroup), RenderField = js.Any.fromFunction4(RenderField), RenderFieldByName = js.Any.fromFunction4(RenderFieldByName), RenderHeader = js.Any.fromFunction2(RenderHeader))
@@ -42,11 +42,11 @@ object SPMgr {
   
   extension [Self <: SPMgr](x: Self) {
     
-    inline def setNewGroup(value: (StringDictionary[js.Any], String) => Boolean): Self = StObject.set(x, "NewGroup", js.Any.fromFunction2(value))
+    inline def setNewGroup(value: (StringDictionary[Any], String) => Boolean): Self = StObject.set(x, "NewGroup", js.Any.fromFunction2(value))
     
-    inline def setRenderField(value: (RenderContext, FieldSchema, StringDictionary[js.Any], ListSchema) => String): Self = StObject.set(x, "RenderField", js.Any.fromFunction4(value))
+    inline def setRenderField(value: (RenderContext, FieldSchema, StringDictionary[Any], ListSchema) => String): Self = StObject.set(x, "RenderField", js.Any.fromFunction4(value))
     
-    inline def setRenderFieldByName(value: (RenderContext, String, StringDictionary[js.Any], ListSchema) => String): Self = StObject.set(x, "RenderFieldByName", js.Any.fromFunction4(value))
+    inline def setRenderFieldByName(value: (RenderContext, String, StringDictionary[Any], ListSchema) => String): Self = StObject.set(x, "RenderFieldByName", js.Any.fromFunction4(value))
     
     inline def setRenderHeader(value: (RenderContext, FieldSchema) => String): Self = StObject.set(x, "RenderHeader", js.Any.fromFunction2(value))
   }

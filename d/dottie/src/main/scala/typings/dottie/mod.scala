@@ -22,7 +22,7 @@ object mod extends Shortcut {
       * dottie.default({}, 'some.value', 'a') as MyType; // { some: { value: 'a' }}
       * dottie.default({ some: { value: 'a' }}, 'some.value', 'b') as MyType; // { some: { value: 'a' }}
       */
-    def default(obj: js.Object, path: DottiePath, value: js.Any): js.Any = js.native
+    def default(obj: js.Object, path: DottiePath, value: Any): Any = js.native
     
     /**
       * Check path exists in object
@@ -131,8 +131,8 @@ object mod extends Shortcut {
       * dottie.set(values, ['some.dot.included', 'value'], someValue);
       * dottie.set(values, 'some.nested.object', someValue, { force: true });
       */
-    def set(obj: js.Object, path: DottiePath, value: js.Any): Unit = js.native
-    def set(obj: js.Object, path: DottiePath, value: js.Any, options: SetOptions): Unit = js.native
+    def set(obj: js.Object, path: DottiePath, value: Any): Unit = js.native
+    def set(obj: js.Object, path: DottiePath, value: Any, options: SetOptions): Unit = js.native
     
     /**
       * Transform object from keys with dottie notation to nested objects
@@ -171,8 +171,8 @@ object mod extends Shortcut {
       *   }
       * });
       */
-    def transform(obj: FlatPaths): js.Any = js.native
-    def transform(obj: FlatPaths, options: TransformOptions): js.Any = js.native
+    def transform(obj: FlatPaths): Any = js.native
+    def transform(obj: FlatPaths, options: TransformOptions): Any = js.native
   }
   
   type DottiePath = String | js.Array[String]
@@ -184,7 +184,7 @@ object mod extends Shortcut {
     *  'foo.baz': 'baz',
     * }
     */
-  type FlatPaths = StringDictionary[js.Any]
+  type FlatPaths = StringDictionary[Any]
   
   trait SetOptions extends StObject {
     

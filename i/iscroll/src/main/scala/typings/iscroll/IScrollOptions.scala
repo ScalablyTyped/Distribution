@@ -1,7 +1,6 @@
 package typings.iscroll
 
 import typings.iscroll.anon.Fn
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,7 +64,7 @@ trait IScrollOptions extends StObject {
   
   var preventDefault: js.UndefOr[Boolean] = js.undefined
   
-  var preventDefaultException: js.UndefOr[js.Array[RegExp] | js.Object] = js.undefined
+  var preventDefaultException: js.UndefOr[js.Array[js.RegExp] | js.Object] = js.undefined
   
   // iScroll probe edition
   var probeType: js.UndefOr[Double] = js.undefined
@@ -235,11 +234,11 @@ object IScrollOptions {
     
     inline def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    inline def setPreventDefaultException(value: js.Array[RegExp] | js.Object): Self = StObject.set(x, "preventDefaultException", value.asInstanceOf[js.Any])
+    inline def setPreventDefaultException(value: js.Array[js.RegExp] | js.Object): Self = StObject.set(x, "preventDefaultException", value.asInstanceOf[js.Any])
     
     inline def setPreventDefaultExceptionUndefined: Self = StObject.set(x, "preventDefaultException", js.undefined)
     
-    inline def setPreventDefaultExceptionVarargs(value: RegExp*): Self = StObject.set(x, "preventDefaultException", js.Array(value :_*))
+    inline def setPreventDefaultExceptionVarargs(value: js.RegExp*): Self = StObject.set(x, "preventDefaultException", js.Array(value*))
     
     inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
     

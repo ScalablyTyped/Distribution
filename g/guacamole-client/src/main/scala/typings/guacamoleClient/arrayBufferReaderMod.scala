@@ -1,7 +1,6 @@
 package typings.guacamoleClient
 
 import typings.guacamoleClient.inputStreamMod.InputStream
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object arrayBufferReaderMod {
   
   @JSImport("guacamole-client/lib/ArrayBufferReader", "ArrayBufferReader")
   @js.native
-  class ArrayBufferReader protected () extends StObject {
+  open class ArrayBufferReader protected () extends StObject {
     /**
       * @param stream The stream that data will be read from.
       */
@@ -21,7 +20,7 @@ object arrayBufferReaderMod {
       * @event
       * @param buffer The data packet received.
       */
-    var ondata: Null | (js.Function1[/* data */ ArrayBuffer, Unit]) = js.native
+    var ondata: Null | (js.Function1[/* data */ js.typedarray.ArrayBuffer, Unit]) = js.native
     
     /**
       * Fired once this stream is finished and no further data will be written.

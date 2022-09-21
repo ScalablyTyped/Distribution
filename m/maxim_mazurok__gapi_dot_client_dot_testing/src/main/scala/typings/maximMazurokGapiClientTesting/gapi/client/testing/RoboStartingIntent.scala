@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RoboStartingIntent extends StObject {
   
   /** An intent that starts the main launcher activity. */
-  var launcherActivity: js.UndefOr[js.Any] = js.undefined
+  var launcherActivity: js.UndefOr[Any] = js.undefined
   
   /** An intent that starts an activity with specific details. */
   var startActivity: js.UndefOr[StartActivityIntent] = js.undefined
@@ -24,7 +24,7 @@ object RoboStartingIntent {
   
   extension [Self <: RoboStartingIntent](x: Self) {
     
-    inline def setLauncherActivity(value: js.Any): Self = StObject.set(x, "launcherActivity", value.asInstanceOf[js.Any])
+    inline def setLauncherActivity(value: Any): Self = StObject.set(x, "launcherActivity", value.asInstanceOf[js.Any])
     
     inline def setLauncherActivityUndefined: Self = StObject.set(x, "launcherActivity", js.undefined)
     

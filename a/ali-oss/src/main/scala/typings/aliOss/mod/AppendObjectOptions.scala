@@ -8,15 +8,15 @@ trait AppendObjectOptions extends StObject {
   
   var headers: js.UndefOr[js.Object] = js.undefined
   
-  // custom mime, will send with Content-Type entity header
   var meta: js.UndefOr[UserMeta] = js.undefined
   
-  // the operation timeout
+  /** custom mime, will send with Content-Type entity header */
   var mime: js.UndefOr[String] = js.undefined
   
+  /** specify the position which is the content length of the latest object */
   var position: js.UndefOr[String] = js.undefined
   
-  // specify the position which is the content length of the latest object
+  /** the operation timeout */
   var timeout: js.UndefOr[Double] = js.undefined
 }
 object AppendObjectOptions {

@@ -1,13 +1,13 @@
 package typings.nodePdftk
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  /* Inlined std.Partial<std.Record<node-pdftk.node-pdftk.Letter, string | node.Buffer>> */
+  /* Inlined std.Partial<std.Record<node-pdftk.node-pdftk.Letter, string | node.buffer.<global>.Buffer>> */
   trait PartialRecordLetterstring extends StObject {
     
     var A: js.UndefOr[String | Buffer] = js.undefined

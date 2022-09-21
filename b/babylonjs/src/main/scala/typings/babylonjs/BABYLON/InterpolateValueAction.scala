@@ -9,11 +9,11 @@ trait InterpolateValueAction
   extends StObject
      with Action {
   
-  /* private */ var _effectiveTarget: js.Any = js.native
+  /* private */ var _effectiveTarget: Any = js.native
   
-  /* private */ var _property: js.Any = js.native
+  /* private */ var _property: Any = js.native
   
-  /* private */ var _target: js.Any = js.native
+  /* private */ var _target: Any = js.native
   
   /**
     * Defines the time it will take for the property to interpolate to the value.
@@ -43,5 +43,5 @@ trait InterpolateValueAction
   /**
     * Defines the target value at the end of the interpolation.
     */
-  var value: js.Any = js.native
+  var value: Any = js.native
 }

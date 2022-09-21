@@ -28,11 +28,11 @@ trait DefineAttributeColumnReferencesOptions extends StObject {
   /**
     * If this column references another table, provide it here as a Model, or a string
     */
-  var model: String | (Model[js.Any, js.Any, js.Any])
+  var model: String | (Model[Any, Any, Any])
 }
 object DefineAttributeColumnReferencesOptions {
   
-  inline def apply(model: String | (Model[js.Any, js.Any, js.Any])): DefineAttributeColumnReferencesOptions = {
+  inline def apply(model: String | (Model[Any, Any, Any])): DefineAttributeColumnReferencesOptions = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineAttributeColumnReferencesOptions]
   }
@@ -49,6 +49,6 @@ object DefineAttributeColumnReferencesOptions {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setModel(value: String | (Model[js.Any, js.Any, js.Any])): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String | (Model[Any, Any, Any])): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
 }

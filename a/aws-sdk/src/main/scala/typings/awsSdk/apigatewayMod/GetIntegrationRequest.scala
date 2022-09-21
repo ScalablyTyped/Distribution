@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetIntegrationRequest extends StObject {
   
   /**
-    * [Required] Specifies a get integration request's HTTP method.
+    * Specifies a get integration request's HTTP method.
     */
   var httpMethod: String
   
   /**
-    * [Required] Specifies a get integration request's resource identifier
+    * Specifies a get integration request's resource identifier
     */
   var resourceId: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }

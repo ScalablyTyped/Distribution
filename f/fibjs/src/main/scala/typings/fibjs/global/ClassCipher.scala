@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_Cipher")
 @js.native
-class ClassCipher protected ()
+open class ClassCipher protected ()
   extends StObject
      with typings.fibjs.ClassCipher {
   /**

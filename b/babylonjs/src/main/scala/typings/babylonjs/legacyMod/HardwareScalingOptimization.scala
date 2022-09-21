@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param maximumScale defines the maximum scale to use (2 by default)
   * @param step defines the step to use between two passes (0.5 by default)
   */
-class HardwareScalingOptimization ()
+open class HardwareScalingOptimization ()
   extends typings.babylonjs.indexMod.HardwareScalingOptimization {
   def this(/**
     * Defines the priority of this optimization (0 by default which means first in the list)

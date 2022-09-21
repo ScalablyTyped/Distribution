@@ -9,14 +9,14 @@ trait PlacementGroup extends StObject {
   /** Account ID of this placement group. This is a read-only field that can be left blank. */
   var accountId: js.UndefOr[String] = js.undefined
   
+  /** Whether this placement group is active, inactive, archived or permanently archived. */
+  var activeStatus: js.UndefOr[String] = js.undefined
+  
   /** Advertiser ID of this placement group. This is a required field on insertion. */
   var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Dimension value for the ID of the advertiser. This is a read-only, auto-generated field. */
   var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
-  
-  /** Whether this placement group is archived. */
-  var archived: js.UndefOr[Boolean] = js.undefined
   
   /** Campaign ID of this placement group. This field is required on insertion. */
   var campaignId: js.UndefOr[String] = js.undefined
@@ -110,6 +110,10 @@ object PlacementGroup {
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
+    inline def setActiveStatus(value: String): Self = StObject.set(x, "activeStatus", value.asInstanceOf[js.Any])
+    
+    inline def setActiveStatusUndefined: Self = StObject.set(x, "activeStatus", js.undefined)
+    
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     inline def setAdvertiserIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "advertiserIdDimensionValue", value.asInstanceOf[js.Any])
@@ -117,10 +121,6 @@ object PlacementGroup {
     inline def setAdvertiserIdDimensionValueUndefined: Self = StObject.set(x, "advertiserIdDimensionValue", js.undefined)
     
     inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
-    
-    inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
-    
-    inline def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
     
     inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
@@ -134,7 +134,7 @@ object PlacementGroup {
     
     inline def setChildPlacementIdsUndefined: Self = StObject.set(x, "childPlacementIds", js.undefined)
     
-    inline def setChildPlacementIdsVarargs(value: String*): Self = StObject.set(x, "childPlacementIds", js.Array(value :_*))
+    inline def setChildPlacementIdsVarargs(value: String*): Self = StObject.set(x, "childPlacementIds", js.Array(value*))
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

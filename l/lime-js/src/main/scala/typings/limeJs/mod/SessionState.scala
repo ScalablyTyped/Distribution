@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("lime-js", "SessionState")
 @js.native
-class SessionState () extends StObject
+open class SessionState () extends StObject
 object SessionState {
   
   @JSImport("lime-js", "SessionState")

@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientControlCollection")
 @js.native
-class ASPxClientControlCollection ()
+open class ASPxClientControlCollection ()
   extends StObject
      with typings.devexpressWeb.ASPxClientControlCollection {
   
@@ -72,28 +72,28 @@ class ASPxClientControlCollection ()
     * @param name A string value representing the hierarchically-qualified identifier of the required control.
     */
   /* CompleteClass */
-  override def Get(name: js.Any): js.Any = js.native
+  override def Get(name: Any): Any = js.native
   
   /**
     * Returns a DevExpress client control object identified by its unique hierarchically-qualified identifier (either ClientInstanceName or ClientID property value). An object that is the client control object found.
     * @param name A string value that is the hierarchically-qualified identifier of the required DevExpress control.
     */
   /* CompleteClass */
-  override def GetByName(name: String): js.Any = js.native
+  override def GetByName(name: String): Any = js.native
   
   /**
     * Returns all controls in the collection that satisfy the specified predicate. An array of all client controls found.
     * @param predicate An ASPxClientControlPredicate object that is a predicate used to search for controls in the collection.
     */
   /* CompleteClass */
-  override def GetControlsByPredicate(predicate: ASPxClientControlPredicate): js.Array[js.Any] = js.native
+  override def GetControlsByPredicate(predicate: ASPxClientControlPredicate): js.Array[Any] = js.native
   
   /**
     * Returns all controls of the specified type. An array of all client controls found.
     * @param type The object specifying the client control type.
     */
   /* CompleteClass */
-  override def GetControlsByType(`type`: js.Any): js.Array[js.Any] = js.native
+  override def GetControlsByType(`type`: Any): js.Array[Any] = js.native
   
   /**
     * Occurs after the validation initiated for a DevExpress web control (or a group of DevExpress web controls) has been completed.

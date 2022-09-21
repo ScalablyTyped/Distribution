@@ -1,6 +1,7 @@
 package typings.quillDelta
 
 import typings.quillDelta.mod.AttributeMap
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +14,6 @@ object opMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def iterator(ops: js.Array[Op]): typings.quillDelta.iteratorMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(ops.asInstanceOf[js.Any]).asInstanceOf[typings.quillDelta.iteratorMod.default]
-    
     inline def length(op: Op): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("length")(op.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
@@ -24,9 +23,9 @@ object opMod {
     
     var delete: js.UndefOr[Double] = js.undefined
     
-    var insert: js.UndefOr[String | js.Object] = js.undefined
+    var insert: js.UndefOr[String | (Record[String, Any])] = js.undefined
     
-    var retain: js.UndefOr[Double] = js.undefined
+    var retain: js.UndefOr[Double | (Record[String, Any])] = js.undefined
   }
   object Op {
     
@@ -45,11 +44,11 @@ object opMod {
       
       inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
       
-      inline def setInsert(value: String | js.Object): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+      inline def setInsert(value: String | (Record[String, Any])): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
       
       inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
       
-      inline def setRetain(value: Double): Self = StObject.set(x, "retain", value.asInstanceOf[js.Any])
+      inline def setRetain(value: Double | (Record[String, Any])): Self = StObject.set(x, "retain", value.asInstanceOf[js.Any])
       
       inline def setRetainUndefined: Self = StObject.set(x, "retain", js.undefined)
     }

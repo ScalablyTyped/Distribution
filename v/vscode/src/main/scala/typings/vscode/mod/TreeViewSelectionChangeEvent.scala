@@ -22,6 +22,6 @@ object TreeViewSelectionChangeEvent {
     
     inline def setSelection(value: js.Array[T]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
-    inline def setSelectionVarargs(value: T*): Self = StObject.set(x, "selection", js.Array(value :_*))
+    inline def setSelectionVarargs(value: T*): Self = StObject.set(x, "selection", js.Array(value*))
   }
 }

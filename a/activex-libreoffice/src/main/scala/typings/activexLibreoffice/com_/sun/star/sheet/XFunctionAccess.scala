@@ -23,14 +23,14 @@ trait XFunctionAccess
     * @throws com::sun::star::container::NoSuchElementException if the named function does not exist.
     * @throws com::sun::star::lang::IllegalArgumentException if the function can not be called with these arguments.
     */
-  def callFunction(aName: String, aArguments: SeqEquiv[js.Any]): js.Any
+  def callFunction(aName: String, aArguments: SeqEquiv[Any]): Any
 }
 object XFunctionAccess {
   
   inline def apply(
     acquire: () => Unit,
-    callFunction: (String, SeqEquiv[js.Any]) => js.Any,
-    queryInterface: `type` => js.Any,
+    callFunction: (String, SeqEquiv[Any]) => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XFunctionAccess = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), callFunction = js.Any.fromFunction2(callFunction), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -39,6 +39,6 @@ object XFunctionAccess {
   
   extension [Self <: XFunctionAccess](x: Self) {
     
-    inline def setCallFunction(value: (String, SeqEquiv[js.Any]) => js.Any): Self = StObject.set(x, "callFunction", js.Any.fromFunction2(value))
+    inline def setCallFunction(value: (String, SeqEquiv[Any]) => Any): Self = StObject.set(x, "callFunction", js.Any.fromFunction2(value))
   }
 }

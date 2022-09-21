@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CanvasState extends StObject {
   
+  /* standard dom */
   def restore(): Unit
   
+  /* standard dom */
   def save(): Unit
 }
 object CanvasState {

@@ -4,9 +4,10 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
+import typings.semanticUiReact.anon.PickSearchCategoryLayoutP
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.searchResultMod.SearchResultProps
 import org.scalablytyped.runtime.StObject
@@ -17,12 +18,12 @@ object searchCategoryMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/modules/Search/SearchCategory", JSImport.Default)
   @js.native
-  val default: StatelessComponent[SearchCategoryProps] = js.native
+  val default: FC[SearchCategoryProps] = js.native
   
   trait SearchCategoryProps
     extends StObject
        with StrictSearchCategoryProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object SearchCategoryProps {
     
     inline def apply(): SearchCategoryProps = {
@@ -37,7 +38,7 @@ object searchCategoryMod extends Shortcut {
     var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -51,13 +52,10 @@ object searchCategoryMod extends Shortcut {
     /**
       * Renders the SearchCategory layout.
       *
-      * @param {object} categoryContent - The Renderable SearchCategory contents.
-      * @param {object} resultsContent - The Renderable SearchResult contents.
+      * @param {object} props - The SearchCategoryLayout props object.
       * @returns {*} - Renderable SearchCategory layout.
       */
-    var layoutRenderer: js.UndefOr[
-        js.Function2[/* categoryContent */ ReactElement, /* resultsContent */ ReactElement, ReactElement]
-      ] = js.undefined
+    var layoutRenderer: js.UndefOr[js.Function1[/* props */ PickSearchCategoryLayoutP, ReactElement]] = js.undefined
     
     /** Display name. */
     var name: js.UndefOr[String] = js.undefined
@@ -86,7 +84,7 @@ object searchCategoryMod extends Shortcut {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -102,7 +100,7 @@ object searchCategoryMod extends Shortcut {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setLayoutRenderer(value: (/* categoryContent */ ReactElement, /* resultsContent */ ReactElement) => ReactElement): Self = StObject.set(x, "layoutRenderer", js.Any.fromFunction2(value))
+      inline def setLayoutRenderer(value: /* props */ PickSearchCategoryLayoutP => ReactElement): Self = StObject.set(x, "layoutRenderer", js.Any.fromFunction1(value))
       
       inline def setLayoutRendererUndefined: Self = StObject.set(x, "layoutRenderer", js.undefined)
       
@@ -118,12 +116,12 @@ object searchCategoryMod extends Shortcut {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setResultsVarargs(value: (ComponentClass[SearchResultProps, ComponentState])*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: (ComponentClass[SearchResultProps, ComponentState])*): Self = StObject.set(x, "results", js.Array(value*))
     }
   }
   
-  type _To = StatelessComponent[SearchCategoryProps]
+  type _To = FC[SearchCategoryProps]
   
   /* This means you don't have to write `default`, but can instead just say `searchCategoryMod.foo` */
-  override def _to: StatelessComponent[SearchCategoryProps] = default
+  override def _to: FC[SearchCategoryProps] = default
 }

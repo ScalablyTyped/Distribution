@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.Label")
 @js.native
-class Label ()
+open class Label ()
   extends typings.reactBootstrap.mod.Label

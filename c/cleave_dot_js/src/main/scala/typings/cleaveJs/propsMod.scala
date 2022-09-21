@@ -1,5 +1,6 @@
 package typings.cleaveJs
 
+import typings.cleaveJs.anon.Omitdestroy
 import typings.cleaveJs.optionsMod.CleaveOptions
 import typings.react.mod.EventHandler
 import typings.react.mod.InputHTMLAttributes
@@ -43,13 +44,13 @@ object propsMod {
   
   type ChangeEventHandler[T] = EventHandler[ChangeEvent[T]]
   
-  type InitHandler = js.Function1[/* owner */ ReactInstance, Unit]
+  type InitHandler = js.Function1[/* owner */ ReactInstanceWithCleave, Unit]
   
   trait Props
     extends StObject
        with InputHTMLAttributes[HTMLInputElement] {
     
-    var htmlRef: js.UndefOr[js.Function1[/* i */ js.Any, Unit]] = js.undefined
+    var htmlRef: js.UndefOr[js.Function1[/* i */ Any, Unit]] = js.undefined
     
     @JSName("onChange")
     var onChange_Props: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
@@ -67,7 +68,7 @@ object propsMod {
     
     extension [Self <: Props](x: Self) {
       
-      inline def setHtmlRef(value: /* i */ js.Any => Unit): Self = StObject.set(x, "htmlRef", js.Any.fromFunction1(value))
+      inline def setHtmlRef(value: /* i */ Any => Unit): Self = StObject.set(x, "htmlRef", js.Any.fromFunction1(value))
       
       inline def setHtmlRefUndefined: Self = StObject.set(x, "htmlRef", js.undefined)
       
@@ -75,11 +76,13 @@ object propsMod {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnInit(value: /* owner */ ReactInstance => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction1(value))
+      inline def setOnInit(value: /* owner */ ReactInstanceWithCleave => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction1(value))
       
       inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
       
       inline def setOptions(value: CleaveOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
+  
+  type ReactInstanceWithCleave = ReactInstance & Omitdestroy
 }

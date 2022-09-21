@@ -1,13 +1,13 @@
 package typings.cassandraDriver.typesMod.types
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.BigDecimal")
 @js.native
-class BigDecimal protected () extends StObject {
+open class BigDecimal protected () extends StObject {
   def this(unscaledValue: Double, scale: Double) = this()
   
   def add(other: BigDecimal): BigDecimal = js.native

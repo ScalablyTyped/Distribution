@@ -33,6 +33,6 @@ object TagOptionSummary {
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: TagOptionValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: TagOptionValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

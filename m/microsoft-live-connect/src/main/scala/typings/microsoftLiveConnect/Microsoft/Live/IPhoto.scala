@@ -244,7 +244,7 @@ object IPhoto {
     
     inline def setImages(value: js.Array[IImageInfo]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    inline def setImagesVarargs(value: IImageInfo*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: IImageInfo*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setIs_embeddable(value: Boolean): Self = StObject.set(x, "is_embeddable", value.asInstanceOf[js.Any])
     

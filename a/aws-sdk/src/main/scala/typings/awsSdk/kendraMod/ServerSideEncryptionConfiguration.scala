@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServerSideEncryptionConfiguration extends StObject {
   
   /**
-    * The identifier of the AWS KMS customer master key (CMK). Amazon Kendra doesn't support asymmetric CMKs.
+    * The identifier of the KMS key. Amazon Kendra doesn't support asymmetric keys.
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.kendraMod.KmsKeyId] = js.undefined
 }

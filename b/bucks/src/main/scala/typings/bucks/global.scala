@@ -16,7 +16,7 @@ object global {
     /**
       * Create bucks object.
       */
-    class ^ ()
+    open class ^ ()
       extends StObject
          with typings.bucks.Bucks.Bucks
     

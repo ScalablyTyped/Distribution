@@ -17,6 +17,9 @@ trait RepricingRuleEligibleOfferMatcher extends StObject {
   
   /** Filter by the offer id. */
   var offerIdMatcher: js.UndefOr[RepricingRuleEligibleOfferMatcherStringMatcher] = js.undefined
+  
+  /** When true, the rule won't be applied to offers with active promotions. */
+  var skipWhenOnPromotion: js.UndefOr[Boolean] = js.undefined
 }
 object RepricingRuleEligibleOfferMatcher {
   
@@ -42,5 +45,9 @@ object RepricingRuleEligibleOfferMatcher {
     inline def setOfferIdMatcher(value: RepricingRuleEligibleOfferMatcherStringMatcher): Self = StObject.set(x, "offerIdMatcher", value.asInstanceOf[js.Any])
     
     inline def setOfferIdMatcherUndefined: Self = StObject.set(x, "offerIdMatcher", js.undefined)
+    
+    inline def setSkipWhenOnPromotion(value: Boolean): Self = StObject.set(x, "skipWhenOnPromotion", value.asInstanceOf[js.Any])
+    
+    inline def setSkipWhenOnPromotionUndefined: Self = StObject.set(x, "skipWhenOnPromotion", js.undefined)
   }
 }

@@ -35,7 +35,7 @@ trait SelectorQuery extends StObject {
   *
   * 最低基础库： `1.6.0` */
   def in(/** 自定义组件实例 */
-  component: js.Any): SelectorQuery = js.native
+  component: Any): SelectorQuery = js.native
   
   /** [[NodesRef](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/NodesRef.html) SelectorQuery.select(string selector)](SelectorQuery.select.md)
     *

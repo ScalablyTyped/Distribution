@@ -5,9 +5,9 @@ import typings.connect.mod.NextHandleFunction
 import typings.express.mod.Application_
 import typings.express.mod.RequestHandler
 import typings.express.mod.Router
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.expressServeStaticCore.mod.IRouter
 import typings.jsonServer.anon.ForeignKeySuffix
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,15 +24,58 @@ object mod {
   
   inline def create(): Application_ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Application_]
   
-  inline def defaults(): js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
-  inline def defaults(options: MiddlewaresOptions): js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
+  inline def defaults(): js.Array[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[js.Array[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ]]
+  inline def defaults(options: MiddlewaresOptions): js.Array[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[
+    RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ]]
   
   inline def rewriter(rules: StringDictionary[String]): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("rewriter")(rules.asInstanceOf[js.Any]).asInstanceOf[Router]
   
-  inline def router(source: String): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("router")(source.asInstanceOf[js.Any]).asInstanceOf[Router]
-  inline def router(source: String, options: ForeignKeySuffix): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("router")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Router]
-  inline def router(source: js.Object): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("router")(source.asInstanceOf[js.Any]).asInstanceOf[Router]
-  inline def router(source: js.Object, options: ForeignKeySuffix): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("router")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Router]
+  inline def router[T /* <: js.Object */](
+    source: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LowdbSync<T> */ Any) | T
+  ): JsonServerRouter[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("router")(source.asInstanceOf[js.Any]).asInstanceOf[JsonServerRouter[T]]
+  inline def router[T /* <: js.Object */](
+    source: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LowdbSync<T> */ Any) | T,
+    options: ForeignKeySuffix
+  ): JsonServerRouter[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("router")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JsonServerRouter[T]]
+  inline def router[T /* <: js.Object */](source: String): JsonServerRouter[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("router")(source.asInstanceOf[js.Any]).asInstanceOf[JsonServerRouter[T]]
+  inline def router[T /* <: js.Object */](source: String, options: ForeignKeySuffix): JsonServerRouter[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("router")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JsonServerRouter[T]]
+  
+  @js.native
+  trait JsonServerRouter[T] extends IRouter {
+    
+    var db: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LowdbSync<T> */ Any = js.native
+  }
   
   trait MiddlewaresOptions extends StObject {
     

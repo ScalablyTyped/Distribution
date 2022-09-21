@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "Icon")
 @js.native
-class Icon () extends default
+open class Icon () extends default
 /* static members */
 object Icon {
   

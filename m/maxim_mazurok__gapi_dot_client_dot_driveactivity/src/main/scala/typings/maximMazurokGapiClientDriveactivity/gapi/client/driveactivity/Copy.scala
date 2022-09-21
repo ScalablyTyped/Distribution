@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Copy extends StObject {
   
-  /** The the original object. */
+  /** The original object. */
   var originalObject: js.UndefOr[TargetReference] = js.undefined
 }
 object Copy {

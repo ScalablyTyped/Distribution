@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents accept language information used in the Accept-Language HTTP header on an HTTP request. */
 @JSGlobal("Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValue")
 @js.native
-class HttpLanguageRangeWithQualityHeaderValue protected ()
+open class HttpLanguageRangeWithQualityHeaderValue protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValue {
   /**

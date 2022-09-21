@@ -1,166 +1,159 @@
 package typings.angularRouter.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.angularCore.mod.ComponentRef
+import typings.angularCore.mod.InjectionToken
+import typings.angularCore.mod.NgModuleFactory
+import typings.angularCore.mod.Provider
+import typings.angularCore.mod.Type
+import typings.angularCore.mod.Version
+import typings.angularRouter.angularRouterNumbers.`0`
+import typings.angularRouter.angularRouterNumbers.`1`
+import typings.angularRouter.angularRouterNumbers.`2`
+import typings.angularRouter.angularRouterNumbers.`3`
+import typings.angularRouter.angularRouterNumbers.`4`
+import typings.angularRouter.angularRouterNumbers.`5`
+import typings.angularRouter.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def PRIMARY_OUTLET: /* "primary" */ java.lang.String = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PRIMARY_OUTLET").asInstanceOf[/* "primary" */ java.lang.String]
+inline def PRIMARY_OUTLET: /* "primary" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("PRIMARY_OUTLET").asInstanceOf[/* "primary" */ String]
 
-inline def ROUTER_CONFIGURATION: typings.angularCore.mod.InjectionToken[typings.angularRouter.mod.ExtraOptions] = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ROUTER_CONFIGURATION").asInstanceOf[typings.angularCore.mod.InjectionToken[typings.angularRouter.mod.ExtraOptions]]
+inline def ROUTER_CONFIGURATION: InjectionToken[ExtraOptions] = ^.asInstanceOf[js.Dynamic].selectDynamic("ROUTER_CONFIGURATION").asInstanceOf[InjectionToken[ExtraOptions]]
 
-inline def ROUTER_INITIALIZER: typings.angularCore.mod.InjectionToken[
-js.Function1[/* compRef */ typings.angularCore.mod.ComponentRef[js.Any], scala.Unit]] = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ROUTER_INITIALIZER").asInstanceOf[typings.angularCore.mod.InjectionToken[
-js.Function1[/* compRef */ typings.angularCore.mod.ComponentRef[js.Any], scala.Unit]]]
+inline def ROUTER_INITIALIZER: InjectionToken[js.Function1[/* compRef */ ComponentRef[Any], Unit]] = ^.asInstanceOf[js.Dynamic].selectDynamic("ROUTER_INITIALIZER").asInstanceOf[InjectionToken[js.Function1[/* compRef */ ComponentRef[Any], Unit]]]
 
-inline def ROUTES_ : typings.angularCore.mod.InjectionToken[js.Array[js.Array[typings.angularRouter.mod.Route]]] = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ROUTES").asInstanceOf[typings.angularCore.mod.InjectionToken[js.Array[js.Array[typings.angularRouter.mod.Route]]]]
+inline def ROUTES_ : InjectionToken[js.Array[js.Array[Route]]] = ^.asInstanceOf[js.Dynamic].selectDynamic("ROUTES").asInstanceOf[InjectionToken[js.Array[js.Array[Route]]]]
 
-inline def VERSION: typings.angularCore.mod.Version = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[typings.angularCore.mod.Version]
+inline def VERSION: Version = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[Version]
 
-inline def convertToParamMap(params: typings.angularRouter.mod.Params): typings.angularRouter.mod.ParamMap = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("convertToParamMap")(params.asInstanceOf[js.Any]).asInstanceOf[typings.angularRouter.mod.ParamMap]
+inline def convertToParamMap(params: Params): ParamMap = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToParamMap")(params.asInstanceOf[js.Any]).asInstanceOf[ParamMap]
 
-inline def provideRoutes(routes: typings.angularRouter.mod.Routes): js.Any = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("provideRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def createUrlTreeFromSnapshot(relativeTo: ActivatedRouteSnapshot, commands: js.Array[Any]): UrlTree = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrlTreeFromSnapshot")(relativeTo.asInstanceOf[js.Any], commands.asInstanceOf[js.Any])).asInstanceOf[UrlTree]
+inline def createUrlTreeFromSnapshot(relativeTo: ActivatedRouteSnapshot, commands: js.Array[Any], queryParams: Null, fragment: String): UrlTree = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrlTreeFromSnapshot")(relativeTo.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any], fragment.asInstanceOf[js.Any])).asInstanceOf[UrlTree]
+inline def createUrlTreeFromSnapshot(relativeTo: ActivatedRouteSnapshot, commands: js.Array[Any], queryParams: Unit, fragment: String): UrlTree = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrlTreeFromSnapshot")(relativeTo.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any], fragment.asInstanceOf[js.Any])).asInstanceOf[UrlTree]
+inline def createUrlTreeFromSnapshot(relativeTo: ActivatedRouteSnapshot, commands: js.Array[Any], queryParams: Params): UrlTree = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrlTreeFromSnapshot")(relativeTo.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any])).asInstanceOf[UrlTree]
+inline def createUrlTreeFromSnapshot(relativeTo: ActivatedRouteSnapshot, commands: js.Array[Any], queryParams: Params, fragment: String): UrlTree = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrlTreeFromSnapshot")(relativeTo.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any], fragment.asInstanceOf[js.Any])).asInstanceOf[UrlTree]
 
-inline def ɵROUTERPROVIDERS: js.Array[typings.angularCore.mod.Provider] = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275ROUTER_PROVIDERS").asInstanceOf[js.Array[typings.angularCore.mod.Provider]]
+inline def defaultUrlMatcher(segments: js.Array[UrlSegment], segmentGroup: UrlSegmentGroup, route: Route): UrlMatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultUrlMatcher")(segments.asInstanceOf[js.Any], segmentGroup.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[UrlMatchResult | Null]
 
-inline def ɵangularPackagesRouterRouterA: typings.angularCore.mod.InjectionToken[scala.Unit] = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275angular_packages_router_router_a").asInstanceOf[typings.angularCore.mod.InjectionToken[scala.Unit]]
+inline def provideRouter(routes: Routes, features: RouterFeatures*): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideRouter")(List(routes.asInstanceOf[js.Any]).`++`(features.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[Provider]]
 
-inline def ɵangularPackagesRouterRouterB(): typings.angularCore.mod.NgProbeToken = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_b")().asInstanceOf[typings.angularCore.mod.NgProbeToken]
+inline def provideRoutes(routes: Routes): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Array[Provider]]
 
-inline def ɵangularPackagesRouterRouterC(
-  router: typings.angularRouter.mod.Router,
-  viewportScroller: typings.angularCommon.mod.ViewportScroller,
-  config: typings.angularRouter.mod.ExtraOptions
-): typings.angularRouter.mod.ɵangularPackagesRouterRouterO = (typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_c")(router.asInstanceOf[js.Any], viewportScroller.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.angularRouter.mod.ɵangularPackagesRouterRouterO]
+inline def withDebugTracing(): DebugTracingFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("withDebugTracing")().asInstanceOf[DebugTracingFeature]
 
-inline def ɵangularPackagesRouterRouterD(platformLocationStrategy: typings.angularCommon.mod.PlatformLocation, baseHref: java.lang.String): typings.angularCommon.mod.HashLocationStrategy | typings.angularCommon.mod.PathLocationStrategy = (typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_d")(platformLocationStrategy.asInstanceOf[js.Any], baseHref.asInstanceOf[js.Any])).asInstanceOf[typings.angularCommon.mod.HashLocationStrategy | typings.angularCommon.mod.PathLocationStrategy]
-inline def ɵangularPackagesRouterRouterD(
-  platformLocationStrategy: typings.angularCommon.mod.PlatformLocation,
-  baseHref: java.lang.String,
-  options: typings.angularRouter.mod.ExtraOptions
-): typings.angularCommon.mod.HashLocationStrategy | typings.angularCommon.mod.PathLocationStrategy = (typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_d")(platformLocationStrategy.asInstanceOf[js.Any], baseHref.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.angularCommon.mod.HashLocationStrategy | typings.angularCommon.mod.PathLocationStrategy]
+inline def withDisabledInitialNavigation(): DisabledInitialNavigationFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("withDisabledInitialNavigation")().asInstanceOf[DisabledInitialNavigationFeature]
 
-inline def ɵangularPackagesRouterRouterE(router: typings.angularRouter.mod.Router): js.Any = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_e")(router.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def withEnabledBlockingInitialNavigation(): EnabledBlockingInitialNavigationFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("withEnabledBlockingInitialNavigation")().asInstanceOf[EnabledBlockingInitialNavigationFeature]
 
-inline def ɵangularPackagesRouterRouterF(
-  urlSerializer: typings.angularRouter.mod.UrlSerializer,
-  contexts: typings.angularRouter.mod.ChildrenOutletContexts,
-  location: typings.angularCommon.mod.Location,
-  injector: typings.angularCore.mod.Injector,
-  loader: typings.angularCore.mod.NgModuleFactoryLoader,
-  compiler: typings.angularCore.mod.Compiler,
-  config: js.Array[js.Array[typings.angularRouter.mod.Route]]
-): typings.angularRouter.mod.Router = (typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_f")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.angularRouter.mod.Router]
-inline def ɵangularPackagesRouterRouterF(
-  urlSerializer: typings.angularRouter.mod.UrlSerializer,
-  contexts: typings.angularRouter.mod.ChildrenOutletContexts,
-  location: typings.angularCommon.mod.Location,
-  injector: typings.angularCore.mod.Injector,
-  loader: typings.angularCore.mod.NgModuleFactoryLoader,
-  compiler: typings.angularCore.mod.Compiler,
-  config: js.Array[js.Array[typings.angularRouter.mod.Route]],
-  opts: scala.Unit,
-  urlHandlingStrategy: scala.Unit,
-  routeReuseStrategy: typings.angularRouter.mod.RouteReuseStrategy
-): typings.angularRouter.mod.Router = (typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_f")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], urlHandlingStrategy.asInstanceOf[js.Any], routeReuseStrategy.asInstanceOf[js.Any])).asInstanceOf[typings.angularRouter.mod.Router]
-inline def ɵangularPackagesRouterRouterF(
-  urlSerializer: typings.angularRouter.mod.UrlSerializer,
-  contexts: typings.angularRouter.mod.ChildrenOutletContexts,
-  location: typings.angularCommon.mod.Location,
-  injector: typings.angularCore.mod.Injector,
-  loader: typings.angularCore.mod.NgModuleFactoryLoader,
-  compiler: typings.angularCore.mod.Compiler,
-  config: js.Array[js.Array[typings.angularRouter.mod.Route]],
-  opts: scala.Unit,
-  urlHandlingStrategy: typings.angularRouter.mod.UrlHandlingStrategy
-): typings.angularRouter.mod.Router = (typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_f")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], urlHandlingStrategy.asInstanceOf[js.Any])).asInstanceOf[typings.angularRouter.mod.Router]
-inline def ɵangularPackagesRouterRouterF(
-  urlSerializer: typings.angularRouter.mod.UrlSerializer,
-  contexts: typings.angularRouter.mod.ChildrenOutletContexts,
-  location: typings.angularCommon.mod.Location,
-  injector: typings.angularCore.mod.Injector,
-  loader: typings.angularCore.mod.NgModuleFactoryLoader,
-  compiler: typings.angularCore.mod.Compiler,
-  config: js.Array[js.Array[typings.angularRouter.mod.Route]],
-  opts: scala.Unit,
-  urlHandlingStrategy: typings.angularRouter.mod.UrlHandlingStrategy,
-  routeReuseStrategy: typings.angularRouter.mod.RouteReuseStrategy
-): typings.angularRouter.mod.Router = (typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_f")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], urlHandlingStrategy.asInstanceOf[js.Any], routeReuseStrategy.asInstanceOf[js.Any])).asInstanceOf[typings.angularRouter.mod.Router]
-inline def ɵangularPackagesRouterRouterF(
-  urlSerializer: typings.angularRouter.mod.UrlSerializer,
-  contexts: typings.angularRouter.mod.ChildrenOutletContexts,
-  location: typings.angularCommon.mod.Location,
-  injector: typings.angularCore.mod.Injector,
-  loader: typings.angularCore.mod.NgModuleFactoryLoader,
-  compiler: typings.angularCore.mod.Compiler,
-  config: js.Array[js.Array[typings.angularRouter.mod.Route]],
-  opts: typings.angularRouter.mod.ExtraOptions
-): typings.angularRouter.mod.Router = (typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_f")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.angularRouter.mod.Router]
-inline def ɵangularPackagesRouterRouterF(
-  urlSerializer: typings.angularRouter.mod.UrlSerializer,
-  contexts: typings.angularRouter.mod.ChildrenOutletContexts,
-  location: typings.angularCommon.mod.Location,
-  injector: typings.angularCore.mod.Injector,
-  loader: typings.angularCore.mod.NgModuleFactoryLoader,
-  compiler: typings.angularCore.mod.Compiler,
-  config: js.Array[js.Array[typings.angularRouter.mod.Route]],
-  opts: typings.angularRouter.mod.ExtraOptions,
-  urlHandlingStrategy: scala.Unit,
-  routeReuseStrategy: typings.angularRouter.mod.RouteReuseStrategy
-): typings.angularRouter.mod.Router = (typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_f")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], urlHandlingStrategy.asInstanceOf[js.Any], routeReuseStrategy.asInstanceOf[js.Any])).asInstanceOf[typings.angularRouter.mod.Router]
-inline def ɵangularPackagesRouterRouterF(
-  urlSerializer: typings.angularRouter.mod.UrlSerializer,
-  contexts: typings.angularRouter.mod.ChildrenOutletContexts,
-  location: typings.angularCommon.mod.Location,
-  injector: typings.angularCore.mod.Injector,
-  loader: typings.angularCore.mod.NgModuleFactoryLoader,
-  compiler: typings.angularCore.mod.Compiler,
-  config: js.Array[js.Array[typings.angularRouter.mod.Route]],
-  opts: typings.angularRouter.mod.ExtraOptions,
-  urlHandlingStrategy: typings.angularRouter.mod.UrlHandlingStrategy
-): typings.angularRouter.mod.Router = (typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_f")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], urlHandlingStrategy.asInstanceOf[js.Any])).asInstanceOf[typings.angularRouter.mod.Router]
-inline def ɵangularPackagesRouterRouterF(
-  urlSerializer: typings.angularRouter.mod.UrlSerializer,
-  contexts: typings.angularRouter.mod.ChildrenOutletContexts,
-  location: typings.angularCommon.mod.Location,
-  injector: typings.angularCore.mod.Injector,
-  loader: typings.angularCore.mod.NgModuleFactoryLoader,
-  compiler: typings.angularCore.mod.Compiler,
-  config: js.Array[js.Array[typings.angularRouter.mod.Route]],
-  opts: typings.angularRouter.mod.ExtraOptions,
-  urlHandlingStrategy: typings.angularRouter.mod.UrlHandlingStrategy,
-  routeReuseStrategy: typings.angularRouter.mod.RouteReuseStrategy
-): typings.angularRouter.mod.Router = (typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_f")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], config.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], urlHandlingStrategy.asInstanceOf[js.Any], routeReuseStrategy.asInstanceOf[js.Any])).asInstanceOf[typings.angularRouter.mod.Router]
+inline def withInMemoryScrolling(): InMemoryScrollingFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("withInMemoryScrolling")().asInstanceOf[InMemoryScrollingFeature]
+inline def withInMemoryScrolling(options: InMemoryScrollingOptions): InMemoryScrollingFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("withInMemoryScrolling")(options.asInstanceOf[js.Any]).asInstanceOf[InMemoryScrollingFeature]
 
-inline def ɵangularPackagesRouterRouterG(router: typings.angularRouter.mod.Router): typings.angularRouter.mod.ActivatedRoute = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_g")(router.asInstanceOf[js.Any]).asInstanceOf[typings.angularRouter.mod.ActivatedRoute]
+/**
+  * Allows to configure a preloading strategy to use. The strategy is configured by providing a
+  * reference to a class that implements a `PreloadingStrategy`.
+  *
+  * @usageNotes
+  *
+  * Basic example of how you can configure preloading:
+  * ```
+  * const appRoutes: Routes = [];
+  * bootstrapApplication(AppComponent,
+  *   {
+  *     providers: [
+  *       provideRouter(appRoutes, withPreloading(PreloadAllModules))
+  *     ]
+  *   }
+  * );
+  * ```
+  *
+  * @see `provideRouter`
+  *
+  * @param preloadingStrategy A reference to a class that implements a `PreloadingStrategy` that
+  *     should be used.
+  * @returns A set of providers for use with `provideRouter`.
+  *
+  * @publicApi
+  * @developerPreview
+  */
+inline def withPreloading(preloadingStrategy: Type[PreloadingStrategy]): PreloadingFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("withPreloading")(preloadingStrategy.asInstanceOf[js.Any]).asInstanceOf[PreloadingFeature]
 
-inline def ɵangularPackagesRouterRouterI(r: typings.angularRouter.mod.ɵangularPackagesRouterRouterH): js.Function0[js.Promise[js.Any]] = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_i")(r.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[js.Any]]]
+inline def withRouterConfig(options: RouterConfigOptions): RouterConfigurationFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("withRouterConfig")(options.asInstanceOf[js.Any]).asInstanceOf[RouterConfigurationFeature]
 
-inline def ɵangularPackagesRouterRouterJ(r: typings.angularRouter.mod.ɵangularPackagesRouterRouterH): js.Function1[
-/* bootstrappedComponentRef */ typings.angularCore.mod.ComponentRef[js.Any], 
-scala.Unit] = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_j")(r.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-/* bootstrappedComponentRef */ typings.angularCore.mod.ComponentRef[js.Any], 
-scala.Unit]]
+inline def ɵROUTERPROVIDERS: js.Array[Provider] = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275ROUTER_PROVIDERS").asInstanceOf[js.Array[Provider]]
 
-inline def ɵangularPackagesRouterRouterK(): js.Array[
-(org.scalablytyped.runtime.Instantiable1[
-  /* injector */ typings.angularCore.mod.Injector, 
-  typings.angularRouter.mod.ɵangularPackagesRouterRouterH
-]) | typings.angularRouter.anon.Deps | typings.angularRouter.anon.Multi | typings.angularRouter.anon.Provide] = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_router_router_k")().asInstanceOf[js.Array[
-(org.scalablytyped.runtime.Instantiable1[
-  /* injector */ typings.angularCore.mod.Injector, 
-  typings.angularRouter.mod.ɵangularPackagesRouterRouterH
-]) | typings.angularRouter.anon.Deps | typings.angularRouter.anon.Multi | typings.angularRouter.anon.Provide]]
+inline def ɵassignExtraOptionsToRouter(opts: ExtraOptions, router: Router): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275assignExtraOptionsToRouter")(opts.asInstanceOf[js.Any], router.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵassignExtraOptionsToRouter(opts: typings.angularRouter.mod.ExtraOptions, router: typings.angularRouter.mod.Router): scala.Unit = (typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275assignExtraOptionsToRouter")(opts.asInstanceOf[js.Any], router.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵflatten[T](arr: js.Array[js.Array[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275flatten")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 
-inline def ɵflatten[T](arr: js.Array[js.Array[T]]): js.Array[T] = typings.angularRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275flatten")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+/**
+  * Allows to configure a preloading strategy to use. The strategy is configured by providing a
+  * reference to a class that implements a `PreloadingStrategy`.
+  *
+  * @usageNotes
+  *
+  * Basic example of how you can configure preloading:
+  * ```
+  * const appRoutes: Routes = [];
+  * bootstrapApplication(AppComponent,
+  *   {
+  *     providers: [
+  *       provideRouter(appRoutes, withPreloading(PreloadAllModules))
+  *     ]
+  *   }
+  * );
+  * ```
+  *
+  * @see `provideRouter`
+  *
+  * @param preloadingStrategy A reference to a class that implements a `PreloadingStrategy` that
+  *     should be used.
+  * @returns A set of providers for use with `provideRouter`.
+  *
+  * @publicApi
+  * @developerPreview
+  */
+inline def ɵwithPreloading(preloadingStrategy: Type[PreloadingStrategy]): PreloadingFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275withPreloading")(preloadingStrategy.asInstanceOf[js.Any]).asInstanceOf[PreloadingFeature]
 
-type Data = org.scalablytyped.runtime.StringDictionary[js.Any]
+type CanActivateChildFn = js.Function2[
+/* childRoute */ ActivatedRouteSnapshot, 
+/* state */ RouterStateSnapshot, 
+(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<boolean | UrlTree> */ Any) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree]
 
-type DeprecatedLoadChildren = java.lang.String
+type CanActivateFn = js.Function2[
+/* route */ ActivatedRouteSnapshot, 
+/* state */ RouterStateSnapshot, 
+(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<boolean | UrlTree> */ Any) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree]
+
+type CanDeactivateFn[T] = js.Function4[
+/* component */ T, 
+/* currentRoute */ ActivatedRouteSnapshot, 
+/* currentState */ RouterStateSnapshot, 
+/* nextState */ js.UndefOr[RouterStateSnapshot], 
+(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<boolean | UrlTree> */ Any) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree]
+
+type CanLoadFn = js.Function2[
+/* route */ Route, 
+/* segments */ js.Array[UrlSegment], 
+(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<boolean | UrlTree> */ Any) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree]
+
+type CanMatchFn = js.Function2[
+/* route */ Route, 
+/* segments */ js.Array[UrlSegment], 
+(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<boolean | UrlTree> */ Any) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree]
+
+type Data = StringDictionary[Any]
+
+type DebugTracingFeature = RouterFeature[`1`]
 
 type DetachedRouteHandle = js.Object
+
+type DisabledInitialNavigationFeature = RouterFeature[`3`]
+
+type EnabledBlockingInitialNavigationFeature = RouterFeature[`2`]
 
 /**
   * Error handler that is invoked when a navigation error occurs.
@@ -171,20 +164,33 @@ type DetachedRouteHandle = js.Object
   *
   * @publicApi
   */
-type ErrorHandler = js.Function1[/* error */ js.Any, js.Any]
+type ErrorHandler = js.Function1[/* error */ Any, Any]
 
-type LoadChildren = typings.angularRouter.mod.LoadChildrenCallback | typings.angularRouter.mod.DeprecatedLoadChildren
+type InMemoryScrollingFeature = RouterFeature[`4`]
+
+type InitialNavigationFeature = EnabledBlockingInitialNavigationFeature | DisabledInitialNavigationFeature
+
+type LoadChildren = LoadChildrenCallback
 
 type LoadChildrenCallback = js.Function0[
-typings.angularCore.mod.Type[js.Any] | typings.angularCore.mod.NgModuleFactory[js.Any] | typings.rxjs.mod.Observable_[typings.angularCore.mod.Type[js.Any]] | (js.Promise[
-  typings.angularCore.mod.NgModuleFactory[js.Any] | typings.angularCore.mod.Type[js.Any] | js.Any
-])]
+Type[Any] | NgModuleFactory[Any] | Routes | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Type<any> | Routes> */ Any) | (js.Promise[NgModuleFactory[Any] | Type[Any] | Routes])]
 
-type Params = org.scalablytyped.runtime.StringDictionary[js.Any]
+type Params = StringDictionary[Any]
 
-type ResolveData = org.scalablytyped.runtime.StringDictionary[js.Any]
+type PreloadingFeature = RouterFeature[`0`]
 
-type Routes = js.Array[typings.angularRouter.mod.Route]
+type ResolveData = StringDictionary[Any | ResolveFn[Any]]
+
+type ResolveFn[T] = js.Function2[
+/* route */ ActivatedRouteSnapshot, 
+/* state */ RouterStateSnapshot, 
+(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any) | js.Promise[T] | T]
+
+type RouterConfigurationFeature = RouterFeature[`5`]
+
+type RouterFeatures = PreloadingFeature | DebugTracingFeature | InitialNavigationFeature | InMemoryScrollingFeature | RouterConfigurationFeature
+
+type Routes = js.Array[Route]
 
 /* Rewritten from type alias, can be one of: 
   - typings.angularRouter.angularRouterStrings.pathParamsChange
@@ -197,13 +203,10 @@ type Routes = js.Array[typings.angularRouter.mod.Route]
 / * to * / typings.angularRouter.mod.ActivatedRouteSnapshot, 
 scala.Boolean]
 */
-type RunGuardsAndResolvers = typings.angularRouter.mod._RunGuardsAndResolvers | (js.Function2[
-/* from */ typings.angularRouter.mod.ActivatedRouteSnapshot, 
-/* to */ typings.angularRouter.mod.ActivatedRouteSnapshot, 
-scala.Boolean])
+type RunGuardsAndResolvers = _RunGuardsAndResolvers | (js.Function2[/* from */ ActivatedRouteSnapshot, /* to */ ActivatedRouteSnapshot, Boolean])
 
 type UrlMatcher = js.Function3[
-/* segments */ js.Array[typings.angularRouter.mod.UrlSegment], 
-/* group */ typings.angularRouter.mod.UrlSegmentGroup, 
-/* route */ typings.angularRouter.mod.Route, 
-typings.angularRouter.mod.UrlMatchResult | scala.Null]
+/* segments */ js.Array[UrlSegment], 
+/* group */ UrlSegmentGroup, 
+/* route */ Route, 
+UrlMatchResult | Null]

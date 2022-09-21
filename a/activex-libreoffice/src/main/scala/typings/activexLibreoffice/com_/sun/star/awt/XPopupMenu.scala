@@ -145,7 +145,7 @@ object XPopupMenu {
     isItemChecked: Double => Boolean,
     isItemEnabled: Double => Boolean,
     isPopupMenu: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeItem: (Double, Double) => Unit,
     removeMenuListener: XMenuListener => Unit,

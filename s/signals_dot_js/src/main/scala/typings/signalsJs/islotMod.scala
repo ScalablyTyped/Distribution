@@ -19,7 +19,7 @@ object islotMod {
       * Existing <code>params</code> are appended before the listener is called.
       * @param valueObjects The array of arguments to be applied to the listener.
       */
-    def execute(valueObjects: js.Array[js.Any]): Unit
+    def execute(valueObjects: js.Array[Any]): Unit
     
     /**
       * Executes a listener without arguments.
@@ -53,7 +53,7 @@ object islotMod {
       * signal.dispatch('The Answer');
       * function handler(name:String, num:int):void{}
       */
-    var params: js.Array[js.Any]
+    var params: js.Array[Any]
     
     /**
       * The priority of this slot should be given in the execution order.
@@ -77,7 +77,7 @@ object islotMod {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      inline def setExecute(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      inline def setExecute(value: js.Array[Any] => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
       inline def setExecute0(value: () => Unit): Self = StObject.set(x, "execute0", js.Any.fromFunction0(value))
       
@@ -87,9 +87,9 @@ object islotMod {
       
       inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
-      inline def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      inline def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: Any*): Self = StObject.set(x, "params", js.Array(value*))
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       

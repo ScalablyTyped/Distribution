@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListPlaybackConfigurationsRequest extends StObject {
   
   /**
-    * Maximum number of records to return. 
+    * Maximum number of records to return.
     */
-  var MaxResults: js.UndefOr[integerMin1Max100] = js.undefined
+  var MaxResults: js.UndefOr[typings.awsSdk.mediatailorMod.MaxResults] = js.undefined
   
   /**
     * Pagination token returned by the GET list request when results exceed the maximum allowed. Use the token to fetch the next page of results.
@@ -25,7 +25,7 @@ object ListPlaybackConfigurationsRequest {
   
   extension [Self <: ListPlaybackConfigurationsRequest](x: Self) {
     
-    inline def setMaxResults(value: integerMin1Max100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     

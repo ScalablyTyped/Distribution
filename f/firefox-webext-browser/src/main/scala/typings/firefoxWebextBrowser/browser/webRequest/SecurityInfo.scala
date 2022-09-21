@@ -70,7 +70,7 @@ object SecurityInfo {
     
     inline def setCertificates(value: js.Array[CertificateInfo]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
     
-    inline def setCertificatesVarargs(value: CertificateInfo*): Self = StObject.set(x, "certificates", js.Array(value :_*))
+    inline def setCertificatesVarargs(value: CertificateInfo*): Self = StObject.set(x, "certificates", js.Array(value*))
     
     inline def setCipherSuite(value: String): Self = StObject.set(x, "cipherSuite", value.asInstanceOf[js.Any])
     
@@ -122,6 +122,6 @@ object SecurityInfo {
     
     inline def setWeaknessReasonsUndefined: Self = StObject.set(x, "weaknessReasons", js.undefined)
     
-    inline def setWeaknessReasonsVarargs(value: TransportWeaknessReasons*): Self = StObject.set(x, "weaknessReasons", js.Array(value :_*))
+    inline def setWeaknessReasonsVarargs(value: TransportWeaknessReasons*): Self = StObject.set(x, "weaknessReasons", js.Array(value*))
   }
 }

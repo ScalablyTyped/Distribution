@@ -83,7 +83,7 @@ object LinePaint {
     
     inline def `setLine-dasharrayUndefined`: Self = StObject.set(x, "line-dasharray", js.undefined)
     
-    inline def `setLine-dasharrayVarargs`(value: Double*): Self = StObject.set(x, "line-dasharray", js.Array(value :_*))
+    inline def `setLine-dasharrayVarargs`(value: Double*): Self = StObject.set(x, "line-dasharray", js.Array(value*))
     
     inline def `setLine-gap-width`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "line-gap-width", value.asInstanceOf[js.Any])
     
@@ -133,7 +133,7 @@ object LinePaint {
     
     inline def `setLine-translateUndefined`: Self = StObject.set(x, "line-translate", js.undefined)
     
-    inline def `setLine-translateVarargs`(value: Double*): Self = StObject.set(x, "line-translate", js.Array(value :_*))
+    inline def `setLine-translateVarargs`(value: Double*): Self = StObject.set(x, "line-translate", js.Array(value*))
     
     inline def `setLine-width`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ A simple split layout for React and modern browsers
 | ------------------ | :-------------: |
 | Full name          | react-splitter-layout |
 | Keywords           | react, layout, split, splitter |
-| # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 696179 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 72659.0 |
+| # stars            | 370.0 |
 
 ## Links
 - [Homepage](https://github.com/zesik/react-splitter-layout#readme)

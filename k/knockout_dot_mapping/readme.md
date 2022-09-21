@@ -10,10 +10,10 @@ Object mapping plugin for KnockoutJS
 | ------------------ | :-------------: |
 | Full name          | knockout.mapping |
 | Keywords           | knockout, mapping, plugin |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 93482 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 11530.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/knockout.mapping)

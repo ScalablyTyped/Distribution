@@ -29,6 +29,6 @@ object EncounteredLoginScreen {
     
     inline def setScreenIdsUndefined: Self = StObject.set(x, "screenIds", js.undefined)
     
-    inline def setScreenIdsVarargs(value: String*): Self = StObject.set(x, "screenIds", js.Array(value :_*))
+    inline def setScreenIdsVarargs(value: String*): Self = StObject.set(x, "screenIds", js.Array(value*))
   }
 }

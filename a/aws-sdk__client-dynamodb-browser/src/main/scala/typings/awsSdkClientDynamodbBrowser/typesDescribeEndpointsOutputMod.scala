@@ -37,7 +37,7 @@ object typesDescribeEndpointsOutputMod {
       
       inline def setEndpoints(value: js.Array[UnmarshalledEndpoint]): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
       
-      inline def setEndpointsVarargs(value: UnmarshalledEndpoint*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: UnmarshalledEndpoint*): Self = StObject.set(x, "Endpoints", js.Array(value*))
     }
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for formatjs__ecma402-abstract
 
-Typings are for version 1.5.0
+Typings are for version 1.12.0
 
 ## Library description:
 A collection of implementation for ECMAScript abstract operations
@@ -10,10 +10,10 @@ A collection of implementation for ECMAScript abstract operations
 | ------------------ | :-------------: |
 | Full name          | @formatjs/ecma402-abstract |
 | Keywords           | intl, i18n, relative, javascript, es, abstract, ecma402, ecma262, format |
-| # releases         | 21 |
-| # dependents       | 11 |
-| # downloads        | 8585173 |
-| # stars            | 0 |
+| # releases         | 48 |
+| # dependents       | 0.0 |
+| # downloads        | 8550841.666666666 |
+| # stars            | 13324.0 |
 
 ## Links
 - [Homepage](https://github.com/formatjs/formatjs)

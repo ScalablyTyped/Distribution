@@ -12,22 +12,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bindingInWhenOnSyntaxMod {
   
-  @JSImport("inversify/dts/syntax/binding_in_when_on_syntax", "BindingInWhenOnSyntax")
+  @JSImport("inversify/lib/syntax/binding_in_when_on_syntax", "BindingInWhenOnSyntax")
   @js.native
-  class BindingInWhenOnSyntax[T] protected ()
+  open class BindingInWhenOnSyntax[T] protected ()
     extends StObject
        with BindingInSyntax[T]
        with BindingWhenSyntax[T]
        with BindingOnSyntax[T] {
     def this(binding: Binding[T]) = this()
     
-    /* private */ var _binding: js.Any = js.native
+    /* private */ var _binding: Any = js.native
     
-    /* private */ var _bindingInSyntax: js.Any = js.native
+    /* private */ var _bindingInSyntax: Any = js.native
     
-    /* private */ var _bindingOnSyntax: js.Any = js.native
+    /* private */ var _bindingOnSyntax: Any = js.native
     
-    /* private */ var _bindingWhenSyntax: js.Any = js.native
+    /* private */ var _bindingWhenSyntax: Any = js.native
     
     /* CompleteClass */
     override def inRequestScope(): BindingWhenOnSyntax[T] = js.native
@@ -39,6 +39,9 @@ object bindingInWhenOnSyntaxMod {
     override def inTransientScope(): BindingWhenOnSyntax[T] = js.native
     
     /* CompleteClass */
-    override def onActivation(fn: js.Function2[/* context */ Context, T, T]): BindingWhenSyntax[T] = js.native
+    override def onActivation(fn: js.Function2[/* context */ Context, T, T | js.Promise[T]]): BindingWhenSyntax[T] = js.native
+    
+    /* CompleteClass */
+    override def onDeactivation(fn: js.Function1[T, Unit | js.Promise[Unit]]): BindingWhenSyntax[T] = js.native
   }
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new MetadataService object with a given set of options.
   */
-class MetadataService ()
+open class MetadataService ()
   extends typings.awsSdk.coreMod.MetadataService {
   def this(options: MetadataServiceOptions) = this()
 }

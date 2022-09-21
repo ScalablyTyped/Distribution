@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark", "Models.TemplateValidationOptions")
 @js.native
-class TemplateValidationOptions protected ()
+open class TemplateValidationOptions protected ()
   extends typings.postmark.modelsMod.TemplateValidationOptions {
   def this(
     Subject: js.UndefOr[String],

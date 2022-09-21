@@ -16,7 +16,7 @@ object imageWMSMod {
   
   @JSImport("ol/source/ImageWMS", JSImport.Default)
   @js.native
-  class default () extends ImageWMS {
+  open class default () extends ImageWMS {
     def this(opt_options: Options) = this()
   }
   
@@ -29,7 +29,7 @@ object imageWMSMod {
       * projection. Return undefined if the GetFeatureInfo URL cannot be
       * constructed.
       */
-    def getFeatureInfoUrl(coordinate: Coordinate, resolution: Double, projection: ProjectionLike, params: js.Any): js.UndefOr[String] = js.native
+    def getFeatureInfoUrl(coordinate: Coordinate, resolution: Double, projection: ProjectionLike, params: Any): js.UndefOr[String] = js.native
     
     /**
       * Return the image load function of the source.
@@ -43,14 +43,14 @@ object imageWMSMod {
       */
     def getLegendUrl(): js.UndefOr[String] = js.native
     def getLegendUrl(resolution: Double): js.UndefOr[String] = js.native
-    def getLegendUrl(resolution: Double, params: js.Any): js.UndefOr[String] = js.native
-    def getLegendUrl(resolution: Unit, params: js.Any): js.UndefOr[String] = js.native
+    def getLegendUrl(resolution: Double, params: Any): js.UndefOr[String] = js.native
+    def getLegendUrl(resolution: Unit, params: Any): js.UndefOr[String] = js.native
     
     /**
       * Get the user-provided params, i.e. those passed to the constructor through
       * the "params" option, and possibly updated using the updateParams method.
       */
-    def getParams(): js.Any = js.native
+    def getParams(): Any = js.native
     
     /**
       * Return the URL used for this WMS source.
@@ -71,14 +71,14 @@ object imageWMSMod {
     /**
       * Update the user-provided params.
       */
-    def updateParams(params: js.Any): Unit = js.native
+    def updateParams(params: Any): Unit = js.native
   }
   
   trait Options extends StObject {
     
     var attributions: js.UndefOr[AttributionLike] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[Null | String] = js.undefined
     
     var hidpi: js.UndefOr[Boolean] = js.undefined
     
@@ -86,7 +86,7 @@ object imageWMSMod {
     
     var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
-    var params: StringDictionary[js.Any]
+    var params: StringDictionary[Any]
     
     var projection: js.UndefOr[ProjectionLike] = js.undefined
     
@@ -100,7 +100,7 @@ object imageWMSMod {
   }
   object Options {
     
-    inline def apply(params: StringDictionary[js.Any], url: String): Options = {
+    inline def apply(params: StringDictionary[Any], url: String): Options = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
@@ -113,9 +113,11 @@ object imageWMSMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -131,7 +133,7 @@ object imageWMSMod {
       
       inline def setImageSmoothingUndefined: Self = StObject.set(x, "imageSmoothing", js.undefined)
       
-      inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,7 @@ object imageWMSMod {
       
       inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
       
-      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value*))
       
       inline def setServerType(value: WMSServerType | String): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
       

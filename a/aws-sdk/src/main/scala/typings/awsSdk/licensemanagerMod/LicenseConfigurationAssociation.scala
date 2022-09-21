@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LicenseConfigurationAssociation extends StObject {
   
   /**
+    * Scope of AMI associations. The possible value is cross-account.
+    */
+  var AmiAssociationScope: js.UndefOr[String] = js.undefined
+  
+  /**
     * Time when the license configuration was associated with the resource.
     */
-  var AssociationTime: js.UndefOr[DateTime] = js.undefined
+  var AssociationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the resource.
@@ -17,7 +22,7 @@ trait LicenseConfigurationAssociation extends StObject {
   var ResourceArn: js.UndefOr[String] = js.undefined
   
   /**
-    * ID of the AWS account that owns the resource consuming licenses.
+    * ID of the Amazon Web Services account that owns the resource consuming licenses.
     */
   var ResourceOwnerId: js.UndefOr[String] = js.undefined
   
@@ -35,7 +40,11 @@ object LicenseConfigurationAssociation {
   
   extension [Self <: LicenseConfigurationAssociation](x: Self) {
     
-    inline def setAssociationTime(value: DateTime): Self = StObject.set(x, "AssociationTime", value.asInstanceOf[js.Any])
+    inline def setAmiAssociationScope(value: String): Self = StObject.set(x, "AmiAssociationScope", value.asInstanceOf[js.Any])
+    
+    inline def setAmiAssociationScopeUndefined: Self = StObject.set(x, "AmiAssociationScope", js.undefined)
+    
+    inline def setAssociationTime(value: js.Date): Self = StObject.set(x, "AssociationTime", value.asInstanceOf[js.Any])
     
     inline def setAssociationTimeUndefined: Self = StObject.set(x, "AssociationTime", js.undefined)
     

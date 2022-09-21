@@ -6,14 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("chrome.cast.SessionRequest")
 @js.native
-class SessionRequest protected ()
+open class SessionRequest protected ()
   extends StObject
      with typings.chrome.chrome.cast.SessionRequest {
   /**
-    * @param {string} appId
-    * @param {!Array<chrome.cast.Capability>=} opt_capabilities
-    * @param {number=} opt_timeout
-    * @constructor
+    * @param appId
+    * @param opt_capabilities
+    * @param opt_timeout
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.SessionRequest
     */
   def this(appId: String) = this()

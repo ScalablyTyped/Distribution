@@ -1,7 +1,7 @@
 
 # Scala.js typings for https-proxy-agent
 
-Typings are for version 5.0.0
+Typings are for version 5.0.1
 
 ## Library description:
 An HTTP(s) proxy `http.Agent` implementation for HTTPS
@@ -10,10 +10,10 @@ An HTTP(s) proxy `http.Agent` implementation for HTTPS
 | ------------------ | :-------------: |
 | Full name          | https-proxy-agent |
 | Keywords           | https, proxy, endpoint, agent |
-| # releases         | 8 |
-| # dependents       | 951 |
-| # downloads        | 674776192 |
-| # stars            | 9 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2785771766666667E8 |
+| # stars            | 494.0 |
 
 ## Links
 - [Homepage](https://github.com/TooTallNate/node-https-proxy-agent#readme)

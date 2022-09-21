@@ -19,12 +19,12 @@ trait GenerateAccessLogsRequest extends StObject {
   /**
     *  The time at which the logs should end. The time range specified is inclusive of the end time. 
     */
-  var endTime: js.UndefOr[EndTime] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The time at which the logs should start. The time range specified is inclusive of the start time. 
     */
-  var startTime: js.UndefOr[StartTime] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
 }
 object GenerateAccessLogsRequest {
   
@@ -39,11 +39,11 @@ object GenerateAccessLogsRequest {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    inline def setEndTime(value: EndTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    inline def setStartTime(value: StartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }

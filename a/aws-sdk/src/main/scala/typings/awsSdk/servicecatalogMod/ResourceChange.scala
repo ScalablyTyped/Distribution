@@ -58,7 +58,7 @@ object ResourceChange {
     
     inline def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
-    inline def setDetailsVarargs(value: ResourceChangeDetail*): Self = StObject.set(x, "Details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: ResourceChangeDetail*): Self = StObject.set(x, "Details", js.Array(value*))
     
     inline def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
     
@@ -80,6 +80,6 @@ object ResourceChange {
     
     inline def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
     
-    inline def setScopeVarargs(value: ResourceAttribute*): Self = StObject.set(x, "Scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: ResourceAttribute*): Self = StObject.set(x, "Scope", js.Array(value*))
   }
 }

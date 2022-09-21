@@ -11,13 +11,12 @@ object operationContainerNativeMod {
   
   @JSImport("antd-mobile-rn/lib/modal/OperationContainer.native", JSImport.Default)
   @js.native
-  class default protected () extends OperationContainer {
+  open class default protected () extends OperationContainer {
     def this(props: OperationContainerProps) = this()
   }
   
   @js.native
-  trait OperationContainer
-    extends Component[OperationContainerProps, js.Any, js.Any] {
+  trait OperationContainer extends Component[OperationContainerProps, Any, Any] {
     
     def onClose(): Unit = js.native
   }
@@ -39,7 +38,7 @@ object operationContainerNativeMod {
       
       inline def setActions(value: js.Array[Action[TextStyle]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: Action[TextStyle]*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Action[TextStyle]*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setOnAnimationEnd(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
       

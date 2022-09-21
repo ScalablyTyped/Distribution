@@ -1,6 +1,5 @@
 package typings.opentelemetryApi
 
-import typings.opentelemetryApi.traceFlagsMod.TraceFlags
 import typings.opentelemetryApi.traceStateMod.TraceState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,9 +29,9 @@ object spanContextMod {
       * caller may have recorded trace data. A caller who does not record trace
       * data out-of-band leaves this flag unset.
       *
-      * SAMPLED = 0x1 and NONE = 0x0;
+      * see {@link TraceFlags} for valid flag values.
       */
-    var traceFlags: TraceFlags
+    var traceFlags: Double
     
     /**
       * The ID of the trace that this span belongs to. It is worldwide unique
@@ -62,7 +61,7 @@ object spanContextMod {
   }
   object SpanContext {
     
-    inline def apply(spanId: String, traceFlags: TraceFlags, traceId: String): SpanContext = {
+    inline def apply(spanId: String, traceFlags: Double, traceId: String): SpanContext = {
       val __obj = js.Dynamic.literal(spanId = spanId.asInstanceOf[js.Any], traceFlags = traceFlags.asInstanceOf[js.Any], traceId = traceId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpanContext]
     }
@@ -75,7 +74,7 @@ object spanContextMod {
       
       inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
       
-      inline def setTraceFlags(value: TraceFlags): Self = StObject.set(x, "traceFlags", value.asInstanceOf[js.Any])
+      inline def setTraceFlags(value: Double): Self = StObject.set(x, "traceFlags", value.asInstanceOf[js.Any])
       
       inline def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
       

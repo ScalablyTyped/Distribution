@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Describes the `InjectorDef` equivalent of a `ModuleWithProviders`, an `InjectorDefType` with an
+  * Describes the `InjectorDef` equivalent of a `ModuleWithProviders`, an `InjectorType` with an
   * associated array of providers.
   *
   * Objects of this type can be listed in the imports section of an `InjectorDef`.
@@ -18,7 +18,7 @@ trait InjectorTypeWithProviders[T] extends StObject {
   
   var providers: js.UndefOr[
     js.Array[
-      Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any]
+      Type[Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[Any]
     ]
   ] = js.undefined
 }
@@ -35,14 +35,14 @@ object InjectorTypeWithProviders {
     
     inline def setProviders(
       value: js.Array[
-          Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any]
+          Type[Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[Any]
         ]
     ): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
     inline def setProvidersVarargs(
-      value: (Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any])*
-    ): Self = StObject.set(x, "providers", js.Array(value :_*))
+      value: (Type[Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[Any])*
+    ): Self = StObject.set(x, "providers", js.Array(value*))
   }
 }

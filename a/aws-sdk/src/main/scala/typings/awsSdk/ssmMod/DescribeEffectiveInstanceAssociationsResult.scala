@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeEffectiveInstanceAssociationsResult extends StObject {
   
   /**
-    * The associations for the requested instance.
+    * The associations for the requested managed node.
     */
   var Associations: js.UndefOr[InstanceAssociationList] = js.undefined
   
@@ -29,7 +29,7 @@ object DescribeEffectiveInstanceAssociationsResult {
     
     inline def setAssociationsUndefined: Self = StObject.set(x, "Associations", js.undefined)
     
-    inline def setAssociationsVarargs(value: InstanceAssociation*): Self = StObject.set(x, "Associations", js.Array(value :_*))
+    inline def setAssociationsVarargs(value: InstanceAssociation*): Self = StObject.set(x, "Associations", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

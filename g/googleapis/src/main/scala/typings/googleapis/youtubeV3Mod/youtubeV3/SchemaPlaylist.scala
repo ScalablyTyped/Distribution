@@ -5,23 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A playlist resource represents a YouTube playlist. A playlist is a
-  * collection of videos that can be viewed sequentially and shared with other
-  * users. A playlist can contain up to 200 videos, and YouTube does not limit
-  * the number of playlists that each user creates. By default, playlists are
-  * publicly visible to other users, but playlists can be public or private.
-  * YouTube also uses playlists to identify special collections of videos for a
-  * channel, such as:   - uploaded videos  - favorite videos  - positively
-  * rated (liked) videos  - watch history  - watch later  To be more specific,
-  * these lists are associated with a channel, which is a collection of a
-  * person, group, or company&#39;s videos, playlists, and other YouTube
-  * information. You can retrieve the playlist IDs for each of these lists from
-  * the  channel resource for a given channel.  You can then use the
-  * playlistItems.list method to retrieve any of those lists. You can also add
-  * or remove items from those lists by calling the   playlistItems.insert and
-  * playlistItems.delete methods.
-  */
 trait SchemaPlaylist extends StObject {
   
   /**
@@ -32,33 +15,30 @@ trait SchemaPlaylist extends StObject {
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the playlist.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;youtube#playlist&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "youtube#playlist".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Localizations for different languages
     */
-  var localizations: js.UndefOr[StringDictionary[SchemaPlaylistLocalization]] = js.undefined
+  var localizations: js.UndefOr[StringDictionary[SchemaPlaylistLocalization] | Null] = js.undefined
   
   /**
-    * The player object contains information that you would use to play the
-    * playlist in an embedded player.
+    * The player object contains information that you would use to play the playlist in an embedded player.
     */
   var player: js.UndefOr[SchemaPlaylistPlayer] = js.undefined
   
   /**
-    * The snippet object contains basic details about the playlist, such as its
-    * title and description.
+    * The snippet object contains basic details about the playlist, such as its title and description.
     */
   var snippet: js.UndefOr[SchemaPlaylistSnippet] = js.undefined
   
@@ -82,17 +62,25 @@ object SchemaPlaylist {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setLocalizations(value: StringDictionary[SchemaPlaylistLocalization]): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
+    
+    inline def setLocalizationsNull: Self = StObject.set(x, "localizations", null)
     
     inline def setLocalizationsUndefined: Self = StObject.set(x, "localizations", js.undefined)
     

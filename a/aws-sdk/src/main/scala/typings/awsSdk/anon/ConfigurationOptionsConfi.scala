@@ -16,6 +16,8 @@ import typings.awsSdk.configServicePlaceholdersMod.ConfigurationServiceApiVersio
 import typings.awsSdk.credentialProviderChainMod.CredentialProviderChain
 import typings.awsSdk.credentialsMod.Credentials
 import typings.awsSdk.credentialsMod.CredentialsOptions
+import typings.awsSdk.tokenMod.Token
+import typings.awsSdk.tokenProviderChainMod.TokenProviderChain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined aws-sdk.aws-sdk/lib/config-base.ConfigurationOptions & aws-sdk.aws-sdk/lib/config_service_placeholders.ConfigurationServicePlaceholders & aws-sdk.aws-sdk/lib/config.APIVersions & {[key: string] : any} */
 trait ConfigurationOptionsConfi
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   /**
     * AWS access key ID.
@@ -34,13 +36,21 @@ trait ConfigurationOptionsConfi
   
   var accessanalyzer: js.UndefOr[ClientConfiguration] = js.undefined
   
+  var account: js.UndefOr[typings.awsSdk.accountMod.ClientConfiguration] = js.undefined
+  
   var acm: js.UndefOr[typings.awsSdk.acmMod.ClientConfiguration] = js.undefined
   
   var acmpca: js.UndefOr[typings.awsSdk.acmpcaMod.ClientConfiguration] = js.undefined
   
   var alexaforbusiness: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientConfiguration] = js.undefined
   
+  var amp: js.UndefOr[typings.awsSdk.ampMod.ClientConfiguration] = js.undefined
+  
   var amplify: js.UndefOr[typings.awsSdk.amplifyMod.ClientConfiguration] = js.undefined
+  
+  var amplifybackend: js.UndefOr[typings.awsSdk.amplifybackendMod.ClientConfiguration] = js.undefined
+  
+  var amplifyuibuilder: js.UndefOr[typings.awsSdk.amplifyuibuilderMod.ClientConfiguration] = js.undefined
   
   /**
     * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in all services (unless overridden by apiVersions). Specify \'latest\' to use the latest possible version.
@@ -60,19 +70,29 @@ trait ConfigurationOptionsConfi
   
   var appconfig: js.UndefOr[typings.awsSdk.appconfigMod.ClientConfiguration] = js.undefined
   
+  var appconfigdata: js.UndefOr[typings.awsSdk.appconfigdataMod.ClientConfiguration] = js.undefined
+  
   var appflow: js.UndefOr[typings.awsSdk.appflowMod.ClientConfiguration] = js.undefined
   
+  var appintegrations: js.UndefOr[typings.awsSdk.appintegrationsMod.ClientConfiguration] = js.undefined
+  
   var applicationautoscaling: js.UndefOr[typings.awsSdk.applicationautoscalingMod.ClientConfiguration] = js.undefined
+  
+  var applicationcostprofiler: js.UndefOr[typings.awsSdk.applicationcostprofilerMod.ClientConfiguration] = js.undefined
   
   var applicationinsights: js.UndefOr[typings.awsSdk.applicationinsightsMod.ClientConfiguration] = js.undefined
   
   var appmesh: js.UndefOr[typings.awsSdk.appmeshMod.ClientConfiguration] = js.undefined
+  
+  var apprunner: js.UndefOr[typings.awsSdk.apprunnerMod.ClientConfiguration] = js.undefined
   
   var appstream: js.UndefOr[typings.awsSdk.appstreamMod.ClientConfiguration] = js.undefined
   
   var appsync: js.UndefOr[typings.awsSdk.appsyncMod.ClientConfiguration] = js.undefined
   
   var athena: js.UndefOr[typings.awsSdk.athenaMod.ClientConfiguration] = js.undefined
+  
+  var auditmanager: js.UndefOr[typings.awsSdk.auditmanagerMod.ClientConfiguration] = js.undefined
   
   var augmentedairuntime: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.ClientConfiguration] = js.undefined
   
@@ -82,7 +102,13 @@ trait ConfigurationOptionsConfi
   
   var backup: js.UndefOr[typings.awsSdk.backupMod.ClientConfiguration] = js.undefined
   
+  var backupgateway: js.UndefOr[typings.awsSdk.backupgatewayMod.ClientConfiguration] = js.undefined
+  
+  var backupstorage: js.UndefOr[typings.awsSdk.backupstorageMod.ClientConfiguration] = js.undefined
+  
   var batch: js.UndefOr[typings.awsSdk.batchMod.ClientConfiguration] = js.undefined
+  
+  var billingconductor: js.UndefOr[typings.awsSdk.billingconductorMod.ClientConfiguration] = js.undefined
   
   var braket: js.UndefOr[typings.awsSdk.braketMod.ClientConfiguration] = js.undefined
   
@@ -90,7 +116,17 @@ trait ConfigurationOptionsConfi
   
   var chime: js.UndefOr[typings.awsSdk.chimeMod.ClientConfiguration] = js.undefined
   
+  var chimesdkidentity: js.UndefOr[typings.awsSdk.chimesdkidentityMod.ClientConfiguration] = js.undefined
+  
+  var chimesdkmediapipelines: js.UndefOr[typings.awsSdk.chimesdkmediapipelinesMod.ClientConfiguration] = js.undefined
+  
+  var chimesdkmeetings: js.UndefOr[typings.awsSdk.chimesdkmeetingsMod.ClientConfiguration] = js.undefined
+  
+  var chimesdkmessaging: js.UndefOr[typings.awsSdk.chimesdkmessagingMod.ClientConfiguration] = js.undefined
+  
   var cloud9: js.UndefOr[typings.awsSdk.cloud9Mod.ClientConfiguration] = js.undefined
+  
+  var cloudcontrol: js.UndefOr[typings.awsSdk.cloudcontrolMod.ClientConfiguration] = js.undefined
   
   var clouddirectory: js.UndefOr[typings.awsSdk.clouddirectoryMod.ClientConfiguration] = js.undefined
   
@@ -156,7 +192,13 @@ trait ConfigurationOptionsConfi
   
   var connect: js.UndefOr[typings.awsSdk.connectMod.ClientConfiguration] = js.undefined
   
+  var connectcampaigns: js.UndefOr[typings.awsSdk.connectcampaignsMod.ClientConfiguration] = js.undefined
+  
+  var connectcontactlens: js.UndefOr[typings.awsSdk.connectcontactlensMod.ClientConfiguration] = js.undefined
+  
   var connectparticipant: js.UndefOr[typings.awsSdk.connectparticipantMod.ClientConfiguration] = js.undefined
+  
+  var controltower: js.UndefOr[typings.awsSdk.controltowerMod.ClientConfiguration] = js.undefined
   
   /**
     * Whether types are converted when parsing response data.
@@ -189,6 +231,8 @@ trait ConfigurationOptionsConfi
     */
   var customUserAgent: js.UndefOr[String] = js.undefined
   
+  var customerprofiles: js.UndefOr[typings.awsSdk.customerprofilesMod.ClientConfiguration] = js.undefined
+  
   var databrew: js.UndefOr[typings.awsSdk.databrewMod.ClientConfiguration] = js.undefined
   
   var dataexchange: js.UndefOr[typings.awsSdk.dataexchangeMod.ClientConfiguration] = js.undefined
@@ -203,6 +247,8 @@ trait ConfigurationOptionsConfi
   
   var devicefarm: js.UndefOr[typings.awsSdk.devicefarmMod.ClientConfiguration] = js.undefined
   
+  var devopsguru: js.UndefOr[typings.awsSdk.devopsguruMod.ClientConfiguration] = js.undefined
+  
   var directconnect: js.UndefOr[typings.awsSdk.directconnectMod.ClientConfiguration] = js.undefined
   
   var directoryservice: js.UndefOr[typings.awsSdk.directoryserviceMod.ClientConfiguration] = js.undefined
@@ -214,6 +260,8 @@ trait ConfigurationOptionsConfi
   var dms: js.UndefOr[typings.awsSdk.dmsMod.ClientConfiguration] = js.undefined
   
   var docdb: js.UndefOr[typings.awsSdk.docdbMod.ClientConfiguration] = js.undefined
+  
+  var drs: js.UndefOr[typings.awsSdk.drsMod.ClientConfiguration] = js.undefined
   
   /**
     * Whether to validate the CRC32 checksum of HTTP response bodies returned
@@ -232,6 +280,8 @@ trait ConfigurationOptionsConfi
   var ec2instanceconnect: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.ClientConfiguration] = js.undefined
   
   var ecr: js.UndefOr[typings.awsSdk.ecrMod.ClientConfiguration] = js.undefined
+  
+  var ecrpublic: js.UndefOr[typings.awsSdk.ecrpublicMod.ClientConfiguration] = js.undefined
   
   var ecs: js.UndefOr[typings.awsSdk.ecsMod.ClientConfiguration] = js.undefined
   
@@ -253,6 +303,10 @@ trait ConfigurationOptionsConfi
   
   var emr: js.UndefOr[typings.awsSdk.emrMod.ClientConfiguration] = js.undefined
   
+  var emrcontainers: js.UndefOr[typings.awsSdk.emrcontainersMod.ClientConfiguration] = js.undefined
+  
+  var emrserverless: js.UndefOr[typings.awsSdk.emrserverlessMod.ClientConfiguration] = js.undefined
+  
   /**
     * The size of the global cache storing endpoints from endpoint
     * discovery operations. Once endpoint cache is created, updating this setting
@@ -270,7 +324,15 @@ trait ConfigurationOptionsConfi
   
   var eventbridge: js.UndefOr[typings.awsSdk.eventbridgeMod.ClientConfiguration] = js.undefined
   
+  var evidently: js.UndefOr[typings.awsSdk.evidentlyMod.ClientConfiguration] = js.undefined
+  
+  var finspace: js.UndefOr[typings.awsSdk.finspaceMod.ClientConfiguration] = js.undefined
+  
+  var finspacedata: js.UndefOr[typings.awsSdk.finspacedataMod.ClientConfiguration] = js.undefined
+  
   var firehose: js.UndefOr[typings.awsSdk.firehoseMod.ClientConfiguration] = js.undefined
+  
+  var fis: js.UndefOr[typings.awsSdk.fisMod.ClientConfiguration] = js.undefined
   
   var fms: js.UndefOr[typings.awsSdk.fmsMod.ClientConfiguration] = js.undefined
   
@@ -284,19 +346,27 @@ trait ConfigurationOptionsConfi
   
   var gamelift: js.UndefOr[typings.awsSdk.gameliftMod.ClientConfiguration] = js.undefined
   
+  var gamesparks: js.UndefOr[typings.awsSdk.gamesparksMod.ClientConfiguration] = js.undefined
+  
   var glacier: js.UndefOr[typings.awsSdk.glacierMod.ClientConfiguration] = js.undefined
   
   var globalaccelerator: js.UndefOr[typings.awsSdk.globalacceleratorMod.ClientConfiguration] = js.undefined
   
   var glue: js.UndefOr[typings.awsSdk.glueMod.ClientConfiguration] = js.undefined
   
+  var grafana: js.UndefOr[typings.awsSdk.grafanaMod.ClientConfiguration] = js.undefined
+  
   var greengrass: js.UndefOr[typings.awsSdk.greengrassMod.ClientConfiguration] = js.undefined
+  
+  var greengrassv2: js.UndefOr[typings.awsSdk.greengrassv2Mod.ClientConfiguration] = js.undefined
   
   var groundstation: js.UndefOr[typings.awsSdk.groundstationMod.ClientConfiguration] = js.undefined
   
   var guardduty: js.UndefOr[typings.awsSdk.guarddutyMod.ClientConfiguration] = js.undefined
   
   var health: js.UndefOr[typings.awsSdk.healthMod.ClientConfiguration] = js.undefined
+  
+  var healthlake: js.UndefOr[typings.awsSdk.healthlakeMod.ClientConfiguration] = js.undefined
   
   var honeycode: js.UndefOr[typings.awsSdk.honeycodeMod.ClientConfiguration] = js.undefined
   
@@ -320,6 +390,8 @@ trait ConfigurationOptionsConfi
   
   var inspector: js.UndefOr[typings.awsSdk.inspectorMod.ClientConfiguration] = js.undefined
   
+  var inspector2: js.UndefOr[typings.awsSdk.inspector2Mod.ClientConfiguration] = js.undefined
+  
   var iot: js.UndefOr[typings.awsSdk.iotMod.ClientConfiguration] = js.undefined
   
   var iot1clickdevicesservice: js.UndefOr[typings.awsSdk.iot1clickdevicesserviceMod.ClientConfiguration] = js.undefined
@@ -330,9 +402,13 @@ trait ConfigurationOptionsConfi
   
   var iotdata: js.UndefOr[typings.awsSdk.iotdataMod.ClientConfiguration] = js.undefined
   
+  var iotdeviceadvisor: js.UndefOr[typings.awsSdk.iotdeviceadvisorMod.ClientConfiguration] = js.undefined
+  
   var iotevents: js.UndefOr[typings.awsSdk.ioteventsMod.ClientConfiguration] = js.undefined
   
   var ioteventsdata: js.UndefOr[typings.awsSdk.ioteventsdataMod.ClientConfiguration] = js.undefined
+  
+  var iotfleethub: js.UndefOr[typings.awsSdk.iotfleethubMod.ClientConfiguration] = js.undefined
   
   var iotjobsdataplane: js.UndefOr[typings.awsSdk.iotjobsdataplaneMod.ClientConfiguration] = js.undefined
   
@@ -342,11 +418,21 @@ trait ConfigurationOptionsConfi
   
   var iotthingsgraph: js.UndefOr[typings.awsSdk.iotthingsgraphMod.ClientConfiguration] = js.undefined
   
+  var iottwinmaker: js.UndefOr[typings.awsSdk.iottwinmakerMod.ClientConfiguration] = js.undefined
+  
+  var iotwireless: js.UndefOr[typings.awsSdk.iotwirelessMod.ClientConfiguration] = js.undefined
+  
   var ivs: js.UndefOr[typings.awsSdk.ivsMod.ClientConfiguration] = js.undefined
+  
+  var ivschat: js.UndefOr[typings.awsSdk.ivschatMod.ClientConfiguration] = js.undefined
   
   var kafka: js.UndefOr[typings.awsSdk.kafkaMod.ClientConfiguration] = js.undefined
   
+  var kafkaconnect: js.UndefOr[typings.awsSdk.kafkaconnectMod.ClientConfiguration] = js.undefined
+  
   var kendra: js.UndefOr[typings.awsSdk.kendraMod.ClientConfiguration] = js.undefined
+  
+  var keyspaces: js.UndefOr[typings.awsSdk.keyspacesMod.ClientConfiguration] = js.undefined
   
   var kinesis: js.UndefOr[typings.awsSdk.kinesisMod.ClientConfiguration] = js.undefined
   
@@ -370,16 +456,32 @@ trait ConfigurationOptionsConfi
   
   var lexmodelbuildingservice: js.UndefOr[typings.awsSdk.lexmodelbuildingserviceMod.ClientConfiguration] = js.undefined
   
+  var lexmodelsv2: js.UndefOr[typings.awsSdk.lexmodelsv2Mod.ClientConfiguration] = js.undefined
+  
   var lexruntime: js.UndefOr[typings.awsSdk.lexruntimeMod.ClientConfiguration] = js.undefined
+  
+  var lexruntimev2: js.UndefOr[typings.awsSdk.lexruntimev2Mod.ClientConfiguration] = js.undefined
   
   var licensemanager: js.UndefOr[typings.awsSdk.licensemanagerMod.ClientConfiguration] = js.undefined
   
+  var licensemanagerusersubscriptions: js.UndefOr[typings.awsSdk.licensemanagerusersubscriptionsMod.ClientConfiguration] = js.undefined
+  
   var lightsail: js.UndefOr[typings.awsSdk.lightsailMod.ClientConfiguration] = js.undefined
+  
+  var location: js.UndefOr[typings.awsSdk.locationMod.ClientConfiguration] = js.undefined
   
   /**
     * An object that responds to .write() (like a stream) or .log() (like the console object) in order to log information about requests.
     */
   var logger: js.UndefOr[Logger] = js.undefined
+  
+  var lookoutequipment: js.UndefOr[typings.awsSdk.lookoutequipmentMod.ClientConfiguration] = js.undefined
+  
+  var lookoutmetrics: js.UndefOr[typings.awsSdk.lookoutmetricsMod.ClientConfiguration] = js.undefined
+  
+  var lookoutvision: js.UndefOr[typings.awsSdk.lookoutvisionMod.ClientConfiguration] = js.undefined
+  
+  var m2: js.UndefOr[typings.awsSdk.m2Mod.ClientConfiguration] = js.undefined
   
   var machinelearning: js.UndefOr[typings.awsSdk.machinelearningMod.ClientConfiguration] = js.undefined
   
@@ -423,9 +525,17 @@ trait ConfigurationOptionsConfi
   
   var mediatailor: js.UndefOr[typings.awsSdk.mediatailorMod.ClientConfiguration] = js.undefined
   
+  var memorydb: js.UndefOr[typings.awsSdk.memorydbMod.ClientConfiguration] = js.undefined
+  
+  var mgn: js.UndefOr[typings.awsSdk.mgnMod.ClientConfiguration] = js.undefined
+  
   var migrationhub: js.UndefOr[typings.awsSdk.migrationhubMod.ClientConfiguration] = js.undefined
   
   var migrationhubconfig: js.UndefOr[typings.awsSdk.migrationhubconfigMod.ClientConfiguration] = js.undefined
+  
+  var migrationhubrefactorspaces: js.UndefOr[typings.awsSdk.migrationhubrefactorspacesMod.ClientConfiguration] = js.undefined
+  
+  var migrationhubstrategy: js.UndefOr[typings.awsSdk.migrationhubstrategyMod.ClientConfiguration] = js.undefined
   
   var mobile: js.UndefOr[typings.awsSdk.mobileMod.ClientConfiguration] = js.undefined
   
@@ -435,11 +545,17 @@ trait ConfigurationOptionsConfi
   
   var mturk: js.UndefOr[typings.awsSdk.mturkMod.ClientConfiguration] = js.undefined
   
+  var mwaa: js.UndefOr[typings.awsSdk.mwaaMod.ClientConfiguration] = js.undefined
+  
   var neptune: js.UndefOr[typings.awsSdk.neptuneMod.ClientConfiguration] = js.undefined
   
   var networkfirewall: js.UndefOr[typings.awsSdk.networkfirewallMod.ClientConfiguration] = js.undefined
   
   var networkmanager: js.UndefOr[typings.awsSdk.networkmanagerMod.ClientConfiguration] = js.undefined
+  
+  var nimble: js.UndefOr[typings.awsSdk.nimbleMod.ClientConfiguration] = js.undefined
+  
+  var opensearch: js.UndefOr[typings.awsSdk.opensearchMod.ClientConfiguration] = js.undefined
   
   var opsworks: js.UndefOr[typings.awsSdk.opsworksMod.ClientConfiguration] = js.undefined
   
@@ -448,6 +564,8 @@ trait ConfigurationOptionsConfi
   var organizations: js.UndefOr[typings.awsSdk.organizationsMod.ClientConfiguration] = js.undefined
   
   var outposts: js.UndefOr[typings.awsSdk.outpostsMod.ClientConfiguration] = js.undefined
+  
+  var panorama: js.UndefOr[typings.awsSdk.panoramaMod.ClientConfiguration] = js.undefined
   
   /**
     * Returns whether input parameters should be validated against the operation description before sending the request.
@@ -470,9 +588,15 @@ trait ConfigurationOptionsConfi
   
   var pinpointsmsvoice: js.UndefOr[typings.awsSdk.pinpointsmsvoiceMod.ClientConfiguration] = js.undefined
   
+  var pinpointsmsvoicev2: js.UndefOr[typings.awsSdk.pinpointsmsvoicev2Mod.ClientConfiguration] = js.undefined
+  
   var polly: js.UndefOr[typings.awsSdk.pollyMod.ClientConfiguration] = js.undefined
   
   var pricing: js.UndefOr[typings.awsSdk.pricingMod.ClientConfiguration] = js.undefined
+  
+  var privatenetworks: js.UndefOr[typings.awsSdk.privatenetworksMod.ClientConfiguration] = js.undefined
+  
+  var proton: js.UndefOr[typings.awsSdk.protonMod.ClientConfiguration] = js.undefined
   
   var qldb: js.UndefOr[typings.awsSdk.qldbMod.ClientConfiguration] = js.undefined
   
@@ -482,6 +606,8 @@ trait ConfigurationOptionsConfi
   
   var ram: js.UndefOr[typings.awsSdk.ramMod.ClientConfiguration] = js.undefined
   
+  var rbin: js.UndefOr[typings.awsSdk.rbinMod.ClientConfiguration] = js.undefined
+  
   var rds: js.UndefOr[typings.awsSdk.rdsMod.ClientConfiguration] = js.undefined
   
   var rdsdataservice: js.UndefOr[typings.awsSdk.rdsdataserviceMod.ClientConfiguration] = js.undefined
@@ -490,12 +616,16 @@ trait ConfigurationOptionsConfi
   
   var redshiftdata: js.UndefOr[typings.awsSdk.redshiftdataMod.ClientConfiguration] = js.undefined
   
+  var redshiftserverless: js.UndefOr[typings.awsSdk.redshiftserverlessMod.ClientConfiguration] = js.undefined
+  
   /**
     * The region to send service requests to.
     */
   var region: js.UndefOr[String] = js.undefined
   
   var rekognition: js.UndefOr[typings.awsSdk.rekognitionMod.ClientConfiguration] = js.undefined
+  
+  var resiliencehub: js.UndefOr[typings.awsSdk.resiliencehubMod.ClientConfiguration] = js.undefined
   
   var resourcegroups: js.UndefOr[typings.awsSdk.resourcegroupsMod.ClientConfiguration] = js.undefined
   
@@ -508,11 +638,21 @@ trait ConfigurationOptionsConfi
   
   var robomaker: js.UndefOr[typings.awsSdk.robomakerMod.ClientConfiguration] = js.undefined
   
+  var rolesanywhere: js.UndefOr[typings.awsSdk.rolesanywhereMod.ClientConfiguration] = js.undefined
+  
   var route53: js.UndefOr[typings.awsSdk.route53Mod.ClientConfiguration] = js.undefined
   
   var route53domains: js.UndefOr[typings.awsSdk.route53domainsMod.ClientConfiguration] = js.undefined
   
+  var route53recoverycluster: js.UndefOr[typings.awsSdk.route53recoveryclusterMod.ClientConfiguration] = js.undefined
+  
+  var route53recoverycontrolconfig: js.UndefOr[typings.awsSdk.route53recoverycontrolconfigMod.ClientConfiguration] = js.undefined
+  
+  var route53recoveryreadiness: js.UndefOr[typings.awsSdk.route53recoveryreadinessMod.ClientConfiguration] = js.undefined
+  
   var route53resolver: js.UndefOr[typings.awsSdk.route53resolverMod.ClientConfiguration] = js.undefined
+  
+  var rum: js.UndefOr[typings.awsSdk.rumMod.ClientConfiguration] = js.undefined
   
   var s3: js.UndefOr[typings.awsSdk.s3Mod.ClientConfiguration] = js.undefined
   
@@ -551,6 +691,10 @@ trait ConfigurationOptionsConfi
   var s3outposts: js.UndefOr[typings.awsSdk.s3outpostsMod.ClientConfiguration] = js.undefined
   
   var sagemaker: js.UndefOr[typings.awsSdk.sagemakerMod.ClientConfiguration] = js.undefined
+  
+  var sagemakeredge: js.UndefOr[typings.awsSdk.sagemakeredgeMod.ClientConfiguration] = js.undefined
+  
+  var sagemakerfeaturestoreruntime: js.UndefOr[typings.awsSdk.sagemakerfeaturestoreruntimeMod.ClientConfiguration] = js.undefined
   
   var sagemakerruntime: js.UndefOr[typings.awsSdk.sagemakerruntimeMod.ClientConfiguration] = js.undefined
   
@@ -611,6 +755,8 @@ trait ConfigurationOptionsConfi
   
   var snowball: js.UndefOr[typings.awsSdk.snowballMod.ClientConfiguration] = js.undefined
   
+  var snowdevicemanagement: js.UndefOr[typings.awsSdk.snowdevicemanagementMod.ClientConfiguration] = js.undefined
+  
   var sns: js.UndefOr[typings.awsSdk.snsMod.ClientConfiguration] = js.undefined
   
   var sqs: js.UndefOr[typings.awsSdk.sqsMod.ClientConfiguration] = js.undefined
@@ -621,6 +767,10 @@ trait ConfigurationOptionsConfi
   var sslEnabled: js.UndefOr[Boolean] = js.undefined
   
   var ssm: js.UndefOr[typings.awsSdk.ssmMod.ClientConfiguration] = js.undefined
+  
+  var ssmcontacts: js.UndefOr[typings.awsSdk.ssmcontactsMod.ClientConfiguration] = js.undefined
+  
+  var ssmincidents: js.UndefOr[typings.awsSdk.ssmincidentsMod.ClientConfiguration] = js.undefined
   
   var sso: js.UndefOr[typings.awsSdk.ssoMod.ClientConfiguration] = js.undefined
   
@@ -642,6 +792,8 @@ trait ConfigurationOptionsConfi
   
   var support: js.UndefOr[typings.awsSdk.supportMod.ClientConfiguration] = js.undefined
   
+  var supportapp: js.UndefOr[typings.awsSdk.supportappMod.ClientConfiguration] = js.undefined
+  
   var swf: js.UndefOr[typings.awsSdk.swfMod.ClientConfiguration] = js.undefined
   
   var synthetics: js.UndefOr[typings.awsSdk.syntheticsMod.ClientConfiguration] = js.undefined
@@ -657,6 +809,16 @@ trait ConfigurationOptionsConfi
   
   var timestreamwrite: js.UndefOr[typings.awsSdk.timestreamwriteMod.ClientConfiguration] = js.undefined
   
+  /**
+    * The Token to authenticate requests with.
+    */
+  var token: js.UndefOr[Token | Null] = js.undefined
+  
+  /**
+    * The provider chain used to resolve token if no static token property is set.
+    */
+  var tokenProvider: js.UndefOr[TokenProviderChain] = js.undefined
+  
   var transcribeservice: js.UndefOr[typings.awsSdk.transcribeserviceMod.ClientConfiguration] = js.undefined
   
   var transfer: js.UndefOr[typings.awsSdk.transferMod.ClientConfiguration] = js.undefined
@@ -668,11 +830,27 @@ trait ConfigurationOptionsConfi
     */
   var useAccelerateEndpoint: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Enables IPv6 dualstack endpoint.
+    */
+  var useDualstackEndpoint: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Enables FIPS compatible endpoints.
+    */
+  var useFipsEndpoint: js.UndefOr[Boolean] = js.undefined
+  
+  var voiceid: js.UndefOr[typings.awsSdk.voiceidMod.ClientConfiguration] = js.undefined
+  
   var waf: js.UndefOr[typings.awsSdk.wafMod.ClientConfiguration] = js.undefined
   
   var wafregional: js.UndefOr[typings.awsSdk.wafregionalMod.ClientConfiguration] = js.undefined
   
   var wafv2: js.UndefOr[typings.awsSdk.wafv2Mod.ClientConfiguration] = js.undefined
+  
+  var wellarchitected: js.UndefOr[typings.awsSdk.wellarchitectedMod.ClientConfiguration] = js.undefined
+  
+  var wisdom: js.UndefOr[typings.awsSdk.wisdomMod.ClientConfiguration] = js.undefined
   
   var workdocs: js.UndefOr[typings.awsSdk.workdocsMod.ClientConfiguration] = js.undefined
   
@@ -683,6 +861,8 @@ trait ConfigurationOptionsConfi
   var workmailmessageflow: js.UndefOr[typings.awsSdk.workmailmessageflowMod.ClientConfiguration] = js.undefined
   
   var workspaces: js.UndefOr[typings.awsSdk.workspacesMod.ClientConfiguration] = js.undefined
+  
+  var workspacesweb: js.UndefOr[typings.awsSdk.workspaceswebMod.ClientConfiguration] = js.undefined
   
   var xray: js.UndefOr[typings.awsSdk.xrayMod.ClientConfiguration] = js.undefined
 }
@@ -704,6 +884,10 @@ object ConfigurationOptionsConfi {
     
     inline def setAccessanalyzerUndefined: Self = StObject.set(x, "accessanalyzer", js.undefined)
     
+    inline def setAccount(value: typings.awsSdk.accountMod.ClientConfiguration): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    
+    inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+    
     inline def setAcm(value: typings.awsSdk.acmMod.ClientConfiguration): Self = StObject.set(x, "acm", value.asInstanceOf[js.Any])
     
     inline def setAcmUndefined: Self = StObject.set(x, "acm", js.undefined)
@@ -716,9 +900,21 @@ object ConfigurationOptionsConfi {
     
     inline def setAlexaforbusinessUndefined: Self = StObject.set(x, "alexaforbusiness", js.undefined)
     
+    inline def setAmp(value: typings.awsSdk.ampMod.ClientConfiguration): Self = StObject.set(x, "amp", value.asInstanceOf[js.Any])
+    
+    inline def setAmpUndefined: Self = StObject.set(x, "amp", js.undefined)
+    
     inline def setAmplify(value: typings.awsSdk.amplifyMod.ClientConfiguration): Self = StObject.set(x, "amplify", value.asInstanceOf[js.Any])
     
     inline def setAmplifyUndefined: Self = StObject.set(x, "amplify", js.undefined)
+    
+    inline def setAmplifybackend(value: typings.awsSdk.amplifybackendMod.ClientConfiguration): Self = StObject.set(x, "amplifybackend", value.asInstanceOf[js.Any])
+    
+    inline def setAmplifybackendUndefined: Self = StObject.set(x, "amplifybackend", js.undefined)
+    
+    inline def setAmplifyuibuilder(value: typings.awsSdk.amplifyuibuilderMod.ClientConfiguration): Self = StObject.set(x, "amplifyuibuilder", value.asInstanceOf[js.Any])
+    
+    inline def setAmplifyuibuilderUndefined: Self = StObject.set(x, "amplifyuibuilder", js.undefined)
     
     inline def setApiVersion(value: latest_ | String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
@@ -744,13 +940,25 @@ object ConfigurationOptionsConfi {
     
     inline def setAppconfigUndefined: Self = StObject.set(x, "appconfig", js.undefined)
     
+    inline def setAppconfigdata(value: typings.awsSdk.appconfigdataMod.ClientConfiguration): Self = StObject.set(x, "appconfigdata", value.asInstanceOf[js.Any])
+    
+    inline def setAppconfigdataUndefined: Self = StObject.set(x, "appconfigdata", js.undefined)
+    
     inline def setAppflow(value: typings.awsSdk.appflowMod.ClientConfiguration): Self = StObject.set(x, "appflow", value.asInstanceOf[js.Any])
     
     inline def setAppflowUndefined: Self = StObject.set(x, "appflow", js.undefined)
     
+    inline def setAppintegrations(value: typings.awsSdk.appintegrationsMod.ClientConfiguration): Self = StObject.set(x, "appintegrations", value.asInstanceOf[js.Any])
+    
+    inline def setAppintegrationsUndefined: Self = StObject.set(x, "appintegrations", js.undefined)
+    
     inline def setApplicationautoscaling(value: typings.awsSdk.applicationautoscalingMod.ClientConfiguration): Self = StObject.set(x, "applicationautoscaling", value.asInstanceOf[js.Any])
     
     inline def setApplicationautoscalingUndefined: Self = StObject.set(x, "applicationautoscaling", js.undefined)
+    
+    inline def setApplicationcostprofiler(value: typings.awsSdk.applicationcostprofilerMod.ClientConfiguration): Self = StObject.set(x, "applicationcostprofiler", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationcostprofilerUndefined: Self = StObject.set(x, "applicationcostprofiler", js.undefined)
     
     inline def setApplicationinsights(value: typings.awsSdk.applicationinsightsMod.ClientConfiguration): Self = StObject.set(x, "applicationinsights", value.asInstanceOf[js.Any])
     
@@ -759,6 +967,10 @@ object ConfigurationOptionsConfi {
     inline def setAppmesh(value: typings.awsSdk.appmeshMod.ClientConfiguration): Self = StObject.set(x, "appmesh", value.asInstanceOf[js.Any])
     
     inline def setAppmeshUndefined: Self = StObject.set(x, "appmesh", js.undefined)
+    
+    inline def setApprunner(value: typings.awsSdk.apprunnerMod.ClientConfiguration): Self = StObject.set(x, "apprunner", value.asInstanceOf[js.Any])
+    
+    inline def setApprunnerUndefined: Self = StObject.set(x, "apprunner", js.undefined)
     
     inline def setAppstream(value: typings.awsSdk.appstreamMod.ClientConfiguration): Self = StObject.set(x, "appstream", value.asInstanceOf[js.Any])
     
@@ -771,6 +983,10 @@ object ConfigurationOptionsConfi {
     inline def setAthena(value: typings.awsSdk.athenaMod.ClientConfiguration): Self = StObject.set(x, "athena", value.asInstanceOf[js.Any])
     
     inline def setAthenaUndefined: Self = StObject.set(x, "athena", js.undefined)
+    
+    inline def setAuditmanager(value: typings.awsSdk.auditmanagerMod.ClientConfiguration): Self = StObject.set(x, "auditmanager", value.asInstanceOf[js.Any])
+    
+    inline def setAuditmanagerUndefined: Self = StObject.set(x, "auditmanager", js.undefined)
     
     inline def setAugmentedairuntime(value: typings.awsSdk.augmentedairuntimeMod.ClientConfiguration): Self = StObject.set(x, "augmentedairuntime", value.asInstanceOf[js.Any])
     
@@ -788,9 +1004,21 @@ object ConfigurationOptionsConfi {
     
     inline def setBackupUndefined: Self = StObject.set(x, "backup", js.undefined)
     
+    inline def setBackupgateway(value: typings.awsSdk.backupgatewayMod.ClientConfiguration): Self = StObject.set(x, "backupgateway", value.asInstanceOf[js.Any])
+    
+    inline def setBackupgatewayUndefined: Self = StObject.set(x, "backupgateway", js.undefined)
+    
+    inline def setBackupstorage(value: typings.awsSdk.backupstorageMod.ClientConfiguration): Self = StObject.set(x, "backupstorage", value.asInstanceOf[js.Any])
+    
+    inline def setBackupstorageUndefined: Self = StObject.set(x, "backupstorage", js.undefined)
+    
     inline def setBatch(value: typings.awsSdk.batchMod.ClientConfiguration): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
     inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
+    
+    inline def setBillingconductor(value: typings.awsSdk.billingconductorMod.ClientConfiguration): Self = StObject.set(x, "billingconductor", value.asInstanceOf[js.Any])
+    
+    inline def setBillingconductorUndefined: Self = StObject.set(x, "billingconductor", js.undefined)
     
     inline def setBraket(value: typings.awsSdk.braketMod.ClientConfiguration): Self = StObject.set(x, "braket", value.asInstanceOf[js.Any])
     
@@ -804,9 +1032,29 @@ object ConfigurationOptionsConfi {
     
     inline def setChimeUndefined: Self = StObject.set(x, "chime", js.undefined)
     
+    inline def setChimesdkidentity(value: typings.awsSdk.chimesdkidentityMod.ClientConfiguration): Self = StObject.set(x, "chimesdkidentity", value.asInstanceOf[js.Any])
+    
+    inline def setChimesdkidentityUndefined: Self = StObject.set(x, "chimesdkidentity", js.undefined)
+    
+    inline def setChimesdkmediapipelines(value: typings.awsSdk.chimesdkmediapipelinesMod.ClientConfiguration): Self = StObject.set(x, "chimesdkmediapipelines", value.asInstanceOf[js.Any])
+    
+    inline def setChimesdkmediapipelinesUndefined: Self = StObject.set(x, "chimesdkmediapipelines", js.undefined)
+    
+    inline def setChimesdkmeetings(value: typings.awsSdk.chimesdkmeetingsMod.ClientConfiguration): Self = StObject.set(x, "chimesdkmeetings", value.asInstanceOf[js.Any])
+    
+    inline def setChimesdkmeetingsUndefined: Self = StObject.set(x, "chimesdkmeetings", js.undefined)
+    
+    inline def setChimesdkmessaging(value: typings.awsSdk.chimesdkmessagingMod.ClientConfiguration): Self = StObject.set(x, "chimesdkmessaging", value.asInstanceOf[js.Any])
+    
+    inline def setChimesdkmessagingUndefined: Self = StObject.set(x, "chimesdkmessaging", js.undefined)
+    
     inline def setCloud9(value: typings.awsSdk.cloud9Mod.ClientConfiguration): Self = StObject.set(x, "cloud9", value.asInstanceOf[js.Any])
     
     inline def setCloud9Undefined: Self = StObject.set(x, "cloud9", js.undefined)
+    
+    inline def setCloudcontrol(value: typings.awsSdk.cloudcontrolMod.ClientConfiguration): Self = StObject.set(x, "cloudcontrol", value.asInstanceOf[js.Any])
+    
+    inline def setCloudcontrolUndefined: Self = StObject.set(x, "cloudcontrol", js.undefined)
     
     inline def setClouddirectory(value: typings.awsSdk.clouddirectoryMod.ClientConfiguration): Self = StObject.set(x, "clouddirectory", value.asInstanceOf[js.Any])
     
@@ -928,9 +1176,21 @@ object ConfigurationOptionsConfi {
     
     inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
     
+    inline def setConnectcampaigns(value: typings.awsSdk.connectcampaignsMod.ClientConfiguration): Self = StObject.set(x, "connectcampaigns", value.asInstanceOf[js.Any])
+    
+    inline def setConnectcampaignsUndefined: Self = StObject.set(x, "connectcampaigns", js.undefined)
+    
+    inline def setConnectcontactlens(value: typings.awsSdk.connectcontactlensMod.ClientConfiguration): Self = StObject.set(x, "connectcontactlens", value.asInstanceOf[js.Any])
+    
+    inline def setConnectcontactlensUndefined: Self = StObject.set(x, "connectcontactlens", js.undefined)
+    
     inline def setConnectparticipant(value: typings.awsSdk.connectparticipantMod.ClientConfiguration): Self = StObject.set(x, "connectparticipant", value.asInstanceOf[js.Any])
     
     inline def setConnectparticipantUndefined: Self = StObject.set(x, "connectparticipant", js.undefined)
+    
+    inline def setControltower(value: typings.awsSdk.controltowerMod.ClientConfiguration): Self = StObject.set(x, "controltower", value.asInstanceOf[js.Any])
+    
+    inline def setControltowerUndefined: Self = StObject.set(x, "controltower", js.undefined)
     
     inline def setConvertResponseTypes(value: Boolean): Self = StObject.set(x, "convertResponseTypes", value.asInstanceOf[js.Any])
     
@@ -962,6 +1222,10 @@ object ConfigurationOptionsConfi {
     
     inline def setCustomUserAgentUndefined: Self = StObject.set(x, "customUserAgent", js.undefined)
     
+    inline def setCustomerprofiles(value: typings.awsSdk.customerprofilesMod.ClientConfiguration): Self = StObject.set(x, "customerprofiles", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerprofilesUndefined: Self = StObject.set(x, "customerprofiles", js.undefined)
+    
     inline def setDatabrew(value: typings.awsSdk.databrewMod.ClientConfiguration): Self = StObject.set(x, "databrew", value.asInstanceOf[js.Any])
     
     inline def setDatabrewUndefined: Self = StObject.set(x, "databrew", js.undefined)
@@ -990,6 +1254,10 @@ object ConfigurationOptionsConfi {
     
     inline def setDevicefarmUndefined: Self = StObject.set(x, "devicefarm", js.undefined)
     
+    inline def setDevopsguru(value: typings.awsSdk.devopsguruMod.ClientConfiguration): Self = StObject.set(x, "devopsguru", value.asInstanceOf[js.Any])
+    
+    inline def setDevopsguruUndefined: Self = StObject.set(x, "devopsguru", js.undefined)
+    
     inline def setDirectconnect(value: typings.awsSdk.directconnectMod.ClientConfiguration): Self = StObject.set(x, "directconnect", value.asInstanceOf[js.Any])
     
     inline def setDirectconnectUndefined: Self = StObject.set(x, "directconnect", js.undefined)
@@ -1013,6 +1281,10 @@ object ConfigurationOptionsConfi {
     inline def setDocdb(value: typings.awsSdk.docdbMod.ClientConfiguration): Self = StObject.set(x, "docdb", value.asInstanceOf[js.Any])
     
     inline def setDocdbUndefined: Self = StObject.set(x, "docdb", js.undefined)
+    
+    inline def setDrs(value: typings.awsSdk.drsMod.ClientConfiguration): Self = StObject.set(x, "drs", value.asInstanceOf[js.Any])
+    
+    inline def setDrsUndefined: Self = StObject.set(x, "drs", js.undefined)
     
     inline def setDynamoDbCrc32(value: Boolean): Self = StObject.set(x, "dynamoDbCrc32", value.asInstanceOf[js.Any])
     
@@ -1041,6 +1313,10 @@ object ConfigurationOptionsConfi {
     inline def setEcr(value: typings.awsSdk.ecrMod.ClientConfiguration): Self = StObject.set(x, "ecr", value.asInstanceOf[js.Any])
     
     inline def setEcrUndefined: Self = StObject.set(x, "ecr", js.undefined)
+    
+    inline def setEcrpublic(value: typings.awsSdk.ecrpublicMod.ClientConfiguration): Self = StObject.set(x, "ecrpublic", value.asInstanceOf[js.Any])
+    
+    inline def setEcrpublicUndefined: Self = StObject.set(x, "ecrpublic", js.undefined)
     
     inline def setEcs(value: typings.awsSdk.ecsMod.ClientConfiguration): Self = StObject.set(x, "ecs", value.asInstanceOf[js.Any])
     
@@ -1082,6 +1358,14 @@ object ConfigurationOptionsConfi {
     
     inline def setEmrUndefined: Self = StObject.set(x, "emr", js.undefined)
     
+    inline def setEmrcontainers(value: typings.awsSdk.emrcontainersMod.ClientConfiguration): Self = StObject.set(x, "emrcontainers", value.asInstanceOf[js.Any])
+    
+    inline def setEmrcontainersUndefined: Self = StObject.set(x, "emrcontainers", js.undefined)
+    
+    inline def setEmrserverless(value: typings.awsSdk.emrserverlessMod.ClientConfiguration): Self = StObject.set(x, "emrserverless", value.asInstanceOf[js.Any])
+    
+    inline def setEmrserverlessUndefined: Self = StObject.set(x, "emrserverless", js.undefined)
+    
     inline def setEndpointCacheSize(value: Double): Self = StObject.set(x, "endpointCacheSize", value.asInstanceOf[js.Any])
     
     inline def setEndpointCacheSizeUndefined: Self = StObject.set(x, "endpointCacheSize", js.undefined)
@@ -1098,9 +1382,25 @@ object ConfigurationOptionsConfi {
     
     inline def setEventbridgeUndefined: Self = StObject.set(x, "eventbridge", js.undefined)
     
+    inline def setEvidently(value: typings.awsSdk.evidentlyMod.ClientConfiguration): Self = StObject.set(x, "evidently", value.asInstanceOf[js.Any])
+    
+    inline def setEvidentlyUndefined: Self = StObject.set(x, "evidently", js.undefined)
+    
+    inline def setFinspace(value: typings.awsSdk.finspaceMod.ClientConfiguration): Self = StObject.set(x, "finspace", value.asInstanceOf[js.Any])
+    
+    inline def setFinspaceUndefined: Self = StObject.set(x, "finspace", js.undefined)
+    
+    inline def setFinspacedata(value: typings.awsSdk.finspacedataMod.ClientConfiguration): Self = StObject.set(x, "finspacedata", value.asInstanceOf[js.Any])
+    
+    inline def setFinspacedataUndefined: Self = StObject.set(x, "finspacedata", js.undefined)
+    
     inline def setFirehose(value: typings.awsSdk.firehoseMod.ClientConfiguration): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
     
     inline def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
+    
+    inline def setFis(value: typings.awsSdk.fisMod.ClientConfiguration): Self = StObject.set(x, "fis", value.asInstanceOf[js.Any])
+    
+    inline def setFisUndefined: Self = StObject.set(x, "fis", js.undefined)
     
     inline def setFms(value: typings.awsSdk.fmsMod.ClientConfiguration): Self = StObject.set(x, "fms", value.asInstanceOf[js.Any])
     
@@ -1126,6 +1426,10 @@ object ConfigurationOptionsConfi {
     
     inline def setGameliftUndefined: Self = StObject.set(x, "gamelift", js.undefined)
     
+    inline def setGamesparks(value: typings.awsSdk.gamesparksMod.ClientConfiguration): Self = StObject.set(x, "gamesparks", value.asInstanceOf[js.Any])
+    
+    inline def setGamesparksUndefined: Self = StObject.set(x, "gamesparks", js.undefined)
+    
     inline def setGlacier(value: typings.awsSdk.glacierMod.ClientConfiguration): Self = StObject.set(x, "glacier", value.asInstanceOf[js.Any])
     
     inline def setGlacierUndefined: Self = StObject.set(x, "glacier", js.undefined)
@@ -1138,9 +1442,17 @@ object ConfigurationOptionsConfi {
     
     inline def setGlueUndefined: Self = StObject.set(x, "glue", js.undefined)
     
+    inline def setGrafana(value: typings.awsSdk.grafanaMod.ClientConfiguration): Self = StObject.set(x, "grafana", value.asInstanceOf[js.Any])
+    
+    inline def setGrafanaUndefined: Self = StObject.set(x, "grafana", js.undefined)
+    
     inline def setGreengrass(value: typings.awsSdk.greengrassMod.ClientConfiguration): Self = StObject.set(x, "greengrass", value.asInstanceOf[js.Any])
     
     inline def setGreengrassUndefined: Self = StObject.set(x, "greengrass", js.undefined)
+    
+    inline def setGreengrassv2(value: typings.awsSdk.greengrassv2Mod.ClientConfiguration): Self = StObject.set(x, "greengrassv2", value.asInstanceOf[js.Any])
+    
+    inline def setGreengrassv2Undefined: Self = StObject.set(x, "greengrassv2", js.undefined)
     
     inline def setGroundstation(value: typings.awsSdk.groundstationMod.ClientConfiguration): Self = StObject.set(x, "groundstation", value.asInstanceOf[js.Any])
     
@@ -1153,6 +1465,10 @@ object ConfigurationOptionsConfi {
     inline def setHealth(value: typings.awsSdk.healthMod.ClientConfiguration): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
     
     inline def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
+    
+    inline def setHealthlake(value: typings.awsSdk.healthlakeMod.ClientConfiguration): Self = StObject.set(x, "healthlake", value.asInstanceOf[js.Any])
+    
+    inline def setHealthlakeUndefined: Self = StObject.set(x, "healthlake", js.undefined)
     
     inline def setHoneycode(value: typings.awsSdk.honeycodeMod.ClientConfiguration): Self = StObject.set(x, "honeycode", value.asInstanceOf[js.Any])
     
@@ -1184,6 +1500,10 @@ object ConfigurationOptionsConfi {
     
     inline def setInspector(value: typings.awsSdk.inspectorMod.ClientConfiguration): Self = StObject.set(x, "inspector", value.asInstanceOf[js.Any])
     
+    inline def setInspector2(value: typings.awsSdk.inspector2Mod.ClientConfiguration): Self = StObject.set(x, "inspector2", value.asInstanceOf[js.Any])
+    
+    inline def setInspector2Undefined: Self = StObject.set(x, "inspector2", js.undefined)
+    
     inline def setInspectorUndefined: Self = StObject.set(x, "inspector", js.undefined)
     
     inline def setIot(value: typings.awsSdk.iotMod.ClientConfiguration): Self = StObject.set(x, "iot", value.asInstanceOf[js.Any])
@@ -1206,6 +1526,10 @@ object ConfigurationOptionsConfi {
     
     inline def setIotdataUndefined: Self = StObject.set(x, "iotdata", js.undefined)
     
+    inline def setIotdeviceadvisor(value: typings.awsSdk.iotdeviceadvisorMod.ClientConfiguration): Self = StObject.set(x, "iotdeviceadvisor", value.asInstanceOf[js.Any])
+    
+    inline def setIotdeviceadvisorUndefined: Self = StObject.set(x, "iotdeviceadvisor", js.undefined)
+    
     inline def setIotevents(value: typings.awsSdk.ioteventsMod.ClientConfiguration): Self = StObject.set(x, "iotevents", value.asInstanceOf[js.Any])
     
     inline def setIoteventsUndefined: Self = StObject.set(x, "iotevents", js.undefined)
@@ -1213,6 +1537,10 @@ object ConfigurationOptionsConfi {
     inline def setIoteventsdata(value: typings.awsSdk.ioteventsdataMod.ClientConfiguration): Self = StObject.set(x, "ioteventsdata", value.asInstanceOf[js.Any])
     
     inline def setIoteventsdataUndefined: Self = StObject.set(x, "ioteventsdata", js.undefined)
+    
+    inline def setIotfleethub(value: typings.awsSdk.iotfleethubMod.ClientConfiguration): Self = StObject.set(x, "iotfleethub", value.asInstanceOf[js.Any])
+    
+    inline def setIotfleethubUndefined: Self = StObject.set(x, "iotfleethub", js.undefined)
     
     inline def setIotjobsdataplane(value: typings.awsSdk.iotjobsdataplaneMod.ClientConfiguration): Self = StObject.set(x, "iotjobsdataplane", value.asInstanceOf[js.Any])
     
@@ -1230,17 +1558,37 @@ object ConfigurationOptionsConfi {
     
     inline def setIotthingsgraphUndefined: Self = StObject.set(x, "iotthingsgraph", js.undefined)
     
+    inline def setIottwinmaker(value: typings.awsSdk.iottwinmakerMod.ClientConfiguration): Self = StObject.set(x, "iottwinmaker", value.asInstanceOf[js.Any])
+    
+    inline def setIottwinmakerUndefined: Self = StObject.set(x, "iottwinmaker", js.undefined)
+    
+    inline def setIotwireless(value: typings.awsSdk.iotwirelessMod.ClientConfiguration): Self = StObject.set(x, "iotwireless", value.asInstanceOf[js.Any])
+    
+    inline def setIotwirelessUndefined: Self = StObject.set(x, "iotwireless", js.undefined)
+    
     inline def setIvs(value: typings.awsSdk.ivsMod.ClientConfiguration): Self = StObject.set(x, "ivs", value.asInstanceOf[js.Any])
     
     inline def setIvsUndefined: Self = StObject.set(x, "ivs", js.undefined)
+    
+    inline def setIvschat(value: typings.awsSdk.ivschatMod.ClientConfiguration): Self = StObject.set(x, "ivschat", value.asInstanceOf[js.Any])
+    
+    inline def setIvschatUndefined: Self = StObject.set(x, "ivschat", js.undefined)
     
     inline def setKafka(value: typings.awsSdk.kafkaMod.ClientConfiguration): Self = StObject.set(x, "kafka", value.asInstanceOf[js.Any])
     
     inline def setKafkaUndefined: Self = StObject.set(x, "kafka", js.undefined)
     
+    inline def setKafkaconnect(value: typings.awsSdk.kafkaconnectMod.ClientConfiguration): Self = StObject.set(x, "kafkaconnect", value.asInstanceOf[js.Any])
+    
+    inline def setKafkaconnectUndefined: Self = StObject.set(x, "kafkaconnect", js.undefined)
+    
     inline def setKendra(value: typings.awsSdk.kendraMod.ClientConfiguration): Self = StObject.set(x, "kendra", value.asInstanceOf[js.Any])
     
     inline def setKendraUndefined: Self = StObject.set(x, "kendra", js.undefined)
+    
+    inline def setKeyspaces(value: typings.awsSdk.keyspacesMod.ClientConfiguration): Self = StObject.set(x, "keyspaces", value.asInstanceOf[js.Any])
+    
+    inline def setKeyspacesUndefined: Self = StObject.set(x, "keyspaces", js.undefined)
     
     inline def setKinesis(value: typings.awsSdk.kinesisMod.ClientConfiguration): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
     
@@ -1286,21 +1634,53 @@ object ConfigurationOptionsConfi {
     
     inline def setLexmodelbuildingserviceUndefined: Self = StObject.set(x, "lexmodelbuildingservice", js.undefined)
     
+    inline def setLexmodelsv2(value: typings.awsSdk.lexmodelsv2Mod.ClientConfiguration): Self = StObject.set(x, "lexmodelsv2", value.asInstanceOf[js.Any])
+    
+    inline def setLexmodelsv2Undefined: Self = StObject.set(x, "lexmodelsv2", js.undefined)
+    
     inline def setLexruntime(value: typings.awsSdk.lexruntimeMod.ClientConfiguration): Self = StObject.set(x, "lexruntime", value.asInstanceOf[js.Any])
     
     inline def setLexruntimeUndefined: Self = StObject.set(x, "lexruntime", js.undefined)
+    
+    inline def setLexruntimev2(value: typings.awsSdk.lexruntimev2Mod.ClientConfiguration): Self = StObject.set(x, "lexruntimev2", value.asInstanceOf[js.Any])
+    
+    inline def setLexruntimev2Undefined: Self = StObject.set(x, "lexruntimev2", js.undefined)
     
     inline def setLicensemanager(value: typings.awsSdk.licensemanagerMod.ClientConfiguration): Self = StObject.set(x, "licensemanager", value.asInstanceOf[js.Any])
     
     inline def setLicensemanagerUndefined: Self = StObject.set(x, "licensemanager", js.undefined)
     
+    inline def setLicensemanagerusersubscriptions(value: typings.awsSdk.licensemanagerusersubscriptionsMod.ClientConfiguration): Self = StObject.set(x, "licensemanagerusersubscriptions", value.asInstanceOf[js.Any])
+    
+    inline def setLicensemanagerusersubscriptionsUndefined: Self = StObject.set(x, "licensemanagerusersubscriptions", js.undefined)
+    
     inline def setLightsail(value: typings.awsSdk.lightsailMod.ClientConfiguration): Self = StObject.set(x, "lightsail", value.asInstanceOf[js.Any])
     
     inline def setLightsailUndefined: Self = StObject.set(x, "lightsail", js.undefined)
     
+    inline def setLocation(value: typings.awsSdk.locationMod.ClientConfiguration): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
     inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+    
+    inline def setLookoutequipment(value: typings.awsSdk.lookoutequipmentMod.ClientConfiguration): Self = StObject.set(x, "lookoutequipment", value.asInstanceOf[js.Any])
+    
+    inline def setLookoutequipmentUndefined: Self = StObject.set(x, "lookoutequipment", js.undefined)
+    
+    inline def setLookoutmetrics(value: typings.awsSdk.lookoutmetricsMod.ClientConfiguration): Self = StObject.set(x, "lookoutmetrics", value.asInstanceOf[js.Any])
+    
+    inline def setLookoutmetricsUndefined: Self = StObject.set(x, "lookoutmetrics", js.undefined)
+    
+    inline def setLookoutvision(value: typings.awsSdk.lookoutvisionMod.ClientConfiguration): Self = StObject.set(x, "lookoutvision", value.asInstanceOf[js.Any])
+    
+    inline def setLookoutvisionUndefined: Self = StObject.set(x, "lookoutvision", js.undefined)
+    
+    inline def setM2(value: typings.awsSdk.m2Mod.ClientConfiguration): Self = StObject.set(x, "m2", value.asInstanceOf[js.Any])
+    
+    inline def setM2Undefined: Self = StObject.set(x, "m2", js.undefined)
     
     inline def setMachinelearning(value: typings.awsSdk.machinelearningMod.ClientConfiguration): Self = StObject.set(x, "machinelearning", value.asInstanceOf[js.Any])
     
@@ -1374,6 +1754,14 @@ object ConfigurationOptionsConfi {
     
     inline def setMediatailorUndefined: Self = StObject.set(x, "mediatailor", js.undefined)
     
+    inline def setMemorydb(value: typings.awsSdk.memorydbMod.ClientConfiguration): Self = StObject.set(x, "memorydb", value.asInstanceOf[js.Any])
+    
+    inline def setMemorydbUndefined: Self = StObject.set(x, "memorydb", js.undefined)
+    
+    inline def setMgn(value: typings.awsSdk.mgnMod.ClientConfiguration): Self = StObject.set(x, "mgn", value.asInstanceOf[js.Any])
+    
+    inline def setMgnUndefined: Self = StObject.set(x, "mgn", js.undefined)
+    
     inline def setMigrationhub(value: typings.awsSdk.migrationhubMod.ClientConfiguration): Self = StObject.set(x, "migrationhub", value.asInstanceOf[js.Any])
     
     inline def setMigrationhubUndefined: Self = StObject.set(x, "migrationhub", js.undefined)
@@ -1381,6 +1769,14 @@ object ConfigurationOptionsConfi {
     inline def setMigrationhubconfig(value: typings.awsSdk.migrationhubconfigMod.ClientConfiguration): Self = StObject.set(x, "migrationhubconfig", value.asInstanceOf[js.Any])
     
     inline def setMigrationhubconfigUndefined: Self = StObject.set(x, "migrationhubconfig", js.undefined)
+    
+    inline def setMigrationhubrefactorspaces(value: typings.awsSdk.migrationhubrefactorspacesMod.ClientConfiguration): Self = StObject.set(x, "migrationhubrefactorspaces", value.asInstanceOf[js.Any])
+    
+    inline def setMigrationhubrefactorspacesUndefined: Self = StObject.set(x, "migrationhubrefactorspaces", js.undefined)
+    
+    inline def setMigrationhubstrategy(value: typings.awsSdk.migrationhubstrategyMod.ClientConfiguration): Self = StObject.set(x, "migrationhubstrategy", value.asInstanceOf[js.Any])
+    
+    inline def setMigrationhubstrategyUndefined: Self = StObject.set(x, "migrationhubstrategy", js.undefined)
     
     inline def setMobile(value: typings.awsSdk.mobileMod.ClientConfiguration): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
@@ -1398,6 +1794,10 @@ object ConfigurationOptionsConfi {
     
     inline def setMturkUndefined: Self = StObject.set(x, "mturk", js.undefined)
     
+    inline def setMwaa(value: typings.awsSdk.mwaaMod.ClientConfiguration): Self = StObject.set(x, "mwaa", value.asInstanceOf[js.Any])
+    
+    inline def setMwaaUndefined: Self = StObject.set(x, "mwaa", js.undefined)
+    
     inline def setNeptune(value: typings.awsSdk.neptuneMod.ClientConfiguration): Self = StObject.set(x, "neptune", value.asInstanceOf[js.Any])
     
     inline def setNeptuneUndefined: Self = StObject.set(x, "neptune", js.undefined)
@@ -1409,6 +1809,14 @@ object ConfigurationOptionsConfi {
     inline def setNetworkmanager(value: typings.awsSdk.networkmanagerMod.ClientConfiguration): Self = StObject.set(x, "networkmanager", value.asInstanceOf[js.Any])
     
     inline def setNetworkmanagerUndefined: Self = StObject.set(x, "networkmanager", js.undefined)
+    
+    inline def setNimble(value: typings.awsSdk.nimbleMod.ClientConfiguration): Self = StObject.set(x, "nimble", value.asInstanceOf[js.Any])
+    
+    inline def setNimbleUndefined: Self = StObject.set(x, "nimble", js.undefined)
+    
+    inline def setOpensearch(value: typings.awsSdk.opensearchMod.ClientConfiguration): Self = StObject.set(x, "opensearch", value.asInstanceOf[js.Any])
+    
+    inline def setOpensearchUndefined: Self = StObject.set(x, "opensearch", js.undefined)
     
     inline def setOpsworks(value: typings.awsSdk.opsworksMod.ClientConfiguration): Self = StObject.set(x, "opsworks", value.asInstanceOf[js.Any])
     
@@ -1425,6 +1833,10 @@ object ConfigurationOptionsConfi {
     inline def setOutposts(value: typings.awsSdk.outpostsMod.ClientConfiguration): Self = StObject.set(x, "outposts", value.asInstanceOf[js.Any])
     
     inline def setOutpostsUndefined: Self = StObject.set(x, "outposts", js.undefined)
+    
+    inline def setPanorama(value: typings.awsSdk.panoramaMod.ClientConfiguration): Self = StObject.set(x, "panorama", value.asInstanceOf[js.Any])
+    
+    inline def setPanoramaUndefined: Self = StObject.set(x, "panorama", js.undefined)
     
     inline def setParamValidation(value: ParamValidation | Boolean): Self = StObject.set(x, "paramValidation", value.asInstanceOf[js.Any])
     
@@ -1458,6 +1870,10 @@ object ConfigurationOptionsConfi {
     
     inline def setPinpointsmsvoiceUndefined: Self = StObject.set(x, "pinpointsmsvoice", js.undefined)
     
+    inline def setPinpointsmsvoicev2(value: typings.awsSdk.pinpointsmsvoicev2Mod.ClientConfiguration): Self = StObject.set(x, "pinpointsmsvoicev2", value.asInstanceOf[js.Any])
+    
+    inline def setPinpointsmsvoicev2Undefined: Self = StObject.set(x, "pinpointsmsvoicev2", js.undefined)
+    
     inline def setPolly(value: typings.awsSdk.pollyMod.ClientConfiguration): Self = StObject.set(x, "polly", value.asInstanceOf[js.Any])
     
     inline def setPollyUndefined: Self = StObject.set(x, "polly", js.undefined)
@@ -1465,6 +1881,14 @@ object ConfigurationOptionsConfi {
     inline def setPricing(value: typings.awsSdk.pricingMod.ClientConfiguration): Self = StObject.set(x, "pricing", value.asInstanceOf[js.Any])
     
     inline def setPricingUndefined: Self = StObject.set(x, "pricing", js.undefined)
+    
+    inline def setPrivatenetworks(value: typings.awsSdk.privatenetworksMod.ClientConfiguration): Self = StObject.set(x, "privatenetworks", value.asInstanceOf[js.Any])
+    
+    inline def setPrivatenetworksUndefined: Self = StObject.set(x, "privatenetworks", js.undefined)
+    
+    inline def setProton(value: typings.awsSdk.protonMod.ClientConfiguration): Self = StObject.set(x, "proton", value.asInstanceOf[js.Any])
+    
+    inline def setProtonUndefined: Self = StObject.set(x, "proton", js.undefined)
     
     inline def setQldb(value: typings.awsSdk.qldbMod.ClientConfiguration): Self = StObject.set(x, "qldb", value.asInstanceOf[js.Any])
     
@@ -1482,6 +1906,10 @@ object ConfigurationOptionsConfi {
     
     inline def setRamUndefined: Self = StObject.set(x, "ram", js.undefined)
     
+    inline def setRbin(value: typings.awsSdk.rbinMod.ClientConfiguration): Self = StObject.set(x, "rbin", value.asInstanceOf[js.Any])
+    
+    inline def setRbinUndefined: Self = StObject.set(x, "rbin", js.undefined)
+    
     inline def setRds(value: typings.awsSdk.rdsMod.ClientConfiguration): Self = StObject.set(x, "rds", value.asInstanceOf[js.Any])
     
     inline def setRdsUndefined: Self = StObject.set(x, "rds", js.undefined)
@@ -1498,6 +1926,10 @@ object ConfigurationOptionsConfi {
     
     inline def setRedshiftdataUndefined: Self = StObject.set(x, "redshiftdata", js.undefined)
     
+    inline def setRedshiftserverless(value: typings.awsSdk.redshiftserverlessMod.ClientConfiguration): Self = StObject.set(x, "redshiftserverless", value.asInstanceOf[js.Any])
+    
+    inline def setRedshiftserverlessUndefined: Self = StObject.set(x, "redshiftserverless", js.undefined)
+    
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
@@ -1505,6 +1937,10 @@ object ConfigurationOptionsConfi {
     inline def setRekognition(value: typings.awsSdk.rekognitionMod.ClientConfiguration): Self = StObject.set(x, "rekognition", value.asInstanceOf[js.Any])
     
     inline def setRekognitionUndefined: Self = StObject.set(x, "rekognition", js.undefined)
+    
+    inline def setResiliencehub(value: typings.awsSdk.resiliencehubMod.ClientConfiguration): Self = StObject.set(x, "resiliencehub", value.asInstanceOf[js.Any])
+    
+    inline def setResiliencehubUndefined: Self = StObject.set(x, "resiliencehub", js.undefined)
     
     inline def setResourcegroups(value: typings.awsSdk.resourcegroupsMod.ClientConfiguration): Self = StObject.set(x, "resourcegroups", value.asInstanceOf[js.Any])
     
@@ -1522,6 +1958,10 @@ object ConfigurationOptionsConfi {
     
     inline def setRobomakerUndefined: Self = StObject.set(x, "robomaker", js.undefined)
     
+    inline def setRolesanywhere(value: typings.awsSdk.rolesanywhereMod.ClientConfiguration): Self = StObject.set(x, "rolesanywhere", value.asInstanceOf[js.Any])
+    
+    inline def setRolesanywhereUndefined: Self = StObject.set(x, "rolesanywhere", js.undefined)
+    
     inline def setRoute53(value: typings.awsSdk.route53Mod.ClientConfiguration): Self = StObject.set(x, "route53", value.asInstanceOf[js.Any])
     
     inline def setRoute53Undefined: Self = StObject.set(x, "route53", js.undefined)
@@ -1530,9 +1970,25 @@ object ConfigurationOptionsConfi {
     
     inline def setRoute53domainsUndefined: Self = StObject.set(x, "route53domains", js.undefined)
     
+    inline def setRoute53recoverycluster(value: typings.awsSdk.route53recoveryclusterMod.ClientConfiguration): Self = StObject.set(x, "route53recoverycluster", value.asInstanceOf[js.Any])
+    
+    inline def setRoute53recoveryclusterUndefined: Self = StObject.set(x, "route53recoverycluster", js.undefined)
+    
+    inline def setRoute53recoverycontrolconfig(value: typings.awsSdk.route53recoverycontrolconfigMod.ClientConfiguration): Self = StObject.set(x, "route53recoverycontrolconfig", value.asInstanceOf[js.Any])
+    
+    inline def setRoute53recoverycontrolconfigUndefined: Self = StObject.set(x, "route53recoverycontrolconfig", js.undefined)
+    
+    inline def setRoute53recoveryreadiness(value: typings.awsSdk.route53recoveryreadinessMod.ClientConfiguration): Self = StObject.set(x, "route53recoveryreadiness", value.asInstanceOf[js.Any])
+    
+    inline def setRoute53recoveryreadinessUndefined: Self = StObject.set(x, "route53recoveryreadiness", js.undefined)
+    
     inline def setRoute53resolver(value: typings.awsSdk.route53resolverMod.ClientConfiguration): Self = StObject.set(x, "route53resolver", value.asInstanceOf[js.Any])
     
     inline def setRoute53resolverUndefined: Self = StObject.set(x, "route53resolver", js.undefined)
+    
+    inline def setRum(value: typings.awsSdk.rumMod.ClientConfiguration): Self = StObject.set(x, "rum", value.asInstanceOf[js.Any])
+    
+    inline def setRumUndefined: Self = StObject.set(x, "rum", js.undefined)
     
     inline def setS3(value: typings.awsSdk.s3Mod.ClientConfiguration): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     
@@ -1569,6 +2025,14 @@ object ConfigurationOptionsConfi {
     inline def setSagemaker(value: typings.awsSdk.sagemakerMod.ClientConfiguration): Self = StObject.set(x, "sagemaker", value.asInstanceOf[js.Any])
     
     inline def setSagemakerUndefined: Self = StObject.set(x, "sagemaker", js.undefined)
+    
+    inline def setSagemakeredge(value: typings.awsSdk.sagemakeredgeMod.ClientConfiguration): Self = StObject.set(x, "sagemakeredge", value.asInstanceOf[js.Any])
+    
+    inline def setSagemakeredgeUndefined: Self = StObject.set(x, "sagemakeredge", js.undefined)
+    
+    inline def setSagemakerfeaturestoreruntime(value: typings.awsSdk.sagemakerfeaturestoreruntimeMod.ClientConfiguration): Self = StObject.set(x, "sagemakerfeaturestoreruntime", value.asInstanceOf[js.Any])
+    
+    inline def setSagemakerfeaturestoreruntimeUndefined: Self = StObject.set(x, "sagemakerfeaturestoreruntime", js.undefined)
     
     inline def setSagemakerruntime(value: typings.awsSdk.sagemakerruntimeMod.ClientConfiguration): Self = StObject.set(x, "sagemakerruntime", value.asInstanceOf[js.Any])
     
@@ -1654,6 +2118,10 @@ object ConfigurationOptionsConfi {
     
     inline def setSnowballUndefined: Self = StObject.set(x, "snowball", js.undefined)
     
+    inline def setSnowdevicemanagement(value: typings.awsSdk.snowdevicemanagementMod.ClientConfiguration): Self = StObject.set(x, "snowdevicemanagement", value.asInstanceOf[js.Any])
+    
+    inline def setSnowdevicemanagementUndefined: Self = StObject.set(x, "snowdevicemanagement", js.undefined)
+    
     inline def setSns(value: typings.awsSdk.snsMod.ClientConfiguration): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
     
     inline def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
@@ -1669,6 +2137,14 @@ object ConfigurationOptionsConfi {
     inline def setSsm(value: typings.awsSdk.ssmMod.ClientConfiguration): Self = StObject.set(x, "ssm", value.asInstanceOf[js.Any])
     
     inline def setSsmUndefined: Self = StObject.set(x, "ssm", js.undefined)
+    
+    inline def setSsmcontacts(value: typings.awsSdk.ssmcontactsMod.ClientConfiguration): Self = StObject.set(x, "ssmcontacts", value.asInstanceOf[js.Any])
+    
+    inline def setSsmcontactsUndefined: Self = StObject.set(x, "ssmcontacts", js.undefined)
+    
+    inline def setSsmincidents(value: typings.awsSdk.ssmincidentsMod.ClientConfiguration): Self = StObject.set(x, "ssmincidents", value.asInstanceOf[js.Any])
+    
+    inline def setSsmincidentsUndefined: Self = StObject.set(x, "ssmincidents", js.undefined)
     
     inline def setSso(value: typings.awsSdk.ssoMod.ClientConfiguration): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
     
@@ -1702,6 +2178,10 @@ object ConfigurationOptionsConfi {
     
     inline def setSupportUndefined: Self = StObject.set(x, "support", js.undefined)
     
+    inline def setSupportapp(value: typings.awsSdk.supportappMod.ClientConfiguration): Self = StObject.set(x, "supportapp", value.asInstanceOf[js.Any])
+    
+    inline def setSupportappUndefined: Self = StObject.set(x, "supportapp", js.undefined)
+    
     inline def setSwf(value: typings.awsSdk.swfMod.ClientConfiguration): Self = StObject.set(x, "swf", value.asInstanceOf[js.Any])
     
     inline def setSwfUndefined: Self = StObject.set(x, "swf", js.undefined)
@@ -1726,6 +2206,16 @@ object ConfigurationOptionsConfi {
     
     inline def setTimestreamwriteUndefined: Self = StObject.set(x, "timestreamwrite", js.undefined)
     
+    inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    
+    inline def setTokenNull: Self = StObject.set(x, "token", null)
+    
+    inline def setTokenProvider(value: TokenProviderChain): Self = StObject.set(x, "tokenProvider", value.asInstanceOf[js.Any])
+    
+    inline def setTokenProviderUndefined: Self = StObject.set(x, "tokenProvider", js.undefined)
+    
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    
     inline def setTranscribeservice(value: typings.awsSdk.transcribeserviceMod.ClientConfiguration): Self = StObject.set(x, "transcribeservice", value.asInstanceOf[js.Any])
     
     inline def setTranscribeserviceUndefined: Self = StObject.set(x, "transcribeservice", js.undefined)
@@ -1742,6 +2232,18 @@ object ConfigurationOptionsConfi {
     
     inline def setUseAccelerateEndpointUndefined: Self = StObject.set(x, "useAccelerateEndpoint", js.undefined)
     
+    inline def setUseDualstackEndpoint(value: Boolean): Self = StObject.set(x, "useDualstackEndpoint", value.asInstanceOf[js.Any])
+    
+    inline def setUseDualstackEndpointUndefined: Self = StObject.set(x, "useDualstackEndpoint", js.undefined)
+    
+    inline def setUseFipsEndpoint(value: Boolean): Self = StObject.set(x, "useFipsEndpoint", value.asInstanceOf[js.Any])
+    
+    inline def setUseFipsEndpointUndefined: Self = StObject.set(x, "useFipsEndpoint", js.undefined)
+    
+    inline def setVoiceid(value: typings.awsSdk.voiceidMod.ClientConfiguration): Self = StObject.set(x, "voiceid", value.asInstanceOf[js.Any])
+    
+    inline def setVoiceidUndefined: Self = StObject.set(x, "voiceid", js.undefined)
+    
     inline def setWaf(value: typings.awsSdk.wafMod.ClientConfiguration): Self = StObject.set(x, "waf", value.asInstanceOf[js.Any])
     
     inline def setWafUndefined: Self = StObject.set(x, "waf", js.undefined)
@@ -1753,6 +2255,14 @@ object ConfigurationOptionsConfi {
     inline def setWafv2(value: typings.awsSdk.wafv2Mod.ClientConfiguration): Self = StObject.set(x, "wafv2", value.asInstanceOf[js.Any])
     
     inline def setWafv2Undefined: Self = StObject.set(x, "wafv2", js.undefined)
+    
+    inline def setWellarchitected(value: typings.awsSdk.wellarchitectedMod.ClientConfiguration): Self = StObject.set(x, "wellarchitected", value.asInstanceOf[js.Any])
+    
+    inline def setWellarchitectedUndefined: Self = StObject.set(x, "wellarchitected", js.undefined)
+    
+    inline def setWisdom(value: typings.awsSdk.wisdomMod.ClientConfiguration): Self = StObject.set(x, "wisdom", value.asInstanceOf[js.Any])
+    
+    inline def setWisdomUndefined: Self = StObject.set(x, "wisdom", js.undefined)
     
     inline def setWorkdocs(value: typings.awsSdk.workdocsMod.ClientConfiguration): Self = StObject.set(x, "workdocs", value.asInstanceOf[js.Any])
     
@@ -1773,6 +2283,10 @@ object ConfigurationOptionsConfi {
     inline def setWorkspaces(value: typings.awsSdk.workspacesMod.ClientConfiguration): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
     
     inline def setWorkspacesUndefined: Self = StObject.set(x, "workspaces", js.undefined)
+    
+    inline def setWorkspacesweb(value: typings.awsSdk.workspaceswebMod.ClientConfiguration): Self = StObject.set(x, "workspacesweb", value.asInstanceOf[js.Any])
+    
+    inline def setWorkspaceswebUndefined: Self = StObject.set(x, "workspacesweb", js.undefined)
     
     inline def setXray(value: typings.awsSdk.xrayMod.ClientConfiguration): Self = StObject.set(x, "xray", value.asInstanceOf[js.Any])
     

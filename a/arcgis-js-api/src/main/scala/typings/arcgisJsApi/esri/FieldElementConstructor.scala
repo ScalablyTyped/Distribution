@@ -17,5 +17,5 @@ trait FieldElementConstructor
 Instantiable0[FieldElement]
      with Instantiable1[/* properties */ FieldElementProperties, FieldElement] {
   
-  def fromJSON(json: js.Any): FieldElement = js.native
+  def fromJSON(json: Any): FieldElement = js.native
 }

@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IGeoObjectOptions
   extends StObject
-     with ICircleOptions {
+     with ICircleOptions
+     with IBalloonOptionsWithBalloonPrefix {
   
   var iconCaptionMaxWidth: js.UndefOr[Double] = js.undefined
   
@@ -58,7 +59,7 @@ trait IGeoObjectOptions
   
   var polygonOverlay: js.UndefOr[OverlayKey] = js.undefined
   
-  var preset: js.UndefOr[String] = js.undefined
+  var preset: js.UndefOr[PresetKey] = js.undefined
   
   var rectangleOverlay: js.UndefOr[OverlayKey] = js.undefined
   
@@ -89,25 +90,25 @@ object IGeoObjectOptions {
     
     inline def setIconContentOffsetUndefined: Self = StObject.set(x, "iconContentOffset", js.undefined)
     
-    inline def setIconContentOffsetVarargs(value: Double*): Self = StObject.set(x, "iconContentOffset", js.Array(value :_*))
+    inline def setIconContentOffsetVarargs(value: Double*): Self = StObject.set(x, "iconContentOffset", js.Array(value*))
     
     inline def setIconContentPadding(value: js.Array[Double]): Self = StObject.set(x, "iconContentPadding", value.asInstanceOf[js.Any])
     
     inline def setIconContentPaddingUndefined: Self = StObject.set(x, "iconContentPadding", js.undefined)
     
-    inline def setIconContentPaddingVarargs(value: Double*): Self = StObject.set(x, "iconContentPadding", js.Array(value :_*))
+    inline def setIconContentPaddingVarargs(value: Double*): Self = StObject.set(x, "iconContentPadding", js.Array(value*))
     
     inline def setIconContentSize(value: js.Array[Double]): Self = StObject.set(x, "iconContentSize", value.asInstanceOf[js.Any])
     
     inline def setIconContentSizeUndefined: Self = StObject.set(x, "iconContentSize", js.undefined)
     
-    inline def setIconContentSizeVarargs(value: Double*): Self = StObject.set(x, "iconContentSize", js.Array(value :_*))
+    inline def setIconContentSizeVarargs(value: Double*): Self = StObject.set(x, "iconContentSize", js.Array(value*))
     
     inline def setIconImageClipRect(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "iconImageClipRect", value.asInstanceOf[js.Any])
     
     inline def setIconImageClipRectUndefined: Self = StObject.set(x, "iconImageClipRect", js.undefined)
     
-    inline def setIconImageClipRectVarargs(value: js.Array[Double]*): Self = StObject.set(x, "iconImageClipRect", js.Array(value :_*))
+    inline def setIconImageClipRectVarargs(value: js.Array[Double]*): Self = StObject.set(x, "iconImageClipRect", js.Array(value*))
     
     inline def setIconImageHref(value: String): Self = StObject.set(x, "iconImageHref", value.asInstanceOf[js.Any])
     
@@ -117,7 +118,7 @@ object IGeoObjectOptions {
     
     inline def setIconImageOffsetUndefined: Self = StObject.set(x, "iconImageOffset", js.undefined)
     
-    inline def setIconImageOffsetVarargs(value: Double*): Self = StObject.set(x, "iconImageOffset", js.Array(value :_*))
+    inline def setIconImageOffsetVarargs(value: Double*): Self = StObject.set(x, "iconImageOffset", js.Array(value*))
     
     inline def setIconImageShape(value: IShape): Self = StObject.set(x, "iconImageShape", value.asInstanceOf[js.Any])
     
@@ -129,7 +130,7 @@ object IGeoObjectOptions {
     
     inline def setIconImageSizeUndefined: Self = StObject.set(x, "iconImageSize", js.undefined)
     
-    inline def setIconImageSizeVarargs(value: Double*): Self = StObject.set(x, "iconImageSize", js.Array(value :_*))
+    inline def setIconImageSizeVarargs(value: Double*): Self = StObject.set(x, "iconImageSize", js.Array(value*))
     
     inline def setIconLayout(value: String | IClassConstructor[ILayout]): Self = StObject.set(x, "iconLayout", value.asInstanceOf[js.Any])
     
@@ -147,7 +148,7 @@ object IGeoObjectOptions {
     
     inline def setIconOffsetUndefined: Self = StObject.set(x, "iconOffset", js.undefined)
     
-    inline def setIconOffsetVarargs(value: Double*): Self = StObject.set(x, "iconOffset", js.Array(value :_*))
+    inline def setIconOffsetVarargs(value: Double*): Self = StObject.set(x, "iconOffset", js.Array(value*))
     
     inline def setIconShadow(value: Boolean): Self = StObject.set(x, "iconShadow", value.asInstanceOf[js.Any])
     
@@ -155,7 +156,7 @@ object IGeoObjectOptions {
     
     inline def setIconShadowImageClipRectUndefined: Self = StObject.set(x, "iconShadowImageClipRect", js.undefined)
     
-    inline def setIconShadowImageClipRectVarargs(value: js.Array[Double]*): Self = StObject.set(x, "iconShadowImageClipRect", js.Array(value :_*))
+    inline def setIconShadowImageClipRectVarargs(value: js.Array[Double]*): Self = StObject.set(x, "iconShadowImageClipRect", js.Array(value*))
     
     inline def setIconShadowImageHref(value: String): Self = StObject.set(x, "iconShadowImageHref", value.asInstanceOf[js.Any])
     
@@ -165,13 +166,13 @@ object IGeoObjectOptions {
     
     inline def setIconShadowImageOffsetUndefined: Self = StObject.set(x, "iconShadowImageOffset", js.undefined)
     
-    inline def setIconShadowImageOffsetVarargs(value: Double*): Self = StObject.set(x, "iconShadowImageOffset", js.Array(value :_*))
+    inline def setIconShadowImageOffsetVarargs(value: Double*): Self = StObject.set(x, "iconShadowImageOffset", js.Array(value*))
     
     inline def setIconShadowImageSize(value: js.Array[Double]): Self = StObject.set(x, "iconShadowImageSize", value.asInstanceOf[js.Any])
     
     inline def setIconShadowImageSizeUndefined: Self = StObject.set(x, "iconShadowImageSize", js.undefined)
     
-    inline def setIconShadowImageSizeVarargs(value: Double*): Self = StObject.set(x, "iconShadowImageSize", js.Array(value :_*))
+    inline def setIconShadowImageSizeVarargs(value: Double*): Self = StObject.set(x, "iconShadowImageSize", js.Array(value*))
     
     inline def setIconShadowLayout(value: String | IClassConstructor[ILayout]): Self = StObject.set(x, "iconShadowLayout", value.asInstanceOf[js.Any])
     
@@ -181,7 +182,7 @@ object IGeoObjectOptions {
     
     inline def setIconShadowOffsetUndefined: Self = StObject.set(x, "iconShadowOffset", js.undefined)
     
-    inline def setIconShadowOffsetVarargs(value: Double*): Self = StObject.set(x, "iconShadowOffset", js.Array(value :_*))
+    inline def setIconShadowOffsetVarargs(value: Double*): Self = StObject.set(x, "iconShadowOffset", js.Array(value*))
     
     inline def setIconShadowUndefined: Self = StObject.set(x, "iconShadow", js.undefined)
     
@@ -209,7 +210,7 @@ object IGeoObjectOptions {
     
     inline def setPolygonOverlayUndefined: Self = StObject.set(x, "polygonOverlay", js.undefined)
     
-    inline def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+    inline def setPreset(value: PresetKey): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
     
     inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
     

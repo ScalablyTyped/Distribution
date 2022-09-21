@@ -19,7 +19,7 @@ trait NumericMenuExposed extends StObject {
   var items: js.Array[End]
   
   /** (...args: any[]) => any to modify the items being displayed, e.g. for filtering or sorting them. Takes an items as parameter and expects it back in return. */
-  var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var transformItems: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
 }
 object NumericMenuExposed {
   
@@ -42,9 +42,9 @@ object NumericMenuExposed {
     
     inline def setItems(value: js.Array[End]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: End*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: End*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setTransformItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
+    inline def setTransformItems(value: /* repeated */ Any => Any): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
     
     inline def setTransformItemsUndefined: Self = StObject.set(x, "transformItems", js.undefined)
   }

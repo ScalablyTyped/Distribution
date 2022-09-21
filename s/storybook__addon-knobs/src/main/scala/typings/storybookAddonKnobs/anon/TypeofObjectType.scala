@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofObjectType extends StObject {
   
   /* static member */
-  var defaultProps: ObjectTypeProps[js.Any]
+  var defaultProps: ObjectTypeProps[Any]
   
   /* static member */
-  var deserialize: js.Function1[/* value */ String, js.Any]
+  var deserialize: js.Function1[/* value */ String, Any]
   
   /* static member */
   def getDerivedStateFromProps[T](props: ObjectTypeProps[T], state: ObjectTypeState[T]): ObjectTypeState[T] | Null
@@ -21,16 +21,16 @@ trait TypeofObjectType extends StObject {
   var propTypes: OnChangeValidator
   
   /* static member */
-  var serialize: js.Function1[/* object */ js.Any, String]
+  var serialize: js.Function1[/* object */ Any, String]
 }
 object TypeofObjectType {
   
   inline def apply(
-    defaultProps: ObjectTypeProps[js.Any],
-    deserialize: /* value */ String => js.Any,
-    getDerivedStateFromProps: (ObjectTypeProps[js.Any], ObjectTypeState[js.Any]) => ObjectTypeState[js.Any] | Null,
+    defaultProps: ObjectTypeProps[Any],
+    deserialize: /* value */ String => Any,
+    getDerivedStateFromProps: (ObjectTypeProps[Any], ObjectTypeState[Any]) => ObjectTypeState[Any] | Null,
     propTypes: OnChangeValidator,
-    serialize: /* object */ js.Any => String
+    serialize: /* object */ Any => String
   ): TypeofObjectType = {
     val __obj = js.Dynamic.literal(defaultProps = defaultProps.asInstanceOf[js.Any], deserialize = js.Any.fromFunction1(deserialize), getDerivedStateFromProps = js.Any.fromFunction2(getDerivedStateFromProps), propTypes = propTypes.asInstanceOf[js.Any], serialize = js.Any.fromFunction1(serialize))
     __obj.asInstanceOf[TypeofObjectType]
@@ -38,14 +38,14 @@ object TypeofObjectType {
   
   extension [Self <: TypeofObjectType](x: Self) {
     
-    inline def setDefaultProps(value: ObjectTypeProps[js.Any]): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: ObjectTypeProps[Any]): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
-    inline def setDeserialize(value: /* value */ String => js.Any): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+    inline def setDeserialize(value: /* value */ String => Any): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
     
-    inline def setGetDerivedStateFromProps(value: (ObjectTypeProps[js.Any], ObjectTypeState[js.Any]) => ObjectTypeState[js.Any] | Null): Self = StObject.set(x, "getDerivedStateFromProps", js.Any.fromFunction2(value))
+    inline def setGetDerivedStateFromProps(value: (ObjectTypeProps[Any], ObjectTypeState[Any]) => ObjectTypeState[Any] | Null): Self = StObject.set(x, "getDerivedStateFromProps", js.Any.fromFunction2(value))
     
     inline def setPropTypes(value: OnChangeValidator): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
     
-    inline def setSerialize(value: /* object */ js.Any => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+    inline def setSerialize(value: /* object */ Any => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
   }
 }

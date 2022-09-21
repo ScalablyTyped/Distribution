@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("video.js/dist/alt/video.core.novtt", "default.MediaError")
 @js.native
-class MediaErrorCls protected ()
+open class MediaErrorCls protected ()
   extends StObject
      with typings.videoJs.mod.videojs.MediaError {
   def this(value: String) = this()
-  def this(value: StringDictionary[js.Any]) = this()
+  def this(value: StringDictionary[Any]) = this()
   /**
     * Create an instance of this class.
     *
@@ -100,5 +100,5 @@ class MediaErrorCls protected ()
     *
     */
   /* CompleteClass */
-  var status: js.Array[js.Any] = js.native
+  var status: js.Array[Any] = js.native
 }

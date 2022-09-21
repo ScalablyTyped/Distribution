@@ -32,6 +32,10 @@ object mod {
   @js.native
   val latimes: Config = js.native
   
+  @JSImport("vega-themes", "powerbi")
+  @js.native
+  val powerbi: Config = js.native
+  
   @JSImport("vega-themes", "quartz")
   @js.native
   val quartz: Config = js.native

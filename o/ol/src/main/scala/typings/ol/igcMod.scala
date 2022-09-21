@@ -8,7 +8,7 @@ object igcMod {
   
   @JSImport("ol/format/IGC", JSImport.Default)
   @js.native
-  class default () extends IGC {
+  open class default () extends IGC {
     def this(opt_options: Options) = this()
   }
   

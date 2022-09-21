@@ -24,7 +24,7 @@ trait ojDiagramLinkSettableProperties
   
   var endConnectorType: js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded] = js.undefined
   
-  var endNode: js.Any
+  var endNode: Any
   
   var label: js.UndefOr[String] = js.undefined
   
@@ -36,7 +36,7 @@ trait ojDiagramLinkSettableProperties
   
   var startConnectorType: js.UndefOr[arrow | arrowConcave | arrowOpen | circle | none | rectangle | rectangleRounded] = js.undefined
   
-  var startNode: js.Any
+  var startNode: Any
   
   var svgClassName: js.UndefOr[String] = js.undefined
   
@@ -46,7 +46,7 @@ trait ojDiagramLinkSettableProperties
 }
 object ojDiagramLinkSettableProperties {
   
-  inline def apply(categories: js.Array[String], endNode: js.Any, startNode: js.Any): ojDiagramLinkSettableProperties = {
+  inline def apply(categories: js.Array[String], endNode: Any, startNode: Any): ojDiagramLinkSettableProperties = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], endNode = endNode.asInstanceOf[js.Any], startNode = startNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojDiagramLinkSettableProperties]
   }
@@ -55,7 +55,7 @@ object ojDiagramLinkSettableProperties {
     
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
@@ -65,7 +65,7 @@ object ojDiagramLinkSettableProperties {
     
     inline def setEndConnectorTypeUndefined: Self = StObject.set(x, "endConnectorType", js.undefined)
     
-    inline def setEndNode(value: js.Any): Self = StObject.set(x, "endNode", value.asInstanceOf[js.Any])
+    inline def setEndNode(value: Any): Self = StObject.set(x, "endNode", value.asInstanceOf[js.Any])
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
@@ -89,7 +89,7 @@ object ojDiagramLinkSettableProperties {
     
     inline def setStartConnectorTypeUndefined: Self = StObject.set(x, "startConnectorType", js.undefined)
     
-    inline def setStartNode(value: js.Any): Self = StObject.set(x, "startNode", value.asInstanceOf[js.Any])
+    inline def setStartNode(value: Any): Self = StObject.set(x, "startNode", value.asInstanceOf[js.Any])
     
     inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     

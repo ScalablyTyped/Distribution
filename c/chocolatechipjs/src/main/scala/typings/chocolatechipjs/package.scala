@@ -5,6 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DOMString = java.lang.String
+type DOMString = String
 
 type OpenEndedDictionary = js.Object

@@ -25,18 +25,18 @@ object AccessScopes {
     
     inline def setForbiddenUndefined: Self = StObject.set(x, "forbidden", js.undefined)
     
-    inline def setForbiddenVarargs(value: String*): Self = StObject.set(x, "forbidden", js.Array(value :_*))
+    inline def setForbiddenVarargs(value: String*): Self = StObject.set(x, "forbidden", js.Array(value*))
     
     inline def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+    inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value*))
     
     inline def setSelection(value: js.Array[String]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     
-    inline def setSelectionVarargs(value: String*): Self = StObject.set(x, "selection", js.Array(value :_*))
+    inline def setSelectionVarargs(value: String*): Self = StObject.set(x, "selection", js.Array(value*))
   }
 }

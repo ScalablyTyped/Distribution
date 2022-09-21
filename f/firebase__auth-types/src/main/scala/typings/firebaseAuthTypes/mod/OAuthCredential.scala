@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/auth-types", "OAuthCredential")
 @js.native
-/* private */ class OAuthCredential () extends AuthCredential {
+/* private */ open class OAuthCredential () extends AuthCredential {
   
   var accessToken: js.UndefOr[String] = js.native
   

@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.RingGeometry")
 @js.native
-class RingGeometry protected ()
+open class RingGeometry protected ()
   extends typings.three.mod.RingGeometry {
   /**
-  	 * @param [innerRadius=0.5]
-  	 * @param [outerRadius=1]
-  	 * @param [thetaSegments=8]
-  	 * @param [phiSegments=1]
-  	 * @param [thetaStart=0]
-  	 * @param [thetaLength=Math.PI * 2]
-  	 */
+    * @param [innerRadius=0.5]
+    * @param [outerRadius=1]
+    * @param [thetaSegments=8]
+    * @param [phiSegments=1]
+    * @param [thetaStart=0]
+    * @param [thetaLength=Math.PI * 2]
+    */
   def this(
     innerRadius: js.UndefOr[Double],
     outerRadius: js.UndefOr[Double],

@@ -27,12 +27,12 @@ trait Message extends StObject {
   var MD5OfMessageAttributes: js.UndefOr[String] = js.undefined
   
   /**
-    * Each message attribute consists of a Name, Type, and Value. For more information, see Amazon SQS Message Attributes in the Amazon Simple Queue Service Developer Guide.
+    * Each message attribute consists of a Name, Type, and Value. For more information, see Amazon SQS message attributes in the Amazon SQS Developer Guide.
     */
   var MessageAttributes: js.UndefOr[MessageBodyAttributeMap] = js.undefined
   
   /**
-    * A unique identifier for the message. A MessageIdis considered unique across all AWS accounts for an extended period of time.
+    * A unique identifier for the message. A MessageIdis considered unique across all Amazon Web Services accounts for an extended period of time.
     */
   var MessageId: js.UndefOr[String] = js.undefined
   

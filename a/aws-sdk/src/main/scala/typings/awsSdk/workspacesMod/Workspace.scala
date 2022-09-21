@@ -17,7 +17,7 @@ trait Workspace extends StObject {
   var ComputerName: js.UndefOr[typings.awsSdk.workspacesMod.ComputerName] = js.undefined
   
   /**
-    * The identifier of the AWS Directory Service directory for the WorkSpace.
+    * The identifier of the Directory Service directory for the WorkSpace.
     */
   var DirectoryId: js.UndefOr[typings.awsSdk.workspacesMod.DirectoryId] = js.undefined
   
@@ -67,7 +67,7 @@ trait Workspace extends StObject {
   var UserVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined
   
   /**
-    * The symmetric AWS KMS customer master key (CMK) used to encrypt data stored on your WorkSpace. Amazon WorkSpaces does not support asymmetric CMKs.
+    * The symmetric KMS key used to encrypt data stored on your WorkSpace. Amazon WorkSpaces does not support asymmetric KMS keys.
     */
   var VolumeEncryptionKey: js.UndefOr[typings.awsSdk.workspacesMod.VolumeEncryptionKey] = js.undefined
   
@@ -118,7 +118,7 @@ object Workspace {
     
     inline def setModificationStatesUndefined: Self = StObject.set(x, "ModificationStates", js.undefined)
     
-    inline def setModificationStatesVarargs(value: ModificationState*): Self = StObject.set(x, "ModificationStates", js.Array(value :_*))
+    inline def setModificationStatesVarargs(value: ModificationState*): Self = StObject.set(x, "ModificationStates", js.Array(value*))
     
     inline def setRootVolumeEncryptionEnabled(value: BooleanObject): Self = StObject.set(x, "RootVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
     

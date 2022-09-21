@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
-import typings.googleapis.googleapisStrings.v4
-import typings.googleapis.v4Mod.analyticsreportingV4.Analyticsreporting
-import typings.googleapis.v4Mod.analyticsreportingV4.Options
+import typings.googleapis.alertcenterV1beta1Mod.alertcenterV1beta1.Alertcenter
+import typings.googleapis.alertcenterV1beta1Mod.alertcenterV1beta1.Options
+import typings.googleapis.googleapisStrings.v1beta1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn9 extends StObject {
   
-  def apply(options: Options): Analyticsreporting = js.native
-  def apply(version: v4): Analyticsreporting = js.native
+  def apply(options: Options): Alertcenter = js.native
+  def apply(version: v1beta1): Alertcenter = js.native
 }

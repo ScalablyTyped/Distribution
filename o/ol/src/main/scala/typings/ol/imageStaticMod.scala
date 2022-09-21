@@ -15,7 +15,7 @@ object imageStaticMod {
   
   @JSImport("ol/source/ImageStatic", JSImport.Default)
   @js.native
-  class default protected () extends Static {
+  open class default protected () extends Static {
     def this(options: Options) = this()
   }
   
@@ -23,7 +23,7 @@ object imageStaticMod {
     
     var attributions: js.UndefOr[AttributionLike] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[Null | String] = js.undefined
     
     var imageExtent: js.UndefOr[Extent] = js.undefined
     
@@ -52,9 +52,11 @@ object imageStaticMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       

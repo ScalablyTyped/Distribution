@@ -25,9 +25,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a line inside a worksheet. To get the corresponding `Shape` object, use `Line.shape`.
   *
-  * Represents a line inside a worksheet. To get the corresponding Shape object, use `Line.shape`.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -36,41 +36,41 @@ trait Line
      with ClientObject {
   
   /**
-    *
     * Represents the length of the arrowhead at the beginning of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadLength: ArrowheadLength | Short | Medium | Long = js.native
   
   /**
-    *
     * Represents the style of the arrowhead at the beginning of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadStyle: ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open = js.native
   
   /**
-    *
     * Represents the width of the arrowhead at the beginning of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadWidth: ArrowheadWidth | Narrow | Medium | Wide = js.native
   
   /**
-    *
     * Represents the shape to which the beginning of the specified line is attached.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val beginConnectedShape: Shape = js.native
   
   /**
+    * Represents the connection site to which the beginning of a connector is connected. Returns `null` when the beginning of the line is not attached to any shape.
     *
-    * Represents the connection site to which the beginning of a connector is connected. Returns null when the beginning of the line is not attached to any shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val beginConnectedSite: Double = js.native
@@ -78,6 +78,7 @@ trait Line
   /**
     * Attaches the beginning of the specified connector to a specified shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
     * @param shape The shape to connect.
@@ -88,6 +89,7 @@ trait Line
   /**
     * Attaches the end of the specified connector to a specified shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
     * @param shape The shape to connect.
@@ -96,9 +98,9 @@ trait Line
   def connectEndShape(shape: Shape, connectionSite: Double): Unit = js.native
   
   /**
-    *
     * Represents the connector type for the line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var connectorType: ConnectorType | Straight | Elbow | Curve = js.native
@@ -110,6 +112,7 @@ trait Line
   /**
     * Detaches the beginning of the specified connector from a shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def disconnectBeginShape(): Unit = js.native
@@ -117,70 +120,71 @@ trait Line
   /**
     * Detaches the end of the specified connector from a shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def disconnectEndShape(): Unit = js.native
   
   /**
-    *
     * Represents the length of the arrowhead at the end of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endArrowheadLength: ArrowheadLength | Short | Medium | Long = js.native
   
   /**
-    *
     * Represents the style of the arrowhead at the end of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endArrowheadStyle: ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open = js.native
   
   /**
-    *
     * Represents the width of the arrowhead at the end of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endArrowheadWidth: ArrowheadWidth | Narrow | Medium | Wide = js.native
   
   /**
-    *
     * Represents the shape to which the end of the specified line is attached.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val endConnectedShape: Shape = js.native
   
   /**
+    * Represents the connection site to which the end of a connector is connected. Returns `null` when the end of the line is not attached to any shape.
     *
-    * Represents the connection site to which the end of a connector is connected. Returns null when the end of the line is not attached to any shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val endConnectedSite: Double = js.native
   
   /**
-    *
     * Specifies the shape identifier.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val id: String = js.native
   
   /**
-    *
     * Specifies if the beginning of the specified line is connected to a shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val isBeginConnected: Boolean = js.native
   
   /**
-    *
     * Specifies if the end of the specified line is connected to a shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val isEndConnected: Boolean = js.native
@@ -196,14 +200,8 @@ trait Line
   def load(propertyNames: String): Line = js.native
   def load(propertyNames: js.Array[String]): Line = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.Line): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -213,9 +211,9 @@ trait Line
   def set(properties: Line): Unit = js.native
   
   /**
+    * Returns the `Shape` object associated with the line.
     *
-    * Returns the Shape object associated with the line.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val shape: Shape = js.native

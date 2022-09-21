@@ -25,7 +25,7 @@ object utilsMod extends Shortcut {
     /**
       * Merge objects
       */
-    def assign(target: js.Any, sources: js.Any*): js.Any
+    def assign(target: Any, sources: Any*): Any
     
     def escapeHtml(str: String): String
     
@@ -36,7 +36,7 @@ object utilsMod extends Shortcut {
     /**
       * has own property
       */
-    def has(obj: js.Any, key: /* keyof any */ String): Boolean
+    def has(obj: Any, key: /* keyof any */ String): Boolean
     
     /**
       * Markdown ASCII punctuation characters.
@@ -58,7 +58,7 @@ object utilsMod extends Shortcut {
     /**
       * Check if the type is string or not
       */
-    def isString(obj: js.Any): /* is string */ Boolean
+    def isString(obj: Any): /* is string */ Boolean
     
     def isValidEntityCode(code: Double): Boolean
     
@@ -81,16 +81,16 @@ object utilsMod extends Shortcut {
   object Utils {
     
     inline def apply(
-      arrayReplaceAt: (js.Array[js.Any], Double, js.Array[js.Any]) => js.Array[js.Any],
-      assign: (js.Any, /* repeated */ js.Any) => js.Any,
+      arrayReplaceAt: (js.Array[Any], Double, js.Array[Any]) => js.Array[Any],
+      assign: (Any, /* repeated */ Any) => Any,
       escapeHtml: String => String,
       escapeRE: String => String,
       fromCodePoint: Double => String,
-      has: (js.Any, /* keyof any */ String) => Boolean,
+      has: (Any, /* keyof any */ String) => Boolean,
       isMdAsciiPunct: Double => Boolean,
       isPunctChar: String => Boolean,
       isSpace: Double => Boolean,
-      isString: js.Any => /* is string */ Boolean,
+      isString: Any => /* is string */ Boolean,
       isValidEntityCode: Double => Boolean,
       isWhiteSpace: Double => Boolean,
       lib: Mdurl,
@@ -104,9 +104,9 @@ object utilsMod extends Shortcut {
     
     extension [Self <: Utils](x: Self) {
       
-      inline def setArrayReplaceAt(value: (js.Array[js.Any], Double, js.Array[js.Any]) => js.Array[js.Any]): Self = StObject.set(x, "arrayReplaceAt", js.Any.fromFunction3(value))
+      inline def setArrayReplaceAt(value: (js.Array[Any], Double, js.Array[Any]) => js.Array[Any]): Self = StObject.set(x, "arrayReplaceAt", js.Any.fromFunction3(value))
       
-      inline def setAssign(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "assign", js.Any.fromFunction2(value))
+      inline def setAssign(value: (Any, /* repeated */ Any) => Any): Self = StObject.set(x, "assign", js.Any.fromFunction2(value))
       
       inline def setEscapeHtml(value: String => String): Self = StObject.set(x, "escapeHtml", js.Any.fromFunction1(value))
       
@@ -114,7 +114,7 @@ object utilsMod extends Shortcut {
       
       inline def setFromCodePoint(value: Double => String): Self = StObject.set(x, "fromCodePoint", js.Any.fromFunction1(value))
       
-      inline def setHas(value: (js.Any, /* keyof any */ String) => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction2(value))
+      inline def setHas(value: (Any, /* keyof any */ String) => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction2(value))
       
       inline def setIsMdAsciiPunct(value: Double => Boolean): Self = StObject.set(x, "isMdAsciiPunct", js.Any.fromFunction1(value))
       
@@ -122,7 +122,7 @@ object utilsMod extends Shortcut {
       
       inline def setIsSpace(value: Double => Boolean): Self = StObject.set(x, "isSpace", js.Any.fromFunction1(value))
       
-      inline def setIsString(value: js.Any => /* is string */ Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction1(value))
+      inline def setIsString(value: Any => /* is string */ Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction1(value))
       
       inline def setIsValidEntityCode(value: Double => Boolean): Self = StObject.set(x, "isValidEntityCode", js.Any.fromFunction1(value))
       

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "CheckoutOptions")
 @js.native
-class CheckoutOptions ()
+open class CheckoutOptions ()
   extends typings.nodegit.checkoutOptionsMod.CheckoutOptions

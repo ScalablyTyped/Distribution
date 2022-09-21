@@ -23,12 +23,12 @@ object RadarData {
     
     inline def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
     
-    inline def setDataSetsVarargs(value: RadarDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
+    inline def setDataSetsVarargs(value: RadarDataset*): Self = StObject.set(x, "dataSets", js.Array(value*))
     
     inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value*))
   }
 }

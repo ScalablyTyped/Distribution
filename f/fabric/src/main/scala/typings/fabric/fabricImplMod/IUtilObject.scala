@@ -10,18 +10,18 @@ trait IUtilObject extends StObject {
     * Creates an empty object and copies all enumerable properties of another object to it
     * @param object Object to clone
     */
-  def clone(`object`: js.Any): js.Any
+  def clone(`object`: Any): Any
   
   /**
     * Copies all enumerable properties of one object to another
     * @param destination Where to copy to
     * @param source Where to copy from
     */
-  def extend(destination: js.Any, source: js.Any): js.Any
+  def extend(destination: Any, source: Any): Any
 }
 object IUtilObject {
   
-  inline def apply(clone_ : js.Any => js.Any, extend: (js.Any, js.Any) => js.Any): IUtilObject = {
+  inline def apply(clone_ : Any => Any, extend: (Any, Any) => Any): IUtilObject = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction2(extend))
     __obj.updateDynamic("clone")(js.Any.fromFunction1(clone_))
     __obj.asInstanceOf[IUtilObject]
@@ -29,8 +29,8 @@ object IUtilObject {
   
   extension [Self <: IUtilObject](x: Self) {
     
-    inline def setClone_(value: js.Any => js.Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
+    inline def setClone_(value: Any => Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
     
-    inline def setExtend(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
+    inline def setExtend(value: (Any, Any) => Any): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
   }
 }

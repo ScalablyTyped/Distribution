@@ -22,6 +22,6 @@ object global {
     inline def hasProperty(obj: Null, name: Property): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasProperty")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def hasProperty(obj: Unit, name: Property): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasProperty")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def setPathValue(obj: js.Object, path: String, `val`: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setPathValue")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def setPathValue(obj: js.Object, path: String, `val`: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setPathValue")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   }
 }

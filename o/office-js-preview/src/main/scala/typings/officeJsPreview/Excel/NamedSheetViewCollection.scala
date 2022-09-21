@@ -11,11 +11,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the collection of sheet views in the worksheet.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * @remarks
+  * [Api set: ExcelApiOnline 1.1]
   */
 @js.native
 trait NamedSheetViewCollection
@@ -25,8 +24,8 @@ trait NamedSheetViewCollection
   /**
     * Creates a new sheet view with the given name.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApiOnline 1.1]
     *
     * @param name The name of the sheet view to be created.
     Throws an error when the provided name already exists, is empty, or is a name reserved by the worksheet.
@@ -43,8 +42,8 @@ trait NamedSheetViewCollection
     Temporary views are removed when closing the application, exiting the temporary view with the exit method, or switching to another sheet view.
     The temporary sheet view can also be acccessed with the empty string (""), if the temporary view exists.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApiOnline 1.1]
     * @returns The newly created sheet view object.
     */
   def enterTemporary(): NamedSheetView = js.native
@@ -52,16 +51,16 @@ trait NamedSheetViewCollection
   /**
     * Exits the currently active sheet view.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApiOnline 1.1]
     */
   def exit(): Unit = js.native
   
   /**
     * Gets the worksheet's currently active sheet view.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApiOnline 1.1]
     * @returns The currently active sheet view for this worksheet.
     */
   def getActive(): NamedSheetView = js.native
@@ -70,32 +69,47 @@ trait NamedSheetViewCollection
     * Gets the number of sheet views in this worksheet.
     Includes the temporary sheet view if it exists.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApiOnline 1.1]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
     * Gets a sheet view using its name.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApiOnline 1.1]
     *
     * @param key The case-sensitive name of the sheet view. Use the empty string ("") to get the temporary sheet view, if the temporary view exists.
-    * @returns The sheet view with the given name, or the temporary view if the empty string was provided. If there is no current temporary view and the empty string was provided, then an error is thrown.
+    * @returns The sheet view with the given name, or the temporary view if an empty string was provided. If there is no current temporary view and an empty string was provided, then an `ItemNotFound` error is thrown.
     */
   def getItem(key: String): NamedSheetView = js.native
   
   /**
     * Gets a sheet view by its index in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApiOnline 1.1]
     *
     * @param index The index of the sheet view object in the collection.
     * @returns The sheet view at the given index.
     */
   def getItemAt(index: Double): NamedSheetView = js.native
+  
+  /**
+    * Gets a sheet view using its name.
+    If the sheet view object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param key The case-sensitive name of the sheet view.
+    Use the empty string ("") to get the temporary sheet view, if the temporary view exists.
+    * @returns The sheet view with the given name, or the temporary view if an empty string was provided.
+    */
+  def getItemOrNullObject(key: String): NamedSheetView = js.native
   
   /** Gets the loaded child items in this collection. */
   val items: js.Array[NamedSheetView] = js.native

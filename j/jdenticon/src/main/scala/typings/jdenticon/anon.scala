@@ -33,13 +33,13 @@ object anon {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setGrayscale(value: js.Array[Double]): Self = StObject.set(x, "grayscale", value.asInstanceOf[js.Any])
       
       inline def setGrayscaleUndefined: Self = StObject.set(x, "grayscale", js.undefined)
       
-      inline def setGrayscaleVarargs(value: Double*): Self = StObject.set(x, "grayscale", js.Array(value :_*))
+      inline def setGrayscaleVarargs(value: Double*): Self = StObject.set(x, "grayscale", js.Array(value*))
     }
   }
   

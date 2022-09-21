@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the formatting object for chart points.
   *
-  * Represents formatting object for chart points.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait ChartPointFormatLoadOptions extends StObject {
@@ -19,9 +19,9 @@ trait ChartPointFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the border format of a chart data point, which includes color, style, and weight information.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var border: js.UndefOr[ChartBorderLoadOptions] = js.undefined

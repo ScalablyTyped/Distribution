@@ -10,10 +10,10 @@ object assessmentMod {
   
   @JSImport("material-ui/svg-icons/action/assessment", JSImport.Default)
   @js.native
-  class default () extends ActionAssessment
+  open class default () extends ActionAssessment
   
   @JSImport("material-ui/svg-icons/action/assessment", "ActionAssessment")
   @js.native
-  class ActionAssessment ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionAssessment ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

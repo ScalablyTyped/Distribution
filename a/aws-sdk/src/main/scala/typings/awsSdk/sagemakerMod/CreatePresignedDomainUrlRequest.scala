@@ -12,7 +12,12 @@ trait CreatePresignedDomainUrlRequest extends StObject {
   var DomainId: typings.awsSdk.sagemakerMod.DomainId
   
   /**
-    * The session expiration duration in seconds.
+    * The number of seconds until the pre-signed URL expires. This value defaults to 300.
+    */
+  var ExpiresInSeconds: js.UndefOr[typings.awsSdk.sagemakerMod.ExpiresInSeconds] = js.undefined
+  
+  /**
+    * The session expiration duration in seconds. This value defaults to 43200.
     */
   var SessionExpirationDurationInSeconds: js.UndefOr[typings.awsSdk.sagemakerMod.SessionExpirationDurationInSeconds] = js.undefined
   
@@ -31,6 +36,10 @@ object CreatePresignedDomainUrlRequest {
   extension [Self <: CreatePresignedDomainUrlRequest](x: Self) {
     
     inline def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
+    
+    inline def setExpiresInSeconds(value: ExpiresInSeconds): Self = StObject.set(x, "ExpiresInSeconds", value.asInstanceOf[js.Any])
+    
+    inline def setExpiresInSecondsUndefined: Self = StObject.set(x, "ExpiresInSeconds", js.undefined)
     
     inline def setSessionExpirationDurationInSeconds(value: SessionExpirationDurationInSeconds): Self = StObject.set(x, "SessionExpirationDurationInSeconds", value.asInstanceOf[js.Any])
     

@@ -22,10 +22,10 @@ object mod {
   
   @JSImport("react-native-star-rating", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[StarRatingProps, js.Object, js.Any]
+  open class default ()
+    extends Component[StarRatingProps, js.Object, Any]
   
-  type StarRating = Component[StarRatingProps, js.Object, js.Any]
+  type StarRating = Component[StarRatingProps, js.Object, Any]
   
   trait StarRatingProps extends StObject {
     

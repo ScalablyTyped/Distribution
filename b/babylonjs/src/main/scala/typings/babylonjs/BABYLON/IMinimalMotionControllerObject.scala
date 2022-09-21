@@ -34,16 +34,16 @@ object IMinimalMotionControllerObject {
     
     inline def setAxes(value: js.Array[Double]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
-    inline def setAxesVarargs(value: Double*): Self = StObject.set(x, "axes", js.Array(value :_*))
+    inline def setAxesVarargs(value: Double*): Self = StObject.set(x, "axes", js.Array(value*))
     
     inline def setButtons(value: js.Array[Pressed]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    inline def setButtonsVarargs(value: Pressed*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: Pressed*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setHapticActuators(value: js.Array[Pulse]): Self = StObject.set(x, "hapticActuators", value.asInstanceOf[js.Any])
     
     inline def setHapticActuatorsUndefined: Self = StObject.set(x, "hapticActuators", js.undefined)
     
-    inline def setHapticActuatorsVarargs(value: Pulse*): Self = StObject.set(x, "hapticActuators", js.Array(value :_*))
+    inline def setHapticActuatorsVarargs(value: Pulse*): Self = StObject.set(x, "hapticActuators", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ object viewArrayMod {
   
   @JSImport("material-ui/svg-icons/action/view-array", JSImport.Default)
   @js.native
-  class default () extends ActionViewArray
+  open class default () extends ActionViewArray
   
   @JSImport("material-ui/svg-icons/action/view-array", "ActionViewArray")
   @js.native
-  class ActionViewArray ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionViewArray ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

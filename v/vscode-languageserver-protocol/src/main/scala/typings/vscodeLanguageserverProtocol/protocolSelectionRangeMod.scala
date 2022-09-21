@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol
 
-import typings.vscodeJsonrpc.mod.ProgressType
-import typings.vscodeJsonrpc.mod.RequestHandler
+import typings.vscodeJsonrpc.connectionMod.RequestHandler
+import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.PartialResultParams
 import typings.vscodeLanguageserverProtocol.protocolMod.StaticRegistrationOptions
@@ -20,22 +20,21 @@ object protocolSelectionRangeMod {
   
   object SelectionRangeRequest {
     
-    @JSImport("vscode-languageserver-protocol/lib/protocol.selectionRange", "SelectionRangeRequest.method")
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.selectionRange", "SelectionRangeRequest.messageDirection")
+    @js.native
+    val messageDirection: MessageDirection = js.native
+    
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.selectionRange", "SelectionRangeRequest.method")
     @js.native
     val method: textDocumentSlashselectionRange = js.native
     
-    /** @deprecated  Use SelectionRangeRequest.type */
-    @JSImport("vscode-languageserver-protocol/lib/protocol.selectionRange", "SelectionRangeRequest.resultType")
-    @js.native
-    val resultType: ProgressType[js.Array[SelectionRange]] = js.native
-    
-    @JSImport("vscode-languageserver-protocol/lib/protocol.selectionRange", "SelectionRangeRequest.type")
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.selectionRange", "SelectionRangeRequest.type")
     @js.native
     val `type`: ProtocolRequestType[
         SelectionRangeParams, 
         js.Array[SelectionRange] | Null, 
         js.Array[SelectionRange], 
-        js.Any, 
+        Unit, 
         SelectionRangeRegistrationOptions
       ] = js.native
     
@@ -94,7 +93,7 @@ object protocolSelectionRangeMod {
       
       inline def setPositions(value: js.Array[Position]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
       
-      inline def setPositionsVarargs(value: Position*): Self = StObject.set(x, "positions", js.Array(value :_*))
+      inline def setPositionsVarargs(value: Position*): Self = StObject.set(x, "positions", js.Array(value*))
       
       inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
     }

@@ -226,7 +226,7 @@ object anon {
       
       inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value*))
       
       inline def setOptions(value: () => IDialogOptions): Self = StObject.set(x, "options", js.Any.fromFunction0(value))
     }

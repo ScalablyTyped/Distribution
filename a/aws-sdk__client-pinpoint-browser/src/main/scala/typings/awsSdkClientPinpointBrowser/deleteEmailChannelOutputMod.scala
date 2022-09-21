@@ -8,5 +8,5 @@ object deleteEmailChannelOutputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/DeleteEmailChannelOutput", "DeleteEmailChannelOutput")
   @js.native
-  val DeleteEmailChannelOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteEmailChannelOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -10,10 +10,10 @@ object settingsPhoneMod {
   
   @JSImport("material-ui/svg-icons/action/settings-phone", JSImport.Default)
   @js.native
-  class default () extends ActionSettingsPhone
+  open class default () extends ActionSettingsPhone
   
   @JSImport("material-ui/svg-icons/action/settings-phone", "ActionSettingsPhone")
   @js.native
-  class ActionSettingsPhone ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSettingsPhone ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

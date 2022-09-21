@@ -34,7 +34,7 @@ object global {
       * This is safe to use as long as the object is only used from a single thread and no other hashes are created while operating on this one.
       * If this constraint cannot be met, you can use new to create a new state object
       */
-    class Class ()
+    open class Class ()
       extends StObject
          with typings.imurmurhash.mod.MurmurHash3 {
       def this(text: String) = this()

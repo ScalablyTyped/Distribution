@@ -2,7 +2,6 @@ package typings.graphiteUdp
 
 import typings.graphiteUdp.graphiteUdpStrings.udp4
 import typings.graphiteUdp.graphiteUdpStrings.udp6
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object mod {
   
   @JSImport("graphite-udp", "Client")
   @js.native
-  class Client () extends StObject {
+  open class Client () extends StObject {
     def this(clientOptions: ClientOptions) = this()
     
     /**
@@ -45,7 +44,7 @@ object mod {
       * called when metrics are sent
       * Defaults to null
       */
-    var callback: js.UndefOr[js.Function2[/* error */ Error, /* metrics */ js.Any, Unit]] = js.undefined
+    var callback: js.UndefOr[js.Function2[/* error */ js.Error, /* metrics */ Any, Unit]] = js.undefined
     
     /**
       * graphite server host or ip
@@ -104,7 +103,7 @@ object mod {
     
     extension [Self <: ClientOptions](x: Self) {
       
-      inline def setCallback(value: (/* error */ Error, /* metrics */ js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* error */ js.Error, /* metrics */ Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       

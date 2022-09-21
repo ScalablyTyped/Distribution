@@ -57,32 +57,32 @@ object mod {
   inline def isValidated(response: ValidationResponse): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidated")(response.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def refreshGoogleToken(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshGoogleToken")().asInstanceOf[js.Promise[Unit]]
-  inline def refreshGoogleToken(callback: js.Function1[/* err */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshGoogleToken")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def refreshGoogleToken(callback: js.Function1[/* err */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshGoogleToken")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
   inline def setup(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[js.Promise[Unit]]
-  inline def setup(callback: js.Function1[/* err */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setup(callback: js.Function1[/* err */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def validate(receipt: Receipt): js.Promise[ValidationResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(receipt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ValidationResponse]]
-  inline def validate(receipt: Receipt, callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(receipt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validate(receipt: Receipt, callback: js.Function2[/* err */ Any, /* res */ ValidationResponse, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(receipt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def validate(
     service: Service,
     receipt: Receipt,
-    callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, Unit]
+    callback: js.Function2[/* err */ Any, /* res */ ValidationResponse, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(service.asInstanceOf[js.Any], receipt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def validateOnce(receipt: Receipt, secretOrPubKey: js.Any): js.Promise[ValidationResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateOnce")(receipt.asInstanceOf[js.Any], secretOrPubKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValidationResponse]]
+  inline def validateOnce(receipt: Receipt, secretOrPubKey: Any): js.Promise[ValidationResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("validateOnce")(receipt.asInstanceOf[js.Any], secretOrPubKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValidationResponse]]
   inline def validateOnce(
     receipt: Receipt,
-    secretOrPubKey: js.Any,
-    callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, Unit]
+    secretOrPubKey: Any,
+    callback: js.Function2[/* err */ Any, /* res */ ValidationResponse, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateOnce")(receipt.asInstanceOf[js.Any], secretOrPubKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def validateOnce(
     service: Service,
-    secretOrPubKey: js.Any,
+    secretOrPubKey: Any,
     receipt: Receipt,
-    callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, Unit]
+    callback: js.Function2[/* err */ Any, /* res */ ValidationResponse, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateOnce")(service.asInstanceOf[js.Any], secretOrPubKey.asInstanceOf[js.Any], receipt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type AmazonReceipt = js.Object | String

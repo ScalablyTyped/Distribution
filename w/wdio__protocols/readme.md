@@ -1,7 +1,7 @@
 
 # Scala.js typings for wdio__protocols
 
-Typings are for version 6.8.0
+Typings are for version 7.22.0
 
 ## Library description:
 Utility package providing information about automation protocols
@@ -10,10 +10,10 @@ Utility package providing information about automation protocols
 | ------------------ | :-------------: |
 | Full name          | @wdio/protocols |
 | Keywords           | webdriver, wdio |
-| # releases         | 35 |
-| # dependents       | 4 |
-| # downloads        | 20565858 |
-| # stars            | 0 |
+| # releases         | 41 |
+| # dependents       | 0.0 |
+| # downloads        | 3755385.3333333335 |
+| # stars            | 7696.0 |
 
 ## Links
 - [Homepage](https://github.com/webdriverio/webdriverio/tree/main/packages/wdio-protocols)

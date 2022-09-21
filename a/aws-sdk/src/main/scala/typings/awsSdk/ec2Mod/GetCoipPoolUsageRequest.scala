@@ -12,7 +12,7 @@ trait GetCoipPoolUsageRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The filters. The following are the possible values:    coip-address-usage.allocation-id       coip-address-usage.aws-account-id       coip-address-usage.aws-service       coip-address-usage.co-ip   
+    * One or more filters.    coip-address-usage.allocation-id - The allocation ID of the address.    coip-address-usage.aws-account-id - The ID of the Amazon Web Services account that is using the customer-owned IP address.    coip-address-usage.aws-service - The Amazon Web Services service that is using the customer-owned IP address.    coip-address-usage.co-ip - The customer-owned IP address.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
@@ -29,11 +29,11 @@ trait GetCoipPoolUsageRequest extends StObject {
   /**
     * The ID of the address pool.
     */
-  var PoolId: CoipPoolId
+  var PoolId: Ipv4PoolCoipId
 }
 object GetCoipPoolUsageRequest {
   
-  inline def apply(PoolId: CoipPoolId): GetCoipPoolUsageRequest = {
+  inline def apply(PoolId: Ipv4PoolCoipId): GetCoipPoolUsageRequest = {
     val __obj = js.Dynamic.literal(PoolId = PoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCoipPoolUsageRequest]
   }
@@ -48,7 +48,7 @@ object GetCoipPoolUsageRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: CoipPoolMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -58,6 +58,6 @@ object GetCoipPoolUsageRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setPoolId(value: CoipPoolId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
+    inline def setPoolId(value: Ipv4PoolCoipId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
   }
 }

@@ -10,10 +10,10 @@ object scheduleMod {
   
   @JSImport("material-ui/svg-icons/action/schedule", JSImport.Default)
   @js.native
-  class default () extends ActionSchedule
+  open class default () extends ActionSchedule
   
   @JSImport("material-ui/svg-icons/action/schedule", "ActionSchedule")
   @js.native
-  class ActionSchedule ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSchedule ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -8,7 +8,7 @@ trait MetricThreshold extends StObject {
   
   /**
     * Specifies the alignment of data points in individual time series as well as how to combine the retrieved time series together (such as when aggregating multiple streams on each
-    * resource to a single stream for each resource or when aggregating streams across all members of a group of resrouces). Multiple aggregations are applied in the order specified.This
+    * resource to a single stream for each resource or when aggregating streams across all members of a group of resources). Multiple aggregations are applied in the order specified.This
     * field is similar to the one in the ListTimeSeries request (https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.timeSeries/list). It is advisable to use the
     * ListTimeSeries method when debugging this field.
     */
@@ -42,11 +42,14 @@ trait MetricThreshold extends StObject {
     */
   var duration: js.UndefOr[String] = js.undefined
   
+  /** A condition control that determines how metric-threshold conditions are evaluated when data stops arriving. */
+  var evaluationMissingData: js.UndefOr[String] = js.undefined
+  
   /**
-    * A filter (https://cloud.google.com/monitoring/api/v3/filters) that identifies which time series should be compared with the threshold.The filter is similar to the one that is
-    * specified in the ListTimeSeries request (https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.timeSeries/list) (that call is useful to verify the time series that will be
-    * retrieved / processed). The filter must specify the metric type and the resource type. Optionally, it can specify resource labels and metric labels. This field must not exceed 2048
-    * Unicode characters in length.
+    * Required. A filter (https://cloud.google.com/monitoring/api/v3/filters) that identifies which time series should be compared with the threshold.The filter is similar to the one that
+    * is specified in the ListTimeSeries request (https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.timeSeries/list) (that call is useful to verify the time series that will
+    * be retrieved / processed). The filter must specify the metric type and the resource type. Optionally, it can specify resource labels and metric labels. This field must not exceed
+    * 2048 Unicode characters in length.
     */
   var filter: js.UndefOr[String] = js.undefined
   
@@ -72,7 +75,7 @@ object MetricThreshold {
     
     inline def setAggregationsUndefined: Self = StObject.set(x, "aggregations", js.undefined)
     
-    inline def setAggregationsVarargs(value: Aggregation*): Self = StObject.set(x, "aggregations", js.Array(value :_*))
+    inline def setAggregationsVarargs(value: Aggregation*): Self = StObject.set(x, "aggregations", js.Array(value*))
     
     inline def setComparison(value: String): Self = StObject.set(x, "comparison", value.asInstanceOf[js.Any])
     
@@ -82,7 +85,7 @@ object MetricThreshold {
     
     inline def setDenominatorAggregationsUndefined: Self = StObject.set(x, "denominatorAggregations", js.undefined)
     
-    inline def setDenominatorAggregationsVarargs(value: Aggregation*): Self = StObject.set(x, "denominatorAggregations", js.Array(value :_*))
+    inline def setDenominatorAggregationsVarargs(value: Aggregation*): Self = StObject.set(x, "denominatorAggregations", js.Array(value*))
     
     inline def setDenominatorFilter(value: String): Self = StObject.set(x, "denominatorFilter", value.asInstanceOf[js.Any])
     
@@ -91,6 +94,10 @@ object MetricThreshold {
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setEvaluationMissingData(value: String): Self = StObject.set(x, "evaluationMissingData", value.asInstanceOf[js.Any])
+    
+    inline def setEvaluationMissingDataUndefined: Self = StObject.set(x, "evaluationMissingData", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

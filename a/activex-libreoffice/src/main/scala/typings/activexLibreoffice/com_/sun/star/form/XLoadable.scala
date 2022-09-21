@@ -56,7 +56,7 @@ object XLoadable {
     addLoadListener: XLoadListener => Unit,
     isLoaded: () => Boolean,
     load: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     reload: () => Unit,
     removeLoadListener: XLoadListener => Unit,

@@ -38,7 +38,7 @@ object XTextContentAppend {
     acquire: () => Unit,
     appendTextContent: (XTextContent, PropertyValues) => XTextRange,
     insertTextContentWithProperties: (XTextContent, PropertyValues, XTextRange) => XTextRange,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTextContentAppend = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), appendTextContent = js.Any.fromFunction2(appendTextContent), insertTextContentWithProperties = js.Any.fromFunction3(insertTextContentWithProperties), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

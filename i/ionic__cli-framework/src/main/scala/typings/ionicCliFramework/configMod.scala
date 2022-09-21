@@ -12,16 +12,16 @@ object configMod {
   @js.native
   abstract class BaseConfig[T /* <: js.Object */] protected () extends StObject {
     def this(p: String) = this()
-    def this(p: String, hasPathPrefix: BaseConfigOptions) = this()
+    def this(p: String, hasSpacesPathPrefix: BaseConfigOptions) = this()
     
-    /* private */ var _getFile: js.Any = js.native
+    /* private */ var _getFile: Any = js.native
     
-    /* private */ var _setFile: js.Any = js.native
+    /* private */ var _setFile: Any = js.native
     
     def c: T = js.native
     def c_=(value: T): Unit = js.native
     
-    def file: js.Any = js.native
+    def file: Any = js.native
     
     def get[P /* <: /* keyof T */ String */](property: P): /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any = js.native
     def get[P /* <: /* keyof T */ String */](
@@ -44,6 +44,8 @@ object configMod {
       value: /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
     ): Unit = js.native
     
+    /* protected */ val spaces: String | Double = js.native
+    
     def unset[P /* <: /* keyof T */ String */](property: P): Unit = js.native
   }
   
@@ -57,6 +59,11 @@ object configMod {
       * use `pathPrefix` of `['a', 'b', 'c']`.
       */
     var pathPrefix: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * The number of spaces to use when writing the JSON file.
+      */
+    var spaces: js.UndefOr[String | Double] = js.undefined
   }
   object BaseConfigOptions {
     
@@ -71,7 +78,11 @@ object configMod {
       
       inline def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
       
-      inline def setPathPrefixVarargs(value: String*): Self = StObject.set(x, "pathPrefix", js.Array(value :_*))
+      inline def setPathPrefixVarargs(value: String*): Self = StObject.set(x, "pathPrefix", js.Array(value*))
+      
+      inline def setSpaces(value: String | Double): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+      
+      inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
     }
   }
 }

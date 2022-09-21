@@ -142,7 +142,7 @@ trait Zone extends StObject {
     * @param task
     * @returns {any}
     */
-  def cancelTask(task: Task): js.Any = js.native
+  def cancelTask(task: Task): Any = js.native
   
   /**
     * Used to create a child zone.
@@ -161,7 +161,7 @@ trait Zone extends StObject {
     * @param key The key to retrieve.
     * @returns {any} The value for the key, or `undefined` if not found.
     */
-  def get(key: String): js.Any = js.native
+  def get(key: String): Any = js.native
   
   /**
     * Returns a Zone which defines a `key`.
@@ -196,12 +196,12 @@ trait Zone extends StObject {
     * @returns {any} Value from the `callback` function.
     */
   def run[T](callback: js.Function): T = js.native
-  def run[T](callback: js.Function, applyThis: js.Any): T = js.native
-  def run[T](callback: js.Function, applyThis: js.Any, applyArgs: js.Array[js.Any]): T = js.native
-  def run[T](callback: js.Function, applyThis: js.Any, applyArgs: js.Array[js.Any], source: String): T = js.native
-  def run[T](callback: js.Function, applyThis: js.Any, applyArgs: Unit, source: String): T = js.native
-  def run[T](callback: js.Function, applyThis: Unit, applyArgs: js.Array[js.Any]): T = js.native
-  def run[T](callback: js.Function, applyThis: Unit, applyArgs: js.Array[js.Any], source: String): T = js.native
+  def run[T](callback: js.Function, applyThis: Any): T = js.native
+  def run[T](callback: js.Function, applyThis: Any, applyArgs: js.Array[Any]): T = js.native
+  def run[T](callback: js.Function, applyThis: Any, applyArgs: js.Array[Any], source: String): T = js.native
+  def run[T](callback: js.Function, applyThis: Any, applyArgs: Unit, source: String): T = js.native
+  def run[T](callback: js.Function, applyThis: Unit, applyArgs: js.Array[Any]): T = js.native
+  def run[T](callback: js.Function, applyThis: Unit, applyArgs: js.Array[Any], source: String): T = js.native
   def run[T](callback: js.Function, applyThis: Unit, applyArgs: Unit, source: String): T = js.native
   
   /**
@@ -219,12 +219,12 @@ trait Zone extends StObject {
     * @returns {any} Value from the `callback` function.
     */
   def runGuarded[T](callback: js.Function): T = js.native
-  def runGuarded[T](callback: js.Function, applyThis: js.Any): T = js.native
-  def runGuarded[T](callback: js.Function, applyThis: js.Any, applyArgs: js.Array[js.Any]): T = js.native
-  def runGuarded[T](callback: js.Function, applyThis: js.Any, applyArgs: js.Array[js.Any], source: String): T = js.native
-  def runGuarded[T](callback: js.Function, applyThis: js.Any, applyArgs: Unit, source: String): T = js.native
-  def runGuarded[T](callback: js.Function, applyThis: Unit, applyArgs: js.Array[js.Any]): T = js.native
-  def runGuarded[T](callback: js.Function, applyThis: Unit, applyArgs: js.Array[js.Any], source: String): T = js.native
+  def runGuarded[T](callback: js.Function, applyThis: Any): T = js.native
+  def runGuarded[T](callback: js.Function, applyThis: Any, applyArgs: js.Array[Any]): T = js.native
+  def runGuarded[T](callback: js.Function, applyThis: Any, applyArgs: js.Array[Any], source: String): T = js.native
+  def runGuarded[T](callback: js.Function, applyThis: Any, applyArgs: Unit, source: String): T = js.native
+  def runGuarded[T](callback: js.Function, applyThis: Unit, applyArgs: js.Array[Any]): T = js.native
+  def runGuarded[T](callback: js.Function, applyThis: Unit, applyArgs: js.Array[Any], source: String): T = js.native
   def runGuarded[T](callback: js.Function, applyThis: Unit, applyArgs: Unit, source: String): T = js.native
   
   /**
@@ -236,9 +236,9 @@ trait Zone extends StObject {
     * @returns {any} Value from the `task.callback` function.
     */
   def runTask[T](task: Task): T = js.native
-  def runTask[T](task: Task, applyThis: js.Any): T = js.native
-  def runTask[T](task: Task, applyThis: js.Any, applyArgs: js.Any): T = js.native
-  def runTask[T](task: Task, applyThis: Unit, applyArgs: js.Any): T = js.native
+  def runTask[T](task: Task, applyThis: Any): T = js.native
+  def runTask[T](task: Task, applyThis: Any, applyArgs: Any): T = js.native
+  def runTask[T](task: Task, applyThis: Unit, applyArgs: Any): T = js.native
   
   /**
     * Schedule an EventTask.

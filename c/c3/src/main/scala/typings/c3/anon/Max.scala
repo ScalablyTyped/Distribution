@@ -11,7 +11,7 @@ trait Max extends StObject {
   
   var unit: js.UndefOr[String] = js.undefined
   
-  var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var values: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object Max {
   
@@ -30,10 +30,10 @@ object Max {
     
     inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

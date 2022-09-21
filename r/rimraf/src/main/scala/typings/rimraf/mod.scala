@@ -3,8 +3,7 @@ package typings.rimraf
 import typings.glob.mod.IOptions
 import typings.node.fsMod.Mode
 import typings.node.fsMod.PathLike
-import typings.node.fsMod.Stats
-import typings.rimraf.anon.Fn0
+import typings.node.fsMod.StatSyncFn
 import typings.rimraf.anon.FnCall
 import typings.rimraf.anon.FnCallPathOptions
 import typings.rimraf.anon.Typeofchmod
@@ -14,15 +13,18 @@ import typings.rimraf.anon.Typeofrmdir
 import typings.rimraf.anon.Typeofstat
 import typings.rimraf.anon.Typeofunlink
 import typings.rimraf.rimrafBooleans.`false`
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(path: String, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(path: String, options: Options, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(path: String, callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
+    path: String,
+    options: Options,
+    callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("rimraf", JSImport.Namespace)
   @js.native
@@ -54,21 +56,21 @@ object mod {
     
     var lstat: js.UndefOr[Typeoflstat] = js.undefined
     
-    var lstatSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.undefined
+    var lstatSync: js.UndefOr[StatSyncFn] = js.undefined
     
     var maxBusyTries: js.UndefOr[Double] = js.undefined
     
     var readdir: js.UndefOr[Typeofreaddir] = js.undefined
     
-    var readdirSync: js.UndefOr[Fn0] = js.undefined
+    var readdirSync: js.UndefOr[FnCallPathOptions] = js.undefined
     
     var rmdir: js.UndefOr[Typeofrmdir] = js.undefined
     
-    var rmdirSync: js.UndefOr[FnCallPathOptions] = js.undefined
+    var rmdirSync: js.UndefOr[FnCall] = js.undefined
     
     var stat: js.UndefOr[Typeofstat] = js.undefined
     
-    var statSync: js.UndefOr[FnCall] = js.undefined
+    var statSync: js.UndefOr[StatSyncFn] = js.undefined
     
     var unlink: js.UndefOr[Typeofunlink] = js.undefined
     
@@ -105,7 +107,7 @@ object mod {
       
       inline def setLstat(value: Typeoflstat): Self = StObject.set(x, "lstat", value.asInstanceOf[js.Any])
       
-      inline def setLstatSync(value: /* path */ PathLike => Stats): Self = StObject.set(x, "lstatSync", js.Any.fromFunction1(value))
+      inline def setLstatSync(value: StatSyncFn): Self = StObject.set(x, "lstatSync", value.asInstanceOf[js.Any])
       
       inline def setLstatSyncUndefined: Self = StObject.set(x, "lstatSync", js.undefined)
       
@@ -117,7 +119,7 @@ object mod {
       
       inline def setReaddir(value: Typeofreaddir): Self = StObject.set(x, "readdir", value.asInstanceOf[js.Any])
       
-      inline def setReaddirSync(value: Fn0): Self = StObject.set(x, "readdirSync", value.asInstanceOf[js.Any])
+      inline def setReaddirSync(value: FnCallPathOptions): Self = StObject.set(x, "readdirSync", value.asInstanceOf[js.Any])
       
       inline def setReaddirSyncUndefined: Self = StObject.set(x, "readdirSync", js.undefined)
       
@@ -125,7 +127,7 @@ object mod {
       
       inline def setRmdir(value: Typeofrmdir): Self = StObject.set(x, "rmdir", value.asInstanceOf[js.Any])
       
-      inline def setRmdirSync(value: FnCallPathOptions): Self = StObject.set(x, "rmdirSync", value.asInstanceOf[js.Any])
+      inline def setRmdirSync(value: FnCall): Self = StObject.set(x, "rmdirSync", value.asInstanceOf[js.Any])
       
       inline def setRmdirSyncUndefined: Self = StObject.set(x, "rmdirSync", js.undefined)
       
@@ -133,7 +135,7 @@ object mod {
       
       inline def setStat(value: Typeofstat): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
       
-      inline def setStatSync(value: FnCall): Self = StObject.set(x, "statSync", value.asInstanceOf[js.Any])
+      inline def setStatSync(value: StatSyncFn): Self = StObject.set(x, "statSync", value.asInstanceOf[js.Any])
       
       inline def setStatSyncUndefined: Self = StObject.set(x, "statSync", js.undefined)
       

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents accept information used in the Accept HTTP header on an HTTP request. */
 @JSGlobal("Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValue")
 @js.native
-class HttpMediaTypeWithQualityHeaderValue protected ()
+open class HttpMediaTypeWithQualityHeaderValue protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValue {
   /**

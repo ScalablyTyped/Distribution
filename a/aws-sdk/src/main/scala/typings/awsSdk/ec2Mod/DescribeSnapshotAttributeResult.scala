@@ -34,13 +34,13 @@ object DescribeSnapshotAttributeResult {
     
     inline def setCreateVolumePermissionsUndefined: Self = StObject.set(x, "CreateVolumePermissions", js.undefined)
     
-    inline def setCreateVolumePermissionsVarargs(value: CreateVolumePermission*): Self = StObject.set(x, "CreateVolumePermissions", js.Array(value :_*))
+    inline def setCreateVolumePermissionsVarargs(value: CreateVolumePermission*): Self = StObject.set(x, "CreateVolumePermissions", js.Array(value*))
     
     inline def setProductCodes(value: ProductCodeList): Self = StObject.set(x, "ProductCodes", value.asInstanceOf[js.Any])
     
     inline def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
-    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
+    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value*))
     
     inline def setSnapshotId(value: String): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     

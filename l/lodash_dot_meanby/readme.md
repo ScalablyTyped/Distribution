@@ -10,10 +10,10 @@ The lodash method `_.meanBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.meanby |
 | Keywords           | lodash-modularized, meanby |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 16021 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3861.6666666666665 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -12,7 +12,7 @@ object urlvariablesMod {
   /**
     * Default Constructor.
     */
-  class URLVariables () extends Dictionary[String] {
+  open class URLVariables () extends Dictionary[String] {
     /**
       * Construct from a URL-encoded string.
       *
@@ -25,7 +25,7 @@ object urlvariablesMod {
     /**
       * @hidden
       */
-    /* private */ var _Parse: js.Any = js.native
+    /* private */ var _Parse: Any = js.native
   }
   object URLVariables {
     
@@ -38,8 +38,8 @@ object urlvariablesMod {
     
     inline def stringify[T](obj: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    type Iterator = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<string, string> */ js.Any
+    type Iterator = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.Iterator<string, string> */ Any
     
-    type ReverseIterator = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.ReverseIterator<string, string> */ js.Any
+    type ReverseIterator = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap.ReverseIterator<string, string> */ Any
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetRequestedServiceQuotaChangeResponse extends StObject {
   
   /**
-    * Returns the RequestedServiceQuotaChange object for the specific increase request.
+    * Information about the quota increase request.
     */
   var RequestedQuota: js.UndefOr[RequestedServiceQuotaChange] = js.undefined
 }

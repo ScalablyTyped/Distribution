@@ -1,19 +1,19 @@
 
 # Scala.js typings for url-template
 
-Typings are for version 2.0.6
+Typings are for version 3.1.0
 
 ## Library description:
-This is a simple URI template implementation following the [RFC 6570 URI Template specification](http://tools.ietf.org/html/rfc6570). The implementation supports all levels defined in the specification and is extensively tested.
+A URI template implementation (RFC 6570 compliant)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | url-template |
 | Keywords           | uri-template, uri template, uri, url, rfc 6570, url template, url-template |
-| # releases         | 0 |
-| # dependents       | 148 |
-| # downloads        | 47934342 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6708314.0 |
+| # stars            | 160.0 |
 
 ## Links
 - [Homepage](https://github.com/bramstein/url-template#readme)
@@ -24,7 +24,7 @@ This is a simple URI template implementation following the [RFC 6570 URI Templat
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

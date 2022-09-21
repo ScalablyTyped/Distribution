@@ -20,7 +20,7 @@ object mod {
   
   @JSImport("@pollyjs/core", "Polly")
   @js.native
-  class Polly protected () extends StObject {
+  open class Polly protected () extends StObject {
     def this(recordingName: String) = this()
     def this(recordingName: String, options: PollyConfig) = this()
     
@@ -89,7 +89,7 @@ object mod {
   
   @JSImport("@pollyjs/core", "PollyServer")
   @js.native
-  class PollyServer () extends StObject {
+  open class PollyServer () extends StObject {
     
     def any(): RouteHandler = js.native
     def any(routes: String): RouteHandler = js.native
@@ -136,7 +136,7 @@ object mod {
   
   @JSImport("@pollyjs/core", "RouteHandler")
   @js.native
-  class RouteHandler () extends StObject {
+  open class RouteHandler () extends StObject {
     
     def configure(config: PollyConfig): RouteHandler = js.native
     
@@ -191,36 +191,36 @@ object mod {
   object setupMocha {
     
     inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-    inline def apply(config: Unit, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(config: Unit, context: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def apply(config: PollyConfig): Unit = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def apply(config: PollyConfig, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(config: PollyConfig, context: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@pollyjs/core", "setupMocha")
     @js.native
     val ^ : js.Any = js.native
     
     inline def afterEach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")().asInstanceOf[Unit]
-    inline def afterEach(context: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def afterEach(context: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def beforeEach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")().asInstanceOf[Unit]
-    inline def beforeEach(config: Unit, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def beforeEach(config: Unit, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def beforeEach(config: PollyConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def beforeEach(config: PollyConfig, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def beforeEach(config: PollyConfig, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(config.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object setupQunit {
     
-    inline def apply(hooks: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def apply(hooks: js.Any, config: PollyConfig): Unit = (^.asInstanceOf[js.Dynamic].apply(hooks.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(hooks: Any): Unit = ^.asInstanceOf[js.Dynamic].apply(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def apply(hooks: Any, config: PollyConfig): Unit = (^.asInstanceOf[js.Dynamic].apply(hooks.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@pollyjs/core", "setupQunit")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def afterEach(hooks: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def afterEach(hooks: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterEach")(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def beforeEach(hooks: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def beforeEach(hooks: js.Any, config: PollyConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(hooks.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def beforeEach(hooks: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def beforeEach(hooks: Any, config: PollyConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeEach")(hooks.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -260,19 +260,14 @@ object mod {
     inline def warn: typings.pollyjsCore.pollyjsCoreStrings.warn = "warn".asInstanceOf[typings.pollyjsCore.pollyjsCoreStrings.warn]
   }
   
-  type ErrorEventListener = js.Function3[
-    /* req */ Request, 
-    /* error */ js.Any, 
-    /* event */ ListenerEvent, 
-    Unit | js.Promise[Unit]
-  ]
+  type ErrorEventListener = js.Function3[/* req */ Request, /* error */ Any, /* event */ ListenerEvent, Unit | js.Promise[Unit]]
   
   type ErrorRouteEvent = error
   
   @js.native
   trait HTTPBase extends StObject {
     
-    var body: js.Any = js.native
+    var body: Any = js.native
     
     def getHeader(name: String): String | js.Array[String] | Null = js.native
     
@@ -280,15 +275,15 @@ object mod {
     
     var headers: Headers = js.native
     
-    def json(body: js.Any): this.type = js.native
+    def json(body: Any): this.type = js.native
     
-    def jsonBody(): js.Any = js.native
+    def jsonBody(): Any = js.native
     
     def removeHeader(name: String): this.type = js.native
     
     def removeHeaders(headers: js.Array[String]): this.type = js.native
     
-    def send(body: js.Any): this.type = js.native
+    def send(body: Any): this.type = js.native
     
     def setHeader(name: String): this.type = js.native
     def setHeader(name: String, value: String): this.type = js.native
@@ -313,11 +308,13 @@ object mod {
     def abort(): Unit
     
     def passthrough(): Unit
+    
+    def stopPropagation(): Unit
   }
   object Interceptor {
     
-    inline def apply(abort: () => Unit, passthrough: () => Unit): Interceptor = {
-      val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), passthrough = js.Any.fromFunction0(passthrough))
+    inline def apply(abort: () => Unit, passthrough: () => Unit, stopPropagation: () => Unit): Interceptor = {
+      val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), passthrough = js.Any.fromFunction0(passthrough), stopPropagation = js.Any.fromFunction0(stopPropagation))
       __obj.asInstanceOf[Interceptor]
     }
     
@@ -326,6 +323,8 @@ object mod {
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
       inline def setPassthrough(value: () => Unit): Self = StObject.set(x, "passthrough", js.Any.fromFunction0(value))
+      
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     }
   }
   
@@ -418,7 +417,7 @@ object mod {
       
       inline def setAdaptersUndefined: Self = StObject.set(x, "adapters", js.undefined)
       
-      inline def setAdaptersVarargs(value: (String | TypeofAdapter)*): Self = StObject.set(x, "adapters", js.Array(value :_*))
+      inline def setAdaptersVarargs(value: (String | TypeofAdapter)*): Self = StObject.set(x, "adapters", js.Array(value*))
       
       inline def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
@@ -491,7 +490,7 @@ object mod {
   
   type RecordingEventListener = js.Function3[
     /* req */ Request, 
-    /* recording */ js.Any, 
+    /* recording */ Any, 
     /* event */ ListenerEvent, 
     Unit | js.Promise[Unit]
   ]

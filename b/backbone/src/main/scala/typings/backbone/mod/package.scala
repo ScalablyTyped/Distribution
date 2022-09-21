@@ -1,86 +1,86 @@
 package typings.backbone.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.backbone.anon.Typeofbackbone
+import typings.backbone.mod.^
+import typings.jquery.JQuery.Event
+import typings.jquery.JQuery.TriggeredEvent
+import typings.jquery.JQueryAjaxSettings
+import typings.jquery.JQueryStatic
+import typings.jquery.JQueryXHR
+import typings.std.Exclude
+import typings.std.Pick
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def _empty: typings.jquery.JQueryStatic = typings.backbone.mod.^.asInstanceOf[js.Dynamic].selectDynamic("$").asInstanceOf[typings.jquery.JQueryStatic]
-inline def _empty_=(x: typings.jquery.JQueryStatic): scala.Unit = typings.backbone.mod.^.asInstanceOf[js.Dynamic].updateDynamic("$")(x.asInstanceOf[js.Any])
+inline def Events: typings.backbone.mod.Events = ^.asInstanceOf[js.Dynamic].selectDynamic("Events").asInstanceOf[typings.backbone.mod.Events]
+type Events = EventsMixin
 
-inline def ajax(): typings.jquery.JQueryXHR = typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ajax")().asInstanceOf[typings.jquery.JQueryXHR]
-inline def ajax(options: typings.jquery.JQueryAjaxSettings): typings.jquery.JQueryXHR = typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jquery.JQueryXHR]
+inline def _empty: JQueryStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("$").asInstanceOf[JQueryStatic]
+inline def _empty_=(x: JQueryStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$")(x.asInstanceOf[js.Any])
 
-inline def emulateHTTP: scala.Boolean = typings.backbone.mod.^.asInstanceOf[js.Dynamic].selectDynamic("emulateHTTP").asInstanceOf[scala.Boolean]
-inline def emulateHTTP_=(x: scala.Boolean): scala.Unit = typings.backbone.mod.^.asInstanceOf[js.Dynamic].updateDynamic("emulateHTTP")(x.asInstanceOf[js.Any])
+inline def ajax(): JQueryXHR = ^.asInstanceOf[js.Dynamic].applyDynamic("ajax")().asInstanceOf[JQueryXHR]
+inline def ajax(options: JQueryAjaxSettings): JQueryXHR = ^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(options.asInstanceOf[js.Any]).asInstanceOf[JQueryXHR]
 
-inline def emulateJSON: scala.Boolean = typings.backbone.mod.^.asInstanceOf[js.Dynamic].selectDynamic("emulateJSON").asInstanceOf[scala.Boolean]
-inline def emulateJSON_=(x: scala.Boolean): scala.Unit = typings.backbone.mod.^.asInstanceOf[js.Dynamic].updateDynamic("emulateJSON")(x.asInstanceOf[js.Any])
+inline def emulateHTTP: Boolean = ^.asInstanceOf[js.Dynamic].selectDynamic("emulateHTTP").asInstanceOf[Boolean]
+inline def emulateHTTP_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emulateHTTP")(x.asInstanceOf[js.Any])
 
-inline def history: typings.backbone.mod.History_ = typings.backbone.mod.^.asInstanceOf[js.Dynamic].selectDynamic("history").asInstanceOf[typings.backbone.mod.History_]
-inline def history_=(x: typings.backbone.mod.History_): scala.Unit = typings.backbone.mod.^.asInstanceOf[js.Dynamic].updateDynamic("history")(x.asInstanceOf[js.Any])
+inline def emulateJSON: Boolean = ^.asInstanceOf[js.Dynamic].selectDynamic("emulateJSON").asInstanceOf[Boolean]
+inline def emulateJSON_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emulateJSON")(x.asInstanceOf[js.Any])
+
+inline def history: History_ = ^.asInstanceOf[js.Dynamic].selectDynamic("history").asInstanceOf[History_]
 
 // Utility
-inline def noConflict(): typings.backbone.anon.Typeofbackbone = typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.backbone.anon.Typeofbackbone]
+inline def noConflict(): Typeofbackbone = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Typeofbackbone]
 
-inline def sync(
-  method: java.lang.String,
-  model: typings.backbone.mod.Collection[
-  typings.backbone.mod.Model[js.Any, typings.backbone.mod.ModelSetOptions, js.Object]
-]
-): js.Any = (typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def sync(
-  method: java.lang.String,
-  model: typings.backbone.mod.Collection[
-  typings.backbone.mod.Model[js.Any, typings.backbone.mod.ModelSetOptions, js.Object]
-],
-  options: typings.jquery.JQueryAjaxSettings
-): js.Any = (typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def sync(method: String, model: Collection[Model[Any, ModelSetOptions, Any]]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def sync(method: String, model: Collection[Model[Any, ModelSetOptions, Any]], options: JQueryAjaxSettings): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
 // SYNC
-inline def sync(
-  method: java.lang.String,
-  model: typings.backbone.mod.Model[js.Any, typings.backbone.mod.ModelSetOptions, js.Object]
-): js.Any = (typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def sync(
-  method: java.lang.String,
-  model: typings.backbone.mod.Model[js.Any, typings.backbone.mod.ModelSetOptions, js.Object],
-  options: typings.jquery.JQueryAjaxSettings
-): js.Any = (typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def sync(method: String, model: Model[Any, ModelSetOptions, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def sync(method: String, model: Model[Any, ModelSetOptions, Any], options: JQueryAjaxSettings): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-type CombinedModelConstructorOptions[E, M /* <: typings.backbone.mod.Model[js.Any, js.Any, E] */] = typings.backbone.mod.ModelConstructorOptions[M] & E
+type CombinedModelConstructorOptions[E, M /* <: Model[Any, Any, E] */] = ModelConstructorOptions[M] & E
 
 /**
   * JavaScript events (used in the methods of the Events interface)
   */
-type EventHandler = js.Function1[/* repeated */ js.Any, scala.Unit]
+type EventHandler = js.Function1[/* repeated */ Any, Unit]
 
-type EventMap = org.scalablytyped.runtime.StringDictionary[typings.backbone.mod.EventHandler]
+type EventMap = StringDictionary[EventHandler]
 
 /**
   * DOM events (used in the events property of a View)
   */
-type EventsHash = org.scalablytyped.runtime.StringDictionary[
-java.lang.String | (js.Function1[
-  /* eventObject */ typings.jquery.JQuery.TriggeredEvent[js.Any, js.Any, js.Any, js.Any], 
-  scala.Unit
-])]
+type EventsHash = StringDictionary[
+String | (js.Function1[/* eventObject */ TriggeredEvent[Any, Any, Any, Any], Unit])]
 
 type EventsOff[BaseT] = js.ThisFunction3[
 /* this */ BaseT, 
-/* eventName */ js.UndefOr[java.lang.String], 
-/* callback */ js.UndefOr[typings.backbone.mod.EventHandler], 
-/* context */ js.UndefOr[js.Any], 
+/* eventName */ js.UndefOr[String | Null], 
+/* callback */ js.UndefOr[EventHandler | Null], 
+/* context */ js.UndefOr[Any], 
 BaseT]
 
 type EventsStop[BaseT] = js.ThisFunction3[
 /* this */ BaseT, 
-/* object */ js.UndefOr[js.Any], 
-/* events */ js.UndefOr[java.lang.String], 
-/* callback */ js.UndefOr[typings.backbone.mod.EventHandler], 
+/* object */ js.UndefOr[Any], 
+/* events */ js.UndefOr[String], 
+/* callback */ js.UndefOr[EventHandler], 
 BaseT]
 
-type EventsTrigger[BaseT] = js.ThisFunction2[/* this */ BaseT, /* eventName */ java.lang.String, /* repeated */ js.Any, BaseT]
+type EventsTrigger[BaseT] = js.ThisFunction2[/* this */ BaseT, /* eventName */ String, /* repeated */ Any, BaseT]
 
-type ObjectHash = org.scalablytyped.runtime.StringDictionary[js.Any]
+type ObjectHash = Record[String, Any]
 
-type RoutesHash = org.scalablytyped.runtime.StringDictionary[java.lang.String | (js.Function1[/* repeated */ java.lang.String, scala.Unit])]
+type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
+
+type Result[T] = T | js.Function0[T]
+
+type RoutesHash = StringDictionary[String | (js.Function1[/* repeated */ String, Unit])]
+
+type StringKey[T] = /* keyof T */ String
+
+type ViewEventListener = js.Function1[/* event */ Event, Unit]

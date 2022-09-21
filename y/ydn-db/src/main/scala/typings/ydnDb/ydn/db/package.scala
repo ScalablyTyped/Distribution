@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type IndexKeyIterator = typings.ydnDb.ydn.db.Iterator
+type IndexKeyIterator = Iterator
 
-type IndexValueIterator = typings.ydnDb.ydn.db.Iterator
+type IndexValueIterator = Iterator
 
-type KeyIterator = typings.ydnDb.ydn.db.Iterator
+type KeyIterator = Iterator
 
-type ValueIterator = typings.ydnDb.ydn.db.Iterator
+type ValueIterator = Iterator

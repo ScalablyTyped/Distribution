@@ -1,475 +1,430 @@
 package typings.three.mod
 
+import typings.std.WebGLRenderingContext
+import typings.three.anon.Bind
+import typings.three.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def ACESFilmicToneMapping: typings.three.constantsMod.ToneMapping = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ACESFilmicToneMapping").asInstanceOf[typings.three.constantsMod.ToneMapping]
+inline def ACESFilmicToneMapping: typings.three.srcConstantsMod.ToneMapping = ^.asInstanceOf[js.Dynamic].selectDynamic("ACESFilmicToneMapping").asInstanceOf[typings.three.srcConstantsMod.ToneMapping]
 
-inline def AddEquation: typings.three.constantsMod.BlendingEquation = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AddEquation").asInstanceOf[typings.three.constantsMod.BlendingEquation]
+inline def AddEquation: typings.three.srcConstantsMod.BlendingEquation = ^.asInstanceOf[js.Dynamic].selectDynamic("AddEquation").asInstanceOf[typings.three.srcConstantsMod.BlendingEquation]
 
-inline def AddOperation: typings.three.constantsMod.Combine = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AddOperation").asInstanceOf[typings.three.constantsMod.Combine]
+inline def AddOperation: typings.three.srcConstantsMod.Combine = ^.asInstanceOf[js.Dynamic].selectDynamic("AddOperation").asInstanceOf[typings.three.srcConstantsMod.Combine]
 
-inline def AdditiveAnimationBlendMode: typings.three.constantsMod.AnimationBlendMode = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AdditiveAnimationBlendMode").asInstanceOf[typings.three.constantsMod.AnimationBlendMode]
+inline def AdditiveAnimationBlendMode: typings.three.srcConstantsMod.AnimationBlendMode = ^.asInstanceOf[js.Dynamic].selectDynamic("AdditiveAnimationBlendMode").asInstanceOf[typings.three.srcConstantsMod.AnimationBlendMode]
 
-inline def AdditiveBlending: typings.three.constantsMod.Blending = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AdditiveBlending").asInstanceOf[typings.three.constantsMod.Blending]
+inline def AdditiveBlending: typings.three.srcConstantsMod.Blending = ^.asInstanceOf[js.Dynamic].selectDynamic("AdditiveBlending").asInstanceOf[typings.three.srcConstantsMod.Blending]
 
-inline def AlphaFormat: typings.three.constantsMod.PixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AlphaFormat").asInstanceOf[typings.three.constantsMod.PixelFormat]
+inline def AlphaFormat: typings.three.srcConstantsMod.PixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("AlphaFormat").asInstanceOf[typings.three.srcConstantsMod.PixelFormat]
 
-inline def AlwaysDepth: typings.three.constantsMod.DepthModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AlwaysDepth").asInstanceOf[typings.three.constantsMod.DepthModes]
+inline def AlwaysDepth: typings.three.srcConstantsMod.DepthModes = ^.asInstanceOf[js.Dynamic].selectDynamic("AlwaysDepth").asInstanceOf[typings.three.srcConstantsMod.DepthModes]
 
-inline def AlwaysStencilFunc: typings.three.constantsMod.StencilFunc = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AlwaysStencilFunc").asInstanceOf[typings.three.constantsMod.StencilFunc]
+inline def AlwaysStencilFunc: typings.three.srcConstantsMod.StencilFunc = ^.asInstanceOf[js.Dynamic].selectDynamic("AlwaysStencilFunc").asInstanceOf[typings.three.srcConstantsMod.StencilFunc]
 
-inline def AnimationActionLoopStyles(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.AnimationActionLoopStyles & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AnimationActionLoopStyles")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.AnimationActionLoopStyles & scala.Nothing]]
+inline def AnimationActionLoopStyles(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.AnimationActionLoopStyles & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimationActionLoopStyles")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.AnimationActionLoopStyles & scala.Nothing]]
 
-inline def AnimationBlendMode(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.AnimationBlendMode & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AnimationBlendMode")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.AnimationBlendMode & scala.Nothing]]
+inline def AnimationBlendMode(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.AnimationBlendMode & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimationBlendMode")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.AnimationBlendMode & scala.Nothing]]
 
-inline def AudioContext: typings.std.AudioContext = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AudioContext").asInstanceOf[typings.std.AudioContext]
+inline def BackSide: typings.three.srcConstantsMod.Side = ^.asInstanceOf[js.Dynamic].selectDynamic("BackSide").asInstanceOf[typings.three.srcConstantsMod.Side]
 
-inline def BackSide: typings.three.constantsMod.Side = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("BackSide").asInstanceOf[typings.three.constantsMod.Side]
+inline def BasicDepthPacking: typings.three.srcConstantsMod.DepthPackingStrategies = ^.asInstanceOf[js.Dynamic].selectDynamic("BasicDepthPacking").asInstanceOf[typings.three.srcConstantsMod.DepthPackingStrategies]
 
-inline def BasicDepthPacking: typings.three.constantsMod.DepthPackingStrategies = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("BasicDepthPacking").asInstanceOf[typings.three.constantsMod.DepthPackingStrategies]
+inline def BasicShadowMap: typings.three.srcConstantsMod.ShadowMapType = ^.asInstanceOf[js.Dynamic].selectDynamic("BasicShadowMap").asInstanceOf[typings.three.srcConstantsMod.ShadowMapType]
 
-inline def BasicShadowMap: typings.three.constantsMod.ShadowMapType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("BasicShadowMap").asInstanceOf[typings.three.constantsMod.ShadowMapType]
+inline def Blending(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.Blending & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Blending")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.Blending & scala.Nothing]]
 
-inline def Blending(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.Blending & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Blending")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.Blending & scala.Nothing]]
+inline def BlendingDstFactor(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.BlendingDstFactor & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("BlendingDstFactor")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.BlendingDstFactor & scala.Nothing]]
 
-inline def BlendingDstFactor(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.BlendingDstFactor & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("BlendingDstFactor")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.BlendingDstFactor & scala.Nothing]]
+inline def BlendingEquation(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.BlendingEquation & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("BlendingEquation")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.BlendingEquation & scala.Nothing]]
 
-inline def BlendingEquation(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.BlendingEquation & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("BlendingEquation")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.BlendingEquation & scala.Nothing]]
+inline def BlendingSrcFactor(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.BlendingSrcFactor & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("BlendingSrcFactor")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.BlendingSrcFactor & scala.Nothing]]
 
-inline def BlendingSrcFactor(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.BlendingSrcFactor & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("BlendingSrcFactor")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.BlendingSrcFactor & scala.Nothing]]
+inline def ByteType: typings.three.srcConstantsMod.TextureDataType = ^.asInstanceOf[js.Dynamic].selectDynamic("ByteType").asInstanceOf[typings.three.srcConstantsMod.TextureDataType]
 
-inline def ByteType: typings.three.constantsMod.TextureDataType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ByteType").asInstanceOf[typings.three.constantsMod.TextureDataType]
+inline def CineonToneMapping: typings.three.srcConstantsMod.ToneMapping = ^.asInstanceOf[js.Dynamic].selectDynamic("CineonToneMapping").asInstanceOf[typings.three.srcConstantsMod.ToneMapping]
 
-inline def CineonToneMapping: typings.three.constantsMod.ToneMapping = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CineonToneMapping").asInstanceOf[typings.three.constantsMod.ToneMapping]
+inline def ClampToEdgeWrapping: typings.three.srcConstantsMod.Wrapping = ^.asInstanceOf[js.Dynamic].selectDynamic("ClampToEdgeWrapping").asInstanceOf[typings.three.srcConstantsMod.Wrapping]
 
-inline def ClampToEdgeWrapping: typings.three.constantsMod.Wrapping = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ClampToEdgeWrapping").asInstanceOf[typings.three.constantsMod.Wrapping]
+inline def Combine(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.Combine & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Combine")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.Combine & scala.Nothing]]
 
-inline def Colors(value: scala.Nothing): js.UndefOr[typings.three.threeLegacyMod.Colors & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Colors")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.threeLegacyMod.Colors & scala.Nothing]]
+inline def CompressedPixelFormat(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.CompressedPixelFormat & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("CompressedPixelFormat")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.CompressedPixelFormat & scala.Nothing]]
 
-inline def Combine(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.Combine & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Combine")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.Combine & scala.Nothing]]
+inline def CubeReflectionMapping: typings.three.srcConstantsMod.Mapping = ^.asInstanceOf[js.Dynamic].selectDynamic("CubeReflectionMapping").asInstanceOf[typings.three.srcConstantsMod.Mapping]
 
-inline def CompressedPixelFormat(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.CompressedPixelFormat & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("CompressedPixelFormat")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.CompressedPixelFormat & scala.Nothing]]
+inline def CubeRefractionMapping: typings.three.srcConstantsMod.Mapping = ^.asInstanceOf[js.Dynamic].selectDynamic("CubeRefractionMapping").asInstanceOf[typings.three.srcConstantsMod.Mapping]
 
-inline def CubeReflectionMapping: typings.three.constantsMod.Mapping = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CubeReflectionMapping").asInstanceOf[typings.three.constantsMod.Mapping]
+inline def CubeUVReflectionMapping: typings.three.srcConstantsMod.Mapping = ^.asInstanceOf[js.Dynamic].selectDynamic("CubeUVReflectionMapping").asInstanceOf[typings.three.srcConstantsMod.Mapping]
 
-inline def CubeRefractionMapping: typings.three.constantsMod.Mapping = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CubeRefractionMapping").asInstanceOf[typings.three.constantsMod.Mapping]
+inline def CullFace(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.CullFace & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("CullFace")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.CullFace & scala.Nothing]]
 
-inline def CubeUVReflectionMapping: typings.three.constantsMod.Mapping = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CubeUVReflectionMapping").asInstanceOf[typings.three.constantsMod.Mapping]
+inline def CullFaceBack: typings.three.srcConstantsMod.CullFace = ^.asInstanceOf[js.Dynamic].selectDynamic("CullFaceBack").asInstanceOf[typings.three.srcConstantsMod.CullFace]
 
-inline def CubeUVRefractionMapping: typings.three.constantsMod.Mapping = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CubeUVRefractionMapping").asInstanceOf[typings.three.constantsMod.Mapping]
+inline def CullFaceFront: typings.three.srcConstantsMod.CullFace = ^.asInstanceOf[js.Dynamic].selectDynamic("CullFaceFront").asInstanceOf[typings.three.srcConstantsMod.CullFace]
 
-inline def CullFace(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.CullFace & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("CullFace")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.CullFace & scala.Nothing]]
+inline def CullFaceFrontBack: typings.three.srcConstantsMod.CullFace = ^.asInstanceOf[js.Dynamic].selectDynamic("CullFaceFrontBack").asInstanceOf[typings.three.srcConstantsMod.CullFace]
 
-inline def CullFaceBack: typings.three.constantsMod.CullFace = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CullFaceBack").asInstanceOf[typings.three.constantsMod.CullFace]
+inline def CullFaceNone: typings.three.srcConstantsMod.CullFace = ^.asInstanceOf[js.Dynamic].selectDynamic("CullFaceNone").asInstanceOf[typings.three.srcConstantsMod.CullFace]
 
-inline def CullFaceFront: typings.three.constantsMod.CullFace = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CullFaceFront").asInstanceOf[typings.three.constantsMod.CullFace]
+inline def CustomBlending: typings.three.srcConstantsMod.Blending = ^.asInstanceOf[js.Dynamic].selectDynamic("CustomBlending").asInstanceOf[typings.three.srcConstantsMod.Blending]
 
-inline def CullFaceFrontBack: typings.three.constantsMod.CullFace = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CullFaceFrontBack").asInstanceOf[typings.three.constantsMod.CullFace]
+inline def CustomToneMapping: typings.three.srcConstantsMod.ToneMapping = ^.asInstanceOf[js.Dynamic].selectDynamic("CustomToneMapping").asInstanceOf[typings.three.srcConstantsMod.ToneMapping]
 
-inline def CullFaceNone: typings.three.constantsMod.CullFace = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CullFaceNone").asInstanceOf[typings.three.constantsMod.CullFace]
+inline def DecrementStencilOp: typings.three.srcConstantsMod.StencilOp = ^.asInstanceOf[js.Dynamic].selectDynamic("DecrementStencilOp").asInstanceOf[typings.three.srcConstantsMod.StencilOp]
 
-inline def CustomBlending: typings.three.constantsMod.Blending = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CustomBlending").asInstanceOf[typings.three.constantsMod.Blending]
+inline def DecrementWrapStencilOp: typings.three.srcConstantsMod.StencilOp = ^.asInstanceOf[js.Dynamic].selectDynamic("DecrementWrapStencilOp").asInstanceOf[typings.three.srcConstantsMod.StencilOp]
 
-inline def DecrementStencilOp: typings.three.constantsMod.StencilOp = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DecrementStencilOp").asInstanceOf[typings.three.constantsMod.StencilOp]
+inline def DefaultLoadingManager: typings.three.loadingManagerMod.LoadingManager = ^.asInstanceOf[js.Dynamic].selectDynamic("DefaultLoadingManager").asInstanceOf[typings.three.loadingManagerMod.LoadingManager]
 
-inline def DecrementWrapStencilOp: typings.three.constantsMod.StencilOp = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DecrementWrapStencilOp").asInstanceOf[typings.three.constantsMod.StencilOp]
+inline def DepthFormat: typings.three.srcConstantsMod.PixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("DepthFormat").asInstanceOf[typings.three.srcConstantsMod.PixelFormat]
 
-inline def DefaultLoadingManager: typings.three.loadingManagerMod.LoadingManager = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DefaultLoadingManager").asInstanceOf[typings.three.loadingManagerMod.LoadingManager]
+inline def DepthModes(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.DepthModes & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("DepthModes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.DepthModes & scala.Nothing]]
 
-inline def DepthFormat: typings.three.constantsMod.PixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DepthFormat").asInstanceOf[typings.three.constantsMod.PixelFormat]
+inline def DepthPackingStrategies(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.DepthPackingStrategies & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("DepthPackingStrategies")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.DepthPackingStrategies & scala.Nothing]]
 
-inline def DepthModes(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.DepthModes & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DepthModes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.DepthModes & scala.Nothing]]
+inline def DepthStencilFormat: typings.three.srcConstantsMod.PixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("DepthStencilFormat").asInstanceOf[typings.three.srcConstantsMod.PixelFormat]
 
-inline def DepthPackingStrategies(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.DepthPackingStrategies & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DepthPackingStrategies")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.DepthPackingStrategies & scala.Nothing]]
+inline def DoubleSide: typings.three.srcConstantsMod.Side = ^.asInstanceOf[js.Dynamic].selectDynamic("DoubleSide").asInstanceOf[typings.three.srcConstantsMod.Side]
 
-inline def DepthStencilFormat: typings.three.constantsMod.PixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DepthStencilFormat").asInstanceOf[typings.three.constantsMod.PixelFormat]
+inline def DstAlphaFactor: typings.three.srcConstantsMod.BlendingDstFactor = ^.asInstanceOf[js.Dynamic].selectDynamic("DstAlphaFactor").asInstanceOf[typings.three.srcConstantsMod.BlendingDstFactor]
 
-inline def DoubleSide: typings.three.constantsMod.Side = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DoubleSide").asInstanceOf[typings.three.constantsMod.Side]
+inline def DstColorFactor: typings.three.srcConstantsMod.BlendingDstFactor = ^.asInstanceOf[js.Dynamic].selectDynamic("DstColorFactor").asInstanceOf[typings.three.srcConstantsMod.BlendingDstFactor]
 
-inline def DstAlphaFactor: typings.three.constantsMod.BlendingDstFactor = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DstAlphaFactor").asInstanceOf[typings.three.constantsMod.BlendingDstFactor]
+inline def DynamicCopyUsage: typings.three.srcConstantsMod.Usage = ^.asInstanceOf[js.Dynamic].selectDynamic("DynamicCopyUsage").asInstanceOf[typings.three.srcConstantsMod.Usage]
 
-inline def DstColorFactor: typings.three.constantsMod.BlendingDstFactor = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DstColorFactor").asInstanceOf[typings.three.constantsMod.BlendingDstFactor]
+inline def DynamicDrawUsage: typings.three.srcConstantsMod.Usage = ^.asInstanceOf[js.Dynamic].selectDynamic("DynamicDrawUsage").asInstanceOf[typings.three.srcConstantsMod.Usage]
 
-inline def DynamicCopyUsage: typings.three.constantsMod.Usage = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DynamicCopyUsage").asInstanceOf[typings.three.constantsMod.Usage]
+inline def DynamicReadUsage: typings.three.srcConstantsMod.Usage = ^.asInstanceOf[js.Dynamic].selectDynamic("DynamicReadUsage").asInstanceOf[typings.three.srcConstantsMod.Usage]
 
-inline def DynamicDrawUsage: typings.three.constantsMod.Usage = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DynamicDrawUsage").asInstanceOf[typings.three.constantsMod.Usage]
+inline def EqualDepth: typings.three.srcConstantsMod.DepthModes = ^.asInstanceOf[js.Dynamic].selectDynamic("EqualDepth").asInstanceOf[typings.three.srcConstantsMod.DepthModes]
 
-inline def DynamicReadUsage: typings.three.constantsMod.Usage = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DynamicReadUsage").asInstanceOf[typings.three.constantsMod.Usage]
+inline def EqualStencilFunc: typings.three.srcConstantsMod.StencilFunc = ^.asInstanceOf[js.Dynamic].selectDynamic("EqualStencilFunc").asInstanceOf[typings.three.srcConstantsMod.StencilFunc]
 
-inline def EqualDepth: typings.three.constantsMod.DepthModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EqualDepth").asInstanceOf[typings.three.constantsMod.DepthModes]
+inline def EquirectangularReflectionMapping: typings.three.srcConstantsMod.Mapping = ^.asInstanceOf[js.Dynamic].selectDynamic("EquirectangularReflectionMapping").asInstanceOf[typings.three.srcConstantsMod.Mapping]
 
-inline def EqualStencilFunc: typings.three.constantsMod.StencilFunc = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EqualStencilFunc").asInstanceOf[typings.three.constantsMod.StencilFunc]
+inline def EquirectangularRefractionMapping: typings.three.srcConstantsMod.Mapping = ^.asInstanceOf[js.Dynamic].selectDynamic("EquirectangularRefractionMapping").asInstanceOf[typings.three.srcConstantsMod.Mapping]
 
-inline def EquirectangularReflectionMapping: typings.three.constantsMod.Mapping = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EquirectangularReflectionMapping").asInstanceOf[typings.three.constantsMod.Mapping]
+inline def FloatType: typings.three.srcConstantsMod.TextureDataType = ^.asInstanceOf[js.Dynamic].selectDynamic("FloatType").asInstanceOf[typings.three.srcConstantsMod.TextureDataType]
 
-inline def EquirectangularRefractionMapping: typings.three.constantsMod.Mapping = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EquirectangularRefractionMapping").asInstanceOf[typings.three.constantsMod.Mapping]
+inline def FrontSide: typings.three.srcConstantsMod.Side = ^.asInstanceOf[js.Dynamic].selectDynamic("FrontSide").asInstanceOf[typings.three.srcConstantsMod.Side]
 
-inline def FaceColors: typings.three.threeLegacyMod.Colors = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FaceColors").asInstanceOf[typings.three.threeLegacyMod.Colors]
+inline def GLSL1: typings.three.srcConstantsMod.GLSLVersion = ^.asInstanceOf[js.Dynamic].selectDynamic("GLSL1").asInstanceOf[typings.three.srcConstantsMod.GLSLVersion]
 
-inline def FlatShading: typings.three.constantsMod.Shading = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FlatShading").asInstanceOf[typings.three.constantsMod.Shading]
+inline def GLSL3: typings.three.srcConstantsMod.GLSLVersion = ^.asInstanceOf[js.Dynamic].selectDynamic("GLSL3").asInstanceOf[typings.three.srcConstantsMod.GLSLVersion]
 
-inline def FloatType: typings.three.constantsMod.TextureDataType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FloatType").asInstanceOf[typings.three.constantsMod.TextureDataType]
+inline def GLSLVersion(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.GLSLVersion & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("GLSLVersion")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.GLSLVersion & scala.Nothing]]
 
-inline def FrontSide: typings.three.constantsMod.Side = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FrontSide").asInstanceOf[typings.three.constantsMod.Side]
+inline def GreaterDepth: typings.three.srcConstantsMod.DepthModes = ^.asInstanceOf[js.Dynamic].selectDynamic("GreaterDepth").asInstanceOf[typings.three.srcConstantsMod.DepthModes]
 
-inline def GLSL1: typings.three.constantsMod.GLSLVersion = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GLSL1").asInstanceOf[typings.three.constantsMod.GLSLVersion]
+inline def GreaterEqualDepth: typings.three.srcConstantsMod.DepthModes = ^.asInstanceOf[js.Dynamic].selectDynamic("GreaterEqualDepth").asInstanceOf[typings.three.srcConstantsMod.DepthModes]
 
-inline def GLSL3: typings.three.constantsMod.GLSLVersion = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GLSL3").asInstanceOf[typings.three.constantsMod.GLSLVersion]
+inline def GreaterEqualStencilFunc: typings.three.srcConstantsMod.StencilFunc = ^.asInstanceOf[js.Dynamic].selectDynamic("GreaterEqualStencilFunc").asInstanceOf[typings.three.srcConstantsMod.StencilFunc]
 
-inline def GLSLVersion(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.GLSLVersion & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("GLSLVersion")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.GLSLVersion & scala.Nothing]]
+inline def GreaterStencilFunc: typings.three.srcConstantsMod.StencilFunc = ^.asInstanceOf[js.Dynamic].selectDynamic("GreaterStencilFunc").asInstanceOf[typings.three.srcConstantsMod.StencilFunc]
 
-inline def GammaEncoding: typings.three.constantsMod.TextureEncoding = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GammaEncoding").asInstanceOf[typings.three.constantsMod.TextureEncoding]
+inline def HalfFloatType: typings.three.srcConstantsMod.TextureDataType = ^.asInstanceOf[js.Dynamic].selectDynamic("HalfFloatType").asInstanceOf[typings.three.srcConstantsMod.TextureDataType]
 
-inline def GreaterDepth: typings.three.constantsMod.DepthModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GreaterDepth").asInstanceOf[typings.three.constantsMod.DepthModes]
+inline def IncrementStencilOp: typings.three.srcConstantsMod.StencilOp = ^.asInstanceOf[js.Dynamic].selectDynamic("IncrementStencilOp").asInstanceOf[typings.three.srcConstantsMod.StencilOp]
 
-inline def GreaterEqualDepth: typings.three.constantsMod.DepthModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GreaterEqualDepth").asInstanceOf[typings.three.constantsMod.DepthModes]
+inline def IncrementWrapStencilOp: typings.three.srcConstantsMod.StencilOp = ^.asInstanceOf[js.Dynamic].selectDynamic("IncrementWrapStencilOp").asInstanceOf[typings.three.srcConstantsMod.StencilOp]
 
-inline def GreaterEqualStencilFunc: typings.three.constantsMod.StencilFunc = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GreaterEqualStencilFunc").asInstanceOf[typings.three.constantsMod.StencilFunc]
+inline def IntType: typings.three.srcConstantsMod.TextureDataType = ^.asInstanceOf[js.Dynamic].selectDynamic("IntType").asInstanceOf[typings.three.srcConstantsMod.TextureDataType]
 
-inline def GreaterStencilFunc: typings.three.constantsMod.StencilFunc = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GreaterStencilFunc").asInstanceOf[typings.three.constantsMod.StencilFunc]
+inline def InterpolateDiscrete: typings.three.srcConstantsMod.InterpolationModes = ^.asInstanceOf[js.Dynamic].selectDynamic("InterpolateDiscrete").asInstanceOf[typings.three.srcConstantsMod.InterpolationModes]
 
-inline def HalfFloatType: typings.three.constantsMod.TextureDataType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HalfFloatType").asInstanceOf[typings.three.constantsMod.TextureDataType]
+inline def InterpolateLinear: typings.three.srcConstantsMod.InterpolationModes = ^.asInstanceOf[js.Dynamic].selectDynamic("InterpolateLinear").asInstanceOf[typings.three.srcConstantsMod.InterpolationModes]
 
-inline def IncrementStencilOp: typings.three.constantsMod.StencilOp = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("IncrementStencilOp").asInstanceOf[typings.three.constantsMod.StencilOp]
+inline def InterpolateSmooth: typings.three.srcConstantsMod.InterpolationModes = ^.asInstanceOf[js.Dynamic].selectDynamic("InterpolateSmooth").asInstanceOf[typings.three.srcConstantsMod.InterpolationModes]
 
-inline def IncrementWrapStencilOp: typings.three.constantsMod.StencilOp = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("IncrementWrapStencilOp").asInstanceOf[typings.three.constantsMod.StencilOp]
+inline def InterpolationEndingModes(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.InterpolationEndingModes & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("InterpolationEndingModes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.InterpolationEndingModes & scala.Nothing]]
 
-inline def IntType: typings.three.constantsMod.TextureDataType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("IntType").asInstanceOf[typings.three.constantsMod.TextureDataType]
+inline def InterpolationModes(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.InterpolationModes & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("InterpolationModes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.InterpolationModes & scala.Nothing]]
 
-inline def InterpolateDiscrete: typings.three.constantsMod.InterpolationModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("InterpolateDiscrete").asInstanceOf[typings.three.constantsMod.InterpolationModes]
+inline def InvertStencilOp: typings.three.srcConstantsMod.StencilOp = ^.asInstanceOf[js.Dynamic].selectDynamic("InvertStencilOp").asInstanceOf[typings.three.srcConstantsMod.StencilOp]
 
-inline def InterpolateLinear: typings.three.constantsMod.InterpolationModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("InterpolateLinear").asInstanceOf[typings.three.constantsMod.InterpolationModes]
+inline def KeepStencilOp: typings.three.srcConstantsMod.StencilOp = ^.asInstanceOf[js.Dynamic].selectDynamic("KeepStencilOp").asInstanceOf[typings.three.srcConstantsMod.StencilOp]
 
-inline def InterpolateSmooth: typings.three.constantsMod.InterpolationModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("InterpolateSmooth").asInstanceOf[typings.three.constantsMod.InterpolationModes]
+inline def LessDepth: typings.three.srcConstantsMod.DepthModes = ^.asInstanceOf[js.Dynamic].selectDynamic("LessDepth").asInstanceOf[typings.three.srcConstantsMod.DepthModes]
 
-inline def InterpolationEndingModes(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.InterpolationEndingModes & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("InterpolationEndingModes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.InterpolationEndingModes & scala.Nothing]]
+inline def LessEqualDepth: typings.three.srcConstantsMod.DepthModes = ^.asInstanceOf[js.Dynamic].selectDynamic("LessEqualDepth").asInstanceOf[typings.three.srcConstantsMod.DepthModes]
 
-inline def InterpolationModes(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.InterpolationModes & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("InterpolationModes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.InterpolationModes & scala.Nothing]]
+inline def LessEqualStencilFunc: typings.three.srcConstantsMod.StencilFunc = ^.asInstanceOf[js.Dynamic].selectDynamic("LessEqualStencilFunc").asInstanceOf[typings.three.srcConstantsMod.StencilFunc]
 
-inline def InvertStencilOp: typings.three.constantsMod.StencilOp = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("InvertStencilOp").asInstanceOf[typings.three.constantsMod.StencilOp]
+inline def LessStencilFunc: typings.three.srcConstantsMod.StencilFunc = ^.asInstanceOf[js.Dynamic].selectDynamic("LessStencilFunc").asInstanceOf[typings.three.srcConstantsMod.StencilFunc]
 
-inline def KeepStencilOp: typings.three.constantsMod.StencilOp = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("KeepStencilOp").asInstanceOf[typings.three.constantsMod.StencilOp]
+inline def LinePieces: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("LinePieces").asInstanceOf[Double]
 
-inline def LessDepth: typings.three.constantsMod.DepthModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LessDepth").asInstanceOf[typings.three.constantsMod.DepthModes]
+inline def LineStrip: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("LineStrip").asInstanceOf[Double]
 
-inline def LessEqualDepth: typings.three.constantsMod.DepthModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LessEqualDepth").asInstanceOf[typings.three.constantsMod.DepthModes]
+inline def LinearEncoding: typings.three.srcConstantsMod.TextureEncoding = ^.asInstanceOf[js.Dynamic].selectDynamic("LinearEncoding").asInstanceOf[typings.three.srcConstantsMod.TextureEncoding]
 
-inline def LessEqualStencilFunc: typings.three.constantsMod.StencilFunc = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LessEqualStencilFunc").asInstanceOf[typings.three.constantsMod.StencilFunc]
+inline def LinearFilter: typings.three.srcConstantsMod.TextureFilter = ^.asInstanceOf[js.Dynamic].selectDynamic("LinearFilter").asInstanceOf[typings.three.srcConstantsMod.TextureFilter]
 
-inline def LessStencilFunc: typings.three.constantsMod.StencilFunc = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LessStencilFunc").asInstanceOf[typings.three.constantsMod.StencilFunc]
+inline def LinearMipMapLinearFilter_ : typings.three.srcConstantsMod.TextureFilter = ^.asInstanceOf[js.Dynamic].selectDynamic("LinearMipMapLinearFilter").asInstanceOf[typings.three.srcConstantsMod.TextureFilter]
 
-inline def LinePieces: scala.Double = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LinePieces").asInstanceOf[scala.Double]
+inline def LinearMipMapNearestFilter_ : typings.three.srcConstantsMod.TextureFilter = ^.asInstanceOf[js.Dynamic].selectDynamic("LinearMipMapNearestFilter").asInstanceOf[typings.three.srcConstantsMod.TextureFilter]
 
-inline def LineStrip: scala.Double = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LineStrip").asInstanceOf[scala.Double]
+inline def LinearMipmapLinearFilter: typings.three.srcConstantsMod.TextureFilter = ^.asInstanceOf[js.Dynamic].selectDynamic("LinearMipmapLinearFilter").asInstanceOf[typings.three.srcConstantsMod.TextureFilter]
 
-inline def LinearEncoding: typings.three.constantsMod.TextureEncoding = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LinearEncoding").asInstanceOf[typings.three.constantsMod.TextureEncoding]
+inline def LinearMipmapNearestFilter: typings.three.srcConstantsMod.TextureFilter = ^.asInstanceOf[js.Dynamic].selectDynamic("LinearMipmapNearestFilter").asInstanceOf[typings.three.srcConstantsMod.TextureFilter]
 
-inline def LinearFilter: typings.three.constantsMod.TextureFilter = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LinearFilter").asInstanceOf[typings.three.constantsMod.TextureFilter]
+inline def LinearToneMapping: typings.three.srcConstantsMod.ToneMapping = ^.asInstanceOf[js.Dynamic].selectDynamic("LinearToneMapping").asInstanceOf[typings.three.srcConstantsMod.ToneMapping]
 
-inline def LinearMipMapLinearFilter_ : typings.three.constantsMod.TextureFilter = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LinearMipMapLinearFilter").asInstanceOf[typings.three.constantsMod.TextureFilter]
+inline def LoaderUtils: typings.three.loaderUtilsMod.LoaderUtils = ^.asInstanceOf[js.Dynamic].selectDynamic("LoaderUtils").asInstanceOf[typings.three.loaderUtilsMod.LoaderUtils]
 
-inline def LinearMipMapNearestFilter_ : typings.three.constantsMod.TextureFilter = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LinearMipMapNearestFilter").asInstanceOf[typings.three.constantsMod.TextureFilter]
+inline def LoopOnce: typings.three.srcConstantsMod.AnimationActionLoopStyles = ^.asInstanceOf[js.Dynamic].selectDynamic("LoopOnce").asInstanceOf[typings.three.srcConstantsMod.AnimationActionLoopStyles]
 
-inline def LinearMipmapLinearFilter: typings.three.constantsMod.TextureFilter = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LinearMipmapLinearFilter").asInstanceOf[typings.three.constantsMod.TextureFilter]
+inline def LoopPingPong: typings.three.srcConstantsMod.AnimationActionLoopStyles = ^.asInstanceOf[js.Dynamic].selectDynamic("LoopPingPong").asInstanceOf[typings.three.srcConstantsMod.AnimationActionLoopStyles]
 
-inline def LinearMipmapNearestFilter: typings.three.constantsMod.TextureFilter = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LinearMipmapNearestFilter").asInstanceOf[typings.three.constantsMod.TextureFilter]
+inline def LoopRepeat: typings.three.srcConstantsMod.AnimationActionLoopStyles = ^.asInstanceOf[js.Dynamic].selectDynamic("LoopRepeat").asInstanceOf[typings.three.srcConstantsMod.AnimationActionLoopStyles]
 
-inline def LinearToneMapping: typings.three.constantsMod.ToneMapping = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LinearToneMapping").asInstanceOf[typings.three.constantsMod.ToneMapping]
+inline def LuminanceAlphaFormat: typings.three.srcConstantsMod.PixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("LuminanceAlphaFormat").asInstanceOf[typings.three.srcConstantsMod.PixelFormat]
 
-inline def LogLuvEncoding: typings.three.constantsMod.TextureEncoding = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LogLuvEncoding").asInstanceOf[typings.three.constantsMod.TextureEncoding]
+inline def LuminanceFormat: typings.three.srcConstantsMod.PixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("LuminanceFormat").asInstanceOf[typings.three.srcConstantsMod.PixelFormat]
 
-inline def LoopOnce: typings.three.constantsMod.AnimationActionLoopStyles = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LoopOnce").asInstanceOf[typings.three.constantsMod.AnimationActionLoopStyles]
+inline def Mapping(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.Mapping & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Mapping")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.Mapping & scala.Nothing]]
 
-inline def LoopPingPong: typings.three.constantsMod.AnimationActionLoopStyles = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LoopPingPong").asInstanceOf[typings.three.constantsMod.AnimationActionLoopStyles]
+inline def MaxEquation: typings.three.srcConstantsMod.BlendingEquation = ^.asInstanceOf[js.Dynamic].selectDynamic("MaxEquation").asInstanceOf[typings.three.srcConstantsMod.BlendingEquation]
 
-inline def LoopRepeat: typings.three.constantsMod.AnimationActionLoopStyles = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LoopRepeat").asInstanceOf[typings.three.constantsMod.AnimationActionLoopStyles]
+inline def MinEquation: typings.three.srcConstantsMod.BlendingEquation = ^.asInstanceOf[js.Dynamic].selectDynamic("MinEquation").asInstanceOf[typings.three.srcConstantsMod.BlendingEquation]
 
-inline def LuminanceAlphaFormat: typings.three.constantsMod.PixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LuminanceAlphaFormat").asInstanceOf[typings.three.constantsMod.PixelFormat]
+inline def MirroredRepeatWrapping: typings.three.srcConstantsMod.Wrapping = ^.asInstanceOf[js.Dynamic].selectDynamic("MirroredRepeatWrapping").asInstanceOf[typings.three.srcConstantsMod.Wrapping]
 
-inline def LuminanceFormat: typings.three.constantsMod.PixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LuminanceFormat").asInstanceOf[typings.three.constantsMod.PixelFormat]
+inline def MixOperation: typings.three.srcConstantsMod.Combine = ^.asInstanceOf[js.Dynamic].selectDynamic("MixOperation").asInstanceOf[typings.three.srcConstantsMod.Combine]
 
-inline def Mapping(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.Mapping & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Mapping")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.Mapping & scala.Nothing]]
+inline def MultiplyBlending: typings.three.srcConstantsMod.Blending = ^.asInstanceOf[js.Dynamic].selectDynamic("MultiplyBlending").asInstanceOf[typings.three.srcConstantsMod.Blending]
 
-inline def MaxEquation: typings.three.constantsMod.BlendingEquation = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MaxEquation").asInstanceOf[typings.three.constantsMod.BlendingEquation]
+inline def MultiplyOperation: typings.three.srcConstantsMod.Combine = ^.asInstanceOf[js.Dynamic].selectDynamic("MultiplyOperation").asInstanceOf[typings.three.srcConstantsMod.Combine]
 
-inline def MinEquation: typings.three.constantsMod.BlendingEquation = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MinEquation").asInstanceOf[typings.three.constantsMod.BlendingEquation]
+inline def NearestFilter: typings.three.srcConstantsMod.TextureFilter = ^.asInstanceOf[js.Dynamic].selectDynamic("NearestFilter").asInstanceOf[typings.three.srcConstantsMod.TextureFilter]
 
-inline def MirroredRepeatWrapping: typings.three.constantsMod.Wrapping = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MirroredRepeatWrapping").asInstanceOf[typings.three.constantsMod.Wrapping]
+inline def NearestMipMapLinearFilter_ : typings.three.srcConstantsMod.TextureFilter = ^.asInstanceOf[js.Dynamic].selectDynamic("NearestMipMapLinearFilter").asInstanceOf[typings.three.srcConstantsMod.TextureFilter]
 
-inline def MixOperation: typings.three.constantsMod.Combine = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MixOperation").asInstanceOf[typings.three.constantsMod.Combine]
+inline def NearestMipMapNearestFilter_ : typings.three.srcConstantsMod.TextureFilter = ^.asInstanceOf[js.Dynamic].selectDynamic("NearestMipMapNearestFilter").asInstanceOf[typings.three.srcConstantsMod.TextureFilter]
 
-inline def MultiplyBlending: typings.three.constantsMod.Blending = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MultiplyBlending").asInstanceOf[typings.three.constantsMod.Blending]
+inline def NearestMipmapLinearFilter: typings.three.srcConstantsMod.TextureFilter = ^.asInstanceOf[js.Dynamic].selectDynamic("NearestMipmapLinearFilter").asInstanceOf[typings.three.srcConstantsMod.TextureFilter]
 
-inline def MultiplyOperation: typings.three.constantsMod.Combine = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MultiplyOperation").asInstanceOf[typings.three.constantsMod.Combine]
+inline def NearestMipmapNearestFilter: typings.three.srcConstantsMod.TextureFilter = ^.asInstanceOf[js.Dynamic].selectDynamic("NearestMipmapNearestFilter").asInstanceOf[typings.three.srcConstantsMod.TextureFilter]
 
-inline def NearestFilter: typings.three.constantsMod.TextureFilter = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NearestFilter").asInstanceOf[typings.three.constantsMod.TextureFilter]
+inline def NeverDepth: typings.three.srcConstantsMod.DepthModes = ^.asInstanceOf[js.Dynamic].selectDynamic("NeverDepth").asInstanceOf[typings.three.srcConstantsMod.DepthModes]
 
-inline def NearestMipMapLinearFilter_ : typings.three.constantsMod.TextureFilter = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NearestMipMapLinearFilter").asInstanceOf[typings.three.constantsMod.TextureFilter]
+inline def NeverStencilFunc: typings.three.srcConstantsMod.StencilFunc = ^.asInstanceOf[js.Dynamic].selectDynamic("NeverStencilFunc").asInstanceOf[typings.three.srcConstantsMod.StencilFunc]
 
-inline def NearestMipMapNearestFilter_ : typings.three.constantsMod.TextureFilter = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NearestMipMapNearestFilter").asInstanceOf[typings.three.constantsMod.TextureFilter]
+inline def NoBlending: typings.three.srcConstantsMod.Blending = ^.asInstanceOf[js.Dynamic].selectDynamic("NoBlending").asInstanceOf[typings.three.srcConstantsMod.Blending]
 
-inline def NearestMipmapLinearFilter: typings.three.constantsMod.TextureFilter = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NearestMipmapLinearFilter").asInstanceOf[typings.three.constantsMod.TextureFilter]
+inline def NoToneMapping: typings.three.srcConstantsMod.ToneMapping = ^.asInstanceOf[js.Dynamic].selectDynamic("NoToneMapping").asInstanceOf[typings.three.srcConstantsMod.ToneMapping]
 
-inline def NearestMipmapNearestFilter: typings.three.constantsMod.TextureFilter = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NearestMipmapNearestFilter").asInstanceOf[typings.three.constantsMod.TextureFilter]
+inline def NormalAnimationBlendMode: typings.three.srcConstantsMod.AnimationBlendMode = ^.asInstanceOf[js.Dynamic].selectDynamic("NormalAnimationBlendMode").asInstanceOf[typings.three.srcConstantsMod.AnimationBlendMode]
 
-inline def NeverDepth: typings.three.constantsMod.DepthModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NeverDepth").asInstanceOf[typings.three.constantsMod.DepthModes]
+inline def NormalBlending: typings.three.srcConstantsMod.Blending = ^.asInstanceOf[js.Dynamic].selectDynamic("NormalBlending").asInstanceOf[typings.three.srcConstantsMod.Blending]
 
-inline def NeverStencilFunc: typings.three.constantsMod.StencilFunc = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NeverStencilFunc").asInstanceOf[typings.three.constantsMod.StencilFunc]
+inline def NormalMapTypes(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.NormalMapTypes & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("NormalMapTypes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.NormalMapTypes & scala.Nothing]]
 
-inline def NoBlending: typings.three.constantsMod.Blending = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NoBlending").asInstanceOf[typings.three.constantsMod.Blending]
+inline def NotEqualDepth: typings.three.srcConstantsMod.DepthModes = ^.asInstanceOf[js.Dynamic].selectDynamic("NotEqualDepth").asInstanceOf[typings.three.srcConstantsMod.DepthModes]
 
-inline def NoColors: typings.three.threeLegacyMod.Colors = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NoColors").asInstanceOf[typings.three.threeLegacyMod.Colors]
+inline def NotEqualStencilFunc: typings.three.srcConstantsMod.StencilFunc = ^.asInstanceOf[js.Dynamic].selectDynamic("NotEqualStencilFunc").asInstanceOf[typings.three.srcConstantsMod.StencilFunc]
 
-inline def NoToneMapping: typings.three.constantsMod.ToneMapping = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NoToneMapping").asInstanceOf[typings.three.constantsMod.ToneMapping]
+inline def ObjectSpaceNormalMap: typings.three.srcConstantsMod.NormalMapTypes = ^.asInstanceOf[js.Dynamic].selectDynamic("ObjectSpaceNormalMap").asInstanceOf[typings.three.srcConstantsMod.NormalMapTypes]
 
-inline def NormalAnimationBlendMode: typings.three.constantsMod.AnimationBlendMode = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NormalAnimationBlendMode").asInstanceOf[typings.three.constantsMod.AnimationBlendMode]
+inline def OneFactor: typings.three.srcConstantsMod.BlendingDstFactor = ^.asInstanceOf[js.Dynamic].selectDynamic("OneFactor").asInstanceOf[typings.three.srcConstantsMod.BlendingDstFactor]
 
-inline def NormalBlending: typings.three.constantsMod.Blending = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NormalBlending").asInstanceOf[typings.three.constantsMod.Blending]
+inline def OneMinusDstAlphaFactor: typings.three.srcConstantsMod.BlendingDstFactor = ^.asInstanceOf[js.Dynamic].selectDynamic("OneMinusDstAlphaFactor").asInstanceOf[typings.three.srcConstantsMod.BlendingDstFactor]
 
-inline def NormalMapTypes(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.NormalMapTypes & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("NormalMapTypes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.NormalMapTypes & scala.Nothing]]
+inline def OneMinusDstColorFactor: typings.three.srcConstantsMod.BlendingDstFactor = ^.asInstanceOf[js.Dynamic].selectDynamic("OneMinusDstColorFactor").asInstanceOf[typings.three.srcConstantsMod.BlendingDstFactor]
 
-inline def NotEqualDepth: typings.three.constantsMod.DepthModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NotEqualDepth").asInstanceOf[typings.three.constantsMod.DepthModes]
+inline def OneMinusSrcAlphaFactor: typings.three.srcConstantsMod.BlendingDstFactor = ^.asInstanceOf[js.Dynamic].selectDynamic("OneMinusSrcAlphaFactor").asInstanceOf[typings.three.srcConstantsMod.BlendingDstFactor]
 
-inline def NotEqualStencilFunc: typings.three.constantsMod.StencilFunc = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NotEqualStencilFunc").asInstanceOf[typings.three.constantsMod.StencilFunc]
+inline def OneMinusSrcColorFactor: typings.three.srcConstantsMod.BlendingDstFactor = ^.asInstanceOf[js.Dynamic].selectDynamic("OneMinusSrcColorFactor").asInstanceOf[typings.three.srcConstantsMod.BlendingDstFactor]
 
-inline def ObjectSpaceNormalMap: typings.three.constantsMod.NormalMapTypes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ObjectSpaceNormalMap").asInstanceOf[typings.three.constantsMod.NormalMapTypes]
+inline def PCFShadowMap: typings.three.srcConstantsMod.ShadowMapType = ^.asInstanceOf[js.Dynamic].selectDynamic("PCFShadowMap").asInstanceOf[typings.three.srcConstantsMod.ShadowMapType]
 
-inline def OneFactor: typings.three.constantsMod.BlendingDstFactor = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("OneFactor").asInstanceOf[typings.three.constantsMod.BlendingDstFactor]
+inline def PCFSoftShadowMap: typings.three.srcConstantsMod.ShadowMapType = ^.asInstanceOf[js.Dynamic].selectDynamic("PCFSoftShadowMap").asInstanceOf[typings.three.srcConstantsMod.ShadowMapType]
 
-inline def OneMinusDstAlphaFactor: typings.three.constantsMod.BlendingDstFactor = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("OneMinusDstAlphaFactor").asInstanceOf[typings.three.constantsMod.BlendingDstFactor]
+inline def PixelFormat(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.PixelFormat & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("PixelFormat")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.PixelFormat & scala.Nothing]]
 
-inline def OneMinusDstColorFactor: typings.three.constantsMod.BlendingDstFactor = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("OneMinusDstColorFactor").asInstanceOf[typings.three.constantsMod.BlendingDstFactor]
+inline def REVISION: String = ^.asInstanceOf[js.Dynamic].selectDynamic("REVISION").asInstanceOf[String]
 
-inline def OneMinusSrcAlphaFactor: typings.three.constantsMod.BlendingDstFactor = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("OneMinusSrcAlphaFactor").asInstanceOf[typings.three.constantsMod.BlendingDstFactor]
+inline def RGBAASTC10x10Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_10x10_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def OneMinusSrcColorFactor: typings.three.constantsMod.BlendingDstFactor = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("OneMinusSrcColorFactor").asInstanceOf[typings.three.constantsMod.BlendingDstFactor]
+inline def RGBAASTC10x5Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_10x5_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def PCFShadowMap: typings.three.constantsMod.ShadowMapType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PCFShadowMap").asInstanceOf[typings.three.constantsMod.ShadowMapType]
+inline def RGBAASTC10x6Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_10x6_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def PCFSoftShadowMap: typings.three.constantsMod.ShadowMapType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PCFSoftShadowMap").asInstanceOf[typings.three.constantsMod.ShadowMapType]
+inline def RGBAASTC10x8Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_10x8_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def PixelFormat(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.PixelFormat & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PixelFormat")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.PixelFormat & scala.Nothing]]
+inline def RGBAASTC12x10Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_12x10_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def REVISION: java.lang.String = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("REVISION").asInstanceOf[java.lang.String]
+inline def RGBAASTC12x12Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_12x12_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAASTC10x10Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_10x10_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBAASTC4x4Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_4x4_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAASTC10x5Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_10x5_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBAASTC5x4Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_5x4_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAASTC10x6Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_10x6_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBAASTC5x5Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_5x5_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAASTC10x8Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_10x8_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBAASTC6x5Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_6x5_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAASTC12x10Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_12x10_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBAASTC6x6Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_6x6_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAASTC12x12Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_12x12_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBAASTC8x5Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_8x5_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAASTC4x4Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_4x4_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBAASTC8x6Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_8x6_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAASTC5x4Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_5x4_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBAASTC8x8Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_8x8_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAASTC5x5Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_5x5_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBABPTCFormat: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_BPTC_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAASTC6x5Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_6x5_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBADepthPacking: typings.three.srcConstantsMod.DepthPackingStrategies = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBADepthPacking").asInstanceOf[typings.three.srcConstantsMod.DepthPackingStrategies]
 
-inline def RGBAASTC6x6Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_6x6_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBAETC2EACFormat: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ETC2_EAC_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAASTC8x5Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_8x5_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBAFormat: typings.three.srcConstantsMod.PixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBAFormat").asInstanceOf[typings.three.srcConstantsMod.PixelFormat]
 
-inline def RGBAASTC8x6Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_8x6_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBAIntegerFormat: typings.three.srcConstantsMod.PixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBAIntegerFormat").asInstanceOf[typings.three.srcConstantsMod.PixelFormat]
 
-inline def RGBAASTC8x8Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ASTC_8x8_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBAPVRTC2BPPV1Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_PVRTC_2BPPV1_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBABPTCFormat: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_BPTC_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBAPVRTC4BPPV1Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_PVRTC_4BPPV1_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBADepthPacking: typings.three.constantsMod.DepthPackingStrategies = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBADepthPacking").asInstanceOf[typings.three.constantsMod.DepthPackingStrategies]
+inline def RGBAS3TCDXT1Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_S3TC_DXT1_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAETC2EACFormat: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_ETC2_EAC_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBAS3TCDXT3Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_S3TC_DXT3_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAFormat: typings.three.constantsMod.PixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBAFormat").asInstanceOf[typings.three.constantsMod.PixelFormat]
+inline def RGBAS3TCDXT5Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_S3TC_DXT5_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAIntegerFormat: typings.three.constantsMod.PixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBAIntegerFormat").asInstanceOf[typings.three.constantsMod.PixelFormat]
+inline def RGBETC1Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGB_ETC1_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAPVRTC2BPPV1Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_PVRTC_2BPPV1_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBETC2Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGB_ETC2_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAPVRTC4BPPV1Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_PVRTC_4BPPV1_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBFormat: typings.three.srcConstantsMod.PixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBFormat").asInstanceOf[typings.three.srcConstantsMod.PixelFormat]
 
-inline def RGBAS3TCDXT1Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_S3TC_DXT1_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBPVRTC2BPPV1Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGB_PVRTC_2BPPV1_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAS3TCDXT3Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_S3TC_DXT3_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBPVRTC4BPPV1Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGB_PVRTC_4BPPV1_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBAS3TCDXT5Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_S3TC_DXT5_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RGBS3TCDXT1Format: typings.three.srcConstantsMod.CompressedPixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGB_S3TC_DXT1_Format").asInstanceOf[typings.three.srcConstantsMod.CompressedPixelFormat]
 
-inline def RGBDEncoding: typings.three.constantsMod.TextureEncoding = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBDEncoding").asInstanceOf[typings.three.constantsMod.TextureEncoding]
+inline def RGFormat: typings.three.srcConstantsMod.PixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGFormat").asInstanceOf[typings.three.srcConstantsMod.PixelFormat]
 
-inline def RGBEEncoding: typings.three.constantsMod.TextureEncoding = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBEEncoding").asInstanceOf[typings.three.constantsMod.TextureEncoding]
+inline def RGIntegerFormat: typings.three.srcConstantsMod.PixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RGIntegerFormat").asInstanceOf[typings.three.srcConstantsMod.PixelFormat]
 
-inline def RGBEFormat: typings.three.constantsMod.PixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBEFormat").asInstanceOf[typings.three.constantsMod.PixelFormat]
+inline def RedFormat: typings.three.srcConstantsMod.PixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RedFormat").asInstanceOf[typings.three.srcConstantsMod.PixelFormat]
 
-inline def RGBETC1Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGB_ETC1_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def RedIntegerFormat: typings.three.srcConstantsMod.PixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RedIntegerFormat").asInstanceOf[typings.three.srcConstantsMod.PixelFormat]
 
-inline def RGBETC2Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGB_ETC2_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def ReinhardToneMapping: typings.three.srcConstantsMod.ToneMapping = ^.asInstanceOf[js.Dynamic].selectDynamic("ReinhardToneMapping").asInstanceOf[typings.three.srcConstantsMod.ToneMapping]
 
-inline def RGBFormat: typings.three.constantsMod.PixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBFormat").asInstanceOf[typings.three.constantsMod.PixelFormat]
+inline def RepeatWrapping: typings.three.srcConstantsMod.Wrapping = ^.asInstanceOf[js.Dynamic].selectDynamic("RepeatWrapping").asInstanceOf[typings.three.srcConstantsMod.Wrapping]
 
-inline def RGBIntegerFormat: typings.three.constantsMod.PixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBIntegerFormat").asInstanceOf[typings.three.constantsMod.PixelFormat]
+inline def ReplaceStencilOp: typings.three.srcConstantsMod.StencilOp = ^.asInstanceOf[js.Dynamic].selectDynamic("ReplaceStencilOp").asInstanceOf[typings.three.srcConstantsMod.StencilOp]
 
-inline def RGBM16Encoding: typings.three.constantsMod.TextureEncoding = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBM16Encoding").asInstanceOf[typings.three.constantsMod.TextureEncoding]
+inline def ReverseSubtractEquation: typings.three.srcConstantsMod.BlendingEquation = ^.asInstanceOf[js.Dynamic].selectDynamic("ReverseSubtractEquation").asInstanceOf[typings.three.srcConstantsMod.BlendingEquation]
 
-inline def RGBM7Encoding: typings.three.constantsMod.TextureEncoding = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBM7Encoding").asInstanceOf[typings.three.constantsMod.TextureEncoding]
+inline def SRGBAFormat: typings.three.srcConstantsMod.PixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("_SRGBAFormat").asInstanceOf[typings.three.srcConstantsMod.PixelFormat]
 
-inline def RGBPVRTC2BPPV1Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGB_PVRTC_2BPPV1_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def SRGBFormat: typings.three.srcConstantsMod.PixelFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("_SRGBFormat").asInstanceOf[typings.three.srcConstantsMod.PixelFormat]
 
-inline def RGBPVRTC4BPPV1Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGB_PVRTC_4BPPV1_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def SRGBToLinear(c: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("SRGBToLinear")(c.asInstanceOf[js.Any]).asInstanceOf[Double]
 
-inline def RGBS3TCDXT1Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGB_S3TC_DXT1_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def ShadowMapType(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.ShadowMapType & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("ShadowMapType")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.ShadowMapType & scala.Nothing]]
 
-inline def RGFormat: typings.three.constantsMod.PixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGFormat").asInstanceOf[typings.three.constantsMod.PixelFormat]
+inline def ShortType: typings.three.srcConstantsMod.TextureDataType = ^.asInstanceOf[js.Dynamic].selectDynamic("ShortType").asInstanceOf[typings.three.srcConstantsMod.TextureDataType]
 
-inline def RGIntegerFormat: typings.three.constantsMod.PixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGIntegerFormat").asInstanceOf[typings.three.constantsMod.PixelFormat]
+inline def Side(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.Side & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Side")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.Side & scala.Nothing]]
 
-inline def RedFormat: typings.three.constantsMod.PixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RedFormat").asInstanceOf[typings.three.constantsMod.PixelFormat]
+inline def SrcAlphaFactor: typings.three.srcConstantsMod.BlendingDstFactor = ^.asInstanceOf[js.Dynamic].selectDynamic("SrcAlphaFactor").asInstanceOf[typings.three.srcConstantsMod.BlendingDstFactor]
 
-inline def RedIntegerFormat: typings.three.constantsMod.PixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RedIntegerFormat").asInstanceOf[typings.three.constantsMod.PixelFormat]
+inline def SrcAlphaSaturateFactor: typings.three.srcConstantsMod.BlendingSrcFactor = ^.asInstanceOf[js.Dynamic].selectDynamic("SrcAlphaSaturateFactor").asInstanceOf[typings.three.srcConstantsMod.BlendingSrcFactor]
 
-inline def ReinhardToneMapping: typings.three.constantsMod.ToneMapping = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ReinhardToneMapping").asInstanceOf[typings.three.constantsMod.ToneMapping]
+inline def SrcColorFactor: typings.three.srcConstantsMod.BlendingDstFactor = ^.asInstanceOf[js.Dynamic].selectDynamic("SrcColorFactor").asInstanceOf[typings.three.srcConstantsMod.BlendingDstFactor]
 
-inline def RepeatWrapping: typings.three.constantsMod.Wrapping = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RepeatWrapping").asInstanceOf[typings.three.constantsMod.Wrapping]
+inline def StaticCopyUsage: typings.three.srcConstantsMod.Usage = ^.asInstanceOf[js.Dynamic].selectDynamic("StaticCopyUsage").asInstanceOf[typings.three.srcConstantsMod.Usage]
 
-inline def ReplaceStencilOp: typings.three.constantsMod.StencilOp = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ReplaceStencilOp").asInstanceOf[typings.three.constantsMod.StencilOp]
+inline def StaticDrawUsage: typings.three.srcConstantsMod.Usage = ^.asInstanceOf[js.Dynamic].selectDynamic("StaticDrawUsage").asInstanceOf[typings.three.srcConstantsMod.Usage]
 
-inline def ReverseSubtractEquation: typings.three.constantsMod.BlendingEquation = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ReverseSubtractEquation").asInstanceOf[typings.three.constantsMod.BlendingEquation]
+inline def StaticReadUsage: typings.three.srcConstantsMod.Usage = ^.asInstanceOf[js.Dynamic].selectDynamic("StaticReadUsage").asInstanceOf[typings.three.srcConstantsMod.Usage]
 
-inline def SRGB8ALPHA8ASTC10x10Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SRGB8_ALPHA8_ASTC_10x10_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def StencilFunc(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.StencilFunc & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("StencilFunc")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.StencilFunc & scala.Nothing]]
 
-inline def SRGB8ALPHA8ASTC10x5Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SRGB8_ALPHA8_ASTC_10x5_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def StencilOp(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.StencilOp & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("StencilOp")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.StencilOp & scala.Nothing]]
 
-inline def SRGB8ALPHA8ASTC10x6Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SRGB8_ALPHA8_ASTC_10x6_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def StreamCopyUsage: typings.three.srcConstantsMod.Usage = ^.asInstanceOf[js.Dynamic].selectDynamic("StreamCopyUsage").asInstanceOf[typings.three.srcConstantsMod.Usage]
 
-inline def SRGB8ALPHA8ASTC10x8Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SRGB8_ALPHA8_ASTC_10x8_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def StreamDrawUsage: typings.three.srcConstantsMod.Usage = ^.asInstanceOf[js.Dynamic].selectDynamic("StreamDrawUsage").asInstanceOf[typings.three.srcConstantsMod.Usage]
 
-inline def SRGB8ALPHA8ASTC12x10Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SRGB8_ALPHA8_ASTC_12x10_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def StreamReadUsage: typings.three.srcConstantsMod.Usage = ^.asInstanceOf[js.Dynamic].selectDynamic("StreamReadUsage").asInstanceOf[typings.three.srcConstantsMod.Usage]
 
-inline def SRGB8ALPHA8ASTC12x12Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SRGB8_ALPHA8_ASTC_12x12_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def SubtractEquation: typings.three.srcConstantsMod.BlendingEquation = ^.asInstanceOf[js.Dynamic].selectDynamic("SubtractEquation").asInstanceOf[typings.three.srcConstantsMod.BlendingEquation]
 
-inline def SRGB8ALPHA8ASTC4x4Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SRGB8_ALPHA8_ASTC_4x4_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def SubtractiveBlending: typings.three.srcConstantsMod.Blending = ^.asInstanceOf[js.Dynamic].selectDynamic("SubtractiveBlending").asInstanceOf[typings.three.srcConstantsMod.Blending]
 
-inline def SRGB8ALPHA8ASTC5x4Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SRGB8_ALPHA8_ASTC_5x4_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def TangentSpaceNormalMap: typings.three.srcConstantsMod.NormalMapTypes = ^.asInstanceOf[js.Dynamic].selectDynamic("TangentSpaceNormalMap").asInstanceOf[typings.three.srcConstantsMod.NormalMapTypes]
 
-inline def SRGB8ALPHA8ASTC5x5Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SRGB8_ALPHA8_ASTC_5x5_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def TextureDataType(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.TextureDataType & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("TextureDataType")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.TextureDataType & scala.Nothing]]
 
-inline def SRGB8ALPHA8ASTC6x5Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SRGB8_ALPHA8_ASTC_6x5_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def TextureEncoding(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.TextureEncoding & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("TextureEncoding")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.TextureEncoding & scala.Nothing]]
 
-inline def SRGB8ALPHA8ASTC6x6Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SRGB8_ALPHA8_ASTC_6x6_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def TextureFilter(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.TextureFilter & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("TextureFilter")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.TextureFilter & scala.Nothing]]
 
-inline def SRGB8ALPHA8ASTC8x5Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SRGB8_ALPHA8_ASTC_8x5_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def ToneMapping(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.ToneMapping & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("ToneMapping")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.ToneMapping & scala.Nothing]]
 
-inline def SRGB8ALPHA8ASTC8x6Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SRGB8_ALPHA8_ASTC_8x6_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def TriangleFanDrawMode: typings.three.srcConstantsMod.TrianglesDrawModes = ^.asInstanceOf[js.Dynamic].selectDynamic("TriangleFanDrawMode").asInstanceOf[typings.three.srcConstantsMod.TrianglesDrawModes]
 
-inline def SRGB8ALPHA8ASTC8x8Format: typings.three.constantsMod.CompressedPixelFormat = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SRGB8_ALPHA8_ASTC_8x8_Format").asInstanceOf[typings.three.constantsMod.CompressedPixelFormat]
+inline def TriangleStripDrawMode: typings.three.srcConstantsMod.TrianglesDrawModes = ^.asInstanceOf[js.Dynamic].selectDynamic("TriangleStripDrawMode").asInstanceOf[typings.three.srcConstantsMod.TrianglesDrawModes]
 
-inline def Shading(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.Shading & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Shading")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.Shading & scala.Nothing]]
+inline def TrianglesDrawMode: typings.three.srcConstantsMod.TrianglesDrawModes = ^.asInstanceOf[js.Dynamic].selectDynamic("TrianglesDrawMode").asInstanceOf[typings.three.srcConstantsMod.TrianglesDrawModes]
 
-inline def ShadowMapType(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.ShadowMapType & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ShadowMapType")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.ShadowMapType & scala.Nothing]]
+inline def TrianglesDrawModes(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.TrianglesDrawModes & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("TrianglesDrawModes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.TrianglesDrawModes & scala.Nothing]]
 
-inline def ShortType: typings.three.constantsMod.TextureDataType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ShortType").asInstanceOf[typings.three.constantsMod.TextureDataType]
+inline def UVMapping: typings.three.srcConstantsMod.Mapping = ^.asInstanceOf[js.Dynamic].selectDynamic("UVMapping").asInstanceOf[typings.three.srcConstantsMod.Mapping]
 
-inline def Side(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.Side & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Side")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.Side & scala.Nothing]]
+inline def UnsignedByteType: typings.three.srcConstantsMod.TextureDataType = ^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedByteType").asInstanceOf[typings.three.srcConstantsMod.TextureDataType]
 
-inline def SmoothShading: typings.three.constantsMod.Shading = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SmoothShading").asInstanceOf[typings.three.constantsMod.Shading]
+inline def UnsignedInt248Type: typings.three.srcConstantsMod.TextureDataType = ^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedInt248Type").asInstanceOf[typings.three.srcConstantsMod.TextureDataType]
 
-inline def SrcAlphaFactor: typings.three.constantsMod.BlendingDstFactor = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SrcAlphaFactor").asInstanceOf[typings.three.constantsMod.BlendingDstFactor]
+inline def UnsignedIntType: typings.three.srcConstantsMod.TextureDataType = ^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedIntType").asInstanceOf[typings.three.srcConstantsMod.TextureDataType]
 
-inline def SrcAlphaSaturateFactor: typings.three.constantsMod.BlendingSrcFactor = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SrcAlphaSaturateFactor").asInstanceOf[typings.three.constantsMod.BlendingSrcFactor]
+inline def UnsignedShort4444Type: typings.three.srcConstantsMod.TextureDataType = ^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedShort4444Type").asInstanceOf[typings.three.srcConstantsMod.TextureDataType]
 
-inline def SrcColorFactor: typings.three.constantsMod.BlendingDstFactor = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SrcColorFactor").asInstanceOf[typings.three.constantsMod.BlendingDstFactor]
+inline def UnsignedShort5551Type: typings.three.srcConstantsMod.TextureDataType = ^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedShort5551Type").asInstanceOf[typings.three.srcConstantsMod.TextureDataType]
 
-inline def StaticCopyUsage: typings.three.constantsMod.Usage = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("StaticCopyUsage").asInstanceOf[typings.three.constantsMod.Usage]
+inline def UnsignedShortType: typings.three.srcConstantsMod.TextureDataType = ^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedShortType").asInstanceOf[typings.three.srcConstantsMod.TextureDataType]
 
-inline def StaticDrawUsage: typings.three.constantsMod.Usage = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("StaticDrawUsage").asInstanceOf[typings.three.constantsMod.Usage]
+inline def Usage(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.Usage & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Usage")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.Usage & scala.Nothing]]
 
-inline def StaticReadUsage: typings.three.constantsMod.Usage = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("StaticReadUsage").asInstanceOf[typings.three.constantsMod.Usage]
+inline def VSMShadowMap: typings.three.srcConstantsMod.ShadowMapType = ^.asInstanceOf[js.Dynamic].selectDynamic("VSMShadowMap").asInstanceOf[typings.three.srcConstantsMod.ShadowMapType]
 
-inline def StencilFunc(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.StencilFunc & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("StencilFunc")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.StencilFunc & scala.Nothing]]
+inline def WebGLShader(gl: WebGLRenderingContext, `type`: String, string: String): typings.std.WebGLShader = (^.asInstanceOf[js.Dynamic].applyDynamic("WebGLShader")(gl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[typings.std.WebGLShader]
 
-inline def StencilOp(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.StencilOp & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("StencilOp")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.StencilOp & scala.Nothing]]
+inline def WebGLUniformsGroups(
+  gl: WebGLRenderingContext,
+  info: typings.three.webGLInfoMod.WebGLInfo,
+  capabilities: typings.three.webGLCapabilitiesMod.WebGLCapabilities,
+  state: typings.three.webGLStateMod.WebGLState
+): Bind = (^.asInstanceOf[js.Dynamic].applyDynamic("WebGLUniformsGroups")(gl.asInstanceOf[js.Any], info.asInstanceOf[js.Any], capabilities.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Bind]
 
-inline def StreamCopyUsage: typings.three.constantsMod.Usage = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("StreamCopyUsage").asInstanceOf[typings.three.constantsMod.Usage]
+inline def WrapAroundEnding: typings.three.srcConstantsMod.InterpolationEndingModes = ^.asInstanceOf[js.Dynamic].selectDynamic("WrapAroundEnding").asInstanceOf[typings.three.srcConstantsMod.InterpolationEndingModes]
 
-inline def StreamDrawUsage: typings.three.constantsMod.Usage = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("StreamDrawUsage").asInstanceOf[typings.three.constantsMod.Usage]
+inline def Wrapping(value: scala.Nothing): js.UndefOr[typings.three.srcConstantsMod.Wrapping & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Wrapping")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.srcConstantsMod.Wrapping & scala.Nothing]]
 
-inline def StreamReadUsage: typings.three.constantsMod.Usage = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("StreamReadUsage").asInstanceOf[typings.three.constantsMod.Usage]
+inline def ZeroCurvatureEnding: typings.three.srcConstantsMod.InterpolationEndingModes = ^.asInstanceOf[js.Dynamic].selectDynamic("ZeroCurvatureEnding").asInstanceOf[typings.three.srcConstantsMod.InterpolationEndingModes]
 
-inline def SubtractEquation: typings.three.constantsMod.BlendingEquation = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SubtractEquation").asInstanceOf[typings.three.constantsMod.BlendingEquation]
+inline def ZeroFactor: typings.three.srcConstantsMod.BlendingDstFactor = ^.asInstanceOf[js.Dynamic].selectDynamic("ZeroFactor").asInstanceOf[typings.three.srcConstantsMod.BlendingDstFactor]
 
-inline def SubtractiveBlending: typings.three.constantsMod.Blending = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SubtractiveBlending").asInstanceOf[typings.three.constantsMod.Blending]
+inline def ZeroSlopeEnding: typings.three.srcConstantsMod.InterpolationEndingModes = ^.asInstanceOf[js.Dynamic].selectDynamic("ZeroSlopeEnding").asInstanceOf[typings.three.srcConstantsMod.InterpolationEndingModes]
 
-inline def TangentSpaceNormalMap: typings.three.constantsMod.NormalMapTypes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TangentSpaceNormalMap").asInstanceOf[typings.three.constantsMod.NormalMapTypes]
+inline def ZeroStencilOp: typings.three.srcConstantsMod.StencilOp = ^.asInstanceOf[js.Dynamic].selectDynamic("ZeroStencilOp").asInstanceOf[typings.three.srcConstantsMod.StencilOp]
 
-inline def TextureDataType(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.TextureDataType & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TextureDataType")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.TextureDataType & scala.Nothing]]
+inline def cloneUniforms(uniforms_src: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneUniforms")(uniforms_src.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def TextureEncoding(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.TextureEncoding & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TextureEncoding")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.TextureEncoding & scala.Nothing]]
+inline def cloneUniformsGroups(src: js.Array[typings.three.uniformsGroupMod.UniformsGroup]): js.Array[typings.three.uniformsGroupMod.UniformsGroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneUniformsGroups")(src.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.three.uniformsGroupMod.UniformsGroup]]
 
-inline def TextureFilter(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.TextureFilter & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TextureFilter")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.TextureFilter & scala.Nothing]]
+inline def fromHalfFloat(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHalfFloat")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
 
-inline def ToneMapping(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.ToneMapping & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ToneMapping")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.ToneMapping & scala.Nothing]]
+inline def mergeUniforms(uniforms: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeUniforms")(uniforms.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def TriangleFanDrawMode: typings.three.constantsMod.TrianglesDrawModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TriangleFanDrawMode").asInstanceOf[typings.three.constantsMod.TrianglesDrawModes]
+inline def sRGBEncoding: typings.three.srcConstantsMod.TextureEncoding = ^.asInstanceOf[js.Dynamic].selectDynamic("sRGBEncoding").asInstanceOf[typings.three.srcConstantsMod.TextureEncoding]
 
-inline def TriangleStripDrawMode: typings.three.constantsMod.TrianglesDrawModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TriangleStripDrawMode").asInstanceOf[typings.three.constantsMod.TrianglesDrawModes]
-
-inline def TrianglesDrawMode: typings.three.constantsMod.TrianglesDrawModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TrianglesDrawMode").asInstanceOf[typings.three.constantsMod.TrianglesDrawModes]
-
-inline def TrianglesDrawModes(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.TrianglesDrawModes & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TrianglesDrawModes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.TrianglesDrawModes & scala.Nothing]]
-
-inline def UVMapping: typings.three.constantsMod.Mapping = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UVMapping").asInstanceOf[typings.three.constantsMod.Mapping]
-
-inline def UnsignedByteType: typings.three.constantsMod.TextureDataType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedByteType").asInstanceOf[typings.three.constantsMod.TextureDataType]
-
-inline def UnsignedInt248Type: typings.three.constantsMod.TextureDataType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedInt248Type").asInstanceOf[typings.three.constantsMod.TextureDataType]
-
-inline def UnsignedIntType: typings.three.constantsMod.TextureDataType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedIntType").asInstanceOf[typings.three.constantsMod.TextureDataType]
-
-inline def UnsignedShort4444Type: typings.three.constantsMod.TextureDataType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedShort4444Type").asInstanceOf[typings.three.constantsMod.TextureDataType]
-
-inline def UnsignedShort5551Type: typings.three.constantsMod.TextureDataType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedShort5551Type").asInstanceOf[typings.three.constantsMod.TextureDataType]
-
-inline def UnsignedShort565Type: typings.three.constantsMod.TextureDataType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedShort565Type").asInstanceOf[typings.three.constantsMod.TextureDataType]
-
-inline def UnsignedShortType: typings.three.constantsMod.TextureDataType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedShortType").asInstanceOf[typings.three.constantsMod.TextureDataType]
-
-inline def Usage(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.Usage & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Usage")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.Usage & scala.Nothing]]
-
-inline def VSMShadowMap: typings.three.constantsMod.ShadowMapType = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VSMShadowMap").asInstanceOf[typings.three.constantsMod.ShadowMapType]
-
-inline def VertexColors: typings.three.threeLegacyMod.Colors = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VertexColors").asInstanceOf[typings.three.threeLegacyMod.Colors]
-
-inline def WrapAroundEnding: typings.three.constantsMod.InterpolationEndingModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("WrapAroundEnding").asInstanceOf[typings.three.constantsMod.InterpolationEndingModes]
-
-inline def Wrapping(value: scala.Nothing): js.UndefOr[typings.three.constantsMod.Wrapping & scala.Nothing] = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Wrapping")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.three.constantsMod.Wrapping & scala.Nothing]]
-
-inline def ZeroCurvatureEnding: typings.three.constantsMod.InterpolationEndingModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ZeroCurvatureEnding").asInstanceOf[typings.three.constantsMod.InterpolationEndingModes]
-
-inline def ZeroFactor: typings.three.constantsMod.BlendingDstFactor = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ZeroFactor").asInstanceOf[typings.three.constantsMod.BlendingDstFactor]
-
-inline def ZeroSlopeEnding: typings.three.constantsMod.InterpolationEndingModes = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ZeroSlopeEnding").asInstanceOf[typings.three.constantsMod.InterpolationEndingModes]
-
-inline def ZeroStencilOp: typings.three.constantsMod.StencilOp = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ZeroStencilOp").asInstanceOf[typings.three.constantsMod.StencilOp]
-
-inline def cloneUniforms(uniforms_src: js.Any): js.Any = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneUniforms")(uniforms_src.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-
-inline def error(message: js.Any, optionalParams: js.Any*): scala.Unit = (typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def error(message: scala.Unit, optionalParams: js.Any*): scala.Unit = (typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def log(message: js.Any, optionalParams: js.Any*): scala.Unit = (typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def log(message: scala.Unit, optionalParams: js.Any*): scala.Unit = (typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def mergeUniforms(uniforms: js.Array[js.Any]): js.Any = typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeUniforms")(uniforms.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-
-inline def sRGBEncoding: typings.three.constantsMod.TextureEncoding = typings.three.mod.^.asInstanceOf[js.Dynamic].selectDynamic("sRGBEncoding").asInstanceOf[typings.three.constantsMod.TextureEncoding]
-
-inline def warn(message: js.Any, optionalParams: js.Any*): scala.Unit = (typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def warn(message: scala.Unit, optionalParams: js.Any*): scala.Unit = (typings.three.mod.^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def toHalfFloat(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toHalfFloat")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]

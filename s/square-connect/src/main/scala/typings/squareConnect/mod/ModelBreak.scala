@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ModelBreak")
 @js.native
-class ModelBreak () extends StObject {
+open class ModelBreak () extends StObject {
   
   /**
     * The `BreakType` this `Break` was templated on.

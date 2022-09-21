@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MailMergeAndDownloadCommand")
 @js.native
-class MailMergeAndDownloadCommand ()
+open class MailMergeAndDownloadCommand ()
   extends StObject
      with typings.devexpressWeb.MailMergeAndDownloadCommand

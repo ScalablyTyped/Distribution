@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChannelSummary extends StObject {
   
   /**
-    * The ARN of the channel summary.
+    * The ARN of the channel.
     */
   var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The time at which the last message in a channel was sent.
     */
-  var LastMessageTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var LastMessageTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The metadata of the channel summary.
+    * The metadata of the channel.
     */
   var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.undefined
   
   /**
-    * The summary mode of the channel.
+    * The mode of the channel.
     */
   var Mode: js.UndefOr[ChannelMode] = js.undefined
   
   /**
-    * The parameter of the action.
+    * The name of the channel.
     */
   var Name: js.UndefOr[NonEmptyResourceName] = js.undefined
   
   /**
-    * The privacy setting of the channel being summarized, PUBLIC or HIDDEN.
+    * The privacy setting of the channel.
     */
   var Privacy: js.UndefOr[ChannelPrivacy] = js.undefined
 }
@@ -49,7 +49,7 @@ object ChannelSummary {
     
     inline def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
     
-    inline def setLastMessageTimestamp(value: Timestamp): Self = StObject.set(x, "LastMessageTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastMessageTimestamp(value: js.Date): Self = StObject.set(x, "LastMessageTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastMessageTimestampUndefined: Self = StObject.set(x, "LastMessageTimestamp", js.undefined)
     

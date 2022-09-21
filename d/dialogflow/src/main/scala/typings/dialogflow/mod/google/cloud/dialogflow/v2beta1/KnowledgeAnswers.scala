@@ -6,7 +6,6 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers.I
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new KnowledgeAnswers.
   * @param [properties] Properties to set
   */
-class KnowledgeAnswers ()
+open class KnowledgeAnswers ()
   extends StObject
      with IKnowledgeAnswers {
   def this(properties: IKnowledgeAnswers) = this()
@@ -31,7 +30,7 @@ class KnowledgeAnswers ()
     * Converts this KnowledgeAnswers to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object KnowledgeAnswers {
   
@@ -46,7 +45,7 @@ object KnowledgeAnswers {
     * Constructs a new Answer.
     * @param [properties] Properties to set
     */
-  class Answer ()
+  open class Answer ()
     extends StObject
        with IAnswer {
     def this(properties: IAnswer) = this()
@@ -75,7 +74,7 @@ object KnowledgeAnswers {
       * Converts this Answer to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object Answer {
     
@@ -127,6 +126,8 @@ object KnowledgeAnswers {
     inline def create(): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Answer]
     inline def create(properties: IAnswer): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Answer]
     
+    inline def decode(reader: js.typedarray.Uint8Array): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Answer]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): Answer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Answer]
     /**
       * Decodes an Answer message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -138,9 +139,8 @@ object KnowledgeAnswers {
     /* static member */
     inline def decode(reader: Reader): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Answer]
     inline def decode(reader: Reader, length: Double): Answer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Answer]
-    inline def decode(reader: Uint8Array): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Answer]
-    inline def decode(reader: Uint8Array, length: Double): Answer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Answer]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Answer]
     /**
       * Decodes an Answer message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -150,7 +150,6 @@ object KnowledgeAnswers {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Answer]
-    inline def decodeDelimited(reader: Uint8Array): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Answer]
     
     /**
       * Encodes the specified Answer message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.verify|verify} messages.
@@ -178,7 +177,7 @@ object KnowledgeAnswers {
       * @returns Answer
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Answer]
+    inline def fromObject(`object`: StringDictionary[Any]): Answer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Answer]
     
     /**
       * Creates a plain object from an Answer message. Also converts values to other types if specified.
@@ -187,8 +186,8 @@ object KnowledgeAnswers {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: Answer): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: Answer, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Answer): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: Answer, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies an Answer message.
@@ -196,7 +195,7 @@ object KnowledgeAnswers {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -208,6 +207,8 @@ object KnowledgeAnswers {
   inline def create(): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[KnowledgeAnswers]
   inline def create(properties: IKnowledgeAnswers): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
   
+  inline def decode(reader: js.typedarray.Uint8Array): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): KnowledgeAnswers = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeAnswers]
   /**
     * Decodes a KnowledgeAnswers message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -219,9 +220,8 @@ object KnowledgeAnswers {
   /* static member */
   inline def decode(reader: Reader): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
   inline def decode(reader: Reader, length: Double): KnowledgeAnswers = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeAnswers]
-  inline def decode(reader: Uint8Array): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
-  inline def decode(reader: Uint8Array, length: Double): KnowledgeAnswers = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeAnswers]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
   /**
     * Decodes a KnowledgeAnswers message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -231,7 +231,6 @@ object KnowledgeAnswers {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
-  inline def decodeDelimited(reader: Uint8Array): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
   
   /**
     * Encodes the specified KnowledgeAnswers message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.KnowledgeAnswers.verify|verify} messages.
@@ -259,7 +258,7 @@ object KnowledgeAnswers {
     * @returns KnowledgeAnswers
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
+  inline def fromObject(`object`: StringDictionary[Any]): KnowledgeAnswers = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[KnowledgeAnswers]
   
   /**
     * Creates a plain object from a KnowledgeAnswers message. Also converts values to other types if specified.
@@ -268,8 +267,8 @@ object KnowledgeAnswers {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: KnowledgeAnswers): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: KnowledgeAnswers, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: KnowledgeAnswers): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: KnowledgeAnswers, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a KnowledgeAnswers message.
@@ -277,7 +276,7 @@ object KnowledgeAnswers {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an Answer. */
   trait IAnswer extends StObject {

@@ -27,10 +27,10 @@ object GetMembersResponse {
     
     inline def setMembers(value: Members): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
     
-    inline def setMembersVarargs(value: Member*): Self = StObject.set(x, "Members", js.Array(value :_*))
+    inline def setMembersVarargs(value: Member*): Self = StObject.set(x, "Members", js.Array(value*))
     
     inline def setUnprocessedAccounts(value: UnprocessedAccounts): Self = StObject.set(x, "UnprocessedAccounts", value.asInstanceOf[js.Any])
     
-    inline def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value :_*))
+    inline def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value*))
   }
 }

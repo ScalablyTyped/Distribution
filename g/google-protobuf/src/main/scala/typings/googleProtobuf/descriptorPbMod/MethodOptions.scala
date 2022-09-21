@@ -7,14 +7,13 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodOptions")
 @js.native
-class MethodOptions () extends Message {
+open class MethodOptions () extends Message {
   
   def addUninterpretedOption(): UninterpretedOption = js.native
   def addUninterpretedOption(value: Unit, index: Double): UninterpretedOption = js.native
@@ -78,7 +77,7 @@ object MethodOptions {
     /* 1 */ val NO_SIDE_EFFECTS: typings.googleProtobuf.descriptorPbMod.MethodOptions.IdempotencyLevel.NO_SIDE_EFFECTS & Double = js.native
   }
   
-  inline def deserializeBinary(bytes: Uint8Array): MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[MethodOptions]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[MethodOptions]
   
   inline def deserializeBinaryFromReader(message: MethodOptions, reader: BinaryReader): MethodOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[MethodOptions]
   
@@ -126,7 +125,7 @@ object MethodOptions {
       
       inline def setUninterpretedOptionList(value: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject]): Self = StObject.set(x, "uninterpretedOptionList", value.asInstanceOf[js.Any])
       
-      inline def setUninterpretedOptionListVarargs(value: typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject*): Self = StObject.set(x, "uninterpretedOptionList", js.Array(value :_*))
+      inline def setUninterpretedOptionListVarargs(value: typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject*): Self = StObject.set(x, "uninterpretedOptionList", js.Array(value*))
     }
   }
 }

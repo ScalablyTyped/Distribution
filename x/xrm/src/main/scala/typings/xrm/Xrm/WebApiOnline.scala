@@ -40,7 +40,7 @@ trait WebApiOnline
     *       * 5: EntityType
     *   - typeName: String. The fully qualified name of the parameter type.
     */
-  def execute(request: js.Any): PromiseLike[ExecuteResponse] = js.native
+  def execute(request: Any): PromiseLike[ExecuteResponse] = js.native
   
   /**
     * Execute a collection of action, function, or CRUD operations.
@@ -54,5 +54,5 @@ trait WebApiOnline
     *        * In this case, all the request objects specified in the change set will get executed in a
     *        transaction.
     */
-  def executeMultiple(request: js.Array[js.Any]): PromiseLike[js.Array[ExecuteResponse]] = js.native
+  def executeMultiple(request: js.Array[Any]): PromiseLike[js.Array[ExecuteResponse]] = js.native
 }

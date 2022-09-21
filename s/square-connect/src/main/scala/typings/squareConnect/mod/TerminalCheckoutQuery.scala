@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "TerminalCheckoutQuery")
 @js.native
-class TerminalCheckoutQuery () extends StObject {
+open class TerminalCheckoutQuery () extends StObject {
   
   /**
     * Options for filtering returned `TerminalCheckout`s

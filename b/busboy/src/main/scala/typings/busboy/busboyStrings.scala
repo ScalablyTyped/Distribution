@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object busboyStrings {
   
   @js.native
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
+  
+  @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
   sealed trait field extends StObject
   inline def field: field = "field".asInstanceOf[field]
   

@@ -62,12 +62,12 @@ trait ASPxClientTextEdit
   def SetText(text: String): Unit
   
   /**
-    * Fires on the client side when the editor's text is changed and focus moves out of the editor by end-user interactions.
+    * Occurs on the client when a user changes the editor's text and the editor loses focus.
     */
   var TextChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTextEdit]]
   
   /**
-    * Fires on the client side when the editor's input value is changed before the focus moves out of the editor by end-user interactions.
+    * Fires on the client each time a user changes an editor's input value.
     */
   var UserInput: ASPxClientEvent[ASPxClientEventHandler[ASPxClientTextEdit]]
 }
@@ -82,13 +82,13 @@ object ASPxClientTextEdit {
     GetEnabled: () => Boolean,
     GetErrorText: () => String,
     GetHeight: () => Double,
-    GetInputElement: () => js.Any,
+    GetInputElement: () => Any,
     GetIsValid: () => Boolean,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
     GetReadOnly: () => Boolean,
     GetText: () => String,
-    GetValue: () => js.Any,
+    GetValue: () => Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]],
@@ -110,7 +110,7 @@ object ASPxClientTextEdit {
     SetReadOnly: Boolean => Unit,
     SetSelection: (Double, Double, Boolean) => Unit,
     SetText: String => Unit,
-    SetValue: js.Any => Unit,
+    SetValue: Any => Unit,
     SetVisible: Boolean => Unit,
     SetWidth: Double => Unit,
     TextChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTextEdit]],

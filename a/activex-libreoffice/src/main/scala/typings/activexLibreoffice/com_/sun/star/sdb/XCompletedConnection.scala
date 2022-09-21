@@ -29,7 +29,7 @@ object XCompletedConnection {
   inline def apply(
     acquire: () => Unit,
     connectWithCompletion: XInteractionHandler => XConnection,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCompletedConnection = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), connectWithCompletion = js.Any.fromFunction1(connectWithCompletion), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

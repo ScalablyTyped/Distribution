@@ -72,7 +72,7 @@ object Game {
       
       inline def setFellowPlayers(value: js.Array[PlayerDto]): Self = StObject.set(x, "fellowPlayers", value.asInstanceOf[js.Any])
       
-      inline def setFellowPlayersVarargs(value: PlayerDto*): Self = StObject.set(x, "fellowPlayers", js.Array(value :_*))
+      inline def setFellowPlayersVarargs(value: PlayerDto*): Self = StObject.set(x, "fellowPlayers", js.Array(value*))
       
       inline def setGameId(value: Double): Self = StObject.set(x, "gameId", value.asInstanceOf[js.Any])
       
@@ -546,7 +546,7 @@ object Game {
       
       inline def setGames(value: js.Array[GameDto]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
       
-      inline def setGamesVarargs(value: GameDto*): Self = StObject.set(x, "games", js.Array(value :_*))
+      inline def setGamesVarargs(value: GameDto*): Self = StObject.set(x, "games", js.Array(value*))
       
       inline def setSummonerId(value: Double): Self = StObject.set(x, "summonerId", value.asInstanceOf[js.Any])
     }

@@ -1,5 +1,6 @@
 package typings.reactNavigationCore.anon
 
+import typings.react.mod.MutableRefObject
 import typings.reactNavigationCore.reactNavigationCoreStrings.action
 import typings.reactNavigationCore.reactNavigationCoreStrings.beforeRemove
 import typings.reactNavigationCore.reactNavigationCoreStrings.focus
@@ -29,6 +30,8 @@ trait AddKeyedListener extends StObject {
   def onOptionsChange(options: js.Object): Unit
   
   var onRouteFocus: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.undefined
+  
+  var stackRef: js.UndefOr[MutableRefObject[js.UndefOr[String]]] = js.undefined
 }
 object AddKeyedListener {
   
@@ -62,5 +65,9 @@ object AddKeyedListener {
     inline def setOnRouteFocus(value: /* key */ String => Unit): Self = StObject.set(x, "onRouteFocus", js.Any.fromFunction1(value))
     
     inline def setOnRouteFocusUndefined: Self = StObject.set(x, "onRouteFocus", js.undefined)
+    
+    inline def setStackRef(value: MutableRefObject[js.UndefOr[String]]): Self = StObject.set(x, "stackRef", value.asInstanceOf[js.Any])
+    
+    inline def setStackRefUndefined: Self = StObject.set(x, "stackRef", js.undefined)
   }
 }

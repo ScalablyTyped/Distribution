@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("mute-stream", JSImport.Namespace)
   @js.native
-  class ^ () extends MuteStream {
+  open class ^ () extends MuteStream {
     def this(options: Options) = this()
   }
   

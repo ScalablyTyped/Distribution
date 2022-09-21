@@ -1,7 +1,6 @@
 package typings.canvaskitWasm.mod
 
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +12,8 @@ trait EmulatedCanvas2D extends StObject {
     * Decodes an image with the given bytes.
     * @param bytes
     */
-  def decodeImage(bytes: ArrayBuffer): SkImage = js.native
-  def decodeImage(bytes: Uint8Array): SkImage = js.native
+  def decodeImage(bytes: js.typedarray.ArrayBuffer): Image = js.native
+  def decodeImage(bytes: js.typedarray.Uint8Array): Image = js.native
   
   /**
     * Cleans up all resources associated with this emulated canvas.
@@ -32,8 +31,8 @@ trait EmulatedCanvas2D extends StObject {
     * @param bytes
     * @param descriptors
     */
-  def loadFont(bytes: ArrayBuffer, descriptors: js.Object): Unit = js.native
-  def loadFont(bytes: Uint8Array, descriptors: js.Object): Unit = js.native
+  def loadFont(bytes: js.typedarray.ArrayBuffer, descriptors: Record[String, String]): Unit = js.native
+  def loadFont(bytes: js.typedarray.Uint8Array, descriptors: Record[String, String]): Unit = js.native
   
   /**
     * Returns an new emulated Path2D object.

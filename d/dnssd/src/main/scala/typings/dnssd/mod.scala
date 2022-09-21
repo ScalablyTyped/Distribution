@@ -13,29 +13,29 @@ object mod {
   
   @JSImport("dnssd", "Advertisement")
   @js.native
-  class Advertisement protected () extends EventEmitter {
-    def this(`type`: String, port: Double, args: js.Any*) = this()
-    def this(`type`: js.Array[String], port: Double, args: js.Any*) = this()
-    def this(`type`: ServiceType, port: Double, args: js.Any*) = this()
+  open class Advertisement protected () extends EventEmitter {
+    def this(`type`: String, port: Double, args: Any*) = this()
+    def this(`type`: js.Array[String], port: Double, args: Any*) = this()
+    def this(`type`: ServiceType, port: Double, args: Any*) = this()
     
     def start(): Advertisement = js.native
     
     def stop(): Unit = js.native
     def stop(forceImmediate: Boolean): Unit = js.native
-    def stop(forceImmediate: Boolean, callback: js.Function0[js.Any]): Unit = js.native
-    def stop(forceImmediate: Unit, callback: js.Function0[js.Any]): Unit = js.native
+    def stop(forceImmediate: Boolean, callback: js.Function0[Any]): Unit = js.native
+    def stop(forceImmediate: Unit, callback: js.Function0[Any]): Unit = js.native
     
-    def updateTXT(txtObj: js.Any): Unit = js.native
+    def updateTXT(txtObj: Any): Unit = js.native
   }
   
   @JSImport("dnssd", "Browser")
   @js.native
-  class Browser protected () extends EventEmitter {
-    def this(`type`: String, args: js.Any*) = this()
-    def this(`type`: js.Array[String], args: js.Any*) = this()
-    def this(`type`: ServiceType, args: js.Any*) = this()
+  open class Browser protected () extends EventEmitter {
+    def this(`type`: String, args: Any*) = this()
+    def this(`type`: js.Array[String], args: Any*) = this()
+    def this(`type`: ServiceType, args: Any*) = this()
     
-    def list(): js.Array[js.Any] = js.native
+    def list(): js.Array[Any] = js.native
     
     def start(): Browser = js.native
     
@@ -44,7 +44,7 @@ object mod {
   
   @JSImport("dnssd", "Options")
   @js.native
-  class Options () extends StObject {
+  open class Options () extends StObject {
     
     var host: js.UndefOr[String] = js.native
     
@@ -54,12 +54,12 @@ object mod {
     
     var subtypes: js.UndefOr[js.Array[String]] = js.native
     
-    var txt: js.UndefOr[js.Any] = js.native
+    var txt: js.UndefOr[Any] = js.native
   }
   
   @JSImport("dnssd", "Service")
   @js.native
-  class Service () extends StObject {
+  open class Service () extends StObject {
     
     // 8009
     var addresses: js.Array[String] = js.native
@@ -79,10 +79,10 @@ object mod {
     var port: Double = js.native
     
     // ['192.168.1.15']
-    var txt: js.Any = js.native
+    var txt: Any = js.native
     
     // { id: 'strings' }
-    var txtRaw: js.Any = js.native
+    var txtRaw: Any = js.native
     
     // 'InstanceName'
     var `type`: ServiceType = js.native
@@ -90,7 +90,7 @@ object mod {
   
   @JSImport("dnssd", "ServiceType")
   @js.native
-  class ServiceType protected () extends StObject {
+  open class ServiceType protected () extends StObject {
     def this(args: (String | js.Array[String])*) = this()
     def this(args: ServiceType) = this()
     
@@ -109,26 +109,26 @@ object mod {
     
     inline def all(): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[ServiceType]
     
-    inline def tcp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
+    inline def tcp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ServiceType]
     
-    inline def udp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("udp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
+    inline def udp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("udp")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ServiceType]
   }
   
   inline def all(): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[ServiceType]
   
-  inline def resolve(name: String, `type`: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def resolve(name: String, `type`: String, args: js.Object): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   inline def resolve4(name: String, `type`: String, args: js.Object): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def resolve6(name: String, `type`: String, args: js.Object): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  inline def resolveSRV(name: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSRV")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def resolveSRV(name: String, args: js.Object): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSRV")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
-  inline def resolveService(name: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveService")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def resolveService(name: String, args: js.Object): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveService")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
-  inline def resolveTXT(name: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTXT")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def resolveTXT(name: String, args: js.Object): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTXT")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
-  inline def tcp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
+  inline def tcp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ServiceType]
   
-  inline def udp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("udp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
+  inline def udp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("udp")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ServiceType]
 }

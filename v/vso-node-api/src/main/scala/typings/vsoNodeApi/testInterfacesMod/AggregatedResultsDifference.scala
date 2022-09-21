@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AggregatedResultsDifference extends StObject {
   
-  var increaseInDuration: js.Any
+  var increaseInDuration: Any
   
   var increaseInFailures: Double
   
@@ -19,7 +19,7 @@ trait AggregatedResultsDifference extends StObject {
 object AggregatedResultsDifference {
   
   inline def apply(
-    increaseInDuration: js.Any,
+    increaseInDuration: Any,
     increaseInFailures: Double,
     increaseInOtherTests: Double,
     increaseInPassedTests: Double,
@@ -31,7 +31,7 @@ object AggregatedResultsDifference {
   
   extension [Self <: AggregatedResultsDifference](x: Self) {
     
-    inline def setIncreaseInDuration(value: js.Any): Self = StObject.set(x, "increaseInDuration", value.asInstanceOf[js.Any])
+    inline def setIncreaseInDuration(value: Any): Self = StObject.set(x, "increaseInDuration", value.asInstanceOf[js.Any])
     
     inline def setIncreaseInFailures(value: Double): Self = StObject.set(x, "increaseInFailures", value.asInstanceOf[js.Any])
     

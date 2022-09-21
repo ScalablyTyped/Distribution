@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows
 
-import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Package
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
@@ -93,7 +92,7 @@ object Services {
       
       /** Gets the expiration date and time for the app license. */
       /* CompleteClass */
-      var expirationDate: Date = js.native
+      var expirationDate: js.Date = js.native
       
       /** Gets complete license data in JSON format. */
       /* CompleteClass */
@@ -140,7 +139,7 @@ object Services {
       
       /** Gets the date on which the product SKU was acquired. */
       /* CompleteClass */
-      var acquiredDate: Date = js.native
+      var acquiredDate: js.Date = js.native
       
       /** Gets the promotion campaign ID that is associated with the product SKU. */
       /* CompleteClass */
@@ -152,7 +151,7 @@ object Services {
       
       /** Gets the end date of the trial for the product SKU, if the SKU is a trial version or a durable add-on that expires after a set duration. */
       /* CompleteClass */
-      var endDate: Date = js.native
+      var endDate: js.Date = js.native
       
       /** Gets complete collection data for the product SKU in JSON format. */
       /* CompleteClass */
@@ -164,7 +163,7 @@ object Services {
       
       /** Gets the start date of the trial for the product SKU, if the SKU is a trial version or a durable add-on that expires after a set duration. */
       /* CompleteClass */
-      var startDate: Date = js.native
+      var startDate: js.Date = js.native
       
       /** Gets the remaining trial time for the product SKU. */
       /* CompleteClass */
@@ -298,7 +297,7 @@ object Services {
       
       /** Gets the expiration date and time for the add-on license. */
       /* CompleteClass */
-      var expirationDate: Date = js.native
+      var expirationDate: js.Date = js.native
       
       /** Gets complete license data in JSON format. */
       /* CompleteClass */
@@ -439,7 +438,7 @@ object Services {
       
       /** Gets the end date for the sale period for the product, if the product is on sale. */
       /* CompleteClass */
-      var saleEndDate: Date = js.native
+      var saleEndDate: js.Date = js.native
     }
     
     /** Represents a product that is available in the Windows Store. */
@@ -512,7 +511,7 @@ object Services {
     @JSGlobal("Windows.Services.Store.StorePurchaseProperties")
     @js.native
     /** Initializes a new instance of the StorePurchaseProperties class. */
-    class StorePurchaseProperties ()
+    open class StorePurchaseProperties ()
       extends StObject
          with typings.winrtUwp.Windows.Services.Store.StorePurchaseProperties {
       /** Initializes a new instance of the StorePurchaseProperties class. This overload provides the option to specify the product name that is displayed to the user during the purchase.

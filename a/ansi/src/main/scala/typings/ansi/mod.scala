@@ -20,9 +20,9 @@ object mod {
     */
   @JSImport("ansi", "Colorer")
   @js.native
-  class Colorer protected ()
+  open class Colorer protected ()
     extends StObject
-       with /* key */ StringDictionary[js.Function1[/* repeated */ js.Any, Cursor | Colorer]] {
+       with /* key */ StringDictionary[js.Function1[/* repeated */ Any, Cursor | Colorer]] {
     def this(cursor: Cursor, base: String) = this()
     
     /**
@@ -84,9 +84,9 @@ object mod {
   
   @JSImport("ansi", "Cursor")
   @js.native
-  class Cursor protected ()
+  open class Cursor protected ()
     extends StObject
-       with /* key */ StringDictionary[(js.Function1[/* repeated */ js.Any, Cursor]) | Colorer] {
+       with /* key */ StringDictionary[(js.Function1[/* repeated */ Any, Cursor]) | Colorer] {
     def this(stream: Stream) = this()
     def this(stream: Stream, options: CursorOptions) = this()
     

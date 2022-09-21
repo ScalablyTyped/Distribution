@@ -13,6 +13,9 @@ trait ColumnDescription extends StObject {
     */
   var dataType: js.UndefOr[String] = js.undefined
   
+  /** Optional. Additional details about a date column. */
+  var dateDetails: js.UndefOr[DateDetails] = js.undefined
+  
   /** Internal id for a column. */
   var id: js.UndefOr[String] = js.undefined
   
@@ -28,8 +31,14 @@ trait ColumnDescription extends StObject {
     */
   var lookupDetails: js.UndefOr[LookupDetails] = js.undefined
   
+  /** Optional. Indicates whether or not multiple values are allowed for array types where such a restriction is possible. */
+  var multipleValuesDisallowed: js.UndefOr[Boolean] = js.undefined
+  
   /** column name */
   var name: js.UndefOr[String] = js.undefined
+  
+  /** Optional. Indicates that values for the column cannot be set by the user. */
+  var readonly: js.UndefOr[Boolean] = js.undefined
   
   /** Optional. Additional details about a relationship column. Specified when data_type is relationship. */
   var relationshipDetails: js.UndefOr[RelationshipDetails] = js.undefined
@@ -47,6 +56,10 @@ object ColumnDescription {
     
     inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
+    inline def setDateDetails(value: DateDetails): Self = StObject.set(x, "dateDetails", value.asInstanceOf[js.Any])
+    
+    inline def setDateDetailsUndefined: Self = StObject.set(x, "dateDetails", js.undefined)
+    
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
@@ -55,15 +68,23 @@ object ColumnDescription {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: LabeledItem*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: LabeledItem*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setLookupDetails(value: LookupDetails): Self = StObject.set(x, "lookupDetails", value.asInstanceOf[js.Any])
     
     inline def setLookupDetailsUndefined: Self = StObject.set(x, "lookupDetails", js.undefined)
     
+    inline def setMultipleValuesDisallowed(value: Boolean): Self = StObject.set(x, "multipleValuesDisallowed", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleValuesDisallowedUndefined: Self = StObject.set(x, "multipleValuesDisallowed", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    
+    inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
     
     inline def setRelationshipDetails(value: RelationshipDetails): Self = StObject.set(x, "relationshipDetails", value.asInstanceOf[js.Any])
     

@@ -12,66 +12,378 @@ trait ComposeProps
   extends StObject
      with GestureProps {
   
+  /**
+    * @language zh-CN
+    * @description 进度条1在开始的角度上增加的角度
+    * @defaultValue 215
+    */
+  /**
+    * @language en-US
+    * @description The angle that progress bar 1 adds to the starting angle
+    * @defaultValue 215
+    */
   var andDegree1: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条大于具体值的颜色
+    * @defaultValue "#E5E5E5"
+    */
+  /**
+    * @language en-US
+    * @description Color of progress bar larger than specific value
+    * @defaultValue "#E5E5E5"
+    */
   var backColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 大于具体值的不透明度
+    * @defaultValue 1
+    */
+  /**
+    * @language en-US
+    * @description Opacity greater than a specific value
+    * @defaultValue 1
+    */
   var backStrokeOpacity: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 轨道结束的圆环颜色
+    * @defaultValue "#E5E5E5"
+    */
+  /**
+    * @language en-US
+    * @description The color of the ring at the end of the track
+    * @defaultValue "#E5E5E5"
+    */
   var endColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条小于具体值的颜色
+    * @types string | <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/bcd9b9272bcbe9e172409f2b0b0b9fa280fdb976/types/tuya-panel-kit/theme.d.ts#L1">StopsProps[]</a> | { [key: string]: string }
+    * @defaultValue "#FF4800"
+    */
+  /**
+    * @language en-US
+    * @description Color of progress bar less than specific value
+    * @types string | <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/bcd9b9272bcbe9e172409f2b0b0b9fa280fdb976/types/tuya-panel-kit/theme.d.ts#L1">StopsProps[]</a> | { [key: string]: string }
+    * @defaultValue "#FF4800"
+    */
   var foreColor: js.UndefOr[String | js.Array[StopsProps] | StringDictionary[String]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 小于具体值的不透明度
+    * @defaultValue 1
+    */
+  /**
+    * @language en-US
+    * @description Opacity less than a specific value
+    * @defaultValue 1
+    */
   var foreStrokeOpacity: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条1最大值
+    * @defaultValue 100
+    */
+  /**
+    * @language en-US
+    * @description Progress bar 1 Maximum
+    * @defaultValue 100
+    */
   var max1: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条2最大值
+    * @defaultValue 50
+    */
+  /**
+    * @language en-US
+    * @description Progress bar 2 max
+    * @defaultValue 50
+    */
   var max2: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条1最小值
+    * @defaultValue 0
+    */
+  /**
+    * @language en-US
+    * @description Progress bar 1 minimum
+    * @defaultValue 0
+    */
   var min1: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条2最小值
+    * @defaultValue 0
+    */
+  /**
+    * @language en-US
+    * @description Progress bar 2 min
+    * @defaultValue 0
+    */
   var min2: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否需要最大值的 Touch
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Do you need touch with maximum value
+    * @defaultValue true
+    */
   var needCircle1: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否需要另一个轨道上的 thumb
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Do you need a thumb on another orbit
+    * @defaultValue true
+    */
   var needCircle2: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 滑动结束的回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Slide end callback
+    * @defaultValue () => {}
+    */
   var onSlidingComplete: js.UndefOr[js.Function1[/* argus */ Value2x, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 值改变的回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Callback of value change
+    * @defaultValue () => {}
+    */
   var onValueChange: js.UndefOr[js.Function1[/* argus */ Value1, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条2在开始的角度上减少的角度
+    * @defaultValue 100
+    */
+  /**
+    * @language en-US
+    * @description Progress bar 2 decreases the angle from the starting angle
+    * @defaultValue 100
+    */
   var reduceDegree2: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条1渲染的高度
+    * @defaultValue 9
+    */
+  /**
+    * @language en-US
+    * @description Height of progress bar 1 rendering
+    * @defaultValue 9
+    */
   var scaleHeight1: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条2渲染的高度
+    * @defaultValue 4
+    */
+  /**
+    * @language en-US
+    * @description Height of progress bar 2 rendering
+    * @defaultValue 4
+    */
   var scaleHeight2: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 轨道开始的圆环颜色
+    * @defaultValue "#FF4800"
+    */
+  /**
+    * @language en-US
+    * @description The color of the ring at the beginning of the track
+    * @defaultValue "#FF4800"
+    */
   var startColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条1开始角度
+    * @defaultValue 165
+    */
+  /**
+    * @language en-US
+    * @description Starting angle of progress bar 1
+    * @defaultValue 165
+    */
   var startDegree1: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条2开始角度
+    * @defaultValue 140
+    */
+  /**
+    * @language en-US
+    * @description Progress bar 2 start angle
+    * @defaultValue 140
+    */
   var startDegree2: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 步长
+    * @defaultValue 0
+    */
+  /**
+    * @language en-US
+    * @description Step value
+    * @defaultValue 0
+    */
   var stepValue: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条1 Thumb 小圆球的填充色
+    * @defaultValue "#fff"
+    */
+  /**
+    * @language en-US
+    * @description Filling color of thumb ball in progress bar 1
+    * @defaultValue "#fff"
+    */
   var thumbFill: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条2 Thumb 小圆球的填充色
+    * @defaultValue '#fff'
+    */
+  /**
+    * @language en-US
+    * @description Progress bar 2 filling color of thumb ball
+    * @defaultValue '#fff'
+    */
   var thumbFill2: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条1 Thumb 小圆球的半径
+    * @defaultValue 5
+    */
+  /**
+    * @language en-US
+    * @description Radius of progress bar 1 thumb ball
+    * @defaultValue 5
+    */
   var thumbRadius1: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条2 Thumb 小圆球的半径
+    * @defaultValue 2
+    */
+  /**
+    * @language en-US
+    * @description Radius of progress bar 2 thumb ball
+    * @defaultValue 2
+    */
   var thumbRadius2: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条1 Thumb小圆球的边框色
+    * @defaultValue "#fff"
+    */
+  /**
+    * @language en-US
+    * @description The border color of thumb ball in progress bar 1
+    * @defaultValue "#fff"
+    */
   var thumbStroke: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条2 Thumb 小圆球的边框色
+    * @defaultValue '#fff'
+    */
+  /**
+    * @language en-US
+    * @description Border color of progress bar 2 thumb ball
+    * @defaultValue '#fff'
+    */
   var thumbStroke2: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条1 Thumb小圆球边框宽度
+    * @defaultValue 2
+    */
+  /**
+    * @language en-US
+    * @description Border width of thumb ball in progress bar 1
+    * @defaultValue 2
+    */
   var thumbStrokeWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条2 Thumb小圆球边框宽度
+    * @defaultValue 2
+    */
+  /**
+    * @language en-US
+    * @description Thumb small ball border width in Progress bar 2
+    * @defaultValue 2
+    */
   var thumbStrokeWidth2: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 具体值1
+    * @defaultValue 50
+    */
+  /**
+    * @language en-US
+    * @description value1
+    * @defaultValue 50
+    */
   var value1: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 具体值2
+    * @defaultValue 20
+    */
+  /**
+    * @language en-US
+    * @description value2
+    * @defaultValue 20
+    */
   var value2: js.UndefOr[Double] = js.undefined
 }
 object ComposeProps {
@@ -103,7 +415,7 @@ object ComposeProps {
     
     inline def setForeColorUndefined: Self = StObject.set(x, "foreColor", js.undefined)
     
-    inline def setForeColorVarargs(value: StopsProps*): Self = StObject.set(x, "foreColor", js.Array(value :_*))
+    inline def setForeColorVarargs(value: StopsProps*): Self = StObject.set(x, "foreColor", js.Array(value*))
     
     inline def setForeStrokeOpacity(value: Double): Self = StObject.set(x, "foreStrokeOpacity", value.asInstanceOf[js.Any])
     

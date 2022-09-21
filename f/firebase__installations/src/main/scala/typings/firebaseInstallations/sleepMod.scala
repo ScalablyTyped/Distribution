@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sleepMod {
   
-  @JSImport("@firebase/installations/dist/src/util/sleep", JSImport.Namespace)
+  @JSImport("@firebase/installations/dist/esm/src/util/sleep", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

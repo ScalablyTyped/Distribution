@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__tree
 
-Typings are for version 2.4.3
+Typings are for version 5.1.4
 
 ## Library description:
 A package for creating an accessible tree component following the tree role.
@@ -9,11 +9,11 @@ A package for creating an accessible tree component following the tree role.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @react-md/tree |
-| Keywords           | react-md, material design, react, transition, component, components, collapse |
-| # releases         | 43 |
-| # dependents       | 2 |
-| # downloads        | 18685 |
-| # stars            | 0 |
+| Keywords           | react-md, material design, react, component, components, tree |
+| # releases         | 48 |
+| # dependents       | 0.0 |
+| # downloads        | 5177.666666666667 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/tree/demos)

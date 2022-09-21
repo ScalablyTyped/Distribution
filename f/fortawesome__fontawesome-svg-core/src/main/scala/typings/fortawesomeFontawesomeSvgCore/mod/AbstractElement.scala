@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AbstractElement extends StObject {
   
-  var attributes: js.Any
+  var attributes: Any
   
   var children: js.UndefOr[js.Array[AbstractElement]] = js.undefined
   
@@ -14,20 +14,20 @@ trait AbstractElement extends StObject {
 }
 object AbstractElement {
   
-  inline def apply(attributes: js.Any, tag: String): AbstractElement = {
+  inline def apply(attributes: Any, tag: String): AbstractElement = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractElement]
   }
   
   extension [Self <: AbstractElement](x: Self) {
     
-    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setChildren(value: js.Array[AbstractElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: AbstractElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: AbstractElement*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }

@@ -36,6 +36,24 @@ object mod {
     def disableDefaultStyle: Boolean = js.native
     inline def disableDefaultStyle_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableDefaultStyle")(x.asInstanceOf[js.Any])
     
+    @JSImport("vega-tooltip", "DEFAULT_OPTIONS.formatTooltip")
+    @js.native
+    def formatTooltip: js.Function3[
+        /* value */ Any, 
+        /* valueToHtml */ js.Function1[/* value */ Any, String], 
+        /* maxDepth */ Double, 
+        String
+      ] = js.native
+    inline def formatTooltip(value: Any, valueToHtml: js.Function1[/* value */ Any, String], maxDepth: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTooltip")(value.asInstanceOf[js.Any], valueToHtml.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def formatTooltip_=(
+      x: js.Function3[
+          /* value */ Any, 
+          /* valueToHtml */ js.Function1[/* value */ Any, String], 
+          /* maxDepth */ Double, 
+          String
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatTooltip")(x.asInstanceOf[js.Any])
+    
     @JSImport("vega-tooltip", "DEFAULT_OPTIONS.id")
     @js.native
     def id: String = js.native
@@ -58,9 +76,9 @@ object mod {
     
     @JSImport("vega-tooltip", "DEFAULT_OPTIONS.sanitize")
     @js.native
-    def sanitize: js.Function1[/* value */ js.Any, String] = js.native
-    inline def sanitize(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def sanitize_=(x: js.Function1[/* value */ js.Any, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sanitize")(x.asInstanceOf[js.Any])
+    def sanitize: js.Function1[/* value */ Any, String] = js.native
+    inline def sanitize(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def sanitize_=(x: js.Function1[/* value */ Any, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sanitize")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-tooltip", "DEFAULT_OPTIONS.styleId")
     @js.native
@@ -83,13 +101,13 @@ object mod {
     *
     * @param options Tooltip Options
     */
-  class Handler () extends StObject {
+  open class Handler () extends StObject {
     def this(options: Options) = this()
     
     /**
       * The handler function. We bind this to this function in the constructor.
       */
-    def call(handler: js.Any, event: MouseEvent, item: Item[js.Any], value: js.Any): Unit = js.native
+    def call(handler: Any, event: MouseEvent, item: Item[Any], value: Any): Unit = js.native
     /**
       * The handler function. We bind this to this function in the constructor.
       */
@@ -99,17 +117,17 @@ object mod {
     /**
       * The tooltip html element.
       */
-    /* private */ var el: js.Any = js.native
+    /* private */ var el: Any = js.native
     
     /**
       * Complete tooltip options.
       */
-    /* private */ var options: js.Any = js.native
+    /* private */ var options: Any = js.native
     
     /**
       * The tooltip handler function.
       */
-    /* private */ var tooltipHandler: js.Any = js.native
+    /* private */ var tooltipHandler: Any = js.native
   }
   
   /**
@@ -129,7 +147,7 @@ object mod {
     *
     * @param value A value to convert to string and HTML-escape.
     */
-  inline def escapeHTML(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHTML")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeHTML(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHTML")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Format the value to be shown in the tooltip.
@@ -137,23 +155,27 @@ object mod {
     * @param value The value to show in the tooltip.
     * @param valueToHtml Function to convert a single cell value to an HTML string
     */
-  inline def formatValue(value: js.Any, valueToHtml: js.Function1[/* value */ js.Any, String], maxDepth: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatValue")(value.asInstanceOf[js.Any], valueToHtml.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatValue(value: Any, valueToHtml: js.Function1[/* value */ Any, String], maxDepth: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatValue")(value.asInstanceOf[js.Any], valueToHtml.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def replacer(maxDepth: Double): js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("replacer")(maxDepth.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]]
+  inline def replacer(maxDepth: Double): js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("replacer")(maxDepth.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]]
   
   /**
     * Stringify any JS object to valid JSON
     */
-  inline def stringify(obj: js.Any, maxDepth: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(obj: Any, maxDepth: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("vega-tooltip", "version")
   @js.native
   val version: String = js.native
   
-  /* Inlined std.Partial<{  offsetX :number,   offsetY :number,   id :string,   styleId :string,   theme :string,   disableDefaultStyle :boolean,   sanitize :typeof escapeHTML,   maxDepth :number}> */
+  /* Inlined std.Partial<{  offsetX :number,   offsetY :number,   id :string,   styleId :string,   theme :string,   disableDefaultStyle :boolean,   sanitize :typeof escapeHTML,   maxDepth :number,   formatTooltip :typeof formatValue}> */
   trait Options extends StObject {
     
     var disableDefaultStyle: js.UndefOr[Boolean] = js.undefined
+    
+    var formatTooltip: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof formatValue */ js.Any
+      ] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
@@ -183,6 +205,12 @@ object mod {
       inline def setDisableDefaultStyle(value: Boolean): Self = StObject.set(x, "disableDefaultStyle", value.asInstanceOf[js.Any])
       
       inline def setDisableDefaultStyleUndefined: Self = StObject.set(x, "disableDefaultStyle", js.undefined)
+      
+      inline def setFormatTooltip(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: typeof formatValue */ js.Any
+      ): Self = StObject.set(x, "formatTooltip", value.asInstanceOf[js.Any])
+      
+      inline def setFormatTooltipUndefined: Self = StObject.set(x, "formatTooltip", js.undefined)
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

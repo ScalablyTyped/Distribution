@@ -84,7 +84,7 @@ object Axes {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: js.Array[String]*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: js.Array[String]*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setClasses(value: Record[String, String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
@@ -98,7 +98,7 @@ object Axes {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: (Array[String | Primitive])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: (Array[String | Primitive])*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setData(value: typings.c3.mod.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
@@ -112,7 +112,7 @@ object Axes {
     
     inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     
-    inline def setJsonVarargs(value: (Record[String, Primitive])*): Self = StObject.set(x, "json", js.Array(value :_*))
+    inline def setJsonVarargs(value: (Record[String, Primitive])*): Self = StObject.set(x, "json", js.Array(value*))
     
     inline def setKeys(value: Value): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
@@ -126,7 +126,7 @@ object Axes {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: PrimitiveArray*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: PrimitiveArray*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setType(value: ChartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
@@ -140,7 +140,7 @@ object Axes {
     
     inline def setUnloadUndefined: Self = StObject.set(x, "unload", js.undefined)
     
-    inline def setUnloadVarargs(value: String*): Self = StObject.set(x, "unload", js.Array(value :_*))
+    inline def setUnloadVarargs(value: String*): Self = StObject.set(x, "unload", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

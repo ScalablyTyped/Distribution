@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object blurMod {
   
-  @JSImport("konva/types/filters/Blur", "Blur")
+  @JSImport("konva/lib/filters/Blur", "Blur")
   @js.native
   val Blur: Filter = js.native
 }

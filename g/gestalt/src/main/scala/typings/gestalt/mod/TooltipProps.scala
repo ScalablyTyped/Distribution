@@ -1,9 +1,5 @@
 package typings.gestalt.mod
 
-import typings.gestalt.gestaltStrings.down
-import typings.gestalt.gestaltStrings.left
-import typings.gestalt.gestaltStrings.right
-import typings.gestalt.gestaltStrings.up
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,9 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TooltipProps extends StObject {
   
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
+  
   var children: ReactNode
   
-  var idealDirection: js.UndefOr[up | right | down | left] = js.undefined
+  var idealDirection: js.UndefOr[FourDirections] = js.undefined
   
   var `inline`: js.UndefOr[Boolean] = js.undefined
   
@@ -32,11 +30,15 @@ object TooltipProps {
   
   extension [Self <: TooltipProps](x: Self) {
     
+    inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
+    
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setIdealDirection(value: up | right | down | left): Self = StObject.set(x, "idealDirection", value.asInstanceOf[js.Any])
+    inline def setIdealDirection(value: FourDirections): Self = StObject.set(x, "idealDirection", value.asInstanceOf[js.Any])
     
     inline def setIdealDirectionUndefined: Self = StObject.set(x, "idealDirection", js.undefined)
     

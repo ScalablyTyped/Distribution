@@ -6,22 +6,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WebGLContextAttributes extends StObject {
   
+  /* standard dom */
   var alpha: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var antialias: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var depth: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var desynchronized: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var failIfMajorPerformanceCaveat: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var powerPreference: js.UndefOr[WebGLPowerPreference] = js.undefined
   
+  /* standard dom */
   var premultipliedAlpha: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var stencil: js.UndefOr[scala.Boolean] = js.undefined
 }
 object WebGLContextAttributes {

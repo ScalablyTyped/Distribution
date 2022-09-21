@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A reply to a developer metadata search request.
-  */
 trait SchemaSearchDeveloperMetadataResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaSearchDeveloperMetadataResponse {
     
     inline def setMatchedDeveloperMetadataUndefined: Self = StObject.set(x, "matchedDeveloperMetadata", js.undefined)
     
-    inline def setMatchedDeveloperMetadataVarargs(value: SchemaMatchedDeveloperMetadata*): Self = StObject.set(x, "matchedDeveloperMetadata", js.Array(value :_*))
+    inline def setMatchedDeveloperMetadataVarargs(value: SchemaMatchedDeveloperMetadata*): Self = StObject.set(x, "matchedDeveloperMetadata", js.Array(value*))
   }
 }

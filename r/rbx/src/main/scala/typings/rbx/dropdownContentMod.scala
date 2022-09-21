@@ -54,7 +54,7 @@ object dropdownContentMod {
   
   @JSImport("rbx/components/dropdown/dropdown-content", "DropdownContent")
   @js.native
-  val DropdownContent: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val DropdownContent: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait DropdownContentProps extends StObject {

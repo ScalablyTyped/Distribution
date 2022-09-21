@@ -6,24 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Delay extends StObject {
+  trait Name extends StObject {
     
-    var delay: Double
+    var name: String
     
-    var maxRetries: Double
+    var total: Double | Null
   }
-  object Delay {
+  object Name {
     
-    inline def apply(delay: Double, maxRetries: Double): Delay = {
-      val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], maxRetries = maxRetries.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Delay]
+    inline def apply(name: String): Name = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], total = null)
+      __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Delay](x: Self) {
+    extension [Self <: Name](x: Self) {
       
-      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      
+      inline def setTotalNull: Self = StObject.set(x, "total", null)
     }
   }
 }

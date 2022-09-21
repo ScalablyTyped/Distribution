@@ -30,7 +30,7 @@ object XKeysSupplier {
     Keys: XIndexAccess,
     acquire: () => Unit,
     getKeys: () => XIndexAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XKeysSupplier = {
     val __obj = js.Dynamic.literal(Keys = Keys.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getKeys = js.Any.fromFunction0(getKeys), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

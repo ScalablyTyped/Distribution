@@ -6,7 +6,6 @@ import typings.phaser.Phaser.GameObjects.Graphics
 import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
 import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
 import typings.phaser.Phaser.Types.Display.InputColorObject
-import typings.phaser.integer
 import typings.std.WebGLFramebuffer
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
@@ -45,7 +44,7 @@ object Display {
     /**
       * The default uniforms for this shader.
       */
-    var uniforms: js.Any
+    var uniforms: Any
     
     /**
       * The source code, as a string, of the vertex shader being used.
@@ -54,7 +53,7 @@ object Display {
   }
   object BaseShader {
     
-    inline def apply(fragmentSrc: String, key: String, uniforms: js.Any, vertexSrc: String): BaseShader = {
+    inline def apply(fragmentSrc: String, key: String, uniforms: Any, vertexSrc: String): BaseShader = {
       val __obj = js.Dynamic.literal(fragmentSrc = fragmentSrc.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], uniforms = uniforms.asInstanceOf[js.Any], vertexSrc = vertexSrc.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseShader]
     }
@@ -65,7 +64,7 @@ object Display {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setUniforms(value: js.Any): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+      inline def setUniforms(value: Any): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       
       inline def setVertexSrc(value: String): Self = StObject.set(x, "vertexSrc", value.asInstanceOf[js.Any])
     }
@@ -101,7 +100,7 @@ object Display {
       * Brighten this Color by the percentage amount given.
       * @param amount The percentage amount to change this color by. A value between 0 and 100.
       */
-    def brighten(amount: integer): Color = js.native
+    def brighten(amount: Double): Color = js.native
     
     /**
       * The color of this Color component, not including the alpha channel.
@@ -117,14 +116,14 @@ object Display {
       * Decrease the lightness of this Color by the percentage amount given.
       * @param amount The percentage amount to change this color by. A value between 0 and 100.
       */
-    def darken(amount: integer): Color = js.native
+    def darken(amount: Double): Color = js.native
     
     /**
       * Decrease the saturation of this Color by the percentage amount given.
       * The saturation is the amount of the base color in the hue.
       * @param amount The percentage amount to change this color by. A value between 0 and 100.
       */
-    def desaturate(amount: integer): Color = js.native
+    def desaturate(amount: Double): Color = js.native
     
     /**
       * An array containing the calculated color values for WebGL use.
@@ -135,7 +134,7 @@ object Display {
       * Sets this Color object to be grayscaled based on the shade value given.
       * @param shade A value between 0 and 255.
       */
-    def gray(shade: integer): Color = js.native
+    def gray(shade: Double): Color = js.native
     
     /**
       * The green color value, normalized to the range 0 to 255.
@@ -157,7 +156,7 @@ object Display {
       * Increase the lightness of this Color by the percentage amount given.
       * @param amount The percentage amount to change this color by. A value between 0 and 100.
       */
-    def lighten(amount: integer): Color = js.native
+    def lighten(amount: Double): Color = js.native
     
     /**
       * Sets this Color object to be a random color between the `min` and `max` values given.
@@ -165,9 +164,9 @@ object Display {
       * @param max The maximum random color value. Between 0 and 255. Default 255.
       */
     def random(): Color = js.native
-    def random(min: Unit, max: integer): Color = js.native
-    def random(min: integer): Color = js.native
-    def random(min: integer, max: integer): Color = js.native
+    def random(min: Double): Color = js.native
+    def random(min: Double, max: Double): Color = js.native
+    def random(min: Unit, max: Double): Color = js.native
     
     /**
       * Sets this Color object to be a random grayscale color between the `min` and `max` values given.
@@ -175,9 +174,9 @@ object Display {
       * @param max The maximum random color value. Between 0 and 255. Default 255.
       */
     def randomGray(): Color = js.native
-    def randomGray(min: Unit, max: integer): Color = js.native
-    def randomGray(min: integer): Color = js.native
-    def randomGray(min: integer, max: integer): Color = js.native
+    def randomGray(min: Double): Color = js.native
+    def randomGray(min: Double, max: Double): Color = js.native
+    def randomGray(min: Unit, max: Double): Color = js.native
     
     /**
       * The red color value, normalized to the range 0 to 255.
@@ -205,7 +204,7 @@ object Display {
       * The saturation is the amount of the base color in the hue.
       * @param amount The percentage amount to change this color by. A value between 0 and 100.
       */
-    def saturate(amount: integer): Color = js.native
+    def saturate(amount: Double): Color = js.native
     
     /**
       * Sets the color based on the hue, saturation and lightness values given.
@@ -239,10 +238,10 @@ object Display {
       * @param alpha The alpha value. A number between 0 and 255. Default 255.
       * @param updateHSV Update the HSV values after setting the RGB values? Default true.
       */
-    def setTo(red: integer, green: integer, blue: integer): Color = js.native
-    def setTo(red: integer, green: integer, blue: integer, alpha: Unit, updateHSV: Boolean): Color = js.native
-    def setTo(red: integer, green: integer, blue: integer, alpha: integer): Color = js.native
-    def setTo(red: integer, green: integer, blue: integer, alpha: integer, updateHSV: Boolean): Color = js.native
+    def setTo(red: Double, green: Double, blue: Double): Color = js.native
+    def setTo(red: Double, green: Double, blue: Double, alpha: Double): Color = js.native
+    def setTo(red: Double, green: Double, blue: Double, alpha: Double, updateHSV: Boolean): Color = js.native
+    def setTo(red: Double, green: Double, blue: Double, alpha: Unit, updateHSV: Boolean): Color = js.native
     
     /**
       * Sets this color to be transparent. Sets all values to zero.
@@ -254,6 +253,191 @@ object Display {
       * This controls how dark the color is. Where 1 is as bright as possible and 0 is black.
       */
     var v: Double = js.native
+  }
+  
+  /**
+    * The ColorMatrix class creates a 5x4 matrix that can be used in shaders and graphics
+    * operations. It provides methods required to modify the color values, such as adjusting
+    * the brightness, setting a sepia tone, hue rotation and more.
+    * 
+    * Use the method `getData` to return a Float32Array containing the current color values.
+    */
+  @js.native
+  trait ColorMatrix extends StObject {
+    
+    /**
+      * The value that determines how much of the original color is used
+      * when mixing the colors. A value between 0 (all original) and 1 (all final)
+      */
+    var alpha: Double = js.native
+    
+    /**
+      * Sets this ColorMatrix to be black and white.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def blackWhite(): this.type = js.native
+    def blackWhite(multiply: Boolean): this.type = js.native
+    
+    /**
+      * Changes the brightness of this ColorMatrix by the given amount.
+      * @param value The amount of brightness to apply to this ColorMatrix. Between 0 (black) and 1. Default 0.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def brightness(): this.type = js.native
+    def brightness(value: Double): this.type = js.native
+    def brightness(value: Double, multiply: Boolean): this.type = js.native
+    def brightness(value: Unit, multiply: Boolean): this.type = js.native
+    
+    /**
+      * Applies a brown tone to this ColorMatrix.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def brown(): this.type = js.native
+    def brown(multiply: Boolean): this.type = js.native
+    
+    /**
+      * Change the contrast of this ColorMatrix by the amount given.
+      * @param value The amount of contrast to apply to this ColorMatrix. Default 0.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def contrast(): this.type = js.native
+    def contrast(value: Double): this.type = js.native
+    def contrast(value: Double, multiply: Boolean): this.type = js.native
+    def contrast(value: Unit, multiply: Boolean): this.type = js.native
+    
+    /**
+      * Apply a desaturated luminance to this ColorMatrix.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def desaturateLuminance(): this.type = js.native
+    def desaturateLuminance(multiply: Boolean): this.type = js.native
+    
+    /**
+      * Gets the ColorMatrix as a Float32Array.
+      * 
+      * Can be used directly as a 1fv shader uniform value.
+      */
+    def getData(): js.typedarray.Float32Array = js.native
+    
+    /**
+      * Sets this ColorMatrix to be grayscale.
+      * @param value The grayscale scale (0 is black). Default 1.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def grayscale(): this.type = js.native
+    def grayscale(value: Double): this.type = js.native
+    def grayscale(value: Double, multiply: Boolean): this.type = js.native
+    def grayscale(value: Unit, multiply: Boolean): this.type = js.native
+    
+    /**
+      * Rotates the hues of this ColorMatrix by the value given.
+      * @param rotation The amount of hue rotation to apply to this ColorMatrix, in degrees. Default 0.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def hue(): this.type = js.native
+    def hue(rotation: Double): this.type = js.native
+    def hue(rotation: Double, multiply: Boolean): this.type = js.native
+    def hue(rotation: Unit, multiply: Boolean): this.type = js.native
+    
+    /**
+      * Applies a kodachrome color effect to this ColorMatrix.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def kodachrome(): this.type = js.native
+    def kodachrome(multiply: Boolean): this.type = js.native
+    
+    /**
+      * Applies a trippy color tone to this ColorMatrix.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def lsd(): this.type = js.native
+    def lsd(multiply: Boolean): this.type = js.native
+    
+    /**
+      * Multiplies the two given matrices.
+      * @param a The 5x4 array to multiply with ColorMatrix._matrix.
+      */
+    def multiply(a: js.Array[Double]): this.type = js.native
+    
+    /**
+      * Converts this ColorMatrix to have negative values.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def negative(): this.type = js.native
+    def negative(multiply: Boolean): this.type = js.native
+    
+    /**
+      * Applies a night vision tone to this ColorMatrix.
+      * @param intensity The intensity of this effect. Default 0.1.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def night(): this.type = js.native
+    def night(intensity: Double): this.type = js.native
+    def night(intensity: Double, multiply: Boolean): this.type = js.native
+    def night(intensity: Unit, multiply: Boolean): this.type = js.native
+    
+    /**
+      * Applies a polaroid color effect to this ColorMatrix.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def polaroid(): this.type = js.native
+    def polaroid(multiply: Boolean): this.type = js.native
+    
+    /**
+      * Resets the ColorMatrix.
+      */
+    def reset(): this.type = js.native
+    
+    /**
+      * Changes the saturation of this ColorMatrix by the given amount.
+      * @param value The amount of saturation to apply to this ColorMatrix. Default 0.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def saturate(): this.type = js.native
+    def saturate(value: Double): this.type = js.native
+    def saturate(value: Double, multiply: Boolean): this.type = js.native
+    def saturate(value: Unit, multiply: Boolean): this.type = js.native
+    
+    /**
+      * Desaturates this ColorMatrix (removes color from it).
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def saturation(): this.type = js.native
+    def saturation(multiply: Boolean): this.type = js.native
+    
+    /**
+      * Applies a sepia tone to this ColorMatrix.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def sepia(): this.type = js.native
+    def sepia(multiply: Boolean): this.type = js.native
+    
+    /**
+      * Sets this ColorMatrix from the given array of color values.
+      * @param value The ColorMatrix values to set.
+      */
+    def set(value: js.Array[Double]): this.type = js.native
+    
+    /**
+      * Shifts the values of this ColorMatrix into BGR order.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def shiftToBGR(): this.type = js.native
+    def shiftToBGR(multiply: Boolean): this.type = js.native
+    
+    /**
+      * Applies a technicolor color effect to this ColorMatrix.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def technicolor(): this.type = js.native
+    def technicolor(multiply: Boolean): this.type = js.native
+    
+    /**
+      * Applies a vintage pinhole color effect to this ColorMatrix.
+      * @param multiply Multiply the resulting ColorMatrix (`true`), or set it (`false`) ? Default false.
+      */
+    def vintagePinhole(): this.type = js.native
+    def vintagePinhole(multiply: Boolean): this.type = js.native
   }
   
   object Masks {
@@ -274,6 +458,9 @@ object Display {
       *  A pixel with an alpha of 1 in the masked Game Object will receive the same alpha as the
       * corresponding pixel in the mask.
       * 
+      * Note: You cannot combine Bitmap Masks and Blend Modes on the same Game Object. You can, however,
+      * combine Geometry Masks and Blend Modes together.
+      * 
       * The Bitmap Mask's location matches the location of its Game Object, not the location of the
       * masked objects. Moving or transforming the underlying Game Object will change the mask
       * (and affect the visibility of any masked objects), whereas moving or transforming a masked object
@@ -293,6 +480,21 @@ object Display {
       var bitmapMask: GameObject = js.native
       
       /**
+        * Deletes the `mainTexture` and `maskTexture` WebGL Textures and deletes
+        * the `mainFramebuffer` and `maskFramebuffer` too, nulling all references.
+        * 
+        * This is called when this mask is destroyed, or if you try to creat a new
+        * mask from this object when one is already set.
+        */
+      def clearMask(): Unit = js.native
+      
+      /**
+        * Creates the WebGL Texture2D objects and Framebuffers required for this
+        * mask. If this mask has already been created, then `clearMask` is called first.
+        */
+      def createMask(): Unit = js.native
+      
+      /**
         * Destroys this BitmapMask and nulls any references it holds.
         * 
         * Note that if a Game Object is currently using this mask it will _not_ automatically detect you have destroyed it,
@@ -308,7 +510,8 @@ object Display {
       /**
         * Whether to invert the masks alpha.
         * 
-        * If `true`, the alpha of the masking pixel will be inverted before it's multiplied with the masked pixel. Essentially, this means that a masked area will be visible only if the corresponding area in the mask is invisible.
+        * If `true`, the alpha of the masking pixel will be inverted before it's multiplied with the masked pixel.
+        * Essentially, this means that a masked area will be visible only if the corresponding area in the mask is invisible.
         */
       var invertAlpha: Boolean = js.native
       
@@ -333,7 +536,7 @@ object Display {
       var maskFramebuffer: WebGLFramebuffer = js.native
       
       /**
-        * The texture used for the mask's framebuffer.
+        * The texture used for the masks framebuffer.
         */
       var maskTexture: WebGLTexture = js.native
       
@@ -372,11 +575,6 @@ object Display {
         */
       def preRenderWebGL(renderer: CanvasRenderer, maskedObject: GameObject, camera: Camera): Unit = js.native
       def preRenderWebGL(renderer: WebGLRenderer, maskedObject: GameObject, camera: Camera): Unit = js.native
-      
-      /**
-        * The previous framebuffer set in the renderer before this one was enabled.
-        */
-      var prevFramebuffer: WebGLFramebuffer = js.native
       
       /**
         * A reference to either the Canvas or WebGL Renderer that this Mask is using.
@@ -434,6 +632,8 @@ object Display {
       /**
         * Similar to the BitmapMasks invertAlpha setting this to true will then hide all pixels
         * drawn to the Geometry Mask.
+        * 
+        * This is a WebGL only feature.
         */
       var invertAlpha: Boolean = js.native
       
@@ -472,7 +672,10 @@ object Display {
       
       /**
         * Sets the `invertAlpha` property of this Geometry Mask.
+        * 
         * Inverting the alpha essentially flips the way the mask works.
+        * 
+        * This is a WebGL only feature.
         * @param value Invert the alpha of this mask? Default true.
         */
       def setInvertAlpha(): this.type = js.native
@@ -484,5 +687,86 @@ object Display {
         */
       def setShape(graphicsGeometry: Graphics): this.type = js.native
     }
+  }
+  
+  /**
+    * The RGB class holds a single color value and allows for easy modification and reading of it,
+    * with optional on-change callback notification and a dirty flag.
+    */
+  @js.native
+  trait RGB extends StObject {
+    
+    /**
+      * The blue color value. Between 0 and 1.
+      * 
+      * Changing this property will flag this RGB object as being dirty
+      * and invoke the `onChangeCallback` , if set.
+      */
+    var b: Double = js.native
+    
+    /**
+      * Nulls any external references this object contains.
+      */
+    def destroy(): Unit = js.native
+    
+    /**
+      * Is this color dirty?
+      */
+    var dirty: Boolean = js.native
+    
+    /**
+      * Compares the given rgb parameters with those in this object and returns
+      * a boolean `true` value if they are equal, otherwise it returns `false`.
+      * @param red The red value to compare with this object.
+      * @param green The green value to compare with this object.
+      * @param blue The blue value to compare with this object.
+      */
+    def equals(red: Double, green: Double, blue: Double): Boolean = js.native
+    
+    /**
+      * The green color value. Between 0 and 1.
+      * 
+      * Changing this property will flag this RGB object as being dirty
+      * and invoke the `onChangeCallback` , if set.
+      */
+    var g: Double = js.native
+    
+    /**
+      * Internal on change handler. Sets this object as being dirty and
+      * then invokes the `onChangeCallback`, if set, passing in the
+      * new RGB values.
+      */
+    def onChange(): Unit = js.native
+    
+    /**
+      * This callback will be invoked each time one of the RGB color values change.
+      * 
+      * The callback is sent the new color values as the parameters.
+      */
+    var onChangeCallback: js.Function = js.native
+    
+    /**
+      * The red color value. Between 0 and 1.
+      * 
+      * Changing this property will flag this RGB object as being dirty
+      * and invoke the `onChangeCallback` , if set.
+      */
+    var r: Double = js.native
+    
+    /**
+      * Sets the red, green and blue values of this RGB object, flags it as being
+      * dirty and then invokes the `onChangeCallback`, if set.
+      * @param red The red color value. A number between 0 and 1. Default 0.
+      * @param green The green color value. A number between 0 and 1. Default 0.
+      * @param blue The blue color value. A number between 0 and 1. Default 0.
+      */
+    def set(): this.type = js.native
+    def set(red: Double): this.type = js.native
+    def set(red: Double, green: Double): this.type = js.native
+    def set(red: Double, green: Double, blue: Double): this.type = js.native
+    def set(red: Double, green: Unit, blue: Double): this.type = js.native
+    def set(red: Unit, green: Double): this.type = js.native
+    def set(red: Unit, green: Double, blue: Double): this.type = js.native
+    def set(red: Unit, green: Unit, blue: Double): this.type = js.native
   }
 }

@@ -12,7 +12,7 @@ object extendComponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def extendComponent[T /* <: Component[js.Object, js.Object, js.Any] */](
+  inline def extendComponent[T /* <: Component[js.Object, js.Object, Any] */](
     parent: T,
     methods: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]:? T[key]}

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "Brush")
 @js.native
-class Brush protected ()
-  extends Component[BrushProps, js.Object, js.Any] {
+open class Brush protected ()
+  extends Component[BrushProps, js.Object, Any] {
   def this(props: BrushProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: BrushProps, context: js.Any) = this()
+  def this(props: BrushProps, context: Any) = this()
 }

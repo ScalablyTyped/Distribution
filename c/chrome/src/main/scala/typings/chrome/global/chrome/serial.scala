@@ -21,7 +21,6 @@ import typings.chrome.chromeStrings.seven
 import typings.chrome.chromeStrings.system_error
 import typings.chrome.chromeStrings.timeout
 import typings.chrome.chromeStrings.two
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -201,7 +200,11 @@ object serial {
     inline def addListener(callback: js.Function1[/* info */ OnReceiveErrorInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  inline def send(connectionId: Double, data: ArrayBuffer, callback: js.Function1[/* sendInfo */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(connectionId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def send(
+    connectionId: Double,
+    data: js.typedarray.ArrayBuffer,
+    callback: js.Function1[/* sendInfo */ js.Object, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(connectionId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setBreak(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBreak")(connectionId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

@@ -3,8 +3,6 @@ package typings.feedparser
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.streamMod.Duplex
 import typings.sax.mod.SAXStream
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +11,7 @@ object mod {
   
   @JSImport("feedparser", JSImport.Namespace)
   @js.native
-  class ^ protected () extends FeedParser {
+  open class ^ protected () extends FeedParser {
     def this(options: Options) = this()
   }
   
@@ -27,11 +25,11 @@ object mod {
     
     var uri: String
     
-    var value: js.Any
+    var value: Any
   }
   object Attrs {
     
-    inline def apply(local: String, name: String, prefix: String, uri: String, value: js.Any): Attrs = {
+    inline def apply(local: String, name: String, prefix: String, uri: String, value: Any): Attrs = {
       val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Attrs]
     }
@@ -46,7 +44,7 @@ object mod {
       
       inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,21 +82,25 @@ object mod {
     
     var _emitted_meta: Boolean = js.native
     
-    /* private */ def _flush(done: js.Function0[js.Any]): Unit = js.native
+    /* private */ def _flush(done: js.Function0[Any]): Unit = js.native
     
-    /* private */ def _transform(data: js.Any, encoding: String, done: js.Function0[js.Any]): Unit = js.native
+    /* private */ def _transform(data: Any, encoding: String, done: js.Function0[Any]): Unit = js.native
     
-    def addListener(ev: js.Any, fn: js.Any): js.Any = js.native
+    def addListener(ev: Any, fn: Any): Any = js.native
     
-    var errors: js.Array[Error] = js.native
+    var errors: js.Array[js.Error] = js.native
     
-    def handleAttributes(attrs: Attrs, el: String): js.Any = js.native
+    def eventNames(): Any = js.native
+    
+    def getMaxListeners(): Any = js.native
+    
+    def handleAttributes(attrs: Attrs, el: String): Any = js.native
     
     def handleCloseTag(el: String): Unit = js.native
     
-    def handleEnd(): js.Any = js.native
+    def handleEnd(): Any = js.native
     
-    def handleError(e: Error): Unit = js.native
+    def handleError(e: js.Error): Unit = js.native
     
     def handleItem(node: Node, `type`: Type, options: Options): Item = js.native
     
@@ -108,7 +110,7 @@ object mod {
     
     def handleProcessingInstruction(node: Node): Unit = js.native
     
-    def handleSaxError(e: Error): Unit = js.native
+    def handleSaxError(e: js.Error): Unit = js.native
     
     def handleText(text: String): Unit = js.native
     
@@ -116,41 +118,52 @@ object mod {
     
     def init(): Unit = js.native
     
-    def listenerCount(`type`: Type): js.Any = js.native
+    def isPaused(): Any = js.native
     
-    def listeners(`type`: Type): js.Any = js.native
+    def listenerCount(`type`: Type): Any = js.native
     
-    var meta: StringDictionary[js.Any] = js.native
+    def listeners(`type`: Type): Any = js.native
     
-    def on(ev: js.Any, fn: js.Any): js.Any = js.native
+    var meta: StringDictionary[Any] = js.native
+    
+    def on(ev: Any, fn: Any): Any = js.native
     
     var options: Options = js.native
     
-    def pipe(dest: js.Any, pipeOpts: js.Any): js.Any = js.native
+    def pause(): Any = js.native
     
-    def push(chunk: js.Any, encoding: js.Any): js.Any = js.native
+    def pipe(dest: Any, pipeOpts: Any): Any = js.native
     
-    def removeAllListeners(`type`: Type, args: js.Any*): js.Any = js.native
+    def push(chunk: Any, encoding: Any): Any = js.native
+    
+    def read(): Item = js.native
+    def read(n: Double): Item = js.native
+    
+    def removeAllListeners(`type`: Type, args: Any*): Any = js.native
+    
+    def resume(): Any = js.native
     
     def resumeSaxError(): Unit = js.native
     
-    def setDefaultEncoding(encoding: js.Any): js.Any = js.native
+    def setDefaultEncoding(encoding: Any): Any = js.native
     
-    def setEncoding(enc: js.Any): js.Any = js.native
+    def setEncoding(enc: Any): Any = js.native
     
-    def setMaxListeners(n: js.Any): js.Any = js.native
+    def setMaxListeners(n: Any): Any = js.native
     
-    var stack: js.Array[js.Any] = js.native
+    var stack: js.Array[Any] = js.native
     
     var stream: SAXStream = js.native
     
-    def unpipe(dest: js.Any): js.Any = js.native
+    def unpipe(dest: Any): Any = js.native
     
-    def wrap(stream: SAXStream, args: js.Any*): js.Any = js.native
+    def unshift(chunk: Any): Any = js.native
     
-    var xhtml: StringDictionary[js.Any] = js.native
+    def wrap(stream: SAXStream, args: Any*): Any = js.native
     
-    var xmlbase: js.Array[js.Any] = js.native
+    var xhtml: StringDictionary[Any] = js.native
+    
+    var xmlbase: js.Array[Any] = js.native
   }
   
   trait Image extends StObject {
@@ -182,7 +195,7 @@ object mod {
     
     var comments: String
     
-    var date: Date | Null
+    var date: js.Date | Null
     
     var description: String
     
@@ -198,7 +211,7 @@ object mod {
     
     var origlink: String
     
-    var pubdate: Date | Null
+    var pubdate: js.Date | Null
     
     var summary: String
     
@@ -230,11 +243,11 @@ object mod {
       
       inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateNull: Self = StObject.set(x, "date", null)
       
@@ -242,7 +255,7 @@ object mod {
       
       inline def setEnclosures(value: js.Array[Enclosure]): Self = StObject.set(x, "enclosures", value.asInstanceOf[js.Any])
       
-      inline def setEnclosuresVarargs(value: Enclosure*): Self = StObject.set(x, "enclosures", js.Array(value :_*))
+      inline def setEnclosuresVarargs(value: Enclosure*): Self = StObject.set(x, "enclosures", js.Array(value*))
       
       inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
       
@@ -254,7 +267,7 @@ object mod {
       
       inline def setOriglink(value: String): Self = StObject.set(x, "origlink", value.asInstanceOf[js.Any])
       
-      inline def setPubdate(value: Date): Self = StObject.set(x, "pubdate", value.asInstanceOf[js.Any])
+      inline def setPubdate(value: js.Date): Self = StObject.set(x, "pubdate", value.asInstanceOf[js.Any])
       
       inline def setPubdateNull: Self = StObject.set(x, "pubdate", null)
       
@@ -272,7 +285,7 @@ object mod {
     
     var copyright: String
     
-    var date: Date | Null
+    var date: js.Date | Null
     
     var description: String
     
@@ -288,7 +301,7 @@ object mod {
     
     /* private */ var ns: js.Array[NS]
     
-    var pubdate: Date | Null
+    var pubdate: js.Date | Null
     
     var title: String
     
@@ -327,11 +340,11 @@ object mod {
       
       inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateNull: Self = StObject.set(x, "date", null)
       
@@ -349,9 +362,9 @@ object mod {
       
       inline def setNs(value: js.Array[NS]): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
       
-      inline def setNsVarargs(value: NS*): Self = StObject.set(x, "ns", js.Array(value :_*))
+      inline def setNsVarargs(value: NS*): Self = StObject.set(x, "ns", js.Array(value*))
       
-      inline def setPubdate(value: Date): Self = StObject.set(x, "pubdate", value.asInstanceOf[js.Any])
+      inline def setPubdate(value: js.Date): Self = StObject.set(x, "pubdate", value.asInstanceOf[js.Any])
       
       inline def setPubdateNull: Self = StObject.set(x, "pubdate", null)
       
@@ -367,7 +380,7 @@ object mod {
   
   type NS = StringDictionary[String]
   
-  type Node = StringDictionary[js.Any]
+  type Node = StringDictionary[Any]
   
   trait Options extends StObject {
     

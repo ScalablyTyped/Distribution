@@ -31,7 +31,7 @@ object anon {
       
       inline def setDisallowedXhrHeaders(value: js.Array[String]): Self = StObject.set(x, "disallowedXhrHeaders", value.asInstanceOf[js.Any])
       
-      inline def setDisallowedXhrHeadersVarargs(value: String*): Self = StObject.set(x, "disallowedXhrHeaders", js.Array(value :_*))
+      inline def setDisallowedXhrHeadersVarargs(value: String*): Self = StObject.set(x, "disallowedXhrHeaders", js.Array(value*))
       
       inline def setTimeoutInSec(value: Double): Self = StObject.set(x, "timeoutInSec", value.asInstanceOf[js.Any])
     }
@@ -157,9 +157,9 @@ object anon {
   trait TypeofMediaFileReader
     extends StObject
        with Instantiable0[default]
-       with Instantiable1[/* path */ js.Any, default] {
+       with Instantiable1[/* path */ Any, default] {
     
-    def canReadFile(file: js.Any): Boolean = js.native
+    def canReadFile(file: Any): Boolean = js.native
   }
   
   @js.native

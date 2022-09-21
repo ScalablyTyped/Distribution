@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformation.html)
   */
-class GeographicTransformationCls ()
+open class GeographicTransformationCls ()
   extends StObject
      with typings.arcgisJsApi.esri.GeographicTransformation {
-  def this(properties: js.Any) = this()
+  def this(properties: Any) = this()
   
   /**
     * Returns the inverse of the geographic transformation calling this method or `null` if the transformation is not invertible.

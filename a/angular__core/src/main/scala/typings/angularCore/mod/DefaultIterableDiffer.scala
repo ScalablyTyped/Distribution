@@ -1,51 +1,50 @@
 package typings.angularCore.mod
 
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "DefaultIterableDiffer")
 @js.native
-class DefaultIterableDiffer[V] ()
+open class DefaultIterableDiffer[V] ()
   extends StObject
      with IterableDiffer[V]
      with IterableChanges[V] {
   def this(trackByFn: TrackByFunction[V]) = this()
   
-  /* private */ var _addToRemovals: js.Any = js.native
+  /* private */ var _addToRemovals: Any = js.native
   
-  /* private */ var _additionsHead: js.Any = js.native
+  /* private */ var _additionsHead: Any = js.native
   
-  /* private */ var _additionsTail: js.Any = js.native
+  /* private */ var _additionsTail: Any = js.native
   
-  /* private */ var _identityChangesHead: js.Any = js.native
+  /* private */ var _identityChangesHead: Any = js.native
   
-  /* private */ var _identityChangesTail: js.Any = js.native
+  /* private */ var _identityChangesTail: Any = js.native
   
-  /* private */ var _itHead: js.Any = js.native
+  /* private */ var _itHead: Any = js.native
   
-  /* private */ var _itTail: js.Any = js.native
+  /* private */ var _itTail: Any = js.native
   
-  /* private */ var _linkedRecords: js.Any = js.native
+  /* private */ var _linkedRecords: Any = js.native
   
-  /* private */ var _movesHead: js.Any = js.native
+  /* private */ var _movesHead: Any = js.native
   
-  /* private */ var _movesTail: js.Any = js.native
+  /* private */ var _movesTail: Any = js.native
   
-  /* private */ var _previousItHead: js.Any = js.native
+  /* private */ var _previousItHead: Any = js.native
   
-  /* private */ var _removalsHead: js.Any = js.native
+  /* private */ var _removalsHead: Any = js.native
   
-  /* private */ var _removalsTail: js.Any = js.native
+  /* private */ var _removalsTail: Any = js.native
   
-  /* private */ var _trackByFn: js.Any = js.native
+  /* private */ var _trackByFn: Any = js.native
   
-  /* private */ var _unlinkedRecords: js.Any = js.native
+  /* private */ var _unlinkedRecords: Any = js.native
   
   def check(collection: NgIterable[V]): Boolean = js.native
   
-  val collection: js.Array[V] | Iterable[V] | Null = js.native
+  val collection: js.Array[V] | js.Iterable[V] | Null = js.native
   
   /** Iterate over all added items. */
   /* CompleteClass */

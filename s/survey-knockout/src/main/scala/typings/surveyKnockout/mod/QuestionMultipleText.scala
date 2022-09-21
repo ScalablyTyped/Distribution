@@ -6,10 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionMultipleText")
 @js.native
-class QuestionMultipleText protected () extends QuestionMultipleTextModel {
+open class QuestionMultipleText protected () extends QuestionMultipleTextModel {
   def this(name: String) = this()
   
-  var koRows: js.Any = js.native
+  var _implementor: QuestionMultipleTextImplementor = js.native
+  
+  var koRows: Any = js.native
   
   /* protected */ def onColCountChanged(): Unit = js.native
 }

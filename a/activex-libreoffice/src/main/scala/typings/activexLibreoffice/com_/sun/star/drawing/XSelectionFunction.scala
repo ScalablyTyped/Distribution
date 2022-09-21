@@ -49,7 +49,7 @@ object XSelectionFunction {
     mouseMoved: MouseEvent => Boolean,
     mousePressed: MouseEvent => Boolean,
     mouseReleased: MouseEvent => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     removeStatusListener: (XStatusListener, URL) => Unit,

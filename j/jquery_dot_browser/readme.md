@@ -10,10 +10,10 @@ A jQuery plugin for browser detection.
 | ------------------ | :-------------: |
 | Full name          | jquery.browser |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 800074 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 59007.333333333336 |
+| # stars            | 514.0 |
 
 ## Links
 - [Homepage](https://github.com/gabceb/jquery-browser-plugin)

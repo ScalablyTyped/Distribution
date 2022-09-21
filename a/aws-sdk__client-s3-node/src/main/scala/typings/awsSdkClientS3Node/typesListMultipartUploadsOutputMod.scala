@@ -94,7 +94,7 @@ object typesListMultipartUploadsOutputMod {
       
       inline def setCommonPrefixesUndefined: Self = StObject.set(x, "CommonPrefixes", js.undefined)
       
-      inline def setCommonPrefixesVarargs(value: UnmarshalledCommonPrefix*): Self = StObject.set(x, "CommonPrefixes", js.Array(value :_*))
+      inline def setCommonPrefixesVarargs(value: UnmarshalledCommonPrefix*): Self = StObject.set(x, "CommonPrefixes", js.Array(value*))
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
       
@@ -136,7 +136,7 @@ object typesListMultipartUploadsOutputMod {
       
       inline def setUploadsUndefined: Self = StObject.set(x, "Uploads", js.undefined)
       
-      inline def setUploadsVarargs(value: UnmarshalledMultipartUpload*): Self = StObject.set(x, "Uploads", js.Array(value :_*))
+      inline def setUploadsVarargs(value: UnmarshalledMultipartUpload*): Self = StObject.set(x, "Uploads", js.Array(value*))
     }
   }
 }

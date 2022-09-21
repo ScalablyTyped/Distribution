@@ -1,7 +1,7 @@
 
 # Scala.js typings for cjs-module-lexer
 
-Typings are for version 0.6.0
+Typings are for version 1.2.2
 
 ## Library description:
 Lexes CommonJS modules, returning their named exports metadata
@@ -10,10 +10,10 @@ Lexes CommonJS modules, returning their named exports metadata
 | ------------------ | :-------------: |
 | Full name          | cjs-module-lexer |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 0 |
-| # downloads        | 2062 |
-| # stars            | 0 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 5.3302796333333336E7 |
+| # stars            | 163.0 |
 
 ## Links
 - [Homepage](https://github.com/guybedford/cjs-module-lexer#readme)

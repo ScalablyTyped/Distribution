@@ -32,6 +32,9 @@ import typings.vegaTypings.marktypeMod.MarkType
 import typings.vegaTypings.projectionMod.ProjectionType
 import typings.vegaTypings.rendererMod.Renderers
 import typings.vegaTypings.runtimeMod.TypeInference
+import typings.vegaTypings.runtimeRuntimeMod.AggregateOps
+import typings.vegaTypings.runtimeRuntimeMod.Order
+import typings.vegaTypings.runtimeRuntimeMod.expr
 import typings.vegaTypings.scaleMod.DiscreteScaleType
 import typings.vegaTypings.scaleMod.DiscretizingScaleType
 import typings.vegaTypings.scaleMod.QuantScaleType
@@ -53,9 +56,12 @@ import typings.vegaTypings.titleMod.TitleFrame
 import typings.vegaTypings.titleMod.TitleOrient
 import typings.vegaTypings.titleMod._TitleAnchor
 import typings.vegaTypings.transformMod.AggregateOp
+import typings.vegaTypings.transformMod.AreaLabelMethod
 import typings.vegaTypings.transformMod.DensityMethod
 import typings.vegaTypings.transformMod.ImputeMethod
 import typings.vegaTypings.transformMod.KDEResolve
+import typings.vegaTypings.transformMod.LabelAnchor
+import typings.vegaTypings.transformMod.LineLabelAnchor
 import typings.vegaTypings.transformMod.LinkPathOrient
 import typings.vegaTypings.transformMod.LinkPathShape
 import typings.vegaTypings.transformMod.RegressionMethod
@@ -79,8 +85,30 @@ object vegaTypingsStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
+  sealed trait DEBUG extends StObject
+  inline def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
+  
+  @js.native
+  sealed trait ERROR extends StObject
+  inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
+  
+  @js.native
   sealed trait ExcludeMappedValueRef extends StObject
   inline def ExcludeMappedValueRef: ExcludeMappedValueRef = "ExcludeMappedValueRef".asInstanceOf[ExcludeMappedValueRef]
+  
+  @js.native
+  sealed trait INFO extends StObject
+  inline def INFO: INFO = "INFO".asInstanceOf[INFO]
+  
+  @js.native
+  sealed trait WARN extends StObject
+  inline def WARN: WARN = "WARN".asInstanceOf[WARN]
+  
+  @js.native
+  sealed trait __count__
+    extends StObject
+       with AggregateOps
+  inline def __count__ : __count__ = "__count__".asInstanceOf[__count__]
   
   @js.native
   sealed trait accent
@@ -182,12 +210,14 @@ object vegaTypingsStrings {
   sealed trait argmax
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def argmax: argmax = "argmax".asInstanceOf[argmax]
   
   @js.native
   sealed trait argmin
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def argmin: argmin = "argmin".asInstanceOf[argmin]
   
   @js.native
@@ -199,8 +229,15 @@ object vegaTypingsStrings {
   @js.native
   sealed trait ascending
     extends StObject
+       with Order
        with SortOrder
   inline def ascending: ascending = "ascending".asInstanceOf[ascending]
+  
+  @js.native
+  sealed trait ast
+    extends StObject
+       with expr
+  inline def ast: ast = "ast".asInstanceOf[ast]
   
   @js.native
   sealed trait auto
@@ -212,6 +249,7 @@ object vegaTypingsStrings {
   sealed trait average
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def average: average = "average".asInstanceOf[average]
   
   @js.native
@@ -267,6 +305,10 @@ object vegaTypingsStrings {
   inline def axisY: axisY = "axisY".asInstanceOf[axisY]
   
   @js.native
+  sealed trait axisticks extends StObject
+  inline def axisticks: axisticks = "axisticks".asInstanceOf[axisticks]
+  
+  @js.native
   sealed trait azimuthalEqualArea
     extends StObject
        with ProjectionType
@@ -308,10 +350,6 @@ object vegaTypingsStrings {
     extends StObject
        with Interpolate
   inline def `basis-open`: `basis-open` = "basis-open".asInstanceOf[`basis-open`]
-  
-  @js.native
-  sealed trait begin extends StObject
-  inline def begin: begin = "begin".asInstanceOf[begin]
   
   @js.native
   sealed trait beige
@@ -584,6 +622,7 @@ object vegaTypingsStrings {
     extends StObject
        with AxisOrient
        with Baseline
+       with LabelAnchor
        with LegendOrient
        with Orient
        with SceneTextBaseline
@@ -594,14 +633,20 @@ object vegaTypingsStrings {
   @js.native
   sealed trait `bottom-left`
     extends StObject
+       with LabelAnchor
        with LegendOrient
   inline def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
   
   @js.native
   sealed trait `bottom-right`
     extends StObject
+       with LabelAnchor
        with LegendOrient
   inline def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
+  
+  @js.native
+  sealed trait bound extends StObject
+  inline def bound: bound = "bound".asInstanceOf[bound]
   
   @js.native
   sealed trait bounds
@@ -820,12 +865,14 @@ object vegaTypingsStrings {
   sealed trait ci0
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def ci0: ci0 = "ci0".asInstanceOf[ci0]
   
   @js.native
   sealed trait ci1
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def ci1: ci1 = "ci1".asInstanceOf[ci1]
   
   @js.native
@@ -852,6 +899,12 @@ object vegaTypingsStrings {
     extends StObject
        with TreeMethod
   inline def cluster: cluster = "cluster".asInstanceOf[cluster]
+  
+  @js.native
+  sealed trait code
+    extends StObject
+       with expr
+  inline def code: code = "code".asInstanceOf[code]
   
   @js.native
   sealed trait `col-resize`
@@ -884,6 +937,10 @@ object vegaTypingsStrings {
     extends StObject
        with _Blend
   inline def `color-dodge`: `color-dodge` = "color-dodge".asInstanceOf[`color-dodge`]
+  
+  @js.native
+  sealed trait compare extends StObject
+  inline def compare: compare = "compare".asInstanceOf[compare]
   
   @js.native
   sealed trait conicConformal
@@ -949,6 +1006,7 @@ object vegaTypingsStrings {
   sealed trait count
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def count: count = "count".asInstanceOf[count]
   
   @js.native
@@ -1404,6 +1462,10 @@ object vegaTypingsStrings {
   inline def darkviolet: darkviolet = "darkviolet".asInstanceOf[darkviolet]
   
   @js.native
+  sealed trait datajoin extends StObject
+  inline def datajoin: datajoin = "datajoin".asInstanceOf[datajoin]
+  
+  @js.native
   sealed trait date
     extends StObject
        with DataType
@@ -1454,6 +1516,7 @@ object vegaTypingsStrings {
   @js.native
   sealed trait descending
     extends StObject
+       with Order
        with SortOrder
   inline def descending: descending = "descending".asInstanceOf[descending]
   
@@ -1497,6 +1560,7 @@ object vegaTypingsStrings {
   sealed trait distinct
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def distinct: distinct = "distinct".asInstanceOf[distinct]
   
   @js.native
@@ -1550,9 +1614,14 @@ object vegaTypingsStrings {
   inline def each: each = "each".asInstanceOf[each]
   
   @js.native
+  sealed trait encode extends StObject
+  inline def encode: encode = "encode".asInstanceOf[encode]
+  
+  @js.native
   sealed trait end
     extends StObject
        with LayoutTitleAnchor
+       with LineLabelAnchor
        with _TitleAnchor
   inline def end: end = "end".asInstanceOf[end]
   
@@ -1573,6 +1642,10 @@ object vegaTypingsStrings {
     extends StObject
        with ProjectionType
   inline def equirectangular: equirectangular = "equirectangular".asInstanceOf[equirectangular]
+  
+  @js.native
+  sealed trait error_ extends StObject
+  inline def error_ : error_ = "error".asInstanceOf[error_]
   
   @js.native
   sealed trait `ew-resize`
@@ -1599,12 +1672,24 @@ object vegaTypingsStrings {
   inline def exp: exp = "exp".asInstanceOf[exp]
   
   @js.native
+  sealed trait expression extends StObject
+  inline def expression: expression = "expression".asInstanceOf[expression]
+  
+  @js.native
   sealed trait extent extends StObject
   inline def extent: extent = "extent".asInstanceOf[extent]
   
   @js.native
   sealed trait exterior extends StObject
   inline def exterior: exterior = "exterior".asInstanceOf[exterior]
+  
+  @js.native
+  sealed trait facet extends StObject
+  inline def facet: facet = "facet".asInstanceOf[facet]
+  
+  @js.native
+  sealed trait field extends StObject
+  inline def field: field = "field".asInstanceOf[field]
   
   @js.native
   sealed trait file extends StObject
@@ -1647,6 +1732,12 @@ object vegaTypingsStrings {
   @js.native
   sealed trait flatten extends StObject
   inline def flatten: flatten = "flatten".asInstanceOf[flatten]
+  
+  @js.native
+  sealed trait floodfill
+    extends StObject
+       with AreaLabelMethod
+  inline def floodfill: floodfill = "floodfill".asInstanceOf[floodfill]
   
   @js.native
   sealed trait floralwhite
@@ -2162,6 +2253,10 @@ object vegaTypingsStrings {
   inline def independent: independent = "independent".asInstanceOf[independent]
   
   @js.native
+  sealed trait indexColon$LeftcurlybracketstringRightcurlybracket extends StObject
+  inline def indexColon$LeftcurlybracketstringRightcurlybracket: indexColon$LeftcurlybracketstringRightcurlybracket = "index:${string}".asInstanceOf[indexColon$LeftcurlybracketstringRightcurlybracket]
+  
+  @js.native
   sealed trait indianred
     extends StObject
        with ColorName
@@ -2179,6 +2274,10 @@ object vegaTypingsStrings {
        with ColorScheme
        with SequentialMultiHue
   inline def inferno: inferno = "inferno".asInstanceOf[inferno]
+  
+  @js.native
+  sealed trait input extends StObject
+  inline def input: input = "input".asInstanceOf[input]
   
   @js.native
   sealed trait integer
@@ -2221,6 +2320,10 @@ object vegaTypingsStrings {
   @js.native
   sealed trait kde2d extends StObject
   inline def kde2d: kde2d = "kde2d".asInstanceOf[kde2d]
+  
+  @js.native
+  sealed trait key extends StObject
+  inline def key: key = "key".asInstanceOf[key]
   
   @js.native
   sealed trait keydown
@@ -2303,6 +2406,7 @@ object vegaTypingsStrings {
     extends StObject
        with Align
        with AxisOrient
+       with LabelAnchor
        with LegendOrient
        with Orient
        with SceneTextAlign
@@ -2316,6 +2420,10 @@ object vegaTypingsStrings {
   @js.native
   sealed trait `legend-symbol` extends StObject
   inline def `legend-symbol`: `legend-symbol` = "legend-symbol".asInstanceOf[`legend-symbol`]
+  
+  @js.native
+  sealed trait legendentries extends StObject
+  inline def legendentries: legendentries = "legendentries".asInstanceOf[legendentries]
   
   @js.native
   sealed trait lemonchiffon
@@ -2767,6 +2875,10 @@ object vegaTypingsStrings {
   inline def linkpath: linkpath = "linkpath".asInstanceOf[linkpath]
   
   @js.native
+  sealed trait load extends StObject
+  inline def load: load = "load".asInstanceOf[load]
+  
+  @js.native
   sealed trait local
     extends StObject
        with TimeZone
@@ -2833,6 +2945,7 @@ object vegaTypingsStrings {
   sealed trait max
     extends StObject
        with AggregateOp
+       with AggregateOps
        with ImputeMethod
   inline def max: max = "max".asInstanceOf[max]
   
@@ -2840,6 +2953,7 @@ object vegaTypingsStrings {
   sealed trait mean
     extends StObject
        with AggregateOp
+       with AggregateOps
        with ImputeMethod
   inline def mean: mean = "mean".asInstanceOf[mean]
   
@@ -2847,6 +2961,7 @@ object vegaTypingsStrings {
   sealed trait median
     extends StObject
        with AggregateOp
+       with AggregateOps
        with ImputeMethod
   inline def median: median = "median".asInstanceOf[median]
   
@@ -2914,6 +3029,7 @@ object vegaTypingsStrings {
   sealed trait middle
     extends StObject
        with Baseline
+       with LabelAnchor
        with SceneTextBaseline
        with TextBaseline
        with _TitleAnchor
@@ -2941,6 +3057,7 @@ object vegaTypingsStrings {
   sealed trait min
     extends StObject
        with AggregateOp
+       with AggregateOps
        with ImputeMethod
   inline def min: min = "min".asInstanceOf[min]
   
@@ -2966,6 +3083,7 @@ object vegaTypingsStrings {
   sealed trait missing
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def missing: missing = "missing".asInstanceOf[missing]
   
   @js.native
@@ -3046,16 +3164,30 @@ object vegaTypingsStrings {
   inline def move: move = "move".asInstanceOf[move]
   
   @js.native
+  sealed trait multiextent extends StObject
+  inline def multiextent: multiextent = "multiextent".asInstanceOf[multiextent]
+  
+  @js.native
   sealed trait multiply
     extends StObject
        with _Blend
   inline def multiply: multiply = "multiply".asInstanceOf[multiply]
   
   @js.native
+  sealed trait multivalues extends StObject
+  inline def multivalues: multivalues = "multivalues".asInstanceOf[multivalues]
+  
+  @js.native
   sealed trait `n-resize`
     extends StObject
        with Cursor
   inline def `n-resize`: `n-resize` = "n-resize".asInstanceOf[`n-resize`]
+  
+  @js.native
+  sealed trait naive
+    extends StObject
+       with AreaLabelMethod
+  inline def naive: naive = "naive".asInstanceOf[naive]
   
   @js.native
   sealed trait natural
@@ -3205,6 +3337,10 @@ object vegaTypingsStrings {
   inline def olivedrab: olivedrab = "olivedrab".asInstanceOf[olivedrab]
   
   @js.native
+  sealed trait operator extends StObject
+  inline def operator: operator = "operator".asInstanceOf[operator]
+  
+  @js.native
   sealed trait orange
     extends StObject
        with ColorName
@@ -3305,6 +3441,14 @@ object vegaTypingsStrings {
   inline def outer: outer = "outer".asInstanceOf[outer]
   
   @js.native
+  sealed trait output extends StObject
+  inline def output: output = "output".asInstanceOf[output]
+  
+  @js.native
+  sealed trait overlap extends StObject
+  inline def overlap: overlap = "overlap".asInstanceOf[overlap]
+  
+  @js.native
   sealed trait overlay
     extends StObject
        with _Blend
@@ -3360,6 +3504,10 @@ object vegaTypingsStrings {
     extends StObject
        with ColorName
   inline def papayawhip: papayawhip = "papayawhip".asInstanceOf[papayawhip]
+  
+  @js.native
+  sealed trait params extends StObject
+  inline def params: params = "params".asInstanceOf[params]
   
   @js.native
   sealed trait parity
@@ -3547,6 +3695,10 @@ object vegaTypingsStrings {
   inline def powderblue: powderblue = "powderblue".asInstanceOf[powderblue]
   
   @js.native
+  sealed trait prefacet extends StObject
+  inline def prefacet: prefacet = "prefacet".asInstanceOf[prefacet]
+  
+  @js.native
   sealed trait prev_value
     extends StObject
        with WindowOnlyOp
@@ -3556,6 +3708,7 @@ object vegaTypingsStrings {
   sealed trait product
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def product: product = "product".asInstanceOf[product]
   
   @js.native
@@ -3567,6 +3720,14 @@ object vegaTypingsStrings {
   @js.native
   sealed trait project extends StObject
   inline def project: project = "project".asInstanceOf[project]
+  
+  @js.native
+  sealed trait projection extends StObject
+  inline def projection: projection = "projection".asInstanceOf[projection]
+  
+  @js.native
+  sealed trait proxy extends StObject
+  inline def proxy: proxy = "proxy".asInstanceOf[proxy]
   
   @js.native
   sealed trait purple
@@ -3893,12 +4054,14 @@ object vegaTypingsStrings {
   sealed trait q1
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def q1: q1 = "q1".asInstanceOf[q1]
   
   @js.native
   sealed trait q3
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def q3: q3 = "q3".asInstanceOf[q3]
   
   @js.native
@@ -4189,6 +4352,12 @@ object vegaTypingsStrings {
   inline def reds: reds = "reds".asInstanceOf[reds]
   
   @js.native
+  sealed trait `reduced-search`
+    extends StObject
+       with AreaLabelMethod
+  inline def `reduced-search`: `reduced-search` = "reduced-search".asInstanceOf[`reduced-search`]
+  
+  @js.native
   sealed trait redyellowblue
     extends StObject
        with ColorScheme
@@ -4333,10 +4502,18 @@ object vegaTypingsStrings {
   inline def regression: regression = "regression".asInstanceOf[regression]
   
   @js.native
+  sealed trait relay extends StObject
+  inline def relay: relay = "relay".asInstanceOf[relay]
+  
+  @js.native
   sealed trait release
     extends StObject
        with EncodeEntryName
   inline def release: release = "release".asInstanceOf[release]
+  
+  @js.native
+  sealed trait render extends StObject
+  inline def render: render = "render".asInstanceOf[render]
   
   @js.native
   sealed trait resolvefilter extends StObject
@@ -4359,6 +4536,7 @@ object vegaTypingsStrings {
     extends StObject
        with Align
        with AxisOrient
+       with LabelAnchor
        with LegendOrient
        with Orient
        with SceneTextAlign
@@ -4442,6 +4620,10 @@ object vegaTypingsStrings {
     extends StObject
        with _Blend
   inline def saturation: saturation = "saturation".asInstanceOf[saturation]
+  
+  @js.native
+  sealed trait scale extends StObject
+  inline def scale: scale = "scale".asInstanceOf[scale]
   
   @js.native
   sealed trait scope extends StObject
@@ -4541,6 +4723,10 @@ object vegaTypingsStrings {
   inline def sienna: sienna = "sienna".asInstanceOf[sienna]
   
   @js.native
+  sealed trait sieve extends StObject
+  inline def sieve: sieve = "sieve".asInstanceOf[sieve]
+  
+  @js.native
   sealed trait silver
     extends StObject
        with ColorName
@@ -4600,6 +4786,10 @@ object vegaTypingsStrings {
     extends StObject
        with _Blend
   inline def `soft-light`: `soft-light` = "soft-light".asInstanceOf[`soft-light`]
+  
+  @js.native
+  sealed trait sortitems extends StObject
+  inline def sortitems: sortitems = "sortitems".asInstanceOf[sortitems]
   
   @js.native
   sealed trait spectral
@@ -4705,6 +4895,7 @@ object vegaTypingsStrings {
   sealed trait start
     extends StObject
        with LayoutTitleAnchor
+       with LineLabelAnchor
        with _TitleAnchor
   inline def start: start = "start".asInstanceOf[start]
   
@@ -4712,18 +4903,21 @@ object vegaTypingsStrings {
   sealed trait stderr
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def stderr: stderr = "stderr".asInstanceOf[stderr]
   
   @js.native
   sealed trait stdev
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def stdev: stdev = "stdev".asInstanceOf[stdev]
   
   @js.native
   sealed trait stdevp
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def stdevp: stdevp = "stdevp".asInstanceOf[stdevp]
   
   @js.native
@@ -4776,6 +4970,7 @@ object vegaTypingsStrings {
   sealed trait sum
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def sum: sum = "sum".asInstanceOf[sum]
   
   @js.native
@@ -4902,6 +5097,7 @@ object vegaTypingsStrings {
     extends StObject
        with AxisOrient
        with Baseline
+       with LabelAnchor
        with LegendOrient
        with Orient
        with SceneTextBaseline
@@ -4912,12 +5108,14 @@ object vegaTypingsStrings {
   @js.native
   sealed trait `top-left`
     extends StObject
+       with LabelAnchor
        with LegendOrient
   inline def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
   
   @js.native
   sealed trait `top-right`
     extends StObject
+       with LabelAnchor
        with LegendOrient
   inline def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   
@@ -5003,6 +5201,10 @@ object vegaTypingsStrings {
   inline def tsv: tsv = "tsv".asInstanceOf[tsv]
   
   @js.native
+  sealed trait tupleindex extends StObject
+  inline def tupleindex: tupleindex = "tupleindex".asInstanceOf[tupleindex]
+  
+  @js.native
   sealed trait turbo
     extends StObject
        with ColorScheme
@@ -5038,6 +5240,7 @@ object vegaTypingsStrings {
   sealed trait valid
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def valid: valid = "valid".asInstanceOf[valid]
   
   @js.native
@@ -5050,18 +5253,21 @@ object vegaTypingsStrings {
   sealed trait values
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def values: values = "values".asInstanceOf[values]
   
   @js.native
   sealed trait variance
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def variance: variance = "variance".asInstanceOf[variance]
   
   @js.native
   sealed trait variancep
     extends StObject
        with AggregateOp
+       with AggregateOps
   inline def variancep: variancep = "variancep".asInstanceOf[variancep]
   
   @js.native
@@ -5080,6 +5286,10 @@ object vegaTypingsStrings {
   @js.native
   sealed trait view extends StObject
   inline def view: view = "view".asInstanceOf[view]
+  
+  @js.native
+  sealed trait viewlayout extends StObject
+  inline def viewlayout: viewlayout = "viewlayout".asInstanceOf[viewlayout]
   
   @js.native
   sealed trait violet
@@ -5115,6 +5325,10 @@ object vegaTypingsStrings {
        with ColorScheme
        with SequentialSingleHue
   inline def warmgreys: warmgreys = "warmgreys".asInstanceOf[warmgreys]
+  
+  @js.native
+  sealed trait warn_ extends StObject
+  inline def warn_ : warn_ = "warn".asInstanceOf[warn_]
   
   @js.native
   sealed trait wedge

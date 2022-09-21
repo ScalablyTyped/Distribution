@@ -176,7 +176,7 @@ object Gmail {
         // Creates a new draft with the DRAFT label.
         def create(resource: Draft, userId: String): Draft = js.native
         // Creates a new draft with the DRAFT label.
-        def create(resource: Draft, userId: String, mediaData: js.Any): Draft = js.native
+        def create(resource: Draft, userId: String, mediaData: Any): Draft = js.native
         
         // Gets the specified draft.
         def get(userId: String, id: String): Draft = js.native
@@ -194,12 +194,12 @@ object Gmail {
         // Sends the specified, existing draft to the recipients in the To, Cc, and Bcc headers.
         def send(resource: Draft, userId: String): Message = js.native
         // Sends the specified, existing draft to the recipients in the To, Cc, and Bcc headers.
-        def send(resource: Draft, userId: String, mediaData: js.Any): Message = js.native
+        def send(resource: Draft, userId: String, mediaData: Any): Message = js.native
         
         // Replaces a draft's content.
         def update(resource: Draft, userId: String, id: String): Draft = js.native
         // Replaces a draft's content.
-        def update(resource: Draft, userId: String, id: String, mediaData: js.Any): Draft = js.native
+        def update(resource: Draft, userId: String, id: String, mediaData: Any): Draft = js.native
       }
       
       @js.native
@@ -301,16 +301,16 @@ object Gmail {
         // Imports a message into only this user's mailbox, with standard email delivery scanning and classification similar to receiving via SMTP. Does not send a message.
         def `import`(resource: Message, userId: String): Message = js.native
         // Imports a message into only this user's mailbox, with standard email delivery scanning and classification similar to receiving via SMTP. Does not send a message.
-        def `import`(resource: Message, userId: String, mediaData: js.Any): Message = js.native
+        def `import`(resource: Message, userId: String, mediaData: Any): Message = js.native
         // Imports a message into only this user's mailbox, with standard email delivery scanning and classification similar to receiving via SMTP. Does not send a message.
-        def `import`(resource: Message, userId: String, mediaData: js.Any, optionalArgs: js.Object): Message = js.native
+        def `import`(resource: Message, userId: String, mediaData: Any, optionalArgs: js.Object): Message = js.native
         
         // Directly inserts a message into only this user's mailbox similar to IMAP APPEND, bypassing most scanning and classification. Does not send a message.
         def insert(resource: Message, userId: String): Message = js.native
         // Directly inserts a message into only this user's mailbox similar to IMAP APPEND, bypassing most scanning and classification. Does not send a message.
-        def insert(resource: Message, userId: String, mediaData: js.Any): Message = js.native
+        def insert(resource: Message, userId: String, mediaData: Any): Message = js.native
         // Directly inserts a message into only this user's mailbox similar to IMAP APPEND, bypassing most scanning and classification. Does not send a message.
-        def insert(resource: Message, userId: String, mediaData: js.Any, optionalArgs: js.Object): Message = js.native
+        def insert(resource: Message, userId: String, mediaData: Any, optionalArgs: js.Object): Message = js.native
         
         // Lists the messages in the user's mailbox.
         def list(userId: String): ListMessagesResponse = js.native
@@ -326,7 +326,7 @@ object Gmail {
         // Sends the specified message to the recipients in the To, Cc, and Bcc headers.
         def send(resource: Message, userId: String): Message = js.native
         // Sends the specified message to the recipients in the To, Cc, and Bcc headers.
-        def send(resource: Message, userId: String, mediaData: js.Any): Message = js.native
+        def send(resource: Message, userId: String, mediaData: Any): Message = js.native
         
         // Moves the specified message to the trash.
         def trash(userId: String, id: String): Message = js.native
@@ -801,6 +801,11 @@ object Gmail {
     var name: js.UndefOr[String] = js.undefined
     
     /**
+      * True if the email should be sent from a generic no-reply email address to discourage recipients from responding to emails; this option is only possible for Google Workspace accounts, not Gmail users.
+      */
+    var noReply: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * An email address to use as the default reply-to address (default: the user's email address).
       */
     var replyTo: js.UndefOr[String] = js.undefined
@@ -818,7 +823,7 @@ object Gmail {
       
       inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
       
-      inline def setAttachmentsVarargs(value: BlobSource*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: BlobSource*): Self = StObject.set(x, "attachments", js.Array(value*))
       
       inline def setBcc(value: String): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
@@ -843,6 +848,10 @@ object Gmail {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNoReply(value: Boolean): Self = StObject.set(x, "noReply", value.asInstanceOf[js.Any])
+      
+      inline def setNoReplyUndefined: Self = StObject.set(x, "noReply", js.undefined)
       
       inline def setReplyTo(value: String): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
       
@@ -1386,7 +1395,7 @@ object Gmail {
         
         inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
         
-        inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+        inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
       }
     }
     
@@ -1411,19 +1420,19 @@ object Gmail {
         
         inline def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
         
-        inline def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
+        inline def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value*))
         
         inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
         
         inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
         
-        inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+        inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
         
         inline def setRemoveLabelIds(value: js.Array[String]): Self = StObject.set(x, "removeLabelIds", value.asInstanceOf[js.Any])
         
         inline def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
         
-        inline def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
+        inline def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value*))
       }
     }
     
@@ -1529,7 +1538,7 @@ object Gmail {
         
         inline def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
         
-        inline def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
+        inline def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value*))
         
         inline def setForward(value: String): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
         
@@ -1539,7 +1548,7 @@ object Gmail {
         
         inline def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
         
-        inline def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
+        inline def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value*))
       }
     }
     
@@ -1666,13 +1675,13 @@ object Gmail {
         
         inline def setLabelsAddedUndefined: Self = StObject.set(x, "labelsAdded", js.undefined)
         
-        inline def setLabelsAddedVarargs(value: HistoryLabelAdded*): Self = StObject.set(x, "labelsAdded", js.Array(value :_*))
+        inline def setLabelsAddedVarargs(value: HistoryLabelAdded*): Self = StObject.set(x, "labelsAdded", js.Array(value*))
         
         inline def setLabelsRemoved(value: js.Array[HistoryLabelRemoved]): Self = StObject.set(x, "labelsRemoved", value.asInstanceOf[js.Any])
         
         inline def setLabelsRemovedUndefined: Self = StObject.set(x, "labelsRemoved", js.undefined)
         
-        inline def setLabelsRemovedVarargs(value: HistoryLabelRemoved*): Self = StObject.set(x, "labelsRemoved", js.Array(value :_*))
+        inline def setLabelsRemovedVarargs(value: HistoryLabelRemoved*): Self = StObject.set(x, "labelsRemoved", js.Array(value*))
         
         inline def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
         
@@ -1680,17 +1689,17 @@ object Gmail {
         
         inline def setMessagesAddedUndefined: Self = StObject.set(x, "messagesAdded", js.undefined)
         
-        inline def setMessagesAddedVarargs(value: HistoryMessageAdded*): Self = StObject.set(x, "messagesAdded", js.Array(value :_*))
+        inline def setMessagesAddedVarargs(value: HistoryMessageAdded*): Self = StObject.set(x, "messagesAdded", js.Array(value*))
         
         inline def setMessagesDeleted(value: js.Array[HistoryMessageDeleted]): Self = StObject.set(x, "messagesDeleted", value.asInstanceOf[js.Any])
         
         inline def setMessagesDeletedUndefined: Self = StObject.set(x, "messagesDeleted", js.undefined)
         
-        inline def setMessagesDeletedVarargs(value: HistoryMessageDeleted*): Self = StObject.set(x, "messagesDeleted", js.Array(value :_*))
+        inline def setMessagesDeletedVarargs(value: HistoryMessageDeleted*): Self = StObject.set(x, "messagesDeleted", js.Array(value*))
         
         inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
         
-        inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+        inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value*))
       }
     }
     
@@ -1713,7 +1722,7 @@ object Gmail {
         
         inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
         
-        inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+        inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value*))
         
         inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
@@ -1740,7 +1749,7 @@ object Gmail {
         
         inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
         
-        inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+        inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value*))
         
         inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
@@ -1938,7 +1947,7 @@ object Gmail {
         
         inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
         
-        inline def setDelegatesVarargs(value: Delegate*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+        inline def setDelegatesVarargs(value: Delegate*): Self = StObject.set(x, "delegates", js.Array(value*))
       }
     }
     
@@ -1963,7 +1972,7 @@ object Gmail {
         
         inline def setDraftsUndefined: Self = StObject.set(x, "drafts", js.undefined)
         
-        inline def setDraftsVarargs(value: Draft*): Self = StObject.set(x, "drafts", js.Array(value :_*))
+        inline def setDraftsVarargs(value: Draft*): Self = StObject.set(x, "drafts", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1992,7 +2001,7 @@ object Gmail {
         
         inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
         
-        inline def setFilterVarargs(value: Filter*): Self = StObject.set(x, "filter", js.Array(value :_*))
+        inline def setFilterVarargs(value: Filter*): Self = StObject.set(x, "filter", js.Array(value*))
       }
     }
     
@@ -2013,7 +2022,7 @@ object Gmail {
         
         inline def setForwardingAddressesUndefined: Self = StObject.set(x, "forwardingAddresses", js.undefined)
         
-        inline def setForwardingAddressesVarargs(value: ForwardingAddress*): Self = StObject.set(x, "forwardingAddresses", js.Array(value :_*))
+        inline def setForwardingAddressesVarargs(value: ForwardingAddress*): Self = StObject.set(x, "forwardingAddresses", js.Array(value*))
       }
     }
     
@@ -2042,7 +2051,7 @@ object Gmail {
         
         inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
         
-        inline def setHistoryVarargs(value: History*): Self = StObject.set(x, "history", js.Array(value :_*))
+        inline def setHistoryVarargs(value: History*): Self = StObject.set(x, "history", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -2067,7 +2076,7 @@ object Gmail {
         
         inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
         
-        inline def setLabelsVarargs(value: Label*): Self = StObject.set(x, "labels", js.Array(value :_*))
+        inline def setLabelsVarargs(value: Label*): Self = StObject.set(x, "labels", js.Array(value*))
       }
     }
     
@@ -2092,7 +2101,7 @@ object Gmail {
         
         inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
         
-        inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+        inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -2121,7 +2130,7 @@ object Gmail {
         
         inline def setSendAsUndefined: Self = StObject.set(x, "sendAs", js.undefined)
         
-        inline def setSendAsVarargs(value: SendAs*): Self = StObject.set(x, "sendAs", js.Array(value :_*))
+        inline def setSendAsVarargs(value: SendAs*): Self = StObject.set(x, "sendAs", js.Array(value*))
       }
     }
     
@@ -2142,7 +2151,7 @@ object Gmail {
         
         inline def setSmimeInfoUndefined: Self = StObject.set(x, "smimeInfo", js.undefined)
         
-        inline def setSmimeInfoVarargs(value: SmimeInfo*): Self = StObject.set(x, "smimeInfo", js.Array(value :_*))
+        inline def setSmimeInfoVarargs(value: SmimeInfo*): Self = StObject.set(x, "smimeInfo", js.Array(value*))
       }
     }
     
@@ -2175,7 +2184,7 @@ object Gmail {
         
         inline def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
         
-        inline def setThreadsVarargs(value: Thread*): Self = StObject.set(x, "threads", js.Array(value :_*))
+        inline def setThreadsVarargs(value: Thread*): Self = StObject.set(x, "threads", js.Array(value*))
       }
     }
     
@@ -2224,7 +2233,7 @@ object Gmail {
         
         inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
         
-        inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+        inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value*))
         
         inline def setPayload(value: MessagePart): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
         
@@ -2283,7 +2292,7 @@ object Gmail {
         
         inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
         
-        inline def setHeadersVarargs(value: MessagePartHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
+        inline def setHeadersVarargs(value: MessagePartHeader*): Self = StObject.set(x, "headers", js.Array(value*))
         
         inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
         
@@ -2297,7 +2306,7 @@ object Gmail {
         
         inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
         
-        inline def setPartsVarargs(value: MessagePart*): Self = StObject.set(x, "parts", js.Array(value :_*))
+        inline def setPartsVarargs(value: MessagePart*): Self = StObject.set(x, "parts", js.Array(value*))
       }
     }
     
@@ -2376,13 +2385,13 @@ object Gmail {
         
         inline def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
         
-        inline def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
+        inline def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value*))
         
         inline def setRemoveLabelIds(value: js.Array[String]): Self = StObject.set(x, "removeLabelIds", value.asInstanceOf[js.Any])
         
         inline def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
         
-        inline def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
+        inline def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value*))
       }
     }
     
@@ -2405,13 +2414,13 @@ object Gmail {
         
         inline def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
         
-        inline def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
+        inline def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value*))
         
         inline def setRemoveLabelIds(value: js.Array[String]): Self = StObject.set(x, "removeLabelIds", value.asInstanceOf[js.Any])
         
         inline def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
         
-        inline def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
+        inline def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value*))
       }
     }
     
@@ -2673,7 +2682,7 @@ object Gmail {
         
         inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
         
-        inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+        inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value*))
         
         inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
         
@@ -2767,7 +2776,7 @@ object Gmail {
         
         inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
         
-        inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+        inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value*))
         
         inline def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
         

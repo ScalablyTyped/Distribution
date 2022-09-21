@@ -16,11 +16,11 @@ object mod {
   @js.native
   val all: IRouteConfig = js.native
   
-  inline def cache(cacheConfig: ICacheConfig): js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(cacheConfig.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any]]
+  inline def cache(cacheConfig: ICacheConfig): js.Function3[/* target */ Any, /* key */ Any, /* descriptor */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(cacheConfig.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ Any, /* key */ Any, /* descriptor */ Any, Any]]
   
   inline def config(
-    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteAdditionalConfigurationOptions */ js.Any
-  ): js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any]]
+    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteAdditionalConfigurationOptions */ Any
+  ): js.Function3[/* target */ Any, /* key */ Any, /* descriptor */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ Any, /* key */ Any, /* descriptor */ Any, Any]]
   
   inline def controller(baseUrl: String): js.Function1[/* target */ ControllerStatic, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("controller")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ ControllerStatic, Unit]]
   
@@ -36,7 +36,7 @@ object mod {
   @js.native
   val post: IRouteConfig = js.native
   
-  inline def pre(pre: StringDictionary[js.Any]): js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("pre")(pre.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any]]
+  inline def pre(pre: StringDictionary[Any]): js.Function3[/* target */ Any, /* key */ Any, /* descriptor */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("pre")(pre.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ Any, /* key */ Any, /* descriptor */ Any, Any]]
   
   @JSImport("hapi-decorators", "put")
   @js.native
@@ -47,20 +47,20 @@ object mod {
   val route: IRouteDecorator = js.native
   
   inline def validate(
-    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteValidationConfigurationObject */ js.Any
-  ): js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any]]
+    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteValidationConfigurationObject */ Any
+  ): js.Function3[/* target */ Any, /* key */ Any, /* descriptor */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ Any, /* key */ Any, /* descriptor */ Any, Any]]
   
   @js.native
   trait ControllerStatic
     extends StObject
-       with Instantiable1[/* args (repeated) */ js.Any, Controller_]
+       with Instantiable1[/* args (repeated) */ Any, Controller_]
   
   trait Controller_ extends StObject {
     
     var baseUrl: String
     
     def routes(): js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ Any
       ]
   }
   object Controller_ {
@@ -68,7 +68,7 @@ object mod {
     inline def apply(
       baseUrl: String,
       routes: () => js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ Any
         ]
     ): Controller_ = {
       val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], routes = js.Any.fromFunction0(routes))
@@ -81,7 +81,7 @@ object mod {
       
       inline def setRoutes(
         value: () => js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ js.Any
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ Any
             ]
       ): Self = StObject.set(x, "routes", js.Any.fromFunction0(value))
     }
@@ -122,5 +122,5 @@ object mod {
   
   type IRouteDecorator = js.Function2[/* method */ String, /* path */ String, IRouteSetup]
   
-  type IRouteSetup = js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, js.Any]
+  type IRouteSetup = js.Function3[/* target */ Any, /* key */ Any, /* descriptor */ Any, Any]
 }

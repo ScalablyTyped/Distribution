@@ -19,7 +19,7 @@ object mod {
   
   @JSImport("sodiumjs", "Cell")
   @js.native
-  class Cell[A] protected ()
+  open class Cell[A] protected ()
     extends typings.sodiumjs.cellMod.Cell[A] {
     def this(initValue: A) = this()
     def this(initValue: A, str: typings.sodiumjs.streamMod.Stream[A]) = this()
@@ -33,8 +33,8 @@ object mod {
     
     @JSImport("sodiumjs", "Cell._liftArray")
     @js.native
-    def _liftArray: js.Any = js.native
-    inline def _liftArray_=(x: js.Any): scala.Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_liftArray")(x.asInstanceOf[js.Any])
+    def _liftArray: Any = js.native
+    inline def _liftArray_=(x: Any): scala.Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_liftArray")(x.asInstanceOf[js.Any])
     
     /**
       * Apply a value inside a cell to a function inside a cell. This is the
@@ -75,12 +75,12 @@ object mod {
   
   @JSImport("sodiumjs", "CellLoop")
   @js.native
-  class CellLoop[A] ()
+  open class CellLoop[A] ()
     extends typings.sodiumjs.cellLoopMod.CellLoop[A]
   
   @JSImport("sodiumjs", "CellSink")
   @js.native
-  class CellSink[A] protected ()
+  open class CellSink[A] protected ()
     extends typings.sodiumjs.cellSinkMod.CellSink[A] {
     /**
       * Construct a writable cell with the specified initial value. If multiple values are
@@ -95,7 +95,7 @@ object mod {
   
   @JSImport("sodiumjs", "IOAction")
   @js.native
-  class IOAction ()
+  open class IOAction ()
     extends typings.sodiumjs.ioactionMod.IOAction
   /* static members */
   object IOAction {
@@ -120,12 +120,12 @@ object mod {
   
   @JSImport("sodiumjs", "MillisecondsTimerSystem")
   @js.native
-  class MillisecondsTimerSystem ()
+  open class MillisecondsTimerSystem ()
     extends typings.sodiumjs.millisecondsTimerSystemMod.MillisecondsTimerSystem
   
   @JSImport("sodiumjs", "Operational")
   @js.native
-  class Operational ()
+  open class Operational ()
     extends typings.sodiumjs.operationalMod.Operational
   /* static members */
   object Operational {
@@ -174,7 +174,7 @@ object mod {
   
   @JSImport("sodiumjs", "Router")
   @js.native
-  class Router[A, K] protected ()
+  open class Router[A, K] protected ()
     extends typings.sodiumjs.routerMod.Router[A, K] {
     def this(inStream: typings.sodiumjs.streamMod.Stream[A], selector: js.Function1[/* a */ A, js.Array[K]]) = this()
     def this(
@@ -186,24 +186,24 @@ object mod {
   
   @JSImport("sodiumjs", "SecondsTimerSystem")
   @js.native
-  class SecondsTimerSystem ()
+  open class SecondsTimerSystem ()
     extends typings.sodiumjs.secondsTimerSystemMod.SecondsTimerSystem
   
   @JSImport("sodiumjs", "Stream")
   @js.native
-  class Stream[A] ()
+  open class Stream[A] ()
     extends typings.sodiumjs.streamMod.Stream[A] {
     def this(vertex: typings.sodiumjs.vertexMod.Vertex) = this()
   }
   
   @JSImport("sodiumjs", "StreamLoop")
   @js.native
-  class StreamLoop[A] ()
+  open class StreamLoop[A] ()
     extends typings.sodiumjs.streamMod.StreamLoop[A]
   
   @JSImport("sodiumjs", "StreamSink")
   @js.native
-  class StreamSink[A] ()
+  open class StreamSink[A] ()
     extends typings.sodiumjs.streamSinkMod.StreamSink[A] {
     def this(f: js.Function2[/* l */ A, /* r */ A, A]) = this()
     def this(f: Lambda2_[A, A, A]) = this()
@@ -211,7 +211,7 @@ object mod {
   
   @JSImport("sodiumjs", "TimerSystem")
   @js.native
-  class TimerSystem protected ()
+  open class TimerSystem protected ()
     extends typings.sodiumjs.timerSystemMod.TimerSystem {
     def this(impl: typings.sodiumjs.timerSystemMod.TimerSystemImpl) = this()
   }
@@ -223,7 +223,7 @@ object mod {
   
   @JSImport("sodiumjs", "Transaction")
   @js.native
-  class Transaction ()
+  open class Transaction ()
     extends typings.sodiumjs.transactionMod.Transaction
   /* static members */
   object Transaction {
@@ -236,8 +236,8 @@ object mod {
     
     @JSImport("sodiumjs", "Transaction.collectCyclesAtEnd")
     @js.native
-    def collectCyclesAtEnd: js.Any = js.native
-    inline def collectCyclesAtEnd_=(x: js.Any): scala.Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collectCyclesAtEnd")(x.asInstanceOf[js.Any])
+    def collectCyclesAtEnd: Any = js.native
+    inline def collectCyclesAtEnd_=(x: Any): scala.Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collectCyclesAtEnd")(x.asInstanceOf[js.Any])
     
     @JSImport("sodiumjs", "Transaction.currentTransaction")
     @js.native
@@ -255,27 +255,27 @@ object mod {
     
     @JSImport("sodiumjs", "Transaction.onStartHooks")
     @js.native
-    def onStartHooks: js.Any = js.native
-    inline def onStartHooks_=(x: js.Any): scala.Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStartHooks")(x.asInstanceOf[js.Any])
+    def onStartHooks: Any = js.native
+    inline def onStartHooks_=(x: Any): scala.Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStartHooks")(x.asInstanceOf[js.Any])
     
     inline def run[A](f: js.Function0[A]): A = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(f.asInstanceOf[js.Any]).asInstanceOf[A]
     
     @JSImport("sodiumjs", "Transaction.runningOnStartHooks")
     @js.native
-    def runningOnStartHooks: js.Any = js.native
-    inline def runningOnStartHooks_=(x: js.Any): scala.Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runningOnStartHooks")(x.asInstanceOf[js.Any])
+    def runningOnStartHooks: Any = js.native
+    inline def runningOnStartHooks_=(x: Any): scala.Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runningOnStartHooks")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("sodiumjs", "Tuple2")
   @js.native
-  class Tuple2[A, B] protected ()
+  open class Tuple2[A, B] protected ()
     extends typings.sodiumjs.tuple2Mod.Tuple2[A, B] {
     def this(a: A, b: B) = this()
   }
   
   @JSImport("sodiumjs", "Unit")
   @js.native
-  class Unit ()
+  open class Unit ()
     extends typings.sodiumjs.unitMod.Unit
   /* static members */
   object Unit {
@@ -292,7 +292,7 @@ object mod {
   
   @JSImport("sodiumjs", "Vertex")
   @js.native
-  class Vertex protected ()
+  open class Vertex protected ()
     extends typings.sodiumjs.vertexMod.Vertex {
     def this(name: String, rank: Double, sources: js.Array[Source]) = this()
   }
@@ -331,43 +331,31 @@ object mod {
   
   inline def lambda1[A, B](
     f: js.Function1[/* a */ A, B],
-    deps: js.Array[
-      typings.sodiumjs.streamMod.Stream[js.Any] | typings.sodiumjs.cellMod.Cell[js.Any]
-    ]
+    deps: js.Array[typings.sodiumjs.streamMod.Stream[Any] | typings.sodiumjs.cellMod.Cell[Any]]
   ): Lambda1_[A, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("lambda1")(f.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Lambda1_[A, B]]
   
   inline def lambda2[A, B, C](
     f: js.Function2[/* a */ A, /* b */ B, C],
-    deps: js.Array[
-      typings.sodiumjs.streamMod.Stream[js.Any] | typings.sodiumjs.cellMod.Cell[js.Any]
-    ]
+    deps: js.Array[typings.sodiumjs.streamMod.Stream[Any] | typings.sodiumjs.cellMod.Cell[Any]]
   ): Lambda2_[A, B, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("lambda2")(f.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Lambda2_[A, B, C]]
   
   inline def lambda3[A, B, C, D](
     f: js.Function3[/* a */ A, /* b */ B, /* c */ C, D],
-    deps: js.Array[
-      typings.sodiumjs.streamMod.Stream[js.Any] | typings.sodiumjs.cellMod.Cell[js.Any]
-    ]
+    deps: js.Array[typings.sodiumjs.streamMod.Stream[Any] | typings.sodiumjs.cellMod.Cell[Any]]
   ): Lambda3_[A, B, C, D] = (^.asInstanceOf[js.Dynamic].applyDynamic("lambda3")(f.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Lambda3_[A, B, C, D]]
   
   inline def lambda4[A, B, C, D, E](
     f: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, E],
-    deps: js.Array[
-      typings.sodiumjs.streamMod.Stream[js.Any] | typings.sodiumjs.cellMod.Cell[js.Any]
-    ]
+    deps: js.Array[typings.sodiumjs.streamMod.Stream[Any] | typings.sodiumjs.cellMod.Cell[Any]]
   ): Lambda4_[A, B, C, D, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("lambda4")(f.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Lambda4_[A, B, C, D, E]]
   
   inline def lambda5[A, B, C, D, E, F](
     f: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, F],
-    deps: js.Array[
-      typings.sodiumjs.streamMod.Stream[js.Any] | typings.sodiumjs.cellMod.Cell[js.Any]
-    ]
+    deps: js.Array[typings.sodiumjs.streamMod.Stream[Any] | typings.sodiumjs.cellMod.Cell[Any]]
   ): Lambda5_[A, B, C, D, E, F] = (^.asInstanceOf[js.Dynamic].applyDynamic("lambda5")(f.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Lambda5_[A, B, C, D, E, F]]
   
   inline def lambda6[A, B, C, D, E, F, G](
     f: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, G],
-    deps: js.Array[
-      typings.sodiumjs.streamMod.Stream[js.Any] | typings.sodiumjs.cellMod.Cell[js.Any]
-    ]
+    deps: js.Array[typings.sodiumjs.streamMod.Stream[Any] | typings.sodiumjs.cellMod.Cell[Any]]
   ): Lambda6_[A, B, C, D, E, F, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("lambda6")(f.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Lambda6_[A, B, C, D, E, F, G]]
 }

@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "Col")
 @js.native
-class Col protected ()
-  extends Component[VerticalAlign, js.Any] {
+open class Col protected () extends Component[VerticalAlign, Any] {
   def this(props: HTMLAttributesidclassName & VerticalAlign) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & VerticalAlign, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & VerticalAlign, context: Any) = this()
 }

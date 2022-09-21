@@ -3,9 +3,8 @@ package typings.cloudmersiveVirusApiClient
 import typings.cloudmersiveVirusApiClient.anon.Apikey
 import typings.cloudmersiveVirusApiClient.cloudmersiveVirusApiClientStrings.apiKey_
 import typings.cloudmersiveVirusApiClient.cloudmersiveVirusApiClientStrings.header
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object mod {
       * @param data any - The REST data.
       * @param obj any - The target object or array.
       */
-    def constructFromObject(data: js.Any, obj: js.Any, itemType: js.Any): Unit = js.native
+    def constructFromObject(data: Any, obj: Any, itemType: Any): Unit = js.native
     
     /**
       * Converts a value to the specified type.
@@ -34,8 +33,8 @@ object mod {
       *  value type: all properties on <code>data<code> will be converted to this type.
       * @returns An instance of the specified type or null or undefined if data is null or undefined.
       */
-    def convertToType(data: String, `type`: js.Any): js.Any = js.native
-    def convertToType(data: js.Object, `type`: js.Any): js.Any = js.native
+    def convertToType(data: String, `type`: Any): Any = js.native
+    def convertToType(data: js.Object, `type`: Any): Any = js.native
     
     var instance: ApiInstance = js.native
     
@@ -44,7 +43,7 @@ object mod {
       * @param str string - The date value as a string.
       * @returns Date - The parsed date object.
       */
-    def parseDate(str: String): Date = js.native
+    def parseDate(str: String): js.Date = js.native
   }
   @JSImport("cloudmersive-virus-api-client", "ApiClient")
   @js.native
@@ -107,7 +106,7 @@ object mod {
   
   @JSImport("cloudmersive-virus-api-client", "ScanApi")
   @js.native
-  class ScanApi () extends StObject {
+  open class ScanApi () extends StObject {
     def this(apiClient: typings.cloudmersiveVirusApiClient.mod.ApiClient) = this()
     
     /**
@@ -125,8 +124,8 @@ object mod {
       */
     def scanFile(
       inputFile: Buffer,
-      callback: js.Function3[/* error */ js.Any, /* data */ VirusScanResult, /* response */ js.Any, js.Any]
-    ): js.Any = js.native
+      callback: js.Function3[/* error */ Any, /* data */ VirusScanResult, /* response */ Any, Any]
+    ): Any = js.native
     
     /**
       * Advanced Scan a file for viruses
@@ -167,8 +166,8 @@ object mod {
     def scanFileAdvanced(
       inputFile: Buffer,
       opts: ScanFileAdvancedOptions,
-      callback: js.Function3[/* error */ js.Any, /* data */ VirusScanAdvancedResult, /* response */ js.Any, js.Any]
-    ): js.Any = js.native
+      callback: js.Function3[/* error */ Any, /* data */ VirusScanAdvancedResult, /* response */ Any, Any]
+    ): Any = js.native
     /**
       * Advanced Scan a file for viruses
       * Advanced Scan files with 360-degree Content Protection across Viruses and Malware,
@@ -234,8 +233,8 @@ object mod {
       */
     def scanWebsite(
       input: WebsiteScanRequest,
-      callback: js.Function3[/* error */ js.Any, /* data */ WebsiteScanResult, /* response */ js.Any, js.Any]
-    ): js.Any = js.native
+      callback: js.Function3[/* error */ Any, /* data */ WebsiteScanResult, /* response */ Any, Any]
+    ): Any = js.native
     /**
       * Scan a website for malicious content and threats
       * Operation includes scanning the content of the URL for various types
@@ -365,7 +364,7 @@ object mod {
       
       inline def setFoundVirusesNull: Self = StObject.set(x, "FoundViruses", null)
       
-      inline def setFoundVirusesVarargs(value: VirusFound*): Self = StObject.set(x, "FoundViruses", js.Array(value :_*))
+      inline def setFoundVirusesVarargs(value: VirusFound*): Self = StObject.set(x, "FoundViruses", js.Array(value*))
     }
   }
   
@@ -542,7 +541,7 @@ object mod {
       
       inline def setDefaultHeaders(value: js.Array[String]): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
       
-      inline def setDefaultHeadersVarargs(value: String*): Self = StObject.set(x, "defaultHeaders", js.Array(value :_*))
+      inline def setDefaultHeadersVarargs(value: String*): Self = StObject.set(x, "defaultHeaders", js.Array(value*))
       
       inline def setEnableCookies(value: Boolean): Self = StObject.set(x, "enableCookies", value.asInstanceOf[js.Any])
       
@@ -586,15 +585,15 @@ object mod {
   
   type ScanFile = js.Function2[
     /* inputFile */ Buffer, 
-    /* callback */ js.Function3[/* error */ js.Any, /* data */ VirusScanResult, /* response */ js.Any, js.Any], 
-    js.Any
+    /* callback */ js.Function3[/* error */ Any, /* data */ VirusScanResult, /* response */ Any, Any], 
+    Any
   ]
   
   type ScanFileAdvanced = js.Function3[
     /* inputFile */ Buffer, 
     /* opts */ ScanFileAdvancedOptions, 
-    /* callback */ js.Function3[/* error */ js.Any, /* data */ VirusScanAdvancedResult, /* response */ js.Any, js.Any], 
-    js.Any
+    /* callback */ js.Function3[/* error */ Any, /* data */ VirusScanAdvancedResult, /* response */ Any, Any], 
+    Any
   ]
   
   trait ScanFileAdvancedOptions extends StObject {
@@ -660,7 +659,7 @@ object mod {
   
   type ScanWebsite = js.Function2[
     /* input */ WebsiteScanRequest, 
-    /* callback */ js.Function3[/* error */ js.Any, /* data */ WebsiteScanResult, /* response */ js.Any, js.Any], 
-    js.Any
+    /* callback */ js.Function3[/* error */ Any, /* data */ WebsiteScanResult, /* response */ Any, Any], 
+    Any
   ]
 }

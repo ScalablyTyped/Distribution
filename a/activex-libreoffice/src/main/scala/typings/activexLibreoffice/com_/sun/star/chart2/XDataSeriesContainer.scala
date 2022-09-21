@@ -37,7 +37,7 @@ object XDataSeriesContainer {
     acquire: () => Unit,
     addDataSeries: XDataSeries => Unit,
     getDataSeries: () => SafeArray[XDataSeries],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeDataSeries: XDataSeries => Unit,
     setDataSeries: SeqEquiv[XDataSeries] => Unit

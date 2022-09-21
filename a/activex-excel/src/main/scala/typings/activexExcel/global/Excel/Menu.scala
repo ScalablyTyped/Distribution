@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Menu")
 @js.native
-/* private */ class Menu ()
+/* private */ open class Menu ()
   extends StObject
      with typings.activexExcel.Excel.Menu {
   
@@ -35,11 +35,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Index: Double = js.native
   
   /* CompleteClass */
-  override def MenuItems(Index: js.Any): js.Any = js.native
+  override def MenuItems(Index: Any): Any = js.native
   /* CompleteClass */
   @JSName("MenuItems")
   override val MenuItems_Original: MenuItems = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
 }

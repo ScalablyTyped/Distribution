@@ -1,29 +1,48 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`1`
+import typings.vscodeLanguageserverTypes.mod.Range
+import typings.vscodeLanguageserverTypes.mod.uinteger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DocumentSelector = js.Array[
-java.lang.String | typings.vscodeLanguageserverProtocol.protocolMod.DocumentFilter]
+type DocumentSelector = js.Array[String | DocumentFilter]
 
-type DefinitionOptions = typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
+type InitializeErrorCodes = `1`
 
-type DocumentFormattingOptions = typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
+type PositionEncodingKind = String
 
-type DocumentHighlightOptions = typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
+type PrepareSupportDefaultBehavior = `1`
 
-type DocumentRangeFormattingOptions = typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
+type WatchKind = uinteger
 
-type DocumentSymbolOptions = typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
+type ApplyWorkspaceEditResponse = ApplyWorkspaceEditResult
 
-type ExecuteCommandRegistrationOptions = typings.vscodeLanguageserverProtocol.protocolMod.ExecuteCommandOptions
+type DefinitionOptions = WorkDoneProgressOptions
 
-type HoverOptions = typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
+type DocumentFormattingOptions = WorkDoneProgressOptions
 
-type ReferenceOptions = typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
+type DocumentHighlightOptions = WorkDoneProgressOptions
 
-type WorkspaceSymbolOptions = typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
+type DocumentRangeFormattingOptions = WorkDoneProgressOptions
 
-type WorkspaceSymbolRegistrationOptions = typings.vscodeLanguageserverProtocol.protocolMod.WorkspaceSymbolOptions
+type ExecuteCommandRegistrationOptions = ExecuteCommandOptions
+
+type GlobPattern = Pattern | RelativePattern
+
+type HoverOptions = WorkDoneProgressOptions
+
+type Pattern = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.vscodeLanguageserverTypes.mod.Range
+  - typings.vscodeLanguageserverProtocol.anon.Placeholder
+  - typings.vscodeLanguageserverProtocol.anon.DefaultBehavior
+*/
+type PrepareRenameResult = _PrepareRenameResult | Range
+
+type ReferenceOptions = WorkDoneProgressOptions
+
+type WorkspaceSymbolRegistrationOptions = WorkspaceSymbolOptions

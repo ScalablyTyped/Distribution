@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A person&#39;s birthday. At least one of the `date` and `text` fields are
-  * specified. The `date` and `text` fields typically represent the same date,
-  * but are not guaranteed to.
-  */
 trait SchemaBirthday extends StObject {
   
   /**
-    * The date of the birthday.
+    * The structured date of the birthday.
     */
   var date: js.UndefOr[SchemaDate] = js.undefined
   
@@ -22,9 +17,9 @@ trait SchemaBirthday extends StObject {
   var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
-    * A free-form string representing the user&#39;s birthday.
+    * Prefer to use the `date` field if set. A free-form string representing the user's birthday. This value is not validated.
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBirthday {
   
@@ -44,6 +39,8 @@ object SchemaBirthday {
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }

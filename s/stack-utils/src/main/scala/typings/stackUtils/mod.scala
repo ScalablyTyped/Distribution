@@ -1,6 +1,5 @@
 package typings.stackUtils
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object mod {
   
   @JSImport("stack-utils", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with StackUtils {
     def this(options: Options) = this()
@@ -19,7 +18,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def nodeInternals(): js.Array[RegExp] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeInternals")().asInstanceOf[js.Array[RegExp]]
+  inline def nodeInternals(): js.Array[js.RegExp] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeInternals")().asInstanceOf[js.Array[js.RegExp]]
   
   trait CallSite extends StObject {
     
@@ -127,7 +126,7 @@ object mod {
     
     var ignoredPackages: js.UndefOr[js.Array[String]] = js.undefined
     
-    var internals: js.UndefOr[js.Array[RegExp]] = js.undefined
+    var internals: js.UndefOr[js.Array[js.RegExp]] = js.undefined
     
     var wrapCallSite: js.UndefOr[js.Function1[/* callSite */ CallSite, CallSite]] = js.undefined
   }
@@ -148,13 +147,13 @@ object mod {
       
       inline def setIgnoredPackagesUndefined: Self = StObject.set(x, "ignoredPackages", js.undefined)
       
-      inline def setIgnoredPackagesVarargs(value: String*): Self = StObject.set(x, "ignoredPackages", js.Array(value :_*))
+      inline def setIgnoredPackagesVarargs(value: String*): Self = StObject.set(x, "ignoredPackages", js.Array(value*))
       
-      inline def setInternals(value: js.Array[RegExp]): Self = StObject.set(x, "internals", value.asInstanceOf[js.Any])
+      inline def setInternals(value: js.Array[js.RegExp]): Self = StObject.set(x, "internals", value.asInstanceOf[js.Any])
       
       inline def setInternalsUndefined: Self = StObject.set(x, "internals", js.undefined)
       
-      inline def setInternalsVarargs(value: RegExp*): Self = StObject.set(x, "internals", js.Array(value :_*))
+      inline def setInternalsVarargs(value: js.RegExp*): Self = StObject.set(x, "internals", js.Array(value*))
       
       inline def setWrapCallSite(value: /* callSite */ CallSite => CallSite): Self = StObject.set(x, "wrapCallSite", js.Any.fromFunction1(value))
       

@@ -145,29 +145,29 @@ object peoplePickerItemTypesMod {
   trait IPeoplePickerItemSelectedSubComponentStyles extends StObject {
     
     /** Refers to the Persona rendered within the PeoplePickerItemSelected */
-    var persona: IStyleFunctionOrObject[IPersonaStyleProps, js.Any]
+    var persona: IStyleFunctionOrObject[IPersonaStyleProps, Any]
     
     /** Refers to the PersonaCoin in the Persona rendered within the PeoplePickerItemSelected */
-    var personaCoin: js.UndefOr[IStyleFunctionOrObject[IPersonaCoinStyleProps, js.Any]] = js.undefined
+    var personaCoin: js.UndefOr[IStyleFunctionOrObject[IPersonaCoinStyleProps, Any]] = js.undefined
   }
   object IPeoplePickerItemSelectedSubComponentStyles {
     
-    inline def apply(persona: IStyleFunctionOrObject[IPersonaStyleProps, js.Any]): IPeoplePickerItemSelectedSubComponentStyles = {
+    inline def apply(persona: IStyleFunctionOrObject[IPersonaStyleProps, Any]): IPeoplePickerItemSelectedSubComponentStyles = {
       val __obj = js.Dynamic.literal(persona = persona.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPeoplePickerItemSelectedSubComponentStyles]
     }
     
     extension [Self <: IPeoplePickerItemSelectedSubComponentStyles](x: Self) {
       
-      inline def setPersona(value: IStyleFunctionOrObject[IPersonaStyleProps, js.Any]): Self = StObject.set(x, "persona", value.asInstanceOf[js.Any])
+      inline def setPersona(value: IStyleFunctionOrObject[IPersonaStyleProps, Any]): Self = StObject.set(x, "persona", value.asInstanceOf[js.Any])
       
-      inline def setPersonaCoin(value: IStyleFunctionOrObject[IPersonaCoinStyleProps, js.Any]): Self = StObject.set(x, "personaCoin", value.asInstanceOf[js.Any])
+      inline def setPersonaCoin(value: IStyleFunctionOrObject[IPersonaCoinStyleProps, Any]): Self = StObject.set(x, "personaCoin", value.asInstanceOf[js.Any])
       
-      inline def setPersonaCoinFunction1(value: IPersonaCoinStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "personaCoin", js.Any.fromFunction1(value))
+      inline def setPersonaCoinFunction1(value: IPersonaCoinStyleProps => DeepPartial[Any]): Self = StObject.set(x, "personaCoin", js.Any.fromFunction1(value))
       
       inline def setPersonaCoinUndefined: Self = StObject.set(x, "personaCoin", js.undefined)
       
-      inline def setPersonaFunction1(value: IPersonaStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "persona", js.Any.fromFunction1(value))
+      inline def setPersonaFunction1(value: IPersonaStyleProps => DeepPartial[Any]): Self = StObject.set(x, "persona", js.Any.fromFunction1(value))
     }
   }
   
@@ -218,7 +218,7 @@ object peoplePickerItemTypesMod {
       ] = js.undefined
     
     /** General common props for all PeoplePicker items suggestions. */
-    var suggestionsProps: js.UndefOr[IBasePickerSuggestionsProps[js.Any]] = js.undefined
+    var suggestionsProps: js.UndefOr[IBasePickerSuggestionsProps[Any]] = js.undefined
   }
   object IPeoplePickerItemSuggestionProps {
     
@@ -245,7 +245,7 @@ object peoplePickerItemTypesMod {
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      inline def setSuggestionsProps(value: IBasePickerSuggestionsProps[js.Any]): Self = StObject.set(x, "suggestionsProps", value.asInstanceOf[js.Any])
+      inline def setSuggestionsProps(value: IBasePickerSuggestionsProps[Any]): Self = StObject.set(x, "suggestionsProps", value.asInstanceOf[js.Any])
       
       inline def setSuggestionsPropsUndefined: Self = StObject.set(x, "suggestionsProps", js.undefined)
     }
@@ -333,7 +333,7 @@ object peoplePickerItemTypesMod {
       
       inline def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
       
-      inline def setMenuItemsVarargs(value: IContextualMenuItem*): Self = StObject.set(x, "menuItems", js.Array(value :_*))
+      inline def setMenuItemsVarargs(value: IContextualMenuItem*): Self = StObject.set(x, "menuItems", js.Array(value*))
     }
   }
 }

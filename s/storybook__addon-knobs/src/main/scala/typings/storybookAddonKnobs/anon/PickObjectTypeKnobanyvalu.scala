@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types.ObjectTypeKnob<any>, 'value'> */
 trait PickObjectTypeKnobanyvalu extends StObject {
   
-  var value: js.Any
+  var value: Any
 }
 object PickObjectTypeKnobanyvalu {
   
-  inline def apply(value: js.Any): PickObjectTypeKnobanyvalu = {
+  inline def apply(value: Any): PickObjectTypeKnobanyvalu = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickObjectTypeKnobanyvalu]
   }
   
   extension [Self <: PickObjectTypeKnobanyvalu](x: Self) {
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

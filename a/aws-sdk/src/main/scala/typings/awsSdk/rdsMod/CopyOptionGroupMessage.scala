@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CopyOptionGroupMessage extends StObject {
   
   /**
-    * The identifier for the source option group.  Constraints:   Must specify a valid option group.  
+    * The identifier for the source option group. Constraints:   Must specify a valid option group.  
     */
   var SourceOptionGroupIdentifier: String
   
@@ -42,7 +42,7 @@ object CopyOptionGroupMessage {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTargetOptionGroupDescription(value: String): Self = StObject.set(x, "TargetOptionGroupDescription", value.asInstanceOf[js.Any])
     

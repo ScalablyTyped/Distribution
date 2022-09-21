@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "DropdownMenu")
+@JSImport("reactstrap", "DropdownMenu")
 @js.native
-class DropdownMenu () extends default
+open class DropdownMenu () extends default

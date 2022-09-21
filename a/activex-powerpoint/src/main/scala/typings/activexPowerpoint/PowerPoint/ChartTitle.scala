@@ -9,20 +9,20 @@ trait ChartTitle extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: Any = js.native
   
   val Border: ChartBorder = js.native
   
   var Caption: String = js.native
   
   def Characters(): ChartCharacters = js.native
-  def Characters(Start: js.Any): ChartCharacters = js.native
-  def Characters(Start: js.Any, Length: js.Any): ChartCharacters = js.native
-  def Characters(Start: Unit, Length: js.Any): ChartCharacters = js.native
+  def Characters(Start: Any): ChartCharacters = js.native
+  def Characters(Start: Any, Length: Any): ChartCharacters = js.native
+  def Characters(Start: Unit, Length: Any): ChartCharacters = js.native
   
   val Creator: Double = js.native
   
-  def Delete(): js.Any = js.native
+  def Delete(): Any = js.native
   
   val Fill: ChartFillFormat = js.native
   
@@ -40,7 +40,7 @@ trait ChartTitle extends StObject {
   
   val Height: Double = js.native
   
-  var HorizontalAlignment: js.Any = js.native
+  var HorizontalAlignment: Any = js.native
   
   var IncludeInLayout: Boolean = js.native
   
@@ -50,9 +50,9 @@ trait ChartTitle extends StObject {
   
   val Name: String = js.native
   
-  var Orientation: js.Any = js.native
+  var Orientation: Any = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Position: XlChartElementPosition = js.native
   
@@ -61,7 +61,7 @@ trait ChartTitle extends StObject {
   
   var ReadingOrder: Double = js.native
   
-  def Select(): js.Any = js.native
+  def Select(): Any = js.native
   
   var Shadow: Boolean = js.native
   
@@ -69,7 +69,7 @@ trait ChartTitle extends StObject {
   
   var Top: Double = js.native
   
-  var VerticalAlignment: js.Any = js.native
+  var VerticalAlignment: Any = js.native
   
   val Width: Double = js.native
 }

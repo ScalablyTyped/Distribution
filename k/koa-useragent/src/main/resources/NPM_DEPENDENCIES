@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "koa-useragent" : "4.0.0"
+      "koa-useragent" : "4.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "koa-useragent" : "4.0.0"
+      "koa-useragent" : "4.1.0"
     }
   ],
   "compile-devDependencies" : [

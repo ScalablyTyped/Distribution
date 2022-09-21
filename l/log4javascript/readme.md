@@ -1,7 +1,7 @@
 
 # Scala.js typings for log4javascript
 
-Typings are for version 1.4.15
+Typings are for version 1.4.16
 
 ## Library description:
 log4javascript
@@ -11,9 +11,9 @@ log4javascript
 | Full name          | log4javascript |
 | Keywords           | log4javascript, logging, js, json |
 | # releases         | 2 |
-| # dependents       | 12 |
-| # downloads        | 219602 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 20221.0 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/Ritzlgrmft/log4javascript#readme)

@@ -8,25 +8,25 @@ object minHeapMod {
   
   @JSImport("rot-js/lib/MinHeap", "MinHeap")
   @js.native
-  class MinHeap[T] () extends StObject {
+  open class MinHeap[T] () extends StObject {
     
     def debugPrint(): Unit = js.native
     
-    /* private */ var existNode: js.Any = js.native
+    /* private */ var existNode: Any = js.native
     
     def find(v: T): HeapWrapper[T] | Null = js.native
     
-    /* private */ var heap: js.Any = js.native
+    /* private */ var heap: Any = js.native
     
-    /* private */ var leftChildNode: js.Any = js.native
+    /* private */ var leftChildNode: Any = js.native
     
     def len(): Double = js.native
     
     def lessThan(a: HeapWrapper[T], b: HeapWrapper[T]): Boolean = js.native
     
-    /* private */ var minNode: js.Any = js.native
+    /* private */ var minNode: Any = js.native
     
-    /* private */ var parentNode: js.Any = js.native
+    /* private */ var parentNode: Any = js.native
     
     def pop(): HeapWrapper[T] = js.native
     
@@ -34,17 +34,17 @@ object minHeapMod {
     
     def remove(v: T): Boolean = js.native
     
-    /* private */ var rightChildNode: js.Any = js.native
+    /* private */ var rightChildNode: Any = js.native
     
     def shift(v: Double): Unit = js.native
     
-    /* private */ var swap: js.Any = js.native
+    /* private */ var swap: Any = js.native
     
-    /* private */ var timestamp: js.Any = js.native
+    /* private */ var timestamp: Any = js.native
     
-    /* private */ var updateDown: js.Any = js.native
+    /* private */ var updateDown: Any = js.native
     
-    /* private */ var updateUp: js.Any = js.native
+    /* private */ var updateUp: Any = js.native
   }
   
   trait HeapWrapper[T] extends StObject {

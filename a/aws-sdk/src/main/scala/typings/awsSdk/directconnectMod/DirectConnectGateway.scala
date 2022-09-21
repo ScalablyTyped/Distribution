@@ -27,7 +27,7 @@ trait DirectConnectGateway extends StObject {
   var directConnectGatewayState: js.UndefOr[DirectConnectGatewayState] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the Direct Connect gateway.
+    * The ID of the Amazon Web Services account that owns the Direct Connect gateway.
     */
   var ownerAccount: js.UndefOr[OwnerAccount] = js.undefined
   

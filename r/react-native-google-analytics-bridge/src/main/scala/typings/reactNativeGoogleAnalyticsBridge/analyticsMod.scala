@@ -103,7 +103,7 @@ object analyticsMod {
       
       inline def setImpressionProductsUndefined: Self = StObject.set(x, "impressionProducts", js.undefined)
       
-      inline def setImpressionProductsVarargs(value: Product*): Self = StObject.set(x, "impressionProducts", js.Array(value :_*))
+      inline def setImpressionProductsVarargs(value: Product*): Self = StObject.set(x, "impressionProducts", js.Array(value*))
       
       inline def setImpressionSource(value: String): Self = StObject.set(x, "impressionSource", value.asInstanceOf[js.Any])
       
@@ -117,7 +117,7 @@ object analyticsMod {
       
       inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
       
-      inline def setProductsVarargs(value: Product*): Self = StObject.set(x, "products", js.Array(value :_*))
+      inline def setProductsVarargs(value: Product*): Self = StObject.set(x, "products", js.Array(value*))
       
       inline def setSession(value: SessionState): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       

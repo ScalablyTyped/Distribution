@@ -20,19 +20,19 @@ trait CropperOptions extends StObject {
   
   var checkOrientation: js.UndefOr[String] = js.undefined
   
-  var crop: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var crop: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], Unit]] = js.undefined
   
   var cropBoxMovable: js.UndefOr[Double] = js.undefined
   
   var cropBoxResizable: js.UndefOr[Double] = js.undefined
   
-  var cropend: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var cropend: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var cropmove: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var cropmove: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var cropstart: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var cropstart: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var dragMode: js.UndefOr[String] = js.undefined
   
@@ -58,9 +58,9 @@ trait CropperOptions extends StObject {
   
   var movable: js.UndefOr[Boolean] = js.undefined
   
-  var preview: js.UndefOr[js.Any] = js.undefined
+  var preview: js.UndefOr[Any] = js.undefined
   
-  var ready: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var ready: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var responsive: js.UndefOr[Boolean] = js.undefined
   
@@ -76,7 +76,7 @@ trait CropperOptions extends StObject {
   
   var wheelZoomRatio: js.UndefOr[Double] = js.undefined
   
-  var zoom: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var zoom: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var zoomOnTouch: js.UndefOr[Boolean] = js.undefined
   
@@ -121,7 +121,7 @@ object CropperOptions {
     
     inline def setCheckOrientationUndefined: Self = StObject.set(x, "checkOrientation", js.undefined)
     
-    inline def setCrop(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "crop", js.Any.fromFunction1(value))
+    inline def setCrop(value: /* data */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "crop", js.Any.fromFunction1(value))
     
     inline def setCropBoxMovable(value: Double): Self = StObject.set(x, "cropBoxMovable", value.asInstanceOf[js.Any])
     
@@ -133,19 +133,19 @@ object CropperOptions {
     
     inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     
-    inline def setCropend(value: () => js.Any): Self = StObject.set(x, "cropend", js.Any.fromFunction0(value))
+    inline def setCropend(value: () => Any): Self = StObject.set(x, "cropend", js.Any.fromFunction0(value))
     
     inline def setCropendUndefined: Self = StObject.set(x, "cropend", js.undefined)
     
-    inline def setCropmove(value: () => js.Any): Self = StObject.set(x, "cropmove", js.Any.fromFunction0(value))
+    inline def setCropmove(value: () => Any): Self = StObject.set(x, "cropmove", js.Any.fromFunction0(value))
     
     inline def setCropmoveUndefined: Self = StObject.set(x, "cropmove", js.undefined)
     
-    inline def setCropstart(value: () => js.Any): Self = StObject.set(x, "cropstart", js.Any.fromFunction0(value))
+    inline def setCropstart(value: () => Any): Self = StObject.set(x, "cropstart", js.Any.fromFunction0(value))
     
     inline def setCropstartUndefined: Self = StObject.set(x, "cropstart", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -197,11 +197,11 @@ object CropperOptions {
     
     inline def setMovableUndefined: Self = StObject.set(x, "movable", js.undefined)
     
-    inline def setPreview(value: js.Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
     inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
-    inline def setReady(value: () => js.Any): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
+    inline def setReady(value: () => Any): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
     
     inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
@@ -233,7 +233,7 @@ object CropperOptions {
     
     inline def setWheelZoomRatioUndefined: Self = StObject.set(x, "wheelZoomRatio", js.undefined)
     
-    inline def setZoom(value: () => js.Any): Self = StObject.set(x, "zoom", js.Any.fromFunction0(value))
+    inline def setZoom(value: () => Any): Self = StObject.set(x, "zoom", js.Any.fromFunction0(value))
     
     inline def setZoomOnTouch(value: Boolean): Self = StObject.set(x, "zoomOnTouch", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not need to use this constructor, because calls to Panel.getRowDefinition or Panel.getColumnDefinition will automatically create and remember a RowColumnDefinition for you.
   */
-class RowColumnDefinition ()
+open class RowColumnDefinition ()
   extends typings.go.mod.RowColumnDefinition
 object RowColumnDefinition {
   

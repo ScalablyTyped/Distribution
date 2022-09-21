@@ -25,7 +25,7 @@ object AvatarPairProps {
     
     inline def setCollaborators(value: js.Array[Name]): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
     
-    inline def setCollaboratorsVarargs(value: Name*): Self = StObject.set(x, "collaborators", js.Array(value :_*))
+    inline def setCollaboratorsVarargs(value: Name*): Self = StObject.set(x, "collaborators", js.Array(value*))
     
     inline def setSize(value: md | lg | fit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

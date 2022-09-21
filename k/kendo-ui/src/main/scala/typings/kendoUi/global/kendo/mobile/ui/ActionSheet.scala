@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.mobile.ui.ActionSheet")
 @js.native
-class ActionSheet protected ()
+open class ActionSheet protected ()
   extends StObject
      with typings.kendoUi.kendo.mobile.ui.ActionSheet {
   def this(element: Element) = this()

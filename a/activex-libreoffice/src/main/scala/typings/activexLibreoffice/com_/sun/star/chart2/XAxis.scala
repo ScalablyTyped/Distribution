@@ -56,7 +56,7 @@ object XAxis {
     getScaleData: () => ScaleData,
     getSubGridProperties: () => SafeArray[XPropertySet],
     getSubTickProperties: () => SafeArray[XPropertySet],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setScaleData: ScaleData => Unit
   ): XAxis = {

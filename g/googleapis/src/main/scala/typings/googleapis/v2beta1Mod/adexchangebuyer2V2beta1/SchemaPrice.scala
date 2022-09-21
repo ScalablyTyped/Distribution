@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a price and a pricing type for a product / deal.
-  */
 trait SchemaPrice extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaPrice extends StObject {
   /**
     * The pricing type for the deal/product. (default: CPM)
     */
-  var pricingType: js.UndefOr[String] = js.undefined
+  var pricingType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPrice {
   
@@ -33,6 +30,8 @@ object SchemaPrice {
     inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     inline def setPricingType(value: String): Self = StObject.set(x, "pricingType", value.asInstanceOf[js.Any])
+    
+    inline def setPricingTypeNull: Self = StObject.set(x, "pricingType", null)
     
     inline def setPricingTypeUndefined: Self = StObject.set(x, "pricingType", js.undefined)
   }

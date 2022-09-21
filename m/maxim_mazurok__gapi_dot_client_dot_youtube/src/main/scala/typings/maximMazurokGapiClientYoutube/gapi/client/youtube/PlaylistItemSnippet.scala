@@ -21,7 +21,7 @@ trait PlaylistItemSnippet extends StObject {
   /** The order in which the item appears in the playlist. The value uses a zero-based index, so the first item has a position of 0, the second item has a position of 1, and so forth. */
   var position: js.UndefOr[Double] = js.undefined
   
-  /** The date and time that the item was added to the playlist. The value is specified in ISO 8601 format. */
+  /** The date and time that the item was added to the playlist. */
   var publishedAt: js.UndefOr[String] = js.undefined
   
   /** The id object contains information that can be used to uniquely identify the resource that is included in the playlist as the playlist item. */
@@ -35,6 +35,12 @@ trait PlaylistItemSnippet extends StObject {
   
   /** The item's title. */
   var title: js.UndefOr[String] = js.undefined
+  
+  /** Channel id for the channel this video belongs to. */
+  var videoOwnerChannelId: js.UndefOr[String] = js.undefined
+  
+  /** Channel title for the channel this video belongs to. */
+  var videoOwnerChannelTitle: js.UndefOr[String] = js.undefined
 }
 object PlaylistItemSnippet {
   
@@ -80,5 +86,13 @@ object PlaylistItemSnippet {
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setVideoOwnerChannelId(value: String): Self = StObject.set(x, "videoOwnerChannelId", value.asInstanceOf[js.Any])
+    
+    inline def setVideoOwnerChannelIdUndefined: Self = StObject.set(x, "videoOwnerChannelId", js.undefined)
+    
+    inline def setVideoOwnerChannelTitle(value: String): Self = StObject.set(x, "videoOwnerChannelTitle", value.asInstanceOf[js.Any])
+    
+    inline def setVideoOwnerChannelTitleUndefined: Self = StObject.set(x, "videoOwnerChannelTitle", js.undefined)
   }
 }

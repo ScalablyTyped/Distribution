@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartLegendEntryUpdateData extends StObject {
   
   /**
+    * Represents the visibility of a chart legend entry.
     *
-    * Represents the visible of a chart legend entry.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var visible: js.UndefOr[Boolean] = js.undefined

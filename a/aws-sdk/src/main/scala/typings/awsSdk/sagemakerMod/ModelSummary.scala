@@ -9,7 +9,7 @@ trait ModelSummary extends StObject {
   /**
     * A timestamp that indicates when the model was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * The Amazon Resource Name (ARN) of the model.
@@ -23,14 +23,14 @@ trait ModelSummary extends StObject {
 }
 object ModelSummary {
   
-  inline def apply(CreationTime: Timestamp, ModelArn: ModelArn, ModelName: ModelName): ModelSummary = {
+  inline def apply(CreationTime: js.Date, ModelArn: ModelArn, ModelName: ModelName): ModelSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], ModelArn = ModelArn.asInstanceOf[js.Any], ModelName = ModelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelSummary]
   }
   
   extension [Self <: ModelSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setModelArn(value: ModelArn): Self = StObject.set(x, "ModelArn", value.asInstanceOf[js.Any])
     

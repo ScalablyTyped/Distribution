@@ -47,7 +47,7 @@ object SsoSessionFoundResult {
     
     inline def setSessionClients(value: js.Array[String]): Self = StObject.set(x, "sessionClients", value.asInstanceOf[js.Any])
     
-    inline def setSessionClientsVarargs(value: String*): Self = StObject.set(x, "sessionClients", js.Array(value :_*))
+    inline def setSessionClientsVarargs(value: String*): Self = StObject.set(x, "sessionClients", js.Array(value*))
     
     inline def setSso(value: `true`): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
   }

@@ -4,7 +4,6 @@ import typings.chromeApps.anon.Data
 import typings.chromeApps.anon.Uuid
 import typings.chromeApps.chromeAppsStrings.read_
 import typings.chromeApps.chromeAppsStrings.write_
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,13 +57,13 @@ object bluetoothLowEnergy {
       
       inline def setServiceUuidsUndefined: Self = StObject.set(x, "serviceUuids", js.undefined)
       
-      inline def setServiceUuidsVarargs(value: String*): Self = StObject.set(x, "serviceUuids", js.Array(value :_*))
+      inline def setServiceUuidsVarargs(value: String*): Self = StObject.set(x, "serviceUuids", js.Array(value*))
       
       inline def setSolicitUuids(value: js.Array[String]): Self = StObject.set(x, "solicitUuids", value.asInstanceOf[js.Any])
       
       inline def setSolicitUuidsUndefined: Self = StObject.set(x, "solicitUuids", js.undefined)
       
-      inline def setSolicitUuidsVarargs(value: String*): Self = StObject.set(x, "solicitUuids", js.Array(value :_*))
+      inline def setSolicitUuidsVarargs(value: String*): Self = StObject.set(x, "solicitUuids", js.Array(value*))
       
       inline def setType(value: AdvertisementType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -97,7 +96,7 @@ object bluetoothLowEnergy {
     var uuid: String
     
     /** The currently cached characteristic value. This value gets updated when the value of the characteristic is read or updated via a notification or indication. */
-    var value: js.UndefOr[ArrayBuffer] = js.undefined
+    var value: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
   }
   object Characteristic {
     
@@ -114,7 +113,7 @@ object bluetoothLowEnergy {
       
       inline def setProperties(value: js.Array[CharacteristicProperties]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      inline def setPropertiesVarargs(value: CharacteristicProperties*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: CharacteristicProperties*): Self = StObject.set(x, "properties", js.Array(value*))
       
       inline def setService(value: Service): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
@@ -122,7 +121,7 @@ object bluetoothLowEnergy {
       
       inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -192,7 +191,7 @@ object bluetoothLowEnergy {
     var uuid: String
     
     /** The currently cached descriptor value. This value gets updated when the value of the descriptor is read. */
-    var value: js.UndefOr[ArrayBuffer] = js.undefined
+    var value: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
   }
   object Descriptor {
     
@@ -213,11 +212,11 @@ object bluetoothLowEnergy {
       
       inline def setPermissions(value: js.Array[DescriptorPermissions]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      inline def setPermissionsVarargs(value: DescriptorPermissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+      inline def setPermissionsVarargs(value: DescriptorPermissions*): Self = StObject.set(x, "permissions", js.Array(value*))
       
       inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -253,11 +252,11 @@ object bluetoothLowEnergy {
     var shouldIndicate: Boolean
     
     /** New value of the characteristic. */
-    var value: ArrayBuffer
+    var value: js.typedarray.ArrayBuffer
   }
   object INotification {
     
-    inline def apply(shouldIndicate: Boolean, value: ArrayBuffer): INotification = {
+    inline def apply(shouldIndicate: Boolean, value: js.typedarray.ArrayBuffer): INotification = {
       val __obj = js.Dynamic.literal(shouldIndicate = shouldIndicate.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[INotification]
     }
@@ -266,7 +265,7 @@ object bluetoothLowEnergy {
       
       inline def setShouldIndicate(value: Boolean): Self = StObject.set(x, "shouldIndicate", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -301,7 +300,7 @@ object bluetoothLowEnergy {
     var requestId: integer
     
     /** Response value. Write requests and error responses will ignore this parameter. */
-    var value: js.UndefOr[ArrayBuffer] = js.undefined
+    var value: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
   }
   object IResponse {
     
@@ -316,7 +315,7 @@ object bluetoothLowEnergy {
       
       inline def setRequestId(value: integer): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -331,7 +330,7 @@ object bluetoothLowEnergy {
     var requestId: integer
     
     /** Value to write (if this is a write request). */
-    var value: js.UndefOr[ArrayBuffer] = js.undefined
+    var value: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
   }
   object Request {
     
@@ -346,7 +345,7 @@ object bluetoothLowEnergy {
       
       inline def setRequestId(value: integer): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }

@@ -10,10 +10,10 @@ Create an event emitter from dockerode's events response
 | ------------------ | :-------------: |
 | Full name          | docker-events |
 | Keywords           | docker, events, event, emitter |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 31186 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1206.3333333333333 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/deoxxa/docker-events)

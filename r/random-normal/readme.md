@@ -11,9 +11,9 @@ Return a normally-distributed random variate.
 | Full name          | random-normal |
 | Keywords           | normally, distributed, variate, random, randomly, randomize, chance, test, dice, mock |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 11091 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1218.6666666666667 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/mock-end/random-normal#readme)

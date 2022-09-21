@@ -1,6 +1,6 @@
 package typings.puppeteerCore
 
-import typings.puppeteerCore.connectionMod.CDPSession
+import typings.puppeteerCore.commonConnectionMod.CDPSession
 import typings.puppeteerCore.puppeteerViewportMod.Viewport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,15 +10,11 @@ object emulationManagerMod {
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/common/EmulationManager", "EmulationManager")
   @js.native
-  class EmulationManager protected () extends StObject {
+  open class EmulationManager protected () extends StObject {
     def this(client: CDPSession) = this()
     
-    var _client: CDPSession = js.native
-    
-    var _emulatingMobile: Boolean = js.native
-    
-    var _hasTouch: Boolean = js.native
-    
     def emulateViewport(viewport: Viewport): js.Promise[Boolean] = js.native
+    
+    /* private */ var `private`: Any = js.native
   }
 }

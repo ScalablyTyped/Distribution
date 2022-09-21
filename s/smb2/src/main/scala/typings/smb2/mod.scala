@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("smb2", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with SMB2 {
     def this(options: SMB2Options) = this()
@@ -20,48 +20,44 @@ object mod {
     def close(): Unit = js.native
     
     def exists(path: String): Unit = js.native
-    def exists(path: String, callback: js.Function2[/* error */ js.Any, /* exists */ Boolean, Unit]): Unit = js.native
+    def exists(path: String, callback: js.Function2[/* error */ Any, /* exists */ Boolean, Unit]): Unit = js.native
     
     def mkdir(dir: String): Unit = js.native
-    def mkdir(dir: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    def mkdir(dir: String, callback: js.Function1[/* error */ Any, Unit]): Unit = js.native
     def mkdir(dir: String, mode: String): Unit = js.native
-    def mkdir(dir: String, mode: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    def mkdir(dir: String, mode: String, callback: js.Function1[/* error */ Any, Unit]): Unit = js.native
     
     def readFile(fileName: String): Unit = js.native
-    def readFile(fileName: String, callback: js.Function2[/* error */ js.Any, /* data */ String, Unit]): Unit = js.native
-    def readFile(
-      fileName: String,
-      options: Unit,
-      callback: js.Function2[/* error */ js.Any, /* data */ String, Unit]
-    ): Unit = js.native
+    def readFile(fileName: String, callback: js.Function2[/* error */ Any, /* data */ String, Unit]): Unit = js.native
+    def readFile(fileName: String, options: Unit, callback: js.Function2[/* error */ Any, /* data */ String, Unit]): Unit = js.native
     def readFile(fileName: String, options: SMB2ReadFileOptions): Unit = js.native
     def readFile(
       fileName: String,
       options: SMB2ReadFileOptions,
-      callback: js.Function2[/* error */ js.Any, /* data */ String, Unit]
+      callback: js.Function2[/* error */ Any, /* data */ String, Unit]
     ): Unit = js.native
     
     def readdir(dir: String): Unit = js.native
-    def readdir(dir: String, callback: js.Function2[/* error */ js.Any, /* files */ js.Array[String], Unit]): Unit = js.native
+    def readdir(dir: String, callback: js.Function2[/* error */ Any, /* files */ js.Array[String], Unit]): Unit = js.native
     
     def rename(oldPath: String, newPath: String): Unit = js.native
-    def rename(oldPath: String, newPath: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    def rename(oldPath: String, newPath: String, callback: js.Function1[/* error */ Any, Unit]): Unit = js.native
     
     def rmdir(dir: String): Unit = js.native
-    def rmdir(dir: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    def rmdir(dir: String, callback: js.Function1[/* error */ Any, Unit]): Unit = js.native
     
     def unlink(fileName: String): Unit = js.native
-    def unlink(fileName: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    def unlink(fileName: String, callback: js.Function1[/* error */ Any, Unit]): Unit = js.native
     
     def writeFile(fileName: String, data: String): Unit = js.native
-    def writeFile(fileName: String, data: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
-    def writeFile(fileName: String, data: String, options: Unit, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    def writeFile(fileName: String, data: String, callback: js.Function1[/* error */ Any, Unit]): Unit = js.native
+    def writeFile(fileName: String, data: String, options: Unit, callback: js.Function1[/* error */ Any, Unit]): Unit = js.native
     def writeFile(fileName: String, data: String, options: SMB2ReadFileOptions): Unit = js.native
     def writeFile(
       fileName: String,
       data: String,
       options: SMB2ReadFileOptions,
-      callback: js.Function1[/* error */ js.Any, Unit]
+      callback: js.Function1[/* error */ Any, Unit]
     ): Unit = js.native
   }
   

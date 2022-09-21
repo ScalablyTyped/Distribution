@@ -13,5 +13,5 @@ object shallowDiffersMod {
   
   inline def default(a: O, b: O): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  type O = StringDictionary[js.Any]
+  type O = StringDictionary[Any]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "RollingAverage")
 @js.native
-class RollingAverage protected ()
+open class RollingAverage protected ()
   extends typings.babylonjs.indexMod.RollingAverage {
   /**
     * constructor

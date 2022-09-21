@@ -4,7 +4,6 @@ import typings.jpm.jpmStrings.end
 import typings.jpm.jpmStrings.ready
 import typings.jpm.jpmStrings.start
 import typings.jpm.panelMod.PanelPosition
-import typings.std.Error
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +17,7 @@ trait ContentScriptFile extends StObject {
   
   var contentScriptFile: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var contentScriptOptions: js.UndefOr[js.Any] = js.undefined
+  var contentScriptOptions: js.UndefOr[Any] = js.undefined
   
   var contentScriptWhen: js.UndefOr[start | ready | end] = js.undefined
   
@@ -34,13 +33,13 @@ trait ContentScriptFile extends StObject {
   
   var height: js.UndefOr[Double] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* error */ Error, js.Any]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* error */ js.Error, Any]] = js.undefined
   
-  var onHide: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var onHide: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var onMessage: js.UndefOr[js.Function1[/* message */ String, js.Any]] = js.undefined
+  var onMessage: js.UndefOr[js.Function1[/* message */ String, Any]] = js.undefined
   
-  var onShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var onShow: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var position: js.UndefOr[PanelPosition] = js.undefined
   
@@ -65,15 +64,15 @@ object ContentScriptFile {
     
     inline def setContentScriptFileUndefined: Self = StObject.set(x, "contentScriptFile", js.undefined)
     
-    inline def setContentScriptFileVarargs(value: String*): Self = StObject.set(x, "contentScriptFile", js.Array(value :_*))
+    inline def setContentScriptFileVarargs(value: String*): Self = StObject.set(x, "contentScriptFile", js.Array(value*))
     
-    inline def setContentScriptOptions(value: js.Any): Self = StObject.set(x, "contentScriptOptions", value.asInstanceOf[js.Any])
+    inline def setContentScriptOptions(value: Any): Self = StObject.set(x, "contentScriptOptions", value.asInstanceOf[js.Any])
     
     inline def setContentScriptOptionsUndefined: Self = StObject.set(x, "contentScriptOptions", js.undefined)
     
     inline def setContentScriptUndefined: Self = StObject.set(x, "contentScript", js.undefined)
     
-    inline def setContentScriptVarargs(value: String*): Self = StObject.set(x, "contentScript", js.Array(value :_*))
+    inline def setContentScriptVarargs(value: String*): Self = StObject.set(x, "contentScript", js.Array(value*))
     
     inline def setContentScriptWhen(value: start | ready | end): Self = StObject.set(x, "contentScriptWhen", value.asInstanceOf[js.Any])
     
@@ -85,11 +84,11 @@ object ContentScriptFile {
     
     inline def setContentStyleFileUndefined: Self = StObject.set(x, "contentStyleFile", js.undefined)
     
-    inline def setContentStyleFileVarargs(value: String*): Self = StObject.set(x, "contentStyleFile", js.Array(value :_*))
+    inline def setContentStyleFileVarargs(value: String*): Self = StObject.set(x, "contentStyleFile", js.Array(value*))
     
     inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
     
-    inline def setContentStyleVarargs(value: String*): Self = StObject.set(x, "contentStyle", js.Array(value :_*))
+    inline def setContentStyleVarargs(value: String*): Self = StObject.set(x, "contentStyle", js.Array(value*))
     
     inline def setContentURL(value: String | URL): Self = StObject.set(x, "contentURL", value.asInstanceOf[js.Any])
     
@@ -107,19 +106,19 @@ object ContentScriptFile {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setOnError(value: /* error */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* error */ js.Error => Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnHide(value: () => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+    inline def setOnHide(value: () => Any): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    inline def setOnMessage(value: /* message */ String => js.Any): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+    inline def setOnMessage(value: /* message */ String => Any): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
     inline def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
     
-    inline def setOnShow(value: () => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+    inline def setOnShow(value: () => Any): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     

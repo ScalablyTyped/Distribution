@@ -10,6 +10,9 @@ trait NodeConfig extends StObject {
   /** A list of hardware accelerators to be attached to each node. See https://cloud.google.com/compute/docs/gpus for more information about support for GPUs. */
   var accelerators: js.UndefOr[js.Array[AcceleratorConfig]] = js.undefined
   
+  /** Advanced features for the Compute Engine VM. */
+  var advancedMachineFeatures: js.UndefOr[AdvancedMachineFeatures] = js.undefined
+  
   /**
     * The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool. This should be of the form
     * projects/[KEY_PROJECT_ID]/locations/[LOCATION]/keyRings/[RING_NAME]/cryptoKeys/[KEY_NAME]. For more information about protecting resources with Cloud KMS Keys please see:
@@ -17,14 +20,26 @@ trait NodeConfig extends StObject {
     */
   var bootDiskKmsKey: js.UndefOr[String] = js.undefined
   
+  /** Confidential nodes config. All the nodes in the node pool will be Confidential VM once enabled. */
+  var confidentialNodes: js.UndefOr[ConfidentialNodes] = js.undefined
+  
   /** Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB. If unspecified, the default disk size is 100GB. */
   var diskSizeGb: js.UndefOr[Double] = js.undefined
   
-  /** Type of the disk attached to each node (e.g. 'pd-standard' or 'pd-ssd') If unspecified, the default disk type is 'pd-standard' */
+  /** Type of the disk attached to each node (e.g. 'pd-standard', 'pd-ssd' or 'pd-balanced') If unspecified, the default disk type is 'pd-standard' */
   var diskType: js.UndefOr[String] = js.undefined
+  
+  /** Google Container File System (image streaming) configs. */
+  var gcfsConfig: js.UndefOr[GcfsConfig] = js.undefined
+  
+  /** Enable or disable gvnic in the node pool. */
+  var gvnic: js.UndefOr[VirtualNIC] = js.undefined
   
   /** The image type to use for this node. Note that for a given image type, the latest version of it will be used. */
   var imageType: js.UndefOr[String] = js.undefined
+  
+  /** Node kubelet configs. */
+  var kubeletConfig: js.UndefOr[NodeKubeletConfig] = js.undefined
   
   /**
     * The map of Kubernetes labels (key/value pairs) to be applied to each node. These will added in addition to any default label(s) that Kubernetes may apply to the node. In case of
@@ -34,8 +49,11 @@ trait NodeConfig extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig & TopLevel[Any]
   ] = js.undefined
+  
+  /** Parameters that can be configured on Linux nodes. */
+  var linuxNodeConfig: js.UndefOr[LinuxNodeConfig] = js.undefined
   
   /**
     * The number of local SSD disks to be attached to the node. The limit for this value is dependent upon the maximum number of disks available on a machine per zone. See:
@@ -51,14 +69,13 @@ trait NodeConfig extends StObject {
     * of a URL in the metadata server. Additionally, to avoid ambiguity, keys must not conflict with any other metadata keys for the project or be one of the reserved keys: -
     * "cluster-location" - "cluster-name" - "cluster-uid" - "configure-sh" - "containerd-configure-sh" - "enable-os-login" - "gci-ensure-gke-docker" - "gci-metrics-enabled" -
     * "gci-update-strategy" - "instance-template" - "kube-env" - "startup-script" - "user-data" - "disable-address-manager" - "windows-startup-script-ps1" - "common-psm1" -
-    * "k8s-node-setup-psm1" - "install-ssh-psm1" - "user-profile-psm1" The following keys are reserved for Windows nodes: - "serial-port-logging-enable" Values are free-form strings, and
-    * only have meaning as interpreted by the image running in the instance. The only restriction placed on them is that each value's size must be less than or equal to 32 KB. The total
-    * size of all keys and values must be less than 512 KB.
+    * "k8s-node-setup-psm1" - "install-ssh-psm1" - "user-profile-psm1" Values are free-form strings, and only have meaning as interpreted by the image running in the instance. The only
+    * restriction placed on them is that each value's size must be less than or equal to 32 KB. The total size of all keys and values must be less than 512 KB.
     */
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -103,6 +120,9 @@ trait NodeConfig extends StObject {
   /** Shielded Instance options. */
   var shieldedInstanceConfig: js.UndefOr[ShieldedInstanceConfig] = js.undefined
   
+  /** Spot flag for enabling Spot VM, which is a rebrand of the existing preemptible flag. */
+  var spot: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The list of instance tags applied to all nodes. Tags are used to identify valid sources or targets for network firewalls and are specified by the client during cluster or node pool
     * creation. Each tag within the list must comply with RFC1035.
@@ -131,11 +151,19 @@ object NodeConfig {
     
     inline def setAcceleratorsUndefined: Self = StObject.set(x, "accelerators", js.undefined)
     
-    inline def setAcceleratorsVarargs(value: AcceleratorConfig*): Self = StObject.set(x, "accelerators", js.Array(value :_*))
+    inline def setAcceleratorsVarargs(value: AcceleratorConfig*): Self = StObject.set(x, "accelerators", js.Array(value*))
+    
+    inline def setAdvancedMachineFeatures(value: AdvancedMachineFeatures): Self = StObject.set(x, "advancedMachineFeatures", value.asInstanceOf[js.Any])
+    
+    inline def setAdvancedMachineFeaturesUndefined: Self = StObject.set(x, "advancedMachineFeatures", js.undefined)
     
     inline def setBootDiskKmsKey(value: String): Self = StObject.set(x, "bootDiskKmsKey", value.asInstanceOf[js.Any])
     
     inline def setBootDiskKmsKeyUndefined: Self = StObject.set(x, "bootDiskKmsKey", js.undefined)
+    
+    inline def setConfidentialNodes(value: ConfidentialNodes): Self = StObject.set(x, "confidentialNodes", value.asInstanceOf[js.Any])
+    
+    inline def setConfidentialNodesUndefined: Self = StObject.set(x, "confidentialNodes", js.undefined)
     
     inline def setDiskSizeGb(value: Double): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     
@@ -145,17 +173,33 @@ object NodeConfig {
     
     inline def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
     
+    inline def setGcfsConfig(value: GcfsConfig): Self = StObject.set(x, "gcfsConfig", value.asInstanceOf[js.Any])
+    
+    inline def setGcfsConfigUndefined: Self = StObject.set(x, "gcfsConfig", js.undefined)
+    
+    inline def setGvnic(value: VirtualNIC): Self = StObject.set(x, "gvnic", value.asInstanceOf[js.Any])
+    
+    inline def setGvnicUndefined: Self = StObject.set(x, "gvnic", js.undefined)
+    
     inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
     
     inline def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
     
+    inline def setKubeletConfig(value: NodeKubeletConfig): Self = StObject.set(x, "kubeletConfig", value.asInstanceOf[js.Any])
+    
+    inline def setKubeletConfigUndefined: Self = StObject.set(x, "kubeletConfig", js.undefined)
+    
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setLinuxNodeConfig(value: LinuxNodeConfig): Self = StObject.set(x, "linuxNodeConfig", value.asInstanceOf[js.Any])
+    
+    inline def setLinuxNodeConfigUndefined: Self = StObject.set(x, "linuxNodeConfig", js.undefined)
     
     inline def setLocalSsdCount(value: Double): Self = StObject.set(x, "localSsdCount", value.asInstanceOf[js.Any])
     
@@ -168,7 +212,7 @@ object NodeConfig {
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig & TopLevel[Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
@@ -185,7 +229,7 @@ object NodeConfig {
     
     inline def setOauthScopesUndefined: Self = StObject.set(x, "oauthScopes", js.undefined)
     
-    inline def setOauthScopesVarargs(value: String*): Self = StObject.set(x, "oauthScopes", js.Array(value :_*))
+    inline def setOauthScopesVarargs(value: String*): Self = StObject.set(x, "oauthScopes", js.Array(value*))
     
     inline def setPreemptible(value: Boolean): Self = StObject.set(x, "preemptible", value.asInstanceOf[js.Any])
     
@@ -207,17 +251,21 @@ object NodeConfig {
     
     inline def setShieldedInstanceConfigUndefined: Self = StObject.set(x, "shieldedInstanceConfig", js.undefined)
     
+    inline def setSpot(value: Boolean): Self = StObject.set(x, "spot", value.asInstanceOf[js.Any])
+    
+    inline def setSpotUndefined: Self = StObject.set(x, "spot", js.undefined)
+    
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTaints(value: js.Array[NodeTaint]): Self = StObject.set(x, "taints", value.asInstanceOf[js.Any])
     
     inline def setTaintsUndefined: Self = StObject.set(x, "taints", js.undefined)
     
-    inline def setTaintsVarargs(value: NodeTaint*): Self = StObject.set(x, "taints", js.Array(value :_*))
+    inline def setTaintsVarargs(value: NodeTaint*): Self = StObject.set(x, "taints", js.Array(value*))
     
     inline def setWorkloadMetadataConfig(value: WorkloadMetadataConfig): Self = StObject.set(x, "workloadMetadataConfig", value.asInstanceOf[js.Any])
     

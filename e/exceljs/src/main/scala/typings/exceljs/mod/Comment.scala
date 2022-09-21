@@ -41,6 +41,6 @@ object Comment {
     
     inline def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
     
-    inline def setTextsVarargs(value: RichText*): Self = StObject.set(x, "texts", js.Array(value :_*))
+    inline def setTextsVarargs(value: RichText*): Self = StObject.set(x, "texts", js.Array(value*))
   }
 }

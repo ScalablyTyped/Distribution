@@ -11,9 +11,9 @@ Generate regular expressions that match a set of strings
 | Full name          | regexgen |
 | Keywords           | regex, trie, regular, expression |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 868327 |
-| # stars            | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 136491.0 |
+| # stars            | 3161.0 |
 
 ## Links
 - [Homepage](https://github.com/devongovett/regexgen#readme)

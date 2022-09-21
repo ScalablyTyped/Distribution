@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.LineFormat")
 @js.native
-/* private */ class LineFormat ()
+/* private */ open class LineFormat ()
   extends StObject
      with typings.activexWord.Word.LineFormat {
   
@@ -54,7 +54,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var InsetPen: MsoTriState = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Pattern: MsoPatternType = js.native

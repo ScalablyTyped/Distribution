@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__link
 
-Typings are for version 2.4.2
+Typings are for version 5.1.4
 
 ## Library description:
 The base package for including a theme for react-md. This is required by most other packages.
@@ -10,10 +10,10 @@ The base package for including a theme for react-md. This is required by most ot
 | ------------------ | :-------------: |
 | Full name          | @react-md/link |
 | Keywords           | accessibility, a11y, react-md, material design, react, link, component, components |
-| # releases         | 38 |
-| # dependents       | 2 |
-| # downloads        | 18187 |
-| # stars            | 0 |
+| # releases         | 43 |
+| # dependents       | 0.0 |
+| # downloads        | 5426.666666666667 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/link/demos)

@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/initializers", "RandomUniform")
 @js.native
-class RandomUniform protected () extends Initializer {
+open class RandomUniform protected () extends Initializer {
   def this(args: RandomUniformArgs) = this()
   
   val DEFAULT_MAXVAL: /* 0.05 */ Double = js.native
   
   val DEFAULT_MINVAL: /* -0.05 */ Double = js.native
   
-  /* private */ var maxval: js.Any = js.native
+  /* private */ var maxval: Any = js.native
   
-  /* private */ var minval: js.Any = js.native
+  /* private */ var minval: Any = js.native
   
-  /* private */ var seed: js.Any = js.native
+  /* private */ var seed: Any = js.native
 }
 /* static members */
 object RandomUniform {

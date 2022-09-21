@@ -15,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.plotlyJs.plotlyJsStrings.cone
   - typings.plotlyJs.plotlyJsStrings.contour
   - typings.plotlyJs.plotlyJsStrings.contourcarpet
-  - typings.plotlyJs.plotlyJsStrings.contourgl
   - typings.plotlyJs.plotlyJsStrings.densitymapbox
   - typings.plotlyJs.plotlyJsStrings.funnel
   - typings.plotlyJs.plotlyJsStrings.funnelarea
@@ -75,8 +74,6 @@ object PlotType {
   inline def contour: typings.plotlyJs.plotlyJsStrings.contour = "contour".asInstanceOf[typings.plotlyJs.plotlyJsStrings.contour]
   
   inline def contourcarpet: typings.plotlyJs.plotlyJsStrings.contourcarpet = "contourcarpet".asInstanceOf[typings.plotlyJs.plotlyJsStrings.contourcarpet]
-  
-  inline def contourgl: typings.plotlyJs.plotlyJsStrings.contourgl = "contourgl".asInstanceOf[typings.plotlyJs.plotlyJsStrings.contourgl]
   
   inline def densitymapbox: typings.plotlyJs.plotlyJsStrings.densitymapbox = "densitymapbox".asInstanceOf[typings.plotlyJs.plotlyJsStrings.densitymapbox]
   

@@ -11,10 +11,10 @@ trait axisOptions extends StObject {
   var autoscaleMargin: js.UndefOr[Double] = js.undefined
   
   // array of month names
-  var color: js.UndefOr[js.Any] = js.undefined
+  var color: js.UndefOr[Any] = js.undefined
   
   // null or color spec
-  var font: js.UndefOr[js.Any] = js.undefined
+  var font: js.UndefOr[Any] = js.undefined
   
   // null or fn: number -> number
   var inverseTransform: js.UndefOr[js.Function1[/* v */ Double, Double]] = js.undefined
@@ -29,7 +29,7 @@ trait axisOptions extends StObject {
   var min: js.UndefOr[Double] = js.undefined
   
   // number or array
-  var minTickSize: js.UndefOr[js.Any] = js.undefined
+  var minTickSize: js.UndefOr[Any] = js.undefined
   
   // "bottom" or "top" or "left" or "right"
   var mode: js.UndefOr[String] = js.undefined
@@ -45,7 +45,7 @@ trait axisOptions extends StObject {
   var show: js.UndefOr[Boolean] = js.undefined
   
   // null or color spec
-  var tickColor: js.UndefOr[js.Any] = js.undefined
+  var tickColor: js.UndefOr[Any] = js.undefined
   
   // (fn: number, object -> string) or string
   var tickDecimals: js.UndefOr[Double] = js.undefined
@@ -56,10 +56,10 @@ trait axisOptions extends StObject {
   var tickLength: js.UndefOr[Double] = js.undefined
   
   // null or number or ticks array or (fn: axis -> ticks array)
-  var tickSize: js.UndefOr[js.Any] = js.undefined
+  var tickSize: js.UndefOr[Any] = js.undefined
   
   // null or fn: number -> number
-  var ticks: js.UndefOr[js.Any] = js.undefined
+  var ticks: js.UndefOr[Any] = js.undefined
   
   // "browser" or timezone (only makes sense for mode: "time")
   var timeformat: js.UndefOr[String] = js.undefined
@@ -88,11 +88,11 @@ object axisOptions {
     
     inline def setAutoscaleMarginUndefined: Self = StObject.set(x, "autoscaleMargin", js.undefined)
     
-    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setFont(value: js.Any): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Any): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
@@ -114,7 +114,7 @@ object axisOptions {
     
     inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    inline def setMinTickSize(value: js.Any): Self = StObject.set(x, "minTickSize", value.asInstanceOf[js.Any])
+    inline def setMinTickSize(value: Any): Self = StObject.set(x, "minTickSize", value.asInstanceOf[js.Any])
     
     inline def setMinTickSizeUndefined: Self = StObject.set(x, "minTickSize", js.undefined)
     
@@ -128,7 +128,7 @@ object axisOptions {
     
     inline def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
     
-    inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+    inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value*))
     
     inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
@@ -142,7 +142,7 @@ object axisOptions {
     
     inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    inline def setTickColor(value: js.Any): Self = StObject.set(x, "tickColor", value.asInstanceOf[js.Any])
+    inline def setTickColor(value: Any): Self = StObject.set(x, "tickColor", value.asInstanceOf[js.Any])
     
     inline def setTickColorUndefined: Self = StObject.set(x, "tickColor", js.undefined)
     
@@ -158,11 +158,11 @@ object axisOptions {
     
     inline def setTickLengthUndefined: Self = StObject.set(x, "tickLength", js.undefined)
     
-    inline def setTickSize(value: js.Any): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
+    inline def setTickSize(value: Any): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
     
     inline def setTickSizeUndefined: Self = StObject.set(x, "tickSize", js.undefined)
     
-    inline def setTicks(value: js.Any): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: Any): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     

@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("@lumino/disposable", "DisposableDelegate")
   @js.native
-  class DisposableDelegate protected ()
+  open class DisposableDelegate protected ()
     extends StObject
        with IDisposable {
     /**
@@ -20,7 +20,7 @@ object mod {
       */
     def this(fn: js.Function0[Unit]) = this()
     
-    /* private */ var _fn: js.Any = js.native
+    /* private */ var _fn: Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -48,16 +48,13 @@ object mod {
   
   @JSImport("@lumino/disposable", "DisposableSet")
   @js.native
-  /**
-    * Construct a new disposable set.
-    */
-  class DisposableSet ()
+  open class DisposableSet ()
     extends StObject
        with IDisposable {
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _items: js.Any = js.native
+    /* private */ var _items: Any = js.native
     
     /**
       * Add a disposable item to the set.
@@ -134,7 +131,7 @@ object mod {
   
   @JSImport("@lumino/disposable", "ObservableDisposableDelegate")
   @js.native
-  class ObservableDisposableDelegate protected ()
+  open class ObservableDisposableDelegate protected ()
     extends DisposableDelegate
        with IObservableDisposable {
     /**
@@ -144,7 +141,7 @@ object mod {
       */
     def this(fn: js.Function0[Unit]) = this()
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -178,14 +175,11 @@ object mod {
   
   @JSImport("@lumino/disposable", "ObservableDisposableSet")
   @js.native
-  /**
-    * Construct a new disposable set.
-    */
-  class ObservableDisposableSet ()
+  open class ObservableDisposableSet ()
     extends DisposableSet
        with IObservableDisposable {
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
     /**
       * Dispose of the resources held by the object.

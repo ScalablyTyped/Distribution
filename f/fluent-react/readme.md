@@ -10,10 +10,10 @@ Fluent bindings for React
 | ------------------ | :-------------: |
 | Full name          | fluent-react |
 | Keywords           | localization, l10n, internationalization, i18n, ftl, plural, gender, locale, language, formatting, translate, translation, format, parser, react, reactjs |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 35621 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 725.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](http://projectfluent.org)

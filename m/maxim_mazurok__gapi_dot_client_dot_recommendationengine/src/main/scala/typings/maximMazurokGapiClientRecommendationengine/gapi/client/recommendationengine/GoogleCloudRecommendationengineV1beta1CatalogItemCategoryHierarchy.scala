@@ -25,6 +25,6 @@ object GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
   }
 }

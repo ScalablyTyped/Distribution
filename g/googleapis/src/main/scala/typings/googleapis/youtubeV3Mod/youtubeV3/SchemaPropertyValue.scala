@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A pair Property / Value.
-  */
 trait SchemaPropertyValue extends StObject {
   
   /**
     * A property.
     */
-  var property: js.UndefOr[String] = js.undefined
+  var property: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The property&#39;s value.
+    * The property's value.
     */
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPropertyValue {
   
@@ -30,9 +27,13 @@ object SchemaPropertyValue {
     
     inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
+    inline def setPropertyNull: Self = StObject.set(x, "property", null)
+    
     inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

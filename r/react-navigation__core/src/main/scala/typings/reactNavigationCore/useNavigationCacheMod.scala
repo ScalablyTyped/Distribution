@@ -1,8 +1,6 @@
 package typings.reactNavigationCore
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.reactNavigationCore.anon.NavigationHelpersParamLis
-import typings.reactNavigationCore.typesMod.EventMapBase
 import typings.reactNavigationCore.typesMod.NavigationProp
 import typings.reactNavigationCore.useEventEmitterMod.NavigationEventEmitter
 import typings.reactNavigationRouters.typesMod.NavigationAction
@@ -20,13 +18,16 @@ object useNavigationCacheMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */](hasStateGetStateNavigationSetOptionsRouterEmitter: Options[State]): NavigationCache[State, ScreenOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStateGetStateNavigationSetOptionsRouterEmitter.asInstanceOf[js.Any]).asInstanceOf[NavigationCache[State, ScreenOptions]]
+  inline def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: Record[String, Any] */](hasStateGetStateNavigationSetOptionsRouterEmitter: Options[State, EventMap]): NavigationCache[State, ScreenOptions, EventMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStateGetStateNavigationSetOptionsRouterEmitter.asInstanceOf[js.Any]).asInstanceOf[NavigationCache[State, ScreenOptions, EventMap]]
   
-  type NavigationCache[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */] = StringDictionary[NavigationProp[ParamListBase, String, State, ScreenOptions, js.Object]]
+  type NavigationCache[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: Record[String, Any] */] = Record[
+    String, 
+    NavigationProp[ParamListBase, String, js.UndefOr[String], State, ScreenOptions, EventMap]
+  ]
   
-  trait Options[State /* <: NavigationState[ParamListBase] */] extends StObject {
+  trait Options[State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, Any] */] extends StObject {
     
-    var emitter: NavigationEventEmitter[EventMapBase]
+    var emitter: NavigationEventEmitter[EventMap]
     
     def getState(): State
     
@@ -40,21 +41,21 @@ object useNavigationCacheMod {
   }
   object Options {
     
-    inline def apply[State /* <: NavigationState[ParamListBase] */](
-      emitter: NavigationEventEmitter[EventMapBase],
+    inline def apply[State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, Any] */](
+      emitter: NavigationEventEmitter[EventMap],
       getState: () => State,
       navigation: NavigationHelpersParamLis,
       router: Router[State, NavigationAction],
       setOptions: js.Function1[/* options */ Record[String, js.Object], Record[String, js.Object]] => Unit,
       state: State
-    ): Options[State] = {
+    ): Options[State, EventMap] = {
       val __obj = js.Dynamic.literal(emitter = emitter.asInstanceOf[js.Any], getState = js.Any.fromFunction0(getState), navigation = navigation.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any], setOptions = js.Any.fromFunction1(setOptions), state = state.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Options[State]]
+      __obj.asInstanceOf[Options[State, EventMap]]
     }
     
-    extension [Self <: Options[?], State /* <: NavigationState[ParamListBase] */](x: Self & Options[State]) {
+    extension [Self <: Options[?, ?], State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, Any] */](x: Self & (Options[State, EventMap])) {
       
-      inline def setEmitter(value: NavigationEventEmitter[EventMapBase]): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
+      inline def setEmitter(value: NavigationEventEmitter[EventMap]): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
       
       inline def setGetState(value: () => State): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       

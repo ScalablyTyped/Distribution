@@ -36,11 +36,11 @@ object FieldRuleModel {
     
     inline def setActions(value: js.Array[RuleActionModel]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: RuleActionModel*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: RuleActionModel*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setConditions(value: js.Array[RuleConditionModel]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    inline def setConditionsVarargs(value: RuleConditionModel*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: RuleConditionModel*): Self = StObject.set(x, "conditions", js.Array(value*))
     
     inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     

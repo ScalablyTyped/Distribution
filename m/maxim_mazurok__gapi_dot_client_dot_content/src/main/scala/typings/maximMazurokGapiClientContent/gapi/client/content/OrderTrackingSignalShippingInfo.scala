@@ -30,13 +30,13 @@ trait OrderTrackingSignalShippingInfo extends StObject {
   /** The latest delivery promised time. Include the year and timezone string, if available. This field is required, if one of the following fields is absent: tracking_id or carrier_name. */
   var latestDeliveryPromiseTime: js.UndefOr[DateTime] = js.undefined
   
-  /** The origin postal code, as a continuous string without spaces or dashes, e.g. "95016". */
+  /** The origin postal code, as a continuous string without spaces or dashes, e.g. "95016". This field will be anonymized in returned OrderTrackingSignal creation response. */
   var originPostalCode: js.UndefOr[String] = js.undefined
   
   /** The [CLDR territory code] (http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml) for the shipping origin. */
   var originRegionCode: js.UndefOr[String] = js.undefined
   
-  /** Required. The shipment ID. */
+  /** Required. The shipment ID. This field will be hashed in returned OrderTrackingSignal creation response. */
   var shipmentId: js.UndefOr[String] = js.undefined
   
   /** The time when the shipment was shipped. Include the year and timezone string, if available. */

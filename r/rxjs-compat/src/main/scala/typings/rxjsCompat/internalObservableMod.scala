@@ -70,7 +70,6 @@ import typings.rxjsCompat.anon.FnCallThisValue
 import typings.rxjsCompat.anon.FnCallThisWindowBoundaries
 import typings.rxjsCompat.anon.FnCallThisWindowSizeStartWindowEvery
 import typings.rxjsCompat.anon.FnCallThisWindowTimeSpanWindowCreationIntervalMaxWindowSizeScheduler
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,50 +80,50 @@ object internalObservableMod {
     
     def _catch[T, R](
       selector: js.Function2[
-          /* err */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* caught */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+          /* err */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* caught */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
         ]
-    ): js.Any
+    ): Any
     @JSName("_catch")
     var _catch_Original: FnCallThisSelector
     
-    def _do[T](next: js.Function1[/* x */ T, Unit]): js.Any
-    def _do[T](next: js.Function1[/* x */ T, Unit], error: js.Function1[/* e */ js.Any, Unit]): js.Any
+    def _do[T](next: js.Function1[/* x */ T, Unit]): Any
+    def _do[T](next: js.Function1[/* x */ T, Unit], error: js.Function1[/* e */ Any, Unit]): Any
     def _do[T](
       next: js.Function1[/* x */ T, Unit],
-      error: js.Function1[/* e */ js.Any, Unit],
+      error: js.Function1[/* e */ Any, Unit],
       complete: js.Function0[Unit]
-    ): js.Any
-    def _do[T](next: js.Function1[/* x */ T, Unit], error: Unit, complete: js.Function0[Unit]): js.Any
+    ): Any
+    def _do[T](next: js.Function1[/* x */ T, Unit], error: Unit, complete: js.Function0[Unit]): Any
     def _do[T](
-      observer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialObserver<T> */ js.Any
-    ): js.Any
+      observer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialObserver<T> */ Any
+    ): Any
     @JSName("_do")
     var _do_Original: FnCallThisNextErrorComplete
     
-    def _finally[T](callback: js.Function0[Unit]): js.Any
+    def _finally[T](callback: js.Function0[Unit]): Any
     @JSName("_finally")
     var _finally_Original: FnCallThisCallback
     
-    def _switch[T](): js.Any
+    def _switch[T](): Any
     @JSName("_switch")
     var _switch_Original: FnCallThis
     @JSName("_switch")
-    def _switch_TR[T, R](): js.Any
+    def _switch_TR[T, R](): Any
     
     def audit[T](
       durationSelector: js.Function1[
           /* value */ T, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ Any
         ]
-    ): js.Any
+    ): Any
     
-    def auditTime[T](duration: Double): js.Any
+    def auditTime[T](duration: Double): Any
     def auditTime[T](
       duration: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     @JSName("auditTime")
     var auditTime_Original: FnCallThisDurationScheduler
     
@@ -132,74 +131,74 @@ object internalObservableMod {
     var audit_Original: FnCall
     
     def buffer[T](
-      closingNotifier: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
-    ): js.Any
+      closingNotifier: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
+    ): Any
     
-    def bufferCount[T](bufferSize: Double): js.Any
-    def bufferCount[T](bufferSize: Double, startBufferEvery: Double): js.Any
+    def bufferCount[T](bufferSize: Double): Any
+    def bufferCount[T](bufferSize: Double, startBufferEvery: Double): Any
     @JSName("bufferCount")
     var bufferCount_Original: FnCallThisBufferSizeStartBufferEvery
     
-    def bufferTime[T](bufferTimeSpan: Double): js.Any
-    def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double): js.Any
-    def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double, maxBufferSize: Double): js.Any
+    def bufferTime[T](bufferTimeSpan: Double): Any
+    def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double): Any
+    def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double, maxBufferSize: Double): Any
     def bufferTime[T](
       bufferTimeSpan: Double,
       bufferCreationInterval: Double,
       maxBufferSize: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def bufferTime[T](
       bufferTimeSpan: Double,
       bufferCreationInterval: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
-    def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Null, maxBufferSize: Double): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
+    def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Null, maxBufferSize: Double): Any
     def bufferTime[T](
       bufferTimeSpan: Double,
       bufferCreationInterval: Null,
       maxBufferSize: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def bufferTime[T](
       bufferTimeSpan: Double,
       bufferCreationInterval: Null,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
-    def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Unit, maxBufferSize: Double): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
+    def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Unit, maxBufferSize: Double): Any
     def bufferTime[T](
       bufferTimeSpan: Double,
       bufferCreationInterval: Unit,
       maxBufferSize: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def bufferTime[T](
       bufferTimeSpan: Double,
       bufferCreationInterval: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def bufferTime[T](
       bufferTimeSpan: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     @JSName("bufferTime")
     var bufferTime_Original: FnCallThisBufferTimeSpanBufferCreationIntervalMaxBufferSizeScheduler
     
     def bufferToggle[T, O](
-      openings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<O> */ js.Any,
+      openings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<O> */ Any,
       closingSelector: js.Function1[
           /* openValue */ O, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
         ]
-    ): js.Any
+    ): Any
     @JSName("bufferToggle")
     var bufferToggle_Original: FnCallThisOpeningsClosingSelector
     
     def bufferWhen[T](
       closingSelector: js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
         ]
-    ): js.Any
+    ): Any
     @JSName("bufferWhen")
     var bufferWhen_Original: FnCallThisClosingSelector
     
@@ -208,151 +207,151 @@ object internalObservableMod {
     
     def `catch`[T, R](
       selector: js.Function2[
-          /* err */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* caught */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+          /* err */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* caught */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
         ]
-    ): js.Any
+    ): Any
     @JSName("catch")
     var catch_Original: FnCallThisSelector
     
-    def combineAll[T](): js.Any
-    def combineAll[R](project: js.Function1[/* repeated */ js.Any, R]): js.Any
+    def combineAll[T](): Any
+    def combineAll[R](project: js.Function1[/* repeated */ Any, R]): Any
     @JSName("combineAll")
     var combineAll_Original: FnCallThisProject
     @JSName("combineAll")
-    def combineAll_TR[T, R](): js.Any
+    def combineAll_TR[T, R](): Any
     @JSName("combineAll")
-    def combineAll_TR[T, R](project: js.Function1[/* repeated */ T, R]): js.Any
+    def combineAll_TR[T, R](project: js.Function1[/* repeated */ T, R]): Any
     
     def combineLatest[T, R](
       array: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any
         ]
-    ): js.Any
+    ): Any
     def combineLatest[T, R](
-      observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any) | (js.Function1[/* repeated */ T, R]))*
-    ): js.Any
-    def combineLatest[T, R](project: js.Function1[/* v1 */ T, R]): js.Any
+      observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any) | (js.Function1[/* repeated */ T, R]))*
+    ): Any
+    def combineLatest[T, R](project: js.Function1[/* v1 */ T, R]): Any
     def combineLatest[T, T2](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any
+    ): Any
     def combineLatest[T, TOther, R](
       array: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<TOther> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<TOther> */ Any
         ],
       project: js.Function2[/* v1 */ T, /* repeated */ TOther, R]
-    ): js.Any
+    ): Any
     def combineLatest[T, T2, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
       project: js.Function2[/* v1 */ T, /* v2 */ T2, R]
-    ): js.Any
+    ): Any
     def combineLatest[T, T2, T3](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any
+    ): Any
     def combineLatest[T, T2, T3, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
       project: js.Function3[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, R]
-    ): js.Any
+    ): Any
     def combineLatest[T, T2, T3, T4](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any
+    ): Any
     def combineLatest[T, T2, T3, T4, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
       project: js.Function4[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, R]
-    ): js.Any
+    ): Any
     def combineLatest[T, T2, T3, T4, T5](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any
+    ): Any
     def combineLatest[T, T2, T3, T4, T5, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
       project: js.Function5[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, /* v5 */ T5, R]
-    ): js.Any
+    ): Any
     def combineLatest[T, T2, T3, T4, T5, T6](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any
+    ): Any
     def combineLatest[T, T2, T3, T4, T5, T6, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any,
       project: js.Function6[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, /* v5 */ T5, /* v6 */ T6, R]
-    ): js.Any
+    ): Any
     @JSName("combineLatest")
     var combineLatest_Original: FnCallThisV2V3V4V5V6Project
     
-    def concat[T](): js.Any
+    def concat[T](): Any
     def concat[T](
-      observables: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any)*
-    ): js.Any
+      observables: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any)*
+    ): Any
     def concat[T](
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def concat[T, T2](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def concat[T, T2, T3](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def concat[T, T2, T3, T4](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def concat[T, T2, T3, T4, T5](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def concat[T, T2, T3, T4, T5, T6](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     
-    def concatAll[T](): js.Any
+    def concatAll[T](): Any
     @JSName("concatAll")
     var concatAll_Original: FnCallThis
     @JSName("concatAll")
-    def concatAll_TR[T, R](): js.Any
+    def concatAll_TR[T, R](): Any
     
     def concatMap[T, R](
       project: js.Function2[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
         ]
-    ): js.Any
+    ): Any
     
     def concatMapTo[T, R](
-      innerObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
-    ): js.Any
+      innerObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
+    ): Any
     @JSName("concatMapTo")
     var concatMapTo_Original: FnCallThisInnerObservable
     
@@ -363,130 +362,130 @@ object internalObservableMod {
     var concat_Original: FnCallThisV2V3V4V5V6Scheduler
     @JSName("concat")
     def concat_TR[T, R](
-      observables: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ js.Any)*
-    ): js.Any
+      observables: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ Any)*
+    ): Any
     @JSName("concat")
     def concat_TT2[T, T2](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any
+    ): Any
     @JSName("concat")
     def concat_TT2T3[T, T2, T3](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any
+    ): Any
     @JSName("concat")
     def concat_TT2T3T4[T, T2, T3, T4](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any
+    ): Any
     @JSName("concat")
     def concat_TT2T3T4T5[T, T2, T3, T4, T5](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any
+    ): Any
     @JSName("concat")
     def concat_TT2T3T4T5T6[T, T2, T3, T4, T5, T6](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any
+    ): Any
     
-    def count[T](): js.Any
+    def count[T](): Any
     def count[T](
       predicate: js.Function3[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
           Boolean
         ]
-    ): js.Any
+    ): Any
     @JSName("count")
     var count_Original: FnCallThisPredicate
     
     def debounce[T](
       durationSelector: js.Function1[
           /* value */ T, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ Any
         ]
-    ): js.Any
+    ): Any
     
-    def debounceTime[T](dueTime: Double): js.Any
+    def debounceTime[T](dueTime: Double): Any
     def debounceTime[T](
       dueTime: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     @JSName("debounceTime")
     var debounceTime_Original: FnCallThisDueTimeScheduler
     
     @JSName("debounce")
     var debounce_Original: FnCall
     
-    def defaultIfEmpty[T](): js.Any
-    def defaultIfEmpty[T](defaultValue: T): js.Any
+    def defaultIfEmpty[T](): Any
+    def defaultIfEmpty[T](defaultValue: T): Any
     @JSName("defaultIfEmpty")
     var defaultIfEmpty_Original: FnCallThisDefaultValue
     @JSName("defaultIfEmpty")
-    def defaultIfEmpty_TR[T, R](): js.Any
+    def defaultIfEmpty_TR[T, R](): Any
     @JSName("defaultIfEmpty")
-    def defaultIfEmpty_TR[T, R](defaultValue: R): js.Any
+    def defaultIfEmpty_TR[T, R](defaultValue: R): Any
     
-    def delay[T](delay: Double): js.Any
+    def delay[T](delay: js.Date): Any
+    def delay[T](
+      delay: js.Date,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
+    def delay[T](delay: Double): Any
     def delay[T](
       delay: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
-    def delay[T](delay: Date): js.Any
-    def delay[T](
-      delay: Date,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     
     def delayWhen[T](
       delayDurationSelector: js.Function1[
           /* value */ T, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
         ]
-    ): js.Any
+    ): Any
     def delayWhen[T](
       delayDurationSelector: js.Function1[
           /* value */ T, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
         ],
-      subscriptionDelay: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
-    ): js.Any
+      subscriptionDelay: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
+    ): Any
     @JSName("delayWhen")
     var delayWhen_Original: FnCallThisDelayDurationSelectorSubscriptionDelay
     
     @JSName("delay")
     var delay_Original: FnCallThisDelayScheduler
     
-    def dematerialize[T](): js.Any
+    def dematerialize[T](): Any
     @JSName("dematerialize")
     var dematerialize_Original: Fn1
     
-    def distinct[T, K](): js.Any
-    def distinct[T, K](keySelector: js.Function1[/* value */ T, K]): js.Any
+    def distinct[T, K](): Any
+    def distinct[T, K](keySelector: js.Function1[/* value */ T, K]): Any
     def distinct[T, K](
       keySelector: js.Function1[/* value */ T, K],
-      flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
-    ): js.Any
+      flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
+    ): Any
     def distinct[T, K](
       keySelector: Unit,
-      flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
-    ): js.Any
+      flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
+    ): Any
     
-    def distinctUntilChanged[T](): js.Any
-    def distinctUntilChanged[T](compare: js.Function2[/* x */ T, /* y */ T, Boolean]): js.Any
-    def distinctUntilChanged[T, K](compare: js.Function2[/* x */ K, /* y */ K, Boolean], keySelector: js.Function1[/* x */ T, K]): js.Any
+    def distinctUntilChanged[T](): Any
+    def distinctUntilChanged[T](compare: js.Function2[/* x */ T, /* y */ T, Boolean]): Any
+    def distinctUntilChanged[T, K](compare: js.Function2[/* x */ K, /* y */ K, Boolean], keySelector: js.Function1[/* x */ T, K]): Any
     @JSName("distinctUntilChanged")
     var distinctUntilChanged_Original: FnCallThisCompareKeySelector
     
-    def distinctUntilKeyChanged[T](key: /* keyof T */ String): js.Any
+    def distinctUntilKeyChanged[T](key: /* keyof T */ String): Any
     def distinctUntilKeyChanged[T, K /* <: /* keyof T */ String */](
       key: K,
       compare: js.Function2[
@@ -494,29 +493,29 @@ object internalObservableMod {
           /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ /* y */ js.Any, 
           Boolean
         ]
-    ): js.Any
+    ): Any
     @JSName("distinctUntilKeyChanged")
     var distinctUntilKeyChanged_Original: FnCallThisKeyCompare
     
     @JSName("distinct")
     var distinct_Original: FnCallThisKeySelectorFlushes
     
-    def `do`[T](next: js.Function1[/* x */ T, Unit]): js.Any
-    def `do`[T](next: js.Function1[/* x */ T, Unit], error: js.Function1[/* e */ js.Any, Unit]): js.Any
+    def `do`[T](next: js.Function1[/* x */ T, Unit]): Any
+    def `do`[T](next: js.Function1[/* x */ T, Unit], error: js.Function1[/* e */ Any, Unit]): Any
     def `do`[T](
       next: js.Function1[/* x */ T, Unit],
-      error: js.Function1[/* e */ js.Any, Unit],
+      error: js.Function1[/* e */ Any, Unit],
       complete: js.Function0[Unit]
-    ): js.Any
-    def `do`[T](next: js.Function1[/* x */ T, Unit], error: Unit, complete: js.Function0[Unit]): js.Any
+    ): Any
+    def `do`[T](next: js.Function1[/* x */ T, Unit], error: Unit, complete: js.Function0[Unit]): Any
     def `do`[T](
-      observer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialObserver<T> */ js.Any
-    ): js.Any
+      observer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialObserver<T> */ Any
+    ): Any
     @JSName("do")
     var do_Original: FnCallThisNextErrorComplete
     
-    def elementAt[T](index: Double): js.Any
-    def elementAt[T](index: Double, defaultValue: T): js.Any
+    def elementAt[T](index: Double): Any
+    def elementAt[T](index: Double, defaultValue: T): Any
     @JSName("elementAt")
     var elementAt_Original: FnCallThisIndexDefaultValue
     
@@ -524,72 +523,72 @@ object internalObservableMod {
       predicate: js.Function3[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
           Boolean
         ]
-    ): js.Any
+    ): Any
     def every[T](
       predicate: js.Function3[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
           Boolean
         ],
-      thisArg: js.Any
-    ): js.Any
+      thisArg: Any
+    ): Any
     @JSName("every")
     var every_Original: FnCallThisPredicateThisArg
     
-    def exhaust[T](): js.Any
+    def exhaust[T](): Any
     
     def exhaustMap[T, R](
       project: js.Function2[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
         ]
-    ): js.Any
+    ): Any
     @JSName("exhaustMap")
     var exhaustMap_Original: Fn0
     
     @JSName("exhaust")
     var exhaust_Original: FnCallThis
     @JSName("exhaust")
-    def exhaust_TR[T, R](): js.Any
+    def exhaust_TR[T, R](): Any
     
     def expand[T](
       project: js.Function2[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any
         ]
-    ): js.Any
+    ): Any
     def expand[T](
       project: js.Function2[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any
         ],
       concurrent: Double
-    ): js.Any
+    ): Any
     def expand[T](
       project: js.Function2[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any
         ],
       concurrent: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def expand[T](
       project: js.Function2[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any
         ],
       concurrent: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     @JSName("expand")
     var expand_Original: FnCallThisProjectConcurrentScheduler
     @JSName("expand")
@@ -597,102 +596,102 @@ object internalObservableMod {
       project: js.Function2[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
         ]
-    ): js.Any
+    ): Any
     @JSName("expand")
     def expand_TR[T, R](
       project: js.Function2[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
         ],
       concurrent: Double
-    ): js.Any
+    ): Any
     @JSName("expand")
     def expand_TR[T, R](
       project: js.Function2[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
         ],
       concurrent: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     @JSName("expand")
     def expand_TR[T, R](
       project: js.Function2[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
         ],
       concurrent: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     
-    def filter[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.Any
-    def filter[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean], thisArg: js.Any): js.Any
+    def filter[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): Any
+    def filter[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean], thisArg: Any): Any
     @JSName("filter")
     var filter_Original: Fn2
     @JSName("filter")
-    def filter_TS_T[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean]): js.Any
+    def filter_TS_T[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean]): Any
     @JSName("filter")
-    def filter_TS_T[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean], thisArg: js.Any): js.Any
+    def filter_TS_T[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean], thisArg: Any): Any
     
-    def `finally`[T](callback: js.Function0[Unit]): js.Any
+    def `finally`[T](callback: js.Function0[Unit]): Any
     @JSName("finally")
     var finally_Original: FnCallThisCallback
     
-    def find[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.Any
-    def find[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean], thisArg: js.Any): js.Any
+    def find[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): Any
+    def find[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean], thisArg: Any): Any
     
     def findIndex[T](
       predicate: js.Function3[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
           Boolean
         ]
-    ): js.Any
+    ): Any
     def findIndex[T](
       predicate: js.Function3[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
           Boolean
         ],
-      thisArg: js.Any
-    ): js.Any
+      thisArg: Any
+    ): Any
     @JSName("findIndex")
     var findIndex_Original: FnCallThisPredicateThisArg
     
     @JSName("find")
     var find_Original: Fn2
     @JSName("find")
-    def find_TS_T[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean]): js.Any
+    def find_TS_T[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean]): Any
     @JSName("find")
-    def find_TS_T[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean], thisArg: js.Any): js.Any
+    def find_TS_T[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean], thisArg: Any): Any
     
-    def first[T, D](): js.Any
+    def first[T, D](): Any
     def first[T, S /* <: T */](
       predicate: js.Function3[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
           /* is S */ Boolean
         ]
-    ): js.Any
+    ): Any
     def first[T, S /* <: T */](
       predicate: js.Function3[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
           /* is S */ Boolean
         ],
       defaultValue: S
-    ): js.Any
-    def first[T, D](predicate: Null, defaultValue: D): js.Any
-    def first[T, D](predicate: Unit, defaultValue: D): js.Any
+    ): Any
+    def first[T, D](predicate: Null, defaultValue: D): Any
+    def first[T, D](predicate: Unit, defaultValue: D): Any
     @JSName("first")
     var first_Original: FnCallThisPredicateDefaultValue
     @JSName("first")
@@ -700,151 +699,151 @@ object internalObservableMod {
       predicate: js.Function3[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
           Boolean
         ]
-    ): js.Any
+    ): Any
     @JSName("first")
     def first_TD[T, D](
       predicate: js.Function3[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
           Boolean
         ],
       defaultValue: D
-    ): js.Any
+    ): Any
     
     def flatMap[T, R](
       project: js.Function2[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
         ]
-    ): js.Any
+    ): Any
     def flatMap[T, R](
       project: js.Function2[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
         ],
       concurrent: Double
-    ): js.Any
+    ): Any
     
     def flatMapTo[T, R](
-      innerObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
-    ): js.Any
+      innerObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
+    ): Any
     def flatMapTo[T, R](
-      innerObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any,
+      innerObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any,
       concurrent: Double
-    ): js.Any
+    ): Any
     @JSName("flatMapTo")
     var flatMapTo_Original: FnCallThisInnerObservableConcurrent
     
     @JSName("flatMap")
     var flatMap_Original: FnCallThisProjectConcurrent
     
-    def groupBy[T, K](keySelector: js.Function1[/* value */ T, K]): js.Any
+    def groupBy[T, K](keySelector: js.Function1[/* value */ T, K]): Any
     def groupBy[T, K](
       keySelector: js.Function1[/* value */ T, K],
       elementSelector: Unit,
       durationSelector: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupedObservable<K, T> */ /* grouped */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupedObservable<K, T> */ /* grouped */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
         ]
-    ): js.Any
-    def groupBy[T, K, R](keySelector: js.Function1[/* value */ T, K], elementSelector: js.Function1[/* value */ T, R]): js.Any
+    ): Any
+    def groupBy[T, K, R](keySelector: js.Function1[/* value */ T, K], elementSelector: js.Function1[/* value */ T, R]): Any
     def groupBy[T, K, R](
       keySelector: js.Function1[/* value */ T, K],
       elementSelector: js.Function1[/* value */ T, R],
       durationSelector: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupedObservable<K, R> */ /* grouped */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupedObservable<K, R> */ /* grouped */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
         ]
-    ): js.Any
+    ): Any
     def groupBy[T, K, R](
       keySelector: js.Function1[/* value */ T, K],
       elementSelector: js.Function1[/* value */ T, R],
       durationSelector: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupedObservable<K, R> */ /* grouped */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupedObservable<K, R> */ /* grouped */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
         ],
       subjectSelector: js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ Any
         ]
-    ): js.Any
+    ): Any
     def groupBy[T, K, R](
       keySelector: js.Function1[/* value */ T, K],
       elementSelector: js.Function1[/* value */ T, R],
       durationSelector: Unit,
       subjectSelector: js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ Any
         ]
-    ): js.Any
+    ): Any
     def groupBy[T, K, R](
       keySelector: js.Function1[/* value */ T, K],
       elementSelector: Unit,
       durationSelector: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupedObservable<K, R> */ /* grouped */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupedObservable<K, R> */ /* grouped */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
         ],
       subjectSelector: js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ Any
         ]
-    ): js.Any
+    ): Any
     def groupBy[T, K, R](
       keySelector: js.Function1[/* value */ T, K],
       elementSelector: Unit,
       durationSelector: Unit,
       subjectSelector: js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ Any
         ]
-    ): js.Any
+    ): Any
     @JSName("groupBy")
     var groupBy_Original: FnCallThisKeySelectorElementSelectorDurationSelectorSubjectSelector
     @JSName("groupBy")
-    def groupBy_TKR[T, K, R](keySelector: js.Function1[/* value */ T, K]): js.Any
+    def groupBy_TKR[T, K, R](keySelector: js.Function1[/* value */ T, K]): Any
     @JSName("groupBy")
     def groupBy_TKR[T, K, R](
       keySelector: js.Function1[/* value */ T, K],
       elementSelector: Unit,
       durationSelector: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupedObservable<K, R> */ /* grouped */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupedObservable<K, R> */ /* grouped */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
         ]
-    ): js.Any
+    ): Any
     
-    def ignoreElements(): js.Any
+    def ignoreElements(): Any
     @JSName("ignoreElements")
     var ignoreElements_Original: js.ThisFunction0[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* this */ js.Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<never> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* this */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<never> */ Any
       ]
     
-    def isEmpty[T](): js.Any
+    def isEmpty[T](): Any
     @JSName("isEmpty")
     var isEmpty_Original: Fn1
     
-    def last[T, D](): js.Any
+    def last[T, D](): Any
     def last[T, S /* <: T */](
       predicate: js.Function3[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
           /* is S */ Boolean
         ]
-    ): js.Any
+    ): Any
     def last[T, S /* <: T */](
       predicate: js.Function3[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
           /* is S */ Boolean
         ],
       defaultValue: S
-    ): js.Any
-    def last[T, D](predicate: Null, defaultValue: D): js.Any
-    def last[T, D](predicate: Unit, defaultValue: D): js.Any
+    ): Any
+    def last[T, D](predicate: Null, defaultValue: D): Any
+    def last[T, D](predicate: Unit, defaultValue: D): Any
     @JSName("last")
     var last_Original: FnCallThisPredicateDefaultValue
     @JSName("last")
@@ -852,238 +851,238 @@ object internalObservableMod {
       predicate: js.Function3[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
           Boolean
         ]
-    ): js.Any
+    ): Any
     @JSName("last")
     def last_TD[T, D](
       predicate: js.Function3[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
           Boolean
         ],
       defaultValue: D
-    ): js.Any
+    ): Any
     
     def let[T, R](
       func: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* selector */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* selector */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
         ]
-    ): js.Any
+    ): Any
     
     def letBind[T, R](
       func: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* selector */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* selector */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
         ]
-    ): js.Any
+    ): Any
     @JSName("letBind")
     var letBind_Original: FnCallThisFunc
     
     @JSName("let")
     var let_Original: FnCallThisFunc
     
-    def map[T, R](project: js.Function2[/* value */ T, /* index */ Double, R]): js.Any
-    def map[T, R](project: js.Function2[/* value */ T, /* index */ Double, R], thisArg: js.Any): js.Any
+    def map[T, R](project: js.Function2[/* value */ T, /* index */ Double, R]): Any
+    def map[T, R](project: js.Function2[/* value */ T, /* index */ Double, R], thisArg: Any): Any
     
-    def mapTo[T, R](value: R): js.Any
+    def mapTo[T, R](value: R): Any
     @JSName("mapTo")
     var mapTo_Original: FnCallThisValue
     
     @JSName("map")
     var map_Original: FnCallThisProjectThisArg
     
-    def materialize[T](): js.Any
+    def materialize[T](): Any
     @JSName("materialize")
     var materialize_Original: Fn1
     
-    def max[T](): js.Any
-    def max[T](comparer: js.Function2[/* x */ T, /* y */ T, Double]): js.Any
+    def max[T](): Any
+    def max[T](comparer: js.Function2[/* x */ T, /* y */ T, Double]): Any
     @JSName("max")
     var max_Original: FnCallThisComparer
     
-    def merge[T](): js.Any
-    def merge[T](concurrent: Double): js.Any
+    def merge[T](): Any
+    def merge[T](concurrent: Double): Any
     def merge[T](
       concurrent: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T](
       concurrent: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T](
-      observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any) | Double)*
-    ): js.Any
+      observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any) | Double)*
+    ): Any
     def merge[T](
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T, T2](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
       concurrent: Double
-    ): js.Any
+    ): Any
     def merge[T, T2](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
       concurrent: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T, T2](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
       concurrent: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T, T2](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T, T2, T3](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
       concurrent: Double
-    ): js.Any
+    ): Any
     def merge[T, T2, T3](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
       concurrent: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T, T2, T3](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
       concurrent: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T, T2, T3](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T, T2, T3, T4](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
       concurrent: Double
-    ): js.Any
+    ): Any
     def merge[T, T2, T3, T4](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
       concurrent: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T, T2, T3, T4](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
       concurrent: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T, T2, T3, T4](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T, T2, T3, T4, T5](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
       concurrent: Double
-    ): js.Any
+    ): Any
     def merge[T, T2, T3, T4, T5](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
       concurrent: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T, T2, T3, T4, T5](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
       concurrent: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T, T2, T3, T4, T5](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T, T2, T3, T4, T5, T6](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any,
       concurrent: Double
-    ): js.Any
+    ): Any
     def merge[T, T2, T3, T4, T5, T6](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any,
       concurrent: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T, T2, T3, T4, T5, T6](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any,
       concurrent: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def merge[T, T2, T3, T4, T5, T6](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     
-    def mergeAll[T](): js.Any
-    def mergeAll[T](concurrent: Double): js.Any
+    def mergeAll[T](): Any
+    def mergeAll[T](concurrent: Double): Any
     @JSName("mergeAll")
     var mergeAll_Original: FnCallThisConcurrent
     @JSName("mergeAll")
-    def mergeAll_TR[T, R](): js.Any
+    def mergeAll_TR[T, R](): Any
     @JSName("mergeAll")
-    def mergeAll_TR[T, R](concurrent: Double): js.Any
+    def mergeAll_TR[T, R](concurrent: Double): Any
     
     def mergeMap[T, R](
       project: js.Function2[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
         ]
-    ): js.Any
+    ): Any
     def mergeMap[T, R](
       project: js.Function2[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
         ],
       concurrent: Double
-    ): js.Any
+    ): Any
     
     def mergeMapTo[T, R](
-      innerObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
-    ): js.Any
+      innerObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
+    ): Any
     def mergeMapTo[T, R](
-      innerObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any,
+      innerObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any,
       concurrent: Double
-    ): js.Any
+    ): Any
     @JSName("mergeMapTo")
     var mergeMapTo_Original: FnCallThisInnerObservableConcurrent
     
@@ -1094,19 +1093,19 @@ object internalObservableMod {
       accumulator: js.Function2[
           /* acc */ R, 
           /* value */ T, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
         ],
       seed: R
-    ): js.Any
+    ): Any
     def mergeScan[T, R](
       accumulator: js.Function2[
           /* acc */ R, 
           /* value */ T, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
         ],
       seed: R,
       concurrent: Double
-    ): js.Any
+    ): Any
     @JSName("mergeScan")
     var mergeScan_Original: FnCallThisAccumulatorSeedConcurrent
     
@@ -1114,339 +1113,339 @@ object internalObservableMod {
     var merge_Original: FnCallThisV2V3V4V5V6ConcurrentScheduler
     @JSName("merge")
     def merge_TR[T, R](
-      observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ js.Any) | Double)*
-    ): js.Any
+      observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ Any) | Double)*
+    ): Any
     @JSName("merge")
     def merge_TT2[T, T2](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any
+    ): Any
     @JSName("merge")
     def merge_TT2T3[T, T2, T3](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any
+    ): Any
     @JSName("merge")
     def merge_TT2T3T4[T, T2, T3, T4](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any
+    ): Any
     @JSName("merge")
     def merge_TT2T3T4T5[T, T2, T3, T4, T5](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any
+    ): Any
     @JSName("merge")
     def merge_TT2T3T4T5T6[T, T2, T3, T4, T5, T6](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any
+    ): Any
     
-    def min[T](): js.Any
-    def min[T](comparer: js.Function2[/* x */ T, /* y */ T, Double]): js.Any
+    def min[T](): Any
+    def min[T](comparer: js.Function2[/* x */ T, /* y */ T, Double]): Any
     @JSName("min")
     var min_Original: FnCallThisComparer
     
     def multicast[T](
       SubjectFactory: js.ThisFunction0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ Any
         ]
-    ): js.Any
+    ): Any
     def multicast[T](
       SubjectFactory: js.ThisFunction0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ Any
         ],
-      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ js.Any
-    ): js.Any
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ Any
+    ): Any
     def multicast[T](
-      subjectOrSubjectFactory: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FactoryOrValue<Subject<T>> */ js.Any
-    ): js.Any
+      subjectOrSubjectFactory: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FactoryOrValue<Subject<T>> */ Any
+    ): Any
     @JSName("multicast")
     var multicast_Original: FnCallSubjectFactorySelector
     @JSName("multicast")
     def multicast_TR[T, R](
       SubjectFactory: js.ThisFunction0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ Any
         ]
-    ): js.Any
+    ): Any
     @JSName("multicast")
     def multicast_TR[T, R](
       SubjectFactory: js.ThisFunction0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ Any
         ],
-      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ js.Any
-    ): js.Any
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ Any
+    ): Any
     
     def observeOn[T](
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def observeOn[T](
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any,
       delay: Double
-    ): js.Any
+    ): Any
     @JSName("observeOn")
     var observeOn_Original: FnCallThisSchedulerDelay
     
-    def onErrorResumeNext[T](): js.Any
+    def onErrorResumeNext[T](): Any
     def onErrorResumeNext[T, R](
       array: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ Any
         ]
-    ): js.Any
+    ): Any
     def onErrorResumeNext[T, R](
-      observables: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ js.Any)*
-    ): js.Any
+      observables: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ Any)*
+    ): Any
     def onErrorResumeNext[T, R](
-      v: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
-    ): js.Any
+      v: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
+    ): Any
     def onErrorResumeNext[T, T2, T3, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any
+    ): Any
     def onErrorResumeNext[T, T2, T3, T4, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any
+    ): Any
     def onErrorResumeNext[T, T2, T3, T4, T5, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any
+    ): Any
     def onErrorResumeNext[T, T2, T3, T4, T5, T6, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any
+    ): Any
     @JSName("onErrorResumeNext")
     var onErrorResumeNext_Original: FnCallThisV2V3V4V5V6
     @JSName("onErrorResumeNext")
     def onErrorResumeNext_TT2R[T, T2, R](
-      v: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any
-    ): js.Any
+      v: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any
+    ): Any
     
-    def pairwise[T](): js.Any
+    def pairwise[T](): Any
     @JSName("pairwise")
     var pairwise_Original: Fn1
     
     def partition[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.Tuple2[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
       ]
-    def partition[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean], thisArg: js.Any): js.Tuple2[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+    def partition[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean], thisArg: Any): js.Tuple2[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
       ]
     @JSName("partition")
     var partition_Original: Fn3
     
-    def pluck[T, R](properties: String*): js.Any
+    def pluck[T, R](properties: String*): Any
     @JSName("pluck")
     var pluck_Original: FnCallThisProperties
     
-    def publish[T](): js.Any
+    def publish[T](): Any
     def publish[T](
       selector: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
         ]
-    ): js.Any
+    ): Any
     
-    def publishBehavior[T](value: T): js.Any
+    def publishBehavior[T](value: T): Any
     @JSName("publishBehavior")
     var publishBehavior_Original: Fn5
     
-    def publishLast[T](): js.Any
+    def publishLast[T](): Any
     @JSName("publishLast")
     var publishLast_Original: Fn1
     
-    def publishReplay[T](): js.Any
-    def publishReplay[T](bufferSize: Double): js.Any
-    def publishReplay[T](bufferSize: Double, windowTime: Double): js.Any
+    def publishReplay[T](): Any
+    def publishReplay[T](bufferSize: Double): Any
+    def publishReplay[T](bufferSize: Double, windowTime: Double): Any
     def publishReplay[T](
       bufferSize: Double,
       windowTime: Double,
-      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def publishReplay[T](
       bufferSize: Double,
       windowTime: Double,
-      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def publishReplay[T](
       bufferSize: Double,
       windowTime: Double,
       selector: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def publishReplay[T](
       bufferSize: Double,
       windowTime: Unit,
-      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def publishReplay[T](
       bufferSize: Double,
       windowTime: Unit,
-      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def publishReplay[T](
       bufferSize: Double,
       windowTime: Unit,
       selector: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
-    def publishReplay[T](bufferSize: Unit, windowTime: Double): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
+    def publishReplay[T](bufferSize: Unit, windowTime: Double): Any
     def publishReplay[T](
       bufferSize: Unit,
       windowTime: Double,
-      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def publishReplay[T](
       bufferSize: Unit,
       windowTime: Double,
-      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def publishReplay[T](
       bufferSize: Unit,
       windowTime: Double,
       selector: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def publishReplay[T](
       bufferSize: Unit,
       windowTime: Unit,
-      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def publishReplay[T](
       bufferSize: Unit,
       windowTime: Unit,
-      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def publishReplay[T](
       bufferSize: Unit,
       windowTime: Unit,
       selector: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     @JSName("publishReplay")
     var publishReplay_Original: FnCallThisBufferSizeWindowTimeSelectorScheduler
     @JSName("publishReplay")
-    def publishReplay_TR[T, R](): js.Any
+    def publishReplay_TR[T, R](): Any
     @JSName("publishReplay")
-    def publishReplay_TR[T, R](bufferSize: Double): js.Any
+    def publishReplay_TR[T, R](bufferSize: Double): Any
     @JSName("publishReplay")
-    def publishReplay_TR[T, R](bufferSize: Double, windowTime: Double): js.Any
+    def publishReplay_TR[T, R](bufferSize: Double, windowTime: Double): Any
     @JSName("publishReplay")
     def publishReplay_TR[T, R](
       bufferSize: Double,
       windowTime: Double,
-      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ js.Any
-    ): js.Any
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ Any
+    ): Any
     @JSName("publishReplay")
     def publishReplay_TR[T, R](
       bufferSize: Double,
       windowTime: Unit,
-      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ js.Any
-    ): js.Any
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ Any
+    ): Any
     @JSName("publishReplay")
-    def publishReplay_TR[T, R](bufferSize: Unit, windowTime: Double): js.Any
+    def publishReplay_TR[T, R](bufferSize: Unit, windowTime: Double): Any
     @JSName("publishReplay")
     def publishReplay_TR[T, R](
       bufferSize: Unit,
       windowTime: Double,
-      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ js.Any
-    ): js.Any
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ Any
+    ): Any
     @JSName("publishReplay")
     def publishReplay_TR[T, R](
       bufferSize: Unit,
       windowTime: Unit,
-      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ js.Any
-    ): js.Any
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ Any
+    ): Any
     
     @JSName("publish")
     var publish_Original: Fn4
     @JSName("publish")
     def publish_TR[T, R](
       selector: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
         ]
-    ): js.Any
+    ): Any
     
     def race[T](
-      observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any) | (js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+      observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any) | (js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
         ]))*
-    ): js.Any
+    ): Any
     def race[T](
       observables: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
         ]
-    ): js.Any
+    ): Any
     @JSName("race")
     var race_Original: FnCallThisObservables
     @JSName("race")
     def race_TR[T, R](
-      observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any) | (js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+      observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any) | (js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
         ]))*
-    ): js.Any
+    ): Any
     @JSName("race")
     def race_TR[T, R](
       observables: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
         ]
-    ): js.Any
+    ): Any
     
-    def reduce[T](accumulator: js.Function3[/* acc */ T, /* value */ T, /* index */ Double, T]): js.Any
-    def reduce[T](accumulator: js.Function3[/* acc */ T, /* value */ T, /* index */ Double, T], seed: T): js.Any
+    def reduce[T](accumulator: js.Function3[/* acc */ T, /* value */ T, /* index */ Double, T]): Any
+    def reduce[T](accumulator: js.Function3[/* acc */ T, /* value */ T, /* index */ Double, T], seed: T): Any
     @JSName("reduce")
     var reduce_Original: FnCallThisAccumulatorSeed
     @JSName("reduce")
-    def reduce_TR[T, R](accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, R]): js.Any
+    def reduce_TR[T, R](accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, R]): Any
     @JSName("reduce")
-    def reduce_TR[T, R](accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, R], seed: R): js.Any
+    def reduce_TR[T, R](accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, R], seed: R): Any
     
-    def repeat[T](): js.Any
-    def repeat[T](count: Double): js.Any
+    def repeat[T](): Any
+    def repeat[T](count: Double): Any
     
     def repeatWhen[T](
       notifier: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* errors */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* errors */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
         ]
-    ): js.Any
+    ): Any
     @JSName("repeatWhen")
     var repeatWhen_Original: FnCallThisNotifier
     
     @JSName("repeat")
     var repeat_Original: FnCallThisCount
     
-    def retry[T](): js.Any
-    def retry[T](count: Double): js.Any
+    def retry[T](): Any
+    def retry[T](count: Double): Any
     
     def retryWhen[T](
       notifier: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* errors */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* errors */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
         ]
-    ): js.Any
+    ): Any
     @JSName("retryWhen")
     var retryWhen_Original: FnCallThisNotifier
     
@@ -1454,148 +1453,142 @@ object internalObservableMod {
     var retry_Original: FnCallThisCount
     
     def sample[T](
-      notifier: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
-    ): js.Any
+      notifier: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
+    ): Any
     
-    def sampleTime[T](period: Double): js.Any
+    def sampleTime[T](period: Double): Any
     def sampleTime[T](
       period: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     @JSName("sampleTime")
     var sampleTime_Original: FnCallThisPeriodScheduler
     
     @JSName("sample")
     var sample_Original: Fn6
     
-    def scan[T](accumulator: js.Function3[/* acc */ T, /* value */ T, /* index */ Double, T]): js.Any
-    def scan[T](accumulator: js.Function3[/* acc */ T, /* value */ T, /* index */ Double, T], seed: T): js.Any
+    def scan[T](accumulator: js.Function3[/* acc */ T, /* value */ T, /* index */ Double, T]): Any
+    def scan[T](accumulator: js.Function3[/* acc */ T, /* value */ T, /* index */ Double, T], seed: T): Any
     @JSName("scan")
     var scan_Original: FnCallThisAccumulatorSeed
     @JSName("scan")
-    def scan_TR[T, R](accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, R]): js.Any
+    def scan_TR[T, R](accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, R]): Any
     @JSName("scan")
-    def scan_TR[T, R](accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, R], seed: R): js.Any
+    def scan_TR[T, R](accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, R], seed: R): Any
     
     def sequenceEqual[T](
-      compareTo: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
-    ): js.Any
+      compareTo: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
+    ): Any
     def sequenceEqual[T](
-      compareTo: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+      compareTo: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any,
       comparor: js.Function2[/* a */ T, /* b */ T, Boolean]
-    ): js.Any
+    ): Any
     @JSName("sequenceEqual")
     var sequenceEqual_Original: FnCallThisCompareToComparor
     
-    def share[T](): js.Any
+    def share[T](): Any
     
-    def shareReplay[T](): js.Any
-    def shareReplay[T](bufferSize: Double): js.Any
-    def shareReplay[T](bufferSize: Double, windowTime: Double): js.Any
+    def shareReplay[T](): Any
+    def shareReplay[T](bufferSize: Double): Any
+    def shareReplay[T](bufferSize: Double, windowTime: Double): Any
     def shareReplay[T](
       bufferSize: Double,
       windowTime: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def shareReplay[T](
       bufferSize: Double,
       windowTime: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
-    def shareReplay[T](bufferSize: Unit, windowTime: Double): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
+    def shareReplay[T](bufferSize: Unit, windowTime: Double): Any
     def shareReplay[T](
       bufferSize: Unit,
       windowTime: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def shareReplay[T](
       bufferSize: Unit,
       windowTime: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def shareReplay[T](
-      config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ShareReplayConfig */ js.Any
-    ): js.Any
+      config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ShareReplayConfig */ Any
+    ): Any
     @JSName("shareReplay")
     var shareReplay_Original: FnCallThisBufferSizeWindowTimeScheduler
     
     @JSName("share")
     var share_Original: Fn1
     
-    def single[T](): js.Any
+    def single[T](): Any
     def single[T](
       predicate: js.Function3[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ Any, 
           Boolean
         ]
-    ): js.Any
+    ): Any
     @JSName("single")
     var single_Original: FnCallThisPredicate
     
-    def skip[T](count: Double): js.Any
+    def skip[T](count: Double): Any
     
-    def skipLast[T](count: Double): js.Any
+    def skipLast[T](count: Double): Any
     @JSName("skipLast")
     var skipLast_Original: Fn7
     
     def skipUntil[T](
-      notifier: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
-    ): js.Any
+      notifier: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
+    ): Any
     @JSName("skipUntil")
     var skipUntil_Original: Fn6
     
-    def skipWhile[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.Any
+    def skipWhile[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): Any
     @JSName("skipWhile")
     var skipWhile_Original: Fn8
     
     @JSName("skip")
     var skip_Original: Fn7
     
-    def startWith[T](): js.Any
+    def startWith[T](): Any
     def startWith[T](
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def startWith[T, D](
-      array: (D | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any))*
-    ): js.Any
-    def startWith[T, D](v1: D): js.Any
+      array: (D | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any))*
+    ): Any
     def startWith[T, D](
       v1: D,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
-    def startWith[T, D, E](v1: D, v2: E): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def startWith[T, D, E](
       v1: D,
       v2: E,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
-    def startWith[T, D, E, F](v1: D, v2: E, v3: F): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def startWith[T, D, E, F](
       v1: D,
       v2: E,
       v3: F,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
-    def startWith[T, D, E, F, G](v1: D, v2: E, v3: F, v4: G): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def startWith[T, D, E, F, G](
       v1: D,
       v2: E,
       v3: F,
       v4: G,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
-    def startWith[T, D, E, F, G, H](v1: D, v2: E, v3: F, v4: G, v5: H): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def startWith[T, D, E, F, G, H](
       v1: D,
       v2: E,
       v3: F,
       v4: G,
       v5: H,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
-    def startWith[T, D, E, F, G, H, I](v1: D, v2: E, v3: F, v4: G, v5: H, v6: I): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def startWith[T, D, E, F, G, H, I](
       v1: D,
       v2: E,
@@ -1603,36 +1596,48 @@ object internalObservableMod {
       v4: G,
       v5: H,
       v6: I,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     @JSName("startWith")
     var startWith_Original: FnCallThisV1V2V3V4V5V6Scheduler
+    @JSName("startWith")
+    def startWith_TD[T, D](v1: D): Any
+    @JSName("startWith")
+    def startWith_TDE[T, D, E](v1: D, v2: E): Any
+    @JSName("startWith")
+    def startWith_TDEF[T, D, E, F](v1: D, v2: E, v3: F): Any
+    @JSName("startWith")
+    def startWith_TDEFG[T, D, E, F, G](v1: D, v2: E, v3: F, v4: G): Any
+    @JSName("startWith")
+    def startWith_TDEFGH[T, D, E, F, G, H](v1: D, v2: E, v3: F, v4: G, v5: H): Any
+    @JSName("startWith")
+    def startWith_TDEFGHI[T, D, E, F, G, H, I](v1: D, v2: E, v3: F, v4: G, v5: H, v6: I): Any
     
     def subscribeOn[T](
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def subscribeOn[T](
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any,
       delay: Double
-    ): js.Any
+    ): Any
     @JSName("subscribeOn")
     var subscribeOn_Original: FnCallThisSchedulerDelay
     
-    def switch[T](): js.Any
+    def switch[T](): Any
     
     def switchMap[T, R](
       project: js.Function2[
           /* value */ T, 
           /* index */ Double, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
         ]
-    ): js.Any
+    ): Any
     
     def switchMapTo[T, R](
-      observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
-    ): js.Any
+      observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
+    ): Any
     def switchMapTo[T, I, R](
-      observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<I> */ js.Any,
+      observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<I> */ Any,
       resultSelector: js.Function4[
           /* outerValue */ T, 
           /* innerValue */ I, 
@@ -1640,7 +1645,7 @@ object internalObservableMod {
           /* innerIndex */ Double, 
           R
         ]
-    ): js.Any
+    ): Any
     @JSName("switchMapTo")
     var switchMapTo_Original: FnCallThisObservableResultSelector
     
@@ -1650,21 +1655,21 @@ object internalObservableMod {
     @JSName("switch")
     var switch_Original: FnCallThis
     @JSName("switch")
-    def switch_TR[T, R](): js.Any
+    def switch_TR[T, R](): Any
     
-    def take[T](count: Double): js.Any
+    def take[T](count: Double): Any
     
-    def takeLast[T](count: Double): js.Any
+    def takeLast[T](count: Double): Any
     @JSName("takeLast")
     var takeLast_Original: Fn7
     
     def takeUntil[T](
-      notifier: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
-    ): js.Any
+      notifier: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
+    ): Any
     @JSName("takeUntil")
     var takeUntil_Original: Fn6
     
-    def takeWhile[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.Any
+    def takeWhile[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): Any
     @JSName("takeWhile")
     var takeWhile_Original: Fn8
     
@@ -1674,158 +1679,158 @@ object internalObservableMod {
     def throttle[T](
       durationSelector: js.Function1[
           /* value */ T, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ Any
         ]
-    ): js.Any
+    ): Any
     def throttle[T](
       durationSelector: js.Function1[
           /* value */ T, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ Any
         ],
-      config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThrottleConfig */ js.Any
-    ): js.Any
+      config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThrottleConfig */ Any
+    ): Any
     
-    def throttleTime[T](duration: Double): js.Any
+    def throttleTime[T](duration: Double): Any
     def throttleTime[T](
       duration: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def throttleTime[T](
       duration: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any,
-      config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThrottleConfig */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any,
+      config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThrottleConfig */ Any
+    ): Any
     def throttleTime[T](
       duration: Double,
       scheduler: Unit,
-      config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThrottleConfig */ js.Any
-    ): js.Any
+      config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThrottleConfig */ Any
+    ): Any
     @JSName("throttleTime")
     var throttleTime_Original: FnCallThisDurationSchedulerConfig
     
     @JSName("throttle")
     var throttle_Original: FnCallThisDurationSelectorConfig
     
-    def timeInterval[T](): js.Any
+    def timeInterval[T](): Any
     def timeInterval[T](
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     @JSName("timeInterval")
     var timeInterval_Original: FnCallThisScheduler
     
-    def timeout[T](due: Double): js.Any
+    def timeout[T](due: js.Date): Any
+    def timeout[T](
+      due: js.Date,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
+    def timeout[T](due: Double): Any
     def timeout[T](
       due: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
-    def timeout[T](due: Date): js.Any
-    def timeout[T](
-      due: Date,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     
     def timeoutWith[T](
-      due: Double,
-      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any
-    ): js.Any
+      due: js.Date,
+      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any
+    ): Any
+    def timeoutWith[T](
+      due: js.Date,
+      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def timeoutWith[T](
       due: Double,
-      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any
+    ): Any
     def timeoutWith[T](
-      due: Date,
-      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any
-    ): js.Any
-    def timeoutWith[T](
-      due: Date,
-      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      due: Double,
+      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     @JSName("timeoutWith")
     var timeoutWith_Original: FnCallThisDueWithObservableScheduler
     @JSName("timeoutWith")
     def timeoutWith_TR[T, R](
-      due: Double,
-      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
-    ): js.Any
+      due: js.Date,
+      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
+    ): Any
+    @JSName("timeoutWith")
+    def timeoutWith_TR[T, R](
+      due: js.Date,
+      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     @JSName("timeoutWith")
     def timeoutWith_TR[T, R](
       due: Double,
-      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
+    ): Any
     @JSName("timeoutWith")
     def timeoutWith_TR[T, R](
-      due: Date,
-      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
-    ): js.Any
-    @JSName("timeoutWith")
-    def timeoutWith_TR[T, R](
-      due: Date,
-      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      due: Double,
+      withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     
     @JSName("timeout")
     var timeout_Original: FnCallThisDueScheduler
     
-    def timestamp[T](): js.Any
+    def timestamp[T](): Any
     def timestamp[T](
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     @JSName("timestamp")
     var timestamp_Original: FnCallThisScheduler
     
-    def toArray[T](): js.Any
+    def toArray[T](): Any
     @JSName("toArray")
     var toArray_Original: Fn1
     
     def window[T](
-      windowBoundaries: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
-    ): js.Any
+      windowBoundaries: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
+    ): Any
     
-    def windowCount[T](windowSize: Double): js.Any
-    def windowCount[T](windowSize: Double, startWindowEvery: Double): js.Any
+    def windowCount[T](windowSize: Double): Any
+    def windowCount[T](windowSize: Double, startWindowEvery: Double): Any
     @JSName("windowCount")
     var windowCount_Original: FnCallThisWindowSizeStartWindowEvery
     
-    def windowTime[T](windowTimeSpan: Double): js.Any
+    def windowTime[T](windowTimeSpan: Double): Any
     def windowTime[T](
       windowTimeSpan: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
-    def windowTime[T](windowTimeSpan: Double, windowCreationInterval: Double): js.Any
-    def windowTime[T](windowTimeSpan: Double, windowCreationInterval: Double, maxWindowSize: Double): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
+    def windowTime[T](windowTimeSpan: Double, windowCreationInterval: Double): Any
+    def windowTime[T](windowTimeSpan: Double, windowCreationInterval: Double, maxWindowSize: Double): Any
     def windowTime[T](
       windowTimeSpan: Double,
       windowCreationInterval: Double,
       maxWindowSize: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     def windowTime[T](
       windowTimeSpan: Double,
       windowCreationInterval: Double,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any
     @JSName("windowTime")
     var windowTime_Original: FnCallThisWindowTimeSpanWindowCreationIntervalMaxWindowSizeScheduler
     
     def windowToggle[T, O](
-      openings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<O> */ js.Any,
+      openings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<O> */ Any,
       closingSelector: js.Function1[
           /* openValue */ O, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
         ]
-    ): js.Any
+    ): Any
     @JSName("windowToggle")
     var windowToggle_Original: FnCallThisOpeningsClosingSelector
     
     def windowWhen[T](
       closingSelector: js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
         ]
-    ): js.Any
+    ): Any
     @JSName("windowWhen")
     var windowWhen_Original: FnCallThisClosingSelector
     
@@ -1834,163 +1839,163 @@ object internalObservableMod {
     
     def withLatestFrom[T, R](
       array: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ Any
         ]
-    ): js.Any
+    ): Any
     def withLatestFrom[T, R](
       array: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ Any
         ],
-      project: js.Function1[/* repeated */ js.Any, R]
-    ): js.Any
+      project: js.Function1[/* repeated */ Any, R]
+    ): Any
     def withLatestFrom[T, R](
-      observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ js.Any) | (js.Function1[/* repeated */ js.Any, R]))*
-    ): js.Any
-    def withLatestFrom[T, R](project: js.Function1[/* v1 */ T, R]): js.Any
+      observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ Any) | (js.Function1[/* repeated */ Any, R]))*
+    ): Any
+    def withLatestFrom[T, R](project: js.Function1[/* v1 */ T, R]): Any
     def withLatestFrom[T, T2](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any
+    ): Any
     def withLatestFrom[T, T2, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
       project: js.Function2[/* v1 */ T, /* v2 */ T2, R]
-    ): js.Any
+    ): Any
     def withLatestFrom[T, T2, T3](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any
+    ): Any
     def withLatestFrom[T, T2, T3, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
       project: js.Function3[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, R]
-    ): js.Any
+    ): Any
     def withLatestFrom[T, T2, T3, T4](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any
+    ): Any
     def withLatestFrom[T, T2, T3, T4, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
       project: js.Function4[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, R]
-    ): js.Any
+    ): Any
     def withLatestFrom[T, T2, T3, T4, T5](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any
+    ): Any
     def withLatestFrom[T, T2, T3, T4, T5, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
       project: js.Function5[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, /* v5 */ T5, R]
-    ): js.Any
+    ): Any
     def withLatestFrom[T, T2, T3, T4, T5, T6](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any
+    ): Any
     def withLatestFrom[T, T2, T3, T4, T5, T6, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any,
       project: js.Function6[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, /* v5 */ T5, /* v6 */ T6, R]
-    ): js.Any
+    ): Any
     @JSName("withLatestFrom")
     var withLatestFrom_Original: Fn9
     
     def zip[T](
-      observables: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any)*
-    ): js.Any
+      observables: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any)*
+    ): Any
     def zip[T, R](
       array: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any
         ]
-    ): js.Any
-    def zip[T, R](project: js.Function1[/* v1 */ T, R]): js.Any
+    ): Any
+    def zip[T, R](project: js.Function1[/* v1 */ T, R]): Any
     def zip[T, T2](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any
+    ): Any
     def zip[T, TOther, R](
       array: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<TOther> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<TOther> */ Any
         ],
       project: js.Function2[/* v1 */ T, /* repeated */ TOther, R]
-    ): js.Any
+    ): Any
     def zip[T, T2, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
       project: js.Function2[/* v1 */ T, /* v2 */ T2, R]
-    ): js.Any
+    ): Any
     def zip[T, T2, T3](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any
+    ): Any
     def zip[T, T2, T3, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
       project: js.Function3[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, R]
-    ): js.Any
+    ): Any
     def zip[T, T2, T3, T4](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any
+    ): Any
     def zip[T, T2, T3, T4, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
       project: js.Function4[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, R]
-    ): js.Any
+    ): Any
     def zip[T, T2, T3, T4, T5](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any
+    ): Any
     def zip[T, T2, T3, T4, T5, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
       project: js.Function5[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, /* v5 */ T5, R]
-    ): js.Any
+    ): Any
     def zip[T, T2, T3, T4, T5, T6](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any
-    ): js.Any
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any
+    ): Any
     def zip[T, T2, T3, T4, T5, T6, R](
-      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
-      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
-      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
-      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
-      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any,
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any,
       project: js.Function6[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, /* v5 */ T5, /* v6 */ T6, R]
-    ): js.Any
+    ): Any
     
-    def zipAll[T](): js.Any
-    def zipAll[R](project: js.Function1[/* repeated */ js.Any, R]): js.Any
+    def zipAll[T](): Any
+    def zipAll[R](project: js.Function1[/* repeated */ Any, R]): Any
     @JSName("zipAll")
     var zipAll_Original: FnCallThisProject
     @JSName("zipAll")
-    def zipAll_TR[T, R](): js.Any
+    def zipAll_TR[T, R](): Any
     @JSName("zipAll")
-    def zipAll_TR[T, R](project: js.Function1[/* repeated */ T, R]): js.Any
+    def zipAll_TR[T, R](project: js.Function1[/* repeated */ T, R]): Any
     
     @JSName("zip")
     var zip_Original: Fn10
     @JSName("zip")
     def zip_TR[T, R](
-      observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any) | (js.Function1[/* repeated */ T, R]))*
-    ): js.Any
+      observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any) | (js.Function1[/* repeated */ T, R]))*
+    ): Any
   }
   object Observable {
     
@@ -2038,8 +2043,8 @@ object internalObservableMod {
       flatMapTo: FnCallThisInnerObservableConcurrent,
       groupBy: FnCallThisKeySelectorElementSelectorDurationSelectorSubjectSelector,
       ignoreElements: js.ThisFunction0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* this */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<never> */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* this */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<never> */ Any
         ],
       isEmpty: Fn1,
       last: FnCallThisPredicateDefaultValue,
@@ -2120,176 +2125,176 @@ object internalObservableMod {
     
     @JSImport("rxjs/internal/Observable", "Observable.ajax")
     @js.native
-    def ajax: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AjaxCreationMethod */ js.Any = js.native
+    def ajax: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AjaxCreationMethod */ Any = js.native
     inline def ajax_=(
-      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AjaxCreationMethod */ js.Any
+      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AjaxCreationMethod */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ajax")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.bindCallback")
     @js.native
-    def bindCallback: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindCallback */ js.Any = js.native
+    def bindCallback: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindCallback */ Any = js.native
     inline def bindCallback_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindCallback */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindCallback */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bindCallback")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.bindNodeCallback")
     @js.native
-    def bindNodeCallback: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindNodeCallback */ js.Any = js.native
+    def bindNodeCallback: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindNodeCallback */ Any = js.native
     inline def bindNodeCallback_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindNodeCallback */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticBindNodeCallback */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bindNodeCallback")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.combineLatest")
     @js.native
-    def combineLatest: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof combineLatestStatic */ js.Any = js.native
+    def combineLatest: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof combineLatestStatic */ Any = js.native
     inline def combineLatest_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof combineLatestStatic */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof combineLatestStatic */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("combineLatest")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.concat")
     @js.native
-    def concat: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof concatStatic */ js.Any = js.native
+    def concat: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof concatStatic */ Any = js.native
     inline def concat_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof concatStatic */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof concatStatic */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("concat")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.defer")
     @js.native
-    def defer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticDefer */ js.Any = js.native
+    def defer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticDefer */ Any = js.native
     inline def defer_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticDefer */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticDefer */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defer")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.empty")
     @js.native
-    def empty: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticEmpty */ js.Any = js.native
+    def empty: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticEmpty */ Any = js.native
     inline def empty_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticEmpty */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticEmpty */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.forkJoin")
     @js.native
-    def forkJoin: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticForkJoin */ js.Any = js.native
+    def forkJoin: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticForkJoin */ Any = js.native
     inline def forkJoin_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticForkJoin */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticForkJoin */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forkJoin")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.from")
     @js.native
-    def from: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFrom */ js.Any = js.native
+    def from: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFrom */ Any = js.native
     
     @JSImport("rxjs/internal/Observable", "Observable.fromEvent")
     @js.native
-    def fromEvent: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromEvent */ js.Any = js.native
+    def fromEvent: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromEvent */ Any = js.native
     
     @JSImport("rxjs/internal/Observable", "Observable.fromEventPattern")
     @js.native
-    def fromEventPattern: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromEventPattern */ js.Any = js.native
+    def fromEventPattern: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromEventPattern */ Any = js.native
     inline def fromEventPattern_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromEventPattern */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromEventPattern */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromEventPattern")(x.asInstanceOf[js.Any])
     
     inline def fromEvent_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromEvent */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromEvent */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromEvent")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.fromPromise")
     @js.native
-    def fromPromise: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromPromise */ js.Any = js.native
+    def fromPromise: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromPromise */ Any = js.native
     inline def fromPromise_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromPromise */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFromPromise */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromPromise")(x.asInstanceOf[js.Any])
     
     inline def from_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFrom */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticFrom */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("from")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.generate")
     @js.native
-    def generate: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticGenerate */ js.Any = js.native
+    def generate: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticGenerate */ Any = js.native
     inline def generate_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticGenerate */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticGenerate */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("generate")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.interval")
     @js.native
-    def interval: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticInterval */ js.Any = js.native
+    def interval: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticInterval */ Any = js.native
     inline def interval_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticInterval */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticInterval */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("interval")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.merge")
     @js.native
-    def merge: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof mergeStatic */ js.Any = js.native
+    def merge: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof mergeStatic */ Any = js.native
     inline def merge_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof mergeStatic */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof mergeStatic */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("merge")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.of")
     @js.native
-    def of: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOf */ js.Any = js.native
+    def of: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOf */ Any = js.native
     inline def of_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOf */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOf */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("of")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.onErrorResumeNext")
     @js.native
-    def onErrorResumeNext: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOnErrorResumeNext */ js.Any = js.native
+    def onErrorResumeNext: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOnErrorResumeNext */ Any = js.native
     inline def onErrorResumeNext_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOnErrorResumeNext */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticOnErrorResumeNext */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onErrorResumeNext")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.pairs")
     @js.native
-    def pairs: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticPairs */ js.Any = js.native
+    def pairs: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticPairs */ Any = js.native
     inline def pairs_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticPairs */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticPairs */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pairs")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.race")
     @js.native
-    def race: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRace */ js.Any = js.native
+    def race: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRace */ Any = js.native
     inline def race_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRace */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRace */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("race")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.range")
     @js.native
-    def range: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRange */ js.Any = js.native
+    def range: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRange */ Any = js.native
     inline def range_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRange */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticRange */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("range")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.throwError")
     @js.native
-    def throwError: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticThrowError */ js.Any = js.native
+    def throwError: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticThrowError */ Any = js.native
     inline def throwError_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticThrowError */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticThrowError */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("throwError")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.timer")
     @js.native
-    def timer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticTimer */ js.Any = js.native
+    def timer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticTimer */ Any = js.native
     inline def timer_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticTimer */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticTimer */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timer")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.using")
     @js.native
-    val `using`: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticUsing */ js.Any = js.native
+    val `using`: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticUsing */ Any = js.native
     
     @JSImport("rxjs/internal/Observable", "Observable.webSocket")
     @js.native
-    def webSocket: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticWebSocket */ js.Any = js.native
+    def webSocket: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticWebSocket */ Any = js.native
     inline def webSocket_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticWebSocket */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof staticWebSocket */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("webSocket")(x.asInstanceOf[js.Any])
     
     @JSImport("rxjs/internal/Observable", "Observable.zip")
     @js.native
-    def zip: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof zipStatic */ js.Any = js.native
+    def zip: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof zipStatic */ Any = js.native
     inline def zip_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof zipStatic */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof zipStatic */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zip")(x.asInstanceOf[js.Any])
     
     extension [Self <: Observable[?], T](x: Self & Observable[T]) {
@@ -2372,8 +2377,8 @@ object internalObservableMod {
       
       inline def setIgnoreElements(
         value: js.ThisFunction0[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* this */ js.Any, 
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<never> */ js.Any
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* this */ Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<never> */ Any
             ]
       ): Self = StObject.set(x, "ignoreElements", value.asInstanceOf[js.Any])
       

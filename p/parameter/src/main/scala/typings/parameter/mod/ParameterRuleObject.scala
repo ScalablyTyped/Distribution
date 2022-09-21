@@ -11,7 +11,7 @@ trait ParameterRuleObject
      with ParameterRuleBase
      with _ParameterRuleItem {
   
-  var rule: js.UndefOr[ParameterRules] = js.undefined
+  var rule: js.UndefOr[ParameterRules[Any]] = js.undefined
   
   @JSName("type")
   var type_ParameterRuleObject: `object` | objectQuestionmark
@@ -26,7 +26,7 @@ object ParameterRuleObject {
   
   extension [Self <: ParameterRuleObject](x: Self) {
     
-    inline def setRule(value: ParameterRules): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: ParameterRules[Any]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     

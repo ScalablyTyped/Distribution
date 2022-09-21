@@ -25,17 +25,10 @@ object pointMod {
   val point: MarkCompiler = js.native
   
   inline def shapeMixins(model: UnitModel, config: Config[ExprRef | SignalRef]): VgEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("shapeMixins")(model.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[VgEncodeEntry]
-  
-  inline def shapeMixins_circle(
+  inline def shapeMixins(
     model: UnitModel,
     config: Config[ExprRef | SignalRef],
-    fixedShape: typings.vegaLite.vegaLiteStrings.circle
-  ): VgEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("shapeMixins")(model.asInstanceOf[js.Any], config.asInstanceOf[js.Any], fixedShape.asInstanceOf[js.Any])).asInstanceOf[VgEncodeEntry]
-  
-  inline def shapeMixins_square(
-    model: UnitModel,
-    config: Config[ExprRef | SignalRef],
-    fixedShape: typings.vegaLite.vegaLiteStrings.square
+    fixedShape: typings.vegaLite.vegaLiteStrings.circle | typings.vegaLite.vegaLiteStrings.square
   ): VgEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("shapeMixins")(model.asInstanceOf[js.Any], config.asInstanceOf[js.Any], fixedShape.asInstanceOf[js.Any])).asInstanceOf[VgEncodeEntry]
   
   @JSImport("vega-lite/build/src/compile/mark/point", "square")

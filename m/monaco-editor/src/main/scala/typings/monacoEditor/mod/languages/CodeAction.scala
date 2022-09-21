@@ -38,7 +38,7 @@ object CodeAction {
     
     inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
-    inline def setDiagnosticsVarargs(value: IMarkerData*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: IMarkerData*): Self = StObject.set(x, "diagnostics", js.Array(value*))
     
     inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

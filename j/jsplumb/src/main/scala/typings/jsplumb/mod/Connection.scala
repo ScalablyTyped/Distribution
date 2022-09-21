@@ -10,19 +10,23 @@ trait Connection
   extends StObject
      with UIComponent {
   
-  var endpoints: js.Tuple2[Endpoint, Endpoint]
+  def addOverlay(spec: OverlaySpec): Overlay
+  
+  val endpoints: js.Tuple2[Endpoint, Endpoint]
   
   def getElement(): Connection
   
   def getLabelOverlay(): Overlay
   
-  def getOverlay(s: String): Overlay
+  def getOverlay(id: String): Overlay
   
   def getOverlays(): js.Object
   
-  def hideOverlay(s: String): Unit
+  def hideOverlay(id: String): Unit
   
-  var id: ConnectionId
+  val id: ConnectionId
+  
+  def removeOverlay(id: String): Unit
   
   def repaint(): Unit
   
@@ -30,44 +34,48 @@ trait Connection
   
   def setLabel(s: String): Unit
   
-  def showOverlay(s: String): Unit
+  def showOverlay(id: String): Unit
   
-  var source: Element
+  val source: Element
   
-  var sourceId: String
+  val sourceId: String
   
-  var target: Element
+  val target: Element
   
-  var targetId: String
+  val targetId: String
 }
 object Connection {
   
   inline def apply(
+    addOverlay: OverlaySpec => Overlay,
     endpoints: js.Tuple2[Endpoint, Endpoint],
     getElement: () => Connection,
     getLabelOverlay: () => Overlay,
     getOverlay: String => Overlay,
     getOverlays: () => js.Object,
-    getParameter: String => js.Any,
-    getParameters: () => Record[String, js.Any],
+    getParameter: String => Any,
+    getParameters: () => Record[String, Any],
     hideOverlay: String => Unit,
     id: ConnectionId,
+    removeOverlay: String => Unit,
     repaint: () => Unit,
     setDetachable: Boolean => Unit,
     setLabel: String => Unit,
-    setParameter: (String, js.Any) => Unit,
-    setParameters: Record[String, js.Any] => Unit,
+    setParameter: (String, Any) => Unit,
+    setParameters: Record[String, Any] => Unit,
     showOverlay: String => Unit,
     source: Element,
     sourceId: String,
     target: Element,
     targetId: String
   ): Connection = {
-    val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any], getElement = js.Any.fromFunction0(getElement), getLabelOverlay = js.Any.fromFunction0(getLabelOverlay), getOverlay = js.Any.fromFunction1(getOverlay), getOverlays = js.Any.fromFunction0(getOverlays), getParameter = js.Any.fromFunction1(getParameter), getParameters = js.Any.fromFunction0(getParameters), hideOverlay = js.Any.fromFunction1(hideOverlay), id = id.asInstanceOf[js.Any], repaint = js.Any.fromFunction0(repaint), setDetachable = js.Any.fromFunction1(setDetachable), setLabel = js.Any.fromFunction1(setLabel), setParameter = js.Any.fromFunction2(setParameter), setParameters = js.Any.fromFunction1(setParameters), showOverlay = js.Any.fromFunction1(showOverlay), source = source.asInstanceOf[js.Any], sourceId = sourceId.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addOverlay = js.Any.fromFunction1(addOverlay), endpoints = endpoints.asInstanceOf[js.Any], getElement = js.Any.fromFunction0(getElement), getLabelOverlay = js.Any.fromFunction0(getLabelOverlay), getOverlay = js.Any.fromFunction1(getOverlay), getOverlays = js.Any.fromFunction0(getOverlays), getParameter = js.Any.fromFunction1(getParameter), getParameters = js.Any.fromFunction0(getParameters), hideOverlay = js.Any.fromFunction1(hideOverlay), id = id.asInstanceOf[js.Any], removeOverlay = js.Any.fromFunction1(removeOverlay), repaint = js.Any.fromFunction0(repaint), setDetachable = js.Any.fromFunction1(setDetachable), setLabel = js.Any.fromFunction1(setLabel), setParameter = js.Any.fromFunction2(setParameter), setParameters = js.Any.fromFunction1(setParameters), showOverlay = js.Any.fromFunction1(showOverlay), source = source.asInstanceOf[js.Any], sourceId = sourceId.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connection]
   }
   
   extension [Self <: Connection](x: Self) {
+    
+    inline def setAddOverlay(value: OverlaySpec => Overlay): Self = StObject.set(x, "addOverlay", js.Any.fromFunction1(value))
     
     inline def setEndpoints(value: js.Tuple2[Endpoint, Endpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
@@ -82,6 +90,8 @@ object Connection {
     inline def setHideOverlay(value: String => Unit): Self = StObject.set(x, "hideOverlay", js.Any.fromFunction1(value))
     
     inline def setId(value: ConnectionId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveOverlay(value: String => Unit): Self = StObject.set(x, "removeOverlay", js.Any.fromFunction1(value))
     
     inline def setRepaint(value: () => Unit): Self = StObject.set(x, "repaint", js.Any.fromFunction0(value))
     

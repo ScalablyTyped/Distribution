@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateResourceShareRequest extends StObject {
   
   /**
-    * Indicates whether principals outside your AWS organization can be associated with a resource share.
+    * Specifies whether principals outside your organization in Organizations can be associated with a resource share.
     */
   var allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+    * Specifies a unique, case-sensitive identifier that you provide to ensure the idempotency of the request. This lets you safely retry the request without accidentally performing the same operation a second time. Passing the same value to a later call to an operation requires that you also pass the same value for all other parameters. We recommend that you use a UUID type of value.. If you don't provide this value, then Amazon Web Services generates a random one for you.
     */
   var clientToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the resource share.
+    * If specified, the new name that you want to attach to the resource share.
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the resource share.
+    * Specifies the Amazon Resoure Name (ARN) of the resource share that you want to modify.
     */
   var resourceShareArn: String
 }

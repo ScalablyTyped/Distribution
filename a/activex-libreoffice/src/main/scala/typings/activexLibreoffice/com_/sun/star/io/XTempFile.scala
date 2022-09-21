@@ -35,7 +35,7 @@ object XTempFile {
     getLength: () => Double,
     getOutputStream: () => XOutputStream,
     getPosition: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     seek: Double => Unit
   ): XTempFile = {

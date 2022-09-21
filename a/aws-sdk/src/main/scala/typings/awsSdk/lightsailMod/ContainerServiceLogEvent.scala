@@ -9,7 +9,7 @@ trait ContainerServiceLogEvent extends StObject {
   /**
     * The timestamp when the container service log event was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The message of the container service log event.
@@ -25,7 +25,7 @@ object ContainerServiceLogEvent {
   
   extension [Self <: ContainerServiceLogEvent](x: Self) {
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     

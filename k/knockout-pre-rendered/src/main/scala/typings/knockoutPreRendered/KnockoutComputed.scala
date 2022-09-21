@@ -13,7 +13,7 @@ trait KnockoutComputed[T]
   
   def dispose(): Unit = js.native
   
-  var fn: KnockoutComputedFunctions[js.Any] = js.native
+  var fn: KnockoutComputedFunctions[Any] = js.native
   
   def getDependenciesCount(): Double = js.native
   

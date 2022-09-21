@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.HelpCommandNames")
 @js.native
-class HelpCommandNames ()
+open class HelpCommandNames ()
   extends StObject
      with typings.sharepoint.SP.Ribbon.HelpCommandNames

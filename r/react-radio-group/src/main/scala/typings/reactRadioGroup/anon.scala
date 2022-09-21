@@ -1,7 +1,7 @@
 package typings.reactRadioGroup
 
+import typings.react.mod.ElementType
 import typings.react.mod.HTMLProps
-import typings.react.mod.ReactType
 import typings.reactRadioGroup.mod.Omit
 import typings.reactRadioGroup.reactRadioGroupStrings.onChange
 import typings.reactRadioGroup.reactRadioGroupStrings.role
@@ -13,11 +13,11 @@ object anon {
   
   trait Component extends StObject {
     
-    var Component: js.UndefOr[ReactType[Omit[HTMLProps[js.Any], onChange | role]]] = js.undefined
+    var Component: js.UndefOr[ElementType[Omit[HTMLProps[Any], onChange | role]]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.undefined
     
-    var selectedValue: js.UndefOr[js.Any] = js.undefined
+    var selectedValue: js.UndefOr[Any] = js.undefined
   }
   object Component {
     
@@ -28,15 +28,15 @@ object anon {
     
     extension [Self <: Component](x: Self) {
       
-      inline def setComponent(value: ReactType[Omit[HTMLProps[js.Any], onChange | role]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[Omit[HTMLProps[Any], onChange | role]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
       
-      inline def setOnChange(value: /* value */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setSelectedValue(value: js.Any): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
+      inline def setSelectedValue(value: Any): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
       
       inline def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
     }
@@ -44,18 +44,18 @@ object anon {
   
   trait Value extends StObject {
     
-    var value: js.Any
+    var value: Any
   }
   object Value {
     
-    inline def apply(value: js.Any): Value = {
+    inline def apply(value: Any): Value = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
     
     extension [Self <: Value](x: Self) {
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

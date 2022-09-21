@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 type IDict[T, K, F] = F
 
-type ToStringLiteral[C /* <: js.Object */, K, V] = typings.chromeApps.chrome.IDict[
+type ToStringLiteral[C /* <: js.Object */, K, V] = IDict[
 C, 
 V, 
 /* import warning: importer.ImportType#apply Failed type conversion: C[V] */ js.Any]
@@ -25,7 +25,7 @@ type deprecated = scala.Nothing
 // INTERNAL //
 //////////////
 /** @deprecated Could be used, if e.g. deprecated recently */
-type deprecatedButUsable = js.Any
+type deprecatedButUsable = Any
 
 // | 'integer';
 ///
@@ -38,7 +38,7 @@ type deprecatedButUsable = js.Any
   * Chrome uses JS number, but internally requires an integer or double.
   * This is a helper type to prevent mixup.
   */
-type double = scala.Double
+type double = Double
 
 /**
   * Integer
@@ -46,4 +46,4 @@ type double = scala.Double
   * Chrome uses JS number, but internally requires an integer or double.
   * This is a helper type to prevent mixup.
   */
-type integer = scala.Double
+type integer = Double

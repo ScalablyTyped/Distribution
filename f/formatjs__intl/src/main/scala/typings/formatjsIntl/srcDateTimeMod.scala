@@ -83,26 +83,13 @@ object srcDateTimeMod {
   
   inline def getFormatter(
     hasLocaleFormatsOnErrorTimeZone: Formats,
-    `type`: date,
-    getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat],
-    options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.DateTimeFormat['format']>[0] | string, opts : @formatjs/intl.@formatjs/intl/src/types.FormatDateOptions | undefined): string>[1] */ js.Any
-  ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")(hasLocaleFormatsOnErrorTimeZone.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
+    `type`: date | time,
+    getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat]
+  ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")(hasLocaleFormatsOnErrorTimeZone.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
   inline def getFormatter(
     hasLocaleFormatsOnErrorTimeZone: Formats,
-    `type`: time,
+    `type`: date | time,
     getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat],
     options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.DateTimeFormat['format']>[0] | string, opts : @formatjs/intl.@formatjs/intl/src/types.FormatDateOptions | undefined): string>[1] */ js.Any
   ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")(hasLocaleFormatsOnErrorTimeZone.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
-  
-  inline def getFormatter_date(
-    hasLocaleFormatsOnErrorTimeZone: Formats,
-    `type`: date,
-    getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat]
-  ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")(hasLocaleFormatsOnErrorTimeZone.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
-  
-  inline def getFormatter_time(
-    hasLocaleFormatsOnErrorTimeZone: Formats,
-    `type`: time,
-    getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat]
-  ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")(hasLocaleFormatsOnErrorTimeZone.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
 }

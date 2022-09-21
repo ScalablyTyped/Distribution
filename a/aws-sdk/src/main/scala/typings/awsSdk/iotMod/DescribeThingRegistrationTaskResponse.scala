@@ -9,7 +9,7 @@ trait DescribeThingRegistrationTaskResponse extends StObject {
   /**
     * The task creation date.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The number of things that failed to be provisioned.
@@ -29,7 +29,7 @@ trait DescribeThingRegistrationTaskResponse extends StObject {
   /**
     * The date when the task was last modified.
     */
-  var lastModifiedDate: js.UndefOr[LastModifiedDate] = js.undefined
+  var lastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The message.
@@ -75,7 +75,7 @@ object DescribeThingRegistrationTaskResponse {
   
   extension [Self <: DescribeThingRegistrationTaskResponse](x: Self) {
     
-    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
@@ -91,7 +91,7 @@ object DescribeThingRegistrationTaskResponse {
     
     inline def setInputFileKeyUndefined: Self = StObject.set(x, "inputFileKey", js.undefined)
     
-    inline def setLastModifiedDate(value: LastModifiedDate): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     

@@ -10,10 +10,10 @@ The lodash method `_.curryRight` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.curryright |
 | Keywords           | lodash-modularized, curryright |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 25266 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 21313.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

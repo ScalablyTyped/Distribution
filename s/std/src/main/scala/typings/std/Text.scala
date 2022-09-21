@@ -11,13 +11,11 @@ trait Text
      with CharacterData
      with Slottable {
   
-  /**
-    * Splits data at the given offset and returns the remainder as Text node.
-    */
+  /** Splits data at the given offset and returns the remainder as Text node. */
+  /* standard dom */
   def splitText(offset: Double): Text = js.native
   
-  /**
-    * Returns the combined data of all direct Text node siblings.
-    */
+  /** Returns the combined data of all direct Text node siblings. */
+  /* standard dom */
   val wholeText: java.lang.String = js.native
 }

@@ -1,6 +1,12 @@
 package typings.bootstrap
 
-import typings.std.Element
+import typings.bootstrap.baseComponentMod.ComponentOptions
+import typings.bootstrap.baseComponentMod.GetInstanceFactory
+import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.bootstrapStrings.dispose
+import typings.bootstrap.bootstrapStrings.toggle
+import typings.bootstrap.buttonMod.Button.jQueryInterface
+import typings.bootstrap.mod.global.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,48 +15,43 @@ object buttonMod {
   
   @JSImport("bootstrap/js/dist/button", JSImport.Default)
   @js.native
-  class default protected ()
-    extends StObject
-       with Button {
-    def this(element: Element) = this()
+  open class default () extends Button
+  object default {
     
-    /**
-      * Destroys an element's button.
-      */
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
+    @JSImport("bootstrap/js/dist/button", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    /**
-      * Toggles push state. Gives the button the appearance that it has been activated.
-      */
-    /* CompleteClass */
-    override def toggle(): Unit = js.native
+    /* static member */
+    @JSImport("bootstrap/js/dist/button", "default.getInstance")
+    @js.native
+    def getInstance: GetInstanceFactory[Button] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[Button]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("bootstrap/js/dist/button", "default.getOrCreateInstance")
+    @js.native
+    def getOrCreateInstance: GetOrCreateInstanceFactory[Button, ComponentOptions] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[Button, ComponentOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("bootstrap/js/dist/button", "default.jQueryInterface")
+    @js.native
+    def jQueryInterface: typings.bootstrap.buttonMod.Button.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
   
-  trait Button extends StObject {
-    
-    /**
-      * Destroys an element's button.
-      */
-    def dispose(): Unit
+  @js.native
+  trait Button
+    extends typings.bootstrap.baseComponentMod.default {
     
     /**
       * Toggles push state. Gives the button the appearance that it has been activated.
       */
-    def toggle(): Unit
+    def toggle(): Unit = js.native
   }
   object Button {
     
-    inline def apply(dispose: () => Unit, toggle: () => Unit): Button = {
-      val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), toggle = js.Any.fromFunction0(toggle))
-      __obj.asInstanceOf[Button]
-    }
-    
-    extension [Self <: Button](x: Self) {
-      
-      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
-      
-      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
-    }
+    type jQueryInterface = js.Function1[/* config */ js.UndefOr[toggle | dispose], JQuery]
   }
 }

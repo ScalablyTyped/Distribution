@@ -34,10 +34,10 @@ object Extent {
     
     inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
-    inline def setExtentVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "extent", js.Array(value :_*))
+    inline def setExtentVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "extent", js.Array(value*))
     
     inline def setScheme(value: String | js.Array[String] | SignalRef | ColorScheme): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
-    inline def setSchemeVarargs(value: String*): Self = StObject.set(x, "scheme", js.Array(value :_*))
+    inline def setSchemeVarargs(value: String*): Self = StObject.set(x, "scheme", js.Array(value*))
   }
 }

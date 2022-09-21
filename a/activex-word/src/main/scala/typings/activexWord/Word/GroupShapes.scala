@@ -12,11 +12,11 @@ trait GroupShapes extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): Shape
+  def Item(Index: Any): Shape
   
-  val Parent: js.Any
+  val Parent: Any
   
-  def Range(Index: js.Any): ShapeRange
+  def Range(Index: Any): ShapeRange
   
   /* private */ @JSName("Word.GroupShapes_typekey")
   var WordDotGroupShapes_typekey: GroupShapes
@@ -27,9 +27,9 @@ object GroupShapes {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => Shape,
-    Parent: js.Any,
-    Range: js.Any => ShapeRange,
+    Item: Any => Shape,
+    Parent: Any,
+    Range: Any => ShapeRange,
     WordDotGroupShapes_typekey: GroupShapes
   ): GroupShapes = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], Range = js.Any.fromFunction1(Range))
@@ -45,11 +45,11 @@ object GroupShapes {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => Shape): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Shape): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setRange(value: js.Any => ShapeRange): Self = StObject.set(x, "Range", js.Any.fromFunction1(value))
+    inline def setRange(value: Any => ShapeRange): Self = StObject.set(x, "Range", js.Any.fromFunction1(value))
     
     inline def setWordDotGroupShapes_typekey(value: GroupShapes): Self = StObject.set(x, "Word.GroupShapes_typekey", value.asInstanceOf[js.Any])
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.FileConverters")
 @js.native
-/* private */ class FileConverters ()
+/* private */ open class FileConverters ()
   extends StObject
      with typings.activexWord.Word.FileConverters {
   
@@ -24,10 +24,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexWord.Word.FileConverter = js.native
+  override def Item(Index: Any): typings.activexWord.Word.FileConverter = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Word.FileConverters_typekey")

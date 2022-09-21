@@ -1,14 +1,16 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
+import typings.awsSdkClientCognitoIdentity.anon.ExceptionOptionTypeResour
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object ResourceConflictException {
-  
-  @JSImport("@aws-sdk/client-cognito-identity", "ResourceConflictException")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: typings.awsSdkClientCognitoIdentity.models0Mod.ResourceConflictException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+@JSImport("@aws-sdk/client-cognito-identity", "ResourceConflictException")
+@js.native
+open class ResourceConflictException protected ()
+  extends typings.awsSdkClientCognitoIdentity.modelsMod.ResourceConflictException {
+  /**
+    * @internal
+    */
+  def this(opts: ExceptionOptionTypeResour) = this()
 }

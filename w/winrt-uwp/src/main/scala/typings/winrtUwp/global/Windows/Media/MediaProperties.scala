@@ -17,7 +17,7 @@ object MediaProperties {
   @JSGlobal("Windows.Media.MediaProperties.AudioEncodingProperties")
   @js.native
   /** Creates a new instance of the AudioEncodingProperties class. */
-  class AudioEncodingProperties ()
+  open class AudioEncodingProperties ()
     extends StObject
        with typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties {
     
@@ -141,7 +141,7 @@ object MediaProperties {
   @JSGlobal("Windows.Media.MediaProperties.ContainerEncodingProperties")
   @js.native
   /** Creates a new instance of the ContainerEncodingProperties class. */
-  class ContainerEncodingProperties ()
+  open class ContainerEncodingProperties ()
     extends StObject
        with typings.winrtUwp.Windows.Media.MediaProperties.ContainerEncodingProperties {
     
@@ -246,7 +246,7 @@ object MediaProperties {
   @JSGlobal("Windows.Media.MediaProperties.ImageEncodingProperties")
   @js.native
   /** Creates a new instance of the ImageEncodingProperties class. */
-  class ImageEncodingProperties ()
+  open class ImageEncodingProperties ()
     extends StObject
        with typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties {
     
@@ -317,7 +317,7 @@ object MediaProperties {
   @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile")
   @js.native
   /** Creates a new instance of the MediaEncodingProfile class. */
-  class MediaEncodingProfile ()
+  open class MediaEncodingProfile ()
     extends StObject
        with typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile {
     
@@ -742,7 +742,7 @@ object MediaProperties {
   @JSGlobal("Windows.Media.MediaProperties.MediaPropertySet")
   @js.native
   /** Creates an instance for MediaPropertySet . */
-  class MediaPropertySet ()
+  open class MediaPropertySet ()
     extends StObject
        with typings.winrtUwp.Windows.Media.MediaProperties.MediaPropertySet
   
@@ -844,7 +844,7 @@ object MediaProperties {
   @JSGlobal("Windows.Media.MediaProperties.VideoEncodingProperties")
   @js.native
   /** Creates a new instance of the VideoEncodingProperties class. */
-  class VideoEncodingProperties ()
+  open class VideoEncodingProperties ()
     extends StObject
        with typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties {
     

@@ -16,6 +16,12 @@ trait ConditionalAccessSessionControls extends StObject {
   var cloudAppSecurity: js.UndefOr[NullableOption[CloudAppSecuritySessionControl]] = js.undefined
   
   /**
+    * Session control that determines whether it is acceptable for Azure AD to extend existing sessions based on information
+    * collected prior to an outage or not.
+    */
+  var disableResilienceDefaults: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  /**
     * Session control to define whether to persist cookies or not. All apps should be selected for this session control to
     * work correctly.
     */
@@ -44,6 +50,12 @@ object ConditionalAccessSessionControls {
     inline def setCloudAppSecurityNull: Self = StObject.set(x, "cloudAppSecurity", null)
     
     inline def setCloudAppSecurityUndefined: Self = StObject.set(x, "cloudAppSecurity", js.undefined)
+    
+    inline def setDisableResilienceDefaults(value: NullableOption[Boolean]): Self = StObject.set(x, "disableResilienceDefaults", value.asInstanceOf[js.Any])
+    
+    inline def setDisableResilienceDefaultsNull: Self = StObject.set(x, "disableResilienceDefaults", null)
+    
+    inline def setDisableResilienceDefaultsUndefined: Self = StObject.set(x, "disableResilienceDefaults", js.undefined)
     
     inline def setPersistentBrowser(value: NullableOption[PersistentBrowserSessionControl]): Self = StObject.set(x, "persistentBrowser", value.asInstanceOf[js.Any])
     

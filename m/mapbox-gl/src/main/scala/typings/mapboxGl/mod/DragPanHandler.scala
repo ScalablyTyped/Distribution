@@ -6,12 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "DragPanHandler")
 @js.native
-class DragPanHandler protected () extends StObject {
+open class DragPanHandler protected () extends StObject {
   def this(map: Map) = this()
   
   def disable(): Unit = js.native
   
   def enable(): Unit = js.native
+  def enable(options: DragPanOptions): Unit = js.native
   
   def isActive(): Boolean = js.native
   

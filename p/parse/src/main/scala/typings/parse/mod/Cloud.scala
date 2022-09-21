@@ -2,6 +2,7 @@ package typings.parse.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.TopLevel
+import typings.parse.anon.Instantiable
 import typings.parse.mod.global.Parse.Attributes
 import typings.parse.mod.global.Parse.Cloud.AfterDeleteRequest
 import typings.parse.mod.global.Parse.Cloud.AfterFindRequest
@@ -17,6 +18,7 @@ import typings.parse.mod.global.Parse.Cloud.JobRequest
 import typings.parse.mod.global.Parse.Cloud.Params
 import typings.parse.mod.global.Parse.Cloud.RunOptions
 import typings.parse.mod.global.Parse.Cloud.TriggerRequest
+import typings.parse.mod.global.Parse.Cloud.Validator
 import typings.parse.parseStrings.define
 import typings.parse.parseStrings.run
 import typings.std.Parameters
@@ -50,7 +52,7 @@ object Cloud {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("parse", "Cloud.HTTPOptions")
   @js.native
-  class HTTPOptionsCls ()
+  open class HTTPOptionsCls ()
     extends StObject
        with HTTPOptions {
     
@@ -82,49 +84,330 @@ object Cloud {
     /* "SECONDARY_PREFERRED" */ val SecondaryPreferred: typings.parse.mod.global.Parse.Cloud.ReadPreferenceOption.SecondaryPreferred & String = js.native
   }
   
-  inline def afterDelete(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def afterDelete(arg1: js.Any, func: js.Function1[/* request */ AfterDeleteRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: js.Function1[/* request */ AfterDeleteRequest[T], js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ AfterDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ AfterDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterDeleteRequest[T], js.Promise[Unit] | Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: Unit,
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T], func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def afterDeleteFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")().asInstanceOf[Unit]
   inline def afterDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterDeleteFile(
+    func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDeleteFile(
+    func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDeleteFile(func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDeleteFile(func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def afterFind(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def afterFind(arg1: js.Any, func: js.Function1[/* request */ AfterFindRequest, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: js.Function1[/* request */ AfterFindRequest[T], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ AfterFindRequest[T], Any],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: js.Function1[/* request */ AfterFindRequest[T], Any], validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T], func: js.Function1[/* request */ AfterFindRequest[T], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterFindRequest[T], Any],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterFindRequest[T], Any],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: Unit,
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T], func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def afterLogin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")().asInstanceOf[Unit]
-  inline def afterLogin(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterLogin(
+    func: js.Function1[
+      /* request */ TriggerRequest[typings.parse.mod.global.Parse.User[Attributes]], 
+      js.Thenable[Unit] | Unit
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterLogin(
+    func: js.Function1[
+      /* request */ TriggerRequest[typings.parse.mod.global.Parse.User[Attributes]], 
+      js.Thenable[Unit] | Unit
+    ],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterLogin(
+    func: js.Function1[
+      /* request */ TriggerRequest[typings.parse.mod.global.Parse.User[Attributes]], 
+      js.Thenable[Unit] | Unit
+    ],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterLogin(func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterLogin(func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def afterLogout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")().asInstanceOf[Unit]
-  inline def afterLogout(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterLogout(
+    func: js.Function1[
+      /* request */ TriggerRequest[typings.parse.mod.global.Parse.Session[Attributes]], 
+      js.Thenable[Unit] | Unit
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterLogout(
+    func: js.Function1[
+      /* request */ TriggerRequest[typings.parse.mod.global.Parse.Session[Attributes]], 
+      js.Thenable[Unit] | Unit
+    ],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterLogout(
+    func: js.Function1[
+      /* request */ TriggerRequest[typings.parse.mod.global.Parse.Session[Attributes]], 
+      js.Thenable[Unit] | Unit
+    ],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterLogout(func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterLogout(func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def afterSave(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def afterSave(arg1: js.Any, func: js.Function1[/* request */ AfterSaveRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: js.Function1[/* request */ AfterSaveRequest[T], js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ AfterSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ AfterSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterSaveRequest[T], js.Promise[Unit] | Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: Unit,
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T], func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def afterSaveFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")().asInstanceOf[Unit]
   inline def afterSaveFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterSaveFile(
+    func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSaveFile(
+    func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSaveFile(func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSaveFile(func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def beforeDelete(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def beforeDelete(arg1: js.Any, func: js.Function1[/* request */ BeforeDeleteRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: js.Function1[/* request */ BeforeDeleteRequest[T], js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ BeforeDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ BeforeDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ BeforeDeleteRequest[T], js.Promise[Unit] | Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ BeforeDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ BeforeDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: Unit,
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T], func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def beforeDeleteFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")().asInstanceOf[Unit]
   inline def beforeDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeDeleteFile(
+    func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDeleteFile(
+    func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDeleteFile(func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDeleteFile(func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def beforeFind(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def beforeFind(
-    arg1: js.Any,
+  inline def beforeFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
     func: js.Function1[
-      /* request */ BeforeFindRequest, 
-      (js.Promise[
-        typings.parse.mod.global.Parse.Query[typings.parse.mod.global.Parse.Object[Attributes]] | Unit
-      ]) | typings.parse.mod.global.Parse.Query[typings.parse.mod.global.Parse.Object[Attributes]] | Unit
+      /* request */ BeforeFindRequest[T], 
+      (js.Promise[typings.parse.mod.global.Parse.Query[T] | Unit]) | typings.parse.mod.global.Parse.Query[T] | Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[
+      /* request */ BeforeFindRequest[T], 
+      (js.Promise[typings.parse.mod.global.Parse.Query[T] | Unit]) | typings.parse.mod.global.Parse.Query[T] | Unit
+    ],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[
+      /* request */ BeforeFindRequest[T], 
+      (js.Promise[typings.parse.mod.global.Parse.Query[T] | Unit]) | typings.parse.mod.global.Parse.Query[T] | Unit
+    ],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[
+      /* request */ BeforeFindRequest[T], 
+      (js.Promise[typings.parse.mod.global.Parse.Query[T] | Unit]) | typings.parse.mod.global.Parse.Query[T] | Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[
+      /* request */ BeforeFindRequest[T], 
+      (js.Promise[typings.parse.mod.global.Parse.Query[T] | Unit]) | typings.parse.mod.global.Parse.Query[T] | Unit
+    ],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[
+      /* request */ BeforeFindRequest[T], 
+      (js.Promise[typings.parse.mod.global.Parse.Query[T] | Unit]) | typings.parse.mod.global.Parse.Query[T] | Unit
+    ],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: Unit,
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T], func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def beforeLogin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeLogin")().asInstanceOf[Unit]
-  inline def beforeLogin(func: js.Function1[/* request */ TriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeLogin(
+    func: js.Function1[
+      /* request */ TriggerRequest[typings.parse.mod.global.Parse.User[Attributes]], 
+      js.Thenable[Unit] | Unit
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def beforeSave(arg1: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def beforeSave(arg1: js.Any, func: js.Function1[/* request */ BeforeSaveRequest, js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: js.Function1[/* request */ BeforeSaveRequest[T], js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ BeforeSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ BeforeSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ BeforeSaveRequest[T], js.Promise[Unit] | Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ BeforeSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ BeforeSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: Unit,
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T], func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def beforeSaveFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")().asInstanceOf[Unit]
   inline def beforeSaveFile(
@@ -133,14 +416,36 @@ object Cloud {
       js.Thenable[typings.parse.mod.global.Parse.File] | Unit
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeSaveFile(
+    func: js.Function1[
+      /* request */ FileTriggerRequest, 
+      js.Thenable[typings.parse.mod.global.Parse.File] | Unit
+    ],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSaveFile(
+    func: js.Function1[
+      /* request */ FileTriggerRequest, 
+      js.Thenable[typings.parse.mod.global.Parse.File] | Unit
+    ],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSaveFile(func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSaveFile(func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def define(name: String, func: js.Function1[/* request */ FunctionRequest[Params], js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define(name: String, func: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define(
+    name: String,
+    func: js.Function1[/* request */ FunctionRequest[Params], Any],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define(name: String, func: js.Function1[/* request */ FunctionRequest[Params], Any], validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def define_0[T /* <: js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
     */ /* param */ define & TopLevel[Parameters[T]], 
-    js.Any
+    Any
   ] */](
     name: String,
     func: js.Function1[
@@ -150,14 +455,60 @@ object Cloud {
       js.Promise[ReturnType[T]] | ReturnType[T]
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define_0[T /* <: js.Function1[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
+    */ /* param */ define & TopLevel[Parameters[T]], 
+    Any
+  ] */](
+    name: String,
+    func: js.Function1[
+      /* request */ FunctionRequest[
+        /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any
+      ], 
+      js.Promise[ReturnType[T]] | ReturnType[T]
+    ],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define_0[T /* <: js.Function1[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
+    */ /* param */ define & TopLevel[Parameters[T]], 
+    Any
+  ] */](
+    name: String,
+    func: js.Function1[
+      /* request */ FunctionRequest[
+        /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any
+      ], 
+      js.Promise[ReturnType[T]] | ReturnType[T]
+    ],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def define_T_Function0Any[T /* <: js.Function0[js.Any] */](
+  inline def define_T_Function0Any[T /* <: js.Function0[Any] */](
     name: String,
     func: js.Function1[
       /* request */ FunctionRequest[js.Object], 
       js.Promise[ReturnType[T]] | ReturnType[T]
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define_T_Function0Any[T /* <: js.Function0[Any] */](
+    name: String,
+    func: js.Function1[
+      /* request */ FunctionRequest[js.Object], 
+      js.Promise[ReturnType[T]] | ReturnType[T]
+    ],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define_T_Function0Any[T /* <: js.Function0[Any] */](
+    name: String,
+    func: js.Function1[
+      /* request */ FunctionRequest[js.Object], 
+      js.Promise[ReturnType[T]] | ReturnType[T]
+    ],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Gets job status by Id
@@ -175,19 +526,19 @@ object Cloud {
   inline def httpRequest(options: HTTPOptions): js.Promise[HttpResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HttpResponse]]
   
   inline def job(name: String): HttpResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("job")(name.asInstanceOf[js.Any]).asInstanceOf[HttpResponse]
-  inline def job(name: String, func: js.Function1[/* request */ JobRequest, js.Promise[Unit] | Unit]): HttpResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("job")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[HttpResponse]
+  inline def job(name: String, func: js.Function1[/* request */ JobRequest[Params], js.Promise[Unit] | Unit]): HttpResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("job")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[HttpResponse]
   
-  inline def run(name: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  inline def run(name: String, data: Unit, options: RunOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def run(name: String, data: Params): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def run(name: String, data: Params, options: RunOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def run[T /* <: js.Function0[js.Any] */](name: String, data: Null, options: RunOptions): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
+  inline def run(name: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def run(name: String, data: Unit, options: RunOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def run(name: String, data: Params): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def run(name: String, data: Params, options: RunOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def run[T /* <: js.Function0[Any] */](name: String, data: Null, options: RunOptions): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
   
   inline def run_0[T /* <: js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
     */ /* param */ run & TopLevel[Parameters[T]], 
-    js.Any
+    Any
   ] */](
     name: String,
     data: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any
@@ -196,15 +547,15 @@ object Cloud {
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
     */ /* param */ run & TopLevel[Parameters[T]], 
-    js.Any
+    Any
   ] */](
     name: String,
     data: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any,
     options: RunOptions
   ): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
   
-  inline def run_T_Function0Any[T /* <: js.Function0[js.Any] */](name: String): js.Promise[ReturnType[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnType[T]]]
-  inline def run_T_Function0Any[T /* <: js.Function0[js.Any] */](name: String, data: Unit, options: RunOptions): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
+  inline def run_T_Function0Any[T /* <: js.Function0[Any] */](name: String): js.Promise[ReturnType[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnType[T]]]
+  inline def run_T_Function0Any[T /* <: js.Function0[Any] */](name: String, data: Unit, options: RunOptions): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
   
   /**
     * Starts a given cloud job, which will process asynchronously.
@@ -212,7 +563,7 @@ object Cloud {
     * @param data The parameters to send to the cloud function.
     * @returns A promise that will be resolved with the jobStatusId of the job.
     */
-  inline def startJob(jobName: String, data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("startJob")(jobName.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def startJob(jobName: String, data: Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("startJob")(jobName.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def useMasterKey(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useMasterKey")().asInstanceOf[Unit]
 }

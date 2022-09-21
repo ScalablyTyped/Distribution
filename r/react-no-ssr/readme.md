@@ -11,14 +11,11 @@ React component to wrap non SSR components.
 | Full name          | react-no-ssr |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 893707 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 109755.33333333333 |
+| # stars            | 423.0 |
 
 ## Links
-- [Homepage](https://github.com/kadirahq/react-no-ssr#readme)
-- [Bugs](https://github.com/kadirahq/react-no-ssr/issues)
-- [Repository](https://github.com/kadirahq/react-no-ssr)
 - [Npm](https://www.npmjs.com/package/react-no-ssr)
     
 

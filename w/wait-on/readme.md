@@ -1,7 +1,7 @@
 
 # Scala.js typings for wait-on
 
-Typings are for version 5.2
+Typings are for version 5.3
 
 ## Library description:
 wait-on is a cross platform command line utility and Node.js API which will wait for files, ports, sockets, and http(s) resources to become available
@@ -10,10 +10,10 @@ wait-on is a cross platform command line utility and Node.js API which will wait
 | ------------------ | :-------------: |
 | Full name          | wait-on |
 | Keywords           | wait, delay, cli, files, tcp, ports, sockets, http, exist, ready, available, portable, cross-platform, unix, linux, windows, win32, osx |
-| # releases         | 18 |
-| # dependents       | 90 |
-| # downloads        | 40193384 |
-| # stars            | 11 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0116990333333334E7 |
+| # stars            | 1523.0 |
 
 ## Links
 - [Homepage](https://github.com/jeffbski/wait-on#readme)

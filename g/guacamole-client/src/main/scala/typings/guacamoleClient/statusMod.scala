@@ -30,7 +30,7 @@ object statusMod {
   
   @JSImport("guacamole-client/lib/Status", "Status")
   @js.native
-  class Status protected () extends StObject {
+  open class Status protected () extends StObject {
     /**
       * @param code The Guacamole status code, as defined by Guacamole.Status.Code.
       * @param [message] An optional human-readable message.

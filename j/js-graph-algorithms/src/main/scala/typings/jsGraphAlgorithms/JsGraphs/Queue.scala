@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Queue[T] extends StObject {
   
-  /* private */ var N: js.Any
+  /* private */ var N: Any
   
   def dequeue(): js.UndefOr[T]
   
   def enqueue(item: T): Unit
   
-  /* private */ var first: js.Any
+  /* private */ var first: Any
   
   def isEmpty(): Boolean
   
-  /* private */ var last: js.Any
+  /* private */ var last: Any
   
   def size(): Double
   
@@ -25,12 +25,12 @@ trait Queue[T] extends StObject {
 object Queue {
   
   inline def apply[T](
-    N: js.Any,
+    N: Any,
     dequeue: () => js.UndefOr[T],
     enqueue: T => Unit,
-    first: js.Any,
+    first: Any,
     isEmpty: () => Boolean,
-    last: js.Any,
+    last: Any,
     size: () => Double,
     toArray: () => js.Array[T]
   ): Queue[T] = {
@@ -44,13 +44,13 @@ object Queue {
     
     inline def setEnqueue(value: T => Unit): Self = StObject.set(x, "enqueue", js.Any.fromFunction1(value))
     
-    inline def setFirst(value: js.Any): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    inline def setFirst(value: Any): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
     inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
-    inline def setLast(value: js.Any): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    inline def setLast(value: Any): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
-    inline def setN(value: js.Any): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+    inline def setN(value: Any): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
     
     inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     

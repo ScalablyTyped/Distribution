@@ -26,7 +26,7 @@ object TargetInstancesScopedList {
     
     inline def setTargetInstancesUndefined: Self = StObject.set(x, "targetInstances", js.undefined)
     
-    inline def setTargetInstancesVarargs(value: TargetInstance*): Self = StObject.set(x, "targetInstances", js.Array(value :_*))
+    inline def setTargetInstancesVarargs(value: TargetInstance*): Self = StObject.set(x, "targetInstances", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

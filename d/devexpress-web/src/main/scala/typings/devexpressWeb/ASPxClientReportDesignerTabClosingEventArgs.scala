@@ -20,11 +20,11 @@ trait ASPxClientReportDesignerTabClosingEventArgs
   /**
     * Specifies the JQuery Deferred object, which when resolved, forces the report tab to be closed.
     */
-  var ReadyToClose: JQueryDeferred[js.Any]
+  var ReadyToClose: JQueryDeferred[Any]
 }
 object ASPxClientReportDesignerTabClosingEventArgs {
   
-  inline def apply(Handled: Boolean, ReadyToClose: JQueryDeferred[js.Any], Tab: ASPxDesignerNavigateTab): ASPxClientReportDesignerTabClosingEventArgs = {
+  inline def apply(Handled: Boolean, ReadyToClose: JQueryDeferred[Any], Tab: ASPxDesignerNavigateTab): ASPxClientReportDesignerTabClosingEventArgs = {
     val __obj = js.Dynamic.literal(Handled = Handled.asInstanceOf[js.Any], ReadyToClose = ReadyToClose.asInstanceOf[js.Any], Tab = Tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientReportDesignerTabClosingEventArgs]
   }
@@ -33,6 +33,6 @@ object ASPxClientReportDesignerTabClosingEventArgs {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "Handled", value.asInstanceOf[js.Any])
     
-    inline def setReadyToClose(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "ReadyToClose", value.asInstanceOf[js.Any])
+    inline def setReadyToClose(value: JQueryDeferred[Any]): Self = StObject.set(x, "ReadyToClose", value.asInstanceOf[js.Any])
   }
 }

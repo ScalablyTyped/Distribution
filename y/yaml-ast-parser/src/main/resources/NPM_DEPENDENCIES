@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "yaml-ast-parser" : "0.0.43"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "yaml-ast-parser" : "0.0.43"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

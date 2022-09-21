@@ -12,8 +12,8 @@ object reactNodeFormatterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def serialize(node: js.Any, config: js.Any, indentation: js.Any, depth: js.Any, refs: js.Any, printer: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(node.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def serialize(node: Any, config: Any, indentation: Any, depth: Any, refs: Any, printer: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(node.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def test(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def test(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

@@ -11,7 +11,7 @@ trait ChartLabelProps extends StObject {
   
   var includeMargin: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var style: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var text: String
   
@@ -36,7 +36,7 @@ object ChartLabelProps {
     
     inline def setIncludeMarginUndefined: Self = StObject.set(x, "includeMargin", js.undefined)
     
-    inline def setStyle(value: StringDictionary[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StringDictionary[Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

@@ -60,7 +60,7 @@ trait IVaultObjectPropertyOperations extends StObject {
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any
+    ElectronicSignature: Any
   ): IObjectVersionAndProperties
   
   def SetCreationInfoAdmin(
@@ -95,7 +95,7 @@ trait IVaultObjectPropertyOperations extends StObject {
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any
+    ElectronicSignature: Any
   ): IObjectVersionAndProperties
   
   def SetProperty(ObjVer: IObjVer, PropertyValue: IPropertyValue): IObjectVersionAndProperties
@@ -104,7 +104,7 @@ trait IVaultObjectPropertyOperations extends StObject {
   
   def SetWorkflowState(ObjVer: IObjVer, WorkflowState: IObjectVersionWorkflowState): IObjectVersionAndProperties
   
-  def SetWorkflowStateEx(ObjVer: IObjVer, WorkflowState: IObjectVersionWorkflowState, ElectronicSignature: js.Any): IObjectVersionAndProperties
+  def SetWorkflowStateEx(ObjVer: IObjVer, WorkflowState: IObjectVersionWorkflowState, ElectronicSignature: Any): IObjectVersionAndProperties
   
   def SetWorkflowStateTransition(ObjVer: IObjVer, Workflow: Double, lStateTransition: Double, lVersionComment: String): IObjectVersionAndProperties
   
@@ -113,7 +113,7 @@ trait IVaultObjectPropertyOperations extends StObject {
     Workflow: Double,
     StateTransition: Double,
     VersionComment: String,
-    ElectronicSignature: js.Any
+    ElectronicSignature: Any
   ): IObjectVersionAndProperties
 }
 object IVaultObjectPropertyOperations {
@@ -139,19 +139,19 @@ object IVaultObjectPropertyOperations {
     RemoveProperty: (IObjVer, Double) => IObjectVersionAndProperties,
     SetAllProperties: (IObjVer, Boolean, IPropertyValues) => IObjectVersionAndProperties,
     SetAllPropertiesWithPermissions: (IObjVer, Boolean, IPropertyValues, MFACLEnforcingMode, IAccessControlList) => IObjectVersionAndProperties,
-    SetAllPropertiesWithPermissionsEx: (IObjVer, Boolean, IPropertyValues, MFACLEnforcingMode, IAccessControlList, js.Any) => IObjectVersionAndProperties,
+    SetAllPropertiesWithPermissionsEx: (IObjVer, Boolean, IPropertyValues, MFACLEnforcingMode, IAccessControlList, Any) => IObjectVersionAndProperties,
     SetCreationInfoAdmin: (IObjVer, Boolean, ITypedValue, Boolean, ITypedValue) => IObjectVersionAndProperties,
     SetLastModificationInfoAdmin: (IObjVer, Boolean, ITypedValue, Boolean, ITypedValue) => IObjectVersionAndProperties,
     SetProperties: (IObjVer, IPropertyValues) => IObjectVersionAndProperties,
     SetPropertiesOfMultipleObjects: ISetPropertiesParamsOfMultipleObjects => IObjectVersionAndPropertiesOfMultipleObjects,
     SetPropertiesWithPermissions: (IObjVer, IPropertyValues, MFACLEnforcingMode, IAccessControlList) => IObjectVersionAndProperties,
-    SetPropertiesWithPermissionsEx: (IObjVer, IPropertyValues, MFACLEnforcingMode, IAccessControlList, js.Any) => IObjectVersionAndProperties,
+    SetPropertiesWithPermissionsEx: (IObjVer, IPropertyValues, MFACLEnforcingMode, IAccessControlList, Any) => IObjectVersionAndProperties,
     SetProperty: (IObjVer, IPropertyValue) => IObjectVersionAndProperties,
     SetVersionComment: (IObjVer, IPropertyValue) => IObjectVersionAndProperties,
     SetWorkflowState: (IObjVer, IObjectVersionWorkflowState) => IObjectVersionAndProperties,
-    SetWorkflowStateEx: (IObjVer, IObjectVersionWorkflowState, js.Any) => IObjectVersionAndProperties,
+    SetWorkflowStateEx: (IObjVer, IObjectVersionWorkflowState, Any) => IObjectVersionAndProperties,
     SetWorkflowStateTransition: (IObjVer, Double, Double, String) => IObjectVersionAndProperties,
-    SetWorkflowStateTransitionEx: (IObjVer, Double, Double, String, js.Any) => IObjectVersionAndProperties
+    SetWorkflowStateTransitionEx: (IObjVer, Double, Double, String, Any) => IObjectVersionAndProperties
   ): IVaultObjectPropertyOperations = {
     val __obj = js.Dynamic.literal(ApproveOrRejectAssignment = js.Any.fromFunction2(ApproveOrRejectAssignment), ApproveOrRejectAssignmentByUser = js.Any.fromFunction3(ApproveOrRejectAssignmentByUser), CreatePropertiesFromFileInformation = js.Any.fromFunction1(CreatePropertiesFromFileInformation), GenerateAutomaticPermissionsFromPropertyValues = js.Any.fromFunction1(GenerateAutomaticPermissionsFromPropertyValues), GetProperties = js.Any.fromFunction2(GetProperties), GetPropertiesAsXML = js.Any.fromFunction2(GetPropertiesAsXML), GetPropertiesForDisplay = js.Any.fromFunction2(GetPropertiesForDisplay), GetPropertiesForMetadataSync = js.Any.fromFunction2(GetPropertiesForMetadataSync), GetPropertiesOfMultipleObjects = js.Any.fromFunction1(GetPropertiesOfMultipleObjects), GetPropertiesWithIconClues = js.Any.fromFunction2(GetPropertiesWithIconClues), GetPropertiesWithIconCluesOfMultipleObjects = js.Any.fromFunction1(GetPropertiesWithIconCluesOfMultipleObjects), GetProperty = js.Any.fromFunction2(GetProperty), GetVersionComment = js.Any.fromFunction1(GetVersionComment), GetVersionCommentHistory = js.Any.fromFunction1(GetVersionCommentHistory), GetWorkflowState = js.Any.fromFunction2(GetWorkflowState), MarkAssignmentComplete = js.Any.fromFunction1(MarkAssignmentComplete), MarkAssignmentCompleteByUser = js.Any.fromFunction2(MarkAssignmentCompleteByUser), RemoveProperty = js.Any.fromFunction2(RemoveProperty), SetAllProperties = js.Any.fromFunction3(SetAllProperties), SetAllPropertiesWithPermissions = js.Any.fromFunction5(SetAllPropertiesWithPermissions), SetAllPropertiesWithPermissionsEx = js.Any.fromFunction6(SetAllPropertiesWithPermissionsEx), SetCreationInfoAdmin = js.Any.fromFunction5(SetCreationInfoAdmin), SetLastModificationInfoAdmin = js.Any.fromFunction5(SetLastModificationInfoAdmin), SetProperties = js.Any.fromFunction2(SetProperties), SetPropertiesOfMultipleObjects = js.Any.fromFunction1(SetPropertiesOfMultipleObjects), SetPropertiesWithPermissions = js.Any.fromFunction4(SetPropertiesWithPermissions), SetPropertiesWithPermissionsEx = js.Any.fromFunction5(SetPropertiesWithPermissionsEx), SetProperty = js.Any.fromFunction2(SetProperty), SetVersionComment = js.Any.fromFunction2(SetVersionComment), SetWorkflowState = js.Any.fromFunction2(SetWorkflowState), SetWorkflowStateEx = js.Any.fromFunction3(SetWorkflowStateEx), SetWorkflowStateTransition = js.Any.fromFunction4(SetWorkflowStateTransition), SetWorkflowStateTransitionEx = js.Any.fromFunction5(SetWorkflowStateTransitionEx))
     __obj.asInstanceOf[IVaultObjectPropertyOperations]
@@ -202,7 +202,7 @@ object IVaultObjectPropertyOperations {
     ): Self = StObject.set(x, "SetAllPropertiesWithPermissions", js.Any.fromFunction5(value))
     
     inline def setSetAllPropertiesWithPermissionsEx(
-      value: (IObjVer, Boolean, IPropertyValues, MFACLEnforcingMode, IAccessControlList, js.Any) => IObjectVersionAndProperties
+      value: (IObjVer, Boolean, IPropertyValues, MFACLEnforcingMode, IAccessControlList, Any) => IObjectVersionAndProperties
     ): Self = StObject.set(x, "SetAllPropertiesWithPermissionsEx", js.Any.fromFunction6(value))
     
     inline def setSetCreationInfoAdmin(value: (IObjVer, Boolean, ITypedValue, Boolean, ITypedValue) => IObjectVersionAndProperties): Self = StObject.set(x, "SetCreationInfoAdmin", js.Any.fromFunction5(value))
@@ -218,7 +218,7 @@ object IVaultObjectPropertyOperations {
     ): Self = StObject.set(x, "SetPropertiesWithPermissions", js.Any.fromFunction4(value))
     
     inline def setSetPropertiesWithPermissionsEx(
-      value: (IObjVer, IPropertyValues, MFACLEnforcingMode, IAccessControlList, js.Any) => IObjectVersionAndProperties
+      value: (IObjVer, IPropertyValues, MFACLEnforcingMode, IAccessControlList, Any) => IObjectVersionAndProperties
     ): Self = StObject.set(x, "SetPropertiesWithPermissionsEx", js.Any.fromFunction5(value))
     
     inline def setSetProperty(value: (IObjVer, IPropertyValue) => IObjectVersionAndProperties): Self = StObject.set(x, "SetProperty", js.Any.fromFunction2(value))
@@ -227,10 +227,10 @@ object IVaultObjectPropertyOperations {
     
     inline def setSetWorkflowState(value: (IObjVer, IObjectVersionWorkflowState) => IObjectVersionAndProperties): Self = StObject.set(x, "SetWorkflowState", js.Any.fromFunction2(value))
     
-    inline def setSetWorkflowStateEx(value: (IObjVer, IObjectVersionWorkflowState, js.Any) => IObjectVersionAndProperties): Self = StObject.set(x, "SetWorkflowStateEx", js.Any.fromFunction3(value))
+    inline def setSetWorkflowStateEx(value: (IObjVer, IObjectVersionWorkflowState, Any) => IObjectVersionAndProperties): Self = StObject.set(x, "SetWorkflowStateEx", js.Any.fromFunction3(value))
     
     inline def setSetWorkflowStateTransition(value: (IObjVer, Double, Double, String) => IObjectVersionAndProperties): Self = StObject.set(x, "SetWorkflowStateTransition", js.Any.fromFunction4(value))
     
-    inline def setSetWorkflowStateTransitionEx(value: (IObjVer, Double, Double, String, js.Any) => IObjectVersionAndProperties): Self = StObject.set(x, "SetWorkflowStateTransitionEx", js.Any.fromFunction5(value))
+    inline def setSetWorkflowStateTransitionEx(value: (IObjVer, Double, Double, String, Any) => IObjectVersionAndProperties): Self = StObject.set(x, "SetWorkflowStateTransitionEx", js.Any.fromFunction5(value))
   }
 }

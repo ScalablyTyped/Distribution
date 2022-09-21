@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with BaseNode
      with Class
      with Expression
-     with Scopable {
+     with Scopable
+     with Standardized {
   
   var body: ClassBody_
   
@@ -48,7 +49,7 @@ object ClassExpression_ {
     
     inline def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
     
-    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value :_*))
+    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value*))
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -58,7 +59,7 @@ object ClassExpression_ {
     
     inline def setImplementsNull: Self = StObject.set(x, "implements", null)
     
-    inline def setImplementsVarargs(value: (TSExpressionWithTypeArguments_ | ClassImplements_)*): Self = StObject.set(x, "implements", js.Array(value :_*))
+    inline def setImplementsVarargs(value: (TSExpressionWithTypeArguments_ | ClassImplements_)*): Self = StObject.set(x, "implements", js.Array(value*))
     
     inline def setMixins(value: InterfaceExtends_): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
     

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "ReflogEntry")
 @js.native
-class ReflogEntry ()
+open class ReflogEntry ()
   extends typings.nodegit.refLogMod.ReflogEntry

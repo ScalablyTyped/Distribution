@@ -16,7 +16,7 @@ trait IRequestShortcutConfig
     * {string|Object}
     * Data to be sent as the request message data.
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /**
     * Name of the parameter added (by AngularJS) to the request to specify the name (in the server response) of the JSON-P callback to invoke.
@@ -28,7 +28,7 @@ trait IRequestShortcutConfig
     * {Object.<string|Object>}
     * Map of strings or objects which will be turned to ?key1=value1&key2=value2 after the url. If the value is not a string, it will be JSONified.
     */
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Any] = js.undefined
   
   /**
     * See [XMLHttpRequest.responseType]https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest#xmlhttprequest-responsetype
@@ -38,7 +38,7 @@ trait IRequestShortcutConfig
   /**
     * Timeout in milliseconds, or promise that should abort the request when resolved.
     */
-  var timeout: js.UndefOr[Double | IPromise[js.Any]] = js.undefined
+  var timeout: js.UndefOr[Double | IPromise[Any]] = js.undefined
 }
 object IRequestShortcutConfig {
   
@@ -49,7 +49,7 @@ object IRequestShortcutConfig {
   
   extension [Self <: IRequestShortcutConfig](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -57,7 +57,7 @@ object IRequestShortcutConfig {
     
     inline def setJsonpCallbackParamUndefined: Self = StObject.set(x, "jsonpCallbackParam", js.undefined)
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
@@ -65,7 +65,7 @@ object IRequestShortcutConfig {
     
     inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    inline def setTimeout(value: Double | IPromise[js.Any]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double | IPromise[Any]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }

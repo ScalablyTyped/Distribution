@@ -1,14 +1,17 @@
 package typings.reactBootstrapTable2Toolkit
 
 import typings.react.mod.CSSProperties
+import typings.react.mod.Component
 import typings.react.mod.Context
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.react.mod.RefObject
 import typings.react.mod.global.JSX.Element
 import typings.reactBootstrapTable2Toolkit.anon.Bootstrap4
 import typings.reactBootstrapTable2Toolkit.anon.Columns
 import typings.reactBootstrapTable2Toolkit.anon.OnExport
 import typings.reactBootstrapTableNext.mod.ColumnDescription
+import typings.reactBootstrapTableNext.mod.SearchProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +22,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(props: TableToolkitProps[js.Any]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def default(props: TableToolkitProps[Any]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   object CSVExport {
     
@@ -47,7 +50,7 @@ object mod {
     
     inline def ClearSearchButton(props: ClearSearchButtonProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearSearchButton")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
     
-    inline def SearchBar(props: SearchBarProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SearchBar")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def SearchBar(props: SearchBarProps[Any]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SearchBar")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   }
   
   @JSImport("react-bootstrap-table2-toolkit", "ToolkitContext")
@@ -209,17 +212,15 @@ object mod {
     }
   }
   
-  trait SearchBarProps extends StObject {
+  trait SearchBarProps[T]
+    extends StObject
+       with SearchProps[T] {
     
     var className: js.UndefOr[String] = js.undefined
     
     var delay: js.UndefOr[Double] = js.undefined
     
-    def onSearch(searchText: String): Unit
-    
-    var placeholder: js.UndefOr[String] = js.undefined
-    
-    var searchText: js.UndefOr[String] = js.undefined
+    var ref: js.UndefOr[RefObject[Component[SearchProps[T], js.Object, Any]]] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -227,12 +228,12 @@ object mod {
   }
   object SearchBarProps {
     
-    inline def apply(onSearch: String => Unit): SearchBarProps = {
-      val __obj = js.Dynamic.literal(onSearch = js.Any.fromFunction1(onSearch))
-      __obj.asInstanceOf[SearchBarProps]
+    inline def apply[T](): SearchBarProps[T] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SearchBarProps[T]]
     }
     
-    extension [Self <: SearchBarProps](x: Self) {
+    extension [Self <: SearchBarProps[?], T](x: Self & SearchBarProps[T]) {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -242,15 +243,9 @@ object mod {
       
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      inline def setOnSearch(value: String => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
+      inline def setRef(value: RefObject[Component[SearchProps[T], js.Object, Any]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
-      
-      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
-      
-      inline def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
-      
-      inline def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -264,7 +259,7 @@ object mod {
   
   trait SearchMatchProps[T /* <: js.Object */] extends StObject {
     
-    var column: ColumnDescription[T, js.Any]
+    var column: ColumnDescription[T, Any]
     
     var row: T
     
@@ -274,14 +269,14 @@ object mod {
   }
   object SearchMatchProps {
     
-    inline def apply[T /* <: js.Object */](column: ColumnDescription[T, js.Any], row: T, searchText: String, value: String): SearchMatchProps[T] = {
+    inline def apply[T /* <: js.Object */](column: ColumnDescription[T, Any], row: T, searchText: String, value: String): SearchMatchProps[T] = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], searchText = searchText.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchMatchProps[T]]
     }
     
     extension [Self <: SearchMatchProps[?], T /* <: js.Object */](x: Self & SearchMatchProps[T]) {
       
-      inline def setColumn(value: ColumnDescription[T, js.Any]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: ColumnDescription[T, Any]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setRow(value: T): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
@@ -292,6 +287,8 @@ object mod {
   }
   
   trait TableSearchProps[T /* <: js.Object */] extends StObject {
+    
+    var afterSearch: js.UndefOr[js.Function1[/* newResult */ js.Array[T], js.UndefOr[Unit]]] = js.undefined
     
     var customMatchFunc: js.UndefOr[js.Function1[/* props */ SearchMatchProps[T], Boolean]] = js.undefined
     
@@ -311,6 +308,10 @@ object mod {
     }
     
     extension [Self <: TableSearchProps[?], T /* <: js.Object */](x: Self & TableSearchProps[T]) {
+      
+      inline def setAfterSearch(value: /* newResult */ js.Array[T] => js.UndefOr[Unit]): Self = StObject.set(x, "afterSearch", js.Any.fromFunction1(value))
+      
+      inline def setAfterSearchUndefined: Self = StObject.set(x, "afterSearch", js.undefined)
       
       inline def setCustomMatchFunc(value: /* props */ SearchMatchProps[T] => Boolean): Self = StObject.set(x, "customMatchFunc", js.Any.fromFunction1(value))
       
@@ -342,7 +343,7 @@ object mod {
     
     var columnToggle: js.UndefOr[Boolean] = js.undefined
     
-    var columns: js.Array[ColumnDescription[T, js.Any]]
+    var columns: js.Array[ColumnDescription[T, Any]]
     
     var data: js.Array[T]
     
@@ -350,7 +351,7 @@ object mod {
     
     var keyField: /* keyof T */ String
     
-    var ref: js.UndefOr[js.Any] = js.undefined
+    var ref: js.UndefOr[Any] = js.undefined
     
     var search: js.UndefOr[TableSearchProps[T] | Boolean] = js.undefined
   }
@@ -358,7 +359,7 @@ object mod {
     
     inline def apply[T /* <: js.Object */](
       children: ToolkitContextType => Element,
-      columns: js.Array[ColumnDescription[T, js.Any]],
+      columns: js.Array[ColumnDescription[T, Any]],
       data: js.Array[T],
       keyField: /* keyof T */ String
     ): TableToolkitProps[T] = {
@@ -378,13 +379,13 @@ object mod {
       
       inline def setColumnToggleUndefined: Self = StObject.set(x, "columnToggle", js.undefined)
       
-      inline def setColumns(value: js.Array[ColumnDescription[T, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[ColumnDescription[T, Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: (ColumnDescription[T, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (ColumnDescription[T, Any])*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setExportCSV(value: Boolean | CSVProps): Self = StObject.set(x, "exportCSV", value.asInstanceOf[js.Any])
       
@@ -392,7 +393,7 @@ object mod {
       
       inline def setKeyField(value: /* keyof T */ String): Self = StObject.set(x, "keyField", value.asInstanceOf[js.Any])
       
-      inline def setRef(value: js.Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
@@ -408,7 +409,7 @@ object mod {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var columns: js.Array[ColumnDescription[js.Any, js.Any]]
+    var columns: js.Array[ColumnDescription[Any, Any]]
     
     var contextual: js.UndefOr[String] = js.undefined
     
@@ -422,7 +423,7 @@ object mod {
   object ToggleListProps {
     
     inline def apply(
-      columns: js.Array[ColumnDescription[js.Any, js.Any]],
+      columns: js.Array[ColumnDescription[Any, Any]],
       onColumnToggle: String => Unit,
       toggles: js.Array[Boolean]
     ): ToggleListProps = {
@@ -440,9 +441,9 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setColumns(value: js.Array[ColumnDescription[js.Any, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[ColumnDescription[Any, Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: (ColumnDescription[js.Any, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (ColumnDescription[Any, Any])*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setContextual(value: String): Self = StObject.set(x, "contextual", value.asInstanceOf[js.Any])
       
@@ -452,7 +453,7 @@ object mod {
       
       inline def setToggles(value: js.Array[Boolean]): Self = StObject.set(x, "toggles", value.asInstanceOf[js.Any])
       
-      inline def setTogglesVarargs(value: Boolean*): Self = StObject.set(x, "toggles", js.Array(value :_*))
+      inline def setTogglesVarargs(value: Boolean*): Self = StObject.set(x, "toggles", js.Array(value*))
     }
   }
   

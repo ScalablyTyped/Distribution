@@ -34,7 +34,7 @@ object PropOptions {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setTypeVarargs(value: Prop[T]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: Prop[T]*): Self = StObject.set(x, "type", js.Array(value*))
     
     inline def setValue(value: T | js.Function0[js.Object]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

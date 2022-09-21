@@ -16,7 +16,7 @@ trait Schedule
     * @param {number} It is optional. If it is available, this render the resource at the given specified index location. Else render at end of the all resources.
     * @returns {void}
     */
-  def addResource(resourceObject: js.Any, name: String, index: Double): Unit = js.native
+  def addResource(resourceObject: Any, name: String, index: Double): Unit = js.native
   
   var defaults: Model = js.native
   
@@ -25,7 +25,7 @@ trait Schedule
     * @returns {void}
     */
   def deleteAppointment(data: String): Unit = js.native
-  def deleteAppointment(data: js.Any): Unit = js.native
+  def deleteAppointment(data: Any): Unit = js.native
   
   /** Exports the appointments from the Schedule control.
     * @param {string} It refers the controller action name to redirect. (For MVC)
@@ -48,12 +48,12 @@ trait Schedule
     * @param {any[]} Holds array of one or more conditional objects for filtering the appointments based on it.
     * @returns {any[]}
     */
-  def filterAppointments(filterConditions: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def filterAppointments(filterConditions: js.Array[Any]): js.Array[Any] = js.native
   
   /** Gets the complete appointment list of Schedule control.
     * @returns {any[]}
     */
-  def getAppointments(): js.Array[js.Any] = js.native
+  def getAppointments(): js.Array[Any] = js.native
   
   /** Generate the recurrence rule as a string, based on the repeat options selected.
     * @returns {string}
@@ -65,7 +65,7 @@ trait Schedule
     * @param {any} TD element object rendered as Scheduler work cell
     * @returns {any}
     */
-  def getSlotByElement(element: js.Any): js.Any = js.native
+  def getSlotByElement(element: Any): Any = js.native
   
   @JSName("model")
   var model_Schedule: Model = js.native
@@ -80,7 +80,7 @@ trait Schedule
     * @param {any} Either accepts no arguments at all or else accepts an appointment object.
     * @returns {void}
     */
-  def print(data: js.Any): Unit = js.native
+  def print(data: Any): Unit = js.native
   
   /** Refreshes the entire Schedule control.
     * @returns {void}
@@ -109,11 +109,11 @@ trait Schedule
     * @param {any} appointment object which includes appointment details
     * @returns {void}
     */
-  def saveAppointment(appointmentObject: js.Any): Unit = js.native
+  def saveAppointment(appointmentObject: Any): Unit = js.native
   
-  def searchAppointments(searchString: String, field: String, operator: String, ignoreCase: Boolean): js.Array[js.Any] = js.native
-  def searchAppointments(searchString: String, field: String, operator: FilterOperators, ignoreCase: Boolean): js.Array[js.Any] = js.native
-  def searchAppointments(searchString: js.Any, field: String, operator: String, ignoreCase: Boolean): js.Array[js.Any] = js.native
+  def searchAppointments(searchString: String, field: String, operator: String, ignoreCase: Boolean): js.Array[Any] = js.native
+  def searchAppointments(searchString: String, field: String, operator: FilterOperators, ignoreCase: Boolean): js.Array[Any] = js.native
+  def searchAppointments(searchString: Any, field: String, operator: String, ignoreCase: Boolean): js.Array[Any] = js.native
   /** Searches the appointments from the appointment list of Schedule control based on the provided search string in its argument list.
     * @param {any|string} Defines the search word or the filter condition, based on which the appointments are filtered from the list.
     * @param {string} Defines the field name on which the search is to be made.
@@ -121,7 +121,7 @@ trait Schedule
     * @param {boolean} Defines the ignoreCase value for performing the search operation.
     * @returns {any[]}
     */
-  def searchAppointments(searchString: js.Any, field: String, operator: FilterOperators, ignoreCase: Boolean): js.Array[js.Any] = js.native
+  def searchAppointments(searchString: Any, field: String, operator: FilterOperators, ignoreCase: Boolean): js.Array[Any] = js.native
 }
 object Schedule {
   
@@ -218,7 +218,7 @@ object Schedule {
     
     /** Returns the data about the view change action.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the GUid of appointment.
       */
@@ -253,7 +253,7 @@ object Schedule {
       
       inline def setCurrentActionUndefined: Self = StObject.set(x, "currentAction", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -279,7 +279,7 @@ object Schedule {
     
     /** Returns the appointment data dropped.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -291,7 +291,7 @@ object Schedule {
     
     /** Returns the data about view change action.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the Schedule model.
       */
@@ -314,7 +314,7 @@ object Schedule {
     
     extension [Self <: ActionCompleteEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -326,7 +326,7 @@ object Schedule {
       
       inline def setCurrentActionUndefined: Self = StObject.set(x, "currentAction", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -388,7 +388,7 @@ object Schedule {
     
     /** Returns the edited appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -419,7 +419,7 @@ object Schedule {
     
     extension [Self <: AppointmentChangedEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -449,7 +449,7 @@ object Schedule {
     
     /** Returns the clicked appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -461,7 +461,7 @@ object Schedule {
     
     /** Returns the object of appointmentClick event.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -476,7 +476,7 @@ object Schedule {
     
     extension [Self <: AppointmentClickEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -488,7 +488,7 @@ object Schedule {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
@@ -502,7 +502,7 @@ object Schedule {
     
     /** Returns the appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -529,7 +529,7 @@ object Schedule {
     
     extension [Self <: AppointmentCreatedEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -555,7 +555,7 @@ object Schedule {
     
     /** Returns the hovered appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -567,7 +567,7 @@ object Schedule {
     
     /** Returns the object of appointmentHover event.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -582,7 +582,7 @@ object Schedule {
     
     extension [Self <: AppointmentHoverEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -594,7 +594,7 @@ object Schedule {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
@@ -608,7 +608,7 @@ object Schedule {
     
     /** Returns the deleted appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -639,7 +639,7 @@ object Schedule {
     
     extension [Self <: AppointmentRemovedEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -685,7 +685,7 @@ object Schedule {
     /** The dataSource option accepts either JSON object collection or DataManager (ej.DataManager) instance that contains Schedule appointments.
       * @Default {[]}
       */
-    var dataSource: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
+    var dataSource: js.UndefOr[Any | js.Array[Any]] = js.undefined
     
     /** Binds the description field name in dataSource. It indicates the appointment description.
       * @Default {null}
@@ -785,11 +785,11 @@ object Schedule {
       
       inline def setCategorizeUndefined: Self = StObject.set(x, "categorize", js.undefined)
       
-      inline def setDataSource(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any | js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -857,7 +857,7 @@ object Schedule {
     
     /** Returns the edit appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -869,7 +869,7 @@ object Schedule {
     
     /** Returns the end time of the double clicked cell.
       */
-    var endTime: js.UndefOr[js.Any] = js.undefined
+    var endTime: js.UndefOr[Any] = js.undefined
     
     /** Returns the Schedule model.
       */
@@ -877,7 +877,7 @@ object Schedule {
     
     /** returns the object of appointmentWindowOpen event while selecting the detail option from quick window or edit appointment or edit series option.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** Returns the action name that triggers window open.
       */
@@ -885,11 +885,11 @@ object Schedule {
     
     /** Returns the start time of the double clicked cell.
       */
-    var startTime: js.UndefOr[js.Any] = js.undefined
+    var startTime: js.UndefOr[Any] = js.undefined
     
     /** Returns the target of the double clicked cell.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -904,7 +904,7 @@ object Schedule {
     
     extension [Self <: AppointmentWindowOpenEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -916,7 +916,7 @@ object Schedule {
       
       inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
       
-      inline def setEndTime(value: js.Any): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Any): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
       inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
@@ -924,7 +924,7 @@ object Schedule {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
@@ -932,11 +932,11 @@ object Schedule {
       
       inline def setOriginalEventTypeUndefined: Self = StObject.set(x, "originalEventType", js.undefined)
       
-      inline def setStartTime(value: js.Any): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Any): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
       inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -950,7 +950,7 @@ object Schedule {
     
     /** Returns the edited appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -981,7 +981,7 @@ object Schedule {
     
     extension [Self <: BeforeAppointmentChangeEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -1011,7 +1011,7 @@ object Schedule {
     
     /** Returns the appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -1034,7 +1034,7 @@ object Schedule {
     
     extension [Self <: BeforeAppointmentCreateEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -1056,7 +1056,7 @@ object Schedule {
     
     /** Returns the deleted appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -1083,7 +1083,7 @@ object Schedule {
     
     extension [Self <: BeforeAppointmentRemoveEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -1109,7 +1109,7 @@ object Schedule {
     
     /** Returns the current appointment details while opening the menu from appointment.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -1121,11 +1121,11 @@ object Schedule {
     
     /** Returns the current date value.
       */
-    var currentDate: js.UndefOr[js.Any] = js.undefined
+    var currentDate: js.UndefOr[Any] = js.undefined
     
     /** Returns the object of before opening menu target.
       */
-    var events: js.UndefOr[js.Any] = js.undefined
+    var events: js.UndefOr[Any] = js.undefined
     
     /** Returns the Schedule model.
       */
@@ -1133,11 +1133,11 @@ object Schedule {
     
     /** Returns the object of beforeContextMenuOpen event.
       */
-    var `object`: js.UndefOr[js.Any] = js.undefined
+    var `object`: js.UndefOr[Any] = js.undefined
     
     /** Returns the current resource details, when multiple resources are present, otherwise returns null.
       */
-    var resources: js.UndefOr[js.Any] = js.undefined
+    var resources: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1152,7 +1152,7 @@ object Schedule {
     
     extension [Self <: BeforeContextMenuOpenEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -1164,11 +1164,11 @@ object Schedule {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setCurrentDate(value: js.Any): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
+      inline def setCurrentDate(value: Any): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
       
       inline def setCurrentDateUndefined: Self = StObject.set(x, "currentDate", js.undefined)
       
-      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
@@ -1176,11 +1176,11 @@ object Schedule {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      inline def setResources(value: js.Any): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: Any): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
       inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
@@ -1200,7 +1200,7 @@ object Schedule {
     /** The dataSource option accepts either JSON object collection or DataManager (ej.DataManager) instance that contains Schedule block intervals.
       * @Default {[]}
       */
-    var dataSource: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
+    var dataSource: js.UndefOr[Any | js.Array[Any]] = js.undefined
     
     /** When set to true, enables the blockout option to be applied on the Scheduler cells.
       * @Default {false}
@@ -1277,11 +1277,11 @@ object Schedule {
       
       inline def setCustomStyleUndefined: Self = StObject.set(x, "customStyle", js.undefined)
       
-      inline def setDataSource(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any | js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -1347,7 +1347,7 @@ object Schedule {
     
     /** The dataSource option accepts either the JSON object collection or DataManager [ej.DataManager] instance that contains the categorize data.
       */
-    var dataSource: js.UndefOr[js.Array[js.Any] | js.Any] = js.undefined
+    var dataSource: js.UndefOr[js.Array[Any] | Any] = js.undefined
     
     /** When set to true, enables the categories option to be applied for the appointments.
       * @Default {false}
@@ -1386,11 +1386,11 @@ object Schedule {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setDataSource(value: js.Array[js.Any] | js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: js.Array[Any] | Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -1422,7 +1422,7 @@ object Schedule {
     
     /** Returns the end time of the clicked cell.
       */
-    var endTime: js.UndefOr[js.Any] = js.undefined
+    var endTime: js.UndefOr[Any] = js.undefined
     
     /** Returns the Schedule model.
       */
@@ -1434,15 +1434,15 @@ object Schedule {
     
     /** Returns the object of the resource.
       */
-    var resources: js.UndefOr[js.Any] = js.undefined
+    var resources: js.UndefOr[Any] = js.undefined
     
     /** Returns the start time of the clicked cell.
       */
-    var startTime: js.UndefOr[js.Any] = js.undefined
+    var startTime: js.UndefOr[Any] = js.undefined
     
     /** Returns the target of the clicked cell.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1465,7 +1465,7 @@ object Schedule {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setEndTime(value: js.Any): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Any): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
       inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
@@ -1477,15 +1477,15 @@ object Schedule {
       
       inline def setQuickStringUndefined: Self = StObject.set(x, "quickString", js.undefined)
       
-      inline def setResources(value: js.Any): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: Any): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
       inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      inline def setStartTime(value: js.Any): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Any): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
       inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -1503,7 +1503,7 @@ object Schedule {
     
     /** Returns the end time of the double clicked cell.
       */
-    var endTime: js.UndefOr[js.Any] = js.undefined
+    var endTime: js.UndefOr[Any] = js.undefined
     
     /** Returns the Schedule model.
       */
@@ -1511,15 +1511,15 @@ object Schedule {
     
     /** Returns the object of the resource.
       */
-    var resources: js.UndefOr[js.Any] = js.undefined
+    var resources: js.UndefOr[Any] = js.undefined
     
     /** Returns the start time of the double clicked cell.
       */
-    var startTime: js.UndefOr[js.Any] = js.undefined
+    var startTime: js.UndefOr[Any] = js.undefined
     
     /** Returns the target of the double clicked cell.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1538,7 +1538,7 @@ object Schedule {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEndTime(value: js.Any): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Any): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
       inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
@@ -1546,15 +1546,15 @@ object Schedule {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setResources(value: js.Any): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: Any): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
       inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      inline def setStartTime(value: js.Any): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Any): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
       inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -1576,7 +1576,7 @@ object Schedule {
     
     /** Returns the end time of the clicked cell.
       */
-    var endTime: js.UndefOr[js.Any] = js.undefined
+    var endTime: js.UndefOr[Any] = js.undefined
     
     /** Returns the Schedule model.
       */
@@ -1584,15 +1584,15 @@ object Schedule {
     
     /** Returns the object of the resource.
       */
-    var resources: js.UndefOr[js.Any] = js.undefined
+    var resources: js.UndefOr[Any] = js.undefined
     
     /** Returns the start time of the clicked cell.
       */
-    var startTime: js.UndefOr[js.Any] = js.undefined
+    var startTime: js.UndefOr[Any] = js.undefined
     
     /** Returns the target of the clicked cell.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1615,7 +1615,7 @@ object Schedule {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setEndTime(value: js.Any): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Any): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
       inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
@@ -1623,15 +1623,15 @@ object Schedule {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setResources(value: js.Any): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: Any): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
       inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      inline def setStartTime(value: js.Any): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Any): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
       inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -1676,11 +1676,11 @@ object Schedule {
     
     /** All the appointment related context menu items are grouped under this appointment menu collection.
       */
-    var appointment: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var appointment: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** All the Scheduler cell related context menu items are grouped under this cells menu item collection.
       */
-    var cells: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var cells: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object ContextMenuSettingsMenuItems {
     
@@ -1691,17 +1691,17 @@ object Schedule {
     
     extension [Self <: ContextMenuSettingsMenuItems](x: Self) {
       
-      inline def setAppointment(value: js.Array[js.Any]): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: js.Array[Any]): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
-      inline def setAppointmentVarargs(value: js.Any*): Self = StObject.set(x, "appointment", js.Array(value :_*))
+      inline def setAppointmentVarargs(value: Any*): Self = StObject.set(x, "appointment", js.Array(value*))
       
-      inline def setCells(value: js.Array[js.Any]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+      inline def setCells(value: js.Array[Any]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
       inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
       
-      inline def setCellsVarargs(value: js.Any*): Self = StObject.set(x, "cells", js.Array(value :_*))
+      inline def setCellsVarargs(value: Any*): Self = StObject.set(x, "cells", js.Array(value*))
     }
   }
   
@@ -1795,7 +1795,7 @@ object Schedule {
     
     /** Returns the target of the drag over appointment.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1822,7 +1822,7 @@ object Schedule {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -1836,7 +1836,7 @@ object Schedule {
     
     /** Returns the dragged appointment.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -1848,7 +1848,7 @@ object Schedule {
     
     /** Returns the target of the dragging appointment.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1863,7 +1863,7 @@ object Schedule {
     
     extension [Self <: DragStartEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -1875,7 +1875,7 @@ object Schedule {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -1889,7 +1889,7 @@ object Schedule {
     
     /** Returns the dropped appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -1912,7 +1912,7 @@ object Schedule {
     
     extension [Self <: DragStopEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -1939,7 +1939,7 @@ object Schedule {
     
     /** Holds the array of resource names to be grouped on the Schedule.
       */
-    var resources: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var resources: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object Group {
     
@@ -1954,11 +1954,11 @@ object Schedule {
       
       inline def setAllowGroupEditingUndefined: Self = StObject.set(x, "allowGroupEditing", js.undefined)
       
-      inline def setResources(value: js.Array[js.Any]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: js.Array[Any]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
       inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      inline def setResourcesVarargs(value: js.Any*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: Any*): Self = StObject.set(x, "resources", js.Array(value*))
     }
   }
   
@@ -1970,7 +1970,7 @@ object Schedule {
     
     /** Returns the object of menu item event.
       */
-    var events: js.UndefOr[js.Any] = js.undefined
+    var events: js.UndefOr[Any] = js.undefined
     
     /** Returns the Schedule model.
       */
@@ -1993,7 +1993,7 @@ object Schedule {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
@@ -2015,7 +2015,7 @@ object Schedule {
     
     /** Returns the object of menu item event.
       */
-    var events: js.UndefOr[js.Any] = js.undefined
+    var events: js.UndefOr[Any] = js.undefined
     
     /** Returns the Schedule model.
       */
@@ -2023,7 +2023,7 @@ object Schedule {
     
     /** Returns the right clicked cell details.
       */
-    var targetInfo: js.UndefOr[js.Any] = js.undefined
+    var targetInfo: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -2042,7 +2042,7 @@ object Schedule {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
@@ -2050,7 +2050,7 @@ object Schedule {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTargetInfo(value: js.Any): Self = StObject.set(x, "targetInfo", value.asInstanceOf[js.Any])
+      inline def setTargetInfo(value: Any): Self = StObject.set(x, "targetInfo", value.asInstanceOf[js.Any])
       
       inline def setTargetInfoUndefined: Self = StObject.set(x, "targetInfo", js.undefined)
       
@@ -2200,7 +2200,7 @@ object Schedule {
     /** Sets current date of the Schedule. The Schedule displays initially with the date that is provided here.
       * @Default {new Date()}
       */
-    var currentDate: js.UndefOr[js.Any] = js.undefined
+    var currentDate: js.UndefOr[Any] = js.undefined
     
     /** Sets current view of the Schedule. Schedule renders initially with the view that is specified here. The available views are day, week, workweek, month, agenda and custom view -
       * from which any one of the required view can be set to the Schedule. It accepts both string or enum values. The enum values that are accepted by
@@ -2302,7 +2302,7 @@ object Schedule {
     /** Sets the maximum date limit to display on the Schedule. Setting maxDate with specific date value disallows the Schedule to navigate beyond that date.
       * @Default {new Date(2099, 12, 31)}
       */
-    var maxDate: js.UndefOr[js.Any] = js.undefined
+    var maxDate: js.UndefOr[Any] = js.undefined
     
     /** Triggers after the menu/sub-menu items within the context menu is clicked.
       */
@@ -2311,7 +2311,7 @@ object Schedule {
     /** Sets the minimum date limit to display on the Schedule. Setting minDate with specific date value disallows the Schedule to navigate beyond that date.
       * @Default {new Date(1900, 01, 01)}
       */
-    var minDate: js.UndefOr[js.Any] = js.undefined
+    var minDate: js.UndefOr[Any] = js.undefined
     
     /** Triggers after the Schedule view or date is navigated.
       */
@@ -2467,7 +2467,7 @@ object Schedule {
     /** Defines the view collection to be displayed on the Schedule. By default, it displays all the views namely, Day, Week, WorkWeek and Month.
       * @Default {[Day, Week, WorkWeek, Month, Agenda]}
       */
-    var views: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var views: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Sets the width of the Schedule. Accepts both pixel and percentage values.
       * @Default {100%}
@@ -2486,7 +2486,7 @@ object Schedule {
     /** Sets different day collection within workWeek view.
       * @Default {[Monday, Tuesday, Wednesday, Thursday, Friday]}
       */
-    var workWeek: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var workWeek: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object Model {
     
@@ -2621,7 +2621,7 @@ object Schedule {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setCurrentDate(value: js.Any): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
+      inline def setCurrentDate(value: Any): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
       
       inline def setCurrentDateUndefined: Self = StObject.set(x, "currentDate", js.undefined)
       
@@ -2705,7 +2705,7 @@ object Schedule {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setMaxDate(value: js.Any): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: Any): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
@@ -2713,7 +2713,7 @@ object Schedule {
       
       inline def setMenuItemClickUndefined: Self = StObject.set(x, "menuItemClick", js.undefined)
       
-      inline def setMinDate(value: js.Any): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: Any): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -2777,7 +2777,7 @@ object Schedule {
       
       inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value*))
       
       inline def setShowAllDayRow(value: Boolean): Self = StObject.set(x, "showAllDayRow", value.asInstanceOf[js.Any])
       
@@ -2847,11 +2847,11 @@ object Schedule {
       
       inline def setTooltipSettingsUndefined: Self = StObject.set(x, "tooltipSettings", js.undefined)
       
-      inline def setViews(value: js.Array[js.Any]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      inline def setViews(value: js.Array[Any]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
       inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
       
-      inline def setViewsVarargs(value: js.Any*): Self = StObject.set(x, "views", js.Array(value :_*))
+      inline def setViewsVarargs(value: Any*): Self = StObject.set(x, "views", js.Array(value*))
       
       inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -2865,11 +2865,11 @@ object Schedule {
       
       inline def setWorkHoursUndefined: Self = StObject.set(x, "workHours", js.undefined)
       
-      inline def setWorkWeek(value: js.Array[js.Any]): Self = StObject.set(x, "workWeek", value.asInstanceOf[js.Any])
+      inline def setWorkWeek(value: js.Array[Any]): Self = StObject.set(x, "workWeek", value.asInstanceOf[js.Any])
       
       inline def setWorkWeekUndefined: Self = StObject.set(x, "workWeek", js.undefined)
       
-      inline def setWorkWeekVarargs(value: js.Any*): Self = StObject.set(x, "workWeek", js.Array(value :_*))
+      inline def setWorkWeekVarargs(value: Any*): Self = StObject.set(x, "workWeek", js.Array(value*))
     }
   }
   
@@ -2881,7 +2881,7 @@ object Schedule {
     
     /** Returns the current date object.
       */
-    var currentDate: js.UndefOr[js.Any] = js.undefined
+    var currentDate: js.UndefOr[Any] = js.undefined
     
     /** Returns the current view value.
       */
@@ -2893,7 +2893,7 @@ object Schedule {
     
     /** Returns the previous date of the Schedule.
       */
-    var previousDate: js.UndefOr[js.Any] = js.undefined
+    var previousDate: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous view value.
       */
@@ -2905,7 +2905,7 @@ object Schedule {
     
     /** Returns the target of the action.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -2924,7 +2924,7 @@ object Schedule {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentDate(value: js.Any): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
+      inline def setCurrentDate(value: Any): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
       
       inline def setCurrentDateUndefined: Self = StObject.set(x, "currentDate", js.undefined)
       
@@ -2936,7 +2936,7 @@ object Schedule {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPreviousDate(value: js.Any): Self = StObject.set(x, "previousDate", value.asInstanceOf[js.Any])
+      inline def setPreviousDate(value: Any): Self = StObject.set(x, "previousDate", value.asInstanceOf[js.Any])
       
       inline def setPreviousDateUndefined: Self = StObject.set(x, "previousDate", js.undefined)
       
@@ -2948,7 +2948,7 @@ object Schedule {
       
       inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -2962,7 +2962,7 @@ object Schedule {
     
     /** Returns the icon rendered cell information.
       */
-    var Datas: js.UndefOr[js.Any] = js.undefined
+    var Datas: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -2970,7 +2970,7 @@ object Schedule {
     
     /** Returns the object of menu item event.
       */
-    var events: js.UndefOr[js.Any] = js.undefined
+    var events: js.UndefOr[Any] = js.undefined
     
     /** Returns the Schedule model.
       */
@@ -2993,11 +2993,11 @@ object Schedule {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDatas(value: js.Any): Self = StObject.set(x, "Datas", value.asInstanceOf[js.Any])
+      inline def setDatas(value: Any): Self = StObject.set(x, "Datas", value.asInstanceOf[js.Any])
       
       inline def setDatasUndefined: Self = StObject.set(x, "Datas", js.undefined)
       
-      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
@@ -3019,11 +3019,11 @@ object Schedule {
     
     /** Returns the icon rendered cell information.
       */
-    var datas: js.UndefOr[js.Any] = js.undefined
+    var datas: js.UndefOr[Any] = js.undefined
     
     /** Returns the object of menu item event.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** Returns the Schedule model.
       */
@@ -3046,11 +3046,11 @@ object Schedule {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDatas(value: js.Any): Self = StObject.set(x, "datas", value.asInstanceOf[js.Any])
+      inline def setDatas(value: Any): Self = StObject.set(x, "datas", value.asInstanceOf[js.Any])
       
       inline def setDatasUndefined: Self = StObject.set(x, "datas", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -3069,7 +3069,7 @@ object Schedule {
     /** The dataSource option can accept the JSON object collection that contains the priority related data.
       * @Default {{% highlight js%}[{ text: None, value: none },{ text: High, value: high },{ text: Medium, value: medium },{ text: Low, value: low }]{% endhighlight %}}
       */
-    var dataSource: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
+    var dataSource: js.UndefOr[Any | js.Array[Any]] = js.undefined
     
     /** When set to true, enables the priority options available for the Schedule appointments.
       * @Default {false}
@@ -3100,11 +3100,11 @@ object Schedule {
     
     extension [Self <: PrioritySettings](x: Self) {
       
-      inline def setDataSource(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any | js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -3128,7 +3128,7 @@ object Schedule {
     
     /** Returns the current appointment data.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -3136,7 +3136,7 @@ object Schedule {
     
     /** Returns the currently rendering cell information.
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Returns the cell type which is currently rendering on the Scheduler.
       */
@@ -3144,15 +3144,15 @@ object Schedule {
     
     /** Returns the start date of the currently rendering appointment.
       */
-    var currentAppointmentDate: js.UndefOr[js.Any] = js.undefined
+    var currentAppointmentDate: js.UndefOr[Any] = js.undefined
     
     /** Returns the currently rendering date information.
       */
-    var currentDay: js.UndefOr[js.Any] = js.undefined
+    var currentDay: js.UndefOr[Any] = js.undefined
     
     /** Returns the currently rendering DOM element.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** Returns the Schedule model.
       */
@@ -3164,7 +3164,7 @@ object Schedule {
     
     /** Returns the currently rendering resource details.
       */
-    var resource: js.UndefOr[js.Any] = js.undefined
+    var resource: js.UndefOr[Any] = js.undefined
   }
   object QueryCellInfoEventArgs {
     
@@ -3175,7 +3175,7 @@ object Schedule {
     
     extension [Self <: QueryCellInfoEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -3183,7 +3183,7 @@ object Schedule {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellType(value: String): Self = StObject.set(x, "cellType", value.asInstanceOf[js.Any])
       
@@ -3191,15 +3191,15 @@ object Schedule {
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
-      inline def setCurrentAppointmentDate(value: js.Any): Self = StObject.set(x, "currentAppointmentDate", value.asInstanceOf[js.Any])
+      inline def setCurrentAppointmentDate(value: Any): Self = StObject.set(x, "currentAppointmentDate", value.asInstanceOf[js.Any])
       
       inline def setCurrentAppointmentDateUndefined: Self = StObject.set(x, "currentAppointmentDate", js.undefined)
       
-      inline def setCurrentDay(value: js.Any): Self = StObject.set(x, "currentDay", value.asInstanceOf[js.Any])
+      inline def setCurrentDay(value: Any): Self = StObject.set(x, "currentDay", value.asInstanceOf[js.Any])
       
       inline def setCurrentDayUndefined: Self = StObject.set(x, "currentDay", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -3211,7 +3211,7 @@ object Schedule {
       
       inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
       
-      inline def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     }
@@ -3229,7 +3229,7 @@ object Schedule {
     
     /** Returns the appointment object for which the reminder is raised.
       */
-    var reminderAppointment: js.UndefOr[js.Any] = js.undefined
+    var reminderAppointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -3252,7 +3252,7 @@ object Schedule {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setReminderAppointment(value: js.Any): Self = StObject.set(x, "reminderAppointment", value.asInstanceOf[js.Any])
+      inline def setReminderAppointment(value: Any): Self = StObject.set(x, "reminderAppointment", value.asInstanceOf[js.Any])
       
       inline def setReminderAppointmentUndefined: Self = StObject.set(x, "reminderAppointment", js.undefined)
       
@@ -3298,12 +3298,12 @@ object Schedule {
     /** Sets the end limit of the custom date range.
       * @Default {null}
       */
-    var end: js.UndefOr[js.Any] = js.undefined
+    var end: js.UndefOr[Any] = js.undefined
     
     /** Sets the start of custom date range to be rendered in the Schedule.
       * @Default {null}
       */
-    var start: js.UndefOr[js.Any] = js.undefined
+    var start: js.UndefOr[Any] = js.undefined
   }
   object RenderDates {
     
@@ -3314,11 +3314,11 @@ object Schedule {
     
     extension [Self <: RenderDates](x: Self) {
       
-      inline def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
@@ -3332,7 +3332,7 @@ object Schedule {
     
     /** Returns the resize element value.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** Returns the default appointment resizing range .
       */
@@ -3359,7 +3359,7 @@ object Schedule {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -3381,7 +3381,7 @@ object Schedule {
     
     /** Returns the object of the resized appointment.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -3389,7 +3389,7 @@ object Schedule {
     
     /** Returns the resize element value.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** Returns the Schedule model.
       */
@@ -3408,7 +3408,7 @@ object Schedule {
     
     extension [Self <: ResizeStartEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -3416,7 +3416,7 @@ object Schedule {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -3434,7 +3434,7 @@ object Schedule {
     
     /** Returns the resized appointment value.
       */
-    var appointment: js.UndefOr[js.Any] = js.undefined
+    var appointment: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -3446,7 +3446,7 @@ object Schedule {
     
     /** Returns the target of the resized appointment.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -3461,7 +3461,7 @@ object Schedule {
     
     extension [Self <: ResizeStopEventArgs](x: Self) {
       
-      inline def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
       
@@ -3473,7 +3473,7 @@ object Schedule {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -3555,7 +3555,7 @@ object Schedule {
     /** The dataSource option accepts either JSON object collection or DataManager (ejDataManager) instance that contains the resources related data.
       * @Default {[]}
       */
-    var dataSource: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
+    var dataSource: js.UndefOr[Any | js.Array[Any]] = js.undefined
     
     /** Binds the end work hour field name in the dataSource. It's optional, but providing it with some numeric value will set the end work hour for specific resources.
       * @Default {null}
@@ -3605,11 +3605,11 @@ object Schedule {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setDataSource(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any | js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
       inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -3700,7 +3700,7 @@ object Schedule {
     
     /** Sets the collection of timezone items to the dataSource that accepts either JSON object collection or DataManager (ej.DataManager) instance that contains Schedule timezones.
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Binds id field name in the dataSource to timeZoneCollection id.
       * @Default {id}
@@ -3726,7 +3726,7 @@ object Schedule {
     
     extension [Self <: TimeZoneCollection](x: Self) {
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       

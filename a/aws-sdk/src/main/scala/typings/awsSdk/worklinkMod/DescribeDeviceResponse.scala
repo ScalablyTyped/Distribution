@@ -9,12 +9,12 @@ trait DescribeDeviceResponse extends StObject {
   /**
     * The date that the device first signed in to Amazon WorkLink.
     */
-  var FirstAccessedTime: js.UndefOr[DateTime] = js.undefined
+  var FirstAccessedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date that the device last accessed Amazon WorkLink.
     */
-  var LastAccessedTime: js.UndefOr[DateTime] = js.undefined
+  var LastAccessedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The manufacturer of the device.
@@ -60,11 +60,11 @@ object DescribeDeviceResponse {
   
   extension [Self <: DescribeDeviceResponse](x: Self) {
     
-    inline def setFirstAccessedTime(value: DateTime): Self = StObject.set(x, "FirstAccessedTime", value.asInstanceOf[js.Any])
+    inline def setFirstAccessedTime(value: js.Date): Self = StObject.set(x, "FirstAccessedTime", value.asInstanceOf[js.Any])
     
     inline def setFirstAccessedTimeUndefined: Self = StObject.set(x, "FirstAccessedTime", js.undefined)
     
-    inline def setLastAccessedTime(value: DateTime): Self = StObject.set(x, "LastAccessedTime", value.asInstanceOf[js.Any])
+    inline def setLastAccessedTime(value: js.Date): Self = StObject.set(x, "LastAccessedTime", value.asInstanceOf[js.Any])
     
     inline def setLastAccessedTimeUndefined: Self = StObject.set(x, "LastAccessedTime", js.undefined)
     

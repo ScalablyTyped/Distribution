@@ -103,7 +103,7 @@ object SPClientPeoplePickerProcessedUser {
     
     inline def setSuggestions(value: js.Array[ISPClientAutoFillData]): Self = StObject.set(x, "Suggestions", value.asInstanceOf[js.Any])
     
-    inline def setSuggestionsVarargs(value: ISPClientAutoFillData*): Self = StObject.set(x, "Suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: ISPClientAutoFillData*): Self = StObject.set(x, "Suggestions", js.Array(value*))
     
     inline def setUpdateResolvedUser(value: (ISPClientPeoplePickerEntity, String) => Unit): Self = StObject.set(x, "UpdateResolvedUser", js.Any.fromFunction2(value))
     

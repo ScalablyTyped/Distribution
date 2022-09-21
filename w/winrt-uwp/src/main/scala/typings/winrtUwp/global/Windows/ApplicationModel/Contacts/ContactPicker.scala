@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactPicker")
 @js.native
 /** Creates a new instance of the ContactPicker class. */
-class ContactPicker ()
+open class ContactPicker ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactPicker {
   
@@ -39,14 +39,14 @@ class ContactPicker ()
     * @return The operation that launches the contact picker.
     */
   /* CompleteClass */
-  override def pickContactsAsync(): IPromiseWithIAsyncOperation[IVector[js.Any]] = js.native
+  override def pickContactsAsync(): IPromiseWithIAsyncOperation[IVector[Any]] = js.native
   
   /**
     * Launches the Contact Picker for selecting multiple contacts.
     * @return The operation that launches the contact picker.
     */
   /* CompleteClass */
-  override def pickMultipleContactsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  override def pickMultipleContactsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Launches the Contact Picker for selecting a single contact.

@@ -12,13 +12,13 @@ trait Container extends StObject {
   
   var capture: Boolean
   
-  var container: js.Any
+  var container: Any
   
   var defaultCfg: Region
   
-  var events: js.Any
+  var events: Any
   
-  var group: js.Any
+  var group: Any
   
   var id: String
   
@@ -38,7 +38,7 @@ trait Container extends StObject {
   
   var offsetY: Double
   
-  var points: js.Array[js.Any]
+  var points: js.Array[Any]
   
   var `type`: String
   
@@ -52,10 +52,10 @@ object Container {
     animate: Boolean,
     animateOption: Appear,
     capture: Boolean,
-    container: js.Any,
+    container: Any,
     defaultCfg: Region,
-    events: js.Any,
-    group: js.Any,
+    events: Any,
+    group: Any,
     id: String,
     isInit: Boolean,
     isRegister: Boolean,
@@ -65,7 +65,7 @@ object Container {
     name: String,
     offsetX: Double,
     offsetY: Double,
-    points: js.Array[js.Any],
+    points: js.Array[Any],
     `type`: String,
     updateAutoRender: Boolean,
     visible: Boolean
@@ -83,13 +83,13 @@ object Container {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setDefaultCfg(value: Region): Self = StObject.set(x, "defaultCfg", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -109,9 +109,9 @@ object Container {
     
     inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    inline def setPoints(value: js.Array[js.Any]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[Any]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: js.Any*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Any*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

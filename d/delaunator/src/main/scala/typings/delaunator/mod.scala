@@ -1,9 +1,6 @@
 package typings.delaunator
 
 import typings.std.ArrayLike
-import typings.std.Float64Array
-import typings.std.Int32Array
-import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +9,7 @@ object mod {
   
   @JSImport("delaunator", JSImport.Namespace)
   @js.native
-  class ^[P] protected ()
+  open class ^[P] protected ()
     extends StObject
        with Delaunator[P] {
     /**
@@ -25,7 +22,7 @@ object mod {
       * An array of input coordinates in the form [x0, y0, x1, y1, ....], of the type provided in the constructor (or Float64Array if you used Delaunator.from).
       */
     /* CompleteClass */
-    var coords: ArrayLike[Double] | Float64Array = js.native
+    var coords: ArrayLike[Double] | js.typedarray.Float64Array = js.native
     
     /**
       * A Int32Array array of triangle half-edge indices that allows you to traverse the triangulation.
@@ -35,20 +32,27 @@ object mod {
       * The flat array-based data structures might be counterintuitive, but they're one of the key reasons this library is fast.
       */
     /* CompleteClass */
-    var halfedges: Int32Array = js.native
+    var halfedges: js.typedarray.Int32Array = js.native
     
     /**
       * A Uint32Array array of indices that reference points on the convex hull of the input data, counter-clockwise.
       */
     /* CompleteClass */
-    var hull: Uint32Array = js.native
+    var hull: js.typedarray.Uint32Array = js.native
     
     /**
       * A Uint32Array array of triangle vertex indices (each group of three numbers forms a triangle).
       * All triangles are directed counterclockwise.
       */
     /* CompleteClass */
-    var triangles: Uint32Array = js.native
+    var triangles: js.typedarray.Uint32Array = js.native
+    
+    /**
+      * Updates the triangulation if you modified delaunay.coords values in place, avoiding expensive memory
+      * allocations. Useful for iterative relaxation algorithms such as Lloyd's.
+      */
+    /* CompleteClass */
+    override def update(): Unit = js.native
   }
   @JSImport("delaunator", JSImport.Namespace)
   @js.native
@@ -75,7 +79,7 @@ object mod {
     /**
       * An array of input coordinates in the form [x0, y0, x1, y1, ....], of the type provided in the constructor (or Float64Array if you used Delaunator.from).
       */
-    var coords: ArrayLike[Double] | Float64Array
+    var coords: ArrayLike[Double] | js.typedarray.Float64Array
     
     /**
       * A Int32Array array of triangle half-edge indices that allows you to traverse the triangulation.
@@ -84,40 +88,49 @@ object mod {
       *
       * The flat array-based data structures might be counterintuitive, but they're one of the key reasons this library is fast.
       */
-    var halfedges: Int32Array
+    var halfedges: js.typedarray.Int32Array
     
     /**
       * A Uint32Array array of indices that reference points on the convex hull of the input data, counter-clockwise.
       */
-    var hull: Uint32Array
+    var hull: js.typedarray.Uint32Array
     
     /**
       * A Uint32Array array of triangle vertex indices (each group of three numbers forms a triangle).
       * All triangles are directed counterclockwise.
       */
-    var triangles: Uint32Array
+    var triangles: js.typedarray.Uint32Array
+    
+    /**
+      * Updates the triangulation if you modified delaunay.coords values in place, avoiding expensive memory
+      * allocations. Useful for iterative relaxation algorithms such as Lloyd's.
+      */
+    def update(): Unit
   }
   object Delaunator {
     
     inline def apply[P](
-      coords: ArrayLike[Double] | Float64Array,
-      halfedges: Int32Array,
-      hull: Uint32Array,
-      triangles: Uint32Array
+      coords: ArrayLike[Double] | js.typedarray.Float64Array,
+      halfedges: js.typedarray.Int32Array,
+      hull: js.typedarray.Uint32Array,
+      triangles: js.typedarray.Uint32Array,
+      update: () => Unit
     ): Delaunator[P] = {
-      val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], halfedges = halfedges.asInstanceOf[js.Any], hull = hull.asInstanceOf[js.Any], triangles = triangles.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], halfedges = halfedges.asInstanceOf[js.Any], hull = hull.asInstanceOf[js.Any], triangles = triangles.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
       __obj.asInstanceOf[Delaunator[P]]
     }
     
     extension [Self <: Delaunator[?], P](x: Self & Delaunator[P]) {
       
-      inline def setCoords(value: ArrayLike[Double] | Float64Array): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+      inline def setCoords(value: ArrayLike[Double] | js.typedarray.Float64Array): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      inline def setHalfedges(value: Int32Array): Self = StObject.set(x, "halfedges", value.asInstanceOf[js.Any])
+      inline def setHalfedges(value: js.typedarray.Int32Array): Self = StObject.set(x, "halfedges", value.asInstanceOf[js.Any])
       
-      inline def setHull(value: Uint32Array): Self = StObject.set(x, "hull", value.asInstanceOf[js.Any])
+      inline def setHull(value: js.typedarray.Uint32Array): Self = StObject.set(x, "hull", value.asInstanceOf[js.Any])
       
-      inline def setTriangles(value: Uint32Array): Self = StObject.set(x, "triangles", value.asInstanceOf[js.Any])
+      inline def setTriangles(value: js.typedarray.Uint32Array): Self = StObject.set(x, "triangles", value.asInstanceOf[js.Any])
+      
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
 }

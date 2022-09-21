@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Validator extends StObject {
   
   /**
-    * Either the JSON Schema content or the Amazon Resource Name (ARN) of an AWS Lambda function.
+    * Either the JSON Schema content or the Amazon Resource Name (ARN) of an Lambda function.
     */
   var Content: StringWithLengthBetween0And32768
   

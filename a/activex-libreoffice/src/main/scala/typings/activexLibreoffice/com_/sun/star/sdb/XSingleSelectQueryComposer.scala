@@ -153,7 +153,7 @@ object XSingleSelectQueryComposer {
     getQueryWithSubstitution: () => String,
     getStructuredFilter: () => SafeArray[SafeArray[PropertyValue]],
     getStructuredHavingClause: () => SafeArray[SafeArray[PropertyValue]],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setCommand: (String, Double) => Unit,
     setFilter: String => Unit,

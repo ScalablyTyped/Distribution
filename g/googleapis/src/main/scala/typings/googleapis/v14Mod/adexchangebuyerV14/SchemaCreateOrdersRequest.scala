@@ -14,7 +14,7 @@ trait SchemaCreateOrdersRequest extends StObject {
   /**
     * Web property id of the seller creating these orders
     */
-  var webPropertyCode: js.UndefOr[String] = js.undefined
+  var webPropertyCode: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCreateOrdersRequest {
   
@@ -29,9 +29,11 @@ object SchemaCreateOrdersRequest {
     
     inline def setProposalsUndefined: Self = StObject.set(x, "proposals", js.undefined)
     
-    inline def setProposalsVarargs(value: SchemaProposal*): Self = StObject.set(x, "proposals", js.Array(value :_*))
+    inline def setProposalsVarargs(value: SchemaProposal*): Self = StObject.set(x, "proposals", js.Array(value*))
     
     inline def setWebPropertyCode(value: String): Self = StObject.set(x, "webPropertyCode", value.asInstanceOf[js.Any])
+    
+    inline def setWebPropertyCodeNull: Self = StObject.set(x, "webPropertyCode", null)
     
     inline def setWebPropertyCodeUndefined: Self = StObject.set(x, "webPropertyCode", js.undefined)
   }

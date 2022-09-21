@@ -19,7 +19,7 @@ trait CellMatrix extends StObject {
   def findCellEx(address: String, create: Boolean): js.UndefOr[Cell] = js.native
   def findCellEx(address: Location, create: Boolean): js.UndefOr[Cell] = js.native
   
-  def findRowCell(row: js.Array[js.Any], address: Address, create: Boolean): js.UndefOr[Cell] = js.native
+  def findRowCell(row: js.Array[Any], address: Address, create: Boolean): js.UndefOr[Cell] = js.native
   
   def findSheet(address: String, create: Boolean): js.UndefOr[js.Array[Cell]] = js.native
   def findSheet(address: Location, create: Boolean): js.UndefOr[js.Array[Cell]] = js.native

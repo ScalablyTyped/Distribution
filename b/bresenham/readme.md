@@ -10,15 +10,12 @@ Bresenham's line algorithm
 | ------------------ | :-------------: |
 | Full name          | bresenham |
 | Keywords           | line, bresenham, math |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 280478 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 101027.66666666667 |
+| # stars            | 60.0 |
 
 ## Links
-- [Homepage](https://github.com/madbence/node-bresenham)
-- [Bugs](https://github.com/madbence/node-bresenham/issues)
-- [Repository](https://github.com/madbence/node-bresenham)
 - [Npm](https://www.npmjs.com/package/bresenham)
     
 

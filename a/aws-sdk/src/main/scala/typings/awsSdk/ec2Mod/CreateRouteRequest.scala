@@ -12,6 +12,11 @@ trait CreateRouteRequest extends StObject {
   var CarrierGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.CarrierGatewayId] = js.undefined
   
   /**
+    * The Amazon Resource Name (ARN) of the core network.
+    */
+  var CoreNetworkArn: js.UndefOr[typings.awsSdk.ec2Mod.CoreNetworkArn] = js.undefined
+  
+  /**
     * The IPv4 CIDR address block used for the destination match. Routing decisions are based on the most specific match. We modify the specified CIDR block to its canonical form; for example, if you specify 100.68.0.18/18, we modify it to 100.68.0.0/18.
     */
   var DestinationCidrBlock: js.UndefOr[String] = js.undefined
@@ -93,6 +98,10 @@ object CreateRouteRequest {
     inline def setCarrierGatewayId(value: CarrierGatewayId): Self = StObject.set(x, "CarrierGatewayId", value.asInstanceOf[js.Any])
     
     inline def setCarrierGatewayIdUndefined: Self = StObject.set(x, "CarrierGatewayId", js.undefined)
+    
+    inline def setCoreNetworkArn(value: CoreNetworkArn): Self = StObject.set(x, "CoreNetworkArn", value.asInstanceOf[js.Any])
+    
+    inline def setCoreNetworkArnUndefined: Self = StObject.set(x, "CoreNetworkArn", js.undefined)
     
     inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     

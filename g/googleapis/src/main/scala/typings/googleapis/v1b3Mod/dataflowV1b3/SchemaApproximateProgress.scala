@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Obsolete in favor of ApproximateReportedProgress and
-  * ApproximateSplitRequest.
-  */
 trait SchemaApproximateProgress extends StObject {
   
   /**
     * Obsolete.
     */
-  var percentComplete: js.UndefOr[Double] = js.undefined
+  var percentComplete: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Obsolete.
@@ -23,7 +19,7 @@ trait SchemaApproximateProgress extends StObject {
   /**
     * Obsolete.
     */
-  var remainingTime: js.UndefOr[String] = js.undefined
+  var remainingTime: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaApproximateProgress {
   
@@ -36,6 +32,8 @@ object SchemaApproximateProgress {
     
     inline def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
+    inline def setPercentCompleteNull: Self = StObject.set(x, "percentComplete", null)
+    
     inline def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
     
     inline def setPosition(value: SchemaPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
@@ -43,6 +41,8 @@ object SchemaApproximateProgress {
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     inline def setRemainingTime(value: String): Self = StObject.set(x, "remainingTime", value.asInstanceOf[js.Any])
+    
+    inline def setRemainingTimeNull: Self = StObject.set(x, "remainingTime", null)
     
     inline def setRemainingTimeUndefined: Self = StObject.set(x, "remainingTime", js.undefined)
   }

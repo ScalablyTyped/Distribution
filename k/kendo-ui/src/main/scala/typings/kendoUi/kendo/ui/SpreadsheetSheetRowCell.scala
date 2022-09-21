@@ -1,6 +1,5 @@
 package typings.kendoUi.kendo.ui
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +44,7 @@ trait SpreadsheetSheetRowCell extends StObject {
   
   var validation: js.UndefOr[SpreadsheetSheetRowCellValidation] = js.undefined
   
-  var value: js.UndefOr[Double | String | Boolean | Date] = js.undefined
+  var value: js.UndefOr[Double | String | Boolean | js.Date] = js.undefined
   
   var verticalAlign: js.UndefOr[String] = js.undefined
   
@@ -136,7 +135,7 @@ object SpreadsheetSheetRowCell {
     
     inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
     
-    inline def setValue(value: Double | String | Boolean | Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double | String | Boolean | js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     

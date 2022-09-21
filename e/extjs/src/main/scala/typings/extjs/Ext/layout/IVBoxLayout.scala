@@ -13,7 +13,7 @@ trait IVBoxLayout
   var align: js.UndefOr[String] = js.undefined
   
   /** [Config Option] ("round"/"floor"/"ceil") */
-  var alignRoundingMethod: js.UndefOr[js.Any] = js.undefined
+  var alignRoundingMethod: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var constrainAlign: js.UndefOr[Boolean] = js.undefined
@@ -29,7 +29,7 @@ object IVBoxLayout {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    inline def setAlignRoundingMethod(value: js.Any): Self = StObject.set(x, "alignRoundingMethod", value.asInstanceOf[js.Any])
+    inline def setAlignRoundingMethod(value: Any): Self = StObject.set(x, "alignRoundingMethod", value.asInstanceOf[js.Any])
     
     inline def setAlignRoundingMethodUndefined: Self = StObject.set(x, "alignRoundingMethod", js.undefined)
     

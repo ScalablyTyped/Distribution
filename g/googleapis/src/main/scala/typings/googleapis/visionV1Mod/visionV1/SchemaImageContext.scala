@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Image context and/or feature-specific parameters.
-  */
 trait SchemaImageContext extends StObject {
   
   /**
@@ -15,16 +12,9 @@ trait SchemaImageContext extends StObject {
   var cropHintsParams: js.UndefOr[SchemaCropHintsParams] = js.undefined
   
   /**
-    * List of languages to use for TEXT_DETECTION. In most cases, an empty
-    * value yields the best results since it enables automatic language
-    * detection. For languages based on the Latin alphabet, setting
-    * `language_hints` is not needed. In rare cases, when the language of the
-    * text in the image is known, setting a hint will help get better results
-    * (although it will be a significant hindrance if the hint is wrong). Text
-    * detection returns an error if one or more of the specified languages is
-    * not one of the [supported languages](/vision/docs/languages).
+    * List of languages to use for TEXT_DETECTION. In most cases, an empty value yields the best results since it enables automatic language detection. For languages based on the Latin alphabet, setting `language_hints` is not needed. In rare cases, when the language of the text in the image is known, setting a hint will help get better results (although it will be a significant hindrance if the hint is wrong). Text detection returns an error if one or more of the specified languages is not one of the [supported languages](https://cloud.google.com/vision/docs/languages).
     */
-  var languageHints: js.UndefOr[js.Array[String]] = js.undefined
+  var languageHints: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * Not used.
@@ -35,6 +25,11 @@ trait SchemaImageContext extends StObject {
     * Parameters for product search.
     */
   var productSearchParams: js.UndefOr[SchemaProductSearchParams] = js.undefined
+  
+  /**
+    * Parameters for text detection and document text detection.
+    */
+  var textDetectionParams: js.UndefOr[SchemaTextDetectionParams] = js.undefined
   
   /**
     * Parameters for web detection.
@@ -56,9 +51,11 @@ object SchemaImageContext {
     
     inline def setLanguageHints(value: js.Array[String]): Self = StObject.set(x, "languageHints", value.asInstanceOf[js.Any])
     
+    inline def setLanguageHintsNull: Self = StObject.set(x, "languageHints", null)
+    
     inline def setLanguageHintsUndefined: Self = StObject.set(x, "languageHints", js.undefined)
     
-    inline def setLanguageHintsVarargs(value: String*): Self = StObject.set(x, "languageHints", js.Array(value :_*))
+    inline def setLanguageHintsVarargs(value: String*): Self = StObject.set(x, "languageHints", js.Array(value*))
     
     inline def setLatLongRect(value: SchemaLatLongRect): Self = StObject.set(x, "latLongRect", value.asInstanceOf[js.Any])
     
@@ -67,6 +64,10 @@ object SchemaImageContext {
     inline def setProductSearchParams(value: SchemaProductSearchParams): Self = StObject.set(x, "productSearchParams", value.asInstanceOf[js.Any])
     
     inline def setProductSearchParamsUndefined: Self = StObject.set(x, "productSearchParams", js.undefined)
+    
+    inline def setTextDetectionParams(value: SchemaTextDetectionParams): Self = StObject.set(x, "textDetectionParams", value.asInstanceOf[js.Any])
+    
+    inline def setTextDetectionParamsUndefined: Self = StObject.set(x, "textDetectionParams", js.undefined)
     
     inline def setWebDetectionParams(value: SchemaWebDetectionParams): Self = StObject.set(x, "webDetectionParams", value.asInstanceOf[js.Any])
     

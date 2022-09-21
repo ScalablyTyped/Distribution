@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NDClient extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_closedcaptiondatareceived(
     `type`: closedcaptiondatareceived,
@@ -41,7 +41,7 @@ trait NDClient extends StObject {
     listener: TypedEventHandler[NDClient, INDRegistrationCompletedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_reregistrationneeded(`type`: reregistrationneeded, listener: TypedEventHandler[NDClient, js.Any]): Unit = js.native
+  def addEventListener_reregistrationneeded(`type`: reregistrationneeded, listener: TypedEventHandler[NDClient, Any]): Unit = js.native
   
   /** Closes the current playback session regardless of whether it is in the registration, proximity detection, license fetch, or play state. */
   def close(): Unit = js.native
@@ -78,10 +78,10 @@ trait NDClient extends StObject {
   var onregistrationcompleted_Original: TypedEventHandler[NDClient, INDRegistrationCompletedEventArgs] = js.native
   
   /** Notifies listeners that the app should start re-registration by calling the ReRegistrationAsync method. */
-  def onreregistrationneeded(ev: js.Any & WinRTEvent[NDClient]): Unit = js.native
+  def onreregistrationneeded(ev: Any & WinRTEvent[NDClient]): Unit = js.native
   /** Notifies listeners that the app should start re-registration by calling the ReRegistrationAsync method. */
   @JSName("onreregistrationneeded")
-  var onreregistrationneeded_Original: TypedEventHandler[NDClient, js.Any] = js.native
+  var onreregistrationneeded_Original: TypedEventHandler[NDClient, Any] = js.native
   
   /**
     * Performs a proximity detection and reregistration between a client receiver and a transmitter.
@@ -90,7 +90,7 @@ trait NDClient extends StObject {
     */
   def reRegistrationAsync(registrationCustomData: INDCustomData): IPromiseWithIAsyncAction = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_closedcaptiondatareceived(
     `type`: closedcaptiondatareceived,
@@ -112,7 +112,7 @@ trait NDClient extends StObject {
     listener: TypedEventHandler[NDClient, INDRegistrationCompletedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_reregistrationneeded(`type`: reregistrationneeded, listener: TypedEventHandler[NDClient, js.Any]): Unit = js.native
+  def removeEventListener_reregistrationneeded(`type`: reregistrationneeded, listener: TypedEventHandler[NDClient, Any]): Unit = js.native
   
   /**
     * Starts the registration, proximity detection, and license fetch procedures between a client receiver and a transmitter.

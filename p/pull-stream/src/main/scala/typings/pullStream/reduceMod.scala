@@ -13,12 +13,12 @@ object reduceMod {
     */
   inline def apply[T, U](
     reducer: js.Function2[/* acc */ U | Null, /* data */ T, U],
-    cb: js.Function2[/* err */ EndOrError, /* result */ U, js.Any]
+    cb: js.Function2[/* err */ EndOrError, /* result */ U, Any]
   ): Sink[T] = (^.asInstanceOf[js.Dynamic].apply(reducer.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Sink[T]]
   inline def apply[T, U](
     reducer: js.Function2[/* acc */ U, /* data */ T, U],
     initial: U,
-    cb: js.Function2[/* err */ EndOrError, /* result */ U, js.Any]
+    cb: js.Function2[/* err */ EndOrError, /* result */ U, Any]
   ): Sink[T] = (^.asInstanceOf[js.Dynamic].apply(reducer.asInstanceOf[js.Any], initial.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Sink[T]]
   
   @JSImport("pull-stream/sinks/reduce", JSImport.Namespace)

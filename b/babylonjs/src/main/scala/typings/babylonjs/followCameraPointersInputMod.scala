@@ -10,11 +10,11 @@ object followCameraPointersInputMod {
   
   @JSImport("babylonjs/Cameras/Inputs/followCameraPointersInput", "FollowCameraPointersInput")
   @js.native
-  class FollowCameraPointersInput () extends BaseCameraPointersInput {
+  open class FollowCameraPointersInput () extends BaseCameraPointersInput {
     
-    /* private */ var _warning: js.Any = js.native
+    /* private */ var _warning: Any = js.native
     
-    /* private */ var _warningCounter: js.Any = js.native
+    /* private */ var _warningCounter: Any = js.native
     
     /**
       * Defines the pointer angular sensibility along the X axis or how fast is

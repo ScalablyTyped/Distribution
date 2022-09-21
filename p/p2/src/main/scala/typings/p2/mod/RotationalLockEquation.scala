@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "RotationalLockEquation")
 @js.native
-class RotationalLockEquation protected () extends Equation {
+open class RotationalLockEquation protected () extends Equation {
   def this(bodyA: Body, bodyB: Body) = this()
   def this(bodyA: Body, bodyB: Body, options: RotationalLockEquationOptions) = this()
   

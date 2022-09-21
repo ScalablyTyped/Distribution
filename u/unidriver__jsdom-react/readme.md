@@ -1,7 +1,7 @@
 
 # Scala.js typings for unidriver__jsdom-react
 
-Typings are for version 1.6.1
+Typings are for version 1.7.0
 
 ## Library description:
 JSDom React adapter for UniDriver
@@ -10,10 +10,10 @@ JSDom React adapter for UniDriver
 | ------------------ | :-------------: |
 | Full name          | @unidriver/jsdom-react |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 1 |
-| # downloads        | 43856 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 3933.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40unidriver%2Fjsdom-react)

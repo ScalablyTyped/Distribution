@@ -29,7 +29,7 @@ object RecipientIdentityInputOption {
     
     inline def setPhoneNumberListUndefined: Self = StObject.set(x, "phoneNumberList", js.undefined)
     
-    inline def setPhoneNumberListVarargs(value: RecipientIdentityPhoneNumber*): Self = StObject.set(x, "phoneNumberList", js.Array(value :_*))
+    inline def setPhoneNumberListVarargs(value: RecipientIdentityPhoneNumber*): Self = StObject.set(x, "phoneNumberList", js.Array(value*))
     
     inline def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     

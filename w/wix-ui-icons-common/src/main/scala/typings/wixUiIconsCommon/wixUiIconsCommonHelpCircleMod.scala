@@ -1,8 +1,8 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
-import typings.wixUiIconsCommon.helpCircleMod.HelpCircleProps
+import typings.react.mod.FC
+import typings.wixUiIconsCommon.distComponentsHelpCircleMod.HelpCircleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +11,10 @@ object wixUiIconsCommonHelpCircleMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/HelpCircle", JSImport.Default)
   @js.native
-  val default: SFC[HelpCircleProps] = js.native
+  val default: FC[HelpCircleProps] = js.native
   
-  type _To = SFC[HelpCircleProps]
+  type _To = FC[HelpCircleProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonHelpCircleMod.foo` */
-  override def _to: SFC[HelpCircleProps] = default
+  override def _to: FC[HelpCircleProps] = default
 }

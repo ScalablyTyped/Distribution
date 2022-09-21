@@ -10,29 +10,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ///////////////////////////////////////////////////////////////////////////
 trait ISCEDelegateService extends StObject {
   
-  def getTrusted(`type`: String, mayBeTrusted: js.Any): js.Any
+  def getTrusted(`type`: String, mayBeTrusted: Any): Any
   
-  def trustAs(`type`: String, value: js.Any): js.Any
+  def trustAs(`type`: String, value: Any): Any
   
-  def valueOf(value: js.Any): js.Any
+  def valueOf(value: Any): Any
 }
 object ISCEDelegateService {
   
-  inline def apply(
-    getTrusted: (String, js.Any) => js.Any,
-    trustAs: (String, js.Any) => js.Any,
-    valueOf: js.Any => js.Any
-  ): ISCEDelegateService = {
+  inline def apply(getTrusted: (String, Any) => Any, trustAs: (String, Any) => Any, valueOf: Any => Any): ISCEDelegateService = {
     val __obj = js.Dynamic.literal(getTrusted = js.Any.fromFunction2(getTrusted), trustAs = js.Any.fromFunction2(trustAs), valueOf = js.Any.fromFunction1(valueOf))
     __obj.asInstanceOf[ISCEDelegateService]
   }
   
   extension [Self <: ISCEDelegateService](x: Self) {
     
-    inline def setGetTrusted(value: (String, js.Any) => js.Any): Self = StObject.set(x, "getTrusted", js.Any.fromFunction2(value))
+    inline def setGetTrusted(value: (String, Any) => Any): Self = StObject.set(x, "getTrusted", js.Any.fromFunction2(value))
     
-    inline def setTrustAs(value: (String, js.Any) => js.Any): Self = StObject.set(x, "trustAs", js.Any.fromFunction2(value))
+    inline def setTrustAs(value: (String, Any) => Any): Self = StObject.set(x, "trustAs", js.Any.fromFunction2(value))
     
-    inline def setValueOf(value: js.Any => js.Any): Self = StObject.set(x, "valueOf", js.Any.fromFunction1(value))
+    inline def setValueOf(value: Any => Any): Self = StObject.set(x, "valueOf", js.Any.fromFunction1(value))
   }
 }

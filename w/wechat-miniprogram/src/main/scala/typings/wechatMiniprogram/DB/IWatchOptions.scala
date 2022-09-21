@@ -10,11 +10,11 @@ trait IWatchOptions extends StObject {
   def onChange(snapshot: ISnapshot): Unit
   
   // error while connecting / listening
-  def onError(error: js.Any): Unit
+  def onError(error: Any): Unit
 }
 object IWatchOptions {
   
-  inline def apply(onChange: ISnapshot => Unit, onError: js.Any => Unit): IWatchOptions = {
+  inline def apply(onChange: ISnapshot => Unit, onError: Any => Unit): IWatchOptions = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange), onError = js.Any.fromFunction1(onError))
     __obj.asInstanceOf[IWatchOptions]
   }
@@ -23,6 +23,6 @@ object IWatchOptions {
     
     inline def setOnChange(value: ISnapshot => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    inline def setOnError(value: js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
   }
 }

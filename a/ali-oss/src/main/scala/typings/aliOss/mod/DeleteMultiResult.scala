@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeleteMultiResult extends StObject {
   
+  /** deleted object names list */
   var deleted: js.UndefOr[js.Array[String]] = js.undefined
   
-  // deleted object names list
   var res: NormalSuccessResponse
 }
 object DeleteMultiResult {
@@ -24,7 +24,7 @@ object DeleteMultiResult {
     
     inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
-    inline def setDeletedVarargs(value: String*): Self = StObject.set(x, "deleted", js.Array(value :_*))
+    inline def setDeletedVarargs(value: String*): Self = StObject.set(x, "deleted", js.Array(value*))
     
     inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }

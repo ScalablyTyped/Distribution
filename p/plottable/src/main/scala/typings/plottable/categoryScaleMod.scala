@@ -15,11 +15,11 @@ object categoryScaleMod {
     *
     * @constructor
     */
-  class Category ()
+  open class Category ()
     extends Scale[String, Double]
        with ITransformableScale {
     
-    /* private */ var _d3Scale: js.Any = js.native
+    /* private */ var _d3Scale: Any = js.native
     
     /**
       * An additional linear scale to apply pan/zoom interactions to the category
@@ -36,20 +36,20 @@ object categoryScaleMod {
       * *Transformation Space* and transformed to screen space in methods like
       * `rangeBand()` and `stepWidth()`.
       */
-    /* private */ var _d3TransformationScale: js.Any = js.native
+    /* private */ var _d3TransformationScale: Any = js.native
     
-    /* private */ var _innerPadding: js.Any = js.native
+    /* private */ var _innerPadding: Any = js.native
     
-    /* private */ var _outerPadding: js.Any = js.native
+    /* private */ var _outerPadding: Any = js.native
     
-    /* private */ var _range: js.Any = js.native
+    /* private */ var _range: Any = js.native
     
     /**
       * Converts a width or height in *Transformation Space* into *Screen Space*.
       */
     /* protected */ def _rescaleBand(band: Double): Double = js.native
     
-    /* private */ def _setBands(): js.Any = js.native
+    /* private */ var _setBands: Any = js.native
     
     /**
       * Return a clone of this category scale that holds the same pan/zoom, padding, domain and range, but
@@ -182,8 +182,14 @@ object categoryScaleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_convertToPlottableInnerPadding")(d3InnerPadding.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @JSImport("plottable/build/src/scales/categoryScale", "Category._convertToPlottableInnerPadding")
+    @js.native
+    def _convertToPlottableInnerPadding: Any = js.native
+    inline def _convertToPlottableInnerPadding_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_convertToPlottableInnerPadding")(x.asInstanceOf[js.Any])
     
-    inline def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_convertToPlottableOuterPadding")(d3OuterPadding.asInstanceOf[js.Any], d3InnerPadding.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("plottable/build/src/scales/categoryScale", "Category._convertToPlottableOuterPadding")
+    @js.native
+    def _convertToPlottableOuterPadding: Any = js.native
+    inline def _convertToPlottableOuterPadding_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_convertToPlottableOuterPadding")(x.asInstanceOf[js.Any])
   }
 }

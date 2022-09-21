@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "CubicInterpolant")
 @js.native
-class CubicInterpolant protected ()
-  extends typings.three.cubicInterpolantMod.CubicInterpolant {
-  def this(parameterPositions: js.Any, samplesValues: js.Any, sampleSize: Double) = this()
-  def this(parameterPositions: js.Any, samplesValues: js.Any, sampleSize: Double, resultBuffer: js.Any) = this()
+open class CubicInterpolant protected ()
+  extends typings.three.threeMod.CubicInterpolant {
+  def this(parameterPositions: Any, samplesValues: Any, sampleSize: Double) = this()
+  def this(parameterPositions: Any, samplesValues: Any, sampleSize: Double, resultBuffer: Any) = this()
 }

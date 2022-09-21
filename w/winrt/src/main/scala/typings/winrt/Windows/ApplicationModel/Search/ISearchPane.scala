@@ -9,15 +9,15 @@ trait ISearchPane extends StObject {
   
   var language: String = js.native
   
-  var onquerychanged: js.Any = js.native
+  var onquerychanged: Any = js.native
   
-  var onquerysubmitted: js.Any = js.native
+  var onquerysubmitted: Any = js.native
   
-  var onresultsuggestionchosen: js.Any = js.native
+  var onresultsuggestionchosen: Any = js.native
   
-  var onsuggestionsrequested: js.Any = js.native
+  var onsuggestionsrequested: Any = js.native
   
-  var onvisibilitychanged: js.Any = js.native
+  var onvisibilitychanged: Any = js.native
   
   var placeholderText: String = js.native
   

@@ -25,7 +25,7 @@ trait Column extends StObject {
   	 */
   val collapsed: Boolean = js.native
   
-  var defn: js.Any = js.native
+  var defn: Any = js.native
   
   /**
   	 * Iterate over all current cells in this column

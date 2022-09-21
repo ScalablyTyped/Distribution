@@ -19,7 +19,7 @@ trait EventDescription extends StObject {
   /**
     * The date when the event occurred.
     */
-  var EventDate: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EventDate] = js.undefined
+  var EventDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The event message.
@@ -68,7 +68,7 @@ object EventDescription {
     
     inline def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
-    inline def setEventDate(value: EventDate): Self = StObject.set(x, "EventDate", value.asInstanceOf[js.Any])
+    inline def setEventDate(value: js.Date): Self = StObject.set(x, "EventDate", value.asInstanceOf[js.Any])
     
     inline def setEventDateUndefined: Self = StObject.set(x, "EventDate", js.undefined)
     

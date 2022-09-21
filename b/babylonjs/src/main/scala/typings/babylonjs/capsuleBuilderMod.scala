@@ -2,32 +2,54 @@ package typings.babylonjs
 
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.meshMod.Mesh
+import typings.babylonjs.meshVertexDataMod.VertexData
+import typings.babylonjs.sceneMod.Scene
+import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object capsuleBuilderMod {
   
-  @JSImport("babylonjs/Meshes/Builders/capsuleBuilder", "CapsuleBuilder")
+  @JSImport("babylonjs/Meshes/Builders/capsuleBuilder", JSImport.Namespace)
   @js.native
-  class CapsuleBuilder () extends StObject
-  /* static members */
+  val ^ : js.Any = js.native
+  
   object CapsuleBuilder {
     
     @JSImport("babylonjs/Meshes/Builders/capsuleBuilder", "CapsuleBuilder")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def CreateCapsule(name: String, options: Unit, scene: js.Any): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
-    /**
-      * Creates a capsule or a pill mesh
-      * @param name defines the name of the mesh
-      * @param options The constructors options.
-      * @param scene The scene the mesh is scoped to.
-      * @returns Capsule Mesh
-      */
-    inline def CreateCapsule(name: String, options: ICreateCapsuleOptions, scene: js.Any): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    @JSImport("babylonjs/Meshes/Builders/capsuleBuilder", "CapsuleBuilder.CreateCapsule")
+    @js.native
+    def CreateCapsule: js.Function3[
+        /* name */ String, 
+        /* options */ js.UndefOr[ICreateCapsuleOptions], 
+        /* scene */ js.UndefOr[Nullable[Scene]], 
+        Mesh
+      ] = js.native
+    inline def CreateCapsule(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+    inline def CreateCapsule(name: String, options: Unit, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateCapsule(name: String, options: ICreateCapsuleOptions): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateCapsule(name: String, options: ICreateCapsuleOptions, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateCapsule_=(
+      x: js.Function3[
+          /* name */ String, 
+          /* options */ js.UndefOr[ICreateCapsuleOptions], 
+          /* scene */ js.UndefOr[Nullable[Scene]], 
+          Mesh
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateCapsule")(x.asInstanceOf[js.Any])
   }
+  
+  inline def CreateCapsule(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+  inline def CreateCapsule(name: String, options: Unit, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  inline def CreateCapsule(name: String, options: ICreateCapsuleOptions): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  inline def CreateCapsule(name: String, options: ICreateCapsuleOptions, scene: Nullable[Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsule")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  
+  inline def CreateCapsuleVertexData(): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsuleVertexData")().asInstanceOf[VertexData]
+  inline def CreateCapsuleVertexData(options: ICreateCapsuleOptions): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateCapsuleVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
   
   trait ICreateCapsuleOptions extends StObject {
     
@@ -35,16 +57,16 @@ object capsuleBuilderMod {
     var bottomCapSubdivisions: js.UndefOr[Double] = js.undefined
     
     /** Number of sub segments on the cap sections of the capsule running parallel to orientation. */
-    var capSubdivisions: Double
+    var capSubdivisions: js.UndefOr[Double] = js.undefined
     
     /** Height or Length of the capsule. */
-    var height: Double
+    var height: js.UndefOr[Double] = js.undefined
     
     /** The Orientation of the capsule.  Default : Vector3.Up() */
     var orientation: js.UndefOr[Vector3] = js.undefined
     
     /** Radius of the capsule. */
-    var radius: Double
+    var radius: js.UndefOr[Double] = js.undefined
     
     /** Overwrite for the bottom radius. */
     var radiusBottom: js.UndefOr[Double] = js.undefined
@@ -53,24 +75,21 @@ object capsuleBuilderMod {
     var radiusTop: js.UndefOr[Double] = js.undefined
     
     /** Number of sub segments on the tube section of the capsule running parallel to orientation. */
-    var subdivisions: Double
+    var subdivisions: js.UndefOr[Double] = js.undefined
     
     /** Number of cylindrical segments on the capsule. */
-    var tessellation: Double
+    var tessellation: js.UndefOr[Double] = js.undefined
     
     /** Overwrite for the top capSubdivisions. */
     var topCapSubdivisions: js.UndefOr[Double] = js.undefined
+    
+    /** Internal geometry is supposed to change once created. */
+    var updatable: js.UndefOr[Boolean] = js.undefined
   }
   object ICreateCapsuleOptions {
     
-    inline def apply(
-      capSubdivisions: Double,
-      height: Double,
-      radius: Double,
-      subdivisions: Double,
-      tessellation: Double
-    ): ICreateCapsuleOptions = {
-      val __obj = js.Dynamic.literal(capSubdivisions = capSubdivisions.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], subdivisions = subdivisions.asInstanceOf[js.Any], tessellation = tessellation.asInstanceOf[js.Any])
+    inline def apply(): ICreateCapsuleOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICreateCapsuleOptions]
     }
     
@@ -82,7 +101,11 @@ object capsuleBuilderMod {
       
       inline def setCapSubdivisions(value: Double): Self = StObject.set(x, "capSubdivisions", value.asInstanceOf[js.Any])
       
+      inline def setCapSubdivisionsUndefined: Self = StObject.set(x, "capSubdivisions", js.undefined)
+      
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
       inline def setOrientation(value: Vector3): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
@@ -98,13 +121,23 @@ object capsuleBuilderMod {
       
       inline def setRadiusTopUndefined: Self = StObject.set(x, "radiusTop", js.undefined)
       
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      
       inline def setSubdivisions(value: Double): Self = StObject.set(x, "subdivisions", value.asInstanceOf[js.Any])
       
+      inline def setSubdivisionsUndefined: Self = StObject.set(x, "subdivisions", js.undefined)
+      
       inline def setTessellation(value: Double): Self = StObject.set(x, "tessellation", value.asInstanceOf[js.Any])
+      
+      inline def setTessellationUndefined: Self = StObject.set(x, "tessellation", js.undefined)
       
       inline def setTopCapSubdivisions(value: Double): Self = StObject.set(x, "topCapSubdivisions", value.asInstanceOf[js.Any])
       
       inline def setTopCapSubdivisionsUndefined: Self = StObject.set(x, "topCapSubdivisions", js.undefined)
+      
+      inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
+      
+      inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
     }
   }
 }

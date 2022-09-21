@@ -10,10 +10,10 @@ A package to create a tree of named routes
 | ------------------ | :-------------: |
 | Full name          | route-node |
 | Keywords           | route tree, named route, route matching |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 1096752 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 141828.0 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/troch/route-node)

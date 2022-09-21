@@ -9,12 +9,12 @@ trait EditRowEndingEventUIParam extends StObject {
   /**
     * Gets the old value for the column with the specified key.
     */
-  var oldValues: js.UndefOr[js.Any] = js.undefined
+  var oldValues: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to GridUpdating.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Checks if the edit mode is for adding a new row.
@@ -29,7 +29,7 @@ trait EditRowEndingEventUIParam extends StObject {
   /**
     * Gets or set the new value for the column with the specified key.
     */
-  var values: js.UndefOr[js.Any] = js.undefined
+  var values: js.UndefOr[Any] = js.undefined
 }
 object EditRowEndingEventUIParam {
   
@@ -40,11 +40,11 @@ object EditRowEndingEventUIParam {
   
   extension [Self <: EditRowEndingEventUIParam](x: Self) {
     
-    inline def setOldValues(value: js.Any): Self = StObject.set(x, "oldValues", value.asInstanceOf[js.Any])
+    inline def setOldValues(value: Any): Self = StObject.set(x, "oldValues", value.asInstanceOf[js.Any])
     
     inline def setOldValuesUndefined: Self = StObject.set(x, "oldValues", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
@@ -56,7 +56,7 @@ object EditRowEndingEventUIParam {
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
-    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }

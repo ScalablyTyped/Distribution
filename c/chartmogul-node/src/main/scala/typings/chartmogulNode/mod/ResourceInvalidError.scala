@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("chartmogul-node", "ResourceInvalidError")
 @js.native
-class ResourceInvalidError () extends ChartMogulError
+open class ResourceInvalidError () extends ChartMogulError

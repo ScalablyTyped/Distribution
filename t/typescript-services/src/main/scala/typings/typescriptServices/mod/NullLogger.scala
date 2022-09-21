@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "NullLogger")
 @js.native
-class NullLogger ()
+open class NullLogger ()
   extends StObject
      with typings.typescriptServices.TypeScript.NullLogger {
   

@@ -22,7 +22,7 @@ trait ListRepositoryAssociationsRequest extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.NextToken] = js.undefined
   
   /**
-    * List of owners to use as a filter. For AWS CodeCommit, it is the name of the CodeCommit account that was used to associate the repository. For other repository source providers, such as Bitbucket and GitHub Enterprise Server, this is name of the account that was used to associate the repository. 
+    * List of owners to use as a filter. For Amazon Web Services CodeCommit, it is the name of the CodeCommit account that was used to associate the repository. For other repository source providers, such as Bitbucket and GitHub Enterprise Server, this is name of the account that was used to associate the repository. 
     */
   var Owners: js.UndefOr[typings.awsSdk.codegurureviewerMod.Owners] = js.undefined
   
@@ -32,7 +32,7 @@ trait ListRepositoryAssociationsRequest extends StObject {
   var ProviderTypes: js.UndefOr[typings.awsSdk.codegurureviewerMod.ProviderTypes] = js.undefined
   
   /**
-    * List of repository association states to use as a filter. The valid repository association states are:    Associated: The repository association is complete.     Associating: CodeGuru Reviewer is:     Setting up pull request notifications. This is required for pull requests to trigger a CodeGuru Reviewer review.    If your repository ProviderType is GitHub, GitHub Enterprise Server, or Bitbucket, CodeGuru Reviewer creates webhooks in your repository to trigger CodeGuru Reviewer reviews. If you delete these webhooks, reviews of code in your repository cannot be triggered.      Setting up source code access. This is required for CodeGuru Reviewer to securely clone code in your repository.       Failed: The repository failed to associate or disassociate.     Disassociating: CodeGuru Reviewer is removing the repository's pull request notifications and source code access.     Disassociated: CodeGuru Reviewer successfully disassociated the repository. You can create a new association with this repository if you want to review source code in it later. You can control access to code reviews created in an associated repository with tags after it has been disassociated. For more information, see Using tags to control access to associated repositories in the Amazon CodeGuru Reviewer User Guide.   
+    * List of repository association states to use as a filter. The valid repository association states are:    Associated: The repository association is complete.    Associating: CodeGuru Reviewer is:   Setting up pull request notifications. This is required for pull requests to trigger a CodeGuru Reviewer review.  If your repository ProviderType is GitHub, GitHub Enterprise Server, or Bitbucket, CodeGuru Reviewer creates webhooks in your repository to trigger CodeGuru Reviewer reviews. If you delete these webhooks, reviews of code in your repository cannot be triggered.    Setting up source code access. This is required for CodeGuru Reviewer to securely clone code in your repository.      Failed: The repository failed to associate or disassociate.    Disassociating: CodeGuru Reviewer is removing the repository's pull request notifications and source code access.    Disassociated: CodeGuru Reviewer successfully disassociated the repository. You can create a new association with this repository if you want to review source code in it later. You can control access to code reviews created in anassociated repository with tags after it has been disassociated. For more information, see Using tags to control access to associated repositories in the Amazon CodeGuru Reviewer User Guide.  
     */
   var States: js.UndefOr[RepositoryAssociationStates] = js.undefined
 }
@@ -53,7 +53,7 @@ object ListRepositoryAssociationsRequest {
     
     inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    inline def setNamesVarargs(value: Name*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: Name*): Self = StObject.set(x, "Names", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
@@ -63,18 +63,18 @@ object ListRepositoryAssociationsRequest {
     
     inline def setOwnersUndefined: Self = StObject.set(x, "Owners", js.undefined)
     
-    inline def setOwnersVarargs(value: Owner*): Self = StObject.set(x, "Owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: Owner*): Self = StObject.set(x, "Owners", js.Array(value*))
     
     inline def setProviderTypes(value: ProviderTypes): Self = StObject.set(x, "ProviderTypes", value.asInstanceOf[js.Any])
     
     inline def setProviderTypesUndefined: Self = StObject.set(x, "ProviderTypes", js.undefined)
     
-    inline def setProviderTypesVarargs(value: ProviderType*): Self = StObject.set(x, "ProviderTypes", js.Array(value :_*))
+    inline def setProviderTypesVarargs(value: ProviderType*): Self = StObject.set(x, "ProviderTypes", js.Array(value*))
     
     inline def setStates(value: RepositoryAssociationStates): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
     
     inline def setStatesUndefined: Self = StObject.set(x, "States", js.undefined)
     
-    inline def setStatesVarargs(value: RepositoryAssociationState*): Self = StObject.set(x, "States", js.Array(value :_*))
+    inline def setStatesVarargs(value: RepositoryAssociationState*): Self = StObject.set(x, "States", js.Array(value*))
   }
 }

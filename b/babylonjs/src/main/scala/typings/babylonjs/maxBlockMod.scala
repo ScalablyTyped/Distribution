@@ -10,7 +10,7 @@ object maxBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/maxBlock", "MaxBlock")
   @js.native
-  class MaxBlock protected () extends NodeMaterialBlock {
+  open class MaxBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new MaxBlock
       * @param name defines the block name

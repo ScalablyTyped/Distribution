@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeComplianceByResourceResponse extends StObject {
   
   /**
-    * Indicates whether the specified AWS resource complies with all of the AWS Config rules that evaluate it.
+    * Indicates whether the specified Amazon Web Services resource complies with all of the Config rules that evaluate it.
     */
   var ComplianceByResources: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceByResources] = js.undefined
   
@@ -29,7 +29,7 @@ object DescribeComplianceByResourceResponse {
     
     inline def setComplianceByResourcesUndefined: Self = StObject.set(x, "ComplianceByResources", js.undefined)
     
-    inline def setComplianceByResourcesVarargs(value: ComplianceByResource*): Self = StObject.set(x, "ComplianceByResources", js.Array(value :_*))
+    inline def setComplianceByResourcesVarargs(value: ComplianceByResource*): Self = StObject.set(x, "ComplianceByResources", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

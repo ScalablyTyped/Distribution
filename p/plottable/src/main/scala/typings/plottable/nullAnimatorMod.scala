@@ -12,7 +12,7 @@ object nullAnimatorMod {
   
   @JSImport("plottable/build/src/animators/nullAnimator", "Null")
   @js.native
-  class Null ()
+  open class Null ()
     extends StObject
        with IAnimator {
     
@@ -27,7 +27,7 @@ object nullAnimatorMod {
       *     animators.
       */
     /* CompleteClass */
-    override def animate(selection: SimpleSelection[js.Any], attrToAppliedProjector: AttributeToAppliedProjector): SimpleSelection[js.Any] | (Transition_[js.Any, js.Any, js.Any, js.Any]) = js.native
+    override def animate(selection: SimpleSelection[Any], attrToAppliedProjector: AttributeToAppliedProjector): SimpleSelection[Any] | (Transition_[Any, Any, Any, Any]) = js.native
     
     /**
       * Given the number of elements, return the total time the animation requires
@@ -37,6 +37,6 @@ object nullAnimatorMod {
       */
     /* CompleteClass */
     override def totalTime(numberOfIterations: Double): Double = js.native
-    def totalTime(selection: js.Any): Double = js.native
+    def totalTime(selection: Any): Double = js.native
   }
 }

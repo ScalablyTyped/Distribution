@@ -49,7 +49,7 @@ object ReceiptRule {
     
     inline def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
-    inline def setActionsVarargs(value: ReceiptAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: ReceiptAction*): Self = StObject.set(x, "Actions", js.Array(value*))
     
     inline def setEnabled(value: Enabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
@@ -61,7 +61,7 @@ object ReceiptRule {
     
     inline def setRecipientsUndefined: Self = StObject.set(x, "Recipients", js.undefined)
     
-    inline def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "Recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "Recipients", js.Array(value*))
     
     inline def setScanEnabled(value: Enabled): Self = StObject.set(x, "ScanEnabled", value.asInstanceOf[js.Any])
     

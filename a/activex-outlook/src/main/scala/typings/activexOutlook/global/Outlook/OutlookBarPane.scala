@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OutlookBarPane")
 @js.native
-/* private */ class OutlookBarPane ()
+/* private */ open class OutlookBarPane ()
   extends StObject
      with typings.activexOutlook.Outlook.OutlookBarPane {
   
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotOutlookBarPane_typekey: typings.activexOutlook.Outlook.OutlookBarPane = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

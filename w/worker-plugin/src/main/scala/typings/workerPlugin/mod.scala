@@ -1,5 +1,6 @@
 package typings.workerPlugin
 
+import typings.webpack.mod.Plugin
 import typings.workerPlugin.workerPluginBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,21 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @JSImport("worker-plugin", JSImport.Namespace)
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("worker-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends StObject {
+  open class ^ () extends StObject {
     def this(options: Options) = this()
   }
   
   trait Options extends StObject {
     
+    var chunkFilename: js.UndefOr[String] = js.undefined
+    
+    var filename: js.UndefOr[String] = js.undefined
+    
     var globalObject: js.UndefOr[`false` | String] = js.undefined
     
-    var plugins: js.UndefOr[
-        js.Array[
-          String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any)
-        ]
-      ] = js.undefined
+    var plugins: js.UndefOr[js.Array[String | Plugin]] = js.undefined
     
     var preserveTypeModule: js.UndefOr[Boolean] = js.undefined
     
@@ -53,21 +54,23 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
+      inline def setChunkFilename(value: String): Self = StObject.set(x, "chunkFilename", value.asInstanceOf[js.Any])
+      
+      inline def setChunkFilenameUndefined: Self = StObject.set(x, "chunkFilename", js.undefined)
+      
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
       inline def setGlobalObject(value: `false` | String): Self = StObject.set(x, "globalObject", value.asInstanceOf[js.Any])
       
       inline def setGlobalObjectUndefined: Self = StObject.set(x, "globalObject", js.undefined)
       
-      inline def setPlugins(
-        value: js.Array[
-              String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any)
-            ]
-      ): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[String | Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(
-        value: (String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any))*
-      ): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: (String | Plugin)*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setPreserveTypeModule(value: Boolean): Self = StObject.set(x, "preserveTypeModule", value.asInstanceOf[js.Any])
       
@@ -87,5 +90,5 @@ object mod {
     }
   }
   
-  type WorkerPlugin = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any
+  type WorkerPlugin = Plugin
 }

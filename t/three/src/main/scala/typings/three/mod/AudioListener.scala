@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "AudioListener")
 @js.native
-class AudioListener ()
-  extends typings.three.audioListenerMod.AudioListener
+open class AudioListener ()
+  extends typings.three.threeMod.AudioListener

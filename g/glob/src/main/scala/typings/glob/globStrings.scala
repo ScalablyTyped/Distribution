@@ -13,4 +13,8 @@ object globStrings {
   @js.native
   sealed trait FILE extends StObject
   inline def FILE: FILE = "FILE".asInstanceOf[FILE]
+  
+  @js.native
+  sealed trait buffer extends StObject
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
 }

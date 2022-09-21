@@ -10,21 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object celleditorcontrollerMod {
   
-  @JSImport("@lumino/datagrid/lib/celleditorcontroller", JSImport.Namespace)
+  @JSImport("@lumino/datagrid/types/celleditorcontroller", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@lumino/datagrid/lib/celleditorcontroller", "CellEditorController")
+  @JSImport("@lumino/datagrid/types/celleditorcontroller", "CellEditorController")
   @js.native
-  class CellEditorController ()
+  open class CellEditorController ()
     extends StObject
        with ICellEditorController {
     
-    /* private */ var _cell: js.Any = js.native
+    /* private */ var _cell: Any = js.native
     
-    /* private */ var _editor: js.Any = js.native
+    /* private */ var _editor: Any = js.native
     
-    /* private */ var _getDataTypeKey: js.Any = js.native
+    /* private */ var _getDataTypeKey: Any = js.native
     
     /**
       * Choose the most appropriate cell editor to use based on overrides / cell data type.
@@ -33,23 +33,23 @@ object celleditorcontrollerMod {
       * data type then TextCellEditor is used as default cell editor. If 'default' cell editor
       * is overridden, then it is used instead of TextCellEditor for default.
       */
-    /* private */ var _getEditor: js.Any = js.native
+    /* private */ var _getEditor: Any = js.native
     
-    /* private */ var _getMetadataBasedEditor: js.Any = js.native
+    /* private */ var _getMetadataBasedEditor: Any = js.native
     
-    /* private */ var _metadataBasedOverrides: js.Any = js.native
+    /* private */ var _metadataBasedOverrides: Any = js.native
     
-    /* private */ var _metadataIdentifierToKey: js.Any = js.native
+    /* private */ var _metadataIdentifierToKey: Any = js.native
     
-    /* private */ var _metadataMatchesIdentifier: js.Any = js.native
+    /* private */ var _metadataMatchesIdentifier: Any = js.native
     
-    /* private */ var _objectToKey: js.Any = js.native
+    /* private */ var _objectToKey: Any = js.native
     
-    /* private */ var _onCancel: js.Any = js.native
+    /* private */ var _onCancel: Any = js.native
     
-    /* private */ var _onCommit: js.Any = js.native
+    /* private */ var _onCommit: Any = js.native
     
-    /* private */ var _typeBasedOverrides: js.Any = js.native
+    /* private */ var _typeBasedOverrides: Any = js.native
   }
   
   inline def resolveOption[T](option: ConfigOption[T], config: CellConfig): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOption")(option.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]

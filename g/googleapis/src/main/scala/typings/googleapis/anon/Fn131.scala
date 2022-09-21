@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
 import typings.googleapis.googleapisStrings.v1
-import typings.googleapis.storagetransferV1Mod.storagetransferV1.Options
-import typings.googleapis.storagetransferV1Mod.storagetransferV1.Storagetransfer
+import typings.googleapis.homegraphV1Mod.homegraphV1.Homegraph
+import typings.googleapis.homegraphV1Mod.homegraphV1.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn131 extends StObject {
   
-  def apply(options: Options): Storagetransfer = js.native
-  def apply(version: v1): Storagetransfer = js.native
+  def apply(options: Options): Homegraph = js.native
+  def apply(version: v1): Homegraph = js.native
 }

@@ -19,7 +19,7 @@ trait AddIn extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Path: String
   
@@ -39,7 +39,7 @@ object AddIn {
     FullName: String,
     Loaded: MsoTriState,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Path: String,
     PowerPointDotAddIn_typekey: AddIn,
     Registered: MsoTriState,
@@ -64,7 +64,7 @@ object AddIn {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

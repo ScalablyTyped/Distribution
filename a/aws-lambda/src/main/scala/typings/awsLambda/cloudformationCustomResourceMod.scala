@@ -112,7 +112,7 @@ object cloudformationCustomResourceMod {
     
     inline def CloudFormationCustomResourceUpdateEvent(
       LogicalResourceId: String,
-      OldResourceProperties: StringDictionary[js.Any],
+      OldResourceProperties: StringDictionary[Any],
       PhysicalResourceId: String,
       RequestId: String,
       ResourceProperties: DictKey,
@@ -233,7 +233,7 @@ object cloudformationCustomResourceMod {
   
   trait CloudFormationCustomResourceResponseCommon extends StObject {
     
-    var Data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var Data: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var LogicalResourceId: String
     
@@ -254,7 +254,7 @@ object cloudformationCustomResourceMod {
     
     extension [Self <: CloudFormationCustomResourceResponseCommon](x: Self) {
       
-      inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
       
@@ -303,7 +303,7 @@ object cloudformationCustomResourceMod {
        with CloudFormationCustomResourceEventCommon
        with CloudFormationCustomResourceEvent {
     
-    var OldResourceProperties: StringDictionary[js.Any]
+    var OldResourceProperties: StringDictionary[Any]
     
     var PhysicalResourceId: String
     
@@ -313,7 +313,7 @@ object cloudformationCustomResourceMod {
     
     inline def apply(
       LogicalResourceId: String,
-      OldResourceProperties: StringDictionary[js.Any],
+      OldResourceProperties: StringDictionary[Any],
       PhysicalResourceId: String,
       RequestId: String,
       ResourceProperties: DictKey,
@@ -328,7 +328,7 @@ object cloudformationCustomResourceMod {
     
     extension [Self <: CloudFormationCustomResourceUpdateEvent](x: Self) {
       
-      inline def setOldResourceProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "OldResourceProperties", value.asInstanceOf[js.Any])
+      inline def setOldResourceProperties(value: StringDictionary[Any]): Self = StObject.set(x, "OldResourceProperties", value.asInstanceOf[js.Any])
       
       inline def setPhysicalResourceId(value: String): Self = StObject.set(x, "PhysicalResourceId", value.asInstanceOf[js.Any])
       

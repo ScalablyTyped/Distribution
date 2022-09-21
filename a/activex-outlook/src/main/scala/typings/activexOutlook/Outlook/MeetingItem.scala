@@ -38,7 +38,7 @@ trait MeetingItem extends StObject {
   
   val ConversationTopic: String = js.native
   
-  def Copy(): js.Any = js.native
+  def Copy(): Any = js.native
   
   val CreationTime: VarDate = js.native
   
@@ -49,7 +49,7 @@ trait MeetingItem extends StObject {
   var DeleteAfterSubmit: Boolean = js.native
   
   def Display(): Unit = js.native
-  def Display(Modal: js.Any): Unit = js.native
+  def Display(Modal: Any): Unit = js.native
   
   val DownloadState: OlDownloadState = js.native
   
@@ -87,7 +87,7 @@ trait MeetingItem extends StObject {
   
   val Links: typings.activexOutlook.Outlook.Links = js.native
   
-  val MAPIOBJECT: js.Any = js.native
+  val MAPIOBJECT: Any = js.native
   
   var MarkForDownload: OlRemoteStatus = js.native
   
@@ -97,7 +97,7 @@ trait MeetingItem extends StObject {
   
   var Mileage: String = js.native
   
-  def Move(DestFldr: Folder): js.Any = js.native
+  def Move(DestFldr: Folder): Any = js.native
   
   var NoAging: Boolean = js.native
   
@@ -110,13 +110,13 @@ trait MeetingItem extends StObject {
   
   val OutlookVersion: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PrintOut(): Unit = js.native
   
   val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor = js.native
   
-  var RTFBody: js.Any = js.native
+  var RTFBody: Any = js.native
   
   var ReceivedTime: VarDate = js.native
   
@@ -139,7 +139,7 @@ trait MeetingItem extends StObject {
   def Save(): Unit = js.native
   
   def SaveAs(Path: String): Unit = js.native
-  def SaveAs(Path: String, Type: js.Any): Unit = js.native
+  def SaveAs(Path: String, Type: Any): Unit = js.native
   
   var SaveSentMessageFolder: Folder = js.native
   

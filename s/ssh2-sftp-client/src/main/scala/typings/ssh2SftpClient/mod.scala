@@ -1,18 +1,18 @@
 package typings.ssh2SftpClient
 
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
+import typings.node.bufferMod.global.Buffer
 import typings.ssh2.mod.ConnectConfig
+import typings.ssh2.mod.ReadStream
 import typings.ssh2.mod.SFTPWrapper
+import typings.ssh2.mod.WriteStream
 import typings.ssh2SftpClient.anon.Group
 import typings.ssh2SftpClient.ssh2SftpClientBooleans.`false`
 import typings.ssh2SftpClient.ssh2SftpClientStrings.`-_`
 import typings.ssh2SftpClient.ssh2SftpClientStrings.a
-import typings.ssh2SftpClient.ssh2SftpClientStrings.d
-import typings.ssh2SftpClient.ssh2SftpClientStrings.l
+import typings.ssh2SftpClient.ssh2SftpClientStrings.r
 import typings.ssh2SftpClient.ssh2SftpClientStrings.w
-import typings.std.RegExp
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +21,11 @@ object mod {
   
   @JSImport("ssh2-sftp-client", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
-       with sftp
+       with sftp {
+    def this(name: String) = this()
+  }
   
   trait ConnectOptions
     extends StObject
@@ -119,7 +121,7 @@ object mod {
     
     var size: Double
     
-    var `type`: String
+    var `type`: FileInfoType
   }
   object FileInfo {
     
@@ -131,7 +133,7 @@ object mod {
       owner: Double,
       rights: Group,
       size: Double,
-      `type`: String
+      `type`: FileInfoType
     ): FileInfo = {
       val __obj = js.Dynamic.literal(accessTime = accessTime.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], modifyTime = modifyTime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], rights = rights.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -154,8 +156,23 @@ object mod {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: FileInfoType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.ssh2SftpClient.ssh2SftpClientStrings.d
+    - typings.ssh2SftpClient.ssh2SftpClientStrings.`-_`
+    - typings.ssh2SftpClient.ssh2SftpClientStrings.l
+  */
+  trait FileInfoType extends StObject
+  object FileInfoType {
+    
+    inline def _dash: `-_` = "-".asInstanceOf[`-_`]
+    
+    inline def d: typings.ssh2SftpClient.ssh2SftpClientStrings.d = "d".asInstanceOf[typings.ssh2SftpClient.ssh2SftpClientStrings.d]
+    
+    inline def l: typings.ssh2SftpClient.ssh2SftpClientStrings.l = "l".asInstanceOf[typings.ssh2SftpClient.ssh2SftpClientStrings.l]
   }
   
   trait FileStats extends StObject {
@@ -237,32 +254,9 @@ object mod {
     }
   }
   
-  trait GetTransferOptions
-    extends StObject
-       with TransferOptions {
-    
-    var handle: js.UndefOr[Null | String] = js.undefined
-  }
-  object GetTransferOptions {
-    
-    inline def apply(): GetTransferOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[GetTransferOptions]
-    }
-    
-    extension [Self <: GetTransferOptions](x: Self) {
-      
-      inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
-      
-      inline def setHandleNull: Self = StObject.set(x, "handle", null)
-      
-      inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
-    }
-  }
-  
   trait ModeOption extends StObject {
     
-    var mode: js.UndefOr[Double] = js.undefined
+    var mode: js.UndefOr[Double | String] = js.undefined
   }
   object ModeOption {
     
@@ -273,13 +267,32 @@ object mod {
     
     extension [Self <: ModeOption](x: Self) {
       
-      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double | String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }
   }
   
-  trait TransferOptions
+  trait PipeOptions extends StObject {
+    
+    var end: js.UndefOr[Boolean] = js.undefined
+  }
+  object PipeOptions {
+    
+    inline def apply(): PipeOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PipeOptions]
+    }
+    
+    extension [Self <: PipeOptions](x: Self) {
+      
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    }
+  }
+  
+  trait ReadStreamOptions
     extends StObject
        with ModeOption {
     
@@ -287,7 +300,48 @@ object mod {
     
     var encoding: js.UndefOr[Null | String] = js.undefined
     
-    var flags: js.UndefOr[w | a] = js.undefined
+    var flags: js.UndefOr[r] = js.undefined
+    
+    var handle: js.UndefOr[Null | String] = js.undefined
+  }
+  object ReadStreamOptions {
+    
+    inline def apply(): ReadStreamOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ReadStreamOptions]
+    }
+    
+    extension [Self <: ReadStreamOptions](x: Self) {
+      
+      inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+      
+      inline def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
+      
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      
+      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
+      
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      
+      inline def setFlags(value: r): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      
+      inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      
+      inline def setHandleNull: Self = StObject.set(x, "handle", null)
+      
+      inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+    }
+  }
+  
+  trait TransferOptions extends StObject {
+    
+    var pipeOptions: js.UndefOr[PipeOptions] = js.undefined
+    
+    var readStreamOptions: js.UndefOr[ReadStreamOptions] = js.undefined
+    
+    var writeStreamOptions: js.UndefOr[WriteStreamOptions] = js.undefined
   }
   object TransferOptions {
     
@@ -297,6 +351,39 @@ object mod {
     }
     
     extension [Self <: TransferOptions](x: Self) {
+      
+      inline def setPipeOptions(value: PipeOptions): Self = StObject.set(x, "pipeOptions", value.asInstanceOf[js.Any])
+      
+      inline def setPipeOptionsUndefined: Self = StObject.set(x, "pipeOptions", js.undefined)
+      
+      inline def setReadStreamOptions(value: ReadStreamOptions): Self = StObject.set(x, "readStreamOptions", value.asInstanceOf[js.Any])
+      
+      inline def setReadStreamOptionsUndefined: Self = StObject.set(x, "readStreamOptions", js.undefined)
+      
+      inline def setWriteStreamOptions(value: WriteStreamOptions): Self = StObject.set(x, "writeStreamOptions", value.asInstanceOf[js.Any])
+      
+      inline def setWriteStreamOptionsUndefined: Self = StObject.set(x, "writeStreamOptions", js.undefined)
+    }
+  }
+  
+  trait WriteStreamOptions
+    extends StObject
+       with ModeOption {
+    
+    var autoClose: js.UndefOr[Boolean] = js.undefined
+    
+    var encoding: js.UndefOr[Null | String] = js.undefined
+    
+    var flags: js.UndefOr[w | a] = js.undefined
+  }
+  object WriteStreamOptions {
+    
+    inline def apply(): WriteStreamOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WriteStreamOptions]
+    }
+    
+    extension [Self <: WriteStreamOptions](x: Self) {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
@@ -318,24 +405,33 @@ object mod {
   trait sftp extends StObject {
     
     def append(input: Buffer, remotePath: String): js.Promise[String] = js.native
-    def append(input: Buffer, remotePath: String, options: TransferOptions): js.Promise[String] = js.native
-    def append(input: ReadableStream, remotePath: String): js.Promise[String] = js.native
-    def append(input: ReadableStream, remotePath: String, options: TransferOptions): js.Promise[String] = js.native
+    def append(input: Buffer, remotePath: String, options: WriteStreamOptions): js.Promise[String] = js.native
+    def append(input: ReadableStream[Any], remotePath: String): js.Promise[String] = js.native
+    def append(input: ReadableStream[Any], remotePath: String, options: WriteStreamOptions): js.Promise[String] = js.native
     
     def chmod(remotePath: String, mode: String): js.Promise[String] = js.native
     def chmod(remotePath: String, mode: Double): js.Promise[String] = js.native
     
     def connect(options: ConnectOptions): js.Promise[SFTPWrapper] = js.native
     
+    def createReadStream(remotePath: String): ReadStream = js.native
+    def createReadStream(remotePath: String, options: typings.ssh2.mod.ReadStreamOptions): ReadStream = js.native
+    
+    def createWriteStream(remotePath: String): WriteStream = js.native
+    def createWriteStream(remotePath: String, options: typings.ssh2.mod.WriteStreamOptions): WriteStream = js.native
+    
     def cwd(): js.Promise[String] = js.native
     
     def delete(remoteFilePath: String): js.Promise[String] = js.native
+    def delete(remoteFilePath: String, noErrorOK: Boolean): js.Promise[String] = js.native
     
     def downloadDir(srcDir: String, destDir: String): js.Promise[String] = js.native
+    def downloadDir(srcDir: String, destDir: String, filter: String): js.Promise[String] = js.native
+    def downloadDir(srcDir: String, destDir: String, filter: js.RegExp): js.Promise[String] = js.native
     
     def end(): js.Promise[Unit] = js.native
     
-    def exists(remotePath: String): js.Promise[`false` | d | `-_` | l] = js.native
+    def exists(remotePath: String): js.Promise[`false` | FileInfoType] = js.native
     
     def fastGet(remoteFilePath: String, localPath: String): js.Promise[String] = js.native
     def fastGet(remoteFilePath: String, localPath: String, options: FastGetTransferOptions): js.Promise[String] = js.native
@@ -343,21 +439,21 @@ object mod {
     def fastPut(localPath: String, remoteFilePath: String): js.Promise[String] = js.native
     def fastPut(localPath: String, remoteFilePath: String, options: FastPutTransferOptions): js.Promise[String] = js.native
     
-    def get(path: String): js.Promise[String | WritableStream | Buffer] = js.native
-    def get(path: String, dst: String): js.Promise[String | WritableStream | Buffer] = js.native
-    def get(path: String, dst: String, options: GetTransferOptions): js.Promise[String | WritableStream | Buffer] = js.native
-    def get(path: String, dst: Unit, options: GetTransferOptions): js.Promise[String | WritableStream | Buffer] = js.native
-    def get(path: String, dst: WritableStream): js.Promise[String | WritableStream | Buffer] = js.native
-    def get(path: String, dst: WritableStream, options: GetTransferOptions): js.Promise[String | WritableStream | Buffer] = js.native
+    def get(path: String): js.Promise[String | WritableStream[Any] | Buffer] = js.native
+    def get(path: String, dst: String): js.Promise[String | WritableStream[Any] | Buffer] = js.native
+    def get(path: String, dst: String, options: TransferOptions): js.Promise[String | WritableStream[Any] | Buffer] = js.native
+    def get(path: String, dst: Unit, options: TransferOptions): js.Promise[String | WritableStream[Any] | Buffer] = js.native
+    def get(path: String, dst: WritableStream[Any]): js.Promise[String | WritableStream[Any] | Buffer] = js.native
+    def get(path: String, dst: WritableStream[Any], options: TransferOptions): js.Promise[String | WritableStream[Any] | Buffer] = js.native
     
     def list(remoteFilePath: String): js.Promise[js.Array[FileInfo]] = js.native
     def list(remoteFilePath: String, pattern: String): js.Promise[js.Array[FileInfo]] = js.native
-    def list(remoteFilePath: String, pattern: RegExp): js.Promise[js.Array[FileInfo]] = js.native
+    def list(remoteFilePath: String, pattern: js.RegExp): js.Promise[js.Array[FileInfo]] = js.native
     
     def mkdir(remoteFilePath: String): js.Promise[String] = js.native
     def mkdir(remoteFilePath: String, recursive: Boolean): js.Promise[String] = js.native
     
-    def on(event: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def on(event: String, callback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
     def posixRename(fromPath: String, toPath: String): js.Promise[String] = js.native
     
@@ -365,12 +461,14 @@ object mod {
     def put(input: String, remoteFilePath: String, options: TransferOptions): js.Promise[String] = js.native
     def put(input: Buffer, remoteFilePath: String): js.Promise[String] = js.native
     def put(input: Buffer, remoteFilePath: String, options: TransferOptions): js.Promise[String] = js.native
-    def put(input: ReadableStream, remoteFilePath: String): js.Promise[String] = js.native
-    def put(input: ReadableStream, remoteFilePath: String, options: TransferOptions): js.Promise[String] = js.native
+    def put(input: ReadableStream[Any], remoteFilePath: String): js.Promise[String] = js.native
+    def put(input: ReadableStream[Any], remoteFilePath: String, options: TransferOptions): js.Promise[String] = js.native
+    
+    def rcopy(srcPath: String, dstPath: String): js.Promise[String] = js.native
     
     def realPath(remotePath: String): js.Promise[String] = js.native
     
-    def removeListener(event: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def removeListener(event: String, callback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
     def rename(remoteSourcePath: String, remoteDestPath: String): js.Promise[String] = js.native
     
@@ -380,5 +478,7 @@ object mod {
     def stat(remotePath: String): js.Promise[FileStats] = js.native
     
     def uploadDir(srcDir: String, destDir: String): js.Promise[String] = js.native
+    def uploadDir(srcDir: String, destDir: String, filter: String): js.Promise[String] = js.native
+    def uploadDir(srcDir: String, destDir: String, filter: js.RegExp): js.Promise[String] = js.native
   }
 }

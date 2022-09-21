@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("beanstalkd-worker", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with BeanstalkdWorker {
     def this(host: String) = this()
@@ -213,7 +213,7 @@ object mod {
       * @param command The command to execute.
       * @param args The arguments for the command.
       */
-    def command(command: String, args: js.Any*): js.Promise[js.Any] = js.native
+    def command(command: String, args: Any*): js.Promise[Any] = js.native
     
     /**
       * Wait for this job to be done.
@@ -241,7 +241,7 @@ object mod {
     var tube: String = js.native
   }
   
-  type JobPollHandler = js.Function1[/* state */ BeanstalkdJobState, js.Any]
+  type JobPollHandler = js.Function1[/* state */ BeanstalkdJobState, Any]
   
   type JobStatus = BeanstalkdJobState | success
   
@@ -254,7 +254,7 @@ object mod {
       * @param command The command to execute.
       * @param args The arguments for the command.
       */
-    def command(command: String, args: js.Any*): js.Promise[js.Any] = js.native
+    def command(command: String, args: Any*): js.Promise[Any] = js.native
     
     /**
       * Gets or creates a new Client for given id.
@@ -282,7 +282,7 @@ object mod {
     def working(): Boolean = js.native
   }
   
-  type TubeHandler = js.ThisFunction1[/* this */ WatcherJob, /* payload */ js.UndefOr[js.Any], js.Any]
+  type TubeHandler = js.ThisFunction1[/* this */ WatcherJob, /* payload */ js.UndefOr[Any], Any]
   
   @js.native
   trait WatcherJob

@@ -25,7 +25,7 @@ object transportMod {
   
   @JSImport("openfin/_v2/transport/transport", JSImport.Default)
   @js.native
-  class default protected () extends Transport {
+  open class default protected () extends Transport {
     def this(WireType: WireConstructor, environment: Environment) = this()
   }
   
@@ -97,7 +97,7 @@ object transportMod {
     }
   }
   
-  type MessageHandler = js.Function1[/* data */ js.Any, Boolean]
+  type MessageHandler = js.Function1[/* data */ Any, Boolean]
   
   trait NotificationEvent extends StObject {
     
@@ -143,20 +143,20 @@ object transportMod {
   
   trait Payload extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var success: Boolean
   }
   object Payload {
     
-    inline def apply(data: js.Any, success: Boolean): Payload = {
+    inline def apply(data: Any, success: Boolean): Payload = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[Payload]
     }
     
     extension [Self <: Payload](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
@@ -165,7 +165,7 @@ object transportMod {
   @js.native
   trait Transport extends EventEmitter {
     
-    var READY_STATE: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof READY_STATE */ js.Any = js.native
+    var READY_STATE: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof READY_STATE */ Any = js.native
     
     /* protected */ def addWireListener(id: Double, resolve: js.Function, reject: js.Function, uncorrelated: Boolean): Unit = js.native
     
@@ -179,7 +179,7 @@ object transportMod {
     
     var eventAggregator: EventAggregator = js.native
     
-    def ferryAction(data: js.Any): js.Promise[Message[js.Any]] = js.native
+    def ferryAction(data: Any): js.Promise[Message[Any]] = js.native
     
     def getPort(): String = js.native
     
@@ -196,9 +196,9 @@ object transportMod {
     def sendAction(action: String, payload: js.Object, uncorrelated: Boolean): js.Promise[Message[Payload]] = js.native
     def sendAction(action: `request-external-authorization`, payload: js.Object, uncorrelated: `true`): js.Promise[Message[AuthorizationPayload]] = js.native
     
-    def sendRaw(data: js.Any): js.Promise[js.Any] = js.native
+    def sendRaw(data: Any): js.Promise[Any] = js.native
     @JSName("sendRaw")
-    var sendRaw_Original: js.Function1[/* data */ js.Any, js.Promise[js.Any]] = js.native
+    var sendRaw_Original: js.Function1[/* data */ Any, js.Promise[Any]] = js.native
     
     def shutdown(): js.Promise[Unit] = js.native
     

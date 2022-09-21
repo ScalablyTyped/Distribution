@@ -8,16 +8,8 @@ trait OpenIDCallbackChecks
   extends StObject
      with OAuthCallbackChecks {
   
-  /**
-    * When provided the authorization response's ID Token auth_time parameter will be checked to be conform to the
-    * max_age value. Use of this check is required if you sent a max_age parameter into an authorization request.
-    */
   var max_age: js.UndefOr[Double] = js.undefined
   
-  /**
-    * When provided the authorization response's ID Token nonce parameter will be checked to be the this expected
-    * one. Use of this check is required if you sent a nonce parameter into an authorization request.
-    */
   var nonce: js.UndefOr[String] = js.undefined
 }
 object OpenIDCallbackChecks {

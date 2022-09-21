@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.MapViewPropertiestype2d
+import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,18 +18,11 @@ trait BasemapToggleProperties
   var nextBasemap: js.UndefOr[BasemapProperties | String] = js.undefined
   
   /**
-    * Indicates if the title of the basemap is visible in the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#titleVisible)
-    */
-  var titleVisible: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
     * The view model for this widget.
@@ -56,11 +51,7 @@ object BasemapToggleProperties {
     
     inline def setNextBasemapUndefined: Self = StObject.set(x, "nextBasemap", js.undefined)
     
-    inline def setTitleVisible(value: Boolean): Self = StObject.set(x, "titleVisible", value.asInstanceOf[js.Any])
-    
-    inline def setTitleVisibleUndefined: Self = StObject.set(x, "titleVisible", js.undefined)
-    
-    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewModel(value: BasemapToggleViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

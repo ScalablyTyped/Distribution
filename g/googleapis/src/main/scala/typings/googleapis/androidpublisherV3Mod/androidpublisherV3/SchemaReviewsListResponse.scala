@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaReviewsListResponse extends StObject {
   
+  /**
+    * Information about the current page.
+    */
   var pageInfo: js.UndefOr[SchemaPageInfo] = js.undefined
   
+  /**
+    * List of reviews.
+    */
   var reviews: js.UndefOr[js.Array[SchemaReview]] = js.undefined
   
+  /**
+    * Pagination token, to handle a number of products that is over one page.
+    */
   var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.undefined
 }
 object SchemaReviewsListResponse {
@@ -29,7 +38,7 @@ object SchemaReviewsListResponse {
     
     inline def setReviewsUndefined: Self = StObject.set(x, "reviews", js.undefined)
     
-    inline def setReviewsVarargs(value: SchemaReview*): Self = StObject.set(x, "reviews", js.Array(value :_*))
+    inline def setReviewsVarargs(value: SchemaReview*): Self = StObject.set(x, "reviews", js.Array(value*))
     
     inline def setTokenPagination(value: SchemaTokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     

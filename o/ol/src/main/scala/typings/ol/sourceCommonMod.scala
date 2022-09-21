@@ -12,5 +12,5 @@ object sourceCommonMod {
   
   @JSImport("ol/source/common", "IMAGE_SMOOTHING_DISABLED")
   @js.native
-  val IMAGE_SMOOTHING_DISABLED: js.Any = js.native
+  val IMAGE_SMOOTHING_DISABLED: Any = js.native
 }

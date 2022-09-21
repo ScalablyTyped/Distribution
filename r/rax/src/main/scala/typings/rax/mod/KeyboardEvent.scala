@@ -1,77 +1,112 @@
 package typings.rax.mod
 
+import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.std.Event because var conflicts: bubbles, cancelable, currentTarget, defaultPrevented, eventPhase, isTrusted, target, timeStamp, `type`. Inlined BUBBLING_PHASE, NONE, cancelBubble, composed, returnValue, AT_TARGET, CAPTURING_PHASE, srcElement, composedPath, initEvent, initEvent, initEvent, initEvent, stopImmediatePropagation */ @js.native
 trait KeyboardEvent[T]
   extends StObject
      with BaseSyntheticEvent[NativeKeyboardEvent, EventTarget & T, EventTarget] {
   
-  val AT_TARGET: Double = js.native
+  var altKey: Boolean
   
-  val BUBBLING_PHASE: Double = js.native
+  /** @deprecated */
+  var charCode: Double
   
-  val CAPTURING_PHASE: Double = js.native
+  var code: String
   
-  val NONE: Double = js.native
-  
-  var altKey: Boolean = js.native
-  
-  var cancelBubble: Boolean = js.native
-  
-  var charCode: Double = js.native
-  
-  /**
-    * Returns true or false depending on how event was initialized. True if event invokes listeners past a ShadowRoot node that is the root of its target, and false otherwise.
-    */
-  val composed: Boolean = js.native
-  
-  /**
-    * Returns the invocation target objects of event's path (objects on which listeners will be invoked), except for any nodes in shadow trees of which the shadow root's mode is "closed" that are not reachable from event's currentTarget.
-    */
-  def composedPath(): js.Array[typings.std.EventTarget] = js.native
-  
-  var ctrlKey: Boolean = js.native
+  var ctrlKey: Boolean
   
   /**
     * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
     */
-  def getModifierState(key: String): Boolean = js.native
-  
-  def initEvent(`type`: String): Unit = js.native
-  def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
-  def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
-  def initEvent(`type`: String, bubbles: Unit, cancelable: Boolean): Unit = js.native
+  def getModifierState(key: String): Boolean
   
   /**
     * See the [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#named-key-attribute-values). for possible values
     */
-  var key: String = js.native
-  
-  var keyCode: Double = js.native
-  
-  var locale: String = js.native
-  
-  var location: Double = js.native
-  
-  var metaKey: Boolean = js.native
-  
-  var repeat: Boolean = js.native
-  
-  var returnValue: Boolean = js.native
-  
-  var shiftKey: Boolean = js.native
+  var key: String
   
   /** @deprecated */
-  val srcElement: typings.std.EventTarget | Null = js.native
+  var keyCode: Double
   
-  /**
-    * Invoking this method prevents event from reaching any registered event listeners after the current one finishes running and, when dispatched in a tree, also prevents event from reaching any other objects.
-    */
-  def stopImmediatePropagation(): Unit = js.native
+  var locale: String
   
-  var which: Double = js.native
+  var location: Double
+  
+  var metaKey: Boolean
+  
+  var repeat: Boolean
+  
+  var shiftKey: Boolean
+  
+  /** @deprecated */
+  var which: Double
+}
+object KeyboardEvent {
+  
+  inline def apply[T](
+    altKey: Boolean,
+    bubbles: Boolean,
+    cancelable: Boolean,
+    charCode: Double,
+    code: String,
+    ctrlKey: Boolean,
+    currentTarget: EventTarget & T,
+    defaultPrevented: Boolean,
+    eventPhase: Double,
+    getModifierState: String => Boolean,
+    isDefaultPrevented: () => Boolean,
+    isPropagationStopped: () => Boolean,
+    isTrusted: Boolean,
+    key: String,
+    keyCode: Double,
+    locale: String,
+    location: Double,
+    metaKey: Boolean,
+    nativeEvent: NativeKeyboardEvent,
+    persist: () => Unit,
+    preventDefault: () => Unit,
+    repeat: Boolean,
+    shiftKey: Boolean,
+    stopPropagation: () => Unit,
+    target: EventTarget,
+    timeStamp: Double,
+    `type`: String,
+    which: Double
+  ): KeyboardEvent[T] = {
+    val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), preventDefault = js.Any.fromFunction0(preventDefault), repeat = repeat.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeyboardEvent[T]]
+  }
+  
+  extension [Self <: KeyboardEvent[?], T](x: Self & KeyboardEvent[T]) {
+    
+    inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+    
+    inline def setCharCode(value: Double): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
+    
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+    
+    inline def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+    
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+    
+    inline def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    
+    inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+    
+    inline def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+  }
 }

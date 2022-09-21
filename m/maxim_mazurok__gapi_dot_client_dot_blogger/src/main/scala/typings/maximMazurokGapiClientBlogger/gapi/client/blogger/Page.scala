@@ -38,6 +38,9 @@ trait Page extends StObject {
   /** The title of this entity. This is the name displayed in the Admin user interface. */
   var title: js.UndefOr[String] = js.undefined
   
+  /** RFC 3339 date-time when this Page was trashed. */
+  var trashed: js.UndefOr[String] = js.undefined
+  
   /** RFC 3339 date-time when this Page was last updated. */
   var updated: js.UndefOr[String] = js.undefined
   
@@ -92,6 +95,10 @@ object Page {
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTrashed(value: String): Self = StObject.set(x, "trashed", value.asInstanceOf[js.Any])
+    
+    inline def setTrashedUndefined: Self = StObject.set(x, "trashed", js.undefined)
     
     inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     

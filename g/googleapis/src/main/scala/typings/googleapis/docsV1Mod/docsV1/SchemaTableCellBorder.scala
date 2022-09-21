@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A border around a table cell.
-  */
 trait SchemaTableCellBorder extends StObject {
   
   /**
-    * The color of the border.
+    * The color of the border. This color cannot be transparent.
     */
   var color: js.UndefOr[SchemaOptionalColor] = js.undefined
   
   /**
     * The dash style of the border.
     */
-  var dashStyle: js.UndefOr[String] = js.undefined
+  var dashStyle: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The width of the border.
@@ -38,6 +35,8 @@ object SchemaTableCellBorder {
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDashStyleNull: Self = StObject.set(x, "dashStyle", null)
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     

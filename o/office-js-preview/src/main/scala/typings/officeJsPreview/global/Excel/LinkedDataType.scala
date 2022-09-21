@@ -6,16 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a linked data type.
   A linked data type is a data type connected to an online data source.
   *
+  * @remarks
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
 @JSGlobal("Excel.LinkedDataType")
 @js.native
-class LinkedDataType ()
+open class LinkedDataType ()
   extends StObject
      with typings.officeJsPreview.Excel.LinkedDataType {
   

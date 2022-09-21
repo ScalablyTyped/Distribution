@@ -9,6 +9,16 @@ trait MetricMetadata extends StObject {
   /** A metric name. Useable in [Metric](#Metric)'s `name`. For example, `eventCount`. */
   var apiName: js.UndefOr[String] = js.undefined
   
+  /**
+    * If reasons are specified, your access is blocked to this metric for this property. API requests from you to this property for this metric will succeed; however, the report will
+    * contain only zeros for this metric. API requests with metric filters on blocked metrics will fail. If reasons are empty, you have access to this metric. To learn more, see [Access
+    * and data-restriction management](https://support.google.com/analytics/answer/10851388).
+    */
+  var blockedReasons: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /** The display name of the category that this metrics belongs to. Similar dimensions and metrics are categorized together. */
+  var category: js.UndefOr[String] = js.undefined
+  
   /** True if the metric is a custom metric for this property. */
   var customDefinition: js.UndefOr[Boolean] = js.undefined
   
@@ -46,6 +56,16 @@ object MetricMetadata {
     
     inline def setApiNameUndefined: Self = StObject.set(x, "apiName", js.undefined)
     
+    inline def setBlockedReasons(value: js.Array[String]): Self = StObject.set(x, "blockedReasons", value.asInstanceOf[js.Any])
+    
+    inline def setBlockedReasonsUndefined: Self = StObject.set(x, "blockedReasons", js.undefined)
+    
+    inline def setBlockedReasonsVarargs(value: String*): Self = StObject.set(x, "blockedReasons", js.Array(value*))
+    
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    
     inline def setCustomDefinition(value: Boolean): Self = StObject.set(x, "customDefinition", value.asInstanceOf[js.Any])
     
     inline def setCustomDefinitionUndefined: Self = StObject.set(x, "customDefinition", js.undefined)
@@ -54,7 +74,7 @@ object MetricMetadata {
     
     inline def setDeprecatedApiNamesUndefined: Self = StObject.set(x, "deprecatedApiNames", js.undefined)
     
-    inline def setDeprecatedApiNamesVarargs(value: String*): Self = StObject.set(x, "deprecatedApiNames", js.Array(value :_*))
+    inline def setDeprecatedApiNamesVarargs(value: String*): Self = StObject.set(x, "deprecatedApiNames", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

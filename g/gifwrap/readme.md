@@ -1,7 +1,7 @@
 
 # Scala.js typings for gifwrap
 
-Typings are for version 0.9.2
+Typings are for version 0.10.1
 
 ## Library description:
 A Jimp-compatible library for working with GIFs
@@ -10,15 +10,12 @@ A Jimp-compatible library for working with GIFs
 | ------------------ | :-------------: |
 | Full name          | gifwrap |
 | Keywords           | image, image, processing, image, manipulation, gif, javascript |
-| # releases         | 3 |
-| # dependents       | 13 |
-| # downloads        | 8862214 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 3852183.0 |
+| # stars            | 59.0 |
 
 ## Links
-- [Homepage](https://github.com/jtlapp/gifwrap#readme)
-- [Bugs](https://github.com/jtlapp/gifwrap/issues)
-- [Repository](https://github.com/jtlapp/gifwrap)
 - [Npm](https://www.npmjs.com/package/gifwrap)
     
 

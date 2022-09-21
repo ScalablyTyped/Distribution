@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDashboardsResponse extends StObject {
   
   /**
-    * A structure that contains all of the dashboards in your AWS account. This structure provides basic information about the dashboards.
+    * A structure that contains all of the dashboards in your Amazon Web Services account. This structure provides basic information about the dashboards.
     */
   var DashboardSummaryList: js.UndefOr[typings.awsSdk.quicksightMod.DashboardSummaryList] = js.undefined
   
@@ -17,7 +17,7 @@ trait ListDashboardsResponse extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   
@@ -39,7 +39,7 @@ object ListDashboardsResponse {
     
     inline def setDashboardSummaryListUndefined: Self = StObject.set(x, "DashboardSummaryList", js.undefined)
     
-    inline def setDashboardSummaryListVarargs(value: DashboardSummary*): Self = StObject.set(x, "DashboardSummaryList", js.Array(value :_*))
+    inline def setDashboardSummaryListVarargs(value: DashboardSummary*): Self = StObject.set(x, "DashboardSummaryList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

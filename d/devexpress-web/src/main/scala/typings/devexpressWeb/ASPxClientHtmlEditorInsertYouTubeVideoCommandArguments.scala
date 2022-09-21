@@ -44,7 +44,7 @@ object ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments {
     allowFullscreen: Boolean,
     enablePrivacyEnhancedMode: Boolean,
     id: String,
-    selectedElement: js.Any,
+    selectedElement: Any,
     showPlayerControls: Boolean,
     showRelatedVideos: Boolean,
     showVideoInfo: Boolean,

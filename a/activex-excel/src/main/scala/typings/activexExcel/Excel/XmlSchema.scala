@@ -17,7 +17,7 @@ trait XmlSchema extends StObject {
   
   val Namespace: XmlNamespace
   
-  val Parent: js.Any
+  val Parent: Any
   
   val XML: String
 }
@@ -29,7 +29,7 @@ object XmlSchema {
     ExcelDotXmlSchema_typekey: XmlSchema,
     Name: String,
     Namespace: XmlNamespace,
-    Parent: js.Any,
+    Parent: Any,
     XML: String
   ): XmlSchema = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], XML = XML.asInstanceOf[js.Any])
@@ -49,7 +49,7 @@ object XmlSchema {
     
     inline def setNamespace(value: XmlNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setXML(value: String): Self = StObject.set(x, "XML", value.asInstanceOf[js.Any])
   }

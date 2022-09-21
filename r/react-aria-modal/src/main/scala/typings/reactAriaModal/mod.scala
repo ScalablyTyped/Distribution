@@ -2,8 +2,12 @@ package typings.reactAriaModal
 
 import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.CSSProperties
+import typings.react.mod.ElementType
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PureComponent
-import typings.react.mod.ReactType
+import typings.react.mod.ReactNode
 import typings.reactAriaModal.anon.PickAriaModalPropstitleId
 import typings.reactAriaModal.anon.PickAriaModalPropstitleTe
 import typings.reactAriaModal.reactAriaModalBooleans.`false`
@@ -18,11 +22,11 @@ object mod {
   
   @JSImport("react-aria-modal", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends PureComponent[
           AriaModalProps & (RequiredAriaTypes[PickAriaModalPropstitleId, PickAriaModalPropstitleTe]), 
           js.Object, 
-          js.Any
+          Any
         ]
   /* static members */
   object default {
@@ -31,14 +35,14 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def renderTo(node: String): ReactType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderTo")(node.asInstanceOf[js.Any]).asInstanceOf[ReactType[js.Any]]
-    inline def renderTo(node: HTMLElement): ReactType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderTo")(node.asInstanceOf[js.Any]).asInstanceOf[ReactType[js.Any]]
+    inline def renderTo(node: String): ElementType[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderTo")(node.asInstanceOf[js.Any]).asInstanceOf[ElementType[Any]]
+    inline def renderTo(node: HTMLElement): ElementType[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderTo")(node.asInstanceOf[js.Any]).asInstanceOf[ElementType[Any]]
   }
   
   type AriaModal = PureComponent[
     AriaModalProps & (RequiredAriaTypes[PickAriaModalPropstitleId, PickAriaModalPropstitleTe]), 
     js.Object, 
-    js.Any
+    Any
   ]
   
   trait AriaModalProps extends StObject {
@@ -56,6 +60,8 @@ object mod {
       * This can help screen readers understand what's going on.
       */
     var applicationNode: js.UndefOr[Node | Element] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Apply a class to the dialog in order to custom-style it.
@@ -148,7 +154,7 @@ object mod {
       * You can use it to do whatever diverse and sundry things you feel like
       * doing after the modal activates.
       */
-    var onEnter: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onEnter: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * This function needs to handles the state change of exiting (or deactivating) the modal.
@@ -158,7 +164,9 @@ object mod {
       * That also makes it easier to create your own "close modal" buttons; because you
       * have the function that closes the modal right there, written by you, at your disposal.
       */
-    var onExit: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onExit: js.UndefOr[
+        js.Function1[/* event */ (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element], Unit]
+      ] = js.undefined
     
     /**
       * If true, the modal dialog will prevent any scrolling behind the modal window.
@@ -235,6 +243,10 @@ object mod {
       
       inline def setApplicationNodeUndefined: Self = StObject.set(x, "applicationNode", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setDialogClass(value: String): Self = StObject.set(x, "dialogClass", value.asInstanceOf[js.Any])
       
       inline def setDialogClassUndefined: Self = StObject.set(x, "dialogClass", js.undefined)
@@ -279,11 +291,11 @@ object mod {
       
       inline def setMountedUndefined: Self = StObject.set(x, "mounted", js.undefined)
       
-      inline def setOnEnter(value: () => js.Any): Self = StObject.set(x, "onEnter", js.Any.fromFunction0(value))
+      inline def setOnEnter(value: () => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction0(value))
       
       inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      inline def setOnExit(value: () => js.Any): Self = StObject.set(x, "onExit", js.Any.fromFunction0(value))
+      inline def setOnExit(value: /* event */ (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
       
       inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
       
@@ -321,5 +333,5 @@ object mod {
     }
   }
   
-  type RequiredAriaTypes[T, U] = (typings.reactAriaModal.reactAriaModalStrings.RequiredAriaTypes & TopLevel[T] & TopLevel[js.Any]) | (typings.reactAriaModal.reactAriaModalStrings.RequiredAriaTypes & TopLevel[js.Any] & TopLevel[U])
+  type RequiredAriaTypes[T, U] = (typings.reactAriaModal.reactAriaModalStrings.RequiredAriaTypes & TopLevel[T] & TopLevel[Any]) | (typings.reactAriaModal.reactAriaModalStrings.RequiredAriaTypes & TopLevel[Any] & TopLevel[U])
 }

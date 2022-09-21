@@ -15,7 +15,7 @@ object mod {
   
   trait Block extends StObject {
     
-    var attrs: Record[String, js.Any]
+    var attrs: Record[String, Any]
     
     var blockName: String | Null
     
@@ -28,7 +28,7 @@ object mod {
   object Block {
     
     inline def apply(
-      attrs: Record[String, js.Any],
+      attrs: Record[String, Any],
       innerBlocks: js.Array[Block],
       innerContent: js.Array[String],
       innerHTML: String
@@ -39,7 +39,7 @@ object mod {
     
     extension [Self <: Block](x: Self) {
       
-      inline def setAttrs(value: Record[String, js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: Record[String, Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
       inline def setBlockName(value: String): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
       
@@ -47,11 +47,11 @@ object mod {
       
       inline def setInnerBlocks(value: js.Array[Block]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
       
-      inline def setInnerBlocksVarargs(value: Block*): Self = StObject.set(x, "innerBlocks", js.Array(value :_*))
+      inline def setInnerBlocksVarargs(value: Block*): Self = StObject.set(x, "innerBlocks", js.Array(value*))
       
       inline def setInnerContent(value: js.Array[String]): Self = StObject.set(x, "innerContent", value.asInstanceOf[js.Any])
       
-      inline def setInnerContentVarargs(value: String*): Self = StObject.set(x, "innerContent", js.Array(value :_*))
+      inline def setInnerContentVarargs(value: String*): Self = StObject.set(x, "innerContent", js.Array(value*))
       
       inline def setInnerHTML(value: String): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
     }

@@ -1,6 +1,5 @@
 package typings.gitRevSync
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object mod {
   
   inline def count(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[Double]
   
-  inline def date(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("date")().asInstanceOf[Date]
+  inline def date(): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("date")().asInstanceOf[js.Date]
   
   inline def hasUnstagedChanges(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasUnstagedChanges")().asInstanceOf[Boolean]
   

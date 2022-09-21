@@ -59,7 +59,7 @@ object XFixedHyperlink {
     getAlignment: () => Double,
     getText: () => String,
     getURL: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeActionListener: XActionListener => Unit,
     setAlignment: Double => Unit,

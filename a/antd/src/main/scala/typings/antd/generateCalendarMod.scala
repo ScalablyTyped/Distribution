@@ -570,6 +570,8 @@ object generateCalendarMod {
     
     var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.undefined
     
+    var disabledTime: js.UndefOr[js.Function1[/* date */ DateType, DisabledTimes]] = js.undefined
+    
     var format: js.UndefOr[String] = js.undefined
     
     var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
@@ -674,6 +676,10 @@ object generateCalendarMod {
       inline def setDisabledSeconds(value: (/* hour */ Double, /* minute */ Double) => js.Array[Double]): Self = StObject.set(x, "disabledSeconds", js.Any.fromFunction2(value))
       
       inline def setDisabledSecondsUndefined: Self = StObject.set(x, "disabledSeconds", js.undefined)
+      
+      inline def setDisabledTime(value: /* date */ DateType => DisabledTimes): Self = StObject.set(x, "disabledTime", js.Any.fromFunction1(value))
+      
+      inline def setDisabledTimeUndefined: Self = StObject.set(x, "disabledTime", js.undefined)
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

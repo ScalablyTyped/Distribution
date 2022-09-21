@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A condition for determining whether a transformation should be applied to a
-  * field.
-  */
 trait SchemaGooglePrivacyDlpV2RecordCondition extends StObject {
   
   /**

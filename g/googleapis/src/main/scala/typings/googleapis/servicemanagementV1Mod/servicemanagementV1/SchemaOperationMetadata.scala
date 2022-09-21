@@ -4,26 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The metadata associated with a long running operation resource.
-  */
 trait SchemaOperationMetadata extends StObject {
   
   /**
     * Percentage of completion of this operation, ranging from 0 to 100.
     */
-  var progressPercentage: js.UndefOr[Double] = js.undefined
+  var progressPercentage: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The full name of the resources that this operation is directly associated
-    * with.
+    * The full name of the resources that this operation is directly associated with.
     */
-  var resourceNames: js.UndefOr[js.Array[String]] = js.undefined
+  var resourceNames: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * The start time of the operation.
     */
-  var startTime: js.UndefOr[String] = js.undefined
+  var startTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Detailed status information for each step. The order is undetermined.
@@ -41,15 +37,21 @@ object SchemaOperationMetadata {
     
     inline def setProgressPercentage(value: Double): Self = StObject.set(x, "progressPercentage", value.asInstanceOf[js.Any])
     
+    inline def setProgressPercentageNull: Self = StObject.set(x, "progressPercentage", null)
+    
     inline def setProgressPercentageUndefined: Self = StObject.set(x, "progressPercentage", js.undefined)
     
     inline def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
     
+    inline def setResourceNamesNull: Self = StObject.set(x, "resourceNames", null)
+    
     inline def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
     
-    inline def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
+    inline def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value*))
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimeNull: Self = StObject.set(x, "startTime", null)
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
@@ -57,6 +59,6 @@ object SchemaOperationMetadata {
     
     inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    inline def setStepsVarargs(value: SchemaStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: SchemaStep*): Self = StObject.set(x, "steps", js.Array(value*))
   }
 }

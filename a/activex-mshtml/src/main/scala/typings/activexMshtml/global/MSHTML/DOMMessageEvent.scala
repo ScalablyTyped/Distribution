@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMMessageEvent")
 @js.native
-/* private */ class DOMMessageEvent ()
+/* private */ open class DOMMessageEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMMessageEvent {
   
@@ -60,7 +60,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def preventDefault(): Unit = js.native
   
   /* CompleteClass */
-  override def source(pvarIndex: js.Any): js.Any = js.native
+  override def source(pvarIndex: Any): Any = js.native
   /* CompleteClass */
   @JSName("source")
   override val source_Original: IHTMLWindow2 = js.native

@@ -11,9 +11,9 @@ xxHash in Javascript
 | Full name          | xxhashjs |
 | Keywords           | xxhash, xxh |
 | # releases         | 0 |
-| # dependents       | 112 |
-| # downloads        | 36854582 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 5041066.0 |
+| # stars            | 254.0 |
 
 ## Links
 - [Homepage](https://github.com/pierrec/js-xxhash)

@@ -21,7 +21,7 @@ object utilMod {
   inline def getPxStyle(value: Double, unit: String, vertical: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPxStyle")(value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], vertical.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def getPxStyle(value: Double, unit: Unit, vertical: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPxStyle")(value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], vertical.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def getTransformPropValue(v: js.Any): MozTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransformPropValue")(v.asInstanceOf[js.Any]).asInstanceOf[MozTransform]
+  inline def getTransformPropValue(v: Any): MozTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransformPropValue")(v.asInstanceOf[js.Any]).asInstanceOf[MozTransform]
   
   inline def setPxStyle(el: HTMLElement, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPxStyle")(el.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setPxStyle(el: HTMLElement, value: String, unit: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPxStyle")(el.asInstanceOf[js.Any], value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -40,5 +40,5 @@ object utilMod {
   inline def setPxStyle(el: HTMLElement, value: Double, unit: Unit, vertical: Boolean, useLeft: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPxStyle")(el.asInstanceOf[js.Any], value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], vertical.asInstanceOf[js.Any], useLeft.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setPxStyle(el: HTMLElement, value: Double, unit: Unit, vertical: Unit, useLeft: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPxStyle")(el.asInstanceOf[js.Any], value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], vertical.asInstanceOf[js.Any], useLeft.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setTransform(style: js.Any, v: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTransform")(style.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setTransform(style: Any, v: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTransform")(style.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

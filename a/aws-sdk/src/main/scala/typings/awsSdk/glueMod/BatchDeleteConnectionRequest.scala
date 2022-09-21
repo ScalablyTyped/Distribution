@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchDeleteConnectionRequest extends StObject {
   
   /**
-    * The ID of the Data Catalog in which the connections reside. If none is provided, the AWS account ID is used by default.
+    * The ID of the Data Catalog in which the connections reside. If none is provided, the Amazon Web Services account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
@@ -31,6 +31,6 @@ object BatchDeleteConnectionRequest {
     
     inline def setConnectionNameList(value: DeleteConnectionNameList): Self = StObject.set(x, "ConnectionNameList", value.asInstanceOf[js.Any])
     
-    inline def setConnectionNameListVarargs(value: NameString*): Self = StObject.set(x, "ConnectionNameList", js.Array(value :_*))
+    inline def setConnectionNameListVarargs(value: NameString*): Self = StObject.set(x, "ConnectionNameList", js.Array(value*))
   }
 }

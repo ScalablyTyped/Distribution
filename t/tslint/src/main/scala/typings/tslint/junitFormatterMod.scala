@@ -10,9 +10,9 @@ object junitFormatterMod {
   
   @JSImport("tslint/lib/formatters/junitFormatter", "Formatter")
   @js.native
-  class Formatter () extends AbstractFormatter {
+  open class Formatter () extends AbstractFormatter {
     
-    /* private */ var escapeXml: js.Any = js.native
+    /* private */ var escapeXml: Any = js.native
   }
   /* static members */
   object Formatter {

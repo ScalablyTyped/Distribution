@@ -3,10 +3,8 @@ package typings.babylonjs
 import typings.babylonjs.effectMod.Effect
 import typings.babylonjs.materialMod.Material
 import typings.babylonjs.mathVectorMod.Matrix
-import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.subMeshMod.SubMesh
-import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +13,13 @@ object pushMaterialMod {
   
   @JSImport("babylonjs/Materials/pushMaterial", "PushMaterial")
   @js.native
-  class PushMaterial protected () extends Material {
+  open class PushMaterial protected () extends Material {
+    def this(name: String) = this()
     def this(name: String, scene: Scene) = this()
+    def this(name: String, scene: Unit, storeEffectOnSubMeshes: Boolean) = this()
+    def this(name: String, scene: Scene, storeEffectOnSubMeshes: Boolean) = this()
     
     /* protected */ var _activeEffect: Effect = js.native
-    
-    /* protected */ def _afterBind(mesh: Mesh, effect: Nullable[Effect]): Unit = js.native
     
     /* protected */ def _isReadyForSubMesh(subMesh: SubMesh): Boolean = js.native
     

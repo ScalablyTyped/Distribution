@@ -80,16 +80,16 @@ object pinning {
     // Events
     /**
       * raised when column pin state has changed
-      * @param {ng.IScope} scope The grid scope
-      * @param {columnPinHandler} handler Callback
+      * @param scope The grid scope
+      * @param handler Callback
       */
     def columnPin(scope: IScope, handler: columnPinHandler): Unit
     
     // Methods
     /**
       * Pin column left, right, or none
-      * @param {IGridColumn} col The column being pinned
-      * @param {string} container One of the recognized container types from uiGridPinningConstants
+      * @param col The column being pinned
+      * @param container One of the recognized container types from uiGridPinningConstants
       */
     def pinColumn(col: IGridColumnOf[TEntity], container: String): Unit
   }

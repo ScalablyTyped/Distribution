@@ -12,11 +12,11 @@ object logicalMod {
   
   inline def forEachLeaf[T](op: LogicalComposition[T], fn: js.Function1[/* op */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachLeaf")(op.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def isLogicalAnd(op: LogicalComposition[js.Any]): /* is vega-lite.vega-lite/build/src/logical.LogicalAnd<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLogicalAnd")(op.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/logical.LogicalAnd<any> */ Boolean]
+  inline def isLogicalAnd(op: LogicalComposition[Any]): /* is vega-lite.vega-lite/build/src/logical.LogicalAnd<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLogicalAnd")(op.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/logical.LogicalAnd<any> */ Boolean]
   
-  inline def isLogicalNot(op: LogicalComposition[js.Any]): /* is vega-lite.vega-lite/build/src/logical.LogicalNot<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLogicalNot")(op.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/logical.LogicalNot<any> */ Boolean]
+  inline def isLogicalNot(op: LogicalComposition[Any]): /* is vega-lite.vega-lite/build/src/logical.LogicalNot<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLogicalNot")(op.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/logical.LogicalNot<any> */ Boolean]
   
-  inline def isLogicalOr(op: LogicalComposition[js.Any]): /* is vega-lite.vega-lite/build/src/logical.LogicalOr<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLogicalOr")(op.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/logical.LogicalOr<any> */ Boolean]
+  inline def isLogicalOr(op: LogicalComposition[Any]): /* is vega-lite.vega-lite/build/src/logical.LogicalOr<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLogicalOr")(op.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/logical.LogicalOr<any> */ Boolean]
   
   inline def normalizeLogicalComposition[T](op: LogicalComposition[T], normalizer: js.Function1[/* o */ T, T]): LogicalComposition[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeLogicalComposition")(op.asInstanceOf[js.Any], normalizer.asInstanceOf[js.Any])).asInstanceOf[LogicalComposition[T]]
   
@@ -37,7 +37,7 @@ object logicalMod {
       
       inline def setAnd(value: js.Array[LogicalComposition[T]]): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       
-      inline def setAndVarargs(value: LogicalComposition[T]*): Self = StObject.set(x, "and", js.Array(value :_*))
+      inline def setAndVarargs(value: LogicalComposition[T]*): Self = StObject.set(x, "and", js.Array(value*))
     }
   }
   
@@ -85,7 +85,7 @@ object logicalMod {
       
       inline def setOr(value: js.Array[LogicalComposition[T]]): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
       
-      inline def setOrVarargs(value: LogicalComposition[T]*): Self = StObject.set(x, "or", js.Array(value :_*))
+      inline def setOrVarargs(value: LogicalComposition[T]*): Self = StObject.set(x, "or", js.Array(value*))
     }
   }
   

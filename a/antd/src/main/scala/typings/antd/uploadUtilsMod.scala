@@ -1,5 +1,6 @@
 package typings.antd
 
+import typings.antd.uploadInterfaceMod.InternalUploadFile
 import typings.antd.uploadInterfaceMod.RcFile
 import typings.antd.uploadInterfaceMod.UploadFile
 import typings.std.Blob
@@ -14,16 +15,16 @@ object uploadUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def T(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("T")().asInstanceOf[Boolean]
+  inline def file2Obj(file: RcFile): InternalUploadFile[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("file2Obj")(file.asInstanceOf[js.Any]).asInstanceOf[InternalUploadFile[Any]]
   
-  inline def fileToObject(file: RcFile): UploadFile[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileToObject")(file.asInstanceOf[js.Any]).asInstanceOf[UploadFile[js.Any]]
+  inline def getFileItem(file: RcFile, fileList: js.Array[UploadFile[Any]]): UploadFile[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileItem")(file.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[UploadFile[Any]]
   
-  inline def getFileItem(file: UploadFile[js.Any], fileList: js.Array[UploadFile[js.Any]]): UploadFile[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileItem")(file.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[UploadFile[js.Any]]
-  
-  inline def isImageUrl(file: UploadFile[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImageUrl")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isImageUrl(file: UploadFile[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImageUrl")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def previewImage(file: Blob): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("previewImage")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   inline def previewImage(file: File): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("previewImage")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  inline def removeFileItem(file: UploadFile[js.Any], fileList: js.Array[UploadFile[js.Any]]): js.Array[UploadFile[js.Any]] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFileItem")(file.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Array[UploadFile[js.Any]] | Null]
+  inline def removeFileItem(file: UploadFile[Any], fileList: js.Array[UploadFile[Any]]): js.Array[UploadFile[Any]] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFileItem")(file.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Array[UploadFile[Any]] | Null]
+  
+  inline def updateFileList(file: UploadFile[Any], fileList: js.Array[UploadFile[Any]]): js.Array[UploadFile[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateFileList")(file.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Array[UploadFile[Any]]]
 }

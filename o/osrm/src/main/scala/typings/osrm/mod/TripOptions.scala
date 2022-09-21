@@ -1,40 +1,58 @@
 package typings.osrm.mod
 
+import typings.osrm.osrmStrings.any
+import typings.osrm.osrmStrings.datasources
+import typings.osrm.osrmStrings.distance
+import typings.osrm.osrmStrings.duration
+import typings.osrm.osrmStrings.first
+import typings.osrm.osrmStrings.last
+import typings.osrm.osrmStrings.nodes
+import typings.osrm.osrmStrings.speed
+import typings.osrm.osrmStrings.weight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * The trip plugin solves the Traveling Salesman Problem using a greedy heuristic (farthest-insertion algorithm).
-  * The returned path does not have to be the fastest path, as TSP is NP-hard it is only an approximation.
-  * Note that all input coordinates have to be connected for the trip service to work.
+  * The trip plugin solves the Traveling Salesman Problem using a greedy heuristic (farthest-insertion algorithm) for
+  * 10 or _ more waypoints and uses brute force for less than 10 waypoints. The returned path does not have to be the
+  * shortest path, _ as TSP is NP-hard it is only an approximation.
   *
-  * https://github.com/Project-OSRM/node-osrm/blob/master/docs/api.md#trip
+  * https://github.com/Project-OSRM/osrm-backend/blob/master/docs/nodejs/api.md#trip
   */
 trait TripOptions
   extends StObject
      with Options {
   
   /**
-    * Return annotations for each route leg for duration, nodes, distance, weight, datasources and/or speed.
-    * Annotations can be false or true (no/full annotations) or an array of strings with duration, nodes, distance, weight, datasources, speed. (optional, default false)
+    * An array with strings of duration, nodes, distance, weight, datasources, speed or boolean for enabling/disabling all. (optional, default false)
     */
-  var annotations: js.UndefOr[Boolean | js.Array[String]] = js.undefined
+  var annotations: js.UndefOr[(js.Array[duration | nodes | distance | weight | datasources | speed]) | Boolean] = js.undefined
   
   /**
-    * Return route ends at any coordinate. Can also be last. (optional, default any)
+    * Keep waypoints on curb side. Can be null (unrestricted, default) or curb.
     */
-  var destination: js.UndefOr[String] = js.undefined
+  var approaches: js.UndefOr[ApproachTypes | Null] = js.undefined
+  
+  /**
+    * Return route ends at any or last coordinate. (optional, default any)
+    */
+  var destination: js.UndefOr[any | last] = js.undefined
+  
+  /**
+    * Which classes to exclude.
+    */
+  var exclude: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Returned route geometry format (influences overview and per step). Can also be geojson. (optional, default polyline)
     */
-  var geometries: js.UndefOr[String] = js.undefined
+  var geometries: js.UndefOr[GeometriesTypes] = js.undefined
   
   /**
     * Add overview geometry either full, simplified (optional, default simplified)
     */
-  var overview: js.UndefOr[String] = js.undefined
+  var overview: js.UndefOr[OverviewTypes] = js.undefined
   
   /**
     * Return route is a roundtrip. (optional, default true)
@@ -42,9 +60,14 @@ trait TripOptions
   var roundtrip: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Return route starts at any coordinate. Can also be first. (optional, default any)
+    * Which edges can be snapped to, either default, or any. default only snaps to edges marked by the profile as is_startpoint, any will allow snapping to any edge in the routing graph.
     */
-  var source: js.UndefOr[String] = js.undefined
+  var snapping: js.UndefOr[SnappingTypes] = js.undefined
+  
+  /**
+    * Return route starts at any or first coordinate. (optional, default any)
+    */
+  var source: js.UndefOr[any | first] = js.undefined
   
   /**
     * Return route steps for each route. (optional, default false)
@@ -60,21 +83,33 @@ object TripOptions {
   
   extension [Self <: TripOptions](x: Self) {
     
-    inline def setAnnotations(value: Boolean | js.Array[String]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: (js.Array[duration | nodes | distance | weight | datasources | speed]) | Boolean): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    inline def setAnnotationsVarargs(value: String*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: (duration | nodes | distance | weight | datasources | speed)*): Self = StObject.set(x, "annotations", js.Array(value*))
     
-    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setApproaches(value: ApproachTypes): Self = StObject.set(x, "approaches", value.asInstanceOf[js.Any])
+    
+    inline def setApproachesNull: Self = StObject.set(x, "approaches", null)
+    
+    inline def setApproachesUndefined: Self = StObject.set(x, "approaches", js.undefined)
+    
+    inline def setDestination(value: any | last): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    inline def setGeometries(value: String): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
+    
+    inline def setGeometries(value: GeometriesTypes): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
     inline def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
-    inline def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
+    inline def setOverview(value: OverviewTypes): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
     
     inline def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
     
@@ -82,7 +117,11 @@ object TripOptions {
     
     inline def setRoundtripUndefined: Self = StObject.set(x, "roundtrip", js.undefined)
     
-    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSnapping(value: SnappingTypes): Self = StObject.set(x, "snapping", value.asInstanceOf[js.Any])
+    
+    inline def setSnappingUndefined: Self = StObject.set(x, "snapping", js.undefined)
+    
+    inline def setSource(value: any | first): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     

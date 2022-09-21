@@ -1,9 +1,5 @@
 package typings.googleapis.resellerV1Mod.resellerV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,15 +9,7 @@ trait ParamsResourceSubscriptionsChangeseats
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Either the customer's primary domain name or the customer's unique
-    * identifier. If using the domain name, we do not recommend using a
-    * customerId as a key for persistent data. If the domain name for a
-    * customerId is changed, the Google system automatically updates.
+    * This can be either the customer's primary domain name or the customer's unique identifier. If the domain name for a customer changes, the old domain name cannot be used to access the customer, but the customer's unique identifier (as returned by the API) can always be used. We recommend storing the unique identifier in your systems where applicable.
     */
   var customerId: js.UndefOr[String] = js.undefined
   
@@ -31,11 +19,7 @@ trait ParamsResourceSubscriptionsChangeseats
   var requestBody: js.UndefOr[SchemaSeats] = js.undefined
   
   /**
-    * This is a required property. The subscriptionId is the subscription
-    * identifier and is unique for each customer. Since a subscriptionId
-    * changes when a subscription is updated, we recommend to not use this ID
-    * as a key for persistent data. And the subscriptionId can be found using
-    * the retrieve all reseller subscriptions method.
+    * This is a required property. The `subscriptionId` is the subscription identifier and is unique for each customer. Since a `subscriptionId` changes when a subscription is updated, we recommend to not use this ID as a key for persistent data. And the `subscriptionId` can be found using the retrieve all reseller subscriptions method.
     */
   var subscriptionId: js.UndefOr[String] = js.undefined
 }
@@ -47,10 +31,6 @@ object ParamsResourceSubscriptionsChangeseats {
   }
   
   extension [Self <: ParamsResourceSubscriptionsChangeseats](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     

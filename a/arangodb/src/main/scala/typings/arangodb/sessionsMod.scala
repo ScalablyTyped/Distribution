@@ -22,14 +22,14 @@ object sessionsMod {
     
     var autoCreate: js.UndefOr[Boolean] = js.undefined
     
-    var storage: SessionStorage | String | Collection[js.Any]
+    var storage: SessionStorage | String | Collection[Any]
     
     var transport: SessionTransport | js.Array[SessionTransport] | cookie | header
   }
   object SessionsOptions {
     
     inline def apply(
-      storage: SessionStorage | String | Collection[js.Any],
+      storage: SessionStorage | String | Collection[Any],
       transport: SessionTransport | js.Array[SessionTransport] | cookie | header
     ): SessionsOptions = {
       val __obj = js.Dynamic.literal(storage = storage.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
@@ -42,11 +42,11 @@ object sessionsMod {
       
       inline def setAutoCreateUndefined: Self = StObject.set(x, "autoCreate", js.undefined)
       
-      inline def setStorage(value: SessionStorage | String | Collection[js.Any]): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: SessionStorage | String | Collection[Any]): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
       inline def setTransport(value: SessionTransport | js.Array[SessionTransport] | cookie | header): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      inline def setTransportVarargs(value: SessionTransport*): Self = StObject.set(x, "transport", js.Array(value :_*))
+      inline def setTransportVarargs(value: SessionTransport*): Self = StObject.set(x, "transport", js.Array(value*))
     }
   }
 }

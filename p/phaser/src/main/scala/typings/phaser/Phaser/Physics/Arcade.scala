@@ -16,6 +16,7 @@ import typings.phaser.Phaser.Physics.Arcade.Components.Friction
 import typings.phaser.Phaser.Physics.Arcade.Components.Gravity
 import typings.phaser.Phaser.Physics.Arcade.Components.Immovable
 import typings.phaser.Phaser.Physics.Arcade.Components.Mass
+import typings.phaser.Phaser.Physics.Arcade.Components.Pushable
 import typings.phaser.Phaser.Physics.Arcade.Components.Size
 import typings.phaser.Phaser.Physics.Arcade.Components.Velocity
 import typings.phaser.Phaser.Scene
@@ -24,14 +25,14 @@ import typings.phaser.Phaser.Structs.ProcessQueue
 import typings.phaser.Phaser.Structs.RTree
 import typings.phaser.Phaser.Structs.Set
 import typings.phaser.Phaser.Textures.Texture
-import typings.phaser.Phaser.Tilemaps.DynamicTilemapLayer
-import typings.phaser.Phaser.Tilemaps.StaticTilemapLayer
 import typings.phaser.Phaser.Tilemaps.Tile
+import typings.phaser.Phaser.Tilemaps.TilemapLayer
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupConfig
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupCreateConfig
 import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeBodyBounds
 import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeBodyCollision
 import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeColliderType
+import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeWorldConfig
 import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeWorldDefaults
 import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeWorldTreeMinMax
 import typings.phaser.Phaser.Types.Physics.Arcade.CheckCollisionObject
@@ -42,7 +43,6 @@ import typings.phaser.Phaser.Types.Physics.Arcade.PhysicsGroupConfig
 import typings.phaser.Phaser.Types.Physics.Arcade.PhysicsGroupDefaults
 import typings.phaser.Phaser.Types.Physics.Arcade.SpriteWithDynamicBody
 import typings.phaser.Phaser.Types.Physics.Arcade.SpriteWithStaticBody
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,8 +132,8 @@ object Arcade {
       * @param source Any object with public `x` and `y` properties, such as a Game Object or Geometry object.
       * @param targets The targets.
       */
-    def closest(source: js.Any): Body | StaticBody | GameObject = js.native
-    def closest(source: js.Any, targets: js.Array[Body | GameObject | StaticBody]): Body | StaticBody | GameObject = js.native
+    def closest(source: Any): Body | StaticBody | GameObject = js.native
+    def closest(source: Any, targets: js.Array[Body | GameObject | StaticBody]): Body | StaticBody | GameObject = js.native
     
     /**
       * Performs a collision check and separation between the two physics enabled objects given, which can be single
@@ -166,7 +166,7 @@ object Arcade {
       object2: Unit,
       collideCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collide(
       object1: ArcadeColliderType,
@@ -179,7 +179,7 @@ object Arcade {
       object2: Unit,
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collide(object1: ArcadeColliderType, object2: Unit, collideCallback: ArcadePhysicsCallback): Boolean = js.native
     def collide(
@@ -187,7 +187,7 @@ object Arcade {
       object2: Unit,
       collideCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collide(
       object1: ArcadeColliderType,
@@ -200,7 +200,7 @@ object Arcade {
       object2: Unit,
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collide(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
     def collide(
@@ -208,7 +208,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collide(
       object1: ArcadeColliderType,
@@ -221,7 +221,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collide(object1: ArcadeColliderType, object2: ArcadeColliderType, collideCallback: ArcadePhysicsCallback): Boolean = js.native
     def collide(
@@ -229,7 +229,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collide(
       object1: ArcadeColliderType,
@@ -242,7 +242,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     
     /**
@@ -272,7 +272,7 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collideTiles(
       sprite: GameObject,
@@ -285,7 +285,7 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collideTiles(sprite: GameObject, tiles: js.Array[Tile], collideCallback: ArcadePhysicsCallback): Boolean = js.native
     def collideTiles(
@@ -293,7 +293,7 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collideTiles(
       sprite: GameObject,
@@ -306,19 +306,39 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     
     /**
       * A configuration object. Union of the `physics.arcade.*` properties of the GameConfig and SceneConfig objects.
       */
-    var config: js.Object = js.native
+    var config: ArcadeWorldConfig = js.native
     
     /**
       * The Scene that owns this plugin is being destroyed.
       * We need to shutdown and then kill off all external references.
       */
     def destroy(): Unit = js.native
+    
+    /**
+      * Causes `World.update` to **not** be automatically called each time the Scene
+      * emits and `UPDATE` event.
+      * 
+      * If you wish to run the World update at your own rate, or from your own
+      * component, then you should call this method to disable the built-in link,
+      * and then call `World.update(delta, time)` accordingly.
+      * 
+      * Note that `World.postUpdate` is always automatically called when the Scene
+      * emits a `POST_UPDATE` event, regardless of this setting.
+      */
+    def disableUpdate(): Unit = js.native
+    
+    /**
+      * Causes `World.update` to be automatically called each time the Scene
+      * emits and `UPDATE` event. This is the default setting, so only needs
+      * calling if you have specifically disabled it.
+      */
+    def enableUpdate(): Unit = js.native
     
     /**
       * Finds the Body or Game Object farthest from a source point or object.
@@ -333,13 +353,13 @@ object Arcade {
       * @param source Any object with public `x` and `y` properties, such as a Game Object or Geometry object.
       * @param targets The targets.
       */
-    def furthest(source: js.Any): Body | StaticBody | GameObject = js.native
-    def furthest(source: js.Any, targets: js.Array[Body | GameObject | StaticBody]): Body | StaticBody | GameObject = js.native
+    def furthest(source: Any): Body | StaticBody | GameObject = js.native
+    def furthest(source: Any, targets: js.Array[Body | GameObject | StaticBody]): Body | StaticBody | GameObject = js.native
     
     /**
       * Creates the physics configuration for the current Scene.
       */
-    def getConfig(): js.Object = js.native
+    def getConfig(): ArcadeWorldConfig = js.native
     
     /**
       * Move the given display object towards the x/y coordinates at a steady velocity.
@@ -390,7 +410,7 @@ object Arcade {
       object2: Unit,
       collideCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlap(
       object1: ArcadeColliderType,
@@ -403,7 +423,7 @@ object Arcade {
       object2: Unit,
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlap(object1: ArcadeColliderType, object2: Unit, collideCallback: ArcadePhysicsCallback): Boolean = js.native
     def overlap(
@@ -411,7 +431,7 @@ object Arcade {
       object2: Unit,
       collideCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlap(
       object1: ArcadeColliderType,
@@ -424,7 +444,7 @@ object Arcade {
       object2: Unit,
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlap(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
     def overlap(
@@ -432,7 +452,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlap(
       object1: ArcadeColliderType,
@@ -445,7 +465,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlap(object1: ArcadeColliderType, object2: ArcadeColliderType, collideCallback: ArcadePhysicsCallback): Boolean = js.native
     def overlap(
@@ -453,7 +473,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlap(
       object1: ArcadeColliderType,
@@ -466,7 +486,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     
     /**
@@ -539,7 +559,7 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlapTiles(
       sprite: GameObject,
@@ -552,7 +572,7 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlapTiles(sprite: GameObject, tiles: js.Array[Tile], collideCallback: ArcadePhysicsCallback): Boolean = js.native
     def overlapTiles(
@@ -560,7 +580,7 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlapTiles(
       sprite: GameObject,
@@ -573,7 +593,7 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     
     /**
@@ -745,7 +765,7 @@ object Arcade {
     /**
       * The color of this Body on the debug display.
       */
-    var debugBodyColor: integer = js.native
+    var debugBodyColor: Double = js.native
     
     /**
       * Whether the Body is drawn to the debug display.
@@ -829,10 +849,12 @@ object Arcade {
     /**
       * When `useDamping` is false (the default), this is absolute loss of velocity due to movement, in pixels per second squared.
       * 
-      * When `useDamping` is true, this is 1 minus the damping factor.
+      * When `useDamping` is true, this is a damping multiplier between 0 and 1.
+      * A value of 0 means the Body stops instantly.
+      * A value of 0.01 mean the Body keeps 1% of its velocity per second, losing 99%.
+      * A value of 0.1 means the Body keeps 10% of its velocity per second, losing 90%.
       * A value of 1 means the Body loses no velocity.
-      * A value of 0.95 means the Body loses 5% of its velocity per step.
-      * A value of 0.5 means the Body loses 50% of its velocity per step.
+      * You can use very small values (e.g., 0.001) to stop the Body quickly.
       * 
       * The x and y components are applied separately.
       * 
@@ -861,7 +883,7 @@ object Arcade {
       * This is a numeric constant value (FACING_UP, FACING_DOWN, FACING_LEFT, FACING_RIGHT).
       * If the Body is moving on both axes, this describes motion on the vertical axis only.
       */
-    var facing: integer = js.native
+    var facing: Double = js.native
     
     /**
       * If this Body is `immovable` and in motion, `friction` is the proportion of this Body's motion received by the riding Body on each axis, relative to 1.
@@ -1018,7 +1040,7 @@ object Arcade {
     /**
       * The Body's physics type (dynamic or static).
       */
-    val physicsType: integer = js.native
+    val physicsType: Double = js.native
     
     /**
       * The position of this Body within the simulation.
@@ -1057,16 +1079,63 @@ object Arcade {
     var prevFrame: Vector2 = js.native
     
     /**
+      * This is an internal handler, called by the `ProcessX` function as part
+      * of the collision step. You should almost never call this directly.
+      * @param x The amount to add to the Body position.
+      * @param vx The amount to add to the Body velocity.
+      * @param left Set the blocked.left value?
+      * @param right Set the blocked.right value?
+      */
+    def processX(x: Double): Unit = js.native
+    def processX(x: Double, vx: Double): Unit = js.native
+    def processX(x: Double, vx: Double, left: Boolean): Unit = js.native
+    def processX(x: Double, vx: Double, left: Boolean, right: Boolean): Unit = js.native
+    def processX(x: Double, vx: Double, left: Unit, right: Boolean): Unit = js.native
+    def processX(x: Double, vx: Unit, left: Boolean): Unit = js.native
+    def processX(x: Double, vx: Unit, left: Boolean, right: Boolean): Unit = js.native
+    def processX(x: Double, vx: Unit, left: Unit, right: Boolean): Unit = js.native
+    
+    /**
+      * This is an internal handler, called by the `ProcessY` function as part
+      * of the collision step. You should almost never call this directly.
+      * @param y The amount to add to the Body position.
+      * @param vy The amount to add to the Body velocity.
+      * @param up Set the blocked.up value?
+      * @param down Set the blocked.down value?
+      */
+    def processY(y: Double): Unit = js.native
+    def processY(y: Double, vy: Double): Unit = js.native
+    def processY(y: Double, vy: Double, up: Boolean): Unit = js.native
+    def processY(y: Double, vy: Double, up: Boolean, down: Boolean): Unit = js.native
+    def processY(y: Double, vy: Double, up: Unit, down: Boolean): Unit = js.native
+    def processY(y: Double, vy: Unit, up: Boolean): Unit = js.native
+    def processY(y: Double, vy: Unit, up: Boolean, down: Boolean): Unit = js.native
+    def processY(y: Double, vy: Unit, up: Unit, down: Boolean): Unit = js.native
+    
+    /**
+      * Sets if this Body can be pushed by another Body.
+      * 
+      * A body that cannot be pushed will reflect back all of the velocity it is given to the
+      * colliding body. If that body is also not pushable, then the separation will be split
+      * between them evenly.
+      * 
+      * If you want your body to never move or seperate at all, see the `setImmovable` method.
+      * 
+      * By default, Dynamic Bodies are always pushable.
+      */
+    var pushable: Boolean = js.native
+    
+    /**
       * If this Body is circular, this is the unscaled radius of the Body, as set by setCircle(), in source pixels.
       * The true radius is equal to `halfWidth`.
       */
     var radius: Double = js.native
     
     /**
-      * Resets this Body to the given coordinates. Also positions its parent Game Object to the same coordinates.
+      * Sets this Body's parent Game Object to the given coordinates and resets this Body at the new coordinates.
       * If the Body had any velocity or acceleration it is lost as a result of calling this.
-      * @param x The horizontal position to place the Game Object and Body.
-      * @param y The vertical position to place the Game Object and Body.
+      * @param x The horizontal position to place the Game Object.
+      * @param y The vertical position to place the Game Object.
       */
     def reset(x: Double, y: Double): Unit = js.native
     
@@ -1074,8 +1143,10 @@ object Arcade {
       * Prepares the Body for a physics step by resetting the `wasTouching`, `touching` and `blocked` states.
       * 
       * This method is only called if the physics world is going to run a step this frame.
+      * @param clear Set the `wasTouching` values to their defaults. Default false.
       */
     def resetFlags(): Unit = js.native
+    def resetFlags(clear: Boolean): Unit = js.native
     
     /**
       * The right edge of the Body.
@@ -1188,19 +1259,42 @@ object Arcade {
     /**
       * Sets whether this Body collides with the world boundary.
       * 
-      * Optionally also sets the World Bounce values. If the `Body.worldBounce` is null, it's set to a new Phaser.Math.Vector2 first.
-      * @param value `true` if this body should collide with the world bounds, otherwise `false`. Default true.
-      * @param bounceX If given this will be replace the `worldBounce.x` value.
-      * @param bounceY If given this will be replace the `worldBounce.y` value.
+      * Optionally also sets the World Bounce and `onWorldBounds` values.
+      * @param value `true` if the Body should collide with the world bounds, otherwise `false`. Default true.
+      * @param bounceX If given this replaces the Body's `worldBounce.x` value.
+      * @param bounceY If given this replaces the Body's `worldBounce.y` value.
+      * @param onWorldBounds If given this replaces the Body's `onWorldBounds` value.
       */
     def setCollideWorldBounds(): Body = js.native
     def setCollideWorldBounds(value: Boolean): Body = js.native
     def setCollideWorldBounds(value: Boolean, bounceX: Double): Body = js.native
     def setCollideWorldBounds(value: Boolean, bounceX: Double, bounceY: Double): Body = js.native
+    def setCollideWorldBounds(value: Boolean, bounceX: Double, bounceY: Double, onWorldBounds: Boolean): Body = js.native
+    def setCollideWorldBounds(value: Boolean, bounceX: Double, bounceY: Unit, onWorldBounds: Boolean): Body = js.native
     def setCollideWorldBounds(value: Boolean, bounceX: Unit, bounceY: Double): Body = js.native
+    def setCollideWorldBounds(value: Boolean, bounceX: Unit, bounceY: Double, onWorldBounds: Boolean): Body = js.native
+    def setCollideWorldBounds(value: Boolean, bounceX: Unit, bounceY: Unit, onWorldBounds: Boolean): Body = js.native
     def setCollideWorldBounds(value: Unit, bounceX: Double): Body = js.native
     def setCollideWorldBounds(value: Unit, bounceX: Double, bounceY: Double): Body = js.native
+    def setCollideWorldBounds(value: Unit, bounceX: Double, bounceY: Double, onWorldBounds: Boolean): Body = js.native
+    def setCollideWorldBounds(value: Unit, bounceX: Double, bounceY: Unit, onWorldBounds: Boolean): Body = js.native
     def setCollideWorldBounds(value: Unit, bounceX: Unit, bounceY: Double): Body = js.native
+    def setCollideWorldBounds(value: Unit, bounceX: Unit, bounceY: Double, onWorldBounds: Boolean): Body = js.native
+    def setCollideWorldBounds(value: Unit, bounceX: Unit, bounceY: Unit, onWorldBounds: Boolean): Body = js.native
+    
+    /**
+      * If this Body is using `drag` for deceleration this property controls how the drag is applied.
+      * If set to `true` drag will use a damping effect rather than a linear approach. If you are
+      * creating a game where the Body moves freely at any angle (i.e. like the way the ship moves in
+      * the game Asteroids) then you will get a far smoother and more visually correct deceleration
+      * by using damping, avoiding the axis-drift that is prone with linear deceleration.
+      * 
+      * If you enable this property then you should use far smaller `drag` values than with linear, as
+      * they are used as a multiplier on the velocity. Values such as 0.95 will give a nice slow
+      * deceleration, where-as smaller values, such as 0.5 will stop an object almost immediately.
+      * @param value `true` to use damping, or `false` to use drag.
+      */
+    def setDamping(value: Boolean): Body = js.native
     
     /**
       * Sets the Body's drag.
@@ -1294,7 +1388,20 @@ object Arcade {
     def setMaxVelocity(x: Double, y: Double): Body = js.native
     
     /**
+      * Sets the Body's maximum horizontal velocity.
+      * @param value The maximum horizontal velocity, in pixels per second.
+      */
+    def setMaxVelocityX(value: Double): Body = js.native
+    
+    /**
+      * Sets the Body's maximum vertical velocity.
+      * @param value The maximum vertical velocity, in pixels per second.
+      */
+    def setMaxVelocityY(value: Double): Body = js.native
+    
+    /**
       * Sets the offset of the Body's position from its Game Object's position.
+      * The Body's `position` isn't changed until the next `preUpdate`.
       * @param x The horizontal offset, in source pixels.
       * @param y The vertical offset, in source pixels. Default x.
       */
@@ -1310,13 +1417,13 @@ object Arcade {
       * @param center Modify the Body's `offset`, placing the Body's center on its Game Object's center. Only works if the Game Object has the `getCenter` method. Default true.
       */
     def setSize(): Body = js.native
+    def setSize(width: Double): Body = js.native
+    def setSize(width: Double, height: Double): Body = js.native
+    def setSize(width: Double, height: Double, center: Boolean): Body = js.native
+    def setSize(width: Double, height: Unit, center: Boolean): Body = js.native
+    def setSize(width: Unit, height: Double): Body = js.native
+    def setSize(width: Unit, height: Double, center: Boolean): Body = js.native
     def setSize(width: Unit, height: Unit, center: Boolean): Body = js.native
-    def setSize(width: Unit, height: integer): Body = js.native
-    def setSize(width: Unit, height: integer, center: Boolean): Body = js.native
-    def setSize(width: integer): Body = js.native
-    def setSize(width: integer, height: Unit, center: Boolean): Body = js.native
-    def setSize(width: integer, height: integer): Body = js.native
-    def setSize(width: integer, height: integer, center: Boolean): Body = js.native
     
     /**
       * Sets the Body's velocity.
@@ -1421,8 +1528,8 @@ object Arcade {
       * by using damping, avoiding the axis-drift that is prone with linear deceleration.
       * 
       * If you enable this property then you should use far smaller `drag` values than with linear, as
-      * they are used as a multiplier on the velocity. Values such as 0.95 will give a nice slow
-      * deceleration, where-as smaller values, such as 0.5 will stop an object almost immediately.
+      * they are used as a multiplier on the velocity. Values such as 0.05 will give a nice slow
+      * deceleration.
       */
     var useDamping: Boolean = js.native
     
@@ -1460,12 +1567,12 @@ object Arcade {
     var worldBounce: Vector2 = js.native
     
     /**
-      * The Body's horizontal position (left edge).
+      * The Bodys horizontal position (left edge).
       */
     var x: Double = js.native
     
     /**
-      * The Body's vertical position (top edge).
+      * The Bodys vertical position (top edge).
       */
     var y: Double = js.native
   }
@@ -1583,15 +1690,11 @@ object Arcade {
       
       inline def setObject1(value: ArcadeColliderType): Self = StObject.set(x, "object1", value.asInstanceOf[js.Any])
       
-      inline def setObject1Varargs(
-        value: (DynamicTilemapLayer | GameObject | Group | Image | Sprite | StaticGroup | StaticTilemapLayer)*
-      ): Self = StObject.set(x, "object1", js.Array(value :_*))
+      inline def setObject1Varargs(value: (GameObject | Group | Image | Sprite | StaticGroup | TilemapLayer)*): Self = StObject.set(x, "object1", js.Array(value*))
       
       inline def setObject2(value: ArcadeColliderType): Self = StObject.set(x, "object2", value.asInstanceOf[js.Any])
       
-      inline def setObject2Varargs(
-        value: (DynamicTilemapLayer | GameObject | Group | Image | Sprite | StaticGroup | StaticTilemapLayer)*
-      ): Self = StObject.set(x, "object2", js.Array(value :_*))
+      inline def setObject2Varargs(value: (GameObject | Group | Image | Sprite | StaticGroup | TilemapLayer)*): Self = StObject.set(x, "object2", js.Array(value*))
       
       inline def setOverlapOnly(value: Boolean): Self = StObject.set(x, "overlapOnly", value.asInstanceOf[js.Any])
       
@@ -1975,8 +2078,12 @@ object Arcade {
     trait Immovable extends StObject {
       
       /**
-        * Sets Whether this Body can be moved by collisions with another Body.
-        * @param value Sets if this body can be moved by collisions with another Body. Default true.
+        * Sets if this Body can be separated during collisions with other bodies.
+        * 
+        * When a body is immovable it means it won't move at all, not even to separate it from collision
+        * overlap. If you just wish to prevent a body from being knocked around by other bodies, see
+        * the `setPushable` method instead.
+        * @param value Sets if this body will be separated during collisions with other bodies. Default true.
         */
       def setImmovable(): this.type = js.native
       def setImmovable(value: Boolean): this.type = js.native
@@ -2029,6 +2136,26 @@ object Arcade {
       * otherwise the search is O(N) for Dynamic Bodies.
       */
     trait OverlapRect extends StObject
+    
+    /**
+      * Provides methods used for setting the pushable property of an Arcade Physics Body.
+      */
+    @js.native
+    trait Pushable extends StObject {
+      
+      /**
+        * Sets if this Body can be pushed by another Body.
+        * 
+        * A body that cannot be pushed will reflect back all of the velocity it is given to the
+        * colliding body. If that body is also not pushable, then the separation will be split
+        * between them evenly.
+        * 
+        * If you want your body to never move or seperate at all, see the `setImmovable` method.
+        * @param value Sets if this body can be pushed by collisions with another Body. Default true.
+        */
+      def setPushable(): this.type = js.native
+      def setPushable(value: Boolean): this.type = js.native
+    }
     
     /**
       * Provides methods for setting the size of an Arcade Physics Game Object.
@@ -2140,7 +2267,7 @@ object Arcade {
       object2: GameObject | (js.Array[GameObject | typings.phaser.Phaser.GameObjects.Group]) | typings.phaser.Phaser.GameObjects.Group,
       collideCallback: js.UndefOr[ArcadePhysicsCallback],
       processCallback: js.UndefOr[ArcadePhysicsCallback],
-      callbackContext: js.UndefOr[js.Any]
+      callbackContext: js.UndefOr[Any]
     ): Collider = js.native
     
     /**
@@ -2153,8 +2280,8 @@ object Arcade {
       * @param gameObject A Game Object.
       * @param isStatic Create a Static body (true) or Dynamic body (false). Default false.
       */
-    def existing(gameObject: GameObject): GameObjectWithBody = js.native
-    def existing(gameObject: GameObject, isStatic: Boolean): GameObjectWithBody = js.native
+    def existing[G /* <: GameObject */](gameObject: G): G = js.native
+    def existing[G /* <: GameObject */](gameObject: G, isStatic: Boolean): G = js.native
     
     /**
       * Creates a Physics Group object.
@@ -2184,10 +2311,10 @@ object Arcade {
       */
     def image(x: Double, y: Double, texture: String): ImageWithDynamicBody = js.native
     def image(x: Double, y: Double, texture: String, frame: String): ImageWithDynamicBody = js.native
-    def image(x: Double, y: Double, texture: String, frame: integer): ImageWithDynamicBody = js.native
+    def image(x: Double, y: Double, texture: String, frame: Double): ImageWithDynamicBody = js.native
     def image(x: Double, y: Double, texture: Texture): ImageWithDynamicBody = js.native
     def image(x: Double, y: Double, texture: Texture, frame: String): ImageWithDynamicBody = js.native
-    def image(x: Double, y: Double, texture: Texture, frame: integer): ImageWithDynamicBody = js.native
+    def image(x: Double, y: Double, texture: Texture, frame: Double): ImageWithDynamicBody = js.native
     
     /**
       * Creates a new Arcade Physics Collider Overlap object.
@@ -2202,7 +2329,7 @@ object Arcade {
       object2: GameObject | (js.Array[GameObject | typings.phaser.Phaser.GameObjects.Group]) | typings.phaser.Phaser.GameObjects.Group,
       collideCallback: js.UndefOr[ArcadePhysicsCallback],
       processCallback: js.UndefOr[ArcadePhysicsCallback],
-      callbackContext: js.UndefOr[js.Any]
+      callbackContext: js.UndefOr[Any]
     ): Collider = js.native
     
     /**
@@ -2219,7 +2346,7 @@ object Arcade {
       */
     def sprite(x: Double, y: Double, key: String): SpriteWithDynamicBody = js.native
     def sprite(x: Double, y: Double, key: String, frame: String): SpriteWithDynamicBody = js.native
-    def sprite(x: Double, y: Double, key: String, frame: integer): SpriteWithDynamicBody = js.native
+    def sprite(x: Double, y: Double, key: String, frame: Double): SpriteWithDynamicBody = js.native
     
     /**
       * Creates a Static Physics Group object.
@@ -2249,10 +2376,10 @@ object Arcade {
       */
     def staticImage(x: Double, y: Double, texture: String): ImageWithStaticBody = js.native
     def staticImage(x: Double, y: Double, texture: String, frame: String): ImageWithStaticBody = js.native
-    def staticImage(x: Double, y: Double, texture: String, frame: integer): ImageWithStaticBody = js.native
+    def staticImage(x: Double, y: Double, texture: String, frame: Double): ImageWithStaticBody = js.native
     def staticImage(x: Double, y: Double, texture: Texture): ImageWithStaticBody = js.native
     def staticImage(x: Double, y: Double, texture: Texture, frame: String): ImageWithStaticBody = js.native
-    def staticImage(x: Double, y: Double, texture: Texture, frame: integer): ImageWithStaticBody = js.native
+    def staticImage(x: Double, y: Double, texture: Texture, frame: Double): ImageWithStaticBody = js.native
     
     /**
       * Creates a new Arcade Sprite object with a Static body.
@@ -2263,10 +2390,10 @@ object Arcade {
       */
     def staticSprite(x: Double, y: Double, texture: String): SpriteWithStaticBody = js.native
     def staticSprite(x: Double, y: Double, texture: String, frame: String): SpriteWithStaticBody = js.native
-    def staticSprite(x: Double, y: Double, texture: String, frame: integer): SpriteWithStaticBody = js.native
+    def staticSprite(x: Double, y: Double, texture: String, frame: Double): SpriteWithStaticBody = js.native
     def staticSprite(x: Double, y: Double, texture: Texture): SpriteWithStaticBody = js.native
     def staticSprite(x: Double, y: Double, texture: Texture, frame: String): SpriteWithStaticBody = js.native
-    def staticSprite(x: Double, y: Double, texture: Texture, frame: integer): SpriteWithStaticBody = js.native
+    def staticSprite(x: Double, y: Double, texture: Texture, frame: Double): SpriteWithStaticBody = js.native
     
     /**
       * A reference to the Scene.Systems this Arcade Physics instance belongs to.
@@ -2282,9 +2409,19 @@ object Arcade {
   /**
     * An Arcade Physics Group object.
     * 
-    * All Game Objects created by or added to this Group will automatically be given dynamic Arcade Physics bodies, if they have no body.
+    * The primary use of a Physics Group is a way to collect together physics enable objects
+    * that share the same intrinsic structure into a single pool. They can they be easily
+    * compared against other Groups, or Game Objects.
     * 
-    * Its static counterpart is {@link Phaser.Physics.Arcade.StaticGroup}.
+    * All Game Objects created by, or added to this Group will automatically be given **dynamic**
+    * Arcade Physics bodies (if they have no body already) and the bodies will receive the
+    * Groups {@link Phaser.Physics.Arcade.Group#defaults default values}.
+    * 
+    * You should not pass objects into this Group that should not receive a body. For example,
+    * do not add basic Geometry or Tilemap Layers into a Group, as they will not behave in the
+    * way you may expect. Groups should all ideally have objects of the same type in them.
+    * 
+    * If you wish to create a Group filled with Static Bodies, please see {@link Phaser.Physics.Arcade.StaticGroup}.
     */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.phaser.Phaser.Types.Physics.Arcade._ArcadeColliderType because Already inherited */ @js.native
@@ -2300,13 +2437,15 @@ object Arcade {
     
     /**
       * Default physics properties applied to Game Objects added to the Group or created by the Group. Derived from the `config` argument.
+      * 
+      * You can remove the default values by setting this property to `{}`.
       */
     var defaults: PhysicsGroupDefaults = js.native
     
     /**
       * The physics type of the Group's members.
       */
-    var physicsType: integer = js.native
+    var physicsType: Double = js.native
     
     /**
       * Disables a Game Object's Body. Called when a Group member is removed.
@@ -2367,6 +2506,7 @@ object Arcade {
        with Gravity
        with Immovable
        with Mass
+       with Pushable
        with Size
        with Velocity {
     
@@ -2405,6 +2545,7 @@ object Arcade {
        with Gravity
        with Immovable
        with Mass
+       with Pushable
        with Size
        with Velocity {
     
@@ -2439,7 +2580,8 @@ object Arcade {
     val allowGravity: Boolean = js.native
     
     /**
-      * Whether this StaticBody has ever collided with a tile or the world boundary.
+      * This property is kept for compatibility with Dynamic Bodies.
+      * Avoid using it.
       */
     var blocked: ArcadeBodyCollision = js.native
     
@@ -2483,7 +2625,7 @@ object Arcade {
     /**
       * The color of this Static Body on the debug display.
       */
-    var debugBodyColor: integer = js.native
+    var debugBodyColor: Double = js.native
     
     /**
       * Whether the Static Body's boundary is drawn to the debug display.
@@ -2638,7 +2780,7 @@ object Arcade {
     /**
       * The StaticBody's physics type (static by default).
       */
-    var physicsType: integer = js.native
+    var physicsType: Double = js.native
     
     /**
       * The position of this Static Body within the simulation.
@@ -2649,6 +2791,19 @@ object Arcade {
       * NOOP
       */
     def postUpdate(): Unit = js.native
+    
+    /**
+      * Sets if this Body can be pushed by another Body.
+      * 
+      * A body that cannot be pushed will reflect back all of the velocity it is given to the
+      * colliding body. If that body is also not pushable, then the separation will be split
+      * between them evenly.
+      * 
+      * If you want your body to never move or seperate at all, see the `setImmovable` method.
+      * 
+      * By default, Static Bodies are not pushable.
+      */
+    var pushable: Boolean = js.native
     
     /**
       * If this Static Body is circular, this is the radius of the boundary, as set by {@link Phaser.Physics.Arcade.StaticBody#setCircle}, in pixels.
@@ -2714,13 +2869,13 @@ object Arcade {
       * @param center Place the Static Body's center on its Game Object's center. Only works if the Game Object has the `getCenter` method. Default true.
       */
     def setSize(): StaticBody = js.native
+    def setSize(width: Double): StaticBody = js.native
+    def setSize(width: Double, height: Double): StaticBody = js.native
+    def setSize(width: Double, height: Double, center: Boolean): StaticBody = js.native
+    def setSize(width: Double, height: Unit, center: Boolean): StaticBody = js.native
+    def setSize(width: Unit, height: Double): StaticBody = js.native
+    def setSize(width: Unit, height: Double, center: Boolean): StaticBody = js.native
     def setSize(width: Unit, height: Unit, center: Boolean): StaticBody = js.native
-    def setSize(width: Unit, height: integer): StaticBody = js.native
-    def setSize(width: Unit, height: integer, center: Boolean): StaticBody = js.native
-    def setSize(width: integer): StaticBody = js.native
-    def setSize(width: integer, height: Unit, center: Boolean): StaticBody = js.native
-    def setSize(width: integer, height: integer): StaticBody = js.native
-    def setSize(width: integer, height: integer, center: Boolean): StaticBody = js.native
     
     /**
       * NOOP function. A Static Body cannot be stopped.
@@ -2733,7 +2888,8 @@ object Arcade {
     val top: Double = js.native
     
     /**
-      * Whether this StaticBody has ever collided with another body and in which direction.
+      * This property is kept for compatibility with Dynamic Bodies.
+      * Avoid using it.
       */
     var touching: ArcadeBodyCollision = js.native
     
@@ -2753,7 +2909,9 @@ object Arcade {
     val velocity: Vector2 = js.native
     
     /**
-      * Whether this StaticBody was colliding with another body during the last step or any previous step, and in which direction.
+      * This property is kept for compatibility with Dynamic Bodies.
+      * Avoid using it.
+      * The values are always false for a Static Body.
       */
     var wasTouching: ArcadeBodyCollision = js.native
     
@@ -2812,7 +2970,7 @@ object Arcade {
     /**
       * The scene this group belongs to.
       */
-    var physicsType: integer = js.native
+    var physicsType: Double = js.native
     
     /**
       * Resets each Body to the position of its parent Game Object.
@@ -2890,7 +3048,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Collider = js.native
     def addCollider(
       object1: ArcadeColliderType,
@@ -2903,7 +3061,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Collider = js.native
     def addCollider(object1: ArcadeColliderType, object2: ArcadeColliderType, collideCallback: ArcadePhysicsCallback): Collider = js.native
     def addCollider(
@@ -2911,7 +3069,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Collider = js.native
     def addCollider(
       object1: ArcadeColliderType,
@@ -2924,7 +3082,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Collider = js.native
     
     /**
@@ -2949,7 +3107,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Collider = js.native
     def addOverlap(
       object1: ArcadeColliderType,
@@ -2962,7 +3120,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Collider = js.native
     def addOverlap(object1: ArcadeColliderType, object2: ArcadeColliderType, collideCallback: ArcadePhysicsCallback): Collider = js.native
     def addOverlap(
@@ -2970,7 +3128,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Collider = js.native
     def addOverlap(
       object1: ArcadeColliderType,
@@ -2983,7 +3141,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Collider = js.native
     
     /**
@@ -3040,7 +3198,7 @@ object Arcade {
       object2: Unit,
       collideCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collide(
       object1: ArcadeColliderType,
@@ -3053,7 +3211,7 @@ object Arcade {
       object2: Unit,
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collide(object1: ArcadeColliderType, object2: Unit, collideCallback: ArcadePhysicsCallback): Boolean = js.native
     def collide(
@@ -3061,7 +3219,7 @@ object Arcade {
       object2: Unit,
       collideCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collide(
       object1: ArcadeColliderType,
@@ -3074,7 +3232,7 @@ object Arcade {
       object2: Unit,
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collide(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
     def collide(
@@ -3082,7 +3240,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collide(
       object1: ArcadeColliderType,
@@ -3095,7 +3253,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collide(object1: ArcadeColliderType, object2: ArcadeColliderType, collideCallback: ArcadePhysicsCallback): Boolean = js.native
     def collide(
@@ -3103,7 +3261,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collide(
       object1: ArcadeColliderType,
@@ -3116,7 +3274,7 @@ object Arcade {
       object2: ArcadeColliderType,
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     
     /**
@@ -3129,25 +3287,25 @@ object Arcade {
       * @param callbackContext The context in which to run the callbacks.
       * @param overlapOnly Whether this is a collision or overlap check.
       */
-    def collideSpriteVsTilemapLayer(sprite: GameObject, tilemapLayer: DynamicTilemapLayer): Boolean = js.native
+    def collideSpriteVsTilemapLayer(sprite: GameObject, tilemapLayer: TilemapLayer): Boolean = js.native
     def collideSpriteVsTilemapLayer(
       sprite: GameObject,
-      tilemapLayer: DynamicTilemapLayer,
+      tilemapLayer: TilemapLayer,
       collideCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collideSpriteVsTilemapLayer(
       sprite: GameObject,
-      tilemapLayer: DynamicTilemapLayer,
+      tilemapLayer: TilemapLayer,
       collideCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any,
+      callbackContext: Any,
       overlapOnly: Boolean
     ): Boolean = js.native
     def collideSpriteVsTilemapLayer(
       sprite: GameObject,
-      tilemapLayer: DynamicTilemapLayer,
+      tilemapLayer: TilemapLayer,
       collideCallback: Unit,
       processCallback: Unit,
       callbackContext: Unit,
@@ -3155,52 +3313,52 @@ object Arcade {
     ): Boolean = js.native
     def collideSpriteVsTilemapLayer(
       sprite: GameObject,
-      tilemapLayer: DynamicTilemapLayer,
+      tilemapLayer: TilemapLayer,
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback
     ): Boolean = js.native
     def collideSpriteVsTilemapLayer(
       sprite: GameObject,
-      tilemapLayer: DynamicTilemapLayer,
+      tilemapLayer: TilemapLayer,
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collideSpriteVsTilemapLayer(
       sprite: GameObject,
-      tilemapLayer: DynamicTilemapLayer,
+      tilemapLayer: TilemapLayer,
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any,
+      callbackContext: Any,
       overlapOnly: Boolean
     ): Boolean = js.native
     def collideSpriteVsTilemapLayer(
       sprite: GameObject,
-      tilemapLayer: DynamicTilemapLayer,
+      tilemapLayer: TilemapLayer,
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback,
       callbackContext: Unit,
       overlapOnly: Boolean
     ): Boolean = js.native
-    def collideSpriteVsTilemapLayer(sprite: GameObject, tilemapLayer: DynamicTilemapLayer, collideCallback: ArcadePhysicsCallback): Boolean = js.native
+    def collideSpriteVsTilemapLayer(sprite: GameObject, tilemapLayer: TilemapLayer, collideCallback: ArcadePhysicsCallback): Boolean = js.native
     def collideSpriteVsTilemapLayer(
       sprite: GameObject,
-      tilemapLayer: DynamicTilemapLayer,
+      tilemapLayer: TilemapLayer,
       collideCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collideSpriteVsTilemapLayer(
       sprite: GameObject,
-      tilemapLayer: DynamicTilemapLayer,
+      tilemapLayer: TilemapLayer,
       collideCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any,
+      callbackContext: Any,
       overlapOnly: Boolean
     ): Boolean = js.native
     def collideSpriteVsTilemapLayer(
       sprite: GameObject,
-      tilemapLayer: DynamicTilemapLayer,
+      tilemapLayer: TilemapLayer,
       collideCallback: ArcadePhysicsCallback,
       processCallback: Unit,
       callbackContext: Unit,
@@ -3208,134 +3366,28 @@ object Arcade {
     ): Boolean = js.native
     def collideSpriteVsTilemapLayer(
       sprite: GameObject,
-      tilemapLayer: DynamicTilemapLayer,
+      tilemapLayer: TilemapLayer,
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback
     ): Boolean = js.native
     def collideSpriteVsTilemapLayer(
       sprite: GameObject,
-      tilemapLayer: DynamicTilemapLayer,
+      tilemapLayer: TilemapLayer,
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collideSpriteVsTilemapLayer(
       sprite: GameObject,
-      tilemapLayer: DynamicTilemapLayer,
+      tilemapLayer: TilemapLayer,
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any,
+      callbackContext: Any,
       overlapOnly: Boolean
     ): Boolean = js.native
     def collideSpriteVsTilemapLayer(
       sprite: GameObject,
-      tilemapLayer: DynamicTilemapLayer,
-      collideCallback: ArcadePhysicsCallback,
-      processCallback: ArcadePhysicsCallback,
-      callbackContext: Unit,
-      overlapOnly: Boolean
-    ): Boolean = js.native
-    def collideSpriteVsTilemapLayer(sprite: GameObject, tilemapLayer: StaticTilemapLayer): Boolean = js.native
-    def collideSpriteVsTilemapLayer(
-      sprite: GameObject,
-      tilemapLayer: StaticTilemapLayer,
-      collideCallback: Unit,
-      processCallback: Unit,
-      callbackContext: js.Any
-    ): Boolean = js.native
-    def collideSpriteVsTilemapLayer(
-      sprite: GameObject,
-      tilemapLayer: StaticTilemapLayer,
-      collideCallback: Unit,
-      processCallback: Unit,
-      callbackContext: js.Any,
-      overlapOnly: Boolean
-    ): Boolean = js.native
-    def collideSpriteVsTilemapLayer(
-      sprite: GameObject,
-      tilemapLayer: StaticTilemapLayer,
-      collideCallback: Unit,
-      processCallback: Unit,
-      callbackContext: Unit,
-      overlapOnly: Boolean
-    ): Boolean = js.native
-    def collideSpriteVsTilemapLayer(
-      sprite: GameObject,
-      tilemapLayer: StaticTilemapLayer,
-      collideCallback: Unit,
-      processCallback: ArcadePhysicsCallback
-    ): Boolean = js.native
-    def collideSpriteVsTilemapLayer(
-      sprite: GameObject,
-      tilemapLayer: StaticTilemapLayer,
-      collideCallback: Unit,
-      processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
-    ): Boolean = js.native
-    def collideSpriteVsTilemapLayer(
-      sprite: GameObject,
-      tilemapLayer: StaticTilemapLayer,
-      collideCallback: Unit,
-      processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any,
-      overlapOnly: Boolean
-    ): Boolean = js.native
-    def collideSpriteVsTilemapLayer(
-      sprite: GameObject,
-      tilemapLayer: StaticTilemapLayer,
-      collideCallback: Unit,
-      processCallback: ArcadePhysicsCallback,
-      callbackContext: Unit,
-      overlapOnly: Boolean
-    ): Boolean = js.native
-    def collideSpriteVsTilemapLayer(sprite: GameObject, tilemapLayer: StaticTilemapLayer, collideCallback: ArcadePhysicsCallback): Boolean = js.native
-    def collideSpriteVsTilemapLayer(
-      sprite: GameObject,
-      tilemapLayer: StaticTilemapLayer,
-      collideCallback: ArcadePhysicsCallback,
-      processCallback: Unit,
-      callbackContext: js.Any
-    ): Boolean = js.native
-    def collideSpriteVsTilemapLayer(
-      sprite: GameObject,
-      tilemapLayer: StaticTilemapLayer,
-      collideCallback: ArcadePhysicsCallback,
-      processCallback: Unit,
-      callbackContext: js.Any,
-      overlapOnly: Boolean
-    ): Boolean = js.native
-    def collideSpriteVsTilemapLayer(
-      sprite: GameObject,
-      tilemapLayer: StaticTilemapLayer,
-      collideCallback: ArcadePhysicsCallback,
-      processCallback: Unit,
-      callbackContext: Unit,
-      overlapOnly: Boolean
-    ): Boolean = js.native
-    def collideSpriteVsTilemapLayer(
-      sprite: GameObject,
-      tilemapLayer: StaticTilemapLayer,
-      collideCallback: ArcadePhysicsCallback,
-      processCallback: ArcadePhysicsCallback
-    ): Boolean = js.native
-    def collideSpriteVsTilemapLayer(
-      sprite: GameObject,
-      tilemapLayer: StaticTilemapLayer,
-      collideCallback: ArcadePhysicsCallback,
-      processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
-    ): Boolean = js.native
-    def collideSpriteVsTilemapLayer(
-      sprite: GameObject,
-      tilemapLayer: StaticTilemapLayer,
-      collideCallback: ArcadePhysicsCallback,
-      processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any,
-      overlapOnly: Boolean
-    ): Boolean = js.native
-    def collideSpriteVsTilemapLayer(
-      sprite: GameObject,
-      tilemapLayer: StaticTilemapLayer,
+      tilemapLayer: TilemapLayer,
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
       callbackContext: Unit,
@@ -3369,7 +3421,7 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collideTiles(
       sprite: GameObject,
@@ -3382,7 +3434,7 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collideTiles(sprite: GameObject, tiles: js.Array[Tile], collideCallback: ArcadePhysicsCallback): Boolean = js.native
     def collideTiles(
@@ -3390,7 +3442,7 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def collideTiles(
       sprite: GameObject,
@@ -3403,7 +3455,7 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     
     /**
@@ -3481,7 +3533,7 @@ object Arcade {
     var drawDebug: Boolean = js.native
     
     def enable(`object`: js.Array[GameObject | typings.phaser.Phaser.GameObjects.Group]): Unit = js.native
-    def enable(`object`: js.Array[GameObject | typings.phaser.Phaser.GameObjects.Group], bodyType: integer): Unit = js.native
+    def enable(`object`: js.Array[GameObject | typings.phaser.Phaser.GameObjects.Group], bodyType: Double): Unit = js.native
     /**
       * Adds an Arcade Physics Body to a Game Object, an array of Game Objects, or the children of a Group.
       * 
@@ -3508,9 +3560,9 @@ object Arcade {
       * @param bodyType The type of Body to create. Either `DYNAMIC_BODY` or `STATIC_BODY`.
       */
     def enable(`object`: GameObject): Unit = js.native
-    def enable(`object`: GameObject, bodyType: integer): Unit = js.native
+    def enable(`object`: GameObject, bodyType: Double): Unit = js.native
     def enable(`object`: typings.phaser.Phaser.GameObjects.Group): Unit = js.native
-    def enable(`object`: typings.phaser.Phaser.GameObjects.Group, bodyType: integer): Unit = js.native
+    def enable(`object`: typings.phaser.Phaser.GameObjects.Group, bodyType: Double): Unit = js.native
     
     /**
       * Creates an Arcade Physics Body on a single Game Object.
@@ -3537,7 +3589,7 @@ object Arcade {
       * @param bodyType The type of Body to create. Either `DYNAMIC_BODY` or `STATIC_BODY`.
       */
     def enableBody(`object`: GameObject): GameObject = js.native
-    def enableBody(`object`: GameObject, bodyType: integer): GameObject = js.native
+    def enableBody(`object`: GameObject, bodyType: Double): GameObject = js.native
     
     /**
       * Should Physics use a fixed update time-step (true) or sync to the render fps (false)?.
@@ -3582,7 +3634,7 @@ object Arcade {
       * your world then you may find search performance improves by increasing this value,
       * to allow more items per node and less node division.
       */
-    var maxEntries: integer = js.native
+    var maxEntries: Double = js.native
     
     /**
       * Tests if Game Objects overlap.
@@ -3600,7 +3652,7 @@ object Arcade {
       object2: Unit,
       overlapCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlap(
       object1: ArcadeColliderType,
@@ -3613,7 +3665,7 @@ object Arcade {
       object2: Unit,
       overlapCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlap(object1: ArcadeColliderType, object2: Unit, overlapCallback: ArcadePhysicsCallback): Boolean = js.native
     def overlap(
@@ -3621,7 +3673,7 @@ object Arcade {
       object2: Unit,
       overlapCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlap(
       object1: ArcadeColliderType,
@@ -3634,7 +3686,7 @@ object Arcade {
       object2: Unit,
       overlapCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlap(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
     def overlap(
@@ -3642,7 +3694,7 @@ object Arcade {
       object2: ArcadeColliderType,
       overlapCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlap(
       object1: ArcadeColliderType,
@@ -3655,7 +3707,7 @@ object Arcade {
       object2: ArcadeColliderType,
       overlapCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlap(object1: ArcadeColliderType, object2: ArcadeColliderType, overlapCallback: ArcadePhysicsCallback): Boolean = js.native
     def overlap(
@@ -3663,7 +3715,7 @@ object Arcade {
       object2: ArcadeColliderType,
       overlapCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlap(
       object1: ArcadeColliderType,
@@ -3676,7 +3728,7 @@ object Arcade {
       object2: ArcadeColliderType,
       overlapCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     
     /**
@@ -3701,7 +3753,7 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: Unit,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlapTiles(
       sprite: GameObject,
@@ -3714,7 +3766,7 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: Unit,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlapTiles(sprite: GameObject, tiles: js.Array[Tile], collideCallback: ArcadePhysicsCallback): Boolean = js.native
     def overlapTiles(
@@ -3722,7 +3774,7 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: ArcadePhysicsCallback,
       processCallback: Unit,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     def overlapTiles(
       sprite: GameObject,
@@ -3735,7 +3787,7 @@ object Arcade {
       tiles: js.Array[Tile],
       collideCallback: ArcadePhysicsCallback,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any
+      callbackContext: Any
     ): Boolean = js.native
     
     /**
@@ -3803,13 +3855,13 @@ object Arcade {
       * @param intersects Assert that the bodies intersect and should not be tested before separation.
       */
     def separate(body1: Body, body2: Body): Boolean = js.native
-    def separate(body1: Body, body2: Body, processCallback: Unit, callbackContext: js.Any): Boolean = js.native
-    def separate(body1: Body, body2: Body, processCallback: Unit, callbackContext: js.Any, overlapOnly: Boolean): Boolean = js.native
+    def separate(body1: Body, body2: Body, processCallback: Unit, callbackContext: Any): Boolean = js.native
+    def separate(body1: Body, body2: Body, processCallback: Unit, callbackContext: Any, overlapOnly: Boolean): Boolean = js.native
     def separate(
       body1: Body,
       body2: Body,
       processCallback: Unit,
-      callbackContext: js.Any,
+      callbackContext: Any,
       overlapOnly: Boolean,
       intersects: Boolean
     ): Boolean = js.native
@@ -3817,7 +3869,7 @@ object Arcade {
       body1: Body,
       body2: Body,
       processCallback: Unit,
-      callbackContext: js.Any,
+      callbackContext: Any,
       overlapOnly: Unit,
       intersects: Boolean
     ): Boolean = js.native
@@ -3839,19 +3891,19 @@ object Arcade {
       intersects: Boolean
     ): Boolean = js.native
     def separate(body1: Body, body2: Body, processCallback: ArcadePhysicsCallback): Boolean = js.native
-    def separate(body1: Body, body2: Body, processCallback: ArcadePhysicsCallback, callbackContext: js.Any): Boolean = js.native
+    def separate(body1: Body, body2: Body, processCallback: ArcadePhysicsCallback, callbackContext: Any): Boolean = js.native
     def separate(
       body1: Body,
       body2: Body,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any,
+      callbackContext: Any,
       overlapOnly: Boolean
     ): Boolean = js.native
     def separate(
       body1: Body,
       body2: Body,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any,
+      callbackContext: Any,
       overlapOnly: Boolean,
       intersects: Boolean
     ): Boolean = js.native
@@ -3859,7 +3911,7 @@ object Arcade {
       body1: Body,
       body2: Body,
       processCallback: ArcadePhysicsCallback,
-      callbackContext: js.Any,
+      callbackContext: Any,
       overlapOnly: Unit,
       intersects: Boolean
     ): Boolean = js.native
@@ -4073,7 +4125,7 @@ object Arcade {
       * You can optionally advance the simulation directly yourself by calling the `step` method.
       * @param framerate The frame rate to advance the simulation at.
       */
-    def setFPS(framerate: integer): this.type = js.native
+    def setFPS(framerate: Double): this.type = js.native
     
     /**
       * Static Bodies in this simulation.
@@ -4122,7 +4174,7 @@ object Arcade {
       * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
       * @param delta The delta time, in ms, elapsed since the last frame.
       */
-    /* protected */ def update(time: Double, delta: Double): Unit = js.native
+    def update(time: Double, delta: Double): Unit = js.native
     
     /**
       * Calculates a Body's velocity and updates its position.
@@ -4157,23 +4209,23 @@ object Arcade {
       * @param object A Game Object, a Group, an object with `x` and `y` coordinates, or an array of such objects.
       * @param padding An amount added to each boundary edge during the operation. Default 0.
       */
-    def wrap(`object`: js.Any): Unit = js.native
-    def wrap(`object`: js.Any, padding: Double): Unit = js.native
+    def wrap(`object`: Any): Unit = js.native
+    def wrap(`object`: Any, padding: Double): Unit = js.native
     
     /**
       * Wrap each object's coordinates within {@link Phaser.Physics.Arcade.World#bounds}.
       * @param objects An array of objects to be wrapped.
       * @param padding An amount added to the boundary. Default 0.
       */
-    def wrapArray(objects: js.Array[js.Any]): Unit = js.native
-    def wrapArray(objects: js.Array[js.Any], padding: Double): Unit = js.native
+    def wrapArray(objects: js.Array[Any]): Unit = js.native
+    def wrapArray(objects: js.Array[Any], padding: Double): Unit = js.native
     
     /**
       * Wrap an object's coordinates within {@link Phaser.Physics.Arcade.World#bounds}.
       * @param object A Game Object, a Physics Body, or any object with `x` and `y` coordinates
       * @param padding An amount added to the boundary. Default 0.
       */
-    def wrapObject(`object`: js.Any): Unit = js.native
-    def wrapObject(`object`: js.Any, padding: Double): Unit = js.native
+    def wrapObject(`object`: Any): Unit = js.native
+    def wrapObject(`object`: Any, padding: Double): Unit = js.native
   }
 }

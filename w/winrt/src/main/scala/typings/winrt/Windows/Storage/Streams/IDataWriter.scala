@@ -1,7 +1,5 @@
 package typings.winrt.Windows.Storage.Streams
 
-import typings.std.Date
-import typings.std.Uint8Array
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,9 +32,9 @@ trait IDataWriter extends StObject {
   def writeByte(value: Double): Unit = js.native
   
   def writeBytes(value: js.Array[Double]): Unit = js.native
-  def writeBytes(value: Uint8Array): Unit = js.native
+  def writeBytes(value: js.typedarray.Uint8Array): Unit = js.native
   
-  def writeDateTime(value: Date): Unit = js.native
+  def writeDateTime(value: js.Date): Unit = js.native
   
   def writeDouble(value: Double): Unit = js.native
   

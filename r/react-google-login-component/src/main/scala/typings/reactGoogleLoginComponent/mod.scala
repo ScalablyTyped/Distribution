@@ -12,14 +12,14 @@ object mod {
   
   @JSImport("react-google-login-component", "GoogleLogin")
   @js.native
-  class GoogleLogin protected ()
-    extends Component[GoogleLoginProps, js.Object, js.Any] {
+  open class GoogleLogin protected ()
+    extends Component[GoogleLoginProps, js.Object, Any] {
     def this(props: GoogleLoginProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: GoogleLoginProps, context: js.Any) = this()
+    def this(props: GoogleLoginProps, context: Any) = this()
   }
   
   trait GoogleLoginInfo extends StObject {

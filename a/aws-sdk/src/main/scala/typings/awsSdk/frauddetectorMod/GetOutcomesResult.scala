@@ -33,6 +33,6 @@ object GetOutcomesResult {
     
     inline def setOutcomesUndefined: Self = StObject.set(x, "outcomes", js.undefined)
     
-    inline def setOutcomesVarargs(value: Outcome*): Self = StObject.set(x, "outcomes", js.Array(value :_*))
+    inline def setOutcomesVarargs(value: Outcome*): Self = StObject.set(x, "outcomes", js.Array(value*))
   }
 }

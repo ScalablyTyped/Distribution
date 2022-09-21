@@ -1,7 +1,7 @@
 
 # Scala.js typings for image-type
 
-Typings are for version 4.1.0
+Typings are for version 5.0.0
 
 ## Library description:
 Detect the image type of a Buffer/Uint8Array
@@ -9,11 +9,11 @@ Detect the image type of a Buffer/Uint8Array
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | image-type |
-| Keywords           | image, img, pic, picture, photo, type, detect, check, is, exif, binary, buffer, uint8array, png, jpg, jpeg, gif, webp, tif, bmp, jxr, psd, mime |
-| # releases         | 4 |
-| # dependents       | 127 |
-| # downloads        | 1990304 |
-| # stars            | 11 |
+| Keywords           | image, picture, photo, type, detect, check, is, exif, binary, buffer, uint8array, png, jpg, jpeg, gif, webp, tif, bmp, jxr, psd, mime |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 251169.66666666666 |
+| # stars            | 285.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/image-type#readme)

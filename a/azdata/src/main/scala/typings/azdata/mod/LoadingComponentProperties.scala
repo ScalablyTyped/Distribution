@@ -4,14 +4,29 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoadingComponentProperties extends StObject {
+trait LoadingComponentProperties
+  extends StObject
+     with ComponentProperties {
   
+  /**
+    * Whether to show the loading spinner instead of the contained component. True by default
+    */
   var loading: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * The text to display while loading is set to false. Will also be announced through screen readers
+    * once loading is completed.
+    */
   var loadingCompletedText: js.UndefOr[String] = js.undefined
   
+  /**
+    * The text to display while loading is set to true
+    */
   var loadingText: js.UndefOr[String] = js.undefined
   
+  /**
+    * Whether to show the loading text next to the spinner
+    */
   var showText: js.UndefOr[Boolean] = js.undefined
 }
 object LoadingComponentProperties {

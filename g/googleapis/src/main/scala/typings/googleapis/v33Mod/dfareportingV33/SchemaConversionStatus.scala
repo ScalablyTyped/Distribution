@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The original conversion that was inserted or updated and whether there were
-  * any errors.
-  */
 trait SchemaConversionStatus extends StObject {
   
   /**
@@ -21,10 +17,9 @@ trait SchemaConversionStatus extends StObject {
   var errors: js.UndefOr[js.Array[SchemaConversionError]] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#conversionStatus&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#conversionStatus".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaConversionStatus {
   
@@ -43,9 +38,11 @@ object SchemaConversionStatus {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: SchemaConversionError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: SchemaConversionError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

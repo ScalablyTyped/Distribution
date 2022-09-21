@@ -1,6 +1,5 @@
 package typings.awsLambda
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object handlerMod {
   
   type Callback[TResult] = js.Function2[
-    /* error */ js.UndefOr[Error | String | Null], 
+    /* error */ js.UndefOr[js.Error | String | Null], 
     /* result */ js.UndefOr[TResult], 
     Unit
   ]
   
   trait ClientContext extends StObject {
     
-    var Custom: js.UndefOr[js.Any] = js.undefined
+    var Custom: js.UndefOr[Any] = js.undefined
     
     var client: ClientContextClient
     
@@ -32,7 +31,7 @@ object handlerMod {
       
       inline def setClient(value: ClientContextClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      inline def setCustom(value: js.Any): Self = StObject.set(x, "Custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: Any): Self = StObject.set(x, "Custom", value.asInstanceOf[js.Any])
       
       inline def setCustomUndefined: Self = StObject.set(x, "Custom", js.undefined)
       
@@ -147,13 +146,13 @@ object handlerMod {
     // as of the 12.x runtime, so they are not removed from the types.
     /** @deprecated Use handler callback or promise result */
     def done(): Unit = js.native
-    def done(error: Unit, result: js.Any): Unit = js.native
-    def done(error: Error): Unit = js.native
-    def done(error: Error, result: js.Any): Unit = js.native
+    def done(error: js.Error): Unit = js.native
+    def done(error: js.Error, result: Any): Unit = js.native
+    def done(error: Unit, result: Any): Unit = js.native
     
     def fail(error: String): Unit = js.native
     /** @deprecated Use handler callback with first argument or reject a promise result */
-    def fail(error: Error): Unit = js.native
+    def fail(error: js.Error): Unit = js.native
     
     var functionName: String = js.native
     
@@ -172,11 +171,11 @@ object handlerMod {
     var memoryLimitInMB: String = js.native
     
     /** @deprecated Use handler callback with second argument or resolve a promise result */
-    def succeed(messageOrObject: js.Any): Unit = js.native
+    def succeed(messageOrObject: Any): Unit = js.native
     // Unclear what behavior this is supposed to have, I couldn't find any still extant reference,
     // and it behaves like the above, ignoring the object parameter.
     /** @deprecated Use handler callback or promise result */
-    def succeed(message: String, `object`: js.Any): Unit = js.native
+    def succeed(message: String, `object`: Any): Unit = js.native
   }
   
   type Handler[TEvent, TResult] = js.Function3[

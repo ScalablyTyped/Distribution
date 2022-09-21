@@ -10,10 +10,10 @@ ECMAScript “ToPrimitive” algorithm. Provides ES5 and ES2015 versions.
 | ------------------ | :-------------: |
 | Full name          | es-to-primitive |
 | Keywords           | primitive, abstract, ecmascript, es5, es6, es2015, toPrimitive, coerce, type, object, string, number, boolean, symbol, null, undefined |
-| # releases         | 2 |
-| # dependents       | 86 |
-| # downloads        | 786267162 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.808780633333333E7 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/ljharb/es-to-primitive#readme)

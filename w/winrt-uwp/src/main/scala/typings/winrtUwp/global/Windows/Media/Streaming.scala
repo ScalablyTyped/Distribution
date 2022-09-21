@@ -97,15 +97,15 @@ object Streaming {
          with typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceAdvancedSettings {
       
       /* CompleteClass */
-      var allSegmentsIndependent: js.Any = js.native
+      var allSegmentsIndependent: Any = js.native
       
       /* unmapped type */
       /* CompleteClass */
-      var bitrateDowngradeTriggerRatio: js.Any = js.native
+      var bitrateDowngradeTriggerRatio: Any = js.native
       
       /* unmapped type */
       /* CompleteClass */
-      var desiredBitrateHeadroomRatio: js.Any = js.native
+      var desiredBitrateHeadroomRatio: Any = js.native
     }
     
     /** Represents the result of the creation of a AdaptiveMediaSource object. */

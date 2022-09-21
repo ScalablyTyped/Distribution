@@ -8,5 +8,5 @@ object getSamplingTargetsOutputMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/GetSamplingTargetsOutput", "GetSamplingTargetsOutput")
   @js.native
-  val GetSamplingTargetsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetSamplingTargetsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

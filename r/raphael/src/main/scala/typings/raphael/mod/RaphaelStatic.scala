@@ -365,7 +365,7 @@ Instantiable4[
     * `string`.
     * @return The formatted string.
     */
-  def format(token: String, parameters: js.Any*): String = js.native
+  def format(token: String, parameters: Any*): String = js.native
   
   /**
     * A little bit more advanced format function than {@link format}. Replaces construction of type `{<name>}`
@@ -388,7 +388,7 @@ Instantiable4[
     * @param json Object with properties that will be used as a replacement.
     * @return The formatted string.
     */
-  def fullfill(token: String, json: Record[String, js.Any]): String = js.native
+  def fullfill(token: String, json: Record[String, Any]): String = js.native
   
   /**
     * On each call returns next colour in the spectrum. To reset it back to red call
@@ -493,7 +493,25 @@ Instantiable4[
     * @param type Type to check for.
     * @return `true` if the object is of the given type, or `false` otherwise.
     */
-  def is(`object`: js.Any, `type`: String): Boolean = js.native
+  def is(`object`: Any, `type`: String): Boolean = js.native
+  
+  /**
+    * Returns `true` if two bounding boxes intersect
+    * @param bbox1 first bounding box
+    * @param bbox2 second bounding box
+    * @return `true` if they intersect
+    */
+  def isBBoxIntersect(bbox1: RaphaelAxisAlignedBoundingBox, bbox2: RaphaelAxisAlignedBoundingBox): Boolean = js.native
+  
+  /**
+    * Returns `true` if given point is inside the bounding box.
+    * @param bbox bounding box
+    * @param x x coordinate of the point
+    * @param y y coordinate of the point
+    * @return `true` if point the point is inside
+    */
+  def isPointInsideBBox(bbox: RaphaelAxisAlignedBoundingBox, x: Double, y: Double): Boolean = js.native
+  
   /**
     * Handy replacement for typeof operator.
     * @param object An object whose type to check.
@@ -501,7 +519,7 @@ Instantiable4[
     * @return `true` if the object is of the given type, or `false` otherwise.
     */
   @JSName("is")
-  def is_array(`object`: js.Any, `type`: array): /* is std.Array<any> */ Boolean = js.native
+  def is_array(`object`: Any, `type`: array): /* is std.Array<any> */ Boolean = js.native
   /**
     * Handy replacement for typeof operator.
     * @param object An object whose type to check.
@@ -509,7 +527,7 @@ Instantiable4[
     * @return `true` if the object is of the given type, or `false` otherwise.
     */
   @JSName("is")
-  def is_boolean(`object`: js.Any, `type`: boolean): /* is boolean */ Boolean = js.native
+  def is_boolean(`object`: Any, `type`: boolean): /* is boolean */ Boolean = js.native
   /**
     * Handy replacement for typeof operator.
     * @param object An object whose type to check.
@@ -517,7 +535,7 @@ Instantiable4[
     * @return `true` if the object is of the given type, or `false` otherwise.
     */
   @JSName("is")
-  def is_function(`object`: js.Any, `type`: function): Boolean = js.native
+  def is_function(`object`: Any, `type`: function): Boolean = js.native
   /**
     * Handy replacement for typeof operator.
     * @param object An object whose type to check.
@@ -525,7 +543,7 @@ Instantiable4[
     * @return `true` if the object is of the given type, or `false` otherwise.
     */
   @JSName("is")
-  def is_null(`object`: js.Any, `type`: `null`): /* is null */ Boolean = js.native
+  def is_null(`object`: Any, `type`: `null`): /* is null */ Boolean = js.native
   /**
     * Handy replacement for typeof operator.
     * @param object An object whose type to check.
@@ -533,7 +551,7 @@ Instantiable4[
     * @return `true` if the object is of the given type, or `false` otherwise.
     */
   @JSName("is")
-  def is_number(`object`: js.Any, `type`: number): /* is number */ Boolean = js.native
+  def is_number(`object`: Any, `type`: number): /* is number */ Boolean = js.native
   /**
     * Handy replacement for typeof operator.
     * @param object An object whose type to check.
@@ -541,7 +559,7 @@ Instantiable4[
     * @return `true` if the object is of the given type, or `false` otherwise.
     */
   @JSName("is")
-  def is_object(`object`: js.Any, `type`: `object`): Boolean = js.native
+  def is_object(`object`: Any, `type`: `object`): Boolean = js.native
   /**
     * Handy replacement for typeof operator.
     * @param object An object whose type to check.
@@ -549,7 +567,7 @@ Instantiable4[
     * @return `true` if the object is of the given type, or `false` otherwise.
     */
   @JSName("is")
-  def is_string(`object`: js.Any, `type`: string): /* is string */ Boolean = js.native
+  def is_string(`object`: Any, `type`: string): /* is string */ Boolean = js.native
   /**
     * Handy replacement for typeof operator.
     * @param object An object whose type to check.
@@ -557,7 +575,7 @@ Instantiable4[
     * @return `true` if the object is of the given type, or `false` otherwise.
     */
   @JSName("is")
-  def is_symbol(`object`: js.Any, `type`: symbol): /* is symbol */ Boolean = js.native
+  def is_symbol(`object`: Any, `type`: symbol): /* is symbol */ Boolean = js.native
   /**
     * Handy replacement for typeof operator.
     * @param object An object whose type to check.
@@ -565,7 +583,7 @@ Instantiable4[
     * @return `true` if the object is of the given type, or `false` otherwise.
     */
   @JSName("is")
-  def is_undefined(`object`: js.Any, `type`: undefined): /* is undefined */ Boolean = js.native
+  def is_undefined(`object`: Any, `type`: undefined): /* is undefined */ Boolean = js.native
   
   /**
     * Utility method for creating a 2x3 matrix based on given parameters:

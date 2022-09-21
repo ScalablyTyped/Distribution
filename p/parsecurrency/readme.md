@@ -1,7 +1,7 @@
 
 # Scala.js typings for parsecurrency
 
-Typings are for version 0.2
+Typings are for version 1.0
 
 ## Library description:
 Tiny currency string parser utility
@@ -10,15 +10,12 @@ Tiny currency string parser utility
 | ------------------ | :-------------: |
 | Full name          | parsecurrency |
 | Keywords           | money, currency, format, utility, finance, parse, unformat |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 32376 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4370.666666666667 |
+| # stars            | 10.0 |
 
 ## Links
-- [Homepage](https://github.com/mktj/parsecurrency#readme)
-- [Bugs](https://github.com/mktj/parsecurrency/issues)
-- [Repository](https://github.com/mktj/parsecurrency)
 - [Npm](https://www.npmjs.com/package/parsecurrency)
     
 

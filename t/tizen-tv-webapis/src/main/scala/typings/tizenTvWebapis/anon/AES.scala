@@ -14,31 +14,55 @@ trait AES extends StObject {
   
   /**
     * AES encryption
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var AES: `3`
   
   /**
     * No encryption
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var NONE: `5`
   
   /**
     * TKIP encryption
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var TKIP: `2`
   
   /**
     * TKIP_AES_MIXED encryption
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var TKIP_AES_MIXED: `4`
   
   /**
     * Encryption type unknown
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var UNKNOWN: `6`
   
   /**
     * WEP encryption
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var WEP: `1`
 }

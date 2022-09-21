@@ -40,7 +40,7 @@ trait DataSourceIds extends StObject {
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** Required. The BigQuery project id for which data sources should be returned: `projects/{project_id}` or `projects/{project_id}/locations/{location_id}` */
+  /** Required. The BigQuery project id for which transfer configs should be returned: `projects/{project_id}` or `projects/{project_id}/locations/{location_id}` */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -84,7 +84,7 @@ object DataSourceIds {
     
     inline def setDataSourceIdsUndefined: Self = StObject.set(x, "dataSourceIds", js.undefined)
     
-    inline def setDataSourceIdsVarargs(value: String*): Self = StObject.set(x, "dataSourceIds", js.Array(value :_*))
+    inline def setDataSourceIdsVarargs(value: String*): Self = StObject.set(x, "dataSourceIds", js.Array(value*))
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

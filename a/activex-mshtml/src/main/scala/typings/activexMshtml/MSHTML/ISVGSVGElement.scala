@@ -49,9 +49,9 @@ trait ISVGSVGElement extends StObject {
   
   def getElementById(elementId: String): IHTMLElement
   
-  def getEnclosureList(rect: SVGRect, referenceElement: ISVGElement): js.Any
+  def getEnclosureList(rect: SVGRect, referenceElement: ISVGElement): Any
   
-  def getIntersectionList(rect: SVGRect, referenceElement: ISVGElement): js.Any
+  def getIntersectionList(rect: SVGRect, referenceElement: ISVGElement): Any
   
   var height: SVGAnimatedLength
   
@@ -109,8 +109,8 @@ object ISVGSVGElement {
     forceRedraw: () => Unit,
     getCurrentTime: () => Double,
     getElementById: String => IHTMLElement,
-    getEnclosureList: (SVGRect, ISVGElement) => js.Any,
-    getIntersectionList: (SVGRect, ISVGElement) => js.Any,
+    getEnclosureList: (SVGRect, ISVGElement) => Any,
+    getIntersectionList: (SVGRect, ISVGElement) => Any,
     height: SVGAnimatedLength,
     pauseAnimations: () => Unit,
     pixelUnitToMillimeterX: Double,
@@ -175,9 +175,9 @@ object ISVGSVGElement {
     
     inline def setGetElementById(value: String => IHTMLElement): Self = StObject.set(x, "getElementById", js.Any.fromFunction1(value))
     
-    inline def setGetEnclosureList(value: (SVGRect, ISVGElement) => js.Any): Self = StObject.set(x, "getEnclosureList", js.Any.fromFunction2(value))
+    inline def setGetEnclosureList(value: (SVGRect, ISVGElement) => Any): Self = StObject.set(x, "getEnclosureList", js.Any.fromFunction2(value))
     
-    inline def setGetIntersectionList(value: (SVGRect, ISVGElement) => js.Any): Self = StObject.set(x, "getIntersectionList", js.Any.fromFunction2(value))
+    inline def setGetIntersectionList(value: (SVGRect, ISVGElement) => Any): Self = StObject.set(x, "getIntersectionList", js.Any.fromFunction2(value))
     
     inline def setHeight(value: SVGAnimatedLength): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

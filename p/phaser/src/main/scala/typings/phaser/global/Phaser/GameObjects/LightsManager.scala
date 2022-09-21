@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Phaser.GameObjects.LightsManager")
 @js.native
-class LightsManager ()
+open class LightsManager ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.LightsManager

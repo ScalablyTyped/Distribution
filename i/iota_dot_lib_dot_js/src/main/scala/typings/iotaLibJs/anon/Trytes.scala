@@ -19,6 +19,6 @@ object Trytes {
     
     inline def setTrytes(value: js.Array[String]): Self = StObject.set(x, "trytes", value.asInstanceOf[js.Any])
     
-    inline def setTrytesVarargs(value: String*): Self = StObject.set(x, "trytes", js.Array(value :_*))
+    inline def setTrytesVarargs(value: String*): Self = StObject.set(x, "trytes", js.Array(value*))
   }
 }

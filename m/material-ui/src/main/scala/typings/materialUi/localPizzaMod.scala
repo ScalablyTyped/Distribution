@@ -10,10 +10,10 @@ object localPizzaMod {
   
   @JSImport("material-ui/svg-icons/maps/local-pizza", JSImport.Default)
   @js.native
-  class default () extends MapsLocalPizza
+  open class default () extends MapsLocalPizza
   
   @JSImport("material-ui/svg-icons/maps/local-pizza", "MapsLocalPizza")
   @js.native
-  class MapsLocalPizza ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalPizza ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

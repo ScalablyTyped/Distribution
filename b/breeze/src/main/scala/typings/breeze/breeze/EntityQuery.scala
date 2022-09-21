@@ -19,13 +19,21 @@ trait EntityQuery extends StObject {
   def expand(propertyPaths: String): EntityQuery = js.native
   def expand(propertyPaths: js.Array[String]): EntityQuery = js.native
   
+  var expandClause: ExpandClause = js.native
+  
   def from(resourceName: String): EntityQuery = js.native
+  
+  var fromEntityType: EntityType = js.native
   
   def inlineCount(): EntityQuery = js.native
   def inlineCount(enabled: Boolean): EntityQuery = js.native
   
+  var inlineCountEnabled: Boolean = js.native
+  
   def noTracking(): EntityQuery = js.native
   def noTracking(enabled: Boolean): EntityQuery = js.native
+  
+  var noTrackingEnabled: Boolean = js.native
   
   def orderBy(propertyPaths: String): EntityQuery = js.native
   def orderBy(propertyPaths: String, isDescending: Boolean): EntityQuery = js.native
@@ -47,6 +55,8 @@ trait EntityQuery extends StObject {
   
   def select(propertyPaths: String): EntityQuery = js.native
   def select(propertyPaths: js.Array[String]): EntityQuery = js.native
+  
+  var selectClause: SelectClause = js.native
   
   def skip(count: Double): EntityQuery = js.native
   
@@ -75,16 +85,16 @@ trait EntityQuery extends StObject {
   def where(predicate: FilterQueryOpSymbol): EntityQuery = js.native
   def where(predicate: Predicate): EntityQuery = js.native
   // for any/all clauses
-  def where(property: String, filterop: String, property2: String, filterop2: String, value: js.Any): EntityQuery = js.native
+  def where(property: String, filterop: String, property2: String, filterop2: String, value: Any): EntityQuery = js.native
   def where(
     property: String,
     filterop: FilterQueryOpSymbol,
     property2: String,
     filterop2: FilterQueryOpSymbol,
-    value: js.Any
+    value: Any
   ): EntityQuery = js.native
-  def where(property: String, operator: String, value: js.Any): EntityQuery = js.native
-  def where(property: String, operator: FilterQueryOpSymbol, value: js.Any): EntityQuery = js.native
+  def where(property: String, operator: String, value: Any): EntityQuery = js.native
+  def where(property: String, operator: FilterQueryOpSymbol, value: Any): EntityQuery = js.native
   
   var wherePredicate: Predicate = js.native
   

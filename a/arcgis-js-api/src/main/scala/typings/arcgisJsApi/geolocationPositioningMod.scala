@@ -19,20 +19,24 @@ object geolocationPositioningMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/support/GeolocationPositioning", JSImport.Namespace)
   @js.native
-  class Class ()
+  open class Class ()
     extends StObject
        with GeolocationPositioning {
     
     /**
       * The HTML5 Geolocation Position options for locating.
       *
+      * @default { maximumAge: 0, timeout: 15000, enableHighAccuracy: true }
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#geolocationOptions)
       */
     /* CompleteClass */
-    var geolocationOptions: js.Any = js.native
+    var geolocationOptions: Any = js.native
     
     /**
       * Indicates whether to navigate the view to the position and scale of the geolocated result.
+      *
+      * @default true
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#goToLocationEnabled)
       */
@@ -49,6 +53,8 @@ object geolocationPositioningMod extends Shortcut {
     
     /**
       * The scale to set on the view when navigating to the position of the geolocated result.
+      *
+      * @default null
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#scale)
       */

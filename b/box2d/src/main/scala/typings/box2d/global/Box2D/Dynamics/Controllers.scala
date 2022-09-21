@@ -10,7 +10,7 @@ object Controllers {
   
   @JSGlobal("Box2D.Dynamics.Controllers.b2BuoyancyController")
   @js.native
-  class b2BuoyancyController ()
+  open class b2BuoyancyController ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Controllers.b2BuoyancyController {
     
@@ -67,7 +67,7 @@ object Controllers {
       * @param step b2TimeStep -> Private internal class.  Not sure why this is exposed.
       **/
     /* CompleteClass */
-    override def Step(step: js.Any): Unit = js.native
+    override def Step(step: Any): Unit = js.native
     
     /**
       * Linear drag co-efficient.
@@ -145,7 +145,7 @@ object Controllers {
   
   @JSGlobal("Box2D.Dynamics.Controllers.b2ConstantAccelController")
   @js.native
-  class b2ConstantAccelController ()
+  open class b2ConstantAccelController ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Controllers.b2ConstantAccelController {
     
@@ -208,7 +208,7 @@ object Controllers {
       * @param step b2TimeStep -> Private internal class.  Not sure why this is exposed.
       **/
     /* CompleteClass */
-    override def Step(step: js.Any): Unit = js.native
+    override def Step(step: Any): Unit = js.native
     
     /**
       * Body count.
@@ -225,7 +225,7 @@ object Controllers {
   
   @JSGlobal("Box2D.Dynamics.Controllers.b2ConstantForceController")
   @js.native
-  class b2ConstantForceController ()
+  open class b2ConstantForceController ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Controllers.b2ConstantForceController {
     
@@ -288,7 +288,7 @@ object Controllers {
       * @param step b2TimeStep -> Private internal class.  Not sure why this is exposed.
       **/
     /* CompleteClass */
-    override def Step(step: js.Any): Unit = js.native
+    override def Step(step: Any): Unit = js.native
     
     /**
       * Body count.
@@ -305,7 +305,7 @@ object Controllers {
   
   @JSGlobal("Box2D.Dynamics.Controllers.b2Controller")
   @js.native
-  class b2Controller ()
+  open class b2Controller ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Controllers.b2Controller {
     
@@ -362,7 +362,7 @@ object Controllers {
       * @param step b2TimeStep -> Private internal class.  Not sure why this is exposed.
       **/
     /* CompleteClass */
-    override def Step(step: js.Any): Unit = js.native
+    override def Step(step: Any): Unit = js.native
     
     /**
       * Body count.
@@ -379,7 +379,7 @@ object Controllers {
   
   @JSGlobal("Box2D.Dynamics.Controllers.b2ControllerEdge")
   @js.native
-  class b2ControllerEdge ()
+  open class b2ControllerEdge ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Controllers.b2ControllerEdge {
     
@@ -422,7 +422,7 @@ object Controllers {
   
   @JSGlobal("Box2D.Dynamics.Controllers.b2GravityController")
   @js.native
-  class b2GravityController ()
+  open class b2GravityController ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Controllers.b2GravityController {
     
@@ -486,7 +486,7 @@ object Controllers {
       * @param step b2TimeStep -> Private internal class.  Not sure why this is exposed.
       **/
     /* CompleteClass */
-    override def Step(step: js.Any): Unit = js.native
+    override def Step(step: Any): Unit = js.native
     
     /**
       * If true, gravity is proportional to r^-2, otherwise r^-1.
@@ -509,7 +509,7 @@ object Controllers {
   
   @JSGlobal("Box2D.Dynamics.Controllers.b2TensorDampingController")
   @js.native
-  class b2TensorDampingController ()
+  open class b2TensorDampingController ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Controllers.b2TensorDampingController {
     
@@ -574,7 +574,7 @@ object Controllers {
       * @param step b2TimeStep -> Private internal class.  Not sure why this is exposed.
       **/
     /* CompleteClass */
-    override def Step(step: js.Any): Unit = js.native
+    override def Step(step: Any): Unit = js.native
     
     /**
       * Tensor to use in damping model.

@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "KeyofType")
 @js.native
-class KeyofType[D /* <: StringDictionary[js.Any] */] protected ()
-  extends Type_[/* keyof D */ String, /* keyof D */ String, js.Any] {
+open class KeyofType[D /* <: StringDictionary[Any] */] protected () extends Type_[/* keyof D */ String, /* keyof D */ String, Any] {
   def this(
     name: String,
     is: Is[/* keyof D */ String],
-    validate: Validate[js.Any, /* keyof D */ String],
+    validate: Validate[Any, /* keyof D */ String],
     encode: Encode[/* keyof D */ String, /* keyof D */ String],
     keys: D
   ) = this()

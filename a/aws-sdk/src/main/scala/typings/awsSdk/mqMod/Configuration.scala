@@ -9,47 +9,47 @@ trait Configuration extends StObject {
   /**
     * Required. The ARN of the configuration.
     */
-  var Arn: js.UndefOr[string] = js.undefined
+  var Arn: string
   
   /**
-    * The authentication strategy associated with the configuration.
+    * Optional. The authentication strategy associated with the configuration. The default is SIMPLE.
     */
-  var AuthenticationStrategy: js.UndefOr[typings.awsSdk.mqMod.AuthenticationStrategy] = js.undefined
+  var AuthenticationStrategy: typings.awsSdk.mqMod.AuthenticationStrategy
   
   /**
     * Required. The date and time of the configuration revision.
     */
-  var Created: js.UndefOr[timestampIso8601] = js.undefined
+  var Created: js.Date
   
   /**
     * Required. The description of the configuration.
     */
-  var Description: js.UndefOr[string] = js.undefined
+  var Description: string
   
   /**
-    * Required. The type of broker engine. Note: Currently, Amazon MQ supports ACTIVEMQ and RABBITMQ.
+    * Required. The type of broker engine. Currently, Amazon MQ supports ACTIVEMQ and RABBITMQ.
     */
-  var EngineType: js.UndefOr[typings.awsSdk.mqMod.EngineType] = js.undefined
+  var EngineType: typings.awsSdk.mqMod.EngineType
   
   /**
-    * Required. The version of the broker engine. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
+    * Required. The broker engine's version. For a list of supported engine versions, see, Supported engines.
     */
-  var EngineVersion: js.UndefOr[string] = js.undefined
+  var EngineVersion: string
   
   /**
     * Required. The unique ID that Amazon MQ generates for the configuration.
     */
-  var Id: js.UndefOr[string] = js.undefined
+  var Id: string
   
   /**
     * Required. The latest revision of the configuration.
     */
-  var LatestRevision: js.UndefOr[ConfigurationRevision] = js.undefined
+  var LatestRevision: ConfigurationRevision
   
   /**
     * Required. The name of the configuration. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 1-150 characters long.
     */
-  var Name: js.UndefOr[string] = js.undefined
+  var Name: string
   
   /**
     * The list of all tags associated with this configuration.
@@ -58,8 +58,18 @@ trait Configuration extends StObject {
 }
 object Configuration {
   
-  inline def apply(): Configuration = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    Arn: string,
+    AuthenticationStrategy: AuthenticationStrategy,
+    Created: js.Date,
+    Description: string,
+    EngineType: EngineType,
+    EngineVersion: string,
+    Id: string,
+    LatestRevision: ConfigurationRevision,
+    Name: string
+  ): Configuration = {
+    val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], AuthenticationStrategy = AuthenticationStrategy.asInstanceOf[js.Any], Created = Created.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], EngineType = EngineType.asInstanceOf[js.Any], EngineVersion = EngineVersion.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], LatestRevision = LatestRevision.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
   
@@ -67,39 +77,21 @@ object Configuration {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
-    
     inline def setAuthenticationStrategy(value: AuthenticationStrategy): Self = StObject.set(x, "AuthenticationStrategy", value.asInstanceOf[js.Any])
     
-    inline def setAuthenticationStrategyUndefined: Self = StObject.set(x, "AuthenticationStrategy", js.undefined)
-    
-    inline def setCreated(value: timestampIso8601): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
-    
-    inline def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
-    
     inline def setEngineType(value: EngineType): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
-    
-    inline def setEngineTypeUndefined: Self = StObject.set(x, "EngineType", js.undefined)
     
     inline def setEngineVersion(value: string): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
-    inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
-    
     inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
-    
-    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     inline def setLatestRevision(value: ConfigurationRevision): Self = StObject.set(x, "LatestRevision", value.asInstanceOf[js.Any])
     
-    inline def setLatestRevisionUndefined: Self = StObject.set(x, "LatestRevision", js.undefined)
-    
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     inline def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

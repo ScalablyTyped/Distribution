@@ -16,7 +16,7 @@ object wrappedLabelMod {
     * @param {string} [displayText=""] The text of the Label.
     * @param {number} [angle=0] The angle of the Label in degrees (-90/0/90). 0 is horizontal.
     */
-  class WrappedLabel () extends Label {
+  open class WrappedLabel () extends Label {
     def this(displayText: String) = this()
     def this(displayText: String, angle: Double) = this()
     def this(displayText: Unit, angle: Double) = this()

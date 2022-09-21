@@ -38,7 +38,7 @@ trait Frameset extends StObject {
   
   var HeightType: WdFramesetSizeType
   
-  val Parent: js.Any
+  val Parent: Any
   
   val ParentFrameset: Frameset
   
@@ -70,7 +70,7 @@ object Frameset {
     FramesetBorderWidth: Double,
     Height: Double,
     HeightType: WdFramesetSizeType,
-    Parent: js.Any,
+    Parent: Any,
     ParentFrameset: Frameset,
     Type: WdFramesetType,
     Width: Double,
@@ -116,7 +116,7 @@ object Frameset {
     
     inline def setHeightType(value: WdFramesetSizeType): Self = StObject.set(x, "HeightType", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setParentFrameset(value: Frameset): Self = StObject.set(x, "ParentFrameset", value.asInstanceOf[js.Any])
     

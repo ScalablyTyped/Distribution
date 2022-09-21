@@ -67,7 +67,7 @@ object iconBaseMod {
       
       inline def setChild(value: js.Array[IconTree]): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
-      inline def setChildVarargs(value: IconTree*): Self = StObject.set(x, "child", js.Array(value :_*))
+      inline def setChildVarargs(value: IconTree*): Self = StObject.set(x, "child", js.Array(value*))
       
       inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }

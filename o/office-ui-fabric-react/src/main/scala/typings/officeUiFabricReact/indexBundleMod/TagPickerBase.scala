@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "TagPickerBase")
 @js.native
-class TagPickerBase protected ()
+open class TagPickerBase protected ()
   extends typings.officeUiFabricReact.mod.TagPickerBase {
   def this(props: ITagPickerProps) = this()
 }

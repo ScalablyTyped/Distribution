@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Query.ConditionExpression")
 @js.native
-class ConditionExpression protected () extends StObject {
+open class ConditionExpression protected () extends StObject {
   /**
     * Contains a condition expression used to filter the results of the query.
     * @param name entityName The logical name of the entity in the condition expression.

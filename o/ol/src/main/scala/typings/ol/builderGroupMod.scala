@@ -3,7 +3,6 @@ package typings.ol
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.ol.builderTypeMod.BuilderType
-import typings.ol.canvasMod.DeclutterGroups
 import typings.ol.extentMod.Extent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,18 +12,16 @@ object builderGroupMod {
   
   @JSImport("ol/render/canvas/BuilderGroup", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with BuilderGroup {
-    def this(tolerance: Double, maxExtent: Extent, resolution: Double, pixelRatio: Double, declutter: Boolean) = this()
+    def this(tolerance: Double, maxExtent: Extent, resolution: Double, pixelRatio: Double) = this()
   }
   
   @js.native
   trait BuilderGroup extends StObject {
     
-    def addDeclutter(group: Boolean): DeclutterGroups = js.native
-    
-    def finish(): StringDictionary[typings.ol.olStrings.BuilderGroup & TopLevel[js.Any]] = js.native
+    def finish(): StringDictionary[typings.ol.olStrings.BuilderGroup & TopLevel[Any]] = js.native
     
     def getBuilder(zIndex: Double, builderType: BuilderType): typings.ol.vectorContextMod.default = js.native
     def getBuilder(zIndex: Unit, builderType: BuilderType): typings.ol.vectorContextMod.default = js.native

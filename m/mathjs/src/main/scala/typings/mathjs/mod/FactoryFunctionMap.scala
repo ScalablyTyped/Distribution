@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // FactoryFunctionMap can be nested; all nested objects will be flattened
 trait FactoryFunctionMap
   extends StObject
-     with /* key */ StringDictionary[FactoryFunction[js.Any] | FactoryFunctionMap]
+     with // eslint-disable-next-line @typescript-eslint/no-explicit-any
+/* key */ StringDictionary[FactoryFunction[Any] | FactoryFunctionMap]
 object FactoryFunctionMap {
   
   inline def apply(): FactoryFunctionMap = {

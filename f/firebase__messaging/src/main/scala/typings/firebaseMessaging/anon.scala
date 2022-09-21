@@ -1,7 +1,5 @@
 package typings.firebaseMessaging
 
-import typings.firebaseMessaging.mod.FirebaseApp
-import typings.firebaseMessagingTypes.mod.FirebaseMessaging
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,15 +54,6 @@ object anon {
     }
   }
   
-  @js.native
-  trait Call extends StObject {
-    
-    def apply(): FirebaseMessaging = js.native
-    def apply(app: FirebaseApp): FirebaseMessaging = js.native
-    
-    def isSupported(): Boolean = js.native
-  }
-  
   trait ErrorInfo extends StObject {
     
     var errorInfo: String
@@ -96,31 +85,6 @@ object anon {
     extension [Self <: Message](x: Self) {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait ServiceWorkerRegistration extends StObject {
-    
-    var serviceWorkerRegistration: js.UndefOr[typings.std.ServiceWorkerRegistration] = js.undefined
-    
-    var vapidKey: js.UndefOr[String] = js.undefined
-  }
-  object ServiceWorkerRegistration {
-    
-    inline def apply(): ServiceWorkerRegistration = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ServiceWorkerRegistration]
-    }
-    
-    extension [Self <: ServiceWorkerRegistration](x: Self) {
-      
-      inline def setServiceWorkerRegistration(value: typings.std.ServiceWorkerRegistration): Self = StObject.set(x, "serviceWorkerRegistration", value.asInstanceOf[js.Any])
-      
-      inline def setServiceWorkerRegistrationUndefined: Self = StObject.set(x, "serviceWorkerRegistration", js.undefined)
-      
-      inline def setVapidKey(value: String): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
-      
-      inline def setVapidKeyUndefined: Self = StObject.set(x, "vapidKey", js.undefined)
     }
   }
   

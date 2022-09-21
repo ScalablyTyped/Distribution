@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.react.mod.ReactNode
+import typings.react.mod.ElementType
 import typings.reactSvgInline.reactSvgInlineStrings.comment
 import typings.reactSvgInline.reactSvgInlineStrings.defs
 import typings.reactSvgInline.reactSvgInlineStrings.desc
@@ -24,10 +24,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-svg-inline", JSImport.Namespace)
   @js.native
-  class ^ protected ()
-    extends Component[SVGInlineProps, ComponentState, js.Any] {
+  open class ^ protected () extends Component[SVGInlineProps, ComponentState, Any] {
     def this(props: SVGInlineProps) = this()
-    def this(props: SVGInlineProps, context: js.Any) = this()
+    def this(props: SVGInlineProps, context: Any) = this()
   }
   @JSImport("react-svg-inline", JSImport.Namespace)
   @js.native
@@ -57,7 +56,7 @@ object mod extends Shortcut {
         ]
       ] = js.undefined
     
-    var component: js.UndefOr[ReactNode] = js.undefined
+    var component: js.UndefOr[ElementType[Any]] = js.undefined
     
     var fill: js.UndefOr[String] = js.undefined
     
@@ -108,15 +107,15 @@ object mod extends Shortcut {
       
       inline def setCleanupExceptionsVarargs(
         value: (title | desc | comment | defs | width | height | fill | sketchMSShapeGroup | sketchMSPage | sketchMSLayerGroup)*
-      ): Self = StObject.set(x, "cleanupExceptions", js.Array(value :_*))
+      ): Self = StObject.set(x, "cleanupExceptions", js.Array(value*))
       
       inline def setCleanupUndefined: Self = StObject.set(x, "cleanup", js.undefined)
       
       inline def setCleanupVarargs(
         value: (title | desc | comment | defs | width | height | fill | sketchMSShapeGroup | sketchMSPage | sketchMSLayerGroup)*
-      ): Self = StObject.set(x, "cleanup", js.Array(value :_*))
+      ): Self = StObject.set(x, "cleanup", js.Array(value*))
       
-      inline def setComponent(value: ReactNode): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       

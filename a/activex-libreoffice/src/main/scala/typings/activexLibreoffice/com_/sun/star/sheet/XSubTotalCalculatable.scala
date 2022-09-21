@@ -39,7 +39,7 @@ object XSubTotalCalculatable {
     acquire: () => Unit,
     applySubTotals: (XSubTotalDescriptor, Boolean) => Unit,
     createSubTotalDescriptor: Boolean => XSubTotalDescriptor,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeSubTotals: () => Unit
   ): XSubTotalCalculatable = {

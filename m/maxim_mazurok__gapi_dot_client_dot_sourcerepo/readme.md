@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_sourcerepo
 
-Typings are for version 1.0.20201024
+Typings are for version 1.0.20220810
 
 ## Library description:
 TypeScript typings for Cloud Source Repositories API v1
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Source Repositories API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.sourcerepo |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 464 |
-| # stars            | 0 |
+| # releases         | 51 |
+| # dependents       | 0.0 |
+| # downloads        | 1002.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

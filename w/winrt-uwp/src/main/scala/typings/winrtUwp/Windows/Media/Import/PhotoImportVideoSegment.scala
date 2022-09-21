@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Import
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PhotoImportVideoSegment extends StObject {
   
   /** Gets the date of the imported video segment. */
-  var date: Date
+  var date: js.Date
   
   /** Gets the name of the imported video segment. */
   var name: String
@@ -27,7 +26,7 @@ trait PhotoImportVideoSegment extends StObject {
 object PhotoImportVideoSegment {
   
   inline def apply(
-    date: Date,
+    date: js.Date,
     name: String,
     sibling: PhotoImportSidecar,
     sidecars: IVectorView[PhotoImportSidecar],
@@ -39,7 +38,7 @@ object PhotoImportVideoSegment {
   
   extension [Self <: PhotoImportVideoSegment](x: Self) {
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

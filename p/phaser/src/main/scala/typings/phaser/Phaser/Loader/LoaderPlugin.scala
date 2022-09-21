@@ -8,6 +8,7 @@ import typings.phaser.Phaser.Scenes.SceneManager
 import typings.phaser.Phaser.Scenes.Systems
 import typings.phaser.Phaser.Structs.Set
 import typings.phaser.Phaser.Textures.TextureManager
+import typings.phaser.Phaser.Types.Loader.FileTypes.AsepriteFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.AtlasJSONFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.AtlasXMLFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.AudioFileConfig
@@ -23,6 +24,7 @@ import typings.phaser.Phaser.Types.Loader.FileTypes.ImageFrameConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.JSONFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.MultiAtlasFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.MultiScriptFileConfig
+import typings.phaser.Phaser.Types.Loader.FileTypes.OBJFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.PackFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.PluginFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.SVGFileConfig
@@ -39,7 +41,6 @@ import typings.phaser.Phaser.Types.Loader.FileTypes.UnityAtlasFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.VideoFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.XMLFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,8 +101,8 @@ trait LoaderPlugin
     * @param pack The Pack File data to be parsed and each entry of it to added to the load queue.
     * @param packKey An optional key to use from the pack file data.
     */
-  def addPack(pack: js.Any): Boolean = js.native
-  def addPack(pack: js.Any, packKey: String): Boolean = js.native
+  def addPack(pack: Any): Boolean = js.native
+  def addPack(pack: Any, packKey: String): Boolean = js.native
   
   /**
     * Adds an Animation JSON Data file, or array of Animation JSON files, to the current load queue.
@@ -217,6 +218,133 @@ trait LoaderPlugin
   def animation(key: JSONFileConfig, url: Unit, dataKey: String): this.type = js.native
   def animation(key: JSONFileConfig, url: Unit, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
   def animation(key: JSONFileConfig, url: Unit, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
+    * Aseprite is a powerful animated sprite editor and pixel art tool.
+    * 
+    * You can find more details at https://www.aseprite.org/
+    * 
+    * Adds a JSON based Aseprite Animation, or array of animations, to the current load queue.
+    * 
+    * You can call this method from within your Scene's `preload`, along with any other files you wish to load:
+    * 
+    * ```javascript
+    * function preload ()
+    * {
+    *     this.load.aseprite('gladiator', 'images/Gladiator.png', 'images/Gladiator.json');
+    * }
+    * ```
+    * 
+    * The file is **not** loaded right away. It is added to a queue ready to be loaded either when the loader starts,
+    * or if it's already running, when the next free load slot becomes available. This happens automatically if you
+    * are calling this from within the Scene's `preload` method, or a related callback. Because the file is queued
+    * it means you cannot use the file immediately after calling this method, but must wait for the file to complete.
+    * The typical flow for a Phaser Scene is that you load assets in the Scene's `preload` method and then when the
+    * Scene's `create` method is called you are guaranteed that all of those assets are ready for use and have been
+    * loaded.
+    * 
+    * If you call this from outside of `preload` then you are responsible for starting the Loader afterwards and monitoring
+    * its events to know when it's safe to use the asset. Please see the Phaser.Loader.LoaderPlugin class for more details.
+    * 
+    * To export a compatible JSON file in Aseprite, please do the following:
+    * 
+    * 1. Go to "File - Export Sprite Sheet"
+    * 
+    * 2. On the **Layout** tab:
+    * 2a. Set the "Sheet type" to "Packed"
+    * 2b. Set the "Constraints" to "None"
+    * 2c. Check the "Merge Duplicates" checkbox
+    * 
+    * 3. On the **Sprite** tab:
+    * 3a. Set "Layers" to "Visible layers"
+    * 3b. Set "Frames" to "All frames", unless you only wish to export a sub-set of tags
+    * 
+    * 4. On the **Borders** tab:
+    * 4a. Check the "Trim Sprite" and "Trim Cells" options
+    * 4b. Ensure "Border Padding", "Spacing" and "Inner Padding" are all > 0 (1 is usually enough)
+    * 
+    * 5. On the **Output** tab:
+    * 5a. Check "Output File", give your image a name and make sure you choose "png files" as the file type
+    * 5b. Check "JSON Data" and give your json file a name
+    * 5c. The JSON Data type can be either a Hash or Array, Phaser doesn't mind.
+    * 5d. Make sure "Tags" is checked in the Meta options
+    * 5e. In the "Item Filename" input box, make sure it says just "{frame}" and nothing more.
+    * 
+    * 6. Click export
+    * 
+    * This was tested with Aseprite 1.2.25.
+    * 
+    * This will export a png and json file which you can load using the Aseprite Loader, i.e.:
+    * 
+    * Phaser can load all common image types: png, jpg, gif and any other format the browser can natively handle.
+    * 
+    * The key must be a unique String. It is used to add the file to the global Texture Manager upon a successful load.
+    * The key should be unique both in terms of files being loaded and files already present in the Texture Manager.
+    * Loading a file using a key that is already taken will result in a warning. If you wish to replace an existing file
+    * then remove it from the Texture Manager first, before loading a new one.
+    * 
+    * Instead of passing arguments you can pass a configuration object, such as:
+    * 
+    * ```javascript
+    * this.load.aseprite({
+    *     key: 'gladiator',
+    *     textureURL: 'images/Gladiator.png',
+    *     atlasURL: 'images/Gladiator.json'
+    * });
+    * ```
+    * 
+    * See the documentation for `Phaser.Types.Loader.FileTypes.AsepriteFileConfig` for more details.
+    * 
+    * Instead of passing a URL for the JSON data you can also pass in a well formed JSON object instead.
+    * 
+    * Once loaded, you can call this method from within a Scene with the 'atlas' key:
+    * 
+    * ```javascript
+    * this.anims.createFromAseprite('paladin');
+    * ```
+    * 
+    * Any animations defined in the JSON will now be available to use in Phaser and you play them
+    * via their Tag name. For example, if you have an animation called 'War Cry' on your Aseprite timeline,
+    * you can play it in Phaser using that Tag name:
+    * 
+    * ```javascript
+    * this.add.sprite(400, 300).play('War Cry');
+    * ```
+    * 
+    * When calling this method you can optionally provide an array of tag names, and only those animations
+    * will be created. For example:
+    * 
+    * ```javascript
+    * this.anims.createFromAseprite('paladin', [ 'step', 'War Cry', 'Magnum Break' ]);
+    * ```
+    * 
+    * This will only create the 3 animations defined. Note that the tag names are case-sensitive.
+    * 
+    * If you have specified a prefix in the loader, via `Loader.setPrefix` then this value will be prepended to this files
+    * key. For example, if the prefix was `MENU.` and the key was `Background` the final key will be `MENU.Background` and
+    * this is what you would use to retrieve the image from the Texture Manager.
+    * 
+    * The URL can be relative or absolute. If the URL is relative the `Loader.baseURL` and `Loader.path` values will be prepended to it.
+    * 
+    * If the URL isn't specified the Loader will take the key and create a filename from that. For example if the key is "alien"
+    * and no URL is given then the Loader will set the URL to be "alien.png". It will always add `.png` as the extension, although
+    * this can be overridden if using an object instead of method arguments. If you do not desire this action then provide a URL.
+    * 
+    * Note: The ability to load this type of file will only be available if the Aseprite File type has been built into Phaser.
+    * It is available in the default build but can be excluded from custom builds.
+    * @param key The key to use for this file, or a file configuration object, or array of them.
+    * @param textureURL The absolute or relative URL to load the texture image file from. If undefined or `null` it will be set to `<key>.png`, i.e. if `key` was "alien" then the URL will be "alien.png".
+    * @param atlasURL The absolute or relative URL to load the texture atlas json data file from. If undefined or `null` it will be set to `<key>.json`, i.e. if `key` was "alien" then the URL will be "alien.json". Or, a well formed JSON object.
+    * @param textureXhrSettings An XHR Settings configuration object for the atlas image file. Used in replacement of the Loaders default XHR Settings.
+    * @param atlasXhrSettings An XHR Settings configuration object for the atlas json file. Used in replacement of the Loaders default XHR Settings.
+    */
+  def aseprite(
+    key: String | AsepriteFileConfig | js.Array[AsepriteFileConfig],
+    textureURL: js.UndefOr[String | js.Array[String]],
+    atlasURL: js.UndefOr[js.Object | String],
+    textureXhrSettings: js.UndefOr[XHRSettingsObject],
+    atlasXhrSettings: js.UndefOr[XHRSettingsObject]
+  ): this.type = js.native
   
   /**
     * Adds a JSON based Texture Atlas, or array of atlases, to the current load queue.
@@ -479,27 +607,27 @@ trait LoaderPlugin
     */
   def audio(key: String): this.type = js.native
   def audio(key: String, urls: String): this.type = js.native
-  def audio(key: String, urls: String, config: js.Any): this.type = js.native
-  def audio(key: String, urls: String, config: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: String, urls: String, config: Any): this.type = js.native
+  def audio(key: String, urls: String, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
   def audio(key: String, urls: String, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
   def audio(key: String, urls: js.Array[String]): this.type = js.native
-  def audio(key: String, urls: js.Array[String], config: js.Any): this.type = js.native
-  def audio(key: String, urls: js.Array[String], config: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: String, urls: js.Array[String], config: Any): this.type = js.native
+  def audio(key: String, urls: js.Array[String], config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
   def audio(key: String, urls: js.Array[String], config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: String, urls: Unit, config: js.Any): this.type = js.native
-  def audio(key: String, urls: Unit, config: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: String, urls: Unit, config: Any): this.type = js.native
+  def audio(key: String, urls: Unit, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
   def audio(key: String, urls: Unit, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
   def audio(key: js.Array[AudioFileConfig]): this.type = js.native
   def audio(key: js.Array[AudioFileConfig], urls: String): this.type = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: String, config: js.Any): this.type = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: String, config: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: js.Array[AudioFileConfig], urls: String, config: Any): this.type = js.native
+  def audio(key: js.Array[AudioFileConfig], urls: String, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
   def audio(key: js.Array[AudioFileConfig], urls: String, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
   def audio(key: js.Array[AudioFileConfig], urls: js.Array[String]): this.type = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: js.Array[String], config: js.Any): this.type = js.native
+  def audio(key: js.Array[AudioFileConfig], urls: js.Array[String], config: Any): this.type = js.native
   def audio(
     key: js.Array[AudioFileConfig],
     urls: js.Array[String],
-    config: js.Any,
+    config: Any,
     xhrSettings: XHRSettingsObject
   ): this.type = js.native
   def audio(
@@ -508,20 +636,20 @@ trait LoaderPlugin
     config: Unit,
     xhrSettings: XHRSettingsObject
   ): this.type = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: Unit, config: js.Any): this.type = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: Unit, config: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: js.Array[AudioFileConfig], urls: Unit, config: Any): this.type = js.native
+  def audio(key: js.Array[AudioFileConfig], urls: Unit, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
   def audio(key: js.Array[AudioFileConfig], urls: Unit, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
   def audio(key: AudioFileConfig): this.type = js.native
   def audio(key: AudioFileConfig, urls: String): this.type = js.native
-  def audio(key: AudioFileConfig, urls: String, config: js.Any): this.type = js.native
-  def audio(key: AudioFileConfig, urls: String, config: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: AudioFileConfig, urls: String, config: Any): this.type = js.native
+  def audio(key: AudioFileConfig, urls: String, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
   def audio(key: AudioFileConfig, urls: String, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
   def audio(key: AudioFileConfig, urls: js.Array[String]): this.type = js.native
-  def audio(key: AudioFileConfig, urls: js.Array[String], config: js.Any): this.type = js.native
-  def audio(key: AudioFileConfig, urls: js.Array[String], config: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: AudioFileConfig, urls: js.Array[String], config: Any): this.type = js.native
+  def audio(key: AudioFileConfig, urls: js.Array[String], config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
   def audio(key: AudioFileConfig, urls: js.Array[String], config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: AudioFileConfig, urls: Unit, config: js.Any): this.type = js.native
-  def audio(key: AudioFileConfig, urls: Unit, config: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: AudioFileConfig, urls: Unit, config: Any): this.type = js.native
+  def audio(key: AudioFileConfig, urls: Unit, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
   def audio(key: AudioFileConfig, urls: Unit, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
   
   /**
@@ -621,7 +749,7 @@ trait LoaderPlugin
     key: String | AudioSpriteFileConfig | js.Array[AudioSpriteFileConfig],
     jsonURL: String,
     audioURL: js.UndefOr[String | js.Array[String]],
-    audioConfig: js.UndefOr[js.Any],
+    audioConfig: js.UndefOr[Any],
     audioXhrSettings: js.UndefOr[XHRSettingsObject],
     jsonXhrSettings: js.UndefOr[XHRSettingsObject]
   ): this.type = js.native
@@ -699,27 +827,27 @@ trait LoaderPlugin
     */
   def binary(key: String): this.type = js.native
   def binary(key: String, url: String): this.type = js.native
-  def binary(key: String, url: String, dataType: js.Any): this.type = js.native
-  def binary(key: String, url: String, dataType: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: String, url: String, dataType: Any): this.type = js.native
+  def binary(key: String, url: String, dataType: Any, xhrSettings: XHRSettingsObject): this.type = js.native
   def binary(key: String, url: String, dataType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def binary(key: String, url: Unit, dataType: js.Any): this.type = js.native
-  def binary(key: String, url: Unit, dataType: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: String, url: Unit, dataType: Any): this.type = js.native
+  def binary(key: String, url: Unit, dataType: Any, xhrSettings: XHRSettingsObject): this.type = js.native
   def binary(key: String, url: Unit, dataType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
   def binary(key: js.Array[BinaryFileConfig]): this.type = js.native
   def binary(key: js.Array[BinaryFileConfig], url: String): this.type = js.native
-  def binary(key: js.Array[BinaryFileConfig], url: String, dataType: js.Any): this.type = js.native
-  def binary(key: js.Array[BinaryFileConfig], url: String, dataType: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: js.Array[BinaryFileConfig], url: String, dataType: Any): this.type = js.native
+  def binary(key: js.Array[BinaryFileConfig], url: String, dataType: Any, xhrSettings: XHRSettingsObject): this.type = js.native
   def binary(key: js.Array[BinaryFileConfig], url: String, dataType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def binary(key: js.Array[BinaryFileConfig], url: Unit, dataType: js.Any): this.type = js.native
-  def binary(key: js.Array[BinaryFileConfig], url: Unit, dataType: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: js.Array[BinaryFileConfig], url: Unit, dataType: Any): this.type = js.native
+  def binary(key: js.Array[BinaryFileConfig], url: Unit, dataType: Any, xhrSettings: XHRSettingsObject): this.type = js.native
   def binary(key: js.Array[BinaryFileConfig], url: Unit, dataType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
   def binary(key: BinaryFileConfig): this.type = js.native
   def binary(key: BinaryFileConfig, url: String): this.type = js.native
-  def binary(key: BinaryFileConfig, url: String, dataType: js.Any): this.type = js.native
-  def binary(key: BinaryFileConfig, url: String, dataType: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: BinaryFileConfig, url: String, dataType: Any): this.type = js.native
+  def binary(key: BinaryFileConfig, url: String, dataType: Any, xhrSettings: XHRSettingsObject): this.type = js.native
   def binary(key: BinaryFileConfig, url: String, dataType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def binary(key: BinaryFileConfig, url: Unit, dataType: js.Any): this.type = js.native
-  def binary(key: BinaryFileConfig, url: Unit, dataType: js.Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: BinaryFileConfig, url: Unit, dataType: Any): this.type = js.native
+  def binary(key: BinaryFileConfig, url: Unit, dataType: Any, xhrSettings: XHRSettingsObject): this.type = js.native
   def binary(key: BinaryFileConfig, url: Unit, dataType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
   
   /**
@@ -1147,22 +1275,46 @@ trait LoaderPlugin
     */
   def htmlTexture(key: String): this.type = js.native
   def htmlTexture(key: String, url: String): this.type = js.native
+  def htmlTexture(key: String, url: String, width: Double): this.type = js.native
+  def htmlTexture(key: String, url: String, width: Double, height: Double): this.type = js.native
+  def htmlTexture(key: String, url: String, width: Double, height: Double, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: String, url: String, width: Double, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: String, url: String, width: Unit, height: Double): this.type = js.native
+  def htmlTexture(key: String, url: String, width: Unit, height: Double, xhrSettings: XHRSettingsObject): this.type = js.native
   def htmlTexture(key: String, url: String, width: Unit, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def htmlTexture(key: String, url: String, width: Unit, height: integer): this.type = js.native
-  def htmlTexture(key: String, url: String, width: Unit, height: integer, xhrSettings: XHRSettingsObject): this.type = js.native
-  def htmlTexture(key: String, url: String, width: integer): this.type = js.native
-  def htmlTexture(key: String, url: String, width: integer, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def htmlTexture(key: String, url: String, width: integer, height: integer): this.type = js.native
-  def htmlTexture(key: String, url: String, width: integer, height: integer, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: String, url: Unit, width: Double): this.type = js.native
+  def htmlTexture(key: String, url: Unit, width: Double, height: Double): this.type = js.native
+  def htmlTexture(key: String, url: Unit, width: Double, height: Double, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: String, url: Unit, width: Double, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: String, url: Unit, width: Unit, height: Double): this.type = js.native
+  def htmlTexture(key: String, url: Unit, width: Unit, height: Double, xhrSettings: XHRSettingsObject): this.type = js.native
   def htmlTexture(key: String, url: Unit, width: Unit, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def htmlTexture(key: String, url: Unit, width: Unit, height: integer): this.type = js.native
-  def htmlTexture(key: String, url: Unit, width: Unit, height: integer, xhrSettings: XHRSettingsObject): this.type = js.native
-  def htmlTexture(key: String, url: Unit, width: integer): this.type = js.native
-  def htmlTexture(key: String, url: Unit, width: integer, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def htmlTexture(key: String, url: Unit, width: integer, height: integer): this.type = js.native
-  def htmlTexture(key: String, url: Unit, width: integer, height: integer, xhrSettings: XHRSettingsObject): this.type = js.native
   def htmlTexture(key: js.Array[HTMLTextureFileConfig]): this.type = js.native
   def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: String): this.type = js.native
+  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: String, width: Double): this.type = js.native
+  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: String, width: Double, height: Double): this.type = js.native
+  def htmlTexture(
+    key: js.Array[HTMLTextureFileConfig],
+    url: String,
+    width: Double,
+    height: Double,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def htmlTexture(
+    key: js.Array[HTMLTextureFileConfig],
+    url: String,
+    width: Double,
+    height: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: String, width: Unit, height: Double): this.type = js.native
+  def htmlTexture(
+    key: js.Array[HTMLTextureFileConfig],
+    url: String,
+    width: Unit,
+    height: Double,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
   def htmlTexture(
     key: js.Array[HTMLTextureFileConfig],
     url: String,
@@ -1170,113 +1322,77 @@ trait LoaderPlugin
     height: Unit,
     xhrSettings: XHRSettingsObject
   ): this.type = js.native
-  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: String, width: Unit, height: integer): this.type = js.native
+  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: Unit, width: Double): this.type = js.native
+  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: Unit, width: Double, height: Double): this.type = js.native
   def htmlTexture(
     key: js.Array[HTMLTextureFileConfig],
-    url: String,
-    width: Unit,
-    height: integer,
+    url: Unit,
+    width: Double,
+    height: Double,
     xhrSettings: XHRSettingsObject
   ): this.type = js.native
-  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: String, width: integer): this.type = js.native
   def htmlTexture(
     key: js.Array[HTMLTextureFileConfig],
-    url: String,
-    width: integer,
+    url: Unit,
+    width: Double,
     height: Unit,
     xhrSettings: XHRSettingsObject
   ): this.type = js.native
-  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: String, width: integer, height: integer): this.type = js.native
-  def htmlTexture(
-    key: js.Array[HTMLTextureFileConfig],
-    url: String,
-    width: integer,
-    height: integer,
-    xhrSettings: XHRSettingsObject
-  ): this.type = js.native
+  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: Unit, width: Unit, height: Double): this.type = js.native
   def htmlTexture(
     key: js.Array[HTMLTextureFileConfig],
     url: Unit,
     width: Unit,
-    height: Unit,
+    height: Double,
     xhrSettings: XHRSettingsObject
   ): this.type = js.native
-  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: Unit, width: Unit, height: integer): this.type = js.native
   def htmlTexture(
     key: js.Array[HTMLTextureFileConfig],
     url: Unit,
     width: Unit,
-    height: integer,
-    xhrSettings: XHRSettingsObject
-  ): this.type = js.native
-  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: Unit, width: integer): this.type = js.native
-  def htmlTexture(
-    key: js.Array[HTMLTextureFileConfig],
-    url: Unit,
-    width: integer,
     height: Unit,
-    xhrSettings: XHRSettingsObject
-  ): this.type = js.native
-  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: Unit, width: integer, height: integer): this.type = js.native
-  def htmlTexture(
-    key: js.Array[HTMLTextureFileConfig],
-    url: Unit,
-    width: integer,
-    height: integer,
     xhrSettings: XHRSettingsObject
   ): this.type = js.native
   def htmlTexture(key: HTMLTextureFileConfig): this.type = js.native
   def htmlTexture(key: HTMLTextureFileConfig, url: String): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: String, width: Double): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: String, width: Double, height: Double): this.type = js.native
+  def htmlTexture(
+    key: HTMLTextureFileConfig,
+    url: String,
+    width: Double,
+    height: Double,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def htmlTexture(
+    key: HTMLTextureFileConfig,
+    url: String,
+    width: Double,
+    height: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: String, width: Unit, height: Double): this.type = js.native
+  def htmlTexture(
+    key: HTMLTextureFileConfig,
+    url: String,
+    width: Unit,
+    height: Double,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
   def htmlTexture(key: HTMLTextureFileConfig, url: String, width: Unit, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def htmlTexture(key: HTMLTextureFileConfig, url: String, width: Unit, height: integer): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: Unit, width: Double): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: Unit, width: Double, height: Double): this.type = js.native
   def htmlTexture(
     key: HTMLTextureFileConfig,
-    url: String,
-    width: Unit,
-    height: integer,
+    url: Unit,
+    width: Double,
+    height: Double,
     xhrSettings: XHRSettingsObject
   ): this.type = js.native
-  def htmlTexture(key: HTMLTextureFileConfig, url: String, width: integer): this.type = js.native
-  def htmlTexture(
-    key: HTMLTextureFileConfig,
-    url: String,
-    width: integer,
-    height: Unit,
-    xhrSettings: XHRSettingsObject
-  ): this.type = js.native
-  def htmlTexture(key: HTMLTextureFileConfig, url: String, width: integer, height: integer): this.type = js.native
-  def htmlTexture(
-    key: HTMLTextureFileConfig,
-    url: String,
-    width: integer,
-    height: integer,
-    xhrSettings: XHRSettingsObject
-  ): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: Unit, width: Double, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: Unit, width: Unit, height: Double): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: Unit, width: Unit, height: Double, xhrSettings: XHRSettingsObject): this.type = js.native
   def htmlTexture(key: HTMLTextureFileConfig, url: Unit, width: Unit, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def htmlTexture(key: HTMLTextureFileConfig, url: Unit, width: Unit, height: integer): this.type = js.native
-  def htmlTexture(
-    key: HTMLTextureFileConfig,
-    url: Unit,
-    width: Unit,
-    height: integer,
-    xhrSettings: XHRSettingsObject
-  ): this.type = js.native
-  def htmlTexture(key: HTMLTextureFileConfig, url: Unit, width: integer): this.type = js.native
-  def htmlTexture(
-    key: HTMLTextureFileConfig,
-    url: Unit,
-    width: integer,
-    height: Unit,
-    xhrSettings: XHRSettingsObject
-  ): this.type = js.native
-  def htmlTexture(key: HTMLTextureFileConfig, url: Unit, width: integer, height: integer): this.type = js.native
-  def htmlTexture(
-    key: HTMLTextureFileConfig,
-    url: Unit,
-    width: integer,
-    height: integer,
-    xhrSettings: XHRSettingsObject
-  ): this.type = js.native
   
   /**
     * Adds an Image, or array of Images, to the current load queue.
@@ -1548,7 +1664,7 @@ trait LoaderPlugin
     * 
     * The default is 32 but you can change this in your Game Config, or by changing this property before the Loader starts.
     */
-  var maxParallelDownloads: integer = js.native
+  var maxParallelDownloads: Double = js.native
   
   /**
     * Adds a Multi Texture Atlas, or array of multi atlases, to the current load queue.
@@ -1780,6 +1896,186 @@ trait LoaderPlugin
     * @param success `true` if the file loaded successfully, otherwise `false`.
     */
   def nextFile(file: File, success: Boolean): Unit = js.native
+  
+  /**
+    * Adds a Wavefront OBJ file, or array of OBJ files, to the current load queue.
+    * 
+    * Note: You should ensure your 3D package has triangulated the OBJ file prior to export.
+    * 
+    * You can call this method from within your Scene's `preload`, along with any other files you wish to load:
+    * 
+    * ```javascript
+    * function preload ()
+    * {
+    *     this.load.obj('ufo', 'files/spaceship.obj');
+    * }
+    * ```
+    * 
+    * You can optionally also load a Wavefront Material file as well, by providing the 3rd parameter:
+    * 
+    * ```javascript
+    * function preload ()
+    * {
+    *     this.load.obj('ufo', 'files/spaceship.obj', 'files/spaceship.mtl');
+    * }
+    * ```
+    * 
+    * If given, the material will be parsed and stored along with the obj data in the cache.
+    * 
+    * The file is **not** loaded right away. It is added to a queue ready to be loaded either when the loader starts,
+    * or if it's already running, when the next free load slot becomes available. This happens automatically if you
+    * are calling this from within the Scene's `preload` method, or a related callback. Because the file is queued
+    * it means you cannot use the file immediately after calling this method, but must wait for the file to complete.
+    * The typical flow for a Phaser Scene is that you load assets in the Scene's `preload` method and then when the
+    * Scene's `create` method is called you are guaranteed that all of those assets are ready for use and have been
+    * loaded.
+    * 
+    * The key must be a unique String. It is used to add the file to the global OBJ Cache upon a successful load.
+    * The key should be unique both in terms of files being loaded and files already present in the OBJ Cache.
+    * Loading a file using a key that is already taken will result in a warning. If you wish to replace an existing file
+    * then remove it from the OBJ Cache first, before loading a new one.
+    * 
+    * Instead of passing arguments you can pass a configuration object, such as:
+    * 
+    * ```javascript
+    * this.load.obj({
+    *     key: 'ufo',
+    *     url: 'files/spaceship.obj',
+    *     matURL: 'files/spaceship.mtl',
+    *     flipUV: true
+    * });
+    * ```
+    * 
+    * See the documentation for `Phaser.Types.Loader.FileTypes.OBJFileConfig` for more details.
+    * 
+    * Once the file has finished loading you can access it from its Cache using its key:
+    * 
+    * ```javascript
+    * this.load.obj('ufo', 'files/spaceship.obj');
+    * // and later in your game ...
+    * var data = this.cache.obj.get('ufo');
+    * ```
+    * 
+    * If you have specified a prefix in the loader, via `Loader.setPrefix` then this value will be prepended to this files
+    * key. For example, if the prefix was `LEVEL1.` and the key was `Story` the final key will be `LEVEL1.Story` and
+    * this is what you would use to retrieve the obj from the OBJ Cache.
+    * 
+    * The URL can be relative or absolute. If the URL is relative the `Loader.baseURL` and `Loader.path` values will be prepended to it.
+    * 
+    * If the URL isn't specified the Loader will take the key and create a filename from that. For example if the key is "story"
+    * and no URL is given then the Loader will set the URL to be "story.obj". It will always add `.obj` as the extension, although
+    * this can be overridden if using an object instead of method arguments. If you do not desire this action then provide a URL.
+    * 
+    * Note: The ability to load this type of file will only be available if the OBJ File type has been built into Phaser.
+    * It is available in the default build but can be excluded from custom builds.
+    * @param key The key to use for this file, or a file configuration object, or array of them.
+    * @param objURL The absolute or relative URL to load the obj file from. If undefined or `null` it will be set to `<key>.obj`, i.e. if `key` was "alien" then the URL will be "alien.obj".
+    * @param matURL Optional absolute or relative URL to load the obj material file from.
+    * @param flipUV Flip the UV coordinates stored in the model data?
+    * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
+    */
+  def obj(key: String): this.type = js.native
+  def obj(key: String, objURL: String): this.type = js.native
+  def obj(key: String, objURL: String, matURL: String): this.type = js.native
+  def obj(key: String, objURL: String, matURL: String, flipUV: Boolean): this.type = js.native
+  def obj(key: String, objURL: String, matURL: String, flipUV: Boolean, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: String, objURL: String, matURL: String, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: String, objURL: String, matURL: Unit, flipUV: Boolean): this.type = js.native
+  def obj(key: String, objURL: String, matURL: Unit, flipUV: Boolean, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: String, objURL: String, matURL: Unit, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: String, objURL: Unit, matURL: String): this.type = js.native
+  def obj(key: String, objURL: Unit, matURL: String, flipUV: Boolean): this.type = js.native
+  def obj(key: String, objURL: Unit, matURL: String, flipUV: Boolean, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: String, objURL: Unit, matURL: String, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: String, objURL: Unit, matURL: Unit, flipUV: Boolean): this.type = js.native
+  def obj(key: String, objURL: Unit, matURL: Unit, flipUV: Boolean, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: String, objURL: Unit, matURL: Unit, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig]): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig], objURL: String): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig], objURL: String, matURL: String): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig], objURL: String, matURL: String, flipUV: Boolean): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: String,
+    matURL: String,
+    flipUV: Boolean,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: String,
+    matURL: String,
+    flipUV: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig], objURL: String, matURL: Unit, flipUV: Boolean): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: String,
+    matURL: Unit,
+    flipUV: Boolean,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: String,
+    matURL: Unit,
+    flipUV: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig], objURL: Unit, matURL: String): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig], objURL: Unit, matURL: String, flipUV: Boolean): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: Unit,
+    matURL: String,
+    flipUV: Boolean,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: Unit,
+    matURL: String,
+    flipUV: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig], objURL: Unit, matURL: Unit, flipUV: Boolean): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: Unit,
+    matURL: Unit,
+    flipUV: Boolean,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: Unit,
+    matURL: Unit,
+    flipUV: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(key: OBJFileConfig): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: String): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: String, matURL: String): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: String, matURL: String, flipUV: Boolean): this.type = js.native
+  def obj(
+    key: OBJFileConfig,
+    objURL: String,
+    matURL: String,
+    flipUV: Boolean,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: String, matURL: String, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: String, matURL: Unit, flipUV: Boolean): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: String, matURL: Unit, flipUV: Boolean, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: String, matURL: Unit, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: Unit, matURL: String): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: Unit, matURL: String, flipUV: Boolean): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: Unit, matURL: String, flipUV: Boolean, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: Unit, matURL: String, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: Unit, matURL: Unit, flipUV: Boolean): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: Unit, matURL: Unit, flipUV: Boolean, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: Unit, matURL: Unit, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
   
   /**
     * Adds a JSON File Pack, or array of packs, to the current load queue.
@@ -2041,10 +2337,10 @@ trait LoaderPlugin
     * @param filename The filename to save the file as. Default file.json.
     * @param filetype The file type to use when saving the file. Defaults to JSON. Default application/json.
     */
-  def save(data: js.Any): this.type = js.native
-  def save(data: js.Any, filename: String): this.type = js.native
-  def save(data: js.Any, filename: String, filetype: String): this.type = js.native
-  def save(data: js.Any, filename: Unit, filetype: String): this.type = js.native
+  def save(data: Any): this.type = js.native
+  def save(data: Any, filename: String): this.type = js.native
+  def save(data: Any, filename: String, filetype: String): this.type = js.native
+  def save(data: Any, filename: Unit, filetype: String): this.type = js.native
   
   /**
     * Converts the given JSON data into a file that the browser then prompts you to download so you can save it locally.
@@ -2053,8 +2349,8 @@ trait LoaderPlugin
     * @param data The JSON data, ready parsed.
     * @param filename The name to save the JSON file as. Default file.json.
     */
-  def saveJSON(data: js.Any): this.type = js.native
-  def saveJSON(data: js.Any, filename: String): this.type = js.native
+  def saveJSON(data: Any): this.type = js.native
+  def saveJSON(data: Any, filename: String): this.type = js.native
   
   /**
     * The Scene which owns this Loader instance.
@@ -2930,7 +3226,7 @@ trait LoaderPlugin
   /**
     * The current state of the Loader.
     */
-  val state: integer = js.native
+  val state: Double = js.native
   
   /**
     * Adds an SVG File, or array of SVG Files, to the current load queue. When the files are loaded they
@@ -3390,19 +3686,19 @@ trait LoaderPlugin
     * The total number of files that successfully loaded during the most recent load.
     * This value is reset when you call `Loader.start`.
     */
-  var totalComplete: integer = js.native
+  var totalComplete: Double = js.native
   
   /**
     * The total number of files that failed to load during the most recent load.
     * This value is reset when you call `Loader.start`.
     */
-  var totalFailed: integer = js.native
+  var totalFailed: Double = js.native
   
   /**
     * The total number of files to load. It may not always be accurate because you may add to the Loader during the process
     * of loading, especially if you load a Pack File. Therefore this value can change, but in most cases remains static.
     */
-  var totalToLoad: integer = js.native
+  var totalToLoad: Double = js.native
   
   /**
     * Adds a Unity YAML based Texture Atlas, or array of atlases, to the current load queue.

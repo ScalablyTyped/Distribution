@@ -47,14 +47,14 @@ object DataOutput {
     
     inline def setOutputSetRef(value: js.Array[InputSet]): Self = StObject.set(x, "outputSetRef", value.asInstanceOf[js.Any])
     
-    inline def setOutputSetRefVarargs(value: InputSet*): Self = StObject.set(x, "outputSetRef", js.Array(value :_*))
+    inline def setOutputSetRefVarargs(value: InputSet*): Self = StObject.set(x, "outputSetRef", js.Array(value*))
     
     inline def setOutputSetWithOptional(value: js.Array[InputSet]): Self = StObject.set(x, "outputSetWithOptional", value.asInstanceOf[js.Any])
     
-    inline def setOutputSetWithOptionalVarargs(value: InputSet*): Self = StObject.set(x, "outputSetWithOptional", js.Array(value :_*))
+    inline def setOutputSetWithOptionalVarargs(value: InputSet*): Self = StObject.set(x, "outputSetWithOptional", js.Array(value*))
     
     inline def setOutputSetWithWhileExecuting(value: js.Array[InputSet]): Self = StObject.set(x, "outputSetWithWhileExecuting", value.asInstanceOf[js.Any])
     
-    inline def setOutputSetWithWhileExecutingVarargs(value: InputSet*): Self = StObject.set(x, "outputSetWithWhileExecuting", js.Array(value :_*))
+    inline def setOutputSetWithWhileExecutingVarargs(value: InputSet*): Self = StObject.set(x, "outputSetWithWhileExecuting", js.Array(value*))
   }
 }

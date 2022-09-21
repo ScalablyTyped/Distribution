@@ -46,7 +46,7 @@ object AccountStatusProducts {
     
     inline def setItemLevelIssuesUndefined: Self = StObject.set(x, "itemLevelIssues", js.undefined)
     
-    inline def setItemLevelIssuesVarargs(value: AccountStatusItemLevelIssue*): Self = StObject.set(x, "itemLevelIssues", js.Array(value :_*))
+    inline def setItemLevelIssuesVarargs(value: AccountStatusItemLevelIssue*): Self = StObject.set(x, "itemLevelIssues", js.Array(value*))
     
     inline def setStatistics(value: AccountStatusStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     

@@ -29,6 +29,6 @@ object BatchGetDeploymentGroupsInput {
     
     inline def setDeploymentGroupNames(value: DeploymentGroupsList): Self = StObject.set(x, "deploymentGroupNames", value.asInstanceOf[js.Any])
     
-    inline def setDeploymentGroupNamesVarargs(value: DeploymentGroupName*): Self = StObject.set(x, "deploymentGroupNames", js.Array(value :_*))
+    inline def setDeploymentGroupNamesVarargs(value: DeploymentGroupName*): Self = StObject.set(x, "deploymentGroupNames", js.Array(value*))
   }
 }

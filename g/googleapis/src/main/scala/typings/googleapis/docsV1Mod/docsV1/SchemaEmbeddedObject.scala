@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An embedded object in the document.
-  */
 trait SchemaEmbeddedObject extends StObject {
   
   /**
-    * The description of the embedded object. The `title` and `description` are
-    * both combined to display alt text.
+    * The description of the embedded object. The `title` and `description` are both combined to display alt text.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The properties of an embedded drawing.
@@ -31,9 +27,7 @@ trait SchemaEmbeddedObject extends StObject {
   var imageProperties: js.UndefOr[SchemaImageProperties] = js.undefined
   
   /**
-    * A reference to the external linked source content. For example, it
-    * contains a reference to the source Sheets chart when the embedded object
-    * is a linked chart.  If unset, then the embedded object is not linked.
+    * A reference to the external linked source content. For example, it contains a reference to the source Sheets chart when the embedded object is a linked chart. If unset, then the embedded object is not linked.
     */
   var linkedContentReference: js.UndefOr[SchemaLinkedContentReference] = js.undefined
   
@@ -58,15 +52,14 @@ trait SchemaEmbeddedObject extends StObject {
   var marginTop: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
-    * The size of the embedded object.
+    * The visible size of the image after cropping.
     */
   var size: js.UndefOr[SchemaSize] = js.undefined
   
   /**
-    * The title of the embedded object. The `title` and `description` are both
-    * combined to display alt text.
+    * The title of the embedded object. The `title` and `description` are both combined to display alt text.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaEmbeddedObject {
   
@@ -78,6 +71,8 @@ object SchemaEmbeddedObject {
   extension [Self <: SchemaEmbeddedObject](x: Self) {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
@@ -118,6 +113,8 @@ object SchemaEmbeddedObject {
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

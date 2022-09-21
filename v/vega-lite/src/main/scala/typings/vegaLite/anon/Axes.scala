@@ -12,13 +12,13 @@ trait Axes extends StObject {
   
   var encode: js.UndefOr[Update] = js.undefined
   
-  var from: Data
+  var from: js.UndefOr[Data] = js.undefined
   
   var name: String
   
   var role: String
   
-  var sort: VgComparator
+  var sort: js.UndefOr[VgComparator] = js.undefined
   
   var title: js.UndefOr[Dx | Encode | Font | FontStyle] = js.undefined
   
@@ -26,8 +26,8 @@ trait Axes extends StObject {
 }
 object Axes {
   
-  inline def apply(from: Data, name: String, role: String, sort: VgComparator, `type`: String): Axes = {
-    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any])
+  inline def apply(name: String, role: String, `type`: String): Axes = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Axes]
   }
@@ -38,7 +38,7 @@ object Axes {
     
     inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
-    inline def setAxesVarargs(value: Axis*): Self = StObject.set(x, "axes", js.Array(value :_*))
+    inline def setAxesVarargs(value: Axis*): Self = StObject.set(x, "axes", js.Array(value*))
     
     inline def setEncode(value: Update): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
     
@@ -46,11 +46,15 @@ object Axes {
     
     inline def setFrom(value: Data): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setSort(value: VgComparator): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     inline def setTitle(value: Dx | Encode | Font | FontStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

@@ -3,7 +3,7 @@ package typings.blueprintjsCore
 import org.scalablytyped.runtime.Instantiable1
 import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsIcons.iconNameMod.IconName
+import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.Component
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -19,32 +19,32 @@ object treeNodeMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/tree/treeNode", "TreeNode")
   @js.native
-  class TreeNode[T] protected ()
-    extends Component[ITreeNodeProps[T], js.Object, js.Any] {
+  open class TreeNode[T] protected ()
+    extends Component[ITreeNodeProps[T], js.Object, Any] {
     def this(props: ITreeNodeProps[T]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ITreeNodeProps[T], context: js.Any) = this()
+    def this(props: ITreeNodeProps[T], context: Any) = this()
     
-    /* private */ var handleCaretClick: js.Any = js.native
+    /* private */ var handleCaretClick: Any = js.native
     
-    /* private */ var handleClick: js.Any = js.native
+    /* private */ var handleClick: Any = js.native
     
-    /* private */ var handleContentRef: js.Any = js.native
+    /* private */ var handleContentRef: Any = js.native
     
-    /* private */ var handleContextMenu: js.Any = js.native
+    /* private */ var handleContextMenu: Any = js.native
     
-    /* private */ var handleDoubleClick: js.Any = js.native
+    /* private */ var handleDoubleClick: Any = js.native
     
-    /* private */ var handleMouseEnter: js.Any = js.native
+    /* private */ var handleMouseEnter: Any = js.native
     
-    /* private */ var handleMouseLeave: js.Any = js.native
+    /* private */ var handleMouseLeave: Any = js.native
     
-    /* private */ var maybeRenderCaret: js.Any = js.native
+    /* private */ var maybeRenderCaret: Any = js.native
     
-    /* private */ var maybeRenderSecondaryLabel: js.Any = js.native
+    /* private */ var maybeRenderSecondaryLabel: Any = js.native
   }
   /* static members */
   object TreeNode {
@@ -68,7 +68,7 @@ object treeNodeMod {
     /**
       * Child tree nodes of this node.
       */
-    var childNodes: js.UndefOr[js.Array[ITreeNode[T]]] = js.undefined
+    var childNodes: js.UndefOr[js.Array[TreeNodeInfo[T]]] = js.undefined
     
     /**
       * Whether this tree node is non-interactive. Enabling this prop will ignore
@@ -85,7 +85,7 @@ object treeNodeMod {
     /**
       * The name of a Blueprint icon (or an icon element) to render next to the node's label.
       */
-    var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
+    var icon: js.UndefOr[BlueprintIcons16Id | MaybeElement] = js.undefined
     
     /**
       * A unique identifier for the node.
@@ -98,6 +98,7 @@ object treeNodeMod {
     
     /**
       * Whether this node is selected.
+      *
       * @default false
       */
     var isSelected: js.UndefOr[Boolean] = js.undefined
@@ -128,11 +129,11 @@ object treeNodeMod {
     
     extension [Self <: ITreeNode[?], T](x: Self & ITreeNode[T]) {
       
-      inline def setChildNodes(value: js.Array[ITreeNode[T]]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
+      inline def setChildNodes(value: js.Array[TreeNodeInfo[T]]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
       
       inline def setChildNodesUndefined: Self = StObject.set(x, "childNodes", js.undefined)
       
-      inline def setChildNodesVarargs(value: ITreeNode[T]*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
+      inline def setChildNodesVarargs(value: TreeNodeInfo[T]*): Self = StObject.set(x, "childNodes", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,7 @@ object treeNodeMod {
       
       inline def setHasCaretUndefined: Self = StObject.set(x, "hasCaret", js.undefined)
       
-      inline def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: BlueprintIcons16Id | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconNull: Self = StObject.set(x, "icon", null)
       
@@ -267,7 +268,11 @@ object treeNodeMod {
       
       inline def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
+  
+  type TreeNodeInfo[T] = ITreeNode[T]
+  
+  type TreeNodeProps[T] = ITreeNodeProps[T]
 }

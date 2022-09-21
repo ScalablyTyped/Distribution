@@ -8,6 +8,8 @@ trait ProximityOption extends StObject {
   
   var controller: String
   
+  var freq: js.UndefOr[Double] = js.undefined
+  
   var pin: Double | String
 }
 object ProximityOption {
@@ -20,6 +22,10 @@ object ProximityOption {
   extension [Self <: ProximityOption](x: Self) {
     
     inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    
+    inline def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
+    
+    inline def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
     
     inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
   }

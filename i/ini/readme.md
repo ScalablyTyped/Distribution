@@ -11,14 +11,14 @@ An ini encoder/decoder for node
 | Full name          | ini |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 1771 |
-| # downloads        | 682491332 |
-| # stars            | 44 |
+| # dependents       | 0.0 |
+| # downloads        | 1.43517504E8 |
+| # stars            | 667.0 |
 
 ## Links
-- [Homepage](https://github.com/isaacs/ini#readme)
-- [Bugs](https://github.com/isaacs/ini/issues)
-- [Repository](https://github.com/isaacs/ini)
+- [Homepage](https://github.com/npm/ini#readme)
+- [Bugs](https://github.com/npm/ini/issues)
+- [Repository](https://github.com/npm/ini)
 - [Npm](https://www.npmjs.com/package/ini)
     
 

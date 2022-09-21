@@ -16,13 +16,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.cytoscape.cytoscapeStrings.destroy
   - typings.cytoscape.cytoscapeStrings.render
   - typings.cytoscape.cytoscapeStrings.pan
+  - typings.cytoscape.cytoscapeStrings.dragpan
   - typings.cytoscape.cytoscapeStrings.zoom
+  - typings.cytoscape.cytoscapeStrings.pinchzoom
+  - typings.cytoscape.cytoscapeStrings.scrollzoom
+  - typings.cytoscape.cytoscapeStrings.viewport
   - typings.cytoscape.cytoscapeStrings.resize
 */
 trait GraphEventName extends StObject
 object GraphEventName {
   
   inline def destroy: typings.cytoscape.cytoscapeStrings.destroy = "destroy".asInstanceOf[typings.cytoscape.cytoscapeStrings.destroy]
+  
+  inline def dragpan: typings.cytoscape.cytoscapeStrings.dragpan = "dragpan".asInstanceOf[typings.cytoscape.cytoscapeStrings.dragpan]
   
   inline def layoutready: typings.cytoscape.cytoscapeStrings.layoutready = "layoutready".asInstanceOf[typings.cytoscape.cytoscapeStrings.layoutready]
   
@@ -32,11 +38,17 @@ object GraphEventName {
   
   inline def pan: typings.cytoscape.cytoscapeStrings.pan = "pan".asInstanceOf[typings.cytoscape.cytoscapeStrings.pan]
   
+  inline def pinchzoom: typings.cytoscape.cytoscapeStrings.pinchzoom = "pinchzoom".asInstanceOf[typings.cytoscape.cytoscapeStrings.pinchzoom]
+  
   inline def ready: typings.cytoscape.cytoscapeStrings.ready = "ready".asInstanceOf[typings.cytoscape.cytoscapeStrings.ready]
   
   inline def render: typings.cytoscape.cytoscapeStrings.render = "render".asInstanceOf[typings.cytoscape.cytoscapeStrings.render]
   
   inline def resize: typings.cytoscape.cytoscapeStrings.resize = "resize".asInstanceOf[typings.cytoscape.cytoscapeStrings.resize]
+  
+  inline def scrollzoom: typings.cytoscape.cytoscapeStrings.scrollzoom = "scrollzoom".asInstanceOf[typings.cytoscape.cytoscapeStrings.scrollzoom]
+  
+  inline def viewport: typings.cytoscape.cytoscapeStrings.viewport = "viewport".asInstanceOf[typings.cytoscape.cytoscapeStrings.viewport]
   
   inline def zoom: typings.cytoscape.cytoscapeStrings.zoom = "zoom".asInstanceOf[typings.cytoscape.cytoscapeStrings.zoom]
 }

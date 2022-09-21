@@ -1,40 +1,40 @@
 package typings.slateReact
 
-import typings.slateReact.mod.SlateType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slateReactStrings {
-  @js.native
-  sealed trait files extends SlateType
   
   @js.native
-  sealed trait fragment extends SlateType
+  sealed trait action extends StObject
+  inline def action: action = "action".asInstanceOf[action]
   
   @js.native
-  sealed trait html extends SlateType
+  sealed trait backward extends StObject
+  inline def backward: backward = "backward".asInstanceOf[backward]
   
   @js.native
-  sealed trait node extends SlateType
+  sealed trait copy extends StObject
+  inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait rich extends SlateType
+  sealed trait cut extends StObject
+  inline def cut: cut = "cut".asInstanceOf[cut]
   
   @js.native
-  sealed trait text extends SlateType
+  sealed trait drag extends StObject
+  inline def drag: drag = "drag".asInstanceOf[drag]
   
-  @scala.inline
-  def files: files = "files".asInstanceOf[files]
-  @scala.inline
-  def fragment: fragment = "fragment".asInstanceOf[fragment]
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
-  @scala.inline
-  def rich: rich = "rich".asInstanceOf[rich]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  @js.native
+  sealed trait element extends StObject
+  inline def element: element = "element".asInstanceOf[element]
+  
+  @js.native
+  sealed trait forward extends StObject
+  inline def forward: forward = "forward".asInstanceOf[forward]
+  
+  @js.native
+  sealed trait rtl extends StObject
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
 }
-

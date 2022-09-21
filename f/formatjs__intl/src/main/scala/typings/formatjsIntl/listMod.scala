@@ -2,6 +2,7 @@ package typings.formatjsIntl
 
 import typings.formatjsIntl.anon.LocaleOnError
 import typings.formatjsIntl.anon.TypeofIntlListFormat
+import typings.formatjsIntlListformat.mod.Part
 import typings.formatjsIntlListformat.mod.default
 import typings.std.ConstructorParameters
 import org.scalablytyped.runtime.StObject
@@ -14,10 +15,17 @@ object listMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def formatList_1(
-    hasLocaleOnError: LocaleOnError,
+  inline def formatListToParts_1[T](
+    opts: LocaleOnError,
     getListFormat: js.Function1[/* args */ ConstructorParameters[TypeofIntlListFormat], default],
     values: js.Array[String],
     options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<@formatjs/intl.anon.FnCallValuesOpts>[1] */ js.Any
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatList")(hasLocaleOnError.asInstanceOf[js.Any], getListFormat.asInstanceOf[js.Any], values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  ): js.Array[Part[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatListToParts")(opts.asInstanceOf[js.Any], getListFormat.asInstanceOf[js.Any], values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Part[String]]]
+  
+  inline def formatList_1(
+    opts: LocaleOnError,
+    getListFormat: js.Function1[/* args */ ConstructorParameters[TypeofIntlListFormat], default],
+    values: js.Array[String],
+    options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<@formatjs/intl.anon.FnCallValuesOpts>[1] */ js.Any
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatList")(opts.asInstanceOf[js.Any], getListFormat.asInstanceOf[js.Any], values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

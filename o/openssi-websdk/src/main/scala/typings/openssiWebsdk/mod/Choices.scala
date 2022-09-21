@@ -6,29 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Choices extends StObject {
   
-  var attr1: js.Any
+  var attr1: Any
   
-  var attributes: js.Any
+  var attributes: Any
   
-  var pred1: js.Any
+  var pred1: Any
   
-  var predicates: js.Any
+  var predicates: Any
 }
 object Choices {
   
-  inline def apply(attr1: js.Any, attributes: js.Any, pred1: js.Any, predicates: js.Any): Choices = {
+  inline def apply(attr1: Any, attributes: Any, pred1: Any, predicates: Any): Choices = {
     val __obj = js.Dynamic.literal(attr1 = attr1.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], pred1 = pred1.asInstanceOf[js.Any], predicates = predicates.asInstanceOf[js.Any])
     __obj.asInstanceOf[Choices]
   }
   
   extension [Self <: Choices](x: Self) {
     
-    inline def setAttr1(value: js.Any): Self = StObject.set(x, "attr1", value.asInstanceOf[js.Any])
+    inline def setAttr1(value: Any): Self = StObject.set(x, "attr1", value.asInstanceOf[js.Any])
     
-    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    inline def setPred1(value: js.Any): Self = StObject.set(x, "pred1", value.asInstanceOf[js.Any])
+    inline def setPred1(value: Any): Self = StObject.set(x, "pred1", value.asInstanceOf[js.Any])
     
-    inline def setPredicates(value: js.Any): Self = StObject.set(x, "predicates", value.asInstanceOf[js.Any])
+    inline def setPredicates(value: Any): Self = StObject.set(x, "predicates", value.asInstanceOf[js.Any])
   }
 }

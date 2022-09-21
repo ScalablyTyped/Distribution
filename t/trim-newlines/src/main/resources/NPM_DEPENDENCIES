@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "trim-newlines" : "3.0.0"
+      "trim-newlines" : "4.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "trim-newlines" : "3.0.0"
+      "trim-newlines" : "4.0.2"
     }
   ],
   "compile-devDependencies" : [

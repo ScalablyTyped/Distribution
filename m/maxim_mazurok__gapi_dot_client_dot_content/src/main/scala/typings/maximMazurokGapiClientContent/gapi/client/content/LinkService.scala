@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LinkService extends StObject {
   
-  /** Service provided to or by the linked account. Acceptable values are: - "`shoppingActionsOrderManagement`" - "`shoppingActionsProductManagement`" - "`shoppingAdsProductManagement`" */
+  /**
+    * Service provided to or by the linked account. Acceptable values are: - "`shoppingActionsOrderManagement`" - "`shoppingActionsProductManagement`" - "`shoppingAdsProductManagement`" -
+    * "`paymentProcessing`"
+    */
   var service: js.UndefOr[String] = js.undefined
   
   /** Status of the link Acceptable values are: - "`active`" - "`inactive`" - "`pending`" */

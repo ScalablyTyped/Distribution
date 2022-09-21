@@ -70,7 +70,7 @@ object mod {
       * start (after a new pointer becomes active [on mousedown or touchstart]), drag (after an active pointer moves [on mousemove or touchmove], or
       * end (after an active pointer becomes inactive [on mouseup, touchend or touchcancel].)
       */
-    def on(typenames: String): js.UndefOr[js.ThisFunction2[/* this */ GElement, /* event */ js.Any, /* d */ Datum, Unit]] = js.native
+    def on(typenames: String): js.UndefOr[js.ThisFunction2[/* this */ GElement, /* event */ Any, /* d */ Datum, Unit]] = js.native
     /**
       * Set the event listener for the specified typenames and return the drag behavior.
       * If an event listener was already registered for the same type and name,
@@ -91,7 +91,7 @@ object mod {
       */
     def on(
       typenames: String,
-      listener: js.ThisFunction2[/* this */ GElement, /* event */ js.Any, /* d */ Datum, Unit]
+      listener: js.ThisFunction2[/* this */ GElement, /* event */ Any, /* d */ Datum, Unit]
     ): this.type = js.native
     /**
       * Remove the current event listeners for the specified typenames, if any, return the drag behavior.
@@ -112,7 +112,7 @@ object mod {
     /**
       * The underlying input event, such as mousemove or touchmove.
       */
-    var sourceEvent: js.Any = js.native
+    var sourceEvent: Any = js.native
     
     // Leave failsafe string type for cases like 'drag.foo'
     /**
@@ -132,7 +132,7 @@ object mod {
     /**
       * The DragBehavior associated with the event
       */
-    def target(selection: Selection_[GElement, Datum, js.Any, js.Any], args: js.Any*): Unit = js.native
+    def target(selection: Selection_[GElement, Datum, Any, Any], args: Any*): Unit = js.native
     /**
       * The DragBehavior associated with the event
       */
@@ -168,7 +168,7 @@ object mod {
       * @param selection A D3 selection of elements.
       * @param args Optional arguments to be passed in.
       */
-    def apply(selection: Selection_[GElement, Datum, js.Any, js.Any], args: js.Any*): Unit = js.native
+    def apply(selection: Selection_[GElement, Datum, Any, Any], args: Any*): Unit = js.native
     
     /**
       * Return the current click distance threshold, which defaults to zero.
@@ -223,7 +223,7 @@ object mod {
     /**
       * Returns the current filter function.
       */
-    def filter(): js.ThisFunction2[/* this */ GElement, /* event */ js.Any, /* d */ Datum, Boolean] = js.native
+    def filter(): js.ThisFunction2[/* this */ GElement, /* event */ Any, /* d */ Datum, Boolean] = js.native
     /**
       * Sets the event filter to the specified filter function and returns the drag behavior.
       *
@@ -235,7 +235,7 @@ object mod {
       * in order, being passed the current event (event) and datum d, with the this context as the current DOM element.
       * The function returns a boolean value.
       */
-    def filter(filterFn: js.ThisFunction2[/* this */ GElement, /* event */ js.Any, /* d */ Datum, Boolean]): this.type = js.native
+    def filter(filterFn: js.ThisFunction2[/* this */ GElement, /* event */ Any, /* d */ Datum, Boolean]): this.type = js.native
     
     /**
       * Return the first currently-assigned listener matching the specified typenames, if any.
@@ -246,7 +246,7 @@ object mod {
       * start (after a new pointer becomes active [on mousedown or touchstart]), drag (after an active pointer moves [on mousemove or touchmove], or
       * end (after an active pointer becomes inactive [on mouseup, touchend or touchcancel].)
       */
-    def on(typenames: String): js.UndefOr[js.ThisFunction2[/* this */ GElement, /* event */ js.Any, /* d */ Datum, Unit]] = js.native
+    def on(typenames: String): js.UndefOr[js.ThisFunction2[/* this */ GElement, /* event */ Any, /* d */ Datum, Unit]] = js.native
     /**
       * Set the event listener for the specified typenames and return the drag behavior.
       * If an event listener was already registered for the same type and name,
@@ -269,7 +269,7 @@ object mod {
       */
     def on(
       typenames: String,
-      listener: js.ThisFunction2[/* this */ GElement, /* event */ js.Any, /* d */ Datum, Unit]
+      listener: js.ThisFunction2[/* this */ GElement, /* event */ Any, /* d */ Datum, Unit]
     ): this.type = js.native
     /**
       * Remove the current event listeners for the specified typenames, if any, return the drag behavior.
@@ -286,7 +286,7 @@ object mod {
     /**
       *  Returns the current subject accessor functions.
       */
-    def subject(): js.ThisFunction2[/* this */ GElement, /* event */ js.Any, /* d */ Datum, Subject] = js.native
+    def subject(): js.ThisFunction2[/* this */ GElement, /* event */ Any, /* d */ Datum, Subject] = js.native
     /**
       * Sets the subject accessor to the specified function and returns the drag behavior.
       *
@@ -316,7 +316,7 @@ object mod {
       * If the subject is null or undefined, no drag gesture is started for this pointer;
       * however, other starting touches may yet start drag gestures.
       */
-    def subject(accessor: js.ThisFunction2[/* this */ GElement, /* event */ js.Any, /* d */ Datum, Subject]): this.type = js.native
+    def subject(accessor: js.ThisFunction2[/* this */ GElement, /* event */ Any, /* d */ Datum, Subject]): this.type = js.native
     
     /**
       * Returns the current touch support detector, which defaults to a function returning true,

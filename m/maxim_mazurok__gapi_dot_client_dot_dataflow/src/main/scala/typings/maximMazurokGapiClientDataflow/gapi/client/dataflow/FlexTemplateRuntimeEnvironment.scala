@@ -18,17 +18,36 @@ trait FlexTemplateRuntimeEnvironment extends StObject {
   var additionalUserLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.FlexTemplateRuntimeEnvironment & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.FlexTemplateRuntimeEnvironment & TopLevel[Any]
   ] = js.undefined
+  
+  /** The algorithm to use for autoscaling */
+  var autoscalingAlgorithm: js.UndefOr[String] = js.undefined
+  
+  /** Worker disk size, in gigabytes. */
+  var diskSizeGb: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * If true, when processing time is spent almost entirely on garbage collection (GC), saves a heap dump before ending the thread or process. If false, ends the thread or process
+    * without saving a heap dump. Does not save a heap dump when the Java Virtual Machine (JVM) has an out of memory error during processing. The location of the heap file is either
+    * echoed back to the user, or the user is given the opportunity to download the heap file.
+    */
+  var dumpHeapOnOom: js.UndefOr[Boolean] = js.undefined
   
   /** Whether to enable Streaming Engine for the job. */
   var enableStreamingEngine: js.UndefOr[Boolean] = js.undefined
+  
+  /** Set FlexRS goal for the job. https://cloud.google.com/dataflow/docs/guides/flexrs */
+  var flexrsGoal: js.UndefOr[String] = js.undefined
   
   /** Configuration for VM IPs. */
   var ipConfiguration: js.UndefOr[String] = js.undefined
   
   /** Name for the Cloud KMS key for the job. Key format is: projects//locations//keyRings//cryptoKeys/ */
   var kmsKeyName: js.UndefOr[String] = js.undefined
+  
+  /** The machine type to use for launching the job. The default is n1-standard-1. */
+  var launcherMachineType: js.UndefOr[String] = js.undefined
   
   /** The machine type to use for the job. Defaults to the value from the template if not specified. */
   var machineType: js.UndefOr[String] = js.undefined
@@ -42,8 +61,20 @@ trait FlexTemplateRuntimeEnvironment extends StObject {
   /** The initial number of Google Compute Engine instances for the job. */
   var numWorkers: js.UndefOr[Double] = js.undefined
   
+  /** Cloud Storage bucket (directory) to upload heap dumps to. Enabling this field implies that `dump_heap_on_oom` is set to true. */
+  var saveHeapDumpsToGcsPath: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Docker registry location of container image to use for the 'worker harness. Default is the container for the version of the SDK. Note this field is only valid for portable
+    * pipelines.
+    */
+  var sdkContainerImage: js.UndefOr[String] = js.undefined
+  
   /** The email address of the service account to run the job as. */
   var serviceAccountEmail: js.UndefOr[String] = js.undefined
+  
+  /** The Cloud Storage path for staging local files. Must be a valid Cloud Storage URL, beginning with `gs://`. */
+  var stagingLocation: js.UndefOr[String] = js.undefined
   
   /**
     * Subnetwork to which VMs will be assigned, if desired. You can specify a subnetwork using either a complete URL or an abbreviated path. Expected to be of the form
@@ -87,19 +118,35 @@ object FlexTemplateRuntimeEnvironment {
     
     inline def setAdditionalExperimentsUndefined: Self = StObject.set(x, "additionalExperiments", js.undefined)
     
-    inline def setAdditionalExperimentsVarargs(value: String*): Self = StObject.set(x, "additionalExperiments", js.Array(value :_*))
+    inline def setAdditionalExperimentsVarargs(value: String*): Self = StObject.set(x, "additionalExperiments", js.Array(value*))
     
     inline def setAdditionalUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.FlexTemplateRuntimeEnvironment & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.FlexTemplateRuntimeEnvironment & TopLevel[Any]
     ): Self = StObject.set(x, "additionalUserLabels", value.asInstanceOf[js.Any])
     
     inline def setAdditionalUserLabelsUndefined: Self = StObject.set(x, "additionalUserLabels", js.undefined)
     
+    inline def setAutoscalingAlgorithm(value: String): Self = StObject.set(x, "autoscalingAlgorithm", value.asInstanceOf[js.Any])
+    
+    inline def setAutoscalingAlgorithmUndefined: Self = StObject.set(x, "autoscalingAlgorithm", js.undefined)
+    
+    inline def setDiskSizeGb(value: Double): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
+    
+    inline def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
+    
+    inline def setDumpHeapOnOom(value: Boolean): Self = StObject.set(x, "dumpHeapOnOom", value.asInstanceOf[js.Any])
+    
+    inline def setDumpHeapOnOomUndefined: Self = StObject.set(x, "dumpHeapOnOom", js.undefined)
+    
     inline def setEnableStreamingEngine(value: Boolean): Self = StObject.set(x, "enableStreamingEngine", value.asInstanceOf[js.Any])
     
     inline def setEnableStreamingEngineUndefined: Self = StObject.set(x, "enableStreamingEngine", js.undefined)
+    
+    inline def setFlexrsGoal(value: String): Self = StObject.set(x, "flexrsGoal", value.asInstanceOf[js.Any])
+    
+    inline def setFlexrsGoalUndefined: Self = StObject.set(x, "flexrsGoal", js.undefined)
     
     inline def setIpConfiguration(value: String): Self = StObject.set(x, "ipConfiguration", value.asInstanceOf[js.Any])
     
@@ -108,6 +155,10 @@ object FlexTemplateRuntimeEnvironment {
     inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     
     inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+    
+    inline def setLauncherMachineType(value: String): Self = StObject.set(x, "launcherMachineType", value.asInstanceOf[js.Any])
+    
+    inline def setLauncherMachineTypeUndefined: Self = StObject.set(x, "launcherMachineType", js.undefined)
     
     inline def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
@@ -125,9 +176,21 @@ object FlexTemplateRuntimeEnvironment {
     
     inline def setNumWorkersUndefined: Self = StObject.set(x, "numWorkers", js.undefined)
     
+    inline def setSaveHeapDumpsToGcsPath(value: String): Self = StObject.set(x, "saveHeapDumpsToGcsPath", value.asInstanceOf[js.Any])
+    
+    inline def setSaveHeapDumpsToGcsPathUndefined: Self = StObject.set(x, "saveHeapDumpsToGcsPath", js.undefined)
+    
+    inline def setSdkContainerImage(value: String): Self = StObject.set(x, "sdkContainerImage", value.asInstanceOf[js.Any])
+    
+    inline def setSdkContainerImageUndefined: Self = StObject.set(x, "sdkContainerImage", js.undefined)
+    
     inline def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
     
     inline def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
+    
+    inline def setStagingLocation(value: String): Self = StObject.set(x, "stagingLocation", value.asInstanceOf[js.Any])
+    
+    inline def setStagingLocationUndefined: Self = StObject.set(x, "stagingLocation", js.undefined)
     
     inline def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     

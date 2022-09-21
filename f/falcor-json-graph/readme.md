@@ -10,10 +10,10 @@ A set of factory functions for creating JSON Graph values.
 | ------------------ | :-------------: |
 | Full name          | falcor-json-graph |
 | Keywords           | falcorjs, Observable, JSON, JSON Graph |
-| # releases         | 3 |
-| # dependents       | 17 |
-| # downloads        | 56543 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4906.0 |
+| # stars            | 55.0 |
 
 ## Links
 - [Homepage](https://github.com/Netflix/falcor-json-graph)

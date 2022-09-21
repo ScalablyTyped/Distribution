@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("rmc-dialog", JSImport.Default)
   @js.native
-  class default () extends DialogWrap
+  open class default () extends DialogWrap
   /* static members */
   object default {
     
@@ -28,10 +28,9 @@ object mod {
   }
   
   @js.native
-  trait DialogWrap
-    extends Component[IDialogPropTypes, js.Any, js.Any] {
+  trait DialogWrap extends Component[IDialogPropTypes, Any, Any] {
     
-    var _component: js.Any = js.native
+    var _component: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDialogWrap(): Unit = js.native
@@ -42,17 +41,17 @@ object mod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MDialogWrap(): Unit = js.native
     
-    var container: js.Any = js.native
+    var container: Any = js.native
     
-    def getComponent(visible: js.Any): Element = js.native
+    def getComponent(visible: Any): Element = js.native
     
-    def getContainer(): js.Any = js.native
+    def getContainer(): Any = js.native
     
     def removeContainer(): Unit = js.native
     
-    def renderDialog(visible: js.Any): Unit = js.native
+    def renderDialog(visible: Any): Unit = js.native
     
-    def saveRef(node: js.Any): Unit = js.native
+    def saveRef(node: Any): Unit = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MDialogWrap(hasVisible: Visible): Boolean = js.native

@@ -32,7 +32,7 @@ object XApproveActionBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addApproveActionListener: XApproveActionListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeApproveActionListener: XApproveActionListener => Unit
   ): XApproveActionBroadcaster = {

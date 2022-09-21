@@ -1,26 +1,39 @@
 package typings.vscodeLanguageclient.clientMod
 
-import typings.std.Error
 import typings.vscode.mod.OutputChannel
-import typings.vscode.mod.WorkspaceFolder
+import typings.vscodeLanguageclient.anon.CancellationStrategy
 import typings.vscodeLanguageclient.anon.Code2Protocol
+import typings.vscodeLanguageclient.anon.IsTrusted
+import typings.vscodeLanguageclient.configurationMod.ConfigurationOptions
+import typings.vscodeLanguageclient.diagnosticMod.DiagnosticPullOptions
+import typings.vscodeLanguageclient.notebookMod.NotebookDocumentOptions
+import typings.vscodeLanguageserverProtocol.mod.ResponseError
+import typings.vscodeLanguageserverProtocol.protocolMod.DocumentFilter
+import typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector
+import typings.vscodeLanguageserverProtocol.protocolMod.InitializeError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LanguageClientOptions extends StObject {
+trait LanguageClientOptions
+  extends StObject
+     with NotebookDocumentOptions
+     with DiagnosticPullOptions
+     with ConfigurationOptions {
+  
+  var connectionOptions: js.UndefOr[CancellationStrategy] = js.undefined
   
   var diagnosticCollectionName: js.UndefOr[String] = js.undefined
   
-  var documentSelector: js.UndefOr[
-    typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector | js.Array[String]
-  ] = js.undefined
+  var documentSelector: js.UndefOr[DocumentSelector | js.Array[String]] = js.undefined
   
   var errorHandler: js.UndefOr[ErrorHandler] = js.undefined
   
   var initializationFailedHandler: js.UndefOr[InitializationFailedHandler] = js.undefined
   
-  var initializationOptions: js.UndefOr[js.Any | js.Function0[js.Any]] = js.undefined
+  var initializationOptions: js.UndefOr[Any | js.Function0[Any]] = js.undefined
+  
+  var markdown: js.UndefOr[IsTrusted] = js.undefined
   
   var middleware: js.UndefOr[Middleware] = js.undefined
   
@@ -34,17 +47,13 @@ trait LanguageClientOptions extends StObject {
   
   /**
     * The encoding use to read stdout and stderr. Defaults
-    * to 'utf8' if ommitted.
+    * to 'utf8' if omitted.
     */
   var stdioEncoding: js.UndefOr[String] = js.undefined
-  
-  var synchronize: js.UndefOr[SynchronizeOptions] = js.undefined
   
   var traceOutputChannel: js.UndefOr[OutputChannel] = js.undefined
   
   var uriConverters: js.UndefOr[Code2Protocol] = js.undefined
-  
-  var workspaceFolder: js.UndefOr[WorkspaceFolder] = js.undefined
 }
 object LanguageClientOptions {
   
@@ -55,31 +64,37 @@ object LanguageClientOptions {
   
   extension [Self <: LanguageClientOptions](x: Self) {
     
+    inline def setConnectionOptions(value: CancellationStrategy): Self = StObject.set(x, "connectionOptions", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionOptionsUndefined: Self = StObject.set(x, "connectionOptions", js.undefined)
+    
     inline def setDiagnosticCollectionName(value: String): Self = StObject.set(x, "diagnosticCollectionName", value.asInstanceOf[js.Any])
     
     inline def setDiagnosticCollectionNameUndefined: Self = StObject.set(x, "diagnosticCollectionName", js.undefined)
     
-    inline def setDocumentSelector(value: typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector | js.Array[String]): Self = StObject.set(x, "documentSelector", value.asInstanceOf[js.Any])
+    inline def setDocumentSelector(value: DocumentSelector | js.Array[String]): Self = StObject.set(x, "documentSelector", value.asInstanceOf[js.Any])
     
     inline def setDocumentSelectorUndefined: Self = StObject.set(x, "documentSelector", js.undefined)
     
-    inline def setDocumentSelectorVarargs(value: (typings.vscodeLanguageserverProtocol.protocolMod.DocumentFilter | String)*): Self = StObject.set(x, "documentSelector", js.Array(value :_*))
+    inline def setDocumentSelectorVarargs(value: (DocumentFilter | String)*): Self = StObject.set(x, "documentSelector", js.Array(value*))
     
     inline def setErrorHandler(value: ErrorHandler): Self = StObject.set(x, "errorHandler", value.asInstanceOf[js.Any])
     
     inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
     
-    inline def setInitializationFailedHandler(
-      value: /* error */ typings.vscodeLanguageserverProtocol.mod.ResponseError[typings.vscodeLanguageserverProtocol.protocolMod.InitializeError] | Error | js.Any => Boolean
-    ): Self = StObject.set(x, "initializationFailedHandler", js.Any.fromFunction1(value))
+    inline def setInitializationFailedHandler(value: /* error */ ResponseError[InitializeError] | js.Error | Any => Boolean): Self = StObject.set(x, "initializationFailedHandler", js.Any.fromFunction1(value))
     
     inline def setInitializationFailedHandlerUndefined: Self = StObject.set(x, "initializationFailedHandler", js.undefined)
     
-    inline def setInitializationOptions(value: js.Any | js.Function0[js.Any]): Self = StObject.set(x, "initializationOptions", value.asInstanceOf[js.Any])
+    inline def setInitializationOptions(value: Any | js.Function0[Any]): Self = StObject.set(x, "initializationOptions", value.asInstanceOf[js.Any])
     
-    inline def setInitializationOptionsFunction0(value: () => js.Any): Self = StObject.set(x, "initializationOptions", js.Any.fromFunction0(value))
+    inline def setInitializationOptionsFunction0(value: () => Any): Self = StObject.set(x, "initializationOptions", js.Any.fromFunction0(value))
     
     inline def setInitializationOptionsUndefined: Self = StObject.set(x, "initializationOptions", js.undefined)
+    
+    inline def setMarkdown(value: IsTrusted): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
+    
+    inline def setMarkdownUndefined: Self = StObject.set(x, "markdown", js.undefined)
     
     inline def setMiddleware(value: Middleware): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
     
@@ -105,10 +120,6 @@ object LanguageClientOptions {
     
     inline def setStdioEncodingUndefined: Self = StObject.set(x, "stdioEncoding", js.undefined)
     
-    inline def setSynchronize(value: SynchronizeOptions): Self = StObject.set(x, "synchronize", value.asInstanceOf[js.Any])
-    
-    inline def setSynchronizeUndefined: Self = StObject.set(x, "synchronize", js.undefined)
-    
     inline def setTraceOutputChannel(value: OutputChannel): Self = StObject.set(x, "traceOutputChannel", value.asInstanceOf[js.Any])
     
     inline def setTraceOutputChannelUndefined: Self = StObject.set(x, "traceOutputChannel", js.undefined)
@@ -116,9 +127,5 @@ object LanguageClientOptions {
     inline def setUriConverters(value: Code2Protocol): Self = StObject.set(x, "uriConverters", value.asInstanceOf[js.Any])
     
     inline def setUriConvertersUndefined: Self = StObject.set(x, "uriConverters", js.undefined)
-    
-    inline def setWorkspaceFolder(value: WorkspaceFolder): Self = StObject.set(x, "workspaceFolder", value.asInstanceOf[js.Any])
-    
-    inline def setWorkspaceFolderUndefined: Self = StObject.set(x, "workspaceFolder", js.undefined)
   }
 }

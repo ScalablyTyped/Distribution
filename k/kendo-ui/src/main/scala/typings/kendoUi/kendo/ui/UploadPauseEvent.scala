@@ -8,7 +8,7 @@ trait UploadPauseEvent
   extends StObject
      with UploadEvent {
   
-  var e: js.UndefOr[js.Any] = js.undefined
+  var e: js.UndefOr[Any] = js.undefined
 }
 object UploadPauseEvent {
   
@@ -19,7 +19,7 @@ object UploadPauseEvent {
   
   extension [Self <: UploadPauseEvent](x: Self) {
     
-    inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
     inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
   }

@@ -10,10 +10,10 @@ object lightbulbOutlineMod {
   
   @JSImport("material-ui/svg-icons/action/lightbulb-outline", JSImport.Default)
   @js.native
-  class default () extends ActionLightbulbOutline
+  open class default () extends ActionLightbulbOutline
   
   @JSImport("material-ui/svg-icons/action/lightbulb-outline", "ActionLightbulbOutline")
   @js.native
-  class ActionLightbulbOutline ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionLightbulbOutline ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

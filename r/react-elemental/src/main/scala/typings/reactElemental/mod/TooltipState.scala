@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TooltipState extends StObject {
   
-  val displayTooltip: js.Any
+  val displayTooltip: Any
 }
 object TooltipState {
   
-  inline def apply(displayTooltip: js.Any): TooltipState = {
+  inline def apply(displayTooltip: Any): TooltipState = {
     val __obj = js.Dynamic.literal(displayTooltip = displayTooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipState]
   }
   
   extension [Self <: TooltipState](x: Self) {
     
-    inline def setDisplayTooltip(value: js.Any): Self = StObject.set(x, "displayTooltip", value.asInstanceOf[js.Any])
+    inline def setDisplayTooltip(value: Any): Self = StObject.set(x, "displayTooltip", value.asInstanceOf[js.Any])
   }
 }

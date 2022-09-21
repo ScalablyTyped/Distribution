@@ -77,13 +77,13 @@ object mod {
           
           inline def setAllowInUndefined: Self = StObject.set(x, "allowIn", js.undefined)
           
-          inline def setAllowInVarargs(value: (INPUT | SELECT | TEXTAREA)*): Self = StObject.set(x, "allowIn", js.Array(value :_*))
+          inline def setAllowInVarargs(value: (INPUT | SELECT | TEXTAREA)*): Self = StObject.set(x, "allowIn", js.Array(value*))
           
           inline def setCallback(value: (Event, typings.angularHotkeys.mod.angularAugmentingMod.hotkeys.Hotkey) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
           
           inline def setCombo(value: String | js.Array[String]): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
           
-          inline def setComboVarargs(value: String*): Self = StObject.set(x, "combo", js.Array(value :_*))
+          inline def setComboVarargs(value: String*): Self = StObject.set(x, "combo", js.Array(value*))
           
           inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           

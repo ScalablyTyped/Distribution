@@ -20,20 +20,20 @@ trait XPolicy
     * Gets the default permissions granted to all users.
     * @returns default permissions
     */
-  val DefaultPermissions: SafeArray[js.Any]
+  val DefaultPermissions: SafeArray[Any]
   
   /**
     * Gets the default permissions granted to all users.
     * @returns default permissions
     */
-  def getDefaultPermissions(): SafeArray[js.Any]
+  def getDefaultPermissions(): SafeArray[Any]
   
   /**
     * Gets the permissions of the specified user excluding the default permissions granted to all users.
     * @param userId user id
     * @returns permissions of the specified user
     */
-  def getPermissions(userId: String): SafeArray[js.Any]
+  def getPermissions(userId: String): SafeArray[Any]
   
   /** Refreshes the policy configuration. */
   def refresh(): Unit
@@ -41,11 +41,11 @@ trait XPolicy
 object XPolicy {
   
   inline def apply(
-    DefaultPermissions: SafeArray[js.Any],
+    DefaultPermissions: SafeArray[Any],
     acquire: () => Unit,
-    getDefaultPermissions: () => SafeArray[js.Any],
-    getPermissions: String => SafeArray[js.Any],
-    queryInterface: `type` => js.Any,
+    getDefaultPermissions: () => SafeArray[Any],
+    getPermissions: String => SafeArray[Any],
+    queryInterface: `type` => Any,
     refresh: () => Unit,
     release: () => Unit
   ): XPolicy = {
@@ -55,11 +55,11 @@ object XPolicy {
   
   extension [Self <: XPolicy](x: Self) {
     
-    inline def setDefaultPermissions(value: SafeArray[js.Any]): Self = StObject.set(x, "DefaultPermissions", value.asInstanceOf[js.Any])
+    inline def setDefaultPermissions(value: SafeArray[Any]): Self = StObject.set(x, "DefaultPermissions", value.asInstanceOf[js.Any])
     
-    inline def setGetDefaultPermissions(value: () => SafeArray[js.Any]): Self = StObject.set(x, "getDefaultPermissions", js.Any.fromFunction0(value))
+    inline def setGetDefaultPermissions(value: () => SafeArray[Any]): Self = StObject.set(x, "getDefaultPermissions", js.Any.fromFunction0(value))
     
-    inline def setGetPermissions(value: String => SafeArray[js.Any]): Self = StObject.set(x, "getPermissions", js.Any.fromFunction1(value))
+    inline def setGetPermissions(value: String => SafeArray[Any]): Self = StObject.set(x, "getPermissions", js.Any.fromFunction1(value))
     
     inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
   }

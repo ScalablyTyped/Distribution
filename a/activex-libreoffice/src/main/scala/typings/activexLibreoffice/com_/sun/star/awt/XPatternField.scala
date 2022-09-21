@@ -40,7 +40,7 @@ object XPatternField {
     getMasks: (js.Array[String], js.Array[String]) => Unit,
     getString: () => String,
     isStrictFormat: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setMasks: (String, String) => Unit,
     setStrictFormat: Boolean => Unit,

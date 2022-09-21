@@ -10,10 +10,10 @@ React charts
 | ------------------ | :-------------: |
 | Full name          | recharts |
 | Keywords           | react, reactjs, chart, react-component |
-| # releases         | 28 |
-| # dependents       | 347 |
-| # downloads        | 21702414 |
-| # stars            | 25 |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 4405388.666666667 |
+| # stars            | 18795.0 |
 
 ## Links
 - [Homepage](https://github.com/recharts/recharts)

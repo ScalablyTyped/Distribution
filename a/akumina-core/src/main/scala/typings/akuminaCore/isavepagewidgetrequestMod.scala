@@ -26,7 +26,7 @@ object isavepagewidgetrequestMod {
       
       inline def setPageWidgets(value: js.Array[IPageWidget]): Self = StObject.set(x, "pageWidgets", value.asInstanceOf[js.Any])
       
-      inline def setPageWidgetsVarargs(value: IPageWidget*): Self = StObject.set(x, "pageWidgets", js.Array(value :_*))
+      inline def setPageWidgetsVarargs(value: IPageWidget*): Self = StObject.set(x, "pageWidgets", js.Array(value*))
     }
   }
 }

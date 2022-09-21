@@ -18,7 +18,7 @@ trait ClassFactory extends StObject {
     * @param elements Array of JavaScript values to use for constructing the
     *                 Java array.
     */
-  def array(`type`: String, elements: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def array(`type`: String, elements: js.Array[Any]): js.Array[Any] = js.native
   
   /**
     * Path to cache directory currently being used. For the default class
@@ -43,7 +43,7 @@ trait ClassFactory extends StObject {
     * @param className Name of class to enumerate instances of.
     * @param callbacks Object with callbacks.
     */
-  def choose(className: String, callbacks: ChooseCallbacks): Unit = js.native
+  def choose(className: String, callbacks: ChooseCallbacks[js.Object]): Unit = js.native
   
   /**
     * Class loader currently being used. For the default class factory this

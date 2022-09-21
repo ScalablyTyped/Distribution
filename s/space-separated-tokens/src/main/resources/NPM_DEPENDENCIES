@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "space-separated-tokens" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "space-separated-tokens" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

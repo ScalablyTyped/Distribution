@@ -15,7 +15,7 @@ trait OutputJax extends StObject {
   /*Removes the output associated with the given element jax. The routine can use jax.SourceElement() to locate
     * the <script> tag associated with the element jax.
     */
-  def Remove(jax: js.Any): Unit
+  def Remove(jax: Any): Unit
   
   /*This is the main routine called by MathJax when an element jax is to be converted to output. The default
     * Translate() method throws an error indicating that Translate() hasn’t been defined, so when the jax.js file
@@ -27,9 +27,9 @@ trait OutputJax extends StObject {
     * maintain information about its processing state, but see preTranslate() above for naming conventions for
     * properties that are added.
     */
-  def Translate(script: js.Any, state: js.Any): ElementJax
+  def Translate(script: Any, state: Any): ElementJax
   
-  def Zoom(jax: js.Any, span: js.Any, math: js.Any, Mw: Double, Mh: Double): ZoomStruct
+  def Zoom(jax: Any, span: Any, math: Any, Mw: Double, Mh: Double): ZoomStruct
   
   /*The directory where the jax files are stored (e.g., "[MathJax]/jax/output/HTML-CSS");*/
   var directory: String
@@ -42,7 +42,7 @@ trait OutputJax extends StObject {
     * part of its output, and the MathEvents code uses this routine to map back to the jax associated with that
     * output.
     */
-  def getJaxFromMath(math: js.Any): ElementJax
+  def getJaxFromMath(math: Any): ElementJax
   
   /*The name of the jax.*/
   var id: String
@@ -58,7 +58,7 @@ trait OutputJax extends StObject {
     * state variable to store its own state information (see preProcess() above for caveats about naming
     * properties).
     */
-  def postTranslate(state: js.Any): Unit
+  def postTranslate(state: Any): Unit
   
   /*This is called by MathJax.Hub to ask the output processor to prepare to process math scripts. Its default
     * action is to start loading the jax’s jax.js file, and redefine itself to simply return the callback for the
@@ -67,7 +67,7 @@ trait OutputJax extends StObject {
     * Once the jax.js file has loaded, this method is replaced by the jax’s preTranslate() method, so that subsequent
     * calls to preProcess() will perform the appropriate translation.
     */
-  def preProcess(state: js.Any): Unit
+  def preProcess(state: Any): Unit
   
   /*This routine replaces preProcess() above when the jax’s jax.js file is loaded. It is called by MathJax.Hub to
     * ask the output processor to prepare to process math scripts. (For example, the HTML-CSS output jax uses this
@@ -80,7 +80,7 @@ trait OutputJax extends StObject {
     * state.HTMLCSSlast to keep track of the last equation it processed, or could add state.HTMLCSS = {...} to
     * create an object of its own within the state variable.
     */
-  def preTranslate(state: js.Any): Unit
+  def preTranslate(state: Any): Unit
   
   /*The version number of the jax.*/
   var version: String
@@ -89,17 +89,17 @@ object OutputJax {
   
   inline def apply(
     Register: String => Unit,
-    Remove: js.Any => Unit,
-    Translate: (js.Any, js.Any) => ElementJax,
-    Zoom: (js.Any, js.Any, js.Any, Double, Double) => ZoomStruct,
+    Remove: Any => Unit,
+    Translate: (Any, Any) => ElementJax,
+    Zoom: (Any, Any, Any, Double, Double) => ZoomStruct,
     directory: String,
     fontDir: String,
-    getJaxFromMath: js.Any => ElementJax,
+    getJaxFromMath: Any => ElementJax,
     id: String,
     imageDir: String,
-    postTranslate: js.Any => Unit,
-    preProcess: js.Any => Unit,
-    preTranslate: js.Any => Unit,
+    postTranslate: Any => Unit,
+    preProcess: Any => Unit,
+    preTranslate: Any => Unit,
     version: String
   ): OutputJax = {
     val __obj = js.Dynamic.literal(Register = js.Any.fromFunction1(Register), Remove = js.Any.fromFunction1(Remove), Translate = js.Any.fromFunction2(Translate), Zoom = js.Any.fromFunction5(Zoom), directory = directory.asInstanceOf[js.Any], fontDir = fontDir.asInstanceOf[js.Any], getJaxFromMath = js.Any.fromFunction1(getJaxFromMath), id = id.asInstanceOf[js.Any], imageDir = imageDir.asInstanceOf[js.Any], postTranslate = js.Any.fromFunction1(postTranslate), preProcess = js.Any.fromFunction1(preProcess), preTranslate = js.Any.fromFunction1(preTranslate), version = version.asInstanceOf[js.Any])
@@ -112,26 +112,26 @@ object OutputJax {
     
     inline def setFontDir(value: String): Self = StObject.set(x, "fontDir", value.asInstanceOf[js.Any])
     
-    inline def setGetJaxFromMath(value: js.Any => ElementJax): Self = StObject.set(x, "getJaxFromMath", js.Any.fromFunction1(value))
+    inline def setGetJaxFromMath(value: Any => ElementJax): Self = StObject.set(x, "getJaxFromMath", js.Any.fromFunction1(value))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setImageDir(value: String): Self = StObject.set(x, "imageDir", value.asInstanceOf[js.Any])
     
-    inline def setPostTranslate(value: js.Any => Unit): Self = StObject.set(x, "postTranslate", js.Any.fromFunction1(value))
+    inline def setPostTranslate(value: Any => Unit): Self = StObject.set(x, "postTranslate", js.Any.fromFunction1(value))
     
-    inline def setPreProcess(value: js.Any => Unit): Self = StObject.set(x, "preProcess", js.Any.fromFunction1(value))
+    inline def setPreProcess(value: Any => Unit): Self = StObject.set(x, "preProcess", js.Any.fromFunction1(value))
     
-    inline def setPreTranslate(value: js.Any => Unit): Self = StObject.set(x, "preTranslate", js.Any.fromFunction1(value))
+    inline def setPreTranslate(value: Any => Unit): Self = StObject.set(x, "preTranslate", js.Any.fromFunction1(value))
     
     inline def setRegister(value: String => Unit): Self = StObject.set(x, "Register", js.Any.fromFunction1(value))
     
-    inline def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
-    inline def setTranslate(value: (js.Any, js.Any) => ElementJax): Self = StObject.set(x, "Translate", js.Any.fromFunction2(value))
+    inline def setTranslate(value: (Any, Any) => ElementJax): Self = StObject.set(x, "Translate", js.Any.fromFunction2(value))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    inline def setZoom(value: (js.Any, js.Any, js.Any, Double, Double) => ZoomStruct): Self = StObject.set(x, "Zoom", js.Any.fromFunction5(value))
+    inline def setZoom(value: (Any, Any, Any, Double, Double) => ZoomStruct): Self = StObject.set(x, "Zoom", js.Any.fromFunction5(value))
   }
 }

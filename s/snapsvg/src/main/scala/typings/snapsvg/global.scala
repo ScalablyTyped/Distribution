@@ -184,7 +184,7 @@ object global {
     
     inline def format(token: String, json: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(token.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def fragment(varargs: js.Any): Fragment_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fragment")(varargs.asInstanceOf[js.Any]).asInstanceOf[Fragment_]
+    inline def fragment(varargs: Any): Fragment_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fragment")(varargs.asInstanceOf[js.Any]).asInstanceOf[Fragment_]
     
     inline def getElementByPoint(x: Double, y: Double): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementByPoint")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Element]
     
@@ -198,7 +198,7 @@ object global {
     
     inline def hsl2rgb(h: Double, s: Double, l: Double): RGB_ = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl2rgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[RGB_]
     
-    inline def is(o: js.Any, `type`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(o.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def is(o: Any, `type`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(o.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def len(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("len")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
@@ -213,11 +213,11 @@ object global {
     
     inline def parse(svg: String): Fragment_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(svg.asInstanceOf[js.Any]).asInstanceOf[Fragment_]
     
-    inline def parsePathString(pathString: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathString")(pathString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-    inline def parsePathString(pathString: js.Array[String]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathString")(pathString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def parsePathString(pathString: String): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathString")(pathString.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+    inline def parsePathString(pathString: js.Array[String]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathString")(pathString.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
     
-    inline def parseTransformString(TString: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformString")(TString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-    inline def parseTransformString(TString: js.Array[String]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformString")(TString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def parseTransformString(TString: String): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformString")(TString.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+    inline def parseTransformString(TString: js.Array[String]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformString")(TString.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
     
     @JSGlobal("Snap.path")
     @js.native
@@ -236,9 +236,9 @@ object global {
     
     inline def select(query: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(query.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def selectAll(query: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(query.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def selectAll(query: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(query.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def set(els: Element*): Set_ = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(els.asInstanceOf[js.Any]).asInstanceOf[Set_]
+    inline def set(els: Element*): Set_ = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(els.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Set_]
     
     inline def sin(angle: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sin")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
     

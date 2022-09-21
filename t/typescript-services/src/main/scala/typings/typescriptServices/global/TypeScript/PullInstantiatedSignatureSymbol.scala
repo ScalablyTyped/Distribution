@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.PullInstantiatedSignatureSymbol")
 @js.native
-class PullInstantiatedSignatureSymbol protected ()
+open class PullInstantiatedSignatureSymbol protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.PullInstantiatedSignatureSymbol {
   def this(

@@ -4,7 +4,7 @@ import typings.popperjsCore.enumsMod.Boundary
 import typings.popperjsCore.enumsMod.Context
 import typings.popperjsCore.enumsMod.RootBoundary
 import typings.popperjsCore.typesMod.Padding
-import typings.std.HTMLElement
+import typings.popperjsCore.typesMod.PositioningStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +23,8 @@ trait PartialOptions extends StObject {
   var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.undefined
   
   var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
+  
+  var strategy: js.UndefOr[PositioningStrategy] = js.undefined
 }
 object PartialOptions {
   
@@ -41,7 +43,7 @@ object PartialOptions {
     
     inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
-    inline def setBoundaryVarargs(value: HTMLElement*): Self = StObject.set(x, "boundary", js.Array(value :_*))
+    inline def setBoundaryVarargs(value: typings.std.Element*): Self = StObject.set(x, "boundary", js.Array(value*))
     
     inline def setElementContext(value: Context): Self = StObject.set(x, "elementContext", value.asInstanceOf[js.Any])
     
@@ -58,5 +60,9 @@ object PartialOptions {
     inline def setRootBoundary(value: RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
     
     inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
+    
+    inline def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    
+    inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
   }
 }

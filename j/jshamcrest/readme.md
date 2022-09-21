@@ -10,10 +10,10 @@ Library of matcher objects for JavaScript, based on the ideas behind Hamcrest.
 | ------------------ | :-------------: |
 | Full name          | jshamcrest |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 37478 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 640.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/danielfm/jshamcrest)

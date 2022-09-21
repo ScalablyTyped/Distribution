@@ -1,16 +1,20 @@
 organization := "org.scalablytyped"
 name := "vue-loader"
-version := "15.9.5-44e623"
-scalaVersion := "3.0.1"
+version := "17.0.0-49fa59"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "postcss" % "7.0.35-7d3225",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-081b8e",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "vue" % "2.6.12-a5f695",
-  "org.scalablytyped" %%% "vue-template-compiler" % "2.6.12-4a2fb1",
-  "org.scalablytyped" %%% "vue__component-compiler-utils" % "3.2.0-4c2dd3")
+  "org.scalablytyped" %%% "ajv" % "8.11.0-025d79",
+  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-bee5c7",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-aaec85",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "re2" % "1.17.7-22ea4f",
+  "org.scalablytyped" %%% "schema-utils" % "4.0.0-ca6ee9",
+  "org.scalablytyped" %%% "std" % "4.8-958c79",
+  "org.scalablytyped" %%% "tapable" % "2.2.1-b2feca",
+  "org.scalablytyped" %%% "uri-js" % "4.4.1-33748e",
+  "org.scalablytyped" %%% "webpack" % "5.74.0-8b6e44")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

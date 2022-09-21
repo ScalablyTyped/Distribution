@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContentModerationDetection extends StObject {
   
   /**
-    * The unsafe content label detected by in the stored video.
+    * The content moderation label detected by in the stored video.
     */
   var ModerationLabel: js.UndefOr[typings.awsSdk.rekognitionMod.ModerationLabel] = js.undefined
   
   /**
-    * Time, in milliseconds from the beginning of the video, that the unsafe content label was detected.
+    * Time, in milliseconds from the beginning of the video, that the content moderation label was detected.
     */
   var Timestamp: js.UndefOr[typings.awsSdk.rekognitionMod.Timestamp] = js.undefined
 }

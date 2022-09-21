@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Impact extends StObject {
   
   /**
-    *  The maximum dollar value observed for an anomaly. 
+    * The maximum dollar value that's observed for an anomaly. 
     */
   var MaxImpact: GenericDouble
   
   /**
-    *  The cumulative dollar value observed for an anomaly. 
+    * The cumulative dollar value that's observed for an anomaly. 
     */
   var TotalImpact: js.UndefOr[GenericDouble] = js.undefined
 }

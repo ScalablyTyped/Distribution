@@ -1,7 +1,7 @@
 
 # Scala.js typings for swig-email-templates
 
-Typings are for version 5.0
+Typings are for version 7.0
 
 ## Library description:
 Node.js module for rendering emails with swig templates and email-friendly inline CSS
@@ -10,10 +10,10 @@ Node.js module for rendering emails with swig templates and email-friendly inlin
 | ------------------ | :-------------: |
 | Full name          | swig-email-templates |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 207587 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 11279.666666666666 |
+| # stars            | 162.0 |
 
 ## Links
 - [Homepage](https://github.com/andrewrk/swig-email-templates#readme)

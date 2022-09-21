@@ -42,7 +42,7 @@ object PartialPolarLayoutAngularaxis {
     
     inline def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
     
-    inline def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value :_*))
+    inline def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value*))
     
     inline def setDomain(value: PartialDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
@@ -64,7 +64,7 @@ object PartialPolarLayoutAngularaxis {
     
     inline def setSectorUndefined: Self = StObject.set(x, "sector", js.undefined)
     
-    inline def setSectorVarargs(value: Double*): Self = StObject.set(x, "sector", js.Array(value :_*))
+    inline def setSectorVarargs(value: Double*): Self = StObject.set(x, "sector", js.Array(value*))
     
     inline def setUirevision(value: String | Double): Self = StObject.set(x, "uirevision", value.asInstanceOf[js.Any])
     

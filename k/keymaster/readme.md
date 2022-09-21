@@ -1,7 +1,7 @@
 
 # Scala.js typings for keymaster
 
-Typings are for version v1.6.2
+Typings are for version 1.6
 
 ## Library description:
 library for defining and dispatching keyboard shortcuts
@@ -10,10 +10,10 @@ library for defining and dispatching keyboard shortcuts
 | ------------------ | :-------------: |
 | Full name          | keymaster |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 69 |
-| # downloads        | 4043312 |
-| # stars            | 13 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 209991.66666666666 |
+| # stars            | 6492.0 |
 
 ## Links
 - [Homepage](https://github.com/madrobby/keymaster)

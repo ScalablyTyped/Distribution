@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VariableSizeListProps
+trait VariableSizeListProps[T]
   extends StObject
-     with ListProps {
+     with ListProps[T] {
   
   /**
     * Estimated size of a item in the direction being windowed. For vertical lists, this is the row height. For horizontal lists, this is the column width.
@@ -24,18 +24,18 @@ trait VariableSizeListProps
 }
 object VariableSizeListProps {
   
-  inline def apply(
-    children: ComponentType[ListChildComponentProps],
+  inline def apply[T](
+    children: ComponentType[ListChildComponentProps[T]],
     height: Double | String,
     itemCount: Double,
     itemSize: Double => Double,
     width: Double | String
-  ): VariableSizeListProps = {
+  ): VariableSizeListProps[T] = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], itemCount = itemCount.asInstanceOf[js.Any], itemSize = js.Any.fromFunction1(itemSize), width = width.asInstanceOf[js.Any])
-    __obj.asInstanceOf[VariableSizeListProps]
+    __obj.asInstanceOf[VariableSizeListProps[T]]
   }
   
-  extension [Self <: VariableSizeListProps](x: Self) {
+  extension [Self <: VariableSizeListProps[?], T](x: Self & VariableSizeListProps[T]) {
     
     inline def setEstimatedItemSize(value: Double): Self = StObject.set(x, "estimatedItemSize", value.asInstanceOf[js.Any])
     

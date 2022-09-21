@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "NoteStore.NoteFilter")
 @js.native
-class NoteFilter () extends StObject {
+open class NoteFilter () extends StObject {
   def this(args: Ascending) = this()
   
   var ascending: Boolean = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReopenMatterResponse extends StObject {
   
-  /** The updated matter, with state OPEN. */
+  /** The updated matter, with state **OPEN**. */
   var matter: js.UndefOr[Matter] = js.undefined
 }
 object ReopenMatterResponse {

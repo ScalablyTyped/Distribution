@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSpellCheckerAfterCheckEventArgs")
 @js.native
-class ASPxClientSpellCheckerAfterCheckEventArgs protected ()
+open class ASPxClientSpellCheckerAfterCheckEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSpellCheckerAfterCheckEventArgs {
   /**

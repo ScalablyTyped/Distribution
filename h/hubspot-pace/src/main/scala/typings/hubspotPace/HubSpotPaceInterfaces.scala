@@ -1,6 +1,5 @@
 package typings.hubspotPace
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,16 +41,16 @@ object HubSpotPaceInterfaces {
   @js.native
   trait Pace extends StObject {
     
-    def ignore(fn: js.Function0[Unit], args: js.Any*): Unit = js.native
+    def ignore(fn: js.Function0[Unit], args: Any*): Unit = js.native
     
     def off(event: String): Unit = js.native
-    def off(event: String, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def off(event: String, handler: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
-    def on(event: String, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-    def on(event: String, handler: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): Unit = js.native
+    def on(event: String, handler: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
+    def on(event: String, handler: js.Function1[/* repeated */ Any, Unit], context: Any): Unit = js.native
     
-    def once(event: String, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-    def once(event: String, handler: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): Unit = js.native
+    def once(event: String, handler: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
+    def once(event: String, handler: js.Function1[/* repeated */ Any, Unit], context: Any): Unit = js.native
     
     var options: PaceOptions = js.native
     
@@ -62,7 +61,7 @@ object HubSpotPaceInterfaces {
     
     def stop(): Unit = js.native
     
-    def track(fn: js.Function0[Unit], args: js.Any*): Unit = js.native
+    def track(fn: js.Function0[Unit], args: Any*): Unit = js.native
   }
   
   trait PaceAjaxOptions extends StObject {
@@ -70,7 +69,7 @@ object HubSpotPaceInterfaces {
     /**
       * A list of regular expressions or substrings of URLS we should ignore (for both tracking and restarting)
       */
-    var ignoreURLs: js.UndefOr[js.Array[String | RegExp]] = js.undefined
+    var ignoreURLs: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
     
     /**
       * Which HTTP methods should we track?
@@ -91,17 +90,17 @@ object HubSpotPaceInterfaces {
     
     extension [Self <: PaceAjaxOptions](x: Self) {
       
-      inline def setIgnoreURLs(value: js.Array[String | RegExp]): Self = StObject.set(x, "ignoreURLs", value.asInstanceOf[js.Any])
+      inline def setIgnoreURLs(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "ignoreURLs", value.asInstanceOf[js.Any])
       
       inline def setIgnoreURLsUndefined: Self = StObject.set(x, "ignoreURLs", js.undefined)
       
-      inline def setIgnoreURLsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignoreURLs", js.Array(value :_*))
+      inline def setIgnoreURLsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "ignoreURLs", js.Array(value*))
       
       inline def setTrackMethods(value: js.Array[String]): Self = StObject.set(x, "trackMethods", value.asInstanceOf[js.Any])
       
       inline def setTrackMethodsUndefined: Self = StObject.set(x, "trackMethods", js.undefined)
       
-      inline def setTrackMethodsVarargs(value: String*): Self = StObject.set(x, "trackMethods", js.Array(value :_*))
+      inline def setTrackMethodsVarargs(value: String*): Self = StObject.set(x, "trackMethods", js.Array(value*))
       
       inline def setTrackWebSockets(value: Boolean): Self = StObject.set(x, "trackWebSockets", value.asInstanceOf[js.Any])
       
@@ -138,7 +137,7 @@ object HubSpotPaceInterfaces {
       
       inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
       
-      inline def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+      inline def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value*))
     }
   }
   

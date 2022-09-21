@@ -52,12 +52,12 @@ object AutosuggestPropsMultiSection {
     
     inline def setMultiSection(value: `true`): Self = StObject.set(x, "multiSection", value.asInstanceOf[js.Any])
     
-    inline def setRenderSectionTitle(value: /* section */ js.Any => ReactNode): Self = StObject.set(x, "renderSectionTitle", js.Any.fromFunction1(value))
+    inline def setRenderSectionTitle(value: /* section */ Any => ReactNode): Self = StObject.set(x, "renderSectionTitle", js.Any.fromFunction1(value))
     
     inline def setRenderSectionTitleUndefined: Self = StObject.set(x, "renderSectionTitle", js.undefined)
     
     inline def setSuggestions(value: js.Array[TSection]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
-    inline def setSuggestionsVarargs(value: TSection*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: TSection*): Self = StObject.set(x, "suggestions", js.Array(value*))
   }
 }

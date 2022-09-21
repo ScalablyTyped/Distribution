@@ -9,6 +9,8 @@ trait InitialViewPropertiesProperties extends StObject {
   /**
     * The background color of the [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html).
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#background)
     */
   var background: js.UndefOr[ColorBackgroundProperties] = js.undefined

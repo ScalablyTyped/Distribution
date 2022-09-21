@@ -10,7 +10,7 @@ object subtractBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/subtractBlock", "SubtractBlock")
   @js.native
-  class SubtractBlock protected () extends NodeMaterialBlock {
+  open class SubtractBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new SubtractBlock
       * @param name defines the block name

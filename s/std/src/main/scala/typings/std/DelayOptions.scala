@@ -8,8 +8,10 @@ trait DelayOptions
   extends StObject
      with AudioNodeOptions {
   
+  /* standard dom */
   var delayTime: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var maxDelayTime: js.UndefOr[Double] = js.undefined
 }
 object DelayOptions {

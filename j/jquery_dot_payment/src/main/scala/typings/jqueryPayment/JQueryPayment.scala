@@ -1,6 +1,5 @@
 package typings.jqueryPayment
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object JQueryPayment {
     /**
       * Regex used to format the card number. Each match is joined with a space.
       */
-    var format: js.UndefOr[RegExp] = js.undefined
+    var format: js.UndefOr[js.RegExp] = js.undefined
     
     /**
       * Array of valid card number lengths.
@@ -33,7 +32,7 @@ object JQueryPayment {
       * Regex used to identify the card type. For the best experience, this should be
       * the shortest pattern that can guarantee the card is of a particular type.
       */
-    var pattern: js.UndefOr[RegExp] = js.undefined
+    var pattern: js.UndefOr[js.RegExp] = js.undefined
     
     /**
       * Array of prefixes used to identify the card type.
@@ -58,9 +57,9 @@ object JQueryPayment {
       
       inline def setCvcLengthUndefined: Self = StObject.set(x, "cvcLength", js.undefined)
       
-      inline def setCvcLengthVarargs(value: Double*): Self = StObject.set(x, "cvcLength", js.Array(value :_*))
+      inline def setCvcLengthVarargs(value: Double*): Self = StObject.set(x, "cvcLength", js.Array(value*))
       
-      inline def setFormat(value: RegExp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: js.RegExp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
@@ -68,13 +67,13 @@ object JQueryPayment {
       
       inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      inline def setLengthVarargs(value: Double*): Self = StObject.set(x, "length", js.Array(value :_*))
+      inline def setLengthVarargs(value: Double*): Self = StObject.set(x, "length", js.Array(value*))
       
       inline def setLuhn(value: Boolean): Self = StObject.set(x, "luhn", value.asInstanceOf[js.Any])
       
       inline def setLuhnUndefined: Self = StObject.set(x, "luhn", js.undefined)
       
-      inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: js.RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
@@ -82,7 +81,7 @@ object JQueryPayment {
       
       inline def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
       
-      inline def setPatternsVarargs(value: Double*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: Double*): Self = StObject.set(x, "patterns", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

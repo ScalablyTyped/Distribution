@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SettingUpdateData extends StObject {
   
   /**
-    *
     * Represents the value stored for this setting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object SettingUpdateData {
   
@@ -24,7 +24,7 @@ object SettingUpdateData {
   
   extension [Self <: SettingUpdateData](x: Self) {
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

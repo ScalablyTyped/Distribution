@@ -18,14 +18,14 @@ object TextDocumentSaveReason {
   /**
     * Automatic after a delay.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "TextDocumentSaveReason.AfterDelay")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "TextDocumentSaveReason.AfterDelay")
   @js.native
   val AfterDelay: `2` = js.native
   
   /**
     * When the editor lost focus.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "TextDocumentSaveReason.FocusOut")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "TextDocumentSaveReason.FocusOut")
   @js.native
   val FocusOut: `3` = js.native
   
@@ -33,7 +33,7 @@ object TextDocumentSaveReason {
     * Manually triggered, e.g. by the user pressing save, by starting debugging,
     * or by an API call.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "TextDocumentSaveReason.Manual")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "TextDocumentSaveReason.Manual")
   @js.native
   val Manual: `1` = js.native
 }

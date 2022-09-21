@@ -12,4 +12,7 @@ object raygunTransportMod {
   val ^ : js.Any = js.native
   
   inline def send(options: SendOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def send(options: SendOptions, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(options.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def sendBatch(options: SendOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendBatch")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

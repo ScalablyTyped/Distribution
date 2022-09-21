@@ -1,6 +1,5 @@
 package typings.sawtoothSdk.protobufMod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait ITpReceiptAddDataRequest extends StObject {
   var contextId: js.UndefOr[String | Null] = js.undefined
   
   /** TpReceiptAddDataRequest data */
-  var data: js.UndefOr[Uint8Array | Null] = js.undefined
+  var data: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
 }
 object ITpReceiptAddDataRequest {
   
@@ -28,7 +27,7 @@ object ITpReceiptAddDataRequest {
     
     inline def setContextIdUndefined: Self = StObject.set(x, "contextId", js.undefined)
     
-    inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataNull: Self = StObject.set(x, "data", null)
     

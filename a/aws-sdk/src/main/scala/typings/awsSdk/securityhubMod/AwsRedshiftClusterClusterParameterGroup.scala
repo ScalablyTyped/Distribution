@@ -34,7 +34,7 @@ object AwsRedshiftClusterClusterParameterGroup {
     
     inline def setClusterParameterStatusListUndefined: Self = StObject.set(x, "ClusterParameterStatusList", js.undefined)
     
-    inline def setClusterParameterStatusListVarargs(value: AwsRedshiftClusterClusterParameterStatus*): Self = StObject.set(x, "ClusterParameterStatusList", js.Array(value :_*))
+    inline def setClusterParameterStatusListVarargs(value: AwsRedshiftClusterClusterParameterStatus*): Self = StObject.set(x, "ClusterParameterStatusList", js.Array(value*))
     
     inline def setParameterApplyStatus(value: NonEmptyString): Self = StObject.set(x, "ParameterApplyStatus", value.asInstanceOf[js.Any])
     

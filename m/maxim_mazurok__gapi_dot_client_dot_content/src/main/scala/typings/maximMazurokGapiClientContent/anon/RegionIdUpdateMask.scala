@@ -40,7 +40,7 @@ trait RegionIdUpdateMask extends StObject {
   /** Required. The id of the region to update. */
   var regionId: String
   
-  /** Optional. The field mask indicating the fields to update. */
+  /** Optional. The comma-separated field mask indicating the fields to update. Example: `"displayName,postalCodeArea.regionCode"`. */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

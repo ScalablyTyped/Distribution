@@ -7,28 +7,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("StyleSheet")
 @js.native
-class StyleSheet ()
+/* standard dom */
+open class StyleSheet ()
   extends StObject
      with typings.std.StyleSheet {
   
+  /* standard dom */
   /* CompleteClass */
   var disabled: scala.Boolean = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val href: java.lang.String | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val media: typings.std.MediaList = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val ownerNode: typings.std.Element | typings.std.ProcessingInstruction | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val parentStyleSheet: typings.std.CSSStyleSheet | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val title: java.lang.String | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val `type`: java.lang.String = js.native
 }

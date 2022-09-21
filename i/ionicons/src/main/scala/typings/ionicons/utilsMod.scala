@@ -2,6 +2,7 @@ package typings.ionicons
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ionicons.iconMod.Icon
+import typings.std.HTMLElement
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -55,9 +56,12 @@ object utilsMod {
   
   inline def getUrl(i: Icon): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(i.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
+  inline def inheritAttributes(el: HTMLElement): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("inheritAttributes")(el.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def inheritAttributes(el: HTMLElement, attributes: js.Array[String]): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("inheritAttributes")(el.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  
   inline def isSrc(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSrc")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isStr(`val`: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStr")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
+  inline def isStr(`val`: Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStr")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
   inline def toLower(`val`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLower")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

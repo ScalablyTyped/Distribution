@@ -6,22 +6,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AllowAddShape extends StObject {
   
+  /**
+    * Specifies whether a user can add a shape.
+    */
   var allowAddShape: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether a user can change a connection.
+    */
   var allowChangeConnection: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether a user can change connector points.
+    */
   var allowChangeConnectorPoints: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether a user can change a connector&apos;s text.
+    */
   var allowChangeConnectorText: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether a user can change a shape&apos;s text.
+    */
   var allowChangeShapeText: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether a user can delete a connector.
+    */
   var allowDeleteConnector: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether a user can delete a shape.
+    */
   var allowDeleteShape: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether a user can move a shape.
+    */
   var allowMoveShape: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether a user can resize a shape.
+    */
   var allowResizeShape: js.UndefOr[Boolean] = js.undefined
 }
 object AllowAddShape {

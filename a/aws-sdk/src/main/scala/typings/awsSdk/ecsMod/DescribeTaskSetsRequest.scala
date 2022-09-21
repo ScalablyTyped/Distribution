@@ -12,7 +12,7 @@ trait DescribeTaskSetsRequest extends StObject {
   var cluster: String
   
   /**
-    * Specifies whether to see the resource tags for the task set. If TAGS is specified, the tags are included in the response. If this field is omitted, tags are not included in the response.
+    * Specifies whether to see the resource tags for the task set. If TAGS is specified, the tags are included in the response. If this field is omitted, tags aren't included in the response.
     */
   var include: js.UndefOr[TaskSetFieldList] = js.undefined
   
@@ -41,7 +41,7 @@ object DescribeTaskSetsRequest {
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    inline def setIncludeVarargs(value: TaskSetField*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: TaskSetField*): Self = StObject.set(x, "include", js.Array(value*))
     
     inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
@@ -49,6 +49,6 @@ object DescribeTaskSetsRequest {
     
     inline def setTaskSetsUndefined: Self = StObject.set(x, "taskSets", js.undefined)
     
-    inline def setTaskSetsVarargs(value: String*): Self = StObject.set(x, "taskSets", js.Array(value :_*))
+    inline def setTaskSetsVarargs(value: String*): Self = StObject.set(x, "taskSets", js.Array(value*))
   }
 }

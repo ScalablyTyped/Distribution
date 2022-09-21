@@ -10,10 +10,10 @@ Use express middlewares in Koa2, the one that really works.
 | ------------------ | :-------------: |
 | Full name          | express-to-koa |
 | Keywords           | express-to-koa, express, koa, koa2, middleware, converter, connect, framework |
-| # releases         | 11 |
-| # dependents       | 6 |
-| # downloads        | 51558 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6597.666666666667 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/kaelzhang/express-to-koa#readme)

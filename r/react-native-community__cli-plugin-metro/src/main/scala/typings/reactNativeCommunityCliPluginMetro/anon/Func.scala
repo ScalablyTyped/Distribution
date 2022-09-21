@@ -1,0 +1,56 @@
+package typings.reactNativeCommunityCliPluginMetro.anon
+
+import typings.reactNativeCommunityCliPluginMetro.bundleCommandLineArgsMod.CommandLineArgs
+import typings.reactNativeCommunityCliTypes.mod.Config
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Func extends StObject {
+  
+  var description: String
+  
+  def func(_underscore: js.Array[String], config: Config, args: CommandLineArgs, output: Any): js.Promise[Any]
+  
+  var name: String
+  
+  var options: js.Array[
+    Default | Description | Name | Parse | DefaultDescription | DescriptionName | NameParse
+  ]
+  
+  def withOutput(_underscore: js.Array[String], config: Config, args: CommandLineArgs, output: Any): js.Promise[Any]
+}
+object Func {
+  
+  inline def apply(
+    description: String,
+    func: (js.Array[String], Config, CommandLineArgs, Any) => js.Promise[Any],
+    name: String,
+    options: js.Array[
+      Default | Description | Name | Parse | DefaultDescription | DescriptionName | NameParse
+    ],
+    withOutput: (js.Array[String], Config, CommandLineArgs, Any) => js.Promise[Any]
+  ): Func = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], func = js.Any.fromFunction4(func), name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], withOutput = js.Any.fromFunction4(withOutput))
+    __obj.asInstanceOf[Func]
+  }
+  
+  extension [Self <: Func](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setFunc(value: (js.Array[String], Config, CommandLineArgs, Any) => js.Promise[Any]): Self = StObject.set(x, "func", js.Any.fromFunction4(value))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setOptions(
+      value: js.Array[
+          Default | Description | Name | Parse | DefaultDescription | DescriptionName | NameParse
+        ]
+    ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsVarargs(value: (Default | Description | Name | Parse | DefaultDescription | DescriptionName | NameParse)*): Self = StObject.set(x, "options", js.Array(value*))
+    
+    inline def setWithOutput(value: (js.Array[String], Config, CommandLineArgs, Any) => js.Promise[Any]): Self = StObject.set(x, "withOutput", js.Any.fromFunction4(value))
+  }
+}

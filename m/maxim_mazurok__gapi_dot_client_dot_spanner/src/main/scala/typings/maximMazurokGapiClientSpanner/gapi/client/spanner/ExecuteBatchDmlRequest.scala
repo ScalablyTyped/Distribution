@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ExecuteBatchDmlRequest extends StObject {
   
+  /** Common options for this request. */
+  var requestOptions: js.UndefOr[RequestOptions] = js.undefined
+  
   /**
     * Required. A per-transaction sequence number used to identify this request. This field makes each request idempotent such that if the request is received multiple times, at most one
     * will succeed. The sequence number must be monotonically increasing within the transaction. If a request arrives for the first time with an out-of-order sequence number, the
@@ -34,6 +37,10 @@ object ExecuteBatchDmlRequest {
   
   extension [Self <: ExecuteBatchDmlRequest](x: Self) {
     
+    inline def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
+    
     inline def setSeqno(value: String): Self = StObject.set(x, "seqno", value.asInstanceOf[js.Any])
     
     inline def setSeqnoUndefined: Self = StObject.set(x, "seqno", js.undefined)
@@ -42,7 +49,7 @@ object ExecuteBatchDmlRequest {
     
     inline def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
     
-    inline def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value*))
     
     inline def setTransaction(value: TransactionSelector): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     

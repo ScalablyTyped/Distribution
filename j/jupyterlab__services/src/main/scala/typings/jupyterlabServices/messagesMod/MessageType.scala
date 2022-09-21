@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jupyterlabServices.jupyterlabServicesStrings.error
   - typings.jupyterlabServices.jupyterlabServicesStrings.execute_input
   - typings.jupyterlabServices.jupyterlabServicesStrings.execute_result
+  - typings.jupyterlabServices.jupyterlabServicesStrings.shutdown_reply
   - typings.jupyterlabServices.jupyterlabServicesStrings.status
   - typings.jupyterlabServices.jupyterlabServicesStrings.stream
   - typings.jupyterlabServices.jupyterlabServicesStrings.update_display_data
@@ -33,7 +34,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jupyterlabServices.jupyterlabServicesStrings.is_complete_request
   - typings.jupyterlabServices.jupyterlabServicesStrings.kernel_info_reply
   - typings.jupyterlabServices.jupyterlabServicesStrings.kernel_info_request
-  - typings.jupyterlabServices.jupyterlabServicesStrings.shutdown_reply
   - typings.jupyterlabServices.jupyterlabServicesStrings.shutdown_request
   - typings.jupyterlabServices.jupyterlabServicesStrings.debug_request
   - typings.jupyterlabServices.jupyterlabServicesStrings.debug_reply

@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import typings.react.mod.ReactNode
 import typings.reactNative.reactNativeStrings.`box-none`
 import typings.reactNative.reactNativeStrings.`box-only`
 import typings.reactNative.reactNativeStrings.auto
@@ -14,7 +15,10 @@ trait ViewProps
      with ViewPropsIOS
      with GestureResponderHandlers
      with Touchable
+     with PointerEvents
      with AccessibilityProps {
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * This defines how far a touch event can start away from the view.
@@ -88,6 +92,10 @@ object ViewProps {
   }
   
   extension [Self <: ViewProps](x: Self) {
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setHitSlop(value: Insets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
     

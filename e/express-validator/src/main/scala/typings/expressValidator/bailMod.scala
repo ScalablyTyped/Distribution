@@ -11,12 +11,12 @@ object bailMod {
   
   @JSImport("express-validator/src/context-items/bail", "Bail")
   @js.native
-  class Bail ()
+  open class Bail ()
     extends StObject
        with ContextItem {
     
     def run(context: Context): js.Promise[Unit] = js.native
     /* CompleteClass */
-    override def run(context: Context, value: js.Any, meta: Meta): js.Promise[Unit] = js.native
+    override def run(context: Context, value: Any, meta: Meta): js.Promise[Unit] = js.native
   }
 }

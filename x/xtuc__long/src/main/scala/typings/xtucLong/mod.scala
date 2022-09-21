@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("@xtuc/long", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Long {
     /**
@@ -168,7 +168,7 @@ object mod {
     * Tests if the specified object is a Long.
     */
   /* static member */
-  inline def isLong(obj: js.Any): /* is @xtuc/long.@xtuc/long.Long */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLong")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @xtuc/long.@xtuc/long.Long */ Boolean]
+  inline def isLong(obj: Any): /* is @xtuc/long.@xtuc/long.Long */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLong")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @xtuc/long.@xtuc/long.Long */ Boolean]
   
   @js.native
   trait Long extends StObject {

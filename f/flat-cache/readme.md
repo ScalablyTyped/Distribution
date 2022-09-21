@@ -11,9 +11,9 @@ A stupidly simple key/value storage using files to persist some data
 | Full name          | flat-cache |
 | Keywords           | json cache, simple cache, file cache, key par, key value, cache |
 | # releases         | 5 |
-| # dependents       | 114 |
-| # downloads        | 557054179 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 9.5548942E7 |
+| # stars            | 124.0 |
 
 ## Links
 - [Homepage](https://github.com/royriojas/flat-cache#readme)

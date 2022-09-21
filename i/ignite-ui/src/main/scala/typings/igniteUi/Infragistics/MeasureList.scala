@@ -18,11 +18,11 @@ trait MeasureList extends StObject {
     *
     * @param value
     */
-  def measures(value: js.Object): js.Array[js.Any]
+  def measures(value: js.Object): js.Array[Any]
 }
 object MeasureList {
   
-  inline def apply(caption: js.Object => String, measures: js.Object => js.Array[js.Any]): MeasureList = {
+  inline def apply(caption: js.Object => String, measures: js.Object => js.Array[Any]): MeasureList = {
     val __obj = js.Dynamic.literal(caption = js.Any.fromFunction1(caption), measures = js.Any.fromFunction1(measures))
     __obj.asInstanceOf[MeasureList]
   }
@@ -31,6 +31,6 @@ object MeasureList {
     
     inline def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     
-    inline def setMeasures(value: js.Object => js.Array[js.Any]): Self = StObject.set(x, "measures", js.Any.fromFunction1(value))
+    inline def setMeasures(value: js.Object => js.Array[Any]): Self = StObject.set(x, "measures", js.Any.fromFunction1(value))
   }
 }

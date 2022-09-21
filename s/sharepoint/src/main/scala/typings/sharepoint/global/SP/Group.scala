@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Group")
 @js.native
-class Group ()
+open class Group ()
   extends StObject
      with typings.sharepoint.SP.Group

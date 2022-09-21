@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.JavaScriptLoader")
 @js.native
-class JavaScriptLoader protected ()
+open class JavaScriptLoader protected ()
   extends StObject
      with typings.preloadjs.createjs.AbstractLoader {
   def this(loadItem: js.Object, preferXHR: Boolean) = this()

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TestIdentityProviderResponse extends StObject {
   
   /**
-    * A message that indicates whether the test was successful or not.
+    * A message that indicates whether the test was successful or not.  If an empty string is returned, the most likely cause is that the authentication failed due to an incorrect username or password. 
     */
   var Message: js.UndefOr[typings.awsSdk.transferMod.Message] = js.undefined
   

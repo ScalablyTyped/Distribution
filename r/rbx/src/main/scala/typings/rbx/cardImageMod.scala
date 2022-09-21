@@ -54,7 +54,7 @@ object cardImageMod {
   
   @JSImport("rbx/components/card/card-image", "CardImage")
   @js.native
-  val CardImage: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val CardImage: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait CardImageProps extends StObject {

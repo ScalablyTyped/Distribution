@@ -1,10 +1,13 @@
 package typings.stubby
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.node.tlsMod.TlsOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,36 +16,51 @@ object mod {
   
   @JSImport("stubby", "Stubby")
   @js.native
-  class Stubby () extends StObject {
+  open class Stubby () extends StObject {
     
-    var adminPortal: Server = js.native
+    var adminPortal: Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
     
     /** Simulates a DELETE request to the admin portal, with the callback receiving the resultant data. */
-    def delete(id: String, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def delete(id: String, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     var endpoints: Endpoints = js.native
     
     /** Simulates a GET request to the admin portal, with the callback receiving the resultant data. */
-    def get(callback: js.Function2[/* err */ js.UndefOr[Error], /* endpoints */ Endpoints, Unit]): Unit = js.native
-    def get(id: String, callback: js.Function2[/* err */ js.UndefOr[Error], /* endpoint */ Endpoint, Unit]): Unit = js.native
+    def get(callback: js.Function2[/* err */ js.UndefOr[js.Error], /* endpoints */ Endpoints, Unit]): Unit = js.native
+    def get(id: String, callback: js.Function2[/* err */ js.UndefOr[js.Error], /* endpoint */ Endpoint, Unit]): Unit = js.native
     
     /** Simulates a POST request to the admin portal, with the callback receiving the resultant data. */
-    def post(data: Endpoint, callback: js.Function2[/* err */ js.UndefOr[Error], /* endpoint */ Endpoint, Unit]): Unit = js.native
+    def post(
+      data: Endpoint,
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* endpoint */ Endpoint, Unit]
+    ): Unit = js.native
     
     /** Simulates a PUT request to the admin portal, with the callback receiving the resultant data. */
-    def put(id: String, data: Endpoint, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def put(id: String, data: Endpoint, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     /** Starts stubby's stubs and admin portals. Executes `callback` afterward. */
     def start(): Unit = js.native
-    def start(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def start(callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     def start(options: StubbyOptions): Unit = js.native
-    def start(options: StubbyOptions, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def start(options: StubbyOptions, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     /** Closes the connections and ports being used by stubby's stubs and admin portals. Executes callback afterward. */
     def stop(): Unit = js.native
-    def stop(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def stop(callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
-    var stubsPortal: Server = js.native
+    var stubsPortal: Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
     
     var tlsPortal: typings.node.tlsMod.Server = js.native
   }
@@ -69,22 +87,22 @@ object mod {
     
     def create(
       endpoint: js.Array[StubbyData],
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* endpoint */ Endpoint, Unit],
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* endpoint */ Endpoint, Unit],
       datadir: String
     ): Unit = js.native
     def create(
       endpoint: StubbyData,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* endpoint */ Endpoint, Unit],
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* endpoint */ Endpoint, Unit],
       datadir: String
     ): Unit = js.native
     
-    def delete(id: String, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def delete(id: String, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
-    def gather(callback: js.Function2[/* err */ js.UndefOr[Error], /* endpoints */ js.Array[Endpoint], Unit]): Unit = js.native
+    def gather(callback: js.Function2[/* err */ js.UndefOr[js.Error], /* endpoints */ js.Array[Endpoint], Unit]): Unit = js.native
     
-    def retrieve(id: String, callback: js.Function2[/* err */ js.UndefOr[Error], /* endpoint */ Endpoint, Unit]): Unit = js.native
+    def retrieve(id: String, callback: js.Function2[/* err */ js.UndefOr[js.Error], /* endpoint */ Endpoint, Unit]): Unit = js.native
     
-    def update(id: String, data: StubbyData, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def update(id: String, data: StubbyData, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
   }
   
   trait StubbyCommonOptions extends StObject {
@@ -132,7 +150,7 @@ object mod {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: StubbyData*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: StubbyData*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDatadir(value: String): Self = StObject.set(x, "datadir", value.asInstanceOf[js.Any])
       
@@ -202,7 +220,7 @@ object mod {
       
       inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
       
-      inline def setResponseVarargs(value: (String | StubbyResponse)*): Self = StObject.set(x, "response", js.Array(value :_*))
+      inline def setResponseVarargs(value: (String | StubbyResponse)*): Self = StObject.set(x, "response", js.Array(value*))
     }
   }
   
@@ -361,7 +379,7 @@ object mod {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setMethodVarargs(value: StubbyMethod*): Self = StObject.set(x, "method", js.Array(value :_*))
+      inline def setMethodVarargs(value: StubbyMethod*): Self = StObject.set(x, "method", js.Array(value*))
       
       inline def setPost(value: String): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
       
@@ -465,11 +483,11 @@ object mod {
       
       inline def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value :_*))
+      inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value*))
       
       inline def setKey(value: String | Buffer | (js.Array[Buffer | js.Object])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setKeyVarargs(value: (Buffer | js.Object)*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: (Buffer | js.Object)*): Self = StObject.set(x, "key", js.Array(value*))
     }
   }
   
@@ -494,7 +512,7 @@ object mod {
       
       inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
       
-      inline def setPfxVarargs(value: (String | Buffer | js.Object)*): Self = StObject.set(x, "pfx", js.Array(value :_*))
+      inline def setPfxVarargs(value: (String | Buffer | js.Object)*): Self = StObject.set(x, "pfx", js.Array(value*))
     }
   }
 }

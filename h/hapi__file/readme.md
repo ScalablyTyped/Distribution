@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__file
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 General purpose file utilities
@@ -10,10 +10,10 @@ General purpose file utilities
 | ------------------ | :-------------: |
 | Full name          | @hapi/file |
 | Keywords           | utilities, file |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 13355129 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2287034.3333333335 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/file#readme)

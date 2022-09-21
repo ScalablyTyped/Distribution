@@ -20,6 +20,11 @@ trait CreateCacheSubnetGroupMessage extends StObject {
     * A list of VPC subnet IDs for the cache subnet group.
     */
   var SubnetIds: SubnetIdentifierList
+  
+  /**
+    * A list of tags to be added to this resource. A tag is a key-value pair. A tag key must be accompanied by a tag value, although null is accepted.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateCacheSubnetGroupMessage {
   
@@ -36,6 +41,12 @@ object CreateCacheSubnetGroupMessage {
     
     inline def setSubnetIds(value: SubnetIdentifierList): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
-    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

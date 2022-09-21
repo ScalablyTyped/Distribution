@@ -11,17 +11,17 @@ trait ParsedTemplate extends StObject {
   var e: js.UndefOr[StringDictionary[js.Function]] = js.undefined
   
   /** If the template includes any partials, the map of partial name -> template nodes. */
-  var p: js.UndefOr[StringDictionary[js.Array[js.Any]]] = js.undefined
+  var p: js.UndefOr[StringDictionary[js.Array[Any]]] = js.undefined
   
   /** The array of template nodes. */
-  var t: js.Array[js.Any]
+  var t: js.Array[Any]
   
   /** The version of the template spec that produced this template. */
   var v: Double
 }
 object ParsedTemplate {
   
-  inline def apply(t: js.Array[js.Any], v: Double): ParsedTemplate = {
+  inline def apply(t: js.Array[Any], v: Double): ParsedTemplate = {
     val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedTemplate]
   }
@@ -32,13 +32,13 @@ object ParsedTemplate {
     
     inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
     
-    inline def setP(value: StringDictionary[js.Array[js.Any]]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: StringDictionary[js.Array[Any]]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
-    inline def setT(value: js.Array[js.Any]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: js.Array[Any]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
-    inline def setTVarargs(value: js.Any*): Self = StObject.set(x, "t", js.Array(value :_*))
+    inline def setTVarargs(value: Any*): Self = StObject.set(x, "t", js.Array(value*))
     
     inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,7 @@ trait CreateInstanceRequest extends StObject {
   var IdentityManagementType: DirectoryType
   
   /**
-    * Whether your contact center handles incoming contacts.
+    * Your contact center handles incoming contacts.
     */
   var InboundCallsEnabled: typings.awsSdk.connectMod.InboundCallsEnabled
   
@@ -32,7 +32,7 @@ trait CreateInstanceRequest extends StObject {
   var InstanceAlias: js.UndefOr[DirectoryAlias] = js.undefined
   
   /**
-    * Whether your contact center allows outbound calls.
+    * Your contact center allows outbound calls.
     */
   var OutboundCallsEnabled: typings.awsSdk.connectMod.OutboundCallsEnabled
 }

@@ -1,38 +1,46 @@
 package typings.aliOss.mod
 
+import typings.aliOss.anon.AccessKeyId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Options extends StObject {
   
+  /** access secret you create */
   var accessKeyId: String
   
-  // access secret you create
+  /** access secret you create */
   var accessKeySecret: String
   
-  // used by temporary authorization
+  /** the default bucket you want to access If you don't have any bucket, please use putBucket() create one first. */
   var bucket: js.UndefOr[String] = js.undefined
   
-  // instance level timeout for all operations, default is 60s
+  /** use custom domain name */
   var cname: js.UndefOr[Boolean] = js.undefined
   
-  //  the default bucket you want to access If you don't have any bucket, please use putBucket() create one first.
+  /** oss region domain. It takes priority over region. */
   var endpoint: js.UndefOr[String] = js.undefined
   
-  // the bucket data region location, please see Data Regions, default is oss-cn-hangzhou.
+  /** access OSS with aliyun internal network or not, default is false. If your servers are running on aliyun too, you can set true to save lot of money. */
   var internal: js.UndefOr[Boolean] = js.undefined
   
-  // oss region domain. It takes priority over region.
+  /** used by auto set stsToken、accessKeyId、accessKeySecret when sts info expires. return value must be object contains stsToken、accessKeyId、accessKeySecret */
+  var refreshSTSToken: js.UndefOr[js.Function0[js.Promise[AccessKeyId]]] = js.undefined
+  
+  /** use time (ms) of refresh STSToken interval it should be less than sts info expire interval, default is 300000ms(5min) when sts info expires. */
+  var refreshSTSTokenInterval: js.UndefOr[Double] = js.undefined
+  
+  /** the bucket data region location, please see Data Regions, default is oss-cn-hangzhou. */
   var region: js.UndefOr[String] = js.undefined
   
-  //  access OSS with aliyun internal network or not, default is false. If your servers are running on aliyun too, you can set true to save lot of money.
+  /** instruct OSS client to use HTTPS (secure: true) or HTTP (secure: false) protocol. */
   var secure: js.UndefOr[Boolean] = js.undefined
   
-  // access secret you create
+  /** used by temporary authorization */
   var stsToken: js.UndefOr[String] = js.undefined
   
-  // instruct OSS client to use HTTPS (secure: true) or HTTP (secure: false) protocol.
+  /** instance level timeout for all operations, default is 60s */
   var timeout: js.UndefOr[String | Double] = js.undefined
 }
 object Options {
@@ -63,6 +71,14 @@ object Options {
     inline def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
     
     inline def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
+    
+    inline def setRefreshSTSToken(value: () => js.Promise[AccessKeyId]): Self = StObject.set(x, "refreshSTSToken", js.Any.fromFunction0(value))
+    
+    inline def setRefreshSTSTokenInterval(value: Double): Self = StObject.set(x, "refreshSTSTokenInterval", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshSTSTokenIntervalUndefined: Self = StObject.set(x, "refreshSTSTokenInterval", js.undefined)
+    
+    inline def setRefreshSTSTokenUndefined: Self = StObject.set(x, "refreshSTSToken", js.undefined)
     
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     

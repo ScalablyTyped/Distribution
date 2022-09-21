@@ -10,10 +10,10 @@ Run Jasmine tests
 | ------------------ | :-------------: |
 | Full name          | gulp-jasmine |
 | Keywords           | bdd, framework, gulpplugin, jasmine, qunit, runner, spec, tap, tdd, test, testing, unit |
-| # releases         | 0 |
-| # dependents       | 55 |
-| # downloads        | 682605 |
-| # stars            | 34 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 52129.333333333336 |
+| # stars            | 111.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/gulp-jasmine#readme)

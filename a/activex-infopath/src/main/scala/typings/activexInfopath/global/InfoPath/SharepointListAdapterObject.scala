@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.SharepointListAdapterObject")
 @js.native
-/* private */ class SharepointListAdapterObject ()
+/* private */ open class SharepointListAdapterObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.SharepointListAdapterObject {
   

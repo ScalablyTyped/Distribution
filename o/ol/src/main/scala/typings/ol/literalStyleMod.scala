@@ -65,7 +65,7 @@ object literalStyleMod {
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      inline def setFilterVarargs(value: (js.Any | Double)*): Self = StObject.set(x, "filter", js.Array(value :_*))
+      inline def setFilterVarargs(value: (Any | Double)*): Self = StObject.set(x, "filter", js.Array(value*))
       
       inline def setSymbol(value: LiteralSymbolStyle): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
@@ -110,19 +110,19 @@ object literalStyleMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: (Double | ExpressionValue)*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: (Double | ExpressionValue)*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setOffset(value: js.Array[ExpressionValue]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOffsetVarargs(value: ExpressionValue*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: ExpressionValue*): Self = StObject.set(x, "offset", js.Array(value*))
       
       inline def setOpacity(value: ExpressionValue): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setOpacityVarargs(value: (js.Any | Double)*): Self = StObject.set(x, "opacity", js.Array(value :_*))
+      inline def setOpacityVarargs(value: (Any | Double)*): Self = StObject.set(x, "opacity", js.Array(value*))
       
       inline def setRotateWithView(value: Boolean): Self = StObject.set(x, "rotateWithView", value.asInstanceOf[js.Any])
       
@@ -132,11 +132,11 @@ object literalStyleMod {
       
       inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
       
-      inline def setRotationVarargs(value: (js.Any | Double)*): Self = StObject.set(x, "rotation", js.Array(value :_*))
+      inline def setRotationVarargs(value: (Any | Double)*): Self = StObject.set(x, "rotation", js.Array(value*))
       
       inline def setSize(value: ExpressionValue | js.Array[ExpressionValue]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      inline def setSizeVarargs(value: (js.Any | Double | ExpressionValue)*): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: (Any | Double | ExpressionValue)*): Self = StObject.set(x, "size", js.Array(value*))
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
@@ -148,7 +148,7 @@ object literalStyleMod {
       
       inline def setTextureCoordUndefined: Self = StObject.set(x, "textureCoord", js.undefined)
       
-      inline def setTextureCoordVarargs(value: ExpressionValue*): Self = StObject.set(x, "textureCoord", js.Array(value :_*))
+      inline def setTextureCoordVarargs(value: ExpressionValue*): Self = StObject.set(x, "textureCoord", js.Array(value*))
     }
   }
 }

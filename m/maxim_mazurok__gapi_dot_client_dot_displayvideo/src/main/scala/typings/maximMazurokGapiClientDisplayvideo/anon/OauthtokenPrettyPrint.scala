@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
-import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.InsertionOrder
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.Creative
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait OauthtokenPrettyPrint extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** Output only. The unique ID of the advertiser the insertion order belongs to. */
+  /** Output only. The unique ID of the advertiser the creative belongs to. */
   var advertiserId: String
   
   /** Data format for response. */
@@ -39,7 +39,7 @@ trait OauthtokenPrettyPrint extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: InsertionOrder
+  var resource: Creative
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait OauthtokenPrettyPrint extends StObject {
 }
 object OauthtokenPrettyPrint {
   
-  inline def apply(advertiserId: String, resource: InsertionOrder): OauthtokenPrettyPrint = {
+  inline def apply(advertiserId: String, resource: Creative): OauthtokenPrettyPrint = {
     val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthtokenPrettyPrint]
   }
@@ -94,7 +94,7 @@ object OauthtokenPrettyPrint {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: InsertionOrder): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Creative): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

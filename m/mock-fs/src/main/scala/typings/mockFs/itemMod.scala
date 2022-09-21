@@ -1,6 +1,5 @@
 package typings.mockFs
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object itemMod {
     */
   @JSImport("mock-fs/lib/item", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Item {
     
@@ -30,15 +29,15 @@ object itemMod {
     
     /** Get access time. */
     /* CompleteClass */
-    override def getATime(): Date = js.native
+    override def getATime(): js.Date = js.native
     
     /** Get birth time. */
     /* CompleteClass */
-    override def getBirthtime(): Date = js.native
+    override def getBirthtime(): js.Date = js.native
     
     /** Get change time. */
     /* CompleteClass */
-    override def getCTime(): Date = js.native
+    override def getCTime(): js.Date = js.native
     
     /** Get group id. */
     /* CompleteClass */
@@ -46,7 +45,7 @@ object itemMod {
     
     /** Get modification time. */
     /* CompleteClass */
-    override def getMTime(): Date = js.native
+    override def getMTime(): js.Date = js.native
     
     /** Get mode (permission only, e.g 0666). */
     /* CompleteClass */
@@ -62,15 +61,15 @@ object itemMod {
     
     /** Set access time. */
     /* CompleteClass */
-    override def setATime(atime: Date): Unit = js.native
+    override def setATime(atime: js.Date): Unit = js.native
     
     /** Set birth time. */
     /* CompleteClass */
-    override def setBirthtime(birthtime: Date): Unit = js.native
+    override def setBirthtime(birthtime: js.Date): Unit = js.native
     
     /** Set change time. */
     /* CompleteClass */
-    override def setCTime(ctime: Date): Unit = js.native
+    override def setCTime(ctime: js.Date): Unit = js.native
     
     /** Set group id. */
     /* CompleteClass */
@@ -78,7 +77,7 @@ object itemMod {
     
     /** Set modification time. */
     /* CompleteClass */
-    override def setMTime(mtime: Date): Unit = js.native
+    override def setMTime(mtime: js.Date): Unit = js.native
     
     /** Set mode (permission only, e.g 0666). */
     /* CompleteClass */
@@ -102,16 +101,16 @@ object itemMod {
   object ExtendedStats {
     
     inline def apply(
-      atime: Date,
-      birthtime: Date,
+      atime: js.Date,
+      birthtime: js.Date,
       blksize: Double,
       blocks: Double,
-      ctime: Date,
+      ctime: js.Date,
       dev: Double,
       gid: Double,
       ino: Double,
       mode: Double,
-      mtime: Date,
+      mtime: js.Date,
       nlink: Double,
       rdev: Double,
       size: Double,
@@ -146,19 +145,19 @@ object itemMod {
     def canWrite(): Boolean
     
     /** Get access time. */
-    def getATime(): Date
+    def getATime(): js.Date
     
     /** Get birth time. */
-    def getBirthtime(): Date
+    def getBirthtime(): js.Date
     
     /** Get change time. */
-    def getCTime(): Date
+    def getCTime(): js.Date
     
     /** Get group id. */
     def getGid(): Double
     
     /** Get modification time. */
-    def getMTime(): Date
+    def getMTime(): js.Date
     
     /** Get mode (permission only, e.g 0666). */
     def getMode(): Double
@@ -170,19 +169,19 @@ object itemMod {
     def getUid(): Double
     
     /** Set access time. */
-    def setATime(atime: Date): Unit
+    def setATime(atime: js.Date): Unit
     
     /** Set birth time. */
-    def setBirthtime(birthtime: Date): Unit
+    def setBirthtime(birthtime: js.Date): Unit
     
     /** Set change time. */
-    def setCTime(ctime: Date): Unit
+    def setCTime(ctime: js.Date): Unit
     
     /** Set group id. */
     def setGid(gid: Double): Unit
     
     /** Set modification time. */
-    def setMTime(mtime: Date): Unit
+    def setMTime(mtime: js.Date): Unit
     
     /** Set mode (permission only, e.g 0666). */
     def setMode(mode: Double): Unit
@@ -196,19 +195,19 @@ object itemMod {
       canExecute: () => Boolean,
       canRead: () => Boolean,
       canWrite: () => Boolean,
-      getATime: () => Date,
-      getBirthtime: () => Date,
-      getCTime: () => Date,
+      getATime: () => js.Date,
+      getBirthtime: () => js.Date,
+      getCTime: () => js.Date,
       getGid: () => Double,
-      getMTime: () => Date,
+      getMTime: () => js.Date,
       getMode: () => Double,
       getStats: () => Stats,
       getUid: () => Double,
-      setATime: Date => Unit,
-      setBirthtime: Date => Unit,
-      setCTime: Date => Unit,
+      setATime: js.Date => Unit,
+      setBirthtime: js.Date => Unit,
+      setCTime: js.Date => Unit,
       setGid: Double => Unit,
-      setMTime: Date => Unit,
+      setMTime: js.Date => Unit,
       setMode: Double => Unit,
       setUid: Double => Unit
     ): Item = {
@@ -224,15 +223,15 @@ object itemMod {
       
       inline def setCanWrite(value: () => Boolean): Self = StObject.set(x, "canWrite", js.Any.fromFunction0(value))
       
-      inline def setGetATime(value: () => Date): Self = StObject.set(x, "getATime", js.Any.fromFunction0(value))
+      inline def setGetATime(value: () => js.Date): Self = StObject.set(x, "getATime", js.Any.fromFunction0(value))
       
-      inline def setGetBirthtime(value: () => Date): Self = StObject.set(x, "getBirthtime", js.Any.fromFunction0(value))
+      inline def setGetBirthtime(value: () => js.Date): Self = StObject.set(x, "getBirthtime", js.Any.fromFunction0(value))
       
-      inline def setGetCTime(value: () => Date): Self = StObject.set(x, "getCTime", js.Any.fromFunction0(value))
+      inline def setGetCTime(value: () => js.Date): Self = StObject.set(x, "getCTime", js.Any.fromFunction0(value))
       
       inline def setGetGid(value: () => Double): Self = StObject.set(x, "getGid", js.Any.fromFunction0(value))
       
-      inline def setGetMTime(value: () => Date): Self = StObject.set(x, "getMTime", js.Any.fromFunction0(value))
+      inline def setGetMTime(value: () => js.Date): Self = StObject.set(x, "getMTime", js.Any.fromFunction0(value))
       
       inline def setGetMode(value: () => Double): Self = StObject.set(x, "getMode", js.Any.fromFunction0(value))
       
@@ -240,15 +239,15 @@ object itemMod {
       
       inline def setGetUid(value: () => Double): Self = StObject.set(x, "getUid", js.Any.fromFunction0(value))
       
-      inline def setSetATime(value: Date => Unit): Self = StObject.set(x, "setATime", js.Any.fromFunction1(value))
+      inline def setSetATime(value: js.Date => Unit): Self = StObject.set(x, "setATime", js.Any.fromFunction1(value))
       
-      inline def setSetBirthtime(value: Date => Unit): Self = StObject.set(x, "setBirthtime", js.Any.fromFunction1(value))
+      inline def setSetBirthtime(value: js.Date => Unit): Self = StObject.set(x, "setBirthtime", js.Any.fromFunction1(value))
       
-      inline def setSetCTime(value: Date => Unit): Self = StObject.set(x, "setCTime", js.Any.fromFunction1(value))
+      inline def setSetCTime(value: js.Date => Unit): Self = StObject.set(x, "setCTime", js.Any.fromFunction1(value))
       
       inline def setSetGid(value: Double => Unit): Self = StObject.set(x, "setGid", js.Any.fromFunction1(value))
       
-      inline def setSetMTime(value: Date => Unit): Self = StObject.set(x, "setMTime", js.Any.fromFunction1(value))
+      inline def setSetMTime(value: js.Date => Unit): Self = StObject.set(x, "setMTime", js.Any.fromFunction1(value))
       
       inline def setSetMode(value: Double => Unit): Self = StObject.set(x, "setMode", js.Any.fromFunction1(value))
       
@@ -258,13 +257,13 @@ object itemMod {
   
   trait Stats extends StObject {
     
-    var atime: Date
+    var atime: js.Date
     
-    var birthtime: Date
+    var birthtime: js.Date
     
     var blksize: Double
     
-    var ctime: Date
+    var ctime: js.Date
     
     var dev: Double
     
@@ -272,7 +271,7 @@ object itemMod {
     
     var ino: Double
     
-    var mtime: Date
+    var mtime: js.Date
     
     var nlink: Double
     
@@ -283,14 +282,14 @@ object itemMod {
   object Stats {
     
     inline def apply(
-      atime: Date,
-      birthtime: Date,
+      atime: js.Date,
+      birthtime: js.Date,
       blksize: Double,
-      ctime: Date,
+      ctime: js.Date,
       dev: Double,
       gid: Double,
       ino: Double,
-      mtime: Date,
+      mtime: js.Date,
       nlink: Double,
       rdev: Double,
       uid: Double
@@ -301,13 +300,13 @@ object itemMod {
     
     extension [Self <: Stats](x: Self) {
       
-      inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+      inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
-      inline def setBirthtime(value: Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
+      inline def setBirthtime(value: js.Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
       
       inline def setBlksize(value: Double): Self = StObject.set(x, "blksize", value.asInstanceOf[js.Any])
       
-      inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+      inline def setCtime(value: js.Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       
       inline def setDev(value: Double): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
       
@@ -315,7 +314,7 @@ object itemMod {
       
       inline def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setNlink(value: Double): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
       

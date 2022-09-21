@@ -8,16 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaInstanceGroupsScopedList extends StObject {
   
   /**
-    * [Output Only] The list of instance groups that are contained in this
-    * scope.
+    * [Output Only] The list of instance groups that are contained in this scope.
     */
   var instanceGroups: js.UndefOr[js.Array[SchemaInstanceGroup]] = js.undefined
   
   /**
-    * [Output Only] An informational warning that replaces the list of instance
-    * groups when the list is empty.
+    * [Output Only] An informational warning that replaces the list of instance groups when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaInstanceGroupsScopedList {
   
@@ -32,9 +30,11 @@ object SchemaInstanceGroupsScopedList {
     
     inline def setInstanceGroupsUndefined: Self = StObject.set(x, "instanceGroups", js.undefined)
     
-    inline def setInstanceGroupsVarargs(value: SchemaInstanceGroup*): Self = StObject.set(x, "instanceGroups", js.Array(value :_*))
+    inline def setInstanceGroupsVarargs(value: SchemaInstanceGroup*): Self = StObject.set(x, "instanceGroups", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

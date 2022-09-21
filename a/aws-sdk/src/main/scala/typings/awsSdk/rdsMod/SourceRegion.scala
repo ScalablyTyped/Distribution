@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SourceRegion extends StObject {
   
   /**
-    * The endpoint for the source AWS Region endpoint.
+    * The endpoint for the source Amazon Web Services Region endpoint.
     */
   var Endpoint: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the source AWS Region.
+    * The name of the source Amazon Web Services Region.
     */
   var RegionName: js.UndefOr[String] = js.undefined
   
   /**
-    * The status of the source AWS Region.
+    * The status of the source Amazon Web Services Region.
     */
   var Status: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Whether the source Amazon Web Services Region supports replicating automated backups to the current Amazon Web Services Region.
+    */
+  var SupportsDBInstanceAutomatedBackupsReplication: js.UndefOr[Boolean] = js.undefined
 }
 object SourceRegion {
   
@@ -41,5 +46,9 @@ object SourceRegion {
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
+    inline def setSupportsDBInstanceAutomatedBackupsReplication(value: Boolean): Self = StObject.set(x, "SupportsDBInstanceAutomatedBackupsReplication", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsDBInstanceAutomatedBackupsReplicationUndefined: Self = StObject.set(x, "SupportsDBInstanceAutomatedBackupsReplication", js.undefined)
   }
 }

@@ -17,6 +17,11 @@ trait JourneyResponse extends StObject {
   var ApplicationId: string
   
   /**
+    * The time when journey will stop sending messages. QuietTime should be configured first and SendingSchedule should be set to true.
+    */
+  var ClosedDays: js.UndefOr[typings.awsSdk.pinpointMod.ClosedDays] = js.undefined
+  
+  /**
     * The date, in ISO 8601 format, when the journey was created.
     */
   var CreationDate: js.UndefOr[string] = js.undefined
@@ -25,6 +30,11 @@ trait JourneyResponse extends StObject {
     * The unique identifier for the journey.
     */
   var Id: string
+  
+  /**
+    * The channel-specific configurations for the journey.
+    */
+  var JourneyChannelSettings: js.UndefOr[typings.awsSdk.pinpointMod.JourneyChannelSettings] = js.undefined
   
   /**
     * The date, in ISO 8601 format, when the journey was last modified.
@@ -47,6 +57,11 @@ trait JourneyResponse extends StObject {
   var Name: string
   
   /**
+    * The time when journey allow to send messages. QuietTime should be configured first and SendingSchedule should be set to true.
+    */
+  var OpenHours: js.UndefOr[typings.awsSdk.pinpointMod.OpenHours] = js.undefined
+  
+  /**
     * The quiet time settings for the journey. Quiet time is a specific time range when a journey doesn't send messages to participants, if all the following conditions are met: The EndpointDemographic.Timezone property of the endpoint for the participant is set to a valid value. The current time in the participant's time zone is later than or equal to the time specified by the QuietTime.Start property for the journey. The current time in the participant's time zone is earlier than or equal to the time specified by the QuietTime.End property for the journey. If any of the preceding conditions isn't met, the participant will receive messages from the journey, even if quiet time is enabled.
     */
   var QuietTime: js.UndefOr[typings.awsSdk.pinpointMod.QuietTime] = js.undefined
@@ -57,9 +72,19 @@ trait JourneyResponse extends StObject {
   var RefreshFrequency: js.UndefOr[string] = js.undefined
   
   /**
+    * Specifies whether a journey should be refreshed on segment update.
+    */
+  var RefreshOnSegmentUpdate: js.UndefOr[boolean] = js.undefined
+  
+  /**
     * The schedule settings for the journey.
     */
   var Schedule: js.UndefOr[JourneySchedule] = js.undefined
+  
+  /**
+    * Indicates if journey have Advance Quiet Time (OpenHours and ClosedDays). This flag should be set to true in order to allow (OpenHours and ClosedDays)
+    */
+  var SendingSchedule: js.UndefOr[boolean] = js.undefined
   
   /**
     * The unique identifier for the first activity in the journey.
@@ -75,6 +100,11 @@ trait JourneyResponse extends StObject {
     * The current status of the journey. Possible values are: DRAFT - The journey is being developed and hasn't been published yet. ACTIVE - The journey has been developed and published. Depending on the journey's schedule, the journey may currently be running or scheduled to start running at a later time. If a journey's status is ACTIVE, you can't add, change, or remove activities from it. COMPLETED - The journey has been published and has finished running. All participants have entered the journey and no participants are waiting to complete the journey or any activities in the journey. CANCELLED - The journey has been stopped. If a journey's status is CANCELLED, you can't add, change, or remove activities or segment settings from the journey. CLOSED - The journey has been published and has started running. It may have also passed its scheduled end time, or passed its scheduled start time and a refresh frequency hasn't been specified for it. If a journey's status is CLOSED, you can't add participants to it, and no existing participants can enter the journey for the first time. However, any existing participants who are currently waiting to start an activity may continue the journey.
     */
   var State: js.UndefOr[typings.awsSdk.pinpointMod.State] = js.undefined
+  
+  /**
+    * Specifies whether endpoints in quiet hours should enter a wait till the end of their quiet hours.
+    */
+  var WaitForQuietTime: js.UndefOr[boolean] = js.undefined
   
   /**
     * This object is not used or supported.
@@ -96,11 +126,19 @@ object JourneyResponse {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
+    inline def setClosedDays(value: ClosedDays): Self = StObject.set(x, "ClosedDays", value.asInstanceOf[js.Any])
+    
+    inline def setClosedDaysUndefined: Self = StObject.set(x, "ClosedDays", js.undefined)
+    
     inline def setCreationDate(value: string): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    
+    inline def setJourneyChannelSettings(value: JourneyChannelSettings): Self = StObject.set(x, "JourneyChannelSettings", value.asInstanceOf[js.Any])
+    
+    inline def setJourneyChannelSettingsUndefined: Self = StObject.set(x, "JourneyChannelSettings", js.undefined)
     
     inline def setLastModifiedDate(value: string): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
@@ -116,6 +154,10 @@ object JourneyResponse {
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
+    inline def setOpenHours(value: OpenHours): Self = StObject.set(x, "OpenHours", value.asInstanceOf[js.Any])
+    
+    inline def setOpenHoursUndefined: Self = StObject.set(x, "OpenHours", js.undefined)
+    
     inline def setQuietTime(value: QuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
     
     inline def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
@@ -124,9 +166,17 @@ object JourneyResponse {
     
     inline def setRefreshFrequencyUndefined: Self = StObject.set(x, "RefreshFrequency", js.undefined)
     
+    inline def setRefreshOnSegmentUpdate(value: boolean): Self = StObject.set(x, "RefreshOnSegmentUpdate", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshOnSegmentUpdateUndefined: Self = StObject.set(x, "RefreshOnSegmentUpdate", js.undefined)
+    
     inline def setSchedule(value: JourneySchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
     inline def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
+    
+    inline def setSendingSchedule(value: boolean): Self = StObject.set(x, "SendingSchedule", value.asInstanceOf[js.Any])
+    
+    inline def setSendingScheduleUndefined: Self = StObject.set(x, "SendingSchedule", js.undefined)
     
     inline def setStartActivity(value: string): Self = StObject.set(x, "StartActivity", value.asInstanceOf[js.Any])
     
@@ -143,5 +193,9 @@ object JourneyResponse {
     inline def setTags(value: MapOfString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setWaitForQuietTime(value: boolean): Self = StObject.set(x, "WaitForQuietTime", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForQuietTimeUndefined: Self = StObject.set(x, "WaitForQuietTime", js.undefined)
   }
 }

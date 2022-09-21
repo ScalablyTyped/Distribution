@@ -17,8 +17,8 @@ trait SaveDialogOptions extends StObject {
     * like "TypeScript", and an array of extensions, e.g.
     * ```ts
     * {
-    *     'Images': ['png', 'jpg']
-    *     'TypeScript': ['ts', 'tsx']
+    * 	'Images': ['png', 'jpg']
+    * 	'TypeScript': ['ts', 'tsx']
     * }
     * ```
     */

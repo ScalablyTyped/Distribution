@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-regexp" : "2.1.0"
+      "is-regexp" : "3.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "is-regexp" : "2.1.0"
+      "is-regexp" : "3.1.0"
     }
   ],
   "compile-devDependencies" : [

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/Node/index", "DistanceBlock")
 @js.native
-class DistanceBlock protected ()
+open class DistanceBlock protected ()
   extends typings.babylonjs.blocksIndexMod.DistanceBlock {
   /**
     * Creates a new DistanceBlock

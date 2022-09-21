@@ -29,7 +29,7 @@ object submoduleMod {
   
   @JSImport("nodegit/submodule", "Submodule")
   @js.native
-  class Submodule () extends StObject {
+  open class Submodule () extends StObject {
     
     def addFinalize(): js.Promise[Double] = js.native
     

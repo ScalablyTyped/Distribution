@@ -5,62 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new StencilParameters instance.
-  * @property func - Sets stencil test function. See {@link pc.GraphicsDevice#setStencilFunc}.
-  * @property ref - Sets stencil test reference value. See {@link pc.GraphicsDevice#setStencilFunc}.
-  * @property fail - Sets operation to perform if stencil test is failed. See {@link pc.GraphicsDevice#setStencilOperation}.
-  * @property zfail - Sets operation to perform if depth test is failed. See {@link pc.GraphicsDevice#setStencilOperation}.
-  * @property zpass - Sets operation to perform if both stencil and depth test are passed. See {@link pc.GraphicsDevice#setStencilOperation}.
-  * @property readMask - Sets stencil test reading mask. See {@link pc.GraphicsDevice#setStencilFunc}.
-  * @property writeMask - Sets stencil test writing mask. See {@link pc.GraphicsDevice#setStencilOperation}.
-  * @param options - Options object to configure the stencil parameters.
+  * Holds stencil test settings.
+  *
+  * @property {number} func Sets stencil test function. See {@link GraphicsDevice#setStencilFunc}.
+  * @property {number} ref Sets stencil test reference value. See
+  * {@link GraphicsDevice#setStencilFunc}.
+  * @property {number} fail Sets operation to perform if stencil test is failed. See
+  * {@link GraphicsDevice#setStencilOperation}.
+  * @property {number} zfail Sets operation to perform if depth test is failed. See
+  * {@link GraphicsDevice#setStencilOperation}.
+  * @property {number} zpass Sets operation to perform if both stencil and depth test are passed.
+  * See {@link GraphicsDevice#setStencilOperation}.
+  * @property {number} readMask Sets stencil test reading mask. See
+  * {@link GraphicsDevice#setStencilFunc}.
+  * @property {number} writeMask Sets stencil test writing mask. See
+  * {@link GraphicsDevice#setStencilOperation}.
   */
 @JSImport("playcanvas", "StencilParameters")
 @js.native
-class StencilParameters protected ()
-  extends StObject
-     with typings.playcanvas.pc.StencilParameters {
-  def this(options: js.Any) = this()
-  
+open class StencilParameters protected () extends StObject {
   /**
-    * Sets operation to perform if stencil test is failed. See {@link pc.GraphicsDevice#setStencilOperation}.
+    * Create a new StencilParameters instance.
+    *
+    * @param {object} options - Options object to configure the stencil parameters.
     */
-  /* CompleteClass */
-  var fail: Double = js.native
+  def this(options: js.Object) = this()
   
-  /**
-    * Sets stencil test function. See {@link pc.GraphicsDevice#setStencilFunc}.
-    */
-  /* CompleteClass */
-  var func: Double = js.native
+  var fail: Any = js.native
   
-  /**
-    * Sets stencil test reading mask. See {@link pc.GraphicsDevice#setStencilFunc}.
-    */
-  /* CompleteClass */
-  var readMask: Double = js.native
+  var func: Any = js.native
   
-  /**
-    * Sets stencil test reference value. See {@link pc.GraphicsDevice#setStencilFunc}.
-    */
-  /* CompleteClass */
-  var ref: Double = js.native
+  var readMask: Any = js.native
   
-  /**
-    * Sets stencil test writing mask. See {@link pc.GraphicsDevice#setStencilOperation}.
-    */
-  /* CompleteClass */
-  var writeMask: Double = js.native
+  var ref: Any = js.native
   
-  /**
-    * Sets operation to perform if depth test is failed. See {@link pc.GraphicsDevice#setStencilOperation}.
-    */
-  /* CompleteClass */
-  var zfail: Double = js.native
+  var writeMask: Any = js.native
   
-  /**
-    * Sets operation to perform if both stencil and depth test are passed. See {@link pc.GraphicsDevice#setStencilOperation}.
-    */
-  /* CompleteClass */
-  var zpass: Double = js.native
+  var zfail: Any = js.native
+  
+  var zpass: Any = js.native
 }

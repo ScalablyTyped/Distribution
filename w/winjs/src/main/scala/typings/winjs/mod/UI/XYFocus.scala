@@ -23,7 +23,7 @@ object XYFocus {
   
   inline def addEventListener(`type`: String, handler: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(`type`.asInstanceOf[js.Any], eventProperties.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def dispatchEvent(`type`: String, eventProperties: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(`type`.asInstanceOf[js.Any], eventProperties.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def findNextFocusElement(direction: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("findNextFocusElement")(direction.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   inline def findNextFocusElement(direction: String, options: typings.winjs.WinJS.UI.XYFocus.XYFocusOptions): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("findNextFocusElement")(direction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
@@ -115,9 +115,9 @@ object XYFocus {
   inline def moveFocus_up(direction: up): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("moveFocus")(direction.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   inline def moveFocus_up(direction: up, options: typings.winjs.WinJS.UI.XYFocus.XYFocusOptions): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("moveFocus")(direction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  inline def onfocuschanged(eventInfo: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onfocuschanged")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onfocuschanged(eventInfo: CustomEvent[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onfocuschanged")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def onfocuschanging(eventInfo: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onfocuschanging")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onfocuschanging(eventInfo: CustomEvent[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onfocuschanging")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def removeEventListener(`type`: String, handler: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -165,7 +165,7 @@ object XYFocus {
   @js.native
   trait XYFocusEvent
     extends StObject
-       with CustomEvent[js.Any] {
+       with CustomEvent[Any] {
     
     @JSName("detail")
     var detail_XYFocusEvent: KeyCode = js.native

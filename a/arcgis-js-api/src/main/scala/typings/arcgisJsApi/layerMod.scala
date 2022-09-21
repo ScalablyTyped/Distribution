@@ -22,7 +22,7 @@ object layerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Layer {
     def this(properties: LayerProperties) = this()

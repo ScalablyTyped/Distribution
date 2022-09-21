@@ -1,23 +1,17 @@
 package typings.gestalt.mod
 
 import typings.gestalt.anon.Path
-import typings.gestalt.gestaltStrings.blue
-import typings.gestalt.gestaltStrings.darkGray
-import typings.gestalt.gestaltStrings.eggplant
-import typings.gestalt.gestaltStrings.gray
-import typings.gestalt.gestaltStrings.green
-import typings.gestalt.gestaltStrings.lightGray
-import typings.gestalt.gestaltStrings.maroon
-import typings.gestalt.gestaltStrings.midnight
-import typings.gestalt.gestaltStrings.navy
-import typings.gestalt.gestaltStrings.olive
-import typings.gestalt.gestaltStrings.orange
-import typings.gestalt.gestaltStrings.orchid
-import typings.gestalt.gestaltStrings.pine
-import typings.gestalt.gestaltStrings.purple
-import typings.gestalt.gestaltStrings.red
-import typings.gestalt.gestaltStrings.watermelon
-import typings.gestalt.gestaltStrings.white
+import typings.gestalt.gestaltStrings.brandPrimary
+import typings.gestalt.gestaltStrings.dark
+import typings.gestalt.gestaltStrings.default
+import typings.gestalt.gestaltStrings.error
+import typings.gestalt.gestaltStrings.info
+import typings.gestalt.gestaltStrings.inverse
+import typings.gestalt.gestaltStrings.light
+import typings.gestalt.gestaltStrings.shopping
+import typings.gestalt.gestaltStrings.subtle
+import typings.gestalt.gestaltStrings.success
+import typings.gestalt.gestaltStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +21,7 @@ trait IconProps extends StObject {
   var accessibilityLabel: String
   
   var color: js.UndefOr[
-    blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white
+    default | subtle | success | error | warning | info | inverse | shopping | brandPrimary | light | dark
   ] = js.undefined
   
   var dangerouslySetSvgPath: js.UndefOr[Path] = js.undefined
@@ -50,7 +44,7 @@ object IconProps {
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
     inline def setColor(
-      value: blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white
+      value: default | subtle | success | error | warning | info | inverse | shopping | brandPrimary | light | dark
     ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)

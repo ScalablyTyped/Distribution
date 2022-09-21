@@ -3,7 +3,6 @@ package typings.watchify
 import org.scalablytyped.runtime.Shortcut
 import typings.browserify.mod.BrowserifyObject
 import typings.node.eventsMod.global.NodeJS.EventEmitter
-import typings.std.RegExp
 import typings.watchify.anon.Cache
 import typings.watchify.watchifyStrings.bytes
 import typings.watchify.watchifyStrings.log
@@ -51,7 +50,7 @@ object mod extends Shortcut {
       * Also see anymatch package: https://github.com/es128/anymatch#usage
       */
     var ignoreWatch: js.UndefOr[
-        Boolean | String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean])])
+        Boolean | String | js.RegExp | (js.Function1[/* repeated */ Any, Boolean]) | (js.Array[String | js.RegExp | (js.Function1[/* repeated */ Any, Boolean])])
       ] = js.undefined
     
     /**
@@ -77,14 +76,14 @@ object mod extends Shortcut {
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
       inline def setIgnoreWatch(
-        value: Boolean | String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean])])
+        value: Boolean | String | js.RegExp | (js.Function1[/* repeated */ Any, Boolean]) | (js.Array[String | js.RegExp | (js.Function1[/* repeated */ Any, Boolean])])
       ): Self = StObject.set(x, "ignoreWatch", value.asInstanceOf[js.Any])
       
-      inline def setIgnoreWatchFunction1(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "ignoreWatch", js.Any.fromFunction1(value))
+      inline def setIgnoreWatchFunction1(value: /* repeated */ Any => Boolean): Self = StObject.set(x, "ignoreWatch", js.Any.fromFunction1(value))
       
       inline def setIgnoreWatchUndefined: Self = StObject.set(x, "ignoreWatch", js.undefined)
       
-      inline def setIgnoreWatchVarargs(value: (String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean]))*): Self = StObject.set(x, "ignoreWatch", js.Array(value :_*))
+      inline def setIgnoreWatchVarargs(value: (String | js.RegExp | (js.Function1[/* repeated */ Any, Boolean]))*): Self = StObject.set(x, "ignoreWatch", js.Array(value*))
       
       inline def setPoll(value: Boolean | Double): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
       
@@ -109,7 +108,7 @@ object mod extends Shortcut {
         * When a bundle is generated, this event fires with the number of bytes
         */
       @JSName("on")
-      def on_bytes(event: bytes, listener: js.Function1[/* bytes */ Double, js.Any]): this.type = js.native
+      def on_bytes(event: bytes, listener: js.Function1[/* bytes */ Double, Any]): this.type = js.native
       /**
         * This event fires after a bundle was created with messages of the form:
         * ```text
@@ -118,17 +117,17 @@ object mod extends Shortcut {
         * with the number of bytes in the bundle X and the time in seconds Y.
         */
       @JSName("on")
-      def on_log(event: log, listener: js.Function1[/* msg */ String, js.Any]): this.type = js.native
+      def on_log(event: log, listener: js.Function1[/* msg */ String, Any]): this.type = js.native
       /**
         * When a bundle is generated, this event fires with the time it took to create the bundle in milliseconds.
         */
       @JSName("on")
-      def on_time(event: time, listener: js.Function1[/* time */ Double, js.Any]): this.type = js.native
+      def on_time(event: time, listener: js.Function1[/* time */ Double, Any]): this.type = js.native
       /**
         * When the bundle changes, emit the array of bundle ids that changed.
         */
       @JSName("on")
-      def on_update(event: update, listener: js.Function1[/* ids */ js.Array[String], js.Any]): this.type = js.native
+      def on_update(event: update, listener: js.Function1[/* ids */ js.Array[String], Any]): this.type = js.native
     }
   }
 }

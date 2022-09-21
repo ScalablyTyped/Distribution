@@ -11,14 +11,11 @@ Listen to status bar changes during incoming calls and other multi-tasking event
 | Full name          | @expo/status-bar-height |
 | Keywords           | expo, statusbar, tools, react-native, react, ui, multitask |
 | # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 25183 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1143.0 |
+| # stars            | 73.0 |
 
 ## Links
-- [Homepage](https://github.com/expo/status-bar-height#readme)
-- [Bugs](https://github.com/expo/status-bar-height/issues)
-- [Repository](https://github.com/expo/status-bar-height)
 - [Npm](https://www.npmjs.com/package/%40expo%2Fstatus-bar-height)
     
 

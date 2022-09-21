@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("node-mysql-wrapper", "SaveQuery")
 @js.native
-class SaveQuery[T] protected ()
+open class SaveQuery[T] protected ()
   extends StObject
      with IQuery[T] {
   def this(_table: Table[T]) = this()

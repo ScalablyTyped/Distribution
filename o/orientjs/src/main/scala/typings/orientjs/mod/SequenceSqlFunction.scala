@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("orientjs", "SequenceSqlFunction")
 @js.native
-class SequenceSqlFunction protected () extends StObject {
+open class SequenceSqlFunction protected () extends StObject {
   def this(name: String) = this()
   
   def current(): Double = js.native

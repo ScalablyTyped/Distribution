@@ -1,7 +1,7 @@
 
 # Scala.js typings for ctrl__tinycolor
 
-Typings are for version 3.1.7
+Typings are for version 3.4.1
 
 ## Library description:
 Fast, small color manipulation and conversion for JavaScript
@@ -10,10 +10,10 @@ Fast, small color manipulation and conversion for JavaScript
 | ------------------ | :-------------: |
 | Full name          | @ctrl/tinycolor |
 | Keywords           | typescript, color, manipulation, tinycolor, hsa, rgb |
-| # releases         | 27 |
-| # dependents       | 38 |
-| # downloads        | 3380583 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 4238149.666666667 |
+| # stars            | 296.0 |
 
 ## Links
 - [Homepage](https://tinycolor.vercel.app)

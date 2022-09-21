@@ -5,9 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
+  - typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2xs`
   - typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.xs
-  - typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.lg
   - typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.sm
+  - typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.lg
+  - typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.xl
+  - typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2xl`
   - typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`1x`
   - typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2x`
   - typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`3x`
@@ -28,6 +31,10 @@ object SizeProp {
   
   inline def `2x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2x` = "2x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2x`]
   
+  inline def `2xl`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2xl` = "2xl".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2xl`]
+  
+  inline def `2xs`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2xs` = "2xs".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2xs`]
+  
   inline def `3x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`3x` = "3x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`3x`]
   
   inline def `4x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`4x` = "4x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`4x`]
@@ -45,6 +52,8 @@ object SizeProp {
   inline def lg: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.lg = "lg".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.lg]
   
   inline def sm: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.sm = "sm".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.sm]
+  
+  inline def xl: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.xl = "xl".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.xl]
   
   inline def xs: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.xs = "xs".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.xs]
 }

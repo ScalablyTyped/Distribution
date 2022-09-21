@@ -1,7 +1,7 @@
 package typings.pizzip
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.processMod.global.NodeJS.Platform
 import typings.pizzip.anon.Base64
 import typings.pizzip.anon.GenerateOptionstypearrayb
@@ -18,11 +18,7 @@ import typings.pizzip.pizzipStrings.blob
 import typings.pizzip.pizzipStrings.nodebuffer
 import typings.pizzip.pizzipStrings.string
 import typings.pizzip.pizzipStrings.uint8array
-import typings.std.ArrayBuffer
 import typings.std.Blob
-import typings.std.Date
-import typings.std.RegExp
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +27,7 @@ object mod {
   
   @JSImport("pizzip", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with PizZip {
     /**
@@ -101,7 +97,7 @@ object mod {
     inline def STORE: typings.pizzip.pizzipStrings.STORE = "STORE".asInstanceOf[typings.pizzip.pizzipStrings.STORE]
   }
   
-  type Data = String | ArrayBuffer | Uint8Array | Buffer
+  type Data = String | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | Buffer
   
   trait FileOptions extends StObject {
     
@@ -149,7 +145,7 @@ object mod {
     /**
       * the last modification date. defaults to the current date
       */
-    var date: js.UndefOr[Date] = js.undefined
+    var date: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Set to true if this is a directory and content should be ignored.
@@ -214,7 +210,7 @@ object mod {
       
       inline def setCreateFoldersUndefined: Self = StObject.set(x, "createFolders", js.undefined)
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -392,7 +388,7 @@ object mod {
       * If it's not set, PizZip has no way to know the encoding used. It usually is the default encoding of the operating system.
       * The function takes the bytes array (Uint8Array or Array) and returns the decoded string.
       */
-    var decodeFileName: js.UndefOr[js.Function1[/* bytes */ Uint8Array | js.Array[Double], String]] = js.undefined
+    var decodeFileName: js.UndefOr[js.Function1[/* bytes */ js.typedarray.Uint8Array | js.Array[Double], String]] = js.undefined
     
     /**
       * set to true if (and only if) the input is a string and has already been prepared with a 0xFF mask.
@@ -422,7 +418,7 @@ object mod {
       
       inline def setCreateFoldersUndefined: Self = StObject.set(x, "createFolders", js.undefined)
       
-      inline def setDecodeFileName(value: /* bytes */ Uint8Array | js.Array[Double] => String): Self = StObject.set(x, "decodeFileName", js.Any.fromFunction1(value))
+      inline def setDecodeFileName(value: /* bytes */ js.typedarray.Uint8Array | js.Array[Double] => String): Self = StObject.set(x, "decodeFileName", js.Any.fromFunction1(value))
       
       inline def setDecodeFileNameUndefined: Self = StObject.set(x, "decodeFileName", js.undefined)
       
@@ -459,7 +455,7 @@ object mod {
       * Search a file in the current folder and subfolders with a regular expression. The regex is tested against the relative filename.
       * @param regex the regex to use.
       */
-    def file(regex: RegExp): js.Array[ZipObject] = js.native
+    def file(regex: js.RegExp): js.Array[ZipObject] = js.native
     
     /**
       * the ZipObjects inside the zip with the name as key.
@@ -481,7 +477,7 @@ object mod {
       * Search a subdirectory in the current directory with a regular expression. The regex is tested against the relative path.
       * @param regex the regex to use.
       */
-    def folder(regex: RegExp): js.Array[ZipObject] = js.native
+    def folder(regex: js.RegExp): js.Array[ZipObject] = js.native
     
     /**
       * Generates the complete zip file.
@@ -490,11 +486,11 @@ object mod {
       * @param options the options to generate the zip file
       */
     def generate(): String = js.native
-    def generate(options: GenerateOptionstypearrayb): ArrayBuffer = js.native
+    def generate(options: GenerateOptionstypearrayb): js.typedarray.ArrayBuffer = js.native
     def generate(options: GenerateOptionstypeblob): Blob = js.native
     def generate(options: GenerateOptionstypenodebu): Buffer = js.native
     def generate(options: GenerateOptionstypestring): String = js.native
-    def generate(options: GenerateOptionstypeuint8a): Uint8Array = js.native
+    def generate(options: GenerateOptionstypeuint8a): js.typedarray.Uint8Array = js.native
     
     /**
       * Read an existing zip and merge the data in the current PizZip object at the current folder level.
@@ -519,7 +515,7 @@ object mod {
     /**
       * need a compatible browser. https://github.com/open-xml-templating/pizzip/blob/master/documentation/api_pizzip/support.md
       */
-    def asArrayBuffer(): ArrayBuffer
+    def asArrayBuffer(): js.typedarray.ArrayBuffer
     
     /**
       * the content as binary string.
@@ -539,7 +535,7 @@ object mod {
     /**
       * need a compatible browser. https://github.com/open-xml-templating/pizzip/blob/master/documentation/api_pizzip/support.md
       */
-    def asUint8Array(): Uint8Array
+    def asUint8Array(): js.typedarray.Uint8Array
     
     /**
       * the comment for this file
@@ -549,7 +545,7 @@ object mod {
     /**
       * the last modification date
       */
-    var date: Date
+    var date: js.Date
     
     /**
       * true if this is a directory
@@ -579,13 +575,13 @@ object mod {
   object ZipObject {
     
     inline def apply(
-      asArrayBuffer: () => ArrayBuffer,
+      asArrayBuffer: () => js.typedarray.ArrayBuffer,
       asBinary: () => String,
       asNodeBuffer: () => Buffer,
       asText: () => String,
-      asUint8Array: () => Uint8Array,
+      asUint8Array: () => js.typedarray.Uint8Array,
       comment: String,
-      date: Date,
+      date: js.Date,
       dir: Boolean,
       dosPermissions: Double,
       name: String,
@@ -598,7 +594,7 @@ object mod {
     
     extension [Self <: ZipObject](x: Self) {
       
-      inline def setAsArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "asArrayBuffer", js.Any.fromFunction0(value))
+      inline def setAsArrayBuffer(value: () => js.typedarray.ArrayBuffer): Self = StObject.set(x, "asArrayBuffer", js.Any.fromFunction0(value))
       
       inline def setAsBinary(value: () => String): Self = StObject.set(x, "asBinary", js.Any.fromFunction0(value))
       
@@ -606,11 +602,11 @@ object mod {
       
       inline def setAsText(value: () => String): Self = StObject.set(x, "asText", js.Any.fromFunction0(value))
       
-      inline def setAsUint8Array(value: () => Uint8Array): Self = StObject.set(x, "asUint8Array", js.Any.fromFunction0(value))
+      inline def setAsUint8Array(value: () => js.typedarray.Uint8Array): Self = StObject.set(x, "asUint8Array", js.Any.fromFunction0(value))
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDir(value: Boolean): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       

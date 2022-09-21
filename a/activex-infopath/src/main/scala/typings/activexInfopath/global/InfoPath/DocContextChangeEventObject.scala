@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.DocContextChangeEventObject")
 @js.native
-/* private */ class DocContextChangeEventObject ()
+/* private */ open class DocContextChangeEventObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.DocContextChangeEventObject {
   

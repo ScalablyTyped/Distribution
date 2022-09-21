@@ -17,7 +17,7 @@ trait Entity extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLanguage.maximMazurokGapiClientLanguageStrings.Entity & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientLanguage.maximMazurokGapiClientLanguageStrings.Entity & TopLevel[Any]
   ] = js.undefined
   
   /** The representative name for the entity. */
@@ -51,12 +51,12 @@ object Entity {
     
     inline def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
-    inline def setMentionsVarargs(value: EntityMention*): Self = StObject.set(x, "mentions", js.Array(value :_*))
+    inline def setMentionsVarargs(value: EntityMention*): Self = StObject.set(x, "mentions", js.Array(value*))
     
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLanguage.maximMazurokGapiClientLanguageStrings.Entity & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLanguage.maximMazurokGapiClientLanguageStrings.Entity & TopLevel[Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

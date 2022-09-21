@@ -102,7 +102,7 @@ object XCertificate {
     acquire: () => Unit,
     findCertificateExtension: SeqEquiv[Double] => XCertificateExtension,
     getCertificateUsage: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCertificate = {
     val __obj = js.Dynamic.literal(CertificateUsage = CertificateUsage.asInstanceOf[js.Any], Encoded = Encoded.asInstanceOf[js.Any], Extensions = Extensions.asInstanceOf[js.Any], IssuerName = IssuerName.asInstanceOf[js.Any], IssuerUniqueID = IssuerUniqueID.asInstanceOf[js.Any], MD5Thumbprint = MD5Thumbprint.asInstanceOf[js.Any], NotValidAfter = NotValidAfter.asInstanceOf[js.Any], NotValidBefore = NotValidBefore.asInstanceOf[js.Any], SHA1Thumbprint = SHA1Thumbprint.asInstanceOf[js.Any], SerialNumber = SerialNumber.asInstanceOf[js.Any], SignatureAlgorithm = SignatureAlgorithm.asInstanceOf[js.Any], SubjectName = SubjectName.asInstanceOf[js.Any], SubjectPublicKeyAlgorithm = SubjectPublicKeyAlgorithm.asInstanceOf[js.Any], SubjectPublicKeyValue = SubjectPublicKeyValue.asInstanceOf[js.Any], SubjectUniqueID = SubjectUniqueID.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), findCertificateExtension = js.Any.fromFunction1(findCertificateExtension), getCertificateUsage = js.Any.fromFunction0(getCertificateUsage), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

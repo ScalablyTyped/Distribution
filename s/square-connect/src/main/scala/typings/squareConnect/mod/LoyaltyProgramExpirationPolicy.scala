@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "LoyaltyProgramExpirationPolicy")
 @js.native
-class LoyaltyProgramExpirationPolicy () extends StObject {
+open class LoyaltyProgramExpirationPolicy () extends StObject {
   
   /**
     * The duration of time before points expire, in RFC 3339 format.

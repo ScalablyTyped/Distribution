@@ -10,10 +10,10 @@ object dropDownMenuMod {
   
   @JSImport("material-ui/DropDownMenu", JSImport.Default)
   @js.native
-  class default () extends DropDownMenu
+  open class default () extends DropDownMenu
   
   @JSImport("material-ui/DropDownMenu", "DropDownMenu")
   @js.native
-  class DropDownMenu ()
-    extends Component[DropDownMenuProps, js.Object, js.Any]
+  open class DropDownMenu ()
+    extends Component[DropDownMenuProps, js.Object, Any]
 }

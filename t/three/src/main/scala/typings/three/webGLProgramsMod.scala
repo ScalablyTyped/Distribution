@@ -17,7 +17,7 @@ object webGLProgramsMod {
   
   @JSImport("three/src/renderers/webgl/WebGLPrograms", "WebGLPrograms")
   @js.native
-  class WebGLPrograms protected () extends StObject {
+  open class WebGLPrograms protected () extends StObject {
     def this(
       renderer: WebGLRenderer,
       cubemaps: WebGLCubeMaps,
@@ -27,11 +27,11 @@ object webGLProgramsMod {
       clipping: WebGLClipping
     ) = this()
     
-    def acquireProgram(parameters: js.Any, cacheKey: String): WebGLProgram = js.native
+    def acquireProgram(parameters: Any, cacheKey: String): WebGLProgram = js.native
     
-    def getParameters(material: Material, lights: js.Any, shadows: js.Array[js.Object], scene: Scene, `object`: js.Any): js.Any = js.native
+    def getParameters(material: Material, lights: Any, shadows: js.Array[js.Object], scene: Scene, `object`: Any): Any = js.native
     
-    def getProgramCacheKey(parameters: js.Any): String = js.native
+    def getProgramCacheKey(parameters: Any): String = js.native
     
     def getUniforms(material: Material): js.Object = js.native
     

@@ -10,7 +10,7 @@ object minBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/minBlock", "MinBlock")
   @js.native
-  class MinBlock protected () extends NodeMaterialBlock {
+  open class MinBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new MinBlock
       * @param name defines the block name

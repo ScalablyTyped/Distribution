@@ -10,10 +10,10 @@ The lodash method `_.overEvery` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.overevery |
 | Keywords           | lodash-modularized, overevery |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 6965 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3071.6666666666665 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

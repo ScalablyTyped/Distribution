@@ -21,6 +21,6 @@ object CopyIndexOptions {
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    inline def setScopeVarargs(value: ScopeType*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: ScopeType*): Self = StObject.set(x, "scope", js.Array(value*))
   }
 }

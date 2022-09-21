@@ -75,7 +75,7 @@ object ChangeSetSummaryListItem {
     
     inline def setEntityIdListUndefined: Self = StObject.set(x, "EntityIdList", js.undefined)
     
-    inline def setEntityIdListVarargs(value: ResourceId*): Self = StObject.set(x, "EntityIdList", js.Array(value :_*))
+    inline def setEntityIdListVarargs(value: ResourceId*): Self = StObject.set(x, "EntityIdList", js.Array(value*))
     
     inline def setFailureCode(value: FailureCode): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
     

@@ -14,22 +14,22 @@ object registryMod extends Shortcut {
   
   trait MIMEConverter extends StObject {
     
-    def read(value: String): js.Any | Promise[js.Any]
+    def read(value: String): Any | Promise[Any]
     
-    def write(value: js.Any): String | Promise[String]
+    def write(value: Any): String | Promise[String]
   }
   object MIMEConverter {
     
-    inline def apply(read: String => js.Any | Promise[js.Any], write: js.Any => String | Promise[String]): MIMEConverter = {
+    inline def apply(read: String => Any | Promise[Any], write: Any => String | Promise[String]): MIMEConverter = {
       val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read), write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[MIMEConverter]
     }
     
     extension [Self <: MIMEConverter](x: Self) {
       
-      inline def setRead(value: String => js.Any | Promise[js.Any]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: String => Any | Promise[Any]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      inline def setWrite(value: js.Any => String | Promise[String]): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: Any => String | Promise[String]): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   

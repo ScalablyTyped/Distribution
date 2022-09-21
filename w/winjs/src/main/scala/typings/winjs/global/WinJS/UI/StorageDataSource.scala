@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   **/
 @JSGlobal("WinJS.UI.StorageDataSource")
 @js.native
-class StorageDataSource[T] protected ()
+open class StorageDataSource[T] protected ()
   extends StObject
      with typings.winjs.WinJS.UI.StorageDataSource[T] {
   //#region Constructors
@@ -19,8 +19,8 @@ class StorageDataSource[T] protected ()
     * @param query The IStorageQueryResultBase that the StorageDataSource obtains its items from. Instead of IStorageQueryResultBase, you can also pass one of these string values: Music, Pictures, Videos, Documents.
     * @param options The set of properties and values to apply to the new StorageDataSource. Properties on this object may include: mode , requestedThumbnailSize , thumbnailOptions , synchronous .
     **/
-  def this(query: js.Any) = this()
-  def this(query: js.Any, options: js.Any) = this()
+  def this(query: Any) = this()
+  def this(query: Any, options: Any) = this()
 }
 object StorageDataSource {
   

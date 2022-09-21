@@ -15,12 +15,12 @@ trait AutoScalingPlans extends Service {
   var config_AutoScalingPlans: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a scaling plan.
+    * Creates a scaling plan. 
     */
   def createScalingPlan(): Request[CreateScalingPlanResponse, AWSError] = js.native
   def createScalingPlan(callback: js.Function2[/* err */ AWSError, /* data */ CreateScalingPlanResponse, Unit]): Request[CreateScalingPlanResponse, AWSError] = js.native
   /**
-    * Creates a scaling plan.
+    * Creates a scaling plan. 
     */
   def createScalingPlan(params: CreateScalingPlanRequest): Request[CreateScalingPlanResponse, AWSError] = js.native
   def createScalingPlan(

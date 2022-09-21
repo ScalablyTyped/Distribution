@@ -21,10 +21,10 @@ object BroadCastToAttrs {
     
     inline def setInputShape(value: js.Array[Double]): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
     
-    inline def setInputShapeVarargs(value: Double*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
+    inline def setInputShapeVarargs(value: Double*): Self = StObject.set(x, "inputShape", js.Array(value*))
     
     inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value*))
   }
 }

@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MatterJS.Body")
 @js.native
-class Body ()
+open class Body ()
   extends StObject
      with typings.phaser.MatterJS.Body
 object Body {
@@ -97,8 +97,8 @@ object Body {
     * @param {} value The value to set if `settings` is a single property name.
     */
   /* static member */
-  inline def set(body: BodyType, settings: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def set(body: BodyType, settings: js.Any, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(body: BodyType, settings: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(body: BodyType, settings: Any, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the angle of the body instantly. Angular velocity, position, force etc. are unchanged.

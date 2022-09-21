@@ -45,7 +45,7 @@ object XSchema {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     readComponent: XSchemaHandler => Unit,
     readSchema: XSchemaHandler => Unit,
     readTemplates: XSchemaHandler => Unit,

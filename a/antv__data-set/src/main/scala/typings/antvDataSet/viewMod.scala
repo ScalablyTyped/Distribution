@@ -84,7 +84,7 @@ object viewMod {
   
   @JSImport("@antv/data-set/lib/view", "View")
   @js.native
-  class View ()
+  open class View ()
     extends ^
        with StatisticsApi
        with PartitionApi
@@ -95,31 +95,31 @@ object viewMod {
     def this(dataSet: Unit, options: ViewOptions) = this()
     def this(dataSet: DataSet, options: ViewOptions) = this()
     
-    var _GridHexJSON: js.Any = js.native
+    var _GridHexJSON: Any = js.native
     
-    var _HexJSON: js.Any = js.native
+    var _HexJSON: Any = js.native
     
-    /* private */ var _executeTransform: js.Any = js.native
+    /* private */ var _executeTransform: Any = js.native
     
-    var _gridRows: js.Any = js.native
+    var _gridRows: Any = js.native
     
-    /* private */ var _parseStateExpression: js.Any = js.native
+    /* private */ var _parseStateExpression: Any = js.native
     
-    /* private */ var _prepareSource: js.Any = js.native
+    /* private */ var _prepareSource: Any = js.native
     
-    /* private */ var _preparseOptions: js.Any = js.native
+    /* private */ var _preparseOptions: Any = js.native
     
     var _projectedAs: js.Array[String] = js.native
     
-    /* private */ var _reExecute: js.Any = js.native
+    /* private */ var _reExecute: Any = js.native
     
-    /* private */ var _reExecuteTransforms: js.Any = js.native
+    /* private */ var _reExecuteTransforms: Any = js.native
     
     var _source: CustomSource = js.native
     
-    var _tagCloud: js.Any = js.native
+    var _tagCloud: Any = js.native
     
-    def addRow(row: js.Any): Unit = js.native
+    def addRow(row: Any): Unit = js.native
     
     /* CompleteClass */
     override def average(column: String): Double = js.native
@@ -134,27 +134,27 @@ object viewMod {
       */
     var dataType: String = js.native
     
-    var edges: js.Array[js.Any] = js.native
+    var edges: js.Array[Any] = js.native
     
     /* CompleteClass */
     override def extent(column: String): Double = js.native
     
-    def findRow(query: js.Any): js.Any = js.native
+    def findRow(query: Any): Any = js.native
     
-    def findRows(query: js.Any): js.Array[js.Any] = js.native
-    
-    /* CompleteClass */
-    override def getAllEdges(): js.Array[js.Any] = js.native
+    def findRows(query: Any): js.Array[Any] = js.native
     
     /* CompleteClass */
-    override def getAllLinks(): js.Array[js.Any] = js.native
+    override def getAllEdges(): js.Array[Any] = js.native
     
     /* CompleteClass */
-    override def getAllNodes(): js.Array[js.Any] = js.native
+    override def getAllLinks(): js.Array[Any] = js.native
     
-    def getColumn(columnName: String): js.Array[js.Any] = js.native
+    /* CompleteClass */
+    override def getAllNodes(): js.Array[Any] = js.native
     
-    def getColumnData(columnName: String): js.Array[js.Any] = js.native
+    def getColumn(columnName: String): js.Array[Any] = js.native
+    
+    def getColumnData(columnName: String): js.Array[Any] = js.native
     
     def getColumnIndex(columnName: String): Double = js.native
     
@@ -162,7 +162,7 @@ object viewMod {
     
     def getColumnNames(): js.Array[String] = js.native
     
-    def getSubset(startRowIndex: Double, endRowIndex: Double, columnNames: js.Array[String]): js.Array[js.Any] = js.native
+    def getSubset(startRowIndex: Double, endRowIndex: Double, columnNames: js.Array[String]): js.Array[Any] = js.native
     
     var graph: Edges = js.native
     
@@ -196,12 +196,12 @@ object viewMod {
     /* CompleteClass */
     override def mode(column: String): Double = js.native
     
-    var nodes: js.Array[js.Any] = js.native
+    var nodes: js.Array[Any] = js.native
     
     /**
       * 原始数据
       */
-    var origin: js.Array[js.Any] = js.native
+    var origin: js.Array[Any] = js.native
     
     /* CompleteClass */
     override def product(column: String): Double = js.native
@@ -223,7 +223,7 @@ object viewMod {
     /**
       * 存储处理后的数据
       */
-    var rows: js.Array[js.Any] = js.native
+    var rows: js.Array[Any] = js.native
     
     /**
       * 载入数据
@@ -241,7 +241,7 @@ object viewMod {
           GeoJSON | HexJSON | TopoJSON | csv | diagram | dsv | geo | geojson_ | graph | hex | `hex-json` | hexjson_ | hierarchy | topojson_ | tree | tsv
         ]
     ): View = js.native
-    def source(source: js.Array[js.Any]): View = js.native
+    def source(source: js.Array[Any]): View = js.native
     def source(source: View): View = js.native
     
     /* CompleteClass */
@@ -364,9 +364,9 @@ object viewMod {
     /**
       * 已应用的 transform
       */
-    var transforms: js.Array[TransformOptions[js.Any]] = js.native
+    var transforms: js.Array[TransformOptions[Any]] = js.native
     
-    def updateRow(index: Double, newRow: js.Any): Unit = js.native
+    def updateRow(index: Double, newRow: Any): Unit = js.native
     
     /* CompleteClass */
     override def variance(column: String): Double = js.native
@@ -374,7 +374,7 @@ object viewMod {
     /**
       *
       */
-    /* private */ var watchingStates: js.Any = js.native
+    /* private */ var watchingStates: Any = js.native
   }
   /* static members */
   object View {
@@ -393,22 +393,22 @@ object viewMod {
   
   trait CustomSource extends StObject {
     
-    var options: js.Any
+    var options: Any
     
-    var source: js.Any
+    var source: Any
   }
   object CustomSource {
     
-    inline def apply(options: js.Any, source: js.Any): CustomSource = {
+    inline def apply(options: Any, source: Any): CustomSource = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomSource]
     }
     
     extension [Self <: CustomSource](x: Self) {
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -431,7 +431,7 @@ object viewMod {
       
       inline def setWatchingStatesUndefined: Self = StObject.set(x, "watchingStates", js.undefined)
       
-      inline def setWatchingStatesVarargs(value: String*): Self = StObject.set(x, "watchingStates", js.Array(value :_*))
+      inline def setWatchingStatesVarargs(value: String*): Self = StObject.set(x, "watchingStates", js.Array(value*))
     }
   }
 }

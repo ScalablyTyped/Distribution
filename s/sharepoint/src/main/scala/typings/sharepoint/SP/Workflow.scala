@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ object Workflow {
     
     def get_baseId(): Guid = js.native
     
-    def get_created(): Date = js.native
+    def get_created(): js.Date = js.native
     
     def get_description(): String = js.native
     
@@ -42,7 +41,7 @@ object Workflow {
     
     def get_listId(): Guid = js.native
     
-    def get_modified(): Date = js.native
+    def get_modified(): js.Date = js.native
     
     def get_name(): String = js.native
     
@@ -95,11 +94,11 @@ object Workflow {
     
     def get_contentTypeAssociationTaskListName(): String
     
-    def get_historyList(): List[js.Any]
+    def get_historyList(): List[Any]
     
     def get_name(): String
     
-    def get_taskList(): List[js.Any]
+    def get_taskList(): List[Any]
     
     def get_template(): WorkflowTemplate
     
@@ -107,32 +106,32 @@ object Workflow {
     
     def set_contentTypeAssociationTaskListName(value: String): Unit
     
-    def set_historyList(value: List[js.Any]): Unit
+    def set_historyList(value: List[Any]): Unit
     
     def set_name(value: String): Unit
     
-    def set_taskList(value: List[js.Any]): Unit
+    def set_taskList(value: List[Any]): Unit
     
     def set_template(value: WorkflowTemplate): Unit
   }
   object WorkflowAssociationCreationInformation {
     
     inline def apply(
-      customFromJson: js.Any => Boolean,
+      customFromJson: Any => Boolean,
       customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-      fromJson: js.Any => Unit,
+      fromJson: Any => Unit,
       get_contentTypeAssociationHistoryListName: () => String,
       get_contentTypeAssociationTaskListName: () => String,
-      get_historyList: () => List[js.Any],
+      get_historyList: () => List[Any],
       get_name: () => String,
-      get_taskList: () => List[js.Any],
+      get_taskList: () => List[Any],
       get_template: () => WorkflowTemplate,
       get_typeId: () => String,
       set_contentTypeAssociationHistoryListName: String => Unit,
       set_contentTypeAssociationTaskListName: String => Unit,
-      set_historyList: List[js.Any] => Unit,
+      set_historyList: List[Any] => Unit,
       set_name: String => Unit,
-      set_taskList: List[js.Any] => Unit,
+      set_taskList: List[Any] => Unit,
       set_template: WorkflowTemplate => Unit,
       writeToXml: (XmlWriter, SerializationContext) => Unit
     ): WorkflowAssociationCreationInformation = {
@@ -146,11 +145,11 @@ object Workflow {
       
       inline def setGet_contentTypeAssociationTaskListName(value: () => String): Self = StObject.set(x, "get_contentTypeAssociationTaskListName", js.Any.fromFunction0(value))
       
-      inline def setGet_historyList(value: () => List[js.Any]): Self = StObject.set(x, "get_historyList", js.Any.fromFunction0(value))
+      inline def setGet_historyList(value: () => List[Any]): Self = StObject.set(x, "get_historyList", js.Any.fromFunction0(value))
       
       inline def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
       
-      inline def setGet_taskList(value: () => List[js.Any]): Self = StObject.set(x, "get_taskList", js.Any.fromFunction0(value))
+      inline def setGet_taskList(value: () => List[Any]): Self = StObject.set(x, "get_taskList", js.Any.fromFunction0(value))
       
       inline def setGet_template(value: () => WorkflowTemplate): Self = StObject.set(x, "get_template", js.Any.fromFunction0(value))
       
@@ -158,11 +157,11 @@ object Workflow {
       
       inline def setSet_contentTypeAssociationTaskListName(value: String => Unit): Self = StObject.set(x, "set_contentTypeAssociationTaskListName", js.Any.fromFunction1(value))
       
-      inline def setSet_historyList(value: List[js.Any] => Unit): Self = StObject.set(x, "set_historyList", js.Any.fromFunction1(value))
+      inline def setSet_historyList(value: List[Any] => Unit): Self = StObject.set(x, "set_historyList", js.Any.fromFunction1(value))
       
       inline def setSet_name(value: String => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
       
-      inline def setSet_taskList(value: List[js.Any] => Unit): Self = StObject.set(x, "set_taskList", js.Any.fromFunction1(value))
+      inline def setSet_taskList(value: List[Any] => Unit): Self = StObject.set(x, "set_taskList", js.Any.fromFunction1(value))
       
       inline def setSet_template(value: WorkflowTemplate => Unit): Self = StObject.set(x, "set_template", js.Any.fromFunction1(value))
     }

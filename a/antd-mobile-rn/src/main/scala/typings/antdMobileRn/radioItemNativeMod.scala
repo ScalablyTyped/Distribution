@@ -15,7 +15,7 @@ object radioItemNativeMod {
   
   @JSImport("antd-mobile-rn/lib/radio/RadioItem.native", JSImport.Default)
   @js.native
-  class default () extends RadioItem
+  open class default () extends RadioItem
   /* static members */
   object default {
     
@@ -30,8 +30,7 @@ object radioItemNativeMod {
   }
   
   @js.native
-  trait RadioItem
-    extends Component[RadioItemNativeProps, js.Any, js.Any] {
+  trait RadioItem extends Component[RadioItemNativeProps, Any, Any] {
     
     def handleClick(): Unit = js.native
   }

@@ -33,6 +33,6 @@ object GcipSettings {
     
     inline def setTenantIdsUndefined: Self = StObject.set(x, "tenantIds", js.undefined)
     
-    inline def setTenantIdsVarargs(value: String*): Self = StObject.set(x, "tenantIds", js.Array(value :_*))
+    inline def setTenantIdsVarargs(value: String*): Self = StObject.set(x, "tenantIds", js.Array(value*))
   }
 }

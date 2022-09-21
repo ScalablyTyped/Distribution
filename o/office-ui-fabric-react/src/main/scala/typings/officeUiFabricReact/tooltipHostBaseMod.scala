@@ -12,40 +12,40 @@ object tooltipHostBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Tooltip/TooltipHost.base", "TooltipHostBase")
   @js.native
-  class TooltipHostBase protected ()
-    extends Component[ITooltipHostProps, ITooltipHostState, js.Any]
+  open class TooltipHostBase protected ()
+    extends Component[ITooltipHostProps, ITooltipHostState, Any]
        with ITooltipHost {
     def this(props: ITooltipHostProps) = this()
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _clearDismissTimer: js.Any = js.native
+    /* private */ var _clearDismissTimer: Any = js.native
     
-    /* private */ var _clearOpenTimer: js.Any = js.native
+    /* private */ var _clearOpenTimer: Any = js.native
     
-    /* private */ var _defaultTooltipId: js.Any = js.native
+    /* private */ var _defaultTooltipId: Any = js.native
     
-    /* private */ var _dismissTimerId: js.Any = js.native
+    /* private */ var _dismissTimerId: Any = js.native
     
-    /* private */ var _getDelayTime: js.Any = js.native
+    /* private */ var _getDelayTime: Any = js.native
     
-    /* private */ var _getTargetElement: js.Any = js.native
+    /* private */ var _getTargetElement: Any = js.native
     
-    /* private */ var _hideTooltip: js.Any = js.native
+    /* private */ var _hideTooltip: Any = js.native
     
-    /* private */ var _onTooltipKeyDown: js.Any = js.native
+    /* private */ var _onTooltipKeyDown: Any = js.native
     
-    /* private */ var _onTooltipMouseEnter: js.Any = js.native
+    /* private */ var _onTooltipMouseEnter: Any = js.native
     
-    /* private */ var _onTooltipMouseLeave: js.Any = js.native
+    /* private */ var _onTooltipMouseLeave: Any = js.native
     
-    /* private */ var _openTimerId: js.Any = js.native
+    /* private */ var _openTimerId: Any = js.native
     
-    /* private */ var _toggleTooltip: js.Any = js.native
+    /* private */ var _toggleTooltip: Any = js.native
     
-    /* private */ var _tooltipHost: js.Any = js.native
+    /* private */ var _tooltipHost: Any = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MTooltipHostBase(): Unit = js.native
@@ -71,8 +71,8 @@ object tooltipHostBaseMod {
     
     @JSImport("office-ui-fabric-react/lib/components/Tooltip/TooltipHost.base", "TooltipHostBase._currentVisibleTooltip")
     @js.native
-    def _currentVisibleTooltip: js.Any = js.native
-    inline def _currentVisibleTooltip_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_currentVisibleTooltip")(x.asInstanceOf[js.Any])
+    def _currentVisibleTooltip: Any = js.native
+    inline def _currentVisibleTooltip_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_currentVisibleTooltip")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/Tooltip/TooltipHost.base", "TooltipHostBase.defaultProps")
     @js.native
@@ -82,6 +82,7 @@ object tooltipHostBaseMod {
   
   trait ITooltipHostState extends StObject {
     
+    /** @deprecated No longer used internally */
     var isAriaPlaceholderRendered: Boolean
     
     var isTooltipVisible: Boolean

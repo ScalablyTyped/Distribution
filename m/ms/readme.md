@@ -10,10 +10,10 @@ Tiny millisecond conversion utility
 | ------------------ | :-------------: |
 | Full name          | ms |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 1612 |
-| # downloads        | 2805926603 |
-| # stars            | 113 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 6.983692053333334E8 |
+| # stars            | 4206.0 |
 
 ## Links
 - [Homepage](https://github.com/vercel/ms#readme)

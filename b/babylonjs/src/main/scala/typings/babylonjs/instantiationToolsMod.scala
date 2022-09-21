@@ -9,7 +9,7 @@ object instantiationToolsMod {
   
   @JSImport("babylonjs/Misc/instantiationTools", "InstantiationTools")
   @js.native
-  class InstantiationTools () extends StObject
+  open class InstantiationTools () extends StObject
   /* static members */
   object InstantiationTools {
     
@@ -22,11 +22,11 @@ object instantiationToolsMod {
       * @param className defines the class name to instantiate
       * @returns the new object or null if the system was not able to do the instantiation
       */
-    inline def Instantiate(className: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Instantiate")(className.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def Instantiate(className: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Instantiate")(className.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /**
       * Use this object to register external classes like custom textures or material
-      * to allow the laoders to instantiate them
+      * to allow the loaders to instantiate them
       */
     @JSImport("babylonjs/Misc/instantiationTools", "InstantiationTools.RegisteredExternalClasses")
     @js.native

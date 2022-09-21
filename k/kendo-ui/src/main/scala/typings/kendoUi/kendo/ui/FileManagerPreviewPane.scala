@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FileManagerPreviewPane extends StObject {
   
-  var metaFields: js.UndefOr[js.Any] = js.undefined
+  var metaFields: js.UndefOr[Any] = js.undefined
   
   var multipleFilesTemplate: js.UndefOr[String | js.Function] = js.undefined
   
@@ -23,7 +23,7 @@ object FileManagerPreviewPane {
   
   extension [Self <: FileManagerPreviewPane](x: Self) {
     
-    inline def setMetaFields(value: js.Any): Self = StObject.set(x, "metaFields", value.asInstanceOf[js.Any])
+    inline def setMetaFields(value: Any): Self = StObject.set(x, "metaFields", value.asInstanceOf[js.Any])
     
     inline def setMetaFieldsUndefined: Self = StObject.set(x, "metaFields", js.undefined)
     

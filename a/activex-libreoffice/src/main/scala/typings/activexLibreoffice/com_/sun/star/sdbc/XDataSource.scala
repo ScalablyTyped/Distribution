@@ -60,7 +60,7 @@ object XDataSource {
     acquire: () => Unit,
     getConnection: (String, String) => XConnection,
     getLoginTimeout: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setLoginTimeout: Double => Unit
   ): XDataSource = {

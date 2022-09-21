@@ -109,7 +109,7 @@ object GoogleCloudVisionV1p4beta1FaceAnnotation {
     
     inline def setLandmarksUndefined: Self = StObject.set(x, "landmarks", js.undefined)
     
-    inline def setLandmarksVarargs(value: GoogleCloudVisionV1p4beta1FaceAnnotationLandmark*): Self = StObject.set(x, "landmarks", js.Array(value :_*))
+    inline def setLandmarksVarargs(value: GoogleCloudVisionV1p4beta1FaceAnnotationLandmark*): Self = StObject.set(x, "landmarks", js.Array(value*))
     
     inline def setPanAngle(value: Double): Self = StObject.set(x, "panAngle", value.asInstanceOf[js.Any])
     
@@ -119,7 +119,7 @@ object GoogleCloudVisionV1p4beta1FaceAnnotation {
     
     inline def setRecognitionResultUndefined: Self = StObject.set(x, "recognitionResult", js.undefined)
     
-    inline def setRecognitionResultVarargs(value: GoogleCloudVisionV1p4beta1FaceRecognitionResult*): Self = StObject.set(x, "recognitionResult", js.Array(value :_*))
+    inline def setRecognitionResultVarargs(value: GoogleCloudVisionV1p4beta1FaceRecognitionResult*): Self = StObject.set(x, "recognitionResult", js.Array(value*))
     
     inline def setRollAngle(value: Double): Self = StObject.set(x, "rollAngle", value.asInstanceOf[js.Any])
     

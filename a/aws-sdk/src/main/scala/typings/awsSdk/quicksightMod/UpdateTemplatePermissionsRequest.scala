@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateTemplatePermissionsRequest extends StObject {
   
   /**
-    * The ID of the AWS account that contains the template.
+    * The ID of the Amazon Web Services account that contains the template.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
@@ -41,13 +41,13 @@ object UpdateTemplatePermissionsRequest {
     
     inline def setGrantPermissionsUndefined: Self = StObject.set(x, "GrantPermissions", js.undefined)
     
-    inline def setGrantPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "GrantPermissions", js.Array(value :_*))
+    inline def setGrantPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "GrantPermissions", js.Array(value*))
     
     inline def setRevokePermissions(value: UpdateResourcePermissionList): Self = StObject.set(x, "RevokePermissions", value.asInstanceOf[js.Any])
     
     inline def setRevokePermissionsUndefined: Self = StObject.set(x, "RevokePermissions", js.undefined)
     
-    inline def setRevokePermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "RevokePermissions", js.Array(value :_*))
+    inline def setRevokePermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "RevokePermissions", js.Array(value*))
     
     inline def setTemplateId(value: RestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
   }

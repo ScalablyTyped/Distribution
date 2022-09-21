@@ -8,7 +8,7 @@ trait Process
   extends StObject
      with ProcessReference {
   
-  var _links: js.Any
+  var _links: Any
   
   var description: String
   
@@ -21,7 +21,7 @@ trait Process
 object Process {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     description: String,
     id: String,
     isDefault: Boolean,
@@ -44,6 +44,6 @@ object Process {
     
     inline def setType(value: ProcessType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

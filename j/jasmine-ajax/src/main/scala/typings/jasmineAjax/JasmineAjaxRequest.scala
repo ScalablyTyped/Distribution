@@ -17,7 +17,7 @@ trait JasmineAjaxRequest
   
   var overriddenMimeType: String = js.native
   
-  var params: js.Any = js.native
+  var params: Any = js.native
   
   var password: String = js.native
   

@@ -2,9 +2,8 @@ package typings.oauth2Server.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.oauth2Server.oauth2ServerBooleans.`false`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,17 +17,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Instantiates Request using the supplied options.
   *
   */
-class Request () extends StObject {
-  def this(options: StringDictionary[js.Any]) = this()
-  def this(options: Request_[ParamsDictionary, js.Any, js.Any, Query]) = this()
+open class Request () extends StObject {
+  def this(options: StringDictionary[Any]) = this()
+  def this(options: Request_[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]) = this()
   
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[Any] = js.native
   
   /**
     * Returns the specified HTTP header field. The match is case-insensitive.
     *
     */
-  def get(field: String): js.UndefOr[js.Any] = js.native
+  def get(field: String): js.UndefOr[Any] = js.native
   
   var headers: js.UndefOr[StringDictionary[String]] = js.native
   

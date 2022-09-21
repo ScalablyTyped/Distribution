@@ -1,357 +1,479 @@
 package typings.reactWidgets
 
-import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
-import typings.react.mod.ReactType
-import typings.reactWidgets.commonPropsMod.AutoFocus
-import typings.reactWidgets.commonPropsMod.ReactWidgetsCommonProps
-import typings.reactWidgets.reactWidgetsStrings.century
-import typings.reactWidgets.reactWidgetsStrings.decade
-import typings.reactWidgets.reactWidgetsStrings.month
-import typings.reactWidgets.reactWidgetsStrings.year
-import typings.std.Date
-import typings.std.KeyboardEvent
+import typings.propTypes.mod.InferProps
+import typings.propTypes.mod.ReactNodeLike
+import typings.propTypes.mod.Requireable
+import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
+import typings.reactWidgets.anon.Century
+import typings.reactWidgets.anon.Date
+import typings.reactWidgets.anon.MoveBack
+import typings.reactWidgets.anon.MoveForward
+import typings.reactWidgets.localizationMod.DateFormats
+import typings.reactWidgets.messagesMod.UserProvidedMessages
+import typings.reactWidgets.monthMod.RenderDayProp
+import typings.reactWidgets.reactWidgetsStrings.left_
+import typings.reactWidgets.reactWidgetsStrings.right_
+import typings.reactWidgets.sharedMod.InferFormat
+import typings.reactWidgets.sharedMod.WidgetHTMLProps
+import typings.reactWidgets.slideTransitionGroupMod.SlideTransitionGroupProps
+import typings.reactWidgets.slideTransitionGroupMod.default
+import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object calendarMod extends Shortcut {
+object calendarMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("react-widgets/lib/Calendar", JSImport.Namespace)
-  @js.native
-  class ^ protected ()
-    extends Component[CalendarProps, ComponentState, js.Any] {
-    def this(props: CalendarProps) = this()
-    def this(props: CalendarProps, context: js.Any) = this()
-  }
-  @JSImport("react-widgets/lib/Calendar", JSImport.Namespace)
-  @js.native
-  val ^ : js.Object & CalendarClass = js.native
-  
-  type CalendarClass = ComponentClass[CalendarProps, ComponentState]
-  
-  trait CalendarMessages extends StObject {
+  object default {
     
     /**
-      * Title and screen reader text for the left arrow button.
-      * @default: "navigate back"
+      * @public
       */
-    var moveBack: js.UndefOr[String] = js.undefined
+    inline def apply(
+      hasIdAutoFocusBorderedViewsTabIndexDisabledReadOnlyClassNameValueDefaultValueOnChangePCurrentDateDefaultCurrentDateOnCurrentDateChangeMinMaxViewDefaultViewOnViewChangeOnKeyDownOnNavigateRenderDayMessagesFormatsElementProps: CalendarProps[Any]
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasIdAutoFocusBorderedViewsTabIndexDisabledReadOnlyClassNameValueDefaultValueOnChangePCurrentDateDefaultCurrentDateOnCurrentDateChangeMinMaxViewDefaultViewOnViewChangeOnKeyDownOnNavigateRenderDayMessagesFormatsElementProps.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    /**
-      * Title and screen reader text for the right arrow button.
-      * @default: "navigate forward"
-      */
-    var moveForward: js.UndefOr[String] = js.undefined
-  }
-  object CalendarMessages {
+    @JSImport("react-widgets/cjs/Calendar", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    inline def apply(): CalendarMessages = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CalendarMessages]
+    /* was `typeof SlideTransitionGroup` */
+    @JSImport("react-widgets/cjs/Calendar", "default.Transition")
+    @js.native
+    open class Transition protected ()
+      extends typings.reactWidgets.slideTransitionGroupMod.default {
+      def this(args: SlideTransitionGroupProps) = this()
+    }
+    /* was `typeof SlideTransitionGroup` */
+    object Transition {
+      
+      /* static member */
+      object defaultProps {
+        
+        @JSImport("react-widgets/cjs/Calendar", "default.Transition.defaultProps")
+        @js.native
+        val ^ : js.Any = js.native
+        
+        @JSImport("react-widgets/cjs/Calendar", "default.Transition.defaultProps.direction")
+        @js.native
+        def direction: String = js.native
+        inline def direction_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("direction")(x.asInstanceOf[js.Any])
+      }
+      
+      /* static member */
+      object propTypes {
+        
+        @JSImport("react-widgets/cjs/Calendar", "default.Transition.propTypes")
+        @js.native
+        val ^ : js.Any = js.native
+        
+        @JSImport("react-widgets/cjs/Calendar", "default.Transition.propTypes.direction")
+        @js.native
+        def direction: Requireable[String] = js.native
+        inline def direction_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("direction")(x.asInstanceOf[js.Any])
+        
+        @JSImport("react-widgets/cjs/Calendar", "default.Transition.propTypes.onTransitionEnd")
+        @js.native
+        def onTransitionEnd: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+        inline def onTransitionEnd_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onTransitionEnd")(x.asInstanceOf[js.Any])
+      }
     }
     
-    extension [Self <: CalendarMessages](x: Self) {
+    @JSImport("react-widgets/cjs/Calendar", "default.displayName")
+    @js.native
+    def displayName: String = js.native
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-widgets/cjs/Calendar", "default.move")
+    @js.native
+    def move: js.Function5[
+        /* date */ js.Date, 
+        /* min */ js.Date, 
+        /* max */ js.Date, 
+        /* view */ View, 
+        /* direction */ Direction, 
+        js.Date
+      ] = js.native
+    inline def move_=(
+      x: js.Function5[
+          /* date */ js.Date, 
+          /* min */ js.Date, 
+          /* max */ js.Date, 
+          /* view */ View, 
+          /* direction */ Direction, 
+          js.Date
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("move")(x.asInstanceOf[js.Any])
+    
+    object propTypes {
       
-      inline def setMoveBack(value: String): Self = StObject.set(x, "moveBack", value.asInstanceOf[js.Any])
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes")
+      @js.native
+      val ^ : js.Any = js.native
       
-      inline def setMoveBackUndefined: Self = StObject.set(x, "moveBack", js.undefined)
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.autoFocus")
+      @js.native
+      def autoFocus: Requireable[Boolean] = js.native
+      inline def autoFocus_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoFocus")(x.asInstanceOf[js.Any])
       
-      inline def setMoveForward(value: String): Self = StObject.set(x, "moveForward", value.asInstanceOf[js.Any])
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.culture")
+      @js.native
+      def culture: Requireable[String] = js.native
+      inline def culture_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("culture")(x.asInstanceOf[js.Any])
       
-      inline def setMoveForwardUndefined: Self = StObject.set(x, "moveForward", js.undefined)
+      /**
+        * Default current date at which the calendar opens. If none is provided, opens at today's date or the `value` date (if any).
+        */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.currentDate")
+      @js.native
+      def currentDate: Requireable[js.Date] = js.native
+      inline def currentDate_=(x: Requireable[js.Date]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentDate")(x.asInstanceOf[js.Any])
+      
+      /**
+        * @example ['disabled', ['new Date()']]
+        */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.disabled")
+      @js.native
+      def disabled: Requireable[Boolean] = js.native
+      inline def disabled_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
+      
+      /**
+        * Show or hide the Calendar footer.
+        *
+        * @example ['prop', ['footer', true]]
+        */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.footer")
+      @js.native
+      def footer: Requireable[Boolean] = js.native
+      inline def footer_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("footer")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.formats")
+      @js.native
+      def formats: Requireable[InferProps[Century]] = js.native
+      inline def formats_=(x: Requireable[InferProps[Century]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
+      
+      /**
+        * The maximum date that the Calendar can navigate to.
+        *
+        * @example ['prop', ['max', 'new Date()']]
+        */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.max")
+      @js.native
+      def max: Requireable[js.Date] = js.native
+      inline def max_=(x: Requireable[js.Date]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("max")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.messages")
+      @js.native
+      def messages: Requireable[InferProps[MoveForward]] = js.native
+      inline def messages_=(x: Requireable[InferProps[MoveForward]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("messages")(x.asInstanceOf[js.Any])
+      
+      /**
+        * The minimum date that the Calendar can navigate from.
+        *
+        * @example ['prop', ['min', 'new Date()']]
+        */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.min")
+      @js.native
+      def min: Requireable[js.Date] = js.native
+      inline def min_=(x: Requireable[js.Date]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("min")(x.asInstanceOf[js.Any])
+      
+      /** Specify the navigate into the future header icon */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.navigateNextIcon")
+      @js.native
+      def navigateNextIcon: Requireable[ReactNodeLike] = js.native
+      inline def navigateNextIcon_=(x: Requireable[ReactNodeLike]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigateNextIcon")(x.asInstanceOf[js.Any])
+      
+      /** Specify the navigate into the past header icon */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.navigatePrevIcon")
+      @js.native
+      def navigatePrevIcon: Requireable[ReactNodeLike] = js.native
+      inline def navigatePrevIcon_=(x: Requireable[ReactNodeLike]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigatePrevIcon")(x.asInstanceOf[js.Any])
+      
+      /**
+        * @example ['onChangePicker', [ ['new Date()'] ]]
+        */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.onChange")
+      @js.native
+      def onChange: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onChange_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChange")(x.asInstanceOf[js.Any])
+      
+      /**
+        * Change event Handler that is called when the currentDate is changed. The handler is called with the currentDate object.
+        */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.onCurrentDateChange")
+      @js.native
+      def onCurrentDateChange: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onCurrentDateChange_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onCurrentDateChange")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.onKeyDown")
+      @js.native
+      def onKeyDown: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onKeyDown_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onKeyDown")(x.asInstanceOf[js.Any])
+      
+      /**
+        * Callback fired when the Calendar navigates between views, or forward and backwards in time.
+        *
+        * @type function(date: ?Date, direction: string, view: string)
+        */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.onNavigate")
+      @js.native
+      def onNavigate: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onNavigate_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onNavigate")(x.asInstanceOf[js.Any])
+      
+      /**
+        * A callback fired when the `view` changes.
+        *
+        * @controllable view
+        */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.onViewChange")
+      @js.native
+      def onViewChange: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onViewChange_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onViewChange")(x.asInstanceOf[js.Any])
+      
+      /**
+        * @example ['readOnly', ['new Date()']]
+        */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.readOnly")
+      @js.native
+      def readOnly: Requireable[Boolean] = js.native
+      inline def readOnly_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readOnly")(x.asInstanceOf[js.Any])
+      
+      /**
+        * Provide a custom component to render the days of the month. The Component is provided the following props
+        *
+        * - `date`: a `Date` object for the day of the month to render
+        * - `label`: a formatted `string` of the date to render. To adjust the format of the `label` string use the `dateFormat` prop, listed below.
+        */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.renderDay")
+      @js.native
+      def renderDay: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def renderDay_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderDay")(x.asInstanceOf[js.Any])
+      
+      /** @ignore */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.tabIndex")
+      @js.native
+      def tabIndex: Requireable[Any] = js.native
+      inline def tabIndex_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabIndex")(x.asInstanceOf[js.Any])
+      
+      /**
+        * The selected Date.
+        *
+        * ```tsx live
+        * import { Calendar } from 'react-widgets';
+        *
+        * <Calendar value={new Date()} />
+        * ```
+        * @example false
+        */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.value")
+      @js.native
+      def value: Requireable[js.Date] = js.native
+      inline def value_=(x: Requireable[js.Date]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
+      
+      /**
+        * Controls the currently displayed calendar view. Use `defaultView` to set a unique starting view.
+        *
+        * @type {("month"|"year"|"decade"|"century")}
+        * @controllable onViewChange
+        */
+      inline def view(props: Any, args: Any*): js.Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("view")(List(props.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Error | Null]
+      
+      /**
+        * Defines a list of views the Calendar can traverse through, starting with the
+        * first in the list to the last.
+        *
+        * @type array<"month"|"year"|"decade"|"century">
+        */
+      @JSImport("react-widgets/cjs/Calendar", "default.propTypes.views")
+      @js.native
+      def views: Requireable[js.Array[js.UndefOr[View | Null]]] = js.native
+      inline def views_=(x: Requireable[js.Array[js.UndefOr[View | Null]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("views")(x.asInstanceOf[js.Any])
     }
   }
   
-  trait CalendarProps
+  object Calendar {
+    
+    /* was `typeof SlideTransitionGroup` */
+    type Transition = default
+  }
+  
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.reactWidgets.sharedMod.WidgetProps because var conflicts: className, id, tabIndex. Inlined autoFocus, messages */ trait CalendarProps[TLocalizer]
     extends StObject
-       with ReactWidgetsCommonProps
-       with AutoFocus {
+       with WidgetHTMLProps[HTMLDivElement] {
     
-    /**
-      * A formatter for century, the default formats the first and last year of the century like:
-      * 1900 - 1999.
-      */
-    var centuryFormat: js.UndefOr[String | (js.Function1[/* day */ Date, String])] = js.undefined
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Set the culture of the Calendar, passed to the configured localizer.
-      */
-    var culture: js.UndefOr[String] = js.undefined
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Default current date at which the calendar opens. If none is provided, opens at today's
-      * date or the value date (if any).
-      * @default Date()
-      */
-    var currentDate: js.UndefOr[Date] = js.undefined
+    var currentDate: js.UndefOr[js.Date] = js.undefined
     
-    /**
-      * A formatter for day of the month.
-      */
-    var dateFormat: js.UndefOr[String | (js.Function1[/* day */ Date, String])] = js.undefined
+    var defaultCurrentDate: js.UndefOr[js.Date] = js.undefined
     
-    /**
-      * Provide a custom component to render the days of the month.
-      * The Component is provided the following props
-      * - date: a Date object for the day of the month to render
-      * - label: a formatted String of the date to render. To adjust the format of the label
-      *          string use the dateFormat prop, listed below.
-      */
-    var dayComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var defaultValue: js.UndefOr[js.Date] = js.undefined
     
-    /**
-      * A formatter calendar days of the week, the default formats each day as a Narrow name:
-      * "Mo", "Tu", etc.
-      */
-    var dayFormat: js.UndefOr[String | (js.Function1[/* day */ Date, String])] = js.undefined
+    var defaultView: js.UndefOr[View] = js.undefined
     
-    /**
-      * A formatter for decade, the default formats the first and last year of the decade like:
-      * 2000 - 2009.
-      */
-    var decadeFormat: js.UndefOr[String | (js.Function1[/* day */ Date, String])] = js.undefined
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Default value.
-      */
-    var defaultValue: js.UndefOr[Date] = js.undefined
+    var formats: js.UndefOr[DateFormats[InferFormat[TLocalizer]]] = js.undefined
     
-    /**
-      * Set a unique starting view
-      */
-    var defaultView: js.UndefOr[CalendarView] = js.undefined
+    var max: js.UndefOr[js.Date] = js.undefined
     
-    /**
-      * The highest level view the calendar can navigate up to. This value should be higher than
-      * initialView
-      */
-    var finalView: js.UndefOr[month | year | decade | century] = js.undefined
+    var messages: js.UndefOr[MoveBack | UserProvidedMessages] = js.undefined
     
-    /**
-      * Show or hide the Calendar footer.
-      * @default false
-      */
-    var footer: js.UndefOr[Boolean] = js.undefined
+    var min: js.UndefOr[js.Date] = js.undefined
     
-    /**
-      * A formatter for the Calendar footer, formats Today's Date as a string.
-      */
-    var footerFormat: js.UndefOr[String | (js.Function1[/* day */ Date, String])] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* nextValue */ js.Date, Unit]] = js.undefined
     
-    /**
-      * A formatter for the header button of the month view
-      */
-    var headerFormat: js.UndefOr[String | (js.Function1[/* day */ Date, String])] = js.undefined
+    var onCurrentDateChange: js.UndefOr[js.Function1[/* nextDate */ js.Date, Unit]] = js.undefined
     
-    /**
-      * The starting and lowest level view the calendar can navigate down to.
-      */
-    var initialView: js.UndefOr[month | year | decade | century] = js.undefined
+    var onNavigate: js.UndefOr[
+        js.Function3[/* date */ js.Date, /* slideDirection */ SlideDirection, /* nextView */ View, Unit]
+      ] = js.undefined
     
-    /**
-      * The maximum date that the Calendar can navigate to.
-      */
-    var max: js.UndefOr[Date] = js.undefined
+    var onViewChange: js.UndefOr[js.Function1[/* nextView */ View, Unit]] = js.undefined
     
-    var messages: js.UndefOr[CalendarMessages] = js.undefined
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * The minimum date that the Calendar can navigate from.
-      */
-    var min: js.UndefOr[Date] = js.undefined
+    var renderDay: js.UndefOr[RenderDayProp] = js.undefined
     
-    /**
-      * A formatter for month name.
-      */
-    var monthFormat: js.UndefOr[String | (js.Function1[/* day */ Date, String])] = js.undefined
+    var value: js.UndefOr[js.Date | Null] = js.undefined
     
-    /**
-      * Change event Handler that is called when the value is changed. The handler is called with
-      * the Date object
-      */
-    var onChange: js.UndefOr[js.Function1[/* date */ js.UndefOr[Date], Unit]] = js.undefined
+    var view: js.UndefOr[View] = js.undefined
     
-    /**
-      * Change event Handler that is called when the currentDate is changed. The handler is
-      * called with the currentDate object.
-      */
-    var onCurrentDateChange: js.UndefOr[js.Function1[/* date */ js.UndefOr[Date], Unit]] = js.undefined
-    
-    /**
-      * The native onKeyDown event, called preventDefault will prevent any custom behavior, included keyboard shortcuts.
-      */
-    var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
-    
-    /**
-      * Callback fired when the Calendar navigates between views, or forward and backwards in
-      * time.
-      */
-    var onNavigate: js.UndefOr[js.Function3[/* date */ Date, /* direction */ String, /* view */ String, Unit]] = js.undefined
-    
-    /**
-      * A callback fired when the view changes.
-      */
-    var onViewChange: js.UndefOr[js.Function0[Unit]] = js.undefined
-    
-    /**
-      * The current selected date, should be a Date object or null.
-      */
-    var value: js.UndefOr[Date] = js.undefined
-    
-    /**
-      * Controls the currently displayed calendar view. Use defaultView to set a unique starting view.
-      */
-    var view: js.UndefOr[CalendarView] = js.undefined
-    
-    /**
-      * Defines a list of views the Calendar can traverse through, starting with the first in the list to the last.
-      */
-    var views: js.UndefOr[js.Array[CalendarView]] = js.undefined
-    
-    /**
-      * A formatter for the year.
-      */
-    var yearFormat: js.UndefOr[String | (js.Function1[/* day */ Date, String])] = js.undefined
+    var views: js.UndefOr[js.Array[View]] = js.undefined
   }
   object CalendarProps {
     
-    inline def apply(): CalendarProps = {
+    inline def apply[TLocalizer](): CalendarProps[TLocalizer] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CalendarProps]
+      __obj.asInstanceOf[CalendarProps[TLocalizer]]
     }
     
-    extension [Self <: CalendarProps](x: Self) {
+    extension [Self <: CalendarProps[?], TLocalizer](x: Self & CalendarProps[TLocalizer]) {
       
-      inline def setCenturyFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "centuryFormat", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      inline def setCenturyFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "centuryFormat", js.Any.fromFunction1(value))
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      inline def setCenturyFormatUndefined: Self = StObject.set(x, "centuryFormat", js.undefined)
+      inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
-      inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
+      inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
-      inline def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
-      
-      inline def setCurrentDate(value: Date): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
+      inline def setCurrentDate(value: js.Date): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
       
       inline def setCurrentDateUndefined: Self = StObject.set(x, "currentDate", js.undefined)
       
-      inline def setDateFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      inline def setDefaultCurrentDate(value: js.Date): Self = StObject.set(x, "defaultCurrentDate", value.asInstanceOf[js.Any])
       
-      inline def setDateFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "dateFormat", js.Any.fromFunction1(value))
+      inline def setDefaultCurrentDateUndefined: Self = StObject.set(x, "defaultCurrentDate", js.undefined)
       
-      inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
-      
-      inline def setDayComponent(value: ReactType[js.Any]): Self = StObject.set(x, "dayComponent", value.asInstanceOf[js.Any])
-      
-      inline def setDayComponentUndefined: Self = StObject.set(x, "dayComponent", js.undefined)
-      
-      inline def setDayFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "dayFormat", value.asInstanceOf[js.Any])
-      
-      inline def setDayFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "dayFormat", js.Any.fromFunction1(value))
-      
-      inline def setDayFormatUndefined: Self = StObject.set(x, "dayFormat", js.undefined)
-      
-      inline def setDecadeFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "decadeFormat", value.asInstanceOf[js.Any])
-      
-      inline def setDecadeFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "decadeFormat", js.Any.fromFunction1(value))
-      
-      inline def setDecadeFormatUndefined: Self = StObject.set(x, "decadeFormat", js.undefined)
-      
-      inline def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultView(value: CalendarView): Self = StObject.set(x, "defaultView", value.asInstanceOf[js.Any])
+      inline def setDefaultView(value: View): Self = StObject.set(x, "defaultView", value.asInstanceOf[js.Any])
       
       inline def setDefaultViewUndefined: Self = StObject.set(x, "defaultView", js.undefined)
       
-      inline def setFinalView(value: month | year | decade | century): Self = StObject.set(x, "finalView", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      inline def setFinalViewUndefined: Self = StObject.set(x, "finalView", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setFooter(value: Boolean): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFormats(value: DateFormats[InferFormat[TLocalizer]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      inline def setFooterFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "footerFormat", value.asInstanceOf[js.Any])
+      inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      inline def setFooterFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "footerFormat", js.Any.fromFunction1(value))
-      
-      inline def setFooterFormatUndefined: Self = StObject.set(x, "footerFormat", js.undefined)
-      
-      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
-      
-      inline def setHeaderFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "headerFormat", value.asInstanceOf[js.Any])
-      
-      inline def setHeaderFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "headerFormat", js.Any.fromFunction1(value))
-      
-      inline def setHeaderFormatUndefined: Self = StObject.set(x, "headerFormat", js.undefined)
-      
-      inline def setInitialView(value: month | year | decade | century): Self = StObject.set(x, "initialView", value.asInstanceOf[js.Any])
-      
-      inline def setInitialViewUndefined: Self = StObject.set(x, "initialView", js.undefined)
-      
-      inline def setMax(value: Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
       inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      inline def setMessages(value: CalendarMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: MoveBack | UserProvidedMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
       inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      inline def setMin(value: Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: js.Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
       inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      inline def setMonthFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "monthFormat", value.asInstanceOf[js.Any])
-      
-      inline def setMonthFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "monthFormat", js.Any.fromFunction1(value))
-      
-      inline def setMonthFormatUndefined: Self = StObject.set(x, "monthFormat", js.undefined)
-      
-      inline def setOnChange(value: /* date */ js.UndefOr[Date] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* nextValue */ js.Date => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnCurrentDateChange(value: /* date */ js.UndefOr[Date] => Unit): Self = StObject.set(x, "onCurrentDateChange", js.Any.fromFunction1(value))
+      inline def setOnCurrentDateChange(value: /* nextDate */ js.Date => Unit): Self = StObject.set(x, "onCurrentDateChange", js.Any.fromFunction1(value))
       
       inline def setOnCurrentDateChangeUndefined: Self = StObject.set(x, "onCurrentDateChange", js.undefined)
       
-      inline def setOnKeyDown(value: /* event */ KeyboardEvent => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
-      
-      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
-      
-      inline def setOnNavigate(value: (/* date */ Date, /* direction */ String, /* view */ String) => Unit): Self = StObject.set(x, "onNavigate", js.Any.fromFunction3(value))
+      inline def setOnNavigate(value: (/* date */ js.Date, /* slideDirection */ SlideDirection, /* nextView */ View) => Unit): Self = StObject.set(x, "onNavigate", js.Any.fromFunction3(value))
       
       inline def setOnNavigateUndefined: Self = StObject.set(x, "onNavigate", js.undefined)
       
-      inline def setOnViewChange(value: () => Unit): Self = StObject.set(x, "onViewChange", js.Any.fromFunction0(value))
+      inline def setOnViewChange(value: /* nextView */ View => Unit): Self = StObject.set(x, "onViewChange", js.Any.fromFunction1(value))
       
       inline def setOnViewChangeUndefined: Self = StObject.set(x, "onViewChange", js.undefined)
       
-      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      
+      inline def setRenderDay(value: Date => ReactNode): Self = StObject.set(x, "renderDay", js.Any.fromFunction1(value))
+      
+      inline def setRenderDayUndefined: Self = StObject.set(x, "renderDay", js.undefined)
+      
+      inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setView(value: CalendarView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
       inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
       
-      inline def setViews(value: js.Array[CalendarView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      inline def setViews(value: js.Array[View]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
       inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
       
-      inline def setViewsVarargs(value: CalendarView*): Self = StObject.set(x, "views", js.Array(value :_*))
-      
-      inline def setYearFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "yearFormat", value.asInstanceOf[js.Any])
-      
-      inline def setYearFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "yearFormat", js.Any.fromFunction1(value))
-      
-      inline def setYearFormatUndefined: Self = StObject.set(x, "yearFormat", js.undefined)
+      inline def setViewsVarargs(value: View*): Self = StObject.set(x, "views", js.Array(value*))
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactWidgets.reactWidgetsStrings.DOWN
+    - typings.reactWidgets.reactWidgetsStrings.UP
+    - typings.reactWidgets.reactWidgetsStrings.LEFT
+    - typings.reactWidgets.reactWidgetsStrings.RIGHT
+  */
+  trait Direction extends StObject
+  object Direction {
+    
+    inline def DOWN: typings.reactWidgets.reactWidgetsStrings.DOWN = "DOWN".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.DOWN]
+    
+    inline def LEFT: typings.reactWidgets.reactWidgetsStrings.LEFT = "LEFT".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.LEFT]
+    
+    inline def RIGHT: typings.reactWidgets.reactWidgetsStrings.RIGHT = "RIGHT".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.RIGHT]
+    
+    inline def UP: typings.reactWidgets.reactWidgetsStrings.UP = "UP".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.UP]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactWidgets.reactWidgetsStrings.bottom
+    - typings.reactWidgets.reactWidgetsStrings.top
+    - typings.reactWidgets.reactWidgetsStrings.left_
+    - typings.reactWidgets.reactWidgetsStrings.right_
+  */
+  trait SlideDirection extends StObject
+  object SlideDirection {
+    
+    inline def bottom: typings.reactWidgets.reactWidgetsStrings.bottom = "bottom".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.bottom]
+    
+    inline def left: left_ = "left".asInstanceOf[left_]
+    
+    inline def right: right_ = "right".asInstanceOf[right_]
+    
+    inline def top: typings.reactWidgets.reactWidgetsStrings.top = "top".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.top]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -360,8 +482,8 @@ object calendarMod extends Shortcut {
     - typings.reactWidgets.reactWidgetsStrings.decade
     - typings.reactWidgets.reactWidgetsStrings.century
   */
-  trait CalendarView extends StObject
-  object CalendarView {
+  trait View extends StObject
+  object View {
     
     inline def century: typings.reactWidgets.reactWidgetsStrings.century = "century".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.century]
     
@@ -371,9 +493,4 @@ object calendarMod extends Shortcut {
     
     inline def year: typings.reactWidgets.reactWidgetsStrings.year = "year".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.year]
   }
-  
-  type _To = js.Object & CalendarClass
-  
-  /* This means you don't have to write `^`, but can instead just say `calendarMod.foo` */
-  override def _to: js.Object & CalendarClass = ^
 }

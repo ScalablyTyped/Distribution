@@ -23,7 +23,7 @@ object GroupedMergeTag {
     
     inline def setMergeTags(value: js.Array[SimpleMergeTag | GroupedMergeTag]): Self = StObject.set(x, "mergeTags", value.asInstanceOf[js.Any])
     
-    inline def setMergeTagsVarargs(value: (SimpleMergeTag | GroupedMergeTag)*): Self = StObject.set(x, "mergeTags", js.Array(value :_*))
+    inline def setMergeTagsVarargs(value: (SimpleMergeTag | GroupedMergeTag)*): Self = StObject.set(x, "mergeTags", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

@@ -46,7 +46,7 @@ object XXMLSecurityTemplate {
     acquire: () => Unit,
     getStatus: () => SecurityOperationStatus,
     getTemplate: () => XXMLElementWrapper,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setStatus: SecurityOperationStatus => Unit,
     setTarget: XXMLElementWrapper => Unit,

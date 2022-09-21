@@ -7,9 +7,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
 import typings.react.mod.TouchEvent
-import typings.reactRange.anon.Children
-import typings.reactRange.anon.Index
-import typings.reactRange.anon.IsDragged
 import typings.reactRange.anon.X
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -56,13 +53,13 @@ object typesMod {
     
     var key: String
     
-    var ref: RefObject[js.Any]
+    var ref: RefObject[Any]
     
     var style: CSSProperties
   }
   object IMarkProps {
     
-    inline def apply(key: String, ref: RefObject[js.Any], style: CSSProperties): IMarkProps = {
+    inline def apply(key: String, ref: RefObject[Any], style: CSSProperties): IMarkProps = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMarkProps]
     }
@@ -71,7 +68,7 @@ object typesMod {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: RefObject[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
@@ -95,11 +92,11 @@ object typesMod {
     
     var onFinalChange: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.undefined
     
-    var renderMark: js.UndefOr[js.Function1[/* params */ Index, ReactNode]] = js.undefined
+    var renderMark: js.UndefOr[js.Function1[/* params */ IRenderMarkParams, ReactNode]] = js.undefined
     
-    def renderThumb(params: IsDragged): ReactNode
+    def renderThumb(params: IRenderThumbParams): ReactNode
     
-    def renderTrack(params: Children): ReactNode
+    def renderTrack(params: IRenderTrackParams): ReactNode
     
     var rtl: Boolean
     
@@ -117,8 +114,8 @@ object typesMod {
       max: Double,
       min: Double,
       onChange: js.Array[Double] => Unit,
-      renderThumb: IsDragged => ReactNode,
-      renderTrack: Children => ReactNode,
+      renderThumb: IRenderThumbParams => ReactNode,
+      renderTrack: IRenderTrackParams => ReactNode,
       rtl: Boolean,
       step: Double,
       values: js.Array[Double]
@@ -147,13 +144,13 @@ object typesMod {
       
       inline def setOnFinalChangeUndefined: Self = StObject.set(x, "onFinalChange", js.undefined)
       
-      inline def setRenderMark(value: /* params */ Index => ReactNode): Self = StObject.set(x, "renderMark", js.Any.fromFunction1(value))
+      inline def setRenderMark(value: /* params */ IRenderMarkParams => ReactNode): Self = StObject.set(x, "renderMark", js.Any.fromFunction1(value))
       
       inline def setRenderMarkUndefined: Self = StObject.set(x, "renderMark", js.undefined)
       
-      inline def setRenderThumb(value: IsDragged => ReactNode): Self = StObject.set(x, "renderThumb", js.Any.fromFunction1(value))
+      inline def setRenderThumb(value: IRenderThumbParams => ReactNode): Self = StObject.set(x, "renderThumb", js.Any.fromFunction1(value))
       
-      inline def setRenderTrack(value: Children => ReactNode): Self = StObject.set(x, "renderTrack", js.Any.fromFunction1(value))
+      inline def setRenderTrack(value: IRenderTrackParams => ReactNode): Self = StObject.set(x, "renderTrack", js.Any.fromFunction1(value))
       
       inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
@@ -161,7 +158,88 @@ object typesMod {
       
       inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
+    }
+  }
+  
+  trait IRenderMarkParams extends StObject {
+    
+    var index: Double
+    
+    var props: IMarkProps
+  }
+  object IRenderMarkParams {
+    
+    inline def apply(index: Double, props: IMarkProps): IRenderMarkParams = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IRenderMarkParams]
+    }
+    
+    extension [Self <: IRenderMarkParams](x: Self) {
+      
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: IMarkProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait IRenderThumbParams extends StObject {
+    
+    var index: Double
+    
+    var isDragged: Boolean
+    
+    var props: IThumbProps
+    
+    var value: Double
+  }
+  object IRenderThumbParams {
+    
+    inline def apply(index: Double, isDragged: Boolean, props: IThumbProps, value: Double): IRenderThumbParams = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], isDragged = isDragged.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IRenderThumbParams]
+    }
+    
+    extension [Self <: IRenderThumbParams](x: Self) {
+      
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setIsDragged(value: Boolean): Self = StObject.set(x, "isDragged", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: IThumbProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait IRenderTrackParams extends StObject {
+    
+    var children: ReactNode
+    
+    var disabled: Boolean
+    
+    var isDragged: Boolean
+    
+    var props: ITrackProps
+  }
+  object IRenderTrackParams {
+    
+    inline def apply(disabled: Boolean, isDragged: Boolean, props: ITrackProps): IRenderTrackParams = {
+      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], isDragged = isDragged.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IRenderTrackParams]
+    }
+    
+    extension [Self <: IRenderTrackParams](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setIsDragged(value: Boolean): Self = StObject.set(x, "isDragged", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: ITrackProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,7 +259,7 @@ object typesMod {
     
     def onKeyUp(e: KeyboardEvent[Element]): Unit
     
-    var ref: RefObject[js.Any]
+    var ref: RefObject[Any]
     
     var role: String
     
@@ -199,7 +277,7 @@ object typesMod {
       key: Double,
       onKeyDown: KeyboardEvent[Element] => Unit,
       onKeyUp: KeyboardEvent[Element] => Unit,
-      ref: RefObject[js.Any],
+      ref: RefObject[Any],
       role: String,
       style: CSSProperties
     ): IThumbProps = {
@@ -226,7 +304,7 @@ object typesMod {
       
       inline def setOnKeyUp(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
-      inline def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: RefObject[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -263,7 +341,7 @@ object typesMod {
       
       inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -279,7 +357,7 @@ object typesMod {
       
       inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -289,7 +367,7 @@ object typesMod {
     
     def onTouchStart(e: TouchEvent[Element]): Unit
     
-    var ref: RefObject[js.Any]
+    var ref: RefObject[Any]
     
     var style: CSSProperties
   }
@@ -298,7 +376,7 @@ object typesMod {
     inline def apply(
       onMouseDown: MouseEvent[Element, NativeMouseEvent] => Unit,
       onTouchStart: TouchEvent[Element] => Unit,
-      ref: RefObject[js.Any],
+      ref: RefObject[Any],
       style: CSSProperties
     ): ITrackProps = {
       val __obj = js.Dynamic.literal(onMouseDown = js.Any.fromFunction1(onMouseDown), onTouchStart = js.Any.fromFunction1(onTouchStart), ref = ref.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
@@ -311,7 +389,7 @@ object typesMod {
       
       inline def setOnTouchStart(value: TouchEvent[Element] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
-      inline def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: RefObject[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }

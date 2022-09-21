@@ -3,7 +3,7 @@ package typings.jupyterlabServices
 import typings.jupyterlabServices.anon.OmitIOptionsserverSettingModel
 import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
 import typings.jupyterlabServices.terminalRestapiMod.IModel
-import typings.jupyterlabServices.terminalTerminalMod.ITerminalConnection.IOptions
+import typings.jupyterlabServices.terminalTerminalMod.ITerminal.IOptions
 import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoCoreutils.jsonMod.JSONPrimitive
 import typings.luminoDisposable.mod.IObservableDisposable
@@ -89,9 +89,9 @@ object terminalTerminalMod {
     /**
       * Create a new terminal session.
       *
-      * @param options - The options used to create the session.
+      * @param options - The options used to create the terminal.
       *
-      * @returns A promise that resolves with the terminal instance.
+      * @returns A promise that resolves with the terminal connection instance.
       *
       * #### Notes
       * The manager `serverSettings` will be always be used.
@@ -126,9 +126,43 @@ object terminalTerminalMod {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setContentVarargs(value: JSONPrimitive*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: JSONPrimitive*): Self = StObject.set(x, "content", js.Array(value*))
       
       inline def setType(value: MessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  object ITerminal {
+    
+    trait IOptions extends StObject {
+      
+      /**
+        *  The terminal current directory.
+        */
+      var cwd: js.UndefOr[String] = js.undefined
+      
+      /**
+        * The terminal name.
+        */
+      var name: js.UndefOr[String] = js.undefined
+    }
+    object IOptions {
+      
+      inline def apply(): IOptions = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[IOptions]
+      }
+      
+      extension [Self <: IOptions](x: Self) {
+        
+        inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+        
+        inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+        
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      }
     }
   }
   
@@ -217,12 +251,12 @@ object terminalTerminalMod {
     }
     object IOptions {
       
-      inline def apply(model: IModel): IOptions = {
+      inline def apply(model: IModel): typings.jupyterlabServices.terminalTerminalMod.ITerminalConnection.IOptions = {
         val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
-        __obj.asInstanceOf[IOptions]
+        __obj.asInstanceOf[typings.jupyterlabServices.terminalTerminalMod.ITerminalConnection.IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      extension [Self <: typings.jupyterlabServices.terminalTerminalMod.ITerminalConnection.IOptions](x: Self) {
         
         inline def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         

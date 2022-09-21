@@ -75,7 +75,7 @@ trait IServerValidationManager extends StObject {
     * @description
     * Gets all callbacks that has been registered using the subscribe method for the field.
     */
-  def getFieldCallbacks(fieldName: String): js.Any
+  def getFieldCallbacks(fieldName: String): Any
   
   /**
     * @ngdoc function
@@ -179,7 +179,7 @@ object IServerValidationManager {
     addPropertyError: (String, String, String) => Unit,
     clear: () => Unit,
     executeAndClearAllSubscriptions: () => Unit,
-    getFieldCallbacks: String => js.Any,
+    getFieldCallbacks: String => Any,
     getFieldError: String => String,
     getPropertyCallbacks: (String, String) => Unit,
     getPropertyError: (String, String) => String,
@@ -203,7 +203,7 @@ object IServerValidationManager {
     
     inline def setExecuteAndClearAllSubscriptions(value: () => Unit): Self = StObject.set(x, "executeAndClearAllSubscriptions", js.Any.fromFunction0(value))
     
-    inline def setGetFieldCallbacks(value: String => js.Any): Self = StObject.set(x, "getFieldCallbacks", js.Any.fromFunction1(value))
+    inline def setGetFieldCallbacks(value: String => Any): Self = StObject.set(x, "getFieldCallbacks", js.Any.fromFunction1(value))
     
     inline def setGetFieldError(value: String => String): Self = StObject.set(x, "getFieldError", js.Any.fromFunction1(value))
     

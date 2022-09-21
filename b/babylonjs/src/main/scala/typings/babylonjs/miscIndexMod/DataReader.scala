@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Misc/index", "DataReader")
 @js.native
-class DataReader protected ()
+open class DataReader protected ()
   extends typings.babylonjs.dataReaderMod.DataReader {
   /**
     * Constructor

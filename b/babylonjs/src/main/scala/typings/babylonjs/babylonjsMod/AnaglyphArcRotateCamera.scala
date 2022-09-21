@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Cameras/index", "AnaglyphArcRotateCamera")
 @js.native
-class AnaglyphArcRotateCamera protected ()
+open class AnaglyphArcRotateCamera protected ()
   extends typings.babylonjs.stereoscopicIndexMod.AnaglyphArcRotateCamera {
   /**
     * Creates a new AnaglyphArcRotateCamera
@@ -20,6 +20,14 @@ class AnaglyphArcRotateCamera protected ()
     * @param interaxialDistance defines distance between each color axis
     * @param scene defines the hosting scene
     */
+  def this(
+    name: String,
+    alpha: Double,
+    beta: Double,
+    radius: Double,
+    target: Vector3,
+    interaxialDistance: Double
+  ) = this()
   def this(
     name: String,
     alpha: Double,

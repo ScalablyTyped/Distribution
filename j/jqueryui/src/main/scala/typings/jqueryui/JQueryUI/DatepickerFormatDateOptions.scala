@@ -29,11 +29,11 @@ object DatepickerFormatDateOptions {
     
     inline def setDayNamesShortUndefined: Self = StObject.set(x, "dayNamesShort", js.undefined)
     
-    inline def setDayNamesShortVarargs(value: String*): Self = StObject.set(x, "dayNamesShort", js.Array(value :_*))
+    inline def setDayNamesShortVarargs(value: String*): Self = StObject.set(x, "dayNamesShort", js.Array(value*))
     
     inline def setDayNamesUndefined: Self = StObject.set(x, "dayNames", js.undefined)
     
-    inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
+    inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value*))
     
     inline def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
     
@@ -41,10 +41,10 @@ object DatepickerFormatDateOptions {
     
     inline def setMonthNamesShortUndefined: Self = StObject.set(x, "monthNamesShort", js.undefined)
     
-    inline def setMonthNamesShortVarargs(value: String*): Self = StObject.set(x, "monthNamesShort", js.Array(value :_*))
+    inline def setMonthNamesShortVarargs(value: String*): Self = StObject.set(x, "monthNamesShort", js.Array(value*))
     
     inline def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
     
-    inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+    inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value*))
   }
 }

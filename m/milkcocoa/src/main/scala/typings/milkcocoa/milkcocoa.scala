@@ -134,11 +134,11 @@ object milkcocoa {
     
     var path: String
     
-    var value: js.Any
+    var value: Any
   }
   object DataStoreCallbackData {
     
-    inline def apply(err: String, id: String, path: String, value: js.Any): DataStoreCallbackData = {
+    inline def apply(err: String, id: String, path: String, value: Any): DataStoreCallbackData = {
       val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataStoreCallbackData]
     }
@@ -151,13 +151,13 @@ object milkcocoa {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
   trait Query extends StObject {
     
-    def done(callback: js.Function1[/* data */ js.Any, Unit]): Unit
+    def done(callback: js.Function1[/* data */ Any, Unit]): Unit
     
     def limit(number: Double): Query
     
@@ -169,7 +169,7 @@ object milkcocoa {
   object Query {
     
     inline def apply(
-      done: js.Function1[/* data */ js.Any, Unit] => Unit,
+      done: js.Function1[/* data */ Any, Unit] => Unit,
       limit: Double => Query,
       skip: Double => Query,
       sort: String => Query
@@ -180,7 +180,7 @@ object milkcocoa {
     
     extension [Self <: Query](x: Self) {
       
-      inline def setDone(value: js.Function1[/* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
+      inline def setDone(value: js.Function1[/* data */ Any, Unit] => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
       
       inline def setLimit(value: Double => Query): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
       

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.WebProxy")
 @js.native
-class WebProxy ()
+open class WebProxy ()
   extends StObject
      with typings.sharepoint.SP.WebProxy
 object WebProxy {

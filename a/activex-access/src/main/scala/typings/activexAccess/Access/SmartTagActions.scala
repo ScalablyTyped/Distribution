@@ -19,5 +19,5 @@ trait SmartTagActions extends StObject {
   def Item(Index: String): SmartTagAction = js.native
   def Item(Index: Double): SmartTagAction = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

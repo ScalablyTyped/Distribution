@@ -59,7 +59,7 @@ object GraphTraversal {
     
     inline def setEdgeTraversalsUndefined: Self = StObject.set(x, "edgeTraversals", js.undefined)
     
-    inline def setEdgeTraversalsVarargs(value: EdgeTraversal*): Self = StObject.set(x, "edgeTraversals", js.Array(value :_*))
+    inline def setEdgeTraversalsVarargs(value: EdgeTraversal*): Self = StObject.set(x, "edgeTraversals", js.Array(value*))
     
     inline def setImmutableState(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "immutableState", value.asInstanceOf[js.Any])
     

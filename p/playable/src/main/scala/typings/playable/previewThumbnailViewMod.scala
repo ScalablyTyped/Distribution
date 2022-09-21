@@ -11,27 +11,27 @@ object previewThumbnailViewMod {
   
   @JSImport("playable/dist/src/modules/ui/preview-thumbnail/preview-thumbnail.view", JSImport.Default)
   @js.native
-  class default () extends PreviewThumbnailView
+  open class default () extends PreviewThumbnailView
   
   @js.native
   trait PreviewThumbnailView
     extends typings.playable.viewMod.default[IPreviewThumbnailViewStyles] {
     
     /* private */ @JSName("_$highQualityThumb")
-    var _$highQualityThumb: js.Any = js.native
+    var _$highQualityThumb: Any = js.native
     
     /* private */ @JSName("_$lowQualityThumb")
-    var _$lowQualityThumb: js.Any = js.native
+    var _$lowQualityThumb: Any = js.native
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
     /* private */ @JSName("_$timeText")
-    var _$timeText: js.Any = js.native
+    var _$timeText: Any = js.native
     
-    /* private */ var _applyQualityToThumbElement: js.Any = js.native
+    /* private */ var _applyQualityToThumbElement: Any = js.native
     
-    /* private */ var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: Any = js.native
     
     def clearHighQualityPreview(): Unit = js.native
     

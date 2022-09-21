@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "MapTouchEvent")
 @js.native
-class MapTouchEvent () extends MapboxEvent[TouchEvent] {
+open class MapTouchEvent () extends MapboxEvent[TouchEvent] {
   
   var defaultPrevented: Boolean = js.native
   

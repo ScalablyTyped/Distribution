@@ -8,9 +8,9 @@ object brandingMod {
   
   @JSImport("@nulogy/components/src/Branding", "Branding")
   @js.native
-  val Branding: js.Any = js.native
+  val Branding: Any = js.native
   
   @JSImport("@nulogy/components/src/Branding", "BrandingText")
   @js.native
-  val BrandingText: js.Any = js.native
+  val BrandingText: Any = js.native
 }

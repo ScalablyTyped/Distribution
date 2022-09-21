@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("color-hash", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with ColorHash {
     def this(options: ColorHashOptions) = this()
@@ -115,15 +115,19 @@ object mod {
       
       inline def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
       
-      inline def setHueVarargs(value: HueObject*): Self = StObject.set(x, "hue", js.Array(value :_*))
+      inline def setHueVarargs(value: HueObject*): Self = StObject.set(x, "hue", js.Array(value*))
       
       inline def setLightness(value: Lightness): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
       
       inline def setLightnessUndefined: Self = StObject.set(x, "lightness", js.undefined)
       
+      inline def setLightnessVarargs(value: Double*): Self = StObject.set(x, "lightness", js.Array(value*))
+      
       inline def setSaturation(value: Saturation): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
       
       inline def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
+      
+      inline def setSaturationVarargs(value: Double*): Self = StObject.set(x, "saturation", js.Array(value*))
     }
   }
   
@@ -154,7 +158,7 @@ object mod {
     }
   }
   
-  type Lightness = Double | ColorValueArray
+  type Lightness = Double | js.Array[Double]
   
-  type Saturation = Double | ColorValueArray
+  type Saturation = Double | js.Array[Double]
 }

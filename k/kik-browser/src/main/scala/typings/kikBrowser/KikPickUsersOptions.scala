@@ -34,7 +34,7 @@ object KikPickUsersOptions {
     
     inline def setFilteredUndefined: Self = StObject.set(x, "filtered", js.undefined)
     
-    inline def setFilteredVarargs(value: String*): Self = StObject.set(x, "filtered", js.Array(value :_*))
+    inline def setFilteredVarargs(value: String*): Self = StObject.set(x, "filtered", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -48,6 +48,6 @@ object KikPickUsersOptions {
     
     inline def setPreselectedUndefined: Self = StObject.set(x, "preselected", js.undefined)
     
-    inline def setPreselectedVarargs(value: Username*): Self = StObject.set(x, "preselected", js.Array(value :_*))
+    inline def setPreselectedVarargs(value: Username*): Self = StObject.set(x, "preselected", js.Array(value*))
   }
 }

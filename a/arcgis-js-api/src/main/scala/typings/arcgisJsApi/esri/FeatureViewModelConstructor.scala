@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FeatureViewModelConstructor
   extends StObject
-     with Instantiable0[FeatureViewModel]
+     with /**
+  * Provides the logic for the [Feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html)
+  */
+Instantiable0[FeatureViewModel]
      with Instantiable1[/* properties */ FeatureViewModelProperties, FeatureViewModel]

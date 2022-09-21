@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDomainNamesResponse extends StObject {
   
   /**
-    * List of Elasticsearch domain names.
+    * List of domain names and respective engine types.
     */
   var DomainNames: js.UndefOr[DomainInfoList] = js.undefined
 }
@@ -24,6 +24,6 @@ object ListDomainNamesResponse {
     
     inline def setDomainNamesUndefined: Self = StObject.set(x, "DomainNames", js.undefined)
     
-    inline def setDomainNamesVarargs(value: DomainInfo*): Self = StObject.set(x, "DomainNames", js.Array(value :_*))
+    inline def setDomainNamesVarargs(value: DomainInfo*): Self = StObject.set(x, "DomainNames", js.Array(value*))
   }
 }

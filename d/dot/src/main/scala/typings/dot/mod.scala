@@ -1,6 +1,5 @@
 package typings.dot
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,34 +30,34 @@ object mod {
   @js.native
   trait RenderFunction extends StObject {
     
-    def apply(args: js.Any*): String = js.native
+    def apply(args: Any*): String = js.native
   }
   
   trait TemplateSettings_ extends StObject {
     
     var append: Boolean
     
-    var conditional: RegExp
+    var conditional: js.RegExp
     
-    var define: RegExp
+    var define: js.RegExp
     
-    var defineParams: RegExp
+    var defineParams: js.RegExp
     
-    var encode: RegExp
+    var encode: js.RegExp
     
-    var evaluate: RegExp
+    var evaluate: js.RegExp
     
-    var interpolate: RegExp
+    var interpolate: js.RegExp
     
-    var iterate: RegExp
+    var iterate: js.RegExp
     
     var selfcontained: Boolean
     
     var strip: Boolean
     
-    var use: RegExp
+    var use: js.RegExp
     
-    var useParams: RegExp
+    var useParams: js.RegExp
     
     var varname: String
   }
@@ -66,17 +65,17 @@ object mod {
     
     inline def apply(
       append: Boolean,
-      conditional: RegExp,
-      define: RegExp,
-      defineParams: RegExp,
-      encode: RegExp,
-      evaluate: RegExp,
-      interpolate: RegExp,
-      iterate: RegExp,
+      conditional: js.RegExp,
+      define: js.RegExp,
+      defineParams: js.RegExp,
+      encode: js.RegExp,
+      evaluate: js.RegExp,
+      interpolate: js.RegExp,
+      iterate: js.RegExp,
       selfcontained: Boolean,
       strip: Boolean,
-      use: RegExp,
-      useParams: RegExp,
+      use: js.RegExp,
+      useParams: js.RegExp,
       varname: String
     ): TemplateSettings_ = {
       val __obj = js.Dynamic.literal(append = append.asInstanceOf[js.Any], conditional = conditional.asInstanceOf[js.Any], define = define.asInstanceOf[js.Any], defineParams = defineParams.asInstanceOf[js.Any], encode = encode.asInstanceOf[js.Any], evaluate = evaluate.asInstanceOf[js.Any], interpolate = interpolate.asInstanceOf[js.Any], iterate = iterate.asInstanceOf[js.Any], selfcontained = selfcontained.asInstanceOf[js.Any], strip = strip.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], useParams = useParams.asInstanceOf[js.Any], varname = varname.asInstanceOf[js.Any])
@@ -87,27 +86,27 @@ object mod {
       
       inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
-      inline def setConditional(value: RegExp): Self = StObject.set(x, "conditional", value.asInstanceOf[js.Any])
+      inline def setConditional(value: js.RegExp): Self = StObject.set(x, "conditional", value.asInstanceOf[js.Any])
       
-      inline def setDefine(value: RegExp): Self = StObject.set(x, "define", value.asInstanceOf[js.Any])
+      inline def setDefine(value: js.RegExp): Self = StObject.set(x, "define", value.asInstanceOf[js.Any])
       
-      inline def setDefineParams(value: RegExp): Self = StObject.set(x, "defineParams", value.asInstanceOf[js.Any])
+      inline def setDefineParams(value: js.RegExp): Self = StObject.set(x, "defineParams", value.asInstanceOf[js.Any])
       
-      inline def setEncode(value: RegExp): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+      inline def setEncode(value: js.RegExp): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
       
-      inline def setEvaluate(value: RegExp): Self = StObject.set(x, "evaluate", value.asInstanceOf[js.Any])
+      inline def setEvaluate(value: js.RegExp): Self = StObject.set(x, "evaluate", value.asInstanceOf[js.Any])
       
-      inline def setInterpolate(value: RegExp): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
+      inline def setInterpolate(value: js.RegExp): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
       
-      inline def setIterate(value: RegExp): Self = StObject.set(x, "iterate", value.asInstanceOf[js.Any])
+      inline def setIterate(value: js.RegExp): Self = StObject.set(x, "iterate", value.asInstanceOf[js.Any])
       
       inline def setSelfcontained(value: Boolean): Self = StObject.set(x, "selfcontained", value.asInstanceOf[js.Any])
       
       inline def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
       
-      inline def setUse(value: RegExp): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      inline def setUse(value: js.RegExp): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
-      inline def setUseParams(value: RegExp): Self = StObject.set(x, "useParams", value.asInstanceOf[js.Any])
+      inline def setUseParams(value: js.RegExp): Self = StObject.set(x, "useParams", value.asInstanceOf[js.Any])
       
       inline def setVarname(value: String): Self = StObject.set(x, "varname", value.asInstanceOf[js.Any])
     }

@@ -16,9 +16,9 @@ trait ClientValueObjectCollection[T]
 object ClientValueObjectCollection {
   
   inline def apply[T](
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     getEnumerator: () => IEnumerator[T],
     get_count: () => Double,
     get_typeId: () => String,

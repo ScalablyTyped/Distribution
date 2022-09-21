@@ -7,21 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** This Gamepad API interface represents hardware in the controller designed to provide haptic feedback to the user (if available), most commonly vibration hardware. */
 trait GamepadHapticActuator extends StObject {
   
-  def pulse(value: Double, duration: Double): js.Promise[scala.Boolean]
-  
+  /* standard dom */
   val `type`: GamepadHapticActuatorType
 }
 object GamepadHapticActuator {
   
-  inline def apply(pulse: (Double, Double) => js.Promise[scala.Boolean], `type`: GamepadHapticActuatorType): GamepadHapticActuator = {
-    val __obj = js.Dynamic.literal(pulse = js.Any.fromFunction2(pulse))
+  inline def apply(`type`: GamepadHapticActuatorType): GamepadHapticActuator = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GamepadHapticActuator]
   }
   
   extension [Self <: GamepadHapticActuator](x: Self) {
-    
-    inline def setPulse(value: (Double, Double) => js.Promise[scala.Boolean]): Self = StObject.set(x, "pulse", js.Any.fromFunction2(value))
     
     inline def setType(value: GamepadHapticActuatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

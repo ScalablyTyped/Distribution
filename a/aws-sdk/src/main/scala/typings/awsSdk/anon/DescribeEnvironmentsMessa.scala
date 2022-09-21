@@ -6,7 +6,6 @@ import typings.awsSdk.elasticbeanstalkMod.EnvironmentIdList
 import typings.awsSdk.elasticbeanstalkMod.EnvironmentName
 import typings.awsSdk.elasticbeanstalkMod.EnvironmentNamesList
 import typings.awsSdk.elasticbeanstalkMod.IncludeDeleted
-import typings.awsSdk.elasticbeanstalkMod.IncludeDeletedBackTo
 import typings.awsSdk.elasticbeanstalkMod.MaxRecords
 import typings.awsSdk.elasticbeanstalkMod.Token
 import typings.awsSdk.elasticbeanstalkMod.VersionLabel
@@ -44,7 +43,7 @@ trait DescribeEnvironmentsMessa extends StObject {
   /**
     *  If specified when IncludeDeleted is set to true, then environments deleted after this date are displayed. 
     */
-  var IncludedDeletedBackTo: js.UndefOr[IncludeDeletedBackTo] = js.undefined
+  var IncludedDeletedBackTo: js.UndefOr[js.Date] = js.undefined
   
   /**
     * For a paginated request. Specify a maximum number of environments to include in each response. If no MaxRecords is specified, all available environments are retrieved in a single response.
@@ -82,19 +81,19 @@ object DescribeEnvironmentsMessa {
     
     inline def setEnvironmentIdsUndefined: Self = StObject.set(x, "EnvironmentIds", js.undefined)
     
-    inline def setEnvironmentIdsVarargs(value: EnvironmentId*): Self = StObject.set(x, "EnvironmentIds", js.Array(value :_*))
+    inline def setEnvironmentIdsVarargs(value: EnvironmentId*): Self = StObject.set(x, "EnvironmentIds", js.Array(value*))
     
     inline def setEnvironmentNames(value: EnvironmentNamesList): Self = StObject.set(x, "EnvironmentNames", value.asInstanceOf[js.Any])
     
     inline def setEnvironmentNamesUndefined: Self = StObject.set(x, "EnvironmentNames", js.undefined)
     
-    inline def setEnvironmentNamesVarargs(value: EnvironmentName*): Self = StObject.set(x, "EnvironmentNames", js.Array(value :_*))
+    inline def setEnvironmentNamesVarargs(value: EnvironmentName*): Self = StObject.set(x, "EnvironmentNames", js.Array(value*))
     
     inline def setIncludeDeleted(value: IncludeDeleted): Self = StObject.set(x, "IncludeDeleted", value.asInstanceOf[js.Any])
     
     inline def setIncludeDeletedUndefined: Self = StObject.set(x, "IncludeDeleted", js.undefined)
     
-    inline def setIncludedDeletedBackTo(value: IncludeDeletedBackTo): Self = StObject.set(x, "IncludedDeletedBackTo", value.asInstanceOf[js.Any])
+    inline def setIncludedDeletedBackTo(value: js.Date): Self = StObject.set(x, "IncludedDeletedBackTo", value.asInstanceOf[js.Any])
     
     inline def setIncludedDeletedBackToUndefined: Self = StObject.set(x, "IncludedDeletedBackTo", js.undefined)
     

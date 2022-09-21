@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("AWS.Request")
 @js.native
-class Request[D, E] protected ()
+open class Request[D, E] protected ()
   extends typings.awsSdk.mod.Request[D, E] {
   /**
     * Creates a request for an operation on a given service with a set of input parameters.
@@ -16,5 +16,5 @@ class Request[D, E] protected ()
     * @param {object} params - Parameters to send to the operation.
     */
   def this(service: typings.awsSdk.serviceMod.Service, operation: String) = this()
-  def this(service: typings.awsSdk.serviceMod.Service, operation: String, params: js.Any) = this()
+  def this(service: typings.awsSdk.serviceMod.Service, operation: String, params: Any) = this()
 }

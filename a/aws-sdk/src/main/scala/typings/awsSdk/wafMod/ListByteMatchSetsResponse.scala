@@ -29,7 +29,7 @@ object ListByteMatchSetsResponse {
     
     inline def setByteMatchSetsUndefined: Self = StObject.set(x, "ByteMatchSets", js.undefined)
     
-    inline def setByteMatchSetsVarargs(value: ByteMatchSetSummary*): Self = StObject.set(x, "ByteMatchSets", js.Array(value :_*))
+    inline def setByteMatchSetsVarargs(value: ByteMatchSetSummary*): Self = StObject.set(x, "ByteMatchSets", js.Array(value*))
     
     inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

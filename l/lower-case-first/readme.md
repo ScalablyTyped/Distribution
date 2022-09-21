@@ -1,7 +1,7 @@
 
 # Scala.js typings for lower-case-first
 
-Typings are for version 2.0.1
+Typings are for version 2.0.2
 
 ## Library description:
 Transforms the string with only the first character in lower case
@@ -10,10 +10,10 @@ Transforms the string with only the first character in lower case
 | ------------------ | :-------------: |
 | Full name          | lower-case-first |
 | Keywords           | lower, case, first, start, character |
-| # releases         | 4 |
-| # dependents       | 16 |
-| # downloads        | 57008038 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1999972666666666E7 |
+| # stars            | 1776.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/lower-case-first#readme)

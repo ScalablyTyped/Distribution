@@ -9,11 +9,11 @@ Motion helpers for digital and software products using the Carbon Design System
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @carbon/motion |
-| Keywords           | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
-| # releases         | 83 |
-| # dependents       | 8 |
-| # downloads        | 466570 |
-| # stars            | 0 |
+| Keywords           | ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
+| # releases         | 48 |
+| # dependents       | 0.0 |
+| # downloads        | 148000.33333333334 |
+| # stars            | 5846.0 |
 
 ## Links
 - [Homepage](https://github.com/carbon-design-system/carbon#readme)

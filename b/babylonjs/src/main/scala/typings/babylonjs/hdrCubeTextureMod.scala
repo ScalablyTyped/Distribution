@@ -3,6 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
@@ -14,7 +15,7 @@ object hdrCubeTextureMod {
   
   @JSImport("babylonjs/Materials/Textures/hdrCubeTexture", "HDRCubeTexture")
   @js.native
-  class HDRCubeTexture protected () extends BaseTexture {
+  open class HDRCubeTexture protected () extends BaseTexture {
     /**
       * Instantiates an HDRTexture from the following parameters.
       *
@@ -25,6 +26,8 @@ object hdrCubeTextureMod {
       * @param generateHarmonics Specifies whether you want to extract the polynomial harmonics during the generation process
       * @param gammaSpace Specifies if the texture will be use in gamma or linear space (the PBR material requires those texture in linear space, but the standard material would require them in Gamma space)
       * @param prefilterOnLoad Prefilters HDR texture to allow use of this texture as a PBR reflection texture.
+      * @param onLoad
+      * @param onError
       */
     def this(
       url: String,
@@ -37,30 +40,35 @@ object hdrCubeTextureMod {
       onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
       onError: js.UndefOr[
             Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ]
           ]
     ) = this()
     
-    /* private */ var _boundingBoxSize: js.Any = js.native
+    /* private */ var _boundingBoxSize: Any = js.native
     
-    /* private */ var _generateHarmonics: js.Any = js.native
+    /* private */ var _generateHarmonics: Any = js.native
     
     /* protected */ var _isBlocking: Boolean = js.native
     
-    /* private */ var _noMipmap: js.Any = js.native
+    /**
+      * Occurs when the file is raw .hdr file.
+      */
+    /* private */ var _loadTexture: Any = js.native
     
-    /* private */ var _onError: js.Any = js.native
+    /* private */ var _noMipmap: Any = js.native
     
-    /* private */ var _onLoad: js.Any = js.native
+    /* private */ var _onError: Any = js.native
     
-    /* private */ var _prefilterOnLoad: js.Any = js.native
+    /* private */ var _onLoad: Any = js.native
+    
+    /* private */ var _prefilterOnLoad: Any = js.native
     
     /* protected */ var _rotationY: Double = js.native
     
-    /* private */ var _size: js.Any = js.native
+    /* private */ var _size: Any = js.native
     
-    /* private */ var _textureMatrix: js.Any = js.native
+    /* private */ var _textureMatrix: Any = js.native
     
     /**
       * Gets or sets the center of the bounding box associated with the cube texture
@@ -78,14 +86,14 @@ object hdrCubeTextureMod {
     def boundingBoxSize_=(value: Vector3): Unit = js.native
     
     /**
-      * Sets wether or not the texture is blocking during loading.
+      * Sets whether or not the texture is blocking during loading.
       */
     def isBlocking_=(value: Boolean): Unit = js.native
     
     /**
-      * Occurs when the file is raw .hdr file.
+      * Observable triggered once the texture has been loaded.
       */
-    /* private */ var loadTexture: js.Any = js.native
+    var onLoadObservable: Observable[HDRCubeTexture] = js.native
     
     /**
       * Gets texture matrix rotation angle around Y axis radians.
@@ -121,11 +129,11 @@ object hdrCubeTextureMod {
       * @param rootUrl Define the root url in case we need to load relative dependencies
       * @returns the newly created texture after parsing
       */
-    inline def Parse(parsedTexture: js.Any, scene: Scene, rootUrl: String): Nullable[HDRCubeTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[HDRCubeTexture]]
+    inline def Parse(parsedTexture: Any, scene: Scene, rootUrl: String): Nullable[HDRCubeTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[HDRCubeTexture]]
     
-    @JSImport("babylonjs/Materials/Textures/hdrCubeTexture", "HDRCubeTexture._facesMapping")
+    @JSImport("babylonjs/Materials/Textures/hdrCubeTexture", "HDRCubeTexture._FacesMapping")
     @js.native
-    def _facesMapping: js.Any = js.native
-    inline def _facesMapping_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_facesMapping")(x.asInstanceOf[js.Any])
+    def _FacesMapping: Any = js.native
+    inline def _FacesMapping_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FacesMapping")(x.asInstanceOf[js.Any])
   }
 }

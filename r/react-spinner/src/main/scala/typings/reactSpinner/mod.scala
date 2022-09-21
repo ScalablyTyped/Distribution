@@ -9,8 +9,8 @@ object mod {
   
   @JSImport("react-spinner", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[js.Object, js.Object, js.Any]
+  open class default ()
+    extends Component[js.Object, js.Object, Any]
   
-  type Spinner = Component[js.Object, js.Object, js.Any]
+  type Spinner = Component[js.Object, js.Object, Any]
 }

@@ -11,18 +11,18 @@ object Oidc {
   
   trait DefaultHttpRequest extends StObject {
     
-    def getJSON(url: String, config: js.Any): DefaultPromise
+    def getJSON(url: String, config: Any): DefaultPromise
   }
   object DefaultHttpRequest {
     
-    inline def apply(getJSON: (String, js.Any) => DefaultPromise): DefaultHttpRequest = {
+    inline def apply(getJSON: (String, Any) => DefaultPromise): DefaultHttpRequest = {
       val __obj = js.Dynamic.literal(getJSON = js.Any.fromFunction2(getJSON))
       __obj.asInstanceOf[DefaultHttpRequest]
     }
     
     extension [Self <: DefaultHttpRequest](x: Self) {
       
-      inline def setGetJSON(value: (String, js.Any) => DefaultPromise): Self = StObject.set(x, "getJSON", js.Any.fromFunction2(value))
+      inline def setGetJSON(value: (String, Any) => DefaultPromise): Self = StObject.set(x, "getJSON", js.Any.fromFunction2(value))
     }
   }
   
@@ -31,15 +31,15 @@ object Oidc {
     def `catch`(errorCallback: js.Function0[Unit]): DefaultPromise
     
     def `then`(
-      successCallback: js.Function1[/* value */ js.UndefOr[js.Any], Unit],
-      errorCallback: js.Function1[/* reason */ js.UndefOr[js.Any], Unit]
+      successCallback: js.Function1[/* value */ js.UndefOr[Any], Unit],
+      errorCallback: js.Function1[/* reason */ js.UndefOr[Any], Unit]
     ): DefaultPromise
   }
   object DefaultPromise {
     
     inline def apply(
       `catch`: js.Function0[Unit] => DefaultPromise,
-      `then`: (js.Function1[/* value */ js.UndefOr[js.Any], Unit], js.Function1[/* reason */ js.UndefOr[js.Any], Unit]) => DefaultPromise
+      `then`: (js.Function1[/* value */ js.UndefOr[Any], Unit], js.Function1[/* reason */ js.UndefOr[Any], Unit]) => DefaultPromise
     ): DefaultPromise = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("catch")(js.Any.fromFunction1(`catch`))
@@ -52,37 +52,33 @@ object Oidc {
       inline def setCatch(value: js.Function0[Unit] => DefaultPromise): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
       
       inline def setThen(
-        value: (js.Function1[/* value */ js.UndefOr[js.Any], Unit], js.Function1[/* reason */ js.UndefOr[js.Any], Unit]) => DefaultPromise
+        value: (js.Function1[/* value */ js.UndefOr[Any], Unit], js.Function1[/* reason */ js.UndefOr[Any], Unit]) => DefaultPromise
       ): Self = StObject.set(x, "then", js.Any.fromFunction2(value))
     }
   }
   
   trait DefaultPromiseFactory extends StObject {
     
-    def create(callback: js.Any): DefaultPromise
+    def create(callback: Any): DefaultPromise
     
-    def reject(reason: js.Any): DefaultPromise
+    def reject(reason: Any): DefaultPromise
     
-    def resolve(value: js.Any): DefaultPromise
+    def resolve(value: Any): DefaultPromise
   }
   object DefaultPromiseFactory {
     
-    inline def apply(
-      create: js.Any => DefaultPromise,
-      reject: js.Any => DefaultPromise,
-      resolve: js.Any => DefaultPromise
-    ): DefaultPromiseFactory = {
+    inline def apply(create: Any => DefaultPromise, reject: Any => DefaultPromise, resolve: Any => DefaultPromise): DefaultPromiseFactory = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), reject = js.Any.fromFunction1(reject), resolve = js.Any.fromFunction1(resolve))
       __obj.asInstanceOf[DefaultPromiseFactory]
     }
     
     extension [Self <: DefaultPromiseFactory](x: Self) {
       
-      inline def setCreate(value: js.Any => DefaultPromise): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: Any => DefaultPromise): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      inline def setReject(value: js.Any => DefaultPromise): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+      inline def setReject(value: Any => DefaultPromise): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       
-      inline def setResolve(value: js.Any => DefaultPromise): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: Any => DefaultPromise): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
   }
   
@@ -170,7 +166,7 @@ object Oidc {
     
     var request_state_key: js.UndefOr[String] = js.undefined
     
-    var request_state_store: js.UndefOr[js.Any] = js.undefined
+    var request_state_store: js.UndefOr[Any] = js.undefined
     
     var response_type: js.UndefOr[String] = js.undefined
   }
@@ -199,7 +195,7 @@ object Oidc {
       
       inline def setRequest_state_keyUndefined: Self = StObject.set(x, "request_state_key", js.undefined)
       
-      inline def setRequest_state_store(value: js.Any): Self = StObject.set(x, "request_state_store", value.asInstanceOf[js.Any])
+      inline def setRequest_state_store(value: Any): Self = StObject.set(x, "request_state_store", value.asInstanceOf[js.Any])
       
       inline def setRequest_state_storeUndefined: Self = StObject.set(x, "request_state_store", js.undefined)
       
@@ -232,7 +228,7 @@ object Oidc {
     
     var scopes: js.Array[String]
     
-    var session_state: js.Any
+    var session_state: Any
     
     def toJSON(): String
   }
@@ -247,7 +243,7 @@ object Oidc {
       profile: String,
       scope: String,
       scopes: js.Array[String],
-      session_state: js.Any,
+      session_state: Any,
       toJSON: () => String
     ): OidcToken = {
       val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], expired = expired.asInstanceOf[js.Any], expires_at = expires_at.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], id_token = id_token.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], session_state = session_state.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
@@ -272,9 +268,9 @@ object Oidc {
       
       inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
       
-      inline def setSession_state(value: js.Any): Self = StObject.set(x, "session_state", value.asInstanceOf[js.Any])
+      inline def setSession_state(value: Any): Self = StObject.set(x, "session_state", value.asInstanceOf[js.Any])
       
       inline def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
@@ -315,7 +311,7 @@ object Oidc {
     def processTokenPopup(): Unit = js.native
     def processTokenPopup(hash: String): Unit = js.native
     
-    var profile: js.Any = js.native
+    var profile: Any = js.native
     
     def redirectForLogout(): DefaultPromise = js.native
     
@@ -331,7 +327,7 @@ object Oidc {
     
     var scopes: js.Array[String] = js.native
     
-    var session_state: js.Any = js.native
+    var session_state: Any = js.native
   }
   
   trait OidcTokenManagerSettings extends StObject {
@@ -344,13 +340,13 @@ object Oidc {
     
     var end_session_endpoint: js.UndefOr[String] = js.undefined
     
-    var jwks: js.UndefOr[js.Any] = js.undefined
+    var jwks: js.UndefOr[Any] = js.undefined
     
     var jwks_uri: js.UndefOr[String] = js.undefined
     
     var load_user_profile: js.UndefOr[Boolean] = js.undefined
     
-    var metadata: js.UndefOr[js.Any] = js.undefined
+    var metadata: js.UndefOr[Any] = js.undefined
     
     var persist: js.UndefOr[Boolean] = js.undefined
     
@@ -403,7 +399,7 @@ object Oidc {
       
       inline def setEnd_session_endpointUndefined: Self = StObject.set(x, "end_session_endpoint", js.undefined)
       
-      inline def setJwks(value: js.Any): Self = StObject.set(x, "jwks", value.asInstanceOf[js.Any])
+      inline def setJwks(value: Any): Self = StObject.set(x, "jwks", value.asInstanceOf[js.Any])
       
       inline def setJwksUndefined: Self = StObject.set(x, "jwks", js.undefined)
       
@@ -415,7 +411,7 @@ object Oidc {
       
       inline def setLoad_user_profileUndefined: Self = StObject.set(x, "load_user_profile", js.undefined)
       
-      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
       inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       

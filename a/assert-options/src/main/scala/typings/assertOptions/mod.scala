@@ -18,5 +18,5 @@ object mod {
   inline def assertOptions(options: NamedValues, defaults: js.Array[String]): NamedValues = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptions")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[NamedValues]
   inline def assertOptions(options: NamedValues, defaults: NamedValues): NamedValues = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptions")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[NamedValues]
   
-  type NamedValues = StringDictionary[js.Any]
+  type NamedValues = StringDictionary[Any]
 }

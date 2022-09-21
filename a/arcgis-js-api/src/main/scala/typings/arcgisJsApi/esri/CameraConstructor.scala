@@ -17,5 +17,5 @@ trait CameraConstructor
 Instantiable0[Camera]
      with Instantiable1[/* properties */ CameraProperties, Camera] {
   
-  def fromJSON(json: js.Any): Camera = js.native
+  def fromJSON(json: Any): Camera = js.native
 }

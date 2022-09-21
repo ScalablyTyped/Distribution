@@ -9,7 +9,7 @@ object collectionMod {
   
   @JSImport("xml-core/dist/types/collection", "Collection")
   @js.native
-  class Collection[I] ()
+  open class Collection[I] ()
     extends StObject
        with ICollection[I] {
     def this(items: js.Array[I]) = this()

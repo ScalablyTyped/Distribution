@@ -16,7 +16,7 @@ object deliveryaddressMod {
     * @param options The raw {@link GoogleActionsV2DeliveryAddressValueSpec}
     * @public
     */
-  class DeliveryAddress () extends SoloHelper[actionsDotintentDotDELIVERY_ADDRESS, GoogleActionsV2DeliveryAddressValueSpec] {
+  open class DeliveryAddress () extends SoloHelper[actionsDotintentDotDELIVERY_ADDRESS, GoogleActionsV2DeliveryAddressValueSpec] {
     def this(options: GoogleActionsV2DeliveryAddressValueSpec) = this()
   }
   

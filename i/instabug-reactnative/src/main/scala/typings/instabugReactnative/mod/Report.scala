@@ -6,24 +6,67 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Report extends StObject {
   
+  /**
+    * Attach a file to the report to be sent.
+    * @param {string} data 
+    * @param {string} fileName 
+    */
   def addFileAttachmentWithData(data: String, filename: String): Unit
   
+  /**
+    * Attach a file to the report to be sent.
+    * @param {string} url 
+    * @param {string} fileName 
+    */
   def addFileAttachmentWithUrl(url: String, filename: String): Unit
   
+  /**
+    * Append a console log to the report to be sent.
+    * @param {string} consoleLog 
+    */
   def appendConsoleLog(consoleLog: String): Unit
   
+  /**
+    * Append a tag to the report to be sent.
+    * @param {string} tag 
+    */
   def appendTag(tag: String): Unit
   
+  /**
+    * Attach debug log to the report to be sent.
+    * @param {string} log 
+    */
   def logDebug(log: String): Unit
   
+  /**
+    * Attach error log to the report to be sent.
+    * @param {string} log 
+    */
   def logError(log: String): Unit
   
+  /**
+    * Attach info log to the report to be sent.
+    * @param {string} log 
+    */
   def logInfo(log: String): Unit
   
+  /**
+    * Attach verbose log to the report to be sent.
+    * @param {string} log 
+    */
   def logVerbose(log: String): Unit
   
+  /**
+    * Attach warn log to the report to be sent.
+    * @param {string} log 
+    */
   def logWarn(log: String): Unit
   
+  /**
+    * Add a user attribute with key and value to the report to be sent.
+    * @param {string} key 
+    * @param {string} value 
+    */
   def setUserAttribute(key: String, value: String): Unit
 }
 object Report {

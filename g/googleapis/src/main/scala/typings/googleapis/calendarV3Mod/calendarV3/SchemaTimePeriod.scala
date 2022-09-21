@@ -9,12 +9,12 @@ trait SchemaTimePeriod extends StObject {
   /**
     * The (exclusive) end of the time period.
     */
-  var end: js.UndefOr[String] = js.undefined
+  var end: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The (inclusive) start of the time period.
     */
-  var start: js.UndefOr[String] = js.undefined
+  var start: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTimePeriod {
   
@@ -27,9 +27,13 @@ object SchemaTimePeriod {
     
     inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
+    inline def setEndNull: Self = StObject.set(x, "end", null)
+    
     inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartNull: Self = StObject.set(x, "start", null)
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }

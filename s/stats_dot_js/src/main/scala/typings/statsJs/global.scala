@@ -11,7 +11,7 @@ object global {
   
   @JSGlobal("Stats")
   @js.native
-  class Stats ()
+  open class Stats ()
     extends StObject
        with typings.statsJs.Stats {
     
@@ -43,7 +43,7 @@ object global {
     
     @JSGlobal("Stats.Panel")
     @js.native
-    class Panel protected ()
+    open class Panel protected ()
       extends StObject
          with typings.statsJs.Stats.Panel {
       def this(name: String, foregroundColor: String, backgroundColor: String) = this()

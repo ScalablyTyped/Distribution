@@ -10,10 +10,10 @@ object popoverAnimationDefaultMod {
   
   @JSImport("material-ui/Popover/PopoverAnimationDefault", JSImport.Default)
   @js.native
-  class default () extends PopoverAnimationDefault
+  open class default () extends PopoverAnimationDefault
   
   @JSImport("material-ui/Popover/PopoverAnimationDefault", "PopoverAnimationDefault")
   @js.native
-  class PopoverAnimationDefault ()
-    extends Component[PopoverAnimationDefaultProps, js.Object, js.Any]
+  open class PopoverAnimationDefault ()
+    extends Component[PopoverAnimationDefaultProps, js.Object, Any]
 }

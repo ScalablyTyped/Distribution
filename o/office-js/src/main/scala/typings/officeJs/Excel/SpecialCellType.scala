@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait SpecialCellType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.SpecialCellType")
@@ -15,7 +16,8 @@ object SpecialCellType extends StObject {
   
   /**
     * Cells with no content.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait blanks
@@ -23,8 +25,9 @@ object SpecialCellType extends StObject {
        with SpecialCellType
   
   /**
-    * All cells with conditional formats
-    *
+    * All cells with conditional formats.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait conditionalFormats
@@ -33,7 +36,8 @@ object SpecialCellType extends StObject {
   
   /**
     * Cells containing constants.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait constants
@@ -41,8 +45,9 @@ object SpecialCellType extends StObject {
        with SpecialCellType
   
   /**
-    * Cells having validation criteria.
-    *
+    * Cells with validation criteria.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait dataValidations
@@ -51,7 +56,8 @@ object SpecialCellType extends StObject {
   
   /**
     * Cells containing formulas.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait formulas
@@ -59,8 +65,9 @@ object SpecialCellType extends StObject {
        with SpecialCellType
   
   /**
-    * Cells having the same conditional format as the first cell in the range.
-    *
+    * Cells with the same conditional format as the first cell in the range.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait sameConditionalFormat
@@ -68,8 +75,9 @@ object SpecialCellType extends StObject {
        with SpecialCellType
   
   /**
-    * Cells having the same data validation criteria as the first cell in the range.
-    *
+    * Cells with the same data validation criteria as the first cell in the range.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait sameDataValidation
@@ -78,7 +86,8 @@ object SpecialCellType extends StObject {
   
   /**
     * Cells that are visible.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait visible

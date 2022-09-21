@@ -10,10 +10,10 @@ object openInBrowserMod {
   
   @JSImport("material-ui/svg-icons/action/open-in-browser", JSImport.Default)
   @js.native
-  class default () extends ActionOpenInBrowser
+  open class default () extends ActionOpenInBrowser
   
   @JSImport("material-ui/svg-icons/action/open-in-browser", "ActionOpenInBrowser")
   @js.native
-  class ActionOpenInBrowser ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionOpenInBrowser ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

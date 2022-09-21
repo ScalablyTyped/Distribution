@@ -95,7 +95,7 @@ object tab {
       getView: () => XView,
       isDesignMode: () => Boolean,
       isTransparent: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeContainerListener: XContainerListener => Unit,
       removeControl: XControl => Unit,
@@ -171,7 +171,7 @@ object tab {
       isDesignMode: () => Boolean,
       isTabPageActive: Double => Boolean,
       isTransparent: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeEventListener: XEventListener => Unit,
       removeFocusListener: XFocusListener => Unit,
@@ -238,17 +238,17 @@ object tab {
       createTabPage: Double => XTabPageModel,
       dispose: () => Unit,
       firePropertiesChangeEvent: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
-      getByIndex: Double => js.Any,
+      getByIndex: Double => Any,
       getCount: () => Double,
       getElementType: () => `type`,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: String => js.Any,
-      getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
+      getPropertyValue: String => Any,
+      getPropertyValues: SeqEquiv[String] => SafeArray[Any],
       getServiceName: () => String,
       hasElements: () => Boolean,
-      insertByIndex: (Double, js.Any) => Unit,
+      insertByIndex: (Double, Any) => Unit,
       loadTabPage: (Double, String) => XTabPageModel,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       read: XObjectInputStream => Unit,
       release: () => Unit,
       removeByIndex: Double => Unit,
@@ -257,9 +257,9 @@ object tab {
       removePropertiesChangeListener: XPropertiesChangeListener => Unit,
       removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-      replaceByIndex: (Double, js.Any) => Unit,
-      setPropertyValue: (String, js.Any) => Unit,
-      setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit,
+      replaceByIndex: (Double, Any) => Unit,
+      setPropertyValue: (String, Any) => Unit,
+      setPropertyValues: (SeqEquiv[String], SeqEquiv[Any]) => Unit,
       write: XObjectOutputStream => Unit
     ): UnoControlTabPageContainerModel = {
       val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], DefaultControl = DefaultControl.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PositionX = PositionX.asInstanceOf[js.Any], PositionY = PositionY.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], Step = Step.asInstanceOf[js.Any], TabIndex = TabIndex.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addContainerListener = js.Any.fromFunction1(addContainerListener), addEventListener = js.Any.fromFunction1(addEventListener), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createClone = js.Any.fromFunction0(createClone), createTabPage = js.Any.fromFunction1(createTabPage), dispose = js.Any.fromFunction0(dispose), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), getServiceName = js.Any.fromFunction0(getServiceName), hasElements = js.Any.fromFunction0(hasElements), insertByIndex = js.Any.fromFunction2(insertByIndex), loadTabPage = js.Any.fromFunction2(loadTabPage), queryInterface = js.Any.fromFunction1(queryInterface), read = js.Any.fromFunction1(read), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex), removeContainerListener = js.Any.fromFunction1(removeContainerListener), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), replaceByIndex = js.Any.fromFunction2(replaceByIndex), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues), write = js.Any.fromFunction1(write))
@@ -283,7 +283,7 @@ object tab {
     * @see UnoControlTabPage
     * @since OOo 3.4
     */
-  type XTabPage = js.Any
+  type XTabPage = Any
   
   /**
     * An interface to a control that displays tab pages.
@@ -392,7 +392,7 @@ object tab {
     inline def apply(
       acquire: () => Unit,
       disposing: EventObject => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       tabPageActivated: TabPageActivatedEvent => Unit
     ): XTabPageContainerListener = {
@@ -436,17 +436,17 @@ object tab {
       acquire: () => Unit,
       addContainerListener: XContainerListener => Unit,
       createTabPage: Double => XTabPageModel,
-      getByIndex: Double => js.Any,
+      getByIndex: Double => Any,
       getCount: () => Double,
       getElementType: () => `type`,
       hasElements: () => Boolean,
-      insertByIndex: (Double, js.Any) => Unit,
+      insertByIndex: (Double, Any) => Unit,
       loadTabPage: (Double, String) => XTabPageModel,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeByIndex: Double => Unit,
       removeContainerListener: XContainerListener => Unit,
-      replaceByIndex: (Double, js.Any) => Unit
+      replaceByIndex: (Double, Any) => Unit
     ): XTabPageContainerModel = {
       val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addContainerListener = js.Any.fromFunction1(addContainerListener), createTabPage = js.Any.fromFunction1(createTabPage), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), insertByIndex = js.Any.fromFunction2(insertByIndex), loadTabPage = js.Any.fromFunction2(loadTabPage), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex), removeContainerListener = js.Any.fromFunction1(removeContainerListener), replaceByIndex = js.Any.fromFunction2(replaceByIndex))
       __obj.asInstanceOf[XTabPageContainerModel]

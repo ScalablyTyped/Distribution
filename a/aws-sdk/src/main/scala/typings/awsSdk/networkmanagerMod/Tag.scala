@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Tag extends StObject {
   
   /**
-    * The tag key. Length Constraints: Maximum length of 128 characters.
+    * The tag key. Constraints: Maximum length of 128 characters.
     */
   var Key: js.UndefOr[TagKey] = js.undefined
   
   /**
-    * The tag value. Length Constraints: Maximum length of 256 characters.
+    * The tag value. Constraints: Maximum length of 256 characters.
     */
   var Value: js.UndefOr[TagValue] = js.undefined
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object extraMod {
   
-  type Extra = js.Any
+  type Extra = Any
   
   type Extras = Record[String, Extra]
 }

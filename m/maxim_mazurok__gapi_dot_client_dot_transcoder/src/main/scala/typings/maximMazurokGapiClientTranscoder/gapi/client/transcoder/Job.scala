@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,35 +16,31 @@ trait Job extends StObject {
   /** Output only. The time the transcoding finished. */
   var endTime: js.UndefOr[String] = js.undefined
   
-  /** Output only. List of failure details. This property may contain additional information about the failure when `failure_reason` is present. *Note*: This feature is not yet available. */
-  var failureDetails: js.UndefOr[js.Array[FailureDetail]] = js.undefined
-  
-  /** Output only. A description of the reason for the failure. This property is always present when `state` is `FAILED`. */
-  var failureReason: js.UndefOr[String] = js.undefined
+  /** Output only. An error object that describes the reason for the failure. This property is always present when `state` is `FAILED`. */
+  var error: js.UndefOr[Status] = js.undefined
   
   /**
-    * Input only. Specify the `input_uri` to populate empty `uri` fields in each element of `Job.config.inputs` or `JobTemplate.config.inputs` when using template. URI of the media. It
-    * must be stored in Cloud Storage. For example, `gs://bucket/inputs/file.mp4`.
+    * Input only. Specify the `input_uri` to populate empty `uri` fields in each element of `Job.config.inputs` or `JobTemplate.config.inputs` when using template. URI of the media. Input
+    * files must be at least 5 seconds in duration and stored in Cloud Storage (for example, `gs://bucket/inputs/file.mp4`). See [Supported input and output
+    * formats](https://cloud.google.com/transcoder/docs/concepts/supported-input-and-output-formats).
     */
   var inputUri: js.UndefOr[String] = js.undefined
   
-  /** The resource name of the job. Format: `projects/{project}/locations/{location}/jobs/{job}` */
-  var name: js.UndefOr[String] = js.undefined
+  /** The labels associated with this job. You can use these to organize and group your jobs. */
+  var labels: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: string}
+    */ typings.maximMazurokGapiClientTranscoder.maximMazurokGapiClientTranscoderStrings.Job & TopLevel[Any]
+  ] = js.undefined
   
-  /** Output only. The origin URI. *Note*: This feature is not yet available. */
-  var originUri: js.UndefOr[OriginUri] = js.undefined
+  /** The resource name of the job. Format: `projects/{project_number}/locations/{location}/jobs/{job}` */
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Input only. Specify the `output_uri` to populate an empty `Job.config.output.uri` or `JobTemplate.config.output.uri` when using template. URI for the output file(s). For example,
-    * `gs://my-bucket/outputs/`.
+    * `gs://my-bucket/outputs/`. See [Supported input and output formats](https://cloud.google.com/transcoder/docs/concepts/supported-input-and-output-formats).
     */
   var outputUri: js.UndefOr[String] = js.undefined
-  
-  /** Specify the priority of the job. Enter a value between 0 and 100, where 0 is the lowest priority and 100 is the highest priority. The default is 0. */
-  var priority: js.UndefOr[Double] = js.undefined
-  
-  /** Output only. Estimated fractional progress, from `0` to `1` for each step. *Note*: This feature is not yet available. */
-  var progress: js.UndefOr[Progress] = js.undefined
   
   /** Output only. The time the transcoding started. */
   var startTime: js.UndefOr[String] = js.undefined
@@ -56,6 +53,12 @@ trait Job extends StObject {
     * JobTemplate: `{job_template_id}`
     */
   var templateId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Job time to live value in days, which will be effective after job completion. Job should be deleted automatically after the given TTL. Enter a value between 1 and 90. The default is
+    * 30.
+    */
+  var ttlAfterCompletionDays: js.UndefOr[Double] = js.undefined
 }
 object Job {
   
@@ -78,39 +81,29 @@ object Job {
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    inline def setFailureDetails(value: js.Array[FailureDetail]): Self = StObject.set(x, "failureDetails", value.asInstanceOf[js.Any])
+    inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    inline def setFailureDetailsUndefined: Self = StObject.set(x, "failureDetails", js.undefined)
-    
-    inline def setFailureDetailsVarargs(value: FailureDetail*): Self = StObject.set(x, "failureDetails", js.Array(value :_*))
-    
-    inline def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
-    
-    inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
     
     inline def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
     
+    inline def setLabels(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: string}
+      */ typings.maximMazurokGapiClientTranscoder.maximMazurokGapiClientTranscoderStrings.Job & TopLevel[Any]
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOriginUri(value: OriginUri): Self = StObject.set(x, "originUri", value.asInstanceOf[js.Any])
-    
-    inline def setOriginUriUndefined: Self = StObject.set(x, "originUri", js.undefined)
-    
     inline def setOutputUri(value: String): Self = StObject.set(x, "outputUri", value.asInstanceOf[js.Any])
     
     inline def setOutputUriUndefined: Self = StObject.set(x, "outputUri", js.undefined)
-    
-    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
-    
-    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
-    
-    inline def setProgress(value: Progress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
-    
-    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
@@ -123,5 +116,9 @@ object Job {
     inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
     inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+    
+    inline def setTtlAfterCompletionDays(value: Double): Self = StObject.set(x, "ttlAfterCompletionDays", value.asInstanceOf[js.Any])
+    
+    inline def setTtlAfterCompletionDaysUndefined: Self = StObject.set(x, "ttlAfterCompletionDays", js.undefined)
   }
 }

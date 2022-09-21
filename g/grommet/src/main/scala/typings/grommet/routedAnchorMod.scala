@@ -15,10 +15,9 @@ object routedAnchorMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/RoutedAnchor", "RoutedAnchor")
   @js.native
-  class RoutedAnchor protected ()
-    extends Component[RoutedAnchorPropsOmitAnch, ComponentState, js.Any] {
+  open class RoutedAnchor protected () extends Component[RoutedAnchorPropsOmitAnch, ComponentState, Any] {
     def this(props: RoutedAnchorPropsOmitAnch) = this()
-    def this(props: RoutedAnchorPropsOmitAnch, context: js.Any) = this()
+    def this(props: RoutedAnchorPropsOmitAnch, context: Any) = this()
   }
   @JSImport("grommet/components/RoutedAnchor", "RoutedAnchor")
   @js.native

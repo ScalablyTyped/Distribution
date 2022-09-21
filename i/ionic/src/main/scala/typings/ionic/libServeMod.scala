@@ -25,11 +25,11 @@ import typings.ionicCliFrameworkPrompts.mod.PromptValueCheckbox
 import typings.ionicCliFrameworkPrompts.mod.PromptValueConfirm
 import typings.ionicCliFrameworkPrompts.mod.PromptValueOther
 import typings.ionicUtilsNetwork.mod.NetworkInterface
-import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.streamMod.Transform
 import typings.std.Set
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,7 +78,7 @@ object libServeMod {
   
   @JSImport("ionic/lib/serve", "NpmServeCLI")
   @js.native
-  class NpmServeCLI () extends PkgManagerServeCLI
+  open class NpmServeCLI () extends PkgManagerServeCLI
   
   @JSImport("ionic/lib/serve", "SERVE_SCRIPT")
   @js.native
@@ -89,7 +89,7 @@ object libServeMod {
   abstract class ServeCLI[T /* <: ServeCLIOptions */] protected () extends EventEmitter {
     def this(e: ServeRunnerDeps) = this()
     
-    /* private */ var _resolvedProgram: js.Any = js.native
+    /* private */ var _resolvedProgram: Any = js.native
     
     /**
       * Build the arguments for starting this Serve CLI. Called by `this.start()`.
@@ -101,7 +101,7 @@ object libServeMod {
       */
     /* protected */ def buildEnvVars(options: T): js.Promise[ProcessEnv] = js.native
     
-    /* protected */ def createLoggerStream(): WritableStream = js.native
+    /* protected */ def createLoggerStream(): WritableStream[Any] = js.native
     
     /* protected */ def createStreamFilter(filter: js.Function1[/* line */ String, Boolean]): Transform = js.native
     
@@ -235,7 +235,7 @@ object libServeMod {
   
   @JSImport("ionic/lib/serve", "YarnServeCLI")
   @js.native
-  class YarnServeCLI () extends PkgManagerServeCLI
+  open class YarnServeCLI () extends PkgManagerServeCLI
   
   @js.native
   trait PkgManagerServeCLI extends ServeCLI[ServeOptions] {

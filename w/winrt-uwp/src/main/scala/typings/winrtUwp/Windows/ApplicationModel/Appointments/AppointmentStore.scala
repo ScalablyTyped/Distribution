@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AppointmentStore extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_storechanged(
     `type`: storechanged,
@@ -46,13 +45,13 @@ trait AppointmentStore extends StObject {
     * Retrieves a list of all of the appointment calendars in the appointment store.
     * @return An asynchronous operation that returns an IVectorView upon successful completion.
     */
-  def findAppointmentCalendarsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findAppointmentCalendarsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   /**
     * Retrieves a list of appointment calendars in the appointment store that meet the criteria specified by the supplied FindAppointmentCalendarsOptions object..
     * @param options The object that specifies the criteria that determines which appointment calendars are returned.
     * @return An asynchronous operation that returns an IVectorView upon successful completion.
     */
-  def findAppointmentCalendarsAsync(options: FindAppointmentCalendarsOptions): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findAppointmentCalendarsAsync(options: FindAppointmentCalendarsOptions): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Retrieves a list of appointments in the appointment calendar that fall within the specified date range.
@@ -60,7 +59,7 @@ trait AppointmentStore extends StObject {
     * @param rangeLength The length of the date range for which appointments are retrieved.
     * @return An asynchronous operation that returns an IVectorView upon successful completion.
     */
-  def findAppointmentsAsync(rangeStart: Date, rangeLength: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findAppointmentsAsync(rangeStart: js.Date, rangeLength: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   /**
     * Retrieves a list of appointments in the appointment calendar that fall within the specified date range and meet the criteria specified by the supplied FindAppointmentsOptions object..
     * @param rangeStart The start of the date range for which appointments are retrieved.
@@ -68,7 +67,7 @@ trait AppointmentStore extends StObject {
     * @param options The object that specifies the criteria that determines which appointments are returned.
     * @return An asynchronous operation that returns an IVectorView upon successful completion.
     */
-  def findAppointmentsAsync(rangeStart: Date, rangeLength: Double, options: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findAppointmentsAsync(rangeStart: js.Date, rangeLength: Double, options: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Returns an AppointmentConflictResult representing a conflict between the specified appointment and an existing appointment in the appointment store.
@@ -82,14 +81,14 @@ trait AppointmentStore extends StObject {
     * @param instanceStartTime The start time of the appointment instance for which a conflict is sought.
     * @return An asynchronous operation that returns an AppointmentConflictResult upon successful completion.
     */
-  def findConflictAsync(appointment: Appointment, instanceStartTime: Date): IPromiseWithIAsyncOperation[AppointmentConflictResult] = js.native
+  def findConflictAsync(appointment: Appointment, instanceStartTime: js.Date): IPromiseWithIAsyncOperation[AppointmentConflictResult] = js.native
   
   /**
     * Returns a list of LocalId values for appointment instances with the specified RoamingId value.
     * @param roamingId The RoamingId value for which local ID values are sought.
     * @return An asynchronous operation that returns an IVectorView upon successful completion.
     */
-  def findLocalIdsFromRoamingIdAsync(roamingId: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findLocalIdsFromRoamingIdAsync(roamingId: String): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Retrieves the Appointment with the specified LocalId .
@@ -111,7 +110,7 @@ trait AppointmentStore extends StObject {
     * @param instanceStartTime The start time of the appointment instance to be retrieved.
     * @return An asynchronous operation that returns an Appointment upon successful completion.
     */
-  def getAppointmentInstanceAsync(localId: String, instanceStartTime: Date): IPromiseWithIAsyncOperation[Appointment] = js.native
+  def getAppointmentInstanceAsync(localId: String, instanceStartTime: js.Date): IPromiseWithIAsyncOperation[Appointment] = js.native
   
   /**
     * Moves the specified Appointment object to the specified AppointmentCalendar .
@@ -127,7 +126,7 @@ trait AppointmentStore extends StObject {
   @JSName("onstorechanged")
   var onstorechanged_Original: TypedEventHandler[AppointmentStore, AppointmentStoreChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_storechanged(
     `type`: storechanged,
@@ -154,7 +153,7 @@ trait AppointmentStore extends StObject {
     * @param instanceStartDate A DateTime object with the start time of the appointment instance to be displayed.
     * @return An asynchronous action.
     */
-  def showAppointmentDetailsAsync(localId: String, instanceStartDate: Date): IPromiseWithIAsyncAction = js.native
+  def showAppointmentDetailsAsync(localId: String, instanceStartDate: js.Date): IPromiseWithIAsyncAction = js.native
   
   /**
     * Shows the Appointments provider Add Appointment UI including the full edit experience, to enable the user to add an appointment.
@@ -178,7 +177,7 @@ trait AppointmentStore extends StObject {
     * @param instanceStartDate The start date and time of the appointment instance to remove.
     * @return When this method completes, it returns a Boolean value that indicates whether the Appointment provider app removed the appointment.
     */
-  def showRemoveAppointmentAsync(localId: String, selection: Rect, preferredPlacement: Placement, instanceStartDate: Date): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def showRemoveAppointmentAsync(localId: String, selection: Rect, preferredPlacement: Placement, instanceStartDate: js.Date): IPromiseWithIAsyncOperation[Boolean] = js.native
   
   /**
     * Shows the Appointments provider Replace Appointment UI, to enable the user to replace an appointment.
@@ -202,6 +201,6 @@ trait AppointmentStore extends StObject {
     appointment: Appointment,
     selection: Rect,
     preferredPlacement: Placement,
-    instanceStartDate: Date
+    instanceStartDate: js.Date
   ): IPromiseWithIAsyncOperation[String] = js.native
 }

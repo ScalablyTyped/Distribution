@@ -15,6 +15,8 @@ trait S3SourceProperties extends StObject {
     *  The object key for the Amazon S3 bucket in which the source files are stored. 
     */
   var bucketPrefix: js.UndefOr[BucketPrefix] = js.undefined
+  
+  var s3InputFormatConfig: js.UndefOr[S3InputFormatConfig] = js.undefined
 }
 object S3SourceProperties {
   
@@ -30,5 +32,9 @@ object S3SourceProperties {
     inline def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
     
     inline def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
+    
+    inline def setS3InputFormatConfig(value: S3InputFormatConfig): Self = StObject.set(x, "s3InputFormatConfig", value.asInstanceOf[js.Any])
+    
+    inline def setS3InputFormatConfigUndefined: Self = StObject.set(x, "s3InputFormatConfig", js.undefined)
   }
 }

@@ -46,7 +46,7 @@ object InContentMetadata {
     getElementType: () => `type`,
     getParent: () => XInterface,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     setParent: XInterface => Unit

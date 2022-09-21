@@ -1,13 +1,12 @@
 package typings.squareConnect.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListCashDrawerShiftEventsResponse")
 @js.native
-class ListCashDrawerShiftEventsResponse () extends StObject {
+open class ListCashDrawerShiftEventsResponse () extends StObject {
   
   /**
     * Opaque cursor for fetching the next page. Cursor is not present in the last page of results.
@@ -17,7 +16,7 @@ class ListCashDrawerShiftEventsResponse () extends StObject {
   /**
     * Any errors that occurred during the request.
     */
-  var errors: js.UndefOr[js.Array[Error]] = js.native
+  var errors: js.UndefOr[js.Array[js.Error]] = js.native
   
   /**
     * All of the events (payments, refunds, etc.) for a cash drawer during the shift.

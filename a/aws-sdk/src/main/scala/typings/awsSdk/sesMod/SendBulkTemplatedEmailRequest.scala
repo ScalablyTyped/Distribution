@@ -78,7 +78,7 @@ object SendBulkTemplatedEmailRequest {
     
     inline def setDefaultTagsUndefined: Self = StObject.set(x, "DefaultTags", js.undefined)
     
-    inline def setDefaultTagsVarargs(value: MessageTag*): Self = StObject.set(x, "DefaultTags", js.Array(value :_*))
+    inline def setDefaultTagsVarargs(value: MessageTag*): Self = StObject.set(x, "DefaultTags", js.Array(value*))
     
     inline def setDefaultTemplateData(value: TemplateData): Self = StObject.set(x, "DefaultTemplateData", value.asInstanceOf[js.Any])
     
@@ -86,13 +86,13 @@ object SendBulkTemplatedEmailRequest {
     
     inline def setDestinations(value: BulkEmailDestinationList): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
-    inline def setDestinationsVarargs(value: BulkEmailDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: BulkEmailDestination*): Self = StObject.set(x, "Destinations", js.Array(value*))
     
     inline def setReplyToAddresses(value: AddressList): Self = StObject.set(x, "ReplyToAddresses", value.asInstanceOf[js.Any])
     
     inline def setReplyToAddressesUndefined: Self = StObject.set(x, "ReplyToAddresses", js.undefined)
     
-    inline def setReplyToAddressesVarargs(value: Address*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value :_*))
+    inline def setReplyToAddressesVarargs(value: Address*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value*))
     
     inline def setReturnPath(value: Address): Self = StObject.set(x, "ReturnPath", value.asInstanceOf[js.Any])
     

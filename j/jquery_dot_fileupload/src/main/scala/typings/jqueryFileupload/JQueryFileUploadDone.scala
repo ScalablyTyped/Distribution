@@ -13,10 +13,10 @@ trait JQueryFileUploadDone
 object JQueryFileUploadDone {
   
   inline def apply(
-    errorThrown: js.Any,
-    headers: StringDictionary[js.Any],
+    errorThrown: Any,
+    headers: StringDictionary[Any],
     jqXHR: JQueryXHR,
-    result: js.Any,
+    result: Any,
     textStatus: String
   ): JQueryFileUploadDone = {
     val __obj = js.Dynamic.literal(errorThrown = errorThrown.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], jqXHR = jqXHR.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], textStatus = textStatus.asInstanceOf[js.Any])

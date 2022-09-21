@@ -21,6 +21,13 @@ object convUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def checkPadOnDimRoundingMode(opDesc: String, pad: valid_ | same_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPadOnDimRoundingMode")(opDesc.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkPadOnDimRoundingMode(opDesc: String, pad: valid_ | same_, dimRoundingMode: floor | round | ceil): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPadOnDimRoundingMode")(opDesc.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkPadOnDimRoundingMode(opDesc: String, pad: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPadOnDimRoundingMode")(opDesc.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkPadOnDimRoundingMode(opDesc: String, pad: Double, dimRoundingMode: floor | round | ceil): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPadOnDimRoundingMode")(opDesc.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkPadOnDimRoundingMode(opDesc: String, pad: ExplicitPadding): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPadOnDimRoundingMode")(opDesc.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkPadOnDimRoundingMode(opDesc: String, pad: ExplicitPadding, dimRoundingMode: floor | round | ceil): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPadOnDimRoundingMode")(opDesc.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def computeConv2DInfo(
     inShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple4[Double, Double, Double, Double],
@@ -57,7 +64,7 @@ object convUtilMod {
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: js.Tuple2[Double, Double],
-    pad: same_,
+    pad: same_ | valid_,
     dataFormat: NHWC,
     dilations: js.Tuple2[Double, Double]
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
@@ -65,23 +72,7 @@ object convUtilMod {
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: js.Tuple2[Double, Double],
-    pad: same_,
-    dataFormat: NHWC,
-    dilations: Double
-  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
-  inline def computeDilation2DInfo(
-    inputShape: js.Tuple4[Double, Double, Double, Double],
-    filterShape: js.Tuple3[Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: valid_,
-    dataFormat: NHWC,
-    dilations: js.Tuple2[Double, Double]
-  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
-  inline def computeDilation2DInfo(
-    inputShape: js.Tuple4[Double, Double, Double, Double],
-    filterShape: js.Tuple3[Double, Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: valid_,
+    pad: same_ | valid_,
     dataFormat: NHWC,
     dilations: Double
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
@@ -89,7 +80,7 @@ object convUtilMod {
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: Double,
-    pad: same_,
+    pad: same_ | valid_,
     dataFormat: NHWC,
     dilations: js.Tuple2[Double, Double]
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
@@ -97,23 +88,7 @@ object convUtilMod {
     inputShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple3[Double, Double, Double],
     strides: Double,
-    pad: same_,
-    dataFormat: NHWC,
-    dilations: Double
-  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
-  inline def computeDilation2DInfo(
-    inputShape: js.Tuple4[Double, Double, Double, Double],
-    filterShape: js.Tuple3[Double, Double, Double],
-    strides: Double,
-    pad: valid_,
-    dataFormat: NHWC,
-    dilations: js.Tuple2[Double, Double]
-  ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
-  inline def computeDilation2DInfo(
-    inputShape: js.Tuple4[Double, Double, Double, Double],
-    filterShape: js.Tuple3[Double, Double, Double],
-    strides: Double,
-    pad: valid_,
+    pad: same_ | valid_,
     dataFormat: NHWC,
     dilations: Double
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDilation2DInfo")(inputShape.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
@@ -156,7 +131,7 @@ object convUtilMod {
     filterSize: (js.Tuple2[Double, Double]) | Double,
     strides: Double | (js.Tuple2[Double, Double]),
     dilations: Double | (js.Tuple2[Double, Double]),
-    pad: same_ | valid_ | Double,
+    pad: same_ | valid_ | Double | ExplicitPadding,
     roundingMode: js.UndefOr[floor | round | ceil],
     dataFormat: js.UndefOr[channelsFirst | channelsLast]
   ): Conv2DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computePool2DInfo")(inShape.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], roundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Conv2DInfo]
@@ -171,9 +146,7 @@ object convUtilMod {
     dataFormat: js.UndefOr[NDHWC | NCDHW]
   ): Conv3DInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("computePool3DInfo")(inShape.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], roundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Conv3DInfo]
   
-  inline def convertConv2DDataFormat_NCHW(dataFormat: NCHW): channelsLast | channelsFirst = ^.asInstanceOf[js.Dynamic].applyDynamic("convertConv2DDataFormat")(dataFormat.asInstanceOf[js.Any]).asInstanceOf[channelsLast | channelsFirst]
-  
-  inline def convertConv2DDataFormat_NHWC(dataFormat: NHWC): channelsLast | channelsFirst = ^.asInstanceOf[js.Dynamic].applyDynamic("convertConv2DDataFormat")(dataFormat.asInstanceOf[js.Any]).asInstanceOf[channelsLast | channelsFirst]
+  inline def convertConv2DDataFormat(dataFormat: NHWC | NCHW): channelsLast | channelsFirst = ^.asInstanceOf[js.Dynamic].applyDynamic("convertConv2DDataFormat")(dataFormat.asInstanceOf[js.Any]).asInstanceOf[channelsLast | channelsFirst]
   
   inline def eitherStridesOrDilationsAreOne(strides: js.Array[Double], dilations: js.Array[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def eitherStridesOrDilationsAreOne(strides: js.Array[Double], dilations: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]

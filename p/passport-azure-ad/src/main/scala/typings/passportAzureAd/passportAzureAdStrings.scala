@@ -15,8 +15,16 @@ object passportAzureAdStrings {
   inline def `1`: `1` = "1".asInstanceOf[`1`]
   
   @js.native
+  sealed trait `1Dot0` extends StObject
+  inline def `1Dot0`: `1Dot0` = "1.0".asInstanceOf[`1Dot0`]
+  
+  @js.native
   sealed trait `2` extends StObject
   inline def `2`: `2` = "2".asInstanceOf[`2`]
+  
+  @js.native
+  sealed trait `2Dot0` extends StObject
+  inline def `2Dot0`: `2Dot0` = "2.0".asInstanceOf[`2Dot0`]
   
   @js.native
   sealed trait code extends StObject

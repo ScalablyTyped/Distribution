@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
@@ -17,7 +16,7 @@ trait Folder extends StObject {
   /**
     * The date the folder was created.
     */
-  var createdOn: Date
+  var createdOn: js.Date
   
   /**
     * The description.
@@ -32,7 +31,7 @@ trait Folder extends StObject {
   /**
     * The date the folder was last changed.
     */
-  var lastChangedDate: Date
+  var lastChangedDate: js.Date
   
   /**
     * The full path.
@@ -48,10 +47,10 @@ object Folder {
   
   inline def apply(
     createdBy: IdentityRef,
-    createdOn: Date,
+    createdOn: js.Date,
     description: String,
     lastChangedBy: IdentityRef,
-    lastChangedDate: Date,
+    lastChangedDate: js.Date,
     path: String,
     project: TeamProjectReference
   ): Folder = {
@@ -63,13 +62,13 @@ object Folder {
     
     inline def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setLastChangedBy(value: IdentityRef): Self = StObject.set(x, "lastChangedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastChangedDate(value: Date): Self = StObject.set(x, "lastChangedDate", value.asInstanceOf[js.Any])
+    inline def setLastChangedDate(value: js.Date): Self = StObject.set(x, "lastChangedDate", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

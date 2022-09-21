@@ -32,7 +32,7 @@ object InsertionOrderBudget {
     
     inline def setBudgetSegmentsUndefined: Self = StObject.set(x, "budgetSegments", js.undefined)
     
-    inline def setBudgetSegmentsVarargs(value: InsertionOrderBudgetSegment*): Self = StObject.set(x, "budgetSegments", js.Array(value :_*))
+    inline def setBudgetSegmentsVarargs(value: InsertionOrderBudgetSegment*): Self = StObject.set(x, "budgetSegments", js.Array(value*))
     
     inline def setBudgetUnit(value: String): Self = StObject.set(x, "budgetUnit", value.asInstanceOf[js.Any])
     

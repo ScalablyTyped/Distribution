@@ -35,6 +35,6 @@ object FoldTransform {
     
     inline def setFold(value: js.Array[FieldName]): Self = StObject.set(x, "fold", value.asInstanceOf[js.Any])
     
-    inline def setFoldVarargs(value: FieldName*): Self = StObject.set(x, "fold", js.Array(value :_*))
+    inline def setFoldVarargs(value: FieldName*): Self = StObject.set(x, "fold", js.Array(value*))
   }
 }

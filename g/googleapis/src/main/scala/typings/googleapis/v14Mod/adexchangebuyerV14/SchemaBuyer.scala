@@ -9,7 +9,7 @@ trait SchemaBuyer extends StObject {
   /**
     * Adx account id of the buyer.
     */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBuyer {
   
@@ -21,6 +21,8 @@ object SchemaBuyer {
   extension [Self <: SchemaBuyer](x: Self) {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    
+    inline def setAccountIdNull: Self = StObject.set(x, "accountId", null)
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
   }

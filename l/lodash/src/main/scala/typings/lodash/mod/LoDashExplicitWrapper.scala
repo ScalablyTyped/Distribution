@@ -3,8 +3,6 @@ package typings.lodash.mod
 import typings.lodash.anon.Typeoflodash
 import typings.lodash.lodashBooleans.`false`
 import typings.lodash.lodashBooleans.`true`
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,12 +18,12 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.attempt
     */
-  def attempt[TResult](args: js.Any*): ExpChain[TResult | Error] = js.native
+  def attempt[TResult](args: Any*): ExpChain[TResult | js.Error] = js.native
   
   /**
     * @see _.bind
     */
-  def bind(thisArg: js.Any, partials: js.Any*): FunctionChain[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+  def bind(thisArg: Any, partials: Any*): FunctionChain[js.Function1[/* repeated */ Any, Any]] = js.native
   
   /**
     * @see _.bindAll
@@ -35,7 +33,7 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.bindKey
     */
-  def bindKey(key: java.lang.String, partials: js.Any*): FunctionChain[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+  def bindKey(key: java.lang.String, partials: Any*): FunctionChain[js.Function1[/* repeated */ Any, Any]] = js.native
   
   /**
     * @see _.camelCase
@@ -79,7 +77,7 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.cloneDeepWith
     */
-  def cloneDeepWith(customizer: CloneDeepWithCustomizer[TValue]): LoDashExplicitWrapper[js.Any] = js.native
+  def cloneDeepWith(customizer: CloneDeepWithCustomizer[TValue]): LoDashExplicitWrapper[Any] = js.native
   
   /**
     * @see _.cloneWith
@@ -133,12 +131,12 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.defer
     */
-  def defer(args: js.Any*): PrimitiveChain[Double] = js.native
+  def defer(args: Any*): PrimitiveChain[Double] = js.native
   
   /**
     * @see _.delay
     */
-  def delay(wait: Double, args: js.Any*): PrimitiveChain[Double] = js.native
+  def delay(wait: Double, args: Any*): PrimitiveChain[Double] = js.native
   
   /**
     * @see _.divide
@@ -156,17 +154,12 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.entries
     */
-  def entries(): CollectionChain[js.Tuple2[java.lang.String, js.Any]] = js.native
+  def entries(): CollectionChain[js.Tuple2[java.lang.String, Any]] = js.native
   
   /**
     * @see _.entriesIn
     */
-  def entriesIn(): CollectionChain[js.Tuple2[java.lang.String, js.Any]] = js.native
-  
-  /**
-    * @see _.eq
-    */
-  def eq(other: js.Any): PrimitiveChain[Boolean] = js.native
+  def entriesIn(): CollectionChain[js.Tuple2[java.lang.String, Any]] = js.native
   
   /**
     * @see _.escape
@@ -200,25 +193,25 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
     * @see _.forIn
     */
   def forIn(): this.type = js.native
-  def forIn(iteratee: ObjectIterator[TValue, js.Any]): this.type = js.native
+  def forIn(iteratee: ObjectIterator[TValue, Any]): this.type = js.native
   
   /**
     * @see _.forInRight
     */
   def forInRight(): this.type = js.native
-  def forInRight(iteratee: ObjectIterator[TValue, js.Any]): this.type = js.native
+  def forInRight(iteratee: ObjectIterator[TValue, Any]): this.type = js.native
   
   /**
     * @see _.forOwn
     */
   def forOwn(): this.type = js.native
-  def forOwn(iteratee: ObjectIterator[TValue, js.Any]): this.type = js.native
+  def forOwn(iteratee: ObjectIterator[TValue, Any]): this.type = js.native
   
   /**
     * @see _.forOwnRight
     */
   def forOwnRight(): this.type = js.native
-  def forOwnRight(iteratee: ObjectIterator[TValue, js.Any]): this.type = js.native
+  def forOwnRight(iteratee: ObjectIterator[TValue, Any]): this.type = js.native
   
   /**
     * @see _.functions
@@ -233,12 +226,12 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.gt
     */
-  def gt(other: js.Any): PrimitiveChain[Boolean] = js.native
+  def gt(other: Any): PrimitiveChain[Boolean] = js.native
   
   /**
     * @see _.gte
     */
-  def gte(other: js.Any): PrimitiveChain[Boolean] = js.native
+  def gte(other: Any): PrimitiveChain[Boolean] = js.native
   
   /**
     * @see _.has
@@ -269,16 +262,16 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.invoke
     */
-  def invoke(path: PropertyPath, args: js.Any*): LoDashExplicitWrapper[js.Any] = js.native
+  def invoke(path: PropertyPath, args: Any*): LoDashExplicitWrapper[Any] = js.native
   
   /**
     * @see _.invokeMap
     */
-  def invokeMap(methodName: java.lang.String, args: js.Any*): CollectionChain[js.Any] = js.native
+  def invokeMap(methodName: java.lang.String, args: Any*): CollectionChain[Any] = js.native
   /**
     * @see _.invokeMap
     */
-  def invokeMap[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: js.Any*): CollectionChain[TResult] = js.native
+  def invokeMap[TResult](method: js.Function1[/* repeated */ Any, TResult], args: Any*): CollectionChain[TResult] = js.native
   
   /**
     * @see _.isArguments
@@ -333,13 +326,13 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.isEqual
     */
-  def isEqual(other: js.Any): PrimitiveChain[Boolean] = js.native
+  def isEqual(other: Any): PrimitiveChain[Boolean] = js.native
   
   /**
     * @see _.isEqualWith
     */
-  def isEqualWith(other: js.Any): PrimitiveChain[Boolean] = js.native
-  def isEqualWith(other: js.Any, customizer: IsEqualCustomizer): PrimitiveChain[Boolean] = js.native
+  def isEqualWith(other: Any): PrimitiveChain[Boolean] = js.native
+  def isEqualWith(other: Any, customizer: IsEqualCustomizer): PrimitiveChain[Boolean] = js.native
   
   /**
     * @see _.isError
@@ -494,12 +487,12 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.lt
     */
-  def lt(other: js.Any): PrimitiveChain[Boolean] = js.native
+  def lt(other: Any): PrimitiveChain[Boolean] = js.native
   
   /**
     * @see _.lte
     */
-  def lte(other: js.Any): PrimitiveChain[Boolean] = js.native
+  def lte(other: Any): PrimitiveChain[Boolean] = js.native
   
   /**
     * @see _.matches
@@ -509,7 +502,7 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.matchesProperty
     */
-  def matchesProperty[SrcValue](srcValue: SrcValue): FunctionChain[js.Function1[/* value */ js.Any, Boolean]] = js.native
+  def matchesProperty[SrcValue](srcValue: SrcValue): FunctionChain[js.Function1[/* value */ Any, Boolean]] = js.native
   /**
     * @see _.matchesProperty
     */
@@ -524,12 +517,12 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.method
     */
-  def method(args: js.Any*): FunctionChain[js.Function1[/* object */ js.Any, js.Any]] = js.native
+  def method(args: Any*): FunctionChain[js.Function1[/* object */ Any, Any]] = js.native
   
   /**
     * @see _.methodOf
     */
-  def methodOf(args: js.Any*): LoDashExplicitWrapper[js.Function1[/* path */ PropertyPath, js.Any]] = js.native
+  def methodOf(args: Any*): LoDashExplicitWrapper[js.Function1[/* path */ PropertyPath, Any]] = js.native
   
   /**
     * @see _.mixin
@@ -539,8 +532,8 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.mixin
     */
-  def mixin(source: Dictionary[js.Function1[/* repeated */ js.Any, js.Any]]): this.type = js.native
-  def mixin(source: Dictionary[js.Function1[/* repeated */ js.Any, js.Any]], options: MixinOptions): this.type = js.native
+  def mixin(source: Dictionary[js.Function1[/* repeated */ Any, Any]]): this.type = js.native
+  def mixin(source: Dictionary[js.Function1[/* repeated */ Any, Any]], options: MixinOptions): this.type = js.native
   
   /**
     * @see _.multiply
@@ -555,7 +548,7 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.noop
     */
-  def noop(args: js.Any*): PrimitiveChain[Unit] = js.native
+  def noop(args: Any*): PrimitiveChain[Unit] = js.native
   
   /**
     * @see _.now
@@ -565,7 +558,7 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.nthArg
     */
-  def nthArg(): FunctionChain[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+  def nthArg(): FunctionChain[js.Function1[/* repeated */ Any, Any]] = js.native
   
   /**
     * @see _.pad
@@ -600,7 +593,7 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.plant
     */
-  def plant(value: js.Any): this.type = js.native
+  def plant(value: Any): this.type = js.native
   
   /**
     * @see _.property
@@ -610,7 +603,7 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.propertyOf
     */
-  def propertyOf(): LoDashExplicitWrapper[js.Function1[/* path */ PropertyPath, js.Any]] = js.native
+  def propertyOf(): LoDashExplicitWrapper[js.Function1[/* path */ PropertyPath, Any]] = js.native
   
   /**
     * @see _.random
@@ -647,11 +640,11 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   
   def replace(pattern: java.lang.String, replacement: java.lang.String): StringChain = js.native
   def replace(pattern: java.lang.String, replacement: ReplaceFunction): StringChain = js.native
-  def replace(pattern: RegExp, replacement: java.lang.String): StringChain = js.native
+  def replace(pattern: js.RegExp, replacement: java.lang.String): StringChain = js.native
   /**
     * @see _.replace
     */
-  def replace(pattern: RegExp, replacement: ReplaceFunction): StringChain = js.native
+  def replace(pattern: js.RegExp, replacement: ReplaceFunction): StringChain = js.native
   def replace(replacement: java.lang.String): StringChain = js.native
   /**
     * @see _.replace
@@ -663,7 +656,7 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
     */
   def result[TResult](path: PropertyPath): ExpChain[TResult] = js.native
   def result[TResult](path: PropertyPath, defaultValue: TResult): ExpChain[TResult] = js.native
-  def result[TResult](path: PropertyPath, defaultValue: js.Function1[/* repeated */ js.Any, TResult]): ExpChain[TResult] = js.native
+  def result[TResult](path: PropertyPath, defaultValue: js.Function1[/* repeated */ Any, TResult]): ExpChain[TResult] = js.native
   
   /**
     * @see _.reverse
@@ -679,26 +672,26 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.set
     */
-  def set(path: PropertyPath, value: js.Any): this.type = js.native
+  def set(path: PropertyPath, value: Any): this.type = js.native
   
   /**
     * @see _.setWith
     */
-  def setWith(path: PropertyPath, value: js.Any): this.type = js.native
-  def setWith(path: PropertyPath, value: js.Any, customizer: SetWithCustomizer[TValue]): this.type = js.native
+  def setWith(path: PropertyPath, value: Any): this.type = js.native
+  def setWith(path: PropertyPath, value: Any, customizer: SetWithCustomizer[TValue]): this.type = js.native
   /**
     * @see _.setWith
     */
   @JSName("setWith")
-  def setWith_TResult_ExpChain[TResult](path: PropertyPath, value: js.Any): ExpChain[TResult] = js.native
+  def setWith_TResult_ExpChain[TResult](path: PropertyPath, value: Any): ExpChain[TResult] = js.native
   @JSName("setWith")
-  def setWith_TResult_ExpChain[TResult](path: PropertyPath, value: js.Any, customizer: SetWithCustomizer[TValue]): ExpChain[TResult] = js.native
+  def setWith_TResult_ExpChain[TResult](path: PropertyPath, value: Any, customizer: SetWithCustomizer[TValue]): ExpChain[TResult] = js.native
   
   /**
     * @see _.set
     */
   @JSName("set")
-  def set_TResult_ExpChain[TResult](path: PropertyPath, value: js.Any): ExpChain[TResult] = js.native
+  def set_TResult_ExpChain[TResult](path: PropertyPath, value: Any): ExpChain[TResult] = js.native
   
   /**
     * @see _.size
@@ -716,9 +709,9 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   def split(): CollectionChain[java.lang.String] = js.native
   def split(separator: java.lang.String): CollectionChain[java.lang.String] = js.native
   def split(separator: java.lang.String, limit: Double): CollectionChain[java.lang.String] = js.native
+  def split(separator: js.RegExp): CollectionChain[java.lang.String] = js.native
+  def split(separator: js.RegExp, limit: Double): CollectionChain[java.lang.String] = js.native
   def split(separator: Unit, limit: Double): CollectionChain[java.lang.String] = js.native
-  def split(separator: RegExp): CollectionChain[java.lang.String] = js.native
-  def split(separator: RegExp, limit: Double): CollectionChain[java.lang.String] = js.native
   
   /**
     * @see _.startCase
@@ -736,7 +729,7 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.stubArray
     */
-  def stubArray(): CollectionChain[js.Any] = js.native
+  def stubArray(): CollectionChain[Any] = js.native
   
   /**
     * @see _.stubFalse
@@ -751,7 +744,7 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.stubObject
     */
-  def stubObject(): LoDashExplicitWrapper[js.Any] = js.native
+  def stubObject(): LoDashExplicitWrapper[Any] = js.native
   
   /**
     * @see _.stubString
@@ -836,12 +829,12 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.toPairs
     */
-  def toPairs(): CollectionChain[js.Tuple2[java.lang.String, js.Any]] = js.native
+  def toPairs(): CollectionChain[js.Tuple2[java.lang.String, Any]] = js.native
   
   /**
     * @see _.toPairsIn
     */
-  def toPairsIn(): CollectionChain[js.Tuple2[java.lang.String, js.Any]] = js.native
+  def toPairsIn(): CollectionChain[js.Tuple2[java.lang.String, Any]] = js.native
   
   /**
     * @see _.toPath
@@ -851,7 +844,7 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.toPlainObject
     */
-  def toPlainObject(): ObjectChain[js.Any] = js.native
+  def toPlainObject(): ObjectChain[Any] = js.native
   
   /**
     * @see _.toSafeInteger
@@ -905,7 +898,7 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
   /**
     * @see _.update
     */
-  def update(path: PropertyPath, updater: js.Function1[/* value */ js.Any, js.Any]): ObjectChain[js.Any] = js.native
+  def update(path: PropertyPath, updater: js.Function1[/* value */ Any, Any]): ObjectChain[Any] = js.native
   
   /**
     * @see _.upperCase
@@ -927,7 +920,7 @@ trait LoDashExplicitWrapper[TValue] extends StObject {
     */
   def words(): CollectionChain[java.lang.String] = js.native
   def words(pattern: java.lang.String): CollectionChain[java.lang.String] = js.native
-  def words(pattern: RegExp): CollectionChain[java.lang.String] = js.native
+  def words(pattern: js.RegExp): CollectionChain[java.lang.String] = js.native
   
   /**
     * @see _.wrap

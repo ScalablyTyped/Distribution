@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* was `typeof SegmentedIOS` */
 @JSImport("antd-mobile-rn", "SegmentedControl")
 @js.native
-class SegmentedControl () extends default
+open class SegmentedControl () extends default
 /* static members */
 object SegmentedControl {
   

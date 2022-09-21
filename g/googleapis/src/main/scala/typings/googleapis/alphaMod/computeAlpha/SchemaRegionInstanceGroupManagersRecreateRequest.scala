@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaRegionInstanceGroupManagersRecreateRequest extends StObject {
   
   /**
-    * The URLs of one or more instances to recreate. This can be a full URL or
-    * a partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
+    * The URLs of one or more instances to recreate. This can be a full URL or a partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
     */
-  var instances: js.UndefOr[js.Array[String]] = js.undefined
+  var instances: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaRegionInstanceGroupManagersRecreateRequest {
   
@@ -23,8 +22,10 @@ object SchemaRegionInstanceGroupManagersRecreateRequest {
     
     inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
+    inline def setInstancesNull: Self = StObject.set(x, "instances", null)
+    
     inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value*))
   }
 }

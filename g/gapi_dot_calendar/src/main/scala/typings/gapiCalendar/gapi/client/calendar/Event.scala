@@ -139,7 +139,7 @@ object Event {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: FileId*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: FileId*): Self = StObject.set(x, "attachments", js.Array(value*))
     
     inline def setAttendees(value: js.Array[Comment]): Self = StObject.set(x, "attendees", value.asInstanceOf[js.Any])
     
@@ -149,7 +149,7 @@ object Event {
     
     inline def setAttendeesUndefined: Self = StObject.set(x, "attendees", js.undefined)
     
-    inline def setAttendeesVarargs(value: Comment*): Self = StObject.set(x, "attendees", js.Array(value :_*))
+    inline def setAttendeesVarargs(value: Comment*): Self = StObject.set(x, "attendees", js.Array(value*))
     
     inline def setColorId(value: String): Self = StObject.set(x, "colorId", value.asInstanceOf[js.Any])
     
@@ -221,7 +221,7 @@ object Event {
     
     inline def setRecurrence(value: js.Array[String]): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
-    inline def setRecurrenceVarargs(value: String*): Self = StObject.set(x, "recurrence", js.Array(value :_*))
+    inline def setRecurrenceVarargs(value: String*): Self = StObject.set(x, "recurrence", js.Array(value*))
     
     inline def setRecurringEventId(value: String): Self = StObject.set(x, "recurringEventId", value.asInstanceOf[js.Any])
     

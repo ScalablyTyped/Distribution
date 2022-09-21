@@ -11,6 +11,10 @@ object env {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("vscode", "env.appHost")
+  @js.native
+  val appHost: String = js.native
+  
   @JSImport("vscode", "env.appName")
   @js.native
   val appName: String = js.native
@@ -25,6 +29,14 @@ object env {
   @js.native
   val clipboard: Clipboard = js.native
   
+  @JSImport("vscode", "env.isNewAppInstall")
+  @js.native
+  val isNewAppInstall: Boolean = js.native
+  
+  @JSImport("vscode", "env.isTelemetryEnabled")
+  @js.native
+  val isTelemetryEnabled: Boolean = js.native
+  
   @JSImport("vscode", "env.language")
   @js.native
   val language: String = js.native
@@ -32,6 +44,10 @@ object env {
   @JSImport("vscode", "env.machineId")
   @js.native
   val machineId: String = js.native
+  
+  @JSImport("vscode", "env.onDidChangeTelemetryEnabled")
+  @js.native
+  val onDidChangeTelemetryEnabled: Event[Boolean] = js.native
   
   inline def openExternal(target: Uri): Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("openExternal")(target.asInstanceOf[js.Any]).asInstanceOf[Thenable[Boolean]]
   

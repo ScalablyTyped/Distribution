@@ -12,28 +12,28 @@ object interactionIndicatorMod {
   
   @JSImport("playable/dist/src/modules/ui/interaction-indicator/interaction-indicator", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with InteractionIndicator {
     def this(hasEventEmitterEngineConfigRootContainer: RootContainer) = this()
     
     /* private */ /* CompleteClass */
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _engine: js.Any = js.native
+    var _engine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initUI: js.Any = js.native
+    var _initUI: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _showPlaybackChangeIndicator: js.Any = js.native
+    var _showPlaybackChangeIndicator: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -101,29 +101,29 @@ object interactionIndicatorMod {
     extends StObject
        with IInteractionIndicator {
     
-    /* private */ var _bindEvents: js.Any
+    /* private */ var _bindEvents: Any
     
-    /* private */ var _engine: js.Any
+    /* private */ var _engine: Any
     
-    /* private */ var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: Any
     
-    /* private */ var _initUI: js.Any
+    /* private */ var _initUI: Any
     
-    /* private */ var _showPlaybackChangeIndicator: js.Any
+    /* private */ var _showPlaybackChangeIndicator: Any
     
-    /* private */ var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: Any
     
     var view: typings.playable.interactionIndicatorViewMod.default
   }
   object InteractionIndicator {
     
     inline def apply(
-      _bindEvents: js.Any,
-      _engine: js.Any,
-      _eventEmitter: js.Any,
-      _initUI: js.Any,
-      _showPlaybackChangeIndicator: js.Any,
-      _unbindEvents: js.Any,
+      _bindEvents: Any,
+      _engine: Any,
+      _eventEmitter: Any,
+      _initUI: Any,
+      _showPlaybackChangeIndicator: Any,
+      _unbindEvents: Any,
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -146,17 +146,17 @@ object interactionIndicatorMod {
       
       inline def setView(value: typings.playable.interactionIndicatorViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      inline def set_showPlaybackChangeIndicator(value: js.Any): Self = StObject.set(x, "_showPlaybackChangeIndicator", value.asInstanceOf[js.Any])
+      inline def set_showPlaybackChangeIndicator(value: Any): Self = StObject.set(x, "_showPlaybackChangeIndicator", value.asInstanceOf[js.Any])
       
-      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
     }
   }
 }

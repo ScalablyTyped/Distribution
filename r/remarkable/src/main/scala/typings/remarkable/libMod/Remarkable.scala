@@ -60,5 +60,5 @@ trait Remarkable extends StObject {
     * Use a plugin.
     */
   def use(plugin: Plugin): Remarkable = js.native
-  def use(plugin: Plugin, options: js.Any): Remarkable = js.native
+  def use(plugin: Plugin, options: Any): Remarkable = js.native
 }

@@ -32,6 +32,6 @@ object ListSkusResponse {
     
     inline def setSkusUndefined: Self = StObject.set(x, "skus", js.undefined)
     
-    inline def setSkusVarargs(value: Sku*): Self = StObject.set(x, "skus", js.Array(value :_*))
+    inline def setSkusVarargs(value: Sku*): Self = StObject.set(x, "skus", js.Array(value*))
   }
 }

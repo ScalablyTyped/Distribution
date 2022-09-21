@@ -26,7 +26,7 @@ object CoordinatesArray {
     
     inline def setCoordinates(value: js.Array[js.Array[js.Tuple2[Double, Double]]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    inline def setCoordinatesVarargs(value: (js.Array[js.Tuple2[Double, Double]])*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: (js.Array[js.Tuple2[Double, Double]])*): Self = StObject.set(x, "coordinates", js.Array(value*))
     
     inline def setType(value: MultiLineString | MultiPolygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object eventsMod {
   
-  @JSImport("@storybook/api/dist/lib/events", JSImport.Namespace)
+  @JSImport("@storybook/api/dist/ts3.9/lib/events", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

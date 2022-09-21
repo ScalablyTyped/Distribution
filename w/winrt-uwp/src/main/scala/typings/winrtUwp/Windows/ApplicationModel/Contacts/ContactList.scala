@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ContactList extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_contactchanged(`type`: contactchanged, listener: TypedEventHandler[ContactList, ContactChangedEventArgs]): Unit = js.native
   
@@ -87,7 +87,7 @@ trait ContactList extends StObject {
   /** Gets or puts a value indicating the write access level to this ContactList for other apps on the system. */
   var otherAppWriteAccess: ContactListOtherAppWriteAccess = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_contactchanged(`type`: contactchanged, listener: TypedEventHandler[ContactList, ContactChangedEventArgs]): Unit = js.native
   

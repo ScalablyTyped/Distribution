@@ -27,7 +27,7 @@ object anon {
       * Use the chrome.devtools.inspectedWindow API to interact with the inspected window: obtain the tab ID for the inspected page, evaluate the code in the context of the inspected window, reload the page, or obtain the list of resources within the page.
       * Availability: Since Chrome 18.
       */
-    val inspectedWindow: js.Any
+    val inspectedWindow: Any
     
     ////////////////////
     // Dev Tools - Network
@@ -36,7 +36,7 @@ object anon {
       * Use the chrome.devtools.network API to retrieve the information about network requests displayed by the Developer Tools in the Network panel.
       * Availability: Since Chrome 18.
       */
-    val network: js.Any
+    val network: Any
     
     ////////////////////
     // Dev Tools - Panels
@@ -45,22 +45,22 @@ object anon {
       * Use the chrome.devtools.panels API to integrate your extension into Developer Tools window UI: create your own panels, access existing panels, and add sidebars.
       * Availability: Since Chrome 18.
       */
-    val panels: js.Any
+    val panels: Any
   }
   object Typeofdevtools {
     
-    inline def apply(inspectedWindow: js.Any, network: js.Any, panels: js.Any): Typeofdevtools = {
+    inline def apply(inspectedWindow: Any, network: Any, panels: Any): Typeofdevtools = {
       val __obj = js.Dynamic.literal(inspectedWindow = inspectedWindow.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any], panels = panels.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofdevtools]
     }
     
     extension [Self <: Typeofdevtools](x: Self) {
       
-      inline def setInspectedWindow(value: js.Any): Self = StObject.set(x, "inspectedWindow", value.asInstanceOf[js.Any])
+      inline def setInspectedWindow(value: Any): Self = StObject.set(x, "inspectedWindow", value.asInstanceOf[js.Any])
       
-      inline def setNetwork(value: js.Any): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: Any): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      inline def setPanels(value: js.Any): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
+      inline def setPanels(value: Any): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,7 +138,7 @@ object anon {
       * Permissions: "system.cpu"
       * @since Chrome 32.
       */
-    val cpu: js.Any
+    val cpu: Any
     
     ////////////////////
     // System Memory
@@ -148,7 +148,7 @@ object anon {
       * Permissions:  "system.memory"
       * @since Chrome 32.
       */
-    val memory: js.Any
+    val memory: Any
     
     ////////////////////
     // System Storage
@@ -158,22 +158,22 @@ object anon {
       * Permissions:  "system.storage"
       * @since Chrome 30.
       */
-    val storage: js.Any
+    val storage: Any
   }
   object Typeofsystem {
     
-    inline def apply(cpu: js.Any, memory: js.Any, storage: js.Any): Typeofsystem = {
+    inline def apply(cpu: Any, memory: Any, storage: Any): Typeofsystem = {
       val __obj = js.Dynamic.literal(cpu = cpu.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofsystem]
     }
     
     extension [Self <: Typeofsystem](x: Self) {
       
-      inline def setCpu(value: js.Any): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+      inline def setCpu(value: Any): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
-      inline def setMemory(value: js.Any): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: Any): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      inline def setStorage(value: js.Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -206,7 +206,7 @@ object anon {
     
     def unblock(url: String): Unit = js.native
     
-    def update(urls: js.Array[MostVisitedURL2]): js.Any = js.native
+    def update(urls: js.Array[MostVisitedURL2]): Any = js.native
   }
   
   trait Typeofwhale extends StObject {
@@ -219,7 +219,7 @@ object anon {
       * Availability: Since Chrome 22.
       * Permissions:  "alarms"
       */
-    val alarms: js.Any
+    val alarms: Any
     
     ////////////////////
     // Bookmarks
@@ -229,7 +229,7 @@ object anon {
       * Availability: Since Chrome 5.
       * Permissions:  "bookmarks"
       */
-    val bookmarks: js.Any
+    val bookmarks: Any
     
     ////////////////////
     // Browser Action
@@ -239,7 +239,7 @@ object anon {
       * Availability: Since Chrome 5.
       * Manifest:  "browser_action": {...}
       */
-    val browserAction: js.Any
+    val browserAction: Any
     
     ////////////////////
     // Browsing Data
@@ -249,7 +249,7 @@ object anon {
       * Availability: Since Chrome 19.
       * Permissions:  "browsingData"
       */
-    val browsingData: js.Any
+    val browsingData: Any
     
     ////////////////////
     // Commands
@@ -259,7 +259,7 @@ object anon {
       * Availability: Since Chrome 25.
       * Manifest:  "commands": {...}
       */
-    val commands: js.Any
+    val commands: Any
     
     ////////////////////
     // Content Settings
@@ -269,7 +269,7 @@ object anon {
       * Availability: Since Chrome 16.
       * Permissions:  "contentSettings"
       */
-    val contentSettings: js.Any
+    val contentSettings: Any
     
     ////////////////////
     // Context Menus
@@ -279,7 +279,7 @@ object anon {
       * Availability: Since Chrome 6.
       * Permissions:  "contextMenus"
       */
-    val contextMenus: js.Any
+    val contextMenus: Any
     
     ////////////////////
     // Cookies
@@ -289,7 +289,7 @@ object anon {
       * Availability: Since Chrome 6.
       * Permissions:  "cookies", host permissions
       */
-    val cookies: js.Any
+    val cookies: Any
     
     ////////////////////
     // Declarative Content
@@ -299,7 +299,7 @@ object anon {
       * Availability: Since Chrome 33.
       * Permissions:  "declarativeContent"
       */
-    val declarativeContent: js.Any
+    val declarativeContent: Any
     
     ////////////////////
     // DesktopCapture
@@ -309,7 +309,7 @@ object anon {
       * Availability: Since Chrome 34.
       * Permissions:  "desktopCapture"
       */
-    val desktopCapture: js.Any
+    val desktopCapture: Any
     
     val devtools: Typeofdevtools
     
@@ -322,7 +322,7 @@ object anon {
       * The chrome.events namespace contains common types used by APIs dispatching events to notify you when something interesting happens.
       * Availability: Since Chrome 21.
       */
-    val events: js.Any
+    val events: Any
     
     ////////////////////
     // Extension
@@ -331,7 +331,7 @@ object anon {
       * The chrome.extension API has utilities that can be used by any extension page. It includes support for exchanging messages between an extension and its content scripts or between extensions, as described in detail in Message Passing.
       * Availability: Since Chrome 5.
       */
-    val `extension`: js.Any
+    val `extension`: Any
     
     ////////////////////
     // Font Settings
@@ -341,7 +341,7 @@ object anon {
       * Availability: Since Chrome 22.
       * Permissions:  "fontSettings"
       */
-    val fontSettings: js.Any
+    val fontSettings: Any
     
     ////////////////////
     // Google Cloud Messaging
@@ -351,7 +351,7 @@ object anon {
       * Availability: Since Chrome 35.
       * Permissions:  "gcm"
       */
-    val gcm: js.Any
+    val gcm: Any
     
     ////////////////////
     // History
@@ -361,7 +361,7 @@ object anon {
       * Availability: Since Chrome 5.
       * Permissions:  "history"
       */
-    val history: js.Any
+    val history: Any
     
     ////////////////////
     // i18n
@@ -370,7 +370,7 @@ object anon {
       * Use the chrome.i18n infrastructure to implement internationalization across your whole app or extension.
       * @since Chrome 5.
       */
-    val i18n: js.Any
+    val i18n: Any
     
     ////////////////////
     // Idle
@@ -380,7 +380,7 @@ object anon {
       * Permissions:  "idle"
       * @since Chrome 6.
       */
-    val idle: js.Any
+    val idle: Any
     
     ////////////////////
     // Management
@@ -390,7 +390,7 @@ object anon {
       * Permissions:  "management"
       * @since Chrome 8.
       */
-    val management: js.Any
+    val management: Any
     
     ////////////////////
     // Notifications
@@ -401,7 +401,7 @@ object anon {
       * Permissions:  "notifications"
       * @since Chrome 28.
       */
-    val notifications: js.Any
+    val notifications: Any
     
     ////////////////////
     // Omnibox
@@ -411,7 +411,7 @@ object anon {
       * Manifest:  "omnibox": {...}
       * @since Chrome 9.
       */
-    val omnibox: js.Any
+    val omnibox: Any
     
     ////////////////////
     // Page Action
@@ -421,7 +421,7 @@ object anon {
       * Manifest:  "page_action": {...}
       * @since Chrome 5.
       */
-    val pageAction: js.Any
+    val pageAction: Any
     
     ////////////////////
     // Page Capture
@@ -431,7 +431,7 @@ object anon {
       * Permissions:  "pageCapture"
       * @since Chrome 18.
       */
-    val pageCapture: js.Any
+    val pageCapture: Any
     
     ////////////////////
     // Permissions
@@ -440,7 +440,7 @@ object anon {
       * Use the chrome.permissions API to request declared optional permissions at run time rather than install time, so users understand why the permissions are needed and grant only those that are necessary.
       * @since Chrome 16.
       */
-    val permissions: js.Any
+    val permissions: Any
     
     ////////////////////
     // Power
@@ -450,7 +450,7 @@ object anon {
       * Permissions:  "power"
       * @since Chrome 27.
       */
-    val power: js.Any
+    val power: Any
     
     ////////////////////
     // Printer Provider
@@ -460,7 +460,7 @@ object anon {
       * Permissions:  "printerProvider"
       * @since Chrome 44.
       */
-    val printerProvider: js.Any
+    val printerProvider: Any
     
     ////////////////////
     // Privacy
@@ -471,7 +471,7 @@ object anon {
       * The Chrome Privacy Whitepaper gives background detail regarding the features which this API can control.
       * @since Chrome 18.
       */
-    val privacy: js.Any
+    val privacy: Any
     
     ////////////////////
     // Proxy
@@ -481,7 +481,7 @@ object anon {
       * Permissions:  "proxy"
       * @since Chrome 13.
       */
-    val proxy: js.Any
+    val proxy: Any
     
     ////////////////////
     // Runtime
@@ -490,7 +490,7 @@ object anon {
       * Use the chrome.runtime API to retrieve the background page, return details about the manifest, and listen for and respond to events in the app or extension lifecycle. You can also use this API to convert the relative path of URLs to fully-qualified URLs.
       * @since Chrome 22
       */
-    val runtime: js.Any
+    val runtime: Any
     
     val sidebarAction: TypeofsidebarAction
     
@@ -502,7 +502,7 @@ object anon {
       * Permissions:  "storage"
       * @since Chrome 20.
       */
-    val storage: js.Any
+    val storage: Any
     
     val system: Typeofsystem
     
@@ -514,7 +514,7 @@ object anon {
       * Permissions:  "tabCapture"
       * @since Chrome 31.
       */
-    val tabCapture: js.Any
+    val tabCapture: Any
     
     ////////////////////
     // Tabs
@@ -524,7 +524,7 @@ object anon {
       * Permissions: The majority of the chrome.tabs API can be used without declaring any permission. However, the "tabs" permission is required in order to populate the url, title, and favIconUrl properties of Tab.
       * @since Chrome 5.
       */
-    val tabs: js.Any
+    val tabs: Any
     
     val topSites: TypeoftopSites
     
@@ -536,7 +536,7 @@ object anon {
       * Permissions:  "tts"
       * @since Chrome 14.
       */
-    val tts: js.Any
+    val tts: Any
     
     ////////////////////
     // Text to Speech Engine
@@ -546,7 +546,7 @@ object anon {
       * Permissions:  "ttsEngine"
       * @since Chrome 14.
       */
-    val ttsEngine: js.Any
+    val ttsEngine: Any
     
     ////////////////////
     // Types
@@ -555,7 +555,7 @@ object anon {
       * The chrome.types API contains type declarations for Chrome.
       * @since Chrome 13.
       */
-    val types: js.Any
+    val types: Any
     
     ////////////////////
     // Web Navigation
@@ -565,7 +565,7 @@ object anon {
       * Permissions:  "webNavigation"
       * @since Chrome 16.
       */
-    val webNavigation: js.Any
+    val webNavigation: Any
     
     ////////////////////
     // Web Request
@@ -575,7 +575,7 @@ object anon {
       * Permissions:  "webRequest", host permissions
       * @since Chrome 17.
       */
-    val webRequest: js.Any
+    val webRequest: Any
     
     ////////////////////
     // Windows
@@ -585,53 +585,53 @@ object anon {
       * Permissions: The chrome.windows API can be used without declaring any permission. However, the "tabs" permission is required in order to populate the url, title, and favIconUrl properties of Tab objects.
       * @since Chrome 5.
       */
-    val windows: js.Any
+    val windows: Any
   }
   object Typeofwhale {
     
     inline def apply(
-      alarms: js.Any,
-      bookmarks: js.Any,
-      browserAction: js.Any,
-      browsingData: js.Any,
-      commands: js.Any,
-      contentSettings: js.Any,
-      contextMenus: js.Any,
-      cookies: js.Any,
-      declarativeContent: js.Any,
-      desktopCapture: js.Any,
+      alarms: Any,
+      bookmarks: Any,
+      browserAction: Any,
+      browsingData: Any,
+      commands: Any,
+      contentSettings: Any,
+      contextMenus: Any,
+      cookies: Any,
+      declarativeContent: Any,
+      desktopCapture: Any,
       devtools: Typeofdevtools,
       downloads: Typeofdownloads,
-      events: js.Any,
-      `extension`: js.Any,
-      fontSettings: js.Any,
-      gcm: js.Any,
-      history: js.Any,
-      i18n: js.Any,
-      idle: js.Any,
-      management: js.Any,
-      notifications: js.Any,
-      omnibox: js.Any,
-      pageAction: js.Any,
-      pageCapture: js.Any,
-      permissions: js.Any,
-      power: js.Any,
-      printerProvider: js.Any,
-      privacy: js.Any,
-      proxy: js.Any,
-      runtime: js.Any,
+      events: Any,
+      `extension`: Any,
+      fontSettings: Any,
+      gcm: Any,
+      history: Any,
+      i18n: Any,
+      idle: Any,
+      management: Any,
+      notifications: Any,
+      omnibox: Any,
+      pageAction: Any,
+      pageCapture: Any,
+      permissions: Any,
+      power: Any,
+      printerProvider: Any,
+      privacy: Any,
+      proxy: Any,
+      runtime: Any,
       sidebarAction: TypeofsidebarAction,
-      storage: js.Any,
+      storage: Any,
       system: Typeofsystem,
-      tabCapture: js.Any,
-      tabs: js.Any,
+      tabCapture: Any,
+      tabs: Any,
       topSites: TypeoftopSites,
-      tts: js.Any,
-      ttsEngine: js.Any,
-      types: js.Any,
-      webNavigation: js.Any,
-      webRequest: js.Any,
-      windows: js.Any
+      tts: Any,
+      ttsEngine: Any,
+      types: Any,
+      webNavigation: Any,
+      webRequest: Any,
+      windows: Any
     ): Typeofwhale = {
       val __obj = js.Dynamic.literal(alarms = alarms.asInstanceOf[js.Any], bookmarks = bookmarks.asInstanceOf[js.Any], browserAction = browserAction.asInstanceOf[js.Any], browsingData = browsingData.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], contentSettings = contentSettings.asInstanceOf[js.Any], contextMenus = contextMenus.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], declarativeContent = declarativeContent.asInstanceOf[js.Any], desktopCapture = desktopCapture.asInstanceOf[js.Any], devtools = devtools.asInstanceOf[js.Any], downloads = downloads.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], fontSettings = fontSettings.asInstanceOf[js.Any], gcm = gcm.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], management = management.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], omnibox = omnibox.asInstanceOf[js.Any], pageAction = pageAction.asInstanceOf[js.Any], pageCapture = pageCapture.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], printerProvider = printerProvider.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], sidebarAction = sidebarAction.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], tabCapture = tabCapture.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any], topSites = topSites.asInstanceOf[js.Any], tts = tts.asInstanceOf[js.Any], ttsEngine = ttsEngine.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], webNavigation = webNavigation.asInstanceOf[js.Any], webRequest = webRequest.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
       __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
@@ -640,89 +640,89 @@ object anon {
     
     extension [Self <: Typeofwhale](x: Self) {
       
-      inline def setAlarms(value: js.Any): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
+      inline def setAlarms(value: Any): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
       
-      inline def setBookmarks(value: js.Any): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
+      inline def setBookmarks(value: Any): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
       
-      inline def setBrowserAction(value: js.Any): Self = StObject.set(x, "browserAction", value.asInstanceOf[js.Any])
+      inline def setBrowserAction(value: Any): Self = StObject.set(x, "browserAction", value.asInstanceOf[js.Any])
       
-      inline def setBrowsingData(value: js.Any): Self = StObject.set(x, "browsingData", value.asInstanceOf[js.Any])
+      inline def setBrowsingData(value: Any): Self = StObject.set(x, "browsingData", value.asInstanceOf[js.Any])
       
-      inline def setCommands(value: js.Any): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+      inline def setCommands(value: Any): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      inline def setContentSettings(value: js.Any): Self = StObject.set(x, "contentSettings", value.asInstanceOf[js.Any])
+      inline def setContentSettings(value: Any): Self = StObject.set(x, "contentSettings", value.asInstanceOf[js.Any])
       
-      inline def setContextMenus(value: js.Any): Self = StObject.set(x, "contextMenus", value.asInstanceOf[js.Any])
+      inline def setContextMenus(value: Any): Self = StObject.set(x, "contextMenus", value.asInstanceOf[js.Any])
       
-      inline def setCookies(value: js.Any): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: Any): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
-      inline def setDeclarativeContent(value: js.Any): Self = StObject.set(x, "declarativeContent", value.asInstanceOf[js.Any])
+      inline def setDeclarativeContent(value: Any): Self = StObject.set(x, "declarativeContent", value.asInstanceOf[js.Any])
       
-      inline def setDesktopCapture(value: js.Any): Self = StObject.set(x, "desktopCapture", value.asInstanceOf[js.Any])
+      inline def setDesktopCapture(value: Any): Self = StObject.set(x, "desktopCapture", value.asInstanceOf[js.Any])
       
       inline def setDevtools(value: Typeofdevtools): Self = StObject.set(x, "devtools", value.asInstanceOf[js.Any])
       
       inline def setDownloads(value: Typeofdownloads): Self = StObject.set(x, "downloads", value.asInstanceOf[js.Any])
       
-      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setExtension(value: js.Any): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: Any): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      inline def setFontSettings(value: js.Any): Self = StObject.set(x, "fontSettings", value.asInstanceOf[js.Any])
+      inline def setFontSettings(value: Any): Self = StObject.set(x, "fontSettings", value.asInstanceOf[js.Any])
       
-      inline def setGcm(value: js.Any): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
+      inline def setGcm(value: Any): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
       
-      inline def setHistory(value: js.Any): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: Any): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      inline def setI18n(value: js.Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+      inline def setI18n(value: Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
-      inline def setIdle(value: js.Any): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+      inline def setIdle(value: Any): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
       
-      inline def setManagement(value: js.Any): Self = StObject.set(x, "management", value.asInstanceOf[js.Any])
+      inline def setManagement(value: Any): Self = StObject.set(x, "management", value.asInstanceOf[js.Any])
       
-      inline def setNotifications(value: js.Any): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: Any): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      inline def setOmnibox(value: js.Any): Self = StObject.set(x, "omnibox", value.asInstanceOf[js.Any])
+      inline def setOmnibox(value: Any): Self = StObject.set(x, "omnibox", value.asInstanceOf[js.Any])
       
-      inline def setPageAction(value: js.Any): Self = StObject.set(x, "pageAction", value.asInstanceOf[js.Any])
+      inline def setPageAction(value: Any): Self = StObject.set(x, "pageAction", value.asInstanceOf[js.Any])
       
-      inline def setPageCapture(value: js.Any): Self = StObject.set(x, "pageCapture", value.asInstanceOf[js.Any])
+      inline def setPageCapture(value: Any): Self = StObject.set(x, "pageCapture", value.asInstanceOf[js.Any])
       
-      inline def setPermissions(value: js.Any): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      inline def setPermissions(value: Any): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      inline def setPower(value: js.Any): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
+      inline def setPower(value: Any): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
       
-      inline def setPrinterProvider(value: js.Any): Self = StObject.set(x, "printerProvider", value.asInstanceOf[js.Any])
+      inline def setPrinterProvider(value: Any): Self = StObject.set(x, "printerProvider", value.asInstanceOf[js.Any])
       
-      inline def setPrivacy(value: js.Any): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
+      inline def setPrivacy(value: Any): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
       
-      inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      inline def setRuntime(value: js.Any): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: Any): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
       inline def setSidebarAction(value: TypeofsidebarAction): Self = StObject.set(x, "sidebarAction", value.asInstanceOf[js.Any])
       
-      inline def setStorage(value: js.Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
       inline def setSystem(value: Typeofsystem): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
       
-      inline def setTabCapture(value: js.Any): Self = StObject.set(x, "tabCapture", value.asInstanceOf[js.Any])
+      inline def setTabCapture(value: Any): Self = StObject.set(x, "tabCapture", value.asInstanceOf[js.Any])
       
-      inline def setTabs(value: js.Any): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: Any): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
       inline def setTopSites(value: TypeoftopSites): Self = StObject.set(x, "topSites", value.asInstanceOf[js.Any])
       
-      inline def setTts(value: js.Any): Self = StObject.set(x, "tts", value.asInstanceOf[js.Any])
+      inline def setTts(value: Any): Self = StObject.set(x, "tts", value.asInstanceOf[js.Any])
       
-      inline def setTtsEngine(value: js.Any): Self = StObject.set(x, "ttsEngine", value.asInstanceOf[js.Any])
+      inline def setTtsEngine(value: Any): Self = StObject.set(x, "ttsEngine", value.asInstanceOf[js.Any])
       
-      inline def setTypes(value: js.Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      inline def setWebNavigation(value: js.Any): Self = StObject.set(x, "webNavigation", value.asInstanceOf[js.Any])
+      inline def setWebNavigation(value: Any): Self = StObject.set(x, "webNavigation", value.asInstanceOf[js.Any])
       
-      inline def setWebRequest(value: js.Any): Self = StObject.set(x, "webRequest", value.asInstanceOf[js.Any])
+      inline def setWebRequest(value: Any): Self = StObject.set(x, "webRequest", value.asInstanceOf[js.Any])
       
-      inline def setWindows(value: js.Any): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+      inline def setWindows(value: Any): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
     }
   }
 }

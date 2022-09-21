@@ -32,7 +32,7 @@ trait TestDNSAnswerRequest extends StObject {
   var RecordType: RRType
   
   /**
-    * If you want to simulate a request from a specific DNS resolver, specify the IP address for that resolver. If you omit this value, TestDnsAnswer uses the IP address of a DNS resolver in the AWS US East (N. Virginia) Region (us-east-1).
+    * If you want to simulate a request from a specific DNS resolver, specify the IP address for that resolver. If you omit this value, TestDnsAnswer uses the IP address of a DNS resolver in the Amazon Web Services US East (N. Virginia) Region (us-east-1).
     */
   var ResolverIP: js.UndefOr[IPAddress] = js.undefined
 }

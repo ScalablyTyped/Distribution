@@ -22,7 +22,7 @@ trait Fields extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** Cloud SQL instance ID. This does not include the project ID. */
+  /** Cloud SQL instance ID, or "-" for all instances. This does not include the project ID. */
   var instance: String
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */

@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaInstanceGroupManagerStatusVersionTarget extends StObject {
   
   /**
-    * [Output Only] A bit indicating whether version target has been reached in
-    * this managed instance group, i.e. all instances are in their target
-    * version. Instances&#39; target version are specified by version field on
-    * Instance Group Manager.
+    * [Output Only] A bit indicating whether version target has been reached in this managed instance group, i.e. all instances are in their target version. Instances' target version are specified by version field on Instance Group Manager.
     */
-  var isReached: js.UndefOr[Boolean] = js.undefined
+  var isReached: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaInstanceGroupManagerStatusVersionTarget {
   
@@ -24,6 +21,8 @@ object SchemaInstanceGroupManagerStatusVersionTarget {
   extension [Self <: SchemaInstanceGroupManagerStatusVersionTarget](x: Self) {
     
     inline def setIsReached(value: Boolean): Self = StObject.set(x, "isReached", value.asInstanceOf[js.Any])
+    
+    inline def setIsReachedNull: Self = StObject.set(x, "isReached", null)
     
     inline def setIsReachedUndefined: Self = StObject.set(x, "isReached", js.undefined)
   }

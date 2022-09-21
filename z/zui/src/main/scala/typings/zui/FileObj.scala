@@ -1,6 +1,5 @@
 package typings.zui
 
-import typings.std.Date
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +17,7 @@ trait FileObj extends StObject {
   
   var isImage: js.UndefOr[Boolean] = js.undefined
   
-  var lastModifiedDate: js.UndefOr[Date] = js.undefined
+  var lastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   var loaded: js.UndefOr[Double] = js.undefined
   
@@ -61,7 +60,7 @@ object FileObj {
     
     inline def setIsImageUndefined: Self = StObject.set(x, "isImage", js.undefined)
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     

@@ -24,7 +24,7 @@ trait TranslateTextRequest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.TranslateTextRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.TranslateTextRequest & TopLevel[Any]
   ] = js.undefined
   
   /** Optional. The format of the source text, for example, "text/html", "text/plain". If left blank, the MIME type defaults to "text/html". */
@@ -33,9 +33,8 @@ trait TranslateTextRequest extends StObject {
   /**
     * Optional. The `model` type requested for this translation. The format depends on model type: - AutoML Translation models:
     * `projects/{project-number-or-id}/locations/{location-id}/models/{model-id}` - General (built-in) models:
-    * `projects/{project-number-or-id}/locations/{location-id}/models/general/nmt`, `projects/{project-number-or-id}/locations/{location-id}/models/general/base` For global
-    * (non-regionalized) requests, use `location-id` `global`. For example, `projects/{project-number-or-id}/locations/global/models/general/nmt`. If missing, the system decides which
-    * google base model to use.
+    * `projects/{project-number-or-id}/locations/{location-id}/models/general/nmt`, For global (non-regionalized) requests, use `location-id` `global`. For example,
+    * `projects/{project-number-or-id}/locations/global/models/general/nmt`. If not provided, the default Google model (NMT) will be used
     */
   var model: js.UndefOr[String] = js.undefined
   
@@ -61,7 +60,7 @@ object TranslateTextRequest {
     
     inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     
-    inline def setContentsVarargs(value: String*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: String*): Self = StObject.set(x, "contents", js.Array(value*))
     
     inline def setGlossaryConfig(value: TranslateTextGlossaryConfig): Self = StObject.set(x, "glossaryConfig", value.asInstanceOf[js.Any])
     
@@ -70,7 +69,7 @@ object TranslateTextRequest {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.TranslateTextRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.TranslateTextRequest & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

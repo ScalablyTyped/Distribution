@@ -13,14 +13,14 @@ object mod {
   
   @JSImport("sqlite", "Database")
   @js.native
-  class Database[Driver /* <: typings.sqlite.sqlite3Mod.Database */, Stmt /* <: typings.sqlite.sqlite3Mod.Statement */] protected ()
+  open class Database[Driver /* <: typings.sqlite.sqlite3Mod.Database */, Stmt /* <: typings.sqlite.sqlite3Mod.Statement */] protected ()
     extends typings.sqlite.databaseMod.Database[Driver, Stmt] {
     def this(config: Config) = this()
   }
   
   @JSImport("sqlite", "Statement")
   @js.native
-  class Statement[S /* <: typings.sqlite.sqlite3Mod.Statement */] protected ()
+  open class Statement[S /* <: typings.sqlite.sqlite3Mod.Statement */] protected ()
     extends typings.sqlite.statementMod.Statement[S] {
     def this(stmt: S) = this()
   }

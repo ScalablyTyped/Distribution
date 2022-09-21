@@ -73,7 +73,7 @@ object SearchOptions {
     
     inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
-    inline def setLangVarargs(value: String*): Self = StObject.set(x, "lang", js.Array(value :_*))
+    inline def setLangVarargs(value: String*): Self = StObject.set(x, "lang", js.Array(value*))
     
     inline def setMaxSize(value: String): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     

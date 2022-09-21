@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<{afterInit (args : ...any): void, afterSelect (args : ...any): void, afterDeselect (args : ...any): void,   selectableHeader :string | std.HTMLElement,   selectionHeader :string | std.HTMLElement,   selectableFooter :string | std.HTMLElement,   selectionFooter :string | std.HTMLElement,   disabledClass :string,   selectableOptgroup :boolean,   keepOrder :boolean,   dblClick :boolean,   cssClass :string}> */
 trait Options extends StObject {
   
-  var afterDeselect: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var afterDeselect: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
-  var afterInit: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var afterInit: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
-  var afterSelect: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var afterSelect: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
   var cssClass: js.UndefOr[String] = js.undefined
   
@@ -41,15 +41,15 @@ object Options {
   
   extension [Self <: Options](x: Self) {
     
-    inline def setAfterDeselect(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "afterDeselect", js.Any.fromFunction1(value))
+    inline def setAfterDeselect(value: /* repeated */ Any => Unit): Self = StObject.set(x, "afterDeselect", js.Any.fromFunction1(value))
     
     inline def setAfterDeselectUndefined: Self = StObject.set(x, "afterDeselect", js.undefined)
     
-    inline def setAfterInit(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "afterInit", js.Any.fromFunction1(value))
+    inline def setAfterInit(value: /* repeated */ Any => Unit): Self = StObject.set(x, "afterInit", js.Any.fromFunction1(value))
     
     inline def setAfterInitUndefined: Self = StObject.set(x, "afterInit", js.undefined)
     
-    inline def setAfterSelect(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "afterSelect", js.Any.fromFunction1(value))
+    inline def setAfterSelect(value: /* repeated */ Any => Unit): Self = StObject.set(x, "afterSelect", js.Any.fromFunction1(value))
     
     inline def setAfterSelectUndefined: Self = StObject.set(x, "afterSelect", js.undefined)
     

@@ -25,8 +25,8 @@ trait TextureAssetTask
     */
   def onError(task: TextureAssetTask): Unit = js.native
   def onError(task: TextureAssetTask, message: String): Unit = js.native
-  def onError(task: TextureAssetTask, message: String, exception: js.Any): Unit = js.native
-  def onError(task: TextureAssetTask, message: Unit, exception: js.Any): Unit = js.native
+  def onError(task: TextureAssetTask, message: String, exception: Any): Unit = js.native
+  def onError(task: TextureAssetTask, message: Unit, exception: Any): Unit = js.native
   
   /**
     * Callback called when the task is successful

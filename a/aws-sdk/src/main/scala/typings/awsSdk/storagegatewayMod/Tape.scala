@@ -11,10 +11,10 @@ trait Tape extends StObject {
   /**
     * The date that the tape enters a custom tape pool.
     */
-  var PoolEntryDate: js.UndefOr[Time] = js.undefined
+  var PoolEntryDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The ID of the pool that contains tapes that will be archived. The tapes in this pool are archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool. Valid Values: GLACIER | DEEP_ARCHIVE 
+    * The ID of the pool that contains tapes that will be archived. The tapes in this pool are archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool.
     */
   var PoolId: js.UndefOr[typings.awsSdk.storagegatewayMod.PoolId] = js.undefined
   
@@ -26,7 +26,7 @@ trait Tape extends StObject {
   /**
     * The date that the tape is first archived with tape retention lock enabled.
     */
-  var RetentionStartDate: js.UndefOr[Time] = js.undefined
+  var RetentionStartDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the virtual tape.
@@ -41,7 +41,7 @@ trait Tape extends StObject {
   /**
     * The date the virtual tape was created.
     */
-  var TapeCreatedDate: js.UndefOr[Time] = js.undefined
+  var TapeCreatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The size, in bytes, of the virtual tape capacity.
@@ -81,7 +81,7 @@ object Tape {
     
     inline def setKMSKeyUndefined: Self = StObject.set(x, "KMSKey", js.undefined)
     
-    inline def setPoolEntryDate(value: Time): Self = StObject.set(x, "PoolEntryDate", value.asInstanceOf[js.Any])
+    inline def setPoolEntryDate(value: js.Date): Self = StObject.set(x, "PoolEntryDate", value.asInstanceOf[js.Any])
     
     inline def setPoolEntryDateUndefined: Self = StObject.set(x, "PoolEntryDate", js.undefined)
     
@@ -93,7 +93,7 @@ object Tape {
     
     inline def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
     
-    inline def setRetentionStartDate(value: Time): Self = StObject.set(x, "RetentionStartDate", value.asInstanceOf[js.Any])
+    inline def setRetentionStartDate(value: js.Date): Self = StObject.set(x, "RetentionStartDate", value.asInstanceOf[js.Any])
     
     inline def setRetentionStartDateUndefined: Self = StObject.set(x, "RetentionStartDate", js.undefined)
     
@@ -105,7 +105,7 @@ object Tape {
     
     inline def setTapeBarcodeUndefined: Self = StObject.set(x, "TapeBarcode", js.undefined)
     
-    inline def setTapeCreatedDate(value: Time): Self = StObject.set(x, "TapeCreatedDate", value.asInstanceOf[js.Any])
+    inline def setTapeCreatedDate(value: js.Date): Self = StObject.set(x, "TapeCreatedDate", value.asInstanceOf[js.Any])
     
     inline def setTapeCreatedDateUndefined: Self = StObject.set(x, "TapeCreatedDate", js.undefined)
     

@@ -11,7 +11,7 @@ object OwlCarousel {
   @js.native
   trait HandlerCallback extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -408,7 +408,7 @@ object OwlCarousel {
       
       inline def setNavClassUndefined: Self = StObject.set(x, "navClass", js.undefined)
       
-      inline def setNavClassVarargs(value: String*): Self = StObject.set(x, "navClass", js.Array(value :_*))
+      inline def setNavClassVarargs(value: String*): Self = StObject.set(x, "navClass", js.Array(value*))
       
       inline def setNavContainer(value: String | Boolean): Self = StObject.set(x, "navContainer", value.asInstanceOf[js.Any])
       
@@ -430,7 +430,7 @@ object OwlCarousel {
       
       inline def setNavTextUndefined: Self = StObject.set(x, "navText", js.undefined)
       
-      inline def setNavTextVarargs(value: String*): Self = StObject.set(x, "navText", js.Array(value :_*))
+      inline def setNavTextVarargs(value: String*): Self = StObject.set(x, "navText", js.Array(value*))
       
       inline def setNavUndefined: Self = StObject.set(x, "nav", js.undefined)
       

@@ -10,10 +10,10 @@ Returns an object with the (non-glob) base path and the actual pattern.
 | ------------------ | :-------------: |
 | Full name          | glob-base |
 | Keywords           | base, directory, dirname, expression, glob, parent, path, pattern, regex, regular, root |
-| # releases         | 0 |
-| # dependents       | 84 |
-| # downloads        | 201727360 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5678048E7 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/glob-base)

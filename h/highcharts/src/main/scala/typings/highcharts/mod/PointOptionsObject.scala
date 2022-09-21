@@ -89,7 +89,7 @@ trait PointOptionsObject extends StObject {
     * customized functionality. Here you can add additional data for your own
     * event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
   
   /**
     * (Highcharts) A name for the dash style to use for the column or bar.
@@ -194,7 +194,8 @@ trait PointOptionsObject extends StObject {
   var labelrank: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts) The sequential index of the data point in the legend.
+    * (Highcharts, Highmaps) The sequential index of the data point in the
+    * legend.
     */
   var legendIndex: js.UndefOr[Double] = js.undefined
   
@@ -232,8 +233,7 @@ trait PointOptionsObject extends StObject {
   var medianDashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
-    * (Highcharts) The name of the point as shown in the legend, tooltip,
-    * dataLabels, etc.
+    * (Highcharts) The name decides the text for a word.
     */
   var name: js.UndefOr[Double | String] = js.undefined
   
@@ -298,7 +298,7 @@ trait PointOptionsObject extends StObject {
   var sets: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * (Highcharts) Whether to display a slice offset from the center.
+    * (Highcharts, Highmaps) Whether to display a slice offset from the center.
     */
   var sliced: js.UndefOr[Boolean] = js.undefined
   
@@ -435,7 +435,7 @@ object PointOptionsObject {
     
     inline def setConnectorWidthUndefined: Self = StObject.set(x, "connectorWidth", js.undefined)
     
-    inline def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
@@ -453,7 +453,7 @@ object PointOptionsObject {
     
     inline def setDataLabelsVarargs(
       value: (DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject)*
-    ): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    ): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -579,7 +579,7 @@ object PointOptionsObject {
     
     inline def setSetsUndefined: Self = StObject.set(x, "sets", js.undefined)
     
-    inline def setSetsVarargs(value: String*): Self = StObject.set(x, "sets", js.Array(value :_*))
+    inline def setSetsVarargs(value: String*): Self = StObject.set(x, "sets", js.Array(value*))
     
     inline def setSliced(value: Boolean): Self = StObject.set(x, "sliced", value.asInstanceOf[js.Any])
     

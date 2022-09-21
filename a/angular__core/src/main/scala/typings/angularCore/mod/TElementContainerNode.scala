@@ -11,10 +11,10 @@ trait TElementContainerNode
      with TNodeWithLocalRefs {
   
   @JSName("child")
-  var child_TElementContainerNode: ɵangularPackagesCoreCoreBh | TTextNode | TContainerNode | TElementContainerNode | TProjectionNode | Null
+  var child_TElementContainerNode: TElementNode | TTextNode | TContainerNode | TElementContainerNode | TProjectionNode | Null
   
   @JSName("parent")
-  var parent_TElementContainerNode: ɵangularPackagesCoreCoreBh | TElementContainerNode | Null
+  var parent_TElementContainerNode: TElementNode | TElementContainerNode | Null
   
   @JSName("projection")
   var projection_TElementContainerNode: Null
@@ -37,7 +37,7 @@ object TElementContainerNode {
     styleBindings: TStylingRange,
     tViews: Null,
     `type`: TNodeType,
-    value: js.Any
+    value: Any
   ): TElementContainerNode = {
     val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], tViews = tViews.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], attrs = null, child = null, classes = null, classesWithoutHost = null, inputs = null, insertBeforeIndex = null, localNames = null, mergedAttrs = null, next = null, outputs = null, parent = null, projectionNext = null, propertyBindings = null, styles = null, stylesWithoutHost = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -46,13 +46,11 @@ object TElementContainerNode {
   
   extension [Self <: TElementContainerNode](x: Self) {
     
-    inline def setChild(
-      value: ɵangularPackagesCoreCoreBh | TTextNode | TContainerNode | TElementContainerNode | TProjectionNode
-    ): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
+    inline def setChild(value: TElementNode | TTextNode | TContainerNode | TElementContainerNode | TProjectionNode): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     
     inline def setChildNull: Self = StObject.set(x, "child", null)
     
-    inline def setParent(value: ɵangularPackagesCoreCoreBh | TElementContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: TElementNode | TElementContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setParentNull: Self = StObject.set(x, "parent", null)
     

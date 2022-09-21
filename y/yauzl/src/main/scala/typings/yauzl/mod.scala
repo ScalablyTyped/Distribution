@@ -1,11 +1,9 @@
 package typings.yauzl
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
 import typings.node.streamMod.Readable
-import typings.std.Date
-import typings.std.Error
 import typings.yauzl.anon.Data
 import typings.yauzl.anon.End
 import org.scalablytyped.runtime.StObject
@@ -20,7 +18,7 @@ object mod {
   
   @JSImport("yauzl", "Entry")
   @js.native
-  class Entry () extends StObject {
+  open class Entry () extends StObject {
     
     var comment: String = js.native
     
@@ -44,7 +42,7 @@ object mod {
     
     var generalPurposeBitFlag: Double = js.native
     
-    def getLastModDate(): Date = js.native
+    def getLastModDate(): js.Date = js.native
     
     var internalFileAttributes: Double = js.native
     
@@ -72,7 +70,7 @@ object mod {
     
     def _readStreamForRange(start: Double, end: Double): Unit = js.native
     
-    def close(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def close(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
     
     def createReadStream(options: End): Unit = js.native
     
@@ -81,13 +79,13 @@ object mod {
       offset: Double,
       length: Double,
       position: Double,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.Error | Null, Unit]
     ): Unit = js.native
   }
   
   @JSImport("yauzl", "ZipFile")
   @js.native
-  class ZipFile protected () extends EventEmitter {
+  open class ZipFile protected () extends EventEmitter {
     def this(
       reader: RandomAccessReader,
       centralDirectoryOffset: Double,
@@ -120,14 +118,11 @@ object mod {
     
     var lazyEntries: Boolean = js.native
     
-    def openReadStream(
-      entry: Entry,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* stream */ js.UndefOr[Readable], Unit]
-    ): Unit = js.native
+    def openReadStream(entry: Entry, callback: js.Function2[/* err */ js.Error | Null, /* stream */ Readable, Unit]): Unit = js.native
     def openReadStream(
       entry: Entry,
       options: ZipFileOptions,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* stream */ js.UndefOr[Readable], Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* stream */ Readable, Unit]
     ): Unit = js.native
     
     def readEntry(): Unit = js.native
@@ -137,54 +132,45 @@ object mod {
     var validateEntrySizes: Boolean = js.native
   }
   
-  inline def dosDateTimeToDate(date: Double, time: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("dosDateTimeToDate")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def dosDateTimeToDate(date: Double, time: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("dosDateTimeToDate")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
   inline def fromBuffer(buffer: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def fromBuffer(
-    buffer: Buffer,
-    callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromBuffer(buffer: Buffer, callback: js.Function2[/* err */ js.Error | Null, /* zipfile */ ZipFile, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def fromBuffer(buffer: Buffer, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def fromBuffer(
     buffer: Buffer,
     options: Options,
-    callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
+    callback: js.Function2[/* err */ js.Error | Null, /* zipfile */ ZipFile, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def fromFd(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def fromFd(
-    fd: Double,
-    callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromFd(fd: Double, callback: js.Function2[/* err */ js.Error | Null, /* zipfile */ ZipFile, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def fromFd(fd: Double, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def fromFd(
     fd: Double,
     options: Options,
-    callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
+    callback: js.Function2[/* err */ js.Error | Null, /* zipfile */ ZipFile, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def fromRandomAccessReader(
     reader: RandomAccessReader,
     totalSize: Double,
-    callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
+    callback: js.Function2[/* err */ js.Error | Null, /* zipfile */ ZipFile, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandomAccessReader")(reader.asInstanceOf[js.Any], totalSize.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def fromRandomAccessReader(
     reader: RandomAccessReader,
     totalSize: Double,
     options: Options,
-    callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
+    callback: js.Function2[/* err */ js.Error | Null, /* zipfile */ ZipFile, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandomAccessReader")(reader.asInstanceOf[js.Any], totalSize.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def open(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def open(
-    path: String,
-    callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def open(path: String, callback: js.Function2[/* err */ js.Error | Null, /* zipfile */ ZipFile, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def open(path: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def open(
     path: String,
     options: Options,
-    callback: js.Function2[/* err */ js.UndefOr[Error], /* zipfile */ js.UndefOr[ZipFile], Unit]
+    callback: js.Function2[/* err */ js.Error | Null, /* zipfile */ ZipFile, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def validateFileName(fileName: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validateFileName")(fileName.asInstanceOf[js.Any]).asInstanceOf[String | Null]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("breeze", "ValidationOptions")
 @js.native
-class ValidationOptions ()
+open class ValidationOptions ()
   extends StObject
      with typings.breeze.breeze.ValidationOptions {
   def this(config: ValidationOptionsConfiguration) = this()

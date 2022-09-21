@@ -14,7 +14,7 @@ trait ASPxClientFinancialIndicatorPoint
   /**
     * Gets the argument of the financial indicator's point.
     */
-  var argument: js.Any
+  var argument: Any
   
   /**
     * Gets the financial indicator that owns the current financial indicator point.
@@ -29,7 +29,7 @@ trait ASPxClientFinancialIndicatorPoint
 object ASPxClientFinancialIndicatorPoint {
   
   inline def apply(
-    argument: js.Any,
+    argument: Any,
     chart: ASPxClientWebChart,
     financialIndicator: ASPxClientFinancialIndicator,
     valueLevel: String
@@ -40,7 +40,7 @@ object ASPxClientFinancialIndicatorPoint {
   
   extension [Self <: ASPxClientFinancialIndicatorPoint](x: Self) {
     
-    inline def setArgument(value: js.Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
     inline def setFinancialIndicator(value: ASPxClientFinancialIndicator): Self = StObject.set(x, "financialIndicator", value.asInstanceOf[js.Any])
     

@@ -31,11 +31,11 @@ trait Font extends StObject {
   
   var Name: String
   
-  var OutlineFont: js.Any
+  var OutlineFont: Any
   
-  val Parent: js.Any
+  val Parent: Any
   
-  var Shadow: js.Any
+  var Shadow: Any
   
   var Size: Double
   
@@ -66,9 +66,9 @@ object Font {
     FontStyle: Regular | Italic | Bold | (`Bold Italic`),
     Italic: Boolean,
     Name: String,
-    OutlineFont: js.Any,
-    Parent: js.Any,
-    Shadow: js.Any,
+    OutlineFont: Any,
+    Parent: Any,
+    Shadow: Any,
     Size: Double,
     Strikethrough: Boolean,
     Subscript: Boolean,
@@ -105,11 +105,11 @@ object Font {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setOutlineFont(value: js.Any): Self = StObject.set(x, "OutlineFont", value.asInstanceOf[js.Any])
+    inline def setOutlineFont(value: Any): Self = StObject.set(x, "OutlineFont", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setShadow(value: js.Any): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Any): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     
     inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     

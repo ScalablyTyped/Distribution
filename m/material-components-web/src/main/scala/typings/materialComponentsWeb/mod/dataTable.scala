@@ -1,7 +1,7 @@
 package typings.materialComponentsWeb.mod
 
+import typings.materialBase.Element
 import typings.materialDataTable.anon.PartialMDCDataTableAdapte
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +10,13 @@ object dataTable {
   
   @JSImport("material-components-web", "dataTable.MDCDataTable")
   @js.native
-  class MDCDataTable protected ()
+  open class MDCDataTable protected ()
     extends typings.materialDataTable.mod.MDCDataTable {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialDataTable.foundationMod.MDCDataTableFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -26,12 +26,12 @@ object dataTable {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialDataTable.componentMod.MDCDataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialDataTable.componentMod.MDCDataTable]
+    inline def attachTo(root: typings.std.Element): typings.materialDataTable.componentMod.MDCDataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialDataTable.componentMod.MDCDataTable]
   }
   
   @JSImport("material-components-web", "dataTable.MDCDataTableFoundation")
   @js.native
-  class MDCDataTableFoundation ()
+  open class MDCDataTableFoundation ()
     extends typings.materialDataTable.mod.MDCDataTableFoundation {
     def this(adapter: PartialMDCDataTableAdapte) = this()
   }
@@ -213,6 +213,11 @@ object dataTable {
     @JSImport("material-components-web", "dataTable.events")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("material-components-web", "dataTable.events.ROW_CLICK")
+    @js.native
+    def ROW_CLICK: String = js.native
+    inline def ROW_CLICK_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROW_CLICK")(x.asInstanceOf[js.Any])
     
     @JSImport("material-components-web", "dataTable.events.ROW_SELECTION_CHANGED")
     @js.native

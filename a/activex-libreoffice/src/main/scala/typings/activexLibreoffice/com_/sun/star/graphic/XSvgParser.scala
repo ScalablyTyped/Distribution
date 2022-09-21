@@ -29,7 +29,7 @@ object XSvgParser {
   inline def apply(
     acquire: () => Unit,
     getDecomposition: (XInputStream, String) => SafeArray[XPrimitive2D],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSvgParser = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDecomposition = js.Any.fromFunction2(getDecomposition), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

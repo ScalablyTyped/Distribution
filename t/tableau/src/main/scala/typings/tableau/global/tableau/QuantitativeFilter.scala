@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.QuantitativeFilter")
 @js.native
-class QuantitativeFilter ()
+open class QuantitativeFilter ()
   extends StObject
      with typings.tableau.tableau.QuantitativeFilter {
   

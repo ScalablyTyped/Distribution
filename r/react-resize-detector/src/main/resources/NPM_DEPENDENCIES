@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-resize-detector" : "7.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-resize-detector" : "7.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

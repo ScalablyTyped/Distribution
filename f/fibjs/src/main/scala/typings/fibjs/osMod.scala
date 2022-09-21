@@ -1,6 +1,5 @@
 package typings.fibjs
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object osMod {
   
   @JSImport("os", "Service")
   @js.native
-  class Service ()
+  open class Service ()
     extends StObject
        with ClassService
   
@@ -30,9 +29,9 @@ object osMod {
   
   inline def cpuNumbers(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuNumbers")().asInstanceOf[Double]
   
-  inline def cpus(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cpus")().asInstanceOf[js.Array[js.Any]]
+  inline def cpus(): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cpus")().asInstanceOf[js.Array[Any]]
   
-  inline def dateAdd(d: Date, num: Double, part: String): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("dateAdd")(d.asInstanceOf[js.Any], num.asInstanceOf[js.Any], part.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def dateAdd(d: js.Date, num: Double, part: String): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("dateAdd")(d.asInstanceOf[js.Any], num.asInstanceOf[js.Any], part.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
   inline def endianness(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("endianness")().asInstanceOf[String]
   
@@ -46,7 +45,7 @@ object osMod {
   
   inline def hostname(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hostname")().asInstanceOf[String]
   
-  inline def loadavg(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadavg")().asInstanceOf[js.Array[js.Any]]
+  inline def loadavg(): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadavg")().asInstanceOf[js.Array[Any]]
   
   inline def memoryUsage(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryUsage")().asInstanceOf[js.Object]
   
@@ -56,12 +55,12 @@ object osMod {
   
   inline def platform(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("platform")().asInstanceOf[String]
   
-  inline def printerInfo(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("printerInfo")().asInstanceOf[js.Array[js.Any]]
+  inline def printerInfo(): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("printerInfo")().asInstanceOf[js.Array[Any]]
   
   inline def release(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("release")().asInstanceOf[String]
   
-  inline def time(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("time")().asInstanceOf[Date]
-  inline def time(tmString: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(tmString.asInstanceOf[js.Any]).asInstanceOf[Date]
+  inline def time(): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("time")().asInstanceOf[js.Date]
+  inline def time(tmString: String): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(tmString.asInstanceOf[js.Any]).asInstanceOf[js.Date]
   
   @JSImport("os", "timezone")
   @js.native

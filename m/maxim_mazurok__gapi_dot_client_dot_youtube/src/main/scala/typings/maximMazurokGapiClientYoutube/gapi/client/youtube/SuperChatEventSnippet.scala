@@ -15,7 +15,7 @@ trait SuperChatEventSnippet extends StObject {
   /** The text contents of the comment left by the user. */
   var commentText: js.UndefOr[String] = js.undefined
   
-  /** The date and time when the event occurred. The value is specified in ISO 8601 format. */
+  /** The date and time when the event occurred. */
   var createdAt: js.UndefOr[String] = js.undefined
   
   /** The currency in which the purchase was made. ISO 4217. */

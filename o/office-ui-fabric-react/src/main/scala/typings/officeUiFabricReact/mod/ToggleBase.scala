@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "ToggleBase")
 @js.native
-class ToggleBase protected ()
+open class ToggleBase protected ()
   extends typings.officeUiFabricReact.libToggleMod.ToggleBase {
   def this(props: IToggleProps) = this()
 }

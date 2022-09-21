@@ -2,7 +2,7 @@ package typings.ethjsSigner
 
 import typings.ethjsSigner.ethjsSignerBooleans.`false`
 import typings.ethjsSigner.ethjsSignerBooleans.`true`
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,5 +20,5 @@ object mod {
   
   inline def sign_false(transaction: js.Object, privateKey: String, toObject: `false`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(transaction.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], toObject.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def sign_true(transaction: js.Object, privateKey: String, toObject: `true`): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(transaction.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], toObject.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def sign_true(transaction: js.Object, privateKey: String, toObject: `true`): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(transaction.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], toObject.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
 }

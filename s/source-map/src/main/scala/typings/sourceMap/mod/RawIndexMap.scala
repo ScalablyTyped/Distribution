@@ -23,7 +23,7 @@ object RawIndexMap {
     
     inline def setSections(value: js.Array[RawSection]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    inline def setSectionsVarargs(value: RawSection*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: RawSection*): Self = StObject.set(x, "sections", js.Array(value*))
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

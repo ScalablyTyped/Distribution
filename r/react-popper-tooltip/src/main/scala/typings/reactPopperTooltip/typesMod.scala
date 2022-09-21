@@ -1,11 +1,9 @@
 package typings.reactPopperTooltip
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.popperjsCore.enumsMod.Placement
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
-import typings.reactPopper.mod.Modifier
 import typings.reactPopper.mod.PopperArrowProps
 import typings.reactPopperTooltip.anon.Current
 import typings.std.Element
@@ -29,7 +27,7 @@ object typesMod {
   
   trait GetArrowPropsArg
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
@@ -50,7 +48,7 @@ object typesMod {
   
   trait GetTooltipPropsArg
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var onMouseEnter: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
@@ -83,7 +81,7 @@ object typesMod {
   
   trait GetTriggerPropsArg
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var onBlur: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
@@ -157,7 +155,7 @@ object typesMod {
     def getTooltipProps(): GetTooltipPropsArg = js.native
     def getTooltipProps(arg: GetTooltipPropsArg): GetTooltipPropsArg = js.native
     
-    var placement: Placement = js.native
+    var placement: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.Placement */ Any = js.native
     
     var tooltipRef: Ref = js.native
   }
@@ -168,41 +166,41 @@ object typesMod {
     
     def clearScheduled(): Unit
     
-    var closeOnReferenceHidden: Boolean
+    var closeOnOutOfBoundaries: Boolean
     
     def hideTooltip(): Unit
     
     var innerRef: Ref
     
-    var isReferenceHidden: js.UndefOr[Boolean] = js.undefined
-    
     var mutationObserverOptions: MutationObserverInit
     
-    var placement: Placement
+    var outOfBoundaries: Boolean | Null
+    
+    var placement: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.Placement */ Any
+    
+    def scheduleUpdate(): Unit
     
     var style: CSSProperties
     
     def tooltip(arg: TooltipArg): ReactNode
     
     var trigger: Trigger
-    
-    def update(): Unit
   }
   object TooltipProps {
     
     inline def apply(
       arrowProps: PopperArrowProps,
       clearScheduled: () => Unit,
-      closeOnReferenceHidden: Boolean,
+      closeOnOutOfBoundaries: Boolean,
       hideTooltip: () => Unit,
       mutationObserverOptions: MutationObserverInit,
-      placement: Placement,
+      placement: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.Placement */ Any,
+      scheduleUpdate: () => Unit,
       style: CSSProperties,
       tooltip: TooltipArg => ReactNode,
-      trigger: Trigger,
-      update: () => Unit
+      trigger: Trigger
     ): TooltipProps = {
-      val __obj = js.Dynamic.literal(arrowProps = arrowProps.asInstanceOf[js.Any], clearScheduled = js.Any.fromFunction0(clearScheduled), closeOnReferenceHidden = closeOnReferenceHidden.asInstanceOf[js.Any], hideTooltip = js.Any.fromFunction0(hideTooltip), mutationObserverOptions = mutationObserverOptions.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], tooltip = js.Any.fromFunction1(tooltip), trigger = trigger.asInstanceOf[js.Any], update = js.Any.fromFunction0(update), innerRef = null)
+      val __obj = js.Dynamic.literal(arrowProps = arrowProps.asInstanceOf[js.Any], clearScheduled = js.Any.fromFunction0(clearScheduled), closeOnOutOfBoundaries = closeOnOutOfBoundaries.asInstanceOf[js.Any], hideTooltip = js.Any.fromFunction0(hideTooltip), mutationObserverOptions = mutationObserverOptions.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], scheduleUpdate = js.Any.fromFunction0(scheduleUpdate), style = style.asInstanceOf[js.Any], tooltip = js.Any.fromFunction1(tooltip), trigger = trigger.asInstanceOf[js.Any], innerRef = null, outOfBoundaries = null)
       __obj.asInstanceOf[TooltipProps]
     }
     
@@ -212,7 +210,7 @@ object typesMod {
       
       inline def setClearScheduled(value: () => Unit): Self = StObject.set(x, "clearScheduled", js.Any.fromFunction0(value))
       
-      inline def setCloseOnReferenceHidden(value: Boolean): Self = StObject.set(x, "closeOnReferenceHidden", value.asInstanceOf[js.Any])
+      inline def setCloseOnOutOfBoundaries(value: Boolean): Self = StObject.set(x, "closeOnOutOfBoundaries", value.asInstanceOf[js.Any])
       
       inline def setHideTooltip(value: () => Unit): Self = StObject.set(x, "hideTooltip", js.Any.fromFunction0(value))
       
@@ -222,13 +220,17 @@ object typesMod {
       
       inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
-      inline def setIsReferenceHidden(value: Boolean): Self = StObject.set(x, "isReferenceHidden", value.asInstanceOf[js.Any])
-      
-      inline def setIsReferenceHiddenUndefined: Self = StObject.set(x, "isReferenceHidden", js.undefined)
-      
       inline def setMutationObserverOptions(value: MutationObserverInit): Self = StObject.set(x, "mutationObserverOptions", value.asInstanceOf[js.Any])
       
-      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setOutOfBoundaries(value: Boolean): Self = StObject.set(x, "outOfBoundaries", value.asInstanceOf[js.Any])
+      
+      inline def setOutOfBoundariesNull: Self = StObject.set(x, "outOfBoundaries", null)
+      
+      inline def setPlacement(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.Placement */ Any
+      ): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      
+      inline def setScheduleUpdate(value: () => Unit): Self = StObject.set(x, "scheduleUpdate", js.Any.fromFunction0(value))
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -236,9 +238,7 @@ object typesMod {
       
       inline def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      inline def setTriggerVarargs(value: TriggerTypes*): Self = StObject.set(x, "trigger", js.Array(value :_*))
-      
-      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setTriggerVarargs(value: TriggerTypes*): Self = StObject.set(x, "trigger", js.Array(value*))
     }
   }
   
@@ -250,10 +250,10 @@ object typesMod {
     def children(arg: ChildrenArg): ReactNode
     
     /**
-      * Whether to close the tooltip when its trigger is out of boundary
+      * Whether to close the tooltip when it's trigger is out of the boundary
       * @default true
       */
-    var closeOnReferenceHidden: Boolean
+    var closeOnOutOfBoundaries: Boolean
     
     /**
       * Whether tooltip is shown by default
@@ -292,14 +292,15 @@ object typesMod {
     /**
       * Modifiers passed directly to the underlying popper.js instance
       * For more information, refer to Popper.js’ modifier docs:
-      * @link https://popper.js.org/docs/v2/modifiers
-      * @default []
+      * @link https://popper.js.org/popper-documentation.html#modifiers
       */
-    var modifiers: js.Array[Modifier[js.Any, js.Object]]
+    var modifiers: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.Modifiers */ Any
+      ] = js.undefined
     
     /**
       * Options to MutationObserver, used internally for updating
-      * tooltip position based on its DOM changes
+      * tooltip position based on trigger DOM changes
       * @default  { childList: true, subtree: true }
       */
     var mutationObserverOptions: MutationObserverInit
@@ -314,7 +315,7 @@ object typesMod {
       * Tooltip placement w.r.t. trigger
       *  @default right
       */
-    var placement: Placement
+    var placement: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.Placement */ Any
     
     /**
       * Element to be used as portal container
@@ -348,21 +349,20 @@ object typesMod {
     
     inline def apply(
       children: ChildrenArg => ReactNode,
-      closeOnReferenceHidden: Boolean,
+      closeOnOutOfBoundaries: Boolean,
       defaultTooltipShown: Boolean,
       delayHide: Double,
       delayShow: Double,
       followCursor: Boolean,
-      modifiers: js.Array[Modifier[js.Any, js.Object]],
       mutationObserverOptions: MutationObserverInit,
       onVisibilityChange: Boolean => Unit,
-      placement: Placement,
+      placement: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.Placement */ Any,
       portalContainer: HTMLElement,
       tooltip: TooltipArg => ReactNode,
       trigger: Trigger,
       usePortal: Boolean
     ): TooltipTriggerProps = {
-      val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), closeOnReferenceHidden = closeOnReferenceHidden.asInstanceOf[js.Any], defaultTooltipShown = defaultTooltipShown.asInstanceOf[js.Any], delayHide = delayHide.asInstanceOf[js.Any], delayShow = delayShow.asInstanceOf[js.Any], followCursor = followCursor.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], mutationObserverOptions = mutationObserverOptions.asInstanceOf[js.Any], onVisibilityChange = js.Any.fromFunction1(onVisibilityChange), placement = placement.asInstanceOf[js.Any], portalContainer = portalContainer.asInstanceOf[js.Any], tooltip = js.Any.fromFunction1(tooltip), trigger = trigger.asInstanceOf[js.Any], usePortal = usePortal.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), closeOnOutOfBoundaries = closeOnOutOfBoundaries.asInstanceOf[js.Any], defaultTooltipShown = defaultTooltipShown.asInstanceOf[js.Any], delayHide = delayHide.asInstanceOf[js.Any], delayShow = delayShow.asInstanceOf[js.Any], followCursor = followCursor.asInstanceOf[js.Any], mutationObserverOptions = mutationObserverOptions.asInstanceOf[js.Any], onVisibilityChange = js.Any.fromFunction1(onVisibilityChange), placement = placement.asInstanceOf[js.Any], portalContainer = portalContainer.asInstanceOf[js.Any], tooltip = js.Any.fromFunction1(tooltip), trigger = trigger.asInstanceOf[js.Any], usePortal = usePortal.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipTriggerProps]
     }
     
@@ -370,7 +370,7 @@ object typesMod {
       
       inline def setChildren(value: ChildrenArg => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      inline def setCloseOnReferenceHidden(value: Boolean): Self = StObject.set(x, "closeOnReferenceHidden", value.asInstanceOf[js.Any])
+      inline def setCloseOnOutOfBoundaries(value: Boolean): Self = StObject.set(x, "closeOnOutOfBoundaries", value.asInstanceOf[js.Any])
       
       inline def setDefaultTooltipShown(value: Boolean): Self = StObject.set(x, "defaultTooltipShown", value.asInstanceOf[js.Any])
       
@@ -396,15 +396,19 @@ object typesMod {
       
       inline def setGetTriggerRefUndefined: Self = StObject.set(x, "getTriggerRef", js.undefined)
       
-      inline def setModifiers(value: js.Array[Modifier[js.Any, js.Object]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.Modifiers */ Any
+      ): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
-      inline def setModifiersVarargs(value: (Modifier[js.Any, js.Object])*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+      inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
       
       inline def setMutationObserverOptions(value: MutationObserverInit): Self = StObject.set(x, "mutationObserverOptions", value.asInstanceOf[js.Any])
       
       inline def setOnVisibilityChange(value: Boolean => Unit): Self = StObject.set(x, "onVisibilityChange", js.Any.fromFunction1(value))
       
-      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.Placement */ Any
+      ): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setPortalContainer(value: HTMLElement): Self = StObject.set(x, "portalContainer", value.asInstanceOf[js.Any])
       
@@ -416,7 +420,7 @@ object typesMod {
       
       inline def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      inline def setTriggerVarargs(value: TriggerTypes*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+      inline def setTriggerVarargs(value: TriggerTypes*): Self = StObject.set(x, "trigger", js.Array(value*))
       
       inline def setUsePortal(value: Boolean): Self = StObject.set(x, "usePortal", value.asInstanceOf[js.Any])
     }

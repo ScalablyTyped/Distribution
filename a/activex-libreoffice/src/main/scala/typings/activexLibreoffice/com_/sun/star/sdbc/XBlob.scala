@@ -85,7 +85,7 @@ object XBlob {
     length: () => Double,
     position: (SeqEquiv[Double], Double) => Double,
     positionOfBlob: (XBlob, Double) => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XBlob = {
     val __obj = js.Dynamic.literal(BinaryStream = BinaryStream.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getBinaryStream = js.Any.fromFunction0(getBinaryStream), getBytes = js.Any.fromFunction2(getBytes), length = js.Any.fromFunction0(length), position = js.Any.fromFunction2(position), positionOfBlob = js.Any.fromFunction2(positionOfBlob), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

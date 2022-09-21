@@ -7,72 +7,72 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestedServiceQuotaChange extends StObject {
   
   /**
-    * The case Id for the service quota increase request.
+    * The case ID.
     */
   var CaseId: js.UndefOr[CustomerServiceEngagementId] = js.undefined
   
   /**
-    * The date and time when the service quota increase request was received and the case Id was created. 
+    * The date and time when the quota increase request was received and the case ID was created.
     */
-  var Created: js.UndefOr[DateTime] = js.undefined
+  var Created: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * New increased value for the service quota.
+    * The new, increased value for the quota.
     */
   var DesiredValue: js.UndefOr[QuotaValue] = js.undefined
   
   /**
-    * Identifies if the quota is global.
+    * Indicates whether the quota is global.
     */
   var GlobalQuota: js.UndefOr[typings.awsSdk.servicequotasMod.GlobalQuota] = js.undefined
   
   /**
-    * The unique identifier of a requested service quota change.
+    * The unique identifier.
     */
   var Id: js.UndefOr[RequestId] = js.undefined
   
   /**
-    * The date and time of the most recent change in the service quota increase request.
+    * The date and time of the most recent change.
     */
-  var LastUpdated: js.UndefOr[DateTime] = js.undefined
+  var LastUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the service quota.
+    * The Amazon Resource Name (ARN) of the quota.
     */
   var QuotaArn: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaArn] = js.undefined
   
   /**
-    * Specifies the service quota that you want to use.
+    * The quota identifier.
     */
   var QuotaCode: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaCode] = js.undefined
   
   /**
-    * Name of the service quota.
+    * The quota name.
     */
   var QuotaName: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaName] = js.undefined
   
   /**
-    * The IAM identity who submitted the service quota increase request.
+    * The IAM identity of the requester.
     */
   var Requester: js.UndefOr[typings.awsSdk.servicequotasMod.Requester] = js.undefined
   
   /**
-    * Specifies the service that you want to use.
+    * The service identifier.
     */
   var ServiceCode: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceCode] = js.undefined
   
   /**
-    * The name of the AWS service specified in the increase request. 
+    * The service name.
     */
   var ServiceName: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceName] = js.undefined
   
   /**
-    * State of the service quota increase request.
+    * The state of the quota increase request.
     */
   var Status: js.UndefOr[RequestStatus] = js.undefined
   
   /**
-    * Specifies the unit used for the quota.
+    * The unit of measurement.
     */
   var Unit: js.UndefOr[QuotaUnit] = js.undefined
 }
@@ -89,7 +89,7 @@ object RequestedServiceQuotaChange {
     
     inline def setCaseIdUndefined: Self = StObject.set(x, "CaseId", js.undefined)
     
-    inline def setCreated(value: DateTime): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
     
@@ -105,7 +105,7 @@ object RequestedServiceQuotaChange {
     
     inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    inline def setLastUpdated(value: DateTime): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: js.Date): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     

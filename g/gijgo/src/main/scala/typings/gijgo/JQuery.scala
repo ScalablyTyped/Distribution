@@ -39,9 +39,9 @@ trait JQuery extends StObject {
   
   def editor(settings: EditorSettings): Editor = js.native
   
-  def grid(settings: GridSettings[js.Any]): Grid[js.Any, js.Any] = js.native
+  def grid(settings: GridSettings[Any]): Grid[Any, Any] = js.native
   @JSName("grid")
-  def grid_Entity[Entity](settings: GridSettings[Entity]): Grid[Entity, js.Any] = js.native
+  def grid_Entity[Entity](settings: GridSettings[Entity]): Grid[Entity, Any] = js.native
   @JSName("grid")
   def grid_EntityParams[Entity, Params](settings: GridSettings[Entity]): Grid[Entity, Params] = js.native
   

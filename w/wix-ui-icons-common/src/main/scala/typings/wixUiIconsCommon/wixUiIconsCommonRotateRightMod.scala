@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.rotateRightMod.RotateRightProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonRotateRightMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/RotateRight", JSImport.Default)
   @js.native
-  val default: SFC[RotateRightProps] = js.native
+  val default: FC[RotateRightProps] = js.native
   
-  type _To = SFC[RotateRightProps]
+  type _To = FC[RotateRightProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonRotateRightMod.foo` */
-  override def _to: SFC[RotateRightProps] = default
+  override def _to: FC[RotateRightProps] = default
 }

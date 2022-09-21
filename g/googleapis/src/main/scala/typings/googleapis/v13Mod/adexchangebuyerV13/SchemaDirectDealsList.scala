@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A direct deals feed lists Direct Deals the Ad Exchange buyer account has
-  * access to. This includes direct deals set up for the buyer account as well
-  * as its merged stream seats.
-  */
 trait SchemaDirectDealsList extends StObject {
   
   /**
@@ -19,7 +14,7 @@ trait SchemaDirectDealsList extends StObject {
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDirectDealsList {
   
@@ -34,9 +29,11 @@ object SchemaDirectDealsList {
     
     inline def setDirectDealsUndefined: Self = StObject.set(x, "directDeals", js.undefined)
     
-    inline def setDirectDealsVarargs(value: SchemaDirectDeal*): Self = StObject.set(x, "directDeals", js.Array(value :_*))
+    inline def setDirectDealsVarargs(value: SchemaDirectDeal*): Self = StObject.set(x, "directDeals", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

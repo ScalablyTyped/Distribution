@@ -1,6 +1,6 @@
 package typings.steamClient.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.steamClient.anon.Msg
 import typings.steamClient.steamClientBooleans.`false`
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("steam-client", "CMClient")
 @js.native
 // Default is TCP. UDP support is experimental
-class CMClient () extends EventEmitter {
+open class CMClient () extends EventEmitter {
   def this(protocol: EConnectionProtocol) = this()
   
   /**
@@ -92,7 +92,7 @@ class CMClient () extends EventEmitter {
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */
-  body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any
+  body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ Any
   ): Unit = js.native
   def send(
     /**
@@ -104,11 +104,11 @@ class CMClient () extends EventEmitter {
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */
-  body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any,
+  body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ Any,
     /**
     * If not falsy, then this message is a request, and callback shall be called with any response to it instead of 'message'/send. callback has the same arguments as 'message'/send.
     */
-  callback: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias steam-client.steam-client.SendMessage */ js.Object
+  callback: SendMessage
   ): Unit = js.native
   /**
     *
@@ -142,7 +142,7 @@ class CMClient () extends EventEmitter {
     /**
     * If not falsy, then this message is a request, and callback shall be called with any response to it instead of 'message'/send. callback has the same arguments as 'message'/send.
     */
-  callback: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias steam-client.steam-client.SendMessage */ js.Object
+  callback: SendMessage
   ): Unit = js.native
   /**
     *
@@ -163,7 +163,7 @@ class CMClient () extends EventEmitter {
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */
-  body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any,
+  body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ Any,
     /**
     * If not falsy, then this message is a request, and callback shall be called with any response to it instead of 'message'/send. callback has the same arguments as 'message'/send.
     */

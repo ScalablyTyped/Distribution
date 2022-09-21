@@ -9,7 +9,7 @@ trait ModelInputConfiguration extends StObject {
   /**
     *  Template for constructing the CSV input-data sent to SageMaker. At event-evaluation, the placeholders for variable-names in the template will be replaced with the variable values before being sent to SageMaker. 
     */
-  var csvInputTemplate: js.UndefOr[String] = js.undefined
+  var csvInputTemplate: js.UndefOr[modelInputTemplate] = js.undefined
   
   /**
     * The event type name.
@@ -24,7 +24,7 @@ trait ModelInputConfiguration extends StObject {
   /**
     *  Template for constructing the JSON input-data sent to SageMaker. At event-evaluation, the placeholders for variable names in the template will be replaced with the variable values before being sent to SageMaker. 
     */
-  var jsonInputTemplate: js.UndefOr[String] = js.undefined
+  var jsonInputTemplate: js.UndefOr[modelInputTemplate] = js.undefined
   
   /**
     * The event variables.
@@ -40,7 +40,7 @@ object ModelInputConfiguration {
   
   extension [Self <: ModelInputConfiguration](x: Self) {
     
-    inline def setCsvInputTemplate(value: String): Self = StObject.set(x, "csvInputTemplate", value.asInstanceOf[js.Any])
+    inline def setCsvInputTemplate(value: modelInputTemplate): Self = StObject.set(x, "csvInputTemplate", value.asInstanceOf[js.Any])
     
     inline def setCsvInputTemplateUndefined: Self = StObject.set(x, "csvInputTemplate", js.undefined)
     
@@ -52,7 +52,7 @@ object ModelInputConfiguration {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setJsonInputTemplate(value: String): Self = StObject.set(x, "jsonInputTemplate", value.asInstanceOf[js.Any])
+    inline def setJsonInputTemplate(value: modelInputTemplate): Self = StObject.set(x, "jsonInputTemplate", value.asInstanceOf[js.Any])
     
     inline def setJsonInputTemplateUndefined: Self = StObject.set(x, "jsonInputTemplate", js.undefined)
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for npm-packlist
 
-Typings are for version 1.1
+Typings are for version 3.0
 
 ## Library description:
 Get a list of the files to add from a folder into an npm package
@@ -10,10 +10,10 @@ Get a list of the files to add from a folder into an npm package
 | ------------------ | :-------------: |
 | Full name          | npm-packlist |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 114 |
-| # downloads        | 354085713 |
-| # stars            | 1 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 3.1119937333333332E7 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/npm-packlist#readme)

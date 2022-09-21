@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("consola", "BrowserReporter")
 @js.native
-class BrowserReporter ()
+open class BrowserReporter ()
   extends StObject
      with ConsolaReporter {
   

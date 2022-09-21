@@ -14,6 +14,8 @@ trait IImageProcessingConfigurationDefines extends StObject {
   
   var CONTRAST: Boolean
   
+  var DITHER: Boolean
+  
   var EXPOSURE: Boolean
   
   var IMAGEPROCESSING: Boolean
@@ -23,6 +25,8 @@ trait IImageProcessingConfigurationDefines extends StObject {
   var SAMPLER3DBGRMAP: Boolean
   
   var SAMPLER3DGREENDEPTH: Boolean
+  
+  var SKIPFINALCOLORCLAMP: Boolean
   
   var TONEMAPPING: Boolean
   
@@ -41,18 +45,20 @@ object IImageProcessingConfigurationDefines {
     COLORGRADING: Boolean,
     COLORGRADING3D: Boolean,
     CONTRAST: Boolean,
+    DITHER: Boolean,
     EXPOSURE: Boolean,
     IMAGEPROCESSING: Boolean,
     IMAGEPROCESSINGPOSTPROCESS: Boolean,
     SAMPLER3DBGRMAP: Boolean,
     SAMPLER3DGREENDEPTH: Boolean,
+    SKIPFINALCOLORCLAMP: Boolean,
     TONEMAPPING: Boolean,
     TONEMAPPING_ACES: Boolean,
     VIGNETTE: Boolean,
     VIGNETTEBLENDMODEMULTIPLY: Boolean,
     VIGNETTEBLENDMODEOPAQUE: Boolean
   ): IImageProcessingConfigurationDefines = {
-    val __obj = js.Dynamic.literal(COLORCURVES = COLORCURVES.asInstanceOf[js.Any], COLORGRADING = COLORGRADING.asInstanceOf[js.Any], COLORGRADING3D = COLORGRADING3D.asInstanceOf[js.Any], CONTRAST = CONTRAST.asInstanceOf[js.Any], EXPOSURE = EXPOSURE.asInstanceOf[js.Any], IMAGEPROCESSING = IMAGEPROCESSING.asInstanceOf[js.Any], IMAGEPROCESSINGPOSTPROCESS = IMAGEPROCESSINGPOSTPROCESS.asInstanceOf[js.Any], SAMPLER3DBGRMAP = SAMPLER3DBGRMAP.asInstanceOf[js.Any], SAMPLER3DGREENDEPTH = SAMPLER3DGREENDEPTH.asInstanceOf[js.Any], TONEMAPPING = TONEMAPPING.asInstanceOf[js.Any], TONEMAPPING_ACES = TONEMAPPING_ACES.asInstanceOf[js.Any], VIGNETTE = VIGNETTE.asInstanceOf[js.Any], VIGNETTEBLENDMODEMULTIPLY = VIGNETTEBLENDMODEMULTIPLY.asInstanceOf[js.Any], VIGNETTEBLENDMODEOPAQUE = VIGNETTEBLENDMODEOPAQUE.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(COLORCURVES = COLORCURVES.asInstanceOf[js.Any], COLORGRADING = COLORGRADING.asInstanceOf[js.Any], COLORGRADING3D = COLORGRADING3D.asInstanceOf[js.Any], CONTRAST = CONTRAST.asInstanceOf[js.Any], DITHER = DITHER.asInstanceOf[js.Any], EXPOSURE = EXPOSURE.asInstanceOf[js.Any], IMAGEPROCESSING = IMAGEPROCESSING.asInstanceOf[js.Any], IMAGEPROCESSINGPOSTPROCESS = IMAGEPROCESSINGPOSTPROCESS.asInstanceOf[js.Any], SAMPLER3DBGRMAP = SAMPLER3DBGRMAP.asInstanceOf[js.Any], SAMPLER3DGREENDEPTH = SAMPLER3DGREENDEPTH.asInstanceOf[js.Any], SKIPFINALCOLORCLAMP = SKIPFINALCOLORCLAMP.asInstanceOf[js.Any], TONEMAPPING = TONEMAPPING.asInstanceOf[js.Any], TONEMAPPING_ACES = TONEMAPPING_ACES.asInstanceOf[js.Any], VIGNETTE = VIGNETTE.asInstanceOf[js.Any], VIGNETTEBLENDMODEMULTIPLY = VIGNETTEBLENDMODEMULTIPLY.asInstanceOf[js.Any], VIGNETTEBLENDMODEOPAQUE = VIGNETTEBLENDMODEOPAQUE.asInstanceOf[js.Any])
     __obj.asInstanceOf[IImageProcessingConfigurationDefines]
   }
   
@@ -66,6 +72,8 @@ object IImageProcessingConfigurationDefines {
     
     inline def setCONTRAST(value: Boolean): Self = StObject.set(x, "CONTRAST", value.asInstanceOf[js.Any])
     
+    inline def setDITHER(value: Boolean): Self = StObject.set(x, "DITHER", value.asInstanceOf[js.Any])
+    
     inline def setEXPOSURE(value: Boolean): Self = StObject.set(x, "EXPOSURE", value.asInstanceOf[js.Any])
     
     inline def setIMAGEPROCESSING(value: Boolean): Self = StObject.set(x, "IMAGEPROCESSING", value.asInstanceOf[js.Any])
@@ -75,6 +83,8 @@ object IImageProcessingConfigurationDefines {
     inline def setSAMPLER3DBGRMAP(value: Boolean): Self = StObject.set(x, "SAMPLER3DBGRMAP", value.asInstanceOf[js.Any])
     
     inline def setSAMPLER3DGREENDEPTH(value: Boolean): Self = StObject.set(x, "SAMPLER3DGREENDEPTH", value.asInstanceOf[js.Any])
+    
+    inline def setSKIPFINALCOLORCLAMP(value: Boolean): Self = StObject.set(x, "SKIPFINALCOLORCLAMP", value.asInstanceOf[js.Any])
     
     inline def setTONEMAPPING(value: Boolean): Self = StObject.set(x, "TONEMAPPING", value.asInstanceOf[js.Any])
     

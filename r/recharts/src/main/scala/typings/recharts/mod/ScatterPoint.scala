@@ -13,7 +13,7 @@ trait ScatterPoint extends StObject {
   
   var node: js.UndefOr[X] = js.undefined
   
-  var payload: js.UndefOr[js.Any] = js.undefined
+  var payload: js.UndefOr[Any] = js.undefined
   
   var size: js.UndefOr[Double] = js.undefined
 }
@@ -38,7 +38,7 @@ object ScatterPoint {
     
     inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
-    inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     

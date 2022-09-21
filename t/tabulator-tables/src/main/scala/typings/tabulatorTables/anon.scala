@@ -1,42 +1,45 @@
 package typings.tabulatorTables
 
 import typings.std.HTMLElement
+import typings.std.MouseEvent
 import typings.std.UIEvent
-import typings.tabulatorTables.Tabulator.CellComponent
-import typings.tabulatorTables.Tabulator.CellEditEventCallback
-import typings.tabulatorTables.Tabulator.CellEventCallback
-import typings.tabulatorTables.Tabulator.ColumnCalc
-import typings.tabulatorTables.Tabulator.ColumnCalcParams
-import typings.tabulatorTables.Tabulator.ColumnComponent
-import typings.tabulatorTables.Tabulator.ColumnDefinition
-import typings.tabulatorTables.Tabulator.ColumnDefinitionAlign
-import typings.tabulatorTables.Tabulator.ColumnDefinitionSorterParams
-import typings.tabulatorTables.Tabulator.ColumnEventCallback
-import typings.tabulatorTables.Tabulator.ColumnSorterParamLookupFunction
-import typings.tabulatorTables.Tabulator.CustomAccessor
-import typings.tabulatorTables.Tabulator.CustomAccessorParams
-import typings.tabulatorTables.Tabulator.CustomMutator
-import typings.tabulatorTables.Tabulator.CustomMutatorParams
-import typings.tabulatorTables.Tabulator.Editor
-import typings.tabulatorTables.Tabulator.EditorParams
-import typings.tabulatorTables.Tabulator.EmptyCallback
-import typings.tabulatorTables.Tabulator.FilterType
-import typings.tabulatorTables.Tabulator.Formatter
-import typings.tabulatorTables.Tabulator.FormatterParams
-import typings.tabulatorTables.Tabulator.GlobalTooltipOption
-import typings.tabulatorTables.Tabulator.MenuObject
-import typings.tabulatorTables.Tabulator.MenuSeparator
-import typings.tabulatorTables.Tabulator.RowComponent
-import typings.tabulatorTables.Tabulator.SortDirection
-import typings.tabulatorTables.Tabulator.StandardValidatorType
-import typings.tabulatorTables.Tabulator.Validator
-import typings.tabulatorTables.Tabulator.ValueBooleanCallback
-import typings.tabulatorTables.Tabulator.ValueVoidCallback
-import typings.tabulatorTables.Tabulator.VerticalAlign
+import typings.tabulatorTables.mod.Tabulator.CellComponent
+import typings.tabulatorTables.mod.Tabulator.CellEditEventCallback
+import typings.tabulatorTables.mod.Tabulator.CellEventCallback
+import typings.tabulatorTables.mod.Tabulator.ColumnCalc
+import typings.tabulatorTables.mod.Tabulator.ColumnCalcParams
+import typings.tabulatorTables.mod.Tabulator.ColumnComponent
+import typings.tabulatorTables.mod.Tabulator.ColumnDefinition
+import typings.tabulatorTables.mod.Tabulator.ColumnDefinitionAlign
+import typings.tabulatorTables.mod.Tabulator.ColumnDefinitionSorterParams
+import typings.tabulatorTables.mod.Tabulator.ColumnEventCallback
+import typings.tabulatorTables.mod.Tabulator.ColumnSorterParamLookupFunction
+import typings.tabulatorTables.mod.Tabulator.CustomAccessor
+import typings.tabulatorTables.mod.Tabulator.CustomAccessorParams
+import typings.tabulatorTables.mod.Tabulator.CustomMutator
+import typings.tabulatorTables.mod.Tabulator.CustomMutatorParams
+import typings.tabulatorTables.mod.Tabulator.Editor
+import typings.tabulatorTables.mod.Tabulator.EditorParams
+import typings.tabulatorTables.mod.Tabulator.EmptyCallback
+import typings.tabulatorTables.mod.Tabulator.FilterType
+import typings.tabulatorTables.mod.Tabulator.Formatter
+import typings.tabulatorTables.mod.Tabulator.FormatterParams
+import typings.tabulatorTables.mod.Tabulator.GlobalTooltipOption
+import typings.tabulatorTables.mod.Tabulator.MenuObject
+import typings.tabulatorTables.mod.Tabulator.MenuSeparator
+import typings.tabulatorTables.mod.Tabulator.RowComponent
+import typings.tabulatorTables.mod.Tabulator.SortDirection
+import typings.tabulatorTables.mod.Tabulator.StandardValidatorType
+import typings.tabulatorTables.mod.Tabulator.Validator
+import typings.tabulatorTables.mod.Tabulator.ValueBooleanCallback
+import typings.tabulatorTables.mod.Tabulator.ValueVoidCallback
+import typings.tabulatorTables.mod.Tabulator.VerticalAlign
 import typings.tabulatorTables.tabulatorTablesBooleans.`false`
+import typings.tabulatorTables.tabulatorTablesBooleans.`true`
 import typings.tabulatorTables.tabulatorTablesStrings.alphanum
 import typings.tabulatorTables.tabulatorTablesStrings.array
 import typings.tabulatorTables.tabulatorTablesStrings.boolean
+import typings.tabulatorTables.tabulatorTablesStrings.cell
 import typings.tabulatorTables.tabulatorTablesStrings.clipboard
 import typings.tabulatorTables.tabulatorTablesStrings.data
 import typings.tabulatorTables.tabulatorTablesStrings.date
@@ -45,6 +48,7 @@ import typings.tabulatorTables.tabulatorTablesStrings.download
 import typings.tabulatorTables.tabulatorTablesStrings.edit
 import typings.tabulatorTables.tabulatorTablesStrings.exists
 import typings.tabulatorTables.tabulatorTablesStrings.flip
+import typings.tabulatorTables.tabulatorTablesStrings.header
 import typings.tabulatorTables.tabulatorTablesStrings.number
 import typings.tabulatorTables.tabulatorTablesStrings.string
 import typings.tabulatorTables.tabulatorTablesStrings.time
@@ -54,7 +58,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  /* Inlined std.Partial<tabulator-tables.Tabulator.ColumnDefinition> */
+  /* Inlined std.Partial<tabulator-tables.tabulator-tables.Tabulator.ColumnDefinition> */
   trait PartialColumnDefinition extends StObject {
     
     var accessor: js.UndefOr[CustomAccessor] = js.undefined
@@ -115,7 +119,7 @@ object anon {
     
     var clickMenu: js.UndefOr[js.Array[MenuObject[CellComponent] | MenuSeparator]] = js.undefined
     
-    var clipboard: js.UndefOr[Boolean] = js.undefined
+    var clipboard: js.UndefOr[Boolean | (js.Function1[/* column */ ColumnComponent, Boolean])] = js.undefined
     
     var columns: js.UndefOr[js.Array[ColumnDefinition]] = js.undefined
     
@@ -123,7 +127,7 @@ object anon {
     
     var cssClass: js.UndefOr[String] = js.undefined
     
-    var download: js.UndefOr[Boolean] = js.undefined
+    var download: js.UndefOr[Boolean | (js.Function1[/* column */ ColumnComponent, Boolean])] = js.undefined
     
     var editable: js.UndefOr[Boolean | (js.Function1[/* cell */ CellComponent, Boolean])] = js.undefined
     
@@ -169,15 +173,15 @@ object anon {
     
     var headerFilterFunc: js.UndefOr[
         FilterType | (js.Function4[
-          /* headerValue */ js.Any, 
-          /* rowValue */ js.Any, 
-          /* rowdata */ js.Any, 
-          /* filterparams */ js.Any, 
+          /* headerValue */ Any, 
+          /* rowValue */ Any, 
+          /* rowdata */ Any, 
+          /* filterparams */ Any, 
           Boolean
         ])
       ] = js.undefined
     
-    var headerFilterFuncParams: js.UndefOr[js.Any] = js.undefined
+    var headerFilterFuncParams: js.UndefOr[Any] = js.undefined
     
     var headerFilterLiveFilter: js.UndefOr[Boolean] = js.undefined
     
@@ -207,7 +211,9 @@ object anon {
     
     var hozAlign: js.UndefOr[ColumnDefinitionAlign] = js.undefined
     
-    var htmlOutput: js.UndefOr[Boolean] = js.undefined
+    var htmlOutput: js.UndefOr[Boolean | (js.Function1[/* column */ ColumnComponent, Boolean])] = js.undefined
+    
+    var maxWidth: js.UndefOr[Double | `false`] = js.undefined
     
     var minWidth: js.UndefOr[Double] = js.undefined
     
@@ -227,7 +233,9 @@ object anon {
     
     var mutatorParams: js.UndefOr[CustomMutatorParams] = js.undefined
     
-    var resizable: js.UndefOr[Boolean] = js.undefined
+    var print: js.UndefOr[Boolean | (js.Function1[/* column */ ColumnComponent, Boolean])] = js.undefined
+    
+    var resizable: js.UndefOr[`true` | `false` | header | cell] = js.undefined
     
     var responsive: js.UndefOr[Double] = js.undefined
     
@@ -235,8 +243,8 @@ object anon {
     
     var sorter: js.UndefOr[
         string | number | alphanum | boolean | exists | date | time | datetime | array | (js.Function7[
-          /* a */ js.Any, 
-          /* b */ js.Any, 
+          /* a */ Any, 
+          /* b */ Any, 
           /* aRow */ RowComponent, 
           /* bRow */ RowComponent, 
           /* column */ ColumnComponent, 
@@ -298,17 +306,17 @@ object anon {
     extension [Self <: PartialColumnDefinition](x: Self) {
       
       inline def setAccessor(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | download | clipboard, /* AccessorParams */ js.Any, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | download | clipboard, /* AccessorParams */ Any, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => Any
       ): Self = StObject.set(x, "accessor", js.Any.fromFunction6(value))
       
       inline def setAccessorClipboard(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | download | clipboard, /* AccessorParams */ js.Any, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | download | clipboard, /* AccessorParams */ Any, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => Any
       ): Self = StObject.set(x, "accessorClipboard", js.Any.fromFunction6(value))
       
       inline def setAccessorClipboardParams(value: CustomAccessorParams): Self = StObject.set(x, "accessorClipboardParams", value.asInstanceOf[js.Any])
       
       inline def setAccessorClipboardParamsFunction5(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | download | clipboard, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | download | clipboard, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => Any
       ): Self = StObject.set(x, "accessorClipboardParams", js.Any.fromFunction5(value))
       
       inline def setAccessorClipboardParamsUndefined: Self = StObject.set(x, "accessorClipboardParams", js.undefined)
@@ -316,13 +324,13 @@ object anon {
       inline def setAccessorClipboardUndefined: Self = StObject.set(x, "accessorClipboard", js.undefined)
       
       inline def setAccessorDownload(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | download | clipboard, /* AccessorParams */ js.Any, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | download | clipboard, /* AccessorParams */ Any, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => Any
       ): Self = StObject.set(x, "accessorDownload", js.Any.fromFunction6(value))
       
       inline def setAccessorDownloadParams(value: CustomAccessorParams): Self = StObject.set(x, "accessorDownloadParams", value.asInstanceOf[js.Any])
       
       inline def setAccessorDownloadParamsFunction5(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | download | clipboard, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | download | clipboard, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => Any
       ): Self = StObject.set(x, "accessorDownloadParams", js.Any.fromFunction5(value))
       
       inline def setAccessorDownloadParamsUndefined: Self = StObject.set(x, "accessorDownloadParams", js.undefined)
@@ -330,13 +338,13 @@ object anon {
       inline def setAccessorDownloadUndefined: Self = StObject.set(x, "accessorDownload", js.undefined)
       
       inline def setAccessorHtmlOutput(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | download | clipboard, /* AccessorParams */ js.Any, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | download | clipboard, /* AccessorParams */ Any, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => Any
       ): Self = StObject.set(x, "accessorHtmlOutput", js.Any.fromFunction6(value))
       
       inline def setAccessorHtmlOutputParams(value: CustomAccessorParams): Self = StObject.set(x, "accessorHtmlOutputParams", value.asInstanceOf[js.Any])
       
       inline def setAccessorHtmlOutputParamsFunction5(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | download | clipboard, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | download | clipboard, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => Any
       ): Self = StObject.set(x, "accessorHtmlOutputParams", js.Any.fromFunction5(value))
       
       inline def setAccessorHtmlOutputParamsUndefined: Self = StObject.set(x, "accessorHtmlOutputParams", js.undefined)
@@ -346,19 +354,19 @@ object anon {
       inline def setAccessorParams(value: CustomAccessorParams): Self = StObject.set(x, "accessorParams", value.asInstanceOf[js.Any])
       
       inline def setAccessorParamsFunction5(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | download | clipboard, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | download | clipboard, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => Any
       ): Self = StObject.set(x, "accessorParams", js.Any.fromFunction5(value))
       
       inline def setAccessorParamsUndefined: Self = StObject.set(x, "accessorParams", js.undefined)
       
       inline def setAccessorPrint(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | download | clipboard, /* AccessorParams */ js.Any, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | download | clipboard, /* AccessorParams */ Any, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => Any
       ): Self = StObject.set(x, "accessorPrint", js.Any.fromFunction6(value))
       
       inline def setAccessorPrintParams(value: CustomAccessorParams): Self = StObject.set(x, "accessorPrintParams", value.asInstanceOf[js.Any])
       
       inline def setAccessorPrintParamsFunction5(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | download | clipboard, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | download | clipboard, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => Any
       ): Self = StObject.set(x, "accessorPrintParams", js.Any.fromFunction5(value))
       
       inline def setAccessorPrintParamsUndefined: Self = StObject.set(x, "accessorPrintParams", js.undefined)
@@ -383,11 +391,9 @@ object anon {
       
       inline def setBottomCalcFormatterUndefined: Self = StObject.set(x, "bottomCalcFormatter", js.undefined)
       
-      inline def setBottomCalcFunction3(
-        value: (/* values */ js.Array[js.Any], /* data */ js.Array[js.Any], /* calcParams */ js.Object) => js.Any
-      ): Self = StObject.set(x, "bottomCalc", js.Any.fromFunction3(value))
+      inline def setBottomCalcFunction3(value: (/* values */ js.Array[Any], /* data */ js.Array[Any], /* calcParams */ js.Object) => Any): Self = StObject.set(x, "bottomCalc", js.Any.fromFunction3(value))
       
-      inline def setBottomCalcParams(value: (/* values */ js.Any, /* data */ js.Any) => js.Any): Self = StObject.set(x, "bottomCalcParams", js.Any.fromFunction2(value))
+      inline def setBottomCalcParams(value: (/* values */ Any, /* data */ Any) => Any): Self = StObject.set(x, "bottomCalcParams", js.Any.fromFunction2(value))
       
       inline def setBottomCalcParamsUndefined: Self = StObject.set(x, "bottomCalcParams", js.undefined)
       
@@ -453,9 +459,11 @@ object anon {
       
       inline def setClickMenuUndefined: Self = StObject.set(x, "clickMenu", js.undefined)
       
-      inline def setClickMenuVarargs(value: (MenuObject[CellComponent] | MenuSeparator)*): Self = StObject.set(x, "clickMenu", js.Array(value :_*))
+      inline def setClickMenuVarargs(value: (MenuObject[CellComponent] | MenuSeparator)*): Self = StObject.set(x, "clickMenu", js.Array(value*))
       
-      inline def setClipboard(value: Boolean): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
+      inline def setClipboard(value: Boolean | (js.Function1[/* column */ ColumnComponent, Boolean])): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
+      
+      inline def setClipboardFunction1(value: /* column */ ColumnComponent => Boolean): Self = StObject.set(x, "clipboard", js.Any.fromFunction1(value))
       
       inline def setClipboardUndefined: Self = StObject.set(x, "clipboard", js.undefined)
       
@@ -463,19 +471,21 @@ object anon {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: ColumnDefinition*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: ColumnDefinition*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setContextMenu(value: js.Array[MenuObject[CellComponent] | MenuSeparator]): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setContextMenuVarargs(value: (MenuObject[CellComponent] | MenuSeparator)*): Self = StObject.set(x, "contextMenu", js.Array(value :_*))
+      inline def setContextMenuVarargs(value: (MenuObject[CellComponent] | MenuSeparator)*): Self = StObject.set(x, "contextMenu", js.Array(value*))
       
       inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setDownload(value: Boolean): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: Boolean | (js.Function1[/* column */ ColumnComponent, Boolean])): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      
+      inline def setDownloadFunction1(value: /* column */ ColumnComponent => Boolean): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
       
       inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
@@ -577,7 +587,7 @@ object anon {
       
       inline def setHeaderContextMenuUndefined: Self = StObject.set(x, "headerContextMenu", js.undefined)
       
-      inline def setHeaderContextMenuVarargs(value: (MenuObject[ColumnComponent] | MenuSeparator)*): Self = StObject.set(x, "headerContextMenu", js.Array(value :_*))
+      inline def setHeaderContextMenuVarargs(value: (MenuObject[ColumnComponent] | MenuSeparator)*): Self = StObject.set(x, "headerContextMenu", js.Array(value*))
       
       inline def setHeaderContextUndefined: Self = StObject.set(x, "headerContext", js.undefined)
       
@@ -591,25 +601,25 @@ object anon {
       
       inline def setHeaderFilter(value: Editor): Self = StObject.set(x, "headerFilter", value.asInstanceOf[js.Any])
       
-      inline def setHeaderFilterEmptyCheck(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "headerFilterEmptyCheck", js.Any.fromFunction1(value))
+      inline def setHeaderFilterEmptyCheck(value: /* value */ Any => Boolean): Self = StObject.set(x, "headerFilterEmptyCheck", js.Any.fromFunction1(value))
       
       inline def setHeaderFilterEmptyCheckUndefined: Self = StObject.set(x, "headerFilterEmptyCheck", js.undefined)
       
       inline def setHeaderFilterFunc(
         value: FilterType | (js.Function4[
-              /* headerValue */ js.Any, 
-              /* rowValue */ js.Any, 
-              /* rowdata */ js.Any, 
-              /* filterparams */ js.Any, 
+              /* headerValue */ Any, 
+              /* rowValue */ Any, 
+              /* rowdata */ Any, 
+              /* filterparams */ Any, 
               Boolean
             ])
       ): Self = StObject.set(x, "headerFilterFunc", value.asInstanceOf[js.Any])
       
       inline def setHeaderFilterFuncFunction4(
-        value: (/* headerValue */ js.Any, /* rowValue */ js.Any, /* rowdata */ js.Any, /* filterparams */ js.Any) => Boolean
+        value: (/* headerValue */ Any, /* rowValue */ Any, /* rowdata */ Any, /* filterparams */ Any) => Boolean
       ): Self = StObject.set(x, "headerFilterFunc", js.Any.fromFunction4(value))
       
-      inline def setHeaderFilterFuncParams(value: js.Any): Self = StObject.set(x, "headerFilterFuncParams", value.asInstanceOf[js.Any])
+      inline def setHeaderFilterFuncParams(value: Any): Self = StObject.set(x, "headerFilterFuncParams", value.asInstanceOf[js.Any])
       
       inline def setHeaderFilterFuncParamsUndefined: Self = StObject.set(x, "headerFilterFuncParams", js.undefined)
       
@@ -643,7 +653,7 @@ object anon {
       
       inline def setHeaderMenuUndefined: Self = StObject.set(x, "headerMenu", js.undefined)
       
-      inline def setHeaderMenuVarargs(value: (MenuObject[ColumnComponent] | MenuSeparator)*): Self = StObject.set(x, "headerMenu", js.Array(value :_*))
+      inline def setHeaderMenuVarargs(value: (MenuObject[ColumnComponent] | MenuSeparator)*): Self = StObject.set(x, "headerMenu", js.Array(value*))
       
       inline def setHeaderSort(value: Boolean): Self = StObject.set(x, "headerSort", value.asInstanceOf[js.Any])
       
@@ -683,26 +693,32 @@ object anon {
       
       inline def setHozAlignUndefined: Self = StObject.set(x, "hozAlign", js.undefined)
       
-      inline def setHtmlOutput(value: Boolean): Self = StObject.set(x, "htmlOutput", value.asInstanceOf[js.Any])
+      inline def setHtmlOutput(value: Boolean | (js.Function1[/* column */ ColumnComponent, Boolean])): Self = StObject.set(x, "htmlOutput", value.asInstanceOf[js.Any])
+      
+      inline def setHtmlOutputFunction1(value: /* column */ ColumnComponent => Boolean): Self = StObject.set(x, "htmlOutput", js.Any.fromFunction1(value))
       
       inline def setHtmlOutputUndefined: Self = StObject.set(x, "htmlOutput", js.undefined)
+      
+      inline def setMaxWidth(value: Double | `false`): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
       inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
       inline def setMutator(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | edit, /* mutatorParams */ js.Any, /* cell */ js.UndefOr[CellComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | edit, /* mutatorParams */ Any, /* cell */ js.UndefOr[CellComponent]) => Any
       ): Self = StObject.set(x, "mutator", js.Any.fromFunction5(value))
       
       inline def setMutatorClipboard(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | edit, /* mutatorParams */ js.Any, /* cell */ js.UndefOr[CellComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | edit, /* mutatorParams */ Any, /* cell */ js.UndefOr[CellComponent]) => Any
       ): Self = StObject.set(x, "mutatorClipboard", js.Any.fromFunction5(value))
       
       inline def setMutatorClipboardParams(value: CustomMutatorParams): Self = StObject.set(x, "mutatorClipboardParams", value.asInstanceOf[js.Any])
       
       inline def setMutatorClipboardParamsFunction4(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | edit, /* cell */ js.UndefOr[CellComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | edit, /* cell */ js.UndefOr[CellComponent]) => Any
       ): Self = StObject.set(x, "mutatorClipboardParams", js.Any.fromFunction4(value))
       
       inline def setMutatorClipboardParamsUndefined: Self = StObject.set(x, "mutatorClipboardParams", js.undefined)
@@ -710,13 +726,13 @@ object anon {
       inline def setMutatorClipboardUndefined: Self = StObject.set(x, "mutatorClipboard", js.undefined)
       
       inline def setMutatorData(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | edit, /* mutatorParams */ js.Any, /* cell */ js.UndefOr[CellComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | edit, /* mutatorParams */ Any, /* cell */ js.UndefOr[CellComponent]) => Any
       ): Self = StObject.set(x, "mutatorData", js.Any.fromFunction5(value))
       
       inline def setMutatorDataParams(value: CustomMutatorParams): Self = StObject.set(x, "mutatorDataParams", value.asInstanceOf[js.Any])
       
       inline def setMutatorDataParamsFunction4(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | edit, /* cell */ js.UndefOr[CellComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | edit, /* cell */ js.UndefOr[CellComponent]) => Any
       ): Self = StObject.set(x, "mutatorDataParams", js.Any.fromFunction4(value))
       
       inline def setMutatorDataParamsUndefined: Self = StObject.set(x, "mutatorDataParams", js.undefined)
@@ -724,13 +740,13 @@ object anon {
       inline def setMutatorDataUndefined: Self = StObject.set(x, "mutatorData", js.undefined)
       
       inline def setMutatorEdit(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | edit, /* mutatorParams */ js.Any, /* cell */ js.UndefOr[CellComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | edit, /* mutatorParams */ Any, /* cell */ js.UndefOr[CellComponent]) => Any
       ): Self = StObject.set(x, "mutatorEdit", js.Any.fromFunction5(value))
       
       inline def setMutatorEditParams(value: CustomMutatorParams): Self = StObject.set(x, "mutatorEditParams", value.asInstanceOf[js.Any])
       
       inline def setMutatorEditParamsFunction4(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | edit, /* cell */ js.UndefOr[CellComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | edit, /* cell */ js.UndefOr[CellComponent]) => Any
       ): Self = StObject.set(x, "mutatorEditParams", js.Any.fromFunction4(value))
       
       inline def setMutatorEditParamsUndefined: Self = StObject.set(x, "mutatorEditParams", js.undefined)
@@ -740,14 +756,20 @@ object anon {
       inline def setMutatorParams(value: CustomMutatorParams): Self = StObject.set(x, "mutatorParams", value.asInstanceOf[js.Any])
       
       inline def setMutatorParamsFunction4(
-        value: (/* value */ js.Any, /* data */ js.Any, /* type */ data | edit, /* cell */ js.UndefOr[CellComponent]) => js.Any
+        value: (/* value */ Any, /* data */ Any, /* type */ data | edit, /* cell */ js.UndefOr[CellComponent]) => Any
       ): Self = StObject.set(x, "mutatorParams", js.Any.fromFunction4(value))
       
       inline def setMutatorParamsUndefined: Self = StObject.set(x, "mutatorParams", js.undefined)
       
       inline def setMutatorUndefined: Self = StObject.set(x, "mutator", js.undefined)
       
-      inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+      inline def setPrint(value: Boolean | (js.Function1[/* column */ ColumnComponent, Boolean])): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+      
+      inline def setPrintFunction1(value: /* column */ ColumnComponent => Boolean): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
+      
+      inline def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
+      
+      inline def setResizable(value: `true` | `false` | header | cell): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
       
       inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
       
@@ -761,8 +783,8 @@ object anon {
       
       inline def setSorter(
         value: string | number | alphanum | boolean | exists | date | time | datetime | array | (js.Function7[
-              /* a */ js.Any, 
-              /* b */ js.Any, 
+              /* a */ Any, 
+              /* b */ Any, 
               /* aRow */ RowComponent, 
               /* bRow */ RowComponent, 
               /* column */ ColumnComponent, 
@@ -773,7 +795,7 @@ object anon {
       ): Self = StObject.set(x, "sorter", value.asInstanceOf[js.Any])
       
       inline def setSorterFunction7(
-        value: (/* a */ js.Any, /* b */ js.Any, /* aRow */ RowComponent, /* bRow */ RowComponent, /* column */ ColumnComponent, /* dir */ SortDirection, /* sorterParams */ js.Object) => Double
+        value: (/* a */ Any, /* b */ Any, /* aRow */ RowComponent, /* bRow */ RowComponent, /* column */ ColumnComponent, /* dir */ SortDirection, /* sorterParams */ js.Object) => Double
       ): Self = StObject.set(x, "sorter", js.Any.fromFunction7(value))
       
       inline def setSorterParams(value: ColumnDefinitionSorterParams | ColumnSorterParamLookupFunction): Self = StObject.set(x, "sorterParams", value.asInstanceOf[js.Any])
@@ -820,7 +842,9 @@ object anon {
       
       inline def setTooltip(value: String | GlobalTooltipOption): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      inline def setTooltipFunction1(value: /* cell */ CellComponent => String): Self = StObject.set(x, "tooltip", js.Any.fromFunction1(value))
+      inline def setTooltipFunction3(
+        value: (/* event */ MouseEvent, /* cell */ CellComponent, /* onRender */ js.Function0[Unit]) => String
+      ): Self = StObject.set(x, "tooltip", js.Any.fromFunction3(value))
       
       inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
@@ -840,11 +864,9 @@ object anon {
       
       inline def setTopCalcFormatterUndefined: Self = StObject.set(x, "topCalcFormatter", js.undefined)
       
-      inline def setTopCalcFunction3(
-        value: (/* values */ js.Array[js.Any], /* data */ js.Array[js.Any], /* calcParams */ js.Object) => js.Any
-      ): Self = StObject.set(x, "topCalc", js.Any.fromFunction3(value))
+      inline def setTopCalcFunction3(value: (/* values */ js.Array[Any], /* data */ js.Array[Any], /* calcParams */ js.Object) => Any): Self = StObject.set(x, "topCalc", js.Any.fromFunction3(value))
       
-      inline def setTopCalcParams(value: (/* values */ js.Any, /* data */ js.Any) => js.Any): Self = StObject.set(x, "topCalcParams", js.Any.fromFunction2(value))
+      inline def setTopCalcParams(value: (/* values */ Any, /* data */ Any) => Any): Self = StObject.set(x, "topCalcParams", js.Any.fromFunction2(value))
       
       inline def setTopCalcParamsUndefined: Self = StObject.set(x, "topCalcParams", js.undefined)
       
@@ -854,7 +876,7 @@ object anon {
       
       inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
       
-      inline def setValidatorVarargs(value: (StandardValidatorType | Validator)*): Self = StObject.set(x, "validator", js.Array(value :_*))
+      inline def setValidatorVarargs(value: (StandardValidatorType | Validator)*): Self = StObject.set(x, "validator", js.Array(value*))
       
       inline def setVariableHeight(value: Boolean): Self = StObject.set(x, "variableHeight", value.asInstanceOf[js.Any])
       
@@ -882,16 +904,16 @@ object anon {
     }
   }
   
-  /* Inlined std.Pick<tabulator-tables.Tabulator.Filter, 'field' | 'value'> */
+  /* Inlined std.Pick<tabulator-tables.tabulator-tables.Tabulator.Filter, 'field' | 'value'> */
   trait PickFilterfieldvalue extends StObject {
     
     var field: String
     
-    var value: js.Any
+    var value: Any
   }
   object PickFilterfieldvalue {
     
-    inline def apply(field: String, value: js.Any): PickFilterfieldvalue = {
+    inline def apply(field: String, value: Any): PickFilterfieldvalue = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickFilterfieldvalue]
     }
@@ -900,7 +922,7 @@ object anon {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

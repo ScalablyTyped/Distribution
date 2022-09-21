@@ -17,11 +17,15 @@ object fusedTypesMod {
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.prelu
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.elu
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.relu6
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.leakyrelu
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.sigmoid
   */
   trait Activation extends StObject
   object Activation {
     
     inline def elu: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.elu = "elu".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.elu]
+    
+    inline def leakyrelu: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.leakyrelu = "leakyrelu".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.leakyrelu]
     
     inline def linear: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.linear = "linear".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.linear]
     
@@ -30,6 +34,8 @@ object fusedTypesMod {
     inline def relu: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.relu = "relu".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.relu]
     
     inline def relu6: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.relu6 = "relu6".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.relu6]
+    
+    inline def sigmoid: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.sigmoid = "sigmoid".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.sigmoid]
   }
   
   trait FusedBatchMatMulConfig extends StObject {
@@ -41,6 +47,8 @@ object fusedTypesMod {
     var b: Tensor3D
     
     var bias: js.UndefOr[Tensor[Rank]] = js.undefined
+    
+    var leakyreluAlpha: js.UndefOr[Double] = js.undefined
     
     var preluActivationWeights: js.UndefOr[Tensor[Rank]] = js.undefined
     
@@ -69,6 +77,10 @@ object fusedTypesMod {
       
       inline def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
       
+      inline def setLeakyreluAlpha(value: Double): Self = StObject.set(x, "leakyreluAlpha", value.asInstanceOf[js.Any])
+      
+      inline def setLeakyreluAlphaUndefined: Self = StObject.set(x, "leakyreluAlpha", js.undefined)
+      
       inline def setPreluActivationWeights(value: Tensor[Rank]): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
       
       inline def setPreluActivationWeightsUndefined: Self = StObject.set(x, "preluActivationWeights", js.undefined)
@@ -90,6 +102,8 @@ object fusedTypesMod {
     var filter: Tensor4D
     
     var input: Tensor4D
+    
+    var leakyreluAlpha: js.UndefOr[Double] = js.undefined
     
     var preluActivationWeights: js.UndefOr[Tensor[Rank]] = js.undefined
   }
@@ -115,6 +129,10 @@ object fusedTypesMod {
       inline def setFilter(value: Tensor4D): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       inline def setInput(value: Tensor4D): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      
+      inline def setLeakyreluAlpha(value: Double): Self = StObject.set(x, "leakyreluAlpha", value.asInstanceOf[js.Any])
+      
+      inline def setLeakyreluAlphaUndefined: Self = StObject.set(x, "leakyreluAlpha", js.undefined)
       
       inline def setPreluActivationWeights(value: Tensor[Rank]): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
       

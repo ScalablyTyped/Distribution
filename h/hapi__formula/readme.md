@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__formula
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Math and string formula parser.
@@ -10,10 +10,10 @@ Math and string formula parser.
 | ------------------ | :-------------: |
 | Full name          | @hapi/formula |
 | Keywords           | formula, parser, math, string |
-| # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 3564284 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3577944.6666666665 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/formula#readme)

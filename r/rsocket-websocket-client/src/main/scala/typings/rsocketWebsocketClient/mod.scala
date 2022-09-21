@@ -10,9 +10,9 @@ object mod {
   
   @JSImport("rsocket-websocket-client", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.rsocketWebsocketClient.rsocketwebsocketclientMod.default {
     def this(options: ClientOptions) = this()
-    def this(options: ClientOptions, encoders: Encoders[js.Any]) = this()
+    def this(options: ClientOptions, encoders: Encoders[Any]) = this()
   }
 }

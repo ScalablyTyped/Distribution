@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.Polygon")
 @js.native
-class Polygon protected ()
+open class Polygon protected ()
   extends typings.fabric.fabricImplMod.Polygon {
   /**
     * Constructor
@@ -38,5 +38,5 @@ object Polygon {
     * Returns fabric.Polygon instance from an object representation
     * @param object Object to create an instance from
     */
-  inline def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Polygon]
+  inline def fromObject(`object`: Any): typings.fabric.fabricImplMod.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Polygon]
 }

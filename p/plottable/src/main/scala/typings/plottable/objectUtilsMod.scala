@@ -12,5 +12,5 @@ object objectUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def assign[T /* <: Record[js.Any, js.Any] */](objs: Partial[T]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(objs.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def assign[T /* <: Record[Any, Any] */](objs: Partial[T]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(objs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[T]
 }

@@ -4,8 +4,8 @@ import typings.fundamentalReact.anon.Checked
 import typings.fundamentalReact.anon.PartialSwitchProps
 import typings.fundamentalReact.anon.WeakValidationMapSwitchPr
 import typings.fundamentalReact.fundamentalReactStrings.Switch
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,8 +16,8 @@ object switchMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Switch/Switch.SwitchProps> & {  displayName :'Switch'} */
   object default {
     
-    inline def apply(props: PropsWithChildren[SwitchProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildren[SwitchProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: SwitchProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: SwitchProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("fundamental-react/lib/Switch/Switch", JSImport.Default)
     @js.native
@@ -25,8 +25,8 @@ object switchMod {
     
     @JSImport("fundamental-react/lib/Switch/Switch", "default.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/Switch/Switch", "default.defaultProps")
     @js.native
@@ -48,6 +48,8 @@ object switchMod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var compact: js.UndefOr[Boolean] = js.undefined
@@ -58,13 +60,13 @@ object switchMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inputProps: js.UndefOr[js.Any] = js.undefined
+    var inputProps: js.UndefOr[Any] = js.undefined
     
     var internalLabels: js.UndefOr[Checked] = js.undefined
     
-    var labelProps: js.UndefOr[js.Any] = js.undefined
+    var labelProps: js.UndefOr[Any] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     var semantic: js.UndefOr[Boolean] = js.undefined
   }
@@ -80,6 +82,10 @@ object switchMod {
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
       inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -101,7 +107,7 @@ object switchMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInputProps(value: js.Any): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      inline def setInputProps(value: Any): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
       inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
@@ -109,11 +115,11 @@ object switchMod {
       
       inline def setInternalLabelsUndefined: Self = StObject.set(x, "internalLabels", js.undefined)
       
-      inline def setLabelProps(value: js.Any): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
+      inline def setLabelProps(value: Any): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
       
       inline def setLabelPropsUndefined: Self = StObject.set(x, "labelProps", js.undefined)
       
-      inline def setOnChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* repeated */ Any => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       

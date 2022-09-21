@@ -27,12 +27,12 @@ object LineEncodeEntry {
     
     inline def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
     
-    inline def setInterpolateVarargs(value: (Test & ScaledValueRef[Interpolate])*): Self = StObject.set(x, "interpolate", js.Array(value :_*))
+    inline def setInterpolateVarargs(value: (Test & ScaledValueRef[Interpolate])*): Self = StObject.set(x, "interpolate", js.Array(value*))
     
     inline def setTension(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
     
     inline def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
     
-    inline def setTensionVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "tension", js.Array(value :_*))
+    inline def setTensionVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "tension", js.Array(value*))
   }
 }

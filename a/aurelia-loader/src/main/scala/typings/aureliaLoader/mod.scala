@@ -12,7 +12,7 @@ object mod {
   /**
     * Creates an instance of Loader.
     */
-  class Loader () extends StObject {
+  open class Loader () extends StObject {
     
     /**
       * Registers a plugin with the loader.
@@ -41,14 +41,14 @@ object mod {
       * @param ids The set of module ids to load.
       * @return A Promise for an array of loaded modules.
       */
-    def loadAllModules(ids: js.Array[String]): js.Promise[js.Array[js.Any]] = js.native
+    def loadAllModules(ids: js.Array[String]): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Loads a module.
       * @param id The module id to normalize.
       * @return A Promise for the loaded module.
       */
-    def loadModule(id: String): js.Promise[js.Any] = js.native
+    def loadModule(id: String): js.Promise[Any] = js.native
     
     /**
       * Loads a template.
@@ -90,7 +90,7 @@ object mod {
   
   @JSImport("aurelia-loader", "TemplateDependency")
   @js.native
-  class TemplateDependency protected () extends StObject {
+  open class TemplateDependency protected () extends StObject {
     /**
       * Creates a template dependency.
       * @param src The source of the dependency.
@@ -112,7 +112,7 @@ object mod {
   
   @JSImport("aurelia-loader", "TemplateRegistryEntry")
   @js.native
-  class TemplateRegistryEntry protected () extends StObject {
+  open class TemplateRegistryEntry protected () extends StObject {
     /**
       * Creates an instance of TemplateRegistryEntry.
       * @param address The address of the template that this entry represents.
@@ -142,7 +142,7 @@ object mod {
     /**
       * Gets the factory capable of creating instances of this template.
       */
-    var factory: js.Any = js.native
+    var factory: Any = js.native
     
     /**
       * Indicates whether the factory is ready to be used to create instances of the associated template.
@@ -172,18 +172,18 @@ object mod {
       * @param address The address of the resource.
       * @return A Promise for the requested resouce.
       */
-    def fetch(address: String): js.Promise[js.Any]
+    def fetch(address: String): js.Promise[Any]
   }
   object LoaderPlugin {
     
-    inline def apply(fetch: String => js.Promise[js.Any]): LoaderPlugin = {
+    inline def apply(fetch: String => js.Promise[Any]): LoaderPlugin = {
       val __obj = js.Dynamic.literal(fetch = js.Any.fromFunction1(fetch))
       __obj.asInstanceOf[LoaderPlugin]
     }
     
     extension [Self <: LoaderPlugin](x: Self) {
       
-      inline def setFetch(value: String => js.Promise[js.Any]): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
+      inline def setFetch(value: String => js.Promise[Any]): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
     }
   }
 }

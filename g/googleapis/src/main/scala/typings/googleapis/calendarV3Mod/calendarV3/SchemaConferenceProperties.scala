@@ -8,10 +8,12 @@ trait SchemaConferenceProperties extends StObject {
   
   /**
     * The types of conference solutions that are supported for this calendar.
-    * The possible values are:   - &quot;eventHangout&quot;  -
-    * &quot;eventNamedHangout&quot;  - &quot;hangoutsMeet&quot;  Optional.
+    * The possible values are:
+    * - "eventHangout"
+    * - "eventNamedHangout"
+    * - "hangoutsMeet"  Optional.
     */
-  var allowedConferenceSolutionTypes: js.UndefOr[js.Array[String]] = js.undefined
+  var allowedConferenceSolutionTypes: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaConferenceProperties {
   
@@ -24,8 +26,10 @@ object SchemaConferenceProperties {
     
     inline def setAllowedConferenceSolutionTypes(value: js.Array[String]): Self = StObject.set(x, "allowedConferenceSolutionTypes", value.asInstanceOf[js.Any])
     
+    inline def setAllowedConferenceSolutionTypesNull: Self = StObject.set(x, "allowedConferenceSolutionTypes", null)
+    
     inline def setAllowedConferenceSolutionTypesUndefined: Self = StObject.set(x, "allowedConferenceSolutionTypes", js.undefined)
     
-    inline def setAllowedConferenceSolutionTypesVarargs(value: String*): Self = StObject.set(x, "allowedConferenceSolutionTypes", js.Array(value :_*))
+    inline def setAllowedConferenceSolutionTypesVarargs(value: String*): Self = StObject.set(x, "allowedConferenceSolutionTypes", js.Array(value*))
   }
 }

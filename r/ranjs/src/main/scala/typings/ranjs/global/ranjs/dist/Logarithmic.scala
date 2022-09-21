@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Logarithmic")
 @js.native
-class Logarithmic ()
+open class Logarithmic ()
   extends typings.ranjs.mod.dist.Logarithmic {
   def this(a: Double) = this()
   def this(a: Double, b: Double) = this()

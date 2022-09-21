@@ -9,7 +9,7 @@ trait ISplitButton
      with typings.extjs.Ext.button.IButton {
   
   /** [Config Option] (Function) */
-  var arrowHandler: js.UndefOr[js.Any] = js.undefined
+  var arrowHandler: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var arrowTooltip: js.UndefOr[java.lang.String] = js.undefined
@@ -18,9 +18,7 @@ trait ISplitButton
     * @param handler Function The function to call when the arrow is clicked.
     * @param scope Object Scope for the function passed above.
     */
-  var setArrowHandler: js.UndefOr[
-    js.Function2[/* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var setArrowHandler: js.UndefOr[js.Function2[/* handler */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object ISplitButton {
   
@@ -31,7 +29,7 @@ object ISplitButton {
   
   extension [Self <: ISplitButton](x: Self) {
     
-    inline def setArrowHandler(value: js.Any): Self = StObject.set(x, "arrowHandler", value.asInstanceOf[js.Any])
+    inline def setArrowHandler(value: Any): Self = StObject.set(x, "arrowHandler", value.asInstanceOf[js.Any])
     
     inline def setArrowHandlerUndefined: Self = StObject.set(x, "arrowHandler", js.undefined)
     
@@ -39,7 +37,7 @@ object ISplitButton {
     
     inline def setArrowTooltipUndefined: Self = StObject.set(x, "arrowTooltip", js.undefined)
     
-    inline def setSetArrowHandler(value: (/* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setArrowHandler", js.Any.fromFunction2(value))
+    inline def setSetArrowHandler(value: (/* handler */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setArrowHandler", js.Any.fromFunction2(value))
     
     inline def setSetArrowHandlerUndefined: Self = StObject.set(x, "setArrowHandler", js.undefined)
   }

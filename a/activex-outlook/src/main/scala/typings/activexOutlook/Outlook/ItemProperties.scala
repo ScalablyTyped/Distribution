@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ItemProperties extends StObject {
   
   def Add(Name: String, Type: OlUserPropertyType): ItemProperty = js.native
-  def Add(Name: String, Type: OlUserPropertyType, AddToFolderFields: js.Any): ItemProperty = js.native
-  def Add(Name: String, Type: OlUserPropertyType, AddToFolderFields: js.Any, DisplayFormat: js.Any): ItemProperty = js.native
-  def Add(Name: String, Type: OlUserPropertyType, AddToFolderFields: Unit, DisplayFormat: js.Any): ItemProperty = js.native
+  def Add(Name: String, Type: OlUserPropertyType, AddToFolderFields: Any): ItemProperty = js.native
+  def Add(Name: String, Type: OlUserPropertyType, AddToFolderFields: Any, DisplayFormat: Any): ItemProperty = js.native
+  def Add(Name: String, Type: OlUserPropertyType, AddToFolderFields: Unit, DisplayFormat: Any): ItemProperty = js.native
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -18,12 +18,12 @@ trait ItemProperties extends StObject {
   
   val Count: Double = js.native
   
-  def Item(Index: js.Any): ItemProperty = js.native
+  def Item(Index: Any): ItemProperty = js.native
   
   /* private */ @JSName("Outlook.ItemProperties_typekey")
   var OutlookDotItemProperties_typekey: ItemProperties = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Remove(Index: Double): Unit = js.native
   

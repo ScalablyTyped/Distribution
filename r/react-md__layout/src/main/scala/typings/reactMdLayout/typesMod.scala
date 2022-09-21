@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ElementType
 import typings.react.mod.ReactNode
 import typings.reactMdLayout.anon.PropsWithRefOmitAppBarTit
+import typings.reactMdLayout.reactMdLayoutStrings.`toggleable-mini`
+import typings.reactMdLayout.reactMdLayoutStrings.toggleable
 import typings.reactMdTree.typesMod.BaseTreeItem
 import typings.reactMdTree.typesMod.TreeData
 import typings.reactMdTree.typesMod.TreeItemId
@@ -14,6 +16,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object typesMod {
   
   trait LayoutConfiguration extends StObject {
+    
+    /**
+      * This prop is used to be able to update the toggleable layouts to start
+      * visible/expanded instead of requiring the toggle button to be pressed.
+      *
+      * If this is:
+      * - `"toggleable"` - the `"toggleable-mini"` variant will still require a
+      *   button click to be visible
+      * - `"toggleable-mini"` - the `"toggleable"` variant will still require a
+      *   button click to be visible
+      * - `true` - both toggleable variants will start visible
+      * - `false | undefined` - both toggleable variants will require a button
+      *   click to be visible
+      *
+      * @remarks \@since 2.6.0
+      */
+    var defaultToggleableVisible: js.UndefOr[Boolean | toggleable | `toggleable-mini`] = js.undefined
     
     /**
       * The type of layout to use when your app is viewed on a desktop sized
@@ -56,6 +75,10 @@ object typesMod {
     
     extension [Self <: LayoutConfiguration](x: Self) {
       
+      inline def setDefaultToggleableVisible(value: Boolean | toggleable | `toggleable-mini`): Self = StObject.set(x, "defaultToggleableVisible", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultToggleableVisibleUndefined: Self = StObject.set(x, "defaultToggleableVisible", js.undefined)
+      
       inline def setDesktopLayout(value: SupportedWideLayout): Self = StObject.set(x, "desktopLayout", value.asInstanceOf[js.Any])
       
       inline def setDesktopLayoutUndefined: Self = StObject.set(x, "desktopLayout", js.undefined)
@@ -84,7 +107,7 @@ object typesMod {
        with /**
     * Adding record syntax for the rest just to be safe.
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /**
       * The component that should be used to render the tree item content. This is
@@ -94,7 +117,7 @@ object typesMod {
       * component instead which will be used whenever the `to` or `href` props
       * exist on an item.
       */
-    var contentComponent: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var contentComponent: js.UndefOr[ElementType[Any]] = js.undefined
     
     /**
       * Boolean if the item is just a placeholder `Divider` element. None of the
@@ -139,7 +162,7 @@ object typesMod {
     
     extension [Self <: LayoutNavigationItem](x: Self) {
       
-      inline def setContentComponent(value: ElementType[js.Any]): Self = StObject.set(x, "contentComponent", value.asInstanceOf[js.Any])
+      inline def setContentComponent(value: ElementType[Any]): Self = StObject.set(x, "contentComponent", value.asInstanceOf[js.Any])
       
       inline def setContentComponentUndefined: Self = StObject.set(x, "contentComponent", js.undefined)
       

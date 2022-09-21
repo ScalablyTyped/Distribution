@@ -1,6 +1,7 @@
 package typings.reactMdLayout
 
 import typings.react.mod.ElementType
+import typings.react.mod.SetStateAction
 import typings.reactMdLayout.typesMod.LayoutNavigationTree
 import typings.reactMdTree.typesMod.BaseTreeItem
 import typings.reactMdTree.typesMod.ExpandedIds
@@ -19,7 +20,7 @@ object useLayoutNavigationMod {
   val ^ : js.Any = js.native
   
   inline def useLayoutNavigation[T /* <: BaseTreeItem */](navItems: LayoutNavigationTree[T], pathname: String): LayoutNavigationState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutNavigation")(navItems.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any])).asInstanceOf[LayoutNavigationState[T]]
-  inline def useLayoutNavigation[T /* <: BaseTreeItem */](navItems: LayoutNavigationTree[T], pathname: String, linkComponent: ElementType[js.Any]): LayoutNavigationState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutNavigation")(navItems.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], linkComponent.asInstanceOf[js.Any])).asInstanceOf[LayoutNavigationState[T]]
+  inline def useLayoutNavigation[T /* <: BaseTreeItem */](navItems: LayoutNavigationTree[T], pathname: String, linkComponent: ElementType[Any]): LayoutNavigationState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutNavigation")(navItems.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], linkComponent.asInstanceOf[js.Any])).asInstanceOf[LayoutNavigationState[T]]
   
   trait LayoutNavigationState[T /* <: BaseTreeItem */]
     extends StObject
@@ -31,7 +32,7 @@ object useLayoutNavigationMod {
       * `Link` component from `@react-md/link`, but can also be a `Link` from
       * `react-router` or another routing library.
       */
-    var linkComponent: ElementType[js.Any]
+    var linkComponent: ElementType[Any]
     
     /**
       * The navigation items to use that will be passed to the `Tree` component
@@ -43,11 +44,11 @@ object useLayoutNavigationMod {
     
     inline def apply[T /* <: BaseTreeItem */](
       expandedIds: ExpandedIds,
-      linkComponent: ElementType[js.Any],
+      linkComponent: ElementType[Any],
       navItems: LayoutNavigationTree[T],
       onItemExpansion: (TreeItemId, Boolean) => Unit,
       onItemSelect: TreeItemId => Unit,
-      onMultiItemExpansion: ExpandedIds => Unit,
+      onMultiItemExpansion: SetStateAction[ExpandedIds] => Unit,
       onMultiItemSelect: SelectedIds => Unit,
       selectedIds: SelectedIds
     ): LayoutNavigationState[T] = {
@@ -57,7 +58,7 @@ object useLayoutNavigationMod {
     
     extension [Self <: LayoutNavigationState[?], T /* <: BaseTreeItem */](x: Self & LayoutNavigationState[T]) {
       
-      inline def setLinkComponent(value: ElementType[js.Any]): Self = StObject.set(x, "linkComponent", value.asInstanceOf[js.Any])
+      inline def setLinkComponent(value: ElementType[Any]): Self = StObject.set(x, "linkComponent", value.asInstanceOf[js.Any])
       
       inline def setNavItems(value: LayoutNavigationTree[T]): Self = StObject.set(x, "navItems", value.asInstanceOf[js.Any])
     }

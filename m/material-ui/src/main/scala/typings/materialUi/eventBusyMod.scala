@@ -10,10 +10,10 @@ object eventBusyMod {
   
   @JSImport("material-ui/svg-icons/notification/event-busy", JSImport.Default)
   @js.native
-  class default () extends NotificationEventBusy
+  open class default () extends NotificationEventBusy
   
   @JSImport("material-ui/svg-icons/notification/event-busy", "NotificationEventBusy")
   @js.native
-  class NotificationEventBusy ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationEventBusy ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

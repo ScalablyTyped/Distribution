@@ -8,6 +8,6 @@ object accordionItemAccordionItemMod {
   
   @JSImport("carbon-components-react/lib/components/AccordionItem/AccordionItem", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.carbonComponentsReact.accordionItemMod.default
 }

@@ -22,6 +22,6 @@ object InstallsListResponse {
     
     inline def setInstallUndefined: Self = StObject.set(x, "install", js.undefined)
     
-    inline def setInstallVarargs(value: Install*): Self = StObject.set(x, "install", js.Array(value :_*))
+    inline def setInstallVarargs(value: Install*): Self = StObject.set(x, "install", js.Array(value*))
   }
 }

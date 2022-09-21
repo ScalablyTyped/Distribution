@@ -8,7 +8,7 @@ import typings.browserfs.keyValueFilesystemMod.AsyncKeyValueFileSystem
 import typings.browserfs.keyValueFilesystemMod.AsyncKeyValueROTransaction
 import typings.browserfs.keyValueFilesystemMod.AsyncKeyValueRWTransaction
 import typings.browserfs.keyValueFilesystemMod.AsyncKeyValueStore
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.IDBObjectStore
 import typings.std.IDBTransaction
 import org.scalablytyped.runtime.StObject
@@ -19,7 +19,7 @@ object indexedDBMod {
   
   @JSImport("browserfs/dist/node/backend/IndexedDB", JSImport.Default)
   @js.native
-  class default protected () extends AsyncKeyValueFileSystem {
+  open class default protected () extends AsyncKeyValueFileSystem {
     /**
       * **Deprecated. Use IndexedDB.Create() method instead.**
       *
@@ -60,7 +60,7 @@ object indexedDBMod {
   
   @JSImport("browserfs/dist/node/backend/IndexedDB", "IndexedDBROTransaction")
   @js.native
-  class IndexedDBROTransaction protected ()
+  open class IndexedDBROTransaction protected ()
     extends StObject
        with AsyncKeyValueROTransaction {
     def this(tx: IDBTransaction, store: IDBObjectStore) = this()
@@ -79,7 +79,7 @@ object indexedDBMod {
   
   @JSImport("browserfs/dist/node/backend/IndexedDB", "IndexedDBRWTransaction")
   @js.native
-  class IndexedDBRWTransaction protected ()
+  open class IndexedDBRWTransaction protected ()
     extends IndexedDBROTransaction
        with AsyncKeyValueRWTransaction {
     def this(tx: IDBTransaction, store: IDBObjectStore) = this()
@@ -131,15 +131,15 @@ object indexedDBMod {
   
   @JSImport("browserfs/dist/node/backend/IndexedDB", "IndexedDBStore")
   @js.native
-  class IndexedDBStore protected ()
+  open class IndexedDBStore protected ()
     extends StObject
        with AsyncKeyValueStore {
     def this(cb: BFSCallback[IndexedDBStore]) = this()
     def this(cb: BFSCallback[IndexedDBStore], storeName: String) = this()
     
-    /* private */ var db: js.Any = js.native
+    /* private */ var db: Any = js.native
     
-    /* private */ var storeName: js.Any = js.native
+    /* private */ var storeName: Any = js.native
   }
   
   type IndexedDBFileSystem = AsyncKeyValueFileSystem

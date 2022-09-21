@@ -5,12 +5,12 @@ import typings.maximMazurokGapiClientDataproc.anon.Alt
 import typings.maximMazurokGapiClientDataproc.anon.Callback
 import typings.maximMazurokGapiClientDataproc.anon.Fields
 import typings.maximMazurokGapiClientDataproc.anon.Key
-import typings.maximMazurokGapiClientDataproc.anon.Oauthtoken
 import typings.maximMazurokGapiClientDataproc.anon.Parent
 import typings.maximMazurokGapiClientDataproc.anon.PrettyPrint
 import typings.maximMazurokGapiClientDataproc.anon.QuotaUser
 import typings.maximMazurokGapiClientDataproc.anon.RequestId
 import typings.maximMazurokGapiClientDataproc.anon.Resource
+import typings.maximMazurokGapiClientDataproc.anon.UploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ trait WorkflowTemplatesResource extends StObject {
   
   def create(request: Alt, body: WorkflowTemplate): Request[WorkflowTemplate] = js.native
   /** Creates new workflow template. */
-  def create(request: Oauthtoken): Request[WorkflowTemplate] = js.native
+  def create(request: Parent): Request[WorkflowTemplate] = js.native
   
   /** Deletes a workflow template. It does not cancel in-progress workflows. */
   def delete(): Request[js.Object] = js.native
@@ -49,8 +49,8 @@ trait WorkflowTemplatesResource extends StObject {
     * (https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1#workflowmetadata). Also see Using WorkflowMetadata
     * (https://cloud.google.com/dataproc/docs/concepts/workflows/debugging#using_workflowmetadata).On successful completion, Operation.response will be Empty.
     */
-  def instantiateInline(request: Parent): Request[Operation] = js.native
-  def instantiateInline(request: RequestId, body: WorkflowTemplate): Request[Operation] = js.native
+  def instantiateInline(request: RequestId): Request[Operation] = js.native
+  def instantiateInline(request: UploadType, body: WorkflowTemplate): Request[Operation] = js.native
   
   /** Lists workflows that match the specified filter in the request. */
   def list(): Request[ListWorkflowTemplatesResponse] = js.native

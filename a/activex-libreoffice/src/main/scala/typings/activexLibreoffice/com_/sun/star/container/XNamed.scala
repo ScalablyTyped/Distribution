@@ -30,7 +30,7 @@ object XNamed {
     Name: String,
     acquire: () => Unit,
     getName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setName: String => Unit
   ): XNamed = {

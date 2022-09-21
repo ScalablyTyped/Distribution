@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap/lib", "Thumbnail")
 @js.native
-class Thumbnail () extends ^
+open class Thumbnail () extends ^

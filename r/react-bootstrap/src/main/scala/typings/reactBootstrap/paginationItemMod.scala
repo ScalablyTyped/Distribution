@@ -10,12 +10,10 @@ object paginationItemMod {
   
   @JSImport("react-bootstrap/lib/PaginationItem", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PaginationItemProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PaginationItemProps, js.Object, Any]
   
-  @js.native
-  trait PaginationItem
-    extends Component[PaginationItemProps, js.Object, js.Any]
+  type PaginationItem = Component[PaginationItemProps, js.Object, Any]
   
   trait PaginationItemProps
     extends StObject

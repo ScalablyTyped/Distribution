@@ -27,6 +27,6 @@ object FullTextCatalog {
     
     inline def setSources(value: js.Array[FullTextSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    inline def setSourcesVarargs(value: FullTextSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: FullTextSource*): Self = StObject.set(x, "sources", js.Array(value*))
   }
 }

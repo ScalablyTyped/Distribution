@@ -25,13 +25,13 @@ object mod {
     
     inline def direction(v1: js.Array[Double], v2: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("direction")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def leftRotate(out: js.Any, a: js.Any, rad: js.Any): mat3 = (^.asInstanceOf[js.Dynamic].applyDynamic("leftRotate")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], rad.asInstanceOf[js.Any])).asInstanceOf[mat3]
+    inline def leftRotate(out: Any, a: Any, rad: Any): mat3 = (^.asInstanceOf[js.Dynamic].applyDynamic("leftRotate")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], rad.asInstanceOf[js.Any])).asInstanceOf[mat3]
     
-    inline def leftScale(out: js.Any, a: js.Any, v: js.Any): mat3 = (^.asInstanceOf[js.Dynamic].applyDynamic("leftScale")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[mat3]
+    inline def leftScale(out: Any, a: Any, v: Any): mat3 = (^.asInstanceOf[js.Dynamic].applyDynamic("leftScale")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[mat3]
     
-    inline def leftTranslate(out: js.Any, a: js.Any, v: js.Any): mat3 = (^.asInstanceOf[js.Dynamic].applyDynamic("leftTranslate")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[mat3]
+    inline def leftTranslate(out: Any, a: Any, v: Any): mat3 = (^.asInstanceOf[js.Dynamic].applyDynamic("leftTranslate")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[mat3]
     
-    inline def transform(m: js.Array[Double], actions: js.Array[js.Array[js.Any]]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(m.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def transform(m: js.Array[Double], actions: js.Array[js.Array[Any]]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(m.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     inline def vertical(out: js.Array[Double], v: js.Array[Double], flag: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("vertical")(out.asInstanceOf[js.Any], v.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   }
@@ -164,7 +164,7 @@ object mod {
     
     inline def floor(out: typings.glMatrix.mod.vec2, a: ReadonlyVec2): typings.glMatrix.mod.vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("floor")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.glMatrix.mod.vec2]
     
-    inline def forEach(a: js.Any, stride: js.Any, offset: js.Any, count: js.Any, fn: js.Any, arg: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(a.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], count.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def forEach(a: Any, stride: Any, offset: Any, count: Any, fn: Any, arg: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(a.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], count.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def fromValues(x: Double, y: Double): typings.glMatrix.mod.vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValues")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.glMatrix.mod.vec2]
     
@@ -271,7 +271,7 @@ object mod {
     
     inline def floor(out: typings.glMatrix.mod.vec3, a: ReadonlyVec3): typings.glMatrix.mod.vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("floor")(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.glMatrix.mod.vec3]
     
-    inline def forEach(a: js.Any, stride: js.Any, offset: js.Any, count: js.Any, fn: js.Any, arg: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(a.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], count.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def forEach(a: Any, stride: Any, offset: Any, count: Any, fn: Any, arg: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(a.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], count.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def fromValues(x: Double, y: Double, z: Double): typings.glMatrix.mod.vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValues")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.glMatrix.mod.vec3]
     

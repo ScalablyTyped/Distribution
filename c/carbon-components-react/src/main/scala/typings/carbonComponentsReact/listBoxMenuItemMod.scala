@@ -1,8 +1,9 @@
 package typings.carbonComponentsReact
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.FC
+import typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn
 import typings.react.mod.HTMLAttributes
+import typings.react.mod.Ref
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +15,30 @@ object listBoxMenuItemMod extends Shortcut {
   @js.native
   val default: ListBoxMenuItemComponent = js.native
   
-  type ListBoxMenuItemComponent = FC[ListBoxMenuItemProps]
+  type ListBoxMenuItemComponent = ForwardRefReturn[ListBoxMenuItemForwardedRef, ListBoxMenuItemProps]
+  
+  trait ListBoxMenuItemForwardedRef extends StObject {
+    
+    var menuItemOptionRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
+  }
+  object ListBoxMenuItemForwardedRef {
+    
+    inline def apply(): ListBoxMenuItemForwardedRef = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListBoxMenuItemForwardedRef]
+    }
+    
+    extension [Self <: ListBoxMenuItemForwardedRef](x: Self) {
+      
+      inline def setMenuItemOptionRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "menuItemOptionRef", value.asInstanceOf[js.Any])
+      
+      inline def setMenuItemOptionRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "menuItemOptionRef", js.Any.fromFunction1(value))
+      
+      inline def setMenuItemOptionRefNull: Self = StObject.set(x, "menuItemOptionRef", null)
+      
+      inline def setMenuItemOptionRefUndefined: Self = StObject.set(x, "menuItemOptionRef", js.undefined)
+    }
+  }
   
   trait ListBoxMenuItemProps
     extends StObject

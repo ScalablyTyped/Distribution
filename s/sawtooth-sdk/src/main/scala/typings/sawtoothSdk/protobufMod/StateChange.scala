@@ -5,7 +5,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.StateChange.Type
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new StateChange.
   * @param [properties] Properties to set
   */
-class StateChange ()
+open class StateChange ()
   extends StObject
      with IStateChange {
   def this(properties: IStateChange) = this()
@@ -29,7 +28,7 @@ class StateChange ()
     * Converts this StateChange to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
   
   /** StateChange type. */
   @JSName("type")
@@ -37,7 +36,7 @@ class StateChange ()
   
   /** StateChange value. */
   @JSName("value")
-  var value_StateChange: Uint8Array = js.native
+  var value_StateChange: js.typedarray.Uint8Array = js.native
 }
 /* static members */
 object StateChange {
@@ -83,6 +82,8 @@ object StateChange {
   inline def create(): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[StateChange]
   inline def create(properties: IStateChange): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[StateChange]
   
+  inline def decode(reader: js.typedarray.Uint8Array): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChange]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): StateChange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StateChange]
   /**
     * Decodes a StateChange message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -93,9 +94,8 @@ object StateChange {
     */
   inline def decode(reader: Reader): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChange]
   inline def decode(reader: Reader, length: Double): StateChange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StateChange]
-  inline def decode(reader: Uint8Array): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChange]
-  inline def decode(reader: Uint8Array, length: Double): StateChange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StateChange]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChange]
   /**
     * Decodes a StateChange message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -104,7 +104,6 @@ object StateChange {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChange]
-  inline def decodeDelimited(reader: Uint8Array): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChange]
   
   /**
     * Encodes the specified StateChange message. Does not implicitly {@link StateChange.verify|verify} messages.
@@ -129,7 +128,7 @@ object StateChange {
     * @param object Plain object
     * @returns StateChange
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StateChange]
+  inline def fromObject(`object`: StringDictionary[Any]): StateChange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StateChange]
   
   /**
     * Creates a plain object from a StateChange message. Also converts values to other types if specified.
@@ -137,13 +136,13 @@ object StateChange {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: StateChange): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: StateChange, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: StateChange): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: StateChange, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a StateChange message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

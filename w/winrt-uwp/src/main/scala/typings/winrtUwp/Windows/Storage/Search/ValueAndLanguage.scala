@@ -11,11 +11,11 @@ trait ValueAndLanguage extends StObject {
   var language: String
   
   /** Gets or sets the property value for the current ValueAndLanguage . */
-  var value: js.Any
+  var value: Any
 }
 object ValueAndLanguage {
   
-  inline def apply(language: String, value: js.Any): ValueAndLanguage = {
+  inline def apply(language: String, value: Any): ValueAndLanguage = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueAndLanguage]
   }
@@ -24,6 +24,6 @@ object ValueAndLanguage {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

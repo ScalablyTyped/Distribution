@@ -24,6 +24,6 @@ object ListPolicyVersionsResponse {
     
     inline def setPolicyVersionsUndefined: Self = StObject.set(x, "policyVersions", js.undefined)
     
-    inline def setPolicyVersionsVarargs(value: PolicyVersion*): Self = StObject.set(x, "policyVersions", js.Array(value :_*))
+    inline def setPolicyVersionsVarargs(value: PolicyVersion*): Self = StObject.set(x, "policyVersions", js.Array(value*))
   }
 }

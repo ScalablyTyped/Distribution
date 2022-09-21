@@ -27,6 +27,6 @@ object EmitterOpRandomConfig {
     
     inline def setRandom(value: js.Array[Double]): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
     
-    inline def setRandomVarargs(value: Double*): Self = StObject.set(x, "random", js.Array(value :_*))
+    inline def setRandomVarargs(value: Double*): Self = StObject.set(x, "random", js.Array(value*))
   }
 }

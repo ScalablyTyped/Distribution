@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "ConvenientPatch")
 @js.native
-class ConvenientPatch ()
+open class ConvenientPatch ()
   extends typings.nodegit.convenientPatchMod.ConvenientPatch

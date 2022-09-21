@@ -33,17 +33,17 @@ object IdentityBatchInfo {
     
     inline def setDescriptors(value: js.Array[IdentityDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
-    inline def setDescriptorsVarargs(value: IdentityDescriptor*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
+    inline def setDescriptorsVarargs(value: IdentityDescriptor*): Self = StObject.set(x, "descriptors", js.Array(value*))
     
     inline def setIdentityIds(value: js.Array[String]): Self = StObject.set(x, "identityIds", value.asInstanceOf[js.Any])
     
-    inline def setIdentityIdsVarargs(value: String*): Self = StObject.set(x, "identityIds", js.Array(value :_*))
+    inline def setIdentityIdsVarargs(value: String*): Self = StObject.set(x, "identityIds", js.Array(value*))
     
     inline def setIncludeRestrictedVisibility(value: Boolean): Self = StObject.set(x, "includeRestrictedVisibility", value.asInstanceOf[js.Any])
     
     inline def setPropertyNames(value: js.Array[String]): Self = StObject.set(x, "propertyNames", value.asInstanceOf[js.Any])
     
-    inline def setPropertyNamesVarargs(value: String*): Self = StObject.set(x, "propertyNames", js.Array(value :_*))
+    inline def setPropertyNamesVarargs(value: String*): Self = StObject.set(x, "propertyNames", js.Array(value*))
     
     inline def setQueryMembership(value: QueryMembership): Self = StObject.set(x, "queryMembership", value.asInstanceOf[js.Any])
   }

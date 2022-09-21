@@ -1,21 +1,26 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
-import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientJobs.anon.CompanyName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsResource extends StObject {
   
-  var clientEvents: ClientEventsResource = js.native
+  var operations: OperationsResource
   
-  var companies: CompaniesResource = js.native
+  var tenants: TenantsResource
+}
+object ProjectsResource {
   
-  /** Completes the specified prefix with keyword suggestions. Intended for use by a job search auto-complete search box. */
-  def complete(): Request[CompleteQueryResponse] = js.native
-  def complete(request: CompanyName): Request[CompleteQueryResponse] = js.native
+  inline def apply(operations: OperationsResource, tenants: TenantsResource): ProjectsResource = {
+    val __obj = js.Dynamic.literal(operations = operations.asInstanceOf[js.Any], tenants = tenants.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProjectsResource]
+  }
   
-  var jobs: JobsResource = js.native
+  extension [Self <: ProjectsResource](x: Self) {
+    
+    inline def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    
+    inline def setTenants(value: TenantsResource): Self = StObject.set(x, "tenants", value.asInstanceOf[js.Any])
+  }
 }

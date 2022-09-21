@@ -8,5 +8,5 @@ object listTagsOfResourceOutputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/ListTagsOfResourceOutput", "ListTagsOfResourceOutput")
   @js.native
-  val ListTagsOfResourceOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListTagsOfResourceOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

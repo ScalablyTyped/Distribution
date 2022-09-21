@@ -24,7 +24,7 @@ trait LoadFontFaceOption extends StObject {
   var global: js.UndefOr[Boolean] = js.undefined
   
   /** 字体作用范围，可选值为 webview / native，默认 webview，设置 native 可在 Canvas 2D 下使用 */
-  var scopes: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var scopes: js.UndefOr[js.Array[Any]] = js.undefined
   
   /** 字体资源的地址。建议格式为 TTF 和 WOFF，WOFF2 在低版本的iOS上会不兼容。 */
   var source: String
@@ -59,11 +59,11 @@ object LoadFontFaceOption {
     
     inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
-    inline def setScopes(value: js.Array[js.Any]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: js.Array[Any]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
     inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
-    inline def setScopesVarargs(value: js.Any*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: Any*): Self = StObject.set(x, "scopes", js.Array(value*))
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

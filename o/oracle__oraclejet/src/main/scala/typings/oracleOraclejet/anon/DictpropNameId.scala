@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DictpropNameId
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
-  var id: js.Any
+  var id: Any
 }
 object DictpropNameId {
   
-  inline def apply(id: js.Any): DictpropNameId = {
+  inline def apply(id: Any): DictpropNameId = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictpropNameId]
   }
   
   extension [Self <: DictpropNameId](x: Self) {
     
-    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

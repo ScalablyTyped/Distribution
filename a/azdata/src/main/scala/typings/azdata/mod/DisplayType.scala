@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.azdata.azdataStrings.`run-in`
   - typings.azdata.azdataStrings.table
   - typings.azdata.azdataStrings.`table-caption`
-  - typings.azdata.azdataStrings.`Spacetable-column-group`
+  - typings.azdata.azdataStrings.`table-column-group`
   - typings.azdata.azdataStrings.`table-header-group`
   - typings.azdata.azdataStrings.`table-footer-group`
   - typings.azdata.azdataStrings.`table-row-group`
@@ -32,8 +32,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait DisplayType extends StObject
 object DisplayType {
-  
-  inline def `Spacetable-column-group`: typings.azdata.azdataStrings.`Spacetable-column-group` = (" table-column-group").asInstanceOf[typings.azdata.azdataStrings.`Spacetable-column-group`]
   
   inline def _empty: typings.azdata.azdataStrings._empty = "".asInstanceOf[typings.azdata.azdataStrings._empty]
   
@@ -72,6 +70,8 @@ object DisplayType {
   inline def `table-cell`: typings.azdata.azdataStrings.`table-cell` = "table-cell".asInstanceOf[typings.azdata.azdataStrings.`table-cell`]
   
   inline def `table-column`: typings.azdata.azdataStrings.`table-column` = "table-column".asInstanceOf[typings.azdata.azdataStrings.`table-column`]
+  
+  inline def `table-column-group`: typings.azdata.azdataStrings.`table-column-group` = "table-column-group".asInstanceOf[typings.azdata.azdataStrings.`table-column-group`]
   
   inline def `table-footer-group`: typings.azdata.azdataStrings.`table-footer-group` = "table-footer-group".asInstanceOf[typings.azdata.azdataStrings.`table-footer-group`]
   

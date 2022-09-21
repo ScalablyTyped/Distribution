@@ -29,7 +29,7 @@ object ListMissionProfilesResponse {
     
     inline def setMissionProfileListUndefined: Self = StObject.set(x, "missionProfileList", js.undefined)
     
-    inline def setMissionProfileListVarargs(value: MissionProfileListItem*): Self = StObject.set(x, "missionProfileList", js.Array(value :_*))
+    inline def setMissionProfileListVarargs(value: MissionProfileListItem*): Self = StObject.set(x, "missionProfileList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

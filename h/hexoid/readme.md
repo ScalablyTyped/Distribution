@@ -10,10 +10,10 @@ A tiny (190B) and extremely fast utility to generate random IDs of fixed length
 | ------------------ | :-------------: |
 | Full name          | hexoid |
 | Keywords           | id, uid, uuid, random, generate |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 108127 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7307312.333333333 |
+| # stars            | 149.0 |
 
 ## Links
 - [Homepage](https://github.com/lukeed/hexoid#readme)

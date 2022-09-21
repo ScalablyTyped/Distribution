@@ -14,9 +14,8 @@ trait InstanceGroupManagerActionsSummary extends StObject {
   
   /**
     * [Output Only] The number of instances in the managed instance group that are scheduled to be created or are currently being created. If the group fails to create any of these
-    * instances, it tries again until it creates the instance successfully.
-    *
-    * If you have disabled creation retries, this field will not be populated; instead, the creatingWithoutRetries field will be populated.
+    * instances, it tries again until it creates the instance successfully. If you have disabled creation retries, this field will not be populated; instead, the creatingWithoutRetries
+    * field will be populated.
     */
   var creating: js.UndefOr[Double] = js.undefined
   

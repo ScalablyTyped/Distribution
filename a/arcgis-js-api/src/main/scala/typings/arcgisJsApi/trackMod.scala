@@ -25,7 +25,7 @@ object trackMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Track {
     def this(properties: TrackProperties) = this()
@@ -36,9 +36,9 @@ object trackMod extends Shortcut {
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GoTo.html#goToOverride)
       */
     /* CompleteClass */
-    override def goToOverride(view: MapView, goToParameters: js.Any): Unit = js.native
+    override def goToOverride(view: MapView, goToParameters: Any): Unit = js.native
     /* CompleteClass */
-    override def goToOverride(view: SceneView, goToParameters: js.Any): Unit = js.native
+    override def goToOverride(view: SceneView, goToParameters: Any): Unit = js.native
     /**
       * This function provides the ability to override either the [MapView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#goTo) or [SceneView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo) methods.
       *

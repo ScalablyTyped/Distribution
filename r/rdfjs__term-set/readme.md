@@ -1,19 +1,19 @@
 
 # Scala.js typings for rdfjs__term-set
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
-Set for RDFJS Terms
+Set for RDF/JS Terms
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/term-set |
 | Keywords           | rdf, rdfjs, set, term |
-| # releases         | 4 |
-| # dependents       | 9 |
-| # downloads        | 4868 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 36951.666666666664 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/term-set)

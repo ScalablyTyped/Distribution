@@ -12,7 +12,7 @@ object hoganjsUtilsMod {
   
   @JSImport("diff2html/lib/hoganjs-utils", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with HoganJsUtils {
     def this(hasCompiledTemplatesRawTemplates: HoganJsUtilsConfig) = this()
@@ -32,7 +32,7 @@ object hoganjsUtilsMod {
   @js.native
   trait HoganJsUtils extends StObject {
     
-    /* private */ var preCompiledTemplates: js.Any = js.native
+    /* private */ var preCompiledTemplates: Any = js.native
     
     def render(namespace: String, view: String, params: Context): String = js.native
     def render(namespace: String, view: String, params: Context, partials: Unit, indent: String): String = js.native
@@ -41,7 +41,7 @@ object hoganjsUtilsMod {
     
     def template(namespace: String, view: String): Template_ = js.native
     
-    /* private */ var templateKey: js.Any = js.native
+    /* private */ var templateKey: Any = js.native
   }
   
   trait HoganJsUtilsConfig extends StObject {

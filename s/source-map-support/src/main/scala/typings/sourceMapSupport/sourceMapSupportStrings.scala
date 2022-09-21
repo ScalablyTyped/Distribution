@@ -1,5 +1,6 @@
 package typings.sourceMapSupport
 
+import typings.sourceMapSupport.mod.Environment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,14 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sourceMapSupportStrings {
   
   @js.native
-  sealed trait auto extends StObject
+  sealed trait auto
+    extends StObject
+       with Environment
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait browser extends StObject
+  sealed trait browser
+    extends StObject
+       with Environment
   inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
-  sealed trait node extends StObject
+  sealed trait node
+    extends StObject
+       with Environment
   inline def node: node = "node".asInstanceOf[node]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // 设备-----手机联系人
 trait PhoneContact
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /** 联系地址城市 */
   var addressCity: js.UndefOr[String] = js.undefined

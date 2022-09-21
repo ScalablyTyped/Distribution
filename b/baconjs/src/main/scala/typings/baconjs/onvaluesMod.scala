@@ -11,5 +11,5 @@ object onvaluesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(args: js.Any*): Unsub = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[Unsub]
+  inline def default(args: Any*): Unsub = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unsub]
 }

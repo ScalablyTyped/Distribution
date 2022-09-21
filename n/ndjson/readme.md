@@ -11,9 +11,9 @@ Streaming newline delimited json parser + serializer
 | Full name          | ndjson |
 | Keywords           | ndjson, ldjson |
 | # releases         | 2 |
-| # dependents       | 255 |
-| # downloads        | 15522090 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1170436.0 |
+| # stars            | 78.0 |
 
 ## Links
 - [Homepage](https://github.com/ndjson/ndjson.js)

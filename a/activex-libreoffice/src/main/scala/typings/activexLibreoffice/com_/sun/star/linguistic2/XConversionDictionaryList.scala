@@ -87,7 +87,7 @@ object XConversionDictionaryList {
     addNewDictionary: (String, Locale, Double) => XConversionDictionary,
     getDictionaryContainer: () => XNameContainer,
     queryConversions: (String, Double, Double, Locale, Double, ConversionDirection, Double) => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryMaxCharCount: (Locale, Double, ConversionDirection) => Double,
     release: () => Unit
   ): XConversionDictionaryList = {

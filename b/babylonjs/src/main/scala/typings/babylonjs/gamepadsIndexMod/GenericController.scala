@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Gamepads/index", "GenericController")
 @js.native
-class GenericController protected ()
+open class GenericController protected ()
   extends typings.babylonjs.controllersIndexMod.GenericController {
   /**
     * Creates a new GenericController from a gamepad
     * @param vrGamepad the gamepad that the controller should be created from
     */
-  def this(vrGamepad: js.Any) = this()
+  def this(vrGamepad: Any) = this()
 }
 /* static members */
 object GenericController {

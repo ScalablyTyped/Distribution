@@ -10,15 +10,12 @@ Angular service & directive for https://github.com/mozilla/localForage (Offline 
 | ------------------ | :-------------: |
 | Full name          | angular-localforage |
 | Keywords           | localstorage, local-storage, localForage, indexDB, webSQL, storage, module, angular, angularJS |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 83233 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6676.0 |
+| # stars            | 662.0 |
 
 ## Links
-- [Homepage](https://github.com/ocombe/angular-localForage)
-- [Bugs](https://github.com/ocombe/angular-localForage/issues)
-- [Repository](https://github.com/ocombe/angular-localForage)
 - [Npm](https://www.npmjs.com/package/angular-localforage)
     
 

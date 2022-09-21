@@ -18,14 +18,14 @@ trait DeliveryTime extends StObject {
   /** Maximum number of business days spent before an order is shipped. 0 means same day shipped, 1 means next day shipped. Must be greater than or equal to `minHandlingTimeInDays`. */
   var maxHandlingTimeInDays: js.UndefOr[Double] = js.undefined
   
-  /** Maximum number of business days that is spent in transit. 0 means same day delivery, 1 means next day delivery. Must be greater than or equal to `minTransitTimeInDays`. */
+  /** Maximum number of business days that are spent in transit. 0 means same day delivery, 1 means next day delivery. Must be greater than or equal to `minTransitTimeInDays`. */
   var maxTransitTimeInDays: js.UndefOr[Double] = js.undefined
   
   /** Minimum number of business days spent before an order is shipped. 0 means same day shipped, 1 means next day shipped. */
   var minHandlingTimeInDays: js.UndefOr[Double] = js.undefined
   
   /**
-    * Minimum number of business days that is spent in transit. 0 means same day delivery, 1 means next day delivery. Either `{min,max}TransitTimeInDays` or `transitTimeTable` must be
+    * Minimum number of business days that are spent in transit. 0 means same day delivery, 1 means next day delivery. Either `{min,max}TransitTimeInDays` or `transitTimeTable` must be
     * set, but not both.
     */
   var minTransitTimeInDays: js.UndefOr[Double] = js.undefined
@@ -35,6 +35,12 @@ trait DeliveryTime extends StObject {
   
   /** Transit time table, number of business days spent in transit based on row and column dimensions. Either `{min,max}TransitTimeInDays` or `transitTimeTable` can be set, but not both. */
   var transitTimeTable: js.UndefOr[TransitTable] = js.undefined
+  
+  /**
+    * Indicates that the delivery time should be calculated per warehouse (shipping origin location) based on the settings of the selected carrier. When set, no other transit time related
+    * field in DeliveryTime should be set.
+    */
+  var warehouseBasedDeliveryTimes: js.UndefOr[js.Array[WarehouseBasedDeliveryTime]] = js.undefined
 }
 object DeliveryTime {
   
@@ -57,7 +63,7 @@ object DeliveryTime {
     
     inline def setHolidayCutoffsUndefined: Self = StObject.set(x, "holidayCutoffs", js.undefined)
     
-    inline def setHolidayCutoffsVarargs(value: HolidayCutoff*): Self = StObject.set(x, "holidayCutoffs", js.Array(value :_*))
+    inline def setHolidayCutoffsVarargs(value: HolidayCutoff*): Self = StObject.set(x, "holidayCutoffs", js.Array(value*))
     
     inline def setMaxHandlingTimeInDays(value: Double): Self = StObject.set(x, "maxHandlingTimeInDays", value.asInstanceOf[js.Any])
     
@@ -82,5 +88,11 @@ object DeliveryTime {
     inline def setTransitTimeTable(value: TransitTable): Self = StObject.set(x, "transitTimeTable", value.asInstanceOf[js.Any])
     
     inline def setTransitTimeTableUndefined: Self = StObject.set(x, "transitTimeTable", js.undefined)
+    
+    inline def setWarehouseBasedDeliveryTimes(value: js.Array[WarehouseBasedDeliveryTime]): Self = StObject.set(x, "warehouseBasedDeliveryTimes", value.asInstanceOf[js.Any])
+    
+    inline def setWarehouseBasedDeliveryTimesUndefined: Self = StObject.set(x, "warehouseBasedDeliveryTimes", js.undefined)
+    
+    inline def setWarehouseBasedDeliveryTimesVarargs(value: WarehouseBasedDeliveryTime*): Self = StObject.set(x, "warehouseBasedDeliveryTimes", js.Array(value*))
   }
 }

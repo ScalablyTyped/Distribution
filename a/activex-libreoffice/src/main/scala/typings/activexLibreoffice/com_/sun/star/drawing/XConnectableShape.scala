@@ -22,7 +22,7 @@ object XConnectableShape {
     acquire: () => Unit,
     canConnect: (Point, Boolean, Double) => Boolean,
     doConnect: (Point, Boolean, Double) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XConnectableShape = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), canConnect = js.Any.fromFunction3(canConnect), doConnect = js.Any.fromFunction3(doConnect), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

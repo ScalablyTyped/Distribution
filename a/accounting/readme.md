@@ -10,15 +10,13 @@ number, money and currency formatting library
 | ------------------ | :-------------: |
 | Full name          | accounting |
 | Keywords           | accounting, number, money, currency, format, utilities, finance, exchange |
-| # releases         | 0 |
-| # dependents       | 212 |
-| # downloads        | 10430701 |
-| # stars            | 24 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1106837.3333333333 |
+| # stars            | 4822.0 |
 
 ## Links
 - [Homepage](http://openexchangerates.github.io/accounting.js)
-- [Bugs](https://github.com/openexchangerates/accounting.js/issues)
-- [Repository](https://github.com/openexchangerates/accounting.js)
 - [Npm](https://www.npmjs.com/package/accounting)
     
 

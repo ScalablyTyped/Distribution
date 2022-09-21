@@ -84,7 +84,7 @@ object syntaxWalkerMod {
   
   @JSImport("tslint/lib/language/walker/syntaxWalker", "SyntaxWalker")
   @js.native
-  class SyntaxWalker () extends StObject {
+  open class SyntaxWalker () extends StObject {
     
     /* protected */ def visitAnyKeyword(node: Node): Unit = js.native
     

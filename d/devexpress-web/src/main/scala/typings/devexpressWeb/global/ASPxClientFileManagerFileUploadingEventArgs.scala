@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFileManagerFileUploadingEventArgs")
 @js.native
-class ASPxClientFileManagerFileUploadingEventArgs protected ()
+open class ASPxClientFileManagerFileUploadingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFileManagerFileUploadingEventArgs {
   /**

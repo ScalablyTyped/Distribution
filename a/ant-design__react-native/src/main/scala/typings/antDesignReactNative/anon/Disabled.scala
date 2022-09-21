@@ -12,19 +12,19 @@ trait Disabled extends StObject {
   var loading: Boolean = js.native
   
   def onHideUnderlay(): Unit = js.native
-  def onHideUnderlay(_underscore: js.Any): Unit = js.native
+  def onHideUnderlay(_underscore: Any): Unit = js.native
   
   def onPress(): Unit = js.native
-  def onPress(_underscore: js.Any): Unit = js.native
+  def onPress(_underscore: Any): Unit = js.native
   
   def onPressIn(): Unit = js.native
-  def onPressIn(_underscore: js.Any): Unit = js.native
+  def onPressIn(_underscore: Any): Unit = js.native
   
   def onPressOut(): Unit = js.native
-  def onPressOut(_underscore: js.Any): Unit = js.native
+  def onPressOut(_underscore: Any): Unit = js.native
   
   def onShowUnderlay(): Unit = js.native
-  def onShowUnderlay(_underscore: js.Any): Unit = js.native
+  def onShowUnderlay(_underscore: Any): Unit = js.native
   
   var pressIn: Boolean = js.native
 }

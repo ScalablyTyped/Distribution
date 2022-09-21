@@ -12,6 +12,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SliderViewModelProperties extends StObject {
   
   /**
+    * When set, the user is restricted from moving slider thumbs to positions higher than this value.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#effectiveMax)
+    */
+  var effectiveMax: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * When set, the user is restricted from moving slider thumbs to positions less than this value.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#effectiveMin)
+    */
+  var effectiveMin: js.UndefOr[Double] = js.undefined
+  
+  /**
     * A function used to format user inputs.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputFormatFunction)
@@ -49,12 +63,16 @@ trait SliderViewModelProperties extends StObject {
   /**
     * Defines how slider values should be rounded.
     *
+    * @default 4
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#precision)
     */
   var precision: js.UndefOr[Double] = js.undefined
   
   /**
     * When `false`, the user can freely move any slider thumb to any position along the track.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#thumbsConstrained)
     */
@@ -75,6 +93,14 @@ object SliderViewModelProperties {
   }
   
   extension [Self <: SliderViewModelProperties](x: Self) {
+    
+    inline def setEffectiveMax(value: Double): Self = StObject.set(x, "effectiveMax", value.asInstanceOf[js.Any])
+    
+    inline def setEffectiveMaxUndefined: Self = StObject.set(x, "effectiveMax", js.undefined)
+    
+    inline def setEffectiveMin(value: Double): Self = StObject.set(x, "effectiveMin", value.asInstanceOf[js.Any])
+    
+    inline def setEffectiveMinUndefined: Self = StObject.set(x, "effectiveMin", js.undefined)
     
     inline def setInputFormatFunction(
       value: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String
@@ -114,6 +140,6 @@ object SliderViewModelProperties {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

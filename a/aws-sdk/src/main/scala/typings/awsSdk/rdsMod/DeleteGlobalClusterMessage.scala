@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteGlobalClusterMessage extends StObject {
   
   /**
-    *  The cluster identifier of the global database cluster being deleted. 
+    * The cluster identifier of the global database cluster being deleted.
     */
   var GlobalClusterIdentifier: String
 }

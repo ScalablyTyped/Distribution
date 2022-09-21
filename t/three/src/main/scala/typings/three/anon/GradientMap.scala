@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GradientMap extends StObject {
   
-  var gradientMap: IUniform
+  var gradientMap: IUniform[Any]
 }
 object GradientMap {
   
-  inline def apply(gradientMap: IUniform): GradientMap = {
+  inline def apply(gradientMap: IUniform[Any]): GradientMap = {
     val __obj = js.Dynamic.literal(gradientMap = gradientMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[GradientMap]
   }
   
   extension [Self <: GradientMap](x: Self) {
     
-    inline def setGradientMap(value: IUniform): Self = StObject.set(x, "gradientMap", value.asInstanceOf[js.Any])
+    inline def setGradientMap(value: IUniform[Any]): Self = StObject.set(x, "gradientMap", value.asInstanceOf[js.Any])
   }
 }

@@ -61,7 +61,7 @@ object DatafeedStatus {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: DatafeedStatusError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: DatafeedStatusError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setItemsTotal(value: String): Self = StObject.set(x, "itemsTotal", value.asInstanceOf[js.Any])
     
@@ -91,6 +91,6 @@ object DatafeedStatus {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: DatafeedStatusError*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: DatafeedStatusError*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

@@ -46,7 +46,7 @@ trait colorGetSchemesByTagParams
   /**
     * The geometry type of the features to visualize.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemesByTag)
+    * [Read more...](global.html#geometryType)
     */
   var geometryType: point | multipoint | polyline | polygon | mesh | multipatch
   
@@ -105,7 +105,7 @@ object colorGetSchemesByTagParams {
     
     inline def setExcludedTagsUndefined: Self = StObject.set(x, "excludedTags", js.undefined)
     
-    inline def setExcludedTagsVarargs(value: String*): Self = StObject.set(x, "excludedTags", js.Array(value :_*))
+    inline def setExcludedTagsVarargs(value: String*): Self = StObject.set(x, "excludedTags", js.Array(value*))
     
     inline def setGeometryType(value: point | multipoint | polyline | polygon | mesh | multipatch): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
@@ -113,7 +113,7 @@ object colorGetSchemesByTagParams {
     
     inline def setIncludedTagsUndefined: Self = StObject.set(x, "includedTags", js.undefined)
     
-    inline def setIncludedTagsVarargs(value: String*): Self = StObject.set(x, "includedTags", js.Array(value :_*))
+    inline def setIncludedTagsVarargs(value: String*): Self = StObject.set(x, "includedTags", js.Array(value*))
     
     inline def setTheme(value: `high-to-low` | `above-and-below` | `centered-on` | extremes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     

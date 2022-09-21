@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
-  * Represents the AutoFilter object.
+  * Represents the `AutoFilter` object.
   AutoFilter turns the values in Excel column into specific filters based on the cell contents.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait AutoFilterLoadOptions extends StObject {
@@ -20,25 +20,25 @@ trait AutoFilterLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * An array that holds all the filter criteria in the autofiltered range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var criteria: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the AutoFilter is enabled.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the AutoFilter has filter criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var isDataFiltered: js.UndefOr[Boolean] = js.undefined

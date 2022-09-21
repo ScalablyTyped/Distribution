@@ -48,7 +48,7 @@ trait PeopleManager
   def getPropertiesFor(accountName: String): PersonProperties = js.native
   
   /** Gets the specified user profile properties for the specified user. */
-  def getUserProfilePropertiesFor(propertiesForUser: UserProfilePropertiesForUser): js.Array[js.Any] = js.native
+  def getUserProfilePropertiesFor(propertiesForUser: UserProfilePropertiesForUser): js.Array[Any] = js.native
   
   /** Gets the specified user profile property for the specified user. */
   def getUserProfilePropertyFor(accountName: String, propertyName: String): String = js.native

@@ -9,10 +9,7 @@ trait PivotHeader extends StObject {
   /** The size is the same as the cardinality of the corresponding dimension combinations. */
   var pivotDimensionHeaders: js.UndefOr[js.Array[PivotDimensionHeader]] = js.undefined
   
-  /**
-    * The cardinality of the pivot as if offset = 0 and limit = -1. The total number of rows for this pivot's fields regardless of how the parameters offset and limit are specified in the
-    * request.
-    */
+  /** The cardinality of the pivot. The total number of rows for this pivot's fields regardless of how the parameters `offset` and `limit` are specified in the request. */
   var rowCount: js.UndefOr[Double] = js.undefined
 }
 object PivotHeader {
@@ -28,7 +25,7 @@ object PivotHeader {
     
     inline def setPivotDimensionHeadersUndefined: Self = StObject.set(x, "pivotDimensionHeaders", js.undefined)
     
-    inline def setPivotDimensionHeadersVarargs(value: PivotDimensionHeader*): Self = StObject.set(x, "pivotDimensionHeaders", js.Array(value :_*))
+    inline def setPivotDimensionHeadersVarargs(value: PivotDimensionHeader*): Self = StObject.set(x, "pivotDimensionHeaders", js.Array(value*))
     
     inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     

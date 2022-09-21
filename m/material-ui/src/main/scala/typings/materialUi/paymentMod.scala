@@ -10,10 +10,10 @@ object paymentMod {
   
   @JSImport("material-ui/svg-icons/action/payment", JSImport.Default)
   @js.native
-  class default () extends ActionPayment
+  open class default () extends ActionPayment
   
   @JSImport("material-ui/svg-icons/action/payment", "ActionPayment")
   @js.native
-  class ActionPayment ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionPayment ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

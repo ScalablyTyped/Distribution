@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_testing
 
-Typings are for version 1.0.20201106
+Typings are for version 1.0.20220806
 
 ## Library description:
 TypeScript typings for Cloud Testing API v1
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Testing API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.testing |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 987 |
-| # stars            | 0 |
+| # releases         | 77 |
+| # dependents       | 0.0 |
+| # downloads        | 892.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

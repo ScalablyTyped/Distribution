@@ -11,18 +11,18 @@ trait OperationLoader extends StObject {
     * Synchronously load an operation, returning either the node or null if it
     * cannot be resolved synchronously.
     */
-  def get(reference: js.Any): js.UndefOr[NormalizationSplitOperation | Null]
+  def get(reference: Any): js.UndefOr[NormalizationSplitOperation | Null]
   
   /**
     * Asynchronously load an operation.
     */
-  def load(reference: js.Any): js.Promise[js.UndefOr[NormalizationSplitOperation | Null]]
+  def load(reference: Any): js.Promise[js.UndefOr[NormalizationSplitOperation | Null]]
 }
 object OperationLoader {
   
   inline def apply(
-    get: js.Any => js.UndefOr[NormalizationSplitOperation | Null],
-    load: js.Any => js.Promise[js.UndefOr[NormalizationSplitOperation | Null]]
+    get: Any => js.UndefOr[NormalizationSplitOperation | Null],
+    load: Any => js.Promise[js.UndefOr[NormalizationSplitOperation | Null]]
   ): OperationLoader = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), load = js.Any.fromFunction1(load))
     __obj.asInstanceOf[OperationLoader]
@@ -30,8 +30,8 @@ object OperationLoader {
   
   extension [Self <: OperationLoader](x: Self) {
     
-    inline def setGet(value: js.Any => js.UndefOr[NormalizationSplitOperation | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: Any => js.UndefOr[NormalizationSplitOperation | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    inline def setLoad(value: js.Any => js.Promise[js.UndefOr[NormalizationSplitOperation | Null]]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: Any => js.Promise[js.UndefOr[NormalizationSplitOperation | Null]]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
   }
 }

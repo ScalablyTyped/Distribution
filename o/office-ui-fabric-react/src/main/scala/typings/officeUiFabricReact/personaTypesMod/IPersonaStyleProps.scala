@@ -19,7 +19,7 @@ trait IPersonaStyleProps extends StObject {
   
   /**
     * Presence of the person to display - will not display presence if undefined.
-    * @defaultvalue PersonaPresence.none
+    * @default PersonaPresence.none
     */
   var presence: js.UndefOr[PersonaPresence] = js.undefined
   
@@ -27,7 +27,7 @@ trait IPersonaStyleProps extends StObject {
   
   /**
     * Decides the size of the control.
-    * @defaultvalue PersonaSize.size48
+    * @default PersonaSize.size48
     */
   var size: js.UndefOr[PersonaSize] = js.undefined
   

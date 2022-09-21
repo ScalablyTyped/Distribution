@@ -16,6 +16,8 @@ trait BuildingGroupSublayer
   /**
     * Indicates how the sublayer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
     *
+    * @default show
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingGroupSublayer.html#listMode)
     */
   var listMode: show | hide | `hide-children` = js.native

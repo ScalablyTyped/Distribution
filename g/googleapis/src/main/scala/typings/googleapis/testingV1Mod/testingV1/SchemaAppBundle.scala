@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An Android App Bundle file format, containing a BundleConfig.pb file, a
-  * base module directory, zero or more dynamic feature module directories.
-  * &lt;p&gt;See https://developer.android.com/guide/app-bundle/build for
-  * guidance on building App Bundles.
-  */
 trait SchemaAppBundle extends StObject {
   
   /**

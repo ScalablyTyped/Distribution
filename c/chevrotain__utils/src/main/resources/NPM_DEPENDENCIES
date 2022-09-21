@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@chevrotain/utils" : "10.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@chevrotain/utils" : "10.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,5 @@
 package typings.awsSdkClientCodecommitNode
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +31,7 @@ object typesRepositoryMetadataMod {
     /**
       * <p>The date and time the repository was created, in timestamp format.</p>
       */
-    var creationDate: js.UndefOr[Date | String | Double] = js.undefined
+    var creationDate: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The repository's default branch name.</p>
@@ -42,7 +41,7 @@ object typesRepositoryMetadataMod {
     /**
       * <p>The date and time the repository was last modified, in timestamp format.</p>
       */
-    var lastModifiedDate: js.UndefOr[Date | String | Double] = js.undefined
+    var lastModifiedDate: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>A comment or description about the repository.</p>
@@ -84,7 +83,7 @@ object typesRepositoryMetadataMod {
       
       inline def setCloneUrlSshUndefined: Self = StObject.set(x, "cloneUrlSsh", js.undefined)
       
-      inline def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: js.Date | String | Double): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
       inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
       
@@ -92,7 +91,7 @@ object typesRepositoryMetadataMod {
       
       inline def setDefaultBranchUndefined: Self = StObject.set(x, "defaultBranch", js.undefined)
       
-      inline def setLastModifiedDate(value: Date | String | Double): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+      inline def setLastModifiedDate(value: js.Date | String | Double): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
       
       inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
       
@@ -118,13 +117,13 @@ object typesRepositoryMetadataMod {
       * <p>The date and time the repository was created, in timestamp format.</p>
       */
     @JSName("creationDate")
-    var creationDate_UnmarshalledRepositoryMetadata: js.UndefOr[Date] = js.undefined
+    var creationDate_UnmarshalledRepositoryMetadata: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>The date and time the repository was last modified, in timestamp format.</p>
       */
     @JSName("lastModifiedDate")
-    var lastModifiedDate_UnmarshalledRepositoryMetadata: js.UndefOr[Date] = js.undefined
+    var lastModifiedDate_UnmarshalledRepositoryMetadata: js.UndefOr[js.Date] = js.undefined
   }
   object UnmarshalledRepositoryMetadata {
     
@@ -135,11 +134,11 @@ object typesRepositoryMetadataMod {
     
     extension [Self <: UnmarshalledRepositoryMetadata](x: Self) {
       
-      inline def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
       inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
       
-      inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+      inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
       
       inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     }

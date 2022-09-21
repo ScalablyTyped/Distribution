@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeChannelModeratedByAppInstanceUserRequest extends StObject {
   
   /**
-    * The ARN of the app instance user in the moderated channel.
+    * The ARN of the AppInstanceUser in the moderated channel.
     */
   var AppInstanceUserArn: ChimeArn
   
@@ -15,6 +15,11 @@ trait DescribeChannelModeratedByAppInstanceUserRequest extends StObject {
     * The ARN of the moderated channel.
     */
   var ChannelArn: ChimeArn
+  
+  /**
+    * The AppInstanceUserArn of the user that makes the API call.
+    */
+  var ChimeBearer: js.UndefOr[ChimeArn] = js.undefined
 }
 object DescribeChannelModeratedByAppInstanceUserRequest {
   
@@ -28,5 +33,9 @@ object DescribeChannelModeratedByAppInstanceUserRequest {
     inline def setAppInstanceUserArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
     
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearerUndefined: Self = StObject.set(x, "ChimeBearer", js.undefined)
   }
 }

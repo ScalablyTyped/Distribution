@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("jsprintmanager", "JSPM.JSPMWebSocket")
 @js.native
-class JSPMWebSocket () extends StObject {
+open class JSPMWebSocket () extends StObject {
   def this(addr: String) = this()
   def this(addr: String, port: Double) = this()
   def this(addr: Unit, port: Double) = this()
@@ -23,31 +23,31 @@ class JSPMWebSocket () extends StObject {
   def this(addr: Unit, port: Unit, secure: Boolean, auto_reconnect: Boolean) = this()
   def this(addr: Unit, port: Unit, secure: Unit, auto_reconnect: Boolean) = this()
   
-  /* private */ var _addr: js.Any = js.native
+  /* private */ var _addr: Any = js.native
   
-  /* private */ def _genID(): js.Any = js.native
+  /* private */ def _genID(): Any = js.native
   
-  /* private */ var _job_list: js.Any = js.native
+  /* private */ var _job_list: Any = js.native
   
-  /* private */ def _onClose(e: js.Any, __this: js.Any): js.Any = js.native
+  /* private */ def _onClose(e: Any, __this: Any): Any = js.native
   
-  /* private */ def _onError(e: js.Any): js.Any = js.native
+  /* private */ def _onError(e: Any): Any = js.native
   
-  /* private */ def _onMessage(e: js.Any, job_list: js.Any): js.Any = js.native
+  /* private */ def _onMessage(e: Any, job_list: Any): Any = js.native
   
-  /* private */ def _onOpen(e: js.Any, __this: js.Any): js.Any = js.native
+  /* private */ def _onOpen(e: Any, __this: Any): Any = js.native
   
-  /* private */ def _pingPong(): js.Any = js.native
+  /* private */ def _pingPong(): Any = js.native
   
-  /* private */ var _port: js.Any = js.native
+  /* private */ var _port: Any = js.native
   
-  /* private */ var _secure: js.Any = js.native
+  /* private */ var _secure: Any = js.native
   
-  /* private */ def _send(data: js.Any, ok: js.Any, err: js.Any): js.Any = js.native
+  /* private */ def _send(data: Any, ok: Any, err: Any): Any = js.native
   
-  /* private */ var _status: js.Any = js.native
+  /* private */ var _status: Any = js.native
   
-  /* private */ var _ws: js.Any = js.native
+  /* private */ var _ws: Any = js.native
   
   val address: String = js.native
   
@@ -55,15 +55,15 @@ class JSPMWebSocket () extends StObject {
   
   val isSecure: Boolean = js.native
   
-  def onClose(e: js.Any): Unit = js.native
+  def onClose(e: Any): Unit = js.native
   
-  def onOpen(e: js.Any): Unit = js.native
+  def onOpen(e: Any): Unit = js.native
   
   def onStatusChanged(): Unit = js.native
   
   val port: Double = js.native
   
-  def send(data: js.Any): js.Promise[js.Any] = js.native
+  def send(data: Any): js.Promise[Any] = js.native
   
   def start(): js.Promise[Unit] = js.native
   

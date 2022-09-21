@@ -1,11 +1,19 @@
 package typings.tensorflowTfjsBackendWebgl
 
+import typings.tensorflowTfjsBackendWebgl.anon.AttrsNonMaxSuppressionV4Attrs
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
+import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nonMaxSuppressionV4Mod {
+  
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/NonMaxSuppressionV4", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def nonMaxSuppressionV4(args: AttrsNonMaxSuppressionV4Attrs): js.Tuple2[TensorInfo, TensorInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionV4")(args.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[TensorInfo, TensorInfo]]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/NonMaxSuppressionV4", "nonMaxSuppressionV4Config")
   @js.native

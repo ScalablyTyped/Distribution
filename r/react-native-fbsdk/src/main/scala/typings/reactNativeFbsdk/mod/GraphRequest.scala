@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-fbsdk", "GraphRequest")
 @js.native
-class GraphRequest protected () extends StObject {
+open class GraphRequest protected () extends StObject {
   /**
     * Constructs a new Graph API request.
     */

@@ -1,108 +1,98 @@
 package typings.firebaseFunctions
 
-import typings.firebaseAppTypes.privateMod.FirebaseService
-import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternalName
-import typings.firebaseComponent.mod.Provider
-import typings.firebaseFunctions.anon.Delete
+import typings.firebaseApp.mod.FirebaseApp
 import typings.firebaseFunctions.anon.Details
 import typings.firebaseFunctions.anon.FnCall
-import typings.firebaseFunctions.mod.FirebaseApp
-import typings.firebaseFunctionsTypes.mod.FirebaseFunctions
-import typings.firebaseMessagingTypes.mod.FirebaseMessagingName
+import typings.firebaseFunctions.contextMod.ContextProvider
+import typings.firebaseFunctions.publicTypesMod.HttpsCallable
+import typings.firebaseFunctions.publicTypesMod.HttpsCallableOptions
 import typings.std.RequestInfo
 import typings.std.RequestInit
 import typings.std.Response
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceMod {
   
-  @JSImport("@firebase/functions/dist/src/api/service", "Service")
+  @JSImport("@firebase/functions/dist/esm-node/src/service", JSImport.Namespace)
   @js.native
-  class Service protected ()
-    extends FirebaseFunctions
-       with FirebaseService {
+  val ^ : js.Any = js.native
+  
+  @JSImport("@firebase/functions/dist/esm-node/src/service", "DEFAULT_REGION")
+  @js.native
+  val DEFAULT_REGION: /* "us-central1" */ String = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _FirebaseService * / any */ @JSImport("@firebase/functions/dist/esm-node/src/service", "FunctionsService")
+  @js.native
+  open class FunctionsService protected () extends StObject {
     /**
-      * Creates a new Functions service for the given app and (optional) region or custom domain.
-      * @param app_ The FirebaseApp to use.
-      * @param regionOrCustomDomain_ one of:
-      *   a) A region to call functions from, such as us-central1
-      *   b) A custom domain to use as a functions prefix, such as https://mydomain.com
+      * Creates a new Functions service for the given app.
+      * @param app - The FirebaseApp to use.
       */
     def this(
-      app_ : FirebaseApp,
-      authProvider: Provider[FirebaseAuthInternalName],
-      messagingProvider: Provider[FirebaseMessagingName],
-      regionOrCustomDomain_ : String,
+      app: FirebaseApp,
+      authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
+      messagingProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<MessagingInternalComponentName> */ Any,
+      appCheckProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<AppCheckInternalComponentName> */ Any,
+      regionOrCustomDomain: String,
       fetchImpl: FnCall
     ) = this()
     def this(
-      app_ : FirebaseApp,
-      authProvider: Provider[FirebaseAuthInternalName],
-      messagingProvider: Provider[FirebaseMessagingName],
-      regionOrCustomDomain_ : Unit,
+      app: FirebaseApp,
+      authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
+      messagingProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<MessagingInternalComponentName> */ Any,
+      appCheckProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<AppCheckInternalComponentName> */ Any,
+      regionOrCustomDomain: Unit,
       fetchImpl: FnCall
     ) = this()
     
-    @JSName("INTERNAL")
-    var INTERNAL_Service: Delete = js.native
+    def _delete(): js.Promise[Unit] = js.native
     
     /**
       * Returns the URL for a callable with the given name.
-      * @param name The name of the callable.
+      * @param name - The name of the callable.
+      * @internal
       */
     def _url(name: String): String = js.native
     
-    /* CompleteClass */
-    var app: typings.firebaseAppTypes.mod.FirebaseApp = js.native
+    val app: FirebaseApp = js.native
     
-    /* private */ var app_ : js.Any = js.native
+    var cancelAllRequests: js.Promise[Unit] = js.native
     
-    @JSName("app")
-    def app_MService: FirebaseApp = js.native
+    val contextProvider: ContextProvider = js.native
     
-    /**
-      * Calls a callable function asynchronously and returns the result.
-      * @param name The name of the callable trigger.
-      * @param data The data to pass as params to the function.s
-      */
-    /* private */ var call: js.Any = js.native
+    var customDomain: String | Null = js.native
     
-    /* private */ var cancelAllRequests: js.Any = js.native
+    def deleteService(): js.Promise[Unit] = js.native
     
-    /* private */ val contextProvider: js.Any = js.native
-    
-    /* private */ var customDomain: js.Any = js.native
-    
-    /* private */ var deleteService: js.Any = js.native
-    
-    /* private */ var emulatorOrigin: js.Any = js.native
+    var emulatorOrigin: String | Null = js.native
     
     def fetchImpl(input: RequestInfo): js.Promise[Response] = js.native
     def fetchImpl(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
+    def fetchImpl(input: URL): js.Promise[Response] = js.native
+    def fetchImpl(input: URL, init: RequestInit): js.Promise[Response] = js.native
     
-    /**
-      * Does an HTTP POST and returns the completed response.
-      * @param url The url to post to.
-      * @param body The JSON body of the post.
-      * @param headers The HTTP headers to include in the request.
-      * @return A Promise that will succeed when the request finishes.
-      */
-    /* private */ var postJSON: js.Any = js.native
-    
-    /* private */ var region: js.Any = js.native
-    
-    /* private */ val serializer: js.Any = js.native
+    var region: String = js.native
   }
+  
+  inline def connectFunctionsEmulator(functionsInstance: FunctionsService, host: String, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectFunctionsEmulator")(functionsInstance.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def httpsCallable[RequestData, ResponseData](functionsInstance: FunctionsService, name: String): HttpsCallable[RequestData, ResponseData] = (^.asInstanceOf[js.Dynamic].applyDynamic("httpsCallable")(functionsInstance.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HttpsCallable[RequestData, ResponseData]]
+  inline def httpsCallable[RequestData, ResponseData](functionsInstance: FunctionsService, name: String, options: HttpsCallableOptions): HttpsCallable[RequestData, ResponseData] = (^.asInstanceOf[js.Dynamic].applyDynamic("httpsCallable")(functionsInstance.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HttpsCallable[RequestData, ResponseData]]
+  
+  inline def httpsCallableFromURL[RequestData, ResponseData](functionsInstance: FunctionsService, url: String): HttpsCallable[RequestData, ResponseData] = (^.asInstanceOf[js.Dynamic].applyDynamic("httpsCallableFromURL")(functionsInstance.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[HttpsCallable[RequestData, ResponseData]]
+  inline def httpsCallableFromURL[RequestData, ResponseData](functionsInstance: FunctionsService, url: String, options: HttpsCallableOptions): HttpsCallable[RequestData, ResponseData] = (^.asInstanceOf[js.Dynamic].applyDynamic("httpsCallableFromURL")(functionsInstance.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HttpsCallable[RequestData, ResponseData]]
   
   trait HttpResponseBody extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var error: js.UndefOr[Details] = js.undefined
     
-    var result: js.UndefOr[js.Any] = js.undefined
+    var result: js.UndefOr[Any] = js.undefined
   }
   object HttpResponseBody {
     
@@ -113,7 +103,7 @@ object serviceMod {
     
     extension [Self <: HttpResponseBody](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -121,7 +111,7 @@ object serviceMod {
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     }

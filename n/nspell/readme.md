@@ -10,10 +10,10 @@ Hunspell compatible spell checker
 | ------------------ | :-------------: |
 | Full name          | nspell |
 | Keywords           | spell, spellcheck, spellchecker, spell check, spell checker, check, spelling, myspell, hunspell |
-| # releases         | 4 |
-| # dependents       | 12 |
-| # downloads        | 478553 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 42592.666666666664 |
+| # stars            | 231.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/nspell#readme)

@@ -2,33 +2,34 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.Instantiable2
 import typings.rxjs.actionMod.Action
-import typings.rxjs.typesMod.SchedulerLike
+import typings.rxjs.internalTypesMod.SchedulerAction
+import typings.rxjs.internalTypesMod.SchedulerLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schedulerMod {
   
-  @JSImport("rxjs/internal/Scheduler", "Scheduler")
+  @JSImport("rxjs/dist/types/internal/Scheduler", "Scheduler")
   @js.native
-  class Scheduler protected ()
+  open class Scheduler protected ()
     extends StObject
        with SchedulerLike {
-    def this(SchedulerAction: Instantiable2[
+    def this(schedulerActionCtor: Instantiable2[
             /* scheduler */ Scheduler, 
             /* work */ js.ThisFunction1[
-              /* this */ typings.rxjs.typesMod.SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
-              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+              /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
+              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
               Unit
             ], 
             Action[js.Object]
           ]) = this()
     def this(
-      SchedulerAction: Instantiable2[
+      schedulerActionCtor: Instantiable2[
             /* scheduler */ Scheduler, 
             /* work */ js.ThisFunction1[
-              /* this */ typings.rxjs.typesMod.SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
-              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+              /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
+              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
               Unit
             ], 
             Action[js.Object]
@@ -36,20 +37,24 @@ object schedulerMod {
       now: js.Function0[Double]
     ) = this()
     
-    /* private */ var SchedulerAction: js.Any = js.native
+    /**
+      * Returns a timestamp as a number.
+      *
+      * This is used by types like `ReplaySubject` or operators like `timestamp` to calculate
+      * the amount of time passed between events.
+      */
+    /* CompleteClass */
+    override def now(): Double = js.native
+    
+    /* private */ var schedulerActionCtor: Any = js.native
   }
   /* static members */
   object Scheduler {
     
-    @JSImport("rxjs/internal/Scheduler", "Scheduler")
+    @JSImport("rxjs/dist/types/internal/Scheduler", "Scheduler")
     @js.native
     val ^ : js.Any = js.native
     
-    /**
-      * Note: the extra arrow function wrapper is to make testing by overriding
-      * Date.now easier.
-      * @nocollapse
-      */
     inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   }
 }

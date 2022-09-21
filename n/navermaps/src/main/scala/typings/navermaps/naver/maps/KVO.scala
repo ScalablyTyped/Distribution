@@ -11,29 +11,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait KVO extends StObject {
   
-  def addListener(eventName: js.Any, listener: js.Function0[js.Any]): MapEventListener = js.native
+  def addListener(eventName: Any, listener: js.Function0[Any]): MapEventListener = js.native
   
-  def addListenerOnce(eventName: js.Any, listener: js.Function0[js.Any]): MapEventListener = js.native
+  def addListenerOnce(eventName: Any, listener: js.Function0[Any]): MapEventListener = js.native
   
   def bindTo(key: String, target: KVO): Unit = js.native
   def bindTo(key: String, target: KVO, targetKey: String): Unit = js.native
   
   def clearListeners(eventName: String): Unit = js.native
   
-  def get(key: String): js.Any = js.native
+  def get(key: String): Any = js.native
   
   def hasListener(eventName: String): Boolean = js.native
   
   def removeListener(listeners: js.Array[MapEventListener]): Unit = js.native
   def removeListener(listeners: MapEventListener): Unit = js.native
   
-  def set(key: String, value: js.Any): Unit = js.native
-  def set(key: String, value: js.Any, silently: Boolean): Unit = js.native
+  def set(key: String, value: Any): Unit = js.native
+  def set(key: String, value: Any, silently: Boolean): Unit = js.native
   
-  def setValues(properties: js.Any): Unit = js.native
+  def setValues(properties: Any): Unit = js.native
   
   def trigger(eventName: String): Unit = js.native
-  def trigger(eventName: String, eventObject: js.Any): Unit = js.native
+  def trigger(eventName: String, eventObject: Any): Unit = js.native
   
   def unbind(key: String): Unit = js.native
   

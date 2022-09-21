@@ -19,19 +19,16 @@ trait PageToken extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** If set, only issues for the specified destinations are returned, otherwise only issues for the Shopping destination. */
-  var destinations: js.UndefOr[String | js.Array[String]] = js.undefined
-  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The maximum number of product statuses to return in the response, used for paging. */
+  /** The maximum number of shipping settings to return in the response, used for paging. */
   var maxResults: js.UndefOr[Double] = js.undefined
   
-  /** The ID of the account that contains the products. This account cannot be a multi-client account. */
+  /** The ID of the managing account. This must be a multi-client account. */
   var merchantId: String
   
   /** OAuth 2.0 token for the current user. */
@@ -76,12 +73,6 @@ object PageToken {
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
-    
-    inline def setDestinations(value: String | js.Array[String]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
-    
-    inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
-    
-    inline def setDestinationsVarargs(value: String*): Self = StObject.set(x, "destinations", js.Array(value :_*))
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

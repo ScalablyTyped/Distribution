@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DashboardDataAxisNames")
 @js.native
-class DashboardDataAxisNames ()
+open class DashboardDataAxisNames ()
   extends StObject
      with typings.devexpressWeb.DashboardDataAxisNames
 object DashboardDataAxisNames {

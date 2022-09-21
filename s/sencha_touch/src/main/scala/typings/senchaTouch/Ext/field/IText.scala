@@ -115,7 +115,7 @@ trait IText
   var setReadOnly: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Property] (String/Number) */
-  var startValue: js.UndefOr[js.Any] = js.undefined
+  var startValue: js.UndefOr[Any] = js.undefined
 }
 object IText {
   
@@ -218,7 +218,7 @@ object IText {
     
     inline def setSetReadOnlyUndefined: Self = StObject.set(x, "setReadOnly", js.undefined)
     
-    inline def setStartValue(value: js.Any): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
+    inline def setStartValue(value: Any): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
     
     inline def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
   }

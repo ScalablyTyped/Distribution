@@ -29,7 +29,7 @@ object EntityErrors {
     
     inline def setEntityErrors(value: js.Array[EntityError]): Self = StObject.set(x, "entityErrors", value.asInstanceOf[js.Any])
     
-    inline def setEntityErrorsVarargs(value: EntityError*): Self = StObject.set(x, "entityErrors", js.Array(value :_*))
+    inline def setEntityErrorsVarargs(value: EntityError*): Self = StObject.set(x, "entityErrors", js.Array(value*))
     
     inline def setHttpResponse(value: HttpResponse): Self = StObject.set(x, "httpResponse", value.asInstanceOf[js.Any])
     

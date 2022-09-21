@@ -19,7 +19,7 @@ trait GeoJSON extends StObject {
   /**
     * Additional meta information based on the coordinate reference system.
     */
-  var crs: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var crs: js.UndefOr[Dictionary[Any]] = js.undefined
   
   /**
     * Data sets of geographic features.
@@ -69,13 +69,13 @@ object GeoJSON {
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
-    inline def setCrs(value: Dictionary[js.Any]): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
+    inline def setCrs(value: Dictionary[Any]): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
     
     inline def setCrsUndefined: Self = StObject.set(x, "crs", js.undefined)
     
     inline def setFeatures(value: js.Array[GeoJSONFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    inline def setFeaturesVarargs(value: GeoJSONFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: GeoJSONFeature*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def `setHc-transform`(value: Dictionary[GeoJSONTranslation]): Self = StObject.set(x, "hc-transform", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,7 @@ object mod {
     
     var childrenOnly: js.UndefOr[Boolean] = js.undefined
     
-    var getNodeKey: js.UndefOr[js.Function1[/* node */ Node, js.Any]] = js.undefined
+    var getNodeKey: js.UndefOr[js.Function1[/* node */ Node, Any]] = js.undefined
     
     var onBeforeElChildrenUpdated: js.UndefOr[js.Function2[/* fromEl */ HTMLElement, /* toEl */ HTMLElement, Boolean]] = js.undefined
     
@@ -50,7 +50,7 @@ object mod {
       
       inline def setChildrenOnlyUndefined: Self = StObject.set(x, "childrenOnly", js.undefined)
       
-      inline def setGetNodeKey(value: /* node */ Node => js.Any): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
+      inline def setGetNodeKey(value: /* node */ Node => Any): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
       
       inline def setGetNodeKeyUndefined: Self = StObject.set(x, "getNodeKey", js.undefined)
       

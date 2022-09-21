@@ -6,25 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetConductCode extends StObject {
   
-  var getAllCodesOfConduct: `673`
+  var getAllCodesOfConduct: `960`
   
-  var getConductCode: `674`
-  
-  var getForRepo: `675`
+  var getConductCode: `961`
 }
 object GetConductCode {
   
-  inline def apply(getAllCodesOfConduct: `673`, getConductCode: `674`, getForRepo: `675`): GetConductCode = {
-    val __obj = js.Dynamic.literal(getAllCodesOfConduct = getAllCodesOfConduct.asInstanceOf[js.Any], getConductCode = getConductCode.asInstanceOf[js.Any], getForRepo = getForRepo.asInstanceOf[js.Any])
+  inline def apply(getAllCodesOfConduct: `960`, getConductCode: `961`): GetConductCode = {
+    val __obj = js.Dynamic.literal(getAllCodesOfConduct = getAllCodesOfConduct.asInstanceOf[js.Any], getConductCode = getConductCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConductCode]
   }
   
   extension [Self <: GetConductCode](x: Self) {
     
-    inline def setGetAllCodesOfConduct(value: `673`): Self = StObject.set(x, "getAllCodesOfConduct", value.asInstanceOf[js.Any])
+    inline def setGetAllCodesOfConduct(value: `960`): Self = StObject.set(x, "getAllCodesOfConduct", value.asInstanceOf[js.Any])
     
-    inline def setGetConductCode(value: `674`): Self = StObject.set(x, "getConductCode", value.asInstanceOf[js.Any])
-    
-    inline def setGetForRepo(value: `675`): Self = StObject.set(x, "getForRepo", value.asInstanceOf[js.Any])
+    inline def setGetConductCode(value: `961`): Self = StObject.set(x, "getConductCode", value.asInstanceOf[js.Any])
   }
 }

@@ -14,7 +14,7 @@ object hash extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sjcl", "hash.ripemd160")
   @js.native
-  class ripemd160 ()
+  open class ripemd160 ()
     extends StObject
        with SjclHash {
     def this(hash: SjclHash) = this()
@@ -23,7 +23,7 @@ object hash extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sjcl", "hash.sha1")
   @js.native
-  class sha1 ()
+  open class sha1 ()
     extends StObject
        with SjclHash {
     def this(hash: SjclHash) = this()
@@ -32,7 +32,7 @@ object hash extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sjcl", "hash.sha256")
   @js.native
-  class sha256 ()
+  open class sha256 ()
     extends StObject
        with SjclHash {
     def this(hash: SjclHash) = this()
@@ -41,7 +41,7 @@ object hash extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sjcl", "hash.sha512")
   @js.native
-  class sha512 ()
+  open class sha512 ()
     extends StObject
        with SjclHash {
     def this(hash: SjclHash) = this()

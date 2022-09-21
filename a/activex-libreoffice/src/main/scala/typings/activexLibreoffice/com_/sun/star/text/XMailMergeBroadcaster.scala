@@ -35,7 +35,7 @@ object XMailMergeBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addMailMergeEventListener: XMailMergeListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeMailMergeEventListener: XMailMergeListener => Unit
   ): XMailMergeBroadcaster = {

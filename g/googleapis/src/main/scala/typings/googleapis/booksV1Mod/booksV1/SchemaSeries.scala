@@ -10,9 +10,9 @@ trait SchemaSeries extends StObject {
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
-  var series: js.UndefOr[js.Array[BannerImageUrl]] = js.undefined
+  var series: js.UndefOr[js.Array[BannerImageUrl] | Null] = js.undefined
 }
 object SchemaSeries {
   
@@ -25,12 +25,16 @@ object SchemaSeries {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setSeries(value: js.Array[BannerImageUrl]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
+    inline def setSeriesNull: Self = StObject.set(x, "series", null)
+    
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: BannerImageUrl*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: BannerImageUrl*): Self = StObject.set(x, "series", js.Array(value*))
   }
 }

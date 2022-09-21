@@ -8,5 +8,5 @@ object describeLimitsInputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/DescribeLimitsInput", "DescribeLimitsInput")
   @js.native
-  val DescribeLimitsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DescribeLimitsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -11,9 +11,9 @@ Typings are for version 2.1
 | Full name          | system-logger |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 847 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 84.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/leocwlam/system-logger#readme)

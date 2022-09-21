@@ -7,14 +7,19 @@ import typings.carbonComponentsReact.typingsSharedMod.TooltipAlignment
 import typings.carbonComponentsReact.typingsSharedMod.TooltipPosition
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
 import typings.std.HTMLButtonElement
 import typings.std.HTMLInputElement
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlledPasswordInputMod extends Shortcut {
   
+  /**
+    * @deprecated
+    */
   @JSImport("carbon-components-react/lib/components/TextInput/ControlledPasswordInput", JSImport.Default)
   @js.native
   val default: ForwardRefReturn[HTMLInputElement, ControlledPasswordInputProps] = js.native
@@ -22,6 +27,10 @@ object controlledPasswordInputMod extends Shortcut {
   trait ControlledPasswordInputProps
     extends StObject
        with TextInputSharedProps {
+    
+    var hidePasswordLabel: js.UndefOr[String] = js.undefined
+    
+    var showPasswordLabel: js.UndefOr[String] = js.undefined
     
     var size: js.UndefOr[String] = js.undefined
     
@@ -33,12 +42,20 @@ object controlledPasswordInputMod extends Shortcut {
   }
   object ControlledPasswordInputProps {
     
-    inline def apply(id: String): ControlledPasswordInputProps = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    inline def apply(id: String, labelText: NonNullable[ReactNode]): ControlledPasswordInputProps = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], labelText = labelText.asInstanceOf[js.Any])
       __obj.asInstanceOf[ControlledPasswordInputProps]
     }
     
     extension [Self <: ControlledPasswordInputProps](x: Self) {
+      
+      inline def setHidePasswordLabel(value: String): Self = StObject.set(x, "hidePasswordLabel", value.asInstanceOf[js.Any])
+      
+      inline def setHidePasswordLabelUndefined: Self = StObject.set(x, "hidePasswordLabel", js.undefined)
+      
+      inline def setShowPasswordLabel(value: String): Self = StObject.set(x, "showPasswordLabel", value.asInstanceOf[js.Any])
+      
+      inline def setShowPasswordLabelUndefined: Self = StObject.set(x, "showPasswordLabel", js.undefined)
       
       inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

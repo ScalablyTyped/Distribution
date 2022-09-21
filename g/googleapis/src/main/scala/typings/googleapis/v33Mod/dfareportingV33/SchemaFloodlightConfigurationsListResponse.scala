@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Floodlight Configuration List Response
-  */
 trait SchemaFloodlightConfigurationsListResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaFloodlightConfigurationsListResponse extends StObject {
   var floodlightConfigurations: js.UndefOr[js.Array[SchemaFloodlightConfiguration]] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#floodlightConfigurationsListResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#floodlightConfigurationsListResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFloodlightConfigurationsListResponse {
   
@@ -33,9 +29,11 @@ object SchemaFloodlightConfigurationsListResponse {
     
     inline def setFloodlightConfigurationsUndefined: Self = StObject.set(x, "floodlightConfigurations", js.undefined)
     
-    inline def setFloodlightConfigurationsVarargs(value: SchemaFloodlightConfiguration*): Self = StObject.set(x, "floodlightConfigurations", js.Array(value :_*))
+    inline def setFloodlightConfigurationsVarargs(value: SchemaFloodlightConfiguration*): Self = StObject.set(x, "floodlightConfigurations", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

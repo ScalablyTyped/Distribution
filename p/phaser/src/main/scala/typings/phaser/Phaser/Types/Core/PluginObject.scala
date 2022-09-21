@@ -41,22 +41,22 @@ object PluginObject {
     
     inline def setDefaultMergeUndefined: Self = StObject.set(x, "defaultMerge", js.undefined)
     
-    inline def setDefaultMergeVarargs(value: String*): Self = StObject.set(x, "defaultMerge", js.Array(value :_*))
+    inline def setDefaultMergeVarargs(value: String*): Self = StObject.set(x, "defaultMerge", js.Array(value*))
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    inline def setDefaultVarargs(value: String*): Self = StObject.set(x, "default", js.Array(value :_*))
+    inline def setDefaultVarargs(value: String*): Self = StObject.set(x, "default", js.Array(value*))
     
     inline def setGlobal(value: js.Array[PluginObjectItem]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
-    inline def setGlobalVarargs(value: PluginObjectItem*): Self = StObject.set(x, "global", js.Array(value :_*))
+    inline def setGlobalVarargs(value: PluginObjectItem*): Self = StObject.set(x, "global", js.Array(value*))
     
     inline def setScene(value: js.Array[PluginObjectItem]): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     inline def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
     
-    inline def setSceneVarargs(value: PluginObjectItem*): Self = StObject.set(x, "scene", js.Array(value :_*))
+    inline def setSceneVarargs(value: PluginObjectItem*): Self = StObject.set(x, "scene", js.Array(value*))
   }
 }

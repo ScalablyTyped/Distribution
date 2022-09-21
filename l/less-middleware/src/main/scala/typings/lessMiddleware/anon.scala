@@ -1,8 +1,7 @@
 package typings.lessMiddleware
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,7 +67,13 @@ object anon {
         js.Function4[
           /* pathname */ String, 
           /* css */ String, 
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
           /* next */ js.Function, 
           Unit
         ]
@@ -120,7 +125,13 @@ object anon {
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
       inline def setStoreCss(
-        value: (/* pathname */ String, /* css */ String, /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* next */ js.Function) => Unit
+        value: (/* pathname */ String, /* css */ String, /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* next */ js.Function) => Unit
       ): Self = StObject.set(x, "storeCss", js.Any.fromFunction4(value))
       
       inline def setStoreCssUndefined: Self = StObject.set(x, "storeCss", js.undefined)
@@ -129,7 +140,7 @@ object anon {
   
   trait Compress extends StObject {
     
-    var compress: js.UndefOr[String] = js.undefined
+    var compress: js.UndefOr[String | Boolean] = js.undefined
     
     var paths: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -144,7 +155,7 @@ object anon {
     
     extension [Self <: Compress](x: Self) {
       
-      inline def setCompress(value: String): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      inline def setCompress(value: String | Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
       inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
@@ -152,7 +163,7 @@ object anon {
       
       inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value*))
       
       inline def setYuicompress(value: Boolean): Self = StObject.set(x, "yuicompress", value.asInstanceOf[js.Any])
       
@@ -168,7 +179,13 @@ object anon {
     var css: js.UndefOr[
         js.Function2[
           /* css */ String, 
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
           String
         ]
       ] = js.undefined
@@ -182,7 +199,15 @@ object anon {
     
     extension [Self <: Css](x: Self) {
       
-      inline def setCss(value: (/* css */ String, /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query]) => String): Self = StObject.set(x, "css", js.Any.fromFunction2(value))
+      inline def setCss(
+        value: (/* css */ String, /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ]) => String
+      ): Self = StObject.set(x, "css", js.Any.fromFunction2(value))
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     }
@@ -196,7 +221,13 @@ object anon {
     var importPaths: js.UndefOr[
         js.Function2[
           /* paths */ js.Array[String], 
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
           js.Array[String]
         ]
       ] = js.undefined
@@ -207,7 +238,13 @@ object anon {
     var less: js.UndefOr[
         js.Function2[
           /* css */ String, 
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
           String
         ]
       ] = js.undefined
@@ -218,7 +255,13 @@ object anon {
     var path: js.UndefOr[
         js.Function2[
           /* pathname */ String, 
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
           String
         ]
       ] = js.undefined
@@ -233,17 +276,37 @@ object anon {
     extension [Self <: ImportPaths](x: Self) {
       
       inline def setImportPaths(
-        value: (/* paths */ js.Array[String], /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query]) => js.Array[String]
+        value: (/* paths */ js.Array[String], /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ]) => js.Array[String]
       ): Self = StObject.set(x, "importPaths", js.Any.fromFunction2(value))
       
       inline def setImportPathsUndefined: Self = StObject.set(x, "importPaths", js.undefined)
       
-      inline def setLess(value: (/* css */ String, /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query]) => String): Self = StObject.set(x, "less", js.Any.fromFunction2(value))
+      inline def setLess(
+        value: (/* css */ String, /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ]) => String
+      ): Self = StObject.set(x, "less", js.Any.fromFunction2(value))
       
       inline def setLessUndefined: Self = StObject.set(x, "less", js.undefined)
       
       inline def setPath(
-        value: (/* pathname */ String, /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query]) => String
+        value: (/* pathname */ String, /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ]) => String
       ): Self = StObject.set(x, "path", js.Any.fromFunction2(value))
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)

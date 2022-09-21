@@ -1,24 +1,21 @@
 
 # Scala.js typings for antv__util
 
-Typings are for version 2.0.9
+Typings are for version 3.3.0
 
 ## Library description:
-A common util collection for antv projects
+> AntV 底层依赖的工具库，不建议在自己业务中使用。
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @antv/util |
-| Keywords           | util, antv, g |
-| # releases         | 14 |
-| # dependents       | 70 |
-| # downloads        | 4212530 |
-| # stars            | 0 |
+| Keywords           | util, antv |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 595753.3333333334 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/antvis/util#readme)
-- [Bugs](https://github.com/antvis/util/issues)
-- [Repository](https://github.com/antvis/util)
 - [Npm](https://www.npmjs.com/package/%40antv%2Futil)
     
 

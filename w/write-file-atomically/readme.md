@@ -11,9 +11,9 @@ Promisified version of write-file-atomic
 | Full name          | write-file-atomically |
 | Keywords           | write, output, create, fs, file, atomic, atomically, files, async, asynchronous, asynchronously, promise, then |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 47882 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 191.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/shinnn/write-file-atomically#readme)

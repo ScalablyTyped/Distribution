@@ -89,7 +89,7 @@ object QTip2 {
     def focus(): Api = js.native
     def focus(event: Event): Api = js.native
     
-    def get(propertyName: String): js.Any = js.native
+    def get(propertyName: String): Any = js.native
     @JSName("get")
     def get_content(propertyName: content): Content = js.native
     @JSName("get")
@@ -127,7 +127,7 @@ object QTip2 {
     @JSName("get")
     def get_hidedistance(propertyName: hideDotdistance): Double | Boolean = js.native
     @JSName("get")
-    def get_hideeffect(propertyName: hideDoteffect): Boolean | (js.Function1[/* offset */ js.Any, Unit]) = js.native
+    def get_hideeffect(propertyName: hideDoteffect): Boolean | (js.Function1[/* offset */ Any, Unit]) = js.native
     @JSName("get")
     def get_hideevent(propertyName: hideDotevent): String | Boolean = js.native
     @JSName("get")
@@ -137,7 +137,7 @@ object QTip2 {
     @JSName("get")
     def get_id(propertyName: id): String | Boolean = js.native
     @JSName("get")
-    def get_metadata(propertyName: metadata): js.Any = js.native
+    def get_metadata(propertyName: metadata): Any = js.native
     @JSName("get")
     def get_overwrite(propertyName: overwrite): Boolean = js.native
     @JSName("get")
@@ -149,7 +149,7 @@ object QTip2 {
     @JSName("get")
     def get_positioncontainer(propertyName: positionDotcontainer): JQuery | Boolean = js.native
     @JSName("get")
-    def get_positioneffect(propertyName: positionDoteffect): Boolean | (js.Function3[/* api */ js.Any, /* pos */ js.Any, /* viewport */ js.Any, Unit]) = js.native
+    def get_positioneffect(propertyName: positionDoteffect): Boolean | (js.Function3[/* api */ Any, /* pos */ Any, /* viewport */ Any, Unit]) = js.native
     @JSName("get")
     def get_positionmy(propertyName: positionDotmy): String | Boolean = js.native
     @JSName("get")
@@ -163,7 +163,7 @@ object QTip2 {
     @JSName("get")
     def get_showdelay(propertyName: showDotdelay): Double = js.native
     @JSName("get")
-    def get_showeffect(propertyName: showDoteffect): Boolean | (js.Function1[/* offset */ js.Any, Unit]) = js.native
+    def get_showeffect(propertyName: showDoteffect): Boolean | (js.Function1[/* offset */ Any, Unit]) = js.native
     @JSName("get")
     def get_showevent(propertyName: showDotevent): String | Boolean = js.native
     @JSName("get")
@@ -200,7 +200,7 @@ object QTip2 {
     def reposition(event: Event, effect: Boolean): Api = js.native
     
     def set(properties: QTipOptions): Api = js.native
-    def set(propertyName: String, value: js.Any): Api = js.native
+    def set(propertyName: String, value: Any): Api = js.native
     @JSName("set")
     def set_content(propertyName: content, value: Content): Api = js.native
     @JSName("set")
@@ -246,7 +246,7 @@ object QTip2 {
     @JSName("set")
     def set_hidedistance(propertyName: hideDotdistance, value: Double): Api = js.native
     @JSName("set")
-    def set_hideeffect(propertyName: hideDoteffect, value: js.Function1[/* offset */ js.Any, Unit]): Api = js.native
+    def set_hideeffect(propertyName: hideDoteffect, value: js.Function1[/* offset */ Any, Unit]): Api = js.native
     @JSName("set")
     def set_hideeffect(propertyName: hideDoteffect, value: Boolean): Api = js.native
     @JSName("set")
@@ -272,7 +272,7 @@ object QTip2 {
     @JSName("set")
     def set_id(propertyName: id, value: Boolean): Api = js.native
     @JSName("set")
-    def set_metadata(propertyName: metadata, value: js.Any): Api = js.native
+    def set_metadata(propertyName: metadata, value: Any): Api = js.native
     @JSName("set")
     def set_overwrite(propertyName: overwrite, value: Boolean): Api = js.native
     @JSName("set")
@@ -290,7 +290,7 @@ object QTip2 {
     @JSName("set")
     def set_positioneffect(
       propertyName: positionDoteffect,
-      value: js.Function3[/* api */ this.type, /* pos */ js.Any, /* viewport */ js.Any, Unit]
+      value: js.Function3[/* api */ this.type, /* pos */ Any, /* viewport */ Any, Unit]
     ): Api = js.native
     @JSName("set")
     def set_positioneffect(propertyName: positionDoteffect, value: Boolean): Api = js.native
@@ -313,7 +313,7 @@ object QTip2 {
     @JSName("set")
     def set_showdelay(propertyName: showDotdelay, value: Double): Api = js.native
     @JSName("set")
-    def set_showeffect(propertyName: showDoteffect, value: js.Function1[/* offset */ js.Any, Unit]): Api = js.native
+    def set_showeffect(propertyName: showDoteffect, value: js.Function1[/* offset */ Any, Unit]): Api = js.native
     @JSName("set")
     def set_showeffect(propertyName: showDoteffect, value: Boolean): Api = js.native
     @JSName("set")
@@ -498,7 +498,7 @@ object QTip2 {
     
     var distance: js.UndefOr[Double | Boolean] = js.undefined
     
-    var effect: js.UndefOr[Boolean | (js.Function1[/* offset */ js.Any, Unit])] = js.undefined
+    var effect: js.UndefOr[Boolean | (js.Function1[/* offset */ Any, Unit])] = js.undefined
     
     var event: js.UndefOr[String | Boolean] = js.undefined
     
@@ -527,9 +527,9 @@ object QTip2 {
       
       inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
       
-      inline def setEffect(value: Boolean | (js.Function1[/* offset */ js.Any, Unit])): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: Boolean | (js.Function1[/* offset */ Any, Unit])): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
       
-      inline def setEffectFunction1(value: /* offset */ js.Any => Unit): Self = StObject.set(x, "effect", js.Any.fromFunction1(value))
+      inline def setEffectFunction1(value: /* offset */ Any => Unit): Self = StObject.set(x, "effect", js.Any.fromFunction1(value))
       
       inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
       
@@ -559,7 +559,7 @@ object QTip2 {
     
     var blur: js.UndefOr[Boolean] = js.undefined
     
-    var effect: js.UndefOr[Boolean | (js.Function1[/* state */ js.Any, Unit])] = js.undefined
+    var effect: js.UndefOr[Boolean | (js.Function1[/* state */ Any, Unit])] = js.undefined
     
     var escape: js.UndefOr[Boolean] = js.undefined
     
@@ -580,9 +580,9 @@ object QTip2 {
       
       inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
       
-      inline def setEffect(value: Boolean | (js.Function1[/* state */ js.Any, Unit])): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: Boolean | (js.Function1[/* state */ Any, Unit])): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
       
-      inline def setEffectFunction1(value: /* state */ js.Any => Unit): Self = StObject.set(x, "effect", js.Any.fromFunction1(value))
+      inline def setEffectFunction1(value: /* state */ Any => Unit): Self = StObject.set(x, "effect", js.Any.fromFunction1(value))
       
       inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
       
@@ -604,14 +604,14 @@ object QTip2 {
   trait Plugin extends StObject {
     
     def apply(): JQuery = js.native
-    def apply(methodName: String): js.Any = js.native
-    def apply(methodName: String, p1: js.Any): js.Any = js.native
-    def apply(methodName: String, p1: js.Any, p2: js.Any): js.Any = js.native
-    def apply(methodName: String, p1: js.Any, p2: js.Any, p3: js.Any): js.Any = js.native
-    def apply(methodName: String, p1: js.Any, p2: Unit, p3: js.Any): js.Any = js.native
-    def apply(methodName: String, p1: Unit, p2: js.Any): js.Any = js.native
-    def apply(methodName: String, p1: Unit, p2: js.Any, p3: js.Any): js.Any = js.native
-    def apply(methodName: String, p1: Unit, p2: Unit, p3: js.Any): js.Any = js.native
+    def apply(methodName: String): Any = js.native
+    def apply(methodName: String, p1: Any): Any = js.native
+    def apply(methodName: String, p1: Any, p2: Any): Any = js.native
+    def apply(methodName: String, p1: Any, p2: Any, p3: Any): Any = js.native
+    def apply(methodName: String, p1: Any, p2: Unit, p3: Any): Any = js.native
+    def apply(methodName: String, p1: Unit, p2: Any): Any = js.native
+    def apply(methodName: String, p1: Unit, p2: Any, p3: Any): Any = js.native
+    def apply(methodName: String, p1: Unit, p2: Unit, p3: Any): Any = js.native
     def apply(methodName: api): Api = js.native
     def apply(methodName: blur): JQuery = js.native
     def apply(methodName: blur, event: Event): JQuery = js.native
@@ -664,8 +664,8 @@ object QTip2 {
     def apply(methodName: option, propertyName: hideDotdistance): Double | Boolean = js.native
     def apply(methodName: option, propertyName: hideDotdistance, value: Boolean): Api = js.native
     def apply(methodName: option, propertyName: hideDotdistance, value: Double): Api = js.native
-    def apply(methodName: option, propertyName: hideDoteffect): Boolean | (js.Function1[/* offset */ js.Any, Unit]) = js.native
-    def apply(methodName: option, propertyName: hideDoteffect, value: js.Function1[/* offset */ js.Any, Unit]): Api = js.native
+    def apply(methodName: option, propertyName: hideDoteffect): Boolean | (js.Function1[/* offset */ Any, Unit]) = js.native
+    def apply(methodName: option, propertyName: hideDoteffect, value: js.Function1[/* offset */ Any, Unit]): Api = js.native
     def apply(methodName: option, propertyName: hideDoteffect, value: Boolean): Api = js.native
     def apply(methodName: option, propertyName: hideDotevent): String | Boolean = js.native
     def apply(methodName: option, propertyName: hideDotevent, value: String): Api = js.native
@@ -683,8 +683,8 @@ object QTip2 {
     def apply(methodName: option, propertyName: id): String | Boolean = js.native
     def apply(methodName: option, propertyName: id, value: String): Api = js.native
     def apply(methodName: option, propertyName: id, value: Boolean): Api = js.native
-    def apply(methodName: option, propertyName: metadata): js.Any = js.native
-    def apply(methodName: option, propertyName: metadata, value: js.Any): Api = js.native
+    def apply(methodName: option, propertyName: metadata): Any = js.native
+    def apply(methodName: option, propertyName: metadata, value: Any): Api = js.native
     def apply(methodName: option, propertyName: overwrite): Boolean = js.native
     def apply(methodName: option, propertyName: overwrite, value: Boolean): Api = js.native
     def apply(methodName: option, propertyName: position): Position = js.native
@@ -696,11 +696,11 @@ object QTip2 {
     def apply(methodName: option, propertyName: positionDotcontainer): JQuery | Boolean = js.native
     def apply(methodName: option, propertyName: positionDotcontainer, value: Boolean): Api = js.native
     def apply(methodName: option, propertyName: positionDotcontainer, value: JQuery): Api = js.native
-    def apply(methodName: option, propertyName: positionDoteffect): Boolean | (js.Function3[/* api */ Api, /* pos */ js.Any, /* viewport */ js.Any, Unit]) = js.native
+    def apply(methodName: option, propertyName: positionDoteffect): Boolean | (js.Function3[/* api */ Api, /* pos */ Any, /* viewport */ Any, Unit]) = js.native
     def apply(
       methodName: option,
       propertyName: positionDoteffect,
-      value: js.Function3[/* api */ Api, /* pos */ js.Any, /* viewport */ js.Any, Unit]
+      value: js.Function3[/* api */ Api, /* pos */ Any, /* viewport */ Any, Unit]
     ): Api = js.native
     def apply(methodName: option, propertyName: positionDoteffect, value: Boolean): Api = js.native
     def apply(methodName: option, propertyName: positionDotmy): String | Boolean = js.native
@@ -718,8 +718,8 @@ object QTip2 {
     def apply(methodName: option, propertyName: show): Show = js.native
     def apply(methodName: option, propertyName: showDotdelay): Double = js.native
     def apply(methodName: option, propertyName: showDotdelay, value: Double): Api = js.native
-    def apply(methodName: option, propertyName: showDoteffect): Boolean | (js.Function1[/* offset */ js.Any, Unit]) = js.native
-    def apply(methodName: option, propertyName: showDoteffect, value: js.Function1[/* offset */ js.Any, Unit]): Api = js.native
+    def apply(methodName: option, propertyName: showDoteffect): Boolean | (js.Function1[/* offset */ Any, Unit]) = js.native
+    def apply(methodName: option, propertyName: showDoteffect, value: js.Function1[/* offset */ Any, Unit]): Api = js.native
     def apply(methodName: option, propertyName: showDoteffect, value: Boolean): Api = js.native
     def apply(methodName: option, propertyName: showDotevent): String | Boolean = js.native
     def apply(methodName: option, propertyName: showDotevent, value: String): Api = js.native
@@ -783,9 +783,7 @@ object QTip2 {
     
     var container: js.UndefOr[JQuery | Boolean] = js.undefined
     
-    var effect: js.UndefOr[
-        Boolean | (js.Function3[/* api */ Api, /* pos */ js.Any, /* viewport */ js.Any, Unit])
-      ] = js.undefined
+    var effect: js.UndefOr[Boolean | (js.Function3[/* api */ Api, /* pos */ Any, /* viewport */ Any, Unit])] = js.undefined
     
     var my: js.UndefOr[String | Boolean] = js.undefined
     
@@ -814,9 +812,9 @@ object QTip2 {
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      inline def setEffect(value: Boolean | (js.Function3[/* api */ Api, /* pos */ js.Any, /* viewport */ js.Any, Unit])): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: Boolean | (js.Function3[/* api */ Api, /* pos */ Any, /* viewport */ Any, Unit])): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
       
-      inline def setEffectFunction3(value: (/* api */ Api, /* pos */ js.Any, /* viewport */ js.Any) => Unit): Self = StObject.set(x, "effect", js.Any.fromFunction3(value))
+      inline def setEffectFunction3(value: (/* api */ Api, /* pos */ Any, /* viewport */ Any) => Unit): Self = StObject.set(x, "effect", js.Any.fromFunction3(value))
       
       inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
       
@@ -828,7 +826,7 @@ object QTip2 {
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setTargetVarargs(value: Double*): Self = StObject.set(x, "target", js.Array(value :_*))
+      inline def setTargetVarargs(value: Double*): Self = StObject.set(x, "target", js.Array(value*))
       
       inline def setViewport(value: JQuery | Boolean): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
       
@@ -901,7 +899,7 @@ object QTip2 {
     
     var id: js.UndefOr[String | Boolean] = js.undefined
     
-    var metadata: js.UndefOr[js.Any] = js.undefined
+    var metadata: js.UndefOr[Any] = js.undefined
     
     var overwrite: js.UndefOr[Boolean] = js.undefined
     
@@ -942,7 +940,7 @@ object QTip2 {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
       inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
@@ -979,7 +977,7 @@ object QTip2 {
     
     var delay: js.UndefOr[Double] = js.undefined
     
-    var effect: js.UndefOr[Boolean | (js.Function1[/* offset */ js.Any, Unit])] = js.undefined
+    var effect: js.UndefOr[Boolean | (js.Function1[/* offset */ Any, Unit])] = js.undefined
     
     var event: js.UndefOr[String | Boolean] = js.undefined
     
@@ -1004,9 +1002,9 @@ object QTip2 {
       
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      inline def setEffect(value: Boolean | (js.Function1[/* offset */ js.Any, Unit])): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: Boolean | (js.Function1[/* offset */ Any, Unit])): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
       
-      inline def setEffectFunction1(value: /* offset */ js.Any => Unit): Self = StObject.set(x, "effect", js.Any.fromFunction1(value))
+      inline def setEffectFunction1(value: /* offset */ Any => Unit): Self = StObject.set(x, "effect", js.Any.fromFunction1(value))
       
       inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
       
@@ -1086,7 +1084,7 @@ object QTip2 {
   
   type Target = JQuery | js.Array[Double] | String
   
-  type Text = String | JQuery | EventApiFunc | Boolean | JQueryGenericPromise[js.Any]
+  type Text = String | JQuery | EventApiFunc | Boolean | JQueryGenericPromise[Any]
   
   trait Tip extends StObject {
     
@@ -1140,5 +1138,5 @@ object QTip2 {
   /**
     * Content property
     */
-  type Title = String | JQuery | EventApiFunc | Boolean | JQueryGenericPromise[js.Any]
+  type Title = String | JQuery | EventApiFunc | Boolean | JQueryGenericPromise[Any]
 }

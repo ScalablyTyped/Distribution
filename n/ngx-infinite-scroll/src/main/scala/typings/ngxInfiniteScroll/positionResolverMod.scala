@@ -13,31 +13,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object positionResolverMod {
   
-  @JSImport("ngx-infinite-scroll/src/services/position-resolver", JSImport.Namespace)
+  @JSImport("ngx-infinite-scroll/lib/services/position-resolver", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def calculatePoints(element: ElementRef[js.Any], resolver: IResolver): IPositionStats = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePoints")(element.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[IPositionStats]
+  inline def calculatePoints(element: ElementRef[Any], resolver: IResolver): IPositionStats = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePoints")(element.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[IPositionStats]
   
-  inline def calculatePointsForElement(height: Double, element: ElementRef[js.Any], resolver: IResolver): IPositionStats = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePointsForElement")(height.asInstanceOf[js.Any], element.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[IPositionStats]
+  inline def calculatePointsForElement(height: Double, element: ElementRef[Any], resolver: IResolver): IPositionStats = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePointsForElement")(height.asInstanceOf[js.Any], element.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[IPositionStats]
   
-  inline def calculatePointsForWindow(height: Double, element: ElementRef[js.Any], resolver: IResolver): IPositionStats = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePointsForWindow")(height.asInstanceOf[js.Any], element.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[IPositionStats]
+  inline def calculatePointsForWindow(height: Double, element: ElementRef[Any], resolver: IResolver): IPositionStats = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePointsForWindow")(height.asInstanceOf[js.Any], element.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[IPositionStats]
   
   inline def createResolver(hasWindowElementAxis: IPositionElements): IResolver = ^.asInstanceOf[js.Dynamic].applyDynamic("createResolver")(hasWindowElementAxis.asInstanceOf[js.Any]).asInstanceOf[IResolver]
   
-  inline def createResolverWithContainer(resolver: js.Any, windowElement: ContainerRef): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createResolverWithContainer")(resolver.asInstanceOf[js.Any], windowElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createResolverWithContainer(resolver: Any, windowElement: ContainerRef): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createResolverWithContainer")(resolver.asInstanceOf[js.Any], windowElement.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def extractHeightForElement(hasContainerIsWindowAxis: IResolver): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHeightForElement")(hasContainerIsWindowAxis.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def extractHeightForElement(hasContainerIsWindowAxis: IResolver): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHeightForElement")(hasContainerIsWindowAxis.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def extractHeightPropKeys(axis: AxisResolver): ClientHeightKey = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHeightPropKeys")(axis.asInstanceOf[js.Any]).asInstanceOf[ClientHeightKey]
   
-  inline def getDocumentElement(isContainerWindow: Boolean, windowElement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDocumentElement")(isContainerWindow.asInstanceOf[js.Any], windowElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getDocumentElement(isContainerWindow: Boolean, windowElement: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDocumentElement")(isContainerWindow.asInstanceOf[js.Any], windowElement.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def getElementHeight(elem: js.Any, isWindow: Boolean, offsetHeightKey: String, clientHeightKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementHeight")(elem.asInstanceOf[js.Any], isWindow.asInstanceOf[js.Any], offsetHeightKey.asInstanceOf[js.Any], clientHeightKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getElementHeight(elem: Any, isWindow: Boolean, offsetHeightKey: String, clientHeightKey: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementHeight")(elem.asInstanceOf[js.Any], isWindow.asInstanceOf[js.Any], offsetHeightKey.asInstanceOf[js.Any], clientHeightKey.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def getElementOffsetTop(elem: ContainerRef, axis: AxisResolver, isWindow: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementOffsetTop")(elem.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], isWindow.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getElementOffsetTop(elem: ContainerRef, axis: AxisResolver, isWindow: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementOffsetTop")(elem.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], isWindow.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def getElementPageYOffset(elem: ContainerRef, axis: AxisResolver, isWindow: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementPageYOffset")(elem.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], isWindow.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getElementPageYOffset(elem: ContainerRef, axis: AxisResolver, isWindow: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementPageYOffset")(elem.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], isWindow.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def isElementWindow(windowElement: ContainerRef): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementWindow")(windowElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Trajectory extends StObject {
   
-  /* private */ var _points: js.Any
+  /* private */ var _points: Any
   
-  /* private */ val _segmentLength: js.Any
+  /* private */ val _segmentLength: Any
   
   /**
     * Append a new point to the Trajectory.
@@ -51,8 +51,8 @@ trait Trajectory extends StObject {
 object Trajectory {
   
   inline def apply(
-    _points: js.Any,
-    _segmentLength: js.Any,
+    _points: Any,
+    _segmentLength: Any,
     add: DeepImmutable[Vector3] => Unit,
     getLength: () => Double,
     resampleAtTargetResolution: Double => Trajectory,
@@ -75,8 +75,8 @@ object Trajectory {
     
     inline def setTokenize(value: DeepImmutable[js.Array[Vector3]] => js.Array[Double]): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
     
-    inline def set_points(value: js.Any): Self = StObject.set(x, "_points", value.asInstanceOf[js.Any])
+    inline def set_points(value: Any): Self = StObject.set(x, "_points", value.asInstanceOf[js.Any])
     
-    inline def set_segmentLength(value: js.Any): Self = StObject.set(x, "_segmentLength", value.asInstanceOf[js.Any])
+    inline def set_segmentLength(value: Any): Self = StObject.set(x, "_segmentLength", value.asInstanceOf[js.Any])
   }
 }

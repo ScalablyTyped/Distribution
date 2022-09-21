@@ -20,7 +20,7 @@ trait OMathNary extends StObject {
   
   var HideSup: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Sub: OMath
   
@@ -41,7 +41,7 @@ object OMathNary {
     Grow: Boolean,
     HideSub: Boolean,
     HideSup: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     Sub: OMath,
     SubSupLim: Boolean,
     Sup: OMath,
@@ -68,7 +68,7 @@ object OMathNary {
     
     inline def setHideSup(value: Boolean): Self = StObject.set(x, "HideSup", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSub(value: OMath): Self = StObject.set(x, "Sub", value.asInstanceOf[js.Any])
     

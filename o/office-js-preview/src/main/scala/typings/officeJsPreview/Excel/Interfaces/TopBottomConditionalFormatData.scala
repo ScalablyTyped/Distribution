@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TopBottomConditionalFormatData extends StObject {
   
   /**
-    *
     * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var format: js.UndefOr[ConditionalRangeFormatData] = js.undefined
   
   /**
+    * The criteria of the top/bottom conditional format.
     *
-    * The criteria of the Top/Bottom conditional format.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var rule: js.UndefOr[ConditionalTopBottomRule] = js.undefined

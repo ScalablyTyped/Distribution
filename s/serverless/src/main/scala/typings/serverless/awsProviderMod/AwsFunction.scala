@@ -1,5 +1,8 @@
 package typings.serverless.awsProviderMod
 
+import typings.serverless.serverlessStrings.Active
+import typings.serverless.serverlessStrings.PassThrough
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +12,7 @@ trait AwsFunction extends StObject {
   @JSName("package")
   var _package: js.UndefOr[Package] = js.undefined
   
+  /** @deprecated in favor of `kmsKeyArn` */
   var awsKmsKeyArn: js.UndefOr[String] = js.undefined
   
   var condition: js.UndefOr[String] = js.undefined
@@ -19,13 +23,17 @@ trait AwsFunction extends StObject {
   
   var destinations: js.UndefOr[Destinations] = js.undefined
   
+  var disableLogs: js.UndefOr[Boolean] = js.undefined
+  
   var environment: js.UndefOr[Environment] = js.undefined
   
   var events: js.UndefOr[js.Array[Event]] = js.undefined
   
-  var handler: String
+  var fileSystemConfig: js.UndefOr[FileSystemConfig] = js.undefined
   
-  var layers: js.UndefOr[js.Array[String]] = js.undefined
+  var kmsKeyArn: js.UndefOr[String] = js.undefined
+  
+  var layers: js.UndefOr[js.Array[String | (Record[String, String])]] = js.undefined
   
   var memorySize: js.UndefOr[Double | String] = js.undefined
   
@@ -45,14 +53,16 @@ trait AwsFunction extends StObject {
   
   var timeout: js.UndefOr[Double | String] = js.undefined
   
-  var tracing: js.UndefOr[String] = js.undefined
+  var tracing: js.UndefOr[Active | PassThrough | Boolean] = js.undefined
   
-  var vpc: js.UndefOr[Vpc] = js.undefined
+  var url: js.UndefOr[Boolean | FunctionUrlConfig] = js.undefined
+  
+  var vpc: js.UndefOr[String | Vpc] = js.undefined
 }
 object AwsFunction {
   
-  inline def apply(handler: String): AwsFunction = {
-    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any])
+  inline def apply(): AwsFunction = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsFunction]
   }
   
@@ -70,7 +80,7 @@ object AwsFunction {
     
     inline def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
     
-    inline def setDependsOnVarargs(value: String*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
+    inline def setDependsOnVarargs(value: String*): Self = StObject.set(x, "dependsOn", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -80,6 +90,10 @@ object AwsFunction {
     
     inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
+    inline def setDisableLogs(value: Boolean): Self = StObject.set(x, "disableLogs", value.asInstanceOf[js.Any])
+    
+    inline def setDisableLogsUndefined: Self = StObject.set(x, "disableLogs", js.undefined)
+    
     inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
@@ -88,15 +102,21 @@ object AwsFunction {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value*))
     
-    inline def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setFileSystemConfig(value: FileSystemConfig): Self = StObject.set(x, "fileSystemConfig", value.asInstanceOf[js.Any])
     
-    inline def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setFileSystemConfigUndefined: Self = StObject.set(x, "fileSystemConfig", js.undefined)
+    
+    inline def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+    
+    inline def setLayers(value: js.Array[String | (Record[String, String])]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: (String | (Record[String, String]))*): Self = StObject.set(x, "layers", js.Array(value*))
     
     inline def setMemorySize(value: Double | String): Self = StObject.set(x, "memorySize", value.asInstanceOf[js.Any])
     
@@ -134,11 +154,15 @@ object AwsFunction {
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    inline def setTracing(value: String): Self = StObject.set(x, "tracing", value.asInstanceOf[js.Any])
+    inline def setTracing(value: Active | PassThrough | Boolean): Self = StObject.set(x, "tracing", value.asInstanceOf[js.Any])
     
     inline def setTracingUndefined: Self = StObject.set(x, "tracing", js.undefined)
     
-    inline def setVpc(value: Vpc): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Boolean | FunctionUrlConfig): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setVpc(value: String | Vpc): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
     
     inline def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
     

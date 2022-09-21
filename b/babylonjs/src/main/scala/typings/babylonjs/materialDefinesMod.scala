@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.babylonjs.anon.Default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,14 @@ object materialDefinesMod {
   
   @JSImport("babylonjs/Materials/materialDefines", "MaterialDefines")
   @js.native
-  class MaterialDefines ()
+  /**
+    * Creates a new instance
+    * @param externalProperties list of external properties to inject into the object
+    */
+  open class MaterialDefines ()
     extends StObject
-       with /* id */ StringDictionary[js.Any] {
+       with /* id */ StringDictionary[Any] {
+    def this(externalProperties: StringDictionary[Default]) = this()
     
     /** @hidden */
     var _areAttributesDirty: Boolean = js.native
@@ -37,7 +43,9 @@ object materialDefinesMod {
     /** @hidden */
     var _areTexturesDirty: Boolean = js.native
     
-    /* private */ var _isDirty: js.Any = js.native
+    /* protected */ var _externalProperties: js.UndefOr[StringDictionary[Default]] = js.native
+    
+    /* private */ var _isDirty: Any = js.native
     
     /** @hidden */
     /* protected */ var _keys: js.Array[String] = js.native
@@ -53,6 +61,8 @@ object materialDefinesMod {
     
     /** @hidden */
     var _renderId: Double = js.native
+    
+    /* private */ var _setDefaultValue: Any = js.native
     
     /** @hidden */
     var _uvs: Boolean = js.native

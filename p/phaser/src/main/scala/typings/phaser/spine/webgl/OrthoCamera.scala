@@ -24,7 +24,7 @@ trait OrthoCamera extends StObject {
   
   def setViewport(viewportWidth: Double, viewportHeight: Double): Unit
   
-  /* private */ var tmp: js.Any
+  /* private */ var tmp: Any
   
   var up: Vector3
   
@@ -50,7 +50,7 @@ object OrthoCamera {
     projectionView: Matrix4,
     screenToWorld: (Vector3, Double, Double) => Vector3,
     setViewport: (Double, Double) => Unit,
-    tmp: js.Any,
+    tmp: Any,
     up: Vector3,
     update: () => Unit,
     view: Matrix4,
@@ -82,7 +82,7 @@ object OrthoCamera {
     
     inline def setSetViewport(value: (Double, Double) => Unit): Self = StObject.set(x, "setViewport", js.Any.fromFunction2(value))
     
-    inline def setTmp(value: js.Any): Self = StObject.set(x, "tmp", value.asInstanceOf[js.Any])
+    inline def setTmp(value: Any): Self = StObject.set(x, "tmp", value.asInstanceOf[js.Any])
     
     inline def setUp(value: Vector3): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     

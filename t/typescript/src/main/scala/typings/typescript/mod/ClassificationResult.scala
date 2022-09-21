@@ -21,7 +21,7 @@ object ClassificationResult {
     
     inline def setEntries(value: js.Array[ClassificationInfo]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    inline def setEntriesVarargs(value: ClassificationInfo*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: ClassificationInfo*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setFinalLexState(value: EndOfLineState): Self = StObject.set(x, "finalLexState", value.asInstanceOf[js.Any])
   }

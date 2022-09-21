@@ -31,13 +31,13 @@ object GoogleCloudVideointelligenceV1TimestampedObject {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: GoogleCloudVideointelligenceV1DetectedAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: GoogleCloudVideointelligenceV1DetectedAttribute*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setLandmarks(value: js.Array[GoogleCloudVideointelligenceV1DetectedLandmark]): Self = StObject.set(x, "landmarks", value.asInstanceOf[js.Any])
     
     inline def setLandmarksUndefined: Self = StObject.set(x, "landmarks", js.undefined)
     
-    inline def setLandmarksVarargs(value: GoogleCloudVideointelligenceV1DetectedLandmark*): Self = StObject.set(x, "landmarks", js.Array(value :_*))
+    inline def setLandmarksVarargs(value: GoogleCloudVideointelligenceV1DetectedLandmark*): Self = StObject.set(x, "landmarks", js.Array(value*))
     
     inline def setNormalizedBoundingBox(value: GoogleCloudVideointelligenceV1NormalizedBoundingBox): Self = StObject.set(x, "normalizedBoundingBox", value.asInstanceOf[js.Any])
     

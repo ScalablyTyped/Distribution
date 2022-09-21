@@ -29,7 +29,7 @@ object DescribeJobDefinitionsResponse {
     
     inline def setJobDefinitionsUndefined: Self = StObject.set(x, "jobDefinitions", js.undefined)
     
-    inline def setJobDefinitionsVarargs(value: JobDefinition*): Self = StObject.set(x, "jobDefinitions", js.Array(value :_*))
+    inline def setJobDefinitionsVarargs(value: JobDefinition*): Self = StObject.set(x, "jobDefinitions", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

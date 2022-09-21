@@ -26,19 +26,22 @@ trait Backup extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.Backup & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.Backup & TopLevel[Any]
   ] = js.undefined
   
-  /** Output only. The resource name of the backup, in the format projects/{project_number}/locations/{location_id}/backups/{backup_id}. */
+  /** Output only. The resource name of the backup, in the format `projects/{project_number}/locations/{location_id}/backups/{backup_id}`. */
   var name: js.UndefOr[String] = js.undefined
   
-  /** Name of the file share in the source Cloud Filestore instance that the backup is created from. */
+  /** Output only. Reserved for future use. */
+  var satisfiesPzs: js.UndefOr[Boolean] = js.undefined
+  
+  /** Name of the file share in the source Filestore instance that the backup is created from. */
   var sourceFileShare: js.UndefOr[String] = js.undefined
   
-  /** The resource name of the source Cloud Filestore instance, in the format projects/{project_number}/locations/{location_id}/instances/{instance_id}, used to create this backup. */
+  /** The resource name of the source Filestore instance, in the format `projects/{project_number}/locations/{location_id}/instances/{instance_id}`, used to create this backup. */
   var sourceInstance: js.UndefOr[String] = js.undefined
   
-  /** Output only. The service tier of the source Cloud Filestore instance that this backup is created from. */
+  /** Output only. The service tier of the source Filestore instance that this backup is created from. */
   var sourceInstanceTier: js.UndefOr[String] = js.undefined
   
   /** Output only. The backup state. */
@@ -75,7 +78,7 @@ object Backup {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.Backup & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.Backup & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -83,6 +86,10 @@ object Backup {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSatisfiesPzs(value: Boolean): Self = StObject.set(x, "satisfiesPzs", value.asInstanceOf[js.Any])
+    
+    inline def setSatisfiesPzsUndefined: Self = StObject.set(x, "satisfiesPzs", js.undefined)
     
     inline def setSourceFileShare(value: String): Self = StObject.set(x, "sourceFileShare", value.asInstanceOf[js.Any])
     

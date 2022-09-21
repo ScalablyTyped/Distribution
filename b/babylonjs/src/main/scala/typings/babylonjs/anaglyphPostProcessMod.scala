@@ -12,7 +12,7 @@ object anaglyphPostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/anaglyphPostProcess", "AnaglyphPostProcess")
   @js.native
-  class AnaglyphPostProcess protected () extends PostProcess {
+  open class AnaglyphPostProcess protected () extends PostProcess {
     /**
       * Creates a new AnaglyphPostProcess
       * @param name defines postprocess name
@@ -107,6 +107,6 @@ object anaglyphPostProcessMod {
       reusable: Boolean
     ) = this()
     
-    /* private */ var _passedProcess: js.Any = js.native
+    /* private */ var _passedProcess: Any = js.native
   }
 }

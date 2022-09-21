@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFontStrikeoutCommand")
 @js.native
-class ChangeFontStrikeoutCommand ()
+open class ChangeFontStrikeoutCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFontStrikeoutCommand {
   

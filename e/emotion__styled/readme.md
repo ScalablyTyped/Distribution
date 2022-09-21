@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__styled
 
-Typings are for version 10.0.27
+Typings are for version 11.10.4
 
 ## Library description:
 styled API for emotion
@@ -10,15 +10,15 @@ styled API for emotion
 | ------------------ | :-------------: |
 | Full name          | @emotion/styled |
 | Keywords           | - |
-| # releases         | 32 |
-| # dependents       | 1618 |
-| # downloads        | 109057854 |
-| # stars            | 0 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 2.2904853333333332E7 |
+| # stars            | 15356.0 |
 
 ## Links
-- [Homepage](https://github.com/emotion-js/emotion#readme)
+- [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)
 - [Bugs](https://github.com/emotion-js/emotion/issues)
-- [Repository](https://github.com/emotion-js/emotion)
+- [Repository](https://github.com/emotion-js/emotion/tree/main)
 - [Npm](https://www.npmjs.com/package/%40emotion%2Fstyled)
     
 

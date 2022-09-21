@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.ChatMessageReceivedNotificationTrigger")
 @js.native
 /** Initializes a new instance of the ChatMessageReceivedNotificationTrigger class. */
-class ChatMessageReceivedNotificationTrigger ()
+open class ChatMessageReceivedNotificationTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.ChatMessageReceivedNotificationTrigger

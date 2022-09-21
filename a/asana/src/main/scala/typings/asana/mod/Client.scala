@@ -4,6 +4,7 @@ import typings.asana.mod.^
 import typings.asana.mod.auth.App
 import typings.asana.mod.auth.OauthAuthenticatorOptions
 import typings.asana.mod.resources.Attachments
+import typings.asana.mod.resources.CustomFields
 import typings.asana.mod.resources.Events
 import typings.asana.mod.resources.Projects
 import typings.asana.mod.resources.Sections
@@ -11,6 +12,7 @@ import typings.asana.mod.resources.Stories
 import typings.asana.mod.resources.Tags
 import typings.asana.mod.resources.Tasks
 import typings.asana.mod.resources.Teams
+import typings.asana.mod.resources.Typeahead
 import typings.asana.mod.resources.UserTaskLists
 import typings.asana.mod.resources.Users
 import typings.asana.mod.resources.Webhooks
@@ -41,6 +43,12 @@ trait Client extends StObject {
     *     authorization is complete.
     */
   def authorize(): typings.bluebird.mod.^[Client] = js.native
+  
+  /**
+    * An instance of the CustomFields resource.
+    * @type {CustomFields}
+    */
+  var customFields: CustomFields = js.native
   
   /**
     * The internal dispatcher. This is mostly used by the resources but provided
@@ -91,6 +99,12 @@ trait Client extends StObject {
     * @type {Teams}
     */
   var teams: Teams = js.native
+  
+  /**
+    * An instance of the Typeahead resource.
+    * @type {Typeahead}
+    */
+  var typeahead: Typeahead = js.native
   
   /**
     * Configure the client to authenticate using a Personal Access Token.

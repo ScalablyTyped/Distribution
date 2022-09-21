@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "Motion")
 @js.native
-class Motion protected ()
-  extends Component[MotionProps, js.Object, js.Any] {
+open class Motion protected ()
+  extends Component[MotionProps, js.Object, Any] {
   def this(props: MotionProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MotionProps, context: js.Any) = this()
+  def this(props: MotionProps, context: Any) = this()
 }
 /* static members */
 object Motion {

@@ -79,8 +79,8 @@ object DDS_ {
       * @param l - listener function
       * @param p - predicate
       */
-    def addListener(l: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
-    def addListener(l: js.Function1[/* data */ js.Any, Unit], p: js.Function1[/* data */ js.Any, Boolean]): Unit = js.native
+    def addListener(l: js.Function1[/* data */ Any, Unit]): Unit = js.native
+    def addListener(l: js.Function1[/* data */ Any, Unit], p: js.Function1[/* data */ Any, Boolean]): Unit = js.native
     
     /**
       * clears the data cache
@@ -93,7 +93,7 @@ object DDS_ {
       * @param f - the predicate to be applied to filter the cache values
       * @returns An array holding the filtered values
       */
-    def filter(f: js.Function1[/* data */ js.Any, Boolean]): js.Array[js.Any] = js.native
+    def filter(f: js.Function1[/* data */ Any, Boolean]): js.Array[Any] = js.native
     
     /**
       * Returns the list of elements in the cache that doesn't satisfy the predicate `f`.
@@ -101,7 +101,7 @@ object DDS_ {
       * @returns An array holding the filtered values
       * @see DataCache#filter
       */
-    def filterNot(f: js.Function1[/* data */ js.Any, Boolean]): js.Array[js.Any] = js.native
+    def filterNot(f: js.Function1[/* data */ Any, Boolean]): js.Array[Any] = js.native
     
     /**
       * folds the element of the cache using `z` as the `zero` element and
@@ -110,7 +110,7 @@ object DDS_ {
       * @param z - initial value
       * @param {function} f - reduce function
       */
-    def fold(z: js.Any, f: js.Function1[/* data */ js.Any, js.Any]): Unit = js.native
+    def fold(z: Any, f: js.Function1[/* data */ Any, Any]): Unit = js.native
     
     /**
       * Execute the function `f` for each element of the cache.
@@ -119,7 +119,7 @@ object DDS_ {
       * @param f - the function to be applied
       * @returns results of the function execution
       */
-    def forEach(f: js.Function1[/* data */ js.Any, js.Any]): js.Array[js.Any] = js.native
+    def forEach(f: js.Function1[/* data */ Any, Any]): js.Array[Any] = js.native
     
     /**
       * Same as forEach but applied, for each key, only to the first `n` samples of the cache
@@ -127,7 +127,7 @@ object DDS_ {
       * @param f - the function to be applied
       * @param n - samples set size
       */
-    def forEachN(f: js.Function1[/* data */ js.Any, js.Any], n: Double): js.Array[js.Any] = js.native
+    def forEachN(f: js.Function1[/* data */ Any, Any], n: Double): js.Array[Any] = js.native
     
     /**
       * Return `coffez.Some(v)` if there is an element in the cache corresponding to the
@@ -135,7 +135,7 @@ object DDS_ {
       *
       * @param k - key
       */
-    def get(k: js.Any): js.Any = js.native
+    def get(k: Any): Any = js.native
     
     /**
       * Return `coffez.Some(v)` if there is an element in the cache corresponding to the
@@ -144,7 +144,7 @@ object DDS_ {
       * @param k - key
       * @param f - the function to apply
       */
-    def getOrElse(k: js.Any, f: js.Function1[/* data */ js.Any, js.Any]): js.Any = js.native
+    def getOrElse(k: Any, f: js.Function1[/* data */ Any, Any]): Any = js.native
     
     /**
       * Returns a cache that is the result of applying `f` to each element of the cache.
@@ -152,35 +152,35 @@ object DDS_ {
       * @param f - the function to be applied
       * @returns A cache holding the results of the function execution
       */
-    def map(f: js.Function1[/* data */ js.Any, js.Any]): DataCache = js.native
+    def map(f: js.Function1[/* data */ Any, Any]): DataCache = js.native
     
     /**
       * Returns the values included in the cache as an array.
       *
       * @return All the cache values
       */
-    def read(): js.Array[js.Any] = js.native
+    def read(): js.Array[Any] = js.native
     
     /**
       * Returns the last value of the cache in an array.
       *
       * @return the last value of the cache
       */
-    def readLast(): js.Any = js.native
+    def readLast(): Any = js.native
     
     /**
       * Returns the `K`ith value of the cache as Monad, ie: `coffez.Some` if it exists, `coffez.None` if not.
       *
       * @return the 'k'th value
       */
-    def take(): js.Any = js.native
+    def take(): Any = js.native
     
     /**
       * Returns all the values included in the cache as an array and empties the cache.
       *
       * @return All the cache values
       */
-    def takeAll(): js.Array[js.Any] = js.native
+    def takeAll(): js.Array[Any] = js.native
     
     /**
       * Takes elements from the cache up to when the predicate `f` is satisfied
@@ -188,7 +188,7 @@ object DDS_ {
       * @param f - the predicate
       * @return taken cache values
       */
-    def takeWithFilter(f: js.Function1[/* data */ js.Any, Boolean]): js.Array[js.Any] = js.native
+    def takeWithFilter(f: js.Function1[/* data */ Any, Boolean]): js.Array[Any] = js.native
     
     /**
       * Write the element `data` with key `k` into the cache.
@@ -197,7 +197,7 @@ object DDS_ {
       * @param data - data value
       * @returns the written data value
       */
-    def write(k: js.Any, data: js.Any): js.Any = js.native
+    def write(k: Any, data: Any): Any = js.native
   }
   
   trait DataReader extends StObject {
@@ -208,7 +208,7 @@ object DDS_ {
       * @param l - listener code
       * @returns listener handle
       */
-    def addListener(l: js.Function1[/* msg */ js.Any, Unit]): Double
+    def addListener(l: js.Function1[/* msg */ Any, Unit]): Double
     
     /**
       * closes the DataReader
@@ -226,7 +226,7 @@ object DDS_ {
   object DataReader {
     
     inline def apply(
-      addListener: js.Function1[/* msg */ js.Any, Unit] => Double,
+      addListener: js.Function1[/* msg */ Any, Unit] => Double,
       close: () => Unit,
       removeListener: Double => Unit,
       resetStats: () => Unit
@@ -237,7 +237,7 @@ object DDS_ {
     
     extension [Self <: DataReader](x: Self) {
       
-      inline def setAddListener(value: js.Function1[/* msg */ js.Any, Unit] => Double): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+      inline def setAddListener(value: js.Function1[/* msg */ Any, Unit] => Double): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -258,11 +258,11 @@ object DDS_ {
       * Writes one or more samples.
       * @param ds - data sample
       */
-    def write(ds: js.Any*): Unit
+    def write(ds: Any*): Unit
   }
   object DataWriter {
     
-    inline def apply(close: () => Unit, write: /* repeated */ js.Any => Unit): DataWriter = {
+    inline def apply(close: () => Unit, write: /* repeated */ Any => Unit): DataWriter = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[DataWriter]
     }
@@ -271,7 +271,7 @@ object DDS_ {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      inline def setWrite(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: /* repeated */ Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -353,14 +353,14 @@ object DDS_ {
       *
       * @param e
       */
-    def onconnect(e: js.Any): Unit = js.native
+    def onconnect(e: Any): Unit = js.native
     
     /**
       * Function called when runtime is disconnected.
       *
       * @param e
       */
-    def ondisconnect(e: js.Any): Unit = js.native
+    def ondisconnect(e: Any): Unit = js.native
     
     /**
       * Registers the provided Topic.

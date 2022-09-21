@@ -10,8 +10,8 @@ object esmPrismAsyncMod {
   
   @JSImport("react-syntax-highlighter/dist/esm/prism-async", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SyntaxHighlighterProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SyntaxHighlighterProps, js.Object, Any]
   
-  type SyntaxHighlighter = Component[SyntaxHighlighterProps, js.Object, js.Any]
+  type SyntaxHighlighter = Component[SyntaxHighlighterProps, js.Object, Any]
 }

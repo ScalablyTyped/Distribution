@@ -18,8 +18,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessInterfaces", "TypeInfo.FieldModel")
   @js.native
-  def FieldModel: js.Any = js.native
-  inline def FieldModel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FieldModel")(x.asInstanceOf[js.Any])
+  def FieldModel: Any = js.native
+  inline def FieldModel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FieldModel")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessInterfaces", "TypeInfo.FieldType")
   @js.native
@@ -28,8 +28,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessInterfaces", "TypeInfo.FormLayout")
   @js.native
-  def FormLayout: js.Any = js.native
-  inline def FormLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FormLayout")(x.asInstanceOf[js.Any])
+  def FormLayout: Any = js.native
+  inline def FormLayout_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FormLayout")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessInterfaces", "TypeInfo.GetBehaviorsExpand")
   @js.native
@@ -48,14 +48,14 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessInterfaces", "TypeInfo.Page")
   @js.native
-  def Page: js.Any = js.native
+  def Page: Any = js.native
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessInterfaces", "TypeInfo.PageType")
   @js.native
   def PageType: EnumValuesAttachments = js.native
   inline def PageType_=(x: EnumValuesAttachments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PageType")(x.asInstanceOf[js.Any])
   
-  inline def Page_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Page")(x.asInstanceOf[js.Any])
+  inline def Page_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Page")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessInterfaces", "TypeInfo.ProcessClass")
   @js.native
@@ -64,13 +64,13 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessInterfaces", "TypeInfo.ProcessModel")
   @js.native
-  def ProcessModel: js.Any = js.native
-  inline def ProcessModel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProcessModel")(x.asInstanceOf[js.Any])
+  def ProcessModel: Any = js.native
+  inline def ProcessModel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProcessModel")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessInterfaces", "TypeInfo.ProcessProperties")
   @js.native
-  def ProcessProperties: js.Any = js.native
-  inline def ProcessProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProcessProperties")(x.asInstanceOf[js.Any])
+  def ProcessProperties: Any = js.native
+  inline def ProcessProperties_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProcessProperties")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessInterfaces", "TypeInfo.WorkItemTypeClass")
   @js.native
@@ -79,6 +79,6 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingProcessInterfaces", "TypeInfo.WorkItemTypeModel")
   @js.native
-  def WorkItemTypeModel: js.Any = js.native
-  inline def WorkItemTypeModel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemTypeModel")(x.asInstanceOf[js.Any])
+  def WorkItemTypeModel: Any = js.native
+  inline def WorkItemTypeModel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemTypeModel")(x.asInstanceOf[js.Any])
 }

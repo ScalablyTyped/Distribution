@@ -10,10 +10,10 @@ object cropLandscapeMod {
   
   @JSImport("material-ui/svg-icons/image/crop-landscape", JSImport.Default)
   @js.native
-  class default () extends ImageCropLandscape
+  open class default () extends ImageCropLandscape
   
   @JSImport("material-ui/svg-icons/image/crop-landscape", "ImageCropLandscape")
   @js.native
-  class ImageCropLandscape ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageCropLandscape ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

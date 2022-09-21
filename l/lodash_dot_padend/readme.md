@@ -10,10 +10,10 @@ The lodash method `_.padEnd` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.padend |
 | Keywords           | lodash-modularized, padend |
-| # releases         | 0 |
-| # dependents       | 53 |
-| # downloads        | 32340862 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3571979.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -17,7 +17,7 @@ trait PlusNativeUIConfirmOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var buttons: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var buttons: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 确认对话框显示的标题
@@ -48,11 +48,11 @@ object PlusNativeUIConfirmOptions {
   
   extension [Self <: PlusNativeUIConfirmOptions](x: Self) {
     
-    inline def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: js.Any*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: Any*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

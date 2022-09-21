@@ -1,12 +1,13 @@
 package typings.grommet.anon
 
+import typings.grommet.utilsMod.ElevationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `26` extends StObject {
   
-  var border: js.UndefOr[`3`] = js.undefined
+  var elevation: js.UndefOr[ElevationType] = js.undefined
 }
 object `26` {
   
@@ -17,8 +18,8 @@ object `26` {
   
   extension [Self <: `26`](x: Self) {
     
-    inline def setBorder(value: `3`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setElevation(value: ElevationType): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
     
-    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
   }
 }

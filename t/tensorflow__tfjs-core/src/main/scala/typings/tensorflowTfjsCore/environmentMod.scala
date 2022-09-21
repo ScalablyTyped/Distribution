@@ -20,16 +20,16 @@ object environmentMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/environment", "Environment")
   @js.native
-  class Environment protected () extends StObject {
-    def this(global: js.Any) = this()
+  open class Environment protected () extends StObject {
+    def this(global: Any) = this()
     
-    /* private */ var evaluateFlag: js.Any = js.native
+    /* private */ var evaluateFlag: Any = js.native
     
     val features: Flags = js.native
     
-    /* private */ var flagRegistry: js.Any = js.native
+    /* private */ var flagRegistry: Any = js.native
     
-    /* private */ var flags: js.Any = js.native
+    /* private */ var flags: Any = js.native
     
     def get(flagName: String): FlagValue = js.native
     
@@ -41,13 +41,17 @@ object environmentMod {
     
     def getNumber(flagName: String): Double = js.native
     
-    var global: js.Any = js.native
+    def getQueryParams(queryString: String): StringDictionary[String] = js.native
+    @JSName("getQueryParams")
+    var getQueryParams_Original: js.Function1[/* queryString */ String, StringDictionary[String]] = js.native
+    
+    var global: Any = js.native
     
     var platform: Platform = js.native
     
     var platformName: String = js.native
     
-    /* private */ var populateURLFlags: js.Any = js.native
+    /* private */ var populateURLFlags: Any = js.native
     
     def registerFlag(flagName: String, evaluationFn: FlagEvaluationFn): Unit = js.native
     def registerFlag(
@@ -64,7 +68,7 @@ object environmentMod {
     
     def setPlatform(platformName: String, platform: Platform): Unit = js.native
     
-    /* private */ var urlFlags: js.Any = js.native
+    /* private */ var urlFlags: Any = js.native
   }
   
   inline def env(): Environment = ^.asInstanceOf[js.Dynamic].applyDynamic("env")().asInstanceOf[Environment]

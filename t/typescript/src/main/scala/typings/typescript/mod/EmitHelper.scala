@@ -4,49 +4,23 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EmitHelper extends StObject {
-  
-  val dependencies: js.UndefOr[js.Array[EmitHelper]] = js.undefined
-  
-  val name: java.lang.String
-  
-  val priority: js.UndefOr[Double] = js.undefined
-  
-  val scoped: Boolean
-  
-  val text: java.lang.String | (js.Function1[/* node */ EmitHelperUniqueNameCallback, java.lang.String])
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.typescript.mod.ScopedEmitHelper
+  - typings.typescript.mod.UnscopedEmitHelper
+*/
+trait EmitHelper extends StObject
 object EmitHelper {
   
-  inline def apply(
+  inline def ScopedEmitHelper(
     name: java.lang.String,
-    scoped: Boolean,
     text: java.lang.String | (js.Function1[/* node */ EmitHelperUniqueNameCallback, java.lang.String])
-  ): EmitHelper = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scoped = scoped.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    __obj.asInstanceOf[EmitHelper]
+  ): typings.typescript.mod.ScopedEmitHelper = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scoped = true, text = text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.typescript.mod.ScopedEmitHelper]
   }
   
-  extension [Self <: EmitHelper](x: Self) {
-    
-    inline def setDependencies(value: js.Array[EmitHelper]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
-    
-    inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
-    
-    inline def setDependenciesVarargs(value: EmitHelper*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
-    
-    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
-    
-    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
-    
-    inline def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
-    
-    inline def setText(
-      value: java.lang.String | (js.Function1[/* node */ EmitHelperUniqueNameCallback, java.lang.String])
-    ): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
-    
-    inline def setTextFunction1(value: /* node */ EmitHelperUniqueNameCallback => java.lang.String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+  inline def UnscopedEmitHelper(name: java.lang.String, text: java.lang.String): typings.typescript.mod.UnscopedEmitHelper = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scoped = false, text = text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.typescript.mod.UnscopedEmitHelper]
   }
 }

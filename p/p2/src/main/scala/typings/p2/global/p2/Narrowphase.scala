@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.Narrowphase")
 @js.native
-class Narrowphase ()
+open class Narrowphase ()
   extends typings.p2.mod.Narrowphase

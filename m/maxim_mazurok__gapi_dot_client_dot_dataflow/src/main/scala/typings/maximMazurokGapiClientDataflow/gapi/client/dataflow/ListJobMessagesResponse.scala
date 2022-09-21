@@ -28,13 +28,13 @@ object ListJobMessagesResponse {
     
     inline def setAutoscalingEventsUndefined: Self = StObject.set(x, "autoscalingEvents", js.undefined)
     
-    inline def setAutoscalingEventsVarargs(value: AutoscalingEvent*): Self = StObject.set(x, "autoscalingEvents", js.Array(value :_*))
+    inline def setAutoscalingEventsVarargs(value: AutoscalingEvent*): Self = StObject.set(x, "autoscalingEvents", js.Array(value*))
     
     inline def setJobMessages(value: js.Array[JobMessage]): Self = StObject.set(x, "jobMessages", value.asInstanceOf[js.Any])
     
     inline def setJobMessagesUndefined: Self = StObject.set(x, "jobMessages", js.undefined)
     
-    inline def setJobMessagesVarargs(value: JobMessage*): Self = StObject.set(x, "jobMessages", js.Array(value :_*))
+    inline def setJobMessagesVarargs(value: JobMessage*): Self = StObject.set(x, "jobMessages", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

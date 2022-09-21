@@ -25,7 +25,7 @@ object Resources {
     
     inline def setGenericResourcesUndefined: Self = StObject.set(x, "GenericResources", js.undefined)
     
-    inline def setGenericResourcesVarargs(value: GenericResource*): Self = StObject.set(x, "GenericResources", js.Array(value :_*))
+    inline def setGenericResourcesVarargs(value: GenericResource*): Self = StObject.set(x, "GenericResources", js.Array(value*))
     
     inline def setMemoryBytes(value: Double): Self = StObject.set(x, "MemoryBytes", value.asInstanceOf[js.Any])
     

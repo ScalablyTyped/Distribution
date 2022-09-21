@@ -20,8 +20,8 @@ trait ICommands extends StObject {
   
   val Events: ICommandsEvents = js.native
   
-  def ExecuteCommand(command: Double, arguments: js.Any): Unit = js.native
-  def ExecuteCommand(command: BuiltinCommand, arguments: js.Any): Unit = js.native
+  def ExecuteCommand(command: Double, arguments: Any): Unit = js.native
+  def ExecuteCommand(command: BuiltinCommand, arguments: Any): Unit = js.native
   
   def GetCommandName(command: Double): String = js.native
   def GetCommandName(command: BuiltinCommand): String = js.native

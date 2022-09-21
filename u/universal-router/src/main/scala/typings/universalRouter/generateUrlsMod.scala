@@ -17,8 +17,8 @@ object generateUrlsMod {
   /**
     * Create a function to generate urls by route names.
     */
-  inline def default(router: typings.universalRouter.mod.default[js.Any, RouterContext]): GenerateUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(router.asInstanceOf[js.Any]).asInstanceOf[GenerateUrl]
-  inline def default(router: typings.universalRouter.mod.default[js.Any, RouterContext], options: GenerateUrlsOptions): GenerateUrl = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(router.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GenerateUrl]
+  inline def default(router: typings.universalRouter.mod.default[Any, RouterContext]): GenerateUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(router.asInstanceOf[js.Any]).asInstanceOf[GenerateUrl]
+  inline def default(router: typings.universalRouter.mod.default[Any, RouterContext], options: GenerateUrlsOptions): GenerateUrl = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(router.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GenerateUrl]
   
   type GenerateUrl = js.Function2[/* routeName */ String, /* params */ js.UndefOr[UrlParams], String]
   
@@ -31,6 +31,11 @@ object generateUrlsMod {
       * Add a query string to generated url based on unknown route params.
       */
     var stringifyQueryParams: js.UndefOr[js.Function1[/* params */ UrlParams, String]] = js.undefined
+    
+    /**
+      * Generates a unique route name based on all parent routes with the specified separator.
+      */
+    var uniqueRouteNameSep: js.UndefOr[String] = js.undefined
   }
   object GenerateUrlsOptions {
     
@@ -44,6 +49,10 @@ object generateUrlsMod {
       inline def setStringifyQueryParams(value: /* params */ UrlParams => String): Self = StObject.set(x, "stringifyQueryParams", js.Any.fromFunction1(value))
       
       inline def setStringifyQueryParamsUndefined: Self = StObject.set(x, "stringifyQueryParams", js.undefined)
+      
+      inline def setUniqueRouteNameSep(value: String): Self = StObject.set(x, "uniqueRouteNameSep", value.asInstanceOf[js.Any])
+      
+      inline def setUniqueRouteNameSepUndefined: Self = StObject.set(x, "uniqueRouteNameSep", js.undefined)
     }
   }
   

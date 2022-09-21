@@ -4,14 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A typed name-value pair for structured data.  The type of the value should
-  * be the same as the registered type for the `name` property in the object
-  * definition of `objectType`.
-  */
 trait SchemaNamedProperty extends StObject {
   
-  var booleanValue: js.UndefOr[Boolean] = js.undefined
+  var booleanValue: js.UndefOr[Boolean | Null] = js.undefined
   
   var dateValues: js.UndefOr[SchemaDateValues] = js.undefined
   
@@ -24,11 +19,9 @@ trait SchemaNamedProperty extends StObject {
   var integerValues: js.UndefOr[SchemaIntegerValues] = js.undefined
   
   /**
-    * The name of the property.  This name should correspond to the name of the
-    * property that was registered for object definition in the schema. The
-    * maximum allowable length for this property is 256 characters.
+    * The name of the property. This name should correspond to the name of the property that was registered for object definition in the schema. The maximum allowable length for this property is 256 characters.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   var objectValues: js.UndefOr[SchemaObjectValues] = js.undefined
   
@@ -46,6 +39,8 @@ object SchemaNamedProperty {
   extension [Self <: SchemaNamedProperty](x: Self) {
     
     inline def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
+    
+    inline def setBooleanValueNull: Self = StObject.set(x, "booleanValue", null)
     
     inline def setBooleanValueUndefined: Self = StObject.set(x, "booleanValue", js.undefined)
     
@@ -70,6 +65,8 @@ object SchemaNamedProperty {
     inline def setIntegerValuesUndefined: Self = StObject.set(x, "integerValues", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     

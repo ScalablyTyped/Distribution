@@ -13,7 +13,7 @@ object pageMod {
   
   @JSImport("wepy/page", JSImport.Default)
   @js.native
-  class default () extends page
+  open class default () extends page
   
   trait PageConfig extends StObject {
     
@@ -103,47 +103,39 @@ object pageMod {
     extends typings.wepy.componentMod.default {
     
     @JSName("$back")
-    def $back(delta: Double): js.Any = js.native
+    def $back(delta: Double): Any = js.native
     @JSName("$back")
-    def $back(delta: Delta): js.Any = js.native
+    def $back(delta: Delta): Any = js.native
     
     @JSName("$init")
-    def $init(wxpage: js.Any, $parent: js.Any): js.Any = js.native
+    def $init(wxpage: Any, $parent: Any): Any = js.native
     
     @JSName("$preload")
-    def $preload(key: String, data: js.Any): js.Any = js.native
+    def $preload(key: String, data: Any): Any = js.native
     @JSName("$preload")
-    def $preload(key: StringDictionary[js.Any], data: js.Any): js.Any = js.native
+    def $preload(key: StringDictionary[Any], data: Any): Any = js.native
     
     @JSName("$preloadData")
-    var $preloadData: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var $preloadData: js.UndefOr[StringDictionary[Any]] = js.native
     
     @JSName("$redirect")
-    def $redirect(url: String): js.Any = js.native
+    def $redirect(url: String): Any = js.native
     @JSName("$redirect")
-    def $redirect(url: String, params: js.Object): js.Any = js.native
+    def $redirect(url: String, params: js.Object): Any = js.native
     
     @JSName("$route")
-    def $route_navigateTo(`type`: navigateTo, url: String): js.Any = js.native
+    def $route(`type`: redirectTo | navigateTo, url: String): Any = js.native
     @JSName("$route")
-    def $route_navigateTo(`type`: navigateTo, url: String, params: StringDictionary[js.Any]): js.Any = js.native
+    def $route(`type`: redirectTo | navigateTo, url: String, params: StringDictionary[Any]): Any = js.native
     @JSName("$route")
-    def $route_navigateTo(`type`: navigateTo, url: UrlParam): js.Any = js.native
+    def $route(`type`: redirectTo | navigateTo, url: UrlParam): Any = js.native
     @JSName("$route")
-    def $route_navigateTo(`type`: navigateTo, url: UrlParam, params: StringDictionary[js.Any]): js.Any = js.native
-    @JSName("$route")
-    def $route_redirectTo(`type`: redirectTo, url: String): js.Any = js.native
-    @JSName("$route")
-    def $route_redirectTo(`type`: redirectTo, url: String, params: StringDictionary[js.Any]): js.Any = js.native
-    @JSName("$route")
-    def $route_redirectTo(`type`: redirectTo, url: UrlParam): js.Any = js.native
-    @JSName("$route")
-    def $route_redirectTo(`type`: redirectTo, url: UrlParam, params: StringDictionary[js.Any]): js.Any = js.native
+    def $route(`type`: redirectTo | navigateTo, url: UrlParam, params: StringDictionary[Any]): Any = js.native
     
     @JSName("$switch")
-    def $switch(url: String): js.Any = js.native
+    def $switch(url: String): Any = js.native
     @JSName("$switch")
-    def $switch(url: UrlParam): js.Any = js.native
+    def $switch(url: UrlParam): Any = js.native
     
     var config: js.UndefOr[PageConfig] = js.native
   }

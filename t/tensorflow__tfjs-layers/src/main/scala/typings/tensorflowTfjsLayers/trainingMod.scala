@@ -36,7 +36,7 @@ object trainingMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "Functional")
   @js.native
-  class Functional protected () extends LayersModel {
+  open class Functional protected () extends LayersModel {
     def this(args: ContainerArgs) = this()
   }
   /* static members */
@@ -55,7 +55,7 @@ object trainingMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.tensorflowTfjsCore.modelTypesMod.InferenceModel because var conflicts: inputs, outputs. Inlined execute, execute, execute, execute, execute, execute, predict, predict, predict */ @JSImport("@tensorflow/tfjs-layers/dist/engine/training", "LayersModel")
   @js.native
-  class LayersModel protected () extends Container {
+  open class LayersModel protected () extends Container {
     def this(args: ContainerArgs) = this()
     
     /**
@@ -68,7 +68,7 @@ object trainingMod {
       * @param stepsName The public API's parameter name for `steps`.
       * @returns Number of samples provided.
       */
-    /* private */ var checkNumSamples: js.Any = js.native
+    /* private */ var checkNumSamples: Any = js.native
     
     /**
       * Check trainable weights count consistency.
@@ -81,7 +81,7 @@ object trainingMod {
       */
     /* protected */ def checkTrainableWeightsConsistency(): Unit = js.native
     
-    /* private */ var collectedTrainableWeights: js.Any = js.native
+    /* private */ var collectedTrainableWeights: Any = js.native
     
     /**
       * Configures and prepares the model for training and evaluation.  Compiling
@@ -189,9 +189,9 @@ object trainingMod {
     def execute(inputs: NamedTensorMap, outputs: String): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
     def execute(inputs: NamedTensorMap, outputs: js.Array[String]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
     
-    /* private */ var feedLossFns: js.Any = js.native
+    /* private */ var feedLossFns: Any = js.native
     
-    /* private */ var feedOutputShapes: js.Any = js.native
+    /* private */ var feedOutputShapes: Any = js.native
     
     def fit(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = js.native
     def fit(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
@@ -271,9 +271,9 @@ object trainingMod {
     
     /* protected */ def getDedupedMetricsNames(): js.Array[String] = js.native
     
-    /* private */ var getLossIdentifiers: js.Any = js.native
+    /* private */ var getLossIdentifiers: Any = js.native
     
-    /* private */ var getMetricIdentifiers: js.Any = js.native
+    /* private */ var getMetricIdentifiers: Any = js.native
     
     /**
       * Extract weight values of the model.
@@ -319,7 +319,7 @@ object trainingMod {
       * batch of inputs, returns the prespecified loss and metrics of the model
       * under the batch of input data.
       */
-    /* private */ var makeTestFunction: js.Any = js.native
+    /* private */ var makeTestFunction: Any = js.native
     
     /**
       * Creates a function that performs the following actions:
@@ -408,7 +408,7 @@ object trainingMod {
       * @returns: Predictions as `tf.Tensor` (if a single output) or an `Array` of
       *   `tf.Tensor` (if multipe outputs).
       */
-    /* private */ var predictLoop: js.Any = js.native
+    /* private */ var predictLoop: Any = js.native
     
     def predictOnBatch(x: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
     /**
@@ -431,7 +431,7 @@ object trainingMod {
     /**
       * Retrieve the model's internal symbolic tensors from symbolic-tensor names.
       */
-    /* private */ var retrieveSymbolicTensors: js.Any = js.native
+    /* private */ var retrieveSymbolicTensors: Any = js.native
     
     def save(handlerOrURL: String): js.Promise[SaveResult] = js.native
     def save(handlerOrURL: String, config: SaveConfig): js.Promise[SaveResult] = js.native
@@ -682,26 +682,26 @@ object trainingMod {
     def summary(
       lineLength: Double,
       positions: js.Array[Double],
-      printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+      printFn: js.Function2[/* message */ js.UndefOr[Any], /* repeated */ Any, Unit]
     ): Unit = js.native
     def summary(
       lineLength: Double,
       positions: Unit,
-      printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+      printFn: js.Function2[/* message */ js.UndefOr[Any], /* repeated */ Any, Unit]
     ): Unit = js.native
     def summary(lineLength: Unit, positions: js.Array[Double]): Unit = js.native
     def summary(
       lineLength: Unit,
       positions: js.Array[Double],
-      printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+      printFn: js.Function2[/* message */ js.UndefOr[Any], /* repeated */ Any, Unit]
     ): Unit = js.native
     def summary(
       lineLength: Unit,
       positions: Unit,
-      printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+      printFn: js.Function2[/* message */ js.UndefOr[Any], /* repeated */ Any, Unit]
     ): Unit = js.native
     
-    /* private */ var testFunction: js.Any = js.native
+    /* private */ var testFunction: Any = js.native
     
     /**
       * Loop over some test data in batches.
@@ -714,7 +714,7 @@ object trainingMod {
       * `undefined`.
       * @returns Array of Scalars.
       */
-    /* private */ var testLoop: js.Any = js.native
+    /* private */ var testLoop: Any = js.native
     
     def trainOnBatch(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
     def trainOnBatch(x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
@@ -749,7 +749,7 @@ object trainingMod {
       */
     def trainOnBatch(x: Tensor[Rank], y: Tensor[Rank]): js.Promise[Double | js.Array[Double]] = js.native
     
-    /* private */ var userDefinedMetadata: js.Any = js.native
+    /* private */ var userDefinedMetadata: Any = js.native
   }
   /* static members */
   object LayersModel {
@@ -941,7 +941,7 @@ object trainingMod {
       
       inline def setLossFunction2(value: (/* yTrue */ Tensor[Rank], /* yPred */ Tensor[Rank]) => Tensor[Rank]): Self = StObject.set(x, "loss", js.Any.fromFunction2(value))
       
-      inline def setLossVarargs(value: (LossOrMetricFn | String)*): Self = StObject.set(x, "loss", js.Array(value :_*))
+      inline def setLossVarargs(value: (LossOrMetricFn | String)*): Self = StObject.set(x, "loss", js.Array(value*))
       
       inline def setMetrics(
         value: String | LossOrMetricFn | (js.Array[String | LossOrMetricFn]) | (StringDictionary[String | LossOrMetricFn])
@@ -951,7 +951,7 @@ object trainingMod {
       
       inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
       
-      inline def setMetricsVarargs(value: (String | LossOrMetricFn)*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+      inline def setMetricsVarargs(value: (String | LossOrMetricFn)*): Self = StObject.set(x, "metrics", js.Array(value*))
       
       inline def setOptimizer(value: String | Optimizer): Self = StObject.set(x, "optimizer", value.asInstanceOf[js.Any])
     }

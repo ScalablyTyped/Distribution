@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertTableOfFiguresCommand")
 @js.native
-class InsertTableOfFiguresCommand ()
+open class InsertTableOfFiguresCommand ()
   extends StObject
      with typings.devexpressWeb.InsertTableOfFiguresCommand {
   

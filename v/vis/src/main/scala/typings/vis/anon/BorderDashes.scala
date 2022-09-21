@@ -33,7 +33,7 @@ object BorderDashes {
     
     inline def setBorderDashesUndefined: Self = StObject.set(x, "borderDashes", js.undefined)
     
-    inline def setBorderDashesVarargs(value: Double*): Self = StObject.set(x, "borderDashes", js.Array(value :_*))
+    inline def setBorderDashesVarargs(value: Double*): Self = StObject.set(x, "borderDashes", js.Array(value*))
     
     inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     

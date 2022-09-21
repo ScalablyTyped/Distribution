@@ -8,7 +8,6 @@ import typings.phaser.Phaser.Types.GameObjects.Particles.EdgeZoneSource
 import typings.phaser.Phaser.Types.GameObjects.Particles.GravityWellConfig
 import typings.phaser.Phaser.Types.GameObjects.Particles.ParticleEmitterConfig
 import typings.phaser.Phaser.Types.GameObjects.Particles.RandomZoneSource
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object Particles {
     */
   @JSImport("phaser", "GameObjects.Particles.EmitterOp")
   @js.native
-  class EmitterOp protected ()
+  open class EmitterOp protected ()
     extends StObject
        with typings.phaser.Phaser.GameObjects.Particles.EmitterOp {
     /**
@@ -53,7 +52,7 @@ object Particles {
     * @param epsilon The minimum distance for which the gravity force is calculated. Default 100.
     * @param gravity The gravitational force of this Gravity Well. Default 50.
     */
-  class GravityWell ()
+  open class GravityWell ()
     extends StObject
        with typings.phaser.Phaser.GameObjects.Particles.GravityWell {
     def this(x: Double) = this()
@@ -150,7 +149,7 @@ object Particles {
     */
   @JSImport("phaser", "GameObjects.Particles.Particle")
   @js.native
-  class Particle protected ()
+  open class Particle protected ()
     extends StObject
        with typings.phaser.Phaser.GameObjects.Particles.Particle {
     /**
@@ -210,7 +209,7 @@ object Particles {
       emitter: typings.phaser.Phaser.GameObjects.Particles.ParticleEmitter,
       delta: Double,
       step: Double,
-      processors: js.Array[js.Any]
+      processors: js.Array[Any]
     ): Unit = js.native
     
     /**
@@ -311,7 +310,7 @@ object Particles {
       * The tint applied to this Particle.
       */
     /* CompleteClass */
-    var tint: integer = js.native
+    var tint: Double = js.native
     
     /**
       * The main update method for this Particle.
@@ -322,7 +321,7 @@ object Particles {
       * @param processors An optional array of update processors.
       */
     /* CompleteClass */
-    override def update(delta: Double, step: Double, processors: js.Array[js.Any]): Boolean = js.native
+    override def update(delta: Double, step: Double, processors: js.Array[Any]): Boolean = js.native
     
     /**
       * The x velocity of this Particle.
@@ -355,7 +354,7 @@ object Particles {
     */
   @JSImport("phaser", "GameObjects.Particles.ParticleEmitter")
   @js.native
-  class ParticleEmitter protected ()
+  open class ParticleEmitter protected ()
     extends StObject
        with typings.phaser.Phaser.GameObjects.Particles.ParticleEmitter {
     /**
@@ -391,7 +390,7 @@ object Particles {
     */
   @JSImport("phaser", "GameObjects.Particles.ParticleEmitterManager")
   @js.native
-  class ParticleEmitterManager protected ()
+  open class ParticleEmitterManager protected ()
     extends StObject
        with typings.phaser.Phaser.GameObjects.Particles.ParticleEmitterManager {
     /**
@@ -403,13 +402,13 @@ object Particles {
       */
     def this(scene: Scene, texture: String) = this()
     def this(scene: Scene, texture: String, frame: String) = this()
-    def this(scene: Scene, texture: String, frame: integer) = this()
+    def this(scene: Scene, texture: String, frame: Double) = this()
     def this(scene: Scene, texture: String, frame: String, emitters: js.Array[ParticleEmitterConfig]) = this()
     def this(scene: Scene, texture: String, frame: String, emitters: ParticleEmitterConfig) = this()
+    def this(scene: Scene, texture: String, frame: Double, emitters: js.Array[ParticleEmitterConfig]) = this()
+    def this(scene: Scene, texture: String, frame: Double, emitters: ParticleEmitterConfig) = this()
     def this(scene: Scene, texture: String, frame: Unit, emitters: js.Array[ParticleEmitterConfig]) = this()
     def this(scene: Scene, texture: String, frame: Unit, emitters: ParticleEmitterConfig) = this()
-    def this(scene: Scene, texture: String, frame: integer, emitters: js.Array[ParticleEmitterConfig]) = this()
-    def this(scene: Scene, texture: String, frame: integer, emitters: ParticleEmitterConfig) = this()
     
     /**
       * The depth of this Game Object within the Scene.
@@ -438,7 +437,7 @@ object Particles {
       * @param value The depth of this Game Object.
       */
     /* CompleteClass */
-    override def setDepth(value: integer): this.type = js.native
+    override def setDepth(value: Double): this.type = js.native
     
     /**
       * Sets the visibility of this Game Object.
@@ -470,7 +469,7 @@ object Particles {
       */
     @JSImport("phaser", "GameObjects.Particles.Zones.DeathZone")
     @js.native
-    class DeathZone protected ()
+    open class DeathZone protected ()
       extends StObject
          with typings.phaser.Phaser.GameObjects.Particles.Zones.DeathZone {
       /**
@@ -507,7 +506,7 @@ object Particles {
       */
     @JSImport("phaser", "GameObjects.Particles.Zones.EdgeZone")
     @js.native
-    class EdgeZone protected ()
+    open class EdgeZone protected ()
       extends StObject
          with typings.phaser.Phaser.GameObjects.Particles.Zones.EdgeZone {
       /**
@@ -518,10 +517,10 @@ object Particles {
         * @param yoyo Whether particles are placed from start to end and then end to start. Default false.
         * @param seamless Whether one endpoint will be removed if it's identical to the other. Default true.
         */
-      def this(source: EdgeZoneSource, quantity: integer, stepRate: Double) = this()
-      def this(source: EdgeZoneSource, quantity: integer, stepRate: Double, yoyo: Boolean) = this()
-      def this(source: EdgeZoneSource, quantity: integer, stepRate: Double, yoyo: Boolean, seamless: Boolean) = this()
-      def this(source: EdgeZoneSource, quantity: integer, stepRate: Double, yoyo: Unit, seamless: Boolean) = this()
+      def this(source: EdgeZoneSource, quantity: Double, stepRate: Double) = this()
+      def this(source: EdgeZoneSource, quantity: Double, stepRate: Double, yoyo: Boolean) = this()
+      def this(source: EdgeZoneSource, quantity: Double, stepRate: Double, yoyo: Boolean, seamless: Boolean) = this()
+      def this(source: EdgeZoneSource, quantity: Double, stepRate: Double, yoyo: Unit, seamless: Boolean) = this()
       
       /**
         * Change the source of the EdgeZone.
@@ -553,7 +552,7 @@ object Particles {
         * The number of particles to place on the source edge. Set to 0 to use `stepRate` instead.
         */
       /* CompleteClass */
-      var quantity: integer = js.native
+      var quantity: Double = js.native
       
       /**
         * Whether one endpoint will be removed if it's identical to the other.
@@ -590,11 +589,11 @@ object Particles {
     }
     
     /**
-      * A zone that places particles randomly within a shape's area.
+      * A zone that places particles randomly within a shapes area.
       */
     @JSImport("phaser", "GameObjects.Particles.Zones.RandomZone")
     @js.native
-    class RandomZone protected ()
+    open class RandomZone protected ()
       extends StObject
          with typings.phaser.Phaser.GameObjects.Particles.Zones.RandomZone {
       /**

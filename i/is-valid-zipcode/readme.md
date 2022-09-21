@@ -10,10 +10,10 @@ Check if a zip/postal code is valid.
 | ------------------ | :-------------: |
 | Full name          | is-valid-zipcode |
 | Keywords           | zipcode, valid, validation, zip, code, postal, code, postalcode |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 22284 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7378.666666666667 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/hacdias/is-valid-zipcode#readme)

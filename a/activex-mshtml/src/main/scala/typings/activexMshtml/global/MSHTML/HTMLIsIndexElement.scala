@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLIsIndexElement")
 @js.native
-/* private */ class HTMLIsIndexElement ()
+/* private */ open class HTMLIsIndexElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLIsIndexElement

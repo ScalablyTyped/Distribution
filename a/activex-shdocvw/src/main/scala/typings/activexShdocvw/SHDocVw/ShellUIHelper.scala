@@ -10,40 +10,40 @@ trait ShellUIHelper extends StObject {
   def AddChannel(URL: String): Unit = js.native
   
   def AddDesktopComponent(URL: String, Type: String): Unit = js.native
-  def AddDesktopComponent(URL: String, Type: String, Left: js.Any): Unit = js.native
-  def AddDesktopComponent(URL: String, Type: String, Left: js.Any, Top: js.Any): Unit = js.native
-  def AddDesktopComponent(URL: String, Type: String, Left: js.Any, Top: js.Any, Width: js.Any): Unit = js.native
-  def AddDesktopComponent(URL: String, Type: String, Left: js.Any, Top: js.Any, Width: js.Any, Height: js.Any): Unit = js.native
-  def AddDesktopComponent(URL: String, Type: String, Left: js.Any, Top: js.Any, Width: Unit, Height: js.Any): Unit = js.native
-  def AddDesktopComponent(URL: String, Type: String, Left: js.Any, Top: Unit, Width: js.Any): Unit = js.native
-  def AddDesktopComponent(URL: String, Type: String, Left: js.Any, Top: Unit, Width: js.Any, Height: js.Any): Unit = js.native
-  def AddDesktopComponent(URL: String, Type: String, Left: js.Any, Top: Unit, Width: Unit, Height: js.Any): Unit = js.native
-  def AddDesktopComponent(URL: String, Type: String, Left: Unit, Top: js.Any): Unit = js.native
-  def AddDesktopComponent(URL: String, Type: String, Left: Unit, Top: js.Any, Width: js.Any): Unit = js.native
-  def AddDesktopComponent(URL: String, Type: String, Left: Unit, Top: js.Any, Width: js.Any, Height: js.Any): Unit = js.native
-  def AddDesktopComponent(URL: String, Type: String, Left: Unit, Top: js.Any, Width: Unit, Height: js.Any): Unit = js.native
-  def AddDesktopComponent(URL: String, Type: String, Left: Unit, Top: Unit, Width: js.Any): Unit = js.native
-  def AddDesktopComponent(URL: String, Type: String, Left: Unit, Top: Unit, Width: js.Any, Height: js.Any): Unit = js.native
-  def AddDesktopComponent(URL: String, Type: String, Left: Unit, Top: Unit, Width: Unit, Height: js.Any): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: Any): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: Any, Top: Any): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: Any, Top: Any, Width: Any): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: Any, Top: Any, Width: Any, Height: Any): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: Any, Top: Any, Width: Unit, Height: Any): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: Any, Top: Unit, Width: Any): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: Any, Top: Unit, Width: Any, Height: Any): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: Any, Top: Unit, Width: Unit, Height: Any): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: Unit, Top: Any): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: Unit, Top: Any, Width: Any): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: Unit, Top: Any, Width: Any, Height: Any): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: Unit, Top: Any, Width: Unit, Height: Any): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: Unit, Top: Unit, Width: Any): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: Unit, Top: Unit, Width: Any, Height: Any): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: Unit, Top: Unit, Width: Unit, Height: Any): Unit = js.native
   
   def AddFavorite(URL: String): Unit = js.native
-  def AddFavorite(URL: String, Title: js.Any): Unit = js.native
+  def AddFavorite(URL: String, Title: Any): Unit = js.native
   
   def AddSearchProvider(URL: String): Unit = js.native
   
   def AddService(URL: String): Unit = js.native
   
   def AddToFavoritesBar(URL: String, Title: String): Unit = js.native
-  def AddToFavoritesBar(URL: String, Title: String, Type: js.Any): Unit = js.native
+  def AddToFavoritesBar(URL: String, Title: String, Type: Any): Unit = js.native
   
   def AutoCompleteAttach(): Unit = js.native
-  def AutoCompleteAttach(Reserved: js.Any): Unit = js.native
+  def AutoCompleteAttach(Reserved: Any): Unit = js.native
   
   def AutoCompleteSaveForm(): Unit = js.native
-  def AutoCompleteSaveForm(Form: js.Any): Unit = js.native
+  def AutoCompleteSaveForm(Form: Any): Unit = js.native
   
   def AutoScan(strSearch: String, strFailureUrl: String): Unit = js.native
-  def AutoScan(strSearch: String, strFailureUrl: String, pvarTargetFrame: js.Any): Unit = js.native
+  def AutoScan(strSearch: String, strFailureUrl: String, pvarTargetFrame: Any): Unit = js.native
   
   def BrandImageUri(): String = js.native
   
@@ -95,7 +95,7 @@ trait ShellUIHelper extends StObject {
   
   def LaunchInHVSI(bstrUrl: String): Unit = js.native
   
-  def NavigateAndFind(URL: String, strQuery: String, varTargetFrame: js.Any): Unit = js.native
+  def NavigateAndFind(URL: String, strQuery: String, varTargetFrame: Any): Unit = js.native
   
   def NavigateToSuggestedSites(bstrRelativeUrl: String): Unit = js.native
   
@@ -134,7 +134,7 @@ trait ShellUIHelper extends StObject {
   
   def SetRecentlyClosedVisible(fVisible: Boolean): Unit = js.native
   
-  def ShowBrowserUI(bstrName: String, pvarIn: js.Any): js.Any = js.native
+  def ShowBrowserUI(bstrName: String, pvarIn: Any): Any = js.native
   
   def ShowInPrivateHelp(): Unit = js.native
   
@@ -168,15 +168,15 @@ trait ShellUIHelper extends StObject {
   
   def msIsSiteMode(): Boolean = js.native
   
-  def msIsSiteModeFirstRun(fPreserveState: Boolean): js.Any = js.native
+  def msIsSiteModeFirstRun(fPreserveState: Boolean): Any = js.native
   
   def msLaunchInternetOptions(): Unit = js.native
   
   def msLaunchNetworkClientHelp(): Unit = js.native
   
-  def msPinnedSiteState(): js.Any = js.native
+  def msPinnedSiteState(): Any = js.native
   
-  def msProvisionNetworks(bstrProvisioningXml: String): js.Any = js.native
+  def msProvisionNetworks(bstrProvisioningXml: String): Any = js.native
   
   def msRemoveScheduledTileNotification(bstrNotificationId: String): Unit = js.native
   
@@ -187,31 +187,31 @@ trait ShellUIHelper extends StObject {
     bstrNotificationXml: String,
     bstrNotificationId: String,
     bstrNotificationTag: String,
-    startTime: js.Any
+    startTime: Any
   ): Unit = js.native
   def msScheduledTileNotification(
     bstrNotificationXml: String,
     bstrNotificationId: String,
     bstrNotificationTag: String,
-    startTime: js.Any,
-    expirationTime: js.Any
+    startTime: Any,
+    expirationTime: Any
   ): Unit = js.native
   def msScheduledTileNotification(
     bstrNotificationXml: String,
     bstrNotificationId: String,
     bstrNotificationTag: String,
     startTime: Unit,
-    expirationTime: js.Any
+    expirationTime: Any
   ): Unit = js.native
   
   def msSiteModeActivate(): Unit = js.native
   
-  def msSiteModeAddButtonStyle(uiButtonID: js.Any, bstrIconURL: String, bstrTooltip: String): js.Any = js.native
+  def msSiteModeAddButtonStyle(uiButtonID: Any, bstrIconURL: String, bstrTooltip: String): Any = js.native
   
   def msSiteModeAddJumpListItem(bstrName: String, bstrActionUri: String, bstrIconUri: String): Unit = js.native
-  def msSiteModeAddJumpListItem(bstrName: String, bstrActionUri: String, bstrIconUri: String, pvarWindowType: js.Any): Unit = js.native
+  def msSiteModeAddJumpListItem(bstrName: String, bstrActionUri: String, bstrIconUri: String, pvarWindowType: Any): Unit = js.native
   
-  def msSiteModeAddThumbBarButton(bstrIconURL: String, bstrTooltip: String): js.Any = js.native
+  def msSiteModeAddThumbBarButton(bstrIconURL: String, bstrTooltip: String): Any = js.native
   
   def msSiteModeClearBadge(): Unit = js.native
   
@@ -224,30 +224,30 @@ trait ShellUIHelper extends StObject {
   def msSiteModeRefreshBadge(): Unit = js.native
   
   def msSiteModeSetIconOverlay(IconUrl: String): Unit = js.native
-  def msSiteModeSetIconOverlay(IconUrl: String, pvarDescription: js.Any): Unit = js.native
+  def msSiteModeSetIconOverlay(IconUrl: String, pvarDescription: Any): Unit = js.native
   
-  def msSiteModeShowButtonStyle(uiButtonID: js.Any, uiStyleID: js.Any): Unit = js.native
+  def msSiteModeShowButtonStyle(uiButtonID: Any, uiStyleID: Any): Unit = js.native
   
   def msSiteModeShowJumpList(): Unit = js.native
   
   def msSiteModeShowThumbBar(): Unit = js.native
   
-  def msSiteModeUpdateThumbBarButton(ButtonID: js.Any, fEnabled: Boolean, fVisible: Boolean): Unit = js.native
+  def msSiteModeUpdateThumbBarButton(ButtonID: Any, fEnabled: Boolean, fVisible: Boolean): Unit = js.native
   
   def msStartPeriodicBadgeUpdate(pollingUri: String): Unit = js.native
-  def msStartPeriodicBadgeUpdate(pollingUri: String, startTime: js.Any): Unit = js.native
-  def msStartPeriodicBadgeUpdate(pollingUri: String, startTime: js.Any, uiUpdateRecurrence: js.Any): Unit = js.native
-  def msStartPeriodicBadgeUpdate(pollingUri: String, startTime: Unit, uiUpdateRecurrence: js.Any): Unit = js.native
+  def msStartPeriodicBadgeUpdate(pollingUri: String, startTime: Any): Unit = js.native
+  def msStartPeriodicBadgeUpdate(pollingUri: String, startTime: Any, uiUpdateRecurrence: Any): Unit = js.native
+  def msStartPeriodicBadgeUpdate(pollingUri: String, startTime: Unit, uiUpdateRecurrence: Any): Unit = js.native
   
-  def msStartPeriodicTileUpdate(pollingUris: js.Any): Unit = js.native
-  def msStartPeriodicTileUpdate(pollingUris: js.Any, startTime: js.Any): Unit = js.native
-  def msStartPeriodicTileUpdate(pollingUris: js.Any, startTime: js.Any, uiUpdateRecurrence: js.Any): Unit = js.native
-  def msStartPeriodicTileUpdate(pollingUris: js.Any, startTime: Unit, uiUpdateRecurrence: js.Any): Unit = js.native
+  def msStartPeriodicTileUpdate(pollingUris: Any): Unit = js.native
+  def msStartPeriodicTileUpdate(pollingUris: Any, startTime: Any): Unit = js.native
+  def msStartPeriodicTileUpdate(pollingUris: Any, startTime: Any, uiUpdateRecurrence: Any): Unit = js.native
+  def msStartPeriodicTileUpdate(pollingUris: Any, startTime: Unit, uiUpdateRecurrence: Any): Unit = js.native
   
-  def msStartPeriodicTileUpdateBatch(pollingUris: js.Any): Unit = js.native
-  def msStartPeriodicTileUpdateBatch(pollingUris: js.Any, startTime: js.Any): Unit = js.native
-  def msStartPeriodicTileUpdateBatch(pollingUris: js.Any, startTime: js.Any, uiUpdateRecurrence: js.Any): Unit = js.native
-  def msStartPeriodicTileUpdateBatch(pollingUris: js.Any, startTime: Unit, uiUpdateRecurrence: js.Any): Unit = js.native
+  def msStartPeriodicTileUpdateBatch(pollingUris: Any): Unit = js.native
+  def msStartPeriodicTileUpdateBatch(pollingUris: Any, startTime: Any): Unit = js.native
+  def msStartPeriodicTileUpdateBatch(pollingUris: Any, startTime: Any, uiUpdateRecurrence: Any): Unit = js.native
+  def msStartPeriodicTileUpdateBatch(pollingUris: Any, startTime: Unit, uiUpdateRecurrence: Any): Unit = js.native
   
   def msStopPeriodicBadgeUpdate(): Unit = js.native
   

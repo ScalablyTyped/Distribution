@@ -44,13 +44,13 @@ object Report {
     
     inline def setAveragesUndefined: Self = StObject.set(x, "averages", js.undefined)
     
-    inline def setAveragesVarargs(value: String*): Self = StObject.set(x, "averages", js.Array(value :_*))
+    inline def setAveragesVarargs(value: String*): Self = StObject.set(x, "averages", js.Array(value*))
     
     inline def setHeaders(value: js.Array[Currency]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: Currency*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: Currency*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -60,7 +60,7 @@ object Report {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setTotalMatchedRows(value: String): Self = StObject.set(x, "totalMatchedRows", value.asInstanceOf[js.Any])
     
@@ -70,12 +70,12 @@ object Report {
     
     inline def setTotalsUndefined: Self = StObject.set(x, "totals", js.undefined)
     
-    inline def setTotalsVarargs(value: String*): Self = StObject.set(x, "totals", js.Array(value :_*))
+    inline def setTotalsVarargs(value: String*): Self = StObject.set(x, "totals", js.Array(value*))
     
     inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

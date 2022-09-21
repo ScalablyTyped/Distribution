@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("scrivito", "BackgroundImageTag")
 @js.native
-class BackgroundImageTag protected ()
-  extends Component[BackgroundImageTagProps, js.Any, js.Any] {
+open class BackgroundImageTag protected () extends Component[BackgroundImageTagProps, Any, Any] {
   def this(props: BackgroundImageTagProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: BackgroundImageTagProps, context: js.Any) = this()
+  def this(props: BackgroundImageTagProps, context: Any) = this()
 }

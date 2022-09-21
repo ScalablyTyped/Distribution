@@ -1,7 +1,7 @@
 
 # Scala.js typings for discord-rpc
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 A simple RPC client for Discord
@@ -10,10 +10,10 @@ A simple RPC client for Discord
 | ------------------ | :-------------: |
 | Full name          | discord-rpc |
 | Keywords           | discord, rpc, rich presence, remote procedural call |
-| # releases         | 6 |
-| # dependents       | 36 |
-| # downloads        | 176365 |
-| # stars            | 6 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 25447.333333333332 |
+| # stars            | 376.0 |
 
 ## Links
 - [Homepage](https://github.com/discordjs/RPC#readme)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IReplyErrorContent
   extends StObject
-     with _ReplyContent[js.Any] {
+     with _ReplyContent[Any] {
   
   /**
     * Exception name
@@ -43,6 +43,6 @@ object IReplyErrorContent {
     
     inline def setTraceback(value: js.Array[String]): Self = StObject.set(x, "traceback", value.asInstanceOf[js.Any])
     
-    inline def setTracebackVarargs(value: String*): Self = StObject.set(x, "traceback", js.Array(value :_*))
+    inline def setTracebackVarargs(value: String*): Self = StObject.set(x, "traceback", js.Array(value*))
   }
 }

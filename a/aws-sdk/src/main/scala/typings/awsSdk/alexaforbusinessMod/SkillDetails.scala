@@ -69,7 +69,7 @@ object SkillDetails {
     
     inline def setBulletPointsUndefined: Self = StObject.set(x, "BulletPoints", js.undefined)
     
-    inline def setBulletPointsVarargs(value: BulletPoint*): Self = StObject.set(x, "BulletPoints", js.Array(value :_*))
+    inline def setBulletPointsVarargs(value: BulletPoint*): Self = StObject.set(x, "BulletPoints", js.Array(value*))
     
     inline def setDeveloperInfo(value: DeveloperInfo): Self = StObject.set(x, "DeveloperInfo", value.asInstanceOf[js.Any])
     
@@ -83,7 +83,7 @@ object SkillDetails {
     
     inline def setGenericKeywordsUndefined: Self = StObject.set(x, "GenericKeywords", js.undefined)
     
-    inline def setGenericKeywordsVarargs(value: GenericKeyword*): Self = StObject.set(x, "GenericKeywords", js.Array(value :_*))
+    inline def setGenericKeywordsVarargs(value: GenericKeyword*): Self = StObject.set(x, "GenericKeywords", js.Array(value*))
     
     inline def setInvocationPhrase(value: InvocationPhrase): Self = StObject.set(x, "InvocationPhrase", value.asInstanceOf[js.Any])
     
@@ -93,7 +93,7 @@ object SkillDetails {
     
     inline def setNewInThisVersionBulletPointsUndefined: Self = StObject.set(x, "NewInThisVersionBulletPoints", js.undefined)
     
-    inline def setNewInThisVersionBulletPointsVarargs(value: BulletPoint*): Self = StObject.set(x, "NewInThisVersionBulletPoints", js.Array(value :_*))
+    inline def setNewInThisVersionBulletPointsVarargs(value: BulletPoint*): Self = StObject.set(x, "NewInThisVersionBulletPoints", js.Array(value*))
     
     inline def setProductDescription(value: ProductDescription): Self = StObject.set(x, "ProductDescription", value.asInstanceOf[js.Any])
     
@@ -111,6 +111,6 @@ object SkillDetails {
     
     inline def setSkillTypesUndefined: Self = StObject.set(x, "SkillTypes", js.undefined)
     
-    inline def setSkillTypesVarargs(value: SkillStoreType*): Self = StObject.set(x, "SkillTypes", js.Array(value :_*))
+    inline def setSkillTypesVarargs(value: SkillStoreType*): Self = StObject.set(x, "SkillTypes", js.Array(value*))
   }
 }

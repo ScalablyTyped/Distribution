@@ -69,7 +69,7 @@ object FlowDeclaration {
   }
   
   inline def DeclareOpaqueType_(id: Identifier_): typings.babelTypes.mod.DeclareOpaqueType_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, supertype = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, impltype = null, innerComments = null, leadingComments = null, loc = null, start = null, supertype = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("DeclareOpaqueType")
     __obj.asInstanceOf[typings.babelTypes.mod.DeclareOpaqueType_]
   }

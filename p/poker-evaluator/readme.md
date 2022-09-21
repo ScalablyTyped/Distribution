@@ -11,9 +11,9 @@ A library to evaluate 3, 5, 6 or 7 card poker hands
 | Full name          | poker-evaluator |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 4369 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 175.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Sukhmai/poker-evaluator)

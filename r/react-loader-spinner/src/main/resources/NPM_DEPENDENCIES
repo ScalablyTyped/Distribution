@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-loader-spinner" : "5.3.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-loader-spinner" : "5.3.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

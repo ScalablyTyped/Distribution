@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AddScriptToEvaluateOnNewDocumentRequest extends StObject {
   
+  /**
+    * Specifies whether command line API should be available to the script, defaults
+    * to false.
+    */
+  var includeCommandLineAPI: js.UndefOr[Boolean] = js.undefined
+  
   var source: String
   
   /**
@@ -23,6 +29,10 @@ object AddScriptToEvaluateOnNewDocumentRequest {
   }
   
   extension [Self <: AddScriptToEvaluateOnNewDocumentRequest](x: Self) {
+    
+    inline def setIncludeCommandLineAPI(value: Boolean): Self = StObject.set(x, "includeCommandLineAPI", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeCommandLineAPIUndefined: Self = StObject.set(x, "includeCommandLineAPI", js.undefined)
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

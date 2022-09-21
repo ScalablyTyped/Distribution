@@ -48,6 +48,6 @@ object PutMetricFilterRequest {
     
     inline def setMetricTransformations(value: MetricTransformations): Self = StObject.set(x, "metricTransformations", value.asInstanceOf[js.Any])
     
-    inline def setMetricTransformationsVarargs(value: MetricTransformation*): Self = StObject.set(x, "metricTransformations", js.Array(value :_*))
+    inline def setMetricTransformationsVarargs(value: MetricTransformation*): Self = StObject.set(x, "metricTransformations", js.Array(value*))
   }
 }

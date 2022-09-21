@@ -17,17 +17,17 @@ trait ConnectDirectoryRequest extends StObject {
   var Description: js.UndefOr[typings.awsSdk.directoryserviceMod.Description] = js.undefined
   
   /**
-    * The fully qualified name of the on-premises directory, such as corp.example.com.
+    * The fully qualified name of your self-managed directory, such as corp.example.com.
     */
   var Name: DirectoryName
   
   /**
-    * The password for the on-premises user account.
+    * The password for your self-managed user account.
     */
   var Password: ConnectPassword
   
   /**
-    * The NetBIOS name of the on-premises directory, such as CORP.
+    * The NetBIOS name of your self-managed directory, such as CORP.
     */
   var ShortName: js.UndefOr[DirectoryShortName] = js.undefined
   
@@ -75,6 +75,6 @@ object ConnectDirectoryRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

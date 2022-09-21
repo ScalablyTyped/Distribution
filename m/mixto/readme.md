@@ -9,10 +9,10 @@ A mixin superclass. Its subclasses have `.extend` and `.includeInto` methods to 
 | ------------------ | :-------------: |
 | Full name          | mixto |
 | Keywords           | mixin, trait |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 1905285 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 92584.66666666667 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/atom/mixto#readme)

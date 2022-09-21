@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a DynamoDB document client with a set of configuration options.
   */
-class DocumentClient ()
+open class DocumentClient ()
   extends typings.awsSdk.documentClientMod.DocumentClient {
   def this(options: DocumentClientOptions & ClientConfiguration) = this()
 }

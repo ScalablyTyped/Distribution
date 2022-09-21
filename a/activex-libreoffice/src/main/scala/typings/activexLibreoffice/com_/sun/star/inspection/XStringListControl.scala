@@ -41,7 +41,7 @@ object XStringListControl {
     ControlType: Double,
     ControlWindow: XWindow,
     ListEntries: SafeArray[String],
-    Value: js.Any,
+    Value: Any,
     ValueType: `type`,
     appendListEntry: String => Unit,
     clearList: () => Unit,

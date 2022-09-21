@@ -22,7 +22,10 @@ trait Filter extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** The standard list filter. */
+  /**
+    * A filter to narrow down results to a preferred subset. The filtering language accepts strings like "displayName=tokyo", and is documented in more detail in AIP-160
+    * (https://google.aip.dev/160).
+    */
   var filter: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
@@ -34,10 +37,10 @@ trait Filter extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The standard list page size. */
+  /** The maximum number of results to return. If not set, the service selects a default. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** The standard list page token. */
+  /** A page token received from the next_page_token field in the response. Send that page token to receive the subsequent page. */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */

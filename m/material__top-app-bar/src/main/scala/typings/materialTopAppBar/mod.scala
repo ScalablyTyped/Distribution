@@ -1,7 +1,7 @@
 package typings.materialTopAppBar
 
+import typings.materialBase.Element
 import typings.materialTopAppBar.anon.PartialMDCTopAppBarAdapte
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,27 +10,27 @@ object mod {
   
   @JSImport("@material/top-app-bar", "MDCFixedTopAppBarFoundation")
   @js.native
-  class MDCFixedTopAppBarFoundation ()
+  open class MDCFixedTopAppBarFoundation ()
     extends typings.materialTopAppBar.foundationMod.MDCFixedTopAppBarFoundation {
     def this(adapter: PartialMDCTopAppBarAdapte) = this()
   }
   
   @JSImport("@material/top-app-bar", "MDCShortTopAppBarFoundation")
   @js.native
-  class MDCShortTopAppBarFoundation ()
+  open class MDCShortTopAppBarFoundation ()
     extends typings.materialTopAppBar.shortFoundationMod.MDCShortTopAppBarFoundation {
     def this(adapter: PartialMDCTopAppBarAdapte) = this()
   }
   
   @JSImport("@material/top-app-bar", "MDCTopAppBar")
   @js.native
-  class MDCTopAppBar protected ()
+  open class MDCTopAppBar protected ()
     extends typings.materialTopAppBar.componentMod.MDCTopAppBar {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTopAppBar.materialTopAppBarMod.MDCTopAppBarBaseFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -40,45 +40,23 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialTopAppBar.componentMod.MDCTopAppBar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTopAppBar.componentMod.MDCTopAppBar]
+    inline def attachTo(root: typings.std.Element): typings.materialTopAppBar.componentMod.MDCTopAppBar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTopAppBar.componentMod.MDCTopAppBar]
   }
   
   @JSImport("@material/top-app-bar", "MDCTopAppBarBaseFoundation")
   @js.native
-  class MDCTopAppBarBaseFoundation ()
+  open class MDCTopAppBarBaseFoundation ()
     extends typings.materialTopAppBar.materialTopAppBarMod.MDCTopAppBarBaseFoundation {
     def this(adapter: PartialMDCTopAppBarAdapte) = this()
   }
   
   @JSImport("@material/top-app-bar", "MDCTopAppBarFoundation")
   @js.native
-  class MDCTopAppBarFoundation ()
+  open class MDCTopAppBarFoundation ()
     extends typings.materialTopAppBar.standardFoundationMod.MDCTopAppBarFoundation {
     def this(adapter: PartialMDCTopAppBarAdapte) = this()
   }
   
-  /**
-    * @license
-    * Copyright 2018 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
   object cssClasses {
     
     @JSImport("@material/top-app-bar", "cssClasses")

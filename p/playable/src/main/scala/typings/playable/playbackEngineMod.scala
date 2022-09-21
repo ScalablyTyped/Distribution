@@ -10,7 +10,7 @@ object playbackEngineMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/playback-engine", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Engine {
     def this(hasEventEmitterNativeOutputConfig: IPlaybackEngineDependencies) = this()
@@ -39,15 +39,15 @@ object playbackEngineMod {
     extends StObject
        with IPlaybackEngine {
     
-    /* private */ var _applyConfig: js.Any = js.native
+    /* private */ var _applyConfig: Any = js.native
     
-    /* private */ var _config: js.Any = js.native
+    /* private */ var _config: Any = js.native
     
-    /* private */ var _defaultOutput: js.Any = js.native
+    /* private */ var _defaultOutput: Any = js.native
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ var _output: js.Any = js.native
+    /* private */ var _output: Any = js.native
     
     def changeOutput(): Unit = js.native
     def changeOutput(output: Unit, callback: js.Function): Unit = js.native
@@ -56,7 +56,7 @@ object playbackEngineMod {
     def isAutoPlayActive_MEngine: Boolean = js.native
     
     @JSName("isDynamicContentEnded")
-    def isDynamicContentEnded_MEngine: js.Any = js.native
+    def isDynamicContentEnded_MEngine: Boolean = js.native
     
     @JSName("isDynamicContent")
     def isDynamicContent_MEngine: Boolean = js.native

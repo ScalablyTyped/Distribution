@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "net-keepalive" : "1.4.0"
+      "net-keepalive" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "net-keepalive" : "1.4.0"
+      "net-keepalive" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

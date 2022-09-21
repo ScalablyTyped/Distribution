@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.WebServiceAdapterObject")
 @js.native
-/* private */ class WebServiceAdapterObject ()
+/* private */ open class WebServiceAdapterObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.WebServiceAdapterObject {
   

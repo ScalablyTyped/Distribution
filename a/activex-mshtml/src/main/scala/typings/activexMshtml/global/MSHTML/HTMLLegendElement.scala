@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLLegendElement")
 @js.native
-/* private */ class HTMLLegendElement ()
+/* private */ open class HTMLLegendElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLLegendElement

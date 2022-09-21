@@ -1,6 +1,5 @@
 package typings.breeze.breeze
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object core {
        with IEnum {
     
     def addSymbol(): EnumSymbol = js.native
-    def addSymbol(propertiesObj: js.Any): EnumSymbol = js.native
+    def addSymbol(propertiesObj: Any): EnumSymbol = js.native
     
     def resolveSymbols(): Unit = js.native
   }
@@ -39,30 +38,30 @@ object core {
     }
   }
   
-  type ErrorCallback = js.Function1[/* error */ Error, Unit]
+  type ErrorCallback = js.Function1[/* error */ js.Error, Unit]
   
   @js.native
   trait Event extends StObject {
     
     def clear(): Unit = js.native
     
-    def publish(data: js.Any): Unit = js.native
-    def publish(data: js.Any, publishAsync: Boolean): Unit = js.native
-    def publish(data: js.Any, publishAsync: Boolean, errorCallback: ErrorCallback): Unit = js.native
-    def publish(data: js.Any, publishAsync: Unit, errorCallback: ErrorCallback): Unit = js.native
+    def publish(data: Any): Unit = js.native
+    def publish(data: Any, publishAsync: Boolean): Unit = js.native
+    def publish(data: Any, publishAsync: Boolean, errorCallback: ErrorCallback): Unit = js.native
+    def publish(data: Any, publishAsync: Unit, errorCallback: ErrorCallback): Unit = js.native
     
-    def publishAsync(data: js.Any): Unit = js.native
-    def publishAsync(data: js.Any, errorCallback: ErrorCallback): Unit = js.native
+    def publishAsync(data: Any): Unit = js.native
+    def publishAsync(data: Any, errorCallback: ErrorCallback): Unit = js.native
     
     def subscribe(): Double = js.native
-    def subscribe(callback: js.Function1[/* data */ js.Any, Unit]): Double = js.native
+    def subscribe(callback: js.Function1[/* data */ Any, Unit]): Double = js.native
     
     def unsubscribe(unsubKey: Double): Boolean = js.native
   }
   
   trait IEnum extends StObject {
     
-    def contains(`object`: js.Any): Boolean
+    def contains(`object`: Any): Boolean
     
     def fromName(name: String): EnumSymbol
     
@@ -73,7 +72,7 @@ object core {
   object IEnum {
     
     inline def apply(
-      contains: js.Any => Boolean,
+      contains: Any => Boolean,
       fromName: String => EnumSymbol,
       getNames: () => js.Array[String],
       getSymbols: () => js.Array[EnumSymbol]
@@ -84,7 +83,7 @@ object core {
     
     extension [Self <: IEnum](x: Self) {
       
-      inline def setContains(value: js.Any => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: Any => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
       inline def setFromName(value: String => EnumSymbol): Self = StObject.set(x, "fromName", js.Any.fromFunction1(value))
       

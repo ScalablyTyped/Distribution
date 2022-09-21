@@ -15,6 +15,12 @@ trait AddonsConfig extends StObject {
   /** Configuration for NodeLocalDNS, a dns cache running on cluster nodes */
   var dnsCacheConfig: js.UndefOr[DnsCacheConfig] = js.undefined
   
+  /** Configuration for the Compute Engine Persistent Disk CSI driver. */
+  var gcePersistentDiskCsiDriverConfig: js.UndefOr[GcePersistentDiskCsiDriverConfig] = js.undefined
+  
+  /** Configuration for the GCP Filestore CSI driver. */
+  var gcpFilestoreCsiDriverConfig: js.UndefOr[GcpFilestoreCsiDriverConfig] = js.undefined
+  
   /**
     * Configuration for the horizontal pod autoscaling feature, which increases or decreases the number of replica pods a replication controller has based on the resource usage of the
     * existing pods.
@@ -53,6 +59,14 @@ object AddonsConfig {
     inline def setDnsCacheConfig(value: DnsCacheConfig): Self = StObject.set(x, "dnsCacheConfig", value.asInstanceOf[js.Any])
     
     inline def setDnsCacheConfigUndefined: Self = StObject.set(x, "dnsCacheConfig", js.undefined)
+    
+    inline def setGcePersistentDiskCsiDriverConfig(value: GcePersistentDiskCsiDriverConfig): Self = StObject.set(x, "gcePersistentDiskCsiDriverConfig", value.asInstanceOf[js.Any])
+    
+    inline def setGcePersistentDiskCsiDriverConfigUndefined: Self = StObject.set(x, "gcePersistentDiskCsiDriverConfig", js.undefined)
+    
+    inline def setGcpFilestoreCsiDriverConfig(value: GcpFilestoreCsiDriverConfig): Self = StObject.set(x, "gcpFilestoreCsiDriverConfig", value.asInstanceOf[js.Any])
+    
+    inline def setGcpFilestoreCsiDriverConfigUndefined: Self = StObject.set(x, "gcpFilestoreCsiDriverConfig", js.undefined)
     
     inline def setHorizontalPodAutoscaling(value: HorizontalPodAutoscaling): Self = StObject.set(x, "horizontalPodAutoscaling", value.asInstanceOf[js.Any])
     

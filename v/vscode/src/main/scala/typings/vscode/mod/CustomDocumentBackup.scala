@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A backup for an [`CustomDocument`](#CustomDocument).
+  * A backup for an {@linkcode CustomDocument}.
   */
 trait CustomDocumentBackup extends StObject {
   
   /**
     * Delete the current backup.
     *
-    * This is called by VS Code when it is clear the current backup is no longer needed, such as when a new backup
+    * This is called by the editor when it is clear the current backup is no longer needed, such as when a new backup
     * is made or when the file is saved.
     */
   def delete(): Unit

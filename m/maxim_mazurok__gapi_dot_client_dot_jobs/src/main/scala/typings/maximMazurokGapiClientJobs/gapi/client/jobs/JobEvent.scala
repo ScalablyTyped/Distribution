@@ -8,7 +8,8 @@ trait JobEvent extends StObject {
   
   /**
     * Required. The job name(s) associated with this event. For example, if this is an impression event, this field contains the identifiers of all jobs shown to the job seeker. If this
-    * was a view event, this field contains the identifier of the viewed job.
+    * was a view event, this field contains the identifier of the viewed job. The format is "projects/{project_id}/tenants/{tenant_id}/jobs/{job_id}", for example,
+    * "projects/foo/tenants/bar/jobs/baz".
     */
   var jobs: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -28,7 +29,7 @@ object JobEvent {
     
     inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
-    inline def setJobsVarargs(value: String*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: String*): Self = StObject.set(x, "jobs", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

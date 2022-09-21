@@ -33,7 +33,7 @@ object ValueDefinition {
     
     inline def setDataSource(value: js.Array[InputValue]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    inline def setDataSourceVarargs(value: InputValue*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: InputValue*): Self = StObject.set(x, "dataSource", js.Array(value*))
     
     inline def setEndPoint(value: String): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
     

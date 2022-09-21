@@ -14,12 +14,12 @@ trait RobotDeployment extends StObject {
   /**
     * The time, in milliseconds since the epoch, when the deployment finished.
     */
-  var deploymentFinishTime: js.UndefOr[CreatedAt] = js.undefined
+  var deploymentFinishTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the deployment was started.
     */
-  var deploymentStartTime: js.UndefOr[CreatedAt] = js.undefined
+  var deploymentStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The robot deployment failure code.
@@ -54,11 +54,11 @@ object RobotDeployment {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setDeploymentFinishTime(value: CreatedAt): Self = StObject.set(x, "deploymentFinishTime", value.asInstanceOf[js.Any])
+    inline def setDeploymentFinishTime(value: js.Date): Self = StObject.set(x, "deploymentFinishTime", value.asInstanceOf[js.Any])
     
     inline def setDeploymentFinishTimeUndefined: Self = StObject.set(x, "deploymentFinishTime", js.undefined)
     
-    inline def setDeploymentStartTime(value: CreatedAt): Self = StObject.set(x, "deploymentStartTime", value.asInstanceOf[js.Any])
+    inline def setDeploymentStartTime(value: js.Date): Self = StObject.set(x, "deploymentStartTime", value.asInstanceOf[js.Any])
     
     inline def setDeploymentStartTimeUndefined: Self = StObject.set(x, "deploymentStartTime", js.undefined)
     

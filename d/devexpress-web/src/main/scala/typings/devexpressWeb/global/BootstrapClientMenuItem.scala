@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientMenuItem")
 @js.native
-class BootstrapClientMenuItem ()
+open class BootstrapClientMenuItem ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientMenuItem {
   

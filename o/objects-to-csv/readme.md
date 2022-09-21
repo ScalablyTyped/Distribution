@@ -10,10 +10,10 @@ Converts an array of objects into a CSV file. Saves CSV to disk or returns as st
 | ------------------ | :-------------: |
 | Full name          | objects-to-csv |
 | Keywords           | csv, object-to-csv, async-csv, converters, conversion, utilities, utils, json-to-csv, json2csv, array-to-csv |
-| # releases         | 14 |
-| # dependents       | 9 |
-| # downloads        | 437442 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 202967.66666666666 |
+| # stars            | 77.0 |
 
 ## Links
 - [Homepage](https://github.com/anton-bot/objects-to-csv#readme)

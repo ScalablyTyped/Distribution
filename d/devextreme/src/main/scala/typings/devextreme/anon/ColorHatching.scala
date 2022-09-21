@@ -6,12 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColorHatching extends StObject {
   
+  /**
+    * Configures the appearance a node&apos;s border changes to when the node is hovered over or pressed.
+    */
   var border: js.UndefOr[ColorVisible] = js.undefined
   
+  /**
+    * Specifies the color a node changes to when it is hovered over or pressed.
+    */
   var color: js.UndefOr[String] = js.undefined
   
-  var hatching: js.UndefOr[Step] = js.undefined
+  /**
+    * Applies hatching to a node when it is hovered over or pressed.
+    */
+  var hatching: js.UndefOr[Direction] = js.undefined
   
+  /**
+    * Specifies the transparency a node changes to when it is hovered over or pressed.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
 }
 object ColorHatching {
@@ -31,7 +43,7 @@ object ColorHatching {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setHatching(value: Step): Self = StObject.set(x, "hatching", value.asInstanceOf[js.Any])
+    inline def setHatching(value: Direction): Self = StObject.set(x, "hatching", value.asInstanceOf[js.Any])
     
     inline def setHatchingUndefined: Self = StObject.set(x, "hatching", js.undefined)
     

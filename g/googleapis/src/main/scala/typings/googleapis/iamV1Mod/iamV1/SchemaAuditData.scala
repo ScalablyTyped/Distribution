@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Audit log information specific to Cloud IAM. This message is serialized as
-  * an `Any` type in the `ServiceData` message of an `AuditLog` message.
-  */
 trait SchemaAuditData extends StObject {
   
   /**

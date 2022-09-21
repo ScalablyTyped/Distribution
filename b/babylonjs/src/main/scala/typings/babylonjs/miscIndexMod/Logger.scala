@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Misc/index", "Logger")
 @js.native
-class Logger ()
+open class Logger ()
   extends typings.babylonjs.loggerMod.Logger
 /* static members */
 object Logger {
@@ -31,6 +31,7 @@ object Logger {
     * Write an error message to the console
     */
   inline def Error(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Error")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def Error(message: String, limit: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Error")(message.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Only error logs
@@ -43,6 +44,15 @@ object Logger {
     * Log a message to the console
     */
   inline def Log(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Log")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def Log(message: String, limit: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Log")(message.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Message to display when a message has been logged too many times
+    */
+  @JSImport("babylonjs/Misc/index", "Logger.MessageLimitReached")
+  @js.native
+  def MessageLimitReached: String = js.native
+  inline def MessageLimitReached_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MessageLimitReached")(x.asInstanceOf[js.Any])
   
   /**
     * Only message logs
@@ -67,6 +77,7 @@ object Logger {
     * Write a warning message to the console
     */
   inline def Warn(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Warn")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def Warn(message: String, limit: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Warn")(message.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Only warning logs
@@ -77,48 +88,48 @@ object Logger {
   
   @JSImport("babylonjs/Misc/index", "Logger._AddLogEntry")
   @js.native
-  def _AddLogEntry: js.Any = js.native
-  inline def _AddLogEntry_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AddLogEntry")(x.asInstanceOf[js.Any])
+  def _AddLogEntry: Any = js.native
+  inline def _AddLogEntry_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AddLogEntry")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/Misc/index", "Logger._ErrorDisabled")
+  @JSImport("babylonjs/Misc/index", "Logger._CheckLimit")
   @js.native
-  def _ErrorDisabled: js.Any = js.native
-  inline def _ErrorDisabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ErrorDisabled")(x.asInstanceOf[js.Any])
-  
-  @JSImport("babylonjs/Misc/index", "Logger._ErrorEnabled")
-  @js.native
-  def _ErrorEnabled: js.Any = js.native
-  inline def _ErrorEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ErrorEnabled")(x.asInstanceOf[js.Any])
+  def _CheckLimit: Any = js.native
+  inline def _CheckLimit_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CheckLimit")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Misc/index", "Logger._FormatMessage")
   @js.native
-  def _FormatMessage: js.Any = js.native
-  inline def _FormatMessage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FormatMessage")(x.asInstanceOf[js.Any])
+  def _FormatMessage: Any = js.native
+  inline def _FormatMessage_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FormatMessage")(x.asInstanceOf[js.Any])
+  
+  @JSImport("babylonjs/Misc/index", "Logger._GenerateLimitMessage")
+  @js.native
+  def _GenerateLimitMessage: Any = js.native
+  inline def _GenerateLimitMessage_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GenerateLimitMessage")(x.asInstanceOf[js.Any])
+  
+  @JSImport("babylonjs/Misc/index", "Logger._Levels")
+  @js.native
+  def _Levels: Any = js.native
+  inline def _Levels_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Levels")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Misc/index", "Logger._LogCache")
   @js.native
-  def _LogCache: js.Any = js.native
-  inline def _LogCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LogCache")(x.asInstanceOf[js.Any])
+  def _LogCache: Any = js.native
+  inline def _LogCache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LogCache")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Misc/index", "Logger._LogDisabled")
   @js.native
-  def _LogDisabled: js.Any = js.native
-  inline def _LogDisabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LogDisabled")(x.asInstanceOf[js.Any])
+  def _LogDisabled: Any = js.native
+  inline def _LogDisabled_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LogDisabled")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Misc/index", "Logger._LogEnabled")
   @js.native
-  def _LogEnabled: js.Any = js.native
-  inline def _LogEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LogEnabled")(x.asInstanceOf[js.Any])
+  def _LogEnabled: Any = js.native
+  inline def _LogEnabled_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LogEnabled")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/Misc/index", "Logger._WarnDisabled")
+  @JSImport("babylonjs/Misc/index", "Logger._LogLimitOutputs")
   @js.native
-  def _WarnDisabled: js.Any = js.native
-  inline def _WarnDisabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_WarnDisabled")(x.asInstanceOf[js.Any])
-  
-  @JSImport("babylonjs/Misc/index", "Logger._WarnEnabled")
-  @js.native
-  def _WarnEnabled: js.Any = js.native
-  inline def _WarnEnabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_WarnEnabled")(x.asInstanceOf[js.Any])
+  def _LogLimitOutputs: Any = js.native
+  inline def _LogLimitOutputs_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LogLimitOutputs")(x.asInstanceOf[js.Any])
   
   /**
     * Gets a value indicating the number of loading errors

@@ -20,109 +20,115 @@ object mod {
   
   @JSImport("imap-simple", "ImapSimple")
   @js.native
-  class ImapSimple protected () extends EventEmitter {
+  open class ImapSimple protected () extends EventEmitter {
     def this(imap: typings.imap.mod.^) = this()
     
     def addBox(boxName: String): js.Promise[String] = js.native
     /** Create a mailbox, calling the provided callback with signature (err, boxName), or resolves the returned promise with boxName. */
-    def addBox(boxName: String, callback: js.Function2[/* err */ Error, /* boxName */ String, Unit]): Unit = js.native
+    def addBox(boxName: String, callback: js.Function2[/* err */ js.Error, /* boxName */ String, Unit]): Unit = js.native
     
     def addFlags(source: js.Array[Double], flag: String): js.Promise[Unit] = js.native
-    def addFlags(source: js.Array[Double], flag: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def addFlags(source: js.Array[Double], flag: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     def addFlags(source: js.Array[Double], flag: js.Array[String]): js.Promise[Unit] = js.native
-    def addFlags(source: js.Array[Double], flag: js.Array[String], callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def addFlags(source: js.Array[Double], flag: js.Array[String], callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     def addFlags(source: Double, flag: String): js.Promise[Unit] = js.native
     /** Adds the provided flag(s) to the specified message(s). uid is the uid of the message you want to add the flag to or an array of uids. flag is either a string or array of strings indicating the flags to add. */
-    def addFlags(source: Double, flag: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def addFlags(source: Double, flag: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     def addFlags(source: Double, flag: js.Array[String]): js.Promise[Unit] = js.native
-    def addFlags(source: Double, flag: js.Array[String], callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def addFlags(source: Double, flag: js.Array[String], callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     def addMessageLabel(source: String, label: String): js.Promise[Unit] = js.native
     /** Adds the provided label(s) to the specified message(s). source corresponds to a node-imap MessageSource which specifies the messages to be moved. label is either a string or array of strings indicating the labels to add. When completed, either calls the provided callback with signature (err), or resolves the returned promise. */
-    def addMessageLabel(source: String, label: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def addMessageLabel(source: String, label: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     def addMessageLabel(source: String, label: js.Array[String]): js.Promise[Unit] = js.native
-    def addMessageLabel(source: String, label: js.Array[String], callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def addMessageLabel(source: String, label: js.Array[String], callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     def addMessageLabel(source: js.Array[String], label: String): js.Promise[Unit] = js.native
-    def addMessageLabel(source: js.Array[String], label: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def addMessageLabel(source: js.Array[String], label: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     def addMessageLabel(source: js.Array[String], label: js.Array[String]): js.Promise[Unit] = js.native
-    def addMessageLabel(source: js.Array[String], label: js.Array[String], callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def addMessageLabel(
+      source: js.Array[String],
+      label: js.Array[String],
+      callback: js.Function1[/* err */ js.Error, Unit]
+    ): Unit = js.native
     
-    def append(message: js.Any, options: AppendOptions): js.Promise[Unit] = js.native
+    def append(message: Any, options: AppendOptions): js.Promise[Unit] = js.native
     /** Appends the argument message to the currently open mailbox or another mailbox. Message is a RFC-822 compatible MIME message. Valid options are mailbox, flags and date. When completed, either calls the provided callback with signature (err), or resolves the returned promise. */
-    def append(message: js.Any, options: AppendOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def append(message: Any, options: AppendOptions, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     def closeBox(autoExpunge: Boolean): js.Promise[Unit] = js.native
     /** Close a mailbox, calling the provided callback with signature (err), or resolves the returned promise. If autoExpunge is true, any messages marked as Deleted in the currently open mailbox will be removed. */
-    def closeBox(autoExpunge: Boolean, callBack: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def closeBox(autoExpunge: Boolean, callBack: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     def delBox(boxName: String): js.Promise[String] = js.native
     /** Delete a mailbox, calling the provided callback with signature (err, boxName), or resolves the returned promise with boxName. */
-    def delBox(boxName: String, callback: js.Function2[/* err */ Error, /* boxName */ String, Unit]): Unit = js.native
+    def delBox(boxName: String, callback: js.Function2[/* err */ js.Error, /* boxName */ String, Unit]): Unit = js.native
     
     def delFlags(uid: js.Array[Double], flag: String): js.Promise[Unit] = js.native
-    def delFlags(uid: js.Array[Double], flag: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def delFlags(uid: js.Array[Double], flag: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     def delFlags(uid: js.Array[Double], flag: js.Array[String]): js.Promise[Unit] = js.native
-    def delFlags(uid: js.Array[Double], flag: js.Array[String], callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def delFlags(uid: js.Array[Double], flag: js.Array[String], callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     def delFlags(uid: Double, flag: String): js.Promise[Unit] = js.native
     /** Removes the provided flag(s) from the specified message(s). uid is the uid of the message you want to remove the flag from or an array of uids. flag is either a string or array of strings indicating the flags to remove. */
-    def delFlags(uid: Double, flag: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def delFlags(uid: Double, flag: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     def delFlags(uid: Double, flag: js.Array[String]): js.Promise[Unit] = js.native
-    def delFlags(uid: Double, flag: js.Array[String], callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def delFlags(uid: Double, flag: js.Array[String], callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     def deleteMessage(uid: js.Array[Double]): js.Promise[Unit] = js.native
-    def deleteMessage(uid: js.Array[Double], callBack: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def deleteMessage(uid: js.Array[Double], callBack: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     def deleteMessage(uid: Double): js.Promise[Unit] = js.native
     /** Deletes the specified message(s). uid is the uid of the message you want to add the flag to or an array of uids. */
-    def deleteMessage(uid: Double, callBack: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def deleteMessage(uid: Double, callBack: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     /** Close the connection to the imap server. */
     def end(): Unit = js.native
     
     def getBoxes(): js.Promise[MailBoxes] = js.native
     /** Returns the full list of mailboxes (folders). Upon success, either the provided callback will be called with signature (err, boxes), or the returned promise will be resolved with boxes. Boxes is the exact object returned from the node-imap getBoxes() result. */
-    def getBoxes(callback: js.Function2[/* err */ Error, /* boxes */ MailBoxes, Unit]): Unit = js.native
+    def getBoxes(callback: js.Function2[/* err */ js.Error, /* boxes */ MailBoxes, Unit]): Unit = js.native
     
-    def getPartData(message: Message, part: js.Any): js.Promise[js.Any] = js.native
+    def getPartData(message: Message, part: Any): js.Promise[Any] = js.native
     /** Downloads part data (which is either part of the message body, or an attachment). Upon success, either the provided callback will be called with signature (err, data), or the returned promise will be resolved with data. The data will be automatically decoded based on its encoding. If the encoding of the part is not supported, an error will occur. */
-    def getPartData(message: Message, part: js.Any, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
+    def getPartData(message: Message, part: Any, callback: js.Function2[/* err */ js.Error, /* data */ Any, Unit]): Unit = js.native
     
     def moveMessage(source: String, boxName: String): js.Promise[Unit] = js.native
     /** Moves the specified message(s) in the currently open mailbox to another mailbox. source corresponds to a node-imap MessageSource which specifies the messages to be moved. When completed, either calls the provided callback with signature (err), or resolves the returned promise. */
-    def moveMessage(source: String, boxName: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def moveMessage(source: String, boxName: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     def moveMessage(source: js.Array[String], boxName: String): js.Promise[Unit] = js.native
-    def moveMessage(source: js.Array[String], boxName: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def moveMessage(source: js.Array[String], boxName: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     def openBox(boxName: String): js.Promise[String] = js.native
     /** Open a mailbox, calling the provided callback with signature (err, boxName), or resolves the returned promise with boxName. */
-    def openBox(boxName: String, callback: js.Function2[/* err */ Error, /* boxName */ String, Unit]): Unit = js.native
+    def openBox(boxName: String, callback: js.Function2[/* err */ js.Error, /* boxName */ String, Unit]): Unit = js.native
     
-    def search(searchCriteria: js.Array[js.Any], fetchOptions: FetchOptions): js.Promise[js.Array[Message]] = js.native
+    def search(searchCriteria: js.Array[Any], fetchOptions: FetchOptions): js.Promise[js.Array[Message]] = js.native
     /** Search for and retrieve mail in the currently open mailbox. */
     def search(
-      searchCriteria: js.Array[js.Any],
+      searchCriteria: js.Array[Any],
       fetchOptions: FetchOptions,
-      callback: js.Function2[/* err */ Error, /* messages */ js.Array[Message], Unit]
+      callback: js.Function2[/* err */ js.Error, /* messages */ js.Array[Message], Unit]
     ): Unit = js.native
   }
   
   inline def connect(options: ImapSimpleOptions): js.Promise[ImapSimple] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImapSimple]]
   inline def connect(
     options: ImapSimpleOptions,
-    callback: js.Function2[/* err */ Error, /* connection */ ImapSimple, Unit]
+    callback: js.Function2[/* err */ js.Error, /* connection */ ImapSimple, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object errors {
     
     @JSImport("imap-simple", "errors.ConnectionTimeoutError")
     @js.native
-    class ConnectionTimeoutError protected ()
+    open class ConnectionTimeoutError protected ()
       extends StObject
          with Error {
       def this(timeout: Double) = this()
       
+      /* standard es5 */
       /* CompleteClass */
       var message: String = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var name: String = js.native
       
@@ -130,7 +136,7 @@ object mod {
     }
   }
   
-  inline def getParts(struct: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParts")(struct.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def getParts(struct: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParts")(struct.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   trait ImapSimpleOptions extends StObject {
     
@@ -147,7 +153,7 @@ object mod {
     var onmail: js.UndefOr[js.Function1[/* numNewMail */ Double, Unit]] = js.undefined
     
     /** Server event emitted when message metadata (e.g. flags) changes externally. */
-    var onupdate: js.UndefOr[js.Function2[/* seqno */ Double, /* info */ js.Any, Unit]] = js.undefined
+    var onupdate: js.UndefOr[js.Function2[/* seqno */ Double, /* info */ Any, Unit]] = js.undefined
   }
   object ImapSimpleOptions {
     
@@ -172,7 +178,7 @@ object mod {
       
       inline def setOnmailUndefined: Self = StObject.set(x, "onmail", js.undefined)
       
-      inline def setOnupdate(value: (/* seqno */ Double, /* info */ js.Any) => Unit): Self = StObject.set(x, "onupdate", js.Any.fromFunction2(value))
+      inline def setOnupdate(value: (/* seqno */ Double, /* info */ Any) => Unit): Self = StObject.set(x, "onupdate", js.Any.fromFunction2(value))
       
       inline def setOnupdateUndefined: Self = StObject.set(x, "onupdate", js.undefined)
     }
@@ -199,7 +205,7 @@ object mod {
       
       inline def setParts(value: js.Array[MessageBodyPart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      inline def setPartsVarargs(value: MessageBodyPart*): Self = StObject.set(x, "parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: MessageBodyPart*): Self = StObject.set(x, "parts", js.Array(value*))
       
       inline def setSeqno(value: Double): Self = StObject.set(x, "seqno", value.asInstanceOf[js.Any])
     }
@@ -210,18 +216,18 @@ object mod {
        with ImapMessageBodyInfo {
     
     /** string type where which=='TEXT', complex Object where which=='HEADER' */
-    var body: js.Any
+    var body: Any
   }
   object MessageBodyPart {
     
-    inline def apply(body: js.Any, size: Double, which: String): MessageBodyPart = {
+    inline def apply(body: Any, size: Double, which: String): MessageBodyPart = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageBodyPart]
     }
     
     extension [Self <: MessageBodyPart](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.ActiveLayerInfo")
 @js.native
-class ActiveLayerInfoCls ()
+/**
+  * ActiveLayerInfo is added to or removed from the collection of activeLayerInfos as layers become visible or invisible in the view.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html)
+  */
+open class ActiveLayerInfoCls ()
   extends StObject
      with typings.arcgisJsApi.esri.ActiveLayerInfo {
   def this(properties: ActiveLayerInfoProperties) = this()

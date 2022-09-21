@@ -23,7 +23,7 @@ trait nlobjAssistant
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * add a field to this page and return it.
@@ -47,11 +47,11 @@ Instantiable0[js.Any] {
     */
   def addField(name: String, `type`: String): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: String): js.Function0[Unit] = js.native
-  def addField(name: String, `type`: String, label: String, source: js.Any): js.Function0[Unit] = js.native
-  def addField(name: String, `type`: String, label: String, source: js.Any, group: String): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: String, source: Any): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: String, source: Any, group: String): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: String, source: Unit, group: String): js.Function0[Unit] = js.native
-  def addField(name: String, `type`: String, label: Unit, source: js.Any): js.Function0[Unit] = js.native
-  def addField(name: String, `type`: String, label: Unit, source: js.Any, group: String): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: Unit, source: Any): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: Unit, source: Any, group: String): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: Unit, source: Unit, group: String): js.Function0[Unit] = js.native
   
   /**
@@ -251,7 +251,7 @@ Instantiable0[js.Any] {
     * @since 2009.2
     * @return
     */
-  def getStepCount(): js.Any = js.native
+  def getStepCount(): Any = js.native
   
   /**
     * return a sublist on this page.
@@ -303,7 +303,7 @@ Instantiable0[js.Any] {
     * @param response
     * @return
     */
-  def sendRedirect(response: js.Function0[Unit]): js.Any = js.native
+  def sendRedirect(response: js.Function0[Unit]): Any = js.native
   
   /**
     * mark a step as current. It will be highlighted accordingly when the page is displayed
@@ -317,7 +317,7 @@ Instantiable0[js.Any] {
     * @param step
     * @return
     */
-  def setCurrentStep(step: js.Function0[Unit]): js.Any = js.native
+  def setCurrentStep(step: js.Function0[Unit]): Any = js.native
   
   /**
     * set the error message for the currrent step.
@@ -331,7 +331,7 @@ Instantiable0[js.Any] {
     * @param html
     * @return
     */
-  def setError(html: String): js.Any = js.native
+  def setError(html: String): Any = js.native
   
   /**
     * set the values for all the fields on this page.
@@ -345,7 +345,7 @@ Instantiable0[js.Any] {
     * @param values
     * @return
     */
-  def setFieldValues(values: js.Any): js.Any = js.native
+  def setFieldValues(values: Any): Any = js.native
   
   /**
     * mark assistant page as completed and optionally set the rich text to display on completed page.
@@ -359,7 +359,7 @@ Instantiable0[js.Any] {
     * @param html
     * @return
     */
-  def setFinished(html: String): js.Any = js.native
+  def setFinished(html: String): Any = js.native
   
   /**
     * if numbered, step numbers are displayed next to the step's label in the navigation area
@@ -373,7 +373,7 @@ Instantiable0[js.Any] {
     * @param numbered
     * @return
     */
-  def setNumbered(numbered: Boolean): js.Any = js.native
+  def setNumbered(numbered: Boolean): Any = js.native
   
   /**
     * if ordered, steps are show on left and must be completed sequentially, otherwise steps are shown on top and can be done in any order
@@ -388,7 +388,7 @@ Instantiable0[js.Any] {
     * @param ordered
     * @return
     */
-  def setOrdered(ordered: Boolean): js.Any = js.native
+  def setOrdered(ordered: Boolean): Any = js.native
   
   /**
     * set the script ID for Client Script used for this form.
@@ -402,7 +402,7 @@ Instantiable0[js.Any] {
     * @param script
     * @return
     */
-  def setScript(script: js.Any): js.Any = js.native
+  def setScript(script: Any): Any = js.native
   
   /**
     * show/hide shortcut link. Always hidden on external pages
@@ -416,7 +416,7 @@ Instantiable0[js.Any] {
     * @param show
     * @return
     */
-  def setShortcut(show: Boolean): js.Any = js.native
+  def setShortcut(show: Boolean): Any = js.native
   
   /**
     * set the splash screen used for this page.
@@ -434,8 +434,8 @@ Instantiable0[js.Any] {
     * @param text2?
     * @return
     */
-  def setSplash(title: String, text1: String): js.Any = js.native
-  def setSplash(title: String, text1: String, text2: String): js.Any = js.native
+  def setSplash(title: String, text1: String): Any = js.native
+  def setSplash(title: String, text1: String, text2: String): Any = js.native
   
   /**
     * set the page title.
@@ -449,7 +449,7 @@ Instantiable0[js.Any] {
     * @param title
     * @return
     */
-  def setTitle(title: String): js.Any = js.native
+  def setTitle(title: String): Any = js.native
 }
 object nlobjAssistant {
   

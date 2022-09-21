@@ -64,7 +64,7 @@ trait PartialICoachmarkProps extends StObject {
   
   var onAnimationOpenStart: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   
-  var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[Any], scala.Unit]] = js.undefined
   
   var onMouseMove: js.UndefOr[js.Function1[/* e */ MouseEvent, scala.Unit]] = js.undefined
   
@@ -189,7 +189,7 @@ object PartialICoachmarkProps {
     
     inline def setOnAnimationOpenStartUndefined: Self = StObject.set(x, "onAnimationOpenStart", js.undefined)
     
-    inline def setOnDismiss(value: /* ev */ js.UndefOr[js.Any] => scala.Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+    inline def setOnDismiss(value: /* ev */ js.UndefOr[Any] => scala.Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
     
     inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
     

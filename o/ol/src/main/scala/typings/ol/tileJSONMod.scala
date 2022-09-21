@@ -13,7 +13,7 @@ object tileJSONMod {
   
   @JSImport("ol/source/TileJSON", JSImport.Default)
   @js.native
-  class default protected () extends TileJSON {
+  open class default protected () extends TileJSON {
     def this(options: Options) = this()
   }
   
@@ -62,13 +62,13 @@ object tileJSONMod {
       
       inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+      inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value*))
       
       inline def setCenter(value: js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
       inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
+      inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -78,7 +78,7 @@ object tileJSONMod {
       
       inline def setGridsUndefined: Self = StObject.set(x, "grids", js.undefined)
       
-      inline def setGridsVarargs(value: String*): Self = StObject.set(x, "grids", js.Array(value :_*))
+      inline def setGridsVarargs(value: String*): Self = StObject.set(x, "grids", js.Array(value*))
       
       inline def setLegend(value: String): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
       
@@ -106,7 +106,7 @@ object tileJSONMod {
       
       inline def setTiles(value: js.Array[String]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
       
-      inline def setTilesVarargs(value: String*): Self = StObject.set(x, "tiles", js.Array(value :_*))
+      inline def setTilesVarargs(value: String*): Self = StObject.set(x, "tiles", js.Array(value*))
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
@@ -120,7 +120,7 @@ object tileJSONMod {
     
     var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[Null | String] = js.undefined
     
     var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
@@ -155,13 +155,15 @@ object tileJSONMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       
       inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       

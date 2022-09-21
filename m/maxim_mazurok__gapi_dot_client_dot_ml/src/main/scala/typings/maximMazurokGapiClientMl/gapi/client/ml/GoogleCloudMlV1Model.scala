@@ -26,12 +26,12 @@ trait GoogleCloudMlV1Model extends StObject {
   
   /**
     * Optional. One or more labels that you can add, to organize your models. Each label is a key-value pair, where both the key and the value are arbitrary strings that you supply. For
-    * more information, see the documentation on using labels.
+    * more information, see the documentation on using labels. Note that this field is not updatable for mls1* models.
     */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ GoogleCloudMlV1__Model & TopLevel[js.Any]
+    */ GoogleCloudMlV1__Model & TopLevel[Any]
   ] = js.undefined
   
   /** Required. The name specified for the model when it was created. The model name must be unique within the project it is created in. */
@@ -82,7 +82,7 @@ object GoogleCloudMlV1Model {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ GoogleCloudMlV1__Model & TopLevel[js.Any]
+      */ GoogleCloudMlV1__Model & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -103,6 +103,6 @@ object GoogleCloudMlV1Model {
     
     inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value*))
   }
 }

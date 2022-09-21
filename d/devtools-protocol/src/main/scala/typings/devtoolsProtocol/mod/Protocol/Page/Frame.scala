@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Frame extends StObject {
   
   /**
-    * Indicates whether this frame was tagged as an ad.
+    * Indicates whether this frame was tagged as an ad and why.
     */
-  var adFrameType: js.UndefOr[AdFrameType] = js.undefined
+  var adFrameStatus: js.UndefOr[AdFrameStatus] = js.undefined
   
   /**
     * Indicates whether this is a cross origin isolated context.
@@ -24,6 +24,11 @@ trait Frame extends StObject {
     *               http://a.b.co.uk/file.html      -> "b.co.uk"
     */
   var domainAndRegistry: String
+  
+  /**
+    * Indicated which gated APIs / features are available.
+    */
+  var gatedAPIFeatures: js.Array[GatedAPIFeatures]
   
   /**
     * Frame unique identifier.
@@ -48,7 +53,7 @@ trait Frame extends StObject {
   /**
     * Parent frame identifier.
     */
-  var parentId: js.UndefOr[String] = js.undefined
+  var parentId: js.UndefOr[FrameId] = js.undefined
   
   /**
     * Indicates whether the main document is a secure context and explains why that is the case.
@@ -80,6 +85,7 @@ object Frame {
   inline def apply(
     crossOriginIsolatedContextType: CrossOriginIsolatedContextType,
     domainAndRegistry: String,
+    gatedAPIFeatures: js.Array[GatedAPIFeatures],
     id: FrameId,
     loaderId: LoaderId,
     mimeType: String,
@@ -87,19 +93,23 @@ object Frame {
     securityOrigin: String,
     url: String
   ): Frame = {
-    val __obj = js.Dynamic.literal(crossOriginIsolatedContextType = crossOriginIsolatedContextType.asInstanceOf[js.Any], domainAndRegistry = domainAndRegistry.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loaderId = loaderId.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], secureContextType = secureContextType.asInstanceOf[js.Any], securityOrigin = securityOrigin.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(crossOriginIsolatedContextType = crossOriginIsolatedContextType.asInstanceOf[js.Any], domainAndRegistry = domainAndRegistry.asInstanceOf[js.Any], gatedAPIFeatures = gatedAPIFeatures.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loaderId = loaderId.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], secureContextType = secureContextType.asInstanceOf[js.Any], securityOrigin = securityOrigin.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
   
   extension [Self <: Frame](x: Self) {
     
-    inline def setAdFrameType(value: AdFrameType): Self = StObject.set(x, "adFrameType", value.asInstanceOf[js.Any])
+    inline def setAdFrameStatus(value: AdFrameStatus): Self = StObject.set(x, "adFrameStatus", value.asInstanceOf[js.Any])
     
-    inline def setAdFrameTypeUndefined: Self = StObject.set(x, "adFrameType", js.undefined)
+    inline def setAdFrameStatusUndefined: Self = StObject.set(x, "adFrameStatus", js.undefined)
     
     inline def setCrossOriginIsolatedContextType(value: CrossOriginIsolatedContextType): Self = StObject.set(x, "crossOriginIsolatedContextType", value.asInstanceOf[js.Any])
     
     inline def setDomainAndRegistry(value: String): Self = StObject.set(x, "domainAndRegistry", value.asInstanceOf[js.Any])
+    
+    inline def setGatedAPIFeatures(value: js.Array[GatedAPIFeatures]): Self = StObject.set(x, "gatedAPIFeatures", value.asInstanceOf[js.Any])
+    
+    inline def setGatedAPIFeaturesVarargs(value: GatedAPIFeatures*): Self = StObject.set(x, "gatedAPIFeatures", js.Array(value*))
     
     inline def setId(value: FrameId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -111,7 +121,7 @@ object Frame {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: FrameId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
     inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     

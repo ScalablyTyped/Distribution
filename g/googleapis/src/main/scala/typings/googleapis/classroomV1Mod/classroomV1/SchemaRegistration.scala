@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An instruction to Classroom to send notifications from the `feed` to the
-  * provided destination.
-  */
 trait SchemaRegistration extends StObject {
   
   /**
@@ -16,21 +12,19 @@ trait SchemaRegistration extends StObject {
   var cloudPubsubTopic: js.UndefOr[SchemaCloudPubsubTopic] = js.undefined
   
   /**
-    * The time until which the `Registration` is effective.  This is a
-    * read-only field assigned by the server.
+    * The time until which the `Registration` is effective. This is a read-only field assigned by the server.
     */
-  var expiryTime: js.UndefOr[String] = js.undefined
+  var expiryTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Specification for the class of notifications that Classroom should
-    * deliver to the destination.
+    * Specification for the class of notifications that Classroom should deliver to the destination.
     */
   var feed: js.UndefOr[SchemaFeed] = js.undefined
   
   /**
-    * A server-generated unique identifier for this `Registration`.  Read-only.
+    * A server-generated unique identifier for this `Registration`. Read-only.
     */
-  var registrationId: js.UndefOr[String] = js.undefined
+  var registrationId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaRegistration {
   
@@ -47,6 +41,8 @@ object SchemaRegistration {
     
     inline def setExpiryTime(value: String): Self = StObject.set(x, "expiryTime", value.asInstanceOf[js.Any])
     
+    inline def setExpiryTimeNull: Self = StObject.set(x, "expiryTime", null)
+    
     inline def setExpiryTimeUndefined: Self = StObject.set(x, "expiryTime", js.undefined)
     
     inline def setFeed(value: SchemaFeed): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
@@ -54,6 +50,8 @@ object SchemaRegistration {
     inline def setFeedUndefined: Self = StObject.set(x, "feed", js.undefined)
     
     inline def setRegistrationId(value: String): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
+    
+    inline def setRegistrationIdNull: Self = StObject.set(x, "registrationId", null)
     
     inline def setRegistrationIdUndefined: Self = StObject.set(x, "registrationId", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ModalBase")
 @js.native
-class ModalBase protected ()
+open class ModalBase protected ()
   extends typings.officeUiFabricReact.mod.ModalBase {
   def this(props: IModalProps) = this()
 }

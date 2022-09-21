@@ -1,9 +1,6 @@
 package typings.vegaTypings
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vegaTypings.anon.Feature
-import typings.vegaTypings.anon.Filter
-import typings.vegaTypings.anon.Property
 import typings.vegaTypings.onTriggerMod.OnTrigger
 import typings.vegaTypings.runtimeMod.TypeInference
 import typings.vegaTypings.signalMod.SignalRef
@@ -44,13 +41,13 @@ object dataMod {
       
       inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
       
-      inline def setOnVarargs(value: OnTrigger*): Self = StObject.set(x, "on", js.Array(value :_*))
+      inline def setOnVarargs(value: OnTrigger*): Self = StObject.set(x, "on", js.Array(value*))
       
       inline def setTransform(value: js.Array[Transforms]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      inline def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value*))
     }
   }
   
@@ -104,7 +101,7 @@ object dataMod {
     inline def string: typings.vegaTypings.vegaTypingsStrings.string = "string".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.string]
   }
   
-  type Datum = js.Any
+  type Datum = Any
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaTypings.dataMod.FormatJSON
@@ -113,11 +110,48 @@ object dataMod {
     - typings.vegaTypings.dataMod.FormatTopoJSON
     - typings.vegaTypings.anon.Parse
   */
-  type Format = _Format | FormatTopoJSON
+  trait Format extends StObject
+  object Format {
+    
+    inline def FormatDSV(delimiter: String): typings.vegaTypings.dataMod.FormatDSV = {
+      val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("dsv")
+      __obj.asInstanceOf[typings.vegaTypings.dataMod.FormatDSV]
+    }
+    
+    inline def FormatJSON(): typings.vegaTypings.dataMod.FormatJSON = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")("json")
+      __obj.asInstanceOf[typings.vegaTypings.dataMod.FormatJSON]
+    }
+    
+    inline def FormatSV(`type`: csv | tsv): typings.vegaTypings.dataMod.FormatSV = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.vegaTypings.dataMod.FormatSV]
+    }
+    
+    inline def Parse(parse: typings.vegaTypings.dataMod.Parse): typings.vegaTypings.anon.Parse = {
+      val __obj = js.Dynamic.literal(parse = parse.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.vegaTypings.anon.Parse]
+    }
+    
+    inline def featurestringtypetopojson(feature: String): typings.vegaTypings.anon.featurestringtypetopojson = {
+      val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("topojson")
+      __obj.asInstanceOf[typings.vegaTypings.anon.featurestringtypetopojson]
+    }
+    
+    inline def meshstringfilterinteriore(mesh: String): typings.vegaTypings.anon.meshstringfilterinteriore = {
+      val __obj = js.Dynamic.literal(mesh = mesh.asInstanceOf[js.Any], filter = null)
+      __obj.updateDynamic("type")("topojson")
+      __obj.asInstanceOf[typings.vegaTypings.anon.meshstringfilterinteriore]
+    }
+  }
   
   trait FormatDSV
     extends StObject
-       with _Format {
+       with Format {
     
     var delimiter: String
     
@@ -143,7 +177,7 @@ object dataMod {
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
+      inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value*))
       
       inline def setParse(value: Parse): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
@@ -155,7 +189,7 @@ object dataMod {
   
   trait FormatJSON
     extends StObject
-       with _Format {
+       with Format {
     
     var copy: js.UndefOr[Boolean] = js.undefined
     
@@ -193,7 +227,7 @@ object dataMod {
   
   trait FormatSV
     extends StObject
-       with _Format {
+       with Format {
     
     var header: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -215,7 +249,7 @@ object dataMod {
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
+      inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value*))
       
       inline def setParse(value: Parse): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
@@ -225,7 +259,27 @@ object dataMod {
     }
   }
   
-  type FormatTopoJSON = Property & (Feature | Filter)
+  /* Rewritten from type alias, can be one of: 
+    - typings.vegaTypings.anon.featurestringtypetopojson
+    - typings.vegaTypings.anon.meshstringfilterinteriore
+  */
+  trait FormatTopoJSON
+    extends StObject
+       with Format
+  object FormatTopoJSON {
+    
+    inline def featurestringtypetopojson(feature: String): typings.vegaTypings.anon.featurestringtypetopojson = {
+      val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("topojson")
+      __obj.asInstanceOf[typings.vegaTypings.anon.featurestringtypetopojson]
+    }
+    
+    inline def meshstringfilterinteriore(mesh: String): typings.vegaTypings.anon.meshstringfilterinteriore = {
+      val __obj = js.Dynamic.literal(mesh = mesh.asInstanceOf[js.Any], filter = null)
+      __obj.updateDynamic("type")("topojson")
+      __obj.asInstanceOf[typings.vegaTypings.anon.meshstringfilterinteriore]
+    }
+  }
   
   type Parse = auto | (StringDictionary[DataType | String])
   
@@ -247,7 +301,7 @@ object dataMod {
       
       inline def setSource(value: String | js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
+      inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value*))
     }
   }
   
@@ -315,34 +369,7 @@ object dataMod {
       
       inline def setValues(value: js.Array[Datum] | js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: Datum*): Self = StObject.set(x, "values", js.Array(value :_*))
-    }
-  }
-  
-  trait _Format extends StObject
-  object _Format {
-    
-    inline def FormatDSV(delimiter: String): typings.vegaTypings.dataMod.FormatDSV = {
-      val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("dsv")
-      __obj.asInstanceOf[typings.vegaTypings.dataMod.FormatDSV]
-    }
-    
-    inline def FormatJSON(): typings.vegaTypings.dataMod.FormatJSON = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("json")
-      __obj.asInstanceOf[typings.vegaTypings.dataMod.FormatJSON]
-    }
-    
-    inline def FormatSV(`type`: csv | tsv): typings.vegaTypings.dataMod.FormatSV = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.vegaTypings.dataMod.FormatSV]
-    }
-    
-    inline def Parse(parse: typings.vegaTypings.dataMod.Parse): typings.vegaTypings.anon.Parse = {
-      val __obj = js.Dynamic.literal(parse = parse.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.vegaTypings.anon.Parse]
+      inline def setValuesVarargs(value: Datum*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
 }

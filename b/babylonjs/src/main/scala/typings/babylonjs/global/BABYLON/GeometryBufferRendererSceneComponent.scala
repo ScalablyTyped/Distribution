@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.GeometryBufferRendererSceneComponent")
 @js.native
-class GeometryBufferRendererSceneComponent protected ()
+open class GeometryBufferRendererSceneComponent protected ()
   extends StObject
      with typings.babylonjs.BABYLON.GeometryBufferRendererSceneComponent {
   /**
@@ -16,7 +16,7 @@ class GeometryBufferRendererSceneComponent protected ()
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /* private */ /* CompleteClass */
-  var _gatherRenderTargets: js.Any = js.native
+  var _gatherRenderTargets: Any = js.native
   
   /**
     * Disposes the component and the associated ressources.

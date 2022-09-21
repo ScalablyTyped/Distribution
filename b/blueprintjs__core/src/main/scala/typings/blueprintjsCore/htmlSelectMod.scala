@@ -1,9 +1,9 @@
 package typings.blueprintjsCore
 
-import typings.blueprintjsCore.anon.PartialIIconProps
+import typings.blueprintjsCore.anon.PartialIconProps
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IElementRefProps
-import typings.blueprintjsCore.propsMod.IOptionProps
+import typings.blueprintjsCore.propsMod.OptionProps
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
 import typings.react.mod.SelectHTMLAttributes
@@ -16,11 +16,13 @@ object htmlSelectMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/html-select/htmlSelect", "HTMLSelect")
   @js.native
-  class HTMLSelect protected ()
-    extends AbstractPureComponent2[IHTMLSelectProps, js.Object, js.Object] {
-    def this(props: IHTMLSelectProps) = this()
-    def this(props: IHTMLSelectProps, context: js.Any) = this()
+  open class HTMLSelect protected ()
+    extends AbstractPureComponent2[HTMLSelectProps, js.Object, js.Object] {
+    def this(props: HTMLSelectProps) = this()
+    def this(props: HTMLSelectProps, context: Any) = this()
   }
+  
+  type HTMLSelectProps = IHTMLSelectProps
   
   trait IHTMLSelectProps
     extends StObject
@@ -31,7 +33,7 @@ object htmlSelectMod {
     var fill: js.UndefOr[Boolean] = js.undefined
     
     /** Props to spread to the `<Icon>` element. */
-    var iconProps: js.UndefOr[PartialIIconProps] = js.undefined
+    var iconProps: js.UndefOr[PartialIconProps] = js.undefined
     
     /** Whether to use large styles. */
     var large: js.UndefOr[Boolean] = js.undefined
@@ -52,7 +54,7 @@ object htmlSelectMod {
       * `{ label?, value }` objects. If no `label` is supplied, `value`
       * will be used as the label.
       */
-    var options: js.UndefOr[js.Array[String | Double | IOptionProps]] = js.undefined
+    var options: js.UndefOr[js.Array[String | Double | OptionProps]] = js.undefined
     
     /** Controlled value of this component. */
     @JSName("value")
@@ -71,7 +73,7 @@ object htmlSelectMod {
       
       inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      inline def setIconProps(value: PartialIIconProps): Self = StObject.set(x, "iconProps", value.asInstanceOf[js.Any])
+      inline def setIconProps(value: PartialIconProps): Self = StObject.set(x, "iconProps", value.asInstanceOf[js.Any])
       
       inline def setIconPropsUndefined: Self = StObject.set(x, "iconProps", js.undefined)
       
@@ -87,11 +89,11 @@ object htmlSelectMod {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOptions(value: js.Array[String | Double | IOptionProps]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[String | Double | OptionProps]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: (String | Double | IOptionProps)*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: (String | Double | OptionProps)*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

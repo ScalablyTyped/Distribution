@@ -36,7 +36,7 @@ object libSshMod {
   
   @JSImport("ionic/lib/ssh", "SSHKeyClient")
   @js.native
-  class SSHKeyClient protected ()
+  open class SSHKeyClient protected ()
     extends ResourceClient
        with ResourceClientLoad[SSHKey]
        with ResourceClientDelete

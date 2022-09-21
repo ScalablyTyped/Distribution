@@ -1,7 +1,6 @@
 package typings.ariClient.mod
 
 import typings.ariClient.anon.OldMessages
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait Mailbox
   /**
     * Destroy a mailbox.
     */
-  def delete(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def delete(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Retrieve the current state of a mailbox.
@@ -27,7 +26,7 @@ trait Mailbox
   /**
     * Retrieve the current state of a mailbox.
     */
-  def get(callback: js.Function2[/* err */ Error, /* mailbox */ this.type, Unit]): Unit = js.native
+  def get(callback: js.Function2[/* err */ js.Error, /* mailbox */ this.type, Unit]): Unit = js.native
   
   /**
     * List all mailboxes.
@@ -36,7 +35,7 @@ trait Mailbox
   /**
     * List all mailboxes.
     */
-  def list(callback: js.Function2[/* err */ Error, /* mailboxs */ js.Array[this.type], Unit]): Unit = js.native
+  def list(callback: js.Function2[/* err */ js.Error, /* mailboxs */ js.Array[this.type], Unit]): Unit = js.native
   
   /**
     * Name of the mailbox.
@@ -66,5 +65,5 @@ trait Mailbox
     * @param params.oldMessages - Count of old messages in the mailbox.
     * @param params.newMessages - Count of new messages in the mailbox.
     */
-  def update(params: OldMessages, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def update(params: OldMessages, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
 }

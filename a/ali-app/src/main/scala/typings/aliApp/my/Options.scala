@@ -9,11 +9,11 @@ trait Options extends StObject {
   // 当前小程序的 query
   var path: String
   
-  var query: js.Any
+  var query: Any
 }
 object Options {
   
-  inline def apply(path: String, query: js.Any): Options = {
+  inline def apply(path: String, query: Any): Options = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
@@ -22,6 +22,6 @@ object Options {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

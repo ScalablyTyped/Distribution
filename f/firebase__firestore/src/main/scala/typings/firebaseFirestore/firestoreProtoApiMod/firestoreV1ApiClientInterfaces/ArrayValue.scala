@@ -1,19 +1,26 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArrayValue extends js.Object {
+trait ArrayValue extends StObject {
+  
   var values: js.UndefOr[js.Array[Value]] = js.undefined
 }
-
 object ArrayValue {
-  @scala.inline
-  def apply(values: js.Array[Value] = null): ArrayValue = {
+  
+  inline def apply(): ArrayValue = {
     val __obj = js.Dynamic.literal()
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayValue]
   }
+  
+  extension [Self <: ArrayValue](x: Self) {
+    
+    inline def setValues(value: js.Array[Value]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setValuesVarargs(value: Value*): Self = StObject.set(x, "values", js.Array(value*))
+  }
 }
-

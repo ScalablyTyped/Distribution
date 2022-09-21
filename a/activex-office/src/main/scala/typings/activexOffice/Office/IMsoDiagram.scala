@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IMsoDiagram extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   var AutoFormat: MsoTriState
   
@@ -18,14 +18,14 @@ trait IMsoDiagram extends StObject {
   
   def FitText(): Unit
   
-  def Nodes(Index: js.Any): DiagramNode
+  def Nodes(Index: Any): DiagramNode
   @JSName("Nodes")
   val Nodes_Original: DiagramNodes
   
   /* private */ @JSName("Office.IMsoDiagram_typekey")
   var OfficeDotIMsoDiagram_typekey: IMsoDiagram
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Reverse: MsoTriState
   
@@ -34,7 +34,7 @@ trait IMsoDiagram extends StObject {
 object IMsoDiagram {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     AutoFormat: MsoTriState,
     AutoLayout: MsoTriState,
     Convert: MsoDiagramType => Unit,
@@ -42,7 +42,7 @@ object IMsoDiagram {
     FitText: () => Unit,
     Nodes: DiagramNodes,
     OfficeDotIMsoDiagram_typekey: IMsoDiagram,
-    Parent: js.Any,
+    Parent: Any,
     Reverse: MsoTriState,
     Type: MsoDiagramType
   ): IMsoDiagram = {
@@ -53,7 +53,7 @@ object IMsoDiagram {
   
   extension [Self <: IMsoDiagram](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setAutoFormat(value: MsoTriState): Self = StObject.set(x, "AutoFormat", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object IMsoDiagram {
     
     inline def setOfficeDotIMsoDiagram_typekey(value: IMsoDiagram): Self = StObject.set(x, "Office.IMsoDiagram_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReverse(value: MsoTriState): Self = StObject.set(x, "Reverse", value.asInstanceOf[js.Any])
     

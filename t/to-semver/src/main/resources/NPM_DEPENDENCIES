@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "to-semver" : "3.0.0"
+      "to-semver" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "to-semver" : "3.0.0"
+      "to-semver" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

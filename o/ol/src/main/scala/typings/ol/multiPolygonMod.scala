@@ -10,7 +10,7 @@ object multiPolygonMod {
   
   @JSImport("ol/geom/MultiPolygon", JSImport.Default)
   @js.native
-  class default protected () extends MultiPolygon {
+  open class default protected () extends MultiPolygon {
     def this(coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default]) = this()
     def this(
       coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default],

@@ -113,7 +113,7 @@ object ThreadFlowLocation {
     
     inline def setKindsUndefined: Self = StObject.set(x, "kinds", js.undefined)
     
-    inline def setKindsVarargs(value: String*): Self = StObject.set(x, "kinds", js.Array(value :_*))
+    inline def setKindsVarargs(value: String*): Self = StObject.set(x, "kinds", js.Array(value*))
     
     inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
@@ -143,7 +143,7 @@ object ThreadFlowLocation {
     
     inline def setTaxaUndefined: Self = StObject.set(x, "taxa", js.undefined)
     
-    inline def setTaxaVarargs(value: ReportingDescriptorReference*): Self = StObject.set(x, "taxa", js.Array(value :_*))
+    inline def setTaxaVarargs(value: ReportingDescriptorReference*): Self = StObject.set(x, "taxa", js.Array(value*))
     
     inline def setWebRequest(value: WebRequest): Self = StObject.set(x, "webRequest", value.asInstanceOf[js.Any])
     

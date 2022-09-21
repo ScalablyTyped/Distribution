@@ -118,7 +118,7 @@ trait TextBox extends StObject {
   
   val Valid: Boolean
   
-  var Value: js.Any
+  var Value: Any
   
   var WordWrap: Boolean
   
@@ -182,7 +182,7 @@ object TextBox {
     TextAlign: fmTextAlign,
     TextLength: Double,
     Valid: Boolean,
-    Value: js.Any,
+    Value: Any,
     WordWrap: Boolean,
     _Font_Reserved: NewFont
   ): TextBox = {
@@ -303,7 +303,7 @@ object TextBox {
     
     inline def setValid(value: Boolean): Self = StObject.set(x, "Valid", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     inline def setWordWrap(value: Boolean): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
     

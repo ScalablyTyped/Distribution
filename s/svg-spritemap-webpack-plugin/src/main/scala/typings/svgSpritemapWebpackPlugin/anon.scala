@@ -1,5 +1,6 @@
 package typings.svgSpritemapWebpackPlugin
 
+import typings.std.Record
 import typings.svgSpritemapWebpackPlugin.svgSpritemapWebpackPluginBooleans.`false`
 import typings.svgSpritemapWebpackPlugin.svgSpritemapWebpackPluginStrings.data
 import typings.svgSpritemapWebpackPlugin.svgSpritemapWebpackPluginStrings.fragment
@@ -30,6 +31,82 @@ object anon {
     }
   }
   
+  trait Attributes extends StObject {
+    
+    var attributes: js.UndefOr[Record[String, String | Double | Boolean]] = js.undefined
+    
+    /**
+      * Whether to include the width and height attributes on the root SVG element.
+      * The default value for this option is based on the value of the sprite.generate.use option but when specified will always overwrite it.
+      */
+    var sizes: js.UndefOr[Boolean] = js.undefined
+  }
+  object Attributes {
+    
+    inline def apply(): Attributes = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Attributes]
+    }
+    
+    extension [Self <: Attributes](x: Self) {
+      
+      inline def setAttributes(value: Record[String, String | Double | Boolean]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      
+      inline def setSizes(value: Boolean): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      
+      inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+    }
+  }
+  
+  trait Callback extends StObject {
+    
+    /** @default undefined */
+    var callback: js.UndefOr[js.Function1[/* content */ String, String]] = js.undefined
+    
+    var filename: js.UndefOr[String] = js.undefined
+    
+    var format: js.UndefOr[data | fragment] = js.undefined
+    
+    /**
+      * @default false
+      */
+    var keepAttributes: js.UndefOr[Boolean] = js.undefined
+    
+    var variables: js.UndefOr[Mixin] = js.undefined
+  }
+  object Callback {
+    
+    inline def apply(): Callback = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Callback]
+    }
+    
+    extension [Self <: Callback](x: Self) {
+      
+      inline def setCallback(value: /* content */ String => String): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setFormat(value: data | fragment): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      
+      inline def setKeepAttributes(value: Boolean): Self = StObject.set(x, "keepAttributes", value.asInstanceOf[js.Any])
+      
+      inline def setKeepAttributesUndefined: Self = StObject.set(x, "keepAttributes", js.undefined)
+      
+      inline def setVariables(value: Mixin): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      
+      inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+    }
+  }
+  
   trait Chunk extends StObject {
     
     var chunk: js.UndefOr[Keep] = js.undefined
@@ -39,7 +116,7 @@ object anon {
       */
     var filename: js.UndefOr[String] = js.undefined
     
-    var svg: js.UndefOr[Sizes] = js.undefined
+    var svg: js.UndefOr[Attributes] = js.undefined
     
     /**
       * Whether to include the SVG4Everybody helper in your entries.
@@ -68,7 +145,7 @@ object anon {
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      inline def setSvg(value: Sizes): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+      inline def setSvg(value: Attributes): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
       
       inline def setSvg4everybody(value: Boolean | js.Object): Self = StObject.set(x, "svg4everybody", value.asInstanceOf[js.Any])
       
@@ -79,37 +156,6 @@ object anon {
       inline def setSvgo(value: Boolean | js.Object): Self = StObject.set(x, "svgo", value.asInstanceOf[js.Any])
       
       inline def setSvgoUndefined: Self = StObject.set(x, "svgo", js.undefined)
-    }
-  }
-  
-  trait Filename extends StObject {
-    
-    var filename: js.UndefOr[String] = js.undefined
-    
-    var format: js.UndefOr[data | fragment] = js.undefined
-    
-    var variables: js.UndefOr[Mixin] = js.undefined
-  }
-  object Filename {
-    
-    inline def apply(): Filename = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Filename]
-    }
-    
-    extension [Self <: Filename](x: Self) {
-      
-      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
-      
-      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
-      
-      inline def setFormat(value: data | fragment): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
-      
-      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
-      
-      inline def setVariables(value: Mixin): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
-      
-      inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     }
   }
   
@@ -128,7 +174,16 @@ object anon {
       */
     var idify: js.UndefOr[js.Function1[/* file */ String | `false`, String]] = js.undefined
     
+    /**
+      * @default 'sprite-'
+      */
     var prefix: js.UndefOr[String | (js.Function1[/* file */ String, String]) | `false`] = js.undefined
+    
+    /**
+      * Whether to also prefix any selectors that are generated in the styles file, if enabled.
+      * @default false
+      */
+    var prefixStylesSelectors: js.UndefOr[Boolean] = js.undefined
   }
   object Generate {
     
@@ -154,6 +209,10 @@ object anon {
       inline def setPrefix(value: String | (js.Function1[/* file */ String, String]) | `false`): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
       inline def setPrefixFunction1(value: /* file */ String => String): Self = StObject.set(x, "prefix", js.Any.fromFunction1(value))
+      
+      inline def setPrefixStylesSelectors(value: Boolean): Self = StObject.set(x, "prefixStylesSelectors", value.asInstanceOf[js.Any])
+      
+      inline def setPrefixStylesSelectorsUndefined: Self = StObject.set(x, "prefixStylesSelectors", js.undefined)
       
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
@@ -224,48 +283,6 @@ object anon {
       inline def setVariables(value: String): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
       inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
-    }
-  }
-  
-  trait Options extends StObject {
-    
-    var options: js.UndefOr[js.Object] = js.undefined
-  }
-  object Options {
-    
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
-    }
-    
-    extension [Self <: Options](x: Self) {
-      
-      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-      
-      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
-    }
-  }
-  
-  trait Sizes extends StObject {
-    
-    /**
-      * Whether to include the width and height attributes on the root SVG element.
-      * The default value for this option is based on the value of the sprite.generate.use option but when specified will always overwrite it.
-      */
-    var sizes: js.UndefOr[Boolean] = js.undefined
-  }
-  object Sizes {
-    
-    inline def apply(): Sizes = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Sizes]
-    }
-    
-    extension [Self <: Sizes](x: Self) {
-      
-      inline def setSizes(value: Boolean): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
-      
-      inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     }
   }
   

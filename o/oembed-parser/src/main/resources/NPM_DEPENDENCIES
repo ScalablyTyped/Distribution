@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "oembed-parser" : "1.4.3"
+      "oembed-parser" : "3.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "oembed-parser" : "1.4.3"
+      "oembed-parser" : "3.1.1"
     }
   ],
   "compile-devDependencies" : [

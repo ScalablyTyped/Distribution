@@ -11,9 +11,9 @@ IRI parsing and IRI-URI conversion utilities
 | Full name          | iri |
 | Keywords           | IRI |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 10292 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1410.0 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/awwright/node-iri)

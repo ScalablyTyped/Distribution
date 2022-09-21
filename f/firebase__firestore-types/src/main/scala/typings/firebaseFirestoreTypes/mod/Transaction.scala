@@ -7,21 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/firestore-types", "Transaction")
 @js.native
-/* private */ class Transaction () extends StObject {
+/* private */ open class Transaction () extends StObject {
   
-  def delete(documentRef: DocumentReference[js.Any]): Transaction = js.native
+  def delete(documentRef: DocumentReference[Any]): Transaction = js.native
   
   def get[T](documentRef: DocumentReference[T]): js.Promise[DocumentSnapshot[T]] = js.native
   
   def set[T](documentRef: DocumentReference[T], data: T): Transaction = js.native
   def set[T](documentRef: DocumentReference[T], data: Partial[T], options: SetOptions): Transaction = js.native
   
-  def update(documentRef: DocumentReference[js.Any], data: UpdateData): Transaction = js.native
-  def update(documentRef: DocumentReference[js.Any], field: String, value: js.Any, moreFieldsAndValues: js.Any*): Transaction = js.native
-  def update(
-    documentRef: DocumentReference[js.Any],
-    field: FieldPath,
-    value: js.Any,
-    moreFieldsAndValues: js.Any*
-  ): Transaction = js.native
+  def update(documentRef: DocumentReference[Any], data: UpdateData): Transaction = js.native
+  def update(documentRef: DocumentReference[Any], field: String, value: Any, moreFieldsAndValues: Any*): Transaction = js.native
+  def update(documentRef: DocumentReference[Any], field: FieldPath, value: Any, moreFieldsAndValues: Any*): Transaction = js.native
 }

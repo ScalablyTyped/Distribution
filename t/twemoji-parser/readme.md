@@ -1,7 +1,7 @@
 
 # Scala.js typings for twemoji-parser
 
-Typings are for version 12.1
+Typings are for version 13.1
 
 ## Library description:
 Parser for identifying Twemoji in text
@@ -10,10 +10,10 @@ Parser for identifying Twemoji in text
 | ------------------ | :-------------: |
 | Full name          | twemoji-parser |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 10 |
-| # downloads        | 2130250 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 610732.3333333334 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/twemoji-parser)

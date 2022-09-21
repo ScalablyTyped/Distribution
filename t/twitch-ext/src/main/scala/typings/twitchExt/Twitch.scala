@@ -54,6 +54,11 @@ object Twitch {
       var clientId: String
       
       /**
+        * JWT that can be used for front end API requests.
+        */
+      var helixToken: String
+      
+      /**
         * JWT that should be passed to any EBS call for authentication.
         */
       var token: String
@@ -65,8 +70,8 @@ object Twitch {
     }
     object Authorized {
       
-      inline def apply(channelId: String, clientId: String, token: String, userId: String): Authorized = {
-        val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
+      inline def apply(channelId: String, clientId: String, helixToken: String, token: String, userId: String): Authorized = {
+        val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], helixToken = helixToken.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
         __obj.asInstanceOf[Authorized]
       }
       
@@ -75,6 +80,8 @@ object Twitch {
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
         inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+        
+        inline def setHelixToken(value: String): Self = StObject.set(x, "helixToken", value.asInstanceOf[js.Any])
         
         inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
         
@@ -498,6 +505,12 @@ object Twitch {
     trait Viewer extends StObject {
       
       /**
+        * A token to use with the Twitch API. This is the same as the helixToken property of the authData parameter
+        * that currently gets passed to the onAuthorized callback.
+        */
+      var helixToken: String
+      
+      /**
         * The Twitch ID of a linked viewer. null if the viewer has not opted to share their identity with the extension.
         */
       var id: String | Null
@@ -540,17 +553,20 @@ object Twitch {
     object Viewer {
       
       inline def apply(
+        helixToken: String,
         isLinked: Boolean,
         onChanged: js.Function0[Unit] => Unit,
         opaqueId: String,
         role: String,
         sessionToken: String
       ): Viewer = {
-        val __obj = js.Dynamic.literal(isLinked = isLinked.asInstanceOf[js.Any], onChanged = js.Any.fromFunction1(onChanged), opaqueId = opaqueId.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], sessionToken = sessionToken.asInstanceOf[js.Any], id = null, subscriptionStatus = null)
+        val __obj = js.Dynamic.literal(helixToken = helixToken.asInstanceOf[js.Any], isLinked = isLinked.asInstanceOf[js.Any], onChanged = js.Any.fromFunction1(onChanged), opaqueId = opaqueId.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], sessionToken = sessionToken.asInstanceOf[js.Any], id = null, subscriptionStatus = null)
         __obj.asInstanceOf[Viewer]
       }
       
       extension [Self <: Viewer](x: Self) {
+        
+        inline def setHelixToken(value: String): Self = StObject.set(x, "helixToken", value.asInstanceOf[js.Any])
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         

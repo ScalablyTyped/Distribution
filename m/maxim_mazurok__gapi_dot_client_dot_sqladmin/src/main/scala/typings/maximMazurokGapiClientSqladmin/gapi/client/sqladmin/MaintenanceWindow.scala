@@ -12,10 +12,10 @@ trait MaintenanceWindow extends StObject {
   /** hour of day - 0 to 23. */
   var hour: js.UndefOr[Double] = js.undefined
   
-  /** This is always *sql#maintenanceWindow*. */
+  /** This is always `sql#maintenanceWindow`. */
   var kind: js.UndefOr[String] = js.undefined
   
-  /** Maintenance timing setting: *canary* (Earlier) or *stable* (Later). Learn more. */
+  /** Maintenance timing setting: `canary` (Earlier) or `stable` (Later). [Learn more](https://cloud.google.com/sql/docs/mysql/instance-settings#maintenance-timing-2ndgen). */
   var updateTrack: js.UndefOr[String] = js.undefined
 }
 object MaintenanceWindow {

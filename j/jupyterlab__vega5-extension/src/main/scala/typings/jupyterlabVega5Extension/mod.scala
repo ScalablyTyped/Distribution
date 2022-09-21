@@ -17,17 +17,17 @@ object mod extends Shortcut {
   
   @JSImport("@jupyterlab/vega5-extension", "RenderedVega")
   @js.native
-  class RenderedVega protected () extends IRenderer {
+  open class RenderedVega protected () extends IRenderer {
     /**
       * Create a new widget for rendering Vega/Vega-Lite.
       */
     def this(options: IRendererOptions) = this()
     
-    /* private */ var _mimeType: js.Any = js.native
+    /* private */ var _mimeType: Any = js.native
     
-    /* private */ var _resolver: js.Any = js.native
+    /* private */ var _resolver: Any = js.native
     
-    /* private */ var _result: js.Any = js.native
+    /* private */ var _result: Any = js.native
   }
   
   @JSImport("@jupyterlab/vega5-extension", "VEGALITE3_MIME_TYPE")

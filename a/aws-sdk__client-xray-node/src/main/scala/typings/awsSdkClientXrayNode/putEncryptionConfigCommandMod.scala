@@ -16,7 +16,7 @@ object putEncryptionConfigCommandMod {
   
   @JSImport("@aws-sdk/client-xray-node/commands/PutEncryptionConfigCommand", "PutEncryptionConfigCommand")
   @js.native
-  class PutEncryptionConfigCommand protected ()
+  open class PutEncryptionConfigCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object putEncryptionConfigCommandMod {
     override val middlewareStack: MiddlewareStack[PutEncryptionConfigInput, PutEncryptionConfigOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: XRayResolvedConfiguration
     ): Handler[PutEncryptionConfigInput, PutEncryptionConfigOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: XRayResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[PutEncryptionConfigInput, PutEncryptionConfigOutput] = js.native
   }
 }

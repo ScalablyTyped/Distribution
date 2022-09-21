@@ -9,7 +9,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import typings.arcgisJsApi.arcgisJsApiStrings.multitenant
 import typings.arcgisJsApi.arcgisJsApiStrings.public
 import typings.arcgisJsApi.arcgisJsApiStrings.singletenant
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,6 +35,8 @@ trait Portal
   
   /**
     * The authentication mode for handling authentication when the user attempts to access a secure resource.
+    *
+    * @default auto
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#authMode)
     */
@@ -93,12 +94,16 @@ trait Portal
   /**
     * When `true`, the organization's public items, groups and users are included in search queries.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSearchPublic)
     */
   var canSearchPublic: Boolean = js.native
   
   /**
     * The Bing key can be shared to the public and is returned as part of a portal's description call (`/sharing/rest/portals/<orgid>`).
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canShareBingPublic)
     */
@@ -107,6 +112,8 @@ trait Portal
   /**
     * When `true`, members of the organization can share resources outside the organization.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSharePublic)
     */
   var canSharePublic: Boolean = js.native
@@ -114,12 +121,16 @@ trait Portal
   /**
     * Indicates whether to allow an organization with an enterprise IDP configured to be able to turn on or off the ArcGIS sign in.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSignInArcGIS)
     */
   var canSignInArcGIS: Boolean = js.native
   
   /**
     * Indicates whether to allow an organization with an enterprise IDP configured to be able to turn on or off the enterprise sign in.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSignInIDP)
     */
@@ -135,16 +146,11 @@ trait Portal
   /**
     * Indicates whether to allow the organization to disable commenting.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#commentsEnabled)
     */
   var commentsEnabled: Boolean = js.native
-  
-  /**
-    * A helper function that returns an instance of the portal's [ClosestFacilityTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ClosestFacilityTask.html) [helper service](https://enterprise.arcgis.com/en/portal/latest/administer/windows/about-utility-services.htm).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createClosestFacilityTask)
-    */
-  def createClosestFacilityTask(): js.Promise[ClosestFacilityTask] = js.native
   
   /**
     * A helper function that returns an array of [ElevationsLayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html) derived from the Portal's [Limited Error Raster Compression (LERC) elevation helper service](https://enterprise.arcgis.com/en/portal/latest/administer/windows/about-utility-services.htm).
@@ -154,39 +160,11 @@ trait Portal
   def createElevationLayers(): js.Promise[js.Array[ElevationLayer]] = js.native
   
   /**
-    * A helper function that returns an instance of the portal's [GeometryService](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html) [helper service](https://enterprise.arcgis.com/en/portal/latest/administer/windows/about-utility-services.htm).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createGeometryService)
-    */
-  def createGeometryService(): js.Promise[GeometryService] = js.native
-  
-  /**
-    * A helper function that returns an instance of the portal's [PrintTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-PrintTask.html) [helper service](https://enterprise.arcgis.com/en/portal/latest/administer/windows/about-utility-services.htm).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createPrintTask)
-    */
-  def createPrintTask(): js.Promise[PrintTask] = js.native
-  
-  /**
-    * A helper function that returns an instance of the portal's [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html) [helper service](https://enterprise.arcgis.com/en/portal/latest/administer/windows/about-utility-services.htm).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createRouteTask)
-    */
-  def createRouteTask(): js.Promise[RouteTask] = js.native
-  
-  /**
-    * A helper function that returns an instance of the portal's [ServiceAreaTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ServiceAreaTask.html) [helper service](https://enterprise.arcgis.com/en/portal/latest/administer/windows/about-utility-services.htm).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#createServiceAreaTask)
-    */
-  def createServiceAreaTask(): js.Promise[ServiceAreaTask] = js.native
-  
-  /**
     * Date the organization was created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#created)
     */
-  var created: Date = js.native
+  var created: js.Date = js.native
   
   /**
     * The default locale (language and country) information.
@@ -210,6 +188,13 @@ trait Portal
   var defaultBasemap: Basemap = js.native
   
   /**
+    * The default developer basemap to use for the portal when an [apiKey](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#apiKey) is defined.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultDevBasemap)
+    */
+  var defaultDevBasemap: Basemap = js.native
+  
+  /**
     * The default extent to use for the portal.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultExtent)
@@ -231,7 +216,16 @@ trait Portal
   var description: String = js.native
   
   /**
+    * The query that defines the basemaps that should be displayed in the [BasemapGallery](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html) when an [apiKey](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#apiKey) is defined.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#devBasemapGalleryGroupQuery)
+    */
+  var devBasemapGalleryGroupQuery: String = js.native
+  
+  /**
     * Boolean value indicating whether to opt-in to the [Esri User Experience Improvement (EUEI) program](https://doc.arcgis.com/en/arcgis-online/reference/faq.htm#ESRI_QUESTIONANSWER_AED97F28DCD84F7682623C2FA9E5CE49).
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#eueiEnabled)
     */
@@ -259,15 +253,15 @@ trait Portal
   def fetchBasemaps(): js.Promise[js.Array[Basemap]] = js.native
   def fetchBasemaps(basemapGalleryGroupQuery: String): js.Promise[js.Array[Basemap]] = js.native
   def fetchBasemaps(basemapGalleryGroupQuery: String, options: PortalFetchBasemapsOptions): js.Promise[js.Array[Basemap]] = js.native
-  def fetchBasemaps(basemapGalleryGroupQuery: Unit, options: PortalFetchBasemapsOptions): js.Promise[js.Array[Basemap]] = js.native
+  def fetchBasemaps(basemapGalleryGroupQuery: scala.Unit, options: PortalFetchBasemapsOptions): js.Promise[js.Array[Basemap]] = js.native
   
   /**
     * If present, fetches the organization's category schema.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#fetchCategorySchema)
     */
-  def fetchCategorySchema(): js.Promise[js.Array[js.Any]] = js.native
-  def fetchCategorySchema(options: PortalFetchCategorySchemaOptions): js.Promise[js.Array[js.Any]] = js.native
+  def fetchCategorySchema(): js.Promise[js.Array[Any]] = js.native
+  def fetchCategorySchema(options: PortalFetchCategorySchemaOptions): js.Promise[js.Array[Any]] = js.native
   
   /**
     * Fetches the featured groups in the Portal.
@@ -282,8 +276,16 @@ trait Portal
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#fetchRegions)
     */
-  def fetchRegions(): js.Promise[js.Array[js.Any]] = js.native
-  def fetchRegions(options: PortalFetchRegionsOptions): js.Promise[js.Array[js.Any]] = js.native
+  def fetchRegions(): js.Promise[js.Array[Any]] = js.native
+  def fetchRegions(options: PortalFetchRegionsOptions): js.Promise[js.Array[Any]] = js.native
+  
+  /**
+    * Fetches and returns the portal settings as seen by the current user(s), whether anonymous or signed in.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#fetchSettings)
+    */
+  def fetchSettings(): js.Promise[Any] = js.native
+  def fetchSettings(options: PortalFetchSettingsOptions): js.Promise[Any] = js.native
   
   /**
     * The query that identifies the group containing features items for the gallery.
@@ -295,6 +297,8 @@ trait Portal
   /**
     * Indicates whether the organization has content categories.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#hasCategorySchema)
     */
   var hasCategorySchema: Boolean = js.native
@@ -304,7 +308,7 @@ trait Portal
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#helperServices)
     */
-  var helperServices: js.Any = js.native
+  var helperServices: Any = js.native
   
   /**
     * The group that contains featured content to be displayed on the home page.
@@ -379,6 +383,8 @@ trait Portal
   /**
     * Indicates whether the portal's resources have loaded.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#loaded)
     */
   val loaded: Boolean = js.native
@@ -395,7 +401,7 @@ trait Portal
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#modified)
     */
-  var modified: Date = js.native
+  var modified: js.Date = js.native
   
   /**
     * Name of the organization.
@@ -423,7 +429,7 @@ trait Portal
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#portalProperties)
     */
-  var portalProperties: js.Any = js.native
+  var portalProperties: Any = js.native
   
   /**
     * Executes a query against the Portal to return an array of [PortalGroup](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html) objects that match the input query.
@@ -474,7 +480,7 @@ trait Portal
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#rotatorPanels)
     */
-  var rotatorPanels: js.Array[js.Any] = js.native
+  var rotatorPanels: js.Array[Any] = js.native
   
   /**
     * Indicates whether the description of your organization displays on the home page.
@@ -488,10 +494,12 @@ trait Portal
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#sourceJSON)
     */
-  var sourceJSON: js.Any = js.native
+  var sourceJSON: Any = js.native
   
   /**
     * Indicates whether hosted services are supported.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#supportsHostedServices)
     */

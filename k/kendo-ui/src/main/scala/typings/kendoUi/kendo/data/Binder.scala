@@ -16,10 +16,10 @@ trait Binder
   
   def destroy(): Unit = js.native
   
-  var element: js.Any = js.native
+  var element: Any = js.native
   
-  def init(element: js.Any, bindings: Bindings): Unit = js.native
-  def init(element: js.Any, bindings: Bindings, options: BinderOptions): Unit = js.native
+  def init(element: Any, bindings: Bindings): Unit = js.native
+  def init(element: Any, bindings: Bindings, options: BinderOptions): Unit = js.native
   
   var options: BinderOptions = js.native
   

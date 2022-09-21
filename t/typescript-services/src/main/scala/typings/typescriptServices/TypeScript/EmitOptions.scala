@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EmitOptions extends StObject {
   
-  /* private */ var _commonDirectoryPath: js.Any
+  /* private */ var _commonDirectoryPath: Any
   
-  /* private */ var _diagnostic: js.Any
+  /* private */ var _diagnostic: Any
   
-  /* private */ var _outputDirectory: js.Any
+  /* private */ var _outputDirectory: Any
   
-  /* private */ var _settings: js.Any
+  /* private */ var _settings: Any
   
-  /* private */ var _sharedOutputFile: js.Any
+  /* private */ var _sharedOutputFile: Any
   
-  /* private */ var _sourceMapRootDirectory: js.Any
+  /* private */ var _sourceMapRootDirectory: Any
   
-  /* private */ var _sourceRootDirectory: js.Any
+  /* private */ var _sourceRootDirectory: Any
   
   def commonDirectoryPath(): String
   
   def compilationSettings(): ImmutableCompilationSettings
   
-  /* private */ def determineCommonDirectoryPath(compiler: js.Any): js.Any
+  /* private */ def determineCommonDirectoryPath(compiler: Any): Any
   
   def diagnostic(): Diagnostic
   
@@ -41,16 +41,16 @@ trait EmitOptions extends StObject {
 object EmitOptions {
   
   inline def apply(
-    _commonDirectoryPath: js.Any,
-    _diagnostic: js.Any,
-    _outputDirectory: js.Any,
-    _settings: js.Any,
-    _sharedOutputFile: js.Any,
-    _sourceMapRootDirectory: js.Any,
-    _sourceRootDirectory: js.Any,
+    _commonDirectoryPath: Any,
+    _diagnostic: Any,
+    _outputDirectory: Any,
+    _settings: Any,
+    _sharedOutputFile: Any,
+    _sourceMapRootDirectory: Any,
+    _sourceRootDirectory: Any,
     commonDirectoryPath: () => String,
     compilationSettings: () => ImmutableCompilationSettings,
-    determineCommonDirectoryPath: js.Any => js.Any,
+    determineCommonDirectoryPath: Any => Any,
     diagnostic: () => Diagnostic,
     outputDirectory: () => String,
     resolvePath: String => String,
@@ -68,7 +68,7 @@ object EmitOptions {
     
     inline def setCompilationSettings(value: () => ImmutableCompilationSettings): Self = StObject.set(x, "compilationSettings", js.Any.fromFunction0(value))
     
-    inline def setDetermineCommonDirectoryPath(value: js.Any => js.Any): Self = StObject.set(x, "determineCommonDirectoryPath", js.Any.fromFunction1(value))
+    inline def setDetermineCommonDirectoryPath(value: Any => Any): Self = StObject.set(x, "determineCommonDirectoryPath", js.Any.fromFunction1(value))
     
     inline def setDiagnostic(value: () => Diagnostic): Self = StObject.set(x, "diagnostic", js.Any.fromFunction0(value))
     
@@ -82,18 +82,18 @@ object EmitOptions {
     
     inline def setSourceRootDirectory(value: () => String): Self = StObject.set(x, "sourceRootDirectory", js.Any.fromFunction0(value))
     
-    inline def set_commonDirectoryPath(value: js.Any): Self = StObject.set(x, "_commonDirectoryPath", value.asInstanceOf[js.Any])
+    inline def set_commonDirectoryPath(value: Any): Self = StObject.set(x, "_commonDirectoryPath", value.asInstanceOf[js.Any])
     
-    inline def set_diagnostic(value: js.Any): Self = StObject.set(x, "_diagnostic", value.asInstanceOf[js.Any])
+    inline def set_diagnostic(value: Any): Self = StObject.set(x, "_diagnostic", value.asInstanceOf[js.Any])
     
-    inline def set_outputDirectory(value: js.Any): Self = StObject.set(x, "_outputDirectory", value.asInstanceOf[js.Any])
+    inline def set_outputDirectory(value: Any): Self = StObject.set(x, "_outputDirectory", value.asInstanceOf[js.Any])
     
-    inline def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
+    inline def set_settings(value: Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
     
-    inline def set_sharedOutputFile(value: js.Any): Self = StObject.set(x, "_sharedOutputFile", value.asInstanceOf[js.Any])
+    inline def set_sharedOutputFile(value: Any): Self = StObject.set(x, "_sharedOutputFile", value.asInstanceOf[js.Any])
     
-    inline def set_sourceMapRootDirectory(value: js.Any): Self = StObject.set(x, "_sourceMapRootDirectory", value.asInstanceOf[js.Any])
+    inline def set_sourceMapRootDirectory(value: Any): Self = StObject.set(x, "_sourceMapRootDirectory", value.asInstanceOf[js.Any])
     
-    inline def set_sourceRootDirectory(value: js.Any): Self = StObject.set(x, "_sourceRootDirectory", value.asInstanceOf[js.Any])
+    inline def set_sourceRootDirectory(value: Any): Self = StObject.set(x, "_sourceRootDirectory", value.asInstanceOf[js.Any])
   }
 }

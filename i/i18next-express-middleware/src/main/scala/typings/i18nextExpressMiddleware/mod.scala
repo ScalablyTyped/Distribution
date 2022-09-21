@@ -7,22 +7,19 @@ import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.express.mod.Router
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
-import typings.i18next.i18nextStrings.`3rdParty`
-import typings.i18next.i18nextStrings.backend
-import typings.i18next.i18nextStrings.i18nFormat
-import typings.i18next.i18nextStrings.languageDetector
-import typings.i18next.i18nextStrings.logger
-import typings.i18next.i18nextStrings.postProcessor
+import typings.i18next.anon.ReturnDetails
+import typings.i18next.anon.ReturnObjects
+import typings.i18next.anon.`0`
 import typings.i18next.mod.Module
+import typings.i18next.mod.ModuleType
 import typings.i18next.mod.TFunction
 import typings.i18next.mod.TFunctionKeys
 import typings.i18next.mod.TFunctionResult
 import typings.i18next.mod.TOptions
 import typings.i18next.mod.i18n
-import typings.std.Date
+import typings.i18nextExpressMiddleware.i18nextExpressMiddlewareStrings.languageDetector
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +32,7 @@ object mod {
   
   @JSImport("i18next-express-middleware", "LanguageDetector")
   @js.native
-  class LanguageDetector ()
+  open class LanguageDetector ()
     extends StObject
        with Module {
     def this(options: LanguageDetectorOptions) = this()
@@ -53,15 +50,27 @@ object mod {
     def addDetector(detector: LanguageDetectorInterface): Unit = js.native
     
     def cacheUserLanguage(
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
-      res: Response_[js.Any],
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      res: Response_[Any, Record[String, Any]],
       lng: String,
       caches: LanguageDetectorCaches
     ): Unit = js.native
     
     def detect(
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
-      res: Response_[js.Any],
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      res: Response_[Any, Record[String, Any]],
       detectionOrder: LanguageDetectorOrder
     ): Unit = js.native
     
@@ -79,9 +88,9 @@ object mod {
     ): Unit = js.native
     
     /* CompleteClass */
-    var `type`: backend | logger | languageDetector | postProcessor | i18nFormat | `3rdParty` = js.native
+    var `type`: ModuleType = js.native
     @JSName("type")
-    var type_LanguageDetector: typings.i18nextExpressMiddleware.i18nextExpressMiddlewareStrings.languageDetector = js.native
+    var type_LanguageDetector: languageDetector = js.native
   }
   
   inline def addRoute(
@@ -89,7 +98,13 @@ object mod {
     route: String,
     lngs: js.Array[String],
     app: App,
-    fc: RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+    fc: RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRoute")(i18next.asInstanceOf[js.Any], route.asInstanceOf[js.Any], lngs.asInstanceOf[js.Any], app.asInstanceOf[js.Any], fc.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addRoute(
     i18next: I18next,
@@ -97,7 +112,13 @@ object mod {
     lngs: js.Array[String],
     app: App,
     verb: String,
-    fc: RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+    fc: RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRoute")(i18next.asInstanceOf[js.Any], route.asInstanceOf[js.Any], lngs.asInstanceOf[js.Any], app.asInstanceOf[js.Any], verb.asInstanceOf[js.Any], fc.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getResourcesHandler(i18next: I18next): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourcesHandler")(i18next.asInstanceOf[js.Any]).asInstanceOf[Handler]
@@ -166,12 +187,18 @@ object mod {
       inline def setIgnoreRoutes(value: js.Array[String] | IgnoreRoutesFunction): Self = StObject.set(x, "ignoreRoutes", value.asInstanceOf[js.Any])
       
       inline def setIgnoreRoutesFunction4(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* options */ HandleOptions, /* i18next */ I18next) => Boolean
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]], /* options */ HandleOptions, /* i18next */ I18next) => Boolean
       ): Self = StObject.set(x, "ignoreRoutes", js.Any.fromFunction4(value))
       
       inline def setIgnoreRoutesUndefined: Self = StObject.set(x, "ignoreRoutes", js.undefined)
       
-      inline def setIgnoreRoutesVarargs(value: String*): Self = StObject.set(x, "ignoreRoutes", js.Array(value :_*))
+      inline def setIgnoreRoutesVarargs(value: String*): Self = StObject.set(x, "ignoreRoutes", js.Array(value*))
       
       inline def setRemoveLngFromUrl(value: Boolean): Self = StObject.set(x, "removeLngFromUrl", value.asInstanceOf[js.Any])
       
@@ -181,7 +208,8 @@ object mod {
   
   @js.native
   trait I18NextRequest
-    extends Request[ParamsDictionary, js.Any, js.Any, Query] {
+    extends StObject
+       with Request {
     
     var i18n: typings.i18next.mod.i18n = js.native
     
@@ -195,15 +223,21 @@ object mod {
     def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: String, options: TOptions[TInterpolationMap]): TResult = js.native
     def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: Unit, options: String): TResult = js.native
     def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: Unit, options: TOptions[TInterpolationMap]): TResult = js.native
+    def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](
+      key: TKeys,
+      options: (TOptions[TInterpolationMap] & ReturnDetails & `0` & ReturnObjects) | TOptions[TInterpolationMap]
+    ): TResult = js.native
     def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, options: String): TResult = js.native
-    def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, options: TOptions[TInterpolationMap]): TResult = js.native
     def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys]): TResult = js.native
     def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: String, options: String): TResult = js.native
     def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: String, options: TOptions[TInterpolationMap]): TResult = js.native
     def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: Unit, options: String): TResult = js.native
     def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: Unit, options: TOptions[TInterpolationMap]): TResult = js.native
+    def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](
+      key: js.Array[TKeys],
+      options: (TOptions[TInterpolationMap] & ReturnDetails & `0` & ReturnObjects) | TOptions[TInterpolationMap]
+    ): TResult = js.native
     def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: String): TResult = js.native
-    def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: TOptions[TInterpolationMap]): TResult = js.native
     @JSName("t")
     var t_Original: TFunction = js.native
   }
@@ -211,8 +245,14 @@ object mod {
   type I18next = i18n
   
   type IgnoreRoutesFunction = js.Function4[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* res */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* res */ Response_[Any, Record[String, Any]], 
     /* options */ HandleOptions, 
     /* i18next */ I18next, 
     Boolean
@@ -233,7 +273,7 @@ object mod {
       
       inline def setFallbackLng(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "fallbackLng", value.asInstanceOf[js.Any])
       
-      inline def setFallbackLngVarargs(value: String*): Self = StObject.set(x, "fallbackLng", js.Array(value :_*))
+      inline def setFallbackLngVarargs(value: String*): Self = StObject.set(x, "fallbackLng", js.Array(value*))
     }
   }
   
@@ -244,25 +284,46 @@ object mod {
     
     var cacheUserLanguage: js.UndefOr[
         js.Function4[
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-          /* res */ Response_[js.Any], 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          /* res */ Response_[Any, Record[String, Any]], 
           /* lng */ String, 
           /* options */ js.UndefOr[js.Object], 
           Unit
         ]
       ] = js.native
     
-    def lookup(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any]): String | js.Array[String] = js.native
     def lookup(
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
-      res: Response_[js.Any],
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      res: Response_[Any, Record[String, Any]]
+    ): String | js.Array[String] = js.native
+    def lookup(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      res: Response_[Any, Record[String, Any]],
       options: LanguageDetectorInterfaceOptions
     ): String | js.Array[String] = js.native
     
     var name: String = js.native
   }
   
-  type LanguageDetectorInterfaceOptions = StringDictionary[js.Any]
+  type LanguageDetectorInterfaceOptions = StringDictionary[Any]
   
   trait LanguageDetectorOptions extends StObject {
     
@@ -270,7 +331,7 @@ object mod {
     
     var cookieDomain: js.UndefOr[String] = js.undefined
     
-    var cookieExpirationDate: js.UndefOr[Date] = js.undefined
+    var cookieExpirationDate: js.UndefOr[js.Date] = js.undefined
     
     var lookupCookie: js.UndefOr[String] = js.undefined
     
@@ -295,13 +356,13 @@ object mod {
       
       inline def setCachesUndefined: Self = StObject.set(x, "caches", js.undefined)
       
-      inline def setCachesVarargs(value: String*): Self = StObject.set(x, "caches", js.Array(value :_*))
+      inline def setCachesVarargs(value: String*): Self = StObject.set(x, "caches", js.Array(value*))
       
       inline def setCookieDomain(value: String): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
       
       inline def setCookieDomainUndefined: Self = StObject.set(x, "cookieDomain", js.undefined)
       
-      inline def setCookieExpirationDate(value: Date): Self = StObject.set(x, "cookieExpirationDate", value.asInstanceOf[js.Any])
+      inline def setCookieExpirationDate(value: js.Date): Self = StObject.set(x, "cookieExpirationDate", value.asInstanceOf[js.Any])
       
       inline def setCookieExpirationDateUndefined: Self = StObject.set(x, "cookieExpirationDate", js.undefined)
       
@@ -325,14 +386,14 @@ object mod {
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value*))
     }
   }
   
   type LanguageDetectorOrder = js.Array[String]
   
   // LanguageDetector
-  type LanguageDetectorServices = js.Any
+  type LanguageDetectorServices = Any
   
   trait MissingKeyHandlerOptions extends StObject {
     

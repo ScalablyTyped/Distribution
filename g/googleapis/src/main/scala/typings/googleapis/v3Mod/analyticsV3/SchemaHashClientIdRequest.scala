@@ -4,16 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON template for a hash Client Id request resource.
-  */
 trait SchemaHashClientIdRequest extends StObject {
   
-  var clientId: js.UndefOr[String] = js.undefined
+  var clientId: js.UndefOr[String | Null] = js.undefined
   
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
-  var webPropertyId: js.UndefOr[String] = js.undefined
+  var webPropertyId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaHashClientIdRequest {
   
@@ -26,13 +23,19 @@ object SchemaHashClientIdRequest {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
+    inline def setClientIdNull: Self = StObject.set(x, "clientId", null)
+    
     inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
+    
+    inline def setWebPropertyIdNull: Self = StObject.set(x, "webPropertyId", null)
     
     inline def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
   }

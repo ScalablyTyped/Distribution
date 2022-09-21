@@ -19,6 +19,8 @@ object anon {
     var LIST_SELECTOR: String
     
     var SELECTED_EVENT: String
+    
+    var SKIP_RESTORE_FOCUS: String
   }
   object ARIACHECKEDATTR {
     
@@ -27,9 +29,10 @@ object anon {
       ARIA_DISABLED_ATTR: String,
       CHECKBOX_SELECTOR: String,
       LIST_SELECTOR: String,
-      SELECTED_EVENT: String
+      SELECTED_EVENT: String,
+      SKIP_RESTORE_FOCUS: String
     ): ARIACHECKEDATTR = {
-      val __obj = js.Dynamic.literal(ARIA_CHECKED_ATTR = ARIA_CHECKED_ATTR.asInstanceOf[js.Any], ARIA_DISABLED_ATTR = ARIA_DISABLED_ATTR.asInstanceOf[js.Any], CHECKBOX_SELECTOR = CHECKBOX_SELECTOR.asInstanceOf[js.Any], LIST_SELECTOR = LIST_SELECTOR.asInstanceOf[js.Any], SELECTED_EVENT = SELECTED_EVENT.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(ARIA_CHECKED_ATTR = ARIA_CHECKED_ATTR.asInstanceOf[js.Any], ARIA_DISABLED_ATTR = ARIA_DISABLED_ATTR.asInstanceOf[js.Any], CHECKBOX_SELECTOR = CHECKBOX_SELECTOR.asInstanceOf[js.Any], LIST_SELECTOR = LIST_SELECTOR.asInstanceOf[js.Any], SELECTED_EVENT = SELECTED_EVENT.asInstanceOf[js.Any], SKIP_RESTORE_FOCUS = SKIP_RESTORE_FOCUS.asInstanceOf[js.Any])
       __obj.asInstanceOf[ARIACHECKEDATTR]
     }
     
@@ -44,6 +47,8 @@ object anon {
       inline def setLIST_SELECTOR(value: String): Self = StObject.set(x, "LIST_SELECTOR", value.asInstanceOf[js.Any])
       
       inline def setSELECTED_EVENT(value: String): Self = StObject.set(x, "SELECTED_EVENT", value.asInstanceOf[js.Any])
+      
+      inline def setSKIP_RESTORE_FOCUS(value: String): Self = StObject.set(x, "SKIP_RESTORE_FOCUS", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,6 +109,8 @@ object anon {
     
     var focusListRoot: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    var getAttributeFromElementAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* attr */ String, String | Null]] = js.undefined
+    
     var getElementIndex: js.UndefOr[js.Function1[/* element */ Element, Double]] = js.undefined
     
     var getMenuItemCount: js.UndefOr[js.Function0[Double]] = js.undefined
@@ -150,6 +157,10 @@ object anon {
       inline def setFocusListRoot(value: () => Unit): Self = StObject.set(x, "focusListRoot", js.Any.fromFunction0(value))
       
       inline def setFocusListRootUndefined: Self = StObject.set(x, "focusListRoot", js.undefined)
+      
+      inline def setGetAttributeFromElementAtIndex(value: (/* index */ Double, /* attr */ String) => String | Null): Self = StObject.set(x, "getAttributeFromElementAtIndex", js.Any.fromFunction2(value))
+      
+      inline def setGetAttributeFromElementAtIndexUndefined: Self = StObject.set(x, "getAttributeFromElementAtIndex", js.undefined)
       
       inline def setGetElementIndex(value: /* element */ Element => Double): Self = StObject.set(x, "getElementIndex", js.Any.fromFunction1(value))
       

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogQueryCustomAttributeUsage")
 @js.native
-class CatalogQueryCustomAttributeUsage () extends StObject {
+open class CatalogQueryCustomAttributeUsage () extends StObject {
   
   var custom_attribute_definition_ids: js.UndefOr[js.Array[String]] = js.native
   

@@ -21,7 +21,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/map", "default.Arena")
     @js.native
-    class Arena ()
+    open class Arena ()
       extends typings.rotJs.arenaMod.default
     @JSImport("rot-js/lib/map", "default.Arena")
     @js.native
@@ -31,7 +31,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/map", "default.Cellular")
     @js.native
-    class Cellular protected ()
+    open class Cellular protected ()
       extends typings.rotJs.cellularMod.default {
       def this(width: Double, height: Double) = this()
       def this(width: Double, height: Double, options: PartialOptionsBorn) = this()
@@ -56,7 +56,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/map", "default.Digger")
     @js.native
-    class Digger protected ()
+    open class Digger protected ()
       extends typings.rotJs.diggerMod.default {
       def this(width: Double, height: Double) = this()
       def this(width: Double, height: Double, options: PartialOptionsCorridorLength) = this()
@@ -81,7 +81,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/map", "default.DividedMaze")
     @js.native
-    class DividedMaze ()
+    open class DividedMaze ()
       extends typings.rotJs.dividedmazeMod.default
     @JSImport("rot-js/lib/map", "default.DividedMaze")
     @js.native
@@ -91,7 +91,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/map", "default.EllerMaze")
     @js.native
-    class EllerMaze ()
+    open class EllerMaze ()
       extends typings.rotJs.ellermazeMod.default
     @JSImport("rot-js/lib/map", "default.EllerMaze")
     @js.native
@@ -101,7 +101,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/map", "default.IceyMaze")
     @js.native
-    class IceyMaze protected ()
+    open class IceyMaze protected ()
       extends typings.rotJs.iceymazeMod.default {
       def this(width: Double, height: Double) = this()
       def this(width: Double, height: Double, regularity: Double) = this()
@@ -126,7 +126,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/map", "default.Rogue")
     @js.native
-    class Rogue protected ()
+    open class Rogue protected ()
       extends typings.rotJs.rogueMod.default {
       def this(width: Double, height: Double, options: PartialOptionsCellHeight) = this()
     }
@@ -150,7 +150,7 @@ object mapMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/map", "default.Uniform")
     @js.native
-    class Uniform protected ()
+    open class Uniform protected ()
       extends typings.rotJs.uniformMod.default {
       def this(width: Double, height: Double, options: PartialOptionsRoomDugPercentage) = this()
     }

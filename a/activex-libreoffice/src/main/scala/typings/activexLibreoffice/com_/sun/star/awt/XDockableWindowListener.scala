@@ -54,7 +54,7 @@ object XDockableWindowListener {
     endDocking: EndDockingEvent => Unit,
     endPopupMode: EndPopupModeEvent => Unit,
     prepareToggleFloatingMode: EventObject => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     startDocking: DockingEvent => Unit,
     toggleFloatingMode: EventObject => Unit

@@ -50,7 +50,7 @@ object UnoControlImageControl {
     getView: () => XView,
     isDesignMode: () => Boolean,
     isTransparent: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     removeFocusListener: XFocusListener => Unit,

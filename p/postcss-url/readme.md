@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-url
 
-Typings are for version 8.0
+Typings are for version 10.0
 
 ## Library description:
 PostCSS plugin to rebase or inline on url().
@@ -10,10 +10,10 @@ PostCSS plugin to rebase or inline on url().
 | ------------------ | :-------------: |
 | Full name          | postcss-url |
 | Keywords           | css, postcss, postcss-plugin, url, rebase, inline, base64, assets |
-| # releases         | 5 |
-| # dependents       | 495 |
-| # downloads        | 35669310 |
-| # stars            | 2 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 5407216.0 |
+| # stars            | 346.0 |
 
 ## Links
 - [Homepage](https://github.com/postcss/postcss-url#readme)

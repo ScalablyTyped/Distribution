@@ -10,43 +10,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DialogSheet
   extends StObject
-     with AddSheetResult[js.Any]
+     with AddSheetResult[Any]
      with Sheet {
   
   def Activate(): Unit = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
-  def Arcs(): js.Any = js.native
-  def Arcs(Index: js.Any): js.Any = js.native
+  def Arcs(): Any = js.native
+  def Arcs(Index: Any): Any = js.native
   
   val AutoFilter: typings.activexExcel.Excel.AutoFilter = js.native
   
-  def Buttons(): js.Any = js.native
-  def Buttons(Index: js.Any): js.Any = js.native
+  def Buttons(): Any = js.native
+  def Buttons(Index: Any): Any = js.native
   
-  def ChartObjects(): js.Any = js.native
-  def ChartObjects(Index: js.Any): js.Any = js.native
+  def ChartObjects(): Any = js.native
+  def ChartObjects(Index: Any): Any = js.native
   
-  def CheckBoxes(): js.Any = js.native
-  def CheckBoxes(Index: js.Any): js.Any = js.native
+  def CheckBoxes(): Any = js.native
+  def CheckBoxes(Index: Any): Any = js.native
   
   def CheckSpelling(): Unit = js.native
-  def CheckSpelling(CustomDictionary: js.Any): Unit = js.native
-  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any): Unit = js.native
-  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any, AlwaysSuggest: js.Any): Unit = js.native
-  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any, AlwaysSuggest: js.Any, SpellLang: js.Any): Unit = js.native
-  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any, AlwaysSuggest: Unit, SpellLang: js.Any): Unit = js.native
-  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: Unit, AlwaysSuggest: js.Any): Unit = js.native
-  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: Unit, AlwaysSuggest: js.Any, SpellLang: js.Any): Unit = js.native
-  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: js.Any): Unit = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: js.Any): Unit = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: js.Any, AlwaysSuggest: js.Any): Unit = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: js.Any, AlwaysSuggest: js.Any, SpellLang: js.Any): Unit = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: js.Any, AlwaysSuggest: Unit, SpellLang: js.Any): Unit = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: js.Any): Unit = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: js.Any, SpellLang: js.Any): Unit = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: js.Any): Unit = js.native
+  def CheckSpelling(CustomDictionary: Any): Unit = js.native
+  def CheckSpelling(CustomDictionary: Any, IgnoreUppercase: Any): Unit = js.native
+  def CheckSpelling(CustomDictionary: Any, IgnoreUppercase: Any, AlwaysSuggest: Any): Unit = js.native
+  def CheckSpelling(CustomDictionary: Any, IgnoreUppercase: Any, AlwaysSuggest: Any, SpellLang: Any): Unit = js.native
+  def CheckSpelling(CustomDictionary: Any, IgnoreUppercase: Any, AlwaysSuggest: Unit, SpellLang: Any): Unit = js.native
+  def CheckSpelling(CustomDictionary: Any, IgnoreUppercase: Unit, AlwaysSuggest: Any): Unit = js.native
+  def CheckSpelling(CustomDictionary: Any, IgnoreUppercase: Unit, AlwaysSuggest: Any, SpellLang: Any): Unit = js.native
+  def CheckSpelling(CustomDictionary: Any, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: Any): Unit = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Any): Unit = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Any, AlwaysSuggest: Any): Unit = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Any, AlwaysSuggest: Any, SpellLang: Any): Unit = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Any, AlwaysSuggest: Unit, SpellLang: Any): Unit = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Any): Unit = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Any, SpellLang: Any): Unit = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: Any): Unit = js.native
   
   def CircleInvalid(): Unit = js.native
   
@@ -69,7 +69,7 @@ trait DialogSheet
   @JSName("CustomProperties")
   val CustomProperties_Original: CustomProperties = js.native
   
-  var DefaultButton: js.Any = js.native
+  var DefaultButton: Any = js.native
   
   def Delete(): Unit = js.native
   
@@ -81,17 +81,17 @@ trait DialogSheet
   
   var DisplayRightToLeft: Boolean = js.native
   
-  def DrawingObjects(): js.Any = js.native
-  def DrawingObjects(Index: js.Any): js.Any = js.native
+  def DrawingObjects(): Any = js.native
+  def DrawingObjects(Index: Any): Any = js.native
   
-  def Drawings(): js.Any = js.native
-  def Drawings(Index: js.Any): js.Any = js.native
+  def Drawings(): Any = js.native
+  def Drawings(Index: Any): Any = js.native
   
-  def DropDowns(): js.Any = js.native
-  def DropDowns(Index: js.Any): js.Any = js.native
+  def DropDowns(): Any = js.native
+  def DropDowns(Index: Any): Any = js.native
   
-  def EditBoxes(): js.Any = js.native
-  def EditBoxes(Index: js.Any): js.Any = js.native
+  def EditBoxes(): Any = js.native
+  def EditBoxes(Index: Any): Any = js.native
   
   var EnableAutoFilter: Boolean = js.native
   
@@ -105,37 +105,37 @@ trait DialogSheet
   
   var EnableSelection: XlEnableSelection = js.native
   
-  def Evaluate(Name: js.Any): js.Any = js.native
+  def Evaluate(Name: Any): Any = js.native
   
   /* private */ @JSName("Excel.DialogSheet_typekey")
   var ExcelDotDialogSheet_typekey: DialogSheet = js.native
   
   def ExportAsFixedFormat(
     Type: XlFixedFormatType,
-    Filename: js.UndefOr[js.Any],
-    Quality: js.UndefOr[js.Any],
-    IncludeDocProperties: js.UndefOr[js.Any],
-    IgnorePrintAreas: js.UndefOr[js.Any],
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    OpenAfterPublish: js.UndefOr[js.Any],
-    FixedFormatExtClassPtr: js.UndefOr[js.Any]
+    Filename: js.UndefOr[Any],
+    Quality: js.UndefOr[Any],
+    IncludeDocProperties: js.UndefOr[Any],
+    IgnorePrintAreas: js.UndefOr[Any],
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    OpenAfterPublish: js.UndefOr[Any],
+    FixedFormatExtClassPtr: js.UndefOr[Any]
   ): Unit = js.native
   
-  var Focus: js.Any = js.native
+  var Focus: Any = js.native
   
-  def GroupBoxes(): js.Any = js.native
-  def GroupBoxes(Index: js.Any): js.Any = js.native
+  def GroupBoxes(): Any = js.native
+  def GroupBoxes(Index: Any): Any = js.native
   
-  def GroupObjects(): js.Any = js.native
-  def GroupObjects(Index: js.Any): js.Any = js.native
+  def GroupObjects(): Any = js.native
+  def GroupObjects(Index: Any): Any = js.native
   
   def HPageBreaks(Index: Double): HPageBreak = js.native
   @JSName("HPageBreaks")
   val HPageBreaks_Original: HPageBreaks = js.native
   
   def Hide(): Boolean = js.native
-  def Hide(Cancel: js.Any): Boolean = js.native
+  def Hide(Cancel: Any): Boolean = js.native
   
   def Hyperlinks(Index: String): Hyperlink = js.native
   def Hyperlinks(Index: Double): Hyperlink = js.native
@@ -144,14 +144,14 @@ trait DialogSheet
   
   val Index: Double = js.native
   
-  def Labels(): js.Any = js.native
-  def Labels(Index: js.Any): js.Any = js.native
+  def Labels(): Any = js.native
+  def Labels(Index: Any): Any = js.native
   
-  def Lines(): js.Any = js.native
-  def Lines(Index: js.Any): js.Any = js.native
+  def Lines(): Any = js.native
+  def Lines(Index: Any): Any = js.native
   
-  def ListBoxes(): js.Any = js.native
-  def ListBoxes(Index: js.Any): js.Any = js.native
+  def ListBoxes(): Any = js.native
+  def ListBoxes(Index: Any): Any = js.native
   
   val MailEnvelope: MsoEnvelope = js.native
   
@@ -169,10 +169,10 @@ trait DialogSheet
   @JSName("Names")
   val Names_Original: Names = js.native
   
-  val Next: js.Any = js.native
+  val Next: Any = js.native
   
-  def OLEObjects(): js.Any = js.native
-  def OLEObjects(Index: js.Any): js.Any = js.native
+  def OLEObjects(): Any = js.native
+  def OLEObjects(Index: Any): Any = js.native
   
   var OnDoubleClick: String = js.native
   
@@ -180,35 +180,35 @@ trait DialogSheet
   
   var OnSheetDeactivate: String = js.native
   
-  def OptionButtons(): js.Any = js.native
-  def OptionButtons(Index: js.Any): js.Any = js.native
+  def OptionButtons(): Any = js.native
+  def OptionButtons(Index: Any): Any = js.native
   
-  def Ovals(): js.Any = js.native
-  def Ovals(Index: js.Any): js.Any = js.native
+  def Ovals(): Any = js.native
+  def Ovals(Index: Any): Any = js.native
   
   val PageSetup: typings.activexExcel.Excel.PageSetup = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Paste(): Unit = js.native
-  def Paste(Destination: js.Any): Unit = js.native
-  def Paste(Destination: js.Any, Link: js.Any): Unit = js.native
-  def Paste(Destination: Unit, Link: js.Any): Unit = js.native
+  def Paste(Destination: Any): Unit = js.native
+  def Paste(Destination: Any, Link: Any): Unit = js.native
+  def Paste(Destination: Unit, Link: Any): Unit = js.native
   
   def PasteSpecial(
-    Format: js.UndefOr[js.Any],
-    Link: js.UndefOr[js.Any],
-    DisplayAsIcon: js.UndefOr[js.Any],
-    IconFileName: js.UndefOr[js.Any],
-    IconIndex: js.UndefOr[js.Any],
-    IconLabel: js.UndefOr[js.Any],
-    NoHTMLFormatting: js.UndefOr[js.Any]
+    Format: js.UndefOr[Any],
+    Link: js.UndefOr[Any],
+    DisplayAsIcon: js.UndefOr[Any],
+    IconFileName: js.UndefOr[Any],
+    IconIndex: js.UndefOr[Any],
+    IconLabel: js.UndefOr[Any],
+    NoHTMLFormatting: js.UndefOr[Any]
   ): Unit = js.native
   
-  def Pictures(): js.Any = js.native
-  def Pictures(Index: js.Any): js.Any = js.native
+  def Pictures(): Any = js.native
+  def Pictures(Index: Any): Any = js.native
   
-  val Previous: js.Any = js.native
+  val Previous: Any = js.native
   
   def PrintOut[T /* <: js.UndefOr[Boolean] */](
     From: js.UndefOr[Double],
@@ -219,30 +219,30 @@ trait DialogSheet
     PrintToFile: js.UndefOr[T],
     Collate: js.UndefOr[Boolean],
     PrToFileName: js.UndefOr[PrintToFileName[T]]
-  ): js.Any = js.native
+  ): Any = js.native
   
   def PrintPreview(): Unit = js.native
-  def PrintPreview(EnableChanges: js.Any): Unit = js.native
+  def PrintPreview(EnableChanges: Any): Unit = js.native
   
   val PrintedCommentPages: Double = js.native
   
   def Protect(
-    Password: js.UndefOr[js.Any],
-    DrawingObjects: js.UndefOr[js.Any],
-    Contents: js.UndefOr[js.Any],
-    Scenarios: js.UndefOr[js.Any],
-    UserInterfaceOnly: js.UndefOr[js.Any],
-    AllowFormattingCells: js.UndefOr[js.Any],
-    AllowFormattingColumns: js.UndefOr[js.Any],
-    AllowFormattingRows: js.UndefOr[js.Any],
-    AllowInsertingColumns: js.UndefOr[js.Any],
-    AllowInsertingRows: js.UndefOr[js.Any],
-    AllowInsertingHyperlinks: js.UndefOr[js.Any],
-    AllowDeletingColumns: js.UndefOr[js.Any],
-    AllowDeletingRows: js.UndefOr[js.Any],
-    AllowSorting: js.UndefOr[js.Any],
-    AllowFiltering: js.UndefOr[js.Any],
-    AllowUsingPivotTables: js.UndefOr[js.Any]
+    Password: js.UndefOr[Any],
+    DrawingObjects: js.UndefOr[Any],
+    Contents: js.UndefOr[Any],
+    Scenarios: js.UndefOr[Any],
+    UserInterfaceOnly: js.UndefOr[Any],
+    AllowFormattingCells: js.UndefOr[Any],
+    AllowFormattingColumns: js.UndefOr[Any],
+    AllowFormattingRows: js.UndefOr[Any],
+    AllowInsertingColumns: js.UndefOr[Any],
+    AllowInsertingRows: js.UndefOr[Any],
+    AllowInsertingHyperlinks: js.UndefOr[Any],
+    AllowDeletingColumns: js.UndefOr[Any],
+    AllowDeletingRows: js.UndefOr[Any],
+    AllowSorting: js.UndefOr[Any],
+    AllowFiltering: js.UndefOr[Any],
+    AllowUsingPivotTables: js.UndefOr[Any]
   ): Unit = js.native
   
   val ProtectContents: Boolean = js.native
@@ -260,35 +260,35 @@ trait DialogSheet
   @JSName("QueryTables")
   val QueryTables_Original: QueryTables = js.native
   
-  def Rectangles(): js.Any = js.native
-  def Rectangles(Index: js.Any): js.Any = js.native
+  def Rectangles(): Any = js.native
+  def Rectangles(Index: Any): Any = js.native
   
   def ResetAllPageBreaks(): Unit = js.native
   
   def SaveAs(
     Filename: String,
-    FileFormat: js.UndefOr[js.Any],
-    Password: js.UndefOr[js.Any],
-    WriteResPassword: js.UndefOr[js.Any],
-    ReadOnlyRecommended: js.UndefOr[js.Any],
-    CreateBackup: js.UndefOr[js.Any],
-    AddToMru: js.UndefOr[js.Any],
-    TextCodepage: js.UndefOr[js.Any],
-    TextVisualLayout: js.UndefOr[js.Any],
-    Local: js.UndefOr[js.Any]
+    FileFormat: js.UndefOr[Any],
+    Password: js.UndefOr[Any],
+    WriteResPassword: js.UndefOr[Any],
+    ReadOnlyRecommended: js.UndefOr[Any],
+    CreateBackup: js.UndefOr[Any],
+    AddToMru: js.UndefOr[Any],
+    TextCodepage: js.UndefOr[Any],
+    TextVisualLayout: js.UndefOr[Any],
+    Local: js.UndefOr[Any]
   ): Unit = js.native
   
-  def Scripts(Index: js.Any): Script = js.native
+  def Scripts(Index: Any): Script = js.native
   @JSName("Scripts")
   val Scripts_Original: Scripts = js.native
   
   var ScrollArea: String = js.native
   
-  def ScrollBars(): js.Any = js.native
-  def ScrollBars(Index: js.Any): js.Any = js.native
+  def ScrollBars(): Any = js.native
+  def ScrollBars(Index: Any): Any = js.native
   
   def Select(): Unit = js.native
-  def Select(Replace: js.Any): Unit = js.native
+  def Select(Replace: Any): Unit = js.native
   
   def Shapes(Index: String): Shape = js.native
   def Shapes(Index: Double): Shape = js.native
@@ -297,22 +297,22 @@ trait DialogSheet
   
   def Show(): Boolean = js.native
   
-  def SmartTags(Index: js.Any): SmartTag = js.native
+  def SmartTags(Index: Any): SmartTag = js.native
   @JSName("SmartTags")
   val SmartTags_Original: SmartTags = js.native
   
   val Sort: typings.activexExcel.Excel.Sort = js.native
   
-  def Spinners(): js.Any = js.native
-  def Spinners(Index: js.Any): js.Any = js.native
+  def Spinners(): Any = js.native
+  def Spinners(Index: Any): Any = js.native
   
   val Tab: typings.activexExcel.Excel.Tab = js.native
   
-  def TextBoxes(): js.Any = js.native
-  def TextBoxes(Index: js.Any): js.Any = js.native
+  def TextBoxes(): Any = js.native
+  def TextBoxes(Index: Any): Any = js.native
   
   def Unprotect(): Unit = js.native
-  def Unprotect(Password: js.Any): Unit = js.native
+  def Unprotect(Password: Any): Unit = js.native
   
   def VPageBreaks(Index: Double): VPageBreak = js.native
   @JSName("VPageBreaks")
@@ -321,158 +321,92 @@ trait DialogSheet
   var Visible: XlSheetVisibility = js.native
   
   def _CheckSpelling(
-    CustomDictionary: js.UndefOr[js.Any],
-    IgnoreUppercase: js.UndefOr[js.Any],
-    AlwaysSuggest: js.UndefOr[js.Any],
-    SpellLang: js.UndefOr[js.Any],
-    IgnoreFinalYaa: js.UndefOr[js.Any],
-    SpellScript: js.UndefOr[js.Any]
+    CustomDictionary: js.UndefOr[Any],
+    IgnoreUppercase: js.UndefOr[Any],
+    AlwaysSuggest: js.UndefOr[Any],
+    SpellLang: js.UndefOr[Any],
+    IgnoreFinalYaa: js.UndefOr[Any],
+    SpellScript: js.UndefOr[Any]
   ): Unit = js.native
   
   var _CodeName: String = js.native
   
   var _DisplayRightToLeft: Double = js.native
   
-  def _Evaluate(Name: js.Any): js.Any = js.native
+  def _Evaluate(Name: Any): Any = js.native
   
   def _PasteSpecial(
-    Format: js.UndefOr[js.Any],
-    Link: js.UndefOr[js.Any],
-    DisplayAsIcon: js.UndefOr[js.Any],
-    IconFileName: js.UndefOr[js.Any],
-    IconIndex: js.UndefOr[js.Any],
-    IconLabel: js.UndefOr[js.Any]
+    Format: js.UndefOr[Any],
+    Link: js.UndefOr[Any],
+    DisplayAsIcon: js.UndefOr[Any],
+    IconFileName: js.UndefOr[Any],
+    IconIndex: js.UndefOr[Any],
+    IconLabel: js.UndefOr[Any]
   ): Unit = js.native
   
   def _PrintOut(
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Preview: js.UndefOr[js.Any],
-    ActivePrinter: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    PrToFileName: js.UndefOr[js.Any]
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Preview: js.UndefOr[Any],
+    ActivePrinter: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    PrToFileName: js.UndefOr[Any]
   ): Unit = js.native
   
   def _Protect(): Unit = js.native
-  def _Protect(Password: js.Any): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: js.Any): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.Any): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.Any, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: Unit,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: Unit, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: Unit,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: Unit,
-    Scenarios: Unit,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: js.Any): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: js.Any, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: Unit,
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: Unit,
-    Contents: js.Any,
-    Scenarios: Unit,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: Unit, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: Unit,
-    Contents: Unit,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: js.Any, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: Unit,
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: Unit,
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: Unit,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: Unit, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: Unit,
-    DrawingObjects: js.Any,
-    Contents: Unit,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: js.Any, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: Unit,
-    DrawingObjects: Unit,
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: js.Any, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: js.Any, UserInterfaceOnly: js.Any): Unit = js.native
-  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
+  def _Protect(Password: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any, Contents: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any, Contents: Any, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any, Contents: Any, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any, Contents: Any, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any, Contents: Unit, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any, Contents: Unit, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Any, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Unit, Contents: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Unit, Contents: Any, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Unit, Contents: Any, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Unit, Contents: Any, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Unit, Contents: Unit, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Unit, Contents: Unit, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Any, DrawingObjects: Unit, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any, Contents: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any, Contents: Any, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any, Contents: Any, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any, Contents: Any, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any, Contents: Unit, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any, Contents: Unit, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Any, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Any, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Any, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Any, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: Any, UserInterfaceOnly: Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: Any): Unit = js.native
   
   def _SaveAs(
     Filename: String,
-    FileFormat: js.UndefOr[js.Any],
-    Password: js.UndefOr[js.Any],
-    WriteResPassword: js.UndefOr[js.Any],
-    ReadOnlyRecommended: js.UndefOr[js.Any],
-    CreateBackup: js.UndefOr[js.Any],
-    AddToMru: js.UndefOr[js.Any],
-    TextCodepage: js.UndefOr[js.Any],
-    TextVisualLayout: js.UndefOr[js.Any]
+    FileFormat: js.UndefOr[Any],
+    Password: js.UndefOr[Any],
+    WriteResPassword: js.UndefOr[Any],
+    ReadOnlyRecommended: js.UndefOr[Any],
+    CreateBackup: js.UndefOr[Any],
+    AddToMru: js.UndefOr[Any],
+    TextCodepage: js.UndefOr[Any],
+    TextVisualLayout: js.UndefOr[Any]
   ): Unit = js.native
   
   def __PrintOut(
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Preview: js.UndefOr[js.Any],
-    ActivePrinter: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any]
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Preview: js.UndefOr[Any],
+    ActivePrinter: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any]
   ): Unit = js.native
 }

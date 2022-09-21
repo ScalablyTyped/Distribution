@@ -10,12 +10,19 @@ object navbarCollapseMod {
   
   @JSImport("react-bootstrap/lib/NavbarCollapse", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[NavbarCollapseProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[NavbarCollapseProps, js.Object, Any]
   
-  @js.native
-  trait NavbarCollapse
-    extends Component[NavbarCollapseProps, js.Object, js.Any]
+  type NavbarCollapse = Component[NavbarCollapseProps, js.Object, Any]
   
-  type NavbarCollapseProps = HTMLProps[NavbarCollapse]
+  trait NavbarCollapseProps
+    extends StObject
+       with HTMLProps[NavbarCollapse]
+  object NavbarCollapseProps {
+    
+    inline def apply(): NavbarCollapseProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[NavbarCollapseProps]
+    }
+  }
 }

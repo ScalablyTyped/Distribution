@@ -29,7 +29,7 @@ object ListBudgetsForResourceOutput {
     
     inline def setBudgetsUndefined: Self = StObject.set(x, "Budgets", js.undefined)
     
-    inline def setBudgetsVarargs(value: BudgetDetail*): Self = StObject.set(x, "Budgets", js.Array(value :_*))
+    inline def setBudgetsVarargs(value: BudgetDetail*): Self = StObject.set(x, "Budgets", js.Array(value*))
     
     inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     

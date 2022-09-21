@@ -22,10 +22,10 @@ trait WebviewView extends StObject {
     *
     * Note that hiding a view using the context menu instead disposes of the view and fires `onDidDispose`.
     */
-  def onDidChangeVisibility(listener: js.Function1[/* e */ Unit, js.Any]): Disposable = js.native
-  def onDidChangeVisibility(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onDidChangeVisibility(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-  def onDidChangeVisibility(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidChangeVisibility(listener: js.Function1[/* e */ Unit, Any]): Disposable = js.native
+  def onDidChangeVisibility(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any): Disposable = js.native
+  def onDidChangeVisibility(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidChangeVisibility(listener: js.Function1[/* e */ Unit, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * Event fired when the view is disposed.
@@ -35,10 +35,10 @@ trait WebviewView extends StObject {
     *
     * Trying to use the view after it has been disposed throws an exception.
     */
-  def onDidDispose(listener: js.Function1[/* e */ Unit, js.Any]): Disposable = js.native
-  def onDidDispose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onDidDispose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-  def onDidDispose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidDispose(listener: js.Function1[/* e */ Unit, Any]): Disposable = js.native
+  def onDidDispose(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any): Disposable = js.native
+  def onDidDispose(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidDispose(listener: js.Function1[/* e */ Unit, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * Reveal the view in the UI.

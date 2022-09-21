@@ -16,10 +16,10 @@ object transformAwareTranslatorMod {
   
   @JSImport("plottable/build/src/utils/transformAwareTranslator", "Translator")
   @js.native
-  class Translator protected () extends StObject {
+  open class Translator protected () extends StObject {
     def this(_rootElement: HTMLElement) = this()
     
-    /* private */ var _rootElement: js.Any = js.native
+    /* private */ var _rootElement: Any = js.native
     
     /**
       * Given `document` client coordinates, computes the position relative to the

@@ -18,14 +18,14 @@ object mod {
     * The Gaxios class is responsible for making HTTP requests.
     * @param defaults The default set of options to be used for this instance.
     */
-  class Gaxios ()
+  open class Gaxios ()
     extends typings.gaxios.gaxiosMod.Gaxios {
     def this(defaults: GaxiosOptions) = this()
   }
   
   @JSImport("gaxios", "GaxiosError")
   @js.native
-  class GaxiosError[T] protected ()
+  open class GaxiosError[T] protected ()
     extends typings.gaxios.commonMod.GaxiosError[T] {
     def this(message: String, options: GaxiosOptions, response: GaxiosResponse[T]) = this()
   }

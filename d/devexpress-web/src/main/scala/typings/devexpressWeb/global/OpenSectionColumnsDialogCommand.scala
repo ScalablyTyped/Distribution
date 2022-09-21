@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("OpenSectionColumnsDialogCommand")
 @js.native
-class OpenSectionColumnsDialogCommand ()
+open class OpenSectionColumnsDialogCommand ()
   extends StObject
      with typings.devexpressWeb.OpenSectionColumnsDialogCommand {
   

@@ -6,50 +6,113 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RunnerOptionConfig extends StObject {
   
+  /**
+    * Check order of migrations before running them.
+    */
   var checkOrder: js.UndefOr[Boolean] = js.undefined
   
-  var count: Double
+  /**
+    * Number of migration to run.
+    */
+  var count: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Creates the configured migration schema if it doesn't exist.
+    */
   var createMigrationsSchema: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Creates the configured schema if it doesn't exist.
+    */
   var createSchema: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Runs [`decamelize`](https://github.com/sindresorhus/decamelize) on table/column/etc. names.
+    */
   var decamelize: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * The directory containing your migration files.
+    */
   var dir: String
   
+  /**
+    * Direction of migration-run.
+    */
   var direction: MigrationDirection
   
   var dryRun: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Mark migrations as run without actually performing them (use with caution!).
+    */
   var fake: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Run only migration with this name.
+    */
   var file: js.UndefOr[String] = js.undefined
   
+  /**
+    * Regex pattern for file names to ignore (ignores files starting with `.` by default).
+    */
   var ignorePattern: js.UndefOr[String] = js.undefined
   
+  /**
+    * Redirect log messages to this function, rather than `console`.
+    */
   var log: js.UndefOr[LogFn] = js.undefined
   
+  /**
+    * Redirect messages to this logger object, rather than `console`.
+    */
   var logger: js.UndefOr[Logger] = js.undefined
   
+  /**
+    * The schema storing table which migrations have been run.
+    *
+    * (defaults to same value as `schema`)
+    */
   var migrationsSchema: js.UndefOr[String] = js.undefined
   
+  /**
+    * The table storing which migrations have been run.
+    */
   var migrationsTable: String
   
+  /**
+    * Disables locking mechanism and checks.
+    */
   var noLock: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * The schema on which migration will be run.
+    *
+    * @default 'public'
+    */
   var schema: js.UndefOr[String | js.Array[String]] = js.undefined
   
+  /**
+    * Combines all pending migrations into a single transaction so that if any migration fails, all will be rolled back.
+    *
+    * @default true
+    */
   var singleTransaction: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Treats `count` as timestamp.
+    */
   var timestamp: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Print all debug messages like DB queries run (if you switch it on, it will disable `logger.debug` method).
+    */
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object RunnerOptionConfig {
   
-  inline def apply(count: Double, dir: String, direction: MigrationDirection, migrationsTable: String): RunnerOptionConfig = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], migrationsTable = migrationsTable.asInstanceOf[js.Any])
+  inline def apply(dir: String, direction: MigrationDirection, migrationsTable: String): RunnerOptionConfig = {
+    val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], migrationsTable = migrationsTable.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunnerOptionConfig]
   }
   
@@ -60,6 +123,8 @@ object RunnerOptionConfig {
     inline def setCheckOrderUndefined: Self = StObject.set(x, "checkOrder", js.undefined)
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     inline def setCreateMigrationsSchema(value: Boolean): Self = StObject.set(x, "createMigrationsSchema", value.asInstanceOf[js.Any])
     
@@ -115,7 +180,7 @@ object RunnerOptionConfig {
     
     inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    inline def setSchemaVarargs(value: String*): Self = StObject.set(x, "schema", js.Array(value :_*))
+    inline def setSchemaVarargs(value: String*): Self = StObject.set(x, "schema", js.Array(value*))
     
     inline def setSingleTransaction(value: Boolean): Self = StObject.set(x, "singleTransaction", value.asInstanceOf[js.Any])
     

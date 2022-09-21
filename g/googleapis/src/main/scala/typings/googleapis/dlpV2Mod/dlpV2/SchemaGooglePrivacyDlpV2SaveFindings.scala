@@ -4,13 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * If set, the detailed findings will be persisted to the specified
-  * OutputStorageConfig. Only a single instance of this action can be
-  * specified. Compatible with: Inspect, Risk
-  */
 trait SchemaGooglePrivacyDlpV2SaveFindings extends StObject {
   
+  /**
+    * Location to store findings outside of DLP.
+    */
   var outputConfig: js.UndefOr[SchemaGooglePrivacyDlpV2OutputStorageConfig] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2SaveFindings {

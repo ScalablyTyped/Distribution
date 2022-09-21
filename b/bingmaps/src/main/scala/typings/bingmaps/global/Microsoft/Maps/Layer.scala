@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @constructor
   * @param id Unique string identifier for the layer.
   */
-class Layer ()
+open class Layer ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.Layer {
   def this(id: String) = this()

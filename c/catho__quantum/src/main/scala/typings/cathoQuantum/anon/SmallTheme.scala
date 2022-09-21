@@ -8,7 +8,7 @@ trait SmallTheme extends StObject {
   
   var small: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[`9`] = js.undefined
+  var theme: js.UndefOr[`10`] = js.undefined
 }
 object SmallTheme {
   
@@ -23,7 +23,7 @@ object SmallTheme {
     
     inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
     
-    inline def setTheme(value: `9`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: `10`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }

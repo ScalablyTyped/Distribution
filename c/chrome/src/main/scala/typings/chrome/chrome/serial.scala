@@ -7,7 +7,6 @@ import typings.chrome.chromeStrings.odd
 import typings.chrome.chromeStrings.one
 import typings.chrome.chromeStrings.seven
 import typings.chrome.chromeStrings.two
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +50,7 @@ object serial {
     var paused: Boolean
     
     /** See ConnectionOptions.persistent */
-    var peristent: Boolean
+    var persistent: Boolean
     
     /** See ConnectionOptions.receiveTimeout */
     var receiveTimeout: js.UndefOr[Double] = js.undefined
@@ -64,8 +63,8 @@ object serial {
   }
   object ConnectionInfo {
     
-    inline def apply(bufferSize: Double, name: String, paused: Boolean, peristent: Boolean): ConnectionInfo = {
-      val __obj = js.Dynamic.literal(bufferSize = bufferSize.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], peristent = peristent.asInstanceOf[js.Any])
+    inline def apply(bufferSize: Double, name: String, paused: Boolean, persistent: Boolean): ConnectionInfo = {
+      val __obj = js.Dynamic.literal(bufferSize = bufferSize.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], persistent = persistent.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionInfo]
     }
     
@@ -97,7 +96,7 @@ object serial {
       
       inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      inline def setPeristent(value: Boolean): Self = StObject.set(x, "peristent", value.asInstanceOf[js.Any])
+      inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       
       inline def setReceiveTimeout(value: Double): Self = StObject.set(x, "receiveTimeout", value.asInstanceOf[js.Any])
       
@@ -139,7 +138,7 @@ object serial {
     
     /** Optional. Flag indicating whether or not the connection should be left open when the application is suspended (see Manage App Lifecycle: https://developer.chrome.com/apps/app_lifecycle).
       *  The default value is "false." When the application is loaded, any serial connections previously opened with persistent=true can be fetched with getConnections. */
-    var peristent: js.UndefOr[Boolean] = js.undefined
+    var persistent: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. The maximum amount of time (in milliseconds) to wait for new data before raising an onReceiveError event with a "timeout" error.
       * If zero, receive timeout errors will not be raised for the connection.
@@ -187,9 +186,9 @@ object serial {
       
       inline def setParityBitUndefined: Self = StObject.set(x, "parityBit", js.undefined)
       
-      inline def setPeristent(value: Boolean): Self = StObject.set(x, "peristent", value.asInstanceOf[js.Any])
+      inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       
-      inline def setPeristentUndefined: Self = StObject.set(x, "peristent", js.undefined)
+      inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
       
       inline def setReceiveTimeout(value: Double): Self = StObject.set(x, "receiveTimeout", value.asInstanceOf[js.Any])
       
@@ -252,11 +251,11 @@ object serial {
       var connectionId: Double
       
       /** The data received. */
-      var data: ArrayBuffer
+      var data: js.typedarray.ArrayBuffer
     }
     object OnReceiveInfo {
       
-      inline def apply(connectionId: Double, data: ArrayBuffer): OnReceiveInfo = {
+      inline def apply(connectionId: Double, data: js.typedarray.ArrayBuffer): OnReceiveInfo = {
         val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
         __obj.asInstanceOf[OnReceiveInfo]
       }
@@ -265,7 +264,7 @@ object serial {
         
         inline def setConnectionId(value: Double): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
         
-        inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -278,11 +277,11 @@ object serial {
       var connectionId: Double
       
       /** The data received. */
-      var error: ArrayBuffer
+      var error: js.typedarray.ArrayBuffer
     }
     object OnReceiveErrorInfo {
       
-      inline def apply(connectionId: Double, error: ArrayBuffer): OnReceiveErrorInfo = {
+      inline def apply(connectionId: Double, error: js.typedarray.ArrayBuffer): OnReceiveErrorInfo = {
         val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
         __obj.asInstanceOf[OnReceiveErrorInfo]
       }
@@ -291,7 +290,7 @@ object serial {
         
         inline def setConnectionId(value: Double): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
         
-        inline def setError(value: ArrayBuffer): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       }
     }
   }

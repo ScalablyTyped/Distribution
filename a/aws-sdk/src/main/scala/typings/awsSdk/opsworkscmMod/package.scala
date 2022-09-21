@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type AWSOpsWorksCMResourceArn = java.lang.String
 
-type AccountAttributes = js.Array[typings.awsSdk.opsworkscmMod.AccountAttribute]
+type AccountAttributes = js.Array[AccountAttribute]
 
 type AttributeName = java.lang.String
 
@@ -15,7 +15,7 @@ type AttributeValue = java.lang.String
 
 type BackupId = java.lang.String
 
-type BackupRetentionCountDefinition = scala.Double
+type BackupRetentionCountDefinition = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -24,16 +24,16 @@ type BackupRetentionCountDefinition = scala.Double
   - typings.awsSdk.awsSdkStrings.DELETING
   - java.lang.String
 */
-type BackupStatus = typings.awsSdk.opsworkscmMod._BackupStatus | java.lang.String
+type BackupStatus = _BackupStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTOMATED
   - typings.awsSdk.awsSdkStrings.MANUAL
   - java.lang.String
 */
-type BackupType = typings.awsSdk.opsworkscmMod._BackupType | java.lang.String
+type BackupType = _BackupType | java.lang.String
 
-type Backups = js.Array[typings.awsSdk.opsworkscmMod.Backup]
+type Backups = js.Array[Backup]
 
 type Boolean = scala.Boolean
 
@@ -47,11 +47,11 @@ type EngineAttributeName = java.lang.String
 
 type EngineAttributeValue = java.lang.String
 
-type EngineAttributes = js.Array[typings.awsSdk.opsworkscmMod.EngineAttribute]
+type EngineAttributes = js.Array[EngineAttribute]
 
 type InstanceProfileArn = java.lang.String
 
-type Integer = scala.Double
+type Integer = Double
 
 type KeyPair = java.lang.String
 
@@ -60,9 +60,9 @@ type KeyPair = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type MaintenanceStatus = typings.awsSdk.opsworkscmMod._MaintenanceStatus | java.lang.String
+type MaintenanceStatus = _MaintenanceStatus | java.lang.String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
 type NextToken = java.lang.String
 
@@ -72,13 +72,13 @@ type NextToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
   - java.lang.String
 */
-type NodeAssociationStatus = typings.awsSdk.opsworkscmMod._NodeAssociationStatus | java.lang.String
+type NodeAssociationStatus = _NodeAssociationStatus | java.lang.String
 
 type NodeAssociationStatusToken = java.lang.String
 
 type NodeName = java.lang.String
 
-type ServerEvents = js.Array[typings.awsSdk.opsworkscmMod.ServerEvent]
+type ServerEvents = js.Array[ServerEvent]
 
 type ServerName = java.lang.String
 
@@ -98,31 +98,31 @@ type ServerName = java.lang.String
   - typings.awsSdk.awsSdkStrings.TERMINATED
   - java.lang.String
 */
-type ServerStatus = typings.awsSdk.opsworkscmMod._ServerStatus | java.lang.String
+type ServerStatus = _ServerStatus | java.lang.String
 
-type Servers = js.Array[typings.awsSdk.opsworkscmMod.Server]
+type Servers = js.Array[Server]
 
 type ServiceRoleArn = java.lang.String
 
 type String = java.lang.String
 
-type Strings = js.Array[typings.awsSdk.opsworkscmMod.String]
+type Strings = js.Array[String]
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.opsworkscmMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.opsworkscmMod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
 
 type TimeWindowDefinition = java.lang.String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2016-11-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.opsworkscmMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

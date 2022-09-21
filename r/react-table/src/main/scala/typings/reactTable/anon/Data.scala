@@ -23,12 +23,12 @@ object Data {
     
     inline def setData(value: js.Array[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: D*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: D*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     inline def setSubRows(value: js.Array[D]): Self = StObject.set(x, "subRows", value.asInstanceOf[js.Any])
     
-    inline def setSubRowsVarargs(value: D*): Self = StObject.set(x, "subRows", js.Array(value :_*))
+    inline def setSubRowsVarargs(value: D*): Self = StObject.set(x, "subRows", js.Array(value*))
   }
 }

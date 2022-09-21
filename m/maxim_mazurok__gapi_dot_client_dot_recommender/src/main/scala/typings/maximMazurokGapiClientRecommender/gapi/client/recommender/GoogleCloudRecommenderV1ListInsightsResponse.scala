@@ -25,7 +25,7 @@ object GoogleCloudRecommenderV1ListInsightsResponse {
     
     inline def setInsightsUndefined: Self = StObject.set(x, "insights", js.undefined)
     
-    inline def setInsightsVarargs(value: GoogleCloudRecommenderV1Insight*): Self = StObject.set(x, "insights", js.Array(value :_*))
+    inline def setInsightsVarargs(value: GoogleCloudRecommenderV1Insight*): Self = StObject.set(x, "insights", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

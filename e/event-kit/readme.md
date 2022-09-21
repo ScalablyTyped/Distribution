@@ -10,10 +10,10 @@ Simple library for implementing and consuming evented APIs
 | ------------------ | :-------------: |
 | Full name          | event-kit |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 97 |
-| # downloads        | 2147654 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 140131.66666666666 |
+| # stars            | 96.0 |
 
 ## Links
 - [Homepage](https://github.com/atom/event-kit#readme)

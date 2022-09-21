@@ -11,7 +11,7 @@ trait IgGridHiding
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies time of milliseconds for animation duration to show/hide modal dialog
@@ -336,7 +336,7 @@ object IgGridHiding {
     
     inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    inline def setColumnSettingsVarargs(value: IgGridHidingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
+    inline def setColumnSettingsVarargs(value: IgGridHidingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value*))
     
     inline def setColumnShowing(value: (/* event */ Event, /* ui */ ColumnShowingEventUIParam) => Unit): Self = StObject.set(x, "columnShowing", js.Any.fromFunction2(value))
     

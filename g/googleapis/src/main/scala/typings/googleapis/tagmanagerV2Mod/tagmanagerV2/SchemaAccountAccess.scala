@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Defines the Google Tag Manager Account access permissions.
-  */
 trait SchemaAccountAccess extends StObject {
   
   /**
-    * Whether the user has no access, user access, or admin access to an
-    * account.
+    * Whether the user has no access, user access, or admin access to an account. @mutable tagmanager.accounts.permissions.create @mutable tagmanager.accounts.permissions.update
     */
-  var permission: js.UndefOr[String] = js.undefined
+  var permission: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAccountAccess {
   
@@ -25,6 +21,8 @@ object SchemaAccountAccess {
   extension [Self <: SchemaAccountAccess](x: Self) {
     
     inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    
+    inline def setPermissionNull: Self = StObject.set(x, "permission", null)
     
     inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
   }

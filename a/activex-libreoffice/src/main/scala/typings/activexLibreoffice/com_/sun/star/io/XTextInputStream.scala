@@ -61,7 +61,7 @@ object XTextInputStream {
     available: () => Double,
     closeInput: () => Unit,
     isEOF: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     readBytes: (js.Array[SeqEquiv[Double]], Double) => Double,
     readLine: () => String,
     readSomeBytes: (js.Array[SeqEquiv[Double]], Double) => Double,

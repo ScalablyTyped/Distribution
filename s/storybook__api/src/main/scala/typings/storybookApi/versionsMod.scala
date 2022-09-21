@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object versionsMod {
   
-  @JSImport("@storybook/api/dist/modules/versions", "init")
+  @JSImport("@storybook/api/dist/ts3.9/modules/versions", "init")
   @js.native
   val init: ModuleFn = js.native
   
@@ -69,11 +69,11 @@ object versionsMod {
     }
   }
   
-  type UnknownEntries = StringDictionary[StringDictionary[js.Any]]
+  type UnknownEntries = StringDictionary[StringDictionary[Any]]
   
   trait Version
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var info: js.UndefOr[Plain] = js.undefined
     

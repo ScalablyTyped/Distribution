@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.TextureAtlasPage")
 @js.native
-class TextureAtlasPage ()
+open class TextureAtlasPage ()
   extends StObject
      with typings.phaser.spine.TextureAtlasPage {
   

@@ -37,7 +37,7 @@ trait ModifyDBProxyRequest extends StObject {
   var RequireTLS: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role that the proxy uses to access secrets in AWS Secrets Manager.
+    * The Amazon Resource Name (ARN) of the IAM role that the proxy uses to access secrets in Amazon Web Services Secrets Manager.
     */
   var RoleArn: js.UndefOr[String] = js.undefined
   
@@ -59,7 +59,7 @@ object ModifyDBProxyRequest {
     
     inline def setAuthUndefined: Self = StObject.set(x, "Auth", js.undefined)
     
-    inline def setAuthVarargs(value: UserAuthConfig*): Self = StObject.set(x, "Auth", js.Array(value :_*))
+    inline def setAuthVarargs(value: UserAuthConfig*): Self = StObject.set(x, "Auth", js.Array(value*))
     
     inline def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
     
@@ -87,6 +87,6 @@ object ModifyDBProxyRequest {
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
   }
 }

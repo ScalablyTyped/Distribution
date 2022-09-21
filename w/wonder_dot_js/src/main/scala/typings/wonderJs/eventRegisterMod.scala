@@ -18,7 +18,7 @@ object eventRegisterMod {
     
     def forEachAll(
       func: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ /* list */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ /* list */ Any, 
           /* eventName */ EEventName, 
           Unit
         ]
@@ -26,26 +26,26 @@ object eventRegisterMod {
     
     def forEachEventName(
       func: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<EventRegisterData> */ /* list */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<EventRegisterData> */ /* list */ Any, 
           /* eventName */ EEventName, 
           Unit
         ]
     ): Unit = js.native
     
-    def getChild(dom: HTMLElement): js.Any = js.native
-    def getChild(dom: HTMLElement, eventName: EEventName): js.Any = js.native
-    def getChild(target: EntityObject): js.Any = js.native
-    def getChild(target: EntityObject, eventName: EEventName): js.Any = js.native
+    def getChild(dom: HTMLElement): Any = js.native
+    def getChild(dom: HTMLElement, eventName: EEventName): Any = js.native
+    def getChild(target: EntityObject): Any = js.native
+    def getChild(target: EntityObject, eventName: EEventName): Any = js.native
     
-    def getEventRegisterDataList(currentTarget: EntityObject, eventName: EEventName): js.Any = js.native
-    def getEventRegisterDataList(dom: HTMLElement, eventName: EEventName): js.Any = js.native
-    def getEventRegisterDataList(eventName: EEventName): js.Any = js.native
+    def getEventRegisterDataList(currentTarget: EntityObject, eventName: EEventName): Any = js.native
+    def getEventRegisterDataList(dom: HTMLElement, eventName: EEventName): Any = js.native
+    def getEventRegisterDataList(eventName: EEventName): Any = js.native
     
     /* protected */ var listenerMap: EventListenerMap = js.native
     
-    def register(args: js.Any*): Unit = js.native
+    def register(args: Any*): Unit = js.native
     
-    def remove(args: js.Any*): js.Any = js.native
+    def remove(args: Any*): Any = js.native
   }
   
   trait EventRegisterData extends StObject {

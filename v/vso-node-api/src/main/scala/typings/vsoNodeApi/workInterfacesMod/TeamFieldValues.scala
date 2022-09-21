@@ -26,7 +26,7 @@ trait TeamFieldValues
 object TeamFieldValues {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     defaultValue: String,
     field: FieldReference,
     url: String,
@@ -44,6 +44,6 @@ object TeamFieldValues {
     
     inline def setValues(value: js.Array[TeamFieldValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: TeamFieldValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: TeamFieldValue*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

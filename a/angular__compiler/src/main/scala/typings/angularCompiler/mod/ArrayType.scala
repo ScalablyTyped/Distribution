@@ -1,14 +1,14 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.outputAstMod.TypeModifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "ArrayType")
 @js.native
-class ArrayType protected ()
-  extends typings.angularCompiler.compilerMod.ArrayType {
-  def this(of: typings.angularCompiler.outputAstMod.Type) = this()
-  def this(of: typings.angularCompiler.outputAstMod.Type, modifiers: js.Array[TypeModifier]) = this()
+open class ArrayType protected () extends Type {
+  def this(of: Type) = this()
+  def this(of: Type, modifiers: TypeModifier) = this()
+  
+  var of: Type = js.native
 }

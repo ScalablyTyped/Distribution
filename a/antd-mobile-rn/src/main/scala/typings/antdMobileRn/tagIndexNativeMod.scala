@@ -15,7 +15,7 @@ object tagIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/tag/index.native", JSImport.Default)
   @js.native
-  class default protected () extends Tag {
+  open class default protected () extends Tag {
     def this(props: TagNativeProps) = this()
   }
   /* static members */
@@ -32,8 +32,7 @@ object tagIndexNativeMod {
   }
   
   @js.native
-  trait Tag
-    extends Component[TagNativeProps, js.Any, js.Any] {
+  trait Tag extends Component[TagNativeProps, Any, Any] {
     
     var closeDom: View | Null = js.native
     

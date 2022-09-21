@@ -10,10 +10,10 @@ Plain text awesomizer. A hybrid npm module and CLI for turning plain text into a
 | ------------------ | :-------------: |
 | Full name          | asciify |
 | Keywords           | ascii, art, figlet, banner, text |
-| # releases         | 0 |
-| # dependents       | 81 |
-| # downloads        | 269938 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 18864.0 |
+| # stars            | 123.0 |
 
 ## Links
 - [Homepage](https://github.com/olizilla/asciify#readme)

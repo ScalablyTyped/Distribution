@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Animation")
 @js.native
-class Animation protected () extends StObject {
+open class Animation protected () extends StObject {
   def this(option: js.Array[Servo]) = this()
   def this(option: Servo) = this()
   
@@ -18,7 +18,7 @@ class Animation protected () extends StObject {
   
   var easing: String = js.native
   
-  def enqueue(segment: js.Any): Unit = js.native
+  def enqueue(segment: Any): Unit = js.native
   
   var fps: Double = js.native
   

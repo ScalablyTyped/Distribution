@@ -11,5 +11,5 @@ object multiPickerMixinMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(ComposedComponent: js.Any): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
+  inline def default(ComposedComponent: Any): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
 }

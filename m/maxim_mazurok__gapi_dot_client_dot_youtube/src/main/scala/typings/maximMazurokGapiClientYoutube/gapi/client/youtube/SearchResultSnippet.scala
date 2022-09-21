@@ -18,7 +18,7 @@ trait SearchResultSnippet extends StObject {
   /** It indicates if the resource (video or channel) has upcoming/active live broadcast content. Or it's "none" if there is not any upcoming/active live broadcasts. */
   var liveBroadcastContent: js.UndefOr[String] = js.undefined
   
-  /** The creation date and time of the resource that the search result identifies. The value is specified in ISO 8601 format. */
+  /** The creation date and time of the resource that the search result identifies. */
   var publishedAt: js.UndefOr[String] = js.undefined
   
   /**

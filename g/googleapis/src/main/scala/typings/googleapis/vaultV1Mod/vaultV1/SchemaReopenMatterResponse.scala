@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response to a ReopenMatterRequest.
-  */
 trait SchemaReopenMatterResponse extends StObject {
   
   /**
-    * The updated matter, with state OPEN.
+    * The updated matter, with state **OPEN**.
     */
   var matter: js.UndefOr[SchemaMatter] = js.undefined
 }

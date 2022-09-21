@@ -1,7 +1,6 @@
 package typings.pikadayTime
 
 import typings.moment.mod.Moment
-import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ object mod {
   
   @JSImport("pikaday-time", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Pikaday {
     def this(options: PikadayOptions) = this()
@@ -49,7 +48,7 @@ object mod {
       * Returns a JavaScript Date object for the selected day, or null if
       * no date is selected.
       */
-    def getDate(): Date = js.native
+    def getDate(): js.Date = js.native
     
     /**
       * Returns a Moment.js object for the selected date (Moment must be
@@ -60,7 +59,7 @@ object mod {
     /**
       * Change the current view to see a specific date.
       */
-    def gotoDate(date: Date): Unit = js.native
+    def gotoDate(date: js.Date): Unit = js.native
     
     /**
       * Change the current view by month (0: January, 1: Februrary, etc).
@@ -105,35 +104,35 @@ object mod {
       */
     def setDate(date: String): Unit = js.native
     def setDate(date: String, triggerOnSelect: Boolean): Unit = js.native
-    def setDate(date: Date): Unit = js.native
-    def setDate(date: Date, triggerOnSelect: Boolean): Unit = js.native
+    def setDate(date: js.Date): Unit = js.native
+    def setDate(date: js.Date, triggerOnSelect: Boolean): Unit = js.native
     
     /**
       * Update the range end date. For using two Pikaday instances to select
       * a date range.
       */
-    def setEndRange(date: Date): Unit = js.native
+    def setEndRange(date: js.Date): Unit = js.native
     
     /**
       * Update the maximum/latest date that can be selected.
       */
-    def setMaxDate(date: Date): Unit = js.native
+    def setMaxDate(date: js.Date): Unit = js.native
     
     /**
       * Update the minimum/earliest date that can be selected.
       */
-    def setMinDate(date: Date): Unit = js.native
+    def setMinDate(date: js.Date): Unit = js.native
     
     /**
       * Set the current selection with a Moment.js object (see setDate).
       */
-    def setMoment(moment: js.Any): Unit = js.native
+    def setMoment(moment: Any): Unit = js.native
     
     /**
       * Update the range start date. For using two Pikaday instances to
       * select a date range.
       */
-    def setStartRange(date: Date): Unit = js.native
+    def setStartRange(date: js.Date): Unit = js.native
     
     /**
       * Make the picker visible.
@@ -172,7 +171,7 @@ object mod {
       
       inline def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
       
       inline def setNextMonth(value: String): Self = StObject.set(x, "nextMonth", value.asInstanceOf[js.Any])
       
@@ -182,9 +181,9 @@ object mod {
       
       inline def setWeekdaysShort(value: js.Array[String]): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
       
-      inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
+      inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value*))
       
-      inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
+      inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value*))
     }
   }
   
@@ -210,13 +209,13 @@ object mod {
     /**
       * The initial date to view when first opened.
       */
-    var defaultDate: js.UndefOr[Date] = js.undefined
+    var defaultDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Callback function that gets passed a Date object for each day
       * in view. Should return true to disable selection of that day.
       */
-    var disableDayFn: js.UndefOr[js.Function1[/* date */ Date, Boolean]] = js.undefined
+    var disableDayFn: js.UndefOr[js.Function1[/* date */ js.Date, Boolean]] = js.undefined
     
     /**
       * Disallow selection of Saturdays and Sundays.
@@ -275,13 +274,13 @@ object mod {
       * The latest date that can be selected (this should be a native
       * Date object - e.g. new Date() or moment().toDate()).
       */
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The earliest date that can be selected (this should be a native
       * Date object - e.g. new Date() or moment().toDate()).
       */
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Number of visible calendars.
@@ -306,7 +305,7 @@ object mod {
     /**
       * Callback function for when a date is selected.
       */
-    var onSelect: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.undefined
+    var onSelect: js.UndefOr[js.Function1[/* date */ js.Date, Unit]] = js.undefined
     
     /**
       * Preferred position of the datepicker relative to the form field
@@ -411,11 +410,11 @@ object mod {
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      inline def setDefaultDate(value: Date): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
+      inline def setDefaultDate(value: js.Date): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
       
       inline def setDefaultDateUndefined: Self = StObject.set(x, "defaultDate", js.undefined)
       
-      inline def setDisableDayFn(value: /* date */ Date => Boolean): Self = StObject.set(x, "disableDayFn", js.Any.fromFunction1(value))
+      inline def setDisableDayFn(value: /* date */ js.Date => Boolean): Self = StObject.set(x, "disableDayFn", js.Any.fromFunction1(value))
       
       inline def setDisableDayFnUndefined: Self = StObject.set(x, "disableDayFn", js.undefined)
       
@@ -459,11 +458,11 @@ object mod {
       
       inline def setMainCalendarUndefined: Self = StObject.set(x, "mainCalendar", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -483,7 +482,7 @@ object mod {
       
       inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      inline def setOnSelect(value: /* date */ Date => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* date */ js.Date => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
@@ -543,7 +542,7 @@ object mod {
       
       inline def setYearRangeUndefined: Self = StObject.set(x, "yearRange", js.undefined)
       
-      inline def setYearRangeVarargs(value: Double*): Self = StObject.set(x, "yearRange", js.Array(value :_*))
+      inline def setYearRangeVarargs(value: Double*): Self = StObject.set(x, "yearRange", js.Array(value*))
       
       inline def setYearSuffix(value: String): Self = StObject.set(x, "yearSuffix", value.asInstanceOf[js.Any])
       

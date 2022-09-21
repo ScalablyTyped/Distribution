@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "Dialog")
 @js.native
-class Dialog ()
-  extends Component[DialogProps, js.Object, js.Any]
+open class Dialog ()
+  extends Component[DialogProps, js.Object, Any]

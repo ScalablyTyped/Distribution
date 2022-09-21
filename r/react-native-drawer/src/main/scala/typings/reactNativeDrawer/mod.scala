@@ -21,11 +21,11 @@ object mod {
   
   @JSImport("react-native-drawer", JSImport.Default)
   @js.native
-  class default () extends Drawer
+  open class default () extends Drawer
   
   @js.native
   trait Drawer
-    extends Component[DrawerProperties, js.Object, js.Any] {
+    extends Component[DrawerProperties, js.Object, Any] {
     
     /** Close the drawer programmatically. */
     def close(): Unit = js.native
@@ -64,12 +64,14 @@ object mod {
       */
     var captureGestures: js.UndefOr[Boolean | open | closed] = js.undefined
     
+    // Important
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /**
       * Same as openDrawerOffset, except defines left hand margin when drawer is closed
       */
     var closedDrawerOffset: js.UndefOr[js.Function0[Double] | Double] = js.undefined
     
-    // Important
     /**
       * Menu component
       */
@@ -218,6 +220,10 @@ object mod {
       inline def setCaptureGestures(value: Boolean | open | closed): Self = StObject.set(x, "captureGestures", value.asInstanceOf[js.Any])
       
       inline def setCaptureGesturesUndefined: Self = StObject.set(x, "captureGestures", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClosedDrawerOffset(value: js.Function0[Double] | Double): Self = StObject.set(x, "closedDrawerOffset", value.asInstanceOf[js.Any])
       

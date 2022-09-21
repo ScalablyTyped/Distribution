@@ -29,5 +29,5 @@ abstract class ContactChangeReader ()
     * @return A list of ContactChange objects.
     */
   /* CompleteClass */
-  override def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  override def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
 }

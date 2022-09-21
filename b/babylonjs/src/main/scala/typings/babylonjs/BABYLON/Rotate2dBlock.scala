@@ -14,6 +14,8 @@ trait Rotate2dBlock
     */
   def angle: NodeMaterialConnectionPoint = js.native
   
+  def autoConfigure(): Unit = js.native
+  
   /**
     * Gets the input vector
     */

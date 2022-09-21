@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventType_ extends StObject {
   
   /**
-    * A list of event type category codes (issue, scheduledChange, or accountNotification).
+    * A list of event type category codes. Possible values are issue, accountNotification, or scheduledChange. Currently, the investigation value isn't supported at this time.
     */
   var category: js.UndefOr[eventTypeCategory] = js.undefined
   
@@ -17,7 +17,7 @@ trait EventType_ extends StObject {
   var code: js.UndefOr[eventTypeCode] = js.undefined
   
   /**
-    * The AWS service that is affected by the event. For example, EC2, RDS.
+    * The Amazon Web Services service that is affected by the event. For example, EC2, RDS.
     */
   var service: js.UndefOr[typings.awsSdk.healthMod.service] = js.undefined
 }

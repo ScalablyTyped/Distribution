@@ -16,14 +16,21 @@ trait BrokerNodeGroupInfo extends StObject {
   
   /**
     * 
-    The list of subnets to connect to in the client virtual private cloud (VPC). AWS creates elastic network interfaces inside these subnets. Client applications use elastic network interfaces to produce and consume data. Client subnets can't be in Availability Zone us-east-1e.
+    The list of subnets to connect to in the client virtual private cloud (VPC). AWS creates elastic network interfaces inside these subnets. Client applications use elastic network interfaces to produce and consume data. Client subnets can't occupy the Availability Zone with ID use use1-az3.
     
     */
   var ClientSubnets: listOfString
   
   /**
     * 
-    The type of Amazon EC2 instances to use for Kafka brokers. The following instance types are allowed: kafka.m5.large, kafka.m5.xlarge, kafka.m5.2xlarge,
+    Information about the broker access configuration.
+    
+    */
+  var ConnectivityInfo: js.UndefOr[typings.awsSdk.kafkaMod.ConnectivityInfo] = js.undefined
+  
+  /**
+    * 
+    The type of Amazon EC2 instances to use for Apache Kafka brokers. The following instance types are allowed: kafka.m5.large, kafka.m5.xlarge, kafka.m5.2xlarge,
   kafka.m5.4xlarge, kafka.m5.12xlarge, and kafka.m5.24xlarge.
     
     */
@@ -58,7 +65,11 @@ object BrokerNodeGroupInfo {
     
     inline def setClientSubnets(value: listOfString): Self = StObject.set(x, "ClientSubnets", value.asInstanceOf[js.Any])
     
-    inline def setClientSubnetsVarargs(value: string*): Self = StObject.set(x, "ClientSubnets", js.Array(value :_*))
+    inline def setClientSubnetsVarargs(value: string*): Self = StObject.set(x, "ClientSubnets", js.Array(value*))
+    
+    inline def setConnectivityInfo(value: ConnectivityInfo): Self = StObject.set(x, "ConnectivityInfo", value.asInstanceOf[js.Any])
+    
+    inline def setConnectivityInfoUndefined: Self = StObject.set(x, "ConnectivityInfo", js.undefined)
     
     inline def setInstanceType(value: stringMin5Max32): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
@@ -66,7 +77,7 @@ object BrokerNodeGroupInfo {
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setStorageInfo(value: StorageInfo): Self = StObject.set(x, "StorageInfo", value.asInstanceOf[js.Any])
     

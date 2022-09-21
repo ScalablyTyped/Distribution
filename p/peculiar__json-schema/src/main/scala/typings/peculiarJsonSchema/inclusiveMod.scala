@@ -1,22 +1,26 @@
 package typings.peculiarJsonSchema
 
 import typings.peculiarJsonSchema.typesMod.IValidation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@peculiar/json-schema/build/types/validations/inclusive", JSImport.Namespace)
-@js.native
-object inclusiveMod extends js.Object {
+object inclusiveMod {
+  
+  @JSImport("@peculiar/json-schema/build/types/validations/inclusive", "InclusiveValidation")
   @js.native
-  class InclusiveValidation () extends IValidation {
+  open class InclusiveValidation ()
+    extends StObject
+       with IValidation {
     def this(min: Double) = this()
     def this(min: Double, max: Double) = this()
-    var max: js.Any = js.native
-    var min: js.Any = js.native
+    def this(min: Unit, max: Double) = this()
+    
+    /* private */ var max: Any = js.native
+    
+    /* private */ var min: Any = js.native
+    
     /* CompleteClass */
-    override def validate(value: js.Any): Unit = js.native
+    override def validate(value: Any): Unit = js.native
   }
-  
 }
-

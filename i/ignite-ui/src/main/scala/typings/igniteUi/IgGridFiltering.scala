@@ -11,7 +11,7 @@ trait IgGridFiltering
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Defines whether to render editors in advanced [mode](ui.iggridfiltering#options:mode). If false, no editors will be rendered in the advanced [mode](ui.iggridfiltering#options:mode).
@@ -304,7 +304,7 @@ trait IgGridFiltering
     * string  The height of the column filter dropdowns in pixels (0px).
     * number  The height of the column filter dropdowns in pixels as a number (0).
     */
-  var filterDropDownHeight: js.UndefOr[js.Any] = js.undefined
+  var filterDropDownHeight: js.UndefOr[Any] = js.undefined
   
   /**
     * Enable/disable filter icons visibility.
@@ -459,7 +459,7 @@ object IgGridFiltering {
     
     inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    inline def setColumnSettingsVarargs(value: IgGridFilteringColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
+    inline def setColumnSettingsVarargs(value: IgGridFilteringColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value*))
     
     inline def setDataFiltered(value: (/* event */ Event, /* ui */ DataFilteredEventUIParam) => Unit): Self = StObject.set(x, "dataFiltered", js.Any.fromFunction2(value))
     
@@ -609,7 +609,7 @@ object IgGridFiltering {
     
     inline def setFilterDropDownAnimationsUndefined: Self = StObject.set(x, "filterDropDownAnimations", js.undefined)
     
-    inline def setFilterDropDownHeight(value: js.Any): Self = StObject.set(x, "filterDropDownHeight", value.asInstanceOf[js.Any])
+    inline def setFilterDropDownHeight(value: Any): Self = StObject.set(x, "filterDropDownHeight", value.asInstanceOf[js.Any])
     
     inline def setFilterDropDownHeightUndefined: Self = StObject.set(x, "filterDropDownHeight", js.undefined)
     

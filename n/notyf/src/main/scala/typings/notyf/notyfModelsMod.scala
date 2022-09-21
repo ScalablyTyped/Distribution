@@ -12,11 +12,11 @@ object notyfModelsMod {
   
   @JSImport("notyf/notyf.models", "NotyfArray")
   @js.native
-  class NotyfArray[T] () extends StObject {
+  open class NotyfArray[T] () extends StObject {
     
     def indexOf(elem: T): Double = js.native
     
-    /* private */ var notifications: js.Any = js.native
+    /* private */ var notifications: Any = js.native
     
     def onUpdate(fn: NotyfArrayEventFn[T]): Unit = js.native
     
@@ -24,7 +24,7 @@ object notyfModelsMod {
     
     def splice(index: Double, num: Double): T = js.native
     
-    /* private */ var updateFn: js.Any = js.native
+    /* private */ var updateFn: Any = js.native
   }
   
   @js.native
@@ -51,16 +51,16 @@ object notyfModelsMod {
   
   @JSImport("notyf/notyf.models", "NotyfNotification")
   @js.native
-  class NotyfNotification protected () extends StObject {
+  open class NotyfNotification protected () extends StObject {
     def this(options: DeepPartialINotyfNotifica) = this()
     
-    /* private */ var listeners: js.Any = js.native
+    /* private */ var listeners: Any = js.native
     
     def on(eventType: NotyfEvent, cb: NotyfEventCallback): Unit = js.native
     
     var options: DeepPartialINotyfNotifica = js.native
     
-    /* private */ var triggerEvent: js.Any = js.native
+    /* private */ var triggerEvent: Any = js.native
   }
   
   trait INotyfEventPayload extends StObject {

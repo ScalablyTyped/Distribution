@@ -15,20 +15,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object unlinkDeveloperIdentityCommandMod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/commands/UnlinkDeveloperIdentityCommand", "UnlinkDeveloperIdentityCommand")
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/UnlinkDeveloperIdentityCommand", "UnlinkDeveloperIdentityCommand")
   @js.native
-  class UnlinkDeveloperIdentityCommand protected ()
-    extends Command[
+  open class UnlinkDeveloperIdentityCommand protected () extends Command[
           UnlinkDeveloperIdentityCommandInput, 
           UnlinkDeveloperIdentityCommandOutput, 
           CognitoIdentityClientResolvedConfig, 
-          js.Any, 
-          js.Any
+          Any, 
+          Any
         ] {
     def this(input: UnlinkDeveloperIdentityCommandInput) = this()
     
-    /* private */ var deserialize: js.Any = js.native
+    /* private */ var deserialize: Any = js.native
     
+    /**
+      * @internal
+      */
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
       configuration: CognitoIdentityClientResolvedConfig
@@ -39,7 +41,7 @@ object unlinkDeveloperIdentityCommandMod {
       options: HttpHandlerOptions
     ): Handler[UnlinkDeveloperIdentityCommandInput, UnlinkDeveloperIdentityCommandOutput] = js.native
     
-    /* private */ var serialize: js.Any = js.native
+    /* private */ var serialize: Any = js.native
   }
   
   type UnlinkDeveloperIdentityCommandInput = UnlinkDeveloperIdentityInput

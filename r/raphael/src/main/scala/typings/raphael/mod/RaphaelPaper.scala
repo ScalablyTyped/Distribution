@@ -116,7 +116,7 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends StObject {
     */
   var customAttributes: Record[
     `arrow-end` | `clip-rect` | cursor | cx | cy | fill | `fill-opacity` | font | `font-family` | `font-size` | `font-weight` | height | href | opacity | path | r_ | rx | ry | src | stroke | `stroke-dasharray` | `stroke-linecap` | `stroke-linejoin` | `stroke-miterlimit` | `stroke-opacity` | `stroke-width` | target | text | `text-anchor` | title | transform | width | x | y, 
-    RaphaelCustomAttribute[TTechnology, js.Any]
+    RaphaelCustomAttribute[TTechnology, Any]
   ] = js.native
   
   /**

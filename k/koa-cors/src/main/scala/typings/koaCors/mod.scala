@@ -1,5 +1,6 @@
 package typings.koaCors
 
+import typings.koa.mod.Context
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
@@ -11,8 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  inline def apply(options: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
+  inline def apply(options: Options): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   @JSImport("koa-cors", JSImport.Namespace)
   @js.native
@@ -20,7 +21,7 @@ object mod {
   
   trait Options extends StObject {
     
-    var credentials: js.UndefOr[`true`] = js.undefined
+    var credentials: js.UndefOr[`true` | (js.Function1[/* ctx */ Context, Boolean])] = js.undefined
     
     var expose: js.UndefOr[String | js.Array[String]] = js.undefined
     
@@ -41,7 +42,9 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setCredentials(value: `true`): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: `true` | (js.Function1[/* ctx */ Context, Boolean])): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      
+      inline def setCredentialsFunction1(value: /* ctx */ Context => Boolean): Self = StObject.set(x, "credentials", js.Any.fromFunction1(value))
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
@@ -49,13 +52,13 @@ object mod {
       
       inline def setExposeUndefined: Self = StObject.set(x, "expose", js.undefined)
       
-      inline def setExposeVarargs(value: String*): Self = StObject.set(x, "expose", js.Array(value :_*))
+      inline def setExposeVarargs(value: String*): Self = StObject.set(x, "expose", js.Array(value*))
       
       inline def setHeaders(value: String | js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
@@ -65,7 +68,7 @@ object mod {
       
       inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value*))
       
       inline def setOrigin(value: Boolean | String | (js.Function1[/* request */ Request, String])): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for dotenv
 
-Typings are for version 8.2.0
+Typings are for version 16.0.2
 
 ## Library description:
 Loads environment variables from .env file
@@ -10,10 +10,10 @@ Loads environment variables from .env file
 | ------------------ | :-------------: |
 | Full name          | dotenv |
 | Keywords           | dotenv, env, .env, environment, variables, config, settings |
-| # releases         | 5 |
-| # dependents       | 12707 |
-| # downloads        | 583510759 |
-| # stars            | 444 |
+| # releases         | 31 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0869136933333333E8 |
+| # stars            | 16015.0 |
 
 ## Links
 - [Homepage](https://github.com/motdotla/dotenv#readme)

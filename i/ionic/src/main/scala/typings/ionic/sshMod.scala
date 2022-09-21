@@ -10,7 +10,7 @@ object sshMod {
   
   @JSImport("ionic/commands/ssh", "SSHNamespace")
   @js.native
-  class SSHNamespace () extends Namespace {
+  open class SSHNamespace () extends Namespace {
     def this(parent: INamespace) = this()
   }
 }

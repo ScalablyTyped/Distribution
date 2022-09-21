@@ -10,7 +10,7 @@ object featureParserMod {
   
   @JSImport("yadda/lib/parsers/FeatureParser", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with FeatureParser {
     def this(language: typings.yadda.languageMod.^[Library]) = this()
@@ -49,7 +49,7 @@ object featureParserMod {
       
       inline def setScenarios(value: js.Array[ScenarioExport]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
       
-      inline def setScenariosVarargs(value: ScenarioExport*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
+      inline def setScenariosVarargs(value: ScenarioExport*): Self = StObject.set(x, "scenarios", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
@@ -114,7 +114,7 @@ object featureParserMod {
       
       inline def setSteps(value: js.Array[String]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      inline def setStepsVarargs(value: String*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: String*): Self = StObject.set(x, "steps", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }

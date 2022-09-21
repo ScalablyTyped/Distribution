@@ -1,7 +1,7 @@
 package typings.blueprintjsCore
 
 import typings.popperJs.mod.Placement
-import typings.react.mod.FunctionComponent
+import typings.react.mod.FC
 import typings.reactPopper.mod.PopperArrowProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object popoverArrowMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/popover/popoverArrow", "PopoverArrow")
   @js.native
-  val PopoverArrow: FunctionComponent[IPopoverArrowProps] = js.native
+  val PopoverArrow: FC[IPopoverArrowProps] = js.native
   
   trait IPopoverArrowProps extends StObject {
     

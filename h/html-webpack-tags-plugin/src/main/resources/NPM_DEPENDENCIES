@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "html-webpack-tags-plugin" : "2.0.17"
+      "html-webpack-tags-plugin" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "html-webpack-tags-plugin" : "2.0.17"
+      "html-webpack-tags-plugin" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

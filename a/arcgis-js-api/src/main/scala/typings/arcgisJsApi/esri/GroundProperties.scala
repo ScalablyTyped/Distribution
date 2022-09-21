@@ -25,12 +25,16 @@ trait GroundProperties
   /**
     * Opacity of the ground, including surface default color and the basemap (without reference layers).
     *
+    * @default 1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#opacity)
     */
   var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The color of the ground surface, displayed underneath the basemap.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#surfaceColor)
     */
@@ -49,7 +53,7 @@ object GroundProperties {
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: ElevationLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: ElevationLayerProperties*): Self = StObject.set(x, "layers", js.Array(value*))
     
     inline def setNavigationConstraint(value: GroundNavigationConstraintProperties): Self = StObject.set(x, "navigationConstraint", value.asInstanceOf[js.Any])
     
@@ -63,6 +67,6 @@ object GroundProperties {
     
     inline def setSurfaceColorUndefined: Self = StObject.set(x, "surfaceColor", js.undefined)
     
-    inline def setSurfaceColorVarargs(value: Double*): Self = StObject.set(x, "surfaceColor", js.Array(value :_*))
+    inline def setSurfaceColorVarargs(value: Double*): Self = StObject.set(x, "surfaceColor", js.Array(value*))
   }
 }

@@ -12,41 +12,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConditionalRangeFontUpdateData extends StObject {
   
   /**
-    *
     * Specifies if the font is bold.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var color: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Specifies if the font is italic.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the strikethrough status of the font.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var strikethrough: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The type of underline applied to the font. See `Excel.ConditionalRangeFontUnderlineStyle` for details.
     *
-    * The type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var underline: js.UndefOr[ConditionalRangeFontUnderlineStyle | None | Single | Double] = js.undefined

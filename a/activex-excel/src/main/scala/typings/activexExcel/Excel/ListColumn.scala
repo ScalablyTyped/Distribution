@@ -27,7 +27,7 @@ trait ListColumn extends StObject {
   
   var Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Range(Address: String): typings.activexExcel.Excel.Range
   def Range(RowIndex: Double): typings.activexExcel.Excel.Range
@@ -60,7 +60,7 @@ object ListColumn {
     Index: Double,
     ListDataFormat: ListDataFormat,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     SharePointFormula: String,
     Total: Range,
@@ -91,7 +91,7 @@ object ListColumn {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

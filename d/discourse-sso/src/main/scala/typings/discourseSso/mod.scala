@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("discourse-sso", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with DiscourseSSO {
     def this(ssoSecret: String) = this()
@@ -87,7 +87,7 @@ object mod {
       
       inline def setAdd_groupsUndefined: Self = StObject.set(x, "add_groups", js.undefined)
       
-      inline def setAdd_groupsVarargs(value: String*): Self = StObject.set(x, "add_groups", js.Array(value :_*))
+      inline def setAdd_groupsVarargs(value: String*): Self = StObject.set(x, "add_groups", js.Array(value*))
       
       inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
       
@@ -115,7 +115,7 @@ object mod {
       
       inline def setRemove_groupsUndefined: Self = StObject.set(x, "remove_groups", js.undefined)
       
-      inline def setRemove_groupsVarargs(value: String*): Self = StObject.set(x, "remove_groups", js.Array(value :_*))
+      inline def setRemove_groupsVarargs(value: String*): Self = StObject.set(x, "remove_groups", js.Array(value*))
       
       inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       

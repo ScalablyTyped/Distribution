@@ -10,10 +10,10 @@ A command line utility that allows read/write (i.e copy/paste) access to the sys
 | ------------------ | :-------------: |
 | Full name          | copy-paste |
 | Keywords           | copy, paste, copy and paste, clipboard |
-| # releases         | 0 |
-| # dependents       | 336 |
-| # downloads        | 635614 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 103317.66666666667 |
+| # stars            | 335.0 |
 
 ## Links
 - [Homepage](https://github.com/xavi-/node-copy-paste)

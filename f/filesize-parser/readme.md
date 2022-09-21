@@ -10,10 +10,10 @@ Takes human readable filesystem size strings and gives you an int representing t
 | ------------------ | :-------------: |
 | Full name          | filesize-parser |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 39 |
-| # downloads        | 283717 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 47273.0 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/patrickkettner/filesize-parser#readme)

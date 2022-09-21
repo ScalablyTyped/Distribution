@@ -19,6 +19,6 @@ object PullAdditionalObjectLiteralResolutionData {
     
     inline def setMembersContextTypeSymbols(value: js.Array[PullTypeSymbol]): Self = StObject.set(x, "membersContextTypeSymbols", value.asInstanceOf[js.Any])
     
-    inline def setMembersContextTypeSymbolsVarargs(value: PullTypeSymbol*): Self = StObject.set(x, "membersContextTypeSymbols", js.Array(value :_*))
+    inline def setMembersContextTypeSymbolsVarargs(value: PullTypeSymbol*): Self = StObject.set(x, "membersContextTypeSymbols", js.Array(value*))
   }
 }

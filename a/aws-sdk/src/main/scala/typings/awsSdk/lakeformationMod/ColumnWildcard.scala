@@ -24,6 +24,6 @@ object ColumnWildcard {
     
     inline def setExcludedColumnNamesUndefined: Self = StObject.set(x, "ExcludedColumnNames", js.undefined)
     
-    inline def setExcludedColumnNamesVarargs(value: NameString*): Self = StObject.set(x, "ExcludedColumnNames", js.Array(value :_*))
+    inline def setExcludedColumnNamesVarargs(value: NameString*): Self = StObject.set(x, "ExcludedColumnNames", js.Array(value*))
   }
 }

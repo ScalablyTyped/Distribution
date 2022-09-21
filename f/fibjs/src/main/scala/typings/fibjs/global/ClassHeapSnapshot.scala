@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_HeapSnapshot")
 @js.native
-class ClassHeapSnapshot ()
+open class ClassHeapSnapshot ()
   extends StObject
      with typings.fibjs.ClassHeapSnapshot

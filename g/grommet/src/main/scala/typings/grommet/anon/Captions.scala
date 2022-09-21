@@ -12,7 +12,7 @@ trait Captions extends StObject {
   
   var icons: js.UndefOr[ClosedCaption] = js.undefined
   
-  var scrubber: js.UndefOr[`3`] = js.undefined
+  var scrubber: js.UndefOr[Interval] = js.undefined
 }
 object Captions {
   
@@ -35,7 +35,7 @@ object Captions {
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setScrubber(value: `3`): Self = StObject.set(x, "scrubber", value.asInstanceOf[js.Any])
+    inline def setScrubber(value: Interval): Self = StObject.set(x, "scrubber", value.asInstanceOf[js.Any])
     
     inline def setScrubberUndefined: Self = StObject.set(x, "scrubber", js.undefined)
   }

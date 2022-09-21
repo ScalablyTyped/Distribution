@@ -10,7 +10,7 @@ trait IgPivotViewDataSelectorOptions
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * A function that will be called to determine if an item can be moved in or dropped on an area of the data selector.
@@ -29,7 +29,7 @@ trait IgPivotViewDataSelectorOptions
   /**
     * Specifies the parent for the drop downs.
     */
-  var dropDownParent: js.UndefOr[js.Any] = js.undefined
+  var dropDownParent: js.UndefOr[Any] = js.undefined
 }
 object IgPivotViewDataSelectorOptions {
   
@@ -48,7 +48,7 @@ object IgPivotViewDataSelectorOptions {
     
     inline def setDragAndDropSettingsUndefined: Self = StObject.set(x, "dragAndDropSettings", js.undefined)
     
-    inline def setDropDownParent(value: js.Any): Self = StObject.set(x, "dropDownParent", value.asInstanceOf[js.Any])
+    inline def setDropDownParent(value: Any): Self = StObject.set(x, "dropDownParent", value.asInstanceOf[js.Any])
     
     inline def setDropDownParentUndefined: Self = StObject.set(x, "dropDownParent", js.undefined)
   }

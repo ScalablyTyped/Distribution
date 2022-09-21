@@ -10,15 +10,6 @@ import typings.distributionsPoissonQuantile.anon.Optionsdtypeuint32
 import typings.distributionsPoissonQuantile.anon.Optionsdtypeuint8
 import typings.distributionsPoissonQuantile.anon.Optionsdtypeuint8clamped
 import typings.distributionsPoissonQuantile.anon.Optionsdtypeundefined
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,15 +27,15 @@ object mod {
   inline def apply(p: Double): Double | Data | Matrix = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[Double | Data | Matrix]
   inline def apply(p: Double, options: Options): Double | Data | Matrix = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Data | Matrix]
   inline def apply(p: Data): Double | Data | Matrix = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[Double | Data | Matrix]
-  inline def apply(p: Data, options: Optionsdtypefloat32): Float32Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
-  inline def apply(p: Data, options: Optionsdtypefloat64undefi): Float64Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Float64Array]
-  inline def apply(p: Data, options: Optionsdtypeint16): Int16Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Int16Array]
-  inline def apply(p: Data, options: Optionsdtypeint32): Int32Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
-  inline def apply(p: Data, options: Optionsdtypeint8): Int8Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Int8Array]
-  inline def apply(p: Data, options: Optionsdtypeuint16): Uint16Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint16Array]
-  inline def apply(p: Data, options: Optionsdtypeuint32): Uint32Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint32Array]
-  inline def apply(p: Data, options: Optionsdtypeuint8): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def apply(p: Data, options: Optionsdtypeuint8clamped): Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8ClampedArray]
+  inline def apply(p: Data, options: Optionsdtypefloat32): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
+  inline def apply(p: Data, options: Optionsdtypefloat64undefi): js.typedarray.Float64Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float64Array]
+  inline def apply(p: Data, options: Optionsdtypeint16): js.typedarray.Int16Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Int16Array]
+  inline def apply(p: Data, options: Optionsdtypeint32): js.typedarray.Int32Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Int32Array]
+  inline def apply(p: Data, options: Optionsdtypeint8): js.typedarray.Int8Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Int8Array]
+  inline def apply(p: Data, options: Optionsdtypeuint16): js.typedarray.Uint16Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint16Array]
+  inline def apply(p: Data, options: Optionsdtypeuint32): js.typedarray.Uint32Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint32Array]
+  inline def apply(p: Data, options: Optionsdtypeuint8): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def apply(p: Data, options: Optionsdtypeuint8clamped): js.typedarray.Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8ClampedArray]
   inline def apply(p: Data, options: Options): Double | Data | Matrix = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Data | Matrix]
   inline def apply(p: MatrixLike): Double | Data | Matrix = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[Double | Data | Matrix]
   inline def apply(p: MatrixLike, options: Options): Double | Data | Matrix = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Data | Matrix]
@@ -53,7 +44,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Data = js.Array[Double] | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array
+  type Data = js.Array[Double] | js.typedarray.Int8Array | js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray | js.typedarray.Int16Array | js.typedarray.Uint16Array | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Float32Array | js.typedarray.Float64Array
   
   /* Rewritten from type alias, can be one of: 
     - typings.distributionsPoissonQuantile.distributionsPoissonQuantileStrings.int8
@@ -187,7 +178,7 @@ object mod {
   trait Options extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
     var copy: js.UndefOr[Boolean] = js.undefined
@@ -213,7 +204,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
       

@@ -17,7 +17,7 @@ trait Attachment extends StObject {
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *  The status of the attachment. Valid values are PRECREATED, CREATED, ATTACHING, ATTACHED, DETACHING, DETACHED, and DELETED.
+    *  The status of the attachment. Valid values are PRECREATED, CREATED, ATTACHING, ATTACHED, DETACHING, DETACHED, DELETED, and FAILED.
     */
   var status: js.UndefOr[String] = js.undefined
   
@@ -39,7 +39,7 @@ object Attachment {
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    inline def setDetailsVarargs(value: KeyValuePair*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: KeyValuePair*): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

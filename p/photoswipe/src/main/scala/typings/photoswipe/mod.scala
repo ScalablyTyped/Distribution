@@ -34,7 +34,7 @@ object mod {
     */
   @JSImport("photoswipe", JSImport.Namespace)
   @js.native
-  class ^[T /* <: Options */] protected ()
+  open class ^[T /* <: Options */] protected ()
     extends StObject
        with PhotoSwipe[T] {
     /**
@@ -66,7 +66,7 @@ object mod {
     /**
       * Internal property added by PhotoSwipe.
       */
-    var bounds: js.UndefOr[js.Any] = js.undefined
+    var bounds: js.UndefOr[Any] = js.undefined
     
     /**
       * Internal property added by PhotoSwipe.
@@ -87,7 +87,7 @@ object mod {
     /**
       * Internal property added by PhotoSwipe.
       */
-    var initialPosition: js.UndefOr[js.Any] = js.undefined
+    var initialPosition: js.UndefOr[Any] = js.undefined
     
     /**
       * Internal property added by PhotoSwipe.
@@ -103,6 +103,11 @@ object mod {
       * The url to small image placeholder, large image will be loaded on top
       */
     var msrc: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Custom IDs for each slide object that are used when forming URL
+      */
+    var pid: js.UndefOr[String | Double] = js.undefined
     
     /**
       * The url of this image.
@@ -128,7 +133,7 @@ object mod {
     
     extension [Self <: Item](x: Self) {
       
-      inline def setBounds(value: js.Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
       inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
@@ -144,7 +149,7 @@ object mod {
       
       inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      inline def setInitialPosition(value: js.Any): Self = StObject.set(x, "initialPosition", value.asInstanceOf[js.Any])
+      inline def setInitialPosition(value: Any): Self = StObject.set(x, "initialPosition", value.asInstanceOf[js.Any])
       
       inline def setInitialPositionUndefined: Self = StObject.set(x, "initialPosition", js.undefined)
       
@@ -159,6 +164,10 @@ object mod {
       inline def setMsrc(value: String): Self = StObject.set(x, "msrc", value.asInstanceOf[js.Any])
       
       inline def setMsrcUndefined: Self = StObject.set(x, "msrc", js.undefined)
+      
+      inline def setPid(value: String | Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      
+      inline def setPidUndefined: Self = StObject.set(x, "pid", js.undefined)
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
@@ -182,7 +191,7 @@ object mod {
       *
       * Default true.
       */
-    var allowNoPanText: js.UndefOr[Boolean] = js.undefined
+    var allowPanToNext: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Keyboard left or right arrow key navigation. Option can be changed dynamically (yourPhotoSwipeInstance.options.arrowKeys = false;).
@@ -236,6 +245,14 @@ object mod {
       * Default true.
       */
     var focus: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Enables custom IDs for each slide object that are used when forming URL.
+      * If option set set to true, slide objects must have pid (picture identifier) property that can be a string or an integer.
+      *
+      * Default false.
+      */
+    var galleryPIDs: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Gallery unique ID. Used by History module when forming URL. For example, second picture of gallery with UID 1 will have URL: http://example.com/#&gid=1&pid=2.
@@ -350,13 +367,6 @@ object mod {
     var mainClass: js.UndefOr[String] = js.undefined
     
     /**
-      * NOTE: this property will be ignored in future versions of PhotoSwipe.
-      *
-      * @deprecated
-      */
-    var mainScrollEndFriction: js.UndefOr[Double] = js.undefined
-    
-    /**
       * Maximum zoom level when performing spread (zoom) gesture. 2 means that image can be zoomed 2x from original size.
       * Try to avoid huge values here, as too big image may cause memory issues on mobile (especially on iOS).
       *
@@ -379,13 +389,6 @@ object mod {
       * default false.
       */
     var mouseUsed: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * NOTE: this property will be ignored in future versions of PhotoSwipe.
-      *
-      * @deprecated
-      */
-    var panEndFriction: js.UndefOr[Double] = js.undefined
     
     /**
       * Pinch to close gallery gesture. The gallery’s background will gradually fade out as the user zooms out. When the gesture is complete, the gallery will close.
@@ -444,9 +447,9 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAllowNoPanText(value: Boolean): Self = StObject.set(x, "allowNoPanText", value.asInstanceOf[js.Any])
+      inline def setAllowPanToNext(value: Boolean): Self = StObject.set(x, "allowPanToNext", value.asInstanceOf[js.Any])
       
-      inline def setAllowNoPanTextUndefined: Self = StObject.set(x, "allowNoPanText", js.undefined)
+      inline def setAllowPanToNextUndefined: Self = StObject.set(x, "allowPanToNext", js.undefined)
       
       inline def setArrowKeys(value: Boolean): Self = StObject.set(x, "arrowKeys", value.asInstanceOf[js.Any])
       
@@ -475,6 +478,10 @@ object mod {
       inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
       inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+      
+      inline def setGalleryPIDs(value: Boolean): Self = StObject.set(x, "galleryPIDs", value.asInstanceOf[js.Any])
+      
+      inline def setGalleryPIDsUndefined: Self = StObject.set(x, "galleryPIDs", js.undefined)
       
       inline def setGalleryUID(value: Double): Self = StObject.set(x, "galleryUID", value.asInstanceOf[js.Any])
       
@@ -516,10 +523,6 @@ object mod {
       
       inline def setMainClassUndefined: Self = StObject.set(x, "mainClass", js.undefined)
       
-      inline def setMainScrollEndFriction(value: Double): Self = StObject.set(x, "mainScrollEndFriction", value.asInstanceOf[js.Any])
-      
-      inline def setMainScrollEndFrictionUndefined: Self = StObject.set(x, "mainScrollEndFriction", js.undefined)
-      
       inline def setMaxSpreadZoom(value: Double): Self = StObject.set(x, "maxSpreadZoom", value.asInstanceOf[js.Any])
       
       inline def setMaxSpreadZoomUndefined: Self = StObject.set(x, "maxSpreadZoom", js.undefined)
@@ -532,10 +535,6 @@ object mod {
       
       inline def setMouseUsedUndefined: Self = StObject.set(x, "mouseUsed", js.undefined)
       
-      inline def setPanEndFriction(value: Double): Self = StObject.set(x, "panEndFriction", value.asInstanceOf[js.Any])
-      
-      inline def setPanEndFrictionUndefined: Self = StObject.set(x, "panEndFriction", js.undefined)
-      
       inline def setPinchToClose(value: Boolean): Self = StObject.set(x, "pinchToClose", value.asInstanceOf[js.Any])
       
       inline def setPinchToCloseUndefined: Self = StObject.set(x, "pinchToClose", js.undefined)
@@ -544,7 +543,7 @@ object mod {
       
       inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
       
-      inline def setPreloadVarargs(value: Double*): Self = StObject.set(x, "preload", js.Array(value :_*))
+      inline def setPreloadVarargs(value: Double*): Self = StObject.set(x, "preload", js.Array(value*))
       
       inline def setShowAnimationDuration(value: Double): Self = StObject.set(x, "showAnimationDuration", value.asInstanceOf[js.Any])
       
@@ -683,7 +682,7 @@ object mod {
       * It has two methods shout (triggers event) and listen (handles event).
       * For now there is no method to unbind listener, but all of them are cleared when PhotoSwipe is closed.
       */
-    def listen(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def listen(eventName: String, callback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     /**
       * Called after slides change (after content has changed).
       */
@@ -793,7 +792,7 @@ object mod {
     /**
       * Triggers eventName event with args passed through to listeners.
       */
-    def shout(eventName: String, args: js.Any*): Unit = js.native
+    def shout(eventName: String, args: Any*): Unit = js.native
     
     /**
       * The ui instance constructed by PhotoSwipe.
@@ -871,5 +870,5 @@ object mod {
     }
   }
   
-  type UIFramework = StringDictionary[js.Any]
+  type UIFramework = StringDictionary[Any]
 }

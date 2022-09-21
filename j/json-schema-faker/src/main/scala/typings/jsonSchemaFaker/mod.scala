@@ -4,7 +4,6 @@ import typings.jsonSchema.mod.JSONSchema4
 import typings.jsonSchema.mod.JSONSchema6
 import typings.jsonSchema.mod.JSONSchema7
 import typings.jsonSchemaFaker.anon.Callback
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,33 +11,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /** @deprecated calling JsonSchemaFaker() is deprecated, call either .generate() or .resolve()' */
-  inline def apply(schema: Schema): js.Any = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(schema: Schema, refs: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(schema: Schema, refs: js.Array[Schema]): js.Any = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(schema: Schema): Any = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(schema: Schema, refs: String): Any = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(schema: Schema, refs: js.Array[Schema]): Any = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("json-schema-faker", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def define(name: String, cb: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def define(name: String, cb: js.Function0[Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def extend(name: String, cb: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(name.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def extend(name: String, cb: js.Function0[Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(name.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def format(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("format")().asInstanceOf[js.Any]
-  inline def format(nameOrFormatMap: Unit, callback: js.Function1[/* schema */ js.UndefOr[Schema], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(nameOrFormatMap.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def format(nameOrFormatMap: NameOrFormatMap): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(nameOrFormatMap.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def format(nameOrFormatMap: NameOrFormatMap, callback: js.Function1[/* schema */ js.UndefOr[Schema], Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(nameOrFormatMap.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def format(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("format")().asInstanceOf[Any]
+  inline def format(nameOrFormatMap: Unit, callback: js.Function1[/* schema */ js.UndefOr[Schema], Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(nameOrFormatMap.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def format(nameOrFormatMap: NameOrFormatMap): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(nameOrFormatMap.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def format(nameOrFormatMap: NameOrFormatMap, callback: js.Function1[/* schema */ js.UndefOr[Schema], Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(nameOrFormatMap.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def generate(schema: Schema): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def generate(schema: Schema, refs: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def generate(schema: Schema, refs: js.Array[Schema]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def generate(schema: Schema): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(schema.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def generate(schema: Schema, refs: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def generate(schema: Schema, refs: js.Array[Schema]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def locate(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("locate")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def locate(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("locate")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def option(option: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("option")(option.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def option(option: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("option")(option.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def option(option: OptionInputObject): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("option")(option.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def option(option: OptionInputObject, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("option")(option.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def option(option: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("option")(option.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def option(option: String, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("option")(option.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def option(option: OptionInputObject): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("option")(option.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def option(option: OptionInputObject, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("option")(option.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   // jsf.random
   object random {
@@ -47,7 +46,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def date(step: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(step.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def date(step: String): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(step.asInstanceOf[js.Any]).asInstanceOf[js.Date]
     
     inline def number(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("number")().asInstanceOf[Double]
     inline def number(min: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(min.asInstanceOf[js.Any]).asInstanceOf[Double]
@@ -89,14 +88,14 @@ object mod {
     inline def shuffle[T](collection: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(collection.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   }
   
-  inline def reset(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def reset(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def resolve(schema: Schema): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
-  inline def resolve(schema: Schema, refs: String): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
-  inline def resolve(schema: Schema, refs: String, cwd: String): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
-  inline def resolve(schema: Schema, refs: js.Array[Schema]): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
-  inline def resolve(schema: Schema, refs: js.Array[Schema], cwd: String): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
-  inline def resolve(schema: Schema, refs: Unit, cwd: String): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  inline def resolve(schema: Schema): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any]]]
+  inline def resolve(schema: Schema, refs: String): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
+  inline def resolve(schema: Schema, refs: String, cwd: String): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
+  inline def resolve(schema: Schema, refs: js.Array[Schema]): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
+  inline def resolve(schema: Schema, refs: js.Array[Schema], cwd: String): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
+  inline def resolve(schema: Schema, refs: Unit, cwd: String): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
   
   @JSImport("json-schema-faker", "version")
   @js.native
@@ -107,51 +106,51 @@ object mod {
   /* Inlined std.Partial<{[ option in json-schema-faker.json-schema-faker.jsfOptions ]: any}> */
   trait OptionInputObject extends StObject {
     
-    var alwaysFakeOptionals: js.UndefOr[js.Any] = js.undefined
+    var alwaysFakeOptionals: js.UndefOr[Any] = js.undefined
     
-    var defaultInvalidTypeProduct: js.UndefOr[js.Any] = js.undefined
+    var defaultInvalidTypeProduct: js.UndefOr[Any] = js.undefined
     
-    var defaultRandExpMax: js.UndefOr[js.Any] = js.undefined
+    var defaultRandExpMax: js.UndefOr[Any] = js.undefined
     
-    var failOnInvalidFormat: js.UndefOr[js.Any] = js.undefined
+    var failOnInvalidFormat: js.UndefOr[Any] = js.undefined
     
-    var failOnInvalidTypes: js.UndefOr[js.Any] = js.undefined
+    var failOnInvalidTypes: js.UndefOr[Any] = js.undefined
     
-    var fillProperties: js.UndefOr[js.Any] = js.undefined
+    var fillProperties: js.UndefOr[Any] = js.undefined
     
-    var fixedProbabilities: js.UndefOr[js.Any] = js.undefined
+    var fixedProbabilities: js.UndefOr[Any] = js.undefined
     
-    var ignoreMissingRefs: js.UndefOr[js.Any] = js.undefined
+    var ignoreMissingRefs: js.UndefOr[Any] = js.undefined
     
-    var ignoreProperties: js.UndefOr[js.Any] = js.undefined
+    var ignoreProperties: js.UndefOr[Any] = js.undefined
     
-    var maxItems: js.UndefOr[js.Any] = js.undefined
+    var maxItems: js.UndefOr[Any] = js.undefined
     
-    var maxLength: js.UndefOr[js.Any] = js.undefined
+    var maxLength: js.UndefOr[Any] = js.undefined
     
-    var minItems: js.UndefOr[js.Any] = js.undefined
+    var minItems: js.UndefOr[Any] = js.undefined
     
-    var minLength: js.UndefOr[js.Any] = js.undefined
+    var minLength: js.UndefOr[Any] = js.undefined
     
-    var optionalsProbability: js.UndefOr[js.Any] = js.undefined
+    var optionalsProbability: js.UndefOr[Any] = js.undefined
     
-    var random: js.UndefOr[js.Any] = js.undefined
+    var random: js.UndefOr[Any] = js.undefined
     
-    var refDepthMax: js.UndefOr[js.Any] = js.undefined
+    var refDepthMax: js.UndefOr[Any] = js.undefined
     
-    var refDepthMin: js.UndefOr[js.Any] = js.undefined
+    var refDepthMin: js.UndefOr[Any] = js.undefined
     
-    var replaceEmptyByRandomValue: js.UndefOr[js.Any] = js.undefined
+    var replaceEmptyByRandomValue: js.UndefOr[Any] = js.undefined
     
-    var requiredOnly: js.UndefOr[js.Any] = js.undefined
+    var requiredOnly: js.UndefOr[Any] = js.undefined
     
-    var resolveJsonPath: js.UndefOr[js.Any] = js.undefined
+    var resolveJsonPath: js.UndefOr[Any] = js.undefined
     
-    var reuseProperties: js.UndefOr[js.Any] = js.undefined
+    var reuseProperties: js.UndefOr[Any] = js.undefined
     
-    var useDefaultValue: js.UndefOr[js.Any] = js.undefined
+    var useDefaultValue: js.UndefOr[Any] = js.undefined
     
-    var useExamplesValue: js.UndefOr[js.Any] = js.undefined
+    var useExamplesValue: js.UndefOr[Any] = js.undefined
   }
   object OptionInputObject {
     
@@ -162,95 +161,95 @@ object mod {
     
     extension [Self <: OptionInputObject](x: Self) {
       
-      inline def setAlwaysFakeOptionals(value: js.Any): Self = StObject.set(x, "alwaysFakeOptionals", value.asInstanceOf[js.Any])
+      inline def setAlwaysFakeOptionals(value: Any): Self = StObject.set(x, "alwaysFakeOptionals", value.asInstanceOf[js.Any])
       
       inline def setAlwaysFakeOptionalsUndefined: Self = StObject.set(x, "alwaysFakeOptionals", js.undefined)
       
-      inline def setDefaultInvalidTypeProduct(value: js.Any): Self = StObject.set(x, "defaultInvalidTypeProduct", value.asInstanceOf[js.Any])
+      inline def setDefaultInvalidTypeProduct(value: Any): Self = StObject.set(x, "defaultInvalidTypeProduct", value.asInstanceOf[js.Any])
       
       inline def setDefaultInvalidTypeProductUndefined: Self = StObject.set(x, "defaultInvalidTypeProduct", js.undefined)
       
-      inline def setDefaultRandExpMax(value: js.Any): Self = StObject.set(x, "defaultRandExpMax", value.asInstanceOf[js.Any])
+      inline def setDefaultRandExpMax(value: Any): Self = StObject.set(x, "defaultRandExpMax", value.asInstanceOf[js.Any])
       
       inline def setDefaultRandExpMaxUndefined: Self = StObject.set(x, "defaultRandExpMax", js.undefined)
       
-      inline def setFailOnInvalidFormat(value: js.Any): Self = StObject.set(x, "failOnInvalidFormat", value.asInstanceOf[js.Any])
+      inline def setFailOnInvalidFormat(value: Any): Self = StObject.set(x, "failOnInvalidFormat", value.asInstanceOf[js.Any])
       
       inline def setFailOnInvalidFormatUndefined: Self = StObject.set(x, "failOnInvalidFormat", js.undefined)
       
-      inline def setFailOnInvalidTypes(value: js.Any): Self = StObject.set(x, "failOnInvalidTypes", value.asInstanceOf[js.Any])
+      inline def setFailOnInvalidTypes(value: Any): Self = StObject.set(x, "failOnInvalidTypes", value.asInstanceOf[js.Any])
       
       inline def setFailOnInvalidTypesUndefined: Self = StObject.set(x, "failOnInvalidTypes", js.undefined)
       
-      inline def setFillProperties(value: js.Any): Self = StObject.set(x, "fillProperties", value.asInstanceOf[js.Any])
+      inline def setFillProperties(value: Any): Self = StObject.set(x, "fillProperties", value.asInstanceOf[js.Any])
       
       inline def setFillPropertiesUndefined: Self = StObject.set(x, "fillProperties", js.undefined)
       
-      inline def setFixedProbabilities(value: js.Any): Self = StObject.set(x, "fixedProbabilities", value.asInstanceOf[js.Any])
+      inline def setFixedProbabilities(value: Any): Self = StObject.set(x, "fixedProbabilities", value.asInstanceOf[js.Any])
       
       inline def setFixedProbabilitiesUndefined: Self = StObject.set(x, "fixedProbabilities", js.undefined)
       
-      inline def setIgnoreMissingRefs(value: js.Any): Self = StObject.set(x, "ignoreMissingRefs", value.asInstanceOf[js.Any])
+      inline def setIgnoreMissingRefs(value: Any): Self = StObject.set(x, "ignoreMissingRefs", value.asInstanceOf[js.Any])
       
       inline def setIgnoreMissingRefsUndefined: Self = StObject.set(x, "ignoreMissingRefs", js.undefined)
       
-      inline def setIgnoreProperties(value: js.Any): Self = StObject.set(x, "ignoreProperties", value.asInstanceOf[js.Any])
+      inline def setIgnoreProperties(value: Any): Self = StObject.set(x, "ignoreProperties", value.asInstanceOf[js.Any])
       
       inline def setIgnorePropertiesUndefined: Self = StObject.set(x, "ignoreProperties", js.undefined)
       
-      inline def setMaxItems(value: js.Any): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
+      inline def setMaxItems(value: Any): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
       
       inline def setMaxItemsUndefined: Self = StObject.set(x, "maxItems", js.undefined)
       
-      inline def setMaxLength(value: js.Any): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Any): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
       inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      inline def setMinItems(value: js.Any): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
+      inline def setMinItems(value: Any): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
       
       inline def setMinItemsUndefined: Self = StObject.set(x, "minItems", js.undefined)
       
-      inline def setMinLength(value: js.Any): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+      inline def setMinLength(value: Any): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
       inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
       
-      inline def setOptionalsProbability(value: js.Any): Self = StObject.set(x, "optionalsProbability", value.asInstanceOf[js.Any])
+      inline def setOptionalsProbability(value: Any): Self = StObject.set(x, "optionalsProbability", value.asInstanceOf[js.Any])
       
       inline def setOptionalsProbabilityUndefined: Self = StObject.set(x, "optionalsProbability", js.undefined)
       
-      inline def setRandom(value: js.Any): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
+      inline def setRandom(value: Any): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
       
       inline def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
       
-      inline def setRefDepthMax(value: js.Any): Self = StObject.set(x, "refDepthMax", value.asInstanceOf[js.Any])
+      inline def setRefDepthMax(value: Any): Self = StObject.set(x, "refDepthMax", value.asInstanceOf[js.Any])
       
       inline def setRefDepthMaxUndefined: Self = StObject.set(x, "refDepthMax", js.undefined)
       
-      inline def setRefDepthMin(value: js.Any): Self = StObject.set(x, "refDepthMin", value.asInstanceOf[js.Any])
+      inline def setRefDepthMin(value: Any): Self = StObject.set(x, "refDepthMin", value.asInstanceOf[js.Any])
       
       inline def setRefDepthMinUndefined: Self = StObject.set(x, "refDepthMin", js.undefined)
       
-      inline def setReplaceEmptyByRandomValue(value: js.Any): Self = StObject.set(x, "replaceEmptyByRandomValue", value.asInstanceOf[js.Any])
+      inline def setReplaceEmptyByRandomValue(value: Any): Self = StObject.set(x, "replaceEmptyByRandomValue", value.asInstanceOf[js.Any])
       
       inline def setReplaceEmptyByRandomValueUndefined: Self = StObject.set(x, "replaceEmptyByRandomValue", js.undefined)
       
-      inline def setRequiredOnly(value: js.Any): Self = StObject.set(x, "requiredOnly", value.asInstanceOf[js.Any])
+      inline def setRequiredOnly(value: Any): Self = StObject.set(x, "requiredOnly", value.asInstanceOf[js.Any])
       
       inline def setRequiredOnlyUndefined: Self = StObject.set(x, "requiredOnly", js.undefined)
       
-      inline def setResolveJsonPath(value: js.Any): Self = StObject.set(x, "resolveJsonPath", value.asInstanceOf[js.Any])
+      inline def setResolveJsonPath(value: Any): Self = StObject.set(x, "resolveJsonPath", value.asInstanceOf[js.Any])
       
       inline def setResolveJsonPathUndefined: Self = StObject.set(x, "resolveJsonPath", js.undefined)
       
-      inline def setReuseProperties(value: js.Any): Self = StObject.set(x, "reuseProperties", value.asInstanceOf[js.Any])
+      inline def setReuseProperties(value: Any): Self = StObject.set(x, "reuseProperties", value.asInstanceOf[js.Any])
       
       inline def setReusePropertiesUndefined: Self = StObject.set(x, "reuseProperties", js.undefined)
       
-      inline def setUseDefaultValue(value: js.Any): Self = StObject.set(x, "useDefaultValue", value.asInstanceOf[js.Any])
+      inline def setUseDefaultValue(value: Any): Self = StObject.set(x, "useDefaultValue", value.asInstanceOf[js.Any])
       
       inline def setUseDefaultValueUndefined: Self = StObject.set(x, "useDefaultValue", js.undefined)
       
-      inline def setUseExamplesValue(value: js.Any): Self = StObject.set(x, "useExamplesValue", value.asInstanceOf[js.Any])
+      inline def setUseExamplesValue(value: Any): Self = StObject.set(x, "useExamplesValue", value.asInstanceOf[js.Any])
       
       inline def setUseExamplesValueUndefined: Self = StObject.set(x, "useExamplesValue", js.undefined)
     }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteTaskSetRequest extends StObject {
   
   /**
-    * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the service that the task set exists in to delete.
+    * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the service that the task set found in to delete.
     */
   var cluster: String
   
   /**
-    * If true, this allows you to delete a task set even if it hasn't been scaled down to zero.
+    * If true, you can delete a task set even if it hasn't been scaled down to zero.
     */
   var force: js.UndefOr[BoxedBoolean] = js.undefined
   

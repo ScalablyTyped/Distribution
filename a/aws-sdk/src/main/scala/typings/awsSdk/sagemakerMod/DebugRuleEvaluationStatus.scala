@@ -9,10 +9,10 @@ trait DebugRuleEvaluationStatus extends StObject {
   /**
     * Timestamp when the rule evaluation status was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The name of the rule configuration
+    * The name of the rule configuration.
     */
   var RuleConfigurationName: js.UndefOr[typings.awsSdk.sagemakerMod.RuleConfigurationName] = js.undefined
   
@@ -40,7 +40,7 @@ object DebugRuleEvaluationStatus {
   
   extension [Self <: DebugRuleEvaluationStatus](x: Self) {
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an edge that does not know about any Link.
   */
-class ForceDirectedEdge () extends LayoutEdge {
+open class ForceDirectedEdge () extends LayoutEdge {
   
   /**Gets or sets the length of this edge.*/
   var length: Double = js.native

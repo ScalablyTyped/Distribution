@@ -9,7 +9,7 @@ trait StartExportTaskRequest extends StObject {
   /**
     * The end timestamp for exported data from the single Application Discovery Agent selected in the filters. If no value is specified, exported data includes the most recent data collected by the agent.
     */
-  var endTime: js.UndefOr[TimeStamp] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The file format for the returned export data. Default value is CSV. Note: The GRAPHML option has been deprecated. 
@@ -24,7 +24,7 @@ trait StartExportTaskRequest extends StObject {
   /**
     * The start timestamp for exported data from the single Application Discovery Agent selected in the filters. If no value is specified, data is exported starting from the first data collected by the agent.
     */
-  var startTime: js.UndefOr[TimeStamp] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
 }
 object StartExportTaskRequest {
   
@@ -35,7 +35,7 @@ object StartExportTaskRequest {
   
   extension [Self <: StartExportTaskRequest](x: Self) {
     
-    inline def setEndTime(value: TimeStamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -43,15 +43,15 @@ object StartExportTaskRequest {
     
     inline def setExportDataFormatUndefined: Self = StObject.set(x, "exportDataFormat", js.undefined)
     
-    inline def setExportDataFormatVarargs(value: ExportDataFormat*): Self = StObject.set(x, "exportDataFormat", js.Array(value :_*))
+    inline def setExportDataFormatVarargs(value: ExportDataFormat*): Self = StObject.set(x, "exportDataFormat", js.Array(value*))
     
     inline def setFilters(value: ExportFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: ExportFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: ExportFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
-    inline def setStartTime(value: TimeStamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }

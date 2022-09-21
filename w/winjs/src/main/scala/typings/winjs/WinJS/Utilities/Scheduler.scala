@@ -180,7 +180,7 @@ object Scheduler {
       * Uses a Promise to determine how long the scheduler should wait before rescheduling the job after it yields.
       * @param promise Once the work item yields, the scheduler will wait for this Promise to complete before rescheduling the job.
       **/
-    def setPromise(promise: Promise[js.Any]): Unit
+    def setPromise(promise: Promise[Any]): Unit
     
     /**
       * Specifies the next unit of work to run once this job yields.
@@ -195,7 +195,7 @@ object Scheduler {
   }
   object IJobInfo {
     
-    inline def apply(job: IJob, setPromise: Promise[js.Any] => Unit, setWork: js.Function => Unit, shouldYield: Boolean): IJobInfo = {
+    inline def apply(job: IJob, setPromise: Promise[Any] => Unit, setWork: js.Function => Unit, shouldYield: Boolean): IJobInfo = {
       val __obj = js.Dynamic.literal(job = job.asInstanceOf[js.Any], setPromise = js.Any.fromFunction1(setPromise), setWork = js.Any.fromFunction1(setWork), shouldYield = shouldYield.asInstanceOf[js.Any])
       __obj.asInstanceOf[IJobInfo]
     }
@@ -204,7 +204,7 @@ object Scheduler {
       
       inline def setJob(value: IJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
       
-      inline def setSetPromise(value: Promise[js.Any] => Unit): Self = StObject.set(x, "setPromise", js.Any.fromFunction1(value))
+      inline def setSetPromise(value: Promise[Any] => Unit): Self = StObject.set(x, "setPromise", js.Any.fromFunction1(value))
       
       inline def setSetWork(value: js.Function => Unit): Self = StObject.set(x, "setWork", js.Any.fromFunction1(value))
       

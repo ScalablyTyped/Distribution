@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-batch
 
-Typings are for version 1.0.6
+Typings are for version 1.0.9
 
 ## Library description:
 Takes an async iterator that emits things and emits them as fixed size batches
@@ -10,13 +10,13 @@ Takes an async iterator that emits things and emits them as fixed size batches
 | ------------------ | :-------------: |
 | Full name          | it-batch |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 4 |
-| # downloads        | 230322 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 138099.0 |
+| # stars            | 200.0 |
 
 ## Links
-- [Homepage](https://github.com/achingbrain/it#readme)
+- [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-batch#readme)
 - [Bugs](https://github.com/achingbrain/it/issues)
 - [Repository](https://github.com/achingbrain/it)
 - [Npm](https://www.npmjs.com/package/it-batch)

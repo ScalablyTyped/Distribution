@@ -1,7 +1,6 @@
 package typings.notp
 
-import typings.node.Buffer
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,10 +21,10 @@ object mod {
       */
     inline def gen(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def gen(key: String, opt: HOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def gen(key: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def gen(key: js.typedarray.Uint8Array, opt: HOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def gen(key: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def gen(key: Buffer, opt: HOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def gen(key: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def gen(key: Uint8Array, opt: HOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Check a One Time Password based on a counter.
@@ -36,10 +35,10 @@ object mod {
       */
     inline def verify(token: String, key: String): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
     inline def verify(token: String, key: String, opt: HOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: js.typedarray.Uint8Array): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: js.typedarray.Uint8Array, opt: HOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
     inline def verify(token: String, key: Buffer): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
     inline def verify(token: String, key: Buffer, opt: HOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
-    inline def verify(token: String, key: Uint8Array): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
-    inline def verify(token: String, key: Uint8Array, opt: HOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
   }
   
   object totp {
@@ -57,10 +56,10 @@ object mod {
       */
     inline def gen(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def gen(key: String, opt: TOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def gen(key: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def gen(key: js.typedarray.Uint8Array, opt: TOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def gen(key: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def gen(key: Buffer, opt: TOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def gen(key: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def gen(key: Uint8Array, opt: TOTPGenOpt): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gen")(key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Check a One Time Password based on a timer.
@@ -71,10 +70,10 @@ object mod {
       */
     inline def verify(token: String, key: String): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
     inline def verify(token: String, key: String, opt: TOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: js.typedarray.Uint8Array): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+    inline def verify(token: String, key: js.typedarray.Uint8Array, opt: TOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
     inline def verify(token: String, key: Buffer): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
     inline def verify(token: String, key: Buffer, opt: TOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
-    inline def verify(token: String, key: Uint8Array): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
-    inline def verify(token: String, key: Uint8Array, opt: TOTPVerifyOpt): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
   }
   
   trait HOTPGenOpt extends StObject {

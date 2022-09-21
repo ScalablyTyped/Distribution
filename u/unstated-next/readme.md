@@ -10,10 +10,10 @@ Typings are for version 1.1.0
 | ------------------ | :-------------: |
 | Full name          | unstated-next |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 75 |
-| # downloads        | 1246671 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 217608.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/unstated-next)

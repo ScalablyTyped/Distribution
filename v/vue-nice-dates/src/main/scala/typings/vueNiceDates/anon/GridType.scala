@@ -8,7 +8,7 @@ trait GridType extends StObject {
   
   var gridType: String
   
-  var receivedInitialDate: typings.std.Date | Null
+  var receivedInitialDate: js.Date | Null
 }
 object GridType {
   
@@ -21,7 +21,7 @@ object GridType {
     
     inline def setGridType(value: String): Self = StObject.set(x, "gridType", value.asInstanceOf[js.Any])
     
-    inline def setReceivedInitialDate(value: typings.std.Date): Self = StObject.set(x, "receivedInitialDate", value.asInstanceOf[js.Any])
+    inline def setReceivedInitialDate(value: js.Date): Self = StObject.set(x, "receivedInitialDate", value.asInstanceOf[js.Any])
     
     inline def setReceivedInitialDateNull: Self = StObject.set(x, "receivedInitialDate", null)
   }

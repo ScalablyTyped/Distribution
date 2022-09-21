@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "macos-release" : "2.4.1"
+      "macos-release" : "3.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "macos-release" : "2.4.1"
+      "macos-release" : "3.1.0"
     }
   ],
   "compile-devDependencies" : [

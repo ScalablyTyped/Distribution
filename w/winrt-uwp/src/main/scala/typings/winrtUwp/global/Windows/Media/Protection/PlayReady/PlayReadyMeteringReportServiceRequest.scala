@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyMeteringReportServiceRequest")
 @js.native
 /** Initializes a new instance of the PlayReadyMeteringReportServiceRequest class. */
-class PlayReadyMeteringReportServiceRequest ()
+open class PlayReadyMeteringReportServiceRequest ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyMeteringReportServiceRequest {
   

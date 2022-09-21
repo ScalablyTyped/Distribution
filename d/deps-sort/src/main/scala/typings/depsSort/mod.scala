@@ -49,7 +49,7 @@ object mod {
       
       inline def setDeps(value: js.Array[String]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
-      inline def setDepsVarargs(value: String*): Self = StObject.set(x, "deps", js.Array(value :_*))
+      inline def setDepsVarargs(value: String*): Self = StObject.set(x, "deps", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -62,7 +62,7 @@ object mod {
     */
   trait Options
     extends StObject
-       with /* prop */ StringDictionary[js.Any] {
+       with /* prop */ StringDictionary[Any] {
     
     /**
       * Set 'row.dedupe' for files that match existing contents. Sets 'row.dedupeIndex' when 'index' is enabled.
@@ -99,7 +99,7 @@ object mod {
       
       inline def setExposeUndefined: Self = StObject.set(x, "expose", js.undefined)
       
-      inline def setExposeVarargs(value: String*): Self = StObject.set(x, "expose", js.Array(value :_*))
+      inline def setExposeVarargs(value: String*): Self = StObject.set(x, "expose", js.Array(value*))
       
       inline def setIndex(value: Boolean): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

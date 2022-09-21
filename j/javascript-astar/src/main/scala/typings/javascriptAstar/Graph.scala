@@ -19,6 +19,6 @@ object Graph {
     
     inline def setGrid(value: js.Array[js.Array[GridNode]]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    inline def setGridVarargs(value: js.Array[GridNode]*): Self = StObject.set(x, "grid", js.Array(value :_*))
+    inline def setGridVarargs(value: js.Array[GridNode]*): Self = StObject.set(x, "grid", js.Array(value*))
   }
 }

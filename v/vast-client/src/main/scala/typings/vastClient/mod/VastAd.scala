@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait VastAd extends StObject {
   
-  var advertiser: String | Null
+  var advertiser: js.Array[VastAdvertiser]
   
   var creatives: js.Array[VastCreative]
   
@@ -18,7 +18,7 @@ trait VastAd extends StObject {
   
   var id: String | Null
   
-  var impressionURLTemplates: js.Array[String]
+  var impressionURLTemplates: js.Array[VastUrlValue]
   
   var pricing: String | Null
   
@@ -33,24 +33,25 @@ trait VastAd extends StObject {
 object VastAd {
   
   inline def apply(
+    advertiser: js.Array[VastAdvertiser],
     creatives: js.Array[VastCreative],
     errorURLTemplates: js.Array[String],
     extensions: js.Array[VastAdExtension],
-    impressionURLTemplates: js.Array[String]
+    impressionURLTemplates: js.Array[VastUrlValue]
   ): VastAd = {
-    val __obj = js.Dynamic.literal(creatives = creatives.asInstanceOf[js.Any], errorURLTemplates = errorURLTemplates.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], impressionURLTemplates = impressionURLTemplates.asInstanceOf[js.Any], advertiser = null, description = null, id = null, pricing = null, sequence = null, survey = null, system = null, title = null)
+    val __obj = js.Dynamic.literal(advertiser = advertiser.asInstanceOf[js.Any], creatives = creatives.asInstanceOf[js.Any], errorURLTemplates = errorURLTemplates.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], impressionURLTemplates = impressionURLTemplates.asInstanceOf[js.Any], description = null, id = null, pricing = null, sequence = null, survey = null, system = null, title = null)
     __obj.asInstanceOf[VastAd]
   }
   
   extension [Self <: VastAd](x: Self) {
     
-    inline def setAdvertiser(value: String): Self = StObject.set(x, "advertiser", value.asInstanceOf[js.Any])
+    inline def setAdvertiser(value: js.Array[VastAdvertiser]): Self = StObject.set(x, "advertiser", value.asInstanceOf[js.Any])
     
-    inline def setAdvertiserNull: Self = StObject.set(x, "advertiser", null)
+    inline def setAdvertiserVarargs(value: VastAdvertiser*): Self = StObject.set(x, "advertiser", js.Array(value*))
     
     inline def setCreatives(value: js.Array[VastCreative]): Self = StObject.set(x, "creatives", value.asInstanceOf[js.Any])
     
-    inline def setCreativesVarargs(value: VastCreative*): Self = StObject.set(x, "creatives", js.Array(value :_*))
+    inline def setCreativesVarargs(value: VastCreative*): Self = StObject.set(x, "creatives", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -58,19 +59,19 @@ object VastAd {
     
     inline def setErrorURLTemplates(value: js.Array[String]): Self = StObject.set(x, "errorURLTemplates", value.asInstanceOf[js.Any])
     
-    inline def setErrorURLTemplatesVarargs(value: String*): Self = StObject.set(x, "errorURLTemplates", js.Array(value :_*))
+    inline def setErrorURLTemplatesVarargs(value: String*): Self = StObject.set(x, "errorURLTemplates", js.Array(value*))
     
     inline def setExtensions(value: js.Array[VastAdExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    inline def setExtensionsVarargs(value: VastAdExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: VastAdExtension*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    inline def setImpressionURLTemplates(value: js.Array[String]): Self = StObject.set(x, "impressionURLTemplates", value.asInstanceOf[js.Any])
+    inline def setImpressionURLTemplates(value: js.Array[VastUrlValue]): Self = StObject.set(x, "impressionURLTemplates", value.asInstanceOf[js.Any])
     
-    inline def setImpressionURLTemplatesVarargs(value: String*): Self = StObject.set(x, "impressionURLTemplates", js.Array(value :_*))
+    inline def setImpressionURLTemplatesVarargs(value: VastUrlValue*): Self = StObject.set(x, "impressionURLTemplates", js.Array(value*))
     
     inline def setPricing(value: String): Self = StObject.set(x, "pricing", value.asInstanceOf[js.Any])
     

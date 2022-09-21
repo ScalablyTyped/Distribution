@@ -20,7 +20,7 @@ trait XCancellable
 }
 object XCancellable {
   
-  inline def apply(acquire: () => Unit, cancel: () => Unit, queryInterface: `type` => js.Any, release: () => Unit): XCancellable = {
+  inline def apply(acquire: () => Unit, cancel: () => Unit, queryInterface: `type` => Any, release: () => Unit): XCancellable = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), cancel = js.Any.fromFunction0(cancel), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XCancellable]
   }

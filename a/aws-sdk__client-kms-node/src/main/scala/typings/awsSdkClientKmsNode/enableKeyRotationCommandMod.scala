@@ -16,7 +16,7 @@ object enableKeyRotationCommandMod {
   
   @JSImport("@aws-sdk/client-kms-node/commands/EnableKeyRotationCommand", "EnableKeyRotationCommand")
   @js.native
-  class EnableKeyRotationCommand protected ()
+  open class EnableKeyRotationCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object enableKeyRotationCommandMod {
     override val middlewareStack: MiddlewareStack[EnableKeyRotationInput, EnableKeyRotationOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[EnableKeyRotationInput, EnableKeyRotationOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[EnableKeyRotationInput, EnableKeyRotationOutput] = js.native
   }
 }

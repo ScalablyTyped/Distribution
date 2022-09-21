@@ -16,6 +16,8 @@ object testHelperMod {
   
   inline def createBoolAttr(value: Boolean): ParamValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createBoolAttr")(value.asInstanceOf[js.Any]).asInstanceOf[ParamValue]
   
+  inline def createBooleanArrayAttrFromIndex(inputIndex: Double): InputParamValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createBooleanArrayAttrFromIndex")(inputIndex.asInstanceOf[js.Any]).asInstanceOf[InputParamValue]
+  
   inline def createDtypeAttr(dtype: String): ParamValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createDtypeAttr")(dtype.asInstanceOf[js.Any]).asInstanceOf[ParamValue]
   
   inline def createNumberAttr(value: Double): ParamValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberAttr")(value.asInstanceOf[js.Any]).asInstanceOf[ParamValue]
@@ -37,6 +39,8 @@ object testHelperMod {
   inline def createTensorShapeAttr(value: js.Array[Double]): ParamValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createTensorShapeAttr")(value.asInstanceOf[js.Any]).asInstanceOf[ParamValue]
   
   inline def createTensorsAttr(index: Double, paramLength: Double): InputParamValue = (^.asInstanceOf[js.Dynamic].applyDynamic("createTensorsAttr")(index.asInstanceOf[js.Any], paramLength.asInstanceOf[js.Any])).asInstanceOf[InputParamValue]
+  
+  inline def uncapitalize[Name /* <: String */](name: Name): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uncapitalize")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def validateParam(node: Node, opMappers: js.Array[OpMapper]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateParam")(node.asInstanceOf[js.Any], opMappers.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def validateParam(node: Node, opMappers: js.Array[OpMapper], tfOpName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateParam")(node.asInstanceOf[js.Any], opMappers.asInstanceOf[js.Any], tfOpName.asInstanceOf[js.Any])).asInstanceOf[Boolean]

@@ -10,10 +10,10 @@ Powerful LINQ engine for JavaScript
 | ------------------ | :-------------: |
 | Full name          | fromjs |
 | Keywords           | LINQ, Functional, Enumerable, Array, Arrays, Collections, String, Strings |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 2952 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 169.33333333333334 |
+| # stars            | 55.0 |
 
 ## Links
 - [Homepage](https://github.com/suckgamoni/fromjs)

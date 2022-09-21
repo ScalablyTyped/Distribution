@@ -1,6 +1,5 @@
 package typings.textBuffer.mod.global.TextBuffer
 
-import typings.std.Error
 import typings.textBuffer.mod.global.TextBuffer.Structures.TextChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -78,14 +77,14 @@ object Events {
       
       inline def setChanges(value: js.Array[TextChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
-      inline def setChangesVarargs(value: TextChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
+      inline def setChangesVarargs(value: TextChange*): Self = StObject.set(x, "changes", js.Array(value*))
     }
   }
   
   trait BufferWatchError extends StObject {
     
     /** The error object. */
-    var error: Error
+    var error: js.Error
     
     /**
       *  Call this function to indicate you have handled the error.
@@ -95,14 +94,14 @@ object Events {
   }
   object BufferWatchError {
     
-    inline def apply(error: Error, handle: () => Unit): BufferWatchError = {
+    inline def apply(error: js.Error, handle: () => Unit): BufferWatchError = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], handle = js.Any.fromFunction0(handle))
       __obj.asInstanceOf[BufferWatchError]
     }
     
     extension [Self <: BufferWatchError](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setHandle(value: () => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction0(value))
     }

@@ -9,5 +9,5 @@ trait PrimaryExpression
   extends StObject
      with MemberExpression {
   
-  var _primaryExpressionBrand: js.Any = js.native
+  var _primaryExpressionBrand: Any = js.native
 }

@@ -1,14 +1,21 @@
 package typings.inversify
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object injectableMod {
   
-  @JSImport("inversify/dts/annotation/injectable", JSImport.Namespace)
+  @JSImport("inversify/lib/annotation/injectable", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def injectable(): js.Function1[/* target */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("injectable")().asInstanceOf[js.Function1[/* target */ js.Any, js.Any]]
+  inline def injectable(): js.Function1[
+    /* target */ Instantiable1[/* args */ scala.Nothing, Any], 
+    Instantiable1[/* args */ scala.Nothing, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("injectable")().asInstanceOf[js.Function1[
+    /* target */ Instantiable1[/* args */ scala.Nothing, Any], 
+    Instantiable1[/* args */ scala.Nothing, Any]
+  ]]
 }

@@ -17,8 +17,8 @@ object interfaceMod {
   trait Disposable extends StObject {
     
     /** Instructs the Disposable to clean up any resources */
-    def dispose(): js.Any = js.native
-    def dispose(router: UIRouter): js.Any = js.native
+    def dispose(): Any = js.native
+    def dispose(router: UIRouter): Any = js.native
   }
   
   @js.native
@@ -61,7 +61,7 @@ object interfaceMod {
       * @param token the key for the value to get.  May be a string, a class, or any arbitrary object.
       * @return the Dependency Injection value that matches the token
       */
-    def get(token: js.Any): js.Any = js.native
+    def get(token: Any): Any = js.native
     
     /**
       * Asynchronously gets a value from the injector
@@ -79,10 +79,10 @@ object interfaceMod {
       * @param token the key for the value to get.  May be a string or arbitrary object.
       * @return a Promise for the Dependency Injection value that matches the token
       */
-    def getAsync(token: js.Any): js.Promise[js.Any] = js.native
+    def getAsync(token: Any): js.Promise[Any] = js.native
     /** Asynchronously gets a value as type `T` (generics parameter) */
     @JSName("getAsync")
-    def getAsync_T[T](token: js.Any): js.Promise[T] = js.native
+    def getAsync_T[T](token: Any): js.Promise[T] = js.native
     
     /**
       * Gets a value from the native injector
@@ -97,13 +97,13 @@ object interfaceMod {
       * @param token the key for the value to get.  May be a string or arbitrary object.
       * @return the Dependency Injection value that matches the token
       */
-    def getNative(token: js.Any): js.Any = js.native
+    def getNative(token: Any): Any = js.native
     @JSName("getNative")
-    def getNative_T_T[T](token: js.Any): T = js.native
+    def getNative_T_T[T](token: Any): T = js.native
     
     /** Gets a value as type `T` (generics parameter) */
     @JSName("get")
-    def get_T_T[T](token: js.Any): T = js.native
+    def get_T_T[T](token: Any): T = js.native
   }
   
   @js.native

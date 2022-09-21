@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("makeup-expander", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Expander {
     def this(el: HTMLElement) = this()

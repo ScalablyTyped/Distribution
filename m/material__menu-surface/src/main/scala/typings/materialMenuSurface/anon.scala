@@ -2,7 +2,8 @@ package typings.materialMenuSurface
 
 import typings.materialMenuSurface.typesMod.MDCMenuDimensions
 import typings.materialMenuSurface.typesMod.MDCMenuPoint
-import typings.std.ClientRect
+import typings.std.DOMRect
+import typings.std.Document
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -65,6 +66,8 @@ object anon {
     
     var MARGIN_TO_EDGE: Double
     
+    var TOUCH_EVENT_WAIT_MS: Double
+    
     var TRANSITION_CLOSE_DURATION: Double
     
     var TRANSITION_OPEN_DURATION: Double
@@ -74,10 +77,11 @@ object anon {
     inline def apply(
       ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO: Double,
       MARGIN_TO_EDGE: Double,
+      TOUCH_EVENT_WAIT_MS: Double,
       TRANSITION_CLOSE_DURATION: Double,
       TRANSITION_OPEN_DURATION: Double
     ): ANCHORTOMENUSURFACEWIDTHRATIO = {
-      val __obj = js.Dynamic.literal(ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO = ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO.asInstanceOf[js.Any], MARGIN_TO_EDGE = MARGIN_TO_EDGE.asInstanceOf[js.Any], TRANSITION_CLOSE_DURATION = TRANSITION_CLOSE_DURATION.asInstanceOf[js.Any], TRANSITION_OPEN_DURATION = TRANSITION_OPEN_DURATION.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO = ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO.asInstanceOf[js.Any], MARGIN_TO_EDGE = MARGIN_TO_EDGE.asInstanceOf[js.Any], TOUCH_EVENT_WAIT_MS = TOUCH_EVENT_WAIT_MS.asInstanceOf[js.Any], TRANSITION_CLOSE_DURATION = TRANSITION_CLOSE_DURATION.asInstanceOf[js.Any], TRANSITION_OPEN_DURATION = TRANSITION_OPEN_DURATION.asInstanceOf[js.Any])
       __obj.asInstanceOf[ANCHORTOMENUSURFACEWIDTHRATIO]
     }
     
@@ -86,6 +90,8 @@ object anon {
       inline def setANCHOR_TO_MENU_SURFACE_WIDTH_RATIO(value: Double): Self = StObject.set(x, "ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO", value.asInstanceOf[js.Any])
       
       inline def setMARGIN_TO_EDGE(value: Double): Self = StObject.set(x, "MARGIN_TO_EDGE", value.asInstanceOf[js.Any])
+      
+      inline def setTOUCH_EVENT_WAIT_MS(value: Double): Self = StObject.set(x, "TOUCH_EVENT_WAIT_MS", value.asInstanceOf[js.Any])
       
       inline def setTRANSITION_CLOSE_DURATION(value: Double): Self = StObject.set(x, "TRANSITION_CLOSE_DURATION", value.asInstanceOf[js.Any])
       
@@ -97,14 +103,24 @@ object anon {
     
     var CLOSED_EVENT: String
     
+    var CLOSING_EVENT: String
+    
     var FOCUSABLE_ELEMENTS: String
     
     var OPENED_EVENT: String
+    
+    var OPENING_EVENT: String
   }
   object CLOSEDEVENT {
     
-    inline def apply(CLOSED_EVENT: String, FOCUSABLE_ELEMENTS: String, OPENED_EVENT: String): CLOSEDEVENT = {
-      val __obj = js.Dynamic.literal(CLOSED_EVENT = CLOSED_EVENT.asInstanceOf[js.Any], FOCUSABLE_ELEMENTS = FOCUSABLE_ELEMENTS.asInstanceOf[js.Any], OPENED_EVENT = OPENED_EVENT.asInstanceOf[js.Any])
+    inline def apply(
+      CLOSED_EVENT: String,
+      CLOSING_EVENT: String,
+      FOCUSABLE_ELEMENTS: String,
+      OPENED_EVENT: String,
+      OPENING_EVENT: String
+    ): CLOSEDEVENT = {
+      val __obj = js.Dynamic.literal(CLOSED_EVENT = CLOSED_EVENT.asInstanceOf[js.Any], CLOSING_EVENT = CLOSING_EVENT.asInstanceOf[js.Any], FOCUSABLE_ELEMENTS = FOCUSABLE_ELEMENTS.asInstanceOf[js.Any], OPENED_EVENT = OPENED_EVENT.asInstanceOf[js.Any], OPENING_EVENT = OPENING_EVENT.asInstanceOf[js.Any])
       __obj.asInstanceOf[CLOSEDEVENT]
     }
     
@@ -112,9 +128,13 @@ object anon {
       
       inline def setCLOSED_EVENT(value: String): Self = StObject.set(x, "CLOSED_EVENT", value.asInstanceOf[js.Any])
       
+      inline def setCLOSING_EVENT(value: String): Self = StObject.set(x, "CLOSING_EVENT", value.asInstanceOf[js.Any])
+      
       inline def setFOCUSABLE_ELEMENTS(value: String): Self = StObject.set(x, "FOCUSABLE_ELEMENTS", value.asInstanceOf[js.Any])
       
       inline def setOPENED_EVENT(value: String): Self = StObject.set(x, "OPENED_EVENT", value.asInstanceOf[js.Any])
+      
+      inline def setOPENING_EVENT(value: String): Self = StObject.set(x, "OPENING_EVENT", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,11 +181,13 @@ object anon {
     
     var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var getAnchorDimensions: js.UndefOr[js.Function0[ClientRect | Null]] = js.undefined
+    var getAnchorDimensions: js.UndefOr[js.Function0[DOMRect | Null]] = js.undefined
     
     var getBodyDimensions: js.UndefOr[js.Function0[MDCMenuDimensions]] = js.undefined
     
     var getInnerDimensions: js.UndefOr[js.Function0[MDCMenuDimensions]] = js.undefined
+    
+    var getOwnerDocument: js.UndefOr[js.Function0[Document]] = js.undefined
     
     var getWindowDimensions: js.UndefOr[js.Function0[MDCMenuDimensions]] = js.undefined
     
@@ -183,7 +205,11 @@ object anon {
     
     var notifyClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    var notifyClosing: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
     var notifyOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var notifyOpening: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
@@ -210,7 +236,7 @@ object anon {
       
       inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
       
-      inline def setGetAnchorDimensions(value: () => ClientRect | Null): Self = StObject.set(x, "getAnchorDimensions", js.Any.fromFunction0(value))
+      inline def setGetAnchorDimensions(value: () => DOMRect | Null): Self = StObject.set(x, "getAnchorDimensions", js.Any.fromFunction0(value))
       
       inline def setGetAnchorDimensionsUndefined: Self = StObject.set(x, "getAnchorDimensions", js.undefined)
       
@@ -221,6 +247,10 @@ object anon {
       inline def setGetInnerDimensions(value: () => MDCMenuDimensions): Self = StObject.set(x, "getInnerDimensions", js.Any.fromFunction0(value))
       
       inline def setGetInnerDimensionsUndefined: Self = StObject.set(x, "getInnerDimensions", js.undefined)
+      
+      inline def setGetOwnerDocument(value: () => Document): Self = StObject.set(x, "getOwnerDocument", js.Any.fromFunction0(value))
+      
+      inline def setGetOwnerDocumentUndefined: Self = StObject.set(x, "getOwnerDocument", js.undefined)
       
       inline def setGetWindowDimensions(value: () => MDCMenuDimensions): Self = StObject.set(x, "getWindowDimensions", js.Any.fromFunction0(value))
       
@@ -254,9 +284,17 @@ object anon {
       
       inline def setNotifyCloseUndefined: Self = StObject.set(x, "notifyClose", js.undefined)
       
+      inline def setNotifyClosing(value: () => Unit): Self = StObject.set(x, "notifyClosing", js.Any.fromFunction0(value))
+      
+      inline def setNotifyClosingUndefined: Self = StObject.set(x, "notifyClosing", js.undefined)
+      
       inline def setNotifyOpen(value: () => Unit): Self = StObject.set(x, "notifyOpen", js.Any.fromFunction0(value))
       
       inline def setNotifyOpenUndefined: Self = StObject.set(x, "notifyOpen", js.undefined)
+      
+      inline def setNotifyOpening(value: () => Unit): Self = StObject.set(x, "notifyOpening", js.Any.fromFunction0(value))
+      
+      inline def setNotifyOpeningUndefined: Self = StObject.set(x, "notifyOpening", js.undefined)
       
       inline def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       

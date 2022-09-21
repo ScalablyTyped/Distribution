@@ -48,7 +48,7 @@ object FieldSchemaInFormLookup {
     Direction: String,
     FieldType: String,
     Hidden: Boolean,
-    IMEMode: js.Any,
+    IMEMode: Any,
     Id: String,
     LookupListId: String,
     MaxQueryResult: String,
@@ -75,7 +75,7 @@ object FieldSchemaInFormLookup {
     
     inline def setChoices(value: js.Array[LookupId]): Self = StObject.set(x, "Choices", value.asInstanceOf[js.Any])
     
-    inline def setChoicesVarargs(value: LookupId*): Self = StObject.set(x, "Choices", js.Array(value :_*))
+    inline def setChoicesVarargs(value: LookupId*): Self = StObject.set(x, "Choices", js.Array(value*))
     
     inline def setDependentLookup(value: Boolean): Self = StObject.set(x, "DependentLookup", value.asInstanceOf[js.Any])
     

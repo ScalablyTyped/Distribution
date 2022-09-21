@@ -1,7 +1,6 @@
 package typings.log4js.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.log4js.anon.Appenders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait Configuration extends StObject {
   
   var appenders: StringDictionary[Appender]
   
-  var categories: StringDictionary[Appenders]
+  var categories: StringDictionary[typings.log4js.anon.Appenders]
   
   var disableClustering: js.UndefOr[Boolean] = js.undefined
   
@@ -22,7 +21,7 @@ trait Configuration extends StObject {
 }
 object Configuration {
   
-  inline def apply(appenders: StringDictionary[Appender], categories: StringDictionary[Appenders]): Configuration = {
+  inline def apply(appenders: StringDictionary[Appender], categories: StringDictionary[typings.log4js.anon.Appenders]): Configuration = {
     val __obj = js.Dynamic.literal(appenders = appenders.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
@@ -31,7 +30,7 @@ object Configuration {
     
     inline def setAppenders(value: StringDictionary[Appender]): Self = StObject.set(x, "appenders", value.asInstanceOf[js.Any])
     
-    inline def setCategories(value: StringDictionary[Appenders]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: StringDictionary[typings.log4js.anon.Appenders]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     inline def setDisableClustering(value: Boolean): Self = StObject.set(x, "disableClustering", value.asInstanceOf[js.Any])
     

@@ -22,6 +22,6 @@ object BatchGetChannelRequest {
     
     inline def setArns(value: ChannelArnList): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
     
-    inline def setArnsVarargs(value: ChannelArn*): Self = StObject.set(x, "arns", js.Array(value :_*))
+    inline def setArnsVarargs(value: ChannelArn*): Self = StObject.set(x, "arns", js.Array(value*))
   }
 }

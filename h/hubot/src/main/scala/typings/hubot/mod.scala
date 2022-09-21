@@ -1,20 +1,19 @@
 package typings.hubot
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Express
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Request
+import typings.expressServeStaticCore.mod.Application
 import typings.hubot.anon.Listener
-import typings.node.NodeJS.Timeout
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.qs.mod.ParsedQs
+import typings.node.nodeNetMod.Socket
+import typings.node.timersMod.global.NodeJS.Timeout
 import typings.scopedHttpClient.mod.Options
 import typings.scopedHttpClient.mod.ScopedClient
 import typings.std.Error
-import typings.std.RegExp
 import typings.std.RegExpMatchArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +23,7 @@ object mod {
   
   @JSImport("hubot", "Adapter")
   @js.native
-  class Adapter protected () extends EventEmitter {
+  open class Adapter protected () extends EventEmitter {
     def this(robot: Robot[Adapter]) = this()
     
     def close(): Unit = js.native
@@ -59,12 +58,12 @@ object mod {
   
   @JSImport("hubot", "Brain")
   @js.native
-  class Brain[A /* <: Adapter */] protected () extends EventEmitter {
+  open class Brain[A /* <: Adapter */] protected () extends EventEmitter {
     def this(robot: Robot[A]) = this()
     
     def close(): Unit = js.native
     
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     
     def mergeData(data: js.Object): Unit = js.native
     
@@ -74,7 +73,7 @@ object mod {
     
     def save(): Unit = js.native
     
-    def set(key: String, value: js.Any): this.type = js.native
+    def set(key: String, value: Any): this.type = js.native
     
     def setAutoSave(enabled: Boolean): Unit = js.native
     
@@ -92,7 +91,7 @@ object mod {
   
   @JSImport("hubot", "CatchAllMessage")
   @js.native
-  class CatchAllMessage protected () extends Message {
+  open class CatchAllMessage protected () extends Message {
     def this(message: Message) = this()
     
     var message: Message = js.native
@@ -100,36 +99,38 @@ object mod {
   
   @JSImport("hubot", "DataStore")
   @js.native
-  class DataStore protected () extends StObject {
+  open class DataStore protected () extends StObject {
     def this(robot: Robot[Adapter]) = this()
     
-    def get(key: String): js.Promise[js.Any] = js.native
+    def get(key: String): js.Promise[Any] = js.native
     
-    def getObject(key: String, objectKey: String): js.Promise[js.Any] = js.native
+    def getObject(key: String, objectKey: String): js.Promise[Any] = js.native
     
-    def set(key: String, value: js.Any): js.Promise[Unit] = js.native
+    def set(key: String, value: Any): js.Promise[Unit] = js.native
     
-    def setArray(key: String, value: js.Any): js.Promise[Unit] = js.native
+    def setArray(key: String, value: Any): js.Promise[Unit] = js.native
     
-    def setObject(key: String, objectKey: String, value: js.Any): js.Promise[Unit] = js.native
+    def setObject(key: String, objectKey: String, value: Any): js.Promise[Unit] = js.native
   }
   
   @JSImport("hubot", "DataStoreUnavailable")
   @js.native
-  class DataStoreUnavailable ()
+  open class DataStoreUnavailable ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("hubot", "EnterMessage")
   @js.native
-  class EnterMessage protected () extends Message {
+  open class EnterMessage protected () extends Message {
     def this(user: User) = this()
     def this(user: User, done: Boolean) = this()
     
@@ -139,7 +140,7 @@ object mod {
   
   @JSImport("hubot", "LeaveMessage")
   @js.native
-  class LeaveMessage protected () extends Message {
+  open class LeaveMessage protected () extends Message {
     def this(user: User) = this()
     def this(user: User, done: Boolean) = this()
     
@@ -149,7 +150,7 @@ object mod {
   
   @JSImport("hubot", "Message")
   @js.native
-  class Message protected () extends StObject {
+  open class Message protected () extends StObject {
     def this(user: User) = this()
     def this(user: User, done: Boolean) = this()
     
@@ -166,7 +167,7 @@ object mod {
   
   @JSImport("hubot", "Middleware")
   @js.native
-  class Middleware[T /* <: Adapter */] protected () extends StObject {
+  open class Middleware[T /* <: Adapter */] protected () extends StObject {
     def this(robot: Robot[T]) = this()
     
     def execute(context: MiddlewareContext[T], next: NextFunction, done: DoneFunction): Unit = js.native
@@ -178,7 +179,7 @@ object mod {
   
   @JSImport("hubot", "Response")
   @js.native
-  class Response[A /* <: Adapter */, M /* <: Message */] protected () extends StObject {
+  open class Response[A /* <: Adapter */, M /* <: Message */] protected () extends StObject {
     def this(robot: Robot[A], message: Message, `match`: RegExpMatchArray) = this()
     
     def emote(strings: String*): Unit = js.native
@@ -209,7 +210,7 @@ object mod {
   
   @JSImport("hubot", "Robot")
   @js.native
-  class Robot[A /* <: Adapter */] protected () extends StObject {
+  open class Robot[A /* <: Adapter */] protected () extends StObject {
     def this(adapterPath: String, adapter: String, httpd: Boolean, name: String) = this()
     def this(adapterPath: String, adapter: String, httpd: Boolean, name: String, alias: String) = this()
     
@@ -226,26 +227,26 @@ object mod {
     def catchAll(callback: ListenerCallback[A, CatchAllMessage]): Unit = js.native
     def catchAll(options: js.Object, callback: ListenerCallback[A, CatchAllMessage]): Unit = js.native
     
-    val commands: js.Array[js.Any] = js.native
+    val commands: js.Array[Any] = js.native
     
     val datastore: Null | DataStore = js.native
     
-    def emit(event: String, args: js.Any*): Unit = js.native
-    def emit(event: js.Symbol, args: js.Any*): Unit = js.native
+    def emit(event: String, args: Any*): Unit = js.native
+    def emit(event: js.Symbol, args: Any*): Unit = js.native
     
     def enter(callback: ListenerCallback[A, EnterMessage]): Unit = js.native
     def enter(options: js.Object, callback: ListenerCallback[A, EnterMessage]): Unit = js.native
     
-    def error(cb: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def error(cb: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
-    val errorHandlers: js.Array[js.Any] = js.native
+    val errorHandlers: js.Array[Any] = js.native
     
     val events: EventEmitter = js.native
     
     val globalHttpOptions: Options = js.native
     
-    def hear(regex: RegExp, callback: ListenerCallback[A, TextMessage]): Unit = js.native
-    def hear(regex: RegExp, options: js.Object, callback: ListenerCallback[A, TextMessage]): Unit = js.native
+    def hear(regex: js.RegExp, callback: ListenerCallback[A, TextMessage]): Unit = js.native
+    def hear(regex: js.RegExp, options: js.Object, callback: ListenerCallback[A, TextMessage]): Unit = js.native
     
     def helpCommands(): js.Array[String] = js.native
     
@@ -270,7 +271,7 @@ object mod {
     
     def loadHubotScripts(path: String, scripts: js.Array[String]): Unit = js.native
     
-    def logger(messages: js.Any*): Unit = js.native
+    def logger(messages: Any*): Unit = js.native
     @JSName("logger")
     val logger_Original: Log = js.native
     
@@ -280,10 +281,10 @@ object mod {
     
     val name: String = js.native
     
-    def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     
-    def onUncaughtException(err: Error): Unit = js.native
+    def onUncaughtException(err: js.Error): Unit = js.native
     
     val pingIntervalId: Null | Timeout = js.native
     
@@ -294,24 +295,14 @@ object mod {
     
     def reply(envelope: Envelope, strings: String*): Unit = js.native
     
-    def respond(regex: RegExp, callback: ListenerCallback[A, TextMessage]): Unit = js.native
-    def respond(regex: RegExp, options: js.Object, callback: ListenerCallback[A, TextMessage]): Unit = js.native
+    def respond(regex: js.RegExp, callback: ListenerCallback[A, TextMessage]): Unit = js.native
+    def respond(regex: js.RegExp, options: js.Object, callback: ListenerCallback[A, TextMessage]): Unit = js.native
     
-    def respondPattern(regex: RegExp): RegExp = js.native
+    def respondPattern(regex: js.RegExp): js.RegExp = js.native
     
     def responseMiddleware(middleware: MiddlewareHandler[A]): Unit = js.native
     
-    /**
-      * Express instance itself is a request handler, which could be invoked without
-      * third argument.
-      */
-    def router(
-      req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs],
-      res: typings.expressServeStaticCore.mod.Response[js.Any, Double]
-    ): js.Any = js.native
-    def router(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any = js.native
-    def router(req: IncomingMessage, res: typings.expressServeStaticCore.mod.Response[js.Any, Double]): js.Any = js.native
-    def router(req: IncomingMessage, res: ServerResponse): js.Any = js.native
+    def router(): Application = js.native
     @JSName("router")
     val router_Original: Express = js.native
     
@@ -319,7 +310,15 @@ object mod {
     
     def send(envelope: Envelope, strings: String*): Unit = js.native
     
-    val server: js.UndefOr[Server] = js.native
+    val server: js.UndefOr[
+        Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]
+      ] = js.native
     
     def shutdown(): Unit = js.native
     
@@ -331,10 +330,10 @@ object mod {
   
   @JSImport("hubot", "TextMessage")
   @js.native
-  class TextMessage protected () extends Message {
+  open class TextMessage protected () extends Message {
     def this(user: User, text: String, id: String) = this()
     
-    def `match`(regex: RegExp): RegExpMatchArray = js.native
+    def `match`(regex: js.RegExp): RegExpMatchArray = js.native
     
     @JSName("text")
     var text_TextMessage: String = js.native
@@ -342,25 +341,25 @@ object mod {
   
   @JSImport("hubot", "TopicMessage")
   @js.native
-  class TopicMessage protected () extends TextMessage {
+  open class TopicMessage protected () extends TextMessage {
     def this(user: User, text: String, id: String) = this()
   }
   
   @JSImport("hubot", "User")
   @js.native
-  class User protected ()
+  open class User protected ()
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     def this(id: String) = this()
     def this(id: String, options: js.Object) = this()
     
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     
     var id: String = js.native
     
     var name: String = js.native
     
-    def set(key: String, value: js.Any): this.type = js.native
+    def set(key: String, value: Any): this.type = js.native
   }
   
   type DoneFunction = js.Function0[Unit]
@@ -395,27 +394,27 @@ object mod {
   @js.native
   trait Log extends StObject {
     
-    def apply(messages: js.Any*): Unit = js.native
+    def apply(messages: Any*): Unit = js.native
     
-    def debug(messages: js.Any*): Unit = js.native
+    def debug(messages: Any*): Unit = js.native
     @JSName("debug")
     var debug_Original: LogLevel = js.native
     
-    def error(messages: js.Any*): Unit = js.native
+    def error(messages: Any*): Unit = js.native
     @JSName("error")
     var error_Original: LogLevel = js.native
     
     def get(namespace: String): Log = js.native
     
-    def info(messages: js.Any*): Unit = js.native
+    def info(messages: Any*): Unit = js.native
     @JSName("info")
     var info_Original: LogLevel = js.native
     
-    def notice(messages: js.Any*): Unit = js.native
+    def notice(messages: Any*): Unit = js.native
     @JSName("notice")
     var notice_Original: LogLevel = js.native
     
-    def warning(messages: js.Any*): Unit = js.native
+    def warning(messages: Any*): Unit = js.native
     @JSName("warning")
     var warning_Original: LogLevel = js.native
   }
@@ -423,7 +422,7 @@ object mod {
   @js.native
   trait LogLevel extends StObject {
     
-    def apply(messages: js.Any*): Unit = js.native
+    def apply(messages: Any*): Unit = js.native
     
     def disable(): Unit = js.native
     
@@ -432,7 +431,7 @@ object mod {
   
   trait MiddlewareContext[T /* <: Adapter */]
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var response: js.UndefOr[Response[T, Message]] = js.undefined
   }

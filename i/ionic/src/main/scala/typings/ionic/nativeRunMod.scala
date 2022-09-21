@@ -99,7 +99,7 @@ object nativeRunMod {
       
       inline def setForwardedPortsUndefined: Self = StObject.set(x, "forwardedPorts", js.undefined)
       
-      inline def setForwardedPortsVarargs(value: (String | Double)*): Self = StObject.set(x, "forwardedPorts", js.Array(value :_*))
+      inline def setForwardedPortsVarargs(value: (String | Double)*): Self = StObject.set(x, "forwardedPorts", js.Array(value*))
       
       inline def setPackagePath(value: String): Self = StObject.set(x, "packagePath", value.asInstanceOf[js.Any])
       
@@ -124,11 +124,11 @@ object nativeRunMod {
       
       inline def setDevices(value: js.Array[NativeDeviceTarget]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
       
-      inline def setDevicesVarargs(value: NativeDeviceTarget*): Self = StObject.set(x, "devices", js.Array(value :_*))
+      inline def setDevicesVarargs(value: NativeDeviceTarget*): Self = StObject.set(x, "devices", js.Array(value*))
       
       inline def setVirtualDevices(value: js.Array[NativeVirtualDeviceTarget]): Self = StObject.set(x, "virtualDevices", value.asInstanceOf[js.Any])
       
-      inline def setVirtualDevicesVarargs(value: NativeVirtualDeviceTarget*): Self = StObject.set(x, "virtualDevices", js.Array(value :_*))
+      inline def setVirtualDevicesVarargs(value: NativeVirtualDeviceTarget*): Self = StObject.set(x, "virtualDevices", js.Array(value*))
     }
   }
   

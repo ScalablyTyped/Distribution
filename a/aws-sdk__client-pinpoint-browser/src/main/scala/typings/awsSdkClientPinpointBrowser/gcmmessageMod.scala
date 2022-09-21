@@ -8,5 +8,5 @@ object gcmmessageMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_GCMMessage", "_GCMMessage")
   @js.native
-  val GCMMessage: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GCMMessage: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

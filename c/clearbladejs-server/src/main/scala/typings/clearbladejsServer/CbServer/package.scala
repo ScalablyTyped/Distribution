@@ -1,23 +1,21 @@
 package typings.clearbladejsServer.CbServer
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type CbCallback = js.Function2[
-/* error */ scala.Boolean, 
-/* response */ typings.clearbladejsServer.CbServer.Resp, 
-scala.Unit]
+type CbCallback = js.Function2[/* error */ Boolean, /* response */ Resp, Unit]
 
-type ItemOptions = typings.clearbladejsServer.CbServer.CollectionOptionsWithID
+type ItemOptions = CollectionOptionsWithID
 
-type KeyValuePair = org.scalablytyped.runtime.StringDictionary[js.Any]
+type KeyValuePair = StringDictionary[Any]
 
-type QueryFilter = org.scalablytyped.runtime.StringDictionary[typings.clearbladejsServer.CbServer.QueryFilterValue]
+type QueryFilter = StringDictionary[QueryFilterValue]
 
-type QueryFilterValue = org.scalablytyped.runtime.StringDictionary[typings.clearbladejsServer.CbServer.QueryValue]
+type QueryFilterValue = StringDictionary[QueryValue]
 
-type QueryValue = java.lang.String | scala.Double | scala.Boolean
+type QueryValue = String | Double | Boolean
 
-type ReqTypes = typings.clearbladejsServer.CbServer.BasicReq
+type ReqTypes = BasicReq

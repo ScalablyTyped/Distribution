@@ -124,8 +124,8 @@ trait Stream extends StObject {
   var Position: Double = js.native
   
   /** @param NumBytes [NumBytes=-1] */
-  def Read(): js.Any = js.native
-  def Read(NumBytes: Double): js.Any = js.native
+  def Read(): Any = js.native
+  def Read(NumBytes: Double): Any = js.native
   
   /** @param NumChars [NumChars=-1] */
   def ReadText(): String = js.native
@@ -145,7 +145,7 @@ trait Stream extends StObject {
   
   var Type: StreamTypeEnum = js.native
   
-  def Write(Buffer: js.Any): Unit = js.native
+  def Write(Buffer: Any): Unit = js.native
   
   /** @param Options [Options=0] */
   def WriteText(Data: String): Unit = js.native

@@ -3,7 +3,6 @@ package typings.officeJsPreview.Office
 import typings.officeJsPreview.Office.MailboxEnums.AppointmentSensitivityType
 import typings.officeJsPreview.Office.MailboxEnums.EntityType
 import typings.officeJsPreview.Office.MailboxEnums.ItemType
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.
   *
   * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-  * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.
+  * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
+  * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item | Object Model} page.
   *
   * Parent interfaces:
   *
@@ -26,52 +25,65 @@ trait AppointmentRead
   extends StObject
      with Item {
   
-  def addHandlerAsync(eventType: String, handler: js.Any): Unit = js.native
+  def addHandlerAsync(eventType: String, handler: Any): Unit = js.native
+  def addHandlerAsync(eventType: String, handler: Any, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def addHandlerAsync(eventType: String, handler: Any, options: AsyncContextOptions): Unit = js.native
   def addHandlerAsync(
     eventType: String,
-    handler: js.Any,
-    options: Unit,
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
-  def addHandlerAsync(eventType: String, handler: js.Any, options: AsyncContextOptions): Unit = js.native
-  def addHandlerAsync(
-    eventType: String,
-    handler: js.Any,
+    handler: Any,
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   /**
-    * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
+    * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
     *
-    * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.
-    *
-    * [Api set: Mailbox 1.7]
+    * For supported events, refer to the Item object model
+    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item#events | events section}.
     *
     * @remarks
+    * [Api set: Mailbox 1.7]
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * @param eventType - The event that should invoke the handler.
     * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
-    *                The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.
-    * @param options - Optional. An object literal that contains one or more of the following properties.
-    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    *                The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
-  def addHandlerAsync(eventType: EventType, handler: js.Any): Unit = js.native
+  def addHandlerAsync(eventType: EventType, handler: Any): Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
-    handler: js.Any,
-    options: Unit,
+    handler: Any,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def addHandlerAsync(eventType: EventType, handler: js.Any, options: AsyncContextOptions): Unit = js.native
+  /**
+    * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
+    *
+    * For supported events, refer to the Item object model
+    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item#events | events section}.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.7]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    *
+    * @param eventType - The event that should invoke the handler.
+    * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
+    *                The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.
+    * @param options - An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *                `asyncResult`, which is an `Office.AsyncResult` object.
+    */
+  def addHandlerAsync(eventType: EventType, handler: Any, options: AsyncContextOptions): Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
-    handler: js.Any,
+    handler: Any,
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
@@ -81,12 +93,12 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see
-    * {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
+    * {@link https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519 | Blocked attachments in Outlook}.
     *
     */
   var attachments: js.Array[AttachmentDetails] = js.native
@@ -94,26 +106,24 @@ trait AppointmentRead
   /**
     * Gets an object that provides methods for manipulating the body of an item.
     *
+    * @remarks
     * [Api set: Mailbox 1.1]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var body: Body = js.native
   
   /**
     * Gets an object that provides methods for managing the item's categories.
     *
+    * @remarks
     * [Api set: Mailbox 1.8]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var categories: Categories = js.native
   
@@ -122,11 +132,11 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
-  var dateTimeCreated: Date = js.native
+  var dateTimeCreated: js.Date = js.native
   
   /**
     * Gets the date and time that an item was last modified.
@@ -135,11 +145,11 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
-  var dateTimeModified: Date = js.native
+  var dateTimeModified: js.Date = js.native
   
   /**
     * Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the
@@ -156,9 +166,9 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
     *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
@@ -179,23 +189,47 @@ trait AppointmentRead
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
+    * @remarks
     * [Api set: Mailbox 1.9]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
     *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
-    * @param options - Optional. An object literal that contains one or more of the following properties.
-    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def displayReplyAllFormAsync(formData: String): Unit = js.native
-  def displayReplyAllFormAsync(formData: String, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def displayReplyAllFormAsync(formData: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  /**
+    * Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the
+    * selected appointment.
+    *
+    * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+    *
+    * If any of the string parameters exceed their limits, `displayReplyAllFormAsync` throws an exception.
+    *
+    * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+    * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.9]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    *
+    * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
+    * @param options - An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *                `asyncResult`, which is an `Office.AsyncResult` object.
+    */
   def displayReplyAllFormAsync(formData: String, options: AsyncContextOptions): Unit = js.native
   def displayReplyAllFormAsync(
     formData: String,
@@ -203,11 +237,7 @@ trait AppointmentRead
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def displayReplyAllFormAsync(formData: ReplyFormData): Unit = js.native
-  def displayReplyAllFormAsync(
-    formData: ReplyFormData,
-    options: Unit,
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def displayReplyAllFormAsync(formData: ReplyFormData, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def displayReplyAllFormAsync(formData: ReplyFormData, options: AsyncContextOptions): Unit = js.native
   def displayReplyAllFormAsync(
     formData: ReplyFormData,
@@ -229,9 +259,9 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
     *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
@@ -251,23 +281,46 @@ trait AppointmentRead
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
+    * @remarks
     * [Api set: Mailbox 1.9]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
     *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
-    * @param options - Optional. An object literal that contains one or more of the following properties.
-    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def displayReplyFormAsync(formData: String): Unit = js.native
-  def displayReplyFormAsync(formData: String, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def displayReplyFormAsync(formData: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  /**
+    * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
+    *
+    * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+    *
+    * If any of the string parameters exceed their limits, `displayReplyFormAsync` throws an exception.
+    *
+    * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+    * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.9]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    *
+    * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
+    * @param options - An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *                `asyncResult`, which is an `Office.AsyncResult` object.
+    */
   def displayReplyFormAsync(formData: String, options: AsyncContextOptions): Unit = js.native
   def displayReplyFormAsync(
     formData: String,
@@ -275,11 +328,7 @@ trait AppointmentRead
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def displayReplyFormAsync(formData: ReplyFormData): Unit = js.native
-  def displayReplyFormAsync(
-    formData: ReplyFormData,
-    options: Unit,
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def displayReplyFormAsync(formData: ReplyFormData, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def displayReplyFormAsync(formData: ReplyFormData, options: AsyncContextOptions): Unit = js.native
   def displayReplyFormAsync(
     formData: ReplyFormData,
@@ -298,11 +347,11 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
-  var end: Date = js.native
+  var end: js.Date = js.native
   
   /**
     * Gets the locations of an appointment.
@@ -310,32 +359,30 @@ trait AppointmentRead
     * The `enhancedLocation` property returns an {@link Office.EnhancedLocation | EnhancedLocation} object that allows you to get the set of locations
     * (each represented by a {@link Office.LocationDetails | LocationDetails} object) associated with the appointment.
     *
+    * @remarks
     * [Api set: Mailbox 1.8]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var enhancedLocation: EnhancedLocation = js.native
   
   /**
     * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
     *
-    * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use
-    * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or
-    * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+    * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+    * the attachment's identifier from an {@link Office.AppointmentRead.attachments | item.attachments} call, then in the same session, use that identifier
+    * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
     * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
     * continue in a separate window.
     *
+    * @remarks
     * [Api set: Mailbox 1.8]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * **Errors**:
     *
@@ -345,8 +392,6 @@ trait AppointmentRead
     * - `InvalidAttachmentId`: The attachment identifier does not exist.
     *
     * @param attachmentId - The identifier of the attachment you want to get.
-    * @param options - Optional. An object literal that contains one or more of the following properties.
-    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain
     *                 an error code with the reason for the failure.
@@ -354,9 +399,38 @@ trait AppointmentRead
   def getAttachmentContentAsync(attachmentId: String): Unit = js.native
   def getAttachmentContentAsync(
     attachmentId: String,
-    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
   ): Unit = js.native
+  /**
+    * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
+    *
+    * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+    * the attachment's identifier from an {@link Office.AppointmentRead.attachments | item.attachments} call, then in the same session, use that identifier
+    * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+    * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
+    * continue in a separate window.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.8]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    *
+    * **Errors**:
+    *
+    * - `AttachmentTypeNotSupported`: The attachment type isn't supported. Unsupported types include embedded images in Rich Text Format,
+    *                               or item attachment types other than email or calendar items (such as a contact or task item).
+    *
+    * - `InvalidAttachmentId`: The attachment identifier does not exist.
+    *
+    * @param attachmentId - The identifier of the attachment you want to get.
+    * @param options - An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *                `asyncResult`, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain
+    *                 an error code with the reason for the failure.
+    */
   def getAttachmentContentAsync(attachmentId: String, options: AsyncContextOptions): Unit = js.native
   def getAttachmentContentAsync(
     attachmentId: String,
@@ -371,9 +445,9 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   def getEntities(): Entities = js.native
   
@@ -390,9 +464,9 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * @param entityType - One of the `EntityType` enumeration values.
     *
@@ -458,40 +532,50 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * @param name - The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
     */
   def getFilteredEntitiesByName(name: String): js.Array[String | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion] = js.native
   
   /**
-    * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
-    *
-    * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
-    * and Outlook on the web for Office 365.
-    *
-    * [Api set: Mailbox Preview]
+    * Gets initialization data passed when the add-in is {@link https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
     *
     * @remarks
+    * [Api set: Mailbox 1.8]
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
-    * @param options - Optional. An object literal that contains one or more of the following properties.
-    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
-    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-    *                `asyncResult`, which is an `Office.AsyncResult` object.
-    *                 On success, the initialization data is provided in the `asyncResult.value` property as a string.
-    *                 If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property
-    *                 set to 9020 and its `name` property set to `GenericResponseError`.
-    *
-    * @beta
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+    *                             of type `Office.AsyncResult`.
+    *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+    *                 If there is no initialization context, the `asyncResult` object will contain
+    *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
     */
   def getInitializationContextAsync(): Unit = js.native
-  def getInitializationContextAsync(options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  def getInitializationContextAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  /**
+    * Gets initialization data passed when the add-in is {@link https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.8]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    *
+    * @param options - An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+    *                             of type `Office.AsyncResult`.
+    *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+    *                 If there is no initialization context, the `asyncResult` object will contain
+    *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+    */
   def getInitializationContextAsync(options: AsyncContextOptions): Unit = js.native
   def getInitializationContextAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   
@@ -517,11 +601,11 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
-  def getRegExMatches(): js.Any = js.native
+  def getRegExMatches(): Any = js.native
   
   /**
     * Returns string values in the selected item that match the named regular expression defined in the manifest XML file.
@@ -540,9 +624,9 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * @param name - The name of the `ItemHasRegularExpressionMatch` rule element that defines the filter to match.
     */
@@ -553,13 +637,12 @@ trait AppointmentRead
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
+    * @remarks
     * [Api set: Mailbox 1.6]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * @param name - The name of the `ItemHasRegularExpressionMatch` rule element that defines the filter to match.
     */
@@ -581,7 +664,6 @@ trait AppointmentRead
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
-    * [Api set: Mailbox 1.6]
     *
     * @returns
     * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
@@ -589,28 +671,28 @@ trait AppointmentRead
     * or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.
     *
     * @remarks
+    * [Api set: Mailbox 1.6]
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
-  def getSelectedRegExMatches(): js.Any = js.native
+  def getSelectedRegExMatches(): Any = js.native
   
   /**
-    * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+    * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
     *
     * For more information around using this API, see the
-    * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
+    * @remarks
     * [Api set: Mailbox 1.8]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
@@ -618,23 +700,22 @@ trait AppointmentRead
     */
   def getSharedPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[SharedProperties], Unit]): Unit = js.native
   /**
-    * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+    * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
     *
     * For more information around using this API, see the
-    * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
+    * @remarks
     * [Api set: Mailbox 1.8]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * @param options - An object literal that contains one or more of the following properties.
-    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
     *                 The `value` property of the result is the properties of the shared item.
@@ -647,13 +728,12 @@ trait AppointmentRead
   /**
     * Returns a boolean value indicating whether the event is all day.
     *
-    * [Api set: Mailbox Preview]
-    *
     * @remarks
+    * [Api set: Mailbox preview]
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**:  `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**:  `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**:  Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**:  Appointment Attendee
     *
     * @beta
     */
@@ -666,9 +746,9 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * The `itemClass` property specifies the message class of the selected item. The following are the default message classes for the message or appointment item.
     *
@@ -694,7 +774,7 @@ trait AppointmentRead
   var itemClass: String = js.native
   
   /**
-    * Gets the {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}
+    * Gets the {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}
     * for the current item.
     *
     * The `itemId` property is not available in compose mode.
@@ -702,16 +782,16 @@ trait AppointmentRead
     * in the `asyncResult.value` parameter in the callback function.
     *
     * **Note**: The identifier returned by the `itemId` property is the same as the
-    * {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}.
+    * {@link https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}.
     * The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API.
     * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
-    * For more details, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
+    * For more details, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var itemId: String = js.native
   
@@ -722,9 +802,9 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var itemType: ItemType | String = js.native
   
@@ -741,9 +821,9 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
@@ -751,7 +831,7 @@ trait AppointmentRead
     *                    This object can be accessed by the `asyncResult.asyncContext` property in the callback function.
     */
   def loadCustomPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], Unit]): Unit = js.native
-  def loadCustomPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], Unit], userContext: js.Any): Unit = js.native
+  def loadCustomPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], Unit], userContext: Any): Unit = js.native
   
   /**
     * Gets the location of an appointment.
@@ -760,9 +840,9 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var location: String = js.native
   
@@ -774,22 +854,21 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var normalizedSubject: String = js.native
   
   /**
     * Gets the notification messages for an item.
     *
+    * @remarks
     * [Api set: Mailbox 1.3]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var notificationMessages: NotificationMessages = js.native
   
@@ -801,26 +880,26 @@ trait AppointmentRead
     *
     * - Windows: 500 members
     *
-    * - Mac: 100 members
+    * - Classic Mac UI: 100 members
     *
-    * - Other: No limit
+    * - New Mac UI, web browser, Android: No limit
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var optionalAttendees: js.Array[EmailAddressDetails] = js.native
   
   /**
-    * Gets the email address of the meeting organizer for a specified meeting.
+    * Gets the meeting organizer's email properties.
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var organizer: EmailAddressDetails = js.native
   
@@ -835,22 +914,17 @@ trait AppointmentRead
     * **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single
     * appointment and NOT a part of a series.
     *
+    * @remarks
     * [Api set: Mailbox 1.7]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var recurrence: Recurrence = js.native
   
   def removeHandlerAsync(eventType: String): Unit = js.native
-  def removeHandlerAsync(
-    eventType: String,
-    options: Unit,
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def removeHandlerAsync(eventType: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def removeHandlerAsync(eventType: String, options: AsyncContextOptions): Unit = js.native
   def removeHandlerAsync(
     eventType: String,
@@ -858,30 +932,43 @@ trait AppointmentRead
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   /**
-    * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
+    * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
     *
-    * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.
-    *
-    * [Api set: Mailbox 1.7]
+    * For supported events, refer to the Item object model
+    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item#events | events section}.
     *
     * @remarks
+    * [Api set: Mailbox 1.7]
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     *
     * @param eventType - The event that should revoke the handler.
-    * @param options - Optional. An object literal that contains one or more of the following properties.
-    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def removeHandlerAsync(eventType: EventType): Unit = js.native
-  def removeHandlerAsync(
-    eventType: EventType,
-    options: Unit,
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  /**
+    * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
+    *
+    * For supported events, refer to the Item object model
+    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item#events | events section}.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.7]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    *
+    * @param eventType - The event that should revoke the handler.
+    * @param options - An object literal that contains one or more of the following properties.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *                `asyncResult`, which is an `Office.AsyncResult` object.
+    */
   def removeHandlerAsync(eventType: EventType, options: AsyncContextOptions): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
@@ -897,28 +984,27 @@ trait AppointmentRead
     *
     * - Windows: 500 members
     *
-    * - Mac: 100 members
+    * - Classic Mac UI: 100 members
     *
-    * - Other: No limit
+    * - New Mac UI, web browser, Android: No limit
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var requiredAttendees: js.Array[EmailAddressDetails] = js.native
   
   /**
     * Provides the sensitivity value of the appointment.
     *
-    * [Api set: Mailbox Preview]
-    *
     * @remarks
+    * [Api set: Mailbox preview]
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**:  `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**:  `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**:  Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**:  Appointment Attendee
     *
     * @beta
     */
@@ -933,18 +1019,17 @@ trait AppointmentRead
     * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
     * The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API calls using this value, it
     * should be converted using `Office.context.mailbox.convertToRestId`.
-    * For more details, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
+    * For more details, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
     *
     * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests
     * and returns `undefined` for any other items that are not meeting requests.
     *
+    * @remarks
     * [Api set: Mailbox 1.7]
     *
-    * @remarks
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var seriesId: String = js.native
   
@@ -956,11 +1041,11 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
-  var start: Date = js.native
+  var start: js.Date = js.native
   
   /**
     * Gets the description that appears in the subject field of an item.
@@ -971,9 +1056,9 @@ trait AppointmentRead
     *
     * @remarks
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     *
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
     */
   var subject: String = js.native
 }

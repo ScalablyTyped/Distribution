@@ -103,8 +103,6 @@ trait RectangleProps extends StObject {
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
-  
   var height: js.UndefOr[Double] = js.undefined
   
   var imageRendering: js.UndefOr[auto | optimizeSpeed | optimizeQuality | inherit] = js.undefined
@@ -163,7 +161,7 @@ trait RectangleProps extends StObject {
   
   var r: js.UndefOr[Double] = js.undefined
   
-  var radius: js.UndefOr[Double | js.Array[js.Any]] = js.undefined
+  var radius: js.UndefOr[Double | js.Array[Any]] = js.undefined
   
   var shapeRendering: js.UndefOr[auto | optimizeSpeed | crispEdges | geometricPrecision | inherit] = js.undefined
   
@@ -366,10 +364,6 @@ object RectangleProps {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
-    
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
@@ -486,11 +480,11 @@ object RectangleProps {
     
     inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
-    inline def setRadius(value: Double | js.Array[js.Any]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double | js.Array[Any]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    inline def setRadiusVarargs(value: js.Any*): Self = StObject.set(x, "radius", js.Array(value :_*))
+    inline def setRadiusVarargs(value: Any*): Self = StObject.set(x, "radius", js.Array(value*))
     
     inline def setShapeRendering(value: auto | optimizeSpeed | crispEdges | geometricPrecision | inherit): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
     

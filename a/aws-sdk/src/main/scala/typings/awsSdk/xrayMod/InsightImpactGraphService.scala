@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InsightImpactGraphService extends StObject {
   
   /**
-    * Identifier of the AWS account in which the service runs.
+    * Identifier of the Amazon Web Services account in which the service runs.
     */
   var AccountId: js.UndefOr[String] = js.undefined
   
@@ -32,7 +32,7 @@ trait InsightImpactGraphService extends StObject {
   var ReferenceId: js.UndefOr[NullableInteger] = js.undefined
   
   /**
-    * Identifier for the service. Unique within the service map.   AWS Resource - The type of an AWS resource. For example, AWS::EC2::Instance for an application running on Amazon EC2 or AWS::DynamoDB::Table for an Amazon DynamoDB table that the application used.    AWS Service - The type of an AWS service. For example, AWS::DynamoDB for downstream calls to Amazon DynamoDB that didn't target a specific table.    AWS Service - The type of an AWS service. For example, AWS::DynamoDB for downstream calls to Amazon DynamoDB that didn't target a specific table.    remote - A downstream service of indeterminate type.  
+    * Identifier for the service. Unique within the service map.   Amazon Web Services Resource - The type of an Amazon Web Services resource. For example, AWS::EC2::Instance for an application running on Amazon EC2 or AWS::DynamoDB::Table for an Amazon DynamoDB table that the application used.    Amazon Web Services Service - The type of an Amazon Web Services service. For example, AWS::DynamoDB for downstream calls to Amazon DynamoDB that didn't target a specific table.    Amazon Web Services Service - The type of an Amazon Web Services service. For example, AWS::DynamoDB for downstream calls to Amazon DynamoDB that didn't target a specific table.    remote - A downstream service of indeterminate type.  
     */
   var Type: js.UndefOr[String] = js.undefined
 }
@@ -53,7 +53,7 @@ object InsightImpactGraphService {
     
     inline def setEdgesUndefined: Self = StObject.set(x, "Edges", js.undefined)
     
-    inline def setEdgesVarargs(value: InsightImpactGraphEdge*): Self = StObject.set(x, "Edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: InsightImpactGraphEdge*): Self = StObject.set(x, "Edges", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -63,7 +63,7 @@ object InsightImpactGraphService {
     
     inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value*))
     
     inline def setReferenceId(value: NullableInteger): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
     

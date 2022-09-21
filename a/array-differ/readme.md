@@ -1,7 +1,7 @@
 
 # Scala.js typings for array-differ
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Create an array with values that are present in the first input array but not additional ones
@@ -10,10 +10,10 @@ Create an array with values that are present in the first input array but not ad
 | ------------------ | :-------------: |
 | Full name          | array-differ |
 | Keywords           | array, difference, diff, differ, filter, exclude |
-| # releases         | 3 |
-| # dependents       | 47 |
-| # downloads        | 184203991 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1491996666666668E7 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/array-differ#readme)

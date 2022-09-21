@@ -10,15 +10,12 @@ JSON.parse with bigints support
 | ------------------ | :-------------: |
 | Full name          | json-bigint |
 | Keywords           | JSON, bigint, bignumber, parse, json |
-| # releases         | 4 |
-| # dependents       | 223 |
-| # downloads        | 130553344 |
-| # stars            | 4 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.0541460666666668E7 |
+| # stars            | 565.0 |
 
 ## Links
-- [Homepage](https://github.com/sidorares/json-bigint#readme)
-- [Bugs](https://github.com/sidorares/json-bigint/issues)
-- [Repository](https://github.com/sidorares/json-bigint)
 - [Npm](https://www.npmjs.com/package/json-bigint)
     
 

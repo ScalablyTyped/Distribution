@@ -4,21 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The set of columns&#39; values that share the same ldiversity value
-  */
 trait SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass extends StObject {
   
   /**
-    * Size of the equivalence class, for example number of rows with the above
-    * set of values.
+    * Size of the equivalence class, for example number of rows with the above set of values.
     */
-  var equivalenceClassSize: js.UndefOr[String] = js.undefined
+  var equivalenceClassSize: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Set of values defining the equivalence class. One value per
-    * quasi-identifier column in the original KAnonymity metric message. The
-    * order is always the same as the original request.
+    * Set of values defining the equivalence class. One value per quasi-identifier column in the original KAnonymity metric message. The order is always the same as the original request.
     */
   var quasiIdsValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Value]] = js.undefined
 }
@@ -33,12 +27,14 @@ object SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass {
     
     inline def setEquivalenceClassSize(value: String): Self = StObject.set(x, "equivalenceClassSize", value.asInstanceOf[js.Any])
     
+    inline def setEquivalenceClassSizeNull: Self = StObject.set(x, "equivalenceClassSize", null)
+    
     inline def setEquivalenceClassSizeUndefined: Self = StObject.set(x, "equivalenceClassSize", js.undefined)
     
     inline def setQuasiIdsValues(value: js.Array[SchemaGooglePrivacyDlpV2Value]): Self = StObject.set(x, "quasiIdsValues", value.asInstanceOf[js.Any])
     
     inline def setQuasiIdsValuesUndefined: Self = StObject.set(x, "quasiIdsValues", js.undefined)
     
-    inline def setQuasiIdsValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = StObject.set(x, "quasiIdsValues", js.Array(value :_*))
+    inline def setQuasiIdsValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = StObject.set(x, "quasiIdsValues", js.Array(value*))
   }
 }

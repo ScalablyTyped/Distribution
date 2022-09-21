@@ -90,15 +90,15 @@ object DateFormattingInfo {
     
     inline def setAbbreviatedDayNames(value: js.Array[String]): Self = StObject.set(x, "AbbreviatedDayNames", value.asInstanceOf[js.Any])
     
-    inline def setAbbreviatedDayNamesVarargs(value: String*): Self = StObject.set(x, "AbbreviatedDayNames", js.Array(value :_*))
+    inline def setAbbreviatedDayNamesVarargs(value: String*): Self = StObject.set(x, "AbbreviatedDayNames", js.Array(value*))
     
     inline def setAbbreviatedMonthGenitiveNames(value: js.Array[String]): Self = StObject.set(x, "AbbreviatedMonthGenitiveNames", value.asInstanceOf[js.Any])
     
-    inline def setAbbreviatedMonthGenitiveNamesVarargs(value: String*): Self = StObject.set(x, "AbbreviatedMonthGenitiveNames", js.Array(value :_*))
+    inline def setAbbreviatedMonthGenitiveNamesVarargs(value: String*): Self = StObject.set(x, "AbbreviatedMonthGenitiveNames", js.Array(value*))
     
     inline def setAbbreviatedMonthNames(value: js.Array[String]): Self = StObject.set(x, "AbbreviatedMonthNames", value.asInstanceOf[js.Any])
     
-    inline def setAbbreviatedMonthNamesVarargs(value: String*): Self = StObject.set(x, "AbbreviatedMonthNames", js.Array(value :_*))
+    inline def setAbbreviatedMonthNamesVarargs(value: String*): Self = StObject.set(x, "AbbreviatedMonthNames", js.Array(value*))
     
     inline def setAmDesignator(value: String): Self = StObject.set(x, "AmDesignator", value.asInstanceOf[js.Any])
     
@@ -110,7 +110,7 @@ object DateFormattingInfo {
     
     inline def setDayNames(value: js.Array[String]): Self = StObject.set(x, "DayNames", value.asInstanceOf[js.Any])
     
-    inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "DayNames", js.Array(value :_*))
+    inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "DayNames", js.Array(value*))
     
     inline def setFirstDayOfWeek(value: Double): Self = StObject.set(x, "FirstDayOfWeek", value.asInstanceOf[js.Any])
     
@@ -124,11 +124,11 @@ object DateFormattingInfo {
     
     inline def setMonthGenitiveNames(value: js.Array[String]): Self = StObject.set(x, "MonthGenitiveNames", value.asInstanceOf[js.Any])
     
-    inline def setMonthGenitiveNamesVarargs(value: String*): Self = StObject.set(x, "MonthGenitiveNames", js.Array(value :_*))
+    inline def setMonthGenitiveNamesVarargs(value: String*): Self = StObject.set(x, "MonthGenitiveNames", js.Array(value*))
     
     inline def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "MonthNames", value.asInstanceOf[js.Any])
     
-    inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "MonthNames", js.Array(value :_*))
+    inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "MonthNames", js.Array(value*))
     
     inline def setPmDesignator(value: String): Self = StObject.set(x, "PmDesignator", value.asInstanceOf[js.Any])
     
@@ -138,7 +138,7 @@ object DateFormattingInfo {
     
     inline def setShortestDayNames(value: js.Array[String]): Self = StObject.set(x, "ShortestDayNames", value.asInstanceOf[js.Any])
     
-    inline def setShortestDayNamesVarargs(value: String*): Self = StObject.set(x, "ShortestDayNames", js.Array(value :_*))
+    inline def setShortestDayNamesVarargs(value: String*): Self = StObject.set(x, "ShortestDayNames", js.Array(value*))
     
     inline def setSortableDateTimePattern(value: String): Self = StObject.set(x, "SortableDateTimePattern", value.asInstanceOf[js.Any])
     

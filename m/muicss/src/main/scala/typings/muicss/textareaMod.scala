@@ -10,8 +10,8 @@ object textareaMod {
   
   @JSImport("muicss/lib/react/textarea", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TextareaProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TextareaProps, js.Object, Any]
   
-  type TextArea = Component[TextareaProps, js.Object, js.Any]
+  type TextArea = Component[TextareaProps, js.Object, Any]
 }

@@ -47,7 +47,7 @@ object componentMod {
       * @param {T} cfg 定位信息
       */
     /* CompleteClass */
-    override def setLocation(cfg: LocationCfg): js.Any = js.native
+    override def setLocation(cfg: LocationCfg): Any = js.native
     
     /**
       * 设置偏移量
@@ -55,7 +55,7 @@ object componentMod {
       * @param {number} offsetY 偏移 y
       */
     /* CompleteClass */
-    override def setOffset(offsetX: Double, offsetY: Double): js.Any = js.native
+    override def setOffset(offsetX: Double, offsetY: Double): Any = js.native
   }
   
   @js.native
@@ -77,14 +77,14 @@ object componentMod {
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def getEvents(): (Record[String, js.Array[EventType]]) & js.Any = js.native
+    override def getEvents(): (Record[String, js.Array[EventType]]) & Any = js.native
     
     def getLayoutBBox(): BBox = js.native
     
     /**
       * 隐藏
       */
-    def hide(): js.Any = js.native
+    def hide(): Any = js.native
     
     /**
       * @protected
@@ -92,7 +92,7 @@ object componentMod {
       */
     def init(): Unit = js.native
     
-    /* private */ var initCfg: js.Any = js.native
+    /* private */ var initCfg: Any = js.native
     
     def isList(): Boolean = js.native
     
@@ -105,13 +105,13 @@ object componentMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(): this.type & js.Any = js.native
+    override def off(): this.type & Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String): this.type & js.Any = js.native
+    override def off(evt: String): this.type & Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String, callback: js.Function): this.type & js.Any = js.native
+    override def off(evt: String, callback: js.Function): this.type & Any = js.native
     
     /**
       * 监听一个事件
@@ -121,19 +121,19 @@ object componentMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def on(evt: String, callback: js.Function): this.type & js.Any = js.native
+    override def on(evt: String, callback: js.Function): this.type & Any = js.native
     
     /**
       * 绘制组件
       */
-    def render(): js.Any = js.native
+    def render(): Any = js.native
     
-    def setCapture(capture: Boolean): js.Any = js.native
+    def setCapture(capture: Boolean): Any = js.native
     
     /**
       * 显示
       */
-    def show(): js.Any = js.native
+    def show(): Any = js.native
     
     /**
       * 更新组件

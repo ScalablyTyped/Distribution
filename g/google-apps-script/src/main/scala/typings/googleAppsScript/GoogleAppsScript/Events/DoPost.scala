@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Events
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,8 +16,8 @@ object DoPost {
   inline def apply(
     contentLength: Double,
     contextPath: String,
-    parameter: js.Object,
-    parameters: js.Object,
+    parameter: StringDictionary[String],
+    parameters: StringDictionary[js.Array[String]],
     postData: AppsScriptHttpRequestEventPostData,
     queryString: String
   ): DoPost = {

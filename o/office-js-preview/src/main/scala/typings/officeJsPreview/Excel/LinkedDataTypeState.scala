@@ -7,32 +7,53 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait LinkedDataTypeState extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.LinkedDataTypeState")
 @js.native
 object LinkedDataTypeState extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
   sealed trait brokenLinkedData
     extends StObject
        with LinkedDataTypeState
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
   sealed trait disambiguationNeeded
     extends StObject
        with LinkedDataTypeState
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
   sealed trait fetchingData
     extends StObject
        with LinkedDataTypeState
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
   sealed trait none
     extends StObject
        with LinkedDataTypeState
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
   sealed trait validLinkedData
     extends StObject

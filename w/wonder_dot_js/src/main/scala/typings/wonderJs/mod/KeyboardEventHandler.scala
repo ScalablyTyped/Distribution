@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "KeyboardEventHandler")
 @js.native
-class KeyboardEventHandler ()
+open class KeyboardEventHandler ()
   extends typings.wonderJs.keyboardEventHandlerMod.KeyboardEventHandler
 /* static members */
 object KeyboardEventHandler {
@@ -15,5 +15,5 @@ object KeyboardEventHandler {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+  inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
 }

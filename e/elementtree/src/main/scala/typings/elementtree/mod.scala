@@ -87,7 +87,7 @@ object mod {
   
   @JSImport("elementtree", "ElementTree")
   @js.native
-  class ElementTree protected () extends StObject {
+  open class ElementTree protected () extends StObject {
     def this(element: Element) = this()
     
     def _setroot(element: Element): Unit = js.native
@@ -111,7 +111,7 @@ object mod {
   
   @JSImport("elementtree", "QName")
   @js.native
-  class QName protected () extends StObject {
+  open class QName protected () extends StObject {
     def this(text_or_uri: String) = this()
     def this(text_or_uri: String, tag: String) = this()
     

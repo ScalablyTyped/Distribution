@@ -1,5 +1,9 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.ActionButtonPropertiestyp
+import typings.arcgisJsApi.anon.ActionTogglePropertiestyp
+import typings.arcgisJsApi.anon.MapViewPropertiestype2d
+import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +12,8 @@ trait ListItemProperties extends StObject {
   
   /**
     * Whether the actions panel is open in the LayerList.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#actionsOpen)
     */
@@ -19,7 +25,7 @@ trait ListItemProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#actionsSections)
     */
   var actionsSections: js.UndefOr[
-    (CollectionProperties[CollectionProperties[ActionButtonProperties | ActionToggleProperties]]) | js.Array[js.Array[js.Any]]
+    (CollectionProperties[CollectionProperties[ActionButtonPropertiestyp | ActionTogglePropertiestyp]]) | js.Array[js.Array[Any]]
   ] = js.undefined
   
   /**
@@ -32,12 +38,25 @@ trait ListItemProperties extends StObject {
   /**
     * Indicates if the children of a list item (or sublayers in a GroupLayer) can be sorted or moved/reordered.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#childrenSortable)
     */
   var childrenSortable: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * When `true`, hides the layer from the LayerList instance.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#hidden)
+    */
+  var hidden: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The layer associated with the triggered action.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#layer)
     */
@@ -45,6 +64,8 @@ trait ListItemProperties extends StObject {
   
   /**
     * Whether the layer is open in the LayerList.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#open)
     */
@@ -58,7 +79,9 @@ trait ListItemProperties extends StObject {
   var panel: js.UndefOr[ListItemPanel] = js.undefined
   
   /**
-    * The parent of this item.
+    * The parent of this item
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#parent)
     */
@@ -66,6 +89,8 @@ trait ListItemProperties extends StObject {
   
   /**
     * Indicates if the list item (or layer in the map) can be sorted or moved/reordered.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#sortable)
     */
@@ -83,10 +108,12 @@ trait ListItemProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
     * Indicates if the ListItem is visible.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#visible)
     */
@@ -106,14 +133,14 @@ object ListItemProperties {
     inline def setActionsOpenUndefined: Self = StObject.set(x, "actionsOpen", js.undefined)
     
     inline def setActionsSections(
-      value: (CollectionProperties[CollectionProperties[ActionButtonProperties | ActionToggleProperties]]) | js.Array[js.Array[js.Any]]
+      value: (CollectionProperties[CollectionProperties[ActionButtonPropertiestyp | ActionTogglePropertiestyp]]) | js.Array[js.Array[Any]]
     ): Self = StObject.set(x, "actionsSections", value.asInstanceOf[js.Any])
     
     inline def setActionsSectionsUndefined: Self = StObject.set(x, "actionsSections", js.undefined)
     
     inline def setActionsSectionsVarargs(
-      value: (js.Array[js.Any] | (CollectionProperties[ActionButtonProperties | ActionToggleProperties]))*
-    ): Self = StObject.set(x, "actionsSections", js.Array(value :_*))
+      value: (js.Array[Any] | (CollectionProperties[ActionButtonPropertiestyp | ActionTogglePropertiestyp]))*
+    ): Self = StObject.set(x, "actionsSections", js.Array(value*))
     
     inline def setChildren(value: CollectionProperties[ListItemProperties]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
@@ -123,7 +150,11 @@ object ListItemProperties {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: ListItemProperties*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ListItemProperties*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     inline def setLayer(value: LayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
@@ -149,7 +180,7 @@ object ListItemProperties {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     

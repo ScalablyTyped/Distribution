@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ShaderDefineArithmeticOperator")
 @js.native
-class ShaderDefineArithmeticOperator protected ()
+open class ShaderDefineArithmeticOperator protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ShaderDefineArithmeticOperator {
   def this(define: String, operand: String, testValue: String) = this()

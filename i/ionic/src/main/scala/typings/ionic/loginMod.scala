@@ -16,7 +16,7 @@ object loginMod {
   - typings.ionic.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @JSImport("ionic/commands/login", "LoginCommand")
   @js.native
-  class LoginCommand protected () extends Command {
+  open class LoginCommand protected () extends Command {
     def this(namespace: INamespace) = this()
     
     def getPasswordFromStdin(): js.Promise[String] = js.native

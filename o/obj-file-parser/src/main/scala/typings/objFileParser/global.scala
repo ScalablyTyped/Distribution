@@ -11,10 +11,10 @@ object global {
     /* Class module */
     @JSGlobal("ObjFileParser")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.objFileParser.mod.^ {
-      def this(fileContents: js.Any) = this()
-      def this(fileContents: js.Any, defaultModelName: js.Any) = this()
+      def this(fileContents: Any) = this()
+      def this(fileContents: Any, defaultModelName: Any) = this()
     }
   }
 }

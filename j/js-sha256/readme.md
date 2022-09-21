@@ -10,10 +10,10 @@ A simple SHA-256 / SHA-224 hash function for JavaScript supports UTF-8 encoding.
 | ------------------ | :-------------: |
 | Full name          | js-sha256 |
 | Keywords           | sha, sha2, sha224, sha256, hash, encryption, cryptography, HMAC |
-| # releases         | 0 |
-| # dependents       | 417 |
-| # downloads        | 11732372 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3397921.6666666665 |
+| # stars            | 691.0 |
 
 ## Links
 - [Homepage](https://github.com/emn178/js-sha256)

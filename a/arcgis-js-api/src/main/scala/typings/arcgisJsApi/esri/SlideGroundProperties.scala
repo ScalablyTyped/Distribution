@@ -11,7 +11,7 @@ trait SlideGroundProperties
      with Object {
   
   /**
-    * Ground opacity.
+    * Ground opacity
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#ground)
     */

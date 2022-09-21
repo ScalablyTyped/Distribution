@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.Uniform")
 @js.native
-class Uniform protected ()
+open class Uniform protected ()
   extends typings.three.mod.Uniform {
-  def this(value: js.Any) = this()
+  def this(value: Any) = this()
 }

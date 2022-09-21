@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Matched range of a snippet [start, end).
-  */
 trait SchemaMatchRange extends StObject {
   
   /**
     * End of the match in the snippet.
     */
-  var end: js.UndefOr[Double] = js.undefined
+  var end: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Starting position of the match in the snippet.
     */
-  var start: js.UndefOr[Double] = js.undefined
+  var start: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaMatchRange {
   
@@ -30,9 +27,13 @@ object SchemaMatchRange {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
+    inline def setEndNull: Self = StObject.set(x, "end", null)
+    
     inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartNull: Self = StObject.set(x, "start", null)
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }

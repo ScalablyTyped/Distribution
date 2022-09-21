@@ -1,50 +1,44 @@
 package typings.rollup.mod
 
-import typings.rollup.anon.AssetFileName
-import typings.rollup.anon.AssetReferenceId
-import typings.rollup.anon.ChunkId
-import typings.rollup.anon.Code
-import typings.rollup.anon.CustomResolution
-import typings.rollup.anon.Left
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OutputPluginHooks extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.rollup.rollupStrings.augmentChunkHash
+  - typings.rollup.rollupStrings.generateBundle
+  - typings.rollup.rollupStrings.outputOptions
+  - typings.rollup.rollupStrings.renderChunk
+  - typings.rollup.rollupStrings.renderDynamicImport
+  - typings.rollup.rollupStrings.renderError
+  - typings.rollup.rollupStrings.renderStart
+  - typings.rollup.rollupStrings.resolveAssetUrl
+  - typings.rollup.rollupStrings.resolveFileUrl
+  - typings.rollup.rollupStrings.resolveImportMeta
+  - typings.rollup.rollupStrings.writeBundle
+*/
+trait OutputPluginHooks extends StObject
+object OutputPluginHooks {
   
-  def augmentChunkHash(chunk: PreRenderedChunk): String | Unit = js.native
+  inline def augmentChunkHash: typings.rollup.rollupStrings.augmentChunkHash = "augmentChunkHash".asInstanceOf[typings.rollup.rollupStrings.augmentChunkHash]
   
-  def generateBundle(options: NormalizedOutputOptions, bundle: OutputBundle, isWrite: Boolean): Unit | js.Promise[Unit] = js.native
+  inline def generateBundle: typings.rollup.rollupStrings.generateBundle = "generateBundle".asInstanceOf[typings.rollup.rollupStrings.generateBundle]
   
-  def outputOptions(options: OutputOptions): js.UndefOr[OutputOptions | Null] = js.native
+  inline def outputOptions: typings.rollup.rollupStrings.outputOptions = "outputOptions".asInstanceOf[typings.rollup.rollupStrings.outputOptions]
   
-  def renderChunk(code: String, chunk: RenderedChunk, options: NormalizedOutputOptions): (js.Promise[Code | Null]) | Code | String | Null = js.native
-  @JSName("renderChunk")
-  var renderChunk_Original: RenderChunkHook = js.native
+  inline def renderChunk: typings.rollup.rollupStrings.renderChunk = "renderChunk".asInstanceOf[typings.rollup.rollupStrings.renderChunk]
   
-  def renderDynamicImport(options: CustomResolution): js.UndefOr[Left | Null] = js.native
+  inline def renderDynamicImport: typings.rollup.rollupStrings.renderDynamicImport = "renderDynamicImport".asInstanceOf[typings.rollup.rollupStrings.renderDynamicImport]
   
-  def renderError(): js.Promise[Unit] | Unit = js.native
-  def renderError(err: Error): js.Promise[Unit] | Unit = js.native
+  inline def renderError: typings.rollup.rollupStrings.renderError = "renderError".asInstanceOf[typings.rollup.rollupStrings.renderError]
   
-  def renderStart(outputOptions: NormalizedOutputOptions, inputOptions: NormalizedInputOptions): js.Promise[Unit] | Unit = js.native
+  inline def renderStart: typings.rollup.rollupStrings.renderStart = "renderStart".asInstanceOf[typings.rollup.rollupStrings.renderStart]
   
-  /** @deprecated Use `resolveFileUrl` instead */
-  def resolveAssetUrl(options: AssetFileName): js.UndefOr[String | Null] = js.native
-  /** @deprecated Use `resolveFileUrl` instead */
-  @JSName("resolveAssetUrl")
-  var resolveAssetUrl_Original: ResolveAssetUrlHook = js.native
+  inline def resolveAssetUrl: typings.rollup.rollupStrings.resolveAssetUrl = "resolveAssetUrl".asInstanceOf[typings.rollup.rollupStrings.resolveAssetUrl]
   
-  def resolveFileUrl(options: AssetReferenceId): js.UndefOr[String | Null] = js.native
-  @JSName("resolveFileUrl")
-  var resolveFileUrl_Original: ResolveFileUrlHook = js.native
+  inline def resolveFileUrl: typings.rollup.rollupStrings.resolveFileUrl = "resolveFileUrl".asInstanceOf[typings.rollup.rollupStrings.resolveFileUrl]
   
-  def resolveImportMeta(prop: String, options: ChunkId): js.UndefOr[String | Null] = js.native
-  def resolveImportMeta(prop: Null, options: ChunkId): js.UndefOr[String | Null] = js.native
-  @JSName("resolveImportMeta")
-  var resolveImportMeta_Original: ResolveImportMetaHook = js.native
+  inline def resolveImportMeta: typings.rollup.rollupStrings.resolveImportMeta = "resolveImportMeta".asInstanceOf[typings.rollup.rollupStrings.resolveImportMeta]
   
-  def writeBundle(options: NormalizedOutputOptions, bundle: OutputBundle): Unit | js.Promise[Unit] = js.native
+  inline def writeBundle: typings.rollup.rollupStrings.writeBundle = "writeBundle".asInstanceOf[typings.rollup.rollupStrings.writeBundle]
 }

@@ -7,20 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaListHistoryResponse extends StObject {
   
   /**
-    * List of history records. Any messages contained in the response will
-    * typically only have id and threadId fields populated.
+    * List of history records. Any `messages` contained in the response will typically only have `id` and `threadId` fields populated.
     */
   var history: js.UndefOr[js.Array[SchemaHistory]] = js.undefined
   
   /**
-    * The ID of the mailbox&#39;s current history record.
+    * The ID of the mailbox's current history record.
     */
-  var historyId: js.UndefOr[String] = js.undefined
+  var historyId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Page token to retrieve the next page of results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListHistoryResponse {
   
@@ -35,13 +34,17 @@ object SchemaListHistoryResponse {
     
     inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
     
+    inline def setHistoryIdNull: Self = StObject.set(x, "historyId", null)
+    
     inline def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
     
     inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    inline def setHistoryVarargs(value: SchemaHistory*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: SchemaHistory*): Self = StObject.set(x, "history", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

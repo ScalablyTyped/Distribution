@@ -8,178 +8,177 @@ import typings.babelTraverse.babelTraverseStrings.`var`
 import typings.babelTraverse.babelTraverseStrings.const
 import typings.babelTraverse.babelTraverseStrings.let
 import typings.babelTraverse.babelTraverseStrings.module
-import typings.babelTypes.ts36Mod.AnyTypeAnnotation_
-import typings.babelTypes.ts36Mod.ArrayExpression_
-import typings.babelTypes.ts36Mod.ArrayPattern_
-import typings.babelTypes.ts36Mod.ArrayTypeAnnotation_
-import typings.babelTypes.ts36Mod.ArrowFunctionExpression_
-import typings.babelTypes.ts36Mod.AssignmentExpression_
-import typings.babelTypes.ts36Mod.AssignmentPattern_
-import typings.babelTypes.ts36Mod.AwaitExpression_
-import typings.babelTypes.ts36Mod.Binary
-import typings.babelTypes.ts36Mod.BinaryExpression_
-import typings.babelTypes.ts36Mod.BindExpression_
-import typings.babelTypes.ts36Mod.Block
-import typings.babelTypes.ts36Mod.BlockParent
-import typings.babelTypes.ts36Mod.BlockStatement_
-import typings.babelTypes.ts36Mod.BooleanLiteralTypeAnnotation_
-import typings.babelTypes.ts36Mod.BooleanLiteral_
-import typings.babelTypes.ts36Mod.BooleanTypeAnnotation_
-import typings.babelTypes.ts36Mod.BreakStatement_
-import typings.babelTypes.ts36Mod.CallExpression_
-import typings.babelTypes.ts36Mod.CatchClause_
-import typings.babelTypes.ts36Mod.Class
-import typings.babelTypes.ts36Mod.ClassBody_
-import typings.babelTypes.ts36Mod.ClassDeclaration_
-import typings.babelTypes.ts36Mod.ClassExpression_
-import typings.babelTypes.ts36Mod.ClassImplements_
-import typings.babelTypes.ts36Mod.ClassMethod_
-import typings.babelTypes.ts36Mod.ClassProperty_
-import typings.babelTypes.ts36Mod.CompletionStatement
-import typings.babelTypes.ts36Mod.Conditional
-import typings.babelTypes.ts36Mod.ConditionalExpression_
-import typings.babelTypes.ts36Mod.ContinueStatement_
-import typings.babelTypes.ts36Mod.DebuggerStatement_
-import typings.babelTypes.ts36Mod.Declaration
-import typings.babelTypes.ts36Mod.DeclareClass_
-import typings.babelTypes.ts36Mod.DeclareFunction_
-import typings.babelTypes.ts36Mod.DeclareInterface_
-import typings.babelTypes.ts36Mod.DeclareModule_
-import typings.babelTypes.ts36Mod.DeclareTypeAlias_
-import typings.babelTypes.ts36Mod.DeclareVariable_
-import typings.babelTypes.ts36Mod.Decorator_
-import typings.babelTypes.ts36Mod.DirectiveLiteral_
-import typings.babelTypes.ts36Mod.Directive_
-import typings.babelTypes.ts36Mod.DoExpression_
-import typings.babelTypes.ts36Mod.DoWhileStatement_
-import typings.babelTypes.ts36Mod.EmptyStatement_
-import typings.babelTypes.ts36Mod.ExistentialTypeParam_
-import typings.babelTypes.ts36Mod.ExportAllDeclaration_
-import typings.babelTypes.ts36Mod.ExportDeclaration
-import typings.babelTypes.ts36Mod.ExportDefaultDeclaration_
-import typings.babelTypes.ts36Mod.ExportDefaultSpecifier_
-import typings.babelTypes.ts36Mod.ExportNamedDeclaration_
-import typings.babelTypes.ts36Mod.ExportNamespaceSpecifier_
-import typings.babelTypes.ts36Mod.ExportSpecifier_
-import typings.babelTypes.ts36Mod.Expression
-import typings.babelTypes.ts36Mod.ExpressionStatement_
-import typings.babelTypes.ts36Mod.ExpressionWrapper
-import typings.babelTypes.ts36Mod.File_
-import typings.babelTypes.ts36Mod.Flow
-import typings.babelTypes.ts36Mod.FlowBaseAnnotation
-import typings.babelTypes.ts36Mod.FlowDeclaration
-import typings.babelTypes.ts36Mod.FlowTypeAnnotation
-import typings.babelTypes.ts36Mod.For
-import typings.babelTypes.ts36Mod.ForInStatement_
-import typings.babelTypes.ts36Mod.ForOfStatement_
-import typings.babelTypes.ts36Mod.ForStatement_
-import typings.babelTypes.ts36Mod.ForXStatement
-import typings.babelTypes.ts36Mod.Function
-import typings.babelTypes.ts36Mod.FunctionDeclaration_
-import typings.babelTypes.ts36Mod.FunctionExpression_
-import typings.babelTypes.ts36Mod.FunctionParent
-import typings.babelTypes.ts36Mod.FunctionTypeAnnotation_
-import typings.babelTypes.ts36Mod.FunctionTypeParam_
-import typings.babelTypes.ts36Mod.GenericTypeAnnotation_
-import typings.babelTypes.ts36Mod.Identifier_
-import typings.babelTypes.ts36Mod.IfStatement_
-import typings.babelTypes.ts36Mod.Immutable
-import typings.babelTypes.ts36Mod.ImportDeclaration_
-import typings.babelTypes.ts36Mod.ImportDefaultSpecifier_
-import typings.babelTypes.ts36Mod.ImportNamespaceSpecifier_
-import typings.babelTypes.ts36Mod.ImportSpecifier_
-import typings.babelTypes.ts36Mod.InterfaceDeclaration_
-import typings.babelTypes.ts36Mod.InterfaceExtends_
-import typings.babelTypes.ts36Mod.IntersectionTypeAnnotation_
-import typings.babelTypes.ts36Mod.JSX
-import typings.babelTypes.ts36Mod.JSXAttribute_
-import typings.babelTypes.ts36Mod.JSXClosingElement_
-import typings.babelTypes.ts36Mod.JSXElement_
-import typings.babelTypes.ts36Mod.JSXEmptyExpression_
-import typings.babelTypes.ts36Mod.JSXExpressionContainer_
-import typings.babelTypes.ts36Mod.JSXIdentifier_
-import typings.babelTypes.ts36Mod.JSXMemberExpression_
-import typings.babelTypes.ts36Mod.JSXNamespacedName_
-import typings.babelTypes.ts36Mod.JSXOpeningElement_
-import typings.babelTypes.ts36Mod.JSXSpreadAttribute_
-import typings.babelTypes.ts36Mod.JSXText_
-import typings.babelTypes.ts36Mod.LVal
-import typings.babelTypes.ts36Mod.LabeledStatement_
-import typings.babelTypes.ts36Mod.Literal
-import typings.babelTypes.ts36Mod.LogicalExpression_
-import typings.babelTypes.ts36Mod.Loop
-import typings.babelTypes.ts36Mod.MemberExpression_
-import typings.babelTypes.ts36Mod.MetaProperty_
-import typings.babelTypes.ts36Mod.Method
-import typings.babelTypes.ts36Mod.MixedTypeAnnotation_
-import typings.babelTypes.ts36Mod.ModuleDeclaration
-import typings.babelTypes.ts36Mod.ModuleSpecifier
-import typings.babelTypes.ts36Mod.NewExpression_
-import typings.babelTypes.ts36Mod.Noop_
-import typings.babelTypes.ts36Mod.NullLiteralTypeAnnotation_
-import typings.babelTypes.ts36Mod.NullLiteral_
-import typings.babelTypes.ts36Mod.NullableTypeAnnotation_
-import typings.babelTypes.ts36Mod.NumberTypeAnnotation_
-import typings.babelTypes.ts36Mod.NumericLiteralTypeAnnotation_
-import typings.babelTypes.ts36Mod.NumericLiteral_
-import typings.babelTypes.ts36Mod.ObjectExpression_
-import typings.babelTypes.ts36Mod.ObjectMember
-import typings.babelTypes.ts36Mod.ObjectMethod_
-import typings.babelTypes.ts36Mod.ObjectPattern_
-import typings.babelTypes.ts36Mod.ObjectProperty_
-import typings.babelTypes.ts36Mod.ObjectTypeAnnotation_
-import typings.babelTypes.ts36Mod.ObjectTypeCallProperty_
-import typings.babelTypes.ts36Mod.ObjectTypeIndexer_
-import typings.babelTypes.ts36Mod.ObjectTypeProperty_
-import typings.babelTypes.ts36Mod.ParenthesizedExpression_
-import typings.babelTypes.ts36Mod.Pattern
-import typings.babelTypes.ts36Mod.Program_
-import typings.babelTypes.ts36Mod.Property
-import typings.babelTypes.ts36Mod.Pureish
-import typings.babelTypes.ts36Mod.QualifiedTypeIdentifier_
-import typings.babelTypes.ts36Mod.RegExpLiteral_
-import typings.babelTypes.ts36Mod.RestElement_
-import typings.babelTypes.ts36Mod.RestProperty_
-import typings.babelTypes.ts36Mod.ReturnStatement_
-import typings.babelTypes.ts36Mod.Scopable
-import typings.babelTypes.ts36Mod.SequenceExpression_
-import typings.babelTypes.ts36Mod.SpreadElement_
-import typings.babelTypes.ts36Mod.SpreadProperty_
-import typings.babelTypes.ts36Mod.Statement
-import typings.babelTypes.ts36Mod.StringLiteralTypeAnnotation_
-import typings.babelTypes.ts36Mod.StringLiteral_
-import typings.babelTypes.ts36Mod.StringTypeAnnotation_
-import typings.babelTypes.ts36Mod.Super
-import typings.babelTypes.ts36Mod.SwitchCase_
-import typings.babelTypes.ts36Mod.SwitchStatement_
-import typings.babelTypes.ts36Mod.TaggedTemplateExpression_
-import typings.babelTypes.ts36Mod.TemplateElement_
-import typings.babelTypes.ts36Mod.TemplateLiteral_
-import typings.babelTypes.ts36Mod.Terminatorless
-import typings.babelTypes.ts36Mod.ThisExpression_
-import typings.babelTypes.ts36Mod.ThisTypeAnnotation_
-import typings.babelTypes.ts36Mod.ThrowStatement_
-import typings.babelTypes.ts36Mod.TryStatement_
-import typings.babelTypes.ts36Mod.TupleTypeAnnotation_
-import typings.babelTypes.ts36Mod.TypeAlias_
-import typings.babelTypes.ts36Mod.TypeAnnotation_
-import typings.babelTypes.ts36Mod.TypeCastExpression_
-import typings.babelTypes.ts36Mod.TypeParameterDeclaration_
-import typings.babelTypes.ts36Mod.TypeParameterInstantiation_
-import typings.babelTypes.ts36Mod.TypeofTypeAnnotation_
-import typings.babelTypes.ts36Mod.UnaryExpression_
-import typings.babelTypes.ts36Mod.UnaryLike
-import typings.babelTypes.ts36Mod.UnionTypeAnnotation_
-import typings.babelTypes.ts36Mod.UpdateExpression_
-import typings.babelTypes.ts36Mod.UserWhitespacable
-import typings.babelTypes.ts36Mod.VariableDeclaration_
-import typings.babelTypes.ts36Mod.VariableDeclarator_
-import typings.babelTypes.ts36Mod.VoidTypeAnnotation_
-import typings.babelTypes.ts36Mod.While
-import typings.babelTypes.ts36Mod.WhileStatement_
-import typings.babelTypes.ts36Mod.WithStatement_
-import typings.babelTypes.ts36Mod.YieldExpression_
-import typings.std.Error
+import typings.babelTypes.mod.AnyTypeAnnotation_
+import typings.babelTypes.mod.ArrayExpression_
+import typings.babelTypes.mod.ArrayPattern_
+import typings.babelTypes.mod.ArrayTypeAnnotation_
+import typings.babelTypes.mod.ArrowFunctionExpression_
+import typings.babelTypes.mod.AssignmentExpression_
+import typings.babelTypes.mod.AssignmentPattern_
+import typings.babelTypes.mod.AwaitExpression_
+import typings.babelTypes.mod.Binary
+import typings.babelTypes.mod.BinaryExpression_
+import typings.babelTypes.mod.BindExpression_
+import typings.babelTypes.mod.Block
+import typings.babelTypes.mod.BlockParent
+import typings.babelTypes.mod.BlockStatement_
+import typings.babelTypes.mod.BooleanLiteralTypeAnnotation_
+import typings.babelTypes.mod.BooleanLiteral_
+import typings.babelTypes.mod.BooleanTypeAnnotation_
+import typings.babelTypes.mod.BreakStatement_
+import typings.babelTypes.mod.CallExpression_
+import typings.babelTypes.mod.CatchClause_
+import typings.babelTypes.mod.Class
+import typings.babelTypes.mod.ClassBody_
+import typings.babelTypes.mod.ClassDeclaration_
+import typings.babelTypes.mod.ClassExpression_
+import typings.babelTypes.mod.ClassImplements_
+import typings.babelTypes.mod.ClassMethod_
+import typings.babelTypes.mod.ClassProperty_
+import typings.babelTypes.mod.CompletionStatement
+import typings.babelTypes.mod.Conditional
+import typings.babelTypes.mod.ConditionalExpression_
+import typings.babelTypes.mod.ContinueStatement_
+import typings.babelTypes.mod.DebuggerStatement_
+import typings.babelTypes.mod.Declaration
+import typings.babelTypes.mod.DeclareClass_
+import typings.babelTypes.mod.DeclareFunction_
+import typings.babelTypes.mod.DeclareInterface_
+import typings.babelTypes.mod.DeclareModule_
+import typings.babelTypes.mod.DeclareTypeAlias_
+import typings.babelTypes.mod.DeclareVariable_
+import typings.babelTypes.mod.Decorator_
+import typings.babelTypes.mod.DirectiveLiteral_
+import typings.babelTypes.mod.Directive_
+import typings.babelTypes.mod.DoExpression_
+import typings.babelTypes.mod.DoWhileStatement_
+import typings.babelTypes.mod.EmptyStatement_
+import typings.babelTypes.mod.ExistentialTypeParam_
+import typings.babelTypes.mod.ExportAllDeclaration_
+import typings.babelTypes.mod.ExportDeclaration
+import typings.babelTypes.mod.ExportDefaultDeclaration_
+import typings.babelTypes.mod.ExportDefaultSpecifier_
+import typings.babelTypes.mod.ExportNamedDeclaration_
+import typings.babelTypes.mod.ExportNamespaceSpecifier_
+import typings.babelTypes.mod.ExportSpecifier_
+import typings.babelTypes.mod.Expression
+import typings.babelTypes.mod.ExpressionStatement_
+import typings.babelTypes.mod.ExpressionWrapper
+import typings.babelTypes.mod.File_
+import typings.babelTypes.mod.Flow
+import typings.babelTypes.mod.FlowBaseAnnotation
+import typings.babelTypes.mod.FlowDeclaration
+import typings.babelTypes.mod.FlowTypeAnnotation
+import typings.babelTypes.mod.For
+import typings.babelTypes.mod.ForInStatement_
+import typings.babelTypes.mod.ForOfStatement_
+import typings.babelTypes.mod.ForStatement_
+import typings.babelTypes.mod.ForXStatement
+import typings.babelTypes.mod.Function
+import typings.babelTypes.mod.FunctionDeclaration_
+import typings.babelTypes.mod.FunctionExpression_
+import typings.babelTypes.mod.FunctionParent
+import typings.babelTypes.mod.FunctionTypeAnnotation_
+import typings.babelTypes.mod.FunctionTypeParam_
+import typings.babelTypes.mod.GenericTypeAnnotation_
+import typings.babelTypes.mod.Identifier_
+import typings.babelTypes.mod.IfStatement_
+import typings.babelTypes.mod.Immutable
+import typings.babelTypes.mod.ImportDeclaration_
+import typings.babelTypes.mod.ImportDefaultSpecifier_
+import typings.babelTypes.mod.ImportNamespaceSpecifier_
+import typings.babelTypes.mod.ImportSpecifier_
+import typings.babelTypes.mod.InterfaceDeclaration_
+import typings.babelTypes.mod.InterfaceExtends_
+import typings.babelTypes.mod.IntersectionTypeAnnotation_
+import typings.babelTypes.mod.JSX
+import typings.babelTypes.mod.JSXAttribute_
+import typings.babelTypes.mod.JSXClosingElement_
+import typings.babelTypes.mod.JSXElement_
+import typings.babelTypes.mod.JSXEmptyExpression_
+import typings.babelTypes.mod.JSXExpressionContainer_
+import typings.babelTypes.mod.JSXIdentifier_
+import typings.babelTypes.mod.JSXMemberExpression_
+import typings.babelTypes.mod.JSXNamespacedName_
+import typings.babelTypes.mod.JSXOpeningElement_
+import typings.babelTypes.mod.JSXSpreadAttribute_
+import typings.babelTypes.mod.JSXText_
+import typings.babelTypes.mod.LVal
+import typings.babelTypes.mod.LabeledStatement_
+import typings.babelTypes.mod.Literal
+import typings.babelTypes.mod.LogicalExpression_
+import typings.babelTypes.mod.Loop
+import typings.babelTypes.mod.MemberExpression_
+import typings.babelTypes.mod.MetaProperty_
+import typings.babelTypes.mod.Method
+import typings.babelTypes.mod.MixedTypeAnnotation_
+import typings.babelTypes.mod.ModuleDeclaration
+import typings.babelTypes.mod.ModuleSpecifier
+import typings.babelTypes.mod.NewExpression_
+import typings.babelTypes.mod.Noop_
+import typings.babelTypes.mod.NullLiteralTypeAnnotation_
+import typings.babelTypes.mod.NullLiteral_
+import typings.babelTypes.mod.NullableTypeAnnotation_
+import typings.babelTypes.mod.NumberTypeAnnotation_
+import typings.babelTypes.mod.NumericLiteralTypeAnnotation_
+import typings.babelTypes.mod.NumericLiteral_
+import typings.babelTypes.mod.ObjectExpression_
+import typings.babelTypes.mod.ObjectMember
+import typings.babelTypes.mod.ObjectMethod_
+import typings.babelTypes.mod.ObjectPattern_
+import typings.babelTypes.mod.ObjectProperty_
+import typings.babelTypes.mod.ObjectTypeAnnotation_
+import typings.babelTypes.mod.ObjectTypeCallProperty_
+import typings.babelTypes.mod.ObjectTypeIndexer_
+import typings.babelTypes.mod.ObjectTypeProperty_
+import typings.babelTypes.mod.ParenthesizedExpression_
+import typings.babelTypes.mod.Pattern
+import typings.babelTypes.mod.Program_
+import typings.babelTypes.mod.Property
+import typings.babelTypes.mod.Pureish
+import typings.babelTypes.mod.QualifiedTypeIdentifier_
+import typings.babelTypes.mod.RegExpLiteral_
+import typings.babelTypes.mod.RestElement_
+import typings.babelTypes.mod.RestProperty_
+import typings.babelTypes.mod.ReturnStatement_
+import typings.babelTypes.mod.Scopable
+import typings.babelTypes.mod.SequenceExpression_
+import typings.babelTypes.mod.SpreadElement_
+import typings.babelTypes.mod.SpreadProperty_
+import typings.babelTypes.mod.Statement
+import typings.babelTypes.mod.StringLiteralTypeAnnotation_
+import typings.babelTypes.mod.StringLiteral_
+import typings.babelTypes.mod.StringTypeAnnotation_
+import typings.babelTypes.mod.Super
+import typings.babelTypes.mod.SwitchCase_
+import typings.babelTypes.mod.SwitchStatement_
+import typings.babelTypes.mod.TaggedTemplateExpression_
+import typings.babelTypes.mod.TemplateElement_
+import typings.babelTypes.mod.TemplateLiteral_
+import typings.babelTypes.mod.Terminatorless
+import typings.babelTypes.mod.ThisExpression_
+import typings.babelTypes.mod.ThisTypeAnnotation_
+import typings.babelTypes.mod.ThrowStatement_
+import typings.babelTypes.mod.TryStatement_
+import typings.babelTypes.mod.TupleTypeAnnotation_
+import typings.babelTypes.mod.TypeAlias_
+import typings.babelTypes.mod.TypeAnnotation_
+import typings.babelTypes.mod.TypeCastExpression_
+import typings.babelTypes.mod.TypeParameterDeclaration_
+import typings.babelTypes.mod.TypeParameterInstantiation_
+import typings.babelTypes.mod.TypeofTypeAnnotation_
+import typings.babelTypes.mod.UnaryExpression_
+import typings.babelTypes.mod.UnaryLike
+import typings.babelTypes.mod.UnionTypeAnnotation_
+import typings.babelTypes.mod.UpdateExpression_
+import typings.babelTypes.mod.UserWhitespacable
+import typings.babelTypes.mod.VariableDeclaration_
+import typings.babelTypes.mod.VariableDeclarator_
+import typings.babelTypes.mod.VoidTypeAnnotation_
+import typings.babelTypes.mod.While
+import typings.babelTypes.mod.WhileStatement_
+import typings.babelTypes.mod.WithStatement_
+import typings.babelTypes.mod.YieldExpression_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -191,12 +190,12 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default(parent: js.Array[Node], opts: TraverseOptions[Node]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default(parent: js.Array[Node], opts: TraverseOptions[Node], scope: Unit, state: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(parent: js.Array[Node], opts: TraverseOptions[Node], scope: Unit, state: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default(
     parent: js.Array[Node],
     opts: TraverseOptions[Node],
     scope: Unit,
-    state: js.Any,
+    state: Any,
     parentPath: NodePath[Node]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default(
@@ -207,12 +206,12 @@ object mod {
     parentPath: NodePath[Node]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default(parent: js.Array[Node], opts: TraverseOptions[Node], scope: Scope): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default(parent: js.Array[Node], opts: TraverseOptions[Node], scope: Scope, state: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(parent: js.Array[Node], opts: TraverseOptions[Node], scope: Scope, state: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default(
     parent: js.Array[Node],
     opts: TraverseOptions[Node],
     scope: Scope,
-    state: js.Any,
+    state: Any,
     parentPath: NodePath[Node]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default(
@@ -223,27 +222,17 @@ object mod {
     parentPath: NodePath[Node]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default(parent: Node, opts: TraverseOptions[Node]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default(parent: Node, opts: TraverseOptions[Node], scope: Unit, state: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default(parent: Node, opts: TraverseOptions[Node], scope: Unit, state: js.Any, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(parent: Node, opts: TraverseOptions[Node], scope: Unit, state: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(parent: Node, opts: TraverseOptions[Node], scope: Unit, state: Any, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default(parent: Node, opts: TraverseOptions[Node], scope: Unit, state: Unit, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default(parent: Node, opts: TraverseOptions[Node], scope: Scope): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default(parent: Node, opts: TraverseOptions[Node], scope: Scope, state: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default(parent: Node, opts: TraverseOptions[Node], scope: Scope, state: js.Any, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(parent: Node, opts: TraverseOptions[Node], scope: Scope, state: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(parent: Node, opts: TraverseOptions[Node], scope: Scope, state: Any, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default(parent: Node, opts: TraverseOptions[Node], scope: Scope, state: Unit, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default[S](
-    parent: js.Array[Node],
-    opts: TraverseOptions[S],
-    scope: Scope,
-    state: S,
-    parentPath: NodePath[Node]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("babel-traverse", "Binding")
   @js.native
-  class Binding protected () extends StObject {
+  open class Binding protected () extends StObject {
     def this(opts: Existing) = this()
     
     var constant: Boolean = js.native
@@ -267,24 +256,24 @@ object mod {
   
   @JSImport("babel-traverse", "Hub")
   @js.native
-  class Hub protected () extends StObject {
-    def this(file: js.Any, options: js.Any) = this()
+  open class Hub protected () extends StObject {
+    def this(file: Any, options: Any) = this()
     
-    var file: js.Any = js.native
+    var file: Any = js.native
     
-    var options: js.Any = js.native
+    var options: Any = js.native
   }
   
   @JSImport("babel-traverse", "NodePath")
   @js.native
-  class NodePath[T] protected () extends StObject {
+  open class NodePath[T] protected () extends StObject {
     def this(hub: Hub, parent: Node) = this()
     
     def addComment(`type`: String, content: String): Unit = js.native
     def addComment(`type`: String, content: String, line: Boolean): Unit = js.native
     
     /** Give node `comments` of the specified `type`. */
-    def addComments(`type`: String, comments: js.Array[js.Any]): Unit = js.native
+    def addComments(`type`: String, comments: js.Array[Any]): Unit = js.native
     
     def assertAnyTypeAnnotation(): Unit = js.native
     def assertAnyTypeAnnotation(opts: js.Object): Unit = js.native
@@ -805,8 +794,8 @@ object mod {
     
     def baseTypeStrictlyMatches(right: NodePath[Node]): Boolean = js.native
     
-    def buildCodeFrameError[TError /* <: Error */](msg: String): TError = js.native
-    def buildCodeFrameError[TError /* <: Error */](msg: String, Error: Instantiable1[/* msg */ String, TError]): TError = js.native
+    def buildCodeFrameError[TError /* <: js.Error */](msg: String): TError = js.native
+    def buildCodeFrameError[TError /* <: js.Error */](msg: String, Error: Instantiable1[/* msg */ String, TError]): TError = js.native
     
     // ------------------------- context -------------------------
     def call(key: String): Boolean = js.native
@@ -845,7 +834,7 @@ object mod {
     def debug(buildMessage: js.Function0[String]): Unit = js.native
     
     /** Check whether the path node `key` strict equals `value`. */
-    def equals(key: String, value: js.Any): Boolean = js.native
+    def equals(key: String, value: Any): Boolean = js.native
     
     /**
       * Walk the input `node` and statically evaluate it.
@@ -923,8 +912,8 @@ object mod {
     
     def getCompletionRecords(): js.Array[NodePath[Node]] = js.native
     
-    def getData(key: String): js.Any = js.native
-    def getData(key: String, `def`: js.Any): js.Any = js.native
+    def getData(key: String): Any = js.native
+    def getData(key: String, `def`: Any): Any = js.native
     
     /** Get the earliest path in the tree where the provided `paths` intersect. */
     def getDeepestCommonAncestorFrom(paths: js.Array[NodePath[Node]]): NodePath[Node] = js.native
@@ -950,6 +939,8 @@ object mod {
     /** Get the parent function of the current path. */
     def getFunctionParent(): NodePath[Function] = js.native
     
+    def getNextSibling(): NodePath[Node] = js.native
+    
     // ------------------------- family -------------------------
     def getOpposite(): NodePath[Node] = js.native
     
@@ -957,6 +948,8 @@ object mod {
     def getOuterBindingIdentifiers(duplicates: Boolean): js.Array[Node] = js.native
     
     def getPathLocation(): String = js.native
+    
+    def getPrevSibling(): NodePath[Node] = js.native
     
     def getScope(scope: Scope): Scope = js.native
     
@@ -988,359 +981,359 @@ object mod {
     
     def inType(candidateTypes: String*): Boolean = js.native
     
-    def insertAfter(nodes: js.Array[Node]): js.Any = js.native
+    def insertAfter(nodes: js.Array[Node]): Any = js.native
     /**
       * Insert the provided nodes after the current one. When inserting nodes after an
       * expression, ensure that the completion record is correct by pushing the current node.
       */
-    def insertAfter(nodes: Node): js.Any = js.native
+    def insertAfter(nodes: Node): Any = js.native
     
-    def insertBefore(nodes: js.Array[Node]): js.Any = js.native
+    def insertBefore(nodes: js.Array[Node]): Any = js.native
     // ------------------------- modification -------------------------
     /** Insert the provided nodes before the current one. */
-    def insertBefore(nodes: Node): js.Any = js.native
+    def insertBefore(nodes: Node): Any = js.native
     
     /** Alias of `has`. */
     def is(key: String): Boolean = js.native
     
-    def isAnyTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.AnyTypeAnnotation> */ Boolean = js.native
-    def isAnyTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.AnyTypeAnnotation> */ Boolean = js.native
+    def isAnyTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AnyTypeAnnotation> */ Boolean = js.native
+    def isAnyTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AnyTypeAnnotation> */ Boolean = js.native
     
     // ------------------------- isXXX -------------------------
-    def isArrayExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ArrayExpression> */ Boolean = js.native
-    def isArrayExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ArrayExpression> */ Boolean = js.native
+    def isArrayExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrayExpression> */ Boolean = js.native
+    def isArrayExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrayExpression> */ Boolean = js.native
     
-    def isArrayPattern(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ArrayPattern> */ Boolean = js.native
-    def isArrayPattern(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ArrayPattern> */ Boolean = js.native
+    def isArrayPattern(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrayPattern> */ Boolean = js.native
+    def isArrayPattern(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrayPattern> */ Boolean = js.native
     
-    def isArrayTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ArrayTypeAnnotation> */ Boolean = js.native
-    def isArrayTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ArrayTypeAnnotation> */ Boolean = js.native
+    def isArrayTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrayTypeAnnotation> */ Boolean = js.native
+    def isArrayTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrayTypeAnnotation> */ Boolean = js.native
     
-    def isArrowFunctionExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ArrowFunctionExpression> */ Boolean = js.native
-    def isArrowFunctionExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ArrowFunctionExpression> */ Boolean = js.native
+    def isArrowFunctionExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrowFunctionExpression> */ Boolean = js.native
+    def isArrowFunctionExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ArrowFunctionExpression> */ Boolean = js.native
     
-    def isAssignmentExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.AssignmentExpression> */ Boolean = js.native
-    def isAssignmentExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.AssignmentExpression> */ Boolean = js.native
+    def isAssignmentExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AssignmentExpression> */ Boolean = js.native
+    def isAssignmentExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AssignmentExpression> */ Boolean = js.native
     
-    def isAssignmentPattern(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.AssignmentPattern> */ Boolean = js.native
-    def isAssignmentPattern(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.AssignmentPattern> */ Boolean = js.native
+    def isAssignmentPattern(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AssignmentPattern> */ Boolean = js.native
+    def isAssignmentPattern(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AssignmentPattern> */ Boolean = js.native
     
-    def isAwaitExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.AwaitExpression> */ Boolean = js.native
-    def isAwaitExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.AwaitExpression> */ Boolean = js.native
+    def isAwaitExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AwaitExpression> */ Boolean = js.native
+    def isAwaitExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.AwaitExpression> */ Boolean = js.native
     
     def isBaseType(baseName: String): Boolean = js.native
     def isBaseType(baseName: String, soft: Boolean): Boolean = js.native
     
-    def isBinary(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Binary> */ Boolean = js.native
-    def isBinary(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Binary> */ Boolean = js.native
+    def isBinary(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Binary> */ Boolean = js.native
+    def isBinary(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Binary> */ Boolean = js.native
     
-    def isBinaryExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BinaryExpression> */ Boolean = js.native
-    def isBinaryExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BinaryExpression> */ Boolean = js.native
+    def isBinaryExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BinaryExpression> */ Boolean = js.native
+    def isBinaryExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BinaryExpression> */ Boolean = js.native
     
-    def isBindExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BindExpression> */ Boolean = js.native
-    def isBindExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BindExpression> */ Boolean = js.native
+    def isBindExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BindExpression> */ Boolean = js.native
+    def isBindExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BindExpression> */ Boolean = js.native
     
-    def isBindingIdentifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Identifier> */ Boolean = js.native
-    def isBindingIdentifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Identifier> */ Boolean = js.native
+    def isBindingIdentifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Identifier> */ Boolean = js.native
+    def isBindingIdentifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Identifier> */ Boolean = js.native
     
     def isBlacklisted(): Boolean = js.native
     
-    def isBlock(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Block> */ Boolean = js.native
-    def isBlock(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Block> */ Boolean = js.native
+    def isBlock(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Block> */ Boolean = js.native
+    def isBlock(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Block> */ Boolean = js.native
     
-    def isBlockParent(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BlockParent> */ Boolean = js.native
-    def isBlockParent(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BlockParent> */ Boolean = js.native
+    def isBlockParent(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BlockParent> */ Boolean = js.native
+    def isBlockParent(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BlockParent> */ Boolean = js.native
     
-    def isBlockScoped(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FunctionDeclaration | babel-types.babel-types/ts3.6.ClassDeclaration | babel-types.babel-types/ts3.6.VariableDeclaration> */ Boolean = js.native
-    def isBlockScoped(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FunctionDeclaration | babel-types.babel-types/ts3.6.ClassDeclaration | babel-types.babel-types/ts3.6.VariableDeclaration> */ Boolean = js.native
+    def isBlockScoped(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionDeclaration | babel-types.babel-types.ClassDeclaration | babel-types.babel-types.VariableDeclaration> */ Boolean = js.native
+    def isBlockScoped(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionDeclaration | babel-types.babel-types.ClassDeclaration | babel-types.babel-types.VariableDeclaration> */ Boolean = js.native
     
-    def isBlockStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BlockStatement> */ Boolean = js.native
-    def isBlockStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BlockStatement> */ Boolean = js.native
+    def isBlockStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BlockStatement> */ Boolean = js.native
+    def isBlockStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BlockStatement> */ Boolean = js.native
     
-    def isBooleanLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BooleanLiteral> */ Boolean = js.native
-    def isBooleanLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BooleanLiteral> */ Boolean = js.native
+    def isBooleanLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BooleanLiteral> */ Boolean = js.native
+    def isBooleanLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BooleanLiteral> */ Boolean = js.native
     
-    def isBooleanLiteralTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BooleanLiteralTypeAnnotation> */ Boolean = js.native
-    def isBooleanLiteralTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BooleanLiteralTypeAnnotation> */ Boolean = js.native
+    def isBooleanLiteralTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BooleanLiteralTypeAnnotation> */ Boolean = js.native
+    def isBooleanLiteralTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BooleanLiteralTypeAnnotation> */ Boolean = js.native
     
-    def isBooleanTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BooleanTypeAnnotation> */ Boolean = js.native
-    def isBooleanTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BooleanTypeAnnotation> */ Boolean = js.native
+    def isBooleanTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BooleanTypeAnnotation> */ Boolean = js.native
+    def isBooleanTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BooleanTypeAnnotation> */ Boolean = js.native
     
-    def isBreakStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BreakStatement> */ Boolean = js.native
-    def isBreakStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.BreakStatement> */ Boolean = js.native
+    def isBreakStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BreakStatement> */ Boolean = js.native
+    def isBreakStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.BreakStatement> */ Boolean = js.native
     
-    def isCallExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.CallExpression> */ Boolean = js.native
-    def isCallExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.CallExpression> */ Boolean = js.native
+    def isCallExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.CallExpression> */ Boolean = js.native
+    def isCallExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.CallExpression> */ Boolean = js.native
     
-    def isCatchClause(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.CatchClause> */ Boolean = js.native
-    def isCatchClause(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.CatchClause> */ Boolean = js.native
+    def isCatchClause(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.CatchClause> */ Boolean = js.native
+    def isCatchClause(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.CatchClause> */ Boolean = js.native
     
-    def isClass(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Class> */ Boolean = js.native
-    def isClass(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Class> */ Boolean = js.native
+    def isClass(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Class> */ Boolean = js.native
+    def isClass(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Class> */ Boolean = js.native
     
-    def isClassBody(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ClassBody> */ Boolean = js.native
-    def isClassBody(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ClassBody> */ Boolean = js.native
+    def isClassBody(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassBody> */ Boolean = js.native
+    def isClassBody(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassBody> */ Boolean = js.native
     
-    def isClassDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ClassDeclaration> */ Boolean = js.native
-    def isClassDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ClassDeclaration> */ Boolean = js.native
+    def isClassDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassDeclaration> */ Boolean = js.native
+    def isClassDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassDeclaration> */ Boolean = js.native
     
-    def isClassExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ClassExpression> */ Boolean = js.native
-    def isClassExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ClassExpression> */ Boolean = js.native
+    def isClassExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassExpression> */ Boolean = js.native
+    def isClassExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassExpression> */ Boolean = js.native
     
-    def isClassImplements(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ClassImplements> */ Boolean = js.native
-    def isClassImplements(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ClassImplements> */ Boolean = js.native
+    def isClassImplements(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassImplements> */ Boolean = js.native
+    def isClassImplements(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassImplements> */ Boolean = js.native
     
-    def isClassMethod(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ClassMethod> */ Boolean = js.native
-    def isClassMethod(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ClassMethod> */ Boolean = js.native
+    def isClassMethod(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassMethod> */ Boolean = js.native
+    def isClassMethod(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassMethod> */ Boolean = js.native
     
-    def isClassProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ClassProperty> */ Boolean = js.native
-    def isClassProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ClassProperty> */ Boolean = js.native
+    def isClassProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassProperty> */ Boolean = js.native
+    def isClassProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ClassProperty> */ Boolean = js.native
     
     /** Check whether the current path references a completion record */
     def isCompletionRecord(): Boolean = js.native
     def isCompletionRecord(allowInsideFunction: Boolean): Boolean = js.native
     
-    def isCompletionStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.CompletionStatement> */ Boolean = js.native
-    def isCompletionStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.CompletionStatement> */ Boolean = js.native
+    def isCompletionStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.CompletionStatement> */ Boolean = js.native
+    def isCompletionStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.CompletionStatement> */ Boolean = js.native
     
-    def isConditional(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Conditional> */ Boolean = js.native
-    def isConditional(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Conditional> */ Boolean = js.native
+    def isConditional(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Conditional> */ Boolean = js.native
+    def isConditional(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Conditional> */ Boolean = js.native
     
-    def isConditionalExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ConditionalExpression> */ Boolean = js.native
-    def isConditionalExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ConditionalExpression> */ Boolean = js.native
+    def isConditionalExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ConditionalExpression> */ Boolean = js.native
+    def isConditionalExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ConditionalExpression> */ Boolean = js.native
     
-    def isContinueStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ContinueStatement> */ Boolean = js.native
-    def isContinueStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ContinueStatement> */ Boolean = js.native
+    def isContinueStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ContinueStatement> */ Boolean = js.native
+    def isContinueStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ContinueStatement> */ Boolean = js.native
     
-    def isDebuggerStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DebuggerStatement> */ Boolean = js.native
-    def isDebuggerStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DebuggerStatement> */ Boolean = js.native
+    def isDebuggerStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DebuggerStatement> */ Boolean = js.native
+    def isDebuggerStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DebuggerStatement> */ Boolean = js.native
     
-    def isDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Declaration> */ Boolean = js.native
-    def isDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Declaration> */ Boolean = js.native
+    def isDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Declaration> */ Boolean = js.native
+    def isDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Declaration> */ Boolean = js.native
     
-    def isDeclareClass(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DeclareClass> */ Boolean = js.native
-    def isDeclareClass(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DeclareClass> */ Boolean = js.native
+    def isDeclareClass(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareClass> */ Boolean = js.native
+    def isDeclareClass(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareClass> */ Boolean = js.native
     
-    def isDeclareFunction(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DeclareFunction> */ Boolean = js.native
-    def isDeclareFunction(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DeclareFunction> */ Boolean = js.native
+    def isDeclareFunction(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareFunction> */ Boolean = js.native
+    def isDeclareFunction(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareFunction> */ Boolean = js.native
     
-    def isDeclareInterface(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DeclareInterface> */ Boolean = js.native
-    def isDeclareInterface(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DeclareInterface> */ Boolean = js.native
+    def isDeclareInterface(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareInterface> */ Boolean = js.native
+    def isDeclareInterface(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareInterface> */ Boolean = js.native
     
-    def isDeclareModule(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DeclareModule> */ Boolean = js.native
-    def isDeclareModule(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DeclareModule> */ Boolean = js.native
+    def isDeclareModule(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareModule> */ Boolean = js.native
+    def isDeclareModule(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareModule> */ Boolean = js.native
     
-    def isDeclareTypeAlias(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DeclareTypeAlias> */ Boolean = js.native
-    def isDeclareTypeAlias(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DeclareTypeAlias> */ Boolean = js.native
+    def isDeclareTypeAlias(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareTypeAlias> */ Boolean = js.native
+    def isDeclareTypeAlias(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareTypeAlias> */ Boolean = js.native
     
-    def isDeclareVariable(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DeclareVariable> */ Boolean = js.native
-    def isDeclareVariable(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DeclareVariable> */ Boolean = js.native
+    def isDeclareVariable(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareVariable> */ Boolean = js.native
+    def isDeclareVariable(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DeclareVariable> */ Boolean = js.native
     
-    def isDecorator(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Decorator> */ Boolean = js.native
-    def isDecorator(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Decorator> */ Boolean = js.native
+    def isDecorator(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Decorator> */ Boolean = js.native
+    def isDecorator(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Decorator> */ Boolean = js.native
     
-    def isDirective(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Directive> */ Boolean = js.native
-    def isDirective(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Directive> */ Boolean = js.native
+    def isDirective(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Directive> */ Boolean = js.native
+    def isDirective(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Directive> */ Boolean = js.native
     
-    def isDirectiveLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DirectiveLiteral> */ Boolean = js.native
-    def isDirectiveLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DirectiveLiteral> */ Boolean = js.native
+    def isDirectiveLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DirectiveLiteral> */ Boolean = js.native
+    def isDirectiveLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DirectiveLiteral> */ Boolean = js.native
     
-    def isDoExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DoExpression> */ Boolean = js.native
-    def isDoExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DoExpression> */ Boolean = js.native
+    def isDoExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DoExpression> */ Boolean = js.native
+    def isDoExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DoExpression> */ Boolean = js.native
     
-    def isDoWhileStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DoWhileStatement> */ Boolean = js.native
-    def isDoWhileStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.DoWhileStatement> */ Boolean = js.native
+    def isDoWhileStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DoWhileStatement> */ Boolean = js.native
+    def isDoWhileStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.DoWhileStatement> */ Boolean = js.native
     
-    def isEmptyStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.EmptyStatement> */ Boolean = js.native
-    def isEmptyStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.EmptyStatement> */ Boolean = js.native
+    def isEmptyStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.EmptyStatement> */ Boolean = js.native
+    def isEmptyStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.EmptyStatement> */ Boolean = js.native
     
-    def isExistentialTypeParam(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExistentialTypeParam> */ Boolean = js.native
-    def isExistentialTypeParam(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExistentialTypeParam> */ Boolean = js.native
+    def isExistentialTypeParam(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExistentialTypeParam> */ Boolean = js.native
+    def isExistentialTypeParam(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExistentialTypeParam> */ Boolean = js.native
     
-    def isExportAllDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExportAllDeclaration> */ Boolean = js.native
-    def isExportAllDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExportAllDeclaration> */ Boolean = js.native
+    def isExportAllDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportAllDeclaration> */ Boolean = js.native
+    def isExportAllDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportAllDeclaration> */ Boolean = js.native
     
-    def isExportDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExportDeclaration> */ Boolean = js.native
-    def isExportDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExportDeclaration> */ Boolean = js.native
+    def isExportDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportDeclaration> */ Boolean = js.native
+    def isExportDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportDeclaration> */ Boolean = js.native
     
-    def isExportDefaultDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExportDefaultDeclaration> */ Boolean = js.native
-    def isExportDefaultDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExportDefaultDeclaration> */ Boolean = js.native
+    def isExportDefaultDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportDefaultDeclaration> */ Boolean = js.native
+    def isExportDefaultDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportDefaultDeclaration> */ Boolean = js.native
     
-    def isExportDefaultSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExportDefaultSpecifier> */ Boolean = js.native
-    def isExportDefaultSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExportDefaultSpecifier> */ Boolean = js.native
+    def isExportDefaultSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportDefaultSpecifier> */ Boolean = js.native
+    def isExportDefaultSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportDefaultSpecifier> */ Boolean = js.native
     
-    def isExportNamedDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExportNamedDeclaration> */ Boolean = js.native
-    def isExportNamedDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExportNamedDeclaration> */ Boolean = js.native
+    def isExportNamedDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportNamedDeclaration> */ Boolean = js.native
+    def isExportNamedDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportNamedDeclaration> */ Boolean = js.native
     
-    def isExportNamespaceSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExportNamespaceSpecifier> */ Boolean = js.native
-    def isExportNamespaceSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExportNamespaceSpecifier> */ Boolean = js.native
+    def isExportNamespaceSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportNamespaceSpecifier> */ Boolean = js.native
+    def isExportNamespaceSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportNamespaceSpecifier> */ Boolean = js.native
     
-    def isExportSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExportSpecifier> */ Boolean = js.native
-    def isExportSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExportSpecifier> */ Boolean = js.native
+    def isExportSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportSpecifier> */ Boolean = js.native
+    def isExportSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExportSpecifier> */ Boolean = js.native
     
-    def isExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Expression> */ Boolean = js.native
-    def isExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Expression> */ Boolean = js.native
+    def isExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Expression> */ Boolean = js.native
+    def isExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Expression> */ Boolean = js.native
     
-    def isExpressionStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExpressionStatement> */ Boolean = js.native
-    def isExpressionStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExpressionStatement> */ Boolean = js.native
+    def isExpressionStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExpressionStatement> */ Boolean = js.native
+    def isExpressionStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExpressionStatement> */ Boolean = js.native
     
-    def isExpressionWrapper(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExpressionWrapper> */ Boolean = js.native
-    def isExpressionWrapper(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ExpressionWrapper> */ Boolean = js.native
+    def isExpressionWrapper(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExpressionWrapper> */ Boolean = js.native
+    def isExpressionWrapper(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ExpressionWrapper> */ Boolean = js.native
     
-    def isFile(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.File> */ Boolean = js.native
-    def isFile(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.File> */ Boolean = js.native
+    def isFile(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.File> */ Boolean = js.native
+    def isFile(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.File> */ Boolean = js.native
     
-    def isFlow(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Flow> */ Boolean = js.native
-    def isFlow(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Flow> */ Boolean = js.native
+    def isFlow(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Flow> */ Boolean = js.native
+    def isFlow(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Flow> */ Boolean = js.native
     
-    def isFlowBaseAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FlowBaseAnnotation> */ Boolean = js.native
-    def isFlowBaseAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FlowBaseAnnotation> */ Boolean = js.native
+    def isFlowBaseAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FlowBaseAnnotation> */ Boolean = js.native
+    def isFlowBaseAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FlowBaseAnnotation> */ Boolean = js.native
     
-    def isFlowDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FlowDeclaration> */ Boolean = js.native
-    def isFlowDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FlowDeclaration> */ Boolean = js.native
+    def isFlowDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FlowDeclaration> */ Boolean = js.native
+    def isFlowDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FlowDeclaration> */ Boolean = js.native
     
-    def isFor(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.For> */ Boolean = js.native
-    def isFor(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.For> */ Boolean = js.native
+    def isFor(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.For> */ Boolean = js.native
+    def isFor(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.For> */ Boolean = js.native
     
-    def isForInStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ForInStatement> */ Boolean = js.native
-    def isForInStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ForInStatement> */ Boolean = js.native
+    def isForInStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForInStatement> */ Boolean = js.native
+    def isForInStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForInStatement> */ Boolean = js.native
     
-    def isForOfStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ForOfStatement> */ Boolean = js.native
-    def isForOfStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ForOfStatement> */ Boolean = js.native
+    def isForOfStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForOfStatement> */ Boolean = js.native
+    def isForOfStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForOfStatement> */ Boolean = js.native
     
-    def isForStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ForStatement> */ Boolean = js.native
-    def isForStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ForStatement> */ Boolean = js.native
+    def isForStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForStatement> */ Boolean = js.native
+    def isForStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForStatement> */ Boolean = js.native
     
-    def isForXStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ForXStatement> */ Boolean = js.native
-    def isForXStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ForXStatement> */ Boolean = js.native
+    def isForXStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForXStatement> */ Boolean = js.native
+    def isForXStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ForXStatement> */ Boolean = js.native
     
-    def isFunction(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Function> */ Boolean = js.native
-    def isFunction(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Function> */ Boolean = js.native
+    def isFunction(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Function> */ Boolean = js.native
+    def isFunction(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Function> */ Boolean = js.native
     
-    def isFunctionDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FunctionDeclaration> */ Boolean = js.native
-    def isFunctionDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FunctionDeclaration> */ Boolean = js.native
+    def isFunctionDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionDeclaration> */ Boolean = js.native
+    def isFunctionDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionDeclaration> */ Boolean = js.native
     
-    def isFunctionExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FunctionExpression> */ Boolean = js.native
-    def isFunctionExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FunctionExpression> */ Boolean = js.native
+    def isFunctionExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionExpression> */ Boolean = js.native
+    def isFunctionExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionExpression> */ Boolean = js.native
     
-    def isFunctionParent(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FunctionParent> */ Boolean = js.native
-    def isFunctionParent(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FunctionParent> */ Boolean = js.native
+    def isFunctionParent(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionParent> */ Boolean = js.native
+    def isFunctionParent(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionParent> */ Boolean = js.native
     
-    def isFunctionTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FunctionTypeAnnotation> */ Boolean = js.native
-    def isFunctionTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FunctionTypeAnnotation> */ Boolean = js.native
+    def isFunctionTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionTypeAnnotation> */ Boolean = js.native
+    def isFunctionTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionTypeAnnotation> */ Boolean = js.native
     
-    def isFunctionTypeParam(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FunctionTypeParam> */ Boolean = js.native
-    def isFunctionTypeParam(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.FunctionTypeParam> */ Boolean = js.native
+    def isFunctionTypeParam(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionTypeParam> */ Boolean = js.native
+    def isFunctionTypeParam(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.FunctionTypeParam> */ Boolean = js.native
     
     def isGenerated(): Boolean = js.native
     def isGenerated(opts: js.Object): Boolean = js.native
     
     def isGenericType(genericName: String): Boolean = js.native
     
-    def isGenericTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.GenericTypeAnnotation> */ Boolean = js.native
-    def isGenericTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.GenericTypeAnnotation> */ Boolean = js.native
+    def isGenericTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.GenericTypeAnnotation> */ Boolean = js.native
+    def isGenericTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.GenericTypeAnnotation> */ Boolean = js.native
     
-    def isIdentifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Identifier> */ Boolean = js.native
-    def isIdentifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Identifier> */ Boolean = js.native
+    def isIdentifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Identifier> */ Boolean = js.native
+    def isIdentifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Identifier> */ Boolean = js.native
     
-    def isIfStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.IfStatement> */ Boolean = js.native
-    def isIfStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.IfStatement> */ Boolean = js.native
+    def isIfStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.IfStatement> */ Boolean = js.native
+    def isIfStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.IfStatement> */ Boolean = js.native
     
-    def isImmutable(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Immutable> */ Boolean = js.native
-    def isImmutable(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Immutable> */ Boolean = js.native
+    def isImmutable(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Immutable> */ Boolean = js.native
+    def isImmutable(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Immutable> */ Boolean = js.native
     
-    def isImportDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ImportDeclaration> */ Boolean = js.native
-    def isImportDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ImportDeclaration> */ Boolean = js.native
+    def isImportDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportDeclaration> */ Boolean = js.native
+    def isImportDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportDeclaration> */ Boolean = js.native
     
-    def isImportDefaultSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ImportDefaultSpecifier> */ Boolean = js.native
-    def isImportDefaultSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ImportDefaultSpecifier> */ Boolean = js.native
+    def isImportDefaultSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportDefaultSpecifier> */ Boolean = js.native
+    def isImportDefaultSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportDefaultSpecifier> */ Boolean = js.native
     
-    def isImportNamespaceSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ImportNamespaceSpecifier> */ Boolean = js.native
-    def isImportNamespaceSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ImportNamespaceSpecifier> */ Boolean = js.native
+    def isImportNamespaceSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportNamespaceSpecifier> */ Boolean = js.native
+    def isImportNamespaceSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportNamespaceSpecifier> */ Boolean = js.native
     
-    def isImportSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ImportSpecifier> */ Boolean = js.native
-    def isImportSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ImportSpecifier> */ Boolean = js.native
+    def isImportSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportSpecifier> */ Boolean = js.native
+    def isImportSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ImportSpecifier> */ Boolean = js.native
     
-    def isInterfaceDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.InterfaceDeclaration> */ Boolean = js.native
-    def isInterfaceDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.InterfaceDeclaration> */ Boolean = js.native
+    def isInterfaceDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.InterfaceDeclaration> */ Boolean = js.native
+    def isInterfaceDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.InterfaceDeclaration> */ Boolean = js.native
     
-    def isInterfaceExtends(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.InterfaceExtends> */ Boolean = js.native
-    def isInterfaceExtends(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.InterfaceExtends> */ Boolean = js.native
+    def isInterfaceExtends(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.InterfaceExtends> */ Boolean = js.native
+    def isInterfaceExtends(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.InterfaceExtends> */ Boolean = js.native
     
-    def isIntersectionTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.IntersectionTypeAnnotation> */ Boolean = js.native
-    def isIntersectionTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.IntersectionTypeAnnotation> */ Boolean = js.native
+    def isIntersectionTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.IntersectionTypeAnnotation> */ Boolean = js.native
+    def isIntersectionTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.IntersectionTypeAnnotation> */ Boolean = js.native
     
-    def isJSX(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSX> */ Boolean = js.native
-    def isJSX(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSX> */ Boolean = js.native
+    def isJSX(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSX> */ Boolean = js.native
+    def isJSX(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSX> */ Boolean = js.native
     
-    def isJSXAttribute(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXAttribute> */ Boolean = js.native
-    def isJSXAttribute(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXAttribute> */ Boolean = js.native
+    def isJSXAttribute(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXAttribute> */ Boolean = js.native
+    def isJSXAttribute(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXAttribute> */ Boolean = js.native
     
-    def isJSXClosingElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXClosingElement> */ Boolean = js.native
-    def isJSXClosingElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXClosingElement> */ Boolean = js.native
+    def isJSXClosingElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXClosingElement> */ Boolean = js.native
+    def isJSXClosingElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXClosingElement> */ Boolean = js.native
     
-    def isJSXElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXElement> */ Boolean = js.native
-    def isJSXElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXElement> */ Boolean = js.native
+    def isJSXElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXElement> */ Boolean = js.native
+    def isJSXElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXElement> */ Boolean = js.native
     
-    def isJSXEmptyExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXEmptyExpression> */ Boolean = js.native
-    def isJSXEmptyExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXEmptyExpression> */ Boolean = js.native
+    def isJSXEmptyExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXEmptyExpression> */ Boolean = js.native
+    def isJSXEmptyExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXEmptyExpression> */ Boolean = js.native
     
-    def isJSXExpressionContainer(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXExpressionContainer> */ Boolean = js.native
-    def isJSXExpressionContainer(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXExpressionContainer> */ Boolean = js.native
+    def isJSXExpressionContainer(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXExpressionContainer> */ Boolean = js.native
+    def isJSXExpressionContainer(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXExpressionContainer> */ Boolean = js.native
     
-    def isJSXIdentifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXIdentifier> */ Boolean = js.native
-    def isJSXIdentifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXIdentifier> */ Boolean = js.native
+    def isJSXIdentifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXIdentifier> */ Boolean = js.native
+    def isJSXIdentifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXIdentifier> */ Boolean = js.native
     
-    def isJSXMemberExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXMemberExpression> */ Boolean = js.native
-    def isJSXMemberExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXMemberExpression> */ Boolean = js.native
+    def isJSXMemberExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXMemberExpression> */ Boolean = js.native
+    def isJSXMemberExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXMemberExpression> */ Boolean = js.native
     
-    def isJSXNamespacedName(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXNamespacedName> */ Boolean = js.native
-    def isJSXNamespacedName(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXNamespacedName> */ Boolean = js.native
+    def isJSXNamespacedName(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXNamespacedName> */ Boolean = js.native
+    def isJSXNamespacedName(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXNamespacedName> */ Boolean = js.native
     
-    def isJSXOpeningElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXOpeningElement> */ Boolean = js.native
-    def isJSXOpeningElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXOpeningElement> */ Boolean = js.native
+    def isJSXOpeningElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXOpeningElement> */ Boolean = js.native
+    def isJSXOpeningElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXOpeningElement> */ Boolean = js.native
     
-    def isJSXSpreadAttribute(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXSpreadAttribute> */ Boolean = js.native
-    def isJSXSpreadAttribute(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXSpreadAttribute> */ Boolean = js.native
+    def isJSXSpreadAttribute(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXSpreadAttribute> */ Boolean = js.native
+    def isJSXSpreadAttribute(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXSpreadAttribute> */ Boolean = js.native
     
-    def isJSXText(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXText> */ Boolean = js.native
-    def isJSXText(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.JSXText> */ Boolean = js.native
+    def isJSXText(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXText> */ Boolean = js.native
+    def isJSXText(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.JSXText> */ Boolean = js.native
     
-    def isLVal(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.LVal> */ Boolean = js.native
-    def isLVal(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.LVal> */ Boolean = js.native
+    def isLVal(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.LVal> */ Boolean = js.native
+    def isLVal(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.LVal> */ Boolean = js.native
     
-    def isLabeledStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.LabeledStatement> */ Boolean = js.native
-    def isLabeledStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.LabeledStatement> */ Boolean = js.native
+    def isLabeledStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.LabeledStatement> */ Boolean = js.native
+    def isLabeledStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.LabeledStatement> */ Boolean = js.native
     
-    def isLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Literal> */ Boolean = js.native
-    def isLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Literal> */ Boolean = js.native
+    def isLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Literal> */ Boolean = js.native
+    def isLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Literal> */ Boolean = js.native
     
-    def isLogicalExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.LogicalExpression> */ Boolean = js.native
-    def isLogicalExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.LogicalExpression> */ Boolean = js.native
+    def isLogicalExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.LogicalExpression> */ Boolean = js.native
+    def isLogicalExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.LogicalExpression> */ Boolean = js.native
     
-    def isLoop(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Loop> */ Boolean = js.native
-    def isLoop(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Loop> */ Boolean = js.native
+    def isLoop(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Loop> */ Boolean = js.native
+    def isLoop(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Loop> */ Boolean = js.native
     
-    def isMemberExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.MemberExpression> */ Boolean = js.native
-    def isMemberExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.MemberExpression> */ Boolean = js.native
+    def isMemberExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MemberExpression> */ Boolean = js.native
+    def isMemberExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MemberExpression> */ Boolean = js.native
     
-    def isMetaProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.MetaProperty> */ Boolean = js.native
-    def isMetaProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.MetaProperty> */ Boolean = js.native
+    def isMetaProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MetaProperty> */ Boolean = js.native
+    def isMetaProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MetaProperty> */ Boolean = js.native
     
-    def isMethod(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Method> */ Boolean = js.native
-    def isMethod(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Method> */ Boolean = js.native
+    def isMethod(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Method> */ Boolean = js.native
+    def isMethod(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Method> */ Boolean = js.native
     
-    def isMixedTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.MixedTypeAnnotation> */ Boolean = js.native
-    def isMixedTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.MixedTypeAnnotation> */ Boolean = js.native
+    def isMixedTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MixedTypeAnnotation> */ Boolean = js.native
+    def isMixedTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MixedTypeAnnotation> */ Boolean = js.native
     
-    def isModuleDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ModuleDeclaration> */ Boolean = js.native
-    def isModuleDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ModuleDeclaration> */ Boolean = js.native
+    def isModuleDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ModuleDeclaration> */ Boolean = js.native
+    def isModuleDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ModuleDeclaration> */ Boolean = js.native
     
-    def isModuleSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ModuleSpecifier> */ Boolean = js.native
-    def isModuleSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ModuleSpecifier> */ Boolean = js.native
+    def isModuleSpecifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ModuleSpecifier> */ Boolean = js.native
+    def isModuleSpecifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ModuleSpecifier> */ Boolean = js.native
     
-    def isNewExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NewExpression> */ Boolean = js.native
-    def isNewExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NewExpression> */ Boolean = js.native
+    def isNewExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NewExpression> */ Boolean = js.native
+    def isNewExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NewExpression> */ Boolean = js.native
     
     /**
       * Check the type against our stored internal type of the node. This is handy when a node has
@@ -1348,119 +1341,119 @@ object mod {
       */
     def isNodeType(`type`: String): Boolean = js.native
     
-    def isNoop(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Noop> */ Boolean = js.native
-    def isNoop(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Noop> */ Boolean = js.native
+    def isNoop(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Noop> */ Boolean = js.native
+    def isNoop(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Noop> */ Boolean = js.native
     
-    def isNullLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NullLiteral> */ Boolean = js.native
-    def isNullLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NullLiteral> */ Boolean = js.native
+    def isNullLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NullLiteral> */ Boolean = js.native
+    def isNullLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NullLiteral> */ Boolean = js.native
     
-    def isNullLiteralTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NullLiteralTypeAnnotation> */ Boolean = js.native
-    def isNullLiteralTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NullLiteralTypeAnnotation> */ Boolean = js.native
+    def isNullLiteralTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NullLiteralTypeAnnotation> */ Boolean = js.native
+    def isNullLiteralTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NullLiteralTypeAnnotation> */ Boolean = js.native
     
-    def isNullableTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NullableTypeAnnotation> */ Boolean = js.native
-    def isNullableTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NullableTypeAnnotation> */ Boolean = js.native
+    def isNullableTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NullableTypeAnnotation> */ Boolean = js.native
+    def isNullableTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NullableTypeAnnotation> */ Boolean = js.native
     
-    def isNumberLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NumericLiteral> */ Boolean = js.native
-    def isNumberLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NumericLiteral> */ Boolean = js.native
+    def isNumberLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumericLiteral> */ Boolean = js.native
+    def isNumberLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumericLiteral> */ Boolean = js.native
     
-    def isNumberTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NumberTypeAnnotation> */ Boolean = js.native
-    def isNumberTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NumberTypeAnnotation> */ Boolean = js.native
+    def isNumberTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumberTypeAnnotation> */ Boolean = js.native
+    def isNumberTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumberTypeAnnotation> */ Boolean = js.native
     
-    def isNumericLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NumericLiteral> */ Boolean = js.native
-    def isNumericLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NumericLiteral> */ Boolean = js.native
+    def isNumericLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumericLiteral> */ Boolean = js.native
+    def isNumericLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumericLiteral> */ Boolean = js.native
     
-    def isNumericLiteralTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NumericLiteralTypeAnnotation> */ Boolean = js.native
-    def isNumericLiteralTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.NumericLiteralTypeAnnotation> */ Boolean = js.native
+    def isNumericLiteralTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumericLiteralTypeAnnotation> */ Boolean = js.native
+    def isNumericLiteralTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.NumericLiteralTypeAnnotation> */ Boolean = js.native
     
-    def isObjectExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectExpression> */ Boolean = js.native
-    def isObjectExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectExpression> */ Boolean = js.native
+    def isObjectExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectExpression> */ Boolean = js.native
+    def isObjectExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectExpression> */ Boolean = js.native
     
-    def isObjectMember(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectMember> */ Boolean = js.native
-    def isObjectMember(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectMember> */ Boolean = js.native
+    def isObjectMember(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectMember> */ Boolean = js.native
+    def isObjectMember(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectMember> */ Boolean = js.native
     
-    def isObjectMethod(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectMethod> */ Boolean = js.native
-    def isObjectMethod(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectMethod> */ Boolean = js.native
+    def isObjectMethod(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectMethod> */ Boolean = js.native
+    def isObjectMethod(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectMethod> */ Boolean = js.native
     
-    def isObjectPattern(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectPattern> */ Boolean = js.native
-    def isObjectPattern(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectPattern> */ Boolean = js.native
+    def isObjectPattern(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectPattern> */ Boolean = js.native
+    def isObjectPattern(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectPattern> */ Boolean = js.native
     
-    def isObjectProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectProperty> */ Boolean = js.native
-    def isObjectProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectProperty> */ Boolean = js.native
+    def isObjectProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectProperty> */ Boolean = js.native
+    def isObjectProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectProperty> */ Boolean = js.native
     
-    def isObjectTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectTypeAnnotation> */ Boolean = js.native
-    def isObjectTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectTypeAnnotation> */ Boolean = js.native
+    def isObjectTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeAnnotation> */ Boolean = js.native
+    def isObjectTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeAnnotation> */ Boolean = js.native
     
-    def isObjectTypeCallProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectTypeCallProperty> */ Boolean = js.native
-    def isObjectTypeCallProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectTypeCallProperty> */ Boolean = js.native
+    def isObjectTypeCallProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeCallProperty> */ Boolean = js.native
+    def isObjectTypeCallProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeCallProperty> */ Boolean = js.native
     
-    def isObjectTypeIndexer(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectTypeIndexer> */ Boolean = js.native
-    def isObjectTypeIndexer(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectTypeIndexer> */ Boolean = js.native
+    def isObjectTypeIndexer(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeIndexer> */ Boolean = js.native
+    def isObjectTypeIndexer(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeIndexer> */ Boolean = js.native
     
-    def isObjectTypeProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectTypeProperty> */ Boolean = js.native
-    def isObjectTypeProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ObjectTypeProperty> */ Boolean = js.native
+    def isObjectTypeProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeProperty> */ Boolean = js.native
+    def isObjectTypeProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ObjectTypeProperty> */ Boolean = js.native
     
-    def isParenthesizedExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ParenthesizedExpression> */ Boolean = js.native
-    def isParenthesizedExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ParenthesizedExpression> */ Boolean = js.native
+    def isParenthesizedExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ParenthesizedExpression> */ Boolean = js.native
+    def isParenthesizedExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ParenthesizedExpression> */ Boolean = js.native
     
-    def isPattern(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Pattern> */ Boolean = js.native
-    def isPattern(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Pattern> */ Boolean = js.native
+    def isPattern(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Pattern> */ Boolean = js.native
+    def isPattern(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Pattern> */ Boolean = js.native
     
-    def isProgram(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Program> */ Boolean = js.native
-    def isProgram(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Program> */ Boolean = js.native
+    def isProgram(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Program> */ Boolean = js.native
+    def isProgram(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Program> */ Boolean = js.native
     
-    def isProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Property> */ Boolean = js.native
-    def isProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Property> */ Boolean = js.native
+    def isProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Property> */ Boolean = js.native
+    def isProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Property> */ Boolean = js.native
     
     def isPure(): Boolean = js.native
     def isPure(opts: js.Object): Boolean = js.native
     
-    def isPureish(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Pureish> */ Boolean = js.native
-    def isPureish(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Pureish> */ Boolean = js.native
+    def isPureish(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Pureish> */ Boolean = js.native
+    def isPureish(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Pureish> */ Boolean = js.native
     
-    def isQualifiedTypeIdentifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.QualifiedTypeIdentifier> */ Boolean = js.native
-    def isQualifiedTypeIdentifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.QualifiedTypeIdentifier> */ Boolean = js.native
+    def isQualifiedTypeIdentifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.QualifiedTypeIdentifier> */ Boolean = js.native
+    def isQualifiedTypeIdentifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.QualifiedTypeIdentifier> */ Boolean = js.native
     
     def isReferenced(): Boolean = js.native
     def isReferenced(opts: js.Object): Boolean = js.native
     
-    def isReferencedIdentifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Identifier | babel-types.babel-types/ts3.6.JSXIdentifier> */ Boolean = js.native
-    def isReferencedIdentifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Identifier | babel-types.babel-types/ts3.6.JSXIdentifier> */ Boolean = js.native
+    def isReferencedIdentifier(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Identifier | babel-types.babel-types.JSXIdentifier> */ Boolean = js.native
+    def isReferencedIdentifier(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Identifier | babel-types.babel-types.JSXIdentifier> */ Boolean = js.native
     
-    def isReferencedMemberExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.MemberExpression> */ Boolean = js.native
-    def isReferencedMemberExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.MemberExpression> */ Boolean = js.native
+    def isReferencedMemberExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MemberExpression> */ Boolean = js.native
+    def isReferencedMemberExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.MemberExpression> */ Boolean = js.native
     
-    def isRegExpLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.RegExpLiteral> */ Boolean = js.native
-    def isRegExpLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.RegExpLiteral> */ Boolean = js.native
+    def isRegExpLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RegExpLiteral> */ Boolean = js.native
+    def isRegExpLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RegExpLiteral> */ Boolean = js.native
     
-    def isRegexLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.RegExpLiteral> */ Boolean = js.native
-    def isRegexLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.RegExpLiteral> */ Boolean = js.native
+    def isRegexLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RegExpLiteral> */ Boolean = js.native
+    def isRegexLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RegExpLiteral> */ Boolean = js.native
     
-    def isRestElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.RestElement> */ Boolean = js.native
-    def isRestElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.RestElement> */ Boolean = js.native
+    def isRestElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RestElement> */ Boolean = js.native
+    def isRestElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RestElement> */ Boolean = js.native
     
-    def isRestProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.RestProperty> */ Boolean = js.native
-    def isRestProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.RestProperty> */ Boolean = js.native
+    def isRestProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RestProperty> */ Boolean = js.native
+    def isRestProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.RestProperty> */ Boolean = js.native
     
-    def isReturnStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ReturnStatement> */ Boolean = js.native
-    def isReturnStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ReturnStatement> */ Boolean = js.native
+    def isReturnStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ReturnStatement> */ Boolean = js.native
+    def isReturnStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ReturnStatement> */ Boolean = js.native
     
-    def isScopable(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Scopable> */ Boolean = js.native
-    def isScopable(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Scopable> */ Boolean = js.native
+    def isScopable(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Scopable> */ Boolean = js.native
+    def isScopable(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Scopable> */ Boolean = js.native
     
-    def isScope(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Scopable> */ Boolean = js.native
-    def isScope(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Scopable> */ Boolean = js.native
+    def isScope(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Scopable> */ Boolean = js.native
+    def isScope(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Scopable> */ Boolean = js.native
     
-    def isSequenceExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.SequenceExpression> */ Boolean = js.native
-    def isSequenceExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.SequenceExpression> */ Boolean = js.native
+    def isSequenceExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SequenceExpression> */ Boolean = js.native
+    def isSequenceExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SequenceExpression> */ Boolean = js.native
     
-    def isSpreadElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.SpreadElement> */ Boolean = js.native
-    def isSpreadElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.SpreadElement> */ Boolean = js.native
+    def isSpreadElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SpreadElement> */ Boolean = js.native
+    def isSpreadElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SpreadElement> */ Boolean = js.native
     
-    def isSpreadProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.SpreadProperty> */ Boolean = js.native
-    def isSpreadProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.SpreadProperty> */ Boolean = js.native
+    def isSpreadProperty(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SpreadProperty> */ Boolean = js.native
+    def isSpreadProperty(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SpreadProperty> */ Boolean = js.native
     
-    def isStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Statement> */ Boolean = js.native
-    def isStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Statement> */ Boolean = js.native
+    def isStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Statement> */ Boolean = js.native
+    def isStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Statement> */ Boolean = js.native
     
     /**
       * Check whether or not the current `key` allows either a single statement or block statement
@@ -1470,110 +1463,110 @@ object mod {
     
     def isStatic(): Boolean = js.native
     
-    def isStringLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.StringLiteral> */ Boolean = js.native
-    def isStringLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.StringLiteral> */ Boolean = js.native
+    def isStringLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.StringLiteral> */ Boolean = js.native
+    def isStringLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.StringLiteral> */ Boolean = js.native
     
-    def isStringLiteralTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.StringLiteralTypeAnnotation> */ Boolean = js.native
-    def isStringLiteralTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.StringLiteralTypeAnnotation> */ Boolean = js.native
+    def isStringLiteralTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.StringLiteralTypeAnnotation> */ Boolean = js.native
+    def isStringLiteralTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.StringLiteralTypeAnnotation> */ Boolean = js.native
     
-    def isStringTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.StringTypeAnnotation> */ Boolean = js.native
-    def isStringTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.StringTypeAnnotation> */ Boolean = js.native
+    def isStringTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.StringTypeAnnotation> */ Boolean = js.native
+    def isStringTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.StringTypeAnnotation> */ Boolean = js.native
     
-    def isSuper(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Super> */ Boolean = js.native
-    def isSuper(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Super> */ Boolean = js.native
+    def isSuper(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Super> */ Boolean = js.native
+    def isSuper(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Super> */ Boolean = js.native
     
-    def isSwitchCase(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.SwitchCase> */ Boolean = js.native
-    def isSwitchCase(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.SwitchCase> */ Boolean = js.native
+    def isSwitchCase(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SwitchCase> */ Boolean = js.native
+    def isSwitchCase(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SwitchCase> */ Boolean = js.native
     
-    def isSwitchStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.SwitchStatement> */ Boolean = js.native
-    def isSwitchStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.SwitchStatement> */ Boolean = js.native
+    def isSwitchStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SwitchStatement> */ Boolean = js.native
+    def isSwitchStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.SwitchStatement> */ Boolean = js.native
     
-    def isTaggedTemplateExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TaggedTemplateExpression> */ Boolean = js.native
-    def isTaggedTemplateExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TaggedTemplateExpression> */ Boolean = js.native
+    def isTaggedTemplateExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TaggedTemplateExpression> */ Boolean = js.native
+    def isTaggedTemplateExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TaggedTemplateExpression> */ Boolean = js.native
     
-    def isTemplateElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TemplateElement> */ Boolean = js.native
-    def isTemplateElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TemplateElement> */ Boolean = js.native
+    def isTemplateElement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TemplateElement> */ Boolean = js.native
+    def isTemplateElement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TemplateElement> */ Boolean = js.native
     
-    def isTemplateLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TemplateLiteral> */ Boolean = js.native
-    def isTemplateLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TemplateLiteral> */ Boolean = js.native
+    def isTemplateLiteral(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TemplateLiteral> */ Boolean = js.native
+    def isTemplateLiteral(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TemplateLiteral> */ Boolean = js.native
     
-    def isTerminatorless(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Terminatorless> */ Boolean = js.native
-    def isTerminatorless(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.Terminatorless> */ Boolean = js.native
+    def isTerminatorless(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Terminatorless> */ Boolean = js.native
+    def isTerminatorless(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.Terminatorless> */ Boolean = js.native
     
-    def isThisExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ThisExpression> */ Boolean = js.native
-    def isThisExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ThisExpression> */ Boolean = js.native
+    def isThisExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ThisExpression> */ Boolean = js.native
+    def isThisExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ThisExpression> */ Boolean = js.native
     
-    def isThisTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ThisTypeAnnotation> */ Boolean = js.native
-    def isThisTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ThisTypeAnnotation> */ Boolean = js.native
+    def isThisTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ThisTypeAnnotation> */ Boolean = js.native
+    def isThisTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ThisTypeAnnotation> */ Boolean = js.native
     
-    def isThrowStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ThrowStatement> */ Boolean = js.native
-    def isThrowStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.ThrowStatement> */ Boolean = js.native
+    def isThrowStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ThrowStatement> */ Boolean = js.native
+    def isThrowStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.ThrowStatement> */ Boolean = js.native
     
-    def isTryStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TryStatement> */ Boolean = js.native
-    def isTryStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TryStatement> */ Boolean = js.native
+    def isTryStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TryStatement> */ Boolean = js.native
+    def isTryStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TryStatement> */ Boolean = js.native
     
-    def isTupleTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TupleTypeAnnotation> */ Boolean = js.native
-    def isTupleTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TupleTypeAnnotation> */ Boolean = js.native
+    def isTupleTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TupleTypeAnnotation> */ Boolean = js.native
+    def isTupleTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TupleTypeAnnotation> */ Boolean = js.native
     
-    def isTypeAlias(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TypeAlias> */ Boolean = js.native
-    def isTypeAlias(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TypeAlias> */ Boolean = js.native
+    def isTypeAlias(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeAlias> */ Boolean = js.native
+    def isTypeAlias(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeAlias> */ Boolean = js.native
     
-    def isTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TypeAnnotation> */ Boolean = js.native
-    def isTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TypeAnnotation> */ Boolean = js.native
+    def isTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeAnnotation> */ Boolean = js.native
+    def isTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeAnnotation> */ Boolean = js.native
     
-    def isTypeCastExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TypeCastExpression> */ Boolean = js.native
-    def isTypeCastExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TypeCastExpression> */ Boolean = js.native
+    def isTypeCastExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeCastExpression> */ Boolean = js.native
+    def isTypeCastExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeCastExpression> */ Boolean = js.native
     
-    def isTypeParameterDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TypeParameterDeclaration> */ Boolean = js.native
-    def isTypeParameterDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TypeParameterDeclaration> */ Boolean = js.native
+    def isTypeParameterDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeParameterDeclaration> */ Boolean = js.native
+    def isTypeParameterDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeParameterDeclaration> */ Boolean = js.native
     
-    def isTypeParameterInstantiation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TypeParameterInstantiation> */ Boolean = js.native
-    def isTypeParameterInstantiation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TypeParameterInstantiation> */ Boolean = js.native
+    def isTypeParameterInstantiation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeParameterInstantiation> */ Boolean = js.native
+    def isTypeParameterInstantiation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeParameterInstantiation> */ Boolean = js.native
     
-    def isTypeofTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TypeofTypeAnnotation> */ Boolean = js.native
-    def isTypeofTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.TypeofTypeAnnotation> */ Boolean = js.native
+    def isTypeofTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeofTypeAnnotation> */ Boolean = js.native
+    def isTypeofTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.TypeofTypeAnnotation> */ Boolean = js.native
     
-    def isUnaryExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.UnaryExpression> */ Boolean = js.native
-    def isUnaryExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.UnaryExpression> */ Boolean = js.native
+    def isUnaryExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UnaryExpression> */ Boolean = js.native
+    def isUnaryExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UnaryExpression> */ Boolean = js.native
     
-    def isUnaryLike(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.UnaryLike> */ Boolean = js.native
-    def isUnaryLike(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.UnaryLike> */ Boolean = js.native
+    def isUnaryLike(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UnaryLike> */ Boolean = js.native
+    def isUnaryLike(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UnaryLike> */ Boolean = js.native
     
-    def isUnionTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.UnionTypeAnnotation> */ Boolean = js.native
-    def isUnionTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.UnionTypeAnnotation> */ Boolean = js.native
+    def isUnionTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UnionTypeAnnotation> */ Boolean = js.native
+    def isUnionTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UnionTypeAnnotation> */ Boolean = js.native
     
-    def isUpdateExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.UpdateExpression> */ Boolean = js.native
-    def isUpdateExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.UpdateExpression> */ Boolean = js.native
+    def isUpdateExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UpdateExpression> */ Boolean = js.native
+    def isUpdateExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UpdateExpression> */ Boolean = js.native
     
     def isUser(): Boolean = js.native
     def isUser(opts: js.Object): Boolean = js.native
     
-    def isUserWhitespacable(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.UserWhitespacable> */ Boolean = js.native
-    def isUserWhitespacable(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.UserWhitespacable> */ Boolean = js.native
+    def isUserWhitespacable(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UserWhitespacable> */ Boolean = js.native
+    def isUserWhitespacable(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.UserWhitespacable> */ Boolean = js.native
     
-    def isVar(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.VariableDeclaration> */ Boolean = js.native
-    def isVar(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.VariableDeclaration> */ Boolean = js.native
+    def isVar(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VariableDeclaration> */ Boolean = js.native
+    def isVar(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VariableDeclaration> */ Boolean = js.native
     
-    def isVariableDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.VariableDeclaration> */ Boolean = js.native
-    def isVariableDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.VariableDeclaration> */ Boolean = js.native
+    def isVariableDeclaration(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VariableDeclaration> */ Boolean = js.native
+    def isVariableDeclaration(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VariableDeclaration> */ Boolean = js.native
     
-    def isVariableDeclarator(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.VariableDeclarator> */ Boolean = js.native
-    def isVariableDeclarator(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.VariableDeclarator> */ Boolean = js.native
+    def isVariableDeclarator(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VariableDeclarator> */ Boolean = js.native
+    def isVariableDeclarator(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VariableDeclarator> */ Boolean = js.native
     
-    def isVoidTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.VoidTypeAnnotation> */ Boolean = js.native
-    def isVoidTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.VoidTypeAnnotation> */ Boolean = js.native
+    def isVoidTypeAnnotation(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VoidTypeAnnotation> */ Boolean = js.native
+    def isVoidTypeAnnotation(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.VoidTypeAnnotation> */ Boolean = js.native
     
-    def isWhile(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.While> */ Boolean = js.native
-    def isWhile(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.While> */ Boolean = js.native
+    def isWhile(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.While> */ Boolean = js.native
+    def isWhile(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.While> */ Boolean = js.native
     
-    def isWhileStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.WhileStatement> */ Boolean = js.native
-    def isWhileStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.WhileStatement> */ Boolean = js.native
+    def isWhileStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.WhileStatement> */ Boolean = js.native
+    def isWhileStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.WhileStatement> */ Boolean = js.native
     
-    def isWithStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.WithStatement> */ Boolean = js.native
-    def isWithStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.WithStatement> */ Boolean = js.native
+    def isWithStatement(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.WithStatement> */ Boolean = js.native
+    def isWithStatement(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.WithStatement> */ Boolean = js.native
     
-    def isYieldExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.YieldExpression> */ Boolean = js.native
-    def isYieldExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types/ts3.6.YieldExpression> */ Boolean = js.native
+    def isYieldExpression(): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.YieldExpression> */ Boolean = js.native
+    def isYieldExpression(opts: js.Object): /* is babel-traverse.babel-traverse.NodePath<babel-types.babel-types.YieldExpression> */ Boolean = js.native
     
     /** Opposite of `has`. */
     def isnt(key: String): Boolean = js.native
@@ -1645,7 +1638,7 @@ object mod {
       * transforming ASTs is an antipattern and SHOULD NOT be encouraged. Even if it's
       * easier to use, your transforms will be extremely brittle.
       */
-    def replaceWithSourceString(replacement: js.Any): Unit = js.native
+    def replaceWithSourceString(replacement: Any): Unit = js.native
     
     var scope: Scope = js.native
     
@@ -1653,7 +1646,7 @@ object mod {
     
     def setContext(context: TraversalContext): NodePath[T] = js.native
     
-    def setData(key: String, `val`: js.Any): js.Any = js.native
+    def setData(key: String, `val`: Any): Any = js.native
     
     def setScope(): Unit = js.native
     
@@ -1671,7 +1664,7 @@ object mod {
     
     var skipKeys: js.Object = js.native
     
-    var state: js.Any = js.native
+    var state: Any = js.native
     
     def stop(): Unit = js.native
     
@@ -1693,7 +1686,7 @@ object mod {
   
   @JSImport("babel-traverse", "Scope")
   @js.native
-  class Scope protected () extends StObject {
+  open class Scope protected () extends StObject {
     def this(path: NodePath[Node]) = this()
     def this(path: NodePath[Node], parentScope: Scope) = this()
     
@@ -1736,7 +1729,7 @@ object mod {
     
     def getBlockParent(): Scope = js.native
     
-    def getData(key: String): js.Any = js.native
+    def getData(key: String): Any = js.native
     
     def getFunctionParent(): Scope = js.native
     
@@ -1789,7 +1782,7 @@ object mod {
     
     var path: NodePath[Node] = js.native
     
-    def push(opts: js.Any): Unit = js.native
+    def push(opts: Any): Unit = js.native
     
     def registerBinding(kind: String, path: NodePath[Node]): Unit = js.native
     def registerBinding(kind: String, path: NodePath[Node], bindingPath: NodePath[Node]): Unit = js.native
@@ -1809,52 +1802,65 @@ object mod {
     def rename(oldName: String, newName: String, block: Node): Unit = js.native
     def rename(oldName: String, newName: Unit, block: Node): Unit = js.native
     
-    def setData(key: String, `val`: js.Any): js.Any = js.native
+    def setData(key: String, `val`: Any): Any = js.native
     
     def toArray(node: Node): Node = js.native
     def toArray(node: Node, i: Double): Node = js.native
     
     def traverse(node: js.Array[Node]): Unit = js.native
-    def traverse(node: js.Array[Node], opts: Unit, state: js.Any): Unit = js.native
+    def traverse(node: js.Array[Node], opts: Unit, state: Any): Unit = js.native
     def traverse(node: js.Array[Node], opts: TraverseOptions[Node]): Unit = js.native
-    def traverse(node: js.Array[Node], opts: TraverseOptions[Node], state: js.Any): Unit = js.native
+    def traverse(node: js.Array[Node], opts: TraverseOptions[Node], state: Any): Unit = js.native
     def traverse(node: Node): Unit = js.native
-    def traverse(node: Node, opts: Unit, state: js.Any): Unit = js.native
+    def traverse(node: Node, opts: Unit, state: Any): Unit = js.native
     def traverse(node: Node, opts: TraverseOptions[Node]): Unit = js.native
-    def traverse(node: Node, opts: TraverseOptions[Node], state: js.Any): Unit = js.native
-    def traverse[S](node: js.Array[Node], opts: TraverseOptions[S], state: S): Unit = js.native
+    def traverse(node: Node, opts: TraverseOptions[Node], state: Any): Unit = js.native
+    @JSName("traverse")
+    def traverse_S[S](node: js.Array[Node], opts: TraverseOptions[S], state: S): Unit = js.native
     /** Traverse node with current scope and path. */
-    def traverse[S](node: Node, opts: TraverseOptions[S], state: S): Unit = js.native
+    @JSName("traverse")
+    def traverse_S[S](node: Node, opts: TraverseOptions[S], state: S): Unit = js.native
   }
   
-  type Node = typings.babelTypes.ts36Mod.Node
+  inline def default_S[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_S[S](
+    parent: js.Array[Node],
+    opts: TraverseOptions[S],
+    scope: Scope,
+    state: S,
+    parentPath: NodePath[Node]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_S[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default_S[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  type Node = typings.babelTypes.mod.Node
   
   trait TraversalContext extends StObject {
     
-    var opts: js.Any
+    var opts: Any
     
     var parentPath: NodePath[Node]
     
     var scope: Scope
     
-    var state: js.Any
+    var state: Any
   }
   object TraversalContext {
     
-    inline def apply(opts: js.Any, parentPath: NodePath[Node], scope: Scope, state: js.Any): TraversalContext = {
+    inline def apply(opts: Any, parentPath: NodePath[Node], scope: Scope, state: Any): TraversalContext = {
       val __obj = js.Dynamic.literal(opts = opts.asInstanceOf[js.Any], parentPath = parentPath.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[TraversalContext]
     }
     
     extension [Self <: TraversalContext](x: Self) {
       
-      inline def setOpts(value: js.Any): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: Any): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
       inline def setParentPath(value: NodePath[Node]): Self = StObject.set(x, "parentPath", value.asInstanceOf[js.Any])
       
       inline def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1887,13 +1893,13 @@ object mod {
   
   type VisitNode[T, P] = (VisitNodeFunction[T, P]) | VisitNodeObject[T]
   
-  type VisitNodeFunction[T, P] = js.ThisFunction2[/* this */ T, /* path */ NodePath[P], /* state */ js.Any, Unit]
+  type VisitNodeFunction[T, P] = js.ThisFunction2[/* this */ T, /* path */ NodePath[P], /* state */ Any, Unit]
   
   trait VisitNodeObject[T] extends StObject {
     
-    var enter: js.UndefOr[js.Function2[/* path */ NodePath[T], /* state */ js.Any, Unit]] = js.undefined
+    var enter: js.UndefOr[js.Function2[/* path */ NodePath[T], /* state */ Any, Unit]] = js.undefined
     
-    var exit: js.UndefOr[js.Function2[/* path */ NodePath[T], /* state */ js.Any, Unit]] = js.undefined
+    var exit: js.UndefOr[js.Function2[/* path */ NodePath[T], /* state */ Any, Unit]] = js.undefined
   }
   object VisitNodeObject {
     
@@ -1904,11 +1910,11 @@ object mod {
     
     extension [Self <: VisitNodeObject[?], T](x: Self & VisitNodeObject[T]) {
       
-      inline def setEnter(value: (/* path */ NodePath[T], /* state */ js.Any) => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction2(value))
+      inline def setEnter(value: (/* path */ NodePath[T], /* state */ Any) => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction2(value))
       
       inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
-      inline def setExit(value: (/* path */ NodePath[T], /* state */ js.Any) => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction2(value))
+      inline def setExit(value: (/* path */ NodePath[T], /* state */ Any) => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction2(value))
       
       inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     }
@@ -1934,15 +1940,15 @@ object mod {
     
     var AwaitExpression: js.UndefOr[VisitNode[S, AwaitExpression_]] = js.undefined
     
-    var Binary: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Binary]] = js.undefined
+    var Binary: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Binary]] = js.undefined
     
     var BinaryExpression: js.UndefOr[VisitNode[S, BinaryExpression_]] = js.undefined
     
     var BindExpression: js.UndefOr[VisitNode[S, BindExpression_]] = js.undefined
     
-    var Block: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Block]] = js.undefined
+    var Block: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Block]] = js.undefined
     
-    var BlockParent: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.BlockParent]] = js.undefined
+    var BlockParent: js.UndefOr[VisitNode[S, typings.babelTypes.mod.BlockParent]] = js.undefined
     
     var BlockStatement: js.UndefOr[VisitNode[S, BlockStatement_]] = js.undefined
     
@@ -1958,7 +1964,7 @@ object mod {
     
     var CatchClause: js.UndefOr[VisitNode[S, CatchClause_]] = js.undefined
     
-    var Class: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Class]] = js.undefined
+    var Class: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Class]] = js.undefined
     
     var ClassBody: js.UndefOr[VisitNode[S, ClassBody_]] = js.undefined
     
@@ -1972,9 +1978,9 @@ object mod {
     
     var ClassProperty: js.UndefOr[VisitNode[S, ClassProperty_]] = js.undefined
     
-    var CompletionStatement: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.CompletionStatement]] = js.undefined
+    var CompletionStatement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.CompletionStatement]] = js.undefined
     
-    var Conditional: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Conditional]] = js.undefined
+    var Conditional: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Conditional]] = js.undefined
     
     var ConditionalExpression: js.UndefOr[VisitNode[S, ConditionalExpression_]] = js.undefined
     
@@ -1982,7 +1988,7 @@ object mod {
     
     var DebuggerStatement: js.UndefOr[VisitNode[S, DebuggerStatement_]] = js.undefined
     
-    var Declaration: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Declaration]] = js.undefined
+    var Declaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Declaration]] = js.undefined
     
     var DeclareClass: js.UndefOr[VisitNode[S, DeclareClass_]] = js.undefined
     
@@ -2012,7 +2018,7 @@ object mod {
     
     var ExportAllDeclaration: js.UndefOr[VisitNode[S, ExportAllDeclaration_]] = js.undefined
     
-    var ExportDeclaration: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.ExportDeclaration]] = js.undefined
+    var ExportDeclaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ExportDeclaration]] = js.undefined
     
     var ExportDefaultDeclaration: js.UndefOr[VisitNode[S, ExportDefaultDeclaration_]] = js.undefined
     
@@ -2024,21 +2030,21 @@ object mod {
     
     var ExportSpecifier: js.UndefOr[VisitNode[S, ExportSpecifier_]] = js.undefined
     
-    var Expression: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Expression]] = js.undefined
+    var Expression: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Expression]] = js.undefined
     
     var ExpressionStatement: js.UndefOr[VisitNode[S, ExpressionStatement_]] = js.undefined
     
-    var ExpressionWrapper: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.ExpressionWrapper]] = js.undefined
+    var ExpressionWrapper: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ExpressionWrapper]] = js.undefined
     
     var File: js.UndefOr[VisitNode[S, File_]] = js.undefined
     
-    var Flow: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Flow]] = js.undefined
+    var Flow: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Flow]] = js.undefined
     
-    var FlowBaseAnnotation: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.FlowBaseAnnotation]] = js.undefined
+    var FlowBaseAnnotation: js.UndefOr[VisitNode[S, typings.babelTypes.mod.FlowBaseAnnotation]] = js.undefined
     
-    var FlowDeclaration: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.FlowDeclaration]] = js.undefined
+    var FlowDeclaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.FlowDeclaration]] = js.undefined
     
-    var For: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.For]] = js.undefined
+    var For: js.UndefOr[VisitNode[S, typings.babelTypes.mod.For]] = js.undefined
     
     var ForInStatement: js.UndefOr[VisitNode[S, ForInStatement_]] = js.undefined
     
@@ -2046,15 +2052,15 @@ object mod {
     
     var ForStatement: js.UndefOr[VisitNode[S, ForStatement_]] = js.undefined
     
-    var ForXStatement: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.ForXStatement]] = js.undefined
+    var ForXStatement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ForXStatement]] = js.undefined
     
-    var Function: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Function]] = js.undefined
+    var Function: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Function]] = js.undefined
     
     var FunctionDeclaration: js.UndefOr[VisitNode[S, FunctionDeclaration_]] = js.undefined
     
     var FunctionExpression: js.UndefOr[VisitNode[S, FunctionExpression_]] = js.undefined
     
-    var FunctionParent: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.FunctionParent]] = js.undefined
+    var FunctionParent: js.UndefOr[VisitNode[S, typings.babelTypes.mod.FunctionParent]] = js.undefined
     
     var FunctionTypeAnnotation: js.UndefOr[VisitNode[S, FunctionTypeAnnotation_]] = js.undefined
     
@@ -2066,7 +2072,7 @@ object mod {
     
     var IfStatement: js.UndefOr[VisitNode[S, IfStatement_]] = js.undefined
     
-    var Immutable: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Immutable]] = js.undefined
+    var Immutable: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Immutable]] = js.undefined
     
     var ImportDeclaration: js.UndefOr[VisitNode[S, ImportDeclaration_]] = js.undefined
     
@@ -2082,7 +2088,7 @@ object mod {
     
     var IntersectionTypeAnnotation: js.UndefOr[VisitNode[S, IntersectionTypeAnnotation_]] = js.undefined
     
-    var JSX: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.JSX]] = js.undefined
+    var JSX: js.UndefOr[VisitNode[S, typings.babelTypes.mod.JSX]] = js.undefined
     
     var JSXAttribute: js.UndefOr[VisitNode[S, JSXAttribute_]] = js.undefined
     
@@ -2106,27 +2112,27 @@ object mod {
     
     var JSXText: js.UndefOr[VisitNode[S, JSXText_]] = js.undefined
     
-    var LVal: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.LVal]] = js.undefined
+    var LVal: js.UndefOr[VisitNode[S, typings.babelTypes.mod.LVal]] = js.undefined
     
     var LabeledStatement: js.UndefOr[VisitNode[S, LabeledStatement_]] = js.undefined
     
-    var Literal: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Literal]] = js.undefined
+    var Literal: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Literal]] = js.undefined
     
     var LogicalExpression: js.UndefOr[VisitNode[S, LogicalExpression_]] = js.undefined
     
-    var Loop: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Loop]] = js.undefined
+    var Loop: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Loop]] = js.undefined
     
     var MemberExpression: js.UndefOr[VisitNode[S, MemberExpression_]] = js.undefined
     
     var MetaProperty: js.UndefOr[VisitNode[S, MetaProperty_]] = js.undefined
     
-    var Method: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Method]] = js.undefined
+    var Method: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Method]] = js.undefined
     
     var MixedTypeAnnotation: js.UndefOr[VisitNode[S, MixedTypeAnnotation_]] = js.undefined
     
-    var ModuleDeclaration: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.ModuleDeclaration]] = js.undefined
+    var ModuleDeclaration: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ModuleDeclaration]] = js.undefined
     
-    var ModuleSpecifier: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.ModuleSpecifier]] = js.undefined
+    var ModuleSpecifier: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ModuleSpecifier]] = js.undefined
     
     var NewExpression: js.UndefOr[VisitNode[S, NewExpression_]] = js.undefined
     
@@ -2146,7 +2152,7 @@ object mod {
     
     var ObjectExpression: js.UndefOr[VisitNode[S, ObjectExpression_]] = js.undefined
     
-    var ObjectMember: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.ObjectMember]] = js.undefined
+    var ObjectMember: js.UndefOr[VisitNode[S, typings.babelTypes.mod.ObjectMember]] = js.undefined
     
     var ObjectMethod: js.UndefOr[VisitNode[S, ObjectMethod_]] = js.undefined
     
@@ -2164,13 +2170,13 @@ object mod {
     
     var ParenthesizedExpression: js.UndefOr[VisitNode[S, ParenthesizedExpression_]] = js.undefined
     
-    var Pattern: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Pattern]] = js.undefined
+    var Pattern: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Pattern]] = js.undefined
     
     var Program: js.UndefOr[VisitNode[S, Program_]] = js.undefined
     
-    var Property: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Property]] = js.undefined
+    var Property: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Property]] = js.undefined
     
-    var Pureish: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Pureish]] = js.undefined
+    var Pureish: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Pureish]] = js.undefined
     
     var QualifiedTypeIdentifier: js.UndefOr[VisitNode[S, QualifiedTypeIdentifier_]] = js.undefined
     
@@ -2182,7 +2188,7 @@ object mod {
     
     var ReturnStatement: js.UndefOr[VisitNode[S, ReturnStatement_]] = js.undefined
     
-    var Scopable: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Scopable]] = js.undefined
+    var Scopable: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Scopable]] = js.undefined
     
     var Scope: js.UndefOr[VisitNode[S, Scopable]] = js.undefined
     
@@ -2192,7 +2198,7 @@ object mod {
     
     var SpreadProperty: js.UndefOr[VisitNode[S, SpreadProperty_]] = js.undefined
     
-    var Statement: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Statement]] = js.undefined
+    var Statement: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Statement]] = js.undefined
     
     var StringLiteral: js.UndefOr[VisitNode[S, StringLiteral_]] = js.undefined
     
@@ -2200,7 +2206,7 @@ object mod {
     
     var StringTypeAnnotation: js.UndefOr[VisitNode[S, StringTypeAnnotation_]] = js.undefined
     
-    var Super: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Super]] = js.undefined
+    var Super: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Super]] = js.undefined
     
     var SwitchCase: js.UndefOr[VisitNode[S, SwitchCase_]] = js.undefined
     
@@ -2212,7 +2218,7 @@ object mod {
     
     var TemplateLiteral: js.UndefOr[VisitNode[S, TemplateLiteral_]] = js.undefined
     
-    var Terminatorless: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.Terminatorless]] = js.undefined
+    var Terminatorless: js.UndefOr[VisitNode[S, typings.babelTypes.mod.Terminatorless]] = js.undefined
     
     var ThisExpression: js.UndefOr[VisitNode[S, ThisExpression_]] = js.undefined
     
@@ -2238,13 +2244,13 @@ object mod {
     
     var UnaryExpression: js.UndefOr[VisitNode[S, UnaryExpression_]] = js.undefined
     
-    var UnaryLike: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.UnaryLike]] = js.undefined
+    var UnaryLike: js.UndefOr[VisitNode[S, typings.babelTypes.mod.UnaryLike]] = js.undefined
     
     var UnionTypeAnnotation: js.UndefOr[VisitNode[S, UnionTypeAnnotation_]] = js.undefined
     
     var UpdateExpression: js.UndefOr[VisitNode[S, UpdateExpression_]] = js.undefined
     
-    var UserWhitespacable: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.UserWhitespacable]] = js.undefined
+    var UserWhitespacable: js.UndefOr[VisitNode[S, typings.babelTypes.mod.UserWhitespacable]] = js.undefined
     
     var VariableDeclaration: js.UndefOr[VisitNode[S, VariableDeclaration_]] = js.undefined
     
@@ -2252,7 +2258,7 @@ object mod {
     
     var VoidTypeAnnotation: js.UndefOr[VisitNode[S, VoidTypeAnnotation_]] = js.undefined
     
-    var While: js.UndefOr[VisitNode[S, typings.babelTypes.ts36Mod.While]] = js.undefined
+    var While: js.UndefOr[VisitNode[S, typings.babelTypes.mod.While]] = js.undefined
     
     var WhileStatement: js.UndefOr[VisitNode[S, WhileStatement_]] = js.undefined
     

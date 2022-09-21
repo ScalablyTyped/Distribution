@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDrive.anon
 
-import typings.maximMazurokGapiClientDrive.gapi.client.drive.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +20,9 @@ trait IncludePermissionsForView extends StObject {
     * this parameter bypasses that behavior for the request. Permissions are still inherited from parent folders.
     */
   var ignoreDefaultVisibility: js.UndefOr[Boolean] = js.undefined
+  
+  /** A comma-separated list of IDs of labels to include in the labelInfo part of the response. */
+  var includeLabels: js.UndefOr[String] = js.undefined
   
   /** Specifies which additional view's permissions to include in the response. Only 'published' is supported. */
   var includePermissionsForView: js.UndefOr[String] = js.undefined
@@ -46,9 +48,6 @@ trait IncludePermissionsForView extends StObject {
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: File
-  
   /** Whether the requesting application supports both My Drives and shared drives. */
   var supportsAllDrives: js.UndefOr[Boolean] = js.undefined
   
@@ -63,8 +62,8 @@ trait IncludePermissionsForView extends StObject {
 }
 object IncludePermissionsForView {
   
-  inline def apply(resource: File): IncludePermissionsForView = {
-    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
+  inline def apply(): IncludePermissionsForView = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncludePermissionsForView]
   }
   
@@ -85,6 +84,10 @@ object IncludePermissionsForView {
     inline def setIgnoreDefaultVisibility(value: Boolean): Self = StObject.set(x, "ignoreDefaultVisibility", value.asInstanceOf[js.Any])
     
     inline def setIgnoreDefaultVisibilityUndefined: Self = StObject.set(x, "ignoreDefaultVisibility", js.undefined)
+    
+    inline def setIncludeLabels(value: String): Self = StObject.set(x, "includeLabels", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeLabelsUndefined: Self = StObject.set(x, "includeLabels", js.undefined)
     
     inline def setIncludePermissionsForView(value: String): Self = StObject.set(x, "includePermissionsForView", value.asInstanceOf[js.Any])
     
@@ -113,8 +116,6 @@ object IncludePermissionsForView {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: File): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setSupportsAllDrives(value: Boolean): Self = StObject.set(x, "supportsAllDrives", value.asInstanceOf[js.Any])
     

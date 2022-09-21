@@ -1,5 +1,6 @@
 package typings.rcPicker
 
+import typings.rcPicker.anon.CellDate
 import typings.rcPicker.anon.FormatList
 import typings.rcPicker.anon.GenerateConfig
 import typings.rcPicker.interfaceMod.NullableDateType
@@ -19,6 +20,8 @@ object dateUtilMod {
   val WEEK_DAY_COUNT: /* 7 */ Double = js.native
   
   inline def formatValue[DateType](value: DateType, hasGenerateConfigLocaleFormat: GenerateConfig[DateType]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatValue")(value.asInstanceOf[js.Any], hasGenerateConfigLocaleFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def getCellDateDisabled[DateType](hasCellDateModeDisabledDateGenerateConfig: CellDate[DateType]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getCellDateDisabled")(hasCellDateModeDisabledDateGenerateConfig.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def getClosingViewDate[DateType](
     viewDate: DateType,

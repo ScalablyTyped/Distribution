@@ -325,7 +325,7 @@ trait Options extends StObject {
   
   var Pagination: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PasteAdjustParagraphSpacing: Boolean
   
@@ -414,12 +414,12 @@ trait Options extends StObject {
   var SequenceCheck: Boolean
   
   def SetWPHelpOptions(
-    CommandKeyHelp: js.UndefOr[js.Any],
-    DocNavigationKeys: js.UndefOr[js.Any],
-    MouseSimulation: js.UndefOr[js.Any],
-    DemoGuidance: js.UndefOr[js.Any],
-    DemoSpeed: js.UndefOr[js.Any],
-    HelpType: js.UndefOr[js.Any]
+    CommandKeyHelp: js.UndefOr[Any],
+    DocNavigationKeys: js.UndefOr[Any],
+    MouseSimulation: js.UndefOr[Any],
+    DemoGuidance: js.UndefOr[Any],
+    DemoSpeed: js.UndefOr[Any],
+    HelpType: js.UndefOr[Any]
   ): Unit
   
   var ShortMenuNames: Boolean
@@ -665,7 +665,7 @@ object Options {
     OptimizeForWord97byDefault: Boolean,
     Overtype: Boolean,
     Pagination: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     PasteAdjustParagraphSpacing: Boolean,
     PasteAdjustTableFormatting: Boolean,
     PasteAdjustWordSpacing: Boolean,
@@ -709,7 +709,7 @@ object Options {
     SavePropertiesPrompt: Boolean,
     SendMailAttach: Boolean,
     SequenceCheck: Boolean,
-    SetWPHelpOptions: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit,
+    SetWPHelpOptions: (js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Unit,
     ShortMenuNames: Boolean,
     ShowControlCharacters: Boolean,
     ShowDevTools: Boolean,
@@ -1076,7 +1076,7 @@ object Options {
     
     inline def setPagination(value: Boolean): Self = StObject.set(x, "Pagination", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPasteAdjustParagraphSpacing(value: Boolean): Self = StObject.set(x, "PasteAdjustParagraphSpacing", value.asInstanceOf[js.Any])
     
@@ -1165,7 +1165,7 @@ object Options {
     inline def setSequenceCheck(value: Boolean): Self = StObject.set(x, "SequenceCheck", value.asInstanceOf[js.Any])
     
     inline def setSetWPHelpOptions(
-      value: (js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit
+      value: (js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "SetWPHelpOptions", js.Any.fromFunction6(value))
     
     inline def setShortMenuNames(value: Boolean): Self = StObject.set(x, "ShortMenuNames", value.asInstanceOf[js.Any])

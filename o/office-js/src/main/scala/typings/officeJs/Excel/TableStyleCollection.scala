@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of table styles.
   *
-  * Represents a collection of TableStyles.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @js.native
@@ -22,13 +22,14 @@ trait TableStyleCollection
      with ClientObject {
   
   /**
-    * Creates a blank TableStyle with the specified name.
+    * Creates a blank `TableStyle` with the specified name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param name The unique name for the new TableStyle. Will throw an invalid argument exception if the name is already in use.
-    * @param makeUniqueName Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.
-    * @returns The newly created TableStyle.
+    * @param name The unique name for the new table style. Will throw an `InvalidArgument` error if the name is already in use.
+    * @param makeUniqueName Optional. Defaults to `false`. If `true`, will append numbers to the name in order to make it unique, if needed.
+    * @returns The newly created `TableStyle`.
     */
   def add(name: String): TableStyle = js.native
   def add(name: String, makeUniqueName: Boolean): TableStyle = js.native
@@ -40,35 +41,40 @@ trait TableStyleCollection
   /**
     * Gets the number of table styles in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets the default TableStyle for the parent object's scope.
+    * Gets the default table style for the parent object's scope.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
-    * @returns The TableStyle object that is the current default TableStyle.
+    * @returns The `TableStyle` object that is the current default table style.
     */
   def getDefault(): TableStyle = js.native
   
   /**
-    * Gets a TableStyle by name.
+    * Gets a `TableStyle` by name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param name Name of the TableStyle to be retrieved.
-    * @returns The TableStyle object whose name matches the input.
+    * @param name Name of the table style to be retrieved.
+    * @returns The `TableStyle` object whose name matches the input.
     */
   def getItem(name: String): TableStyle = js.native
   
   /**
-    * Gets a TableStyle by name. If the TableStyle does not exist, will return a null object.
+    * Gets a `TableStyle` by name. If the table style does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param name Name of the TableStyle to be retrieved.
-    * @returns The TableStyle object whose name matches the input.
+    * @param name Name of the table style to be retrieved.
+    * @returns The `TableStyle` object whose name matches the input.
     */
   def getItemOrNullObject(name: String): TableStyle = js.native
   
@@ -88,11 +94,12 @@ trait TableStyleCollection
   
   def setDefault(newDefaultStyle: String): Unit = js.native
   /**
-    * Sets the default TableStyle for use in the parent object's scope.
+    * Sets the default table style for use in the parent object's scope.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param newDefaultStyle The TableStyle object or name of the TableStyle object that should be the new default.
+    * @param newDefaultStyle The `TableStyle` object, or name of the `TableStyle` object, that should be the new default.
     */
   def setDefault(newDefaultStyle: TableStyle): Unit = js.native
   

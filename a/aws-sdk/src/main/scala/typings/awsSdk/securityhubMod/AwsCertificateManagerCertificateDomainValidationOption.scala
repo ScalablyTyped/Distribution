@@ -17,12 +17,12 @@ trait AwsCertificateManagerCertificateDomainValidationOption extends StObject {
   var ResourceRecord: js.UndefOr[AwsCertificateManagerCertificateResourceRecord] = js.undefined
   
   /**
-    * The domain name that AWS Certificate Manager uses to send domain validation emails.
+    * The domain name that Certificate Manager uses to send domain validation emails.
     */
   var ValidationDomain: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * A list of email addresses that AWS Certificate Manager uses to send domain validation emails.
+    * A list of email addresses that Certificate Manager uses to send domain validation emails.
     */
   var ValidationEmails: js.UndefOr[StringList] = js.undefined
   
@@ -61,7 +61,7 @@ object AwsCertificateManagerCertificateDomainValidationOption {
     
     inline def setValidationEmailsUndefined: Self = StObject.set(x, "ValidationEmails", js.undefined)
     
-    inline def setValidationEmailsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ValidationEmails", js.Array(value :_*))
+    inline def setValidationEmailsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ValidationEmails", js.Array(value*))
     
     inline def setValidationMethod(value: NonEmptyString): Self = StObject.set(x, "ValidationMethod", value.asInstanceOf[js.Any])
     

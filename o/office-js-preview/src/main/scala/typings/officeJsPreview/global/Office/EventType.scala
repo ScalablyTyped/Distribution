@@ -44,25 +44,27 @@ object EventType extends StObject {
   
   /* 9 */ val EnhancedLocationsChanged: typings.officeJsPreview.Office.EventType.EnhancedLocationsChanged & Double = js.native
   
-  /* 10 */ val ItemChanged: typings.officeJsPreview.Office.EventType.ItemChanged & Double = js.native
+  /* 10 */ val InfobarClicked: typings.officeJsPreview.Office.EventType.InfobarClicked & Double = js.native
   
-  /* 11 */ val NodeDeleted: typings.officeJsPreview.Office.EventType.NodeDeleted & Double = js.native
+  /* 11 */ val ItemChanged: typings.officeJsPreview.Office.EventType.ItemChanged & Double = js.native
   
-  /* 12 */ val NodeInserted: typings.officeJsPreview.Office.EventType.NodeInserted & Double = js.native
+  /* 12 */ val NodeDeleted: typings.officeJsPreview.Office.EventType.NodeDeleted & Double = js.native
   
-  /* 13 */ val NodeReplaced: typings.officeJsPreview.Office.EventType.NodeReplaced & Double = js.native
+  /* 13 */ val NodeInserted: typings.officeJsPreview.Office.EventType.NodeInserted & Double = js.native
   
-  /* 14 */ val OfficeThemeChanged: typings.officeJsPreview.Office.EventType.OfficeThemeChanged & Double = js.native
+  /* 14 */ val NodeReplaced: typings.officeJsPreview.Office.EventType.NodeReplaced & Double = js.native
   
-  /* 15 */ val RecipientsChanged: typings.officeJsPreview.Office.EventType.RecipientsChanged & Double = js.native
+  /* 15 */ val OfficeThemeChanged: typings.officeJsPreview.Office.EventType.OfficeThemeChanged & Double = js.native
   
-  /* 16 */ val RecurrenceChanged: typings.officeJsPreview.Office.EventType.RecurrenceChanged & Double = js.native
+  /* 16 */ val RecipientsChanged: typings.officeJsPreview.Office.EventType.RecipientsChanged & Double = js.native
   
-  /* 17 */ val ResourceSelectionChanged: typings.officeJsPreview.Office.EventType.ResourceSelectionChanged & Double = js.native
+  /* 17 */ val RecurrenceChanged: typings.officeJsPreview.Office.EventType.RecurrenceChanged & Double = js.native
   
-  /* 18 */ val SettingsChanged: typings.officeJsPreview.Office.EventType.SettingsChanged & Double = js.native
+  /* 18 */ val ResourceSelectionChanged: typings.officeJsPreview.Office.EventType.ResourceSelectionChanged & Double = js.native
   
-  /* 19 */ val TaskSelectionChanged: typings.officeJsPreview.Office.EventType.TaskSelectionChanged & Double = js.native
+  /* 19 */ val SettingsChanged: typings.officeJsPreview.Office.EventType.SettingsChanged & Double = js.native
   
-  /* 20 */ val ViewSelectionChanged: typings.officeJsPreview.Office.EventType.ViewSelectionChanged & Double = js.native
+  /* 20 */ val TaskSelectionChanged: typings.officeJsPreview.Office.EventType.TaskSelectionChanged & Double = js.native
+  
+  /* 21 */ val ViewSelectionChanged: typings.officeJsPreview.Office.EventType.ViewSelectionChanged & Double = js.native
 }

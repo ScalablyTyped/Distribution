@@ -19,6 +19,6 @@ object FileList {
     
     inline def setFileList(value: js.Array[Size]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     
-    inline def setFileListVarargs(value: Size*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+    inline def setFileListVarargs(value: Size*): Self = StObject.set(x, "fileList", js.Array(value*))
   }
 }

@@ -15,7 +15,7 @@ object boundingBoxRendererMod {
   
   @JSImport("babylonjs/Rendering/boundingBoxRenderer", "BoundingBoxRenderer")
   @js.native
-  class BoundingBoxRenderer protected ()
+  open class BoundingBoxRenderer protected ()
     extends StObject
        with ISceneComponent {
     /**
@@ -24,23 +24,35 @@ object boundingBoxRendererMod {
       */
     def this(scene: Scene) = this()
     
-    /* private */ var _colorShader: js.Any = js.native
+    /* private */ var _buildUniformLayout: Any = js.native
     
-    /* private */ var _createIndexBuffer: js.Any = js.native
+    /* private */ var _colorShader: Any = js.native
     
-    /* private */ var _evaluateSubMesh: js.Any = js.native
+    /* private */ var _colorShaderForOcclusionQuery: Any = js.native
     
-    /* private */ var _fillIndexBuffer: js.Any = js.native
+    /* private */ var _createIndexBuffer: Any = js.native
     
-    /* private */ var _fillIndexData: js.Any = js.native
+    /* private */ var _createWrappersForBoundingBox: Any = js.native
     
-    /* private */ var _indexBuffer: js.Any = js.native
+    /* private */ var _evaluateSubMesh: Any = js.native
     
-    /* private */ var _preActiveMesh: js.Any = js.native
+    /* private */ var _fillIndexBuffer: Any = js.native
     
-    /* private */ var _prepareResources: js.Any = js.native
+    /* private */ var _fillIndexData: Any = js.native
     
-    /* private */ var _vertexBuffers: js.Any = js.native
+    /* private */ var _indexBuffer: Any = js.native
+    
+    /* private */ var _preActiveMesh: Any = js.native
+    
+    /* private */ var _prepareResources: Any = js.native
+    
+    /* private */ var _renderPassIdForOcclusionQuery: Any = js.native
+    
+    /* private */ var _uniformBufferBack: Any = js.native
+    
+    /* private */ var _uniformBufferFront: Any = js.native
+    
+    /* private */ var _vertexBuffers: Any = js.native
     
     /**
       * Color of the bounding box lines placed behind an object

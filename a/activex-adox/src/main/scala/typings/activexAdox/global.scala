@@ -22,13 +22,13 @@ object global {
     
     @JSGlobal("ADOX.Catalog")
     @js.native
-    /* private */ class Catalog ()
+    /* private */ open class Catalog ()
       extends StObject
          with typings.activexAdox.ADOX.Catalog
     
     @JSGlobal("ADOX.Column")
     @js.native
-    /* private */ class Column ()
+    /* private */ open class Column ()
       extends StObject
          with typings.activexAdox.ADOX.Column {
       
@@ -74,13 +74,13 @@ object global {
     
     @JSGlobal("ADOX.Group")
     @js.native
-    /* private */ class Group ()
+    /* private */ open class Group ()
       extends StObject
          with typings.activexAdox.ADOX.Group
     
     @JSGlobal("ADOX.Index")
     @js.native
-    /* private */ class Index ()
+    /* private */ open class Index ()
       extends StObject
          with typings.activexAdox.ADOX.Index {
       
@@ -122,7 +122,7 @@ object global {
     
     @JSGlobal("ADOX.Key")
     @js.native
-    /* private */ class Key ()
+    /* private */ open class Key ()
       extends StObject
          with typings.activexAdox.ADOX.Key {
       
@@ -156,7 +156,7 @@ object global {
     
     @JSGlobal("ADOX.Procedure")
     @js.native
-    /* private */ class Procedure ()
+    /* private */ open class Procedure ()
       extends StObject
          with typings.activexAdox.ADOX.Procedure {
       
@@ -179,7 +179,7 @@ object global {
     
     @JSGlobal("ADOX.Table")
     @js.native
-    /* private */ class Table ()
+    /* private */ open class Table ()
       extends StObject
          with typings.activexAdox.ADOX.Table {
       
@@ -237,13 +237,13 @@ object global {
     
     @JSGlobal("ADOX.User")
     @js.native
-    /* private */ class User ()
+    /* private */ open class User ()
       extends StObject
          with typings.activexAdox.ADOX.User
     
     @JSGlobal("ADOX.View")
     @js.native
-    /* private */ class View ()
+    /* private */ open class View ()
       extends StObject
          with typings.activexAdox.ADOX.View {
       

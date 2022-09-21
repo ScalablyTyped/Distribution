@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "swap-case" : "2.0.1"
+      "swap-case" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "swap-case" : "2.0.1"
+      "swap-case" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

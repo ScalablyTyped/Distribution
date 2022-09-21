@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SSAO2Configuration")
 @js.native
-class SSAO2Configuration ()
+open class SSAO2Configuration ()
   extends StObject
      with typings.babylonjs.BABYLON.SSAO2Configuration {
   

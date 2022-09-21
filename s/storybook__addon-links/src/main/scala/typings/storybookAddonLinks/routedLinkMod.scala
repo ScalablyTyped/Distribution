@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object routedLinkMod extends Shortcut {
   
-  @JSImport("@storybook/addon-links/dist/react/components/RoutedLink", JSImport.Default)
+  @JSImport("@storybook/addon-links/dist/ts3.9/react/components/RoutedLink", JSImport.Default)
   @js.native
   val default: FC[DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]] = js.native
   

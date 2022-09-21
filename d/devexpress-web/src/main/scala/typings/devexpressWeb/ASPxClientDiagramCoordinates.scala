@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,12 +38,12 @@ trait ASPxClientDiagramCoordinates extends StObject {
   /**
     * Gets the date-time representation of the data point's argument.
     */
-  var dateTimeArgument: Date
+  var dateTimeArgument: js.Date
   
   /**
     * Gets the date-time representation of the data point's value.
     */
-  var dateTimeValue: Date
+  var dateTimeValue: js.Date
   
   /**
     * Gets the numerical representation of the data point's argument.
@@ -66,9 +65,9 @@ trait ASPxClientDiagramCoordinates extends StObject {
     */
   var qualitativeArgument: String
   
-  var timeSpanArgument: js.Any
+  var timeSpanArgument: Any
   
-  var timeSpanValue: js.Any
+  var timeSpanValue: Any
   
   /**
     * Gets the type of the value scale.
@@ -83,14 +82,14 @@ object ASPxClientDiagramCoordinates {
     argumentScaleType: String,
     axisX: ASPxClientAxisBase,
     axisY: ASPxClientAxisBase,
-    dateTimeArgument: Date,
-    dateTimeValue: Date,
+    dateTimeArgument: js.Date,
+    dateTimeValue: js.Date,
     numericalArgument: Double,
     numericalValue: Double,
     pane: ASPxClientXYDiagramPane,
     qualitativeArgument: String,
-    timeSpanArgument: js.Any,
-    timeSpanValue: js.Any,
+    timeSpanArgument: Any,
+    timeSpanValue: Any,
     valueScaleType: String
   ): ASPxClientDiagramCoordinates = {
     val __obj = js.Dynamic.literal(GetAxisValue = js.Any.fromFunction1(GetAxisValue), IsEmpty = js.Any.fromFunction0(IsEmpty), argumentScaleType = argumentScaleType.asInstanceOf[js.Any], axisX = axisX.asInstanceOf[js.Any], axisY = axisY.asInstanceOf[js.Any], dateTimeArgument = dateTimeArgument.asInstanceOf[js.Any], dateTimeValue = dateTimeValue.asInstanceOf[js.Any], numericalArgument = numericalArgument.asInstanceOf[js.Any], numericalValue = numericalValue.asInstanceOf[js.Any], pane = pane.asInstanceOf[js.Any], qualitativeArgument = qualitativeArgument.asInstanceOf[js.Any], timeSpanArgument = timeSpanArgument.asInstanceOf[js.Any], timeSpanValue = timeSpanValue.asInstanceOf[js.Any], valueScaleType = valueScaleType.asInstanceOf[js.Any])
@@ -105,9 +104,9 @@ object ASPxClientDiagramCoordinates {
     
     inline def setAxisY(value: ASPxClientAxisBase): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
     
-    inline def setDateTimeArgument(value: Date): Self = StObject.set(x, "dateTimeArgument", value.asInstanceOf[js.Any])
+    inline def setDateTimeArgument(value: js.Date): Self = StObject.set(x, "dateTimeArgument", value.asInstanceOf[js.Any])
     
-    inline def setDateTimeValue(value: Date): Self = StObject.set(x, "dateTimeValue", value.asInstanceOf[js.Any])
+    inline def setDateTimeValue(value: js.Date): Self = StObject.set(x, "dateTimeValue", value.asInstanceOf[js.Any])
     
     inline def setGetAxisValue(value: ASPxClientAxisBase => ASPxClientAxisValue): Self = StObject.set(x, "GetAxisValue", js.Any.fromFunction1(value))
     
@@ -121,9 +120,9 @@ object ASPxClientDiagramCoordinates {
     
     inline def setQualitativeArgument(value: String): Self = StObject.set(x, "qualitativeArgument", value.asInstanceOf[js.Any])
     
-    inline def setTimeSpanArgument(value: js.Any): Self = StObject.set(x, "timeSpanArgument", value.asInstanceOf[js.Any])
+    inline def setTimeSpanArgument(value: Any): Self = StObject.set(x, "timeSpanArgument", value.asInstanceOf[js.Any])
     
-    inline def setTimeSpanValue(value: js.Any): Self = StObject.set(x, "timeSpanValue", value.asInstanceOf[js.Any])
+    inline def setTimeSpanValue(value: Any): Self = StObject.set(x, "timeSpanValue", value.asInstanceOf[js.Any])
     
     inline def setValueScaleType(value: String): Self = StObject.set(x, "valueScaleType", value.asInstanceOf[js.Any])
   }

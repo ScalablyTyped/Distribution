@@ -5,15 +5,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to create notes in batch.
-  */
 trait SchemaBatchCreateNotesRequest extends StObject {
   
   /**
-    * The notes to create. Max allowed length is 1000.
+    * Required. The notes to create, the key is expected to be the note ID. Max allowed length is 1000.
     */
-  var notes: js.UndefOr[StringDictionary[SchemaNote]] = js.undefined
+  var notes: js.UndefOr[StringDictionary[SchemaNote] | Null] = js.undefined
 }
 object SchemaBatchCreateNotesRequest {
   
@@ -25,6 +22,8 @@ object SchemaBatchCreateNotesRequest {
   extension [Self <: SchemaBatchCreateNotesRequest](x: Self) {
     
     inline def setNotes(value: StringDictionary[SchemaNote]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    
+    inline def setNotesNull: Self = StObject.set(x, "notes", null)
     
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
   }

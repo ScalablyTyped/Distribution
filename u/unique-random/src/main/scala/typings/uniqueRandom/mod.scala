@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(minimum: Double, maximum: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].apply(minimum.asInstanceOf[js.Any], maximum.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
-  
   @JSImport("unique-random", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(minimum: Double, maximum: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(minimum.asInstanceOf[js.Any], maximum.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
 }

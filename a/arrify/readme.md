@@ -1,7 +1,7 @@
 
 # Scala.js typings for arrify
 
-Typings are for version 2.0.1
+Typings are for version 3.0.0
 
 ## Library description:
 Convert a value to an array
@@ -10,10 +10,10 @@ Convert a value to an array
 | ------------------ | :-------------: |
 | Full name          | arrify |
 | Keywords           | array, arrify, arrayify, convert, value, ensure |
-| # releases         | 3 |
-| # dependents       | 473 |
-| # downloads        | 670216478 |
-| # stars            | 8 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 9.650893733333333E7 |
+| # stars            | 117.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/arrify#readme)

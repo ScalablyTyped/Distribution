@@ -24,7 +24,7 @@ object tilegrid {
     */
   @JSImport("openlayers", "tilegrid.TileGrid")
   @js.native
-  class TileGrid protected () extends StObject {
+  open class TileGrid protected () extends StObject {
     /**
       * @classdesc
       * Base class for setting the grid pattern for sources accessing tiled-image
@@ -44,7 +44,7 @@ object tilegrid {
       * @param callback Function called with each tile coordinate.
       * @api
       */
-    def forEachTileCoord(extent: Extent_, zoom: Double, callback: js.Function1[/* coords */ TileCoord, js.Any]): Unit = js.native
+    def forEachTileCoord(extent: Extent_, zoom: Double, callback: js.Function1[/* coords */ TileCoord, Any]): Unit = js.native
     
     /**
       * Get the maximum zoom level for the grid.
@@ -151,7 +151,7 @@ object tilegrid {
     */
   @JSImport("openlayers", "tilegrid.WMTS")
   @js.native
-  class WMTS protected () extends TileGrid {
+  open class WMTS protected () extends TileGrid {
     /**
       * @classdesc
       * Set the grid pattern for sources accessing WMTS tiled-image servers.

@@ -48,7 +48,7 @@ object CIMPictureStroke {
     
     inline def setColorSubstitutionsUndefined: Self = StObject.set(x, "colorSubstitutions", js.undefined)
     
-    inline def setColorSubstitutionsVarargs(value: CIMColorSubstitution*): Self = StObject.set(x, "colorSubstitutions", js.Array(value :_*))
+    inline def setColorSubstitutionsVarargs(value: CIMColorSubstitution*): Self = StObject.set(x, "colorSubstitutions", js.Array(value*))
     
     inline def setTextureFilter(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextureFilter * / any */ String
@@ -60,7 +60,7 @@ object CIMPictureStroke {
     
     inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
-    inline def setTintColorVarargs(value: Double*): Self = StObject.set(x, "tintColor", js.Array(value :_*))
+    inline def setTintColorVarargs(value: Double*): Self = StObject.set(x, "tintColor", js.Array(value*))
     
     inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureStroke): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

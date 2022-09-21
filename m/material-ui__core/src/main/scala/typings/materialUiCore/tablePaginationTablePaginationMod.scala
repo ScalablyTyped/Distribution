@@ -1,10 +1,7 @@
 package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.anon.PartialClassNameMapTableCBody
-import typings.materialUiCore.anon.PartialClassNameMapTableP
-import typings.materialUiCore.anon.PartialIconButtonProps
-import typings.materialUiCore.anon.PartialSelectProps
+import typings.materialUiCore.anon.ActionsComponent
 import typings.materialUiCore.materialUiCoreStrings.`additions removals`
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
@@ -66,16 +63,17 @@ import typings.materialUiCore.materialUiCoreStrings.tree
 import typings.materialUiCore.materialUiCoreStrings.url
 import typings.materialUiCore.materialUiCoreStrings.vertical
 import typings.materialUiCore.materialUiCoreStrings.yes
-import typings.materialUiCore.tableCellTableCellMod.Padding
+import typings.materialUiCore.overridableComponentMod.OverridableComponent
+import typings.materialUiCore.overridableComponentMod.OverrideProps
 import typings.materialUiCore.tableCellTableCellMod.SortDirection
-import typings.materialUiCore.tableCellTableCellMod.TableCellBaseProps
-import typings.materialUiCore.tablePaginationActionsMod.TablePaginationActionsProps
+import typings.materialUiCore.tableTableMod.Padding
+import typings.materialUiCore.tableTableMod.Size
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
-import typings.react.mod.ChangeEventHandler
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
 import typings.react.mod.ComponentType
@@ -83,6 +81,7 @@ import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
+import typings.react.mod.ElementType
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
@@ -97,9 +96,7 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
-import typings.react.mod.ReactType
 import typings.react.mod.Ref
-import typings.react.mod.RefObject
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -109,20 +106,29 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.std.Element
 import typings.std.Event
-import typings.std.HTMLButtonElement
-import typings.std.HTMLInputElement
 import typings.std.HTMLTableHeaderCellElement
-import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tablePaginationTablePaginationMod extends Shortcut {
   
+  /**
+    * A `TableCell` based component for placing inside `TableFooter` for pagination.
+    * Demos:
+    *
+    * - [Tables](https://mui.com/components/tables/)
+    *
+    * API:
+    *
+    * - [TablePagination API](https://mui.com/api/table-pagination/)
+    * - inherits [TableCell API](https://mui.com/api/table-cell/)
+    */
   @JSImport("@material-ui/core/TablePagination/TablePagination", JSImport.Default)
   @js.native
-  val default: ComponentType[TablePaginationProps] = js.native
+  val default: OverridableComponent[TablePaginationTypeMap[js.Object, ComponentType[TablePaginationBaseProps]]] = js.native
   
   trait LabelDisplayedRowsArgs extends StObject {
     
@@ -153,7 +159,7 @@ object tablePaginationTablePaginationMod extends Shortcut {
     }
   }
   
-  /* Inlined @material-ui/core.@material-ui/core/TableCell.TableCellProps */
+  /* Inlined @material-ui/types.@material-ui/types.Omit<@material-ui/core.@material-ui/core/TableCell.TableCellProps, 'classes' | 'component'> */
   trait TablePaginationBaseProps extends StObject {
     
     var abbr: js.UndefOr[String] = js.undefined
@@ -166,11 +172,11 @@ object tablePaginationTablePaginationMod extends Shortcut {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -188,21 +194,21 @@ object tablePaginationTablePaginationMod extends Shortcut {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -216,11 +222,11 @@ object tablePaginationTablePaginationMod extends Shortcut {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -232,13 +238,13 @@ object tablePaginationTablePaginationMod extends Shortcut {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -248,7 +254,7 @@ object tablePaginationTablePaginationMod extends Shortcut {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -272,13 +278,9 @@ object tablePaginationTablePaginationMod extends Shortcut {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var classes: js.UndefOr[PartialClassNameMapTableCBody] = js.undefined
-    
     var colSpan: js.UndefOr[Double] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
-    
-    var component: js.UndefOr[ReactType[TableCellBaseProps]] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -304,9 +306,9 @@ object tablePaginationTablePaginationMod extends Shortcut {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
+    var innerRef: js.UndefOr[Ref[Any]] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -323,8 +325,6 @@ object tablePaginationTablePaginationMod extends Shortcut {
     var itemType: js.UndefOr[String] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
-    
-    var numeric: js.UndefOr[Boolean] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.undefined
     
@@ -494,17 +494,21 @@ object tablePaginationTablePaginationMod extends Shortcut {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var rowSpan: js.UndefOr[Double] = js.undefined
     
     var scope: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
+    
+    var size: js.UndefOr[Size] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -565,7 +569,7 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -573,7 +577,7 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -609,7 +613,7 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -621,7 +625,7 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -629,7 +633,7 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -637,7 +641,7 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -665,15 +669,15 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -697,7 +701,7 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -707,7 +711,7 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -727,7 +731,7 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -775,10 +779,6 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClasses(value: PartialClassNameMapTableCBody): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
-      
-      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
-      
       inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
       
       inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
@@ -786,10 +786,6 @@ object tablePaginationTablePaginationMod extends Shortcut {
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-      
-      inline def setComponent(value: ReactType[TableCellBaseProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-      
-      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
@@ -815,7 +811,7 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -841,13 +837,13 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      inline def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
@@ -885,10 +881,6 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
-      
-      inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
-      
       inline def setOnAbort(value: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
       inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
@@ -913,7 +905,7 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLTableHeaderCellElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLTableHeaderCellElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1013,7 +1005,7 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLTableHeaderCellElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLTableHeaderCellElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1225,6 +1217,14 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1233,7 +1233,7 @@ object tablePaginationTablePaginationMod extends Shortcut {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -1248,6 +1248,10 @@ object tablePaginationTablePaginationMod extends Shortcut {
       inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+      
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
@@ -1347,418 +1351,39 @@ object tablePaginationTablePaginationMod extends Shortcut {
     inline def toolbar: typings.materialUiCore.materialUiCoreStrings.toolbar = "toolbar".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.toolbar]
   }
   
-  /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationBaseProps, @material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationClassKey, 'component'> */
-  @js.native
-  trait TablePaginationProps extends StObject {
-    
-    var ActionsComponent: js.UndefOr[ReactType[TablePaginationActionsProps]] = js.native
-    
-    var SelectProps: js.UndefOr[PartialSelectProps] = js.native
-    
-    var abbr: js.UndefOr[String] = js.native
-    
-    var about: js.UndefOr[String] = js.native
-    
-    var accessKey: js.UndefOr[String] = js.native
-    
-    var align: js.UndefOr[inherit | left | center | right | justify] = js.native
-    
-    var `aria-activedescendant`: js.UndefOr[String] = js.native
-    
-    var `aria-atomic`: js.UndefOr[Boolean] = js.native
-    
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
-    
-    var `aria-busy`: js.UndefOr[Boolean] = js.native
-    
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
-    
-    var `aria-colcount`: js.UndefOr[Double] = js.native
-    
-    var `aria-colindex`: js.UndefOr[Double] = js.native
-    
-    var `aria-colspan`: js.UndefOr[Double] = js.native
-    
-    var `aria-controls`: js.UndefOr[String] = js.native
-    
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
-    
-    var `aria-describedby`: js.UndefOr[String] = js.native
-    
-    var `aria-details`: js.UndefOr[String] = js.native
-    
-    var `aria-disabled`: js.UndefOr[Boolean] = js.native
-    
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
-    
-    var `aria-errormessage`: js.UndefOr[String] = js.native
-    
-    var `aria-expanded`: js.UndefOr[Boolean] = js.native
-    
-    var `aria-flowto`: js.UndefOr[String] = js.native
-    
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.native
-    
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
-    
-    var `aria-hidden`: js.UndefOr[Boolean] = js.native
-    
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
-    
-    var `aria-keyshortcuts`: js.UndefOr[String] = js.native
-    
-    var `aria-label`: js.UndefOr[String] = js.native
-    
-    var `aria-labelledby`: js.UndefOr[String] = js.native
-    
-    var `aria-level`: js.UndefOr[Double] = js.native
-    
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
-    
-    var `aria-modal`: js.UndefOr[Boolean] = js.native
-    
-    var `aria-multiline`: js.UndefOr[Boolean] = js.native
-    
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
-    
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
-    
-    var `aria-owns`: js.UndefOr[String] = js.native
-    
-    var `aria-placeholder`: js.UndefOr[String] = js.native
-    
-    var `aria-posinset`: js.UndefOr[Double] = js.native
-    
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
-    
-    var `aria-readonly`: js.UndefOr[Boolean] = js.native
-    
-    var `aria-relevant`: js.UndefOr[
-        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-      ] = js.native
-    
-    var `aria-required`: js.UndefOr[Boolean] = js.native
-    
-    var `aria-roledescription`: js.UndefOr[String] = js.native
-    
-    var `aria-rowcount`: js.UndefOr[Double] = js.native
-    
-    var `aria-rowindex`: js.UndefOr[Double] = js.native
-    
-    var `aria-rowspan`: js.UndefOr[Double] = js.native
-    
-    var `aria-selected`: js.UndefOr[Boolean] = js.native
-    
-    var `aria-setsize`: js.UndefOr[Double] = js.native
-    
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
-    
-    var `aria-valuemax`: js.UndefOr[Double] = js.native
-    
-    var `aria-valuemin`: js.UndefOr[Double] = js.native
-    
-    var `aria-valuenow`: js.UndefOr[Double] = js.native
-    
-    var `aria-valuetext`: js.UndefOr[String] = js.native
-    
-    var autoCapitalize: js.UndefOr[String] = js.native
-    
-    var autoCorrect: js.UndefOr[String] = js.native
-    
-    var autoSave: js.UndefOr[String] = js.native
-    
-    var backIconButtonProps: js.UndefOr[PartialIconButtonProps] = js.native
-    
-    var children: js.UndefOr[ReactNode] = js.native
-    
-    var className: js.UndefOr[String] = js.native
-    
-    var classes: js.UndefOr[PartialClassNameMapTableP] = js.native
-    
-    var colSpan: js.UndefOr[Double] = js.native
-    
-    var color: js.UndefOr[String] = js.native
-    
-    var component: js.UndefOr[ReactType[TablePaginationBaseProps]] = js.native
-    
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
-    
-    var contextMenu: js.UndefOr[String] = js.native
-    
-    var count: Double = js.native
-    
-    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
-    
-    var datatype: js.UndefOr[String] = js.native
-    
-    var defaultChecked: js.UndefOr[Boolean] = js.native
-    
-    var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
-    
-    var dir: js.UndefOr[String] = js.native
-    
-    var draggable: js.UndefOr[Booleanish] = js.native
-    
-    var headers: js.UndefOr[String] = js.native
-    
-    var height: js.UndefOr[Double | String] = js.native
-    
-    var hidden: js.UndefOr[Boolean] = js.native
-    
-    var id: js.UndefOr[String] = js.native
-    
-    var inlist: js.UndefOr[js.Any] = js.native
-    
-    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.native
-    
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
-    
-    var is: js.UndefOr[String] = js.native
-    
-    var itemID: js.UndefOr[String] = js.native
-    
-    var itemProp: js.UndefOr[String] = js.native
-    
-    var itemRef: js.UndefOr[String] = js.native
-    
-    var itemScope: js.UndefOr[Boolean] = js.native
-    
-    var itemType: js.UndefOr[String] = js.native
-    
-    var labelDisplayedRows: js.UndefOr[js.Function1[/* paginationInfo */ LabelDisplayedRowsArgs, ReactNode]] = js.native
-    
-    var labelRowsPerPage: js.UndefOr[ReactNode] = js.native
-    
-    var lang: js.UndefOr[String] = js.native
-    
-    var nextIconButtonProps: js.UndefOr[PartialIconButtonProps] = js.native
-    
-    var numeric: js.UndefOr[Boolean] = js.native
-    
-    var onAbort: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onAuxClick: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onBeforeInput: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onCanPlay: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onChange: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    def onChangePage(event: Null, page: Double): Unit = js.native
-    def onChangePage(event: MouseEvent[HTMLButtonElement, NativeMouseEvent], page: Double): Unit = js.native
-    
-    var onChangeRowsPerPage: js.UndefOr[ChangeEventHandler[HTMLTextAreaElement | HTMLInputElement]] = js.native
-    
-    var onClick: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onCopy: js.UndefOr[ClipboardEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onCut: js.UndefOr[ClipboardEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onDrag: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onDragEnd: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onDragEnter: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onDragExit: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onDragLeave: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onDragOver: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onDragStart: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onDrop: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onDurationChange: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onEmptied: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onEncrypted: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onEnded: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onError: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onInput: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onInvalid: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onLoad: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onLoadStart: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onLoadedData: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onMouseMove: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onMouseOut: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onMouseOver: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onPaste: js.UndefOr[ClipboardEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onPause: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onPlay: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onPlaying: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onPointerDown: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onPointerMove: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onPointerOut: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onPointerOver: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onPointerUp: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onProgress: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onRateChange: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onReset: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onScroll: js.UndefOr[UIEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onSeeked: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onSeeking: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onSelect: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onStalled: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onSubmit: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onSuspend: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onWaiting: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var onWheel: js.UndefOr[WheelEventHandler[HTMLTableHeaderCellElement]] = js.native
-    
-    var padding: js.UndefOr[Padding] = js.native
-    
-    var page: Double = js.native
-    
-    var placeholder: js.UndefOr[String] = js.native
-    
-    var prefix: js.UndefOr[String] = js.native
-    
-    var property: js.UndefOr[String] = js.native
-    
-    var radioGroup: js.UndefOr[String] = js.native
-    
-    var resource: js.UndefOr[String] = js.native
-    
-    var results: js.UndefOr[Double] = js.native
-    
-    var role: js.UndefOr[String] = js.native
-    
-    var rowSpan: js.UndefOr[Double] = js.native
-    
-    var rowsPerPage: Double = js.native
-    
-    var rowsPerPageOptions: js.UndefOr[js.Array[Double]] = js.native
-    
-    var scope: js.UndefOr[String] = js.native
-    
-    var security: js.UndefOr[String] = js.native
-    
-    var slot: js.UndefOr[String] = js.native
-    
-    var sortDirection: js.UndefOr[SortDirection] = js.native
-    
-    var spellCheck: js.UndefOr[Booleanish] = js.native
-    
-    var style: js.UndefOr[CSSProperties] = js.native
-    
-    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
-    
-    var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
-    
-    var tabIndex: js.UndefOr[Double] = js.native
-    
-    var title: js.UndefOr[String] = js.native
-    
-    var translate: js.UndefOr[yes | no] = js.native
-    
-    var typeof: js.UndefOr[String] = js.native
-    
-    var unselectable: js.UndefOr[on | off] = js.native
-    
-    var valign: js.UndefOr[top | middle | bottom | baseline] = js.native
-    
-    var variant: js.UndefOr[head | body | footer] = js.native
-    
-    var vocab: js.UndefOr[String] = js.native
-    
-    var width: js.UndefOr[Double | String] = js.native
+  type TablePaginationProps[D /* <: ElementType[Any] */, P] = OverrideProps[TablePaginationTypeMap[P, D], D]
+  
+  trait TablePaginationTypeMap[P, D /* <: ElementType[Any] */] extends StObject {
+    
+    var classKey: TablePaginationClassKey
+    
+    var defaultComponent: D
+    
+    var props: P & TablePaginationBaseProps & ActionsComponent
+  }
+  object TablePaginationTypeMap {
+    
+    inline def apply[P, D /* <: ElementType[Any] */](
+      classKey: TablePaginationClassKey,
+      defaultComponent: D,
+      props: P & TablePaginationBaseProps & ActionsComponent
+    ): TablePaginationTypeMap[P, D] = {
+      val __obj = js.Dynamic.literal(classKey = classKey.asInstanceOf[js.Any], defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TablePaginationTypeMap[P, D]]
+    }
+    
+    extension [Self <: TablePaginationTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (TablePaginationTypeMap[P, D])) {
+      
+      inline def setClassKey(value: TablePaginationClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: P & TablePaginationBaseProps & ActionsComponent): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
   }
   
-  type _To = ComponentType[TablePaginationProps]
+  type _To = OverridableComponent[TablePaginationTypeMap[js.Object, ComponentType[TablePaginationBaseProps]]]
   
   /* This means you don't have to write `default`, but can instead just say `tablePaginationTablePaginationMod.foo` */
-  override def _to: ComponentType[TablePaginationProps] = default
+  override def _to: OverridableComponent[TablePaginationTypeMap[js.Object, ComponentType[TablePaginationBaseProps]]] = default
 }

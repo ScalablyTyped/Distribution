@@ -12,7 +12,7 @@ object imagePickerIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/image-picker/index.native", JSImport.Default)
   @js.native
-  class default protected () extends ImagePicker {
+  open class default protected () extends ImagePicker {
     def this(props: ImagePickerNativeProps) = this()
   }
   /* static members */
@@ -29,10 +29,9 @@ object imagePickerIndexNativeMod {
   }
   
   @js.native
-  trait ImagePicker
-    extends Component[ImagePickerNativeProps, js.Any, js.Any] {
+  trait ImagePicker extends Component[ImagePickerNativeProps, Any, Any] {
     
-    def addImage(imageObj: js.Any): Unit = js.native
+    def addImage(imageObj: Any): Unit = js.native
     
     def hideImageRoll(): Unit = js.native
     
@@ -42,9 +41,9 @@ object imagePickerIndexNativeMod {
     
     def onPressOut(): Unit = js.native
     
-    var plusText: js.Any = js.native
+    var plusText: Any = js.native
     
-    var plusWrap: js.Any = js.native
+    var plusWrap: Any = js.native
     
     def removeImage(idx: Double): Unit = js.native
     

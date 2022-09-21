@@ -20,7 +20,7 @@ object topoJSONMod {
   
   @JSImport("ol/format/TopoJSON", JSImport.Default)
   @js.native
-  class default () extends TopoJSON {
+  open class default () extends TopoJSON {
     def this(opt_options: Options) = this()
   }
   
@@ -53,7 +53,7 @@ object topoJSONMod {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value*))
     }
   }
   

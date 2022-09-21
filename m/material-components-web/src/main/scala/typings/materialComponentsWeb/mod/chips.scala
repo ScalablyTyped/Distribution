@@ -1,9 +1,9 @@
 package typings.materialComponentsWeb.mod
 
-import typings.materialChips.anon.PartialMDCChipAdapter
-import typings.materialChips.anon.PartialMDCChipSetAdapter
+import typings.materialBase.Element
+import typings.materialChips.anon.PartialMDCChipAdapterAddClass
+import typings.materialChips.anon.PartialMDCChipSetAdapterAnnounceMessage
 import typings.materialChips.anon.PartialMDCChipTrailingAct
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +12,13 @@ object chips {
   
   @JSImport("material-components-web", "chips.MDCChip")
   @js.native
-  class MDCChip protected ()
-    extends typings.materialChips.mod.MDCChip {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+  open class MDCChip protected ()
+    extends typings.materialChips.deprecatedMod.MDCChip {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
-      foundation: typings.materialChips.chipFoundationMod.MDCChipFoundation,
-      args: js.Any*
+      foundation: typings.materialChips.deprecatedChipFoundationMod.MDCChipFoundation,
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -28,22 +28,26 @@ object chips {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialChips.chipComponentMod.MDCChip = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialChips.chipComponentMod.MDCChip]
+    inline def attachTo(root: typings.std.Element): typings.materialChips.deprecatedChipComponentMod.MDCChip = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialChips.deprecatedChipComponentMod.MDCChip]
   }
   
   @JSImport("material-components-web", "chips.MDCChipFoundation")
   @js.native
-  class MDCChipFoundation ()
-    extends typings.materialChips.mod.MDCChipFoundation {
-    def this(adapter: PartialMDCChipAdapter) = this()
+  open class MDCChipFoundation ()
+    extends typings.materialChips.deprecatedMod.MDCChipFoundation {
+    def this(adapter: PartialMDCChipAdapterAddClass) = this()
   }
   
   @JSImport("material-components-web", "chips.MDCChipSet")
   @js.native
-  class MDCChipSet protected ()
-    extends typings.materialChips.mod.MDCChipSet {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: typings.materialChips.foundationMod.MDCChipSetFoundation, args: js.Any*) = this()
+  open class MDCChipSet protected ()
+    extends typings.materialChips.deprecatedMod.MDCChipSet {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(
+      root: Element,
+      foundation: typings.materialChips.deprecatedChipSetFoundationMod.MDCChipSetFoundation,
+      args: Any*
+    ) = this()
   }
   /* static members */
   object MDCChipSet {
@@ -52,25 +56,25 @@ object chips {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialChips.componentMod.MDCChipSet = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialChips.componentMod.MDCChipSet]
+    inline def attachTo(root: typings.std.Element): typings.materialChips.deprecatedChipSetComponentMod.MDCChipSet = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialChips.deprecatedChipSetComponentMod.MDCChipSet]
   }
   
   @JSImport("material-components-web", "chips.MDCChipSetFoundation")
   @js.native
-  class MDCChipSetFoundation ()
-    extends typings.materialChips.mod.MDCChipSetFoundation {
-    def this(adapter: PartialMDCChipSetAdapter) = this()
+  open class MDCChipSetFoundation ()
+    extends typings.materialChips.deprecatedMod.MDCChipSetFoundation {
+    def this(adapter: PartialMDCChipSetAdapterAnnounceMessage) = this()
   }
   
   @JSImport("material-components-web", "chips.MDCChipTrailingAction")
   @js.native
-  class MDCChipTrailingAction protected ()
-    extends typings.materialChips.mod.MDCChipTrailingAction {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+  open class MDCChipTrailingAction protected ()
+    extends typings.materialChips.deprecatedMod.MDCChipTrailingAction {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialChips.trailingactionFoundationMod.MDCChipTrailingActionFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -80,13 +84,13 @@ object chips {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialChips.trailingactionComponentMod.MDCChipTrailingAction = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialChips.trailingactionComponentMod.MDCChipTrailingAction]
+    inline def attachTo(root: typings.std.Element): typings.materialChips.trailingactionComponentMod.MDCChipTrailingAction = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialChips.trailingactionComponentMod.MDCChipTrailingAction]
   }
   
   @JSImport("material-components-web", "chips.MDCChipTrailingActionFoundation")
   @js.native
-  class MDCChipTrailingActionFoundation ()
-    extends typings.materialChips.mod.MDCChipTrailingActionFoundation {
+  open class MDCChipTrailingActionFoundation ()
+    extends typings.materialChips.deprecatedMod.MDCChipTrailingActionFoundation {
     def this(adapter: PartialMDCChipTrailingAct) = this()
   }
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IndexItemRequest extends StObject {
   
-  /** Name of connector making this call. Format: datasources/{source_id}/connectors/{ID} */
+  /** The name of connector making this call. Format: datasources/{source_id}/connectors/{ID} */
   var connectorName: js.UndefOr[String] = js.undefined
   
   /** Common debug options. */
@@ -14,7 +14,7 @@ trait IndexItemRequest extends StObject {
   
   var indexItemOptions: js.UndefOr[IndexItemOptions] = js.undefined
   
-  /** Name of the item. Format: datasources/{source_id}/items/{item_id} */
+  /** The name of the item. Format: datasources/{source_id}/items/{item_id} */
   var item: js.UndefOr[Item] = js.undefined
   
   /** Required. The RequestMode for this request. */

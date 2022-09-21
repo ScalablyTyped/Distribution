@@ -30,6 +30,6 @@ object DescribeQueryDefinitionsResponse {
     
     inline def setQueryDefinitionsUndefined: Self = StObject.set(x, "queryDefinitions", js.undefined)
     
-    inline def setQueryDefinitionsVarargs(value: QueryDefinition*): Self = StObject.set(x, "queryDefinitions", js.Array(value :_*))
+    inline def setQueryDefinitionsVarargs(value: QueryDefinition*): Self = StObject.set(x, "queryDefinitions", js.Array(value*))
   }
 }

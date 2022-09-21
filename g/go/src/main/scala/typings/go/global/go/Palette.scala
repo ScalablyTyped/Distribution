@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @param {string} id A reference to a DIV by its ID as a string.
   */
-class Palette ()
+open class Palette ()
   extends typings.go.mod.Palette {
   /**
     * @param {HTMLDivElement} div A reference to a DIV in the DOM.

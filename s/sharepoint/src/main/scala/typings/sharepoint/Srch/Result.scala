@@ -26,7 +26,7 @@ trait Result
   
   def changeQueryLanguage(queryLanguage: Double): Unit
   
-  def changeQueryTerm(queryTerm: js.Any): Unit
+  def changeQueryTerm(queryTerm: Any): Unit
   
   def get_advancedSearchPageAddress(): String
   
@@ -50,7 +50,7 @@ trait Result
   
   def get_maxPagesBeforeCurrent(): Double
   
-  def get_pagingInfo(): js.Any
+  def get_pagingInfo(): Any
   
   def get_preloadedItemTemplateIds(): js.Array[String]
   
@@ -167,32 +167,32 @@ object Result {
     activate: (String, String, String, String, String, String, String, String, String) => Unit,
     addCssClass: String => Unit,
     add_disposing: js.Function => Unit,
-    add_oneTimeResultRendered: js.Any => Unit,
+    add_oneTimeResultRendered: Any => Unit,
     add_propertyChanged: js.Function => Unit,
-    add_queryReady: js.Any => Unit,
-    add_resultRendered: js.Any => Unit,
-    alternateRenderContext: js.Any,
-    alternateRenderer: js.Any,
+    add_queryReady: Any => Unit,
+    add_resultRendered: Any => Unit,
+    alternateRenderContext: Any,
+    alternateRenderer: Any,
     beginUpdate: () => Unit,
     changeQueryLanguage: Double => Unit,
-    changeQueryTerm: js.Any => Unit,
-    clickHandler: Event => js.Any,
-    dataProvider_QueryIssuing: (js.Any, js.Any) => Unit,
-    dataProvider_ResultReady: (js.Any, js.Any) => Unit,
+    changeQueryTerm: Any => Unit,
+    clickHandler: Event => Any,
+    dataProvider_QueryIssuing: (Any, Any) => Unit,
+    dataProvider_ResultReady: (Any, Any) => Unit,
     dispose: () => Unit,
     endUpdate: () => Unit,
     get_advancedSearchPageAddress: () => String,
     get_advancedUrl: () => String,
     get_alternateErrorMessage: () => String,
     get_currentPageNumber: () => Double,
-    get_currentResultTableCollection: () => js.Any,
+    get_currentResultTableCollection: () => Any,
     get_currentTerm: () => String,
     get_dataProvider: () => DataProvider,
     get_delayLoadTemplateScripts: () => Boolean,
     get_element: () => HTMLElement,
     get_emptyMessage: () => String,
     get_emptyRefinementMessageId: () => String,
-    get_events: () => js.Any,
+    get_events: () => Any,
     get_groupTemplateId: () => String,
     get_id: () => String,
     get_initialPrompt: () => String,
@@ -203,9 +203,9 @@ object Result {
     get_itemTemplateId: () => String,
     get_maxPagesAfterCurrent: () => Double,
     get_maxPagesBeforeCurrent: () => Double,
-    get_messages: () => js.Array[js.Any],
+    get_messages: () => js.Array[Any],
     get_nextUniqueId: () => String,
-    get_pagingInfo: () => js.Any,
+    get_pagingInfo: () => Any,
     get_preloadedItemTemplateIds: () => js.Array[String],
     get_queryGroupName: () => String,
     get_renderTemplateId: () => String,
@@ -231,48 +231,48 @@ object Result {
     get_showSortOptions: () => Boolean,
     get_showUpScopeMessage: () => Boolean,
     get_showViewDuplicates: () => Boolean,
-    get_states: () => js.Any,
+    get_states: () => Any,
     get_useSimplifiedQueryBuilder: () => Boolean,
     handleClickOnCategoryLink: String => Unit,
-    hasMessages: () => js.Any,
+    hasMessages: () => Any,
     initialize: () => Unit,
-    invokeAlternateRender: (js.Any, js.Any, js.Any) => js.Any,
-    invokeClientRenderer: (js.Any, js.Any) => js.Any,
-    loadRenderTemplateScripts: (js.Any, js.Any, js.Any, js.Any, js.Any) => Boolean,
+    invokeAlternateRender: (Any, Any, Any) => Any,
+    invokeClientRenderer: (Any, Any) => Any,
+    loadRenderTemplateScripts: (Any, Any, Any, Any, Any) => Boolean,
     loadServerTemplateScripts: () => Unit,
     loaded: Boolean,
-    onBubbleEvent: (js.Any, js.Any) => Boolean,
+    onBubbleEvent: (Any, Any) => Boolean,
     page: Double => Unit,
-    processDataErrorMessages: js.Any => js.Any,
-    processDataProviderErrors: js.Any => Unit,
-    processQueryIssuing: js.Any => Unit,
-    processRenderingErrorMessages: js.Any => js.Any,
+    processDataErrorMessages: Any => Any,
+    processDataProviderErrors: Any => Unit,
+    processQueryIssuing: Any => Unit,
+    processRenderingErrorMessages: Any => Any,
     processResultReady: ResultTableCollection => Unit,
-    raiseBubbleEvent: (js.Any, js.Any) => Unit,
-    raiseOneTimeResultRenderedEvent: js.Any => Unit,
+    raiseBubbleEvent: (Any, Any) => Unit,
+    raiseOneTimeResultRenderedEvent: Any => Unit,
     raisePropertyChanged: String => Unit,
-    raiseQueryReadyEvent: js.Any => Unit,
-    raiseResultRenderedEvent: js.Any => Unit,
-    refresh: js.Any => Unit,
+    raiseQueryReadyEvent: Any => Unit,
+    raiseResultRenderedEvent: Any => Unit,
+    refresh: Any => Unit,
     removeCssClass: String => Unit,
     remove_disposing: js.Function => Unit,
-    remove_oneTimeResultRendered: js.Any => Unit,
+    remove_oneTimeResultRendered: Any => Unit,
     remove_propertyChanged: js.Function => Unit,
-    remove_queryReady: js.Any => Unit,
-    remove_resultRendered: js.Any => Unit,
+    remove_queryReady: Any => Unit,
+    remove_resultRendered: Any => Unit,
     render: () => Unit,
-    renderControl: (js.Any, js.Any) => Unit,
-    scriptApplication_Load: (js.Any, js.Any) => Unit,
-    scriptApplication_PostLoad: (js.Any, js.Any) => Unit,
-    scriptApplication_PreLoad: (js.Any, js.Any) => Unit,
+    renderControl: (Any, Any) => Unit,
+    scriptApplication_Load: (Any, Any) => Unit,
+    scriptApplication_PostLoad: (Any, Any) => Unit,
+    scriptApplication_PreLoad: (Any, Any) => Unit,
     serverTemplateScriptsCallback: () => Unit,
-    serverTemplateScriptsToLoad: js.Array[js.Any],
+    serverTemplateScriptsToLoad: js.Array[Any],
     setAriaCollapsed: HTMLElement => Unit,
-    setControlElementVisibility: Boolean => js.Any,
+    setControlElementVisibility: Boolean => Any,
     set_advancedUrl: String => String,
     set_alternateErrorMessage: String => String,
     set_currentPageNumber: Double => Double,
-    set_currentResultTableCollection: js.Any => js.Any,
+    set_currentResultTableCollection: Any => Any,
     set_delayLoadTemplateScripts: Boolean => Boolean,
     set_emptyMessage: String => String,
     set_groupTemplateId: String => String,
@@ -281,7 +281,7 @@ object Result {
     set_itemTemplateId: String => String,
     set_maxPagesAfterCurrent: Double => Double,
     set_maxPagesBeforeCurrent: Double => Double,
-    set_messages: js.Array[js.Any] => js.Array[js.Any],
+    set_messages: js.Array[Any] => js.Array[Any],
     set_preloadedItemTemplateIds: js.Array[String] => js.Array[String],
     set_queryGroupName: String => String,
     set_renderTemplateId: String => String,
@@ -304,13 +304,13 @@ object Result {
     set_showSortOptions: Boolean => Boolean,
     set_showUpScopeMessage: Boolean => Boolean,
     set_showViewDuplicates: Boolean => Boolean,
-    set_states: js.Any => js.Any,
+    set_states: Any => Any,
     set_useSimplifiedQueryBuilder: Boolean => Boolean,
     shouldShowTable: ResultTable => Boolean,
     sort: String => Unit,
     sortOrRank: String => Unit,
     toggleCssClass: String => Unit,
-    updateDisplayControlWithNewMessages: () => js.Any,
+    updateDisplayControlWithNewMessages: () => Any,
     updated: () => Unit,
     viewDuplicates: Double => Unit
   ): Result = {
@@ -324,7 +324,7 @@ object Result {
     
     inline def setChangeQueryLanguage(value: Double => Unit): Self = StObject.set(x, "changeQueryLanguage", js.Any.fromFunction1(value))
     
-    inline def setChangeQueryTerm(value: js.Any => Unit): Self = StObject.set(x, "changeQueryTerm", js.Any.fromFunction1(value))
+    inline def setChangeQueryTerm(value: Any => Unit): Self = StObject.set(x, "changeQueryTerm", js.Any.fromFunction1(value))
     
     inline def setGet_advancedSearchPageAddress(value: () => String): Self = StObject.set(x, "get_advancedSearchPageAddress", js.Any.fromFunction0(value))
     
@@ -348,7 +348,7 @@ object Result {
     
     inline def setGet_maxPagesBeforeCurrent(value: () => Double): Self = StObject.set(x, "get_maxPagesBeforeCurrent", js.Any.fromFunction0(value))
     
-    inline def setGet_pagingInfo(value: () => js.Any): Self = StObject.set(x, "get_pagingInfo", js.Any.fromFunction0(value))
+    inline def setGet_pagingInfo(value: () => Any): Self = StObject.set(x, "get_pagingInfo", js.Any.fromFunction0(value))
     
     inline def setGet_preloadedItemTemplateIds(value: () => js.Array[String]): Self = StObject.set(x, "get_preloadedItemTemplateIds", js.Any.fromFunction0(value))
     

@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OctreeBlock[T] extends StObject {
   
-  /* private */ var _boundingVectors: js.Any = js.native
+  /* private */ var _boundingVectors: Any = js.native
   
-  /* private */ var _capacity: js.Any = js.native
+  /* private */ var _capacity: Any = js.native
   
-  /* private */ var _creationFunc: js.Any = js.native
+  /* private */ var _creationFunc: Any = js.native
   
-  /* private */ var _depth: js.Any = js.native
+  /* private */ var _depth: Any = js.native
   
-  /* private */ var _maxDepth: js.Any = js.native
+  /* private */ var _maxDepth: Any = js.native
   
-  /* private */ var _maxPoint: js.Any = js.native
+  /* private */ var _maxPoint: Any = js.native
   
-  /* private */ var _minPoint: js.Any = js.native
+  /* private */ var _minPoint: Any = js.native
   
   /**
     * Add an array of elements to this block
@@ -92,7 +92,7 @@ trait OctreeBlock[T] extends StObject {
   def removeEntry(entry: T): Unit = js.native
   
   /**
-    * Test if the current block intersects the furstum planes and if yes, then add its content to the selection array
+    * Test if the current block intersects the frustum planes and if yes, then add its content to the selection array
     * @param frustumPlanes defines the frustum planes to test
     * @param selection defines the array to store current content if selection is positive
     * @param allowDuplicate defines if the selection array can contains duplicated entries

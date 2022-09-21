@@ -17,7 +17,7 @@ object map {
   
   @JSGlobal("kendo.dataviz.map.BingLayer")
   @js.native
-  class BingLayer protected ()
+  open class BingLayer protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.map.BingLayer {
     def this(map: Map) = this()
@@ -47,12 +47,12 @@ object map {
   
   @JSGlobal("kendo.dataviz.map.Extent")
   @js.native
-  class Extent protected ()
+  open class Extent protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.map.Extent {
-    def this(nw: js.Any, se: js.Any) = this()
-    def this(nw: js.Any, se: typings.kendoUi.kendo.dataviz.map.Location) = this()
-    def this(nw: typings.kendoUi.kendo.dataviz.map.Location, se: js.Any) = this()
+    def this(nw: Any, se: Any) = this()
+    def this(nw: Any, se: typings.kendoUi.kendo.dataviz.map.Location) = this()
+    def this(nw: typings.kendoUi.kendo.dataviz.map.Location, se: Any) = this()
     def this(nw: typings.kendoUi.kendo.dataviz.map.Location, se: typings.kendoUi.kendo.dataviz.map.Location) = this()
     
     /* CompleteClass */
@@ -62,16 +62,16 @@ object map {
     override def contains(location: typings.kendoUi.kendo.dataviz.map.Location): Boolean = js.native
     
     /* CompleteClass */
-    override def containsAny(locations: js.Any): Boolean = js.native
+    override def containsAny(locations: Any): Boolean = js.native
     
     /* CompleteClass */
-    override def edges(): js.Any = js.native
+    override def edges(): Any = js.native
     
     /* CompleteClass */
     override def include(location: typings.kendoUi.kendo.dataviz.map.Location): Unit = js.native
     
     /* CompleteClass */
-    override def includeAll(locations: js.Any): Unit = js.native
+    override def includeAll(locations: Any): Unit = js.native
     
     /* CompleteClass */
     var nw: typings.kendoUi.kendo.dataviz.map.Location = js.native
@@ -86,7 +86,7 @@ object map {
     var se: typings.kendoUi.kendo.dataviz.map.Location = js.native
     
     /* CompleteClass */
-    override def toArray(): js.Any = js.native
+    override def toArray(): Any = js.native
   }
   object Extent {
     
@@ -95,18 +95,18 @@ object map {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def create(a: js.Any): typings.kendoUi.kendo.dataviz.map.Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
-    inline def create(a: js.Any, b: js.Any): typings.kendoUi.kendo.dataviz.map.Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
-    inline def create(a: js.Any, b: typings.kendoUi.kendo.dataviz.map.Location): typings.kendoUi.kendo.dataviz.map.Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
+    inline def create(a: Any): typings.kendoUi.kendo.dataviz.map.Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
+    inline def create(a: Any, b: Any): typings.kendoUi.kendo.dataviz.map.Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
+    inline def create(a: Any, b: typings.kendoUi.kendo.dataviz.map.Location): typings.kendoUi.kendo.dataviz.map.Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
     /* static member */
     inline def create(a: typings.kendoUi.kendo.dataviz.map.Location): typings.kendoUi.kendo.dataviz.map.Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
-    inline def create(a: typings.kendoUi.kendo.dataviz.map.Location, b: js.Any): typings.kendoUi.kendo.dataviz.map.Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
+    inline def create(a: typings.kendoUi.kendo.dataviz.map.Location, b: Any): typings.kendoUi.kendo.dataviz.map.Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
     inline def create(a: typings.kendoUi.kendo.dataviz.map.Location, b: typings.kendoUi.kendo.dataviz.map.Location): typings.kendoUi.kendo.dataviz.map.Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
   }
   
   @JSGlobal("kendo.dataviz.map.Layer")
   @js.native
-  class Layer_ protected ()
+  open class Layer_ protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.map.Layer_ {
     def this(map: Map) = this()
@@ -127,7 +127,7 @@ object map {
   
   @JSGlobal("kendo.dataviz.map.Location")
   @js.native
-  class Location protected ()
+  open class Location protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.map.Location {
     def this(lat: Double, lng: Double) = this()
@@ -154,7 +154,7 @@ object map {
     override def round(digits: Double): typings.kendoUi.kendo.dataviz.map.Location = js.native
     
     /* CompleteClass */
-    override def toArray(): js.Any = js.native
+    override def toArray(): Any = js.native
     
     /* CompleteClass */
     override def wrap(): typings.kendoUi.kendo.dataviz.map.Location = js.native
@@ -166,8 +166,8 @@ object map {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def create(lat: js.Any): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
-    inline def create(lat: js.Any, lng: Double): typings.kendoUi.kendo.dataviz.map.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any], lng.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
+    inline def create(lat: Any): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
+    inline def create(lat: Any, lng: Double): typings.kendoUi.kendo.dataviz.map.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any], lng.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
     /* static member */
     inline def create(lat: Double): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
     inline def create(lat: Double, lng: Double): typings.kendoUi.kendo.dataviz.map.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any], lng.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
@@ -176,15 +176,15 @@ object map {
     inline def create(lat: typings.kendoUi.kendo.dataviz.map.Location, lng: Double): typings.kendoUi.kendo.dataviz.map.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any], lng.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
     
     /* static member */
-    inline def fromLatLng(lnglat: js.Any): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLng")(lnglat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
+    inline def fromLatLng(lnglat: Any): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLng")(lnglat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
     
     /* static member */
-    inline def fromLngLat(lnglat: js.Any): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLngLat")(lnglat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
+    inline def fromLngLat(lnglat: Any): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLngLat")(lnglat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
   }
   
   @JSGlobal("kendo.dataviz.map.Marker")
   @js.native
-  class Marker ()
+  open class Marker ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.map.Marker {
     def this(options: MarkerOptions) = this()
@@ -192,7 +192,7 @@ object map {
   
   @JSGlobal("kendo.dataviz.map.MarkerLayer")
   @js.native
-  class MarkerLayer protected ()
+  open class MarkerLayer protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.map.MarkerLayer {
     def this(map: Map) = this()
@@ -208,7 +208,7 @@ object map {
     override def hide(): Unit = js.native
     
     /* CompleteClass */
-    var items: js.Any = js.native
+    var items: Any = js.native
     
     /* CompleteClass */
     var map: Map = js.native
@@ -223,7 +223,7 @@ object map {
     override def remove(marker: typings.kendoUi.kendo.dataviz.map.Marker): Unit = js.native
     
     /* CompleteClass */
-    override def setDataSource(dataSource: js.Any): Unit = js.native
+    override def setDataSource(dataSource: Any): Unit = js.native
     
     /* CompleteClass */
     override def show(): Unit = js.native
@@ -231,7 +231,7 @@ object map {
   
   @JSGlobal("kendo.dataviz.map.ShapeLayer")
   @js.native
-  class ShapeLayer protected ()
+  open class ShapeLayer protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.map.ShapeLayer {
     def this(map: Map) = this()
@@ -258,7 +258,7 @@ object map {
   
   @JSGlobal("kendo.dataviz.map.TileLayer")
   @js.native
-  class TileLayer protected ()
+  open class TileLayer protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.map.TileLayer {
     def this(map: Map) = this()
@@ -284,7 +284,7 @@ object map {
     
     @JSGlobal("kendo.dataviz.map.layer.Shape")
     @js.native
-    class Shape ()
+    open class Shape ()
       extends StObject
          with typings.kendoUi.kendo.dataviz.map.layer.Shape
   }

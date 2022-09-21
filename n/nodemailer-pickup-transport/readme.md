@@ -10,10 +10,10 @@ Pickup transport for Nodemailer
 | ------------------ | :-------------: |
 | Full name          | nodemailer-pickup-transport |
 | Keywords           | Pickup, Nodemailer |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 76006 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5295.666666666667 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](http://github.com/andris9/nodemailer-pickup-transport)

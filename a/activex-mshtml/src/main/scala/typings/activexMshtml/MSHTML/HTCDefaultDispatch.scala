@@ -11,9 +11,9 @@ trait HTCDefaultDispatch extends StObject {
   /* private */ @JSName("MSHTML.HTCDefaultDispatch_typekey")
   var MSHTMLDotHTCDefaultDispatch_typekey: HTCDefaultDispatch
   
-  val defaults: js.Any
+  val defaults: Any
   
-  val document: js.Any
+  val document: Any
   
   val element: IHTMLElement
 }
@@ -22,8 +22,8 @@ object HTCDefaultDispatch {
   inline def apply(
     CreateEventObject: () => IHTMLEventObj,
     MSHTMLDotHTCDefaultDispatch_typekey: HTCDefaultDispatch,
-    defaults: js.Any,
-    document: js.Any,
+    defaults: Any,
+    document: Any,
     element: IHTMLElement
   ): HTCDefaultDispatch = {
     val __obj = js.Dynamic.literal(CreateEventObject = js.Any.fromFunction0(CreateEventObject), defaults = defaults.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
@@ -35,9 +35,9 @@ object HTCDefaultDispatch {
     
     inline def setCreateEventObject(value: () => IHTMLEventObj): Self = StObject.set(x, "CreateEventObject", js.Any.fromFunction0(value))
     
-    inline def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    inline def setDocument(value: js.Any): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Any): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     inline def setElement(value: IHTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

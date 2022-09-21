@@ -1,6 +1,6 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,16 +16,16 @@ trait SetIdentityPoolRolesInput extends StObject {
     * <p>How users for a specific identity provider are to mapped to roles. This is a string
     *          to <a>RoleMapping</a> object map. The string identifies the identity provider,
     *          for example, "graph.facebook.com" or
-    *          "cognito-idp-east-1.amazonaws.com/us-east-1_abcdefghi:app_client_id".</p>
+    *          "cognito-idp.us-east-1.amazonaws.com/us-east-1_abcdefghi:app_client_id".</p>
     *          <p>Up to 25 rules can be specified per identity provider.</p>
     */
-  var RoleMappings: js.UndefOr[StringDictionary[RoleMapping]] = js.undefined
+  var RoleMappings: js.UndefOr[Record[String, RoleMapping]] = js.undefined
   
   /**
     * <p>The map of roles associated with this pool. For a given role, the key will be either
     *          "authenticated" or "unauthenticated" and the value will be the Role ARN.</p>
     */
-  var Roles: js.UndefOr[StringDictionary[String]] = js.undefined
+  var Roles: js.UndefOr[Record[String, String]] = js.undefined
 }
 object SetIdentityPoolRolesInput {
   
@@ -34,23 +34,17 @@ object SetIdentityPoolRolesInput {
     __obj.asInstanceOf[SetIdentityPoolRolesInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "SetIdentityPoolRolesInput")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: SetIdentityPoolRolesInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: SetIdentityPoolRolesInput](x: Self) {
     
     inline def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
     inline def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
     
-    inline def setRoleMappings(value: StringDictionary[RoleMapping]): Self = StObject.set(x, "RoleMappings", value.asInstanceOf[js.Any])
+    inline def setRoleMappings(value: Record[String, RoleMapping]): Self = StObject.set(x, "RoleMappings", value.asInstanceOf[js.Any])
     
     inline def setRoleMappingsUndefined: Self = StObject.set(x, "RoleMappings", js.undefined)
     
-    inline def setRoles(value: StringDictionary[String]): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: Record[String, String]): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
     
     inline def setRolesUndefined: Self = StObject.set(x, "Roles", js.undefined)
   }

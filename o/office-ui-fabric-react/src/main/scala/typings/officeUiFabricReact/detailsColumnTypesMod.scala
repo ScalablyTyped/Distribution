@@ -6,6 +6,7 @@ import typings.officeUiFabricReact.detailsColumnBaseMod.DetailsColumnBase
 import typings.officeUiFabricReact.detailsListTypesMod.IColumn
 import typings.officeUiFabricReact.detailsRowTypesMod.ICellStyleProps
 import typings.officeUiFabricReact.dragdropInterfacesMod.IDragDropHelper
+import typings.officeUiFabricReact.iconTypesMod.IIconProps
 import typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
 import typings.react.mod.ClassAttributes
 import typings.react.mod.MouseEvent
@@ -21,6 +22,27 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detailsColumnTypesMod {
+  
+  trait IDetailsColumnFilterIconProps
+    extends StObject
+       with IIconProps {
+    
+    var columnProps: js.UndefOr[IDetailsColumnProps] = js.undefined
+  }
+  object IDetailsColumnFilterIconProps {
+    
+    inline def apply(): IDetailsColumnFilterIconProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[IDetailsColumnFilterIconProps]
+    }
+    
+    extension [Self <: IDetailsColumnFilterIconProps](x: Self) {
+      
+      inline def setColumnProps(value: IDetailsColumnProps): Self = StObject.set(x, "columnProps", value.asInstanceOf[js.Any])
+      
+      inline def setColumnPropsUndefined: Self = StObject.set(x, "columnProps", js.undefined)
+    }
+  }
   
   trait IDetailsColumnProps
     extends StObject

@@ -27,7 +27,7 @@ object GitAsyncRefOperationSource {
     
     inline def setCommitList(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commitList", value.asInstanceOf[js.Any])
     
-    inline def setCommitListVarargs(value: GitCommitRef*): Self = StObject.set(x, "commitList", js.Array(value :_*))
+    inline def setCommitListVarargs(value: GitCommitRef*): Self = StObject.set(x, "commitList", js.Array(value*))
     
     inline def setPullRequestId(value: Double): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
   }

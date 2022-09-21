@@ -29,7 +29,7 @@ object DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult {
     
     inline def setLocalGatewayRouteTableVirtualInterfaceGroupAssociationsUndefined: Self = StObject.set(x, "LocalGatewayRouteTableVirtualInterfaceGroupAssociations", js.undefined)
     
-    inline def setLocalGatewayRouteTableVirtualInterfaceGroupAssociationsVarargs(value: LocalGatewayRouteTableVirtualInterfaceGroupAssociation*): Self = StObject.set(x, "LocalGatewayRouteTableVirtualInterfaceGroupAssociations", js.Array(value :_*))
+    inline def setLocalGatewayRouteTableVirtualInterfaceGroupAssociationsVarargs(value: LocalGatewayRouteTableVirtualInterfaceGroupAssociation*): Self = StObject.set(x, "LocalGatewayRouteTableVirtualInterfaceGroupAssociations", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

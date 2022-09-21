@@ -11,7 +11,7 @@ trait Scopes extends StObject {
   var scopes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: {  description :string | undefined}}
-    */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.Scopes & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.Scopes & TopLevel[Any]
   ] = js.undefined
 }
 object Scopes {
@@ -26,7 +26,7 @@ object Scopes {
     inline def setScopes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: {  description :string | undefined}}
-      */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.Scopes & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.Scopes & TopLevel[Any]
     ): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
     inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)

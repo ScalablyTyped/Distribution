@@ -8,7 +8,6 @@ import typings.koa.mod.Middleware
 import typings.koaRatelimit.koaRatelimitBooleans.`false`
 import typings.koaRatelimit.koaRatelimitStrings.memory
 import typings.koaRatelimit.koaRatelimitStrings.redis
-import typings.redis.mod.RedisClient
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,8 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  inline def apply(options: MiddlewareOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
+  inline def apply(options: MiddlewareOptions): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   @JSImport("koa-ratelimit", JSImport.Namespace)
   @js.native
@@ -67,7 +66,7 @@ object mod {
     /**
       * The database powering the backing rate-limiter package.
       */
-    var db: Redis | RedisClient | (Map[js.Any, js.Any])
+    var db: Redis | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisClient */ Any) | (Map[Any, Any])
     
     /**
       * Whether or not to disable the usage of rate limit headers. This defaults
@@ -122,7 +121,10 @@ object mod {
   }
   object MiddlewareOptions {
     
-    inline def apply(db: Redis | RedisClient | (Map[js.Any, js.Any]), driver: redis | memory): MiddlewareOptions = {
+    inline def apply(
+      db: Redis | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisClient */ Any) | (Map[Any, Any]),
+      driver: redis | memory
+    ): MiddlewareOptions = {
       val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], driver = driver.asInstanceOf[js.Any])
       __obj.asInstanceOf[MiddlewareOptions]
     }
@@ -133,7 +135,9 @@ object mod {
       
       inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      inline def setDb(value: Redis | RedisClient | (Map[js.Any, js.Any])): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(
+        value: Redis | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisClient */ Any) | (Map[Any, Any])
+      ): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
       inline def setDisableHeader(value: Boolean): Self = StObject.set(x, "disableHeader", value.asInstanceOf[js.Any])
       

@@ -94,13 +94,13 @@ object RemarketingAudience {
     
     inline def setLinkedAdAccountsUndefined: Self = StObject.set(x, "linkedAdAccounts", js.undefined)
     
-    inline def setLinkedAdAccountsVarargs(value: LinkedForeignAccount*): Self = StObject.set(x, "linkedAdAccounts", js.Array(value :_*))
+    inline def setLinkedAdAccountsVarargs(value: LinkedForeignAccount*): Self = StObject.set(x, "linkedAdAccounts", js.Array(value*))
     
     inline def setLinkedViews(value: js.Array[String]): Self = StObject.set(x, "linkedViews", value.asInstanceOf[js.Any])
     
     inline def setLinkedViewsUndefined: Self = StObject.set(x, "linkedViews", js.undefined)
     
-    inline def setLinkedViewsVarargs(value: String*): Self = StObject.set(x, "linkedViews", js.Array(value :_*))
+    inline def setLinkedViewsVarargs(value: String*): Self = StObject.set(x, "linkedViews", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

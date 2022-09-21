@@ -1,7 +1,6 @@
 package typings.web3CoreSubscriptions
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.web3CoreSubscriptions.web3CoreSubscriptionsStrings.changed
 import typings.web3CoreSubscriptions.web3CoreSubscriptionsStrings.connected
 import typings.web3CoreSubscriptions.web3CoreSubscriptionsStrings.data
@@ -14,10 +13,10 @@ object mod {
   
   @JSImport("web3-core-subscriptions", "Subscription")
   @js.native
-  class Subscription[T] protected () extends StObject {
+  open class Subscription[T] protected () extends StObject {
     def this(options: SubscriptionOptions) = this()
     
-    var arguments: js.Any = js.native
+    var arguments: Any = js.native
     
     def callback(): Unit = js.native
     
@@ -32,31 +31,31 @@ object mod {
     @JSName("on")
     def on_data(`type`: data, handler: js.Function1[/* data */ T, Unit]): Subscription[T] = js.native
     @JSName("on")
-    def on_error(`type`: error, handler: js.Function1[/* data */ Error, Unit]): Subscription[T] = js.native
+    def on_error(`type`: error, handler: js.Function1[/* data */ js.Error, Unit]): Subscription[T] = js.native
     
     var options: SubscriptionOptions = js.native
     
     def subscribe(): Subscription[T] = js.native
-    def subscribe(callback: js.Function2[/* error */ Error, /* result */ T, Unit]): Subscription[T] = js.native
+    def subscribe(callback: js.Function2[/* error */ js.Error, /* result */ T, Unit]): Subscription[T] = js.native
     
     def unsubscribe(): js.Promise[js.UndefOr[Boolean]] = js.native
-    def unsubscribe(callback: js.Function2[/* error */ Error, /* result */ Boolean, Unit]): js.Promise[js.UndefOr[Boolean]] = js.native
+    def unsubscribe(callback: js.Function2[/* error */ js.Error, /* result */ Boolean, Unit]): js.Promise[js.UndefOr[Boolean]] = js.native
   }
   
   @JSImport("web3-core-subscriptions", "Subscriptions")
   @js.native
-  class Subscriptions protected () extends StObject {
+  open class Subscriptions protected () extends StObject {
     def this(options: SubscriptionsOptions) = this()
     
-    def attachToObject(obj: js.Any): Unit = js.native
+    def attachToObject(obj: Any): Unit = js.native
     
-    def buildCall(): js.Function0[js.Any] = js.native
+    def buildCall(): js.Function0[Any] = js.native
     
     var name: String = js.native
     
-    val requestManager: js.Any = js.native
+    val requestManager: Any = js.native
     
-    def setRequestManager(requestManager: js.Any): Unit = js.native
+    def setRequestManager(requestManager: Any): Unit = js.native
     
     var subscriptions: SubscriptionsModel = js.native
     
@@ -92,7 +91,7 @@ object mod {
       
       inline def setInputFormatter(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "inputFormatter", value.asInstanceOf[js.Any])
       
-      inline def setInputFormatterVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "inputFormatter", js.Array(value :_*))
+      inline def setInputFormatterVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "inputFormatter", js.Array(value*))
       
       inline def setOutputFormatter(value: () => Unit): Self = StObject.set(x, "outputFormatter", js.Any.fromFunction0(value))
       
@@ -106,7 +105,7 @@ object mod {
   
   trait SubscriptionOptions extends StObject {
     
-    var requestManager: js.Any
+    var requestManager: Any
     
     var subscription: String
     
@@ -114,7 +113,7 @@ object mod {
   }
   object SubscriptionOptions {
     
-    inline def apply(requestManager: js.Any, subscription: String, `type`: String): SubscriptionOptions = {
+    inline def apply(requestManager: Any, subscription: String, `type`: String): SubscriptionOptions = {
       val __obj = js.Dynamic.literal(requestManager = requestManager.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscriptionOptions]
@@ -122,7 +121,7 @@ object mod {
     
     extension [Self <: SubscriptionOptions](x: Self) {
       
-      inline def setRequestManager(value: js.Any): Self = StObject.set(x, "requestManager", value.asInstanceOf[js.Any])
+      inline def setRequestManager(value: Any): Self = StObject.set(x, "requestManager", value.asInstanceOf[js.Any])
       
       inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
       

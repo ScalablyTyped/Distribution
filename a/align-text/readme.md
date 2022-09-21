@@ -10,10 +10,10 @@ Align the text in a string.
 | ------------------ | :-------------: |
 | Full name          | align-text |
 | Keywords           | align, align-center, alignment, center, center-align, indent, pad, padding, right, right-align, text, typography |
-| # releases         | 0 |
-| # dependents       | 62 |
-| # downloads        | 145500609 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8838205.333333334 |
+| # stars            | 50.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/align-text)

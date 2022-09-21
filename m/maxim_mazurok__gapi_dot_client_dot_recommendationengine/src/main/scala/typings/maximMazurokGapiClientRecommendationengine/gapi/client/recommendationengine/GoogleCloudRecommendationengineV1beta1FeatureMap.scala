@@ -14,7 +14,7 @@ trait GoogleCloudRecommendationengineV1beta1FeatureMap extends StObject {
   var categoricalFeatures: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.recommendationengine.gapi.client.recommendationengine.GoogleCloudRecommendationengineV1beta1FeatureMapStringList}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1FeatureMap & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1FeatureMap & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -24,7 +24,7 @@ trait GoogleCloudRecommendationengineV1beta1FeatureMap extends StObject {
   var numericalFeatures: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.recommendationengine.gapi.client.recommendationengine.GoogleCloudRecommendationengineV1beta1FeatureMapFloatList}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1FeatureMap & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1FeatureMap & TopLevel[Any]
   ] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1FeatureMap {
@@ -39,7 +39,7 @@ object GoogleCloudRecommendationengineV1beta1FeatureMap {
     inline def setCategoricalFeatures(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.recommendationengine.gapi.client.recommendationengine.GoogleCloudRecommendationengineV1beta1FeatureMapStringList}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1FeatureMap & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1FeatureMap & TopLevel[Any]
     ): Self = StObject.set(x, "categoricalFeatures", value.asInstanceOf[js.Any])
     
     inline def setCategoricalFeaturesUndefined: Self = StObject.set(x, "categoricalFeatures", js.undefined)
@@ -47,7 +47,7 @@ object GoogleCloudRecommendationengineV1beta1FeatureMap {
     inline def setNumericalFeatures(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.recommendationengine.gapi.client.recommendationengine.GoogleCloudRecommendationengineV1beta1FeatureMapFloatList}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1FeatureMap & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1FeatureMap & TopLevel[Any]
     ): Self = StObject.set(x, "numericalFeatures", value.asInstanceOf[js.Any])
     
     inline def setNumericalFeaturesUndefined: Self = StObject.set(x, "numericalFeatures", js.undefined)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Autodesk.Viewing.NullScreenModeDelegate")
 @js.native
-class NullScreenModeDelegate protected ()
+open class NullScreenModeDelegate protected ()
   extends StObject
      with typings.forgeViewer.Autodesk.Viewing.ScreenModeDelegate {
   def this(viewer: typings.forgeViewer.Autodesk.Viewing.Viewer3D) = this()

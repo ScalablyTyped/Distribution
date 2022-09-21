@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "BreakType")
 @js.native
-class BreakType () extends StObject {
+open class BreakType () extends StObject {
   
   /**
     * A human-readable name for this type of break. Will be displayed to employees in Square products.

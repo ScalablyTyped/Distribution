@@ -10,18 +10,18 @@ object lifecycleMod {
   
   trait Lifecycle extends StObject {
     
-    def resolve(resolver: default, context: typings.forgeDi.contextMod.default, args: Arguments): js.Any
+    def resolve(resolver: default, context: typings.forgeDi.contextMod.default, args: Arguments): Any
   }
   object Lifecycle {
     
-    inline def apply(resolve: (default, typings.forgeDi.contextMod.default, Arguments) => js.Any): Lifecycle = {
+    inline def apply(resolve: (default, typings.forgeDi.contextMod.default, Arguments) => Any): Lifecycle = {
       val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction3(resolve))
       __obj.asInstanceOf[Lifecycle]
     }
     
     extension [Self <: Lifecycle](x: Self) {
       
-      inline def setResolve(value: (default, typings.forgeDi.contextMod.default, Arguments) => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction3(value))
+      inline def setResolve(value: (default, typings.forgeDi.contextMod.default, Arguments) => Any): Self = StObject.set(x, "resolve", js.Any.fromFunction3(value))
     }
   }
 }

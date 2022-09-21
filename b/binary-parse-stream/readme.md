@@ -10,15 +10,12 @@ Painless streaming binary protocol parsers using generators.
 | ------------------ | :-------------: |
 | Full name          | binary-parse-stream |
 | Keywords           | generator, binary, stream, parse, parser |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 1158 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 134.0 |
+| # stars            | 3.0 |
 
 ## Links
-- [Homepage](https://github.com/nathan7/binary-parse-stream)
-- [Bugs](https://github.com/nathan7/binary-parse-stream/issues)
-- [Repository](https://github.com/nathan7/binary-parse-stream)
 - [Npm](https://www.npmjs.com/package/binary-parse-stream)
     
 

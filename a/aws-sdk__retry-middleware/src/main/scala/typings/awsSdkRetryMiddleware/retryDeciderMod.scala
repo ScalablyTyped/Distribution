@@ -10,6 +10,6 @@ object retryDeciderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def defaultRetryDecider(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRetryDecider")().asInstanceOf[js.Any]
-  inline def defaultRetryDecider(retryClockSkewErrors: Boolean): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRetryDecider")(retryClockSkewErrors.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def defaultRetryDecider(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRetryDecider")().asInstanceOf[Any]
+  inline def defaultRetryDecider(retryClockSkewErrors: Boolean): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRetryDecider")(retryClockSkewErrors.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

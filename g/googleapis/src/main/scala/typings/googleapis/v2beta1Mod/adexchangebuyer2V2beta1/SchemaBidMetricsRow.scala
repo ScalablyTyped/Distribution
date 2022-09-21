@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The set of metrics that are measured in numbers of bids, representing how
-  * many bids with the specified dimension values were considered eligible at
-  * each stage of the bidding funnel;
-  */
 trait SchemaBidMetricsRow extends StObject {
   
   /**
@@ -27,15 +22,19 @@ trait SchemaBidMetricsRow extends StObject {
   var billedImpressions: js.UndefOr[SchemaMetricValue] = js.undefined
   
   /**
-    * The number of bids that won an impression.
+    * The number of bids that won the auction.
     */
   var impressionsWon: js.UndefOr[SchemaMetricValue] = js.undefined
   
   /**
-    * The number of bids for which the corresponding impression was measurable
-    * for viewability (as defined by Active View).
+    * The number of bids for which the corresponding impression was measurable for viewability (as defined by Active View).
     */
   var measurableImpressions: js.UndefOr[SchemaMetricValue] = js.undefined
+  
+  /**
+    * The number of bids that won the auction and also won the mediation waterfall (if any).
+    */
+  var reachedQueries: js.UndefOr[SchemaMetricValue] = js.undefined
   
   /**
     * The values of all dimensions associated with metric values in this row.
@@ -43,8 +42,7 @@ trait SchemaBidMetricsRow extends StObject {
   var rowDimensions: js.UndefOr[SchemaRowDimensions] = js.undefined
   
   /**
-    * The number of bids for which the corresponding impression was viewable
-    * (as defined by Active View).
+    * The number of bids for which the corresponding impression was viewable (as defined by Active View).
     */
   var viewableImpressions: js.UndefOr[SchemaMetricValue] = js.undefined
 }
@@ -76,6 +74,10 @@ object SchemaBidMetricsRow {
     inline def setMeasurableImpressions(value: SchemaMetricValue): Self = StObject.set(x, "measurableImpressions", value.asInstanceOf[js.Any])
     
     inline def setMeasurableImpressionsUndefined: Self = StObject.set(x, "measurableImpressions", js.undefined)
+    
+    inline def setReachedQueries(value: SchemaMetricValue): Self = StObject.set(x, "reachedQueries", value.asInstanceOf[js.Any])
+    
+    inline def setReachedQueriesUndefined: Self = StObject.set(x, "reachedQueries", js.undefined)
     
     inline def setRowDimensions(value: SchemaRowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
     

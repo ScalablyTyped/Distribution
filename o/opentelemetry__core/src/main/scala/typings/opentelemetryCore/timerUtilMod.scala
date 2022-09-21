@@ -10,5 +10,5 @@ object timerUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def unrefTimer(timer: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unrefTimer")(timer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unrefTimer(_timer: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unrefTimer")(_timer.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

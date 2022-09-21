@@ -12,12 +12,12 @@ trait SignatureSet extends StObject {
   def Add(): Signature = js.native
   
   def AddNonVisibleSignature(): Signature = js.native
-  def AddNonVisibleSignature(varSigProv: js.Any): Signature = js.native
+  def AddNonVisibleSignature(varSigProv: Any): Signature = js.native
   
   def AddSignatureLine(): Signature = js.native
-  def AddSignatureLine(varSigProv: js.Any): Signature = js.native
+  def AddSignatureLine(varSigProv: Any): Signature = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val CanAddSignatureLine: Boolean = js.native
   
@@ -29,7 +29,7 @@ trait SignatureSet extends StObject {
   
   def Item(iSig: Double): Signature = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ShowSignaturesPane: Boolean = js.native
   

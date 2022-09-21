@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Moyal")
 @js.native
-class Moyal ()
+open class Moyal ()
   extends typings.ranjs.mod.dist.Moyal {
   def this(mu: Double) = this()
   def this(mu: Double, sigma: Double) = this()

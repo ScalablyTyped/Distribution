@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
-import typings.googleapis.googleapisStrings.v1
-import typings.googleapis.licensingV1Mod.licensingV1.Licensing
-import typings.googleapis.licensingV1Mod.licensingV1.Options
+import typings.googleapis.dlpV2Mod.dlpV2.Dlp
+import typings.googleapis.dlpV2Mod.dlpV2.Options
+import typings.googleapis.googleapisStrings.v2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn91 extends StObject {
   
-  def apply(options: Options): Licensing = js.native
-  def apply(version: v1): Licensing = js.native
+  def apply(options: Options): Dlp = js.native
+  def apply(version: v2): Dlp = js.native
 }

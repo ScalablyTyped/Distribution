@@ -31,7 +31,7 @@ trait ChartParallelAxesOptions extends StObject {
   /**
     * (Highcharts) Whether to allow decimals in this axis' ticks. When counting
     * integers, like persons or hits on a web page, decimals should be avoided
-    * in the labels.
+    * in the labels. By default, decimals are allowed on small scale axes.
     */
   var allowDecimals: js.UndefOr[Boolean] = js.undefined
   
@@ -343,6 +343,12 @@ trait ChartParallelAxesOptions extends StObject {
   var pane: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highcharts) Whether to pan axis. If `chart.panning` is enabled, the
+    * option allows to disable panning on an individual axis.
+    */
+  var panningEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highstock) The zoomed range to display when only defining one or none of
     * `min` or `max`. For example, to show the latest month, a range of one
     * month can be set.
@@ -601,6 +607,11 @@ trait ChartParallelAxesOptions extends StObject {
   var width: js.UndefOr[Double | String] = js.undefined
   
   /**
+    * (Highcharts) The Z index for the axis group.
+    */
+  var zIndex: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Highcharts) Whether to zoom axis. If `chart.zoomType` is set, the option
     * allows to disable zooming on an individual axis.
     */
@@ -631,7 +642,7 @@ object ChartParallelAxesOptions {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setCeiling(value: Double): Self = StObject.set(x, "ceiling", value.asInstanceOf[js.Any])
     
@@ -775,6 +786,10 @@ object ChartParallelAxesOptions {
     
     inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
+    inline def setPanningEnabled(value: Boolean): Self = StObject.set(x, "panningEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setPanningEnabledUndefined: Self = StObject.set(x, "panningEnabled", js.undefined)
+    
     inline def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
@@ -855,7 +870,7 @@ object ChartParallelAxesOptions {
     
     inline def setTickPositionsUndefined: Self = StObject.set(x, "tickPositions", js.undefined)
     
-    inline def setTickPositionsVarargs(value: Double*): Self = StObject.set(x, "tickPositions", js.Array(value :_*))
+    inline def setTickPositionsVarargs(value: Double*): Self = StObject.set(x, "tickPositions", js.Array(value*))
     
     inline def setTickWidth(value: Double): Self = StObject.set(x, "tickWidth", value.asInstanceOf[js.Any])
     
@@ -889,7 +904,7 @@ object ChartParallelAxesOptions {
     
     inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
-    inline def setUnitsVarargs(value: (js.Tuple2[String, js.Array[Double] | Null])*): Self = StObject.set(x, "units", js.Array(value :_*))
+    inline def setUnitsVarargs(value: (js.Tuple2[String, js.Array[Double] | Null])*): Self = StObject.set(x, "units", js.Array(value*))
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
@@ -898,6 +913,10 @@ object ChartParallelAxesOptions {
     inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     
     inline def setZoomEnabled(value: Boolean): Self = StObject.set(x, "zoomEnabled", value.asInstanceOf[js.Any])
     

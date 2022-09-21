@@ -94,13 +94,13 @@ object global {
     
     @JSGlobal("XSockets.WebSocket")
     @js.native
-    class WebSocket protected ()
+    open class WebSocket protected ()
       extends StObject
          with typings.xsockets.XSockets.WebSocket {
       def this(url: String) = this()
       def this(url: String, subprotocol: String) = this()
-      def this(url: String, subprotocol: String, settings: js.Any) = this()
-      def this(url: String, subprotocol: Unit, settings: js.Any) = this()
+      def this(url: String, subprotocol: String, settings: Any) = this()
+      def this(url: String, subprotocol: Unit, settings: Any) = this()
     }
   }
 }

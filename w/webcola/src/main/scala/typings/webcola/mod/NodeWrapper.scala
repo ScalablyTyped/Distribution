@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webcola", "NodeWrapper")
 @js.native
-class NodeWrapper protected ()
+open class NodeWrapper protected ()
   extends typings.webcola.gridrouterMod.NodeWrapper {
   def this(id: Double, rect: typings.webcola.rectangleMod.Rectangle, children: js.Array[Double]) = this()
 }

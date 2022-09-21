@@ -10,10 +10,10 @@ musicmatch api
 | ------------------ | :-------------: |
 | Full name          | musicmatch |
 | Keywords           | musicmatch, api |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 2143 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 145.66666666666666 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/c0b41/musixmatch)

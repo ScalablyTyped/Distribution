@@ -50,7 +50,7 @@ object AverageBandwidth {
     
     inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
-    inline def setAudioVarargs(value: Rendition[AUDIO]*): Self = StObject.set(x, "audio", js.Array(value :_*))
+    inline def setAudioVarargs(value: Rendition[AUDIO]*): Self = StObject.set(x, "audio", js.Array(value*))
     
     inline def setAverageBandwidth(value: Double): Self = StObject.set(x, "averageBandwidth", value.asInstanceOf[js.Any])
     
@@ -62,7 +62,7 @@ object AverageBandwidth {
     
     inline def setClosedCaptionsUndefined: Self = StObject.set(x, "closedCaptions", js.undefined)
     
-    inline def setClosedCaptionsVarargs(value: Rendition[`CLOSED-CAPTIONS`]*): Self = StObject.set(x, "closedCaptions", js.Array(value :_*))
+    inline def setClosedCaptionsVarargs(value: Rendition[`CLOSED-CAPTIONS`]*): Self = StObject.set(x, "closedCaptions", js.Array(value*))
     
     inline def setCodecs(value: String): Self = StObject.set(x, "codecs", value.asInstanceOf[js.Any])
     
@@ -92,7 +92,7 @@ object AverageBandwidth {
     
     inline def setSubtitlesUndefined: Self = StObject.set(x, "subtitles", js.undefined)
     
-    inline def setSubtitlesVarargs(value: Rendition[SUBTITLES]*): Self = StObject.set(x, "subtitles", js.Array(value :_*))
+    inline def setSubtitlesVarargs(value: Rendition[SUBTITLES]*): Self = StObject.set(x, "subtitles", js.Array(value*))
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
@@ -100,6 +100,6 @@ object AverageBandwidth {
     
     inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     
-    inline def setVideoVarargs(value: Rendition[VIDEO]*): Self = StObject.set(x, "video", js.Array(value :_*))
+    inline def setVideoVarargs(value: Rendition[VIDEO]*): Self = StObject.set(x, "video", js.Array(value*))
   }
 }

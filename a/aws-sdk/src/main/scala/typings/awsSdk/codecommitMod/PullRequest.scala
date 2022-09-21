@@ -24,7 +24,7 @@ trait PullRequest extends StObject {
   /**
     * The date and time the pull request was originally created, in timestamp format.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The user-defined description of the pull request. This description can be used to clarify what should be reviewed and other details of the request.
@@ -34,7 +34,7 @@ trait PullRequest extends StObject {
   /**
     * The day and time of the last user or system activity on the pull request, in timestamp format.
     */
-  var lastActivityDate: js.UndefOr[LastModifiedDate] = js.undefined
+  var lastActivityDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The system-generated ID of the pull request. 
@@ -74,7 +74,7 @@ object PullRequest {
     
     inline def setApprovalRulesUndefined: Self = StObject.set(x, "approvalRules", js.undefined)
     
-    inline def setApprovalRulesVarargs(value: ApprovalRule*): Self = StObject.set(x, "approvalRules", js.Array(value :_*))
+    inline def setApprovalRulesVarargs(value: ApprovalRule*): Self = StObject.set(x, "approvalRules", js.Array(value*))
     
     inline def setAuthorArn(value: Arn): Self = StObject.set(x, "authorArn", value.asInstanceOf[js.Any])
     
@@ -84,7 +84,7 @@ object PullRequest {
     
     inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
@@ -92,7 +92,7 @@ object PullRequest {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setLastActivityDate(value: LastModifiedDate): Self = StObject.set(x, "lastActivityDate", value.asInstanceOf[js.Any])
+    inline def setLastActivityDate(value: js.Date): Self = StObject.set(x, "lastActivityDate", value.asInstanceOf[js.Any])
     
     inline def setLastActivityDateUndefined: Self = StObject.set(x, "lastActivityDate", js.undefined)
     
@@ -108,7 +108,7 @@ object PullRequest {
     
     inline def setPullRequestTargetsUndefined: Self = StObject.set(x, "pullRequestTargets", js.undefined)
     
-    inline def setPullRequestTargetsVarargs(value: PullRequestTarget*): Self = StObject.set(x, "pullRequestTargets", js.Array(value :_*))
+    inline def setPullRequestTargetsVarargs(value: PullRequestTarget*): Self = StObject.set(x, "pullRequestTargets", js.Array(value*))
     
     inline def setRevisionId(value: RevisionId): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     

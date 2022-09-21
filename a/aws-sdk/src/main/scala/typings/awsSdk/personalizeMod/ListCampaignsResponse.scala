@@ -29,7 +29,7 @@ object ListCampaignsResponse {
     
     inline def setCampaignsUndefined: Self = StObject.set(x, "campaigns", js.undefined)
     
-    inline def setCampaignsVarargs(value: CampaignSummary*): Self = StObject.set(x, "campaigns", js.Array(value :_*))
+    inline def setCampaignsVarargs(value: CampaignSummary*): Self = StObject.set(x, "campaigns", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

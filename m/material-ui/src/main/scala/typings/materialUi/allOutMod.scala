@@ -10,10 +10,10 @@ object allOutMod {
   
   @JSImport("material-ui/svg-icons/action/all-out", JSImport.Default)
   @js.native
-  class default () extends ActionAllOut
+  open class default () extends ActionAllOut
   
   @JSImport("material-ui/svg-icons/action/all-out", "ActionAllOut")
   @js.native
-  class ActionAllOut ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionAllOut ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

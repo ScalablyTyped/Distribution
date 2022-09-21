@@ -23,6 +23,6 @@ object ArtifactSourceId {
     
     inline def setSourceIdInputs(value: js.Array[SourceIdInput]): Self = StObject.set(x, "sourceIdInputs", value.asInstanceOf[js.Any])
     
-    inline def setSourceIdInputsVarargs(value: SourceIdInput*): Self = StObject.set(x, "sourceIdInputs", js.Array(value :_*))
+    inline def setSourceIdInputsVarargs(value: SourceIdInput*): Self = StObject.set(x, "sourceIdInputs", js.Array(value*))
   }
 }

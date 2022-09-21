@@ -2,6 +2,43 @@ package typings.depcheck
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.depcheck.anon.Dependencies
+import typings.depcheck.depcheckStrings.`feross-standard`
+import typings.depcheck.depcheckStrings.`gulp-load-plugins`
+import typings.depcheck.depcheckStrings.`lint-staged`
+import typings.depcheck.depcheckStrings.babel
+import typings.depcheck.depcheckStrings.bin
+import typings.depcheck.depcheckStrings.coffee
+import typings.depcheck.depcheckStrings.commitizen
+import typings.depcheck.depcheckStrings.es6
+import typings.depcheck.depcheckStrings.es7
+import typings.depcheck.depcheckStrings.eslint
+import typings.depcheck.depcheckStrings.exportDeclaration
+import typings.depcheck.depcheckStrings.expressViewEngine
+import typings.depcheck.depcheckStrings.extract
+import typings.depcheck.depcheckStrings.gatsby
+import typings.depcheck.depcheckStrings.gruntLoadTaskCallExpression
+import typings.depcheck.depcheckStrings.husky
+import typings.depcheck.depcheckStrings.importCallExpression
+import typings.depcheck.depcheckStrings.importDeclaration
+import typings.depcheck.depcheckStrings.istanbul
+import typings.depcheck.depcheckStrings.jest
+import typings.depcheck.depcheckStrings.jsx
+import typings.depcheck.depcheckStrings.karma
+import typings.depcheck.depcheckStrings.mocha
+import typings.depcheck.depcheckStrings.prettier
+import typings.depcheck.depcheckStrings.react17
+import typings.depcheck.depcheckStrings.requireCallExpression
+import typings.depcheck.depcheckStrings.requireResolveCallExpression
+import typings.depcheck.depcheckStrings.sass
+import typings.depcheck.depcheckStrings.serverless
+import typings.depcheck.depcheckStrings.svelte
+import typings.depcheck.depcheckStrings.tslint
+import typings.depcheck.depcheckStrings.ttypescript
+import typings.depcheck.depcheckStrings.typescript
+import typings.depcheck.depcheckStrings.typescriptImportEqualsDeclaration
+import typings.depcheck.depcheckStrings.typescriptImportType
+import typings.depcheck.depcheckStrings.vue
+import typings.depcheck.depcheckStrings.webpack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -117,6 +154,12 @@ object mod {
     def sass: Parser_ = js.native
     inline def sass(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("sass")(content.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], rootDir.asInstanceOf[js.Any])).asInstanceOf[Node]
     inline def sass_=(x: Parser_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sass")(x.asInstanceOf[js.Any])
+    
+    @JSImport("depcheck", "parser.svelte")
+    @js.native
+    def svelte: Parser_ = js.native
+    inline def svelte(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("svelte")(content.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], rootDir.asInstanceOf[js.Any])).asInstanceOf[Node]
+    inline def svelte_=(x: Parser_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("svelte")(x.asInstanceOf[js.Any])
     
     @JSImport("depcheck", "parser.typescript")
     @js.native
@@ -255,9 +298,124 @@ object mod {
     inline def webpack_=(x: Parser_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("webpack")(x.asInstanceOf[js.Any])
   }
   
+  trait Config extends StObject {
+    
+    var detectors: js.UndefOr[
+        js.Array[
+          /* keyof depcheck.anon.ExportDeclaration */ exportDeclaration | expressViewEngine | extract | gruntLoadTaskCallExpression | importCallExpression | importDeclaration | requireCallExpression | requireResolveCallExpression | typescriptImportEqualsDeclaration | typescriptImportType
+        ]
+      ] = js.undefined
+    
+    var ignoreBinPackage: js.UndefOr[Boolean] = js.undefined
+    
+    var ignoreDirs: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var ignorePath: js.UndefOr[String] = js.undefined
+    
+    var ignorePatterns: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var ignores: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var json: js.UndefOr[Boolean] = js.undefined
+    
+    var parsers: js.UndefOr[
+        StringDictionary[
+          coffee | es6 | es7 | jsx | sass | svelte | typescript | vue | (js.Array[
+            /* keyof depcheck.anon.Coffee */ coffee | es6 | es7 | jsx | sass | svelte | typescript | vue
+          ])
+        ]
+      ] = js.undefined
+    
+    var skipMissing: js.UndefOr[Boolean] = js.undefined
+    
+    var specials: js.UndefOr[
+        js.Array[
+          /* keyof depcheck.anon.Babel */ babel | bin | commitizen | eslint | `feross-standard` | gatsby | `gulp-load-plugins` | husky | istanbul | jest | karma | `lint-staged` | mocha | prettier | react17 | serverless | tslint | ttypescript | webpack
+        ]
+      ] = js.undefined
+  }
+  object Config {
+    
+    inline def apply(): Config = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Config]
+    }
+    
+    extension [Self <: Config](x: Self) {
+      
+      inline def setDetectors(
+        value: js.Array[
+              /* keyof depcheck.anon.ExportDeclaration */ exportDeclaration | expressViewEngine | extract | gruntLoadTaskCallExpression | importCallExpression | importDeclaration | requireCallExpression | requireResolveCallExpression | typescriptImportEqualsDeclaration | typescriptImportType
+            ]
+      ): Self = StObject.set(x, "detectors", value.asInstanceOf[js.Any])
+      
+      inline def setDetectorsUndefined: Self = StObject.set(x, "detectors", js.undefined)
+      
+      inline def setDetectorsVarargs(
+        value: (/* keyof depcheck.anon.ExportDeclaration */ exportDeclaration | expressViewEngine | extract | gruntLoadTaskCallExpression | importCallExpression | importDeclaration | requireCallExpression | requireResolveCallExpression | typescriptImportEqualsDeclaration | typescriptImportType)*
+      ): Self = StObject.set(x, "detectors", js.Array(value*))
+      
+      inline def setIgnoreBinPackage(value: Boolean): Self = StObject.set(x, "ignoreBinPackage", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreBinPackageUndefined: Self = StObject.set(x, "ignoreBinPackage", js.undefined)
+      
+      inline def setIgnoreDirs(value: js.Array[String]): Self = StObject.set(x, "ignoreDirs", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreDirsUndefined: Self = StObject.set(x, "ignoreDirs", js.undefined)
+      
+      inline def setIgnoreDirsVarargs(value: String*): Self = StObject.set(x, "ignoreDirs", js.Array(value*))
+      
+      inline def setIgnorePath(value: String): Self = StObject.set(x, "ignorePath", value.asInstanceOf[js.Any])
+      
+      inline def setIgnorePathUndefined: Self = StObject.set(x, "ignorePath", js.undefined)
+      
+      inline def setIgnorePatterns(value: js.Array[String]): Self = StObject.set(x, "ignorePatterns", value.asInstanceOf[js.Any])
+      
+      inline def setIgnorePatternsUndefined: Self = StObject.set(x, "ignorePatterns", js.undefined)
+      
+      inline def setIgnorePatternsVarargs(value: String*): Self = StObject.set(x, "ignorePatterns", js.Array(value*))
+      
+      inline def setIgnores(value: js.Array[String]): Self = StObject.set(x, "ignores", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoresUndefined: Self = StObject.set(x, "ignores", js.undefined)
+      
+      inline def setIgnoresVarargs(value: String*): Self = StObject.set(x, "ignores", js.Array(value*))
+      
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      
+      inline def setParsers(
+        value: StringDictionary[
+              coffee | es6 | es7 | jsx | sass | svelte | typescript | vue | (js.Array[
+                /* keyof depcheck.anon.Coffee */ coffee | es6 | es7 | jsx | sass | svelte | typescript | vue
+              ])
+            ]
+      ): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
+      
+      inline def setParsersUndefined: Self = StObject.set(x, "parsers", js.undefined)
+      
+      inline def setSkipMissing(value: Boolean): Self = StObject.set(x, "skipMissing", value.asInstanceOf[js.Any])
+      
+      inline def setSkipMissingUndefined: Self = StObject.set(x, "skipMissing", js.undefined)
+      
+      inline def setSpecials(
+        value: js.Array[
+              /* keyof depcheck.anon.Babel */ babel | bin | commitizen | eslint | `feross-standard` | gatsby | `gulp-load-plugins` | husky | istanbul | jest | karma | `lint-staged` | mocha | prettier | react17 | serverless | tslint | ttypescript | webpack
+            ]
+      ): Self = StObject.set(x, "specials", value.asInstanceOf[js.Any])
+      
+      inline def setSpecialsUndefined: Self = StObject.set(x, "specials", js.undefined)
+      
+      inline def setSpecialsVarargs(
+        value: (/* keyof depcheck.anon.Babel */ babel | bin | commitizen | eslint | `feross-standard` | gatsby | `gulp-load-plugins` | husky | istanbul | jest | karma | `lint-staged` | mocha | prettier | react17 | serverless | tslint | ttypescript | webpack)*
+      ): Self = StObject.set(x, "specials", js.Array(value*))
+    }
+  }
+  
   type Detector_ = js.Function1[/* node */ Node, js.Array[String] | String]
   
-  type Node = StringDictionary[js.Any]
+  type Node = StringDictionary[Any]
   
   trait Options extends StObject {
     
@@ -271,6 +429,10 @@ object mod {
     var ignoreDirs: js.UndefOr[js.Array[String]] = js.undefined
     
     var ignoreMatches: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var ignorePath: js.UndefOr[String] = js.undefined
+    
+    var ignorePatterns: js.UndefOr[js.Array[String]] = js.undefined
     
     var parsers: js.UndefOr[StringDictionary[Parser_]] = js.undefined
     
@@ -291,7 +453,7 @@ object mod {
       
       inline def setDetectorsUndefined: Self = StObject.set(x, "detectors", js.undefined)
       
-      inline def setDetectorsVarargs(value: Detector_ *): Self = StObject.set(x, "detectors", js.Array(value :_*))
+      inline def setDetectorsVarargs(value: Detector_ *): Self = StObject.set(x, "detectors", js.Array(value*))
       
       inline def setIgnoreBinPackage(value: Boolean): Self = StObject.set(x, "ignoreBinPackage", value.asInstanceOf[js.Any])
       
@@ -301,13 +463,23 @@ object mod {
       
       inline def setIgnoreDirsUndefined: Self = StObject.set(x, "ignoreDirs", js.undefined)
       
-      inline def setIgnoreDirsVarargs(value: String*): Self = StObject.set(x, "ignoreDirs", js.Array(value :_*))
+      inline def setIgnoreDirsVarargs(value: String*): Self = StObject.set(x, "ignoreDirs", js.Array(value*))
       
       inline def setIgnoreMatches(value: js.Array[String]): Self = StObject.set(x, "ignoreMatches", value.asInstanceOf[js.Any])
       
       inline def setIgnoreMatchesUndefined: Self = StObject.set(x, "ignoreMatches", js.undefined)
       
-      inline def setIgnoreMatchesVarargs(value: String*): Self = StObject.set(x, "ignoreMatches", js.Array(value :_*))
+      inline def setIgnoreMatchesVarargs(value: String*): Self = StObject.set(x, "ignoreMatches", js.Array(value*))
+      
+      inline def setIgnorePath(value: String): Self = StObject.set(x, "ignorePath", value.asInstanceOf[js.Any])
+      
+      inline def setIgnorePathUndefined: Self = StObject.set(x, "ignorePath", js.undefined)
+      
+      inline def setIgnorePatterns(value: js.Array[String]): Self = StObject.set(x, "ignorePatterns", value.asInstanceOf[js.Any])
+      
+      inline def setIgnorePatternsUndefined: Self = StObject.set(x, "ignorePatterns", js.undefined)
+      
+      inline def setIgnorePatternsVarargs(value: String*): Self = StObject.set(x, "ignorePatterns", js.Array(value*))
       
       inline def setParsers(value: StringDictionary[Parser_]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
       
@@ -321,7 +493,7 @@ object mod {
       
       inline def setSpecialsUndefined: Self = StObject.set(x, "specials", js.undefined)
       
-      inline def setSpecialsVarargs(value: Parser_ *): Self = StObject.set(x, "specials", js.Array(value :_*))
+      inline def setSpecialsVarargs(value: Parser_ *): Self = StObject.set(x, "specials", js.Array(value*))
       
       inline def set_package(value: Dependencies): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
       
@@ -345,9 +517,9 @@ object mod {
     
     var devDependencies: js.Array[String]
     
-    var invalidDirs: StringDictionary[js.Any]
+    var invalidDirs: StringDictionary[Any]
     
-    var invalidFiles: StringDictionary[js.Any]
+    var invalidFiles: StringDictionary[Any]
     
     var missing: StringDictionary[js.Array[String]]
     
@@ -358,8 +530,8 @@ object mod {
     inline def apply(
       dependencies: js.Array[String],
       devDependencies: js.Array[String],
-      invalidDirs: StringDictionary[js.Any],
-      invalidFiles: StringDictionary[js.Any],
+      invalidDirs: StringDictionary[Any],
+      invalidFiles: StringDictionary[Any],
       missing: StringDictionary[js.Array[String]],
       `using`: StringDictionary[js.Array[String]]
     ): Results = {
@@ -372,15 +544,15 @@ object mod {
       
       inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value*))
       
       inline def setDevDependencies(value: js.Array[String]): Self = StObject.set(x, "devDependencies", value.asInstanceOf[js.Any])
       
-      inline def setDevDependenciesVarargs(value: String*): Self = StObject.set(x, "devDependencies", js.Array(value :_*))
+      inline def setDevDependenciesVarargs(value: String*): Self = StObject.set(x, "devDependencies", js.Array(value*))
       
-      inline def setInvalidDirs(value: StringDictionary[js.Any]): Self = StObject.set(x, "invalidDirs", value.asInstanceOf[js.Any])
+      inline def setInvalidDirs(value: StringDictionary[Any]): Self = StObject.set(x, "invalidDirs", value.asInstanceOf[js.Any])
       
-      inline def setInvalidFiles(value: StringDictionary[js.Any]): Self = StObject.set(x, "invalidFiles", value.asInstanceOf[js.Any])
+      inline def setInvalidFiles(value: StringDictionary[Any]): Self = StObject.set(x, "invalidFiles", value.asInstanceOf[js.Any])
       
       inline def setMissing(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
       

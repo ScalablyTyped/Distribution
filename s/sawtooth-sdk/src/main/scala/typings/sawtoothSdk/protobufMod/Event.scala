@@ -5,7 +5,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.Event.IAttribute
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Event.
   * @param [properties] Properties to set
   */
-class Event ()
+open class Event ()
   extends StObject
      with IEvent {
   def this(properties: IEvent) = this()
@@ -27,7 +26,7 @@ class Event ()
   
   /** Event data. */
   @JSName("data")
-  var data_Event: Uint8Array = js.native
+  var data_Event: js.typedarray.Uint8Array = js.native
   
   /** Event eventType. */
   @JSName("eventType")
@@ -37,7 +36,7 @@ class Event ()
     * Converts this Event to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object Event {
@@ -53,7 +52,7 @@ object Event {
     * Constructs a new Attribute.
     * @param [properties] Properties to set
     */
-  class Attribute ()
+  open class Attribute ()
     extends StObject
        with IAttribute {
     def this(properties: IAttribute) = this()
@@ -66,7 +65,7 @@ object Event {
       * Converts this Attribute to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
     
     /** Attribute value. */
     @JSName("value")
@@ -87,6 +86,8 @@ object Event {
     inline def create(): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Attribute]
     inline def create(properties: IAttribute): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Attribute]
     
+    inline def decode(reader: js.typedarray.Uint8Array): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Attribute]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Attribute]
     /**
       * Decodes an Attribute message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -98,9 +99,8 @@ object Event {
     /* static member */
     inline def decode(reader: Reader): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Attribute]
     inline def decode(reader: Reader, length: Double): Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Attribute]
-    inline def decode(reader: Uint8Array): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Attribute]
-    inline def decode(reader: Uint8Array, length: Double): Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Attribute]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Attribute]
     /**
       * Decodes an Attribute message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -110,7 +110,6 @@ object Event {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Attribute]
-    inline def decodeDelimited(reader: Uint8Array): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Attribute]
     
     /**
       * Encodes the specified Attribute message. Does not implicitly {@link Event.Attribute.verify|verify} messages.
@@ -138,7 +137,7 @@ object Event {
       * @returns Attribute
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Attribute]
+    inline def fromObject(`object`: StringDictionary[Any]): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Attribute]
     
     /**
       * Creates a plain object from an Attribute message. Also converts values to other types if specified.
@@ -147,8 +146,8 @@ object Event {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: Attribute): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: Attribute, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Attribute): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: Attribute, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies an Attribute message.
@@ -156,7 +155,7 @@ object Event {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -167,6 +166,8 @@ object Event {
   inline def create(): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Event]
   inline def create(properties: IEvent): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Event]
   
+  inline def decode(reader: js.typedarray.Uint8Array): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Event]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Event]
   /**
     * Decodes an Event message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -177,9 +178,8 @@ object Event {
     */
   inline def decode(reader: Reader): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Event]
   inline def decode(reader: Reader, length: Double): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Event]
-  inline def decode(reader: Uint8Array): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Event]
-  inline def decode(reader: Uint8Array, length: Double): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Event]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Event]
   /**
     * Decodes an Event message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -188,7 +188,6 @@ object Event {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Event]
-  inline def decodeDelimited(reader: Uint8Array): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Event]
   
   /**
     * Encodes the specified Event message. Does not implicitly {@link Event.verify|verify} messages.
@@ -213,7 +212,7 @@ object Event {
     * @param object Plain object
     * @returns Event
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Event]
+  inline def fromObject(`object`: StringDictionary[Any]): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Event]
   
   /**
     * Creates a plain object from an Event message. Also converts values to other types if specified.
@@ -221,15 +220,15 @@ object Event {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: Event): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: Event, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: Event): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: Event, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies an Event message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an Attribute. */
   trait IAttribute extends StObject {

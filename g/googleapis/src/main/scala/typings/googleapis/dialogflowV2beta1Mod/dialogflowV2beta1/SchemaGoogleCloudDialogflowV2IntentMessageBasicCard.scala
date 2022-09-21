@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The basic card message. Useful for displaying information.
-  */
 trait SchemaGoogleCloudDialogflowV2IntentMessageBasicCard extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaGoogleCloudDialogflowV2IntentMessageBasicCard extends StObject {
   /**
     * Required, unless image is present. The body text of the card.
     */
-  var formattedText: js.UndefOr[String] = js.undefined
+  var formattedText: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Optional. The image for the card.
@@ -27,12 +24,12 @@ trait SchemaGoogleCloudDialogflowV2IntentMessageBasicCard extends StObject {
   /**
     * Optional. The subtitle of the card.
     */
-  var subtitle: js.UndefOr[String] = js.undefined
+  var subtitle: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Optional. The title of the card.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2IntentMessageBasicCard {
   
@@ -47,9 +44,11 @@ object SchemaGoogleCloudDialogflowV2IntentMessageBasicCard {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: SchemaGoogleCloudDialogflowV2IntentMessageBasicCardButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: SchemaGoogleCloudDialogflowV2IntentMessageBasicCardButton*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setFormattedText(value: String): Self = StObject.set(x, "formattedText", value.asInstanceOf[js.Any])
+    
+    inline def setFormattedTextNull: Self = StObject.set(x, "formattedText", null)
     
     inline def setFormattedTextUndefined: Self = StObject.set(x, "formattedText", js.undefined)
     
@@ -59,9 +58,13 @@ object SchemaGoogleCloudDialogflowV2IntentMessageBasicCard {
     
     inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
+    inline def setSubtitleNull: Self = StObject.set(x, "subtitle", null)
+    
     inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

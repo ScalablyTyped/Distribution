@@ -14,7 +14,7 @@ object customizerTypesMod {
   /* Inlined @uifabric/utilities.@uifabric/utilities/lib/BaseComponent.types.IBaseProps<any> & std.Partial<{  settings :@uifabric/utilities.@uifabric/utilities/lib/customizations/Customizations.ISettings | @uifabric/utilities.@uifabric/utilities/lib/customizations/Customizations.ISettingsFunction,   scopedSettings :@uifabric/utilities.@uifabric/utilities/lib/customizations/Customizations.ISettings | @uifabric/utilities.@uifabric/utilities/lib/customizations/Customizations.ISettingsFunction}> & {  contextTransform :(context : std.Readonly<@uifabric/utilities.@uifabric/utilities/lib/customizations/CustomizerContext.ICustomizerContext>): @uifabric/utilities.@uifabric/utilities/lib/customizations/CustomizerContext.ICustomizerContext | undefined} */
   trait ICustomizerProps extends StObject {
     
-    var componentRef: js.UndefOr[IRefObject[js.Any]] = js.undefined
+    var componentRef: js.UndefOr[IRefObject[Any]] = js.undefined
     
     /**
       * Optional transform function for context. Any implementations should take care to return context without
@@ -35,9 +35,9 @@ object customizerTypesMod {
     
     extension [Self <: ICustomizerProps](x: Self) {
       
-      inline def setComponentRef(value: IRefObject[js.Any]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[Any]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      inline def setComponentRefFunction1(value: /* ref */ js.Any | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ Any | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
       inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       

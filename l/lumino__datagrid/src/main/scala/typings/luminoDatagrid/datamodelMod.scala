@@ -1,6 +1,7 @@
 package typings.luminoDatagrid
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.luminoDatagrid.cellgroupMod.CellGroup
 import typings.luminoDatagrid.datamodelMod.DataModel.CellRegion
 import typings.luminoDatagrid.datamodelMod.DataModel.ChangedArgs
 import typings.luminoDatagrid.datamodelMod.DataModel.ColumnRegion
@@ -21,11 +22,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object datamodelMod {
   
-  @JSImport("@lumino/datagrid/lib/datamodel", "DataModel")
+  @JSImport("@lumino/datagrid/types/datamodel", "DataModel")
   @js.native
   abstract class DataModel () extends StObject {
     
-    /* private */ var _changed: js.Any = js.native
+    /* private */ var _changed: Any = js.native
     
     /**
       * A signal emitted when the data model has changed.
@@ -60,7 +61,7 @@ object datamodelMod {
       *
       * This method is called often, and so should be efficient.
       */
-    def data(region: CellRegion, row: Double, column: Double): js.Any = js.native
+    def data(region: CellRegion, row: Double, column: Double): Any = js.native
     
     /**
       * Emit the `changed` signal for the data model.
@@ -70,6 +71,21 @@ object datamodelMod {
       * changed so that attached data grids can update themselves.
       */
     /* protected */ def emitChanged(args: ChangedArgs): Unit = js.native
+    
+    /**
+      * Get the merged cell group corresponding to a region and index number.
+      * @param region the cell region of cell group.
+      * @param groupIndex the group index of the cell group.
+      * @returns a cell group.
+      */
+    def group(region: CellRegion, groupIndex: Double): CellGroup | Null = js.native
+    
+    /**
+      * Get the count of merged cell groups pertaining to a given
+      * cell region.
+      * @param region the target cell region.
+      */
+    def groupCount(region: CellRegion): Double = js.native
     
     /**
       * Get the metadata for a cell in the data model.
@@ -108,7 +124,7 @@ object datamodelMod {
     /**
       * A singleton empty metadata object.
       */
-    @JSImport("@lumino/datagrid/lib/datamodel", "DataModel.emptyMetadata")
+    @JSImport("@lumino/datagrid/types/datamodel", "DataModel.emptyMetadata")
     @js.native
     val emptyMetadata: Metadata = js.native
     
@@ -376,7 +392,7 @@ object datamodelMod {
     /**
       * The metadata for a column in a data model.
       */
-    type Metadata = StringDictionary[js.Any]
+    type Metadata = StringDictionary[Any]
     
     /**
       * An arguments object for the `changed` signal.
@@ -538,7 +554,7 @@ object datamodelMod {
     }
   }
   
-  @JSImport("@lumino/datagrid/lib/datamodel", "MutableDataModel")
+  @JSImport("@lumino/datagrid/types/datamodel", "MutableDataModel")
   @js.native
   abstract class MutableDataModel () extends DataModel {
     
@@ -554,6 +570,6 @@ object datamodelMod {
       * @returns true if succeeds, false otherwise.
       *
       */
-    def setData(region: CellRegion, row: Double, column: Double, value: js.Any): Boolean = js.native
+    def setData(region: CellRegion, row: Double, column: Double, value: Any): Boolean = js.native
   }
 }

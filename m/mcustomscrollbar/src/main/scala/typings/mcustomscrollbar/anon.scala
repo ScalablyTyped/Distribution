@@ -378,7 +378,7 @@ object anon {
       
       inline def setDisableOverUndefined: Self = StObject.set(x, "disableOver", js.undefined)
       
-      inline def setDisableOverVarargs(value: String*): Self = StObject.set(x, "disableOver", js.Array(value :_*))
+      inline def setDisableOverVarargs(value: String*): Self = StObject.set(x, "disableOver", js.Array(value*))
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       

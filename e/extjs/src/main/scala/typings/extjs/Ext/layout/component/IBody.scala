@@ -12,7 +12,7 @@ trait IBody
     * @param ownerContext Object
     */
   @JSName("beginLayout")
-  var beginLayout_IBody: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var beginLayout_IBody: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IBody {
   
@@ -23,7 +23,7 @@ object IBody {
   
   extension [Self <: IBody](x: Self) {
     
-    inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
+    inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
     
     inline def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
   }

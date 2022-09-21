@@ -10,10 +10,10 @@ Convert numbers to gematriya representation, and vice-versa.
 | ------------------ | :-------------: |
 | Full name          | gematriya |
 | Keywords           | hebrew, gematriya, numbers |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 7579 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1530.0 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/Scimonster/js-gematriya)

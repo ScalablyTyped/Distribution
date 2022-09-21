@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KeyFilter extends StObject {
   
   def keys(keys: String*): Assertion
-  def keys(keys: js.Array[js.Any]): Assertion
+  def keys(keys: js.Array[Any]): Assertion
   def keys(keys: Object): Assertion
   @JSName("keys")
   var keys_Original: Keys
   
-  def members(set: js.Array[js.Any]): Assertion
-  def members(set: js.Array[js.Any], message: String): Assertion
+  def members(set: js.Array[Any]): Assertion
+  def members(set: js.Array[Any], message: String): Assertion
   @JSName("members")
   var members_Original: Members
 }
 object KeyFilter {
   
-  inline def apply(keys: Keys, members: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => Assertion): KeyFilter = {
+  inline def apply(keys: Keys, members: (/* set */ js.Array[Any], /* message */ js.UndefOr[String]) => Assertion): KeyFilter = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any], members = js.Any.fromFunction2(members))
     __obj.asInstanceOf[KeyFilter]
   }
@@ -29,6 +29,6 @@ object KeyFilter {
     
     inline def setKeys(value: Keys): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    inline def setMembers(value: (/* set */ js.Array[js.Any], /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
+    inline def setMembers(value: (/* set */ js.Array[Any], /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
   }
 }

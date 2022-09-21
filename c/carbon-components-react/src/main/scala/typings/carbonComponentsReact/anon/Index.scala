@@ -10,12 +10,12 @@ trait Index extends StObject {
   
   var name: js.UndefOr[String | Double] = js.undefined
   
-  var text: String
+  var text: js.UndefOr[String] = js.undefined
 }
 object Index {
   
-  inline def apply(text: String): Index = {
-    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+  inline def apply(): Index = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Index]
   }
   
@@ -30,5 +30,7 @@ object Index {
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

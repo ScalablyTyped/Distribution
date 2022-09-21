@@ -32,5 +32,5 @@ trait Camera extends StObject {
     cameraOptions: CameraOptions
   ): Unit = js.native
   
-  var sourceType: js.Any = js.native
+  var sourceType: Any = js.native
 }

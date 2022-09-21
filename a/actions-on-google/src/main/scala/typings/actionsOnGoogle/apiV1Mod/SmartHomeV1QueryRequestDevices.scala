@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SmartHomeV1QueryRequestDevices extends StObject {
   
-  var customData: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var customData: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   var id: String
 }
@@ -20,7 +20,7 @@ object SmartHomeV1QueryRequestDevices {
   
   extension [Self <: SmartHomeV1QueryRequestDevices](x: Self) {
     
-    inline def setCustomData(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     

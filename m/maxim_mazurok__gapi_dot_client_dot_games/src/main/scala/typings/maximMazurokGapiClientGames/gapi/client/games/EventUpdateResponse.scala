@@ -31,13 +31,13 @@ object EventUpdateResponse {
     
     inline def setBatchFailuresUndefined: Self = StObject.set(x, "batchFailures", js.undefined)
     
-    inline def setBatchFailuresVarargs(value: EventBatchRecordFailure*): Self = StObject.set(x, "batchFailures", js.Array(value :_*))
+    inline def setBatchFailuresVarargs(value: EventBatchRecordFailure*): Self = StObject.set(x, "batchFailures", js.Array(value*))
     
     inline def setEventFailures(value: js.Array[EventRecordFailure]): Self = StObject.set(x, "eventFailures", value.asInstanceOf[js.Any])
     
     inline def setEventFailuresUndefined: Self = StObject.set(x, "eventFailures", js.undefined)
     
-    inline def setEventFailuresVarargs(value: EventRecordFailure*): Self = StObject.set(x, "eventFailures", js.Array(value :_*))
+    inline def setEventFailuresVarargs(value: EventRecordFailure*): Self = StObject.set(x, "eventFailures", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -47,6 +47,6 @@ object EventUpdateResponse {
     
     inline def setPlayerEventsUndefined: Self = StObject.set(x, "playerEvents", js.undefined)
     
-    inline def setPlayerEventsVarargs(value: PlayerEvent*): Self = StObject.set(x, "playerEvents", js.Array(value :_*))
+    inline def setPlayerEventsVarargs(value: PlayerEvent*): Self = StObject.set(x, "playerEvents", js.Array(value*))
   }
 }

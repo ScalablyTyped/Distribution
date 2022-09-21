@@ -12,7 +12,7 @@ trait Closed extends StObject {
   
   var material: js.UndefOr[typings.cesium.mod.Material] = js.undefined
   
-  var renderState: js.UndefOr[typings.cesium.mod.RenderState] = js.undefined
+  var renderState: js.UndefOr[Any] = js.undefined
   
   var translucent: js.UndefOr[Boolean] = js.undefined
   
@@ -39,7 +39,7 @@ object Closed {
     
     inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
-    inline def setRenderState(value: typings.cesium.mod.RenderState): Self = StObject.set(x, "renderState", value.asInstanceOf[js.Any])
+    inline def setRenderState(value: Any): Self = StObject.set(x, "renderState", value.asInstanceOf[js.Any])
     
     inline def setRenderStateUndefined: Self = StObject.set(x, "renderState", js.undefined)
     

@@ -8,7 +8,7 @@ object utilsStringMod {
   
   @JSImport("@devexpress/utils/lib/utils/string", "StringUtils")
   @js.native
-  class StringUtils () extends StObject
+  open class StringUtils () extends StObject
   /* static members */
   object StringUtils {
     
@@ -51,8 +51,8 @@ object utilsStringMod {
     
     @JSImport("@devexpress/utils/lib/utils/string", "StringUtils.trimInternal")
     @js.native
-    def trimInternal: js.Any = js.native
-    inline def trimInternal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trimInternal")(x.asInstanceOf[js.Any])
+    def trimInternal: Any = js.native
+    inline def trimInternal_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trimInternal")(x.asInstanceOf[js.Any])
     
     inline def trimStart(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trimStart")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def trimStart(str: String, trimChars: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trimStart")(str.asInstanceOf[js.Any], trimChars.asInstanceOf[js.Any])).asInstanceOf[String]

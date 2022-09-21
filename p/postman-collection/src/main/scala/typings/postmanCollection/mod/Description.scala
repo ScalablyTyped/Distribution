@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postman-collection", "Description")
 @js.native
-class Description ()
+open class Description ()
   extends StObject
      with DescriptionDefinition {
   def this(definition: String) = this()
@@ -31,5 +31,5 @@ object Description {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isDescription(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDescription")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDescription(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDescription")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

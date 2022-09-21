@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("pg", "Connection")
 @js.native
-class Connection () extends EventEmitter {
+open class Connection () extends EventEmitter {
   def this(config: ConnectionConfig) = this()
   
   def bind(config: Null, more: Boolean): Unit = js.native

@@ -22,7 +22,7 @@ object Pages {
     
     inline def setPages(value: js.Array[String]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    inline def setPagesVarargs(value: String*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: String*): Self = StObject.set(x, "pages", js.Array(value*))
     
     inline def setWindow(value: PageConfig): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
   }

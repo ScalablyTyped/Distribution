@@ -22,6 +22,6 @@ object DescribeCachediSCSIVolumesInput {
     
     inline def setVolumeARNs(value: VolumeARNs): Self = StObject.set(x, "VolumeARNs", value.asInstanceOf[js.Any])
     
-    inline def setVolumeARNsVarargs(value: VolumeARN*): Self = StObject.set(x, "VolumeARNs", js.Array(value :_*))
+    inline def setVolumeARNsVarargs(value: VolumeARN*): Self = StObject.set(x, "VolumeARNs", js.Array(value*))
   }
 }

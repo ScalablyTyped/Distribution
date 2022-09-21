@@ -9,7 +9,7 @@ object rangeTreeMod {
   
   @JSImport("@bcoe/v8-coverage/dist/lib/range-tree", "RangeTree")
   @js.native
-  class RangeTree protected () extends StObject {
+  open class RangeTree protected () extends StObject {
     def this(start: Double, end: Double, delta: Double, children: js.Array[RangeTree]) = this()
     
     var children: js.Array[RangeTree] = js.native

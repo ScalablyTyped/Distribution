@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RetryStrategy extends StObject {
   
   /**
-    * The number of times to move a job to the RUNNABLE status. You may specify between 1 and 10 attempts. If the value of attempts is greater than one, the job is retried on failure the same number of attempts as the value.
+    * The number of times to move a job to the RUNNABLE status. You can specify between 1 and 10 attempts. If the value of attempts is greater than one, the job is retried on failure the same number of attempts as the value.
     */
   var attempts: js.UndefOr[Integer] = js.undefined
   
@@ -33,6 +33,6 @@ object RetryStrategy {
     
     inline def setEvaluateOnExitUndefined: Self = StObject.set(x, "evaluateOnExit", js.undefined)
     
-    inline def setEvaluateOnExitVarargs(value: EvaluateOnExit*): Self = StObject.set(x, "evaluateOnExit", js.Array(value :_*))
+    inline def setEvaluateOnExitVarargs(value: EvaluateOnExit*): Self = StObject.set(x, "evaluateOnExit", js.Array(value*))
   }
 }

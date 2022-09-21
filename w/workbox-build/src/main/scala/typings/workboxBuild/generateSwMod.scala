@@ -1,7 +1,6 @@
 package typings.workboxBuild
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import typings.workboxBuild.anon.Count
 import typings.workboxBuild.typesMod.ManifestEntry
 import typings.workboxBuild.typesMod.ManifestTransform
@@ -75,7 +74,7 @@ object generateSwMod {
       * you provide a RegExp that will detect that, as it will reduce the bandwidth
       * consumed when precaching.
       */
-    var dontCacheBustURLsMatching: js.UndefOr[RegExp] = js.undefined
+    var dontCacheBustURLsMatching: js.UndefOr[js.RegExp] = js.undefined
     
     /**
       * The local directory you wish to match `globPatterns` against. The path is relative to the current directory.
@@ -127,7 +126,7 @@ object generateSwMod {
       *
       * @default [/^utm_/]
       */
-    var ignoreURLParametersMatching: js.UndefOr[js.Array[RegExp]] = js.undefined
+    var ignoreURLParametersMatching: js.UndefOr[js.Array[js.RegExp]] = js.undefined
     
     /**
       * A list of JavaScript files that should be passed to [`importScripts()`](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/importScripts)
@@ -197,7 +196,7 @@ object generateSwMod {
       * both `navigateFallbackDenylist` and `navigateFallbackAllowlist` are
       * configured, the denylist takes precedent.
       */
-    var navigateFallbackAllowlist: js.UndefOr[js.Array[RegExp]] = js.undefined
+    var navigateFallbackAllowlist: js.UndefOr[js.Array[js.RegExp]] = js.undefined
     
     /**
       * An optional array of regular expressions that restricts which URLs the configured
@@ -207,7 +206,7 @@ object generateSwMod {
       * both `navigateFallbackDenylist` and `navigateFallbackAllowlist` are
       * configured, the denylist takes precedent.
       */
-    var navigateFallbackDenylist: js.UndefOr[js.Array[RegExp]] = js.undefined
+    var navigateFallbackDenylist: js.UndefOr[js.Array[js.RegExp]] = js.undefined
     
     /**
       * Whether or not to enable [navigation preload](https://developers.google.com/web/tools/workbox/modules/workbox-navigation-preload)
@@ -278,13 +277,13 @@ object generateSwMod {
       
       inline def setAdditionalManifestEntriesUndefined: Self = StObject.set(x, "additionalManifestEntries", js.undefined)
       
-      inline def setAdditionalManifestEntriesVarargs(value: ManifestEntry*): Self = StObject.set(x, "additionalManifestEntries", js.Array(value :_*))
+      inline def setAdditionalManifestEntriesVarargs(value: ManifestEntry*): Self = StObject.set(x, "additionalManifestEntries", js.Array(value*))
       
       inline def setBabelPresetEnvTargets(value: js.Array[String]): Self = StObject.set(x, "babelPresetEnvTargets", value.asInstanceOf[js.Any])
       
       inline def setBabelPresetEnvTargetsUndefined: Self = StObject.set(x, "babelPresetEnvTargets", js.undefined)
       
-      inline def setBabelPresetEnvTargetsVarargs(value: String*): Self = StObject.set(x, "babelPresetEnvTargets", js.Array(value :_*))
+      inline def setBabelPresetEnvTargetsVarargs(value: String*): Self = StObject.set(x, "babelPresetEnvTargets", js.Array(value*))
       
       inline def setCacheId(value: String): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
       
@@ -302,7 +301,7 @@ object generateSwMod {
       
       inline def setDirectoryIndexUndefined: Self = StObject.set(x, "directoryIndex", js.undefined)
       
-      inline def setDontCacheBustURLsMatching(value: RegExp): Self = StObject.set(x, "dontCacheBustURLsMatching", value.asInstanceOf[js.Any])
+      inline def setDontCacheBustURLsMatching(value: js.RegExp): Self = StObject.set(x, "dontCacheBustURLsMatching", value.asInstanceOf[js.Any])
       
       inline def setDontCacheBustURLsMatchingUndefined: Self = StObject.set(x, "dontCacheBustURLsMatching", js.undefined)
       
@@ -316,29 +315,29 @@ object generateSwMod {
       
       inline def setGlobIgnoresUndefined: Self = StObject.set(x, "globIgnores", js.undefined)
       
-      inline def setGlobIgnoresVarargs(value: String*): Self = StObject.set(x, "globIgnores", js.Array(value :_*))
+      inline def setGlobIgnoresVarargs(value: String*): Self = StObject.set(x, "globIgnores", js.Array(value*))
       
       inline def setGlobPatterns(value: js.Array[String]): Self = StObject.set(x, "globPatterns", value.asInstanceOf[js.Any])
       
       inline def setGlobPatternsUndefined: Self = StObject.set(x, "globPatterns", js.undefined)
       
-      inline def setGlobPatternsVarargs(value: String*): Self = StObject.set(x, "globPatterns", js.Array(value :_*))
+      inline def setGlobPatternsVarargs(value: String*): Self = StObject.set(x, "globPatterns", js.Array(value*))
       
       inline def setGlobStrict(value: Boolean): Self = StObject.set(x, "globStrict", value.asInstanceOf[js.Any])
       
       inline def setGlobStrictUndefined: Self = StObject.set(x, "globStrict", js.undefined)
       
-      inline def setIgnoreURLParametersMatching(value: js.Array[RegExp]): Self = StObject.set(x, "ignoreURLParametersMatching", value.asInstanceOf[js.Any])
+      inline def setIgnoreURLParametersMatching(value: js.Array[js.RegExp]): Self = StObject.set(x, "ignoreURLParametersMatching", value.asInstanceOf[js.Any])
       
       inline def setIgnoreURLParametersMatchingUndefined: Self = StObject.set(x, "ignoreURLParametersMatching", js.undefined)
       
-      inline def setIgnoreURLParametersMatchingVarargs(value: RegExp*): Self = StObject.set(x, "ignoreURLParametersMatching", js.Array(value :_*))
+      inline def setIgnoreURLParametersMatchingVarargs(value: js.RegExp*): Self = StObject.set(x, "ignoreURLParametersMatching", js.Array(value*))
       
       inline def setImportScripts(value: js.Array[String]): Self = StObject.set(x, "importScripts", value.asInstanceOf[js.Any])
       
       inline def setImportScriptsUndefined: Self = StObject.set(x, "importScripts", js.undefined)
       
-      inline def setImportScriptsVarargs(value: String*): Self = StObject.set(x, "importScripts", js.Array(value :_*))
+      inline def setImportScriptsVarargs(value: String*): Self = StObject.set(x, "importScripts", js.Array(value*))
       
       inline def setInlineWorkboxRuntime(value: Boolean): Self = StObject.set(x, "inlineWorkboxRuntime", value.asInstanceOf[js.Any])
       
@@ -348,7 +347,7 @@ object generateSwMod {
       
       inline def setManifestTransformsUndefined: Self = StObject.set(x, "manifestTransforms", js.undefined)
       
-      inline def setManifestTransformsVarargs(value: ManifestTransform*): Self = StObject.set(x, "manifestTransforms", js.Array(value :_*))
+      inline def setManifestTransformsVarargs(value: ManifestTransform*): Self = StObject.set(x, "manifestTransforms", js.Array(value*))
       
       inline def setMaximumFileSizeToCacheInBytes(value: Double): Self = StObject.set(x, "maximumFileSizeToCacheInBytes", value.asInstanceOf[js.Any])
       
@@ -364,17 +363,17 @@ object generateSwMod {
       
       inline def setNavigateFallback(value: String): Self = StObject.set(x, "navigateFallback", value.asInstanceOf[js.Any])
       
-      inline def setNavigateFallbackAllowlist(value: js.Array[RegExp]): Self = StObject.set(x, "navigateFallbackAllowlist", value.asInstanceOf[js.Any])
+      inline def setNavigateFallbackAllowlist(value: js.Array[js.RegExp]): Self = StObject.set(x, "navigateFallbackAllowlist", value.asInstanceOf[js.Any])
       
       inline def setNavigateFallbackAllowlistUndefined: Self = StObject.set(x, "navigateFallbackAllowlist", js.undefined)
       
-      inline def setNavigateFallbackAllowlistVarargs(value: RegExp*): Self = StObject.set(x, "navigateFallbackAllowlist", js.Array(value :_*))
+      inline def setNavigateFallbackAllowlistVarargs(value: js.RegExp*): Self = StObject.set(x, "navigateFallbackAllowlist", js.Array(value*))
       
-      inline def setNavigateFallbackDenylist(value: js.Array[RegExp]): Self = StObject.set(x, "navigateFallbackDenylist", value.asInstanceOf[js.Any])
+      inline def setNavigateFallbackDenylist(value: js.Array[js.RegExp]): Self = StObject.set(x, "navigateFallbackDenylist", value.asInstanceOf[js.Any])
       
       inline def setNavigateFallbackDenylistUndefined: Self = StObject.set(x, "navigateFallbackDenylist", js.undefined)
       
-      inline def setNavigateFallbackDenylistVarargs(value: RegExp*): Self = StObject.set(x, "navigateFallbackDenylist", js.Array(value :_*))
+      inline def setNavigateFallbackDenylistVarargs(value: js.RegExp*): Self = StObject.set(x, "navigateFallbackDenylist", js.Array(value*))
       
       inline def setNavigateFallbackUndefined: Self = StObject.set(x, "navigateFallback", js.undefined)
       
@@ -390,7 +389,7 @@ object generateSwMod {
       
       inline def setRuntimeCachingUndefined: Self = StObject.set(x, "runtimeCaching", js.undefined)
       
-      inline def setRuntimeCachingVarargs(value: RuntimeCachingEntry*): Self = StObject.set(x, "runtimeCaching", js.Array(value :_*))
+      inline def setRuntimeCachingVarargs(value: RuntimeCachingEntry*): Self = StObject.set(x, "runtimeCaching", js.Array(value*))
       
       inline def setSkipWaiting(value: Boolean): Self = StObject.set(x, "skipWaiting", value.asInstanceOf[js.Any])
       

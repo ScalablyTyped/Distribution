@@ -39,19 +39,19 @@ object logMod {
       */
     def log(
       format: String,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param values because its type any is not an array type */ values: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param values because its type any is not an array type */ values: Any
     ): Unit
   }
   object Logger_ {
     
-    inline def apply(log: (String, js.Any) => Unit): Logger_ = {
+    inline def apply(log: (String, Any) => Unit): Logger_ = {
       val __obj = js.Dynamic.literal(log = js.Any.fromFunction2(log))
       __obj.asInstanceOf[Logger_]
     }
     
     extension [Self <: Logger_](x: Self) {
       
-      inline def setLog(value: (String, js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      inline def setLog(value: (String, Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     }
   }
 }

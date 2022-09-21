@@ -34,7 +34,10 @@ trait AggregateRequest extends StObject {
   /** Specifies that data be aggregated by a single time interval. Mutually exclusive of other bucketing specifications. */
   var bucketByTime: js.UndefOr[BucketByTime] = js.undefined
   
-  /** The end of a window of time. Data that intersects with this time window will be aggregated. The time is in milliseconds since epoch, inclusive. */
+  /**
+    * The end of a window of time. Data that intersects with this time window will be aggregated. The time is in milliseconds since epoch, inclusive. The maximum allowed difference
+    * between start_time_millis // and end_time_millis is 7776000000 (roughly 90 days).
+    */
   var endTimeMillis: js.UndefOr[String] = js.undefined
   
   /** DO NOT POPULATE THIS FIELD. It is ignored. */
@@ -56,7 +59,7 @@ object AggregateRequest {
     
     inline def setAggregateByUndefined: Self = StObject.set(x, "aggregateBy", js.undefined)
     
-    inline def setAggregateByVarargs(value: AggregateBy*): Self = StObject.set(x, "aggregateBy", js.Array(value :_*))
+    inline def setAggregateByVarargs(value: AggregateBy*): Self = StObject.set(x, "aggregateBy", js.Array(value*))
     
     inline def setBucketByActivitySegment(value: BucketByActivity): Self = StObject.set(x, "bucketByActivitySegment", value.asInstanceOf[js.Any])
     
@@ -82,7 +85,7 @@ object AggregateRequest {
     
     inline def setFilteredDataQualityStandardUndefined: Self = StObject.set(x, "filteredDataQualityStandard", js.undefined)
     
-    inline def setFilteredDataQualityStandardVarargs(value: String*): Self = StObject.set(x, "filteredDataQualityStandard", js.Array(value :_*))
+    inline def setFilteredDataQualityStandardVarargs(value: String*): Self = StObject.set(x, "filteredDataQualityStandard", js.Array(value*))
     
     inline def setStartTimeMillis(value: String): Self = StObject.set(x, "startTimeMillis", value.asInstanceOf[js.Any])
     

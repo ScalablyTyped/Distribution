@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ListLevelSettings")
 @js.native
-class ListLevelSettings ()
+open class ListLevelSettings ()
   extends StObject
      with typings.devexpressWeb.ListLevelSettings {
   

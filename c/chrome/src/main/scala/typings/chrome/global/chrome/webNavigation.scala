@@ -28,11 +28,13 @@ object webNavigation {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def getAllFrames(details: GetAllFrameDetails): js.Promise[js.Array[GetAllFrameResultDetails] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllFrames")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[GetAllFrameResultDetails] | Null]]
   inline def getAllFrames(
     details: GetAllFrameDetails,
     callback: js.Function1[/* details */ js.Array[GetAllFrameResultDetails] | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllFrames")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def getFrame(details: GetFrameDetails): js.Promise[GetFrameResultDetails | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFrame")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetFrameResultDetails | Null]]
   inline def getFrame(details: GetFrameDetails, callback: js.Function1[/* details */ GetFrameResultDetails | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFrame")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("chrome.webNavigation.onBeforeNavigate")

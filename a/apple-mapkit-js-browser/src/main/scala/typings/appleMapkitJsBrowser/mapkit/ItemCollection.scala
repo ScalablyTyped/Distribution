@@ -42,10 +42,10 @@ object ItemCollection {
     
     inline def setGetFlattenedItemList(value: js.Array[Annotation | Overlay]): Self = StObject.set(x, "getFlattenedItemList", value.asInstanceOf[js.Any])
     
-    inline def setGetFlattenedItemListVarargs(value: (Annotation | Overlay)*): Self = StObject.set(x, "getFlattenedItemList", js.Array(value :_*))
+    inline def setGetFlattenedItemListVarargs(value: (Annotation | Overlay)*): Self = StObject.set(x, "getFlattenedItemList", js.Array(value*))
     
     inline def setItems(value: js.Array[Annotation | Overlay | ItemCollection]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: (Annotation | Overlay | ItemCollection)*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: (Annotation | Overlay | ItemCollection)*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

@@ -6,22 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "RequestErrorEvent")
 @js.native
-class RequestErrorEvent () extends StObject {
+open class RequestErrorEvent () extends StObject {
   def this(statusCode: Double) = this()
-  def this(statusCode: Double, response: js.Any) = this()
-  def this(statusCode: Unit, response: js.Any) = this()
-  def this(statusCode: Double, response: js.Any, responseHeaders: String) = this()
-  def this(statusCode: Double, response: js.Any, responseHeaders: js.Object) = this()
+  def this(statusCode: Double, response: Any) = this()
+  def this(statusCode: Unit, response: Any) = this()
+  def this(statusCode: Double, response: Any, responseHeaders: String) = this()
+  def this(statusCode: Double, response: Any, responseHeaders: Any) = this()
   def this(statusCode: Double, response: Unit, responseHeaders: String) = this()
-  def this(statusCode: Double, response: Unit, responseHeaders: js.Object) = this()
-  def this(statusCode: Unit, response: js.Any, responseHeaders: String) = this()
-  def this(statusCode: Unit, response: js.Any, responseHeaders: js.Object) = this()
+  def this(statusCode: Double, response: Unit, responseHeaders: Any) = this()
+  def this(statusCode: Unit, response: Any, responseHeaders: String) = this()
+  def this(statusCode: Unit, response: Any, responseHeaders: Any) = this()
   def this(statusCode: Unit, response: Unit, responseHeaders: String) = this()
-  def this(statusCode: Unit, response: Unit, responseHeaders: js.Object) = this()
+  def this(statusCode: Unit, response: Unit, responseHeaders: Any) = this()
   
-  var response: js.Any = js.native
+  /**
+    * The response included along with the error.  If the error does not include a response,
+    * this property will be undefined.
+    */
+  var response: Any = js.native
   
-  var responseHeaders: js.Any = js.native
+  /**
+    * The headers included in the response, represented as an object literal of key/value pairs.
+    * If the error does not include any headers, this property will be undefined.
+    */
+  var responseHeaders: Any = js.native
   
+  /**
+    * The HTTP error status code, such as 404.  If the error does not have a particular
+    * HTTP code, this property will be undefined.
+    */
   var statusCode: Double = js.native
 }

@@ -8,7 +8,7 @@ trait Entity extends StObject {
   
   var entity: typings.cesium.mod.Entity
   
-  var geometryOptions: js.Any
+  var geometryOptions: Any
   
   var geometryPropertyName: String
   
@@ -20,7 +20,7 @@ object Entity {
   
   inline def apply(
     entity: typings.cesium.mod.Entity,
-    geometryOptions: js.Any,
+    geometryOptions: Any,
     geometryPropertyName: String,
     observedPropertyNames: js.Array[String],
     scene: typings.cesium.mod.Scene
@@ -33,13 +33,13 @@ object Entity {
     
     inline def setEntity(value: typings.cesium.mod.Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    inline def setGeometryOptions(value: js.Any): Self = StObject.set(x, "geometryOptions", value.asInstanceOf[js.Any])
+    inline def setGeometryOptions(value: Any): Self = StObject.set(x, "geometryOptions", value.asInstanceOf[js.Any])
     
     inline def setGeometryPropertyName(value: String): Self = StObject.set(x, "geometryPropertyName", value.asInstanceOf[js.Any])
     
     inline def setObservedPropertyNames(value: js.Array[String]): Self = StObject.set(x, "observedPropertyNames", value.asInstanceOf[js.Any])
     
-    inline def setObservedPropertyNamesVarargs(value: String*): Self = StObject.set(x, "observedPropertyNames", js.Array(value :_*))
+    inline def setObservedPropertyNamesVarargs(value: String*): Self = StObject.set(x, "observedPropertyNames", js.Array(value*))
     
     inline def setScene(value: typings.cesium.mod.Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
   }

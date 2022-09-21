@@ -10,10 +10,10 @@ A packing algorithm for 2D bin packing. Largely based on code and a blog post by
 | ------------------ | :-------------: |
 | Full name          | bin-pack |
 | Keywords           | bin, rectangle, square, sprite, pack |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 2989144 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 338795.0 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/bryanburgers/bin-pack)

@@ -9,20 +9,20 @@ trait DatasetContentSummary extends StObject {
   /**
     * The time the dataset content status was updated to SUCCEEDED or FAILED.
     */
-  var completionTime: js.UndefOr[Timestamp] = js.undefined
+  var completionTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The actual time the creation of the dataset contents was started.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.undefined
+  var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time the creation of the dataset contents was scheduled to start.
     */
-  var scheduleTime: js.UndefOr[Timestamp] = js.undefined
+  var scheduleTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The status of the data set contents.
+    * The status of the dataset contents.
     */
   var status: js.UndefOr[DatasetContentStatus] = js.undefined
   
@@ -40,15 +40,15 @@ object DatasetContentSummary {
   
   extension [Self <: DatasetContentSummary](x: Self) {
     
-    inline def setCompletionTime(value: Timestamp): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
+    inline def setCompletionTime(value: js.Date): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
     
     inline def setCompletionTimeUndefined: Self = StObject.set(x, "completionTime", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    inline def setScheduleTime(value: Timestamp): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
+    inline def setScheduleTime(value: js.Date): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
     
     inline def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
     

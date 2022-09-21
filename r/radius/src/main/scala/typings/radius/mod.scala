@@ -1,6 +1,6 @@
 package typings.radius
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,7 +81,7 @@ object mod {
       * 
       * Tag field-attributes can be specified like so: [ [ attribute_name, tag_number, attribute_value ] ... ]
       **/
-    var attributes: js.UndefOr[js.Any] = js.undefined
+    var attributes: js.UndefOr[Any] = js.undefined
     
     var code: String
     
@@ -102,7 +102,7 @@ object mod {
       
       inline def setAdd_message_authenticatorUndefined: Self = StObject.set(x, "add_message_authenticator", js.undefined)
       
-      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
@@ -121,7 +121,7 @@ object mod {
     **/
   trait EncodeResponseArgs extends StObject {
     
-    var attributes: js.UndefOr[js.Any] = js.undefined
+    var attributes: js.UndefOr[Any] = js.undefined
     
     var code: String
     
@@ -138,7 +138,7 @@ object mod {
     
     extension [Self <: EncodeResponseArgs](x: Self) {
       
-      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
@@ -152,7 +152,7 @@ object mod {
   
   trait RadiusPacket extends StObject {
     
-    var attributes: js.Any
+    var attributes: Any
     
     var code: String
     
@@ -160,16 +160,16 @@ object mod {
     
     var length: Double
     
-    var raw_attributes: js.Array[js.Array[js.Any]]
+    var raw_attributes: js.Array[js.Array[Any]]
   }
   object RadiusPacket {
     
     inline def apply(
-      attributes: js.Any,
+      attributes: Any,
       code: String,
       identifier: Double,
       length: Double,
-      raw_attributes: js.Array[js.Array[js.Any]]
+      raw_attributes: js.Array[js.Array[Any]]
     ): RadiusPacket = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], raw_attributes = raw_attributes.asInstanceOf[js.Any])
       __obj.asInstanceOf[RadiusPacket]
@@ -177,7 +177,7 @@ object mod {
     
     extension [Self <: RadiusPacket](x: Self) {
       
-      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -185,9 +185,9 @@ object mod {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      inline def setRaw_attributes(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "raw_attributes", value.asInstanceOf[js.Any])
+      inline def setRaw_attributes(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "raw_attributes", value.asInstanceOf[js.Any])
       
-      inline def setRaw_attributesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "raw_attributes", js.Array(value :_*))
+      inline def setRaw_attributesVarargs(value: js.Array[Any]*): Self = StObject.set(x, "raw_attributes", js.Array(value*))
     }
   }
   

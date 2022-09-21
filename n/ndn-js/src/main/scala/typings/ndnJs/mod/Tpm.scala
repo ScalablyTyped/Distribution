@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ndn-js", "Tpm")
 @js.native
-class Tpm ()
+open class Tpm ()
   extends typings.ndnJs.keyChainMod.Tpm

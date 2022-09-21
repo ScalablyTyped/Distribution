@@ -33,6 +33,6 @@ object DeliveryControl {
     
     inline def setFrequencyCapsUndefined: Self = StObject.set(x, "frequencyCaps", js.undefined)
     
-    inline def setFrequencyCapsVarargs(value: DeliveryControlFrequencyCap*): Self = StObject.set(x, "frequencyCaps", js.Array(value :_*))
+    inline def setFrequencyCapsVarargs(value: DeliveryControlFrequencyCap*): Self = StObject.set(x, "frequencyCaps", js.Array(value*))
   }
 }

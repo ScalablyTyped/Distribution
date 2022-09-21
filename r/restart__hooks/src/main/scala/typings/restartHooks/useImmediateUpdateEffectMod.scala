@@ -21,7 +21,7 @@ object useImmediateUpdateEffectMod {
     * function Example({ value }) {
     *   const [intermediaryValue, setValue] = useState(value);
     *
-    *   useImmediateUpdateEffect(() => {
+    *   useUpdateImmediateEffect(() => {
     *     setValue(value)
     *   }, [value])
     * ```

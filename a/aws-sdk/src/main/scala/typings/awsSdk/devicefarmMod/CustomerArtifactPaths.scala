@@ -34,18 +34,18 @@ object CustomerArtifactPaths {
     
     inline def setAndroidPathsUndefined: Self = StObject.set(x, "androidPaths", js.undefined)
     
-    inline def setAndroidPathsVarargs(value: String*): Self = StObject.set(x, "androidPaths", js.Array(value :_*))
+    inline def setAndroidPathsVarargs(value: String*): Self = StObject.set(x, "androidPaths", js.Array(value*))
     
     inline def setDeviceHostPaths(value: DeviceHostPaths): Self = StObject.set(x, "deviceHostPaths", value.asInstanceOf[js.Any])
     
     inline def setDeviceHostPathsUndefined: Self = StObject.set(x, "deviceHostPaths", js.undefined)
     
-    inline def setDeviceHostPathsVarargs(value: String*): Self = StObject.set(x, "deviceHostPaths", js.Array(value :_*))
+    inline def setDeviceHostPathsVarargs(value: String*): Self = StObject.set(x, "deviceHostPaths", js.Array(value*))
     
     inline def setIosPaths(value: IosPaths): Self = StObject.set(x, "iosPaths", value.asInstanceOf[js.Any])
     
     inline def setIosPathsUndefined: Self = StObject.set(x, "iosPaths", js.undefined)
     
-    inline def setIosPathsVarargs(value: String*): Self = StObject.set(x, "iosPaths", js.Array(value :_*))
+    inline def setIosPathsVarargs(value: String*): Self = StObject.set(x, "iosPaths", js.Array(value*))
   }
 }

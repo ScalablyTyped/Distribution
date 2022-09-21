@@ -9,10 +9,10 @@ Connect middleware for Istanbul to handle server-side as well as browser coverag
 | ------------------ | :-------------: |
 | Full name          | istanbul-middleware |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 355401 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 17447.333333333332 |
+| # stars            | 163.0 |
 
 ## Links
 - [Homepage](https://github.com/gotwarlost/istanbul-middleware#readme)

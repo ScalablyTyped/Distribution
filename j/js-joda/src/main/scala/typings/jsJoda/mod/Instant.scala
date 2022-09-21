@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "Instant")
 @js.native
-/* private */ class Instant () extends Temporal {
+/* private */ open class Instant () extends Temporal {
   
   def adjustInto(temporal: Temporal): Temporal = js.native
   
@@ -15,8 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   def compareTo(otherInstant: Instant): Double = js.native
   
   def epochSecond(): Double = js.native
-  
-  def equals(otherInstant: js.Any): Boolean = js.native
   
   def getLong(field: TemporalField): Double = js.native
   

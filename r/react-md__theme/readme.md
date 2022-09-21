@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__theme
 
-Typings are for version 2.4.2
+Typings are for version 5.1.3
 
 ## Library description:
 The base package for including a theme for react-md. This is required by most other packages.
@@ -11,9 +11,9 @@ The base package for including a theme for react-md. This is required by most ot
 | Full name          | @react-md/theme |
 | Keywords           | react-md, material design, react, theme, colors, css variables |
 | # releases         | 37 |
-| # dependents       | 30 |
-| # downloads        | 34398 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 12408.666666666666 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/theme/demos)

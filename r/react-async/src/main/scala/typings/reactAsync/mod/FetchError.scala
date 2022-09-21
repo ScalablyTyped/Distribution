@@ -8,14 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-async", "FetchError")
 @js.native
-class FetchError protected ()
+open class FetchError protected ()
   extends StObject
      with Error {
   def this(response: Response) = this()
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
   

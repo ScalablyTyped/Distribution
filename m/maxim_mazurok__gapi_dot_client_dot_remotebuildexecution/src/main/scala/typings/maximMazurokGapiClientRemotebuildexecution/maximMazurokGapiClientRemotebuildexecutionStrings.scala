@@ -11,6 +11,10 @@ object maximMazurokGapiClientRemotebuildexecutionStrings {
   inline def BuildBazelRemoteExecutionV2ExecuteResponse: BuildBazelRemoteExecutionV2ExecuteResponse = "BuildBazelRemoteExecutionV2ExecuteResponse".asInstanceOf[BuildBazelRemoteExecutionV2ExecuteResponse]
   
   @js.native
+  sealed trait BuildBazelRemoteExecutionV2ExecutedActionMetadata extends StObject
+  inline def BuildBazelRemoteExecutionV2ExecutedActionMetadata: BuildBazelRemoteExecutionV2ExecutedActionMetadata = "BuildBazelRemoteExecutionV2ExecutedActionMetadata".asInstanceOf[BuildBazelRemoteExecutionV2ExecutedActionMetadata]
+  
+  @js.native
   sealed trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends StObject
   inline def GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig = "GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig".asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig]
   

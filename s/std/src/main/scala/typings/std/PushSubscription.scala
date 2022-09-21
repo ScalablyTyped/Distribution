@@ -4,26 +4,35 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This Push API interface provides a subcription's URL endpoint and allows unsubscription from a push service. */
+/**
+  * This Push API interface provides a subcription's URL endpoint and allows unsubscription from a push service.
+  * Available only in secure contexts.
+  */
 trait PushSubscription extends StObject {
   
+  /* standard dom */
   val endpoint: java.lang.String
   
-  val expirationTime: Double | Null
+  /* standard dom */
+  val expirationTime: EpochTimeStamp | Null
   
-  def getKey(name: PushEncryptionKeyName): ArrayBuffer | Null
+  /* standard dom */
+  def getKey(name: PushEncryptionKeyName): js.typedarray.ArrayBuffer | Null
   
+  /* standard dom */
   val options: PushSubscriptionOptions
   
+  /* standard dom */
   def toJSON(): PushSubscriptionJSON
   
+  /* standard dom */
   def unsubscribe(): js.Promise[scala.Boolean]
 }
 object PushSubscription {
   
   inline def apply(
     endpoint: java.lang.String,
-    getKey: PushEncryptionKeyName => ArrayBuffer | Null,
+    getKey: PushEncryptionKeyName => js.typedarray.ArrayBuffer | Null,
     options: PushSubscriptionOptions,
     toJSON: () => PushSubscriptionJSON,
     unsubscribe: () => js.Promise[scala.Boolean]
@@ -36,11 +45,11 @@ object PushSubscription {
     
     inline def setEndpoint(value: java.lang.String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    inline def setExpirationTime(value: Double): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: EpochTimeStamp): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
     inline def setExpirationTimeNull: Self = StObject.set(x, "expirationTime", null)
     
-    inline def setGetKey(value: PushEncryptionKeyName => ArrayBuffer | Null): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
+    inline def setGetKey(value: PushEncryptionKeyName => js.typedarray.ArrayBuffer | Null): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
     
     inline def setOptions(value: PushSubscriptionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

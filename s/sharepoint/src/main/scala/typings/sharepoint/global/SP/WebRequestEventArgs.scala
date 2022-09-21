@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.WebRequestEventArgs")
 @js.native
-class WebRequestEventArgs protected ()
+open class WebRequestEventArgs protected ()
   extends StObject
      with typings.sharepoint.SP.WebRequestEventArgs {
   def this(webRequest: WebRequest) = this()

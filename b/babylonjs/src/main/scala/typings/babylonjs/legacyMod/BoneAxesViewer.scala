@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "BoneAxesViewer")
 @js.native
-class BoneAxesViewer protected ()
+open class BoneAxesViewer protected ()
   extends typings.babylonjs.indexMod.BoneAxesViewer {
   /**
     * Creates a new BoneAxesViewer

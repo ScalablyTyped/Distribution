@@ -10,10 +10,10 @@ object panToolMod {
   
   @JSImport("material-ui/svg-icons/action/pan-tool", JSImport.Default)
   @js.native
-  class default () extends ActionPanTool
+  open class default () extends ActionPanTool
   
   @JSImport("material-ui/svg-icons/action/pan-tool", "ActionPanTool")
   @js.native
-  class ActionPanTool ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionPanTool ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

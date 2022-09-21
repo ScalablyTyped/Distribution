@@ -25,12 +25,12 @@ object ScopedRoutesConfigDump {
     
     inline def setDynamicScopedRouteConfigsUndefined: Self = StObject.set(x, "dynamicScopedRouteConfigs", js.undefined)
     
-    inline def setDynamicScopedRouteConfigsVarargs(value: DynamicScopedRouteConfigs*): Self = StObject.set(x, "dynamicScopedRouteConfigs", js.Array(value :_*))
+    inline def setDynamicScopedRouteConfigsVarargs(value: DynamicScopedRouteConfigs*): Self = StObject.set(x, "dynamicScopedRouteConfigs", js.Array(value*))
     
     inline def setInlineScopedRouteConfigs(value: js.Array[InlineScopedRouteConfigs]): Self = StObject.set(x, "inlineScopedRouteConfigs", value.asInstanceOf[js.Any])
     
     inline def setInlineScopedRouteConfigsUndefined: Self = StObject.set(x, "inlineScopedRouteConfigs", js.undefined)
     
-    inline def setInlineScopedRouteConfigsVarargs(value: InlineScopedRouteConfigs*): Self = StObject.set(x, "inlineScopedRouteConfigs", js.Array(value :_*))
+    inline def setInlineScopedRouteConfigsVarargs(value: InlineScopedRouteConfigs*): Self = StObject.set(x, "inlineScopedRouteConfigs", js.Array(value*))
   }
 }

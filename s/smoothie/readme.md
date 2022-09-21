@@ -1,7 +1,7 @@
 
 # Scala.js typings for smoothie
 
-Typings are for version 1.35.0
+Typings are for version 1.36.1
 
 ## Library description:
 Smoothie Charts: smooooooth JavaScript charts for realtime streaming data
@@ -10,10 +10,10 @@ Smoothie Charts: smooooooth JavaScript charts for realtime streaming data
 | ------------------ | :-------------: |
 | Full name          | smoothie |
 | Keywords           | charts, charting, realtime, stock-ticker, time series, time-series, responsive |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 66888 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9632.0 |
+| # stars            | 2172.0 |
 
 ## Links
 - [Homepage](https://github.com/joewalnes/smoothie#readme)

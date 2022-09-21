@@ -11,7 +11,6 @@ import typings.inert.inertStrings.`inline`
 import typings.inert.inertStrings.attachment
 import typings.inert.inertStrings.hash
 import typings.inert.inertStrings.simple
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,7 +61,7 @@ object mod extends Shortcut {
       * * a function with the signature function(request) which returns the path string or an array of path strings.
       *   If the function returns an error, the error is passed back to the client in the response.
       */
-    var path: String | js.Array[String] | (RequestHandler[String | js.Array[String] | Error])
+    var path: String | js.Array[String] | (RequestHandler[String | js.Array[String] | js.Error])
     
     /**
       * redirectToSlash - optional boolean, determines if requests for a directory without a trailing slash are redirected to the same path with the missing slash.
@@ -78,7 +77,7 @@ object mod extends Shortcut {
   }
   object DirectoryHandlerRouteObject {
     
-    inline def apply(path: String | js.Array[String] | (RequestHandler[String | js.Array[String] | Error])): DirectoryHandlerRouteObject = {
+    inline def apply(path: String | js.Array[String] | (RequestHandler[String | js.Array[String] | js.Error])): DirectoryHandlerRouteObject = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectoryHandlerRouteObject]
     }
@@ -97,7 +96,7 @@ object mod extends Shortcut {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
       
       inline def setListing(value: Boolean): Self = StObject.set(x, "listing", value.asInstanceOf[js.Any])
       
@@ -107,11 +106,11 @@ object mod extends Shortcut {
       
       inline def setLookupCompressedUndefined: Self = StObject.set(x, "lookupCompressed", js.undefined)
       
-      inline def setPath(value: String | js.Array[String] | (RequestHandler[String | js.Array[String] | Error])): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | js.Array[String] | (RequestHandler[String | js.Array[String] | js.Error])): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathFunction1(value: /* request */ Request => String | js.Array[String] | Error): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
+      inline def setPathFunction1(value: /* request */ Request => String | js.Array[String] | js.Error): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
       
-      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setRedirectToSlash(value: Boolean): Self = StObject.set(x, "redirectToSlash", value.asInstanceOf[js.Any])
       

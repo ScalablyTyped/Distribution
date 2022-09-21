@@ -1,6 +1,7 @@
 package typings.angularCore
 
 import typings.angularCore.anon.Character
+import typings.angularDevkitSchematics.mod.Tree
 import typings.typescript.mod.ClassDeclaration
 import typings.typescript.mod.Node
 import typings.typescript.mod.TypeChecker
@@ -12,14 +13,18 @@ object ngComponentTemplateMod {
   
   @JSImport("@angular/core/schematics/utils/ng_component_template", "NgComponentTemplateVisitor")
   @js.native
-  class NgComponentTemplateVisitor protected () extends StObject {
-    def this(typeChecker: TypeChecker) = this()
+  open class NgComponentTemplateVisitor protected () extends StObject {
+    def this(typeChecker: TypeChecker, _basePath: String, _tree: Tree) = this()
+    
+    /* private */ var _basePath: Any = js.native
+    
+    /* private */ var _tree: Any = js.native
     
     var resolvedTemplates: js.Array[ResolvedTemplate] = js.native
     
     var typeChecker: TypeChecker = js.native
     
-    /* private */ var visitClassDeclaration: js.Any = js.native
+    /* private */ var visitClassDeclaration: Any = js.native
     
     def visitNode(node: Node): Unit = js.native
   }

@@ -82,7 +82,7 @@ trait IVaultEntryEvents
     ]
   ] = js.undefined
   
-  var OnNotification: js.UndefOr[js.Function3[/* id */ String, /* data1 */ js.Any, /* data2 */ js.Any, js.Any]] = js.undefined
+  var OnNotification: js.UndefOr[js.Function3[/* id */ String, /* data1 */ Any, /* data2 */ Any, Any]] = js.undefined
   
   var OnObjectAddedToFavorites: js.UndefOr[js.Function1[/* objID */ IObjID, Unit]] = js.undefined
   
@@ -316,7 +316,7 @@ object IVaultEntryEvents {
     
     inline def setOnModifyObjectVersionLabelsUndefined: Self = StObject.set(x, "OnModifyObjectVersionLabels", js.undefined)
     
-    inline def setOnNotification(value: (/* id */ String, /* data1 */ js.Any, /* data2 */ js.Any) => js.Any): Self = StObject.set(x, "OnNotification", js.Any.fromFunction3(value))
+    inline def setOnNotification(value: (/* id */ String, /* data1 */ Any, /* data2 */ Any) => Any): Self = StObject.set(x, "OnNotification", js.Any.fromFunction3(value))
     
     inline def setOnNotificationUndefined: Self = StObject.set(x, "OnNotification", js.undefined)
     

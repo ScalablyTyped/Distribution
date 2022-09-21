@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutSipMediaApplicationLoggingConfigurationRequest extends StObject {
   
   /**
-    * The ID of the specified SIP media application
+    * The SIP media application ID.
     */
   var SipMediaApplicationId: NonEmptyString
   

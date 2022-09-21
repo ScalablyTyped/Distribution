@@ -1,7 +1,10 @@
 package typings.snabbdom
 
+import typings.std.ChildNode
 import typings.std.Comment
+import typings.std.DocumentFragment
 import typings.std.Element
+import typings.std.ElementCreationOptions
 import typings.std.HTMLElement
 import typings.std.Node
 import typings.std.Text
@@ -11,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object htmldomapiMod {
   
-  @JSImport("snabbdom/build/package/htmldomapi", "htmlDomApi")
+  @JSImport("snabbdom/build/htmldomapi", "htmlDomApi")
   @js.native
   val htmlDomApi: DOMAPI = js.native
   
@@ -22,9 +25,17 @@ object htmldomapiMod {
     
     def createComment(text: String): Comment = js.native
     
-    def createElement(tagName: js.Any): HTMLElement = js.native
+    /**
+      * @experimental
+      * @todo Make it required when the fragment is considered stable.
+      */
+    var createDocumentFragment: js.UndefOr[js.Function0[SnabbdomFragment]] = js.native
+    
+    def createElement(tagName: Any): HTMLElement = js.native
+    def createElement(tagName: Any, options: ElementCreationOptions): HTMLElement = js.native
     
     def createElementNS(namespaceURI: String, qualifiedName: String): Element = js.native
+    def createElementNS(namespaceURI: String, qualifiedName: String, options: ElementCreationOptions): Element = js.native
     
     def createTextNode(text: String): Text = js.native
     
@@ -34,6 +45,12 @@ object htmldomapiMod {
     def insertBefore(parentNode: Node, newNode: Node, referenceNode: Node): Unit = js.native
     
     def isComment(node: Node): /* is std.Comment */ Boolean = js.native
+    
+    /**
+      * @experimental
+      * @todo Make it required when the fragment is considered stable.
+      */
+    var isDocumentFragment: js.UndefOr[js.Function1[/* node */ Node, /* is std.DocumentFragment */ Boolean]] = js.native
     
     def isElement(node: Node): /* is std.Element */ Boolean = js.native
     
@@ -49,5 +66,17 @@ object htmldomapiMod {
     def setTextContent(node: Node, text: String): Unit = js.native
     
     def tagName(elm: Element): String = js.native
+  }
+  
+  @js.native
+  trait SnabbdomFragment
+    extends StObject
+       with DocumentFragment {
+    
+    var firstChildNode: ChildNode | Null = js.native
+    
+    var lastChildNode: ChildNode | Null = js.native
+    
+    var parent: Node | Null = js.native
   }
 }

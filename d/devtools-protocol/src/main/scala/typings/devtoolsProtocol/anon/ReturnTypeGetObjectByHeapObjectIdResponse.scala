@@ -23,7 +23,7 @@ object ReturnTypeGetObjectByHeapObjectIdResponse {
     
     inline def setParamsType(value: js.Array[GetObjectByHeapObjectIdRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: GetObjectByHeapObjectIdRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetObjectByHeapObjectIdRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: GetObjectByHeapObjectIdResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

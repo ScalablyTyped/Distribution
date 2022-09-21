@@ -1,30 +1,42 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BatchGetDocumentsResponse extends js.Object {
+trait BatchGetDocumentsResponse extends StObject {
+  
   var found: js.UndefOr[Document] = js.undefined
+  
   var missing: js.UndefOr[String] = js.undefined
+  
   var readTime: js.UndefOr[String] = js.undefined
+  
   var transaction: js.UndefOr[String] = js.undefined
 }
-
 object BatchGetDocumentsResponse {
-  @scala.inline
-  def apply(
-    found: Document = null,
-    missing: String = null,
-    readTime: String = null,
-    transaction: String = null
-  ): BatchGetDocumentsResponse = {
+  
+  inline def apply(): BatchGetDocumentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (found != null) __obj.updateDynamic("found")(found.asInstanceOf[js.Any])
-    if (missing != null) __obj.updateDynamic("missing")(missing.asInstanceOf[js.Any])
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetDocumentsResponse]
   }
+  
+  extension [Self <: BatchGetDocumentsResponse](x: Self) {
+    
+    inline def setFound(value: Document): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
+    
+    inline def setFoundUndefined: Self = StObject.set(x, "found", js.undefined)
+    
+    inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+    
+    inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+    
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    
+    inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+  }
 }
-

@@ -8,10 +8,10 @@ object textFieldMod {
   
   @JSImport("material-ui/TextField", JSImport.Default)
   @js.native
-  class default () extends TextField
+  open class default () extends TextField
   
   @JSImport("material-ui/TextField", "TextField")
   @js.native
-  class TextField ()
+  open class TextField ()
     extends typings.materialUi.MaterialUI.TextField
 }

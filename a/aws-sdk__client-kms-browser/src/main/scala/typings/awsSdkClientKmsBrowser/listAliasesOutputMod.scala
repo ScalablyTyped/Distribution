@@ -8,5 +8,5 @@ object listAliasesOutputMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/ListAliasesOutput", "ListAliasesOutput")
   @js.native
-  val ListAliasesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListAliasesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

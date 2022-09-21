@@ -13,7 +13,7 @@ trait NodeProps extends StObject {
   
   var blendFunc: js.UndefOr[Dst] = js.undefined
   
-  var children: js.UndefOr[js.Any] = js.undefined
+  var children: js.UndefOr[Any] = js.undefined
   
   var clear: js.UndefOr[Color] = js.undefined
   
@@ -27,9 +27,9 @@ trait NodeProps extends StObject {
   
   var sync: js.UndefOr[Boolean] = js.undefined
   
-  var uniforms: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var uniforms: js.UndefOr[StringDictionary[Any]] = js.undefined
   
-  var uniformsOptions: js.UndefOr[js.Any] = js.undefined
+  var uniformsOptions: js.UndefOr[Any] = js.undefined
   
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -50,7 +50,7 @@ object NodeProps {
     
     inline def setBlendFuncUndefined: Self = StObject.set(x, "blendFunc", js.undefined)
     
-    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -66,7 +66,7 @@ object NodeProps {
     
     inline def setIgnoreUnusedUniformsUndefined: Self = StObject.set(x, "ignoreUnusedUniforms", js.undefined)
     
-    inline def setIgnoreUnusedUniformsVarargs(value: String*): Self = StObject.set(x, "ignoreUnusedUniforms", js.Array(value :_*))
+    inline def setIgnoreUnusedUniformsVarargs(value: String*): Self = StObject.set(x, "ignoreUnusedUniforms", js.Array(value*))
     
     inline def setOnDraw(value: () => Unit): Self = StObject.set(x, "onDraw", js.Any.fromFunction0(value))
     
@@ -78,9 +78,9 @@ object NodeProps {
     
     inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     
-    inline def setUniforms(value: StringDictionary[js.Any]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+    inline def setUniforms(value: StringDictionary[Any]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
     
-    inline def setUniformsOptions(value: js.Any): Self = StObject.set(x, "uniformsOptions", value.asInstanceOf[js.Any])
+    inline def setUniformsOptions(value: Any): Self = StObject.set(x, "uniformsOptions", value.asInstanceOf[js.Any])
     
     inline def setUniformsOptionsUndefined: Self = StObject.set(x, "uniformsOptions", js.undefined)
     

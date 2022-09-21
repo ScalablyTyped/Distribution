@@ -18,8 +18,11 @@ trait Grid
   def addRow(): Unit = js.native
   
   def autoFitColumn(column: String): Unit = js.native
-  def autoFitColumn(column: js.Any): Unit = js.native
+  def autoFitColumn(column: Any): Unit = js.native
   def autoFitColumn(column: Double): Unit = js.native
+  
+  def autoFitColumns(): Unit = js.native
+  def autoFitColumns(columns: js.Array[GridColumn]): Unit = js.native
   
   def cancelChanges(): Unit = js.native
   
@@ -61,6 +64,8 @@ trait Grid
   
   def editRow(row: JQuery): Unit = js.native
   
+  var editable: js.UndefOr[Editable] = js.native
+  
   def expandGroup(row: String): Unit = js.native
   def expandGroup(row: JQuery): Unit = js.native
   def expandGroup(row: Element): Unit = js.native
@@ -74,10 +79,10 @@ trait Grid
   def getOptions(): GridOptions = js.native
   
   def hideColumn(column: String): Unit = js.native
-  def hideColumn(column: js.Any): Unit = js.native
+  def hideColumn(column: Any): Unit = js.native
   def hideColumn(column: Double): Unit = js.native
   
-  def items(): js.Any = js.native
+  def items(): Any = js.native
   
   def lockColumn(column: String): Unit = js.native
   def lockColumn(column: Double): Unit = js.native
@@ -99,31 +104,31 @@ trait Grid
   def removeRow(row: JQuery): Unit = js.native
   def removeRow(row: Element): Unit = js.native
   
-  def reorderColumn(destIndex: Double, column: js.Any): Unit = js.native
+  def reorderColumn(destIndex: Double, column: Any): Unit = js.native
   
-  def resizeColumn(column: js.Any, value: Double): Unit = js.native
+  def resizeColumn(column: Any, value: Double): Unit = js.native
   
   def saveAsExcel(): Unit = js.native
   
-  def saveAsPDF(): JQueryPromise[js.Any] = js.native
+  def saveAsPDF(): JQueryPromise[Any] = js.native
   
   def saveChanges(): Unit = js.native
   
-  def saveRow(): Unit = js.native
+  def saveRow(): Any = js.native
   
   def select(): JQuery = js.native
   def select(rows: String): Unit = js.native
   def select(rows: JQuery): Unit = js.native
   def select(rows: Element): Unit = js.native
   
-  def selectedKeyNames(): js.Any = js.native
+  def selectedKeyNames(): Any = js.native
   
   def setDataSource(dataSource: DataSource): Unit = js.native
   
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   
   def showColumn(column: String): Unit = js.native
-  def showColumn(column: js.Any): Unit = js.native
+  def showColumn(column: Any): Unit = js.native
   def showColumn(column: Double): Unit = js.native
   
   def stickColumn(column: String): Unit = js.native

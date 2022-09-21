@@ -10,10 +10,10 @@ Triggers 'focusexit' event when keyboard focus has completely left the element. 
 | ------------------ | :-------------: |
 | Full name          | jquery-focus-exit |
 | Keywords           | jquery-plugin, ecosystem:jquery, ebay, accessibility, a11y |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 4311 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 652.6666666666666 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/makeup-jquery/jquery-focus-exit#readme)

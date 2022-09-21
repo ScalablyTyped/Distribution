@@ -1,24 +1,23 @@
 package typings.babylonjs.global.BABYLON
 
-import typings.babylonjs.anon.Width
-import typings.babylonjs.anon.Y
+import typings.babylonjs.BABYLON.Nullable
+import typings.babylonjs.anon.Height
+import typings.babylonjs.anon.X
 import typings.std.AudioNode
-import typings.std.Float32Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Analyser")
 @js.native
-class Analyser protected ()
+/**
+  * Creates a new analyser
+  * @param scene defines hosting scene
+  */
+open class Analyser ()
   extends StObject
      with typings.babylonjs.BABYLON.Analyser {
-  /**
-    * Creates a new analyser
-    * @param scene defines hosting scene
-    */
-  def this(scene: typings.babylonjs.BABYLON.Scene) = this()
+  def this(scene: Nullable[typings.babylonjs.BABYLON.Scene]) = this()
   
   /**
     * Gets or sets the bar graph amplitude
@@ -32,14 +31,14 @@ class Analyser protected ()
     * @ignorenaming
     */
   /* CompleteClass */
-  var DEBUGCANVASPOS: Y = js.native
+  var DEBUGCANVASPOS: X = js.native
   
   /**
     * Gets or sets the debug canvas size
     * @ignorenaming
     */
   /* CompleteClass */
-  var DEBUGCANVASSIZE: Width = js.native
+  var DEBUGCANVASSIZE: Height = js.native
   
   /**
     * Gets or sets the FFT table size
@@ -56,31 +55,31 @@ class Analyser protected ()
   var SMOOTHING: Double = js.native
   
   /* private */ /* CompleteClass */
-  var _audioEngine: js.Any = js.native
+  var _audioEngine: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _byteFreqs: js.Any = js.native
+  var _byteFreqs: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _byteTime: js.Any = js.native
+  var _byteTime: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _debugCanvas: js.Any = js.native
+  var _debugCanvas: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _debugCanvasContext: js.Any = js.native
+  var _debugCanvasContext: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _floatFreqs: js.Any = js.native
+  var _floatFreqs: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _registerFunc: js.Any = js.native
+  var _registerFunc: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _scene: js.Any = js.native
+  var _scene: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _webAudioAnalyser: js.Any = js.native
+  var _webAudioAnalyser: Any = js.native
   
   /**
     * Connects two audio nodes
@@ -108,7 +107,7 @@ class Analyser protected ()
     * @returns a Uint8Array
     */
   /* CompleteClass */
-  override def getByteFrequencyData(): Uint8Array = js.native
+  override def getByteFrequencyData(): js.typedarray.Uint8Array = js.native
   
   /**
     * Gets the current waveform as a byte array
@@ -116,7 +115,7 @@ class Analyser protected ()
     * @returns a Uint8Array
     */
   /* CompleteClass */
-  override def getByteTimeDomainData(): Uint8Array = js.native
+  override def getByteTimeDomainData(): js.typedarray.Uint8Array = js.native
   
   /**
     * Gets the current frequency data as a float array
@@ -124,7 +123,7 @@ class Analyser protected ()
     * @returns a Float32Array
     */
   /* CompleteClass */
-  override def getFloatFrequencyData(): Float32Array = js.native
+  override def getFloatFrequencyData(): js.typedarray.Float32Array = js.native
   
   /**
     * Get the number of data values you will have to play with for the visualization

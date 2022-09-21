@@ -6,11 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait FinalTranscript extends StObject {
+  trait BrowserSupportsSpeechRecognition extends StObject {
+    
+    var browserSupportsSpeechRecognition: Boolean
     
     var finalTranscript: String
     
     var interimTranscript: String
+    
+    var isMicrophoneAvailable: Boolean
     
     var listening: Boolean
     
@@ -18,24 +22,30 @@ object anon {
     
     var transcript: String
   }
-  object FinalTranscript {
+  object BrowserSupportsSpeechRecognition {
     
     inline def apply(
+      browserSupportsSpeechRecognition: Boolean,
       finalTranscript: String,
       interimTranscript: String,
+      isMicrophoneAvailable: Boolean,
       listening: Boolean,
       resetTranscript: () => Unit,
       transcript: String
-    ): FinalTranscript = {
-      val __obj = js.Dynamic.literal(finalTranscript = finalTranscript.asInstanceOf[js.Any], interimTranscript = interimTranscript.asInstanceOf[js.Any], listening = listening.asInstanceOf[js.Any], resetTranscript = js.Any.fromFunction0(resetTranscript), transcript = transcript.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FinalTranscript]
+    ): BrowserSupportsSpeechRecognition = {
+      val __obj = js.Dynamic.literal(browserSupportsSpeechRecognition = browserSupportsSpeechRecognition.asInstanceOf[js.Any], finalTranscript = finalTranscript.asInstanceOf[js.Any], interimTranscript = interimTranscript.asInstanceOf[js.Any], isMicrophoneAvailable = isMicrophoneAvailable.asInstanceOf[js.Any], listening = listening.asInstanceOf[js.Any], resetTranscript = js.Any.fromFunction0(resetTranscript), transcript = transcript.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BrowserSupportsSpeechRecognition]
     }
     
-    extension [Self <: FinalTranscript](x: Self) {
+    extension [Self <: BrowserSupportsSpeechRecognition](x: Self) {
+      
+      inline def setBrowserSupportsSpeechRecognition(value: Boolean): Self = StObject.set(x, "browserSupportsSpeechRecognition", value.asInstanceOf[js.Any])
       
       inline def setFinalTranscript(value: String): Self = StObject.set(x, "finalTranscript", value.asInstanceOf[js.Any])
       
       inline def setInterimTranscript(value: String): Self = StObject.set(x, "interimTranscript", value.asInstanceOf[js.Any])
+      
+      inline def setIsMicrophoneAvailable(value: Boolean): Self = StObject.set(x, "isMicrophoneAvailable", value.asInstanceOf[js.Any])
       
       inline def setListening(value: Boolean): Self = StObject.set(x, "listening", value.asInstanceOf[js.Any])
       

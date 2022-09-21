@@ -1,35 +1,48 @@
 package typings.reactNativeElements.anon
 
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
+import org.scalablytyped.runtime.Instantiable1
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.TextProperties
+import typings.reactNative.mod.TextProps
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.mod.RecursivePartial
+import typings.reactNativeElements.reactNativeElementsStrings.Component
 import typings.reactNativeElements.reactNativeElementsStrings.error
 import typings.reactNativeElements.reactNativeElementsStrings.primary
 import typings.reactNativeElements.reactNativeElementsStrings.success
 import typings.reactNativeElements.reactNativeElementsStrings.warning
+import typings.reactNativeElements.themeProviderMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.BadgeProps>> */
+/* Inlined react-native-elements.react-native-elements/dist/config/ThemeProvider.RecursivePartial<std.Partial<react-native-elements.react-native-elements/dist/badge/Badge.BadgeProps>> */
 trait RecursivePartialPartialBa extends StObject {
   
-  var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.undefined
+  var Component: js.UndefOr[
+    RecursivePartial[
+      js.UndefOr[
+        TypeofComponent & (Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+          typings.react.mod.Component[
+            typings.reactNativeElements.reactNativeElementsStrings.Component, 
+            js.Object, 
+            js.Object
+          ]
+        ])
+      ]
+    ]
+  ] = js.undefined
   
   var badgeStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
   var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
+  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* repeated */ Any, Any]]]] = js.undefined
   
   var status: js.UndefOr[RecursivePartial[js.UndefOr[primary | success | warning | error]]] = js.undefined
   
-  var textProps: js.UndefOr[RecursivePartial[js.UndefOr[TextProperties]]] = js.undefined
+  var textProps: js.UndefOr[RecursivePartial[js.UndefOr[TextProps]]] = js.undefined
   
   var textStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
@@ -48,7 +61,16 @@ object RecursivePartialPartialBa {
     
     inline def setBadgeStyleUndefined: Self = StObject.set(x, "badgeStyle", js.undefined)
     
-    inline def setComponent(value: RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(
+      value: RecursivePartial[
+          js.UndefOr[
+            TypeofComponent & (Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+              typings.react.mod.Component[Component, js.Object, js.Object]
+            ])
+          ]
+        ]
+    ): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
@@ -56,7 +78,7 @@ object RecursivePartialPartialBa {
     
     inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
-    inline def setOnPress(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
+    inline def setOnPress(value: RecursivePartial[js.UndefOr[js.Function1[/* repeated */ Any, Any]]]): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
     
     inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
@@ -64,7 +86,7 @@ object RecursivePartialPartialBa {
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setTextProps(value: RecursivePartial[js.UndefOr[TextProperties]]): Self = StObject.set(x, "textProps", value.asInstanceOf[js.Any])
+    inline def setTextProps(value: RecursivePartial[js.UndefOr[TextProps]]): Self = StObject.set(x, "textProps", value.asInstanceOf[js.Any])
     
     inline def setTextPropsUndefined: Self = StObject.set(x, "textProps", js.undefined)
     

@@ -33,6 +33,6 @@ object DescribeMaintenanceWindowTasksResult {
     
     inline def setTasksUndefined: Self = StObject.set(x, "Tasks", js.undefined)
     
-    inline def setTasksVarargs(value: MaintenanceWindowTask*): Self = StObject.set(x, "Tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: MaintenanceWindowTask*): Self = StObject.set(x, "Tasks", js.Array(value*))
   }
 }

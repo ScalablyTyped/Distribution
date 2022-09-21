@@ -8,7 +8,7 @@ object driveMod {
   
   @JSImport("node-os-utils/lib/drive", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Drive {
     

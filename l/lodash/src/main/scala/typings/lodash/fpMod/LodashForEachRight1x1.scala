@@ -12,4 +12,6 @@ trait LodashForEachRight1x1[T] extends StObject {
   def apply(collection: List[T]): List[T] = js.native
   def apply[T1 /* <: js.Object */](): js.UndefOr[T1 | Null] = js.native
   def apply[T1 /* <: js.Object */](collection: T1): js.UndefOr[T1 | Null] = js.native
+  def apply[TArray /* <: js.UndefOr[js.Array[T] | Null] */](collection: Unit & TArray): TArray = js.native
+  def apply[TArray /* <: js.UndefOr[js.Array[T] | Null] */](collection: Null & TArray): TArray = js.native
 }

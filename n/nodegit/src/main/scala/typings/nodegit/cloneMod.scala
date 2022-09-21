@@ -14,7 +14,7 @@ object cloneMod {
   
   @JSImport("nodegit/clone", "Clone")
   @js.native
-  class Clone () extends StObject
+  open class Clone () extends StObject
   /* static members */
   object Clone {
     

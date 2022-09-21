@@ -10,10 +10,10 @@ object dashboardMod {
   
   @JSImport("material-ui/svg-icons/action/dashboard", JSImport.Default)
   @js.native
-  class default () extends ActionDashboard
+  open class default () extends ActionDashboard
   
   @JSImport("material-ui/svg-icons/action/dashboard", "ActionDashboard")
   @js.native
-  class ActionDashboard ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionDashboard ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

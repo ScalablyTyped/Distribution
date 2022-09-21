@@ -28,7 +28,7 @@ object PlanEnvironment {
     
     inline def setMask(value: js.Array[MaskHint]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    inline def setMaskVarargs(value: MaskHint*): Self = StObject.set(x, "mask", js.Array(value :_*))
+    inline def setMaskVarargs(value: MaskHint*): Self = StObject.set(x, "mask", js.Array(value*))
     
     inline def setOptions(value: StringDictionary[JobOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

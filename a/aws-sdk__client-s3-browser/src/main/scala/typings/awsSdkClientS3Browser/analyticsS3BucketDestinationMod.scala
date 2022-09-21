@@ -8,5 +8,5 @@ object analyticsS3BucketDestinationMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_AnalyticsS3BucketDestination", "_AnalyticsS3BucketDestination")
   @js.native
-  val AnalyticsS3BucketDestination: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val AnalyticsS3BucketDestination: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

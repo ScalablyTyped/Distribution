@@ -10,6 +10,6 @@ object getValueAndUnitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(value: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def default(value: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(value: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def default(value: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

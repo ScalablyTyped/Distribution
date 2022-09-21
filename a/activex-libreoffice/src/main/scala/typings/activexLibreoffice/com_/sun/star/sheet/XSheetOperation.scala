@@ -34,7 +34,7 @@ object XSheetOperation {
     acquire: () => Unit,
     clearContents: Double => Unit,
     computeFunction: GeneralFunction => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSheetOperation = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), clearContents = js.Any.fromFunction1(clearContents), computeFunction = js.Any.fromFunction1(computeFunction), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

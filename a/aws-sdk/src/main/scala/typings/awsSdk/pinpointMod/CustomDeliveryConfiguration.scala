@@ -31,6 +31,6 @@ object CustomDeliveryConfiguration {
     
     inline def setEndpointTypesUndefined: Self = StObject.set(x, "EndpointTypes", js.undefined)
     
-    inline def setEndpointTypesVarargs(value: EndpointTypesElement*): Self = StObject.set(x, "EndpointTypes", js.Array(value :_*))
+    inline def setEndpointTypesVarargs(value: EndpointTypesElement*): Self = StObject.set(x, "EndpointTypes", js.Array(value*))
   }
 }

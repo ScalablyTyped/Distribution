@@ -5,6 +5,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.Validator
+import typings.std.Element
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLLIElement
@@ -27,7 +28,7 @@ trait WeakValidationMapSelectPr extends StObject {
   
   var emptyAriaLabel: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var formMessageProps: js.UndefOr[Validator[js.UndefOr[Null | (Record[String, js.Any])]]] = js.undefined
+  var formMessageProps: js.UndefOr[Validator[js.UndefOr[Null | (Record[String, Any])]]] = js.undefined
   
   var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
@@ -42,7 +43,9 @@ trait WeakValidationMapSelectPr extends StObject {
   var listItemTextClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
   var onBlur: js.UndefOr[
-    Validator[js.UndefOr[(js.Function1[/* event */ FocusEvent[HTMLDivElement], Unit]) | Null]]
+    Validator[
+      js.UndefOr[(js.Function1[/* event */ FocusEvent[HTMLDivElement, Element], Unit]) | Null]
+    ]
   ] = js.undefined
   
   var onClick: js.UndefOr[
@@ -83,7 +86,7 @@ trait WeakValidationMapSelectPr extends StObject {
   
   var validationState: js.UndefOr[Validator[js.UndefOr[Null | State]]] = js.undefined
   
-  var wrapperProps: js.UndefOr[Validator[js.UndefOr[Null | (Record[String, js.Any])]]] = js.undefined
+  var wrapperProps: js.UndefOr[Validator[js.UndefOr[Null | (Record[String, Any])]]] = js.undefined
 }
 object WeakValidationMapSelectPr {
   
@@ -114,7 +117,7 @@ object WeakValidationMapSelectPr {
     
     inline def setEmptyAriaLabelUndefined: Self = StObject.set(x, "emptyAriaLabel", js.undefined)
     
-    inline def setFormMessageProps(value: Validator[js.UndefOr[Null | (Record[String, js.Any])]]): Self = StObject.set(x, "formMessageProps", value.asInstanceOf[js.Any])
+    inline def setFormMessageProps(value: Validator[js.UndefOr[Null | (Record[String, Any])]]): Self = StObject.set(x, "formMessageProps", value.asInstanceOf[js.Any])
     
     inline def setFormMessagePropsUndefined: Self = StObject.set(x, "formMessageProps", js.undefined)
     
@@ -142,7 +145,11 @@ object WeakValidationMapSelectPr {
     
     inline def setListItemTextClassNameUndefined: Self = StObject.set(x, "listItemTextClassName", js.undefined)
     
-    inline def setOnBlur(value: Validator[js.UndefOr[(js.Function1[/* event */ FocusEvent[HTMLDivElement], Unit]) | Null]]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
+    inline def setOnBlur(
+      value: Validator[
+          js.UndefOr[(js.Function1[/* event */ FocusEvent[HTMLDivElement, Element], Unit]) | Null]
+        ]
+    ): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
@@ -206,7 +213,7 @@ object WeakValidationMapSelectPr {
     
     inline def setValidationStateUndefined: Self = StObject.set(x, "validationState", js.undefined)
     
-    inline def setWrapperProps(value: Validator[js.UndefOr[Null | (Record[String, js.Any])]]): Self = StObject.set(x, "wrapperProps", value.asInstanceOf[js.Any])
+    inline def setWrapperProps(value: Validator[js.UndefOr[Null | (Record[String, Any])]]): Self = StObject.set(x, "wrapperProps", value.asInstanceOf[js.Any])
     
     inline def setWrapperPropsUndefined: Self = StObject.set(x, "wrapperProps", js.undefined)
   }

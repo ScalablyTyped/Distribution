@@ -18,30 +18,28 @@ object confirmDialogMod {
     extends StObject
        with ModalFuncProps {
     
-    var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
+    def close(args: Any*): Unit
     
-    def close(args: js.Any*): Unit
+    var iconPrefixCls: js.UndefOr[String] = js.undefined
     
-    var rootPrefixCls: js.UndefOr[String] = js.undefined
+    var rootPrefixCls: String
   }
   object ConfirmDialogProps {
     
-    inline def apply(close: /* repeated */ js.Any => Unit): ConfirmDialogProps = {
-      val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close))
+    inline def apply(close: /* repeated */ Any => Unit, rootPrefixCls: String): ConfirmDialogProps = {
+      val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close), rootPrefixCls = rootPrefixCls.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfirmDialogProps]
     }
     
     extension [Self <: ConfirmDialogProps](x: Self) {
       
-      inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
+      inline def setClose(value: /* repeated */ Any => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
-      inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
+      inline def setIconPrefixCls(value: String): Self = StObject.set(x, "iconPrefixCls", value.asInstanceOf[js.Any])
       
-      inline def setClose(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setIconPrefixClsUndefined: Self = StObject.set(x, "iconPrefixCls", js.undefined)
       
       inline def setRootPrefixCls(value: String): Self = StObject.set(x, "rootPrefixCls", value.asInstanceOf[js.Any])
-      
-      inline def setRootPrefixClsUndefined: Self = StObject.set(x, "rootPrefixCls", js.undefined)
     }
   }
 }

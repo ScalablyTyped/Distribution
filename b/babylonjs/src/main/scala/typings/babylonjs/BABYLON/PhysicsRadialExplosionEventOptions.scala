@@ -13,7 +13,7 @@ trait PhysicsRadialExplosionEventOptions extends StObject {
   def affectedImpostorsCallback(affectedImpostorsWithData: js.Array[PhysicsAffectedImpostorWithData]): Unit
   
   /**
-    * The strenght of the force in correspondence to the distance of the affected object
+    * The strength of the force in correspondence to the distance of the affected object
     */
   var falloff: PhysicsRadialImpulseFalloff
   
@@ -28,7 +28,7 @@ trait PhysicsRadialExplosionEventOptions extends StObject {
   var sphere: DiameterSegments
   
   /**
-    * The strenth of the explosion.
+    * The strength of the explosion.
     */
   var strength: Double
 }

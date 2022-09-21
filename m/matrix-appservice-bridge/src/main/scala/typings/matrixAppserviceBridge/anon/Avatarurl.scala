@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Avatarurl extends StObject {
   
-  var avatar_url: String
+  var avatar_url: js.UndefOr[String] = js.undefined
   
-  var display_name: String
+  var display_name: js.UndefOr[String] = js.undefined
 }
 object Avatarurl {
   
-  inline def apply(avatar_url: String, display_name: String): Avatarurl = {
-    val __obj = js.Dynamic.literal(avatar_url = avatar_url.asInstanceOf[js.Any], display_name = display_name.asInstanceOf[js.Any])
+  inline def apply(): Avatarurl = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Avatarurl]
   }
   
@@ -21,6 +21,10 @@ object Avatarurl {
     
     inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
     
+    inline def setAvatar_urlUndefined: Self = StObject.set(x, "avatar_url", js.undefined)
+    
     inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
+    
+    inline def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
   }
 }

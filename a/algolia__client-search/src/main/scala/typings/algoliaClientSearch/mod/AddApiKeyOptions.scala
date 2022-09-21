@@ -59,7 +59,7 @@ object AddApiKeyOptions {
     
     inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
-    inline def setIndexesVarargs(value: String*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: String*): Self = StObject.set(x, "indexes", js.Array(value*))
     
     inline def setMaxHitsPerQuery(value: Double): Self = StObject.set(x, "maxHitsPerQuery", value.asInstanceOf[js.Any])
     
@@ -77,7 +77,7 @@ object AddApiKeyOptions {
     
     inline def setReferersUndefined: Self = StObject.set(x, "referers", js.undefined)
     
-    inline def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value :_*))
+    inline def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value*))
     
     inline def setValidity(value: Double): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
     

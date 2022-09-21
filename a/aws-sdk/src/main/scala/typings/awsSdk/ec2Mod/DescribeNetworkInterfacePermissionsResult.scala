@@ -29,7 +29,7 @@ object DescribeNetworkInterfacePermissionsResult {
     
     inline def setNetworkInterfacePermissionsUndefined: Self = StObject.set(x, "NetworkInterfacePermissions", js.undefined)
     
-    inline def setNetworkInterfacePermissionsVarargs(value: NetworkInterfacePermission*): Self = StObject.set(x, "NetworkInterfacePermissions", js.Array(value :_*))
+    inline def setNetworkInterfacePermissionsVarargs(value: NetworkInterfacePermission*): Self = StObject.set(x, "NetworkInterfacePermissions", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

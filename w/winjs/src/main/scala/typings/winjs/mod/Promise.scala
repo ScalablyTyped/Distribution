@@ -18,22 +18,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param init The function that is called during construction of the Promise that contains the implementation of the operation that the Promise will represent. This can be synchronous or asynchronous, depending on the nature of the operation. Note that placing code within this function does not automatically run it asynchronously; that must be done explicitly with other asynchronous APIs such as setImmediate, setTimeout, requestAnimationFrame, and the Windows Runtime asynchronous APIs. The init function is given three arguments: completeDispatch, errorDispatch, progressDispatch. This parameter is optional.
   * @param onCancel The function to call if a consumer of this promise wants to cancel its undone work. Promises are not required to support cancellation.
   **/
-class Promise[T] ()
+open class Promise[T] ()
   extends StObject
      with typings.winjs.WinJS.Promise[T] {
-  def this(init: js.Function3[
-        /* completeDispatch */ js.Any, 
-        /* errorDispatch */ js.Any, 
-        /* progressDispatch */ js.Any, 
-        Unit
-      ]) = this()
+  def this(init: js.Function3[/* completeDispatch */ Any, /* errorDispatch */ Any, /* progressDispatch */ Any, Unit]) = this()
   def this(
-    init: js.Function3[
-        /* completeDispatch */ js.Any, 
-        /* errorDispatch */ js.Any, 
-        /* progressDispatch */ js.Any, 
-        Unit
-      ],
+    init: js.Function3[/* completeDispatch */ Any, /* errorDispatch */ Any, /* progressDispatch */ Any, Unit],
     onCancel: js.Function
   ) = this()
   def this(init: Unit, onCancel: js.Function) = this()
@@ -56,15 +46,15 @@ object Promise {
   inline def addEventListener(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addEventListener(`type`: String, listener: js.Function, capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  /* static member */
-  inline def any(value: js.Any): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
   /**
     * Returns a promise that is fulfilled when one of the input promises has been fulfilled.
     * @param value An array that contains Promise objects or objects whose property values include Promise objects.
     * @returns A promise that on fulfillment yields the value of the input (complete or error).
     **/
   /* static member */
-  inline def any(value: js.Array[IPromise[js.Any]]): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
+  inline def any(value: js.Array[IPromise[Any]]): IPromise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[Any]]
+  /* static member */
+  inline def any(value: Any): IPromise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(value.asInstanceOf[js.Any]).asInstanceOf[IPromise[Any]]
   
   /**
     * Returns a promise. If the object is already a Promise it is returned; otherwise the object is wrapped in a Promise. You can use this function when you need to treat a non-Promise object like a Promise, for example when you are calling a function that expects a promise, but already have the value needed rather than needing to get it asynchronously.
@@ -81,8 +71,8 @@ object Promise {
   /* static member */
   @JSImport("winjs", "Promise.cancel")
   @js.native
-  def cancel: IPromise[js.Any] = js.native
-  inline def cancel_=(x: IPromise[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancel")(x.asInstanceOf[js.Any])
+  def cancel: IPromise[Any] = js.native
+  inline def cancel_=(x: IPromise[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancel")(x.asInstanceOf[js.Any])
   
   /**
     * Raises an event of the specified type and properties.
@@ -91,7 +81,7 @@ object Promise {
     * @returns true if preventDefault was called on the event; otherwise, false.
     **/
   /* static member */
-  inline def dispatchEvent(`type`: String, details: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(`type`.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def dispatchEvent(`type`: String, details: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(`type`.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Determines whether a value fulfills the promise contract.
@@ -99,7 +89,7 @@ object Promise {
     * @returns true if the object conforms to the promise contract (has a then function), otherwise false.
     **/
   /* static member */
-  inline def is(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def is(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Creates a Promise that is fulfilled when all the values are fulfilled.
@@ -107,7 +97,7 @@ object Promise {
     * @returns A Promise whose value is an object with the same field names as those of the object in the values parameter, where each field value is the fulfilled value of a promise.
     **/
   /* static member */
-  inline def join(values: js.Any): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
+  inline def join(values: Any): IPromise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any]).asInstanceOf[IPromise[Any]]
   
   //#endregion Constructors
   //#region Events
@@ -116,7 +106,7 @@ object Promise {
     * @param eventInfo An object that contains information about the event.
     **/
   /* static member */
-  inline def onerror(eventInfo: CustomEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onerror")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onerror(eventInfo: CustomEvent[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onerror")(eventInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Removes an event listener from the control.
@@ -148,38 +138,38 @@ object Promise {
     * @returns The promise whose value is the result of executing the onComplete function.
     **/
   /* static member */
-  inline def `then`(promise: IPromise[js.Any]): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
-  inline def `then`(promise: IPromise[js.Any], onComplete: js.Function1[/* value */ js.Any, js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  inline def `then`(promise: IPromise[Any]): IPromise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any]).asInstanceOf[IPromise[Any]]
+  inline def `then`(promise: IPromise[Any], onComplete: js.Function1[/* value */ Any, Any]): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
   inline def `then`(
-    promise: IPromise[js.Any],
-    onComplete: js.Function1[/* value */ js.Any, js.Any],
-    onError: js.Function1[/* error */ js.Any, js.Any]
-  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+    promise: IPromise[Any],
+    onComplete: js.Function1[/* value */ Any, Any],
+    onError: js.Function1[/* error */ Any, Any]
+  ): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
   inline def `then`(
-    promise: IPromise[js.Any],
-    onComplete: js.Function1[/* value */ js.Any, js.Any],
-    onError: js.Function1[/* error */ js.Any, js.Any],
-    onProgress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+    promise: IPromise[Any],
+    onComplete: js.Function1[/* value */ Any, Any],
+    onError: js.Function1[/* error */ Any, Any],
+    onProgress: js.Function1[/* progress */ Any, Unit]
+  ): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
   inline def `then`(
-    promise: IPromise[js.Any],
-    onComplete: js.Function1[/* value */ js.Any, js.Any],
+    promise: IPromise[Any],
+    onComplete: js.Function1[/* value */ Any, Any],
     onError: Unit,
-    onProgress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  inline def `then`(promise: IPromise[js.Any], onComplete: Unit, onError: js.Function1[/* error */ js.Any, js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+    onProgress: js.Function1[/* progress */ Any, Unit]
+  ): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
+  inline def `then`(promise: IPromise[Any], onComplete: Unit, onError: js.Function1[/* error */ Any, Any]): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
   inline def `then`(
-    promise: IPromise[js.Any],
+    promise: IPromise[Any],
     onComplete: Unit,
-    onError: js.Function1[/* error */ js.Any, js.Any],
-    onProgress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+    onError: js.Function1[/* error */ Any, Any],
+    onProgress: js.Function1[/* progress */ Any, Unit]
+  ): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
   inline def `then`(
-    promise: IPromise[js.Any],
+    promise: IPromise[Any],
     onComplete: Unit,
     onError: Unit,
-    onProgress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+    onProgress: js.Function1[/* progress */ Any, Unit]
+  ): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(promise.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
   
   /**
     * Performs an operation on all the input promises and returns a promise that has the shape of the input and contains the result of the operation that has been performed on each input.
@@ -190,33 +180,33 @@ object Promise {
     * @returns A Promise that is the result of calling join on the values parameter.
     **/
   /* static member */
-  inline def thenEach(values: js.Any): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
-  inline def thenEach(values: js.Any, complete: js.Function1[/* value */ js.Any, Unit]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  inline def thenEach(values: Any): IPromise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any]).asInstanceOf[IPromise[Any]]
+  inline def thenEach(values: Any, complete: js.Function1[/* value */ Any, Unit]): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
   inline def thenEach(
-    values: js.Any,
-    complete: js.Function1[/* value */ js.Any, Unit],
-    error: js.Function1[/* error */ js.Any, Unit]
-  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+    values: Any,
+    complete: js.Function1[/* value */ Any, Unit],
+    error: js.Function1[/* error */ Any, Unit]
+  ): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
   inline def thenEach(
-    values: js.Any,
-    complete: js.Function1[/* value */ js.Any, Unit],
-    error: js.Function1[/* error */ js.Any, Unit],
-    progress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+    values: Any,
+    complete: js.Function1[/* value */ Any, Unit],
+    error: js.Function1[/* error */ Any, Unit],
+    progress: js.Function1[/* progress */ Any, Unit]
+  ): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
   inline def thenEach(
-    values: js.Any,
-    complete: js.Function1[/* value */ js.Any, Unit],
+    values: Any,
+    complete: js.Function1[/* value */ Any, Unit],
     error: Unit,
-    progress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  inline def thenEach(values: js.Any, complete: Unit, error: js.Function1[/* error */ js.Any, Unit]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+    progress: js.Function1[/* progress */ Any, Unit]
+  ): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
+  inline def thenEach(values: Any, complete: Unit, error: js.Function1[/* error */ Any, Unit]): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
   inline def thenEach(
-    values: js.Any,
+    values: Any,
     complete: Unit,
-    error: js.Function1[/* error */ js.Any, Unit],
-    progress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  inline def thenEach(values: js.Any, complete: Unit, error: Unit, progress: js.Function1[/* progress */ js.Any, Unit]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+    error: js.Function1[/* error */ Any, Unit],
+    progress: js.Function1[/* progress */ Any, Unit]
+  ): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
+  inline def thenEach(values: Any, complete: Unit, error: Unit, progress: js.Function1[/* progress */ Any, Unit]): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenEach")(values.asInstanceOf[js.Any], complete.asInstanceOf[js.Any], error.asInstanceOf[js.Any], progress.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
   
   /**
     * This method has two forms: WinJS.Promise.timeout(timeout) and WinJS.Promise.timeout(timeout, promise). WinJS.Promise.timeout(timeout) creates a promise that is completed asynchronously after the specified timeout, essentially wrapping a call to setTimeout within a promise. WinJS.Promise.timeout(timeout, promise) sets a timeout period for completion of the specified promise, automatically canceling the promise if it is not completed within the timeout period.
@@ -225,10 +215,10 @@ object Promise {
     * @returns If the promise parameter is omitted, returns a promise that will be fulfilled after the timeout period. If the promise paramater is provided, the same promise is returned.
     **/
   /* static member */
-  inline def timeout(): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")().asInstanceOf[IPromise[js.Any]]
-  inline def timeout(timeout: Double): IPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(timeout.asInstanceOf[js.Any]).asInstanceOf[IPromise[js.Any]]
-  inline def timeout(timeout: Double, promise: IPromise[js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(timeout.asInstanceOf[js.Any], promise.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
-  inline def timeout(timeout: Unit, promise: IPromise[js.Any]): IPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(timeout.asInstanceOf[js.Any], promise.asInstanceOf[js.Any])).asInstanceOf[IPromise[js.Any]]
+  inline def timeout(): IPromise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")().asInstanceOf[IPromise[Any]]
+  inline def timeout(timeout: Double): IPromise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(timeout.asInstanceOf[js.Any]).asInstanceOf[IPromise[Any]]
+  inline def timeout(timeout: Double, promise: IPromise[Any]): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(timeout.asInstanceOf[js.Any], promise.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
+  inline def timeout(timeout: Unit, promise: IPromise[Any]): IPromise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(timeout.asInstanceOf[js.Any], promise.asInstanceOf[js.Any])).asInstanceOf[IPromise[Any]]
   
   /**
     * Wraps a non-promise value in a promise. This method is like wrapError, which allows you to produce a Promise in error conditions, in that it allows you to return a Promise in success conditions.

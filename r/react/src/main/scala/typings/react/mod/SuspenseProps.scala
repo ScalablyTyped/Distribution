@@ -1,6 +1,5 @@
 package typings.react.mod
 
-import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait SuspenseProps extends StObject {
   var children: js.UndefOr[ReactNode] = js.undefined
   
   /** A fallback react tree to show when a Suspense child (like React.lazy) suspends */
-  var fallback: NonNullable[ReactNode] | Null
+  var fallback: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * The presence of this prop indicates that the content is computationally expensive to render.
@@ -32,9 +31,7 @@ object SuspenseProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setFallback(value: NonNullable[ReactNode]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
-    
-    inline def setFallbackNull: Self = StObject.set(x, "fallback", null)
+    inline def setFallback(value: ReactNode): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
     inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     

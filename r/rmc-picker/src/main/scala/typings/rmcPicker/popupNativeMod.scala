@@ -10,10 +10,10 @@ object popupNativeMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rmc-picker/lib/Popup.native", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ComponentWillMount {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
   }
   object default {
     
@@ -23,7 +23,7 @@ object popupNativeMod {
     
     @JSImport("rmc-picker/lib/Popup.native", "default.defaultProps")
     @js.native
-    def defaultProps: js.Any = js.native
-    inline def defaultProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Any = js.native
+    inline def defaultProps_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

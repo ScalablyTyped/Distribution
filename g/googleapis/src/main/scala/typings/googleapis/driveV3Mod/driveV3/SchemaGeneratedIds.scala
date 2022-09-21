@@ -4,26 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A list of generated file IDs which can be provided in create requests.
-  */
 trait SchemaGeneratedIds extends StObject {
   
   /**
     * The IDs generated for the requesting user in the specified space.
     */
-  var ids: js.UndefOr[js.Array[String]] = js.undefined
+  var ids: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;drive#generatedIds&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "drive#generatedIds".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The type of file that can be created with these IDs.
     */
-  var space: js.UndefOr[String] = js.undefined
+  var space: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGeneratedIds {
   
@@ -36,15 +32,21 @@ object SchemaGeneratedIds {
     
     inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
+    inline def setIdsNull: Self = StObject.set(x, "ids", null)
+    
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    
+    inline def setSpaceNull: Self = StObject.set(x, "space", null)
     
     inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
   }

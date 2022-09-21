@@ -33,7 +33,7 @@ object ListClusterOperationsResponse {
     
     inline def setClusterOperationInfoListUndefined: Self = StObject.set(x, "ClusterOperationInfoList", js.undefined)
     
-    inline def setClusterOperationInfoListVarargs(value: ClusterOperationInfo*): Self = StObject.set(x, "ClusterOperationInfoList", js.Array(value :_*))
+    inline def setClusterOperationInfoListVarargs(value: ClusterOperationInfo*): Self = StObject.set(x, "ClusterOperationInfoList", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

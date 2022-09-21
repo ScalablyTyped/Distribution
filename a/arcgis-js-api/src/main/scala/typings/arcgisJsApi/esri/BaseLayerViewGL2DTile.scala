@@ -32,14 +32,14 @@ trait BaseLayerViewGL2DTile
   var coords: js.Array[Double]
   
   /**
-    * The tile string identifier in the format `level/row/col/world`.
+    * The tile string identifier in the format `level/row/col/world`
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Tile)
     */
   var id: String
   
   /**
-    * The level identifier of the [LOD](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html) to which the tile belongs.
+    * The level identifier of the [LOD](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html) to which the tile belongs
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Tile)
     */
@@ -97,13 +97,13 @@ object BaseLayerViewGL2DTile {
     
     inline def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value*))
     
     inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
     inline def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
-    inline def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value :_*))
+    inline def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

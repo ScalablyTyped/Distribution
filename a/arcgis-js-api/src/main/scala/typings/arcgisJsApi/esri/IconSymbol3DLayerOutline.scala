@@ -13,12 +13,16 @@ trait IconSymbol3DLayerOutline
   /**
     * The color of the outline.
     *
+    * @default black
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#outline)
     */
   var color: js.UndefOr[Color_] = js.undefined
   
   /**
     * The width of the outline in points.
+    *
+    * @default 1.125
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#outline)
     */
@@ -31,8 +35,8 @@ object IconSymbol3DLayerOutline {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ js.Any, IconSymbol3DLayerOutline]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], IconSymbol3DLayerOutline]])
+      js.Function2[/* propertyName */ String, /* value */ Any, IconSymbol3DLayerOutline]
+    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], IconSymbol3DLayerOutline]])
   ): IconSymbol3DLayerOutline = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconSymbol3DLayerOutline]

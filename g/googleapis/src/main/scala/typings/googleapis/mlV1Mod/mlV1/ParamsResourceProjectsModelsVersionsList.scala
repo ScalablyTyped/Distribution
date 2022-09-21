@@ -1,9 +1,5 @@
 package typings.googleapis.mlV1Mod.mlV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,27 +9,17 @@ trait ParamsResourceProjectsModelsVersionsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * Optional. Specifies the subset of versions to retrieve.
     */
   var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. The number of versions to retrieve per "page" of results. If
-    * there are more remaining results than this number, the response message
-    * will contain a valid value in the `next_page_token` field.  The default
-    * value is 20, and the maximum page size is 100.
+    * Optional. The number of versions to retrieve per "page" of results. If there are more remaining results than this number, the response message will contain a valid value in the `next_page_token` field. The default value is 20, and the maximum page size is 100.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Optional. A page token to request the next page of results.  You get the
-    * token from the `next_page_token` field of the response from the previous
-    * call.
+    * Optional. A page token to request the next page of results. You get the token from the `next_page_token` field of the response from the previous call.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
@@ -50,10 +36,6 @@ object ParamsResourceProjectsModelsVersionsList {
   }
   
   extension [Self <: ParamsResourceProjectsModelsVersionsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,7 @@ object credMod {
   
   @JSImport("nodegit/cred", "Cred")
   @js.native
-  class Cred () extends StObject {
+  open class Cred () extends StObject {
     
     def free(): Unit = js.native
     

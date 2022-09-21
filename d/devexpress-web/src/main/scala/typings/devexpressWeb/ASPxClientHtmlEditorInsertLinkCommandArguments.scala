@@ -39,7 +39,7 @@ trait ASPxClientHtmlEditorInsertLinkCommandArguments
 object ASPxClientHtmlEditorInsertLinkCommandArguments {
   
   inline def apply(
-    selectedElement: js.Any,
+    selectedElement: Any,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
     target: String,
     text: String,

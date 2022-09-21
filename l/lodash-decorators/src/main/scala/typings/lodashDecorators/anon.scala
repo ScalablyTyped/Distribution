@@ -11,7 +11,7 @@ object anon {
   @js.native
   trait Instantiable[T, U]
     extends StObject
-       with Instantiable1[/* args (repeated) */ js.Any, MemoizeMap[T, U]]
+       with Instantiable1[/* args (repeated) */ Any, MemoizeMap[T, U]]
   
   trait Post extends StObject {
     

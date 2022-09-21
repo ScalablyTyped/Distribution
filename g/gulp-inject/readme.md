@@ -1,6 +1,7 @@
 
 # Scala.js typings for gulp-inject
 
+Typings are for version 5.0
 
 ## Library description:
 A javascript, stylesheet and webcomponent injection plugin for Gulp, i.e. inject file references into your index.html
@@ -9,10 +10,10 @@ A javascript, stylesheet and webcomponent injection plugin for Gulp, i.e. inject
 | ------------------ | :-------------: |
 | Full name          | gulp-inject |
 | Keywords           | gulpplugin, inject, stylesheets, webcomponents, scripts, index |
-| # releases         | 4 |
-| # dependents       | 195 |
-| # downloads        | 2901530 |
-| # stars            | 185 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 219255.0 |
+| # stars            | 815.0 |
 
 ## Links
 - [Homepage](https://github.com/klei/gulp-inject)

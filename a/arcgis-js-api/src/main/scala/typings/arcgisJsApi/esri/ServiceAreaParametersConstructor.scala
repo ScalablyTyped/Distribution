@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceAreaParametersConstructor
   extends StObject
      with /**
-  * Input parameters for [ServiceAreaTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ServiceAreaTask.html).
+  * Input parameters for [serviceArea](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-serviceArea.html).
   *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html)
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html)
   */
 Instantiable0[ServiceAreaParameters]
      with Instantiable1[/* properties */ ServiceAreaParametersProperties, ServiceAreaParameters] {
   
-  def fromJSON(json: js.Any): ServiceAreaParameters = js.native
+  def fromJSON(json: Any): ServiceAreaParameters = js.native
 }

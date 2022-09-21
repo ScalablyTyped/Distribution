@@ -12,7 +12,7 @@ object mod {
   object global {
     
     // https://github.com/emberjs/ember.js/blob/master/packages/ember-testing/lib/helpers/and_then.js
-    inline def andThen[T](callback: js.Function1[/* repeated */ js.Any, T]): Promise[T] = js.Dynamic.global.applyDynamic("andThen")(callback.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
+    inline def andThen[T](callback: js.Function1[/* repeated */ Any, T]): Promise[T] = js.Dynamic.global.applyDynamic("andThen")(callback.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
     
     // https://github.com/emberjs/ember.js/blob/master/packages/ember-testing/lib/helpers/click.js
     inline def click(selector: String): WaitResult[Unit] = js.Dynamic.global.applyDynamic("click")(selector.asInstanceOf[js.Any]).asInstanceOf[WaitResult[Unit]]

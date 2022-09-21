@@ -9,10 +9,10 @@ knockout-postbox ================ *knockout-postbox* is a [Knockout.js](http://k
 | ------------------ | :-------------: |
 | Full name          | knockout-postbox |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 58834 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4296.666666666667 |
+| # stars            | 354.0 |
 
 ## Links
 - [Homepage](https://github.com/rniemeyer/knockout-postbox#readme)

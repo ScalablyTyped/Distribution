@@ -12,14 +12,14 @@ object mod {
   
   @JSImport("react-motion-loop", "ReactMotionLoop")
   @js.native
-  class ReactMotionLoop protected ()
-    extends Component[ReactMotionLoopProps, js.Object, js.Any] {
+  open class ReactMotionLoop protected ()
+    extends Component[ReactMotionLoopProps, js.Object, Any] {
     def this(props: ReactMotionLoopProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ReactMotionLoopProps, context: js.Any) = this()
+    def this(props: ReactMotionLoopProps, context: Any) = this()
   }
   
   /* Inlined parent std.Partial<react-motion.react-motion.MotionProps> */

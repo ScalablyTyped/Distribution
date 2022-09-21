@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +12,12 @@ object tableBodyMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Table/TableBody", JSImport.Default)
   @js.native
-  val default: StatelessComponent[TableBodyProps] = js.native
+  val default: FC[TableBodyProps] = js.native
   
   trait StrictTableBodyProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -34,7 +34,7 @@ object tableBodyMod extends Shortcut {
     
     extension [Self <: StrictTableBodyProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -51,7 +51,7 @@ object tableBodyMod extends Shortcut {
   trait TableBodyProps
     extends StObject
        with StrictTableBodyProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object TableBodyProps {
     
     inline def apply(): TableBodyProps = {
@@ -60,8 +60,8 @@ object tableBodyMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[TableBodyProps]
+  type _To = FC[TableBodyProps]
   
   /* This means you don't have to write `default`, but can instead just say `tableBodyMod.foo` */
-  override def _to: StatelessComponent[TableBodyProps] = default
+  override def _to: FC[TableBodyProps] = default
 }

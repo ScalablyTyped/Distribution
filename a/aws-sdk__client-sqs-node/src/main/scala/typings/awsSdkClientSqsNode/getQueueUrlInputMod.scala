@@ -8,5 +8,5 @@ object getQueueUrlInputMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/GetQueueUrlInput", "GetQueueUrlInput")
   @js.native
-  val GetQueueUrlInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetQueueUrlInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -25,7 +25,7 @@ object ApigatewayAuditLogConfig {
     
     inline def setExemptedMembersUndefined: Self = StObject.set(x, "exemptedMembers", js.undefined)
     
-    inline def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value :_*))
+    inline def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value*))
     
     inline def setLogType(value: String): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
     

@@ -18,10 +18,10 @@ object mod {
     
     @JSImport("dagre-layout", "graphlib.Graph")
     @js.native
-    class Graph () extends StObject {
+    open class Graph () extends StObject {
       def this(opt: Compound) = this()
       
-      def edge(id: js.Any): js.Any = js.native
+      def edge(id: Any): Any = js.native
       
       def edges(): js.Array[Edge] = js.native
       
@@ -29,7 +29,7 @@ object mod {
       
       def hasNode(name: String): Boolean = js.native
       
-      def node(id: js.Any): js.Any = js.native
+      def node(id: Any): Any = js.native
       
       def nodes(): js.Array[String] = js.native
       
@@ -42,13 +42,13 @@ object mod {
       def setEdge(params: Name): Graph = js.native
       def setEdge(params: Name, value: String): Graph = js.native
       def setEdge(sourceId: String, targetId: String): Graph = js.native
-      def setEdge(sourceId: String, targetId: String, options: StringDictionary[js.Any]): Graph = js.native
-      def setEdge(sourceId: String, targetId: String, options: StringDictionary[js.Any], value: String): Graph = js.native
+      def setEdge(sourceId: String, targetId: String, options: StringDictionary[Any]): Graph = js.native
+      def setEdge(sourceId: String, targetId: String, options: StringDictionary[Any], value: String): Graph = js.native
       def setEdge(sourceId: String, targetId: String, options: Unit, value: String): Graph = js.native
       
       def setGraph(label: GraphLabel): Graph = js.native
       
-      def setNode(id: String, node: StringDictionary[js.Any]): Graph = js.native
+      def setNode(id: String, node: StringDictionary[Any]): Graph = js.native
       
       def setParent(name: String, parentName: String): Unit = js.native
     }

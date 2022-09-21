@@ -31,6 +31,6 @@ object ListWorldExportJobsResponse {
     
     inline def setWorldExportJobSummaries(value: WorldExportJobSummaries): Self = StObject.set(x, "worldExportJobSummaries", value.asInstanceOf[js.Any])
     
-    inline def setWorldExportJobSummariesVarargs(value: WorldExportJobSummary*): Self = StObject.set(x, "worldExportJobSummaries", js.Array(value :_*))
+    inline def setWorldExportJobSummariesVarargs(value: WorldExportJobSummary*): Self = StObject.set(x, "worldExportJobSummaries", js.Array(value*))
   }
 }

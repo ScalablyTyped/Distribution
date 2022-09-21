@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateThemeRequest extends StObject {
   
   /**
-    * The ID of the AWS account that contains the theme that you're updating.
+    * The ID of the Amazon Web Services account that contains the theme that you're updating.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
-    * The theme ID, defined by Amazon QuickSight, that a custom theme inherits from. All themes initially inherit from a default QuickSight theme.
+    * The theme ID, defined by Amazon QuickSight, that a custom theme inherits from. All themes initially inherit from a default Amazon QuickSight theme.
     */
   var BaseThemeId: RestrictiveResourceId
   

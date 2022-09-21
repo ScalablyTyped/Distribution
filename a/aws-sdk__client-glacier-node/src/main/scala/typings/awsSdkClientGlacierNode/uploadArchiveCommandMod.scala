@@ -17,7 +17,7 @@ object uploadArchiveCommandMod {
   
   @JSImport("@aws-sdk/client-glacier-node/commands/UploadArchiveCommand", "UploadArchiveCommand")
   @js.native
-  class UploadArchiveCommand protected ()
+  open class UploadArchiveCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -35,14 +35,14 @@ object uploadArchiveCommandMod {
     override val middlewareStack: MiddlewareStack[UploadArchiveInput[Readable], UploadArchiveOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: GlacierResolvedConfiguration
     ): Handler[UploadArchiveInput[Readable], UploadArchiveOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: GlacierResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[UploadArchiveInput[Readable], UploadArchiveOutput] = js.native
   }
 }

@@ -21,7 +21,7 @@ trait CubeFields extends StObject {
   def Item(Index: String): CubeField = js.native
   def Item(Index: Double): CubeField = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): CubeField = js.native
+  def _Default(Index: Any): CubeField = js.native
 }

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ActionObject[S, R] extends StObject {
   
-  def handler(injectee: ActionContext[S, R]): js.Any
-  def handler(injectee: ActionContext[S, R], payload: js.Any): js.Any
+  def handler(injectee: ActionContext[S, R]): Any
+  def handler(injectee: ActionContext[S, R], payload: Any): Any
   @JSName("handler")
   var handler_Original: ActionHandler[S, R]
   

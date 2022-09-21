@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CalculatedSpend extends StObject {
   
   /**
-    * The amount of cost, usage, RI units, or Savings Plans units that you have used.
+    * The amount of cost, usage, RI units, or Savings Plans units that you used.
     */
   var ActualSpend: Spend
   
   /**
-    * The amount of cost, usage, RI units, or Savings Plans units that you are forecasted to use.
+    * The amount of cost, usage, RI units, or Savings Plans units that you're forecasted to use.
     */
   var ForecastedSpend: js.UndefOr[Spend] = js.undefined
 }

@@ -1,25 +1,37 @@
 package typings.cytoscape.mod.Css
 
+import typings.cytoscape.cytoscapeStrings.`include-padding`
 import typings.cytoscape.cytoscapeStrings.`no-repeat`
 import typings.cytoscape.cytoscapeStrings.`repeat-x`
 import typings.cytoscape.cytoscapeStrings.`repeat-y`
+import typings.cytoscape.cytoscapeStrings.`use-credentials`
+import typings.cytoscape.cytoscapeStrings.anonymous
+import typings.cytoscape.cytoscapeStrings.anywhere
+import typings.cytoscape.cytoscapeStrings.auto
+import typings.cytoscape.cytoscapeStrings.autorotate
 import typings.cytoscape.cytoscapeStrings.bottom
 import typings.cytoscape.cytoscapeStrings.center
 import typings.cytoscape.cytoscapeStrings.clipped
 import typings.cytoscape.cytoscapeStrings.contain
 import typings.cytoscape.cytoscapeStrings.cover
-import typings.cytoscape.cytoscapeStrings.displayed
+import typings.cytoscape.cytoscapeStrings.element
 import typings.cytoscape.cytoscapeStrings.ellipsis
 import typings.cytoscape.cytoscapeStrings.hidden
+import typings.cytoscape.cytoscapeStrings.inner
+import typings.cytoscape.cytoscapeStrings.inside
 import typings.cytoscape.cytoscapeStrings.left
+import typings.cytoscape.cytoscapeStrings.manual
 import typings.cytoscape.cytoscapeStrings.no
 import typings.cytoscape.cytoscapeStrings.none
+import typings.cytoscape.cytoscapeStrings.orphan
+import typings.cytoscape.cytoscapeStrings.over
 import typings.cytoscape.cytoscapeStrings.rectangle
 import typings.cytoscape.cytoscapeStrings.repeat
 import typings.cytoscape.cytoscapeStrings.right
 import typings.cytoscape.cytoscapeStrings.roundrectangle
 import typings.cytoscape.cytoscapeStrings.top
 import typings.cytoscape.cytoscapeStrings.visible
+import typings.cytoscape.cytoscapeStrings.whitespace
 import typings.cytoscape.cytoscapeStrings.wrap
 import typings.cytoscape.cytoscapeStrings.yes
 import typings.cytoscape.mod.EdgeSingular
@@ -79,6 +91,14 @@ trait Node extends StObject {
   var `background-height`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
   /**
+    * Changes whether the height is calculated relative to the height of the node or
+    * the height in addition to the padding; may be `inner` or `include-padding`.
+    *
+    * If not specified, `include-padding` is used by default.
+    */
+  var `background-height-relative-to`: js.UndefOr[PropertyValueNode[inner | `include-padding`]] = js.undefined
+  
+  /**
     * The URL that points to the image that should be used as the node’s background.
     * PNG, JPG, and SVG are supported formats.
     * You may use a data URI to use embedded images,
@@ -87,9 +107,44 @@ trait Node extends StObject {
   var `background-image`: js.UndefOr[PropertyValueNode[String]] = js.undefined
   
   /**
+    * Determines whether background image is within (`inside`)
+    * or over top of the node (`over`).
+    *
+    * The default is set to `inside`.
+    */
+  var `background-image-containment`: js.UndefOr[PropertyValueNode[inside | over]] = js.undefined
+  
+  /**
+    * All images are loaded with a crossorigin attribute which may be `anonymous` or
+    * `use-credentials`.
+    *
+    * The default is set to `anonymous`.
+    */
+  var `background-image-crossorigin`: js.UndefOr[PropertyValueNode[anonymous | `use-credentials`]] = js.undefined
+  
+  /**
     * The opacity of the background image. [0 1]
     */
   var `background-image-opacity`: js.UndefOr[PropertyValueNode[Double]] = js.undefined
+  
+  /**
+    * Determines whether background image is smoothed (`yes`, default) or not (`no`).
+    * This is only a hint, and the browser may or may not respect the
+    * value set for this property.
+    */
+  var `background-image-smoothing`: js.UndefOr[PropertyValueNode[yes | no]] = js.undefined
+  
+  /**
+    * The x offset of the background image,
+    * measured in percent(e.g. `'50%'`) or pixels (e.g. `'10px'`).
+    */
+  var `background-offset-x`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
+  
+  /**
+    * The y offset of the background image,
+    * measured in percent(e.g. `'50%'`) or pixels (e.g. `'10px'`).
+    */
+  var `background-offset-y`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
   /**
     * The opacity level of the node’s background colour.
@@ -98,13 +153,13 @@ trait Node extends StObject {
   
   /**
     * The x position of the background image,
-    * measured in percent(e.g. 50%) or pixels (e.g. 10px).
+    * measured in percent(e.g. `'50%'`) or pixels (e.g. `'10px'`).
     */
   var `background-position-x`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
   /**
     * The y position of the background image,
-    * measured in percent(e.g. 50%) or pixels (e.g. 10px).
+    * measured in percent(e.g. `'50%'`) or pixels (e.g. `'10px'`).
     */
   var `background-position-y`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
@@ -124,6 +179,14 @@ trait Node extends StObject {
     * The auto value is used by default, which uses the width of the image.
     */
   var `background-width`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
+  
+  /**
+    * Changes whether the width is calculated relative to the width of the node or
+    * the width in addition to the padding; may be inner or include-padding.
+    *
+    * If not specified, include-padding is used by default.
+    */
+  var `background-width-relative-to`: js.UndefOr[PropertyValueNode[inner | `include-padding`]] = js.undefined
   
   var backgroundColor: js.UndefOr[PropertyValueNode[Colour]] = js.undefined
   
@@ -148,6 +211,21 @@ trait Node extends StObject {
     */
   var `border-width`: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
+  /**
+    * Specifies a padding size (e.g. 20) that expands the bounding box of the node in
+    * all directions. This allows for images to be drawn outside of the normal bounding
+    * box of the node when `background-clip` is none. This is useful for small decorations
+    * just outside of the node.
+    *
+    * `bounds-expansions` accepts 1 value (for all directions),
+    * 2 values, ([topAndBottom, leftAndRight]) or 4 values ([top, right, bottom, left]).
+    */
+  var `bounds-expansion`: js.UndefOr[
+    PropertyValueNode[
+      Double | String | (js.Tuple2[Double | String, Double | String]) | (js.Tuple4[Double | String, Double | String, Double | String, Double | String])
+    ]
+  ] = js.undefined
+  
   var color: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.undefined
   
   /**
@@ -155,7 +233,7 @@ trait Node extends StObject {
     */
   var content: js.UndefOr[PropertyValueNode[String]] = js.undefined
   
-  var display: js.UndefOr[PropertyValue[NodeSingular, none | displayed]] = js.undefined
+  var display: js.UndefOr[PropertyValue[NodeSingular, none | element]] = js.undefined
   
   var events: js.UndefOr[PropertyValue[NodeSingular, yes | no]] = js.undefined
   
@@ -183,6 +261,8 @@ trait Node extends StObject {
   var height: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
   var label: js.UndefOr[PropertyValue[NodeSingular, String]] = js.undefined
+  
+  var `line-height`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
   var `min-zoomed-font-size`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
@@ -225,7 +305,7 @@ trait Node extends StObject {
   
   var `source-text-offset`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `source-text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  var `source-text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double | autorotate | none]] = js.undefined
   
   var `target-label`: js.UndefOr[PropertyValue[NodeSingular, String]] = js.undefined
   
@@ -235,7 +315,7 @@ trait Node extends StObject {
   
   var `target-text-offset`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
-  var `target-text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  var `target-text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double | autorotate | none]] = js.undefined
   
   var `text-background-color`: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.undefined
   
@@ -257,6 +337,8 @@ trait Node extends StObject {
   
   var `text-halign`: js.UndefOr[PropertyValue[NodeSingular, left | center | right]] = js.undefined
   
+  var `text-justification`: js.UndefOr[PropertyValue[NodeSingular, auto | left | center | right]] = js.undefined
+  
   var `text-margin-x`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
   
   var `text-margin-y`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
@@ -271,17 +353,9 @@ trait Node extends StObject {
   
   var `text-outline-width`: js.UndefOr[PropertyValue[NodeSingular, Double | String]] = js.undefined
   
-  var `text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  var `text-overflow-wrap`: js.UndefOr[PropertyValue[NodeSingular, whitespace | anywhere]] = js.undefined
   
-  var `text-shadow-blur`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
-  
-  var `text-shadow-color`: js.UndefOr[PropertyValue[NodeSingular, Colour]] = js.undefined
-  
-  var `text-shadow-offset-x`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
-  
-  var `text-shadow-offset-y`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
-  
-  var `text-shadow-opacity`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  var `text-rotation`: js.UndefOr[PropertyValue[NodeSingular, Double | autorotate | none]] = js.undefined
   
   var `text-transform`: js.UndefOr[PropertyValue[NodeSingular, TextTranformation]] = js.undefined
   
@@ -306,7 +380,11 @@ trait Node extends StObject {
     */
   var width: js.UndefOr[PropertyValueNode[Double | String]] = js.undefined
   
+  var `z-compound-depth`: js.UndefOr[PropertyValue[NodeSingular, auto | top | bottom | orphan]] = js.undefined
+  
   var `z-index`: js.UndefOr[PropertyValue[NodeSingular, Double]] = js.undefined
+  
+  var `z-index-compare`: js.UndefOr[PropertyValue[NodeSingular, auto | manual]] = js.undefined
 }
 object Node {
   
@@ -343,11 +421,29 @@ object Node {
     
     inline def `setBackground-height`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-height", value.asInstanceOf[js.Any])
     
+    inline def `setBackground-height-relative-to`(value: PropertyValueNode[inner | `include-padding`]): Self = StObject.set(x, "background-height-relative-to", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-height-relative-toFunction1`(value: NodeSingular => inner | `include-padding`): Self = StObject.set(x, "background-height-relative-to", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-height-relative-toUndefined`: Self = StObject.set(x, "background-height-relative-to", js.undefined)
+    
     inline def `setBackground-heightFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-height", js.Any.fromFunction1(value))
     
     inline def `setBackground-heightUndefined`: Self = StObject.set(x, "background-height", js.undefined)
     
     inline def `setBackground-image`(value: PropertyValueNode[String]): Self = StObject.set(x, "background-image", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-image-containment`(value: PropertyValueNode[inside | over]): Self = StObject.set(x, "background-image-containment", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-image-containmentFunction1`(value: NodeSingular => inside | over): Self = StObject.set(x, "background-image-containment", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-image-containmentUndefined`: Self = StObject.set(x, "background-image-containment", js.undefined)
+    
+    inline def `setBackground-image-crossorigin`(value: PropertyValueNode[anonymous | `use-credentials`]): Self = StObject.set(x, "background-image-crossorigin", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-image-crossoriginFunction1`(value: NodeSingular => anonymous | `use-credentials`): Self = StObject.set(x, "background-image-crossorigin", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-image-crossoriginUndefined`: Self = StObject.set(x, "background-image-crossorigin", js.undefined)
     
     inline def `setBackground-image-opacity`(value: PropertyValueNode[Double]): Self = StObject.set(x, "background-image-opacity", value.asInstanceOf[js.Any])
     
@@ -355,9 +451,27 @@ object Node {
     
     inline def `setBackground-image-opacityUndefined`: Self = StObject.set(x, "background-image-opacity", js.undefined)
     
+    inline def `setBackground-image-smoothing`(value: PropertyValueNode[yes | no]): Self = StObject.set(x, "background-image-smoothing", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-image-smoothingFunction1`(value: NodeSingular => yes | no): Self = StObject.set(x, "background-image-smoothing", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-image-smoothingUndefined`: Self = StObject.set(x, "background-image-smoothing", js.undefined)
+    
     inline def `setBackground-imageFunction1`(value: NodeSingular => String): Self = StObject.set(x, "background-image", js.Any.fromFunction1(value))
     
     inline def `setBackground-imageUndefined`: Self = StObject.set(x, "background-image", js.undefined)
+    
+    inline def `setBackground-offset-x`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-offset-x", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-offset-xFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-offset-x", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-offset-xUndefined`: Self = StObject.set(x, "background-offset-x", js.undefined)
+    
+    inline def `setBackground-offset-y`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-offset-y", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-offset-yFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-offset-y", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-offset-yUndefined`: Self = StObject.set(x, "background-offset-y", js.undefined)
     
     inline def `setBackground-opacity`(value: PropertyValueNode[Double]): Self = StObject.set(x, "background-opacity", value.asInstanceOf[js.Any])
     
@@ -384,6 +498,12 @@ object Node {
     inline def `setBackground-repeatUndefined`: Self = StObject.set(x, "background-repeat", js.undefined)
     
     inline def `setBackground-width`(value: PropertyValueNode[Double | String]): Self = StObject.set(x, "background-width", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-width-relative-to`(value: PropertyValueNode[inner | `include-padding`]): Self = StObject.set(x, "background-width-relative-to", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-width-relative-toFunction1`(value: NodeSingular => inner | `include-padding`): Self = StObject.set(x, "background-width-relative-to", js.Any.fromFunction1(value))
+    
+    inline def `setBackground-width-relative-toUndefined`: Self = StObject.set(x, "background-width-relative-to", js.undefined)
     
     inline def `setBackground-widthFunction1`(value: NodeSingular => Double | String): Self = StObject.set(x, "background-width", js.Any.fromFunction1(value))
     
@@ -419,6 +539,18 @@ object Node {
     
     inline def `setBorder-widthUndefined`: Self = StObject.set(x, "border-width", js.undefined)
     
+    inline def `setBounds-expansion`(
+      value: PropertyValueNode[
+          Double | String | (js.Tuple2[Double | String, Double | String]) | (js.Tuple4[Double | String, Double | String, Double | String, Double | String])
+        ]
+    ): Self = StObject.set(x, "bounds-expansion", value.asInstanceOf[js.Any])
+    
+    inline def `setBounds-expansionFunction1`(
+      value: NodeSingular => Double | String | (js.Tuple2[Double | String, Double | String]) | (js.Tuple4[Double | String, Double | String, Double | String, Double | String])
+    ): Self = StObject.set(x, "bounds-expansion", js.Any.fromFunction1(value))
+    
+    inline def `setBounds-expansionUndefined`: Self = StObject.set(x, "bounds-expansion", js.undefined)
+    
     inline def setColor(value: PropertyValue[NodeSingular, Colour]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorFunction1(value: NodeSingular => Colour): Self = StObject.set(x, "color", js.Any.fromFunction1(value))
@@ -431,9 +563,9 @@ object Node {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setDisplay(value: PropertyValue[NodeSingular, none | displayed]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: PropertyValue[NodeSingular, none | element]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    inline def setDisplayFunction1(value: NodeSingular => none | displayed): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
+    inline def setDisplayFunction1(value: NodeSingular => none | element): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
     
     inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
@@ -502,6 +634,12 @@ object Node {
     inline def setLabelFunction1(value: NodeSingular => String): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def `setLine-height`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "line-height", value.asInstanceOf[js.Any])
+    
+    inline def `setLine-heightFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "line-height", js.Any.fromFunction1(value))
+    
+    inline def `setLine-heightUndefined`: Self = StObject.set(x, "line-height", js.undefined)
     
     inline def `setMin-zoomed-font-size`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "min-zoomed-font-size", value.asInstanceOf[js.Any])
     
@@ -617,9 +755,9 @@ object Node {
     
     inline def `setSource-text-offsetUndefined`: Self = StObject.set(x, "source-text-offset", js.undefined)
     
-    inline def `setSource-text-rotation`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "source-text-rotation", value.asInstanceOf[js.Any])
+    inline def `setSource-text-rotation`(value: PropertyValue[NodeSingular, Double | autorotate | none]): Self = StObject.set(x, "source-text-rotation", value.asInstanceOf[js.Any])
     
-    inline def `setSource-text-rotationFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "source-text-rotation", js.Any.fromFunction1(value))
+    inline def `setSource-text-rotationFunction1`(value: NodeSingular => Double | autorotate | none): Self = StObject.set(x, "source-text-rotation", js.Any.fromFunction1(value))
     
     inline def `setSource-text-rotationUndefined`: Self = StObject.set(x, "source-text-rotation", js.undefined)
     
@@ -647,9 +785,9 @@ object Node {
     
     inline def `setTarget-text-offsetUndefined`: Self = StObject.set(x, "target-text-offset", js.undefined)
     
-    inline def `setTarget-text-rotation`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "target-text-rotation", value.asInstanceOf[js.Any])
+    inline def `setTarget-text-rotation`(value: PropertyValue[NodeSingular, Double | autorotate | none]): Self = StObject.set(x, "target-text-rotation", value.asInstanceOf[js.Any])
     
-    inline def `setTarget-text-rotationFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "target-text-rotation", js.Any.fromFunction1(value))
+    inline def `setTarget-text-rotationFunction1`(value: NodeSingular => Double | autorotate | none): Self = StObject.set(x, "target-text-rotation", js.Any.fromFunction1(value))
     
     inline def `setTarget-text-rotationUndefined`: Self = StObject.set(x, "target-text-rotation", js.undefined)
     
@@ -713,6 +851,12 @@ object Node {
     
     inline def `setText-halignUndefined`: Self = StObject.set(x, "text-halign", js.undefined)
     
+    inline def `setText-justification`(value: PropertyValue[NodeSingular, auto | left | center | right]): Self = StObject.set(x, "text-justification", value.asInstanceOf[js.Any])
+    
+    inline def `setText-justificationFunction1`(value: NodeSingular => auto | left | center | right): Self = StObject.set(x, "text-justification", js.Any.fromFunction1(value))
+    
+    inline def `setText-justificationUndefined`: Self = StObject.set(x, "text-justification", js.undefined)
+    
     inline def `setText-margin-x`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-margin-x", value.asInstanceOf[js.Any])
     
     inline def `setText-margin-xFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-margin-x", js.Any.fromFunction1(value))
@@ -755,41 +899,17 @@ object Node {
     
     inline def `setText-outline-widthUndefined`: Self = StObject.set(x, "text-outline-width", js.undefined)
     
-    inline def `setText-rotation`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-rotation", value.asInstanceOf[js.Any])
+    inline def `setText-overflow-wrap`(value: PropertyValue[NodeSingular, whitespace | anywhere]): Self = StObject.set(x, "text-overflow-wrap", value.asInstanceOf[js.Any])
     
-    inline def `setText-rotationFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-rotation", js.Any.fromFunction1(value))
+    inline def `setText-overflow-wrapFunction1`(value: NodeSingular => whitespace | anywhere): Self = StObject.set(x, "text-overflow-wrap", js.Any.fromFunction1(value))
+    
+    inline def `setText-overflow-wrapUndefined`: Self = StObject.set(x, "text-overflow-wrap", js.undefined)
+    
+    inline def `setText-rotation`(value: PropertyValue[NodeSingular, Double | autorotate | none]): Self = StObject.set(x, "text-rotation", value.asInstanceOf[js.Any])
+    
+    inline def `setText-rotationFunction1`(value: NodeSingular => Double | autorotate | none): Self = StObject.set(x, "text-rotation", js.Any.fromFunction1(value))
     
     inline def `setText-rotationUndefined`: Self = StObject.set(x, "text-rotation", js.undefined)
-    
-    inline def `setText-shadow-blur`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-shadow-blur", value.asInstanceOf[js.Any])
-    
-    inline def `setText-shadow-blurFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-shadow-blur", js.Any.fromFunction1(value))
-    
-    inline def `setText-shadow-blurUndefined`: Self = StObject.set(x, "text-shadow-blur", js.undefined)
-    
-    inline def `setText-shadow-color`(value: PropertyValue[NodeSingular, Colour]): Self = StObject.set(x, "text-shadow-color", value.asInstanceOf[js.Any])
-    
-    inline def `setText-shadow-colorFunction1`(value: NodeSingular => Colour): Self = StObject.set(x, "text-shadow-color", js.Any.fromFunction1(value))
-    
-    inline def `setText-shadow-colorUndefined`: Self = StObject.set(x, "text-shadow-color", js.undefined)
-    
-    inline def `setText-shadow-offset-x`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-shadow-offset-x", value.asInstanceOf[js.Any])
-    
-    inline def `setText-shadow-offset-xFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-shadow-offset-x", js.Any.fromFunction1(value))
-    
-    inline def `setText-shadow-offset-xUndefined`: Self = StObject.set(x, "text-shadow-offset-x", js.undefined)
-    
-    inline def `setText-shadow-offset-y`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-shadow-offset-y", value.asInstanceOf[js.Any])
-    
-    inline def `setText-shadow-offset-yFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-shadow-offset-y", js.Any.fromFunction1(value))
-    
-    inline def `setText-shadow-offset-yUndefined`: Self = StObject.set(x, "text-shadow-offset-y", js.undefined)
-    
-    inline def `setText-shadow-opacity`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "text-shadow-opacity", value.asInstanceOf[js.Any])
-    
-    inline def `setText-shadow-opacityFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "text-shadow-opacity", js.Any.fromFunction1(value))
-    
-    inline def `setText-shadow-opacityUndefined`: Self = StObject.set(x, "text-shadow-opacity", js.undefined)
     
     inline def `setText-transform`(value: PropertyValue[NodeSingular, TextTranformation]): Self = StObject.set(x, "text-transform", value.asInstanceOf[js.Any])
     
@@ -837,7 +957,19 @@ object Node {
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
+    inline def `setZ-compound-depth`(value: PropertyValue[NodeSingular, auto | top | bottom | orphan]): Self = StObject.set(x, "z-compound-depth", value.asInstanceOf[js.Any])
+    
+    inline def `setZ-compound-depthFunction1`(value: NodeSingular => auto | top | bottom | orphan): Self = StObject.set(x, "z-compound-depth", js.Any.fromFunction1(value))
+    
+    inline def `setZ-compound-depthUndefined`: Self = StObject.set(x, "z-compound-depth", js.undefined)
+    
     inline def `setZ-index`(value: PropertyValue[NodeSingular, Double]): Self = StObject.set(x, "z-index", value.asInstanceOf[js.Any])
+    
+    inline def `setZ-index-compare`(value: PropertyValue[NodeSingular, auto | manual]): Self = StObject.set(x, "z-index-compare", value.asInstanceOf[js.Any])
+    
+    inline def `setZ-index-compareFunction1`(value: NodeSingular => auto | manual): Self = StObject.set(x, "z-index-compare", js.Any.fromFunction1(value))
+    
+    inline def `setZ-index-compareUndefined`: Self = StObject.set(x, "z-index-compare", js.undefined)
     
     inline def `setZ-indexFunction1`(value: NodeSingular => Double): Self = StObject.set(x, "z-index", js.Any.fromFunction1(value))
     

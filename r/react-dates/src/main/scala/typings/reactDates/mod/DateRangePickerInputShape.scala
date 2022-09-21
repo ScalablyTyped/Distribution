@@ -8,6 +8,7 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.std.Element
 import typings.std.HTMLButtonElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
@@ -174,7 +175,7 @@ object DateRangePickerInputShape {
     
     inline def setOnEndDateChangeUndefined: Self = StObject.set(x, "onEndDateChange", js.undefined)
     
-    inline def setOnEndDateFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onEndDateFocus", js.Any.fromFunction1(value))
+    inline def setOnEndDateFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onEndDateFocus", js.Any.fromFunction1(value))
     
     inline def setOnEndDateFocusUndefined: Self = StObject.set(x, "onEndDateFocus", js.undefined)
     
@@ -194,7 +195,7 @@ object DateRangePickerInputShape {
     
     inline def setOnStartDateChangeUndefined: Self = StObject.set(x, "onStartDateChange", js.undefined)
     
-    inline def setOnStartDateFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onStartDateFocus", js.Any.fromFunction1(value))
+    inline def setOnStartDateFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onStartDateFocus", js.Any.fromFunction1(value))
     
     inline def setOnStartDateFocusUndefined: Self = StObject.set(x, "onStartDateFocus", js.undefined)
     

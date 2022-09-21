@@ -54,7 +54,7 @@ object fileNameMod {
   
   @JSImport("rbx/elements/form/file-name", "FileName")
   @js.native
-  val FileName: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val FileName: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait FileNameProps extends StObject {

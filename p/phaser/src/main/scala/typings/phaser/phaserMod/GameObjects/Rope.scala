@@ -3,7 +3,6 @@ package typings.phaser.phaserMod.GameObjects
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Types.Math.Vector2Like
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "GameObjects.Rope")
 @js.native
-class Rope protected ()
+open class Rope protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.Rope {
   /**
@@ -42,8 +41,8 @@ class Rope protected ()
     x: js.UndefOr[Double],
     y: js.UndefOr[Double],
     texture: js.UndefOr[String],
-    frame: js.UndefOr[String | integer | Null],
-    points: js.UndefOr[integer | js.Array[Vector2Like]],
+    frame: js.UndefOr[String | Double | Null],
+    points: js.UndefOr[Double | js.Array[Vector2Like]],
     horizontal: js.UndefOr[Boolean],
     colors: js.UndefOr[js.Array[Double]],
     alphas: js.UndefOr[js.Array[Double]]
@@ -132,7 +131,7 @@ class Rope protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the display size of this Game Object.

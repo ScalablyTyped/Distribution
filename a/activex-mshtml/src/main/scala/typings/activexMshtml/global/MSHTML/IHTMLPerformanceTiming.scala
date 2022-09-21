@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLPerformanceTiming")
 @js.native
-/* private */ class IHTMLPerformanceTiming ()
+/* private */ open class IHTMLPerformanceTiming ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLPerformanceTiming {
   
@@ -72,7 +72,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val responseStart: Double = js.native
   
   /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  override def toJSON(): Any = js.native
   
   /* CompleteClass */
   override val unloadEventEnd: Double = js.native

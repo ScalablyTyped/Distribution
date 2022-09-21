@@ -105,10 +105,10 @@ object completedDocsRuleMod {
   
   @JSImport("tslint/lib/rules/completedDocsRule", "Rule")
   @js.native
-  class Rule protected () extends AbstractRule {
+  open class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
     
-    /* private */ var getExclusionsMap: js.Any = js.native
+    /* private */ var getExclusionsMap: Any = js.native
   }
   /* static members */
   object Rule {

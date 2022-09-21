@@ -54,7 +54,7 @@ object ApigatewayOperationMetadata {
     
     inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
-    inline def setDiagnosticsVarargs(value: ApigatewayOperationMetadataDiagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: ApigatewayOperationMetadataDiagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value*))
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

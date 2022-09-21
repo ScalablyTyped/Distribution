@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An Android package file to install.
-  */
 trait SchemaApk extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaApk extends StObject {
   var location: js.UndefOr[SchemaFileReference] = js.undefined
   
   /**
-    * The java package for the APK to be installed. Value is determined by
-    * examining the application&#39;s manifest.
+    * The java package for the APK to be installed. Value is determined by examining the application's manifest.
     */
-  var packageName: js.UndefOr[String] = js.undefined
+  var packageName: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaApk {
   
@@ -34,6 +30,8 @@ object SchemaApk {
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    
+    inline def setPackageNameNull: Self = StObject.set(x, "packageName", null)
     
     inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
   }

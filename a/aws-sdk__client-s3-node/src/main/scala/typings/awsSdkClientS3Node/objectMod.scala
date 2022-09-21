@@ -8,5 +8,5 @@ object objectMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_Object", "_Object")
   @js.native
-  val Object: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Object: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

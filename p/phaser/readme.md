@@ -1,7 +1,7 @@
 
 # Scala.js typings for phaser
 
-Typings are for version 3.24.1
+Typings are for version 3.55.2
 
 ## Library description:
 A fast, free and fun HTML5 Game Framework for Desktop and Mobile web browsers.
@@ -10,10 +10,10 @@ A fast, free and fun HTML5 Game Framework for Desktop and Mobile web browsers.
 | ------------------ | :-------------: |
 | Full name          | phaser |
 | Keywords           | 2d, HTML5, WebGL, canvas, game, javascript, physics, tweens, typescript, web audio |
-| # releases         | 38 |
-| # dependents       | 100 |
-| # downloads        | 365600 |
-| # stars            | 26 |
+| # releases         | 33 |
+| # dependents       | 0.0 |
+| # downloads        | 63975.666666666664 |
+| # stars            | 31999.0 |
 
 ## Links
 - [Homepage](http://phaser.io)

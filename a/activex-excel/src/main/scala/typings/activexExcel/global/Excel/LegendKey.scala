@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.LegendKey")
 @js.native
-/* private */ class LegendKey ()
+/* private */ open class LegendKey ()
   extends StObject
      with typings.activexExcel.Excel.LegendKey {
   
@@ -20,13 +20,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Border: typings.activexExcel.Excel.Border = js.native
   
   /* CompleteClass */
-  override def ClearFormats(): js.Any = js.native
+  override def ClearFormats(): Any = js.native
   
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
   /* CompleteClass */
-  override def Delete(): js.Any = js.native
+  override def Delete(): Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Excel.LegendKey_typekey")
@@ -69,7 +69,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MarkerStyle: XlMarkerStyle = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var PictureType: Double = js.native
@@ -81,7 +81,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var PictureUnit2: Double = js.native
   
   /* CompleteClass */
-  override def Select(): js.Any = js.native
+  override def Select(): Any = js.native
   
   /* CompleteClass */
   var Shadow: Boolean = js.native

@@ -8,8 +8,6 @@ import typings.authmosphere.oauthconfigMod.OAuthConfig
 import typings.authmosphere.tokenMod.Token
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -51,7 +49,7 @@ object utilsMod {
     * @param fileName
     * @returns {Promise<any>}
     */
-  inline def getFileDataAsObject(filePath: String, fileName: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileDataAsObject")(filePath.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def getFileDataAsObject(filePath: String, fileName: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileDataAsObject")(filePath.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   /**
     * Returns the value of a specified header field from a request
@@ -60,17 +58,26 @@ object utilsMod {
     * @param field The name of the field to return
     * @returns {string} The value of the header field
     */
-  inline def getHeaderValue(req: Request_[ParamsDictionary, js.Any, js.Any, Query], fieldName: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHeaderValue")(req.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def getHeaderValue(
+    req: Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ],
+    fieldName: String
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHeaderValue")(req.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
   inline def isAuthorizationCodeGrantConfig(config: OAuthConfig): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.AuthorizationCodeGrantConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAuthorizationCodeGrantConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.AuthorizationCodeGrantConfig */ Boolean]
   
-  inline def isCredentialsClientConfig(options: Record[String, js.Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsClientConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCredentialsClientConfig")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsClientConfig */ Boolean]
+  inline def isCredentialsClientConfig(options: Record[String | Double | js.Symbol, Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsClientConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCredentialsClientConfig")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsClientConfig */ Boolean]
   
-  inline def isCredentialsDirConfig(options: Record[String, js.Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsDirConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCredentialsDirConfig")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsDirConfig */ Boolean]
+  inline def isCredentialsDirConfig(options: Record[String | Double | js.Symbol, Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsDirConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCredentialsDirConfig")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsDirConfig */ Boolean]
   
-  inline def isCredentialsUserConfig(options: Record[String, js.Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCredentialsUserConfig")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserConfig */ Boolean]
+  inline def isCredentialsUserConfig(options: Record[String | Double | js.Symbol, Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCredentialsUserConfig")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserConfig */ Boolean]
   
-  inline def isPasswordGrantNoCredentialsDir(options: Record[String, js.Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserClientConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPasswordGrantNoCredentialsDir")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserClientConfig */ Boolean]
+  inline def isPasswordGrantNoCredentialsDir(options: Record[String | Double | js.Symbol, Any]): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserClientConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPasswordGrantNoCredentialsDir")(options.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.CredentialsUserClientConfig */ Boolean]
   
   inline def isRefreshGrantConfig(config: OAuthConfig): /* is authmosphere.authmosphere/lib/src/types/OAuthConfig.RefreshGrantConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefreshGrantConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is authmosphere.authmosphere/lib/src/types/OAuthConfig.RefreshGrantConfig */ Boolean]
   
@@ -83,7 +90,12 @@ object utilsMod {
     * @param res
     * @param status
     */
-  type rejectRequest = js.Function3[/* res */ Response_[js.Any], /* logger */ Logger, /* status */ Double, Unit]
+  type rejectRequest = js.Function3[
+    /* res */ Response_[Any, Record[String, Any]], 
+    /* logger */ Logger, 
+    /* status */ Double, 
+    Unit
+  ]
   
   /**
     * Attach scopes on the request object.
@@ -94,7 +106,15 @@ object utilsMod {
     * @param req
     * @returns {function(any): undefined}
     */
-  inline def setTokeninfo(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Function1[/* data */ Token[Record[String, js.Any]], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setTokeninfo")(req.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ Token[Record[String, js.Any]], Unit]]
+  inline def setTokeninfo(
+    req: Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ]
+  ): js.Function1[/* data */ Token[Record[String | Double | js.Symbol, Any]], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setTokeninfo")(req.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ Token[Record[String | Double | js.Symbol, Any]], Unit]]
   
   /**
     * Validates options object and throws TypeError if mandatory options is not specified.

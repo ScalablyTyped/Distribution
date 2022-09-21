@@ -10,10 +10,10 @@ A Solidity parser built from a robust ANTLR 4 grammar
 | ------------------ | :-------------: |
 | Full name          | solidity-parser-antlr |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 52 |
-| # downloads        | 816233 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 44726.333333333336 |
+| # stars            | 138.0 |
 
 ## Links
 - [Homepage](https://github.com/federicobond/solidity-parser-antlr)

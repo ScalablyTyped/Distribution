@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.LayerCollection")
 @js.native
-class LayerCollection ()
+open class LayerCollection ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.LayerCollection

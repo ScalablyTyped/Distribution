@@ -8,5 +8,5 @@ object updateSamplingRuleMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/UpdateSamplingRule", "UpdateSamplingRule")
   @js.native
-  val UpdateSamplingRule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val UpdateSamplingRule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

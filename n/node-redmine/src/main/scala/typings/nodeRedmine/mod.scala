@@ -8,35 +8,35 @@ object mod {
   
   @JSImport("node-redmine", "Redmine")
   @js.native
-  class Redmine protected () extends StObject {
-    def this(host: String, config: js.Any, port: Double) = this()
+  open class Redmine protected () extends StObject {
+    def this(host: String, config: Any, port: Double) = this()
     
-    def add_watcher(id: Double, params: js.Any, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit = js.native
+    def add_watcher(id: Double, params: Any, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Unit = js.native
     
-    def create_issue(issue: IssueData, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Issue = js.native
+    def create_issue(issue: IssueData, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Issue = js.native
     
-    def create_issue_relation(id: Double, params: js.Any, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit = js.native
+    def create_issue_relation(id: Double, params: Any, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Unit = js.native
     
-    def delete_issue(id: Double, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit = js.native
+    def delete_issue(id: Double, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Unit = js.native
     
-    def delete_issue_relation(id: Double, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit = js.native
+    def delete_issue_relation(id: Double, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Unit = js.native
     
-    def get_issue_by_id(id: Double, params: js.Any, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Issue = js.native
+    def get_issue_by_id(id: Double, params: Any, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Issue = js.native
     
-    def issue_relation_by_id(id: Double, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit = js.native
+    def issue_relation_by_id(id: Double, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Unit = js.native
     
     /////////////////////////////////////// REST API for Issue Relations(Alpha) ///////////////////////////////////////
-    def issue_relation_by_issue_id(id: Double, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit = js.native
+    def issue_relation_by_issue_id(id: Double, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Unit = js.native
     
     /////////////////////////////////////// REST API for issues(Stable) ///////////////////////////////////////
-    def issues(params: js.Any, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Issues = js.native
+    def issues(params: Any, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Issues = js.native
     
-    def remove_watcher(id: Double, params: js.Any, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit = js.native
+    def remove_watcher(id: Double, params: Any, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Unit = js.native
     
-    def update_issue(id: Double, issue: IssueData, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Issue = js.native
+    def update_issue(id: Double, issue: IssueData, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): Issue = js.native
     
     /////////////////////////////////////// REST API for Common(Alpha) ///////////////////////////////////////
-    def upload(content: js.Any, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): UploadResult = js.native
+    def upload(content: Any, callback: js.Function2[/* err */ Any, /* data */ Any, Unit]): UploadResult = js.native
   }
   
   trait Issue extends StObject {
@@ -150,7 +150,7 @@ object mod {
       
       inline def setUploadsUndefined: Self = StObject.set(x, "uploads", js.undefined)
       
-      inline def setUploadsVarargs(value: UploadRecord*): Self = StObject.set(x, "uploads", js.Array(value :_*))
+      inline def setUploadsVarargs(value: UploadRecord*): Self = StObject.set(x, "uploads", js.Array(value*))
     }
   }
   
@@ -302,7 +302,7 @@ object mod {
       
       inline def setIssues(value: js.Array[IssueRecord]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
       
-      inline def setIssuesVarargs(value: IssueRecord*): Self = StObject.set(x, "issues", js.Array(value :_*))
+      inline def setIssuesVarargs(value: IssueRecord*): Self = StObject.set(x, "issues", js.Array(value*))
     }
   }
   

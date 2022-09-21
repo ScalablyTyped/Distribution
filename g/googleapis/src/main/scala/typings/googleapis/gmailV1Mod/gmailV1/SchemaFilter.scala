@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Resource definition for Gmail filters. Filters apply to specific messages
-  * instead of an entire email thread.
-  */
 trait SchemaFilter extends StObject {
   
   /**
@@ -23,7 +19,7 @@ trait SchemaFilter extends StObject {
   /**
     * The server assigned ID of the filter.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFilter {
   
@@ -43,6 +39,8 @@ object SchemaFilter {
     inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }

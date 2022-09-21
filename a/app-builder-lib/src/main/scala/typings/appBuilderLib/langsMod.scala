@@ -944,7 +944,7 @@ object langsMod {
   
   @JSImport("app-builder-lib/out/util/langs", "lcid")
   @js.native
-  val lcid: js.Any = js.native
+  val lcid: Any = js.native
   
   inline def toLangWithRegion(lang: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLangWithRegion")(lang.asInstanceOf[js.Any]).asInstanceOf[String]
 }

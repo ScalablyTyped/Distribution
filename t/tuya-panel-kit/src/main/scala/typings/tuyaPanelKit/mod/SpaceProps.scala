@@ -8,14 +8,64 @@ trait SpaceProps
   extends StObject
      with ProgressProps {
   
+  /**
+    * @language zh-CN
+    * @description 滑动结束回调
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Callback of ending the slide.
+    * @defaultValue undefined
+    */
   var onSlidingComplete: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 值改变的回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Callback of value change
+    * @defaultValue () => {}
+    */
   var onValueChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条渲染线条的数目
+    * @defaultValue 120
+    */
+  /**
+    * @language en-US
+    * @description The number of rendering lines of the progress bar.
+    * @defaultValue 120
+    */
   var scaleNumber: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 进度条块状的宽度
+    * @defaultValue 0
+    */
+  /**
+    * @language en-US
+    * @description Width of progress bar block
+    * @defaultValue 0
+    */
   var strokeWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 具体值
+    * @defaultValue 50
+    */
+  /**
+    * @language en-US
+    * @description Value
+    * @defaultValue 50
+    */
   var value: js.UndefOr[Double] = js.undefined
 }
 object SpaceProps {

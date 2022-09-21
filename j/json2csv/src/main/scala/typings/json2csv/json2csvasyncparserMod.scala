@@ -1,6 +1,6 @@
 package typings.json2csv
 
-import typings.json2csv.json2csvbaseMod.json2csv.Options
+import typings.json2csv.mod.Options
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object json2csvasyncparserMod {
   
-  @JSImport("json2csv/JSON2CSVAsyncParser", JSImport.Default)
+  @JSImport("json2csv/JSON2CSVAsyncParser", JSImport.Namespace)
   @js.native
-  class default[T] () extends JSON2CSVAsyncParser[T] {
+  open class ^[T] () extends JSON2CSVAsyncParser[T] {
     def this(opts: Options[T]) = this()
     def this(opts: Unit, transformOpts: TransformOptions) = this()
     def this(opts: Options[T], transformOpts: TransformOptions) = this()
@@ -21,7 +21,7 @@ object json2csvasyncparserMod {
   
   @js.native
   trait JSON2CSVAsyncParser[T]
-    extends typings.json2csv.json2csvbaseMod.default[T] {
+    extends typings.json2csv.json2csvbaseMod.^[T] {
     
     def fromInput(input: Readable): JSON2CSVAsyncParser[T] = js.native
     
@@ -36,6 +36,6 @@ object json2csvasyncparserMod {
     
     def toOutput(output: Writable): JSON2CSVAsyncParser[T] = js.native
     
-    var transform: typings.json2csv.json2csvtransformMod.default[T] = js.native
+    var transform: typings.json2csv.json2csvtransformMod.^[T] = js.native
   }
 }

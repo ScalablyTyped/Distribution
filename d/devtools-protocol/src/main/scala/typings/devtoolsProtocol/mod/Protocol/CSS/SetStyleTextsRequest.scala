@@ -19,6 +19,6 @@ object SetStyleTextsRequest {
     
     inline def setEdits(value: js.Array[StyleDeclarationEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     
-    inline def setEditsVarargs(value: StyleDeclarationEdit*): Self = StObject.set(x, "edits", js.Array(value :_*))
+    inline def setEditsVarargs(value: StyleDeclarationEdit*): Self = StObject.set(x, "edits", js.Array(value*))
   }
 }

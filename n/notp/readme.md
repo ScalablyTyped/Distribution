@@ -10,10 +10,10 @@ Node One Time Password library, supports HOTP, TOTP and works with Google Authen
 | ------------------ | :-------------: |
 | Full name          | notp |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 42 |
-| # downloads        | 1079150 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 321728.3333333333 |
+| # stars            | 602.0 |
 
 ## Links
 - [Homepage](https://github.com/guyht/notp)

@@ -30,8 +30,8 @@ trait IStatusProxy
   var repair: js.UndefOr[
     js.Function3[
       /* xy */ js.UndefOr[Array], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -56,7 +56,7 @@ trait IStatusProxy
     * @param html String/HTMLElement The html that will replace the current innerHTML of the ghost element, or a DOM node to append as the child of the ghost element (in which case the innerHTML will be cleared first).
     */
   @JSName("update")
-  var update_IStatusProxy: js.UndefOr[js.Function1[/* html */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var update_IStatusProxy: js.UndefOr[js.Function1[/* html */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IStatusProxy {
   
@@ -80,7 +80,7 @@ object IStatusProxy {
     inline def setGetGhostUndefined: Self = StObject.set(x, "getGhost", js.undefined)
     
     inline def setRepair(
-      value: (/* xy */ js.UndefOr[Array], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* xy */ js.UndefOr[Array], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "repair", js.Any.fromFunction3(value))
     
     inline def setRepairUndefined: Self = StObject.set(x, "repair", js.undefined)
@@ -101,7 +101,7 @@ object IStatusProxy {
     
     inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     
-    inline def setUpdate(value: /* html */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: /* html */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }

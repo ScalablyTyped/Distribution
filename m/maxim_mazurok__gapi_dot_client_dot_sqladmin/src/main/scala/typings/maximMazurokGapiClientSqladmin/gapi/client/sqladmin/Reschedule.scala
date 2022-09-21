@@ -9,7 +9,10 @@ trait Reschedule extends StObject {
   /** Required. The type of the reschedule. */
   var rescheduleType: js.UndefOr[String] = js.undefined
   
-  /** Optional. Timestamp when the maintenance shall be rescheduled to if reschedule_type=SPECIFIC_TIME, in RFC 3339 format, for example *2012-11-15T16:19:00.094Z*. */
+  /**
+    * Optional. Timestamp when the maintenance shall be rescheduled to if reschedule_type=SPECIFIC_TIME, in [RFC 3339](https://tools.ietf.org/html/rfc3339) format, for example
+    * `2012-11-15T16:19:00.094Z`.
+    */
   var scheduleTime: js.UndefOr[String] = js.undefined
 }
 object Reschedule {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateSignalingChannelInput extends StObject {
   
   /**
-    * A name for the signaling channel that you are creating. It must be unique for each AWS account and AWS Region.
+    * A name for the signaling channel that you are creating. It must be unique for each Amazon Web Services account and Amazon Web Services Region.
     */
   var ChannelName: typings.awsSdk.kinesisvideoMod.ChannelName
   
@@ -49,6 +49,6 @@ object CreateSignalingChannelInput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

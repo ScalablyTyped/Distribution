@@ -41,7 +41,7 @@ trait IgGridMultiColumnHeadersMethods extends StObject {
   /**
     * Returns multicolumn headers array. if there aren"t multicolumn headers returns undefined
     */
-  def getMultiColumnHeaders(): js.Array[js.Any] = js.native
+  def getMultiColumnHeaders(): js.Array[Any] = js.native
   
   /**
     * Toggles a collapsible group.

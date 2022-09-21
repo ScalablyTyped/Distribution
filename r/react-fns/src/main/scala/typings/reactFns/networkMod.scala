@@ -15,14 +15,14 @@ object networkMod {
   
   @JSImport("react-fns/dist/Network", "Network")
   @js.native
-  class Network protected ()
+  open class Network protected ()
     extends typings.reactFns.networkNetworkMod.Network {
     def this(props: SharedRenderProps[NetworkProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SharedRenderProps[NetworkProps], context: js.Any) = this()
+    def this(props: SharedRenderProps[NetworkProps], context: Any) = this()
   }
   
   inline def withNetwork[Props](Component: ComponentType[Props & NetworkProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNetwork")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]

@@ -1,19 +1,30 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.details
-import typings.devextreme.devextremeStrings.thumbnails
+import typings.devextreme.mod.DevExpress.ui.dxFileManager.FileManagerItemViewMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Details extends StObject {
   
-  var details: js.UndefOr[`3`] = js.undefined
+  /**
+    * Configures the &apos;Details&apos; file system representation mode.
+    */
+  var details: js.UndefOr[Columns] = js.undefined
   
-  var mode: js.UndefOr[details | thumbnails] = js.undefined
+  /**
+    * Specifies the file system representation mode.
+    */
+  var mode: js.UndefOr[FileManagerItemViewMode] = js.undefined
   
+  /**
+    * Specifies whether to display folders in the view. When this property is false, folders are displayed in the navigation pane only.
+    */
   var showFolders: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether to display the parent directory in the view.
+    */
   var showParentFolder: js.UndefOr[Boolean] = js.undefined
 }
 object Details {
@@ -25,11 +36,11 @@ object Details {
   
   extension [Self <: Details](x: Self) {
     
-    inline def setDetails(value: `3`): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Columns): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    inline def setMode(value: details | thumbnails): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: FileManagerItemViewMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     

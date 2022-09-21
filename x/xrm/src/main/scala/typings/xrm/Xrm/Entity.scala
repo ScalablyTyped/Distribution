@@ -15,6 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Entity extends StObject {
   
   /**
+    * Adds a function to be called after the OnSave is complete.
+    * @param handler The handler.
+    * @remarks Added in 9.2
+    * @see {@link https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/events/postsave External Link: PostSave Event Documentation}
+    */
+  def addOnPostSave(handler: ContextSensitiveHandler): Unit = js.native
+  
+  /**
     * Adds a handler to be called when the record is saved.
     * @param handler The handler.
     */
@@ -25,7 +33,7 @@ trait Entity extends StObject {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/attributes External Link: Attributes (Client API reference)}
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
-  var attributes: ItemCollection[Attribute] = js.native
+  var attributes: ItemCollection[Attribute[Any]] = js.native
   
   /**
     * Gets an serialized-XML string representing data that will be passed to the server upon saving the record.
@@ -82,10 +90,11 @@ trait Entity extends StObject {
   def removeOnSave(handler: ContextSensitiveHandler): Unit = js.native
   
   /**
-    * Saves the record.
+    * Saves the record synchronously with the options to close the form or open a new form after the save is completed.
     * @remarks  When using quick create forms in the web application the saveandnew option is not
     *           applied. It will always work as if saveandclose were used. Quick create forms in
     *           Microsoft Dynamics CRM for tablets will apply the saveandnew behavior.
+    * @deprecated Deprecated in v9.1; This method is deprecated and we recommend to use the formContext.data.save method.
     */
   def save(): Unit = js.native
   def save(saveMode: EntitySaveMode): Unit = js.native

@@ -1,6 +1,6 @@
 package typings.toIco
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,7 +63,7 @@ object mod {
       
       inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
       
-      inline def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+      inline def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value*))
     }
   }
 }

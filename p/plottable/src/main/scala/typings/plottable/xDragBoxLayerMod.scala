@@ -15,5 +15,5 @@ object xDragBoxLayerMod {
     *
     * @constructor
     */
-  class XDragBoxLayer () extends DragBoxLayer
+  open class XDragBoxLayer () extends DragBoxLayer
 }

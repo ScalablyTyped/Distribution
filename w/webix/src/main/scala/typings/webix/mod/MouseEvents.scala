@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MouseEvents extends StObject {
   
-  def on_click(args: js.Any*): js.Any
+  def on_click(args: Any*): Any
   @JSName("on_click")
   var on_click_Original: WebixCallback
   
-  var on_context: StringDictionary[js.Any]
+  var on_context: StringDictionary[Any]
   
-  def on_dblclick(args: js.Any*): js.Any
+  def on_dblclick(args: Any*): Any
   @JSName("on_dblclick")
   var on_dblclick_Original: WebixCallback
   
-  def on_mouse_move(args: js.Any*): js.Any
+  def on_mouse_move(args: Any*): Any
   @JSName("on_mouse_move")
   var on_mouse_move_Original: WebixCallback
 }
@@ -31,7 +31,7 @@ object MouseEvents {
     
     inline def setOn_click(value: WebixCallback): Self = StObject.set(x, "on_click", value.asInstanceOf[js.Any])
     
-    inline def setOn_context(value: StringDictionary[js.Any]): Self = StObject.set(x, "on_context", value.asInstanceOf[js.Any])
+    inline def setOn_context(value: StringDictionary[Any]): Self = StObject.set(x, "on_context", value.asInstanceOf[js.Any])
     
     inline def setOn_dblclick(value: WebixCallback): Self = StObject.set(x, "on_dblclick", value.asInstanceOf[js.Any])
     

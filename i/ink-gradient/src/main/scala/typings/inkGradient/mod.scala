@@ -45,7 +45,7 @@ object mod extends Shortcut {
       
       inline def setColors(value: js.Array[js.Object | String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      inline def setColorsVarargs(value: (js.Object | String)*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: (js.Object | String)*): Self = StObject.set(x, "colors", js.Array(value*))
     }
   }
   
@@ -75,7 +75,7 @@ object mod extends Shortcut {
   // a user gives both of the mutually exclusive props.
   type Without[T, U] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in std.Exclude<keyof T, keyof U> ]:? never}
-    */ typings.inkGradient.inkGradientStrings.Without & TopLevel[js.Any]
+    */ typings.inkGradient.inkGradientStrings.Without & TopLevel[Any]
   
   type XOR[T, U] = T | U | ((Without[T, U]) & U) | ((Without[U, T]) & T)
   

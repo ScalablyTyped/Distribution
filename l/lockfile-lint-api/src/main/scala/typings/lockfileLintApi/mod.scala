@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("lockfile-lint-api", "ParseLockfile")
   @js.native
-  class ParseLockfile protected () extends StObject {
+  open class ParseLockfile protected () extends StObject {
     def this(options: ParseLockfileOptions) = this()
     
     def parseSync(): ParseLockfileResult = js.native
@@ -19,7 +19,7 @@ object mod {
   
   @JSImport("lockfile-lint-api", "ValidateHost")
   @js.native
-  class ValidateHost protected () extends StObject {
+  open class ValidateHost protected () extends StObject {
     def this(packages: typings.lockfileLintApi.anon.Packages) = this()
     
     def validate(hosts: Hosts): ValidationResult = js.native
@@ -30,7 +30,7 @@ object mod {
   
   @JSImport("lockfile-lint-api", "ValidateHttps")
   @js.native
-  class ValidateHttps protected () extends StObject {
+  open class ValidateHttps protected () extends StObject {
     def this(packages: typings.lockfileLintApi.anon.Packages) = this()
     
     def validate(): ValidationResult = js.native
@@ -38,7 +38,7 @@ object mod {
   
   @JSImport("lockfile-lint-api", "ValidateScheme")
   @js.native
-  class ValidateScheme protected () extends StObject {
+  open class ValidateScheme protected () extends StObject {
     def this(packages: typings.lockfileLintApi.anon.Packages) = this()
     
     def validate(schemes: js.Array[String]): ValidationResult = js.native
@@ -46,7 +46,7 @@ object mod {
   
   @JSImport("lockfile-lint-api", "ValidateUrl")
   @js.native
-  class ValidateUrl protected () extends StObject {
+  open class ValidateUrl protected () extends StObject {
     def this(packages: typings.lockfileLintApi.anon.Packages) = this()
     
     def validate(allowedUrls: js.Array[String]): ValidationResult = js.native
@@ -175,7 +175,7 @@ object mod {
       
       inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

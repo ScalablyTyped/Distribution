@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-discard-empty" : "5.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-discard-empty" : "5.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

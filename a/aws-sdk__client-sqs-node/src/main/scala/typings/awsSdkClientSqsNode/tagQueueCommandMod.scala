@@ -16,7 +16,7 @@ object tagQueueCommandMod {
   
   @JSImport("@aws-sdk/client-sqs-node/commands/TagQueueCommand", "TagQueueCommand")
   @js.native
-  class TagQueueCommand protected ()
+  open class TagQueueCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object tagQueueCommandMod {
     override val middlewareStack: MiddlewareStack[TagQueueInput, TagQueueOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: SQSResolvedConfiguration
     ): Handler[TagQueueInput, TagQueueOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: SQSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[TagQueueInput, TagQueueOutput] = js.native
   }
 }

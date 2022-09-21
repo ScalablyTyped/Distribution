@@ -8,5 +8,5 @@ object deleteBucketWebsiteMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/DeleteBucketWebsite", "DeleteBucketWebsite")
   @js.native
-  val DeleteBucketWebsite: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DeleteBucketWebsite: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

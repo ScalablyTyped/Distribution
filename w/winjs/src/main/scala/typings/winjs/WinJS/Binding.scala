@@ -260,7 +260,7 @@ object Binding {
       * @param action The function to invoke asynchronously when the property may have changed.
       * @returns A reference to this observableMixin object.
       **/
-    def bind(name: String, action: js.Function): js.Any = js.native
+    def bind(name: String, action: js.Function): Any = js.native
     
     /**
       * Returns a new list consisting of a combination of two arrays.
@@ -310,7 +310,7 @@ object Binding {
       * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
       * @returns true if preventDefault was called on the event.
       **/
-    def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+    def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
     
     /**
       * Checks whether the specified callback function returns true for all elements in a list.
@@ -321,7 +321,7 @@ object Binding {
     def every(callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean]): Boolean = js.native
     def every(
       callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean],
-      thisArg: js.Any
+      thisArg: Any
     ): Boolean = js.native
     
     /**
@@ -330,10 +330,10 @@ object Binding {
       * @param thisArg An object to which the this keyword can refer in the callback function. If thisArg is omitted, undefined is used.
       * @returns An array containing the elements that meet the condition specified in the callback function.
       **/
-    def filter(callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any]): js.Array[T] = js.native
+    def filter(callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any]): js.Array[T] = js.native
     def filter(
-      callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any],
-      thisArg: js.Any
+      callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any],
+      thisArg: Any
     ): js.Array[T] = js.native
     
     /**
@@ -344,7 +344,7 @@ object Binding {
     def forEach(callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit]): Unit = js.native
     def forEach(
       callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit],
-      thisArg: js.Any
+      thisArg: Any
     ): Unit = js.native
     
     /**
@@ -389,7 +389,7 @@ object Binding {
     def map[G](callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], G]): js.Array[G] = js.native
     def map[G](
       callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], G],
-      thisArg: js.Any
+      thisArg: Any
     ): js.Array[G] = js.native
     
     /**
@@ -399,7 +399,7 @@ object Binding {
       * @param oldValue The old value for the property.
       * @returns A promise that is completed when the notifications are complete.
       **/
-    def notify(name: String, newValue: js.Any, oldValue: js.Any): Promise[js.Any] = js.native
+    def notify(name: String, newValue: Any, oldValue: Any): Promise[Any] = js.native
     
     /**
       * Forces the list to send a reload notification to any listeners.
@@ -411,37 +411,37 @@ object Binding {
       * An item in the list has changed its value.
       * @param eventInfo An object that contains information about the event. The detail contains the following information: index, key, newItem, newValue, oldItem, oldValue.
       **/
-    def onitemchanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
+    def onitemchanged(eventInfo: CustomEvent[Any]): Unit = js.native
     
     /**
       * A new item has been inserted into the list.
       * @param eventInfo An object that contains information about the event. The detail contains the following information: index, key, value.
       **/
-    def oniteminserted(eventInfo: CustomEvent[js.Any]): Unit = js.native
+    def oniteminserted(eventInfo: CustomEvent[Any]): Unit = js.native
     
     /**
       * An item has been changed locations in the list.
       * @param eventInfo An object that contains information about the event. The detail contains the following information: index, key, value.
       **/
-    def onitemmoved(eventInfo: CustomEvent[js.Any]): Unit = js.native
+    def onitemmoved(eventInfo: CustomEvent[Any]): Unit = js.native
     
     /**
       * An item has been mutated. This event occurs as a result of calling the notifyMutated method.
       * @param eventInfo An object that contains information about the event. The detail contains the following information: index, key, value.
       **/
-    def onitemmutated(eventInfo: CustomEvent[js.Any]): Unit = js.native
+    def onitemmutated(eventInfo: CustomEvent[Any]): Unit = js.native
     
     /**
       * An item has been removed from the list.
       * @param eventInfo An object that contains information about the event. The detail contains the following information: index, key, value.
       **/
-    def onitemremoved(eventInfo: CustomEvent[js.Any]): Unit = js.native
+    def onitemremoved(eventInfo: CustomEvent[Any]): Unit = js.native
     
     /**
       * The list has been refreshed. Any references to items in the list may be incorrect.
       * @param eventInfo An object that contains information about the event. The detail property of this object is null.
       **/
-    def onreload(eventInfo: CustomEvent[js.Any]): Unit = js.native
+    def onreload(eventInfo: CustomEvent[Any]): Unit = js.native
     
     /**
       * Accumulates a single result by calling the specified callback function for all elements in a list. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
@@ -451,8 +451,8 @@ object Binding {
       **/
     def reduce(
       callback: js.Function4[
-          /* previousValue */ js.Any, 
-          /* currentValue */ js.Any, 
+          /* previousValue */ Any, 
+          /* currentValue */ Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
           T
@@ -460,8 +460,8 @@ object Binding {
     ): T = js.native
     def reduce(
       callback: js.Function4[
-          /* previousValue */ js.Any, 
-          /* currentValue */ js.Any, 
+          /* previousValue */ Any, 
+          /* currentValue */ Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
           T
@@ -477,8 +477,8 @@ object Binding {
       **/
     def reduceRight(
       callback: js.Function4[
-          /* previousValue */ js.Any, 
-          /* currentValue */ js.Any, 
+          /* previousValue */ Any, 
+          /* currentValue */ Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
           T
@@ -486,8 +486,8 @@ object Binding {
     ): T = js.native
     def reduceRight(
       callback: js.Function4[
-          /* previousValue */ js.Any, 
-          /* currentValue */ js.Any, 
+          /* previousValue */ Any, 
+          /* currentValue */ Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
           T
@@ -522,7 +522,7 @@ object Binding {
     def some(callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean]): Boolean = js.native
     def some(
       callback: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean],
-      thisArg: js.Any
+      thisArg: Any
     ): Boolean = js.native
     
     /**
@@ -531,7 +531,7 @@ object Binding {
       * @param action The function to remove from the listener list for the specified property. If this parameter is omitted, all listeners are removed for the specific property.
       * @returns This object is returned.
       **/
-    def unbind(name: String, action: js.Function): js.Any = js.native
+    def unbind(name: String, action: js.Function): Any = js.native
   }
   
   /**
@@ -666,7 +666,7 @@ object Binding {
     /**
       * Gets or sets the default binding initializer for the template.
       **/
-    var bindingInitializer: js.Any = js.native
+    var bindingInitializer: Any = js.native
     
     /**
       * Gets or sets a value that specifies whether a debug break is inserted into the first rendering of each template. This property only has an effect when the app is in debug mode.
@@ -702,8 +702,8 @@ object Binding {
       * @param container The element to which to add this rendered template. If this parameter is omitted, a new DIV is created.
       * @returns A Promise that will be completed after binding has finished. The value is either container or the created DIV. promise that is completed after binding has finished.
       **/
-    def render(dataContext: js.Any): Promise[HTMLElement] = js.native
-    def render(dataContext: js.Any, container: HTMLElement): Promise[HTMLElement] = js.native
+    def render(dataContext: Any): Promise[HTMLElement] = js.native
+    def render(dataContext: Any, container: HTMLElement): Promise[HTMLElement] = js.native
     
     /**
       * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.

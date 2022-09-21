@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-series
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Run promise-returning & async functions in series
@@ -10,10 +10,10 @@ Run promise-returning & async functions in series
 | ------------------ | :-------------: |
 | Full name          | p-series |
 | Keywords           | promise, series, serial, sequence, sequential, ordered, task, tasks, array, collection, iterable, iterator, async, await, promises, bluebird |
-| # releases         | 3 |
-| # dependents       | 59 |
-| # downloads        | 1710865 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 124967.66666666667 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-series#readme)

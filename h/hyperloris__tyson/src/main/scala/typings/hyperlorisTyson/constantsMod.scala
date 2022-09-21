@@ -8,7 +8,7 @@ object constantsMod {
   
   @JSImport("@hyperloris/tyson/dist/types/constants", "Constants")
   @js.native
-  class Constants () extends StObject
+  open class Constants () extends StObject
   /* static members */
   object Constants {
     

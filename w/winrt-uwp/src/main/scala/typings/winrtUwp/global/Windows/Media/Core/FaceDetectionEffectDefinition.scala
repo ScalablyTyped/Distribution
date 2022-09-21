@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Core.FaceDetectionEffectDefinition")
 @js.native
 /** Initializes a new instance of the FaceDetectionEffectDefinition class. */
-class FaceDetectionEffectDefinition ()
+open class FaceDetectionEffectDefinition ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.FaceDetectionEffectDefinition {
   

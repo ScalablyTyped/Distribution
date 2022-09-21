@@ -16,28 +16,28 @@ object viewViewMod {
   
   @JSImport("@uirouter/core/lib/view/view", "ViewService")
   @js.native
-  class ViewService protected () extends StObject {
+  open class ViewService protected () extends StObject {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
     
-    /** @internal */ /* private */ var _listeners: js.Any = js.native
+    /** @internal */ /* private */ var _listeners: Any = js.native
     
     /** @internal */
     var _pluginapi: ViewServicePluginAPI = js.native
     
-    /** @internal */ /* private */ var _rootContext: js.Any = js.native
+    /** @internal */ /* private */ var _rootContext: Any = js.native
     
     /** @internal */
-    /* private */ var _rootViewContext: js.Any = js.native
+    /* private */ var _rootViewContext: Any = js.native
     
-    /** @internal */ /* private */ var _uiViews: js.Any = js.native
+    /** @internal */ /* private */ var _uiViews: Any = js.native
     
-    /** @internal */ /* private */ var _viewConfigFactories: js.Any = js.native
+    /** @internal */ /* private */ var _viewConfigFactories: Any = js.native
     
     /** @internal */
-    /* private */ var _viewConfigFactory: js.Any = js.native
+    /* private */ var _viewConfigFactory: Any = js.native
     
-    /** @internal */ /* private */ var _viewConfigs: js.Any = js.native
+    /** @internal */ /* private */ var _viewConfigs: Any = js.native
     
     def activateViewConfig(viewConfig: ViewConfig): Unit = js.native
     
@@ -46,14 +46,14 @@ object viewViewMod {
       *
       * @return {Array} Returns an array of fully-qualified view names.
       */
-    def active(): js.Array[js.Any] = js.native
+    def active(): js.Array[Any] = js.native
     
     /**
       * Returns the list of views currently available on the page, by fully-qualified name.
       *
       * @return {Array} Returns an array of fully-qualified view names.
       */
-    def available(): js.Array[js.Any] = js.native
+    def available(): js.Array[Any] = js.native
     
     def createViewConfig(path: js.Array[PathNode], decl: ViewDeclaration): js.Array[ViewConfig] = js.native
     
@@ -84,7 +84,7 @@ object viewViewMod {
       */
     def registerUIView(uiView: ActiveUIView): js.Function0[Unit] = js.native
     
-    /* private */ var router: js.Any = js.native
+    /* private */ var router: Any = js.native
     
     def sync(): Unit = js.native
   }
@@ -190,7 +190,7 @@ object viewViewMod {
     def _rootViewContext(): ViewContext = js.native
     def _rootViewContext(context: ViewContext): ViewContext = js.native
     
-    def _viewConfigFactory(viewType: String, factory: ViewConfigFactory): js.Any = js.native
+    def _viewConfigFactory(viewType: String, factory: ViewConfigFactory): Any = js.native
   }
   
   type ViewSyncListener = js.Function1[/* viewTuples */ js.Array[ViewTuple], Unit]

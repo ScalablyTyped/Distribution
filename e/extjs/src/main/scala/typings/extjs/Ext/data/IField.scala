@@ -10,7 +10,7 @@ trait IField
      with IBase {
   
   /** [Config Option] (Function) */
-  var convert: js.UndefOr[js.Any] = js.undefined
+  var convert: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var dateFormat: js.UndefOr[String] = js.undefined
@@ -22,10 +22,10 @@ trait IField
   var dateWriteFormat: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object) */
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Number) */
-  var mapping: js.UndefOr[js.Any] = js.undefined
+  var mapping: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var name: js.UndefOr[String] = js.undefined
@@ -34,16 +34,16 @@ trait IField
   var persist: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Function) */
-  var serialize: js.UndefOr[js.Any] = js.undefined
+  var serialize: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var sortDir: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Function/String) */
-  var sortType: js.UndefOr[js.Any] = js.undefined
+  var sortType: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Object) */
-  var `type`: js.UndefOr[js.Any] = js.undefined
+  var `type`: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var useNull: js.UndefOr[Boolean] = js.undefined
@@ -57,7 +57,7 @@ object IField {
   
   extension [Self <: IField](x: Self) {
     
-    inline def setConvert(value: js.Any): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
+    inline def setConvert(value: Any): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
     inline def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
@@ -73,11 +73,11 @@ object IField {
     
     inline def setDateWriteFormatUndefined: Self = StObject.set(x, "dateWriteFormat", js.undefined)
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    inline def setMapping(value: js.Any): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+    inline def setMapping(value: Any): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     
     inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
     
@@ -89,7 +89,7 @@ object IField {
     
     inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     
-    inline def setSerialize(value: js.Any): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
+    inline def setSerialize(value: Any): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
     
     inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
     
@@ -97,11 +97,11 @@ object IField {
     
     inline def setSortDirUndefined: Self = StObject.set(x, "sortDir", js.undefined)
     
-    inline def setSortType(value: js.Any): Self = StObject.set(x, "sortType", value.asInstanceOf[js.Any])
+    inline def setSortType(value: Any): Self = StObject.set(x, "sortType", value.asInstanceOf[js.Any])
     
     inline def setSortTypeUndefined: Self = StObject.set(x, "sortType", js.undefined)
     
-    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     

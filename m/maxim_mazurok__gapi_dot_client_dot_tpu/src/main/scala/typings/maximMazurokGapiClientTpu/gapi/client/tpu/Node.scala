@@ -10,6 +10,9 @@ trait Node extends StObject {
   /** Required. The type of hardware accelerators associated with this node. */
   var acceleratorType: js.UndefOr[String] = js.undefined
   
+  /** Output only. The API version that created this Node. */
+  var apiVersion: js.UndefOr[String] = js.undefined
+  
   /**
     * The CIDR block that the TPU node will use when selecting an IP address. This CIDR block must be a /29 block; the Compute Engine networks API forbids a smaller block, and using a
     * larger block would be wasteful (a node can only consume one IP address). Errors will occur if the CIDR block has already been used for a currently existing TPU node, the CIDR block
@@ -36,7 +39,7 @@ trait Node extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientTpu.maximMazurokGapiClientTpuStrings.Node & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientTpu.maximMazurokGapiClientTpuStrings.Node & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. Immutable. The name of the TPU */
@@ -94,6 +97,10 @@ object Node {
     
     inline def setAcceleratorTypeUndefined: Self = StObject.set(x, "acceleratorType", js.undefined)
     
+    inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    
     inline def setCidrBlock(value: String): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
     
     inline def setCidrBlockUndefined: Self = StObject.set(x, "cidrBlock", js.undefined)
@@ -121,7 +128,7 @@ object Node {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientTpu.maximMazurokGapiClientTpuStrings.Node & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTpu.maximMazurokGapiClientTpuStrings.Node & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -136,7 +143,7 @@ object Node {
     
     inline def setNetworkEndpointsUndefined: Self = StObject.set(x, "networkEndpoints", js.undefined)
     
-    inline def setNetworkEndpointsVarargs(value: NetworkEndpoint*): Self = StObject.set(x, "networkEndpoints", js.Array(value :_*))
+    inline def setNetworkEndpointsVarargs(value: NetworkEndpoint*): Self = StObject.set(x, "networkEndpoints", js.Array(value*))
     
     inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
@@ -160,7 +167,7 @@ object Node {
     
     inline def setSymptomsUndefined: Self = StObject.set(x, "symptoms", js.undefined)
     
-    inline def setSymptomsVarargs(value: Symptom*): Self = StObject.set(x, "symptoms", js.Array(value :_*))
+    inline def setSymptomsVarargs(value: Symptom*): Self = StObject.set(x, "symptoms", js.Array(value*))
     
     inline def setTensorflowVersion(value: String): Self = StObject.set(x, "tensorflowVersion", value.asInstanceOf[js.Any])
     

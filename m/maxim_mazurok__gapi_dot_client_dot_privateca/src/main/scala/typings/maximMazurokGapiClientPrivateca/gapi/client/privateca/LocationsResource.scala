@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LocationsResource extends StObject {
   
-  var certificateAuthorities: CertificateAuthoritiesResource = js.native
+  var caPools: CaPoolsResource = js.native
+  
+  var certificateTemplates: CertificateTemplatesResource = js.native
   
   /** Gets information about a location. */
   def get(): Request[Location] = js.native
@@ -21,6 +23,4 @@ trait LocationsResource extends StObject {
   def list(request: Filter): Request[ListLocationsResponse] = js.native
   
   var operations: OperationsResource = js.native
-  
-  var reusableConfigs: ReusableConfigsResource = js.native
 }

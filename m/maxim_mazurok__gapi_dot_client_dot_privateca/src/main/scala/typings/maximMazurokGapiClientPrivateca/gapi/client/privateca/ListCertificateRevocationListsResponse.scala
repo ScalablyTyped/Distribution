@@ -28,7 +28,7 @@ object ListCertificateRevocationListsResponse {
     
     inline def setCertificateRevocationListsUndefined: Self = StObject.set(x, "certificateRevocationLists", js.undefined)
     
-    inline def setCertificateRevocationListsVarargs(value: CertificateRevocationList*): Self = StObject.set(x, "certificateRevocationLists", js.Array(value :_*))
+    inline def setCertificateRevocationListsVarargs(value: CertificateRevocationList*): Self = StObject.set(x, "certificateRevocationLists", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
@@ -38,6 +38,6 @@ object ListCertificateRevocationListsResponse {
     
     inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
-    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
+    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value*))
   }
 }

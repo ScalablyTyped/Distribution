@@ -1,26 +1,8 @@
 
 # Scala.js typings for ant-design__icons-react-native
 
-Typings are for version 2.2.1
+Typings are for version 2.3.2
 
-## Library description:
-<h1 align="center"> Ant Design Icons for React Native </h1>
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @ant-design/icons-react-native |
-| Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 5 |
-| # downloads        | 135614 |
-| # stars            | 0 |
-
-## Links
-- [Homepage](https://github.com/ant-design/ant-design-icons#readme)
-- [Bugs](https://github.com/ant-design/ant-design-icons/issues)
-- [Repository](https://github.com/ant-design/ant-design-icons)
-- [Npm](https://www.npmjs.com/package/%40ant-design%2Ficons-react-native)
-    
 
 
 ## Note

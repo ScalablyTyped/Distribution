@@ -12,7 +12,7 @@ trait TextStyleLevel extends StObject {
   
   val ParagraphFormat: typings.activexPowerpoint.PowerPoint.ParagraphFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.TextStyleLevel_typekey")
   var PowerPointDotTextStyleLevel_typekey: TextStyleLevel
@@ -23,7 +23,7 @@ object TextStyleLevel {
     Application: Application,
     Font: Font,
     ParagraphFormat: ParagraphFormat,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotTextStyleLevel_typekey: TextStyleLevel
   ): TextStyleLevel = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Font = Font.asInstanceOf[js.Any], ParagraphFormat = ParagraphFormat.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object TextStyleLevel {
     
     inline def setParagraphFormat(value: ParagraphFormat): Self = StObject.set(x, "ParagraphFormat", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotTextStyleLevel_typekey(value: TextStyleLevel): Self = StObject.set(x, "PowerPoint.TextStyleLevel_typekey", value.asInstanceOf[js.Any])
   }

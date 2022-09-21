@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NamedItemArrayValuesData extends StObject {
   
   /**
-    *
     * Represents the types for each item in the named item array
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var types: js.UndefOr[js.Array[js.Array[RangeValueType]]] = js.undefined
   
   /**
-    *
     * Represents the values of each item in the named item array.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
-  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var values: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
 }
 object NamedItemArrayValuesData {
   
@@ -37,12 +37,12 @@ object NamedItemArrayValuesData {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: js.Array[RangeValueType]*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: js.Array[RangeValueType]*): Self = StObject.set(x, "types", js.Array(value*))
     
-    inline def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Array[Any]*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

@@ -30,11 +30,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojselectcombobox.ojComboboxOneSettableProperties<K, D>> */
 trait ojComboboxOneSettablePropertiesLenient[K, D]
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
-  var asyncValidators: js.UndefOr[js.Array[AsyncValidator[js.Any]]] = js.undefined
+  var asyncValidators: js.UndefOr[js.Array[AsyncValidator[Any]]] = js.undefined
   
-  var converter: js.UndefOr[Converter[js.Any] | RegisteredConverter | Null] = js.undefined
+  var converter: js.UndefOr[Converter[Any] | RegisteredConverter | Null] = js.undefined
   
   var describedBy: js.UndefOr[String | Null] = js.undefined
   
@@ -80,9 +80,9 @@ trait ojComboboxOneSettablePropertiesLenient[K, D]
     typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown
   ] = js.undefined
   
-  var validators: js.UndefOr[(js.Array[Validator[js.Any] | RegisteredValidator]) | Null] = js.undefined
+  var validators: js.UndefOr[(js.Array[Validator[Any] | RegisteredValidator]) | Null] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
   
   var valueOption: js.UndefOr[LabelValue] = js.undefined
 }
@@ -95,13 +95,13 @@ object ojComboboxOneSettablePropertiesLenient {
   
   extension [Self <: ojComboboxOneSettablePropertiesLenient[?, ?], K, D](x: Self & (ojComboboxOneSettablePropertiesLenient[K, D])) {
     
-    inline def setAsyncValidators(value: js.Array[AsyncValidator[js.Any]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
+    inline def setAsyncValidators(value: js.Array[AsyncValidator[Any]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     
     inline def setAsyncValidatorsUndefined: Self = StObject.set(x, "asyncValidators", js.undefined)
     
-    inline def setAsyncValidatorsVarargs(value: AsyncValidator[js.Any]*): Self = StObject.set(x, "asyncValidators", js.Array(value :_*))
+    inline def setAsyncValidatorsVarargs(value: AsyncValidator[Any]*): Self = StObject.set(x, "asyncValidators", js.Array(value*))
     
-    inline def setConverter(value: Converter[js.Any] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+    inline def setConverter(value: Converter[Any] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     
     inline def setConverterNull: Self = StObject.set(x, "converter", null)
     
@@ -141,7 +141,7 @@ object ojComboboxOneSettablePropertiesLenient {
     
     inline def setMessagesCustomUndefined: Self = StObject.set(x, "messagesCustom", js.undefined)
     
-    inline def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value :_*))
+    inline def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value*))
     
     inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
@@ -169,7 +169,7 @@ object ojComboboxOneSettablePropertiesLenient {
     
     inline def setOptionsVarargs(
       value: (typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup)*
-    ): Self = StObject.set(x, "options", js.Array(value :_*))
+    ): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPickerAttributes(value: Class): Self = StObject.set(x, "pickerAttributes", value.asInstanceOf[js.Any])
     
@@ -203,15 +203,15 @@ object ojComboboxOneSettablePropertiesLenient {
     
     inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
     
-    inline def setValidators(value: js.Array[Validator[js.Any] | RegisteredValidator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: js.Array[Validator[Any] | RegisteredValidator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     inline def setValidatorsNull: Self = StObject.set(x, "validators", null)
     
     inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
-    inline def setValidatorsVarargs(value: (Validator[js.Any] | RegisteredValidator)*): Self = StObject.set(x, "validators", js.Array(value :_*))
+    inline def setValidatorsVarargs(value: (Validator[Any] | RegisteredValidator)*): Self = StObject.set(x, "validators", js.Array(value*))
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueOption(value: LabelValue): Self = StObject.set(x, "valueOption", value.asInstanceOf[js.Any])
     

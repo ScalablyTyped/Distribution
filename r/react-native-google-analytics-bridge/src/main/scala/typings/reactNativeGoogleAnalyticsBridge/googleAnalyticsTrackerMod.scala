@@ -34,7 +34,7 @@ object googleAnalyticsTrackerMod {
     */
   @JSImport("react-native-google-analytics-bridge/dist/GoogleAnalyticsTracker", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with GoogleAnalyticsTracker {
     /**
@@ -285,8 +285,8 @@ object googleAnalyticsTrackerMod {
       * @param {{fieldName: value}} customDimensions
       * @returns {{fieldIndex: value}}
       */
-    /* private */ var transformCustomDimensionsFieldsToIndexes: js.Any = js.native
+    /* private */ var transformCustomDimensionsFieldsToIndexes: Any = js.native
     
-    /* private */ var transformPayload: js.Any = js.native
+    /* private */ var transformPayload: Any = js.native
   }
 }

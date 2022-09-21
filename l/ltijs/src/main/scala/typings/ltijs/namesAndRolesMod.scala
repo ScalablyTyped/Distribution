@@ -54,7 +54,7 @@ object namesAndRolesMod {
       
       inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value*))
       
       inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
@@ -124,7 +124,7 @@ object namesAndRolesMod {
       
       inline def setMembers(value: js.Array[Member]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      inline def setMembersVarargs(value: Member*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: Member*): Self = StObject.set(x, "members", js.Array(value*))
       
       inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       

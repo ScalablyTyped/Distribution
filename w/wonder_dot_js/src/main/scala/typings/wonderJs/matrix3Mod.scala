@@ -1,6 +1,5 @@
 package typings.wonderJs
 
-import typings.std.Float32Array
 import typings.wonderJs.vector2Mod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,8 +9,8 @@ object matrix3Mod {
   
   @JSImport("wonder.js/dist/es2015/math/Matrix3", "Matrix3")
   @js.native
-  class Matrix3 () extends StObject {
-    def this(mat: Float32Array) = this()
+  open class Matrix3 () extends StObject {
+    def this(mat: js.typedarray.Float32Array) = this()
     
     var a: Double = js.native
     
@@ -19,8 +18,8 @@ object matrix3Mod {
     
     var c: Double = js.native
     
-    def cloneToArray(array: Float32Array): Matrix3 = js.native
-    def cloneToArray(array: Float32Array, offset: Double): Matrix3 = js.native
+    def cloneToArray(array: js.typedarray.Float32Array): Matrix3 = js.native
+    def cloneToArray(array: js.typedarray.Float32Array, offset: Double): Matrix3 = js.native
     
     var d: Double = js.native
     
@@ -66,7 +65,7 @@ object matrix3Mod {
     
     var ty: Double = js.native
     
-    var values: Float32Array = js.native
+    var values: js.typedarray.Float32Array = js.native
   }
   /* static members */
   object Matrix3 {
@@ -76,6 +75,6 @@ object matrix3Mod {
     val ^ : js.Any = js.native
     
     inline def create(): Matrix3 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Matrix3]
-    inline def create(mat: Float32Array): Matrix3 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mat.asInstanceOf[js.Any]).asInstanceOf[Matrix3]
+    inline def create(mat: js.typedarray.Float32Array): Matrix3 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mat.asInstanceOf[js.Any]).asInstanceOf[Matrix3]
   }
 }

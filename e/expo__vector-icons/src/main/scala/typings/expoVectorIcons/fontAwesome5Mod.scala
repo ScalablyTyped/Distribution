@@ -1,14 +1,15 @@
 package typings.expoVectorIcons
 
+import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object fontAwesome5Mod {
+object fontAwesome5Mod extends Shortcut {
   
   @JSImport("@expo/vector-icons/build/FontAwesome5", JSImport.Default)
   @js.native
-  val default: js.Any = js.native
+  val default: Any = js.native
   
   object FA5Style {
     
@@ -36,4 +37,9 @@ object fontAwesome5Mod {
     def solid: String = js.native
     inline def solid_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("solid")(x.asInstanceOf[js.Any])
   }
+  
+  type _To = Any
+  
+  /* This means you don't have to write `default`, but can instead just say `fontAwesome5Mod.foo` */
+  override def _to: Any = default
 }

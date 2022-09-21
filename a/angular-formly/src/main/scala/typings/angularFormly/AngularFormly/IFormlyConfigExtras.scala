@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IFormlyConfigExtras extends StObject {
   
-  var apiCheckInstance: js.Any
+  var apiCheckInstance: Any
   
   var defaultHideDirective: String
   
   var disableNgModelAttrsManipulator: Boolean
   
-  var errorExistsAndShouldBeVisibleExpression: js.Any
+  var errorExistsAndShouldBeVisibleExpression: Any
   
   var explicitAsync: Boolean
   
@@ -27,10 +27,10 @@ trait IFormlyConfigExtras extends StObject {
 object IFormlyConfigExtras {
   
   inline def apply(
-    apiCheckInstance: js.Any,
+    apiCheckInstance: Any,
     defaultHideDirective: String,
     disableNgModelAttrsManipulator: Boolean,
-    errorExistsAndShouldBeVisibleExpression: js.Any,
+    errorExistsAndShouldBeVisibleExpression: Any,
     explicitAsync: Boolean,
     fieldTransform: js.Function | js.Array[js.Function],
     getFieldId: js.Function,
@@ -43,19 +43,19 @@ object IFormlyConfigExtras {
   
   extension [Self <: IFormlyConfigExtras](x: Self) {
     
-    inline def setApiCheckInstance(value: js.Any): Self = StObject.set(x, "apiCheckInstance", value.asInstanceOf[js.Any])
+    inline def setApiCheckInstance(value: Any): Self = StObject.set(x, "apiCheckInstance", value.asInstanceOf[js.Any])
     
     inline def setDefaultHideDirective(value: String): Self = StObject.set(x, "defaultHideDirective", value.asInstanceOf[js.Any])
     
     inline def setDisableNgModelAttrsManipulator(value: Boolean): Self = StObject.set(x, "disableNgModelAttrsManipulator", value.asInstanceOf[js.Any])
     
-    inline def setErrorExistsAndShouldBeVisibleExpression(value: js.Any): Self = StObject.set(x, "errorExistsAndShouldBeVisibleExpression", value.asInstanceOf[js.Any])
+    inline def setErrorExistsAndShouldBeVisibleExpression(value: Any): Self = StObject.set(x, "errorExistsAndShouldBeVisibleExpression", value.asInstanceOf[js.Any])
     
     inline def setExplicitAsync(value: Boolean): Self = StObject.set(x, "explicitAsync", value.asInstanceOf[js.Any])
     
     inline def setFieldTransform(value: js.Function | js.Array[js.Function]): Self = StObject.set(x, "fieldTransform", value.asInstanceOf[js.Any])
     
-    inline def setFieldTransformVarargs(value: js.Function*): Self = StObject.set(x, "fieldTransform", js.Array(value :_*))
+    inline def setFieldTransformVarargs(value: js.Function*): Self = StObject.set(x, "fieldTransform", js.Array(value*))
     
     inline def setGetFieldId(value: js.Function): Self = StObject.set(x, "getFieldId", value.asInstanceOf[js.Any])
     

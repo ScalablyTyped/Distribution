@@ -29,18 +29,39 @@ object anon {
   
   trait Cooked extends StObject {
     
-    var cooked: js.UndefOr[String] = js.undefined
+    var cooked: String
     
-    var raw: js.UndefOr[String] = js.undefined
+    var raw: String
   }
   object Cooked {
     
-    inline def apply(): Cooked = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(cooked: String, raw: String): Cooked = {
+      val __obj = js.Dynamic.literal(cooked = cooked.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cooked]
     }
     
     extension [Self <: Cooked](x: Self) {
+      
+      inline def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
+      
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Raw extends StObject {
+    
+    var cooked: js.UndefOr[String] = js.undefined
+    
+    var raw: js.UndefOr[String] = js.undefined
+  }
+  object Raw {
+    
+    inline def apply(): Raw = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Raw]
+    }
+    
+    extension [Self <: Raw](x: Self) {
       
       inline def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
       
@@ -49,27 +70,6 @@ object anon {
       inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
       inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
-    }
-  }
-  
-  trait Raw extends StObject {
-    
-    var cooked: String
-    
-    var raw: String
-  }
-  object Raw {
-    
-    inline def apply(cooked: String, raw: String): Raw = {
-      val __obj = js.Dynamic.literal(cooked = cooked.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Raw]
-    }
-    
-    extension [Self <: Raw](x: Self) {
-      
-      inline def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
-      
-      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
 }

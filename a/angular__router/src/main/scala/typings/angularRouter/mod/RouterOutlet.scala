@@ -1,66 +1,84 @@
 package typings.angularRouter.mod
 
 import typings.angularCore.mod.ChangeDetectorRef
-import typings.angularCore.mod.ComponentFactoryResolver
-import typings.angularCore.mod.ComponentRef
+import typings.angularCore.mod.EnvironmentInjector
 import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.OnInit
 import typings.angularCore.mod.ViewContainerRef
+import typings.angularCore.mod.ɵɵDirectiveDeclaration
+import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.angularRouter.angularRouterBooleans.`true`
+import typings.angularRouter.angularRouterStrings.`router-outlet`
+import typings.angularRouter.angularRouterStrings.outlet
+import typings.angularRouter.anon.ActivateEvents
+import typings.angularRouter.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "RouterOutlet")
 @js.native
-class RouterOutlet protected ()
+open class RouterOutlet protected ()
   extends StObject
      with OnDestroy
-     with OnInit {
+     with OnInit
+     with RouterOutletContract {
   def this(
     parentContexts: ChildrenOutletContexts,
     location: ViewContainerRef,
-    resolver: ComponentFactoryResolver,
     name: String,
-    changeDetector: ChangeDetectorRef
+    changeDetector: ChangeDetectorRef,
+    environmentInjector: EnvironmentInjector
   ) = this()
   
-  /* private */ var _activatedRoute: js.Any = js.native
+  /* private */ var _activatedRoute: Any = js.native
   
-  var activateEvents: EventEmitter[js.Any] = js.native
+  @JSName("activateEvents")
+  var activateEvents_RouterOutlet: EventEmitter[Any] = js.native
   
-  def activateWith(activatedRoute: ActivatedRoute): Unit = js.native
-  def activateWith(activatedRoute: ActivatedRoute, resolver: ComponentFactoryResolver): Unit = js.native
+  /* private */ var activated: Any = js.native
   
-  /* private */ var activated: js.Any = js.native
+  @JSName("activatedRouteData")
+  def activatedRouteData_MRouterOutlet: Data = js.native
   
-  def activatedRoute: ActivatedRoute = js.native
-  
-  def activatedRouteData: Data = js.native
-  
-  /**
-    * Called when the `RouteReuseStrategy` instructs to re-attach a previously detached subtree
-    */
-  def attach(ref: ComponentRef[js.Any], activatedRoute: ActivatedRoute): Unit = js.native
-  
-  /* private */ var changeDetector: js.Any = js.native
-  
-  def component: js.Object = js.native
-  
-  def deactivate(): Unit = js.native
-  
-  var deactivateEvents: EventEmitter[js.Any] = js.native
+  @JSName("activatedRoute")
+  def activatedRoute_MRouterOutlet: ActivatedRoute = js.native
   
   /**
-    * Called when the `RouteReuseStrategy` instructs to detach the subtree
+    * Emits an attached component instance when the `RouteReuseStrategy` instructs to re-attach a
+    * previously detached subtree.
+    **/
+  @JSName("attachEvents")
+  var attachEvents_RouterOutlet: EventEmitter[Any] = js.native
+  
+  /* private */ var changeDetector: Any = js.native
+  
+  /**
+    * @returns The currently activated component instance.
+    * @throws An error if the outlet is not activated.
     */
-  def detach(): ComponentRef[js.Any] = js.native
+  @JSName("component")
+  def component_MRouterOutlet: js.Object = js.native
   
-  def isActivated: Boolean = js.native
+  @JSName("deactivateEvents")
+  var deactivateEvents_RouterOutlet: EventEmitter[Any] = js.native
   
-  /* private */ var location: js.Any = js.native
+  /**
+    * Emits a detached component instance when the `RouteReuseStrategy` instructs to detach the
+    * subtree.
+    */
+  @JSName("detachEvents")
+  var detachEvents_RouterOutlet: EventEmitter[Any] = js.native
   
-  /* private */ var name: js.Any = js.native
+  /* private */ var environmentInjector: Any = js.native
+  
+  @JSName("isActivated")
+  def isActivated_MRouterOutlet: Boolean = js.native
+  
+  /* private */ var location: Any = js.native
+  
+  /* private */ var name: Any = js.native
   
   /**
     * A callback method that performs custom clean-up, invoked immediately
@@ -79,7 +97,42 @@ class RouterOutlet protected ()
   /* CompleteClass */
   override def ngOnInit(): Unit = js.native
   
-  /* private */ var parentContexts: js.Any = js.native
+  /* private */ var parentContexts: Any = js.native
+}
+/* static members */
+object RouterOutlet {
   
-  /* private */ var resolver: js.Any = js.native
+  @JSImport("@angular/router", "RouterOutlet")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/router", "RouterOutlet.\u0275dir")
+  @js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    RouterOutlet, 
+    `router-outlet`, 
+    js.Array[outlet], 
+    js.Object, 
+    ActivateEvents, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `true`
+  ] = js.native
+  inline def ɵdir_=(
+    x: ɵɵDirectiveDeclaration[
+      RouterOutlet, 
+      `router-outlet`, 
+      js.Array[outlet], 
+      js.Object, 
+      ActivateEvents, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `true`
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/router", "RouterOutlet.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[RouterOutlet, js.Tuple5[Null, Null, `0`, Null, Null]] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[RouterOutlet, js.Tuple5[Null, Null, `0`, Null, Null]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
 }

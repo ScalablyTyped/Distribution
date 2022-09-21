@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.DoNotUseMeFolder")
 @js.native
-/* private */ class DoNotUseMeFolder ()
+/* private */ open class DoNotUseMeFolder ()
   extends StObject
      with typings.activexOutlook.Outlook.DoNotUseMeFolder

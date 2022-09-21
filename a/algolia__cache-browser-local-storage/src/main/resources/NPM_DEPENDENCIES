@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@algolia/cache-browser-local-storage" : "4.8.0"
+      "@algolia/cache-browser-local-storage" : "4.14.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@algolia/cache-browser-local-storage" : "4.8.0"
+      "@algolia/cache-browser-local-storage" : "4.14.2"
     }
   ],
   "compile-devDependencies" : [

@@ -14,7 +14,6 @@ import typings.popmotionPose.popmotionPoseStrings.easeOut
 import typings.popmotionPose.popmotionPoseStrings.linear
 import typings.popmotionPose.popmotionPoseStrings.tween
 import typings.popmotionPose.typesMod.CubicBezierArgs
-import typings.stylefire.typesMod.Styler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -138,18 +137,22 @@ object anon {
   
   trait ElementStyler extends StObject {
     
-    var elementStyler: Styler
+    var elementStyler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Styler */ Any
   }
   object ElementStyler {
     
-    inline def apply(elementStyler: Styler): ElementStyler = {
+    inline def apply(
+      elementStyler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Styler */ Any
+    ): ElementStyler = {
       val __obj = js.Dynamic.literal(elementStyler = elementStyler.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElementStyler]
     }
     
     extension [Self <: ElementStyler](x: Self) {
       
-      inline def setElementStyler(value: Styler): Self = StObject.set(x, "elementStyler", value.asInstanceOf[js.Any])
+      inline def setElementStyler(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Styler */ Any
+      ): Self = StObject.set(x, "elementStyler", value.asInstanceOf[js.Any])
     }
   }
   

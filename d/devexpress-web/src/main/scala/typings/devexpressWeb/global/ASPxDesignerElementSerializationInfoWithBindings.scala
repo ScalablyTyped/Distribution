@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxDesignerElementSerializationInfoWithBindings")
 @js.native
-class ASPxDesignerElementSerializationInfoWithBindings ()
+open class ASPxDesignerElementSerializationInfoWithBindings ()
   extends StObject
      with typings.devexpressWeb.ASPxDesignerElementSerializationInfoWithBindings {
   
@@ -17,10 +17,10 @@ class ASPxDesignerElementSerializationInfoWithBindings ()
   var bindingName: String = js.native
   
   /* CompleteClass */
-  var defaultVal: js.Any = js.native
+  var defaultVal: Any = js.native
   
   /* CompleteClass */
-  var disabled: js.Any = js.native
+  var disabled: Any = js.native
   
   /* CompleteClass */
   var displayName: String = js.native
@@ -41,11 +41,11 @@ class ASPxDesignerElementSerializationInfoWithBindings ()
   var propertyName: String = js.native
   
   /* CompleteClass */
-  var validationRules: js.Array[js.Any] = js.native
+  var validationRules: js.Array[Any] = js.native
   
   /* CompleteClass */
   var valuesArray: js.Array[typings.devexpressWeb.ASPxDesignerElementEditorItem] = js.native
   
   /* CompleteClass */
-  var visible: js.Any = js.native
+  var visible: Any = js.native
 }

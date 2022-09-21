@@ -16,7 +16,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "Color")
   @js.native
-  class Color protected ()
+  open class Color protected ()
     extends StObject
        with typings.paper.paper.Color {
     /** 
@@ -38,7 +38,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "CompoundPath")
   @js.native
-  class CompoundPath protected ()
+  open class CompoundPath protected ()
     extends StObject
        with typings.paper.paper.CompoundPath {
     /** 
@@ -54,7 +54,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "Curve")
   @js.native
-  class Curve protected ()
+  open class Curve protected ()
     extends StObject
        with typings.paper.paper.Curve {
     /** 
@@ -66,7 +66,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "CurveLocation")
   @js.native
-  class CurveLocation protected ()
+  open class CurveLocation protected ()
     extends StObject
        with typings.paper.paper.CurveLocation {
     /** 
@@ -216,7 +216,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "Event")
   @js.native
-  class Event ()
+  open class Event ()
     extends StObject
        with typings.paper.paper.Event {
     
@@ -226,7 +226,7 @@ object mod extends Shortcut {
       * @see Key.modifiers
       */
     /* CompleteClass */
-    override val modifiers: js.Any = js.native
+    override val modifiers: Any = js.native
     
     /** 
       * Cancels the event if it is cancelable, without stopping further
@@ -262,7 +262,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "Gradient")
   @js.native
-  class Gradient ()
+  open class Gradient ()
     extends StObject
        with typings.paper.paper.Gradient {
     
@@ -298,7 +298,7 @@ object mod extends Shortcut {
     * ramp as a value between `0` and `1`; `null` or `undefined` for automatic
     * assignment.
     */
-  class GradientStop ()
+  open class GradientStop ()
     extends StObject
        with typings.paper.paper.GradientStop {
     def this(color: typings.paper.paper.Color) = this()
@@ -327,7 +327,7 @@ object mod extends Shortcut {
     * @param children - An array of children that will be added to the
     * newly created group
     */
-  class Group ()
+  open class Group ()
     extends StObject
        with typings.paper.paper.Group {
     def this(children: js.Array[typings.paper.paper.Item]) = this()
@@ -336,7 +336,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "HitResult")
   @js.native
-  class HitResult ()
+  open class HitResult ()
     extends StObject
        with typings.paper.paper.HitResult {
     
@@ -393,21 +393,21 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "Item")
   @js.native
-  class Item ()
+  open class Item ()
     extends StObject
        with typings.paper.paper.Item
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "Key")
   @js.native
-  class Key ()
+  open class Key ()
     extends StObject
        with typings.paper.paper.Key
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "KeyEvent")
   @js.native
-  class KeyEvent ()
+  open class KeyEvent ()
     extends StObject
        with typings.paper.paper.KeyEvent {
     
@@ -432,7 +432,7 @@ object mod extends Shortcut {
       * @see Key.modifiers
       */
     /* CompleteClass */
-    override val modifiers: js.Any = js.native
+    override val modifiers: Any = js.native
     
     /** 
       * Cancels the event if it is cancelable, without stopping further
@@ -482,7 +482,7 @@ object mod extends Shortcut {
     * @param children - An array of items that will be added to the
     * newly created layer
     */
-  class Layer ()
+  open class Layer ()
     extends StObject
        with typings.paper.paper.Layer {
     def this(children: js.Array[typings.paper.paper.Item]) = this()
@@ -495,14 +495,14 @@ object mod extends Shortcut {
     * Creates a 2D affine transformation matrix that describes the identity
     * transformation.
     */
-  class Matrix ()
+  open class Matrix ()
     extends StObject
        with typings.paper.paper.Matrix
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "MouseEvent")
   @js.native
-  class MouseEvent ()
+  open class MouseEvent ()
     extends StObject
        with typings.paper.paper.MouseEvent {
     
@@ -524,7 +524,7 @@ object mod extends Shortcut {
       * @see Key.modifiers
       */
     /* CompleteClass */
-    override val modifiers: js.Any = js.native
+    override val modifiers: Any = js.native
     
     /** 
       * The position of the mouse in project coordinates when the event was
@@ -584,14 +584,14 @@ object mod extends Shortcut {
   /** 
     * Creates a PaperScope object.
     */
-  class PaperScope ()
+  open class PaperScope ()
     extends StObject
        with typings.paper.paper.PaperScope
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "PaperScript")
   @js.native
-  class PaperScript ()
+  open class PaperScript ()
     extends StObject
        with typings.paper.paper.PaperScript
   
@@ -604,7 +604,7 @@ object mod extends Shortcut {
     * @param segments - An array of segments (or points to be
     * converted to segments) that will be added to the path
     */
-  class Path ()
+  open class Path ()
     extends StObject
        with typings.paper.paper.Path {
     def this(segments: js.Array[typings.paper.paper.Segment]) = this()
@@ -613,14 +613,14 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "PathItem")
   @js.native
-  class PathItem ()
+  open class PathItem ()
     extends StObject
        with typings.paper.paper.PathItem
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "Point")
   @js.native
-  class Point protected ()
+  open class Point protected ()
     extends StObject
        with typings.paper.paper.Point {
     /** 
@@ -635,7 +635,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "PointText")
   @js.native
-  class PointText protected ()
+  open class PointText protected ()
     extends StObject
        with typings.paper.paper.PointText {
     /** 
@@ -649,7 +649,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "Project")
   @js.native
-  class Project protected ()
+  open class Project protected ()
     extends StObject
        with typings.paper.paper.Project {
     def this(element: String) = this()
@@ -683,7 +683,7 @@ object mod extends Shortcut {
     * @param position - the center position at which the raster item is
     *     placed
     */
-  class Raster ()
+  open class Raster ()
     extends StObject
        with typings.paper.paper.Raster {
     def this(source: String) = this()
@@ -698,7 +698,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "Rectangle")
   @js.native
-  class Rectangle protected ()
+  open class Rectangle protected ()
     extends StObject
        with typings.paper.paper.Rectangle {
     /** 
@@ -724,7 +724,7 @@ object mod extends Shortcut {
     *     anchor point of the segment that describes the out tangent of the
     *     segment
     */
-  class Segment ()
+  open class Segment ()
     extends StObject
        with typings.paper.paper.Segment {
     def this(point: typings.paper.paper.Point) = this()
@@ -743,14 +743,14 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "Shape")
   @js.native
-  class Shape ()
+  open class Shape ()
     extends StObject
        with typings.paper.paper.Shape
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "Size")
   @js.native
-  class Size protected ()
+  open class Size protected ()
     extends StObject
        with typings.paper.paper.Size {
     /** 
@@ -765,7 +765,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "Style")
   @js.native
-  class Style protected ()
+  open class Style protected ()
     extends StObject
        with typings.paper.paper.Style {
     /** 
@@ -910,7 +910,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "SymbolDefinition")
   @js.native
-  class SymbolDefinition protected ()
+  open class SymbolDefinition protected ()
     extends StObject
        with typings.paper.paper.SymbolDefinition {
     /** 
@@ -926,7 +926,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "SymbolItem")
   @js.native
-  class SymbolItem protected ()
+  open class SymbolItem protected ()
     extends StObject
        with typings.paper.paper.SymbolItem {
     def this(definition: typings.paper.paper.Item) = this()
@@ -945,21 +945,21 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "TextItem")
   @js.native
-  class TextItem ()
+  open class TextItem ()
     extends StObject
        with typings.paper.paper.TextItem
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "Tool")
   @js.native
-  class Tool ()
+  open class Tool ()
     extends StObject
        with typings.paper.paper.Tool
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "ToolEvent")
   @js.native
-  class ToolEvent ()
+  open class ToolEvent ()
     extends StObject
        with typings.paper.paper.ToolEvent {
     
@@ -1016,7 +1016,7 @@ object mod extends Shortcut {
       * @see Key.modifiers
       */
     /* CompleteClass */
-    override val modifiers: js.Any = js.native
+    override val modifiers: Any = js.native
     
     /** 
       * The position of the mouse in project coordinates when the event was
@@ -1065,7 +1065,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "Tween")
   @js.native
-  class Tween protected ()
+  open class Tween protected ()
     extends StObject
        with typings.paper.paper.Tween {
     /** 
@@ -1140,7 +1140,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper", "View")
   @js.native
-  class View ()
+  open class View ()
     extends StObject
        with typings.paper.paper.View
   

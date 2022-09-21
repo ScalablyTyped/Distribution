@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.OlapXmlaDataSource")
 @js.native
-class OlapXmlaDataSource protected ()
+open class OlapXmlaDataSource protected ()
   extends StObject
      with typings.igniteUi.Infragistics.OlapXmlaDataSource {
   def this(options: OlapXmlaDataSourceOptions) = this()
@@ -64,7 +64,7 @@ class OlapXmlaDataSource protected ()
     * Retrieves the currently loaded catalogs in the data source.
     */
   /* CompleteClass */
-  override def catalogs(): js.Array[js.Any] = js.native
+  override def catalogs(): js.Array[Any] = js.native
   
   /**
     * Clears all pending changes since last time the update() method is called.
@@ -87,7 +87,7 @@ class OlapXmlaDataSource protected ()
     * Returns the items in the column axis.
     */
   /* CompleteClass */
-  override def columnAxis(): js.Array[js.Any] = js.native
+  override def columnAxis(): js.Array[Any] = js.native
   
   /**
     * Retrieves the current cube in the data source.
@@ -99,7 +99,7 @@ class OlapXmlaDataSource protected ()
     * Retrieves the currently loaded cubes in the data source.
     */
   /* CompleteClass */
-  override def cubes(): js.Array[js.Any] = js.native
+  override def cubes(): js.Array[Any] = js.native
   
   /**
     * Sets a tuple member to be expanded next time the update() method is called.
@@ -116,7 +116,7 @@ class OlapXmlaDataSource protected ()
     * Returns the items in the filter axis.
     */
   /* CompleteClass */
-  override def filters(): js.Array[js.Any] = js.native
+  override def filters(): js.Array[Any] = js.native
   
   /**
     * Gets the first element of the specified elementType which matches the specified predicate or null if there is no such element found.
@@ -150,7 +150,7 @@ class OlapXmlaDataSource protected ()
     * @param hierarchyUniqueName the unique name of the hierarchy whose active filter members are returned.
     */
   /* CompleteClass */
-  override def getFilterMemberNames(hierarchyUniqueName: String): js.Array[js.Any] = js.native
+  override def getFilterMemberNames(hierarchyUniqueName: String): js.Array[Any] = js.native
   
   /**
     * Returns $.ig.Hierarchy object for the specified unique name.
@@ -242,13 +242,13 @@ class OlapXmlaDataSource protected ()
     * Retrieves the currently loaded measure groups in the data source.
     */
   /* CompleteClass */
-  override def measureGroups(): js.Array[js.Any] = js.native
+  override def measureGroups(): js.Array[Any] = js.native
   
   /**
     * Returns the items in the measures axis.
     */
   /* CompleteClass */
-  override def measures(): js.Array[js.Any] = js.native
+  override def measures(): js.Array[Any] = js.native
   
   /**
     * Returns the fully loaded metadata tree.
@@ -315,7 +315,7 @@ class OlapXmlaDataSource protected ()
     * Returns the items in the row axis.
     */
   /* CompleteClass */
-  override def rowAxis(): js.Array[js.Any] = js.native
+  override def rowAxis(): js.Array[Any] = js.native
   
   /**
     * Sets the current catalog for the data source and updates the cubes() and catalog() properties.

@@ -25,7 +25,7 @@ object projectionMod {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setAsVarargs(value: String*): Self = StObject.set(x, "as", js.Array(value :_*))
+      inline def setAsVarargs(value: String*): Self = StObject.set(x, "as", js.Array(value*))
       
       inline def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     }

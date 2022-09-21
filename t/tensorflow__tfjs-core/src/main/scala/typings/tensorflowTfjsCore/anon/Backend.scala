@@ -18,8 +18,6 @@ trait Backend extends StObject {
   
   var dtype: string | float32 | int32 | bool | complex64
   
-  var refCount: Double
-  
   var shape: js.Array[Double]
 }
 object Backend {
@@ -28,10 +26,9 @@ object Backend {
     backend: KernelBackend,
     bytes: Double,
     dtype: string | float32 | int32 | bool | complex64,
-    refCount: Double,
     shape: js.Array[Double]
   ): Backend = {
-    val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], bytes = bytes.asInstanceOf[js.Any], dtype = dtype.asInstanceOf[js.Any], refCount = refCount.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], bytes = bytes.asInstanceOf[js.Any], dtype = dtype.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[Backend]
   }
   
@@ -43,10 +40,8 @@ object Backend {
     
     inline def setDtype(value: string | float32 | int32 | bool | complex64): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     
-    inline def setRefCount(value: Double): Self = StObject.set(x, "refCount", value.asInstanceOf[js.Any])
-    
     inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value*))
   }
 }

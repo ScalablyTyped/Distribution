@@ -52,7 +52,7 @@ object VideoFileDetails {
     
     inline def setAudioStreamsUndefined: Self = StObject.set(x, "audioStreams", js.undefined)
     
-    inline def setAudioStreamsVarargs(value: VideoFileDetailsAudioStream*): Self = StObject.set(x, "audioStreams", js.Array(value :_*))
+    inline def setAudioStreamsVarargs(value: VideoFileDetailsAudioStream*): Self = StObject.set(x, "audioStreams", js.Array(value*))
     
     inline def setBitrateBps(value: String): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
     
@@ -86,6 +86,6 @@ object VideoFileDetails {
     
     inline def setVideoStreamsUndefined: Self = StObject.set(x, "videoStreams", js.undefined)
     
-    inline def setVideoStreamsVarargs(value: VideoFileDetailsVideoStream*): Self = StObject.set(x, "videoStreams", js.Array(value :_*))
+    inline def setVideoStreamsVarargs(value: VideoFileDetailsVideoStream*): Self = StObject.set(x, "videoStreams", js.Array(value*))
   }
 }

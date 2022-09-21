@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.CIMSymbol")
 @js.native
 /**
-  * CIMSymbols are used to display multi-layer vector symbols for features and graphics.
+  * CIMSymbols are high quality, scalable, multi-layer vector symbols for features and graphics.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html)
   */
-class CIMSymbolCls ()
+open class CIMSymbolCls ()
   extends StObject
      with typings.arcgisJsApi.esri.CIMSymbol {
   def this(properties: CIMSymbolProperties) = this()
   
   /**
-    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
     */
   /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  override def toJSON(): Any = js.native
 }

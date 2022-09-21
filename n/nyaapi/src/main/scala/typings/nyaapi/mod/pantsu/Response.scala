@@ -23,11 +23,11 @@ object Response {
     
     inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setInfos(value: js.Array[String]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     
-    inline def setInfosVarargs(value: String*): Self = StObject.set(x, "infos", js.Array(value :_*))
+    inline def setInfosVarargs(value: String*): Self = StObject.set(x, "infos", js.Array(value*))
     
     inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
   }

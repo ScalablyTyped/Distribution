@@ -26,8 +26,8 @@ object AppService {
     /* static member */
     @JSGlobal("Windows.ApplicationModel.AppService.AppServiceCatalog.findAppServiceProvidersAsync")
     @js.native
-    def findAppServiceProvidersAsync: js.Any = js.native
-    inline def findAppServiceProvidersAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAppServiceProvidersAsync")(x.asInstanceOf[js.Any])
+    def findAppServiceProvidersAsync: Any = js.native
+    inline def findAppServiceProvidersAsync_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAppServiceProvidersAsync")(x.asInstanceOf[js.Any])
   }
   
   /** Provides data for the AppServiceConnection.ServiceClosed event that occurs when the other endpoint closes connection to the app service. */
@@ -65,7 +65,7 @@ object AppService {
   @JSGlobal("Windows.ApplicationModel.AppService.AppServiceConnection")
   @js.native
   /** Creates and initializes a new instance of the AppServiceConnection class. */
-  class AppServiceConnection ()
+  open class AppServiceConnection ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceConnection
   

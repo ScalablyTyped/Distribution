@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@metamask/safe-event-emitter" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@metamask/safe-event-emitter" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -32,7 +32,7 @@ object Text {
   
   trait Options
     extends StObject
-       with typings.amapJsApi.AMap.Marker.Options[js.Any] {
+       with typings.amapJsApi.AMap.Marker.Options[Any] {
     
     /**
       * 文本内容

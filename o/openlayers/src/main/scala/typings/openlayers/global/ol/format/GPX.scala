@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api stable
   */
-class GPX ()
+open class GPX ()
   extends typings.openlayers.mod.format.GPX {
   def this(opt_options: GPXOptions) = this()
 }

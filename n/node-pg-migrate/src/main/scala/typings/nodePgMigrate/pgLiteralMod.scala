@@ -9,7 +9,7 @@ object pgLiteralMod {
   
   @JSImport("node-pg-migrate/dist/operations/PgLiteral", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with PgLiteral
        with _Value {

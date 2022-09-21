@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Emphasis
   extends StObject
-     with Parent
-     with StaticPhrasingContent {
+     with Parent {
   
   @JSName("children")
   var children_Emphasis: js.Array[PhrasingContent]
@@ -28,7 +27,7 @@ object Emphasis {
     
     inline def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: PhrasingContent*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: PhrasingContent*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setType(value: emphasis): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

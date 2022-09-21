@@ -39,16 +39,16 @@ object Script {
     * Use this function to pass values to other actions in the Shortcuts app. The output can be a text, a number, a boolean, a dictionary or a file path pointing to a file stored in
     * iCloud.
     *
-    * You can also use JavaScripts `return` keyword to output a value to a shortcut.
+    * You can also use JavaScript's `return` keyword to output a value to a shortcut.
     * @param value - Value to provide as output.
     * @see https://docs.scriptable.app/script/#setshortcutoutput
     */
-  inline def setShortcutOutput(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShortcutOutput")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setShortcutOutput(value: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShortcutOutput")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * _Sets the widget to be displayed._
     * @param widget - Widget to display.
     * @see https://docs.scriptable.app/script/#setwidget
     */
-  inline def setWidget(widget: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWidget")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setWidget(widget: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWidget")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

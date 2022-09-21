@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.ListBox")
 @js.native
-class ListBox protected ()
+open class ListBox protected ()
   extends StObject
      with typings.ejWebAll.ej.ListBox {
   def this(element: JQuery) = this()
@@ -25,8 +25,8 @@ object ListBox {
   /* static member */
   @JSGlobal("ej.ListBox.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.ListBox.SortOrder")
   @js.native

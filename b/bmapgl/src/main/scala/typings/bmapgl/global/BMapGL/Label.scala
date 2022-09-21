@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Label")
 @js.native
-class Label protected ()
+open class Label protected ()
   extends StObject
      with typings.bmapgl.BMapGL.Label {
   def this(content: String) = this()

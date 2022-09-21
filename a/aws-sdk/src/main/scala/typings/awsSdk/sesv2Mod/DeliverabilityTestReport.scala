@@ -9,7 +9,7 @@ trait DeliverabilityTestReport extends StObject {
   /**
     * The date and time when the predictive inbox placement test was created, in Unix time format.
     */
-  var CreateDate: js.UndefOr[Timestamp] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the predictive inbox placement test. If the status is IN_PROGRESS, then the predictive inbox placement test is currently running. Predictive inbox placement tests are usually complete within 24 hours of creating the test. If the status is COMPLETE, then the test is finished, and you can use the GetDeliverabilityTestReport to view the results of the test.
@@ -45,7 +45,7 @@ object DeliverabilityTestReport {
   
   extension [Self <: DeliverabilityTestReport](x: Self) {
     
-    inline def setCreateDate(value: Timestamp): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     

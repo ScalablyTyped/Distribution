@@ -1,7 +1,8 @@
 package typings.vscodeLanguageclient.mod
 
-import typings.vscodeLanguageclient.clientMod.DynamicFeature
-import typings.vscodeLanguageclient.clientMod.StaticFeature
+import typings.vscodeLanguageclient.clientMod.LanguageClientOptions
+import typings.vscodeLanguageclient.clientMod.Middleware
+import typings.vscodeLanguageclient.featuresMod.FeatureClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,5 +13,9 @@ object ProposedFeatures {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createAll(client: typings.vscodeLanguageclient.clientMod.BaseLanguageClient): js.Array[StaticFeature | DynamicFeature[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAll")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[StaticFeature | DynamicFeature[js.Any]]]
+  inline def createAll(_client: FeatureClient[Middleware, LanguageClientOptions]): js.Array[
+    typings.vscodeLanguageclient.featuresMod.StaticFeature | typings.vscodeLanguageclient.featuresMod.DynamicFeature[Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAll")(_client.asInstanceOf[js.Any]).asInstanceOf[js.Array[
+    typings.vscodeLanguageclient.featuresMod.StaticFeature | typings.vscodeLanguageclient.featuresMod.DynamicFeature[Any]
+  ]]
 }

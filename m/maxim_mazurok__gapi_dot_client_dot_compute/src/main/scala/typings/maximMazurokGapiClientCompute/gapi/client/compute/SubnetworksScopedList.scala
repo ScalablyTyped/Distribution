@@ -26,7 +26,7 @@ object SubnetworksScopedList {
     
     inline def setSubnetworksUndefined: Self = StObject.set(x, "subnetworks", js.undefined)
     
-    inline def setSubnetworksVarargs(value: Subnetwork*): Self = StObject.set(x, "subnetworks", js.Array(value :_*))
+    inline def setSubnetworksVarargs(value: Subnetwork*): Self = StObject.set(x, "subnetworks", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

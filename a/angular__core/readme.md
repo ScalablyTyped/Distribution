@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__core
 
-Typings are for version 11.0.2
+Typings are for version 14.2.3
 
 ## Library description:
 Angular - the core framework
@@ -10,10 +10,10 @@ Angular - the core framework
 | ------------------ | :-------------: |
 | Full name          | @angular/core |
 | Keywords           | - |
-| # releases         | 211 |
-| # dependents       | 8996 |
-| # downloads        | 94358192 |
-| # stars            | 46 |
+| # releases         | 220 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2492681333333334E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/angular/angular#readme)

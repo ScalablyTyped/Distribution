@@ -11,7 +11,7 @@ object lookupMod {
   
   @JSImport("vega-lite/build/src/compile/data/lookup", "LookupNode")
   @js.native
-  class LookupNode protected () extends DataFlowNode {
+  open class LookupNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, transform: LookupTransform, secondary: String) = this()
     
     def assemble(): typings.vegaTypings.transformMod.LookupTransform = js.native

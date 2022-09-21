@@ -4,31 +4,17 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/pubsub/v1beta1a", "pubsub_v1beta1a.Resource$Subscriptions")
 @js.native
-class ResourceSubscriptions protected () extends StObject {
+open class ResourceSubscriptions protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
-  /**
-    * pubsub.subscriptions.acknowledge
-    * @desc Acknowledges a particular received message: the Pub/Sub system can
-    * remove the given message from the subscription. Acknowledging a message
-    * whose Ack deadline has expired may succeed, but the message could have
-    * been already redelivered. Acknowledging a message more than once will not
-    * result in an error. This is only used for messages received via pull.
-    * @alias pubsub.subscriptions.acknowledge
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {().AcknowledgeRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def acknowledge(): GaxiosPromise[SchemaEmpty] = js.native
   def acknowledge(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def acknowledge(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
@@ -36,8 +22,8 @@ class ResourceSubscriptions protected () extends StObject {
   def acknowledge(params: ParamsResourceSubscriptionsAcknowledge, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def acknowledge(
     params: ParamsResourceSubscriptionsAcknowledge,
-    options: BodyResponseCallback[SchemaEmpty],
-    callback: BodyResponseCallback[SchemaEmpty]
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
   ): Unit = js.native
   def acknowledge(params: ParamsResourceSubscriptionsAcknowledge, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def acknowledge(
@@ -45,25 +31,72 @@ class ResourceSubscriptions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  /**
+    * Acknowledges a particular received message: the Pub/Sub system can remove the given message from the subscription. Acknowledging a message whose Ack deadline has expired may succeed, but the message could have been already redelivered. Acknowledging a message more than once will not result in an error. This is only used for messages received via pull.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/pubsub.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const pubsub = google.pubsub('v1beta1a');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/pubsub',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await pubsub.subscriptions.acknowledge({
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "ackId": [],
+    *       //   "subscription": "my_subscription"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def acknowledge(params: ParamsResourceSubscriptionsAcknowledge, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def acknowledge(
+    params: ParamsResourceSubscriptionsAcknowledge,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
   var context: APIRequestContext = js.native
   
-  /**
-    * pubsub.subscriptions.create
-    * @desc Creates a subscription on a given topic for a given subscriber. If
-    * the subscription already exists, returns ALREADY_EXISTS. If the
-    * corresponding topic doesn't exist, returns NOT_FOUND.  If the name is not
-    * provided in the request, the server will assign a random name for this
-    * subscription on the same project as the topic.
-    * @alias pubsub.subscriptions.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {().Subscription} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaSubscription] = js.native
   def create(callback: BodyResponseCallback[SchemaSubscription]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSubscription] = js.native
@@ -71,8 +104,8 @@ class ResourceSubscriptions protected () extends StObject {
   def create(params: ParamsResourceSubscriptionsCreate, callback: BodyResponseCallback[SchemaSubscription]): Unit = js.native
   def create(
     params: ParamsResourceSubscriptionsCreate,
-    options: BodyResponseCallback[SchemaSubscription],
-    callback: BodyResponseCallback[SchemaSubscription]
+    options: BodyResponseCallback[Readable | SchemaSubscription],
+    callback: BodyResponseCallback[Readable | SchemaSubscription]
   ): Unit = js.native
   def create(params: ParamsResourceSubscriptionsCreate, options: MethodOptions): GaxiosPromise[SchemaSubscription] = js.native
   def create(
@@ -80,21 +113,77 @@ class ResourceSubscriptions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
-  
   /**
-    * pubsub.subscriptions.delete
-    * @desc Deletes an existing subscription. All pending messages in the
-    * subscription are immediately dropped. Calls to Pull after deletion will
-    * return NOT_FOUND.
-    * @alias pubsub.subscriptions.delete
-    * @memberOf! ()
+    * Creates a subscription on a given topic for a given subscriber. If the subscription already exists, returns ALREADY_EXISTS. If the corresponding topic doesn't exist, returns NOT_FOUND. If the name is not provided in the request, the server will assign a random name for this subscription on the same project as the topic.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/pubsub.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.subscription The subscription to delete.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const pubsub = google.pubsub('v1beta1a');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/pubsub',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await pubsub.subscriptions.create({
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "ackDeadlineSeconds": 0,
+    *       //   "name": "my_name",
+    *       //   "pushConfig": {},
+    *       //   "topic": "my_topic"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "ackDeadlineSeconds": 0,
+    *   //   "name": "my_name",
+    *   //   "pushConfig": {},
+    *   //   "topic": "my_topic"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceSubscriptionsCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceSubscriptionsCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
@@ -102,8 +191,8 @@ class ResourceSubscriptions protected () extends StObject {
   def delete(params: ParamsResourceSubscriptionsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
     params: ParamsResourceSubscriptionsDelete,
-    options: BodyResponseCallback[SchemaEmpty],
-    callback: BodyResponseCallback[SchemaEmpty]
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
   ): Unit = js.native
   def delete(params: ParamsResourceSubscriptionsDelete, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
@@ -111,19 +200,64 @@ class ResourceSubscriptions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  
   /**
-    * pubsub.subscriptions.get
-    * @desc Gets the configuration details of a subscription.
-    * @alias pubsub.subscriptions.get
-    * @memberOf! ()
+    * Deletes an existing subscription. All pending messages in the subscription are immediately dropped. Calls to Pull after deletion will return NOT_FOUND.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/pubsub.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.subscription The name of the subscription to get.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const pubsub = google.pubsub('v1beta1a');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/pubsub',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await pubsub.subscriptions.delete({
+    *     // The subscription to delete.
+    *     subscription: '.*',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceSubscriptionsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceSubscriptionsDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaSubscription] = js.native
   def get(callback: BodyResponseCallback[SchemaSubscription]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSubscription] = js.native
@@ -131,8 +265,8 @@ class ResourceSubscriptions protected () extends StObject {
   def get(params: ParamsResourceSubscriptionsGet, callback: BodyResponseCallback[SchemaSubscription]): Unit = js.native
   def get(
     params: ParamsResourceSubscriptionsGet,
-    options: BodyResponseCallback[SchemaSubscription],
-    callback: BodyResponseCallback[SchemaSubscription]
+    options: BodyResponseCallback[Readable | SchemaSubscription],
+    callback: BodyResponseCallback[Readable | SchemaSubscription]
   ): Unit = js.native
   def get(params: ParamsResourceSubscriptionsGet, options: MethodOptions): GaxiosPromise[SchemaSubscription] = js.native
   def get(
@@ -140,21 +274,69 @@ class ResourceSubscriptions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSubscription]
   ): Unit = js.native
-  
   /**
-    * pubsub.subscriptions.list
-    * @desc Lists matching subscriptions.
-    * @alias pubsub.subscriptions.list
-    * @memberOf! ()
+    * Gets the configuration details of a subscription.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/pubsub.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {integer=} params.maxResults Maximum number of subscriptions to return.
-    * @param {string=} params.pageToken The value obtained in the last <code>ListSubscriptionsResponse</code> for continuation.
-    * @param {string=} params.query A valid label query expression.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const pubsub = google.pubsub('v1beta1a');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/pubsub',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await pubsub.subscriptions.get({
+    *     // The name of the subscription to get.
+    *     subscription: '.*',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "ackDeadlineSeconds": 0,
+    *   //   "name": "my_name",
+    *   //   "pushConfig": {},
+    *   //   "topic": "my_topic"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceSubscriptionsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceSubscriptionsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaListSubscriptionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListSubscriptionsResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListSubscriptionsResponse] = js.native
@@ -165,8 +347,8 @@ class ResourceSubscriptions protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceSubscriptionsList,
-    options: BodyResponseCallback[SchemaListSubscriptionsResponse],
-    callback: BodyResponseCallback[SchemaListSubscriptionsResponse]
+    options: BodyResponseCallback[Readable | SchemaListSubscriptionsResponse],
+    callback: BodyResponseCallback[Readable | SchemaListSubscriptionsResponse]
   ): Unit = js.native
   def list(params: ParamsResourceSubscriptionsList, options: MethodOptions): GaxiosPromise[SchemaListSubscriptionsResponse] = js.native
   def list(
@@ -174,20 +356,71 @@ class ResourceSubscriptions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListSubscriptionsResponse]
   ): Unit = js.native
-  
   /**
-    * pubsub.subscriptions.modifyAckDeadline
-    * @desc Modifies the Ack deadline for a message received from a pull
-    * request.
-    * @alias pubsub.subscriptions.modifyAckDeadline
-    * @memberOf! ()
+    * Lists matching subscriptions.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/pubsub.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {().ModifyAckDeadlineRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const pubsub = google.pubsub('v1beta1a');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/pubsub',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await pubsub.subscriptions.list({
+    *     // Maximum number of subscriptions to return.
+    *     maxResults: 'placeholder-value',
+    *     // The value obtained in the last ListSubscriptionsResponse for continuation.
+    *     pageToken: 'placeholder-value',
+    *     // A valid label query expression.
+    *     query: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "subscription": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceSubscriptionsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceSubscriptionsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def modifyAckDeadline(): GaxiosPromise[SchemaEmpty] = js.native
   def modifyAckDeadline(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def modifyAckDeadline(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
@@ -195,8 +428,8 @@ class ResourceSubscriptions protected () extends StObject {
   def modifyAckDeadline(params: ParamsResourceSubscriptionsModifyackdeadline, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def modifyAckDeadline(
     params: ParamsResourceSubscriptionsModifyackdeadline,
-    options: BodyResponseCallback[SchemaEmpty],
-    callback: BodyResponseCallback[SchemaEmpty]
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
   ): Unit = js.native
   def modifyAckDeadline(params: ParamsResourceSubscriptionsModifyackdeadline, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def modifyAckDeadline(
@@ -204,23 +437,72 @@ class ResourceSubscriptions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  
   /**
-    * pubsub.subscriptions.modifyPushConfig
-    * @desc Modifies the <code>PushConfig</code> for a specified subscription.
-    * This method can be used to suspend the flow of messages to an endpoint by
-    * clearing the <code>PushConfig</code> field in the request. Messages will
-    * be accumulated for delivery even if no push configuration is defined or
-    * while the configuration is modified.
-    * @alias pubsub.subscriptions.modifyPushConfig
-    * @memberOf! ()
+    * Modifies the Ack deadline for a message received from a pull request.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/pubsub.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {().ModifyPushConfigRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const pubsub = google.pubsub('v1beta1a');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/pubsub',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await pubsub.subscriptions.modifyAckDeadline({
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "ackDeadlineSeconds": 0,
+    *       //   "ackId": "my_ackId",
+    *       //   "ackIds": [],
+    *       //   "subscription": "my_subscription"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def modifyAckDeadline(params: ParamsResourceSubscriptionsModifyackdeadline, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def modifyAckDeadline(
+    params: ParamsResourceSubscriptionsModifyackdeadline,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def modifyPushConfig(): GaxiosPromise[SchemaEmpty] = js.native
   def modifyPushConfig(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def modifyPushConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
@@ -228,8 +510,8 @@ class ResourceSubscriptions protected () extends StObject {
   def modifyPushConfig(params: ParamsResourceSubscriptionsModifypushconfig, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def modifyPushConfig(
     params: ParamsResourceSubscriptionsModifypushconfig,
-    options: BodyResponseCallback[SchemaEmpty],
-    callback: BodyResponseCallback[SchemaEmpty]
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
   ): Unit = js.native
   def modifyPushConfig(params: ParamsResourceSubscriptionsModifypushconfig, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def modifyPushConfig(
@@ -237,23 +519,70 @@ class ResourceSubscriptions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  
   /**
-    * pubsub.subscriptions.pull
-    * @desc Pulls a single message from the server. If return_immediately is
-    * true, and no messages are available in the subscription, this method
-    * returns FAILED_PRECONDITION. The system is free to return an UNAVAILABLE
-    * error if no messages are available in a reasonable amount of time (to
-    * reduce system load).
-    * @alias pubsub.subscriptions.pull
-    * @memberOf! ()
+    * Modifies the PushConfig for a specified subscription. This method can be used to suspend the flow of messages to an endpoint by clearing the PushConfig field in the request. Messages will be accumulated for delivery even if no push configuration is defined or while the configuration is modified.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/pubsub.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {().PullRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const pubsub = google.pubsub('v1beta1a');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/pubsub',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await pubsub.subscriptions.modifyPushConfig({
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "pushConfig": {},
+    *       //   "subscription": "my_subscription"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def modifyPushConfig(params: ParamsResourceSubscriptionsModifypushconfig, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def modifyPushConfig(
+    params: ParamsResourceSubscriptionsModifypushconfig,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def pull(): GaxiosPromise[SchemaPullResponse] = js.native
   def pull(callback: BodyResponseCallback[SchemaPullResponse]): Unit = js.native
   def pull(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPullResponse] = js.native
@@ -261,8 +590,8 @@ class ResourceSubscriptions protected () extends StObject {
   def pull(params: ParamsResourceSubscriptionsPull, callback: BodyResponseCallback[SchemaPullResponse]): Unit = js.native
   def pull(
     params: ParamsResourceSubscriptionsPull,
-    options: BodyResponseCallback[SchemaPullResponse],
-    callback: BodyResponseCallback[SchemaPullResponse]
+    options: BodyResponseCallback[Readable | SchemaPullResponse],
+    callback: BodyResponseCallback[Readable | SchemaPullResponse]
   ): Unit = js.native
   def pull(params: ParamsResourceSubscriptionsPull, options: MethodOptions): GaxiosPromise[SchemaPullResponse] = js.native
   def pull(
@@ -270,22 +599,73 @@ class ResourceSubscriptions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPullResponse]
   ): Unit = js.native
-  
   /**
-    * pubsub.subscriptions.pullBatch
-    * @desc Pulls messages from the server. Returns an empty list if there are
-    * no messages available in the backlog. The system is free to return
-    * UNAVAILABLE if there are too many pull requests outstanding for the given
-    * subscription.
-    * @alias pubsub.subscriptions.pullBatch
-    * @memberOf! ()
+    * Pulls a single message from the server. If return_immediately is true, and no messages are available in the subscription, this method returns FAILED_PRECONDITION. The system is free to return an UNAVAILABLE error if no messages are available in a reasonable amount of time (to reduce system load).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/pubsub.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {().PullBatchRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const pubsub = google.pubsub('v1beta1a');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/pubsub',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await pubsub.subscriptions.pull({
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "returnImmediately": false,
+    *       //   "subscription": "my_subscription"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "ackId": "my_ackId",
+    *   //   "pubsubEvent": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def pull(params: ParamsResourceSubscriptionsPull, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def pull(
+    params: ParamsResourceSubscriptionsPull,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def pullBatch(): GaxiosPromise[SchemaPullBatchResponse] = js.native
   def pullBatch(callback: BodyResponseCallback[SchemaPullBatchResponse]): Unit = js.native
   def pullBatch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPullBatchResponse] = js.native
@@ -296,13 +676,79 @@ class ResourceSubscriptions protected () extends StObject {
   ): Unit = js.native
   def pullBatch(
     params: ParamsResourceSubscriptionsPullbatch,
-    options: BodyResponseCallback[SchemaPullBatchResponse],
-    callback: BodyResponseCallback[SchemaPullBatchResponse]
+    options: BodyResponseCallback[Readable | SchemaPullBatchResponse],
+    callback: BodyResponseCallback[Readable | SchemaPullBatchResponse]
   ): Unit = js.native
   def pullBatch(params: ParamsResourceSubscriptionsPullbatch, options: MethodOptions): GaxiosPromise[SchemaPullBatchResponse] = js.native
   def pullBatch(
     params: ParamsResourceSubscriptionsPullbatch,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaPullBatchResponse]
+  ): Unit = js.native
+  /**
+    * Pulls messages from the server. Returns an empty list if there are no messages available in the backlog. The system is free to return UNAVAILABLE if there are too many pull requests outstanding for the given subscription.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/pubsub.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const pubsub = google.pubsub('v1beta1a');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/pubsub',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await pubsub.subscriptions.pullBatch({
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "maxEvents": 0,
+    *       //   "returnImmediately": false,
+    *       //   "subscription": "my_subscription"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "pullResponses": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def pullBatch(params: ParamsResourceSubscriptionsPullbatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def pullBatch(
+    params: ParamsResourceSubscriptionsPullbatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

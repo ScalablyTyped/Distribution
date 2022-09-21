@@ -11,7 +11,7 @@ object ngTableColumnMod {
   
   @JSImport("ng-table/src/browser/ngTableColumn", "NgTableColumn")
   @js.native
-  class NgTableColumn[TCol /* <: IColumnDef | IDynamicTableColDef */] () extends StObject {
+  open class NgTableColumn[TCol /* <: IColumnDef | IDynamicTableColDef */] () extends StObject {
     
     /**
       * Creates a $column for use within a header template
@@ -23,9 +23,9 @@ object ngTableColumnMod {
       */
     def buildColumn(column: TCol, defaultScope: IScope, columns: js.Array[IColumnDef]): IColumnDef = js.native
     
-    /* private */ def createDefaults(): js.Any = js.native
+    /* private */ def createDefaults(): Any = js.native
     
-    /* private */ def createGetterSetter(initialValue: js.Any): js.Any = js.native
+    /* private */ def createGetterSetter(initialValue: Any): Any = js.native
   }
   /* static members */
   object NgTableColumn {

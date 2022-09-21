@@ -21,7 +21,7 @@ object mod {
   
   @JSImport("dingtalk-robot-sender", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with ChatBot {
     def this(options: BaseUrlOptions) = this()
@@ -42,7 +42,7 @@ object mod {
     
     var baseUrl: String
     
-    var httpclient: js.UndefOr[js.Any] = js.undefined
+    var httpclient: js.UndefOr[Any] = js.undefined
   }
   object BaseUrlOptions {
     
@@ -57,7 +57,7 @@ object mod {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      inline def setHttpclient(value: js.Any): Self = StObject.set(x, "httpclient", value.asInstanceOf[js.Any])
+      inline def setHttpclient(value: Any): Self = StObject.set(x, "httpclient", value.asInstanceOf[js.Any])
       
       inline def setHttpclientUndefined: Self = StObject.set(x, "httpclient", js.undefined)
     }
@@ -78,7 +78,7 @@ object mod {
       * @param card.btn.actionURL 某个按钮链接
       * @return
       */
-    def actionCard(card: BtnOrientation): js.Promise[AxiosResponse[js.Any]] = js.native
+    def actionCard(card: BtnOrientation): js.Promise[AxiosResponse[Any, Any]] = js.native
     
     /**
       * 发送feedCard，支持多图文链接
@@ -90,7 +90,7 @@ object mod {
       * @param link.picUrl 图片的链接
       * @return
       */
-    def feedCard(links: js.Array[FeedCardItem]): js.Promise[AxiosResponse[js.Any]] = js.native
+    def feedCard(links: js.Array[FeedCardItem]): js.Promise[AxiosResponse[Any, Any]] = js.native
     
     /**
       * 发送单个图文链接
@@ -101,7 +101,7 @@ object mod {
       * @param link.picUrl 图片的链接
       * @return
       */
-    def link(link: MessageUrl): js.Promise[AxiosResponse[js.Any]] = js.native
+    def link(link: MessageUrl): js.Promise[AxiosResponse[Any, Any]] = js.native
     
     /**
       * 发送Markdown消息
@@ -110,8 +110,8 @@ object mod {
       * @param text 消息内容(支持Markdown)
       * @return
       */
-    def markdown(title: String, text: String): js.Promise[AxiosResponse[js.Any]] = js.native
-    def markdown(title: String, text: String, at: AtMobiles): js.Promise[AxiosResponse[js.Any]] = js.native
+    def markdown(title: String, text: String): js.Promise[AxiosResponse[Any, Any]] = js.native
+    def markdown(title: String, text: String, at: AtMobiles): js.Promise[AxiosResponse[Any, Any]] = js.native
     
     /**
       * 发送钉钉消息
@@ -119,7 +119,7 @@ object mod {
       * @param content 发动的消息对象
       * @return
       */
-    def send(content: MessageType): js.Promise[AxiosResponse[js.Any]] = js.native
+    def send(content: MessageType): js.Promise[AxiosResponse[Any, Any]] = js.native
     
     /**
       * 发送纯文本消息，支持@群内成员
@@ -128,8 +128,8 @@ object mod {
       * @param at 群内@成员的手机号
       * @return
       */
-    def text(content: String): js.Promise[AxiosResponse[js.Any]] = js.native
-    def text(content: String, at: js.UndefOr[AtMobiles]): js.Promise[AxiosResponse[js.Any]] = js.native
+    def text(content: String): js.Promise[AxiosResponse[Any, Any]] = js.native
+    def text(content: String, at: js.UndefOr[AtMobiles]): js.Promise[AxiosResponse[Any, Any]] = js.native
   }
   
   object Message {
@@ -294,7 +294,7 @@ object mod {
   
   trait WebHookOptions extends StObject {
     
-    var httpclient: js.UndefOr[js.Any] = js.undefined
+    var httpclient: js.UndefOr[Any] = js.undefined
     
     var webhook: String
   }
@@ -307,7 +307,7 @@ object mod {
     
     extension [Self <: WebHookOptions](x: Self) {
       
-      inline def setHttpclient(value: js.Any): Self = StObject.set(x, "httpclient", value.asInstanceOf[js.Any])
+      inline def setHttpclient(value: Any): Self = StObject.set(x, "httpclient", value.asInstanceOf[js.Any])
       
       inline def setHttpclientUndefined: Self = StObject.set(x, "httpclient", js.undefined)
       

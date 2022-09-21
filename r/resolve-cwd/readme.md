@@ -10,10 +10,10 @@ Resolve the path of a module like `require.resolve()` but from the current worki
 | ------------------ | :-------------: |
 | Full name          | resolve-cwd |
 | Keywords           | require, resolve, path, module, from, like, cwd, current, working, directory, import |
-| # releases         | 2 |
-| # dependents       | 226 |
-| # downloads        | 638386521 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 9.725149033333333E7 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/resolve-cwd#readme)

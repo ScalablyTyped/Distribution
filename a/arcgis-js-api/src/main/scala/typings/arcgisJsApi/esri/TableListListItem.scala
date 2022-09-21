@@ -9,6 +9,8 @@ trait TableListListItem extends StObject {
   /**
     * Indicates whether the actions panel is open in the TableList.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#actionsOpen)
     */
   var actionsOpen: Boolean
@@ -28,7 +30,18 @@ trait TableListListItem extends StObject {
   val error: Error
   
   /**
+    * When `true`, hides the layer from the TableList instance.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#hidden)
+    */
+  var hidden: Boolean
+  
+  /**
     * The layer associated with the triggered action.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#layer)
     */
@@ -47,10 +60,11 @@ object TableListListItem {
     actionsOpen: Boolean,
     actionsSections: Collection[Collection[ActionButton | ActionToggle]],
     error: Error,
+    hidden: Boolean,
     layer: Layer,
     title: String
   ): TableListListItem = {
-    val __obj = js.Dynamic.literal(actionsOpen = actionsOpen.asInstanceOf[js.Any], actionsSections = actionsSections.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(actionsOpen = actionsOpen.asInstanceOf[js.Any], actionsSections = actionsSections.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableListListItem]
   }
   
@@ -61,6 +75,8 @@ object TableListListItem {
     inline def setActionsSections(value: Collection[Collection[ActionButton | ActionToggle]]): Self = StObject.set(x, "actionsSections", value.asInstanceOf[js.Any])
     
     inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

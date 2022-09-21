@@ -5,7 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DropDownListOptions extends StObject {
+trait DropDownListOptions
+  extends StObject
+     with AllEditorOptions {
   
   var animation: js.UndefOr[Boolean | DropDownListAnimation] = js.undefined
   
@@ -25,7 +27,7 @@ trait DropDownListOptions extends StObject {
   
   var dataBound: js.UndefOr[js.Function1[/* e */ DropDownListDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
   
   var dataTextField: js.UndefOr[String] = js.undefined
   
@@ -37,7 +39,11 @@ trait DropDownListOptions extends StObject {
   
   var enforceMinLength: js.UndefOr[Boolean] = js.undefined
   
+  var fillMode: js.UndefOr[String] = js.undefined
+  
   var filter: js.UndefOr[String] = js.undefined
+  
+  var filterTitle: js.UndefOr[String] = js.undefined
   
   var filtering: js.UndefOr[js.Function1[/* e */ DropDownListFilteringEvent, Unit]] = js.undefined
   
@@ -63,13 +69,17 @@ trait DropDownListOptions extends StObject {
   
   var open: js.UndefOr[js.Function1[/* e */ DropDownListOpenEvent, Unit]] = js.undefined
   
-  var optionLabel: js.UndefOr[String | js.Any] = js.undefined
+  var optionLabel: js.UndefOr[String | Any] = js.undefined
   
   var optionLabelTemplate: js.UndefOr[String | js.Function] = js.undefined
   
   var popup: js.UndefOr[DropDownListPopup] = js.undefined
   
+  var rounded: js.UndefOr[String] = js.undefined
+  
   var select: js.UndefOr[js.Function1[/* e */ DropDownListSelectEvent, Unit]] = js.undefined
+  
+  var size: js.UndefOr[String] = js.undefined
   
   var template: js.UndefOr[String | js.Function] = js.undefined
   
@@ -128,7 +138,7 @@ object DropDownListOptions {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -152,7 +162,15 @@ object DropDownListOptions {
     
     inline def setEnforceMinLengthUndefined: Self = StObject.set(x, "enforceMinLength", js.undefined)
     
+    inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
+    
+    inline def setFillModeUndefined: Self = StObject.set(x, "fillMode", js.undefined)
+    
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterTitle(value: String): Self = StObject.set(x, "filterTitle", value.asInstanceOf[js.Any])
+    
+    inline def setFilterTitleUndefined: Self = StObject.set(x, "filterTitle", js.undefined)
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
@@ -204,7 +222,7 @@ object DropDownListOptions {
     
     inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    inline def setOptionLabel(value: String | js.Any): Self = StObject.set(x, "optionLabel", value.asInstanceOf[js.Any])
+    inline def setOptionLabel(value: String | Any): Self = StObject.set(x, "optionLabel", value.asInstanceOf[js.Any])
     
     inline def setOptionLabelTemplate(value: String | js.Function): Self = StObject.set(x, "optionLabelTemplate", value.asInstanceOf[js.Any])
     
@@ -216,9 +234,17 @@ object DropDownListOptions {
     
     inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
+    inline def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+    
     inline def setSelect(value: /* e */ DropDownListSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

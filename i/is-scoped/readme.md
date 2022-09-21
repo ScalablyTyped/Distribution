@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-scoped
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Check if a string is a scoped npm package name
@@ -10,10 +10,10 @@ Check if a string is a scoped npm package name
 | ------------------ | :-------------: |
 | Full name          | is-scoped |
 | Keywords           | scoped, npm, package, name, is, detect, validate, validation |
-| # releases         | 3 |
-| # dependents       | 75 |
-| # downloads        | 16486967 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2839351.3333333335 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-scoped#readme)

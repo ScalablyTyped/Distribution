@@ -1,6 +1,6 @@
 package typings.babylonjs
 
-import typings.std.KeyboardEvent
+import typings.babylonjs.deviceInputEventsMod.IKeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ object keyboardEventsMod {
   
   @JSImport("babylonjs/Events/keyboardEvents", "KeyboardEventTypes")
   @js.native
-  class KeyboardEventTypes () extends StObject
+  open class KeyboardEventTypes () extends StObject
   /* static members */
   object KeyboardEventTypes {
     
@@ -30,7 +30,7 @@ object keyboardEventsMod {
   
   @JSImport("babylonjs/Events/keyboardEvents", "KeyboardInfo")
   @js.native
-  class KeyboardInfo protected () extends StObject {
+  open class KeyboardInfo protected () extends StObject {
     /**
       * Instantiates a new keyboard info.
       * This class is used to store keyboard related info for the onKeyboardObservable event.
@@ -45,13 +45,13 @@ object keyboardEventsMod {
       /**
       * Defines the related dom event
       */
-    event: KeyboardEvent
+    event: IKeyboardEvent
     ) = this()
     
     /**
       * Defines the related dom event
       */
-    var event: KeyboardEvent = js.native
+    var event: IKeyboardEvent = js.native
     
     /**
       * Defines the type of event (KeyboardEventTypes)
@@ -61,7 +61,7 @@ object keyboardEventsMod {
   
   @JSImport("babylonjs/Events/keyboardEvents", "KeyboardInfoPre")
   @js.native
-  class KeyboardInfoPre protected () extends KeyboardInfo {
+  open class KeyboardInfoPre protected () extends KeyboardInfo {
     /**
       * Instantiates a new keyboard pre info.
       * This class is used to store keyboard related info for the onPreKeyboardObservable event.
@@ -76,12 +76,19 @@ object keyboardEventsMod {
       /**
       * Defines the related dom event
       */
-    event: KeyboardEvent
+    event: IKeyboardEvent
     ) = this()
     
     /**
       * Defines whether the engine should skip the next onKeyboardObservable associated to this pre.
       */
-    var skipOnPointerObservable: Boolean = js.native
+    var skipOnKeyboardObservable: Boolean = js.native
+    
+    /**
+      * Defines whether the engine should skip the next onKeyboardObservable associated to this pre.
+      * @deprecated use skipOnKeyboardObservable property instead
+      */
+    def skipOnPointerObservable: Boolean = js.native
+    def skipOnPointerObservable_=(value: Boolean): Unit = js.native
   }
 }

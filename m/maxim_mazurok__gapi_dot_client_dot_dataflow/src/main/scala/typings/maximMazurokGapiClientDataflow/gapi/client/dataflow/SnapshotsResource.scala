@@ -1,11 +1,11 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientDataflow.anon.QuotaUser
-import typings.maximMazurokGapiClientDataflow.anon.QuotaUserSnapshotId
+import typings.maximMazurokGapiClientDataflow.anon.JobId
+import typings.maximMazurokGapiClientDataflow.anon.OauthtokenPrettyPrint
+import typings.maximMazurokGapiClientDataflow.anon.PrettyPrintProjectId
+import typings.maximMazurokGapiClientDataflow.anon.ProjectIdQuotaUser
 import typings.maximMazurokGapiClientDataflow.anon.SnapshotId
-import typings.maximMazurokGapiClientDataflow.anon.UploadTypeUploadprotocol
-import typings.maximMazurokGapiClientDataflow.anon.UploadprotocolXgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,12 +19,12 @@ trait SnapshotsResource extends StObject {
   
   /** Gets information about a snapshot. */
   def get(): Request[Snapshot] = js.native
-  def get(request: QuotaUserSnapshotId): Request[Snapshot] = js.native
+  def get(request: PrettyPrintProjectId): Request[Snapshot] = js.native
   def get(request: SnapshotId): Request[Snapshot] = js.native
   
   /** Lists snapshots. */
   def list(): Request[ListSnapshotsResponse] = js.native
-  def list(request: QuotaUser): Request[ListSnapshotsResponse] = js.native
-  def list(request: UploadTypeUploadprotocol): Request[ListSnapshotsResponse] = js.native
-  def list(request: UploadprotocolXgafv): Request[ListSnapshotsResponse] = js.native
+  def list(request: JobId): Request[ListSnapshotsResponse] = js.native
+  def list(request: OauthtokenPrettyPrint): Request[ListSnapshotsResponse] = js.native
+  def list(request: ProjectIdQuotaUser): Request[ListSnapshotsResponse] = js.native
 }

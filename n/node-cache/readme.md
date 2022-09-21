@@ -10,10 +10,10 @@ Simple and fast NodeJS internal caching. Node internal in memory cache like memc
 | ------------------ | :-------------: |
 | Full name          | node-cache |
 | Keywords           | cache, caching, local, variable, multi, memory, internal, node, memcached, object |
-| # releases         | 10 |
-| # dependents       | 653 |
-| # downloads        | 41562655 |
-| # stars            | 99 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9088058.333333334 |
+| # stars            | 1790.0 |
 
 ## Links
 - [Homepage](https://github.com/node-cache/node-cache)

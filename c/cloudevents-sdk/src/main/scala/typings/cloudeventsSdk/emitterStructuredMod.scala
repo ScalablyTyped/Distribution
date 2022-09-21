@@ -14,7 +14,7 @@ object emitterStructuredMod {
     */
   @JSImport("cloudevents-sdk/lib/bindings/http/emitter_structured", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with StructuredHTTPEmitter {
     
@@ -28,7 +28,7 @@ object emitterStructuredMod {
       * @returns {Promise} Promise with an eventual response from the receiver
       */
     /* CompleteClass */
-    override def emit(options: UrlURL, cloudevent: CloudEvent): js.Promise[js.Any] = js.native
+    override def emit(options: UrlURL, cloudevent: CloudEvent): js.Promise[Any] = js.native
   }
   
   trait CloudEvent extends StObject {
@@ -62,18 +62,18 @@ object emitterStructuredMod {
       * @param {CloudEvent} cloudevent The CloudEvent to be sent
       * @returns {Promise} Promise with an eventual response from the receiver
       */
-    def emit(options: UrlURL, cloudevent: CloudEvent): js.Promise[js.Any]
+    def emit(options: UrlURL, cloudevent: CloudEvent): js.Promise[Any]
   }
   object StructuredHTTPEmitter {
     
-    inline def apply(emit: (UrlURL, CloudEvent) => js.Promise[js.Any]): StructuredHTTPEmitter = {
+    inline def apply(emit: (UrlURL, CloudEvent) => js.Promise[Any]): StructuredHTTPEmitter = {
       val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit))
       __obj.asInstanceOf[StructuredHTTPEmitter]
     }
     
     extension [Self <: StructuredHTTPEmitter](x: Self) {
       
-      inline def setEmit(value: (UrlURL, CloudEvent) => js.Promise[js.Any]): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (UrlURL, CloudEvent) => js.Promise[Any]): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     }
   }
 }

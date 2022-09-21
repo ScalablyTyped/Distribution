@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetAnomalySubscriptionsRequest extends StObject {
   
   /**
-    *  The number of entries a paginated response contains. 
+    * The number of entries a paginated response contains. 
     */
   var MaxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
-    *  Cost anomaly monitor ARNs. 
+    * Cost anomaly monitor ARNs. 
     */
   var MonitorArn: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  The token to retrieve the next set of results. AWS provides the token when the response from a previous call has more results than the maximum page size. 
+    * The token to retrieve the next set of results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size. 
     */
   var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
   
   /**
-    *  A list of cost anomaly subscription ARNs. 
+    * A list of cost anomaly subscription ARNs. 
     */
   var SubscriptionArnList: js.UndefOr[Values] = js.undefined
 }
@@ -51,6 +51,6 @@ object GetAnomalySubscriptionsRequest {
     
     inline def setSubscriptionArnListUndefined: Self = StObject.set(x, "SubscriptionArnList", js.undefined)
     
-    inline def setSubscriptionArnListVarargs(value: Value*): Self = StObject.set(x, "SubscriptionArnList", js.Array(value :_*))
+    inline def setSubscriptionArnListVarargs(value: Value*): Self = StObject.set(x, "SubscriptionArnList", js.Array(value*))
   }
 }

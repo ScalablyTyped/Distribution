@@ -48,7 +48,7 @@ object XCustomSprite {
     getContentCanvas: () => XCanvas,
     hide: () => Unit,
     move: (RealPoint2D, ViewState, RenderState) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setAlpha: Double => Unit,
     setPriority: Double => Unit,

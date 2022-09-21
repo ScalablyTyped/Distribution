@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LocalVars extends StObject {
   
-  def apply(Index: js.Any): LocalVar = js.native
+  def apply(Index: Any): LocalVar = js.native
   
-  def Add(Name: String, Value: js.Any): Unit = js.native
+  def Add(Name: String, Value: Any): Unit = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native
   
@@ -17,7 +17,7 @@ trait LocalVars extends StObject {
   
   def IsMemberSafe(dispid: Double): Boolean = js.native
   
-  def Item(Index: js.Any): LocalVar = js.native
+  def Item(Index: Any): LocalVar = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

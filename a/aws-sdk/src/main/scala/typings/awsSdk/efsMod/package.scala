@@ -1,45 +1,52 @@
 package typings.awsSdk.efsMod
 
+import typings.awsSdk.awsSdkStrings.AFTER_1_ACCESS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccessPointArn = java.lang.String
+type AccessPointArn = String
 
-type AccessPointDescriptions = js.Array[typings.awsSdk.efsMod.AccessPointDescription]
+type AccessPointDescriptions = js.Array[AccessPointDescription]
 
-type AccessPointId = java.lang.String
+type AccessPointId = String
 
-type AvailabilityZoneId = java.lang.String
+type AvailabilityZoneId = String
 
-type AvailabilityZoneName = java.lang.String
+type AvailabilityZoneName = String
 
-type AwsAccountId = java.lang.String
+type AwsAccountId = String
 
-type BypassPolicyLockoutSafetyCheck = scala.Boolean
+type Backup = Boolean
 
-type ClientToken = java.lang.String
+type BypassPolicyLockoutSafetyCheck = Boolean
 
-type CreationToken = java.lang.String
+type ClientToken = String
 
-type Encrypted = scala.Boolean
+type CreationToken = String
 
-type FileSystemArn = java.lang.String
+type Destinations = js.Array[Destination]
 
-type FileSystemDescriptions = js.Array[typings.awsSdk.efsMod.FileSystemDescription]
+type DestinationsToCreate = js.Array[DestinationToCreate]
 
-type FileSystemId = java.lang.String
+type Encrypted = Boolean
 
-type FileSystemNullableSizeValue = scala.Double
+type FileSystemArn = String
 
-type FileSystemSizeValue = scala.Double
+type FileSystemDescriptions = js.Array[FileSystemDescription]
 
-type Gid = scala.Double
+type FileSystemId = String
 
-type IpAddress = java.lang.String
+type FileSystemNullableSizeValue = Double
 
-type KmsKeyId = java.lang.String
+type FileSystemSizeValue = Double
+
+type Gid = Double
+
+type IpAddress = String
+
+type KmsKeyId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.creating__
@@ -47,54 +54,84 @@ type KmsKeyId = java.lang.String
   - typings.awsSdk.awsSdkStrings.updating__
   - typings.awsSdk.awsSdkStrings.deleting__
   - typings.awsSdk.awsSdkStrings.deleted__
+  - typings.awsSdk.awsSdkStrings.error__
   - java.lang.String
 */
-type LifeCycleState = typings.awsSdk.efsMod._LifeCycleState | java.lang.String
+type LifeCycleState = _LifeCycleState | String
 
-type LifecyclePolicies = js.Array[typings.awsSdk.efsMod.LifecyclePolicy]
+type LifecyclePolicies = js.Array[LifecyclePolicy]
 
-type Marker = java.lang.String
+type Marker = String
 
-type MaxItems = scala.Double
+type MaxItems = Double
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type MountTargetCount = scala.Double
+type MountTargetCount = Double
 
-type MountTargetDescriptions = js.Array[typings.awsSdk.efsMod.MountTargetDescription]
+type MountTargetDescriptions = js.Array[MountTargetDescription]
 
-type MountTargetId = java.lang.String
+type MountTargetId = String
 
-type Name = java.lang.String
+type Name = String
 
-type NetworkInterfaceId = java.lang.String
+type NetworkInterfaceId = String
 
-type OwnerGid = scala.Double
+type OwnerGid = Double
 
-type OwnerUid = scala.Double
+type OwnerUid = Double
 
-type Path = java.lang.String
+type Path = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.generalPurpose
   - typings.awsSdk.awsSdkStrings.maxIO
   - java.lang.String
 */
-type PerformanceMode = typings.awsSdk.efsMod._PerformanceMode | java.lang.String
+type PerformanceMode = _PerformanceMode | String
 
-type Permissions = java.lang.String
+type Permissions = String
 
-type Policy = java.lang.String
+type Policy = String
 
-type ProvisionedThroughputInMibps = scala.Double
+type ProvisionedThroughputInMibps = Double
 
-type ResourceId = java.lang.String
+type RegionName = String
 
-type SecondaryGids = js.Array[typings.awsSdk.efsMod.Gid]
+type ReplicationConfigurationDescriptions = js.Array[ReplicationConfigurationDescription]
 
-type SecurityGroup = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.ENABLING
+  - typings.awsSdk.awsSdkStrings.DELETING
+  - typings.awsSdk.awsSdkStrings.ERROR
+  - java.lang.String
+*/
+type ReplicationStatus = _ReplicationStatus | String
 
-type SecurityGroups = js.Array[typings.awsSdk.efsMod.SecurityGroup]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FILE_SYSTEM
+  - typings.awsSdk.awsSdkStrings.MOUNT_TARGET
+  - java.lang.String
+*/
+type Resource = _Resource | String
+
+type ResourceId = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LONG_ID
+  - typings.awsSdk.awsSdkStrings.SHORT_ID
+  - java.lang.String
+*/
+type ResourceIdType = _ResourceIdType | String
+
+type Resources = js.Array[Resource]
+
+type SecondaryGids = js.Array[Gid]
+
+type SecurityGroup = String
+
+type SecurityGroups = js.Array[SecurityGroup]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
@@ -103,28 +140,28 @@ type SecurityGroups = js.Array[typings.awsSdk.efsMod.SecurityGroup]
   - typings.awsSdk.awsSdkStrings.DISABLING
   - java.lang.String
 */
-type Status = typings.awsSdk.efsMod._Status | java.lang.String
+type Status = _Status | String
 
-type SubnetId = java.lang.String
+type SubnetId = String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeys = js.Array[typings.awsSdk.efsMod.TagKey]
+type TagKeys = js.Array[TagKey]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type Tags = js.Array[typings.awsSdk.efsMod.Tag]
+type Tags = js.Array[Tag]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.bursting
-  - typings.awsSdk.awsSdkStrings.provisioned_
+  - typings.awsSdk.awsSdkStrings.provisioned__
   - java.lang.String
 */
-type ThroughputMode = typings.awsSdk.efsMod._ThroughputMode | java.lang.String
+type ThroughputMode = _ThroughputMode | String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
-type Token = java.lang.String
+type Token = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AFTER_7_DAYS
@@ -134,15 +171,17 @@ type Token = java.lang.String
   - typings.awsSdk.awsSdkStrings.AFTER_90_DAYS
   - java.lang.String
 */
-type TransitionToIARules = typings.awsSdk.efsMod._TransitionToIARules | java.lang.String
+type TransitionToIARules = _TransitionToIARules | String
 
-type Uid = scala.Double
+type TransitionToPrimaryStorageClassRules = AFTER_1_ACCESS | String
 
-type VpcId = java.lang.String
+type Uid = Double
+
+type VpcId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2015-02-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.efsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

@@ -67,7 +67,7 @@ object DeviceCompliancePolicySettingStateSummary {
     
     inline def setDeviceComplianceSettingStatesUndefined: Self = StObject.set(x, "deviceComplianceSettingStates", js.undefined)
     
-    inline def setDeviceComplianceSettingStatesVarargs(value: DeviceComplianceSettingState*): Self = StObject.set(x, "deviceComplianceSettingStates", js.Array(value :_*))
+    inline def setDeviceComplianceSettingStatesVarargs(value: DeviceComplianceSettingState*): Self = StObject.set(x, "deviceComplianceSettingStates", js.Array(value*))
     
     inline def setErrorDeviceCount(value: Double): Self = StObject.set(x, "errorDeviceCount", value.asInstanceOf[js.Any])
     

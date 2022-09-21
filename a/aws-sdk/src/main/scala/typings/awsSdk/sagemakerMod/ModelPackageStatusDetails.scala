@@ -29,10 +29,10 @@ object ModelPackageStatusDetails {
     
     inline def setImageScanStatusesUndefined: Self = StObject.set(x, "ImageScanStatuses", js.undefined)
     
-    inline def setImageScanStatusesVarargs(value: ModelPackageStatusItem*): Self = StObject.set(x, "ImageScanStatuses", js.Array(value :_*))
+    inline def setImageScanStatusesVarargs(value: ModelPackageStatusItem*): Self = StObject.set(x, "ImageScanStatuses", js.Array(value*))
     
     inline def setValidationStatuses(value: ModelPackageStatusItemList): Self = StObject.set(x, "ValidationStatuses", value.asInstanceOf[js.Any])
     
-    inline def setValidationStatusesVarargs(value: ModelPackageStatusItem*): Self = StObject.set(x, "ValidationStatuses", js.Array(value :_*))
+    inline def setValidationStatusesVarargs(value: ModelPackageStatusItem*): Self = StObject.set(x, "ValidationStatuses", js.Array(value*))
   }
 }

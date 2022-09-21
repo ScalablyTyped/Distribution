@@ -10,17 +10,17 @@ object Internal {
   
   @JSGlobal("SP.JsGrid.Internal.DiffTracker")
   @js.native
-  class DiffTracker protected ()
+  open class DiffTracker protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.Internal.DiffTracker {
     def this(
-      objBag: js.Any,
+      objBag: Any,
       fnGetChange: js.Function4[
-            /* version */ js.Any, 
-            /* keys */ js.Array[js.Any], 
+            /* version */ Any, 
+            /* keys */ js.Array[Any], 
             /* synchronized */ Boolean, 
             /* includeInvalidPropUpdates */ Boolean, 
-            js.Any
+            Any
           ]
     ) = this()
     
@@ -42,10 +42,10 @@ object Internal {
   
   @JSGlobal("SP.JsGrid.Internal.PropertyUpdate")
   @js.native
-  class PropertyUpdate protected ()
+  open class PropertyUpdate protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.Internal.PropertyUpdate {
-    def this(data: js.Any, localized: String) = this()
+    def this(data: Any, localized: String) = this()
     
     /* CompleteClass */
     @JSName("localized")

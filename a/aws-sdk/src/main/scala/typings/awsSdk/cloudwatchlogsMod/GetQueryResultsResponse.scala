@@ -34,7 +34,7 @@ object GetQueryResultsResponse {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: ResultRows*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: ResultRows*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setStatistics(value: QueryStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     

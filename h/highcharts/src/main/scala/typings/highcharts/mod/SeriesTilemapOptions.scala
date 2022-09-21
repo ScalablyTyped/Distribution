@@ -68,7 +68,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /**
     * Not available
     */
-  var mapData: js.UndefOr[js.Any | js.Array[SeriesMapDataOptions] | Unit]
+  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | GeoJSON | TopoJSON | Unit]
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
@@ -128,7 +128,7 @@ object SeriesTilemapOptions {
     
     inline def setDataVarargs(
       value: ((js.Tuple2[Double | String, Double]) | (js.Tuple3[Double | String, Double, Double]) | PointOptionsObject)*
-    ): Self = StObject.set(x, "data", js.Array(value :_*))
+    ): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -142,11 +142,11 @@ object SeriesTilemapOptions {
     
     inline def setLegendIndexUndefined: Self = StObject.set(x, "legendIndex", js.undefined)
     
-    inline def setMapData(value: js.Any | js.Array[SeriesMapDataOptions] | Unit): Self = StObject.set(x, "mapData", value.asInstanceOf[js.Any])
+    inline def setMapData(value: js.Array[SeriesMapDataOptions] | GeoJSON | TopoJSON | Unit): Self = StObject.set(x, "mapData", value.asInstanceOf[js.Any])
     
     inline def setMapDataUndefined: Self = StObject.set(x, "mapData", js.undefined)
     
-    inline def setMapDataVarargs(value: SeriesMapDataOptions*): Self = StObject.set(x, "mapData", js.Array(value :_*))
+    inline def setMapDataVarargs(value: SeriesMapDataOptions*): Self = StObject.set(x, "mapData", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

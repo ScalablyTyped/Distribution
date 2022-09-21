@@ -1,6 +1,5 @@
 package typings.swaggerExpressMw
 
-import typings.std.Error
 import typings.swaggerNodeRunner.mod.Config
 import typings.swaggerNodeRunner.mod.ConnectMiddleware
 import org.scalablytyped.runtime.StObject
@@ -15,6 +14,6 @@ object mod {
   
   inline def create(
     config: Config,
-    cb: js.Function2[/* err */ js.UndefOr[Error], /* runner */ ConnectMiddleware, Unit]
+    cb: js.Function2[/* err */ js.UndefOr[js.Error], /* runner */ ConnectMiddleware, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

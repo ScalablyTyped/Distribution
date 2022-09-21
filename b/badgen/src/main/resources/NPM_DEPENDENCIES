@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "badgen" : "3.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "badgen" : "3.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

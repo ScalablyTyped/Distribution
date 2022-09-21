@@ -25,6 +25,31 @@ object global {
     val ^ : js.Any = js.native
     
     /**
+      * Regions for the connection in {@link ClientConfig.areaCode}.
+      */
+    @JSGlobal("AgoraRTC.AREAS")
+    @js.native
+    object AREAS extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: String): js.UndefOr[typings.agoraRtcSdk.mod.AREAS & String] = js.native
+      
+      /* "ASIA" */ val ASIA: typings.agoraRtcSdk.mod.AREAS.ASIA & String = js.native
+      
+      /* "CHINA" */ val CHINA: typings.agoraRtcSdk.mod.AREAS.CHINA & String = js.native
+      
+      /* "EUROPE" */ val EUROPE: typings.agoraRtcSdk.mod.AREAS.EUROPE & String = js.native
+      
+      /* "GLOBAL" */ val GLOBAL: typings.agoraRtcSdk.mod.AREAS.GLOBAL & String = js.native
+      
+      /* "INDIA" */ val INDIA: typings.agoraRtcSdk.mod.AREAS.INDIA & String = js.native
+      
+      /* "JAPAN" */ val JAPAN: typings.agoraRtcSdk.mod.AREAS.JAPAN & String = js.native
+      
+      /* "NORTH_AMERICA" */ val NORTH_AMERICA: typings.agoraRtcSdk.mod.AREAS.NORTH_AMERICA & String = js.native
+    }
+    
+    /**
       * Error information of the media stream relay.
       *
       * When errors occur in calling {@link startChannelMediaRelay}, {@link updateChannelMediaRelay}, or {@link stopChannelMediaRelay}, the callback functions of these methods provide error details in this class.
@@ -50,7 +75,7 @@ object global {
       */
     @JSGlobal("AgoraRTC.ChannelMediaError")
     @js.native
-    class ChannelMediaError ()
+    open class ChannelMediaError ()
       extends typings.agoraRtcSdk.mod.ChannelMediaError
     
     /**
@@ -122,10 +147,10 @@ object global {
       *
       * **Note**
       *
-      * Agora has yet to conduct comprehensive tests on Chromium kernel browsers, such as QQ and 360.
-      * Agora will gradually achieve compatibility on most mainstream browsers in subsequent versions of the Web SDK.
-      * @returns - true: The Web SDK is compatible with the current web browser.
-      * - false: The Web SDK is not compatible with the current web browser.
+      * - Both the type and version of the browser affect the return value.
+      * - Agora has not conducted comprehensive tests on some Chromium kernel browsers, such as QQ and 360. You can call this method to check if the SDK supports the browser.
+      * @returns - `true`: The Web SDK is compatible with the current web browser.
+      * - `false`: The Web SDK is not compatible with the current web browser.
       */
     inline def checkSystemRequirements(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSystemRequirements")().asInstanceOf[Boolean]
     
@@ -156,7 +181,9 @@ object global {
       *
       * **Note**
       *
-      * On Safari 12.1 or later, call this method after calling {@link createStream} successfully.
+      * - On Chrome 81 or later, Safari, and Firefox, device IDs are only available after the user has granted permissions to use the media device. See [Why can't I get device ID on Chrome 81?](https://docs.agora.io/en/faq/empty_deviceId)
+      * - You cannot get the `"audioinput"` device on Firefox and Safari.
+      *
       * @example
       * **Sample code**
       *
@@ -165,15 +192,24 @@ object global {
       * var devCount = devices.length;
       *
       * var id = devices[0].deviceId;
+      * }, function(errStr){
+      *      console.error("Failed to getDevice", errStr);
       * });
       * ```
+      *
+      * @param callback The callback when the method succeeds. The SDK returns a list of media devices in an array of {@link MediaDeviceInfo} objects.
+      * @param callback_Error The callback when the method fails. See the detailed error message in the `errStr` parameter.
       */
     inline def getDevices(callback: js.Function1[/* devices */ js.Array[MediaDeviceInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getDevices(
+      callback: js.Function1[/* devices */ js.Array[MediaDeviceInfo], Unit],
+      callback_Error: js.Function1[/* errStr */ String, Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")(callback.asInstanceOf[js.Any], callback_Error.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Gets the Sources for Screen-sharing
       *
-      * To share the screen on Electron, call this method to get the screen sources. See [Share the Screen](../../screensharing_web?platform=Web#electron) for details.
+      * To share the screen in Electron, call this method to get the screen sources. See [Share the Screen](../../screensharing_web?platform=Web#electron) for details.
       *
       * If this method succeeds, the SDK returns a list of screen sources in an array of {@link DesktopCapturerSource} objects.
       * @example **Sample code**
@@ -188,16 +224,16 @@ object global {
     /**
       * Gets the supported codec of the web browser
       *
-      * This method returns the codecs supported by both the Agora Web SDK and the web browser. The Agora Web SDK supports VP8 and H.264 for video, and OPUS for audio.
+      * This method returns the codecs supported by both the Agora Web SDK and the web browser. The Agora Web SDK supports VP8, VP9 and H.264 for video, and OPUS for audio.
       *
       * **Note**
       *
       * - This method supports all web browsers. For web browsers that do not support WebRTC or are not recognized, the returned codec list is empty.
       * - The returned codec list is based on the [SDP](https://tools.ietf.org/html/rfc4566) used by the web browser and for reference only.
-      * - Some Android phones might claim to support H.264 but have problems in communicating with other platforms using H.264. In this case, we recommend using the VP8 codec.
+      * - Some Android phones might claim to support H.264 but have problems in communicating with other platforms using H.264. In this case, we recommend using the VP8 or VP9 codec.
       *
       * @returns  Returns a `Promise` object. In the `.then(function(result){})` callback, `result` has the following properties:
-      * - `video`: array, the supported video codecs. The array might include `"H264"` and `"VP8"`, or be empty.
+      * - `video`: array, the supported video codecs. The array might include `"H264"`, `"VP8"` and `"VP9"`, or be empty.
       * - `audio`: array, the supported audio codecs. The array might include `"OPUS"`, or be empty.
       *
       * @example

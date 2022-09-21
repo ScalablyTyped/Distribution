@@ -11,7 +11,7 @@ object drawerIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/drawer/index.native", JSImport.Default)
   @js.native
-  class default () extends Drawer
+  open class default () extends Drawer
   /* static members */
   object default {
     
@@ -26,8 +26,7 @@ object drawerIndexNativeMod {
   }
   
   @js.native
-  trait Drawer
-    extends Component[DrawerNativeProps, js.Any, js.Any] {
+  trait Drawer extends Component[DrawerNativeProps, Any, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MDrawer(): Unit = js.native

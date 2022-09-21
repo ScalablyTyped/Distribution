@@ -22,6 +22,6 @@ object BatchUpdatePhoneNumberRequest {
     
     inline def setUpdatePhoneNumberRequestItems(value: UpdatePhoneNumberRequestItemList): Self = StObject.set(x, "UpdatePhoneNumberRequestItems", value.asInstanceOf[js.Any])
     
-    inline def setUpdatePhoneNumberRequestItemsVarargs(value: UpdatePhoneNumberRequestItem*): Self = StObject.set(x, "UpdatePhoneNumberRequestItems", js.Array(value :_*))
+    inline def setUpdatePhoneNumberRequestItemsVarargs(value: UpdatePhoneNumberRequestItem*): Self = StObject.set(x, "UpdatePhoneNumberRequestItems", js.Array(value*))
   }
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("two.js", "WebGLRenderer")
 @js.native
-class WebGLRenderer ()
+open class WebGLRenderer ()
   extends StObject
      with Renderer

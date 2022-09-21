@@ -9,7 +9,7 @@ trait ExecutionContextDescription extends StObject {
   /**
     * Embedder-specific auxiliary data.
     */
-  var auxData: js.UndefOr[js.Any] = js.undefined
+  var auxData: js.UndefOr[Any] = js.undefined
   
   /**
     * Unique id of the execution context. It can be used to specify in which execution context
@@ -26,17 +26,24 @@ trait ExecutionContextDescription extends StObject {
     * Execution context origin.
     */
   var origin: String
+  
+  /**
+    * A system-unique execution context identifier. Unlike the id, this is unique across
+    * multiple processes, so can be reliably used to identify specific context while backend
+    * performs a cross-process navigation.
+    */
+  var uniqueId: String
 }
 object ExecutionContextDescription {
   
-  inline def apply(id: ExecutionContextId, name: String, origin: String): ExecutionContextDescription = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
+  inline def apply(id: ExecutionContextId, name: String, origin: String, uniqueId: String): ExecutionContextDescription = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], uniqueId = uniqueId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionContextDescription]
   }
   
   extension [Self <: ExecutionContextDescription](x: Self) {
     
-    inline def setAuxData(value: js.Any): Self = StObject.set(x, "auxData", value.asInstanceOf[js.Any])
+    inline def setAuxData(value: Any): Self = StObject.set(x, "auxData", value.asInstanceOf[js.Any])
     
     inline def setAuxDataUndefined: Self = StObject.set(x, "auxData", js.undefined)
     
@@ -45,5 +52,7 @@ object ExecutionContextDescription {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
   }
 }

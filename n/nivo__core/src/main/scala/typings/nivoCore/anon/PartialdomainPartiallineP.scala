@@ -1,47 +1,37 @@
 package typings.nivoCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<{  domain :std.Partial<{  line :std.Partial<react.react.CSSProperties>}>,   ticks :std.Partial<{  line :std.Partial<react.react.CSSProperties>,   text :std.Partial<react.react.CSSProperties>}>,   legend :std.Partial<{  text :std.Partial<react.react.CSSProperties>}>}> */
-@js.native
-trait PartialdomainPartiallineP extends js.Object {
-  var domain: js.UndefOr[PartiallinePartialCSSProp] = js.native
-  var legend: js.UndefOr[PartialtextPartialCSSProp] = js.native
-  var ticks: js.UndefOr[PartiallinePartialCSSPropLine] = js.native
+/* Inlined std.Partial<{  domain :std.Partial<{  line :std.Partial<std.Partial<react.react.CSSProperties>>}>,   ticks :std.Partial<{  line :std.Partial<std.Partial<react.react.CSSProperties>>,   text :std.Partial<std.Partial<react.react.CSSProperties>>}>,   legend :std.Partial<{  text :std.Partial<std.Partial<react.react.CSSProperties>>}>}> */
+trait PartialdomainPartiallineP extends StObject {
+  
+  var domain: js.UndefOr[PartiallinePartialPartial] = js.undefined
+  
+  var legend: js.UndefOr[PartialtextPartialPartial] = js.undefined
+  
+  var ticks: js.UndefOr[PartiallinePartialPartialLine] = js.undefined
 }
-
 object PartialdomainPartiallineP {
-  @scala.inline
-  def apply(): PartialdomainPartiallineP = {
+  
+  inline def apply(): PartialdomainPartiallineP = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialdomainPartiallineP]
   }
-  @scala.inline
-  implicit class PartialdomainPartiallinePOps[Self <: PartialdomainPartiallineP] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setDomain(value: PartiallinePartialCSSProp): Self = this.set("domain", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
-    @scala.inline
-    def setLegend(value: PartialtextPartialCSSProp): Self = this.set("legend", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteLegend: Self = this.set("legend", js.undefined)
-    @scala.inline
-    def setTicks(value: PartiallinePartialCSSPropLine): Self = this.set("ticks", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteTicks: Self = this.set("ticks", js.undefined)
-  }
   
+  extension [Self <: PartialdomainPartiallineP](x: Self) {
+    
+    inline def setDomain(value: PartiallinePartialPartial): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    
+    inline def setLegend(value: PartialtextPartialPartial): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    
+    inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+    
+    inline def setTicks(value: PartiallinePartialPartialLine): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    
+    inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
+  }
 }
-

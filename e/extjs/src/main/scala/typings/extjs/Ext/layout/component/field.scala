@@ -18,19 +18,19 @@ object field {
       * @param ownerContext Object
       */
     @JSName("beginLayoutCycle")
-    var beginLayoutCycle_IField: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var beginLayoutCycle_IField: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Called before any calculation cycles to prepare for layout
       * @param ownerContext Object
       */
     @JSName("beginLayout")
-    var beginLayout_IField: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var beginLayout_IField: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Property] (Object) */
-    var elementId: js.UndefOr[js.Any] = js.undefined
+    var elementId: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Object) */
-    var errorStrategies: js.UndefOr[js.Any] = js.undefined
+    var errorStrategies: js.UndefOr[Any] = js.undefined
     
     /** [Method] Return the set of strategy functions from the errorStrategies collection that is appropriate for the field s msgTarge  */
     var getErrorStrategy: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -39,28 +39,28 @@ object field {
     var getLabelStrategy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Property] (Object) */
-    var labelStrategies: js.UndefOr[js.Any] = js.undefined
+    var labelStrategies: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Object) */
-    var left: js.UndefOr[js.Any] = js.undefined
+    var left: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Object) */
-    var qtip: js.UndefOr[js.Any] = js.undefined
+    var qtip: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Object) */
-    var right: js.UndefOr[js.Any] = js.undefined
+    var right: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Object) */
-    var side: js.UndefOr[js.Any] = js.undefined
+    var side: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Object) */
-    var title: js.UndefOr[js.Any] = js.undefined
+    var title: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Object) */
-    var top: js.UndefOr[js.Any] = js.undefined
+    var top: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Object) */
-    var under: js.UndefOr[js.Any] = js.undefined
+    var under: js.UndefOr[Any] = js.undefined
   }
   object IField {
     
@@ -71,19 +71,19 @@ object field {
     
     extension [Self <: IField](x: Self) {
       
-      inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
+      inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
       
-      inline def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
+      inline def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
       
       inline def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
       
       inline def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
       
-      inline def setElementId(value: js.Any): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
+      inline def setElementId(value: Any): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
       
       inline def setElementIdUndefined: Self = StObject.set(x, "elementId", js.undefined)
       
-      inline def setErrorStrategies(value: js.Any): Self = StObject.set(x, "errorStrategies", value.asInstanceOf[js.Any])
+      inline def setErrorStrategies(value: Any): Self = StObject.set(x, "errorStrategies", value.asInstanceOf[js.Any])
       
       inline def setErrorStrategiesUndefined: Self = StObject.set(x, "errorStrategies", js.undefined)
       
@@ -95,35 +95,35 @@ object field {
       
       inline def setGetLabelStrategyUndefined: Self = StObject.set(x, "getLabelStrategy", js.undefined)
       
-      inline def setLabelStrategies(value: js.Any): Self = StObject.set(x, "labelStrategies", value.asInstanceOf[js.Any])
+      inline def setLabelStrategies(value: Any): Self = StObject.set(x, "labelStrategies", value.asInstanceOf[js.Any])
       
       inline def setLabelStrategiesUndefined: Self = StObject.set(x, "labelStrategies", js.undefined)
       
-      inline def setLeft(value: js.Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
       inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      inline def setQtip(value: js.Any): Self = StObject.set(x, "qtip", value.asInstanceOf[js.Any])
+      inline def setQtip(value: Any): Self = StObject.set(x, "qtip", value.asInstanceOf[js.Any])
       
       inline def setQtipUndefined: Self = StObject.set(x, "qtip", js.undefined)
       
-      inline def setRight(value: js.Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
       inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      inline def setSide(value: js.Any): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+      inline def setSide(value: Any): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
       
       inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
       
-      inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTop(value: js.Any): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Any): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
       inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      inline def setUnder(value: js.Any): Self = StObject.set(x, "under", value.asInstanceOf[js.Any])
+      inline def setUnder(value: Any): Self = StObject.set(x, "under", value.asInstanceOf[js.Any])
       
       inline def setUnderUndefined: Self = StObject.set(x, "under", js.undefined)
     }

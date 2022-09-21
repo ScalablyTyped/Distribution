@@ -68,4 +68,10 @@ object protocolVersion extends StObject {
     extends StObject
        with protocolVersion
   /* 0x05 */ val v5: typings.cassandraDriver.typesMod.types.protocolVersion.v5 & Double = js.native
+  
+  @js.native
+  sealed trait v6
+    extends StObject
+       with protocolVersion
+  /* 0x06 */ val v6: typings.cassandraDriver.typesMod.types.protocolVersion.v6 & Double = js.native
 }

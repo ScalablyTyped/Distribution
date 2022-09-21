@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "WebXRMicrosoftMixedRealityController")
 @js.native
-class WebXRMicrosoftMixedRealityController protected ()
+open class WebXRMicrosoftMixedRealityController protected ()
   extends typings.babylonjs.xRIndexMod.WebXRMicrosoftMixedRealityController {
   def this(
     scene: typings.babylonjs.sceneMod.Scene,

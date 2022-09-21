@@ -12,12 +12,12 @@ trait UpdateAssociationStatusRequest extends StObject {
   var AssociationStatus: typings.awsSdk.ssmMod.AssociationStatus
   
   /**
-    * The ID of the instance.
+    * The managed node ID.
     */
   var InstanceId: typings.awsSdk.ssmMod.InstanceId
   
   /**
-    * The name of the Systems Manager document.
+    * The name of the SSM document.
     */
   var Name: DocumentARN
 }

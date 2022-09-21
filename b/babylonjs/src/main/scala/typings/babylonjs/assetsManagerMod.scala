@@ -13,7 +13,7 @@ import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.skeletonMod.Skeleton
 import typings.babylonjs.textureMod.Texture
-import typings.std.ArrayBuffer
+import typings.babylonjs.transformNodeMod.TransformNode
 import typings.std.File
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
@@ -33,20 +33,26 @@ object assetsManagerMod {
       * Task name
       */ name: String) = this()
     
-    /* private */ var _errorObject: js.Any = js.native
+    /* private */ var _errorObject: Any = js.native
     
-    /* private */ var _isCompleted: js.Any = js.native
+    /* private */ var _isCompleted: Any = js.native
+    
+    /* private */ var _onDoneCallback: Any = js.native
+    
+    /* private */ var _onErrorCallback: Any = js.native
     
     /**
       * Internal only
+      * @param message
+      * @param exception
       * @hidden
       */
     def _setErrorObject(): Unit = js.native
     def _setErrorObject(message: String): Unit = js.native
-    def _setErrorObject(message: String, exception: js.Any): Unit = js.native
-    def _setErrorObject(message: Unit, exception: js.Any): Unit = js.native
+    def _setErrorObject(message: String, exception: Any): Unit = js.native
+    def _setErrorObject(message: Unit, exception: Any): Unit = js.native
     
-    /* private */ var _taskState: js.Any = js.native
+    /* private */ var _taskState: Any = js.native
     
     /**
       * Gets the current error object (if task is in error)
@@ -62,22 +68,18 @@ object assetsManagerMod {
       * Task name
       */ var name: String = js.native
     
-    /* private */ var onDoneCallback: js.Any = js.native
-    
     /**
       * Callback called when the task is not successful
       */
-    def onError(task: js.Any): Unit = js.native
-    def onError(task: js.Any, message: String): Unit = js.native
-    def onError(task: js.Any, message: String, exception: js.Any): Unit = js.native
-    def onError(task: js.Any, message: Unit, exception: js.Any): Unit = js.native
-    
-    /* private */ var onErrorCallback: js.Any = js.native
+    def onError(task: Any): Unit = js.native
+    def onError(task: Any, message: String): Unit = js.native
+    def onError(task: Any, message: String, exception: Any): Unit = js.native
+    def onError(task: Any, message: Unit, exception: Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
       */
-    def onSuccess(task: js.Any): Unit = js.native
+    def onSuccess(task: Any): Unit = js.native
     
     /**
       * Reset will set the task state back to INIT, so the next load call of the assets manager will execute this task again.
@@ -94,7 +96,7 @@ object assetsManagerMod {
     def run(
       scene: Scene,
       onSuccess: js.Function0[Unit],
-      onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+      onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
     ): Unit = js.native
     
     /**
@@ -106,7 +108,7 @@ object assetsManagerMod {
     def runTask(
       scene: Scene,
       onSuccess: js.Function0[Unit],
-      onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+      onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
     ): Unit = js.native
     
     /**
@@ -163,20 +165,22 @@ object assetsManagerMod {
   
   @JSImport("babylonjs/Misc/assetsManager", "AssetsManager")
   @js.native
-  class AssetsManager protected () extends StObject {
-    /**
-      * Creates a new AssetsManager
-      * @param scene defines the scene to work on
-      */
+  /**
+    * Creates a new AssetsManager
+    * @param scene defines the scene to work on
+    */
+  open class AssetsManager () extends StObject {
     def this(scene: Scene) = this()
     
-    /* private */ var _decreaseWaitingTasksCount: js.Any = js.native
+    /* private */ var _decreaseWaitingTasksCount: Any = js.native
     
-    /* private */ var _isLoading: js.Any = js.native
+    /* private */ var _formatTaskErrorMessage: Any = js.native
     
-    /* private */ var _runTask: js.Any = js.native
+    /* private */ var _isLoading: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _runTask: Any = js.native
+    
+    /* private */ var _scene: Any = js.native
     
     /* protected */ var _tasks: js.Array[AbstractAssetTask] = js.native
     
@@ -197,10 +201,11 @@ object assetsManagerMod {
       * @param taskName defines the name of the new task
       * @param meshesNames defines the name of meshes to load
       * @param rootUrl defines the root url to use to locate files
-      * @param sceneFilename defines the filename of the scene file
+      * @param sceneFilename defines the filename of the scene file or the File itself
       * @returns a new ContainerAssetTask object
       */
-    def addContainerTask(taskName: String, meshesNames: js.Any, rootUrl: String, sceneFilename: String): ContainerAssetTask = js.native
+    def addContainerTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: String): ContainerAssetTask = js.native
+    def addContainerTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: File): ContainerAssetTask = js.native
     
     /**
       * Add a CubeTextureAssetTask to the list of active tasks
@@ -209,6 +214,7 @@ object assetsManagerMod {
       * @param extensions defines the extension to use to load the cube map (can be null)
       * @param noMipmap defines if the texture must not receive mipmaps (false by default)
       * @param files defines the list of files to load (can be null)
+      * @param prefiltered defines the prefiltered texture option (default is false)
       * @returns a new CubeTextureAssetTask object
       */
     def addCubeTextureTask(taskName: String, url: String): CubeTextureAssetTask = js.native
@@ -225,12 +231,69 @@ object assetsManagerMod {
       taskName: String,
       url: String,
       extensions: js.Array[String],
+      noMipmap: Boolean,
+      files: js.Array[String],
+      prefiltered: Boolean
+    ): CubeTextureAssetTask = js.native
+    def addCubeTextureTask(
+      taskName: String,
+      url: String,
+      extensions: js.Array[String],
+      noMipmap: Boolean,
+      files: Unit,
+      prefiltered: Boolean
+    ): CubeTextureAssetTask = js.native
+    def addCubeTextureTask(
+      taskName: String,
+      url: String,
+      extensions: js.Array[String],
       noMipmap: Unit,
       files: js.Array[String]
     ): CubeTextureAssetTask = js.native
+    def addCubeTextureTask(
+      taskName: String,
+      url: String,
+      extensions: js.Array[String],
+      noMipmap: Unit,
+      files: js.Array[String],
+      prefiltered: Boolean
+    ): CubeTextureAssetTask = js.native
+    def addCubeTextureTask(
+      taskName: String,
+      url: String,
+      extensions: js.Array[String],
+      noMipmap: Unit,
+      files: Unit,
+      prefiltered: Boolean
+    ): CubeTextureAssetTask = js.native
     def addCubeTextureTask(taskName: String, url: String, extensions: Unit, noMipmap: Boolean): CubeTextureAssetTask = js.native
     def addCubeTextureTask(taskName: String, url: String, extensions: Unit, noMipmap: Boolean, files: js.Array[String]): CubeTextureAssetTask = js.native
+    def addCubeTextureTask(
+      taskName: String,
+      url: String,
+      extensions: Unit,
+      noMipmap: Boolean,
+      files: js.Array[String],
+      prefiltered: Boolean
+    ): CubeTextureAssetTask = js.native
+    def addCubeTextureTask(
+      taskName: String,
+      url: String,
+      extensions: Unit,
+      noMipmap: Boolean,
+      files: Unit,
+      prefiltered: Boolean
+    ): CubeTextureAssetTask = js.native
     def addCubeTextureTask(taskName: String, url: String, extensions: Unit, noMipmap: Unit, files: js.Array[String]): CubeTextureAssetTask = js.native
+    def addCubeTextureTask(
+      taskName: String,
+      url: String,
+      extensions: Unit,
+      noMipmap: Unit,
+      files: js.Array[String],
+      prefiltered: Boolean
+    ): CubeTextureAssetTask = js.native
+    def addCubeTextureTask(taskName: String, url: String, extensions: Unit, noMipmap: Unit, files: Unit, prefiltered: Boolean): CubeTextureAssetTask = js.native
     
     /**
       *
@@ -382,10 +445,11 @@ object assetsManagerMod {
       * @param taskName defines the name of the new task
       * @param meshesNames defines the name of meshes to load
       * @param rootUrl defines the root url to use to locate files
-      * @param sceneFilename defines the filename of the scene file
+      * @param sceneFilename defines the filename of the scene file or the File itself
       * @returns a new MeshAssetTask object
       */
-    def addMeshTask(taskName: String, meshesNames: js.Any, rootUrl: String, sceneFilename: String): MeshAssetTask = js.native
+    def addMeshTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: String): MeshAssetTask = js.native
+    def addMeshTask(taskName: String, meshesNames: Any, rootUrl: String, sceneFilename: File): MeshAssetTask = js.native
     
     /**
       * Add a TextFileAssetTask to the list of active tasks
@@ -422,13 +486,13 @@ object assetsManagerMod {
     
     /**
       * Start the loading process
-      * @return the current instance of the AssetsManager
+      * @returns the current instance of the AssetsManager
       */
     def load(): AssetsManager = js.native
     
     /**
       * Start the loading process as an async operation
-      * @return a promise returning the list of failed tasks
+      * @returns a promise returning the list of failed tasks
       */
     def loadAsync(): js.Promise[Unit] = js.native
     
@@ -480,7 +544,7 @@ object assetsManagerMod {
     
     /**
       * Reset the AssetsManager and remove all tasks
-      * @return the current instance of the AssetsManager
+      * @returns the current instance of the AssetsManager
       */
     def reset(): AssetsManager = js.native
     
@@ -493,7 +557,7 @@ object assetsManagerMod {
   
   @JSImport("babylonjs/Misc/assetsManager", "AssetsProgressEvent")
   @js.native
-  class AssetsProgressEvent protected ()
+  open class AssetsProgressEvent protected ()
     extends StObject
        with IAssetsProgressEvent {
     /**
@@ -525,7 +589,7 @@ object assetsManagerMod {
   
   @JSImport("babylonjs/Misc/assetsManager", "BinaryFileAssetTask")
   @js.native
-  class BinaryFileAssetTask protected () extends AbstractAssetTask {
+  open class BinaryFileAssetTask protected () extends AbstractAssetTask {
     /**
       * Creates a new BinaryFileAssetTask object
       * @param name defines the name of the new task
@@ -543,17 +607,17 @@ object assetsManagerMod {
     ) = this()
     
     /**
-      * Gets the lodaded data (as an array buffer)
+      * Gets the loaded data (as an array buffer)
       */
-    var data: ArrayBuffer = js.native
+    var data: js.typedarray.ArrayBuffer = js.native
     
     /**
       * Callback called when the task is successful
       */
     def onError(task: BinaryFileAssetTask): Unit = js.native
     def onError(task: BinaryFileAssetTask, message: String): Unit = js.native
-    def onError(task: BinaryFileAssetTask, message: String, exception: js.Any): Unit = js.native
-    def onError(task: BinaryFileAssetTask, message: Unit, exception: js.Any): Unit = js.native
+    def onError(task: BinaryFileAssetTask, message: String, exception: Any): Unit = js.native
+    def onError(task: BinaryFileAssetTask, message: Unit, exception: Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
@@ -568,7 +632,7 @@ object assetsManagerMod {
   
   @JSImport("babylonjs/Misc/assetsManager", "ContainerAssetTask")
   @js.native
-  class ContainerAssetTask protected () extends AbstractAssetTask {
+  open class ContainerAssetTask protected () extends AbstractAssetTask {
     /**
       * Creates a new ContainerAssetTask
       * @param name defines the name of the task
@@ -584,7 +648,7 @@ object assetsManagerMod {
       /**
       * Defines the list of mesh's names you want to load
       */
-    meshesNames: js.Any,
+    meshesNames: Any,
       /**
       * Defines the root url to use as a base to load your meshes and associated resources
       */
@@ -602,7 +666,7 @@ object assetsManagerMod {
       /**
       * Defines the list of mesh's names you want to load
       */
-    meshesNames: js.Any,
+    meshesNames: Any,
       /**
       * Defines the root url to use as a base to load your meshes and associated resources
       */
@@ -639,17 +703,22 @@ object assetsManagerMod {
     var loadedSkeletons: js.Array[Skeleton] = js.native
     
     /**
+      * Gets the list of loaded transforms
+      */
+    var loadedTransformNodes: js.Array[TransformNode] = js.native
+    
+    /**
       * Defines the list of mesh's names you want to load
       */
-    var meshesNames: js.Any = js.native
+    var meshesNames: Any = js.native
     
     /**
       * Callback called when the task is successful
       */
     def onError(task: ContainerAssetTask): Unit = js.native
     def onError(task: ContainerAssetTask, message: String): Unit = js.native
-    def onError(task: ContainerAssetTask, message: String, exception: js.Any): Unit = js.native
-    def onError(task: ContainerAssetTask, message: Unit, exception: js.Any): Unit = js.native
+    def onError(task: ContainerAssetTask, message: String, exception: Any): Unit = js.native
+    def onError(task: ContainerAssetTask, message: Unit, exception: Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
@@ -669,7 +738,7 @@ object assetsManagerMod {
   
   @JSImport("babylonjs/Misc/assetsManager", "CubeTextureAssetTask")
   @js.native
-  class CubeTextureAssetTask protected ()
+  open class CubeTextureAssetTask protected ()
     extends AbstractAssetTask
        with ITextureAssetTask[CubeTexture] {
     /**
@@ -679,6 +748,7 @@ object assetsManagerMod {
       * @param extensions defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
       * @param noMipmap defines if mipmaps should not be generated (default is false)
       * @param files defines the explicit list of files (undefined by default)
+      * @param prefiltered
       */
     def this(
       /**
@@ -828,6 +898,214 @@ object assetsManagerMod {
       */
     files: js.Array[String]
     ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the files to load (You have to specify the folder where the files are + filename with no extension)
+      */
+    url: String,
+      /**
+      * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
+      */
+    extensions: js.Array[String],
+      /**
+      * Defines if mipmaps should not be generated (default is false)
+      */
+    noMipmap: Boolean,
+      /**
+      * Defines the explicit list of files (undefined by default)
+      */
+    files: js.Array[String],
+      /**
+      * Defines the prefiltered texture option (default is false)
+      */
+    prefiltered: Boolean
+    ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the files to load (You have to specify the folder where the files are + filename with no extension)
+      */
+    url: String,
+      /**
+      * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
+      */
+    extensions: js.Array[String],
+      /**
+      * Defines if mipmaps should not be generated (default is false)
+      */
+    noMipmap: Boolean,
+      /**
+      * Defines the explicit list of files (undefined by default)
+      */
+    files: Unit,
+      /**
+      * Defines the prefiltered texture option (default is false)
+      */
+    prefiltered: Boolean
+    ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the files to load (You have to specify the folder where the files are + filename with no extension)
+      */
+    url: String,
+      /**
+      * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
+      */
+    extensions: js.Array[String],
+      /**
+      * Defines if mipmaps should not be generated (default is false)
+      */
+    noMipmap: Unit,
+      /**
+      * Defines the explicit list of files (undefined by default)
+      */
+    files: js.Array[String],
+      /**
+      * Defines the prefiltered texture option (default is false)
+      */
+    prefiltered: Boolean
+    ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the files to load (You have to specify the folder where the files are + filename with no extension)
+      */
+    url: String,
+      /**
+      * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
+      */
+    extensions: js.Array[String],
+      /**
+      * Defines if mipmaps should not be generated (default is false)
+      */
+    noMipmap: Unit,
+      /**
+      * Defines the explicit list of files (undefined by default)
+      */
+    files: Unit,
+      /**
+      * Defines the prefiltered texture option (default is false)
+      */
+    prefiltered: Boolean
+    ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the files to load (You have to specify the folder where the files are + filename with no extension)
+      */
+    url: String,
+      /**
+      * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
+      */
+    extensions: Unit,
+      /**
+      * Defines if mipmaps should not be generated (default is false)
+      */
+    noMipmap: Boolean,
+      /**
+      * Defines the explicit list of files (undefined by default)
+      */
+    files: js.Array[String],
+      /**
+      * Defines the prefiltered texture option (default is false)
+      */
+    prefiltered: Boolean
+    ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the files to load (You have to specify the folder where the files are + filename with no extension)
+      */
+    url: String,
+      /**
+      * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
+      */
+    extensions: Unit,
+      /**
+      * Defines if mipmaps should not be generated (default is false)
+      */
+    noMipmap: Boolean,
+      /**
+      * Defines the explicit list of files (undefined by default)
+      */
+    files: Unit,
+      /**
+      * Defines the prefiltered texture option (default is false)
+      */
+    prefiltered: Boolean
+    ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the files to load (You have to specify the folder where the files are + filename with no extension)
+      */
+    url: String,
+      /**
+      * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
+      */
+    extensions: Unit,
+      /**
+      * Defines if mipmaps should not be generated (default is false)
+      */
+    noMipmap: Unit,
+      /**
+      * Defines the explicit list of files (undefined by default)
+      */
+    files: js.Array[String],
+      /**
+      * Defines the prefiltered texture option (default is false)
+      */
+    prefiltered: Boolean
+    ) = this()
+    def this(
+      /**
+      * Defines the name of the task
+      */
+    name: String,
+      /**
+      * Defines the location of the files to load (You have to specify the folder where the files are + filename with no extension)
+      */
+    url: String,
+      /**
+      * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
+      */
+    extensions: Unit,
+      /**
+      * Defines if mipmaps should not be generated (default is false)
+      */
+    noMipmap: Unit,
+      /**
+      * Defines the explicit list of files (undefined by default)
+      */
+    files: Unit,
+      /**
+      * Defines the prefiltered texture option (default is false)
+      */
+    prefiltered: Boolean
+    ) = this()
     
     /**
       * Defines the extensions to use to load files (["_px", "_py", "_pz", "_nx", "_ny", "_nz"] by default)
@@ -849,13 +1127,18 @@ object assetsManagerMod {
       */
     def onError(task: CubeTextureAssetTask): Unit = js.native
     def onError(task: CubeTextureAssetTask, message: String): Unit = js.native
-    def onError(task: CubeTextureAssetTask, message: String, exception: js.Any): Unit = js.native
-    def onError(task: CubeTextureAssetTask, message: Unit, exception: js.Any): Unit = js.native
+    def onError(task: CubeTextureAssetTask, message: String, exception: Any): Unit = js.native
+    def onError(task: CubeTextureAssetTask, message: Unit, exception: Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
       */
     def onSuccess(task: CubeTextureAssetTask): Unit = js.native
+    
+    /**
+      * Defines the prefiltered texture option (default is false)
+      */
+    var prefiltered: js.UndefOr[Boolean] = js.native
     
     /**
       * Gets the loaded texture
@@ -871,7 +1154,7 @@ object assetsManagerMod {
   
   @JSImport("babylonjs/Misc/assetsManager", "EquiRectangularCubeTextureAssetTask")
   @js.native
-  class EquiRectangularCubeTextureAssetTask protected ()
+  open class EquiRectangularCubeTextureAssetTask protected ()
     extends AbstractAssetTask
        with ITextureAssetTask[EquiRectangularCubeTexture] {
     /**
@@ -980,8 +1263,8 @@ object assetsManagerMod {
       */
     def onError(task: EquiRectangularCubeTextureAssetTask): Unit = js.native
     def onError(task: EquiRectangularCubeTextureAssetTask, message: String): Unit = js.native
-    def onError(task: EquiRectangularCubeTextureAssetTask, message: String, exception: js.Any): Unit = js.native
-    def onError(task: EquiRectangularCubeTextureAssetTask, message: Unit, exception: js.Any): Unit = js.native
+    def onError(task: EquiRectangularCubeTextureAssetTask, message: String, exception: Any): Unit = js.native
+    def onError(task: EquiRectangularCubeTextureAssetTask, message: Unit, exception: Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
@@ -1007,7 +1290,7 @@ object assetsManagerMod {
   
   @JSImport("babylonjs/Misc/assetsManager", "HDRCubeTextureAssetTask")
   @js.native
-  class HDRCubeTextureAssetTask protected ()
+  open class HDRCubeTextureAssetTask protected ()
     extends AbstractAssetTask
        with ITextureAssetTask[HDRCubeTexture] {
     /**
@@ -1461,8 +1744,8 @@ object assetsManagerMod {
       */
     def onError(task: HDRCubeTextureAssetTask): Unit = js.native
     def onError(task: HDRCubeTextureAssetTask, message: String): Unit = js.native
-    def onError(task: HDRCubeTextureAssetTask, message: String, exception: js.Any): Unit = js.native
-    def onError(task: HDRCubeTextureAssetTask, message: Unit, exception: js.Any): Unit = js.native
+    def onError(task: HDRCubeTextureAssetTask, message: String, exception: Any): Unit = js.native
+    def onError(task: HDRCubeTextureAssetTask, message: Unit, exception: Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
@@ -1493,7 +1776,7 @@ object assetsManagerMod {
   
   @JSImport("babylonjs/Misc/assetsManager", "ImageAssetTask")
   @js.native
-  class ImageAssetTask protected () extends AbstractAssetTask {
+  open class ImageAssetTask protected () extends AbstractAssetTask {
     /**
       * Creates a new ImageAssetTask
       * @param name defines the name of the task
@@ -1520,8 +1803,8 @@ object assetsManagerMod {
       */
     def onError(task: ImageAssetTask): Unit = js.native
     def onError(task: ImageAssetTask, message: String): Unit = js.native
-    def onError(task: ImageAssetTask, message: String, exception: js.Any): Unit = js.native
-    def onError(task: ImageAssetTask, message: Unit, exception: js.Any): Unit = js.native
+    def onError(task: ImageAssetTask, message: String, exception: Any): Unit = js.native
+    def onError(task: ImageAssetTask, message: Unit, exception: Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
@@ -1536,7 +1819,7 @@ object assetsManagerMod {
   
   @JSImport("babylonjs/Misc/assetsManager", "MeshAssetTask")
   @js.native
-  class MeshAssetTask protected () extends AbstractAssetTask {
+  open class MeshAssetTask protected () extends AbstractAssetTask {
     /**
       * Creates a new MeshAssetTask
       * @param name defines the name of the task
@@ -1552,7 +1835,7 @@ object assetsManagerMod {
       /**
       * Defines the list of mesh's names you want to load
       */
-    meshesNames: js.Any,
+    meshesNames: Any,
       /**
       * Defines the root url to use as a base to load your meshes and associated resources
       */
@@ -1570,7 +1853,7 @@ object assetsManagerMod {
       /**
       * Defines the list of mesh's names you want to load
       */
-    meshesNames: js.Any,
+    meshesNames: Any,
       /**
       * Defines the root url to use as a base to load your meshes and associated resources
       */
@@ -1602,17 +1885,22 @@ object assetsManagerMod {
     var loadedSkeletons: js.Array[Skeleton] = js.native
     
     /**
+      * Gets the list of loaded transforms
+      */
+    var loadedTransformNodes: js.Array[TransformNode] = js.native
+    
+    /**
       * Defines the list of mesh's names you want to load
       */
-    var meshesNames: js.Any = js.native
+    var meshesNames: Any = js.native
     
     /**
       * Callback called when the task is successful
       */
     def onError(task: MeshAssetTask): Unit = js.native
     def onError(task: MeshAssetTask, message: String): Unit = js.native
-    def onError(task: MeshAssetTask, message: String, exception: js.Any): Unit = js.native
-    def onError(task: MeshAssetTask, message: Unit, exception: js.Any): Unit = js.native
+    def onError(task: MeshAssetTask, message: String, exception: Any): Unit = js.native
+    def onError(task: MeshAssetTask, message: Unit, exception: Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
@@ -1632,7 +1920,7 @@ object assetsManagerMod {
   
   @JSImport("babylonjs/Misc/assetsManager", "TextFileAssetTask")
   @js.native
-  class TextFileAssetTask protected () extends AbstractAssetTask {
+  open class TextFileAssetTask protected () extends AbstractAssetTask {
     /**
       * Creates a new TextFileAssetTask object
       * @param name defines the name of the task
@@ -1654,8 +1942,8 @@ object assetsManagerMod {
       */
     def onError(task: TextFileAssetTask): Unit = js.native
     def onError(task: TextFileAssetTask, message: String): Unit = js.native
-    def onError(task: TextFileAssetTask, message: String, exception: js.Any): Unit = js.native
-    def onError(task: TextFileAssetTask, message: Unit, exception: js.Any): Unit = js.native
+    def onError(task: TextFileAssetTask, message: String, exception: Any): Unit = js.native
+    def onError(task: TextFileAssetTask, message: Unit, exception: Any): Unit = js.native
     
     /**
       * Callback called when the task is successful
@@ -1675,7 +1963,7 @@ object assetsManagerMod {
   
   @JSImport("babylonjs/Misc/assetsManager", "TextureAssetTask")
   @js.native
-  class TextureAssetTask protected ()
+  open class TextureAssetTask protected ()
     extends AbstractAssetTask
        with ITextureAssetTask[Texture] {
     /**
@@ -1850,8 +2138,8 @@ object assetsManagerMod {
       */
     def onError(task: TextureAssetTask): Unit = js.native
     def onError(task: TextureAssetTask, message: String): Unit = js.native
-    def onError(task: TextureAssetTask, message: String, exception: js.Any): Unit = js.native
-    def onError(task: TextureAssetTask, message: Unit, exception: js.Any): Unit = js.native
+    def onError(task: TextureAssetTask, message: String, exception: Any): Unit = js.native
+    def onError(task: TextureAssetTask, message: Unit, exception: Any): Unit = js.native
     
     /**
       * Callback called when the task is successful

@@ -9,12 +9,12 @@ object transformerMod {
   
   @JSImport("marko/src/compiler/taglib-loader/Transformer", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Transformer {
     
     /* CompleteClass */
-    override def getFunc(): js.Any = js.native
+    override def getFunc(): Any = js.native
     
     /* CompleteClass */
     var id: Double = js.native
@@ -26,10 +26,10 @@ object transformerMod {
     var path: String | Null = js.native
     
     /* CompleteClass */
-    var priority: js.Any = js.native
+    var priority: Any = js.native
     
     /* CompleteClass */
-    var properties: js.Any = js.native
+    var properties: Any = js.native
     
     /* CompleteClass */
     var tag: ^ | Null = js.native
@@ -40,7 +40,7 @@ object transformerMod {
   
   trait Transformer extends StObject {
     
-    def getFunc(): js.Any
+    def getFunc(): Any
     
     var id: Double
     
@@ -48,9 +48,9 @@ object transformerMod {
     
     var path: String | Null
     
-    var priority: js.Any
+    var priority: Any
     
-    var properties: js.Any
+    var properties: Any
     
     var tag: ^ | Null
     
@@ -58,14 +58,14 @@ object transformerMod {
   }
   object Transformer {
     
-    inline def apply(getFunc: () => js.Any, id: Double, priority: js.Any, properties: js.Any, taglibId: String): Transformer = {
+    inline def apply(getFunc: () => Any, id: Double, priority: Any, properties: Any, taglibId: String): Transformer = {
       val __obj = js.Dynamic.literal(getFunc = js.Any.fromFunction0(getFunc), id = id.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], taglibId = taglibId.asInstanceOf[js.Any], name = null, path = null, tag = null)
       __obj.asInstanceOf[Transformer]
     }
     
     extension [Self <: Transformer](x: Self) {
       
-      inline def setGetFunc(value: () => js.Any): Self = StObject.set(x, "getFunc", js.Any.fromFunction0(value))
+      inline def setGetFunc(value: () => Any): Self = StObject.set(x, "getFunc", js.Any.fromFunction0(value))
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -77,9 +77,9 @@ object transformerMod {
       
       inline def setPathNull: Self = StObject.set(x, "path", null)
       
-      inline def setPriority(value: js.Any): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Any): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setTag(value: ^): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       

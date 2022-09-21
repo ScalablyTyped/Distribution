@@ -39,6 +39,6 @@ object IconProps {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setStyleVarargs(value: ViewStyle*): Self = StObject.set(x, "style", js.Array(value :_*))
+    inline def setStyleVarargs(value: ViewStyle*): Self = StObject.set(x, "style", js.Array(value*))
   }
 }

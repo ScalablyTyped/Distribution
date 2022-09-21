@@ -7,51 +7,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Lazy number range generator.
-  @example
-  ```
-  import getRange = require('get-range');
-  for (const index of getRange({end: 4})) {
-  	console.log(index);
-  }
-  //=> 0
-  //=> 1
-  //=> 2
-  //=> 3
-  const range = getRange({start: 0, end: 4, step: 2});
-  range.next().value;
-  //=> 0
-  range.next().value;
-  //=> 2
-  console.log(...getRange({start: 0, end: -5, step: -1}));
-  //=> [0, -1, -2, -3, -4]
-  ```
-  */
-  inline def apply(range: Range): IterableIterator[Double] = ^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Double]]
-  
   @JSImport("get-range", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(range: Range): IterableIterator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(range.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Double]]
+  
   trait Range extends StObject {
     
     /**
-    		End of the range.
-    		*/
+    	End of the range.
+    	*/
     val end: Double
     
     /**
-    		Start of the range.
-    		@default 0
-    		*/
+    	Start of the range.
+    	@default 0
+    	*/
     val start: js.UndefOr[Double] = js.undefined
     
     /**
-    		Distance between numbers.
-    		Minimum: `1`.
-    		@default 1
-    		*/
+    	Distance between numbers.
+    	Minimum: `1`.
+    	@default 1
+    	*/
     val step: js.UndefOr[Double] = js.undefined
   }
   object Range {

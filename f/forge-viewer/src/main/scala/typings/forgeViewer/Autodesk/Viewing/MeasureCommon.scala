@@ -1,13 +1,55 @@
 package typings.forgeViewer.Autodesk.Viewing
 
-import typings.three.mod.Geometry
-import typings.three.mod.Matrix4
-import typings.three.mod.Vector3
+import typings.forgeViewer.THREE.Geometry
+import typings.forgeViewer.THREE.Matrix4
+import typings.forgeViewer.THREE.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MeasureCommon {
+  
+  @js.native
+  sealed trait MeasurementTypes extends StObject
+  @JSGlobal("Autodesk.Viewing.MeasureCommon.MeasurementTypes")
+  @js.native
+  object MeasurementTypes extends StObject {
+    
+    @js.native
+    sealed trait CALIBRATION
+      extends StObject
+         with MeasurementTypes
+    
+    @js.native
+    sealed trait MEASUREMENT_ANGLE
+      extends StObject
+         with MeasurementTypes
+    
+    @js.native
+    sealed trait MEASUREMENT_ARC
+      extends StObject
+         with MeasurementTypes
+    
+    @js.native
+    sealed trait MEASUREMENT_AREA
+      extends StObject
+         with MeasurementTypes
+    
+    @js.native
+    sealed trait MEASUREMENT_CALLOUT
+      extends StObject
+         with MeasurementTypes
+    
+    @js.native
+    sealed trait MEASUREMENT_DISTANCE
+      extends StObject
+         with MeasurementTypes
+    
+    @js.native
+    sealed trait MEASUREMENT_LOCATION
+      extends StObject
+         with MeasurementTypes
+  }
   
   trait SnapResult extends StObject {
     

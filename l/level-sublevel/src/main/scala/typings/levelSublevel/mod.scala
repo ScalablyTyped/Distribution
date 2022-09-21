@@ -34,11 +34,11 @@ object mod extends Shortcut {
   }
   
   type Constructor = js.Function1[
-    /* levelup */ LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]], 
+    /* levelup */ LevelUp[AbstractLevelDOWN[Any, Any], AbstractIterator[Any, Any]], 
     Sublevel
   ]
   
-  type Hook = js.Function2[/* ch */ js.Any, /* add */ js.Function1[/* op */ Batch | Boolean, Unit], Unit]
+  type Hook = js.Function2[/* ch */ Any, /* add */ js.Function1[/* op */ Batch | Boolean, Unit], Unit]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify levelup.LevelUpBase<Batch> * / any */ trait Sublevel extends StObject {

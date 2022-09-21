@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("orientjs", "LiveQuery")
 @js.native
-class LiveQuery () extends Readable {
+open class LiveQuery () extends Readable {
   def this(opts: ReadableOptions) = this()
   
-  def unsubscribe(): js.Promise[js.Any] = js.native
+  def unsubscribe(): js.Promise[Any] = js.native
 }

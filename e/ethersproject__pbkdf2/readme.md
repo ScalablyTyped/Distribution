@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__pbkdf2
 
-Typings are for version 5.0.5
+Typings are for version 5.7.0
 
 ## Library description:
 The PBKDF2 password-pbased key derivation function for ethers.
@@ -10,10 +10,10 @@ The PBKDF2 password-pbased key derivation function for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/pbkdf2 |
 | Keywords           | Ethereum, ethers, pbkdf2 |
-| # releases         | 29 |
-| # dependents       | 8 |
-| # downloads        | 1123969 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 2534715.6666666665 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

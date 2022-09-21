@@ -10,10 +10,10 @@ The lodash method `_.defaults` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.defaults |
 | Keywords           | lodash-modularized, defaults |
-| # releases         | 0 |
-| # dependents       | 584 |
-| # downloads        | 185201560 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.1057576666666668E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

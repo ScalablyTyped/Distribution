@@ -4,54 +4,40 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent std.Partial<typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.Comment, 'shortText' | 'text' | 'returns' | 'tags'>> */
+/* Inlined parent std.Partial<typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.Comment, 'blockTags'>> */
 trait Comment
   extends StObject
-     with __ModelToObject[js.Any] {
+     with __ModelToObject[Any] {
   
-  var returns: js.UndefOr[ModelToObject[js.UndefOr[String]] | String] = js.undefined
+  var blockTags: js.UndefOr[ToSerialized[js.Array[typings.typedoc.commentMod.CommentTag]]] = js.undefined
   
-  var shortText: js.UndefOr[ModelToObject[String] | String] = js.undefined
+  var modifierTags: js.UndefOr[js.Array[String]] = js.undefined
   
-  var tags: js.UndefOr[
-    ModelToObject[js.UndefOr[js.Array[typings.typedoc.tagMod.CommentTag]]] | js.Array[typings.typedoc.tagMod.CommentTag]
-  ] = js.undefined
-  
-  var text: js.UndefOr[ModelToObject[String] | String] = js.undefined
+  var summary: js.Array[CommentDisplayPart]
 }
 object Comment {
   
-  inline def apply(): Comment = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(summary: js.Array[CommentDisplayPart]): Comment = {
+    val __obj = js.Dynamic.literal(summary = summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
   
   extension [Self <: Comment](x: Self) {
     
-    inline def setReturns(value: ModelToObject[js.UndefOr[String]] | String): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
+    inline def setBlockTags(value: ToSerialized[js.Array[typings.typedoc.commentMod.CommentTag]]): Self = StObject.set(x, "blockTags", value.asInstanceOf[js.Any])
     
-    inline def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
+    inline def setBlockTagsUndefined: Self = StObject.set(x, "blockTags", js.undefined)
     
-    inline def setReturnsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "returns", js.Array(value :_*))
+    inline def setBlockTagsVarargs(value: (typings.typedoc.commentMod.CommentTag | _ModelToObject[Any])*): Self = StObject.set(x, "blockTags", js.Array(value*))
     
-    inline def setShortText(value: ModelToObject[String] | String): Self = StObject.set(x, "shortText", value.asInstanceOf[js.Any])
+    inline def setModifierTags(value: js.Array[String]): Self = StObject.set(x, "modifierTags", value.asInstanceOf[js.Any])
     
-    inline def setShortTextUndefined: Self = StObject.set(x, "shortText", js.undefined)
+    inline def setModifierTagsUndefined: Self = StObject.set(x, "modifierTags", js.undefined)
     
-    inline def setShortTextVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "shortText", js.Array(value :_*))
+    inline def setModifierTagsVarargs(value: String*): Self = StObject.set(x, "modifierTags", js.Array(value*))
     
-    inline def setTags(
-      value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.tagMod.CommentTag]]] | js.Array[typings.typedoc.tagMod.CommentTag]
-    ): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setSummary(value: js.Array[CommentDisplayPart]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
-    
-    inline def setTagsVarargs(value: (typings.typedoc.tagMod.CommentTag | _ModelToObject[js.Any])*): Self = StObject.set(x, "tags", js.Array(value :_*))
-    
-    inline def setText(value: ModelToObject[String] | String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
-    
-    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
-    
-    inline def setTextVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setSummaryVarargs(value: CommentDisplayPart*): Self = StObject.set(x, "summary", js.Array(value*))
   }
 }

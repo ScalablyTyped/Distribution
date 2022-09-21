@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ymaps.Hotspot")
 @js.native
-class Hotspot protected ()
+open class Hotspot protected ()
   extends typings.yandexMaps.mod.Hotspot {
   def this(shape: IShape) = this()
   def this(shape: IShape, zIndex: Double) = this()

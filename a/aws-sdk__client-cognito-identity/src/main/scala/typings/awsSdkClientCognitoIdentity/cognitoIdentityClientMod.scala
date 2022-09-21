@@ -1,5 +1,6 @@
 package typings.awsSdkClientCognitoIdentity
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.awsSdkClientCognitoIdentity.createIdentityPoolCommandMod.CreateIdentityPoolCommandInput
 import typings.awsSdkClientCognitoIdentity.deleteIdentitiesCommandMod.DeleteIdentitiesCommandInput
 import typings.awsSdkClientCognitoIdentity.deleteIdentityPoolCommandMod.DeleteIdentityPoolCommandInput
@@ -11,6 +12,7 @@ import typings.awsSdkClientCognitoIdentity.getIdCommandMod.GetIdCommandInput
 import typings.awsSdkClientCognitoIdentity.getIdentityPoolRolesCommandMod.GetIdentityPoolRolesCommandInput
 import typings.awsSdkClientCognitoIdentity.getOpenIdTokenCommandMod.GetOpenIdTokenCommandInput
 import typings.awsSdkClientCognitoIdentity.getOpenIdTokenForDeveloperIdentityCommandMod.GetOpenIdTokenForDeveloperIdentityCommandInput
+import typings.awsSdkClientCognitoIdentity.getPrincipalTagAttributeMapCommandMod.GetPrincipalTagAttributeMapCommandInput
 import typings.awsSdkClientCognitoIdentity.listIdentitiesCommandMod.ListIdentitiesCommandInput
 import typings.awsSdkClientCognitoIdentity.listIdentityPoolsCommandMod.ListIdentityPoolsCommandInput
 import typings.awsSdkClientCognitoIdentity.listTagsForResourceCommandMod.ListTagsForResourceCommandInput
@@ -18,6 +20,7 @@ import typings.awsSdkClientCognitoIdentity.lookupDeveloperIdentityCommandMod.Loo
 import typings.awsSdkClientCognitoIdentity.mergeDeveloperIdentitiesCommandMod.MergeDeveloperIdentitiesCommandInput
 import typings.awsSdkClientCognitoIdentity.setIdentityPoolRolesCommandMod.SetIdentityPoolRolesCommandInput
 import typings.awsSdkClientCognitoIdentity.setIdentityPoolRolesCommandMod.SetIdentityPoolRolesCommandOutput
+import typings.awsSdkClientCognitoIdentity.setPrincipalTagAttributeMapCommandMod.SetPrincipalTagAttributeMapCommandInput
 import typings.awsSdkClientCognitoIdentity.tagResourceCommandMod.TagResourceCommandInput
 import typings.awsSdkClientCognitoIdentity.unlinkDeveloperIdentityCommandMod.UnlinkDeveloperIdentityCommandInput
 import typings.awsSdkClientCognitoIdentity.unlinkDeveloperIdentityCommandMod.UnlinkDeveloperIdentityCommandOutput
@@ -26,7 +29,11 @@ import typings.awsSdkClientCognitoIdentity.unlinkIdentityCommandMod.UnlinkIdenti
 import typings.awsSdkClientCognitoIdentity.untagResourceCommandMod.UntagResourceCommandInput
 import typings.awsSdkClientCognitoIdentity.updateIdentityPoolCommandMod.UpdateIdentityPoolCommandInput
 import typings.awsSdkProtocolHttp.httpHandlerMod.HttpHandler
+import typings.awsSdkSignatureV4.signatureV4Mod.SignatureV4CryptoInit
+import typings.awsSdkSignatureV4.signatureV4Mod.SignatureV4Init
+import typings.awsSdkSmithyClient.defaultsModeMod.DefaultsMode
 import typings.awsSdkSmithyClient.mod.Client
+import typings.awsSdkTypes.anon.ForceRefresh
 import typings.awsSdkTypes.credentialsMod.Credentials
 import typings.awsSdkTypes.cryptoMod.HashConstructor
 import typings.awsSdkTypes.httpMod.Endpoint
@@ -36,23 +43,28 @@ import typings.awsSdkTypes.responseMod.ResponseMetadata
 import typings.awsSdkTypes.serdeMod.StreamCollector
 import typings.awsSdkTypes.signatureMod.RequestSigner
 import typings.awsSdkTypes.transferMod.RequestHandler
+import typings.awsSdkTypes.utilMod.BodyLengthCalculator
 import typings.awsSdkTypes.utilMod.Decoder
 import typings.awsSdkTypes.utilMod.Encoder
+import typings.awsSdkTypes.utilMod.MemoizedProvider
 import typings.awsSdkTypes.utilMod.Provider
 import typings.awsSdkTypes.utilMod.RegionInfo
 import typings.awsSdkTypes.utilMod.RegionInfoProvider
+import typings.awsSdkTypes.utilMod.RegionInfoProviderOptions
 import typings.awsSdkTypes.utilMod.RetryStrategy
 import typings.awsSdkTypes.utilMod.UrlParser
-import typings.std.Uint8Array
+import typings.awsSdkTypes.utilMod.UserAgent
+import typings.awsSdkTypes.utilMod.UserAgentPair
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cognitoIdentityClientMod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/CognitoIdentityClient", "CognitoIdentityClient")
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/CognitoIdentityClient", "CognitoIdentityClient")
   @js.native
-  class CognitoIdentityClient protected () extends Client[
+  open class CognitoIdentityClient protected () extends Client[
           HttpHandlerOptions, 
           ServiceInputTypes, 
           ServiceOutputTypes, 
@@ -67,29 +79,39 @@ object cognitoIdentityClientMod {
     var apiVersion: js.UndefOr[String] = js.undefined
     
     /**
-      * The function that will be used to convert a base64-encoded string to a byte array
+      * The function that will be used to convert a base64-encoded string to a byte array.
+      * @internal
       */
     var base64Decoder: js.UndefOr[Decoder] = js.undefined
     
     /**
-      * The function that will be used to convert binary data to a base64-encoded string
+      * The function that will be used to convert binary data to a base64-encoded string.
+      * @internal
       */
     var base64Encoder: js.UndefOr[Encoder] = js.undefined
     
     /**
       * A function that can calculate the length of a request body.
+      * @internal
       */
-    var bodyLengthChecker: js.UndefOr[js.Function1[/* body */ js.Any, js.UndefOr[Double]]] = js.undefined
+    var bodyLengthChecker: js.UndefOr[BodyLengthCalculator] = js.undefined
     
     /**
-      * Default credentials provider; Not available in browser runtime
+      * Default credentials provider; Not available in browser runtime.
+      * @internal
       */
-    var credentialDefaultProvider: js.UndefOr[js.Function1[/* input */ js.Any, Provider[Credentials]]] = js.undefined
+    var credentialDefaultProvider: js.UndefOr[js.Function1[/* input */ Any, Provider[Credentials]]] = js.undefined
     
     /**
-      * The string that will be used to populate default value in 'User-Agent' header
+      * The provider populating default tracking information to be sent with `user-agent`, `x-amz-user-agent` header
+      * @internal
       */
-    var defaultUserAgent: js.UndefOr[String] = js.undefined
+    var defaultUserAgentProvider: js.UndefOr[Provider[UserAgent]] = js.undefined
+    
+    /**
+      * The {@link DefaultsMode} that will be used to determine how certain default configuration options are resolved in the SDK.
+      */
+    var defaultsMode: js.UndefOr[DefaultsMode | Provider[DefaultsMode]] = js.undefined
     
     /**
       * Disable dyanamically changing the endpoint of the client based on the hostPrefix
@@ -114,6 +136,7 @@ object cognitoIdentityClientMod {
     
     /**
       * Fetch related hostname, signing name or signing region with given region.
+      * @internal
       */
     var regionInfoProvider: js.UndefOr[RegionInfoProvider] = js.undefined
     
@@ -123,38 +146,60 @@ object cognitoIdentityClientMod {
     var requestHandler: js.UndefOr[HttpHandler] = js.undefined
     
     /**
-      * The runtime environment
+      * Specifies which retry algorithm to use.
+      */
+    var retryMode: js.UndefOr[String | Provider[String]] = js.undefined
+    
+    /**
+      * The runtime environment.
+      * @internal
       */
     var runtime: js.UndefOr[String] = js.undefined
     
     /**
-      * A constructor for a class implementing the @aws-sdk/types.Hash interface
+      * Unique service identifier.
+      * @internal
+      */
+    var serviceId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * A constructor for a class implementing the {@link __Hash} interface
       * that computes the SHA-256 HMAC or checksum of a string or binary buffer.
+      * @internal
       */
     var sha256: js.UndefOr[HashConstructor] = js.undefined
     
     /**
-      * The service name with which to sign requests.
-      */
-    var signingName: js.UndefOr[String] = js.undefined
-    
-    /**
       * A function that converts a stream into an array of bytes.
+      * @internal
       */
     var streamCollector: js.UndefOr[StreamCollector] = js.undefined
     
     /**
       * The function that will be used to convert strings into HTTP endpoints.
+      * @internal
       */
     var urlParser: js.UndefOr[UrlParser] = js.undefined
     
     /**
-      * The function that will be used to convert a UTF8-encoded string to a byte array
+      * Enables IPv6/IPv4 dualstack endpoint.
+      */
+    var useDualstackEndpoint: js.UndefOr[Boolean | Provider[Boolean]] = js.undefined
+    
+    /**
+      * Enables FIPS compatible endpoints.
+      */
+    var useFipsEndpoint: js.UndefOr[Boolean | Provider[Boolean]] = js.undefined
+    
+    /**
+      * The function that will be used to convert a UTF8-encoded string to a byte array.
+      * @internal
       */
     var utf8Decoder: js.UndefOr[Decoder] = js.undefined
     
     /**
-      * The function that will be used to convert binary data to a UTF-8 encoded string
+      * The function that will be used to convert binary data to a UTF-8 encoded string.
+      * @internal
       */
     var utf8Encoder: js.UndefOr[Encoder] = js.undefined
   }
@@ -171,25 +216,31 @@ object cognitoIdentityClientMod {
       
       inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      inline def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
+      inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
       inline def setBase64DecoderUndefined: Self = StObject.set(x, "base64Decoder", js.undefined)
       
-      inline def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
+      inline def setBase64Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       
       inline def setBase64EncoderUndefined: Self = StObject.set(x, "base64Encoder", js.undefined)
       
-      inline def setBodyLengthChecker(value: /* body */ js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
+      inline def setBodyLengthChecker(value: /* body */ Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
       inline def setBodyLengthCheckerUndefined: Self = StObject.set(x, "bodyLengthChecker", js.undefined)
       
-      inline def setCredentialDefaultProvider(value: /* input */ js.Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
+      inline def setCredentialDefaultProvider(value: /* input */ Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
       
       inline def setCredentialDefaultProviderUndefined: Self = StObject.set(x, "credentialDefaultProvider", js.undefined)
       
-      inline def setDefaultUserAgent(value: String): Self = StObject.set(x, "defaultUserAgent", value.asInstanceOf[js.Any])
+      inline def setDefaultUserAgentProvider(value: () => js.Promise[UserAgent]): Self = StObject.set(x, "defaultUserAgentProvider", js.Any.fromFunction0(value))
       
-      inline def setDefaultUserAgentUndefined: Self = StObject.set(x, "defaultUserAgent", js.undefined)
+      inline def setDefaultUserAgentProviderUndefined: Self = StObject.set(x, "defaultUserAgentProvider", js.undefined)
+      
+      inline def setDefaultsMode(value: DefaultsMode | Provider[DefaultsMode]): Self = StObject.set(x, "defaultsMode", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultsModeFunction0(value: () => js.Promise[DefaultsMode]): Self = StObject.set(x, "defaultsMode", js.Any.fromFunction0(value))
+      
+      inline def setDefaultsModeUndefined: Self = StObject.set(x, "defaultsMode", js.undefined)
       
       inline def setDisableHostPrefix(value: Boolean): Self = StObject.set(x, "disableHostPrefix", value.asInstanceOf[js.Any])
       
@@ -210,7 +261,7 @@ object cognitoIdentityClientMod {
       inline def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
       inline def setRegionInfoProvider(
-        value: (/* region */ String, /* options */ js.UndefOr[js.Any]) => js.Promise[js.UndefOr[RegionInfo]]
+        value: (/* region */ String, /* options */ js.UndefOr[RegionInfoProviderOptions]) => js.Promise[js.UndefOr[RegionInfo]]
       ): Self = StObject.set(x, "regionInfoProvider", js.Any.fromFunction2(value))
       
       inline def setRegionInfoProviderUndefined: Self = StObject.set(x, "regionInfoProvider", js.undefined)
@@ -221,60 +272,84 @@ object cognitoIdentityClientMod {
       
       inline def setRequestHandlerUndefined: Self = StObject.set(x, "requestHandler", js.undefined)
       
+      inline def setRetryMode(value: String | Provider[String]): Self = StObject.set(x, "retryMode", value.asInstanceOf[js.Any])
+      
+      inline def setRetryModeFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "retryMode", js.Any.fromFunction0(value))
+      
+      inline def setRetryModeUndefined: Self = StObject.set(x, "retryMode", js.undefined)
+      
       inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
       inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
+      
+      inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+      
+      inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
       
       inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
       inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
       
-      inline def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
-      
-      inline def setSigningNameUndefined: Self = StObject.set(x, "signingName", js.undefined)
-      
-      inline def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
+      inline def setStreamCollector(value: /* stream */ Any => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
       
       inline def setStreamCollectorUndefined: Self = StObject.set(x, "streamCollector", js.undefined)
       
-      inline def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
+      inline def setUrlParser(value: /* url */ String | URL => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
       
       inline def setUrlParserUndefined: Self = StObject.set(x, "urlParser", js.undefined)
       
-      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUseDualstackEndpoint(value: Boolean | Provider[Boolean]): Self = StObject.set(x, "useDualstackEndpoint", value.asInstanceOf[js.Any])
+      
+      inline def setUseDualstackEndpointFunction0(value: () => js.Promise[Boolean]): Self = StObject.set(x, "useDualstackEndpoint", js.Any.fromFunction0(value))
+      
+      inline def setUseDualstackEndpointUndefined: Self = StObject.set(x, "useDualstackEndpoint", js.undefined)
+      
+      inline def setUseFipsEndpoint(value: Boolean | Provider[Boolean]): Self = StObject.set(x, "useFipsEndpoint", value.asInstanceOf[js.Any])
+      
+      inline def setUseFipsEndpointFunction0(value: () => js.Promise[Boolean]): Self = StObject.set(x, "useFipsEndpoint", js.Any.fromFunction0(value))
+      
+      inline def setUseFipsEndpointUndefined: Self = StObject.set(x, "useFipsEndpoint", js.undefined)
+      
+      inline def setUtf8Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
       
       inline def setUtf8DecoderUndefined: Self = StObject.set(x, "utf8Decoder", js.undefined)
       
-      inline def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
+      inline def setUtf8Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
       
       inline def setUtf8EncoderUndefined: Self = StObject.set(x, "utf8Encoder", js.undefined)
     }
   }
   
-  /* Inlined std.Partial<@aws-sdk/smithy-client.@aws-sdk/smithy-client.SmithyConfiguration<@aws-sdk/types.@aws-sdk/types.HttpHandlerOptions>> & @aws-sdk/client-cognito-identity.@aws-sdk/client-cognito-identity/types/CognitoIdentityClient.ClientDefaults & @aws-sdk/config-resolver.@aws-sdk/config-resolver.RegionInputConfig & @aws-sdk/config-resolver.@aws-sdk/config-resolver.EndpointsInputConfig & @aws-sdk/middleware-signing.@aws-sdk/middleware-signing.AwsAuthInputConfig & @aws-sdk/middleware-retry.@aws-sdk/middleware-retry.RetryInputConfig & @aws-sdk/middleware-user-agent.@aws-sdk/middleware-user-agent.UserAgentInputConfig & @aws-sdk/middleware-host-header.@aws-sdk/middleware-host-header.HostHeaderInputConfig */
-  trait CognitoIdentityClientConfig extends StObject {
+  type CognitoIdentityClientConfig = CognitoIdentityClientConfigType
+  
+  /* Inlined std.Partial<@aws-sdk/smithy-client.@aws-sdk/smithy-client.SmithyConfiguration<@aws-sdk/types.@aws-sdk/types.HttpHandlerOptions>> & @aws-sdk/client-cognito-identity.@aws-sdk/client-cognito-identity/dist-types/CognitoIdentityClient.ClientDefaults & @aws-sdk/config-resolver.@aws-sdk/config-resolver.RegionInputConfig & @aws-sdk/config-resolver.@aws-sdk/config-resolver.EndpointsInputConfig & @aws-sdk/middleware-retry.@aws-sdk/middleware-retry.RetryInputConfig & @aws-sdk/middleware-host-header.@aws-sdk/middleware-host-header.HostHeaderInputConfig & @aws-sdk/middleware-signing.@aws-sdk/middleware-signing.AwsAuthInputConfig & @aws-sdk/middleware-user-agent.@aws-sdk/middleware-user-agent.UserAgentInputConfig */
+  trait CognitoIdentityClientConfigType extends StObject {
     
     var apiVersion: js.UndefOr[String] = js.undefined
     
     /**
-      * The function that will be used to convert a base64-encoded string to a byte array
+      * The function that will be used to convert a base64-encoded string to a byte array.
+      * @internal
       */
     var base64Decoder: js.UndefOr[Decoder] = js.undefined
     
     /**
-      * The function that will be used to convert binary data to a base64-encoded string
+      * The function that will be used to convert binary data to a base64-encoded string.
+      * @internal
       */
     var base64Encoder: js.UndefOr[Encoder] = js.undefined
     
     /**
       * A function that can calculate the length of a request body.
+      * @internal
       */
-    var bodyLengthChecker: js.UndefOr[js.Function1[/* body */ js.Any, js.UndefOr[Double]]] = js.undefined
+    var bodyLengthChecker: js.UndefOr[BodyLengthCalculator] = js.undefined
     
     /**
-      * Default credentials provider; Not available in browser runtime
+      * Default credentials provider; Not available in browser runtime.
+      * @internal
       */
-    var credentialDefaultProvider: js.UndefOr[js.Function1[/* input */ js.Any, Provider[Credentials]]] = js.undefined
+    var credentialDefaultProvider: js.UndefOr[js.Function1[/* input */ Any, Provider[Credentials]]] = js.undefined
     
     /**
       * The credentials used to sign requests.
@@ -284,12 +359,18 @@ object cognitoIdentityClientMod {
     /**
       * The custom user agent header that would be appended to default one
       */
-    var customUserAgent: js.UndefOr[String] = js.undefined
+    var customUserAgent: js.UndefOr[String | UserAgent] = js.undefined
     
     /**
-      * The string that will be used to populate default value in 'User-Agent' header
+      * The provider populating default tracking information to be sent with `user-agent`, `x-amz-user-agent` header
+      * @internal
       */
-    var defaultUserAgent: js.UndefOr[String] = js.undefined
+    var defaultUserAgentProvider: js.UndefOr[Provider[UserAgent]] = js.undefined
+    
+    /**
+      * The {@link DefaultsMode} that will be used to determine how certain default configuration options are resolved in the SDK.
+      */
+    var defaultsMode: js.UndefOr[DefaultsMode | Provider[DefaultsMode]] = js.undefined
     
     /**
       * Disable dyanamically changing the endpoint of the client based on the hostPrefix
@@ -322,13 +403,19 @@ object cognitoIdentityClientMod {
     
     /**
       * Fetch related hostname, signing name or signing region with given region.
+      * @internal
       */
     var regionInfoProvider: js.UndefOr[RegionInfoProvider] = js.undefined
     
     /**
       * The HTTP handler to use. Fetch in browser and Https in Nodejs.
       */
-    var requestHandler: (js.UndefOr[RequestHandler[js.Any, js.Any, HttpHandlerOptions]]) & js.UndefOr[HttpHandler]
+    var requestHandler: (js.UndefOr[RequestHandler[Any, Any, HttpHandlerOptions]]) & js.UndefOr[HttpHandler]
+    
+    /**
+      * Specifies which retry algorithm to use.
+      */
+    var retryMode: js.UndefOr[String | Provider[String]] = js.undefined
     
     /**
       * The strategy to retry the request. Using built-in exponential backoff strategy by default.
@@ -336,13 +423,21 @@ object cognitoIdentityClientMod {
     var retryStrategy: js.UndefOr[RetryStrategy] = js.undefined
     
     /**
-      * The runtime environment
+      * The runtime environment.
+      * @internal
       */
     var runtime: js.UndefOr[String] = js.undefined
     
     /**
-      * A constructor for a class implementing the @aws-sdk/types.Hash interface
+      * Unique service identifier.
+      * @internal
+      */
+    var serviceId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * A constructor for a class implementing the {@link __Hash} interface
       * that computes the SHA-256 HMAC or checksum of a string or binary buffer.
+      * @internal
       */
     var sha256: js.UndefOr[HashConstructor] = js.undefined
     
@@ -352,14 +447,18 @@ object cognitoIdentityClientMod {
     var signer: js.UndefOr[RequestSigner | Provider[RequestSigner]] = js.undefined
     
     /**
+      * The injectable SigV4-compatible signer class constructor. If not supplied,
+      * regular SignatureV4 constructor will be used.
+      * @private
+      */
+    var signerConstructor: js.UndefOr[
+        Instantiable1[/* options */ SignatureV4Init & SignatureV4CryptoInit, RequestSigner]
+      ] = js.undefined
+    
+    /**
       * Whether to escape request path when signing the request.
       */
     var signingEscapePath: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * The service name with which to sign requests.
-      */
-    var signingName: js.UndefOr[String] = js.undefined
     
     /**
       * The region where you want to sign your request against. This
@@ -369,6 +468,7 @@ object cognitoIdentityClientMod {
     
     /**
       * A function that converts a stream into an array of bytes.
+      * @internal
       */
     var streamCollector: js.UndefOr[StreamCollector] = js.undefined
     
@@ -384,47 +484,60 @@ object cognitoIdentityClientMod {
     
     /**
       * The function that will be used to convert strings into HTTP endpoints.
+      * @internal
       */
     var urlParser: js.UndefOr[UrlParser] = js.undefined
     
     /**
-      * The function that will be used to convert a UTF8-encoded string to a byte array
+      * Enables IPv6/IPv4 dualstack endpoint.
+      */
+    var useDualstackEndpoint: js.UndefOr[Boolean | Provider[Boolean]] = js.undefined
+    
+    /**
+      * Enables FIPS compatible endpoints.
+      */
+    var useFipsEndpoint: js.UndefOr[Boolean | Provider[Boolean]] = js.undefined
+    
+    /**
+      * The function that will be used to convert a UTF8-encoded string to a byte array.
+      * @internal
       */
     var utf8Decoder: js.UndefOr[Decoder] = js.undefined
     
     /**
-      * The function that will be used to convert binary data to a UTF-8 encoded string
+      * The function that will be used to convert binary data to a UTF-8 encoded string.
+      * @internal
       */
     var utf8Encoder: js.UndefOr[Encoder] = js.undefined
   }
-  object CognitoIdentityClientConfig {
+  object CognitoIdentityClientConfigType {
     
     inline def apply(
-      requestHandler: (js.UndefOr[RequestHandler[js.Any, js.Any, HttpHandlerOptions]]) & js.UndefOr[HttpHandler]
-    ): CognitoIdentityClientConfig = {
+      requestHandler: (js.UndefOr[RequestHandler[Any, Any, HttpHandlerOptions]]) & js.UndefOr[HttpHandler]
+    ): CognitoIdentityClientConfigType = {
       val __obj = js.Dynamic.literal(requestHandler = requestHandler.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CognitoIdentityClientConfig]
+      __obj.asInstanceOf[CognitoIdentityClientConfigType]
     }
     
-    extension [Self <: CognitoIdentityClientConfig](x: Self) {
+    extension [Self <: CognitoIdentityClientConfigType](x: Self) {
       
       inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
       inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      inline def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
+      inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
       inline def setBase64DecoderUndefined: Self = StObject.set(x, "base64Decoder", js.undefined)
       
-      inline def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
+      inline def setBase64Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       
       inline def setBase64EncoderUndefined: Self = StObject.set(x, "base64Encoder", js.undefined)
       
-      inline def setBodyLengthChecker(value: /* body */ js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
+      inline def setBodyLengthChecker(value: /* body */ Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
       inline def setBodyLengthCheckerUndefined: Self = StObject.set(x, "bodyLengthChecker", js.undefined)
       
-      inline def setCredentialDefaultProvider(value: /* input */ js.Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
+      inline def setCredentialDefaultProvider(value: /* input */ Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
       
       inline def setCredentialDefaultProviderUndefined: Self = StObject.set(x, "credentialDefaultProvider", js.undefined)
       
@@ -434,13 +547,21 @@ object cognitoIdentityClientMod {
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      inline def setCustomUserAgent(value: String): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
+      inline def setCustomUserAgent(value: String | UserAgent): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
       
       inline def setCustomUserAgentUndefined: Self = StObject.set(x, "customUserAgent", js.undefined)
       
-      inline def setDefaultUserAgent(value: String): Self = StObject.set(x, "defaultUserAgent", value.asInstanceOf[js.Any])
+      inline def setCustomUserAgentVarargs(value: UserAgentPair*): Self = StObject.set(x, "customUserAgent", js.Array(value*))
       
-      inline def setDefaultUserAgentUndefined: Self = StObject.set(x, "defaultUserAgent", js.undefined)
+      inline def setDefaultUserAgentProvider(value: () => js.Promise[UserAgent]): Self = StObject.set(x, "defaultUserAgentProvider", js.Any.fromFunction0(value))
+      
+      inline def setDefaultUserAgentProviderUndefined: Self = StObject.set(x, "defaultUserAgentProvider", js.undefined)
+      
+      inline def setDefaultsMode(value: DefaultsMode | Provider[DefaultsMode]): Self = StObject.set(x, "defaultsMode", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultsModeFunction0(value: () => js.Promise[DefaultsMode]): Self = StObject.set(x, "defaultsMode", js.Any.fromFunction0(value))
+      
+      inline def setDefaultsModeUndefined: Self = StObject.set(x, "defaultsMode", js.undefined)
       
       inline def setDisableHostPrefix(value: Boolean): Self = StObject.set(x, "disableHostPrefix", value.asInstanceOf[js.Any])
       
@@ -467,14 +588,20 @@ object cognitoIdentityClientMod {
       inline def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
       inline def setRegionInfoProvider(
-        value: (/* region */ String, /* options */ js.UndefOr[js.Any]) => js.Promise[js.UndefOr[RegionInfo]]
+        value: (/* region */ String, /* options */ js.UndefOr[RegionInfoProviderOptions]) => js.Promise[js.UndefOr[RegionInfo]]
       ): Self = StObject.set(x, "regionInfoProvider", js.Any.fromFunction2(value))
       
       inline def setRegionInfoProviderUndefined: Self = StObject.set(x, "regionInfoProvider", js.undefined)
       
       inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      inline def setRequestHandler(value: (js.UndefOr[RequestHandler[js.Any, js.Any, HttpHandlerOptions]]) & js.UndefOr[HttpHandler]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
+      inline def setRequestHandler(value: (js.UndefOr[RequestHandler[Any, Any, HttpHandlerOptions]]) & js.UndefOr[HttpHandler]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
+      
+      inline def setRetryMode(value: String | Provider[String]): Self = StObject.set(x, "retryMode", value.asInstanceOf[js.Any])
+      
+      inline def setRetryModeFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "retryMode", js.Any.fromFunction0(value))
+      
+      inline def setRetryModeUndefined: Self = StObject.set(x, "retryMode", js.undefined)
       
       inline def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
       
@@ -484,11 +611,19 @@ object cognitoIdentityClientMod {
       
       inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
       
+      inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+      
+      inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
+      
       inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
       inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
       
       inline def setSigner(value: RequestSigner | Provider[RequestSigner]): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
+      
+      inline def setSignerConstructor(value: Instantiable1[/* options */ SignatureV4Init & SignatureV4CryptoInit, RequestSigner]): Self = StObject.set(x, "signerConstructor", value.asInstanceOf[js.Any])
+      
+      inline def setSignerConstructorUndefined: Self = StObject.set(x, "signerConstructor", js.undefined)
       
       inline def setSignerFunction0(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
       
@@ -498,15 +633,11 @@ object cognitoIdentityClientMod {
       
       inline def setSigningEscapePathUndefined: Self = StObject.set(x, "signingEscapePath", js.undefined)
       
-      inline def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
-      
-      inline def setSigningNameUndefined: Self = StObject.set(x, "signingName", js.undefined)
-      
       inline def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
       
       inline def setSigningRegionUndefined: Self = StObject.set(x, "signingRegion", js.undefined)
       
-      inline def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
+      inline def setStreamCollector(value: /* stream */ Any => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
       
       inline def setStreamCollectorUndefined: Self = StObject.set(x, "streamCollector", js.undefined)
       
@@ -518,163 +649,285 @@ object cognitoIdentityClientMod {
       
       inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
       
-      inline def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
+      inline def setUrlParser(value: /* url */ String | URL => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
       
       inline def setUrlParserUndefined: Self = StObject.set(x, "urlParser", js.undefined)
       
-      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUseDualstackEndpoint(value: Boolean | Provider[Boolean]): Self = StObject.set(x, "useDualstackEndpoint", value.asInstanceOf[js.Any])
+      
+      inline def setUseDualstackEndpointFunction0(value: () => js.Promise[Boolean]): Self = StObject.set(x, "useDualstackEndpoint", js.Any.fromFunction0(value))
+      
+      inline def setUseDualstackEndpointUndefined: Self = StObject.set(x, "useDualstackEndpoint", js.undefined)
+      
+      inline def setUseFipsEndpoint(value: Boolean | Provider[Boolean]): Self = StObject.set(x, "useFipsEndpoint", value.asInstanceOf[js.Any])
+      
+      inline def setUseFipsEndpointFunction0(value: () => js.Promise[Boolean]): Self = StObject.set(x, "useFipsEndpoint", js.Any.fromFunction0(value))
+      
+      inline def setUseFipsEndpointUndefined: Self = StObject.set(x, "useFipsEndpoint", js.undefined)
+      
+      inline def setUtf8Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
       
       inline def setUtf8DecoderUndefined: Self = StObject.set(x, "utf8Decoder", js.undefined)
       
-      inline def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
+      inline def setUtf8Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
       
       inline def setUtf8EncoderUndefined: Self = StObject.set(x, "utf8Encoder", js.undefined)
     }
   }
   
-  /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.SmithyResolvedConfiguration<@aws-sdk/types.@aws-sdk/types.HttpHandlerOptions> & std.Required<@aws-sdk/client-cognito-identity.@aws-sdk/client-cognito-identity/types/CognitoIdentityClient.ClientDefaults> & @aws-sdk/config-resolver.@aws-sdk/config-resolver.RegionResolvedConfig & @aws-sdk/config-resolver.@aws-sdk/config-resolver.EndpointsResolvedConfig & @aws-sdk/middleware-signing.@aws-sdk/middleware-signing.AwsAuthResolvedConfig & @aws-sdk/middleware-retry.@aws-sdk/middleware-retry.RetryResolvedConfig & @aws-sdk/middleware-user-agent.@aws-sdk/middleware-user-agent.UserAgentResolvedConfig & @aws-sdk/middleware-host-header.@aws-sdk/middleware-host-header.HostHeaderResolvedConfig */
-  trait CognitoIdentityClientResolvedConfig extends StObject {
+  type CognitoIdentityClientResolvedConfig = CognitoIdentityClientResolvedConfigType
+  
+  /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.SmithyResolvedConfiguration<@aws-sdk/types.@aws-sdk/types.HttpHandlerOptions> & std.Required<@aws-sdk/client-cognito-identity.@aws-sdk/client-cognito-identity/dist-types/CognitoIdentityClient.ClientDefaults> & @aws-sdk/config-resolver.@aws-sdk/config-resolver.RegionResolvedConfig & @aws-sdk/config-resolver.@aws-sdk/config-resolver.EndpointsResolvedConfig & @aws-sdk/middleware-retry.@aws-sdk/middleware-retry.RetryResolvedConfig & @aws-sdk/middleware-host-header.@aws-sdk/middleware-host-header.HostHeaderResolvedConfig & @aws-sdk/middleware-signing.@aws-sdk/middleware-signing.AwsAuthResolvedConfig & @aws-sdk/middleware-user-agent.@aws-sdk/middleware-user-agent.UserAgentResolvedConfig */
+  trait CognitoIdentityClientResolvedConfigType extends StObject {
     
+    /**
+      * The API version set internally by the SDK, and is
+      * not planned to be used by customer code.
+      * @internal
+      */
     val apiVersion: String
     
-    def base64Decoder(input: String): Uint8Array
+    def base64Decoder(input: String): js.typedarray.Uint8Array
     @JSName("base64Decoder")
     var base64Decoder_Original: Decoder
     
-    def base64Encoder(input: Uint8Array): String
+    def base64Encoder(input: js.typedarray.Uint8Array): String
     @JSName("base64Encoder")
     var base64Encoder_Original: Encoder
     
-    def bodyLengthChecker(body: js.Any): js.UndefOr[Double]
+    def bodyLengthChecker(body: Any): js.UndefOr[Double]
     @JSName("bodyLengthChecker")
-    var bodyLengthChecker_Original: js.Function1[/* body */ js.Any, js.UndefOr[Double]]
+    var bodyLengthChecker_Original: BodyLengthCalculator
     
-    def credentialDefaultProvider(input: js.Any): Provider[Credentials]
+    def credentialDefaultProvider(input: Any): Provider[Credentials]
     @JSName("credentialDefaultProvider")
-    var credentialDefaultProvider_Original: js.Function1[/* input */ js.Any, Provider[Credentials]]
+    var credentialDefaultProvider_Original: js.Function1[/* input */ Any, Provider[Credentials]]
     
+    /**
+      * Resolved value for input config {@link AwsAuthInputConfig.credentials}
+      * This provider MAY memoize the loaded credentials for certain period.
+      * See {@link MemoizedProvider} for more information.
+      */
     def credentials(): js.Promise[Credentials]
+    def credentials(options: ForceRefresh): js.Promise[Credentials]
+    /**
+      * Resolved value for input config {@link AwsAuthInputConfig.credentials}
+      * This provider MAY memoize the loaded credentials for certain period.
+      * See {@link MemoizedProvider} for more information.
+      */
     @JSName("credentials")
-    var credentials_Original: Provider[Credentials]
+    var credentials_Original: MemoizedProvider[Credentials]
     
-    var customUserAgent: js.UndefOr[String] = js.undefined
+    /**
+      * The custom user agent header that would be appended to default one
+      */
+    var customUserAgent: js.UndefOr[UserAgent] = js.undefined
     
-    var defaultUserAgent: String
+    def defaultUserAgentProvider(): js.Promise[UserAgent]
+    /**
+      * The provider populating default tracking information to be sent with `user-agent`, `x-amz-user-agent` header.
+      * @internal
+      */
+    @JSName("defaultUserAgentProvider")
+    var defaultUserAgentProvider_Original: Provider[UserAgent]
+    
+    var defaultsMode: DefaultsMode | Provider[DefaultsMode]
     
     var disableHostPrefix: Boolean
     
+    /**
+      * Resolved value for input {@link EndpointsInputConfig.endpoint}
+      */
     def endpoint(): js.Promise[Endpoint]
+    /**
+      * Resolved value for input {@link EndpointsInputConfig.endpoint}
+      */
     @JSName("endpoint")
     var endpoint_Original: Provider[Endpoint]
     
+    /**
+      * Whether the endpoint is specified by caller.
+      * @internal
+      */
     var isCustomEndpoint: Boolean
     
     var logger: Logger
     
+    /**
+      * Resolved value for input config {@link RetryInputConfig.maxAttempts}
+      */
     def maxAttempts(): js.Promise[Double]
+    /**
+      * Resolved value for input config {@link RetryInputConfig.maxAttempts}
+      */
     @JSName("maxAttempts")
     var maxAttempts_Original: (Double | Provider[Double]) & Provider[Double]
     
+    /**
+      * Resolved value for input config {@link RegionInputConfig.region}
+      */
     def region(): js.Promise[String]
     
     def regionInfoProvider(region: String): js.Promise[js.UndefOr[RegionInfo]]
-    def regionInfoProvider(region: String, options: js.Any): js.Promise[js.UndefOr[RegionInfo]]
+    def regionInfoProvider(region: String, options: RegionInfoProviderOptions): js.Promise[js.UndefOr[RegionInfo]]
     @JSName("regionInfoProvider")
     var regionInfoProvider_Original: RegionInfoProvider
     
+    /**
+      * Resolved value for input config {@link RegionInputConfig.region}
+      */
     @JSName("region")
     var region_Original: (String | Provider[String]) & Provider[String]
     
-    var requestHandler: (RequestHandler[js.Any, js.Any, HttpHandlerOptions]) & HttpHandler & (RequestHandler[js.Any, js.Any, js.Object])
+    /**
+      * The HTTP handler to use. Fetch in browser and Https in Nodejs.
+      */
+    var requestHandler: (RequestHandler[Any, Any, HttpHandlerOptions]) & HttpHandler & (RequestHandler[Any, Any, js.Object])
     
-    var retryStrategy: RetryStrategy
+    var retryMode: String | Provider[String]
     
+    /**
+      * Resolved value for input config {@link RetryInputConfig.retryStrategy}
+      */
+    def retryStrategy(): js.Promise[RetryStrategy]
+    /**
+      * Resolved value for input config {@link RetryInputConfig.retryStrategy}
+      */
+    @JSName("retryStrategy")
+    var retryStrategy_Original: Provider[RetryStrategy]
+    
+    /**
+      * The runtime environment
+      */
     var runtime: String
+    
+    var serviceId: String
     
     var sha256: HashConstructor
     
+    /**
+      * Resolved value for input config {@link AwsAuthInputConfig.signer}
+      */
     def signer(): js.Promise[RequestSigner]
+    /**
+      * Resolved value for input config {@link AwsAuthInputConfig.signer}
+      */
     @JSName("signer")
     var signer_Original: Provider[RequestSigner]
     
+    /**
+      * Resolved value for input config {@link AwsAuthInputConfig.signingEscapePath}
+      */
     var signingEscapePath: Boolean
     
-    var signingName: String
-    
-    def streamCollector(stream: js.Any): js.Promise[Uint8Array]
+    def streamCollector(stream: Any): js.Promise[js.typedarray.Uint8Array]
     @JSName("streamCollector")
     var streamCollector_Original: StreamCollector
     
+    /**
+      * Resolved value for input config {@link AwsAuthInputConfig.systemClockOffset}
+      */
     var systemClockOffset: Double
     
     var tls: Boolean
     
     def urlParser(url: String): Endpoint
+    def urlParser(url: URL): Endpoint
     @JSName("urlParser")
     var urlParser_Original: UrlParser
     
-    def utf8Decoder(input: String): Uint8Array
+    /**
+      * Resolved value for input {@link EndpointsInputConfig.useDualstackEndpoint}
+      */
+    def useDualstackEndpoint(): js.Promise[Boolean]
+    /**
+      * Resolved value for input {@link EndpointsInputConfig.useDualstackEndpoint}
+      */
+    @JSName("useDualstackEndpoint")
+    var useDualstackEndpoint_Original: (Boolean | Provider[Boolean]) & Provider[Boolean]
+    
+    /**
+      * Resolved value for input {@link RegionInputConfig.useFipsEndpoint}
+      */
+    def useFipsEndpoint(): js.Promise[Boolean]
+    /**
+      * Resolved value for input {@link RegionInputConfig.useFipsEndpoint}
+      */
+    @JSName("useFipsEndpoint")
+    var useFipsEndpoint_Original: (Boolean | Provider[Boolean]) & Provider[Boolean]
+    
+    def utf8Decoder(input: String): js.typedarray.Uint8Array
     @JSName("utf8Decoder")
     var utf8Decoder_Original: Decoder
     
-    def utf8Encoder(input: Uint8Array): String
+    def utf8Encoder(input: js.typedarray.Uint8Array): String
     @JSName("utf8Encoder")
     var utf8Encoder_Original: Encoder
   }
-  object CognitoIdentityClientResolvedConfig {
+  object CognitoIdentityClientResolvedConfigType {
     
     inline def apply(
       apiVersion: String,
-      base64Decoder: /* input */ String => Uint8Array,
-      base64Encoder: /* input */ Uint8Array => String,
-      bodyLengthChecker: /* body */ js.Any => js.UndefOr[Double],
-      credentialDefaultProvider: /* input */ js.Any => Provider[Credentials],
-      credentials: () => js.Promise[Credentials],
-      defaultUserAgent: String,
+      base64Decoder: /* input */ String => js.typedarray.Uint8Array,
+      base64Encoder: /* input */ js.typedarray.Uint8Array => String,
+      bodyLengthChecker: /* body */ Any => js.UndefOr[Double],
+      credentialDefaultProvider: /* input */ Any => Provider[Credentials],
+      credentials: /* options */ js.UndefOr[ForceRefresh] => js.Promise[Credentials],
+      defaultUserAgentProvider: () => js.Promise[UserAgent],
+      defaultsMode: DefaultsMode | Provider[DefaultsMode],
       disableHostPrefix: Boolean,
       endpoint: () => js.Promise[Endpoint],
       isCustomEndpoint: Boolean,
       logger: Logger,
       maxAttempts: (Double | Provider[Double]) & Provider[Double],
       region: (String | Provider[String]) & Provider[String],
-      regionInfoProvider: (/* region */ String, /* options */ js.UndefOr[js.Any]) => js.Promise[js.UndefOr[RegionInfo]],
-      requestHandler: (RequestHandler[js.Any, js.Any, HttpHandlerOptions]) & HttpHandler & (RequestHandler[js.Any, js.Any, js.Object]),
-      retryStrategy: RetryStrategy,
+      regionInfoProvider: (/* region */ String, /* options */ js.UndefOr[RegionInfoProviderOptions]) => js.Promise[js.UndefOr[RegionInfo]],
+      requestHandler: (RequestHandler[Any, Any, HttpHandlerOptions]) & HttpHandler & (RequestHandler[Any, Any, js.Object]),
+      retryMode: String | Provider[String],
+      retryStrategy: () => js.Promise[RetryStrategy],
       runtime: String,
+      serviceId: String,
       sha256: HashConstructor,
       signer: () => js.Promise[RequestSigner],
       signingEscapePath: Boolean,
-      signingName: String,
-      streamCollector: /* stream */ js.Any => js.Promise[Uint8Array],
+      streamCollector: /* stream */ Any => js.Promise[js.typedarray.Uint8Array],
       systemClockOffset: Double,
       tls: Boolean,
-      urlParser: /* url */ String => Endpoint,
-      utf8Decoder: /* input */ String => Uint8Array,
-      utf8Encoder: /* input */ Uint8Array => String
-    ): CognitoIdentityClientResolvedConfig = {
-      val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], base64Decoder = js.Any.fromFunction1(base64Decoder), base64Encoder = js.Any.fromFunction1(base64Encoder), bodyLengthChecker = js.Any.fromFunction1(bodyLengthChecker), credentialDefaultProvider = js.Any.fromFunction1(credentialDefaultProvider), credentials = js.Any.fromFunction0(credentials), defaultUserAgent = defaultUserAgent.asInstanceOf[js.Any], disableHostPrefix = disableHostPrefix.asInstanceOf[js.Any], endpoint = js.Any.fromFunction0(endpoint), isCustomEndpoint = isCustomEndpoint.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], maxAttempts = maxAttempts.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], regionInfoProvider = js.Any.fromFunction2(regionInfoProvider), requestHandler = requestHandler.asInstanceOf[js.Any], retryStrategy = retryStrategy.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], sha256 = sha256.asInstanceOf[js.Any], signer = js.Any.fromFunction0(signer), signingEscapePath = signingEscapePath.asInstanceOf[js.Any], signingName = signingName.asInstanceOf[js.Any], streamCollector = js.Any.fromFunction1(streamCollector), systemClockOffset = systemClockOffset.asInstanceOf[js.Any], tls = tls.asInstanceOf[js.Any], urlParser = js.Any.fromFunction1(urlParser), utf8Decoder = js.Any.fromFunction1(utf8Decoder), utf8Encoder = js.Any.fromFunction1(utf8Encoder))
-      __obj.asInstanceOf[CognitoIdentityClientResolvedConfig]
+      urlParser: /* url */ String | URL => Endpoint,
+      useDualstackEndpoint: (Boolean | Provider[Boolean]) & Provider[Boolean],
+      useFipsEndpoint: (Boolean | Provider[Boolean]) & Provider[Boolean],
+      utf8Decoder: /* input */ String => js.typedarray.Uint8Array,
+      utf8Encoder: /* input */ js.typedarray.Uint8Array => String
+    ): CognitoIdentityClientResolvedConfigType = {
+      val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], base64Decoder = js.Any.fromFunction1(base64Decoder), base64Encoder = js.Any.fromFunction1(base64Encoder), bodyLengthChecker = js.Any.fromFunction1(bodyLengthChecker), credentialDefaultProvider = js.Any.fromFunction1(credentialDefaultProvider), credentials = js.Any.fromFunction1(credentials), defaultUserAgentProvider = js.Any.fromFunction0(defaultUserAgentProvider), defaultsMode = defaultsMode.asInstanceOf[js.Any], disableHostPrefix = disableHostPrefix.asInstanceOf[js.Any], endpoint = js.Any.fromFunction0(endpoint), isCustomEndpoint = isCustomEndpoint.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], maxAttempts = maxAttempts.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], regionInfoProvider = js.Any.fromFunction2(regionInfoProvider), requestHandler = requestHandler.asInstanceOf[js.Any], retryMode = retryMode.asInstanceOf[js.Any], retryStrategy = js.Any.fromFunction0(retryStrategy), runtime = runtime.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], sha256 = sha256.asInstanceOf[js.Any], signer = js.Any.fromFunction0(signer), signingEscapePath = signingEscapePath.asInstanceOf[js.Any], streamCollector = js.Any.fromFunction1(streamCollector), systemClockOffset = systemClockOffset.asInstanceOf[js.Any], tls = tls.asInstanceOf[js.Any], urlParser = js.Any.fromFunction1(urlParser), useDualstackEndpoint = useDualstackEndpoint.asInstanceOf[js.Any], useFipsEndpoint = useFipsEndpoint.asInstanceOf[js.Any], utf8Decoder = js.Any.fromFunction1(utf8Decoder), utf8Encoder = js.Any.fromFunction1(utf8Encoder))
+      __obj.asInstanceOf[CognitoIdentityClientResolvedConfigType]
     }
     
-    extension [Self <: CognitoIdentityClientResolvedConfig](x: Self) {
+    extension [Self <: CognitoIdentityClientResolvedConfigType](x: Self) {
       
       inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      inline def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
+      inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
-      inline def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
+      inline def setBase64Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       
-      inline def setBodyLengthChecker(value: /* body */ js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
+      inline def setBodyLengthChecker(value: /* body */ Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
-      inline def setCredentialDefaultProvider(value: /* input */ js.Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
+      inline def setCredentialDefaultProvider(value: /* input */ Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
       
-      inline def setCredentials(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
+      inline def setCredentials(value: /* options */ js.UndefOr[ForceRefresh] => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction1(value))
       
-      inline def setCustomUserAgent(value: String): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
+      inline def setCustomUserAgent(value: UserAgent): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
       
       inline def setCustomUserAgentUndefined: Self = StObject.set(x, "customUserAgent", js.undefined)
       
-      inline def setDefaultUserAgent(value: String): Self = StObject.set(x, "defaultUserAgent", value.asInstanceOf[js.Any])
+      inline def setCustomUserAgentVarargs(value: UserAgentPair*): Self = StObject.set(x, "customUserAgent", js.Array(value*))
+      
+      inline def setDefaultUserAgentProvider(value: () => js.Promise[UserAgent]): Self = StObject.set(x, "defaultUserAgentProvider", js.Any.fromFunction0(value))
+      
+      inline def setDefaultsMode(value: DefaultsMode | Provider[DefaultsMode]): Self = StObject.set(x, "defaultsMode", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultsModeFunction0(value: () => js.Promise[DefaultsMode]): Self = StObject.set(x, "defaultsMode", js.Any.fromFunction0(value))
       
       inline def setDisableHostPrefix(value: Boolean): Self = StObject.set(x, "disableHostPrefix", value.asInstanceOf[js.Any])
       
@@ -689,16 +942,22 @@ object cognitoIdentityClientMod {
       inline def setRegion(value: (String | Provider[String]) & Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
       inline def setRegionInfoProvider(
-        value: (/* region */ String, /* options */ js.UndefOr[js.Any]) => js.Promise[js.UndefOr[RegionInfo]]
+        value: (/* region */ String, /* options */ js.UndefOr[RegionInfoProviderOptions]) => js.Promise[js.UndefOr[RegionInfo]]
       ): Self = StObject.set(x, "regionInfoProvider", js.Any.fromFunction2(value))
       
       inline def setRequestHandler(
-        value: (RequestHandler[js.Any, js.Any, HttpHandlerOptions]) & HttpHandler & (RequestHandler[js.Any, js.Any, js.Object])
+        value: (RequestHandler[Any, Any, HttpHandlerOptions]) & HttpHandler & (RequestHandler[Any, Any, js.Object])
       ): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
       
-      inline def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
+      inline def setRetryMode(value: String | Provider[String]): Self = StObject.set(x, "retryMode", value.asInstanceOf[js.Any])
+      
+      inline def setRetryModeFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "retryMode", js.Any.fromFunction0(value))
+      
+      inline def setRetryStrategy(value: () => js.Promise[RetryStrategy]): Self = StObject.set(x, "retryStrategy", js.Any.fromFunction0(value))
       
       inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      
+      inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
       
       inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
@@ -706,23 +965,25 @@ object cognitoIdentityClientMod {
       
       inline def setSigningEscapePath(value: Boolean): Self = StObject.set(x, "signingEscapePath", value.asInstanceOf[js.Any])
       
-      inline def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
-      
-      inline def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
+      inline def setStreamCollector(value: /* stream */ Any => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
       
       inline def setSystemClockOffset(value: Double): Self = StObject.set(x, "systemClockOffset", value.asInstanceOf[js.Any])
       
       inline def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
       
-      inline def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
+      inline def setUrlParser(value: /* url */ String | URL => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
       
-      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUseDualstackEndpoint(value: (Boolean | Provider[Boolean]) & Provider[Boolean]): Self = StObject.set(x, "useDualstackEndpoint", value.asInstanceOf[js.Any])
       
-      inline def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
+      inline def setUseFipsEndpoint(value: (Boolean | Provider[Boolean]) & Provider[Boolean]): Self = StObject.set(x, "useFipsEndpoint", value.asInstanceOf[js.Any])
+      
+      inline def setUtf8Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      
+      inline def setUtf8Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
     }
   }
   
-  type ServiceInputTypes = CreateIdentityPoolCommandInput | DeleteIdentitiesCommandInput | DeleteIdentityPoolCommandInput | DescribeIdentityCommandInput | DescribeIdentityPoolCommandInput | GetCredentialsForIdentityCommandInput | GetIdCommandInput | GetIdentityPoolRolesCommandInput | GetOpenIdTokenCommandInput | GetOpenIdTokenForDeveloperIdentityCommandInput | ListIdentitiesCommandInput | ListIdentityPoolsCommandInput | ListTagsForResourceCommandInput | LookupDeveloperIdentityCommandInput | MergeDeveloperIdentitiesCommandInput | SetIdentityPoolRolesCommandInput | TagResourceCommandInput | UnlinkDeveloperIdentityCommandInput | UnlinkIdentityCommandInput | UntagResourceCommandInput | UpdateIdentityPoolCommandInput
+  type ServiceInputTypes = CreateIdentityPoolCommandInput | DeleteIdentitiesCommandInput | DeleteIdentityPoolCommandInput | DescribeIdentityCommandInput | DescribeIdentityPoolCommandInput | GetCredentialsForIdentityCommandInput | GetIdCommandInput | GetIdentityPoolRolesCommandInput | GetOpenIdTokenCommandInput | GetOpenIdTokenForDeveloperIdentityCommandInput | GetPrincipalTagAttributeMapCommandInput | ListIdentitiesCommandInput | ListIdentityPoolsCommandInput | ListTagsForResourceCommandInput | LookupDeveloperIdentityCommandInput | MergeDeveloperIdentitiesCommandInput | SetIdentityPoolRolesCommandInput | SetPrincipalTagAttributeMapCommandInput | TagResourceCommandInput | UnlinkDeveloperIdentityCommandInput | UnlinkIdentityCommandInput | UntagResourceCommandInput | UpdateIdentityPoolCommandInput
   
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientCognitoIdentity.createIdentityPoolCommandMod.CreateIdentityPoolCommandOutput
@@ -735,12 +996,14 @@ object cognitoIdentityClientMod {
     - typings.awsSdkClientCognitoIdentity.getIdentityPoolRolesCommandMod.GetIdentityPoolRolesCommandOutput
     - typings.awsSdkClientCognitoIdentity.getOpenIdTokenCommandMod.GetOpenIdTokenCommandOutput
     - typings.awsSdkClientCognitoIdentity.getOpenIdTokenForDeveloperIdentityCommandMod.GetOpenIdTokenForDeveloperIdentityCommandOutput
+    - typings.awsSdkClientCognitoIdentity.getPrincipalTagAttributeMapCommandMod.GetPrincipalTagAttributeMapCommandOutput
     - typings.awsSdkClientCognitoIdentity.listIdentitiesCommandMod.ListIdentitiesCommandOutput
     - typings.awsSdkClientCognitoIdentity.listIdentityPoolsCommandMod.ListIdentityPoolsCommandOutput
     - typings.awsSdkClientCognitoIdentity.listTagsForResourceCommandMod.ListTagsForResourceCommandOutput
     - typings.awsSdkClientCognitoIdentity.lookupDeveloperIdentityCommandMod.LookupDeveloperIdentityCommandOutput
     - typings.awsSdkClientCognitoIdentity.mergeDeveloperIdentitiesCommandMod.MergeDeveloperIdentitiesCommandOutput
     - typings.awsSdkClientCognitoIdentity.setIdentityPoolRolesCommandMod.SetIdentityPoolRolesCommandOutput
+    - typings.awsSdkClientCognitoIdentity.setPrincipalTagAttributeMapCommandMod.SetPrincipalTagAttributeMapCommandOutput
     - typings.awsSdkClientCognitoIdentity.tagResourceCommandMod.TagResourceCommandOutput
     - typings.awsSdkClientCognitoIdentity.unlinkDeveloperIdentityCommandMod.UnlinkDeveloperIdentityCommandOutput
     - typings.awsSdkClientCognitoIdentity.unlinkIdentityCommandMod.UnlinkIdentityCommandOutput
@@ -797,6 +1060,11 @@ object cognitoIdentityClientMod {
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.getOpenIdTokenForDeveloperIdentityCommandMod.GetOpenIdTokenForDeveloperIdentityCommandOutput]
     }
     
+    inline def GetPrincipalTagAttributeMapCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.getPrincipalTagAttributeMapCommandMod.GetPrincipalTagAttributeMapCommandOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.getPrincipalTagAttributeMapCommandMod.GetPrincipalTagAttributeMapCommandOutput]
+    }
+    
     inline def ListIdentitiesCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.listIdentitiesCommandMod.ListIdentitiesCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.listIdentitiesCommandMod.ListIdentitiesCommandOutput]
@@ -820,6 +1088,11 @@ object cognitoIdentityClientMod {
     inline def MergeDeveloperIdentitiesCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.mergeDeveloperIdentitiesCommandMod.MergeDeveloperIdentitiesCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.mergeDeveloperIdentitiesCommandMod.MergeDeveloperIdentitiesCommandOutput]
+    }
+    
+    inline def SetPrincipalTagAttributeMapCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.setPrincipalTagAttributeMapCommandMod.SetPrincipalTagAttributeMapCommandOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientCognitoIdentity.setPrincipalTagAttributeMapCommandMod.SetPrincipalTagAttributeMapCommandOutput]
     }
     
     inline def TagResourceCommandOutput($metadata: ResponseMetadata): typings.awsSdkClientCognitoIdentity.tagResourceCommandMod.TagResourceCommandOutput = {

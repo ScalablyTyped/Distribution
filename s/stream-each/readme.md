@@ -11,9 +11,9 @@ Iterate all the data in a stream
 | Full name          | stream-each |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 69 |
-| # downloads        | 458680483 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4.1687320333333336E7 |
+| # stars            | 37.0 |
 
 ## Links
 - [Homepage](https://github.com/mafintosh/stream-each)

@@ -46,7 +46,7 @@ object typesDescribePullRequestEventsOutputMod {
       
       inline def setPullRequestEvents(value: js.Array[UnmarshalledPullRequestEvent]): Self = StObject.set(x, "pullRequestEvents", value.asInstanceOf[js.Any])
       
-      inline def setPullRequestEventsVarargs(value: UnmarshalledPullRequestEvent*): Self = StObject.set(x, "pullRequestEvents", js.Array(value :_*))
+      inline def setPullRequestEventsVarargs(value: UnmarshalledPullRequestEvent*): Self = StObject.set(x, "pullRequestEvents", js.Array(value*))
     }
   }
 }

@@ -1,6 +1,5 @@
 package typings.web3CoreHelpers.mod
 
-import typings.std.Error
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("web3-core-helpers", "WebsocketProviderBase")
 @js.native
-class WebsocketProviderBase protected () extends StObject {
+open class WebsocketProviderBase protected () extends StObject {
   def this(host: String) = this()
   def this(host: String, options: WebsocketProviderOptions) = this()
   
@@ -16,9 +15,12 @@ class WebsocketProviderBase protected () extends StObject {
   
   var connected: Boolean = js.native
   
-  var connection: js.Any = js.native
+  var connection: Any = js.native
   
+  def disconnect(): Unit = js.native
+  def disconnect(code: Double): Unit = js.native
   def disconnect(code: Double, reason: String): Unit = js.native
+  def disconnect(code: Unit, reason: String): Unit = js.native
   
   def isConnecting(): Boolean = js.native
   
@@ -40,7 +42,7 @@ class WebsocketProviderBase protected () extends StObject {
   
   def send(
     payload: JsonRpcPayload,
-    callback: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]
+    callback: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]
   ): Unit = js.native
   
   def supportsSubscriptions(): Boolean = js.native

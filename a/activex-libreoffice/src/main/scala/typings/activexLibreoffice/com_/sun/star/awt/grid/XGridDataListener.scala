@@ -37,7 +37,7 @@ object XGridDataListener {
     acquire: () => Unit,
     dataChanged: GridDataEvent => Unit,
     disposing: EventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     rowHeadingChanged: GridDataEvent => Unit,
     rowsInserted: GridDataEvent => Unit,

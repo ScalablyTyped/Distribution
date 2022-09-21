@@ -8,7 +8,7 @@ trait ButtonGroupSelectEvent
   extends StObject
      with ButtonGroupEvent {
   
-  var indices: js.UndefOr[js.Any] = js.undefined
+  var indices: js.UndefOr[Any] = js.undefined
 }
 object ButtonGroupSelectEvent {
   
@@ -19,7 +19,7 @@ object ButtonGroupSelectEvent {
   
   extension [Self <: ButtonGroupSelectEvent](x: Self) {
     
-    inline def setIndices(value: js.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
   }

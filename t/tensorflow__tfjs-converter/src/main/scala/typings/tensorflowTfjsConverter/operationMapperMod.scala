@@ -19,19 +19,19 @@ object operationMapperMod {
   
   @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "OperationMapper")
   @js.native
-  /* private */ class OperationMapper () extends StObject {
+  /* private */ open class OperationMapper () extends StObject {
     
-    /* private */ var mapArgToTensorInfo: js.Any = js.native
+    /* private */ var mapArgToTensorInfo: Any = js.native
     
-    /* private */ var mapArgsToSignature: js.Any = js.native
+    /* private */ var mapArgsToSignature: Any = js.native
     
-    /* private */ var mapFunction: js.Any = js.native
+    /* private */ var mapFunction: Any = js.native
     
-    /* private */ var mapNode: js.Any = js.native
+    /* private */ var mapNode: Any = js.native
     
-    /* private */ var mapSignatureEntries: js.Any = js.native
+    /* private */ var mapSignatureEntries: Any = js.native
     
-    /* private */ var opMappers: js.Any = js.native
+    /* private */ var opMappers: Any = js.native
     
     def transformGraph(graph: IGraphDef): Graph = js.native
     def transformGraph(graph: IGraphDef, signature: ISignatureDef): Graph = js.native
@@ -49,8 +49,8 @@ object operationMapperMod {
     
     @JSImport("@tensorflow/tfjs-converter/dist/operations/operation_mapper", "OperationMapper._instance")
     @js.native
-    def _instance: js.Any = js.native
-    inline def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+    def _instance: Any = js.native
+    inline def _instance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
   }
   
   inline def decodeBase64(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeBase64")(text.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -84,7 +84,7 @@ object operationMapperMod {
   inline def parseDtypeParam(value: typings.tensorflowTfjsConverter.compiledApiMod.DataType): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDtypeParam")(value.asInstanceOf[js.Any]).asInstanceOf[DataType]
   
   inline def parseStringParam(s: String, keepCase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStringParam")(s.asInstanceOf[js.Any], keepCase.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def parseStringParam(s: js.Array[js.Any], keepCase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStringParam")(s.asInstanceOf[js.Any], keepCase.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parseStringParam(s: js.Array[Any], keepCase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStringParam")(s.asInstanceOf[js.Any], keepCase.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def parseTensorShapeParam(shape: ITensorShape): js.UndefOr[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTensorShapeParam")(shape.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[Double]]]
 }

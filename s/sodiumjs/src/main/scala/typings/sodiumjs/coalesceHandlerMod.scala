@@ -10,20 +10,20 @@ object coalesceHandlerMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/CoalesceHandler", "CoalesceHandler")
   @js.native
-  class CoalesceHandler[A] protected () extends StObject {
+  open class CoalesceHandler[A] protected () extends StObject {
     def this(f: js.Function2[/* l */ A, /* r */ A, A], out: StreamWithSend[A]) = this()
     def this(f: Lambda2_[A, A, A], out: StreamWithSend[A]) = this()
     
-    /* private */ var accum: js.Any = js.native
+    /* private */ var accum: Any = js.native
     
-    /* private */ var accumValid: js.Any = js.native
+    /* private */ var accumValid: Any = js.native
     
-    /* private */ var f: js.Any = js.native
+    /* private */ var f: Any = js.native
     
-    /* private */ var out: js.Any = js.native
+    /* private */ var out: Any = js.native
     
     def send_(a: A): Unit = js.native
     
-    /* private */ var verbose: js.Any = js.native
+    /* private */ var verbose: Any = js.native
   }
 }

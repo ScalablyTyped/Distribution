@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a reference counted memory buffer. */
 @JSGlobal("Windows.Foundation.MemoryBuffer")
 @js.native
-class MemoryBuffer protected ()
+open class MemoryBuffer protected ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.MemoryBuffer {
   /**

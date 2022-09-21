@@ -34,7 +34,7 @@ trait Run extends StObject {
   /**
     * When the run was created.
     */
-  var created: js.UndefOr[DateTime] = js.undefined
+  var created: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Output CustomerArtifactPaths object for the test run.
@@ -129,7 +129,7 @@ trait Run extends StObject {
   /**
     * The run's start time.
     */
-  var started: js.UndefOr[DateTime] = js.undefined
+  var started: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The run's status. Allowed values include:   PENDING   PENDING_CONCURRENCY   PENDING_DEVICE   PROCESSING   SCHEDULING   PREPARING   RUNNING   COMPLETED   STOPPING  
@@ -139,7 +139,7 @@ trait Run extends StObject {
   /**
     * The run's stop time.
     */
-  var stopped: js.UndefOr[DateTime] = js.undefined
+  var stopped: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the YAML-formatted test specification for the run.
@@ -190,7 +190,7 @@ object Run {
     
     inline def setCountersUndefined: Self = StObject.set(x, "counters", js.undefined)
     
-    inline def setCreated(value: DateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
@@ -266,7 +266,7 @@ object Run {
     
     inline def setSkipAppResignUndefined: Self = StObject.set(x, "skipAppResign", js.undefined)
     
-    inline def setStarted(value: DateTime): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: js.Date): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
     inline def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
     
@@ -274,7 +274,7 @@ object Run {
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setStopped(value: DateTime): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+    inline def setStopped(value: js.Date): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
     
     inline def setStoppedUndefined: Self = StObject.set(x, "stopped", js.undefined)
     

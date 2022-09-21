@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ScrollContainerOptions
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
-  var heightAdjustment: Double
+  var heightAdjustment: js.UndefOr[Double] = js.undefined
   
-  var left: Boolean
+  var left: js.UndefOr[Boolean] = js.undefined
   
-  var marginTop: Double
+  var marginTop: js.UndefOr[Double] = js.undefined
 }
 object ScrollContainerOptions {
   
-  inline def apply(heightAdjustment: Double, left: Boolean, marginTop: Double): ScrollContainerOptions = {
-    val __obj = js.Dynamic.literal(heightAdjustment = heightAdjustment.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], marginTop = marginTop.asInstanceOf[js.Any])
+  inline def apply(): ScrollContainerOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScrollContainerOptions]
   }
   
@@ -26,8 +26,14 @@ object ScrollContainerOptions {
     
     inline def setHeightAdjustment(value: Double): Self = StObject.set(x, "heightAdjustment", value.asInstanceOf[js.Any])
     
+    inline def setHeightAdjustmentUndefined: Self = StObject.set(x, "heightAdjustment", js.undefined)
+    
     inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
     inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    
+    inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
   }
 }

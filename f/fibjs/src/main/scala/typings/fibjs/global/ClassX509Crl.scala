@@ -17,6 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassX509Crl ()
+open class ClassX509Crl ()
   extends StObject
      with typings.fibjs.ClassX509Crl

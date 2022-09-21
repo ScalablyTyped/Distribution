@@ -53,7 +53,7 @@ object helpMod {
   
   @JSImport("rbx/elements/form/help", "Help")
   @js.native
-  val Help: ForwardRefAsExoticComponent[HelpProps, ElementType[js.Any]] = js.native
+  val Help: ForwardRefAsExoticComponent[HelpProps, ElementType[Any]] = js.native
   
   trait HelpModifierProps extends StObject {
     

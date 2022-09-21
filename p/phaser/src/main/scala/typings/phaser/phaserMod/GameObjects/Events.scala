@@ -7,6 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Events {
   
   /**
+    * The Game Object Added to Scene Event.
+    * 
+    * This event is dispatched when a Game Object is added to a Scene.
+    * 
+    * Listen for it on a Game Object instance using `GameObject.on('addedtoscene', listener)`.
+    */
+  @JSImport("phaser", "GameObjects.Events.ADDED_TO_SCENE")
+  @js.native
+  val ADDED_TO_SCENE: Any = js.native
+  
+  /**
     * The Game Object Destroy Event.
     * 
     * This event is dispatched when a Game Object instance is being destroyed.
@@ -15,7 +26,18 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.DESTROY")
   @js.native
-  val DESTROY: js.Any = js.native
+  val DESTROY: Any = js.native
+  
+  /**
+    * The Game Object Removed from Scene Event.
+    * 
+    * This event is dispatched when a Game Object is removed from a Scene.
+    * 
+    * Listen for it on a Game Object instance using `GameObject.on('removedfromscene', listener)`.
+    */
+  @JSImport("phaser", "GameObjects.Events.REMOVED_FROM_SCENE")
+  @js.native
+  val REMOVED_FROM_SCENE: Any = js.native
   
   /**
     * The Video Game Object Complete Event.
@@ -33,7 +55,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_COMPLETE")
   @js.native
-  val VIDEO_COMPLETE: js.Any = js.native
+  val VIDEO_COMPLETE: Any = js.native
   
   /**
     * The Video Game Object Created Event.
@@ -46,7 +68,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_CREATED")
   @js.native
-  val VIDEO_CREATED: js.Any = js.native
+  val VIDEO_CREATED: Any = js.native
   
   /**
     * The Video Game Object Error Event.
@@ -57,7 +79,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_ERROR")
   @js.native
-  val VIDEO_ERROR: js.Any = js.native
+  val VIDEO_ERROR: Any = js.native
   
   /**
     * The Video Game Object Loop Event.
@@ -75,7 +97,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_LOOP")
   @js.native
-  val VIDEO_LOOP: js.Any = js.native
+  val VIDEO_LOOP: Any = js.native
   
   /**
     * The Video Game Object Play Event.
@@ -89,7 +111,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_PLAY")
   @js.native
-  val VIDEO_PLAY: js.Any = js.native
+  val VIDEO_PLAY: Any = js.native
   
   /**
     * The Video Game Object Seeked Event.
@@ -100,7 +122,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_SEEKED")
   @js.native
-  val VIDEO_SEEKED: js.Any = js.native
+  val VIDEO_SEEKED: Any = js.native
   
   /**
     * The Video Game Object Seeking Event.
@@ -112,7 +134,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_SEEKING")
   @js.native
-  val VIDEO_SEEKING: js.Any = js.native
+  val VIDEO_SEEKING: Any = js.native
   
   /**
     * The Video Game Object Stopped Event.
@@ -124,7 +146,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_STOP")
   @js.native
-  val VIDEO_STOP: js.Any = js.native
+  val VIDEO_STOP: Any = js.native
   
   /**
     * The Video Game Object Timeout Event.
@@ -136,7 +158,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_TIMEOUT")
   @js.native
-  val VIDEO_TIMEOUT: js.Any = js.native
+  val VIDEO_TIMEOUT: Any = js.native
   
   /**
     * The Video Game Object Unlocked Event.
@@ -148,5 +170,5 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_UNLOCKED")
   @js.native
-  val VIDEO_UNLOCKED: js.Any = js.native
+  val VIDEO_UNLOCKED: Any = js.native
 }

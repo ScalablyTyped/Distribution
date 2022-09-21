@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * **Hosts**: Excel, Outlook (in preview), PowerPoint, Word
   * 
-  * `OfficeTheme` is only supported in Office on Windows.
+  * `OfficeTheme` is only supported in Office on Windows, Mac, and the web.
   */
 trait OfficeTheme extends StObject {
   

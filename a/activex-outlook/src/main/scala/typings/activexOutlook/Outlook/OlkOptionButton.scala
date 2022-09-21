@@ -34,7 +34,7 @@ trait OlkOptionButton extends StObject {
   /* private */ @JSName("Outlook.OlkOptionButton_typekey")
   var OutlookDotOlkOptionButton_typekey: OlkOptionButton
   
-  var Value: js.Any
+  var Value: Any
   
   var WordWrap: Boolean
 }
@@ -53,7 +53,7 @@ object OlkOptionButton {
     MouseIcon: StdPicture,
     MousePointer: OlMousePointer,
     OutlookDotOlkOptionButton_typekey: OlkOptionButton,
-    Value: js.Any,
+    Value: Any,
     WordWrap: Boolean
   ): OlkOptionButton = {
     val __obj = js.Dynamic.literal(Accelerator = Accelerator.asInstanceOf[js.Any], Alignment = Alignment.asInstanceOf[js.Any], BackColor = BackColor.asInstanceOf[js.Any], BackStyle = BackStyle.asInstanceOf[js.Any], Caption = Caption.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Font = Font.asInstanceOf[js.Any], ForeColor = ForeColor.asInstanceOf[js.Any], GroupName = GroupName.asInstanceOf[js.Any], MouseIcon = MouseIcon.asInstanceOf[js.Any], MousePointer = MousePointer.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any], WordWrap = WordWrap.asInstanceOf[js.Any])
@@ -87,7 +87,7 @@ object OlkOptionButton {
     
     inline def setOutlookDotOlkOptionButton_typekey(value: OlkOptionButton): Self = StObject.set(x, "Outlook.OlkOptionButton_typekey", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     inline def setWordWrap(value: Boolean): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
   }

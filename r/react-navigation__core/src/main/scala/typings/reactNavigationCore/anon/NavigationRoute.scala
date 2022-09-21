@@ -1,28 +1,29 @@
 package typings.reactNavigationCore.anon
 
+import typings.reactNavigationCore.typesMod.Keyof
 import typings.reactNavigationCore.typesMod.RouteProp
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationRoute extends StObject {
+trait NavigationRoute[ParamList /* <: ParamListBase */] extends StObject {
   
-  var navigation: js.Any
+  var navigation: Any
   
-  var route: RouteProp[ParamListBase, String]
+  var route: RouteProp[ParamList, Keyof[ParamList]]
 }
 object NavigationRoute {
   
-  inline def apply(navigation: js.Any, route: RouteProp[ParamListBase, String]): NavigationRoute = {
+  inline def apply[ParamList /* <: ParamListBase */](navigation: Any, route: RouteProp[ParamList, Keyof[ParamList]]): NavigationRoute[ParamList] = {
     val __obj = js.Dynamic.literal(navigation = navigation.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NavigationRoute]
+    __obj.asInstanceOf[NavigationRoute[ParamList]]
   }
   
-  extension [Self <: NavigationRoute](x: Self) {
+  extension [Self <: NavigationRoute[?], ParamList /* <: ParamListBase */](x: Self & NavigationRoute[ParamList]) {
     
-    inline def setNavigation(value: js.Any): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: Any): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    inline def setRoute(value: RouteProp[ParamListBase, String]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: RouteProp[ParamList, Keyof[ParamList]]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }
 }

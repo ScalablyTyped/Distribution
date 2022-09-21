@@ -33,6 +33,6 @@ object DescribeMaintenanceWindowTargetsResult {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
-    inline def setTargetsVarargs(value: MaintenanceWindowTarget*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: MaintenanceWindowTarget*): Self = StObject.set(x, "Targets", js.Array(value*))
   }
 }

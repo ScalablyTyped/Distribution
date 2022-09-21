@@ -11,8 +11,8 @@ object ajaxErrorHandlerMod {
   
   type AjaxErrorHandler[TElement] = js.Function4[
     /* config */ TablesorterConfigurationStore[TElement], 
-    /* request */ jqXHR[js.Any], 
-    /* ajaxSettings */ AjaxSettings[js.Any], 
+    /* request */ jqXHR[Any], 
+    /* ajaxSettings */ AjaxSettings[Any], 
     /* thrownError */ String, 
     String
   ]

@@ -24,6 +24,6 @@ object PipelineConfig {
     
     inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
     
-    inline def setFunctionsVarargs(value: String*): Self = StObject.set(x, "functions", js.Array(value :_*))
+    inline def setFunctionsVarargs(value: String*): Self = StObject.set(x, "functions", js.Array(value*))
   }
 }

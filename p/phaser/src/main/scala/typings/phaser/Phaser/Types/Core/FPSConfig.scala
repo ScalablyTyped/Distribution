@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.Types.Core
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait FPSConfig extends StObject {
   /**
     * Calculate the average frame delta from this many consecutive frame intervals.
     */
-  var deltaHistory: js.UndefOr[integer] = js.undefined
+  var deltaHistory: js.UndefOr[Double] = js.undefined
   
   /**
     * Use setTimeout instead of requestAnimationFrame to run the game loop.
@@ -20,12 +19,12 @@ trait FPSConfig extends StObject {
   /**
     * The minimum acceptable rendering rate, in frames per second.
     */
-  var min: js.UndefOr[integer] = js.undefined
+  var min: js.UndefOr[Double] = js.undefined
   
   /**
     * The amount of frames the time step counts before we trust the delta values again.
     */
-  var panicMax: js.UndefOr[integer] = js.undefined
+  var panicMax: js.UndefOr[Double] = js.undefined
   
   /**
     * Apply delta smoothing during the game update to help avoid spikes?
@@ -33,9 +32,9 @@ trait FPSConfig extends StObject {
   var smoothStep: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The optimum rendering rate, in frames per second.
+    * The optimum rendering rate, in frames per second. This does not enforce the fps rate, it merely tells Phaser what rate is considered optimal for this game.
     */
-  var target: js.UndefOr[integer] = js.undefined
+  var target: js.UndefOr[Double] = js.undefined
 }
 object FPSConfig {
   
@@ -46,7 +45,7 @@ object FPSConfig {
   
   extension [Self <: FPSConfig](x: Self) {
     
-    inline def setDeltaHistory(value: integer): Self = StObject.set(x, "deltaHistory", value.asInstanceOf[js.Any])
+    inline def setDeltaHistory(value: Double): Self = StObject.set(x, "deltaHistory", value.asInstanceOf[js.Any])
     
     inline def setDeltaHistoryUndefined: Self = StObject.set(x, "deltaHistory", js.undefined)
     
@@ -54,11 +53,11 @@ object FPSConfig {
     
     inline def setForceSetTimeOutUndefined: Self = StObject.set(x, "forceSetTimeOut", js.undefined)
     
-    inline def setMin(value: integer): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setPanicMax(value: integer): Self = StObject.set(x, "panicMax", value.asInstanceOf[js.Any])
+    inline def setPanicMax(value: Double): Self = StObject.set(x, "panicMax", value.asInstanceOf[js.Any])
     
     inline def setPanicMaxUndefined: Self = StObject.set(x, "panicMax", js.undefined)
     
@@ -66,7 +65,7 @@ object FPSConfig {
     
     inline def setSmoothStepUndefined: Self = StObject.set(x, "smoothStep", js.undefined)
     
-    inline def setTarget(value: integer): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }

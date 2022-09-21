@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of `RangeView` objects.
   *
-  * Represents a collection of RangeView objects.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.3]
   */
 @js.native
@@ -26,15 +26,17 @@ trait RangeViewCollection
   var context_RangeViewCollection: RequestContext = js.native
   
   /**
-    * Gets the number of RangeView objects in the collection.
+    * Gets the number of `RangeView` objects in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a RangeView Row via its index. Zero-Indexed.
+    * Gets a `RangeView` row via its index. Zero-indexed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     *
     * @param index Index of the visible row.

@@ -1,29 +1,33 @@
 package typings.nivoVoronoi
 
+import typings.nivoVoronoi.typesMod.VoronoiLayerId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nivoVoronoiStrings {
-  @js.native
-  sealed trait bounds extends js.Object
   
   @js.native
-  sealed trait cells extends js.Object
+  sealed trait bounds
+    extends StObject
+       with VoronoiLayerId
+  inline def bounds: bounds = "bounds".asInstanceOf[bounds]
   
   @js.native
-  sealed trait links extends js.Object
+  sealed trait cells
+    extends StObject
+       with VoronoiLayerId
+  inline def cells: cells = "cells".asInstanceOf[cells]
   
   @js.native
-  sealed trait points extends js.Object
+  sealed trait links
+    extends StObject
+       with VoronoiLayerId
+  inline def links: links = "links".asInstanceOf[links]
   
-  @scala.inline
-  def bounds: bounds = "bounds".asInstanceOf[bounds]
-  @scala.inline
-  def cells: cells = "cells".asInstanceOf[cells]
-  @scala.inline
-  def links: links = "links".asInstanceOf[links]
-  @scala.inline
-  def points: points = "points".asInstanceOf[points]
+  @js.native
+  sealed trait points
+    extends StObject
+       with VoronoiLayerId
+  inline def points: points = "points".asInstanceOf[points]
 }
-

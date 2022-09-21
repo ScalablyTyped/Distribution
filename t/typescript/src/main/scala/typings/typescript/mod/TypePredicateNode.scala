@@ -10,7 +10,7 @@ trait TypePredicateNode
      with TypeNode
      with HasType {
   
-  val assertsModifier: js.UndefOr[AssertsToken] = js.native
+  val assertsModifier: js.UndefOr[AssertsKeyword] = js.native
   
   @JSName("kind")
   val kind_TypePredicateNode: typings.typescript.mod.SyntaxKind.TypePredicate = js.native

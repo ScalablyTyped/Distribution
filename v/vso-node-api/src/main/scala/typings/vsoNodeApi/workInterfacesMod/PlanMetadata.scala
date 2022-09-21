@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.workInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +20,7 @@ trait PlanMetadata extends StObject {
   /**
     * Last modified date of the plan
     */
-  var modifiedDate: Date
+  var modifiedDate: js.Date
   
   /**
     * Bit flag indicating set of permissions a user has to the plan.
@@ -33,7 +32,7 @@ object PlanMetadata {
   inline def apply(
     createdByIdentity: IdentityRef,
     description: String,
-    modifiedDate: Date,
+    modifiedDate: js.Date,
     userPermissions: PlanUserPermissions
   ): PlanMetadata = {
     val __obj = js.Dynamic.literal(createdByIdentity = createdByIdentity.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], modifiedDate = modifiedDate.asInstanceOf[js.Any], userPermissions = userPermissions.asInstanceOf[js.Any])
@@ -46,7 +45,7 @@ object PlanMetadata {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    inline def setModifiedDate(value: Date): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
+    inline def setModifiedDate(value: js.Date): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
     
     inline def setUserPermissions(value: PlanUserPermissions): Self = StObject.set(x, "userPermissions", value.asInstanceOf[js.Any])
   }

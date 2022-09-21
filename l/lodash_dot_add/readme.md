@@ -10,15 +10,13 @@ The lodash method `_.add` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.add |
 | Keywords           | lodash-modularized, add |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 108469 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9281.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)
-- [Bugs](https://github.com/lodash/lodash/issues)
-- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.add)
     
 

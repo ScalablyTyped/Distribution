@@ -30,26 +30,26 @@ object checkboxMod {
   
   @JSImport("@catho/quantum/Checkbox", "Checkbox")
   @js.native
-  class Checkbox protected ()
-    extends Component[CheckboxProps, js.Object, js.Any] {
+  open class Checkbox protected ()
+    extends Component[CheckboxProps, js.Object, Any] {
     def this(props: CheckboxProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: CheckboxProps, context: js.Any) = this()
+    def this(props: CheckboxProps, context: Any) = this()
   }
   
   @JSImport("@catho/quantum/Checkbox", "CheckboxGroup")
   @js.native
-  class CheckboxGroup protected ()
-    extends Component[CheckboxGroupProps, js.Object, js.Any] {
+  open class CheckboxGroup protected ()
+    extends Component[CheckboxGroupProps, js.Object, Any] {
     def this(props: CheckboxGroupProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: CheckboxGroupProps, context: js.Any) = this()
+    def this(props: CheckboxGroupProps, context: Any) = this()
   }
   /* static members */
   object CheckboxGroup {
@@ -114,7 +114,7 @@ object checkboxMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -167,7 +167,9 @@ object checkboxMod {
     var onChange: js.UndefOr[
         js.Function2[
           /* items */ js.UndefOr[Options], 
-          /* event */ js.UndefOr[ChangeEvent[HTMLInputElement]], 
+          /* event */ js.UndefOr[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ChangeEvent<HTMLInputElement> */ Any
+          ], 
           Unit
         ]
       ] = js.undefined
@@ -194,7 +196,7 @@ object checkboxMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -205,7 +207,9 @@ object checkboxMod {
       inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
       inline def setOnChange(
-        value: (/* items */ js.UndefOr[Options], /* event */ js.UndefOr[ChangeEvent[HTMLInputElement]]) => Unit
+        value: (/* items */ js.UndefOr[Options], /* event */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ChangeEvent<HTMLInputElement> */ Any
+            ]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -214,7 +218,7 @@ object checkboxMod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: Checked*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: Checked*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setSize(value: xsmall | small | medium | large | xlarge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -12,6 +12,7 @@ trait RSAKeyPairKeyObjectOptions extends StObject {
   var modulusLength: Double
   
   /**
+    * Public exponent
     * @default 0x10001
     */
   var publicExponent: js.UndefOr[Double] = js.undefined

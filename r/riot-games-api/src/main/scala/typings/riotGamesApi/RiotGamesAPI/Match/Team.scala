@@ -60,7 +60,7 @@ object Team {
     
     inline def setBans(value: js.Array[BannedChampion]): Self = StObject.set(x, "bans", value.asInstanceOf[js.Any])
     
-    inline def setBansVarargs(value: BannedChampion*): Self = StObject.set(x, "bans", js.Array(value :_*))
+    inline def setBansVarargs(value: BannedChampion*): Self = StObject.set(x, "bans", js.Array(value*))
     
     inline def setBaronKills(value: Double): Self = StObject.set(x, "baronKills", value.asInstanceOf[js.Any])
     

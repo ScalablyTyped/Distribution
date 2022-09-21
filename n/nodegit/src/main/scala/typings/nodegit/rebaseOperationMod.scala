@@ -15,7 +15,7 @@ object rebaseOperationMod {
   
   @JSImport("nodegit/rebase-operation", "RebaseOperation")
   @js.native
-  class RebaseOperation () extends StObject {
+  open class RebaseOperation () extends StObject {
     
     var exec: String = js.native
     

@@ -13,15 +13,15 @@ object anon {
     
     var index: Double
     
-    var `object`: js.Array[js.Any]
+    var `object`: js.Array[Any]
     
-    var removed: js.Array[js.Any]
+    var removed: js.Array[Any]
     
     var `type`: splice
   }
   object AddedCount {
     
-    inline def apply(addedCount: Double, index: Double, `object`: js.Array[js.Any], removed: js.Array[js.Any]): AddedCount = {
+    inline def apply(addedCount: Double, index: Double, `object`: js.Array[Any], removed: js.Array[Any]): AddedCount = {
       val __obj = js.Dynamic.literal(addedCount = addedCount.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("splice")
@@ -34,13 +34,13 @@ object anon {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      inline def setObject(value: js.Array[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: js.Array[Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      inline def setObjectVarargs(value: js.Any*): Self = StObject.set(x, "object", js.Array(value :_*))
+      inline def setObjectVarargs(value: Any*): Self = StObject.set(x, "object", js.Array(value*))
       
-      inline def setRemoved(value: js.Array[js.Any]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+      inline def setRemoved(value: js.Array[Any]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
       
-      inline def setRemovedVarargs(value: js.Any*): Self = StObject.set(x, "removed", js.Array(value :_*))
+      inline def setRemovedVarargs(value: Any*): Self = StObject.set(x, "removed", js.Array(value*))
       
       inline def setType(value: splice): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

@@ -15,7 +15,7 @@ trait ASPxClientCustomizeExportOptionsEventArgs
     * Returns the export options model for the specified export format. An export options model.
     * @param format An object that specifies the export format whose model should be returned.
     */
-  def GetExportOptionsModel(format: js.Any): js.Any
+  def GetExportOptionsModel(format: Any): Any
   
   /**
     * Hides the entire <a href="https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/document-viewer/exporting/export-a-document.html">Export Options</a> panel from the Web Document Viewer.
@@ -26,22 +26,22 @@ trait ASPxClientCustomizeExportOptionsEventArgs
     * Hides the specified export format from the Export To drop-down list and the corresponding category from the <a href="https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/document-viewer/exporting/export-a-document.html">Export Options</a> panel.
     * @param format An object that specifies the export format to hide.
     */
-  def HideFormat(format: js.Any): Unit
+  def HideFormat(format: Any): Unit
   
   /**
     * Hides the specified options for the specified export format from the <a href="https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/document-viewer/exporting/export-a-document.html">Export Options</a> panel.
     * @param format An object that specifies the export format whose options should be hidden.
     * @param properties An array of properties to hide.
     */
-  def HideProperties(format: js.Any, properties: js.Any*): Unit
+  def HideProperties(format: Any, properties: Any*): Unit
 }
 object ASPxClientCustomizeExportOptionsEventArgs {
   
   inline def apply(
-    GetExportOptionsModel: js.Any => js.Any,
+    GetExportOptionsModel: Any => Any,
     HideExportOptionsPanel: () => Unit,
-    HideFormat: js.Any => Unit,
-    HideProperties: (js.Any, /* repeated */ js.Any) => Unit
+    HideFormat: Any => Unit,
+    HideProperties: (Any, /* repeated */ Any) => Unit
   ): ASPxClientCustomizeExportOptionsEventArgs = {
     val __obj = js.Dynamic.literal(GetExportOptionsModel = js.Any.fromFunction1(GetExportOptionsModel), HideExportOptionsPanel = js.Any.fromFunction0(HideExportOptionsPanel), HideFormat = js.Any.fromFunction1(HideFormat), HideProperties = js.Any.fromFunction2(HideProperties))
     __obj.asInstanceOf[ASPxClientCustomizeExportOptionsEventArgs]
@@ -49,12 +49,12 @@ object ASPxClientCustomizeExportOptionsEventArgs {
   
   extension [Self <: ASPxClientCustomizeExportOptionsEventArgs](x: Self) {
     
-    inline def setGetExportOptionsModel(value: js.Any => js.Any): Self = StObject.set(x, "GetExportOptionsModel", js.Any.fromFunction1(value))
+    inline def setGetExportOptionsModel(value: Any => Any): Self = StObject.set(x, "GetExportOptionsModel", js.Any.fromFunction1(value))
     
     inline def setHideExportOptionsPanel(value: () => Unit): Self = StObject.set(x, "HideExportOptionsPanel", js.Any.fromFunction0(value))
     
-    inline def setHideFormat(value: js.Any => Unit): Self = StObject.set(x, "HideFormat", js.Any.fromFunction1(value))
+    inline def setHideFormat(value: Any => Unit): Self = StObject.set(x, "HideFormat", js.Any.fromFunction1(value))
     
-    inline def setHideProperties(value: (js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "HideProperties", js.Any.fromFunction2(value))
+    inline def setHideProperties(value: (Any, /* repeated */ Any) => Unit): Self = StObject.set(x, "HideProperties", js.Any.fromFunction2(value))
   }
 }

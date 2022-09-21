@@ -512,6 +512,10 @@ trait EnvelopeDefinition extends StObject {
     * The reason the envelope or template was voided.
     */
   var voidedReason: js.UndefOr[String] = js.undefined
+  
+  var workflow: js.UndefOr[
+    /* A complex element that specifies the workflow settings for the envelope. */ Workflow
+  ] = js.undefined
 }
 object EnvelopeDefinition {
   
@@ -566,7 +570,7 @@ object EnvelopeDefinition {
     
     inline def setAttachmentsUriUndefined: Self = StObject.set(x, "attachmentsUri", js.undefined)
     
-    inline def setAttachmentsVarargs(value: (/* Contains information about an attachment. */ Attachment)*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: (/* Contains information about an attachment. */ Attachment)*): Self = StObject.set(x, "attachments", js.Array(value*))
     
     inline def setAuthoritativeCopy(value: String): Self = StObject.set(x, "authoritativeCopy", value.asInstanceOf[js.Any])
     
@@ -600,7 +604,7 @@ object EnvelopeDefinition {
     
     inline def setCompositeTemplatesUndefined: Self = StObject.set(x, "compositeTemplates", js.undefined)
     
-    inline def setCompositeTemplatesVarargs(value: CompositeTemplate*): Self = StObject.set(x, "compositeTemplates", js.Array(value :_*))
+    inline def setCompositeTemplatesVarargs(value: CompositeTemplate*): Self = StObject.set(x, "compositeTemplates", js.Array(value*))
     
     inline def setCopyRecipientData(value: String): Self = StObject.set(x, "copyRecipientData", value.asInstanceOf[js.Any])
     
@@ -649,7 +653,7 @@ object EnvelopeDefinition {
     
     inline def setDocumentsUriUndefined: Self = StObject.set(x, "documentsUri", js.undefined)
     
-    inline def setDocumentsVarargs(value: (/* A document object. */ Document)*): Self = StObject.set(x, "documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: (/* A document object. */ Document)*): Self = StObject.set(x, "documents", js.Array(value*))
     
     inline def setEmailBlurb(value: String): Self = StObject.set(x, "emailBlurb", value.asInstanceOf[js.Any])
     
@@ -675,13 +679,13 @@ object EnvelopeDefinition {
     
     inline def setEnvelopeAttachmentsUndefined: Self = StObject.set(x, "envelopeAttachments", js.undefined)
     
-    inline def setEnvelopeAttachmentsVarargs(value: (/* Contains information about an attachment. */ Attachment)*): Self = StObject.set(x, "envelopeAttachments", js.Array(value :_*))
+    inline def setEnvelopeAttachmentsVarargs(value: (/* Contains information about an attachment. */ Attachment)*): Self = StObject.set(x, "envelopeAttachments", js.Array(value*))
     
     inline def setEnvelopeDocuments(value: js.Array[/* This object contains details about the envelope document. */ EnvelopeDocument]): Self = StObject.set(x, "envelopeDocuments", value.asInstanceOf[js.Any])
     
     inline def setEnvelopeDocumentsUndefined: Self = StObject.set(x, "envelopeDocuments", js.undefined)
     
-    inline def setEnvelopeDocumentsVarargs(value: (/* This object contains details about the envelope document. */ EnvelopeDocument)*): Self = StObject.set(x, "envelopeDocuments", js.Array(value :_*))
+    inline def setEnvelopeDocumentsVarargs(value: (/* This object contains details about the envelope document. */ EnvelopeDocument)*): Self = StObject.set(x, "envelopeDocuments", js.Array(value*))
     
     inline def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
@@ -711,7 +715,7 @@ object EnvelopeDefinition {
     
     inline def setEventNotificationsUndefined: Self = StObject.set(x, "eventNotifications", js.undefined)
     
-    inline def setEventNotificationsVarargs(value: (/* Register a Connect webhook for a specific envelope */ EventNotification)*): Self = StObject.set(x, "eventNotifications", js.Array(value :_*))
+    inline def setEventNotificationsVarargs(value: (/* Register a Connect webhook for a specific envelope */ EventNotification)*): Self = StObject.set(x, "eventNotifications", js.Array(value*))
     
     inline def setExpireAfter(value: String): Self = StObject.set(x, "expireAfter", value.asInstanceOf[js.Any])
     
@@ -733,7 +737,7 @@ object EnvelopeDefinition {
     
     inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
-    inline def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = StObject.set(x, "folders", js.Array(value :_*))
+    inline def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = StObject.set(x, "folders", js.Array(value*))
     
     inline def setHasComments(value: String): Self = StObject.set(x, "hasComments", value.asInstanceOf[js.Any])
     
@@ -861,7 +865,7 @@ object EnvelopeDefinition {
     
     inline def setTemplateRolesUndefined: Self = StObject.set(x, "templateRoles", js.undefined)
     
-    inline def setTemplateRolesVarargs(value: TemplateRole*): Self = StObject.set(x, "templateRoles", js.Array(value :_*))
+    inline def setTemplateRolesVarargs(value: TemplateRole*): Self = StObject.set(x, "templateRoles", js.Array(value*))
     
     inline def setTemplatesUri(value: String): Self = StObject.set(x, "templatesUri", value.asInstanceOf[js.Any])
     
@@ -882,5 +886,9 @@ object EnvelopeDefinition {
     inline def setVoidedReason(value: String): Self = StObject.set(x, "voidedReason", value.asInstanceOf[js.Any])
     
     inline def setVoidedReasonUndefined: Self = StObject.set(x, "voidedReason", js.undefined)
+    
+    inline def setWorkflow(value: /* A complex element that specifies the workflow settings for the envelope. */ Workflow): Self = StObject.set(x, "workflow", value.asInstanceOf[js.Any])
+    
+    inline def setWorkflowUndefined: Self = StObject.set(x, "workflow", js.undefined)
   }
 }

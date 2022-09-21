@@ -6,11 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "NotExpr")
 @js.native
-class NotExpr protected ()
-  extends typings.angularCompiler.compilerMod.NotExpr {
-  def this(condition: typings.angularCompiler.outputAstMod.Expression) = this()
-  def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
+open class NotExpr protected () extends Expression {
+  def this(condition: Expression) = this()
+  def this(condition: Expression, sourceSpan: ParseSourceSpan) = this()
+  
+  var condition: Expression = js.native
 }

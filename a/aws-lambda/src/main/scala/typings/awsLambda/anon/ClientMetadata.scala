@@ -9,16 +9,17 @@ trait ClientMetadata extends StObject {
   
   var clientMetadata: js.UndefOr[StringMap] = js.undefined
   
-  var codeParameter: String
+  var code: String | Null
+  
+  var `type`: String
   
   var userAttributes: StringMap
-  
-  var usernameParameter: String
 }
 object ClientMetadata {
   
-  inline def apply(codeParameter: String, userAttributes: StringMap, usernameParameter: String): ClientMetadata = {
-    val __obj = js.Dynamic.literal(codeParameter = codeParameter.asInstanceOf[js.Any], userAttributes = userAttributes.asInstanceOf[js.Any], usernameParameter = usernameParameter.asInstanceOf[js.Any])
+  inline def apply(`type`: String, userAttributes: StringMap): ClientMetadata = {
+    val __obj = js.Dynamic.literal(userAttributes = userAttributes.asInstanceOf[js.Any], code = null)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientMetadata]
   }
   
@@ -28,10 +29,12 @@ object ClientMetadata {
     
     inline def setClientMetadataUndefined: Self = StObject.set(x, "clientMetadata", js.undefined)
     
-    inline def setCodeParameter(value: String): Self = StObject.set(x, "codeParameter", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCodeNull: Self = StObject.set(x, "code", null)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
-    
-    inline def setUsernameParameter(value: String): Self = StObject.set(x, "usernameParameter", value.asInstanceOf[js.Any])
   }
 }

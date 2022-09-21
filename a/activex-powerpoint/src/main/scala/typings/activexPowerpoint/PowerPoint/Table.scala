@@ -38,7 +38,7 @@ trait Table extends StObject {
   
   def MergeBorders(): Unit = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.Table_typekey")
   var PowerPointDotTable_typekey: Table = js.native

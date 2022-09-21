@@ -1,7 +1,7 @@
 
 # Scala.js typings for tizen-common-web
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 This package is for supporting Tizen Web Device API as commonjs style.
@@ -10,10 +10,10 @@ This package is for supporting Tizen Web Device API as commonjs style.
 | ------------------ | :-------------: |
 | Full name          | tizen-common-web |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 1028 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 2735.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/tizen-common-web)

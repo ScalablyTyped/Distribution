@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Boundary")
 @js.native
-class Boundary ()
+open class Boundary ()
   extends StObject
      with typings.bmapgl.BMapGL.Boundary {
   

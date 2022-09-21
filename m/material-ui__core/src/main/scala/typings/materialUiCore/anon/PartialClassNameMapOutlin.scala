@@ -4,12 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/OutlinedInput/OutlinedInput.OutlinedInputClassKey>> */
+/* Inlined std.Partial<@material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/OutlinedInput/OutlinedInput.OutlinedInputClassKey>> */
 trait PartialClassNameMapOutlin extends StObject {
   
   var adornedEnd: js.UndefOr[String] = js.undefined
   
   var adornedStart: js.UndefOr[String] = js.undefined
+  
+  var colorSecondary: js.UndefOr[String] = js.undefined
   
   var disabled: js.UndefOr[String] = js.undefined
   
@@ -26,6 +28,8 @@ trait PartialClassNameMapOutlin extends StObject {
   var inputMarginDense: js.UndefOr[String] = js.undefined
   
   var inputMultiline: js.UndefOr[String] = js.undefined
+  
+  var marginDense: js.UndefOr[String] = js.undefined
   
   var multiline: js.UndefOr[String] = js.undefined
   
@@ -49,6 +53,10 @@ object PartialClassNameMapOutlin {
     inline def setAdornedStart(value: String): Self = StObject.set(x, "adornedStart", value.asInstanceOf[js.Any])
     
     inline def setAdornedStartUndefined: Self = StObject.set(x, "adornedStart", js.undefined)
+    
+    inline def setColorSecondary(value: String): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
+    
+    inline def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
     
     inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
@@ -81,6 +89,10 @@ object PartialClassNameMapOutlin {
     inline def setInputMultilineUndefined: Self = StObject.set(x, "inputMultiline", js.undefined)
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    
+    inline def setMarginDense(value: String): Self = StObject.set(x, "marginDense", value.asInstanceOf[js.Any])
+    
+    inline def setMarginDenseUndefined: Self = StObject.set(x, "marginDense", js.undefined)
     
     inline def setMultiline(value: String): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     

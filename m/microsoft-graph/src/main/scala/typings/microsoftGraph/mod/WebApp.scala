@@ -8,7 +8,7 @@ trait WebApp
   extends StObject
      with MobileApp {
   
-  // The web app URL.
+  // The web app URL. This property cannot be PATCHed.
   var appUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Whether or not to use managed browser. This property is only applicable for Android and IOS.

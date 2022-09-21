@@ -47,20 +47,20 @@ object mod {
   @js.native
   val formSubscriptionItems: js.Array[String] = js.native
   
-  inline def getIn(state: js.Object, complexKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getIn")(state.asInstanceOf[js.Any], complexKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getIn(state: js.Object, complexKey: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getIn")(state.asInstanceOf[js.Any], complexKey.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def setIn(state: js.Object, key: String, value: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def setIn(state: js.Object, key: String, value: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   @JSImport("final-form", "version")
   @js.native
   val version: String = js.native
   
-  type AnyObject = StringDictionary[js.Any]
+  type AnyObject = StringDictionary[Any]
   
   type ChangeValue[FormValues, InitialFormValues] = js.Function3[
     /* state */ MutableState[FormValues, InitialFormValues], 
     /* name */ String, 
-    /* mutate */ js.Function1[/* value */ js.Any, js.Any], 
+    /* mutate */ js.Function1[/* value */ Any, Any], 
     Unit
   ]
   
@@ -77,18 +77,15 @@ object mod {
     
     var mutators: js.UndefOr[StringDictionary[Mutator[FormValues, InitialFormValues]]] = js.native
     
-    def onSubmit(values: FormValues, form: FormApi[FormValues, InitialFormValues]): js.UndefOr[SubmissionErrors | js.Promise[js.UndefOr[SubmissionErrors]] | Unit] = js.native
+    def onSubmit(values: FormValues, form: FormApi[FormValues, InitialFormValues]): SubmissionErrors | js.Promise[SubmissionErrors] | Unit = js.native
     def onSubmit(
       values: FormValues,
       form: FormApi[FormValues, InitialFormValues],
       callback: js.Function1[/* errors */ js.UndefOr[SubmissionErrors], Unit]
-    ): js.UndefOr[SubmissionErrors | js.Promise[js.UndefOr[SubmissionErrors]] | Unit] = js.native
+    ): SubmissionErrors | js.Promise[SubmissionErrors] | Unit = js.native
     
     var validate: js.UndefOr[
-        js.Function1[
-          /* values */ FormValues, 
-          js.UndefOr[ValidationErrors | js.Promise[ValidationErrors]]
-        ]
+        js.Function1[/* values */ FormValues, ValidationErrors | js.Promise[ValidationErrors]]
       ] = js.native
     
     var validateOnBlur: js.UndefOr[Boolean] = js.native
@@ -108,7 +105,7 @@ object mod {
   
   type DebugFunction[FormValues, InitialFormValues] = js.Function2[
     /* state */ FormState[FormValues, InitialFormValues], 
-    /* fieldStates */ StringDictionary[FieldState[js.Any]], 
+    /* fieldStates */ StringDictionary[FieldState[Any]], 
     Unit
   ]
   
@@ -120,13 +117,13 @@ object mod {
     
     var beforeSubmit: js.UndefOr[js.Function0[Unit | `false`]] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Any] = js.undefined
+    var defaultValue: js.UndefOr[Any] = js.undefined
     
     var getValidator: js.UndefOr[GetFieldValidator[FieldValue]] = js.undefined
     
-    var initialValue: js.UndefOr[js.Any] = js.undefined
+    var initialValue: js.UndefOr[Any] = js.undefined
     
     var isEqual: js.UndefOr[IsEqual] = js.undefined
     
@@ -151,11 +148,11 @@ object mod {
       
       inline def setBeforeSubmitUndefined: Self = StObject.set(x, "beforeSubmit", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
@@ -163,11 +160,11 @@ object mod {
       
       inline def setGetValidatorUndefined: Self = StObject.set(x, "getValidator", js.undefined)
       
-      inline def setInitialValue(value: js.Any): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+      inline def setInitialValue(value: Any): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
       
       inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
       
-      inline def setIsEqual(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
+      inline def setIsEqual(value: (/* a */ Any, /* b */ Any) => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
       
       inline def setIsEqualUndefined: Self = StObject.set(x, "isEqual", js.undefined)
       
@@ -179,7 +176,7 @@ object mod {
       
       inline def setValidateFieldsUndefined: Self = StObject.set(x, "validateFields", js.undefined)
       
-      inline def setValidateFieldsVarargs(value: String*): Self = StObject.set(x, "validateFields", js.Array(value :_*))
+      inline def setValidateFieldsVarargs(value: String*): Self = StObject.set(x, "validateFields", js.Array(value*))
     }
   }
   
@@ -199,7 +196,7 @@ object mod {
     
     var dirtySinceLastSubmit: js.UndefOr[Boolean] = js.native
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[Any] = js.native
     
     def focus(): Unit = js.native
     
@@ -217,7 +214,7 @@ object mod {
     
     var pristine: js.UndefOr[Boolean] = js.native
     
-    var submitError: js.UndefOr[js.Any] = js.native
+    var submitError: js.UndefOr[Any] = js.native
     
     var submitFailed: js.UndefOr[Boolean] = js.native
     
@@ -373,9 +370,9 @@ object mod {
   
   type FieldValidator[FieldValue] = js.Function3[
     /* value */ FieldValue, 
-    /* allValues */ js.Object, 
+    /* allValues */ js.UndefOr[js.Object], 
     /* meta */ js.UndefOr[FieldState[FieldValue]], 
-    js.Any | js.Promise[js.Any]
+    Any | js.Promise[Any]
   ]
   
   @js.native
@@ -405,12 +402,12 @@ object mod {
     
     def getState(): FormState[FormValues, InitialFormValues] = js.native
     
-    def initialize(data: FormValues): Unit = js.native
-    def initialize(data: js.Function1[/* values */ FormValues, FormValues]): Unit = js.native
+    def initialize(data: InitialFormValues): Unit = js.native
+    def initialize(data: js.Function1[/* values */ FormValues, InitialFormValues]): Unit = js.native
     
     def isValidationPaused(): Boolean = js.native
     
-    var mutators: Record[String, js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+    var mutators: Record[String, js.Function1[/* repeated */ Any, Any]] = js.native
     
     def pauseValidation(): Unit = js.native
     
@@ -435,9 +432,12 @@ object mod {
     var registerField_Original: RegisterField[FormValues] = js.native
     
     def reset(): Unit = js.native
-    def reset(initialValues: FormValues): Unit = js.native
+    def reset(initialValues: InitialFormValues): Unit = js.native
     
     def resetFieldState(name: /* keyof FormValues */ String): Unit = js.native
+    
+    def restart(): Unit = js.native
+    def restart(initialValues: InitialFormValues): Unit = js.native
     
     def resumeValidation(): Unit = js.native
     
@@ -466,10 +466,7 @@ object mod {
     @JSName("setConfig")
     def setConfig_validate(
       name: validate,
-      value: js.Function1[
-          /* values */ FormValues, 
-          js.UndefOr[ValidationErrors | js.Promise[ValidationErrors]]
-        ]
+      value: js.Function1[/* values */ FormValues, ValidationErrors | js.Promise[ValidationErrors]]
     ): Unit = js.native
     @JSName("setConfig")
     def setConfig_validateOnBlur(name: validateOnBlur): Unit = js.native
@@ -494,7 +491,7 @@ object mod {
     
     var dirtySinceLastSubmit: Boolean
     
-    var error: js.Any
+    var error: Any
     
     var errors: ValidationErrors
     
@@ -512,7 +509,7 @@ object mod {
     
     var pristine: Boolean
     
-    var submitError: js.Any
+    var submitError: Any
     
     var submitErrors: SubmissionErrors
     
@@ -539,16 +536,14 @@ object mod {
       dirtyFields: StringDictionary[Boolean],
       dirtyFieldsSinceLastSubmit: StringDictionary[Boolean],
       dirtySinceLastSubmit: Boolean,
-      error: js.Any,
-      errors: ValidationErrors,
+      error: Any,
       hasSubmitErrors: Boolean,
       hasValidationErrors: Boolean,
       initialValues: InitialFormValues,
       invalid: Boolean,
       modifiedSinceLastSubmit: Boolean,
       pristine: Boolean,
-      submitError: js.Any,
-      submitErrors: SubmissionErrors,
+      submitError: Any,
       submitFailed: Boolean,
       submitSucceeded: Boolean,
       submitting: Boolean,
@@ -556,7 +551,7 @@ object mod {
       validating: Boolean,
       values: FormValues
     ): FormState[FormValues, InitialFormValues] = {
-      val __obj = js.Dynamic.literal(dirty = dirty.asInstanceOf[js.Any], dirtyFields = dirtyFields.asInstanceOf[js.Any], dirtyFieldsSinceLastSubmit = dirtyFieldsSinceLastSubmit.asInstanceOf[js.Any], dirtySinceLastSubmit = dirtySinceLastSubmit.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], hasSubmitErrors = hasSubmitErrors.asInstanceOf[js.Any], hasValidationErrors = hasValidationErrors.asInstanceOf[js.Any], initialValues = initialValues.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], modifiedSinceLastSubmit = modifiedSinceLastSubmit.asInstanceOf[js.Any], pristine = pristine.asInstanceOf[js.Any], submitError = submitError.asInstanceOf[js.Any], submitErrors = submitErrors.asInstanceOf[js.Any], submitFailed = submitFailed.asInstanceOf[js.Any], submitSucceeded = submitSucceeded.asInstanceOf[js.Any], submitting = submitting.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], validating = validating.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(dirty = dirty.asInstanceOf[js.Any], dirtyFields = dirtyFields.asInstanceOf[js.Any], dirtyFieldsSinceLastSubmit = dirtyFieldsSinceLastSubmit.asInstanceOf[js.Any], dirtySinceLastSubmit = dirtySinceLastSubmit.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], hasSubmitErrors = hasSubmitErrors.asInstanceOf[js.Any], hasValidationErrors = hasValidationErrors.asInstanceOf[js.Any], initialValues = initialValues.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], modifiedSinceLastSubmit = modifiedSinceLastSubmit.asInstanceOf[js.Any], pristine = pristine.asInstanceOf[js.Any], submitError = submitError.asInstanceOf[js.Any], submitFailed = submitFailed.asInstanceOf[js.Any], submitSucceeded = submitSucceeded.asInstanceOf[js.Any], submitting = submitting.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], validating = validating.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormState[FormValues, InitialFormValues]]
     }
     
@@ -574,9 +569,11 @@ object mod {
       
       inline def setDirtySinceLastSubmit(value: Boolean): Self = StObject.set(x, "dirtySinceLastSubmit", value.asInstanceOf[js.Any])
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrors(value: ValidationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
       inline def setHasSubmitErrors(value: Boolean): Self = StObject.set(x, "hasSubmitErrors", value.asInstanceOf[js.Any])
       
@@ -594,9 +591,11 @@ object mod {
       
       inline def setPristine(value: Boolean): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
       
-      inline def setSubmitError(value: js.Any): Self = StObject.set(x, "submitError", value.asInstanceOf[js.Any])
+      inline def setSubmitError(value: Any): Self = StObject.set(x, "submitError", value.asInstanceOf[js.Any])
       
       inline def setSubmitErrors(value: SubmissionErrors): Self = StObject.set(x, "submitErrors", value.asInstanceOf[js.Any])
+      
+      inline def setSubmitErrorsUndefined: Self = StObject.set(x, "submitErrors", js.undefined)
       
       inline def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
       
@@ -781,7 +780,7 @@ object mod {
   
   type GetFieldValidator[FieldValue] = js.Function0[js.UndefOr[FieldValidator[FieldValue]]]
   
-  type GetIn_ = js.Function2[/* state */ js.Object, /* complexKey */ String, js.Any]
+  type GetIn_ = js.Function2[/* state */ js.Object, /* complexKey */ String, Any]
   
   trait InternalFieldState[FieldValue] extends StObject {
     
@@ -789,19 +788,19 @@ object mod {
     
     def blur(): Unit
     
-    def change(value: js.Any): Unit
+    def change(value: Any): Unit
     
     var data: AnyObject
     
     def focus(): Unit
     
-    def isEqual(a: js.Any, b: js.Any): Boolean
+    def isEqual(a: Any, b: Any): Boolean
     @JSName("isEqual")
     var isEqual_Original: IsEqual
     
     var lastFieldState: js.UndefOr[FieldState[FieldValue]] = js.undefined
     
-    var length: js.UndefOr[js.Any] = js.undefined
+    var length: js.UndefOr[Any] = js.undefined
     
     var modified: Boolean
     
@@ -826,10 +825,10 @@ object mod {
     inline def apply[FieldValue](
       active: Boolean,
       blur: () => Unit,
-      change: js.Any => Unit,
+      change: Any => Unit,
       data: AnyObject,
       focus: () => Unit,
-      isEqual: (/* a */ js.Any, /* b */ js.Any) => Boolean,
+      isEqual: (/* a */ Any, /* b */ Any) => Boolean,
       modified: Boolean,
       modifiedSinceLastSubmit: Boolean,
       name: String,
@@ -849,19 +848,19 @@ object mod {
       
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
-      inline def setChange(value: js.Any => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(value: Any => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setData(value: AnyObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      inline def setIsEqual(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
+      inline def setIsEqual(value: (/* a */ Any, /* b */ Any) => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
       
       inline def setLastFieldState(value: FieldState[FieldValue]): Self = StObject.set(x, "lastFieldState", value.asInstanceOf[js.Any])
       
       inline def setLastFieldStateUndefined: Self = StObject.set(x, "lastFieldState", js.undefined)
       
-      inline def setLength(value: js.Any): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Any): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
       inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
@@ -879,7 +878,7 @@ object mod {
       
       inline def setValidateFieldsUndefined: Self = StObject.set(x, "validateFields", js.undefined)
       
-      inline def setValidateFieldsVarargs(value: String*): Self = StObject.set(x, "validateFields", js.Array(value :_*))
+      inline def setValidateFieldsVarargs(value: String*): Self = StObject.set(x, "validateFields", js.Array(value*))
       
       inline def setValidating(value: Boolean): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
       
@@ -895,7 +894,7 @@ object mod {
     
     var dirtySinceLastSubmit: Boolean
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
     var errors: ValidationErrors
     
@@ -907,7 +906,9 @@ object mod {
     
     var pristine: Boolean
     
-    var submitError: js.UndefOr[js.Any] = js.undefined
+    var resetWhileSubmitting: Boolean
+    
+    var submitError: js.UndefOr[Any] = js.undefined
     
     var submitErrors: js.UndefOr[js.Object] = js.undefined
     
@@ -927,9 +928,9 @@ object mod {
     
     inline def apply(
       dirtySinceLastSubmit: Boolean,
-      errors: ValidationErrors,
       modifiedSinceLastSubmit: Boolean,
       pristine: Boolean,
+      resetWhileSubmitting: Boolean,
       submitFailed: Boolean,
       submitSucceeded: Boolean,
       submitting: Boolean,
@@ -937,7 +938,7 @@ object mod {
       validating: Double,
       values: js.Object
     ): InternalFormState = {
-      val __obj = js.Dynamic.literal(dirtySinceLastSubmit = dirtySinceLastSubmit.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], modifiedSinceLastSubmit = modifiedSinceLastSubmit.asInstanceOf[js.Any], pristine = pristine.asInstanceOf[js.Any], submitFailed = submitFailed.asInstanceOf[js.Any], submitSucceeded = submitSucceeded.asInstanceOf[js.Any], submitting = submitting.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], validating = validating.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(dirtySinceLastSubmit = dirtySinceLastSubmit.asInstanceOf[js.Any], modifiedSinceLastSubmit = modifiedSinceLastSubmit.asInstanceOf[js.Any], pristine = pristine.asInstanceOf[js.Any], resetWhileSubmitting = resetWhileSubmitting.asInstanceOf[js.Any], submitFailed = submitFailed.asInstanceOf[js.Any], submitSucceeded = submitSucceeded.asInstanceOf[js.Any], submitting = submitting.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], validating = validating.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[InternalFormState]
     }
     
@@ -949,11 +950,13 @@ object mod {
       
       inline def setDirtySinceLastSubmit(value: Boolean): Self = StObject.set(x, "dirtySinceLastSubmit", value.asInstanceOf[js.Any])
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       inline def setErrors(value: ValidationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
       inline def setInitialValues(value: js.Object): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
       
@@ -967,7 +970,9 @@ object mod {
       
       inline def setPristine(value: Boolean): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
       
-      inline def setSubmitError(value: js.Any): Self = StObject.set(x, "submitError", value.asInstanceOf[js.Any])
+      inline def setResetWhileSubmitting(value: Boolean): Self = StObject.set(x, "resetWhileSubmitting", value.asInstanceOf[js.Any])
+      
+      inline def setSubmitError(value: Any): Self = StObject.set(x, "submitError", value.asInstanceOf[js.Any])
       
       inline def setSubmitErrorUndefined: Self = StObject.set(x, "submitError", js.undefined)
       
@@ -989,13 +994,13 @@ object mod {
     }
   }
   
-  type IsEqual = js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]
+  type IsEqual = js.Function2[/* a */ Any, /* b */ Any, Boolean]
   
   trait MutableState[FormValues, InitialFormValues] extends StObject {
     
-    var fieldSubscribers: StringDictionary[Subscribers[FieldState[js.Any]]]
+    var fieldSubscribers: StringDictionary[Subscribers[FieldState[Any]]]
     
-    var fields: StringDictionary[InternalFieldState[js.Any]]
+    var fields: StringDictionary[InternalFieldState[Any]]
     
     var formState: InternalFormState
     
@@ -1004,8 +1009,8 @@ object mod {
   object MutableState {
     
     inline def apply[FormValues, InitialFormValues](
-      fieldSubscribers: StringDictionary[Subscribers[FieldState[js.Any]]],
-      fields: StringDictionary[InternalFieldState[js.Any]],
+      fieldSubscribers: StringDictionary[Subscribers[FieldState[Any]]],
+      fields: StringDictionary[InternalFieldState[Any]],
       formState: InternalFormState
     ): MutableState[FormValues, InitialFormValues] = {
       val __obj = js.Dynamic.literal(fieldSubscribers = fieldSubscribers.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], formState = formState.asInstanceOf[js.Any])
@@ -1014,9 +1019,9 @@ object mod {
     
     extension [Self <: MutableState[?, ?], FormValues, InitialFormValues](x: Self & (MutableState[FormValues, InitialFormValues])) {
       
-      inline def setFieldSubscribers(value: StringDictionary[Subscribers[FieldState[js.Any]]]): Self = StObject.set(x, "fieldSubscribers", value.asInstanceOf[js.Any])
+      inline def setFieldSubscribers(value: StringDictionary[Subscribers[FieldState[Any]]]): Self = StObject.set(x, "fieldSubscribers", value.asInstanceOf[js.Any])
       
-      inline def setFields(value: StringDictionary[InternalFieldState[js.Any]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: StringDictionary[InternalFieldState[Any]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       inline def setFormState(value: InternalFormState): Self = StObject.set(x, "formState", value.asInstanceOf[js.Any])
       
@@ -1027,10 +1032,10 @@ object mod {
   }
   
   type Mutator[FormValues, InitialFormValues] = js.Function3[
-    /* args */ js.Any, 
+    /* args */ Any, 
     /* state */ MutableState[FormValues, InitialFormValues], 
     /* tools */ Tools[FormValues, InitialFormValues], 
-    js.Any
+    Any
   ]
   
   type RegisterField[FormValues] = js.Function4[
@@ -1054,9 +1059,9 @@ object mod {
     Unit
   ]
   
-  type SetIn_ = js.Function3[/* state */ js.Object, /* key */ String, /* value */ js.Any, js.Object]
+  type SetIn_ = js.Function3[/* state */ js.Object, /* key */ String, /* value */ Any, js.Object]
   
-  type SubmissionErrors = AnyObject
+  type SubmissionErrors = js.UndefOr[AnyObject]
   
   type Subscriber[V] = js.Function1[/* value */ V, Unit]
   
@@ -1088,12 +1093,12 @@ object mod {
     def changeValue(
       state: MutableState[FormValues, InitialFormValues],
       name: String,
-      mutate: js.Function1[/* value */ js.Any, js.Any]
+      mutate: js.Function1[/* value */ Any, Any]
     ): Unit
     @JSName("changeValue")
     var changeValue_Original: ChangeValue[FormValues, InitialFormValues]
     
-    def getIn(state: js.Object, complexKey: String): js.Any
+    def getIn(state: js.Object, complexKey: String): Any
     @JSName("getIn")
     var getIn_Original: GetIn_
     
@@ -1103,23 +1108,23 @@ object mod {
     
     def resetFieldState(name: String): Unit
     
-    def setIn(state: js.Object, key: String, value: js.Any): js.Object
+    def setIn(state: js.Object, key: String, value: Any): js.Object
     @JSName("setIn")
     var setIn_Original: SetIn_
     
-    def shallowEqual(a: js.Any, b: js.Any): Boolean
+    def shallowEqual(a: Any, b: Any): Boolean
     @JSName("shallowEqual")
     var shallowEqual_Original: IsEqual
   }
   object Tools {
     
     inline def apply[FormValues, InitialFormValues](
-      changeValue: (/* state */ MutableState[FormValues, InitialFormValues], /* name */ String, /* mutate */ js.Function1[/* value */ js.Any, js.Any]) => Unit,
-      getIn: (/* state */ js.Object, /* complexKey */ String) => js.Any,
+      changeValue: (/* state */ MutableState[FormValues, InitialFormValues], /* name */ String, /* mutate */ js.Function1[/* value */ Any, Any]) => Unit,
+      getIn: (/* state */ js.Object, /* complexKey */ String) => Any,
       renameField: (/* state */ MutableState[FormValues, InitialFormValues], /* from */ String, /* to */ String) => Unit,
       resetFieldState: String => Unit,
-      setIn: (/* state */ js.Object, /* key */ String, /* value */ js.Any) => js.Object,
-      shallowEqual: (/* a */ js.Any, /* b */ js.Any) => Boolean
+      setIn: (/* state */ js.Object, /* key */ String, /* value */ Any) => js.Object,
+      shallowEqual: (/* a */ Any, /* b */ Any) => Boolean
     ): Tools[FormValues, InitialFormValues] = {
       val __obj = js.Dynamic.literal(changeValue = js.Any.fromFunction3(changeValue), getIn = js.Any.fromFunction2(getIn), renameField = js.Any.fromFunction3(renameField), resetFieldState = js.Any.fromFunction1(resetFieldState), setIn = js.Any.fromFunction3(setIn), shallowEqual = js.Any.fromFunction2(shallowEqual))
       __obj.asInstanceOf[Tools[FormValues, InitialFormValues]]
@@ -1128,10 +1133,10 @@ object mod {
     extension [Self <: Tools[?, ?], FormValues, InitialFormValues](x: Self & (Tools[FormValues, InitialFormValues])) {
       
       inline def setChangeValue(
-        value: (/* state */ MutableState[FormValues, InitialFormValues], /* name */ String, /* mutate */ js.Function1[/* value */ js.Any, js.Any]) => Unit
+        value: (/* state */ MutableState[FormValues, InitialFormValues], /* name */ String, /* mutate */ js.Function1[/* value */ Any, Any]) => Unit
       ): Self = StObject.set(x, "changeValue", js.Any.fromFunction3(value))
       
-      inline def setGetIn(value: (/* state */ js.Object, /* complexKey */ String) => js.Any): Self = StObject.set(x, "getIn", js.Any.fromFunction2(value))
+      inline def setGetIn(value: (/* state */ js.Object, /* complexKey */ String) => Any): Self = StObject.set(x, "getIn", js.Any.fromFunction2(value))
       
       inline def setRenameField(
         value: (/* state */ MutableState[FormValues, InitialFormValues], /* from */ String, /* to */ String) => Unit
@@ -1139,13 +1144,13 @@ object mod {
       
       inline def setResetFieldState(value: String => Unit): Self = StObject.set(x, "resetFieldState", js.Any.fromFunction1(value))
       
-      inline def setSetIn(value: (/* state */ js.Object, /* key */ String, /* value */ js.Any) => js.Object): Self = StObject.set(x, "setIn", js.Any.fromFunction3(value))
+      inline def setSetIn(value: (/* state */ js.Object, /* key */ String, /* value */ Any) => js.Object): Self = StObject.set(x, "setIn", js.Any.fromFunction3(value))
       
-      inline def setShallowEqual(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "shallowEqual", js.Any.fromFunction2(value))
+      inline def setShallowEqual(value: (/* a */ Any, /* b */ Any) => Boolean): Self = StObject.set(x, "shallowEqual", js.Any.fromFunction2(value))
     }
   }
   
   type Unsubscribe = js.Function0[Unit]
   
-  type ValidationErrors = AnyObject
+  type ValidationErrors = js.UndefOr[AnyObject]
 }

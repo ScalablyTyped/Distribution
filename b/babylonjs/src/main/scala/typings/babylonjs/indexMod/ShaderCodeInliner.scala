@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "ShaderCodeInliner")
 @js.native
-class ShaderCodeInliner protected ()
+open class ShaderCodeInliner protected ()
   extends typings.babylonjs.enginesIndexMod.ShaderCodeInliner {
   /**
     * Initializes the inliner
@@ -21,5 +21,5 @@ object ShaderCodeInliner {
   
   @JSImport("babylonjs/index", "ShaderCodeInliner._RegexpFindFunctionNameAndType")
   @js.native
-  val _RegexpFindFunctionNameAndType: js.Any = js.native
+  val _RegexpFindFunctionNameAndType: Any = js.native
 }

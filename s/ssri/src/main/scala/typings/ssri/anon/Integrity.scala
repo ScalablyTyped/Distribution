@@ -35,7 +35,7 @@ object Integrity {
     
     inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
     
-    inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+    inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value*))
     
     inline def setIntegrity(value: String | IntegrityLike | HashLike): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
     
@@ -45,7 +45,7 @@ object Integrity {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPickAlgorithm(value: (/* algo1 */ String, /* algo2 */ String) => String): Self = StObject.set(x, "pickAlgorithm", js.Any.fromFunction2(value))
     

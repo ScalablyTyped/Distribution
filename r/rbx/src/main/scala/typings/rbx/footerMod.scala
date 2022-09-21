@@ -11,5 +11,5 @@ object footerMod {
   
   @JSImport("rbx/layout/footer", "Footer")
   @js.native
-  val Footer: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Footer: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
 }

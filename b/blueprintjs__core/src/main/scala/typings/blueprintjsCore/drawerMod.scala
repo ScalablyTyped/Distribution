@@ -6,7 +6,7 @@ import typings.blueprintjsCore.overlayMod.IOverlayableProps
 import typings.blueprintjsCore.positionMod.Position
 import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsIcons.iconNameMod.IconName
+import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -17,14 +17,14 @@ object drawerMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/drawer/drawer", "Drawer")
   @js.native
-  class Drawer protected ()
-    extends AbstractPureComponent2[IDrawerProps, js.Object, js.Object] {
-    def this(props: IDrawerProps) = this()
-    def this(props: IDrawerProps, context: js.Any) = this()
+  open class Drawer protected ()
+    extends AbstractPureComponent2[DrawerProps, js.Object, js.Object] {
+    def this(props: DrawerProps) = this()
+    def this(props: DrawerProps, context: Any) = this()
     
-    /* private */ var maybeRenderCloseButton: js.Any = js.native
+    /* private */ var maybeRenderCloseButton: Any = js.native
     
-    /* private */ var maybeRenderHeader: js.Any = js.native
+    /* private */ var maybeRenderHeader: Any = js.native
   }
   /* static members */
   object Drawer {
@@ -33,22 +33,10 @@ object drawerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@blueprintjs/core/lib/esm/components/drawer/drawer", "Drawer.SIZE_LARGE")
-    @js.native
-    val SIZE_LARGE: /* "90%" */ String = js.native
-    
-    @JSImport("@blueprintjs/core/lib/esm/components/drawer/drawer", "Drawer.SIZE_SMALL")
-    @js.native
-    val SIZE_SMALL: /* "360px" */ String = js.native
-    
-    @JSImport("@blueprintjs/core/lib/esm/components/drawer/drawer", "Drawer.SIZE_STANDARD")
-    @js.native
-    val SIZE_STANDARD: /* "50%" */ String = js.native
-    
     @JSImport("@blueprintjs/core/lib/esm/components/drawer/drawer", "Drawer.defaultProps")
     @js.native
-    def defaultProps: IDrawerProps = js.native
-    inline def defaultProps_=(x: IDrawerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: DrawerProps = js.native
+    inline def defaultProps_=(x: DrawerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/drawer/drawer", "Drawer.displayName")
     @js.native
@@ -56,22 +44,56 @@ object drawerMod {
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
+  @js.native
+  sealed trait DrawerSize extends StObject
+  @JSImport("@blueprintjs/core/lib/esm/components/drawer/drawer", "DrawerSize")
+  @js.native
+  object DrawerSize extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[DrawerSize & String] = js.native
+    
+    @js.native
+    sealed trait LARGE
+      extends StObject
+         with DrawerSize
+    /* "90%" */ val LARGE: typings.blueprintjsCore.drawerMod.DrawerSize.LARGE & String = js.native
+    
+    @js.native
+    sealed trait SMALL
+      extends StObject
+         with DrawerSize
+    /* "360px" */ val SMALL: typings.blueprintjsCore.drawerMod.DrawerSize.SMALL & String = js.native
+    
+    @js.native
+    sealed trait STANDARD
+      extends StObject
+         with DrawerSize
+    /* "50%" */ val STANDARD: typings.blueprintjsCore.drawerMod.DrawerSize.STANDARD & String = js.native
+  }
+  
+  type DrawerProps = IDrawerProps
+  
   trait IDrawerProps
     extends StObject
        with IOverlayableProps
        with IBackdropProps
        with IProps {
     
+    /** Drawer contents. */
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /**
       * Name of a Blueprint UI icon (or an icon element) to render in the
       * drawer's header. Note that the header will only be rendered if `title` is
       * provided.
       */
-    var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
+    var icon: js.UndefOr[BlueprintIcons16Id | MaybeElement] = js.undefined
     
     /**
       * Whether to show the close button in the dialog's header.
       * Note that the header will only be rendered if `title` is provided.
+      *
       * @default true
       */
     var isCloseButtonShown: js.UndefOr[Boolean] = js.undefined
@@ -85,25 +107,27 @@ object drawerMod {
     /**
       * Position of a drawer. All angled positions will be casted into pure positions
       * (TOP, BOTTOM, LEFT or RIGHT).
+      *
       * @default Position.RIGHT
       */
     var position: js.UndefOr[Position] = js.undefined
     
     /**
-      * CSS size of the drawer. This sets `width` if `vertical={false}` (default)
+      * CSS size of the drawer. This sets `width` if horizontal position (default)
       * and `height` otherwise.
       *
       * Constants are available for common sizes:
-      * - `Drawer.SIZE_SMALL = 360px`
-      * - `Drawer.SIZE_STANDARD = 50%`
-      * - `Drawer.SIZE_LARGE = 90%`
+      * - `DrawerSize.SMALL = 360px`
+      * - `DrawerSize.STANDARD = 50%`
+      * - `DrawerSize.LARGE = 90%`
       *
-      * @default Drawer.SIZE_STANDARD = "50%"
+      * @default DrawerSize.STANDARD = "50%"
       */
     var size: js.UndefOr[Double | String] = js.undefined
     
     /**
       * CSS styles to apply to the dialog.
+      *
       * @default {}
       */
     var style: js.UndefOr[CSSProperties] = js.undefined
@@ -119,14 +143,6 @@ object drawerMod {
       * name here will require defining new CSS transition properties.
       */
     var transitionName: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Whether the drawer should appear with vertical styling.
-      * It will be ignored if `position` prop is set
-      * @default false
-      * @deprecated use `position` instead
-      */
-    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object IDrawerProps {
     
@@ -137,7 +153,11 @@ object drawerMod {
     
     extension [Self <: IDrawerProps](x: Self) {
       
-      inline def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setIcon(value: BlueprintIcons16Id | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconNull: Self = StObject.set(x, "icon", null)
       
@@ -168,10 +188,6 @@ object drawerMod {
       inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
       
       inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
-      
-      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
-      
-      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
 }

@@ -2,7 +2,7 @@ package typings.antDesignReactNative
 
 import typings.antDesignReactNative.anon.ActionTextUnderlayColor
 import typings.antDesignReactNative.anon.DefaultProps
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,36 +14,36 @@ object popupMixinMod {
   val ^ : js.Any = js.native
   
   inline def default(
-    getModal: js.Function3[/* props */ js.Any, /* visible */ js.Any, /* args */ Args, Element],
+    getModal: js.Function3[/* props */ Any, /* visible */ Any, /* args */ Args, ReactNode],
     platformProps: ActionTextUnderlayColor
   ): DefaultProps = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(getModal.asInstanceOf[js.Any], platformProps.asInstanceOf[js.Any])).asInstanceOf[DefaultProps]
   
   trait Args extends StObject {
     
-    var getContent: js.Any
+    var getContent: Any
     
-    var hide: js.Any
+    var hide: Any
     
-    var onDismiss: js.Any
+    var onDismiss: Any
     
-    var onOk: js.Any
+    var onOk: Any
   }
   object Args {
     
-    inline def apply(getContent: js.Any, hide: js.Any, onDismiss: js.Any, onOk: js.Any): Args = {
+    inline def apply(getContent: Any, hide: Any, onDismiss: Any, onOk: Any): Args = {
       val __obj = js.Dynamic.literal(getContent = getContent.asInstanceOf[js.Any], hide = hide.asInstanceOf[js.Any], onDismiss = onDismiss.asInstanceOf[js.Any], onOk = onOk.asInstanceOf[js.Any])
       __obj.asInstanceOf[Args]
     }
     
     extension [Self <: Args](x: Self) {
       
-      inline def setGetContent(value: js.Any): Self = StObject.set(x, "getContent", value.asInstanceOf[js.Any])
+      inline def setGetContent(value: Any): Self = StObject.set(x, "getContent", value.asInstanceOf[js.Any])
       
-      inline def setHide(value: js.Any): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+      inline def setHide(value: Any): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
-      inline def setOnDismiss(value: js.Any): Self = StObject.set(x, "onDismiss", value.asInstanceOf[js.Any])
+      inline def setOnDismiss(value: Any): Self = StObject.set(x, "onDismiss", value.asInstanceOf[js.Any])
       
-      inline def setOnOk(value: js.Any): Self = StObject.set(x, "onOk", value.asInstanceOf[js.Any])
+      inline def setOnOk(value: Any): Self = StObject.set(x, "onOk", value.asInstanceOf[js.Any])
     }
   }
 }

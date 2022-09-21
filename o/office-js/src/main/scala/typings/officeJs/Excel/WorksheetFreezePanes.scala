@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @js.native
@@ -23,15 +24,17 @@ trait WorksheetFreezePanes
     * Sets the frozen cells in the active worksheet view.
     The range provided corresponds to cells that will be frozen in the top- and left-most pane.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
-    * @param frozenRange A range that represents the cells to be frozen, or null to remove all frozen panes.
+    * @param frozenRange A range that represents the cells to be frozen, or `null` to remove all frozen panes.
     */
   def freezeAt(frozenRange: Range): Unit = js.native
   
   /**
-    * Freeze the first column or columns of the worksheet in place.
+    * Freeze the first column or columns of the worksheet in place.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
     * @param count Optional number of columns to freeze, or zero to unfreeze all columns
@@ -40,8 +43,9 @@ trait WorksheetFreezePanes
   def freezeColumns(count: Double): Unit = js.native
   
   /**
-    * Freeze the top row or rows of the worksheet in place.
+    * Freeze the top row or rows of the worksheet in place.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
     * @param count Optional number of rows to freeze, or zero to unfreeze all rows
@@ -51,17 +55,20 @@ trait WorksheetFreezePanes
   
   /**
     * Gets a range that describes the frozen cells in the active worksheet view.
-    The frozen range is corresponds to cells that are frozen in the top- and left-most pane.
+    The frozen range corresponds to cells that are frozen in the top- and left-most pane.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   def getLocation(): Range = js.native
   
   /**
     * Gets a range that describes the frozen cells in the active worksheet view.
-    The frozen range is corresponds to cells that are frozen in the top- and left-most pane.
-    If there is no frozen pane, returns a null object.
+    The frozen range corresponds to cells that are frozen in the top- and left-most pane.
+    If there is no frozen pane, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   def getLocationOrNullObject(): Range = js.native
@@ -75,6 +82,7 @@ trait WorksheetFreezePanes
   /**
     * Removes all frozen panes in the worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   def unfreeze(): Unit = js.native

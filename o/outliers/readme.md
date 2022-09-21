@@ -10,10 +10,10 @@ find outliers in a dataset
 | ------------------ | :-------------: |
 | Full name          | outliers |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 31724 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3118.0 |
+| # stars            | 52.0 |
 
 ## Links
 - [Homepage](https://github.com/MatthewMueller/outliers)

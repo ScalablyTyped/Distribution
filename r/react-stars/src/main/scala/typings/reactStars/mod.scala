@@ -9,10 +9,10 @@ object mod {
   
   @JSImport("react-stars", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ReactStarsProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ReactStarsProps, js.Object, Any]
   
-  type ReactStars = Component[ReactStarsProps, js.Object, js.Any]
+  type ReactStars = Component[ReactStarsProps, js.Object, Any]
   
   trait ReactStarsProps extends StObject {
     

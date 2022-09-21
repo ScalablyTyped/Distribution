@@ -11,5 +11,5 @@ object marginMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Styles]
 }

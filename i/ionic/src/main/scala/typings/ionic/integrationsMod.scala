@@ -10,7 +10,7 @@ object integrationsMod {
   
   @JSImport("ionic/commands/integrations", "IntegrationsNamespace")
   @js.native
-  class IntegrationsNamespace () extends Namespace {
+  open class IntegrationsNamespace () extends Namespace {
     def this(parent: INamespace) = this()
   }
 }

@@ -29,7 +29,7 @@ object ValidationError {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: validationMessage*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: validationMessage*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setId(value: id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

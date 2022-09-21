@@ -1,5 +1,8 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.auto
+import typings.arcgisJsApi.arcgisJsApiStrings.high
+import typings.arcgisJsApi.arcgisJsApiStrings.low
 import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -18,7 +21,7 @@ trait configRequest
   var httpsDomains: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * **Since:** 4.8 Allows developers to modify requests before or after they are sent.
+    * **Since:** 4.8  Allows developers to modify requests before or after they are sent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
     */
@@ -27,9 +30,20 @@ trait configRequest
   /**
     * Maximum number of characters allowed in the URL for HTTP GET requests made by [request](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html).
     *
+    * @default 2000
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
     */
   var maxUrlLength: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * **Since:** 4.24  The fetch and image network request priority.
+    *
+    * @default high
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
+    */
+  var priority: js.UndefOr[auto | high | low] = js.undefined
   
   /**
     * A proxy rule defines a proxy for a set of resources with an identical URL prefix.
@@ -48,19 +62,23 @@ trait configRequest
   /**
     * Number of milliseconds [request](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html) will wait for response from a server.
     *
+    * @default 60000
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
     */
   var timeout: js.UndefOr[Double] = js.undefined
   
   /**
-    * **Since:** 4.9 Indicates whether cross origin requests made to the associated server should include credentials such as cookies and authorization headers.
+    * **Since:** 4.9  Indicates whether cross origin requests made to the associated server should include credentials such as cookies and authorization headers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
     */
   var trustedServers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * **Since:** 4.5 Indicates whether `esri/request` will request a credential from `IdentityManager`.
+    * **Since:** 4.5  Indicates whether `esri/request` will request a credential from `IdentityManager`.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
     */
@@ -83,23 +101,27 @@ object configRequest {
     
     inline def setHttpsDomainsUndefined: Self = StObject.set(x, "httpsDomains", js.undefined)
     
-    inline def setHttpsDomainsVarargs(value: String*): Self = StObject.set(x, "httpsDomains", js.Array(value :_*))
+    inline def setHttpsDomainsVarargs(value: String*): Self = StObject.set(x, "httpsDomains", js.Array(value*))
     
     inline def setInterceptors(value: js.Array[RequestInterceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
     
     inline def setInterceptorsUndefined: Self = StObject.set(x, "interceptors", js.undefined)
     
-    inline def setInterceptorsVarargs(value: RequestInterceptor*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
+    inline def setInterceptorsVarargs(value: RequestInterceptor*): Self = StObject.set(x, "interceptors", js.Array(value*))
     
     inline def setMaxUrlLength(value: Double): Self = StObject.set(x, "maxUrlLength", value.asInstanceOf[js.Any])
     
     inline def setMaxUrlLengthUndefined: Self = StObject.set(x, "maxUrlLength", js.undefined)
     
+    inline def setPriority(value: auto | high | low): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    
     inline def setProxyRules(value: js.Array[configRequestProxyRules]): Self = StObject.set(x, "proxyRules", value.asInstanceOf[js.Any])
     
     inline def setProxyRulesUndefined: Self = StObject.set(x, "proxyRules", js.undefined)
     
-    inline def setProxyRulesVarargs(value: configRequestProxyRules*): Self = StObject.set(x, "proxyRules", js.Array(value :_*))
+    inline def setProxyRulesVarargs(value: configRequestProxyRules*): Self = StObject.set(x, "proxyRules", js.Array(value*))
     
     inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
     
@@ -113,7 +135,7 @@ object configRequest {
     
     inline def setTrustedServersUndefined: Self = StObject.set(x, "trustedServers", js.undefined)
     
-    inline def setTrustedServersVarargs(value: String*): Self = StObject.set(x, "trustedServers", js.Array(value :_*))
+    inline def setTrustedServersVarargs(value: String*): Self = StObject.set(x, "trustedServers", js.Array(value*))
     
     inline def setUseIdentity(value: Boolean): Self = StObject.set(x, "useIdentity", value.asInstanceOf[js.Any])
     

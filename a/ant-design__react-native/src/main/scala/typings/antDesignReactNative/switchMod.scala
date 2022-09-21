@@ -1,41 +1,26 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.switchPropsTypeMod.SwitchPropsType
+import typings.antDesignReactNative.switchSwitchMod.SwitchProps
 import typings.react.mod.global.JSX.Element
-import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object switchMod {
   
-  @JSImport("@ant-design/react-native/lib/switch", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def default(props: AntmSwitchProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-  
-  trait AntmSwitchProps
-    extends StObject
-       with SwitchPropsType {
+  object default {
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  }
-  object AntmSwitchProps {
+    inline def apply(
+      hasPrefixClsCheckedDefaultCheckedDisabledColorLoadingCheckedChildrenUnCheckedChildrenOnPressOnChangeTrackColorThumbColorThumbTintColorRestProps: SwitchProps
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasPrefixClsCheckedDefaultCheckedDisabledColorLoadingCheckedChildrenUnCheckedChildrenOnPressOnChangeTrackColorThumbColorThumbTintColorRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def apply(): AntmSwitchProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AntmSwitchProps]
-    }
+    @JSImport("@ant-design/react-native/lib/switch", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: AntmSwitchProps](x: Self) {
-      
-      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-      
-      inline def setStyleNull: Self = StObject.set(x, "style", null)
-      
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
-    }
+    @JSImport("@ant-design/react-native/lib/switch", "default.displayName")
+    @js.native
+    def displayName: String = js.native
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
 }

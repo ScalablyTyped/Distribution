@@ -7,7 +7,6 @@ import typings.rsocketTypes.reactiveSocketTypesMod.DuplexConnection
 import typings.rsocketTypes.reactiveSocketTypesMod.Payload
 import typings.rsocketTypes.reactiveSocketTypesMod.ReactiveSocket
 import typings.rsocketTypes.reactiveSocketTypesMod.Responder
-import typings.std.Error
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +16,7 @@ object rsocketserverMod {
   
   @JSImport("rsocket-core/RSocketServer", JSImport.Default)
   @js.native
-  class default[D, M] protected ()
+  open class default[D, M] protected ()
     extends StObject
        with RSocketServer[D, M] {
     def this(config: ServerConfig[D, M]) = this()
@@ -52,11 +51,11 @@ object rsocketserverMod {
   
   trait ServerConfig[D, M] extends StObject {
     
-    var errorHandler: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
+    var errorHandler: js.UndefOr[js.Function1[/* e */ js.Error, Unit]] = js.undefined
     
     def getRequestHandler(socket: ReactiveSocket[D, M], payload: Payload[D, M]): Partial[Responder[D, M]]
     
-    var leases: js.UndefOr[js.Function0[Leases[js.Any]]] = js.undefined
+    var leases: js.UndefOr[js.Function0[Leases[Any]]] = js.undefined
     
     var serializers: js.UndefOr[PayloadSerializers[D, M]] = js.undefined
     
@@ -74,13 +73,13 @@ object rsocketserverMod {
     
     extension [Self <: ServerConfig[?, ?], D, M](x: Self & (ServerConfig[D, M])) {
       
-      inline def setErrorHandler(value: /* e */ Error => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+      inline def setErrorHandler(value: /* e */ js.Error => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
       
       inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
       inline def setGetRequestHandler(value: (ReactiveSocket[D, M], Payload[D, M]) => Partial[Responder[D, M]]): Self = StObject.set(x, "getRequestHandler", js.Any.fromFunction2(value))
       
-      inline def setLeases(value: () => Leases[js.Any]): Self = StObject.set(x, "leases", js.Any.fromFunction0(value))
+      inline def setLeases(value: () => Leases[Any]): Self = StObject.set(x, "leases", js.Any.fromFunction0(value))
       
       inline def setLeasesUndefined: Self = StObject.set(x, "leases", js.undefined)
       

@@ -30,7 +30,7 @@ trait GenericResource extends Resource {
   /**
     * The resource properties.
     */
-  var properties: js.UndefOr[js.Any] = js.native
+  var properties: js.UndefOr[Any] = js.native
   
   /**
     * The SKU of the resource.

@@ -1,6 +1,5 @@
 package typings.jestChangedFiles
 
-import typings.jestTypes.configMod.Path
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,7 +34,7 @@ object typesMod {
     
     var changedSince: js.UndefOr[String] = js.undefined
     
-    var includePaths: js.UndefOr[js.Array[Path]] = js.undefined
+    var includePaths: js.UndefOr[js.Array[String]] = js.undefined
     
     var lastCommit: js.UndefOr[Boolean] = js.undefined
     
@@ -54,11 +53,11 @@ object typesMod {
       
       inline def setChangedSinceUndefined: Self = StObject.set(x, "changedSince", js.undefined)
       
-      inline def setIncludePaths(value: js.Array[Path]): Self = StObject.set(x, "includePaths", value.asInstanceOf[js.Any])
+      inline def setIncludePaths(value: js.Array[String]): Self = StObject.set(x, "includePaths", value.asInstanceOf[js.Any])
       
       inline def setIncludePathsUndefined: Self = StObject.set(x, "includePaths", js.undefined)
       
-      inline def setIncludePathsVarargs(value: Path*): Self = StObject.set(x, "includePaths", js.Array(value :_*))
+      inline def setIncludePathsVarargs(value: String*): Self = StObject.set(x, "includePaths", js.Array(value*))
       
       inline def setLastCommit(value: Boolean): Self = StObject.set(x, "lastCommit", value.asInstanceOf[js.Any])
       
@@ -70,7 +69,7 @@ object typesMod {
     }
   }
   
-  type Paths = Set[Path]
+  type Paths = Set[String]
   
   trait Repos extends StObject {
     
@@ -95,15 +94,15 @@ object typesMod {
   
   trait SCMAdapter extends StObject {
     
-    def findChangedFiles(cwd: Path, options: Options): js.Promise[js.Array[Path]]
+    def findChangedFiles(cwd: String, options: Options): js.Promise[js.Array[String]]
     
-    def getRoot(cwd: Path): js.Promise[Path | Null]
+    def getRoot(cwd: String): js.Promise[String | Null]
   }
   object SCMAdapter {
     
     inline def apply(
-      findChangedFiles: (Path, Options) => js.Promise[js.Array[Path]],
-      getRoot: Path => js.Promise[Path | Null]
+      findChangedFiles: (String, Options) => js.Promise[js.Array[String]],
+      getRoot: String => js.Promise[String | Null]
     ): SCMAdapter = {
       val __obj = js.Dynamic.literal(findChangedFiles = js.Any.fromFunction2(findChangedFiles), getRoot = js.Any.fromFunction1(getRoot))
       __obj.asInstanceOf[SCMAdapter]
@@ -111,9 +110,9 @@ object typesMod {
     
     extension [Self <: SCMAdapter](x: Self) {
       
-      inline def setFindChangedFiles(value: (Path, Options) => js.Promise[js.Array[Path]]): Self = StObject.set(x, "findChangedFiles", js.Any.fromFunction2(value))
+      inline def setFindChangedFiles(value: (String, Options) => js.Promise[js.Array[String]]): Self = StObject.set(x, "findChangedFiles", js.Any.fromFunction2(value))
       
-      inline def setGetRoot(value: Path => js.Promise[Path | Null]): Self = StObject.set(x, "getRoot", js.Any.fromFunction1(value))
+      inline def setGetRoot(value: String => js.Promise[String | Null]): Self = StObject.set(x, "getRoot", js.Any.fromFunction1(value))
     }
   }
 }

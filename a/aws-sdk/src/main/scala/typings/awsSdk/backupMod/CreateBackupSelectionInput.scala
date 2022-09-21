@@ -17,7 +17,7 @@ trait CreateBackupSelectionInput extends StObject {
   var BackupSelection: typings.awsSdk.backupMod.BackupSelection
   
   /**
-    * A unique string that identifies the request and allows failed requests to be retried without the risk of running the operation twice.
+    * A unique string that identifies the request and allows failed requests to be retried without the risk of running the operation twice. This parameter is optional. If used, this parameter must contain 1 to 50 alphanumeric or '-_.' characters.
     */
   var CreatorRequestId: js.UndefOr[String] = js.undefined
 }

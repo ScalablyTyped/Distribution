@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Script extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -23,16 +23,16 @@ trait Script extends StObject {
   /* private */ @JSName("Office.Script_typekey")
   var OfficeDotScript_typekey: Script
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ScriptText: String
   
-  val Shape: js.Any
+  val Shape: Any
 }
 object Script {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     Delete: () => Unit,
     Extended: String,
@@ -40,9 +40,9 @@ object Script {
     Language: MsoScriptLanguage,
     Location: MsoScriptLocation,
     OfficeDotScript_typekey: Script,
-    Parent: js.Any,
+    Parent: Any,
     ScriptText: String,
-    Shape: js.Any
+    Shape: Any
   ): Script = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Extended = Extended.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Language = Language.asInstanceOf[js.Any], Location = Location.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], ScriptText = ScriptText.asInstanceOf[js.Any], Shape = Shape.asInstanceOf[js.Any])
     __obj.updateDynamic("Office.Script_typekey")(OfficeDotScript_typekey.asInstanceOf[js.Any])
@@ -51,7 +51,7 @@ object Script {
   
   extension [Self <: Script](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -67,10 +67,10 @@ object Script {
     
     inline def setOfficeDotScript_typekey(value: Script): Self = StObject.set(x, "Office.Script_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setScriptText(value: String): Self = StObject.set(x, "ScriptText", value.asInstanceOf[js.Any])
     
-    inline def setShape(value: js.Any): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: Any): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
   }
 }

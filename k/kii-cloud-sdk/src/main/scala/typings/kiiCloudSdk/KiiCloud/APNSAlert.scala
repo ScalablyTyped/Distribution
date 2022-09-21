@@ -54,7 +54,7 @@ object APNSAlert {
     
     inline def `setLoc-args`(value: js.Array[String]): Self = StObject.set(x, "loc-args", value.asInstanceOf[js.Any])
     
-    inline def `setLoc-argsVarargs`(value: String*): Self = StObject.set(x, "loc-args", js.Array(value :_*))
+    inline def `setLoc-argsVarargs`(value: String*): Self = StObject.set(x, "loc-args", js.Array(value*))
     
     inline def `setLoc-key`(value: String): Self = StObject.set(x, "loc-key", value.asInstanceOf[js.Any])
     
@@ -62,7 +62,7 @@ object APNSAlert {
     
     inline def `setTitle-loc-args`(value: js.Array[String]): Self = StObject.set(x, "title-loc-args", value.asInstanceOf[js.Any])
     
-    inline def `setTitle-loc-argsVarargs`(value: String*): Self = StObject.set(x, "title-loc-args", js.Array(value :_*))
+    inline def `setTitle-loc-argsVarargs`(value: String*): Self = StObject.set(x, "title-loc-args", js.Array(value*))
     
     inline def `setTitle-loc-key`(value: String): Self = StObject.set(x, "title-loc-key", value.asInstanceOf[js.Any])
   }

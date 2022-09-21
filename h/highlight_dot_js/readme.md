@@ -1,7 +1,7 @@
 
 # Scala.js typings for highlight_dot_js
 
-Typings are for version 10.4.0
+Typings are for version 11.6.0
 
 ## Library description:
 Syntax highlighting with language autodetection.
@@ -10,10 +10,10 @@ Syntax highlighting with language autodetection.
 | ------------------ | :-------------: |
 | Full name          | highlight.js |
 | Keywords           | highlight, syntax |
-| # releases         | 36 |
-| # dependents       | 2708 |
-| # downloads        | 214357709 |
-| # stars            | 82 |
+| # releases         | 33 |
+| # dependents       | 0.0 |
+| # downloads        | 3.4253186666666664E7 |
+| # stars            | 20187.0 |
 
 ## Links
 - [Homepage](https://highlightjs.org/)

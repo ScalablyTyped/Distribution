@@ -14,6 +14,11 @@ object nsisOptionsMod {
   trait CommonNsisOptions extends StObject {
     
     /**
+      * Allows you to provide your own `makensis`, such as one with support for debug logging via LogSet and LogText. (Logging also requires option `debugLogging = true`)
+      */
+    val customNsisBinary: js.UndefOr[CustomNsisBinary | Null] = js.undefined
+    
+    /**
       * See [GUID vs Application Name](../configuration/nsis#guid-vs-application-name).
       */
     val guid: js.UndefOr[String | Null] = js.undefined
@@ -45,6 +50,12 @@ object nsisOptionsMod {
     
     extension [Self <: CommonNsisOptions](x: Self) {
       
+      inline def setCustomNsisBinary(value: CustomNsisBinary): Self = StObject.set(x, "customNsisBinary", value.asInstanceOf[js.Any])
+      
+      inline def setCustomNsisBinaryNull: Self = StObject.set(x, "customNsisBinary", null)
+      
+      inline def setCustomNsisBinaryUndefined: Self = StObject.set(x, "customNsisBinary", js.undefined)
+      
       inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
       
       inline def setGuidNull: Self = StObject.set(x, "guid", null)
@@ -62,6 +73,64 @@ object nsisOptionsMod {
       inline def setWarningsAsErrors(value: Boolean): Self = StObject.set(x, "warningsAsErrors", value.asInstanceOf[js.Any])
       
       inline def setWarningsAsErrorsUndefined: Self = StObject.set(x, "warningsAsErrors", js.undefined)
+    }
+  }
+  
+  trait CustomNsisBinary extends StObject {
+    
+    /**
+      * @default VKMiizYdmNdJOWpRGz4trl4lD++BvYP2irAXpMilheUP0pc93iKlWAoP843Vlraj8YG19CVn0j+dCo/hURz9+Q==
+      */
+    val checksum: js.UndefOr[String | Null] = js.undefined
+    
+    /**
+      * Whether or not to enable NSIS logging for debugging.
+      * Note: Requires a debug-enabled NSIS build.
+      * electron-builder's included `makensis` does not natively support debug-enabled NSIS installers currently, you must supply your own via `customNsisBinary?: CustomNsisBinary`
+      * In your custom nsis scripts, you can leverage this functionality via `LogSet` and `LogText`
+      */
+    val debugLogging: js.UndefOr[Boolean | Null] = js.undefined
+    
+    /**
+      * @default https://github.com/electron-userland/electron-builder-binaries/releases/download
+      */
+    val url: String | Null
+    
+    /**
+      * @default 3.0.4.1
+      */
+    val version: js.UndefOr[String | Null] = js.undefined
+  }
+  object CustomNsisBinary {
+    
+    inline def apply(): CustomNsisBinary = {
+      val __obj = js.Dynamic.literal(url = null)
+      __obj.asInstanceOf[CustomNsisBinary]
+    }
+    
+    extension [Self <: CustomNsisBinary](x: Self) {
+      
+      inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+      
+      inline def setChecksumNull: Self = StObject.set(x, "checksum", null)
+      
+      inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+      
+      inline def setDebugLogging(value: Boolean): Self = StObject.set(x, "debugLogging", value.asInstanceOf[js.Any])
+      
+      inline def setDebugLoggingNull: Self = StObject.set(x, "debugLogging", null)
+      
+      inline def setDebugLoggingUndefined: Self = StObject.set(x, "debugLogging", js.undefined)
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlNull: Self = StObject.set(x, "url", null)
+      
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      
+      inline def setVersionNull: Self = StObject.set(x, "version", null)
+      
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -140,9 +209,9 @@ object nsisOptionsMod {
     val language: js.UndefOr[String | Null] = js.undefined
     
     /**
-      * The path to EULA license file. Defaults to `license.txt` or `eula.txt` (or uppercase variants). In addition to `txt, `rtf` and `html` supported (don't forget to use `target="_blank"` for links).
+      * The path to EULA license file. Defaults to `license.txt` or `eula.txt` (or uppercase variants). In addition to `txt`, `rtf` and `html` supported (don't forget to use `target="_blank"` for links).
       *
-      * Multiple license files in different languages are supported — use lang postfix (e.g. `_de`, `_ru`)). For example, create files `license_de.txt` and `license_en.txt` in the build resources.
+      * Multiple license files in different languages are supported — use lang postfix (e.g. `_de`, `_ru`). For example, create files `license_de.txt` and `license_en.txt` in the build resources.
       * If OS language is german, `license_de.txt` will be displayed. See map of [language code to name](https://github.com/meikidd/iso-639-1/blob/master/src/data.js).
       *
       * Appropriate license file will be selected by user OS language.
@@ -248,7 +317,7 @@ object nsisOptionsMod {
       
       inline def setInstallerLanguagesUndefined: Self = StObject.set(x, "installerLanguages", js.undefined)
       
-      inline def setInstallerLanguagesVarargs(value: String*): Self = StObject.set(x, "installerLanguages", js.Array(value :_*))
+      inline def setInstallerLanguagesVarargs(value: String*): Self = StObject.set(x, "installerLanguages", js.Array(value*))
       
       inline def setInstallerSidebar(value: String): Self = StObject.set(x, "installerSidebar", value.asInstanceOf[js.Any])
       
@@ -282,7 +351,7 @@ object nsisOptionsMod {
       
       inline def setPreCompressedFileExtensionsUndefined: Self = StObject.set(x, "preCompressedFileExtensions", js.undefined)
       
-      inline def setPreCompressedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "preCompressedFileExtensions", js.Array(value :_*))
+      inline def setPreCompressedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "preCompressedFileExtensions", js.Array(value*))
       
       inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
@@ -356,11 +425,14 @@ object nsisOptionsMod {
     val splashImage: js.UndefOr[String | Null] = js.undefined
     
     /**
-      * The unpack directory name in [TEMP](https://www.askvg.com/where-does-windows-store-temporary-files-and-how-to-change-temp-folder-location/) directory.
+      * The unpack directory for the portable app resources.
+      *
+      * If set to a string, it will be the name in [TEMP](https://www.askvg.com/where-does-windows-store-temporary-files-and-how-to-change-temp-folder-location/) directory
+      * If set explicitly to `false`, it will use the Windows temp directory ($PLUGINSDIR) that is unique to each launch of the portable application.
       *
       * Defaults to [uuid](https://github.com/segmentio/ksuid) of build (changed on each build of portable executable).
       */
-    val unpackDirName: js.UndefOr[String] = js.undefined
+    val unpackDirName: js.UndefOr[String | Boolean] = js.undefined
   }
   object PortableOptions {
     
@@ -381,7 +453,7 @@ object nsisOptionsMod {
       
       inline def setSplashImageUndefined: Self = StObject.set(x, "splashImage", js.undefined)
       
-      inline def setUnpackDirName(value: String): Self = StObject.set(x, "unpackDirName", value.asInstanceOf[js.Any])
+      inline def setUnpackDirName(value: String | Boolean): Self = StObject.set(x, "unpackDirName", value.asInstanceOf[js.Any])
       
       inline def setUnpackDirNameUndefined: Self = StObject.set(x, "unpackDirName", js.undefined)
     }

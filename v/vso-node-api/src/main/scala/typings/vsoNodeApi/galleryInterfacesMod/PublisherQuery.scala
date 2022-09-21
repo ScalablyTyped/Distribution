@@ -27,7 +27,7 @@ object PublisherQuery {
     
     inline def setFilters(value: js.Array[QueryFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    inline def setFiltersVarargs(value: QueryFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: QueryFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setFlags(value: PublisherQueryFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
   }

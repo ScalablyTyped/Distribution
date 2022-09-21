@@ -8,7 +8,6 @@ import typings.node.netMod.ListenOptions
 import typings.node.netMod.Socket
 import typings.node.netMod.SocketConstructorOpts
 import typings.node.tlsMod.TlsOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,37 +20,37 @@ object mod {
   
   @JSImport("ncom", "ComServer")
   @js.native
-  class ComServer () extends EventEmitter {
+  open class ComServer () extends EventEmitter {
     def this(options: ComServerOptions) = this()
     def this(options: SecureComServerOptions) = this()
     
     @JSName("addListener")
     def addListener_connection(event: connection, listener: ConnectionListener): this.type = js.native
     @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     // tslint:enable:unified-signatures
     /**
       * Forwards to net.Server.close()
       */
     def close(): this.type = js.native
-    def close(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): this.type = js.native
+    def close(callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): this.type = js.native
     
     @JSName("emit")
     def emit_connection(event: connection, listener: ConnectionListener): this.type = js.native
     @JSName("emit")
-    def emit_error(event: error, err: Error): Boolean = js.native
+    def emit_error(event: error, err: js.Error): Boolean = js.native
     
     /**
       * Forwards to net.Server.listen()
       */
     // tslint:disable:unified-signatures Copied from net.d.ts, where the rule is disabled
     def listen(): this.type = js.native
-    def listen(handle: js.Any): this.type = js.native
-    def listen(handle: js.Any, backlog: Double): this.type = js.native
-    def listen(handle: js.Any, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
-    def listen(handle: js.Any, backlog: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
-    def listen(handle: js.Any, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(handle: Any): this.type = js.native
+    def listen(handle: Any, backlog: Double): this.type = js.native
+    def listen(handle: Any, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(handle: Any, backlog: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(handle: Any, listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(options: ListenOptions): this.type = js.native
     def listen(options: ListenOptions, listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(path: String): this.type = js.native
@@ -88,37 +87,37 @@ object mod {
     @JSName("on")
     def on_connection(event: connection, listener: ConnectionListener): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("once")
     def once_connection(event: connection, listener: ConnectionListener): this.type = js.native
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("prependListener")
     def prependListener_connection(event: connection, listener: ConnectionListener): this.type = js.native
     @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("prependOnceListener")
     def prependOnceListener_connection(event: connection, listener: ConnectionListener): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("removeListener")
     def removeListener_connection(event: connection, listener: ConnectionListener): this.type = js.native
     @JSName("removeListener")
-    def removeListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def removeListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   }
   
   @JSImport("ncom", "ComSocket")
   @js.native
-  class ComSocket protected () extends EventEmitter {
+  open class ComSocket protected () extends EventEmitter {
     def this(options: SocketConstructorOpts, id: String) = this()
     def this(options: Socket, id: String) = this()
     
     @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     var batchDuration: Double = js.native
     
@@ -127,31 +126,31 @@ object mod {
     def destroy(): Unit = js.native
     
     @JSName("emit")
-    def emit_error(event: error, err: Error): Boolean = js.native
+    def emit_error(event: error, err: js.Error): Boolean = js.native
     
     def end(): Unit = js.native
     
     var id: String = js.native
     
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("removeListener")
-    def removeListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def removeListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     var socket: Socket = js.native
     
-    def write(data: js.Any): Unit = js.native
-    def write(data: js.Any, writeOptions: WriteOptions): Unit = js.native
+    def write(data: Any): Unit = js.native
+    def write(data: Any, writeOptions: WriteOptions): Unit = js.native
   }
   
   inline def createServer(): ComServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[ComServer]
@@ -189,7 +188,7 @@ object mod {
   
   type ConnectionListener = js.Function1[/* socket */ ComSocket, Unit]
   
-  type FilterFunction = js.Function1[/* data */ js.Any, String]
+  type FilterFunction = js.Function1[/* data */ Any, String]
   
   trait SecureComServerOptions
     extends StObject
@@ -233,7 +232,7 @@ object mod {
       
       inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      inline def setFiltersVarargs(value: FilterFunction*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: FilterFunction*): Self = StObject.set(x, "filters", js.Array(value*))
     }
   }
 }

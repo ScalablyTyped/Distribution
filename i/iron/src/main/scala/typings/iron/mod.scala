@@ -6,7 +6,7 @@ import typings.iron.anon.KeyBits
 import typings.iron.ironStrings.`aes-128-ctr`
 import typings.iron.ironStrings.`aes-256-cbc`
 import typings.iron.ironStrings.sha256
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

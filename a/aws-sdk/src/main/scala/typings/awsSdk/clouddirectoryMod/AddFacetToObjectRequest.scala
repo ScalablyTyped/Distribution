@@ -41,7 +41,7 @@ object AddFacetToObjectRequest {
     
     inline def setObjectAttributeListUndefined: Self = StObject.set(x, "ObjectAttributeList", js.undefined)
     
-    inline def setObjectAttributeListVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "ObjectAttributeList", js.Array(value :_*))
+    inline def setObjectAttributeListVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "ObjectAttributeList", js.Array(value*))
     
     inline def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
     

@@ -12,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "TransitionGroup")
 @js.native
-class TransitionGroup protected ()
-  extends Component[TransitionGroupProps, ComponentState, js.Any] {
+open class TransitionGroup protected () extends Component[TransitionGroupProps, ComponentState, Any] {
   def this(props: TransitionGroupProps) = this()
-  def this(props: TransitionGroupProps, context: js.Any) = this()
+  def this(props: TransitionGroupProps, context: Any) = this()
 }
 object TransitionGroup {
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for username
 
-Typings are for version 5.1.0
+Typings are for version 6.0.0
 
 ## Library description:
 Get the username of the current user
@@ -10,10 +10,10 @@ Get the username of the current user
 | ------------------ | :-------------: |
 | Full name          | username |
 | Keywords           | username, user, login, name, logname, lname, whoami, shell, env, environment, variable |
-| # releases         | 3 |
-| # dependents       | 171 |
-| # downloads        | 5212307 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 939545.6666666666 |
+| # stars            | 141.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/username#readme)

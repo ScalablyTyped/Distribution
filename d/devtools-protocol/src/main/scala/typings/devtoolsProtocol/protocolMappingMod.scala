@@ -23,6 +23,7 @@ import typings.devtoolsProtocol.anon.ReturnTypeCanEmulateNetworkConditionsRespon
 import typings.devtoolsProtocol.anon.ReturnTypeCanEmulateResponse
 import typings.devtoolsProtocol.anon.ReturnTypeCaptureScreenshotResponse
 import typings.devtoolsProtocol.anon.ReturnTypeCaptureSnapshotResponse
+import typings.devtoolsProtocol.anon.ReturnTypeClearTrustTokensResponse
 import typings.devtoolsProtocol.anon.ReturnTypeCloseTargetResponse
 import typings.devtoolsProtocol.anon.ReturnTypeCollectClassNamesFromSubtreeResponse
 import typings.devtoolsProtocol.anon.ReturnTypeCollectClassNamesResponse
@@ -34,14 +35,15 @@ import typings.devtoolsProtocol.anon.ReturnTypeCreateIsolatedWorldResponse
 import typings.devtoolsProtocol.anon.ReturnTypeCreateStyleSheetResponse
 import typings.devtoolsProtocol.anon.ReturnTypeCreateTargetResponse
 import typings.devtoolsProtocol.anon.ReturnTypeDescribeNodeResponse
+import typings.devtoolsProtocol.anon.ReturnTypeDisassembleWasmModuleResponse
 import typings.devtoolsProtocol.anon.ReturnTypeEvaluateOnCallFrameResponse
 import typings.devtoolsProtocol.anon.ReturnTypeEvaluateResponse
 import typings.devtoolsProtocol.anon.ReturnTypeExecuteSQLResponse
-import typings.devtoolsProtocol.anon.ReturnTypeExecuteWasmEvaluatorResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetAXNodeAndAncestorsResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetAllCookiesResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetAllTimeSamplingProfileResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetAppIdResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetAppManifestResponse
-import typings.devtoolsProtocol.anon.ReturnTypeGetApplicationCacheForFrameResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetAttributesResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetBackgroundColorsResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetBestEffortCoverageResponse
@@ -51,10 +53,11 @@ import typings.devtoolsProtocol.anon.ReturnTypeGetBrowserContextsResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetBrowserSamplingProfileResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetCategoriesResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetCertificateResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetChildAXNodesResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetComputedStyleForNodeResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetContainerForNodeResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetContentQuadsResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetCookiesResponse
-import typings.devtoolsProtocol.anon.ReturnTypeGetCountersResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetCredentialResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetCredentialsResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetCurrentTimeResponse
@@ -65,11 +68,11 @@ import typings.devtoolsProtocol.anon.ReturnTypeGetDocumentResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetDomainsResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetEncodedResponseResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetEventListenersResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetExceptionDetailsResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetFileInfoResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetFlattenedDocumentResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetFrameOwnerResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetFrameTreeResponse
-import typings.devtoolsProtocol.anon.ReturnTypeGetFramesWithManifestsResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetFullAXTreeResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetGridHighlightObjectsForTestResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetHeapObjectIdResponse
@@ -80,9 +83,10 @@ import typings.devtoolsProtocol.anon.ReturnTypeGetHistogramsResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetInfoResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetInlineStylesForNodeResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetInstallabilityErrorsResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetInterestGroupDetailsResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetIsolateIdResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetLayersForNodeResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetLayoutMetricsResponse
-import typings.devtoolsProtocol.anon.ReturnTypeGetManifestForFrameResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetManifestIconsResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetMatchedStylesForNodeResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetMediaQueriesResponse
@@ -93,13 +97,16 @@ import typings.devtoolsProtocol.anon.ReturnTypeGetNodeForLocationResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetNodeStackTracesResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetNodesForSubtreeByStyleResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetObjectByHeapObjectIdResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetOriginTrialsResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetOuterHTMLResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetPartialAXTreeResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetPermissionsPolicyStateResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetPlatformFontsForNodeResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetPlaybackRateResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetPossibleBreakpointsResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetProcessInfoResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetPropertiesResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetQueryingDescendantsForContainerResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetRealtimeDataResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetRelayoutBoundaryResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetRequestPostDataResponse
@@ -107,7 +114,7 @@ import typings.devtoolsProtocol.anon.ReturnTypeGetResourceContentResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetResourceTreeResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetResponseBodyForInterceptionResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetResponseBodyResponse
-import typings.devtoolsProtocol.anon.ReturnTypeGetRuntimeCallStatsResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetRootAXNodeResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetSamplingProfileResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetScriptSourceResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetSearchResultsResponse
@@ -115,9 +122,12 @@ import typings.devtoolsProtocol.anon.ReturnTypeGetSecurityIsolationStatusRespons
 import typings.devtoolsProtocol.anon.ReturnTypeGetSnapshotResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetSourceOrderHighlightObjectForTestResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetStackTraceResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetStorageKeyForFrameResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetStyleSheetTextResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetTargetInfoResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetTargetsResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetTopLayerElementsResponse
+import typings.devtoolsProtocol.anon.ReturnTypeGetTrustTokensResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetUsageAndQuotaResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetVersionResponse
 import typings.devtoolsProtocol.anon.ReturnTypeGetWasmBytecodeResponse
@@ -129,6 +139,7 @@ import typings.devtoolsProtocol.anon.ReturnTypeLoadSnapshotResponse
 import typings.devtoolsProtocol.anon.ReturnTypeMakeSnapshotResponse
 import typings.devtoolsProtocol.anon.ReturnTypeMoveToResponse
 import typings.devtoolsProtocol.anon.ReturnTypeNavigateResponse
+import typings.devtoolsProtocol.anon.ReturnTypeNextWasmDisassemblyChunkResponse
 import typings.devtoolsProtocol.anon.ReturnTypePerformSearchResponse
 import typings.devtoolsProtocol.anon.ReturnTypePrintToPDFResponse
 import typings.devtoolsProtocol.anon.ReturnTypeProfileSnapshotResponse
@@ -159,15 +170,18 @@ import typings.devtoolsProtocol.anon.ReturnTypeSearchInResponseBodyResponse
 import typings.devtoolsProtocol.anon.ReturnTypeSetBreakpointByUrlResponse
 import typings.devtoolsProtocol.anon.ReturnTypeSetBreakpointOnFunctionCallResponse
 import typings.devtoolsProtocol.anon.ReturnTypeSetBreakpointResponse
+import typings.devtoolsProtocol.anon.ReturnTypeSetContainerQueryTextResponse
 import typings.devtoolsProtocol.anon.ReturnTypeSetCookieResponse
 import typings.devtoolsProtocol.anon.ReturnTypeSetInstrumentationBreakpointResponse
 import typings.devtoolsProtocol.anon.ReturnTypeSetKeyframeKeyResponse
 import typings.devtoolsProtocol.anon.ReturnTypeSetMediaTextResponse
 import typings.devtoolsProtocol.anon.ReturnTypeSetNodeNameResponse
 import typings.devtoolsProtocol.anon.ReturnTypeSetRuleSelectorResponse
+import typings.devtoolsProtocol.anon.ReturnTypeSetScopeTextResponse
 import typings.devtoolsProtocol.anon.ReturnTypeSetScriptSourceResponse
 import typings.devtoolsProtocol.anon.ReturnTypeSetStyleSheetTextResponse
 import typings.devtoolsProtocol.anon.ReturnTypeSetStyleTextsResponse
+import typings.devtoolsProtocol.anon.ReturnTypeSetSupportsTextResponse
 import typings.devtoolsProtocol.anon.ReturnTypeSetVirtualTimePolicyResponse
 import typings.devtoolsProtocol.anon.ReturnTypeSnapshotCommandLogResponse
 import typings.devtoolsProtocol.anon.ReturnTypeStartPreciseCoverageResponse
@@ -307,9 +321,39 @@ import typings.devtoolsProtocol.anon.`20`
 import typings.devtoolsProtocol.anon.`210`
 import typings.devtoolsProtocol.anon.`211`
 import typings.devtoolsProtocol.anon.`212`
+import typings.devtoolsProtocol.anon.`213`
+import typings.devtoolsProtocol.anon.`214`
+import typings.devtoolsProtocol.anon.`215`
+import typings.devtoolsProtocol.anon.`216`
+import typings.devtoolsProtocol.anon.`217`
+import typings.devtoolsProtocol.anon.`218`
+import typings.devtoolsProtocol.anon.`219`
 import typings.devtoolsProtocol.anon.`21`
+import typings.devtoolsProtocol.anon.`220`
+import typings.devtoolsProtocol.anon.`221`
+import typings.devtoolsProtocol.anon.`222`
+import typings.devtoolsProtocol.anon.`223`
+import typings.devtoolsProtocol.anon.`224`
+import typings.devtoolsProtocol.anon.`225`
+import typings.devtoolsProtocol.anon.`226`
+import typings.devtoolsProtocol.anon.`227`
+import typings.devtoolsProtocol.anon.`228`
+import typings.devtoolsProtocol.anon.`229`
 import typings.devtoolsProtocol.anon.`22`
+import typings.devtoolsProtocol.anon.`230`
+import typings.devtoolsProtocol.anon.`231`
+import typings.devtoolsProtocol.anon.`232`
+import typings.devtoolsProtocol.anon.`233`
+import typings.devtoolsProtocol.anon.`234`
+import typings.devtoolsProtocol.anon.`235`
+import typings.devtoolsProtocol.anon.`236`
+import typings.devtoolsProtocol.anon.`237`
+import typings.devtoolsProtocol.anon.`238`
+import typings.devtoolsProtocol.anon.`239`
 import typings.devtoolsProtocol.anon.`23`
+import typings.devtoolsProtocol.anon.`240`
+import typings.devtoolsProtocol.anon.`241`
+import typings.devtoolsProtocol.anon.`242`
 import typings.devtoolsProtocol.anon.`24`
 import typings.devtoolsProtocol.anon.`25`
 import typings.devtoolsProtocol.anon.`26`
@@ -394,14 +438,16 @@ import typings.devtoolsProtocol.anon.`97`
 import typings.devtoolsProtocol.anon.`98`
 import typings.devtoolsProtocol.anon.`99`
 import typings.devtoolsProtocol.anon.`9`
+import typings.devtoolsProtocol.mod.Protocol.Accessibility.LoadCompleteEvent
+import typings.devtoolsProtocol.mod.Protocol.Accessibility.NodesUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Animation.AnimationCanceledEvent
 import typings.devtoolsProtocol.mod.Protocol.Animation.AnimationCreatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Animation.AnimationStartedEvent
-import typings.devtoolsProtocol.mod.Protocol.ApplicationCache.ApplicationCacheStatusUpdatedEvent
-import typings.devtoolsProtocol.mod.Protocol.ApplicationCache.NetworkStateUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Audits.IssueAddedEvent
 import typings.devtoolsProtocol.mod.Protocol.BackgroundService.BackgroundServiceEventReceivedEvent
 import typings.devtoolsProtocol.mod.Protocol.BackgroundService.RecordingStateChangedEvent
+import typings.devtoolsProtocol.mod.Protocol.Browser.DownloadProgressEvent
+import typings.devtoolsProtocol.mod.Protocol.Browser.DownloadWillBeginEvent
 import typings.devtoolsProtocol.mod.Protocol.CSS.FontsUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.CSS.StyleSheetAddedEvent
 import typings.devtoolsProtocol.mod.Protocol.CSS.StyleSheetChangedEvent
@@ -438,6 +484,7 @@ import typings.devtoolsProtocol.mod.Protocol.HeapProfiler.AddHeapSnapshotChunkEv
 import typings.devtoolsProtocol.mod.Protocol.HeapProfiler.HeapStatsUpdateEvent
 import typings.devtoolsProtocol.mod.Protocol.HeapProfiler.LastSeenObjectIdEvent
 import typings.devtoolsProtocol.mod.Protocol.HeapProfiler.ReportHeapSnapshotProgressEvent
+import typings.devtoolsProtocol.mod.Protocol.Input.DragInterceptedEvent
 import typings.devtoolsProtocol.mod.Protocol.Inspector.DetachedEvent
 import typings.devtoolsProtocol.mod.Protocol.LayerTree.LayerPaintedEvent
 import typings.devtoolsProtocol.mod.Protocol.LayerTree.LayerTreeDidChangeEvent
@@ -451,6 +498,9 @@ import typings.devtoolsProtocol.mod.Protocol.Network.DataReceivedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.EventSourceMessageReceivedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.LoadingFailedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.LoadingFinishedEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.ReportingApiEndpointsChangedForOriginEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.ReportingApiReportAddedEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.ReportingApiReportUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.RequestInterceptedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.RequestServedFromCacheEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.RequestWillBeSentEvent
@@ -459,6 +509,11 @@ import typings.devtoolsProtocol.mod.Protocol.Network.ResourceChangedPriorityEven
 import typings.devtoolsProtocol.mod.Protocol.Network.ResponseReceivedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.ResponseReceivedExtraInfoEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.SignedExchangeReceivedEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.SubresourceWebBundleInnerResponseErrorEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.SubresourceWebBundleInnerResponseParsedEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.SubresourceWebBundleMetadataErrorEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.SubresourceWebBundleMetadataReceivedEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.TrustTokenOperationDoneEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketClosedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketCreatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketFrameErrorEvent
@@ -466,13 +521,16 @@ import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketFrameReceivedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketFrameSentEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketHandshakeResponseReceivedEvent
 import typings.devtoolsProtocol.mod.Protocol.Network.WebSocketWillSendHandshakeRequestEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.WebTransportClosedEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.WebTransportConnectionEstablishedEvent
+import typings.devtoolsProtocol.mod.Protocol.Network.WebTransportCreatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Overlay.InspectNodeRequestedEvent
 import typings.devtoolsProtocol.mod.Protocol.Overlay.NodeHighlightRequestedEvent
 import typings.devtoolsProtocol.mod.Protocol.Overlay.ScreenshotRequestedEvent
+import typings.devtoolsProtocol.mod.Protocol.Page.BackForwardCacheNotUsedEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.CompilationCacheProducedEvent
+import typings.devtoolsProtocol.mod.Protocol.Page.DocumentOpenedEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.DomContentEventFiredEvent
-import typings.devtoolsProtocol.mod.Protocol.Page.DownloadProgressEvent
-import typings.devtoolsProtocol.mod.Protocol.Page.DownloadWillBeginEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.FileChooserOpenedEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameAttachedEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameClearedScheduledNavigationEvent
@@ -487,10 +545,12 @@ import typings.devtoolsProtocol.mod.Protocol.Page.JavascriptDialogOpeningEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.LifecycleEventEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.LoadEventFiredEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.NavigatedWithinDocumentEvent
+import typings.devtoolsProtocol.mod.Protocol.Page.PrerenderAttemptCompletedEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.ScreencastFrameEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.ScreencastVisibilityChangedEvent
 import typings.devtoolsProtocol.mod.Protocol.Page.WindowOpenEvent
 import typings.devtoolsProtocol.mod.Protocol.Performance.MetricsEvent
+import typings.devtoolsProtocol.mod.Protocol.PerformanceTimeline.TimelineEventAddedEvent
 import typings.devtoolsProtocol.mod.Protocol.Profiler.ConsoleProfileFinishedEvent
 import typings.devtoolsProtocol.mod.Protocol.Profiler.ConsoleProfileStartedEvent
 import typings.devtoolsProtocol.mod.Protocol.Profiler.PreciseCoverageDeltaUpdateEvent
@@ -511,6 +571,7 @@ import typings.devtoolsProtocol.mod.Protocol.Storage.CacheStorageContentUpdatedE
 import typings.devtoolsProtocol.mod.Protocol.Storage.CacheStorageListUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Storage.IndexedDBContentUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Storage.IndexedDBListUpdatedEvent
+import typings.devtoolsProtocol.mod.Protocol.Storage.InterestGroupAccessedEvent
 import typings.devtoolsProtocol.mod.Protocol.Target.AttachedToTargetEvent
 import typings.devtoolsProtocol.mod.Protocol.Target.DetachedFromTargetEvent
 import typings.devtoolsProtocol.mod.Protocol.Target.ReceivedMessageFromTargetEvent
@@ -559,7 +620,21 @@ object protocolMappingMod {
       var AccessibilityDotenable: ParamsType
       
       /**
-        * Fetches the entire accessibility tree
+        * Fetches a node and all ancestors up to and including the root.
+        * Requires `enable()` to have been called previously.
+        */
+      @JSName("Accessibility.getAXNodeAndAncestors")
+      var AccessibilityDotgetAXNodeAndAncestors: ReturnTypeGetAXNodeAndAncestorsResponse
+      
+      /**
+        * Fetches a particular accessibility node by AXNodeId.
+        * Requires `enable()` to have been called previously.
+        */
+      @JSName("Accessibility.getChildAXNodes")
+      var AccessibilityDotgetChildAXNodes: ReturnTypeGetChildAXNodesResponse
+      
+      /**
+        * Fetches the entire accessibility tree for the root Document
         */
       @JSName("Accessibility.getFullAXTree")
       var AccessibilityDotgetFullAXTree: ReturnTypeGetFullAXTreeResponse
@@ -569,6 +644,13 @@ object protocolMappingMod {
         */
       @JSName("Accessibility.getPartialAXTree")
       var AccessibilityDotgetPartialAXTree: ReturnTypeGetPartialAXTreeResponse
+      
+      /**
+        * Fetches the root node.
+        * Requires `enable()` to have been called previously.
+        */
+      @JSName("Accessibility.getRootAXNode")
+      var AccessibilityDotgetRootAXNode: ReturnTypeGetRootAXNodeResponse
       
       /**
         * Query a DOM node's accessibility subtree for accessible name and role.
@@ -641,29 +723,11 @@ object protocolMappingMod {
       var AnimationDotsetTiming: `28`
       
       /**
-        * Enables application cache domain notifications.
+        * Runs the contrast check for the target page. Found issues are reported
+        * using Audits.issueAdded event.
         */
-      @JSName("ApplicationCache.enable")
-      var ApplicationCacheDotenable: ParamsType
-      
-      /**
-        * Returns relevant application cache data for the document in given frame.
-        */
-      @JSName("ApplicationCache.getApplicationCacheForFrame")
-      var ApplicationCacheDotgetApplicationCacheForFrame: ReturnTypeGetApplicationCacheForFrameResponse
-      
-      /**
-        * Returns array of frame identifiers with manifest urls for each frame containing a document
-        * associated with some application cache.
-        */
-      @JSName("ApplicationCache.getFramesWithManifests")
-      var ApplicationCacheDotgetFramesWithManifests: ReturnTypeGetFramesWithManifestsResponse
-      
-      /**
-        * Returns manifest URL for document in the given frame.
-        */
-      @JSName("ApplicationCache.getManifestForFrame")
-      var ApplicationCacheDotgetManifestForFrame: ReturnTypeGetManifestForFrameResponse
+      @JSName("Audits.checkContrast")
+      var AuditsDotcheckContrast: `29`
       
       /**
         * Disables issues domain, prevents further issues from being reported to the client.
@@ -689,25 +753,31 @@ object protocolMappingMod {
         * Clears all stored data for the service.
         */
       @JSName("BackgroundService.clearEvents")
-      var BackgroundServiceDotclearEvents: `32`
+      var BackgroundServiceDotclearEvents: `33`
       
       /**
         * Set the recording state for the service.
         */
       @JSName("BackgroundService.setRecording")
-      var BackgroundServiceDotsetRecording: `31`
+      var BackgroundServiceDotsetRecording: `32`
       
       /**
         * Enables event updates for the service.
         */
       @JSName("BackgroundService.startObserving")
-      var BackgroundServiceDotstartObserving: `29`
+      var BackgroundServiceDotstartObserving: `30`
       
       /**
         * Disables event updates for the service.
         */
       @JSName("BackgroundService.stopObserving")
-      var BackgroundServiceDotstopObserving: `30`
+      var BackgroundServiceDotstopObserving: `31`
+      
+      /**
+        * Cancel a download if in progress
+        */
+      @JSName("Browser.cancelDownload")
+      var BrowserDotcancelDownload: `38`
       
       /**
         * Close browser gracefully.
@@ -726,6 +796,12 @@ object protocolMappingMod {
         */
       @JSName("Browser.crashGpuProcess")
       var BrowserDotcrashGpuProcess: ParamsType
+      
+      /**
+        * Invoke custom browser commands used by telemetry.
+        */
+      @JSName("Browser.executeBrowserCommand")
+      var BrowserDotexecuteBrowserCommand: `41`
       
       /**
         * Returns the command line switches for the browser process if, and only if
@@ -768,37 +844,37 @@ object protocolMappingMod {
         * Grant specific permissions to the given origin and reject all others.
         */
       @JSName("Browser.grantPermissions")
-      var BrowserDotgrantPermissions: `34`
+      var BrowserDotgrantPermissions: `35`
       
       /**
         * Reset all permission management for all origins.
         */
       @JSName("Browser.resetPermissions")
-      var BrowserDotresetPermissions: `35`
+      var BrowserDotresetPermissions: `36`
       
       /**
         * Set dock tile details, platform-specific.
         */
       @JSName("Browser.setDockTile")
-      var BrowserDotsetDockTile: `38`
+      var BrowserDotsetDockTile: `40`
       
       /**
         * Set the behavior when downloading a file.
         */
       @JSName("Browser.setDownloadBehavior")
-      var BrowserDotsetDownloadBehavior: `36`
+      var BrowserDotsetDownloadBehavior: `37`
       
       /**
         * Set permission settings for given origin.
         */
       @JSName("Browser.setPermission")
-      var BrowserDotsetPermission: `33`
+      var BrowserDotsetPermission: `34`
       
       /**
         * Set position and/or size of the browser window.
         */
       @JSName("Browser.setWindowBounds")
-      var BrowserDotsetWindowBounds: `37`
+      var BrowserDotsetWindowBounds: `39`
       
       /**
         * Inserts a new rule with the given `ruleText` in a stylesheet with given `styleSheetId`, at the
@@ -837,7 +913,7 @@ object protocolMappingMod {
         * the browser.
         */
       @JSName("CSS.forcePseudoState")
-      var CSSDotforcePseudoState: `39`
+      var CSSDotforcePseudoState: `42`
       
       @JSName("CSS.getBackgroundColors")
       var CSSDotgetBackgroundColors: ReturnTypeGetBackgroundColorsResponse
@@ -854,6 +930,15 @@ object protocolMappingMod {
         */
       @JSName("CSS.getInlineStylesForNode")
       var CSSDotgetInlineStylesForNode: ReturnTypeGetInlineStylesForNodeResponse
+      
+      /**
+        * Returns all layers parsed by the rendering engine for the tree scope of a node.
+        * Given a DOM element identified by nodeId, getLayersForNode returns the root
+        * layer for the nearest ancestor document or shadow root. The layer root contains
+        * the full layer tree for the tree scope and their ordering.
+        */
+      @JSName("CSS.getLayersForNode")
+      var CSSDotgetLayersForNode: ReturnTypeGetLayersForNodeResponse
       
       /**
         * Returns requested styles for a DOM node identified by `nodeId`.
@@ -881,11 +966,17 @@ object protocolMappingMod {
       var CSSDotgetStyleSheetText: ReturnTypeGetStyleSheetTextResponse
       
       /**
+        * Modifies the expression of a container query.
+        */
+      @JSName("CSS.setContainerQueryText")
+      var CSSDotsetContainerQueryText: ReturnTypeSetContainerQueryTextResponse
+      
+      /**
         * Find a rule with the given active property for the given node and set the new value for this
         * property
         */
       @JSName("CSS.setEffectivePropertyValueForNode")
-      var CSSDotsetEffectivePropertyValueForNode: `41`
+      var CSSDotsetEffectivePropertyValueForNode: `44`
       
       /**
         * Modifies the keyframe rule key text.
@@ -897,7 +988,7 @@ object protocolMappingMod {
         * Enables/disables rendering of local CSS fonts (enabled by default).
         */
       @JSName("CSS.setLocalFontsEnabled")
-      var CSSDotsetLocalFontsEnabled: `42`
+      var CSSDotsetLocalFontsEnabled: `45`
       
       /**
         * Modifies the rule selector.
@@ -912,6 +1003,12 @@ object protocolMappingMod {
       var CSSDotsetRuleSelector: ReturnTypeSetRuleSelectorResponse
       
       /**
+        * Modifies the expression of a scope at-rule.
+        */
+      @JSName("CSS.setScopeText")
+      var CSSDotsetScopeText: ReturnTypeSetScopeTextResponse
+      
+      /**
         * Sets the new stylesheet text.
         */
       @JSName("CSS.setStyleSheetText")
@@ -922,6 +1019,12 @@ object protocolMappingMod {
         */
       @JSName("CSS.setStyleTexts")
       var CSSDotsetStyleTexts: ReturnTypeSetStyleTextsResponse
+      
+      /**
+        * Modifies the expression of a supports at-rule.
+        */
+      @JSName("CSS.setSupportsText")
+      var CSSDotsetSupportsText: ReturnTypeSetSupportsTextResponse
       
       /**
         * Enables the selector recording.
@@ -958,19 +1061,19 @@ object protocolMappingMod {
         * to the front-end, no updates will be issued for the node.
         */
       @JSName("CSS.trackComputedStyleUpdates")
-      var CSSDottrackComputedStyleUpdates: `40`
+      var CSSDottrackComputedStyleUpdates: `43`
       
       /**
         * Deletes a cache.
         */
       @JSName("CacheStorage.deleteCache")
-      var CacheStorageDotdeleteCache: `43`
+      var CacheStorageDotdeleteCache: `46`
       
       /**
         * Deletes a cache entry.
         */
       @JSName("CacheStorage.deleteEntry")
-      var CacheStorageDotdeleteEntry: `44`
+      var CacheStorageDotdeleteEntry: `47`
       
       /**
         * Requests cache names.
@@ -1004,26 +1107,32 @@ object protocolMappingMod {
         * an |issueUpdated| event is fired.
         */
       @JSName("Cast.enable")
-      var CastDotenable: `45`
+      var CastDotenable: `48`
       
       /**
         * Sets a sink to be used when the web page requests the browser to choose a
         * sink via Presentation API, Remote Playback API, or Cast SDK.
         */
       @JSName("Cast.setSinkToUse")
-      var CastDotsetSinkToUse: `46`
+      var CastDotsetSinkToUse: `49`
+      
+      /**
+        * Starts mirroring the desktop to the sink.
+        */
+      @JSName("Cast.startDesktopMirroring")
+      var CastDotstartDesktopMirroring: `50`
       
       /**
         * Starts mirroring the tab to the sink.
         */
       @JSName("Cast.startTabMirroring")
-      var CastDotstartTabMirroring: `47`
+      var CastDotstartTabMirroring: `51`
       
       /**
         * Stops the active Cast session on the sink.
         */
       @JSName("Cast.stopCasting")
-      var CastDotstopCasting: `48`
+      var CastDotstopCasting: `52`
       
       /**
         * Does nothing.
@@ -1054,49 +1163,55 @@ object protocolMappingMod {
         * Removes DOM breakpoint that was set using `setDOMBreakpoint`.
         */
       @JSName("DOMDebugger.removeDOMBreakpoint")
-      var DOMDebuggerDotremoveDOMBreakpoint: `62`
+      var DOMDebuggerDotremoveDOMBreakpoint: `67`
       
       /**
         * Removes breakpoint on particular DOM event.
         */
       @JSName("DOMDebugger.removeEventListenerBreakpoint")
-      var DOMDebuggerDotremoveEventListenerBreakpoint: `63`
+      var DOMDebuggerDotremoveEventListenerBreakpoint: `68`
       
       /**
         * Removes breakpoint on particular native event.
         */
       @JSName("DOMDebugger.removeInstrumentationBreakpoint")
-      var DOMDebuggerDotremoveInstrumentationBreakpoint: `64`
+      var DOMDebuggerDotremoveInstrumentationBreakpoint: `69`
       
       /**
         * Removes breakpoint from XMLHttpRequest.
         */
       @JSName("DOMDebugger.removeXHRBreakpoint")
-      var DOMDebuggerDotremoveXHRBreakpoint: `65`
+      var DOMDebuggerDotremoveXHRBreakpoint: `70`
+      
+      /**
+        * Sets breakpoint on particular CSP violations.
+        */
+      @JSName("DOMDebugger.setBreakOnCSPViolation")
+      var DOMDebuggerDotsetBreakOnCSPViolation: `71`
       
       /**
         * Sets breakpoint on particular operation with DOM.
         */
       @JSName("DOMDebugger.setDOMBreakpoint")
-      var DOMDebuggerDotsetDOMBreakpoint: `66`
+      var DOMDebuggerDotsetDOMBreakpoint: `72`
       
       /**
         * Sets breakpoint on particular DOM event.
         */
       @JSName("DOMDebugger.setEventListenerBreakpoint")
-      var DOMDebuggerDotsetEventListenerBreakpoint: `67`
+      var DOMDebuggerDotsetEventListenerBreakpoint: `73`
       
       /**
         * Sets breakpoint on particular native event.
         */
       @JSName("DOMDebugger.setInstrumentationBreakpoint")
-      var DOMDebuggerDotsetInstrumentationBreakpoint: `68`
+      var DOMDebuggerDotsetInstrumentationBreakpoint: `74`
       
       /**
         * Sets breakpoint on XMLHttpRequest.
         */
       @JSName("DOMDebugger.setXHRBreakpoint")
-      var DOMDebuggerDotsetXHRBreakpoint: `69`
+      var DOMDebuggerDotsetXHRBreakpoint: `75`
       
       /**
         * Collects class names for the node with given id and all of it's child nodes.
@@ -1129,19 +1244,19 @@ object protocolMappingMod {
         * be called for that search.
         */
       @JSName("DOM.discardSearchResults")
-      var DOMDotdiscardSearchResults: `50`
+      var DOMDotdiscardSearchResults: `54`
       
       /**
         * Enables DOM agent for the given page.
         */
       @JSName("DOM.enable")
-      var DOMDotenable: ParamsType
+      var DOMDotenable: `55`
       
       /**
         * Focuses the given element.
         */
       @JSName("DOM.focus")
-      var DOMDotfocus: `51`
+      var DOMDotfocus: `56`
       
       /**
         * Returns attributes for the specified node.
@@ -1154,6 +1269,14 @@ object protocolMappingMod {
         */
       @JSName("DOM.getBoxModel")
       var DOMDotgetBoxModel: ReturnTypeGetBoxModelResponse
+      
+      /**
+        * Returns the container of the given node based on container query conditions.
+        * If containerName is given, it will find the nearest container with a matching name;
+        * otherwise it will find the nearest container regardless of its container name.
+        */
+      @JSName("DOM.getContainerForNode")
+      var DOMDotgetContainerForNode: ReturnTypeGetContainerForNodeResponse
       
       /**
         * Returns quads that describe node position on the page. This method
@@ -1215,6 +1338,13 @@ object protocolMappingMod {
       var DOMDotgetOuterHTML: ReturnTypeGetOuterHTMLResponse
       
       /**
+        * Returns the descendants of a container query container that have
+        * container queries against this container.
+        */
+      @JSName("DOM.getQueryingDescendantsForContainer")
+      var DOMDotgetQueryingDescendantsForContainer: ReturnTypeGetQueryingDescendantsForContainerResponse
+      
+      /**
         * Returns the id of the nearest ancestor that is a relayout boundary.
         */
       @JSName("DOM.getRelayoutBoundary")
@@ -1226,6 +1356,14 @@ object protocolMappingMod {
         */
       @JSName("DOM.getSearchResults")
       var DOMDotgetSearchResults: ReturnTypeGetSearchResultsResponse
+      
+      /**
+        * Returns NodeIds of current top layer elements.
+        * Top layer is rendered closest to the user within a viewport, therefore its elements always
+        * appear on top of all other content.
+        */
+      @JSName("DOM.getTopLayerElements")
+      var DOMDotgetTopLayerElements: ReturnTypeGetTopLayerElementsResponse
       
       /**
         * Hides any highlight.
@@ -1298,13 +1436,13 @@ object protocolMappingMod {
         * Removes attribute with given name from an element with given id.
         */
       @JSName("DOM.removeAttribute")
-      var DOMDotremoveAttribute: `52`
+      var DOMDotremoveAttribute: `57`
       
       /**
         * Removes node with given id.
         */
       @JSName("DOM.removeNode")
-      var DOMDotremoveNode: `53`
+      var DOMDotremoveNode: `58`
       
       /**
         * Requests that children of the node with given id are returned to the caller in form of
@@ -1312,7 +1450,7 @@ object protocolMappingMod {
         * the specified depth.
         */
       @JSName("DOM.requestChildNodes")
-      var DOMDotrequestChildNodes: `54`
+      var DOMDotrequestChildNodes: `59`
       
       /**
         * Requests that the node is sent to the caller given the JavaScript node object reference. All
@@ -1334,33 +1472,33 @@ object protocolMappingMod {
         * to identify the node.
         */
       @JSName("DOM.scrollIntoViewIfNeeded")
-      var DOMDotscrollIntoViewIfNeeded: `49`
+      var DOMDotscrollIntoViewIfNeeded: `53`
       
       /**
         * Sets attribute for an element with given id.
         */
       @JSName("DOM.setAttributeValue")
-      var DOMDotsetAttributeValue: `55`
+      var DOMDotsetAttributeValue: `60`
       
       /**
         * Sets attributes on element with given id. This method is useful when user edits some existing
         * attribute value and types in several attribute name/value pairs.
         */
       @JSName("DOM.setAttributesAsText")
-      var DOMDotsetAttributesAsText: `56`
+      var DOMDotsetAttributesAsText: `61`
       
       /**
         * Sets files for the given file input element.
         */
       @JSName("DOM.setFileInputFiles")
-      var DOMDotsetFileInputFiles: `57`
+      var DOMDotsetFileInputFiles: `62`
       
       /**
         * Enables console to refer to the node with given id via $x (see Command Line API for more details
         * $x functions).
         */
       @JSName("DOM.setInspectedNode")
-      var DOMDotsetInspectedNode: `59`
+      var DOMDotsetInspectedNode: `64`
       
       /**
         * Sets node name for a node with given id.
@@ -1372,19 +1510,19 @@ object protocolMappingMod {
         * Sets if stack traces should be captured for Nodes. See `Node.getNodeStackTraces`. Default is disabled.
         */
       @JSName("DOM.setNodeStackTracesEnabled")
-      var DOMDotsetNodeStackTracesEnabled: `58`
+      var DOMDotsetNodeStackTracesEnabled: `63`
       
       /**
         * Sets node value for a node with given id.
         */
       @JSName("DOM.setNodeValue")
-      var DOMDotsetNodeValue: `60`
+      var DOMDotsetNodeValue: `65`
       
       /**
         * Sets node HTML markup, returns new node id.
         */
       @JSName("DOM.setOuterHTML")
-      var DOMDotsetOuterHTML: `61`
+      var DOMDotsetOuterHTML: `66`
       
       /**
         * Undoes the last performed action.
@@ -1423,7 +1561,7 @@ object protocolMappingMod {
       var DOMSnapshotDotgetSnapshot: ReturnTypeGetSnapshotResponse
       
       @JSName("DOMStorage.clear")
-      var DOMStorageDotclear: `70`
+      var DOMStorageDotclear: `78`
       
       /**
         * Disables storage tracking, prevents storage events from being sent to the client.
@@ -1441,10 +1579,10 @@ object protocolMappingMod {
       var DOMStorageDotgetDOMStorageItems: ReturnTypeGetDOMStorageItemsResponse
       
       @JSName("DOMStorage.removeDOMStorageItem")
-      var DOMStorageDotremoveDOMStorageItem: `71`
+      var DOMStorageDotremoveDOMStorageItem: `79`
       
       @JSName("DOMStorage.setDOMStorageItem")
-      var DOMStorageDotsetDOMStorageItem: `72`
+      var DOMStorageDotsetDOMStorageItem: `80`
       
       /**
         * Disables database tracking, prevents database events from being sent to the client.
@@ -1476,6 +1614,9 @@ object protocolMappingMod {
       @JSName("Debugger.disable")
       var DebuggerDotdisable: ParamsType
       
+      @JSName("Debugger.disassembleWasmModule")
+      var DebuggerDotdisassembleWasmModule: ReturnTypeDisassembleWasmModuleResponse
+      
       /**
         * Enables debugger for the given page. Clients should not assume that the debugging has been
         * enabled until the result for this command is received.
@@ -1488,12 +1629,6 @@ object protocolMappingMod {
         */
       @JSName("Debugger.evaluateOnCallFrame")
       var DebuggerDotevaluateOnCallFrame: ReturnTypeEvaluateOnCallFrameResponse
-      
-      /**
-        * Execute a Wasm Evaluator module on a given call frame.
-        */
-      @JSName("Debugger.executeWasmEvaluator")
-      var DebuggerDotexecuteWasmEvaluator: ReturnTypeExecuteWasmEvaluatorResponse
       
       /**
         * Returns possible locations for breakpoint. scriptId in start and end range locations should be
@@ -1521,6 +1656,15 @@ object protocolMappingMod {
       var DebuggerDotgetWasmBytecode: ReturnTypeGetWasmBytecodeResponse
       
       /**
+        * Disassemble the next chunk of lines for the module corresponding to the
+        * stream. If disassembly is complete, this API will invalidate the streamId
+        * and return an empty chunk. Any subsequent calls for the now invalid stream
+        * will return errors.
+        */
+      @JSName("Debugger.nextWasmDisassemblyChunk")
+      var DebuggerDotnextWasmDisassemblyChunk: ReturnTypeNextWasmDisassemblyChunkResponse
+      
+      /**
         * Stops on the next JavaScript statement.
         */
       @JSName("Debugger.pause")
@@ -1536,7 +1680,19 @@ object protocolMappingMod {
       var DebuggerDotremoveBreakpoint: ParamsTypeReturnTypeVoid
       
       /**
-        * Restarts particular call frame from the beginning.
+        * Restarts particular call frame from the beginning. The old, deprecated
+        * behavior of `restartFrame` is to stay paused and allow further CDP commands
+        * after a restart was scheduled. This can cause problems with restarting, so
+        * we now continue execution immediatly after it has been scheduled until we
+        * reach the beginning of the restarted frame.
+        * 
+        * To stay back-wards compatible, `restartFrame` now expects a `mode`
+        * parameter to be present. If the `mode` parameter is missing, `restartFrame`
+        * errors out.
+        * 
+        * The various return values are deprecated and `callFrames` is always empty.
+        * Use the call frames from the `Debugger#paused` events instead, that fires
+        * once V8 pauses at the beginning of the restarted function.
         */
       @JSName("Debugger.restartFrame")
       var DebuggerDotrestartFrame: ReturnTypeRestartFrameResponse
@@ -1626,6 +1782,12 @@ object protocolMappingMod {
       
       /**
         * Edits JavaScript source live.
+        * 
+        * In general, functions that are currently on the stack can not be edited with
+        * a single exception: If the edited function is the top-most stack frame and
+        * that is the only activation of that function on the stack. In this case
+        * the live edit will be successful and a `Debugger.restartFrame` for the
+        * top-most function is automatically triggered.
         */
       @JSName("Debugger.setScriptSource")
       var DebuggerDotsetScriptSource: ReturnTypeSetScriptSourceResponse
@@ -1671,7 +1833,7 @@ object protocolMappingMod {
         * Overrides the Device Orientation.
         */
       @JSName("DeviceOrientation.setDeviceOrientationOverride")
-      var DeviceOrientationDotsetDeviceOrientationOverride: `73`
+      var DeviceOrientationDotsetDeviceOrientationOverride: `81`
       
       /**
         * Tells whether emulation is supported.
@@ -1680,13 +1842,13 @@ object protocolMappingMod {
       var EmulationDotcanEmulate: ReturnTypeCanEmulateResponse
       
       /**
-        * Clears the overriden device metrics.
+        * Clears the overridden device metrics.
         */
       @JSName("Emulation.clearDeviceMetricsOverride")
       var EmulationDotclearDeviceMetricsOverride: ParamsType
       
       /**
-        * Clears the overriden Geolocation Position and Error.
+        * Clears the overridden Geolocation Position and Error.
         */
       @JSName("Emulation.clearGeolocationOverride")
       var EmulationDotclearGeolocationOverride: ParamsType
@@ -1704,17 +1866,29 @@ object protocolMappingMod {
       var EmulationDotresetPageScaleFactor: ParamsType
       
       /**
+        * Automatically render all web contents using a dark theme.
+        */
+      @JSName("Emulation.setAutoDarkModeOverride")
+      var EmulationDotsetAutoDarkModeOverride: `83`
+      
+      /**
+        * Allows overriding the automation flag.
+        */
+      @JSName("Emulation.setAutomationOverride")
+      var EmulationDotsetAutomationOverride: `104`
+      
+      /**
         * Enables CPU throttling to emulate slow CPUs.
         */
       @JSName("Emulation.setCPUThrottlingRate")
-      var EmulationDotsetCPUThrottlingRate: `75`
+      var EmulationDotsetCPUThrottlingRate: `84`
       
       /**
         * Sets or clears an override of the default background color of the frame. This override is used
         * if the content does not specify one.
         */
       @JSName("Emulation.setDefaultBackgroundColorOverride")
-      var EmulationDotsetDefaultBackgroundColorOverride: `76`
+      var EmulationDotsetDefaultBackgroundColorOverride: `85`
       
       /**
         * Overrides the values of device screen dimensions (window.screen.width, window.screen.height,
@@ -1722,89 +1896,95 @@ object protocolMappingMod {
         * query results).
         */
       @JSName("Emulation.setDeviceMetricsOverride")
-      var EmulationDotsetDeviceMetricsOverride: `77`
+      var EmulationDotsetDeviceMetricsOverride: `86`
+      
+      @JSName("Emulation.setDisabledImageTypes")
+      var EmulationDotsetDisabledImageTypes: `101`
       
       @JSName("Emulation.setDocumentCookieDisabled")
-      var EmulationDotsetDocumentCookieDisabled: `79`
+      var EmulationDotsetDocumentCookieDisabled: `88`
       
       @JSName("Emulation.setEmitTouchEventsForMouse")
-      var EmulationDotsetEmitTouchEventsForMouse: `80`
+      var EmulationDotsetEmitTouchEventsForMouse: `89`
       
       /**
         * Emulates the given media type or media feature for CSS media queries.
         */
       @JSName("Emulation.setEmulatedMedia")
-      var EmulationDotsetEmulatedMedia: `81`
+      var EmulationDotsetEmulatedMedia: `90`
       
       /**
         * Emulates the given vision deficiency.
         */
       @JSName("Emulation.setEmulatedVisionDeficiency")
-      var EmulationDotsetEmulatedVisionDeficiency: `82`
+      var EmulationDotsetEmulatedVisionDeficiency: `91`
       
       /**
         * Enables or disables simulating a focused and active page.
         */
       @JSName("Emulation.setFocusEmulationEnabled")
-      var EmulationDotsetFocusEmulationEnabled: `74`
+      var EmulationDotsetFocusEmulationEnabled: `82`
       
       /**
         * Overrides the Geolocation Position or Error. Omitting any of the parameters emulates position
         * unavailable.
         */
       @JSName("Emulation.setGeolocationOverride")
-      var EmulationDotsetGeolocationOverride: `83`
+      var EmulationDotsetGeolocationOverride: `92`
+      
+      @JSName("Emulation.setHardwareConcurrencyOverride")
+      var EmulationDotsetHardwareConcurrencyOverride: `102`
       
       /**
         * Overrides the Idle state.
         */
       @JSName("Emulation.setIdleOverride")
-      var EmulationDotsetIdleOverride: `84`
+      var EmulationDotsetIdleOverride: `93`
       
       /**
         * Overrides default host system locale with the specified one.
         */
       @JSName("Emulation.setLocaleOverride")
-      var EmulationDotsetLocaleOverride: `89`
+      var EmulationDotsetLocaleOverride: `98`
       
       /**
         * Overrides value returned by the javascript navigator object.
         */
       @JSName("Emulation.setNavigatorOverrides")
-      var EmulationDotsetNavigatorOverrides: `85`
+      var EmulationDotsetNavigatorOverrides: `94`
       
       /**
         * Sets a specified page scale factor.
         */
       @JSName("Emulation.setPageScaleFactor")
-      var EmulationDotsetPageScaleFactor: `86`
+      var EmulationDotsetPageScaleFactor: `95`
       
       /**
         * Switches script execution in the page.
         */
       @JSName("Emulation.setScriptExecutionDisabled")
-      var EmulationDotsetScriptExecutionDisabled: `87`
+      var EmulationDotsetScriptExecutionDisabled: `96`
       
       @JSName("Emulation.setScrollbarsHidden")
-      var EmulationDotsetScrollbarsHidden: `78`
+      var EmulationDotsetScrollbarsHidden: `87`
       
       /**
         * Overrides default host system timezone with the specified one.
         */
       @JSName("Emulation.setTimezoneOverride")
-      var EmulationDotsetTimezoneOverride: `90`
+      var EmulationDotsetTimezoneOverride: `99`
       
       /**
         * Enables touch on platforms which do not support them.
         */
       @JSName("Emulation.setTouchEmulationEnabled")
-      var EmulationDotsetTouchEmulationEnabled: `88`
+      var EmulationDotsetTouchEmulationEnabled: `97`
       
       /**
         * Allows overriding user agent with the given string.
         */
       @JSName("Emulation.setUserAgentOverride")
-      var EmulationDotsetUserAgentOverride: `92`
+      var EmulationDotsetUserAgentOverride: `103`
       
       /**
         * Turns on virtual time for all frames (replacing real-time with a synthetic time source) and sets
@@ -1819,19 +1999,39 @@ object protocolMappingMod {
         * on Android.
         */
       @JSName("Emulation.setVisibleSize")
-      var EmulationDotsetVisibleSize: `91`
+      var EmulationDotsetVisibleSize: `100`
+      
+      /**
+        * Removes breakpoint on particular native event.
+        */
+      @JSName("EventBreakpoints.removeInstrumentationBreakpoint")
+      var EventBreakpointsDotremoveInstrumentationBreakpoint: `77`
+      
+      /**
+        * Sets breakpoint on particular native event.
+        */
+      @JSName("EventBreakpoints.setInstrumentationBreakpoint")
+      var EventBreakpointsDotsetInstrumentationBreakpoint: `76`
       
       /**
         * Continues the request, optionally modifying some of its parameters.
         */
       @JSName("Fetch.continueRequest")
-      var FetchDotcontinueRequest: `205`
+      var FetchDotcontinueRequest: `233`
+      
+      /**
+        * Continues loading of the paused response, optionally modifying the
+        * response headers. If either responseCode or headers are modified, all of them
+        * must be present.
+        */
+      @JSName("Fetch.continueResponse")
+      var FetchDotcontinueResponse: `235`
       
       /**
         * Continues a request supplying authChallengeResponse following authRequired event.
         */
       @JSName("Fetch.continueWithAuth")
-      var FetchDotcontinueWithAuth: `206`
+      var FetchDotcontinueWithAuth: `234`
       
       /**
         * Disables the fetch domain.
@@ -1844,19 +2044,19 @@ object protocolMappingMod {
         * calls one of failRequest, fulfillRequest or continueRequest/continueWithAuth.
         */
       @JSName("Fetch.enable")
-      var FetchDotenable: `202`
+      var FetchDotenable: `230`
       
       /**
         * Causes the request to fail with specified reason.
         */
       @JSName("Fetch.failRequest")
-      var FetchDotfailRequest: `203`
+      var FetchDotfailRequest: `231`
       
       /**
         * Provides response to the request.
         */
       @JSName("Fetch.fulfillRequest")
-      var FetchDotfulfillRequest: `204`
+      var FetchDotfulfillRequest: `232`
       
       /**
         * Causes the body of the response to be received from the server and
@@ -1888,7 +2088,7 @@ object protocolMappingMod {
         * Sends a BeginFrame to the target and returns when the frame was completed. Optionally captures a
         * screenshot from the resulting frame. Requires that the target was created with enabled
         * BeginFrameControl. Designed for use with --run-all-compositor-stages-before-draw, see also
-        * https://goo.gl/3zHXhB for more background.
+        * https://goo.gle/chrome-headless-rendering for more background.
         */
       @JSName("HeadlessExperimental.beginFrame")
       var HeadlessExperimentalDotbeginFrame: ReturnTypeBeginFrameResponse
@@ -1949,7 +2149,7 @@ object protocolMappingMod {
         * Close the stream, discard any temporary backing storage.
         */
       @JSName("IO.close")
-      var IODotclose: `93`
+      var IODotclose: `105`
       
       /**
         * Read a chunk of the stream
@@ -1967,19 +2167,19 @@ object protocolMappingMod {
         * Clears all entries from an object store.
         */
       @JSName("IndexedDB.clearObjectStore")
-      var IndexedDBDotclearObjectStore: `94`
+      var IndexedDBDotclearObjectStore: `106`
       
       /**
         * Deletes a database.
         */
       @JSName("IndexedDB.deleteDatabase")
-      var IndexedDBDotdeleteDatabase: `95`
+      var IndexedDBDotdeleteDatabase: `107`
       
       /**
         * Delete a range of entries from an object store
         */
       @JSName("IndexedDB.deleteObjectStoreEntries")
-      var IndexedDBDotdeleteObjectStoreEntries: `96`
+      var IndexedDBDotdeleteObjectStoreEntries: `108`
       
       /**
         * Disables events from backend.
@@ -2018,59 +2218,80 @@ object protocolMappingMod {
       var IndexedDBDotrequestDatabaseNames: ReturnTypeRequestDatabaseNamesResponse
       
       /**
+        * Dispatches a drag event into the page.
+        */
+      @JSName("Input.dispatchDragEvent")
+      var InputDotdispatchDragEvent: `109`
+      
+      /**
         * Dispatches a key event to the page.
         */
       @JSName("Input.dispatchKeyEvent")
-      var InputDotdispatchKeyEvent: `97`
+      var InputDotdispatchKeyEvent: `110`
       
       /**
         * Dispatches a mouse event to the page.
         */
       @JSName("Input.dispatchMouseEvent")
-      var InputDotdispatchMouseEvent: `99`
+      var InputDotdispatchMouseEvent: `113`
       
       /**
         * Dispatches a touch event to the page.
         */
       @JSName("Input.dispatchTouchEvent")
-      var InputDotdispatchTouchEvent: `100`
+      var InputDotdispatchTouchEvent: `114`
       
       /**
         * Emulates touch event from the mouse event parameters.
         */
       @JSName("Input.emulateTouchFromMouseEvent")
-      var InputDotemulateTouchFromMouseEvent: `101`
+      var InputDotemulateTouchFromMouseEvent: `115`
+      
+      /**
+        * This method sets the current candidate text for ime.
+        * Use imeCommitComposition to commit the final text.
+        * Use imeSetComposition with empty string as text to cancel composition.
+        */
+      @JSName("Input.imeSetComposition")
+      var InputDotimeSetComposition: `112`
       
       /**
         * This method emulates inserting text that doesn't come from a key press,
         * for example an emoji keyboard or an IME.
         */
       @JSName("Input.insertText")
-      var InputDotinsertText: `98`
+      var InputDotinsertText: `111`
       
       /**
         * Ignores input events (useful while auditing page).
         */
       @JSName("Input.setIgnoreInputEvents")
-      var InputDotsetIgnoreInputEvents: `102`
+      var InputDotsetIgnoreInputEvents: `116`
+      
+      /**
+        * Prevents default drag and drop behavior and instead emits `Input.dragIntercepted` events.
+        * Drag and drop behavior can be directly controlled via `Input.dispatchDragEvent`.
+        */
+      @JSName("Input.setInterceptDrags")
+      var InputDotsetInterceptDrags: `117`
       
       /**
         * Synthesizes a pinch gesture over a time period by issuing appropriate touch events.
         */
       @JSName("Input.synthesizePinchGesture")
-      var InputDotsynthesizePinchGesture: `103`
+      var InputDotsynthesizePinchGesture: `118`
       
       /**
         * Synthesizes a scroll gesture over a time period by issuing appropriate touch events.
         */
       @JSName("Input.synthesizeScrollGesture")
-      var InputDotsynthesizeScrollGesture: `104`
+      var InputDotsynthesizeScrollGesture: `119`
       
       /**
         * Synthesizes a tap gesture over a time period by issuing appropriate touch events.
         */
       @JSName("Input.synthesizeTapGesture")
-      var InputDotsynthesizeTapGesture: `105`
+      var InputDotsynthesizeTapGesture: `120`
       
       /**
         * Disables inspector domain notifications.
@@ -2121,7 +2342,7 @@ object protocolMappingMod {
         * Releases layer snapshot captured by the back-end.
         */
       @JSName("LayerTree.releaseSnapshot")
-      var LayerTreeDotreleaseSnapshot: `106`
+      var LayerTreeDotreleaseSnapshot: `121`
       
       /**
         * Replays the layer snapshot and returns the resulting bitmap.
@@ -2158,7 +2379,7 @@ object protocolMappingMod {
         * start violation reporting.
         */
       @JSName("Log.startViolationsReport")
-      var LogDotstartViolationsReport: `107`
+      var LogDotstartViolationsReport: `122`
       
       /**
         * Stop violation reporting.
@@ -2215,19 +2436,19 @@ object protocolMappingMod {
         * Enable/disable suppressing memory pressure notifications in all processes.
         */
       @JSName("Memory.setPressureNotificationsSuppressed")
-      var MemoryDotsetPressureNotificationsSuppressed: `108`
+      var MemoryDotsetPressureNotificationsSuppressed: `123`
       
       /**
         * Simulate a memory pressure notification in all processes.
         */
       @JSName("Memory.simulatePressureNotification")
-      var MemoryDotsimulatePressureNotification: `109`
+      var MemoryDotsimulatePressureNotification: `124`
       
       /**
         * Start collecting native memory profile.
         */
       @JSName("Memory.startSampling")
-      var MemoryDotstartSampling: `110`
+      var MemoryDotstartSampling: `125`
       
       /**
         * Stop collecting native memory profile.
@@ -2254,6 +2475,12 @@ object protocolMappingMod {
       var NetworkDotcanEmulateNetworkConditions: ReturnTypeCanEmulateNetworkConditionsResponse
       
       /**
+        * Clears accepted encodings set by setAcceptedEncodings
+        */
+      @JSName("Network.clearAcceptedEncodingsOverride")
+      var NetworkDotclearAcceptedEncodingsOverride: ParamsType
+      
+      /**
         * Clears browser cache.
         */
       @JSName("Network.clearBrowserCache")
@@ -2273,13 +2500,13 @@ object protocolMappingMod {
         * Deprecated, use Fetch.continueRequest, Fetch.fulfillRequest and Fetch.failRequest instead.
         */
       @JSName("Network.continueInterceptedRequest")
-      var NetworkDotcontinueInterceptedRequest: `111`
+      var NetworkDotcontinueInterceptedRequest: `127`
       
       /**
         * Deletes browser cookies with matching name and url or domain/path pair.
         */
       @JSName("Network.deleteCookies")
-      var NetworkDotdeleteCookies: `112`
+      var NetworkDotdeleteCookies: `128`
       
       /**
         * Disables network tracking, prevents network events from being sent to the client.
@@ -2291,13 +2518,20 @@ object protocolMappingMod {
         * Activates emulation of network conditions.
         */
       @JSName("Network.emulateNetworkConditions")
-      var NetworkDotemulateNetworkConditions: `113`
+      var NetworkDotemulateNetworkConditions: `129`
       
       /**
         * Enables network tracking, network events will now be delivered to the client.
         */
       @JSName("Network.enable")
-      var NetworkDotenable: `114`
+      var NetworkDotenable: `130`
+      
+      /**
+        * Enables tracking for the Reporting API, events generated by the Reporting API will now be delivered to the client.
+        * Enabling triggers 'reportingApiReportAdded' for all existing reports.
+        */
+      @JSName("Network.enableReportingApi")
+      var NetworkDotenableReportingApi: `140`
       
       /**
         * Returns all browser cookies. Depending on the backend support, will return detailed cookie
@@ -2355,7 +2589,7 @@ object protocolMappingMod {
         * attribute, user, password.
         */
       @JSName("Network.replayXHR")
-      var NetworkDotreplayXHR: `115`
+      var NetworkDotreplayXHR: `131`
       
       /**
         * Searches for given string in response content.
@@ -2364,28 +2598,34 @@ object protocolMappingMod {
       var NetworkDotsearchInResponseBody: ReturnTypeSearchInResponseBodyResponse
       
       /**
-        * Specifies whether to sned a debug header to all outgoing requests.
+        * Sets a list of content encodings that will be accepted. Empty list means no encoding is accepted.
         */
-      @JSName("Network.setAttachDebugHeader")
-      var NetworkDotsetAttachDebugHeader: `122`
+      @JSName("Network.setAcceptedEncodings")
+      var NetworkDotsetAcceptedEncodings: `126`
+      
+      /**
+        * Specifies whether to attach a page script stack id in requests
+        */
+      @JSName("Network.setAttachDebugStack")
+      var NetworkDotsetAttachDebugStack: `137`
       
       /**
         * Blocks URLs from loading.
         */
       @JSName("Network.setBlockedURLs")
-      var NetworkDotsetBlockedURLs: `116`
+      var NetworkDotsetBlockedURLs: `132`
       
       /**
         * Toggles ignoring of service worker for each request.
         */
       @JSName("Network.setBypassServiceWorker")
-      var NetworkDotsetBypassServiceWorker: `117`
+      var NetworkDotsetBypassServiceWorker: `133`
       
       /**
         * Toggles ignoring cache for each request. If `true`, cache will not be used.
         */
       @JSName("Network.setCacheDisabled")
-      var NetworkDotsetCacheDisabled: `118`
+      var NetworkDotsetCacheDisabled: `134`
       
       /**
         * Sets a cookie with the given cookie data; may overwrite equivalent cookies if they exist.
@@ -2397,32 +2637,26 @@ object protocolMappingMod {
         * Sets given cookies.
         */
       @JSName("Network.setCookies")
-      var NetworkDotsetCookies: `119`
-      
-      /**
-        * For testing.
-        */
-      @JSName("Network.setDataSizeLimitsForTest")
-      var NetworkDotsetDataSizeLimitsForTest: `120`
+      var NetworkDotsetCookies: `135`
       
       /**
         * Specifies whether to always send extra HTTP headers with the requests from this page.
         */
       @JSName("Network.setExtraHTTPHeaders")
-      var NetworkDotsetExtraHTTPHeaders: `121`
+      var NetworkDotsetExtraHTTPHeaders: `136`
       
       /**
         * Sets the requests to intercept that match the provided patterns and optionally resource types.
         * Deprecated, please use Fetch.enable instead.
         */
       @JSName("Network.setRequestInterception")
-      var NetworkDotsetRequestInterception: `123`
+      var NetworkDotsetRequestInterception: `138`
       
       /**
         * Allows overriding user agent with the given string.
         */
       @JSName("Network.setUserAgentOverride")
-      var NetworkDotsetUserAgentOverride: `124`
+      var NetworkDotsetUserAgentOverride: `139`
       
       /**
         * Returns a handle to the stream representing the response body. Note that after this command,
@@ -2471,112 +2705,136 @@ object protocolMappingMod {
       
       /**
         * Highlights owner element of the frame with given id.
+        * Deprecated: Doesn't work reliablity and cannot be fixed due to process
+        * separatation (the owner node might be in a different process). Determine
+        * the owner node in the client and use highlightNode.
         */
       @JSName("Overlay.highlightFrame")
-      var OverlayDothighlightFrame: `125`
+      var OverlayDothighlightFrame: `141`
       
       /**
         * Highlights DOM node with given id or with the given JavaScript object wrapper. Either nodeId or
         * objectId must be specified.
         */
       @JSName("Overlay.highlightNode")
-      var OverlayDothighlightNode: `126`
+      var OverlayDothighlightNode: `142`
       
       /**
         * Highlights given quad. Coordinates are absolute with respect to the main frame viewport.
         */
       @JSName("Overlay.highlightQuad")
-      var OverlayDothighlightQuad: `127`
+      var OverlayDothighlightQuad: `143`
       
       /**
         * Highlights given rectangle. Coordinates are absolute with respect to the main frame viewport.
         */
       @JSName("Overlay.highlightRect")
-      var OverlayDothighlightRect: `128`
+      var OverlayDothighlightRect: `144`
       
       /**
         * Highlights the source order of the children of the DOM node with given id or with the given
         * JavaScript object wrapper. Either nodeId or objectId must be specified.
         */
       @JSName("Overlay.highlightSourceOrder")
-      var OverlayDothighlightSourceOrder: `129`
+      var OverlayDothighlightSourceOrder: `145`
       
       /**
         * Enters the 'inspect' mode. In this mode, elements that user is hovering over are highlighted.
         * Backend then generates 'inspectNodeRequested' event upon element selection.
         */
       @JSName("Overlay.setInspectMode")
-      var OverlayDotsetInspectMode: `130`
+      var OverlayDotsetInspectMode: `146`
       
       @JSName("Overlay.setPausedInDebuggerMessage")
-      var OverlayDotsetPausedInDebuggerMessage: `132`
+      var OverlayDotsetPausedInDebuggerMessage: `148`
       
       /**
         * Highlights owner element of all frames detected to be ads.
         */
       @JSName("Overlay.setShowAdHighlights")
-      var OverlayDotsetShowAdHighlights: `131`
+      var OverlayDotsetShowAdHighlights: `147`
+      
+      @JSName("Overlay.setShowContainerQueryOverlays")
+      var OverlayDotsetShowContainerQueryOverlays: `154`
       
       /**
         * Requests that backend shows debug borders on layers
         */
       @JSName("Overlay.setShowDebugBorders")
-      var OverlayDotsetShowDebugBorders: `133`
+      var OverlayDotsetShowDebugBorders: `149`
       
       /**
         * Requests that backend shows the FPS counter
         */
       @JSName("Overlay.setShowFPSCounter")
-      var OverlayDotsetShowFPSCounter: `134`
+      var OverlayDotsetShowFPSCounter: `150`
+      
+      @JSName("Overlay.setShowFlexOverlays")
+      var OverlayDotsetShowFlexOverlays: `152`
       
       /**
         * Highlight multiple elements with the CSS Grid overlay.
         */
       @JSName("Overlay.setShowGridOverlays")
-      var OverlayDotsetShowGridOverlays: `135`
+      var OverlayDotsetShowGridOverlays: `151`
       
       /**
         * Add a dual screen device hinge
         */
       @JSName("Overlay.setShowHinge")
-      var OverlayDotsetShowHinge: `141`
+      var OverlayDotsetShowHinge: `161`
       
       /**
-        * Requests that backend shows hit-test borders on layers
+        * Deprecated, no longer has any effect.
         */
       @JSName("Overlay.setShowHitTestBorders")
-      var OverlayDotsetShowHitTestBorders: `139`
+      var OverlayDotsetShowHitTestBorders: `158`
+      
+      /**
+        * Show elements in isolation mode with overlays.
+        */
+      @JSName("Overlay.setShowIsolatedElements")
+      var OverlayDotsetShowIsolatedElements: `162`
       
       /**
         * Requests that backend shows layout shift regions
         */
       @JSName("Overlay.setShowLayoutShiftRegions")
-      var OverlayDotsetShowLayoutShiftRegions: `137`
+      var OverlayDotsetShowLayoutShiftRegions: `156`
       
       /**
         * Requests that backend shows paint rectangles
         */
       @JSName("Overlay.setShowPaintRects")
-      var OverlayDotsetShowPaintRects: `136`
+      var OverlayDotsetShowPaintRects: `155`
       
       /**
         * Requests that backend shows scroll bottleneck rects
         */
       @JSName("Overlay.setShowScrollBottleneckRects")
-      var OverlayDotsetShowScrollBottleneckRects: `138`
+      var OverlayDotsetShowScrollBottleneckRects: `157`
+      
+      @JSName("Overlay.setShowScrollSnapOverlays")
+      var OverlayDotsetShowScrollSnapOverlays: `153`
       
       /**
         * Paints viewport size upon main frame resize.
         */
       @JSName("Overlay.setShowViewportSizeOnResize")
-      var OverlayDotsetShowViewportSizeOnResize: `140`
+      var OverlayDotsetShowViewportSizeOnResize: `160`
+      
+      /**
+        * Request that backend shows an overlay with web vital metrics.
+        */
+      @JSName("Overlay.setShowWebVitals")
+      var OverlayDotsetShowWebVitals: `159`
       
       /**
         * Seeds compilation cache for given url. Compilation cache does not survive
         * cross-process navigation.
         */
       @JSName("Page.addCompilationCache")
-      var PageDotaddCompilationCache: `163`
+      var PageDotaddCompilationCache: `184`
       
       /**
         * Deprecated, please use addScriptToEvaluateOnNewDocument instead.
@@ -2616,7 +2874,7 @@ object protocolMappingMod {
       var PageDotclearCompilationCache: ParamsType
       
       /**
-        * Clears the overriden device metrics.
+        * Clears the overridden device metrics.
         */
       @JSName("Page.clearDeviceMetricsOverride")
       var PageDotclearDeviceMetricsOverride: ParamsType
@@ -2628,7 +2886,7 @@ object protocolMappingMod {
       var PageDotclearDeviceOrientationOverride: ParamsType
       
       /**
-        * Clears the overriden Geolocation Position and Error.
+        * Clears the overridden Geolocation Position and Error.
         */
       @JSName("Page.clearGeolocationOverride")
       var PageDotclearGeolocationOverride: ParamsType
@@ -2655,7 +2913,7 @@ object protocolMappingMod {
         * Deletes browser cookie with given name, domain and path.
         */
       @JSName("Page.deleteCookie")
-      var PageDotdeleteCookie: `142`
+      var PageDotdeleteCookie: `163`
       
       /**
         * Disables page domain notifications.
@@ -2673,7 +2931,14 @@ object protocolMappingMod {
         * Generates a report for testing.
         */
       @JSName("Page.generateTestReport")
-      var PageDotgenerateTestReport: `164`
+      var PageDotgenerateTestReport: `186`
+      
+      /**
+        * Returns the unique (PWA) app id.
+        * Only returns values if the feature flag 'WebAppEnableManifestId' is enabled
+        */
+      @JSName("Page.getAppId")
+      var PageDotgetAppId: ReturnTypeGetAppIdResponse
       
       @JSName("Page.getAppManifest")
       var PageDotgetAppManifest: ReturnTypeGetAppManifestResponse
@@ -2710,6 +2975,18 @@ object protocolMappingMod {
       var PageDotgetNavigationHistory: ReturnTypeGetNavigationHistoryResponse
       
       /**
+        * Get Origin Trials on given frame.
+        */
+      @JSName("Page.getOriginTrials")
+      var PageDotgetOriginTrials: ReturnTypeGetOriginTrialsResponse
+      
+      /**
+        * Get Permissions Policy state on given frame.
+        */
+      @JSName("Page.getPermissionsPolicyState")
+      var PageDotgetPermissionsPolicyState: ReturnTypeGetPermissionsPolicyStateResponse
+      
+      /**
         * Returns content of the given resource.
         */
       @JSName("Page.getResourceContent")
@@ -2725,7 +3002,7 @@ object protocolMappingMod {
         * Accepts or dismisses a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload).
         */
       @JSName("Page.handleJavaScriptDialog")
-      var PageDothandleJavaScriptDialog: `143`
+      var PageDothandleJavaScriptDialog: `164`
       
       /**
         * Navigates current page to the given URL.
@@ -2737,7 +3014,7 @@ object protocolMappingMod {
         * Navigates current page to the given history entry.
         */
       @JSName("Page.navigateToHistoryEntry")
-      var PageDotnavigateToHistoryEntry: `144`
+      var PageDotnavigateToHistoryEntry: `165`
       
       /**
         * Print page as PDF.
@@ -2746,22 +3023,33 @@ object protocolMappingMod {
       var PageDotprintToPDF: ReturnTypePrintToPDFResponse
       
       /**
+        * Requests backend to produce compilation cache for the specified scripts.
+        * `scripts` are appeneded to the list of scripts for which the cache
+        * would be produced. The list may be reset during page navigation.
+        * When script with a matching URL is encountered, the cache is optionally
+        * produced upon backend discretion, based on internal heuristics.
+        * See also: `Page.compilationCacheProduced`.
+        */
+      @JSName("Page.produceCompilationCache")
+      var PageDotproduceCompilationCache: `183`
+      
+      /**
         * Reloads given page optionally ignoring the cache.
         */
       @JSName("Page.reload")
-      var PageDotreload: `145`
+      var PageDotreload: `166`
       
       /**
         * Deprecated, please use removeScriptToEvaluateOnNewDocument instead.
         */
       @JSName("Page.removeScriptToEvaluateOnLoad")
-      var PageDotremoveScriptToEvaluateOnLoad: `146`
+      var PageDotremoveScriptToEvaluateOnLoad: `167`
       
       /**
         * Removes given script from the list.
         */
       @JSName("Page.removeScriptToEvaluateOnNewDocument")
-      var PageDotremoveScriptToEvaluateOnNewDocument: `147`
+      var PageDotremoveScriptToEvaluateOnNewDocument: `168`
       
       /**
         * Resets navigation history for the current page.
@@ -2773,7 +3061,7 @@ object protocolMappingMod {
         * Acknowledges that a screencast frame has been received by the frontend.
         */
       @JSName("Page.screencastFrameAck")
-      var PageDotscreencastFrameAck: `148`
+      var PageDotscreencastFrameAck: `169`
       
       /**
         * Searches for given string in resource content.
@@ -2785,13 +3073,13 @@ object protocolMappingMod {
         * Enable Chrome's experimental ad filter on all sites.
         */
       @JSName("Page.setAdBlockingEnabled")
-      var PageDotsetAdBlockingEnabled: `149`
+      var PageDotsetAdBlockingEnabled: `170`
       
       /**
         * Enable page Content Security Policy by-passing.
         */
       @JSName("Page.setBypassCSP")
-      var PageDotsetBypassCSP: `150`
+      var PageDotsetBypassCSP: `171`
       
       /**
         * Overrides the values of device screen dimensions (window.screen.width, window.screen.height,
@@ -2799,44 +3087,44 @@ object protocolMappingMod {
         * query results).
         */
       @JSName("Page.setDeviceMetricsOverride")
-      var PageDotsetDeviceMetricsOverride: `151`
+      var PageDotsetDeviceMetricsOverride: `172`
       
       /**
         * Overrides the Device Orientation.
         */
       @JSName("Page.setDeviceOrientationOverride")
-      var PageDotsetDeviceOrientationOverride: `152`
+      var PageDotsetDeviceOrientationOverride: `173`
       
       /**
         * Sets given markup as the document's HTML.
         */
       @JSName("Page.setDocumentContent")
-      var PageDotsetDocumentContent: `155`
+      var PageDotsetDocumentContent: `176`
       
       /**
         * Set the behavior when downloading a file.
         */
       @JSName("Page.setDownloadBehavior")
-      var PageDotsetDownloadBehavior: `156`
+      var PageDotsetDownloadBehavior: `177`
       
       /**
         * Set generic font families.
         */
       @JSName("Page.setFontFamilies")
-      var PageDotsetFontFamilies: `153`
+      var PageDotsetFontFamilies: `174`
       
       /**
         * Set default font sizes.
         */
       @JSName("Page.setFontSizes")
-      var PageDotsetFontSizes: `154`
+      var PageDotsetFontSizes: `175`
       
       /**
         * Overrides the Geolocation Position or Error. Omitting any of the parameters emulates position
         * unavailable.
         */
       @JSName("Page.setGeolocationOverride")
-      var PageDotsetGeolocationOverride: `157`
+      var PageDotsetGeolocationOverride: `178`
       
       /**
         * Intercept file chooser requests and transfer control to protocol clients.
@@ -2844,25 +3132,26 @@ object protocolMappingMod {
         * Instead, a protocol event `Page.fileChooserOpened` is emitted.
         */
       @JSName("Page.setInterceptFileChooserDialog")
-      var PageDotsetInterceptFileChooserDialog: `165`
+      var PageDotsetInterceptFileChooserDialog: `187`
       
       /**
         * Controls whether page will emit lifecycle events.
         */
       @JSName("Page.setLifecycleEventsEnabled")
-      var PageDotsetLifecycleEventsEnabled: `158`
+      var PageDotsetLifecycleEventsEnabled: `179`
       
       /**
-        * Forces compilation cache to be generated for every subresource script.
+        * Sets the Secure Payment Confirmation transaction mode.
+        * https://w3c.github.io/secure-payment-confirmation/#sctn-automation-set-spc-transaction-mode
         */
-      @JSName("Page.setProduceCompilationCache")
-      var PageDotsetProduceCompilationCache: `162`
+      @JSName("Page.setSPCTransactionMode")
+      var PageDotsetSPCTransactionMode: `185`
       
       /**
         * Toggles mouse event-based touch event emulation.
         */
       @JSName("Page.setTouchEmulationEnabled")
-      var PageDotsetTouchEmulationEnabled: `159`
+      var PageDotsetTouchEmulationEnabled: `180`
       
       /**
         * Tries to update the web lifecycle state of the page.
@@ -2870,13 +3159,13 @@ object protocolMappingMod {
         * https://github.com/WICG/web-lifecycle/
         */
       @JSName("Page.setWebLifecycleState")
-      var PageDotsetWebLifecycleState: `161`
+      var PageDotsetWebLifecycleState: `182`
       
       /**
         * Starts sending each frame using the `screencastFrame` event.
         */
       @JSName("Page.startScreencast")
-      var PageDotstartScreencast: `160`
+      var PageDotstartScreencast: `181`
       
       /**
         * Force the page stop all navigations and pending resource fetches.
@@ -2906,7 +3195,7 @@ object protocolMappingMod {
         * Enable collecting and reporting metrics.
         */
       @JSName("Performance.enable")
-      var PerformanceDotenable: `166`
+      var PerformanceDotenable: `188`
       
       /**
         * Retrieve current values of run-time metrics.
@@ -2920,37 +3209,20 @@ object protocolMappingMod {
         * this method while metrics collection is enabled returns an error.
         */
       @JSName("Performance.setTimeDomain")
-      var PerformanceDotsetTimeDomain: `167`
+      var PerformanceDotsetTimeDomain: `189`
+      
+      /**
+        * Previously buffered events would be reported before method returns.
+        * See also: timelineEventAdded
+        */
+      @JSName("PerformanceTimeline.enable")
+      var PerformanceTimelineDotenable: `190`
       
       @JSName("Profiler.disable")
       var ProfilerDotdisable: ParamsType
       
-      /**
-        * Disable counters collection.
-        */
-      @JSName("Profiler.disableCounters")
-      var ProfilerDotdisableCounters: ParamsType
-      
-      /**
-        * Disable run time call stats collection.
-        */
-      @JSName("Profiler.disableRuntimeCallStats")
-      var ProfilerDotdisableRuntimeCallStats: ParamsType
-      
       @JSName("Profiler.enable")
       var ProfilerDotenable: ParamsType
-      
-      /**
-        * Enable counters collection.
-        */
-      @JSName("Profiler.enableCounters")
-      var ProfilerDotenableCounters: ParamsType
-      
-      /**
-        * Enable run time call stats collection.
-        */
-      @JSName("Profiler.enableRuntimeCallStats")
-      var ProfilerDotenableRuntimeCallStats: ParamsType
       
       /**
         * Collect coverage data for the current isolate. The coverage data may be incomplete due to
@@ -2958,18 +3230,6 @@ object protocolMappingMod {
         */
       @JSName("Profiler.getBestEffortCoverage")
       var ProfilerDotgetBestEffortCoverage: ReturnTypeGetBestEffortCoverageResponse
-      
-      /**
-        * Retrieve counters.
-        */
-      @JSName("Profiler.getCounters")
-      var ProfilerDotgetCounters: ReturnTypeGetCountersResponse
-      
-      /**
-        * Retrieve run time call stats.
-        */
-      @JSName("Profiler.getRuntimeCallStats")
-      var ProfilerDotgetRuntimeCallStats: ReturnTypeGetRuntimeCallStatsResponse
       
       /**
         * Changes CPU profiler sampling interval. Must be called before CPU profiles recording started.
@@ -3027,8 +3287,6 @@ object protocolMappingMod {
         * If executionContextId is empty, adds binding with the given name on the
         * global objects of all inspected contexts, including those created later,
         * bindings survive reloads.
-        * If executionContextId is specified, adds binding only on global object of
-        * given execution context.
         * Binding function takes exactly one argument, this argument should be string,
         * in case of any other input, function throws an exception.
         * Each binding function call produces Runtime.bindingCalled notification.
@@ -3080,6 +3338,16 @@ object protocolMappingMod {
         */
       @JSName("Runtime.evaluate")
       var RuntimeDotevaluate: ReturnTypeEvaluateResponse
+      
+      /**
+        * This method tries to lookup and populate exception details for a
+        * JavaScript Error object.
+        * Note that the stackTrace portion of the resulting exceptionDetails will
+        * only be populated if the Runtime domain was enabled at the time when the
+        * Error was thrown.
+        */
+      @JSName("Runtime.getExceptionDetails")
+      var RuntimeDotgetExceptionDetails: ReturnTypeGetExceptionDetailsResponse
       
       /**
         * Returns the JavaScript heap usage.
@@ -3182,77 +3450,109 @@ object protocolMappingMod {
         * Handles a certificate error that fired a certificateError event.
         */
       @JSName("Security.handleCertificateError")
-      var SecurityDothandleCertificateError: `169`
+      var SecurityDothandleCertificateError: `192`
       
       /**
         * Enable/disable whether all certificate errors should be ignored.
         */
       @JSName("Security.setIgnoreCertificateErrors")
-      var SecurityDotsetIgnoreCertificateErrors: `168`
+      var SecurityDotsetIgnoreCertificateErrors: `191`
       
       /**
         * Enable/disable overriding certificate errors. If enabled, all certificate error events need to
         * be handled by the DevTools client and should be answered with `handleCertificateError` commands.
         */
       @JSName("Security.setOverrideCertificateErrors")
-      var SecurityDotsetOverrideCertificateErrors: `170`
+      var SecurityDotsetOverrideCertificateErrors: `193`
       
       @JSName("ServiceWorker.deliverPushMessage")
-      var ServiceWorkerDotdeliverPushMessage: `171`
+      var ServiceWorkerDotdeliverPushMessage: `194`
       
       @JSName("ServiceWorker.disable")
       var ServiceWorkerDotdisable: ParamsType
       
       @JSName("ServiceWorker.dispatchPeriodicSyncEvent")
-      var ServiceWorkerDotdispatchPeriodicSyncEvent: `173`
+      var ServiceWorkerDotdispatchPeriodicSyncEvent: `196`
       
       @JSName("ServiceWorker.dispatchSyncEvent")
-      var ServiceWorkerDotdispatchSyncEvent: `172`
+      var ServiceWorkerDotdispatchSyncEvent: `195`
       
       @JSName("ServiceWorker.enable")
       var ServiceWorkerDotenable: ParamsType
       
       @JSName("ServiceWorker.inspectWorker")
-      var ServiceWorkerDotinspectWorker: `174`
+      var ServiceWorkerDotinspectWorker: `197`
       
       @JSName("ServiceWorker.setForceUpdateOnPageLoad")
-      var ServiceWorkerDotsetForceUpdateOnPageLoad: `175`
+      var ServiceWorkerDotsetForceUpdateOnPageLoad: `198`
       
       @JSName("ServiceWorker.skipWaiting")
-      var ServiceWorkerDotskipWaiting: `176`
+      var ServiceWorkerDotskipWaiting: `199`
       
       @JSName("ServiceWorker.startWorker")
-      var ServiceWorkerDotstartWorker: `177`
+      var ServiceWorkerDotstartWorker: `200`
       
       @JSName("ServiceWorker.stopAllWorkers")
       var ServiceWorkerDotstopAllWorkers: ParamsType
       
       @JSName("ServiceWorker.stopWorker")
-      var ServiceWorkerDotstopWorker: `178`
+      var ServiceWorkerDotstopWorker: `201`
       
       @JSName("ServiceWorker.unregister")
-      var ServiceWorkerDotunregister: `179`
+      var ServiceWorkerDotunregister: `202`
       
       @JSName("ServiceWorker.updateRegistration")
-      var ServiceWorkerDotupdateRegistration: `180`
+      var ServiceWorkerDotupdateRegistration: `203`
       
       /**
         * Clears cookies.
         */
       @JSName("Storage.clearCookies")
-      var StorageDotclearCookies: `184`
+      var StorageDotclearCookies: `208`
       
       /**
         * Clears storage for origin.
         */
       @JSName("Storage.clearDataForOrigin")
-      var StorageDotclearDataForOrigin: `181`
+      var StorageDotclearDataForOrigin: `204`
+      
+      /**
+        * Clears storage for storage key.
+        */
+      @JSName("Storage.clearDataForStorageKey")
+      var StorageDotclearDataForStorageKey: `205`
+      
+      /**
+        * Removes all Trust Tokens issued by the provided issuerOrigin.
+        * Leaves other stored data, including the issuer's Redemption Records, intact.
+        */
+      @JSName("Storage.clearTrustTokens")
+      var StorageDotclearTrustTokens: ReturnTypeClearTrustTokensResponse
       
       /**
         * Returns all browser cookies.
         */
       @JSName("Storage.getCookies")
-      var StorageDotgetCookies: `182`
+      var StorageDotgetCookies: `206`
+      
+      /**
+        * Gets details for a named interest group.
+        */
+      @JSName("Storage.getInterestGroupDetails")
+      var StorageDotgetInterestGroupDetails: ReturnTypeGetInterestGroupDetailsResponse
+      
+      /**
+        * Returns a storage key given a frame id.
+        */
+      @JSName("Storage.getStorageKeyForFrame")
+      var StorageDotgetStorageKeyForFrame: ReturnTypeGetStorageKeyForFrameResponse
+      
+      /**
+        * Returns the number of stored Trust Tokens per issuer for the
+        * current browsing context.
+        */
+      @JSName("Storage.getTrustTokens")
+      var StorageDotgetTrustTokens: ReturnTypeGetTrustTokensResponse
       
       /**
         * Returns usage and quota in bytes.
@@ -3264,37 +3564,55 @@ object protocolMappingMod {
         * Override quota for the specified origin
         */
       @JSName("Storage.overrideQuotaForOrigin")
-      var StorageDotoverrideQuotaForOrigin: `185`
+      var StorageDotoverrideQuotaForOrigin: `209`
       
       /**
         * Sets given cookies.
         */
       @JSName("Storage.setCookies")
-      var StorageDotsetCookies: `183`
+      var StorageDotsetCookies: `207`
+      
+      /**
+        * Enables/Disables issuing of interestGroupAccessed events.
+        */
+      @JSName("Storage.setInterestGroupTracking")
+      var StorageDotsetInterestGroupTracking: `216`
       
       /**
         * Registers origin to be notified when an update occurs to its cache storage list.
         */
       @JSName("Storage.trackCacheStorageForOrigin")
-      var StorageDottrackCacheStorageForOrigin: `186`
+      var StorageDottrackCacheStorageForOrigin: `210`
       
       /**
         * Registers origin to be notified when an update occurs to its IndexedDB.
         */
       @JSName("Storage.trackIndexedDBForOrigin")
-      var StorageDottrackIndexedDBForOrigin: `187`
+      var StorageDottrackIndexedDBForOrigin: `211`
+      
+      /**
+        * Registers storage key to be notified when an update occurs to its IndexedDB.
+        */
+      @JSName("Storage.trackIndexedDBForStorageKey")
+      var StorageDottrackIndexedDBForStorageKey: `212`
       
       /**
         * Unregisters origin from receiving notifications for cache storage.
         */
       @JSName("Storage.untrackCacheStorageForOrigin")
-      var StorageDotuntrackCacheStorageForOrigin: `188`
+      var StorageDotuntrackCacheStorageForOrigin: `213`
       
       /**
         * Unregisters origin from receiving notifications for IndexedDB.
         */
       @JSName("Storage.untrackIndexedDBForOrigin")
-      var StorageDotuntrackIndexedDBForOrigin: `189`
+      var StorageDotuntrackIndexedDBForOrigin: `214`
+      
+      /**
+        * Unregisters storage key from receiving notifications for IndexedDB.
+        */
+      @JSName("Storage.untrackIndexedDBForStorageKey")
+      var StorageDotuntrackIndexedDBForStorageKey: `215`
       
       /**
         * Returns information about the system.
@@ -3312,7 +3630,7 @@ object protocolMappingMod {
         * Activates (focuses) the target.
         */
       @JSName("Target.activateTarget")
-      var TargetDotactivateTarget: `190`
+      var TargetDotactivateTarget: `217`
       
       /**
         * Attaches to the browser target, only uses flat sessionId mode.
@@ -3325,6 +3643,16 @@ object protocolMappingMod {
         */
       @JSName("Target.attachToTarget")
       var TargetDotattachToTarget: ReturnTypeAttachToTargetResponse
+      
+      /**
+        * Adds the specified target to the list of targets that will be monitored for any related target
+        * creation (such as child frames, child workers and new versions of service worker) and reported
+        * through `attachedToTarget`. The specified target is also auto-attached.
+        * This cancels the effect of any previous `setAutoAttach` and is also cancelled by subsequent
+        * `setAutoAttach`. Only available at the Browser target.
+        */
+      @JSName("Target.autoAttachRelated")
+      var TargetDotautoAttachRelated: `223`
       
       /**
         * Closes the target. If the target is a page that gets closed too.
@@ -3349,14 +3677,14 @@ object protocolMappingMod {
         * Detaches session with given id.
         */
       @JSName("Target.detachFromTarget")
-      var TargetDotdetachFromTarget: `192`
+      var TargetDotdetachFromTarget: `219`
       
       /**
         * Deletes a BrowserContext. All the belonging pages will be closed without calling their
         * beforeunload hooks.
         */
       @JSName("Target.disposeBrowserContext")
-      var TargetDotdisposeBrowserContext: `193`
+      var TargetDotdisposeBrowserContext: `220`
       
       /**
         * Inject object to the target's main frame that provides a communication
@@ -3369,7 +3697,7 @@ object protocolMappingMod {
         * - `binding.onmessage = json => handleMessage(json)` - a callback that will be called for the protocol notifications and command responses.
         */
       @JSName("Target.exposeDevToolsProtocol")
-      var TargetDotexposeDevToolsProtocol: `191`
+      var TargetDotexposeDevToolsProtocol: `218`
       
       /**
         * Returns all browser contexts created with `Target.createBrowserContext` method.
@@ -3395,41 +3723,43 @@ object protocolMappingMod {
         * and crbug.com/991325.
         */
       @JSName("Target.sendMessageToTarget")
-      var TargetDotsendMessageToTarget: `194`
+      var TargetDotsendMessageToTarget: `221`
       
       /**
         * Controls whether to automatically attach to new targets which are considered to be related to
         * this one. When turned on, attaches to all existing related targets as well. When turned off,
         * automatically detaches from all currently attached targets.
+        * This also clears all targets added by `autoAttachRelated` from the list of targets to watch
+        * for creation of related targets.
         */
       @JSName("Target.setAutoAttach")
-      var TargetDotsetAutoAttach: `195`
+      var TargetDotsetAutoAttach: `222`
       
       /**
         * Controls whether to discover available targets and notify via
         * `targetCreated/targetInfoChanged/targetDestroyed` events.
         */
       @JSName("Target.setDiscoverTargets")
-      var TargetDotsetDiscoverTargets: `196`
+      var TargetDotsetDiscoverTargets: `224`
       
       /**
         * Enables target discovery for the specified locations, when `setDiscoverTargets` was set to
         * `true`.
         */
       @JSName("Target.setRemoteLocations")
-      var TargetDotsetRemoteLocations: `197`
+      var TargetDotsetRemoteLocations: `225`
       
       /**
         * Request browser port binding.
         */
       @JSName("Tethering.bind")
-      var TetheringDotbind: `198`
+      var TetheringDotbind: `226`
       
       /**
         * Request browser port unbinding.
         */
       @JSName("Tethering.unbind")
-      var TetheringDotunbind: `199`
+      var TetheringDotunbind: `227`
       
       /**
         * Stop trace events collection.
@@ -3447,7 +3777,7 @@ object protocolMappingMod {
         * Record a clock sync marker in the trace.
         */
       @JSName("Tracing.recordClockSyncMarker")
-      var TracingDotrecordClockSyncMarker: `200`
+      var TracingDotrecordClockSyncMarker: `228`
       
       /**
         * Request a global memory dump.
@@ -3459,7 +3789,7 @@ object protocolMappingMod {
         * Start trace events collection.
         */
       @JSName("Tracing.start")
-      var TracingDotstart: `201`
+      var TracingDotstart: `229`
       
       /**
         * Disables the WebAudio domain.
@@ -3483,7 +3813,7 @@ object protocolMappingMod {
         * Adds the credential to the specified authenticator.
         */
       @JSName("WebAuthn.addCredential")
-      var WebAuthnDotaddCredential: `208`
+      var WebAuthnDotaddCredential: `238`
       
       /**
         * Creates and adds a virtual authenticator.
@@ -3495,7 +3825,7 @@ object protocolMappingMod {
         * Clears all the credentials from the specified device.
         */
       @JSName("WebAuthn.clearCredentials")
-      var WebAuthnDotclearCredentials: `210`
+      var WebAuthnDotclearCredentials: `240`
       
       /**
         * Disable the WebAuthn domain.
@@ -3508,7 +3838,7 @@ object protocolMappingMod {
         * retrieval with a virtual authenticator.
         */
       @JSName("WebAuthn.enable")
-      var WebAuthnDotenable: ParamsType
+      var WebAuthnDotenable: `236`
       
       /**
         * Returns a single credential stored in the given virtual authenticator that
@@ -3527,35 +3857,38 @@ object protocolMappingMod {
         * Removes a credential from the authenticator.
         */
       @JSName("WebAuthn.removeCredential")
-      var WebAuthnDotremoveCredential: `209`
+      var WebAuthnDotremoveCredential: `239`
       
       /**
         * Removes the given authenticator.
         */
       @JSName("WebAuthn.removeVirtualAuthenticator")
-      var WebAuthnDotremoveVirtualAuthenticator: `207`
+      var WebAuthnDotremoveVirtualAuthenticator: `237`
       
       /**
         * Sets whether tests of user presence will succeed immediately (if true) or fail to resolve (if false) for an authenticator.
         * The default is true.
         */
       @JSName("WebAuthn.setAutomaticPresenceSimulation")
-      var WebAuthnDotsetAutomaticPresenceSimulation: `212`
+      var WebAuthnDotsetAutomaticPresenceSimulation: `242`
       
       /**
         * Sets whether User Verification succeeds or fails for an authenticator.
         * The default is true.
         */
       @JSName("WebAuthn.setUserVerified")
-      var WebAuthnDotsetUserVerified: `211`
+      var WebAuthnDotsetUserVerified: `241`
     }
     object Commands {
       
       inline def apply(
         AccessibilityDotdisable: ParamsType,
         AccessibilityDotenable: ParamsType,
+        AccessibilityDotgetAXNodeAndAncestors: ReturnTypeGetAXNodeAndAncestorsResponse,
+        AccessibilityDotgetChildAXNodes: ReturnTypeGetChildAXNodesResponse,
         AccessibilityDotgetFullAXTree: ReturnTypeGetFullAXTreeResponse,
         AccessibilityDotgetPartialAXTree: ReturnTypeGetPartialAXTreeResponse,
+        AccessibilityDotgetRootAXNode: ReturnTypeGetRootAXNodeResponse,
         AccessibilityDotqueryAXTree: ReturnTypeQueryAXTreeResponse,
         AnimationDotdisable: ParamsType,
         AnimationDotenable: ParamsType,
@@ -3567,88 +3900,94 @@ object protocolMappingMod {
         AnimationDotsetPaused: `26`,
         AnimationDotsetPlaybackRate: `27`,
         AnimationDotsetTiming: `28`,
-        ApplicationCacheDotenable: ParamsType,
-        ApplicationCacheDotgetApplicationCacheForFrame: ReturnTypeGetApplicationCacheForFrameResponse,
-        ApplicationCacheDotgetFramesWithManifests: ReturnTypeGetFramesWithManifestsResponse,
-        ApplicationCacheDotgetManifestForFrame: ReturnTypeGetManifestForFrameResponse,
+        AuditsDotcheckContrast: `29`,
         AuditsDotdisable: ParamsType,
         AuditsDotenable: ParamsType,
         AuditsDotgetEncodedResponse: ReturnTypeGetEncodedResponseResponse,
-        BackgroundServiceDotclearEvents: `32`,
-        BackgroundServiceDotsetRecording: `31`,
-        BackgroundServiceDotstartObserving: `29`,
-        BackgroundServiceDotstopObserving: `30`,
+        BackgroundServiceDotclearEvents: `33`,
+        BackgroundServiceDotsetRecording: `32`,
+        BackgroundServiceDotstartObserving: `30`,
+        BackgroundServiceDotstopObserving: `31`,
+        BrowserDotcancelDownload: `38`,
         BrowserDotclose: ParamsType,
         BrowserDotcrash: ParamsType,
         BrowserDotcrashGpuProcess: ParamsType,
+        BrowserDotexecuteBrowserCommand: `41`,
         BrowserDotgetBrowserCommandLine: ReturnTypeGetBrowserCommandLineResponse,
         BrowserDotgetHistogram: ReturnTypeGetHistogramResponse,
         BrowserDotgetHistograms: ReturnTypeGetHistogramsResponse,
         BrowserDotgetVersion: ReturnTypeGetVersionResponse,
         BrowserDotgetWindowBounds: ReturnTypeGetWindowBoundsResponse,
         BrowserDotgetWindowForTarget: ReturnTypeGetWindowForTargetResponse,
-        BrowserDotgrantPermissions: `34`,
-        BrowserDotresetPermissions: `35`,
-        BrowserDotsetDockTile: `38`,
-        BrowserDotsetDownloadBehavior: `36`,
-        BrowserDotsetPermission: `33`,
-        BrowserDotsetWindowBounds: `37`,
+        BrowserDotgrantPermissions: `35`,
+        BrowserDotresetPermissions: `36`,
+        BrowserDotsetDockTile: `40`,
+        BrowserDotsetDownloadBehavior: `37`,
+        BrowserDotsetPermission: `34`,
+        BrowserDotsetWindowBounds: `39`,
         CSSDotaddRule: ReturnTypeAddRuleResponse,
         CSSDotcollectClassNames: ReturnTypeCollectClassNamesResponse,
         CSSDotcreateStyleSheet: ReturnTypeCreateStyleSheetResponse,
         CSSDotdisable: ParamsType,
         CSSDotenable: ParamsType,
-        CSSDotforcePseudoState: `39`,
+        CSSDotforcePseudoState: `42`,
         CSSDotgetBackgroundColors: ReturnTypeGetBackgroundColorsResponse,
         CSSDotgetComputedStyleForNode: ReturnTypeGetComputedStyleForNodeResponse,
         CSSDotgetInlineStylesForNode: ReturnTypeGetInlineStylesForNodeResponse,
+        CSSDotgetLayersForNode: ReturnTypeGetLayersForNodeResponse,
         CSSDotgetMatchedStylesForNode: ReturnTypeGetMatchedStylesForNodeResponse,
         CSSDotgetMediaQueries: ReturnTypeGetMediaQueriesResponse,
         CSSDotgetPlatformFontsForNode: ReturnTypeGetPlatformFontsForNodeResponse,
         CSSDotgetStyleSheetText: ReturnTypeGetStyleSheetTextResponse,
-        CSSDotsetEffectivePropertyValueForNode: `41`,
+        CSSDotsetContainerQueryText: ReturnTypeSetContainerQueryTextResponse,
+        CSSDotsetEffectivePropertyValueForNode: `44`,
         CSSDotsetKeyframeKey: ReturnTypeSetKeyframeKeyResponse,
-        CSSDotsetLocalFontsEnabled: `42`,
+        CSSDotsetLocalFontsEnabled: `45`,
         CSSDotsetMediaText: ReturnTypeSetMediaTextResponse,
         CSSDotsetRuleSelector: ReturnTypeSetRuleSelectorResponse,
+        CSSDotsetScopeText: ReturnTypeSetScopeTextResponse,
         CSSDotsetStyleSheetText: ReturnTypeSetStyleSheetTextResponse,
         CSSDotsetStyleTexts: ReturnTypeSetStyleTextsResponse,
+        CSSDotsetSupportsText: ReturnTypeSetSupportsTextResponse,
         CSSDotstartRuleUsageTracking: ParamsType,
         CSSDotstopRuleUsageTracking: ReturnTypeStopRuleUsageTrackingResponse,
         CSSDottakeComputedStyleUpdates: ReturnTypeTakeComputedStyleUpdatesResponse,
         CSSDottakeCoverageDelta: ReturnTypeTakeCoverageDeltaResponse,
-        CSSDottrackComputedStyleUpdates: `40`,
-        CacheStorageDotdeleteCache: `43`,
-        CacheStorageDotdeleteEntry: `44`,
+        CSSDottrackComputedStyleUpdates: `43`,
+        CacheStorageDotdeleteCache: `46`,
+        CacheStorageDotdeleteEntry: `47`,
         CacheStorageDotrequestCacheNames: ReturnTypeRequestCacheNamesResponse,
         CacheStorageDotrequestCachedResponse: ReturnTypeRequestCachedResponseResponse,
         CacheStorageDotrequestEntries: ReturnTypeRequestEntriesResponse,
         CastDotdisable: ParamsType,
-        CastDotenable: `45`,
-        CastDotsetSinkToUse: `46`,
-        CastDotstartTabMirroring: `47`,
-        CastDotstopCasting: `48`,
+        CastDotenable: `48`,
+        CastDotsetSinkToUse: `49`,
+        CastDotstartDesktopMirroring: `50`,
+        CastDotstartTabMirroring: `51`,
+        CastDotstopCasting: `52`,
         ConsoleDotclearMessages: ParamsType,
         ConsoleDotdisable: ParamsType,
         ConsoleDotenable: ParamsType,
         DOMDebuggerDotgetEventListeners: ReturnTypeGetEventListenersResponse,
-        DOMDebuggerDotremoveDOMBreakpoint: `62`,
-        DOMDebuggerDotremoveEventListenerBreakpoint: `63`,
-        DOMDebuggerDotremoveInstrumentationBreakpoint: `64`,
-        DOMDebuggerDotremoveXHRBreakpoint: `65`,
-        DOMDebuggerDotsetDOMBreakpoint: `66`,
-        DOMDebuggerDotsetEventListenerBreakpoint: `67`,
-        DOMDebuggerDotsetInstrumentationBreakpoint: `68`,
-        DOMDebuggerDotsetXHRBreakpoint: `69`,
+        DOMDebuggerDotremoveDOMBreakpoint: `67`,
+        DOMDebuggerDotremoveEventListenerBreakpoint: `68`,
+        DOMDebuggerDotremoveInstrumentationBreakpoint: `69`,
+        DOMDebuggerDotremoveXHRBreakpoint: `70`,
+        DOMDebuggerDotsetBreakOnCSPViolation: `71`,
+        DOMDebuggerDotsetDOMBreakpoint: `72`,
+        DOMDebuggerDotsetEventListenerBreakpoint: `73`,
+        DOMDebuggerDotsetInstrumentationBreakpoint: `74`,
+        DOMDebuggerDotsetXHRBreakpoint: `75`,
         DOMDotcollectClassNamesFromSubtree: ReturnTypeCollectClassNamesFromSubtreeResponse,
         DOMDotcopyTo: ReturnTypeCopyToResponse,
         DOMDotdescribeNode: ReturnTypeDescribeNodeResponse,
         DOMDotdisable: ParamsType,
-        DOMDotdiscardSearchResults: `50`,
-        DOMDotenable: ParamsType,
-        DOMDotfocus: `51`,
+        DOMDotdiscardSearchResults: `54`,
+        DOMDotenable: `55`,
+        DOMDotfocus: `56`,
         DOMDotgetAttributes: ReturnTypeGetAttributesResponse,
         DOMDotgetBoxModel: ReturnTypeGetBoxModelResponse,
+        DOMDotgetContainerForNode: ReturnTypeGetContainerForNodeResponse,
         DOMDotgetContentQuads: ReturnTypeGetContentQuadsResponse,
         DOMDotgetDocument: ReturnTypeGetDocumentResponse,
         DOMDotgetFileInfo: ReturnTypeGetFileInfoResponse,
@@ -3658,8 +3997,10 @@ object protocolMappingMod {
         DOMDotgetNodeStackTraces: ReturnTypeGetNodeStackTracesResponse,
         DOMDotgetNodesForSubtreeByStyle: ReturnTypeGetNodesForSubtreeByStyleResponse,
         DOMDotgetOuterHTML: ReturnTypeGetOuterHTMLResponse,
+        DOMDotgetQueryingDescendantsForContainer: ReturnTypeGetQueryingDescendantsForContainerResponse,
         DOMDotgetRelayoutBoundary: ReturnTypeGetRelayoutBoundaryResponse,
         DOMDotgetSearchResults: ReturnTypeGetSearchResultsResponse,
+        DOMDotgetTopLayerElements: ReturnTypeGetTopLayerElementsResponse,
         DOMDothideHighlight: ParamsType,
         DOMDothighlightNode: ParamsType,
         DOMDothighlightRect: ParamsType,
@@ -3671,44 +4012,45 @@ object protocolMappingMod {
         DOMDotquerySelector: ReturnTypeQuerySelectorResponse,
         DOMDotquerySelectorAll: ReturnTypeQuerySelectorAllResponse,
         DOMDotredo: ParamsType,
-        DOMDotremoveAttribute: `52`,
-        DOMDotremoveNode: `53`,
-        DOMDotrequestChildNodes: `54`,
+        DOMDotremoveAttribute: `57`,
+        DOMDotremoveNode: `58`,
+        DOMDotrequestChildNodes: `59`,
         DOMDotrequestNode: ReturnTypeRequestNodeResponse,
         DOMDotresolveNode: ReturnTypeResolveNodeResponse,
-        DOMDotscrollIntoViewIfNeeded: `49`,
-        DOMDotsetAttributeValue: `55`,
-        DOMDotsetAttributesAsText: `56`,
-        DOMDotsetFileInputFiles: `57`,
-        DOMDotsetInspectedNode: `59`,
+        DOMDotscrollIntoViewIfNeeded: `53`,
+        DOMDotsetAttributeValue: `60`,
+        DOMDotsetAttributesAsText: `61`,
+        DOMDotsetFileInputFiles: `62`,
+        DOMDotsetInspectedNode: `64`,
         DOMDotsetNodeName: ReturnTypeSetNodeNameResponse,
-        DOMDotsetNodeStackTracesEnabled: `58`,
-        DOMDotsetNodeValue: `60`,
-        DOMDotsetOuterHTML: `61`,
+        DOMDotsetNodeStackTracesEnabled: `63`,
+        DOMDotsetNodeValue: `65`,
+        DOMDotsetOuterHTML: `66`,
         DOMDotundo: ParamsType,
         DOMSnapshotDotcaptureSnapshot: ReturnTypeCaptureSnapshotResponse,
         DOMSnapshotDotdisable: ParamsType,
         DOMSnapshotDotenable: ParamsType,
         DOMSnapshotDotgetSnapshot: ReturnTypeGetSnapshotResponse,
-        DOMStorageDotclear: `70`,
+        DOMStorageDotclear: `78`,
         DOMStorageDotdisable: ParamsType,
         DOMStorageDotenable: ParamsType,
         DOMStorageDotgetDOMStorageItems: ReturnTypeGetDOMStorageItemsResponse,
-        DOMStorageDotremoveDOMStorageItem: `71`,
-        DOMStorageDotsetDOMStorageItem: `72`,
+        DOMStorageDotremoveDOMStorageItem: `79`,
+        DOMStorageDotsetDOMStorageItem: `80`,
         DatabaseDotdisable: ParamsType,
         DatabaseDotenable: ParamsType,
         DatabaseDotexecuteSQL: ReturnTypeExecuteSQLResponse,
         DatabaseDotgetDatabaseTableNames: ReturnTypeGetDatabaseTableNamesResponse,
         DebuggerDotcontinueToLocation: ReturnType,
         DebuggerDotdisable: ParamsType,
+        DebuggerDotdisassembleWasmModule: ReturnTypeDisassembleWasmModuleResponse,
         DebuggerDotenable: ParamsTypeReturnType,
         DebuggerDotevaluateOnCallFrame: ReturnTypeEvaluateOnCallFrameResponse,
-        DebuggerDotexecuteWasmEvaluator: ReturnTypeExecuteWasmEvaluatorResponse,
         DebuggerDotgetPossibleBreakpoints: ReturnTypeGetPossibleBreakpointsResponse,
         DebuggerDotgetScriptSource: ReturnTypeGetScriptSourceResponse,
         DebuggerDotgetStackTrace: ReturnTypeGetStackTraceResponse,
         DebuggerDotgetWasmBytecode: ReturnTypeGetWasmBytecodeResponse,
+        DebuggerDotnextWasmDisassemblyChunk: ReturnTypeNextWasmDisassemblyChunkResponse,
         DebuggerDotpause: ParamsType,
         DebuggerDotpauseOnAsyncCall: ReturnTypeVoid,
         DebuggerDotremoveBreakpoint: ParamsTypeReturnTypeVoid,
@@ -3732,38 +4074,45 @@ object protocolMappingMod {
         DebuggerDotstepOut: ParamsType,
         DebuggerDotstepOver: `10`,
         DeviceOrientationDotclearDeviceOrientationOverride: ParamsType,
-        DeviceOrientationDotsetDeviceOrientationOverride: `73`,
+        DeviceOrientationDotsetDeviceOrientationOverride: `81`,
         EmulationDotcanEmulate: ReturnTypeCanEmulateResponse,
         EmulationDotclearDeviceMetricsOverride: ParamsType,
         EmulationDotclearGeolocationOverride: ParamsType,
         EmulationDotclearIdleOverride: ParamsType,
         EmulationDotresetPageScaleFactor: ParamsType,
-        EmulationDotsetCPUThrottlingRate: `75`,
-        EmulationDotsetDefaultBackgroundColorOverride: `76`,
-        EmulationDotsetDeviceMetricsOverride: `77`,
-        EmulationDotsetDocumentCookieDisabled: `79`,
-        EmulationDotsetEmitTouchEventsForMouse: `80`,
-        EmulationDotsetEmulatedMedia: `81`,
-        EmulationDotsetEmulatedVisionDeficiency: `82`,
-        EmulationDotsetFocusEmulationEnabled: `74`,
-        EmulationDotsetGeolocationOverride: `83`,
-        EmulationDotsetIdleOverride: `84`,
-        EmulationDotsetLocaleOverride: `89`,
-        EmulationDotsetNavigatorOverrides: `85`,
-        EmulationDotsetPageScaleFactor: `86`,
-        EmulationDotsetScriptExecutionDisabled: `87`,
-        EmulationDotsetScrollbarsHidden: `78`,
-        EmulationDotsetTimezoneOverride: `90`,
-        EmulationDotsetTouchEmulationEnabled: `88`,
-        EmulationDotsetUserAgentOverride: `92`,
+        EmulationDotsetAutoDarkModeOverride: `83`,
+        EmulationDotsetAutomationOverride: `104`,
+        EmulationDotsetCPUThrottlingRate: `84`,
+        EmulationDotsetDefaultBackgroundColorOverride: `85`,
+        EmulationDotsetDeviceMetricsOverride: `86`,
+        EmulationDotsetDisabledImageTypes: `101`,
+        EmulationDotsetDocumentCookieDisabled: `88`,
+        EmulationDotsetEmitTouchEventsForMouse: `89`,
+        EmulationDotsetEmulatedMedia: `90`,
+        EmulationDotsetEmulatedVisionDeficiency: `91`,
+        EmulationDotsetFocusEmulationEnabled: `82`,
+        EmulationDotsetGeolocationOverride: `92`,
+        EmulationDotsetHardwareConcurrencyOverride: `102`,
+        EmulationDotsetIdleOverride: `93`,
+        EmulationDotsetLocaleOverride: `98`,
+        EmulationDotsetNavigatorOverrides: `94`,
+        EmulationDotsetPageScaleFactor: `95`,
+        EmulationDotsetScriptExecutionDisabled: `96`,
+        EmulationDotsetScrollbarsHidden: `87`,
+        EmulationDotsetTimezoneOverride: `99`,
+        EmulationDotsetTouchEmulationEnabled: `97`,
+        EmulationDotsetUserAgentOverride: `103`,
         EmulationDotsetVirtualTimePolicy: ReturnTypeSetVirtualTimePolicyResponse,
-        EmulationDotsetVisibleSize: `91`,
-        FetchDotcontinueRequest: `205`,
-        FetchDotcontinueWithAuth: `206`,
+        EmulationDotsetVisibleSize: `100`,
+        EventBreakpointsDotremoveInstrumentationBreakpoint: `77`,
+        EventBreakpointsDotsetInstrumentationBreakpoint: `76`,
+        FetchDotcontinueRequest: `233`,
+        FetchDotcontinueResponse: `235`,
+        FetchDotcontinueWithAuth: `234`,
         FetchDotdisable: ParamsType,
-        FetchDotenable: `202`,
-        FetchDotfailRequest: `203`,
-        FetchDotfulfillRequest: `204`,
+        FetchDotenable: `230`,
+        FetchDotfailRequest: `231`,
+        FetchDotfulfillRequest: `232`,
         FetchDotgetResponseBody: ParamsTypeReturnTypeGetResponseBodyResponse,
         FetchDottakeResponseBodyAsStream: ReturnTypeTakeResponseBodyAsStreamResponse,
         HeadlessExperimentalDotbeginFrame: ReturnTypeBeginFrameResponse,
@@ -3781,37 +4130,21 @@ object protocolMappingMod {
         HeapProfilerDotstopSampling: ReturnTypeStopSamplingResponse,
         HeapProfilerDotstopTrackingHeapObjects: `14`,
         HeapProfilerDottakeHeapSnapshot: `15`,
-        IODotclose: `93`,
+        IODotclose: `105`,
         IODotread: ReturnTypeReadResponse,
         IODotresolveBlob: ReturnTypeResolveBlobResponse,
-        IndexedDBDotclearObjectStore: `94`,
-        IndexedDBDotdeleteDatabase: `95`,
-        IndexedDBDotdeleteObjectStoreEntries: `96`,
-        IndexedDBDotdisable: ParamsType,
-        IndexedDBDotenable: ParamsType,
-        IndexedDBDotgetMetadata: ReturnTypeGetMetadataResponse,
-        IndexedDBDotrequestData: ReturnTypeRequestDataResponse,
-        IndexedDBDotrequestDatabase: ReturnTypeRequestDatabaseResponse,
-        IndexedDBDotrequestDatabaseNames: ReturnTypeRequestDatabaseNamesResponse,
-        InputDotdispatchKeyEvent: `97`,
-        InputDotdispatchMouseEvent: `99`,
-        InputDotdispatchTouchEvent: `100`,
-        InputDotemulateTouchFromMouseEvent: `101`,
-        InputDotinsertText: `98`,
-        InputDotsetIgnoreInputEvents: `102`,
-        InputDotsynthesizePinchGesture: `103`,
-        InputDotsynthesizeScrollGesture: `104`,
-        InputDotsynthesizeTapGesture: `105`,
-        InspectorDotdisable: ParamsType,
-        InspectorDotenable: ParamsType,
-        LayerTreeDotcompositingReasons: ReturnTypeCompositingReasonsResponse,
-        LayerTreeDotdisable: ParamsType
+        IndexedDBDotclearObjectStore: `106`,
+        IndexedDBDotdeleteDatabase: `107`,
+        IndexedDBDotdeleteObjectStoreEntries: `108`
       ): Commands = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("Accessibility.disable")(AccessibilityDotdisable.asInstanceOf[js.Any])
         __obj.updateDynamic("Accessibility.enable")(AccessibilityDotenable.asInstanceOf[js.Any])
+        __obj.updateDynamic("Accessibility.getAXNodeAndAncestors")(AccessibilityDotgetAXNodeAndAncestors.asInstanceOf[js.Any])
+        __obj.updateDynamic("Accessibility.getChildAXNodes")(AccessibilityDotgetChildAXNodes.asInstanceOf[js.Any])
         __obj.updateDynamic("Accessibility.getFullAXTree")(AccessibilityDotgetFullAXTree.asInstanceOf[js.Any])
         __obj.updateDynamic("Accessibility.getPartialAXTree")(AccessibilityDotgetPartialAXTree.asInstanceOf[js.Any])
+        __obj.updateDynamic("Accessibility.getRootAXNode")(AccessibilityDotgetRootAXNode.asInstanceOf[js.Any])
         __obj.updateDynamic("Accessibility.queryAXTree")(AccessibilityDotqueryAXTree.asInstanceOf[js.Any])
         __obj.updateDynamic("Animation.disable")(AnimationDotdisable.asInstanceOf[js.Any])
         __obj.updateDynamic("Animation.enable")(AnimationDotenable.asInstanceOf[js.Any])
@@ -3823,10 +4156,7 @@ object protocolMappingMod {
         __obj.updateDynamic("Animation.setPaused")(AnimationDotsetPaused.asInstanceOf[js.Any])
         __obj.updateDynamic("Animation.setPlaybackRate")(AnimationDotsetPlaybackRate.asInstanceOf[js.Any])
         __obj.updateDynamic("Animation.setTiming")(AnimationDotsetTiming.asInstanceOf[js.Any])
-        __obj.updateDynamic("ApplicationCache.enable")(ApplicationCacheDotenable.asInstanceOf[js.Any])
-        __obj.updateDynamic("ApplicationCache.getApplicationCacheForFrame")(ApplicationCacheDotgetApplicationCacheForFrame.asInstanceOf[js.Any])
-        __obj.updateDynamic("ApplicationCache.getFramesWithManifests")(ApplicationCacheDotgetFramesWithManifests.asInstanceOf[js.Any])
-        __obj.updateDynamic("ApplicationCache.getManifestForFrame")(ApplicationCacheDotgetManifestForFrame.asInstanceOf[js.Any])
+        __obj.updateDynamic("Audits.checkContrast")(AuditsDotcheckContrast.asInstanceOf[js.Any])
         __obj.updateDynamic("Audits.disable")(AuditsDotdisable.asInstanceOf[js.Any])
         __obj.updateDynamic("Audits.enable")(AuditsDotenable.asInstanceOf[js.Any])
         __obj.updateDynamic("Audits.getEncodedResponse")(AuditsDotgetEncodedResponse.asInstanceOf[js.Any])
@@ -3834,9 +4164,11 @@ object protocolMappingMod {
         __obj.updateDynamic("BackgroundService.setRecording")(BackgroundServiceDotsetRecording.asInstanceOf[js.Any])
         __obj.updateDynamic("BackgroundService.startObserving")(BackgroundServiceDotstartObserving.asInstanceOf[js.Any])
         __obj.updateDynamic("BackgroundService.stopObserving")(BackgroundServiceDotstopObserving.asInstanceOf[js.Any])
+        __obj.updateDynamic("Browser.cancelDownload")(BrowserDotcancelDownload.asInstanceOf[js.Any])
         __obj.updateDynamic("Browser.close")(BrowserDotclose.asInstanceOf[js.Any])
         __obj.updateDynamic("Browser.crash")(BrowserDotcrash.asInstanceOf[js.Any])
         __obj.updateDynamic("Browser.crashGpuProcess")(BrowserDotcrashGpuProcess.asInstanceOf[js.Any])
+        __obj.updateDynamic("Browser.executeBrowserCommand")(BrowserDotexecuteBrowserCommand.asInstanceOf[js.Any])
         __obj.updateDynamic("Browser.getBrowserCommandLine")(BrowserDotgetBrowserCommandLine.asInstanceOf[js.Any])
         __obj.updateDynamic("Browser.getHistogram")(BrowserDotgetHistogram.asInstanceOf[js.Any])
         __obj.updateDynamic("Browser.getHistograms")(BrowserDotgetHistograms.asInstanceOf[js.Any])
@@ -3858,17 +4190,21 @@ object protocolMappingMod {
         __obj.updateDynamic("CSS.getBackgroundColors")(CSSDotgetBackgroundColors.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.getComputedStyleForNode")(CSSDotgetComputedStyleForNode.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.getInlineStylesForNode")(CSSDotgetInlineStylesForNode.asInstanceOf[js.Any])
+        __obj.updateDynamic("CSS.getLayersForNode")(CSSDotgetLayersForNode.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.getMatchedStylesForNode")(CSSDotgetMatchedStylesForNode.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.getMediaQueries")(CSSDotgetMediaQueries.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.getPlatformFontsForNode")(CSSDotgetPlatformFontsForNode.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.getStyleSheetText")(CSSDotgetStyleSheetText.asInstanceOf[js.Any])
+        __obj.updateDynamic("CSS.setContainerQueryText")(CSSDotsetContainerQueryText.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.setEffectivePropertyValueForNode")(CSSDotsetEffectivePropertyValueForNode.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.setKeyframeKey")(CSSDotsetKeyframeKey.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.setLocalFontsEnabled")(CSSDotsetLocalFontsEnabled.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.setMediaText")(CSSDotsetMediaText.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.setRuleSelector")(CSSDotsetRuleSelector.asInstanceOf[js.Any])
+        __obj.updateDynamic("CSS.setScopeText")(CSSDotsetScopeText.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.setStyleSheetText")(CSSDotsetStyleSheetText.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.setStyleTexts")(CSSDotsetStyleTexts.asInstanceOf[js.Any])
+        __obj.updateDynamic("CSS.setSupportsText")(CSSDotsetSupportsText.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.startRuleUsageTracking")(CSSDotstartRuleUsageTracking.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.stopRuleUsageTracking")(CSSDotstopRuleUsageTracking.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.takeComputedStyleUpdates")(CSSDottakeComputedStyleUpdates.asInstanceOf[js.Any])
@@ -3882,6 +4218,7 @@ object protocolMappingMod {
         __obj.updateDynamic("Cast.disable")(CastDotdisable.asInstanceOf[js.Any])
         __obj.updateDynamic("Cast.enable")(CastDotenable.asInstanceOf[js.Any])
         __obj.updateDynamic("Cast.setSinkToUse")(CastDotsetSinkToUse.asInstanceOf[js.Any])
+        __obj.updateDynamic("Cast.startDesktopMirroring")(CastDotstartDesktopMirroring.asInstanceOf[js.Any])
         __obj.updateDynamic("Cast.startTabMirroring")(CastDotstartTabMirroring.asInstanceOf[js.Any])
         __obj.updateDynamic("Cast.stopCasting")(CastDotstopCasting.asInstanceOf[js.Any])
         __obj.updateDynamic("Console.clearMessages")(ConsoleDotclearMessages.asInstanceOf[js.Any])
@@ -3892,6 +4229,7 @@ object protocolMappingMod {
         __obj.updateDynamic("DOMDebugger.removeEventListenerBreakpoint")(DOMDebuggerDotremoveEventListenerBreakpoint.asInstanceOf[js.Any])
         __obj.updateDynamic("DOMDebugger.removeInstrumentationBreakpoint")(DOMDebuggerDotremoveInstrumentationBreakpoint.asInstanceOf[js.Any])
         __obj.updateDynamic("DOMDebugger.removeXHRBreakpoint")(DOMDebuggerDotremoveXHRBreakpoint.asInstanceOf[js.Any])
+        __obj.updateDynamic("DOMDebugger.setBreakOnCSPViolation")(DOMDebuggerDotsetBreakOnCSPViolation.asInstanceOf[js.Any])
         __obj.updateDynamic("DOMDebugger.setDOMBreakpoint")(DOMDebuggerDotsetDOMBreakpoint.asInstanceOf[js.Any])
         __obj.updateDynamic("DOMDebugger.setEventListenerBreakpoint")(DOMDebuggerDotsetEventListenerBreakpoint.asInstanceOf[js.Any])
         __obj.updateDynamic("DOMDebugger.setInstrumentationBreakpoint")(DOMDebuggerDotsetInstrumentationBreakpoint.asInstanceOf[js.Any])
@@ -3905,6 +4243,7 @@ object protocolMappingMod {
         __obj.updateDynamic("DOM.focus")(DOMDotfocus.asInstanceOf[js.Any])
         __obj.updateDynamic("DOM.getAttributes")(DOMDotgetAttributes.asInstanceOf[js.Any])
         __obj.updateDynamic("DOM.getBoxModel")(DOMDotgetBoxModel.asInstanceOf[js.Any])
+        __obj.updateDynamic("DOM.getContainerForNode")(DOMDotgetContainerForNode.asInstanceOf[js.Any])
         __obj.updateDynamic("DOM.getContentQuads")(DOMDotgetContentQuads.asInstanceOf[js.Any])
         __obj.updateDynamic("DOM.getDocument")(DOMDotgetDocument.asInstanceOf[js.Any])
         __obj.updateDynamic("DOM.getFileInfo")(DOMDotgetFileInfo.asInstanceOf[js.Any])
@@ -3914,8 +4253,10 @@ object protocolMappingMod {
         __obj.updateDynamic("DOM.getNodeStackTraces")(DOMDotgetNodeStackTraces.asInstanceOf[js.Any])
         __obj.updateDynamic("DOM.getNodesForSubtreeByStyle")(DOMDotgetNodesForSubtreeByStyle.asInstanceOf[js.Any])
         __obj.updateDynamic("DOM.getOuterHTML")(DOMDotgetOuterHTML.asInstanceOf[js.Any])
+        __obj.updateDynamic("DOM.getQueryingDescendantsForContainer")(DOMDotgetQueryingDescendantsForContainer.asInstanceOf[js.Any])
         __obj.updateDynamic("DOM.getRelayoutBoundary")(DOMDotgetRelayoutBoundary.asInstanceOf[js.Any])
         __obj.updateDynamic("DOM.getSearchResults")(DOMDotgetSearchResults.asInstanceOf[js.Any])
+        __obj.updateDynamic("DOM.getTopLayerElements")(DOMDotgetTopLayerElements.asInstanceOf[js.Any])
         __obj.updateDynamic("DOM.hideHighlight")(DOMDothideHighlight.asInstanceOf[js.Any])
         __obj.updateDynamic("DOM.highlightNode")(DOMDothighlightNode.asInstanceOf[js.Any])
         __obj.updateDynamic("DOM.highlightRect")(DOMDothighlightRect.asInstanceOf[js.Any])
@@ -3958,13 +4299,14 @@ object protocolMappingMod {
         __obj.updateDynamic("Database.getDatabaseTableNames")(DatabaseDotgetDatabaseTableNames.asInstanceOf[js.Any])
         __obj.updateDynamic("Debugger.continueToLocation")(DebuggerDotcontinueToLocation.asInstanceOf[js.Any])
         __obj.updateDynamic("Debugger.disable")(DebuggerDotdisable.asInstanceOf[js.Any])
+        __obj.updateDynamic("Debugger.disassembleWasmModule")(DebuggerDotdisassembleWasmModule.asInstanceOf[js.Any])
         __obj.updateDynamic("Debugger.enable")(DebuggerDotenable.asInstanceOf[js.Any])
         __obj.updateDynamic("Debugger.evaluateOnCallFrame")(DebuggerDotevaluateOnCallFrame.asInstanceOf[js.Any])
-        __obj.updateDynamic("Debugger.executeWasmEvaluator")(DebuggerDotexecuteWasmEvaluator.asInstanceOf[js.Any])
         __obj.updateDynamic("Debugger.getPossibleBreakpoints")(DebuggerDotgetPossibleBreakpoints.asInstanceOf[js.Any])
         __obj.updateDynamic("Debugger.getScriptSource")(DebuggerDotgetScriptSource.asInstanceOf[js.Any])
         __obj.updateDynamic("Debugger.getStackTrace")(DebuggerDotgetStackTrace.asInstanceOf[js.Any])
         __obj.updateDynamic("Debugger.getWasmBytecode")(DebuggerDotgetWasmBytecode.asInstanceOf[js.Any])
+        __obj.updateDynamic("Debugger.nextWasmDisassemblyChunk")(DebuggerDotnextWasmDisassemblyChunk.asInstanceOf[js.Any])
         __obj.updateDynamic("Debugger.pause")(DebuggerDotpause.asInstanceOf[js.Any])
         __obj.updateDynamic("Debugger.pauseOnAsyncCall")(DebuggerDotpauseOnAsyncCall.asInstanceOf[js.Any])
         __obj.updateDynamic("Debugger.removeBreakpoint")(DebuggerDotremoveBreakpoint.asInstanceOf[js.Any])
@@ -3994,15 +4336,19 @@ object protocolMappingMod {
         __obj.updateDynamic("Emulation.clearGeolocationOverride")(EmulationDotclearGeolocationOverride.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.clearIdleOverride")(EmulationDotclearIdleOverride.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.resetPageScaleFactor")(EmulationDotresetPageScaleFactor.asInstanceOf[js.Any])
+        __obj.updateDynamic("Emulation.setAutoDarkModeOverride")(EmulationDotsetAutoDarkModeOverride.asInstanceOf[js.Any])
+        __obj.updateDynamic("Emulation.setAutomationOverride")(EmulationDotsetAutomationOverride.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.setCPUThrottlingRate")(EmulationDotsetCPUThrottlingRate.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.setDefaultBackgroundColorOverride")(EmulationDotsetDefaultBackgroundColorOverride.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.setDeviceMetricsOverride")(EmulationDotsetDeviceMetricsOverride.asInstanceOf[js.Any])
+        __obj.updateDynamic("Emulation.setDisabledImageTypes")(EmulationDotsetDisabledImageTypes.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.setDocumentCookieDisabled")(EmulationDotsetDocumentCookieDisabled.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.setEmitTouchEventsForMouse")(EmulationDotsetEmitTouchEventsForMouse.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.setEmulatedMedia")(EmulationDotsetEmulatedMedia.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.setEmulatedVisionDeficiency")(EmulationDotsetEmulatedVisionDeficiency.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.setFocusEmulationEnabled")(EmulationDotsetFocusEmulationEnabled.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.setGeolocationOverride")(EmulationDotsetGeolocationOverride.asInstanceOf[js.Any])
+        __obj.updateDynamic("Emulation.setHardwareConcurrencyOverride")(EmulationDotsetHardwareConcurrencyOverride.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.setIdleOverride")(EmulationDotsetIdleOverride.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.setLocaleOverride")(EmulationDotsetLocaleOverride.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.setNavigatorOverrides")(EmulationDotsetNavigatorOverrides.asInstanceOf[js.Any])
@@ -4014,7 +4360,10 @@ object protocolMappingMod {
         __obj.updateDynamic("Emulation.setUserAgentOverride")(EmulationDotsetUserAgentOverride.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.setVirtualTimePolicy")(EmulationDotsetVirtualTimePolicy.asInstanceOf[js.Any])
         __obj.updateDynamic("Emulation.setVisibleSize")(EmulationDotsetVisibleSize.asInstanceOf[js.Any])
+        __obj.updateDynamic("EventBreakpoints.removeInstrumentationBreakpoint")(EventBreakpointsDotremoveInstrumentationBreakpoint.asInstanceOf[js.Any])
+        __obj.updateDynamic("EventBreakpoints.setInstrumentationBreakpoint")(EventBreakpointsDotsetInstrumentationBreakpoint.asInstanceOf[js.Any])
         __obj.updateDynamic("Fetch.continueRequest")(FetchDotcontinueRequest.asInstanceOf[js.Any])
+        __obj.updateDynamic("Fetch.continueResponse")(FetchDotcontinueResponse.asInstanceOf[js.Any])
         __obj.updateDynamic("Fetch.continueWithAuth")(FetchDotcontinueWithAuth.asInstanceOf[js.Any])
         __obj.updateDynamic("Fetch.disable")(FetchDotdisable.asInstanceOf[js.Any])
         __obj.updateDynamic("Fetch.enable")(FetchDotenable.asInstanceOf[js.Any])
@@ -4043,25 +4392,6 @@ object protocolMappingMod {
         __obj.updateDynamic("IndexedDB.clearObjectStore")(IndexedDBDotclearObjectStore.asInstanceOf[js.Any])
         __obj.updateDynamic("IndexedDB.deleteDatabase")(IndexedDBDotdeleteDatabase.asInstanceOf[js.Any])
         __obj.updateDynamic("IndexedDB.deleteObjectStoreEntries")(IndexedDBDotdeleteObjectStoreEntries.asInstanceOf[js.Any])
-        __obj.updateDynamic("IndexedDB.disable")(IndexedDBDotdisable.asInstanceOf[js.Any])
-        __obj.updateDynamic("IndexedDB.enable")(IndexedDBDotenable.asInstanceOf[js.Any])
-        __obj.updateDynamic("IndexedDB.getMetadata")(IndexedDBDotgetMetadata.asInstanceOf[js.Any])
-        __obj.updateDynamic("IndexedDB.requestData")(IndexedDBDotrequestData.asInstanceOf[js.Any])
-        __obj.updateDynamic("IndexedDB.requestDatabase")(IndexedDBDotrequestDatabase.asInstanceOf[js.Any])
-        __obj.updateDynamic("IndexedDB.requestDatabaseNames")(IndexedDBDotrequestDatabaseNames.asInstanceOf[js.Any])
-        __obj.updateDynamic("Input.dispatchKeyEvent")(InputDotdispatchKeyEvent.asInstanceOf[js.Any])
-        __obj.updateDynamic("Input.dispatchMouseEvent")(InputDotdispatchMouseEvent.asInstanceOf[js.Any])
-        __obj.updateDynamic("Input.dispatchTouchEvent")(InputDotdispatchTouchEvent.asInstanceOf[js.Any])
-        __obj.updateDynamic("Input.emulateTouchFromMouseEvent")(InputDotemulateTouchFromMouseEvent.asInstanceOf[js.Any])
-        __obj.updateDynamic("Input.insertText")(InputDotinsertText.asInstanceOf[js.Any])
-        __obj.updateDynamic("Input.setIgnoreInputEvents")(InputDotsetIgnoreInputEvents.asInstanceOf[js.Any])
-        __obj.updateDynamic("Input.synthesizePinchGesture")(InputDotsynthesizePinchGesture.asInstanceOf[js.Any])
-        __obj.updateDynamic("Input.synthesizeScrollGesture")(InputDotsynthesizeScrollGesture.asInstanceOf[js.Any])
-        __obj.updateDynamic("Input.synthesizeTapGesture")(InputDotsynthesizeTapGesture.asInstanceOf[js.Any])
-        __obj.updateDynamic("Inspector.disable")(InspectorDotdisable.asInstanceOf[js.Any])
-        __obj.updateDynamic("Inspector.enable")(InspectorDotenable.asInstanceOf[js.Any])
-        __obj.updateDynamic("LayerTree.compositingReasons")(LayerTreeDotcompositingReasons.asInstanceOf[js.Any])
-        __obj.updateDynamic("LayerTree.disable")(LayerTreeDotdisable.asInstanceOf[js.Any])
         __obj.asInstanceOf[Commands]
       }
       
@@ -4071,9 +4401,15 @@ object protocolMappingMod {
         
         inline def setAccessibilityDotenable(value: ParamsType): Self = StObject.set(x, "Accessibility.enable", value.asInstanceOf[js.Any])
         
+        inline def setAccessibilityDotgetAXNodeAndAncestors(value: ReturnTypeGetAXNodeAndAncestorsResponse): Self = StObject.set(x, "Accessibility.getAXNodeAndAncestors", value.asInstanceOf[js.Any])
+        
+        inline def setAccessibilityDotgetChildAXNodes(value: ReturnTypeGetChildAXNodesResponse): Self = StObject.set(x, "Accessibility.getChildAXNodes", value.asInstanceOf[js.Any])
+        
         inline def setAccessibilityDotgetFullAXTree(value: ReturnTypeGetFullAXTreeResponse): Self = StObject.set(x, "Accessibility.getFullAXTree", value.asInstanceOf[js.Any])
         
         inline def setAccessibilityDotgetPartialAXTree(value: ReturnTypeGetPartialAXTreeResponse): Self = StObject.set(x, "Accessibility.getPartialAXTree", value.asInstanceOf[js.Any])
+        
+        inline def setAccessibilityDotgetRootAXNode(value: ReturnTypeGetRootAXNodeResponse): Self = StObject.set(x, "Accessibility.getRootAXNode", value.asInstanceOf[js.Any])
         
         inline def setAccessibilityDotqueryAXTree(value: ReturnTypeQueryAXTreeResponse): Self = StObject.set(x, "Accessibility.queryAXTree", value.asInstanceOf[js.Any])
         
@@ -4097,13 +4433,7 @@ object protocolMappingMod {
         
         inline def setAnimationDotsetTiming(value: `28`): Self = StObject.set(x, "Animation.setTiming", value.asInstanceOf[js.Any])
         
-        inline def setApplicationCacheDotenable(value: ParamsType): Self = StObject.set(x, "ApplicationCache.enable", value.asInstanceOf[js.Any])
-        
-        inline def setApplicationCacheDotgetApplicationCacheForFrame(value: ReturnTypeGetApplicationCacheForFrameResponse): Self = StObject.set(x, "ApplicationCache.getApplicationCacheForFrame", value.asInstanceOf[js.Any])
-        
-        inline def setApplicationCacheDotgetFramesWithManifests(value: ReturnTypeGetFramesWithManifestsResponse): Self = StObject.set(x, "ApplicationCache.getFramesWithManifests", value.asInstanceOf[js.Any])
-        
-        inline def setApplicationCacheDotgetManifestForFrame(value: ReturnTypeGetManifestForFrameResponse): Self = StObject.set(x, "ApplicationCache.getManifestForFrame", value.asInstanceOf[js.Any])
+        inline def setAuditsDotcheckContrast(value: `29`): Self = StObject.set(x, "Audits.checkContrast", value.asInstanceOf[js.Any])
         
         inline def setAuditsDotdisable(value: ParamsType): Self = StObject.set(x, "Audits.disable", value.asInstanceOf[js.Any])
         
@@ -4111,19 +4441,23 @@ object protocolMappingMod {
         
         inline def setAuditsDotgetEncodedResponse(value: ReturnTypeGetEncodedResponseResponse): Self = StObject.set(x, "Audits.getEncodedResponse", value.asInstanceOf[js.Any])
         
-        inline def setBackgroundServiceDotclearEvents(value: `32`): Self = StObject.set(x, "BackgroundService.clearEvents", value.asInstanceOf[js.Any])
+        inline def setBackgroundServiceDotclearEvents(value: `33`): Self = StObject.set(x, "BackgroundService.clearEvents", value.asInstanceOf[js.Any])
         
-        inline def setBackgroundServiceDotsetRecording(value: `31`): Self = StObject.set(x, "BackgroundService.setRecording", value.asInstanceOf[js.Any])
+        inline def setBackgroundServiceDotsetRecording(value: `32`): Self = StObject.set(x, "BackgroundService.setRecording", value.asInstanceOf[js.Any])
         
-        inline def setBackgroundServiceDotstartObserving(value: `29`): Self = StObject.set(x, "BackgroundService.startObserving", value.asInstanceOf[js.Any])
+        inline def setBackgroundServiceDotstartObserving(value: `30`): Self = StObject.set(x, "BackgroundService.startObserving", value.asInstanceOf[js.Any])
         
-        inline def setBackgroundServiceDotstopObserving(value: `30`): Self = StObject.set(x, "BackgroundService.stopObserving", value.asInstanceOf[js.Any])
+        inline def setBackgroundServiceDotstopObserving(value: `31`): Self = StObject.set(x, "BackgroundService.stopObserving", value.asInstanceOf[js.Any])
+        
+        inline def setBrowserDotcancelDownload(value: `38`): Self = StObject.set(x, "Browser.cancelDownload", value.asInstanceOf[js.Any])
         
         inline def setBrowserDotclose(value: ParamsType): Self = StObject.set(x, "Browser.close", value.asInstanceOf[js.Any])
         
         inline def setBrowserDotcrash(value: ParamsType): Self = StObject.set(x, "Browser.crash", value.asInstanceOf[js.Any])
         
         inline def setBrowserDotcrashGpuProcess(value: ParamsType): Self = StObject.set(x, "Browser.crashGpuProcess", value.asInstanceOf[js.Any])
+        
+        inline def setBrowserDotexecuteBrowserCommand(value: `41`): Self = StObject.set(x, "Browser.executeBrowserCommand", value.asInstanceOf[js.Any])
         
         inline def setBrowserDotgetBrowserCommandLine(value: ReturnTypeGetBrowserCommandLineResponse): Self = StObject.set(x, "Browser.getBrowserCommandLine", value.asInstanceOf[js.Any])
         
@@ -4137,17 +4471,17 @@ object protocolMappingMod {
         
         inline def setBrowserDotgetWindowForTarget(value: ReturnTypeGetWindowForTargetResponse): Self = StObject.set(x, "Browser.getWindowForTarget", value.asInstanceOf[js.Any])
         
-        inline def setBrowserDotgrantPermissions(value: `34`): Self = StObject.set(x, "Browser.grantPermissions", value.asInstanceOf[js.Any])
+        inline def setBrowserDotgrantPermissions(value: `35`): Self = StObject.set(x, "Browser.grantPermissions", value.asInstanceOf[js.Any])
         
-        inline def setBrowserDotresetPermissions(value: `35`): Self = StObject.set(x, "Browser.resetPermissions", value.asInstanceOf[js.Any])
+        inline def setBrowserDotresetPermissions(value: `36`): Self = StObject.set(x, "Browser.resetPermissions", value.asInstanceOf[js.Any])
         
-        inline def setBrowserDotsetDockTile(value: `38`): Self = StObject.set(x, "Browser.setDockTile", value.asInstanceOf[js.Any])
+        inline def setBrowserDotsetDockTile(value: `40`): Self = StObject.set(x, "Browser.setDockTile", value.asInstanceOf[js.Any])
         
-        inline def setBrowserDotsetDownloadBehavior(value: `36`): Self = StObject.set(x, "Browser.setDownloadBehavior", value.asInstanceOf[js.Any])
+        inline def setBrowserDotsetDownloadBehavior(value: `37`): Self = StObject.set(x, "Browser.setDownloadBehavior", value.asInstanceOf[js.Any])
         
-        inline def setBrowserDotsetPermission(value: `33`): Self = StObject.set(x, "Browser.setPermission", value.asInstanceOf[js.Any])
+        inline def setBrowserDotsetPermission(value: `34`): Self = StObject.set(x, "Browser.setPermission", value.asInstanceOf[js.Any])
         
-        inline def setBrowserDotsetWindowBounds(value: `37`): Self = StObject.set(x, "Browser.setWindowBounds", value.asInstanceOf[js.Any])
+        inline def setBrowserDotsetWindowBounds(value: `39`): Self = StObject.set(x, "Browser.setWindowBounds", value.asInstanceOf[js.Any])
         
         inline def setCSSDotaddRule(value: ReturnTypeAddRuleResponse): Self = StObject.set(x, "CSS.addRule", value.asInstanceOf[js.Any])
         
@@ -4159,13 +4493,15 @@ object protocolMappingMod {
         
         inline def setCSSDotenable(value: ParamsType): Self = StObject.set(x, "CSS.enable", value.asInstanceOf[js.Any])
         
-        inline def setCSSDotforcePseudoState(value: `39`): Self = StObject.set(x, "CSS.forcePseudoState", value.asInstanceOf[js.Any])
+        inline def setCSSDotforcePseudoState(value: `42`): Self = StObject.set(x, "CSS.forcePseudoState", value.asInstanceOf[js.Any])
         
         inline def setCSSDotgetBackgroundColors(value: ReturnTypeGetBackgroundColorsResponse): Self = StObject.set(x, "CSS.getBackgroundColors", value.asInstanceOf[js.Any])
         
         inline def setCSSDotgetComputedStyleForNode(value: ReturnTypeGetComputedStyleForNodeResponse): Self = StObject.set(x, "CSS.getComputedStyleForNode", value.asInstanceOf[js.Any])
         
         inline def setCSSDotgetInlineStylesForNode(value: ReturnTypeGetInlineStylesForNodeResponse): Self = StObject.set(x, "CSS.getInlineStylesForNode", value.asInstanceOf[js.Any])
+        
+        inline def setCSSDotgetLayersForNode(value: ReturnTypeGetLayersForNodeResponse): Self = StObject.set(x, "CSS.getLayersForNode", value.asInstanceOf[js.Any])
         
         inline def setCSSDotgetMatchedStylesForNode(value: ReturnTypeGetMatchedStylesForNodeResponse): Self = StObject.set(x, "CSS.getMatchedStylesForNode", value.asInstanceOf[js.Any])
         
@@ -4175,19 +4511,25 @@ object protocolMappingMod {
         
         inline def setCSSDotgetStyleSheetText(value: ReturnTypeGetStyleSheetTextResponse): Self = StObject.set(x, "CSS.getStyleSheetText", value.asInstanceOf[js.Any])
         
-        inline def setCSSDotsetEffectivePropertyValueForNode(value: `41`): Self = StObject.set(x, "CSS.setEffectivePropertyValueForNode", value.asInstanceOf[js.Any])
+        inline def setCSSDotsetContainerQueryText(value: ReturnTypeSetContainerQueryTextResponse): Self = StObject.set(x, "CSS.setContainerQueryText", value.asInstanceOf[js.Any])
+        
+        inline def setCSSDotsetEffectivePropertyValueForNode(value: `44`): Self = StObject.set(x, "CSS.setEffectivePropertyValueForNode", value.asInstanceOf[js.Any])
         
         inline def setCSSDotsetKeyframeKey(value: ReturnTypeSetKeyframeKeyResponse): Self = StObject.set(x, "CSS.setKeyframeKey", value.asInstanceOf[js.Any])
         
-        inline def setCSSDotsetLocalFontsEnabled(value: `42`): Self = StObject.set(x, "CSS.setLocalFontsEnabled", value.asInstanceOf[js.Any])
+        inline def setCSSDotsetLocalFontsEnabled(value: `45`): Self = StObject.set(x, "CSS.setLocalFontsEnabled", value.asInstanceOf[js.Any])
         
         inline def setCSSDotsetMediaText(value: ReturnTypeSetMediaTextResponse): Self = StObject.set(x, "CSS.setMediaText", value.asInstanceOf[js.Any])
         
         inline def setCSSDotsetRuleSelector(value: ReturnTypeSetRuleSelectorResponse): Self = StObject.set(x, "CSS.setRuleSelector", value.asInstanceOf[js.Any])
         
+        inline def setCSSDotsetScopeText(value: ReturnTypeSetScopeTextResponse): Self = StObject.set(x, "CSS.setScopeText", value.asInstanceOf[js.Any])
+        
         inline def setCSSDotsetStyleSheetText(value: ReturnTypeSetStyleSheetTextResponse): Self = StObject.set(x, "CSS.setStyleSheetText", value.asInstanceOf[js.Any])
         
         inline def setCSSDotsetStyleTexts(value: ReturnTypeSetStyleTextsResponse): Self = StObject.set(x, "CSS.setStyleTexts", value.asInstanceOf[js.Any])
+        
+        inline def setCSSDotsetSupportsText(value: ReturnTypeSetSupportsTextResponse): Self = StObject.set(x, "CSS.setSupportsText", value.asInstanceOf[js.Any])
         
         inline def setCSSDotstartRuleUsageTracking(value: ParamsType): Self = StObject.set(x, "CSS.startRuleUsageTracking", value.asInstanceOf[js.Any])
         
@@ -4197,11 +4539,11 @@ object protocolMappingMod {
         
         inline def setCSSDottakeCoverageDelta(value: ReturnTypeTakeCoverageDeltaResponse): Self = StObject.set(x, "CSS.takeCoverageDelta", value.asInstanceOf[js.Any])
         
-        inline def setCSSDottrackComputedStyleUpdates(value: `40`): Self = StObject.set(x, "CSS.trackComputedStyleUpdates", value.asInstanceOf[js.Any])
+        inline def setCSSDottrackComputedStyleUpdates(value: `43`): Self = StObject.set(x, "CSS.trackComputedStyleUpdates", value.asInstanceOf[js.Any])
         
-        inline def setCacheStorageDotdeleteCache(value: `43`): Self = StObject.set(x, "CacheStorage.deleteCache", value.asInstanceOf[js.Any])
+        inline def setCacheStorageDotdeleteCache(value: `46`): Self = StObject.set(x, "CacheStorage.deleteCache", value.asInstanceOf[js.Any])
         
-        inline def setCacheStorageDotdeleteEntry(value: `44`): Self = StObject.set(x, "CacheStorage.deleteEntry", value.asInstanceOf[js.Any])
+        inline def setCacheStorageDotdeleteEntry(value: `47`): Self = StObject.set(x, "CacheStorage.deleteEntry", value.asInstanceOf[js.Any])
         
         inline def setCacheStorageDotrequestCacheNames(value: ReturnTypeRequestCacheNamesResponse): Self = StObject.set(x, "CacheStorage.requestCacheNames", value.asInstanceOf[js.Any])
         
@@ -4211,13 +4553,15 @@ object protocolMappingMod {
         
         inline def setCastDotdisable(value: ParamsType): Self = StObject.set(x, "Cast.disable", value.asInstanceOf[js.Any])
         
-        inline def setCastDotenable(value: `45`): Self = StObject.set(x, "Cast.enable", value.asInstanceOf[js.Any])
+        inline def setCastDotenable(value: `48`): Self = StObject.set(x, "Cast.enable", value.asInstanceOf[js.Any])
         
-        inline def setCastDotsetSinkToUse(value: `46`): Self = StObject.set(x, "Cast.setSinkToUse", value.asInstanceOf[js.Any])
+        inline def setCastDotsetSinkToUse(value: `49`): Self = StObject.set(x, "Cast.setSinkToUse", value.asInstanceOf[js.Any])
         
-        inline def setCastDotstartTabMirroring(value: `47`): Self = StObject.set(x, "Cast.startTabMirroring", value.asInstanceOf[js.Any])
+        inline def setCastDotstartDesktopMirroring(value: `50`): Self = StObject.set(x, "Cast.startDesktopMirroring", value.asInstanceOf[js.Any])
         
-        inline def setCastDotstopCasting(value: `48`): Self = StObject.set(x, "Cast.stopCasting", value.asInstanceOf[js.Any])
+        inline def setCastDotstartTabMirroring(value: `51`): Self = StObject.set(x, "Cast.startTabMirroring", value.asInstanceOf[js.Any])
+        
+        inline def setCastDotstopCasting(value: `52`): Self = StObject.set(x, "Cast.stopCasting", value.asInstanceOf[js.Any])
         
         inline def setConsoleDotclearMessages(value: ParamsType): Self = StObject.set(x, "Console.clearMessages", value.asInstanceOf[js.Any])
         
@@ -4227,21 +4571,23 @@ object protocolMappingMod {
         
         inline def setDOMDebuggerDotgetEventListeners(value: ReturnTypeGetEventListenersResponse): Self = StObject.set(x, "DOMDebugger.getEventListeners", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotremoveDOMBreakpoint(value: `62`): Self = StObject.set(x, "DOMDebugger.removeDOMBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotremoveDOMBreakpoint(value: `67`): Self = StObject.set(x, "DOMDebugger.removeDOMBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotremoveEventListenerBreakpoint(value: `63`): Self = StObject.set(x, "DOMDebugger.removeEventListenerBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotremoveEventListenerBreakpoint(value: `68`): Self = StObject.set(x, "DOMDebugger.removeEventListenerBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotremoveInstrumentationBreakpoint(value: `64`): Self = StObject.set(x, "DOMDebugger.removeInstrumentationBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotremoveInstrumentationBreakpoint(value: `69`): Self = StObject.set(x, "DOMDebugger.removeInstrumentationBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotremoveXHRBreakpoint(value: `65`): Self = StObject.set(x, "DOMDebugger.removeXHRBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotremoveXHRBreakpoint(value: `70`): Self = StObject.set(x, "DOMDebugger.removeXHRBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotsetDOMBreakpoint(value: `66`): Self = StObject.set(x, "DOMDebugger.setDOMBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotsetBreakOnCSPViolation(value: `71`): Self = StObject.set(x, "DOMDebugger.setBreakOnCSPViolation", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotsetEventListenerBreakpoint(value: `67`): Self = StObject.set(x, "DOMDebugger.setEventListenerBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotsetDOMBreakpoint(value: `72`): Self = StObject.set(x, "DOMDebugger.setDOMBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotsetInstrumentationBreakpoint(value: `68`): Self = StObject.set(x, "DOMDebugger.setInstrumentationBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotsetEventListenerBreakpoint(value: `73`): Self = StObject.set(x, "DOMDebugger.setEventListenerBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotsetXHRBreakpoint(value: `69`): Self = StObject.set(x, "DOMDebugger.setXHRBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotsetInstrumentationBreakpoint(value: `74`): Self = StObject.set(x, "DOMDebugger.setInstrumentationBreakpoint", value.asInstanceOf[js.Any])
+        
+        inline def setDOMDebuggerDotsetXHRBreakpoint(value: `75`): Self = StObject.set(x, "DOMDebugger.setXHRBreakpoint", value.asInstanceOf[js.Any])
         
         inline def setDOMDotcollectClassNamesFromSubtree(value: ReturnTypeCollectClassNamesFromSubtreeResponse): Self = StObject.set(x, "DOM.collectClassNamesFromSubtree", value.asInstanceOf[js.Any])
         
@@ -4251,15 +4597,17 @@ object protocolMappingMod {
         
         inline def setDOMDotdisable(value: ParamsType): Self = StObject.set(x, "DOM.disable", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotdiscardSearchResults(value: `50`): Self = StObject.set(x, "DOM.discardSearchResults", value.asInstanceOf[js.Any])
+        inline def setDOMDotdiscardSearchResults(value: `54`): Self = StObject.set(x, "DOM.discardSearchResults", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotenable(value: ParamsType): Self = StObject.set(x, "DOM.enable", value.asInstanceOf[js.Any])
+        inline def setDOMDotenable(value: `55`): Self = StObject.set(x, "DOM.enable", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotfocus(value: `51`): Self = StObject.set(x, "DOM.focus", value.asInstanceOf[js.Any])
+        inline def setDOMDotfocus(value: `56`): Self = StObject.set(x, "DOM.focus", value.asInstanceOf[js.Any])
         
         inline def setDOMDotgetAttributes(value: ReturnTypeGetAttributesResponse): Self = StObject.set(x, "DOM.getAttributes", value.asInstanceOf[js.Any])
         
         inline def setDOMDotgetBoxModel(value: ReturnTypeGetBoxModelResponse): Self = StObject.set(x, "DOM.getBoxModel", value.asInstanceOf[js.Any])
+        
+        inline def setDOMDotgetContainerForNode(value: ReturnTypeGetContainerForNodeResponse): Self = StObject.set(x, "DOM.getContainerForNode", value.asInstanceOf[js.Any])
         
         inline def setDOMDotgetContentQuads(value: ReturnTypeGetContentQuadsResponse): Self = StObject.set(x, "DOM.getContentQuads", value.asInstanceOf[js.Any])
         
@@ -4279,9 +4627,13 @@ object protocolMappingMod {
         
         inline def setDOMDotgetOuterHTML(value: ReturnTypeGetOuterHTMLResponse): Self = StObject.set(x, "DOM.getOuterHTML", value.asInstanceOf[js.Any])
         
+        inline def setDOMDotgetQueryingDescendantsForContainer(value: ReturnTypeGetQueryingDescendantsForContainerResponse): Self = StObject.set(x, "DOM.getQueryingDescendantsForContainer", value.asInstanceOf[js.Any])
+        
         inline def setDOMDotgetRelayoutBoundary(value: ReturnTypeGetRelayoutBoundaryResponse): Self = StObject.set(x, "DOM.getRelayoutBoundary", value.asInstanceOf[js.Any])
         
         inline def setDOMDotgetSearchResults(value: ReturnTypeGetSearchResultsResponse): Self = StObject.set(x, "DOM.getSearchResults", value.asInstanceOf[js.Any])
+        
+        inline def setDOMDotgetTopLayerElements(value: ReturnTypeGetTopLayerElementsResponse): Self = StObject.set(x, "DOM.getTopLayerElements", value.asInstanceOf[js.Any])
         
         inline def setDOMDothideHighlight(value: ParamsType): Self = StObject.set(x, "DOM.hideHighlight", value.asInstanceOf[js.Any])
         
@@ -4305,33 +4657,33 @@ object protocolMappingMod {
         
         inline def setDOMDotredo(value: ParamsType): Self = StObject.set(x, "DOM.redo", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotremoveAttribute(value: `52`): Self = StObject.set(x, "DOM.removeAttribute", value.asInstanceOf[js.Any])
+        inline def setDOMDotremoveAttribute(value: `57`): Self = StObject.set(x, "DOM.removeAttribute", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotremoveNode(value: `53`): Self = StObject.set(x, "DOM.removeNode", value.asInstanceOf[js.Any])
+        inline def setDOMDotremoveNode(value: `58`): Self = StObject.set(x, "DOM.removeNode", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotrequestChildNodes(value: `54`): Self = StObject.set(x, "DOM.requestChildNodes", value.asInstanceOf[js.Any])
+        inline def setDOMDotrequestChildNodes(value: `59`): Self = StObject.set(x, "DOM.requestChildNodes", value.asInstanceOf[js.Any])
         
         inline def setDOMDotrequestNode(value: ReturnTypeRequestNodeResponse): Self = StObject.set(x, "DOM.requestNode", value.asInstanceOf[js.Any])
         
         inline def setDOMDotresolveNode(value: ReturnTypeResolveNodeResponse): Self = StObject.set(x, "DOM.resolveNode", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotscrollIntoViewIfNeeded(value: `49`): Self = StObject.set(x, "DOM.scrollIntoViewIfNeeded", value.asInstanceOf[js.Any])
+        inline def setDOMDotscrollIntoViewIfNeeded(value: `53`): Self = StObject.set(x, "DOM.scrollIntoViewIfNeeded", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotsetAttributeValue(value: `55`): Self = StObject.set(x, "DOM.setAttributeValue", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetAttributeValue(value: `60`): Self = StObject.set(x, "DOM.setAttributeValue", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotsetAttributesAsText(value: `56`): Self = StObject.set(x, "DOM.setAttributesAsText", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetAttributesAsText(value: `61`): Self = StObject.set(x, "DOM.setAttributesAsText", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotsetFileInputFiles(value: `57`): Self = StObject.set(x, "DOM.setFileInputFiles", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetFileInputFiles(value: `62`): Self = StObject.set(x, "DOM.setFileInputFiles", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotsetInspectedNode(value: `59`): Self = StObject.set(x, "DOM.setInspectedNode", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetInspectedNode(value: `64`): Self = StObject.set(x, "DOM.setInspectedNode", value.asInstanceOf[js.Any])
         
         inline def setDOMDotsetNodeName(value: ReturnTypeSetNodeNameResponse): Self = StObject.set(x, "DOM.setNodeName", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotsetNodeStackTracesEnabled(value: `58`): Self = StObject.set(x, "DOM.setNodeStackTracesEnabled", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetNodeStackTracesEnabled(value: `63`): Self = StObject.set(x, "DOM.setNodeStackTracesEnabled", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotsetNodeValue(value: `60`): Self = StObject.set(x, "DOM.setNodeValue", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetNodeValue(value: `65`): Self = StObject.set(x, "DOM.setNodeValue", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotsetOuterHTML(value: `61`): Self = StObject.set(x, "DOM.setOuterHTML", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetOuterHTML(value: `66`): Self = StObject.set(x, "DOM.setOuterHTML", value.asInstanceOf[js.Any])
         
         inline def setDOMDotundo(value: ParamsType): Self = StObject.set(x, "DOM.undo", value.asInstanceOf[js.Any])
         
@@ -4343,7 +4695,7 @@ object protocolMappingMod {
         
         inline def setDOMSnapshotDotgetSnapshot(value: ReturnTypeGetSnapshotResponse): Self = StObject.set(x, "DOMSnapshot.getSnapshot", value.asInstanceOf[js.Any])
         
-        inline def setDOMStorageDotclear(value: `70`): Self = StObject.set(x, "DOMStorage.clear", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotclear(value: `78`): Self = StObject.set(x, "DOMStorage.clear", value.asInstanceOf[js.Any])
         
         inline def setDOMStorageDotdisable(value: ParamsType): Self = StObject.set(x, "DOMStorage.disable", value.asInstanceOf[js.Any])
         
@@ -4351,9 +4703,9 @@ object protocolMappingMod {
         
         inline def setDOMStorageDotgetDOMStorageItems(value: ReturnTypeGetDOMStorageItemsResponse): Self = StObject.set(x, "DOMStorage.getDOMStorageItems", value.asInstanceOf[js.Any])
         
-        inline def setDOMStorageDotremoveDOMStorageItem(value: `71`): Self = StObject.set(x, "DOMStorage.removeDOMStorageItem", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotremoveDOMStorageItem(value: `79`): Self = StObject.set(x, "DOMStorage.removeDOMStorageItem", value.asInstanceOf[js.Any])
         
-        inline def setDOMStorageDotsetDOMStorageItem(value: `72`): Self = StObject.set(x, "DOMStorage.setDOMStorageItem", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotsetDOMStorageItem(value: `80`): Self = StObject.set(x, "DOMStorage.setDOMStorageItem", value.asInstanceOf[js.Any])
         
         inline def setDatabaseDotdisable(value: ParamsType): Self = StObject.set(x, "Database.disable", value.asInstanceOf[js.Any])
         
@@ -4367,11 +4719,11 @@ object protocolMappingMod {
         
         inline def setDebuggerDotdisable(value: ParamsType): Self = StObject.set(x, "Debugger.disable", value.asInstanceOf[js.Any])
         
+        inline def setDebuggerDotdisassembleWasmModule(value: ReturnTypeDisassembleWasmModuleResponse): Self = StObject.set(x, "Debugger.disassembleWasmModule", value.asInstanceOf[js.Any])
+        
         inline def setDebuggerDotenable(value: ParamsTypeReturnType): Self = StObject.set(x, "Debugger.enable", value.asInstanceOf[js.Any])
         
         inline def setDebuggerDotevaluateOnCallFrame(value: ReturnTypeEvaluateOnCallFrameResponse): Self = StObject.set(x, "Debugger.evaluateOnCallFrame", value.asInstanceOf[js.Any])
-        
-        inline def setDebuggerDotexecuteWasmEvaluator(value: ReturnTypeExecuteWasmEvaluatorResponse): Self = StObject.set(x, "Debugger.executeWasmEvaluator", value.asInstanceOf[js.Any])
         
         inline def setDebuggerDotgetPossibleBreakpoints(value: ReturnTypeGetPossibleBreakpointsResponse): Self = StObject.set(x, "Debugger.getPossibleBreakpoints", value.asInstanceOf[js.Any])
         
@@ -4380,6 +4732,8 @@ object protocolMappingMod {
         inline def setDebuggerDotgetStackTrace(value: ReturnTypeGetStackTraceResponse): Self = StObject.set(x, "Debugger.getStackTrace", value.asInstanceOf[js.Any])
         
         inline def setDebuggerDotgetWasmBytecode(value: ReturnTypeGetWasmBytecodeResponse): Self = StObject.set(x, "Debugger.getWasmBytecode", value.asInstanceOf[js.Any])
+        
+        inline def setDebuggerDotnextWasmDisassemblyChunk(value: ReturnTypeNextWasmDisassemblyChunkResponse): Self = StObject.set(x, "Debugger.nextWasmDisassemblyChunk", value.asInstanceOf[js.Any])
         
         inline def setDebuggerDotpause(value: ParamsType): Self = StObject.set(x, "Debugger.pause", value.asInstanceOf[js.Any])
         
@@ -4427,7 +4781,7 @@ object protocolMappingMod {
         
         inline def setDeviceOrientationDotclearDeviceOrientationOverride(value: ParamsType): Self = StObject.set(x, "DeviceOrientation.clearDeviceOrientationOverride", value.asInstanceOf[js.Any])
         
-        inline def setDeviceOrientationDotsetDeviceOrientationOverride(value: `73`): Self = StObject.set(x, "DeviceOrientation.setDeviceOrientationOverride", value.asInstanceOf[js.Any])
+        inline def setDeviceOrientationDotsetDeviceOrientationOverride(value: `81`): Self = StObject.set(x, "DeviceOrientation.setDeviceOrientationOverride", value.asInstanceOf[js.Any])
         
         inline def setEmulationDotcanEmulate(value: ReturnTypeCanEmulateResponse): Self = StObject.set(x, "Emulation.canEmulate", value.asInstanceOf[js.Any])
         
@@ -4439,57 +4793,71 @@ object protocolMappingMod {
         
         inline def setEmulationDotresetPageScaleFactor(value: ParamsType): Self = StObject.set(x, "Emulation.resetPageScaleFactor", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetCPUThrottlingRate(value: `75`): Self = StObject.set(x, "Emulation.setCPUThrottlingRate", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetAutoDarkModeOverride(value: `83`): Self = StObject.set(x, "Emulation.setAutoDarkModeOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetDefaultBackgroundColorOverride(value: `76`): Self = StObject.set(x, "Emulation.setDefaultBackgroundColorOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetAutomationOverride(value: `104`): Self = StObject.set(x, "Emulation.setAutomationOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetDeviceMetricsOverride(value: `77`): Self = StObject.set(x, "Emulation.setDeviceMetricsOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetCPUThrottlingRate(value: `84`): Self = StObject.set(x, "Emulation.setCPUThrottlingRate", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetDocumentCookieDisabled(value: `79`): Self = StObject.set(x, "Emulation.setDocumentCookieDisabled", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetDefaultBackgroundColorOverride(value: `85`): Self = StObject.set(x, "Emulation.setDefaultBackgroundColorOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetEmitTouchEventsForMouse(value: `80`): Self = StObject.set(x, "Emulation.setEmitTouchEventsForMouse", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetDeviceMetricsOverride(value: `86`): Self = StObject.set(x, "Emulation.setDeviceMetricsOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetEmulatedMedia(value: `81`): Self = StObject.set(x, "Emulation.setEmulatedMedia", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetDisabledImageTypes(value: `101`): Self = StObject.set(x, "Emulation.setDisabledImageTypes", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetEmulatedVisionDeficiency(value: `82`): Self = StObject.set(x, "Emulation.setEmulatedVisionDeficiency", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetDocumentCookieDisabled(value: `88`): Self = StObject.set(x, "Emulation.setDocumentCookieDisabled", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetFocusEmulationEnabled(value: `74`): Self = StObject.set(x, "Emulation.setFocusEmulationEnabled", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetEmitTouchEventsForMouse(value: `89`): Self = StObject.set(x, "Emulation.setEmitTouchEventsForMouse", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetGeolocationOverride(value: `83`): Self = StObject.set(x, "Emulation.setGeolocationOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetEmulatedMedia(value: `90`): Self = StObject.set(x, "Emulation.setEmulatedMedia", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetIdleOverride(value: `84`): Self = StObject.set(x, "Emulation.setIdleOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetEmulatedVisionDeficiency(value: `91`): Self = StObject.set(x, "Emulation.setEmulatedVisionDeficiency", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetLocaleOverride(value: `89`): Self = StObject.set(x, "Emulation.setLocaleOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetFocusEmulationEnabled(value: `82`): Self = StObject.set(x, "Emulation.setFocusEmulationEnabled", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetNavigatorOverrides(value: `85`): Self = StObject.set(x, "Emulation.setNavigatorOverrides", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetGeolocationOverride(value: `92`): Self = StObject.set(x, "Emulation.setGeolocationOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetPageScaleFactor(value: `86`): Self = StObject.set(x, "Emulation.setPageScaleFactor", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetHardwareConcurrencyOverride(value: `102`): Self = StObject.set(x, "Emulation.setHardwareConcurrencyOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetScriptExecutionDisabled(value: `87`): Self = StObject.set(x, "Emulation.setScriptExecutionDisabled", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetIdleOverride(value: `93`): Self = StObject.set(x, "Emulation.setIdleOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetScrollbarsHidden(value: `78`): Self = StObject.set(x, "Emulation.setScrollbarsHidden", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetLocaleOverride(value: `98`): Self = StObject.set(x, "Emulation.setLocaleOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetTimezoneOverride(value: `90`): Self = StObject.set(x, "Emulation.setTimezoneOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetNavigatorOverrides(value: `94`): Self = StObject.set(x, "Emulation.setNavigatorOverrides", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetTouchEmulationEnabled(value: `88`): Self = StObject.set(x, "Emulation.setTouchEmulationEnabled", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetPageScaleFactor(value: `95`): Self = StObject.set(x, "Emulation.setPageScaleFactor", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetUserAgentOverride(value: `92`): Self = StObject.set(x, "Emulation.setUserAgentOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetScriptExecutionDisabled(value: `96`): Self = StObject.set(x, "Emulation.setScriptExecutionDisabled", value.asInstanceOf[js.Any])
+        
+        inline def setEmulationDotsetScrollbarsHidden(value: `87`): Self = StObject.set(x, "Emulation.setScrollbarsHidden", value.asInstanceOf[js.Any])
+        
+        inline def setEmulationDotsetTimezoneOverride(value: `99`): Self = StObject.set(x, "Emulation.setTimezoneOverride", value.asInstanceOf[js.Any])
+        
+        inline def setEmulationDotsetTouchEmulationEnabled(value: `97`): Self = StObject.set(x, "Emulation.setTouchEmulationEnabled", value.asInstanceOf[js.Any])
+        
+        inline def setEmulationDotsetUserAgentOverride(value: `103`): Self = StObject.set(x, "Emulation.setUserAgentOverride", value.asInstanceOf[js.Any])
         
         inline def setEmulationDotsetVirtualTimePolicy(value: ReturnTypeSetVirtualTimePolicyResponse): Self = StObject.set(x, "Emulation.setVirtualTimePolicy", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetVisibleSize(value: `91`): Self = StObject.set(x, "Emulation.setVisibleSize", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetVisibleSize(value: `100`): Self = StObject.set(x, "Emulation.setVisibleSize", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotcontinueRequest(value: `205`): Self = StObject.set(x, "Fetch.continueRequest", value.asInstanceOf[js.Any])
+        inline def setEventBreakpointsDotremoveInstrumentationBreakpoint(value: `77`): Self = StObject.set(x, "EventBreakpoints.removeInstrumentationBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotcontinueWithAuth(value: `206`): Self = StObject.set(x, "Fetch.continueWithAuth", value.asInstanceOf[js.Any])
+        inline def setEventBreakpointsDotsetInstrumentationBreakpoint(value: `76`): Self = StObject.set(x, "EventBreakpoints.setInstrumentationBreakpoint", value.asInstanceOf[js.Any])
+        
+        inline def setFetchDotcontinueRequest(value: `233`): Self = StObject.set(x, "Fetch.continueRequest", value.asInstanceOf[js.Any])
+        
+        inline def setFetchDotcontinueResponse(value: `235`): Self = StObject.set(x, "Fetch.continueResponse", value.asInstanceOf[js.Any])
+        
+        inline def setFetchDotcontinueWithAuth(value: `234`): Self = StObject.set(x, "Fetch.continueWithAuth", value.asInstanceOf[js.Any])
         
         inline def setFetchDotdisable(value: ParamsType): Self = StObject.set(x, "Fetch.disable", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotenable(value: `202`): Self = StObject.set(x, "Fetch.enable", value.asInstanceOf[js.Any])
+        inline def setFetchDotenable(value: `230`): Self = StObject.set(x, "Fetch.enable", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotfailRequest(value: `203`): Self = StObject.set(x, "Fetch.failRequest", value.asInstanceOf[js.Any])
+        inline def setFetchDotfailRequest(value: `231`): Self = StObject.set(x, "Fetch.failRequest", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotfulfillRequest(value: `204`): Self = StObject.set(x, "Fetch.fulfillRequest", value.asInstanceOf[js.Any])
+        inline def setFetchDotfulfillRequest(value: `232`): Self = StObject.set(x, "Fetch.fulfillRequest", value.asInstanceOf[js.Any])
         
         inline def setFetchDotgetResponseBody(value: ParamsTypeReturnTypeGetResponseBodyResponse): Self = StObject.set(x, "Fetch.getResponseBody", value.asInstanceOf[js.Any])
         
@@ -4525,17 +4893,17 @@ object protocolMappingMod {
         
         inline def setHeapProfilerDottakeHeapSnapshot(value: `15`): Self = StObject.set(x, "HeapProfiler.takeHeapSnapshot", value.asInstanceOf[js.Any])
         
-        inline def setIODotclose(value: `93`): Self = StObject.set(x, "IO.close", value.asInstanceOf[js.Any])
+        inline def setIODotclose(value: `105`): Self = StObject.set(x, "IO.close", value.asInstanceOf[js.Any])
         
         inline def setIODotread(value: ReturnTypeReadResponse): Self = StObject.set(x, "IO.read", value.asInstanceOf[js.Any])
         
         inline def setIODotresolveBlob(value: ReturnTypeResolveBlobResponse): Self = StObject.set(x, "IO.resolveBlob", value.asInstanceOf[js.Any])
         
-        inline def setIndexedDBDotclearObjectStore(value: `94`): Self = StObject.set(x, "IndexedDB.clearObjectStore", value.asInstanceOf[js.Any])
+        inline def setIndexedDBDotclearObjectStore(value: `106`): Self = StObject.set(x, "IndexedDB.clearObjectStore", value.asInstanceOf[js.Any])
         
-        inline def setIndexedDBDotdeleteDatabase(value: `95`): Self = StObject.set(x, "IndexedDB.deleteDatabase", value.asInstanceOf[js.Any])
+        inline def setIndexedDBDotdeleteDatabase(value: `107`): Self = StObject.set(x, "IndexedDB.deleteDatabase", value.asInstanceOf[js.Any])
         
-        inline def setIndexedDBDotdeleteObjectStoreEntries(value: `96`): Self = StObject.set(x, "IndexedDB.deleteObjectStoreEntries", value.asInstanceOf[js.Any])
+        inline def setIndexedDBDotdeleteObjectStoreEntries(value: `108`): Self = StObject.set(x, "IndexedDB.deleteObjectStoreEntries", value.asInstanceOf[js.Any])
         
         inline def setIndexedDBDotdisable(value: ParamsType): Self = StObject.set(x, "IndexedDB.disable", value.asInstanceOf[js.Any])
         
@@ -4549,23 +4917,29 @@ object protocolMappingMod {
         
         inline def setIndexedDBDotrequestDatabaseNames(value: ReturnTypeRequestDatabaseNamesResponse): Self = StObject.set(x, "IndexedDB.requestDatabaseNames", value.asInstanceOf[js.Any])
         
-        inline def setInputDotdispatchKeyEvent(value: `97`): Self = StObject.set(x, "Input.dispatchKeyEvent", value.asInstanceOf[js.Any])
+        inline def setInputDotdispatchDragEvent(value: `109`): Self = StObject.set(x, "Input.dispatchDragEvent", value.asInstanceOf[js.Any])
         
-        inline def setInputDotdispatchMouseEvent(value: `99`): Self = StObject.set(x, "Input.dispatchMouseEvent", value.asInstanceOf[js.Any])
+        inline def setInputDotdispatchKeyEvent(value: `110`): Self = StObject.set(x, "Input.dispatchKeyEvent", value.asInstanceOf[js.Any])
         
-        inline def setInputDotdispatchTouchEvent(value: `100`): Self = StObject.set(x, "Input.dispatchTouchEvent", value.asInstanceOf[js.Any])
+        inline def setInputDotdispatchMouseEvent(value: `113`): Self = StObject.set(x, "Input.dispatchMouseEvent", value.asInstanceOf[js.Any])
         
-        inline def setInputDotemulateTouchFromMouseEvent(value: `101`): Self = StObject.set(x, "Input.emulateTouchFromMouseEvent", value.asInstanceOf[js.Any])
+        inline def setInputDotdispatchTouchEvent(value: `114`): Self = StObject.set(x, "Input.dispatchTouchEvent", value.asInstanceOf[js.Any])
         
-        inline def setInputDotinsertText(value: `98`): Self = StObject.set(x, "Input.insertText", value.asInstanceOf[js.Any])
+        inline def setInputDotemulateTouchFromMouseEvent(value: `115`): Self = StObject.set(x, "Input.emulateTouchFromMouseEvent", value.asInstanceOf[js.Any])
         
-        inline def setInputDotsetIgnoreInputEvents(value: `102`): Self = StObject.set(x, "Input.setIgnoreInputEvents", value.asInstanceOf[js.Any])
+        inline def setInputDotimeSetComposition(value: `112`): Self = StObject.set(x, "Input.imeSetComposition", value.asInstanceOf[js.Any])
         
-        inline def setInputDotsynthesizePinchGesture(value: `103`): Self = StObject.set(x, "Input.synthesizePinchGesture", value.asInstanceOf[js.Any])
+        inline def setInputDotinsertText(value: `111`): Self = StObject.set(x, "Input.insertText", value.asInstanceOf[js.Any])
         
-        inline def setInputDotsynthesizeScrollGesture(value: `104`): Self = StObject.set(x, "Input.synthesizeScrollGesture", value.asInstanceOf[js.Any])
+        inline def setInputDotsetIgnoreInputEvents(value: `116`): Self = StObject.set(x, "Input.setIgnoreInputEvents", value.asInstanceOf[js.Any])
         
-        inline def setInputDotsynthesizeTapGesture(value: `105`): Self = StObject.set(x, "Input.synthesizeTapGesture", value.asInstanceOf[js.Any])
+        inline def setInputDotsetInterceptDrags(value: `117`): Self = StObject.set(x, "Input.setInterceptDrags", value.asInstanceOf[js.Any])
+        
+        inline def setInputDotsynthesizePinchGesture(value: `118`): Self = StObject.set(x, "Input.synthesizePinchGesture", value.asInstanceOf[js.Any])
+        
+        inline def setInputDotsynthesizeScrollGesture(value: `119`): Self = StObject.set(x, "Input.synthesizeScrollGesture", value.asInstanceOf[js.Any])
+        
+        inline def setInputDotsynthesizeTapGesture(value: `120`): Self = StObject.set(x, "Input.synthesizeTapGesture", value.asInstanceOf[js.Any])
         
         inline def setInspectorDotdisable(value: ParamsType): Self = StObject.set(x, "Inspector.disable", value.asInstanceOf[js.Any])
         
@@ -4583,7 +4957,7 @@ object protocolMappingMod {
         
         inline def setLayerTreeDotprofileSnapshot(value: ReturnTypeProfileSnapshotResponse): Self = StObject.set(x, "LayerTree.profileSnapshot", value.asInstanceOf[js.Any])
         
-        inline def setLayerTreeDotreleaseSnapshot(value: `106`): Self = StObject.set(x, "LayerTree.releaseSnapshot", value.asInstanceOf[js.Any])
+        inline def setLayerTreeDotreleaseSnapshot(value: `121`): Self = StObject.set(x, "LayerTree.releaseSnapshot", value.asInstanceOf[js.Any])
         
         inline def setLayerTreeDotreplaySnapshot(value: ReturnTypeReplaySnapshotResponse): Self = StObject.set(x, "LayerTree.replaySnapshot", value.asInstanceOf[js.Any])
         
@@ -4595,7 +4969,7 @@ object protocolMappingMod {
         
         inline def setLogDotenable(value: ParamsType): Self = StObject.set(x, "Log.enable", value.asInstanceOf[js.Any])
         
-        inline def setLogDotstartViolationsReport(value: `107`): Self = StObject.set(x, "Log.startViolationsReport", value.asInstanceOf[js.Any])
+        inline def setLogDotstartViolationsReport(value: `122`): Self = StObject.set(x, "Log.startViolationsReport", value.asInstanceOf[js.Any])
         
         inline def setLogDotstopViolationsReport(value: ParamsType): Self = StObject.set(x, "Log.stopViolationsReport", value.asInstanceOf[js.Any])
         
@@ -4615,11 +4989,11 @@ object protocolMappingMod {
         
         inline def setMemoryDotprepareForLeakDetection(value: ParamsType): Self = StObject.set(x, "Memory.prepareForLeakDetection", value.asInstanceOf[js.Any])
         
-        inline def setMemoryDotsetPressureNotificationsSuppressed(value: `108`): Self = StObject.set(x, "Memory.setPressureNotificationsSuppressed", value.asInstanceOf[js.Any])
+        inline def setMemoryDotsetPressureNotificationsSuppressed(value: `123`): Self = StObject.set(x, "Memory.setPressureNotificationsSuppressed", value.asInstanceOf[js.Any])
         
-        inline def setMemoryDotsimulatePressureNotification(value: `109`): Self = StObject.set(x, "Memory.simulatePressureNotification", value.asInstanceOf[js.Any])
+        inline def setMemoryDotsimulatePressureNotification(value: `124`): Self = StObject.set(x, "Memory.simulatePressureNotification", value.asInstanceOf[js.Any])
         
-        inline def setMemoryDotstartSampling(value: `110`): Self = StObject.set(x, "Memory.startSampling", value.asInstanceOf[js.Any])
+        inline def setMemoryDotstartSampling(value: `125`): Self = StObject.set(x, "Memory.startSampling", value.asInstanceOf[js.Any])
         
         inline def setMemoryDotstopSampling(value: ParamsType): Self = StObject.set(x, "Memory.stopSampling", value.asInstanceOf[js.Any])
         
@@ -4629,19 +5003,23 @@ object protocolMappingMod {
         
         inline def setNetworkDotcanEmulateNetworkConditions(value: ReturnTypeCanEmulateNetworkConditionsResponse): Self = StObject.set(x, "Network.canEmulateNetworkConditions", value.asInstanceOf[js.Any])
         
+        inline def setNetworkDotclearAcceptedEncodingsOverride(value: ParamsType): Self = StObject.set(x, "Network.clearAcceptedEncodingsOverride", value.asInstanceOf[js.Any])
+        
         inline def setNetworkDotclearBrowserCache(value: ParamsType): Self = StObject.set(x, "Network.clearBrowserCache", value.asInstanceOf[js.Any])
         
         inline def setNetworkDotclearBrowserCookies(value: ParamsType): Self = StObject.set(x, "Network.clearBrowserCookies", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotcontinueInterceptedRequest(value: `111`): Self = StObject.set(x, "Network.continueInterceptedRequest", value.asInstanceOf[js.Any])
+        inline def setNetworkDotcontinueInterceptedRequest(value: `127`): Self = StObject.set(x, "Network.continueInterceptedRequest", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotdeleteCookies(value: `112`): Self = StObject.set(x, "Network.deleteCookies", value.asInstanceOf[js.Any])
+        inline def setNetworkDotdeleteCookies(value: `128`): Self = StObject.set(x, "Network.deleteCookies", value.asInstanceOf[js.Any])
         
         inline def setNetworkDotdisable(value: ParamsType): Self = StObject.set(x, "Network.disable", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotemulateNetworkConditions(value: `113`): Self = StObject.set(x, "Network.emulateNetworkConditions", value.asInstanceOf[js.Any])
+        inline def setNetworkDotemulateNetworkConditions(value: `129`): Self = StObject.set(x, "Network.emulateNetworkConditions", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotenable(value: `114`): Self = StObject.set(x, "Network.enable", value.asInstanceOf[js.Any])
+        inline def setNetworkDotenable(value: `130`): Self = StObject.set(x, "Network.enable", value.asInstanceOf[js.Any])
+        
+        inline def setNetworkDotenableReportingApi(value: `140`): Self = StObject.set(x, "Network.enableReportingApi", value.asInstanceOf[js.Any])
         
         inline def setNetworkDotgetAllCookies(value: ReturnTypeGetAllCookiesResponse): Self = StObject.set(x, "Network.getAllCookies", value.asInstanceOf[js.Any])
         
@@ -4659,29 +5037,29 @@ object protocolMappingMod {
         
         inline def setNetworkDotloadNetworkResource(value: ReturnTypeLoadNetworkResourceResponse): Self = StObject.set(x, "Network.loadNetworkResource", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotreplayXHR(value: `115`): Self = StObject.set(x, "Network.replayXHR", value.asInstanceOf[js.Any])
+        inline def setNetworkDotreplayXHR(value: `131`): Self = StObject.set(x, "Network.replayXHR", value.asInstanceOf[js.Any])
         
         inline def setNetworkDotsearchInResponseBody(value: ReturnTypeSearchInResponseBodyResponse): Self = StObject.set(x, "Network.searchInResponseBody", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetAttachDebugHeader(value: `122`): Self = StObject.set(x, "Network.setAttachDebugHeader", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetAcceptedEncodings(value: `126`): Self = StObject.set(x, "Network.setAcceptedEncodings", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetBlockedURLs(value: `116`): Self = StObject.set(x, "Network.setBlockedURLs", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetAttachDebugStack(value: `137`): Self = StObject.set(x, "Network.setAttachDebugStack", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetBypassServiceWorker(value: `117`): Self = StObject.set(x, "Network.setBypassServiceWorker", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetBlockedURLs(value: `132`): Self = StObject.set(x, "Network.setBlockedURLs", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetCacheDisabled(value: `118`): Self = StObject.set(x, "Network.setCacheDisabled", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetBypassServiceWorker(value: `133`): Self = StObject.set(x, "Network.setBypassServiceWorker", value.asInstanceOf[js.Any])
+        
+        inline def setNetworkDotsetCacheDisabled(value: `134`): Self = StObject.set(x, "Network.setCacheDisabled", value.asInstanceOf[js.Any])
         
         inline def setNetworkDotsetCookie(value: ReturnTypeSetCookieResponse): Self = StObject.set(x, "Network.setCookie", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetCookies(value: `119`): Self = StObject.set(x, "Network.setCookies", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetCookies(value: `135`): Self = StObject.set(x, "Network.setCookies", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetDataSizeLimitsForTest(value: `120`): Self = StObject.set(x, "Network.setDataSizeLimitsForTest", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetExtraHTTPHeaders(value: `136`): Self = StObject.set(x, "Network.setExtraHTTPHeaders", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetExtraHTTPHeaders(value: `121`): Self = StObject.set(x, "Network.setExtraHTTPHeaders", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetRequestInterception(value: `138`): Self = StObject.set(x, "Network.setRequestInterception", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetRequestInterception(value: `123`): Self = StObject.set(x, "Network.setRequestInterception", value.asInstanceOf[js.Any])
-        
-        inline def setNetworkDotsetUserAgentOverride(value: `124`): Self = StObject.set(x, "Network.setUserAgentOverride", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetUserAgentOverride(value: `139`): Self = StObject.set(x, "Network.setUserAgentOverride", value.asInstanceOf[js.Any])
         
         inline def setNetworkDottakeResponseBodyForInterceptionAsStream(value: ReturnTypeTakeResponseBodyForInterceptionAsStreamResponse): Self = StObject.set(x, "Network.takeResponseBodyForInterceptionAsStream", value.asInstanceOf[js.Any])
         
@@ -4697,41 +5075,51 @@ object protocolMappingMod {
         
         inline def setOverlayDothideHighlight(value: ParamsType): Self = StObject.set(x, "Overlay.hideHighlight", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDothighlightFrame(value: `125`): Self = StObject.set(x, "Overlay.highlightFrame", value.asInstanceOf[js.Any])
+        inline def setOverlayDothighlightFrame(value: `141`): Self = StObject.set(x, "Overlay.highlightFrame", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDothighlightNode(value: `126`): Self = StObject.set(x, "Overlay.highlightNode", value.asInstanceOf[js.Any])
+        inline def setOverlayDothighlightNode(value: `142`): Self = StObject.set(x, "Overlay.highlightNode", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDothighlightQuad(value: `127`): Self = StObject.set(x, "Overlay.highlightQuad", value.asInstanceOf[js.Any])
+        inline def setOverlayDothighlightQuad(value: `143`): Self = StObject.set(x, "Overlay.highlightQuad", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDothighlightRect(value: `128`): Self = StObject.set(x, "Overlay.highlightRect", value.asInstanceOf[js.Any])
+        inline def setOverlayDothighlightRect(value: `144`): Self = StObject.set(x, "Overlay.highlightRect", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDothighlightSourceOrder(value: `129`): Self = StObject.set(x, "Overlay.highlightSourceOrder", value.asInstanceOf[js.Any])
+        inline def setOverlayDothighlightSourceOrder(value: `145`): Self = StObject.set(x, "Overlay.highlightSourceOrder", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetInspectMode(value: `130`): Self = StObject.set(x, "Overlay.setInspectMode", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetInspectMode(value: `146`): Self = StObject.set(x, "Overlay.setInspectMode", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetPausedInDebuggerMessage(value: `132`): Self = StObject.set(x, "Overlay.setPausedInDebuggerMessage", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetPausedInDebuggerMessage(value: `148`): Self = StObject.set(x, "Overlay.setPausedInDebuggerMessage", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowAdHighlights(value: `131`): Self = StObject.set(x, "Overlay.setShowAdHighlights", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowAdHighlights(value: `147`): Self = StObject.set(x, "Overlay.setShowAdHighlights", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowDebugBorders(value: `133`): Self = StObject.set(x, "Overlay.setShowDebugBorders", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowContainerQueryOverlays(value: `154`): Self = StObject.set(x, "Overlay.setShowContainerQueryOverlays", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowFPSCounter(value: `134`): Self = StObject.set(x, "Overlay.setShowFPSCounter", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowDebugBorders(value: `149`): Self = StObject.set(x, "Overlay.setShowDebugBorders", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowGridOverlays(value: `135`): Self = StObject.set(x, "Overlay.setShowGridOverlays", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowFPSCounter(value: `150`): Self = StObject.set(x, "Overlay.setShowFPSCounter", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowHinge(value: `141`): Self = StObject.set(x, "Overlay.setShowHinge", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowFlexOverlays(value: `152`): Self = StObject.set(x, "Overlay.setShowFlexOverlays", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowHitTestBorders(value: `139`): Self = StObject.set(x, "Overlay.setShowHitTestBorders", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowGridOverlays(value: `151`): Self = StObject.set(x, "Overlay.setShowGridOverlays", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowLayoutShiftRegions(value: `137`): Self = StObject.set(x, "Overlay.setShowLayoutShiftRegions", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowHinge(value: `161`): Self = StObject.set(x, "Overlay.setShowHinge", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowPaintRects(value: `136`): Self = StObject.set(x, "Overlay.setShowPaintRects", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowHitTestBorders(value: `158`): Self = StObject.set(x, "Overlay.setShowHitTestBorders", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowScrollBottleneckRects(value: `138`): Self = StObject.set(x, "Overlay.setShowScrollBottleneckRects", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowIsolatedElements(value: `162`): Self = StObject.set(x, "Overlay.setShowIsolatedElements", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowViewportSizeOnResize(value: `140`): Self = StObject.set(x, "Overlay.setShowViewportSizeOnResize", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowLayoutShiftRegions(value: `156`): Self = StObject.set(x, "Overlay.setShowLayoutShiftRegions", value.asInstanceOf[js.Any])
         
-        inline def setPageDotaddCompilationCache(value: `163`): Self = StObject.set(x, "Page.addCompilationCache", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowPaintRects(value: `155`): Self = StObject.set(x, "Overlay.setShowPaintRects", value.asInstanceOf[js.Any])
+        
+        inline def setOverlayDotsetShowScrollBottleneckRects(value: `157`): Self = StObject.set(x, "Overlay.setShowScrollBottleneckRects", value.asInstanceOf[js.Any])
+        
+        inline def setOverlayDotsetShowScrollSnapOverlays(value: `153`): Self = StObject.set(x, "Overlay.setShowScrollSnapOverlays", value.asInstanceOf[js.Any])
+        
+        inline def setOverlayDotsetShowViewportSizeOnResize(value: `160`): Self = StObject.set(x, "Overlay.setShowViewportSizeOnResize", value.asInstanceOf[js.Any])
+        
+        inline def setOverlayDotsetShowWebVitals(value: `159`): Self = StObject.set(x, "Overlay.setShowWebVitals", value.asInstanceOf[js.Any])
+        
+        inline def setPageDotaddCompilationCache(value: `184`): Self = StObject.set(x, "Page.addCompilationCache", value.asInstanceOf[js.Any])
         
         inline def setPageDotaddScriptToEvaluateOnLoad(value: ReturnTypeAddScriptToEvaluateOnLoadResponse): Self = StObject.set(x, "Page.addScriptToEvaluateOnLoad", value.asInstanceOf[js.Any])
         
@@ -4757,13 +5145,15 @@ object protocolMappingMod {
         
         inline def setPageDotcreateIsolatedWorld(value: ReturnTypeCreateIsolatedWorldResponse): Self = StObject.set(x, "Page.createIsolatedWorld", value.asInstanceOf[js.Any])
         
-        inline def setPageDotdeleteCookie(value: `142`): Self = StObject.set(x, "Page.deleteCookie", value.asInstanceOf[js.Any])
+        inline def setPageDotdeleteCookie(value: `163`): Self = StObject.set(x, "Page.deleteCookie", value.asInstanceOf[js.Any])
         
         inline def setPageDotdisable(value: ParamsType): Self = StObject.set(x, "Page.disable", value.asInstanceOf[js.Any])
         
         inline def setPageDotenable(value: ParamsType): Self = StObject.set(x, "Page.enable", value.asInstanceOf[js.Any])
         
-        inline def setPageDotgenerateTestReport(value: `164`): Self = StObject.set(x, "Page.generateTestReport", value.asInstanceOf[js.Any])
+        inline def setPageDotgenerateTestReport(value: `186`): Self = StObject.set(x, "Page.generateTestReport", value.asInstanceOf[js.Any])
+        
+        inline def setPageDotgetAppId(value: ReturnTypeGetAppIdResponse): Self = StObject.set(x, "Page.getAppId", value.asInstanceOf[js.Any])
         
         inline def setPageDotgetAppManifest(value: ReturnTypeGetAppManifestResponse): Self = StObject.set(x, "Page.getAppManifest", value.asInstanceOf[js.Any])
         
@@ -4779,59 +5169,65 @@ object protocolMappingMod {
         
         inline def setPageDotgetNavigationHistory(value: ReturnTypeGetNavigationHistoryResponse): Self = StObject.set(x, "Page.getNavigationHistory", value.asInstanceOf[js.Any])
         
+        inline def setPageDotgetOriginTrials(value: ReturnTypeGetOriginTrialsResponse): Self = StObject.set(x, "Page.getOriginTrials", value.asInstanceOf[js.Any])
+        
+        inline def setPageDotgetPermissionsPolicyState(value: ReturnTypeGetPermissionsPolicyStateResponse): Self = StObject.set(x, "Page.getPermissionsPolicyState", value.asInstanceOf[js.Any])
+        
         inline def setPageDotgetResourceContent(value: ReturnTypeGetResourceContentResponse): Self = StObject.set(x, "Page.getResourceContent", value.asInstanceOf[js.Any])
         
         inline def setPageDotgetResourceTree(value: ReturnTypeGetResourceTreeResponse): Self = StObject.set(x, "Page.getResourceTree", value.asInstanceOf[js.Any])
         
-        inline def setPageDothandleJavaScriptDialog(value: `143`): Self = StObject.set(x, "Page.handleJavaScriptDialog", value.asInstanceOf[js.Any])
+        inline def setPageDothandleJavaScriptDialog(value: `164`): Self = StObject.set(x, "Page.handleJavaScriptDialog", value.asInstanceOf[js.Any])
         
         inline def setPageDotnavigate(value: ReturnTypeNavigateResponse): Self = StObject.set(x, "Page.navigate", value.asInstanceOf[js.Any])
         
-        inline def setPageDotnavigateToHistoryEntry(value: `144`): Self = StObject.set(x, "Page.navigateToHistoryEntry", value.asInstanceOf[js.Any])
+        inline def setPageDotnavigateToHistoryEntry(value: `165`): Self = StObject.set(x, "Page.navigateToHistoryEntry", value.asInstanceOf[js.Any])
         
         inline def setPageDotprintToPDF(value: ReturnTypePrintToPDFResponse): Self = StObject.set(x, "Page.printToPDF", value.asInstanceOf[js.Any])
         
-        inline def setPageDotreload(value: `145`): Self = StObject.set(x, "Page.reload", value.asInstanceOf[js.Any])
+        inline def setPageDotproduceCompilationCache(value: `183`): Self = StObject.set(x, "Page.produceCompilationCache", value.asInstanceOf[js.Any])
         
-        inline def setPageDotremoveScriptToEvaluateOnLoad(value: `146`): Self = StObject.set(x, "Page.removeScriptToEvaluateOnLoad", value.asInstanceOf[js.Any])
+        inline def setPageDotreload(value: `166`): Self = StObject.set(x, "Page.reload", value.asInstanceOf[js.Any])
         
-        inline def setPageDotremoveScriptToEvaluateOnNewDocument(value: `147`): Self = StObject.set(x, "Page.removeScriptToEvaluateOnNewDocument", value.asInstanceOf[js.Any])
+        inline def setPageDotremoveScriptToEvaluateOnLoad(value: `167`): Self = StObject.set(x, "Page.removeScriptToEvaluateOnLoad", value.asInstanceOf[js.Any])
+        
+        inline def setPageDotremoveScriptToEvaluateOnNewDocument(value: `168`): Self = StObject.set(x, "Page.removeScriptToEvaluateOnNewDocument", value.asInstanceOf[js.Any])
         
         inline def setPageDotresetNavigationHistory(value: ParamsType): Self = StObject.set(x, "Page.resetNavigationHistory", value.asInstanceOf[js.Any])
         
-        inline def setPageDotscreencastFrameAck(value: `148`): Self = StObject.set(x, "Page.screencastFrameAck", value.asInstanceOf[js.Any])
+        inline def setPageDotscreencastFrameAck(value: `169`): Self = StObject.set(x, "Page.screencastFrameAck", value.asInstanceOf[js.Any])
         
         inline def setPageDotsearchInResource(value: ReturnTypeSearchInResourceResponse): Self = StObject.set(x, "Page.searchInResource", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetAdBlockingEnabled(value: `149`): Self = StObject.set(x, "Page.setAdBlockingEnabled", value.asInstanceOf[js.Any])
+        inline def setPageDotsetAdBlockingEnabled(value: `170`): Self = StObject.set(x, "Page.setAdBlockingEnabled", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetBypassCSP(value: `150`): Self = StObject.set(x, "Page.setBypassCSP", value.asInstanceOf[js.Any])
+        inline def setPageDotsetBypassCSP(value: `171`): Self = StObject.set(x, "Page.setBypassCSP", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetDeviceMetricsOverride(value: `151`): Self = StObject.set(x, "Page.setDeviceMetricsOverride", value.asInstanceOf[js.Any])
+        inline def setPageDotsetDeviceMetricsOverride(value: `172`): Self = StObject.set(x, "Page.setDeviceMetricsOverride", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetDeviceOrientationOverride(value: `152`): Self = StObject.set(x, "Page.setDeviceOrientationOverride", value.asInstanceOf[js.Any])
+        inline def setPageDotsetDeviceOrientationOverride(value: `173`): Self = StObject.set(x, "Page.setDeviceOrientationOverride", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetDocumentContent(value: `155`): Self = StObject.set(x, "Page.setDocumentContent", value.asInstanceOf[js.Any])
+        inline def setPageDotsetDocumentContent(value: `176`): Self = StObject.set(x, "Page.setDocumentContent", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetDownloadBehavior(value: `156`): Self = StObject.set(x, "Page.setDownloadBehavior", value.asInstanceOf[js.Any])
+        inline def setPageDotsetDownloadBehavior(value: `177`): Self = StObject.set(x, "Page.setDownloadBehavior", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetFontFamilies(value: `153`): Self = StObject.set(x, "Page.setFontFamilies", value.asInstanceOf[js.Any])
+        inline def setPageDotsetFontFamilies(value: `174`): Self = StObject.set(x, "Page.setFontFamilies", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetFontSizes(value: `154`): Self = StObject.set(x, "Page.setFontSizes", value.asInstanceOf[js.Any])
+        inline def setPageDotsetFontSizes(value: `175`): Self = StObject.set(x, "Page.setFontSizes", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetGeolocationOverride(value: `157`): Self = StObject.set(x, "Page.setGeolocationOverride", value.asInstanceOf[js.Any])
+        inline def setPageDotsetGeolocationOverride(value: `178`): Self = StObject.set(x, "Page.setGeolocationOverride", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetInterceptFileChooserDialog(value: `165`): Self = StObject.set(x, "Page.setInterceptFileChooserDialog", value.asInstanceOf[js.Any])
+        inline def setPageDotsetInterceptFileChooserDialog(value: `187`): Self = StObject.set(x, "Page.setInterceptFileChooserDialog", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetLifecycleEventsEnabled(value: `158`): Self = StObject.set(x, "Page.setLifecycleEventsEnabled", value.asInstanceOf[js.Any])
+        inline def setPageDotsetLifecycleEventsEnabled(value: `179`): Self = StObject.set(x, "Page.setLifecycleEventsEnabled", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetProduceCompilationCache(value: `162`): Self = StObject.set(x, "Page.setProduceCompilationCache", value.asInstanceOf[js.Any])
+        inline def setPageDotsetSPCTransactionMode(value: `185`): Self = StObject.set(x, "Page.setSPCTransactionMode", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetTouchEmulationEnabled(value: `159`): Self = StObject.set(x, "Page.setTouchEmulationEnabled", value.asInstanceOf[js.Any])
+        inline def setPageDotsetTouchEmulationEnabled(value: `180`): Self = StObject.set(x, "Page.setTouchEmulationEnabled", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetWebLifecycleState(value: `161`): Self = StObject.set(x, "Page.setWebLifecycleState", value.asInstanceOf[js.Any])
+        inline def setPageDotsetWebLifecycleState(value: `182`): Self = StObject.set(x, "Page.setWebLifecycleState", value.asInstanceOf[js.Any])
         
-        inline def setPageDotstartScreencast(value: `160`): Self = StObject.set(x, "Page.startScreencast", value.asInstanceOf[js.Any])
+        inline def setPageDotstartScreencast(value: `181`): Self = StObject.set(x, "Page.startScreencast", value.asInstanceOf[js.Any])
         
         inline def setPageDotstopLoading(value: ParamsType): Self = StObject.set(x, "Page.stopLoading", value.asInstanceOf[js.Any])
         
@@ -4841,29 +5237,19 @@ object protocolMappingMod {
         
         inline def setPerformanceDotdisable(value: ParamsType): Self = StObject.set(x, "Performance.disable", value.asInstanceOf[js.Any])
         
-        inline def setPerformanceDotenable(value: `166`): Self = StObject.set(x, "Performance.enable", value.asInstanceOf[js.Any])
+        inline def setPerformanceDotenable(value: `188`): Self = StObject.set(x, "Performance.enable", value.asInstanceOf[js.Any])
         
         inline def setPerformanceDotgetMetrics(value: ReturnTypeGetMetricsResponse): Self = StObject.set(x, "Performance.getMetrics", value.asInstanceOf[js.Any])
         
-        inline def setPerformanceDotsetTimeDomain(value: `167`): Self = StObject.set(x, "Performance.setTimeDomain", value.asInstanceOf[js.Any])
+        inline def setPerformanceDotsetTimeDomain(value: `189`): Self = StObject.set(x, "Performance.setTimeDomain", value.asInstanceOf[js.Any])
+        
+        inline def setPerformanceTimelineDotenable(value: `190`): Self = StObject.set(x, "PerformanceTimeline.enable", value.asInstanceOf[js.Any])
         
         inline def setProfilerDotdisable(value: ParamsType): Self = StObject.set(x, "Profiler.disable", value.asInstanceOf[js.Any])
         
-        inline def setProfilerDotdisableCounters(value: ParamsType): Self = StObject.set(x, "Profiler.disableCounters", value.asInstanceOf[js.Any])
-        
-        inline def setProfilerDotdisableRuntimeCallStats(value: ParamsType): Self = StObject.set(x, "Profiler.disableRuntimeCallStats", value.asInstanceOf[js.Any])
-        
         inline def setProfilerDotenable(value: ParamsType): Self = StObject.set(x, "Profiler.enable", value.asInstanceOf[js.Any])
         
-        inline def setProfilerDotenableCounters(value: ParamsType): Self = StObject.set(x, "Profiler.enableCounters", value.asInstanceOf[js.Any])
-        
-        inline def setProfilerDotenableRuntimeCallStats(value: ParamsType): Self = StObject.set(x, "Profiler.enableRuntimeCallStats", value.asInstanceOf[js.Any])
-        
         inline def setProfilerDotgetBestEffortCoverage(value: ReturnTypeGetBestEffortCoverageResponse): Self = StObject.set(x, "Profiler.getBestEffortCoverage", value.asInstanceOf[js.Any])
-        
-        inline def setProfilerDotgetCounters(value: ReturnTypeGetCountersResponse): Self = StObject.set(x, "Profiler.getCounters", value.asInstanceOf[js.Any])
-        
-        inline def setProfilerDotgetRuntimeCallStats(value: ReturnTypeGetRuntimeCallStatsResponse): Self = StObject.set(x, "Profiler.getRuntimeCallStats", value.asInstanceOf[js.Any])
         
         inline def setProfilerDotsetSamplingInterval(value: `16`): Self = StObject.set(x, "Profiler.setSamplingInterval", value.asInstanceOf[js.Any])
         
@@ -4899,6 +5285,8 @@ object protocolMappingMod {
         
         inline def setRuntimeDotevaluate(value: ReturnTypeEvaluateResponse): Self = StObject.set(x, "Runtime.evaluate", value.asInstanceOf[js.Any])
         
+        inline def setRuntimeDotgetExceptionDetails(value: ReturnTypeGetExceptionDetailsResponse): Self = StObject.set(x, "Runtime.getExceptionDetails", value.asInstanceOf[js.Any])
+        
         inline def setRuntimeDotgetHeapUsage(value: ReturnTypeGetHeapUsageResponse): Self = StObject.set(x, "Runtime.getHeapUsage", value.asInstanceOf[js.Any])
         
         inline def setRuntimeDotgetIsolateId(value: ReturnTypeGetIsolateIdResponse): Self = StObject.set(x, "Runtime.getIsolateId", value.asInstanceOf[js.Any])
@@ -4933,67 +5321,85 @@ object protocolMappingMod {
         
         inline def setSecurityDotenable(value: ParamsType): Self = StObject.set(x, "Security.enable", value.asInstanceOf[js.Any])
         
-        inline def setSecurityDothandleCertificateError(value: `169`): Self = StObject.set(x, "Security.handleCertificateError", value.asInstanceOf[js.Any])
+        inline def setSecurityDothandleCertificateError(value: `192`): Self = StObject.set(x, "Security.handleCertificateError", value.asInstanceOf[js.Any])
         
-        inline def setSecurityDotsetIgnoreCertificateErrors(value: `168`): Self = StObject.set(x, "Security.setIgnoreCertificateErrors", value.asInstanceOf[js.Any])
+        inline def setSecurityDotsetIgnoreCertificateErrors(value: `191`): Self = StObject.set(x, "Security.setIgnoreCertificateErrors", value.asInstanceOf[js.Any])
         
-        inline def setSecurityDotsetOverrideCertificateErrors(value: `170`): Self = StObject.set(x, "Security.setOverrideCertificateErrors", value.asInstanceOf[js.Any])
+        inline def setSecurityDotsetOverrideCertificateErrors(value: `193`): Self = StObject.set(x, "Security.setOverrideCertificateErrors", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotdeliverPushMessage(value: `171`): Self = StObject.set(x, "ServiceWorker.deliverPushMessage", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotdeliverPushMessage(value: `194`): Self = StObject.set(x, "ServiceWorker.deliverPushMessage", value.asInstanceOf[js.Any])
         
         inline def setServiceWorkerDotdisable(value: ParamsType): Self = StObject.set(x, "ServiceWorker.disable", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotdispatchPeriodicSyncEvent(value: `173`): Self = StObject.set(x, "ServiceWorker.dispatchPeriodicSyncEvent", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotdispatchPeriodicSyncEvent(value: `196`): Self = StObject.set(x, "ServiceWorker.dispatchPeriodicSyncEvent", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotdispatchSyncEvent(value: `172`): Self = StObject.set(x, "ServiceWorker.dispatchSyncEvent", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotdispatchSyncEvent(value: `195`): Self = StObject.set(x, "ServiceWorker.dispatchSyncEvent", value.asInstanceOf[js.Any])
         
         inline def setServiceWorkerDotenable(value: ParamsType): Self = StObject.set(x, "ServiceWorker.enable", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotinspectWorker(value: `174`): Self = StObject.set(x, "ServiceWorker.inspectWorker", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotinspectWorker(value: `197`): Self = StObject.set(x, "ServiceWorker.inspectWorker", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotsetForceUpdateOnPageLoad(value: `175`): Self = StObject.set(x, "ServiceWorker.setForceUpdateOnPageLoad", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotsetForceUpdateOnPageLoad(value: `198`): Self = StObject.set(x, "ServiceWorker.setForceUpdateOnPageLoad", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotskipWaiting(value: `176`): Self = StObject.set(x, "ServiceWorker.skipWaiting", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotskipWaiting(value: `199`): Self = StObject.set(x, "ServiceWorker.skipWaiting", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotstartWorker(value: `177`): Self = StObject.set(x, "ServiceWorker.startWorker", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotstartWorker(value: `200`): Self = StObject.set(x, "ServiceWorker.startWorker", value.asInstanceOf[js.Any])
         
         inline def setServiceWorkerDotstopAllWorkers(value: ParamsType): Self = StObject.set(x, "ServiceWorker.stopAllWorkers", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotstopWorker(value: `178`): Self = StObject.set(x, "ServiceWorker.stopWorker", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotstopWorker(value: `201`): Self = StObject.set(x, "ServiceWorker.stopWorker", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotunregister(value: `179`): Self = StObject.set(x, "ServiceWorker.unregister", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotunregister(value: `202`): Self = StObject.set(x, "ServiceWorker.unregister", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotupdateRegistration(value: `180`): Self = StObject.set(x, "ServiceWorker.updateRegistration", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotupdateRegistration(value: `203`): Self = StObject.set(x, "ServiceWorker.updateRegistration", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotclearCookies(value: `184`): Self = StObject.set(x, "Storage.clearCookies", value.asInstanceOf[js.Any])
+        inline def setStorageDotclearCookies(value: `208`): Self = StObject.set(x, "Storage.clearCookies", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotclearDataForOrigin(value: `181`): Self = StObject.set(x, "Storage.clearDataForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDotclearDataForOrigin(value: `204`): Self = StObject.set(x, "Storage.clearDataForOrigin", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotgetCookies(value: `182`): Self = StObject.set(x, "Storage.getCookies", value.asInstanceOf[js.Any])
+        inline def setStorageDotclearDataForStorageKey(value: `205`): Self = StObject.set(x, "Storage.clearDataForStorageKey", value.asInstanceOf[js.Any])
+        
+        inline def setStorageDotclearTrustTokens(value: ReturnTypeClearTrustTokensResponse): Self = StObject.set(x, "Storage.clearTrustTokens", value.asInstanceOf[js.Any])
+        
+        inline def setStorageDotgetCookies(value: `206`): Self = StObject.set(x, "Storage.getCookies", value.asInstanceOf[js.Any])
+        
+        inline def setStorageDotgetInterestGroupDetails(value: ReturnTypeGetInterestGroupDetailsResponse): Self = StObject.set(x, "Storage.getInterestGroupDetails", value.asInstanceOf[js.Any])
+        
+        inline def setStorageDotgetStorageKeyForFrame(value: ReturnTypeGetStorageKeyForFrameResponse): Self = StObject.set(x, "Storage.getStorageKeyForFrame", value.asInstanceOf[js.Any])
+        
+        inline def setStorageDotgetTrustTokens(value: ReturnTypeGetTrustTokensResponse): Self = StObject.set(x, "Storage.getTrustTokens", value.asInstanceOf[js.Any])
         
         inline def setStorageDotgetUsageAndQuota(value: ReturnTypeGetUsageAndQuotaResponse): Self = StObject.set(x, "Storage.getUsageAndQuota", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotoverrideQuotaForOrigin(value: `185`): Self = StObject.set(x, "Storage.overrideQuotaForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDotoverrideQuotaForOrigin(value: `209`): Self = StObject.set(x, "Storage.overrideQuotaForOrigin", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotsetCookies(value: `183`): Self = StObject.set(x, "Storage.setCookies", value.asInstanceOf[js.Any])
+        inline def setStorageDotsetCookies(value: `207`): Self = StObject.set(x, "Storage.setCookies", value.asInstanceOf[js.Any])
         
-        inline def setStorageDottrackCacheStorageForOrigin(value: `186`): Self = StObject.set(x, "Storage.trackCacheStorageForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDotsetInterestGroupTracking(value: `216`): Self = StObject.set(x, "Storage.setInterestGroupTracking", value.asInstanceOf[js.Any])
         
-        inline def setStorageDottrackIndexedDBForOrigin(value: `187`): Self = StObject.set(x, "Storage.trackIndexedDBForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDottrackCacheStorageForOrigin(value: `210`): Self = StObject.set(x, "Storage.trackCacheStorageForOrigin", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotuntrackCacheStorageForOrigin(value: `188`): Self = StObject.set(x, "Storage.untrackCacheStorageForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDottrackIndexedDBForOrigin(value: `211`): Self = StObject.set(x, "Storage.trackIndexedDBForOrigin", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotuntrackIndexedDBForOrigin(value: `189`): Self = StObject.set(x, "Storage.untrackIndexedDBForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDottrackIndexedDBForStorageKey(value: `212`): Self = StObject.set(x, "Storage.trackIndexedDBForStorageKey", value.asInstanceOf[js.Any])
+        
+        inline def setStorageDotuntrackCacheStorageForOrigin(value: `213`): Self = StObject.set(x, "Storage.untrackCacheStorageForOrigin", value.asInstanceOf[js.Any])
+        
+        inline def setStorageDotuntrackIndexedDBForOrigin(value: `214`): Self = StObject.set(x, "Storage.untrackIndexedDBForOrigin", value.asInstanceOf[js.Any])
+        
+        inline def setStorageDotuntrackIndexedDBForStorageKey(value: `215`): Self = StObject.set(x, "Storage.untrackIndexedDBForStorageKey", value.asInstanceOf[js.Any])
         
         inline def setSystemInfoDotgetInfo(value: ReturnTypeGetInfoResponse): Self = StObject.set(x, "SystemInfo.getInfo", value.asInstanceOf[js.Any])
         
         inline def setSystemInfoDotgetProcessInfo(value: ReturnTypeGetProcessInfoResponse): Self = StObject.set(x, "SystemInfo.getProcessInfo", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotactivateTarget(value: `190`): Self = StObject.set(x, "Target.activateTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotactivateTarget(value: `217`): Self = StObject.set(x, "Target.activateTarget", value.asInstanceOf[js.Any])
         
         inline def setTargetDotattachToBrowserTarget(value: ReturnTypeAttachToBrowserTargetResponse): Self = StObject.set(x, "Target.attachToBrowserTarget", value.asInstanceOf[js.Any])
         
         inline def setTargetDotattachToTarget(value: ReturnTypeAttachToTargetResponse): Self = StObject.set(x, "Target.attachToTarget", value.asInstanceOf[js.Any])
+        
+        inline def setTargetDotautoAttachRelated(value: `223`): Self = StObject.set(x, "Target.autoAttachRelated", value.asInstanceOf[js.Any])
         
         inline def setTargetDotcloseTarget(value: ReturnTypeCloseTargetResponse): Self = StObject.set(x, "Target.closeTarget", value.asInstanceOf[js.Any])
         
@@ -5001,11 +5407,11 @@ object protocolMappingMod {
         
         inline def setTargetDotcreateTarget(value: ReturnTypeCreateTargetResponse): Self = StObject.set(x, "Target.createTarget", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotdetachFromTarget(value: `192`): Self = StObject.set(x, "Target.detachFromTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotdetachFromTarget(value: `219`): Self = StObject.set(x, "Target.detachFromTarget", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotdisposeBrowserContext(value: `193`): Self = StObject.set(x, "Target.disposeBrowserContext", value.asInstanceOf[js.Any])
+        inline def setTargetDotdisposeBrowserContext(value: `220`): Self = StObject.set(x, "Target.disposeBrowserContext", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotexposeDevToolsProtocol(value: `191`): Self = StObject.set(x, "Target.exposeDevToolsProtocol", value.asInstanceOf[js.Any])
+        inline def setTargetDotexposeDevToolsProtocol(value: `218`): Self = StObject.set(x, "Target.exposeDevToolsProtocol", value.asInstanceOf[js.Any])
         
         inline def setTargetDotgetBrowserContexts(value: ReturnTypeGetBrowserContextsResponse): Self = StObject.set(x, "Target.getBrowserContexts", value.asInstanceOf[js.Any])
         
@@ -5013,27 +5419,27 @@ object protocolMappingMod {
         
         inline def setTargetDotgetTargets(value: ReturnTypeGetTargetsResponse): Self = StObject.set(x, "Target.getTargets", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotsendMessageToTarget(value: `194`): Self = StObject.set(x, "Target.sendMessageToTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotsendMessageToTarget(value: `221`): Self = StObject.set(x, "Target.sendMessageToTarget", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotsetAutoAttach(value: `195`): Self = StObject.set(x, "Target.setAutoAttach", value.asInstanceOf[js.Any])
+        inline def setTargetDotsetAutoAttach(value: `222`): Self = StObject.set(x, "Target.setAutoAttach", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotsetDiscoverTargets(value: `196`): Self = StObject.set(x, "Target.setDiscoverTargets", value.asInstanceOf[js.Any])
+        inline def setTargetDotsetDiscoverTargets(value: `224`): Self = StObject.set(x, "Target.setDiscoverTargets", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotsetRemoteLocations(value: `197`): Self = StObject.set(x, "Target.setRemoteLocations", value.asInstanceOf[js.Any])
+        inline def setTargetDotsetRemoteLocations(value: `225`): Self = StObject.set(x, "Target.setRemoteLocations", value.asInstanceOf[js.Any])
         
-        inline def setTetheringDotbind(value: `198`): Self = StObject.set(x, "Tethering.bind", value.asInstanceOf[js.Any])
+        inline def setTetheringDotbind(value: `226`): Self = StObject.set(x, "Tethering.bind", value.asInstanceOf[js.Any])
         
-        inline def setTetheringDotunbind(value: `199`): Self = StObject.set(x, "Tethering.unbind", value.asInstanceOf[js.Any])
+        inline def setTetheringDotunbind(value: `227`): Self = StObject.set(x, "Tethering.unbind", value.asInstanceOf[js.Any])
         
         inline def setTracingDotend(value: ParamsType): Self = StObject.set(x, "Tracing.end", value.asInstanceOf[js.Any])
         
         inline def setTracingDotgetCategories(value: ReturnTypeGetCategoriesResponse): Self = StObject.set(x, "Tracing.getCategories", value.asInstanceOf[js.Any])
         
-        inline def setTracingDotrecordClockSyncMarker(value: `200`): Self = StObject.set(x, "Tracing.recordClockSyncMarker", value.asInstanceOf[js.Any])
+        inline def setTracingDotrecordClockSyncMarker(value: `228`): Self = StObject.set(x, "Tracing.recordClockSyncMarker", value.asInstanceOf[js.Any])
         
         inline def setTracingDotrequestMemoryDump(value: ReturnTypeRequestMemoryDumpResponse): Self = StObject.set(x, "Tracing.requestMemoryDump", value.asInstanceOf[js.Any])
         
-        inline def setTracingDotstart(value: `201`): Self = StObject.set(x, "Tracing.start", value.asInstanceOf[js.Any])
+        inline def setTracingDotstart(value: `229`): Self = StObject.set(x, "Tracing.start", value.asInstanceOf[js.Any])
         
         inline def setWebAudioDotdisable(value: ParamsType): Self = StObject.set(x, "WebAudio.disable", value.asInstanceOf[js.Any])
         
@@ -5041,31 +5447,44 @@ object protocolMappingMod {
         
         inline def setWebAudioDotgetRealtimeData(value: ReturnTypeGetRealtimeDataResponse): Self = StObject.set(x, "WebAudio.getRealtimeData", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotaddCredential(value: `208`): Self = StObject.set(x, "WebAuthn.addCredential", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotaddCredential(value: `238`): Self = StObject.set(x, "WebAuthn.addCredential", value.asInstanceOf[js.Any])
         
         inline def setWebAuthnDotaddVirtualAuthenticator(value: ReturnTypeAddVirtualAuthenticatorResponse): Self = StObject.set(x, "WebAuthn.addVirtualAuthenticator", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotclearCredentials(value: `210`): Self = StObject.set(x, "WebAuthn.clearCredentials", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotclearCredentials(value: `240`): Self = StObject.set(x, "WebAuthn.clearCredentials", value.asInstanceOf[js.Any])
         
         inline def setWebAuthnDotdisable(value: ParamsType): Self = StObject.set(x, "WebAuthn.disable", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotenable(value: ParamsType): Self = StObject.set(x, "WebAuthn.enable", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotenable(value: `236`): Self = StObject.set(x, "WebAuthn.enable", value.asInstanceOf[js.Any])
         
         inline def setWebAuthnDotgetCredential(value: ReturnTypeGetCredentialResponse): Self = StObject.set(x, "WebAuthn.getCredential", value.asInstanceOf[js.Any])
         
         inline def setWebAuthnDotgetCredentials(value: ReturnTypeGetCredentialsResponse): Self = StObject.set(x, "WebAuthn.getCredentials", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotremoveCredential(value: `209`): Self = StObject.set(x, "WebAuthn.removeCredential", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotremoveCredential(value: `239`): Self = StObject.set(x, "WebAuthn.removeCredential", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotremoveVirtualAuthenticator(value: `207`): Self = StObject.set(x, "WebAuthn.removeVirtualAuthenticator", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotremoveVirtualAuthenticator(value: `237`): Self = StObject.set(x, "WebAuthn.removeVirtualAuthenticator", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotsetAutomaticPresenceSimulation(value: `212`): Self = StObject.set(x, "WebAuthn.setAutomaticPresenceSimulation", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotsetAutomaticPresenceSimulation(value: `242`): Self = StObject.set(x, "WebAuthn.setAutomaticPresenceSimulation", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotsetUserVerified(value: `211`): Self = StObject.set(x, "WebAuthn.setUserVerified", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotsetUserVerified(value: `241`): Self = StObject.set(x, "WebAuthn.setUserVerified", value.asInstanceOf[js.Any])
       }
     }
     
     trait Events extends StObject {
+      
+      /**
+        * The loadComplete event mirrors the load complete event sent by the browser to assistive
+        * technology when the web page has finished loading.
+        */
+      @JSName("Accessibility.loadComplete")
+      var AccessibilityDotloadComplete: js.Array[LoadCompleteEvent]
+      
+      /**
+        * The nodesUpdated event is sent every time a previously requested node has changed the in tree.
+        */
+      @JSName("Accessibility.nodesUpdated")
+      var AccessibilityDotnodesUpdated: js.Array[NodesUpdatedEvent]
       
       /**
         * Event for when an animation has been cancelled.
@@ -5085,12 +5504,6 @@ object protocolMappingMod {
       @JSName("Animation.animationStarted")
       var AnimationDotanimationStarted: js.Array[AnimationStartedEvent]
       
-      @JSName("ApplicationCache.applicationCacheStatusUpdated")
-      var ApplicationCacheDotapplicationCacheStatusUpdated: js.Array[ApplicationCacheStatusUpdatedEvent]
-      
-      @JSName("ApplicationCache.networkStateUpdated")
-      var ApplicationCacheDotnetworkStateUpdated: js.Array[NetworkStateUpdatedEvent]
-      
       @JSName("Audits.issueAdded")
       var AuditsDotissueAdded: js.Array[IssueAddedEvent]
       
@@ -5108,6 +5521,18 @@ object protocolMappingMod {
       var BackgroundServiceDotrecordingStateChanged: js.Array[RecordingStateChangedEvent]
       
       /**
+        * Fired when download makes progress. Last call has |done| == true.
+        */
+      @JSName("Browser.downloadProgress")
+      var BrowserDotdownloadProgress: js.Array[DownloadProgressEvent]
+      
+      /**
+        * Fired when page is about to start a download.
+        */
+      @JSName("Browser.downloadWillBegin")
+      var BrowserDotdownloadWillBegin: js.Array[DownloadWillBeginEvent]
+      
+      /**
         * Fires whenever a web font is updated.  A non-empty font parameter indicates a successfully loaded
         * web font
         */
@@ -5119,7 +5544,7 @@ object protocolMappingMod {
         * resized.) The current implementation considers only viewport-dependent media features.
         */
       @JSName("CSS.mediaQueryResultChanged")
-      var CSSDotmediaQueryResultChanged: js.Array[js.Any]
+      var CSSDotmediaQueryResultChanged: js.Array[Any]
       
       /**
         * Fired whenever an active document stylesheet is added.
@@ -5196,7 +5621,7 @@ object protocolMappingMod {
       var DOMDotchildNodeRemoved: js.Array[ChildNodeRemovedEvent]
       
       /**
-        * Called when distrubution is changed.
+        * Called when distribution is changed.
         */
       @JSName("DOM.distributedNodesUpdated")
       var DOMDotdistributedNodesUpdated: js.Array[DistributedNodesUpdatedEvent]
@@ -5205,7 +5630,7 @@ object protocolMappingMod {
         * Fired when `Document` has been totally updated. Node ids are no longer valid.
         */
       @JSName("DOM.documentUpdated")
-      var DOMDotdocumentUpdated: js.Array[js.Any]
+      var DOMDotdocumentUpdated: js.Array[Any]
       
       /**
         * Fired when `Element`'s inline style is modified via a CSS property modification.
@@ -5244,6 +5669,12 @@ object protocolMappingMod {
       @JSName("DOM.shadowRootPushed")
       var DOMDotshadowRootPushed: js.Array[ShadowRootPushedEvent]
       
+      /**
+        * Called when top layer elements are changed.
+        */
+      @JSName("DOM.topLayerElementsUpdated")
+      var DOMDottopLayerElementsUpdated: js.Array[Any]
+      
       @JSName("DOMStorage.domStorageItemAdded")
       var DOMStorageDotdomStorageItemAdded: js.Array[DomStorageItemAddedEvent]
       
@@ -5275,7 +5706,7 @@ object protocolMappingMod {
         * Fired when the virtual machine resumed execution.
         */
       @JSName("Debugger.resumed")
-      var DebuggerDotresumed: js.Array[js.Any]
+      var DebuggerDotresumed: js.Array[Any]
       
       /**
         * Fired when virtual machine fails to parse the script.
@@ -5294,7 +5725,7 @@ object protocolMappingMod {
         * Notification sent after the virtual time budget for the current VirtualTimePolicy has run out.
         */
       @JSName("Emulation.virtualTimeBudgetExpired")
-      var EmulationDotvirtualTimeBudgetExpired: js.Array[js.Any]
+      var EmulationDotvirtualTimeBudgetExpired: js.Array[Any]
       
       /**
         * Issued when the domain is enabled with handleAuthRequests set to true.
@@ -5343,7 +5774,14 @@ object protocolMappingMod {
       var HeapProfilerDotreportHeapSnapshotProgress: js.Array[ReportHeapSnapshotProgressEvent]
       
       @JSName("HeapProfiler.resetProfiles")
-      var HeapProfilerDotresetProfiles: js.Array[js.Any]
+      var HeapProfilerDotresetProfiles: js.Array[Any]
+      
+      /**
+        * Emitted only when `Input.setInterceptDrags` is enabled. Use this data with `Input.dispatchDragEvent` to
+        * restore normal drag and drop behavior.
+        */
+      @JSName("Input.dragIntercepted")
+      var InputDotdragIntercepted: js.Array[DragInterceptedEvent]
       
       /**
         * Fired when remote debugging connection is about to be terminated. Contains detach reason.
@@ -5355,13 +5793,13 @@ object protocolMappingMod {
         * Fired when debugging target has crashed
         */
       @JSName("Inspector.targetCrashed")
-      var InspectorDottargetCrashed: js.Array[js.Any]
+      var InspectorDottargetCrashed: js.Array[Any]
       
       /**
         * Fired when debugging target has reloaded after crash
         */
       @JSName("Inspector.targetReloadedAfterCrash")
-      var InspectorDottargetReloadedAfterCrash: js.Array[js.Any]
+      var InspectorDottargetReloadedAfterCrash: js.Array[Any]
       
       @JSName("LayerTree.layerPainted")
       var LayerTreeDotlayerPainted: js.Array[LayerPaintedEvent]
@@ -5402,8 +5840,8 @@ object protocolMappingMod {
       var MediaDotplayerPropertiesChanged: js.Array[PlayerPropertiesChangedEvent]
       
       /**
-        * Called whenever a player is created, or when a new agent joins and recieves
-        * a list of active players. If an agent is restored, it will recieve the full
+        * Called whenever a player is created, or when a new agent joins and receives
+        * a list of active players. If an agent is restored, it will receive the full
         * list of player ids and all events again.
         */
       @JSName("Media.playersCreated")
@@ -5432,6 +5870,19 @@ object protocolMappingMod {
         */
       @JSName("Network.loadingFinished")
       var NetworkDotloadingFinished: js.Array[LoadingFinishedEvent]
+      
+      @JSName("Network.reportingApiEndpointsChangedForOrigin")
+      var NetworkDotreportingApiEndpointsChangedForOrigin: js.Array[ReportingApiEndpointsChangedForOriginEvent]
+      
+      /**
+        * Is sent whenever a new report is added.
+        * And after 'enableReportingApi' for all existing reports.
+        */
+      @JSName("Network.reportingApiReportAdded")
+      var NetworkDotreportingApiReportAdded: js.Array[ReportingApiReportAddedEvent]
+      
+      @JSName("Network.reportingApiReportUpdated")
+      var NetworkDotreportingApiReportUpdated: js.Array[ReportingApiReportUpdatedEvent]
       
       /**
         * Details of an intercepted HTTP request, which must be either allowed, blocked, modified or
@@ -5489,6 +5940,41 @@ object protocolMappingMod {
       var NetworkDotsignedExchangeReceived: js.Array[SignedExchangeReceivedEvent]
       
       /**
+        * Fired when request for resources within a .wbn file failed.
+        */
+      @JSName("Network.subresourceWebBundleInnerResponseError")
+      var NetworkDotsubresourceWebBundleInnerResponseError: js.Array[SubresourceWebBundleInnerResponseErrorEvent]
+      
+      /**
+        * Fired when handling requests for resources within a .wbn file.
+        * Note: this will only be fired for resources that are requested by the webpage.
+        */
+      @JSName("Network.subresourceWebBundleInnerResponseParsed")
+      var NetworkDotsubresourceWebBundleInnerResponseParsed: js.Array[SubresourceWebBundleInnerResponseParsedEvent]
+      
+      /**
+        * Fired once when parsing the .wbn file has failed.
+        */
+      @JSName("Network.subresourceWebBundleMetadataError")
+      var NetworkDotsubresourceWebBundleMetadataError: js.Array[SubresourceWebBundleMetadataErrorEvent]
+      
+      /**
+        * Fired once when parsing the .wbn file has succeeded.
+        * The event contains the information about the web bundle contents.
+        */
+      @JSName("Network.subresourceWebBundleMetadataReceived")
+      var NetworkDotsubresourceWebBundleMetadataReceived: js.Array[SubresourceWebBundleMetadataReceivedEvent]
+      
+      /**
+        * Fired exactly once for each Trust Token operation. Depending on
+        * the type of the operation and whether the operation succeeded or
+        * failed, the event is fired before the corresponding request was sent
+        * or after the response was received.
+        */
+      @JSName("Network.trustTokenOperationDone")
+      var NetworkDottrustTokenOperationDone: js.Array[TrustTokenOperationDoneEvent]
+      
+      /**
         * Fired when WebSocket is closed.
         */
       @JSName("Network.webSocketClosed")
@@ -5531,10 +6017,28 @@ object protocolMappingMod {
       var NetworkDotwebSocketWillSendHandshakeRequest: js.Array[WebSocketWillSendHandshakeRequestEvent]
       
       /**
+        * Fired when WebTransport is disposed.
+        */
+      @JSName("Network.webTransportClosed")
+      var NetworkDotwebTransportClosed: js.Array[WebTransportClosedEvent]
+      
+      /**
+        * Fired when WebTransport handshake is finished.
+        */
+      @JSName("Network.webTransportConnectionEstablished")
+      var NetworkDotwebTransportConnectionEstablished: js.Array[WebTransportConnectionEstablishedEvent]
+      
+      /**
+        * Fired upon WebTransport creation.
+        */
+      @JSName("Network.webTransportCreated")
+      var NetworkDotwebTransportCreated: js.Array[WebTransportCreatedEvent]
+      
+      /**
         * Fired when user cancels the inspect mode.
         */
       @JSName("Overlay.inspectModeCanceled")
-      var OverlayDotinspectModeCanceled: js.Array[js.Any]
+      var OverlayDotinspectModeCanceled: js.Array[Any]
       
       /**
         * Fired when the node should be inspected. This happens after call to `setInspectMode` or when
@@ -5556,26 +6060,43 @@ object protocolMappingMod {
       var OverlayDotscreenshotRequested: js.Array[ScreenshotRequestedEvent]
       
       /**
+        * Fired for failed bfcache history navigations if BackForwardCache feature is enabled. Do
+        * not assume any ordering with the Page.frameNavigated event. This event is fired only for
+        * main-frame history navigation where the document changes (non-same-document navigations),
+        * when bfcache navigation fails.
+        */
+      @JSName("Page.backForwardCacheNotUsed")
+      var PageDotbackForwardCacheNotUsed: js.Array[BackForwardCacheNotUsedEvent]
+      
+      /**
         * Issued for every compilation cache generated. Is only available
         * if Page.setGenerateCompilationCache is enabled.
         */
       @JSName("Page.compilationCacheProduced")
       var PageDotcompilationCacheProduced: js.Array[CompilationCacheProducedEvent]
       
+      /**
+        * Fired when opening document to write to.
+        */
+      @JSName("Page.documentOpened")
+      var PageDotdocumentOpened: js.Array[DocumentOpenedEvent]
+      
       @JSName("Page.domContentEventFired")
       var PageDotdomContentEventFired: js.Array[DomContentEventFiredEvent]
       
       /**
         * Fired when download makes progress. Last call has |done| == true.
+        * Deprecated. Use Browser.downloadProgress instead.
         */
       @JSName("Page.downloadProgress")
-      var PageDotdownloadProgress: js.Array[DownloadProgressEvent]
+      var PageDotdownloadProgress: js.Array[typings.devtoolsProtocol.mod.Protocol.Page.DownloadProgressEvent]
       
       /**
         * Fired when page is about to start a download.
+        * Deprecated. Use Browser.downloadWillBegin instead.
         */
       @JSName("Page.downloadWillBegin")
-      var PageDotdownloadWillBegin: js.Array[DownloadWillBeginEvent]
+      var PageDotdownloadWillBegin: js.Array[typings.devtoolsProtocol.mod.Protocol.Page.DownloadWillBeginEvent]
       
       /**
         * Emitted only when `page.interceptFileChooser` is enabled.
@@ -5615,7 +6136,7 @@ object protocolMappingMod {
       var PageDotframeRequestedNavigation: js.Array[FrameRequestedNavigationEvent]
       
       @JSName("Page.frameResized")
-      var PageDotframeResized: js.Array[js.Any]
+      var PageDotframeResized: js.Array[Any]
       
       /**
         * Fired when frame schedules a potential navigation.
@@ -5639,13 +6160,13 @@ object protocolMappingMod {
         * Fired when interstitial page was hidden
         */
       @JSName("Page.interstitialHidden")
-      var PageDotinterstitialHidden: js.Array[js.Any]
+      var PageDotinterstitialHidden: js.Array[Any]
       
       /**
         * Fired when interstitial page was shown
         */
       @JSName("Page.interstitialShown")
-      var PageDotinterstitialShown: js.Array[js.Any]
+      var PageDotinterstitialShown: js.Array[Any]
       
       /**
         * Fired when a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload) has been
@@ -5677,6 +6198,12 @@ object protocolMappingMod {
       var PageDotnavigatedWithinDocument: js.Array[NavigatedWithinDocumentEvent]
       
       /**
+        * Fired when a prerender attempt is completed.
+        */
+      @JSName("Page.prerenderAttemptCompleted")
+      var PageDotprerenderAttemptCompleted: js.Array[PrerenderAttemptCompletedEvent]
+      
+      /**
         * Compressed image data requested by the `startScreencast`.
         */
       @JSName("Page.screencastFrame")
@@ -5701,6 +6228,12 @@ object protocolMappingMod {
       @JSName("Performance.metrics")
       var PerformanceDotmetrics: js.Array[MetricsEvent]
       
+      /**
+        * Sent when a performance timeline event is added. See reportPerformanceTimeline method.
+        */
+      @JSName("PerformanceTimeline.timelineEventAdded")
+      var PerformanceTimelineDottimelineEventAdded: js.Array[TimelineEventAddedEvent]
+      
       @JSName("Profiler.consoleProfileFinished")
       var ProfilerDotconsoleProfileFinished: js.Array[ConsoleProfileFinishedEvent]
       
@@ -5714,7 +6247,7 @@ object protocolMappingMod {
         * Reports coverage delta since the last poll (either from an event like this, or from
         * `takePreciseCoverage` for the current isolate. May only be sent if precise code
         * coverage has been started. This event can be trigged by the embedder to, for example,
-        * trigger collection of coverage data immediatelly at a certain point in time.
+        * trigger collection of coverage data immediately at a certain point in time.
         */
       @JSName("Profiler.preciseCoverageDeltaUpdate")
       var ProfilerDotpreciseCoverageDeltaUpdate: js.Array[PreciseCoverageDeltaUpdateEvent]
@@ -5759,7 +6292,7 @@ object protocolMappingMod {
         * Issued when all executionContexts were cleared in browser
         */
       @JSName("Runtime.executionContextsCleared")
-      var RuntimeDotexecutionContextsCleared: js.Array[js.Any]
+      var RuntimeDotexecutionContextsCleared: js.Array[Any]
       
       /**
         * Issued when object should be inspected (for example, as a result of inspect() command line API
@@ -5778,7 +6311,7 @@ object protocolMappingMod {
       var SecurityDotcertificateError: js.Array[CertificateErrorEvent]
       
       /**
-        * The security state of the page changed.
+        * The security state of the page changed. No longer being sent.
         */
       @JSName("Security.securityStateChanged")
       var SecurityDotsecurityStateChanged: js.Array[SecurityStateChangedEvent]
@@ -5821,6 +6354,12 @@ object protocolMappingMod {
         */
       @JSName("Storage.indexedDBListUpdated")
       var StorageDotindexedDBListUpdated: js.Array[IndexedDBListUpdatedEvent]
+      
+      /**
+        * One of the interest groups was accessed by the associated page.
+        */
+      @JSName("Storage.interestGroupAccessed")
+      var StorageDotinterestGroupAccessed: js.Array[InterestGroupAccessedEvent]
       
       /**
         * Issued when attached to target because of auto-attach or `attachToTarget` command.
@@ -5971,16 +6510,18 @@ object protocolMappingMod {
     object Events {
       
       inline def apply(
+        AccessibilityDotloadComplete: js.Array[LoadCompleteEvent],
+        AccessibilityDotnodesUpdated: js.Array[NodesUpdatedEvent],
         AnimationDotanimationCanceled: js.Array[AnimationCanceledEvent],
         AnimationDotanimationCreated: js.Array[AnimationCreatedEvent],
         AnimationDotanimationStarted: js.Array[AnimationStartedEvent],
-        ApplicationCacheDotapplicationCacheStatusUpdated: js.Array[ApplicationCacheStatusUpdatedEvent],
-        ApplicationCacheDotnetworkStateUpdated: js.Array[NetworkStateUpdatedEvent],
         AuditsDotissueAdded: js.Array[IssueAddedEvent],
         BackgroundServiceDotbackgroundServiceEventReceived: js.Array[BackgroundServiceEventReceivedEvent],
         BackgroundServiceDotrecordingStateChanged: js.Array[RecordingStateChangedEvent],
+        BrowserDotdownloadProgress: js.Array[DownloadProgressEvent],
+        BrowserDotdownloadWillBegin: js.Array[DownloadWillBeginEvent],
         CSSDotfontsUpdated: js.Array[FontsUpdatedEvent],
-        CSSDotmediaQueryResultChanged: js.Array[js.Any],
+        CSSDotmediaQueryResultChanged: js.Array[Any],
         CSSDotstyleSheetAdded: js.Array[StyleSheetAddedEvent],
         CSSDotstyleSheetChanged: js.Array[StyleSheetChangedEvent],
         CSSDotstyleSheetRemoved: js.Array[StyleSheetRemovedEvent],
@@ -5994,13 +6535,14 @@ object protocolMappingMod {
         DOMDotchildNodeInserted: js.Array[ChildNodeInsertedEvent],
         DOMDotchildNodeRemoved: js.Array[ChildNodeRemovedEvent],
         DOMDotdistributedNodesUpdated: js.Array[DistributedNodesUpdatedEvent],
-        DOMDotdocumentUpdated: js.Array[js.Any],
+        DOMDotdocumentUpdated: js.Array[Any],
         DOMDotinlineStyleInvalidated: js.Array[InlineStyleInvalidatedEvent],
         DOMDotpseudoElementAdded: js.Array[PseudoElementAddedEvent],
         DOMDotpseudoElementRemoved: js.Array[PseudoElementRemovedEvent],
         DOMDotsetChildNodes: js.Array[SetChildNodesEvent],
         DOMDotshadowRootPopped: js.Array[ShadowRootPoppedEvent],
         DOMDotshadowRootPushed: js.Array[ShadowRootPushedEvent],
+        DOMDottopLayerElementsUpdated: js.Array[Any],
         DOMStorageDotdomStorageItemAdded: js.Array[DomStorageItemAddedEvent],
         DOMStorageDotdomStorageItemRemoved: js.Array[DomStorageItemRemovedEvent],
         DOMStorageDotdomStorageItemUpdated: js.Array[DomStorageItemUpdatedEvent],
@@ -6008,10 +6550,10 @@ object protocolMappingMod {
         DatabaseDotaddDatabase: js.Array[AddDatabaseEvent],
         DebuggerDotbreakpointResolved: js.Array[BreakpointResolvedEvent],
         DebuggerDotpaused: js.Array[PausedEvent],
-        DebuggerDotresumed: js.Array[js.Any],
+        DebuggerDotresumed: js.Array[Any],
         DebuggerDotscriptFailedToParse: js.Array[ScriptFailedToParseEvent],
         DebuggerDotscriptParsed: js.Array[ScriptParsedEvent],
-        EmulationDotvirtualTimeBudgetExpired: js.Array[js.Any],
+        EmulationDotvirtualTimeBudgetExpired: js.Array[Any],
         FetchDotauthRequired: js.Array[AuthRequiredEvent],
         FetchDotrequestPaused: js.Array[RequestPausedEvent],
         HeadlessExperimentalDotneedsBeginFramesChanged: js.Array[NeedsBeginFramesChangedEvent],
@@ -6019,10 +6561,11 @@ object protocolMappingMod {
         HeapProfilerDotheapStatsUpdate: js.Array[HeapStatsUpdateEvent],
         HeapProfilerDotlastSeenObjectId: js.Array[LastSeenObjectIdEvent],
         HeapProfilerDotreportHeapSnapshotProgress: js.Array[ReportHeapSnapshotProgressEvent],
-        HeapProfilerDotresetProfiles: js.Array[js.Any],
+        HeapProfilerDotresetProfiles: js.Array[Any],
+        InputDotdragIntercepted: js.Array[DragInterceptedEvent],
         InspectorDotdetached: js.Array[DetachedEvent],
-        InspectorDottargetCrashed: js.Array[js.Any],
-        InspectorDottargetReloadedAfterCrash: js.Array[js.Any],
+        InspectorDottargetCrashed: js.Array[Any],
+        InspectorDottargetReloadedAfterCrash: js.Array[Any],
         LayerTreeDotlayerPainted: js.Array[LayerPaintedEvent],
         LayerTreeDotlayerTreeDidChange: js.Array[LayerTreeDidChangeEvent],
         LogDotentryAdded: js.Array[EntryAddedEvent],
@@ -6035,6 +6578,9 @@ object protocolMappingMod {
         NetworkDoteventSourceMessageReceived: js.Array[EventSourceMessageReceivedEvent],
         NetworkDotloadingFailed: js.Array[LoadingFailedEvent],
         NetworkDotloadingFinished: js.Array[LoadingFinishedEvent],
+        NetworkDotreportingApiEndpointsChangedForOrigin: js.Array[ReportingApiEndpointsChangedForOriginEvent],
+        NetworkDotreportingApiReportAdded: js.Array[ReportingApiReportAddedEvent],
+        NetworkDotreportingApiReportUpdated: js.Array[ReportingApiReportUpdatedEvent],
         NetworkDotrequestIntercepted: js.Array[RequestInterceptedEvent],
         NetworkDotrequestServedFromCache: js.Array[RequestServedFromCacheEvent],
         NetworkDotrequestWillBeSent: js.Array[RequestWillBeSentEvent],
@@ -6043,6 +6589,11 @@ object protocolMappingMod {
         NetworkDotresponseReceived: js.Array[ResponseReceivedEvent],
         NetworkDotresponseReceivedExtraInfo: js.Array[ResponseReceivedExtraInfoEvent],
         NetworkDotsignedExchangeReceived: js.Array[SignedExchangeReceivedEvent],
+        NetworkDotsubresourceWebBundleInnerResponseError: js.Array[SubresourceWebBundleInnerResponseErrorEvent],
+        NetworkDotsubresourceWebBundleInnerResponseParsed: js.Array[SubresourceWebBundleInnerResponseParsedEvent],
+        NetworkDotsubresourceWebBundleMetadataError: js.Array[SubresourceWebBundleMetadataErrorEvent],
+        NetworkDotsubresourceWebBundleMetadataReceived: js.Array[SubresourceWebBundleMetadataReceivedEvent],
+        NetworkDottrustTokenOperationDone: js.Array[TrustTokenOperationDoneEvent],
         NetworkDotwebSocketClosed: js.Array[WebSocketClosedEvent],
         NetworkDotwebSocketCreated: js.Array[WebSocketCreatedEvent],
         NetworkDotwebSocketFrameError: js.Array[WebSocketFrameErrorEvent],
@@ -6050,35 +6601,42 @@ object protocolMappingMod {
         NetworkDotwebSocketFrameSent: js.Array[WebSocketFrameSentEvent],
         NetworkDotwebSocketHandshakeResponseReceived: js.Array[WebSocketHandshakeResponseReceivedEvent],
         NetworkDotwebSocketWillSendHandshakeRequest: js.Array[WebSocketWillSendHandshakeRequestEvent],
-        OverlayDotinspectModeCanceled: js.Array[js.Any],
+        NetworkDotwebTransportClosed: js.Array[WebTransportClosedEvent],
+        NetworkDotwebTransportConnectionEstablished: js.Array[WebTransportConnectionEstablishedEvent],
+        NetworkDotwebTransportCreated: js.Array[WebTransportCreatedEvent],
+        OverlayDotinspectModeCanceled: js.Array[Any],
         OverlayDotinspectNodeRequested: js.Array[InspectNodeRequestedEvent],
         OverlayDotnodeHighlightRequested: js.Array[NodeHighlightRequestedEvent],
         OverlayDotscreenshotRequested: js.Array[ScreenshotRequestedEvent],
+        PageDotbackForwardCacheNotUsed: js.Array[BackForwardCacheNotUsedEvent],
         PageDotcompilationCacheProduced: js.Array[CompilationCacheProducedEvent],
+        PageDotdocumentOpened: js.Array[DocumentOpenedEvent],
         PageDotdomContentEventFired: js.Array[DomContentEventFiredEvent],
-        PageDotdownloadProgress: js.Array[DownloadProgressEvent],
-        PageDotdownloadWillBegin: js.Array[DownloadWillBeginEvent],
+        PageDotdownloadProgress: js.Array[typings.devtoolsProtocol.mod.Protocol.Page.DownloadProgressEvent],
+        PageDotdownloadWillBegin: js.Array[typings.devtoolsProtocol.mod.Protocol.Page.DownloadWillBeginEvent],
         PageDotfileChooserOpened: js.Array[FileChooserOpenedEvent],
         PageDotframeAttached: js.Array[FrameAttachedEvent],
         PageDotframeClearedScheduledNavigation: js.Array[FrameClearedScheduledNavigationEvent],
         PageDotframeDetached: js.Array[FrameDetachedEvent],
         PageDotframeNavigated: js.Array[FrameNavigatedEvent],
         PageDotframeRequestedNavigation: js.Array[FrameRequestedNavigationEvent],
-        PageDotframeResized: js.Array[js.Any],
+        PageDotframeResized: js.Array[Any],
         PageDotframeScheduledNavigation: js.Array[FrameScheduledNavigationEvent],
         PageDotframeStartedLoading: js.Array[FrameStartedLoadingEvent],
         PageDotframeStoppedLoading: js.Array[FrameStoppedLoadingEvent],
-        PageDotinterstitialHidden: js.Array[js.Any],
-        PageDotinterstitialShown: js.Array[js.Any],
+        PageDotinterstitialHidden: js.Array[Any],
+        PageDotinterstitialShown: js.Array[Any],
         PageDotjavascriptDialogClosed: js.Array[JavascriptDialogClosedEvent],
         PageDotjavascriptDialogOpening: js.Array[JavascriptDialogOpeningEvent],
         PageDotlifecycleEvent: js.Array[LifecycleEventEvent],
         PageDotloadEventFired: js.Array[LoadEventFiredEvent],
         PageDotnavigatedWithinDocument: js.Array[NavigatedWithinDocumentEvent],
+        PageDotprerenderAttemptCompleted: js.Array[PrerenderAttemptCompletedEvent],
         PageDotscreencastFrame: js.Array[ScreencastFrameEvent],
         PageDotscreencastVisibilityChanged: js.Array[ScreencastVisibilityChangedEvent],
         PageDotwindowOpen: js.Array[WindowOpenEvent],
         PerformanceDotmetrics: js.Array[MetricsEvent],
+        PerformanceTimelineDottimelineEventAdded: js.Array[TimelineEventAddedEvent],
         ProfilerDotconsoleProfileFinished: js.Array[ConsoleProfileFinishedEvent],
         ProfilerDotconsoleProfileStarted: js.Array[ConsoleProfileStartedEvent],
         ProfilerDotpreciseCoverageDeltaUpdate: js.Array[PreciseCoverageDeltaUpdateEvent],
@@ -6088,7 +6646,7 @@ object protocolMappingMod {
         RuntimeDotexceptionThrown: js.Array[ExceptionThrownEvent],
         RuntimeDotexecutionContextCreated: js.Array[ExecutionContextCreatedEvent],
         RuntimeDotexecutionContextDestroyed: js.Array[ExecutionContextDestroyedEvent],
-        RuntimeDotexecutionContextsCleared: js.Array[js.Any],
+        RuntimeDotexecutionContextsCleared: js.Array[Any],
         RuntimeDotinspectRequested: js.Array[InspectRequestedEvent],
         SecurityDotcertificateError: js.Array[CertificateErrorEvent],
         SecurityDotsecurityStateChanged: js.Array[SecurityStateChangedEvent],
@@ -6100,6 +6658,7 @@ object protocolMappingMod {
         StorageDotcacheStorageListUpdated: js.Array[CacheStorageListUpdatedEvent],
         StorageDotindexedDBContentUpdated: js.Array[IndexedDBContentUpdatedEvent],
         StorageDotindexedDBListUpdated: js.Array[IndexedDBListUpdatedEvent],
+        StorageDotinterestGroupAccessed: js.Array[InterestGroupAccessedEvent],
         TargetDotattachedToTarget: js.Array[AttachedToTargetEvent],
         TargetDotdetachedFromTarget: js.Array[DetachedFromTargetEvent],
         TargetDotreceivedMessageFromTarget: js.Array[ReceivedMessageFromTargetEvent],
@@ -6126,14 +6685,16 @@ object protocolMappingMod {
         WebAudioDotnodesDisconnected: js.Array[NodesDisconnectedEvent]
       ): Events = {
         val __obj = js.Dynamic.literal()
+        __obj.updateDynamic("Accessibility.loadComplete")(AccessibilityDotloadComplete.asInstanceOf[js.Any])
+        __obj.updateDynamic("Accessibility.nodesUpdated")(AccessibilityDotnodesUpdated.asInstanceOf[js.Any])
         __obj.updateDynamic("Animation.animationCanceled")(AnimationDotanimationCanceled.asInstanceOf[js.Any])
         __obj.updateDynamic("Animation.animationCreated")(AnimationDotanimationCreated.asInstanceOf[js.Any])
         __obj.updateDynamic("Animation.animationStarted")(AnimationDotanimationStarted.asInstanceOf[js.Any])
-        __obj.updateDynamic("ApplicationCache.applicationCacheStatusUpdated")(ApplicationCacheDotapplicationCacheStatusUpdated.asInstanceOf[js.Any])
-        __obj.updateDynamic("ApplicationCache.networkStateUpdated")(ApplicationCacheDotnetworkStateUpdated.asInstanceOf[js.Any])
         __obj.updateDynamic("Audits.issueAdded")(AuditsDotissueAdded.asInstanceOf[js.Any])
         __obj.updateDynamic("BackgroundService.backgroundServiceEventReceived")(BackgroundServiceDotbackgroundServiceEventReceived.asInstanceOf[js.Any])
         __obj.updateDynamic("BackgroundService.recordingStateChanged")(BackgroundServiceDotrecordingStateChanged.asInstanceOf[js.Any])
+        __obj.updateDynamic("Browser.downloadProgress")(BrowserDotdownloadProgress.asInstanceOf[js.Any])
+        __obj.updateDynamic("Browser.downloadWillBegin")(BrowserDotdownloadWillBegin.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.fontsUpdated")(CSSDotfontsUpdated.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.mediaQueryResultChanged")(CSSDotmediaQueryResultChanged.asInstanceOf[js.Any])
         __obj.updateDynamic("CSS.styleSheetAdded")(CSSDotstyleSheetAdded.asInstanceOf[js.Any])
@@ -6156,6 +6717,7 @@ object protocolMappingMod {
         __obj.updateDynamic("DOM.setChildNodes")(DOMDotsetChildNodes.asInstanceOf[js.Any])
         __obj.updateDynamic("DOM.shadowRootPopped")(DOMDotshadowRootPopped.asInstanceOf[js.Any])
         __obj.updateDynamic("DOM.shadowRootPushed")(DOMDotshadowRootPushed.asInstanceOf[js.Any])
+        __obj.updateDynamic("DOM.topLayerElementsUpdated")(DOMDottopLayerElementsUpdated.asInstanceOf[js.Any])
         __obj.updateDynamic("DOMStorage.domStorageItemAdded")(DOMStorageDotdomStorageItemAdded.asInstanceOf[js.Any])
         __obj.updateDynamic("DOMStorage.domStorageItemRemoved")(DOMStorageDotdomStorageItemRemoved.asInstanceOf[js.Any])
         __obj.updateDynamic("DOMStorage.domStorageItemUpdated")(DOMStorageDotdomStorageItemUpdated.asInstanceOf[js.Any])
@@ -6175,6 +6737,7 @@ object protocolMappingMod {
         __obj.updateDynamic("HeapProfiler.lastSeenObjectId")(HeapProfilerDotlastSeenObjectId.asInstanceOf[js.Any])
         __obj.updateDynamic("HeapProfiler.reportHeapSnapshotProgress")(HeapProfilerDotreportHeapSnapshotProgress.asInstanceOf[js.Any])
         __obj.updateDynamic("HeapProfiler.resetProfiles")(HeapProfilerDotresetProfiles.asInstanceOf[js.Any])
+        __obj.updateDynamic("Input.dragIntercepted")(InputDotdragIntercepted.asInstanceOf[js.Any])
         __obj.updateDynamic("Inspector.detached")(InspectorDotdetached.asInstanceOf[js.Any])
         __obj.updateDynamic("Inspector.targetCrashed")(InspectorDottargetCrashed.asInstanceOf[js.Any])
         __obj.updateDynamic("Inspector.targetReloadedAfterCrash")(InspectorDottargetReloadedAfterCrash.asInstanceOf[js.Any])
@@ -6190,6 +6753,9 @@ object protocolMappingMod {
         __obj.updateDynamic("Network.eventSourceMessageReceived")(NetworkDoteventSourceMessageReceived.asInstanceOf[js.Any])
         __obj.updateDynamic("Network.loadingFailed")(NetworkDotloadingFailed.asInstanceOf[js.Any])
         __obj.updateDynamic("Network.loadingFinished")(NetworkDotloadingFinished.asInstanceOf[js.Any])
+        __obj.updateDynamic("Network.reportingApiEndpointsChangedForOrigin")(NetworkDotreportingApiEndpointsChangedForOrigin.asInstanceOf[js.Any])
+        __obj.updateDynamic("Network.reportingApiReportAdded")(NetworkDotreportingApiReportAdded.asInstanceOf[js.Any])
+        __obj.updateDynamic("Network.reportingApiReportUpdated")(NetworkDotreportingApiReportUpdated.asInstanceOf[js.Any])
         __obj.updateDynamic("Network.requestIntercepted")(NetworkDotrequestIntercepted.asInstanceOf[js.Any])
         __obj.updateDynamic("Network.requestServedFromCache")(NetworkDotrequestServedFromCache.asInstanceOf[js.Any])
         __obj.updateDynamic("Network.requestWillBeSent")(NetworkDotrequestWillBeSent.asInstanceOf[js.Any])
@@ -6198,6 +6764,11 @@ object protocolMappingMod {
         __obj.updateDynamic("Network.responseReceived")(NetworkDotresponseReceived.asInstanceOf[js.Any])
         __obj.updateDynamic("Network.responseReceivedExtraInfo")(NetworkDotresponseReceivedExtraInfo.asInstanceOf[js.Any])
         __obj.updateDynamic("Network.signedExchangeReceived")(NetworkDotsignedExchangeReceived.asInstanceOf[js.Any])
+        __obj.updateDynamic("Network.subresourceWebBundleInnerResponseError")(NetworkDotsubresourceWebBundleInnerResponseError.asInstanceOf[js.Any])
+        __obj.updateDynamic("Network.subresourceWebBundleInnerResponseParsed")(NetworkDotsubresourceWebBundleInnerResponseParsed.asInstanceOf[js.Any])
+        __obj.updateDynamic("Network.subresourceWebBundleMetadataError")(NetworkDotsubresourceWebBundleMetadataError.asInstanceOf[js.Any])
+        __obj.updateDynamic("Network.subresourceWebBundleMetadataReceived")(NetworkDotsubresourceWebBundleMetadataReceived.asInstanceOf[js.Any])
+        __obj.updateDynamic("Network.trustTokenOperationDone")(NetworkDottrustTokenOperationDone.asInstanceOf[js.Any])
         __obj.updateDynamic("Network.webSocketClosed")(NetworkDotwebSocketClosed.asInstanceOf[js.Any])
         __obj.updateDynamic("Network.webSocketCreated")(NetworkDotwebSocketCreated.asInstanceOf[js.Any])
         __obj.updateDynamic("Network.webSocketFrameError")(NetworkDotwebSocketFrameError.asInstanceOf[js.Any])
@@ -6205,11 +6776,16 @@ object protocolMappingMod {
         __obj.updateDynamic("Network.webSocketFrameSent")(NetworkDotwebSocketFrameSent.asInstanceOf[js.Any])
         __obj.updateDynamic("Network.webSocketHandshakeResponseReceived")(NetworkDotwebSocketHandshakeResponseReceived.asInstanceOf[js.Any])
         __obj.updateDynamic("Network.webSocketWillSendHandshakeRequest")(NetworkDotwebSocketWillSendHandshakeRequest.asInstanceOf[js.Any])
+        __obj.updateDynamic("Network.webTransportClosed")(NetworkDotwebTransportClosed.asInstanceOf[js.Any])
+        __obj.updateDynamic("Network.webTransportConnectionEstablished")(NetworkDotwebTransportConnectionEstablished.asInstanceOf[js.Any])
+        __obj.updateDynamic("Network.webTransportCreated")(NetworkDotwebTransportCreated.asInstanceOf[js.Any])
         __obj.updateDynamic("Overlay.inspectModeCanceled")(OverlayDotinspectModeCanceled.asInstanceOf[js.Any])
         __obj.updateDynamic("Overlay.inspectNodeRequested")(OverlayDotinspectNodeRequested.asInstanceOf[js.Any])
         __obj.updateDynamic("Overlay.nodeHighlightRequested")(OverlayDotnodeHighlightRequested.asInstanceOf[js.Any])
         __obj.updateDynamic("Overlay.screenshotRequested")(OverlayDotscreenshotRequested.asInstanceOf[js.Any])
+        __obj.updateDynamic("Page.backForwardCacheNotUsed")(PageDotbackForwardCacheNotUsed.asInstanceOf[js.Any])
         __obj.updateDynamic("Page.compilationCacheProduced")(PageDotcompilationCacheProduced.asInstanceOf[js.Any])
+        __obj.updateDynamic("Page.documentOpened")(PageDotdocumentOpened.asInstanceOf[js.Any])
         __obj.updateDynamic("Page.domContentEventFired")(PageDotdomContentEventFired.asInstanceOf[js.Any])
         __obj.updateDynamic("Page.downloadProgress")(PageDotdownloadProgress.asInstanceOf[js.Any])
         __obj.updateDynamic("Page.downloadWillBegin")(PageDotdownloadWillBegin.asInstanceOf[js.Any])
@@ -6230,10 +6806,12 @@ object protocolMappingMod {
         __obj.updateDynamic("Page.lifecycleEvent")(PageDotlifecycleEvent.asInstanceOf[js.Any])
         __obj.updateDynamic("Page.loadEventFired")(PageDotloadEventFired.asInstanceOf[js.Any])
         __obj.updateDynamic("Page.navigatedWithinDocument")(PageDotnavigatedWithinDocument.asInstanceOf[js.Any])
+        __obj.updateDynamic("Page.prerenderAttemptCompleted")(PageDotprerenderAttemptCompleted.asInstanceOf[js.Any])
         __obj.updateDynamic("Page.screencastFrame")(PageDotscreencastFrame.asInstanceOf[js.Any])
         __obj.updateDynamic("Page.screencastVisibilityChanged")(PageDotscreencastVisibilityChanged.asInstanceOf[js.Any])
         __obj.updateDynamic("Page.windowOpen")(PageDotwindowOpen.asInstanceOf[js.Any])
         __obj.updateDynamic("Performance.metrics")(PerformanceDotmetrics.asInstanceOf[js.Any])
+        __obj.updateDynamic("PerformanceTimeline.timelineEventAdded")(PerformanceTimelineDottimelineEventAdded.asInstanceOf[js.Any])
         __obj.updateDynamic("Profiler.consoleProfileFinished")(ProfilerDotconsoleProfileFinished.asInstanceOf[js.Any])
         __obj.updateDynamic("Profiler.consoleProfileStarted")(ProfilerDotconsoleProfileStarted.asInstanceOf[js.Any])
         __obj.updateDynamic("Profiler.preciseCoverageDeltaUpdate")(ProfilerDotpreciseCoverageDeltaUpdate.asInstanceOf[js.Any])
@@ -6255,6 +6833,7 @@ object protocolMappingMod {
         __obj.updateDynamic("Storage.cacheStorageListUpdated")(StorageDotcacheStorageListUpdated.asInstanceOf[js.Any])
         __obj.updateDynamic("Storage.indexedDBContentUpdated")(StorageDotindexedDBContentUpdated.asInstanceOf[js.Any])
         __obj.updateDynamic("Storage.indexedDBListUpdated")(StorageDotindexedDBListUpdated.asInstanceOf[js.Any])
+        __obj.updateDynamic("Storage.interestGroupAccessed")(StorageDotinterestGroupAccessed.asInstanceOf[js.Any])
         __obj.updateDynamic("Target.attachedToTarget")(TargetDotattachedToTarget.asInstanceOf[js.Any])
         __obj.updateDynamic("Target.detachedFromTarget")(TargetDotdetachedFromTarget.asInstanceOf[js.Any])
         __obj.updateDynamic("Target.receivedMessageFromTarget")(TargetDotreceivedMessageFromTarget.asInstanceOf[js.Any])
@@ -6284,617 +6863,697 @@ object protocolMappingMod {
       
       extension [Self <: Events](x: Self) {
         
+        inline def setAccessibilityDotloadComplete(value: js.Array[LoadCompleteEvent]): Self = StObject.set(x, "Accessibility.loadComplete", value.asInstanceOf[js.Any])
+        
+        inline def setAccessibilityDotloadCompleteVarargs(value: LoadCompleteEvent*): Self = StObject.set(x, "Accessibility.loadComplete", js.Array(value*))
+        
+        inline def setAccessibilityDotnodesUpdated(value: js.Array[NodesUpdatedEvent]): Self = StObject.set(x, "Accessibility.nodesUpdated", value.asInstanceOf[js.Any])
+        
+        inline def setAccessibilityDotnodesUpdatedVarargs(value: NodesUpdatedEvent*): Self = StObject.set(x, "Accessibility.nodesUpdated", js.Array(value*))
+        
         inline def setAnimationDotanimationCanceled(value: js.Array[AnimationCanceledEvent]): Self = StObject.set(x, "Animation.animationCanceled", value.asInstanceOf[js.Any])
         
-        inline def setAnimationDotanimationCanceledVarargs(value: AnimationCanceledEvent*): Self = StObject.set(x, "Animation.animationCanceled", js.Array(value :_*))
+        inline def setAnimationDotanimationCanceledVarargs(value: AnimationCanceledEvent*): Self = StObject.set(x, "Animation.animationCanceled", js.Array(value*))
         
         inline def setAnimationDotanimationCreated(value: js.Array[AnimationCreatedEvent]): Self = StObject.set(x, "Animation.animationCreated", value.asInstanceOf[js.Any])
         
-        inline def setAnimationDotanimationCreatedVarargs(value: AnimationCreatedEvent*): Self = StObject.set(x, "Animation.animationCreated", js.Array(value :_*))
+        inline def setAnimationDotanimationCreatedVarargs(value: AnimationCreatedEvent*): Self = StObject.set(x, "Animation.animationCreated", js.Array(value*))
         
         inline def setAnimationDotanimationStarted(value: js.Array[AnimationStartedEvent]): Self = StObject.set(x, "Animation.animationStarted", value.asInstanceOf[js.Any])
         
-        inline def setAnimationDotanimationStartedVarargs(value: AnimationStartedEvent*): Self = StObject.set(x, "Animation.animationStarted", js.Array(value :_*))
-        
-        inline def setApplicationCacheDotapplicationCacheStatusUpdated(value: js.Array[ApplicationCacheStatusUpdatedEvent]): Self = StObject.set(x, "ApplicationCache.applicationCacheStatusUpdated", value.asInstanceOf[js.Any])
-        
-        inline def setApplicationCacheDotapplicationCacheStatusUpdatedVarargs(value: ApplicationCacheStatusUpdatedEvent*): Self = StObject.set(x, "ApplicationCache.applicationCacheStatusUpdated", js.Array(value :_*))
-        
-        inline def setApplicationCacheDotnetworkStateUpdated(value: js.Array[NetworkStateUpdatedEvent]): Self = StObject.set(x, "ApplicationCache.networkStateUpdated", value.asInstanceOf[js.Any])
-        
-        inline def setApplicationCacheDotnetworkStateUpdatedVarargs(value: NetworkStateUpdatedEvent*): Self = StObject.set(x, "ApplicationCache.networkStateUpdated", js.Array(value :_*))
+        inline def setAnimationDotanimationStartedVarargs(value: AnimationStartedEvent*): Self = StObject.set(x, "Animation.animationStarted", js.Array(value*))
         
         inline def setAuditsDotissueAdded(value: js.Array[IssueAddedEvent]): Self = StObject.set(x, "Audits.issueAdded", value.asInstanceOf[js.Any])
         
-        inline def setAuditsDotissueAddedVarargs(value: IssueAddedEvent*): Self = StObject.set(x, "Audits.issueAdded", js.Array(value :_*))
+        inline def setAuditsDotissueAddedVarargs(value: IssueAddedEvent*): Self = StObject.set(x, "Audits.issueAdded", js.Array(value*))
         
         inline def setBackgroundServiceDotbackgroundServiceEventReceived(value: js.Array[BackgroundServiceEventReceivedEvent]): Self = StObject.set(x, "BackgroundService.backgroundServiceEventReceived", value.asInstanceOf[js.Any])
         
-        inline def setBackgroundServiceDotbackgroundServiceEventReceivedVarargs(value: BackgroundServiceEventReceivedEvent*): Self = StObject.set(x, "BackgroundService.backgroundServiceEventReceived", js.Array(value :_*))
+        inline def setBackgroundServiceDotbackgroundServiceEventReceivedVarargs(value: BackgroundServiceEventReceivedEvent*): Self = StObject.set(x, "BackgroundService.backgroundServiceEventReceived", js.Array(value*))
         
         inline def setBackgroundServiceDotrecordingStateChanged(value: js.Array[RecordingStateChangedEvent]): Self = StObject.set(x, "BackgroundService.recordingStateChanged", value.asInstanceOf[js.Any])
         
-        inline def setBackgroundServiceDotrecordingStateChangedVarargs(value: RecordingStateChangedEvent*): Self = StObject.set(x, "BackgroundService.recordingStateChanged", js.Array(value :_*))
+        inline def setBackgroundServiceDotrecordingStateChangedVarargs(value: RecordingStateChangedEvent*): Self = StObject.set(x, "BackgroundService.recordingStateChanged", js.Array(value*))
+        
+        inline def setBrowserDotdownloadProgress(value: js.Array[DownloadProgressEvent]): Self = StObject.set(x, "Browser.downloadProgress", value.asInstanceOf[js.Any])
+        
+        inline def setBrowserDotdownloadProgressVarargs(value: DownloadProgressEvent*): Self = StObject.set(x, "Browser.downloadProgress", js.Array(value*))
+        
+        inline def setBrowserDotdownloadWillBegin(value: js.Array[DownloadWillBeginEvent]): Self = StObject.set(x, "Browser.downloadWillBegin", value.asInstanceOf[js.Any])
+        
+        inline def setBrowserDotdownloadWillBeginVarargs(value: DownloadWillBeginEvent*): Self = StObject.set(x, "Browser.downloadWillBegin", js.Array(value*))
         
         inline def setCSSDotfontsUpdated(value: js.Array[FontsUpdatedEvent]): Self = StObject.set(x, "CSS.fontsUpdated", value.asInstanceOf[js.Any])
         
-        inline def setCSSDotfontsUpdatedVarargs(value: FontsUpdatedEvent*): Self = StObject.set(x, "CSS.fontsUpdated", js.Array(value :_*))
+        inline def setCSSDotfontsUpdatedVarargs(value: FontsUpdatedEvent*): Self = StObject.set(x, "CSS.fontsUpdated", js.Array(value*))
         
-        inline def setCSSDotmediaQueryResultChanged(value: js.Array[js.Any]): Self = StObject.set(x, "CSS.mediaQueryResultChanged", value.asInstanceOf[js.Any])
+        inline def setCSSDotmediaQueryResultChanged(value: js.Array[Any]): Self = StObject.set(x, "CSS.mediaQueryResultChanged", value.asInstanceOf[js.Any])
         
-        inline def setCSSDotmediaQueryResultChangedVarargs(value: js.Any*): Self = StObject.set(x, "CSS.mediaQueryResultChanged", js.Array(value :_*))
+        inline def setCSSDotmediaQueryResultChangedVarargs(value: Any*): Self = StObject.set(x, "CSS.mediaQueryResultChanged", js.Array(value*))
         
         inline def setCSSDotstyleSheetAdded(value: js.Array[StyleSheetAddedEvent]): Self = StObject.set(x, "CSS.styleSheetAdded", value.asInstanceOf[js.Any])
         
-        inline def setCSSDotstyleSheetAddedVarargs(value: StyleSheetAddedEvent*): Self = StObject.set(x, "CSS.styleSheetAdded", js.Array(value :_*))
+        inline def setCSSDotstyleSheetAddedVarargs(value: StyleSheetAddedEvent*): Self = StObject.set(x, "CSS.styleSheetAdded", js.Array(value*))
         
         inline def setCSSDotstyleSheetChanged(value: js.Array[StyleSheetChangedEvent]): Self = StObject.set(x, "CSS.styleSheetChanged", value.asInstanceOf[js.Any])
         
-        inline def setCSSDotstyleSheetChangedVarargs(value: StyleSheetChangedEvent*): Self = StObject.set(x, "CSS.styleSheetChanged", js.Array(value :_*))
+        inline def setCSSDotstyleSheetChangedVarargs(value: StyleSheetChangedEvent*): Self = StObject.set(x, "CSS.styleSheetChanged", js.Array(value*))
         
         inline def setCSSDotstyleSheetRemoved(value: js.Array[StyleSheetRemovedEvent]): Self = StObject.set(x, "CSS.styleSheetRemoved", value.asInstanceOf[js.Any])
         
-        inline def setCSSDotstyleSheetRemovedVarargs(value: StyleSheetRemovedEvent*): Self = StObject.set(x, "CSS.styleSheetRemoved", js.Array(value :_*))
+        inline def setCSSDotstyleSheetRemovedVarargs(value: StyleSheetRemovedEvent*): Self = StObject.set(x, "CSS.styleSheetRemoved", js.Array(value*))
         
         inline def setCastDotissueUpdated(value: js.Array[IssueUpdatedEvent]): Self = StObject.set(x, "Cast.issueUpdated", value.asInstanceOf[js.Any])
         
-        inline def setCastDotissueUpdatedVarargs(value: IssueUpdatedEvent*): Self = StObject.set(x, "Cast.issueUpdated", js.Array(value :_*))
+        inline def setCastDotissueUpdatedVarargs(value: IssueUpdatedEvent*): Self = StObject.set(x, "Cast.issueUpdated", js.Array(value*))
         
         inline def setCastDotsinksUpdated(value: js.Array[SinksUpdatedEvent]): Self = StObject.set(x, "Cast.sinksUpdated", value.asInstanceOf[js.Any])
         
-        inline def setCastDotsinksUpdatedVarargs(value: SinksUpdatedEvent*): Self = StObject.set(x, "Cast.sinksUpdated", js.Array(value :_*))
+        inline def setCastDotsinksUpdatedVarargs(value: SinksUpdatedEvent*): Self = StObject.set(x, "Cast.sinksUpdated", js.Array(value*))
         
         inline def setConsoleDotmessageAdded(value: js.Array[MessageAddedEvent]): Self = StObject.set(x, "Console.messageAdded", value.asInstanceOf[js.Any])
         
-        inline def setConsoleDotmessageAddedVarargs(value: MessageAddedEvent*): Self = StObject.set(x, "Console.messageAdded", js.Array(value :_*))
+        inline def setConsoleDotmessageAddedVarargs(value: MessageAddedEvent*): Self = StObject.set(x, "Console.messageAdded", js.Array(value*))
         
         inline def setDOMDotattributeModified(value: js.Array[AttributeModifiedEvent]): Self = StObject.set(x, "DOM.attributeModified", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotattributeModifiedVarargs(value: AttributeModifiedEvent*): Self = StObject.set(x, "DOM.attributeModified", js.Array(value :_*))
+        inline def setDOMDotattributeModifiedVarargs(value: AttributeModifiedEvent*): Self = StObject.set(x, "DOM.attributeModified", js.Array(value*))
         
         inline def setDOMDotattributeRemoved(value: js.Array[AttributeRemovedEvent]): Self = StObject.set(x, "DOM.attributeRemoved", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotattributeRemovedVarargs(value: AttributeRemovedEvent*): Self = StObject.set(x, "DOM.attributeRemoved", js.Array(value :_*))
+        inline def setDOMDotattributeRemovedVarargs(value: AttributeRemovedEvent*): Self = StObject.set(x, "DOM.attributeRemoved", js.Array(value*))
         
         inline def setDOMDotcharacterDataModified(value: js.Array[CharacterDataModifiedEvent]): Self = StObject.set(x, "DOM.characterDataModified", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotcharacterDataModifiedVarargs(value: CharacterDataModifiedEvent*): Self = StObject.set(x, "DOM.characterDataModified", js.Array(value :_*))
+        inline def setDOMDotcharacterDataModifiedVarargs(value: CharacterDataModifiedEvent*): Self = StObject.set(x, "DOM.characterDataModified", js.Array(value*))
         
         inline def setDOMDotchildNodeCountUpdated(value: js.Array[ChildNodeCountUpdatedEvent]): Self = StObject.set(x, "DOM.childNodeCountUpdated", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotchildNodeCountUpdatedVarargs(value: ChildNodeCountUpdatedEvent*): Self = StObject.set(x, "DOM.childNodeCountUpdated", js.Array(value :_*))
+        inline def setDOMDotchildNodeCountUpdatedVarargs(value: ChildNodeCountUpdatedEvent*): Self = StObject.set(x, "DOM.childNodeCountUpdated", js.Array(value*))
         
         inline def setDOMDotchildNodeInserted(value: js.Array[ChildNodeInsertedEvent]): Self = StObject.set(x, "DOM.childNodeInserted", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotchildNodeInsertedVarargs(value: ChildNodeInsertedEvent*): Self = StObject.set(x, "DOM.childNodeInserted", js.Array(value :_*))
+        inline def setDOMDotchildNodeInsertedVarargs(value: ChildNodeInsertedEvent*): Self = StObject.set(x, "DOM.childNodeInserted", js.Array(value*))
         
         inline def setDOMDotchildNodeRemoved(value: js.Array[ChildNodeRemovedEvent]): Self = StObject.set(x, "DOM.childNodeRemoved", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotchildNodeRemovedVarargs(value: ChildNodeRemovedEvent*): Self = StObject.set(x, "DOM.childNodeRemoved", js.Array(value :_*))
+        inline def setDOMDotchildNodeRemovedVarargs(value: ChildNodeRemovedEvent*): Self = StObject.set(x, "DOM.childNodeRemoved", js.Array(value*))
         
         inline def setDOMDotdistributedNodesUpdated(value: js.Array[DistributedNodesUpdatedEvent]): Self = StObject.set(x, "DOM.distributedNodesUpdated", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotdistributedNodesUpdatedVarargs(value: DistributedNodesUpdatedEvent*): Self = StObject.set(x, "DOM.distributedNodesUpdated", js.Array(value :_*))
+        inline def setDOMDotdistributedNodesUpdatedVarargs(value: DistributedNodesUpdatedEvent*): Self = StObject.set(x, "DOM.distributedNodesUpdated", js.Array(value*))
         
-        inline def setDOMDotdocumentUpdated(value: js.Array[js.Any]): Self = StObject.set(x, "DOM.documentUpdated", value.asInstanceOf[js.Any])
+        inline def setDOMDotdocumentUpdated(value: js.Array[Any]): Self = StObject.set(x, "DOM.documentUpdated", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotdocumentUpdatedVarargs(value: js.Any*): Self = StObject.set(x, "DOM.documentUpdated", js.Array(value :_*))
+        inline def setDOMDotdocumentUpdatedVarargs(value: Any*): Self = StObject.set(x, "DOM.documentUpdated", js.Array(value*))
         
         inline def setDOMDotinlineStyleInvalidated(value: js.Array[InlineStyleInvalidatedEvent]): Self = StObject.set(x, "DOM.inlineStyleInvalidated", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotinlineStyleInvalidatedVarargs(value: InlineStyleInvalidatedEvent*): Self = StObject.set(x, "DOM.inlineStyleInvalidated", js.Array(value :_*))
+        inline def setDOMDotinlineStyleInvalidatedVarargs(value: InlineStyleInvalidatedEvent*): Self = StObject.set(x, "DOM.inlineStyleInvalidated", js.Array(value*))
         
         inline def setDOMDotpseudoElementAdded(value: js.Array[PseudoElementAddedEvent]): Self = StObject.set(x, "DOM.pseudoElementAdded", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotpseudoElementAddedVarargs(value: PseudoElementAddedEvent*): Self = StObject.set(x, "DOM.pseudoElementAdded", js.Array(value :_*))
+        inline def setDOMDotpseudoElementAddedVarargs(value: PseudoElementAddedEvent*): Self = StObject.set(x, "DOM.pseudoElementAdded", js.Array(value*))
         
         inline def setDOMDotpseudoElementRemoved(value: js.Array[PseudoElementRemovedEvent]): Self = StObject.set(x, "DOM.pseudoElementRemoved", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotpseudoElementRemovedVarargs(value: PseudoElementRemovedEvent*): Self = StObject.set(x, "DOM.pseudoElementRemoved", js.Array(value :_*))
+        inline def setDOMDotpseudoElementRemovedVarargs(value: PseudoElementRemovedEvent*): Self = StObject.set(x, "DOM.pseudoElementRemoved", js.Array(value*))
         
         inline def setDOMDotsetChildNodes(value: js.Array[SetChildNodesEvent]): Self = StObject.set(x, "DOM.setChildNodes", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotsetChildNodesVarargs(value: SetChildNodesEvent*): Self = StObject.set(x, "DOM.setChildNodes", js.Array(value :_*))
+        inline def setDOMDotsetChildNodesVarargs(value: SetChildNodesEvent*): Self = StObject.set(x, "DOM.setChildNodes", js.Array(value*))
         
         inline def setDOMDotshadowRootPopped(value: js.Array[ShadowRootPoppedEvent]): Self = StObject.set(x, "DOM.shadowRootPopped", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotshadowRootPoppedVarargs(value: ShadowRootPoppedEvent*): Self = StObject.set(x, "DOM.shadowRootPopped", js.Array(value :_*))
+        inline def setDOMDotshadowRootPoppedVarargs(value: ShadowRootPoppedEvent*): Self = StObject.set(x, "DOM.shadowRootPopped", js.Array(value*))
         
         inline def setDOMDotshadowRootPushed(value: js.Array[ShadowRootPushedEvent]): Self = StObject.set(x, "DOM.shadowRootPushed", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotshadowRootPushedVarargs(value: ShadowRootPushedEvent*): Self = StObject.set(x, "DOM.shadowRootPushed", js.Array(value :_*))
+        inline def setDOMDotshadowRootPushedVarargs(value: ShadowRootPushedEvent*): Self = StObject.set(x, "DOM.shadowRootPushed", js.Array(value*))
+        
+        inline def setDOMDottopLayerElementsUpdated(value: js.Array[Any]): Self = StObject.set(x, "DOM.topLayerElementsUpdated", value.asInstanceOf[js.Any])
+        
+        inline def setDOMDottopLayerElementsUpdatedVarargs(value: Any*): Self = StObject.set(x, "DOM.topLayerElementsUpdated", js.Array(value*))
         
         inline def setDOMStorageDotdomStorageItemAdded(value: js.Array[DomStorageItemAddedEvent]): Self = StObject.set(x, "DOMStorage.domStorageItemAdded", value.asInstanceOf[js.Any])
         
-        inline def setDOMStorageDotdomStorageItemAddedVarargs(value: DomStorageItemAddedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemAdded", js.Array(value :_*))
+        inline def setDOMStorageDotdomStorageItemAddedVarargs(value: DomStorageItemAddedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemAdded", js.Array(value*))
         
         inline def setDOMStorageDotdomStorageItemRemoved(value: js.Array[DomStorageItemRemovedEvent]): Self = StObject.set(x, "DOMStorage.domStorageItemRemoved", value.asInstanceOf[js.Any])
         
-        inline def setDOMStorageDotdomStorageItemRemovedVarargs(value: DomStorageItemRemovedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemRemoved", js.Array(value :_*))
+        inline def setDOMStorageDotdomStorageItemRemovedVarargs(value: DomStorageItemRemovedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemRemoved", js.Array(value*))
         
         inline def setDOMStorageDotdomStorageItemUpdated(value: js.Array[DomStorageItemUpdatedEvent]): Self = StObject.set(x, "DOMStorage.domStorageItemUpdated", value.asInstanceOf[js.Any])
         
-        inline def setDOMStorageDotdomStorageItemUpdatedVarargs(value: DomStorageItemUpdatedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemUpdated", js.Array(value :_*))
+        inline def setDOMStorageDotdomStorageItemUpdatedVarargs(value: DomStorageItemUpdatedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemUpdated", js.Array(value*))
         
         inline def setDOMStorageDotdomStorageItemsCleared(value: js.Array[DomStorageItemsClearedEvent]): Self = StObject.set(x, "DOMStorage.domStorageItemsCleared", value.asInstanceOf[js.Any])
         
-        inline def setDOMStorageDotdomStorageItemsClearedVarargs(value: DomStorageItemsClearedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemsCleared", js.Array(value :_*))
+        inline def setDOMStorageDotdomStorageItemsClearedVarargs(value: DomStorageItemsClearedEvent*): Self = StObject.set(x, "DOMStorage.domStorageItemsCleared", js.Array(value*))
         
         inline def setDatabaseDotaddDatabase(value: js.Array[AddDatabaseEvent]): Self = StObject.set(x, "Database.addDatabase", value.asInstanceOf[js.Any])
         
-        inline def setDatabaseDotaddDatabaseVarargs(value: AddDatabaseEvent*): Self = StObject.set(x, "Database.addDatabase", js.Array(value :_*))
+        inline def setDatabaseDotaddDatabaseVarargs(value: AddDatabaseEvent*): Self = StObject.set(x, "Database.addDatabase", js.Array(value*))
         
         inline def setDebuggerDotbreakpointResolved(value: js.Array[BreakpointResolvedEvent]): Self = StObject.set(x, "Debugger.breakpointResolved", value.asInstanceOf[js.Any])
         
-        inline def setDebuggerDotbreakpointResolvedVarargs(value: BreakpointResolvedEvent*): Self = StObject.set(x, "Debugger.breakpointResolved", js.Array(value :_*))
+        inline def setDebuggerDotbreakpointResolvedVarargs(value: BreakpointResolvedEvent*): Self = StObject.set(x, "Debugger.breakpointResolved", js.Array(value*))
         
         inline def setDebuggerDotpaused(value: js.Array[PausedEvent]): Self = StObject.set(x, "Debugger.paused", value.asInstanceOf[js.Any])
         
-        inline def setDebuggerDotpausedVarargs(value: PausedEvent*): Self = StObject.set(x, "Debugger.paused", js.Array(value :_*))
+        inline def setDebuggerDotpausedVarargs(value: PausedEvent*): Self = StObject.set(x, "Debugger.paused", js.Array(value*))
         
-        inline def setDebuggerDotresumed(value: js.Array[js.Any]): Self = StObject.set(x, "Debugger.resumed", value.asInstanceOf[js.Any])
+        inline def setDebuggerDotresumed(value: js.Array[Any]): Self = StObject.set(x, "Debugger.resumed", value.asInstanceOf[js.Any])
         
-        inline def setDebuggerDotresumedVarargs(value: js.Any*): Self = StObject.set(x, "Debugger.resumed", js.Array(value :_*))
+        inline def setDebuggerDotresumedVarargs(value: Any*): Self = StObject.set(x, "Debugger.resumed", js.Array(value*))
         
         inline def setDebuggerDotscriptFailedToParse(value: js.Array[ScriptFailedToParseEvent]): Self = StObject.set(x, "Debugger.scriptFailedToParse", value.asInstanceOf[js.Any])
         
-        inline def setDebuggerDotscriptFailedToParseVarargs(value: ScriptFailedToParseEvent*): Self = StObject.set(x, "Debugger.scriptFailedToParse", js.Array(value :_*))
+        inline def setDebuggerDotscriptFailedToParseVarargs(value: ScriptFailedToParseEvent*): Self = StObject.set(x, "Debugger.scriptFailedToParse", js.Array(value*))
         
         inline def setDebuggerDotscriptParsed(value: js.Array[ScriptParsedEvent]): Self = StObject.set(x, "Debugger.scriptParsed", value.asInstanceOf[js.Any])
         
-        inline def setDebuggerDotscriptParsedVarargs(value: ScriptParsedEvent*): Self = StObject.set(x, "Debugger.scriptParsed", js.Array(value :_*))
+        inline def setDebuggerDotscriptParsedVarargs(value: ScriptParsedEvent*): Self = StObject.set(x, "Debugger.scriptParsed", js.Array(value*))
         
-        inline def setEmulationDotvirtualTimeBudgetExpired(value: js.Array[js.Any]): Self = StObject.set(x, "Emulation.virtualTimeBudgetExpired", value.asInstanceOf[js.Any])
+        inline def setEmulationDotvirtualTimeBudgetExpired(value: js.Array[Any]): Self = StObject.set(x, "Emulation.virtualTimeBudgetExpired", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotvirtualTimeBudgetExpiredVarargs(value: js.Any*): Self = StObject.set(x, "Emulation.virtualTimeBudgetExpired", js.Array(value :_*))
+        inline def setEmulationDotvirtualTimeBudgetExpiredVarargs(value: Any*): Self = StObject.set(x, "Emulation.virtualTimeBudgetExpired", js.Array(value*))
         
         inline def setFetchDotauthRequired(value: js.Array[AuthRequiredEvent]): Self = StObject.set(x, "Fetch.authRequired", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotauthRequiredVarargs(value: AuthRequiredEvent*): Self = StObject.set(x, "Fetch.authRequired", js.Array(value :_*))
+        inline def setFetchDotauthRequiredVarargs(value: AuthRequiredEvent*): Self = StObject.set(x, "Fetch.authRequired", js.Array(value*))
         
         inline def setFetchDotrequestPaused(value: js.Array[RequestPausedEvent]): Self = StObject.set(x, "Fetch.requestPaused", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotrequestPausedVarargs(value: RequestPausedEvent*): Self = StObject.set(x, "Fetch.requestPaused", js.Array(value :_*))
+        inline def setFetchDotrequestPausedVarargs(value: RequestPausedEvent*): Self = StObject.set(x, "Fetch.requestPaused", js.Array(value*))
         
         inline def setHeadlessExperimentalDotneedsBeginFramesChanged(value: js.Array[NeedsBeginFramesChangedEvent]): Self = StObject.set(x, "HeadlessExperimental.needsBeginFramesChanged", value.asInstanceOf[js.Any])
         
-        inline def setHeadlessExperimentalDotneedsBeginFramesChangedVarargs(value: NeedsBeginFramesChangedEvent*): Self = StObject.set(x, "HeadlessExperimental.needsBeginFramesChanged", js.Array(value :_*))
+        inline def setHeadlessExperimentalDotneedsBeginFramesChangedVarargs(value: NeedsBeginFramesChangedEvent*): Self = StObject.set(x, "HeadlessExperimental.needsBeginFramesChanged", js.Array(value*))
         
         inline def setHeapProfilerDotaddHeapSnapshotChunk(value: js.Array[AddHeapSnapshotChunkEvent]): Self = StObject.set(x, "HeapProfiler.addHeapSnapshotChunk", value.asInstanceOf[js.Any])
         
-        inline def setHeapProfilerDotaddHeapSnapshotChunkVarargs(value: AddHeapSnapshotChunkEvent*): Self = StObject.set(x, "HeapProfiler.addHeapSnapshotChunk", js.Array(value :_*))
+        inline def setHeapProfilerDotaddHeapSnapshotChunkVarargs(value: AddHeapSnapshotChunkEvent*): Self = StObject.set(x, "HeapProfiler.addHeapSnapshotChunk", js.Array(value*))
         
         inline def setHeapProfilerDotheapStatsUpdate(value: js.Array[HeapStatsUpdateEvent]): Self = StObject.set(x, "HeapProfiler.heapStatsUpdate", value.asInstanceOf[js.Any])
         
-        inline def setHeapProfilerDotheapStatsUpdateVarargs(value: HeapStatsUpdateEvent*): Self = StObject.set(x, "HeapProfiler.heapStatsUpdate", js.Array(value :_*))
+        inline def setHeapProfilerDotheapStatsUpdateVarargs(value: HeapStatsUpdateEvent*): Self = StObject.set(x, "HeapProfiler.heapStatsUpdate", js.Array(value*))
         
         inline def setHeapProfilerDotlastSeenObjectId(value: js.Array[LastSeenObjectIdEvent]): Self = StObject.set(x, "HeapProfiler.lastSeenObjectId", value.asInstanceOf[js.Any])
         
-        inline def setHeapProfilerDotlastSeenObjectIdVarargs(value: LastSeenObjectIdEvent*): Self = StObject.set(x, "HeapProfiler.lastSeenObjectId", js.Array(value :_*))
+        inline def setHeapProfilerDotlastSeenObjectIdVarargs(value: LastSeenObjectIdEvent*): Self = StObject.set(x, "HeapProfiler.lastSeenObjectId", js.Array(value*))
         
         inline def setHeapProfilerDotreportHeapSnapshotProgress(value: js.Array[ReportHeapSnapshotProgressEvent]): Self = StObject.set(x, "HeapProfiler.reportHeapSnapshotProgress", value.asInstanceOf[js.Any])
         
-        inline def setHeapProfilerDotreportHeapSnapshotProgressVarargs(value: ReportHeapSnapshotProgressEvent*): Self = StObject.set(x, "HeapProfiler.reportHeapSnapshotProgress", js.Array(value :_*))
+        inline def setHeapProfilerDotreportHeapSnapshotProgressVarargs(value: ReportHeapSnapshotProgressEvent*): Self = StObject.set(x, "HeapProfiler.reportHeapSnapshotProgress", js.Array(value*))
         
-        inline def setHeapProfilerDotresetProfiles(value: js.Array[js.Any]): Self = StObject.set(x, "HeapProfiler.resetProfiles", value.asInstanceOf[js.Any])
+        inline def setHeapProfilerDotresetProfiles(value: js.Array[Any]): Self = StObject.set(x, "HeapProfiler.resetProfiles", value.asInstanceOf[js.Any])
         
-        inline def setHeapProfilerDotresetProfilesVarargs(value: js.Any*): Self = StObject.set(x, "HeapProfiler.resetProfiles", js.Array(value :_*))
+        inline def setHeapProfilerDotresetProfilesVarargs(value: Any*): Self = StObject.set(x, "HeapProfiler.resetProfiles", js.Array(value*))
+        
+        inline def setInputDotdragIntercepted(value: js.Array[DragInterceptedEvent]): Self = StObject.set(x, "Input.dragIntercepted", value.asInstanceOf[js.Any])
+        
+        inline def setInputDotdragInterceptedVarargs(value: DragInterceptedEvent*): Self = StObject.set(x, "Input.dragIntercepted", js.Array(value*))
         
         inline def setInspectorDotdetached(value: js.Array[DetachedEvent]): Self = StObject.set(x, "Inspector.detached", value.asInstanceOf[js.Any])
         
-        inline def setInspectorDotdetachedVarargs(value: DetachedEvent*): Self = StObject.set(x, "Inspector.detached", js.Array(value :_*))
+        inline def setInspectorDotdetachedVarargs(value: DetachedEvent*): Self = StObject.set(x, "Inspector.detached", js.Array(value*))
         
-        inline def setInspectorDottargetCrashed(value: js.Array[js.Any]): Self = StObject.set(x, "Inspector.targetCrashed", value.asInstanceOf[js.Any])
+        inline def setInspectorDottargetCrashed(value: js.Array[Any]): Self = StObject.set(x, "Inspector.targetCrashed", value.asInstanceOf[js.Any])
         
-        inline def setInspectorDottargetCrashedVarargs(value: js.Any*): Self = StObject.set(x, "Inspector.targetCrashed", js.Array(value :_*))
+        inline def setInspectorDottargetCrashedVarargs(value: Any*): Self = StObject.set(x, "Inspector.targetCrashed", js.Array(value*))
         
-        inline def setInspectorDottargetReloadedAfterCrash(value: js.Array[js.Any]): Self = StObject.set(x, "Inspector.targetReloadedAfterCrash", value.asInstanceOf[js.Any])
+        inline def setInspectorDottargetReloadedAfterCrash(value: js.Array[Any]): Self = StObject.set(x, "Inspector.targetReloadedAfterCrash", value.asInstanceOf[js.Any])
         
-        inline def setInspectorDottargetReloadedAfterCrashVarargs(value: js.Any*): Self = StObject.set(x, "Inspector.targetReloadedAfterCrash", js.Array(value :_*))
+        inline def setInspectorDottargetReloadedAfterCrashVarargs(value: Any*): Self = StObject.set(x, "Inspector.targetReloadedAfterCrash", js.Array(value*))
         
         inline def setLayerTreeDotlayerPainted(value: js.Array[LayerPaintedEvent]): Self = StObject.set(x, "LayerTree.layerPainted", value.asInstanceOf[js.Any])
         
-        inline def setLayerTreeDotlayerPaintedVarargs(value: LayerPaintedEvent*): Self = StObject.set(x, "LayerTree.layerPainted", js.Array(value :_*))
+        inline def setLayerTreeDotlayerPaintedVarargs(value: LayerPaintedEvent*): Self = StObject.set(x, "LayerTree.layerPainted", js.Array(value*))
         
         inline def setLayerTreeDotlayerTreeDidChange(value: js.Array[LayerTreeDidChangeEvent]): Self = StObject.set(x, "LayerTree.layerTreeDidChange", value.asInstanceOf[js.Any])
         
-        inline def setLayerTreeDotlayerTreeDidChangeVarargs(value: LayerTreeDidChangeEvent*): Self = StObject.set(x, "LayerTree.layerTreeDidChange", js.Array(value :_*))
+        inline def setLayerTreeDotlayerTreeDidChangeVarargs(value: LayerTreeDidChangeEvent*): Self = StObject.set(x, "LayerTree.layerTreeDidChange", js.Array(value*))
         
         inline def setLogDotentryAdded(value: js.Array[EntryAddedEvent]): Self = StObject.set(x, "Log.entryAdded", value.asInstanceOf[js.Any])
         
-        inline def setLogDotentryAddedVarargs(value: EntryAddedEvent*): Self = StObject.set(x, "Log.entryAdded", js.Array(value :_*))
+        inline def setLogDotentryAddedVarargs(value: EntryAddedEvent*): Self = StObject.set(x, "Log.entryAdded", js.Array(value*))
         
         inline def setMediaDotplayerErrorsRaised(value: js.Array[PlayerErrorsRaisedEvent]): Self = StObject.set(x, "Media.playerErrorsRaised", value.asInstanceOf[js.Any])
         
-        inline def setMediaDotplayerErrorsRaisedVarargs(value: PlayerErrorsRaisedEvent*): Self = StObject.set(x, "Media.playerErrorsRaised", js.Array(value :_*))
+        inline def setMediaDotplayerErrorsRaisedVarargs(value: PlayerErrorsRaisedEvent*): Self = StObject.set(x, "Media.playerErrorsRaised", js.Array(value*))
         
         inline def setMediaDotplayerEventsAdded(value: js.Array[PlayerEventsAddedEvent]): Self = StObject.set(x, "Media.playerEventsAdded", value.asInstanceOf[js.Any])
         
-        inline def setMediaDotplayerEventsAddedVarargs(value: PlayerEventsAddedEvent*): Self = StObject.set(x, "Media.playerEventsAdded", js.Array(value :_*))
+        inline def setMediaDotplayerEventsAddedVarargs(value: PlayerEventsAddedEvent*): Self = StObject.set(x, "Media.playerEventsAdded", js.Array(value*))
         
         inline def setMediaDotplayerMessagesLogged(value: js.Array[PlayerMessagesLoggedEvent]): Self = StObject.set(x, "Media.playerMessagesLogged", value.asInstanceOf[js.Any])
         
-        inline def setMediaDotplayerMessagesLoggedVarargs(value: PlayerMessagesLoggedEvent*): Self = StObject.set(x, "Media.playerMessagesLogged", js.Array(value :_*))
+        inline def setMediaDotplayerMessagesLoggedVarargs(value: PlayerMessagesLoggedEvent*): Self = StObject.set(x, "Media.playerMessagesLogged", js.Array(value*))
         
         inline def setMediaDotplayerPropertiesChanged(value: js.Array[PlayerPropertiesChangedEvent]): Self = StObject.set(x, "Media.playerPropertiesChanged", value.asInstanceOf[js.Any])
         
-        inline def setMediaDotplayerPropertiesChangedVarargs(value: PlayerPropertiesChangedEvent*): Self = StObject.set(x, "Media.playerPropertiesChanged", js.Array(value :_*))
+        inline def setMediaDotplayerPropertiesChangedVarargs(value: PlayerPropertiesChangedEvent*): Self = StObject.set(x, "Media.playerPropertiesChanged", js.Array(value*))
         
         inline def setMediaDotplayersCreated(value: js.Array[PlayersCreatedEvent]): Self = StObject.set(x, "Media.playersCreated", value.asInstanceOf[js.Any])
         
-        inline def setMediaDotplayersCreatedVarargs(value: PlayersCreatedEvent*): Self = StObject.set(x, "Media.playersCreated", js.Array(value :_*))
+        inline def setMediaDotplayersCreatedVarargs(value: PlayersCreatedEvent*): Self = StObject.set(x, "Media.playersCreated", js.Array(value*))
         
         inline def setNetworkDotdataReceived(value: js.Array[DataReceivedEvent]): Self = StObject.set(x, "Network.dataReceived", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotdataReceivedVarargs(value: DataReceivedEvent*): Self = StObject.set(x, "Network.dataReceived", js.Array(value :_*))
+        inline def setNetworkDotdataReceivedVarargs(value: DataReceivedEvent*): Self = StObject.set(x, "Network.dataReceived", js.Array(value*))
         
         inline def setNetworkDoteventSourceMessageReceived(value: js.Array[EventSourceMessageReceivedEvent]): Self = StObject.set(x, "Network.eventSourceMessageReceived", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDoteventSourceMessageReceivedVarargs(value: EventSourceMessageReceivedEvent*): Self = StObject.set(x, "Network.eventSourceMessageReceived", js.Array(value :_*))
+        inline def setNetworkDoteventSourceMessageReceivedVarargs(value: EventSourceMessageReceivedEvent*): Self = StObject.set(x, "Network.eventSourceMessageReceived", js.Array(value*))
         
         inline def setNetworkDotloadingFailed(value: js.Array[LoadingFailedEvent]): Self = StObject.set(x, "Network.loadingFailed", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotloadingFailedVarargs(value: LoadingFailedEvent*): Self = StObject.set(x, "Network.loadingFailed", js.Array(value :_*))
+        inline def setNetworkDotloadingFailedVarargs(value: LoadingFailedEvent*): Self = StObject.set(x, "Network.loadingFailed", js.Array(value*))
         
         inline def setNetworkDotloadingFinished(value: js.Array[LoadingFinishedEvent]): Self = StObject.set(x, "Network.loadingFinished", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotloadingFinishedVarargs(value: LoadingFinishedEvent*): Self = StObject.set(x, "Network.loadingFinished", js.Array(value :_*))
+        inline def setNetworkDotloadingFinishedVarargs(value: LoadingFinishedEvent*): Self = StObject.set(x, "Network.loadingFinished", js.Array(value*))
+        
+        inline def setNetworkDotreportingApiEndpointsChangedForOrigin(value: js.Array[ReportingApiEndpointsChangedForOriginEvent]): Self = StObject.set(x, "Network.reportingApiEndpointsChangedForOrigin", value.asInstanceOf[js.Any])
+        
+        inline def setNetworkDotreportingApiEndpointsChangedForOriginVarargs(value: ReportingApiEndpointsChangedForOriginEvent*): Self = StObject.set(x, "Network.reportingApiEndpointsChangedForOrigin", js.Array(value*))
+        
+        inline def setNetworkDotreportingApiReportAdded(value: js.Array[ReportingApiReportAddedEvent]): Self = StObject.set(x, "Network.reportingApiReportAdded", value.asInstanceOf[js.Any])
+        
+        inline def setNetworkDotreportingApiReportAddedVarargs(value: ReportingApiReportAddedEvent*): Self = StObject.set(x, "Network.reportingApiReportAdded", js.Array(value*))
+        
+        inline def setNetworkDotreportingApiReportUpdated(value: js.Array[ReportingApiReportUpdatedEvent]): Self = StObject.set(x, "Network.reportingApiReportUpdated", value.asInstanceOf[js.Any])
+        
+        inline def setNetworkDotreportingApiReportUpdatedVarargs(value: ReportingApiReportUpdatedEvent*): Self = StObject.set(x, "Network.reportingApiReportUpdated", js.Array(value*))
         
         inline def setNetworkDotrequestIntercepted(value: js.Array[RequestInterceptedEvent]): Self = StObject.set(x, "Network.requestIntercepted", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotrequestInterceptedVarargs(value: RequestInterceptedEvent*): Self = StObject.set(x, "Network.requestIntercepted", js.Array(value :_*))
+        inline def setNetworkDotrequestInterceptedVarargs(value: RequestInterceptedEvent*): Self = StObject.set(x, "Network.requestIntercepted", js.Array(value*))
         
         inline def setNetworkDotrequestServedFromCache(value: js.Array[RequestServedFromCacheEvent]): Self = StObject.set(x, "Network.requestServedFromCache", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotrequestServedFromCacheVarargs(value: RequestServedFromCacheEvent*): Self = StObject.set(x, "Network.requestServedFromCache", js.Array(value :_*))
+        inline def setNetworkDotrequestServedFromCacheVarargs(value: RequestServedFromCacheEvent*): Self = StObject.set(x, "Network.requestServedFromCache", js.Array(value*))
         
         inline def setNetworkDotrequestWillBeSent(value: js.Array[RequestWillBeSentEvent]): Self = StObject.set(x, "Network.requestWillBeSent", value.asInstanceOf[js.Any])
         
         inline def setNetworkDotrequestWillBeSentExtraInfo(value: js.Array[RequestWillBeSentExtraInfoEvent]): Self = StObject.set(x, "Network.requestWillBeSentExtraInfo", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotrequestWillBeSentExtraInfoVarargs(value: RequestWillBeSentExtraInfoEvent*): Self = StObject.set(x, "Network.requestWillBeSentExtraInfo", js.Array(value :_*))
+        inline def setNetworkDotrequestWillBeSentExtraInfoVarargs(value: RequestWillBeSentExtraInfoEvent*): Self = StObject.set(x, "Network.requestWillBeSentExtraInfo", js.Array(value*))
         
-        inline def setNetworkDotrequestWillBeSentVarargs(value: RequestWillBeSentEvent*): Self = StObject.set(x, "Network.requestWillBeSent", js.Array(value :_*))
+        inline def setNetworkDotrequestWillBeSentVarargs(value: RequestWillBeSentEvent*): Self = StObject.set(x, "Network.requestWillBeSent", js.Array(value*))
         
         inline def setNetworkDotresourceChangedPriority(value: js.Array[ResourceChangedPriorityEvent]): Self = StObject.set(x, "Network.resourceChangedPriority", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotresourceChangedPriorityVarargs(value: ResourceChangedPriorityEvent*): Self = StObject.set(x, "Network.resourceChangedPriority", js.Array(value :_*))
+        inline def setNetworkDotresourceChangedPriorityVarargs(value: ResourceChangedPriorityEvent*): Self = StObject.set(x, "Network.resourceChangedPriority", js.Array(value*))
         
         inline def setNetworkDotresponseReceived(value: js.Array[ResponseReceivedEvent]): Self = StObject.set(x, "Network.responseReceived", value.asInstanceOf[js.Any])
         
         inline def setNetworkDotresponseReceivedExtraInfo(value: js.Array[ResponseReceivedExtraInfoEvent]): Self = StObject.set(x, "Network.responseReceivedExtraInfo", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotresponseReceivedExtraInfoVarargs(value: ResponseReceivedExtraInfoEvent*): Self = StObject.set(x, "Network.responseReceivedExtraInfo", js.Array(value :_*))
+        inline def setNetworkDotresponseReceivedExtraInfoVarargs(value: ResponseReceivedExtraInfoEvent*): Self = StObject.set(x, "Network.responseReceivedExtraInfo", js.Array(value*))
         
-        inline def setNetworkDotresponseReceivedVarargs(value: ResponseReceivedEvent*): Self = StObject.set(x, "Network.responseReceived", js.Array(value :_*))
+        inline def setNetworkDotresponseReceivedVarargs(value: ResponseReceivedEvent*): Self = StObject.set(x, "Network.responseReceived", js.Array(value*))
         
         inline def setNetworkDotsignedExchangeReceived(value: js.Array[SignedExchangeReceivedEvent]): Self = StObject.set(x, "Network.signedExchangeReceived", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsignedExchangeReceivedVarargs(value: SignedExchangeReceivedEvent*): Self = StObject.set(x, "Network.signedExchangeReceived", js.Array(value :_*))
+        inline def setNetworkDotsignedExchangeReceivedVarargs(value: SignedExchangeReceivedEvent*): Self = StObject.set(x, "Network.signedExchangeReceived", js.Array(value*))
+        
+        inline def setNetworkDotsubresourceWebBundleInnerResponseError(value: js.Array[SubresourceWebBundleInnerResponseErrorEvent]): Self = StObject.set(x, "Network.subresourceWebBundleInnerResponseError", value.asInstanceOf[js.Any])
+        
+        inline def setNetworkDotsubresourceWebBundleInnerResponseErrorVarargs(value: SubresourceWebBundleInnerResponseErrorEvent*): Self = StObject.set(x, "Network.subresourceWebBundleInnerResponseError", js.Array(value*))
+        
+        inline def setNetworkDotsubresourceWebBundleInnerResponseParsed(value: js.Array[SubresourceWebBundleInnerResponseParsedEvent]): Self = StObject.set(x, "Network.subresourceWebBundleInnerResponseParsed", value.asInstanceOf[js.Any])
+        
+        inline def setNetworkDotsubresourceWebBundleInnerResponseParsedVarargs(value: SubresourceWebBundleInnerResponseParsedEvent*): Self = StObject.set(x, "Network.subresourceWebBundleInnerResponseParsed", js.Array(value*))
+        
+        inline def setNetworkDotsubresourceWebBundleMetadataError(value: js.Array[SubresourceWebBundleMetadataErrorEvent]): Self = StObject.set(x, "Network.subresourceWebBundleMetadataError", value.asInstanceOf[js.Any])
+        
+        inline def setNetworkDotsubresourceWebBundleMetadataErrorVarargs(value: SubresourceWebBundleMetadataErrorEvent*): Self = StObject.set(x, "Network.subresourceWebBundleMetadataError", js.Array(value*))
+        
+        inline def setNetworkDotsubresourceWebBundleMetadataReceived(value: js.Array[SubresourceWebBundleMetadataReceivedEvent]): Self = StObject.set(x, "Network.subresourceWebBundleMetadataReceived", value.asInstanceOf[js.Any])
+        
+        inline def setNetworkDotsubresourceWebBundleMetadataReceivedVarargs(value: SubresourceWebBundleMetadataReceivedEvent*): Self = StObject.set(x, "Network.subresourceWebBundleMetadataReceived", js.Array(value*))
+        
+        inline def setNetworkDottrustTokenOperationDone(value: js.Array[TrustTokenOperationDoneEvent]): Self = StObject.set(x, "Network.trustTokenOperationDone", value.asInstanceOf[js.Any])
+        
+        inline def setNetworkDottrustTokenOperationDoneVarargs(value: TrustTokenOperationDoneEvent*): Self = StObject.set(x, "Network.trustTokenOperationDone", js.Array(value*))
         
         inline def setNetworkDotwebSocketClosed(value: js.Array[WebSocketClosedEvent]): Self = StObject.set(x, "Network.webSocketClosed", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotwebSocketClosedVarargs(value: WebSocketClosedEvent*): Self = StObject.set(x, "Network.webSocketClosed", js.Array(value :_*))
+        inline def setNetworkDotwebSocketClosedVarargs(value: WebSocketClosedEvent*): Self = StObject.set(x, "Network.webSocketClosed", js.Array(value*))
         
         inline def setNetworkDotwebSocketCreated(value: js.Array[WebSocketCreatedEvent]): Self = StObject.set(x, "Network.webSocketCreated", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotwebSocketCreatedVarargs(value: WebSocketCreatedEvent*): Self = StObject.set(x, "Network.webSocketCreated", js.Array(value :_*))
+        inline def setNetworkDotwebSocketCreatedVarargs(value: WebSocketCreatedEvent*): Self = StObject.set(x, "Network.webSocketCreated", js.Array(value*))
         
         inline def setNetworkDotwebSocketFrameError(value: js.Array[WebSocketFrameErrorEvent]): Self = StObject.set(x, "Network.webSocketFrameError", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotwebSocketFrameErrorVarargs(value: WebSocketFrameErrorEvent*): Self = StObject.set(x, "Network.webSocketFrameError", js.Array(value :_*))
+        inline def setNetworkDotwebSocketFrameErrorVarargs(value: WebSocketFrameErrorEvent*): Self = StObject.set(x, "Network.webSocketFrameError", js.Array(value*))
         
         inline def setNetworkDotwebSocketFrameReceived(value: js.Array[WebSocketFrameReceivedEvent]): Self = StObject.set(x, "Network.webSocketFrameReceived", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotwebSocketFrameReceivedVarargs(value: WebSocketFrameReceivedEvent*): Self = StObject.set(x, "Network.webSocketFrameReceived", js.Array(value :_*))
+        inline def setNetworkDotwebSocketFrameReceivedVarargs(value: WebSocketFrameReceivedEvent*): Self = StObject.set(x, "Network.webSocketFrameReceived", js.Array(value*))
         
         inline def setNetworkDotwebSocketFrameSent(value: js.Array[WebSocketFrameSentEvent]): Self = StObject.set(x, "Network.webSocketFrameSent", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotwebSocketFrameSentVarargs(value: WebSocketFrameSentEvent*): Self = StObject.set(x, "Network.webSocketFrameSent", js.Array(value :_*))
+        inline def setNetworkDotwebSocketFrameSentVarargs(value: WebSocketFrameSentEvent*): Self = StObject.set(x, "Network.webSocketFrameSent", js.Array(value*))
         
         inline def setNetworkDotwebSocketHandshakeResponseReceived(value: js.Array[WebSocketHandshakeResponseReceivedEvent]): Self = StObject.set(x, "Network.webSocketHandshakeResponseReceived", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotwebSocketHandshakeResponseReceivedVarargs(value: WebSocketHandshakeResponseReceivedEvent*): Self = StObject.set(x, "Network.webSocketHandshakeResponseReceived", js.Array(value :_*))
+        inline def setNetworkDotwebSocketHandshakeResponseReceivedVarargs(value: WebSocketHandshakeResponseReceivedEvent*): Self = StObject.set(x, "Network.webSocketHandshakeResponseReceived", js.Array(value*))
         
         inline def setNetworkDotwebSocketWillSendHandshakeRequest(value: js.Array[WebSocketWillSendHandshakeRequestEvent]): Self = StObject.set(x, "Network.webSocketWillSendHandshakeRequest", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotwebSocketWillSendHandshakeRequestVarargs(value: WebSocketWillSendHandshakeRequestEvent*): Self = StObject.set(x, "Network.webSocketWillSendHandshakeRequest", js.Array(value :_*))
+        inline def setNetworkDotwebSocketWillSendHandshakeRequestVarargs(value: WebSocketWillSendHandshakeRequestEvent*): Self = StObject.set(x, "Network.webSocketWillSendHandshakeRequest", js.Array(value*))
         
-        inline def setOverlayDotinspectModeCanceled(value: js.Array[js.Any]): Self = StObject.set(x, "Overlay.inspectModeCanceled", value.asInstanceOf[js.Any])
+        inline def setNetworkDotwebTransportClosed(value: js.Array[WebTransportClosedEvent]): Self = StObject.set(x, "Network.webTransportClosed", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotinspectModeCanceledVarargs(value: js.Any*): Self = StObject.set(x, "Overlay.inspectModeCanceled", js.Array(value :_*))
+        inline def setNetworkDotwebTransportClosedVarargs(value: WebTransportClosedEvent*): Self = StObject.set(x, "Network.webTransportClosed", js.Array(value*))
+        
+        inline def setNetworkDotwebTransportConnectionEstablished(value: js.Array[WebTransportConnectionEstablishedEvent]): Self = StObject.set(x, "Network.webTransportConnectionEstablished", value.asInstanceOf[js.Any])
+        
+        inline def setNetworkDotwebTransportConnectionEstablishedVarargs(value: WebTransportConnectionEstablishedEvent*): Self = StObject.set(x, "Network.webTransportConnectionEstablished", js.Array(value*))
+        
+        inline def setNetworkDotwebTransportCreated(value: js.Array[WebTransportCreatedEvent]): Self = StObject.set(x, "Network.webTransportCreated", value.asInstanceOf[js.Any])
+        
+        inline def setNetworkDotwebTransportCreatedVarargs(value: WebTransportCreatedEvent*): Self = StObject.set(x, "Network.webTransportCreated", js.Array(value*))
+        
+        inline def setOverlayDotinspectModeCanceled(value: js.Array[Any]): Self = StObject.set(x, "Overlay.inspectModeCanceled", value.asInstanceOf[js.Any])
+        
+        inline def setOverlayDotinspectModeCanceledVarargs(value: Any*): Self = StObject.set(x, "Overlay.inspectModeCanceled", js.Array(value*))
         
         inline def setOverlayDotinspectNodeRequested(value: js.Array[InspectNodeRequestedEvent]): Self = StObject.set(x, "Overlay.inspectNodeRequested", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotinspectNodeRequestedVarargs(value: InspectNodeRequestedEvent*): Self = StObject.set(x, "Overlay.inspectNodeRequested", js.Array(value :_*))
+        inline def setOverlayDotinspectNodeRequestedVarargs(value: InspectNodeRequestedEvent*): Self = StObject.set(x, "Overlay.inspectNodeRequested", js.Array(value*))
         
         inline def setOverlayDotnodeHighlightRequested(value: js.Array[NodeHighlightRequestedEvent]): Self = StObject.set(x, "Overlay.nodeHighlightRequested", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotnodeHighlightRequestedVarargs(value: NodeHighlightRequestedEvent*): Self = StObject.set(x, "Overlay.nodeHighlightRequested", js.Array(value :_*))
+        inline def setOverlayDotnodeHighlightRequestedVarargs(value: NodeHighlightRequestedEvent*): Self = StObject.set(x, "Overlay.nodeHighlightRequested", js.Array(value*))
         
         inline def setOverlayDotscreenshotRequested(value: js.Array[ScreenshotRequestedEvent]): Self = StObject.set(x, "Overlay.screenshotRequested", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotscreenshotRequestedVarargs(value: ScreenshotRequestedEvent*): Self = StObject.set(x, "Overlay.screenshotRequested", js.Array(value :_*))
+        inline def setOverlayDotscreenshotRequestedVarargs(value: ScreenshotRequestedEvent*): Self = StObject.set(x, "Overlay.screenshotRequested", js.Array(value*))
+        
+        inline def setPageDotbackForwardCacheNotUsed(value: js.Array[BackForwardCacheNotUsedEvent]): Self = StObject.set(x, "Page.backForwardCacheNotUsed", value.asInstanceOf[js.Any])
+        
+        inline def setPageDotbackForwardCacheNotUsedVarargs(value: BackForwardCacheNotUsedEvent*): Self = StObject.set(x, "Page.backForwardCacheNotUsed", js.Array(value*))
         
         inline def setPageDotcompilationCacheProduced(value: js.Array[CompilationCacheProducedEvent]): Self = StObject.set(x, "Page.compilationCacheProduced", value.asInstanceOf[js.Any])
         
-        inline def setPageDotcompilationCacheProducedVarargs(value: CompilationCacheProducedEvent*): Self = StObject.set(x, "Page.compilationCacheProduced", js.Array(value :_*))
+        inline def setPageDotcompilationCacheProducedVarargs(value: CompilationCacheProducedEvent*): Self = StObject.set(x, "Page.compilationCacheProduced", js.Array(value*))
+        
+        inline def setPageDotdocumentOpened(value: js.Array[DocumentOpenedEvent]): Self = StObject.set(x, "Page.documentOpened", value.asInstanceOf[js.Any])
+        
+        inline def setPageDotdocumentOpenedVarargs(value: DocumentOpenedEvent*): Self = StObject.set(x, "Page.documentOpened", js.Array(value*))
         
         inline def setPageDotdomContentEventFired(value: js.Array[DomContentEventFiredEvent]): Self = StObject.set(x, "Page.domContentEventFired", value.asInstanceOf[js.Any])
         
-        inline def setPageDotdomContentEventFiredVarargs(value: DomContentEventFiredEvent*): Self = StObject.set(x, "Page.domContentEventFired", js.Array(value :_*))
+        inline def setPageDotdomContentEventFiredVarargs(value: DomContentEventFiredEvent*): Self = StObject.set(x, "Page.domContentEventFired", js.Array(value*))
         
-        inline def setPageDotdownloadProgress(value: js.Array[DownloadProgressEvent]): Self = StObject.set(x, "Page.downloadProgress", value.asInstanceOf[js.Any])
+        inline def setPageDotdownloadProgress(value: js.Array[typings.devtoolsProtocol.mod.Protocol.Page.DownloadProgressEvent]): Self = StObject.set(x, "Page.downloadProgress", value.asInstanceOf[js.Any])
         
-        inline def setPageDotdownloadProgressVarargs(value: DownloadProgressEvent*): Self = StObject.set(x, "Page.downloadProgress", js.Array(value :_*))
+        inline def setPageDotdownloadProgressVarargs(value: typings.devtoolsProtocol.mod.Protocol.Page.DownloadProgressEvent*): Self = StObject.set(x, "Page.downloadProgress", js.Array(value*))
         
-        inline def setPageDotdownloadWillBegin(value: js.Array[DownloadWillBeginEvent]): Self = StObject.set(x, "Page.downloadWillBegin", value.asInstanceOf[js.Any])
+        inline def setPageDotdownloadWillBegin(value: js.Array[typings.devtoolsProtocol.mod.Protocol.Page.DownloadWillBeginEvent]): Self = StObject.set(x, "Page.downloadWillBegin", value.asInstanceOf[js.Any])
         
-        inline def setPageDotdownloadWillBeginVarargs(value: DownloadWillBeginEvent*): Self = StObject.set(x, "Page.downloadWillBegin", js.Array(value :_*))
+        inline def setPageDotdownloadWillBeginVarargs(value: typings.devtoolsProtocol.mod.Protocol.Page.DownloadWillBeginEvent*): Self = StObject.set(x, "Page.downloadWillBegin", js.Array(value*))
         
         inline def setPageDotfileChooserOpened(value: js.Array[FileChooserOpenedEvent]): Self = StObject.set(x, "Page.fileChooserOpened", value.asInstanceOf[js.Any])
         
-        inline def setPageDotfileChooserOpenedVarargs(value: FileChooserOpenedEvent*): Self = StObject.set(x, "Page.fileChooserOpened", js.Array(value :_*))
+        inline def setPageDotfileChooserOpenedVarargs(value: FileChooserOpenedEvent*): Self = StObject.set(x, "Page.fileChooserOpened", js.Array(value*))
         
         inline def setPageDotframeAttached(value: js.Array[FrameAttachedEvent]): Self = StObject.set(x, "Page.frameAttached", value.asInstanceOf[js.Any])
         
-        inline def setPageDotframeAttachedVarargs(value: FrameAttachedEvent*): Self = StObject.set(x, "Page.frameAttached", js.Array(value :_*))
+        inline def setPageDotframeAttachedVarargs(value: FrameAttachedEvent*): Self = StObject.set(x, "Page.frameAttached", js.Array(value*))
         
         inline def setPageDotframeClearedScheduledNavigation(value: js.Array[FrameClearedScheduledNavigationEvent]): Self = StObject.set(x, "Page.frameClearedScheduledNavigation", value.asInstanceOf[js.Any])
         
-        inline def setPageDotframeClearedScheduledNavigationVarargs(value: FrameClearedScheduledNavigationEvent*): Self = StObject.set(x, "Page.frameClearedScheduledNavigation", js.Array(value :_*))
+        inline def setPageDotframeClearedScheduledNavigationVarargs(value: FrameClearedScheduledNavigationEvent*): Self = StObject.set(x, "Page.frameClearedScheduledNavigation", js.Array(value*))
         
         inline def setPageDotframeDetached(value: js.Array[FrameDetachedEvent]): Self = StObject.set(x, "Page.frameDetached", value.asInstanceOf[js.Any])
         
-        inline def setPageDotframeDetachedVarargs(value: FrameDetachedEvent*): Self = StObject.set(x, "Page.frameDetached", js.Array(value :_*))
+        inline def setPageDotframeDetachedVarargs(value: FrameDetachedEvent*): Self = StObject.set(x, "Page.frameDetached", js.Array(value*))
         
         inline def setPageDotframeNavigated(value: js.Array[FrameNavigatedEvent]): Self = StObject.set(x, "Page.frameNavigated", value.asInstanceOf[js.Any])
         
-        inline def setPageDotframeNavigatedVarargs(value: FrameNavigatedEvent*): Self = StObject.set(x, "Page.frameNavigated", js.Array(value :_*))
+        inline def setPageDotframeNavigatedVarargs(value: FrameNavigatedEvent*): Self = StObject.set(x, "Page.frameNavigated", js.Array(value*))
         
         inline def setPageDotframeRequestedNavigation(value: js.Array[FrameRequestedNavigationEvent]): Self = StObject.set(x, "Page.frameRequestedNavigation", value.asInstanceOf[js.Any])
         
-        inline def setPageDotframeRequestedNavigationVarargs(value: FrameRequestedNavigationEvent*): Self = StObject.set(x, "Page.frameRequestedNavigation", js.Array(value :_*))
+        inline def setPageDotframeRequestedNavigationVarargs(value: FrameRequestedNavigationEvent*): Self = StObject.set(x, "Page.frameRequestedNavigation", js.Array(value*))
         
-        inline def setPageDotframeResized(value: js.Array[js.Any]): Self = StObject.set(x, "Page.frameResized", value.asInstanceOf[js.Any])
+        inline def setPageDotframeResized(value: js.Array[Any]): Self = StObject.set(x, "Page.frameResized", value.asInstanceOf[js.Any])
         
-        inline def setPageDotframeResizedVarargs(value: js.Any*): Self = StObject.set(x, "Page.frameResized", js.Array(value :_*))
+        inline def setPageDotframeResizedVarargs(value: Any*): Self = StObject.set(x, "Page.frameResized", js.Array(value*))
         
         inline def setPageDotframeScheduledNavigation(value: js.Array[FrameScheduledNavigationEvent]): Self = StObject.set(x, "Page.frameScheduledNavigation", value.asInstanceOf[js.Any])
         
-        inline def setPageDotframeScheduledNavigationVarargs(value: FrameScheduledNavigationEvent*): Self = StObject.set(x, "Page.frameScheduledNavigation", js.Array(value :_*))
+        inline def setPageDotframeScheduledNavigationVarargs(value: FrameScheduledNavigationEvent*): Self = StObject.set(x, "Page.frameScheduledNavigation", js.Array(value*))
         
         inline def setPageDotframeStartedLoading(value: js.Array[FrameStartedLoadingEvent]): Self = StObject.set(x, "Page.frameStartedLoading", value.asInstanceOf[js.Any])
         
-        inline def setPageDotframeStartedLoadingVarargs(value: FrameStartedLoadingEvent*): Self = StObject.set(x, "Page.frameStartedLoading", js.Array(value :_*))
+        inline def setPageDotframeStartedLoadingVarargs(value: FrameStartedLoadingEvent*): Self = StObject.set(x, "Page.frameStartedLoading", js.Array(value*))
         
         inline def setPageDotframeStoppedLoading(value: js.Array[FrameStoppedLoadingEvent]): Self = StObject.set(x, "Page.frameStoppedLoading", value.asInstanceOf[js.Any])
         
-        inline def setPageDotframeStoppedLoadingVarargs(value: FrameStoppedLoadingEvent*): Self = StObject.set(x, "Page.frameStoppedLoading", js.Array(value :_*))
+        inline def setPageDotframeStoppedLoadingVarargs(value: FrameStoppedLoadingEvent*): Self = StObject.set(x, "Page.frameStoppedLoading", js.Array(value*))
         
-        inline def setPageDotinterstitialHidden(value: js.Array[js.Any]): Self = StObject.set(x, "Page.interstitialHidden", value.asInstanceOf[js.Any])
+        inline def setPageDotinterstitialHidden(value: js.Array[Any]): Self = StObject.set(x, "Page.interstitialHidden", value.asInstanceOf[js.Any])
         
-        inline def setPageDotinterstitialHiddenVarargs(value: js.Any*): Self = StObject.set(x, "Page.interstitialHidden", js.Array(value :_*))
+        inline def setPageDotinterstitialHiddenVarargs(value: Any*): Self = StObject.set(x, "Page.interstitialHidden", js.Array(value*))
         
-        inline def setPageDotinterstitialShown(value: js.Array[js.Any]): Self = StObject.set(x, "Page.interstitialShown", value.asInstanceOf[js.Any])
+        inline def setPageDotinterstitialShown(value: js.Array[Any]): Self = StObject.set(x, "Page.interstitialShown", value.asInstanceOf[js.Any])
         
-        inline def setPageDotinterstitialShownVarargs(value: js.Any*): Self = StObject.set(x, "Page.interstitialShown", js.Array(value :_*))
+        inline def setPageDotinterstitialShownVarargs(value: Any*): Self = StObject.set(x, "Page.interstitialShown", js.Array(value*))
         
         inline def setPageDotjavascriptDialogClosed(value: js.Array[JavascriptDialogClosedEvent]): Self = StObject.set(x, "Page.javascriptDialogClosed", value.asInstanceOf[js.Any])
         
-        inline def setPageDotjavascriptDialogClosedVarargs(value: JavascriptDialogClosedEvent*): Self = StObject.set(x, "Page.javascriptDialogClosed", js.Array(value :_*))
+        inline def setPageDotjavascriptDialogClosedVarargs(value: JavascriptDialogClosedEvent*): Self = StObject.set(x, "Page.javascriptDialogClosed", js.Array(value*))
         
         inline def setPageDotjavascriptDialogOpening(value: js.Array[JavascriptDialogOpeningEvent]): Self = StObject.set(x, "Page.javascriptDialogOpening", value.asInstanceOf[js.Any])
         
-        inline def setPageDotjavascriptDialogOpeningVarargs(value: JavascriptDialogOpeningEvent*): Self = StObject.set(x, "Page.javascriptDialogOpening", js.Array(value :_*))
+        inline def setPageDotjavascriptDialogOpeningVarargs(value: JavascriptDialogOpeningEvent*): Self = StObject.set(x, "Page.javascriptDialogOpening", js.Array(value*))
         
         inline def setPageDotlifecycleEvent(value: js.Array[LifecycleEventEvent]): Self = StObject.set(x, "Page.lifecycleEvent", value.asInstanceOf[js.Any])
         
-        inline def setPageDotlifecycleEventVarargs(value: LifecycleEventEvent*): Self = StObject.set(x, "Page.lifecycleEvent", js.Array(value :_*))
+        inline def setPageDotlifecycleEventVarargs(value: LifecycleEventEvent*): Self = StObject.set(x, "Page.lifecycleEvent", js.Array(value*))
         
         inline def setPageDotloadEventFired(value: js.Array[LoadEventFiredEvent]): Self = StObject.set(x, "Page.loadEventFired", value.asInstanceOf[js.Any])
         
-        inline def setPageDotloadEventFiredVarargs(value: LoadEventFiredEvent*): Self = StObject.set(x, "Page.loadEventFired", js.Array(value :_*))
+        inline def setPageDotloadEventFiredVarargs(value: LoadEventFiredEvent*): Self = StObject.set(x, "Page.loadEventFired", js.Array(value*))
         
         inline def setPageDotnavigatedWithinDocument(value: js.Array[NavigatedWithinDocumentEvent]): Self = StObject.set(x, "Page.navigatedWithinDocument", value.asInstanceOf[js.Any])
         
-        inline def setPageDotnavigatedWithinDocumentVarargs(value: NavigatedWithinDocumentEvent*): Self = StObject.set(x, "Page.navigatedWithinDocument", js.Array(value :_*))
+        inline def setPageDotnavigatedWithinDocumentVarargs(value: NavigatedWithinDocumentEvent*): Self = StObject.set(x, "Page.navigatedWithinDocument", js.Array(value*))
+        
+        inline def setPageDotprerenderAttemptCompleted(value: js.Array[PrerenderAttemptCompletedEvent]): Self = StObject.set(x, "Page.prerenderAttemptCompleted", value.asInstanceOf[js.Any])
+        
+        inline def setPageDotprerenderAttemptCompletedVarargs(value: PrerenderAttemptCompletedEvent*): Self = StObject.set(x, "Page.prerenderAttemptCompleted", js.Array(value*))
         
         inline def setPageDotscreencastFrame(value: js.Array[ScreencastFrameEvent]): Self = StObject.set(x, "Page.screencastFrame", value.asInstanceOf[js.Any])
         
-        inline def setPageDotscreencastFrameVarargs(value: ScreencastFrameEvent*): Self = StObject.set(x, "Page.screencastFrame", js.Array(value :_*))
+        inline def setPageDotscreencastFrameVarargs(value: ScreencastFrameEvent*): Self = StObject.set(x, "Page.screencastFrame", js.Array(value*))
         
         inline def setPageDotscreencastVisibilityChanged(value: js.Array[ScreencastVisibilityChangedEvent]): Self = StObject.set(x, "Page.screencastVisibilityChanged", value.asInstanceOf[js.Any])
         
-        inline def setPageDotscreencastVisibilityChangedVarargs(value: ScreencastVisibilityChangedEvent*): Self = StObject.set(x, "Page.screencastVisibilityChanged", js.Array(value :_*))
+        inline def setPageDotscreencastVisibilityChangedVarargs(value: ScreencastVisibilityChangedEvent*): Self = StObject.set(x, "Page.screencastVisibilityChanged", js.Array(value*))
         
         inline def setPageDotwindowOpen(value: js.Array[WindowOpenEvent]): Self = StObject.set(x, "Page.windowOpen", value.asInstanceOf[js.Any])
         
-        inline def setPageDotwindowOpenVarargs(value: WindowOpenEvent*): Self = StObject.set(x, "Page.windowOpen", js.Array(value :_*))
+        inline def setPageDotwindowOpenVarargs(value: WindowOpenEvent*): Self = StObject.set(x, "Page.windowOpen", js.Array(value*))
         
         inline def setPerformanceDotmetrics(value: js.Array[MetricsEvent]): Self = StObject.set(x, "Performance.metrics", value.asInstanceOf[js.Any])
         
-        inline def setPerformanceDotmetricsVarargs(value: MetricsEvent*): Self = StObject.set(x, "Performance.metrics", js.Array(value :_*))
+        inline def setPerformanceDotmetricsVarargs(value: MetricsEvent*): Self = StObject.set(x, "Performance.metrics", js.Array(value*))
+        
+        inline def setPerformanceTimelineDottimelineEventAdded(value: js.Array[TimelineEventAddedEvent]): Self = StObject.set(x, "PerformanceTimeline.timelineEventAdded", value.asInstanceOf[js.Any])
+        
+        inline def setPerformanceTimelineDottimelineEventAddedVarargs(value: TimelineEventAddedEvent*): Self = StObject.set(x, "PerformanceTimeline.timelineEventAdded", js.Array(value*))
         
         inline def setProfilerDotconsoleProfileFinished(value: js.Array[ConsoleProfileFinishedEvent]): Self = StObject.set(x, "Profiler.consoleProfileFinished", value.asInstanceOf[js.Any])
         
-        inline def setProfilerDotconsoleProfileFinishedVarargs(value: ConsoleProfileFinishedEvent*): Self = StObject.set(x, "Profiler.consoleProfileFinished", js.Array(value :_*))
+        inline def setProfilerDotconsoleProfileFinishedVarargs(value: ConsoleProfileFinishedEvent*): Self = StObject.set(x, "Profiler.consoleProfileFinished", js.Array(value*))
         
         inline def setProfilerDotconsoleProfileStarted(value: js.Array[ConsoleProfileStartedEvent]): Self = StObject.set(x, "Profiler.consoleProfileStarted", value.asInstanceOf[js.Any])
         
-        inline def setProfilerDotconsoleProfileStartedVarargs(value: ConsoleProfileStartedEvent*): Self = StObject.set(x, "Profiler.consoleProfileStarted", js.Array(value :_*))
+        inline def setProfilerDotconsoleProfileStartedVarargs(value: ConsoleProfileStartedEvent*): Self = StObject.set(x, "Profiler.consoleProfileStarted", js.Array(value*))
         
         inline def setProfilerDotpreciseCoverageDeltaUpdate(value: js.Array[PreciseCoverageDeltaUpdateEvent]): Self = StObject.set(x, "Profiler.preciseCoverageDeltaUpdate", value.asInstanceOf[js.Any])
         
-        inline def setProfilerDotpreciseCoverageDeltaUpdateVarargs(value: PreciseCoverageDeltaUpdateEvent*): Self = StObject.set(x, "Profiler.preciseCoverageDeltaUpdate", js.Array(value :_*))
+        inline def setProfilerDotpreciseCoverageDeltaUpdateVarargs(value: PreciseCoverageDeltaUpdateEvent*): Self = StObject.set(x, "Profiler.preciseCoverageDeltaUpdate", js.Array(value*))
         
         inline def setRuntimeDotbindingCalled(value: js.Array[BindingCalledEvent]): Self = StObject.set(x, "Runtime.bindingCalled", value.asInstanceOf[js.Any])
         
-        inline def setRuntimeDotbindingCalledVarargs(value: BindingCalledEvent*): Self = StObject.set(x, "Runtime.bindingCalled", js.Array(value :_*))
+        inline def setRuntimeDotbindingCalledVarargs(value: BindingCalledEvent*): Self = StObject.set(x, "Runtime.bindingCalled", js.Array(value*))
         
         inline def setRuntimeDotconsoleAPICalled(value: js.Array[ConsoleAPICalledEvent]): Self = StObject.set(x, "Runtime.consoleAPICalled", value.asInstanceOf[js.Any])
         
-        inline def setRuntimeDotconsoleAPICalledVarargs(value: ConsoleAPICalledEvent*): Self = StObject.set(x, "Runtime.consoleAPICalled", js.Array(value :_*))
+        inline def setRuntimeDotconsoleAPICalledVarargs(value: ConsoleAPICalledEvent*): Self = StObject.set(x, "Runtime.consoleAPICalled", js.Array(value*))
         
         inline def setRuntimeDotexceptionRevoked(value: js.Array[ExceptionRevokedEvent]): Self = StObject.set(x, "Runtime.exceptionRevoked", value.asInstanceOf[js.Any])
         
-        inline def setRuntimeDotexceptionRevokedVarargs(value: ExceptionRevokedEvent*): Self = StObject.set(x, "Runtime.exceptionRevoked", js.Array(value :_*))
+        inline def setRuntimeDotexceptionRevokedVarargs(value: ExceptionRevokedEvent*): Self = StObject.set(x, "Runtime.exceptionRevoked", js.Array(value*))
         
         inline def setRuntimeDotexceptionThrown(value: js.Array[ExceptionThrownEvent]): Self = StObject.set(x, "Runtime.exceptionThrown", value.asInstanceOf[js.Any])
         
-        inline def setRuntimeDotexceptionThrownVarargs(value: ExceptionThrownEvent*): Self = StObject.set(x, "Runtime.exceptionThrown", js.Array(value :_*))
+        inline def setRuntimeDotexceptionThrownVarargs(value: ExceptionThrownEvent*): Self = StObject.set(x, "Runtime.exceptionThrown", js.Array(value*))
         
         inline def setRuntimeDotexecutionContextCreated(value: js.Array[ExecutionContextCreatedEvent]): Self = StObject.set(x, "Runtime.executionContextCreated", value.asInstanceOf[js.Any])
         
-        inline def setRuntimeDotexecutionContextCreatedVarargs(value: ExecutionContextCreatedEvent*): Self = StObject.set(x, "Runtime.executionContextCreated", js.Array(value :_*))
+        inline def setRuntimeDotexecutionContextCreatedVarargs(value: ExecutionContextCreatedEvent*): Self = StObject.set(x, "Runtime.executionContextCreated", js.Array(value*))
         
         inline def setRuntimeDotexecutionContextDestroyed(value: js.Array[ExecutionContextDestroyedEvent]): Self = StObject.set(x, "Runtime.executionContextDestroyed", value.asInstanceOf[js.Any])
         
-        inline def setRuntimeDotexecutionContextDestroyedVarargs(value: ExecutionContextDestroyedEvent*): Self = StObject.set(x, "Runtime.executionContextDestroyed", js.Array(value :_*))
+        inline def setRuntimeDotexecutionContextDestroyedVarargs(value: ExecutionContextDestroyedEvent*): Self = StObject.set(x, "Runtime.executionContextDestroyed", js.Array(value*))
         
-        inline def setRuntimeDotexecutionContextsCleared(value: js.Array[js.Any]): Self = StObject.set(x, "Runtime.executionContextsCleared", value.asInstanceOf[js.Any])
+        inline def setRuntimeDotexecutionContextsCleared(value: js.Array[Any]): Self = StObject.set(x, "Runtime.executionContextsCleared", value.asInstanceOf[js.Any])
         
-        inline def setRuntimeDotexecutionContextsClearedVarargs(value: js.Any*): Self = StObject.set(x, "Runtime.executionContextsCleared", js.Array(value :_*))
+        inline def setRuntimeDotexecutionContextsClearedVarargs(value: Any*): Self = StObject.set(x, "Runtime.executionContextsCleared", js.Array(value*))
         
         inline def setRuntimeDotinspectRequested(value: js.Array[InspectRequestedEvent]): Self = StObject.set(x, "Runtime.inspectRequested", value.asInstanceOf[js.Any])
         
-        inline def setRuntimeDotinspectRequestedVarargs(value: InspectRequestedEvent*): Self = StObject.set(x, "Runtime.inspectRequested", js.Array(value :_*))
+        inline def setRuntimeDotinspectRequestedVarargs(value: InspectRequestedEvent*): Self = StObject.set(x, "Runtime.inspectRequested", js.Array(value*))
         
         inline def setSecurityDotcertificateError(value: js.Array[CertificateErrorEvent]): Self = StObject.set(x, "Security.certificateError", value.asInstanceOf[js.Any])
         
-        inline def setSecurityDotcertificateErrorVarargs(value: CertificateErrorEvent*): Self = StObject.set(x, "Security.certificateError", js.Array(value :_*))
+        inline def setSecurityDotcertificateErrorVarargs(value: CertificateErrorEvent*): Self = StObject.set(x, "Security.certificateError", js.Array(value*))
         
         inline def setSecurityDotsecurityStateChanged(value: js.Array[SecurityStateChangedEvent]): Self = StObject.set(x, "Security.securityStateChanged", value.asInstanceOf[js.Any])
         
-        inline def setSecurityDotsecurityStateChangedVarargs(value: SecurityStateChangedEvent*): Self = StObject.set(x, "Security.securityStateChanged", js.Array(value :_*))
+        inline def setSecurityDotsecurityStateChangedVarargs(value: SecurityStateChangedEvent*): Self = StObject.set(x, "Security.securityStateChanged", js.Array(value*))
         
         inline def setSecurityDotvisibleSecurityStateChanged(value: js.Array[VisibleSecurityStateChangedEvent]): Self = StObject.set(x, "Security.visibleSecurityStateChanged", value.asInstanceOf[js.Any])
         
-        inline def setSecurityDotvisibleSecurityStateChangedVarargs(value: VisibleSecurityStateChangedEvent*): Self = StObject.set(x, "Security.visibleSecurityStateChanged", js.Array(value :_*))
+        inline def setSecurityDotvisibleSecurityStateChangedVarargs(value: VisibleSecurityStateChangedEvent*): Self = StObject.set(x, "Security.visibleSecurityStateChanged", js.Array(value*))
         
         inline def setServiceWorkerDotworkerErrorReported(value: js.Array[WorkerErrorReportedEvent]): Self = StObject.set(x, "ServiceWorker.workerErrorReported", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotworkerErrorReportedVarargs(value: WorkerErrorReportedEvent*): Self = StObject.set(x, "ServiceWorker.workerErrorReported", js.Array(value :_*))
+        inline def setServiceWorkerDotworkerErrorReportedVarargs(value: WorkerErrorReportedEvent*): Self = StObject.set(x, "ServiceWorker.workerErrorReported", js.Array(value*))
         
         inline def setServiceWorkerDotworkerRegistrationUpdated(value: js.Array[WorkerRegistrationUpdatedEvent]): Self = StObject.set(x, "ServiceWorker.workerRegistrationUpdated", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotworkerRegistrationUpdatedVarargs(value: WorkerRegistrationUpdatedEvent*): Self = StObject.set(x, "ServiceWorker.workerRegistrationUpdated", js.Array(value :_*))
+        inline def setServiceWorkerDotworkerRegistrationUpdatedVarargs(value: WorkerRegistrationUpdatedEvent*): Self = StObject.set(x, "ServiceWorker.workerRegistrationUpdated", js.Array(value*))
         
         inline def setServiceWorkerDotworkerVersionUpdated(value: js.Array[WorkerVersionUpdatedEvent]): Self = StObject.set(x, "ServiceWorker.workerVersionUpdated", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotworkerVersionUpdatedVarargs(value: WorkerVersionUpdatedEvent*): Self = StObject.set(x, "ServiceWorker.workerVersionUpdated", js.Array(value :_*))
+        inline def setServiceWorkerDotworkerVersionUpdatedVarargs(value: WorkerVersionUpdatedEvent*): Self = StObject.set(x, "ServiceWorker.workerVersionUpdated", js.Array(value*))
         
         inline def setStorageDotcacheStorageContentUpdated(value: js.Array[CacheStorageContentUpdatedEvent]): Self = StObject.set(x, "Storage.cacheStorageContentUpdated", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotcacheStorageContentUpdatedVarargs(value: CacheStorageContentUpdatedEvent*): Self = StObject.set(x, "Storage.cacheStorageContentUpdated", js.Array(value :_*))
+        inline def setStorageDotcacheStorageContentUpdatedVarargs(value: CacheStorageContentUpdatedEvent*): Self = StObject.set(x, "Storage.cacheStorageContentUpdated", js.Array(value*))
         
         inline def setStorageDotcacheStorageListUpdated(value: js.Array[CacheStorageListUpdatedEvent]): Self = StObject.set(x, "Storage.cacheStorageListUpdated", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotcacheStorageListUpdatedVarargs(value: CacheStorageListUpdatedEvent*): Self = StObject.set(x, "Storage.cacheStorageListUpdated", js.Array(value :_*))
+        inline def setStorageDotcacheStorageListUpdatedVarargs(value: CacheStorageListUpdatedEvent*): Self = StObject.set(x, "Storage.cacheStorageListUpdated", js.Array(value*))
         
         inline def setStorageDotindexedDBContentUpdated(value: js.Array[IndexedDBContentUpdatedEvent]): Self = StObject.set(x, "Storage.indexedDBContentUpdated", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotindexedDBContentUpdatedVarargs(value: IndexedDBContentUpdatedEvent*): Self = StObject.set(x, "Storage.indexedDBContentUpdated", js.Array(value :_*))
+        inline def setStorageDotindexedDBContentUpdatedVarargs(value: IndexedDBContentUpdatedEvent*): Self = StObject.set(x, "Storage.indexedDBContentUpdated", js.Array(value*))
         
         inline def setStorageDotindexedDBListUpdated(value: js.Array[IndexedDBListUpdatedEvent]): Self = StObject.set(x, "Storage.indexedDBListUpdated", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotindexedDBListUpdatedVarargs(value: IndexedDBListUpdatedEvent*): Self = StObject.set(x, "Storage.indexedDBListUpdated", js.Array(value :_*))
+        inline def setStorageDotindexedDBListUpdatedVarargs(value: IndexedDBListUpdatedEvent*): Self = StObject.set(x, "Storage.indexedDBListUpdated", js.Array(value*))
+        
+        inline def setStorageDotinterestGroupAccessed(value: js.Array[InterestGroupAccessedEvent]): Self = StObject.set(x, "Storage.interestGroupAccessed", value.asInstanceOf[js.Any])
+        
+        inline def setStorageDotinterestGroupAccessedVarargs(value: InterestGroupAccessedEvent*): Self = StObject.set(x, "Storage.interestGroupAccessed", js.Array(value*))
         
         inline def setTargetDotattachedToTarget(value: js.Array[AttachedToTargetEvent]): Self = StObject.set(x, "Target.attachedToTarget", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotattachedToTargetVarargs(value: AttachedToTargetEvent*): Self = StObject.set(x, "Target.attachedToTarget", js.Array(value :_*))
+        inline def setTargetDotattachedToTargetVarargs(value: AttachedToTargetEvent*): Self = StObject.set(x, "Target.attachedToTarget", js.Array(value*))
         
         inline def setTargetDotdetachedFromTarget(value: js.Array[DetachedFromTargetEvent]): Self = StObject.set(x, "Target.detachedFromTarget", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotdetachedFromTargetVarargs(value: DetachedFromTargetEvent*): Self = StObject.set(x, "Target.detachedFromTarget", js.Array(value :_*))
+        inline def setTargetDotdetachedFromTargetVarargs(value: DetachedFromTargetEvent*): Self = StObject.set(x, "Target.detachedFromTarget", js.Array(value*))
         
         inline def setTargetDotreceivedMessageFromTarget(value: js.Array[ReceivedMessageFromTargetEvent]): Self = StObject.set(x, "Target.receivedMessageFromTarget", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotreceivedMessageFromTargetVarargs(value: ReceivedMessageFromTargetEvent*): Self = StObject.set(x, "Target.receivedMessageFromTarget", js.Array(value :_*))
+        inline def setTargetDotreceivedMessageFromTargetVarargs(value: ReceivedMessageFromTargetEvent*): Self = StObject.set(x, "Target.receivedMessageFromTarget", js.Array(value*))
         
         inline def setTargetDottargetCrashed(value: js.Array[TargetCrashedEvent]): Self = StObject.set(x, "Target.targetCrashed", value.asInstanceOf[js.Any])
         
-        inline def setTargetDottargetCrashedVarargs(value: TargetCrashedEvent*): Self = StObject.set(x, "Target.targetCrashed", js.Array(value :_*))
+        inline def setTargetDottargetCrashedVarargs(value: TargetCrashedEvent*): Self = StObject.set(x, "Target.targetCrashed", js.Array(value*))
         
         inline def setTargetDottargetCreated(value: js.Array[TargetCreatedEvent]): Self = StObject.set(x, "Target.targetCreated", value.asInstanceOf[js.Any])
         
-        inline def setTargetDottargetCreatedVarargs(value: TargetCreatedEvent*): Self = StObject.set(x, "Target.targetCreated", js.Array(value :_*))
+        inline def setTargetDottargetCreatedVarargs(value: TargetCreatedEvent*): Self = StObject.set(x, "Target.targetCreated", js.Array(value*))
         
         inline def setTargetDottargetDestroyed(value: js.Array[TargetDestroyedEvent]): Self = StObject.set(x, "Target.targetDestroyed", value.asInstanceOf[js.Any])
         
-        inline def setTargetDottargetDestroyedVarargs(value: TargetDestroyedEvent*): Self = StObject.set(x, "Target.targetDestroyed", js.Array(value :_*))
+        inline def setTargetDottargetDestroyedVarargs(value: TargetDestroyedEvent*): Self = StObject.set(x, "Target.targetDestroyed", js.Array(value*))
         
         inline def setTargetDottargetInfoChanged(value: js.Array[TargetInfoChangedEvent]): Self = StObject.set(x, "Target.targetInfoChanged", value.asInstanceOf[js.Any])
         
-        inline def setTargetDottargetInfoChangedVarargs(value: TargetInfoChangedEvent*): Self = StObject.set(x, "Target.targetInfoChanged", js.Array(value :_*))
+        inline def setTargetDottargetInfoChangedVarargs(value: TargetInfoChangedEvent*): Self = StObject.set(x, "Target.targetInfoChanged", js.Array(value*))
         
         inline def setTetheringDotaccepted(value: js.Array[AcceptedEvent]): Self = StObject.set(x, "Tethering.accepted", value.asInstanceOf[js.Any])
         
-        inline def setTetheringDotacceptedVarargs(value: AcceptedEvent*): Self = StObject.set(x, "Tethering.accepted", js.Array(value :_*))
+        inline def setTetheringDotacceptedVarargs(value: AcceptedEvent*): Self = StObject.set(x, "Tethering.accepted", js.Array(value*))
         
         inline def setTracingDotbufferUsage(value: js.Array[BufferUsageEvent]): Self = StObject.set(x, "Tracing.bufferUsage", value.asInstanceOf[js.Any])
         
-        inline def setTracingDotbufferUsageVarargs(value: BufferUsageEvent*): Self = StObject.set(x, "Tracing.bufferUsage", js.Array(value :_*))
+        inline def setTracingDotbufferUsageVarargs(value: BufferUsageEvent*): Self = StObject.set(x, "Tracing.bufferUsage", js.Array(value*))
         
         inline def setTracingDotdataCollected(value: js.Array[DataCollectedEvent]): Self = StObject.set(x, "Tracing.dataCollected", value.asInstanceOf[js.Any])
         
-        inline def setTracingDotdataCollectedVarargs(value: DataCollectedEvent*): Self = StObject.set(x, "Tracing.dataCollected", js.Array(value :_*))
+        inline def setTracingDotdataCollectedVarargs(value: DataCollectedEvent*): Self = StObject.set(x, "Tracing.dataCollected", js.Array(value*))
         
         inline def setTracingDottracingComplete(value: js.Array[TracingCompleteEvent]): Self = StObject.set(x, "Tracing.tracingComplete", value.asInstanceOf[js.Any])
         
-        inline def setTracingDottracingCompleteVarargs(value: TracingCompleteEvent*): Self = StObject.set(x, "Tracing.tracingComplete", js.Array(value :_*))
+        inline def setTracingDottracingCompleteVarargs(value: TracingCompleteEvent*): Self = StObject.set(x, "Tracing.tracingComplete", js.Array(value*))
         
         inline def setWebAudioDotaudioListenerCreated(value: js.Array[AudioListenerCreatedEvent]): Self = StObject.set(x, "WebAudio.audioListenerCreated", value.asInstanceOf[js.Any])
         
-        inline def setWebAudioDotaudioListenerCreatedVarargs(value: AudioListenerCreatedEvent*): Self = StObject.set(x, "WebAudio.audioListenerCreated", js.Array(value :_*))
+        inline def setWebAudioDotaudioListenerCreatedVarargs(value: AudioListenerCreatedEvent*): Self = StObject.set(x, "WebAudio.audioListenerCreated", js.Array(value*))
         
         inline def setWebAudioDotaudioListenerWillBeDestroyed(value: js.Array[AudioListenerWillBeDestroyedEvent]): Self = StObject.set(x, "WebAudio.audioListenerWillBeDestroyed", value.asInstanceOf[js.Any])
         
-        inline def setWebAudioDotaudioListenerWillBeDestroyedVarargs(value: AudioListenerWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.audioListenerWillBeDestroyed", js.Array(value :_*))
+        inline def setWebAudioDotaudioListenerWillBeDestroyedVarargs(value: AudioListenerWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.audioListenerWillBeDestroyed", js.Array(value*))
         
         inline def setWebAudioDotaudioNodeCreated(value: js.Array[AudioNodeCreatedEvent]): Self = StObject.set(x, "WebAudio.audioNodeCreated", value.asInstanceOf[js.Any])
         
-        inline def setWebAudioDotaudioNodeCreatedVarargs(value: AudioNodeCreatedEvent*): Self = StObject.set(x, "WebAudio.audioNodeCreated", js.Array(value :_*))
+        inline def setWebAudioDotaudioNodeCreatedVarargs(value: AudioNodeCreatedEvent*): Self = StObject.set(x, "WebAudio.audioNodeCreated", js.Array(value*))
         
         inline def setWebAudioDotaudioNodeWillBeDestroyed(value: js.Array[AudioNodeWillBeDestroyedEvent]): Self = StObject.set(x, "WebAudio.audioNodeWillBeDestroyed", value.asInstanceOf[js.Any])
         
-        inline def setWebAudioDotaudioNodeWillBeDestroyedVarargs(value: AudioNodeWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.audioNodeWillBeDestroyed", js.Array(value :_*))
+        inline def setWebAudioDotaudioNodeWillBeDestroyedVarargs(value: AudioNodeWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.audioNodeWillBeDestroyed", js.Array(value*))
         
         inline def setWebAudioDotaudioParamCreated(value: js.Array[AudioParamCreatedEvent]): Self = StObject.set(x, "WebAudio.audioParamCreated", value.asInstanceOf[js.Any])
         
-        inline def setWebAudioDotaudioParamCreatedVarargs(value: AudioParamCreatedEvent*): Self = StObject.set(x, "WebAudio.audioParamCreated", js.Array(value :_*))
+        inline def setWebAudioDotaudioParamCreatedVarargs(value: AudioParamCreatedEvent*): Self = StObject.set(x, "WebAudio.audioParamCreated", js.Array(value*))
         
         inline def setWebAudioDotaudioParamWillBeDestroyed(value: js.Array[AudioParamWillBeDestroyedEvent]): Self = StObject.set(x, "WebAudio.audioParamWillBeDestroyed", value.asInstanceOf[js.Any])
         
-        inline def setWebAudioDotaudioParamWillBeDestroyedVarargs(value: AudioParamWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.audioParamWillBeDestroyed", js.Array(value :_*))
+        inline def setWebAudioDotaudioParamWillBeDestroyedVarargs(value: AudioParamWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.audioParamWillBeDestroyed", js.Array(value*))
         
         inline def setWebAudioDotcontextChanged(value: js.Array[ContextChangedEvent]): Self = StObject.set(x, "WebAudio.contextChanged", value.asInstanceOf[js.Any])
         
-        inline def setWebAudioDotcontextChangedVarargs(value: ContextChangedEvent*): Self = StObject.set(x, "WebAudio.contextChanged", js.Array(value :_*))
+        inline def setWebAudioDotcontextChangedVarargs(value: ContextChangedEvent*): Self = StObject.set(x, "WebAudio.contextChanged", js.Array(value*))
         
         inline def setWebAudioDotcontextCreated(value: js.Array[ContextCreatedEvent]): Self = StObject.set(x, "WebAudio.contextCreated", value.asInstanceOf[js.Any])
         
-        inline def setWebAudioDotcontextCreatedVarargs(value: ContextCreatedEvent*): Self = StObject.set(x, "WebAudio.contextCreated", js.Array(value :_*))
+        inline def setWebAudioDotcontextCreatedVarargs(value: ContextCreatedEvent*): Self = StObject.set(x, "WebAudio.contextCreated", js.Array(value*))
         
         inline def setWebAudioDotcontextWillBeDestroyed(value: js.Array[ContextWillBeDestroyedEvent]): Self = StObject.set(x, "WebAudio.contextWillBeDestroyed", value.asInstanceOf[js.Any])
         
-        inline def setWebAudioDotcontextWillBeDestroyedVarargs(value: ContextWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.contextWillBeDestroyed", js.Array(value :_*))
+        inline def setWebAudioDotcontextWillBeDestroyedVarargs(value: ContextWillBeDestroyedEvent*): Self = StObject.set(x, "WebAudio.contextWillBeDestroyed", js.Array(value*))
         
         inline def setWebAudioDotnodeParamConnected(value: js.Array[NodeParamConnectedEvent]): Self = StObject.set(x, "WebAudio.nodeParamConnected", value.asInstanceOf[js.Any])
         
-        inline def setWebAudioDotnodeParamConnectedVarargs(value: NodeParamConnectedEvent*): Self = StObject.set(x, "WebAudio.nodeParamConnected", js.Array(value :_*))
+        inline def setWebAudioDotnodeParamConnectedVarargs(value: NodeParamConnectedEvent*): Self = StObject.set(x, "WebAudio.nodeParamConnected", js.Array(value*))
         
         inline def setWebAudioDotnodeParamDisconnected(value: js.Array[NodeParamDisconnectedEvent]): Self = StObject.set(x, "WebAudio.nodeParamDisconnected", value.asInstanceOf[js.Any])
         
-        inline def setWebAudioDotnodeParamDisconnectedVarargs(value: NodeParamDisconnectedEvent*): Self = StObject.set(x, "WebAudio.nodeParamDisconnected", js.Array(value :_*))
+        inline def setWebAudioDotnodeParamDisconnectedVarargs(value: NodeParamDisconnectedEvent*): Self = StObject.set(x, "WebAudio.nodeParamDisconnected", js.Array(value*))
         
         inline def setWebAudioDotnodesConnected(value: js.Array[NodesConnectedEvent]): Self = StObject.set(x, "WebAudio.nodesConnected", value.asInstanceOf[js.Any])
         
-        inline def setWebAudioDotnodesConnectedVarargs(value: NodesConnectedEvent*): Self = StObject.set(x, "WebAudio.nodesConnected", js.Array(value :_*))
+        inline def setWebAudioDotnodesConnectedVarargs(value: NodesConnectedEvent*): Self = StObject.set(x, "WebAudio.nodesConnected", js.Array(value*))
         
         inline def setWebAudioDotnodesDisconnected(value: js.Array[NodesDisconnectedEvent]): Self = StObject.set(x, "WebAudio.nodesDisconnected", value.asInstanceOf[js.Any])
         
-        inline def setWebAudioDotnodesDisconnectedVarargs(value: NodesDisconnectedEvent*): Self = StObject.set(x, "WebAudio.nodesDisconnected", js.Array(value :_*))
+        inline def setWebAudioDotnodesDisconnectedVarargs(value: NodesDisconnectedEvent*): Self = StObject.set(x, "WebAudio.nodesDisconnected", js.Array(value*))
       }
     }
   }

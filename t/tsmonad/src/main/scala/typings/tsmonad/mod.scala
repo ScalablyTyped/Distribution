@@ -27,7 +27,7 @@ object mod {
   
   @JSImport("tsmonad", "Either")
   @js.native
-  class Either_[L, R] protected ()
+  open class Either_[L, R] protected ()
     extends typings.tsmonad.eitherMod.Either_[L, R] {
     def this(`type`: EitherType) = this()
     def this(`type`: EitherType, l: L) = this()
@@ -60,7 +60,7 @@ object mod {
   
   @JSImport("tsmonad", "Maybe")
   @js.native
-  class Maybe_[T] protected ()
+  open class Maybe_[T] protected ()
     extends typings.tsmonad.maybeMod.Maybe_[T] {
     def this(`type`: MaybeType) = this()
     def this(`type`: MaybeType, value: T) = this()
@@ -72,7 +72,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def all(t: StringDictionary[typings.tsmonad.maybeMod.Maybe_[js.Any]]): typings.tsmonad.maybeMod.Maybe_[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(t.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.maybeMod.Maybe_[StringDictionary[js.Any]]]
+    inline def all(t: StringDictionary[typings.tsmonad.maybeMod.Maybe_[Any]]): typings.tsmonad.maybeMod.Maybe_[StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(t.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.maybeMod.Maybe_[StringDictionary[Any]]]
     
     inline def isJust[T](t: typings.tsmonad.maybeMod.Maybe_[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJust")(t.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
@@ -90,7 +90,7 @@ object mod {
   
   @JSImport("tsmonad", "Writer")
   @js.native
-  class Writer_[S, T] protected ()
+  open class Writer_[S, T] protected ()
     extends typings.tsmonad.writerMod.Writer_[S, T] {
     def this(story: js.Array[S], value: T) = this()
   }
@@ -111,7 +111,7 @@ object mod {
   inline def either[L, R](l: L, r: R): typings.tsmonad.eitherMod.Either_[L, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[typings.tsmonad.eitherMod.Either_[L, R]]
   inline def either[L, R](l: Unit, r: R): typings.tsmonad.eitherMod.Either_[L, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[typings.tsmonad.eitherMod.Either_[L, R]]
   
-  inline def eq_(a: js.Any, b: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def eq_(a: Any, b: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def maybe[T](t: T): typings.tsmonad.maybeMod.Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")(t.asInstanceOf[js.Any]).asInstanceOf[typings.tsmonad.maybeMod.Maybe_[T]]
   

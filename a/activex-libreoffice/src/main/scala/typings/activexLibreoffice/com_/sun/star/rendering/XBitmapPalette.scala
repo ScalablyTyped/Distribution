@@ -68,7 +68,7 @@ object XBitmapPalette {
     getColorSpace: () => XColorSpace,
     getIndex: (js.Array[SeqEquiv[ColorComponent]], Double) => Boolean,
     getNumberOfEntries: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setIndex: (SeqEquiv[ColorComponent], Boolean, Double) => Boolean
   ): XBitmapPalette = {

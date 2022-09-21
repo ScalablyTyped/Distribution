@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * An object containing the result of a function-evaluation operation
   *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 trait FunctionResultLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait FunctionResultLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Error value (such as "#DIV/0") representing the error. If the error string is not set, then the function succeeded, and its result is written to the Value field. The error is always in the English locale.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var error: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error property is not set).
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var value: js.UndefOr[Boolean] = js.undefined

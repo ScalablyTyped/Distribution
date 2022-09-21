@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Services.CoreServices")
 @js.native
-class CoreServices protected ()
+open class CoreServices protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.CoreServices {
   def this(host: ICoreServicesHost) = this()
@@ -25,7 +25,7 @@ class CoreServices protected ()
   override def getDefaultCompilationSettings(): CompilationSettings = js.native
   
   /* CompleteClass */
-  override def getMemoryInfo(): js.Array[js.Any] = js.native
+  override def getMemoryInfo(): js.Array[Any] = js.native
   
   /* CompleteClass */
   override def getPreProcessedFileInfo(fileName: String, sourceText: IScriptSnapshot): IPreProcessedFileInfo = js.native

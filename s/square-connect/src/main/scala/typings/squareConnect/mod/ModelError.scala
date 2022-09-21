@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ModelError")
 @js.native
-class ModelError () extends StObject {
+open class ModelError () extends StObject {
   
   /**
     * The high-level category for the error. See `ErrorCategory` for possible values.

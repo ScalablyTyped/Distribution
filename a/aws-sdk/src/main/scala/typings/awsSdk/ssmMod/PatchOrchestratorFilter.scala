@@ -33,6 +33,6 @@ object PatchOrchestratorFilter {
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: PatchOrchestratorFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: PatchOrchestratorFilterValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Use the methods on the path to create complex shapes.
   * @see https://docs.scriptable.app/path/#-new-path
   */
-class Path ()
+open class Path ()
   extends StObject
      with typings.scriptableIos.Path {
   

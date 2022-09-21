@@ -20,7 +20,7 @@ object XInteractionAuthFallback {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     select: () => Unit,
     setCode: String => Unit

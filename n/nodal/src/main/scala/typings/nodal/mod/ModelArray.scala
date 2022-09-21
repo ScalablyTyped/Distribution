@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodal", "ModelArray")
 @js.native
-class ModelArray[T] protected () extends ItemArray[T] {
+open class ModelArray[T] protected () extends ItemArray[T] {
   def this(modelConstructor: TypeofModel) = this()
   
   var Model: TypeofModel = js.native
   
-  /* private */ def __saveAll__(callback: js.Any): js.Any = js.native
+  /* private */ def __saveAll__(callback: Any): Any = js.native
   
   def destroyAll(callback: js.Function): Unit = js.native
   
@@ -26,7 +26,7 @@ class ModelArray[T] protected () extends ItemArray[T] {
   
   def setAll(field: String, value: String): Boolean = js.native
   
-  def toObject(): js.Any = js.native
+  def toObject(): Any = js.native
 }
 /* static members */
 object ModelArray {

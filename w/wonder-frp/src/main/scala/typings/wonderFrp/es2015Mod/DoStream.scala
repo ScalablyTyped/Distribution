@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/es2015", "DoStream")
 @js.native
-class DoStream protected ()
+open class DoStream protected ()
   extends typings.wonderFrp.streamDoStreamMod.DoStream {
   def this(
     source: typings.wonderFrp.coreStreamMod.Stream,

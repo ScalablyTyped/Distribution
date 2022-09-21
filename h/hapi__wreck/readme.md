@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__wreck
 
-Typings are for version 17.0.0
+Typings are for version 18.0.0
 
 ## Library description:
 HTTP Client Utilities
@@ -10,10 +10,10 @@ HTTP Client Utilities
 | ------------------ | :-------------: |
 | Full name          | @hapi/wreck |
 | Keywords           | utilities, http, client |
-| # releases         | 9 |
-| # dependents       | 50 |
-| # downloads        | 15415775 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2868953.6666666665 |
+| # stars            | 380.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/wreck#readme)

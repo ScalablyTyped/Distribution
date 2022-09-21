@@ -28,10 +28,10 @@ trait PageToken extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The maximum number of items to return. Must be a value between 1 and 1000. If not set, defaults to 50. */
+  /** The maximum number of items to return. Must be a value between 1 and 1000 inclusively. If not set, defaults to 50. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** The next_page_token value returned from a previous list request, if any. If not set, defaults to an empty string. */
+  /** The pagination token of the next results page. If not set, the first page is returned. The token is returned in the response to a previous list request. */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /** Required. Resource name of the project to list the taxonomies of. */

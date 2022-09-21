@@ -10,10 +10,10 @@ JSON does not handle circular references. This version does
 | ------------------ | :-------------: |
 | Full name          | macaca-circular-json |
 | Keywords           | JSON, circular, reference, recursive, recursion, parse, stringify |
-| # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 31649 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2216.6666666666665 |
+| # stars            | 594.0 |
 
 ## Links
 - [Homepage](https://github.com/WebReflection/circular-json)

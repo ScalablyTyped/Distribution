@@ -14,6 +14,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.pseudoElementRemoved
 import typings.devtoolsProtocol.devtoolsProtocolStrings.setChildNodes
 import typings.devtoolsProtocol.devtoolsProtocolStrings.shadowRootPopped
 import typings.devtoolsProtocol.devtoolsProtocolStrings.shadowRootPushed
+import typings.devtoolsProtocol.devtoolsProtocolStrings.topLayerElementsUpdated
 import typings.devtoolsProtocol.mod.Protocol.DOM.AttributeModifiedEvent
 import typings.devtoolsProtocol.mod.Protocol.DOM.AttributeRemovedEvent
 import typings.devtoolsProtocol.mod.Protocol.DOM.CharacterDataModifiedEvent
@@ -28,11 +29,14 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.DescribeNodeRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.DescribeNodeResponse
 import typings.devtoolsProtocol.mod.Protocol.DOM.DiscardSearchResultsRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.DistributedNodesUpdatedEvent
+import typings.devtoolsProtocol.mod.Protocol.DOM.EnableRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.FocusRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetAttributesRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetAttributesResponse
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetBoxModelRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetBoxModelResponse
+import typings.devtoolsProtocol.mod.Protocol.DOM.GetContainerForNodeRequest
+import typings.devtoolsProtocol.mod.Protocol.DOM.GetContainerForNodeResponse
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetContentQuadsRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetContentQuadsResponse
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetDocumentRequest
@@ -51,10 +55,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.GetNodesForSubtreeByStyleReques
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetNodesForSubtreeByStyleResponse
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetOuterHTMLRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetOuterHTMLResponse
+import typings.devtoolsProtocol.mod.Protocol.DOM.GetQueryingDescendantsForContainerRequest
+import typings.devtoolsProtocol.mod.Protocol.DOM.GetQueryingDescendantsForContainerResponse
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetRelayoutBoundaryRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetRelayoutBoundaryResponse
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetSearchResultsRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetSearchResultsResponse
+import typings.devtoolsProtocol.mod.Protocol.DOM.GetTopLayerElementsResponse
 import typings.devtoolsProtocol.mod.Protocol.DOM.InlineStyleInvalidatedEvent
 import typings.devtoolsProtocol.mod.Protocol.DOM.MoveToRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.MoveToResponse
@@ -128,7 +135,7 @@ trait DOMApi extends StObject {
   /**
     * Enables DOM agent for the given page.
     */
-  def enable(): js.Promise[Unit] = js.native
+  def enable(params: EnableRequest): js.Promise[Unit] = js.native
   
   /**
     * Focuses the given element.
@@ -144,6 +151,13 @@ trait DOMApi extends StObject {
     * Returns boxes for the given node.
     */
   def getBoxModel(params: GetBoxModelRequest): js.Promise[GetBoxModelResponse] = js.native
+  
+  /**
+    * Returns the container of the given node based on container query conditions.
+    * If containerName is given, it will find the nearest container with a matching name;
+    * otherwise it will find the nearest container regardless of its container name.
+    */
+  def getContainerForNode(params: GetContainerForNodeRequest): js.Promise[GetContainerForNodeResponse] = js.native
   
   /**
     * Returns quads that describe node position on the page. This method
@@ -196,6 +210,12 @@ trait DOMApi extends StObject {
   def getOuterHTML(params: GetOuterHTMLRequest): js.Promise[GetOuterHTMLResponse] = js.native
   
   /**
+    * Returns the descendants of a container query container that have
+    * container queries against this container.
+    */
+  def getQueryingDescendantsForContainer(params: GetQueryingDescendantsForContainerRequest): js.Promise[GetQueryingDescendantsForContainerResponse] = js.native
+  
+  /**
     * Returns the id of the nearest ancestor that is a relayout boundary.
     */
   def getRelayoutBoundary(params: GetRelayoutBoundaryRequest): js.Promise[GetRelayoutBoundaryResponse] = js.native
@@ -205,6 +225,13 @@ trait DOMApi extends StObject {
     * identifier.
     */
   def getSearchResults(params: GetSearchResultsRequest): js.Promise[GetSearchResultsResponse] = js.native
+  
+  /**
+    * Returns NodeIds of current top layer elements.
+    * Top layer is rendered closest to the user within a viewport, therefore its elements always
+    * appear on top of all other content.
+    */
+  def getTopLayerElements(): js.Promise[GetTopLayerElementsResponse] = js.native
   
   /**
     * Hides any highlight.
@@ -268,7 +295,7 @@ trait DOMApi extends StObject {
   @JSName("on")
   def on_childNodeRemoved(event: childNodeRemoved, listener: js.Function1[/* params */ ChildNodeRemovedEvent, Unit]): Unit = js.native
   /**
-    * Called when distrubution is changed.
+    * Called when distribution is changed.
     */
   @JSName("on")
   def on_distributedNodesUpdated(
@@ -314,6 +341,11 @@ trait DOMApi extends StObject {
     */
   @JSName("on")
   def on_shadowRootPushed(event: shadowRootPushed, listener: js.Function1[/* params */ ShadowRootPushedEvent, Unit]): Unit = js.native
+  /**
+    * Called when top layer elements are changed.
+    */
+  @JSName("on")
+  def on_topLayerElementsUpdated(event: topLayerElementsUpdated, listener: js.Function0[Unit]): Unit = js.native
   
   /**
     * Searches for a given string in the DOM tree. Use `getSearchResults` to access search results or

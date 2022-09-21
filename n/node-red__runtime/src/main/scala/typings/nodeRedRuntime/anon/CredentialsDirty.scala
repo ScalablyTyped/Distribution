@@ -29,6 +29,6 @@ object CredentialsDirty {
     
     inline def setFlows(value: js.Array[js.Object]): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
     
-    inline def setFlowsVarargs(value: js.Object*): Self = StObject.set(x, "flows", js.Array(value :_*))
+    inline def setFlowsVarargs(value: js.Object*): Self = StObject.set(x, "flows", js.Array(value*))
   }
 }

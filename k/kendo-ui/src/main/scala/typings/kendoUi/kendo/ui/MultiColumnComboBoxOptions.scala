@@ -5,7 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MultiColumnComboBoxOptions extends StObject {
+trait MultiColumnComboBoxOptions
+  extends StObject
+     with AllEditorOptions {
   
   var animation: js.UndefOr[MultiColumnComboBoxAnimation] = js.undefined
   
@@ -29,7 +31,7 @@ trait MultiColumnComboBoxOptions extends StObject {
   
   var dataBound: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
   
   var dataTextField: js.UndefOr[String] = js.undefined
   
@@ -43,9 +45,11 @@ trait MultiColumnComboBoxOptions extends StObject {
   
   var enforceMinLength: js.UndefOr[Boolean] = js.undefined
   
+  var fillMode: js.UndefOr[String] = js.undefined
+  
   var filter: js.UndefOr[String] = js.undefined
   
-  var filterFields: js.UndefOr[js.Any] = js.undefined
+  var filterFields: js.UndefOr[Any] = js.undefined
   
   var filtering: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxFilteringEvent, Unit]] = js.undefined
   
@@ -77,7 +81,11 @@ trait MultiColumnComboBoxOptions extends StObject {
   
   var popup: js.UndefOr[MultiColumnComboBoxPopup] = js.undefined
   
+  var rounded: js.UndefOr[String] = js.undefined
+  
   var select: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxSelectEvent, Unit]] = js.undefined
+  
+  var size: js.UndefOr[String] = js.undefined
   
   var suggest: js.UndefOr[Boolean] = js.undefined
   
@@ -142,13 +150,13 @@ object MultiColumnComboBoxOptions {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: MultiColumnComboBoxColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: MultiColumnComboBoxColumn*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setDataBound(value: /* e */ MultiColumnComboBoxDataBoundEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -176,9 +184,13 @@ object MultiColumnComboBoxOptions {
     
     inline def setEnforceMinLengthUndefined: Self = StObject.set(x, "enforceMinLength", js.undefined)
     
+    inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
+    
+    inline def setFillModeUndefined: Self = StObject.set(x, "fillMode", js.undefined)
+    
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    inline def setFilterFields(value: js.Any): Self = StObject.set(x, "filterFields", value.asInstanceOf[js.Any])
+    inline def setFilterFields(value: Any): Self = StObject.set(x, "filterFields", value.asInstanceOf[js.Any])
     
     inline def setFilterFieldsUndefined: Self = StObject.set(x, "filterFields", js.undefined)
     
@@ -244,9 +256,17 @@ object MultiColumnComboBoxOptions {
     
     inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
+    inline def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+    
     inline def setSelect(value: /* e */ MultiColumnComboBoxSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setSuggest(value: Boolean): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
     

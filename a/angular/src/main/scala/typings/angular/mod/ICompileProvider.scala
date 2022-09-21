@@ -2,7 +2,6 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angular.JQLite
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +11,13 @@ trait ICompileProvider
   extends StObject
      with IServiceProvider {
   
-  def aHrefSanitizationTrustedUrlList(): RegExp = js.native
-  def aHrefSanitizationTrustedUrlList(regexp: RegExp): ICompileProvider = js.native
+  def aHrefSanitizationTrustedUrlList(): js.RegExp = js.native
+  def aHrefSanitizationTrustedUrlList(regexp: js.RegExp): ICompileProvider = js.native
   
   /** @deprecated The old name of aHrefSanitizationTrustedUrlList. Kept for compatibility. */
-  def aHrefSanitizationWhitelist(): RegExp = js.native
+  def aHrefSanitizationWhitelist(): js.RegExp = js.native
   /** @deprecated The old name of aHrefSanitizationTrustedUrlList. Kept for compatibility. */
-  def aHrefSanitizationWhitelist(regexp: RegExp): ICompileProvider = js.native
+  def aHrefSanitizationWhitelist(regexp: js.RegExp): ICompileProvider = js.native
   
   /**
     * It indicates to the compiler whether or not directives on comments should be compiled.
@@ -52,13 +51,13 @@ trait ICompileProvider
     `object`: StringDictionary[Injectable[IDirectiveFactory[TScope, TElement, TAttributes, TController]]]
   ): ICompileProvider = js.native
   
-  def imgSrcSanitizationTrustedUrlList(): RegExp = js.native
-  def imgSrcSanitizationTrustedUrlList(regexp: RegExp): ICompileProvider = js.native
+  def imgSrcSanitizationTrustedUrlList(): js.RegExp = js.native
+  def imgSrcSanitizationTrustedUrlList(regexp: js.RegExp): ICompileProvider = js.native
   
   /** @deprecated The old name of imgSrcSanitizationTrustedUrlList. Kept for compatibility. */
-  def imgSrcSanitizationWhitelist(): RegExp = js.native
+  def imgSrcSanitizationWhitelist(): js.RegExp = js.native
   /** @deprecated The old name of imgSrcSanitizationTrustedUrlList. Kept for compatibility. */
-  def imgSrcSanitizationWhitelist(regexp: RegExp): ICompileProvider = js.native
+  def imgSrcSanitizationWhitelist(regexp: js.RegExp): ICompileProvider = js.native
   
   /**
     * Sets the number of times $onChanges hooks can trigger new changes before giving up and assuming that the model is unstable.
@@ -68,16 +67,6 @@ trait ICompileProvider
     */
   def onChangesTtl(): Double = js.native
   def onChangesTtl(limit: Double): ICompileProvider = js.native
-  
-  /**
-    * Call this method to enable/disable whether directive controllers are assigned bindings before calling the controller's constructor.
-    * If enabled (true), the compiler assigns the value of each of the bindings to the properties of the controller object before the constructor of this object is called.
-    * If disabled (false), the compiler calls the constructor first before assigning bindings.
-    * Defaults to false.
-    * See: https://docs.angularjs.org/api/ng/provider/$compileProvider#preAssignBindingsEnabled
-    */
-  def preAssignBindingsEnabled(): Boolean = js.native
-  def preAssignBindingsEnabled(enabled: Boolean): ICompileProvider = js.native
   
   /**
     * Call this method to enable/disable strict component bindings check.

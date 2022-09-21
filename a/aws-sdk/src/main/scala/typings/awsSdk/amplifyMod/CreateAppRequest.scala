@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateAppRequest extends StObject {
   
   /**
-    *  The personal access token for a third-party source control system for an Amplify app. The personal access token is used to create a webhook and a read-only deploy key. The token is not stored. 
+    * The personal access token for a GitHub repository for an Amplify app. The personal access token is used to authorize access to a GitHub repository using the Amplify GitHub App. The token is not stored. Use accessToken for GitHub repositories only. To authorize access to a repository provider such as Bitbucket or CodeCommit, use oauthToken. You must specify either accessToken or oauthToken when you create a new app. Existing Amplify apps deployed from a GitHub repository using OAuth continue to work with CI/CD. However, we strongly recommend that you migrate these apps to use the GitHub App. For more information, see Migrating an existing OAuth app to the Amplify GitHub App in the Amplify User Guide .
     */
   var accessToken: js.UndefOr[AccessToken] = js.undefined
   
@@ -22,7 +22,7 @@ trait CreateAppRequest extends StObject {
   var autoBranchCreationPatterns: js.UndefOr[AutoBranchCreationPatterns] = js.undefined
   
   /**
-    *  The credentials for basic authorization for an Amplify app. 
+    *  The credentials for basic authorization for an Amplify app. You must base64-encode the authorization credentials and provide them in the format user:password.
     */
   var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.undefined
   
@@ -82,7 +82,7 @@ trait CreateAppRequest extends StObject {
   var name: Name
   
   /**
-    *  The OAuth token for a third-party source control system for an Amplify app. The OAuth token is used to create a webhook and a read-only deploy key. The OAuth token is not stored. 
+    * The OAuth token for a third-party source control system for an Amplify app. The OAuth token is used to create a webhook and a read-only deploy key using SSH cloning. The OAuth token is not stored. Use oauthToken for repository providers other than GitHub, such as Bitbucket or CodeCommit. To authorize access to GitHub as your repository provider, use accessToken. You must specify either oauthToken or accessToken when you create a new app. Existing Amplify apps deployed from a GitHub repository using OAuth continue to work with CI/CD. However, we strongly recommend that you migrate these apps to use the GitHub App. For more information, see Migrating an existing OAuth app to the Amplify GitHub App in the Amplify User Guide .
     */
   var oauthToken: js.UndefOr[OauthToken] = js.undefined
   
@@ -122,7 +122,7 @@ object CreateAppRequest {
     
     inline def setAutoBranchCreationPatternsUndefined: Self = StObject.set(x, "autoBranchCreationPatterns", js.undefined)
     
-    inline def setAutoBranchCreationPatternsVarargs(value: AutoBranchCreationPattern*): Self = StObject.set(x, "autoBranchCreationPatterns", js.Array(value :_*))
+    inline def setAutoBranchCreationPatternsVarargs(value: AutoBranchCreationPattern*): Self = StObject.set(x, "autoBranchCreationPatterns", js.Array(value*))
     
     inline def setBasicAuthCredentials(value: BasicAuthCredentials): Self = StObject.set(x, "basicAuthCredentials", value.asInstanceOf[js.Any])
     
@@ -140,7 +140,7 @@ object CreateAppRequest {
     
     inline def setCustomRulesUndefined: Self = StObject.set(x, "customRules", js.undefined)
     
-    inline def setCustomRulesVarargs(value: CustomRule*): Self = StObject.set(x, "customRules", js.Array(value :_*))
+    inline def setCustomRulesVarargs(value: CustomRule*): Self = StObject.set(x, "customRules", js.Array(value*))
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

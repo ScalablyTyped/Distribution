@@ -10,10 +10,10 @@ object networkCheckMod {
   
   @JSImport("material-ui/svg-icons/notification/network-check", JSImport.Default)
   @js.native
-  class default () extends NotificationNetworkCheck
+  open class default () extends NotificationNetworkCheck
   
   @JSImport("material-ui/svg-icons/notification/network-check", "NotificationNetworkCheck")
   @js.native
-  class NotificationNetworkCheck ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationNetworkCheck ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalRangeFormat")
 @js.native
-class ConditionalRangeFormat ()
+open class ConditionalRangeFormat ()
   extends StObject
      with typings.officeJsPreview.Excel.ConditionalRangeFormat {
   

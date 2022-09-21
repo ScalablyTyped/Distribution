@@ -55,7 +55,7 @@ trait DomElement extends StObject {
     *      (optional) The parent element to search in. The default is the document element.
     */
   def getElementById(id: String): HTMLElement = js.native
-  def getElementById(id: String, element: js.Any): js.Any = js.native
+  def getElementById(id: String, element: Any): Any = js.native
   def getElementById(id: String, element: HTMLElement): HTMLElement = js.native
   
   /**
@@ -83,7 +83,7 @@ trait DomElement extends StObject {
     * @return
     *      true if element is visible on the Web page; otherwise, false
     */
-  def getVisible(element: js.Any): Boolean = js.native
+  def getVisible(element: Any): Boolean = js.native
   
   /**
     * Determines whether the specified object is a DOM element.
@@ -92,7 +92,7 @@ trait DomElement extends StObject {
     * @return
     *      true if the object is a DOM element; otherwise, false.
     */
-  def isDomElement(obj: js.Any): Boolean = js.native
+  def isDomElement(obj: Any): Boolean = js.native
   
   /**
     * Raises a bubble event. A bubble event causes an event to be raised and then propagated up the control hierarchy until it is handled.
@@ -103,7 +103,7 @@ trait DomElement extends StObject {
     */
   def raiseBubbleEvent(source: HTMLElement, args: EventArgs): Unit = js.native
   
-  def removeCssClass(element: js.Any, className: String): Unit = js.native
+  def removeCssClass(element: Any, className: String): Unit = js.native
   /**
     * Removes a CSS class from a DOM element. This member is static and can be invoked without creating an instance of the class. If the element does not include a CSS class, no change is made to the element.
     * @param element

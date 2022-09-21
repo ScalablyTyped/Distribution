@@ -4,16 +4,16 @@
 Typings are for version 2.0
 
 ## Library description:
-Node.js credstash implementation
+Node.js CredStash implementation
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | nodecredstash |
 | Keywords           | credstash, kms, aws, node.js |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 568057 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 47562.333333333336 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/DavidTanner/nodecredstash#readme)

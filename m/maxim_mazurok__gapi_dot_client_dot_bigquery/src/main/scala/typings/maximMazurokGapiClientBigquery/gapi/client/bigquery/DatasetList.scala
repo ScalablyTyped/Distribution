@@ -34,7 +34,7 @@ object DatasetList {
     
     inline def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
     
-    inline def setDatasetsVarargs(value: typings.maximMazurokGapiClientBigquery.anon.DatasetReference*): Self = StObject.set(x, "datasets", js.Array(value :_*))
+    inline def setDatasetsVarargs(value: typings.maximMazurokGapiClientBigquery.anon.DatasetReference*): Self = StObject.set(x, "datasets", js.Array(value*))
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

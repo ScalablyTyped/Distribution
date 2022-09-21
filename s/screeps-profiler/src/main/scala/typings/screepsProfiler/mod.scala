@@ -131,7 +131,7 @@ object mod extends Shortcut {
       * Each of the functions on this object will be replaced with a profiler wrapper.
       * @param objectName - Name of the object, a label used in output
       */
-    def registerObject(`object`: js.Any, objectName: String): Unit = js.native
+    def registerObject(`object`: Any, objectName: String): Unit = js.native
     
     /**
       * Wrap your main loop with this function.

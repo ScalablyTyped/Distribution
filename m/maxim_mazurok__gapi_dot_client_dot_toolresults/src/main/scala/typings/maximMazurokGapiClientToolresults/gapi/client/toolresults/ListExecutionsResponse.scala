@@ -25,7 +25,7 @@ object ListExecutionsResponse {
     
     inline def setExecutionsUndefined: Self = StObject.set(x, "executions", js.undefined)
     
-    inline def setExecutionsVarargs(value: Execution*): Self = StObject.set(x, "executions", js.Array(value :_*))
+    inline def setExecutionsVarargs(value: Execution*): Self = StObject.set(x, "executions", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

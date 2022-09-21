@@ -2,10 +2,14 @@ package typings.reactMdForm
 
 import typings.reactMdForm.formThemeProviderMod.FormTheme
 import typings.reactMdForm.formThemeProviderMod.FormUnderlineDirection
+import typings.reactMdForm.getErrorMessageMod._ChangeValidationBehavior
 import typings.reactMdForm.textAreaMod.TextAreaResize
 import typings.reactMdForm.textFieldTextFieldMod.SupportedInputTypes
 import typings.reactMdForm.typesMod.SliderEventHandlerNames
-import typings.reactMdForm.typesMod._SliderDraggingType
+import typings.reactMdForm.typesMod._SliderDraggingBy
+import typings.reactMdForm.useNumberFieldMod._FixNumberOnBlur
+import typings.reactMdForm.utilsMod.FileReaderParser
+import typings.reactMdForm.utilsMod.FileUploadStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,6 +51,16 @@ object reactMdFormStrings {
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
+  sealed trait badInput
+    extends StObject
+       with _ChangeValidationBehavior
+  inline def badInput: badInput = "badInput".asInstanceOf[badInput]
+  
+  @js.native
+  sealed trait blur extends StObject
+  inline def blur: blur = "blur".asInstanceOf[blur]
+  
+  @js.native
   sealed trait both
     extends StObject
        with TextAreaResize
@@ -59,6 +73,10 @@ object reactMdFormStrings {
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
+  sealed trait change extends StObject
+  inline def change: change = "change".asInstanceOf[change]
+  
+  @js.native
   sealed trait checkbox extends StObject
   inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
@@ -69,8 +87,20 @@ object reactMdFormStrings {
   inline def color: color = "color".asInstanceOf[color]
   
   @js.native
+  sealed trait complete
+    extends StObject
+       with FileUploadStatus
+  inline def complete: complete = "complete".asInstanceOf[complete]
+  
+  @js.native
   sealed trait copy extends StObject
   inline def copy: copy = "copy".asInstanceOf[copy]
+  
+  @js.native
+  sealed trait customError
+    extends StObject
+       with _ChangeValidationBehavior
+  inline def customError: customError = "customError".asInstanceOf[customError]
   
   @js.native
   sealed trait date
@@ -89,10 +119,6 @@ object reactMdFormStrings {
   inline def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
-  sealed trait decrement extends StObject
-  inline def decrement: decrement = "decrement".asInstanceOf[decrement]
-  
-  @js.native
   sealed trait descending extends StObject
   inline def descending: descending = "descending".asInstanceOf[descending]
   
@@ -105,10 +131,6 @@ object reactMdFormStrings {
   inline def done: done = "done".asInstanceOf[done]
   
   @js.native
-  sealed trait drag extends StObject
-  inline def drag: drag = "drag".asInstanceOf[drag]
-  
-  @js.native
   sealed trait email
     extends StObject
        with SupportedInputTypes
@@ -117,6 +139,10 @@ object reactMdFormStrings {
   @js.native
   sealed trait enter extends StObject
   inline def enter: enter = "enter".asInstanceOf[enter]
+  
+  @js.native
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
   
   @js.native
   sealed trait execute extends StObject
@@ -145,10 +171,6 @@ object reactMdFormStrings {
     extends StObject
        with TextAreaResize
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  
-  @js.native
-  sealed trait increment extends StObject
-  inline def increment: increment = "increment".asInstanceOf[increment]
   
   @js.native
   sealed trait inherit extends StObject
@@ -185,16 +207,24 @@ object reactMdFormStrings {
   inline def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait maximum extends StObject
-  inline def maximum: maximum = "maximum".asInstanceOf[maximum]
+  sealed trait max
+    extends StObject
+       with _FixNumberOnBlur
+  inline def max: max = "max".asInstanceOf[max]
   
   @js.native
   sealed trait menu extends StObject
   inline def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
-  sealed trait minimum extends StObject
-  inline def minimum: minimum = "minimum".asInstanceOf[minimum]
+  sealed trait menuitem extends StObject
+  inline def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
+  
+  @js.native
+  sealed trait min
+    extends StObject
+       with _FixNumberOnBlur
+  inline def min: min = "min".asInstanceOf[min]
   
   @js.native
   sealed trait mixed extends StObject
@@ -209,7 +239,7 @@ object reactMdFormStrings {
   @js.native
   sealed trait mouse
     extends StObject
-       with _SliderDraggingType
+       with _SliderDraggingBy
   inline def mouse: mouse = "mouse".asInstanceOf[mouse]
   
   @js.native
@@ -250,6 +280,12 @@ object reactMdFormStrings {
   inline def number: number = "number".asInstanceOf[number]
   
   @js.native
+  sealed trait `number-recommended`
+    extends StObject
+       with _ChangeValidationBehavior
+  inline def `number-recommended`: `number-recommended` = "number-recommended".asInstanceOf[`number-recommended`]
+  
+  @js.native
   sealed trait numeric extends StObject
   inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
@@ -262,16 +298,16 @@ object reactMdFormStrings {
   inline def on: on = "on".asInstanceOf[on]
   
   @js.native
+  sealed trait onBlur
+    extends StObject
+       with SliderEventHandlerNames
+  inline def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
+  
+  @js.native
   sealed trait onKeyDown
     extends StObject
        with SliderEventHandlerNames
   inline def onKeyDown: onKeyDown = "onKeyDown".asInstanceOf[onKeyDown]
-  
-  @js.native
-  sealed trait onKeyUp
-    extends StObject
-       with SliderEventHandlerNames
-  inline def onKeyUp: onKeyUp = "onKeyUp".asInstanceOf[onKeyUp]
   
   @js.native
   sealed trait onMouseDown
@@ -306,6 +342,18 @@ object reactMdFormStrings {
   inline def password: password = "password".asInstanceOf[password]
   
   @js.native
+  sealed trait patternMismatch
+    extends StObject
+       with _ChangeValidationBehavior
+  inline def patternMismatch: patternMismatch = "patternMismatch".asInstanceOf[patternMismatch]
+  
+  @js.native
+  sealed trait pending
+    extends StObject
+       with FileUploadStatus
+  inline def pending: pending = "pending".asInstanceOf[pending]
+  
+  @js.native
   sealed trait polite extends StObject
   inline def polite: polite = "polite".asInstanceOf[polite]
   
@@ -320,6 +368,48 @@ object reactMdFormStrings {
   @js.native
   sealed trait radio extends StObject
   inline def radio: radio = "radio".asInstanceOf[radio]
+  
+  @js.native
+  sealed trait rangeOverflow
+    extends StObject
+       with _ChangeValidationBehavior
+  inline def rangeOverflow: rangeOverflow = "rangeOverflow".asInstanceOf[rangeOverflow]
+  
+  @js.native
+  sealed trait rangeUnderflow
+    extends StObject
+       with _ChangeValidationBehavior
+  inline def rangeUnderflow: rangeUnderflow = "rangeUnderflow".asInstanceOf[rangeUnderflow]
+  
+  @js.native
+  sealed trait readAsArrayBuffer
+    extends StObject
+       with FileReaderParser
+  inline def readAsArrayBuffer: readAsArrayBuffer = "readAsArrayBuffer".asInstanceOf[readAsArrayBuffer]
+  
+  @js.native
+  sealed trait readAsBinaryString
+    extends StObject
+       with FileReaderParser
+  inline def readAsBinaryString: readAsBinaryString = "readAsBinaryString".asInstanceOf[readAsBinaryString]
+  
+  @js.native
+  sealed trait readAsDataURL
+    extends StObject
+       with FileReaderParser
+  inline def readAsDataURL: readAsDataURL = "readAsDataURL".asInstanceOf[readAsDataURL]
+  
+  @js.native
+  sealed trait readAsText
+    extends StObject
+       with FileReaderParser
+  inline def readAsText: readAsText = "readAsText".asInstanceOf[readAsText]
+  
+  @js.native
+  sealed trait recommended
+    extends StObject
+       with _ChangeValidationBehavior
+  inline def recommended: recommended = "recommended".asInstanceOf[recommended]
   
   @js.native
   sealed trait removals extends StObject
@@ -340,16 +430,14 @@ object reactMdFormStrings {
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait search extends StObject
+  sealed trait search
+    extends StObject
+       with SupportedInputTypes
   inline def search: search = "search".asInstanceOf[search]
   
   @js.native
   sealed trait send extends StObject
   inline def send: send = "send".asInstanceOf[send]
-  
-  @js.native
-  sealed trait setValue extends StObject
-  inline def setValue: setValue = "setValue".asInstanceOf[setValue]
   
   @js.native
   sealed trait span extends StObject
@@ -364,8 +452,14 @@ object reactMdFormStrings {
   inline def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait stop extends StObject
-  inline def stop: stop = "stop".asInstanceOf[stop]
+  sealed trait stepMismatch
+    extends StObject
+       with _ChangeValidationBehavior
+  inline def stepMismatch: stepMismatch = "stepMismatch".asInstanceOf[stepMismatch]
+  
+  @js.native
+  sealed trait switch extends StObject
+  inline def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
   sealed trait tel
@@ -394,9 +488,25 @@ object reactMdFormStrings {
   inline def time: time = "time".asInstanceOf[time]
   
   @js.native
+  sealed trait tooLong
+    extends StObject
+       with _ChangeValidationBehavior
+  inline def tooLong: tooLong = "tooLong".asInstanceOf[tooLong]
+  
+  @js.native
+  sealed trait tooShort
+    extends StObject
+       with _ChangeValidationBehavior
+  inline def tooShort: tooShort = "tooShort".asInstanceOf[tooShort]
+  
+  @js.native
+  sealed trait total extends StObject
+  inline def total: total = "total".asInstanceOf[total]
+  
+  @js.native
   sealed trait touch
     extends StObject
-       with _SliderDraggingType
+       with _SliderDraggingBy
   inline def touch: touch = "touch".asInstanceOf[touch]
   
   @js.native
@@ -416,16 +526,44 @@ object reactMdFormStrings {
   inline def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
+  sealed trait typeMismatch
+    extends StObject
+       with _ChangeValidationBehavior
+  inline def typeMismatch: typeMismatch = "typeMismatch".asInstanceOf[typeMismatch]
+  
+  @js.native
   sealed trait underline
     extends StObject
        with FormTheme
   inline def underline: underline = "underline".asInstanceOf[underline]
   
   @js.native
+  sealed trait uploading
+    extends StObject
+       with FileUploadStatus
+  inline def uploading: uploading = "uploading".asInstanceOf[uploading]
+  
+  @js.native
   sealed trait url
     extends StObject
        with SupportedInputTypes
   inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
+  
+  @js.native
+  sealed trait valid
+    extends StObject
+       with _ChangeValidationBehavior
+  inline def valid: valid = "valid".asInstanceOf[valid]
+  
+  @js.native
+  sealed trait valueMissing
+    extends StObject
+       with _ChangeValidationBehavior
+  inline def valueMissing: valueMissing = "valueMissing".asInstanceOf[valueMissing]
   
   @js.native
   sealed trait vertical

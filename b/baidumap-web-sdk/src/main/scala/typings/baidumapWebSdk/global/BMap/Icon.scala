@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.Icon")
 @js.native
-class Icon protected ()
+open class Icon protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.Icon {
   def this(url: String, size: typings.baidumapWebSdk.BMap.Size) = this()

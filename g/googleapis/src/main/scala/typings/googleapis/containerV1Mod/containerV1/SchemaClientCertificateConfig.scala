@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Configuration for client certificates on the cluster.
-  */
 trait SchemaClientCertificateConfig extends StObject {
   
   /**
     * Issue a client certificate.
     */
-  var issueClientCertificate: js.UndefOr[Boolean] = js.undefined
+  var issueClientCertificate: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaClientCertificateConfig {
   
@@ -24,6 +21,8 @@ object SchemaClientCertificateConfig {
   extension [Self <: SchemaClientCertificateConfig](x: Self) {
     
     inline def setIssueClientCertificate(value: Boolean): Self = StObject.set(x, "issueClientCertificate", value.asInstanceOf[js.Any])
+    
+    inline def setIssueClientCertificateNull: Self = StObject.set(x, "issueClientCertificate", null)
     
     inline def setIssueClientCertificateUndefined: Self = StObject.set(x, "issueClientCertificate", js.undefined)
   }

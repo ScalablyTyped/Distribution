@@ -14,23 +14,17 @@ object dispatchMod {
   val ^ : js.Any = js.native
   
   inline def dispatch(origin: String, event: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def dispatch(origin: String, event: String, data: Unit, reply: Unit, e: MessageEvent[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], reply.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dispatch(origin: String, event: String, data: Unit, reply: Unit, e: MessageEvent[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], reply.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def dispatch(origin: String, event: String, data: Unit, reply: FramebusSubscribeHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], reply.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def dispatch(
-    origin: String,
-    event: String,
-    data: Unit,
-    reply: FramebusSubscribeHandler,
-    e: MessageEvent[js.Any]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], reply.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dispatch(origin: String, event: String, data: Unit, reply: FramebusSubscribeHandler, e: MessageEvent[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], reply.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def dispatch(origin: String, event: String, data: FramebusSubscriberArg): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def dispatch(origin: String, event: String, data: FramebusSubscriberArg, reply: Unit, e: MessageEvent[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], reply.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dispatch(origin: String, event: String, data: FramebusSubscriberArg, reply: Unit, e: MessageEvent[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], reply.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def dispatch(origin: String, event: String, data: FramebusSubscriberArg, reply: FramebusSubscribeHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], reply.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def dispatch(
     origin: String,
     event: String,
     data: FramebusSubscriberArg,
     reply: FramebusSubscribeHandler,
-    e: MessageEvent[js.Any]
+    e: MessageEvent[Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], reply.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

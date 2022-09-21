@@ -1,0 +1,12 @@
+organization := "org.scalablytyped"
+name := "stylable__code-formatter"
+version := "5.2.1-1a9c31"
+scalaVersion := "3.1.2"
+enablePlugins(ScalaJSPlugin)
+libraryDependencies ++= Seq(
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "js-beautify" % "1.13-dt-20211202Z-a06fc0",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
+publishArtifact in packageDoc := false
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

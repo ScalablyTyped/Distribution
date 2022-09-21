@@ -9,8 +9,6 @@ trait AuditConfig extends StObject {
   /** The configuration for logging of each type of permission. */
   var auditLogConfigs: js.UndefOr[js.Array[AuditLogConfig]] = js.undefined
   
-  var exemptedMembers: js.UndefOr[js.Array[String]] = js.undefined
-  
   /**
     * Specifies a service that will be enabled for audit logging. For example, `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a special value that covers all
     * services.
@@ -30,13 +28,7 @@ object AuditConfig {
     
     inline def setAuditLogConfigsUndefined: Self = StObject.set(x, "auditLogConfigs", js.undefined)
     
-    inline def setAuditLogConfigsVarargs(value: AuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value :_*))
-    
-    inline def setExemptedMembers(value: js.Array[String]): Self = StObject.set(x, "exemptedMembers", value.asInstanceOf[js.Any])
-    
-    inline def setExemptedMembersUndefined: Self = StObject.set(x, "exemptedMembers", js.undefined)
-    
-    inline def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value :_*))
+    inline def setAuditLogConfigsVarargs(value: AuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value*))
     
     inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     

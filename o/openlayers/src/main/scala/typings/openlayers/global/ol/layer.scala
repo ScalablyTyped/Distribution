@@ -27,7 +27,7 @@ object layer {
     */
   @JSGlobal("ol.layer.Base")
   @js.native
-  class Base protected ()
+  open class Base protected ()
     extends typings.openlayers.mod.layer.Base {
     /**
       * @classdesc
@@ -63,7 +63,7 @@ object layer {
     * @param opt_options Layer options.
     * @api stable
     */
-  class Group ()
+  open class Group ()
     extends typings.openlayers.mod.layer.Group {
     def this(opt_options: GroupOptions) = this()
   }
@@ -92,7 +92,7 @@ object layer {
     * @param opt_options Options.
     * @api
     */
-  class Heatmap ()
+  open class Heatmap ()
     extends typings.openlayers.mod.layer.Heatmap {
     def this(opt_options: HeatmapOptions) = this()
   }
@@ -123,7 +123,7 @@ object layer {
     * @param opt_options Layer options.
     * @api stable
     */
-  class Image ()
+  open class Image ()
     extends typings.openlayers.mod.layer.Image {
     def this(opt_options: ImageOptions) = this()
   }
@@ -149,7 +149,7 @@ object layer {
     */
   @JSGlobal("ol.layer.Layer")
   @js.native
-  class Layer protected ()
+  open class Layer protected ()
     extends typings.openlayers.mod.layer.Layer {
     /**
       * @classdesc
@@ -199,7 +199,7 @@ object layer {
     * @param opt_options Tile layer options.
     * @api stable
     */
-  class Tile ()
+  open class Tile ()
     extends typings.openlayers.mod.layer.Tile {
     def this(opt_options: TileOptions) = this()
   }
@@ -228,7 +228,7 @@ object layer {
     * @param opt_options Options.
     * @api stable
     */
-  class Vector ()
+  open class Vector ()
     extends typings.openlayers.mod.layer.Vector {
     def this(opt_options: VectorOptions) = this()
   }
@@ -255,7 +255,7 @@ object layer {
     * @param opt_options Options.
     * @api
     */
-  class VectorTile ()
+  open class VectorTile ()
     extends typings.openlayers.mod.layer.VectorTile {
     def this(opt_options: VectorTileOptions) = this()
   }

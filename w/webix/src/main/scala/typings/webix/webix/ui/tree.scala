@@ -19,7 +19,7 @@ trait tree
   def $drag(source: HTMLElement, ev: Event): String = js.native
   
   @JSName("$dragHTML")
-  def $dragHTML(args: js.Any*): js.Any = js.native
+  def $dragHTML(args: Any*): Any = js.native
   @JSName("$dragHTML")
   var $dragHTML_Original: WebixCallback = js.native
   
@@ -27,7 +27,7 @@ trait tree
   def $dragIn(source: HTMLElement, target: HTMLElement, ev: Event): HTMLElement = js.native
   
   @JSName("$dragMark")
-  def $dragMark(context: js.Any, ev: Event): Boolean = js.native
+  def $dragMark(context: Any, ev: Event): Boolean = js.native
   
   @JSName("$dragOut")
   def $dragOut(source: HTMLElement, old_target: HTMLElement, new_target: HTMLElement, ev: Event): Unit = js.native
@@ -36,22 +36,22 @@ trait tree
   def $drop(source: HTMLElement, target: HTMLElement, ev: Event): Unit = js.native
   
   @JSName("$dropAllow")
-  def $dropAllow(args: js.Any*): js.Any = js.native
+  def $dropAllow(args: Any*): Any = js.native
   @JSName("$dropAllow")
   var $dropAllow_Original: WebixCallback = js.native
   
   @JSName("$dropHTML")
-  def $dropHTML(args: js.Any*): js.Any = js.native
+  def $dropHTML(args: Any*): Any = js.native
   @JSName("$dropHTML")
   var $dropHTML_Original: WebixCallback = js.native
   
   @JSName("$fixEditor")
-  def $fixEditor(args: js.Any*): js.Any = js.native
+  def $fixEditor(args: Any*): Any = js.native
   @JSName("$fixEditor")
   var $fixEditor_Original: WebixCallback = js.native
   
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
   
   @JSName("$tooltipIn")
   def $tooltipIn(node: HTMLElement): HTMLElement = js.native
@@ -62,10 +62,10 @@ trait tree
   @JSName("$tooltipOut")
   def $tooltipOut(): Unit = js.native
   
-  def add(obj: js.Any): String = js.native
-  def add(obj: js.Any, index: Double): String = js.native
-  def add(obj: js.Any, index: Double, parentId: String): String = js.native
-  def add(obj: js.Any, index: Unit, parentId: String): String = js.native
+  def add(obj: Any): String = js.native
+  def add(obj: Any, index: Double): String = js.native
+  def add(obj: Any, index: Double, parentId: String): String = js.native
+  def add(obj: Any, index: Unit, parentId: String): String = js.native
   
   def addCss(id: String, css: String): Unit = js.native
   def addCss(id: String, css: String, silent: Boolean): Unit = js.native
@@ -77,7 +77,7 @@ trait tree
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   def checkAll(): Unit = js.native
   def checkAll(id: String): Unit = js.native
@@ -102,17 +102,17 @@ trait tree
   var config_tree: treeConfig = js.native
   
   def copy(sid: String, tindex: Double): Double = js.native
-  def copy(sid: String, tindex: Double, tobj: Unit, details: js.Any): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: Unit, details: Any): Double = js.native
   def copy(sid: String, tindex: Double, tobj: baseview): Double = js.native
-  def copy(sid: String, tindex: Double, tobj: baseview, details: js.Any): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: baseview, details: Any): Double = js.native
   def copy(sid: Double, tindex: Double): Double = js.native
-  def copy(sid: Double, tindex: Double, tobj: Unit, details: js.Any): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: Unit, details: Any): Double = js.native
   def copy(sid: Double, tindex: Double, tobj: baseview): Double = js.native
-  def copy(sid: Double, tindex: Double, tobj: baseview, details: js.Any): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: baseview, details: Any): Double = js.native
   
   def count(): Double = js.native
   
-  def customize(obj: js.Any): Unit = js.native
+  def customize(obj: Any): Unit = js.native
   
   var data: DataStore = js.native
   
@@ -134,8 +134,8 @@ trait tree
   def filter(text: WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: WebixTemplate, value: Unit, preserve: Boolean): Unit = js.native
   
-  def find(criterion: WebixCallback): js.Any = js.native
-  def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
+  def find(criterion: WebixCallback): Any = js.native
+  def find(criterion: WebixCallback, first: Boolean): Any = js.native
   
   def getBranchIndex(id: String): Double = js.native
   def getBranchIndex(id: String, parent: String): Double = js.native
@@ -144,7 +144,7 @@ trait tree
   def getBranchIndex(id: Double, parent: String): Double = js.native
   def getBranchIndex(id: Double, parent: Double): Double = js.native
   
-  def getChecked(): js.Array[js.Any] = js.native
+  def getChecked(): js.Array[Any] = js.native
   
   def getFirstChildId(id: String): String = js.native
   def getFirstChildId(id: Double): String = js.native
@@ -157,8 +157,8 @@ trait tree
   def getIndexById(id: String): Double = js.native
   def getIndexById(id: Double): Double = js.native
   
-  def getItem(id: String): js.Any = js.native
-  def getItem(id: Double): js.Any = js.native
+  def getItem(id: String): Any = js.native
+  def getItem(id: Double): Any = js.native
   
   def getItemNode(id: String): HTMLElement = js.native
   def getItemNode(id: Double): HTMLElement = js.native
@@ -171,7 +171,7 @@ trait tree
   def getNextSiblingId(id: String): String | Double = js.native
   def getNextSiblingId(id: Double): String | Double = js.native
   
-  def getOpenItems(): js.Array[js.Any] = js.native
+  def getOpenItems(): js.Array[Any] = js.native
   
   def getParentId(id: String): String | Double = js.native
   def getParentId(id: Double): String | Double = js.native
@@ -182,17 +182,17 @@ trait tree
   def getPrevSiblingId(id: String): String | Double = js.native
   def getPrevSiblingId(id: Double): String | Double = js.native
   
-  def getScrollState(): js.Any = js.native
+  def getScrollState(): Any = js.native
   
-  def getSelectedId(as_array: Boolean): String | js.Array[js.Any] = js.native
+  def getSelectedId(as_array: Boolean): String | js.Array[Any] = js.native
   
-  def getSelectedItem(as_array: Boolean): js.Any = js.native
+  def getSelectedItem(as_array: Boolean): Any = js.native
   
-  def getState(): js.Any = js.native
+  def getState(): Any = js.native
   
-  def group(config: js.Any): Unit = js.native
-  def group(config: js.Any, target: String): Unit = js.native
-  def group(config: js.Any, target: Double): Unit = js.native
+  def group(config: Any): Unit = js.native
+  def group(config: Any, target: String): Unit = js.native
+  def group(config: Any, target: Double): Unit = js.native
   
   def hasCss(id: String, css: String): Boolean = js.native
   def hasCss(id: Double, css: String): Boolean = js.native
@@ -211,38 +211,38 @@ trait tree
   def isSelected(id: String): Boolean = js.native
   def isSelected(id: Double): Boolean = js.native
   
-  def load(url: String): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: String): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def load(url: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
   
-  def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[js.Any] = js.native
-  def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[js.Any] = js.native
+  def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[Any] = js.native
+  def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[Any] = js.native
   
-  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[js.Any] = js.native
+  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[Any] = js.native
   
   def locate(e: Event): String | Double = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
   def move(sid: String, tindex: Double): String = js.native
-  def move(sid: String, tindex: Double, tobj: js.Any): String = js.native
-  def move(sid: String, tindex: Double, tobj: js.Any, details: js.Any): String = js.native
-  def move(sid: String, tindex: Double, tobj: Unit, details: js.Any): String = js.native
+  def move(sid: String, tindex: Double, tobj: Any): String = js.native
+  def move(sid: String, tindex: Double, tobj: Any, details: Any): String = js.native
+  def move(sid: String, tindex: Double, tobj: Unit, details: Any): String = js.native
   
   def moveSelection(direction: String): Unit = js.native
   
-  def on_click(args: js.Any*): js.Any = js.native
+  def on_click(args: Any*): Any = js.native
   @JSName("on_click")
   var on_click_Original: WebixCallback = js.native
   
-  var on_context: StringDictionary[js.Any] = js.native
+  var on_context: StringDictionary[Any] = js.native
   
-  def on_dblclick(args: js.Any*): js.Any = js.native
+  def on_dblclick(args: Any*): Any = js.native
   @JSName("on_dblclick")
   var on_dblclick_Original: WebixCallback = js.native
   
-  def on_mouse_move(args: js.Any*): js.Any = js.native
+  def on_mouse_move(args: Any*): Any = js.native
   @JSName("on_mouse_move")
   var on_mouse_move_Original: WebixCallback = js.native
   
@@ -253,14 +253,14 @@ trait tree
   
   def openAll(): Unit = js.native
   
-  def parse(data: js.Any, `type`: String): Unit = js.native
+  def parse(data: Any, `type`: String): Unit = js.native
   
   def refresh(): Unit = js.native
   def refresh(id: String): Unit = js.native
   def refresh(id: Double): Unit = js.native
   
   def remove(id: String): Unit = js.native
-  def remove(id: js.Array[js.Any]): Unit = js.native
+  def remove(id: js.Array[Any]): Unit = js.native
   def remove(id: Double): Unit = js.native
   
   def removeCss(id: String, css: String): Unit = js.native
@@ -268,23 +268,23 @@ trait tree
   def removeCss(id: Double, css: String): Unit = js.native
   def removeCss(id: Double, css: String, silent: Boolean): Unit = js.native
   
-  def render(id: String, data: js.Any, `type`: String): Unit = js.native
-  def render(id: Double, data: js.Any, `type`: String): Unit = js.native
+  def render(id: String, data: Any, `type`: String): Unit = js.native
+  def render(id: Double, data: Any, `type`: String): Unit = js.native
   
   def scrollTo(x: Double, y: Double): Unit = js.native
   
   def select(id: String, preserve: Boolean): Unit = js.native
-  def select(id: js.Array[js.Any], preserve: Boolean): Unit = js.native
+  def select(id: js.Array[Any], preserve: Boolean): Unit = js.native
   
   def selectAll(): Unit = js.native
   def selectAll(from: String): Unit = js.native
   def selectAll(from: String, to: String): Unit = js.native
   def selectAll(from: Unit, to: String): Unit = js.native
   
-  def serialize(rootId: String, all: Boolean): js.Array[js.Any] = js.native
-  def serialize(rootId: Double, all: Boolean): js.Array[js.Any] = js.native
+  def serialize(rootId: String, all: Boolean): js.Array[Any] = js.native
+  def serialize(rootId: Double, all: Boolean): js.Array[Any] = js.native
   
-  def setState(state: js.Any): Unit = js.native
+  def setState(state: Any): Unit = js.native
   
   def showItem(id: String): Unit = js.native
   def showItem(id: Double): Unit = js.native
@@ -294,11 +294,11 @@ trait tree
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sort(by: String, dir: Unit, as: String): Unit = js.native
   
-  def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
   
-  var `type`: StringDictionary[js.Any] = js.native
+  var `type`: StringDictionary[Any] = js.native
   
-  var types: StringDictionary[js.Any] = js.native
+  var types: StringDictionary[Any] = js.native
   
   def unblockEvent(): Unit = js.native
   
@@ -315,13 +315,13 @@ trait tree
   
   def unselectAll(): Unit = js.native
   
-  def updateItem(id: String, data: js.Any): Unit = js.native
-  def updateItem(id: Double, data: js.Any): Unit = js.native
+  def updateItem(id: String, data: Any): Unit = js.native
+  def updateItem(id: Double, data: Any): Unit = js.native
   
   def validate(): Boolean = js.native
   def validate(id: String): Boolean = js.native
   
-  var waitData: js.Promise[js.Any] = js.native
+  var waitData: js.Promise[Any] = js.native
   
-  def waitSave(handler: WebixCallback): js.Promise[js.Any] = js.native
+  def waitSave(handler: WebixCallback): js.Promise[Any] = js.native
 }

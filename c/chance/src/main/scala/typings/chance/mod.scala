@@ -12,11 +12,11 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("chance", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with typings.chance.Chance.Chance {
-    def this(generator: js.Function0[js.Any]) = this()
-    def this(seed: Seed) = this()
+    def this(generator: js.Function0[Any]) = this()
+    def this(seed: Seed*) = this()
     
     /* CompleteClass */
     var seed: Seed = js.native
@@ -28,11 +28,11 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("chance", "Chance")
   @js.native
-  class Chance ()
+  open class Chance ()
     extends StObject
        with typings.chance.Chance.Chance {
-    def this(generator: js.Function0[js.Any]) = this()
-    def this(seed: Seed) = this()
+    def this(generator: js.Function0[Any]) = this()
+    def this(seed: Seed*) = this()
     
     /* CompleteClass */
     var seed: Seed = js.native
@@ -44,8 +44,8 @@ object mod extends Shortcut {
        with ChanceStatic {
     
     def Chance(): typings.chance.Chance.Chance = js.native
-    def Chance(generator: js.Function0[js.Any]): typings.chance.Chance.Chance = js.native
-    def Chance(seed: Seed): typings.chance.Chance.Chance = js.native
+    def Chance(generator: js.Function0[Any]): typings.chance.Chance.Chance = js.native
+    def Chance(seed: Seed*): typings.chance.Chance.Chance = js.native
     @JSName("Chance")
     var Chance_Original: ExportedChance = js.native
   }

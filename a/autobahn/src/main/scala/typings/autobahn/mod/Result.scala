@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("autobahn", "Result")
 @js.native
-class Result ()
+open class Result ()
   extends StObject
      with IResult {
-  def this(args: js.Array[js.Any]) = this()
-  def this(args: js.Array[js.Any], kwargs: js.Any) = this()
-  def this(args: Unit, kwargs: js.Any) = this()
+  def this(args: js.Array[Any]) = this()
+  def this(args: js.Array[Any], kwargs: Any) = this()
+  def this(args: Unit, kwargs: Any) = this()
   
   /* CompleteClass */
-  var args: js.Array[js.Any] = js.native
+  var args: js.Array[Any] = js.native
   
   /* CompleteClass */
-  var kwargs: js.Any = js.native
+  var kwargs: Any = js.native
 }

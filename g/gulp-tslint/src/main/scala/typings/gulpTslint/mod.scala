@@ -1,8 +1,7 @@
 package typings.gulpTslint
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.Buffer
-import typings.node.NodeJS.ReadWriteStream
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object mod extends Shortcut {
   
   trait PluginOptions extends StObject {
     
-    var configuration: js.UndefOr[js.Any] = js.undefined
+    var configuration: js.UndefOr[Any] = js.undefined
     
     var fix: js.UndefOr[Boolean] = js.undefined
     
@@ -29,11 +28,11 @@ object mod extends Shortcut {
     
     var formattersDirectory: js.UndefOr[String] = js.undefined
     
-    var program: js.UndefOr[js.Any] = js.undefined
+    var program: js.UndefOr[Any] = js.undefined
     
     var rulesDirectory: js.UndefOr[String] = js.undefined
     
-    var tslint: js.UndefOr[js.Any] = js.undefined
+    var tslint: js.UndefOr[Any] = js.undefined
   }
   object PluginOptions {
     
@@ -44,7 +43,7 @@ object mod extends Shortcut {
     
     extension [Self <: PluginOptions](x: Self) {
       
-      inline def setConfiguration(value: js.Any): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+      inline def setConfiguration(value: Any): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
       inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
       
@@ -60,7 +59,7 @@ object mod extends Shortcut {
       
       inline def setFormattersDirectoryUndefined: Self = StObject.set(x, "formattersDirectory", js.undefined)
       
-      inline def setProgram(value: js.Any): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: Any): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
       inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
       
@@ -68,7 +67,7 @@ object mod extends Shortcut {
       
       inline def setRulesDirectoryUndefined: Self = StObject.set(x, "rulesDirectory", js.undefined)
       
-      inline def setTslint(value: js.Any): Self = StObject.set(x, "tslint", value.asInstanceOf[js.Any])
+      inline def setTslint(value: Any): Self = StObject.set(x, "tslint", value.asInstanceOf[js.Any])
       
       inline def setTslintUndefined: Self = StObject.set(x, "tslint", js.undefined)
     }
@@ -113,7 +112,7 @@ object mod extends Shortcut {
   
   trait TslintFile extends StObject {
     
-    var contents: Buffer | js.Any
+    var contents: Buffer | Any
     
     def isNull(): Boolean
     
@@ -123,17 +122,17 @@ object mod extends Shortcut {
     
     var relative: String
     
-    var tslint: js.Any
+    var tslint: Any
   }
   object TslintFile {
     
     inline def apply(
-      contents: Buffer | js.Any,
+      contents: Buffer | Any,
       isNull: () => Boolean,
       isStream: () => Boolean,
       path: String,
       relative: String,
-      tslint: js.Any
+      tslint: Any
     ): TslintFile = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], isNull = js.Any.fromFunction0(isNull), isStream = js.Any.fromFunction0(isStream), path = path.asInstanceOf[js.Any], relative = relative.asInstanceOf[js.Any], tslint = tslint.asInstanceOf[js.Any])
       __obj.asInstanceOf[TslintFile]
@@ -141,7 +140,7 @@ object mod extends Shortcut {
     
     extension [Self <: TslintFile](x: Self) {
       
-      inline def setContents(value: Buffer | js.Any): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Buffer | Any): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       inline def setIsNull(value: () => Boolean): Self = StObject.set(x, "isNull", js.Any.fromFunction0(value))
       
@@ -151,20 +150,20 @@ object mod extends Shortcut {
       
       inline def setRelative(value: String): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
-      inline def setTslint(value: js.Any): Self = StObject.set(x, "tslint", value.asInstanceOf[js.Any])
+      inline def setTslint(value: Any): Self = StObject.set(x, "tslint", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
   trait TslintPlugin extends StObject {
     
-    def apply(): ReadWriteStream = js.native
-    def apply(pluginOptions: PluginOptions): ReadWriteStream = js.native
+    def apply(): Any = js.native
+    def apply(pluginOptions: PluginOptions): Any = js.native
     
     var pluginOptions: PluginOptions = js.native
     
-    def report(): ReadWriteStream = js.native
-    def report(options: ReportOptions): ReadWriteStream = js.native
+    def report(): Any = js.native
+    def report(options: ReportOptions): Any = js.native
   }
   
   type _To = TslintPlugin

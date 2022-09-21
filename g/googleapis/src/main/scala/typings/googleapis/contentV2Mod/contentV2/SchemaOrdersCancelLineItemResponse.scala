@@ -7,15 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaOrdersCancelLineItemResponse extends StObject {
   
   /**
-    * The status of the execution.
+    * The status of the execution. Acceptable values are: - "`duplicate`" - "`executed`"
     */
-  var executionStatus: js.UndefOr[String] = js.undefined
+  var executionStatus: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;content#ordersCancelLineItemResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "content#ordersCancelLineItemResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrdersCancelLineItemResponse {
   
@@ -28,9 +27,13 @@ object SchemaOrdersCancelLineItemResponse {
     
     inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
     
+    inline def setExecutionStatusNull: Self = StObject.set(x, "executionStatus", null)
+    
     inline def setExecutionStatusUndefined: Self = StObject.set(x, "executionStatus", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

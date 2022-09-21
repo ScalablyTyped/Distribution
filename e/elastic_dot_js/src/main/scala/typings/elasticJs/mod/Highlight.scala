@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "Highlight")
 @js.native
-class Highlight protected () extends StObject {
+open class Highlight protected () extends StObject {
   /*
     Allows to highlight search results on one or more fields.
     */
@@ -133,7 +133,7 @@ class Highlight protected () extends StObject {
     Retrieves the internal script object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /*
     Sets the highligher type.  You can apply the option

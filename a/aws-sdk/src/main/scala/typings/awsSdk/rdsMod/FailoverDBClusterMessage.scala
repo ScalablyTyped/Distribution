@@ -12,7 +12,7 @@ trait FailoverDBClusterMessage extends StObject {
   var DBClusterIdentifier: String
   
   /**
-    * The name of the instance to promote to the primary instance. You must specify the instance identifier for an Aurora Replica in the DB cluster. For example, mydbcluster-replica1.
+    * The name of the DB instance to promote to the primary DB instance. Specify the DB instance identifier for an Aurora Replica or a Multi-AZ readable standby in the DB cluster, for example mydbcluster-replica1. This setting isn't supported for RDS for MySQL Multi-AZ DB clusters.
     */
   var TargetDBInstanceIdentifier: js.UndefOr[String] = js.undefined
 }

@@ -14,11 +14,11 @@ trait EnhancedCustomShapeAdjustmentValue extends StObject {
   var State: PropertyState
   
   /** the any can be of type long or double */
-  var Value: js.Any
+  var Value: Any
 }
 object EnhancedCustomShapeAdjustmentValue {
   
-  inline def apply(Name: String, State: PropertyState, Value: js.Any): EnhancedCustomShapeAdjustmentValue = {
+  inline def apply(Name: String, State: PropertyState, Value: Any): EnhancedCustomShapeAdjustmentValue = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnhancedCustomShapeAdjustmentValue]
   }
@@ -29,6 +29,6 @@ object EnhancedCustomShapeAdjustmentValue {
     
     inline def setState(value: PropertyState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

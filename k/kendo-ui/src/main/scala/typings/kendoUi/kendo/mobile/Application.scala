@@ -19,8 +19,8 @@ trait Application
   def hideLoading(): Unit = js.native
   
   def init(): Unit = js.native
-  def init(element: js.Any): Unit = js.native
-  def init(element: js.Any, options: ApplicationOptions): Unit = js.native
+  def init(element: Any): Unit = js.native
+  def init(element: Any, options: ApplicationOptions): Unit = js.native
   def init(element: Unit, options: ApplicationOptions): Unit = js.native
   
   def navigate(url: String): Unit = js.native
@@ -38,6 +38,8 @@ trait Application
   def scroller(): Scroller = js.native
   
   def showLoading(): Unit = js.native
+  
+  def skin(skin: String): String = js.native
   
   def view(): View = js.native
 }

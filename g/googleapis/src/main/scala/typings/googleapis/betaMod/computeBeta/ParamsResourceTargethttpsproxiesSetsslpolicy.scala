@@ -1,8 +1,5 @@
 package typings.googleapis.betaMod.computeBeta
 
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceTargethttpsproxiesSetsslpolicy
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Project ID for this request.
@@ -27,22 +19,12 @@ trait ParamsResourceTargethttpsproxiesSetsslpolicy
   var requestBody: js.UndefOr[SchemaSslPolicyReference] = js.undefined
   
   /**
-    * An optional request ID to identify requests. Specify a unique request ID
-    * so that if you must retry your request, the server will know to ignore
-    * the request if it has already been completed.  For example, consider a
-    * situation where you make an initial request and the request times out. If
-    * you make the request again with the same request ID, the server can check
-    * if original operation with the same request ID was received, and if so,
-    * will ignore the second request. This prevents clients from accidentally
-    * creating duplicate commitments.  The request ID must be a valid UUID with
-    * the exception that zero UUID is not supported
-    * (00000000-0000-0000-0000-000000000000).
+    * An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
     */
   var requestId: js.UndefOr[String] = js.undefined
   
   /**
-    * Name of the TargetHttpsProxy resource whose SSL policy is to be set. The
-    * name must be 1-63 characters long, and comply with RFC1035.
+    * Name of the TargetHttpsProxy resource whose SSL policy is to be set. The name must be 1-63 characters long, and comply with RFC1035.
     */
   var targetHttpsProxy: js.UndefOr[String] = js.undefined
 }
@@ -54,10 +36,6 @@ object ParamsResourceTargethttpsproxiesSetsslpolicy {
   }
   
   extension [Self <: ParamsResourceTargethttpsproxiesSetsslpolicy](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     

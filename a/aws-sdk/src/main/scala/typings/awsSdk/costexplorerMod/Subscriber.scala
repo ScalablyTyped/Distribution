@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Subscriber extends StObject {
   
   /**
-    *  The email address or SNS Amazon Resource Name (ARN), depending on the Type. 
+    * The email address or SNS Amazon Resource Name (ARN). This depends on the Type. 
     */
   var Address: js.UndefOr[SubscriberAddress] = js.undefined
   
   /**
-    *  Indicates if the subscriber accepts the notifications. 
+    * Indicates if the subscriber accepts the notifications. 
     */
   var Status: js.UndefOr[SubscriberStatus] = js.undefined
   
   /**
-    *  The notification delivery channel. 
+    * The notification delivery channel. 
     */
   var Type: js.UndefOr[SubscriberType] = js.undefined
 }

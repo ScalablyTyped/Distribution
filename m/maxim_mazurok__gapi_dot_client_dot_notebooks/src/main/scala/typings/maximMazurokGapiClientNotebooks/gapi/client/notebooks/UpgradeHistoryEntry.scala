@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UpgradeHistoryEntry extends StObject {
   
+  /** Action. Rolloback or Upgrade. */
+  var action: js.UndefOr[String] = js.undefined
+  
   /** The container image before this instance upgrade. */
   var containerImage: js.UndefOr[String] = js.undefined
   
@@ -21,6 +24,12 @@ trait UpgradeHistoryEntry extends StObject {
   /** The state of this instance upgrade history entry. */
   var state: js.UndefOr[String] = js.undefined
   
+  /** Target VM Image. Format: ainotebooks-vm/project/image-name/name. */
+  var targetImage: js.UndefOr[String] = js.undefined
+  
+  /** Target VM Version, like m63. */
+  var targetVersion: js.UndefOr[String] = js.undefined
+  
   /** The version of the notebook instance before this upgrade. */
   var version: js.UndefOr[String] = js.undefined
   
@@ -35,6 +44,10 @@ object UpgradeHistoryEntry {
   }
   
   extension [Self <: UpgradeHistoryEntry](x: Self) {
+    
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     inline def setContainerImage(value: String): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
     
@@ -55,6 +68,14 @@ object UpgradeHistoryEntry {
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setTargetImage(value: String): Self = StObject.set(x, "targetImage", value.asInstanceOf[js.Any])
+    
+    inline def setTargetImageUndefined: Self = StObject.set(x, "targetImage", js.undefined)
+    
+    inline def setTargetVersion(value: String): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
+    
+    inline def setTargetVersionUndefined: Self = StObject.set(x, "targetVersion", js.undefined)
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,7 @@ trait ShapeDataSourceSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Callback function to call when data binding is complete.
@@ -20,7 +20,7 @@ trait ShapeDataSourceSettings
   /**
     * Object on which to invoke the callback function.
     */
-  var callee: js.UndefOr[js.Any] = js.undefined
+  var callee: js.UndefOr[Any] = js.undefined
   
   /**
     * The Uri of the .dbf portion of the Shapefile.
@@ -74,7 +74,7 @@ object ShapeDataSourceSettings {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    inline def setCallee(value: js.Any): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
+    inline def setCallee(value: Any): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
     inline def setCalleeUndefined: Self = StObject.set(x, "callee", js.undefined)
     

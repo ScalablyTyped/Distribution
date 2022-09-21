@@ -10,10 +10,10 @@ object voiceChatMod {
   
   @JSImport("material-ui/svg-icons/notification/voice-chat", JSImport.Default)
   @js.native
-  class default () extends NotificationVoiceChat
+  open class default () extends NotificationVoiceChat
   
   @JSImport("material-ui/svg-icons/notification/voice-chat", "NotificationVoiceChat")
   @js.native
-  class NotificationVoiceChat ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationVoiceChat ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

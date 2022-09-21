@@ -1,26 +1,28 @@
 package typings.nodeRedEditorClient.mod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.nodeRedEditorClient.anon.ReadonlyI18nTFunctionidst
+import typings.nodeRedEditorClient.nodeRedEditorClientBooleans.`false`
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type CommSubscriber = js.Function2[/* topic */ java.lang.String, /* data */ js.Any, scala.Unit]
+type CommSubscriber = js.Function2[/* topic */ String, /* data */ Any, Unit]
 
-type EditorClientModule = typings.nodeRedEditorClient.nodeRedEditorClientBooleans.`false`
-
-type HistoryEvent = typings.nodeRedEditorClient.anon.Callback & (typings.nodeRedEditorClient.anon.Events | typings.nodeRedEditorClient.anon.Changed | typings.nodeRedEditorClient.anon.Groups | typings.nodeRedEditorClient.anon.Changes | typings.nodeRedEditorClient.anon.AddToGroup | typings.nodeRedEditorClient.anon.CreatedLinks | typings.nodeRedEditorClient.anon.Links | typings.nodeRedEditorClient.anon.MovedNodes | typings.nodeRedEditorClient.anon.Order | typings.nodeRedEditorClient.anon.T | typings.nodeRedEditorClient.anon.GroupsT | typings.nodeRedEditorClient.anon.Nodes | typings.nodeRedEditorClient.anon.NodesT)
+type EditorClientModule = `false`
 
 type NodeCredentials[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof T ]: @node-red/editor-client.@node-red/editor-client.NodeCredential}
-  */ typings.nodeRedEditorClient.nodeRedEditorClientStrings.NodeCredentials & org.scalablytyped.runtime.TopLevel[js.Any]
+  */ typings.nodeRedEditorClient.nodeRedEditorClientStrings.NodeCredentials & TopLevel[Any]
 
-type NodeInstance[TProps /* <: typings.nodeRedEditorClient.mod.NodeProperties */] = TProps & typings.nodeRedEditorClient.anon._empty
+type NodeInstance[TProps /* <: NodeProperties */] = (Omit[TProps, NodeReservedProperties]) & ReadonlyI18nTFunctionidst
 
 /**
   * Properties definitions (`defaults` object)
   * Read more: https://nodered.org/docs/creating-nodes/properties
   */
-type NodePropertiesDef[TProps /* <: typings.nodeRedEditorClient.mod.NodeProperties */, TInstProps /* <: TProps */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof TProps ]: @node-red/editor-client.@node-red/editor-client.NodePropertyDef<TProps[K], TInstProps>}
-  */ typings.nodeRedEditorClient.nodeRedEditorClientStrings.NodePropertiesDef & org.scalablytyped.runtime.TopLevel[TProps]
+type NodePropertiesDef[TProps /* <: NodeProperties */, TInstProps /* <: TProps */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+{[ K in keyof TProps ]: K extends @node-red/editor-client.@node-red/editor-client.NodeReservedProperties? never : @node-red/editor-client.@node-red/editor-client.NodePropertyDef<TProps[K], TInstProps>}
+  */ typings.nodeRedEditorClient.nodeRedEditorClientStrings.NodePropertiesDef & TopLevel[TProps]

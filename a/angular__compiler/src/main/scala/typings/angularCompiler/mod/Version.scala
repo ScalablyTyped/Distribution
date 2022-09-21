@@ -6,7 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "Version")
 @js.native
-class Version protected ()
-  extends typings.angularCompiler.compilerMod.Version {
+open class Version protected () extends StObject {
   def this(full: String) = this()
+  
+  var full: String = js.native
+  
+  val major: String = js.native
+  
+  val minor: String = js.native
+  
+  val patch: String = js.native
 }

@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object instagramMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/Instagram", JSImport.Default)
   @js.native
-  val default: SFC[InstagramProps] = js.native
+  val default: FC[InstagramProps] = js.native
   
   trait InstagramProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object InstagramProps {
     
@@ -29,14 +29,14 @@ object instagramMod extends Shortcut {
     
     extension [Self <: InstagramProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[InstagramProps]
+  type _To = FC[InstagramProps]
   
   /* This means you don't have to write `default`, but can instead just say `instagramMod.foo` */
-  override def _to: SFC[InstagramProps] = default
+  override def _to: FC[InstagramProps] = default
 }

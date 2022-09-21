@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gestalt", "CompositeZIndex")
 @js.native
-class CompositeZIndex protected ()
+open class CompositeZIndex protected ()
   extends StObject
      with Indexable {
   def this(deps: js.Array[FixedZIndex | CompositeZIndex]) = this()

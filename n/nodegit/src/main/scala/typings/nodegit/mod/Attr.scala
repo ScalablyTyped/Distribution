@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Attr")
 @js.native
-class Attr ()
+open class Attr ()
   extends typings.nodegit.attrMod.Attr
 /* static members */
 object Attr {
@@ -43,7 +43,7 @@ object Attr {
     path: String,
     numAttr: Double,
     names: String
-  ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMany")(repo.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], path.asInstanceOf[js.Any], numAttr.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMany")(repo.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], path.asInstanceOf[js.Any], numAttr.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   /**
     * @param attr - The attribute

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GridSearch extends StObject {
   
-  var fields: js.UndefOr[js.Any] = js.undefined
+  var fields: js.UndefOr[js.Array[GridSearchField]] = js.undefined
 }
 object GridSearch {
   
@@ -17,8 +17,10 @@ object GridSearch {
   
   extension [Self <: GridSearch](x: Self) {
     
-    inline def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[GridSearchField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: GridSearchField*): Self = StObject.set(x, "fields", js.Array(value*))
   }
 }

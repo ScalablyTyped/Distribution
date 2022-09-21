@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@umijs/ssr-darkreader" : "4.9.45"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@umijs/ssr-darkreader" : "4.9.45"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,11 +1,8 @@
 package typings.dashjs.mod
 
-import typings.dashjs.dashjsStrings.audio
 import typings.dashjs.dashjsStrings.bufferLoaded
 import typings.dashjs.dashjsStrings.bufferStalled
 import typings.dashjs.dashjsStrings.bufferStateChanged
-import typings.dashjs.dashjsStrings.fragmentedText
-import typings.dashjs.dashjsStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +11,7 @@ trait BufferStateChangedEvent
   extends StObject
      with Event {
   
-  var mediaType: video | audio | fragmentedText
+  var mediaType: MediaType
   
   var sender: js.Object
   
@@ -28,7 +25,7 @@ trait BufferStateChangedEvent
 object BufferStateChangedEvent {
   
   inline def apply(
-    mediaType: video | audio | fragmentedText,
+    mediaType: MediaType,
     sender: js.Object,
     state: bufferStalled | bufferLoaded,
     streamInfo: StreamInfo
@@ -40,7 +37,7 @@ object BufferStateChangedEvent {
   
   extension [Self <: BufferStateChangedEvent](x: Self) {
     
-    inline def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     inline def setSender(value: js.Object): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     

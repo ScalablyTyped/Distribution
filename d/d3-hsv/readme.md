@@ -10,10 +10,10 @@ The HSV (Hue, Saturation, Value) color space.
 | ------------------ | :-------------: |
 | Full name          | d3-hsv |
 | Keywords           | d3, d3-module, color, hsv |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 124239 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7009.0 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-hsv/)

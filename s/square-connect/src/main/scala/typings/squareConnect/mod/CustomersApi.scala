@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new CustomersApi.
   * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
   */
-class CustomersApi () extends StObject {
+open class CustomersApi () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   /**
@@ -30,7 +30,7 @@ class CustomersApi () extends StObject {
     * When two profiles are merged into a single profile, that profile is assigned a new `customer_id`.
     * You must use the new `customer_id` to delete merged profiles.
     */
-  def deleteCustomer(args: js.Any*): js.Promise[DeleteCustomerResponse] = js.native
+  def deleteCustomer(args: Any*): js.Promise[DeleteCustomerResponse] = js.native
   
   /**
     * Removes a card on file from a customer.
@@ -40,7 +40,7 @@ class CustomersApi () extends StObject {
   /**
     * Lists a business's customers.
     */
-  def listCustomers(args: js.Any*): js.Promise[ListCustomersResponse] = js.native
+  def listCustomers(args: Any*): js.Promise[ListCustomersResponse] = js.native
   
   /**
     * Returns details for a single customer.
@@ -52,7 +52,7 @@ class CustomersApi () extends StObject {
     * Calling SearchCustomers without an explicit query parameter returns all customer profiles ordered alphabetically based
     * on `given_name` and `family_name`.
     */
-  def searchCustomers(args: js.Any*): js.Promise[SearchCustomersResponse] = js.native
+  def searchCustomers(args: Any*): js.Promise[SearchCustomersResponse] = js.native
   
   /**
     * Updates the details of an existing customer. When two profiles are merged into a single profile, that profile
@@ -61,5 +61,5 @@ class CustomersApi () extends StObject {
     * card on file with the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint, then create a new one with
     * the [CreateCustomerCard](#endpoint-createcustomercard) endpoint.
     */
-  def updateCustomer(args: js.Any*): js.Promise[UpdateCustomerResponse] = js.native
+  def updateCustomer(args: Any*): js.Promise[UpdateCustomerResponse] = js.native
 }

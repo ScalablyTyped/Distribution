@@ -5,7 +5,6 @@ import typings.awsSdk.redshiftMod.IntegerOptional
 import typings.awsSdk.redshiftMod.SnapshotSortingEntity
 import typings.awsSdk.redshiftMod.SnapshotSortingEntityList
 import typings.awsSdk.redshiftMod.String
-import typings.awsSdk.redshiftMod.TStamp
 import typings.awsSdk.redshiftMod.TagKeyList
 import typings.awsSdk.redshiftMod.TagValueList
 import typings.awsSdk.serviceMod.WaiterConfiguration
@@ -32,10 +31,10 @@ trait DescribeClusterSnapshotsM extends StObject {
   /**
     * A time value that requests only snapshots created at or before the specified time. The time value is specified in ISO 8601 format. For more information about ISO 8601, go to the ISO8601 Wikipedia page.  Example: 2012-07-16T18:00:00Z 
     */
-  var EndTime: js.UndefOr[TStamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * An optional parameter that specifies the starting point to return a set of response records. When the results of a DescribeClusterSnapshots request exceed the value specified in MaxRecords, AWS returns a value in the Marker field of the response. You can retrieve the next set of response records by providing the returned marker value in the Marker parameter and retrying the request. 
+    * An optional parameter that specifies the starting point to return a set of response records. When the results of a DescribeClusterSnapshots request exceed the value specified in MaxRecords, Amazon Web Services returns a value in the Marker field of the response. You can retrieve the next set of response records by providing the returned marker value in the Marker parameter and retrying the request. 
     */
   var Marker: js.UndefOr[String] = js.undefined
   
@@ -45,9 +44,14 @@ trait DescribeClusterSnapshotsM extends StObject {
   var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The AWS customer account used to create or copy the snapshot. Use this field to filter the results to snapshots owned by a particular account. To describe snapshots you own, either specify your AWS customer account, or do not specify the parameter.
+    * The Amazon Web Services account used to create or copy the snapshot. Use this field to filter the results to snapshots owned by a particular account. To describe snapshots you own, either specify your Amazon Web Services account, or do not specify the parameter.
     */
   var OwnerAccount: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the snapshot associated with the message to describe cluster snapshots.
+    */
+  var SnapshotArn: js.UndefOr[String] = js.undefined
   
   /**
     * The snapshot identifier of the snapshot about which to return information.
@@ -67,7 +71,7 @@ trait DescribeClusterSnapshotsM extends StObject {
   /**
     * A value that requests only snapshots created at or after the specified time. The time value is specified in ISO 8601 format. For more information about ISO 8601, go to the ISO8601 Wikipedia page.  Example: 2012-07-16T18:00:00Z 
     */
-  var StartTime: js.UndefOr[TStamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A tag key or keys for which you want to return all matching cluster snapshots that are associated with the specified key or keys. For example, suppose that you have snapshots that are tagged with keys called owner and environment. If you specify both of these tag keys in the request, Amazon Redshift returns a response with the snapshots that have either or both of these tag keys associated with them.
@@ -100,7 +104,7 @@ object DescribeClusterSnapshotsM {
     
     inline def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
-    inline def setEndTime(value: TStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -116,6 +120,10 @@ object DescribeClusterSnapshotsM {
     
     inline def setOwnerAccountUndefined: Self = StObject.set(x, "OwnerAccount", js.undefined)
     
+    inline def setSnapshotArn(value: String): Self = StObject.set(x, "SnapshotArn", value.asInstanceOf[js.Any])
+    
+    inline def setSnapshotArnUndefined: Self = StObject.set(x, "SnapshotArn", js.undefined)
+    
     inline def setSnapshotIdentifier(value: String): Self = StObject.set(x, "SnapshotIdentifier", value.asInstanceOf[js.Any])
     
     inline def setSnapshotIdentifierUndefined: Self = StObject.set(x, "SnapshotIdentifier", js.undefined)
@@ -128,9 +136,9 @@ object DescribeClusterSnapshotsM {
     
     inline def setSortingEntitiesUndefined: Self = StObject.set(x, "SortingEntities", js.undefined)
     
-    inline def setSortingEntitiesVarargs(value: SnapshotSortingEntity*): Self = StObject.set(x, "SortingEntities", js.Array(value :_*))
+    inline def setSortingEntitiesVarargs(value: SnapshotSortingEntity*): Self = StObject.set(x, "SortingEntities", js.Array(value*))
     
-    inline def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
@@ -138,12 +146,12 @@ object DescribeClusterSnapshotsM {
     
     inline def setTagKeysUndefined: Self = StObject.set(x, "TagKeys", js.undefined)
     
-    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value*))
     
     inline def setTagValues(value: TagValueList): Self = StObject.set(x, "TagValues", value.asInstanceOf[js.Any])
     
     inline def setTagValuesUndefined: Self = StObject.set(x, "TagValues", js.undefined)
     
-    inline def setTagValuesVarargs(value: String*): Self = StObject.set(x, "TagValues", js.Array(value :_*))
+    inline def setTagValuesVarargs(value: String*): Self = StObject.set(x, "TagValues", js.Array(value*))
   }
 }

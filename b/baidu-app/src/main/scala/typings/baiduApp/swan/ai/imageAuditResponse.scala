@@ -32,7 +32,7 @@ object imageAuditResponse {
     
     inline def setData(value: js.Array[imageAuditdata]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: imageAuditdata*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: imageAuditdata*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
   }

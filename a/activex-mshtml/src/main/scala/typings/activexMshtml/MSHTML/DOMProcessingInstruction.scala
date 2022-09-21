@@ -12,9 +12,9 @@ trait DOMProcessingInstruction extends StObject {
   
   def appendChild(newChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   
-  val attributes: js.Any = js.native
+  val attributes: Any = js.native
   
-  val childNodes: js.Any = js.native
+  val childNodes: Any = js.native
   
   def cloneNode(fDeep: Boolean): IHTMLDOMNode = js.native
   
@@ -29,32 +29,32 @@ trait DOMProcessingInstruction extends StObject {
   def ie9_appendChild(newChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   
   def ie9_insertBefore(newChild: IHTMLDOMNode): IHTMLDOMNode = js.native
-  def ie9_insertBefore(newChild: IHTMLDOMNode, refChild: js.Any): IHTMLDOMNode = js.native
+  def ie9_insertBefore(newChild: IHTMLDOMNode, refChild: Any): IHTMLDOMNode = js.native
   
   def ie9_removeChild(oldChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   
   def ie9_replaceChild(newChild: IHTMLDOMNode, oldChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   
   def insertBefore(newChild: IHTMLDOMNode): IHTMLDOMNode = js.native
-  def insertBefore(newChild: IHTMLDOMNode, refChild: js.Any): IHTMLDOMNode = js.native
+  def insertBefore(newChild: IHTMLDOMNode, refChild: Any): IHTMLDOMNode = js.native
   
-  def isDefaultNamespace(pvarNamespace: js.Any): Boolean = js.native
+  def isDefaultNamespace(pvarNamespace: Any): Boolean = js.native
   
   def isEqualNode(otherNode: IHTMLDOMNode3): Boolean = js.native
   
   def isSameNode(otherNode: IHTMLDOMNode3): Boolean = js.native
   
-  def isSupported(feature: String, version: js.Any): Boolean = js.native
+  def isSupported(feature: String, version: Any): Boolean = js.native
   
   val lastChild: IHTMLDOMNode = js.native
   
-  val localName: js.Any = js.native
+  val localName: Any = js.native
   
-  def lookupNamespaceURI(pvarPrefix: js.Any): js.Any = js.native
+  def lookupNamespaceURI(pvarPrefix: Any): Any = js.native
   
-  def lookupPrefix(pvarNamespaceURI: js.Any): js.Any = js.native
+  def lookupPrefix(pvarNamespaceURI: Any): Any = js.native
   
-  val namespaceURI: js.Any = js.native
+  val namespaceURI: Any = js.native
   
   val nextSibling: IHTMLDOMNode = js.native
   
@@ -62,13 +62,13 @@ trait DOMProcessingInstruction extends StObject {
   
   val nodeType: Double = js.native
   
-  var nodeValue: js.Any = js.native
+  var nodeValue: Any = js.native
   
-  val ownerDocument: js.Any = js.native
+  val ownerDocument: Any = js.native
   
   val parentNode: IHTMLDOMNode = js.native
   
-  var prefix: js.Any = js.native
+  var prefix: Any = js.native
   
   val previousSibling: IHTMLDOMNode = js.native
   
@@ -86,5 +86,5 @@ trait DOMProcessingInstruction extends StObject {
   
   val target: String = js.native
   
-  var textContent: js.Any = js.native
+  var textContent: Any = js.native
 }

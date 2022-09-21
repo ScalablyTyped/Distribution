@@ -31,6 +31,6 @@ object IdentitySelf {
     
     inline def setTenants(value: js.Array[TenantInfo]): Self = StObject.set(x, "tenants", value.asInstanceOf[js.Any])
     
-    inline def setTenantsVarargs(value: TenantInfo*): Self = StObject.set(x, "tenants", js.Array(value :_*))
+    inline def setTenantsVarargs(value: TenantInfo*): Self = StObject.set(x, "tenants", js.Array(value*))
   }
 }

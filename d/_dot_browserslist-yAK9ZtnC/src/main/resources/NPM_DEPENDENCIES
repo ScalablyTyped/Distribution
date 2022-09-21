@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".browserslist-yAK9ZtnC" : "4.20.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".browserslist-yAK9ZtnC" : "4.20.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

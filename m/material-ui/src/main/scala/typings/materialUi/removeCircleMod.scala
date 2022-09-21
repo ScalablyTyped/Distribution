@@ -10,10 +10,10 @@ object removeCircleMod {
   
   @JSImport("material-ui/svg-icons/content/remove-circle", JSImport.Default)
   @js.native
-  class default () extends ContentRemoveCircle
+  open class default () extends ContentRemoveCircle
   
   @JSImport("material-ui/svg-icons/content/remove-circle", "ContentRemoveCircle")
   @js.native
-  class ContentRemoveCircle ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentRemoveCircle ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

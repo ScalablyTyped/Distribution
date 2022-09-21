@@ -64,7 +64,7 @@ object Table {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setDefaultColumnIdStyle(value: String): Self = StObject.set(x, "defaultColumnIdStyle", value.asInstanceOf[js.Any])
     

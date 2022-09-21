@@ -57,7 +57,7 @@ trait ColumnChartBuilder extends StObject {
   
   def setLegendTextStyle(textStyle: TextStyle): ColumnChartBuilder = js.native
   
-  def setOption(option: String, value: js.Any): ColumnChartBuilder = js.native
+  def setOption(option: String, value: Any): ColumnChartBuilder = js.native
   
   def setRange(start: Double, end: Double): ColumnChartBuilder = js.native
   

@@ -5,8 +5,6 @@ import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.NORM
 import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.SYMLINK
 import typings.awsSdkClientCodecommitNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +28,7 @@ object typesPutFileInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -57,7 +55,7 @@ object typesPutFileInputMod {
     /**
       * <p>The content of the file, in binary object format. </p>
       */
-    var fileContent: ArrayBuffer | ArrayBufferView | String
+    var fileContent: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String
     
     /**
       * <p>The file mode permissions of the blob. Valid file mode permissions are listed below.</p>
@@ -88,7 +86,7 @@ object typesPutFileInputMod {
     
     inline def apply(
       branchName: String,
-      fileContent: ArrayBuffer | ArrayBufferView | String,
+      fileContent: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String,
       filePath: String,
       repositoryName: String
     ): PutFileInput = {
@@ -103,7 +101,7 @@ object typesPutFileInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -122,7 +120,7 @@ object typesPutFileInputMod {
       
       inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      inline def setFileContent(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
+      inline def setFileContent(value: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
       
       inline def setFileMode(value: EXECUTABLE | NORMAL | SYMLINK | String): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
       

@@ -10,12 +10,12 @@ object observerMapObserverMod {
   
   @JSImport("wonder-frp/dist/es2015/observer/MapObserver", "MapObserver")
   @js.native
-  class MapObserver protected () extends Observer {
+  open class MapObserver protected () extends Observer {
     def this(currentObserver: IObserver, selector: js.Function) = this()
     
-    /* private */ var _currentObserver: js.Any = js.native
+    /* private */ var _currentObserver: Any = js.native
     
-    /* private */ var _selector: js.Any = js.native
+    /* private */ var _selector: Any = js.native
   }
   /* static members */
   object MapObserver {

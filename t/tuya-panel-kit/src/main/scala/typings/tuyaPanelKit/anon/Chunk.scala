@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Chunk extends StObject {
   
-  def chunk(arr: js.Array[js.Any], chunkSize: Double, cache: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def chunk(arr: js.Array[Any], chunkSize: Double, cache: js.Array[Any]): js.Array[Any] = js.native
   
   def compareVersion(v1: String, v2: String): Double = js.native
   
-  def get(`object`: js.Object, pathString: String): js.Any = js.native
-  def get(`object`: js.Object, pathString: String, defaultValue: js.Any): js.Any = js.native
+  def get(`object`: js.Object, pathString: String): Any = js.native
+  def get(`object`: js.Object, pathString: String, defaultValue: Any): Any = js.native
   
-  def isArray(obj: js.Any): Boolean = js.native
+  def isArray(obj: Any): Boolean = js.native
   
-  def isBoolean(obj: js.Any): Boolean = js.native
+  def isBoolean(obj: Any): Boolean = js.native
   
-  def isDate(obj: js.Any): Boolean = js.native
+  def isDate(obj: Any): Boolean = js.native
   
-  def isNil(obj: js.Any): Boolean = js.native
+  def isNil(obj: Any): Boolean = js.native
   
-  def isNumerical(obj: js.Any): Boolean = js.native
+  def isNumerical(obj: Any): Boolean = js.native
   
-  def isObject(obj: js.Any): Boolean = js.native
+  def isObject(obj: Any): Boolean = js.native
   
-  def isRegExp(obj: js.Any): Boolean = js.native
+  def isRegExp(obj: Any): Boolean = js.native
   
-  def isUndefined(obj: js.Any): Boolean = js.native
+  def isUndefined(obj: Any): Boolean = js.native
   
   def omit(`object`: js.Object, keys: String): js.Object = js.native
   

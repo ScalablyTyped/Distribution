@@ -27,18 +27,18 @@ object CommandMetadata {
     
     inline def setExampleCommandsUndefined: Self = StObject.set(x, "exampleCommands", js.undefined)
     
-    inline def setExampleCommandsVarargs(value: String*): Self = StObject.set(x, "exampleCommands", js.Array(value :_*))
+    inline def setExampleCommandsVarargs(value: String*): Self = StObject.set(x, "exampleCommands", js.Array(value*))
     
     inline def setInputs(value: js.Array[I]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    inline def setInputsVarargs(value: I*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: I*): Self = StObject.set(x, "inputs", js.Array(value*))
     
     inline def setOptions(value: js.Array[O]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: O*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: O*): Self = StObject.set(x, "options", js.Array(value*))
   }
 }

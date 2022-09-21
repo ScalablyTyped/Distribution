@@ -11,9 +11,9 @@ Collect chunks / objects from a readable stream, write obejcts / chunks to a wri
 | Full name          | list-stream |
 | Keywords           | buffer, stream |
 | # releases         | 2 |
-| # dependents       | 20 |
-| # downloads        | 379836 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 30296.666666666668 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/rvagg/list-stream)

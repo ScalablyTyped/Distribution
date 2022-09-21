@@ -22,11 +22,11 @@ object sideNavHeaderMod extends Shortcut {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var renderIcon: js.Any
+    var renderIcon: Any
   }
   object SideNavHeaderProps {
     
-    inline def apply(renderIcon: js.Any): SideNavHeaderProps = {
+    inline def apply(renderIcon: Any): SideNavHeaderProps = {
       val __obj = js.Dynamic.literal(renderIcon = renderIcon.asInstanceOf[js.Any])
       __obj.asInstanceOf[SideNavHeaderProps]
     }
@@ -41,7 +41,7 @@ object sideNavHeaderMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setRenderIcon(value: js.Any): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
+      inline def setRenderIcon(value: Any): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
     }
   }
   

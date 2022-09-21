@@ -9,12 +9,12 @@ trait CalculatedLifecycle extends StObject {
   /**
     * A timestamp that specifies when to delete a recovery point.
     */
-  var DeleteAt: js.UndefOr[timestamp] = js.undefined
+  var DeleteAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A timestamp that specifies when to transition a recovery point to cold storage.
     */
-  var MoveToColdStorageAt: js.UndefOr[timestamp] = js.undefined
+  var MoveToColdStorageAt: js.UndefOr[js.Date] = js.undefined
 }
 object CalculatedLifecycle {
   
@@ -25,11 +25,11 @@ object CalculatedLifecycle {
   
   extension [Self <: CalculatedLifecycle](x: Self) {
     
-    inline def setDeleteAt(value: timestamp): Self = StObject.set(x, "DeleteAt", value.asInstanceOf[js.Any])
+    inline def setDeleteAt(value: js.Date): Self = StObject.set(x, "DeleteAt", value.asInstanceOf[js.Any])
     
     inline def setDeleteAtUndefined: Self = StObject.set(x, "DeleteAt", js.undefined)
     
-    inline def setMoveToColdStorageAt(value: timestamp): Self = StObject.set(x, "MoveToColdStorageAt", value.asInstanceOf[js.Any])
+    inline def setMoveToColdStorageAt(value: js.Date): Self = StObject.set(x, "MoveToColdStorageAt", value.asInstanceOf[js.Any])
     
     inline def setMoveToColdStorageAtUndefined: Self = StObject.set(x, "MoveToColdStorageAt", js.undefined)
   }

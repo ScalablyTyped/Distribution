@@ -10,10 +10,10 @@ trait WorkerMessageResponse extends StObject {
   var workerHealthReportResponse: js.UndefOr[WorkerHealthReportResponse] = js.undefined
   
   /** Service's response to reporting worker metrics (currently empty). */
-  var workerMetricsResponse: js.UndefOr[js.Any] = js.undefined
+  var workerMetricsResponse: js.UndefOr[Any] = js.undefined
   
   /** Service's response to shutdown notice (currently empty). */
-  var workerShutdownNoticeResponse: js.UndefOr[js.Any] = js.undefined
+  var workerShutdownNoticeResponse: js.UndefOr[Any] = js.undefined
 }
 object WorkerMessageResponse {
   
@@ -28,11 +28,11 @@ object WorkerMessageResponse {
     
     inline def setWorkerHealthReportResponseUndefined: Self = StObject.set(x, "workerHealthReportResponse", js.undefined)
     
-    inline def setWorkerMetricsResponse(value: js.Any): Self = StObject.set(x, "workerMetricsResponse", value.asInstanceOf[js.Any])
+    inline def setWorkerMetricsResponse(value: Any): Self = StObject.set(x, "workerMetricsResponse", value.asInstanceOf[js.Any])
     
     inline def setWorkerMetricsResponseUndefined: Self = StObject.set(x, "workerMetricsResponse", js.undefined)
     
-    inline def setWorkerShutdownNoticeResponse(value: js.Any): Self = StObject.set(x, "workerShutdownNoticeResponse", value.asInstanceOf[js.Any])
+    inline def setWorkerShutdownNoticeResponse(value: Any): Self = StObject.set(x, "workerShutdownNoticeResponse", value.asInstanceOf[js.Any])
     
     inline def setWorkerShutdownNoticeResponseUndefined: Self = StObject.set(x, "workerShutdownNoticeResponse", js.undefined)
   }

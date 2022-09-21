@@ -11,5 +11,5 @@ trait IRect
   
   def getCornerRadius(): Double = js.native
   
-  def setCornerRadius(radius: Double): js.Any = js.native
+  def setCornerRadius(radius: Double): Any = js.native
 }

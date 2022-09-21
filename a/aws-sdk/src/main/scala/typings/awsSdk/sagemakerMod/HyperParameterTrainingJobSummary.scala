@@ -9,7 +9,7 @@ trait HyperParameterTrainingJobSummary extends StObject {
   /**
     * The date and time that the training job was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * The reason that the training job failed. 
@@ -27,9 +27,9 @@ trait HyperParameterTrainingJobSummary extends StObject {
   var ObjectiveStatus: js.UndefOr[typings.awsSdk.sagemakerMod.ObjectiveStatus] = js.undefined
   
   /**
-    * Specifies the time when the training job ends on training instances. You are billed for the time interval between the value of TrainingStartTime and this time. For successful jobs and stopped jobs, this is the time after model artifacts are uploaded. For failed jobs, this is the time when Amazon SageMaker detects a job failure.
+    * Specifies the time when the training job ends on training instances. You are billed for the time interval between the value of TrainingStartTime and this time. For successful jobs and stopped jobs, this is the time after model artifacts are uploaded. For failed jobs, this is the time when SageMaker detects a job failure.
     */
-  var TrainingEndTime: js.UndefOr[Timestamp] = js.undefined
+  var TrainingEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the training job.
@@ -54,7 +54,7 @@ trait HyperParameterTrainingJobSummary extends StObject {
   /**
     * The date and time that the training job started.
     */
-  var TrainingStartTime: js.UndefOr[Timestamp] = js.undefined
+  var TrainingStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A list of the hyperparameters for which you specified ranges to search.
@@ -69,7 +69,7 @@ trait HyperParameterTrainingJobSummary extends StObject {
 object HyperParameterTrainingJobSummary {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     TrainingJobArn: TrainingJobArn,
     TrainingJobName: TrainingJobName,
     TrainingJobStatus: TrainingJobStatus,
@@ -81,7 +81,7 @@ object HyperParameterTrainingJobSummary {
   
   extension [Self <: HyperParameterTrainingJobSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
@@ -95,7 +95,7 @@ object HyperParameterTrainingJobSummary {
     
     inline def setObjectiveStatusUndefined: Self = StObject.set(x, "ObjectiveStatus", js.undefined)
     
-    inline def setTrainingEndTime(value: Timestamp): Self = StObject.set(x, "TrainingEndTime", value.asInstanceOf[js.Any])
+    inline def setTrainingEndTime(value: js.Date): Self = StObject.set(x, "TrainingEndTime", value.asInstanceOf[js.Any])
     
     inline def setTrainingEndTimeUndefined: Self = StObject.set(x, "TrainingEndTime", js.undefined)
     
@@ -109,7 +109,7 @@ object HyperParameterTrainingJobSummary {
     
     inline def setTrainingJobStatus(value: TrainingJobStatus): Self = StObject.set(x, "TrainingJobStatus", value.asInstanceOf[js.Any])
     
-    inline def setTrainingStartTime(value: Timestamp): Self = StObject.set(x, "TrainingStartTime", value.asInstanceOf[js.Any])
+    inline def setTrainingStartTime(value: js.Date): Self = StObject.set(x, "TrainingStartTime", value.asInstanceOf[js.Any])
     
     inline def setTrainingStartTimeUndefined: Self = StObject.set(x, "TrainingStartTime", js.undefined)
     

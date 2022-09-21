@@ -24,6 +24,6 @@ object AccountSeals {
     
     inline def setSealsUndefined: Self = StObject.set(x, "seals", js.undefined)
     
-    inline def setSealsVarargs(value: SealIdentifier*): Self = StObject.set(x, "seals", js.Array(value :_*))
+    inline def setSealsVarargs(value: SealIdentifier*): Self = StObject.set(x, "seals", js.Array(value*))
   }
 }

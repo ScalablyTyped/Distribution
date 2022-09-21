@@ -17,7 +17,7 @@ trait GetConformancePackComplianceDetailsRequest extends StObject {
   var Filters: js.UndefOr[ConformancePackEvaluationFilters] = js.undefined
   
   /**
-    * The maximum number of evaluation results returned on each page. If you do no specify a number, AWS Config uses the default. The default is 100.
+    * The maximum number of evaluation results returned on each page. If you do no specify a number, Config uses the default. The default is 100.
     */
   var Limit: js.UndefOr[GetConformancePackComplianceDetailsLimit] = js.undefined
   

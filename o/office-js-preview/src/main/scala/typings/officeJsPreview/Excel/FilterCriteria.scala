@@ -51,44 +51,44 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the filtering criteria applied to a column.
   *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 trait FilterCriteria extends StObject {
   
   /**
+    * The HTML color string used to filter cells. Used with `cellColor` and `fontColor` filtering.
     *
-    * The HTML color string used to filter cells. Used with "cellColor" and "fontColor" filtering.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var color: js.UndefOr[String] = js.undefined
   
   /**
-    *
-    * The first criterion used to filter data. Used as an operator in the case of "custom" filtering.
-    For example ">50" for number greater than 50 or "=*s" for values ending in "s".
+    * The first criterion used to filter data. Used as an operator in the case of `custom` filtering.
+    For example ">50" for numbers greater than 50, or "=*s" for values ending in "s".
     
-    Used as a number in the case of top/bottom items/percents (e.g., "5" for the top 5 items if filterOn is set to "topItems").
+    Used as a number in the case of top/bottom items/percents (e.g., "5" for the top 5 items if `filterOn` is set to `topItems`).
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var criterion1: js.UndefOr[String] = js.undefined
   
   /**
+    * The second criterion used to filter data. Only used as an operator in the case of `custom` filtering.
     *
-    * The second criterion used to filter data. Only used as an operator in the case of "custom" filtering.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var criterion2: js.UndefOr[String] = js.undefined
   
   /**
+    * The dynamic criteria from the `Excel.DynamicFilterCriteria` set to apply on this column. Used with `dynamic` filtering.
     *
-    * The dynamic criteria from the Excel.DynamicFilterCriteria set to apply on this column. Used with "dynamic" filtering.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var dynamicCriteria: js.UndefOr[
@@ -96,41 +96,41 @@ trait FilterCriteria extends StObject {
   ] = js.undefined
   
   /**
-    *
     * The property used by the filter to determine whether the values should stay visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var filterOn: FilterOn | BottomItems | BottomPercent | CellColor | Dynamic | FontColor | Values | TopItems | TopPercent | typings.officeJsPreview.officeJsPreviewStrings.Icon | Custom
   
   /**
+    * The icon used to filter cells. Used with `icon` filtering.
     *
-    * The icon used to filter cells. Used with "icon" filtering.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var icon: js.UndefOr[Icon] = js.undefined
   
   /**
+    * The operator used to combine criterion 1 and 2 when using `custom` filtering.
     *
-    * The operator used to combine criterion 1 and 2 when using "custom" filtering.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var operator: js.UndefOr[FilterOperator | And | Or] = js.undefined
   
   /**
+    * The property used by the filter to do a rich filter on rich values.
     *
-    * The property used by the filter to do rich filter on richvalues.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var subField: js.UndefOr[String] = js.undefined
   
   /**
+    * The set of values to be used as part of `values` filtering.
     *
-    * The set of values to be used as part of "values" filtering.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var values: js.UndefOr[js.Array[String | FilterDatetime]] = js.undefined
@@ -184,6 +184,6 @@ object FilterCriteria {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: (String | FilterDatetime)*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: (String | FilterDatetime)*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

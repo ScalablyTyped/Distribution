@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new SynthesizeSpeechConfig.
   * @param [properties] Properties to set
   */
-class SynthesizeSpeechConfig ()
+open class SynthesizeSpeechConfig ()
   extends StObject
      with ISynthesizeSpeechConfig {
   def this(properties: ISynthesizeSpeechConfig) = this()
@@ -37,7 +36,7 @@ class SynthesizeSpeechConfig ()
     * Converts this SynthesizeSpeechConfig to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
   
   /** SynthesizeSpeechConfig volumeGainDb. */
   @JSName("volumeGainDb")
@@ -58,6 +57,8 @@ object SynthesizeSpeechConfig {
   inline def create(): SynthesizeSpeechConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SynthesizeSpeechConfig]
   inline def create(properties: ISynthesizeSpeechConfig): SynthesizeSpeechConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechConfig]
   
+  inline def decode(reader: js.typedarray.Uint8Array): SynthesizeSpeechConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechConfig]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): SynthesizeSpeechConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SynthesizeSpeechConfig]
   /**
     * Decodes a SynthesizeSpeechConfig message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -69,9 +70,8 @@ object SynthesizeSpeechConfig {
   /* static member */
   inline def decode(reader: Reader): SynthesizeSpeechConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechConfig]
   inline def decode(reader: Reader, length: Double): SynthesizeSpeechConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SynthesizeSpeechConfig]
-  inline def decode(reader: Uint8Array): SynthesizeSpeechConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechConfig]
-  inline def decode(reader: Uint8Array, length: Double): SynthesizeSpeechConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SynthesizeSpeechConfig]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): SynthesizeSpeechConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechConfig]
   /**
     * Decodes a SynthesizeSpeechConfig message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -81,7 +81,6 @@ object SynthesizeSpeechConfig {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): SynthesizeSpeechConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechConfig]
-  inline def decodeDelimited(reader: Uint8Array): SynthesizeSpeechConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechConfig]
   
   /**
     * Encodes the specified SynthesizeSpeechConfig message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.SynthesizeSpeechConfig.verify|verify} messages.
@@ -109,7 +108,7 @@ object SynthesizeSpeechConfig {
     * @returns SynthesizeSpeechConfig
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): SynthesizeSpeechConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechConfig]
+  inline def fromObject(`object`: StringDictionary[Any]): SynthesizeSpeechConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechConfig]
   
   /**
     * Creates a plain object from a SynthesizeSpeechConfig message. Also converts values to other types if specified.
@@ -118,8 +117,8 @@ object SynthesizeSpeechConfig {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: SynthesizeSpeechConfig): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: SynthesizeSpeechConfig, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: SynthesizeSpeechConfig): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: SynthesizeSpeechConfig, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a SynthesizeSpeechConfig message.
@@ -127,5 +126,5 @@ object SynthesizeSpeechConfig {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

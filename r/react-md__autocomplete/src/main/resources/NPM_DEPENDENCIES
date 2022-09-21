@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-md/autocomplete" : "2.4.3"
+      "@react-md/autocomplete" : "5.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-md/autocomplete" : "2.4.3"
+      "@react-md/autocomplete" : "5.1.4"
     }
   ],
   "compile-devDependencies" : [

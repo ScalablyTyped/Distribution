@@ -22,7 +22,7 @@ object webcontentsMod {
     extends StObject
        with WindowEvent[Topic, Type] {
     
-    var certificate: js.Any
+    var certificate: Any
     
     var error: String
     
@@ -31,7 +31,7 @@ object webcontentsMod {
   object CertificateErrorEvent {
     
     inline def apply[Topic, Type](
-      certificate: js.Any,
+      certificate: Any,
       error: String,
       name: String,
       topic: Topic,
@@ -46,7 +46,7 @@ object webcontentsMod {
     
     extension [Self <: CertificateErrorEvent[?, ?], Topic, Type](x: Self & (CertificateErrorEvent[Topic, Type])) {
       
-      inline def setCertificate(value: js.Any): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: Any): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -200,7 +200,7 @@ object webcontentsMod {
     extends StObject
        with WindowEvent[Topic, Type] {
     
-    var headers: js.Any
+    var headers: Any
     
     var httpResponseCode: Double
     
@@ -219,7 +219,7 @@ object webcontentsMod {
   object WindowResourceResponseReceivedEvent {
     
     inline def apply[Topic, Type](
-      headers: js.Any,
+      headers: Any,
       httpResponseCode: Double,
       name: String,
       newUrl: String,
@@ -239,7 +239,7 @@ object webcontentsMod {
     
     extension [Self <: WindowResourceResponseReceivedEvent[?, ?], Topic, Type](x: Self & (WindowResourceResponseReceivedEvent[Topic, Type])) {
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHttpResponseCode(value: Double): Self = StObject.set(x, "httpResponseCode", value.asInstanceOf[js.Any])
       

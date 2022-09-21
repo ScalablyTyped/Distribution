@@ -16,8 +16,8 @@ trait Arm64CimmOperand
 }
 object Arm64CimmOperand {
   
-  inline def apply(value: Int64): Arm64CimmOperand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  inline def apply(access: OperandAccess, value: Int64): Arm64CimmOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("cimm")
     __obj.asInstanceOf[Arm64CimmOperand]
   }

@@ -8,7 +8,7 @@ object assetSourceResolverWebMod {
   
   @JSImport("expo-asset/build/AssetSourceResolver.web", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with AssetSourceResolver {
     def this(serverUrl: String, jsbundleUrl: String, asset: PackagerAsset) = this()
@@ -193,7 +193,7 @@ object assetSourceResolverWebMod {
       
       inline def setScales(value: js.Array[Double]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
       
-      inline def setScalesVarargs(value: Double*): Self = StObject.set(x, "scales", js.Array(value :_*))
+      inline def setScalesVarargs(value: Double*): Self = StObject.set(x, "scales", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

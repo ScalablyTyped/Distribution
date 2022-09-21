@@ -18,41 +18,38 @@ object storage {
     
     var config: ProviderOptions
     
-    def createContainer(options: js.Any, callback: js.Function2[/* err */ ClientError, /* container */ Container, js.Any]): Unit
+    def createContainer(options: Any, callback: js.Function2[/* err */ ClientError, /* container */ Container, Any]): Unit
     
-    def destroyContainer(containerName: String, callback: js.Function1[/* err */ ClientError, js.Any]): Unit
+    def destroyContainer(containerName: String, callback: js.Function1[/* err */ ClientError, Any]): Unit
     
     def download(options: StorageDownloadOptions): ReadStream
     
     def getContainer(
       containerName: String,
-      callback: js.Function2[/* err */ ClientError, /* container */ Container, js.Any]
+      callback: js.Function2[/* err */ ClientError, /* container */ Container, Any]
     ): Unit
     
-    def getContainers(callback: js.Function2[/* err */ ClientError, /* containers */ js.Array[Container], js.Any]): Unit
+    def getContainers(callback: js.Function2[/* err */ ClientError, /* containers */ js.Array[Container], Any]): Unit
     
     def getFile(
       containerName: String,
       file: String,
-      callback: js.Function2[/* err */ ClientError, /* file */ File, js.Any]
+      callback: js.Function2[/* err */ ClientError, /* file */ File, Any]
     ): Unit
     
     def getFiles(
       containerName: String,
-      callback: js.Function2[/* err */ ClientError, /* files */ js.Array[File], js.Any]
+      callback: js.Function2[/* err */ ClientError, /* files */ js.Array[File], Any]
     ): Unit
     
     // Logs
-    def on(
-      eventName: String,
-      callback: js.Function2[/* message */ String, /* object */ js.UndefOr[js.Any], js.Any]
-    ): Unit
+    def on(eventName: String, callback: js.Function2[/* message */ String, /* object */ js.UndefOr[Any], Any]): Unit
     
     var protocol: String
     
     var provider: String
     
-    def removeFile(containerName: String, file: String, callback: js.Function1[/* err */ ClientError, js.Any]): Unit
+    def removeFile(containerName: String, file: String, callback: js.Function1[/* err */ ClientError, Any]): Unit
     
     def upload(options: StorageUploadOptions): WriteStream
   }
@@ -60,17 +57,17 @@ object storage {
     
     inline def apply(
       config: ProviderOptions,
-      createContainer: (js.Any, js.Function2[/* err */ ClientError, /* container */ Container, js.Any]) => Unit,
-      destroyContainer: (String, js.Function1[/* err */ ClientError, js.Any]) => Unit,
+      createContainer: (Any, js.Function2[/* err */ ClientError, /* container */ Container, Any]) => Unit,
+      destroyContainer: (String, js.Function1[/* err */ ClientError, Any]) => Unit,
       download: StorageDownloadOptions => ReadStream,
-      getContainer: (String, js.Function2[/* err */ ClientError, /* container */ Container, js.Any]) => Unit,
-      getContainers: js.Function2[/* err */ ClientError, /* containers */ js.Array[Container], js.Any] => Unit,
-      getFile: (String, String, js.Function2[/* err */ ClientError, /* file */ File, js.Any]) => Unit,
-      getFiles: (String, js.Function2[/* err */ ClientError, /* files */ js.Array[File], js.Any]) => Unit,
-      on: (String, js.Function2[/* message */ String, /* object */ js.UndefOr[js.Any], js.Any]) => Unit,
+      getContainer: (String, js.Function2[/* err */ ClientError, /* container */ Container, Any]) => Unit,
+      getContainers: js.Function2[/* err */ ClientError, /* containers */ js.Array[Container], Any] => Unit,
+      getFile: (String, String, js.Function2[/* err */ ClientError, /* file */ File, Any]) => Unit,
+      getFiles: (String, js.Function2[/* err */ ClientError, /* files */ js.Array[File], Any]) => Unit,
+      on: (String, js.Function2[/* message */ String, /* object */ js.UndefOr[Any], Any]) => Unit,
       protocol: String,
       provider: String,
-      removeFile: (String, String, js.Function1[/* err */ ClientError, js.Any]) => Unit,
+      removeFile: (String, String, js.Function1[/* err */ ClientError, Any]) => Unit,
       upload: StorageUploadOptions => WriteStream
     ): Client = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], createContainer = js.Any.fromFunction2(createContainer), destroyContainer = js.Any.fromFunction2(destroyContainer), download = js.Any.fromFunction1(download), getContainer = js.Any.fromFunction2(getContainer), getContainers = js.Any.fromFunction1(getContainers), getFile = js.Any.fromFunction3(getFile), getFiles = js.Any.fromFunction2(getFiles), on = js.Any.fromFunction2(on), protocol = protocol.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], removeFile = js.Any.fromFunction3(removeFile), upload = js.Any.fromFunction1(upload))
@@ -81,29 +78,27 @@ object storage {
       
       inline def setConfig(value: ProviderOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      inline def setCreateContainer(value: (js.Any, js.Function2[/* err */ ClientError, /* container */ Container, js.Any]) => Unit): Self = StObject.set(x, "createContainer", js.Any.fromFunction2(value))
+      inline def setCreateContainer(value: (Any, js.Function2[/* err */ ClientError, /* container */ Container, Any]) => Unit): Self = StObject.set(x, "createContainer", js.Any.fromFunction2(value))
       
-      inline def setDestroyContainer(value: (String, js.Function1[/* err */ ClientError, js.Any]) => Unit): Self = StObject.set(x, "destroyContainer", js.Any.fromFunction2(value))
+      inline def setDestroyContainer(value: (String, js.Function1[/* err */ ClientError, Any]) => Unit): Self = StObject.set(x, "destroyContainer", js.Any.fromFunction2(value))
       
       inline def setDownload(value: StorageDownloadOptions => ReadStream): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
       
-      inline def setGetContainer(value: (String, js.Function2[/* err */ ClientError, /* container */ Container, js.Any]) => Unit): Self = StObject.set(x, "getContainer", js.Any.fromFunction2(value))
+      inline def setGetContainer(value: (String, js.Function2[/* err */ ClientError, /* container */ Container, Any]) => Unit): Self = StObject.set(x, "getContainer", js.Any.fromFunction2(value))
       
-      inline def setGetContainers(value: js.Function2[/* err */ ClientError, /* containers */ js.Array[Container], js.Any] => Unit): Self = StObject.set(x, "getContainers", js.Any.fromFunction1(value))
+      inline def setGetContainers(value: js.Function2[/* err */ ClientError, /* containers */ js.Array[Container], Any] => Unit): Self = StObject.set(x, "getContainers", js.Any.fromFunction1(value))
       
-      inline def setGetFile(value: (String, String, js.Function2[/* err */ ClientError, /* file */ File, js.Any]) => Unit): Self = StObject.set(x, "getFile", js.Any.fromFunction3(value))
+      inline def setGetFile(value: (String, String, js.Function2[/* err */ ClientError, /* file */ File, Any]) => Unit): Self = StObject.set(x, "getFile", js.Any.fromFunction3(value))
       
-      inline def setGetFiles(value: (String, js.Function2[/* err */ ClientError, /* files */ js.Array[File], js.Any]) => Unit): Self = StObject.set(x, "getFiles", js.Any.fromFunction2(value))
+      inline def setGetFiles(value: (String, js.Function2[/* err */ ClientError, /* files */ js.Array[File], Any]) => Unit): Self = StObject.set(x, "getFiles", js.Any.fromFunction2(value))
       
-      inline def setOn(
-        value: (String, js.Function2[/* message */ String, /* object */ js.UndefOr[js.Any], js.Any]) => Unit
-      ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function2[/* message */ String, /* object */ js.UndefOr[Any], Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
       inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      inline def setRemoveFile(value: (String, String, js.Function1[/* err */ ClientError, js.Any]) => Unit): Self = StObject.set(x, "removeFile", js.Any.fromFunction3(value))
+      inline def setRemoveFile(value: (String, String, js.Function1[/* err */ ClientError, Any]) => Unit): Self = StObject.set(x, "removeFile", js.Any.fromFunction3(value))
       
       inline def setUpload(value: StorageUploadOptions => WriteStream): Self = StObject.set(x, "upload", js.Any.fromFunction1(value))
     }

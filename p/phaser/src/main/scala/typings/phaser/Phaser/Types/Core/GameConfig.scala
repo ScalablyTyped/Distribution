@@ -3,7 +3,6 @@ package typings.phaser.Phaser.Types.Core
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.Scenes.CreateSceneFromObjectConfig
 import typings.phaser.Phaser.Types.Scenes.SettingsConfig
-import typings.phaser.integer
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
@@ -12,6 +11,16 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GameConfig extends StObject {
+  
+  /**
+    * When set to `true`, WebGL uses linear interpolation to draw scaled or rotated textures, giving a smooth appearance. When set to `false`, WebGL uses nearest-neighbor interpolation, giving a crisper appearance. `false` also disables antialiasing of the game canvas itself, if the browser supports it, when the game canvas is scaled.
+    */
+  var antialias: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Sets the `antialias` property when the WebGL context is created. Setting this value does not impact any subsequent textures that are created, or the canvas style attributes.
+    */
+  var antialiasGL: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Audio Configuration object.
@@ -34,6 +43,11 @@ trait GameConfig extends StObject {
   var banner: js.UndefOr[Boolean | BannerConfig] = js.undefined
   
   /**
+    * The default WebGL batch size. Represents the number of _quads_ that can be added to a single batch.
+    */
+  var batchSize: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Optional callbacks to run before or after game boot.
     */
   var callbacks: js.UndefOr[CallbacksConfig] = js.undefined
@@ -49,6 +63,11 @@ trait GameConfig extends StObject {
   var canvasStyle: js.UndefOr[String] = js.undefined
   
   /**
+    * Whether the game canvas will be cleared between each rendering frame.
+    */
+  var clearBeforeRender: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Provide your own Canvas Context for Phaser to use, instead of creating one.
     */
   var context: js.UndefOr[CanvasRenderingContext2D] = js.undefined
@@ -57,6 +76,11 @@ trait GameConfig extends StObject {
     * Is Phaser running under a custom (non-native web) environment? If so, set this to `true` to skip internal Feature detection. If `true` the `renderType` cannot be left as `AUTO`.
     */
   var customEnvironment: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * When set to `true` it will create a desynchronized context for both 2D and WebGL. See https://developers.google.com/web/updates/2019/05/desynchronized for details.
+    */
+  var desynchronized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the browser's default 'contextmenu' event (usually triggered by a right-button mouse click).
@@ -69,6 +93,11 @@ trait GameConfig extends StObject {
   var dom: js.UndefOr[DOMContainerConfig] = js.undefined
   
   /**
+    * Let the browser abort creating a WebGL context if it judges performance would be unacceptable.
+    */
+  var failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Game loop configuration.
     */
   var fps: js.UndefOr[FPSConfig] = js.undefined
@@ -76,7 +105,7 @@ trait GameConfig extends StObject {
   /**
     * The height of the game, in game pixels.
     */
-  var height: js.UndefOr[integer | String] = js.undefined
+  var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Images configuration.
@@ -94,6 +123,21 @@ trait GameConfig extends StObject {
   var loader: js.UndefOr[LoaderConfig] = js.undefined
   
   /**
+    * The maximum number of lights allowed to be visible within range of a single Camera in the LightManager.
+    */
+  var maxLights: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * When in WebGL mode, this sets the maximum number of GPU Textures to use. The default, -1, will use all available units. The WebGL1 spec says all browsers should provide a minimum of 8.
+    */
+  var maxTextures: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The mipmap magFilter to be used when creating WebGL textures.
+    */
+  var mipmapFilter: js.UndefOr[String] = js.undefined
+  
+  /**
     * The DOM element that will contain the game canvas, or its `id`. If undefined, or if the named element doesn't exist, the game canvas is appended to the document body. If `null` no parent will be used and you are responsible for adding the canvas to the dom.
     */
   var parent: js.UndefOr[HTMLElement | String] = js.undefined
@@ -104,9 +148,34 @@ trait GameConfig extends StObject {
   var physics: js.UndefOr[PhysicsConfig] = js.undefined
   
   /**
+    * A WebGL Pipeline configuration object. Can also be part of the `RenderConfig`.
+    */
+  var pipeline: js.UndefOr[PipelineConfig] = js.undefined
+  
+  /**
+    * Sets `antialias` to false and `roundPixels` to true. This is the best setting for pixel-art games.
+    */
+  var pixelArt: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Plugins to install.
     */
   var plugins: js.UndefOr[PluginObject | js.Array[PluginObjectItem]] = js.undefined
+  
+  /**
+    * "high-performance", "low-power" or "default". A hint to the browser on how much device power the game might use.
+    */
+  var powerPreference: js.UndefOr[String] = js.undefined
+  
+  /**
+    * In WebGL mode, the drawing buffer contains colors with pre-multiplied alpha.
+    */
+  var premultipliedAlpha: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * If the value is true the WebGL buffers will not be cleared and will preserve their values until cleared or overwritten by the author.
+    */
+  var preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Game renderer configuration.
@@ -114,9 +183,9 @@ trait GameConfig extends StObject {
   var render: js.UndefOr[RenderConfig] = js.undefined
   
   /**
-    * The size of each game pixel, in canvas pixels. Values larger than 1 are "high" resolution.
+    * Draw texture-based Game Objects at only whole-integer positions. Game Objects without textures, like Graphics, ignore this property.
     */
-  var resolution: js.UndefOr[Double] = js.undefined
+  var roundPixels: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Scale Manager configuration.
@@ -141,7 +210,7 @@ trait GameConfig extends StObject {
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether the game canvas will have a transparent background.
+    * Whether the game canvas will be transparent. Boolean that indicates if the canvas contains an alpha channel. If set to false, the browser now knows that the backdrop is always opaque, which can speed up drawing of transparent content and images.
     */
   var transparent: js.UndefOr[Boolean] = js.undefined
   
@@ -163,7 +232,7 @@ trait GameConfig extends StObject {
   /**
     * The width of the game, in game pixels.
     */
-  var width: js.UndefOr[integer | String] = js.undefined
+  var width: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Simple scale applied to the game canvas. 2 is double size, 0.5 is half size, etc.
@@ -178,6 +247,14 @@ object GameConfig {
   }
   
   extension [Self <: GameConfig](x: Self) {
+    
+    inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
+    
+    inline def setAntialiasGL(value: Boolean): Self = StObject.set(x, "antialiasGL", value.asInstanceOf[js.Any])
+    
+    inline def setAntialiasGLUndefined: Self = StObject.set(x, "antialiasGL", js.undefined)
+    
+    inline def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
     
     inline def setAudio(value: AudioConfig): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
@@ -195,6 +272,10 @@ object GameConfig {
     
     inline def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
     
+    inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    
+    inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+    
     inline def setCallbacks(value: CallbacksConfig): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     
     inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
@@ -207,6 +288,10 @@ object GameConfig {
     
     inline def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
     
+    inline def setClearBeforeRender(value: Boolean): Self = StObject.set(x, "clearBeforeRender", value.asInstanceOf[js.Any])
+    
+    inline def setClearBeforeRenderUndefined: Self = StObject.set(x, "clearBeforeRender", js.undefined)
+    
     inline def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
@@ -214,6 +299,10 @@ object GameConfig {
     inline def setCustomEnvironment(value: Boolean): Self = StObject.set(x, "customEnvironment", value.asInstanceOf[js.Any])
     
     inline def setCustomEnvironmentUndefined: Self = StObject.set(x, "customEnvironment", js.undefined)
+    
+    inline def setDesynchronized(value: Boolean): Self = StObject.set(x, "desynchronized", value.asInstanceOf[js.Any])
+    
+    inline def setDesynchronizedUndefined: Self = StObject.set(x, "desynchronized", js.undefined)
     
     inline def setDisableContextMenu(value: Boolean): Self = StObject.set(x, "disableContextMenu", value.asInstanceOf[js.Any])
     
@@ -223,11 +312,15 @@ object GameConfig {
     
     inline def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
     
+    inline def setFailIfMajorPerformanceCaveat(value: Boolean): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
+    
+    inline def setFailIfMajorPerformanceCaveatUndefined: Self = StObject.set(x, "failIfMajorPerformanceCaveat", js.undefined)
+    
     inline def setFps(value: FPSConfig): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
     inline def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
     
-    inline def setHeight(value: integer | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
@@ -243,6 +336,18 @@ object GameConfig {
     
     inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
     
+    inline def setMaxLights(value: Double): Self = StObject.set(x, "maxLights", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLightsUndefined: Self = StObject.set(x, "maxLights", js.undefined)
+    
+    inline def setMaxTextures(value: Double): Self = StObject.set(x, "maxTextures", value.asInstanceOf[js.Any])
+    
+    inline def setMaxTexturesUndefined: Self = StObject.set(x, "maxTextures", js.undefined)
+    
+    inline def setMipmapFilter(value: String): Self = StObject.set(x, "mipmapFilter", value.asInstanceOf[js.Any])
+    
+    inline def setMipmapFilterUndefined: Self = StObject.set(x, "mipmapFilter", js.undefined)
+    
     inline def setParent(value: HTMLElement | String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
@@ -251,19 +356,39 @@ object GameConfig {
     
     inline def setPhysicsUndefined: Self = StObject.set(x, "physics", js.undefined)
     
+    inline def setPipeline(value: PipelineConfig): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+    
+    inline def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
+    
+    inline def setPixelArt(value: Boolean): Self = StObject.set(x, "pixelArt", value.asInstanceOf[js.Any])
+    
+    inline def setPixelArtUndefined: Self = StObject.set(x, "pixelArt", js.undefined)
+    
     inline def setPlugins(value: PluginObject | js.Array[PluginObjectItem]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    inline def setPluginsVarargs(value: PluginObjectItem*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: PluginObjectItem*): Self = StObject.set(x, "plugins", js.Array(value*))
+    
+    inline def setPowerPreference(value: String): Self = StObject.set(x, "powerPreference", value.asInstanceOf[js.Any])
+    
+    inline def setPowerPreferenceUndefined: Self = StObject.set(x, "powerPreference", js.undefined)
+    
+    inline def setPremultipliedAlpha(value: Boolean): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
+    
+    inline def setPremultipliedAlphaUndefined: Self = StObject.set(x, "premultipliedAlpha", js.undefined)
+    
+    inline def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
     
     inline def setRender(value: RenderConfig): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setRoundPixels(value: Boolean): Self = StObject.set(x, "roundPixels", value.asInstanceOf[js.Any])
     
-    inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+    inline def setRoundPixelsUndefined: Self = StObject.set(x, "roundPixels", js.undefined)
     
     inline def setScale(value: ScaleConfig): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
@@ -275,13 +400,13 @@ object GameConfig {
     
     inline def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
     
-    inline def setSceneVarargs(value: (CreateSceneFromObjectConfig | js.Function | Scene | SettingsConfig)*): Self = StObject.set(x, "scene", js.Array(value :_*))
+    inline def setSceneVarargs(value: (CreateSceneFromObjectConfig | js.Function | Scene | SettingsConfig)*): Self = StObject.set(x, "scene", js.Array(value*))
     
     inline def setSeed(value: js.Array[String]): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
     inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     
-    inline def setSeedVarargs(value: String*): Self = StObject.set(x, "seed", js.Array(value :_*))
+    inline def setSeedVarargs(value: String*): Self = StObject.set(x, "seed", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
@@ -303,7 +428,7 @@ object GameConfig {
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    inline def setWidth(value: integer | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     

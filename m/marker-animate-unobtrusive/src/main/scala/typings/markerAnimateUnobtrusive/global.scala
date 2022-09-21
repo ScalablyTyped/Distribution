@@ -8,13 +8,13 @@ object global {
   
   @JSGlobal("MarkerWithGhost")
   @js.native
-  class MarkerWithGhost ()
+  open class MarkerWithGhost ()
     extends StObject
        with typings.markerAnimateUnobtrusive.MarkerWithGhost
   
   @JSGlobal("SlidingMarker")
   @js.native
-  class SlidingMarker ()
+  open class SlidingMarker ()
     extends StObject
        with typings.markerAnimateUnobtrusive.SlidingMarker {
     def this(opts: SlidingMarkerOptions) = this()

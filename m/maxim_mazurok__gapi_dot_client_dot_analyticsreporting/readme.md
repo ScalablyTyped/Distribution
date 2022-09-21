@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_analyticsreporting
 
-Typings are for version 4.0.20201029
+Typings are for version 4.0.20220616
 
 ## Library description:
 TypeScript typings for Analytics Reporting API v4
@@ -10,10 +10,10 @@ TypeScript typings for Analytics Reporting API v4
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.analyticsreporting |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 851 |
-| # stars            | 0 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 1429.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

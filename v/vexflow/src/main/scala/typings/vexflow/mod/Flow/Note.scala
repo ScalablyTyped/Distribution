@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.Note")
 @js.native
-class Note protected ()
+open class Note protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.Note {
   def this(note_struct: Type) = this()

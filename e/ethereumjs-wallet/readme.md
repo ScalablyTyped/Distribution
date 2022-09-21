@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethereumjs-wallet
 
-Typings are for version 1.0.1
+Typings are for version 1.0.2
 
 ## Library description:
 Utilities for handling Ethereum keys
@@ -11,9 +11,9 @@ Utilities for handling Ethereum keys
 | Full name          | ethereumjs-wallet |
 | Keywords           | ethereum, wallets, keys |
 | # releases         | 4 |
-| # dependents       | 270 |
-| # downloads        | 1852303 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 656056.3333333334 |
+| # stars            | 846.0 |
 
 ## Links
 - [Homepage](https://github.com/ethereumjs/ethereumjs-wallet)

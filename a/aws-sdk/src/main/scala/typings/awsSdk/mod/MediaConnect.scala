@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class MediaConnect ()
+open class MediaConnect ()
   extends typings.awsSdk.allMod.MediaConnect {
   def this(options: ClientConfiguration) = this()
 }

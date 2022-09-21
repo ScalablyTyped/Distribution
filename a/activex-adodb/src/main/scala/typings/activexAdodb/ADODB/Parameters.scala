@@ -10,7 +10,7 @@ trait Parameters extends StObject {
   def apply(Index: String): Parameter = js.native
   def apply(Index: Double): Parameter = js.native
   
-  def Append(Object: js.Any): Unit = js.native
+  def Append(Object: Any): Unit = js.native
   
   val Count: Double = js.native
   

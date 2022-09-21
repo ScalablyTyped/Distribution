@@ -14,7 +14,7 @@ object undoablelistMod {
   - typings.jupyterlabObservables.observablelistMod.IObservableList because Already inherited
   - typings.jupyterlabObservables.undoablelistMod.IObservableUndoableList because var conflicts: changed, isDisposed, length, `type`. Inlined canRedo, canUndo, beginCompoundOperation, beginCompoundOperation, endCompoundOperation, undo, redo, clearUndo */ @JSImport("@jupyterlab/observables/lib/undoablelist", "ObservableUndoableList")
   @js.native
-  class ObservableUndoableList[T] protected () extends ObservableList[T] {
+  open class ObservableUndoableList[T] protected () extends ObservableList[T] {
     /**
       * Construct a new undoable observable list.
       */
@@ -23,34 +23,34 @@ object undoablelistMod {
     /**
       * Copy a change as JSON.
       */
-    /* private */ var _copyChange: js.Any = js.native
+    /* private */ var _copyChange: Any = js.native
     
-    /* private */ var _inCompound: js.Any = js.native
+    /* private */ var _inCompound: Any = js.native
     
-    /* private */ var _index: js.Any = js.native
+    /* private */ var _index: Any = js.native
     
-    /* private */ var _isUndoable: js.Any = js.native
+    /* private */ var _isUndoable: Any = js.native
     
-    /* private */ var _madeCompoundChange: js.Any = js.native
+    /* private */ var _madeCompoundChange: Any = js.native
     
     /**
       * Handle a change in the list.
       */
-    /* private */ var _onListChanged: js.Any = js.native
+    /* private */ var _onListChanged: Any = js.native
     
     /**
       * Redo a change event.
       */
-    /* private */ var _redoChange: js.Any = js.native
+    /* private */ var _redoChange: Any = js.native
     
-    /* private */ var _serializer: js.Any = js.native
+    /* private */ var _serializer: Any = js.native
     
-    /* private */ var _stack: js.Any = js.native
+    /* private */ var _stack: Any = js.native
     
     /**
       * Undo a change event.
       */
-    /* private */ var _undoChange: js.Any = js.native
+    /* private */ var _undoChange: Any = js.native
     
     /**
       * Begin a compound operation.
@@ -114,7 +114,7 @@ object undoablelistMod {
       */
     @JSImport("@jupyterlab/observables/lib/undoablelist", "ObservableUndoableList.IdentitySerializer")
     @js.native
-    class IdentitySerializer[T /* <: JSONValue */] ()
+    open class IdentitySerializer[T /* <: JSONValue */] ()
       extends StObject
          with ISerializer[T] {
       

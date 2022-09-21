@@ -31,10 +31,10 @@ object BatchGetRepositoriesOutput {
     
     inline def setRepositoriesNotFoundUndefined: Self = StObject.set(x, "repositoriesNotFound", js.undefined)
     
-    inline def setRepositoriesNotFoundVarargs(value: RepositoryName*): Self = StObject.set(x, "repositoriesNotFound", js.Array(value :_*))
+    inline def setRepositoriesNotFoundVarargs(value: RepositoryName*): Self = StObject.set(x, "repositoriesNotFound", js.Array(value*))
     
     inline def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
     
-    inline def setRepositoriesVarargs(value: RepositoryMetadata*): Self = StObject.set(x, "repositories", js.Array(value :_*))
+    inline def setRepositoriesVarargs(value: RepositoryMetadata*): Self = StObject.set(x, "repositories", js.Array(value*))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "ImmutableCompilationSettings")
 @js.native
-class ImmutableCompilationSettings protected ()
+open class ImmutableCompilationSettings protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.ImmutableCompilationSettings {
   def this(
@@ -32,61 +32,61 @@ class ImmutableCompilationSettings protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _allowAutomaticSemicolonInsertion: js.Any = js.native
+  var _allowAutomaticSemicolonInsertion: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _codeGenTarget: js.Any = js.native
+  var _codeGenTarget: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _codepage: js.Any = js.native
+  var _codepage: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _createFileLog: js.Any = js.native
+  var _createFileLog: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _gatherDiagnostics: js.Any = js.native
+  var _gatherDiagnostics: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _generateDeclarationFiles: js.Any = js.native
+  var _generateDeclarationFiles: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _mapRoot: js.Any = js.native
+  var _mapRoot: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _mapSourceFiles: js.Any = js.native
+  var _mapSourceFiles: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _moduleGenTarget: js.Any = js.native
+  var _moduleGenTarget: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _noImplicitAny: js.Any = js.native
+  var _noImplicitAny: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _noLib: js.Any = js.native
+  var _noLib: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _noResolve: js.Any = js.native
+  var _noResolve: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _outDirOption: js.Any = js.native
+  var _outDirOption: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _outFileOption: js.Any = js.native
+  var _outFileOption: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _propagateEnumConstants: js.Any = js.native
+  var _propagateEnumConstants: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _removeComments: js.Any = js.native
+  var _removeComments: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _sourceRoot: js.Any = js.native
+  var _sourceRoot: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _useCaseSensitiveFileResolution: js.Any = js.native
+  var _useCaseSensitiveFileResolution: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _watch: js.Any = js.native
+  var _watch: Any = js.native
   
   /* CompleteClass */
   override def allowAutomaticSemicolonInsertion(): Boolean = js.native
@@ -140,7 +140,7 @@ class ImmutableCompilationSettings protected ()
   override def sourceRoot(): String = js.native
   
   /* CompleteClass */
-  override def toCompilationSettings(): js.Any = js.native
+  override def toCompilationSettings(): Any = js.native
   
   /* CompleteClass */
   override def useCaseSensitiveFileResolution(): Boolean = js.native
@@ -157,8 +157,8 @@ object ImmutableCompilationSettings {
   /* static member */
   @JSImport("typescript-services", "ImmutableCompilationSettings._defaultSettings")
   @js.native
-  def _defaultSettings: js.Any = js.native
-  inline def _defaultSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_defaultSettings")(x.asInstanceOf[js.Any])
+  def _defaultSettings: Any = js.native
+  inline def _defaultSettings_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_defaultSettings")(x.asInstanceOf[js.Any])
   
   /* static member */
   inline def defaultSettings(): typings.typescriptServices.TypeScript.ImmutableCompilationSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSettings")().asInstanceOf[typings.typescriptServices.TypeScript.ImmutableCompilationSettings]

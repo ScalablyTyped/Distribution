@@ -11,13 +11,13 @@ object portalConsumerMod {
   
   @JSImport("@ant-design/react-native/lib/portal/portal-consumer", JSImport.Default)
   @js.native
-  class default () extends PortalConsumer
+  open class default () extends PortalConsumer
   
   @js.native
   trait PortalConsumer
-    extends Component[PortalConsumerProps, js.Object, js.Any] {
+    extends Component[PortalConsumerProps, js.Object, Any] {
     
-    var _key: js.Any = js.native
+    var _key: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MPortalConsumer(): Unit = js.native

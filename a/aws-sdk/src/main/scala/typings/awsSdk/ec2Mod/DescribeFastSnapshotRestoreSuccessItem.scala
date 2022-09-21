@@ -14,35 +14,35 @@ trait DescribeFastSnapshotRestoreSuccessItem extends StObject {
   /**
     * The time at which fast snapshot restores entered the disabled state.
     */
-  var DisabledTime: js.UndefOr[MillisecondDateTime] = js.undefined
+  var DisabledTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time at which fast snapshot restores entered the disabling state.
     */
-  var DisablingTime: js.UndefOr[MillisecondDateTime] = js.undefined
+  var DisablingTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time at which fast snapshot restores entered the enabled state.
     */
-  var EnabledTime: js.UndefOr[MillisecondDateTime] = js.undefined
+  var EnabledTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time at which fast snapshot restores entered the enabling state.
     */
-  var EnablingTime: js.UndefOr[MillisecondDateTime] = js.undefined
+  var EnablingTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time at which fast snapshot restores entered the optimizing state.
     */
-  var OptimizingTime: js.UndefOr[MillisecondDateTime] = js.undefined
+  var OptimizingTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The AWS owner alias that enabled fast snapshot restores on the snapshot. This is intended for future use.
+    * The Amazon Web Services owner alias that enabled fast snapshot restores on the snapshot. This is intended for future use.
     */
   var OwnerAlias: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS account that enabled fast snapshot restores on the snapshot.
+    * The ID of the Amazon Web Services account that enabled fast snapshot restores on the snapshot.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -74,23 +74,23 @@ object DescribeFastSnapshotRestoreSuccessItem {
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    inline def setDisabledTime(value: MillisecondDateTime): Self = StObject.set(x, "DisabledTime", value.asInstanceOf[js.Any])
+    inline def setDisabledTime(value: js.Date): Self = StObject.set(x, "DisabledTime", value.asInstanceOf[js.Any])
     
     inline def setDisabledTimeUndefined: Self = StObject.set(x, "DisabledTime", js.undefined)
     
-    inline def setDisablingTime(value: MillisecondDateTime): Self = StObject.set(x, "DisablingTime", value.asInstanceOf[js.Any])
+    inline def setDisablingTime(value: js.Date): Self = StObject.set(x, "DisablingTime", value.asInstanceOf[js.Any])
     
     inline def setDisablingTimeUndefined: Self = StObject.set(x, "DisablingTime", js.undefined)
     
-    inline def setEnabledTime(value: MillisecondDateTime): Self = StObject.set(x, "EnabledTime", value.asInstanceOf[js.Any])
+    inline def setEnabledTime(value: js.Date): Self = StObject.set(x, "EnabledTime", value.asInstanceOf[js.Any])
     
     inline def setEnabledTimeUndefined: Self = StObject.set(x, "EnabledTime", js.undefined)
     
-    inline def setEnablingTime(value: MillisecondDateTime): Self = StObject.set(x, "EnablingTime", value.asInstanceOf[js.Any])
+    inline def setEnablingTime(value: js.Date): Self = StObject.set(x, "EnablingTime", value.asInstanceOf[js.Any])
     
     inline def setEnablingTimeUndefined: Self = StObject.set(x, "EnablingTime", js.undefined)
     
-    inline def setOptimizingTime(value: MillisecondDateTime): Self = StObject.set(x, "OptimizingTime", value.asInstanceOf[js.Any])
+    inline def setOptimizingTime(value: js.Date): Self = StObject.set(x, "OptimizingTime", value.asInstanceOf[js.Any])
     
     inline def setOptimizingTimeUndefined: Self = StObject.set(x, "OptimizingTime", js.undefined)
     

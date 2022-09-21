@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DashboardExportPaperKind")
 @js.native
-class DashboardExportPaperKind ()
+open class DashboardExportPaperKind ()
   extends StObject
      with typings.devexpressWeb.DashboardExportPaperKind
 object DashboardExportPaperKind {

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HandlerDecorationMethod extends StObject {
   
-  def apply(route: RouteOptions, options: js.Any): Method = js.native
+  def apply(route: RouteOptions, options: Any): Method = js.native
   
-  var defaults: js.UndefOr[RouteOptions | (js.Function1[/* method */ js.Any, RouteOptions])] = js.native
+  var defaults: js.UndefOr[RouteOptions | (js.Function1[/* method */ Any, RouteOptions])] = js.native
 }

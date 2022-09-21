@@ -17,7 +17,7 @@ trait LaunchPathSummary extends StObject {
   var Id: js.UndefOr[typings.awsSdk.servicecatalogMod.Id] = js.undefined
   
   /**
-    * The name of the portfolio to which the user was assigned.
+    * The name of the portfolio that contains the product. 
     */
   var Name: js.UndefOr[PortfolioName] = js.undefined
   
@@ -39,7 +39,7 @@ object LaunchPathSummary {
     
     inline def setConstraintSummariesUndefined: Self = StObject.set(x, "ConstraintSummaries", js.undefined)
     
-    inline def setConstraintSummariesVarargs(value: ConstraintSummary*): Self = StObject.set(x, "ConstraintSummaries", js.Array(value :_*))
+    inline def setConstraintSummariesVarargs(value: ConstraintSummary*): Self = StObject.set(x, "ConstraintSummaries", js.Array(value*))
     
     inline def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
@@ -53,6 +53,6 @@ object LaunchPathSummary {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

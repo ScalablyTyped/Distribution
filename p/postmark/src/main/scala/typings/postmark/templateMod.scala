@@ -13,7 +13,7 @@ object templateMod {
   
   @JSImport("postmark/dist/client/models/templates/Template", "CreateTemplateRequest")
   @js.native
-  class CreateTemplateRequest protected () extends UpdateTemplateRequest {
+  open class CreateTemplateRequest protected () extends UpdateTemplateRequest {
     def this(
       Name: String,
       Subject: js.UndefOr[String],
@@ -27,7 +27,7 @@ object templateMod {
   
   @JSImport("postmark/dist/client/models/templates/Template", "TemplateFilteringParameters")
   @js.native
-  class TemplateFilteringParameters () extends FilteringParameters {
+  open class TemplateFilteringParameters () extends FilteringParameters {
     def this(count: Double) = this()
     def this(count: Double, offset: Double) = this()
     def this(count: Unit, offset: Double) = this()
@@ -73,7 +73,7 @@ object templateMod {
   
   @JSImport("postmark/dist/client/models/templates/Template", "TemplateValidationOptions")
   @js.native
-  class TemplateValidationOptions protected () extends StObject {
+  open class TemplateValidationOptions protected () extends StObject {
     def this(
       Subject: js.UndefOr[String],
       HtmlBody: js.UndefOr[String],
@@ -101,7 +101,7 @@ object templateMod {
   
   @JSImport("postmark/dist/client/models/templates/Template", "TemplatedMessage")
   @js.native
-  class TemplatedMessage protected () extends StObject {
+  open class TemplatedMessage protected () extends StObject {
     def this(
       from: String,
       templateIdOrAlias: Double | String,
@@ -141,7 +141,7 @@ object templateMod {
     
     var TemplateId: js.UndefOr[Double] = js.native
     
-    var TemplateModel: js.UndefOr[js.Object] = js.native
+    var TemplateModel: js.Object = js.native
     
     var To: js.UndefOr[String] = js.native
     
@@ -152,7 +152,7 @@ object templateMod {
   
   @JSImport("postmark/dist/client/models/templates/Template", "TemplatesPushRequest")
   @js.native
-  class TemplatesPushRequest protected () extends StObject {
+  open class TemplatesPushRequest protected () extends StObject {
     def this(SourceServerID: Double, DestinationServerID: Double, PerformChanges: Boolean) = this()
     
     var DestinationServerID: Double = js.native
@@ -164,7 +164,7 @@ object templateMod {
   
   @JSImport("postmark/dist/client/models/templates/Template", "UpdateTemplateRequest")
   @js.native
-  class UpdateTemplateRequest protected () extends StObject {
+  open class UpdateTemplateRequest protected () extends StObject {
     def this(
       Name: js.UndefOr[String],
       Subject: js.UndefOr[String],
@@ -386,7 +386,7 @@ object templateMod {
       
       inline def setTemplates(value: js.Array[TemplateInList]): Self = StObject.set(x, "Templates", value.asInstanceOf[js.Any])
       
-      inline def setTemplatesVarargs(value: TemplateInList*): Self = StObject.set(x, "Templates", js.Array(value :_*))
+      inline def setTemplatesVarargs(value: TemplateInList*): Self = StObject.set(x, "Templates", js.Array(value*))
       
       inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }
@@ -409,7 +409,7 @@ object templateMod {
       
       inline def setTemplates(value: js.Array[TemplatePushAction]): Self = StObject.set(x, "Templates", value.asInstanceOf[js.Any])
       
-      inline def setTemplatesVarargs(value: TemplatePushAction*): Self = StObject.set(x, "Templates", js.Array(value :_*))
+      inline def setTemplatesVarargs(value: TemplatePushAction*): Self = StObject.set(x, "Templates", js.Array(value*))
       
       inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }

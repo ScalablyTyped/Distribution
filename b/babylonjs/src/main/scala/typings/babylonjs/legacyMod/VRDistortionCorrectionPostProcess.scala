@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "VRDistortionCorrectionPostProcess")
 @js.native
-class VRDistortionCorrectionPostProcess protected ()
+open class VRDistortionCorrectionPostProcess protected ()
   extends typings.babylonjs.indexMod.VRDistortionCorrectionPostProcess {
   /**
     * Initializes the VRDistortionCorrectionPostProcess

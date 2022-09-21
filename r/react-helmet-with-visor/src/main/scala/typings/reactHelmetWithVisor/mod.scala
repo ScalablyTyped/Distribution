@@ -7,6 +7,8 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.HtmlHTMLAttributes
 import typings.react.mod.LinkHTMLAttributes
 import typings.react.mod.MetaHTMLAttributes
+import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.std.HTMLBodyElement
 import typings.std.HTMLHtmlElement
 import typings.std.HTMLLinkElement
@@ -25,13 +27,13 @@ object mod {
   
   @JSImport("react-helmet-with-visor", JSImport.Default)
   @js.native
-  class default protected () extends Helmet {
+  open class default protected () extends Helmet {
     def this(props: HelmetProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: HelmetProps, context: js.Any) = this()
+    def this(props: HelmetProps, context: Any) = this()
   }
   /* static members */
   object default {
@@ -54,14 +56,14 @@ object mod {
   
   @JSImport("react-helmet-with-visor", "Helmet")
   @js.native
-  class Helmet protected ()
-    extends Component[HelmetProps, js.Object, js.Any] {
+  open class Helmet protected ()
+    extends Component[HelmetProps, js.Object, Any] {
     def this(props: HelmetProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: HelmetProps, context: js.Any) = this()
+    def this(props: HelmetProps, context: Any) = this()
   }
   /* static members */
   object Helmet {
@@ -84,14 +86,14 @@ object mod {
   
   @JSImport("react-helmet-with-visor", "HelmetsOpenedVisor")
   @js.native
-  class HelmetsOpenedVisor protected ()
-    extends Component[js.Object, js.Object, js.Any] {
+  open class HelmetsOpenedVisor protected ()
+    extends Component[js.Object, js.Object, Any] {
     def this(props: js.Object) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Object, context: js.Any) = this()
+    def this(props: js.Object, context: Any) = this()
   }
   
   @JSImport("react-helmet-with-visor", "canUseDOM")
@@ -177,18 +179,18 @@ object mod {
   
   trait HelmetDatum extends StObject {
     
-    def toComponent(): Component[js.Any, js.Object, js.Any]
+    def toComponent(): ReactElement
   }
   object HelmetDatum {
     
-    inline def apply(toComponent: () => Component[js.Any, js.Object, js.Any]): HelmetDatum = {
+    inline def apply(toComponent: () => ReactElement): HelmetDatum = {
       val __obj = js.Dynamic.literal(toComponent = js.Any.fromFunction0(toComponent))
       __obj.asInstanceOf[HelmetDatum]
     }
     
     extension [Self <: HelmetDatum](x: Self) {
       
-      inline def setToComponent(value: () => Component[js.Any, js.Object, js.Any]): Self = StObject.set(x, "toComponent", js.Any.fromFunction0(value))
+      inline def setToComponent(value: () => ReactElement): Self = StObject.set(x, "toComponent", js.Any.fromFunction0(value))
     }
   }
   
@@ -230,9 +232,11 @@ object mod {
     
     var async: js.UndefOr[Boolean] = js.undefined
     
-    var base: js.UndefOr[js.Any] = js.undefined
+    var base: js.UndefOr[Any] = js.undefined
     
     var bodyAttributes: js.UndefOr[BodyProps] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var defaultTitle: js.UndefOr[String] = js.undefined
     
@@ -246,15 +250,15 @@ object mod {
     
     var meta: js.UndefOr[js.Array[MetaProps]] = js.undefined
     
-    var noscript: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var noscript: js.UndefOr[js.Array[Any]] = js.undefined
     
     var onChangeClientState: js.UndefOr[
-        js.Function3[/* newState */ js.Any, /* addedTags */ HelmetTags, /* removedTags */ HelmetTags, Unit]
+        js.Function3[/* newState */ Any, /* addedTags */ HelmetTags, /* removedTags */ HelmetTags, Unit]
       ] = js.undefined
     
-    var script: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var script: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var style: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var style: js.UndefOr[js.Array[Any]] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
@@ -275,13 +279,17 @@ object mod {
       
       inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      inline def setBase(value: js.Any): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: Any): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
       inline def setBodyAttributes(value: BodyProps): Self = StObject.set(x, "bodyAttributes", value.asInstanceOf[js.Any])
       
       inline def setBodyAttributesUndefined: Self = StObject.set(x, "bodyAttributes", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDefaultTitle(value: String): Self = StObject.set(x, "defaultTitle", value.asInstanceOf[js.Any])
       
@@ -303,35 +311,35 @@ object mod {
       
       inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      inline def setLinkVarargs(value: LinkProps*): Self = StObject.set(x, "link", js.Array(value :_*))
+      inline def setLinkVarargs(value: LinkProps*): Self = StObject.set(x, "link", js.Array(value*))
       
       inline def setMeta(value: js.Array[MetaProps]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      inline def setMetaVarargs(value: MetaProps*): Self = StObject.set(x, "meta", js.Array(value :_*))
+      inline def setMetaVarargs(value: MetaProps*): Self = StObject.set(x, "meta", js.Array(value*))
       
-      inline def setNoscript(value: js.Array[js.Any]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
+      inline def setNoscript(value: js.Array[Any]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
       
       inline def setNoscriptUndefined: Self = StObject.set(x, "noscript", js.undefined)
       
-      inline def setNoscriptVarargs(value: js.Any*): Self = StObject.set(x, "noscript", js.Array(value :_*))
+      inline def setNoscriptVarargs(value: Any*): Self = StObject.set(x, "noscript", js.Array(value*))
       
-      inline def setOnChangeClientState(value: (/* newState */ js.Any, /* addedTags */ HelmetTags, /* removedTags */ HelmetTags) => Unit): Self = StObject.set(x, "onChangeClientState", js.Any.fromFunction3(value))
+      inline def setOnChangeClientState(value: (/* newState */ Any, /* addedTags */ HelmetTags, /* removedTags */ HelmetTags) => Unit): Self = StObject.set(x, "onChangeClientState", js.Any.fromFunction3(value))
       
       inline def setOnChangeClientStateUndefined: Self = StObject.set(x, "onChangeClientState", js.undefined)
       
-      inline def setScript(value: js.Array[js.Any]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: js.Array[Any]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
       inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
       
-      inline def setScriptVarargs(value: js.Any*): Self = StObject.set(x, "script", js.Array(value :_*))
+      inline def setScriptVarargs(value: Any*): Self = StObject.set(x, "script", js.Array(value*))
       
-      inline def setStyle(value: js.Array[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Array[Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: js.Any*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: Any*): Self = StObject.set(x, "style", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -349,15 +357,15 @@ object mod {
   
   trait HelmetTags extends StObject {
     
-    var baseTag: js.Array[js.Any]
+    var baseTag: js.Array[Any]
     
     var linkTags: js.Array[HTMLLinkElement]
     
     var metaTags: js.Array[HTMLMetaElement]
     
-    var noscriptTags: js.Array[js.Any]
+    var noscriptTags: js.Array[Any]
     
-    var openedVisorTags: js.Array[js.Any]
+    var openedVisorTags: js.Array[Any]
     
     var scriptTags: js.Array[HTMLScriptElement]
     
@@ -366,11 +374,11 @@ object mod {
   object HelmetTags {
     
     inline def apply(
-      baseTag: js.Array[js.Any],
+      baseTag: js.Array[Any],
       linkTags: js.Array[HTMLLinkElement],
       metaTags: js.Array[HTMLMetaElement],
-      noscriptTags: js.Array[js.Any],
-      openedVisorTags: js.Array[js.Any],
+      noscriptTags: js.Array[Any],
+      openedVisorTags: js.Array[Any],
       scriptTags: js.Array[HTMLScriptElement],
       styleTags: js.Array[HTMLStyleElement]
     ): HelmetTags = {
@@ -380,33 +388,33 @@ object mod {
     
     extension [Self <: HelmetTags](x: Self) {
       
-      inline def setBaseTag(value: js.Array[js.Any]): Self = StObject.set(x, "baseTag", value.asInstanceOf[js.Any])
+      inline def setBaseTag(value: js.Array[Any]): Self = StObject.set(x, "baseTag", value.asInstanceOf[js.Any])
       
-      inline def setBaseTagVarargs(value: js.Any*): Self = StObject.set(x, "baseTag", js.Array(value :_*))
+      inline def setBaseTagVarargs(value: Any*): Self = StObject.set(x, "baseTag", js.Array(value*))
       
       inline def setLinkTags(value: js.Array[HTMLLinkElement]): Self = StObject.set(x, "linkTags", value.asInstanceOf[js.Any])
       
-      inline def setLinkTagsVarargs(value: HTMLLinkElement*): Self = StObject.set(x, "linkTags", js.Array(value :_*))
+      inline def setLinkTagsVarargs(value: HTMLLinkElement*): Self = StObject.set(x, "linkTags", js.Array(value*))
       
       inline def setMetaTags(value: js.Array[HTMLMetaElement]): Self = StObject.set(x, "metaTags", value.asInstanceOf[js.Any])
       
-      inline def setMetaTagsVarargs(value: HTMLMetaElement*): Self = StObject.set(x, "metaTags", js.Array(value :_*))
+      inline def setMetaTagsVarargs(value: HTMLMetaElement*): Self = StObject.set(x, "metaTags", js.Array(value*))
       
-      inline def setNoscriptTags(value: js.Array[js.Any]): Self = StObject.set(x, "noscriptTags", value.asInstanceOf[js.Any])
+      inline def setNoscriptTags(value: js.Array[Any]): Self = StObject.set(x, "noscriptTags", value.asInstanceOf[js.Any])
       
-      inline def setNoscriptTagsVarargs(value: js.Any*): Self = StObject.set(x, "noscriptTags", js.Array(value :_*))
+      inline def setNoscriptTagsVarargs(value: Any*): Self = StObject.set(x, "noscriptTags", js.Array(value*))
       
-      inline def setOpenedVisorTags(value: js.Array[js.Any]): Self = StObject.set(x, "openedVisorTags", value.asInstanceOf[js.Any])
+      inline def setOpenedVisorTags(value: js.Array[Any]): Self = StObject.set(x, "openedVisorTags", value.asInstanceOf[js.Any])
       
-      inline def setOpenedVisorTagsVarargs(value: js.Any*): Self = StObject.set(x, "openedVisorTags", js.Array(value :_*))
+      inline def setOpenedVisorTagsVarargs(value: Any*): Self = StObject.set(x, "openedVisorTags", js.Array(value*))
       
       inline def setScriptTags(value: js.Array[HTMLScriptElement]): Self = StObject.set(x, "scriptTags", value.asInstanceOf[js.Any])
       
-      inline def setScriptTagsVarargs(value: HTMLScriptElement*): Self = StObject.set(x, "scriptTags", js.Array(value :_*))
+      inline def setScriptTagsVarargs(value: HTMLScriptElement*): Self = StObject.set(x, "scriptTags", js.Array(value*))
       
       inline def setStyleTags(value: js.Array[HTMLStyleElement]): Self = StObject.set(x, "styleTags", value.asInstanceOf[js.Any])
       
-      inline def setStyleTagsVarargs(value: HTMLStyleElement*): Self = StObject.set(x, "styleTags", js.Array(value :_*))
+      inline def setStyleTagsVarargs(value: HTMLStyleElement*): Self = StObject.set(x, "styleTags", js.Array(value*))
     }
   }
   

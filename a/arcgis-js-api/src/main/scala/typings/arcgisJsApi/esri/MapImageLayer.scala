@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`map-image`
 import typings.arcgisJsApi.arcgisJsApiStrings.bmp
 import typings.arcgisJsApi.arcgisJsApiStrings.gif
@@ -10,6 +11,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.png24
 import typings.arcgisJsApi.arcgisJsApiStrings.png32
 import typings.arcgisJsApi.arcgisJsApiStrings.png8
 import typings.arcgisJsApi.arcgisJsApiStrings.pngjpg
+import typings.arcgisJsApi.arcgisJsApiStrings.refresh
 import typings.arcgisJsApi.arcgisJsApiStrings.svg
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
@@ -25,7 +27,8 @@ trait MapImageLayer
      with ScaleRangeLayer
      with RefreshableLayer
      with TemporalLayer
-     with BlendLayer {
+     with BlendLayer
+     with CustomParametersMixin {
   
   /**
     * A flat [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of all the [sublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#sublayers) in the MapImageLayer including the sublayers of its sublayers.
@@ -53,16 +56,27 @@ trait MapImageLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#createExportImageParameters)
     */
-  def createExportImageParameters(extent: Extent, width: Double, height: Double): js.Any = js.native
+  def createExportImageParameters(extent: Extent, width: Double, height: Double): Any = js.native
   def createExportImageParameters(
     extent: Extent,
     width: Double,
     height: Double,
     options: MapImageLayerCreateExportImageParametersOptions
-  ): js.Any = js.native
+  ): Any = js.native
+  
+  /**
+    * This property is set by the service publisher and indicates that dates should be considered without the local timezone.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#datesInUnknownTimezone)
+    */
+  val datesInUnknownTimezone: Boolean = js.native
   
   /**
     * The output dots per inch (DPI) of the MapImageLayer.
+    *
+    * @default 96
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#dpi)
     */
@@ -86,12 +100,16 @@ trait MapImageLayer
   /**
     * The output image type.
     *
+    * @default png24
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#imageFormat)
     */
   var imageFormat: png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg | pngjpg = js.native
   
   /**
     * Indicates the maximum height of the image exported by the service.
+    *
+    * @default 2048
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#imageMaxHeight)
     */
@@ -100,6 +118,8 @@ trait MapImageLayer
   /**
     * Indicates the maximum width of the image exported by the service.
     *
+    * @default 2048
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#imageMaxWidth)
     */
   var imageMaxWidth: Double = js.native
@@ -107,12 +127,16 @@ trait MapImageLayer
   /**
     * Indicates whether the background of the image exported by the service is transparent.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#imageTransparency)
     */
   var imageTransparency: Boolean = js.native
   
   /**
     * Indicates whether the layer will be included in the legend.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#legendEnabled)
     */
@@ -124,6 +148,9 @@ trait MapImageLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#loadAll)
     */
   def loadAll(): js.Promise[Sublayer] = js.native
+  
+  @JSName("on")
+  def on_refresh(name: refresh, eventHandler: MapImageLayerRefreshEventHandler): IHandle = js.native
   
   /**
     * The portal item from which the layer is loaded.
@@ -137,7 +164,7 @@ trait MapImageLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#sourceJSON)
     */
-  var sourceJSON: js.Any = js.native
+  var sourceJSON: Any = js.native
   
   /**
     * The spatial reference of the layer as defined by the service.

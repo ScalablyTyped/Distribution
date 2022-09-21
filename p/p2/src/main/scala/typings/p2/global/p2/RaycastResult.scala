@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.RaycastResult")
 @js.native
-class RaycastResult ()
+open class RaycastResult ()
   extends typings.p2.mod.RaycastResult

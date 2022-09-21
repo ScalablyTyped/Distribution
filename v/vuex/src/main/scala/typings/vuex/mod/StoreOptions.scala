@@ -55,7 +55,7 @@ object StoreOptions {
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    inline def setPluginsVarargs(value: Plugin[S]*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: Plugin[S]*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setState(value: S | js.Function0[S]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

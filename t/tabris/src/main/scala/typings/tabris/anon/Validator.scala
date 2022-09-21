@@ -12,7 +12,7 @@ trait Validator[ResourceType]
   
   var `type`: Constructor[ResourceType]
   
-  var validator: js.UndefOr[js.Function1[/* value */ js.Any, /* is ResourceType */ Boolean]] = js.undefined
+  var validator: js.UndefOr[js.Function1[/* value */ Any, /* is ResourceType */ Boolean]] = js.undefined
 }
 object Validator {
   
@@ -26,7 +26,7 @@ object Validator {
     
     inline def setType(value: Constructor[ResourceType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValidator(value: /* value */ js.Any => /* is ResourceType */ Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
+    inline def setValidator(value: /* value */ Any => /* is ResourceType */ Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
     
     inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
   }

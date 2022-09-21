@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postman-collection", "PropertyBase")
 @js.native
-class PropertyBase[TDefinition /* <: js.Object */] ()
+open class PropertyBase[TDefinition /* <: js.Object */] ()
   extends StObject
      with PropertyBaseDefinition {
   def this(definition: String) = this()
@@ -21,15 +21,12 @@ class PropertyBase[TDefinition /* <: js.Object */] ()
     customizer: js.Function1[/* item */ PropertyBase[PropertyBaseDefinition], Boolean]
   ): PropertyBase[PropertyBaseDefinition] = js.native
   
-  def findParentContaining(
-    property: js.Any,
-    customizer: js.Function1[/* item */ PropertyBase[PropertyBaseDefinition], Boolean]
-  ): PropertyBase[PropertyBaseDefinition] = js.native
+  def findParentContaining(property: Any, customizer: js.Function1[/* item */ PropertyBase[PropertyBaseDefinition], Boolean]): PropertyBase[PropertyBaseDefinition] = js.native
   
-  def forEachParent(iterator: js.Function1[/* item */ js.Any, Unit]): Unit = js.native
-  def forEachParent(options: WithRoot, iterator: js.Function1[/* item */ js.Any, Unit]): Unit = js.native
+  def forEachParent(iterator: js.Function1[/* item */ Any, Unit]): Unit = js.native
+  def forEachParent(options: WithRoot, iterator: js.Function1[/* item */ Any, Unit]): Unit = js.native
   
-  def meta(): js.Any = js.native
+  def meta(): Any = js.native
   
   def parent(): js.UndefOr[PropertyBase[PropertyBaseDefinition]] = js.native
   
@@ -44,9 +41,9 @@ object PropertyBase {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def propertyIsMeta(_value: js.Any, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("propertyIsMeta")(_value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def propertyIsMeta(_value: Any, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("propertyIsMeta")(_value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def propertyUnprefixMeta(_value: js.Any, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("propertyUnprefixMeta")(_value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def propertyUnprefixMeta(_value: Any, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("propertyUnprefixMeta")(_value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def toJSON(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def toJSON(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

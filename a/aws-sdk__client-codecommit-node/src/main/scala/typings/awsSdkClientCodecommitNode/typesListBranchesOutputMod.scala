@@ -43,7 +43,7 @@ object typesListBranchesOutputMod {
       
       inline def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
       
-      inline def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value :_*))
+      inline def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value*))
       
       inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       

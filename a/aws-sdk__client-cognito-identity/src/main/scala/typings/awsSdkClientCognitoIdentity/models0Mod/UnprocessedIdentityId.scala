@@ -23,12 +23,6 @@ object UnprocessedIdentityId {
     __obj.asInstanceOf[UnprocessedIdentityId]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "UnprocessedIdentityId")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: UnprocessedIdentityId): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: UnprocessedIdentityId](x: Self) {
     
     inline def setErrorCode(value: ErrorCode | String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])

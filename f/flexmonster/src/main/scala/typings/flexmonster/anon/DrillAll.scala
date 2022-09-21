@@ -25,7 +25,7 @@ object DrillAll {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: Measure*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Measure*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setDrillAll(value: Boolean): Self = StObject.set(x, "drillAll", value.asInstanceOf[js.Any])
     
@@ -35,6 +35,6 @@ object DrillAll {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: Measure*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Measure*): Self = StObject.set(x, "rows", js.Array(value*))
   }
 }

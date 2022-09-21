@@ -31,7 +31,7 @@ trait DependencyInfo extends StObject {
   @JSName("OutOfDateObjects")
   val OutOfDateObjects_Original: DependencyObjects
   
-  val Parent: js.Any
+  val Parent: Any
   
   def UnsupportedObjects(Index: String): AccessObject
   def UnsupportedObjects(Index: Double): AccessObject
@@ -47,7 +47,7 @@ object DependencyInfo {
     InsufficientPermissions: DependencyObjects,
     IsMemberSafe: Double => Boolean,
     OutOfDateObjects: DependencyObjects,
-    Parent: js.Any,
+    Parent: Any,
     UnsupportedObjects: DependencyObjects
   ): DependencyInfo = {
     val __obj = js.Dynamic.literal(Dependants = Dependants.asInstanceOf[js.Any], Dependencies = Dependencies.asInstanceOf[js.Any], InsufficientPermissions = InsufficientPermissions.asInstanceOf[js.Any], IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), OutOfDateObjects = OutOfDateObjects.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], UnsupportedObjects = UnsupportedObjects.asInstanceOf[js.Any])
@@ -69,7 +69,7 @@ object DependencyInfo {
     
     inline def setOutOfDateObjects(value: DependencyObjects): Self = StObject.set(x, "OutOfDateObjects", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setUnsupportedObjects(value: DependencyObjects): Self = StObject.set(x, "UnsupportedObjects", value.asInstanceOf[js.Any])
   }

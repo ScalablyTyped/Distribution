@@ -10,8 +10,8 @@ object eventAggregatorMod {
   
   @JSImport("openfin/_v2/api/events/eventAggregator", "EventAggregator")
   @js.native
-  class EventAggregator () extends EmitterMap {
+  open class EventAggregator () extends EmitterMap {
     
-    def dispatchEvent(message: Message[js.Any]): Boolean = js.native
+    def dispatchEvent(message: Message[Any]): Boolean = js.native
   }
 }

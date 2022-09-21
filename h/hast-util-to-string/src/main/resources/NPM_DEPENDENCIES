@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "hast-util-to-string" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "hast-util-to-string" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

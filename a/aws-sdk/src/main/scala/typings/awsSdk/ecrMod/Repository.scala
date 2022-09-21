@@ -9,7 +9,7 @@ trait Repository extends StObject {
   /**
     * The date and time, in JavaScript date format, when the repository was created.
     */
-  var createdAt: js.UndefOr[CreationTimestamp] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The encryption configuration for the repository. This determines how the contents of your repository are encrypted at rest.
@@ -24,12 +24,12 @@ trait Repository extends StObject {
   var imageTagMutability: js.UndefOr[ImageTagMutability] = js.undefined
   
   /**
-    * The AWS account ID associated with the registry that contains the repository.
+    * The Amazon Web Services account ID associated with the registry that contains the repository.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) that identifies the repository. The ARN contains the arn:aws:ecr namespace, followed by the region of the repository, AWS account ID of the repository owner, repository namespace, and repository name. For example, arn:aws:ecr:region:012345678910:repository/test.
+    * The Amazon Resource Name (ARN) that identifies the repository. The ARN contains the arn:aws:ecr namespace, followed by the region of the repository, Amazon Web Services account ID of the repository owner, repository namespace, and repository name. For example, arn:aws:ecr:region:012345678910:repository/test.
     */
   var repositoryArn: js.UndefOr[Arn] = js.undefined
   
@@ -52,7 +52,7 @@ object Repository {
   
   extension [Self <: Repository](x: Self) {
     
-    inline def setCreatedAt(value: CreationTimestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     

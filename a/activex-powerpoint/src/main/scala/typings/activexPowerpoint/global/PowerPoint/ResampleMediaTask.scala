@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ResampleMediaTask")
 @js.native
-/* private */ class ResampleMediaTask ()
+/* private */ open class ResampleMediaTask ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ResampleMediaTask {
   

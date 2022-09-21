@@ -8,5 +8,5 @@ object setVaultNotificationsOutputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/SetVaultNotificationsOutput", "SetVaultNotificationsOutput")
   @js.native
-  val SetVaultNotificationsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SetVaultNotificationsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

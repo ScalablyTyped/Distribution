@@ -1,7 +1,9 @@
 package typings.carbonComponentsReact
 
 import org.scalablytyped.runtime.Shortcut
+import typings.carbonComponentsReact.carbonComponentsReactStrings.lg
 import typings.carbonComponentsReact.carbonComponentsReactStrings.normal
+import typings.carbonComponentsReact.carbonComponentsReactStrings.sm
 import typings.carbonComponentsReact.carbonComponentsReactStrings.small
 import typings.react.mod.FC
 import typings.react.mod.HTMLAttributes
@@ -20,7 +22,7 @@ object tableToolbarMod extends Shortcut {
     extends StObject
        with HTMLAttributes[HTMLElement] {
     
-    var size: js.UndefOr[normal | small] = js.undefined
+    var size: js.UndefOr[lg | normal | sm | small] = js.undefined
   }
   object TableToolbarProps {
     
@@ -31,7 +33,7 @@ object tableToolbarMod extends Shortcut {
     
     extension [Self <: TableToolbarProps](x: Self) {
       
-      inline def setSize(value: normal | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: lg | normal | sm | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }

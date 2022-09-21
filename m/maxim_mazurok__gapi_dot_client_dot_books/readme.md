@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_books
 
-Typings are for version 1.0.20201116
+Typings are for version 1.0.20220810
 
 ## Library description:
 TypeScript typings for Books API v1
@@ -10,10 +10,10 @@ TypeScript typings for Books API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.books |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 1 |
-| # downloads        | 1634 |
-| # stars            | 0 |
+| # releases         | 137 |
+| # dependents       | 0.0 |
+| # downloads        | 1282.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

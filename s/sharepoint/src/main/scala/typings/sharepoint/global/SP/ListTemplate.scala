@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ListTemplate")
 @js.native
-class ListTemplate ()
+open class ListTemplate ()
   extends StObject
      with typings.sharepoint.SP.ListTemplate

@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * @param GameConfig The configuration object for your Phaser Game instance.
   */
-class Game ()
+open class Game ()
   extends StObject
      with typings.phaser.Phaser.Game {
   def this(GameConfig: typings.phaser.Phaser.Types.Core.GameConfig) = this()

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.RayHelper")
 @js.native
-class RayHelper protected ()
+open class RayHelper protected ()
   extends StObject
      with typings.babylonjs.BABYLON.RayHelper {
   /**

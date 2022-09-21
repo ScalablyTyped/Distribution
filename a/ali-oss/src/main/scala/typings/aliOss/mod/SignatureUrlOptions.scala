@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SignatureUrlOptions extends StObject {
   
-  // the HTTP method, default is 'GET'
+  /** set the request content type */
   var `Content-Type`: js.UndefOr[String] = js.undefined
   
-  // set the response headers for download
   var callback: js.UndefOr[ObjectCallback] = js.undefined
   
+  /** after expires seconds, the url will become invalid, default is 1800 */
   var expires: js.UndefOr[Double] = js.undefined
   
-  // after expires seconds, the url will become invalid, default is 1800
+  /** the HTTP method, default is 'GET' */
   var method: js.UndefOr[HTTPMethods] = js.undefined
   
-  // set the request content type
   var process: js.UndefOr[String] = js.undefined
   
+  /** set the response headers for download */
   var response: js.UndefOr[ResponseHeaderType] = js.undefined
 }
 object SignatureUrlOptions {

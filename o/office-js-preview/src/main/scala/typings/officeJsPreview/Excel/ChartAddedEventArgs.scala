@@ -8,41 +8,41 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the chart that raised the added event.
   *
-  * Provides information about the chart that raised the Added event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait ChartAddedEventArgs extends StObject {
   
   /**
+    * Gets the ID of the chart that is added to the worksheet.
     *
-    * Gets the id of the chart that is added to the worksheet.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var chartId: String
   
   /**
+    * Gets the source of the event. See `Excel.EventSource` for details.
     *
-    * Gets the source of the event. See Excel.EventSource for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var source: EventSource | Local | Remote
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var `type`: ChartAdded
   
   /**
+    * Gets the ID of the worksheet in which the chart is added.
     *
-    * Gets the id of the worksheet in which the chart is added.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var worksheetId: String

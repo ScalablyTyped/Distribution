@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListManagedPoliciesInPermissionSetResponse extends StObject {
   
   /**
-    * The array of the AttachedManagedPolicy data type object.
+    * An array of the AttachedManagedPolicy data type object.
     */
   var AttachedManagedPolicies: js.UndefOr[AttachedManagedPolicyList] = js.undefined
   
@@ -29,7 +29,7 @@ object ListManagedPoliciesInPermissionSetResponse {
     
     inline def setAttachedManagedPoliciesUndefined: Self = StObject.set(x, "AttachedManagedPolicies", js.undefined)
     
-    inline def setAttachedManagedPoliciesVarargs(value: AttachedManagedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value :_*))
+    inline def setAttachedManagedPoliciesVarargs(value: AttachedManagedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

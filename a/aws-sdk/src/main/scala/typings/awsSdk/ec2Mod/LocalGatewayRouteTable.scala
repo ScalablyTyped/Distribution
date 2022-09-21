@@ -22,12 +22,17 @@ trait LocalGatewayRouteTable extends StObject {
   var LocalGatewayRouteTableId: js.UndefOr[String] = js.undefined
   
   /**
+    * The mode of the local gateway route table.
+    */
+  var Mode: js.UndefOr[LocalGatewayRouteTableMode] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the Outpost.
     */
   var OutpostArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS account ID that owns the local gateway route table.
+    * The ID of the Amazon Web Services account that owns the local gateway route table.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -35,6 +40,8 @@ trait LocalGatewayRouteTable extends StObject {
     * The state of the local gateway route table.
     */
   var State: js.UndefOr[String] = js.undefined
+  
+  var StateReason: js.UndefOr[typings.awsSdk.ec2Mod.StateReason] = js.undefined
   
   /**
     * The tags assigned to the local gateway route table.
@@ -62,6 +69,10 @@ object LocalGatewayRouteTable {
     
     inline def setLocalGatewayRouteTableIdUndefined: Self = StObject.set(x, "LocalGatewayRouteTableId", js.undefined)
     
+    inline def setMode(value: LocalGatewayRouteTableMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
+    
     inline def setOutpostArn(value: String): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
     
     inline def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
@@ -72,12 +83,16 @@ object LocalGatewayRouteTable {
     
     inline def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
+    inline def setStateReason(value: StateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
+    
+    inline def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
+    
     inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

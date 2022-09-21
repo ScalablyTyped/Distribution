@@ -1,7 +1,7 @@
 
 # Scala.js typings for process-exists
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Check if a process is running
@@ -10,10 +10,10 @@ Check if a process is running
 | ------------------ | :-------------: |
 | Full name          | process-exists |
 | Keywords           | process, processes, proc, ps, pid, test, testing, exists, running, check |
-| # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 7882554 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 672439.3333333334 |
+| # stars            | 54.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/process-exists#readme)

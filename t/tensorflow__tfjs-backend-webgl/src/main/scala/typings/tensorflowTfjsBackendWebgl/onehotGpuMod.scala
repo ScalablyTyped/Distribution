@@ -10,7 +10,7 @@ object onehotGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/onehot_gpu", "OneHotProgram")
   @js.native
-  class OneHotProgram protected ()
+  open class OneHotProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(numIndices: Double, depth: Double, onValue: Double, offValue: Double) = this()

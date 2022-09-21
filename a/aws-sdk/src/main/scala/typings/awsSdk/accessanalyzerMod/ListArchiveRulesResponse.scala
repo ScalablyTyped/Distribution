@@ -27,7 +27,7 @@ object ListArchiveRulesResponse {
     
     inline def setArchiveRules(value: ArchiveRulesList): Self = StObject.set(x, "archiveRules", value.asInstanceOf[js.Any])
     
-    inline def setArchiveRulesVarargs(value: ArchiveRuleSummary*): Self = StObject.set(x, "archiveRules", js.Array(value :_*))
+    inline def setArchiveRulesVarargs(value: ArchiveRuleSummary*): Self = StObject.set(x, "archiveRules", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

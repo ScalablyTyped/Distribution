@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.FieldMultiChoice")
 @js.native
-class FieldMultiChoice ()
+open class FieldMultiChoice ()
   extends StObject
      with typings.sharepoint.SP.FieldMultiChoice

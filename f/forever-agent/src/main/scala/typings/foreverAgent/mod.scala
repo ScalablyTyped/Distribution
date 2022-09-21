@@ -14,7 +14,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("forever-agent", JSImport.Namespace)
   @js.native
-  class ^ () extends Agent {
+  open class ^ () extends Agent {
     def this(options: ForeverAgentOptions) = this()
   }
   @JSImport("forever-agent", JSImport.Namespace)
@@ -24,7 +24,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("forever-agent", "SSL")
   @js.native
-  class SSL () extends Agent {
+  open class SSL () extends Agent {
     def this(options: ForeverAgentOptions) = this()
   }
   

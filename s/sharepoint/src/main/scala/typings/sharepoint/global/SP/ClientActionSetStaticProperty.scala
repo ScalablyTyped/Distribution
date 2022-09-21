@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ClientActionSetStaticProperty")
 @js.native
-class ClientActionSetStaticProperty protected ()
+open class ClientActionSetStaticProperty protected ()
   extends StObject
      with typings.sharepoint.SP.ClientAction {
   def this(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     typeId: String,
     propName: String,
-    propValue: js.Any
+    propValue: Any
   ) = this()
   
   /* CompleteClass */

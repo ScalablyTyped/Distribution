@@ -50,7 +50,7 @@ object RTCPeerConnection {
       
       inline def setIceServers(value: js.Array[RTCIceServer]): Self = StObject.set(x, "iceServers", value.asInstanceOf[js.Any])
       
-      inline def setIceServersVarargs(value: RTCIceServer*): Self = StObject.set(x, "iceServers", js.Array(value :_*))
+      inline def setIceServersVarargs(value: RTCIceServer*): Self = StObject.set(x, "iceServers", js.Array(value*))
       
       inline def setIceTransports(value: String): Self = StObject.set(x, "iceTransports", value.asInstanceOf[js.Any])
       
@@ -163,7 +163,7 @@ object RTCPeerConnection {
       
       inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
       
-      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
       
       inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
@@ -243,8 +243,8 @@ object RTCPeerConnection {
     
     def getSignalingState(): js.Promise[String] = js.native
     
-    def getStats(): js.Promise[js.Any] = js.native
-    def getStats(selector: String): js.Promise[js.Any] = js.native
+    def getStats(): js.Promise[Any] = js.native
+    def getStats(selector: String): js.Promise[Any] = js.native
     
     def getStreamById(id: String): js.Promise[String] = js.native
     

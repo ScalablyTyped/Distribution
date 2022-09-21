@@ -118,9 +118,7 @@ object tablesTypesMod {
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setDefaultVarargs(
-        value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value */ js.Object)*
-      ): Self = StObject.set(x, "default", js.Array(value :_*))
+      inline def setDefaultVarargs(value: Any*): Self = StObject.set(x, "default", js.Array(value*))
       
       inline def setGenerated(value: `false` | SequenceGeneratedOptions): Self = StObject.set(x, "generated", value.asInstanceOf[js.Any])
       
@@ -245,9 +243,7 @@ object tablesTypesMod {
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setDefaultVarargs(
-        value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value */ js.Object)*
-      ): Self = StObject.set(x, "default", js.Array(value :_*))
+      inline def setDefaultVarargs(value: Any*): Self = StObject.set(x, "default", js.Array(value*))
       
       inline def setDeferrable(value: Boolean): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
       
@@ -342,7 +338,7 @@ object tablesTypesMod {
       
       inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
       
-      inline def setCheckVarargs(value: String*): Self = StObject.set(x, "check", js.Array(value :_*))
+      inline def setCheckVarargs(value: String*): Self = StObject.set(x, "check", js.Array(value*))
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -364,27 +360,29 @@ object tablesTypesMod {
       
       inline def setForeignKeysUndefined: Self = StObject.set(x, "foreignKeys", js.undefined)
       
-      inline def setForeignKeysVarargs(value: ForeignKeyOptions*): Self = StObject.set(x, "foreignKeys", js.Array(value :_*))
+      inline def setForeignKeysVarargs(value: ForeignKeyOptions*): Self = StObject.set(x, "foreignKeys", js.Array(value*))
       
       inline def setPrimaryKey(value: Name | js.Array[Name]): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
       
       inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
       
-      inline def setPrimaryKeyVarargs(value: Name*): Self = StObject.set(x, "primaryKey", js.Array(value :_*))
+      inline def setPrimaryKeyVarargs(value: Name*): Self = StObject.set(x, "primaryKey", js.Array(value*))
       
       inline def setUnique(value: Name | (js.Array[Name | js.Array[Name]])): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
       
       inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
       
-      inline def setUniqueVarargs(value: (Name | js.Array[Name])*): Self = StObject.set(x, "unique", js.Array(value :_*))
+      inline def setUniqueVarargs(value: (Name | js.Array[Name])*): Self = StObject.set(x, "unique", js.Array(value*))
     }
   }
   
   @js.native
   trait CreateConstraint extends CreateConstraintFn {
     
-    def reverse(tableName: Name, constraintName: String, expression: (String | ConstraintOptions) & DropOptions): String | js.Array[String] = js.native
-    def reverse(tableName: Name, constraintName: Null, expression: (String | ConstraintOptions) & DropOptions): String | js.Array[String] = js.native
+    def reverse(tableName: Name, constraintName: String, expression: String & DropOptions): String | js.Array[String] = js.native
+    def reverse(tableName: Name, constraintName: String, expression: ConstraintOptions & DropOptions): String | js.Array[String] = js.native
+    def reverse(tableName: Name, constraintName: Null, expression: String & DropOptions): String | js.Array[String] = js.native
+    def reverse(tableName: Name, constraintName: Null, expression: ConstraintOptions & DropOptions): String | js.Array[String] = js.native
     @JSName("reverse")
     var reverse_Original: CreateConstraintFn = js.native
   }
@@ -392,7 +390,7 @@ object tablesTypesMod {
   type CreateConstraintFn = js.Function3[
     /* tableName */ Name, 
     /* constraintName */ String | Null, 
-    /* expression */ (String | ConstraintOptions) & DropOptions, 
+    /* expression */ (String & DropOptions) | (ConstraintOptions & DropOptions), 
     String | js.Array[String]
   ]
   
@@ -414,7 +412,7 @@ object tablesTypesMod {
   
   type DropColumns = js.Function3[
     /* tableName */ Name, 
-    /* columns */ String | js.Array[String] | StringDictionary[js.Any], 
+    /* columns */ String | js.Array[String] | StringDictionary[Any], 
     /* dropOptions */ js.UndefOr[DropOptions], 
     String | js.Array[String]
   ]
@@ -449,7 +447,7 @@ object tablesTypesMod {
       
       inline def setColumns(value: Name | js.Array[Name]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: Name*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Name*): Self = StObject.set(x, "columns", js.Array(value*))
     }
   }
   
@@ -502,13 +500,13 @@ object tablesTypesMod {
       
       inline def setExcludingUndefined: Self = StObject.set(x, "excluding", js.undefined)
       
-      inline def setExcludingVarargs(value: Like*): Self = StObject.set(x, "excluding", js.Array(value :_*))
+      inline def setExcludingVarargs(value: Like*): Self = StObject.set(x, "excluding", js.Array(value*))
       
       inline def setIncluding(value: Like | js.Array[Like]): Self = StObject.set(x, "including", value.asInstanceOf[js.Any])
       
       inline def setIncludingUndefined: Self = StObject.set(x, "including", js.undefined)
       
-      inline def setIncludingVarargs(value: Like*): Self = StObject.set(x, "including", js.Array(value :_*))
+      inline def setIncludingVarargs(value: Like*): Self = StObject.set(x, "including", js.Array(value*))
     }
   }
   

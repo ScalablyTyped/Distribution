@@ -43,11 +43,32 @@ trait SliderViewModel
   def defaultLabelFormatFunction(value: Double): String = js.native
   
   /**
+    * When set, the user is restricted from moving slider thumbs to positions higher than this value.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#effectiveMax)
+    */
+  var effectiveMax: Double = js.native
+  
+  /**
+    * When set, the user is restricted from moving slider thumbs to positions less than this value.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#effectiveMin)
+    */
+  var effectiveMin: Double = js.native
+  
+  /**
+    * Returns the effective bounds of the slider.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#getBounds)
+    */
+  def getBounds(): Bounds = js.native
+  
+  /**
     * Returns the min and max bounds for a 'value' at the provided index.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#getBoundsForValueAtIndex)
     */
-  def getBoundsForValueAtIndex(index: Double): js.Any = js.native
+  def getBoundsForValueAtIndex(index: Double): Any = js.native
   
   /**
     * Returns the formatted label for a provided value.
@@ -55,23 +76,9 @@ trait SliderViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#getLabelForValue)
     */
   def getLabelForValue(value: Double): String = js.native
-  def getLabelForValue(value: Double, `type`: Unit, index: Double): String = js.native
-  @JSName("getLabelForValue")
-  def getLabelForValue_max(value: Double, `type`: max): String = js.native
-  @JSName("getLabelForValue")
-  def getLabelForValue_max(value: Double, `type`: max, index: Double): String = js.native
-  @JSName("getLabelForValue")
-  def getLabelForValue_min(value: Double, `type`: min): String = js.native
-  @JSName("getLabelForValue")
-  def getLabelForValue_min(value: Double, `type`: min, index: Double): String = js.native
-  @JSName("getLabelForValue")
-  def getLabelForValue_tick(value: Double, `type`: tick): String = js.native
-  @JSName("getLabelForValue")
-  def getLabelForValue_tick(value: Double, `type`: tick, index: Double): String = js.native
-  @JSName("getLabelForValue")
-  def getLabelForValue_values(value: Double, `type`: values): String = js.native
-  @JSName("getLabelForValue")
-  def getLabelForValue_values(value: Double, `type`: values, index: Double): String = js.native
+  def getLabelForValue(value: Double, `type`: min | max | tick | values): String = js.native
+  def getLabelForValue(value: Double, `type`: min | max | tick | values, index: Double): String = js.native
+  def getLabelForValue(value: Double, `type`: scala.Unit, index: Double): String = js.native
   
   /**
     * A function used to format user inputs.
@@ -79,7 +86,9 @@ trait SliderViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputFormatFunction)
     */
   def inputFormatFunction(value: Double): String = js.native
-  def inputFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
+  def inputFormatFunction(value: Double, `type`: average | min | max | tick | value): String = js.native
+  def inputFormatFunction(value: Double, `type`: average | min | max | tick | value, index: Double): String = js.native
+  def inputFormatFunction(value: Double, `type`: scala.Unit, index: Double): String = js.native
   /**
     * A function used to format user inputs.
     *
@@ -87,26 +96,6 @@ trait SliderViewModel
     */
   @JSName("inputFormatFunction")
   var inputFormatFunction_Original: SliderLabelFormatter = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_average(value: Double, `type`: average): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_average(value: Double, `type`: average, index: Double): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_max(value: Double, `type`: max): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_max(value: Double, `type`: max, index: Double): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_min(value: Double, `type`: min): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_min(value: Double, `type`: min, index: Double): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_tick(value: Double, `type`: tick): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_tick(value: Double, `type`: tick, index: Double): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_value(value: Double, `type`: value): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_value(value: Double, `type`: value, index: Double): String = js.native
   
   /**
     * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputFormatFunction).
@@ -114,7 +103,9 @@ trait SliderViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputParseFunction)
     */
   def inputParseFunction(value: String): Double = js.native
-  def inputParseFunction(value: String, `type`: Unit, index: Double): Double = js.native
+  def inputParseFunction(value: String, `type`: average | min | max | tick | value): Double = js.native
+  def inputParseFunction(value: String, `type`: average | min | max | tick | value, index: Double): Double = js.native
+  def inputParseFunction(value: String, `type`: scala.Unit, index: Double): Double = js.native
   /**
     * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputFormatFunction).
     *
@@ -122,26 +113,6 @@ trait SliderViewModel
     */
   @JSName("inputParseFunction")
   var inputParseFunction_Original: InputParser = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_average(value: String, `type`: average): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_average(value: String, `type`: average, index: Double): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_max(value: String, `type`: max): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_max(value: String, `type`: max, index: Double): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_min(value: String, `type`: min): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_min(value: String, `type`: min, index: Double): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_tick(value: String, `type`: tick): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_tick(value: String, `type`: tick, index: Double): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_value(value: String, `type`: value): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_value(value: String, `type`: value, index: Double): Double = js.native
   
   /**
     * A function used to format labels.
@@ -149,7 +120,9 @@ trait SliderViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Double): String = js.native
-  def labelFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: average | min | max | tick | value): String = js.native
+  def labelFormatFunction(value: Double, `type`: average | min | max | tick | value, index: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: scala.Unit, index: Double): String = js.native
   /**
     * A function used to format labels.
     *
@@ -157,26 +130,6 @@ trait SliderViewModel
     */
   @JSName("labelFormatFunction")
   var labelFormatFunction_Original: SliderLabelFormatter = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_average(value: Double, `type`: average): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_average(value: Double, `type`: average, index: Double): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_max(value: Double, `type`: max): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_max(value: Double, `type`: max, index: Double): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_min(value: Double, `type`: min): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_min(value: Double, `type`: min, index: Double): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_tick(value: Double, `type`: tick): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_tick(value: Double, `type`: tick, index: Double): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_value(value: Double, `type`: value): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_value(value: Double, `type`: value, index: Double): String = js.native
   
   /**
     * An array of strings associated with [values](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#values) generated using an internal label formatter or the values returned from [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction).
@@ -207,6 +160,8 @@ trait SliderViewModel
   /**
     * Defines how slider values should be rounded.
     *
+    * @default 4
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#precision)
     */
   var precision: Double = js.native
@@ -216,7 +171,7 @@ trait SliderViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#setValue)
     */
-  def setValue(index: Double, value: Double): Unit = js.native
+  def setValue(index: Double, value: Double): scala.Unit = js.native
   
   /**
     * The state of the view model.
@@ -227,6 +182,8 @@ trait SliderViewModel
   
   /**
     * When `false`, the user can freely move any slider thumb to any position along the track.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#thumbsConstrained)
     */

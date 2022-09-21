@@ -12,7 +12,7 @@ trait EncryptionAtRest extends StObject {
   var CatalogEncryptionMode: typings.awsSdk.glueMod.CatalogEncryptionMode
   
   /**
-    * The ID of the AWS KMS key to use for encryption at rest.
+    * The ID of the KMS key to use for encryption at rest.
     */
   var SseAwsKmsKeyId: js.UndefOr[NameString] = js.undefined
 }

@@ -14,7 +14,7 @@ trait DeviceStatusInfo extends StObject {
   /**
     * The time (in epoch) when the device connection status changed.
     */
-  var ConnectionStatusUpdatedTime: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ConnectionStatusUpdatedTime] = js.undefined
+  var ConnectionStatusUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * One or more device status detail descriptions.
@@ -34,7 +34,7 @@ object DeviceStatusInfo {
     
     inline def setConnectionStatusUndefined: Self = StObject.set(x, "ConnectionStatus", js.undefined)
     
-    inline def setConnectionStatusUpdatedTime(value: ConnectionStatusUpdatedTime): Self = StObject.set(x, "ConnectionStatusUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setConnectionStatusUpdatedTime(value: js.Date): Self = StObject.set(x, "ConnectionStatusUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setConnectionStatusUpdatedTimeUndefined: Self = StObject.set(x, "ConnectionStatusUpdatedTime", js.undefined)
     
@@ -42,6 +42,6 @@ object DeviceStatusInfo {
     
     inline def setDeviceStatusDetailsUndefined: Self = StObject.set(x, "DeviceStatusDetails", js.undefined)
     
-    inline def setDeviceStatusDetailsVarargs(value: DeviceStatusDetail*): Self = StObject.set(x, "DeviceStatusDetails", js.Array(value :_*))
+    inline def setDeviceStatusDetailsVarargs(value: DeviceStatusDetail*): Self = StObject.set(x, "DeviceStatusDetails", js.Array(value*))
   }
 }

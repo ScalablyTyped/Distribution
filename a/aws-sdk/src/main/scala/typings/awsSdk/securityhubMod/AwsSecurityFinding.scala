@@ -7,12 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsSecurityFinding extends StObject {
   
   /**
-    * The AWS account ID that a finding is generated in.
+    * Provides details about an action that affects or that was taken on a resource.
+    */
+  var Action: js.UndefOr[typings.awsSdk.securityhubMod.Action] = js.undefined
+  
+  /**
+    * The Amazon Web Services account ID that a finding is generated in.
     */
   var AwsAccountId: NonEmptyString
   
   /**
-    * This data type is exclusive to findings that are generated as the result of a check run against a specific rule in a supported security standard, such as CIS AWS Foundations. Contains security standard-related finding details.
+    * The name of the company for the product that generated the finding. Security Hub populates this attribute automatically for each finding. You cannot update this attribute with BatchImportFindings or BatchUpdateFindings. The exception to this is a custom integration. When you use the Security Hub console or API to filter findings by company name, you use this attribute.
+    */
+  var CompanyName: js.UndefOr[NonEmptyString] = js.undefined
+  
+  /**
+    * This data type is exclusive to findings that are generated as the result of a check run against a specific rule in a supported security standard, such as CIS Amazon Web Services Foundations. Contains security standard-related finding details.
     */
   var Compliance: js.UndefOr[typings.awsSdk.securityhubMod.Compliance] = js.undefined
   
@@ -35,6 +45,11 @@ trait AwsSecurityFinding extends StObject {
     * A finding's description.  In this release, Description is a required property. 
     */
   var Description: NonEmptyString
+  
+  /**
+    * In a BatchImportFindings request, finding providers use FindingProviderFields to provide and update their own values for confidence, criticality, related findings, severity, and types.
+    */
+  var FindingProviderFields: js.UndefOr[typings.awsSdk.securityhubMod.FindingProviderFields] = js.undefined
   
   /**
     * Indicates when the security-findings provider first observed the potential security issue that a finding captured. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
@@ -92,14 +107,24 @@ trait AwsSecurityFinding extends StObject {
   var ProductArn: NonEmptyString
   
   /**
-    * A data type where security-findings providers can include additional solution-specific details that aren't part of the defined AwsSecurityFinding format.
+    * A data type where security-findings providers can include additional solution-specific details that aren't part of the defined AwsSecurityFinding format. Can contain up to 50 key-value pairs. For each key-value pair, the key can contain up to 128 characters, and the value can contain up to 2048 characters.
     */
   var ProductFields: js.UndefOr[FieldMap] = js.undefined
+  
+  /**
+    * The name of the product that generated the finding. Security Hub populates this attribute automatically for each finding. You cannot update this attribute with BatchImportFindings or BatchUpdateFindings. The exception to this is a custom integration. When you use the Security Hub console or API to filter findings by product name, you use this attribute.
+    */
+  var ProductName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The record state of a finding.
     */
   var RecordState: js.UndefOr[typings.awsSdk.securityhubMod.RecordState] = js.undefined
+  
+  /**
+    * The Region from which the finding was generated. Security Hub populates this attribute automatically for each finding. You cannot update it using BatchImportFindings or BatchUpdateFindings.
+    */
+  var Region: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A list of related findings.
@@ -117,6 +142,11 @@ trait AwsSecurityFinding extends StObject {
   var Resources: ResourceList
   
   /**
+    * Indicates whether the finding is a sample finding.
+    */
+  var Sample: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The schema version that a finding is formatted for.
     */
   var SchemaVersion: NonEmptyString
@@ -124,7 +154,7 @@ trait AwsSecurityFinding extends StObject {
   /**
     * A finding's severity.
     */
-  var Severity: typings.awsSdk.securityhubMod.Severity
+  var Severity: js.UndefOr[typings.awsSdk.securityhubMod.Severity] = js.undefined
   
   /**
     * A URL that links to a page about the current finding in the security-findings provider's solution.
@@ -137,6 +167,11 @@ trait AwsSecurityFinding extends StObject {
   var ThreatIntelIndicators: js.UndefOr[ThreatIntelIndicatorList] = js.undefined
   
   /**
+    * Details about the threat detected in a security finding and the file paths that were affected by the threat. 
+    */
+  var Threats: js.UndefOr[ThreatList] = js.undefined
+  
+  /**
     * A finding's title.  In this release, Title is a required property. 
     */
   var Title: NonEmptyString
@@ -144,7 +179,7 @@ trait AwsSecurityFinding extends StObject {
   /**
     * One or more finding types in the format of namespace/category/classifier that classify a finding. Valid namespace values are: Software and Configuration Checks | TTPs | Effects | Unusual Behaviors | Sensitive Data Identifications
     */
-  var Types: TypeList
+  var Types: js.UndefOr[TypeList] = js.undefined
   
   /**
     * Indicates when the security-findings provider last updated the finding record. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
@@ -187,18 +222,24 @@ object AwsSecurityFinding {
     ProductArn: NonEmptyString,
     Resources: ResourceList,
     SchemaVersion: NonEmptyString,
-    Severity: Severity,
     Title: NonEmptyString,
-    Types: TypeList,
     UpdatedAt: NonEmptyString
   ): AwsSecurityFinding = {
-    val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], CreatedAt = CreatedAt.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], GeneratorId = GeneratorId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], ProductArn = ProductArn.asInstanceOf[js.Any], Resources = Resources.asInstanceOf[js.Any], SchemaVersion = SchemaVersion.asInstanceOf[js.Any], Severity = Severity.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], Types = Types.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], CreatedAt = CreatedAt.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], GeneratorId = GeneratorId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], ProductArn = ProductArn.asInstanceOf[js.Any], Resources = Resources.asInstanceOf[js.Any], SchemaVersion = SchemaVersion.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsSecurityFinding]
   }
   
   extension [Self <: AwsSecurityFinding](x: Self) {
     
+    inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    
+    inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+    
     inline def setAwsAccountId(value: NonEmptyString): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    
+    inline def setCompanyName(value: NonEmptyString): Self = StObject.set(x, "CompanyName", value.asInstanceOf[js.Any])
+    
+    inline def setCompanyNameUndefined: Self = StObject.set(x, "CompanyName", js.undefined)
     
     inline def setCompliance(value: Compliance): Self = StObject.set(x, "Compliance", value.asInstanceOf[js.Any])
     
@@ -216,6 +257,10 @@ object AwsSecurityFinding {
     
     inline def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
+    inline def setFindingProviderFields(value: FindingProviderFields): Self = StObject.set(x, "FindingProviderFields", value.asInstanceOf[js.Any])
+    
+    inline def setFindingProviderFieldsUndefined: Self = StObject.set(x, "FindingProviderFields", js.undefined)
+    
     inline def setFirstObservedAt(value: NonEmptyString): Self = StObject.set(x, "FirstObservedAt", value.asInstanceOf[js.Any])
     
     inline def setFirstObservedAtUndefined: Self = StObject.set(x, "FirstObservedAt", js.undefined)
@@ -232,7 +277,7 @@ object AwsSecurityFinding {
     
     inline def setMalwareUndefined: Self = StObject.set(x, "Malware", js.undefined)
     
-    inline def setMalwareVarargs(value: Malware*): Self = StObject.set(x, "Malware", js.Array(value :_*))
+    inline def setMalwareVarargs(value: Malware*): Self = StObject.set(x, "Malware", js.Array(value*))
     
     inline def setNetwork(value: Network): Self = StObject.set(x, "Network", value.asInstanceOf[js.Any])
     
@@ -240,7 +285,7 @@ object AwsSecurityFinding {
     
     inline def setNetworkPathUndefined: Self = StObject.set(x, "NetworkPath", js.undefined)
     
-    inline def setNetworkPathVarargs(value: NetworkPathComponent*): Self = StObject.set(x, "NetworkPath", js.Array(value :_*))
+    inline def setNetworkPathVarargs(value: NetworkPathComponent*): Self = StObject.set(x, "NetworkPath", js.Array(value*))
     
     inline def setNetworkUndefined: Self = StObject.set(x, "Network", js.undefined)
     
@@ -262,15 +307,23 @@ object AwsSecurityFinding {
     
     inline def setProductFieldsUndefined: Self = StObject.set(x, "ProductFields", js.undefined)
     
+    inline def setProductName(value: NonEmptyString): Self = StObject.set(x, "ProductName", value.asInstanceOf[js.Any])
+    
+    inline def setProductNameUndefined: Self = StObject.set(x, "ProductName", js.undefined)
+    
     inline def setRecordState(value: RecordState): Self = StObject.set(x, "RecordState", value.asInstanceOf[js.Any])
     
     inline def setRecordStateUndefined: Self = StObject.set(x, "RecordState", js.undefined)
+    
+    inline def setRegion(value: NonEmptyString): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
     inline def setRelatedFindings(value: RelatedFindingList): Self = StObject.set(x, "RelatedFindings", value.asInstanceOf[js.Any])
     
     inline def setRelatedFindingsUndefined: Self = StObject.set(x, "RelatedFindings", js.undefined)
     
-    inline def setRelatedFindingsVarargs(value: RelatedFinding*): Self = StObject.set(x, "RelatedFindings", js.Array(value :_*))
+    inline def setRelatedFindingsVarargs(value: RelatedFinding*): Self = StObject.set(x, "RelatedFindings", js.Array(value*))
     
     inline def setRemediation(value: Remediation): Self = StObject.set(x, "Remediation", value.asInstanceOf[js.Any])
     
@@ -278,11 +331,17 @@ object AwsSecurityFinding {
     
     inline def setResources(value: ResourceList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
-    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "Resources", js.Array(value*))
+    
+    inline def setSample(value: Boolean): Self = StObject.set(x, "Sample", value.asInstanceOf[js.Any])
+    
+    inline def setSampleUndefined: Self = StObject.set(x, "Sample", js.undefined)
     
     inline def setSchemaVersion(value: NonEmptyString): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
     
     inline def setSeverity(value: Severity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
+    
+    inline def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
     
     inline def setSourceUrl(value: NonEmptyString): Self = StObject.set(x, "SourceUrl", value.asInstanceOf[js.Any])
     
@@ -292,13 +351,21 @@ object AwsSecurityFinding {
     
     inline def setThreatIntelIndicatorsUndefined: Self = StObject.set(x, "ThreatIntelIndicators", js.undefined)
     
-    inline def setThreatIntelIndicatorsVarargs(value: ThreatIntelIndicator*): Self = StObject.set(x, "ThreatIntelIndicators", js.Array(value :_*))
+    inline def setThreatIntelIndicatorsVarargs(value: ThreatIntelIndicator*): Self = StObject.set(x, "ThreatIntelIndicators", js.Array(value*))
+    
+    inline def setThreats(value: ThreatList): Self = StObject.set(x, "Threats", value.asInstanceOf[js.Any])
+    
+    inline def setThreatsUndefined: Self = StObject.set(x, "Threats", js.undefined)
+    
+    inline def setThreatsVarargs(value: Threat*): Self = StObject.set(x, "Threats", js.Array(value*))
     
     inline def setTitle(value: NonEmptyString): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     inline def setTypes(value: TypeList): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Types", js.Array(value :_*))
+    inline def setTypesUndefined: Self = StObject.set(x, "Types", js.undefined)
+    
+    inline def setTypesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Types", js.Array(value*))
     
     inline def setUpdatedAt(value: NonEmptyString): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
@@ -314,7 +381,7 @@ object AwsSecurityFinding {
     
     inline def setVulnerabilitiesUndefined: Self = StObject.set(x, "Vulnerabilities", js.undefined)
     
-    inline def setVulnerabilitiesVarargs(value: Vulnerability*): Self = StObject.set(x, "Vulnerabilities", js.Array(value :_*))
+    inline def setVulnerabilitiesVarargs(value: Vulnerability*): Self = StObject.set(x, "Vulnerabilities", js.Array(value*))
     
     inline def setWorkflow(value: Workflow): Self = StObject.set(x, "Workflow", value.asInstanceOf[js.Any])
     

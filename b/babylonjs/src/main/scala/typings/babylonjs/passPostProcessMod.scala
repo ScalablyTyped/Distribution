@@ -14,7 +14,7 @@ object passPostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/passPostProcess", "PassCubePostProcess")
   @js.native
-  class PassCubePostProcess protected () extends PostProcess {
+  open class PassCubePostProcess protected () extends PostProcess {
     /**
       * Creates the PassCubePostProcess
       * @param name The name of the effect.
@@ -37,7 +37,7 @@ object passPostProcessMod {
       blockCompilation: js.UndefOr[Boolean]
     ) = this()
     
-    /* private */ var _face: js.Any = js.native
+    /* private */ var _face: Any = js.native
     
     /**
       * Gets or sets the cube face to display.
@@ -58,13 +58,19 @@ object passPostProcessMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** @hidden */
-    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): PassCubePostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[PassCubePostProcess]
+    /**
+      * @param parsedPostProcess
+      * @param targetCamera
+      * @param scene
+      * @param rootUrl
+      * @hidden
+      */
+    inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): PassCubePostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[PassCubePostProcess]
   }
   
   @JSImport("babylonjs/PostProcesses/passPostProcess", "PassPostProcess")
   @js.native
-  class PassPostProcess protected () extends PostProcess {
+  open class PassPostProcess protected () extends PostProcess {
     /**
       * Creates the PassPostProcess
       * @param name The name of the effect.
@@ -94,7 +100,13 @@ object passPostProcessMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** @hidden */
-    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): PassPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[PassPostProcess]
+    /**
+      * @param parsedPostProcess
+      * @param targetCamera
+      * @param scene
+      * @param rootUrl
+      * @hidden
+      */
+    inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): PassPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[PassPostProcess]
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for throttle-debounce
 
-Typings are for version 2.1
+Typings are for version 5.0
 
 ## Library description:
 Throttle and debounce functions.
@@ -10,10 +10,10 @@ Throttle and debounce functions.
 | ------------------ | :-------------: |
 | Full name          | throttle-debounce |
 | Keywords           | debounce, throttle |
-| # releases         | 7 |
-| # dependents       | 1335 |
-| # downloads        | 86222427 |
-| # stars            | 12 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 2.0550676333333332E7 |
+| # stars            | 848.0 |
 
 ## Links
 - [Homepage](https://github.com/niksy/throttle-debounce#readme)

@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "InvoiceSortField")
 @js.native
-class InvoiceSortField () extends StObject
+open class InvoiceSortField () extends StObject

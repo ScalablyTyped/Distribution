@@ -18,7 +18,7 @@ object pathMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/path", "default.AStar")
     @js.native
-    class AStar protected ()
+    open class AStar protected ()
       extends typings.rotJs.astarMod.default {
       def this(toX: Double, toY: Double, passableCallback: PassableCallback) = this()
       def this(toX: Double, toY: Double, passableCallback: PassableCallback, options: PartialOptions) = this()
@@ -45,7 +45,7 @@ object pathMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/path", "default.Dijkstra")
     @js.native
-    class Dijkstra protected ()
+    open class Dijkstra protected ()
       extends typings.rotJs.dijkstraMod.default {
       def this(toX: Double, toY: Double, passableCallback: PassableCallback, options: PartialOptions) = this()
     }

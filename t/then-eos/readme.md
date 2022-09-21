@@ -11,9 +11,9 @@ Promise-based end-of-stream.
 | Full name          | then-eos |
 | Keywords           | end, eos, promise, stream |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 548 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 30.666666666666668 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/meoguru/node-then-eos)

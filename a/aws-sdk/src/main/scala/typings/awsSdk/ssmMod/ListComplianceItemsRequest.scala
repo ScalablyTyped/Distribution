@@ -44,7 +44,7 @@ object ListComplianceItemsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: ComplianceStringFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: ComplianceStringFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -58,12 +58,12 @@ object ListComplianceItemsRequest {
     
     inline def setResourceIdsUndefined: Self = StObject.set(x, "ResourceIds", js.undefined)
     
-    inline def setResourceIdsVarargs(value: ComplianceResourceId*): Self = StObject.set(x, "ResourceIds", js.Array(value :_*))
+    inline def setResourceIdsVarargs(value: ComplianceResourceId*): Self = StObject.set(x, "ResourceIds", js.Array(value*))
     
     inline def setResourceTypes(value: ComplianceResourceTypeList): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
     
     inline def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
     
-    inline def setResourceTypesVarargs(value: ComplianceResourceType*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
+    inline def setResourceTypesVarargs(value: ComplianceResourceType*): Self = StObject.set(x, "ResourceTypes", js.Array(value*))
   }
 }

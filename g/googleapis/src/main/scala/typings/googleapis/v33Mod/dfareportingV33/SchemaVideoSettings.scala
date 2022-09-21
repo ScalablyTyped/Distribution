@@ -4,40 +4,30 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Video Settings
-  */
 trait SchemaVideoSettings extends StObject {
   
   /**
-    * Settings for the companion creatives of video creatives served to this
-    * placement.
+    * Settings for the companion creatives of video creatives served to this placement.
     */
   var companionSettings: js.UndefOr[SchemaCompanionSetting] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#videoSettings&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#videoSettings".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Orientation of a video placement. If this value is set, placement will
-    * return assets matching the specified orientation.
+    * Orientation of a video placement. If this value is set, placement will return assets matching the specified orientation.
     */
-  var orientation: js.UndefOr[String] = js.undefined
+  var orientation: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Settings for the skippability of video creatives served to this
-    * placement. If this object is provided, the creative-level skippable
-    * settings will be overridden.
+    * Settings for the skippability of video creatives served to this placement. If this object is provided, the creative-level skippable settings will be overridden.
     */
   var skippableSettings: js.UndefOr[SchemaSkippableSetting] = js.undefined
   
   /**
-    * Settings for the transcodes of video creatives served to this placement.
-    * If this object is provided, the creative-level transcode settings will be
-    * overridden.
+    * Settings for the transcodes of video creatives served to this placement. If this object is provided, the creative-level transcode settings will be overridden.
     */
   var transcodeSettings: js.UndefOr[SchemaTranscodeSetting] = js.undefined
 }
@@ -56,9 +46,13 @@ object SchemaVideoSettings {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationNull: Self = StObject.set(x, "orientation", null)
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     

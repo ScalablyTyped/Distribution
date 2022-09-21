@@ -1,6 +1,5 @@
 package typings.tokenizr
 
-import typings.std.RegExp
 import typings.std.RegExpExecArray
 import typings.tokenizr.mod.ActionContext
 import typings.tokenizr.mod.RuleAction
@@ -18,13 +17,13 @@ object anon {
     
     var name: String
     
-    var pattern: RegExp
+    var pattern: js.RegExp
     
     var state: String
   }
   object Action {
     
-    inline def apply(action: RuleAction, name: String, pattern: RegExp, state: String): Action = {
+    inline def apply(action: RuleAction, name: String, pattern: js.RegExp, state: String): Action = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action]
     }
@@ -35,7 +34,7 @@ object anon {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: js.RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
       inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }

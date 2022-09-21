@@ -18,6 +18,11 @@ trait EntityType
   
   var baseEntityType: EntityType = js.native
   
+  var baseTypeName: js.UndefOr[String] = js.native
+  
+  def clientPropertyPathToServer(propertyPath: String): String = js.native
+  def clientPropertyPathToServer(propertyPath: String, delimiter: String): String = js.native
+  
   var concurrencyProperties: js.Array[DataProperty] = js.native
   
   def createEntity(): Entity = js.native
@@ -35,12 +40,19 @@ trait EntityType
   
   def getProperties(): js.Array[IProperty] = js.native
   
+  def getPropertiesOnPath(propertyPath: String, useServerName: Boolean): js.Array[IProperty] = js.native
+  def getPropertiesOnPath(propertyPath: String, useServerName: Boolean, throwIfNotFound: Boolean): js.Array[IProperty] = js.native
+  def getPropertiesOnPath(propertyPath: js.Array[String], useServerName: Boolean): js.Array[IProperty] = js.native
+  def getPropertiesOnPath(propertyPath: js.Array[String], useServerName: Boolean, throwIfNotFound: Boolean): js.Array[IProperty] = js.native
+  
   def getProperty(propertyPath: String): IProperty = js.native
   def getProperty(propertyPath: String, throwIfNotFound: Boolean): IProperty = js.native
   
   def getPropertyNames(): js.Array[String] = js.native
   
   def getSelfAndSubtypes(): js.Array[EntityType] = js.native
+  
+  var inverseForeignKeyProperties: js.Array[DataProperty] = js.native
   
   var isAbstract: Boolean = js.native
   
@@ -52,5 +64,11 @@ trait EntityType
   
   var navigationProperties: js.Array[NavigationProperty] = js.native
   
+  var serializerFn: js.UndefOr[js.Function] = js.native
+  
   def setProperties(config: EntityTypeProperties): Unit = js.native
+  
+  var subtypes: js.Array[Any] = js.native
+  
+  var warnings: js.Array[Any] = js.native
 }

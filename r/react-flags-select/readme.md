@@ -11,9 +11,9 @@ react-flags-select React component
 | Full name          | react-flags-select |
 | Keywords           | react-component |
 | # releases         | 14 |
-| # dependents       | 7 |
-| # downloads        | 424392 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 58350.333333333336 |
+| # stars            | 140.0 |
 
 ## Links
 - [Homepage](https://github.com/ekwonye-richard/react-flags-select#readme)

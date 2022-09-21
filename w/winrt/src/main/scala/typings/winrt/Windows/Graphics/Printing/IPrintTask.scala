@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IPrintTask extends StObject {
   
-  var oncompleted: js.Any
+  var oncompleted: Any
   
-  var onpreviewing: js.Any
+  var onpreviewing: Any
   
-  var onprogressing: js.Any
+  var onprogressing: Any
   
-  var onsubmitting: js.Any
+  var onsubmitting: Any
   
   var options: PrintTaskOptions
   
@@ -24,10 +24,10 @@ trait IPrintTask extends StObject {
 object IPrintTask {
   
   inline def apply(
-    oncompleted: js.Any,
-    onpreviewing: js.Any,
-    onprogressing: js.Any,
-    onsubmitting: js.Any,
+    oncompleted: Any,
+    onpreviewing: Any,
+    onprogressing: Any,
+    onsubmitting: Any,
     options: PrintTaskOptions,
     properties: DataPackagePropertySet,
     source: IPrintDocumentSource
@@ -38,13 +38,13 @@ object IPrintTask {
   
   extension [Self <: IPrintTask](x: Self) {
     
-    inline def setOncompleted(value: js.Any): Self = StObject.set(x, "oncompleted", value.asInstanceOf[js.Any])
+    inline def setOncompleted(value: Any): Self = StObject.set(x, "oncompleted", value.asInstanceOf[js.Any])
     
-    inline def setOnpreviewing(value: js.Any): Self = StObject.set(x, "onpreviewing", value.asInstanceOf[js.Any])
+    inline def setOnpreviewing(value: Any): Self = StObject.set(x, "onpreviewing", value.asInstanceOf[js.Any])
     
-    inline def setOnprogressing(value: js.Any): Self = StObject.set(x, "onprogressing", value.asInstanceOf[js.Any])
+    inline def setOnprogressing(value: Any): Self = StObject.set(x, "onprogressing", value.asInstanceOf[js.Any])
     
-    inline def setOnsubmitting(value: js.Any): Self = StObject.set(x, "onsubmitting", value.asInstanceOf[js.Any])
+    inline def setOnsubmitting(value: Any): Self = StObject.set(x, "onsubmitting", value.asInstanceOf[js.Any])
     
     inline def setOptions(value: PrintTaskOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "PrecisionDate")
 @js.native
-class PrecisionDate ()
+open class PrecisionDate ()
   extends typings.babylonjs.indexMod.PrecisionDate

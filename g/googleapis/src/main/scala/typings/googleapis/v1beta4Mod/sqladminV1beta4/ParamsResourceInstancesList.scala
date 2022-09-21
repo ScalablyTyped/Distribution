@@ -1,9 +1,5 @@
 package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,24 +9,17 @@ trait ParamsResourceInstancesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * An expression for filtering the results of the request, such as by name
-    * or label.
+    * A filter expression that filters resources listed in the response. The expression is in the form of field:value. For example, 'instanceType:CLOUD_SQL_INSTANCE'. Fields can be nested as needed as per their JSON representation, such as 'settings.userLabels.auto_start:true'. Multiple filter queries are space-separated. For example. 'state:RUNNABLE instanceType:CLOUD_SQL_INSTANCE'. By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly.
     */
   var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of results to return per response.
+    * The maximum number of instances to return. The service may return fewer than this value. If unspecified, at most 500 instances are returned. The maximum value is 1000; values above 1000 are coerced to 1000.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * A previously-returned page token representing part of the larger set of
-    * results to view.
+    * A previously-returned page token representing part of the larger set of results to view.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
@@ -47,10 +36,6 @@ object ParamsResourceInstancesList {
   }
   
   extension [Self <: ParamsResourceInstancesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

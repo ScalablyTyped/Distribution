@@ -9,30 +9,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BuildMeta extends StObject {
   
   /**
-  		 * Meta information about the module
+  		 * Meta information about the module.
   		 */
-  var buildMeta: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var buildMeta: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
-  		 * Information about the provided exports of the module
+  		 * Information about the provided exports of the module.
   		 */
   var exports: js.UndefOr[`true` | js.Array[String]] = js.undefined
   
   /**
-  		 * Module ID
+  		 * Module ID.
   		 */
-  var id: Double | String
+  var id: String | Double
 }
 object BuildMeta {
   
-  inline def apply(id: Double | String): BuildMeta = {
+  inline def apply(id: String | Double): BuildMeta = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildMeta]
   }
   
   extension [Self <: BuildMeta](x: Self) {
     
-    inline def setBuildMeta(value: StringDictionary[js.Any]): Self = StObject.set(x, "buildMeta", value.asInstanceOf[js.Any])
+    inline def setBuildMeta(value: StringDictionary[Any]): Self = StObject.set(x, "buildMeta", value.asInstanceOf[js.Any])
     
     inline def setBuildMetaUndefined: Self = StObject.set(x, "buildMeta", js.undefined)
     
@@ -40,8 +40,8 @@ object BuildMeta {
     
     inline def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
     
-    inline def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value :_*))
+    inline def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value*))
     
-    inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

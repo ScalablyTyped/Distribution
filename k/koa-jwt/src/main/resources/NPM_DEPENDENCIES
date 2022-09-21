@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "koa-jwt" : "4.0.0"
+      "koa-jwt" : "4.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "koa-jwt" : "4.0.0"
+      "koa-jwt" : "4.0.3"
     }
   ],
   "compile-devDependencies" : [

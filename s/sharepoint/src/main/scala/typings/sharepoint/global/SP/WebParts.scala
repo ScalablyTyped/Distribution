@@ -8,7 +8,7 @@ object WebParts {
   
   @JSGlobal("SP.WebParts.LimitedWebPartManager")
   @js.native
-  class LimitedWebPartManager ()
+  open class LimitedWebPartManager ()
     extends StObject
        with typings.sharepoint.SP.WebParts.LimitedWebPartManager
   
@@ -26,12 +26,12 @@ object WebParts {
   
   @JSGlobal("SP.WebParts.TileData")
   @js.native
-  class TileData ()
+  open class TileData ()
     extends StObject
        with typings.sharepoint.SP.WebParts.TileData {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -40,7 +40,7 @@ object WebParts {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_backgroundImageLocation(): String = js.native
@@ -90,13 +90,13 @@ object WebParts {
   
   @JSGlobal("SP.WebParts.WebPart")
   @js.native
-  class WebPart ()
+  open class WebPart ()
     extends StObject
        with typings.sharepoint.SP.WebParts.WebPart
   
   @JSGlobal("SP.WebParts.WebPartDefinition")
   @js.native
-  class WebPartDefinition ()
+  open class WebPartDefinition ()
     extends StObject
        with typings.sharepoint.SP.WebParts.WebPartDefinition
 }

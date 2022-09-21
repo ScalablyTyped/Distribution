@@ -21,7 +21,7 @@ object qa {
   }
   object XDumper {
     
-    inline def apply(acquire: () => Unit, dump: () => String, queryInterface: `type` => js.Any, release: () => Unit): XDumper = {
+    inline def apply(acquire: () => Unit, dump: () => String, queryInterface: `type` => Any, release: () => Unit): XDumper = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), dump = js.Any.fromFunction0(dump), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
       __obj.asInstanceOf[XDumper]
     }

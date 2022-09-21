@@ -21,8 +21,10 @@ trait KeyboardNavigationOptionsObject extends StObject {
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Order of tab navigation in the
     * chart. Determines which elements are tabbed to first. Available elements
-    * are: `series`, `zoom`, `rangeSelector`, `chartMenu`, `legend`. In
-    * addition, any custom components can be added here.
+    * are: `series`, `zoom`, `rangeSelector`, `chartMenu`, `legend` and
+    * `container`. In addition, any custom components can be added here. Adding
+    * `container` first in order will make the keyboard focus stop on the chart
+    * container first, requiring the user to tab again to enter the chart.
     */
   var order: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -60,7 +62,7 @@ object KeyboardNavigationOptionsObject {
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    inline def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value*))
     
     inline def setSeriesNavigation(value: KeyboardNavigationSeriesNavigationOptionsObject): Self = StObject.set(x, "seriesNavigation", value.asInstanceOf[js.Any])
     

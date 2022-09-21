@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IMsoChartArea extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
-  var AutoScaleFont: js.Any
+  var AutoScaleFont: Any
   
   val Border: IMsoBorder
   
-  def Clear(): js.Any
+  def Clear(): Any
   
-  def ClearContents(): js.Any
+  def ClearContents(): Any
   
-  def ClearFormats(): js.Any
+  def ClearFormats(): Any
   
-  def Copy(): js.Any
+  def Copy(): Any
   
   val Creator: Double
   
@@ -39,11 +39,11 @@ trait IMsoChartArea extends StObject {
   /* private */ @JSName("Office.IMsoChartArea_typekey")
   var OfficeDotIMsoChartArea_typekey: IMsoChartArea
   
-  val Parent: js.Any
+  val Parent: Any
   
   var RoundedCorners: Boolean
   
-  def Select(): js.Any
+  def Select(): Any
   
   var Shadow: Boolean
   
@@ -54,13 +54,13 @@ trait IMsoChartArea extends StObject {
 object IMsoChartArea {
   
   inline def apply(
-    Application: js.Any,
-    AutoScaleFont: js.Any,
+    Application: Any,
+    AutoScaleFont: Any,
     Border: IMsoBorder,
-    Clear: () => js.Any,
-    ClearContents: () => js.Any,
-    ClearFormats: () => js.Any,
-    Copy: () => js.Any,
+    Clear: () => Any,
+    ClearContents: () => Any,
+    ClearFormats: () => Any,
+    Copy: () => Any,
     Creator: Double,
     Fill: ChartFillFormat,
     Font: ChartFont,
@@ -70,9 +70,9 @@ object IMsoChartArea {
     Left: Double,
     Name: String,
     OfficeDotIMsoChartArea_typekey: IMsoChartArea,
-    Parent: js.Any,
+    Parent: Any,
     RoundedCorners: Boolean,
-    Select: () => js.Any,
+    Select: () => Any,
     Shadow: Boolean,
     Top: Double,
     Width: Double
@@ -84,19 +84,19 @@ object IMsoChartArea {
   
   extension [Self <: IMsoChartArea](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    inline def setAutoScaleFont(value: js.Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
+    inline def setAutoScaleFont(value: Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
     
     inline def setBorder(value: IMsoBorder): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    inline def setClear(value: () => js.Any): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Any): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    inline def setClearContents(value: () => js.Any): Self = StObject.set(x, "ClearContents", js.Any.fromFunction0(value))
+    inline def setClearContents(value: () => Any): Self = StObject.set(x, "ClearContents", js.Any.fromFunction0(value))
     
-    inline def setClearFormats(value: () => js.Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
+    inline def setClearFormats(value: () => Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
     
-    inline def setCopy(value: () => js.Any): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => Any): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -116,11 +116,11 @@ object IMsoChartArea {
     
     inline def setOfficeDotIMsoChartArea_typekey(value: IMsoChartArea): Self = StObject.set(x, "Office.IMsoChartArea_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRoundedCorners(value: Boolean): Self = StObject.set(x, "RoundedCorners", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     inline def setShadow(value: Boolean): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     

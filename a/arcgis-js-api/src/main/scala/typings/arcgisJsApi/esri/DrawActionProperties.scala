@@ -9,9 +9,11 @@ trait DrawActionProperties extends StObject {
   /**
     * Controls whether the created geometry will have z coordinates or not.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html#hasZ)
     */
-  var hasZ: js.UndefOr[Double] = js.undefined
+  var hasZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
@@ -29,7 +31,7 @@ object DrawActionProperties {
   
   extension [Self <: DrawActionProperties](x: Self) {
     
-    inline def setHasZ(value: Double): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
+    inline def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
     
     inline def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
     

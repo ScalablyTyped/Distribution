@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents info about, and operations for, configuring smart cards. */
 trait SmartCardProvisioning extends StObject {
   
-  var getAuthorityKeyContainerNameAsync: js.Any
+  var getAuthorityKeyContainerNameAsync: Any
   
   /* unmapped type */
   /**
@@ -48,7 +48,7 @@ trait SmartCardProvisioning extends StObject {
 object SmartCardProvisioning {
   
   inline def apply(
-    getAuthorityKeyContainerNameAsync: js.Any,
+    getAuthorityKeyContainerNameAsync: Any,
     getChallengeContextAsync: () => IPromiseWithIAsyncOperation[SmartCardChallengeContext],
     getIdAsync: () => IPromiseWithIAsyncOperation[String],
     getNameAsync: () => IPromiseWithIAsyncOperation[String],
@@ -62,7 +62,7 @@ object SmartCardProvisioning {
   
   extension [Self <: SmartCardProvisioning](x: Self) {
     
-    inline def setGetAuthorityKeyContainerNameAsync(value: js.Any): Self = StObject.set(x, "getAuthorityKeyContainerNameAsync", value.asInstanceOf[js.Any])
+    inline def setGetAuthorityKeyContainerNameAsync(value: Any): Self = StObject.set(x, "getAuthorityKeyContainerNameAsync", value.asInstanceOf[js.Any])
     
     inline def setGetChallengeContextAsync(value: () => IPromiseWithIAsyncOperation[SmartCardChallengeContext]): Self = StObject.set(x, "getChallengeContextAsync", js.Any.fromFunction0(value))
     

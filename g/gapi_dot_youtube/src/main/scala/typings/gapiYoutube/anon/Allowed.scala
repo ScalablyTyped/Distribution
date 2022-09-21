@@ -27,10 +27,10 @@ object Allowed {
     
     inline def setAllowed(value: js.Array[String]): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     
-    inline def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value :_*))
+    inline def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value*))
     
     inline def setBlocked(value: js.Array[String]): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
-    inline def setBlockedVarargs(value: String*): Self = StObject.set(x, "blocked", js.Array(value :_*))
+    inline def setBlockedVarargs(value: String*): Self = StObject.set(x, "blocked", js.Array(value*))
   }
 }

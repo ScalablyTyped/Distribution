@@ -13,35 +13,35 @@ trait WizardOptions extends StObject {
   var nextSelector: js.UndefOr[String] = js.undefined
   
   var onFirst: js.UndefOr[
-    js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* firstIndex */ Double, Boolean]
+    js.Function3[/* activeTab */ Any, /* navigation */ Any, /* firstIndex */ Double, Boolean]
   ] = js.undefined
   
   var onInit: js.UndefOr[
-    js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* currentIndex */ Double, Unit]
+    js.Function3[/* activeTab */ Any, /* navigation */ Any, /* currentIndex */ Double, Unit]
   ] = js.undefined
   
   var onLast: js.UndefOr[
-    js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* lastIndex */ Double, Boolean]
+    js.Function3[/* activeTab */ Any, /* navigation */ Any, /* lastIndex */ Double, Boolean]
   ] = js.undefined
   
   var onNext: js.UndefOr[
-    js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* nextIndex */ Double, Boolean]
+    js.Function3[/* activeTab */ Any, /* navigation */ Any, /* nextIndex */ Double, Boolean]
   ] = js.undefined
   
   var onPrevious: js.UndefOr[
-    js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* previousIndex */ Double, Boolean]
+    js.Function3[/* activeTab */ Any, /* navigation */ Any, /* previousIndex */ Double, Boolean]
   ] = js.undefined
   
   var onShow: js.UndefOr[
-    js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* nextIndex */ Double, Unit]
+    js.Function3[/* activeTab */ Any, /* navigation */ Any, /* nextIndex */ Double, Unit]
   ] = js.undefined
   
   var onTabClick: js.UndefOr[
-    js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* currentIndex */ Double, Boolean]
+    js.Function3[/* activeTab */ Any, /* navigation */ Any, /* currentIndex */ Double, Boolean]
   ] = js.undefined
   
   var onTabShow: js.UndefOr[
-    js.Function3[/* activeTab */ js.Any, /* navigation */ js.Any, /* currentIndex */ Double, Boolean]
+    js.Function3[/* activeTab */ Any, /* navigation */ Any, /* currentIndex */ Double, Boolean]
   ] = js.undefined
   
   var previousSelector: js.UndefOr[String] = js.undefined
@@ -69,35 +69,35 @@ object WizardOptions {
     
     inline def setNextSelectorUndefined: Self = StObject.set(x, "nextSelector", js.undefined)
     
-    inline def setOnFirst(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* firstIndex */ Double) => Boolean): Self = StObject.set(x, "onFirst", js.Any.fromFunction3(value))
+    inline def setOnFirst(value: (/* activeTab */ Any, /* navigation */ Any, /* firstIndex */ Double) => Boolean): Self = StObject.set(x, "onFirst", js.Any.fromFunction3(value))
     
     inline def setOnFirstUndefined: Self = StObject.set(x, "onFirst", js.undefined)
     
-    inline def setOnInit(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* currentIndex */ Double) => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction3(value))
+    inline def setOnInit(value: (/* activeTab */ Any, /* navigation */ Any, /* currentIndex */ Double) => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction3(value))
     
     inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
     
-    inline def setOnLast(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* lastIndex */ Double) => Boolean): Self = StObject.set(x, "onLast", js.Any.fromFunction3(value))
+    inline def setOnLast(value: (/* activeTab */ Any, /* navigation */ Any, /* lastIndex */ Double) => Boolean): Self = StObject.set(x, "onLast", js.Any.fromFunction3(value))
     
     inline def setOnLastUndefined: Self = StObject.set(x, "onLast", js.undefined)
     
-    inline def setOnNext(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* nextIndex */ Double) => Boolean): Self = StObject.set(x, "onNext", js.Any.fromFunction3(value))
+    inline def setOnNext(value: (/* activeTab */ Any, /* navigation */ Any, /* nextIndex */ Double) => Boolean): Self = StObject.set(x, "onNext", js.Any.fromFunction3(value))
     
     inline def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
     
-    inline def setOnPrevious(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* previousIndex */ Double) => Boolean): Self = StObject.set(x, "onPrevious", js.Any.fromFunction3(value))
+    inline def setOnPrevious(value: (/* activeTab */ Any, /* navigation */ Any, /* previousIndex */ Double) => Boolean): Self = StObject.set(x, "onPrevious", js.Any.fromFunction3(value))
     
     inline def setOnPreviousUndefined: Self = StObject.set(x, "onPrevious", js.undefined)
     
-    inline def setOnShow(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* nextIndex */ Double) => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction3(value))
+    inline def setOnShow(value: (/* activeTab */ Any, /* navigation */ Any, /* nextIndex */ Double) => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction3(value))
     
     inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
-    inline def setOnTabClick(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* currentIndex */ Double) => Boolean): Self = StObject.set(x, "onTabClick", js.Any.fromFunction3(value))
+    inline def setOnTabClick(value: (/* activeTab */ Any, /* navigation */ Any, /* currentIndex */ Double) => Boolean): Self = StObject.set(x, "onTabClick", js.Any.fromFunction3(value))
     
     inline def setOnTabClickUndefined: Self = StObject.set(x, "onTabClick", js.undefined)
     
-    inline def setOnTabShow(value: (/* activeTab */ js.Any, /* navigation */ js.Any, /* currentIndex */ Double) => Boolean): Self = StObject.set(x, "onTabShow", js.Any.fromFunction3(value))
+    inline def setOnTabShow(value: (/* activeTab */ Any, /* navigation */ Any, /* currentIndex */ Double) => Boolean): Self = StObject.set(x, "onTabShow", js.Any.fromFunction3(value))
     
     inline def setOnTabShowUndefined: Self = StObject.set(x, "onTabShow", js.undefined)
     

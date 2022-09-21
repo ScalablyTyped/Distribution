@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object messageMod extends Shortcut {
   
-  @JSImport("@storybook/addon-jest/dist/components/Message", JSImport.Default)
+  @JSImport("@storybook/addon-jest/dist/ts3.9/components/Message", JSImport.Default)
   @js.native
   val default: FunctionComponent[MessageProps] = js.native
   
-  @JSImport("@storybook/addon-jest/dist/components/Message", "Message")
+  @JSImport("@storybook/addon-jest/dist/ts3.9/components/Message", "Message")
   @js.native
   val Message: FunctionComponent[MessageProps] = js.native
   

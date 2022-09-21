@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of table styles.
   *
-  * Represents a collection of TableStyles.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 trait TableStyleCollectionLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait TableStyleCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies the name of the table style.
     *
-    * For EACH ITEM in the collection: Gets the name of the TableStyle.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies if this `TableStyle` object is read-only.
     *
-    * For EACH ITEM in the collection: Specifies if this TableStyle object is read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var readOnly: js.UndefOr[Boolean] = js.undefined

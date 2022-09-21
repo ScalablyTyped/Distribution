@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "light-my-request" : "4.3.0"
+      "light-my-request" : "5.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "light-my-request" : "4.3.0"
+      "light-my-request" : "5.6.1"
     }
   ],
   "compile-devDependencies" : [

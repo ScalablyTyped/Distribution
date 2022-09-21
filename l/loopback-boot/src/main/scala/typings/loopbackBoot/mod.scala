@@ -1,7 +1,6 @@
 package typings.loopbackBoot
 
 import typings.loopback.mod.LoopBackApplication
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,9 +78,9 @@ object mod {
     * @param options Boot options; If String, this is the application root directory; if object, has below properties.
     */
   inline def apply(app: LoopBackApplication, options: String): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(app: LoopBackApplication, options: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(app: LoopBackApplication, options: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(app: LoopBackApplication, options: OptionsLB): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(app: LoopBackApplication, options: OptionsLB, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(app: LoopBackApplication, options: OptionsLB, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("loopback-boot", JSImport.Namespace)
   @js.native
@@ -96,9 +95,9 @@ object mod {
     */
   @JSImport("loopback-boot", "compileToBrowserify")
   @js.native
-  class compileToBrowserify protected () extends StObject {
-    def this(options: String, bundler: js.Any) = this()
-    def this(options: js.Any, bundler: js.Any) = this()
+  open class compileToBrowserify protected () extends StObject {
+    def this(options: String, bundler: Any) = this()
+    def this(options: Any, bundler: Any) = this()
     
     /**
       * Application identifier used to load the correct boot configuration when
@@ -138,12 +137,12 @@ object mod {
     /**
       * Component configuration to use instead of {appRootDir}/component-config.json
       */
-    var components: js.Any
+    var components: Any
     
     /**
       * Object containing DataSource definitions.
       */
-    var dataSources: js.Any
+    var dataSources: Any
     
     /**
       * Directory to use when loading datasources.json. Defaults to appRootDir.
@@ -160,7 +159,7 @@ object mod {
     /**
       * Middleware configuration to use instead of {appRootDir}/middleware.json
       */
-    var middleware: js.Any
+    var middleware: Any
     
     /**
       * Directory to use when loading middleware.json. Defaults to appRootDir.
@@ -183,7 +182,7 @@ object mod {
       * List of model definitions to use. When options.modelDefinitions is provided,
       * loopback-boot does not search filesystem and use only the models provided in this argument.
       */
-    var modelDefinitions: js.Array[js.Any]
+    var modelDefinitions: js.Array[Any]
     
     /**
       * List of directories where to look for files containing model definitions.
@@ -193,7 +192,7 @@ object mod {
     /**
       * Object containing Model configurations.
       */
-    var models: js.Any
+    var models: Any
     
     /**
       * Directory to use when loading model-config.json. Defaults to appRootDir.
@@ -203,7 +202,7 @@ object mod {
     /**
       * Mixin normalization format: false, 'none', 'classify', 'dasherize' - defaults to 'classify'.
       */
-    var normalization: String | Boolean | js.Any
+    var normalization: String | Boolean | Any
   }
   object OptionsLB {
     
@@ -213,19 +212,19 @@ object mod {
       bootDirs: js.Array[String],
       bootScripts: js.Array[String],
       componentRootDir: String,
-      components: js.Any,
-      dataSources: js.Any,
+      components: Any,
+      dataSources: Any,
       dsRootDir: String,
       env: String,
-      middleware: js.Any,
+      middleware: Any,
       middlewareRootDir: String,
       mixinDirs: js.Array[String],
       mixinSources: js.Array[String],
-      modelDefinitions: js.Array[js.Any],
+      modelDefinitions: js.Array[Any],
       modelSources: js.Array[String],
-      models: js.Any,
+      models: Any,
       modelsRootDir: String,
-      normalization: String | Boolean | js.Any
+      normalization: String | Boolean | Any
     ): OptionsLB = {
       val __obj = js.Dynamic.literal(appConfigRootDir = appConfigRootDir.asInstanceOf[js.Any], appRootDir = appRootDir.asInstanceOf[js.Any], bootDirs = bootDirs.asInstanceOf[js.Any], bootScripts = bootScripts.asInstanceOf[js.Any], componentRootDir = componentRootDir.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], dataSources = dataSources.asInstanceOf[js.Any], dsRootDir = dsRootDir.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], middleware = middleware.asInstanceOf[js.Any], middlewareRootDir = middlewareRootDir.asInstanceOf[js.Any], mixinDirs = mixinDirs.asInstanceOf[js.Any], mixinSources = mixinSources.asInstanceOf[js.Any], modelDefinitions = modelDefinitions.asInstanceOf[js.Any], modelSources = modelSources.asInstanceOf[js.Any], models = models.asInstanceOf[js.Any], modelsRootDir = modelsRootDir.asInstanceOf[js.Any], normalization = normalization.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsLB]
@@ -239,47 +238,47 @@ object mod {
       
       inline def setBootDirs(value: js.Array[String]): Self = StObject.set(x, "bootDirs", value.asInstanceOf[js.Any])
       
-      inline def setBootDirsVarargs(value: String*): Self = StObject.set(x, "bootDirs", js.Array(value :_*))
+      inline def setBootDirsVarargs(value: String*): Self = StObject.set(x, "bootDirs", js.Array(value*))
       
       inline def setBootScripts(value: js.Array[String]): Self = StObject.set(x, "bootScripts", value.asInstanceOf[js.Any])
       
-      inline def setBootScriptsVarargs(value: String*): Self = StObject.set(x, "bootScripts", js.Array(value :_*))
+      inline def setBootScriptsVarargs(value: String*): Self = StObject.set(x, "bootScripts", js.Array(value*))
       
       inline def setComponentRootDir(value: String): Self = StObject.set(x, "componentRootDir", value.asInstanceOf[js.Any])
       
-      inline def setComponents(value: js.Any): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: Any): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      inline def setDataSources(value: js.Any): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
+      inline def setDataSources(value: Any): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
       
       inline def setDsRootDir(value: String): Self = StObject.set(x, "dsRootDir", value.asInstanceOf[js.Any])
       
       inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      inline def setMiddleware(value: js.Any): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+      inline def setMiddleware(value: Any): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
       
       inline def setMiddlewareRootDir(value: String): Self = StObject.set(x, "middlewareRootDir", value.asInstanceOf[js.Any])
       
       inline def setMixinDirs(value: js.Array[String]): Self = StObject.set(x, "mixinDirs", value.asInstanceOf[js.Any])
       
-      inline def setMixinDirsVarargs(value: String*): Self = StObject.set(x, "mixinDirs", js.Array(value :_*))
+      inline def setMixinDirsVarargs(value: String*): Self = StObject.set(x, "mixinDirs", js.Array(value*))
       
       inline def setMixinSources(value: js.Array[String]): Self = StObject.set(x, "mixinSources", value.asInstanceOf[js.Any])
       
-      inline def setMixinSourcesVarargs(value: String*): Self = StObject.set(x, "mixinSources", js.Array(value :_*))
+      inline def setMixinSourcesVarargs(value: String*): Self = StObject.set(x, "mixinSources", js.Array(value*))
       
-      inline def setModelDefinitions(value: js.Array[js.Any]): Self = StObject.set(x, "modelDefinitions", value.asInstanceOf[js.Any])
+      inline def setModelDefinitions(value: js.Array[Any]): Self = StObject.set(x, "modelDefinitions", value.asInstanceOf[js.Any])
       
-      inline def setModelDefinitionsVarargs(value: js.Any*): Self = StObject.set(x, "modelDefinitions", js.Array(value :_*))
+      inline def setModelDefinitionsVarargs(value: Any*): Self = StObject.set(x, "modelDefinitions", js.Array(value*))
       
       inline def setModelSources(value: js.Array[String]): Self = StObject.set(x, "modelSources", value.asInstanceOf[js.Any])
       
-      inline def setModelSourcesVarargs(value: String*): Self = StObject.set(x, "modelSources", js.Array(value :_*))
+      inline def setModelSourcesVarargs(value: String*): Self = StObject.set(x, "modelSources", js.Array(value*))
       
-      inline def setModels(value: js.Any): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+      inline def setModels(value: Any): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
       
       inline def setModelsRootDir(value: String): Self = StObject.set(x, "modelsRootDir", value.asInstanceOf[js.Any])
       
-      inline def setNormalization(value: String | Boolean | js.Any): Self = StObject.set(x, "normalization", value.asInstanceOf[js.Any])
+      inline def setNormalization(value: String | Boolean | Any): Self = StObject.set(x, "normalization", value.asInstanceOf[js.Any])
     }
   }
 }

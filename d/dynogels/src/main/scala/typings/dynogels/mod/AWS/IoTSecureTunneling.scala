@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class IoTSecureTunneling ()
+open class IoTSecureTunneling ()
   extends typings.awsSdk.mod.IoTSecureTunneling {
   def this(options: ClientConfiguration) = this()
 }

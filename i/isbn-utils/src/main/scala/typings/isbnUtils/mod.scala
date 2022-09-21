@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("isbn-utils", "ISBN")
   @js.native
-  class ISBN protected () extends StObject {
+  open class ISBN protected () extends StObject {
     def this(`val`: String, groups: IGroups) = this()
     
     def asIsbn10(): String = js.native
@@ -32,7 +32,7 @@ object mod {
   
   @JSImport("isbn-utils", "ISBNcodes")
   @js.native
-  class ISBNcodes () extends StObject {
+  open class ISBNcodes () extends StObject {
     
     val article: String = js.native
     
@@ -67,5 +67,5 @@ object mod {
   inline def parse(isbn: String): ISBN | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(isbn.asInstanceOf[js.Any]).asInstanceOf[ISBN | Null]
   inline def parse(isbn: String, groups: IGroups): ISBN | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(isbn.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[ISBN | Null]
   
-  type IGroups = js.Any
+  type IGroups = Any
 }

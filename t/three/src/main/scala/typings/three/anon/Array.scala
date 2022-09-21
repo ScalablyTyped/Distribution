@@ -26,7 +26,7 @@ object Array {
     
     inline def setArray(value: js.Array[Double]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    inline def setArrayVarargs(value: Double*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: Double*): Self = StObject.set(x, "array", js.Array(value*))
     
     inline def setItemSize(value: Double): Self = StObject.set(x, "itemSize", value.asInstanceOf[js.Any])
     

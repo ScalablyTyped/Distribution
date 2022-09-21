@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-dependency-injection", "TransientRegistration")
 @js.native
-class TransientRegistration[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] ()
+open class TransientRegistration[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] ()
   extends StObject
      with Registration_[TBase, TImpl, TArgs] {
   def this(key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) = this()

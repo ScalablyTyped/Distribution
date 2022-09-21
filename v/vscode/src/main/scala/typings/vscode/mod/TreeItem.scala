@@ -7,18 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "TreeItem")
 @js.native
-class TreeItem protected () extends StObject {
+open class TreeItem protected () extends StObject {
   /**
     * @param label A human-readable string describing this item
-    * @param collapsibleState [TreeItemCollapsibleState](#TreeItemCollapsibleState) of the tree item. Default is [TreeItemCollapsibleState.None](#TreeItemCollapsibleState.None)
+    * @param collapsibleState {@link TreeItemCollapsibleState} of the tree item. Default is {@link TreeItemCollapsibleState.None}
     */
   def this(label: String) = this()
+  def this(label: TreeItemLabel) = this()
   /**
-    * @param resourceUri The [uri](#Uri) of the resource representing this item.
-    * @param collapsibleState [TreeItemCollapsibleState](#TreeItemCollapsibleState) of the tree item. Default is [TreeItemCollapsibleState.None](#TreeItemCollapsibleState.None)
+    * @param resourceUri The {@link Uri} of the resource representing this item.
+    * @param collapsibleState {@link TreeItemCollapsibleState} of the tree item. Default is {@link TreeItemCollapsibleState.None}
     */
   def this(resourceUri: Uri) = this()
   def this(label: String, collapsibleState: TreeItemCollapsibleState) = this()
+  def this(label: TreeItemLabel, collapsibleState: TreeItemCollapsibleState) = this()
   def this(resourceUri: Uri, collapsibleState: TreeItemCollapsibleState) = this()
   
   /**
@@ -29,12 +31,16 @@ class TreeItem protected () extends StObject {
   var accessibilityInformation: js.UndefOr[AccessibilityInformation] = js.native
   
   /**
-    * [TreeItemCollapsibleState](#TreeItemCollapsibleState) of the tree item.
+    * {@link TreeItemCollapsibleState} of the tree item.
     */
   var collapsibleState: js.UndefOr[TreeItemCollapsibleState] = js.native
   
   /**
-    * The [command](#Command) that should be executed when the tree item is selected.
+    * The {@link Command} that should be executed when the tree item is selected.
+    *
+    * Please use `vscode.open` or `vscode.diff` as command IDs when the tree item is opening
+    * something in the editor. Using these commands ensures that the resulting editor will
+    * appear consistent with how other built-in trees open editors.
     */
   var command: js.UndefOr[Command] = js.native
   
@@ -42,17 +48,17 @@ class TreeItem protected () extends StObject {
     * Context value of the tree item. This can be used to contribute item specific actions in the tree.
     * For example, a tree item is given a context value as `folder`. When contributing actions to `view/item/context`
     * using `menus` extension point, you can specify context value for key `viewItem` in `when` expression like `viewItem == folder`.
-    * ```
-    *    "contributes": {
-    *        "menus": {
-    *            "view/item/context": [
-    *                {
-    *                    "command": "extension.deleteFolder",
-    *                    "when": "viewItem == folder"
-    *                }
-    *            ]
-    *        }
-    *    }
+    * ```json
+    * "contributes": {
+    *   "menus": {
+    *     "view/item/context": [
+    *       {
+    *         "command": "extension.deleteFolder",
+    *         "when": "viewItem == folder"
+    *       }
+    *     ]
+    *   }
+    * }
     * ```
     * This will show action `extension.deleteFolder` only for items with `contextValue` is `folder`.
     */
@@ -60,14 +66,14 @@ class TreeItem protected () extends StObject {
   
   /**
     * A human-readable string which is rendered less prominent.
-    * When `true`, it is derived from [resourceUri](#TreeItem.resourceUri) and when `falsy`, it is not shown.
+    * When `true`, it is derived from {@link TreeItem.resourceUri resourceUri} and when `falsy`, it is not shown.
     */
   var description: js.UndefOr[String | Boolean] = js.native
   
   /**
-    * The icon path or [ThemeIcon](#ThemeIcon) for the tree item.
-    * When `falsy`, [Folder Theme Icon](#ThemeIcon.Folder) is assigned, if item is collapsible otherwise [File Theme Icon](#ThemeIcon.File).
-    * When a file or folder [ThemeIcon](#ThemeIcon) is specified, icon is derived from the current file icon theme for the specified theme icon using [resourceUri](#TreeItem.resourceUri) (if provided).
+    * The icon path or {@link ThemeIcon} for the tree item.
+    * When `falsy`, {@link ThemeIcon.Folder Folder Theme Icon} is assigned, if item is collapsible otherwise {@link ThemeIcon.File File Theme Icon}.
+    * When a file or folder {@link ThemeIcon} is specified, icon is derived from the current file icon theme for the specified theme icon using {@link TreeItem.resourceUri resourceUri} (if provided).
     */
   var iconPath: js.UndefOr[String | Uri | Light | ThemeIcon] = js.native
   
@@ -79,20 +85,20 @@ class TreeItem protected () extends StObject {
   var id: js.UndefOr[String] = js.native
   
   /**
-    * A human-readable string describing this item. When `falsy`, it is derived from [resourceUri](#TreeItem.resourceUri).
+    * A human-readable string describing this item. When `falsy`, it is derived from {@link TreeItem.resourceUri resourceUri}.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String | TreeItemLabel] = js.native
   
   /**
-    * The [uri](#Uri) of the resource representing this item.
+    * The {@link Uri} of the resource representing this item.
     *
-    * Will be used to derive the [label](#TreeItem.label), when it is not provided.
-    * Will be used to derive the icon from current file icon theme, when [iconPath](#TreeItem.iconPath) has [ThemeIcon](#ThemeIcon) value.
+    * Will be used to derive the {@link TreeItem.label label}, when it is not provided.
+    * Will be used to derive the icon from current file icon theme, when {@link TreeItem.iconPath iconPath} has {@link ThemeIcon} value.
     */
   var resourceUri: js.UndefOr[Uri] = js.native
   
   /**
     * The tooltip text when you hover over this item.
     */
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String | MarkdownString] = js.native
 }

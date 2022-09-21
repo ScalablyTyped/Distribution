@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram.WechatMiniprogram.Component
 
-import typings.std.Error
 import typings.wechatMiniprogram.anon.Partialcreatedvoidattache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -42,7 +41,7 @@ trait Lifetimes extends StObject {
     *
     * 最低基础库版本：[`2.4.1`](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html)
     */
-  def error(err: Error): Unit
+  def error(err: js.Error): Unit
   
   /** 组件生命周期声明对象，组件的生命周期：`created`、`attached`、`ready`、`moved`、`detached` 将收归到 `lifetimes` 字段内进行声明，原有声明方式仍旧有效，如同时存在两种声明方式，则 `lifetimes` 字段内声明方式优先级最高
     *
@@ -73,7 +72,7 @@ object Lifetimes {
     attached: () => Unit,
     created: () => Unit,
     detached: () => Unit,
-    error: Error => Unit,
+    error: js.Error => Unit,
     lifetimes: Partialcreatedvoidattache,
     moved: () => Unit,
     ready: () => Unit
@@ -90,7 +89,7 @@ object Lifetimes {
     
     inline def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
     
-    inline def setError(value: Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     inline def setLifetimes(value: Partialcreatedvoidattache): Self = StObject.set(x, "lifetimes", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zipkin", "InetAddress")
 @js.native
-class InetAddress protected () extends StObject {
+open class InetAddress protected () extends StObject {
   def this(addr: String) = this()
   
   def ipv4(): String = js.native

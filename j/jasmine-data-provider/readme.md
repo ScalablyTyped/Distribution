@@ -10,10 +10,10 @@ simple data provider for jasmine
 | ------------------ | :-------------: |
 | Full name          | jasmine-data-provider |
 | Keywords           | jasmine, data-provider |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 805677 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 103343.66666666667 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/MortalFlesh/jasmine-data-provider)

@@ -1,7 +1,6 @@
 package typings.reactNativeJoi.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait SymbolSchema
   extends StObject
      with AnySchema {
   
-  def map(iterable: StringDictionary[js.Symbol]): this.type = js.native
   // TODO: support number and symbol index
-  def map(iterable: Iterable[js.Tuple2[String | Double | Boolean | js.Symbol, js.Symbol]]): this.type = js.native
+  def map(iterable: js.Iterable[js.Tuple2[String | Double | Boolean | js.Symbol, js.Symbol]]): this.type = js.native
+  def map(iterable: StringDictionary[js.Symbol]): this.type = js.native
 }

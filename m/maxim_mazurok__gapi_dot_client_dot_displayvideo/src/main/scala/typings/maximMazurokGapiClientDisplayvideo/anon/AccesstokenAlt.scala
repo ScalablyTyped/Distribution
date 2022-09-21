@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
-import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.AssignedTargetingOption
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.BulkEditSitesRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +20,9 @@ trait AccesstokenAlt extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /** Required. The ID of the parent channel to which the sites belong. */
+  var channelId: String
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
@@ -29,7 +32,7 @@ trait AccesstokenAlt extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The ID of the partner. */
+  /** The ID of the partner that owns the parent channel. */
   var partnerId: String
   
   /** Returns response with indentations and line breaks. */
@@ -39,10 +42,7 @@ trait AccesstokenAlt extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: AssignedTargetingOption
-  
-  /** Required. Identifies the type of this assigned targeting option. Supported targeting types: * `TARGETING_TYPE_CHANNEL` */
-  var targetingType: String
+  var resource: BulkEditSitesRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,8 +52,8 @@ trait AccesstokenAlt extends StObject {
 }
 object AccesstokenAlt {
   
-  inline def apply(partnerId: String, resource: AssignedTargetingOption, targetingType: String): AccesstokenAlt = {
-    val __obj = js.Dynamic.literal(partnerId = partnerId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], targetingType = targetingType.asInstanceOf[js.Any])
+  inline def apply(channelId: String, partnerId: String, resource: BulkEditSitesRequest): AccesstokenAlt = {
+    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], partnerId = partnerId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccesstokenAlt]
   }
   
@@ -74,6 +74,8 @@ object AccesstokenAlt {
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -97,9 +99,7 @@ object AccesstokenAlt {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: AssignedTargetingOption): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setTargetingType(value: String): Self = StObject.set(x, "targetingType", value.asInstanceOf[js.Any])
+    inline def setResource(value: BulkEditSitesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

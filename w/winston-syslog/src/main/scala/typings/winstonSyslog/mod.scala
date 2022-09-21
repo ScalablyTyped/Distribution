@@ -1,5 +1,8 @@
 package typings.winstonSyslog
 
+import org.scalablytyped.runtime.Instantiable1
+import typings.glossy.mod.Produce
+import typings.glossy.mod.ProduceOptions
 import typings.node.dgramMod.Socket
 import typings.winstonSyslog.winstonSyslogBooleans.`true`
 import typings.winstonTransport.mod.TransportStreamOptions
@@ -13,7 +16,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("winston-syslog", "Syslog")
   @js.native
-  class Syslog () extends SyslogTransportInstance {
+  open class Syslog () extends SyslogTransportInstance {
     def this(options: SyslogTransportOptions) = this()
   }
   @JSImport("winston-syslog", "Syslog")
@@ -35,9 +38,9 @@ object mod {
   trait SyslogTransportInstance extends ^ {
     
     @JSName("connect")
-    def connect_true(callback: js.Function1[/* err */ `true` | Null, js.Any]): Unit = js.native
+    def connect_true(callback: js.Function1[/* err */ `true` | Null, Any]): Unit = js.native
     
-    var producer: js.Any = js.native
+    var producer: Any = js.native
     
     var socket: Socket | typings.node.netMod.Socket = js.native
   }
@@ -47,6 +50,8 @@ object mod {
        with TransportStreamOptions {
     
     var app_name: js.UndefOr[String] = js.undefined
+    
+    var customProducer: js.UndefOr[Instantiable1[/* options */ ProduceOptions, Produce]] = js.undefined
     
     var eol: js.UndefOr[String] = js.undefined
     
@@ -78,6 +83,10 @@ object mod {
       inline def setApp_name(value: String): Self = StObject.set(x, "app_name", value.asInstanceOf[js.Any])
       
       inline def setApp_nameUndefined: Self = StObject.set(x, "app_name", js.undefined)
+      
+      inline def setCustomProducer(value: Instantiable1[/* options */ ProduceOptions, Produce]): Self = StObject.set(x, "customProducer", value.asInstanceOf[js.Any])
+      
+      inline def setCustomProducerUndefined: Self = StObject.set(x, "customProducer", js.undefined)
       
       inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       

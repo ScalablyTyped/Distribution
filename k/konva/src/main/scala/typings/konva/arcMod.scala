@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object arcMod {
   
-  @JSImport("konva/types/shapes/Arc", "Arc")
+  @JSImport("konva/lib/shapes/Arc", "Arc")
   @js.native
-  class Arc () extends Shape[ArcConfig] {
+  open class Arc () extends Shape[ArcConfig] {
     def this(config: ArcConfig) = this()
     
-    def _sceneFunc(context: js.Any): Unit = js.native
+    def _sceneFunc(context: Any): Unit = js.native
     
     def angle(): Double = js.native
     def angle(v: Double): this.type = js.native
@@ -40,9 +40,9 @@ object arcMod {
     @JSName("outerRadius")
     var outerRadius_Original: GetSet[Double, this.type] = js.native
     
-    def setHeight(height: js.Any): Unit = js.native
+    def setHeight(height: Any): Unit = js.native
     
-    def setWidth(width: js.Any): Unit = js.native
+    def setWidth(width: Any): Unit = js.native
   }
   
   trait ArcConfig

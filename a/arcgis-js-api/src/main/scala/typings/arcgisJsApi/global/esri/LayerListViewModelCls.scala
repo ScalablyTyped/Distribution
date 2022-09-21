@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.LayerListViewModel")
 @js.native
-class LayerListViewModelCls ()
+/**
+  * Provides the logic for the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-LayerListViewModel.html)
+  */
+open class LayerListViewModelCls ()
   extends StObject
      with typings.arcgisJsApi.esri.LayerListViewModel {
   def this(properties: LayerListViewModelProperties) = this()

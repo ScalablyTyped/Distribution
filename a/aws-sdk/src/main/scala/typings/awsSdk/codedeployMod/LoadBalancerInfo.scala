@@ -34,18 +34,18 @@ object LoadBalancerInfo {
     
     inline def setElbInfoListUndefined: Self = StObject.set(x, "elbInfoList", js.undefined)
     
-    inline def setElbInfoListVarargs(value: ELBInfo*): Self = StObject.set(x, "elbInfoList", js.Array(value :_*))
+    inline def setElbInfoListVarargs(value: ELBInfo*): Self = StObject.set(x, "elbInfoList", js.Array(value*))
     
     inline def setTargetGroupInfoList(value: TargetGroupInfoList): Self = StObject.set(x, "targetGroupInfoList", value.asInstanceOf[js.Any])
     
     inline def setTargetGroupInfoListUndefined: Self = StObject.set(x, "targetGroupInfoList", js.undefined)
     
-    inline def setTargetGroupInfoListVarargs(value: TargetGroupInfo*): Self = StObject.set(x, "targetGroupInfoList", js.Array(value :_*))
+    inline def setTargetGroupInfoListVarargs(value: TargetGroupInfo*): Self = StObject.set(x, "targetGroupInfoList", js.Array(value*))
     
     inline def setTargetGroupPairInfoList(value: TargetGroupPairInfoList): Self = StObject.set(x, "targetGroupPairInfoList", value.asInstanceOf[js.Any])
     
     inline def setTargetGroupPairInfoListUndefined: Self = StObject.set(x, "targetGroupPairInfoList", js.undefined)
     
-    inline def setTargetGroupPairInfoListVarargs(value: TargetGroupPairInfo*): Self = StObject.set(x, "targetGroupPairInfoList", js.Array(value :_*))
+    inline def setTargetGroupPairInfoListVarargs(value: TargetGroupPairInfo*): Self = StObject.set(x, "targetGroupPairInfoList", js.Array(value*))
   }
 }

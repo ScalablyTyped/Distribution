@@ -18,9 +18,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * This object represents the attributes for a chart trendline label object.
   *
-  * This object represents the attributes for a chart trendline lable object.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @js.native
@@ -29,9 +29,9 @@ trait ChartTrendlineLabel
      with ClientObject {
   
   /**
+    * Specifies if the trendline label automatically generates appropriate text based on context.
     *
-    * Specifies if trendline label automatically generate appropriate text based on context.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var autoText: Boolean = js.native
@@ -41,50 +41,50 @@ trait ChartTrendlineLabel
   var context_ChartTrendlineLabel: RequestContext = js.native
   
   /**
+    * The format of the chart trendline label.
     *
-    * The format of chart trendline label.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val format: ChartTrendlineLabelFormat = js.native
   
   /**
+    * String value that represents the formula of the chart trendline label using A1-style notation.
     *
-    * String value that represents the formula of chart trendline label using A1-style notation.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var formula: String = js.native
   
   /**
+    * Returns the height, in points, of the chart trendline label. Value is `null` if the chart trendline label is not visible.
     *
-    * Returns the height, in points, of the chart trendline label. Null if chart trendline label is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val height: Double = js.native
   
   /**
+    * Represents the horizontal alignment of the chart trendline label. See `Excel.ChartTextHorizontalAlignment` for details.
+    This property is valid only when `TextOrientation` of a trendline label is -90, 90, or 180.
     *
-    * Represents the horizontal alignment for chart trendline label. See Excel.ChartTextHorizontalAlignment for details.
-    This property is valid only when TextOrientation of trendline label is -90, 90, or 180.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var horizontalAlignment: ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed = js.native
   
   /**
+    * Represents the distance, in points, from the left edge of the chart trendline label to the left edge of the chart area. Value is `null` if the chart trendline label is not visible.
     *
-    * Represents the distance, in points, from the left edge of chart trendline label to the left edge of chart area. Null if chart trendline label is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var left: Double = js.native
   
   /**
-    *
     * Specifies if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var linkNumberFormat: Boolean = js.native
@@ -101,23 +101,17 @@ trait ChartTrendlineLabel
   def load(propertyNames: js.Array[String]): ChartTrendlineLabel = js.native
   
   /**
+    * String value that represents the format code for the trendline label.
     *
-    * String value that represents the format code for trendline label.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var numberFormat: String = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartTrendlineLabel): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartTrendlineLabel): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -125,17 +119,17 @@ trait ChartTrendlineLabel
   def set(properties: ChartTrendlineLabelUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
-    *
     * String representing the text of the trendline label on a chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var text: String = js.native
   
   /**
-    *
     * Represents the angle to which the text is oriented for the chart trendline label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var textOrientation: Double = js.native
@@ -147,26 +141,26 @@ trait ChartTrendlineLabel
   def toJSON(): ChartTrendlineLabelData = js.native
   
   /**
+    * Represents the distance, in points, from the top edge of the chart trendline label to the top of the chart area. Value is `null` if the chart trendline label is not visible.
     *
-    * Represents the distance, in points, from the top edge of chart trendline label to the top of chart area. Null if chart trendline label is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var top: Double = js.native
   
   /**
+    * Represents the vertical alignment of the chart trendline label. See `Excel.ChartTextVerticalAlignment` for details.
+    This property is valid only when `TextOrientation` of a trendline label is 0.
     *
-    * Represents the vertical alignment of chart trendline label. See Excel.ChartTextVerticalAlignment for details.
-    This property is valid only when TextOrientation of trendline label is 0.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var verticalAlignment: ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed = js.native
   
   /**
+    * Returns the width, in points, of the chart trendline label. Value is `null` if the chart trendline label is not visible.
     *
-    * Returns the width, in points, of the chart trendline label. Null if chart trendline label is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val width: Double = js.native

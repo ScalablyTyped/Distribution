@@ -1,7 +1,7 @@
 
 # Scala.js typings for rfdc
 
-Typings are for version 1.1
+Typings are for version 1.3.0
 
 ## Library description:
 Really Fast Deep Clone
@@ -10,10 +10,10 @@ Really Fast Deep Clone
 | ------------------ | :-------------: |
 | Full name          | rfdc |
 | Keywords           | object, obj, properties, clone, copy, deep, recursive, key, keys, values, prop, deep-clone, deepclone, deep-copy, deepcopy, fast, performance, performant, fastclone, fastcopy, fast-clone, fast-deep-clone, fast-copy, fast-deep-copy |
-| # releases         | 4 |
-| # dependents       | 72 |
-| # downloads        | 86468622 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3.5988334E7 |
+| # stars            | 518.0 |
 
 ## Links
 - [Homepage](https://github.com/davidmarkclements/rfdc#readme)
@@ -24,7 +24,7 @@ Really Fast Deep Clone
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

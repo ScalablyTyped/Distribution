@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "makerjs" : "0.17.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "makerjs" : "0.17.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

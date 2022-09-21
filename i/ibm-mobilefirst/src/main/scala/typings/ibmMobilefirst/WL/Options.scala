@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Options extends StObject {
   
-  var invocationContext: js.UndefOr[js.Any] = js.undefined
+  var invocationContext: js.UndefOr[Any] = js.undefined
   
   var onFailure: js.UndefOr[js.Function1[/* response */ IResponse, Unit]] = js.undefined
   
@@ -21,7 +21,7 @@ object Options {
   
   extension [Self <: Options](x: Self) {
     
-    inline def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
+    inline def setInvocationContext(value: Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
     
     inline def setInvocationContextUndefined: Self = StObject.set(x, "invocationContext", js.undefined)
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_memcache
 
-Typings are for version 1.0.20201109
+Typings are for version 1.0.20220802
 
 ## Library description:
 TypeScript typings for Cloud Memorystore for Memcached API v1
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Memorystore for Memcached API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.memcache |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 717 |
-| # stars            | 0 |
+| # releases         | 36 |
+| # dependents       | 0.0 |
+| # downloads        | 714.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

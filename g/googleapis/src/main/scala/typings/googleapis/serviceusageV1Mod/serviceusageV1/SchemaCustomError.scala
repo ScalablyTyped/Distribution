@@ -4,26 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Customize service error responses.  For example, list any service specific
-  * protobuf types that can appear in error detail lists of error responses.
-  * Example:      custom_error:       types:       - google.foo.v1.CustomError
-  * - google.foo.v1.AnotherError
-  */
 trait SchemaCustomError extends StObject {
   
   /**
-    * The list of custom error rules that apply to individual API messages.
-    * **NOTE:** All service configuration rules follow &quot;last one
-    * wins&quot; order.
+    * The list of custom error rules that apply to individual API messages. **NOTE:** All service configuration rules follow "last one wins" order.
     */
   var rules: js.UndefOr[js.Array[SchemaCustomErrorRule]] = js.undefined
   
   /**
-    * The list of custom error detail types, e.g.
-    * &#39;google.foo.v1.CustomError&#39;.
+    * The list of custom error detail types, e.g. 'google.foo.v1.CustomError'.
     */
-  var types: js.UndefOr[js.Array[String]] = js.undefined
+  var types: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaCustomError {
   
@@ -38,12 +29,14 @@ object SchemaCustomError {
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: SchemaCustomErrorRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: SchemaCustomErrorRule*): Self = StObject.set(x, "rules", js.Array(value*))
     
     inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
+    inline def setTypesNull: Self = StObject.set(x, "types", null)
+    
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

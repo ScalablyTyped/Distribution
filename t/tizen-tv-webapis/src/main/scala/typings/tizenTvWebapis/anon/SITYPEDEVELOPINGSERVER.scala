@@ -10,20 +10,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SITYPEDEVELOPINGSERVER extends StObject {
   
   /**
-    * Developing server
+    * Developing
+    *
     * @since 2.3
+    *
+    * @version 1.0
+    *
     */
   var SI_TYPE_DEVELOPING_SERVER: `2`
   
   /**
-    * Development server
+    * Development
+    *
     * @since 2.3
+    *
+    * @version 1.0
+    *
     */
   var SI_TYPE_DEVELOPMENT_SERVER: `1`
   
   /**
-    * Operating server
+    * Operating
+    *
     * @since 2.3
+    *
+    * @version 1.0
+    *
     */
   var SI_TYPE_OPERATIING_SERVER: `0`
 }

@@ -9,25 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pagespeedonlineV5 {
   
-  /**
-    * PageSpeed Insights API
-    *
-    * Analyzes the performance of a web page and provides tailored suggestions to
-    * make that page faster.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const pagespeedonline = google.pagespeedonline('v5');
-    *
-    * @namespace pagespeedonline
-    * @type {Function}
-    * @version v5
-    * @variation v5
-    * @param {object=} options Options for Pagespeedonline
-    */
   @JSImport("googleapis", "pagespeedonline_v5.Pagespeedonline")
   @js.native
-  class Pagespeedonline protected ()
+  open class Pagespeedonline protected ()
     extends typings.googleapis.v5Mod.pagespeedonlineV5.Pagespeedonline {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -35,7 +19,7 @@ object pagespeedonlineV5 {
   
   @JSImport("googleapis", "pagespeedonline_v5.Resource$Pagespeedapi")
   @js.native
-  class ResourcePagespeedapi protected ()
+  open class ResourcePagespeedapi protected ()
     extends typings.googleapis.v5Mod.pagespeedonlineV5.ResourcePagespeedapi {
     def this(context: APIRequestContext) = this()
   }

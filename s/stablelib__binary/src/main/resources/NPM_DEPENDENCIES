@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@stablelib/binary" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@stablelib/binary" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

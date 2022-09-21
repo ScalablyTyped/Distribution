@@ -55,8 +55,8 @@ trait IDroppable
   @JSName("relayEvents")
   var relayEvents_IDroppable: js.UndefOr[
     js.Function2[
-      /* object */ js.UndefOr[js.Any], 
-      /* events */ js.UndefOr[js.Any], 
+      /* object */ js.UndefOr[Any], 
+      /* events */ js.UndefOr[Any], 
       typings.senchaTouch.Ext.mixin.IObservable
     ]
   ] = js.undefined
@@ -123,7 +123,7 @@ object IDroppable {
     inline def setIsMonitoringUndefined: Self = StObject.set(x, "isMonitoring", js.undefined)
     
     inline def setRelayEvents(
-      value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.mixin.IObservable
+      value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => typings.senchaTouch.Ext.mixin.IObservable
     ): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)

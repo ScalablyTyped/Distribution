@@ -33,6 +33,6 @@ object ListPiiEntitiesDetectionJobsResponse {
     
     inline def setPiiEntitiesDetectionJobPropertiesListUndefined: Self = StObject.set(x, "PiiEntitiesDetectionJobPropertiesList", js.undefined)
     
-    inline def setPiiEntitiesDetectionJobPropertiesListVarargs(value: PiiEntitiesDetectionJobProperties*): Self = StObject.set(x, "PiiEntitiesDetectionJobPropertiesList", js.Array(value :_*))
+    inline def setPiiEntitiesDetectionJobPropertiesListVarargs(value: PiiEntitiesDetectionJobProperties*): Self = StObject.set(x, "PiiEntitiesDetectionJobPropertiesList", js.Array(value*))
   }
 }

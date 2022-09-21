@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object airtableStrings {
   
   @js.native
+  sealed trait ObjectMap extends StObject
+  inline def ObjectMap: ObjectMap = "ObjectMap".asInstanceOf[ObjectMap]
+  
+  @js.native
   sealed trait asc extends StObject
   inline def asc: asc = "asc".asInstanceOf[asc]
   

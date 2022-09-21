@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("dynamic-time-warping", JSImport.Namespace)
   @js.native
-  class ^[T] protected () extends DynamicTimeWarping[T] {
+  open class ^[T] protected () extends DynamicTimeWarping[T] {
     def this(ser1: js.Array[T], ser2: js.Array[T], distFunc: js.Function2[/* a */ T, /* b */ T, Double]) = this()
   }
   
@@ -17,7 +17,7 @@ object mod {
     
     @JSGlobal("DynamicTimeWarping")
     @js.native
-    class DynamicTimeWarping[T] protected () extends StObject {
+    open class DynamicTimeWarping[T] protected () extends StObject {
       def this(ser1: js.Array[T], ser2: js.Array[T], distFunc: js.Function2[/* a */ T, /* b */ T, Double]) = this()
       
       def getDistance(): Double = js.native

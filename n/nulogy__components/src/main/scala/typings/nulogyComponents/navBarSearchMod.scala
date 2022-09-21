@@ -8,5 +8,5 @@ object navBarSearchMod {
   
   @JSImport("@nulogy/components/src/NavBarSearch", "NavBarSearch")
   @js.native
-  val NavBarSearch: js.Any = js.native
+  val NavBarSearch: Any = js.native
 }

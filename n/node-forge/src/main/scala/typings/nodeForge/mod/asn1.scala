@@ -234,7 +234,7 @@ object asn1 {
       
       inline def setValue(value: Bytes | js.Array[Asn1]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: Asn1*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Asn1*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
 }

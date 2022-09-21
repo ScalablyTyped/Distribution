@@ -54,7 +54,7 @@ object FullProperty {
     
     inline def setOptionalTypesUndefined: Self = StObject.set(x, "optionalTypes", js.undefined)
     
-    inline def setOptionalTypesVarargs(value: ShortProperty*): Self = StObject.set(x, "optionalTypes", js.Array(value :_*))
+    inline def setOptionalTypesVarargs(value: ShortProperty*): Self = StObject.set(x, "optionalTypes", js.Array(value*))
     
     inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
@@ -62,6 +62,6 @@ object FullProperty {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

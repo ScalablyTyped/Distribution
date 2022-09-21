@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchDeleteTableRequest extends StObject {
   
   /**
-    * The ID of the Data Catalog where the table resides. If none is provided, the AWS account ID is used by default.
+    * The ID of the Data Catalog where the table resides. If none is provided, the Amazon Web Services account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
@@ -20,6 +20,11 @@ trait BatchDeleteTableRequest extends StObject {
     * A list of the table to delete.
     */
   var TablesToDelete: BatchDeleteTableNameList
+  
+  /**
+    * The transaction ID at which to delete the table contents.
+    */
+  var TransactionId: js.UndefOr[TransactionIdString] = js.undefined
 }
 object BatchDeleteTableRequest {
   
@@ -38,6 +43,10 @@ object BatchDeleteTableRequest {
     
     inline def setTablesToDelete(value: BatchDeleteTableNameList): Self = StObject.set(x, "TablesToDelete", value.asInstanceOf[js.Any])
     
-    inline def setTablesToDeleteVarargs(value: NameString*): Self = StObject.set(x, "TablesToDelete", js.Array(value :_*))
+    inline def setTablesToDeleteVarargs(value: NameString*): Self = StObject.set(x, "TablesToDelete", js.Array(value*))
+    
+    inline def setTransactionId(value: TransactionIdString): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "TransactionId", js.undefined)
   }
 }

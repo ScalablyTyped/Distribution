@@ -167,6 +167,10 @@ object mochaStrings {
   inline def html_ : html_ = "html".asInstanceOf[html_]
   
   @js.native
+  sealed trait idle extends StObject
+  inline def idle: idle = "idle".asInstanceOf[idle]
+  
+  @js.native
   sealed trait `json-stream`
     extends StObject
        with Reporter
@@ -261,6 +265,10 @@ object mochaStrings {
   inline def run: run = "run".asInstanceOf[run]
   
   @js.native
+  sealed trait running extends StObject
+  inline def running: running = "running".asInstanceOf[running]
+  
+  @js.native
   sealed trait slow extends StObject
   inline def slow: slow = "slow".asInstanceOf[slow]
   
@@ -273,6 +281,10 @@ object mochaStrings {
   @js.native
   sealed trait start extends StObject
   inline def start: start = "start".asInstanceOf[start]
+  
+  @js.native
+  sealed trait stopped extends StObject
+  inline def stopped: stopped = "stopped".asInstanceOf[stopped]
   
   @js.native
   sealed trait suite extends StObject

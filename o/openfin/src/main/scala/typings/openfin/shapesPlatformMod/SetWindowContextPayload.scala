@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SetWindowContextPayload extends StObject {
   
-  var context: js.Any
+  var context: Any
   
   var entityType: EntityType
   
@@ -16,14 +16,14 @@ trait SetWindowContextPayload extends StObject {
 }
 object SetWindowContextPayload {
   
-  inline def apply(context: js.Any, entityType: EntityType, target: Identity): SetWindowContextPayload = {
+  inline def apply(context: Any, entityType: EntityType, target: Identity): SetWindowContextPayload = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], entityType = entityType.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetWindowContextPayload]
   }
   
   extension [Self <: SetWindowContextPayload](x: Self) {
     
-    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setEntityType(value: EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     

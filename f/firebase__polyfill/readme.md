@@ -9,11 +9,11 @@ This is the a set of polyfills/shims used by the Firebase JS SDK. This package i
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @firebase/polyfill |
-| Keywords           | - |
-| # releases         | 1288 |
-| # dependents       | 13 |
-| # downloads        | 34423756 |
-| # stars            | 0 |
+| Keywords           | authentication, database, Firebase, firebase, firestore, functions, realtime, storage, performance |
+| # releases         | 768 |
+| # dependents       | 0.0 |
+| # downloads        | 4556286.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

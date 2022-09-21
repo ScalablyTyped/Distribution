@@ -61,11 +61,11 @@ object Color {
     
     inline def setLabels(value: js.Array[OffsetX]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setLabelsVarargs(value: OffsetX*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: OffsetX*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setPoints(value: js.Array[Selected]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: Selected*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Selected*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     

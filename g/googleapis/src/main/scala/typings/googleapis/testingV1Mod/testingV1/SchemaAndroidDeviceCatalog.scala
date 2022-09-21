@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The currently supported Android devices.
-  */
 trait SchemaAndroidDeviceCatalog extends StObject {
   
   /**
@@ -37,7 +34,7 @@ object SchemaAndroidDeviceCatalog {
     
     inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
-    inline def setModelsVarargs(value: SchemaAndroidModel*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: SchemaAndroidModel*): Self = StObject.set(x, "models", js.Array(value*))
     
     inline def setRuntimeConfiguration(value: SchemaAndroidRuntimeConfiguration): Self = StObject.set(x, "runtimeConfiguration", value.asInstanceOf[js.Any])
     
@@ -47,6 +44,6 @@ object SchemaAndroidDeviceCatalog {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    inline def setVersionsVarargs(value: SchemaAndroidVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: SchemaAndroidVersion*): Self = StObject.set(x, "versions", js.Array(value*))
   }
 }

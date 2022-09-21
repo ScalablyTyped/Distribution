@@ -156,7 +156,7 @@ object QueryQueryInfo {
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
+    inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value*))
     
     inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
     

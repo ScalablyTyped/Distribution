@@ -1,16 +1,13 @@
 package typings.quadstore
 
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.TopLevel
-import typings.abstractLeveldown.mod.AbstractLevelDOWN
-import typings.node.NodeJS.ReadableStream
-import typings.node.eventsMod.EventEmitter
-import typings.quadstore.anon.ContextKey
-import typings.quadstore.anon.`0`
-import typings.quadstore.quadstoreStrings.graph
-import typings.rdfJs.mod.BaseQuad
-import typings.rdfJs.mod.QuadGraph
-import typings.rdfJs.mod.Term
+import typings.quadstore.quadstoreNumbers.`-1`
+import typings.quadstore.quadstoreNumbers.`0`
+import typings.quadstore.quadstoreNumbers.`1`
+import typings.quadstore.typesMod.Binding
+import typings.quadstore.typesMod.StoreOpts
+import typings.quadstore.typesMod.TermName
+import typings.rdfjsTypes.dataModelMod.Quad
+import typings.rdfjsTypes.dataModelMod.Term
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,246 +16,34 @@ object mod {
   
   @JSImport("quadstore", JSImport.Namespace)
   @js.native
-  class ^[CK /* <: String */, TermType, Q] protected ()
-    extends typings.quadstore.mod.quadstore[CK, TermType, Q] {
-    def this(db: AbstractLevelDOWN[js.Any, js.Any]) = this()
-    def this(db: AbstractLevelDOWN[js.Any, js.Any], opts: `0`[CK]) = this()
-  }
+  val ^ : js.Any = js.native
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("quadstore", "QuadStore")
+  @JSImport("quadstore", "Quadstore")
   @js.native
-  class QuadStore_[CK /* <: String */, TermType, Q] protected ()
-    extends typings.quadstore.mod.quadstore[CK, TermType, Q] {
-    def this(db: AbstractLevelDOWN[js.Any, js.Any]) = this()
-    def this(db: AbstractLevelDOWN[js.Any, js.Any], opts: ContextKey) = this()
+  open class Quadstore protected ()
+    extends typings.quadstore.quadstoreMod.Quadstore {
+    def this(opts: StoreOpts) = this()
   }
   
-  @JSImport("quadstore", "QuadStore")
+  @JSImport("quadstore", "ResultType")
   @js.native
-  val QuadStore_ : Instantiable2[
-    /* db */ AbstractLevelDOWN[js.Any, js.Any], 
-    /* opts */ js.UndefOr[ContextKey], 
-    typings.quadstore.mod.quadstore[String, js.Object, js.Object]
-  ] = js.native
-  
-  @JSImport("quadstore", "RdfStore")
-  @js.native
-  class RdfStore[Q /* <: BaseQuad */] protected ()
-    extends typings.quadstore.mod.quadstore[graph, Q, Term] {
-    def this(abstractLevelDOWN: AbstractLevelDOWN[js.Any, js.Any], opts: js.Any) = this()
+  object ResultType extends StObject {
     
-    def deleteGraph(graph: QuadGraph): EventEmitter = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.quadstore.typesMod.ResultType & String] = js.native
     
-    def `match`(subject: Term, predicate: Term, `object`: Term, graph: Term): ReadableStream = js.native
+    /* "approximate_size" */ val APPROXIMATE_SIZE: typings.quadstore.typesMod.ResultType.APPROXIMATE_SIZE & String = js.native
     
-    def remove(source: ReadableStream): Unit = js.native
-    def remove(source: ReadableStream, opts: js.Any): Unit = js.native
+    /* "quads" */ val QUADS: typings.quadstore.typesMod.ResultType.QUADS & String = js.native
     
-    def removeMatches(subject: Term, predicate: Term, `object`: Term, graph: Term): ReadableStream = js.native
+    /* "void" */ val VOID: typings.quadstore.typesMod.ResultType.VOID & String = js.native
   }
   
-  trait IndexOptions extends StObject {
-    
-    var gt: js.UndefOr[String] = js.undefined
-    
-    var gte: js.UndefOr[String] = js.undefined
-    
-    var limit: js.UndefOr[Double] = js.undefined
-    
-    var lt: js.UndefOr[String] = js.undefined
-    
-    var lte: js.UndefOr[String] = js.undefined
-    
-    var reverse: js.UndefOr[Boolean] = js.undefined
-  }
-  object IndexOptions {
-    
-    inline def apply(): IndexOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IndexOptions]
-    }
-    
-    extension [Self <: IndexOptions](x: Self) {
-      
-      inline def setGt(value: String): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
-      
-      inline def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
-      
-      inline def setGte(value: String): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
-      
-      inline def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
-      
-      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
-      
-      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
-      
-      inline def setLt(value: String): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
-      
-      inline def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
-      
-      inline def setLte(value: String): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
-      
-      inline def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
-      
-      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
-      
-      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
-    }
-  }
+  inline def getBindingComparator(): js.Function2[/* a */ Binding, /* b */ Binding, `-1` | `0` | `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBindingComparator")().asInstanceOf[js.Function2[/* a */ Binding, /* b */ Binding, `-1` | `0` | `1`]]
+  inline def getBindingComparator(_termNames: js.Array[String]): js.Function2[/* a */ Binding, /* b */ Binding, `-1` | `0` | `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBindingComparator")(_termNames.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ Binding, /* b */ Binding, `-1` | `0` | `1`]]
   
-  @js.native
-  trait MatchTerms[TermType, CK /* <: String */] extends StObject {
-    
-    var `object`: js.UndefOr[TermType] = js.native
-    
-    var predicate: js.UndefOr[TermType] = js.native
-    
-    var subject: js.UndefOr[TermType] = js.native
-  }
+  inline def getQuadComparator(): js.Function2[/* a */ Quad, /* b */ Quad, `-1` | `0` | `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuadComparator")().asInstanceOf[js.Function2[/* a */ Quad, /* b */ Quad, `-1` | `0` | `1`]]
+  inline def getQuadComparator(_termNames: js.Array[TermName]): js.Function2[/* a */ Quad, /* b */ Quad, `-1` | `0` | `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuadComparator")(_termNames.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ Quad, /* b */ Quad, `-1` | `0` | `1`]]
   
-  type Quad[TermType, CK /* <: String */] = Triple[TermType] & typings.quadstore.quadstoreStrings.Quad & TopLevel[js.Any]
-  
-  trait StreamOptions extends StObject {
-    
-    var limit: js.UndefOr[Double] = js.undefined
-    
-    var offset: js.UndefOr[Double] = js.undefined
-  }
-  object StreamOptions {
-    
-    inline def apply(): StreamOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[StreamOptions]
-    }
-    
-    extension [Self <: StreamOptions](x: Self) {
-      
-      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
-      
-      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
-      
-      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
-      
-      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
-    }
-  }
-  
-  trait Triple[TermType] extends StObject {
-    
-    var `object`: TermType
-    
-    var predicate: TermType
-    
-    var subject: TermType
-  }
-  object Triple {
-    
-    inline def apply[TermType](`object`: TermType, predicate: TermType, subject: TermType): Triple[TermType] = {
-      val __obj = js.Dynamic.literal(predicate = predicate.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Triple[TermType]]
-    }
-    
-    extension [Self <: Triple[?], TermType](x: Self & Triple[TermType]) {
-      
-      inline def setObject(value: TermType): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
-      
-      inline def setPredicate(value: TermType): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
-      
-      inline def setSubject(value: TermType): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  @js.native
-  trait quadstore[CK /* <: String */, TermType, Q] extends EventEmitter {
-    
-    var boundary: String = js.native
-    
-    def close(): Unit = js.native
-    def close(cb: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
-    
-    def del(matchTermsOrOldQuads: js.Array[Q]): js.Promise[Unit] = js.native
-    def del(matchTermsOrOldQuads: js.Array[Q], cb: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
-    def del(matchTermsOrOldQuads: MatchTerms[TermType, CK]): js.Promise[Unit] = js.native
-    def del(matchTermsOrOldQuads: MatchTerms[TermType, CK], cb: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
-    
-    def delStream(stream: ReadableStream): js.Promise[Unit] = js.native
-    def delStream(stream: ReadableStream, cb: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
-    
-    def get(matchTerms: MatchTerms[TermType, CK]): js.Promise[js.Array[Q]] = js.native
-    def get(
-      matchTerms: MatchTerms[TermType, CK],
-      cb: js.Function2[/* err */ js.Any, /* quads */ js.Array[Q], Unit]
-    ): Unit = js.native
-    
-    def getApproximateCount(matchTerms: MatchTerms[TermType, CK]): js.Promise[Double] = js.native
-    def getApproximateCount(matchTerms: MatchTerms[TermType, CK], cb: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Unit = js.native
-    def getApproximateCount(matchTerms: MatchTerms[TermType, CK], opts: js.Any): js.Promise[Double] = js.native
-    def getApproximateCount(
-      matchTerms: MatchTerms[TermType, CK],
-      opts: js.Any,
-      cb: js.Function2[/* err */ js.Any, /* count */ Double, Unit]
-    ): Unit = js.native
-    
-    def getByIndex(name: String): js.Promise[js.Array[Q]] = js.native
-    def getByIndex(name: String, cb: js.Function2[/* err */ js.Any, /* quads */ js.Array[Q], Unit]): Unit = js.native
-    def getByIndex(name: String, opts: IndexOptions): js.Promise[js.Array[Q]] = js.native
-    def getByIndex(
-      name: String,
-      opts: IndexOptions,
-      cb: js.Function2[/* err */ js.Any, /* quads */ js.Array[Q], Unit]
-    ): Unit = js.native
-    
-    def getByIndexStream(name: String): ReadableStream = js.native
-    def getByIndexStream(name: String, opts: IndexOptions): ReadableStream = js.native
-    
-    def getStream(): ReadableStream = js.native
-    def getStream(matchTerms: Unit, opts: StreamOptions): ReadableStream = js.native
-    def getStream(matchTerms: MatchTerms[TermType, CK]): ReadableStream = js.native
-    def getStream(matchTerms: MatchTerms[TermType, CK], opts: StreamOptions): ReadableStream = js.native
-    
-    def patch(matchTermsOrOldQuads: js.Array[Q], newQuads: js.Array[Q]): Unit = js.native
-    def patch(matchTermsOrOldQuads: js.Array[Q], newQuads: js.Array[Q], opts: js.Any): Unit = js.native
-    def patch(
-      matchTermsOrOldQuads: js.Array[Q],
-      newQuads: js.Array[Q],
-      opts: js.Any,
-      cb: js.Function1[/* err */ js.Any, Unit]
-    ): Unit = js.native
-    def patch(
-      matchTermsOrOldQuads: js.Array[Q],
-      newQuads: js.Array[Q],
-      opts: Unit,
-      cb: js.Function1[/* err */ js.Any, Unit]
-    ): Unit = js.native
-    def patch(matchTermsOrOldQuads: MatchTerms[TermType, CK], newQuads: js.Array[Q]): Unit = js.native
-    def patch(matchTermsOrOldQuads: MatchTerms[TermType, CK], newQuads: js.Array[Q], opts: js.Any): Unit = js.native
-    def patch(
-      matchTermsOrOldQuads: MatchTerms[TermType, CK],
-      newQuads: js.Array[Q],
-      opts: js.Any,
-      cb: js.Function1[/* err */ js.Any, Unit]
-    ): Unit = js.native
-    def patch(
-      matchTermsOrOldQuads: MatchTerms[TermType, CK],
-      newQuads: js.Array[Q],
-      opts: Unit,
-      cb: js.Function1[/* err */ js.Any, Unit]
-    ): Unit = js.native
-    
-    def put(quads: js.Array[Q]): js.Promise[Unit] = js.native
-    def put(quads: js.Array[Q], cb: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
-    
-    def putStream(source: ReadableStream): js.Promise[Unit] = js.native
-    def putStream(source: ReadableStream, cb: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
-    def putStream(source: ReadableStream, opts: js.Any): js.Promise[Unit] = js.native
-    def putStream(source: ReadableStream, opts: js.Any, cb: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
-    
-    def registerIndex(name: String, keyFn: js.Function1[/* quad */ Q, String]): Unit = js.native
-    
-    var separator: String = js.native
-    
-    def toJSON(): String = js.native
-  }
+  inline def getTermComparator(): js.Function2[/* a */ Term, /* b */ Term, `-1` | `0` | `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTermComparator")().asInstanceOf[js.Function2[/* a */ Term, /* b */ Term, `-1` | `0` | `1`]]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VerifyResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (key ARN) of the asymmetric CMK that was used to verify the signature.
+    * The Amazon Resource Name (key ARN) of the asymmetric KMS key that was used to verify the signature.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.undefined
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetProtectionStatusResponse extends StObject {
   
   /**
-    * The ID of the AWS Firewall administrator account for this policy.
+    * The ID of the Firewall Manager administrator account for this policy.
     */
   var AdminAccountId: js.UndefOr[AWSAccountId] = js.undefined
   
@@ -17,7 +17,7 @@ trait GetProtectionStatusResponse extends StObject {
   var Data: js.UndefOr[ProtectionData] = js.undefined
   
   /**
-    * If you have more objects than the number that you specified for MaxResults in the request, the response includes a NextToken value. To list more objects, submit another GetProtectionStatus request, and specify the NextToken value from the response in the NextToken value in the next request. AWS SDKs provide auto-pagination that identify NextToken in a response and make subsequent request calls automatically on your behalf. However, this feature is not supported by GetProtectionStatus. You must submit subsequent requests with NextToken using your own processes. 
+    * If you have more objects than the number that you specified for MaxResults in the request, the response includes a NextToken value. To list more objects, submit another GetProtectionStatus request, and specify the NextToken value from the response in the NextToken value in the next request. Amazon Web Services SDKs provide auto-pagination that identify NextToken in a response and make subsequent request calls automatically on your behalf. However, this feature is not supported by GetProtectionStatus. You must submit subsequent requests with NextToken using your own processes. 
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
   

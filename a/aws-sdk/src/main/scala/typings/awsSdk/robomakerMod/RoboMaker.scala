@@ -40,12 +40,12 @@ trait RoboMaker extends Service {
   ): Request[BatchDescribeSimulationJobResponse, AWSError] = js.native
   
   /**
-    * Cancels the specified deployment job.
+    * Cancels the specified deployment job.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def cancelDeploymentJob(): Request[CancelDeploymentJobResponse, AWSError] = js.native
   def cancelDeploymentJob(callback: js.Function2[/* err */ AWSError, /* data */ CancelDeploymentJobResponse, Unit]): Request[CancelDeploymentJobResponse, AWSError] = js.native
   /**
-    * Cancels the specified deployment job.
+    * Cancels the specified deployment job.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def cancelDeploymentJob(params: CancelDeploymentJobRequest): Request[CancelDeploymentJobResponse, AWSError] = js.native
   def cancelDeploymentJob(
@@ -113,12 +113,12 @@ trait RoboMaker extends Service {
   var config_RoboMaker: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version.   After 90 days, deployment jobs expire and will be deleted. They will no longer be accessible.  
+    * Deploys a specific version of a robot application to robots in a fleet.  This API is no longer supported and will throw an error if used.  The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version.   After 90 days, deployment jobs expire and will be deleted. They will no longer be accessible.  
     */
   def createDeploymentJob(): Request[CreateDeploymentJobResponse, AWSError] = js.native
   def createDeploymentJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateDeploymentJobResponse, Unit]): Request[CreateDeploymentJobResponse, AWSError] = js.native
   /**
-    * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version.   After 90 days, deployment jobs expire and will be deleted. They will no longer be accessible.  
+    * Deploys a specific version of a robot application to robots in a fleet.  This API is no longer supported and will throw an error if used.  The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version.   After 90 days, deployment jobs expire and will be deleted. They will no longer be accessible.  
     */
   def createDeploymentJob(params: CreateDeploymentJobRequest): Request[CreateDeploymentJobResponse, AWSError] = js.native
   def createDeploymentJob(
@@ -127,12 +127,12 @@ trait RoboMaker extends Service {
   ): Request[CreateDeploymentJobResponse, AWSError] = js.native
   
   /**
-    * Creates a fleet, a logical group of robots running the same robot application.
+    * Creates a fleet, a logical group of robots running the same robot application.  This API is no longer supported and will throw an error if used. 
     */
   def createFleet(): Request[CreateFleetResponse, AWSError] = js.native
   def createFleet(callback: js.Function2[/* err */ AWSError, /* data */ CreateFleetResponse, Unit]): Request[CreateFleetResponse, AWSError] = js.native
   /**
-    * Creates a fleet, a logical group of robots running the same robot application.
+    * Creates a fleet, a logical group of robots running the same robot application.  This API is no longer supported and will throw an error if used. 
     */
   def createFleet(params: CreateFleetRequest): Request[CreateFleetResponse, AWSError] = js.native
   def createFleet(
@@ -141,12 +141,12 @@ trait RoboMaker extends Service {
   ): Request[CreateFleetResponse, AWSError] = js.native
   
   /**
-    * Creates a robot.
+    * Creates a robot.  This API is no longer supported and will throw an error if used. 
     */
   def createRobot(): Request[CreateRobotResponse, AWSError] = js.native
   def createRobot(callback: js.Function2[/* err */ AWSError, /* data */ CreateRobotResponse, Unit]): Request[CreateRobotResponse, AWSError] = js.native
   /**
-    * Creates a robot.
+    * Creates a robot.  This API is no longer supported and will throw an error if used. 
     */
   def createRobot(params: CreateRobotRequest): Request[CreateRobotResponse, AWSError] = js.native
   def createRobot(
@@ -269,12 +269,12 @@ trait RoboMaker extends Service {
   ): Request[CreateWorldTemplateResponse, AWSError] = js.native
   
   /**
-    * Deletes a fleet.
+    * Deletes a fleet.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def deleteFleet(): Request[DeleteFleetResponse, AWSError] = js.native
   def deleteFleet(callback: js.Function2[/* err */ AWSError, /* data */ DeleteFleetResponse, Unit]): Request[DeleteFleetResponse, AWSError] = js.native
   /**
-    * Deletes a fleet.
+    * Deletes a fleet.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def deleteFleet(params: DeleteFleetRequest): Request[DeleteFleetResponse, AWSError] = js.native
   def deleteFleet(
@@ -283,12 +283,12 @@ trait RoboMaker extends Service {
   ): Request[DeleteFleetResponse, AWSError] = js.native
   
   /**
-    * Deletes a robot.
+    * Deletes a robot.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def deleteRobot(): Request[DeleteRobotResponse, AWSError] = js.native
   def deleteRobot(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRobotResponse, Unit]): Request[DeleteRobotResponse, AWSError] = js.native
   /**
-    * Deletes a robot.
+    * Deletes a robot.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def deleteRobot(params: DeleteRobotRequest): Request[DeleteRobotResponse, AWSError] = js.native
   def deleteRobot(
@@ -339,12 +339,12 @@ trait RoboMaker extends Service {
   ): Request[DeleteWorldTemplateResponse, AWSError] = js.native
   
   /**
-    * Deregisters a robot.
+    * Deregisters a robot.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def deregisterRobot(): Request[DeregisterRobotResponse, AWSError] = js.native
   def deregisterRobot(callback: js.Function2[/* err */ AWSError, /* data */ DeregisterRobotResponse, Unit]): Request[DeregisterRobotResponse, AWSError] = js.native
   /**
-    * Deregisters a robot.
+    * Deregisters a robot.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def deregisterRobot(params: DeregisterRobotRequest): Request[DeregisterRobotResponse, AWSError] = js.native
   def deregisterRobot(
@@ -353,12 +353,12 @@ trait RoboMaker extends Service {
   ): Request[DeregisterRobotResponse, AWSError] = js.native
   
   /**
-    * Describes a deployment job.
+    * Describes a deployment job.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def describeDeploymentJob(): Request[DescribeDeploymentJobResponse, AWSError] = js.native
   def describeDeploymentJob(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDeploymentJobResponse, Unit]): Request[DescribeDeploymentJobResponse, AWSError] = js.native
   /**
-    * Describes a deployment job.
+    * Describes a deployment job.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def describeDeploymentJob(params: DescribeDeploymentJobRequest): Request[DescribeDeploymentJobResponse, AWSError] = js.native
   def describeDeploymentJob(
@@ -367,12 +367,12 @@ trait RoboMaker extends Service {
   ): Request[DescribeDeploymentJobResponse, AWSError] = js.native
   
   /**
-    * Describes a fleet.
+    * Describes a fleet.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def describeFleet(): Request[DescribeFleetResponse, AWSError] = js.native
   def describeFleet(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFleetResponse, Unit]): Request[DescribeFleetResponse, AWSError] = js.native
   /**
-    * Describes a fleet.
+    * Describes a fleet.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def describeFleet(params: DescribeFleetRequest): Request[DescribeFleetResponse, AWSError] = js.native
   def describeFleet(
@@ -381,12 +381,12 @@ trait RoboMaker extends Service {
   ): Request[DescribeFleetResponse, AWSError] = js.native
   
   /**
-    * Describes a robot.
+    * Describes a robot.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def describeRobot(): Request[DescribeRobotResponse, AWSError] = js.native
   def describeRobot(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRobotResponse, Unit]): Request[DescribeRobotResponse, AWSError] = js.native
   /**
-    * Describes a robot.
+    * Describes a robot.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def describeRobot(params: DescribeRobotRequest): Request[DescribeRobotResponse, AWSError] = js.native
   def describeRobot(
@@ -521,12 +521,12 @@ trait RoboMaker extends Service {
   ): Request[GetWorldTemplateBodyResponse, AWSError] = js.native
   
   /**
-    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs. 
+    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def listDeploymentJobs(): Request[ListDeploymentJobsResponse, AWSError] = js.native
   def listDeploymentJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListDeploymentJobsResponse, Unit]): Request[ListDeploymentJobsResponse, AWSError] = js.native
   /**
-    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs. 
+    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def listDeploymentJobs(params: ListDeploymentJobsRequest): Request[ListDeploymentJobsResponse, AWSError] = js.native
   def listDeploymentJobs(
@@ -535,12 +535,12 @@ trait RoboMaker extends Service {
   ): Request[ListDeploymentJobsResponse, AWSError] = js.native
   
   /**
-    * Returns a list of fleets. You can optionally provide filters to retrieve specific fleets. 
+    * Returns a list of fleets. You can optionally provide filters to retrieve specific fleets.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def listFleets(): Request[ListFleetsResponse, AWSError] = js.native
   def listFleets(callback: js.Function2[/* err */ AWSError, /* data */ ListFleetsResponse, Unit]): Request[ListFleetsResponse, AWSError] = js.native
   /**
-    * Returns a list of fleets. You can optionally provide filters to retrieve specific fleets. 
+    * Returns a list of fleets. You can optionally provide filters to retrieve specific fleets.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def listFleets(params: ListFleetsRequest): Request[ListFleetsResponse, AWSError] = js.native
   def listFleets(
@@ -563,12 +563,12 @@ trait RoboMaker extends Service {
   ): Request[ListRobotApplicationsResponse, AWSError] = js.native
   
   /**
-    * Returns a list of robots. You can optionally provide filters to retrieve specific robots.
+    * Returns a list of robots. You can optionally provide filters to retrieve specific robots.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def listRobots(): Request[ListRobotsResponse, AWSError] = js.native
   def listRobots(callback: js.Function2[/* err */ AWSError, /* data */ ListRobotsResponse, Unit]): Request[ListRobotsResponse, AWSError] = js.native
   /**
-    * Returns a list of robots. You can optionally provide filters to retrieve specific robots.
+    * Returns a list of robots. You can optionally provide filters to retrieve specific robots.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def listRobots(params: ListRobotsRequest): Request[ListRobotsResponse, AWSError] = js.native
   def listRobots(
@@ -689,12 +689,12 @@ trait RoboMaker extends Service {
   ): Request[ListWorldsResponse, AWSError] = js.native
   
   /**
-    * Registers a robot with a fleet.
+    * Registers a robot with a fleet.  This API is no longer supported and will throw an error if used. 
     */
   def registerRobot(): Request[RegisterRobotResponse, AWSError] = js.native
   def registerRobot(callback: js.Function2[/* err */ AWSError, /* data */ RegisterRobotResponse, Unit]): Request[RegisterRobotResponse, AWSError] = js.native
   /**
-    * Registers a robot with a fleet.
+    * Registers a robot with a fleet.  This API is no longer supported and will throw an error if used. 
     */
   def registerRobot(params: RegisterRobotRequest): Request[RegisterRobotResponse, AWSError] = js.native
   def registerRobot(
@@ -731,12 +731,12 @@ trait RoboMaker extends Service {
   ): Request[StartSimulationJobBatchResponse, AWSError] = js.native
   
   /**
-    * Syncrhonizes robots in a fleet to the latest deployment. This is helpful if robots were added after a deployment.
+    * Syncrhonizes robots in a fleet to the latest deployment. This is helpful if robots were added after a deployment.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def syncDeploymentJob(): Request[SyncDeploymentJobResponse, AWSError] = js.native
   def syncDeploymentJob(callback: js.Function2[/* err */ AWSError, /* data */ SyncDeploymentJobResponse, Unit]): Request[SyncDeploymentJobResponse, AWSError] = js.native
   /**
-    * Syncrhonizes robots in a fleet to the latest deployment. This is helpful if robots were added after a deployment.
+    * Syncrhonizes robots in a fleet to the latest deployment. This is helpful if robots were added after a deployment.  This API will no longer be supported as of May 2, 2022. Use it to remove resources that were created for Deployment Service. 
     */
   def syncDeploymentJob(params: SyncDeploymentJobRequest): Request[SyncDeploymentJobResponse, AWSError] = js.native
   def syncDeploymentJob(

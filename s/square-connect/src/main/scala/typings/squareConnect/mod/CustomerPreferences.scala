@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CustomerPreferences")
 @js.native
-class CustomerPreferences () extends StObject {
+open class CustomerPreferences () extends StObject {
   
   /**
     * The customer has unsubscribed from receiving marketing campaign emails.

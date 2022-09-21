@@ -135,7 +135,7 @@ object ConnectLog {
     
     inline def setConnectDebugLogUndefined: Self = StObject.set(x, "connectDebugLog", js.undefined)
     
-    inline def setConnectDebugLogVarargs(value: ConnectDebugLog*): Self = StObject.set(x, "connectDebugLog", js.Array(value :_*))
+    inline def setConnectDebugLogVarargs(value: ConnectDebugLog*): Self = StObject.set(x, "connectDebugLog", js.Array(value*))
     
     inline def setConnectId(value: String): Self = StObject.set(x, "connectId", value.asInstanceOf[js.Any])
     

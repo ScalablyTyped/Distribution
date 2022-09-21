@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(code: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(code: String, filename: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(code: String, filename: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(code: String, filename: Unit, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(code: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(code: String): Any = ^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(code: String, filename: String): Any = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(code: String, filename: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(code: String, filename: Unit, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(code: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("require-from-string", JSImport.Namespace)
   @js.native
@@ -43,13 +43,13 @@ object mod {
       
       inline def setAppendPathsUndefined: Self = StObject.set(x, "appendPaths", js.undefined)
       
-      inline def setAppendPathsVarargs(value: String*): Self = StObject.set(x, "appendPaths", js.Array(value :_*))
+      inline def setAppendPathsVarargs(value: String*): Self = StObject.set(x, "appendPaths", js.Array(value*))
       
       inline def setPrependPaths(value: js.Array[String]): Self = StObject.set(x, "prependPaths", value.asInstanceOf[js.Any])
       
       inline def setPrependPathsUndefined: Self = StObject.set(x, "prependPaths", js.undefined)
       
-      inline def setPrependPathsVarargs(value: String*): Self = StObject.set(x, "prependPaths", js.Array(value :_*))
+      inline def setPrependPathsVarargs(value: String*): Self = StObject.set(x, "prependPaths", js.Array(value*))
     }
   }
 }

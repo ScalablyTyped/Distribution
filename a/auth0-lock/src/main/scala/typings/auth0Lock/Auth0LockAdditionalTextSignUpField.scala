@@ -1,6 +1,7 @@
 package typings.auth0Lock
 
 import typings.auth0Lock.anon.Hint
+import typings.auth0Lock.auth0LockStrings.root
 import typings.auth0Lock.auth0LockStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,6 +22,8 @@ trait Auth0LockAdditionalTextSignUpField
   var placeholder: String
   
   var prefill: js.UndefOr[String | Auth0LockAdditionalSignUpFieldPrefillFunction] = js.undefined
+  
+  var storage: js.UndefOr[root] = js.undefined
   
   var `type`: js.UndefOr[text] = js.undefined
   
@@ -49,7 +52,7 @@ object Auth0LockAdditionalTextSignUpField {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: Auth0LockAdditionalSignUpFieldOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Auth0LockAdditionalSignUpFieldOption*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
@@ -58,6 +61,10 @@ object Auth0LockAdditionalTextSignUpField {
     inline def setPrefillFunction1(value: /* callback */ Auth0LockAdditionalSignUpFieldPrefillCallback => Unit): Self = StObject.set(x, "prefill", js.Any.fromFunction1(value))
     
     inline def setPrefillUndefined: Self = StObject.set(x, "prefill", js.undefined)
+    
+    inline def setStorage(value: root): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    
+    inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
     
     inline def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

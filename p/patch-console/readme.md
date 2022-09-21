@@ -1,7 +1,7 @@
 
 # Scala.js typings for patch-console
 
-Typings are for version 1.0.0
+Typings are for version 2.0.0
 
 ## Library description:
 Patch console methods to intercept output
@@ -10,10 +10,10 @@ Patch console methods to intercept output
 | ------------------ | :-------------: |
 | Full name          | patch-console |
 | Keywords           | stdout, stderr, patch, console, intercept, log, logs |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 178472 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 983970.3333333334 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/vadimdemedes/patch-console#readme)

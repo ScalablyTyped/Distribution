@@ -1,7 +1,7 @@
 
 # Scala.js typings for mri
 
-Typings are for version 1.1
+Typings are for version 1.2.0
 
 ## Library description:
 Quickly scan for CLI flags and arguments
@@ -11,9 +11,9 @@ Quickly scan for CLI flags and arguments
 | Full name          | mri |
 | Keywords           | argv, arguments, cli, minimist, options, optimist, parser, args |
 | # releases         | 3 |
-| # dependents       | 329 |
-| # downloads        | 57982907 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9000513666666668E7 |
+| # stars            | 480.0 |
 
 ## Links
 - [Homepage](https://github.com/lukeed/mri#readme)
@@ -24,7 +24,7 @@ Quickly scan for CLI flags and arguments
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -12,12 +12,12 @@ trait DescribeOrganizationConfigurationResponse extends StObject {
   var AutoEnable: Boolean
   
   /**
-    * An object that describes which data sources are enabled automatically for member accounts.
+    * Describes which data sources are enabled automatically for member accounts.
     */
   var DataSources: js.UndefOr[OrganizationDataSourceConfigurationsResult] = js.undefined
   
   /**
-    * Indicates whether the maximum number of allowed member accounts are already associated with the delegated administrator master account.
+    * Indicates whether the maximum number of allowed member accounts are already associated with the delegated administrator account for your organization.
     */
   var MemberAccountLimitReached: Boolean
 }

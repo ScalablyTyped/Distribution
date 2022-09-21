@@ -11,13 +11,16 @@ import typings.domHelpers.domHelpersStrings.animationend
 import typings.domHelpers.domHelpersStrings.animationiteration
 import typings.domHelpers.domHelpersStrings.animationstart
 import typings.domHelpers.domHelpersStrings.auxclick
+import typings.domHelpers.domHelpersStrings.beforeinput
 import typings.domHelpers.domHelpersStrings.blur
-import typings.domHelpers.domHelpersStrings.cancel
 import typings.domHelpers.domHelpersStrings.canplay
 import typings.domHelpers.domHelpersStrings.canplaythrough
 import typings.domHelpers.domHelpersStrings.change
 import typings.domHelpers.domHelpersStrings.click
 import typings.domHelpers.domHelpersStrings.close
+import typings.domHelpers.domHelpersStrings.compositionend
+import typings.domHelpers.domHelpersStrings.compositionstart
+import typings.domHelpers.domHelpersStrings.compositionupdate
 import typings.domHelpers.domHelpersStrings.contextmenu
 import typings.domHelpers.domHelpersStrings.copy
 import typings.domHelpers.domHelpersStrings.cuechange
@@ -26,7 +29,6 @@ import typings.domHelpers.domHelpersStrings.dblclick
 import typings.domHelpers.domHelpersStrings.drag
 import typings.domHelpers.domHelpersStrings.dragend
 import typings.domHelpers.domHelpersStrings.dragenter
-import typings.domHelpers.domHelpersStrings.dragexit
 import typings.domHelpers.domHelpersStrings.dragleave
 import typings.domHelpers.domHelpersStrings.dragover
 import typings.domHelpers.domHelpersStrings.dragstart
@@ -38,6 +40,7 @@ import typings.domHelpers.domHelpersStrings.error
 import typings.domHelpers.domHelpersStrings.focus
 import typings.domHelpers.domHelpersStrings.focusin
 import typings.domHelpers.domHelpersStrings.focusout
+import typings.domHelpers.domHelpersStrings.formdata
 import typings.domHelpers.domHelpersStrings.fullscreenchange
 import typings.domHelpers.domHelpersStrings.fullscreenerror
 import typings.domHelpers.domHelpersStrings.gotpointercapture
@@ -81,6 +84,7 @@ import typings.domHelpers.domHelpersStrings.seeking
 import typings.domHelpers.domHelpersStrings.select
 import typings.domHelpers.domHelpersStrings.selectionchange
 import typings.domHelpers.domHelpersStrings.selectstart
+import typings.domHelpers.domHelpersStrings.slotchange
 import typings.domHelpers.domHelpersStrings.stalled
 import typings.domHelpers.domHelpersStrings.submit
 import typings.domHelpers.domHelpersStrings.suspend
@@ -96,6 +100,10 @@ import typings.domHelpers.domHelpersStrings.transitionrun
 import typings.domHelpers.domHelpersStrings.transitionstart
 import typings.domHelpers.domHelpersStrings.volumechange
 import typings.domHelpers.domHelpersStrings.waiting
+import typings.domHelpers.domHelpersStrings.webkitanimationend
+import typings.domHelpers.domHelpersStrings.webkitanimationiteration
+import typings.domHelpers.domHelpersStrings.webkitanimationstart
+import typings.domHelpers.domHelpersStrings.webkittransitionend
 import typings.domHelpers.domHelpersStrings.wheel
 import typings.domHelpers.typesMod.HyphenProperty
 import typings.std.AddEventListenerOptions
@@ -179,20 +187,25 @@ object anon {
       handler: TaggedEventHandler[auxclick],
       options: EventListenerOptions
     ): Unit = js.native
+    def apply(node: HTMLElement, eventName: beforeinput, handler: TaggedEventHandler[beforeinput]): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: beforeinput,
+      handler: TaggedEventHandler[beforeinput],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: beforeinput,
+      handler: TaggedEventHandler[beforeinput],
+      options: EventListenerOptions
+    ): Unit = js.native
     def apply(node: HTMLElement, eventName: blur, handler: TaggedEventHandler[blur]): Unit = js.native
     def apply(node: HTMLElement, eventName: blur, handler: TaggedEventHandler[blur], options: Boolean): Unit = js.native
     def apply(
       node: HTMLElement,
       eventName: blur,
       handler: TaggedEventHandler[blur],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel]): Unit = js.native
-    def apply(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel], options: Boolean): Unit = js.native
-    def apply(
-      node: HTMLElement,
-      eventName: cancel,
-      handler: TaggedEventHandler[cancel],
       options: EventListenerOptions
     ): Unit = js.native
     def apply(node: HTMLElement, eventName: canplay, handler: TaggedEventHandler[canplay]): Unit = js.native
@@ -238,6 +251,45 @@ object anon {
       node: HTMLElement,
       eventName: close,
       handler: TaggedEventHandler[close],
+      options: EventListenerOptions
+    ): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionend, handler: TaggedEventHandler[compositionend]): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionend,
+      handler: TaggedEventHandler[compositionend],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionend,
+      handler: TaggedEventHandler[compositionend],
+      options: EventListenerOptions
+    ): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionstart, handler: TaggedEventHandler[compositionstart]): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionstart,
+      handler: TaggedEventHandler[compositionstart],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionstart,
+      handler: TaggedEventHandler[compositionstart],
+      options: EventListenerOptions
+    ): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionupdate, handler: TaggedEventHandler[compositionupdate]): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionupdate,
+      handler: TaggedEventHandler[compositionupdate],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionupdate,
+      handler: TaggedEventHandler[compositionupdate],
       options: EventListenerOptions
     ): Unit = js.native
     def apply(node: HTMLElement, eventName: contextmenu, handler: TaggedEventHandler[contextmenu]): Unit = js.native
@@ -294,14 +346,6 @@ object anon {
       node: HTMLElement,
       eventName: dragenter,
       handler: TaggedEventHandler[dragenter],
-      options: EventListenerOptions
-    ): Unit = js.native
-    def apply(node: HTMLElement, eventName: dragexit, handler: TaggedEventHandler[dragexit]): Unit = js.native
-    def apply(node: HTMLElement, eventName: dragexit, handler: TaggedEventHandler[dragexit], options: Boolean): Unit = js.native
-    def apply(
-      node: HTMLElement,
-      eventName: dragexit,
-      handler: TaggedEventHandler[dragexit],
       options: EventListenerOptions
     ): Unit = js.native
     def apply(node: HTMLElement, eventName: drag, handler: TaggedEventHandler[drag]): Unit = js.native
@@ -403,6 +447,14 @@ object anon {
       node: HTMLElement,
       eventName: focusout,
       handler: TaggedEventHandler[focusout],
+      options: EventListenerOptions
+    ): Unit = js.native
+    def apply(node: HTMLElement, eventName: formdata, handler: TaggedEventHandler[formdata]): Unit = js.native
+    def apply(node: HTMLElement, eventName: formdata, handler: TaggedEventHandler[formdata], options: Boolean): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: formdata,
+      handler: TaggedEventHandler[formdata],
       options: EventListenerOptions
     ): Unit = js.native
     def apply(node: HTMLElement, eventName: fullscreenchange, handler: TaggedEventHandler[fullscreenchange]): Unit = js.native
@@ -848,6 +900,19 @@ object anon {
       handler: TaggedEventHandler[selectstart],
       options: EventListenerOptions
     ): Unit = js.native
+    def apply(node: HTMLElement, eventName: slotchange, handler: TaggedEventHandler[slotchange]): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: slotchange,
+      handler: TaggedEventHandler[slotchange],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: slotchange,
+      handler: TaggedEventHandler[slotchange],
+      options: EventListenerOptions
+    ): Unit = js.native
     def apply(node: HTMLElement, eventName: stalled, handler: TaggedEventHandler[stalled]): Unit = js.native
     def apply(node: HTMLElement, eventName: stalled, handler: TaggedEventHandler[stalled], options: Boolean): Unit = js.native
     def apply(
@@ -1008,6 +1073,70 @@ object anon {
       handler: TaggedEventHandler[waiting],
       options: EventListenerOptions
     ): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationend, handler: TaggedEventHandler[webkitanimationend]): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationend,
+      handler: TaggedEventHandler[webkitanimationend],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationend,
+      handler: TaggedEventHandler[webkitanimationend],
+      options: EventListenerOptions
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: TaggedEventHandler[webkitanimationiteration]
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: TaggedEventHandler[webkitanimationiteration],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: TaggedEventHandler[webkitanimationiteration],
+      options: EventListenerOptions
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: TaggedEventHandler[webkitanimationstart]
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: TaggedEventHandler[webkitanimationstart],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: TaggedEventHandler[webkitanimationstart],
+      options: EventListenerOptions
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: TaggedEventHandler[webkittransitionend]
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: TaggedEventHandler[webkittransitionend],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: TaggedEventHandler[webkittransitionend],
+      options: EventListenerOptions
+    ): Unit = js.native
     def apply(node: HTMLElement, eventName: wheel, handler: TaggedEventHandler[wheel]): Unit = js.native
     def apply(node: HTMLElement, eventName: wheel, handler: TaggedEventHandler[wheel], options: Boolean): Unit = js.native
     def apply(
@@ -1084,17 +1213,17 @@ object anon {
       handler: EventHandler[auxclick],
       options: AddEventListenerOptions
     ): js.Function0[Unit] = js.native
+    def apply(node: HTMLElement, eventName: beforeinput, handler: EventHandler[beforeinput]): js.Function0[Unit] = js.native
+    def apply(node: HTMLElement, eventName: beforeinput, handler: EventHandler[beforeinput], options: Boolean): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: beforeinput,
+      handler: EventHandler[beforeinput],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: blur, handler: EventHandler[blur]): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: blur, handler: EventHandler[blur], options: Boolean): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: blur, handler: EventHandler[blur], options: AddEventListenerOptions): js.Function0[Unit] = js.native
-    def apply(node: HTMLElement, eventName: cancel, handler: EventHandler[cancel]): js.Function0[Unit] = js.native
-    def apply(node: HTMLElement, eventName: cancel, handler: EventHandler[cancel], options: Boolean): js.Function0[Unit] = js.native
-    def apply(
-      node: HTMLElement,
-      eventName: cancel,
-      handler: EventHandler[cancel],
-      options: AddEventListenerOptions
-    ): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: canplay, handler: EventHandler[canplay]): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: canplay, handler: EventHandler[canplay], options: Boolean): js.Function0[Unit] = js.native
     def apply(
@@ -1138,6 +1267,45 @@ object anon {
       node: HTMLElement,
       eventName: close,
       handler: EventHandler[close],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = js.native
+    def apply(node: HTMLElement, eventName: compositionend, handler: EventHandler[compositionend]): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionend,
+      handler: EventHandler[compositionend],
+      options: Boolean
+    ): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionend,
+      handler: EventHandler[compositionend],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = js.native
+    def apply(node: HTMLElement, eventName: compositionstart, handler: EventHandler[compositionstart]): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionstart,
+      handler: EventHandler[compositionstart],
+      options: Boolean
+    ): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionstart,
+      handler: EventHandler[compositionstart],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = js.native
+    def apply(node: HTMLElement, eventName: compositionupdate, handler: EventHandler[compositionupdate]): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionupdate,
+      handler: EventHandler[compositionupdate],
+      options: Boolean
+    ): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionupdate,
+      handler: EventHandler[compositionupdate],
       options: AddEventListenerOptions
     ): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: contextmenu, handler: EventHandler[contextmenu]): js.Function0[Unit] = js.native
@@ -1184,14 +1352,6 @@ object anon {
       node: HTMLElement,
       eventName: dragenter,
       handler: EventHandler[dragenter],
-      options: AddEventListenerOptions
-    ): js.Function0[Unit] = js.native
-    def apply(node: HTMLElement, eventName: dragexit, handler: EventHandler[dragexit]): js.Function0[Unit] = js.native
-    def apply(node: HTMLElement, eventName: dragexit, handler: EventHandler[dragexit], options: Boolean): js.Function0[Unit] = js.native
-    def apply(
-      node: HTMLElement,
-      eventName: dragexit,
-      handler: EventHandler[dragexit],
       options: AddEventListenerOptions
     ): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: drag, handler: EventHandler[drag]): js.Function0[Unit] = js.native
@@ -1283,6 +1443,14 @@ object anon {
       node: HTMLElement,
       eventName: focusout,
       handler: EventHandler[focusout],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = js.native
+    def apply(node: HTMLElement, eventName: formdata, handler: EventHandler[formdata]): js.Function0[Unit] = js.native
+    def apply(node: HTMLElement, eventName: formdata, handler: EventHandler[formdata], options: Boolean): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: formdata,
+      handler: EventHandler[formdata],
       options: AddEventListenerOptions
     ): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: fullscreenchange, handler: EventHandler[fullscreenchange]): js.Function0[Unit] = js.native
@@ -1663,6 +1831,14 @@ object anon {
       handler: EventHandler[selectstart],
       options: AddEventListenerOptions
     ): js.Function0[Unit] = js.native
+    def apply(node: HTMLElement, eventName: slotchange, handler: EventHandler[slotchange]): js.Function0[Unit] = js.native
+    def apply(node: HTMLElement, eventName: slotchange, handler: EventHandler[slotchange], options: Boolean): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: slotchange,
+      handler: EventHandler[slotchange],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: stalled, handler: EventHandler[stalled]): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: stalled, handler: EventHandler[stalled], options: Boolean): js.Function0[Unit] = js.native
     def apply(
@@ -1803,6 +1979,62 @@ object anon {
       handler: EventHandler[waiting],
       options: AddEventListenerOptions
     ): js.Function0[Unit] = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationend, handler: EventHandler[webkitanimationend]): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationend,
+      handler: EventHandler[webkitanimationend],
+      options: Boolean
+    ): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationend,
+      handler: EventHandler[webkitanimationend],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: EventHandler[webkitanimationiteration]
+    ): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: EventHandler[webkitanimationiteration],
+      options: Boolean
+    ): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: EventHandler[webkitanimationiteration],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationstart, handler: EventHandler[webkitanimationstart]): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: EventHandler[webkitanimationstart],
+      options: Boolean
+    ): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: EventHandler[webkitanimationstart],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = js.native
+    def apply(node: HTMLElement, eventName: webkittransitionend, handler: EventHandler[webkittransitionend]): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: EventHandler[webkittransitionend],
+      options: Boolean
+    ): js.Function0[Unit] = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: EventHandler[webkittransitionend],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: wheel, handler: EventHandler[wheel]): js.Function0[Unit] = js.native
     def apply(node: HTMLElement, eventName: wheel, handler: EventHandler[wheel], options: Boolean): js.Function0[Unit] = js.native
     def apply(
@@ -1818,6 +2050,811 @@ object anon {
     
     def apply(node: Element): Double = js.native
     def apply(node: Element, `val`: Double): Unit = js.native
+  }
+  
+  @js.native
+  trait FnCallNodeEventNameBubblesCancelable extends StObject {
+    
+    def apply(node: Null, eventName: abort): Unit = js.native
+    def apply(node: Null, eventName: abort, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: abort, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: abort, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: animationcancel): Unit = js.native
+    def apply(node: Null, eventName: animationcancel, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: animationcancel, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: animationcancel, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: animationend): Unit = js.native
+    def apply(node: Null, eventName: animationend, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: animationend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: animationend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: animationiteration): Unit = js.native
+    def apply(node: Null, eventName: animationiteration, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: animationiteration, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: animationiteration, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: animationstart): Unit = js.native
+    def apply(node: Null, eventName: animationstart, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: animationstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: animationstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: auxclick): Unit = js.native
+    def apply(node: Null, eventName: auxclick, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: auxclick, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: auxclick, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: beforeinput): Unit = js.native
+    def apply(node: Null, eventName: beforeinput, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: beforeinput, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: beforeinput, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: blur): Unit = js.native
+    def apply(node: Null, eventName: blur, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: blur, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: blur, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: canplay): Unit = js.native
+    def apply(node: Null, eventName: canplay, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: canplay, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: canplay, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: canplaythrough): Unit = js.native
+    def apply(node: Null, eventName: canplaythrough, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: canplaythrough, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: canplaythrough, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: change): Unit = js.native
+    def apply(node: Null, eventName: change, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: change, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: change, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: click): Unit = js.native
+    def apply(node: Null, eventName: click, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: click, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: click, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: close): Unit = js.native
+    def apply(node: Null, eventName: close, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: close, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: close, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: compositionend): Unit = js.native
+    def apply(node: Null, eventName: compositionend, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: compositionend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: compositionend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: compositionstart): Unit = js.native
+    def apply(node: Null, eventName: compositionstart, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: compositionstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: compositionstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: compositionupdate): Unit = js.native
+    def apply(node: Null, eventName: compositionupdate, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: compositionupdate, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: compositionupdate, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: contextmenu): Unit = js.native
+    def apply(node: Null, eventName: contextmenu, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: contextmenu, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: contextmenu, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: copy): Unit = js.native
+    def apply(node: Null, eventName: copy, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: copy, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: copy, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: cuechange): Unit = js.native
+    def apply(node: Null, eventName: cuechange, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: cuechange, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: cuechange, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: cut): Unit = js.native
+    def apply(node: Null, eventName: cut, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: cut, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: cut, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dblclick): Unit = js.native
+    def apply(node: Null, eventName: dblclick, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dblclick, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dblclick, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: drag): Unit = js.native
+    def apply(node: Null, eventName: drag, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: drag, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: drag, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dragend): Unit = js.native
+    def apply(node: Null, eventName: dragend, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dragend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dragend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dragenter): Unit = js.native
+    def apply(node: Null, eventName: dragenter, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dragenter, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dragenter, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dragleave): Unit = js.native
+    def apply(node: Null, eventName: dragleave, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dragleave, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dragleave, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dragover): Unit = js.native
+    def apply(node: Null, eventName: dragover, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dragover, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dragover, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dragstart): Unit = js.native
+    def apply(node: Null, eventName: dragstart, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dragstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: dragstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: drop): Unit = js.native
+    def apply(node: Null, eventName: drop, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: drop, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: drop, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: durationchange): Unit = js.native
+    def apply(node: Null, eventName: durationchange, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: durationchange, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: durationchange, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: emptied): Unit = js.native
+    def apply(node: Null, eventName: emptied, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: emptied, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: emptied, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: ended): Unit = js.native
+    def apply(node: Null, eventName: ended, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: ended, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: ended, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: error): Unit = js.native
+    def apply(node: Null, eventName: error, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: error, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: error, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: focus): Unit = js.native
+    def apply(node: Null, eventName: focus, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: focus, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: focus, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: focusin): Unit = js.native
+    def apply(node: Null, eventName: focusin, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: focusin, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: focusin, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: focusout): Unit = js.native
+    def apply(node: Null, eventName: focusout, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: focusout, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: focusout, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: formdata): Unit = js.native
+    def apply(node: Null, eventName: formdata, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: formdata, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: formdata, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: fullscreenchange): Unit = js.native
+    def apply(node: Null, eventName: fullscreenchange, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: fullscreenchange, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: fullscreenchange, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: fullscreenerror): Unit = js.native
+    def apply(node: Null, eventName: fullscreenerror, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: fullscreenerror, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: fullscreenerror, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: gotpointercapture): Unit = js.native
+    def apply(node: Null, eventName: gotpointercapture, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: gotpointercapture, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: gotpointercapture, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: input): Unit = js.native
+    def apply(node: Null, eventName: input, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: input, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: input, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: invalid): Unit = js.native
+    def apply(node: Null, eventName: invalid, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: invalid, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: invalid, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: keydown): Unit = js.native
+    def apply(node: Null, eventName: keydown, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: keydown, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: keydown, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: keypress): Unit = js.native
+    def apply(node: Null, eventName: keypress, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: keypress, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: keypress, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: keyup): Unit = js.native
+    def apply(node: Null, eventName: keyup, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: keyup, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: keyup, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: load): Unit = js.native
+    def apply(node: Null, eventName: load, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: load, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: load, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: loadeddata): Unit = js.native
+    def apply(node: Null, eventName: loadeddata, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: loadeddata, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: loadeddata, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: loadedmetadata): Unit = js.native
+    def apply(node: Null, eventName: loadedmetadata, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: loadedmetadata, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: loadedmetadata, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: loadstart): Unit = js.native
+    def apply(node: Null, eventName: loadstart, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: loadstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: loadstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: lostpointercapture): Unit = js.native
+    def apply(node: Null, eventName: lostpointercapture, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: lostpointercapture, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: lostpointercapture, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mousedown): Unit = js.native
+    def apply(node: Null, eventName: mousedown, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mousedown, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mousedown, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mouseenter): Unit = js.native
+    def apply(node: Null, eventName: mouseenter, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mouseenter, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mouseenter, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mouseleave): Unit = js.native
+    def apply(node: Null, eventName: mouseleave, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mouseleave, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mouseleave, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mousemove): Unit = js.native
+    def apply(node: Null, eventName: mousemove, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mousemove, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mousemove, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mouseout): Unit = js.native
+    def apply(node: Null, eventName: mouseout, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mouseout, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mouseout, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mouseover): Unit = js.native
+    def apply(node: Null, eventName: mouseover, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mouseover, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mouseover, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mouseup): Unit = js.native
+    def apply(node: Null, eventName: mouseup, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mouseup, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: mouseup, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: paste): Unit = js.native
+    def apply(node: Null, eventName: paste, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: paste, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: paste, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pause): Unit = js.native
+    def apply(node: Null, eventName: pause, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pause, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pause, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: play): Unit = js.native
+    def apply(node: Null, eventName: play, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: play, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: play, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: playing): Unit = js.native
+    def apply(node: Null, eventName: playing, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: playing, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: playing, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointercancel): Unit = js.native
+    def apply(node: Null, eventName: pointercancel, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointercancel, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointercancel, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerdown): Unit = js.native
+    def apply(node: Null, eventName: pointerdown, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerdown, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerdown, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerenter): Unit = js.native
+    def apply(node: Null, eventName: pointerenter, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerenter, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerenter, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerleave): Unit = js.native
+    def apply(node: Null, eventName: pointerleave, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerleave, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerleave, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointermove): Unit = js.native
+    def apply(node: Null, eventName: pointermove, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointermove, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointermove, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerout): Unit = js.native
+    def apply(node: Null, eventName: pointerout, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerout, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerout, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerover): Unit = js.native
+    def apply(node: Null, eventName: pointerover, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerover, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerover, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerup): Unit = js.native
+    def apply(node: Null, eventName: pointerup, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerup, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: pointerup, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: progress): Unit = js.native
+    def apply(node: Null, eventName: progress, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: progress, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: progress, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: ratechange): Unit = js.native
+    def apply(node: Null, eventName: ratechange, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: ratechange, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: ratechange, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: reset): Unit = js.native
+    def apply(node: Null, eventName: reset, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: reset, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: reset, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: resize): Unit = js.native
+    def apply(node: Null, eventName: resize, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: resize, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: resize, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: scroll): Unit = js.native
+    def apply(node: Null, eventName: scroll, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: scroll, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: scroll, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: securitypolicyviolation): Unit = js.native
+    def apply(node: Null, eventName: securitypolicyviolation, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: securitypolicyviolation, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: securitypolicyviolation, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: seeked): Unit = js.native
+    def apply(node: Null, eventName: seeked, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: seeked, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: seeked, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: seeking): Unit = js.native
+    def apply(node: Null, eventName: seeking, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: seeking, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: seeking, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: select): Unit = js.native
+    def apply(node: Null, eventName: select, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: select, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: select, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: selectionchange): Unit = js.native
+    def apply(node: Null, eventName: selectionchange, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: selectionchange, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: selectionchange, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: selectstart): Unit = js.native
+    def apply(node: Null, eventName: selectstart, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: selectstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: selectstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: slotchange): Unit = js.native
+    def apply(node: Null, eventName: slotchange, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: slotchange, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: slotchange, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: stalled): Unit = js.native
+    def apply(node: Null, eventName: stalled, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: stalled, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: stalled, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: submit): Unit = js.native
+    def apply(node: Null, eventName: submit, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: submit, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: submit, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: suspend): Unit = js.native
+    def apply(node: Null, eventName: suspend, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: suspend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: suspend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: timeupdate): Unit = js.native
+    def apply(node: Null, eventName: timeupdate, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: timeupdate, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: timeupdate, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: toggle): Unit = js.native
+    def apply(node: Null, eventName: toggle, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: toggle, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: toggle, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: touchcancel): Unit = js.native
+    def apply(node: Null, eventName: touchcancel, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: touchcancel, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: touchcancel, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: touchend): Unit = js.native
+    def apply(node: Null, eventName: touchend, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: touchend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: touchend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: touchmove): Unit = js.native
+    def apply(node: Null, eventName: touchmove, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: touchmove, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: touchmove, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: touchstart): Unit = js.native
+    def apply(node: Null, eventName: touchstart, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: touchstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: touchstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: transitioncancel): Unit = js.native
+    def apply(node: Null, eventName: transitioncancel, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: transitioncancel, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: transitioncancel, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: transitionend): Unit = js.native
+    def apply(node: Null, eventName: transitionend, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: transitionend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: transitionend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: transitionrun): Unit = js.native
+    def apply(node: Null, eventName: transitionrun, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: transitionrun, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: transitionrun, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: transitionstart): Unit = js.native
+    def apply(node: Null, eventName: transitionstart, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: transitionstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: transitionstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: volumechange): Unit = js.native
+    def apply(node: Null, eventName: volumechange, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: volumechange, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: volumechange, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: waiting): Unit = js.native
+    def apply(node: Null, eventName: waiting, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: waiting, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: waiting, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: webkitanimationend): Unit = js.native
+    def apply(node: Null, eventName: webkitanimationend, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: webkitanimationend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: webkitanimationend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: webkitanimationiteration): Unit = js.native
+    def apply(node: Null, eventName: webkitanimationiteration, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: webkitanimationiteration, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: webkitanimationiteration, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: webkitanimationstart): Unit = js.native
+    def apply(node: Null, eventName: webkitanimationstart, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: webkitanimationstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: webkitanimationstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: webkittransitionend): Unit = js.native
+    def apply(node: Null, eventName: webkittransitionend, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: webkittransitionend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: webkittransitionend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: wheel): Unit = js.native
+    def apply(node: Null, eventName: wheel, bubbles: Boolean): Unit = js.native
+    def apply(node: Null, eventName: wheel, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: Null, eventName: wheel, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: abort): Unit = js.native
+    def apply(node: HTMLElement, eventName: abort, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: abort, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: abort, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationcancel): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationcancel, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationcancel, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationcancel, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationend): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationend, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationiteration): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationiteration, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationiteration, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationiteration, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationstart): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationstart, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: animationstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: auxclick): Unit = js.native
+    def apply(node: HTMLElement, eventName: auxclick, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: auxclick, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: auxclick, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: beforeinput): Unit = js.native
+    def apply(node: HTMLElement, eventName: beforeinput, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: beforeinput, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: beforeinput, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: blur): Unit = js.native
+    def apply(node: HTMLElement, eventName: blur, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: blur, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: blur, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: canplay): Unit = js.native
+    def apply(node: HTMLElement, eventName: canplay, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: canplay, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: canplay, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: canplaythrough): Unit = js.native
+    def apply(node: HTMLElement, eventName: canplaythrough, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: canplaythrough, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: canplaythrough, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: change): Unit = js.native
+    def apply(node: HTMLElement, eventName: change, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: change, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: change, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: click): Unit = js.native
+    def apply(node: HTMLElement, eventName: click, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: click, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: click, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: close): Unit = js.native
+    def apply(node: HTMLElement, eventName: close, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: close, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: close, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionend): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionend, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionstart): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionstart, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionupdate): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionupdate, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionupdate, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionupdate, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: contextmenu): Unit = js.native
+    def apply(node: HTMLElement, eventName: contextmenu, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: contextmenu, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: contextmenu, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: copy): Unit = js.native
+    def apply(node: HTMLElement, eventName: copy, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: copy, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: copy, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: cuechange): Unit = js.native
+    def apply(node: HTMLElement, eventName: cuechange, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: cuechange, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: cuechange, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: cut): Unit = js.native
+    def apply(node: HTMLElement, eventName: cut, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: cut, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: cut, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dblclick): Unit = js.native
+    def apply(node: HTMLElement, eventName: dblclick, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dblclick, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dblclick, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: drag): Unit = js.native
+    def apply(node: HTMLElement, eventName: drag, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: drag, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: drag, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragend): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragend, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragenter): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragenter, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragenter, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragenter, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragleave): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragleave, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragleave, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragleave, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragover): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragover, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragover, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragover, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragstart): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragstart, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: dragstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: drop): Unit = js.native
+    def apply(node: HTMLElement, eventName: drop, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: drop, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: drop, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: durationchange): Unit = js.native
+    def apply(node: HTMLElement, eventName: durationchange, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: durationchange, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: durationchange, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: emptied): Unit = js.native
+    def apply(node: HTMLElement, eventName: emptied, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: emptied, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: emptied, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: ended): Unit = js.native
+    def apply(node: HTMLElement, eventName: ended, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: ended, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: ended, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: error): Unit = js.native
+    def apply(node: HTMLElement, eventName: error, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: error, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: error, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: focus): Unit = js.native
+    def apply(node: HTMLElement, eventName: focus, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: focus, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: focus, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: focusin): Unit = js.native
+    def apply(node: HTMLElement, eventName: focusin, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: focusin, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: focusin, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: focusout): Unit = js.native
+    def apply(node: HTMLElement, eventName: focusout, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: focusout, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: focusout, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: formdata): Unit = js.native
+    def apply(node: HTMLElement, eventName: formdata, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: formdata, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: formdata, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: fullscreenchange): Unit = js.native
+    def apply(node: HTMLElement, eventName: fullscreenchange, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: fullscreenchange, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: fullscreenchange, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: fullscreenerror): Unit = js.native
+    def apply(node: HTMLElement, eventName: fullscreenerror, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: fullscreenerror, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: fullscreenerror, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: gotpointercapture): Unit = js.native
+    def apply(node: HTMLElement, eventName: gotpointercapture, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: gotpointercapture, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: gotpointercapture, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: input): Unit = js.native
+    def apply(node: HTMLElement, eventName: input, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: input, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: input, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: invalid): Unit = js.native
+    def apply(node: HTMLElement, eventName: invalid, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: invalid, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: invalid, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: keydown): Unit = js.native
+    def apply(node: HTMLElement, eventName: keydown, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: keydown, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: keydown, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: keypress): Unit = js.native
+    def apply(node: HTMLElement, eventName: keypress, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: keypress, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: keypress, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: keyup): Unit = js.native
+    def apply(node: HTMLElement, eventName: keyup, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: keyup, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: keyup, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: load): Unit = js.native
+    def apply(node: HTMLElement, eventName: load, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: load, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: load, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: loadeddata): Unit = js.native
+    def apply(node: HTMLElement, eventName: loadeddata, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: loadeddata, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: loadeddata, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: loadedmetadata): Unit = js.native
+    def apply(node: HTMLElement, eventName: loadedmetadata, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: loadedmetadata, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: loadedmetadata, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: loadstart): Unit = js.native
+    def apply(node: HTMLElement, eventName: loadstart, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: loadstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: loadstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: lostpointercapture): Unit = js.native
+    def apply(node: HTMLElement, eventName: lostpointercapture, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: lostpointercapture, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: lostpointercapture, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mousedown): Unit = js.native
+    def apply(node: HTMLElement, eventName: mousedown, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mousedown, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mousedown, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseenter): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseenter, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseenter, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseenter, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseleave): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseleave, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseleave, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseleave, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mousemove): Unit = js.native
+    def apply(node: HTMLElement, eventName: mousemove, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mousemove, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mousemove, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseout): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseout, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseout, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseout, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseover): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseover, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseover, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseover, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseup): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseup, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseup, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: mouseup, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: paste): Unit = js.native
+    def apply(node: HTMLElement, eventName: paste, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: paste, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: paste, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pause): Unit = js.native
+    def apply(node: HTMLElement, eventName: pause, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pause, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pause, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: play): Unit = js.native
+    def apply(node: HTMLElement, eventName: play, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: play, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: play, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: playing): Unit = js.native
+    def apply(node: HTMLElement, eventName: playing, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: playing, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: playing, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointercancel): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointercancel, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointercancel, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointercancel, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerdown): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerdown, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerdown, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerdown, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerenter): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerenter, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerenter, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerenter, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerleave): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerleave, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerleave, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerleave, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointermove): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointermove, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointermove, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointermove, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerout): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerout, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerout, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerout, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerover): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerover, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerover, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerover, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerup): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerup, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerup, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: pointerup, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: progress): Unit = js.native
+    def apply(node: HTMLElement, eventName: progress, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: progress, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: progress, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: ratechange): Unit = js.native
+    def apply(node: HTMLElement, eventName: ratechange, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: ratechange, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: ratechange, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: reset): Unit = js.native
+    def apply(node: HTMLElement, eventName: reset, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: reset, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: reset, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: resize): Unit = js.native
+    def apply(node: HTMLElement, eventName: resize, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: resize, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: resize, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: scroll): Unit = js.native
+    def apply(node: HTMLElement, eventName: scroll, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: scroll, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: scroll, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: securitypolicyviolation): Unit = js.native
+    def apply(node: HTMLElement, eventName: securitypolicyviolation, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: securitypolicyviolation, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: securitypolicyviolation, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: seeked): Unit = js.native
+    def apply(node: HTMLElement, eventName: seeked, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: seeked, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: seeked, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: seeking): Unit = js.native
+    def apply(node: HTMLElement, eventName: seeking, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: seeking, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: seeking, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: select): Unit = js.native
+    def apply(node: HTMLElement, eventName: select, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: select, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: select, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: selectionchange): Unit = js.native
+    def apply(node: HTMLElement, eventName: selectionchange, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: selectionchange, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: selectionchange, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: selectstart): Unit = js.native
+    def apply(node: HTMLElement, eventName: selectstart, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: selectstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: selectstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: slotchange): Unit = js.native
+    def apply(node: HTMLElement, eventName: slotchange, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: slotchange, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: slotchange, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: stalled): Unit = js.native
+    def apply(node: HTMLElement, eventName: stalled, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: stalled, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: stalled, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: submit): Unit = js.native
+    def apply(node: HTMLElement, eventName: submit, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: submit, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: submit, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: suspend): Unit = js.native
+    def apply(node: HTMLElement, eventName: suspend, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: suspend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: suspend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: timeupdate): Unit = js.native
+    def apply(node: HTMLElement, eventName: timeupdate, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: timeupdate, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: timeupdate, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: toggle): Unit = js.native
+    def apply(node: HTMLElement, eventName: toggle, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: toggle, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: toggle, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchcancel): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchcancel, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchcancel, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchcancel, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchend): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchend, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchmove): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchmove, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchmove, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchmove, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchstart): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchstart, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: touchstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitioncancel): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitioncancel, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitioncancel, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitioncancel, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitionend): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitionend, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitionend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitionend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitionrun): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitionrun, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitionrun, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitionrun, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitionstart): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitionstart, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitionstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: transitionstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: volumechange): Unit = js.native
+    def apply(node: HTMLElement, eventName: volumechange, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: volumechange, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: volumechange, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: waiting): Unit = js.native
+    def apply(node: HTMLElement, eventName: waiting, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: waiting, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: waiting, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationend): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationend, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationiteration): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationiteration, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationiteration, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationiteration, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationstart): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationstart, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationstart, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationstart, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkittransitionend): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkittransitionend, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkittransitionend, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkittransitionend, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: wheel): Unit = js.native
+    def apply(node: HTMLElement, eventName: wheel, bubbles: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: wheel, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def apply(node: HTMLElement, eventName: wheel, bubbles: Unit, cancelable: Boolean): Unit = js.native
   }
   
   @js.native
@@ -1891,20 +2928,25 @@ object anon {
       handler: TaggedEventHandler[auxclick],
       options: AddEventListenerOptions
     ): Unit = js.native
+    def apply(node: HTMLElement, eventName: beforeinput, handler: TaggedEventHandler[beforeinput]): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: beforeinput,
+      handler: TaggedEventHandler[beforeinput],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: beforeinput,
+      handler: TaggedEventHandler[beforeinput],
+      options: AddEventListenerOptions
+    ): Unit = js.native
     def apply(node: HTMLElement, eventName: blur, handler: TaggedEventHandler[blur]): Unit = js.native
     def apply(node: HTMLElement, eventName: blur, handler: TaggedEventHandler[blur], options: Boolean): Unit = js.native
     def apply(
       node: HTMLElement,
       eventName: blur,
       handler: TaggedEventHandler[blur],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel]): Unit = js.native
-    def apply(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel], options: Boolean): Unit = js.native
-    def apply(
-      node: HTMLElement,
-      eventName: cancel,
-      handler: TaggedEventHandler[cancel],
       options: AddEventListenerOptions
     ): Unit = js.native
     def apply(node: HTMLElement, eventName: canplay, handler: TaggedEventHandler[canplay]): Unit = js.native
@@ -1950,6 +2992,45 @@ object anon {
       node: HTMLElement,
       eventName: close,
       handler: TaggedEventHandler[close],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionend, handler: TaggedEventHandler[compositionend]): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionend,
+      handler: TaggedEventHandler[compositionend],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionend,
+      handler: TaggedEventHandler[compositionend],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionstart, handler: TaggedEventHandler[compositionstart]): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionstart,
+      handler: TaggedEventHandler[compositionstart],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionstart,
+      handler: TaggedEventHandler[compositionstart],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    def apply(node: HTMLElement, eventName: compositionupdate, handler: TaggedEventHandler[compositionupdate]): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionupdate,
+      handler: TaggedEventHandler[compositionupdate],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: compositionupdate,
+      handler: TaggedEventHandler[compositionupdate],
       options: AddEventListenerOptions
     ): Unit = js.native
     def apply(node: HTMLElement, eventName: contextmenu, handler: TaggedEventHandler[contextmenu]): Unit = js.native
@@ -2011,14 +3092,6 @@ object anon {
       node: HTMLElement,
       eventName: dragenter,
       handler: TaggedEventHandler[dragenter],
-      options: AddEventListenerOptions
-    ): Unit = js.native
-    def apply(node: HTMLElement, eventName: dragexit, handler: TaggedEventHandler[dragexit]): Unit = js.native
-    def apply(node: HTMLElement, eventName: dragexit, handler: TaggedEventHandler[dragexit], options: Boolean): Unit = js.native
-    def apply(
-      node: HTMLElement,
-      eventName: dragexit,
-      handler: TaggedEventHandler[dragexit],
       options: AddEventListenerOptions
     ): Unit = js.native
     def apply(node: HTMLElement, eventName: drag, handler: TaggedEventHandler[drag]): Unit = js.native
@@ -2120,6 +3193,14 @@ object anon {
       node: HTMLElement,
       eventName: focusout,
       handler: TaggedEventHandler[focusout],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    def apply(node: HTMLElement, eventName: formdata, handler: TaggedEventHandler[formdata]): Unit = js.native
+    def apply(node: HTMLElement, eventName: formdata, handler: TaggedEventHandler[formdata], options: Boolean): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: formdata,
+      handler: TaggedEventHandler[formdata],
       options: AddEventListenerOptions
     ): Unit = js.native
     def apply(node: HTMLElement, eventName: fullscreenchange, handler: TaggedEventHandler[fullscreenchange]): Unit = js.native
@@ -2565,6 +3646,19 @@ object anon {
       handler: TaggedEventHandler[selectstart],
       options: AddEventListenerOptions
     ): Unit = js.native
+    def apply(node: HTMLElement, eventName: slotchange, handler: TaggedEventHandler[slotchange]): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: slotchange,
+      handler: TaggedEventHandler[slotchange],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: slotchange,
+      handler: TaggedEventHandler[slotchange],
+      options: AddEventListenerOptions
+    ): Unit = js.native
     def apply(node: HTMLElement, eventName: stalled, handler: TaggedEventHandler[stalled]): Unit = js.native
     def apply(node: HTMLElement, eventName: stalled, handler: TaggedEventHandler[stalled], options: Boolean): Unit = js.native
     def apply(
@@ -2725,6 +3819,70 @@ object anon {
       handler: TaggedEventHandler[waiting],
       options: AddEventListenerOptions
     ): Unit = js.native
+    def apply(node: HTMLElement, eventName: webkitanimationend, handler: TaggedEventHandler[webkitanimationend]): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationend,
+      handler: TaggedEventHandler[webkitanimationend],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationend,
+      handler: TaggedEventHandler[webkitanimationend],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: TaggedEventHandler[webkitanimationiteration]
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: TaggedEventHandler[webkitanimationiteration],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: TaggedEventHandler[webkitanimationiteration],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: TaggedEventHandler[webkitanimationstart]
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: TaggedEventHandler[webkitanimationstart],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: TaggedEventHandler[webkitanimationstart],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: TaggedEventHandler[webkittransitionend]
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: TaggedEventHandler[webkittransitionend],
+      options: Boolean
+    ): Unit = js.native
+    def apply(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: TaggedEventHandler[webkittransitionend],
+      options: AddEventListenerOptions
+    ): Unit = js.native
     def apply(node: HTMLElement, eventName: wheel, handler: TaggedEventHandler[wheel]): Unit = js.native
     def apply(node: HTMLElement, eventName: wheel, handler: TaggedEventHandler[wheel], options: Boolean): Unit = js.native
     def apply(
@@ -2759,7 +3917,7 @@ object anon {
   trait FnCallNodeProperty extends StObject {
     
     def apply(node: HTMLElement, property: PartialRecordPropertystri): Unit = js.native
-    def apply[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string | 0>[T] */ js.Any = js.native
+    def apply[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string & {} | 0, string & {}>[T] */ js.Any = js.native
   }
   
   @js.native
@@ -2768,7 +3926,7 @@ object anon {
     def apply(
       selector: String,
       handler: EventHandler[
-          abort | animationcancel | animationend | animationiteration | animationstart | auxclick | blur | cancel | canplay | canplaythrough | change | click | close | contextmenu | copy | cuechange | cut | dblclick | drag | dragend | dragenter | dragexit | dragleave | dragover | dragstart | drop | durationchange | emptied | ended | error | focus | focusin | focusout | fullscreenchange | fullscreenerror | gotpointercapture | input | invalid | keydown | keypress | keyup | load | loadeddata | loadedmetadata | loadstart | lostpointercapture | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup | paste | pause | play | playing | pointercancel | pointerdown | pointerenter | pointerleave | pointermove | pointerout | pointerover | pointerup | progress | ratechange | reset | resize | scroll | securitypolicyviolation | seeked | seeking | select | selectionchange | selectstart | stalled | submit | suspend | timeupdate | toggle | touchcancel | touchend | touchmove | touchstart | transitioncancel | transitionend | transitionrun | transitionstart | volumechange | waiting | wheel
+          abort | animationcancel | animationend | animationiteration | animationstart | auxclick | beforeinput | blur | canplay | canplaythrough | change | click | close | compositionend | compositionstart | compositionupdate | contextmenu | copy | cuechange | cut | dblclick | drag | dragend | dragenter | dragleave | dragover | dragstart | drop | durationchange | emptied | ended | error | focus | focusin | focusout | formdata | fullscreenchange | fullscreenerror | gotpointercapture | input | invalid | keydown | keypress | keyup | load | loadeddata | loadedmetadata | loadstart | lostpointercapture | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup | paste | pause | play | playing | pointercancel | pointerdown | pointerenter | pointerleave | pointermove | pointerout | pointerover | pointerup | progress | ratechange | reset | resize | scroll | securitypolicyviolation | seeked | seeking | select | selectionchange | selectstart | slotchange | stalled | submit | suspend | timeupdate | toggle | touchcancel | touchend | touchmove | touchstart | transitioncancel | transitionend | transitionrun | transitionstart | volumechange | waiting | webkitanimationend | webkitanimationiteration | webkitanimationstart | webkittransitionend | wheel
         ]
     ): EventHandler[fullscreenchange] = js.native
   }
@@ -2909,8 +4067,6 @@ object anon {
     
     var `-moz-column-fill`: js.UndefOr[String] = js.undefined
     
-    var `-moz-column-gap`: js.UndefOr[String] = js.undefined
-    
     var `-moz-column-rule`: js.UndefOr[String] = js.undefined
     
     var `-moz-column-rule-color`: js.UndefOr[String] = js.undefined
@@ -3017,8 +4173,6 @@ object anon {
     
     var `-ms-accelerator`: js.UndefOr[String] = js.undefined
     
-    var `-ms-align-self`: js.UndefOr[String] = js.undefined
-    
     var `-ms-block-progression`: js.UndefOr[String] = js.undefined
     
     var `-ms-content-zoom-chaining`: js.UndefOr[String] = js.undefined
@@ -3066,8 +4220,6 @@ object anon {
     var `-ms-ime-align`: js.UndefOr[String] = js.undefined
     
     var `-ms-ime-mode`: js.UndefOr[String] = js.undefined
-    
-    var `-ms-justify-self`: js.UndefOr[String] = js.undefined
     
     var `-ms-line-break`: js.UndefOr[String] = js.undefined
     
@@ -3289,8 +4441,6 @@ object anon {
     
     var `-webkit-column-fill`: js.UndefOr[String] = js.undefined
     
-    var `-webkit-column-gap`: js.UndefOr[String] = js.undefined
-    
     var `-webkit-column-rule`: js.UndefOr[String] = js.undefined
     
     var `-webkit-column-rule-color`: js.UndefOr[String] = js.undefined
@@ -3329,7 +4479,11 @@ object anon {
     
     var `-webkit-font-variant-ligatures`: js.UndefOr[String] = js.undefined
     
+    var `-webkit-hyphenate-character`: js.UndefOr[String] = js.undefined
+    
     var `-webkit-hyphens`: js.UndefOr[String] = js.undefined
+    
+    var `-webkit-initial-letter`: js.UndefOr[String] = js.undefined
     
     var `-webkit-justify-content`: js.UndefOr[String] = js.undefined
     
@@ -3344,6 +4498,18 @@ object anon {
     var `-webkit-mask`: js.UndefOr[String] = js.undefined
     
     var `-webkit-mask-attachment`: js.UndefOr[String] = js.undefined
+    
+    var `-webkit-mask-box-image`: js.UndefOr[String] = js.undefined
+    
+    var `-webkit-mask-box-image-outset`: js.UndefOr[String] = js.undefined
+    
+    var `-webkit-mask-box-image-repeat`: js.UndefOr[String] = js.undefined
+    
+    var `-webkit-mask-box-image-slice`: js.UndefOr[String] = js.undefined
+    
+    var `-webkit-mask-box-image-source`: js.UndefOr[String] = js.undefined
+    
+    var `-webkit-mask-box-image-width`: js.UndefOr[String] = js.undefined
     
     var `-webkit-mask-clip`: js.UndefOr[String] = js.undefined
     
@@ -3554,8 +4720,6 @@ object anon {
     var MozColumnCount: js.UndefOr[String] = js.undefined
     
     var MozColumnFill: js.UndefOr[String] = js.undefined
-    
-    var MozColumnGap: js.UndefOr[String] = js.undefined
     
     var MozColumnRule: js.UndefOr[String] = js.undefined
     
@@ -3793,8 +4957,6 @@ object anon {
     
     var WebkitColumnFill: js.UndefOr[String] = js.undefined
     
-    var WebkitColumnGap: js.UndefOr[String] = js.undefined
-    
     var WebkitColumnRule: js.UndefOr[String] = js.undefined
     
     var WebkitColumnRuleColor: js.UndefOr[String] = js.undefined
@@ -3833,7 +4995,11 @@ object anon {
     
     var WebkitFontVariantLigatures: js.UndefOr[String] = js.undefined
     
+    var WebkitHyphenateCharacter: js.UndefOr[String] = js.undefined
+    
     var WebkitHyphens: js.UndefOr[String] = js.undefined
+    
+    var WebkitInitialLetter: js.UndefOr[String] = js.undefined
     
     var WebkitJustifyContent: js.UndefOr[String] = js.undefined
     
@@ -3848,6 +5014,18 @@ object anon {
     var WebkitMask: js.UndefOr[String] = js.undefined
     
     var WebkitMaskAttachment: js.UndefOr[String] = js.undefined
+    
+    var WebkitMaskBoxImage: js.UndefOr[String] = js.undefined
+    
+    var WebkitMaskBoxImageOutset: js.UndefOr[String] = js.undefined
+    
+    var WebkitMaskBoxImageRepeat: js.UndefOr[String] = js.undefined
+    
+    var WebkitMaskBoxImageSlice: js.UndefOr[String] = js.undefined
+    
+    var WebkitMaskBoxImageSource: js.UndefOr[String] = js.undefined
+    
+    var WebkitMaskBoxImageWidth: js.UndefOr[String] = js.undefined
     
     var WebkitMaskClip: js.UndefOr[String] = js.undefined
     
@@ -3955,6 +5133,10 @@ object anon {
     
     var WebkitWritingMode: js.UndefOr[String] = js.undefined
     
+    var `accent-color`: js.UndefOr[String] = js.undefined
+    
+    var accentColor: js.UndefOr[String] = js.undefined
+    
     var `align-content`: js.UndefOr[String] = js.undefined
     
     var `align-items`: js.UndefOr[String] = js.undefined
@@ -3979,6 +5161,8 @@ object anon {
     
     var animation: js.UndefOr[String] = js.undefined
     
+    var `animation-composition`: js.UndefOr[String] = js.undefined
+    
     var `animation-delay`: js.UndefOr[String] = js.undefined
     
     var `animation-direction`: js.UndefOr[String] = js.undefined
@@ -3993,7 +5177,11 @@ object anon {
     
     var `animation-play-state`: js.UndefOr[String] = js.undefined
     
+    var `animation-timeline`: js.UndefOr[String] = js.undefined
+    
     var `animation-timing-function`: js.UndefOr[String] = js.undefined
+    
+    var animationComposition: js.UndefOr[String] = js.undefined
     
     var animationDelay: js.UndefOr[String] = js.undefined
     
@@ -4008,6 +5196,8 @@ object anon {
     var animationName: js.UndefOr[String] = js.undefined
     
     var animationPlayState: js.UndefOr[String] = js.undefined
+    
+    var animationTimeline: js.UndefOr[String] = js.undefined
     
     var animationTimingFunction: js.UndefOr[String] = js.undefined
     
@@ -4413,11 +5603,15 @@ object anon {
     
     var `color-rendering`: js.UndefOr[String] = js.undefined
     
+    var `color-scheme`: js.UndefOr[String] = js.undefined
+    
     var colorAdjust: js.UndefOr[String] = js.undefined
     
     var colorInterpolation: js.UndefOr[String] = js.undefined
     
     var colorRendering: js.UndefOr[String] = js.undefined
+    
+    var colorScheme: js.UndefOr[String] = js.undefined
     
     var `column-count`: js.UndefOr[String] = js.undefined
     
@@ -4460,6 +5654,10 @@ object anon {
     var contain: js.UndefOr[String] = js.undefined
     
     var content: js.UndefOr[String] = js.undefined
+    
+    var `content-visibility`: js.UndefOr[String] = js.undefined
+    
+    var contentVisibility: js.UndefOr[String] = js.undefined
     
     var `counter-increment`: js.UndefOr[String] = js.undefined
     
@@ -4617,6 +5815,10 @@ object anon {
     
     var fontWeight: js.UndefOr[String] = js.undefined
     
+    var `forced-color-adjust`: js.UndefOr[String] = js.undefined
+    
+    var forcedColorAdjust: js.UndefOr[String] = js.undefined
+    
     var gap: js.UndefOr[String] = js.undefined
     
     var `glyph-orientation-vertical`: js.UndefOr[String] = js.undefined
@@ -4699,6 +5901,10 @@ object anon {
     
     var height: js.UndefOr[String] = js.undefined
     
+    var `hyphenate-character`: js.UndefOr[String] = js.undefined
+    
+    var hyphenateCharacter: js.UndefOr[String] = js.undefined
+    
     var hyphens: js.UndefOr[String] = js.undefined
     
     var `image-orientation`: js.UndefOr[String] = js.undefined
@@ -4724,6 +5930,10 @@ object anon {
     var `inline-size`: js.UndefOr[String] = js.undefined
     
     var inlineSize: js.UndefOr[String] = js.undefined
+    
+    var `input-security`: js.UndefOr[String] = js.undefined
+    
+    var inputSecurity: js.UndefOr[String] = js.undefined
     
     var inset: js.UndefOr[String] = js.undefined
     
@@ -4933,11 +6143,15 @@ object anon {
     
     var maskType: js.UndefOr[String] = js.undefined
     
-    var `masonry-auto-flow`: js.UndefOr[String] = js.undefined
+    var `math-depth`: js.UndefOr[String] = js.undefined
     
-    var masonryAutoFlow: js.UndefOr[String] = js.undefined
+    var `math-shift`: js.UndefOr[String] = js.undefined
     
     var `math-style`: js.UndefOr[String] = js.undefined
+    
+    var mathDepth: js.UndefOr[String] = js.undefined
+    
+    var mathShift: js.UndefOr[String] = js.undefined
     
     var mathStyle: js.UndefOr[String] = js.undefined
     
@@ -4997,8 +6211,6 @@ object anon {
     
     var msAccelerator: js.UndefOr[String] = js.undefined
     
-    var msAlignSelf: js.UndefOr[String] = js.undefined
-    
     var msBlockProgression: js.UndefOr[String] = js.undefined
     
     var msContentZoomChaining: js.UndefOr[String] = js.undefined
@@ -5046,8 +6258,6 @@ object anon {
     var msImeAlign: js.UndefOr[String] = js.undefined
     
     var msImeMode: js.UndefOr[String] = js.undefined
-    
-    var msJustifySelf: js.UndefOr[String] = js.undefined
     
     var msLineBreak: js.UndefOr[String] = js.undefined
     
@@ -5223,6 +6433,8 @@ object anon {
     
     var `overflow-clip-box`: js.UndefOr[String] = js.undefined
     
+    var `overflow-clip-margin`: js.UndefOr[String] = js.undefined
+    
     var `overflow-inline`: js.UndefOr[String] = js.undefined
     
     var `overflow-wrap`: js.UndefOr[String] = js.undefined
@@ -5236,6 +6448,8 @@ object anon {
     var overflowBlock: js.UndefOr[String] = js.undefined
     
     var overflowClipBox: js.UndefOr[String] = js.undefined
+    
+    var overflowClipMargin: js.UndefOr[String] = js.undefined
     
     var overflowInline: js.UndefOr[String] = js.undefined
     
@@ -5346,6 +6560,10 @@ object anon {
     var pointerEvents: js.UndefOr[String] = js.undefined
     
     var position: js.UndefOr[String] = js.undefined
+    
+    var `print-color-adjust`: js.UndefOr[String] = js.undefined
+    
+    var printColorAdjust: js.UndefOr[String] = js.undefined
     
     var quotes: js.UndefOr[String] = js.undefined
     
@@ -5525,15 +6743,11 @@ object anon {
     
     var `scrollbar-gutter`: js.UndefOr[String] = js.undefined
     
-    var `scrollbar-track-color`: js.UndefOr[String] = js.undefined
-    
     var `scrollbar-width`: js.UndefOr[String] = js.undefined
     
     var scrollbarColor: js.UndefOr[String] = js.undefined
     
     var scrollbarGutter: js.UndefOr[String] = js.undefined
-    
-    var scrollbarTrackColor: js.UndefOr[String] = js.undefined
     
     var scrollbarWidth: js.UndefOr[String] = js.undefined
     
@@ -5605,8 +6819,6 @@ object anon {
     
     var `text-anchor`: js.UndefOr[String] = js.undefined
     
-    var `text-combine-horizontal`: js.UndefOr[String] = js.undefined
-    
     var `text-combine-upright`: js.UndefOr[String] = js.undefined
     
     var `text-decoration`: js.UndefOr[String] = js.undefined
@@ -5622,8 +6834,6 @@ object anon {
     var `text-decoration-style`: js.UndefOr[String] = js.undefined
     
     var `text-decoration-thickness`: js.UndefOr[String] = js.undefined
-    
-    var `text-decoration-width`: js.UndefOr[String] = js.undefined
     
     var `text-emphasis`: js.UndefOr[String] = js.undefined
     
@@ -5659,8 +6869,6 @@ object anon {
     
     var textAnchor: js.UndefOr[String] = js.undefined
     
-    var textCombineHorizontal: js.UndefOr[String] = js.undefined
-    
     var textCombineUpright: js.UndefOr[String] = js.undefined
     
     var textDecoration: js.UndefOr[String] = js.undefined
@@ -5676,8 +6884,6 @@ object anon {
     var textDecorationStyle: js.UndefOr[String] = js.undefined
     
     var textDecorationThickness: js.UndefOr[String] = js.undefined
-    
-    var textDecorationWidth: js.UndefOr[String] = js.undefined
     
     var textEmphasis: js.UndefOr[String] = js.undefined
     
@@ -6016,10 +7222,6 @@ object anon {
       
       inline def `set-moz-column-fillUndefined`: Self = StObject.set(x, "-moz-column-fill", js.undefined)
       
-      inline def `set-moz-column-gap`(value: String): Self = StObject.set(x, "-moz-column-gap", value.asInstanceOf[js.Any])
-      
-      inline def `set-moz-column-gapUndefined`: Self = StObject.set(x, "-moz-column-gap", js.undefined)
-      
       inline def `set-moz-column-rule`(value: String): Self = StObject.set(x, "-moz-column-rule", value.asInstanceOf[js.Any])
       
       inline def `set-moz-column-rule-color`(value: String): Self = StObject.set(x, "-moz-column-rule-color", value.asInstanceOf[js.Any])
@@ -6232,10 +7434,6 @@ object anon {
       
       inline def `set-ms-acceleratorUndefined`: Self = StObject.set(x, "-ms-accelerator", js.undefined)
       
-      inline def `set-ms-align-self`(value: String): Self = StObject.set(x, "-ms-align-self", value.asInstanceOf[js.Any])
-      
-      inline def `set-ms-align-selfUndefined`: Self = StObject.set(x, "-ms-align-self", js.undefined)
-      
       inline def `set-ms-block-progression`(value: String): Self = StObject.set(x, "-ms-block-progression", value.asInstanceOf[js.Any])
       
       inline def `set-ms-block-progressionUndefined`: Self = StObject.set(x, "-ms-block-progression", js.undefined)
@@ -6331,10 +7529,6 @@ object anon {
       inline def `set-ms-ime-mode`(value: String): Self = StObject.set(x, "-ms-ime-mode", value.asInstanceOf[js.Any])
       
       inline def `set-ms-ime-modeUndefined`: Self = StObject.set(x, "-ms-ime-mode", js.undefined)
-      
-      inline def `set-ms-justify-self`(value: String): Self = StObject.set(x, "-ms-justify-self", value.asInstanceOf[js.Any])
-      
-      inline def `set-ms-justify-selfUndefined`: Self = StObject.set(x, "-ms-justify-self", js.undefined)
       
       inline def `set-ms-line-break`(value: String): Self = StObject.set(x, "-ms-line-break", value.asInstanceOf[js.Any])
       
@@ -6776,10 +7970,6 @@ object anon {
       
       inline def `set-webkit-column-fillUndefined`: Self = StObject.set(x, "-webkit-column-fill", js.undefined)
       
-      inline def `set-webkit-column-gap`(value: String): Self = StObject.set(x, "-webkit-column-gap", value.asInstanceOf[js.Any])
-      
-      inline def `set-webkit-column-gapUndefined`: Self = StObject.set(x, "-webkit-column-gap", js.undefined)
-      
       inline def `set-webkit-column-rule`(value: String): Self = StObject.set(x, "-webkit-column-rule", value.asInstanceOf[js.Any])
       
       inline def `set-webkit-column-rule-color`(value: String): Self = StObject.set(x, "-webkit-column-rule-color", value.asInstanceOf[js.Any])
@@ -6856,9 +8046,17 @@ object anon {
       
       inline def `set-webkit-font-variant-ligaturesUndefined`: Self = StObject.set(x, "-webkit-font-variant-ligatures", js.undefined)
       
+      inline def `set-webkit-hyphenate-character`(value: String): Self = StObject.set(x, "-webkit-hyphenate-character", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-hyphenate-characterUndefined`: Self = StObject.set(x, "-webkit-hyphenate-character", js.undefined)
+      
       inline def `set-webkit-hyphens`(value: String): Self = StObject.set(x, "-webkit-hyphens", value.asInstanceOf[js.Any])
       
       inline def `set-webkit-hyphensUndefined`: Self = StObject.set(x, "-webkit-hyphens", js.undefined)
+      
+      inline def `set-webkit-initial-letter`(value: String): Self = StObject.set(x, "-webkit-initial-letter", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-initial-letterUndefined`: Self = StObject.set(x, "-webkit-initial-letter", js.undefined)
       
       inline def `set-webkit-justify-content`(value: String): Self = StObject.set(x, "-webkit-justify-content", value.asInstanceOf[js.Any])
       
@@ -6885,6 +8083,30 @@ object anon {
       inline def `set-webkit-mask-attachment`(value: String): Self = StObject.set(x, "-webkit-mask-attachment", value.asInstanceOf[js.Any])
       
       inline def `set-webkit-mask-attachmentUndefined`: Self = StObject.set(x, "-webkit-mask-attachment", js.undefined)
+      
+      inline def `set-webkit-mask-box-image`(value: String): Self = StObject.set(x, "-webkit-mask-box-image", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-mask-box-image-outset`(value: String): Self = StObject.set(x, "-webkit-mask-box-image-outset", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-mask-box-image-outsetUndefined`: Self = StObject.set(x, "-webkit-mask-box-image-outset", js.undefined)
+      
+      inline def `set-webkit-mask-box-image-repeat`(value: String): Self = StObject.set(x, "-webkit-mask-box-image-repeat", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-mask-box-image-repeatUndefined`: Self = StObject.set(x, "-webkit-mask-box-image-repeat", js.undefined)
+      
+      inline def `set-webkit-mask-box-image-slice`(value: String): Self = StObject.set(x, "-webkit-mask-box-image-slice", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-mask-box-image-sliceUndefined`: Self = StObject.set(x, "-webkit-mask-box-image-slice", js.undefined)
+      
+      inline def `set-webkit-mask-box-image-source`(value: String): Self = StObject.set(x, "-webkit-mask-box-image-source", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-mask-box-image-sourceUndefined`: Self = StObject.set(x, "-webkit-mask-box-image-source", js.undefined)
+      
+      inline def `set-webkit-mask-box-image-width`(value: String): Self = StObject.set(x, "-webkit-mask-box-image-width", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-mask-box-image-widthUndefined`: Self = StObject.set(x, "-webkit-mask-box-image-width", js.undefined)
+      
+      inline def `set-webkit-mask-box-imageUndefined`: Self = StObject.set(x, "-webkit-mask-box-image", js.undefined)
       
       inline def `set-webkit-mask-clip`(value: String): Self = StObject.set(x, "-webkit-mask-clip", value.asInstanceOf[js.Any])
       
@@ -7100,6 +8322,14 @@ object anon {
       
       inline def `set-webkit-writing-modeUndefined`: Self = StObject.set(x, "-webkit-writing-mode", js.undefined)
       
+      inline def `setAccent-color`(value: String): Self = StObject.set(x, "accent-color", value.asInstanceOf[js.Any])
+      
+      inline def `setAccent-colorUndefined`: Self = StObject.set(x, "accent-color", js.undefined)
+      
+      inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
+      
+      inline def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
+      
       inline def `setAlign-content`(value: String): Self = StObject.set(x, "align-content", value.asInstanceOf[js.Any])
       
       inline def `setAlign-contentUndefined`: Self = StObject.set(x, "align-content", js.undefined)
@@ -7146,6 +8376,10 @@ object anon {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
+      inline def `setAnimation-composition`(value: String): Self = StObject.set(x, "animation-composition", value.asInstanceOf[js.Any])
+      
+      inline def `setAnimation-compositionUndefined`: Self = StObject.set(x, "animation-composition", js.undefined)
+      
       inline def `setAnimation-delay`(value: String): Self = StObject.set(x, "animation-delay", value.asInstanceOf[js.Any])
       
       inline def `setAnimation-delayUndefined`: Self = StObject.set(x, "animation-delay", js.undefined)
@@ -7174,9 +8408,17 @@ object anon {
       
       inline def `setAnimation-play-stateUndefined`: Self = StObject.set(x, "animation-play-state", js.undefined)
       
+      inline def `setAnimation-timeline`(value: String): Self = StObject.set(x, "animation-timeline", value.asInstanceOf[js.Any])
+      
+      inline def `setAnimation-timelineUndefined`: Self = StObject.set(x, "animation-timeline", js.undefined)
+      
       inline def `setAnimation-timing-function`(value: String): Self = StObject.set(x, "animation-timing-function", value.asInstanceOf[js.Any])
       
       inline def `setAnimation-timing-functionUndefined`: Self = StObject.set(x, "animation-timing-function", js.undefined)
+      
+      inline def setAnimationComposition(value: String): Self = StObject.set(x, "animationComposition", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationCompositionUndefined: Self = StObject.set(x, "animationComposition", js.undefined)
       
       inline def setAnimationDelay(value: String): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
       
@@ -7205,6 +8447,10 @@ object anon {
       inline def setAnimationPlayState(value: String): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
       
       inline def setAnimationPlayStateUndefined: Self = StObject.set(x, "animationPlayState", js.undefined)
+      
+      inline def setAnimationTimeline(value: String): Self = StObject.set(x, "animationTimeline", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationTimelineUndefined: Self = StObject.set(x, "animationTimeline", js.undefined)
       
       inline def setAnimationTimingFunction(value: String): Self = StObject.set(x, "animationTimingFunction", value.asInstanceOf[js.Any])
       
@@ -8014,6 +9260,10 @@ object anon {
       
       inline def `setColor-renderingUndefined`: Self = StObject.set(x, "color-rendering", js.undefined)
       
+      inline def `setColor-scheme`(value: String): Self = StObject.set(x, "color-scheme", value.asInstanceOf[js.Any])
+      
+      inline def `setColor-schemeUndefined`: Self = StObject.set(x, "color-scheme", js.undefined)
+      
       inline def setColorAdjust(value: String): Self = StObject.set(x, "colorAdjust", value.asInstanceOf[js.Any])
       
       inline def setColorAdjustUndefined: Self = StObject.set(x, "colorAdjust", js.undefined)
@@ -8025,6 +9275,10 @@ object anon {
       inline def setColorRendering(value: String): Self = StObject.set(x, "colorRendering", value.asInstanceOf[js.Any])
       
       inline def setColorRenderingUndefined: Self = StObject.set(x, "colorRendering", js.undefined)
+      
+      inline def setColorScheme(value: String): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
+      
+      inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
@@ -8110,7 +9364,15 @@ object anon {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
+      inline def `setContent-visibility`(value: String): Self = StObject.set(x, "content-visibility", value.asInstanceOf[js.Any])
+      
+      inline def `setContent-visibilityUndefined`: Self = StObject.set(x, "content-visibility", js.undefined)
+      
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setContentVisibility(value: String): Self = StObject.set(x, "contentVisibility", value.asInstanceOf[js.Any])
+      
+      inline def setContentVisibilityUndefined: Self = StObject.set(x, "contentVisibility", js.undefined)
       
       inline def `setCounter-increment`(value: String): Self = StObject.set(x, "counter-increment", value.asInstanceOf[js.Any])
       
@@ -8424,6 +9686,14 @@ object anon {
       
       inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
+      inline def `setForced-color-adjust`(value: String): Self = StObject.set(x, "forced-color-adjust", value.asInstanceOf[js.Any])
+      
+      inline def `setForced-color-adjustUndefined`: Self = StObject.set(x, "forced-color-adjust", js.undefined)
+      
+      inline def setForcedColorAdjust(value: String): Self = StObject.set(x, "forcedColorAdjust", value.asInstanceOf[js.Any])
+      
+      inline def setForcedColorAdjustUndefined: Self = StObject.set(x, "forcedColorAdjust", js.undefined)
+      
       inline def setGap(value: String): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
       
       inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
@@ -8588,6 +9858,14 @@ object anon {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
+      inline def `setHyphenate-character`(value: String): Self = StObject.set(x, "hyphenate-character", value.asInstanceOf[js.Any])
+      
+      inline def `setHyphenate-characterUndefined`: Self = StObject.set(x, "hyphenate-character", js.undefined)
+      
+      inline def setHyphenateCharacter(value: String): Self = StObject.set(x, "hyphenateCharacter", value.asInstanceOf[js.Any])
+      
+      inline def setHyphenateCharacterUndefined: Self = StObject.set(x, "hyphenateCharacter", js.undefined)
+      
       inline def setHyphens(value: String): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
       
       inline def setHyphensUndefined: Self = StObject.set(x, "hyphens", js.undefined)
@@ -8639,6 +9917,14 @@ object anon {
       inline def setInlineSize(value: String): Self = StObject.set(x, "inlineSize", value.asInstanceOf[js.Any])
       
       inline def setInlineSizeUndefined: Self = StObject.set(x, "inlineSize", js.undefined)
+      
+      inline def `setInput-security`(value: String): Self = StObject.set(x, "input-security", value.asInstanceOf[js.Any])
+      
+      inline def `setInput-securityUndefined`: Self = StObject.set(x, "input-security", js.undefined)
+      
+      inline def setInputSecurity(value: String): Self = StObject.set(x, "inputSecurity", value.asInstanceOf[js.Any])
+      
+      inline def setInputSecurityUndefined: Self = StObject.set(x, "inputSecurity", js.undefined)
       
       inline def setInset(value: String): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
       
@@ -9100,17 +10386,25 @@ object anon {
       
       inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
-      inline def `setMasonry-auto-flow`(value: String): Self = StObject.set(x, "masonry-auto-flow", value.asInstanceOf[js.Any])
+      inline def `setMath-depth`(value: String): Self = StObject.set(x, "math-depth", value.asInstanceOf[js.Any])
       
-      inline def `setMasonry-auto-flowUndefined`: Self = StObject.set(x, "masonry-auto-flow", js.undefined)
+      inline def `setMath-depthUndefined`: Self = StObject.set(x, "math-depth", js.undefined)
       
-      inline def setMasonryAutoFlow(value: String): Self = StObject.set(x, "masonryAutoFlow", value.asInstanceOf[js.Any])
+      inline def `setMath-shift`(value: String): Self = StObject.set(x, "math-shift", value.asInstanceOf[js.Any])
       
-      inline def setMasonryAutoFlowUndefined: Self = StObject.set(x, "masonryAutoFlow", js.undefined)
+      inline def `setMath-shiftUndefined`: Self = StObject.set(x, "math-shift", js.undefined)
       
       inline def `setMath-style`(value: String): Self = StObject.set(x, "math-style", value.asInstanceOf[js.Any])
       
       inline def `setMath-styleUndefined`: Self = StObject.set(x, "math-style", js.undefined)
+      
+      inline def setMathDepth(value: String): Self = StObject.set(x, "mathDepth", value.asInstanceOf[js.Any])
+      
+      inline def setMathDepthUndefined: Self = StObject.set(x, "mathDepth", js.undefined)
+      
+      inline def setMathShift(value: String): Self = StObject.set(x, "mathShift", value.asInstanceOf[js.Any])
+      
+      inline def setMathShiftUndefined: Self = StObject.set(x, "mathShift", js.undefined)
       
       inline def setMathStyle(value: String): Self = StObject.set(x, "mathStyle", value.asInstanceOf[js.Any])
       
@@ -9388,10 +10682,6 @@ object anon {
       
       inline def setMozColumnFillUndefined: Self = StObject.set(x, "MozColumnFill", js.undefined)
       
-      inline def setMozColumnGap(value: String): Self = StObject.set(x, "MozColumnGap", value.asInstanceOf[js.Any])
-      
-      inline def setMozColumnGapUndefined: Self = StObject.set(x, "MozColumnGap", js.undefined)
-      
       inline def setMozColumnRule(value: String): Self = StObject.set(x, "MozColumnRule", value.asInstanceOf[js.Any])
       
       inline def setMozColumnRuleColor(value: String): Self = StObject.set(x, "MozColumnRuleColor", value.asInstanceOf[js.Any])
@@ -9604,10 +10894,6 @@ object anon {
       
       inline def setMsAcceleratorUndefined: Self = StObject.set(x, "msAccelerator", js.undefined)
       
-      inline def setMsAlignSelf(value: String): Self = StObject.set(x, "msAlignSelf", value.asInstanceOf[js.Any])
-      
-      inline def setMsAlignSelfUndefined: Self = StObject.set(x, "msAlignSelf", js.undefined)
-      
       inline def setMsBlockProgression(value: String): Self = StObject.set(x, "msBlockProgression", value.asInstanceOf[js.Any])
       
       inline def setMsBlockProgressionUndefined: Self = StObject.set(x, "msBlockProgression", js.undefined)
@@ -9703,10 +10989,6 @@ object anon {
       inline def setMsImeMode(value: String): Self = StObject.set(x, "msImeMode", value.asInstanceOf[js.Any])
       
       inline def setMsImeModeUndefined: Self = StObject.set(x, "msImeMode", js.undefined)
-      
-      inline def setMsJustifySelf(value: String): Self = StObject.set(x, "msJustifySelf", value.asInstanceOf[js.Any])
-      
-      inline def setMsJustifySelfUndefined: Self = StObject.set(x, "msJustifySelf", js.undefined)
       
       inline def setMsLineBreak(value: String): Self = StObject.set(x, "msLineBreak", value.asInstanceOf[js.Any])
       
@@ -10142,6 +11424,10 @@ object anon {
       
       inline def `setOverflow-clip-boxUndefined`: Self = StObject.set(x, "overflow-clip-box", js.undefined)
       
+      inline def `setOverflow-clip-margin`(value: String): Self = StObject.set(x, "overflow-clip-margin", value.asInstanceOf[js.Any])
+      
+      inline def `setOverflow-clip-marginUndefined`: Self = StObject.set(x, "overflow-clip-margin", js.undefined)
+      
       inline def `setOverflow-inline`(value: String): Self = StObject.set(x, "overflow-inline", value.asInstanceOf[js.Any])
       
       inline def `setOverflow-inlineUndefined`: Self = StObject.set(x, "overflow-inline", js.undefined)
@@ -10169,6 +11455,10 @@ object anon {
       inline def setOverflowClipBox(value: String): Self = StObject.set(x, "overflowClipBox", value.asInstanceOf[js.Any])
       
       inline def setOverflowClipBoxUndefined: Self = StObject.set(x, "overflowClipBox", js.undefined)
+      
+      inline def setOverflowClipMargin(value: String): Self = StObject.set(x, "overflowClipMargin", value.asInstanceOf[js.Any])
+      
+      inline def setOverflowClipMarginUndefined: Self = StObject.set(x, "overflowClipMargin", js.undefined)
       
       inline def setOverflowInline(value: String): Self = StObject.set(x, "overflowInline", value.asInstanceOf[js.Any])
       
@@ -10391,6 +11681,14 @@ object anon {
       inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      
+      inline def `setPrint-color-adjust`(value: String): Self = StObject.set(x, "print-color-adjust", value.asInstanceOf[js.Any])
+      
+      inline def `setPrint-color-adjustUndefined`: Self = StObject.set(x, "print-color-adjust", js.undefined)
+      
+      inline def setPrintColorAdjust(value: String): Self = StObject.set(x, "printColorAdjust", value.asInstanceOf[js.Any])
+      
+      inline def setPrintColorAdjustUndefined: Self = StObject.set(x, "printColorAdjust", js.undefined)
       
       inline def setQuotes(value: String): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
       
@@ -10748,10 +12046,6 @@ object anon {
       
       inline def `setScrollbar-gutterUndefined`: Self = StObject.set(x, "scrollbar-gutter", js.undefined)
       
-      inline def `setScrollbar-track-color`(value: String): Self = StObject.set(x, "scrollbar-track-color", value.asInstanceOf[js.Any])
-      
-      inline def `setScrollbar-track-colorUndefined`: Self = StObject.set(x, "scrollbar-track-color", js.undefined)
-      
       inline def `setScrollbar-width`(value: String): Self = StObject.set(x, "scrollbar-width", value.asInstanceOf[js.Any])
       
       inline def `setScrollbar-widthUndefined`: Self = StObject.set(x, "scrollbar-width", js.undefined)
@@ -10763,10 +12057,6 @@ object anon {
       inline def setScrollbarGutter(value: String): Self = StObject.set(x, "scrollbarGutter", value.asInstanceOf[js.Any])
       
       inline def setScrollbarGutterUndefined: Self = StObject.set(x, "scrollbarGutter", js.undefined)
-      
-      inline def setScrollbarTrackColor(value: String): Self = StObject.set(x, "scrollbarTrackColor", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbarTrackColorUndefined: Self = StObject.set(x, "scrollbarTrackColor", js.undefined)
       
       inline def setScrollbarWidth(value: String): Self = StObject.set(x, "scrollbarWidth", value.asInstanceOf[js.Any])
       
@@ -10908,10 +12198,6 @@ object anon {
       
       inline def `setText-anchorUndefined`: Self = StObject.set(x, "text-anchor", js.undefined)
       
-      inline def `setText-combine-horizontal`(value: String): Self = StObject.set(x, "text-combine-horizontal", value.asInstanceOf[js.Any])
-      
-      inline def `setText-combine-horizontalUndefined`: Self = StObject.set(x, "text-combine-horizontal", js.undefined)
-      
       inline def `setText-combine-upright`(value: String): Self = StObject.set(x, "text-combine-upright", value.asInstanceOf[js.Any])
       
       inline def `setText-combine-uprightUndefined`: Self = StObject.set(x, "text-combine-upright", js.undefined)
@@ -10941,10 +12227,6 @@ object anon {
       inline def `setText-decoration-thickness`(value: String): Self = StObject.set(x, "text-decoration-thickness", value.asInstanceOf[js.Any])
       
       inline def `setText-decoration-thicknessUndefined`: Self = StObject.set(x, "text-decoration-thickness", js.undefined)
-      
-      inline def `setText-decoration-width`(value: String): Self = StObject.set(x, "text-decoration-width", value.asInstanceOf[js.Any])
-      
-      inline def `setText-decoration-widthUndefined`: Self = StObject.set(x, "text-decoration-width", js.undefined)
       
       inline def `setText-decorationUndefined`: Self = StObject.set(x, "text-decoration", js.undefined)
       
@@ -11016,10 +12298,6 @@ object anon {
       
       inline def setTextAnchorUndefined: Self = StObject.set(x, "textAnchor", js.undefined)
       
-      inline def setTextCombineHorizontal(value: String): Self = StObject.set(x, "textCombineHorizontal", value.asInstanceOf[js.Any])
-      
-      inline def setTextCombineHorizontalUndefined: Self = StObject.set(x, "textCombineHorizontal", js.undefined)
-      
       inline def setTextCombineUpright(value: String): Self = StObject.set(x, "textCombineUpright", value.asInstanceOf[js.Any])
       
       inline def setTextCombineUprightUndefined: Self = StObject.set(x, "textCombineUpright", js.undefined)
@@ -11051,10 +12329,6 @@ object anon {
       inline def setTextDecorationThicknessUndefined: Self = StObject.set(x, "textDecorationThickness", js.undefined)
       
       inline def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
-      
-      inline def setTextDecorationWidth(value: String): Self = StObject.set(x, "textDecorationWidth", value.asInstanceOf[js.Any])
-      
-      inline def setTextDecorationWidthUndefined: Self = StObject.set(x, "textDecorationWidth", js.undefined)
       
       inline def setTextEmphasis(value: String): Self = StObject.set(x, "textEmphasis", value.asInstanceOf[js.Any])
       
@@ -11404,10 +12678,6 @@ object anon {
       
       inline def setWebkitColumnFillUndefined: Self = StObject.set(x, "WebkitColumnFill", js.undefined)
       
-      inline def setWebkitColumnGap(value: String): Self = StObject.set(x, "WebkitColumnGap", value.asInstanceOf[js.Any])
-      
-      inline def setWebkitColumnGapUndefined: Self = StObject.set(x, "WebkitColumnGap", js.undefined)
-      
       inline def setWebkitColumnRule(value: String): Self = StObject.set(x, "WebkitColumnRule", value.asInstanceOf[js.Any])
       
       inline def setWebkitColumnRuleColor(value: String): Self = StObject.set(x, "WebkitColumnRuleColor", value.asInstanceOf[js.Any])
@@ -11484,9 +12754,17 @@ object anon {
       
       inline def setWebkitFontVariantLigaturesUndefined: Self = StObject.set(x, "WebkitFontVariantLigatures", js.undefined)
       
+      inline def setWebkitHyphenateCharacter(value: String): Self = StObject.set(x, "WebkitHyphenateCharacter", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitHyphenateCharacterUndefined: Self = StObject.set(x, "WebkitHyphenateCharacter", js.undefined)
+      
       inline def setWebkitHyphens(value: String): Self = StObject.set(x, "WebkitHyphens", value.asInstanceOf[js.Any])
       
       inline def setWebkitHyphensUndefined: Self = StObject.set(x, "WebkitHyphens", js.undefined)
+      
+      inline def setWebkitInitialLetter(value: String): Self = StObject.set(x, "WebkitInitialLetter", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitInitialLetterUndefined: Self = StObject.set(x, "WebkitInitialLetter", js.undefined)
       
       inline def setWebkitJustifyContent(value: String): Self = StObject.set(x, "WebkitJustifyContent", value.asInstanceOf[js.Any])
       
@@ -11513,6 +12791,30 @@ object anon {
       inline def setWebkitMaskAttachment(value: String): Self = StObject.set(x, "WebkitMaskAttachment", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskAttachmentUndefined: Self = StObject.set(x, "WebkitMaskAttachment", js.undefined)
+      
+      inline def setWebkitMaskBoxImage(value: String): Self = StObject.set(x, "WebkitMaskBoxImage", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitMaskBoxImageOutset(value: String): Self = StObject.set(x, "WebkitMaskBoxImageOutset", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitMaskBoxImageOutsetUndefined: Self = StObject.set(x, "WebkitMaskBoxImageOutset", js.undefined)
+      
+      inline def setWebkitMaskBoxImageRepeat(value: String): Self = StObject.set(x, "WebkitMaskBoxImageRepeat", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitMaskBoxImageRepeatUndefined: Self = StObject.set(x, "WebkitMaskBoxImageRepeat", js.undefined)
+      
+      inline def setWebkitMaskBoxImageSlice(value: String): Self = StObject.set(x, "WebkitMaskBoxImageSlice", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitMaskBoxImageSliceUndefined: Self = StObject.set(x, "WebkitMaskBoxImageSlice", js.undefined)
+      
+      inline def setWebkitMaskBoxImageSource(value: String): Self = StObject.set(x, "WebkitMaskBoxImageSource", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitMaskBoxImageSourceUndefined: Self = StObject.set(x, "WebkitMaskBoxImageSource", js.undefined)
+      
+      inline def setWebkitMaskBoxImageUndefined: Self = StObject.set(x, "WebkitMaskBoxImage", js.undefined)
+      
+      inline def setWebkitMaskBoxImageWidth(value: String): Self = StObject.set(x, "WebkitMaskBoxImageWidth", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitMaskBoxImageWidthUndefined: Self = StObject.set(x, "WebkitMaskBoxImageWidth", js.undefined)
       
       inline def setWebkitMaskClip(value: String): Self = StObject.set(x, "WebkitMaskClip", value.asInstanceOf[js.Any])
       

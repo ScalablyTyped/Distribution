@@ -1,6 +1,5 @@
 package typings.pickadate.Pickadate
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ trait DateItem
   /**
     * The underlying JavaScript Date object.
     */
-  var obj: Date
+  var obj: js.Date
   
   /**
     * The full year.
@@ -36,7 +35,7 @@ trait DateItem
 }
 object DateItem {
   
-  inline def apply(date: Double, day: Double, month: Double, obj: Date, pick: Double, year: Double): DateItem = {
+  inline def apply(date: Double, day: Double, month: Double, obj: js.Date, pick: Double, year: Double): DateItem = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], obj = obj.asInstanceOf[js.Any], pick = pick.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateItem]
   }
@@ -49,7 +48,7 @@ object DateItem {
     
     inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    inline def setObj(value: Date): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
+    inline def setObj(value: js.Date): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
     
     inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }

@@ -15,8 +15,16 @@ object grommetNumbers {
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
+  sealed trait `12` extends StObject
+  inline def `12`: `12` = 12.asInstanceOf[`12`]
+  
+  @js.native
   sealed trait `2` extends StObject
   inline def `2`: `2` = 2.asInstanceOf[`2`]
+  
+  @js.native
+  sealed trait `24` extends StObject
+  inline def `24`: `24` = 24.asInstanceOf[`24`]
   
   @js.native
   sealed trait `3` extends StObject

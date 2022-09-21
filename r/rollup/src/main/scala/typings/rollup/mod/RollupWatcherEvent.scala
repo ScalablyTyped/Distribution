@@ -5,23 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.rollup.anon.`2`
+  - typings.rollup.anon.`1`
   - typings.rollup.anon.Input
   - typings.rollup.anon.Duration
-  - typings.rollup.anon.`3`
+  - typings.rollup.anon.`2`
   - typings.rollup.anon.Error
 */
 trait RollupWatcherEvent extends StObject
 object RollupWatcherEvent {
   
-  inline def `2`(): typings.rollup.anon.`2` = {
+  inline def `1`(): typings.rollup.anon.`1` = {
     val __obj = js.Dynamic.literal(code = "START")
-    __obj.asInstanceOf[typings.rollup.anon.`2`]
+    __obj.asInstanceOf[typings.rollup.anon.`1`]
   }
   
-  inline def `3`(): typings.rollup.anon.`3` = {
+  inline def `2`(): typings.rollup.anon.`2` = {
     val __obj = js.Dynamic.literal(code = "END")
-    __obj.asInstanceOf[typings.rollup.anon.`3`]
+    __obj.asInstanceOf[typings.rollup.anon.`2`]
   }
   
   inline def Duration(duration: Double, output: js.Array[String], result: RollupBuild): typings.rollup.anon.Duration = {
@@ -30,7 +30,7 @@ object RollupWatcherEvent {
   }
   
   inline def Error(error: RollupError): typings.rollup.anon.Error = {
-    val __obj = js.Dynamic.literal(code = "ERROR", error = error.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(code = "ERROR", error = error.asInstanceOf[js.Any], result = null)
     __obj.asInstanceOf[typings.rollup.anon.Error]
   }
   

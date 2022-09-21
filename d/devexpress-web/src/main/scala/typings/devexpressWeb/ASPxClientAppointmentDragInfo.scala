@@ -55,12 +55,12 @@ object ASPxClientAppointmentDragInfo {
     
     inline def setNewResources(value: js.Array[String]): Self = StObject.set(x, "newResources", value.asInstanceOf[js.Any])
     
-    inline def setNewResourcesVarargs(value: String*): Self = StObject.set(x, "newResources", js.Array(value :_*))
+    inline def setNewResourcesVarargs(value: String*): Self = StObject.set(x, "newResources", js.Array(value*))
     
     inline def setOldInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "oldInterval", value.asInstanceOf[js.Any])
     
     inline def setOldResources(value: js.Array[String]): Self = StObject.set(x, "oldResources", value.asInstanceOf[js.Any])
     
-    inline def setOldResourcesVarargs(value: String*): Self = StObject.set(x, "oldResources", js.Array(value :_*))
+    inline def setOldResourcesVarargs(value: String*): Self = StObject.set(x, "oldResources", js.Array(value*))
   }
 }

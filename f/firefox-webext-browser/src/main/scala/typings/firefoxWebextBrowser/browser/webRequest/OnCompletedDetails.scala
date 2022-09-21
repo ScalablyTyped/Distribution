@@ -138,7 +138,7 @@ object OnCompletedDetails {
     
     inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    inline def setResponseHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+    inline def setResponseHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "responseHeaders", js.Array(value*))
     
     inline def setResponseSize(value: Double): Self = StObject.set(x, "responseSize", value.asInstanceOf[js.Any])
     

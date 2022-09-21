@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListServicesResponse extends StObject {
   
   /**
-    * If present in the response, this value indicates there's more output available that what's included in the current response. This can occur even when the response includes no values at all, such as when you ask for a filtered view of a very long list. Use this value in the NextToken request parameter in a subsequent call to the operation to continue processing and get the next part of the output. You should repeat this until the NextToken response element comes back empty (as null).
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
   var NextToken: js.UndefOr[typings.awsSdk.servicequotasMod.NextToken] = js.undefined
   
   /**
-    * Returns a list of services. 
+    * Information about the services.
     */
   var Services: js.UndefOr[ServiceInfoListDefinition] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListServicesResponse {
     
     inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
     
-    inline def setServicesVarargs(value: ServiceInfo*): Self = StObject.set(x, "Services", js.Array(value :_*))
+    inline def setServicesVarargs(value: ServiceInfo*): Self = StObject.set(x, "Services", js.Array(value*))
   }
 }

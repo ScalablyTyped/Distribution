@@ -22,7 +22,7 @@ object mod {
   
   @JSImport("libxmljs", "Attribute")
   @js.native
-  class Attribute () extends StObject {
+  open class Attribute () extends StObject {
     
     def name(): String = js.native
     
@@ -41,7 +41,7 @@ object mod {
     * @param version XML document version, defaults to 1.0
     * @param encoding Encoding, defaults to utf8
     */
-  class Document () extends StObject {
+  open class Document () extends StObject {
     def this(version: Double) = this()
     def this(version: Double, encoding: String) = this()
     def this(version: Unit, encoding: String) = this()
@@ -85,7 +85,7 @@ object mod {
   
   @JSImport("libxmljs", "Element")
   @js.native
-  class Element protected () extends Node {
+  open class Element protected () extends Node {
     def this(doc: Document, name: String) = this()
     def this(doc: Document, name: String, content: String) = this()
     
@@ -136,14 +136,11 @@ object mod {
     
     def replace(replacement: String): String = js.native
     def replace(replacement: Element): Element = js.native
-    
-    def text(): String = js.native
-    def text(newText: String): this.type = js.native
   }
   
   @JSImport("libxmljs", "Namespace")
   @js.native
-  class Namespace () extends StObject {
+  open class Namespace () extends StObject {
     
     def href(): String = js.native
     
@@ -152,7 +149,7 @@ object mod {
   
   @JSImport("libxmljs", "Node")
   @js.native
-  class Node () extends StObject {
+  open class Node () extends StObject {
     
     def doc(): Document = js.native
     
@@ -179,6 +176,9 @@ object mod {
     
     def remove(): this.type = js.native
     
+    def text(): String = js.native
+    def text(newText: String): this.type = js.native
+    
     def toString(format: Boolean): String = js.native
     def toString(format: Declaration): String = js.native
     
@@ -187,14 +187,14 @@ object mod {
   
   @JSImport("libxmljs", "SaxParser")
   @js.native
-  class SaxParser () extends EventEmitter {
+  open class SaxParser () extends EventEmitter {
     
     def parseString(source: String): Boolean = js.native
   }
   
   @JSImport("libxmljs", "SaxPushParser")
   @js.native
-  class SaxPushParser () extends EventEmitter {
+  open class SaxPushParser () extends EventEmitter {
     
     def push(source: String): Boolean = js.native
   }
@@ -249,7 +249,7 @@ object mod {
     
     var doctype: js.UndefOr[Boolean] = js.undefined
     
-    var dtdattr: js.UndefOr[js.Any] = js.undefined
+    var dtdattr: js.UndefOr[Any] = js.undefined
     
     var dtdload: js.UndefOr[Boolean] = js.undefined
     
@@ -340,7 +340,7 @@ object mod {
       
       inline def setDoctypeUndefined: Self = StObject.set(x, "doctype", js.undefined)
       
-      inline def setDtdattr(value: js.Any): Self = StObject.set(x, "dtdattr", value.asInstanceOf[js.Any])
+      inline def setDtdattr(value: Any): Self = StObject.set(x, "dtdattr", value.asInstanceOf[js.Any])
       
       inline def setDtdattrUndefined: Self = StObject.set(x, "dtdattr", js.undefined)
       

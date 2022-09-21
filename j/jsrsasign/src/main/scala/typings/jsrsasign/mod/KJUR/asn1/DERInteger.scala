@@ -1,5 +1,6 @@
 package typings.jsrsasign.mod.KJUR.asn1
 
+import typings.jsrsasign.anon.Tlv
 import typings.jsrsasign.jsrsasign.BigInteger
 import typings.jsrsasign.jsrsasign.KJUR.asn1.BigIntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.HexParam
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("jsrsasign", "KJUR.asn1.DERInteger")
 @js.native
-class DERInteger ()
+open class DERInteger ()
   extends StObject
      with typings.jsrsasign.jsrsasign.KJUR.asn1.DERInteger {
   def this(params: Double) = this()
@@ -74,6 +75,10 @@ class DERInteger ()
   /* CompleteClass */
   var isModified: String = js.native
   
+  /** JSON object parameter for ASN.1 encode */
+  /* CompleteClass */
+  var params: Tlv | Null = js.native
+  
   /**
     * set value by Tom Wu's BigInteger object
     * @param bigIntegerValue to set
@@ -83,7 +88,7 @@ class DERInteger ()
   
   /**
     * set value by integer value
-    * @param integer value to set
+    * @param value to set
     */
   /* CompleteClass */
   override def setByInteger(intValue: Double): Unit = js.native

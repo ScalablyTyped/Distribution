@@ -8,5 +8,5 @@ object scrollMod {
   
   @JSImport("intercom-client/Scroll", "Scroll")
   @js.native
-  class Scroll[T] () extends StObject
+  open class Scroll[T] () extends StObject
 }

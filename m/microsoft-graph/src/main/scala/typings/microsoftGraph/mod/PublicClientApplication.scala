@@ -25,6 +25,6 @@ object PublicClientApplication {
     
     inline def setRedirectUrisUndefined: Self = StObject.set(x, "redirectUris", js.undefined)
     
-    inline def setRedirectUrisVarargs(value: String*): Self = StObject.set(x, "redirectUris", js.Array(value :_*))
+    inline def setRedirectUrisVarargs(value: String*): Self = StObject.set(x, "redirectUris", js.Array(value*))
   }
 }

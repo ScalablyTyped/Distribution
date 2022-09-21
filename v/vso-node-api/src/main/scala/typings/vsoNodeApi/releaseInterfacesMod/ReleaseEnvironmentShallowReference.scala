@@ -9,7 +9,7 @@ trait ReleaseEnvironmentShallowReference extends StObject {
   /**
     * Gets the links to related resources, APIs, and views for the release environment.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Gets the unique identifier of release environment.
@@ -28,7 +28,7 @@ trait ReleaseEnvironmentShallowReference extends StObject {
 }
 object ReleaseEnvironmentShallowReference {
   
-  inline def apply(_links: js.Any, id: Double, name: String, url: String): ReleaseEnvironmentShallowReference = {
+  inline def apply(_links: Any, id: Double, name: String, url: String): ReleaseEnvironmentShallowReference = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseEnvironmentShallowReference]
   }
@@ -41,6 +41,6 @@ object ReleaseEnvironmentShallowReference {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

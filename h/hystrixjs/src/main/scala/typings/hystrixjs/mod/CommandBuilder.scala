@@ -1,6 +1,5 @@
 package typings.hystrixjs.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,13 +18,11 @@ trait CommandBuilder extends StObject {
   
   def circuitBreakerSleepWindowInMilliseconds(value: Double): CommandBuilder
   
-  def context(value: js.Any): CommandBuilder
+  def context(value: Any): CommandBuilder
   
-  def errorHandler(value: js.Function1[/* error */ js.Any, Boolean]): CommandBuilder
+  def errorHandler(value: js.Function1[/* error */ Any, Boolean]): CommandBuilder
   
-  def fallbackTo(
-    value: js.Function2[/* error */ Error, /* args */ js.UndefOr[js.Array[js.Any]], js.Thenable[js.Any]]
-  ): CommandBuilder
+  def fallbackTo(value: js.Function2[/* error */ js.Error, /* args */ js.UndefOr[js.Array[Any]], js.Thenable[Any]]): CommandBuilder
   
   def percentileWindowLength(value: Double): CommandBuilder
   
@@ -33,7 +30,7 @@ trait CommandBuilder extends StObject {
   
   def requestVolumeRejectionThreshold(value: Double): CommandBuilder
   
-  def run(value: js.Function1[/* repeated */ js.Any, js.Thenable[js.Any]]): CommandBuilder
+  def run(value: js.Function1[/* repeated */ Any, js.Thenable[Any]]): CommandBuilder
   
   def statisticalWindowLength(value: Double): CommandBuilder
   
@@ -50,13 +47,13 @@ object CommandBuilder {
     circuitBreakerForceOpened: Boolean => CommandBuilder,
     circuitBreakerRequestVolumeThreshold: Double => CommandBuilder,
     circuitBreakerSleepWindowInMilliseconds: Double => CommandBuilder,
-    context: js.Any => CommandBuilder,
-    errorHandler: js.Function1[/* error */ js.Any, Boolean] => CommandBuilder,
-    fallbackTo: js.Function2[/* error */ Error, /* args */ js.UndefOr[js.Array[js.Any]], js.Thenable[js.Any]] => CommandBuilder,
+    context: Any => CommandBuilder,
+    errorHandler: js.Function1[/* error */ Any, Boolean] => CommandBuilder,
+    fallbackTo: js.Function2[/* error */ js.Error, /* args */ js.UndefOr[js.Array[Any]], js.Thenable[Any]] => CommandBuilder,
     percentileWindowLength: Double => CommandBuilder,
     percentileWindowNumberOfBuckets: Double => CommandBuilder,
     requestVolumeRejectionThreshold: Double => CommandBuilder,
-    run: js.Function1[/* repeated */ js.Any, js.Thenable[js.Any]] => CommandBuilder,
+    run: js.Function1[/* repeated */ Any, js.Thenable[Any]] => CommandBuilder,
     statisticalWindowLength: Double => CommandBuilder,
     statisticalWindowNumberOfBuckets: Double => CommandBuilder,
     timeout: Double => CommandBuilder
@@ -79,12 +76,12 @@ object CommandBuilder {
     
     inline def setCircuitBreakerSleepWindowInMilliseconds(value: Double => CommandBuilder): Self = StObject.set(x, "circuitBreakerSleepWindowInMilliseconds", js.Any.fromFunction1(value))
     
-    inline def setContext(value: js.Any => CommandBuilder): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
+    inline def setContext(value: Any => CommandBuilder): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
     
-    inline def setErrorHandler(value: js.Function1[/* error */ js.Any, Boolean] => CommandBuilder): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+    inline def setErrorHandler(value: js.Function1[/* error */ Any, Boolean] => CommandBuilder): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
     
     inline def setFallbackTo(
-      value: js.Function2[/* error */ Error, /* args */ js.UndefOr[js.Array[js.Any]], js.Thenable[js.Any]] => CommandBuilder
+      value: js.Function2[/* error */ js.Error, /* args */ js.UndefOr[js.Array[Any]], js.Thenable[Any]] => CommandBuilder
     ): Self = StObject.set(x, "fallbackTo", js.Any.fromFunction1(value))
     
     inline def setPercentileWindowLength(value: Double => CommandBuilder): Self = StObject.set(x, "percentileWindowLength", js.Any.fromFunction1(value))
@@ -93,7 +90,7 @@ object CommandBuilder {
     
     inline def setRequestVolumeRejectionThreshold(value: Double => CommandBuilder): Self = StObject.set(x, "requestVolumeRejectionThreshold", js.Any.fromFunction1(value))
     
-    inline def setRun(value: js.Function1[/* repeated */ js.Any, js.Thenable[js.Any]] => CommandBuilder): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+    inline def setRun(value: js.Function1[/* repeated */ Any, js.Thenable[Any]] => CommandBuilder): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
     
     inline def setStatisticalWindowLength(value: Double => CommandBuilder): Self = StObject.set(x, "statisticalWindowLength", js.Any.fromFunction1(value))
     

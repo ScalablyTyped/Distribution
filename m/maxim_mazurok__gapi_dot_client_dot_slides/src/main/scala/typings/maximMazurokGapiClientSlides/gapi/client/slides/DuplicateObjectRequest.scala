@@ -21,7 +21,7 @@ trait DuplicateObjectRequest extends StObject {
   var objectIds: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.DuplicateObjectRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.DuplicateObjectRequest & TopLevel[Any]
   ] = js.undefined
 }
 object DuplicateObjectRequest {
@@ -40,7 +40,7 @@ object DuplicateObjectRequest {
     inline def setObjectIds(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.DuplicateObjectRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.DuplicateObjectRequest & TopLevel[Any]
     ): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
     inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)

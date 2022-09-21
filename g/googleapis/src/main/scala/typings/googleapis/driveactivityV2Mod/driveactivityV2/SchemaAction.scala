@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about the action.
-  */
 trait SchemaAction extends StObject {
   
   /**
-    * The actor responsible for this action (or empty if all actors are
-    * responsible).
+    * The actor responsible for this action (or empty if all actors are responsible).
     */
   var actor: js.UndefOr[SchemaActor] = js.undefined
   
@@ -21,9 +17,7 @@ trait SchemaAction extends StObject {
   var detail: js.UndefOr[SchemaActionDetail] = js.undefined
   
   /**
-    * The target this action affects (or empty if affecting all targets). This
-    * represents the state of the target immediately after this action
-    * occurred.
+    * The target this action affects (or empty if affecting all targets). This represents the state of the target immediately after this action occurred.
     */
   var target: js.UndefOr[SchemaTarget] = js.undefined
   
@@ -35,7 +29,7 @@ trait SchemaAction extends StObject {
   /**
     * The action occurred at this specific time.
     */
-  var timestamp: js.UndefOr[String] = js.undefined
+  var timestamp: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAction {
   
@@ -63,6 +57,8 @@ object SchemaAction {
     inline def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
     
     inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampNull: Self = StObject.set(x, "timestamp", null)
     
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }

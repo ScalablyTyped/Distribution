@@ -98,7 +98,7 @@ object Core {
   @js.native
   trait SearchSuggestionManager extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_requestingfocusonkeyboardinput(
       `type`: requestingfocusonkeyboardinput,
@@ -137,7 +137,7 @@ object Core {
     @JSName("onsuggestionsrequested")
     var onsuggestionsrequested_Original: TypedEventHandler[SearchSuggestionManager, SearchSuggestionsRequestedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_requestingfocusonkeyboardinput(
       `type`: requestingfocusonkeyboardinput,

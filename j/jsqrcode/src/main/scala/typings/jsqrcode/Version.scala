@@ -45,7 +45,7 @@ object Version {
     
     inline def setAlignmentPatternCenters(value: js.Array[Double]): Self = StObject.set(x, "AlignmentPatternCenters", value.asInstanceOf[js.Any])
     
-    inline def setAlignmentPatternCentersVarargs(value: Double*): Self = StObject.set(x, "AlignmentPatternCenters", js.Array(value :_*))
+    inline def setAlignmentPatternCentersVarargs(value: Double*): Self = StObject.set(x, "AlignmentPatternCenters", js.Array(value*))
     
     inline def setBuildFunctionPattern(value: () => BitMatrix): Self = StObject.set(x, "buildFunctionPattern", js.Any.fromFunction0(value))
     
@@ -53,7 +53,7 @@ object Version {
     
     inline def setEcBlocks(value: js.Array[ECBlocks]): Self = StObject.set(x, "ecBlocks", value.asInstanceOf[js.Any])
     
-    inline def setEcBlocksVarargs(value: ECBlocks*): Self = StObject.set(x, "ecBlocks", js.Array(value :_*))
+    inline def setEcBlocksVarargs(value: ECBlocks*): Self = StObject.set(x, "ecBlocks", js.Array(value*))
     
     inline def setGetECBlocksForLevel(value: ErrorCorrectionLevel => ECBlocks): Self = StObject.set(x, "getECBlocksForLevel", js.Any.fromFunction1(value))
     

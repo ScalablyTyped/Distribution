@@ -10,10 +10,10 @@ wNumb - JavaScript Number & Money formatting
 | ------------------ | :-------------: |
 | Full name          | wnumb |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 15 |
-| # downloads        | 974158 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 122324.66666666667 |
+| # stars            | 160.0 |
 
 ## Links
 - [Homepage](https://github.com/leongersen/wnumb#readme)

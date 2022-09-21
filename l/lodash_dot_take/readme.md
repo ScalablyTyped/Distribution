@@ -10,10 +10,10 @@ The lodash method `_.take` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.take |
 | Keywords           | lodash-modularized, take |
-| # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 565386 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 133739.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

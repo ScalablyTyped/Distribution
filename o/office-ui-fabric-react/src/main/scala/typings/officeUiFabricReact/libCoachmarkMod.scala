@@ -19,7 +19,7 @@ object libCoachmarkMod {
   
   @JSImport("office-ui-fabric-react/lib/Coachmark", "CoachmarkBase")
   @js.native
-  class CoachmarkBase protected ()
+  open class CoachmarkBase protected ()
     extends typings.officeUiFabricReact.coachmarkMod.CoachmarkBase {
     def this(props: ICoachmarkProps) = this()
   }

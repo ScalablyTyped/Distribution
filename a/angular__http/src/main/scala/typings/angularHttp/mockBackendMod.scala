@@ -4,8 +4,6 @@ import typings.angularHttp.mod.Connection
 import typings.angularHttp.mod.ConnectionBackend
 import typings.angularHttp.mod.Request
 import typings.angularHttp.mod.Response
-import typings.rxjs.mod.ReplaySubject
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +12,7 @@ object mockBackendMod {
   
   @JSImport("@angular/http/testing/src/mock_backend", "MockBackend")
   @js.native
-  class MockBackend () extends ConnectionBackend {
+  open class MockBackend () extends ConnectionBackend {
     
     /**
       * {@link EventEmitter}
@@ -23,7 +21,7 @@ object mockBackendMod {
       *
       * This property only exists in the mock implementation, not in real Backends.
       */
-    var connections: js.Any = js.native
+    var connections: Any = js.native
     
     /**
       * An array representation of `connections`. This array will be updated with each connection that
@@ -49,7 +47,7 @@ object mockBackendMod {
       *
       * This property only exists in the mock implementation, not in real Backends.
       */
-    var pendingConnections: js.Any = js.native
+    var pendingConnections: Any = js.native
     
     /**
       * Can be used in conjunction with `verifyNoPendingRequests` to resolve any not-yet-resolve
@@ -69,7 +67,7 @@ object mockBackendMod {
   
   @JSImport("@angular/http/testing/src/mock_backend", "MockConnection")
   @js.native
-  class MockConnection protected () extends Connection {
+  open class MockConnection protected () extends Connection {
     def this(req: Request) = this()
     
     /**
@@ -87,7 +85,7 @@ object mockBackendMod {
       *
       */
     def mockError(): Unit = js.native
-    def mockError(err: Error): Unit = js.native
+    def mockError(err: js.Error): Unit = js.native
     
     /**
       * Sends a mock response to the connection. This response is the value that is emitted to the
@@ -101,12 +99,5 @@ object mockBackendMod {
       */
     @JSName("request")
     var request_MockConnection: Request = js.native
-    
-    /**
-      * {@link EventEmitter} of {@link Response}. Can be subscribed to in order to be notified when a
-      * response is available.
-      */
-    @JSName("response")
-    var response_MockConnection: ReplaySubject[Response] = js.native
   }
 }

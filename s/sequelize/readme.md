@@ -4,16 +4,16 @@
 Typings are for version 4.28.0
 
 ## Library description:
-Multi dialect ORM for Node.JS
+Sequelize is a promise-based Node.js ORM tool for Postgres, MySQL, MariaDB, SQLite, Microsoft SQL Server, Amazon Redshift and Snowflake’s Data Cloud. It features solid transaction support, relations, eager and lazy loading, read replication and more.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sequelize |
-| Keywords           | mysql, mariadb, sqlite, postgresql, postgres, mssql, orm, nodejs, object relational mapper |
-| # releases         | 143 |
-| # dependents       | 2224 |
-| # downloads        | 37361137 |
-| # stars            | 341 |
+| Keywords           | mysql, mariadb, sqlite, postgresql, postgres, pg, mssql, db2, ibm_db, sql, oracledb, sqlserver, snowflake, orm, nodejs, object relational mapper, database, db |
+| # releases         | 63 |
+| # dependents       | 0.0 |
+| # downloads        | 5454568.666666667 |
+| # stars            | 26765.0 |
 
 ## Links
 - [Homepage](https://sequelize.org/)

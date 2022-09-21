@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SimplicationQueueSceneComponent")
 @js.native
-class SimplicationQueueSceneComponent protected ()
+open class SimplicationQueueSceneComponent protected ()
   extends StObject
      with typings.babylonjs.BABYLON.SimplicationQueueSceneComponent {
   /**
@@ -16,7 +16,7 @@ class SimplicationQueueSceneComponent protected ()
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /* private */ /* CompleteClass */
-  var _beforeCameraUpdate: js.Any = js.native
+  var _beforeCameraUpdate: Any = js.native
   
   /**
     * Disposes the component and the associated ressources.

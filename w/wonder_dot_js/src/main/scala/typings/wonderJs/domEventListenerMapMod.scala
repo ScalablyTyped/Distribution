@@ -11,19 +11,19 @@ object domEventListenerMapMod {
   
   @JSImport("wonder.js/dist/es2015/event/structure/DomEventListenerMap", "DomEventListenerMap")
   @js.native
-  class DomEventListenerMap () extends EventListenerMap {
+  open class DomEventListenerMap () extends EventListenerMap {
     
-    def appendChild(dom: HTMLElement, eventName: EEventName, data: js.Any): Unit = js.native
+    def appendChild(dom: HTMLElement, eventName: EEventName, data: Any): Unit = js.native
     
-    def getChild(dom: HTMLElement): js.Any = js.native
-    def getChild(dom: HTMLElement, eventName: EEventName): js.Any = js.native
+    def getChild(dom: HTMLElement): Any = js.native
+    def getChild(dom: HTMLElement, eventName: EEventName): Any = js.native
     
     def hasChild(dom: HTMLElement, eventName: EEventName): Boolean = js.native
     
-    def removeChild(dom: HTMLElement, eventName: EEventName): js.Any = js.native
-    def removeChild(dom: HTMLElement, eventName: EEventName, handler: js.Function): js.Any = js.native
-    def removeChild(eventName: EEventName): js.Any = js.native
-    def removeChild(eventName: EEventName, handler: js.Function): js.Any = js.native
+    def removeChild(dom: HTMLElement, eventName: EEventName): Any = js.native
+    def removeChild(dom: HTMLElement, eventName: EEventName, handler: js.Function): Any = js.native
+    def removeChild(eventName: EEventName): Any = js.native
+    def removeChild(eventName: EEventName, handler: js.Function): Any = js.native
   }
   /* static members */
   object DomEventListenerMap {

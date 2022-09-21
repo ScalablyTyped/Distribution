@@ -10,10 +10,10 @@ object youtubeSearchedForMod {
   
   @JSImport("material-ui/svg-icons/action/youtube-searched-for", JSImport.Default)
   @js.native
-  class default () extends ActionYoutubeSearchedFor
+  open class default () extends ActionYoutubeSearchedFor
   
   @JSImport("material-ui/svg-icons/action/youtube-searched-for", "ActionYoutubeSearchedFor")
   @js.native
-  class ActionYoutubeSearchedFor ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionYoutubeSearchedFor ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

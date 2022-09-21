@@ -53,7 +53,7 @@ object ActivatedRule {
     
     inline def setExcludedRulesUndefined: Self = StObject.set(x, "ExcludedRules", js.undefined)
     
-    inline def setExcludedRulesVarargs(value: ExcludedRule*): Self = StObject.set(x, "ExcludedRules", js.Array(value :_*))
+    inline def setExcludedRulesVarargs(value: ExcludedRule*): Self = StObject.set(x, "ExcludedRules", js.Array(value*))
     
     inline def setOverrideAction(value: WafOverrideAction): Self = StObject.set(x, "OverrideAction", value.asInstanceOf[js.Any])
     

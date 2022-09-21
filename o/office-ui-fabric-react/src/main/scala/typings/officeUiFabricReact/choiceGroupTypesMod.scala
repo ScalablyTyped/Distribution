@@ -290,7 +290,7 @@ object choiceGroupTypesMod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: IChoiceGroupOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: IChoiceGroupOption*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setSelectedKey(value: String | Double): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
       

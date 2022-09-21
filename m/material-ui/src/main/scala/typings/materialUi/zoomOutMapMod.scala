@@ -10,10 +10,10 @@ object zoomOutMapMod {
   
   @JSImport("material-ui/svg-icons/maps/zoom-out-map", JSImport.Default)
   @js.native
-  class default () extends MapsZoomOutMap
+  open class default () extends MapsZoomOutMap
   
   @JSImport("material-ui/svg-icons/maps/zoom-out-map", "MapsZoomOutMap")
   @js.native
-  class MapsZoomOutMap ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsZoomOutMap ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

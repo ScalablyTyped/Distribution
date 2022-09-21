@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "UpdateSubscriptionRequest")
 @js.native
-class UpdateSubscriptionRequest () extends StObject {
+open class UpdateSubscriptionRequest () extends StObject {
   
   /**
     * The subscription object containing the current version, and fields to update. Unset fields will be left at their

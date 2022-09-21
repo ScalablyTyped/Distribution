@@ -1,7 +1,7 @@
 
 # Scala.js typings for paper
 
-Typings are for version 0.12.11
+Typings are for version 0.12.15
 
 ## Library description:
 The Swiss Army Knife of Vector Graphics Scripting
@@ -10,10 +10,10 @@ The Swiss Army Knife of Vector Graphics Scripting
 | ------------------ | :-------------: |
 | Full name          | paper |
 | Keywords           | vector, graphic, graphics, 2d, geometry, bezier, curve, curves, path, paths, canvas, svg, paper, paper.js, paperjs |
-| # releases         | 12 |
-| # dependents       | 62 |
-| # downloads        | 756658 |
-| # stars            | 12 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 115150.66666666667 |
+| # stars            | 13233.0 |
 
 ## Links
 - [Homepage](http://paperjs.org)

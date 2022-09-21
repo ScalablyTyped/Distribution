@@ -1,16 +1,15 @@
 package typings.readableStream.mod
 
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.BufferEncoding
 import typings.readableStream.anon.Chunk
 import typings.readableStream.anon.Encoding
 import typings.std.ArrayLike
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ==== _stream_duplex ====
-/* Inlined readable-stream.readable-stream.ReadableOptions & readable-stream.readable-stream.WritableOptions & {  allowHalfOpen :boolean | undefined,   readable :boolean | undefined,   writable :boolean | undefined,   read :(this : readable-stream.readable-stream.Duplex, size : number): void | undefined,   write :(this : readable-stream.readable-stream.Duplex, chunk : any, encoding : node.BufferEncoding, callback : (error : std.Error | null | undefined): void): void | undefined,   writev :(this : readable-stream.readable-stream.Duplex, chunks : std.Array<{  chunk :any,   encoding :node.BufferEncoding}>, callback : (error : std.Error | null | undefined): void): void | undefined,   final :(this : readable-stream.readable-stream.Duplex, callback : (error : std.Error | null | undefined): void): void | undefined,   destroy :(this : readable-stream.readable-stream.Duplex, error : std.Error | null, callback : (error : std.Error | null): void): void | undefined} */
+/* Inlined readable-stream.readable-stream.ReadableOptions & readable-stream.readable-stream.WritableOptions & {  allowHalfOpen :boolean | undefined,   readable :boolean | undefined,   writable :boolean | undefined,   read :(this : readable-stream.readable-stream.Duplex, size : number): void | undefined,   write :(this : readable-stream.readable-stream.Duplex, chunk : any, encoding : node.buffer.<global>.BufferEncoding, callback : (error : std.Error | null | undefined): void): void | undefined,   writev :(this : readable-stream.readable-stream.Duplex, chunks : std.Array<{  chunk :any,   encoding :node.buffer.<global>.BufferEncoding}>, callback : (error : std.Error | null | undefined): void): void | undefined,   final :(this : readable-stream.readable-stream.Duplex, callback : (error : std.Error | null | undefined): void): void | undefined,   destroy :(this : readable-stream.readable-stream.Duplex, error : std.Error | null, callback : (error : std.Error | null): void): void | undefined} */
 trait DuplexOptions extends StObject {
   
   var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
@@ -21,23 +20,23 @@ trait DuplexOptions extends StObject {
   
   var destroy: (js.UndefOr[
     js.ThisFunction2[
-      /* this */ _Readable, 
-      /* error */ Error | Null, 
-      /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+      /* this */ IReadable, 
+      /* error */ js.Error | Null, 
+      /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
       Unit
     ]
   ]) & (js.UndefOr[
     js.ThisFunction2[
-      /* this */ Writable, 
-      /* error */ Error | Null, 
-      /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+      /* this */ IWritable, 
+      /* error */ js.Error | Null, 
+      /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
       Unit
     ]
   ]) & (js.UndefOr[
     js.ThisFunction2[
       /* this */ Duplex, 
-      /* error */ Error | Null, 
-      /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+      /* error */ js.Error | Null, 
+      /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
       Unit
     ]
   ])
@@ -46,14 +45,14 @@ trait DuplexOptions extends StObject {
   
   var `final`: (js.UndefOr[
     js.ThisFunction1[
-      /* this */ Writable, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+      /* this */ IWritable, 
+      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
     ]
   ]) & (js.UndefOr[
     js.ThisFunction1[
       /* this */ Duplex, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
     ]
   ])
@@ -62,7 +61,7 @@ trait DuplexOptions extends StObject {
   
   var objectMode: js.UndefOr[Boolean] = js.undefined
   
-  var read: (js.UndefOr[js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]])
+  var read: (js.UndefOr[js.ThisFunction1[/* this */ IReadable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]])
   
   var readable: js.UndefOr[Boolean] = js.undefined
   
@@ -78,34 +77,34 @@ trait DuplexOptions extends StObject {
   
   var write: (js.UndefOr[
     js.ThisFunction3[
-      /* this */ Writable, 
-      /* chunk */ js.Any, 
+      /* this */ IWritable, 
+      /* chunk */ Any, 
       /* encoding */ BufferEncoding | String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
     ]
   ]) & (js.UndefOr[
     js.ThisFunction3[
       /* this */ Duplex, 
-      /* chunk */ js.Any, 
+      /* chunk */ Any, 
       /* encoding */ BufferEncoding, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
     ]
   ])
   
   var writev: (js.UndefOr[
     js.ThisFunction2[
-      /* this */ Writable, 
+      /* this */ IWritable, 
       /* chunk */ ArrayLike[Chunk], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
     ]
   ]) & (js.UndefOr[
     js.ThisFunction2[
       /* this */ Duplex, 
       /* chunks */ js.Array[Encoding], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
     ]
   ])
@@ -115,69 +114,69 @@ object DuplexOptions {
   inline def apply(
     destroy: (js.UndefOr[
       js.ThisFunction2[
-        /* this */ _Readable, 
-        /* error */ Error | Null, 
-        /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+        /* this */ IReadable, 
+        /* error */ js.Error | Null, 
+        /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
         Unit
       ]
     ]) & (js.UndefOr[
       js.ThisFunction2[
-        /* this */ Writable, 
-        /* error */ Error | Null, 
-        /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+        /* this */ IWritable, 
+        /* error */ js.Error | Null, 
+        /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
         Unit
       ]
     ]) & (js.UndefOr[
       js.ThisFunction2[
         /* this */ Duplex, 
-        /* error */ Error | Null, 
-        /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+        /* error */ js.Error | Null, 
+        /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
         Unit
       ]
     ]),
     `final`: (js.UndefOr[
       js.ThisFunction1[
-        /* this */ Writable, 
-        /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+        /* this */ IWritable, 
+        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
         Unit
       ]
     ]) & (js.UndefOr[
       js.ThisFunction1[
         /* this */ Duplex, 
-        /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
         Unit
       ]
     ]),
-    read: (js.UndefOr[js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]]),
+    read: (js.UndefOr[js.ThisFunction1[/* this */ IReadable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]]),
     write: (js.UndefOr[
       js.ThisFunction3[
-        /* this */ Writable, 
-        /* chunk */ js.Any, 
+        /* this */ IWritable, 
+        /* chunk */ Any, 
         /* encoding */ BufferEncoding | String, 
-        /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
         Unit
       ]
     ]) & (js.UndefOr[
       js.ThisFunction3[
         /* this */ Duplex, 
-        /* chunk */ js.Any, 
+        /* chunk */ Any, 
         /* encoding */ BufferEncoding, 
-        /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
         Unit
       ]
     ]),
     writev: (js.UndefOr[
       js.ThisFunction2[
-        /* this */ Writable, 
+        /* this */ IWritable, 
         /* chunk */ ArrayLike[Chunk], 
-        /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
         Unit
       ]
     ]) & (js.UndefOr[
       js.ThisFunction2[
         /* this */ Duplex, 
         /* chunks */ js.Array[Encoding], 
-        /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
         Unit
       ]
     ])
@@ -204,23 +203,23 @@ object DuplexOptions {
     inline def setDestroy(
       value: (js.UndefOr[
           js.ThisFunction2[
-            /* this */ _Readable, 
-            /* error */ Error | Null, 
-            /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+            /* this */ IReadable, 
+            /* error */ js.Error | Null, 
+            /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
             Unit
           ]
         ]) & (js.UndefOr[
           js.ThisFunction2[
-            /* this */ Writable, 
-            /* error */ Error | Null, 
-            /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+            /* this */ IWritable, 
+            /* error */ js.Error | Null, 
+            /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
             Unit
           ]
         ]) & (js.UndefOr[
           js.ThisFunction2[
             /* this */ Duplex, 
-            /* error */ Error | Null, 
-            /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+            /* error */ js.Error | Null, 
+            /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
             Unit
           ]
         ])
@@ -233,14 +232,14 @@ object DuplexOptions {
     inline def setFinal(
       value: (js.UndefOr[
           js.ThisFunction1[
-            /* this */ Writable, 
-            /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+            /* this */ IWritable, 
+            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
             Unit
           ]
         ]) & (js.UndefOr[
           js.ThisFunction1[
             /* this */ Duplex, 
-            /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
             Unit
           ]
         ])
@@ -255,7 +254,7 @@ object DuplexOptions {
     inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
     
     inline def setRead(
-      value: (js.UndefOr[js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]])
+      value: (js.UndefOr[js.ThisFunction1[/* this */ IReadable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]])
     ): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
@@ -285,18 +284,18 @@ object DuplexOptions {
     inline def setWrite(
       value: (js.UndefOr[
           js.ThisFunction3[
-            /* this */ Writable, 
-            /* chunk */ js.Any, 
+            /* this */ IWritable, 
+            /* chunk */ Any, 
             /* encoding */ BufferEncoding | String, 
-            /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
             Unit
           ]
         ]) & (js.UndefOr[
           js.ThisFunction3[
             /* this */ Duplex, 
-            /* chunk */ js.Any, 
+            /* chunk */ Any, 
             /* encoding */ BufferEncoding, 
-            /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
             Unit
           ]
         ])
@@ -305,16 +304,16 @@ object DuplexOptions {
     inline def setWritev(
       value: (js.UndefOr[
           js.ThisFunction2[
-            /* this */ Writable, 
+            /* this */ IWritable, 
             /* chunk */ ArrayLike[Chunk], 
-            /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
             Unit
           ]
         ]) & (js.UndefOr[
           js.ThisFunction2[
             /* this */ Duplex, 
             /* chunks */ js.Array[Encoding], 
-            /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
             Unit
           ]
         ])

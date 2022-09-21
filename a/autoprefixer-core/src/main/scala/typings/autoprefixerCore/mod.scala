@@ -33,7 +33,7 @@ object mod extends Shortcut {
       
       inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
       
-      inline def setBrowsersVarargs(value: String*): Self = StObject.set(x, "browsers", js.Array(value :_*))
+      inline def setBrowsersVarargs(value: String*): Self = StObject.set(x, "browsers", js.Array(value*))
       
       inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
       
@@ -52,7 +52,7 @@ object mod extends Shortcut {
     
     def info(): String = js.native
     
-    var postcss: js.Any = js.native
+    var postcss: Any = js.native
     
     def process(css: String): Result = js.native
     def process(css: String, opts: Options): Result = js.native
@@ -100,7 +100,7 @@ object mod extends Shortcut {
     
     def info(): String = js.native
     
-    var postcss: js.Any = js.native
+    var postcss: Any = js.native
     
     def process(css: String): Result = js.native
     def process(css: String, opts: Options): Result = js.native

@@ -1,25 +1,25 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.radioMod.default
-import typings.antDesignReactNative.radioRadioMod.RadioNativeProps
+import org.scalablytyped.runtime.Shortcut
+import typings.antDesignReactNative.radioItemMod.default
+import typings.antDesignReactNative.radioMod.CompoundedComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native", "Radio")
-@js.native
-class Radio protected () extends default {
-  def this(props: RadioNativeProps, context: js.Any) = this()
-}
-/* static members */
-object Radio {
+object Radio extends Shortcut {
   
   @JSImport("@ant-design/react-native", "Radio")
   @js.native
-  val ^ : js.Any = js.native
+  val ^ : CompoundedComponent = js.native
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@ant-design/react-native", "Radio.RadioItem")
   @js.native
-  def RadioItem: js.Any = js.native
-  inline def RadioItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
+  open class RadioItem () extends default
+  
+  type _To = CompoundedComponent
+  
+  /* This means you don't have to write `^`, but can instead just say `Radio.foo` */
+  override def _to: CompoundedComponent = ^
 }

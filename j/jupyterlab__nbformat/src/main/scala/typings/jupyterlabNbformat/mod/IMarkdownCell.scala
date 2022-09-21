@@ -21,6 +21,14 @@ trait IMarkdownCell
     */
   @JSName("cell_type")
   var cell_type_IMarkdownCell: markdown
+  
+  /**
+    * A string field representing the identifier of this particular cell.
+    *
+    * Notebook format 4.4 requires no id field, but format 4.5 requires an id
+    * field. We need to handle both cases, so we make id optional here.
+    */
+  var id: js.UndefOr[String] = js.undefined
 }
 object IMarkdownCell {
   
@@ -36,5 +44,9 @@ object IMarkdownCell {
     inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     inline def setCell_type(value: markdown): Self = StObject.set(x, "cell_type", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

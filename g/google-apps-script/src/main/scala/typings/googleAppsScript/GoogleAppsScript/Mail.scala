@@ -56,7 +56,7 @@ object Mail {
       
       inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
       
-      inline def setAttachmentsVarargs(value: BlobSource*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: BlobSource*): Self = StObject.set(x, "attachments", js.Array(value*))
       
       inline def setBcc(value: String): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       

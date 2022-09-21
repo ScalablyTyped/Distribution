@@ -18,6 +18,8 @@ trait PublisherProfileApiProto extends StObject {
   /** Exchange where this publisher profile is from. E.g. AdX, Rubicon etc... */
   var exchange: js.UndefOr[String] = js.undefined
   
+  var forecastInventory: js.UndefOr[String] = js.undefined
+  
   /** Link to publisher's Google+ page. */
   var googlePlusLink: js.UndefOr[String] = js.undefined
   
@@ -47,10 +49,10 @@ trait PublisherProfileApiProto extends StObject {
   /** Programmatic contact for the publisher profile. */
   var programmaticContact: js.UndefOr[String] = js.undefined
   
-  /** The list of app IDs represented in this pubisher profile. Empty if this is a parent profile. Deprecated in favor of publisher_app. */
+  /** The list of app IDs represented in this publisher profile. Empty if this is a parent profile. Deprecated in favor of publisher_app. */
   var publisherAppIds: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** The list of apps represented in this pubisher profile. Empty if this is a parent profile. */
+  /** The list of apps represented in this publisher profile. Empty if this is a parent profile. */
   var publisherApps: js.UndefOr[js.Array[MobileApplication]] = js.undefined
   
   /** The list of domains represented in this publisher profile. Empty if this is a parent profile. */
@@ -102,6 +104,10 @@ object PublisherProfileApiProto {
     
     inline def setExchangeUndefined: Self = StObject.set(x, "exchange", js.undefined)
     
+    inline def setForecastInventory(value: String): Self = StObject.set(x, "forecastInventory", value.asInstanceOf[js.Any])
+    
+    inline def setForecastInventoryUndefined: Self = StObject.set(x, "forecastInventory", js.undefined)
+    
     inline def setGooglePlusLink(value: String): Self = StObject.set(x, "googlePlusLink", value.asInstanceOf[js.Any])
     
     inline def setGooglePlusLinkUndefined: Self = StObject.set(x, "googlePlusLink", js.undefined)
@@ -146,19 +152,19 @@ object PublisherProfileApiProto {
     
     inline def setPublisherAppIdsUndefined: Self = StObject.set(x, "publisherAppIds", js.undefined)
     
-    inline def setPublisherAppIdsVarargs(value: String*): Self = StObject.set(x, "publisherAppIds", js.Array(value :_*))
+    inline def setPublisherAppIdsVarargs(value: String*): Self = StObject.set(x, "publisherAppIds", js.Array(value*))
     
     inline def setPublisherApps(value: js.Array[MobileApplication]): Self = StObject.set(x, "publisherApps", value.asInstanceOf[js.Any])
     
     inline def setPublisherAppsUndefined: Self = StObject.set(x, "publisherApps", js.undefined)
     
-    inline def setPublisherAppsVarargs(value: MobileApplication*): Self = StObject.set(x, "publisherApps", js.Array(value :_*))
+    inline def setPublisherAppsVarargs(value: MobileApplication*): Self = StObject.set(x, "publisherApps", js.Array(value*))
     
     inline def setPublisherDomains(value: js.Array[String]): Self = StObject.set(x, "publisherDomains", value.asInstanceOf[js.Any])
     
     inline def setPublisherDomainsUndefined: Self = StObject.set(x, "publisherDomains", js.undefined)
     
-    inline def setPublisherDomainsVarargs(value: String*): Self = StObject.set(x, "publisherDomains", js.Array(value :_*))
+    inline def setPublisherDomainsVarargs(value: String*): Self = StObject.set(x, "publisherDomains", js.Array(value*))
     
     inline def setPublisherProfileId(value: String): Self = StObject.set(x, "publisherProfileId", value.asInstanceOf[js.Any])
     
@@ -188,6 +194,6 @@ object PublisherProfileApiProto {
     
     inline def setTopHeadlinesUndefined: Self = StObject.set(x, "topHeadlines", js.undefined)
     
-    inline def setTopHeadlinesVarargs(value: String*): Self = StObject.set(x, "topHeadlines", js.Array(value :_*))
+    inline def setTopHeadlinesVarargs(value: String*): Self = StObject.set(x, "topHeadlines", js.Array(value*))
   }
 }

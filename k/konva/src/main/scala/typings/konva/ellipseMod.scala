@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ellipseMod {
   
-  @JSImport("konva/types/shapes/Ellipse", "Ellipse")
+  @JSImport("konva/lib/shapes/Ellipse", "Ellipse")
   @js.native
-  class Ellipse () extends Shape[EllipseConfig] {
+  open class Ellipse () extends Shape[EllipseConfig] {
     def this(config: EllipseConfig) = this()
     
-    def _sceneFunc(context: js.Any): Unit = js.native
+    def _sceneFunc(context: Any): Unit = js.native
     
     def getHeight(): Double = js.native
     
@@ -37,9 +37,9 @@ object ellipseMod {
     @JSName("radius")
     var radius_Original: GetSet[Vector2d, this.type] = js.native
     
-    def setHeight(height: js.Any): Unit = js.native
+    def setHeight(height: Any): Unit = js.native
     
-    def setWidth(width: js.Any): Unit = js.native
+    def setWidth(width: Any): Unit = js.native
   }
   
   trait EllipseConfig

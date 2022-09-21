@@ -11,7 +11,7 @@ object domEventBinderMod {
   
   @JSImport("wonder.js/dist/es2015/event/binder/DomEventBinder", "DomEventBinder")
   @js.native
-  class DomEventBinder () extends EventBinder {
+  open class DomEventBinder () extends EventBinder {
     
     def off(): Unit = js.native
     def off(dom: HTMLElement): Unit = js.native
@@ -38,6 +38,6 @@ object domEventBinderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+    inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
   }
 }

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object abortControllerMod {
   
-  @JSImport("@aws-sdk/abort-controller/dist/cjs/AbortController", "AbortController")
+  @JSImport("@aws-sdk/abort-controller/dist-types/AbortController", "AbortController")
   @js.native
-  class AbortController ()
+  open class AbortController ()
     extends StObject
        with typings.awsSdkTypes.abortMod.AbortController {
     

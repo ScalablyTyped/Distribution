@@ -97,13 +97,13 @@ object CaStore {
     
     inline def setCaStoreUndefined: Self = StObject.set(x, "caStore", js.undefined)
     
-    inline def setCaStoreVarargs(value: Certificate*): Self = StObject.set(x, "caStore", js.Array(value :_*))
+    inline def setCaStoreVarargs(value: Certificate*): Self = StObject.set(x, "caStore", js.Array(value*))
     
     inline def setCipherSuites(value: js.Array[CipherSuite]): Self = StObject.set(x, "cipherSuites", value.asInstanceOf[js.Any])
     
     inline def setCipherSuitesUndefined: Self = StObject.set(x, "cipherSuites", js.undefined)
     
-    inline def setCipherSuitesVarargs(value: CipherSuite*): Self = StObject.set(x, "cipherSuites", js.Array(value :_*))
+    inline def setCipherSuitesVarargs(value: CipherSuite*): Self = StObject.set(x, "cipherSuites", js.Array(value*))
     
     inline def setClosed(value: Connection => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
     

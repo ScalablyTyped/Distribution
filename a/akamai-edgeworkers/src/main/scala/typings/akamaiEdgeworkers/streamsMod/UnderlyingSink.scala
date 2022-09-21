@@ -26,7 +26,7 @@ object UnderlyingSink {
   
   extension [Self <: UnderlyingSink[?], W](x: Self & UnderlyingSink[W]) {
     
-    inline def setAbort(value: /* reason */ js.Any => Unit | js.Thenable[Unit]): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
+    inline def setAbort(value: /* reason */ Any => Unit | js.Thenable[Unit]): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
     
     inline def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
     

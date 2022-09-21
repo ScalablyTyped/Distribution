@@ -79,7 +79,7 @@ object XImageConsumer {
     acquire: () => Unit,
     complete: (Double, XImageProducer) => Unit,
     init: (Double, Double) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setColorModel: (Double, SeqEquiv[Double], Double, Double, Double, Double) => Unit,
     setPixelsByBytes: (Double, Double, Double, Double, SeqEquiv[Double], Double, Double) => Unit,

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formatterMod {
   
-  inline def apply(): js.Function1[/* input */ js.UndefOr[Messages], String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* input */ js.UndefOr[Messages], String]]
-  inline def apply(options: DefaultOptions): js.Function1[/* input */ js.UndefOr[Messages], String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* input */ js.UndefOr[Messages], String]]
+  inline def apply(): js.Function1[/* input */ Messages, String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* input */ Messages, String]]
+  inline def apply(options: DefaultOptions): js.Function1[/* input */ Messages, String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* input */ Messages, String]]
   
   @JSImport("postcss-reporter/lib/formatter", JSImport.Namespace)
   @js.native

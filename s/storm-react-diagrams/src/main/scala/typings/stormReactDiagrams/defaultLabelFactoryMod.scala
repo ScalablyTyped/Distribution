@@ -10,5 +10,5 @@ object defaultLabelFactoryMod {
   
   @JSImport("storm-react-diagrams/dist/src/defaults/factories/DefaultLabelFactory", "DefaultLabelFactory")
   @js.native
-  class DefaultLabelFactory () extends AbstractLabelFactory[DefaultLabelModel]
+  open class DefaultLabelFactory () extends AbstractLabelFactory[DefaultLabelModel]
 }

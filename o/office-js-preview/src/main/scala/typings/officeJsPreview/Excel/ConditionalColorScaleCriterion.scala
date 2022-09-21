@@ -12,33 +12,33 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a color scale criterion which contains a type, value, and a color.
   *
-  * Represents a Color Scale Criterion which contains a type, value, and a color.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 trait ConditionalColorScaleCriterion extends StObject {
   
   /**
-    *
     * HTML color code representation of the color scale color (e.g., #FF0000 represents Red).
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var color: js.UndefOr[String] = js.undefined
   
   /**
+    * A number, a formula, or `null` (if `type` is `lowestValue`).
     *
-    * A number, a formula, or null (if Type is LowestValue).
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var formula: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * What the criterion conditional formula should be based on.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var `type`: ConditionalFormatColorCriterionType | Invalid | LowestValue | HighestValue | Number | Percent | Formula | Percentile

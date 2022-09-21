@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.Source")
 @js.native
-class Source protected () extends Object {
+open class Source protected () extends Object {
   /**
     * @classdesc
     * Abstract base class; normally only used for creating subclasses and not

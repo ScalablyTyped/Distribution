@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 矩形
   * @param options 选项
   */
-class Rectangle[ExtraData] ()
+open class Rectangle[ExtraData] ()
   extends StObject
      with typings.amapJsApi.AMap.Rectangle[ExtraData] {
   def this(options: Options[ExtraData]) = this()

@@ -1,6 +1,5 @@
 package typings.braintree.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ trait AuthorizationAdjustment extends StObject {
   
   var success: Boolean
   
-  var timestamp: Date
+  var timestamp: js.Date
 }
 object AuthorizationAdjustment {
   
@@ -27,7 +26,7 @@ object AuthorizationAdjustment {
     processorResponseText: String,
     processorResponseType: String,
     success: Boolean,
-    timestamp: Date
+    timestamp: js.Date
   ): AuthorizationAdjustment = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], processorResponseCode = processorResponseCode.asInstanceOf[js.Any], processorResponseText = processorResponseText.asInstanceOf[js.Any], processorResponseType = processorResponseType.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationAdjustment]
@@ -45,6 +44,6 @@ object AuthorizationAdjustment {
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

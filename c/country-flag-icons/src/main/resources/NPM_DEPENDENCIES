@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "country-flag-icons" : "1.5.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "country-flag-icons" : "1.5.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

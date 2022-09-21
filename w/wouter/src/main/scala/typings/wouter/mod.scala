@@ -14,10 +14,10 @@ import typings.wouter.matcherMod.DefaultParams
 import typings.wouter.matcherMod.Match
 import typings.wouter.matcherMod.MatcherFn
 import typings.wouter.matcherMod.Params
-import typings.wouter.wouterUseLocationMod.BaseLocationHook
-import typings.wouter.wouterUseLocationMod.HookNavigationOptions
-import typings.wouter.wouterUseLocationMod.HookReturnValue
-import typings.wouter.wouterUseLocationMod.Path
+import typings.wouter.useLocationMod.BaseLocationHook
+import typings.wouter.useLocationMod.HookNavigationOptions
+import typings.wouter.useLocationMod.HookReturnValue
+import typings.wouter.useLocationMod.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,10 +29,10 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def Link[H /* <: BaseLocationHook */](props: PropsWithChildren[LinkProps[H]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def Link[H /* <: BaseLocationHook */](props: PropsWithChildren[LinkProps[H]], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Link")(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  inline def Link[H /* <: BaseLocationHook */](props: PropsWithChildren[LinkProps[H]], context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Link")(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
   
   inline def Redirect[H /* <: BaseLocationHook */](props: PropsWithChildren[RedirectProps[H]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Redirect")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def Redirect[H /* <: BaseLocationHook */](props: PropsWithChildren[RedirectProps[H]], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Redirect")(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  inline def Redirect[H /* <: BaseLocationHook */](props: PropsWithChildren[RedirectProps[H]], context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Redirect")(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
   
   inline def Route[T /* <: DefaultParams */](props: RouteProps[T]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
@@ -52,7 +52,7 @@ object mod {
   
   type LinkProps[H /* <: BaseLocationHook */] = OmitAnchorHTMLAttributesH & NavigationalProps[H]
   
-  type NavigationalProps[H /* <: BaseLocationHook */] = (Href | To) & HookNavigationOptions[H]
+  type NavigationalProps[H /* <: BaseLocationHook */] = (Href & HookNavigationOptions[H]) | (To & HookNavigationOptions[H])
   
   type RedirectProps[H /* <: BaseLocationHook */] = NavigationalProps[H] & Children
   
@@ -152,7 +152,7 @@ object mod {
       
       inline def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       

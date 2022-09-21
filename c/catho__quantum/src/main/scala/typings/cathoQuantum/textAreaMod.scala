@@ -1,9 +1,14 @@
 package typings.cathoQuantum
 
+import typings.cathoQuantum.anon.BaseFontSizeColorsSpacing
+import typings.cathoQuantum.anon.InitialRows
+import typings.cathoQuantum.cathoQuantumStrings.dark
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
 import typings.react.mod.Component
+import typings.react.mod.TextareaHTMLAttributes
 import typings.std.HTMLInputElement
+import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,30 +17,37 @@ object textAreaMod {
   
   @JSImport("@catho/quantum/TextArea", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TextAreaProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TextAreaProps, js.Object, Any]
   
-  type TextArea = Component[TextAreaProps, js.Object, js.Any]
+  type TextArea = Component[TextAreaProps, js.Object, Any]
   
-  trait TextAreaProps extends StObject {
+  trait TextAreaProps
+    extends StObject
+       with TextareaHTMLAttributes[HTMLTextAreaElement] {
     
-    var disabled: js.UndefOr[Boolean] = js.undefined
+    var autoResizeConfig: js.UndefOr[InitialRows] = js.undefined
     
     var error: js.UndefOr[String] = js.undefined
     
     var helperText: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String | Double] = js.undefined
+    @JSName("id")
+    var id_TextAreaProps: js.UndefOr[String | Double] = js.undefined
+    
+    var isAutoResize: js.UndefOr[Boolean] = js.undefined
     
     var label: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
+    @JSName("onChange")
+    var onChange_TextAreaProps: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.undefined
+    var skin: js.UndefOr[typings.cathoQuantum.cathoQuantumStrings.default | dark] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.undefined
+    var theme: js.UndefOr[BaseFontSizeColorsSpacing] = js.undefined
     
-    var value: js.UndefOr[String] = js.undefined
+    @JSName("value")
+    var value_TextAreaProps: js.UndefOr[String] = js.undefined
   }
   object TextAreaProps {
     
@@ -46,9 +58,9 @@ object textAreaMod {
     
     extension [Self <: TextAreaProps](x: Self) {
       
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setAutoResizeConfig(value: InitialRows): Self = StObject.set(x, "autoResizeConfig", value.asInstanceOf[js.Any])
       
-      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setAutoResizeConfigUndefined: Self = StObject.set(x, "autoResizeConfig", js.undefined)
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -62,6 +74,10 @@ object textAreaMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
+      inline def setIsAutoResize(value: Boolean): Self = StObject.set(x, "isAutoResize", value.asInstanceOf[js.Any])
+      
+      inline def setIsAutoResizeUndefined: Self = StObject.set(x, "isAutoResize", js.undefined)
+      
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
@@ -70,13 +86,13 @@ object textAreaMod {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setSkin(value: typings.cathoQuantum.cathoQuantumStrings.default | dark): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setTheme(value: BaseFontSizeColorsSpacing): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

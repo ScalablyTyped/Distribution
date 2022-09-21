@@ -50,7 +50,7 @@ object CellAnnotation {
     getText: () => XText,
     insertControlCharacter: (XTextRange, Double, Boolean) => Unit,
     insertString: (XTextRange, String, Boolean) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setIsVisible: Boolean => Unit,
     setParent: XInterface => Unit,

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rn-swipeable-panel" : "1.2.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rn-swipeable-panel" : "1.2.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

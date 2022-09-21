@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetTranscriptionJobResponse extends StObject {
   
   /**
-    * An object that contains the results of the transcription job.
+    * Provides detailed information about the specified transcription job, including job status and, if applicable, failure reason.
     */
   var TranscriptionJob: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJob] = js.undefined
 }

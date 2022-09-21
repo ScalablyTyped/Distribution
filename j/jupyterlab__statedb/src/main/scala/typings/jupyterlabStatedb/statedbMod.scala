@@ -26,51 +26,51 @@ object statedbMod {
     *
     * @param options - The instantiation options for a state database.
     */
-  class StateDB[T /* <: ReadonlyPartialJSONValue */] ()
+  open class StateDB[T /* <: ReadonlyPartialJSONValue */] ()
     extends StObject
        with IStateDB[T] {
     def this(options: IOptions[T]) = this()
     
-    /* private */ var _changed: js.Any = js.native
+    /* private */ var _changed: Any = js.native
     
     /**
       * Clear the entire database.
       */
-    /* private */ var _clear: js.Any = js.native
+    /* private */ var _clear: Any = js.native
     
-    /* private */ var _connector: js.Any = js.native
+    /* private */ var _connector: Any = js.native
     
     /**
       * Fetch a value from the database.
       */
-    /* private */ var _fetch: js.Any = js.native
+    /* private */ var _fetch: Any = js.native
     
     /**
       * Fetch a list from the database.
       */
-    /* private */ var _list: js.Any = js.native
+    /* private */ var _list: Any = js.native
     
     /**
       * Merge data into the state database.
       */
-    /* private */ var _merge: js.Any = js.native
+    /* private */ var _merge: Any = js.native
     
     /**
       * Overwrite the entire database with new contents.
       */
-    /* private */ var _overwrite: js.Any = js.native
+    /* private */ var _overwrite: Any = js.native
     
-    /* private */ var _ready: js.Any = js.native
+    /* private */ var _ready: Any = js.native
     
     /**
       * Remove a key in the database.
       */
-    /* private */ var _remove: js.Any = js.native
+    /* private */ var _remove: Any = js.native
     
     /**
       * Save a key and its value in the database.
       */
-    /* private */ var _save: js.Any = js.native
+    /* private */ var _save: Any = js.native
     
     /**
       * A signal that emits the change type any time a value changes.
@@ -89,11 +89,11 @@ object statedbMod {
       */
     @JSImport("@jupyterlab/statedb/lib/statedb", "StateDB.Connector")
     @js.native
-    class Connector ()
+    open class Connector ()
       extends StObject
          with IDataConnector[String, String, String, String] {
       
-      /* private */ var _storage: js.Any = js.native
+      /* private */ var _storage: Any = js.native
     }
     
     /**

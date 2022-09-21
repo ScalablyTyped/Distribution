@@ -31,17 +31,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RangeBorderData extends StObject {
   
   /**
+    * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var color: js.UndefOr[String] = js.undefined
   
   /**
+    * Constant value that indicates the specific side of the border. See `Excel.BorderIndex` for details.
     *
-    * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var sideIndex: js.UndefOr[
@@ -49,9 +49,9 @@ trait RangeBorderData extends StObject {
   ] = js.undefined
   
   /**
+    * One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for details.
     *
-    * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var style: js.UndefOr[
@@ -59,18 +59,18 @@ trait RangeBorderData extends StObject {
   ] = js.undefined
   
   /**
+    * Specifies a double that lightens or darkens a color for the range border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    A `null` value indicates that the border doesn't have a uniform `tintAndShade` setting.
     *
-    * Specifies a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
-    A null value indicates that the border doesn't have uniform tintAndShade setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[scala.Double] = js.undefined
   
   /**
+    * Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.
     *
-    * Specifies the weight of the border around a range. See Excel.BorderWeight for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var weight: js.UndefOr[BorderWeight | Hairline | Thin | Medium | Thick] = js.undefined

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccountLevelPermissions extends StObject {
   
   /**
-    * The block public access settings for the bucket.
+    * The block public access settings for the Amazon Web Services account that owns the bucket.
     */
   var blockPublicAccess: js.UndefOr[BlockPublicAccess] = js.undefined
 }

@@ -13,13 +13,7 @@ trait Content extends StObject {
   
   var content: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var contentCenter: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  
-  var contentLeft: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  
   var contentRight: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  
-  var subTitle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   var title: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
@@ -40,18 +34,6 @@ object Content {
     
     inline def setContent(value: StyleProp[ViewStyle]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setContentCenter(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentCenter", value.asInstanceOf[js.Any])
-    
-    inline def setContentCenterNull: Self = StObject.set(x, "contentCenter", null)
-    
-    inline def setContentCenterUndefined: Self = StObject.set(x, "contentCenter", js.undefined)
-    
-    inline def setContentLeft(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentLeft", value.asInstanceOf[js.Any])
-    
-    inline def setContentLeftNull: Self = StObject.set(x, "contentLeft", null)
-    
-    inline def setContentLeftUndefined: Self = StObject.set(x, "contentLeft", js.undefined)
-    
     inline def setContentNull: Self = StObject.set(x, "content", null)
     
     inline def setContentRight(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentRight", value.asInstanceOf[js.Any])
@@ -61,12 +43,6 @@ object Content {
     inline def setContentRightUndefined: Self = StObject.set(x, "contentRight", js.undefined)
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
-    
-    inline def setSubTitle(value: StyleProp[TextStyle]): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
-    
-    inline def setSubTitleNull: Self = StObject.set(x, "subTitle", null)
-    
-    inline def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
     
     inline def setTitle(value: StyleProp[TextStyle]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

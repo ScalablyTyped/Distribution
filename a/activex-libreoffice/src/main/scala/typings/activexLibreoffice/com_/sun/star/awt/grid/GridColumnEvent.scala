@@ -21,14 +21,14 @@ trait GridColumnEvent
   var ColumnIndex: Double
   
   /** Contains the new value */
-  var NewValue: js.Any
+  var NewValue: Any
   
   /** Contains the old value */
-  var OldValue: js.Any
+  var OldValue: Any
 }
 object GridColumnEvent {
   
-  inline def apply(AttributeName: String, ColumnIndex: Double, NewValue: js.Any, OldValue: js.Any, Source: XInterface): GridColumnEvent = {
+  inline def apply(AttributeName: String, ColumnIndex: Double, NewValue: Any, OldValue: Any, Source: XInterface): GridColumnEvent = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], ColumnIndex = ColumnIndex.asInstanceOf[js.Any], NewValue = NewValue.asInstanceOf[js.Any], OldValue = OldValue.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnEvent]
   }
@@ -39,8 +39,8 @@ object GridColumnEvent {
     
     inline def setColumnIndex(value: Double): Self = StObject.set(x, "ColumnIndex", value.asInstanceOf[js.Any])
     
-    inline def setNewValue(value: js.Any): Self = StObject.set(x, "NewValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: Any): Self = StObject.set(x, "NewValue", value.asInstanceOf[js.Any])
     
-    inline def setOldValue(value: js.Any): Self = StObject.set(x, "OldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Any): Self = StObject.set(x, "OldValue", value.asInstanceOf[js.Any])
   }
 }

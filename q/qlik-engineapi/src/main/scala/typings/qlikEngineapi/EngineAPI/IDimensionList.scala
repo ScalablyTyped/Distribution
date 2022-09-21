@@ -25,6 +25,6 @@ object IDimensionList {
     
     inline def setQItems(value: js.Array[IDimensionItemLayout]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
     
-    inline def setQItemsVarargs(value: IDimensionItemLayout*): Self = StObject.set(x, "qItems", js.Array(value :_*))
+    inline def setQItemsVarargs(value: IDimensionItemLayout*): Self = StObject.set(x, "qItems", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ istanbul reports
 | ------------------ | :-------------: |
 | Full name          | istanbul-reports |
 | Keywords           | istanbul, reports |
-| # releases         | 19 |
-| # dependents       | 118 |
-| # downloads        | 542125845 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 8.246716933333333E7 |
+| # stars            | 823.0 |
 
 ## Links
 - [Homepage](https://istanbul.js.org/)

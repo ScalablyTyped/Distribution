@@ -13,7 +13,7 @@ trait StaticData extends StObject {
   
   var chassis: ChassisData
   
-  var cpu: CpuWithFlagsData
+  var cpu: CpuData
   
   var diskLayout: js.Array[DiskLayoutData]
   
@@ -39,7 +39,7 @@ object StaticData {
     baseboard: BaseboardData,
     bios: BiosData,
     chassis: ChassisData,
-    cpu: CpuWithFlagsData,
+    cpu: CpuData,
     diskLayout: js.Array[DiskLayoutData],
     graphics: GraphicsData,
     memLayout: js.Array[MemLayoutData],
@@ -62,21 +62,21 @@ object StaticData {
     
     inline def setChassis(value: ChassisData): Self = StObject.set(x, "chassis", value.asInstanceOf[js.Any])
     
-    inline def setCpu(value: CpuWithFlagsData): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+    inline def setCpu(value: CpuData): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
     inline def setDiskLayout(value: js.Array[DiskLayoutData]): Self = StObject.set(x, "diskLayout", value.asInstanceOf[js.Any])
     
-    inline def setDiskLayoutVarargs(value: DiskLayoutData*): Self = StObject.set(x, "diskLayout", js.Array(value :_*))
+    inline def setDiskLayoutVarargs(value: DiskLayoutData*): Self = StObject.set(x, "diskLayout", js.Array(value*))
     
     inline def setGraphics(value: GraphicsData): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
     
     inline def setMemLayout(value: js.Array[MemLayoutData]): Self = StObject.set(x, "memLayout", value.asInstanceOf[js.Any])
     
-    inline def setMemLayoutVarargs(value: MemLayoutData*): Self = StObject.set(x, "memLayout", js.Array(value :_*))
+    inline def setMemLayoutVarargs(value: MemLayoutData*): Self = StObject.set(x, "memLayout", js.Array(value*))
     
     inline def setNet(value: js.Array[NetworkInterfacesData]): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
     
-    inline def setNetVarargs(value: NetworkInterfacesData*): Self = StObject.set(x, "net", js.Array(value :_*))
+    inline def setNetVarargs(value: NetworkInterfacesData*): Self = StObject.set(x, "net", js.Array(value*))
     
     inline def setOs(value: OsData): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     

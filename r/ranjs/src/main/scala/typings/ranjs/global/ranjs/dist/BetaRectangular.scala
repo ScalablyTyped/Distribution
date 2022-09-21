@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.BetaRectangular")
 @js.native
-class BetaRectangular ()
+open class BetaRectangular ()
   extends typings.ranjs.mod.dist.BetaRectangular {
   def this(alpha: Double) = this()
   def this(alpha: Double, beta: Double) = this()

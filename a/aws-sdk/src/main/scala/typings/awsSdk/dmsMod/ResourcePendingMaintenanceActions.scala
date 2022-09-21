@@ -12,7 +12,7 @@ trait ResourcePendingMaintenanceActions extends StObject {
   var PendingMaintenanceActionDetails: js.UndefOr[typings.awsSdk.dmsMod.PendingMaintenanceActionDetails] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the DMS resource that the pending maintenance action applies to. For information about creating an ARN, see  Constructing an Amazon Resource Name (ARN) for AWS DMS in the DMS documentation.
+    * The Amazon Resource Name (ARN) of the DMS resource that the pending maintenance action applies to. For information about creating an ARN, see  Constructing an Amazon Resource Name (ARN) for DMS in the DMS documentation.
     */
   var ResourceIdentifier: js.UndefOr[String] = js.undefined
 }
@@ -29,7 +29,7 @@ object ResourcePendingMaintenanceActions {
     
     inline def setPendingMaintenanceActionDetailsUndefined: Self = StObject.set(x, "PendingMaintenanceActionDetails", js.undefined)
     
-    inline def setPendingMaintenanceActionDetailsVarargs(value: PendingMaintenanceAction*): Self = StObject.set(x, "PendingMaintenanceActionDetails", js.Array(value :_*))
+    inline def setPendingMaintenanceActionDetailsVarargs(value: PendingMaintenanceAction*): Self = StObject.set(x, "PendingMaintenanceActionDetails", js.Array(value*))
     
     inline def setResourceIdentifier(value: String): Self = StObject.set(x, "ResourceIdentifier", value.asInstanceOf[js.Any])
     

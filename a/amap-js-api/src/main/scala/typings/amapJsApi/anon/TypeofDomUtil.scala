@@ -7,14 +7,12 @@ import typings.amapJsApi.amapJsApiStrings.`var`
 import typings.amapJsApi.amapJsApiStrings.a
 import typings.amapJsApi.amapJsApiStrings.abbr
 import typings.amapJsApi.amapJsApiStrings.address
-import typings.amapJsApi.amapJsApiStrings.applet
 import typings.amapJsApi.amapJsApiStrings.area
 import typings.amapJsApi.amapJsApiStrings.article
 import typings.amapJsApi.amapJsApiStrings.aside
 import typings.amapJsApi.amapJsApiStrings.audio
 import typings.amapJsApi.amapJsApiStrings.b
 import typings.amapJsApi.amapJsApiStrings.base
-import typings.amapJsApi.amapJsApiStrings.basefont
 import typings.amapJsApi.amapJsApiStrings.bdi
 import typings.amapJsApi.amapJsApiStrings.bdo
 import typings.amapJsApi.amapJsApiStrings.blockquote
@@ -34,7 +32,6 @@ import typings.amapJsApi.amapJsApiStrings.del
 import typings.amapJsApi.amapJsApiStrings.details
 import typings.amapJsApi.amapJsApiStrings.dfn
 import typings.amapJsApi.amapJsApiStrings.dialog
-import typings.amapJsApi.amapJsApiStrings.dir
 import typings.amapJsApi.amapJsApiStrings.div
 import typings.amapJsApi.amapJsApiStrings.dl
 import typings.amapJsApi.amapJsApiStrings.dt
@@ -43,11 +40,8 @@ import typings.amapJsApi.amapJsApiStrings.embed
 import typings.amapJsApi.amapJsApiStrings.fieldset
 import typings.amapJsApi.amapJsApiStrings.figcaption
 import typings.amapJsApi.amapJsApiStrings.figure
-import typings.amapJsApi.amapJsApiStrings.font
 import typings.amapJsApi.amapJsApiStrings.footer
 import typings.amapJsApi.amapJsApiStrings.form
-import typings.amapJsApi.amapJsApiStrings.frame
-import typings.amapJsApi.amapJsApiStrings.frameset
 import typings.amapJsApi.amapJsApiStrings.h1
 import typings.amapJsApi.amapJsApiStrings.h2
 import typings.amapJsApi.amapJsApiStrings.h3
@@ -72,7 +66,6 @@ import typings.amapJsApi.amapJsApiStrings.link
 import typings.amapJsApi.amapJsApiStrings.main
 import typings.amapJsApi.amapJsApiStrings.map
 import typings.amapJsApi.amapJsApiStrings.mark
-import typings.amapJsApi.amapJsApiStrings.marquee
 import typings.amapJsApi.amapJsApiStrings.menu
 import typings.amapJsApi.amapJsApiStrings.meta
 import typings.amapJsApi.amapJsApiStrings.meter
@@ -83,7 +76,6 @@ import typings.amapJsApi.amapJsApiStrings.optgroup
 import typings.amapJsApi.amapJsApiStrings.option
 import typings.amapJsApi.amapJsApiStrings.output
 import typings.amapJsApi.amapJsApiStrings.p
-import typings.amapJsApi.amapJsApiStrings.param
 import typings.amapJsApi.amapJsApiStrings.picture
 import typings.amapJsApi.amapJsApiStrings.pre
 import typings.amapJsApi.amapJsApiStrings.progress
@@ -122,12 +114,10 @@ import typings.amapJsApi.amapJsApiStrings.ul
 import typings.amapJsApi.amapJsApiStrings.video
 import typings.amapJsApi.amapJsApiStrings.wbr
 import typings.std.HTMLAnchorElement
-import typings.std.HTMLAppletElement
 import typings.std.HTMLAreaElement
 import typings.std.HTMLAudioElement
 import typings.std.HTMLBRElement
 import typings.std.HTMLBaseElement
-import typings.std.HTMLBaseFontElement
 import typings.std.HTMLBodyElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLCanvasElement
@@ -136,15 +126,11 @@ import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
 import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
-import typings.std.HTMLDirectoryElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLEmbedElement
 import typings.std.HTMLFieldSetElement
-import typings.std.HTMLFontElement
 import typings.std.HTMLFormElement
-import typings.std.HTMLFrameElement
-import typings.std.HTMLFrameSetElement
 import typings.std.HTMLHRElement
 import typings.std.HTMLHeadElement
 import typings.std.HTMLHeadingElement
@@ -157,7 +143,6 @@ import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
-import typings.std.HTMLMarqueeElement
 import typings.std.HTMLMenuElement
 import typings.std.HTMLMetaElement
 import typings.std.HTMLMeterElement
@@ -168,7 +153,6 @@ import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
-import typings.std.HTMLParamElement
 import typings.std.HTMLPictureElement
 import typings.std.HTMLPreElement
 import typings.std.HTMLProgressElement
@@ -180,10 +164,9 @@ import typings.std.HTMLSourceElement
 import typings.std.HTMLSpanElement
 import typings.std.HTMLStyleElement
 import typings.std.HTMLTableCaptionElement
+import typings.std.HTMLTableCellElement
 import typings.std.HTMLTableColElement
-import typings.std.HTMLTableDataCellElement
 import typings.std.HTMLTableElement
-import typings.std.HTMLTableHeaderCellElement
 import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTemplateElement
@@ -238,14 +221,6 @@ trait TypeofDomUtil extends StObject {
   @JSName("create")
   def create_address(tagName: address, parent: HTMLElement, className: String): HTMLElement = js.native
   @JSName("create")
-  def create_applet(tagName: applet): HTMLAppletElement = js.native
-  @JSName("create")
-  def create_applet(tagName: applet, parent: Unit, className: String): HTMLAppletElement = js.native
-  @JSName("create")
-  def create_applet(tagName: applet, parent: HTMLElement): HTMLAppletElement = js.native
-  @JSName("create")
-  def create_applet(tagName: applet, parent: HTMLElement, className: String): HTMLAppletElement = js.native
-  @JSName("create")
   def create_area(tagName: area): HTMLAreaElement = js.native
   @JSName("create")
   def create_area(tagName: area, parent: Unit, className: String): HTMLAreaElement = js.native
@@ -293,14 +268,6 @@ trait TypeofDomUtil extends StObject {
   def create_base(tagName: base, parent: HTMLElement): HTMLBaseElement = js.native
   @JSName("create")
   def create_base(tagName: base, parent: HTMLElement, className: String): HTMLBaseElement = js.native
-  @JSName("create")
-  def create_basefont(tagName: basefont): HTMLBaseFontElement = js.native
-  @JSName("create")
-  def create_basefont(tagName: basefont, parent: Unit, className: String): HTMLBaseFontElement = js.native
-  @JSName("create")
-  def create_basefont(tagName: basefont, parent: HTMLElement): HTMLBaseFontElement = js.native
-  @JSName("create")
-  def create_basefont(tagName: basefont, parent: HTMLElement, className: String): HTMLBaseFontElement = js.native
   @JSName("create")
   def create_bdi(tagName: bdi): HTMLElement = js.native
   @JSName("create")
@@ -454,14 +421,6 @@ trait TypeofDomUtil extends StObject {
   @JSName("create")
   def create_dialog(tagName: dialog, parent: HTMLElement, className: String): HTMLDialogElement = js.native
   @JSName("create")
-  def create_dir(tagName: dir): HTMLDirectoryElement = js.native
-  @JSName("create")
-  def create_dir(tagName: dir, parent: Unit, className: String): HTMLDirectoryElement = js.native
-  @JSName("create")
-  def create_dir(tagName: dir, parent: HTMLElement): HTMLDirectoryElement = js.native
-  @JSName("create")
-  def create_dir(tagName: dir, parent: HTMLElement, className: String): HTMLDirectoryElement = js.native
-  @JSName("create")
   def create_div(tagName: div): HTMLDivElement = js.native
   @JSName("create")
   def create_div(tagName: div, parent: Unit, className: String): HTMLDivElement = js.native
@@ -526,14 +485,6 @@ trait TypeofDomUtil extends StObject {
   @JSName("create")
   def create_figure(tagName: figure, parent: HTMLElement, className: String): HTMLElement = js.native
   @JSName("create")
-  def create_font(tagName: font): HTMLFontElement = js.native
-  @JSName("create")
-  def create_font(tagName: font, parent: Unit, className: String): HTMLFontElement = js.native
-  @JSName("create")
-  def create_font(tagName: font, parent: HTMLElement): HTMLFontElement = js.native
-  @JSName("create")
-  def create_font(tagName: font, parent: HTMLElement, className: String): HTMLFontElement = js.native
-  @JSName("create")
   def create_footer(tagName: footer): HTMLElement = js.native
   @JSName("create")
   def create_footer(tagName: footer, parent: Unit, className: String): HTMLElement = js.native
@@ -549,22 +500,6 @@ trait TypeofDomUtil extends StObject {
   def create_form(tagName: form, parent: HTMLElement): HTMLFormElement = js.native
   @JSName("create")
   def create_form(tagName: form, parent: HTMLElement, className: String): HTMLFormElement = js.native
-  @JSName("create")
-  def create_frame(tagName: frame): HTMLFrameElement = js.native
-  @JSName("create")
-  def create_frame(tagName: frame, parent: Unit, className: String): HTMLFrameElement = js.native
-  @JSName("create")
-  def create_frame(tagName: frame, parent: HTMLElement): HTMLFrameElement = js.native
-  @JSName("create")
-  def create_frame(tagName: frame, parent: HTMLElement, className: String): HTMLFrameElement = js.native
-  @JSName("create")
-  def create_frameset(tagName: frameset): HTMLFrameSetElement = js.native
-  @JSName("create")
-  def create_frameset(tagName: frameset, parent: Unit, className: String): HTMLFrameSetElement = js.native
-  @JSName("create")
-  def create_frameset(tagName: frameset, parent: HTMLElement): HTMLFrameSetElement = js.native
-  @JSName("create")
-  def create_frameset(tagName: frameset, parent: HTMLElement, className: String): HTMLFrameSetElement = js.native
   @JSName("create")
   def create_h1(tagName: h1): HTMLHeadingElement = js.native
   @JSName("create")
@@ -758,14 +693,6 @@ trait TypeofDomUtil extends StObject {
   @JSName("create")
   def create_mark(tagName: mark, parent: HTMLElement, className: String): HTMLElement = js.native
   @JSName("create")
-  def create_marquee(tagName: marquee): HTMLMarqueeElement = js.native
-  @JSName("create")
-  def create_marquee(tagName: marquee, parent: Unit, className: String): HTMLMarqueeElement = js.native
-  @JSName("create")
-  def create_marquee(tagName: marquee, parent: HTMLElement): HTMLMarqueeElement = js.native
-  @JSName("create")
-  def create_marquee(tagName: marquee, parent: HTMLElement, className: String): HTMLMarqueeElement = js.native
-  @JSName("create")
   def create_menu(tagName: menu): HTMLMenuElement = js.native
   @JSName("create")
   def create_menu(tagName: menu, parent: Unit, className: String): HTMLMenuElement = js.native
@@ -853,14 +780,6 @@ trait TypeofDomUtil extends StObject {
   def create_p(tagName: p, parent: HTMLElement): HTMLParagraphElement = js.native
   @JSName("create")
   def create_p(tagName: p, parent: HTMLElement, className: String): HTMLParagraphElement = js.native
-  @JSName("create")
-  def create_param(tagName: param): HTMLParamElement = js.native
-  @JSName("create")
-  def create_param(tagName: param, parent: Unit, className: String): HTMLParamElement = js.native
-  @JSName("create")
-  def create_param(tagName: param, parent: HTMLElement): HTMLParamElement = js.native
-  @JSName("create")
-  def create_param(tagName: param, parent: HTMLElement, className: String): HTMLParamElement = js.native
   @JSName("create")
   def create_picture(tagName: picture): HTMLPictureElement = js.native
   @JSName("create")
@@ -1046,13 +965,13 @@ trait TypeofDomUtil extends StObject {
   @JSName("create")
   def create_tbody(tagName: tbody, parent: HTMLElement, className: String): HTMLTableSectionElement = js.native
   @JSName("create")
-  def create_td(tagName: td): HTMLTableDataCellElement = js.native
+  def create_td(tagName: td): HTMLTableCellElement = js.native
   @JSName("create")
-  def create_td(tagName: td, parent: Unit, className: String): HTMLTableDataCellElement = js.native
+  def create_td(tagName: td, parent: Unit, className: String): HTMLTableCellElement = js.native
   @JSName("create")
-  def create_td(tagName: td, parent: HTMLElement): HTMLTableDataCellElement = js.native
+  def create_td(tagName: td, parent: HTMLElement): HTMLTableCellElement = js.native
   @JSName("create")
-  def create_td(tagName: td, parent: HTMLElement, className: String): HTMLTableDataCellElement = js.native
+  def create_td(tagName: td, parent: HTMLElement, className: String): HTMLTableCellElement = js.native
   @JSName("create")
   def create_template(tagName: template): HTMLTemplateElement = js.native
   @JSName("create")
@@ -1078,13 +997,13 @@ trait TypeofDomUtil extends StObject {
   @JSName("create")
   def create_tfoot(tagName: tfoot, parent: HTMLElement, className: String): HTMLTableSectionElement = js.native
   @JSName("create")
-  def create_th(tagName: th): HTMLTableHeaderCellElement = js.native
+  def create_th(tagName: th): HTMLTableCellElement = js.native
   @JSName("create")
-  def create_th(tagName: th, parent: Unit, className: String): HTMLTableHeaderCellElement = js.native
+  def create_th(tagName: th, parent: Unit, className: String): HTMLTableCellElement = js.native
   @JSName("create")
-  def create_th(tagName: th, parent: HTMLElement): HTMLTableHeaderCellElement = js.native
+  def create_th(tagName: th, parent: HTMLElement): HTMLTableCellElement = js.native
   @JSName("create")
-  def create_th(tagName: th, parent: HTMLElement, className: String): HTMLTableHeaderCellElement = js.native
+  def create_th(tagName: th, parent: HTMLElement, className: String): HTMLTableCellElement = js.native
   @JSName("create")
   def create_thead(tagName: thead): HTMLTableSectionElement = js.native
   @JSName("create")

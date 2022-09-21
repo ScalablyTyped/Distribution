@@ -30,7 +30,7 @@ object anon {
     
     var animated: Boolean
     
-    var goToTab: js.Any
+    var goToTab: Any
     
     var instanceId: Double
     
@@ -55,7 +55,7 @@ object anon {
     inline def apply[S /* <: StateType */, P /* <: PropsType */](
       activeTab: /* import warning: importer.ImportType#apply Failed type conversion: S['currentTab'] */ js.Any,
       animated: Boolean,
-      goToTab: js.Any,
+      goToTab: Any,
       instanceId: Double,
       onTabClick: /* import warning: importer.ImportType#apply Failed type conversion: P['onTabClick'] */ js.Any,
       tabBarActiveTextColor: /* import warning: importer.ImportType#apply Failed type conversion: P['tabBarActiveTextColor'] */ js.Any,
@@ -78,7 +78,7 @@ object anon {
       
       inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
-      inline def setGoToTab(value: js.Any): Self = StObject.set(x, "goToTab", value.asInstanceOf[js.Any])
+      inline def setGoToTab(value: Any): Self = StObject.set(x, "goToTab", value.asInstanceOf[js.Any])
       
       inline def setInstanceId(value: Double): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
@@ -245,26 +245,26 @@ object anon {
   
   trait MozTransform extends StObject {
     
-    var MozTransform: js.Any
+    var MozTransform: Any
     
-    var WebkitTransform: js.Any
+    var WebkitTransform: Any
     
-    var transform: js.Any
+    var transform: Any
   }
   object MozTransform {
     
-    inline def apply(MozTransform: js.Any, WebkitTransform: js.Any, transform: js.Any): MozTransform = {
+    inline def apply(MozTransform: Any, WebkitTransform: Any, transform: Any): MozTransform = {
       val __obj = js.Dynamic.literal(MozTransform = MozTransform.asInstanceOf[js.Any], WebkitTransform = WebkitTransform.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
       __obj.asInstanceOf[MozTransform]
     }
     
     extension [Self <: MozTransform](x: Self) {
       
-      inline def setMozTransform(value: js.Any): Self = StObject.set(x, "MozTransform", value.asInstanceOf[js.Any])
+      inline def setMozTransform(value: Any): Self = StObject.set(x, "MozTransform", value.asInstanceOf[js.Any])
       
-      inline def setTransform(value: js.Any): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: Any): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      inline def setWebkitTransform(value: js.Any): Self = StObject.set(x, "WebkitTransform", value.asInstanceOf[js.Any])
+      inline def setWebkitTransform(value: Any): Self = StObject.set(x, "WebkitTransform", value.asInstanceOf[js.Any])
     }
   }
   
@@ -385,9 +385,9 @@ object anon {
     
     val tabBarPosition: js.UndefOr[top | bottom | left | right] = js.undefined
     
-    val tabBarTextStyle: js.UndefOr[CSSProperties | js.Any] = js.undefined
+    val tabBarTextStyle: js.UndefOr[CSSProperties | Any] = js.undefined
     
-    val tabBarUnderlineStyle: js.UndefOr[CSSProperties | js.Any] = js.undefined
+    val tabBarUnderlineStyle: js.UndefOr[CSSProperties | Any] = js.undefined
     
     val tabDirection: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -478,11 +478,11 @@ object anon {
       
       inline def setTabBarPositionUndefined: Self = StObject.set(x, "tabBarPosition", js.undefined)
       
-      inline def setTabBarTextStyle(value: CSSProperties | js.Any): Self = StObject.set(x, "tabBarTextStyle", value.asInstanceOf[js.Any])
+      inline def setTabBarTextStyle(value: CSSProperties | Any): Self = StObject.set(x, "tabBarTextStyle", value.asInstanceOf[js.Any])
       
       inline def setTabBarTextStyleUndefined: Self = StObject.set(x, "tabBarTextStyle", js.undefined)
       
-      inline def setTabBarUnderlineStyle(value: CSSProperties | js.Any): Self = StObject.set(x, "tabBarUnderlineStyle", value.asInstanceOf[js.Any])
+      inline def setTabBarUnderlineStyle(value: CSSProperties | Any): Self = StObject.set(x, "tabBarUnderlineStyle", value.asInstanceOf[js.Any])
       
       inline def setTabBarUnderlineStyleUndefined: Self = StObject.set(x, "tabBarUnderlineStyle", js.undefined)
       
@@ -492,7 +492,7 @@ object anon {
       
       inline def setTabs(value: js.Array[TabData]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      inline def setTabsVarargs(value: TabData*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: TabData*): Self = StObject.set(x, "tabs", js.Array(value*))
       
       inline def setUseLeftInsteadTransform(value: Boolean): Self = StObject.set(x, "useLeftInsteadTransform", value.asInstanceOf[js.Any])
       

@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents the list of app restrictions available to be pre-configured for
-  * the product.
-  */
 trait SchemaAppRestrictionsSchema extends StObject {
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;androidenterprise#appRestrictionsSchema&quot;.
+    * Deprecated.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The set of restrictions that make up this schema.
@@ -32,12 +27,14 @@ object SchemaAppRestrictionsSchema {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setRestrictions(value: js.Array[SchemaAppRestrictionsSchemaRestriction]): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
     inline def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
     
-    inline def setRestrictionsVarargs(value: SchemaAppRestrictionsSchemaRestriction*): Self = StObject.set(x, "restrictions", js.Array(value :_*))
+    inline def setRestrictionsVarargs(value: SchemaAppRestrictionsSchemaRestriction*): Self = StObject.set(x, "restrictions", js.Array(value*))
   }
 }

@@ -12,7 +12,7 @@ trait DetectStackDriftInput extends StObject {
   var LogicalResourceIds: js.UndefOr[typings.awsSdk.cloudformationMod.LogicalResourceIds] = js.undefined
   
   /**
-    * The name of the stack for which you want to detect drift. 
+    * The name of the stack for which you want to detect drift.
     */
   var StackName: StackNameOrId
 }
@@ -29,7 +29,7 @@ object DetectStackDriftInput {
     
     inline def setLogicalResourceIdsUndefined: Self = StObject.set(x, "LogicalResourceIds", js.undefined)
     
-    inline def setLogicalResourceIdsVarargs(value: LogicalResourceId*): Self = StObject.set(x, "LogicalResourceIds", js.Array(value :_*))
+    inline def setLogicalResourceIdsVarargs(value: LogicalResourceId*): Self = StObject.set(x, "LogicalResourceIds", js.Array(value*))
     
     inline def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }

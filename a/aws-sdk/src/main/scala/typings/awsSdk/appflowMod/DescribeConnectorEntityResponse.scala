@@ -22,6 +22,6 @@ object DescribeConnectorEntityResponse {
     
     inline def setConnectorEntityFields(value: ConnectorEntityFieldList): Self = StObject.set(x, "connectorEntityFields", value.asInstanceOf[js.Any])
     
-    inline def setConnectorEntityFieldsVarargs(value: ConnectorEntityField*): Self = StObject.set(x, "connectorEntityFields", js.Array(value :_*))
+    inline def setConnectorEntityFieldsVarargs(value: ConnectorEntityField*): Self = StObject.set(x, "connectorEntityFields", js.Array(value*))
   }
 }

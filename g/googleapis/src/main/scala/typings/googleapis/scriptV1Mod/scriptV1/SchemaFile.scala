@@ -4,19 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An individual file within a script project. A file is a third-party source
-  * code created by one or more developers. It can be a server-side JS code,
-  * HTML, or a configuration file. Each script project can contain multiple
-  * files.
-  */
 trait SchemaFile extends StObject {
   
   /**
-    * Creation date timestamp. This read-only field is only visible to users
-    * who have WRITER permission for the script project.
+    * Creation date timestamp. This read-only field is only visible to users who have WRITER permission for the script project.
     */
-  var createTime: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The defined set of functions in the script file, if any.
@@ -24,32 +17,29 @@ trait SchemaFile extends StObject {
   var functionSet: js.UndefOr[SchemaGoogleAppsScriptTypeFunctionSet] = js.undefined
   
   /**
-    * The user who modified the file most recently. This read-only field is
-    * only visible to users who have WRITER permission for the script project.
+    * The user who modified the file most recently. This read-only field is only visible to users who have WRITER permission for the script project.
     */
   var lastModifyUser: js.UndefOr[SchemaGoogleAppsScriptTypeUser] = js.undefined
   
   /**
-    * The name of the file. The file extension is not part of the file name,
-    * which can be identified from the type field.
+    * The name of the file. The file extension is not part of the file name, which can be identified from the type field.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The file content.
     */
-  var source: js.UndefOr[String] = js.undefined
+  var source: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The type of the file.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Last modified date timestamp. This read-only field is only visible to
-    * users who have WRITER permission for the script project.
+    * Last modified date timestamp. This read-only field is only visible to users who have WRITER permission for the script project.
     */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var updateTime: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFile {
   
@@ -61,6 +51,8 @@ object SchemaFile {
   extension [Self <: SchemaFile](x: Self) {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreateTimeNull: Self = StObject.set(x, "createTime", null)
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
@@ -74,17 +66,25 @@ object SchemaFile {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeNull: Self = StObject.set(x, "updateTime", null)
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object useIsAuthenticatedMod {
   
-  @JSImport("react-auth-kit/hooks/useIsAuthenticated", JSImport.Namespace)
+  @JSImport("react-auth-kit/dist/hooks/useIsAuthenticated", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

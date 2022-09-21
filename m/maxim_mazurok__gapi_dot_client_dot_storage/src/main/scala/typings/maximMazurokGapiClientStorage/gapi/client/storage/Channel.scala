@@ -23,7 +23,7 @@ trait Channel extends StObject {
   var params: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Channel & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Channel & TopLevel[Any]
   ] = js.undefined
   
   /** A Boolean value to indicate whether payload is wanted. Optional. */
@@ -69,7 +69,7 @@ object Channel {
     inline def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Channel & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Channel & TopLevel[Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

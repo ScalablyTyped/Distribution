@@ -16,50 +16,44 @@ trait OLEFormat extends StObject {
   var ClassType: String = js.native
   
   def ConvertTo(): Unit = js.native
-  def ConvertTo(ClassType: js.Any): Unit = js.native
-  def ConvertTo(ClassType: js.Any, DisplayAsIcon: js.Any): Unit = js.native
-  def ConvertTo(ClassType: js.Any, DisplayAsIcon: js.Any, IconFileName: js.Any): Unit = js.native
-  def ConvertTo(ClassType: js.Any, DisplayAsIcon: js.Any, IconFileName: js.Any, IconIndex: js.Any): Unit = js.native
-  def ConvertTo(
-    ClassType: js.Any,
-    DisplayAsIcon: js.Any,
-    IconFileName: js.Any,
-    IconIndex: js.Any,
-    IconLabel: js.Any
-  ): Unit = js.native
-  def ConvertTo(ClassType: js.Any, DisplayAsIcon: js.Any, IconFileName: js.Any, IconIndex: Unit, IconLabel: js.Any): Unit = js.native
-  def ConvertTo(ClassType: js.Any, DisplayAsIcon: js.Any, IconFileName: Unit, IconIndex: js.Any): Unit = js.native
-  def ConvertTo(ClassType: js.Any, DisplayAsIcon: js.Any, IconFileName: Unit, IconIndex: js.Any, IconLabel: js.Any): Unit = js.native
-  def ConvertTo(ClassType: js.Any, DisplayAsIcon: js.Any, IconFileName: Unit, IconIndex: Unit, IconLabel: js.Any): Unit = js.native
-  def ConvertTo(ClassType: js.Any, DisplayAsIcon: Unit, IconFileName: js.Any): Unit = js.native
-  def ConvertTo(ClassType: js.Any, DisplayAsIcon: Unit, IconFileName: js.Any, IconIndex: js.Any): Unit = js.native
-  def ConvertTo(ClassType: js.Any, DisplayAsIcon: Unit, IconFileName: js.Any, IconIndex: js.Any, IconLabel: js.Any): Unit = js.native
-  def ConvertTo(ClassType: js.Any, DisplayAsIcon: Unit, IconFileName: js.Any, IconIndex: Unit, IconLabel: js.Any): Unit = js.native
-  def ConvertTo(ClassType: js.Any, DisplayAsIcon: Unit, IconFileName: Unit, IconIndex: js.Any): Unit = js.native
-  def ConvertTo(ClassType: js.Any, DisplayAsIcon: Unit, IconFileName: Unit, IconIndex: js.Any, IconLabel: js.Any): Unit = js.native
-  def ConvertTo(ClassType: js.Any, DisplayAsIcon: Unit, IconFileName: Unit, IconIndex: Unit, IconLabel: js.Any): Unit = js.native
-  def ConvertTo(ClassType: Unit, DisplayAsIcon: js.Any): Unit = js.native
-  def ConvertTo(ClassType: Unit, DisplayAsIcon: js.Any, IconFileName: js.Any): Unit = js.native
-  def ConvertTo(ClassType: Unit, DisplayAsIcon: js.Any, IconFileName: js.Any, IconIndex: js.Any): Unit = js.native
-  def ConvertTo(ClassType: Unit, DisplayAsIcon: js.Any, IconFileName: js.Any, IconIndex: js.Any, IconLabel: js.Any): Unit = js.native
-  def ConvertTo(ClassType: Unit, DisplayAsIcon: js.Any, IconFileName: js.Any, IconIndex: Unit, IconLabel: js.Any): Unit = js.native
-  def ConvertTo(ClassType: Unit, DisplayAsIcon: js.Any, IconFileName: Unit, IconIndex: js.Any): Unit = js.native
-  def ConvertTo(ClassType: Unit, DisplayAsIcon: js.Any, IconFileName: Unit, IconIndex: js.Any, IconLabel: js.Any): Unit = js.native
-  def ConvertTo(ClassType: Unit, DisplayAsIcon: js.Any, IconFileName: Unit, IconIndex: Unit, IconLabel: js.Any): Unit = js.native
-  def ConvertTo(ClassType: Unit, DisplayAsIcon: Unit, IconFileName: js.Any): Unit = js.native
-  def ConvertTo(ClassType: Unit, DisplayAsIcon: Unit, IconFileName: js.Any, IconIndex: js.Any): Unit = js.native
-  def ConvertTo(ClassType: Unit, DisplayAsIcon: Unit, IconFileName: js.Any, IconIndex: js.Any, IconLabel: js.Any): Unit = js.native
-  def ConvertTo(ClassType: Unit, DisplayAsIcon: Unit, IconFileName: js.Any, IconIndex: Unit, IconLabel: js.Any): Unit = js.native
-  def ConvertTo(ClassType: Unit, DisplayAsIcon: Unit, IconFileName: Unit, IconIndex: js.Any): Unit = js.native
-  def ConvertTo(ClassType: Unit, DisplayAsIcon: Unit, IconFileName: Unit, IconIndex: js.Any, IconLabel: js.Any): Unit = js.native
-  def ConvertTo(ClassType: Unit, DisplayAsIcon: Unit, IconFileName: Unit, IconIndex: Unit, IconLabel: js.Any): Unit = js.native
+  def ConvertTo(ClassType: Any): Unit = js.native
+  def ConvertTo(ClassType: Any, DisplayAsIcon: Any): Unit = js.native
+  def ConvertTo(ClassType: Any, DisplayAsIcon: Any, IconFileName: Any): Unit = js.native
+  def ConvertTo(ClassType: Any, DisplayAsIcon: Any, IconFileName: Any, IconIndex: Any): Unit = js.native
+  def ConvertTo(ClassType: Any, DisplayAsIcon: Any, IconFileName: Any, IconIndex: Any, IconLabel: Any): Unit = js.native
+  def ConvertTo(ClassType: Any, DisplayAsIcon: Any, IconFileName: Any, IconIndex: Unit, IconLabel: Any): Unit = js.native
+  def ConvertTo(ClassType: Any, DisplayAsIcon: Any, IconFileName: Unit, IconIndex: Any): Unit = js.native
+  def ConvertTo(ClassType: Any, DisplayAsIcon: Any, IconFileName: Unit, IconIndex: Any, IconLabel: Any): Unit = js.native
+  def ConvertTo(ClassType: Any, DisplayAsIcon: Any, IconFileName: Unit, IconIndex: Unit, IconLabel: Any): Unit = js.native
+  def ConvertTo(ClassType: Any, DisplayAsIcon: Unit, IconFileName: Any): Unit = js.native
+  def ConvertTo(ClassType: Any, DisplayAsIcon: Unit, IconFileName: Any, IconIndex: Any): Unit = js.native
+  def ConvertTo(ClassType: Any, DisplayAsIcon: Unit, IconFileName: Any, IconIndex: Any, IconLabel: Any): Unit = js.native
+  def ConvertTo(ClassType: Any, DisplayAsIcon: Unit, IconFileName: Any, IconIndex: Unit, IconLabel: Any): Unit = js.native
+  def ConvertTo(ClassType: Any, DisplayAsIcon: Unit, IconFileName: Unit, IconIndex: Any): Unit = js.native
+  def ConvertTo(ClassType: Any, DisplayAsIcon: Unit, IconFileName: Unit, IconIndex: Any, IconLabel: Any): Unit = js.native
+  def ConvertTo(ClassType: Any, DisplayAsIcon: Unit, IconFileName: Unit, IconIndex: Unit, IconLabel: Any): Unit = js.native
+  def ConvertTo(ClassType: Unit, DisplayAsIcon: Any): Unit = js.native
+  def ConvertTo(ClassType: Unit, DisplayAsIcon: Any, IconFileName: Any): Unit = js.native
+  def ConvertTo(ClassType: Unit, DisplayAsIcon: Any, IconFileName: Any, IconIndex: Any): Unit = js.native
+  def ConvertTo(ClassType: Unit, DisplayAsIcon: Any, IconFileName: Any, IconIndex: Any, IconLabel: Any): Unit = js.native
+  def ConvertTo(ClassType: Unit, DisplayAsIcon: Any, IconFileName: Any, IconIndex: Unit, IconLabel: Any): Unit = js.native
+  def ConvertTo(ClassType: Unit, DisplayAsIcon: Any, IconFileName: Unit, IconIndex: Any): Unit = js.native
+  def ConvertTo(ClassType: Unit, DisplayAsIcon: Any, IconFileName: Unit, IconIndex: Any, IconLabel: Any): Unit = js.native
+  def ConvertTo(ClassType: Unit, DisplayAsIcon: Any, IconFileName: Unit, IconIndex: Unit, IconLabel: Any): Unit = js.native
+  def ConvertTo(ClassType: Unit, DisplayAsIcon: Unit, IconFileName: Any): Unit = js.native
+  def ConvertTo(ClassType: Unit, DisplayAsIcon: Unit, IconFileName: Any, IconIndex: Any): Unit = js.native
+  def ConvertTo(ClassType: Unit, DisplayAsIcon: Unit, IconFileName: Any, IconIndex: Any, IconLabel: Any): Unit = js.native
+  def ConvertTo(ClassType: Unit, DisplayAsIcon: Unit, IconFileName: Any, IconIndex: Unit, IconLabel: Any): Unit = js.native
+  def ConvertTo(ClassType: Unit, DisplayAsIcon: Unit, IconFileName: Unit, IconIndex: Any): Unit = js.native
+  def ConvertTo(ClassType: Unit, DisplayAsIcon: Unit, IconFileName: Unit, IconIndex: Any, IconLabel: Any): Unit = js.native
+  def ConvertTo(ClassType: Unit, DisplayAsIcon: Unit, IconFileName: Unit, IconIndex: Unit, IconLabel: Any): Unit = js.native
   
   val Creator: Double = js.native
   
   var DisplayAsIcon: Boolean = js.native
   
   def DoVerb(): Unit = js.native
-  def DoVerb(VerbIndex: js.Any): Unit = js.native
+  def DoVerb(VerbIndex: Any): Unit = js.native
   
   def Edit(): Unit = js.native
   
@@ -73,11 +67,11 @@ trait OLEFormat extends StObject {
   
   val Label: String = js.native
   
-  val Object: js.Any = js.native
+  val Object: Any = js.native
   
   def Open(): Unit = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var PreserveFormattingOnUpdate: Boolean = js.native
   

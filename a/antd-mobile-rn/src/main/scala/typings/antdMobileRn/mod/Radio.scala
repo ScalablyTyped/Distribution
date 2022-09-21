@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "Radio")
 @js.native
-class Radio protected () extends default {
-  def this(props: RadioNativeProps, context: js.Any) = this()
+open class Radio protected () extends default {
+  def this(props: RadioNativeProps, context: Any) = this()
 }
 /* static members */
 object Radio {
@@ -21,8 +21,8 @@ object Radio {
   
   @JSImport("antd-mobile-rn", "Radio.RadioItem")
   @js.native
-  def RadioItem: js.Any = js.native
-  inline def RadioItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
+  def RadioItem: Any = js.native
+  inline def RadioItem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
   
   @JSImport("antd-mobile-rn", "Radio.defaultProps")
   @js.native

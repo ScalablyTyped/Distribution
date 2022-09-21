@@ -21,7 +21,7 @@ trait Axes extends StObject {
   def Item(Type: XlAxisType): Axis = js.native
   def Item(Type: XlAxisType, AxisGroup: XlAxisGroup): Axis = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /** @param AxisGroup [AxisGroup=1] */
   def _Default(Type: XlAxisType): Axis = js.native

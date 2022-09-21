@@ -8,14 +8,14 @@ object clusterer {
   
   @JSGlobal("ymaps.clusterer.Balloon")
   @js.native
-  class Balloon protected ()
+  open class Balloon protected ()
     extends typings.yandexMaps.mod.clusterer.Balloon {
     def this(clusterer: typings.yandexMaps.mod.Clusterer_) = this()
   }
   
   @JSGlobal("ymaps.clusterer.Hint")
   @js.native
-  class Hint protected ()
+  open class Hint protected ()
     extends typings.yandexMaps.mod.clusterer.Hint {
     def this(clusterer: typings.yandexMaps.mod.Clusterer_) = this()
   }

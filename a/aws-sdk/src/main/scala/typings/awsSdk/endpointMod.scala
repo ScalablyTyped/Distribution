@@ -8,7 +8,7 @@ object endpointMod {
   
   @JSImport("aws-sdk/lib/endpoint", "Endpoint")
   @js.native
-  class Endpoint protected () extends StObject {
+  open class Endpoint protected () extends StObject {
     /**
       * Constructs a new endpoint given an endpoint URL.
       */

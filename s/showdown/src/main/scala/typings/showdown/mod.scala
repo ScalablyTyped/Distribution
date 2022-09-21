@@ -10,7 +10,6 @@ import typings.showdown.showdownStrings.boolean
 import typings.showdown.showdownStrings.integer
 import typings.showdown.showdownStrings.string
 import typings.std.HTMLDocument
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,7 +77,7 @@ object mod {
       * @param key - The key of the option.
       * @returns Returns the value of the given `key`.
       */
-    def getOption(key: String): js.Any = js.native
+    def getOption(key: String): Any = js.native
     
     /**
       * Get the options of this Converter instance.
@@ -148,7 +147,7 @@ object mod {
       * @param key - The key of the option.
       * @param value - The value of the option.
       */
-    def setOption(key: String, value: js.Any): Unit = js.native
+    def setOption(key: String, value: Any): Unit = js.native
     
     /**
       * Use a global registered extension with THIS converter.
@@ -171,7 +170,7 @@ object mod {
     * @constructor
     * @param converterOptions - Configuration object, describes which extensions to apply.
     */
-  class ConverterCls ()
+  open class ConverterCls ()
     extends StObject
        with Converter {
     def this(converterOptions: ConverterOptions) = this()
@@ -244,7 +243,7 @@ object mod {
     * @param key - the option key.
     * @returns Returns the value of the given `key`.
     */
-  inline def getOption(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOption")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getOption(key: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOption")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Get the "global" options.
@@ -291,7 +290,7 @@ object mod {
     * @param key - the option key.
     * @param value - the option value.
     */
-  inline def setOption(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def setOption(key: String, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Get a registered subParser.
@@ -340,11 +339,11 @@ object mod {
       
       inline def setLanguage(value: js.Array[ShowdownExtension]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      inline def setLanguageVarargs(value: ShowdownExtension*): Self = StObject.set(x, "language", js.Array(value :_*))
+      inline def setLanguageVarargs(value: ShowdownExtension*): Self = StObject.set(x, "language", js.Array(value*))
       
       inline def setOutput(value: js.Array[ShowdownExtension]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      inline def setOutputVarargs(value: ShowdownExtension*): Self = StObject.set(x, "output", js.Array(value :_*))
+      inline def setOutputVarargs(value: ShowdownExtension*): Self = StObject.set(x, "output", js.Array(value*))
     }
   }
   
@@ -397,19 +396,19 @@ object mod {
       
       inline def setGHtmlBlocksUndefined: Self = StObject.set(x, "gHtmlBlocks", js.undefined)
       
-      inline def setGHtmlBlocksVarargs(value: String*): Self = StObject.set(x, "gHtmlBlocks", js.Array(value :_*))
+      inline def setGHtmlBlocksVarargs(value: String*): Self = StObject.set(x, "gHtmlBlocks", js.Array(value*))
       
       inline def setGHtmlMdBlocks(value: js.Array[String]): Self = StObject.set(x, "gHtmlMdBlocks", value.asInstanceOf[js.Any])
       
       inline def setGHtmlMdBlocksUndefined: Self = StObject.set(x, "gHtmlMdBlocks", js.undefined)
       
-      inline def setGHtmlMdBlocksVarargs(value: String*): Self = StObject.set(x, "gHtmlMdBlocks", js.Array(value :_*))
+      inline def setGHtmlMdBlocksVarargs(value: String*): Self = StObject.set(x, "gHtmlMdBlocks", js.Array(value*))
       
       inline def setGHtmlSpans(value: js.Array[String]): Self = StObject.set(x, "gHtmlSpans", value.asInstanceOf[js.Any])
       
       inline def setGHtmlSpansUndefined: Self = StObject.set(x, "gHtmlSpans", js.undefined)
       
-      inline def setGHtmlSpansVarargs(value: String*): Self = StObject.set(x, "gHtmlSpans", js.Array(value :_*))
+      inline def setGHtmlSpansVarargs(value: String*): Self = StObject.set(x, "gHtmlSpans", js.Array(value*))
       
       inline def setGListLevel(value: Double): Self = StObject.set(x, "gListLevel", value.asInstanceOf[js.Any])
       
@@ -427,7 +426,7 @@ object mod {
       
       inline def setGhCodeBlocksUndefined: Self = StObject.set(x, "ghCodeBlocks", js.undefined)
       
-      inline def setGhCodeBlocksVarargs(value: Codeblock*): Self = StObject.set(x, "ghCodeBlocks", js.Array(value :_*))
+      inline def setGhCodeBlocksVarargs(value: Codeblock*): Self = StObject.set(x, "ghCodeBlocks", js.Array(value*))
       
       inline def setHashLinkCounts(value: StringDictionary[Double]): Self = StObject.set(x, "hashLinkCounts", value.asInstanceOf[js.Any])
       
@@ -437,7 +436,7 @@ object mod {
       
       inline def setLangExtensionsUndefined: Self = StObject.set(x, "langExtensions", js.undefined)
       
-      inline def setLangExtensionsVarargs(value: ShowdownExtension*): Self = StObject.set(x, "langExtensions", js.Array(value :_*))
+      inline def setLangExtensionsVarargs(value: ShowdownExtension*): Self = StObject.set(x, "langExtensions", js.Array(value*))
       
       inline def setMetadata(value: Format): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
@@ -447,7 +446,7 @@ object mod {
       
       inline def setOutputModifiersUndefined: Self = StObject.set(x, "outputModifiers", js.undefined)
       
-      inline def setOutputModifiersVarargs(value: ShowdownExtension*): Self = StObject.set(x, "outputModifiers", js.Array(value :_*))
+      inline def setOutputModifiersVarargs(value: ShowdownExtension*): Self = StObject.set(x, "outputModifiers", js.Array(value*))
     }
   }
   
@@ -483,7 +482,7 @@ object mod {
       
       inline def setExtensionsVarargs(
         value: ((js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]) | js.Array[ShowdownExtension] | ShowdownExtension | String)*
-      ): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      ): Self = StObject.set(x, "extensions", js.Array(value*))
     }
   }
   
@@ -615,20 +614,20 @@ object mod {
     */
   trait Helper_
     extends StObject
-       with /* key */ StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]] {
+       with /* key */ StringDictionary[js.Function1[/* repeated */ Any, Any]] {
     
-    def replaceRecursiveRegExp(args: js.Any*): String
+    def replaceRecursiveRegExp(args: Any*): String
   }
   object Helper_ {
     
-    inline def apply(replaceRecursiveRegExp: /* repeated */ js.Any => String): Helper_ = {
+    inline def apply(replaceRecursiveRegExp: /* repeated */ Any => String): Helper_ = {
       val __obj = js.Dynamic.literal(replaceRecursiveRegExp = js.Any.fromFunction1(replaceRecursiveRegExp))
       __obj.asInstanceOf[Helper_]
     }
     
     extension [Self <: Helper_](x: Self) {
       
-      inline def setReplaceRecursiveRegExp(value: /* repeated */ js.Any => String): Self = StObject.set(x, "replaceRecursiveRegExp", js.Any.fromFunction1(value))
+      inline def setReplaceRecursiveRegExp(value: /* repeated */ Any => String): Self = StObject.set(x, "replaceRecursiveRegExp", js.Any.fromFunction1(value))
     }
   }
   
@@ -657,14 +656,14 @@ object mod {
       * Keep in mind that, if a string is used, it will automatically be given a g modifier,
       * that is, it is assumed to be a global replacement.
       */
-    var regex: js.UndefOr[String | RegExp] = js.undefined
+    var regex: js.UndefOr[String | js.RegExp] = js.undefined
     
     /**
       * Can be either a string or a function. If replace is a string,
       * it can use the $1 syntax for group substitution,
       * exactly as if it were making use of string.replace (internally it does this actually).
       */
-    var replace: js.UndefOr[js.Any] = js.undefined
+    var replace: js.UndefOr[Any] = js.undefined
   }
   object RegexReplaceExtension {
     
@@ -676,11 +675,11 @@ object mod {
     
     extension [Self <: RegexReplaceExtension](x: Self) {
       
-      inline def setRegex(value: String | RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: String | js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
       inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
       
-      inline def setReplace(value: js.Any): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      inline def setReplace(value: Any): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
       inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     }
@@ -807,7 +806,7 @@ object mod {
        with /**
     * For custom options {extension, subParser} And also an out-of-date definitions
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /**
       * Support for HTML Tag escaping.
@@ -934,6 +933,12 @@ object mod {
       * @since 1.5.0
       */
     var disableForced4SpacesIndentedSublists: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Replaces three dots with the ellipsis unicode character.
+      * @default true
+      */
+    var ellipsis: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable emoji support.
@@ -1508,6 +1513,10 @@ object mod {
       
       inline def setDisableForced4SpacesIndentedSublistsUndefined: Self = StObject.set(x, "disableForced4SpacesIndentedSublists", js.undefined)
       
+      inline def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+      
+      inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+      
       inline def setEmoji(value: Boolean): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
       
       inline def setEmojiUndefined: Self = StObject.set(x, "emoji", js.undefined)
@@ -1633,6 +1642,6 @@ object mod {
   @js.native
   trait SubParser_ extends StObject {
     
-    def apply(args: js.Any*): String = js.native
+    def apply(args: Any*): String = js.native
   }
 }

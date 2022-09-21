@@ -49,7 +49,7 @@ object Region {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "availabilityZones", js.Array(value*))
     
     inline def setContinentCode(value: String): Self = StObject.set(x, "continentCode", value.asInstanceOf[js.Any])
     
@@ -71,6 +71,6 @@ object Region {
     
     inline def setRelationalDatabaseAvailabilityZonesUndefined: Self = StObject.set(x, "relationalDatabaseAvailabilityZones", js.undefined)
     
-    inline def setRelationalDatabaseAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "relationalDatabaseAvailabilityZones", js.Array(value :_*))
+    inline def setRelationalDatabaseAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "relationalDatabaseAvailabilityZones", js.Array(value*))
   }
 }

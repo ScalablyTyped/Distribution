@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAPICOM.Certificates> */
 trait CertificatesAsync
   extends StObject
-     with _Unpacked[js.Any] {
+     with _Unpacked[Any] {
   
   val Count: (// tslint:disable-line ban-types
   js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
@@ -22,7 +22,7 @@ trait CertificatesAsync
     Unpacked[
       js.Function3[
         /* findType */ ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE], 
-        /* varCriteria */ js.UndefOr[js.Any], 
+        /* varCriteria */ js.UndefOr[Any], 
         /* bFindValidOnly */ js.UndefOr[Boolean], 
         Certificates
       ]
@@ -30,7 +30,7 @@ trait CertificatesAsync
   ]) | (PromisifiedFunction[
     js.Function3[
       /* findType */ ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE], 
-      /* varCriteria */ js.UndefOr[js.Any], 
+      /* varCriteria */ js.UndefOr[Any], 
       /* bFindValidOnly */ js.UndefOr[Boolean], 
       Certificates
     ]
@@ -68,7 +68,7 @@ object CertificatesAsync {
       Unpacked[
         js.Function3[
           /* findType */ ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE], 
-          /* varCriteria */ js.UndefOr[js.Any], 
+          /* varCriteria */ js.UndefOr[Any], 
           /* bFindValidOnly */ js.UndefOr[Boolean], 
           Certificates
         ]
@@ -76,7 +76,7 @@ object CertificatesAsync {
     ]) | (PromisifiedFunction[
       js.Function3[
         /* findType */ ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE], 
-        /* varCriteria */ js.UndefOr[js.Any], 
+        /* varCriteria */ js.UndefOr[Any], 
         /* bFindValidOnly */ js.UndefOr[Boolean], 
         Certificates
       ]
@@ -116,7 +116,7 @@ object CertificatesAsync {
     inline def setCountFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "Count", js.Any.fromFunction1(value))
     
     inline def setFind(
@@ -125,7 +125,7 @@ object CertificatesAsync {
           Unpacked[
             js.Function3[
               /* findType */ ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE], 
-              /* varCriteria */ js.UndefOr[js.Any], 
+              /* varCriteria */ js.UndefOr[Any], 
               /* bFindValidOnly */ js.UndefOr[Boolean], 
               Certificates
             ]
@@ -133,7 +133,7 @@ object CertificatesAsync {
         ]) | (PromisifiedFunction[
           js.Function3[
             /* findType */ ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE], 
-            /* varCriteria */ js.UndefOr[js.Any], 
+            /* varCriteria */ js.UndefOr[Any], 
             /* bFindValidOnly */ js.UndefOr[Boolean], 
             Certificates
           ]
@@ -143,11 +143,11 @@ object CertificatesAsync {
     inline def setFindFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "Find", js.Any.fromFunction1(value))
     
     inline def setFindFunction3(
-      value: (/* findType */ ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE], /* varCriteria */ js.UndefOr[js.Any], /* bFindValidOnly */ js.UndefOr[Boolean]) => Certificates
+      value: (/* findType */ ValuesOf[CAPICOM_CERTIFICATE_FIND_TYPE], /* varCriteria */ js.UndefOr[Any], /* bFindValidOnly */ js.UndefOr[Boolean]) => Certificates
     ): Self = StObject.set(x, "Find", js.Any.fromFunction3(value))
     
     inline def setItem(
@@ -158,7 +158,7 @@ object CertificatesAsync {
     inline def setItemFunction1(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any]) | (/* index */ Double) => Certificate | js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any]) | (/* index */ Double) => Certificate | js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setSelect(
@@ -185,7 +185,7 @@ object CertificatesAsync {
     inline def setSelectFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "Select", js.Any.fromFunction1(value))
     
     inline def setSelectFunction3(

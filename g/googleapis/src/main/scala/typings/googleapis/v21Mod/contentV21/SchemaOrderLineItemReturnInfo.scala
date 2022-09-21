@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaOrderLineItemReturnInfo extends StObject {
   
   /**
-    * How many days later the item can be returned.
+    * Required. How many days later the item can be returned.
     */
-  var daysToReturn: js.UndefOr[Double] = js.undefined
+  var daysToReturn: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Whether the item is returnable.
+    * Required. Whether the item is returnable.
     */
-  var isReturnable: js.UndefOr[Boolean] = js.undefined
+  var isReturnable: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * URL of the item return policy.
+    * Required. URL of the item return policy.
     */
-  var policyUrl: js.UndefOr[String] = js.undefined
+  var policyUrl: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrderLineItemReturnInfo {
   
@@ -32,13 +32,19 @@ object SchemaOrderLineItemReturnInfo {
     
     inline def setDaysToReturn(value: Double): Self = StObject.set(x, "daysToReturn", value.asInstanceOf[js.Any])
     
+    inline def setDaysToReturnNull: Self = StObject.set(x, "daysToReturn", null)
+    
     inline def setDaysToReturnUndefined: Self = StObject.set(x, "daysToReturn", js.undefined)
     
     inline def setIsReturnable(value: Boolean): Self = StObject.set(x, "isReturnable", value.asInstanceOf[js.Any])
     
+    inline def setIsReturnableNull: Self = StObject.set(x, "isReturnable", null)
+    
     inline def setIsReturnableUndefined: Self = StObject.set(x, "isReturnable", js.undefined)
     
     inline def setPolicyUrl(value: String): Self = StObject.set(x, "policyUrl", value.asInstanceOf[js.Any])
+    
+    inline def setPolicyUrlNull: Self = StObject.set(x, "policyUrl", null)
     
     inline def setPolicyUrlUndefined: Self = StObject.set(x, "policyUrl", js.undefined)
   }

@@ -10,10 +10,10 @@ object swapCallsMod {
   
   @JSImport("material-ui/svg-icons/communication/swap-calls", JSImport.Default)
   @js.native
-  class default () extends CommunicationSwapCalls
+  open class default () extends CommunicationSwapCalls
   
   @JSImport("material-ui/svg-icons/communication/swap-calls", "CommunicationSwapCalls")
   @js.native
-  class CommunicationSwapCalls ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationSwapCalls ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

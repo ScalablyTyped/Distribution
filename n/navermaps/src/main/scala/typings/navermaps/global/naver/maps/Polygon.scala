@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.Polygon")
 @js.native
-class Polygon ()
+open class Polygon ()
   extends StObject
      with typings.navermaps.naver.maps.Polygon {
   def this(options: PolygonOptions) = this()

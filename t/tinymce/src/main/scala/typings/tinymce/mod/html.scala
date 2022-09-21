@@ -9,7 +9,7 @@ object html {
   
   @JSImport("tinymce", "html.DomParser")
   @js.native
-  class DomParser protected () extends StObject {
+  open class DomParser protected () extends StObject {
     def this(settings: js.Object, schema: Schema) = this()
     
     def addAttributeFilter(attributes: String, callback: js.Function0[Unit]): Unit = js.native
@@ -24,7 +24,7 @@ object html {
   
   @JSImport("tinymce", "html.Node")
   @js.native
-  class Node protected () extends StObject {
+  open class Node protected () extends StObject {
     def this(name: String, `type`: Double) = this()
     
     def append(node: Node): Node = js.native
@@ -57,7 +57,7 @@ object html {
   
   @JSImport("tinymce", "html.SaxParser")
   @js.native
-  class SaxParser protected () extends StObject {
+  open class SaxParser protected () extends StObject {
     def this(settings: js.Object, schema: Schema) = this()
     
     def parse(html: String): Unit = js.native
@@ -65,7 +65,7 @@ object html {
   
   @JSImport("tinymce", "html.Schema")
   @js.native
-  class Schema protected () extends StObject {
+  open class Schema protected () extends StObject {
     def this(settings: js.Object) = this()
     
     def addCustomElements(custom_elements: String): Unit = js.native
@@ -114,10 +114,35 @@ object html {
   
   @JSImport("tinymce", "html.Serializer")
   @js.native
-  class Serializer protected () extends StObject {
+  open class Serializer protected () extends StObject {
     def this(settings: js.Object, schema: Schema) = this()
     
     def serialize(node: Node): String = js.native
+  }
+  
+  @JSImport("tinymce", "html.Writer")
+  @js.native
+  open class Writer protected () extends StObject {
+    def this(settings: js.Object) = this()
+    
+    def cdata(text: String): Unit = js.native
+    
+    def doctype(text: String): Unit = js.native
+    
+    def end(name: String): Unit = js.native
+    
+    def getContent(): String = js.native
+    
+    def pi(name: String, text: String): Unit = js.native
+    
+    def reset(): Unit = js.native
+    
+    def start(name: String): Unit = js.native
+    def start(name: String, attrs: js.Array[Any]): Unit = js.native
+    def start(name: String, attrs: js.Array[Any], empty: Boolean): Unit = js.native
+    def start(name: String, attrs: Unit, empty: Boolean): Unit = js.native
+    
+    def text(text: String, raw: Boolean): Unit = js.native
   }
   
   @js.native
@@ -165,28 +190,5 @@ object html {
       
       inline def setToHex(value: String => String): Self = StObject.set(x, "toHex", js.Any.fromFunction1(value))
     }
-  }
-  
-  @js.native
-  trait Writer extends StObject {
-    
-    def cdata(text: String): Unit = js.native
-    
-    def doctype(text: String): Unit = js.native
-    
-    def end(name: String): Unit = js.native
-    
-    def getContent(): String = js.native
-    
-    def pi(name: String, text: String): Unit = js.native
-    
-    def reset(): Unit = js.native
-    
-    def start(name: String): Unit = js.native
-    def start(name: String, attrs: js.Array[js.Any]): Unit = js.native
-    def start(name: String, attrs: js.Array[js.Any], empty: Boolean): Unit = js.native
-    def start(name: String, attrs: Unit, empty: Boolean): Unit = js.native
-    
-    def text(text: String, raw: Boolean): Unit = js.native
   }
 }

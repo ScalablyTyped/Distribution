@@ -1,9 +1,15 @@
 package typings.asana.mod.resources
 
 import org.scalablytyped.runtime.Shortcut
+import typings.asana.anon.Color
+import typings.asana.anon.Dueat
+import typings.asana.anon.Fallback
+import typings.asana.anon.Resourcecolorstringenable
+import typings.asana.anon.User
 import typings.asana.mod.Dispatcher
 import typings.asana.mod.resources.Stories.ShortType
 import typings.asana.mod.resources.Stories.Type
+import typings.bluebird.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Stories
   extends StObject
-     with Resource {
+     with TopLevelResource {
   
   /**
     * * Adds a comment to a task. The comment will be authored by the
@@ -40,10 +46,10 @@ trait Stories
     * @param dispatchOptions?
     * @return
     */
-  def createOnTask(task: String, data: js.Any): typings.bluebird.mod.^[ResourceList[ShortType]] = js.native
-  def createOnTask(task: String, data: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[ShortType]] = js.native
-  def createOnTask(task: Double, data: js.Any): typings.bluebird.mod.^[ResourceList[ShortType]] = js.native
-  def createOnTask(task: Double, data: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[ShortType]] = js.native
+  def createOnTask(task: String, data: Any): ^[ResourceList[ShortType]] = js.native
+  def createOnTask(task: String, data: Any, dispatchOptions: Any): ^[ResourceList[ShortType]] = js.native
+  def createOnTask(task: Double, data: Any): ^[ResourceList[ShortType]] = js.native
+  def createOnTask(task: Double, data: Any, dispatchOptions: Any): ^[ResourceList[ShortType]] = js.native
   
   /**
     * * Returns the full record for a single story.
@@ -56,14 +62,14 @@ trait Stories
     * @param dispatchOptions?
     * @return
     */
-  def findById(story: String): typings.bluebird.mod.^[Type] = js.native
-  def findById(story: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def findById(story: String, params: Params): typings.bluebird.mod.^[Type] = js.native
-  def findById(story: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def findById(story: Double): typings.bluebird.mod.^[Type] = js.native
-  def findById(story: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def findById(story: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
-  def findById(story: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(story: String): ^[Type] = js.native
+  def findById(story: String, params: Unit, dispatchOptions: Any): ^[Type] = js.native
+  def findById(story: String, params: Params): ^[Type] = js.native
+  def findById(story: String, params: Params, dispatchOptions: Any): ^[Type] = js.native
+  def findById(story: Double): ^[Type] = js.native
+  def findById(story: Double, params: Unit, dispatchOptions: Any): ^[Type] = js.native
+  def findById(story: Double, params: Params): ^[Type] = js.native
+  def findById(story: Double, params: Params, dispatchOptions: Any): ^[Type] = js.native
   
   /**
     * * Returns the compact records for all stories on the task.
@@ -76,21 +82,21 @@ trait Stories
     * @param dispatchOptions?
     * @return
     */
-  def findByTask(task: String): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTask(task: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTask(task: String, params: PaginationParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTask(task: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTask(task: Double): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTask(task: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTask(task: Double, params: PaginationParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTask(task: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByTask(task: String): ^[ResourceList[Type]] = js.native
+  def findByTask(task: String, params: Unit, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
+  def findByTask(task: String, params: PaginationParams): ^[ResourceList[Type]] = js.native
+  def findByTask(task: String, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
+  def findByTask(task: Double): ^[ResourceList[Type]] = js.native
+  def findByTask(task: Double, params: Unit, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
+  def findByTask(task: Double, params: PaginationParams): ^[ResourceList[Type]] = js.native
+  def findByTask(task: Double, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
 }
 object Stories extends Shortcut {
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Stories")
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Stories {
     /**
@@ -103,32 +109,296 @@ object Stories extends Shortcut {
   @js.native
   val ^ : StoriesStatic = js.native
   
-  @js.native
-  trait ShortType
-    extends StObject
-       with Resource {
+  // https://developers.asana.com/docs/story-compact
+  trait ShortType extends StObject {
     
-    var created_at: String = js.native
+    var created_at: String
     
-    var created_by: Resource = js.native
+    var created_by: Resource
     
-    var text: String = js.native
+    var gid: String
     
-    var `type`: String = js.native
+    var resource_subtype: String
+    
+    var resource_type: String
+    
+    // not documented
+    var text: String
+    
+    var `type`: String
+  }
+  object ShortType {
+    
+    inline def apply(
+      created_at: String,
+      created_by: Resource,
+      gid: String,
+      resource_subtype: String,
+      resource_type: String,
+      text: String,
+      `type`: String
+    ): ShortType = {
+      val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], created_by = created_by.asInstanceOf[js.Any], gid = gid.asInstanceOf[js.Any], resource_subtype = resource_subtype.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ShortType]
+    }
+    
+    extension [Self <: ShortType](x: Self) {
+      
+      inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      
+      inline def setCreated_by(value: Resource): Self = StObject.set(x, "created_by", value.asInstanceOf[js.Any])
+      
+      inline def setGid(value: String): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      
+      inline def setResource_subtype(value: String): Self = StObject.set(x, "resource_subtype", value.asInstanceOf[js.Any])
+      
+      inline def setResource_type(value: String): Self = StObject.set(x, "resource_type", value.asInstanceOf[js.Any])
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
+  // https://developers.asana.com/docs/story
   trait Type
     extends StObject
        with ShortType {
     
-    var hearts: js.Array[Type] = js.native
+    var assignee: Resource
     
-    var html_text: String = js.native
+    var custom_field: CustomField
     
-    var source: String = js.native
+    var dependency: Resource
     
-    var target: Resource = js.native
+    var duplicate_of: Resource
+    
+    var duplicated_from: Resource
+    
+    var follower: Resource
+    
+    var hearted: Boolean
+    
+    // deprecated
+    var hearts: js.Array[User]
+    
+    var html_text: String
+    
+    // deprecated
+    var is_edited: Boolean
+    
+    var is_pinned: Boolean
+    
+    var liked: Boolean
+    
+    var likes: js.Array[User]
+    
+    var new_approval_status: String
+    
+    var new_dates: Dueat
+    
+    var new_enum_value: Resourcecolorstringenable
+    
+    var new_multi_enum_values: Resource & js.Array[Color]
+    
+    var new_name: String
+    
+    var new_number_value: Double
+    
+    var new_resource_subtype: String
+    
+    var new_section: Resource
+    
+    var new_text_value: String
+    
+    var num_hearts: Double
+    
+    // deprecated
+    var num_likes: Double
+    
+    var old_approval_status: String
+    
+    var old_dates: Dueat
+    
+    var old_enum_value: Resourcecolorstringenable
+    
+    var old_multi_enum_values: Resource & js.Array[Color]
+    
+    var old_name: String
+    
+    var old_number_value: Double
+    
+    var old_resource_subtype: String
+    
+    var old_section: Resource
+    
+    var old_text_value: String
+    
+    var previews: js.Array[Fallback]
+    
+    var project: Resource
+    
+    var source: String
+    
+    var sticker_name: String | Null
+    
+    var story: ShortType
+    
+    var tag: Resource
+    
+    var target: Resource
+    
+    var task: Resource
+  }
+  object Type {
+    
+    inline def apply(
+      assignee: Resource,
+      created_at: String,
+      created_by: Resource,
+      custom_field: CustomField,
+      dependency: Resource,
+      duplicate_of: Resource,
+      duplicated_from: Resource,
+      follower: Resource,
+      gid: String,
+      hearted: Boolean,
+      hearts: js.Array[User],
+      html_text: String,
+      is_edited: Boolean,
+      is_pinned: Boolean,
+      liked: Boolean,
+      likes: js.Array[User],
+      new_approval_status: String,
+      new_dates: Dueat,
+      new_enum_value: Resourcecolorstringenable,
+      new_multi_enum_values: Resource & js.Array[Color],
+      new_name: String,
+      new_number_value: Double,
+      new_resource_subtype: String,
+      new_section: Resource,
+      new_text_value: String,
+      num_hearts: Double,
+      num_likes: Double,
+      old_approval_status: String,
+      old_dates: Dueat,
+      old_enum_value: Resourcecolorstringenable,
+      old_multi_enum_values: Resource & js.Array[Color],
+      old_name: String,
+      old_number_value: Double,
+      old_resource_subtype: String,
+      old_section: Resource,
+      old_text_value: String,
+      previews: js.Array[Fallback],
+      project: Resource,
+      resource_subtype: String,
+      resource_type: String,
+      source: String,
+      story: ShortType,
+      tag: Resource,
+      target: Resource,
+      task: Resource,
+      text: String,
+      `type`: String
+    ): Type = {
+      val __obj = js.Dynamic.literal(assignee = assignee.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], created_by = created_by.asInstanceOf[js.Any], custom_field = custom_field.asInstanceOf[js.Any], dependency = dependency.asInstanceOf[js.Any], duplicate_of = duplicate_of.asInstanceOf[js.Any], duplicated_from = duplicated_from.asInstanceOf[js.Any], follower = follower.asInstanceOf[js.Any], gid = gid.asInstanceOf[js.Any], hearted = hearted.asInstanceOf[js.Any], hearts = hearts.asInstanceOf[js.Any], html_text = html_text.asInstanceOf[js.Any], is_edited = is_edited.asInstanceOf[js.Any], is_pinned = is_pinned.asInstanceOf[js.Any], liked = liked.asInstanceOf[js.Any], likes = likes.asInstanceOf[js.Any], new_approval_status = new_approval_status.asInstanceOf[js.Any], new_dates = new_dates.asInstanceOf[js.Any], new_enum_value = new_enum_value.asInstanceOf[js.Any], new_multi_enum_values = new_multi_enum_values.asInstanceOf[js.Any], new_name = new_name.asInstanceOf[js.Any], new_number_value = new_number_value.asInstanceOf[js.Any], new_resource_subtype = new_resource_subtype.asInstanceOf[js.Any], new_section = new_section.asInstanceOf[js.Any], new_text_value = new_text_value.asInstanceOf[js.Any], num_hearts = num_hearts.asInstanceOf[js.Any], num_likes = num_likes.asInstanceOf[js.Any], old_approval_status = old_approval_status.asInstanceOf[js.Any], old_dates = old_dates.asInstanceOf[js.Any], old_enum_value = old_enum_value.asInstanceOf[js.Any], old_multi_enum_values = old_multi_enum_values.asInstanceOf[js.Any], old_name = old_name.asInstanceOf[js.Any], old_number_value = old_number_value.asInstanceOf[js.Any], old_resource_subtype = old_resource_subtype.asInstanceOf[js.Any], old_section = old_section.asInstanceOf[js.Any], old_text_value = old_text_value.asInstanceOf[js.Any], previews = previews.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], resource_subtype = resource_subtype.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], sticker_name = null)
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Type]
+    }
+    
+    extension [Self <: Type](x: Self) {
+      
+      inline def setAssignee(value: Resource): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
+      
+      inline def setCustom_field(value: CustomField): Self = StObject.set(x, "custom_field", value.asInstanceOf[js.Any])
+      
+      inline def setDependency(value: Resource): Self = StObject.set(x, "dependency", value.asInstanceOf[js.Any])
+      
+      inline def setDuplicate_of(value: Resource): Self = StObject.set(x, "duplicate_of", value.asInstanceOf[js.Any])
+      
+      inline def setDuplicated_from(value: Resource): Self = StObject.set(x, "duplicated_from", value.asInstanceOf[js.Any])
+      
+      inline def setFollower(value: Resource): Self = StObject.set(x, "follower", value.asInstanceOf[js.Any])
+      
+      inline def setHearted(value: Boolean): Self = StObject.set(x, "hearted", value.asInstanceOf[js.Any])
+      
+      inline def setHearts(value: js.Array[User]): Self = StObject.set(x, "hearts", value.asInstanceOf[js.Any])
+      
+      inline def setHeartsVarargs(value: User*): Self = StObject.set(x, "hearts", js.Array(value*))
+      
+      inline def setHtml_text(value: String): Self = StObject.set(x, "html_text", value.asInstanceOf[js.Any])
+      
+      inline def setIs_edited(value: Boolean): Self = StObject.set(x, "is_edited", value.asInstanceOf[js.Any])
+      
+      inline def setIs_pinned(value: Boolean): Self = StObject.set(x, "is_pinned", value.asInstanceOf[js.Any])
+      
+      inline def setLiked(value: Boolean): Self = StObject.set(x, "liked", value.asInstanceOf[js.Any])
+      
+      inline def setLikes(value: js.Array[User]): Self = StObject.set(x, "likes", value.asInstanceOf[js.Any])
+      
+      inline def setLikesVarargs(value: User*): Self = StObject.set(x, "likes", js.Array(value*))
+      
+      inline def setNew_approval_status(value: String): Self = StObject.set(x, "new_approval_status", value.asInstanceOf[js.Any])
+      
+      inline def setNew_dates(value: Dueat): Self = StObject.set(x, "new_dates", value.asInstanceOf[js.Any])
+      
+      inline def setNew_enum_value(value: Resourcecolorstringenable): Self = StObject.set(x, "new_enum_value", value.asInstanceOf[js.Any])
+      
+      inline def setNew_multi_enum_values(value: Resource & js.Array[Color]): Self = StObject.set(x, "new_multi_enum_values", value.asInstanceOf[js.Any])
+      
+      inline def setNew_name(value: String): Self = StObject.set(x, "new_name", value.asInstanceOf[js.Any])
+      
+      inline def setNew_number_value(value: Double): Self = StObject.set(x, "new_number_value", value.asInstanceOf[js.Any])
+      
+      inline def setNew_resource_subtype(value: String): Self = StObject.set(x, "new_resource_subtype", value.asInstanceOf[js.Any])
+      
+      inline def setNew_section(value: Resource): Self = StObject.set(x, "new_section", value.asInstanceOf[js.Any])
+      
+      inline def setNew_text_value(value: String): Self = StObject.set(x, "new_text_value", value.asInstanceOf[js.Any])
+      
+      inline def setNum_hearts(value: Double): Self = StObject.set(x, "num_hearts", value.asInstanceOf[js.Any])
+      
+      inline def setNum_likes(value: Double): Self = StObject.set(x, "num_likes", value.asInstanceOf[js.Any])
+      
+      inline def setOld_approval_status(value: String): Self = StObject.set(x, "old_approval_status", value.asInstanceOf[js.Any])
+      
+      inline def setOld_dates(value: Dueat): Self = StObject.set(x, "old_dates", value.asInstanceOf[js.Any])
+      
+      inline def setOld_enum_value(value: Resourcecolorstringenable): Self = StObject.set(x, "old_enum_value", value.asInstanceOf[js.Any])
+      
+      inline def setOld_multi_enum_values(value: Resource & js.Array[Color]): Self = StObject.set(x, "old_multi_enum_values", value.asInstanceOf[js.Any])
+      
+      inline def setOld_name(value: String): Self = StObject.set(x, "old_name", value.asInstanceOf[js.Any])
+      
+      inline def setOld_number_value(value: Double): Self = StObject.set(x, "old_number_value", value.asInstanceOf[js.Any])
+      
+      inline def setOld_resource_subtype(value: String): Self = StObject.set(x, "old_resource_subtype", value.asInstanceOf[js.Any])
+      
+      inline def setOld_section(value: Resource): Self = StObject.set(x, "old_section", value.asInstanceOf[js.Any])
+      
+      inline def setOld_text_value(value: String): Self = StObject.set(x, "old_text_value", value.asInstanceOf[js.Any])
+      
+      inline def setPreviews(value: js.Array[Fallback]): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
+      
+      inline def setPreviewsVarargs(value: Fallback*): Self = StObject.set(x, "previews", js.Array(value*))
+      
+      inline def setProject(value: Resource): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      
+      inline def setSticker_name(value: String): Self = StObject.set(x, "sticker_name", value.asInstanceOf[js.Any])
+      
+      inline def setSticker_nameNull: Self = StObject.set(x, "sticker_name", null)
+      
+      inline def setStory(value: ShortType): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
+      
+      inline def setTag(value: Resource): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      
+      inline def setTarget(value: Resource): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTask(value: Resource): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    }
   }
   
   type _To = StoriesStatic

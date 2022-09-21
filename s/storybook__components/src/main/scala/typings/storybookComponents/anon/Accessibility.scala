@@ -28,6 +28,8 @@ trait Accessibility extends StObject {
   
   var arrowup: String
   
+  var azuredevops: String
+  
   var back: String
   
   var basket: String
@@ -86,6 +88,10 @@ trait Accessibility extends StObject {
   
   var comment: String
   
+  var commentadd: String
+  
+  var comments: String
+  
   var commit: String
   
   var compass: String
@@ -139,6 +145,8 @@ trait Accessibility extends StObject {
   var faceneutral: String
   
   var facesad: String
+  
+  var fastforward: String
   
   var filter: String
   
@@ -226,6 +234,10 @@ trait Accessibility extends StObject {
   
   var play: String
   
+  var playback: String
+  
+  var playnext: String
+  
   var plus: String
   
   var power: String
@@ -250,7 +262,11 @@ trait Accessibility extends StObject {
   
   var requestchange: String
   
+  var rewind: String
+  
   var rss: String
+  
+  var ruler: String
   
   var search: String
   
@@ -271,6 +287,8 @@ trait Accessibility extends StObject {
   var starhollow: String
   
   var stop: String
+  
+  var stopalt: String
   
   var structure: String
   
@@ -312,6 +330,8 @@ trait Accessibility extends StObject {
   
   var users: String
   
+  var verified: String
+  
   var video: String
   
   var watch: String
@@ -340,6 +360,7 @@ object Accessibility {
     arrowright: String,
     arrowrightalt: String,
     arrowup: String,
+    azuredevops: String,
     back: String,
     basket: String,
     batchaccept: String,
@@ -369,6 +390,8 @@ object Accessibility {
     cog: String,
     collapse: String,
     comment: String,
+    commentadd: String,
+    comments: String,
     commit: String,
     compass: String,
     component: String,
@@ -396,6 +419,7 @@ object Accessibility {
     facehappy: String,
     faceneutral: String,
     facesad: String,
+    fastforward: String,
     filter: String,
     flag: String,
     folder: String,
@@ -439,6 +463,8 @@ object Accessibility {
     photo: String,
     pin: String,
     play: String,
+    playback: String,
+    playnext: String,
     plus: String,
     power: String,
     print: String,
@@ -451,7 +477,9 @@ object Accessibility {
     reply: String,
     repository: String,
     requestchange: String,
+    rewind: String,
     rss: String,
+    ruler: String,
     search: String,
     share: String,
     sharealt: String,
@@ -462,6 +490,7 @@ object Accessibility {
     star: String,
     starhollow: String,
     stop: String,
+    stopalt: String,
     structure: String,
     subtract: String,
     support: String,
@@ -482,6 +511,7 @@ object Accessibility {
     useradd: String,
     useralt: String,
     users: String,
+    verified: String,
     video: String,
     watch: String,
     wrench: String,
@@ -490,7 +520,7 @@ object Accessibility {
     zoomout: String,
     zoomreset: String
   ): Accessibility = {
-    val __obj = js.Dynamic.literal(accessibility = accessibility.asInstanceOf[js.Any], accessibilityalt = accessibilityalt.asInstanceOf[js.Any], add = add.asInstanceOf[js.Any], admin = admin.asInstanceOf[js.Any], alert = alert.asInstanceOf[js.Any], arrowdown = arrowdown.asInstanceOf[js.Any], arrowleft = arrowleft.asInstanceOf[js.Any], arrowleftalt = arrowleftalt.asInstanceOf[js.Any], arrowright = arrowright.asInstanceOf[js.Any], arrowrightalt = arrowrightalt.asInstanceOf[js.Any], arrowup = arrowup.asInstanceOf[js.Any], back = back.asInstanceOf[js.Any], basket = basket.asInstanceOf[js.Any], batchaccept = batchaccept.asInstanceOf[js.Any], batchdeny = batchdeny.asInstanceOf[js.Any], beaker = beaker.asInstanceOf[js.Any], bell = bell.asInstanceOf[js.Any], bitbucket = bitbucket.asInstanceOf[js.Any], book = book.asInstanceOf[js.Any], bookmark = bookmark.asInstanceOf[js.Any], bookmarkhollow = bookmarkhollow.asInstanceOf[js.Any], bottombar = bottombar.asInstanceOf[js.Any], box = box.asInstanceOf[js.Any], branch = branch.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], calendar = calendar.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], certificate = certificate.asInstanceOf[js.Any], check = check.asInstanceOf[js.Any], chevrondown = chevrondown.asInstanceOf[js.Any], chromatic = chromatic.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], circlehollow = circlehollow.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], closeAlt = closeAlt.asInstanceOf[js.Any], cog = cog.asInstanceOf[js.Any], collapse = collapse.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], compass = compass.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], contrast = contrast.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], cpu = cpu.asInstanceOf[js.Any], credit = credit.asInstanceOf[js.Any], cross = cross.asInstanceOf[js.Any], dashboard = dashboard.asInstanceOf[js.Any], database = database.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], discord = discord.asInstanceOf[js.Any], docchart = docchart.asInstanceOf[js.Any], doclist = doclist.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], download = download.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], ellipsis = ellipsis.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], expandalt = expandalt.asInstanceOf[js.Any], eye = eye.asInstanceOf[js.Any], eyeclose = eyeclose.asInstanceOf[js.Any], facebook = facebook.asInstanceOf[js.Any], facehappy = facehappy.asInstanceOf[js.Any], faceneutral = faceneutral.asInstanceOf[js.Any], facesad = facesad.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], flag = flag.asInstanceOf[js.Any], folder = folder.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], gdrive = gdrive.asInstanceOf[js.Any], github = github.asInstanceOf[js.Any], gitlab = gitlab.asInstanceOf[js.Any], globe = globe.asInstanceOf[js.Any], google = google.asInstanceOf[js.Any], graphbar = graphbar.asInstanceOf[js.Any], graphline = graphline.asInstanceOf[js.Any], graphql = graphql.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], grow = grow.asInstanceOf[js.Any], heart = heart.asInstanceOf[js.Any], hearthollow = hearthollow.asInstanceOf[js.Any], home = home.asInstanceOf[js.Any], hourglass = hourglass.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], lightning = lightning.asInstanceOf[js.Any], lightningoff = lightningoff.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], listunordered = listunordered.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], lock = lock.asInstanceOf[js.Any], markup = markup.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], merge = merge.asInstanceOf[js.Any], mirror = mirror.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any], nut = nut.asInstanceOf[js.Any], outbox = outbox.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], paintbrush = paintbrush.asInstanceOf[js.Any], paperclip = paperclip.asInstanceOf[js.Any], paragraph = paragraph.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], photo = photo.asInstanceOf[js.Any], pin = pin.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], plus = plus.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], print = print.asInstanceOf[js.Any], proceed = proceed.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], pullrequest = pullrequest.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], redirect = redirect.asInstanceOf[js.Any], redux = redux.asInstanceOf[js.Any], reply = reply.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], requestchange = requestchange.asInstanceOf[js.Any], rss = rss.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], share = share.asInstanceOf[js.Any], sharealt = sharealt.asInstanceOf[js.Any], shield = shield.asInstanceOf[js.Any], sidebar = sidebar.asInstanceOf[js.Any], sidebaralt = sidebaralt.asInstanceOf[js.Any], speaker = speaker.asInstanceOf[js.Any], star = star.asInstanceOf[js.Any], starhollow = starhollow.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], structure = structure.asInstanceOf[js.Any], subtract = subtract.asInstanceOf[js.Any], support = support.asInstanceOf[js.Any], switchalt = switchalt.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any], tablet = tablet.asInstanceOf[js.Any], thumbsup = thumbsup.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], timer = timer.asInstanceOf[js.Any], transfer = transfer.asInstanceOf[js.Any], trash = trash.asInstanceOf[js.Any], twitter = twitter.asInstanceOf[js.Any], undo = undo.asInstanceOf[js.Any], unfold = unfold.asInstanceOf[js.Any], unlock = unlock.asInstanceOf[js.Any], upload = upload.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], useradd = useradd.asInstanceOf[js.Any], useralt = useralt.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any], wrench = wrench.asInstanceOf[js.Any], youtube = youtube.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any], zoomout = zoomout.asInstanceOf[js.Any], zoomreset = zoomreset.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accessibility = accessibility.asInstanceOf[js.Any], accessibilityalt = accessibilityalt.asInstanceOf[js.Any], add = add.asInstanceOf[js.Any], admin = admin.asInstanceOf[js.Any], alert = alert.asInstanceOf[js.Any], arrowdown = arrowdown.asInstanceOf[js.Any], arrowleft = arrowleft.asInstanceOf[js.Any], arrowleftalt = arrowleftalt.asInstanceOf[js.Any], arrowright = arrowright.asInstanceOf[js.Any], arrowrightalt = arrowrightalt.asInstanceOf[js.Any], arrowup = arrowup.asInstanceOf[js.Any], azuredevops = azuredevops.asInstanceOf[js.Any], back = back.asInstanceOf[js.Any], basket = basket.asInstanceOf[js.Any], batchaccept = batchaccept.asInstanceOf[js.Any], batchdeny = batchdeny.asInstanceOf[js.Any], beaker = beaker.asInstanceOf[js.Any], bell = bell.asInstanceOf[js.Any], bitbucket = bitbucket.asInstanceOf[js.Any], book = book.asInstanceOf[js.Any], bookmark = bookmark.asInstanceOf[js.Any], bookmarkhollow = bookmarkhollow.asInstanceOf[js.Any], bottombar = bottombar.asInstanceOf[js.Any], box = box.asInstanceOf[js.Any], branch = branch.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], calendar = calendar.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], certificate = certificate.asInstanceOf[js.Any], check = check.asInstanceOf[js.Any], chevrondown = chevrondown.asInstanceOf[js.Any], chromatic = chromatic.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], circlehollow = circlehollow.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], closeAlt = closeAlt.asInstanceOf[js.Any], cog = cog.asInstanceOf[js.Any], collapse = collapse.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], commentadd = commentadd.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], compass = compass.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], contrast = contrast.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], cpu = cpu.asInstanceOf[js.Any], credit = credit.asInstanceOf[js.Any], cross = cross.asInstanceOf[js.Any], dashboard = dashboard.asInstanceOf[js.Any], database = database.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], discord = discord.asInstanceOf[js.Any], docchart = docchart.asInstanceOf[js.Any], doclist = doclist.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], download = download.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], ellipsis = ellipsis.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], expandalt = expandalt.asInstanceOf[js.Any], eye = eye.asInstanceOf[js.Any], eyeclose = eyeclose.asInstanceOf[js.Any], facebook = facebook.asInstanceOf[js.Any], facehappy = facehappy.asInstanceOf[js.Any], faceneutral = faceneutral.asInstanceOf[js.Any], facesad = facesad.asInstanceOf[js.Any], fastforward = fastforward.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], flag = flag.asInstanceOf[js.Any], folder = folder.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], gdrive = gdrive.asInstanceOf[js.Any], github = github.asInstanceOf[js.Any], gitlab = gitlab.asInstanceOf[js.Any], globe = globe.asInstanceOf[js.Any], google = google.asInstanceOf[js.Any], graphbar = graphbar.asInstanceOf[js.Any], graphline = graphline.asInstanceOf[js.Any], graphql = graphql.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], grow = grow.asInstanceOf[js.Any], heart = heart.asInstanceOf[js.Any], hearthollow = hearthollow.asInstanceOf[js.Any], home = home.asInstanceOf[js.Any], hourglass = hourglass.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], lightning = lightning.asInstanceOf[js.Any], lightningoff = lightningoff.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], listunordered = listunordered.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], lock = lock.asInstanceOf[js.Any], markup = markup.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], merge = merge.asInstanceOf[js.Any], mirror = mirror.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any], nut = nut.asInstanceOf[js.Any], outbox = outbox.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], paintbrush = paintbrush.asInstanceOf[js.Any], paperclip = paperclip.asInstanceOf[js.Any], paragraph = paragraph.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], photo = photo.asInstanceOf[js.Any], pin = pin.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playback = playback.asInstanceOf[js.Any], playnext = playnext.asInstanceOf[js.Any], plus = plus.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], print = print.asInstanceOf[js.Any], proceed = proceed.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], pullrequest = pullrequest.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], redirect = redirect.asInstanceOf[js.Any], redux = redux.asInstanceOf[js.Any], reply = reply.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], requestchange = requestchange.asInstanceOf[js.Any], rewind = rewind.asInstanceOf[js.Any], rss = rss.asInstanceOf[js.Any], ruler = ruler.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], share = share.asInstanceOf[js.Any], sharealt = sharealt.asInstanceOf[js.Any], shield = shield.asInstanceOf[js.Any], sidebar = sidebar.asInstanceOf[js.Any], sidebaralt = sidebaralt.asInstanceOf[js.Any], speaker = speaker.asInstanceOf[js.Any], star = star.asInstanceOf[js.Any], starhollow = starhollow.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], stopalt = stopalt.asInstanceOf[js.Any], structure = structure.asInstanceOf[js.Any], subtract = subtract.asInstanceOf[js.Any], support = support.asInstanceOf[js.Any], switchalt = switchalt.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any], tablet = tablet.asInstanceOf[js.Any], thumbsup = thumbsup.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], timer = timer.asInstanceOf[js.Any], transfer = transfer.asInstanceOf[js.Any], trash = trash.asInstanceOf[js.Any], twitter = twitter.asInstanceOf[js.Any], undo = undo.asInstanceOf[js.Any], unfold = unfold.asInstanceOf[js.Any], unlock = unlock.asInstanceOf[js.Any], upload = upload.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], useradd = useradd.asInstanceOf[js.Any], useralt = useralt.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any], wrench = wrench.asInstanceOf[js.Any], youtube = youtube.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any], zoomout = zoomout.asInstanceOf[js.Any], zoomreset = zoomreset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Accessibility]
   }
   
@@ -517,6 +547,8 @@ object Accessibility {
     inline def setArrowrightalt(value: String): Self = StObject.set(x, "arrowrightalt", value.asInstanceOf[js.Any])
     
     inline def setArrowup(value: String): Self = StObject.set(x, "arrowup", value.asInstanceOf[js.Any])
+    
+    inline def setAzuredevops(value: String): Self = StObject.set(x, "azuredevops", value.asInstanceOf[js.Any])
     
     inline def setBack(value: String): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
@@ -576,6 +608,10 @@ object Accessibility {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
+    inline def setCommentadd(value: String): Self = StObject.set(x, "commentadd", value.asInstanceOf[js.Any])
+    
+    inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    
     inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     inline def setCompass(value: String): Self = StObject.set(x, "compass", value.asInstanceOf[js.Any])
@@ -629,6 +665,8 @@ object Accessibility {
     inline def setFaceneutral(value: String): Self = StObject.set(x, "faceneutral", value.asInstanceOf[js.Any])
     
     inline def setFacesad(value: String): Self = StObject.set(x, "facesad", value.asInstanceOf[js.Any])
+    
+    inline def setFastforward(value: String): Self = StObject.set(x, "fastforward", value.asInstanceOf[js.Any])
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
@@ -716,6 +754,10 @@ object Accessibility {
     
     inline def setPlay(value: String): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     
+    inline def setPlayback(value: String): Self = StObject.set(x, "playback", value.asInstanceOf[js.Any])
+    
+    inline def setPlaynext(value: String): Self = StObject.set(x, "playnext", value.asInstanceOf[js.Any])
+    
     inline def setPlus(value: String): Self = StObject.set(x, "plus", value.asInstanceOf[js.Any])
     
     inline def setPower(value: String): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
@@ -740,7 +782,11 @@ object Accessibility {
     
     inline def setRequestchange(value: String): Self = StObject.set(x, "requestchange", value.asInstanceOf[js.Any])
     
+    inline def setRewind(value: String): Self = StObject.set(x, "rewind", value.asInstanceOf[js.Any])
+    
     inline def setRss(value: String): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
+    
+    inline def setRuler(value: String): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
     
     inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
@@ -761,6 +807,8 @@ object Accessibility {
     inline def setStarhollow(value: String): Self = StObject.set(x, "starhollow", value.asInstanceOf[js.Any])
     
     inline def setStop(value: String): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    
+    inline def setStopalt(value: String): Self = StObject.set(x, "stopalt", value.asInstanceOf[js.Any])
     
     inline def setStructure(value: String): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
     
@@ -801,6 +849,8 @@ object Accessibility {
     inline def setUseralt(value: String): Self = StObject.set(x, "useralt", value.asInstanceOf[js.Any])
     
     inline def setUsers(value: String): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    
+    inline def setVerified(value: String): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
     
     inline def setVideo(value: String): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     

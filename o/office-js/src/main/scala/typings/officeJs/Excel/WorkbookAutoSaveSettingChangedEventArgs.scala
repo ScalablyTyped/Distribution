@@ -6,17 +6,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the workbook's `onAutoSaveSettingChanged` event.
   *
-  * Provides information about the workbook's onAutoSaveSettingChanged event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait WorkbookAutoSaveSettingChangedEventArgs extends StObject {
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var `type`: WorkbookAutoSaveSettingChanged

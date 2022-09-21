@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object arrayKeysMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, searchValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], searchValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, searchValue: js.Any, argStrict: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], searchValue.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, searchValue: Unit, argStrict: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], searchValue.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, searchValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], searchValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, searchValue: js.Any, argStrict: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], searchValue.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, searchValue: Unit, argStrict: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], searchValue.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(input: Any): Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(input: Any, searchValue: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], searchValue.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, searchValue: Any, argStrict: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], searchValue.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, searchValue: Unit, argStrict: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], searchValue.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, searchValue: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], searchValue.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, searchValue: Any, argStrict: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], searchValue.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, searchValue: Unit, argStrict: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], searchValue.asInstanceOf[js.Any], argStrict.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/array/array_keys", JSImport.Namespace)
   @js.native

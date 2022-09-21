@@ -13,17 +13,17 @@ object ngTableEventsChannelMod {
   
   @JSImport("ng-table/src/core/ngTableEventsChannel", "NgTableEventsChannel")
   @js.native
-  class NgTableEventsChannel protected () extends StObject {
+  open class NgTableEventsChannel protected () extends StObject {
     def this($rootScope: IRootScopeService) = this()
     
     /* private */ @JSName("$rootScope")
-    var $rootScope: js.Any = js.native
+    var $rootScope: Any = js.native
     
-    /* private */ def addTableParamsEvent(eventName: js.Any, target: js.Any): js.Any = js.native
+    /* private */ def addTableParamsEvent(eventName: Any, target: Any): Any = js.native
     
-    /* private */ def createEventSubscriptionFn(eventName: js.Any): js.Any = js.native
+    /* private */ def createEventSubscriptionFn(eventName: Any): Any = js.native
     
-    /* private */ def createPublishEventFn(eventName: js.Any): js.Any = js.native
+    /* private */ def createPublishEventFn(eventName: Any): Any = js.native
     
     /**
       * Subscribe to receive notification whenever a new `NgTableParams` instance has finished being constructed.
@@ -188,33 +188,33 @@ object ngTableEventsChannelMod {
   
   type EventSelector[T] = NgTableParams[T] | IEventSelectorFunc
   
-  type IAfterCreatedListener = js.Function1[/* publisher */ NgTableParams[js.Any], js.Any]
+  type IAfterCreatedListener = js.Function1[/* publisher */ NgTableParams[Any], Any]
   
-  type IAfterDataFilteredListener[T] = js.Function2[/* publisher */ NgTableParams[T], /* newData */ js.Array[DataResult[T]], js.Any]
+  type IAfterDataFilteredListener[T] = js.Function2[/* publisher */ NgTableParams[T], /* newData */ js.Array[DataResult[T]], Any]
   
-  type IAfterDataSortedListener[T] = js.Function2[/* publisher */ NgTableParams[T], /* newData */ js.Array[DataResult[T]], js.Any]
+  type IAfterDataSortedListener[T] = js.Function2[/* publisher */ NgTableParams[T], /* newData */ js.Array[DataResult[T]], Any]
   
   type IAfterReloadDataListener[T] = js.Function3[
     /* publisher */ NgTableParams[T], 
     /* newData */ js.Array[DataResult[T]], 
     /* oldData */ js.Array[DataResult[T]], 
-    js.Any
+    Any
   ]
   
   type IDatasetChangedListener[T] = js.Function3[
     /* publisher */ NgTableParams[T], 
     /* newDataset */ js.Array[T], 
     /* oldDataset */ js.Array[T], 
-    js.Any
+    Any
   ]
   
-  type IEventSelectorFunc = js.Function1[/* publisher */ NgTableParams[js.Any], Boolean]
+  type IEventSelectorFunc = js.Function1[/* publisher */ NgTableParams[Any], Boolean]
   
   type IPagesChangedListener = js.Function3[
-    /* publisher */ NgTableParams[js.Any], 
+    /* publisher */ NgTableParams[Any], 
     /* newPages */ js.Array[IPageButton], 
     /* oldPages */ js.Array[IPageButton], 
-    js.Any
+    Any
   ]
   
   type IUnregistrationFunc = js.Function0[Unit]

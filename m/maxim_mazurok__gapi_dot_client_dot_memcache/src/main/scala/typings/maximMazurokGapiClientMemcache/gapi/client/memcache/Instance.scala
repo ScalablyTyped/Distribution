@@ -8,29 +8,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Instance extends StObject {
   
   /**
-    * The full name of the Google Compute Engine [network](https://cloud.google.com/vpc/docs/vpc) to which the instance is connected. If left unspecified, the `default` network will be
-    * used.
+    * The full name of the Google Compute Engine [network](/compute/docs/networks-and-firewalls#networks) to which the instance is connected. If left unspecified, the `default` network
+    * will be used.
     */
   var authorizedNetwork: js.UndefOr[String] = js.undefined
   
   /** Output only. The time the instance was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** Output only. Endpoint for Discovery API */
+  /** Output only. Endpoint for the Discovery API. */
   var discoveryEndpoint: js.UndefOr[String] = js.undefined
   
-  /** User provided name for the instance only used for display purposes. Cannot be more than 80 characters. */
+  /** User provided name for the instance, which is only used for display purposes. Cannot be more than 80 characters. */
   var displayName: js.UndefOr[String] = js.undefined
   
-  /** List of messages that describe current statuses of memcached instance. */
+  /** List of messages that describe the current state of the Memcached instance. */
   var instanceMessages: js.UndefOr[js.Array[InstanceMessage]] = js.undefined
   
   /** Resource labels to represent user-provided metadata. Refer to cloud documentation on labels for more details. https://cloud.google.com/compute/docs/labeling-resources */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.Instance & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.Instance & TopLevel[Any]
   ] = js.undefined
+  
+  /** The maintenance policy for the instance. If not provided, the maintenance event will be performed based on Memorystore internal rollout schedule. */
+  var maintenancePolicy: js.UndefOr[GoogleCloudMemcacheV1MaintenancePolicy] = js.undefined
+  
+  /** Output only. Published maintenance schedule. */
+  var maintenanceSchedule: js.UndefOr[MaintenanceSchedule] = js.undefined
   
   /**
     * Output only. The full version of memcached server running on this instance. System automatically determines the full memcached version for an instance based on the input
@@ -38,19 +44,19 @@ trait Instance extends StObject {
     */
   var memcacheFullVersion: js.UndefOr[String] = js.undefined
   
-  /** Output only. List of Memcached nodes. Refer to [Node] message for more details. */
+  /** Output only. List of Memcached nodes. Refer to Node message for more details. */
   var memcacheNodes: js.UndefOr[js.Array[Node]] = js.undefined
   
   /**
-    * The major version of Memcached software. If not provided, latest supported version will be used. Currently the latest supported major version is MEMCACHE_1_5. The minor version will
-    * be automatically determined by our system based on the latest supported minor version.
+    * The major version of Memcached software. If not provided, latest supported version will be used. Currently the latest supported major version is `MEMCACHE_1_5`. The minor version
+    * will be automatically determined by our system based on the latest supported minor version.
     */
   var memcacheVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Unique name of the resource in this scope including project and location using the form: `projects/{project_id}/locations/{location_id}/instances/{instance_id}` Note:
-    * Memcached instances are managed and addressed at regional level so location_id here refers to a GCP region; however, users may choose which zones Memcached nodes within an instances
-    * should be provisioned in. Refer to [zones] field for more details.
+    * Memcached instances are managed and addressed at the regional level so `location_id` here refers to a Google Cloud region; however, users may choose which zones Memcached nodes
+    * should be provisioned in within an instance. Refer to zones field for more details.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -60,7 +66,7 @@ trait Instance extends StObject {
   /** Required. Number of nodes in the Memcached instance. */
   var nodeCount: js.UndefOr[Double] = js.undefined
   
-  /** Optional: User defined parameters to apply to the memcached process on each node. */
+  /** User defined parameters to apply to the memcached process on each node. */
   var parameters: js.UndefOr[MemcacheParameters] = js.undefined
   
   /** Output only. The state of this Memcached instance. */
@@ -70,7 +76,7 @@ trait Instance extends StObject {
   var updateTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Zones where Memcached nodes should be provisioned in. Memcached nodes will be equally distributed across these zones. If not provided, the service will by default create nodes in
+    * Zones in which Memcached nodes should be provisioned. Memcached nodes will be equally distributed across these zones. If not provided, the service will by default create nodes in
     * all zones in the region for the instance.
     */
   var zones: js.UndefOr[js.Array[String]] = js.undefined
@@ -104,15 +110,23 @@ object Instance {
     
     inline def setInstanceMessagesUndefined: Self = StObject.set(x, "instanceMessages", js.undefined)
     
-    inline def setInstanceMessagesVarargs(value: InstanceMessage*): Self = StObject.set(x, "instanceMessages", js.Array(value :_*))
+    inline def setInstanceMessagesVarargs(value: InstanceMessage*): Self = StObject.set(x, "instanceMessages", js.Array(value*))
     
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.Instance & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.Instance & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setMaintenancePolicy(value: GoogleCloudMemcacheV1MaintenancePolicy): Self = StObject.set(x, "maintenancePolicy", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenancePolicyUndefined: Self = StObject.set(x, "maintenancePolicy", js.undefined)
+    
+    inline def setMaintenanceSchedule(value: MaintenanceSchedule): Self = StObject.set(x, "maintenanceSchedule", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceScheduleUndefined: Self = StObject.set(x, "maintenanceSchedule", js.undefined)
     
     inline def setMemcacheFullVersion(value: String): Self = StObject.set(x, "memcacheFullVersion", value.asInstanceOf[js.Any])
     
@@ -122,7 +136,7 @@ object Instance {
     
     inline def setMemcacheNodesUndefined: Self = StObject.set(x, "memcacheNodes", js.undefined)
     
-    inline def setMemcacheNodesVarargs(value: Node*): Self = StObject.set(x, "memcacheNodes", js.Array(value :_*))
+    inline def setMemcacheNodesVarargs(value: Node*): Self = StObject.set(x, "memcacheNodes", js.Array(value*))
     
     inline def setMemcacheVersion(value: String): Self = StObject.set(x, "memcacheVersion", value.asInstanceOf[js.Any])
     
@@ -156,6 +170,6 @@ object Instance {
     
     inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value*))
   }
 }

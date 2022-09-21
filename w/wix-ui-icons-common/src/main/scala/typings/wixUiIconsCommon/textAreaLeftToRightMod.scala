@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object textAreaLeftToRightMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/system/dist/components/TextAreaLeftToRight", JSImport.Default)
   @js.native
-  val default: SFC[TextAreaLeftToRightProps] = js.native
+  val default: FC[TextAreaLeftToRightProps] = js.native
   
   trait TextAreaLeftToRightProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object TextAreaLeftToRightProps {
     
@@ -29,14 +29,14 @@ object textAreaLeftToRightMod extends Shortcut {
     
     extension [Self <: TextAreaLeftToRightProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[TextAreaLeftToRightProps]
+  type _To = FC[TextAreaLeftToRightProps]
   
   /* This means you don't have to write `default`, but can instead just say `textAreaLeftToRightMod.foo` */
-  override def _to: SFC[TextAreaLeftToRightProps] = default
+  override def _to: FC[TextAreaLeftToRightProps] = default
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined parent std.Pick<sinon.sinon.SinonSpyCallApi<TArgs, TReturnValue>, std.Exclude<keyof sinon.sinon.SinonSpyCallApi<TArgs, TReturnValue>, 'args'>> */
 @js.native
-trait SinonSpy[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StObject {
+trait SinonSpy[TArgs /* <: js.Array[Any] */, TReturnValue] extends StObject {
   
   // Methods
   def apply(
@@ -18,7 +18,7 @@ trait SinonSpy[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StObject {
     * Returns true if the spy was always called with @param obj as this.
     * @param obj
     */
-  def alwaysCalledOn(obj: js.Any): Boolean = js.native
+  def alwaysCalledOn(obj: Any): Boolean = js.native
   
   /**
     * Returns true if spy was always called with the provided arguments (and possibly others).
@@ -48,7 +48,7 @@ trait SinonSpy[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StObject {
     * Returns true if spy always returned the provided value.
     * @param obj
     */
-  def alwaysReturned(obj: js.Any): Boolean = js.native
+  def alwaysReturned(obj: Any): Boolean = js.native
   
   /**
     * Returns true if spy always threw an exception.
@@ -57,7 +57,7 @@ trait SinonSpy[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StObject {
   /**
     * Returns true if spy always threw the provided exception object.
     */
-  def alwaysThrew(obj: js.Any): Boolean = js.native
+  def alwaysThrew(obj: Any): Boolean = js.native
   /**
     * Returns true if spy always threw an exception of the provided type.
     */
@@ -68,23 +68,23 @@ trait SinonSpy[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StObject {
     */
   var args: js.Array[TArgs] = js.native
   
-  def callArg(pos: Double): Unit = js.native
+  def callArg(pos: Double): js.Array[Any] = js.native
   
-  def callArgOn(pos: Double, obj: js.Any, args: js.Any*): Unit = js.native
+  def callArgOn(pos: Double, obj: Any, args: Any*): js.Array[Any] = js.native
   
-  def callArgOnWith(pos: Double, obj: js.Any, args: js.Any*): Unit = js.native
+  def callArgOnWith(pos: Double, obj: Any, args: Any*): js.Array[Any] = js.native
   @JSName("callArgOnWith")
-  var callArgOnWith_Original: js.Function3[/* pos */ Double, /* obj */ js.Any, /* repeated */ js.Any, Unit] = js.native
+  var callArgOnWith_Original: js.Function3[/* pos */ Double, /* obj */ Any, /* repeated */ Any, js.Array[Any]] = js.native
   
   @JSName("callArgOn")
-  var callArgOn_Original: js.Function3[/* pos */ Double, /* obj */ js.Any, /* repeated */ js.Any, Unit] = js.native
+  var callArgOn_Original: js.Function3[/* pos */ Double, /* obj */ Any, /* repeated */ Any, js.Array[Any]] = js.native
   
-  def callArgWith(pos: Double, args: js.Any*): Unit = js.native
+  def callArgWith(pos: Double, args: Any*): js.Array[Any] = js.native
   @JSName("callArgWith")
-  var callArgWith_Original: js.Function2[/* pos */ Double, /* repeated */ js.Any, Unit] = js.native
+  var callArgWith_Original: js.Function2[/* pos */ Double, /* repeated */ Any, js.Array[Any]] = js.native
   
   @JSName("callArg")
-  var callArg_Original: js.Function1[/* pos */ Double, Unit] = js.native
+  var callArg_Original: js.Function1[/* pos */ Double, js.Array[Any]] = js.native
   
   // Properties
   /**
@@ -101,29 +101,29 @@ trait SinonSpy[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StObject {
     * Returns true if the spy was called after @param anotherSpy
     * @param anotherSpy
     */
-  def calledAfter(anotherSpy: SinonSpy[js.Any, js.Any]): Boolean = js.native
+  def calledAfter(anotherSpy: SinonSpy[Any, Any]): Boolean = js.native
   
   /**
     * Returns true if the spy was called before @param anotherSpy
     * @param anotherSpy
     */
-  def calledBefore(anotherSpy: SinonSpy[js.Any, js.Any]): Boolean = js.native
+  def calledBefore(anotherSpy: SinonSpy[Any, Any]): Boolean = js.native
   
   /**
     * Returns true if spy was called after @param anotherSpy, and no spy calls occurred between @param anotherSpy and spy.
     * @param anotherSpy
     */
-  def calledImmediatelyAfter(anotherSpy: SinonSpy[js.Any, js.Any]): Boolean = js.native
+  def calledImmediatelyAfter(anotherSpy: SinonSpy[Any, Any]): Boolean = js.native
   
   /**
     * Returns true if spy was called before @param anotherSpy, and no spy calls occurred between spy and @param anotherSpy.
     * @param anotherSpy
     */
-  def calledImmediatelyBefore(anotherSpy: SinonSpy[js.Any, js.Any]): Boolean = js.native
+  def calledImmediatelyBefore(anotherSpy: SinonSpy[Any, Any]): Boolean = js.native
   
-  def calledOn(obj: js.Any): Boolean = js.native
+  def calledOn(obj: Any): Boolean = js.native
   @JSName("calledOn")
-  var calledOn_Original: js.Function1[/* obj */ js.Any, Boolean] = js.native
+  var calledOn_Original: js.Function1[/* obj */ Any, Boolean] = js.native
   
   /**
     * true if spy was called exactly once
@@ -164,10 +164,10 @@ trait SinonSpy[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StObject {
   var calledWithExactly_Original: js.Function1[/* args */ MatchArguments[TArgs], Boolean] = js.native
   
   def calledWithMatch(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: TArgs
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type DeepPartialOrMatcher<TArgs> is not an array type */ args: DeepPartialOrMatcher[TArgs]
   ): Boolean = js.native
   @JSName("calledWithMatch")
-  var calledWithMatch_Original: js.Function1[/* args */ TArgs, Boolean] = js.native
+  var calledWithMatch_Original: js.Function1[/* args */ DeepPartialOrMatcher[TArgs], Boolean] = js.native
   
   def calledWithNew(): Boolean = js.native
   @JSName("calledWithNew")
@@ -180,7 +180,7 @@ trait SinonSpy[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StObject {
     * Array of exception objects thrown, spy.exceptions[0] is the exception thrown by the first call.
     * If the call did not throw an error, the value at the call’s location in .exceptions will be undefined.
     */
-  var exceptions: js.Array[js.Any] = js.native
+  var exceptions: js.Array[Any] = js.native
   
   /**
     * The first call
@@ -190,7 +190,7 @@ trait SinonSpy[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StObject {
   /**
     * Returns the nth call.
     * Accessing individual calls helps with more detailed behavior verification when the spy is called more than once.
-    * @param n Zero based index of the spy call.
+    * @param n Zero-based index of the spy call.
     */
   def getCall(n: Double): SinonSpyCall[TArgs, TReturnValue] = js.native
   
@@ -246,10 +246,10 @@ trait SinonSpy[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StObject {
   ): Boolean = js.native
   
   def notCalledWithMatch(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: TArgs
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type DeepPartialOrMatcher<TArgs> is not an array type */ args: DeepPartialOrMatcher[TArgs]
   ): Boolean = js.native
   @JSName("notCalledWithMatch")
-  var notCalledWithMatch_Original: js.Function1[/* args */ TArgs, Boolean] = js.native
+  var notCalledWithMatch_Original: js.Function1[/* args */ DeepPartialOrMatcher[TArgs], Boolean] = js.native
   
   @JSName("notCalledWith")
   var notCalledWith_Original: js.Function1[/* args */ MatchArguments[TArgs], Boolean] = js.native
@@ -266,7 +266,7 @@ trait SinonSpy[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StObject {
     * @param format
     * @param args
     */
-  def printf(format: String, args: js.Any*): String = js.native
+  def printf(format: String, args: Any*): String = js.native
   
   /**
     * Resets the state of a spy.
@@ -302,7 +302,7 @@ trait SinonSpy[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StObject {
   /**
     * Array of this objects, spy.thisValues[0] is the this object for the first call.
     */
-  var thisValues: js.Array[js.Any] = js.native
+  var thisValues: js.Array[Any] = js.native
   
   def threw(): Boolean = js.native
   @JSName("threw")
@@ -324,21 +324,21 @@ trait SinonSpy[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StObject {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: TArgs
   ): TReturnValue = js.native
   
-  def `yield`(args: js.Any*): Unit = js.native
+  def `yield`(args: Any*): js.Array[Any] = js.native
   
-  def yieldOn(obj: js.Any, args: js.Any*): Unit = js.native
+  def yieldOn(obj: Any, args: Any*): js.Array[Any] = js.native
   @JSName("yieldOn")
-  var yieldOn_Original: js.Function2[/* obj */ js.Any, /* repeated */ js.Any, Unit] = js.native
+  var yieldOn_Original: js.Function2[/* obj */ Any, /* repeated */ Any, js.Array[Any]] = js.native
   
-  def yieldTo(property: String, args: js.Any*): Unit = js.native
+  def yieldTo(property: String, args: Any*): js.Array[Any] = js.native
   
-  def yieldToOn(property: String, obj: js.Any, args: js.Any*): Unit = js.native
+  def yieldToOn(property: String, obj: Any, args: Any*): js.Array[Any] = js.native
   @JSName("yieldToOn")
-  var yieldToOn_Original: js.Function3[/* property */ String, /* obj */ js.Any, /* repeated */ js.Any, Unit] = js.native
+  var yieldToOn_Original: js.Function3[/* property */ String, /* obj */ Any, /* repeated */ Any, js.Array[Any]] = js.native
   
   @JSName("yieldTo")
-  var yieldTo_Original: js.Function2[/* property */ String, /* repeated */ js.Any, Unit] = js.native
+  var yieldTo_Original: js.Function2[/* property */ String, /* repeated */ Any, js.Array[Any]] = js.native
   
   @JSName("yield")
-  var yield_Original: js.Function1[/* repeated */ js.Any, Unit] = js.native
+  var yield_Original: js.Function1[/* repeated */ Any, js.Array[Any]] = js.native
 }

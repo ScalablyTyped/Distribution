@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cesium" : "1.97.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cesium" : "1.97.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

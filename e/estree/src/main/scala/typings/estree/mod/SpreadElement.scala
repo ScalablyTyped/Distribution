@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SpreadElement
   extends StObject
-     with BaseNode
-     with Node {
+     with BaseNode {
   
   var argument: Expression
   

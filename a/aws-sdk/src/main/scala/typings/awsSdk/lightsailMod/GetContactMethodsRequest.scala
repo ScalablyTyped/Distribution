@@ -24,6 +24,6 @@ object GetContactMethodsRequest {
     
     inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
-    inline def setProtocolsVarargs(value: ContactProtocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+    inline def setProtocolsVarargs(value: ContactProtocol*): Self = StObject.set(x, "protocols", js.Array(value*))
   }
 }

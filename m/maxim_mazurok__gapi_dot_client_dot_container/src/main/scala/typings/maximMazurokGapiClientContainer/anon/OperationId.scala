@@ -25,7 +25,7 @@ trait OperationId extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name (project, location, operation id) of the operation to get. Specified in the format `projects/∗/locations/∗/operations/ *`. */
+  /** The name (project, location, operation id) of the operation to get. Specified in the format `projects/ *‍/locations/ *‍/operations/ *`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -38,8 +38,8 @@ trait OperationId extends StObject {
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the
-    * name field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been
+    * deprecated and replaced by the name field.
     */
   var projectId: js.UndefOr[String] = js.undefined
   

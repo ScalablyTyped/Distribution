@@ -15,19 +15,19 @@ object mod {
   
   @JSImport("@atlaskit/single-select", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Props, js.Object, js.Any]
+  open class default ()
+    extends Component[Props, js.Object, Any]
   
   @JSImport("@atlaskit/single-select", "StatelessSelect")
   @js.native
-  class StatelessSelect protected ()
-    extends Component[StatelessProps, js.Object, js.Any] {
+  open class StatelessSelect protected ()
+    extends Component[StatelessProps, js.Object, Any] {
     def this(props: StatelessProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: StatelessProps, context: js.Any) = this()
+    def this(props: StatelessProps, context: Any) = this()
   }
   
   trait GroupType extends StObject {
@@ -51,7 +51,7 @@ object mod {
       
       inline def setItems(value: js.Array[ItemType]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: ItemType*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: ItemType*): Self = StObject.set(x, "items", js.Array(value*))
     }
   }
   
@@ -102,7 +102,7 @@ object mod {
       
       inline def setFilterValuesUndefined: Self = StObject.set(x, "filterValues", js.undefined)
       
-      inline def setFilterValuesVarargs(value: String*): Self = StObject.set(x, "filterValues", js.Array(value :_*))
+      inline def setFilterValuesVarargs(value: String*): Self = StObject.set(x, "filterValues", js.Array(value*))
       
       inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
@@ -283,7 +283,7 @@ object mod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: GroupType*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: GroupType*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -335,7 +335,7 @@ object mod {
     }
   }
   
-  type SingleSelect = Component[Props, js.Object, js.Any]
+  type SingleSelect = Component[Props, js.Object, Any]
   
   trait StatelessProps
     extends StObject

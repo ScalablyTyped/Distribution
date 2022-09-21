@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RecorderEndpointOptions extends StObject {
   
+  var mediaProfile: js.UndefOr[MediaProfileSpecType] = js.undefined
+  
   var stopOnEndOfStream: js.UndefOr[Boolean] = js.undefined
   
   var uri: String
@@ -18,6 +20,10 @@ object RecorderEndpointOptions {
   }
   
   extension [Self <: RecorderEndpointOptions](x: Self) {
+    
+    inline def setMediaProfile(value: MediaProfileSpecType): Self = StObject.set(x, "mediaProfile", value.asInstanceOf[js.Any])
+    
+    inline def setMediaProfileUndefined: Self = StObject.set(x, "mediaProfile", js.undefined)
     
     inline def setStopOnEndOfStream(value: Boolean): Self = StObject.set(x, "stopOnEndOfStream", value.asInstanceOf[js.Any])
     

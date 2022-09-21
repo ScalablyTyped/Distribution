@@ -47,17 +47,17 @@ object DistanceMatrixResponse {
     
     inline def setDestination_addresses(value: js.Array[String]): Self = StObject.set(x, "destination_addresses", value.asInstanceOf[js.Any])
     
-    inline def setDestination_addressesVarargs(value: String*): Self = StObject.set(x, "destination_addresses", js.Array(value :_*))
+    inline def setDestination_addressesVarargs(value: String*): Self = StObject.set(x, "destination_addresses", js.Array(value*))
     
     inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     
     inline def setOrigin_addresses(value: js.Array[String]): Self = StObject.set(x, "origin_addresses", value.asInstanceOf[js.Any])
     
-    inline def setOrigin_addressesVarargs(value: String*): Self = StObject.set(x, "origin_addresses", js.Array(value :_*))
+    inline def setOrigin_addressesVarargs(value: String*): Self = StObject.set(x, "origin_addresses", js.Array(value*))
     
     inline def setRows(value: js.Array[DistanceMatrixRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: DistanceMatrixRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: DistanceMatrixRow*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setStatus(value: DistanceMatrixResponseTopLevelStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

@@ -10,34 +10,28 @@ object commonConsoleMessageMod {
   
   @JSImport("puppeteer-core/lib/esm/puppeteer/common/ConsoleMessage", "ConsoleMessage")
   @js.native
-  class ConsoleMessage protected () extends StObject {
+  open class ConsoleMessage protected () extends StObject {
     /**
       * @public
       */
     def this(
       `type`: ConsoleMessageType,
       text: String,
-      args: js.Array[JSHandle],
+      args: js.Array[JSHandle[Any]],
       stackTraceLocations: js.Array[ConsoleMessageLocation]
     ) = this()
-    
-    /* private */ var _args: js.Any = js.native
-    
-    /* private */ var _stackTraceLocations: js.Any = js.native
-    
-    /* private */ var _text: js.Any = js.native
-    
-    /* private */ var _type: js.Any = js.native
     
     /**
       * @returns An array of arguments passed to the console.
       */
-    def args(): js.Array[JSHandle] = js.native
+    def args(): js.Array[JSHandle[Any]] = js.native
     
     /**
       * @returns The location of the console message.
       */
     def location(): ConsoleMessageLocation = js.native
+    
+    /* private */ var `private`: Any = js.native
     
     /**
       * @returns The array of locations on the stack of the console message.

@@ -1,51 +1,19 @@
 package typings.semanticUiEmbed
 
 import typings.semanticUiEmbed.SemanticUI.Embed
-import typings.semanticUiEmbed.SemanticUI.Embed.ClassNameSettings
-import typings.semanticUiEmbed.SemanticUI.Embed.ErrorSettings
-import typings.semanticUiEmbed.SemanticUI.Embed.MetadataSettings
-import typings.semanticUiEmbed.SemanticUI.Embed.ParametersSettings
-import typings.semanticUiEmbed.SemanticUI.Embed.SelectorSettings
-import typings.semanticUiEmbed.SemanticUI.Embed.TemplatesSettings
 import typings.semanticUiEmbed.SemanticUI.EmbedSettings
-import typings.semanticUiEmbed.semanticUiEmbedBooleans.`false`
 import typings.semanticUiEmbed.semanticUiEmbedStrings.`get id`
 import typings.semanticUiEmbed.semanticUiEmbedStrings.`get placeholder`
 import typings.semanticUiEmbed.semanticUiEmbedStrings.`get sources`
 import typings.semanticUiEmbed.semanticUiEmbedStrings.`get type`
 import typings.semanticUiEmbed.semanticUiEmbedStrings.`get url`
 import typings.semanticUiEmbed.semanticUiEmbedStrings.`has placeholder`
-import typings.semanticUiEmbed.semanticUiEmbedStrings.auto
-import typings.semanticUiEmbed.semanticUiEmbedStrings.autoplay
-import typings.semanticUiEmbed.semanticUiEmbedStrings.brandedUI
 import typings.semanticUiEmbed.semanticUiEmbedStrings.change
-import typings.semanticUiEmbed.semanticUiEmbedStrings.className
-import typings.semanticUiEmbed.semanticUiEmbedStrings.color
-import typings.semanticUiEmbed.semanticUiEmbedStrings.debug
 import typings.semanticUiEmbed.semanticUiEmbedStrings.destroy
-import typings.semanticUiEmbed.semanticUiEmbedStrings.error
-import typings.semanticUiEmbed.semanticUiEmbedStrings.hd
 import typings.semanticUiEmbed.semanticUiEmbedStrings.hide
-import typings.semanticUiEmbed.semanticUiEmbedStrings.icon
-import typings.semanticUiEmbed.semanticUiEmbedStrings.id
-import typings.semanticUiEmbed.semanticUiEmbedStrings.metadata
-import typings.semanticUiEmbed.semanticUiEmbedStrings.name
-import typings.semanticUiEmbed.semanticUiEmbedStrings.namespace
-import typings.semanticUiEmbed.semanticUiEmbedStrings.onCreate
-import typings.semanticUiEmbed.semanticUiEmbedStrings.onDisplay
-import typings.semanticUiEmbed.semanticUiEmbedStrings.onEmbed
-import typings.semanticUiEmbed.semanticUiEmbedStrings.onPlaceholderDisplay
-import typings.semanticUiEmbed.semanticUiEmbedStrings.parameters
-import typings.semanticUiEmbed.semanticUiEmbedStrings.performance
 import typings.semanticUiEmbed.semanticUiEmbedStrings.reset
-import typings.semanticUiEmbed.semanticUiEmbedStrings.selector
 import typings.semanticUiEmbed.semanticUiEmbedStrings.setting
 import typings.semanticUiEmbed.semanticUiEmbedStrings.show
-import typings.semanticUiEmbed.semanticUiEmbedStrings.silent
-import typings.semanticUiEmbed.semanticUiEmbedStrings.source
-import typings.semanticUiEmbed.semanticUiEmbedStrings.templates
-import typings.semanticUiEmbed.semanticUiEmbedStrings.url
-import typings.semanticUiEmbed.semanticUiEmbedStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,68 +21,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def embed(): JQuery
-  def embed(behavior: setting, name: autoplay, value: Boolean): JQuery
-  def embed(behavior: setting, name: autoplay, value: Unit): auto | Boolean
-  def embed(behavior: setting, name: autoplay, value: auto): JQuery
-  def embed(behavior: setting, name: brandedUI, value: Boolean): JQuery
-  def embed(behavior: setting, name: brandedUI, value: Unit): Boolean
-  def embed(behavior: setting, name: className, value: Unit): ClassNameSettings
-  def embed(behavior: setting, name: className, value: ClassNameSettings): JQuery
-  def embed(behavior: setting, name: color, value: String): JQuery
-  def embed(behavior: setting, name: color, value: Unit): String
-  def embed(behavior: setting, name: debug, value: Boolean): JQuery
-  def embed(behavior: setting, name: debug, value: Unit): Boolean
-  def embed(behavior: setting, name: error, value: Unit): ErrorSettings
-  def embed(behavior: setting, name: error, value: ErrorSettings): JQuery
-  def embed(behavior: setting, name: hd, value: Boolean): JQuery
-  def embed(behavior: setting, name: hd, value: Unit): Boolean
-  def embed(behavior: setting, name: icon, value: String): JQuery
-  def embed(behavior: setting, name: icon, value: Unit): `false` | String
-  def embed(behavior: setting, name: icon, value: `false`): JQuery
-  def embed(behavior: setting, name: id, value: String): JQuery
-  def embed(behavior: setting, name: id, value: Unit): `false` | String
-  def embed(behavior: setting, name: id, value: `false`): JQuery
-  def embed(behavior: setting, name: metadata, value: Unit): MetadataSettings
-  def embed(behavior: setting, name: metadata, value: MetadataSettings): JQuery
-  def embed(behavior: setting, name: namespace, value: String): JQuery
-  def embed(behavior: setting, name: namespace, value: Unit): String
-  def embed(behavior: setting, name: name, value: String): JQuery
-  def embed(behavior: setting, name: name, value: Unit): String
-  def embed(
-    behavior: setting,
-    name: onCreate,
-    value: js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]
-  ): JQuery
-  def embed(behavior: setting, name: onCreate, value: Unit): js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]
-  def embed(behavior: setting, name: onDisplay, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
-  def embed(behavior: setting, name: onDisplay, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
-  def embed(
-    behavior: setting,
-    name: onEmbed,
-    value: js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
-  ): JQuery
-  def embed(behavior: setting, name: onEmbed, value: Unit): js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
-  def embed(behavior: setting, name: onPlaceholderDisplay, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
-  def embed(behavior: setting, name: onPlaceholderDisplay, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
-  def embed(behavior: setting, name: parameters, value: Unit): `false` | ParametersSettings
-  def embed(behavior: setting, name: parameters, value: ParametersSettings): JQuery
-  def embed(behavior: setting, name: parameters, value: `false`): JQuery
-  def embed(behavior: setting, name: performance, value: Boolean): JQuery
-  def embed(behavior: setting, name: performance, value: Unit): Boolean
-  def embed(behavior: setting, name: selector, value: Unit): SelectorSettings
-  def embed(behavior: setting, name: selector, value: SelectorSettings): JQuery
-  def embed(behavior: setting, name: silent, value: Boolean): JQuery
-  def embed(behavior: setting, name: silent, value: Unit): Boolean
-  def embed(behavior: setting, name: source, value: String): JQuery
-  def embed(behavior: setting, name: source, value: Unit): `false` | String
-  def embed(behavior: setting, name: source, value: `false`): JQuery
-  def embed(behavior: setting, name: templates, value: Unit): TemplatesSettings
-  def embed(behavior: setting, name: templates, value: TemplatesSettings): JQuery
-  def embed(behavior: setting, name: url, value: String): JQuery
-  def embed(behavior: setting, name: url, value: Unit): `false` | String
-  def embed(behavior: setting, name: url, value: `false`): JQuery
-  def embed(behavior: setting, name: verbose, value: Boolean): JQuery
-  def embed(behavior: setting, name: verbose, value: Unit): Boolean
   def embed(settings: EmbedSettings): JQuery
   @JSName("embed")
   var embed_Original: Embed
@@ -170,6 +76,14 @@ trait JQuery extends StObject {
   def embed_reset(behavior: reset): JQuery
   @JSName("embed")
   def embed_setting(behavior: setting, value: EmbedSettings): JQuery
+  @JSName("embed")
+  def embed_setting[K /* <: /* keyof semantic-ui-embed.SemanticUI.EmbedSettings */ String */](
+    behavior: setting,
+    name: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-embed.SemanticUI.EmbedSettings._Impl[K] */ js.Any
+  ): JQuery
+  @JSName("embed")
+  def embed_setting[K /* <: /* keyof semantic-ui-embed.SemanticUI.EmbedSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-embed.SemanticUI.EmbedSettings._Impl[K] */ js.Any
   /**
     * Shows embed content
     */

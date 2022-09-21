@@ -6,18 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Glues many mesh instances into a single one for better performance.
-  * @param device - The graphics device used by the batch manager.
-  * @param root - The entity under which batched models are added.
-  * @param scene - The scene that the batch manager affects.
   */
 @JSGlobal("pc.BatchManager")
 @js.native
-class BatchManager protected ()
-  extends StObject
-     with typings.playcanvas.pc.BatchManager {
+open class BatchManager protected ()
+  extends typings.playcanvas.mod.BatchManager {
+  /**
+    * Create a new BatchManager instance.
+    *
+    * @param {GraphicsDevice} device - The graphics device used by the batch manager.
+    * @param {Entity} root - The entity under which batched models are added.
+    * @param {Scene} scene - The scene that the batch manager affects.
+    */
   def this(
-    device: typings.playcanvas.pc.GraphicsDevice,
-    root: typings.playcanvas.pc.Entity,
-    scene: typings.playcanvas.pc.Scene
+    device: typings.playcanvas.mod.GraphicsDevice,
+    root: typings.playcanvas.mod.Entity,
+    scene: typings.playcanvas.mod.Scene_
   ) = this()
 }

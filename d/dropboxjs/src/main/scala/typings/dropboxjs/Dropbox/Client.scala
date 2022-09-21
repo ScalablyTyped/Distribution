@@ -93,13 +93,13 @@ trait Client extends StObject {
   ): XMLHttpRequest = js.native
   
   def isAppDeveloper(
-    userId: js.Any,
-    appKey: js.Any,
+    userId: Any,
+    appKey: Any,
     callbackcallback: js.Function2[/* err */ ApiError, /* isAppDeveloper */ Boolean, Unit]
   ): XMLHttpRequest = js.native
   // TODO check if this can better be described
   def isAppDeveloper(
-    userId: js.Any,
+    userId: Any,
     callbackcallback: js.Function2[/* err */ ApiError, /* isAppDeveloper */ Boolean, Unit]
   ): XMLHttpRequest = js.native
   
@@ -194,8 +194,8 @@ trait Client extends StObject {
     callback: ClientFileWriteCallback
   ): XMLHttpRequest = js.native
   
-  def resumableUploadStep(data: js.Any, callback: ResumableUploadStepCallback): XMLHttpRequest = js.native
-  def resumableUploadStep(data: js.Any, cursor: UploadCursor, callback: ResumableUploadStepCallback): XMLHttpRequest = js.native
+  def resumableUploadStep(data: Any, callback: ResumableUploadStepCallback): XMLHttpRequest = js.native
+  def resumableUploadStep(data: Any, cursor: UploadCursor, callback: ResumableUploadStepCallback): XMLHttpRequest = js.native
   
   def revertFile(path: String, versionTag: String, callback: FileStatCallback): XMLHttpRequest = js.native
   
@@ -235,6 +235,6 @@ trait Client extends StObject {
   
   def unlink(path: String, callback: FileStatCallback): Unit = js.native
   
-  def writeFile(path: String, data: js.Any, callback: ClientFileWriteCallback): XMLHttpRequest = js.native
-  def writeFile(path: String, data: js.Any, options: ClientFileWriteOptions, callback: ClientFileWriteCallback): XMLHttpRequest = js.native
+  def writeFile(path: String, data: Any, callback: ClientFileWriteCallback): XMLHttpRequest = js.native
+  def writeFile(path: String, data: Any, options: ClientFileWriteOptions, callback: ClientFileWriteCallback): XMLHttpRequest = js.native
 }

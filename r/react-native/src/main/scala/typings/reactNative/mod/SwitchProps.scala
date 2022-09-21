@@ -22,9 +22,14 @@ trait SwitchProps
   var ios_backgroundColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
+    * Invoked with the the change event as an argument when the value changes.
+    */
+  var onChange: js.UndefOr[(js.Function1[/* event */ SwitchChangeEvent, js.Promise[Unit] | Unit]) | Null] = js.undefined
+  
+  /**
     * Invoked with the new value when the value changes.
     */
-  var onValueChange: js.UndefOr[js.Function1[/* value */ Boolean, Unit]] = js.undefined
+  var onValueChange: js.UndefOr[(js.Function1[/* value */ Boolean, js.Promise[Unit] | Unit]) | Null] = js.undefined
   
   /**
     * Color of the foreground switch grip.
@@ -61,7 +66,15 @@ object SwitchProps {
     
     inline def setIos_backgroundColorUndefined: Self = StObject.set(x, "ios_backgroundColor", js.undefined)
     
-    inline def setOnValueChange(value: /* value */ Boolean => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* event */ SwitchChangeEvent => js.Promise[Unit] | Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    
+    inline def setOnChangeNull: Self = StObject.set(x, "onChange", null)
+    
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    
+    inline def setOnValueChange(value: /* value */ Boolean => js.Promise[Unit] | Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
+    
+    inline def setOnValueChangeNull: Self = StObject.set(x, "onValueChange", null)
     
     inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
     

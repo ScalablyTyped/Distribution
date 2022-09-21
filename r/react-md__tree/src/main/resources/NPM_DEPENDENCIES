@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-md/tree" : "2.4.3"
+      "@react-md/tree" : "5.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-md/tree" : "2.4.3"
+      "@react-md/tree" : "5.1.4"
     }
   ],
   "compile-devDependencies" : [

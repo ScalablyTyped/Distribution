@@ -12,18 +12,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Session extends StObject {
   
   /**
-    * @param {function(!chrome.cast.media.Media)} listener
+    * @param listener
     */
   def addMediaListener(listener: js.Function1[/* media */ Media, Unit]): Unit = js.native
   
   /**
-    * @param {string} namespace
-    * @param {function(string,string)} listener
+    * @param namespace
+    * @param listener
     */
   def addMessageListener(namespace: String, listener: js.Function2[/* namespace */ String, /* message */ String, Unit]): Unit = js.native
   
   /**
-    * @param {function(boolean)} listener
+    * @param listener
     */
   def addUpdateListener(listener: js.Function1[/* isAlive */ Boolean, Unit]): Unit = js.native
   
@@ -34,15 +34,15 @@ trait Session extends StObject {
   var displayName: String = js.native
   
   /**
-    * @param {function()} successCallback
-    * @param {function(chrome.cast.Error)} errorCallback
+    * @param successCallback
+    * @param errorCallback
     */
   def leave(successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   
   /**
-    * @param {!chrome.cast.media.LoadRequest} loadRequest
-    * @param {function(!chrome.cast.media.Media)} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param loadRequest
+    * @param successCallback
+    * @param errorCallback
     */
   def loadMedia(
     loadRequest: LoadRequest,
@@ -55,9 +55,9 @@ trait Session extends StObject {
   var namespaces: js.Array[Name] = js.native
   
   /**
-    * @param {!chrome.cast.media.QueueLoadRequest} queueLoadRequest
-    * @param {function(!chrome.cast.media.Media)} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param queueLoadRequest
+    * @param successCallback
+    * @param errorCallback
     */
   def queueLoad(
     queueLoadRequest: QueueLoadRequest,
@@ -68,26 +68,26 @@ trait Session extends StObject {
   var receiver: Receiver = js.native
   
   /**
-    * @param {function(!chrome.cast.media.Media)} listener
+    * @param listener
     */
   def removeMediaListener(listener: js.Function1[/* media */ Media, Unit]): Unit = js.native
   
   /**
-    * @param {string} namespace
-    * @param {function(string,string)} listener
+    * @param namespace
+    * @param listener
     */
   def removeMessageListener(namespace: String, listener: js.Function2[/* namespace */ String, /* message */ String, Unit]): Unit = js.native
   
   /**
-    * @param {function(boolean)} listener
+    * @param listener
     */
   def removeUpdateListener(listener: js.Function1[/* isAlive */ Boolean, Unit]): Unit = js.native
   
   /**
-    * @param {string} namespace
-    * @param {!Object|string} message
-    * @param {!function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param namespace
+    * @param message
+    * @param successCallback
+    * @param errorCallback
     */
   def sendMessage(
     namespace: String,
@@ -107,16 +107,16 @@ trait Session extends StObject {
   var sessionId: String = js.native
   
   /**
-    * @param {boolean} muted
-    * @param {function()} successCallback
-    * @param {function(chrome.cast.Error)} errorCallback
+    * @param muted
+    * @param successCallback
+    * @param errorCallback
     */
   def setReceiverMuted(muted: Boolean, successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   
   /**
-    * @param {number} newLevel
-    * @param {function()} successCallback
-    * @param {function(chrome.cast.Error)} errorCallback
+    * @param newLevel
+    * @param successCallback
+    * @param errorCallback
     */
   def setReceiverVolumeLevel(
     newLevel: Double,
@@ -129,8 +129,8 @@ trait Session extends StObject {
   var statusText: String | Null = js.native
   
   /**
-    * @param {function()} successCallback
-    * @param {function(chrome.cast.Error)} errorCallback
+    * @param successCallback
+    * @param errorCallback
     */
   def stop(successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   

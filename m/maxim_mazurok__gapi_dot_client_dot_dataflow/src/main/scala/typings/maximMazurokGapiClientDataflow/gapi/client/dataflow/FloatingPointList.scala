@@ -22,6 +22,6 @@ object FloatingPointList {
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    inline def setElementsVarargs(value: Double*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: Double*): Self = StObject.set(x, "elements", js.Array(value*))
   }
 }

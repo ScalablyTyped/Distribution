@@ -1,13 +1,12 @@
 package typings.squareConnect.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CreateMobileAuthorizationCodeResponse")
 @js.native
-class CreateMobileAuthorizationCodeResponse () extends StObject {
+open class CreateMobileAuthorizationCodeResponse () extends StObject {
   
   /**
     * Generated authorization code that connects a mobile application instance to a Square account.
@@ -17,7 +16,7 @@ class CreateMobileAuthorizationCodeResponse () extends StObject {
   /**
     * An error object that provides details about how creation of authorization code failed.
     */
-  var error: js.UndefOr[Error] = js.native
+  var error: js.UndefOr[js.Error] = js.native
   
   /**
     * The timestamp when `authorization_code` expires in [RFC 3339](https://tools.ietf.org/html/rfc3339) format,

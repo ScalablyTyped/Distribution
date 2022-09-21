@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mjml-react", "MjmlStyle")
 @js.native
-class MjmlStyle protected ()
-  extends Component[Inline, js.Object, js.Any] {
+open class MjmlStyle protected ()
+  extends Component[Inline, js.Object, Any] {
   def this(props: Inline) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: Inline, context: js.Any) = this()
+  def this(props: Inline, context: Any) = this()
 }

@@ -19,12 +19,12 @@ trait ContextRowRenderingEventUIParam extends StObject {
   /**
     * Gets reference to the first data row. Null if there are no records.
     */
-  var dataRow: js.UndefOr[js.Any] = js.undefined
+  var dataRow: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to igTreeGridPaging.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object ContextRowRenderingEventUIParam {
   
@@ -43,11 +43,11 @@ object ContextRowRenderingEventUIParam {
     
     inline def setCurrentPageIndexUndefined: Self = StObject.set(x, "currentPageIndex", js.undefined)
     
-    inline def setDataRow(value: js.Any): Self = StObject.set(x, "dataRow", value.asInstanceOf[js.Any])
+    inline def setDataRow(value: Any): Self = StObject.set(x, "dataRow", value.asInstanceOf[js.Any])
     
     inline def setDataRowUndefined: Self = StObject.set(x, "dataRow", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

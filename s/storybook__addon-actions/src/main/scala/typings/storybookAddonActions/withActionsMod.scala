@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object withActionsMod {
   
-  @JSImport("@storybook/addon-actions/dist/preview/withActions", JSImport.Namespace)
+  @JSImport("@storybook/addon-actions/dist/ts3.9/preview/withActions", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def withActions(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withActions")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withActions")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

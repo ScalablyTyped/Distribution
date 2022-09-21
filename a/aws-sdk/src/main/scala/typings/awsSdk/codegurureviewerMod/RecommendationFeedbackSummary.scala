@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecommendationFeedbackSummary extends StObject {
   
   /**
-    *  List for storing reactions. Reactions are utf-8 text code for emojis. 
+    * List for storing reactions. Reactions are utf-8 text code for emojis.
     */
   var Reactions: js.UndefOr[typings.awsSdk.codegurureviewerMod.Reactions] = js.undefined
   
   /**
-    *  The recommendation ID that can be used to track the provided recommendations. Later on it can be used to collect the feedback. 
+    * The recommendation ID that can be used to track the provided recommendations. Later on it can be used to collect the feedback.
     */
   var RecommendationId: js.UndefOr[typings.awsSdk.codegurureviewerMod.RecommendationId] = js.undefined
   
   /**
-    *  The ID of the user that gave the feedback.   The UserId is an IAM principal that can be specified as an AWS account ID or an Amazon Resource Name (ARN). For more information, see  Specifying a Principal in the AWS Identity and Access Management User Guide. 
+    * The ID of the user that gave the feedback.  The UserId is an IAM principal that can be specified as an Amazon Web Services account ID or an Amazon Resource Name (ARN). For more information, see  Specifying a Principal in the Amazon Web Services Identity and Access Management User Guide.
     */
   var UserId: js.UndefOr[typings.awsSdk.codegurureviewerMod.UserId] = js.undefined
 }
@@ -34,7 +34,7 @@ object RecommendationFeedbackSummary {
     
     inline def setReactionsUndefined: Self = StObject.set(x, "Reactions", js.undefined)
     
-    inline def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "Reactions", js.Array(value :_*))
+    inline def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "Reactions", js.Array(value*))
     
     inline def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
     

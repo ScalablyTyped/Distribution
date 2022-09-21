@@ -12,7 +12,7 @@ object foundationMod {
   
   @JSImport("@material/grid-list/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCGridListFoundation {
+  open class default () extends MDCGridListFoundation {
     def this(adapter: PartialMDCGridListAdapter) = this()
   }
   /* static members */
@@ -29,7 +29,7 @@ object foundationMod {
   
   @JSImport("@material/grid-list/foundation", "MDCGridListFoundation")
   @js.native
-  class MDCGridListFoundation () extends MDCFoundation[MDCGridListAdapter] {
+  open class MDCGridListFoundation () extends MDCFoundation[MDCGridListAdapter] {
     def this(adapter: PartialMDCGridListAdapter) = this()
     
     def alignCenter(): Unit = js.native

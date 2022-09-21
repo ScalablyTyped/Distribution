@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ionic/storage" : "2.3.1"
+      "@ionic/storage" : "3.0.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@ionic/storage" : "2.3.1"
+      "@ionic/storage" : "3.0.6"
     }
   ],
   "compile-devDependencies" : [

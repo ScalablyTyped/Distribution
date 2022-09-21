@@ -57,7 +57,7 @@ object helpMod {
   
   @JSImport("@ionic/cli-framework/lib/help", "CommandSchemaHelpFormatter")
   @js.native
-  class CommandSchemaHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends CommandHelpFormatter[C, N, M, I, O] {
+  open class CommandSchemaHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends CommandHelpFormatter[C, N, M, I, O] {
     def this(hasLocationCommandMetadataColors: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
     
     def formatCommand(cmd: (HydratedCommandMetadata[C, N, M, I, O]) | M): js.Promise[CommandHelpSchema] = js.native
@@ -77,17 +77,36 @@ object helpMod {
   
   @JSImport("@ionic/cli-framework/lib/help", "CommandStringHelpFormatter")
   @js.native
-  class CommandStringHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends CommandHelpFormatter[C, N, M, I, O] {
+  open class CommandStringHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends CommandHelpFormatter[C, N, M, I, O] {
     def this(hasLocationCommandMetadataColors: CommandHelpFormatterDeps[C, N, M, I, O]) = this()
     
+    /**
+      * Insert text that appears after the input's summary.
+      *
+      * @param input The metadata of the input.
+      */
+    def formatAfterInputSummary(input: I): js.Promise[String] = js.native
+    
+    /**
+      * Insert text that appears after the option's summary.
+      *
+      * @param opt The metadata of the option.
+      */
     def formatAfterOptionSummary(opt: O): js.Promise[String] = js.native
     
     /**
-      * Insert text after the command's summary.
+      * Insert text that appears after the command's summary.
       *
       * @param meta The metadata of the command.
       */
     def formatAfterSummary(meta: M): js.Promise[String] = js.native
+    
+    /**
+      * Insert text that appears before the input's summary.
+      *
+      * @param input The metadata of the input.
+      */
+    def formatBeforeInputSummary(input: I): js.Promise[String] = js.native
     
     /**
       * Insert text that appears before an option's summary.
@@ -97,7 +116,7 @@ object helpMod {
     def formatBeforeOptionSummary(opt: O): js.Promise[String] = js.native
     
     /**
-      * Insert text before the command's summary.
+      * Insert text that appears before the command's summary.
       *
       * @param meta The metadata of the command.
       */
@@ -110,6 +129,8 @@ object helpMod {
     def formatHeader(): js.Promise[String] = js.native
     
     def formatInlineInput(input: I): js.Promise[String] = js.native
+    
+    def formatInput(i: I): js.Promise[String] = js.native
     
     def formatInputs(): js.Promise[String] = js.native
     
@@ -173,7 +194,7 @@ object helpMod {
   
   @JSImport("@ionic/cli-framework/lib/help", "NamespaceSchemaHelpFormatter")
   @js.native
-  class NamespaceSchemaHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends NamespaceHelpFormatter[C, N, M, I, O] {
+  open class NamespaceSchemaHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends NamespaceHelpFormatter[C, N, M, I, O] {
     def this(hasLocationNamespaceColors: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
     
     def formatCommand(cmd: HydratedCommandMetadata[C, N, M, I, O]): js.Promise[CommandHelpSchema] = js.native
@@ -185,7 +206,7 @@ object helpMod {
   
   @JSImport("@ionic/cli-framework/lib/help", "NamespaceStringHelpFormatter")
   @js.native
-  class NamespaceStringHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends NamespaceHelpFormatter[C, N, M, I, O] {
+  open class NamespaceStringHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] protected () extends NamespaceHelpFormatter[C, N, M, I, O] {
     def this(hasLocationNamespaceColors: NamespaceHelpFormatterDeps[C, N, M, I, O]) = this()
     
     /**
@@ -344,35 +365,35 @@ object helpMod {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
       inline def setExampleCommands(value: js.Array[String]): Self = StObject.set(x, "exampleCommands", value.asInstanceOf[js.Any])
       
-      inline def setExampleCommandsVarargs(value: String*): Self = StObject.set(x, "exampleCommands", js.Array(value :_*))
+      inline def setExampleCommandsVarargs(value: String*): Self = StObject.set(x, "exampleCommands", js.Array(value*))
       
       inline def setFootnotes(value: js.Array[CommandHelpSchemaFootnote]): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
       
-      inline def setFootnotesVarargs(value: CommandHelpSchemaFootnote*): Self = StObject.set(x, "footnotes", js.Array(value :_*))
+      inline def setFootnotesVarargs(value: CommandHelpSchemaFootnote*): Self = StObject.set(x, "footnotes", js.Array(value*))
       
       inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setInputs(value: js.Array[CommandHelpSchemaInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      inline def setInputsVarargs(value: CommandHelpSchemaInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: CommandHelpSchemaInput*): Self = StObject.set(x, "inputs", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNamespace(value: js.Array[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      inline def setNamespaceVarargs(value: String*): Self = StObject.set(x, "namespace", js.Array(value :_*))
+      inline def setNamespaceVarargs(value: String*): Self = StObject.set(x, "namespace", js.Array(value*))
       
       inline def setOptions(value: js.Array[CommandHelpSchemaOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: CommandHelpSchemaOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: CommandHelpSchemaOption*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     }
@@ -520,7 +541,7 @@ object helpMod {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
       
       inline def setDefault(value: String | Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -528,7 +549,7 @@ object helpMod {
       
       inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -599,17 +620,17 @@ object helpMod {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
       
       inline def setCommands(value: js.Array[CommandHelpSchema]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      inline def setCommandsVarargs(value: CommandHelpSchema*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: CommandHelpSchema*): Self = StObject.set(x, "commands", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
       inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

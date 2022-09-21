@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * TokenCredentials object used for authentication.
   * @param {ServiceClientOptions} [options] The parameter options
   */
-class ServiceClient () extends StObject {
+open class ServiceClient () extends StObject {
   def this(credentials: ServiceClientCredentials) = this()
   def this(credentials: Unit, options: ServiceClientOptions) = this()
   def this(credentials: ServiceClientCredentials, options: ServiceClientOptions) = this()
@@ -23,7 +23,7 @@ class ServiceClient () extends StObject {
     * Adds custom information to user agent header
     * @param {any} additionalUserAgentInfo - information to be added to user agent header, as string.
     */
-  def addUserAgentInfo(additionalUserAgentInfo: js.Any): Unit = js.native
+  def addUserAgentInfo(additionalUserAgentInfo: Any): Unit = js.native
   
   /**
     * Attempts to find package.json for the given azure nodejs package.

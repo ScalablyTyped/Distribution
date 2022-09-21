@@ -16,13 +16,13 @@ trait StockChartLegend extends StObject {
   
   var labels: js.UndefOr[StockChartLegendLabels] = js.undefined
   
-  var margin: js.UndefOr[Double | js.Any] = js.undefined
+  var margin: js.UndefOr[Double | Any] = js.undefined
   
   var offsetX: js.UndefOr[Double] = js.undefined
   
   var offsetY: js.UndefOr[Double] = js.undefined
   
-  var padding: js.UndefOr[Double | js.Any] = js.undefined
+  var padding: js.UndefOr[Double | Any] = js.undefined
   
   var position: js.UndefOr[String] = js.undefined
   
@@ -59,7 +59,7 @@ object StockChartLegend {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setMargin(value: Double | js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Double | Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
@@ -71,7 +71,7 @@ object StockChartLegend {
     
     inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
-    inline def setPadding(value: Double | js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     

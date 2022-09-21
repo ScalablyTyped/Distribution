@@ -24,6 +24,10 @@ trait InitialVisibleMonth extends StObject {
   
   var keepOpenOnDateSelect: js.UndefOr[Boolean] = js.native
   
+  var maxDate: js.UndefOr[Moment | Null] = js.native
+  
+  var minDate: js.UndefOr[Moment | Null] = js.native
+  
   var onClose: js.UndefOr[js.Function1[/* arg */ Date, Unit]] = js.native
   
   def onDateChange(): Unit = js.native

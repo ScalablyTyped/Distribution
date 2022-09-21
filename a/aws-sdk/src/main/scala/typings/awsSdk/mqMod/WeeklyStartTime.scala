@@ -9,12 +9,12 @@ trait WeeklyStartTime extends StObject {
   /**
     * Required. The day of the week.
     */
-  var DayOfWeek: js.UndefOr[typings.awsSdk.mqMod.DayOfWeek] = js.undefined
+  var DayOfWeek: typings.awsSdk.mqMod.DayOfWeek
   
   /**
     * Required. The time, in 24-hour format.
     */
-  var TimeOfDay: js.UndefOr[string] = js.undefined
+  var TimeOfDay: string
   
   /**
     * The time zone, UTC by default, in either the Country/City format, or the UTC offset format.
@@ -23,8 +23,8 @@ trait WeeklyStartTime extends StObject {
 }
 object WeeklyStartTime {
   
-  inline def apply(): WeeklyStartTime = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(DayOfWeek: DayOfWeek, TimeOfDay: string): WeeklyStartTime = {
+    val __obj = js.Dynamic.literal(DayOfWeek = DayOfWeek.asInstanceOf[js.Any], TimeOfDay = TimeOfDay.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeeklyStartTime]
   }
   
@@ -32,11 +32,7 @@ object WeeklyStartTime {
     
     inline def setDayOfWeek(value: DayOfWeek): Self = StObject.set(x, "DayOfWeek", value.asInstanceOf[js.Any])
     
-    inline def setDayOfWeekUndefined: Self = StObject.set(x, "DayOfWeek", js.undefined)
-    
     inline def setTimeOfDay(value: string): Self = StObject.set(x, "TimeOfDay", value.asInstanceOf[js.Any])
-    
-    inline def setTimeOfDayUndefined: Self = StObject.set(x, "TimeOfDay", js.undefined)
     
     inline def setTimeZone(value: string): Self = StObject.set(x, "TimeZone", value.asInstanceOf[js.Any])
     

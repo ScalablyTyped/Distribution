@@ -10,7 +10,7 @@ object styleSheetMod {
   
   @JSImport("ui-box/dist/src/utils/style-sheet", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with CustomStyleSheet {
     def this(options: Options) = this()
@@ -19,7 +19,7 @@ object styleSheetMod {
     override def _insert(sheet: CSSStyleSheet, rule: String): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var ctr: js.Any = js.native
+    var ctr: Any = js.native
     
     /* CompleteClass */
     override def flush(): Unit = js.native
@@ -31,35 +31,35 @@ object styleSheetMod {
     override def inject(): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var injected: js.Any = js.native
+    var injected: Any = js.native
     
     /* CompleteClass */
     override def insert(rule: String): Double = js.native
     
     /* private */ /* CompleteClass */
-    var isSpeedy: js.Any = js.native
+    var isSpeedy: Any = js.native
     
     /* private */ /* CompleteClass */
-    var maxLength: js.Any = js.native
+    var maxLength: Any = js.native
     
     /* CompleteClass */
     override def rules(): js.Array[CSSRule] = js.native
     
     /* private */ /* CompleteClass */
-    var sheet: js.Any = js.native
+    var sheet: Any = js.native
     
     /* CompleteClass */
     override def speedy(bool: Boolean): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var tags: js.Any = js.native
+    var tags: Any = js.native
   }
   
   trait CustomStyleSheet extends StObject {
     
     def _insert(sheet: CSSStyleSheet, rule: String): Unit
     
-    /* private */ var ctr: js.Any
+    /* private */ var ctr: Any
     
     def flush(): Unit
     
@@ -67,38 +67,38 @@ object styleSheetMod {
     
     def inject(): Unit
     
-    /* private */ var injected: js.Any
+    /* private */ var injected: Any
     
     def insert(rule: String): Double
     
-    /* private */ var isSpeedy: js.Any
+    /* private */ var isSpeedy: Any
     
-    /* private */ var maxLength: js.Any
+    /* private */ var maxLength: Any
     
     def rules(): js.Array[CSSRule]
     
-    /* private */ var sheet: js.Any
+    /* private */ var sheet: Any
     
     def speedy(bool: Boolean): Unit
     
-    /* private */ var tags: js.Any
+    /* private */ var tags: Any
   }
   object CustomStyleSheet {
     
     inline def apply(
       _insert: (CSSStyleSheet, String) => Unit,
-      ctr: js.Any,
+      ctr: Any,
       flush: () => Unit,
       getSheet: () => js.UndefOr[CSSStyleSheet],
       inject: () => Unit,
-      injected: js.Any,
+      injected: Any,
       insert: String => Double,
-      isSpeedy: js.Any,
-      maxLength: js.Any,
+      isSpeedy: Any,
+      maxLength: Any,
       rules: () => js.Array[CSSRule],
-      sheet: js.Any,
+      sheet: Any,
       speedy: Boolean => Unit,
-      tags: js.Any
+      tags: Any
     ): CustomStyleSheet = {
       val __obj = js.Dynamic.literal(_insert = js.Any.fromFunction2(_insert), ctr = ctr.asInstanceOf[js.Any], flush = js.Any.fromFunction0(flush), getSheet = js.Any.fromFunction0(getSheet), inject = js.Any.fromFunction0(inject), injected = injected.asInstanceOf[js.Any], insert = js.Any.fromFunction1(insert), isSpeedy = isSpeedy.asInstanceOf[js.Any], maxLength = maxLength.asInstanceOf[js.Any], rules = js.Any.fromFunction0(rules), sheet = sheet.asInstanceOf[js.Any], speedy = js.Any.fromFunction1(speedy), tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomStyleSheet]
@@ -106,7 +106,7 @@ object styleSheetMod {
     
     extension [Self <: CustomStyleSheet](x: Self) {
       
-      inline def setCtr(value: js.Any): Self = StObject.set(x, "ctr", value.asInstanceOf[js.Any])
+      inline def setCtr(value: Any): Self = StObject.set(x, "ctr", value.asInstanceOf[js.Any])
       
       inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
@@ -114,21 +114,21 @@ object styleSheetMod {
       
       inline def setInject(value: () => Unit): Self = StObject.set(x, "inject", js.Any.fromFunction0(value))
       
-      inline def setInjected(value: js.Any): Self = StObject.set(x, "injected", value.asInstanceOf[js.Any])
+      inline def setInjected(value: Any): Self = StObject.set(x, "injected", value.asInstanceOf[js.Any])
       
       inline def setInsert(value: String => Double): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
       
-      inline def setIsSpeedy(value: js.Any): Self = StObject.set(x, "isSpeedy", value.asInstanceOf[js.Any])
+      inline def setIsSpeedy(value: Any): Self = StObject.set(x, "isSpeedy", value.asInstanceOf[js.Any])
       
-      inline def setMaxLength(value: js.Any): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Any): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
       inline def setRules(value: () => js.Array[CSSRule]): Self = StObject.set(x, "rules", js.Any.fromFunction0(value))
       
-      inline def setSheet(value: js.Any): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
+      inline def setSheet(value: Any): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
       
       inline def setSpeedy(value: Boolean => Unit): Self = StObject.set(x, "speedy", js.Any.fromFunction1(value))
       
-      inline def setTags(value: js.Any): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Any): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       inline def set_insert(value: (CSSStyleSheet, String) => Unit): Self = StObject.set(x, "_insert", js.Any.fromFunction2(value))
     }

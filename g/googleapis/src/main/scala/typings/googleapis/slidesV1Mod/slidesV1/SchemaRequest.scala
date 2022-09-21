@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A single kind of update to apply to a presentation.
-  */
 trait SchemaRequest extends StObject {
   
   /**
@@ -130,8 +127,7 @@ trait SchemaRequest extends StObject {
   var replaceImage: js.UndefOr[SchemaReplaceImageRequest] = js.undefined
   
   /**
-    * Reroutes a line such that it&#39;s connected at the two closest
-    * connection sites on the connected page elements.
+    * Reroutes a line such that it's connected at the two closest connection sites on the connected page elements.
     */
   var rerouteLine: js.UndefOr[SchemaRerouteLineRequest] = js.undefined
   
@@ -189,6 +185,11 @@ trait SchemaRequest extends StObject {
     * Updates the properties of a Shape.
     */
   var updateShapeProperties: js.UndefOr[SchemaUpdateShapePropertiesRequest] = js.undefined
+  
+  /**
+    * Updates the properties of a Slide
+    */
+  var updateSlideProperties: js.UndefOr[SchemaUpdateSlidePropertiesRequest] = js.undefined
   
   /**
     * Updates the position of a set of slides in the presentation.
@@ -377,6 +378,10 @@ object SchemaRequest {
     inline def setUpdateShapeProperties(value: SchemaUpdateShapePropertiesRequest): Self = StObject.set(x, "updateShapeProperties", value.asInstanceOf[js.Any])
     
     inline def setUpdateShapePropertiesUndefined: Self = StObject.set(x, "updateShapeProperties", js.undefined)
+    
+    inline def setUpdateSlideProperties(value: SchemaUpdateSlidePropertiesRequest): Self = StObject.set(x, "updateSlideProperties", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateSlidePropertiesUndefined: Self = StObject.set(x, "updateSlideProperties", js.undefined)
     
     inline def setUpdateSlidesPosition(value: SchemaUpdateSlidesPositionRequest): Self = StObject.set(x, "updateSlidesPosition", value.asInstanceOf[js.Any])
     

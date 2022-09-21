@@ -23,7 +23,7 @@ object FilteredLookupInfo {
     
     inline def setControllingFields(value: js.Array[String]): Self = StObject.set(x, "controllingFields", value.asInstanceOf[js.Any])
     
-    inline def setControllingFieldsVarargs(value: String*): Self = StObject.set(x, "controllingFields", js.Array(value :_*))
+    inline def setControllingFieldsVarargs(value: String*): Self = StObject.set(x, "controllingFields", js.Array(value*))
     
     inline def setDependent(value: Boolean): Self = StObject.set(x, "dependent", value.asInstanceOf[js.Any])
     

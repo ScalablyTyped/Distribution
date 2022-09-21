@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangePageOrientationCommand")
 @js.native
-class ChangePageOrientationCommand ()
+open class ChangePageOrientationCommand ()
   extends StObject
      with typings.devexpressWeb.ChangePageOrientationCommand {
   

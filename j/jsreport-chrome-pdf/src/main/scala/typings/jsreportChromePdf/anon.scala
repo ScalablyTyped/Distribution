@@ -313,7 +313,7 @@ object anon {
     
     var executablePath: js.UndefOr[String] = js.undefined
     
-    var extraPrefsFirefox: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var extraPrefsFirefox: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var handleSIGHUP: js.UndefOr[Boolean] = js.undefined
     
@@ -350,7 +350,7 @@ object anon {
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setDefaultViewport(value: Partialwidthstringheights): Self = StObject.set(x, "defaultViewport", value.asInstanceOf[js.Any])
       
@@ -372,7 +372,7 @@ object anon {
       
       inline def setExecutablePathUndefined: Self = StObject.set(x, "executablePath", js.undefined)
       
-      inline def setExtraPrefsFirefox(value: StringDictionary[js.Any]): Self = StObject.set(x, "extraPrefsFirefox", value.asInstanceOf[js.Any])
+      inline def setExtraPrefsFirefox(value: StringDictionary[Any]): Self = StObject.set(x, "extraPrefsFirefox", value.asInstanceOf[js.Any])
       
       inline def setExtraPrefsFirefoxUndefined: Self = StObject.set(x, "extraPrefsFirefox", js.undefined)
       
@@ -396,7 +396,7 @@ object anon {
       
       inline def setIgnoreDefaultArgsUndefined: Self = StObject.set(x, "ignoreDefaultArgs", js.undefined)
       
-      inline def setIgnoreDefaultArgsVarargs(value: String*): Self = StObject.set(x, "ignoreDefaultArgs", js.Array(value :_*))
+      inline def setIgnoreDefaultArgsVarargs(value: String*): Self = StObject.set(x, "ignoreDefaultArgs", js.Array(value*))
       
       inline def setIgnoreHTTPSErrors(value: Boolean): Self = StObject.set(x, "ignoreHTTPSErrors", value.asInstanceOf[js.Any])
       
@@ -462,7 +462,7 @@ object anon {
       
       inline def setAllowedModulesUndefined: Self = StObject.set(x, "allowedModules", js.undefined)
       
-      inline def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value :_*))
+      inline def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value*))
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,7 @@ object XUIElementFactoryManager {
     deregisterFactory: (String, String, String) => Unit,
     getFactory: (String, String) => XUIElementFactory,
     getRegisteredFactories: () => SafeArray[SafeArray[PropertyValue]],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerFactory: (String, String, String, String) => Unit,
     release: () => Unit
   ): XUIElementFactoryManager = {

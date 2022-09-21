@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("react-dates", "CalendarMonth")
 @js.native
-class CalendarMonthCls protected ()
-  extends Component[CalendarMonthShape, ComponentState, js.Any] {
+open class CalendarMonthCls protected () extends Component[CalendarMonthShape, ComponentState, Any] {
   def this(props: CalendarMonthShape) = this()
-  def this(props: CalendarMonthShape, context: js.Any) = this()
+  def this(props: CalendarMonthShape, context: Any) = this()
 }

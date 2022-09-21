@@ -1,6 +1,5 @@
 package typings.bingmaps.Microsoft.Maps
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ trait GeoXmlLayer
     * Returns the data source used by the layer.
     * @returns The data source used by the layer.
     */
-  def getDataSource(): String | ArrayBuffer = js.native
+  def getDataSource(): String | js.typedarray.ArrayBuffer = js.native
   
   /**
     * Returns the options used by the GeoXmlLayer.
@@ -45,7 +44,7 @@ trait GeoXmlLayer
   def getVisible(): Boolean = js.native
   
   /** Optional property to store any additional metadata for this layer. */
-  var metadata: js.Any = js.native
+  var metadata: Any = js.native
   
   /**
     * Sets the data source to render in the GeoXmlLayer.
@@ -53,7 +52,7 @@ trait GeoXmlLayer
     * @param isUrl Whether the dataSource provided is an URL. Default = true
     */
   def setDataSource(dataSource: String, isUrl: Boolean): Unit = js.native
-  def setDataSource(dataSource: ArrayBuffer, isUrl: Boolean): Unit = js.native
+  def setDataSource(dataSource: js.typedarray.ArrayBuffer, isUrl: Boolean): Unit = js.native
   
   /**
     * Sets the options used for loading and rendering data into the GeoXmlLayer.

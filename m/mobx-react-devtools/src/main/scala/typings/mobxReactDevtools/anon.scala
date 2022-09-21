@@ -49,7 +49,7 @@ object anon {
     
     var logEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var logFilter: js.UndefOr[js.Function1[/* p */ js.Any, Boolean]] = js.undefined
+    var logFilter: js.UndefOr[js.Function1[/* p */ Any, Boolean]] = js.undefined
     
     var updatesEnabled: js.UndefOr[Boolean] = js.undefined
   }
@@ -70,7 +70,7 @@ object anon {
       
       inline def setLogEnabledUndefined: Self = StObject.set(x, "logEnabled", js.undefined)
       
-      inline def setLogFilter(value: /* p */ js.Any => Boolean): Self = StObject.set(x, "logFilter", js.Any.fromFunction1(value))
+      inline def setLogFilter(value: /* p */ Any => Boolean): Self = StObject.set(x, "logFilter", js.Any.fromFunction1(value))
       
       inline def setLogFilterUndefined: Self = StObject.set(x, "logFilter", js.undefined)
       

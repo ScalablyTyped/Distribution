@@ -8,6 +8,7 @@ trait EcdsaParams
   extends StObject
      with Algorithm {
   
+  /* standard dom */
   var hash: HashAlgorithmIdentifier
 }
 object EcdsaParams {

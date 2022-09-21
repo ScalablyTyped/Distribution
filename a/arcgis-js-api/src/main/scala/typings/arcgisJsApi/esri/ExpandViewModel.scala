@@ -14,12 +14,16 @@ trait ExpandViewModel
   /**
     * Automatically collapses the expand widget instance when the view's viewpoint updates.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand-ExpandViewModel.html#autoCollapse)
     */
   var autoCollapse: Boolean = js.native
   
   /**
     * Whether the widget is currently expanded or not.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand-ExpandViewModel.html#expanded)
     */
@@ -34,6 +38,8 @@ trait ExpandViewModel
   
   /**
     * The view model's state.
+    *
+    * @default disabled
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand-ExpandViewModel.html#state)
     */

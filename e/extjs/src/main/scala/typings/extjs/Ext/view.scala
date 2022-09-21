@@ -24,7 +24,7 @@ object view {
     /** [Method] Changes the data store bound to this view and refreshes it
       * @param store Ext.data.Store The store to bind to this view
       */
-    var bindStore: js.UndefOr[js.Function1[js.UndefOr[js.Any | IStore], Unit]] = js.undefined
+    var bindStore: js.UndefOr[js.Function1[js.UndefOr[Any | IStore], Unit]] = js.undefined
     
     /** [Method] Binds listeners for this component to the store
       * @param store Ext.data.AbstractStore The store to bind to
@@ -57,7 +57,7 @@ object view {
       * @param suppressEvent Boolean Set to false to not fire a deselect event
       */
     var deselect: js.UndefOr[
-        js.Function2[/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean], Unit]
+        js.Function2[/* records */ js.UndefOr[Any], /* suppressEvent */ js.UndefOr[Boolean], Unit]
       ] = js.undefined
     
     /** [Config Option] (Boolean) */
@@ -81,7 +81,7 @@ object view {
       * @param nodeInfo HTMLElement/String/Number/Ext.data.Model An HTMLElement template node, index of a template node, the id of a template node or the record associated with the node.
       * @returns HTMLElement The node or null if it wasn't found
       */
-    var getNode: js.UndefOr[js.Function1[/* nodeInfo */ js.UndefOr[js.Any], HTMLElement]] = js.undefined
+    var getNode: js.UndefOr[js.Function1[/* nodeInfo */ js.UndefOr[Any], HTMLElement]] = js.undefined
     
     /** [Method] Gets a range nodes
       * @param start Number The index of the first node in the range
@@ -96,7 +96,7 @@ object view {
       * @param node Ext.Element/HTMLElement The node to evaluate
       * @returns Ext.data.Model record The Ext.data.Model object
       */
-    var getRecord: js.UndefOr[js.Function1[/* node */ js.UndefOr[js.Any], IModel]] = js.undefined
+    var getRecord: js.UndefOr[js.Function1[/* node */ js.UndefOr[Any], IModel]] = js.undefined
     
     /** [Method] Gets an array of the records from an array of nodes
       * @param nodes HTMLElement[] The nodes to evaluate
@@ -132,19 +132,19 @@ object view {
     /** [Method] Gets the listeners to bind to a new store
       * @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
       */
-    var getStoreListeners: js.UndefOr[js.Function0[js.Any] | (js.Function1[/* store */ js.UndefOr[IStore], js.Any])] = js.undefined
+    var getStoreListeners: js.UndefOr[js.Function0[Any] | (js.Function1[/* store */ js.UndefOr[IStore], Any])] = js.undefined
     
     /** [Method] Finds the index of the passed node
       * @param nodeInfo HTMLElement/String/Number/Ext.data.Model An HTMLElement template node, index of a template node, the id of a template node or a record associated with a node.
       * @returns Number The index of the node or -1
       */
-    var indexOf: js.UndefOr[js.Function1[/* nodeInfo */ js.UndefOr[js.Any], Double]] = js.undefined
+    var indexOf: js.UndefOr[js.Function1[/* nodeInfo */ js.UndefOr[Any], Double]] = js.undefined
     
     /** [Method] Returns true if the passed node is selected else false
       * @param node HTMLElement/Number/Ext.data.Model The node, node index or record to check
       * @returns Boolean True if selected, else false
       */
-    var isSelected: js.UndefOr[js.Function1[/* node */ js.UndefOr[js.Any], Boolean]] = js.undefined
+    var isSelected: js.UndefOr[js.Function1[/* node */ js.UndefOr[Any], Boolean]] = js.undefined
     
     /** [Config Option] (String) */
     var itemCls: js.UndefOr[java.lang.String] = js.undefined
@@ -153,10 +153,10 @@ object view {
     var itemSelector: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String/String[]/Ext.XTemplate) */
-    var itemTpl: js.UndefOr[js.Any] = js.undefined
+    var itemTpl: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean/Object) */
-    var loadMask: js.UndefOr[js.Any] = js.undefined
+    var loadMask: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var loadingCls: js.UndefOr[java.lang.String] = js.undefined
@@ -177,9 +177,9 @@ object view {
       */
     var onBindStore: js.UndefOr[
         (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit]) | (js.Function3[
-          /* store */ js.UndefOr[js.Any], 
-          /* initial */ js.UndefOr[js.Any], 
-          /* propName */ js.UndefOr[js.Any], 
+          /* store */ js.UndefOr[Any], 
+          /* initial */ js.UndefOr[Any], 
+          /* propName */ js.UndefOr[Any], 
           Unit
         ])
       ] = js.undefined
@@ -192,7 +192,7 @@ object view {
       * @param store Object
       */
     var onUnbindStore: js.UndefOr[
-        (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit])
+        (js.Function1[/* store */ js.UndefOr[Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit])
       ] = js.undefined
     
     /** [Config Option] (String) */
@@ -206,10 +206,10 @@ object view {
       */
     var prepareData: js.UndefOr[
         js.Function3[
-          /* data */ js.UndefOr[js.Any], 
+          /* data */ js.UndefOr[Any], 
           /* recordIndex */ js.UndefOr[Double], 
           /* record */ js.UndefOr[IModel], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -231,7 +231,7 @@ object view {
       */
     var select: js.UndefOr[
         js.Function3[
-          /* records */ js.UndefOr[js.Any], 
+          /* records */ js.UndefOr[Any], 
           /* keepExisting */ js.UndefOr[Boolean], 
           /* suppressEvent */ js.UndefOr[Boolean], 
           Unit
@@ -267,7 +267,7 @@ object view {
     
     extension [Self <: IAbstractView](x: Self) {
       
-      inline def setBindStore(value: js.UndefOr[js.Any | IStore] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
+      inline def setBindStore(value: js.UndefOr[Any | IStore] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
       
       inline def setBindStoreListeners(value: js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "bindStoreListeners", js.Any.fromFunction1(value))
       
@@ -295,7 +295,7 @@ object view {
       
       inline def setDeferInitialRefreshUndefined: Self = StObject.set(x, "deferInitialRefresh", js.undefined)
       
-      inline def setDeselect(value: (/* records */ js.UndefOr[js.Any], /* suppressEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction2(value))
+      inline def setDeselect(value: (/* records */ js.UndefOr[Any], /* suppressEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction2(value))
       
       inline def setDeselectUndefined: Self = StObject.set(x, "deselect", js.undefined)
       
@@ -315,7 +315,7 @@ object view {
       
       inline def setFindTargetByEventUndefined: Self = StObject.set(x, "findTargetByEvent", js.undefined)
       
-      inline def setGetNode(value: /* nodeInfo */ js.UndefOr[js.Any] => HTMLElement): Self = StObject.set(x, "getNode", js.Any.fromFunction1(value))
+      inline def setGetNode(value: /* nodeInfo */ js.UndefOr[Any] => HTMLElement): Self = StObject.set(x, "getNode", js.Any.fromFunction1(value))
       
       inline def setGetNodeUndefined: Self = StObject.set(x, "getNode", js.undefined)
       
@@ -323,7 +323,7 @@ object view {
       
       inline def setGetNodesUndefined: Self = StObject.set(x, "getNodes", js.undefined)
       
-      inline def setGetRecord(value: /* node */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "getRecord", js.Any.fromFunction1(value))
+      inline def setGetRecord(value: /* node */ js.UndefOr[Any] => IModel): Self = StObject.set(x, "getRecord", js.Any.fromFunction1(value))
       
       inline def setGetRecordUndefined: Self = StObject.set(x, "getRecord", js.undefined)
       
@@ -349,21 +349,21 @@ object view {
       
       inline def setGetStore(value: () => IAbstractStore | IStore): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
       
-      inline def setGetStoreListeners(value: js.Function0[js.Any] | (js.Function1[/* store */ js.UndefOr[IStore], js.Any])): Self = StObject.set(x, "getStoreListeners", value.asInstanceOf[js.Any])
+      inline def setGetStoreListeners(value: js.Function0[Any] | (js.Function1[/* store */ js.UndefOr[IStore], Any])): Self = StObject.set(x, "getStoreListeners", value.asInstanceOf[js.Any])
       
-      inline def setGetStoreListenersFunction0(value: () => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
+      inline def setGetStoreListenersFunction0(value: () => Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
       
-      inline def setGetStoreListenersFunction1(value: /* store */ js.UndefOr[IStore] => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
+      inline def setGetStoreListenersFunction1(value: /* store */ js.UndefOr[IStore] => Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
       
       inline def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
       
       inline def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
       
-      inline def setIndexOf(value: /* nodeInfo */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+      inline def setIndexOf(value: /* nodeInfo */ js.UndefOr[Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
       
       inline def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
       
-      inline def setIsSelected(value: /* node */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction1(value))
+      inline def setIsSelected(value: /* node */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction1(value))
       
       inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
       
@@ -375,11 +375,11 @@ object view {
       
       inline def setItemSelectorUndefined: Self = StObject.set(x, "itemSelector", js.undefined)
       
-      inline def setItemTpl(value: js.Any): Self = StObject.set(x, "itemTpl", value.asInstanceOf[js.Any])
+      inline def setItemTpl(value: Any): Self = StObject.set(x, "itemTpl", value.asInstanceOf[js.Any])
       
       inline def setItemTplUndefined: Self = StObject.set(x, "itemTpl", js.undefined)
       
-      inline def setLoadMask(value: js.Any): Self = StObject.set(x, "loadMask", value.asInstanceOf[js.Any])
+      inline def setLoadMask(value: Any): Self = StObject.set(x, "loadMask", value.asInstanceOf[js.Any])
       
       inline def setLoadMaskUndefined: Self = StObject.set(x, "loadMask", js.undefined)
       
@@ -401,9 +401,9 @@ object view {
       
       inline def setOnBindStore(
         value: (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit]) | (js.Function3[
-              /* store */ js.UndefOr[js.Any], 
-              /* initial */ js.UndefOr[js.Any], 
-              /* propName */ js.UndefOr[js.Any], 
+              /* store */ js.UndefOr[Any], 
+              /* initial */ js.UndefOr[Any], 
+              /* propName */ js.UndefOr[Any], 
               Unit
             ])
       ): Self = StObject.set(x, "onBindStore", value.asInstanceOf[js.Any])
@@ -411,7 +411,7 @@ object view {
       inline def setOnBindStoreFunction2(value: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onBindStore", js.Any.fromFunction2(value))
       
       inline def setOnBindStoreFunction3(
-        value: (/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], /* propName */ js.UndefOr[js.Any]) => Unit
+        value: (/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any], /* propName */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onBindStore", js.Any.fromFunction3(value))
       
       inline def setOnBindStoreUndefined: Self = StObject.set(x, "onBindStore", js.undefined)
@@ -421,10 +421,10 @@ object view {
       inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
       
       inline def setOnUnbindStore(
-        value: (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit])
+        value: (js.Function1[/* store */ js.UndefOr[Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit])
       ): Self = StObject.set(x, "onUnbindStore", value.asInstanceOf[js.Any])
       
-      inline def setOnUnbindStoreFunction1(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction1(value))
+      inline def setOnUnbindStoreFunction1(value: /* store */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction1(value))
       
       inline def setOnUnbindStoreFunction2(value: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction2(value))
       
@@ -435,7 +435,7 @@ object view {
       inline def setOverItemClsUndefined: Self = StObject.set(x, "overItemCls", js.undefined)
       
       inline def setPrepareData(
-        value: (/* data */ js.UndefOr[js.Any], /* recordIndex */ js.UndefOr[Double], /* record */ js.UndefOr[IModel]) => js.Any
+        value: (/* data */ js.UndefOr[Any], /* recordIndex */ js.UndefOr[Double], /* record */ js.UndefOr[IModel]) => Any
       ): Self = StObject.set(x, "prepareData", js.Any.fromFunction3(value))
       
       inline def setPrepareDataUndefined: Self = StObject.set(x, "prepareData", js.undefined)
@@ -453,7 +453,7 @@ object view {
       inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
       
       inline def setSelect(
-        value: (/* records */ js.UndefOr[js.Any], /* keepExisting */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit
+        value: (/* records */ js.UndefOr[Any], /* keepExisting */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit
       ): Self = StObject.set(x, "select", js.Any.fromFunction3(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
@@ -496,15 +496,13 @@ object view {
       * @param initial Object
       */
     @JSName("bindStore")
-    var bindStore_IBoundList: js.UndefOr[
-        js.Function2[/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var bindStore_IBoundList: js.UndefOr[js.Function2[/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Retrieves the first direct child of this container which matches the passed selector or component
       * @param selector String/Ext.Component An Ext.ComponentQuery selector. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching child Ext.Component (or null if no match was found).
       */
-    var child: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
+    var child: js.UndefOr[js.Function1[js.UndefOr[Any], Any]] = js.undefined
     
     /** [Config Option] (String) */
     var displayField: js.UndefOr[java.lang.String] = js.undefined
@@ -513,7 +511,7 @@ object view {
       * @param selector String/Ext.Component An Ext.ComponentQuery selector or Ext.Component. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching descendant Ext.Component (or null if no match was found).
       */
-    var down: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
+    var down: js.UndefOr[js.Function1[js.UndefOr[Any], Any]] = js.undefined
     
     /** [Method] A method that returns the inner template for displaying items in the list
       * @param displayField String The displayField for the BoundList.
@@ -538,7 +536,7 @@ object view {
       * @param scope Object The scope in which to run the function. If not specified, it will default to the active component.
       * @returns Ext.Component[] Components matched by the passed function
       */
-    var queryBy: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Array]] = js.undefined
+    var queryBy: js.UndefOr[js.Function2[js.UndefOr[Any], js.UndefOr[Any], Array]] = js.undefined
     
     /** [Method] Finds a component at any level under this container matching the id itemId
       * @param id String The id to find
@@ -555,11 +553,11 @@ object view {
     
     extension [Self <: typings.extjs.Ext.view.IBoundList](x: Self) {
       
-      inline def setBindStore(value: (/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction2(value))
+      inline def setBindStore(value: (/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction2(value))
       
       inline def setBindStoreUndefined: Self = StObject.set(x, "bindStore", js.undefined)
       
-      inline def setChild(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+      inline def setChild(value: js.UndefOr[Any] => Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
       
       inline def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
       
@@ -567,7 +565,7 @@ object view {
       
       inline def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
       
-      inline def setDown(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      inline def setDown(value: js.UndefOr[Any] => Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
       inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
       
@@ -585,7 +583,7 @@ object view {
       
       inline def setQuery(value: js.UndefOr[java.lang.String] => Array): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
       
-      inline def setQueryBy(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
+      inline def setQueryBy(value: (js.UndefOr[Any], js.UndefOr[Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
       
       inline def setQueryById(value: js.UndefOr[java.lang.String] => IComponent): Self = StObject.set(x, "queryById", js.Any.fromFunction1(value))
       
@@ -612,7 +610,7 @@ object view {
     /** [Method] Triggers selection of the currently highlighted item according to the behavior of the configured SelectionModel
       * @param e Object
       */
-    var selectHighlighted: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var selectHighlighted: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IBoundListKeyNav {
     
@@ -631,7 +629,7 @@ object view {
       
       inline def setHighlightAtUndefined: Self = StObject.set(x, "highlightAt", js.undefined)
       
-      inline def setSelectHighlighted(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "selectHighlighted", js.Any.fromFunction1(value))
+      inline def setSelectHighlighted(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "selectHighlighted", js.Any.fromFunction1(value))
       
       inline def setSelectHighlightedUndefined: Self = StObject.set(x, "selectHighlighted", js.undefined)
     }
@@ -678,14 +676,14 @@ object view {
       * @param el String/HTMLElement/Ext.Element/Number The id of an element, or an Ext.dom.Element, or an HtmlElement to find within the composite collection.
       * @returns Number The index of the passed Ext.dom.Element in the composite collection, or -1 if not found.
       */
-    var indexOf: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Double]] = js.undefined
+    var indexOf: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], Double]] = js.undefined
     
     /** [Method] Removes the specified element s
       * @param el String/HTMLElement/Ext.Element/Number The id of an element, the Element itself, the index of the element in this composite or an array of any of those.
       * @param removeDom Boolean True to also remove the element from the document
       */
     var removeElement: js.UndefOr[
-        js.Function2[/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean], Unit]
+        js.Function2[/* el */ js.UndefOr[Any], /* removeDom */ js.UndefOr[Boolean], Unit]
       ] = js.undefined
     
     /** [Method] Replaces the specified element with the passed element
@@ -696,8 +694,8 @@ object view {
       */
     var replaceElement: js.UndefOr[
         js.Function3[
-          /* el */ js.UndefOr[js.Any], 
-          /* replacement */ js.UndefOr[js.Any], 
+          /* el */ js.UndefOr[Any], 
+          /* replacement */ js.UndefOr[Any], 
           /* domReplace */ js.UndefOr[Boolean], 
           this.type
         ]
@@ -734,16 +732,16 @@ object view {
       
       inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      inline def setIndexOf(value: /* el */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+      inline def setIndexOf(value: /* el */ js.UndefOr[Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
       
       inline def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
       
-      inline def setRemoveElement(value: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "removeElement", js.Any.fromFunction2(value))
+      inline def setRemoveElement(value: (/* el */ js.UndefOr[Any], /* removeDom */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "removeElement", js.Any.fromFunction2(value))
       
       inline def setRemoveElementUndefined: Self = StObject.set(x, "removeElement", js.undefined)
       
       inline def setReplaceElement(
-        value: (/* el */ js.UndefOr[js.Any], /* replacement */ js.UndefOr[js.Any], /* domReplace */ js.UndefOr[Boolean]) => INodeCache
+        value: (/* el */ js.UndefOr[Any], /* replacement */ js.UndefOr[Any], /* domReplace */ js.UndefOr[Boolean]) => INodeCache
       ): Self = StObject.set(x, "replaceElement", js.Any.fromFunction3(value))
       
       inline def setReplaceElementUndefined: Self = StObject.set(x, "replaceElement", js.undefined)
@@ -765,13 +763,13 @@ object view {
       * @param cls String
       */
     var addRowCls: js.UndefOr[
-        js.Function2[/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[java.lang.String], Unit]
+        js.Function2[/* rowInfo */ js.UndefOr[Any], /* cls */ js.UndefOr[java.lang.String], Unit]
       ] = js.undefined
     
     /** [Method] Sizes the passed header to fit the max content width
       * @param header Ext.grid.column.Column/Number The header (or index of header) to auto size.
       */
-    var autoSizeColumn: js.UndefOr[js.Function1[/* header */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var autoSizeColumn: js.UndefOr[js.Function1[/* header */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Function which can be overridden which returns the data object passed to this DataView s template to render the whole
       * @param records Object
@@ -780,7 +778,7 @@ object view {
       */
     @JSName("collectData")
     var collectData_ITable: js.UndefOr[
-        js.Function2[/* records */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[js.Any], Array]
+        js.Function2[/* records */ js.UndefOr[Any], /* startIndex */ js.UndefOr[Any], Array]
       ] = js.undefined
     
     /** [Config Option] (Boolean) */
@@ -789,7 +787,7 @@ object view {
     /** [Method] Expands a particular header to fit the max content width
       * @param header Object
       */
-    var expandToFit: js.UndefOr[js.Function1[/* header */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var expandToFit: js.UndefOr[js.Function1[/* header */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (String) */
     var firstCls: js.UndefOr[java.lang.String] = js.undefined
@@ -798,7 +796,7 @@ object view {
       * @param row HTMLElement/String/Number/Ext.data.Model An HTMLElement template node, index of a template node, the id of a template node or the
       * @param delay Boolean/Number Delay the focus this number of milliseconds (true for 10 milliseconds). record associated with the node.
       */
-    var focusRow: js.UndefOr[js.Function2[/* row */ js.UndefOr[js.Any], /* delay */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var focusRow: js.UndefOr[js.Function2[/* row */ js.UndefOr[Any], /* delay */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Try to focus this component
       * @param selectText Object
@@ -807,7 +805,7 @@ object view {
       */
     @JSName("focus")
     var focus_ITable: js.UndefOr[
-        js.Function2[/* selectText */ js.UndefOr[js.Any], /* delay */ js.UndefOr[js.Any], IComponent]
+        js.Function2[/* selectText */ js.UndefOr[Any], /* delay */ js.UndefOr[Any], IComponent]
       ] = js.undefined
     
     /** [Method] Returns a CSS selector which selects the outermost element s in this view  */
@@ -821,7 +819,7 @@ object view {
     /** [Method] Returns a CSS selector which selects the element s which define the width of a column
       * @param header Object
       */
-    var getColumnSizerSelector: js.UndefOr[js.Function1[/* header */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var getColumnSizerSelector: js.UndefOr[js.Function1[/* header */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Returns a CSS selector which selects a row which contains cells  */
     var getDataRowSelector: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -845,7 +843,7 @@ object view {
       */
     @JSName("getNode")
     var getNode_ITable: js.UndefOr[
-        js.Function2[/* nodeInfo */ js.UndefOr[js.Any], /* dataRow */ js.UndefOr[Boolean], HTMLElement]
+        js.Function2[/* nodeInfo */ js.UndefOr[Any], /* dataRow */ js.UndefOr[Boolean], HTMLElement]
       ] = js.undefined
     
     /** [Method] Gets the current XY position of the component s underlying element
@@ -854,9 +852,7 @@ object view {
       * @returns Number[] The XY position of the element (e.g., [100, 200])
       */
     @JSName("getPosition")
-    var getPosition_ITable: js.UndefOr[
-        js.Function2[/* record */ js.UndefOr[js.Any], /* header */ js.UndefOr[js.Any], Array]
-      ] = js.undefined
+    var getPosition_ITable: js.UndefOr[js.Function2[/* record */ js.UndefOr[Any], /* header */ js.UndefOr[Any], Array]] = js.undefined
     
     /** [Method] Override this function to apply custom CSS classes to rows during rendering
       * @param record Ext.data.Model The record corresponding to the current row.
@@ -869,7 +865,7 @@ object view {
         js.Function4[
           /* record */ js.UndefOr[IModel], 
           /* index */ js.UndefOr[Double], 
-          /* rowParams */ js.UndefOr[js.Any], 
+          /* rowParams */ js.UndefOr[Any], 
           /* store */ js.UndefOr[IStore], 
           java.lang.String
         ]
@@ -886,7 +882,7 @@ object view {
       * @param cls String
       */
     var removeRowCls: js.UndefOr[
-        js.Function2[/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[java.lang.String], Unit]
+        js.Function2[/* rowInfo */ js.UndefOr[Any], /* cls */ js.UndefOr[java.lang.String], Unit]
       ] = js.undefined
     
     /** [Config Option] (Boolean) */
@@ -917,15 +913,15 @@ object view {
     
     extension [Self <: ITable](x: Self) {
       
-      inline def setAddRowCls(value: (/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[java.lang.String]) => Unit): Self = StObject.set(x, "addRowCls", js.Any.fromFunction2(value))
+      inline def setAddRowCls(value: (/* rowInfo */ js.UndefOr[Any], /* cls */ js.UndefOr[java.lang.String]) => Unit): Self = StObject.set(x, "addRowCls", js.Any.fromFunction2(value))
       
       inline def setAddRowClsUndefined: Self = StObject.set(x, "addRowCls", js.undefined)
       
-      inline def setAutoSizeColumn(value: /* header */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "autoSizeColumn", js.Any.fromFunction1(value))
+      inline def setAutoSizeColumn(value: /* header */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "autoSizeColumn", js.Any.fromFunction1(value))
       
       inline def setAutoSizeColumnUndefined: Self = StObject.set(x, "autoSizeColumn", js.undefined)
       
-      inline def setCollectData(value: (/* records */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "collectData", js.Any.fromFunction2(value))
+      inline def setCollectData(value: (/* records */ js.UndefOr[Any], /* startIndex */ js.UndefOr[Any]) => Array): Self = StObject.set(x, "collectData", js.Any.fromFunction2(value))
       
       inline def setCollectDataUndefined: Self = StObject.set(x, "collectData", js.undefined)
       
@@ -933,7 +929,7 @@ object view {
       
       inline def setEnableTextSelectionUndefined: Self = StObject.set(x, "enableTextSelection", js.undefined)
       
-      inline def setExpandToFit(value: /* header */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "expandToFit", js.Any.fromFunction1(value))
+      inline def setExpandToFit(value: /* header */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "expandToFit", js.Any.fromFunction1(value))
       
       inline def setExpandToFitUndefined: Self = StObject.set(x, "expandToFit", js.undefined)
       
@@ -941,9 +937,9 @@ object view {
       
       inline def setFirstClsUndefined: Self = StObject.set(x, "firstCls", js.undefined)
       
-      inline def setFocus(value: (/* selectText */ js.UndefOr[js.Any], /* delay */ js.UndefOr[js.Any]) => IComponent): Self = StObject.set(x, "focus", js.Any.fromFunction2(value))
+      inline def setFocus(value: (/* selectText */ js.UndefOr[Any], /* delay */ js.UndefOr[Any]) => IComponent): Self = StObject.set(x, "focus", js.Any.fromFunction2(value))
       
-      inline def setFocusRow(value: (/* row */ js.UndefOr[js.Any], /* delay */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "focusRow", js.Any.fromFunction2(value))
+      inline def setFocusRow(value: (/* row */ js.UndefOr[Any], /* delay */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "focusRow", js.Any.fromFunction2(value))
       
       inline def setFocusRowUndefined: Self = StObject.set(x, "focusRow", js.undefined)
       
@@ -957,7 +953,7 @@ object view {
       
       inline def setGetCellSelectorUndefined: Self = StObject.set(x, "getCellSelector", js.undefined)
       
-      inline def setGetColumnSizerSelector(value: /* header */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getColumnSizerSelector", js.Any.fromFunction1(value))
+      inline def setGetColumnSizerSelector(value: /* header */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getColumnSizerSelector", js.Any.fromFunction1(value))
       
       inline def setGetColumnSizerSelectorUndefined: Self = StObject.set(x, "getColumnSizerSelector", js.undefined)
       
@@ -973,7 +969,7 @@ object view {
       
       inline def setGetItemSelectorUndefined: Self = StObject.set(x, "getItemSelector", js.undefined)
       
-      inline def setGetNode(value: (/* nodeInfo */ js.UndefOr[js.Any], /* dataRow */ js.UndefOr[Boolean]) => HTMLElement): Self = StObject.set(x, "getNode", js.Any.fromFunction2(value))
+      inline def setGetNode(value: (/* nodeInfo */ js.UndefOr[Any], /* dataRow */ js.UndefOr[Boolean]) => HTMLElement): Self = StObject.set(x, "getNode", js.Any.fromFunction2(value))
       
       inline def setGetNodeContainerSelector(value: () => Unit): Self = StObject.set(x, "getNodeContainerSelector", js.Any.fromFunction0(value))
       
@@ -981,12 +977,12 @@ object view {
       
       inline def setGetNodeUndefined: Self = StObject.set(x, "getNode", js.undefined)
       
-      inline def setGetPosition(value: (/* record */ js.UndefOr[js.Any], /* header */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "getPosition", js.Any.fromFunction2(value))
+      inline def setGetPosition(value: (/* record */ js.UndefOr[Any], /* header */ js.UndefOr[Any]) => Array): Self = StObject.set(x, "getPosition", js.Any.fromFunction2(value))
       
       inline def setGetPositionUndefined: Self = StObject.set(x, "getPosition", js.undefined)
       
       inline def setGetRowClass(
-        value: (/* record */ js.UndefOr[IModel], /* index */ js.UndefOr[Double], /* rowParams */ js.UndefOr[js.Any], /* store */ js.UndefOr[IStore]) => java.lang.String
+        value: (/* record */ js.UndefOr[IModel], /* index */ js.UndefOr[Double], /* rowParams */ js.UndefOr[Any], /* store */ js.UndefOr[IStore]) => java.lang.String
       ): Self = StObject.set(x, "getRowClass", js.Any.fromFunction4(value))
       
       inline def setGetRowClassUndefined: Self = StObject.set(x, "getRowClass", js.undefined)
@@ -999,7 +995,7 @@ object view {
       
       inline def setMarkDirtyUndefined: Self = StObject.set(x, "markDirty", js.undefined)
       
-      inline def setRemoveRowCls(value: (/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[java.lang.String]) => Unit): Self = StObject.set(x, "removeRowCls", js.Any.fromFunction2(value))
+      inline def setRemoveRowCls(value: (/* rowInfo */ js.UndefOr[Any], /* cls */ js.UndefOr[java.lang.String]) => Unit): Self = StObject.set(x, "removeRowCls", js.Any.fromFunction2(value))
       
       inline def setRemoveRowClsUndefined: Self = StObject.set(x, "removeRowCls", js.undefined)
       
@@ -1025,7 +1021,7 @@ object view {
       * @param ownerContext Object
       */
     @JSName("beginLayout")
-    var beginLayout_ITableLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var beginLayout_ITableLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] This method is called after all layouts are complete and their calculations flushed to the DOM  */
     @JSName("finishedLayout")
@@ -1040,7 +1036,7 @@ object view {
     
     extension [Self <: ITableLayout](x: Self) {
       
-      inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
+      inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
       
       inline def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
       

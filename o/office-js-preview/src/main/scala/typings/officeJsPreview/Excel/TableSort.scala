@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Manages sorting operations on `Table` objects.
   *
-  * Manages sorting operations on Table objects.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @js.native
@@ -24,6 +24,7 @@ trait TableSort
   /**
     * Perform a sort operation.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     *
     * @param fields The list of conditions to sort on.
@@ -35,21 +36,18 @@ trait TableSort
   @JSName("apply")
   def apply(fields: js.Array[SortField], matchCase: Boolean): Unit = js.native
   @JSName("apply")
+  def apply(fields: js.Array[SortField], matchCase: Boolean, method: PinYin | StrokeCount): Unit = js.native
+  @JSName("apply")
   def apply(fields: js.Array[SortField], matchCase: Boolean, method: SortMethod): Unit = js.native
   @JSName("apply")
+  def apply(fields: js.Array[SortField], matchCase: Unit, method: PinYin | StrokeCount): Unit = js.native
+  @JSName("apply")
   def apply(fields: js.Array[SortField], matchCase: Unit, method: SortMethod): Unit = js.native
-  @JSName("apply")
-  def apply_PinYin(fields: js.Array[SortField], matchCase: Boolean, method: PinYin): Unit = js.native
-  @JSName("apply")
-  def apply_PinYin(fields: js.Array[SortField], matchCase: Unit, method: PinYin): Unit = js.native
-  @JSName("apply")
-  def apply_StrokeCount(fields: js.Array[SortField], matchCase: Boolean, method: StrokeCount): Unit = js.native
-  @JSName("apply")
-  def apply_StrokeCount(fields: js.Array[SortField], matchCase: Unit, method: StrokeCount): Unit = js.native
   
   /**
     * Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   def clear(): Unit = js.native
@@ -59,9 +57,9 @@ trait TableSort
   var context_TableSort: RequestContext = js.native
   
   /**
-    *
     * Specifies the current conditions used to last sort the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   val fields: js.Array[SortField] = js.native
@@ -78,17 +76,17 @@ trait TableSort
   def load(propertyNames: js.Array[String]): TableSort = js.native
   
   /**
-    *
     * Specifies if the casing impacts the last sort of the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   val matchCase: Boolean = js.native
   
   /**
+    * Represents the Chinese character ordering method last used to sort the table.
     *
-    * Represents Chinese character ordering method last used to sort the table.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   val method: SortMethod | PinYin | StrokeCount = js.native
@@ -96,6 +94,7 @@ trait TableSort
   /**
     * Reapplies the current sorting parameters to the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   def reapply(): Unit = js.native

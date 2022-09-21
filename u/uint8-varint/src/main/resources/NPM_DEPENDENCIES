@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "uint8-varint" : "1.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "uint8-varint" : "1.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

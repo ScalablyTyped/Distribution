@@ -1,7 +1,7 @@
 
 # Scala.js typings for ky
 
-Typings are for version 0.16.2
+Typings are for version 0.31.3
 
 ## Library description:
 Tiny and elegant HTTP client based on the browser Fetch API
@@ -10,10 +10,10 @@ Tiny and elegant HTTP client based on the browser Fetch API
 | ------------------ | :-------------: |
 | Full name          | ky |
 | Keywords           | fetch, request, requests, http, https, fetching, get, url, curl, wget, net, network, ajax, api, rest, xhr, browser, got, axios, node-fetch |
-| # releases         | 25 |
-| # dependents       | 132 |
-| # downloads        | 9838456 |
-| # stars            | 3 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 4024549.6666666665 |
+| # stars            | 7930.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/ky#readme)

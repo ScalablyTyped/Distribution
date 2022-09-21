@@ -10,15 +10,12 @@ Reuse typed arrays
 | ------------------ | :-------------: |
 | Full name          | typedarray-pool |
 | Keywords           | typed, array, cache, pool, memory, malloc, free, reuse, optimize, construct, overhead |
-| # releases         | 2 |
-| # dependents       | 78 |
-| # downloads        | 3908070 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 667617.3333333334 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/mikolalysenko/typedarray-pool#readme)
-- [Bugs](https://github.com/mikolalysenko/typedarray-pool/issues)
-- [Repository](https://github.com/mikolalysenko/typedarray-pool)
 - [Npm](https://www.npmjs.com/package/typedarray-pool)
     
 

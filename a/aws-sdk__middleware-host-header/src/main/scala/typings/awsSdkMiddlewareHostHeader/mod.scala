@@ -15,7 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getHostHeaderPlugin(options: HostHeaderResolvedConfig): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostHeaderPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
+  inline def getHostHeaderPlugin(options: HostHeaderResolvedConfig): Pluggable[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostHeaderPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[Any, Any]]
   
   inline def hostHeaderMiddleware[Input /* <: js.Object */, Output /* <: js.Object */](options: HostHeaderResolvedConfig): BuildMiddleware[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("hostHeaderMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[Input, Output]]
   
@@ -29,35 +29,38 @@ object mod {
   
   trait HostHeaderResolvedConfig extends StObject {
     
-    var requestHandler: RequestHandler[js.Any, js.Any, js.Object]
+    /**
+      * The HTTP handler to use. Fetch in browser and Https in Nodejs.
+      */
+    var requestHandler: RequestHandler[Any, Any, js.Object]
   }
   object HostHeaderResolvedConfig {
     
-    inline def apply(requestHandler: RequestHandler[js.Any, js.Any, js.Object]): HostHeaderResolvedConfig = {
+    inline def apply(requestHandler: RequestHandler[Any, Any, js.Object]): HostHeaderResolvedConfig = {
       val __obj = js.Dynamic.literal(requestHandler = requestHandler.asInstanceOf[js.Any])
       __obj.asInstanceOf[HostHeaderResolvedConfig]
     }
     
     extension [Self <: HostHeaderResolvedConfig](x: Self) {
       
-      inline def setRequestHandler(value: RequestHandler[js.Any, js.Any, js.Object]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
+      inline def setRequestHandler(value: RequestHandler[Any, Any, js.Object]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
     }
   }
   
   trait PreviouslyResolved extends StObject {
     
-    var requestHandler: RequestHandler[js.Any, js.Any, js.Object]
+    var requestHandler: RequestHandler[Any, Any, js.Object]
   }
   object PreviouslyResolved {
     
-    inline def apply(requestHandler: RequestHandler[js.Any, js.Any, js.Object]): PreviouslyResolved = {
+    inline def apply(requestHandler: RequestHandler[Any, Any, js.Object]): PreviouslyResolved = {
       val __obj = js.Dynamic.literal(requestHandler = requestHandler.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
     extension [Self <: PreviouslyResolved](x: Self) {
       
-      inline def setRequestHandler(value: RequestHandler[js.Any, js.Any, js.Object]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
+      inline def setRequestHandler(value: RequestHandler[Any, Any, js.Object]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CancelChartObject extends StObject {
   
-  val Cancel: js.Any
+  val Cancel: Any
   
-  val chartObject: js.Any
+  val chartObject: Any
   
-  val drawObject: js.Any
+  val drawObject: Any
 }
 object CancelChartObject {
   
-  inline def apply(Cancel: js.Any, chartObject: js.Any, drawObject: js.Any): CancelChartObject = {
+  inline def apply(Cancel: Any, chartObject: Any, drawObject: Any): CancelChartObject = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], chartObject = chartObject.asInstanceOf[js.Any], drawObject = drawObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelChartObject]
   }
   
   extension [Self <: CancelChartObject](x: Self) {
     
-    inline def setCancel(value: js.Any): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Any): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    inline def setChartObject(value: js.Any): Self = StObject.set(x, "chartObject", value.asInstanceOf[js.Any])
+    inline def setChartObject(value: Any): Self = StObject.set(x, "chartObject", value.asInstanceOf[js.Any])
     
-    inline def setDrawObject(value: js.Any): Self = StObject.set(x, "drawObject", value.asInstanceOf[js.Any])
+    inline def setDrawObject(value: Any): Self = StObject.set(x, "drawObject", value.asInstanceOf[js.Any])
   }
 }

@@ -42,6 +42,6 @@ object SearchProductsOutput {
     
     inline def setProductViewSummariesUndefined: Self = StObject.set(x, "ProductViewSummaries", js.undefined)
     
-    inline def setProductViewSummariesVarargs(value: ProductViewSummary*): Self = StObject.set(x, "ProductViewSummaries", js.Array(value :_*))
+    inline def setProductViewSummariesVarargs(value: ProductViewSummary*): Self = StObject.set(x, "ProductViewSummaries", js.Array(value*))
   }
 }

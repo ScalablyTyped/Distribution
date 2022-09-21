@@ -1,5 +1,6 @@
 package typings.chance.Chance
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +14,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - scala.Double
   - typings.chance.chanceStrings._empty
 */
-type FalsyType = js.UndefOr[typings.chance.Chance._FalsyType | scala.Null | scala.Double]
+type FalsyType = js.UndefOr[_FalsyType | Null | Double]
 
-type MixinDescriptor = org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]
+type MixinDescriptor = StringDictionary[js.Function1[/* repeated */ Any, Any]]
 
-type NameOptions = typings.chance.Chance.FullNameOptions & typings.chance.Chance.FirstNameOptions & typings.chance.Chance.LastNameOptions & typings.chance.Chance.PrefixOptions
+type NameOptions = FullNameOptions & FirstNameOptions & LastNameOptions & PrefixOptions
 
 // A more rigorous approach might be to produce
 // the correct options interfaces for each method
-type Options = org.scalablytyped.runtime.StringDictionary[js.Any]
+type Options = StringDictionary[Any]
 
-type Seed = scala.Double | java.lang.String
+type Seed = Double | String

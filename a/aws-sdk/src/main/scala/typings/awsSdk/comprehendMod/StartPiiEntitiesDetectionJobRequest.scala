@@ -27,7 +27,7 @@ trait StartPiiEntitiesDetectionJobRequest extends StObject {
   var JobName: js.UndefOr[typings.awsSdk.comprehendMod.JobName] = js.undefined
   
   /**
-    * The language of the input documents.
+    * The language of the input documents. Currently, English is the only valid language.
     */
   var LanguageCode: typings.awsSdk.comprehendMod.LanguageCode
   
@@ -45,6 +45,11 @@ trait StartPiiEntitiesDetectionJobRequest extends StObject {
     * Provides configuration parameters for PII entity redaction. This parameter is required if you set the Mode parameter to ONLY_REDACTION. In that case, you must provide a RedactionConfig definition that includes the PiiEntityTypes parameter.
     */
   var RedactionConfig: js.UndefOr[typings.awsSdk.comprehendMod.RedactionConfig] = js.undefined
+  
+  /**
+    * Tags to be associated with the PII entities detection job. A tag is a key-value pair that adds metadata to a resource used by Amazon Comprehend. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object StartPiiEntitiesDetectionJobRequest {
   
@@ -82,5 +87,11 @@ object StartPiiEntitiesDetectionJobRequest {
     inline def setRedactionConfig(value: RedactionConfig): Self = StObject.set(x, "RedactionConfig", value.asInstanceOf[js.Any])
     
     inline def setRedactionConfigUndefined: Self = StObject.set(x, "RedactionConfig", js.undefined)
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

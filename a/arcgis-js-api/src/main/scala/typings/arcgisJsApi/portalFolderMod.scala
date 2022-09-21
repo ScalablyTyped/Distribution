@@ -17,7 +17,12 @@ object portalFolderMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/portal/PortalFolder", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Provides information about folders used to organize content in a portal.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalFolder.html)
+    */
+  open class Class ()
     extends StObject
        with PortalFolder {
     def this(properties: PortalFolderProperties) = this()

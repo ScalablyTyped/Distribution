@@ -9,10 +9,10 @@ object mod {
   
   @JSImport("react-youtube-embed", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[YouTubeEmbedProps, js.Object, js.Any]
+  open class default ()
+    extends Component[YouTubeEmbedProps, js.Object, Any]
   
-  type YouTubeEmbed = Component[YouTubeEmbedProps, js.Object, js.Any]
+  type YouTubeEmbed = Component[YouTubeEmbedProps, js.Object, Any]
   
   trait YouTubeEmbedProps extends StObject {
     

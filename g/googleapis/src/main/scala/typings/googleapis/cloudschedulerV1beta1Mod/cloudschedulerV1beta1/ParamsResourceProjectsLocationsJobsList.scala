@@ -1,9 +1,5 @@
 package typings.googleapis.cloudschedulerV1beta1Mod.cloudschedulerV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,30 +9,27 @@ trait ParamsResourceProjectsLocationsJobsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * `filter` can be used to specify a subset of jobs. If `filter` equals `target_config="HttpConfig"`, then the http target jobs are retrieved. If `filter` equals `target_config="PubSubConfig"`, then the Pub/Sub target jobs are retrieved. If `filter` equals `labels.foo=value1 labels.foo=value2` then only jobs which are labeled with foo=value1 AND foo=value2 will be returned.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * Requested page size.  The maximum page size is 500. If unspecified, the
-    * page size will be the maximum. Fewer jobs than requested might be
-    * returned, even if more jobs exist; use next_page_token to determine if
-    * more jobs exist.
+    * This field is used to manage the legacy App Engine Cron jobs using the Cloud Scheduler API. If the field is set to true, the jobs in the __cron queue will be listed instead.
+    */
+  var legacyAppEngineCron: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Requested page size. The maximum page size is 500. If unspecified, the page size will be the maximum. Fewer jobs than requested might be returned, even if more jobs exist; use next_page_token to determine if more jobs exist.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * A token identifying a page of results the server will return. To request
-    * the first page results, page_token must be empty. To request the next
-    * page of results, page_token must be the value of next_page_token returned
-    * from the previous call to ListJobs. It is an error to switch the value of
-    * filter or order_by while iterating through pages.
+    * A token identifying a page of results the server will return. To request the first page results, page_token must be empty. To request the next page of results, page_token must be the value of next_page_token returned from the previous call to ListJobs. It is an error to switch the value of filter or order_by while iterating through pages.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Required.  The location name. For example:
-    * `projects/PROJECT_ID/locations/LOCATION_ID`.
+    * Required. The location name. For example: `projects/PROJECT_ID/locations/LOCATION_ID`.
     */
   var parent: js.UndefOr[String] = js.undefined
 }
@@ -49,9 +42,13 @@ object ParamsResourceProjectsLocationsJobsList {
   
   extension [Self <: ParamsResourceProjectsLocationsJobsList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setLegacyAppEngineCron(value: Boolean): Self = StObject.set(x, "legacyAppEngineCron", value.asInstanceOf[js.Any])
+    
+    inline def setLegacyAppEngineCronUndefined: Self = StObject.set(x, "legacyAppEngineCron", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

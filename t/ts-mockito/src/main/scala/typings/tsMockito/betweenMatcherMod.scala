@@ -9,11 +9,11 @@ object betweenMatcherMod {
   
   @JSImport("ts-mockito/lib/matcher/type/BetweenMatcher", "BetweenMatcher")
   @js.native
-  class BetweenMatcher protected () extends Matcher {
+  open class BetweenMatcher protected () extends Matcher {
     def this(min: Double, max: Double) = this()
     
-    /* private */ var max: js.Any = js.native
+    /* private */ var max: Any = js.native
     
-    /* private */ var min: js.Any = js.native
+    /* private */ var min: Any = js.native
   }
 }

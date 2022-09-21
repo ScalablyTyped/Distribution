@@ -19,7 +19,7 @@ object global {
       * @param x    coordinate (0 if undefined)
       * @param y    coordinate (0 if undefined)
       */
-    class Point ()
+    open class Point ()
       extends typings.poly2tri.mod.Point {
       def this(x: Double) = this()
       def this(x: Double, y: Double) = this()
@@ -118,7 +118,7 @@ object global {
     
     @JSGlobal("poly2tri.PointError")
     @js.native
-    class PointError protected ()
+    open class PointError protected ()
       extends typings.poly2tri.mod.PointError {
       /**
         * Custom exception class to indicate invalid Point values
@@ -130,7 +130,7 @@ object global {
     
     @JSGlobal("poly2tri.SweepContext")
     @js.native
-    class SweepContext protected ()
+    open class SweepContext protected ()
       extends typings.poly2tri.mod.SweepContext {
       /**
         * Constructor for the triangulation context.
@@ -159,7 +159,7 @@ object global {
     
     @JSGlobal("poly2tri.Triangle")
     @js.native
-    class Triangle protected ()
+    open class Triangle protected ()
       extends typings.poly2tri.mod.Triangle {
       def this(a: XY, b: XY, c: XY) = this()
     }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Callout")
 @js.native
-class Callout ()
+open class Callout ()
   extends StObject
      with typings.sharepoint.Callout {
   
@@ -66,7 +66,7 @@ class Callout ()
   
   /** Returns the position algorithm function defined for the callout during its creation. */
   /* CompleteClass */
-  override def getPositionAlgorithm(): js.Any = js.native
+  override def getPositionAlgorithm(): Any = js.native
   
   /** Returns the title of the callout. */
   /* CompleteClass */
@@ -102,7 +102,7 @@ class Callout ()
   
   /** Sets options for the callout. Not all options can be changed for the callout after its creation. */
   /* CompleteClass */
-  override def set(options: typings.sharepoint.CalloutOptions): js.Any = js.native
+  override def set(options: typings.sharepoint.CalloutOptions): Any = js.native
   
   /** Display if hidden, hide if shown. */
   /* CompleteClass */

@@ -10,10 +10,10 @@ Use react-devtools outside of the browser
 | ------------------ | :-------------: |
 | Full name          | react-devtools |
 | Keywords           | - |
-| # releases         | 37 |
-| # dependents       | 11 |
-| # downloads        | 1746034 |
-| # stars            | 7 |
+| # releases         | 44 |
+| # dependents       | 0.0 |
+| # downloads        | 279447.3333333333 |
+| # stars            | 194948.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/react#readme)

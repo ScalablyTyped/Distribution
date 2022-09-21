@@ -26,9 +26,9 @@ object XTypeDescriptionEnumeration {
   inline def apply(
     acquire: () => Unit,
     hasMoreElements: () => Boolean,
-    nextElement: () => js.Any,
+    nextElement: () => Any,
     nextTypeDescription: () => XTypeDescription,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTypeDescriptionEnumeration = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), hasMoreElements = js.Any.fromFunction0(hasMoreElements), nextElement = js.Any.fromFunction0(nextElement), nextTypeDescription = js.Any.fromFunction0(nextTypeDescription), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

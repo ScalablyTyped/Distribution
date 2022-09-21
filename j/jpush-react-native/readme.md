@@ -1,7 +1,7 @@
 
 # Scala.js typings for jpush-react-native
 
-Typings are for version 2.8.1
+Typings are for version 2.9.4
 
 ## Library description:
 React Native JPush component for Android and iOS
@@ -10,10 +10,10 @@ React Native JPush component for Android and iOS
 | ------------------ | :-------------: |
 | Full name          | jpush-react-native |
 | Keywords           | react-native, JPush |
-| # releases         | 24 |
-| # dependents       | 7 |
-| # downloads        | 21388 |
-| # stars            | 2 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1599.0 |
+| # stars            | 1291.0 |
 
 ## Links
 - [Homepage](https://github.com/jpush/jpush-react-native)

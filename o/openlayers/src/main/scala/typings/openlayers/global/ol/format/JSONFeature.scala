@@ -20,5 +20,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Base class for JSON feature formats.
   *
   */
-class JSONFeature ()
+open class JSONFeature ()
   extends typings.openlayers.mod.format.JSONFeature

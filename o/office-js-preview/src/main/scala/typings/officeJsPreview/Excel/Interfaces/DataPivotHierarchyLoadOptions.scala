@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel DataPivotHierarchy.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait DataPivotHierarchyLoadOptions extends StObject {
@@ -19,57 +19,57 @@ trait DataPivotHierarchyLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Returns the PivotFields associated with the DataPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var field: js.UndefOr[PivotFieldLoadOptions] = js.undefined
   
   /**
+    * ID of the DataPivotHierarchy.
     *
-    * Id of the DataPivotHierarchy.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Name of the DataPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Number format of the DataPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var numberFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Position of the DataPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var position: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the data should be shown as a specific summary calculation.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showAs: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if all items of the DataPivotHierarchy are shown.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var summarizeBy: js.UndefOr[Boolean] = js.undefined

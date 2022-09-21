@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".astring-r5uHvUcV" : "1.8.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".astring-r5uHvUcV" : "1.8.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

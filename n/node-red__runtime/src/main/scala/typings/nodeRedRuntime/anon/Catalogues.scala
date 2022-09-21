@@ -34,7 +34,7 @@ object Catalogues {
     
     inline def setCataloguesUndefined: Self = StObject.set(x, "catalogues", js.undefined)
     
-    inline def setCataloguesVarargs(value: String*): Self = StObject.set(x, "catalogues", js.Array(value :_*))
+    inline def setCataloguesVarargs(value: String*): Self = StObject.set(x, "catalogues", js.Array(value*))
     
     inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object Catalogues {
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    inline def setThemeVarargs(value: Category*): Self = StObject.set(x, "theme", js.Array(value :_*))
+    inline def setThemeVarargs(value: Category*): Self = StObject.set(x, "theme", js.Array(value*))
   }
 }

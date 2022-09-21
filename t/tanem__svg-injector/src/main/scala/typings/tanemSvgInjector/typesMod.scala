@@ -1,7 +1,6 @@
 package typings.tanemSvgInjector
 
-import typings.std.Error
-import typings.std.SVGElement
+import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +9,9 @@ object typesMod {
   
   type AfterAll = js.Function1[/* elementsLoaded */ Double, Unit]
   
-  type BeforeEach = js.Function1[/* svg */ SVGElement, Unit]
+  type BeforeEach = js.Function1[/* svg */ SVGSVGElement, Unit]
   
-  type Errback = js.Function2[/* error */ Error | Null, /* svg */ js.UndefOr[SVGElement], Unit]
+  type Errback = js.Function2[/* error */ js.Error | Null, /* svg */ js.UndefOr[SVGSVGElement], Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.tanemSvgInjector.tanemSvgInjectorStrings.always

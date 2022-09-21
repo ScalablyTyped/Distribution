@@ -8,7 +8,7 @@ object processor {
   
   @JSGlobal("sawtooth.processor.TransactionProcessor")
   @js.native
-  class TransactionProcessor protected ()
+  open class TransactionProcessor protected ()
     extends typings.sawtoothSdk.mod.processor.TransactionProcessor {
     /** Constructs a new TransactionProcessor */
     def this(url: String) = this()

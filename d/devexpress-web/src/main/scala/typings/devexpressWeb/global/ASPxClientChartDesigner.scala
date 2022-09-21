@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxClientChartDesigner")
 @js.native
-class ASPxClientChartDesigner ()
+open class ASPxClientChartDesigner ()
   extends StObject
      with typings.devexpressWeb.ASPxClientChartDesigner {
   
@@ -34,13 +34,13 @@ class ASPxClientChartDesigner ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -114,5 +114,5 @@ object ASPxClientChartDesigner {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientChartDesigner = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientChartDesigner]
+  inline def Cast(obj: Any): typings.devexpressWeb.ASPxClientChartDesigner = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientChartDesigner]
 }

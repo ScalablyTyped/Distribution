@@ -9,15 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * of `Intl.RelativeTimeFormat` constructor.
   *
   * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/RelativeTimeFormat#Parameters).
-  *
-  * [Specification](https://tc39.es/ecma402/#sec-InitializeRelativeTimeFormat).
   */
 trait RelativeTimeFormatOptions extends StObject {
   
+  /** The locale matching algorithm to use. For information about this option, see [Intl page](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl#Locale_negotiation). */
+  /* standard es2020.intl */
   var localeMatcher: js.UndefOr[RelativeTimeFormatLocaleMatcher] = js.undefined
   
+  /** The format of output message. */
+  /* standard es2020.intl */
   var numeric: js.UndefOr[RelativeTimeFormatNumeric] = js.undefined
   
+  /** The length of the internationalized message. */
+  /* standard es2020.intl */
   var style: js.UndefOr[RelativeTimeFormatStyle] = js.undefined
 }
 object RelativeTimeFormatOptions {

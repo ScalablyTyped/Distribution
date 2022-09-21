@@ -9,17 +9,17 @@ trait Tag extends StObject {
   /**
     * The key for the tag.
     */
-  var Key: js.UndefOr[TagKey] = js.undefined
+  var Key: TagKey
   
   /**
     * The value of the tag.
     */
-  var Value: js.UndefOr[TagValue] = js.undefined
+  var Value: TagValue
 }
 object Tag {
   
-  inline def apply(): Tag = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(Key: TagKey, Value: TagValue): Tag = {
+    val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tag]
   }
   
@@ -27,10 +27,6 @@ object Tag {
     
     inline def setKey(value: TagKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
-    
     inline def setValue(value: TagValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
-    
-    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

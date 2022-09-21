@@ -7,34 +7,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "Credit")
 @js.native
-class Credit protected () extends StObject {
+open class Credit protected () extends StObject {
   def this(html: String) = this()
   def this(html: String, showOnScreen: Boolean) = this()
   
+  /**
+    * Gets the credit element
+    */
   val element: HTMLElement = js.native
   
-  def equals(credits: Credit): Boolean = js.native
+  /**
+    * Returns true if the credits are equal
+    * @param credit - The credit to compare to.
+    * @returns <code>true</code> if left and right are equal, <code>false</code> otherwise.
+    */
+  def equals(credit: Credit): Boolean = js.native
   
-  def hasImage(): Boolean = js.native
-  
-  def hasLink(): Boolean = js.native
-  
+  /**
+    * The credit content
+    */
   val html: String = js.native
   
-  val imageUrl: String = js.native
-  
-  val link: String = js.native
-  
-  val showOnScreen: Boolean = js.native
-  
-  val text: String = js.native
+  /**
+    * Whether the credit should be displayed on screen or in a lightbox
+    */
+  var showOnScreen: Boolean = js.native
 }
+/* static members */
 object Credit {
   
   @JSImport("cesium", "Credit")
   @js.native
   val ^ : js.Any = js.native
   
-  /* static member */
-  inline def equals_(left: Credit, right: Credit): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def clone(credit: Credit): Credit = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(credit.asInstanceOf[js.Any]).asInstanceOf[Credit]
+  
+  /**
+    * Returns true if the credits are equal
+    * @param left - The first credit
+    * @param right - The second credit
+    * @returns <code>true</code> if left and right are equal, <code>false</code> otherwise.
+    */
+  inline def equals(left: Credit, right: Credit): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

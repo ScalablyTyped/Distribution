@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ISlidingWindowSource extends StObject {
   
   def fetchMoreItems(
-    argument: js.Any,
+    argument: Any,
     sourceIndex: Double,
-    window: js.Array[js.Any],
+    window: js.Array[Any],
     destinationIndex: Double,
     spaceAvailable: Double
   ): Double
 }
 object ISlidingWindowSource {
   
-  inline def apply(fetchMoreItems: (js.Any, Double, js.Array[js.Any], Double, Double) => Double): ISlidingWindowSource = {
+  inline def apply(fetchMoreItems: (Any, Double, js.Array[Any], Double, Double) => Double): ISlidingWindowSource = {
     val __obj = js.Dynamic.literal(fetchMoreItems = js.Any.fromFunction5(fetchMoreItems))
     __obj.asInstanceOf[ISlidingWindowSource]
   }
   
   extension [Self <: ISlidingWindowSource](x: Self) {
     
-    inline def setFetchMoreItems(value: (js.Any, Double, js.Array[js.Any], Double, Double) => Double): Self = StObject.set(x, "fetchMoreItems", js.Any.fromFunction5(value))
+    inline def setFetchMoreItems(value: (Any, Double, js.Array[Any], Double, Double) => Double): Self = StObject.set(x, "fetchMoreItems", js.Any.fromFunction5(value))
   }
 }

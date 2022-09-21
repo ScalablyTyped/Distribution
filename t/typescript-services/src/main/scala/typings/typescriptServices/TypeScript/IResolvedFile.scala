@@ -23,12 +23,12 @@ object IResolvedFile {
     
     inline def setImportedFiles(value: js.Array[String]): Self = StObject.set(x, "importedFiles", value.asInstanceOf[js.Any])
     
-    inline def setImportedFilesVarargs(value: String*): Self = StObject.set(x, "importedFiles", js.Array(value :_*))
+    inline def setImportedFilesVarargs(value: String*): Self = StObject.set(x, "importedFiles", js.Array(value*))
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setReferencedFiles(value: js.Array[String]): Self = StObject.set(x, "referencedFiles", value.asInstanceOf[js.Any])
     
-    inline def setReferencedFilesVarargs(value: String*): Self = StObject.set(x, "referencedFiles", js.Array(value :_*))
+    inline def setReferencedFilesVarargs(value: String*): Self = StObject.set(x, "referencedFiles", js.Array(value*))
   }
 }

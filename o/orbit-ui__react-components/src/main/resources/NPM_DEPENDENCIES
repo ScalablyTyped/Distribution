@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@orbit-ui/react-components" : "18.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@orbit-ui/react-components" : "18.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

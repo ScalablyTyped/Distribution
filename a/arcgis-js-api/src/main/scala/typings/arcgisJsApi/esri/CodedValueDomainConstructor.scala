@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CodedValueDomainConstructor
   extends StObject
-     with Instantiable0[CodedValueDomain]
+     with /**
+  * Information about the coded values belonging to the domain.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html)
+  */
+Instantiable0[CodedValueDomain]
      with Instantiable1[/* properties */ CodedValueDomainProperties, CodedValueDomain] {
   
-  def fromJSON(json: js.Any): CodedValueDomain = js.native
+  def fromJSON(json: Any): CodedValueDomain = js.native
 }

@@ -5,42 +5,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A repository (or repo) is a Git repository storing versioned source
-  * content.
-  */
 trait SchemaRepo extends StObject {
   
   /**
-    * How this repository mirrors a repository managed by another service.
-    * Read-only field.
+    * How this repository mirrors a repository managed by another service. Read-only field.
     */
   var mirrorConfig: js.UndefOr[SchemaMirrorConfig] = js.undefined
   
   /**
-    * Resource name of the repository, of the form
-    * `projects/&lt;project&gt;/repos/&lt;repo&gt;`.  The repo name may contain
-    * slashes. eg, `projects/myproject/repos/name/with/slash`
+    * Resource name of the repository, of the form `projects//repos/`. The repo name may contain slashes. eg, `projects/myproject/repos/name/with/slash`
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * How this repository publishes a change in the repository through Cloud
-    * Pub/Sub. Keyed by the topic names.
+    * How this repository publishes a change in the repository through Cloud Pub/Sub. Keyed by the topic names.
     */
-  var pubsubConfigs: js.UndefOr[StringDictionary[SchemaPubsubConfig]] = js.undefined
+  var pubsubConfigs: js.UndefOr[StringDictionary[SchemaPubsubConfig] | Null] = js.undefined
   
   /**
-    * The disk usage of the repo, in bytes. Read-only field. Size is only
-    * returned by GetRepo.
+    * The disk usage of the repo, in bytes. Read-only field. Size is only returned by GetRepo.
     */
-  var size: js.UndefOr[String] = js.undefined
+  var size: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * URL to clone the repository from Google Cloud Source Repositories.
-    * Read-only field.
+    * URL to clone the repository from Google Cloud Source Repositories. Read-only field.
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaRepo {
   
@@ -57,17 +47,25 @@ object SchemaRepo {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setPubsubConfigs(value: StringDictionary[SchemaPubsubConfig]): Self = StObject.set(x, "pubsubConfigs", value.asInstanceOf[js.Any])
+    
+    inline def setPubsubConfigsNull: Self = StObject.set(x, "pubsubConfigs", null)
     
     inline def setPubsubConfigsUndefined: Self = StObject.set(x, "pubsubConfigs", js.undefined)
     
     inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
+    inline def setSizeNull: Self = StObject.set(x, "size", null)
+    
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }

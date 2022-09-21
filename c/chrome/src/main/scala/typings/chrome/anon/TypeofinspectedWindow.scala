@@ -18,6 +18,11 @@ trait TypeofinspectedWindow extends StObject {
     expression: String,
     callback: js.Function2[/* result */ T, /* exceptionInfo */ EvaluationExceptionInfo, Unit]
   ): Unit = js.native
+  def eval[T](
+    expression: String,
+    options: Unit,
+    callback: js.Function2[/* result */ T, /* exceptionInfo */ EvaluationExceptionInfo, Unit]
+  ): Unit = js.native
   def eval[T](expression: String, options: EvalOptions): Unit = js.native
   def eval[T](
     expression: String,
@@ -31,6 +36,7 @@ trait TypeofinspectedWindow extends StObject {
   
   var onResourceContentCommitted: ResourceContentCommittedEvent = js.native
   
+  def reload(): Unit = js.native
   def reload(reloadOptions: ReloadOptions): Unit = js.native
   
   var tabId: Double = js.native

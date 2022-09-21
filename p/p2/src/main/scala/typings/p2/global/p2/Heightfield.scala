@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.Heightfield")
 @js.native
-class Heightfield ()
+open class Heightfield ()
   extends typings.p2.mod.Heightfield {
   def this(options: HeightfieldOptions) = this()
 }

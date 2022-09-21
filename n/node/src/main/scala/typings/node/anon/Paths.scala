@@ -1,12 +1,13 @@
 package typings.node.anon
 
+import typings.node.globalsMod.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Paths extends StObject {
   
-  var paths: js.UndefOr[js.Array[String]] = js.undefined
+  var paths: js.UndefOr[Array[String]] = js.undefined
 }
 object Paths {
   
@@ -17,10 +18,8 @@ object Paths {
   
   extension [Self <: Paths](x: Self) {
     
-    inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
     inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
-    
-    inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
   }
 }

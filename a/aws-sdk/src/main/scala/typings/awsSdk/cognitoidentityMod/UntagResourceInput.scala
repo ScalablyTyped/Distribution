@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UntagResourceInput extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the identity pool that the tags are assigned to.
+    * The Amazon Resource Name (ARN) of the identity pool.
     */
   var ResourceArn: ARNString
   
@@ -29,6 +29,6 @@ object UntagResourceInput {
     
     inline def setTagKeys(value: IdentityPoolTagsListType): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    inline def setTagKeysVarargs(value: TagKeysType*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: TagKeysType*): Self = StObject.set(x, "TagKeys", js.Array(value*))
   }
 }

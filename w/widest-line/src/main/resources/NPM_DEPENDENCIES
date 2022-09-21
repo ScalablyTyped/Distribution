@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "widest-line" : "3.1.0"
+      "widest-line" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "widest-line" : "3.1.0"
+      "widest-line" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

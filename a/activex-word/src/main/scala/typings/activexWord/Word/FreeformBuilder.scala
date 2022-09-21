@@ -153,11 +153,11 @@ trait FreeformBuilder extends StObject {
   val Application: typings.activexWord.Word.Application = js.native
   
   def ConvertToShape(): Shape = js.native
-  def ConvertToShape(Anchor: js.Any): Shape = js.native
+  def ConvertToShape(Anchor: Any): Shape = js.native
   
   val Creator: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.FreeformBuilder_typekey")
   var WordDotFreeformBuilder_typekey: FreeformBuilder = js.native

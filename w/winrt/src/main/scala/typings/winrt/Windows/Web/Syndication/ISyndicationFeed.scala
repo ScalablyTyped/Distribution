@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Web.Syndication
 
-import typings.std.Date
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Uri
@@ -30,7 +29,7 @@ trait ISyndicationFeed
   
   var items: IVector[SyndicationItem]
   
-  var lastUpdatedTime: Date
+  var lastUpdatedTime: js.Date
   
   var lastUri: Uri
   
@@ -69,7 +68,7 @@ object ISyndicationFeed {
     imageUri: Uri,
     items: IVector[SyndicationItem],
     language: String,
-    lastUpdatedTime: Date,
+    lastUpdatedTime: js.Date,
     lastUri: Uri,
     links: IVector[SyndicationLink],
     load: String => Unit,
@@ -108,7 +107,7 @@ object ISyndicationFeed {
     
     inline def setItems(value: IVector[SyndicationItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdatedTime(value: Date): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUri(value: Uri): Self = StObject.set(x, "lastUri", value.asInstanceOf[js.Any])
     

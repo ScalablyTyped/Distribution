@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("highcharts", "Annotation")
 @js.native
-class Annotation protected () extends StObject {
+open class Annotation protected () extends StObject {
   /**
     * An annotation class which serves as a container for items like labels or
     * shapes. Created items are positioned on the chart either by linking them
     * to existing points or created mock points
     *
     * @param chart
-    *        a chart instance
+    *        A chart instance
     *
     * @param userOptions
-    *        the options object
+    *        The annotation options
     */
   def this(chart: Chart_, userOptions: AnnotationsOptions) = this()
+  
+  /**
+    * The chart that the annotation belongs to.
+    */
+  var chart: Chart_ = js.native
   
   /**
     * The group svg element.

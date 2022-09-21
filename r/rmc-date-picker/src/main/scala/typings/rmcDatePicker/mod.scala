@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("rmc-date-picker", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.rmcDatePicker.datePickerMod.default
   object default {
     

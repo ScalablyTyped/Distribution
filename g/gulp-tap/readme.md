@@ -10,10 +10,10 @@ Easiest way to tap into a pipeline
 | ------------------ | :-------------: |
 | Full name          | gulp-tap |
 | Keywords           | tap, gulp, stream |
-| # releases         | 2 |
-| # dependents       | 158 |
-| # downloads        | 3136993 |
-| # stars            | 34 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 287423.3333333333 |
+| # stars            | 155.0 |
 
 ## Links
 - [Homepage](https://github.com/geejs/gulp-tap)

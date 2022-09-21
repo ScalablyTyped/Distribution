@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Order extends StObject {
   
-  var dataField: js.Any
+  var dataField: Any
   
   var order: SortOrder
 }
 object Order {
   
-  inline def apply(dataField: js.Any, order: SortOrder): Order = {
+  inline def apply(dataField: Any, order: SortOrder): Order = {
     val __obj = js.Dynamic.literal(dataField = dataField.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
     __obj.asInstanceOf[Order]
   }
   
   extension [Self <: Order](x: Self) {
     
-    inline def setDataField(value: js.Any): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
+    inline def setDataField(value: Any): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
     
     inline def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
   }

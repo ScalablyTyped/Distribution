@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@mapbox/mapbox-gl-supported" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@mapbox/mapbox-gl-supported" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

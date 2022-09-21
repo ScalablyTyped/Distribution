@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ndn.TcpTransport")
 @js.native
-class TcpTransport ()
+open class TcpTransport ()
   extends typings.ndnJs.mod.TcpTransport
 object TcpTransport {
   
   @JSGlobal("ndn.TcpTransport.ConnectionInfo")
   @js.native
-  class ConnectionInfo protected ()
+  open class ConnectionInfo protected ()
     extends typings.ndnJs.mod.TcpTransport.ConnectionInfo {
     def this(host: String, port: Double) = this()
   }

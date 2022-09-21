@@ -10,10 +10,10 @@ Twitch (OAuth) authentication strategies for Passport.
 | ------------------ | :-------------: |
 | Full name          | passport-twitch-latest |
 | Keywords           | passport, twitch, auth, authn, authentication, identity, oauth, oauth2, strategy |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 632 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 520.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/sascha-beloborodov/passport-twitch)

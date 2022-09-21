@@ -1,13 +1,12 @@
 package typings.playcanvas.anon
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Contents extends StObject {
   
-  var contents: js.UndefOr[ArrayBuffer] = js.undefined
+  var contents: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
   
   var filename: js.UndefOr[String] = js.undefined
   
@@ -26,7 +25,7 @@ object Contents {
   
   extension [Self <: Contents](x: Self) {
     
-    inline def setContents(value: ArrayBuffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
     inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     

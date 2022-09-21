@@ -1,20 +1,16 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.zoomZoomMod.ZoomProps
-import typings.react.mod.ComponentType
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object zoomMod extends Shortcut {
+object zoomMod {
   
-  @JSImport("@material-ui/core/Zoom", JSImport.Default)
+  @JSImport("@material-ui/core/Zoom", JSImport.Namespace)
   @js.native
-  val default: ComponentType[ZoomProps] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ComponentType[ZoomProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `zoomMod.foo` */
-  override def _to: ComponentType[ZoomProps] = default
+  inline def default(props: ZoomProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

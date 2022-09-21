@@ -5,14 +5,13 @@ import typings.johnnyFive.johnnyFiveStrings.data
 import typings.johnnyFive.johnnyFiveStrings.digital
 import typings.johnnyFive.johnnyFiveStrings.high
 import typings.johnnyFive.johnnyFiveStrings.low
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Pin")
 @js.native
-class Pin protected () extends StObject {
+open class Pin protected () extends StObject {
   def this(option: String) = this()
   def this(option: Double) = this()
   def this(option: PinOption) = this()
@@ -27,7 +26,7 @@ class Pin protected () extends StObject {
   
   def on(event: String, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_data(event: data, cb: js.Function1[/* data */ js.Any, Unit]): this.type = js.native
+  def on_data(event: data, cb: js.Function1[/* data */ Any, Unit]): this.type = js.native
   @JSName("on")
   def on_high(event: high, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -37,7 +36,7 @@ class Pin protected () extends StObject {
   
   def query(cb: js.Function1[/* pin */ PinState, Unit]): Unit = js.native
   
-  def read(cb: js.Function2[/* error */ Error, /* value */ Double, Unit]): Unit = js.native
+  def read(cb: js.Function2[/* error */ js.Error, /* value */ Double, Unit]): Unit = js.native
   
   var `type`: digital | analog = js.native
   
@@ -52,7 +51,7 @@ object Pin {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def read(pin: Double, cb: js.Function2[/* error */ Error, /* data */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(pin.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def read(pin: Double, cb: js.Function2[/* error */ js.Error, /* data */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(pin.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def write(pin: Double, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(pin.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -23,7 +23,7 @@ object RoleSets {
     
     inline def setRoleSetsUndefined: Self = StObject.set(x, "roleSets", js.undefined)
     
-    inline def setRoleSetsVarargs(value: AdditionalRoles*): Self = StObject.set(x, "roleSets", js.Array(value :_*))
+    inline def setRoleSetsVarargs(value: AdditionalRoles*): Self = StObject.set(x, "roleSets", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

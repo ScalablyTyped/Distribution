@@ -14,7 +14,7 @@ trait InlineContent extends StObject {
   var from: js.UndefOr[String | Email] = js.undefined
   
   /** JSON dictionary containing headers other than “Subject”, “From”, “To”, and “Reply-To” */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   /** HTML content for the email’s text/html MIME part  At a minimum, html, text, or push is required. */
   var html: js.UndefOr[String] = js.undefined
@@ -47,13 +47,13 @@ object InlineContent {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value*))
     
     inline def setFrom(value: String | Email): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
@@ -65,7 +65,7 @@ object InlineContent {
     
     inline def setInline_imagesUndefined: Self = StObject.set(x, "inline_images", js.undefined)
     
-    inline def setInline_imagesVarargs(value: Attachment*): Self = StObject.set(x, "inline_images", js.Array(value :_*))
+    inline def setInline_imagesVarargs(value: Attachment*): Self = StObject.set(x, "inline_images", js.Array(value*))
     
     inline def setPush(value: PushData): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     

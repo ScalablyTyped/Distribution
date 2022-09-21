@@ -8,7 +8,7 @@ trait MotorOption extends StObject {
   
   var address: js.UndefOr[Double] = js.undefined
   
-  var bits: js.UndefOr[js.Any] = js.undefined
+  var bits: js.UndefOr[Any] = js.undefined
   
   var controller: js.UndefOr[String] = js.undefined
   
@@ -18,7 +18,7 @@ trait MotorOption extends StObject {
   
   var pins: MotorPins
   
-  var register: js.UndefOr[js.Any] = js.undefined
+  var register: js.UndefOr[Any] = js.undefined
 }
 object MotorOption {
   
@@ -33,7 +33,7 @@ object MotorOption {
     
     inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    inline def setBits(value: js.Any): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
+    inline def setBits(value: Any): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
     
     inline def setBitsUndefined: Self = StObject.set(x, "bits", js.undefined)
     
@@ -51,7 +51,7 @@ object MotorOption {
     
     inline def setPins(value: MotorPins): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     
-    inline def setRegister(value: js.Any): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+    inline def setRegister(value: Any): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
     
     inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
   }

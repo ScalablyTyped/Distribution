@@ -16,10 +16,10 @@ trait ReleasesResource extends StObject {
   /**
     * Create a `Release`. Release names should reflect the developer's deployment practices. For example, the release name may include the environment name, application name, application
     * version, or any other name meaningful to the developer. Once a `Release` refers to a `Ruleset`, the rules can be enforced by Firebase Rules-enabled services. More than one `Release`
-    * may be 'live' concurrently. Consider the following three `Release` names for `projects/foo` and the `Ruleset` to which they refer. Release Name | Ruleset Name
-    * --------------------------------|------------- projects/foo/releases/prod | projects/foo/rulesets/uuid123 projects/foo/releases/prod/beta | projects/foo/rulesets/uuid123
-    * projects/foo/releases/prod/v23 | projects/foo/rulesets/uuid456 The table reflects the `Ruleset` rollout in progress. The `prod` and `prod/beta` releases refer to the same `Ruleset`.
-    * However, `prod/v23` refers to a new `Ruleset`. The `Ruleset` reference for a `Release` may be updated using the UpdateRelease method.
+    * may be 'live' concurrently. Consider the following three `Release` names for `projects/foo` and the `Ruleset` to which they refer. Release Name -> Ruleset Name *
+    * projects/foo/releases/prod -> projects/foo/rulesets/uuid123 * projects/foo/releases/prod/beta -> projects/foo/rulesets/uuid123 * projects/foo/releases/prod/v23 ->
+    * projects/foo/rulesets/uuid456 The relationships reflect a `Ruleset` rollout in progress. The `prod` and `prod/beta` releases refer to the same `Ruleset`. However, `prod/v23` refers
+    * to a new `Ruleset`. The `Ruleset` reference for a `Release` may be updated using the UpdateRelease method.
     */
   def create(request: Accesstoken): Request[Release] = js.native
   def create(request: Alt, body: Release): Request[Release] = js.native
@@ -41,9 +41,6 @@ trait ReleasesResource extends StObject {
   def list(request: Fields): Request[ListReleasesResponse] = js.native
   
   def patch(request: Alt, body: UpdateReleaseRequest): Request[Release] = js.native
-  /**
-    * Update a `Release` via PATCH. Only updates to the `ruleset_name` and `test_suite_name` fields will be honored. `Release` rename is not supported. To create a `Release` use the
-    * CreateRelease method.
-    */
+  /** Update a `Release` via PATCH. Only updates to `ruleset_name` will be honored. `Release` rename is not supported. To create a `Release` use the CreateRelease method. */
   def patch(request: Key): Request[Release] = js.native
 }

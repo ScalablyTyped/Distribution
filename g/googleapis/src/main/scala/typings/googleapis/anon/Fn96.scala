@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
-import typings.googleapis.googleapisStrings.v3
-import typings.googleapis.monitoringV3Mod.monitoringV3.Monitoring
-import typings.googleapis.monitoringV3Mod.monitoringV3.Options
+import typings.googleapis.domainsrdapV1Mod.domainsrdapV1.Domainsrdap
+import typings.googleapis.domainsrdapV1Mod.domainsrdapV1.Options
+import typings.googleapis.googleapisStrings.v1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn96 extends StObject {
   
-  def apply(options: Options): Monitoring = js.native
-  def apply(version: v3): Monitoring = js.native
+  def apply(options: Options): Domainsrdap = js.native
+  def apply(version: v1): Domainsrdap = js.native
 }

@@ -14,7 +14,7 @@ trait EndpointConfig extends StObject {
   var httpPorts: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.EndpointConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.EndpointConfig & TopLevel[Any]
   ] = js.undefined
 }
 object EndpointConfig {
@@ -33,7 +33,7 @@ object EndpointConfig {
     inline def setHttpPorts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.EndpointConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.EndpointConfig & TopLevel[Any]
     ): Self = StObject.set(x, "httpPorts", value.asInstanceOf[js.Any])
     
     inline def setHttpPortsUndefined: Self = StObject.set(x, "httpPorts", js.undefined)

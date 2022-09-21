@@ -19,6 +19,13 @@ trait ClientAuthentication extends StObject {
     
     */
   var Tls: js.UndefOr[typings.awsSdk.kafkaMod.Tls] = js.undefined
+  
+  /**
+    * 
+    Contains information about unauthenticated traffic to the cluster.
+    
+    */
+  var Unauthenticated: js.UndefOr[typings.awsSdk.kafkaMod.Unauthenticated] = js.undefined
 }
 object ClientAuthentication {
   
@@ -36,5 +43,9 @@ object ClientAuthentication {
     inline def setTls(value: Tls): Self = StObject.set(x, "Tls", value.asInstanceOf[js.Any])
     
     inline def setTlsUndefined: Self = StObject.set(x, "Tls", js.undefined)
+    
+    inline def setUnauthenticated(value: Unauthenticated): Self = StObject.set(x, "Unauthenticated", value.asInstanceOf[js.Any])
+    
+    inline def setUnauthenticatedUndefined: Self = StObject.set(x, "Unauthenticated", js.undefined)
   }
 }

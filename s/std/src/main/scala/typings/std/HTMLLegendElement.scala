@@ -11,22 +11,22 @@ trait HTMLLegendElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
   /** @deprecated */
+  /* standard dom */
   var align: java.lang.String = js.native
   
-  /**
-    * Retrieves a reference to the form that the object is embedded in.
-    */
+  /** Retrieves a reference to the form that the object is embedded in. */
+  /* standard dom */
   val form: HTMLFormElement | Null = js.native
   
   /* InferMemberOverrides */

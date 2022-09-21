@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "http-graceful-shutdown" : "2.3.2"
+      "http-graceful-shutdown" : "3.1.8"
     }
   ],
   "test-dependencies" : [
     {
-      "http-graceful-shutdown" : "2.3.2"
+      "http-graceful-shutdown" : "3.1.8"
     }
   ],
   "compile-devDependencies" : [

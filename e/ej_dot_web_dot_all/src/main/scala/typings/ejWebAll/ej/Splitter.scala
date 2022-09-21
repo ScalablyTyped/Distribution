@@ -16,7 +16,7 @@ trait Splitter
     * @param {number} index of pane.
     * @returns {HTMLElement}
     */
-  def addItem(content: String, property: js.Any, index: Double): HTMLElement = js.native
+  def addItem(content: String, property: Any, index: Double): HTMLElement = js.native
   
   /** To collapse the splitter control pane.
     * @param {number} index number of pane.
@@ -56,11 +56,11 @@ object Splitter {
     
     /** returns collapsed pane details.
       */
-    var collapsed: js.UndefOr[js.Any] = js.undefined
+    var collapsed: js.UndefOr[Any] = js.undefined
     
     /** returns expanded pane details.
       */
-    var expanded: js.UndefOr[js.Any] = js.undefined
+    var expanded: js.UndefOr[Any] = js.undefined
     
     /** returns the splitter model.
       */
@@ -87,11 +87,11 @@ object Splitter {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCollapsed(value: js.Any): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Any): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
       inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      inline def setExpanded(value: js.Any): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: Any): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
       inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
@@ -121,7 +121,7 @@ object Splitter {
     
     /** returns the target element from which click action is triggered.
       */
-    var targetElement: js.UndefOr[js.Any] = js.undefined
+    var targetElement: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -144,7 +144,7 @@ object Splitter {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTargetElement(value: js.Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
+      inline def setTargetElement(value: Any): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
       
       inline def setTargetElementUndefined: Self = StObject.set(x, "targetElement", js.undefined)
       
@@ -236,11 +236,11 @@ object Splitter {
     
     /** returns collapsed pane details.
       */
-    var collapsed: js.UndefOr[js.Any] = js.undefined
+    var collapsed: js.UndefOr[Any] = js.undefined
     
     /** returns expanded pane details.
       */
-    var expanded: js.UndefOr[js.Any] = js.undefined
+    var expanded: js.UndefOr[Any] = js.undefined
     
     /** returns the splitter model.
       */
@@ -267,11 +267,11 @@ object Splitter {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCollapsed(value: js.Any): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Any): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
       inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      inline def setExpanded(value: js.Any): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: Any): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
       inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
@@ -349,7 +349,7 @@ object Splitter {
     /** Specifies the HTML Attributes of the Splitter.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specify window resizing behavior for splitter control.
       * @Default {false}
@@ -364,7 +364,7 @@ object Splitter {
     /** Specify properties for each pane like paneSize, minSize, maxSize, collapsible, expandable, resizable.
       * @Default {[]}
       */
-    var properties: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var properties: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Fires when resize in splitter control pane.
       */
@@ -432,7 +432,7 @@ object Splitter {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -444,11 +444,11 @@ object Splitter {
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      inline def setProperties(value: js.Array[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Array[Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      inline def setPropertiesVarargs(value: js.Any*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: Any*): Self = StObject.set(x, "properties", js.Array(value*))
       
       inline def setResize(value: /* e */ ResizeEventArgs => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
       
@@ -472,11 +472,11 @@ object Splitter {
     
     /** returns next pane details.
       */
-    var nextPane: js.UndefOr[js.Any] = js.undefined
+    var nextPane: js.UndefOr[Any] = js.undefined
     
     /** returns previous pane details.
       */
-    var prevPane: js.UndefOr[js.Any] = js.undefined
+    var prevPane: js.UndefOr[Any] = js.undefined
     
     /** returns the current split bar index.
       */
@@ -503,11 +503,11 @@ object Splitter {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setNextPane(value: js.Any): Self = StObject.set(x, "nextPane", value.asInstanceOf[js.Any])
+      inline def setNextPane(value: Any): Self = StObject.set(x, "nextPane", value.asInstanceOf[js.Any])
       
       inline def setNextPaneUndefined: Self = StObject.set(x, "nextPane", js.undefined)
       
-      inline def setPrevPane(value: js.Any): Self = StObject.set(x, "prevPane", value.asInstanceOf[js.Any])
+      inline def setPrevPane(value: Any): Self = StObject.set(x, "prevPane", value.asInstanceOf[js.Any])
       
       inline def setPrevPaneUndefined: Self = StObject.set(x, "prevPane", js.undefined)
       

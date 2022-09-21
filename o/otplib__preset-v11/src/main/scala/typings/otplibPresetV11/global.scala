@@ -9,7 +9,7 @@ object global {
   
   @JSGlobal("Authenticator")
   @js.native
-  class Authenticator ()
+  open class Authenticator ()
     extends StObject
        with typings.otplibPresetV11.Authenticator {
     
@@ -68,7 +68,7 @@ object global {
   
   @JSGlobal("HOTP")
   @js.native
-  class HOTP ()
+  open class HOTP ()
     extends StObject
        with typings.otplibPresetV11.HOTP {
     
@@ -99,7 +99,7 @@ object global {
   
   @JSGlobal("TOTP")
   @js.native
-  class TOTP ()
+  open class TOTP ()
     extends StObject
        with typings.otplibPresetV11.TOTP {
     

@@ -1,19 +1,19 @@
 
 # Scala.js typings for is-relative-url
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
-Check if an URL is relative
+Check if a URL is relative
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | is-relative-url |
 | Keywords           | url, relative, absolute, uri, is, check |
 | # releases         | 2 |
-| # dependents       | 90 |
-| # downloads        | 18727892 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2123789.0 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-relative-url#readme)

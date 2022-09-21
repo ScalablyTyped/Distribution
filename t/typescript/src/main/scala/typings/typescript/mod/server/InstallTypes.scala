@@ -38,7 +38,7 @@ object InstallTypes {
     
     inline def setPackagesToInstall(value: js.Array[String]): Self = StObject.set(x, "packagesToInstall", value.asInstanceOf[js.Any])
     
-    inline def setPackagesToInstallVarargs(value: String*): Self = StObject.set(x, "packagesToInstall", js.Array(value :_*))
+    inline def setPackagesToInstallVarargs(value: String*): Self = StObject.set(x, "packagesToInstall", js.Array(value*))
     
     inline def setTypingsInstallerVersion(value: String): Self = StObject.set(x, "typingsInstallerVersion", value.asInstanceOf[js.Any])
   }

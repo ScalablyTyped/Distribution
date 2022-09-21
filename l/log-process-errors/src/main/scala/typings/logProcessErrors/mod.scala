@@ -1,11 +1,20 @@
 package typings.logProcessErrors
 
-import typings.logProcessErrors.anon.PartialRecordExceptionTyp
-import typings.logProcessErrors.logProcessErrorsStrings.`node-tap`
+import typings.logProcessErrors.anon.errorNameinErrorNamedefau
+import typings.logProcessErrors.logProcessErrorsStrings.MultipleResolves
+import typings.logProcessErrors.logProcessErrorsStrings.RejectionHandled
+import typings.logProcessErrors.logProcessErrorsStrings.UncaughtException
+import typings.logProcessErrors.logProcessErrorsStrings.UnhandledRejection
+import typings.logProcessErrors.logProcessErrorsStrings.Warning
 import typings.logProcessErrors.logProcessErrorsStrings.ava
 import typings.logProcessErrors.logProcessErrorsStrings.jasmine
 import typings.logProcessErrors.logProcessErrorsStrings.mocha
+import typings.logProcessErrors.logProcessErrorsStrings.node_tap
+import typings.logProcessErrors.logProcessErrorsStrings.rejectionHandled_
 import typings.logProcessErrors.logProcessErrorsStrings.tape
+import typings.logProcessErrors.logProcessErrorsStrings.uncaughtException_
+import typings.logProcessErrors.logProcessErrorsStrings.unhandledRejection_
+import typings.logProcessErrors.logProcessErrorsStrings.warning_
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,55 +22,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-    * Log Process Errors
-    *
-    * @link https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#logprocesserrorsoptions
-    */
-  inline def apply(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function0[Unit]]
-  inline def apply(options: Options): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
-  
   @JSImport("log-process-errors", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Exception type.
-    */
+  inline def default(): Undo = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Undo]
+  inline def default(options: Options): Undo = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Undo]
+  
   /* Rewritten from type alias, can be one of: 
-    - typings.logProcessErrors.logProcessErrorsStrings.uncaughtException
-    - typings.logProcessErrors.logProcessErrorsStrings.unhandledRejection
-    - typings.logProcessErrors.logProcessErrorsStrings.rejectionHandled
-    - typings.logProcessErrors.logProcessErrorsStrings.multipleResolves
-    - typings.logProcessErrors.logProcessErrorsStrings.warning
+    - typings.logProcessErrors.logProcessErrorsStrings.uncaughtException_
+    - typings.logProcessErrors.logProcessErrorsStrings.warning_
+    - typings.logProcessErrors.logProcessErrorsStrings.unhandledRejection_
+    - typings.logProcessErrors.logProcessErrorsStrings.rejectionHandled_
   */
-  trait ExceptionType extends StObject
-  object ExceptionType {
+  trait ErrorName extends StObject
+  object ErrorName {
     
-    inline def multipleResolves: typings.logProcessErrors.logProcessErrorsStrings.multipleResolves = "multipleResolves".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.multipleResolves]
+    inline def rejectionHandled: rejectionHandled_ = "rejectionHandled".asInstanceOf[rejectionHandled_]
     
-    inline def rejectionHandled: typings.logProcessErrors.logProcessErrorsStrings.rejectionHandled = "rejectionHandled".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.rejectionHandled]
+    inline def uncaughtException: uncaughtException_ = "uncaughtException".asInstanceOf[uncaughtException_]
     
-    inline def uncaughtException: typings.logProcessErrors.logProcessErrorsStrings.uncaughtException = "uncaughtException".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.uncaughtException]
+    inline def unhandledRejection: unhandledRejection_ = "unhandledRejection".asInstanceOf[unhandledRejection_]
     
-    inline def unhandledRejection: typings.logProcessErrors.logProcessErrorsStrings.unhandledRejection = "unhandledRejection".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.unhandledRejection]
-    
-    inline def warning: typings.logProcessErrors.logProcessErrorsStrings.warning = "warning".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.warning]
+    inline def warning: warning_ = "warning".asInstanceOf[warning_]
   }
   
-  /**
-    * Log level
-    */
   /* Rewritten from type alias, can be one of: 
     - typings.logProcessErrors.logProcessErrorsStrings.debug
     - typings.logProcessErrors.logProcessErrorsStrings.info
     - typings.logProcessErrors.logProcessErrorsStrings.warn
     - typings.logProcessErrors.logProcessErrorsStrings.error
-    - typings.logProcessErrors.logProcessErrorsStrings.silent
-    - typings.logProcessErrors.logProcessErrorsStrings.default
   */
-  trait LogLevel extends StObject
-  object LogLevel {
+  trait Level extends StObject
+  object Level {
+    
+    inline def debug: typings.logProcessErrors.logProcessErrorsStrings.debug = "debug".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.debug]
+    
+    inline def error: typings.logProcessErrors.logProcessErrorsStrings.error = "error".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.error]
+    
+    inline def info: typings.logProcessErrors.logProcessErrorsStrings.info = "info".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.info]
+    
+    inline def warn: typings.logProcessErrors.logProcessErrorsStrings.warn = "warn".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.warn]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.logProcessErrors.logProcessErrorsStrings.default
+    - typings.logProcessErrors.logProcessErrorsStrings.silent
+    - typings.logProcessErrors.logProcessErrorsStrings.debug
+    - typings.logProcessErrors.logProcessErrorsStrings.info
+    - typings.logProcessErrors.logProcessErrorsStrings.warn
+    - typings.logProcessErrors.logProcessErrorsStrings.error
+  */
+  trait LevelOption extends StObject
+  object LevelOption {
     
     inline def default: typings.logProcessErrors.logProcessErrorsStrings.default = "default".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.default]
     
@@ -76,45 +89,25 @@ object mod {
     inline def warn: typings.logProcessErrors.logProcessErrorsStrings.warn = "warn".asInstanceOf[typings.logProcessErrors.logProcessErrorsStrings.warn]
   }
   
-  /**
-    * log-process-errors constructor options.
-    */
+  /* Inlined std.Partial<{log (error : log-process-errors.log-process-errors.ProcessError, level : log-process-errors.log-process-errors.Level, originalError : std.Error): std.Promise<void> | void,   level :{[ errorName in log-process-errors.log-process-errors.ErrorName | 'default' ]:? log-process-errors.log-process-errors.LevelOption | (error : log-process-errors.log-process-errors.ProcessError): log-process-errors.log-process-errors.LevelOption},   exitOn :std.Array<log-process-errors.log-process-errors.Level>,   testing :'ava' | 'mocha' | 'jasmine' | 'tape' | 'node_tap',   colors :boolean}> */
   trait Options extends StObject {
     
-    /**
-      * Whether or not to colorize messages.
-      *
-      * @link https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#colors
-      */
     var colors: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Which process should trigger `process.exit(1)`
-      *
-      * @link https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#exiton
-      */
-    var exitOn: js.UndefOr[js.Array[ExceptionType]] = js.undefined
+    var exitOn: js.UndefOr[js.Array[Level]] = js.undefined
     
-    /**
-      * Which log level to use for different exceptions.
-      *
-      * https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#log
-      */
-    var level: js.UndefOr[PartialRecordExceptionTyp] = js.undefined
+    var level: js.UndefOr[errorNameinErrorNamedefau] = js.undefined
     
-    /**
-      * Override logger
-      *
-      * @link https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#log
-      */
-    var log: js.UndefOr[js.Function2[/* error */ Error, /* level */ LogLevel, js.Promise[Unit] | Unit]] = js.undefined
+    var log: js.UndefOr[
+        js.Function3[
+          /* error */ ProcessError, 
+          /* level */ Level, 
+          /* originalError */ js.Error, 
+          js.Promise[Unit] | Unit
+        ]
+      ] = js.undefined
     
-    /**
-      * When running tests, makes them fail if there are any process errors.
-      *
-      * @link https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#testing
-      */
-    var testing: js.UndefOr[ava | mocha | jasmine | tape | `node-tap`] = js.undefined
+    var testing: js.UndefOr[ava | mocha | jasmine | tape | node_tap] = js.undefined
   }
   object Options {
     
@@ -129,23 +122,50 @@ object mod {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setExitOn(value: js.Array[ExceptionType]): Self = StObject.set(x, "exitOn", value.asInstanceOf[js.Any])
+      inline def setExitOn(value: js.Array[Level]): Self = StObject.set(x, "exitOn", value.asInstanceOf[js.Any])
       
       inline def setExitOnUndefined: Self = StObject.set(x, "exitOn", js.undefined)
       
-      inline def setExitOnVarargs(value: ExceptionType*): Self = StObject.set(x, "exitOn", js.Array(value :_*))
+      inline def setExitOnVarargs(value: Level*): Self = StObject.set(x, "exitOn", js.Array(value*))
       
-      inline def setLevel(value: PartialRecordExceptionTyp): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: errorNameinErrorNamedefau): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      inline def setLog(value: (/* error */ Error, /* level */ LogLevel) => js.Promise[Unit] | Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      inline def setLog(
+        value: (/* error */ ProcessError, /* level */ Level, /* originalError */ js.Error) => js.Promise[Unit] | Unit
+      ): Self = StObject.set(x, "log", js.Any.fromFunction3(value))
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      inline def setTesting(value: ava | mocha | jasmine | tape | `node-tap`): Self = StObject.set(x, "testing", value.asInstanceOf[js.Any])
+      inline def setTesting(value: ava | mocha | jasmine | tape | node_tap): Self = StObject.set(x, "testing", value.asInstanceOf[js.Any])
       
       inline def setTestingUndefined: Self = StObject.set(x, "testing", js.undefined)
     }
   }
+  
+  trait ProcessError
+    extends StObject
+       with Error {
+    
+    @JSName("name")
+    var name_ProcessError: UncaughtException | UnhandledRejection | RejectionHandled | MultipleResolves | Warning
+  }
+  object ProcessError {
+    
+    inline def apply(
+      message: String,
+      name: UncaughtException | UnhandledRejection | RejectionHandled | MultipleResolves | Warning
+    ): ProcessError = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ProcessError]
+    }
+    
+    extension [Self <: ProcessError](x: Self) {
+      
+      inline def setName(value: UncaughtException | UnhandledRejection | RejectionHandled | MultipleResolves | Warning): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type Undo = js.Function0[Unit]
 }

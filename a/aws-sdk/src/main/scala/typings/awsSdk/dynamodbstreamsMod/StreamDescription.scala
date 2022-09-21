@@ -9,7 +9,7 @@ trait StreamDescription extends StObject {
   /**
     * The date and time when the request to create this stream was issued.
     */
-  var CreationRequestDateTime: js.UndefOr[Date] = js.undefined
+  var CreationRequestDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The key attribute(s) of the stream's DynamoDB table.
@@ -60,7 +60,7 @@ object StreamDescription {
   
   extension [Self <: StreamDescription](x: Self) {
     
-    inline def setCreationRequestDateTime(value: Date): Self = StObject.set(x, "CreationRequestDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationRequestDateTime(value: js.Date): Self = StObject.set(x, "CreationRequestDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreationRequestDateTimeUndefined: Self = StObject.set(x, "CreationRequestDateTime", js.undefined)
     
@@ -68,7 +68,7 @@ object StreamDescription {
     
     inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
     
-    inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+    inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
     
     inline def setLastEvaluatedShardId(value: ShardId): Self = StObject.set(x, "LastEvaluatedShardId", value.asInstanceOf[js.Any])
     
@@ -78,7 +78,7 @@ object StreamDescription {
     
     inline def setShardsUndefined: Self = StObject.set(x, "Shards", js.undefined)
     
-    inline def setShardsVarargs(value: Shard*): Self = StObject.set(x, "Shards", js.Array(value :_*))
+    inline def setShardsVarargs(value: Shard*): Self = StObject.set(x, "Shards", js.Array(value*))
     
     inline def setStreamArn(value: StreamArn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
     

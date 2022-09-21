@@ -10,10 +10,10 @@ A mathematically correct random number generator library for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | random-js |
 | Keywords           | random |
-| # releases         | 8 |
-| # dependents       | 203 |
-| # downloads        | 2717336 |
-| # stars            | 23 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 261523.33333333334 |
+| # stars            | 568.0 |
 
 ## Links
 - [Homepage](https://github.com/ckknight/random-js)

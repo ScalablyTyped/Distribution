@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JQueryFormOptions
   extends StObject
-     with AjaxSettings[js.Any] {
+     with AjaxSettings[Any] {
   
   var beforeSerialize: js.UndefOr[js.Function2[/* $form */ JQuery, /* options */ this.type, Boolean]] = js.undefined
   
   var beforeSubmit: js.UndefOr[
-    js.Function3[/* formData */ js.Array[js.Any], /* $form */ JQuery, /* options */ this.type, Boolean]
+    js.Function3[/* formData */ js.Array[Any], /* $form */ JQuery, /* options */ this.type, Boolean]
   ] = js.undefined
   
   var clearForm: js.UndefOr[Boolean] = js.undefined
@@ -25,7 +25,7 @@ trait JQueryFormOptions
   
   var iframeSrc: js.UndefOr[String] = js.undefined
   
-  var iframeTarget: js.UndefOr[js.Any] = js.undefined
+  var iframeTarget: js.UndefOr[Any] = js.undefined
   
   var replaceTarget: js.UndefOr[Boolean] = js.undefined
   
@@ -33,7 +33,7 @@ trait JQueryFormOptions
   
   var semantic: js.UndefOr[Boolean] = js.undefined
   
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
   
   var uploadProgress: js.UndefOr[
     js.Function4[
@@ -58,7 +58,7 @@ object JQueryFormOptions {
     
     inline def setBeforeSerializeUndefined: Self = StObject.set(x, "beforeSerialize", js.undefined)
     
-    inline def setBeforeSubmit(value: (/* formData */ js.Array[js.Any], /* $form */ JQuery, JQueryFormOptions) => Boolean): Self = StObject.set(x, "beforeSubmit", js.Any.fromFunction3(value))
+    inline def setBeforeSubmit(value: (/* formData */ js.Array[Any], /* $form */ JQuery, JQueryFormOptions) => Boolean): Self = StObject.set(x, "beforeSubmit", js.Any.fromFunction3(value))
     
     inline def setBeforeSubmitUndefined: Self = StObject.set(x, "beforeSubmit", js.undefined)
     
@@ -76,7 +76,7 @@ object JQueryFormOptions {
     
     inline def setIframeSrcUndefined: Self = StObject.set(x, "iframeSrc", js.undefined)
     
-    inline def setIframeTarget(value: js.Any): Self = StObject.set(x, "iframeTarget", value.asInstanceOf[js.Any])
+    inline def setIframeTarget(value: Any): Self = StObject.set(x, "iframeTarget", value.asInstanceOf[js.Any])
     
     inline def setIframeTargetUndefined: Self = StObject.set(x, "iframeTarget", js.undefined)
     
@@ -94,7 +94,7 @@ object JQueryFormOptions {
     
     inline def setSemanticUndefined: Self = StObject.set(x, "semantic", js.undefined)
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     

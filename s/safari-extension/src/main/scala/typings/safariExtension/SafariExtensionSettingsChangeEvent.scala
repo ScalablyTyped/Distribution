@@ -23,12 +23,12 @@ trait SafariExtensionSettingsChangeEvent
   /**
     * The value after the settings change.
     */
-  var newValue: js.Any
+  var newValue: Any
   
   /**
     * The value before the settings change.
     */
-  var oldValue: js.Any
+  var oldValue: Any
   
   /**
     * The target of the event.
@@ -46,8 +46,8 @@ object SafariExtensionSettingsChangeEvent {
     defaultPrevented: Boolean,
     eventPhase: Double,
     key: String,
-    newValue: js.Any,
-    oldValue: js.Any,
+    newValue: Any,
+    oldValue: Any,
     preventDefault: () => Unit,
     stopPropagation: () => Unit,
     target: SafariExtensionSettings | SafariExtensionSecureSettings,
@@ -65,9 +65,9 @@ object SafariExtensionSettingsChangeEvent {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
     inline def setTarget(value: SafariExtensionSettings | SafariExtensionSecureSettings): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

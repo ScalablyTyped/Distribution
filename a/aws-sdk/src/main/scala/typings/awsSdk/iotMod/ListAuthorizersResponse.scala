@@ -29,7 +29,7 @@ object ListAuthorizersResponse {
     
     inline def setAuthorizersUndefined: Self = StObject.set(x, "authorizers", js.undefined)
     
-    inline def setAuthorizersVarargs(value: AuthorizerSummary*): Self = StObject.set(x, "authorizers", js.Array(value :_*))
+    inline def setAuthorizersVarargs(value: AuthorizerSummary*): Self = StObject.set(x, "authorizers", js.Array(value*))
     
     inline def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     

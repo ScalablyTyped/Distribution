@@ -10,15 +10,12 @@ A simple parser/writer for the Session Description Protocol
 | ------------------ | :-------------: |
 | Full name          | sdp-transform |
 | Keywords           | sdp, webrtc, serializer |
-| # releases         | 9 |
-| # dependents       | 80 |
-| # downloads        | 1731027 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 285304.6666666667 |
+| # stars            | 274.0 |
 
 ## Links
-- [Homepage](https://github.com/clux/sdp-transform#readme)
-- [Bugs](https://github.com/clux/sdp-transform/issues)
-- [Repository](https://github.com/clux/sdp-transform)
 - [Npm](https://www.npmjs.com/package/sdp-transform)
     
 

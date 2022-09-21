@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "List")
 @js.native
-class List[T] protected ()
+open class List[T] protected ()
   extends typings.officeUiFabricReact.mod.List[T] {
   def this(props: IListProps[T]) = this()
 }

@@ -53,7 +53,7 @@ trait RemoteObject extends StObject {
   /**
     * Remote object value in case of primitive values or JSON values (if it was requested).
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object RemoteObject {
   
@@ -95,7 +95,7 @@ object RemoteObject {
     
     inline def setUnserializableValueUndefined: Self = StObject.set(x, "unserializableValue", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

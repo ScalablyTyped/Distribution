@@ -14,11 +14,11 @@ trait OnsToolbarElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
   /**
     * @description Hide the toolbar element
@@ -41,4 +41,11 @@ trait OnsToolbarElement
     * @description Show the toolbar element
     */
   def show(): Unit = js.native
+  
+  /**
+    * @description Static toolbars are not animated by `ons-navigator` when pushing or popping pages. This can be useful to improve performance in some situations.
+    */
+  var static: Boolean = js.native
+  
+  var visible: Boolean = js.native
 }

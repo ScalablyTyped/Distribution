@@ -2,6 +2,7 @@ package typings.vexflow.global.Vex.Flow
 
 import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
+import typings.vexflow.anon.FillStyle_
 import typings.vexflow.anon.Leftshift
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.Accidental")
 @js.native
-class Accidental protected ()
+open class Accidental protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.Accidental {
   def this(`type`: String) = this()
@@ -39,6 +40,10 @@ class Accidental protected ()
   /* CompleteClass */
   override def getPosition(): Position = js.native
   
+  // (Modifier extends Element in vexflow, but not in these definitions, probably because of some typing problem)
+  /* CompleteClass */
+  override def getStyle(): FillStyle_ = js.native
+  
   /* CompleteClass */
   override def getWidth(): Double = js.native
   
@@ -56,6 +61,9 @@ class Accidental protected ()
   
   /* CompleteClass */
   override def setPosition(position: Position): typings.vexflow.Vex.Flow.Modifier = js.native
+  
+  /* CompleteClass */
+  override def setStyle(style: FillStyle_): typings.vexflow.Vex.Flow.Modifier = js.native
   
   /* CompleteClass */
   override def setTextLine(line: Double): typings.vexflow.Vex.Flow.Modifier = js.native

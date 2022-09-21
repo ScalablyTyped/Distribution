@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "formstate" : "2.0.0"
+      "formstate" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "formstate" : "2.0.0"
+      "formstate" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

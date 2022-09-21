@@ -55,7 +55,7 @@ object connection {
     /** [Method] Sets the value of type
       * @param type Object The new value.
       */
-    var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -102,7 +102,7 @@ object connection {
       
       inline def setSetOnlineUndefined: Self = StObject.set(x, "setOnline", js.undefined)
       
-      inline def setSetType(value: /* type */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
+      inline def setSetType(value: /* type */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
       
       inline def setSetTypeUndefined: Self = StObject.set(x, "setType", js.undefined)
       

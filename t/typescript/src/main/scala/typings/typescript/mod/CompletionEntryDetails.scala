@@ -18,7 +18,10 @@ trait CompletionEntryDetails extends StObject {
   
   var name: java.lang.String
   
+  /** @deprecated Use `sourceDisplay` instead. */
   var source: js.UndefOr[js.Array[SymbolDisplayPart]] = js.undefined
+  
+  var sourceDisplay: js.UndefOr[js.Array[SymbolDisplayPart]] = js.undefined
   
   var tags: js.UndefOr[js.Array[JSDocTagInfo]] = js.undefined
 }
@@ -40,17 +43,17 @@ object CompletionEntryDetails {
     
     inline def setCodeActionsUndefined: Self = StObject.set(x, "codeActions", js.undefined)
     
-    inline def setCodeActionsVarargs(value: CodeAction*): Self = StObject.set(x, "codeActions", js.Array(value :_*))
+    inline def setCodeActionsVarargs(value: CodeAction*): Self = StObject.set(x, "codeActions", js.Array(value*))
     
     inline def setDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "displayParts", value.asInstanceOf[js.Any])
     
-    inline def setDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "displayParts", js.Array(value :_*))
+    inline def setDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "displayParts", js.Array(value*))
     
     inline def setDocumentation(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    inline def setDocumentationVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "documentation", js.Array(value :_*))
+    inline def setDocumentationVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "documentation", js.Array(value*))
     
     inline def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -60,14 +63,20 @@ object CompletionEntryDetails {
     
     inline def setSource(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
+    inline def setSourceDisplay(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "sourceDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setSourceDisplayUndefined: Self = StObject.set(x, "sourceDisplay", js.undefined)
+    
+    inline def setSourceDisplayVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "sourceDisplay", js.Array(value*))
+    
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    inline def setSourceVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "source", js.Array(value*))
     
     inline def setTags(value: js.Array[JSDocTagInfo]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: JSDocTagInfo*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: JSDocTagInfo*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

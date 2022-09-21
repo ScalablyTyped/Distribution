@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Wallet
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ trait WalletTransaction extends StObject {
   var isLaunchable: Boolean
   
   /** Gets or sets the date and time of the transaction. */
-  var transactionDate: Date
+  var transactionDate: js.Date
 }
 object WalletTransaction {
   
@@ -34,7 +33,7 @@ object WalletTransaction {
     displayLocation: String,
     ignoreTimeOfDay: Boolean,
     isLaunchable: Boolean,
-    transactionDate: Date
+    transactionDate: js.Date
   ): WalletTransaction = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], displayAmount = displayAmount.asInstanceOf[js.Any], displayLocation = displayLocation.asInstanceOf[js.Any], ignoreTimeOfDay = ignoreTimeOfDay.asInstanceOf[js.Any], isLaunchable = isLaunchable.asInstanceOf[js.Any], transactionDate = transactionDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[WalletTransaction]
@@ -52,6 +51,6 @@ object WalletTransaction {
     
     inline def setIsLaunchable(value: Boolean): Self = StObject.set(x, "isLaunchable", value.asInstanceOf[js.Any])
     
-    inline def setTransactionDate(value: Date): Self = StObject.set(x, "transactionDate", value.asInstanceOf[js.Any])
+    inline def setTransactionDate(value: js.Date): Self = StObject.set(x, "transactionDate", value.asInstanceOf[js.Any])
   }
 }

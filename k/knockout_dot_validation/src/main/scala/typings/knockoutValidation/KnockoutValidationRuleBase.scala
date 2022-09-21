@@ -19,6 +19,6 @@ object KnockoutValidationRuleBase {
     
     inline def setMessage(value: String | KnockoutValidationMessageFunction): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setMessageFunction2(value: (/* params */ js.Any, /* observable */ js.Any) => String): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
+    inline def setMessageFunction2(value: (/* params */ Any, /* observable */ Any) => String): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
   }
 }

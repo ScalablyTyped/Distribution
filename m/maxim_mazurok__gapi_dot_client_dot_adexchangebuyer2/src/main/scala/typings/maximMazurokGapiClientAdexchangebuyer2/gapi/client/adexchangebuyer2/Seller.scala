@@ -9,7 +9,7 @@ trait Seller extends StObject {
   /** The unique ID for the seller. The seller fills in this field. The seller account ID is then available to buyer in the product. */
   var accountId: js.UndefOr[String] = js.undefined
   
-  /** Optional sub-account ID for the seller. */
+  /** Output only. Ad manager network code for the seller. */
   var subAccountId: js.UndefOr[String] = js.undefined
 }
 object Seller {

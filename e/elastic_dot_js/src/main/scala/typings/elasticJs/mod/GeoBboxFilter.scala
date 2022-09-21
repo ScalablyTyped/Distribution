@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "GeoBboxFilter")
 @js.native
-class GeoBboxFilter protected ()
+open class GeoBboxFilter protected ()
   extends StObject
      with Filter {
   /*

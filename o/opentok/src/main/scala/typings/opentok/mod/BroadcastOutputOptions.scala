@@ -27,6 +27,6 @@ object BroadcastOutputOptions {
     
     inline def setRtmpUndefined: Self = StObject.set(x, "rtmp", js.undefined)
     
-    inline def setRtmpVarargs(value: BroadcastOutputOptionsRtmp*): Self = StObject.set(x, "rtmp", js.Array(value :_*))
+    inline def setRtmpVarargs(value: BroadcastOutputOptionsRtmp*): Self = StObject.set(x, "rtmp", js.Array(value*))
   }
 }
